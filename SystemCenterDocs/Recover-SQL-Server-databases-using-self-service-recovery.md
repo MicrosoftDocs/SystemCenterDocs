@@ -11,9 +11,9 @@ ms.topic: article
 ms.assetid: b2d71cff-810f-42de-813f-70479a5009e2
 ---
 # Recover SQL Server databases using self-service recovery
-The Self\-Service Recovery Tool \(SSRT\) for [!INCLUDE[dpm2012long](./Token/dpm2012long_md.md)] enables end\-users who have permissions to recover SQL Server databases that are backed up by the [!INCLUDE[dpm2012short](./Token/dpm2012short_md.md)] server, without any intervention from the DPM administrator. Note the following prerequisites:
+The Self\-Service Recovery Tool \(SSRT\) for [!INCLUDE[dpm2012long](Token/dpm2012long_md.md)] enables end\-users who have permissions to recover SQL Server databases that are backed up by the [!INCLUDE[dpm2012short](Token/dpm2012short_md.md)] server, without any intervention from the DPM administrator. Note the following prerequisites:
 
--   The user must be configured as a DPM self\-service user. For more information see [Configure self-service recovery of SQL Server databases](./Configure-self-service-recovery-of-SQL-Server-databases.md).
+-   The user must be configured as a DPM self\-service user. For more information see [Configure self-service recovery of SQL Server databases](Configure-self-service-recovery-of-SQL-Server-databases.md).
 
 -   The user needs .NET Framework 3.5 on their client computers.
 

@@ -11,11 +11,11 @@ ms.topic: article
 ms.assetid: c5a328de-e3c2-44ce-ba4c-c5447c1cb9f9
 ---
 # How to Import Data from Other Domains
-You can import data from domains other than the domain in which Service Manager resides. For example, [!INCLUDE[smshort](./Token/smshort_md.md)] is installed in domain A \(where the fully qualified domain name \[FQDN\] is a.woodgrove.com\), and you want to import data from domain B \(where the FQDN is b.woodgrovetest.net\). In this scenario, you must think about how to specify the data source path and how to specify the Run As account.
+You can import data from domains other than the domain in which Service Manager resides. For example, [!INCLUDE[smshort](Token/smshort_md.md)] is installed in domain A \(where the fully qualified domain name \[FQDN\] is a.woodgrove.com\), and you want to import data from domain B \(where the FQDN is b.woodgrovetest.net\). In this scenario, you must think about how to specify the data source path and how to specify the Run As account.
 
 In domain B, either identify an existing service account or create a new one for this purpose. This service account must be a domain account and must be able to read from Active Directory Domain Services.
 
-Next, in [!INCLUDE[smshort](./Token/smshort_md.md)], create a new Active Directory connector in the Active Directory Connector Wizard. Follow these steps on the **Domain or organizational unit** page.
+Next, in [!INCLUDE[smshort](Token/smshort_md.md)], create a new Active Directory connector in the Active Directory Connector Wizard. Follow these steps on the **Domain or organizational unit** page.
 
 ### To specify the data source path and Run As account
 

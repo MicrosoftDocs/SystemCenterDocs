@@ -11,32 +11,32 @@ ms.assetid: e1d20678-dc5e-4452-a61c-3f68daf9cc64
 
 ## Integrating Active Directory and Operations Manager topics
 
--   [Using Active Directory Domain Services to Assign Computers to Operations Manager Management Groups](./Using-Active-Directory-Domain-Services-to-Assign-Computers-to-Operations-Manager-Management-Groups.md)
+-   [Using Active Directory Domain Services to Assign Computers to Operations Manager Management Groups](Using-Active-Directory-Domain-Services-to-Assign-Computers-to-Operations-Manager-Management-Groups.md)
 
--   [How to Create an Active Directory Domain Services Container for a Management Group](./How-to-Create-an-Active-Directory-Domain-Services-Container-for-a-Management-Group.md)
+-   [How to Create an Active Directory Domain Services Container for a Management Group](How-to-Create-an-Active-Directory-Domain-Services-Container-for-a-Management-Group.md)
 
--   [How to Use Active Directory Domain Services to Assign Computers to Management Servers](./How-to-Use-Active-Directory-Domain-Services-to-Assign-Computers-to-Management-Servers.md)
+-   [How to Use Active Directory Domain Services to Assign Computers to Management Servers](How-to-Use-Active-Directory-Domain-Services-to-Assign-Computers-to-Management-Servers.md)
 
--   [Changing the Active Directory Integration Setting for an Agent](./Changing-the-Active-Directory-Integration-Setting-for-an-Agent.md)
+-   [Changing the Active Directory Integration Setting for an Agent](Changing-the-Active-Directory-Integration-Setting-for-an-Agent.md)
 
 ## Other resources for this component
 
 -   [TechNet Library main page for Operations Manager](http://go.microsoft.com/fwlink/p/?LinkId=223634)
 
--   [Operations Guide for System Center 2012 - Operations Manager](./Operations-Guide-for-System-Center-2012---Operations-Manager.md)
+-   [Operations Guide for System Center 2012 - Operations Manager](Operations-Guide-for-System-Center-2012---Operations-Manager.md)
 
--   [Initial Monitoring After Operations Manager Is Installed](./Initial-Monitoring-After-Operations-Manager-Is-Installed.md)
+-   [Initial Monitoring After Operations Manager Is Installed](Initial-Monitoring-After-Operations-Manager-Is-Installed.md)
 
--   [Managing Access in Operations Manager](./Managing-Access-in-Operations-Manager.md)
+-   [Managing Access in Operations Manager](Managing-Access-in-Operations-Manager.md)
 
--   [Getting Information from Operations Manager](./Getting-Information-from-Operations-Manager.md)
+-   [Getting Information from Operations Manager](Getting-Information-from-Operations-Manager.md)
 
--   [General Tasks in Operations Manager_1](./General-Tasks-in-Operations-Manager_1.md)
+-   [General Tasks in Operations Manager_1](General-Tasks-in-Operations-Manager_1.md)
 
--   [Maintenance of Operations Manager](./Maintenance-of-Operations-Manager.md)
+-   [Maintenance of Operations Manager](Maintenance-of-Operations-Manager.md)
 
 -   [Operations Manager Report Authoring Guide](http://go.microsoft.com/fwlink/p/?LinkID=217092)
 
--   [Managing Discovery and Agents](./Managing-Discovery-and-Agents.md)
+-   [Managing Discovery and Agents](Managing-Discovery-and-Agents.md)
 
 

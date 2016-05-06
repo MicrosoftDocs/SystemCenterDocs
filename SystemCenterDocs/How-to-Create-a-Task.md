@@ -12,11 +12,11 @@ ms.assetid: 2634afdf-480f-45ee-8ef4-a491ce2add9f
 robots: noindex,nofollow
 ---
 # How to Create a Task
-Use the following procedures in [!INCLUDE[smlong12](./Token/smlong12_md.md)] to create a task—for example, a task that you can use to open Event Viewer and view logs on a computer—and then validate the new task. Event Viewer displays the logs from the remote computer that is listed as a Configuration Item in the incident.
+Use the following procedures in [!INCLUDE[smlong12](Token/smlong12_md.md)] to create a task—for example, a task that you can use to open Event Viewer and view logs on a computer—and then validate the new task. Event Viewer displays the logs from the remote computer that is listed as a Configuration Item in the incident.
 
 ### To create a task
 
-1.  In the [!INCLUDE[smcons](./Token/smcons_md.md)], click **Library**.
+1.  In the [!INCLUDE[smcons](Token/smcons_md.md)], click **Library**.
 
 2.  On the **Library** pane, expand **Library**, and then select **Tasks.**
 
@@ -62,7 +62,7 @@ Use the following procedures in [!INCLUDE[smlong12](./Token/smlong12_md.md)] to 
 
 ### To validate a new task
 
-1.  In the [!INCLUDE[smcons](./Token/smcons_md.md)], click **Work Items**.
+1.  In the [!INCLUDE[smcons](Token/smcons_md.md)], click **Work Items**.
 
 2.  In the **Work Items** pane, expand **Work Items**, expand **Incident Management**, and then click **All Incidents**.
 
@@ -72,9 +72,9 @@ Use the following procedures in [!INCLUDE[smlong12](./Token/smlong12_md.md)] to 
 
 5.  Notice that Event Viewer starts, and the events from the computer that are associated with the incident are displayed.
 
-![](/Image/PSSymbol.gif)You can use the Get\-SCSMTask Windows PowerShell command to view [!INCLUDE[smshort](./Token/smshort_md.md)] tasks.
+![](Image/PSSymbol.gif)You can use the Get\-SCSMTask Windows PowerShell command to view [!INCLUDE[smshort](Token/smshort_md.md)] tasks.
 
 ## See Also
-[Using Service Manager Tasks to Troubleshoot Computer Problems](./Using-Service-Manager-Tasks-to-Troubleshoot-Computer-Problems.md)
+[Using Service Manager Tasks to Troubleshoot Computer Problems](Using-Service-Manager-Tasks-to-Troubleshoot-Computer-Problems.md)
 
 

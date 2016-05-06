@@ -35,7 +35,7 @@ When an activity in a runbook runs, it runs one time for each item of data that 
 
 An activity can also retrieve information from an outside source. The **Get** activities and **Monitor** activities demonstrate this behavior. Data output from an activity might be a list of computers for example. Data can be passed on as multiple individual outputs, which invoke the next activity as many times as there are items in the output.
 
-You also have the option of passing on data as a single output. For information about how to configure Published Data with multiple values, see [Common Activity Properties](./Common-Activity-Properties.md).
+You also have the option of passing on data as a single output. For information about how to configure Published Data with multiple values, see [Common Activity Properties](Common-Activity-Properties.md).
 
 ## Adding Returned Data to Activity Configurations
 When an activity has subscribed to Published Data, a placeholder is inserted where the value of the data will be added. An activity can only subscribe to Published Data from a previous activity in the workflow.
@@ -73,7 +73,7 @@ Use the following procedures to add Published Data to an activity, to change the
 5.  Place your cursor where you want the Published Data item to appear and use the keyboard shortcut, CTRL\+V, or right\-click the insertion point, and then click **Paste**. The Published Data item appears.
 
 ## Transforming Published Data Items
-You might have to modify text from a **Published Data** activity before you use it in another activity. For example, you might have to remove a portion of the text or replace it with another string. You can transform the existing Published Data content or variable items into new content according to rules that you specify by using the [Map Published Data](./Map-Published-Data.md) activity.
+You might have to modify text from a **Published Data** activity before you use it in another activity. For example, you might have to remove a portion of the text or replace it with another string. You can transform the existing Published Data content or variable items into new content according to rules that you specify by using the [Map Published Data](Map-Published-Data.md) activity.
 
 ## <a name="CommonPublishedData"></a>Common Published Data
 The following table describes the Published Data items common to all activities.
@@ -116,6 +116,6 @@ The following table describes the Published Data items common to all activities.
 |Loop: Total duration|The total amount of time \(in seconds\) that the looped activity ran.|
 
 ## See Also
-[Building a Runbook](./Building-a-Runbook.md)
+[Building a Runbook](Building-a-Runbook.md)
 
 

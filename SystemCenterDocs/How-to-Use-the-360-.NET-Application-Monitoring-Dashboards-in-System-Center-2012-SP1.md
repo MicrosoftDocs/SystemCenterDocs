@@ -11,11 +11,11 @@ ms.topic: article
 ms.assetid: 640a17c9-2645-4992-aa2c-38619bbdc57d
 ---
 # How to Use the 360 .NET Application Monitoring Dashboards in System Center 2012 SP1
-[!INCLUDE[sc2012sp1notetopic](./Token/sc2012sp1notetopic_md.md)]
+[!INCLUDE[sc2012sp1notetopic](Token/sc2012sp1notetopic_md.md)]
 
 ### To open and use the Application Dashboard
 
-1.  In [!INCLUDE[om12short](./Token/om12short_md.md)], click the **Monitoring** button, click **Application Monitoring**, and then click **Applications**.
+1.  In [!INCLUDE[om12short](Token/om12short_md.md)], click the **Monitoring** button, click **Application Monitoring**, and then click **Applications**.
 
 2.  To open the Application Dashboard, click the application you want to see details about.
 

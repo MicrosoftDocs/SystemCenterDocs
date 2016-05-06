@@ -8,7 +8,7 @@ ms.topic: article
 ms.assetid: 9649115e-b018-4a4e-8eb5-e411733d8fae
 ---
 # How to create a guest operating system profile
-You can use the following procedure to create a guest operating system profile in [!INCLUDE[vmm12sp1_long](./Token/vmm12sp1_long_md.md)]. A guest operating system profile specifies the operating system settings that you want the virtual machine to use when the virtual machine is created and deployed.
+You can use the following procedure to create a guest operating system profile in [!INCLUDE[vmm12sp1_long](Token/vmm12sp1_long_md.md)]. A guest operating system profile specifies the operating system settings that you want the virtual machine to use when the virtual machine is created and deployed.
 
 ### To create a guest operating system profile
 
@@ -42,11 +42,11 @@ You can use the following procedure to create a guest operating system profile i
 
     -   **Domain to join**
 
-        If you will use the profile in a virtual machine template within a service template, under **Networking**, you can specify optional Active Directory domain settings by using the FQDN or by using at signs \(@\) before and after, for example, by entering @Domain@. By using the at signs \(@\) in this way, the necessary information can be entered when the virtual machine is deployed as part of a service. A trust relationship is not necessary between the domain where the service is deployed and the domain of the [!INCLUDE[vmm12short](./Token/vmm12short_md.md)] management server.
+        If you will use the profile in a virtual machine template within a service template, under **Networking**, you can specify optional Active Directory domain settings by using the FQDN or by using at signs \(@\) before and after, for example, by entering @Domain@. By using the at signs \(@\) in this way, the necessary information can be entered when the virtual machine is deployed as part of a service. A trust relationship is not necessary between the domain where the service is deployed and the domain of the [!INCLUDE[vmm12short](Token/vmm12short_md.md)] management server.
 
     -   **Windows Server roles or features to install**
 
-        The settings for roles or features apply only if you deploy the virtual machine as part of a service and only for Windows\-based profiles. Also, to support these settings, the virtual machine cannot use a guest operating system earlier than [!INCLUDE[nextref_server_7](./Token/nextref_server_7_md.md)].
+        The settings for roles or features apply only if you deploy the virtual machine as part of a service and only for Windows\-based profiles. Also, to support these settings, the virtual machine cannot use a guest operating system earlier than [!INCLUDE[nextref_server_7](Token/nextref_server_7_md.md)].
 
     -   **RunOnce commands**
 
@@ -54,7 +54,7 @@ You can use the following procedure to create a guest operating system profile i
 
     -   **Public SSH key**
 
-        Under **Root Credentials**, **Public SSH key** is a Linux\-specific option. This option sets the content of a specified public Secure Shell \(SSH\) key as an authorized key for authentication of the root user. Enter the name of a public key file that is stored in the [!INCLUDE[vmm12short](./Token/vmm12short_md.md)] library, and that has the extension .sshkey.
+        Under **Root Credentials**, **Public SSH key** is a Linux\-specific option. This option sets the content of a specified public Secure Shell \(SSH\) key as an authorized key for authentication of the root user. Enter the name of a public key file that is stored in the [!INCLUDE[vmm12short](Token/vmm12short_md.md)] library, and that has the extension .sshkey.
 
     After you have made your selections, click **OK**.
 
@@ -63,8 +63,8 @@ You can use the following procedure to create a guest operating system profile i
     The guest operating system profile appears in the **Profiles** pane.
 
 ## See Also
-[Creating profiles and templates in VMM](./Creating-profiles-and-templates-in-VMM.md)
-[Managing the VMM library and its resources](./Managing-the-VMM-library-and-its-resources.md)
-[Managing fabric resources with VMM](./Managing-fabric-resources-with-VMM.md)
+[Creating profiles and templates in VMM](Creating-profiles-and-templates-in-VMM.md)
+[Managing the VMM library and its resources](Managing-the-VMM-library-and-its-resources.md)
+[Managing fabric resources with VMM](Managing-fabric-resources-with-VMM.md)
 
 

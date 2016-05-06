@@ -11,7 +11,7 @@ ms.topic: article
 ms.assetid: c8f9df03-9b9d-4841-bd8c-3002288823b2
 ---
 # Optimizing DPM operations that affect performance
-There are a number of steps you can take to optimize the performance of [!INCLUDE[dpm2012long](./Token/dpm2012long_md.md)] data replication and synchronization, including:
+There are a number of steps you can take to optimize the performance of [!INCLUDE[dpm2012long](Token/dpm2012long_md.md)] data replication and synchronization, including:
 
 -   [Configure network throttling](#BKMK_Throttle)
 
@@ -24,7 +24,7 @@ There are a number of steps you can take to optimize the performance of [!INCLUD
 -   [Modify the schedule for express full backups](#BKMK_Express)
 
 ## <a name="BKMK_Throttle"></a>Configure network throttling
-Network bandwidth throttling limits the amount of network bandwidth that [!INCLUDE[dpm2012short](./Token/dpm2012short_md.md)] can use to create and synchronize replicas. Note that throttling can lengthen the amount of time each synchronization job takes to complete. Throttling isn’t turned on by default.
+Network bandwidth throttling limits the amount of network bandwidth that [!INCLUDE[dpm2012short](Token/dpm2012short_md.md)] can use to create and synchronize replicas. Note that throttling can lengthen the amount of time each synchronization job takes to complete. Throttling isn’t turned on by default.
 
 #### To enable network bandwidth usage throttling
 
@@ -48,13 +48,13 @@ Network bandwidth throttling limits the amount of network bandwidth that [!INCLU
     For example, if a DPM computer with a 1\-gigabit\-per\-second \(Gbps\) network connection has a Group Policy reservable bandwidth limit of 20 percent, 200 Mbps of bandwidth is reserved for all programs that use the Packet Scheduler. If DPM bandwidth usage is then set to a maximum of 150 Mbps while Internet Information Services \(IIS\) bandwidth usage is set to a maximum of 100 Mbps, the combined bandwidth usage limits of DPM and IIS exceed the Group Policy reservable bandwidth limit, and the DPM limit might not be applied.To resolve this issue, reduce the DPM setting for network bandwidth usage throttling.
 
 ## <a name="BKMK_Compress"></a>Enable data compression
-Compression decreases the size of data being transferred during replica creation and synchronization and allows more data throughput with less impact to network performance. However, this option adds to the CPU load on both the [!INCLUDE[dpm2012short](./Token/dpm2012short_md.md)] server and protected computers. The amount of compression and improvement on network performance depends on workload.
+Compression decreases the size of data being transferred during replica creation and synchronization and allows more data throughput with less impact to network performance. However, this option adds to the CPU load on both the [!INCLUDE[dpm2012short](Token/dpm2012short_md.md)] server and protected computers. The amount of compression and improvement on network performance depends on workload.
 
 Compression is enabled at the protection group level and applies to replica creation, synchronization, and consistency check operations. Recovery jobs also use compression.
 
 #### To enable on\-the\-wire compression
 
-1.  In [!INCLUDE[dpm2012short](./Token/dpm2012short_md.md)] Administrator console, go to the **Protection** view.
+1.  In [!INCLUDE[dpm2012short](Token/dpm2012short_md.md)] Administrator console, go to the **Protection** view.
 
 2.  Click **Optimize performance**.
 
@@ -67,7 +67,7 @@ To optimize performance, you can offset the start time of synchronization jobs a
 
 #### To stagger synchronization start times
 
-1.  In [!INCLUDE[dpm2012short](./Token/dpm2012short_md.md)] Administrator Console, go to the **Protection** view.
+1.  In [!INCLUDE[dpm2012short](Token/dpm2012short_md.md)] Administrator Console, go to the **Protection** view.
 
 2.  In the display area, select a protection group.
 

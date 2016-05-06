@@ -11,9 +11,9 @@ ms.topic: article
 ms.assetid: 1aa1248d-4a73-4b55-b03d-278ff3820343
 ---
 # How to view VMM network configuration diagrams in VMM
-With [!INCLUDE[vmm12sp1_long](./Token/vmm12sp1_long_md.md)] in [!INCLUDE[sc_threshold_1](./Token/sc_threshold_1_md.md)], you can view diagrams that show the relationships among networking objects, such as logical networks and VM networks, that you have configured. You can view a diagram of the networking objects on a particular host system or the networking objects on a cloud. A diagram provides a graphical view of network configurations, which supplements the text\-based views that are available in the properties sheet for the host or the cloud.
+With [!INCLUDE[vmm12sp1_long](Token/vmm12sp1_long_md.md)] in [!INCLUDE[sc_threshold_1](Token/sc_threshold_1_md.md)], you can view diagrams that show the relationships among networking objects, such as logical networks and VM networks, that you have configured. You can view a diagram of the networking objects on a particular host system or the networking objects on a cloud. A diagram provides a graphical view of network configurations, which supplements the text\-based views that are available in the properties sheet for the host or the cloud.
 
-### To view [!INCLUDE[vmm12short](./Token/vmm12short_md.md)] network configuration diagrams
+### To view [!INCLUDE[vmm12short](Token/vmm12short_md.md)] network configuration diagrams
 
 1.  Open the **Fabric** workspace.
 
@@ -48,7 +48,7 @@ With [!INCLUDE[vmm12sp1_long](./Token/vmm12sp1_long_md.md)] in [!INCLUDE[sc_thre
     -   If Microsoft Visio is available for you to use, click the **File** tab \(in the upper corner\), and then click **Export to Visio**. Specify a path and file name for the Visio file, and then click **Save**.
 
 ## See Also
-[Managing network resources with VMM](./Managing-network-resources-with-VMM.md)
-[Managing fabric resources with VMM](./Managing-fabric-resources-with-VMM.md)
+[Managing network resources with VMM](Managing-network-resources-with-VMM.md)
+[Managing fabric resources with VMM](Managing-fabric-resources-with-VMM.md)
 
 

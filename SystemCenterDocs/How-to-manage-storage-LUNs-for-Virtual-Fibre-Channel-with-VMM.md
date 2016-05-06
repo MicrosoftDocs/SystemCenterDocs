@@ -59,8 +59,8 @@ Use the following procedures to create a new logical unit number \(LUN\) for a s
 6.  When complete, click **OK**. The LUN is now registered \(unmasked\).
 
 ## See Also
-[Managing Virtual Fibre Channel fabrics with VMM](./Managing-Virtual-Fibre-Channel-fabrics-with-VMM.md)
-[Managing storage resources and capacity with VMM](./Managing-storage-resources-and-capacity-with-VMM.md)
-[Managing fabric resources with VMM](./Managing-fabric-resources-with-VMM.md)
+[Managing Virtual Fibre Channel fabrics with VMM](Managing-Virtual-Fibre-Channel-fabrics-with-VMM.md)
+[Managing storage resources and capacity with VMM](Managing-storage-resources-and-capacity-with-VMM.md)
+[Managing fabric resources with VMM](Managing-fabric-resources-with-VMM.md)
 
 

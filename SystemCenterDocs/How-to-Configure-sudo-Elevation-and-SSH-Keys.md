@@ -8,7 +8,7 @@ ms.topic: article
 ms.assetid: d1cdb588-fe3d-489b-a3a5-d457f8300fed
 ---
 # How to Configure sudo Elevation and SSH Keys
-Starting with [!INCLUDE[om12long](./Token/om12long_md.md)], you can provide credentials for an unprivileged account to be elevated on a UNIX or Linux computer by using the sudo program, which allows users to run programs that have the security privileges of another user account. You can also use Secure Shell \(SSH\) keys instead of a password for secure communication between Operations Manager and the targeted computer.
+Starting with [!INCLUDE[om12long](Token/om12long_md.md)], you can provide credentials for an unprivileged account to be elevated on a UNIX or Linux computer by using the sudo program, which allows users to run programs that have the security privileges of another user account. You can also use Secure Shell \(SSH\) keys instead of a password for secure communication between Operations Manager and the targeted computer.
 
 This topic provides examples for creating an account for a low\-privileged user, implementing sudo, and creating an SSH key on a computer that is running Red Hat Enterprise Linux Server 6. These are examples only, and might not reflect your environment. The following examples provide a user with access to a full set of privileges.
 
@@ -127,10 +127,10 @@ You can now copy the private SSH key to the Windows\-based computer, as describe
 You can use the `opsuser` account by using the SSH key and sudo elevation for specifying credentials in Operations Manager wizards and for configuring Run As accounts.
 
 ## See Also
-[How to Set Credentials for Accessing UNIX and Linux Computers](./How-to-Set-Credentials-for-Accessing-UNIX-and-Linux-Computers.md)
-[Accessing UNIX and Linux Computers in Operations Manager](./Accessing-UNIX-and-Linux-Computers-in-Operations-Manager.md)
-[Credentials You Must Have to Access UNIX and Linux Computers](./Credentials-You-Must-Have-to-Access-UNIX-and-Linux-Computers.md)
-[Required Capabilities for UNIX and Linux Accounts](./Required-Capabilities-for-UNIX-and-Linux-Accounts.md)
-[Configuring SSL Ciphers](./Configuring-SSL-Ciphers.md)
+[How to Set Credentials for Accessing UNIX and Linux Computers](How-to-Set-Credentials-for-Accessing-UNIX-and-Linux-Computers.md)
+[Accessing UNIX and Linux Computers in Operations Manager](Accessing-UNIX-and-Linux-Computers-in-Operations-Manager.md)
+[Credentials You Must Have to Access UNIX and Linux Computers](Credentials-You-Must-Have-to-Access-UNIX-and-Linux-Computers.md)
+[Required Capabilities for UNIX and Linux Accounts](Required-Capabilities-for-UNIX-and-Linux-Accounts.md)
+[Configuring SSL Ciphers](Configuring-SSL-Ciphers.md)
 
 

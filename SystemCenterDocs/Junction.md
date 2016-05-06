@@ -34,6 +34,6 @@ The following table lists the data items published by this activity.
 |Selected branch|The activity that was selected to have its data published.|
 
 ## See Also
-[Standard Activities](./Standard-Activities.md)
+[Standard Activities](Standard-Activities.md)
 
 

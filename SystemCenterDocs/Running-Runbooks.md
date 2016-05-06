@@ -42,6 +42,6 @@ This topic describes the process for starting runbooks, viewing the results, and
 2.  On the toolbar, click **Stop**.
 
 ## See Also
-[Deploy and Start Runbooks](./Deploy-and-Start-Runbooks.md)
+[Deploy and Start Runbooks](Deploy-and-Start-Runbooks.md)
 
 

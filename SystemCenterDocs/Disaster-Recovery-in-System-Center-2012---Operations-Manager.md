@@ -8,14 +8,14 @@ ms.topic: article
 ms.assetid: 8ef1b1b2-e6e8-4750-817a-fc6b8519077f
 ---
 # Disaster Recovery in System Center 2012 - Operations Manager
-Various [!INCLUDE[om12long](./Token/om12long_md.md)] servers and features can potentially fail, impacting [!INCLUDE[om12short](./Token/om12short_md.md)] functionality. The amount of data and functionality lost during a failure is different in each failure scenario. It depends on the role of the failing feature, the length of time it takes to restore the failing feature, and on the availability of backups.
+Various [!INCLUDE[om12long](Token/om12long_md.md)] servers and features can potentially fail, impacting [!INCLUDE[om12short](Token/om12short_md.md)] functionality. The amount of data and functionality lost during a failure is different in each failure scenario. It depends on the role of the failing feature, the length of time it takes to restore the failing feature, and on the availability of backups.
 
-You should always keep a backup of your operational database and data warehouse database. For information about scheduling regular backups of the [!INCLUDE[om12short](./Token/om12short_md.md)] databases, see [How to Schedule Backups of Operations Manager Databases](assetId:///301b7af3-3695-41b5-b91c-e1a672bce591).
+You should always keep a backup of your operational database and data warehouse database. For information about scheduling regular backups of the [!INCLUDE[om12short](Token/om12short_md.md)] databases, see [How to Schedule Backups of Operations Manager Databases](assetId:///301b7af3-3695-41b5-b91c-e1a672bce591).
 
-The amount of data and functionality lost during a failure is different in each failure scenario. The impact of failure is minimized if the [!INCLUDE[om12short](./Token/om12short_md.md)] deployment includes multiple management servers. The impact is greater if only one management server is implemented. This is because you do not have a second management server which can take on the load if one fails, and you will lose all monitoring capabilities. The impact of failure of a management server in a distributed environment is minimized, but it increases the workload on additional management servers in the management group until the failed management server is restored.
+The amount of data and functionality lost during a failure is different in each failure scenario. The impact of failure is minimized if the [!INCLUDE[om12short](Token/om12short_md.md)] deployment includes multiple management servers. The impact is greater if only one management server is implemented. This is because you do not have a second management server which can take on the load if one fails, and you will lose all monitoring capabilities. The impact of failure of a management server in a distributed environment is minimized, but it increases the workload on additional management servers in the management group until the failed management server is restored.
 
 ## Recovering Operations Manager Features
-If your [!INCLUDE[om12short](./Token/om12short_md.md)] databases have failed, you can restore them from back up. For more information, see [How to Restore Operations Manager Databases](assetId:///369e3f08-c1a3-4d2d-ad69-0f6e4d3c663e).
+If your [!INCLUDE[om12short](Token/om12short_md.md)] databases have failed, you can restore them from back up. For more information, see [How to Restore Operations Manager Databases](assetId:///369e3f08-c1a3-4d2d-ad69-0f6e4d3c663e).
 
 If your Operations console, web console, or Reporting server have failed, you must reinstall them. For information on installing these features, see
 
@@ -29,7 +29,7 @@ If one or more management servers have failed, you can recover them by using the
 
 #### To Recover a Management Server
 
-1.  Build a new server, ensuring that it meets the minimum supported configurations for [!INCLUDE[om12long](./Token/om12long_md.md)], and use the same name that was given to the failed management server.
+1.  Build a new server, ensuring that it meets the minimum supported configurations for [!INCLUDE[om12long](Token/om12long_md.md)], and use the same name that was given to the failed management server.
 
 2.  Restore the operational database and data warehouse database, if required. For more information, see [How to Restore Operations Manager Databases](assetId:///369e3f08-c1a3-4d2d-ad69-0f6e4d3c663e).
 

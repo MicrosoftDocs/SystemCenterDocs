@@ -12,13 +12,13 @@ ms.assetid: 003af002-b23b-4a12-a208-705de4621b8a
 robots: noindex,nofollow
 ---
 # How to Create a Management Pack File
-You can use the following procedures to create a management pack file in [!INCLUDE[smlong12](./Token/smlong12_md.md)]. After you create the management pack file, you can use it to store objects that you create.
+You can use the following procedures to create a management pack file in [!INCLUDE[smlong12](Token/smlong12_md.md)]. After you create the management pack file, you can use it to store objects that you create.
 
 For more information about how to create and customize management packs, see [Management Packs: Working with Management Packs](http://go.microsoft.com/fwlink/p/?LinkID=207159).
 
 ### To create a management pack file
 
-1.  In the [!INCLUDE[smcons](./Token/smcons_md.md)], click **Administration**.
+1.  In the [!INCLUDE[smcons](Token/smcons_md.md)], click **Administration**.
 
 2.  In the **Administration** pane, expand **Administration**, and then click **Management Packs**.
 
@@ -28,9 +28,9 @@ For more information about how to create and customize management packs, see [Ma
 
 ### To validate the creation of a management pack file
 
--   In the [!INCLUDE[smcons](./Token/smcons_md.md)], open the **Management Packs** view, and verify that the new management pack appears in the **Management Packs** pane.
+-   In the [!INCLUDE[smcons](Token/smcons_md.md)], open the **Management Packs** view, and verify that the new management pack appears in the **Management Packs** pane.
 
-![](/Image/PSSymbol.gif)You can use Windows PowerShell commands to complete these tasks, as follows:
+![](Image/PSSymbol.gif)You can use Windows PowerShell commands to complete these tasks, as follows:
 
 -   For information about how to use Windows PowerShell to create a new management pack, see [New\-SCSMManagementPack](http://go.microsoft.com/fwlink/p/?LinkID=225411).
 

@@ -46,6 +46,6 @@ Use the following procedure to create and modify management pack templates.
 4.  Right\-click the template to view, select **View Management Pack Objects**, and then select the kind of element that you want to view.
 
 ## See Also
-[Management Pack Templates](./Management-Pack-Templates.md)
+[Management Pack Templates](Management-Pack-Templates.md)
 
 

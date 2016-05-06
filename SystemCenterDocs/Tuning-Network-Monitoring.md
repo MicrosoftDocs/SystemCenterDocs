@@ -11,7 +11,7 @@ ms.topic: article
 ms.assetid: 59ac2317-06dc-4f83-b074-47a1bd4b98ac
 ---
 # Tuning Network Monitoring
-[!INCLUDE[om12long](./Token/om12long_md.md)] includes the following management packs specific to network device discovery and monitoring:
+[!INCLUDE[om12long](Token/om12long_md.md)] includes the following management packs specific to network device discovery and monitoring:
 
 -   Network Management \- Core Monitoring
 

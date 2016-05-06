@@ -11,11 +11,11 @@ ms.topic: article
 ms.assetid: 85ce5254-2a03-4e37-8e8c-072b263c7e51
 ---
 # How to Specify a User Role for Catalog Items
-User roles provide access to catalog groups that contain catalog items. Both service offerings and their request offerings are available to [!INCLUDE[smssp](./Token/smssp_md.md)] users, when the status of the offerings is set to Published and if end users have been assigned a corresponding [!INCLUDE[smshort](./Token/smshort_md.md)] user role. Only users who have been assigned a user role associated with a catalog group that contains catalog items can use the [!INCLUDE[smssp](./Token/smssp_md.md)] to access the service catalog. You can use the following procedure to create a user role and associate catalog items and users with the role.
+User roles provide access to catalog groups that contain catalog items. Both service offerings and their request offerings are available to [!INCLUDE[smssp](Token/smssp_md.md)] users, when the status of the offerings is set to Published and if end users have been assigned a corresponding [!INCLUDE[smshort](Token/smshort_md.md)] user role. Only users who have been assigned a user role associated with a catalog group that contains catalog items can use the [!INCLUDE[smssp](Token/smssp_md.md)] to access the service catalog. You can use the following procedure to create a user role and associate catalog items and users with the role.
 
 ### To create a user role and associate it with catalog items and users
 
-1.  In the [!INCLUDE[smcons](./Token/smcons_md.md)], select **Administration**.
+1.  In the [!INCLUDE[smcons](Token/smcons_md.md)], select **Administration**.
 
 2.  In the **Administration** pane, expand **Security**, and then select **User Roles**.
 

@@ -11,11 +11,11 @@ ms.topic: article
 ms.assetid: 571118fb-a58a-43a9-a13a-5abd1fde2f7d
 ---
 # Console Tasks
-*Console tasks* in [!INCLUDE[om12long](./Token/om12long_md.md)] run on the workstation where the Operations Console is running and uses the same credentials as the logged on user. The application that is run by the task must be installed on the workstation.
+*Console tasks* in [!INCLUDE[om12long](Token/om12long_md.md)] run on the workstation where the Operations Console is running and uses the same credentials as the logged on user. The application that is run by the task must be installed on the workstation.
 
 **Console task**
 
-![](/Image/AuthGuide_21_TaskConsole.gif)
+![](Image/AuthGuide_21_TaskConsole.gif)
 
 Console tasks are useful for running administration consoles or other tools that remotely access application components. These will usually be executable programs that run outside the Operations console. You can also run a command line utility and have the output displayed in a **Console Task Output** window.
 
@@ -60,7 +60,7 @@ The following procedure creates a console task to run the **nslookup** utility t
 
     1.  Under **Console Tasks**, select **Command line**.
 
-    2.  In the **Select destination management pack** dropdown, select the management pack file to store the task. For more information about management packs, see [Selecting a Management Pack File](./Selecting-a-Management-Pack-File.md).
+    2.  In the **Select destination management pack** dropdown, select the management pack file to store the task. For more information about management packs, see [Selecting a Management Pack File](Selecting-a-Management-Pack-File.md).
 
     3.  Click **Next**.
 
@@ -113,7 +113,7 @@ The following procedure creates a command line task to run a custom application 
 
     1.  Under **Console Tasks**, select **Alert command line**.
 
-    2.  In the **Select destination management pack** dropdown, select the management pack file to store the task. For more information about management packs, see [Selecting a Management Pack File](./Selecting-a-Management-Pack-File.md).
+    2.  In the **Select destination management pack** dropdown, select the management pack file to store the task. For more information about management packs, see [Selecting a Management Pack File](Selecting-a-Management-Pack-File.md).
 
     3.  Click **Next**.
 
@@ -164,7 +164,7 @@ The following procedure creates a command line task to run a custom application 
 
     1.  Under **Console Tasks**, select **Event command line**.
 
-    2.  In the **Select destination management pack** dropdown, select the management pack file to store the task. For more information about management packs, see [Selecting a Management Pack File](./Selecting-a-Management-Pack-File.md).
+    2.  In the **Select destination management pack** dropdown, select the management pack file to store the task. For more information about management packs, see [Selecting a Management Pack File](Selecting-a-Management-Pack-File.md).
 
     3.  Click **Next**.
 
@@ -199,7 +199,7 @@ The following procedure creates a command line task to run a custom application 
     10. Click **Create**.
 
 ## See Also
-[Tasks](./Tasks.md)
+[Tasks](Tasks.md)
 [Agent Tasks](assetId:///f6269883-c45e-4102-a2ba-fa19739e06c7)
 
 

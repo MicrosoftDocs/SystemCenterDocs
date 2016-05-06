@@ -15,11 +15,11 @@ ms.assetid: 4161fc9b-3471-480c-905a-33dbf129a99f
 ## System Requirements
 Microsoft Monitoring Agent includes many features that each have different requirements:
 
--   [Infrastructure and Workload Monitoring with System Center Operations Manager](./Microsoft-Monitoring-Agent-Requirements-and-Compatibility.md#bkmk_InfraWrkflowMonitor)
+-   [Infrastructure and Workload Monitoring with System Center Operations Manager](Microsoft-Monitoring-Agent-Requirements-and-Compatibility.md#bkmk_InfraWrkflowMonitor)
 
--   [APM with System Center Operations Manager](./Microsoft-Monitoring-Agent-Requirements-and-Compatibility.md#bkmk_APMwithSysCenter)
+-   [APM with System Center Operations Manager](Microsoft-Monitoring-Agent-Requirements-and-Compatibility.md#bkmk_APMwithSysCenter)
 
--   [APM with Stand\-Alone Monitoring using IntelliTrace log as an output](./Microsoft-Monitoring-Agent-Requirements-and-Compatibility.md#bkmk_APMwithMonitor)
+-   [APM with Stand\-Alone Monitoring using IntelliTrace log as an output](Microsoft-Monitoring-Agent-Requirements-and-Compatibility.md#bkmk_APMwithMonitor)
 
 ### <a name="bkmk_InfraWrkflowMonitor"></a>Infrastructure and Workload Monitoring with System Center Operations Manager
 When connected to System Center Operations Manager, the agent calculates the health state of the monitored computers and objects, and then reports back to the management server. The management servers centrally distribute the configuration to agents and store data received from the monitored computers. Management packs installed on the management server control this type of data collected, tasks, and alerts you receive in Operations Manager.

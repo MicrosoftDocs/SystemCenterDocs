@@ -11,10 +11,10 @@ ms.topic: article
 ms.assetid: d14db796-a3e5-4b1d-a098-e734ceae2e0e
 ---
 # Creating or Importing a Runbook
-You can add a runbook to [!INCLUDE[sma_1](./Token/sma_1_md.md)] by either [creating one in the Management Portal](Creating-or-Importing-a-Runbook.md#CreateRunbook) or [importing an existing runbook from a file](Creating-or-Importing-a-Runbook.md#ImportRunbook). This topic provides procedures for each of these methods.
+You can add a runbook to [!INCLUDE[sma_1](Token/sma_1_md.md)] by either [creating one in the Management Portal](Creating-or-Importing-a-Runbook.md#CreateRunbook) or [importing an existing runbook from a file](Creating-or-Importing-a-Runbook.md#ImportRunbook). This topic provides procedures for each of these methods.
 
 ## <a name="CreateRunbook"></a>Creating a new Automation Runbook
-You can create a new runbook in [!INCLUDE[sma_1](./Token/sma_1_md.md)] using the Management Portal, Windows PowerShell ISE add-on, or Windows PowerShell. Once the runbook has been created, you can edit it using information in the [Runbook Authoring Guide](http://aka.ms/runbookauthor).
+You can create a new runbook in [!INCLUDE[sma_1](Token/sma_1_md.md)] using the Management Portal, Windows PowerShell ISE add-on, or Windows PowerShell. Once the runbook has been created, you can edit it using information in the [Runbook Authoring Guide](http://aka.ms/runbookauthor).
 
 ### <a name="CreatePortal"></a>To create a new Automation runbook with the Management Portal
 
@@ -44,13 +44,13 @@ Windows PowerShell Integrated Scripting Environment (ISE) is an application that
 7. [Edit](Editing-a-Runbook.md#ISE) and [publish](Publishing-a-Runbook.md) the runbook.
 
 ### <a name="CreatePowerShell"></a>To create a new Automation runbook with Windows PowerShell
-You can create a new runbook with Windows PowerShell by importing a script file. This is described below in [To import a runbook from a script file with Windows PowerShell](./Creating-or-Importing-a-Runbook.md#ImportPowerShell).
+You can create a new runbook with Windows PowerShell by importing a script file. This is described below in [To import a runbook from a script file with Windows PowerShell](Creating-or-Importing-a-Runbook.md#ImportPowerShell).
 
 ## <a name="ImportRunbook"></a>Importing a Runbook into Service Management Automation
-You can import a script file into [!INCLUDE[sma_1](./Token/sma_1_md.md)] using either the Management Portal or Windows PowerShell. The file must contain a single workflow, and the name of the workflow must match the name of the script file. This name will be used for the new runbook.
+You can import a script file into [!INCLUDE[sma_1](Token/sma_1_md.md)] using either the Management Portal or Windows PowerShell. The file must contain a single workflow, and the name of the workflow must match the name of the script file. This name will be used for the new runbook.
 
 ### <a name="ImportPortal"></a>To import a runbook from a script file with the Management portal
-You can use the following procedure to import a script file into [!INCLUDE[sma_1](./Token/sma_1_md.md)].
+You can use the following procedure to import a script file into [!INCLUDE[sma_1](Token/sma_1_md.md)].
 
 1.  In the Management portal, select **Automation** and then select an Automation Account.
 

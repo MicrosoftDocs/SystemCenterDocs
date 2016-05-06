@@ -11,7 +11,7 @@ ms.topic: article
 ms.assetid: 4bf9b574-f6d0-46f1-a989-aa0464f9a1ed
 ---
 # How to Disable Service Manager Connectors in the Production Environment
-Use the following procedure to disable the [!INCLUDE[smshort](./Token/smshort_md.md)] connectors in the production environment.
+Use the following procedure to disable the [!INCLUDE[smshort](Token/smshort_md.md)] connectors in the production environment.
 
 ### To disable a connector
 

@@ -11,11 +11,11 @@ ms.topic: article
 ms.assetid: 7d3b8b19-77f9-4a96-a117-8ffef08da01a
 ---
 # How to Prepare the Service Manager Database in the Lab Environment
-Use the following procedure to prepare the [!INCLUDE[smshort](./Token/smshort_md.md)] database in the lab environment. Perform this procedure on the computer that is hosting the [!INCLUDE[smshort](./Token/smshort_md.md)] database that is being used by the secondary management server, the management server in your lab environment.
+Use the following procedure to prepare the [!INCLUDE[smshort](Token/smshort_md.md)] database in the lab environment. Perform this procedure on the computer that is hosting the [!INCLUDE[smshort](Token/smshort_md.md)] database that is being used by the secondary management server, the management server in your lab environment.
 
 ### To configure the database
 
-1.  On the computer hosting the [!INCLUDE[smshort](./Token/smshort_md.md)] database for the secondary management server, click **Start**, click **All Programs**, click **Microsoft SQL Server 2008 R2**, and then click **SQL Server Management Studio**.
+1.  On the computer hosting the [!INCLUDE[smshort](Token/smshort_md.md)] database for the secondary management server, click **Start**, click **All Programs**, click **Microsoft SQL Server 2008 R2**, and then click **SQL Server Management Studio**.
 
 2.  In the **Connect to Server** dialog box, follow these steps:
 
@@ -66,7 +66,7 @@ Use the following procedure to prepare the [!INCLUDE[smshort](./Token/smshort_md
 
     1.  Click **Search**.
 
-    2.  Type the username \(domain\\username\) for the service account for [!INCLUDE[smshort](./Token/smshort_md.md)] database in the lab environment, click **Check Names**, and then click **OK**.
+    2.  Type the username \(domain\\username\) for the service account for [!INCLUDE[smshort](Token/smshort_md.md)] database in the lab environment, click **Check Names**, and then click **OK**.
 
         > [!NOTE]
         > If the Data Access Account is running as LocalSystem, use the format <domain\\computername$> in SQL Logins, where <computername> is the name of the management server.

@@ -8,45 +8,45 @@ ms.topic: article
 ms.assetid: cc2f6fee-c93a-437e-8056-5af90dd47ee3
 ---
 # How to prepare an iSCSI Target Server to work with VMM
-This topic provides an example of how to prepare a Microsoft iSCSI Target Server to work with [!INCLUDE[vmm12long](./Token/vmm12long_md.md)], including how to install the SMI\-S provider. The following diagram shows the example topology: one computer for the [!INCLUDE[vmm12short](./Token/vmm12short_md.md)] management server, and one computer that is running the iSCSI Target Server.
+This topic provides an example of how to prepare a Microsoft iSCSI Target Server to work with [!INCLUDE[vmm12long](Token/vmm12long_md.md)], including how to install the SMI\-S provider. The following diagram shows the example topology: one computer for the [!INCLUDE[vmm12short](Token/vmm12short_md.md)] management server, and one computer that is running the iSCSI Target Server.
 
-![](/Image/VMMiSCSI4.png)
+![](Image/VMMiSCSI4.png)
 
-The [!INCLUDE[vmm12short](./Token/vmm12short_md.md)] management server must be in a domain. The iSCSI Target Server can be in a domain or a workgroup.
+The [!INCLUDE[vmm12short](Token/vmm12short_md.md)] management server must be in a domain. The iSCSI Target Server can be in a domain or a workgroup.
 
 ### To prepare the example iSCSI\-VMM topology
 
-1.  Install [!INCLUDE[vmm12short](./Token/vmm12short_md.md)] on the [!INCLUDE[vmm12short](./Token/vmm12short_md.md)] management server.
+1.  Install [!INCLUDE[vmm12short](Token/vmm12short_md.md)] on the [!INCLUDE[vmm12short](Token/vmm12short_md.md)] management server.
 
-    [!INCLUDE[vmm12short](./Token/vmm12short_md.md)] requires Microsoft SQL Server and the Microsoft .NET Framework. If they are not installed, [!INCLUDE[vmm12short](./Token/vmm12short_md.md)] setup prompts you to install them. For more information, see[Preparing your environment for System Center 2016 - Virtual Machine Manager](./Preparing-your-environment-for-System-Center-2016---Virtual-Machine-Manager.md). The Microsoft Standard\-based Storage Management service is enabled during [!INCLUDE[vmm12short](./Token/vmm12short_md.md)] installation.
+    [!INCLUDE[vmm12short](Token/vmm12short_md.md)] requires Microsoft SQL Server and the Microsoft .NET Framework. If they are not installed, [!INCLUDE[vmm12short](Token/vmm12short_md.md)] setup prompts you to install them. For more information, see[Preparing your environment for System Center 2016 - Virtual Machine Manager](Preparing-your-environment-for-System-Center-2016---Virtual-Machine-Manager.md). The Microsoft Standard\-based Storage Management service is enabled during [!INCLUDE[vmm12short](Token/vmm12short_md.md)] installation.
 
-    The [!INCLUDE[vmm12short](./Token/vmm12short_md.md)] installation includes the Microsoft Standard\-based Storage Management service \(SMS\), which will interact with the SMI\-S provider.
+    The [!INCLUDE[vmm12short](Token/vmm12short_md.md)] installation includes the Microsoft Standard\-based Storage Management service \(SMS\), which will interact with the SMI\-S provider.
 
 2.  Install the iSCSI Target Server role.
 
-    One way of doing this is to use the Windows PowerShell command **Install\-WindowsFeature FS\-iSCSITarget\-Server**. iSCSI Target Server is included in the server operating system starting with [!INCLUDE[win8_server_2](./Token/win8_server_2_md.md)]. For more information about using Windows PowerShell to install roles or features, see [Get-WindowsFeature](http://technet.microsoft.com/library/jj205469.aspx) and [Install-WindowsFeature](http://technet.microsoft.com/library/jj205467.aspx).
+    One way of doing this is to use the Windows PowerShell command **Install\-WindowsFeature FS\-iSCSITarget\-Server**. iSCSI Target Server is included in the server operating system starting with [!INCLUDE[win8_server_2](Token/win8_server_2_md.md)]. For more information about using Windows PowerShell to install roles or features, see [Get-WindowsFeature](http://technet.microsoft.com/library/jj205469.aspx) and [Install-WindowsFeature](http://technet.microsoft.com/library/jj205467.aspx).
 
 3.  If needed, install the SMI\-S provider.
 
     This step depends on the version of Windows Server that the iSCSI Target Server runs:
 
-    -   **[!INCLUDE[winblue_server_2](./Token/winblue_server_2_md.md)] or later:** Skip this step; the SMI\-S provider is installed automatically.
+    -   **[!INCLUDE[winblue_server_2](Token/winblue_server_2_md.md)] or later:** Skip this step; the SMI\-S provider is installed automatically.
 
-    -   **[!INCLUDE[win8_server_2](./Token/win8_server_2_md.md)]:**
+    -   **[!INCLUDE[win8_server_2](Token/win8_server_2_md.md)]:**
 
         1.  Install an update rollup no earlier than [Windows 8 and Windows Server 2012 cumulative update: November 2012](http://support.microsoft.com/kb/2770917) \(Microsoft KB article 2770917\).
 
-            One of the updates in the update rollup contains WMI\-related changes to iSCSI Target Server that improve the [!INCLUDE[vmm12short](./Token/vmm12short_md.md)] discovery performance.
+            One of the updates in the update rollup contains WMI\-related changes to iSCSI Target Server that improve the [!INCLUDE[vmm12short](Token/vmm12short_md.md)] discovery performance.
 
         2.  Install the SMI\-S provider on it, as follows:
 
             1.  Find the Setup file in one of the following locations:
 
-                -   On the [!INCLUDE[vmm12short](./Token/vmm12short_md.md)] installation media at:
+                -   On the [!INCLUDE[vmm12short](Token/vmm12short_md.md)] installation media at:
 
                     \\amd64\\Setup\\msi\\iSCSITargetSMISProvider.msi
 
-                -   On the [!INCLUDE[vmm12short](./Token/vmm12short_md.md)] server at:
+                -   On the [!INCLUDE[vmm12short](Token/vmm12short_md.md)] server at:
 
                     \\Program Files\\Microsoft System Center 2012\\Virtual Machine Manager\\Setup\\Msi\\iSCSITargetProv\\iSCSITargetSMISProvider.msi
 
@@ -55,8 +55,8 @@ The [!INCLUDE[vmm12short](./Token/vmm12short_md.md)] management server must be i
             3.  Complete the wizard to install the provider.
 
 ## See Also
-[Configuring iSCSI Target Server and the SMI-S Provider in VMM](./Configuring-iSCSI-Target-Server-and-the-SMI-S-Provider-in-VMM.md)
-[Managing storage resources and capacity with VMM](./Managing-storage-resources-and-capacity-with-VMM.md)
-[Managing fabric resources with VMM](./Managing-fabric-resources-with-VMM.md)
+[Configuring iSCSI Target Server and the SMI-S Provider in VMM](Configuring-iSCSI-Target-Server-and-the-SMI-S-Provider-in-VMM.md)
+[Managing storage resources and capacity with VMM](Managing-storage-resources-and-capacity-with-VMM.md)
+[Managing fabric resources with VMM](Managing-fabric-resources-with-VMM.md)
 
 

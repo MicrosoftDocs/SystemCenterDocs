@@ -11,14 +11,14 @@ ms.topic: article
 ms.assetid: 7b2826e5-da62-4cdd-87f3-eef89ecac651
 ---
 # Glossary for Opalis Integration Server 6.3
-The following table lists Opalis Integration Server 6.3 terms and the [!INCLUDE[orchshort](./Token/orchshort_md.md)] terms that replace them. A brief definition is included for each term.
+The following table lists Opalis Integration Server 6.3 terms and the [!INCLUDE[orchshort](Token/orchshort_md.md)] terms that replace them. A brief definition is included for each term.
 
-|Opalis Integration Server 6.3 term|[!INCLUDE[orchlong](./Token/orchlong_md.md)] term|Definition|
+|Opalis Integration Server 6.3 term|[!INCLUDE[orchlong](Token/orchlong_md.md)] term|Definition|
 |--------------------------------------|------------------------------------------------------|--------------|
 |Action server|runbook server|A runbook server is a computer that receives an instance of a runbook and runs the sequence of activities. Runbook servers communicate directly with the orchestration database; they do not require a management server to run runbooks.|
 |Client|Runbook Designer|See definition for Opalis client.|
 |custom start|initialize data|The initial runbook activity defined in a runbook to provide user\-defined input parameters for the runbook.|
-|datastore|orchestration database|The orchestration database is a SQL Server database containing configuration information, runbooks, and logs for [!INCLUDE[orchshort](./Token/orchshort_md.md)].|
+|datastore|orchestration database|The orchestration database is a SQL Server database containing configuration information, runbooks, and logs for [!INCLUDE[orchshort](Token/orchshort_md.md)].|
 |foundation object|standard activity|The set of runbook activities available in a default installation. This includes monitors, tasks, and all runbook controls.|
 |object|activity|The tasks used to create a runbook.|
 |Object palette|Activities pane|The **Activities** pane is located in the tasks pane in the Runbook Designer. Collections of activities are grouped by function or integration pack.|

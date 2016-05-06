@@ -11,13 +11,13 @@ ms.topic: article
 ms.assetid: 6874fc3d-646b-46e7-965c-9ec6bac88500
 ---
 # Default Methods for .NET Application Monitoring
-Application Performance Monitoring in [!INCLUDE[om12short](./Token/om12short_md.md)] includes many functions and resources calls that are monitored by default.
+Application Performance Monitoring in [!INCLUDE[om12short](Token/om12short_md.md)] includes many functions and resources calls that are monitored by default.
 
 ## Functions Monitored by Default
 Application Performance Monitoring includes many well\-known Microsoft .NET Framework functions that are monitored for slow performance or exception data collection.
 
 ### For SharePoint
-For [!INCLUDE[sc2012sp1_short](./Token/sc2012sp1_short_md.md)] these resources are included:
+For [!INCLUDE[sc2012sp1_short](Token/sc2012sp1_short_md.md)] these resources are included:
 
 -   Microsoft.Office.Excel.WebUI.ExcelWebRenderer.OnPreRender
 
@@ -102,7 +102,7 @@ For [!INCLUDE[sc2012sp1_short](./Token/sc2012sp1_short_md.md)] these resources a
 -   Microsoft.SharePoint.WebPartPages.DataFormWebPart.OnPreRender
 
 ### For SharePoint: Base Classes Monitoring
-For [!INCLUDE[sc2012sp1_short](./Token/sc2012sp1_short_md.md)] these resources are included:
+For [!INCLUDE[sc2012sp1_short](Token/sc2012sp1_short_md.md)] these resources are included:
 
 -   System.Web.UI.WebControls.WebParts.WebPart.OnDataBinding
 
@@ -147,7 +147,7 @@ For [!INCLUDE[sc2012sp1_short](./Token/sc2012sp1_short_md.md)] these resources a
 -   \[Microsoft.SharePoint.WebPartPages.WebPart\].OnUnload
 
 ### For SharePoint: SPrequest Methods, Basic SharePoint 2007 APIs
-For [!INCLUDE[sc2012sp1_short](./Token/sc2012sp1_short_md.md)] these resources are included:
+For [!INCLUDE[sc2012sp1_short](Token/sc2012sp1_short_md.md)] these resources are included:
 
 -   Microsoft.SharePoint.Library.SPRequest.AccessContentTypes
 
@@ -882,24 +882,24 @@ For [!INCLUDE[sc2012sp1_short](./Token/sc2012sp1_short_md.md)] these resources a
 -   Microsoft.SharePoint.Library.SPRequest.WebTemplateName
 
 ### For SharePoint, Help Function for Site Name Retrieving
-For [!INCLUDE[sc2012sp1_short](./Token/sc2012sp1_short_md.md)] these resources are included:
+For [!INCLUDE[sc2012sp1_short](Token/sc2012sp1_short_md.md)] these resources are included:
 
 -   Microsoft.SharePoint.WebPartPages.SPWebPartManager.LoadWebParts
 
 ### For SharePoint, KPI Helper
-For [!INCLUDE[sc2012sp1_short](./Token/sc2012sp1_short_md.md)] these resources are included:
+For [!INCLUDE[sc2012sp1_short](Token/sc2012sp1_short_md.md)] these resources are included:
 
 -   Microsoft.SharePoint.Portal.WebControls.KpiRenderer.getKpiData
 
 ### For MVC
-For [!INCLUDE[sc2012sp1_short](./Token/sc2012sp1_short_md.md)] these resources are included:
+For [!INCLUDE[sc2012sp1_short](Token/sc2012sp1_short_md.md)] these resources are included:
 
 -   System.Web.Mvc.ReflectedActionDescriptor.Execute
 
 -   System.Web.Mvc.Async.ReflectedAsyncActionDescriptor.BeginExecute
 
 ### For Windows Azure Storage Queue
-For [!INCLUDE[sc2012sp1_short](./Token/sc2012sp1_short_md.md)] these resources are included:
+For [!INCLUDE[sc2012sp1_short](Token/sc2012sp1_short_md.md)] these resources are included:
 
 -   Microsoft.WindowsAzure.StorageClient.CloudQueue.AddMessage
 
@@ -928,7 +928,7 @@ For [!INCLUDE[sc2012sp1_short](./Token/sc2012sp1_short_md.md)] these resources a
 -   Microsoft.WindowsAzure.StorageClient.CloudQueue.SetMetadata
 
 ### For Windows Azure Storage Table
-For [!INCLUDE[sc2012sp1_short](./Token/sc2012sp1_short_md.md)] these resources are included:
+For [!INCLUDE[sc2012sp1_short](Token/sc2012sp1_short_md.md)] these resources are included:
 
 -   Microsoft.WindowsAzure.StorageClient.CloudTableClient.CreateTablesFromModel
 
@@ -945,7 +945,7 @@ For [!INCLUDE[sc2012sp1_short](./Token/sc2012sp1_short_md.md)] these resources a
 -   Microsoft.WindowsAzure.StorageClient.CloudTableClient.ListTablesSegmented
 
 ### For Windows Azure Storage Blob Container
-For [!INCLUDE[sc2012sp1_short](./Token/sc2012sp1_short_md.md)] these resources are included:
+For [!INCLUDE[sc2012sp1_short](Token/sc2012sp1_short_md.md)] these resources are included:
 
 -   Microsoft.WindowsAzure.StorageClient.CloudBlobContainer.Create
 
@@ -966,7 +966,7 @@ For [!INCLUDE[sc2012sp1_short](./Token/sc2012sp1_short_md.md)] these resources a
 -   Microsoft.WindowsAzure.StorageClient.CloudBlobDirectory.ListBlobsSegmented
 
 ### For Windows Azure Storage Blobs
-For [!INCLUDE[sc2012sp1_short](./Token/sc2012sp1_short_md.md)] these resources are included:
+For [!INCLUDE[sc2012sp1_short](Token/sc2012sp1_short_md.md)] these resources are included:
 
 -   Microsoft.WindowsAzure.StorageClient.CloudBlob.CopyFromBlob
 
@@ -1007,7 +1007,7 @@ For [!INCLUDE[sc2012sp1_short](./Token/sc2012sp1_short_md.md)] these resources a
 -   Microsoft.WindowsAzure.StorageClient.CloudPageBlob.GetPageRanges
 
 ### For Windows Azure Storage Blob Stream
-For [!INCLUDE[sc2012sp1_short](./Token/sc2012sp1_short_md.md)] these resources are included:
+For [!INCLUDE[sc2012sp1_short](Token/sc2012sp1_short_md.md)] these resources are included:
 
 -   Microsoft.WindowsAzure.StorageClient.BlobReadStream.Read
 
@@ -1035,13 +1035,13 @@ For [!INCLUDE[sc2012sp1_short](./Token/sc2012sp1_short_md.md)] these resources a
 
 ### For COM\+ Services \(Server Side\)
 
--   [!INCLUDE[sc2012sp1note](./Token/sc2012sp1note_md.md)] System.EnterpriseServices.ServicedComponentProxy.LocalInvoke
+-   [!INCLUDE[sc2012sp1note](Token/sc2012sp1note_md.md)] System.EnterpriseServices.ServicedComponentProxy.LocalInvoke
 
 ### For SQL server
 
--   [!INCLUDE[sc2012sp1note](./Token/sc2012sp1note_md.md)] System.Data.SqlClient.SqlConnection.Open
+-   [!INCLUDE[sc2012sp1note](Token/sc2012sp1note_md.md)] System.Data.SqlClient.SqlConnection.Open
 
--   [!INCLUDE[sc2012sp1note](./Token/sc2012sp1note_md.md)] System.Data.SqlClient.SqlConnection.Close
+-   [!INCLUDE[sc2012sp1note](Token/sc2012sp1note_md.md)] System.Data.SqlClient.SqlConnection.Close
 
 -   System.Data.SqlClient.SqlCommand.ExecuteReader
 
@@ -1053,9 +1053,9 @@ For [!INCLUDE[sc2012sp1_short](./Token/sc2012sp1_short_md.md)] these resources a
 
 ### For OLEDB
 
--   [!INCLUDE[sc2012sp1note](./Token/sc2012sp1note_md.md)] System.Data.OleDb.OleDbConnection.Open
+-   [!INCLUDE[sc2012sp1note](Token/sc2012sp1note_md.md)] System.Data.OleDb.OleDbConnection.Open
 
--   [!INCLUDE[sc2012sp1note](./Token/sc2012sp1note_md.md)] System.Data.OleDb.OleDbConnection.Close
+-   [!INCLUDE[sc2012sp1note](Token/sc2012sp1note_md.md)] System.Data.OleDb.OleDbConnection.Close
 
 -   System.Data.OleDb.OleDbCommand.ExecuteReader
 
@@ -1069,9 +1069,9 @@ For [!INCLUDE[sc2012sp1_short](./Token/sc2012sp1_short_md.md)] these resources a
 
 ### For ODBC
 
--   [!INCLUDE[sc2012sp1note](./Token/sc2012sp1note_md.md)] System.Data.Odbc.OdbcConnection.Open
+-   [!INCLUDE[sc2012sp1note](Token/sc2012sp1note_md.md)] System.Data.Odbc.OdbcConnection.Open
 
--   [!INCLUDE[sc2012sp1note](./Token/sc2012sp1note_md.md)] System.Data.Odbc.OdbcConnection.Close
+-   [!INCLUDE[sc2012sp1note](Token/sc2012sp1note_md.md)] System.Data.Odbc.OdbcConnection.Close
 
 -   System.Data.Odbc.OdbcCommand.ExecuteReader
 
@@ -1097,9 +1097,9 @@ For [!INCLUDE[sc2012sp1_short](./Token/sc2012sp1_short_md.md)] these resources a
 
 ### For Oracle
 
--   [!INCLUDE[sc2012sp1note](./Token/sc2012sp1note_md.md)] System.Data.OracleClient.OracleConnection.Open
+-   [!INCLUDE[sc2012sp1note](Token/sc2012sp1note_md.md)] System.Data.OracleClient.OracleConnection.Open
 
--   [!INCLUDE[sc2012sp1note](./Token/sc2012sp1note_md.md)] System.Data.OracleClient.OracleConnection.Close
+-   [!INCLUDE[sc2012sp1note](Token/sc2012sp1note_md.md)] System.Data.OracleClient.OracleConnection.Close
 
 -   Oracle.DataAccess.Client.OracleCommand.ExecuteReader
 

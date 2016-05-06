@@ -27,7 +27,7 @@ The most basic **Web Application Transaction Monitoring** template includes a si
 
     1.  In the **Name** and **Description** boxes, type a name and an optional description.
 
-    2.  Select a management pack in which to save the monitor, or click **New** to create a new management pack. For more information, see [Selecting a Management Pack File](./Selecting-a-Management-Pack-File.md).
+    2.  Select a management pack in which to save the monitor, or click **New** to create a new management pack. For more information, see [Selecting a Management Pack File](Selecting-a-Management-Pack-File.md).
 
     3.  Click **Next**.
 
@@ -46,7 +46,7 @@ The most basic **Web Application Transaction Monitoring** template includes a si
 
 7.  On the **Watcher Node** page, do the following:
 
-    1.  Select one or more [Watcher Nodes](./Watcher-Nodes.md) to run the web requests.
+    1.  Select one or more [Watcher Nodes](Watcher-Nodes.md) to run the web requests.
 
     2.  Specify the frequency to run the web request in the **Run this query every** box.
 
@@ -55,7 +55,7 @@ The most basic **Web Application Transaction Monitoring** template includes a si
 8.  On the **Summary** page, review the summary of the monitor, and then click **Create**.
 
 ## See Also
-[How to Edit Settings or Requests in a Web Application](./How-to-Edit-Settings-or-Requests-in-a-Web-Application.md)
-[How to Capture Web Application Recording](./How-to-Capture-Web-Application-Recording.md)
+[How to Edit Settings or Requests in a Web Application](How-to-Edit-Settings-or-Requests-in-a-Web-Application.md)
+[How to Capture Web Application Recording](How-to-Capture-Web-Application-Recording.md)
 
 

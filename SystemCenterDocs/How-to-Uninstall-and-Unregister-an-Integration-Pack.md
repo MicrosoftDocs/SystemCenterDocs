@@ -31,6 +31,6 @@ For instructions on how to install an integration pack, see the [How To Install 
 3.  Right\-click the integration pack and click **Unregister Integration Pack or Hotfix from the Orchestrator Management Server**.
 
 ## See Also
-[Upgrading System Center 2012 SP1 Orchestrator to System Center 2012 R2](./Upgrading-System-Center-2012-SP1-Orchestrator-to-System-Center-2012-R2.md)
+[Upgrading System Center 2012 SP1 Orchestrator to System Center 2012 R2](Upgrading-System-Center-2012-SP1-Orchestrator-to-System-Center-2012-R2.md)
 
 

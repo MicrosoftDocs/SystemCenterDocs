@@ -11,12 +11,12 @@ ms.topic: article
 ms.assetid: c02fa3c2-fd4b-4479-abec-92d40bf00fd6
 ---
 # How to add existing servers or clusters as Hyper-V hosts or host clusters in VMM
-You can use this procedure for servers or clusters regardless of whether the Hyper\-V role is already installed on them. If the servers or clusters are in a perimeter network, do not use this procedure, but instead see [How to add Hyper-V hosts in a perimeter network in VMM](./How-to-add-Hyper-V-hosts-in-a-perimeter-network-in-VMM.md). Additional links are provided at the end of this topic.
+You can use this procedure for servers or clusters regardless of whether the Hyper\-V role is already installed on them. If the servers or clusters are in a perimeter network, do not use this procedure, but instead see [How to add Hyper-V hosts in a perimeter network in VMM](How-to-add-Hyper-V-hosts-in-a-perimeter-network-in-VMM.md). Additional links are provided at the end of this topic.
 
 > [!IMPORTANT]
-> Before you begin this procedure, see [Prerequisites: adding servers or clusters as Hyper-V hosts or host clusters in VMM](./Prerequisites--adding-servers-or-clusters-as-Hyper-V-hosts-or-host-clusters-in-VMM.md).
+> Before you begin this procedure, see [Prerequisites: adding servers or clusters as Hyper-V hosts or host clusters in VMM](Prerequisites--adding-servers-or-clusters-as-Hyper-V-hosts-or-host-clusters-in-VMM.md).
 
-### To add existing servers or clusters as Hyper\-V hosts or host clusters in [!INCLUDE[vmm12short](./Token/vmm12short_md.md)]
+### To add existing servers or clusters as Hyper\-V hosts or host clusters in [!INCLUDE[vmm12short](Token/vmm12short_md.md)]
 
 1.  Open the **Fabric** workspace.
 
@@ -33,7 +33,7 @@ You can use this procedure for servers or clusters regardless of whether the Hyp
     To create a Run As account, click **Browse** and then click **Create Run As Account**.
 
     > [!IMPORTANT]
-    > The account must fulfill [Prerequisites: adding servers or clusters as Hyper-V hosts or host clusters in VMM](./Prerequisites--adding-servers-or-clusters-as-Hyper-V-hosts-or-host-clusters-in-VMM.md).
+    > The account must fulfill [Prerequisites: adding servers or clusters as Hyper-V hosts or host clusters in VMM](Prerequisites--adding-servers-or-clusters-as-Hyper-V-hosts-or-host-clusters-in-VMM.md).
 
 6.  On the **Discovery scope** page, specify computers as listed in the following table, and then click **Next**:
 
@@ -57,7 +57,7 @@ You can use this procedure for servers or clusters regardless of whether the Hyp
 
         For example, enter the name **HyperVHost02.fabrikam.com**, where *fabrikam.com* is the name of the untrusted domain.
 
-    If the Hyper\-V role is not enabled on a selected server, you receive a message that [!INCLUDE[vmm12short](./Token/vmm12short_md.md)] will install the Hyper\-V role and restart the server. Click **OK** to continue.
+    If the Hyper\-V role is not enabled on a selected server, you receive a message that [!INCLUDE[vmm12short](Token/vmm12short_md.md)] will install the Hyper\-V role and restart the server. Click **OK** to continue.
 
 8.  On the **Host settings** page, do the following:
 
@@ -65,10 +65,10 @@ You can use this procedure for servers or clusters regardless of whether the Hyp
 
         For example, click the host group **Seattle\\Tier0\_SEA**.
 
-    2.  If the host is already associated with a different [!INCLUDE[vmm12short](./Token/vmm12short_md.md)] management server, select the **Reassociate this host with this VMM environment** check box.
+    2.  If the host is already associated with a different [!INCLUDE[vmm12short](Token/vmm12short_md.md)] management server, select the **Reassociate this host with this VMM environment** check box.
 
         > [!NOTE]
-        > If the host was associated with a different [!INCLUDE[vmm12short](./Token/vmm12short_md.md)] management server, it will stop working on that server.
+        > If the host was associated with a different [!INCLUDE[vmm12short](Token/vmm12short_md.md)] management server, it will stop working on that server.
 
     3.  For a stand\-alone host, in the **Add the following path** box, enter a path on the host for storing files for virtual machines that are deployed on the host, and then click **Add**. Repeat this step to add more than one path. Note:
 
@@ -77,7 +77,7 @@ You can use this procedure for servers or clusters regardless of whether the Hyp
         -   If you specify a path that does not already exist, the path is created automatically.
 
         > [!NOTE]
-        > When you add a host cluster, you do not specify default virtual machine paths, as you would for a stand\-alone host. For a host cluster, [!INCLUDE[vmm12short](./Token/vmm12short_md.md)] automatically manages the paths that are available for virtual machines, based on the shared storage that is available to the host cluster.
+        > When you add a host cluster, you do not specify default virtual machine paths, as you would for a stand\-alone host. For a host cluster, [!INCLUDE[vmm12short](Token/vmm12short_md.md)] automatically manages the paths that are available for virtual machines, based on the shared storage that is available to the host cluster.
 
     4.  When you're finished, click **Next**.
 
@@ -85,20 +85,20 @@ You can use this procedure for servers or clusters regardless of whether the Hyp
 
     The **Jobs** dialog box appears to show the job status. Make sure that the job has a status of **Completed**, and then close the dialog box.
 
-    If the hosts are in a disjointed namespace and the job fails, review the permissions requirement for Service Principal Names \(SPNs\) in [Prerequisites for a disjointed namespace](./Prerequisites--adding-servers-or-clusters-as-Hyper-V-hosts-or-host-clusters-in-VMM.md#BKMK_disjoint) in "Prerequisites: adding servers or clusters as Hyper\-V hosts or host clusters in VMM."
+    If the hosts are in a disjointed namespace and the job fails, review the permissions requirement for Service Principal Names \(SPNs\) in [Prerequisites for a disjointed namespace](Prerequisites--adding-servers-or-clusters-as-Hyper-V-hosts-or-host-clusters-in-VMM.md#BKMK_disjoint) in "Prerequisites: adding servers or clusters as Hyper\-V hosts or host clusters in VMM."
 
 10. To verify that the host or host cluster was successfully added, in the **Fabric** pane, expand the host group and then click the host or host cluster. Then, in the **Hosts** pane, verify that the host status is **OK**.
 
     > [!TIP]
-    > To view detailed information about host status, right\-click a host in the [!INCLUDE[vmm12short](./Token/vmm12short_md.md)] console, and then click **Properties**. On the **Status** tab, you can view the health status for various areas such as overall health, [!INCLUDE[vmm12short](./Token/vmm12short_md.md)] agent health, and Hyper\-V role health. If there is an issue, you can click **Repair all**. [!INCLUDE[vmm12short](./Token/vmm12short_md.md)] will try to automatically fix the issue.
+    > To view detailed information about host status, right\-click a host in the [!INCLUDE[vmm12short](Token/vmm12short_md.md)] console, and then click **Properties**. On the **Status** tab, you can view the health status for various areas such as overall health, [!INCLUDE[vmm12short](Token/vmm12short_md.md)] agent health, and Hyper\-V role health. If there is an issue, you can click **Repair all**. [!INCLUDE[vmm12short](Token/vmm12short_md.md)] will try to automatically fix the issue.
 
 ## See Also
-[Adding Windows servers as Hyper-V hosts or host clusters in VMM](./Adding-Windows-servers-as-Hyper-V-hosts-or-host-clusters-in-VMM.md)
-[Configuring Hyper-V host properties in VMM](./Configuring-Hyper-V-host-properties-in-VMM.md)
-[Creating a host cluster in VMM from existing Windows servers](./Creating-a-host-cluster-in-VMM-from-existing-Windows-servers.md)
-[Deploying Hyper-V hosts or host clusters from bare metal with VMM](./Deploying-Hyper-V-hosts-or-host-clusters-from-bare-metal-with-VMM.md)
-[Managing Hyper-V hosts and host clusters with VMM](./Managing-Hyper-V-hosts-and-host-clusters-with-VMM.md)
-[Managing hosts and host clusters with VMM](./Managing-hosts-and-host-clusters-with-VMM.md)
-[Managing fabric resources with VMM](./Managing-fabric-resources-with-VMM.md)
+[Adding Windows servers as Hyper-V hosts or host clusters in VMM](Adding-Windows-servers-as-Hyper-V-hosts-or-host-clusters-in-VMM.md)
+[Configuring Hyper-V host properties in VMM](Configuring-Hyper-V-host-properties-in-VMM.md)
+[Creating a host cluster in VMM from existing Windows servers](Creating-a-host-cluster-in-VMM-from-existing-Windows-servers.md)
+[Deploying Hyper-V hosts or host clusters from bare metal with VMM](Deploying-Hyper-V-hosts-or-host-clusters-from-bare-metal-with-VMM.md)
+[Managing Hyper-V hosts and host clusters with VMM](Managing-Hyper-V-hosts-and-host-clusters-with-VMM.md)
+[Managing hosts and host clusters with VMM](Managing-hosts-and-host-clusters-with-VMM.md)
+[Managing fabric resources with VMM](Managing-fabric-resources-with-VMM.md)
 
 

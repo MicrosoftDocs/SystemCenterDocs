@@ -14,7 +14,7 @@ ms.assetid: 2f57fc14-4b23-41e9-87dc-51a0b998b321
 # Deploy a Software Load Balancer using VMM
 ## Introduction
 
-This topic helps you evaluate the Software Defined Networking (SDN) features in [!INCLUDE[winthreshold_server_2_md./Token/winthreshold_server_2_md.md)] 5 and Virtual Machine Manager Technology Preview 5. In particular, this topic is focused on deploying and configuring Microsoft Software Load Balancer (SLB) using VMM Technical Preview 5.
+This topic helps you evaluate the Software Defined Networking (SDN) features in [!INCLUDE[winthreshold_server_2_mdToken/winthreshold_server_2_md.md)] 5 and Virtual Machine Manager Technology Preview 5. In particular, this topic is focused on deploying and configuring Microsoft Software Load Balancer (SLB) using VMM Technical Preview 5.
 
 After you use VMM to deploy a network controller and a SLB, you can leverage multiplexing and NAT capabilities in your Software Defined Networking (SDN) infrastructure.
 
@@ -45,13 +45,13 @@ Refer to the topology diagram in the following Microsoft TechNet Library topic: 
 
 The diagram shows a sample 4-node setup. The setup is highly available with three network controller nodes (virtual machines), and three SLB/MUX nodes. It shows two tenants with one virtual networks broken into two virtual subnets to simulate a web tier and a database tier. Both the infrastructure and tenant virtual machines can be redistributed across any physical host.
 
-All the Software Load Balancer virtual machines must have [!INCLUDE[winthreshold_server_2_md./Token/winthreshold_server_2_md.md)] 5 with the Zero Day Patch as the operating system.
+All the Software Load Balancer virtual machines must have [!INCLUDE[winthreshold_server_2_mdToken/winthreshold_server_2_md.md)] 5 with the Zero Day Patch as the operating system.
 
 ### Logical networks
 
 In addition to the Management and HNV Provider logical networks that you already have configured during network controller deployment, you need the Transit (sometimes called Front End), Private VIP and Public VIP networks to deploy the SLB. Refer to the [Plan a Software Defined Network Infrastructure](https://technet.microsoft.com/library/mt605207.aspx) topic for more information about these networks.
                                                                                                                                     
- >[!NOTE]Normally you would use the Transit network for BGP peering. But because of a limitation in [!INCLUDE[winthreshold_server_2_md./Token/winthreshold_server_2_md.md)] 5, the SLB actually uses the Management network for BGP peering. However, this doesn’t impact how you deploy the SLB.  
+ >[!NOTE]Normally you would use the Transit network for BGP peering. But because of a limitation in [!INCLUDE[winthreshold_server_2_mdToken/winthreshold_server_2_md.md)] 5, the SLB actually uses the Management network for BGP peering. However, this doesn’t impact how you deploy the SLB.  
 
 Active Directory and DNS must be available and reachable from these networks. You must have Domain Administrator credentials and the ability to create DNS entries in the domain.
 
@@ -79,7 +79,7 @@ Ensure you use the IP address range that corresponds to your Transit network IP 
 
 After you create the Transit logical network, ensure you associate this logical network with the Management switch uplink port profile you created during the network controller deployment.
 
-![VMM MGMT Uplink PP Properties/Image/VMM-MGMT-Uplink-PP-Properties.png)
+![VMM MGMT Uplink PP PropertiesImage/VMM-MGMT-Uplink-PP-Properties.png)
 
 ##### Private VIP logical network 
 
@@ -221,13 +221,13 @@ Now that the service is deployed, you can configure its properties. This involve
 
 6.  Select the SLB/MUX service instance you created earlier and click **OK**.
 
-    ![VMM Add Service/Image/VMM-Add-Service.png)
+    ![VMM Add ServiceImage/VMM-Add-Service.png)
 
 7.  Choose the appropriate Run as Account
 
 8.  For the **Management IP address**, use the last IP address from the Private VIP pool you created earlier.
 
-    ![VMM NC Properties SLBMUX/Image/VMM-NC-Properties-SLBMUX.png)
+    ![VMM NC Properties SLBMUXImage/VMM-NC-Properties-SLBMUX.png)
 
 9.  Optionally specify the IP address ranges to be excluded from the outbound NAT.
 
@@ -258,7 +258,7 @@ Use the following steps to disable IPv6:
 3. Select a vNIC on the Network Connections dialog, right-click the vNIC and select **Properties**.
 4. Uncheck the **Internet Protocol Version 6(TCP/IPv6)** checkbox if its enabled as shown in the screenshot below
     a.	Repeat this step for all the vNICs in Network Connections.
-![VMM Network Connections/Image/VMM-Network-Connections.png)    
+![VMM Network ConnectionsImage/VMM-Network-Connections.png)    
 5. Repeat Steps 1-4 for all the SLB/MUX virtual machines.
 
 Since the SLB/MUX is now on-boarded and SLB Manager VIP is assigned, you can now proceed to create IP pools for the Private VIP and Public VIP logical networks you created earlier.
@@ -308,7 +308,7 @@ To publish the VIP network and addresses to networks outside of your private clo
 
 Enter your external router details in the wizard similar to what is shown below:
 
-![VMM NC Properties BGP/Image/VMM-NC-Properties-BGP.png)
+![VMM NC Properties BGPImage/VMM-NC-Properties-BGP.png)
 
 Click **OK** to complete the SLB/MUX service instance configuration.
 
@@ -477,7 +477,7 @@ Use the following steps to configure NAT:
     4.	Type the destination IP address for this NAT rule.
     5.	Type the destination port.
 
-    ![VMM NAT/Image/VMM-NAT.png)
+    ![VMM NATImage/VMM-NAT.png)
 10.	Click **OK**.
 
 >[!NOTE]

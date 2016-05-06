@@ -33,7 +33,7 @@ The following options are available on the **General Options** page of the wizar
 |----------|---------------|
 |Name|The name used for the template. This name is displayed in the Operations console.|
 |Description|Optional description of the template.|
-|Management Pack|Management pack file to store the rule that the template creates.<br /><br />For more information about management packs, see [Selecting a Management Pack File](./Selecting-a-Management-Pack-File.md).|
+|Management Pack|Management pack file to store the rule that the template creates.<br /><br />For more information about management packs, see [Selecting a Management Pack File](Selecting-a-Management-Pack-File.md).|
 
 ### Log File Details
 The following options are available on the **Log File Details** page of the wizard.
@@ -53,7 +53,7 @@ The following options are available on the **Log File Details** page of the wiza
 
     -   If you want to monitor the log file on all UNIX and Linux computers in the management group, you do not have to create a group. You can use the existing group **UNIX\/Linux Computer Group**.
 
-    -   If you only want the log file to be monitored on a certain group of computers, either ensure that an appropriate group exists or create a new computer group by using the procedure in [How to Create Groups in Operations Manager](./How-to-Create-Groups-in-Operations-Manager.md).
+    -   If you only want the log file to be monitored on a certain group of computers, either ensure that an appropriate group exists or create a new computer group by using the procedure in [How to Create Groups in Operations Manager](How-to-Create-Groups-in-Operations-Manager.md).
 
 2.  Start the **Add Monitoring** wizard.
 
@@ -61,7 +61,7 @@ The following options are available on the **Log File Details** page of the wiza
 
 4.  On the **General Properties** page, in the **Name** and **Description** boxes, type a name and description for this new template.
 
-5.  Select a management pack in which to save the template or click **New** to create a new management pack. For more information, see [Selecting a Management Pack File](./Selecting-a-Management-Pack-File.md).
+5.  Select a management pack in which to save the template or click **New** to create a new management pack. For more information, see [Selecting a Management Pack File](Selecting-a-Management-Pack-File.md).
 
 6.  If you want to monitor the log file on a single computer, do the following:
 
@@ -107,7 +107,7 @@ The following options are available on the **Log File Details** page of the wiza
 There is no monitor or collected data for the **UNIX\/Linux Log File Monitoring** template. If a match is found in the specified log file, an alert is generated. You can view this alert in the **Active Alerts** view with the other alerts.
 
 ## See Also
-[Creating Management Pack Templates](./Creating-Management-Pack-Templates.md)
-[Watcher Nodes](./Watcher-Nodes.md)
+[Creating Management Pack Templates](Creating-Management-Pack-Templates.md)
+[Watcher Nodes](Watcher-Nodes.md)
 
 

@@ -11,7 +11,7 @@ ms.topic: article
 ms.assetid: c3e73e3a-fe17-4fd4-8c8e-401b02f8dc35
 ---
 # How to Add Knowledge to a Management Pack
-[!INCLUDE[om12long](./Token/om12long_md.md)] management packs include knowledge for rules, monitors, and alerts that helps you identify problems, causes, and resolutions.
+[!INCLUDE[om12long](Token/om12long_md.md)] management packs include knowledge for rules, monitors, and alerts that helps you identify problems, causes, and resolutions.
 
 Knowledge is referred to as *product knowledge* or *company knowledge*. Product knowledge is embedded in a rule or monitor when it is authored. Company knowledge is added by management group administrators to expand the troubleshooting information and provide company\-specific information for operators. Administrators can use company knowledge to document any overrides implemented for a monitor or rule, along with the explanation for the customization and any other information that might be useful.
 
@@ -61,12 +61,12 @@ To add or edit company knowledge, you must have the Author or Administrator user
 10. Return to the company knowledge tab and click **Save**, and then click **Close**. This will close both the properties dialog box and Word.
 
 ## See Also
-[Creating a Management Pack for Overrides](./Creating-a-Management-Pack-for-Overrides.md)
-[Management Packs Installed with Operations Manager](./Management-Packs-Installed-with-Operations-Manager.md)
-[What Is in an Operations Manager Management Pack?](./What-Is-in-an-Operations-Manager-Management-Pack-.md)
-[Management Pack Life Cycle](./Management-Pack-Life-Cycle.md)
-[How to Import an Operations Manager Management Pack](./How-to-Import-an-Operations-Manager-Management-Pack.md)
-[How to Remove an Operations Manager Management Pack](./How-to-Remove-an-Operations-Manager-Management-Pack.md)
-[How to Export an Operations Manager Management Pack](./How-to-Export-an-Operations-Manager-Management-Pack.md)
+[Creating a Management Pack for Overrides](Creating-a-Management-Pack-for-Overrides.md)
+[Management Packs Installed with Operations Manager](Management-Packs-Installed-with-Operations-Manager.md)
+[What Is in an Operations Manager Management Pack?](What-Is-in-an-Operations-Manager-Management-Pack-.md)
+[Management Pack Life Cycle](Management-Pack-Life-Cycle.md)
+[How to Import an Operations Manager Management Pack](How-to-Import-an-Operations-Manager-Management-Pack.md)
+[How to Remove an Operations Manager Management Pack](How-to-Remove-an-Operations-Manager-Management-Pack.md)
+[How to Export an Operations Manager Management Pack](How-to-Export-an-Operations-Manager-Management-Pack.md)
 
 

@@ -11,7 +11,7 @@ ms.topic: article
 ms.assetid: 147b3945-13f8-40fd-851a-5df9e79b08a9
 ---
 # Standard Reports Available in Service Manager
-The following reports are available in [!INCLUDE[scsm_threshold_1](./Token/scsm_threshold_1_md.md)].
+The following reports are available in [!INCLUDE[scsm_threshold_1](Token/scsm_threshold_1_md.md)].
 
 |Report area|Report name|Description|
 |---------------|---------------|---------------|
@@ -41,6 +41,6 @@ The following reports are available in [!INCLUDE[scsm_threshold_1](./Token/scsm_
 |Service Management|Service Summary|Provides a scorecard\-like report that includes a comprehensive view of the health of a service, including period\-over\-period analytic capabilities.|
 
 ## See Also
-[Using and Managing Standard Reports](./Using-and-Managing-Standard-Reports.md)
+[Using and Managing Standard Reports](Using-and-Managing-Standard-Reports.md)
 
 

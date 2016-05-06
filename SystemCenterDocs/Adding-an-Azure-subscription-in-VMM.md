@@ -8,7 +8,7 @@ ms.topic: article
 ms.assetid: 6805c8cf-d768-4680-9990-2b8c895f31ec
 ---
 # Adding an Azure subscription in VMM
-Withthe Add Azure Subscription feature, administrators of [!INCLUDE[vmm12sp1_long]./Token/vmm12sp1_long_md.md)] can add Microsoft Azure subscriptions to VMM and perform basic actions on Azure instances in those subscriptions. For each Azure subscription you add, you can use a console to see all role instances in all Deployment Groups in that subscription.
+Withthe Add Azure Subscription feature, administrators of [!INCLUDE[vmm12sp1_long](Token/vmm12sp1_long_md.md)] can add Microsoft Azure subscriptions to VMM and perform basic actions on Azure instances in those subscriptions. For each Azure subscription you add, you can use a console to see all role instances in all Deployment Groups in that subscription.
 
 ## What you can do with this feature
 If you already manage your on\-premise virtual machines in VMM, you can use this feature to perform some very basic actions on Azure instances without leaving the VMM console. You can:
@@ -68,12 +68,12 @@ The following is a list of system and environment requirements that are needed i
 ### Review the ribbon
 In the VMM console, open the **VMs and Services** workspace, and look on the ribbon for the **Azure** group, where **Add Subscription** appears.
 
-![/Image/VMM-R2-UR6-AddAzureSub01.jpg)
+![](Image/VMM-R2-UR6-AddAzureSub01.jpg)
 
 **Figure 1: The Azure "Add Subscription" button in the VMM console**
 
 ### Configure certificates
-Before you try to add a subscription, it's a good idea to check a few things, such as your certificates, to make sure you're ready. You might want to review [System and Environment Requirements](./Adding-an-Azure-subscription-in-VMM.md#BKMK_requirements), earlier in this document. Also, the following procedure provides details about how to review requirements.
+Before you try to add a subscription, it's a good idea to check a few things, such as your certificates, to make sure you're ready. You might want to review [System and Environment Requirements](Adding-an-Azure-subscription-in-VMM.md#BKMK_requirements), earlier in this document. Also, the following procedure provides details about how to review requirements.
 
 ##### To review requirements before you add a subscription
 
@@ -83,7 +83,7 @@ Before you try to add a subscription, it's a good idea to check a few things, su
 
     1.  Go to [https://manage.windowsazure.com](https://manage.windowsazure.com) and log in with your account.
 
-    2.  Click the Settings link ![/Image/VMM-R2-UR6-AddAzureSub02.jpg) to access your subscription information.
+    2.  Click the Settings link ![](Image/VMM-R2-UR6-AddAzureSub02.jpg) to access your subscription information.
 
     3.  On the Settings pages, click the MANAGEMENT CERTIFICATES link on the Settings page. If you see a certificate here, make note of the certificate thumbprint, because you will need this later. Then skip to step 5.
 
@@ -106,13 +106,13 @@ Before you try to add a subscription, it's a good idea to check a few things, su
 ### <a name="BKMK_wizard"></a>Add Azure Subscription Wizard
 If you don't already have your Subscription ID and the thumbprint of the certificate, make sure you gather that information now. You can find both of these pieces of information at the **Azure Management Portal** on the **Settings** > **Management Certificates** page.
 
-![/Image/VMM-R2-UR6-AddAzureSub03.jpg)
+![](Image/VMM-R2-UR6-AddAzureSub03.jpg)
 
 **Figure 2: Service Management Certificate Details on the Azure Management Portal**
 
 To start the **Add Azure Subscription Wizard**, in VMM, click the Azure **Add Subscription** button. The wizard is a single page dialog box:
 
-![/Image/VMM-R2-UR6-AddAzureSub04.jpg)
+![](Image/VMM-R2-UR6-AddAzureSub04.jpg)
 
 **Figure 3: Add Azure Subscription Wizard**
 
@@ -122,33 +122,33 @@ To start the **Add Azure Subscription Wizard**, in VMM, click the Azure **Add Su
 ### View an Azure subscription
 Once you have successfully added the subscription, if you look in the VMM console with the **VMs and Services** workspace open, and you look in the navigation tree under the **Azure Subscriptions** node, you should see the subscription.
 
-![/Image/VMM-R2-UR6-AddAzureSub05.jpg)
+![](Image/VMM-R2-UR6-AddAzureSub05.jpg)
 
 **Figure 4: Newly added Azure Subscription**
 
 Selecting the subscription node will display the following context\-sensitive actions in the VMM ribbon:
 
-![/Image/VMM-R2-UR6-AddAzureSub06.jpg)
+![](Image/VMM-R2-UR6-AddAzureSub06.jpg)
 
 **Figure 5: Azure Subscription actions in the VMM console ribbon**
 
 |Action\/Button|What it does|
 |------------------|----------------|
-|Add Subscription|Opens the wizard described in [Add Azure Subscription Wizard](./Adding-an-Azure-subscription-in-VMM.md#BKMK_wizard), earlier in this document. New subscriptions are added to the top level Azure Subscriptions node, rather than underneath the currently selected node.|
+|Add Subscription|Opens the wizard described in [Add Azure Subscription Wizard](Adding-an-Azure-subscription-in-VMM.md#BKMK_wizard), earlier in this document. New subscriptions are added to the top level Azure Subscriptions node, rather than underneath the currently selected node.|
 |Remove Subscription|Removes the currently selected Azure Subscription. You will be prompted for confirmation.|
 |Refresh Virtual Machines|Refreshes the list of virtual machines in the Azure Virtual Machines view.|
 
 ### Azure Virtual Machines List View
 The **Azure Virtual Machines** view displays a list of the Role Instances in all Deployments in all Resource Groups for the selected Azure Subscription.
 
-![/Image/VMM-R2-UR6-AddAzureSub07.jpg)
+![](Image/VMM-R2-UR6-AddAzureSub07.jpg)
 
 **Figure 6: Azure Virtual Machines list view**
 
 ### Azure Virtual Machine Details Pane
 When an Azure instance is selected in the list, if you look below the list grid view, you can see the **Azure Virtual Machines** details pane. Additional useful information is displayed, such as **DNS name** and the **OS** installed on the instance.
 
-![/Image/VMM-R2-UR6-AddAzureSub08.jpg)
+![](Image/VMM-R2-UR6-AddAzureSub08.jpg)
 
 **Figure 7: Virtual machine details pane**
 
@@ -163,13 +163,12 @@ When an individual virtual machine is selected from the list, a set of VM action
 |Restart|Requests a restart of a running instance.|
 |Connect via RDP|Initiates a remote desktop session to the Host Name \(DNS Name\) of the instance.|
 
-![/Image/VMM-R2-UR6-AddAzureSub09.jpg)
+![](Image/VMM-R2-UR6-AddAzureSub09.jpg)
 
 **Figure 8: Virtual Machines Actions**
 
 ## See Also
-[Creating and deploying virtual machines in VMM](./Creating-and-deploying-virtual-machines-in-VMM.md)
-[Creating Virtual Machine Role Templates by using VMM and Windows Azure Pack](./Creating-Virtual-Machine-Role-Templates-by-using-VMM-and-Windows-Azure-Pack.md)
-
+[Creating and deploying virtual machines in VMM](Creating-and-deploying-virtual-machines-in-VMM.md)
+[Creating Virtual Machine Role Templates by using VMM and Windows Azure Pack](Creating-Virtual-Machine-Role-Templates-by-using-VMM-and-Windows-Azure-Pack.md)
 
 

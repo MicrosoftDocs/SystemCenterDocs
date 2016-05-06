@@ -10,7 +10,7 @@ ms.assetid: 6a870b95-a776-4ae7-8719-d837181f171a
 # How to Configure Monitoring for .NET Applications_1
 
 ## Configure .NET Application Performance Monitoring
-The **.NET Application Performance Monitoring** template in [!INCLUDE[om12long](./Token/om12long_md.md)] lets you monitor .NET and WCF applications hosted in Internet Information Services \(IIS\) 7.0. [!INCLUDE[sc2012sp1note](./Token/sc2012sp1note_md.md)] You monitor applications hosted in IIS 8.0 and Windows Services. You can select one or more applications or services and configure monitoring of performance and exception events. Server\-side monitoring lets you measure details about the performance and reliability of applications that are running in your datacenter. By monitoring client\-side applications, you can measure details of the customer experience, such as how long it takes for a page to load. It is another way to monitor how your applications are working from the perspective of your customer. Client\-side application monitoring helps you determine whether your users are experiencing problems. With both client\-side and server\-side monitoring in use, you can determine if a problem exists on your server, in the application, or is being caused by external factors, such as high network latency.
+The **.NET Application Performance Monitoring** template in [!INCLUDE[om12long](Token/om12long_md.md)] lets you monitor .NET and WCF applications hosted in Internet Information Services \(IIS\) 7.0. [!INCLUDE[sc2012sp1note](Token/sc2012sp1note_md.md)] You monitor applications hosted in IIS 8.0 and Windows Services. You can select one or more applications or services and configure monitoring of performance and exception events. Server\-side monitoring lets you measure details about the performance and reliability of applications that are running in your datacenter. By monitoring client\-side applications, you can measure details of the customer experience, such as how long it takes for a page to load. It is another way to monitor how your applications are working from the perspective of your customer. Client\-side application monitoring helps you determine whether your users are experiencing problems. With both client\-side and server\-side monitoring in use, you can determine if a problem exists on your server, in the application, or is being caused by external factors, such as high network latency.
 
 > [!TIP]
 > Client\-side monitoring can be set up at the same time as server\-side monitoring when you run the .NET Application Performance Monitoring wizard or by editing an existing instance of a template.
@@ -20,19 +20,19 @@ The **.NET Application Performance Monitoring** template in [!INCLUDE[om12long](
 
 #### To configure .NET Application Performance Monitoring \(server\-side perspective\)
 
-1.  To open the **.NET Application Performance Monitoring** template, in the [!INCLUDE[om12short](./Token/om12short_md.md)] console, in the navigation pane, click the **Authoring** button, click **Management Pack Templates**, click **.NET Application Performance Monitoring**, and then, in the tasks pane, click the **Add Monitoring Wizard** where you name and configure the application group that you want to monitor.
+1.  To open the **.NET Application Performance Monitoring** template, in the [!INCLUDE[om12short](Token/om12short_md.md)] console, in the navigation pane, click the **Authoring** button, click **Management Pack Templates**, click **.NET Application Performance Monitoring**, and then, in the tasks pane, click the **Add Monitoring Wizard** where you name and configure the application group that you want to monitor.
 
     **Location of .NET Application Performance Monitoring**
 
-    ![](/Image/AppMonitoring_APMTempLocation.gif)
+    ![](Image/AppMonitoring_APMTempLocation.gif)
 
-2.  In the **Add Monitoring Wizard** on the **Monitoring Type** page, select **.NET Application Performance Monitoring**, and then click **Next**. This template lets you monitor web applications and services hosted in IIS 7.0. \([!INCLUDE[sc2012sp1note](./Token/sc2012sp1note_md.md)] You can monitor applications hosted in IIS 8.0 and Windows Services.\) You can select one or more applications or services discovered by the IIS 7.0 management pack and configure monitoring of performance and exception events. [!INCLUDE[sc2012sp1note](./Token/sc2012sp1note_md.md)] You can select one or more applications or services discovered by the IIS 8.0 management pack or Windows Services previously configured with the Windows Service Template.
+2.  In the **Add Monitoring Wizard** on the **Monitoring Type** page, select **.NET Application Performance Monitoring**, and then click **Next**. This template lets you monitor web applications and services hosted in IIS 7.0. \([!INCLUDE[sc2012sp1note](Token/sc2012sp1note_md.md)] You can monitor applications hosted in IIS 8.0 and Windows Services.\) You can select one or more applications or services discovered by the IIS 7.0 management pack and configure monitoring of performance and exception events. [!INCLUDE[sc2012sp1note](Token/sc2012sp1note_md.md)] You can select one or more applications or services discovered by the IIS 8.0 management pack or Windows Services previously configured with the Windows Service Template.
 
 3.  On the **General Properties** page, enter a friendly name and description for the application group that you are creating.
 
-    In the **Select destination management pack** menu, select the management pack to store the settings that are specific to this instance of the template. To create a new management pack, click **New**. In the **Create a Management Pack** wizard, name your new management pack the same as the application group so you can easily pair the two, which is helpful later in the monitoring experience. Click **Next**. For more information, see [Selecting a Management Pack File](./Selecting-a-Management-Pack-File.md).
+    In the **Select destination management pack** menu, select the management pack to store the settings that are specific to this instance of the template. To create a new management pack, click **New**. In the **Create a Management Pack** wizard, name your new management pack the same as the application group so you can easily pair the two, which is helpful later in the monitoring experience. Click **Next**. For more information, see [Selecting a Management Pack File](Selecting-a-Management-Pack-File.md).
 
-4.  On the **What to Monitor** page, in the **Application components** section, click **Add**. On the **Object Search** page, on the **Search for** menu, use the **Filter by part of the name \(optional\)** box to narrow your search, and then click **Search** to view a list of the application components you can monitor. \([!INCLUDE[sc2012sp1note](./Token/sc2012sp1note_md.md)] You can monitor Windows Services.\) From the search results, select the application components that you want to monitor, click **Add**, and then click **OK**. The application components you selected are now displayed as members of the application group that you are going to monitor. Click **Next**.
+4.  On the **What to Monitor** page, in the **Application components** section, click **Add**. On the **Object Search** page, on the **Search for** menu, use the **Filter by part of the name \(optional\)** box to narrow your search, and then click **Search** to view a list of the application components you can monitor. \([!INCLUDE[sc2012sp1note](Token/sc2012sp1note_md.md)] You can monitor Windows Services.\) From the search results, select the application components that you want to monitor, click **Add**, and then click **OK**. The application components you selected are now displayed as members of the application group that you are going to monitor. Click **Next**.
 
     On the **What to Monitor** page, on the **Environment** menu, select the environment you want to monitor your application in: **None**, **Production**, **Staging**, **Test**, **Development**, or **New**. Typically, you want to pair the environment tag with the server group you are monitoring.
 
@@ -56,7 +56,7 @@ The **.NET Application Performance Monitoring** template in [!INCLUDE[om12long](
 
     -   Enable additional configuration options for server\-side and client\-side monitoring.
 
-7.  To further configure exception and performance event monitoring for the application group, including settings for **Namespaces**, **Methods**, **ExceptionTracking**, and **Critical Exception Handlers**, click **Advanced Settings**. Also on the **Advanced Settings** for **Server\-Side Monitoring** page, you can reset monitor thresholds from the defaults and scope monitoring to a targeted group. If you want to use or return to the default **Advanced Settings**, click **Use Default Configuration**. When you are finished, click **OK**. For more information, see [How to Start Monitoring a New Application](./How-to-Start-Monitoring-a-New-Application.md) and [Application Monitoring Using the Default Settings](./Application-Monitoring-Using-the-Default-Settings.md)
+7.  To further configure exception and performance event monitoring for the application group, including settings for **Namespaces**, **Methods**, **ExceptionTracking**, and **Critical Exception Handlers**, click **Advanced Settings**. Also on the **Advanced Settings** for **Server\-Side Monitoring** page, you can reset monitor thresholds from the defaults and scope monitoring to a targeted group. If you want to use or return to the default **Advanced Settings**, click **Use Default Configuration**. When you are finished, click **OK**. For more information, see [How to Start Monitoring a New Application](How-to-Start-Monitoring-a-New-Application.md) and [Application Monitoring Using the Default Settings](Application-Monitoring-Using-the-Default-Settings.md)
 
     > [!WARNING]
     > Gathering detailed performance and exception events can lead to collecting sensitive information that should not be passed on to the development team. For example, if you capture an exception from your billing system, you might also capture user names and other tokens that can be used to identify the person who is having problems making purchases and what they were trying to purchase. Before enabling the collection of parameters and local variables for performance and exception events, we recommend that you review your policies. For more information, see [Working with Sensitive Data for .NET Applications](http://go.microsoft.com/fwlink/?LinkId=231757)
@@ -84,7 +84,7 @@ Using the **Modifying Settings** page, you can customize server\-side monitoring
 
 3.  On the **Summary** page, review your monitoring configuration for your application group. To create the monitoring template, click **Create**.
 
-4.  You might have to restart IIS or recycle the application pools to finalize the configuration of the applications for monitoring. \([!INCLUDE[sc2012sp1note](./Token/sc2012sp1note_md.md)] You might have to restart the Windows Service.\) If a restart or recycle is required, you receive an alert and can use the task link in the knowledge base to perform the necessary action.
+4.  You might have to restart IIS or recycle the application pools to finalize the configuration of the applications for monitoring. \([!INCLUDE[sc2012sp1note](Token/sc2012sp1note_md.md)] You might have to restart the Windows Service.\) If a restart or recycle is required, you receive an alert and can use the task link in the knowledge base to perform the necessary action.
 
     > [!NOTE]
     > After you restart the application it does not begin to collect information until it is accessed by users.
@@ -96,7 +96,7 @@ Client\-side application monitoring lets you measure details of the customer exp
 > You can only configure client\-side monitoring for applications that have been configured for server\-side monitoring.
 
 > [!IMPORTANT]
-> When working with web applications configured using IIS Shared Configuration, the [!INCLUDE[om12short](./Token/om12short_md.md)] “Privileged Monitoring Account” Runas Profile associated with the Windows agents hosting the application must have read and write permissions on the shared directory that hosts the web application files to create the Client\-Side Monitoring Collector web application, as well as local administrative privileges on each server in the farm to access the IIS metabase for discovery.
+> When working with web applications configured using IIS Shared Configuration, the [!INCLUDE[om12short](Token/om12short_md.md)] “Privileged Monitoring Account” Runas Profile associated with the Windows agents hosting the application must have read and write permissions on the shared directory that hosts the web application files to create the Client\-Side Monitoring Collector web application, as well as local administrative privileges on each server in the farm to access the IIS metabase for discovery.
 
 > [!TIP]
 > Client\-side monitoring can be set up at the same time as server\-side monitoring when you run the .NET Application Performance Monitoring wizard or through editing an existing instance of a template as described below.
@@ -107,9 +107,9 @@ Client\-side application monitoring lets you measure details of the customer exp
 
     To enable client\-side monitoring, on the **Server\-Side Configuration** page, select the **Enable additional configuration options for server\-side and client\-side monitoring** check box and continue with the wizard.
 
-    To revise the template to add client\-side monitoring, see [To add client\-side monitoring to an existing .NET Application Performance Monitoring template](./How-to-Configure-Monitoring-for-.NET-Applications.md#BKMK_AddCSM)
+    To revise the template to add client\-side monitoring, see [To add client\-side monitoring to an existing .NET Application Performance Monitoring template](How-to-Configure-Monitoring-for-.NET-Applications.md#BKMK_AddCSM)
 
-2.  On the **Client\-Side Configuration** page, you can select to turn on performance and exception event alerts, set page load thresholds and the Ajax and WCF threshold for the application group you are going to monitor. What you enter in the **Configure client IP address filter** section determines the client requests that are monitored. You can use client IP filters to select the networks that you want to exclude from monitoring. By applying filters, administrators can limit the scope of the monitored computers. By default, the filter is set to localhost, so only connections from browsers started on the local server are instrumented for monitoring. If the IP filter list is empty, all IP addresses are monitored. Any IP addresses that fit the filter definitions are excluded from client\-side monitoring. For more information and filtering examples, see [How to Configure IP Address Exclusion Filters for Client-Side Monitoring](./How-to-Configure-IP-Address-Exclusion-Filters-for-Client-Side-Monitoring.md).
+2.  On the **Client\-Side Configuration** page, you can select to turn on performance and exception event alerts, set page load thresholds and the Ajax and WCF threshold for the application group you are going to monitor. What you enter in the **Configure client IP address filter** section determines the client requests that are monitored. You can use client IP filters to select the networks that you want to exclude from monitoring. By applying filters, administrators can limit the scope of the monitored computers. By default, the filter is set to localhost, so only connections from browsers started on the local server are instrumented for monitoring. If the IP filter list is empty, all IP addresses are monitored. Any IP addresses that fit the filter definitions are excluded from client\-side monitoring. For more information and filtering examples, see [How to Configure IP Address Exclusion Filters for Client-Side Monitoring](How-to-Configure-IP-Address-Exclusion-Filters-for-Client-Side-Monitoring.md).
 
 3.  To configure more settings for this application group, click **Advanced Settings**. Here, in addition to settings on the previous page, you can set the sensitivity threshold, that lets you filter out fast\-running methods, which reduces overall “noise”, making it easier for you to determine where the problem is and reduces network bandwidth usage. You can also choose to sample only a percentage of the incoming requests. Choosing to monitor only some of the incoming requests can help reduce the load on your monitoring server. Additionally, you can configure these settings:
 
@@ -120,7 +120,7 @@ Client\-side application monitoring lets you measure details of the customer exp
         > [!WARNING]
         > Enabling the **Exception Stack** and **Global Variables** data collection sends application data to the monitored server. We recommend that you do not enable the data collection from **Exception Stack** and **Global Variables** unless the application is configured to use an HTTPS protocol.
 
-    -   **Load balancer settings** let you select the type of load balancers that you are using with your application. You can also add your own load balancer, if it is not included in the list. For more information about load balancers, see [Client-Side Monitoring with Targeted Groups and Load Balancers](./Client-Side-Monitoring-with-Targeted-Groups-and-Load-Balancers.md)
+    -   **Load balancer settings** let you select the type of load balancers that you are using with your application. You can also add your own load balancer, if it is not included in the list. For more information about load balancers, see [Client-Side Monitoring with Targeted Groups and Load Balancers](Client-Side-Monitoring-with-Targeted-Groups-and-Load-Balancers.md)
 
     -   In the **Monitored Servers** section, you can target a group to limit the scope of the monitoring to a group of servers. To select a targeted group, click **Search** and use the **Group Search** page to search for the group by name and management pack, and then add them to the selected objects list. The targeted group you select consists of only the servers hosting the web application that set the application pages to return browser\-side events. This group lets you limit client\-side monitoring independent of server\-side monitoring.
 
@@ -147,13 +147,13 @@ Client\-side application monitoring lets you measure details of the customer exp
 
 ### <a name="BKMK_AddCSM"></a>To add client\-side monitoring to an existing .NET Application Performance Monitoring template
 
-1.  To enable client\-side application monitoring to an existing **.NET Application Performance Monitoring** template, in the [!INCLUDE[om12short](./Token/om12short_md.md)] console, in the navigation pane, click the **Authoring** button, expand **Management Pack Templates**, click **.NET Application Performance Monitoring**, right\-click the application group you configured for server\-side monitoring, and then select **Properties**.
+1.  To enable client\-side application monitoring to an existing **.NET Application Performance Monitoring** template, in the [!INCLUDE[om12short](Token/om12short_md.md)] console, in the navigation pane, click the **Authoring** button, expand **Management Pack Templates**, click **.NET Application Performance Monitoring**, right\-click the application group you configured for server\-side monitoring, and then select **Properties**.
 
 2.  On the **Properties** page, click the **Enable Client Side Monitoring** tab, and select the **Enable** check box next to the application group.
 
     **Enable client\-side monitoring**
 
-    ![](/Image/AppMonitoring_AuthConfig2.gif)
+    ![](Image/AppMonitoring_AuthConfig2.gif)
 
 3.  The **Customize** option on this page opens the  **Modifying Settings** page as described in the previous procedure.
 
@@ -172,8 +172,8 @@ Client\-side application monitoring lets you measure details of the customer exp
     > After you restart IIS, an application does not begin to be monitored until it is used.
 
 ## See Also
-[Before You Begin Monitoring .NET Applications](./Before-You-Begin-Monitoring-.NET-Applications.md)
-[How to Start Monitoring a New Application](./How-to-Start-Monitoring-a-New-Application.md)
-[Authoring Strategies for .NET Application Monitoring](./Authoring-Strategies-for-.NET-Application-Monitoring.md)
+[Before You Begin Monitoring .NET Applications](Before-You-Begin-Monitoring-.NET-Applications.md)
+[How to Start Monitoring a New Application](How-to-Start-Monitoring-a-New-Application.md)
+[Authoring Strategies for .NET Application Monitoring](Authoring-Strategies-for-.NET-Application-Monitoring.md)
 
 

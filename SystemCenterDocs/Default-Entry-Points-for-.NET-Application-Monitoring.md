@@ -11,7 +11,7 @@ ms.topic: article
 ms.assetid: 2186d3b4-528b-485c-abec-8ee4e9dfb8c6
 ---
 # Default Entry Points for .NET Application Monitoring
-Application Performance Monitoring in [!INCLUDE[om12short](./Token/om12short_md.md)] is preconfigured with many well\-known entry points \(see below\), but also lets you extend the default list by defining your own entry points. In addition to adding functions as entry points, you may also define entire Namespaces to act as entry points, so that the system begins timing execution the first time that it encounters the namespace during execution. Additionally, the application monitoring agent collects the values of variables for each entry point at the time the event occurs.
+Application Performance Monitoring in [!INCLUDE[om12short](Token/om12short_md.md)] is preconfigured with many well\-known entry points \(see below\), but also lets you extend the default list by defining your own entry points. In addition to adding functions as entry points, you may also define entire Namespaces to act as entry points, so that the system begins timing execution the first time that it encounters the namespace during execution. Additionally, the application monitoring agent collects the values of variables for each entry point at the time the event occurs.
 
 ## Entry points Monitored by Default
 
@@ -23,7 +23,7 @@ Application Performance Monitoring in [!INCLUDE[om12short](./Token/om12short_md.
 
 ### For ASP.NET 2.0 asynchronous pages
 
--   [!INCLUDE[sc2012sp1note](./Token/sc2012sp1note_md.md)] System.Web.UI.Page.AsyncPageBeginProcessRequest
+-   [!INCLUDE[sc2012sp1note](Token/sc2012sp1note_md.md)] System.Web.UI.Page.AsyncPageBeginProcessRequest
 
 -   System.Web.Services.Protocols.LogicalMethodInfo.Invoke
 
@@ -52,7 +52,7 @@ Application Performance Monitoring in [!INCLUDE[om12short](./Token/om12short_md.
 -   System.Web.Script.Services.RestHandler.ExecuteWebServiceCall
 
 ### For Windows Services
-For [!INCLUDE[sc2012sp1_short](./Token/sc2012sp1_short_md.md)] these entry points are included:
+For [!INCLUDE[sc2012sp1_short](Token/sc2012sp1_short_md.md)] these entry points are included:
 
 -   System.ServiceProcess.ServiceBase.ServiceCommandCallback
 
@@ -65,7 +65,7 @@ For [!INCLUDE[sc2012sp1_short](./Token/sc2012sp1_short_md.md)] these entry point
 -   System.ServiceProcess.ServiceBase.DeferredSessionChange
 
 ### For MVC
-For [!INCLUDE[sc2012sp1_short](./Token/sc2012sp1_short_md.md)] these entry points are included:
+For [!INCLUDE[sc2012sp1_short](Token/sc2012sp1_short_md.md)] these entry points are included:
 
 -   System.Web.Mvc.ControllerBase.Execute
 

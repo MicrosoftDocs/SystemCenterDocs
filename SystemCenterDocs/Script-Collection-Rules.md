@@ -22,9 +22,9 @@ When you run the script collection wizard, you will need to provide values for o
 |----------|---------------|
 |Rule Name|The name used for the rule. This appears in the **Rules** view in the **Authoring** pane.|
 |Description|Optional description of the rule.|
-|Management Pack|Management pack to store the monitor.<br /><br />For more information on management packs, see [Selecting a Management Pack File](./Selecting-a-Management-Pack-File.md).|
+|Management Pack|Management pack to store the monitor.<br /><br />For more information on management packs, see [Selecting a Management Pack File](Selecting-a-Management-Pack-File.md).|
 |Rule Category|The category for the rule. For an event collection rule, this should be **Event Collection**. For a performance collection rule, this should be **Performance Collection**.|
-|Rule target|The class to use for the target of the rule. The rule will be run on any agent that has at least one instance of this class. For more information on targets, see [Understanding Classes and Objects](./Understanding-Classes-and-Objects.md).|
+|Rule target|The class to use for the target of the rule. The rule will be run on any agent that has at least one instance of this class. For more information on targets, see [Understanding Classes and Objects](Understanding-Classes-and-Objects.md).|
 
 ### Schedule
 The **Schedule** page defines the schedule to run the script. The script will run indefinitely according to this schedule until the rule is disabled or deleted or the management pack is uninstalled.
@@ -42,7 +42,7 @@ The **Script** page contains the body of the script itself and its parameters. Y
 |File Name|Name of the script. Must have either a .vbs or .js extension depending on its language. There is no requirement to make this name unique because each script is provided its own temporary directory on the agent.|
 |Timeout|The number of seconds that the script can run before the agent stops it. This prevents problem scripts from running continuously and putting excess overhead on the agent computer.<br /><br />The timeout value assigned to a script should allow enough time for the script to run under ordinary conditions, but should be less than the interval that the script is scheduled to run. If a script is configured to have a timeout value greater than its duration, then possibly multiple copies of the script could be running concurrently.|
 |Script|The body of the script.|
-|Parameters|Click to provide values for any arguments in the script. For more information, see [Script Arguments](./Script-Monitors-and-Rules.md#ScriptArguments).|
+|Parameters|Click to provide values for any arguments in the script. For more information, see [Script Arguments](Script-Monitors-and-Rules.md#ScriptArguments).|
 
 ### Performance Mapper \(Performance Collection Only\)
 The **Performance Mapper** page is used to define values for the properties of the performance data being collected.
@@ -77,9 +77,9 @@ The following procedure creates a performance script collection rule with the fo
 
 #### To create a script based performance collection rule
 
-1.  If you don’t have a management pack for the application that you are monitoring, create one using the process in [Selecting a Management Pack File](./Selecting-a-Management-Pack-File.md).
+1.  If you don’t have a management pack for the application that you are monitoring, create one using the process in [Selecting a Management Pack File](Selecting-a-Management-Pack-File.md).
 
-2.  Create a new target using the process in [To create a Windows Service template](./Windows-Service-Template.md#CreateWindowsServiceTemplate). You can use any service installed on a test agent for this template.
+2.  Create a new target using the process in [To create a Windows Service template](Windows-Service-Template.md#CreateWindowsServiceTemplate). You can use any service installed on a test agent for this template.
 
 3.  In the Operations console, select the **Authoring** workspace, and then select **Rules**.
 
@@ -169,9 +169,9 @@ The following procedure creates an event script collection rule with the followi
 
 #### To create a script based event collection rule
 
-1.  If you don’t have a management pack for the application that you are monitoring, create one using the process in [Selecting a Management Pack File](./Selecting-a-Management-Pack-File.md).
+1.  If you don’t have a management pack for the application that you are monitoring, create one using the process in [Selecting a Management Pack File](Selecting-a-Management-Pack-File.md).
 
-2.  Create a new target using the process in [To create a Windows Service template](./Windows-Service-Template.md#CreateWindowsServiceTemplate). You can use any service installed on a test agent for this template.
+2.  Create a new target using the process in [To create a Windows Service template](Windows-Service-Template.md#CreateWindowsServiceTemplate). You can use any service installed on a test agent for this template.
 
 3.  In the Operations console, select the **Authoring** workspace, and then select **Rules**.
 
@@ -261,6 +261,6 @@ The following procedure creates an event script collection rule with the followi
     10. Click **Create**.
 
 ## See Also
-[Script Monitors and Rules](./Script-Monitors-and-Rules.md)
+[Script Monitors and Rules](Script-Monitors-and-Rules.md)
 
 

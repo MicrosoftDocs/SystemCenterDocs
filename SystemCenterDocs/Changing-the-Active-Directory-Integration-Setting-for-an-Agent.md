@@ -22,8 +22,8 @@ You can use the following procedure to change the Active Directory integration s
 3.  Click **OK**.
 
 ## See Also
-[Integrating Active Directory and Operations Manager](./Integrating-Active-Directory-and-Operations-Manager.md)
-[How to Create an Active Directory Domain Services Container for a Management Group](./How-to-Create-an-Active-Directory-Domain-Services-Container-for-a-Management-Group.md)
-[How to Use Active Directory Domain Services to Assign Computers to Management Servers](./How-to-Use-Active-Directory-Domain-Services-to-Assign-Computers-to-Management-Servers.md)
+[Integrating Active Directory and Operations Manager](Integrating-Active-Directory-and-Operations-Manager.md)
+[How to Create an Active Directory Domain Services Container for a Management Group](How-to-Create-an-Active-Directory-Domain-Services-Container-for-a-Management-Group.md)
+[How to Use Active Directory Domain Services to Assign Computers to Management Servers](How-to-Use-Active-Directory-Domain-Services-to-Assign-Computers-to-Management-Servers.md)
 
 

@@ -12,12 +12,12 @@ ms.assetid: ff4527b5-4621-4e60-b5f7-7133522663db
 <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://ddue.schemas.microsoft.com/authoring/2003/5 http://dduestorage.blob.core.windows.net/ddueschema/developer.xsd">
   <introduction>
     <para>Scan Management helps automate document workflow and provides a central administration point for managing your network scan resources. You can use Scan Management to monitor network scanners, install scan servers, process scanned documents and route scanned documents to network folders, to Windows SharePoint Services websites, and to email recipients in your domain network.</para>
-    <para>More information about Scan Management is available on the web. <token>helpnotonbo./Token></para>
+    <para>More information about Scan Management is available on the web. <token>helpnotonboToken></para>
     <para>
       <legacyLink xlink:href="6bf5db30-1534-47a1-a6f0-66eba72e5a0f">Install Distributed Scan Server</legacyLink>
     </para>
     <para>
-      <token>whymshelpnotonbo./Token>
+      <token>whymshelpnotonboToken>
     </para>
   </introduction>
   <relatedTopics />

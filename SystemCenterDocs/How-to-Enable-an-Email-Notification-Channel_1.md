@@ -8,7 +8,7 @@ ms.topic: article
 ms.assetid: c98382ac-66a4-4f87-8f18-2fd7102489e4
 ---
 # How to Enable an Email Notification Channel_1
-To configure alert notifications for [!INCLUDE[om12long](./Token/om12long_md.md)], your first task is to enable a notification channel. This topic describes how to configure a channel that will send alert notifications to subscribers by using email.
+To configure alert notifications for [!INCLUDE[om12long](Token/om12long_md.md)], your first task is to enable a notification channel. This topic describes how to configure a channel that will send alert notifications to subscribers by using email.
 
 Before you begin, gather the following information:
 
@@ -22,7 +22,7 @@ Before you begin, gather the following information:
 
 -   Return email address. This address is used for all email notifications on this channel and will receive any replies to notifications.
 
--   Email subject and body text that you want subscribers to receive. For more information, see [How to Customize Message Content for Notifications](./How-to-Customize-Message-Content-for-Notifications.md).
+-   Email subject and body text that you want subscribers to receive. For more information, see [How to Customize Message Content for Notifications](How-to-Customize-Message-Content-for-Notifications.md).
 
 ### To enable an email notification channel
 
@@ -46,24 +46,24 @@ Before you begin, gather the following information:
     > [!NOTE]
     > If you have only one SMTP server and it’s unavailable, the Retry interval has no effect. The Retry interval is used when you have a secondary server and mail sending to the primary server fails. When this happens, Operations Manager switches to the secondary server and checks the Retry interval time. If the Retry interval time has passed, Operations Manager tries to use the primary server.
 
-8.  In the **Default e\-mail notification format** area, specify the **E\-mail subject** and **E\-mail message** text or leave the default selections, select the **Importance** level that you want the emails sent with, and then specify the **Encoding** type. You can click the right arrow next to the **E\-mail subject** and **E\-mail message** boxes for a full list of available variables. For more information, see [How to Customize Message Content for Notifications](./How-to-Customize-Message-Content-for-Notifications.md).
+8.  In the **Default e\-mail notification format** area, specify the **E\-mail subject** and **E\-mail message** text or leave the default selections, select the **Importance** level that you want the emails sent with, and then specify the **Encoding** type. You can click the right arrow next to the **E\-mail subject** and **E\-mail message** boxes for a full list of available variables. For more information, see [How to Customize Message Content for Notifications](How-to-Customize-Message-Content-for-Notifications.md).
 
 9. Click **Finish**, and then click **Close**.
 
-Next task: [How to Create and Configure the Notification Action Account](./How-to-Create-and-Configure-the-Notification-Action-Account.md)
+Next task: [How to Create and Configure the Notification Action Account](How-to-Create-and-Configure-the-Notification-Action-Account.md)
 
 ## See Also
-[How to Enable an Instant Message Notification Channel](./How-to-Enable-an-Instant-Message-Notification-Channel.md)
-[How to Enable a Text Message &#40;SMS&#41; Notification Channel](./How-to-Enable-a-Text-Message--SMS--Notification-Channel.md)
-[How to Enable a Command Notification Channel](./How-to-Enable-a-Command-Notification-Channel.md)
-[How to Create Notification Subscribers](./How-to-Create-Notification-Subscribers.md)
-[How to Create Notification Subscriptions](./How-to-Create-Notification-Subscriptions.md)
-[Subscribing to Alert Notifications](./Subscribing-to-Alert-Notifications.md)
-[How to Create and Configure the Notification Action Account](./How-to-Create-and-Configure-the-Notification-Action-Account.md)
-[How to Customize Message Content for Notifications](./How-to-Customize-Message-Content-for-Notifications.md)
-[How to Subscribe to Notifications from an Alert](./How-to-Subscribe-to-Notifications-from-an-Alert.md)
-[How to Create Subscriptions Using Classes and Groups](./How-to-Create-Subscriptions-Using-Classes-and-Groups.md)
-[How to Specify Which Alerts Generate Notifications &#40;Conditions&#41;](./How-to-Specify-Which-Alerts-Generate-Notifications--Conditions-.md)
-[Sending Notifications for Specific Computers and Specific Alerts to Specific Teams](./Sending-Notifications-for-Specific-Computers-and-Specific-Alerts-to-Specific-Teams.md)
+[How to Enable an Instant Message Notification Channel](How-to-Enable-an-Instant-Message-Notification-Channel.md)
+[How to Enable a Text Message &#40;SMS&#41; Notification Channel](How-to-Enable-a-Text-Message--SMS--Notification-Channel.md)
+[How to Enable a Command Notification Channel](How-to-Enable-a-Command-Notification-Channel.md)
+[How to Create Notification Subscribers](How-to-Create-Notification-Subscribers.md)
+[How to Create Notification Subscriptions](How-to-Create-Notification-Subscriptions.md)
+[Subscribing to Alert Notifications](Subscribing-to-Alert-Notifications.md)
+[How to Create and Configure the Notification Action Account](How-to-Create-and-Configure-the-Notification-Action-Account.md)
+[How to Customize Message Content for Notifications](How-to-Customize-Message-Content-for-Notifications.md)
+[How to Subscribe to Notifications from an Alert](How-to-Subscribe-to-Notifications-from-an-Alert.md)
+[How to Create Subscriptions Using Classes and Groups](How-to-Create-Subscriptions-Using-Classes-and-Groups.md)
+[How to Specify Which Alerts Generate Notifications &#40;Conditions&#41;](How-to-Specify-Which-Alerts-Generate-Notifications--Conditions-.md)
+[Sending Notifications for Specific Computers and Specific Alerts to Specific Teams](Sending-Notifications-for-Specific-Computers-and-Specific-Alerts-to-Specific-Teams.md)
 
 

@@ -11,7 +11,7 @@ ms.topic: article
 ms.assetid: 4500c400-bb83-4587-b110-504ffba0667a
 ---
 # Operations Associated with User Role Profiles
-This topic provides a list of the operations in [!INCLUDE[om12long](./Token/om12long_md.md)] that are associated with each profile.
+This topic provides a list of the operations in [!INCLUDE[om12long](Token/om12long_md.md)] that are associated with each profile.
 
 ## Report Operator
 The Report Operator profile includes a set of privileges designed for users who need access to reports. A role based on the Report Operator profile grants members the ability to view reports according to their configured scope.
@@ -347,10 +347,10 @@ The Report Security Administrator profile includes a set of privileges designed 
 -   Access Application Advisor
 
 ## See Also
-[Implementing User Roles](./Implementing-User-Roles.md)
-[Define a Scope Using Operations Manager Groups](./Define-a-Scope-Using-Operations-Manager-Groups.md)
-[Assign Tasks and Views](./Assign-Tasks-and-Views.md)
-[How to Assign Members to User Roles](./How-to-Assign-Members-to-User-Roles.md)
-[Choose a Profile](./Choose-a-Profile.md)
+[Implementing User Roles](Implementing-User-Roles.md)
+[Define a Scope Using Operations Manager Groups](Define-a-Scope-Using-Operations-Manager-Groups.md)
+[Assign Tasks and Views](Assign-Tasks-and-Views.md)
+[How to Assign Members to User Roles](How-to-Assign-Members-to-User-Roles.md)
+[Choose a Profile](Choose-a-Profile.md)
 
 

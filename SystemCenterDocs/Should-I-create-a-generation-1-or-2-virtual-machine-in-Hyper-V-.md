@@ -116,7 +116,7 @@ robots: noindex,nofollow
               <tr>
                 <TD>
                   <para>
-                    <token>winblue_server_./Token>
+                    <token>winblue_server_Token>
                   </para>
                 </TD>
                 <TD>
@@ -129,7 +129,7 @@ robots: noindex,nofollow
               <tr>
                 <TD>
                   <para>
-                    <token>win8_server_./Token>
+                    <token>win8_server_Token>
                   </para>
                 </TD>
                 <TD>
@@ -164,7 +164,7 @@ robots: noindex,nofollow
               <tr>
                 <TD>
                   <para>
-                    <token>winthreshold_client_./Token>
+                    <token>winthreshold_client_Token>
                   </para>
                 </TD>
                 <TD>
@@ -177,7 +177,7 @@ robots: noindex,nofollow
               <tr>
                 <TD>
                   <para>
-                    <token>winblue_client_./Token>
+                    <token>winblue_client_Token>
                   </para>
                 </TD>
                 <TD>
@@ -190,7 +190,7 @@ robots: noindex,nofollow
               <tr>
                 <TD>
                   <para>
-                    <token>win8_client_./Token>
+                    <token>win8_client_Token>
                   </para>
                 </TD>
                 <TD>
@@ -232,7 +232,7 @@ robots: noindex,nofollow
               <tr>
                 <TD>
                   <para>
-                    <token>winthreshold_client_./Token>
+                    <token>winthreshold_client_Token>
                   </para>
                 </TD>
                 <TD>
@@ -245,7 +245,7 @@ robots: noindex,nofollow
               <tr>
                 <TD>
                   <para>
-                    <token>winblue_client_./Token>
+                    <token>winblue_client_Token>
                   </para>
                 </TD>
                 <TD>
@@ -258,7 +258,7 @@ robots: noindex,nofollow
               <tr>
                 <TD>
                   <para>
-                    <token>win8_client_./Token>
+                    <token>win8_client_Token>
                   </para>
                 </TD>
                 <TD>

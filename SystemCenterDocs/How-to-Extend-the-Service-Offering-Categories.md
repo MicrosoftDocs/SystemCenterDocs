@@ -15,7 +15,7 @@ By default, Service Manager includes only the General service offering category.
 
 ### To extend the service offering categories
 
-1.  In the [!INCLUDE[smcons](./Token/smcons_md.md)], click **Library**.
+1.  In the [!INCLUDE[smcons](Token/smcons_md.md)], click **Library**.
 
 2.  In the **Library** pane, click **Lists**, and then in the **Filter** box, type **offering**.
 

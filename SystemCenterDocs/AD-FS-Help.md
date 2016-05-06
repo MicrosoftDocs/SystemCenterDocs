@@ -42,7 +42,7 @@ ms.assetid: 38ee253b-2010-43f7-b6b1-cbfcac89aabe
         <para>
           <legacyLink xlink:href="9c9c4e8f-6635-4774-b6e1-f144b5d7ded8">Connect to Applications and Services from Anywhere with Web Application Proxy</legacyLink>
         </para>
-        <para>This topic describes how <token>adfs_webpro./Token> – a Remote Access role service – provides end users that are located outside of an organization access to applications and services that run on servers inside the organization.</para>
+        <para>This topic describes how <token>adfs_webproxToken> – a Remote Access role service – provides end users that are located outside of an organization access to applications and services that run on servers inside the organization.</para>
       </listItem>
       <listItem>
         <para>
@@ -76,5 +76,4 @@ ms.assetid: 38ee253b-2010-43f7-b6b1-cbfcac89aabe
   </introduction>
   <relatedTopics />
 </developerConceptualDocument>
-
 

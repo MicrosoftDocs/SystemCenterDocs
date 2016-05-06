@@ -8,32 +8,32 @@ ms.topic: article
 ms.assetid: f34d577d-8e99-4fee-98ab-055d747c3745
 ---
 # How to create a private cloud from host groups in VMM
-You can use this procedure to create a private cloud from resources in one or more host groups in [!INCLUDE[vmm12sp1_long](./Token/vmm12sp1_long_md.md)]. You can create a private cloud from host groups that contain a single type of host, or from host groups that contain a mix of Hyper\-V and VMware ESX hosts.
+You can use this procedure to create a private cloud from resources in one or more host groups in [!INCLUDE[vmm12sp1_long](Token/vmm12sp1_long_md.md)]. You can create a private cloud from host groups that contain a single type of host, or from host groups that contain a mix of Hyper\-V and VMware ESX hosts.
 
 > [!NOTE]
-> You can also create a private cloud from a VMware resource pool. For more information, see [How to create a private cloud from a VMware resource pool in VMM](./How-to-create-a-private-cloud-from-a-VMware-resource-pool-in-VMM.md).
+> You can also create a private cloud from a VMware resource pool. For more information, see [How to create a private cloud from a VMware resource pool in VMM](How-to-create-a-private-cloud-from-a-VMware-resource-pool-in-VMM.md).
 
 **Account requirements** You must perform this procedure as a member of the Administrator user role or as a member of the Delegated Administrator user role where the administrative scope includes the host groups that you want to use for the private cloud.
 
 ## Prerequisites
 Before you create a private cloud, make sure that the following prerequisites are met:
 
--   Configure the fabric and add hosts to [!INCLUDE[vmm12short](./Token/vmm12short_md.md)] management by using the procedures in the following sections:
+-   Configure the fabric and add hosts to [!INCLUDE[vmm12short](Token/vmm12short_md.md)] management by using the procedures in the following sections:
 
-    -   [Managing fabric resources with VMM](./Managing-fabric-resources-with-VMM.md)
+    -   [Managing fabric resources with VMM](Managing-fabric-resources-with-VMM.md)
 
-    -   [Managing Hyper-V hosts and host clusters with VMM](./Managing-Hyper-V-hosts-and-host-clusters-with-VMM.md) \(if you have Hyper\-V hosts\)
+    -   [Managing Hyper-V hosts and host clusters with VMM](Managing-Hyper-V-hosts-and-host-clusters-with-VMM.md) \(if you have Hyper\-V hosts\)
 
-    -   [VMM support for VMware](./VMM-support-for-VMware.md) \(if you have VMware ESX hosts\)
+    -   [VMM support for VMware](VMM-support-for-VMware.md) \(if you have VMware ESX hosts\)
 
--   If you want to provide self\-service users the ability to store virtual machines to the [!INCLUDE[vmm12short](./Token/vmm12short_md.md)] library, then create a library share, or create a folder in a library share that will serve as the storage location. Note that self\-service users must have the **Store and re\-deploy** permission to store their virtual machines.
+-   If you want to provide self\-service users the ability to store virtual machines to the [!INCLUDE[vmm12short](Token/vmm12short_md.md)] library, then create a library share, or create a folder in a library share that will serve as the storage location. Note that self\-service users must have the **Store and re\-deploy** permission to store their virtual machines.
 
     > [!IMPORTANT]
     > The library share location that you designate for stored virtual machines must be different from the shares that you designate as read\-only resource locations for the private cloud. Also, the path or part of the path must be unique when compared to the user role data path that is specified for a self\-service user role. For example, if the user role data path for a self\-service user role is \\\\VMMServer01\\Finance, you cannot create a stored virtual machine path of \\\\VMMServer01\\Finance\\StoredVMs. However, if the user role data path is \\\\VMMServer01\\Finance\\FinanceUserRoleData, you could specify \\\\VMMServer01\\Finance\\StoredVMs as the stored virtual machine path, as the full path is unique. You could also create entirely separate library shares.
     > 
     > Note that you configure the stored virtual machine path and read\-only library shares when you run the Create Cloud Wizard. The self\-service user role data path is specified when you create a self\-service user role or modify the properties of a self\-service user role.
 
-    For example, outside [!INCLUDE[vmm12short](./Token/vmm12short_md.md)], you could create the **\\\\VMMServer01\\Finance\\StoredVMs** path, and then add the **VMMServer01\\Finance** library share to the [!INCLUDE[vmm12short](./Token/vmm12short_md.md)] library.
+    For example, outside [!INCLUDE[vmm12short](Token/vmm12short_md.md)], you could create the **\\\\VMMServer01\\Finance\\StoredVMs** path, and then add the **VMMServer01\\Finance** library share to the [!INCLUDE[vmm12short](Token/vmm12short_md.md)] library.
 
 -   If you want to assign read\-only shares to the private cloud, where administrators can store read\-only resources such as .iso files that they want to make available to self\-service users, make sure that one or more library shares exists that you can assign as the read\-only library shares. Note that self\-service users must have the **Author** permission to access the resources.
 
@@ -43,7 +43,7 @@ Before you create a private cloud, make sure that the following prerequisites ar
     For example, you could use library shares called **SEALibrary** and **NYLibrary**.
 
     > [!NOTE]
-    > For more information about self\-service user permissions, see [How to create a Self-Service User role in VMM](./How-to-create-a-Self-Service-User-role-in-VMM.md).
+    > For more information about self\-service user permissions, see [How to create a Self-Service User role in VMM](How-to-create-a-Self-Service-User-role-in-VMM.md).
 
 #### To create a private cloud from host groups
 
@@ -129,12 +129,12 @@ Before you create a private cloud, make sure that the following prerequisites ar
 
 After you create a private cloud, you can assign the private cloud to one or more user roles. To assign the private cloud to an existing user role, or to assign the private cloud and create a user role at the same time, in the **VMs and Services** workspace, click the private cloud that you want to assign. Then, on the **Home** tab, in the **Cloud** group, click **Assign Cloud** to open the **Assign Cloud** dialog box. If you select an existing user role, you can modify the properties of the user role. If you select **Create a user role and assign this cloud**, the Create User Role Wizard opens.
 
-For information about how to create a self\-service user role, see [How to create a Self-Service User role in VMM](./How-to-create-a-Self-Service-User-role-in-VMM.md).
+For information about how to create a self\-service user role, see [How to create a Self-Service User role in VMM](How-to-create-a-Self-Service-User-role-in-VMM.md).
 
 ## See Also
-[Overview: creating a private cloud with VMM](./Overview--creating-a-private-cloud-with-VMM.md)
+[Overview: creating a private cloud with VMM](Overview--creating-a-private-cloud-with-VMM.md)
 [Creating a private cloud with VMM](assetId:///6fbce258-d10e-4bc0-91fc-de4f5e00905f)
-[Managing private clouds with VMM](./Managing-private-clouds-with-VMM.md)
-[Managing tenant resources with VMM](./Managing-tenant-resources-with-VMM.md)
+[Managing private clouds with VMM](Managing-private-clouds-with-VMM.md)
+[Managing tenant resources with VMM](Managing-tenant-resources-with-VMM.md)
 
 

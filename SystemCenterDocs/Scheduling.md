@@ -15,7 +15,7 @@ The following table provides a brief description of tasks you can accomplish whe
 
 |Tasks|Scheduling Activities|
 |---------|-------------------------|
-|Invoke a runbook at a scheduled time.|[Monitor Date and Time](./Monitor-Date-and-Time.md)|
-|Verify that a runbook can run at its scheduled time.|[Check Schedule](./Check-Schedule.md)|
+|Invoke a runbook at a scheduled time.|[Monitor Date and Time](Monitor-Date-and-Time.md)|
+|Verify that a runbook can run at its scheduled time.|[Check Schedule](Check-Schedule.md)|
 
 

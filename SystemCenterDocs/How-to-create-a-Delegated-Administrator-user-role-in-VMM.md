@@ -8,7 +8,7 @@ ms.topic: article
 ms.assetid: 251e813d-6d69-4b6b-b25b-0a3fa0e70c60
 ---
 # How to create a Delegated Administrator user role in VMM
-Use this procedure to create a Delegated Administrator user role in [!INCLUDE[vmm12sp1_long](./Token/vmm12sp1_long_md.md)].
+Use this procedure to create a Delegated Administrator user role in [!INCLUDE[vmm12sp1_long](Token/vmm12sp1_long_md.md)].
 
 **Account requirements** Administrators and delegated administrators can create a Delegated Administrator user role. Delegated administrators can create Delegated Administrator user roles that include a subset of their scope, library servers, and Run As accounts.
 
@@ -39,8 +39,8 @@ Use this procedure to create a Delegated Administrator user role in [!INCLUDE[vm
 After you create a delegated administrator, you can change **Members**, **Scope**, **Library servers**, and **Run As accounts** in the **Properties** dialog box for the Delegated Administrator user role.
 
 ## See Also
-[Creating user roles in VMM](./Creating-user-roles-in-VMM.md)
-[How to create a Self-Service User role in VMM](./How-to-create-a-Self-Service-User-role-in-VMM.md)
-[Securing VMM resources](./Securing-VMM-resources.md)
+[Creating user roles in VMM](Creating-user-roles-in-VMM.md)
+[How to create a Self-Service User role in VMM](How-to-create-a-Self-Service-User-role-in-VMM.md)
+[Securing VMM resources](Securing-VMM-resources.md)
 
 

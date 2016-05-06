@@ -11,7 +11,7 @@ ms.topic: article
 ms.assetid: e7929b96-7057-4b18-bcd6-9d4a9f8566da
 ---
 # Scheduling a Runbook
-To schedule a runbook in [!INCLUDE[sma_1](./Token/sma_1_md.md)] to start at a specified time, you link it to one or more schedules. A schedule can be configured to either run one time or recurring every specified number of days. A runbook can be linked to multiple schedules, and a schedule can have multiple runbooks linked to it.
+To schedule a runbook in [!INCLUDE[sma_1](Token/sma_1_md.md)] to start at a specified time, you link it to one or more schedules. A schedule can be configured to either run one time or recurring every specified number of days. A runbook can be linked to multiple schedules, and a schedule can have multiple runbooks linked to it.
 
 ## <a name="Create"></a>Creating a Schedule
 You can either create a new schedule with the Management Portal or with Windows PowerShell. You also have the option of creating a new schedule when you link a runbook to a schedule using the Management Portal.
@@ -33,7 +33,7 @@ You can either create a new schedule with the Management Portal or with Windows 
 7.  Specify a **Start Time** and the other options depending on the type of schedule that you selected. The time zone of the start time will match the time zone of the local computer.
 
 ### To create a new Schedule with Windows PowerShell
-You can use the [Set\-SmaSchedule](http://aka.ms/runbookauthor/cmdlet/setsmaschedule) cmdlet to create a new schedule or modify an existing schedule in [!INCLUDE[sma_2](./Token/sma_2_md.md)]. You must specify the start time for the schedule and whether it should run one time or daily.
+You can use the [Set\-SmaSchedule](http://aka.ms/runbookauthor/cmdlet/setsmaschedule) cmdlet to create a new schedule or modify an existing schedule in [!INCLUDE[sma_2](Token/sma_2_md.md)]. You must specify the start time for the schedule and whether it should run one time or daily.
 
 The following sample Windows PowerShell commands create a new schedule called My Daily Schedule that starts on the current day and continues for one year every day at noon.
 
@@ -67,7 +67,7 @@ A runbook can be linked to multiple schedules, and a schedule can have multiple 
 7.  If the runbook has parameters, you will be prompted for their values.
 
 ### To link a schedule to a runbook with Windows PowerShell
-You can use the [Start\-SmaRunbook](http://aka.ms/runbookauthor/startsmarunbook) with the **ScheduleName** parameter to link a schedule to a runbook. You can specify values for the runbook’s parameters with the **Parameters** parameter. See [Starting a Runbook](./Starting-a-Runbook.md) for more information on specifying parameter values.
+You can use the [Start\-SmaRunbook](http://aka.ms/runbookauthor/startsmarunbook) with the **ScheduleName** parameter to link a schedule to a runbook. You can specify values for the runbook’s parameters with the **Parameters** parameter. See [Starting a Runbook](Starting-a-Runbook.md) for more information on specifying parameter values.
 
 The following sample commands show how to link a schedule to a runbook.
 

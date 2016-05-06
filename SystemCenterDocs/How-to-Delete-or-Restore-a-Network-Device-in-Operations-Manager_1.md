@@ -8,7 +8,7 @@ ms.topic: article
 ms.assetid: 4d9f871f-438e-4fd2-8c0c-13d8ba1a4ac8
 ---
 # How to Delete or Restore a Network Device in Operations Manager_1
-After [!INCLUDE[om12long](./Token/om12long_md.md)] has discovered and is monitoring a network device, you might want to stop monitoring the device because it is being replaced or because there is no business value in monitoring that particular device or for any other reason. To stop monitoring a device, you can use maintenance mode or you can delete the network device from the discovery rule. You can also restore a deleted device that was discovered by a recursive discovery rule.
+After [!INCLUDE[om12long](Token/om12long_md.md)] has discovered and is monitoring a network device, you might want to stop monitoring the device because it is being replaced or because there is no business value in monitoring that particular device or for any other reason. To stop monitoring a device, you can use maintenance mode or you can delete the network device from the discovery rule. You can also restore a deleted device that was discovered by a recursive discovery rule.
 
 To delete a device that is the starting point for recursive discovery, you must first delete the discovery rule or remove the device from the discovery rule.
 
@@ -71,14 +71,14 @@ If you delete a device that was discovered by a recursive discovery rule, it wil
 8.  Verify that the device is rediscovered. This may take a few minutes to a few hours depending on the number of devices in the environment. You can view the status of the discovery rule to determine when it has completed.
 
 ## See Also
-[Monitoring Networks by Using Operations Manager](./Monitoring-Networks-by-Using-Operations-Manager.md)
-[How to Discover Network Devices in Operations Manager](./How-to-Discover-Network-Devices-in-Operations-Manager.md)
-[Network Device Discovery Settings](./Network-Device-Discovery-Settings.md)
-[Run As Accounts for Network Monitoring in Operations Manager](./Run-As-Accounts-for-Network-Monitoring-in-Operations-Manager.md)
-[Tuning Network Monitoring](./Tuning-Network-Monitoring.md)
-[Viewing Network Devices and Data in Operations Manager](./Viewing-Network-Devices-and-Data-in-Operations-Manager.md)
-[Security for Servers Performing Network Discovery](./Security-for-Servers-Performing-Network-Discovery.md)
-[Network Devices Supported for Discovery by Operations Manager](./Network-Devices-Supported-for-Discovery-by-Operations-Manager.md)
-[Reports for Network Monitoring in Operations Manager](./Reports-for-Network-Monitoring-in-Operations-Manager.md)
+[Monitoring Networks by Using Operations Manager](Monitoring-Networks-by-Using-Operations-Manager.md)
+[How to Discover Network Devices in Operations Manager](How-to-Discover-Network-Devices-in-Operations-Manager.md)
+[Network Device Discovery Settings](Network-Device-Discovery-Settings.md)
+[Run As Accounts for Network Monitoring in Operations Manager](Run-As-Accounts-for-Network-Monitoring-in-Operations-Manager.md)
+[Tuning Network Monitoring](Tuning-Network-Monitoring.md)
+[Viewing Network Devices and Data in Operations Manager](Viewing-Network-Devices-and-Data-in-Operations-Manager.md)
+[Security for Servers Performing Network Discovery](Security-for-Servers-Performing-Network-Discovery.md)
+[Network Devices Supported for Discovery by Operations Manager](Network-Devices-Supported-for-Discovery-by-Operations-Manager.md)
+[Reports for Network Monitoring in Operations Manager](Reports-for-Network-Monitoring-in-Operations-Manager.md)
 
 

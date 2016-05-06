@@ -11,7 +11,7 @@ ms.topic: article
 ms.assetid: f5c79366-fa0f-4f93-aa63-b605a589206d
 ---
 # Release Notes for Orchestrator in System Center 2012 R2
-Before you install and use [!INCLUDE[orchshort](./Token/orchshort_md.md)] in [!INCLUDE[sc2012r2_1](./Token/sc2012r2_1_md.md)], read these release notes.
+Before you install and use [!INCLUDE[orchshort](Token/orchshort_md.md)] in [!INCLUDE[sc2012r2_1](Token/sc2012r2_1_md.md)], read these release notes.
 
 ## Known Issues
 
@@ -36,7 +36,7 @@ Before you install and use [!INCLUDE[orchshort](./Token/orchshort_md.md)] in [!I
 **Workaround:** All customized Enum values must have names that are different from all other Enum values.
 
 ### Orchestrator server restarts after deploying the Service Manager IP
-**Description:** After deploying the IP for Service Manager in [!INCLUDE[sc2012sp1_short](./Token/sc2012sp1_short_md.md)] to the runbook server, the [!INCLUDE[orchshort](./Token/orchshort_md.md)] server is automatically restarted without any further notice.
+**Description:** After deploying the IP for Service Manager in [!INCLUDE[sc2012sp1_short](Token/sc2012sp1_short_md.md)] to the runbook server, the [!INCLUDE[orchshort](Token/orchshort_md.md)] server is automatically restarted without any further notice.
 
 **Workaround:** None. The computer must be restarted so that the Service Manager IP can update some of the binary files that have been used.
 
@@ -46,6 +46,6 @@ Before you install and use [!INCLUDE[orchshort](./Token/orchshort_md.md)] in [!I
 **Workaround:** In the registry key HKEY\_LOCAL\_MACHINE\\SYSTEM\\CurrentControlSet\\Control\\Windows, the value for the NoInteractiveServices subkey defaults to 1, which means that no service is allowed to run interactively, regardless of whether it has SERVICE\_INTERACTIVE\_PROCESS. When NoInteractiveServices is set to a 0, services with SERVICE\_INTERACTIVE\_PROCESS are allowed to run interactively. Change the value of the NoInteractiveServices subkey to 0, and then restart the computer.
 
 ## See Also
-[Release Notes for System Center 2012 - Orchestrator_1](./Release-Notes-for-System-Center-2012---Orchestrator_1.md)
+[Release Notes for System Center 2012 - Orchestrator_1](Release-Notes-for-System-Center-2012---Orchestrator_1.md)
 
 

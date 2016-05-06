@@ -14,7 +14,7 @@ ms.assetid: efbb6586-bd42-464d-b346-74ec846af70c
 This topic describes how you use credentials to install, maintain, upgrade, and uninstall agents.
 
 ## <a name="Installing"></a>Credentials for Installing Agents
-[!INCLUDE[om12short](./Token/om12short_md.md)] uses the Secure Shell \(SSH\) protocol to install an agent and Web Services for Management \(WS\-Management\) to discover previously installed agents. Installation requires a privileged account on the UNIX or Linux computer. There are two ways to provide credentials to the targeted computer, as obtained by the **Computer and Device Management Wizard**:
+[!INCLUDE[om12short](Token/om12short_md.md)] uses the Secure Shell \(SSH\) protocol to install an agent and Web Services for Management \(WS\-Management\) to discover previously installed agents. Installation requires a privileged account on the UNIX or Linux computer. There are two ways to provide credentials to the targeted computer, as obtained by the **Computer and Device Management Wizard**:
 
 -   Specify a user name and password.
 
@@ -32,10 +32,10 @@ The installation is not completed until the agent is verified. Agent verificatio
 
 -   Ran the wizard with the **Discovery Type** set to **Discover only computers with the UNIX\/Linux agent installed**.
 
-Alternatively, you can install the agent, including its certificate, manually on the UNIX or Linux computer and then discover that computer. This method is the most secure way to install agents. For more information, see [Install Agent and Certificate on UNIX and Linux Computers Using the Command Line](./Install-Agent-and-Certificate-on-UNIX-and-Linux-Computers-Using-the-Command-Line.md).
+Alternatively, you can install the agent, including its certificate, manually on the UNIX or Linux computer and then discover that computer. This method is the most secure way to install agents. For more information, see [Install Agent and Certificate on UNIX and Linux Computers Using the Command Line](Install-Agent-and-Certificate-on-UNIX-and-Linux-Computers-Using-the-Command-Line.md).
 
 ## Credentials for Monitoring Operations and Performing Agent Maintenance
-[!INCLUDE[om12short](./Token/om12short_md.md)] contains three predefined profiles to use in monitoring UNIX and Linux computers and performing agent maintenance:
+[!INCLUDE[om12short](Token/om12short_md.md)] contains three predefined profiles to use in monitoring UNIX and Linux computers and performing agent maintenance:
 
 -   UNIX\/Linux action account
 
@@ -51,7 +51,7 @@ Alternatively, you can install the agent, including its certificate, manually on
 
 In the UNIX and Linux management packs, all the rules, monitors, tasks, recoveries, and other management pack elements are configured to use these profiles. Consequently, there is no requirement to define additional profiles by using the Run As Profiles Wizard unless special circumstances dictate it. The profiles are not cumulative in the scope. For example, the UNIX\/Linux maintenance account profile cannot be used in place of the other profiles simply because it is configured by using a privileged account.
 
-In [!INCLUDE[om12short](./Token/om12short_md.md)], a profile cannot function until it is associated with at least one Run As account. The credentials for accessing the UNIX or Linux computers are configured in the Run As accounts. Because there are no predefined Run As accounts for UNIX and Linux monitoring, you must create them.
+In [!INCLUDE[om12short](Token/om12short_md.md)], a profile cannot function until it is associated with at least one Run As account. The credentials for accessing the UNIX or Linux computers are configured in the Run As accounts. Because there are no predefined Run As accounts for UNIX and Linux monitoring, you must create them.
 
 To create a Run As account, you must run the **UNIX\/Linux Run As Account Wizard** that is available when you select **UNIX\/Linux Accounts** in the **Administration** workspace. The wizard creates a Run As account based on the choice of a Run As account type. There are two Run As account types:
 
@@ -79,7 +79,7 @@ When you specify a Monitoring Run As Account Type, you must specify a user name 
 
 -   Specify a user name and a key. You can include an optional passphrase.
 
-After you created the Run As accounts, you must edit the UNIX and Linux profiles to associate them with the Run As accounts you created.  For detailed instructions, see [How to Configure Run As Accounts and Profiles for UNIX and Linux Access](./How-to-Configure-Run-As-Accounts-and-Profiles-for-UNIX-and-Linux-Access.md).
+After you created the Run As accounts, you must edit the UNIX and Linux profiles to associate them with the Run As accounts you created.  For detailed instructions, see [How to Configure Run As Accounts and Profiles for UNIX and Linux Access](How-to-Configure-Run-As-Accounts-and-Profiles-for-UNIX-and-Linux-Access.md).
 
 ## Credentials for Upgrading and Uninstalling Agents
 The **UNIX\/Linux Agent Upgrade Wizard** and the **UNIX\/Linux Agent Uninstall Wizard** provide credentials to their targeted computers. The wizards first prompt you to select the targeted computers to upgrade or uninstall, followed by options on how to provide the credentials to the targeted computer:
@@ -94,13 +94,13 @@ The **UNIX\/Linux Agent Upgrade Wizard** and the **UNIX\/Linux Agent Uninstall W
 
     Select this option to specify Secure Shell \(SSH\) credentials by using a user name and password or a user name and a key. You can optionally provide a passphrase with a key. If the credentials are not for a privileged account, you can have them elevated to a privileged account on the target computered by using the UNIX su or sudo elevation programs. The ‘su’ elevation requires a password. If you use sudo elevation, you are prompted for a user name and password for agent verification by using an unprivileged account.
 
-For more information about upgrading and uninstalling, see [Upgrading and Uninstalling Agents on UNIX and Linux Computers](./Upgrading-and-Uninstalling-Agents-on-UNIX-and-Linux-Computers.md).
+For more information about upgrading and uninstalling, see [Upgrading and Uninstalling Agents on UNIX and Linux Computers](Upgrading-and-Uninstalling-Agents-on-UNIX-and-Linux-Computers.md).
 
 ## See Also
-[How to Set Credentials for Accessing UNIX and Linux Computers](./How-to-Set-Credentials-for-Accessing-UNIX-and-Linux-Computers.md)
-[Accessing UNIX and Linux Computers in Operations Manager](./Accessing-UNIX-and-Linux-Computers-in-Operations-Manager.md)
-[How to Configure sudo Elevation and SSH Keys](./How-to-Configure-sudo-Elevation-and-SSH-Keys.md)
-[Required Capabilities for UNIX and Linux Accounts](./Required-Capabilities-for-UNIX-and-Linux-Accounts.md)
-[Configuring SSL Ciphers](./Configuring-SSL-Ciphers.md)
+[How to Set Credentials for Accessing UNIX and Linux Computers](How-to-Set-Credentials-for-Accessing-UNIX-and-Linux-Computers.md)
+[Accessing UNIX and Linux Computers in Operations Manager](Accessing-UNIX-and-Linux-Computers-in-Operations-Manager.md)
+[How to Configure sudo Elevation and SSH Keys](How-to-Configure-sudo-Elevation-and-SSH-Keys.md)
+[Required Capabilities for UNIX and Linux Accounts](Required-Capabilities-for-UNIX-and-Linux-Accounts.md)
+[Configuring SSL Ciphers](Configuring-SSL-Ciphers.md)
 
 

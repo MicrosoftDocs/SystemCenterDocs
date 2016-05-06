@@ -174,10 +174,10 @@ ms.assetid: 88541bde-edd9-43c1-94a1-b2d20e879e45
           <para>A Windows Deployment Services server configured with the following:</para>
           <list class="bullet">
             <listItem>
-              <para>The boot image from either <token>winblue_client_./Token>, <token>winblue_server_./Token>, <token>win8_client_./Token>, <token>win8_server_./Token> Windows 7 or Windows Server 2008 R2 (from \Sources\Boot.wim on the DVD).</para>
+              <para>The boot image from either <token>winblue_client_Token>, <token>winblue_server_Token>, <token>win8_client_Token>, <token>win8_server_Token> Windows 7 or Windows Server 2008 R2 (from \Sources\Boot.wim on the DVD).</para>
             </listItem>
             <listItem>
-              <para>Install images for <token>winblue_client_./Token>, <token>winblue_server_./Token>, <token>win8_client_./Token>, <token>win8_server_./Token>, Windows Server 2008, Windows 7, or Windows Server 2008 R2. </para>
+              <para>Install images for <token>winblue_client_Token>, <token>winblue_server_Token>, <token>win8_client_Token>, <token>win8_server_Token>, Windows Server 2008, Windows 7, or Windows Server 2008 R2. </para>
             </listItem>
           </list>
         </listItem>
@@ -448,7 +448,7 @@ ms.assetid: 88541bde-edd9-43c1-94a1-b2d20e879e45
   <section address="boot">
     <title>Adding Driver Packages to Boot Images</title>
     <content>
-      <para>You can use Windows Deployment Services to add driver packages (such as network adapter drivers, mass storage drivers, and bus drivers) to your <token>winblue_client_./Token>, <token>winblue_server_./Token>, <token>win8_client_./Token>, <token>win8_server_./Token>, <token>nextref_client_./Token> and <token>nextref_server_./Token> boot images. This means that you do not have to export the image, use the tools in the Windows Automated Installation Kit to add driver packages manually, and then add the updated boot image.</para>
+      <para>You can use Windows Deployment Services to add driver packages (such as network adapter drivers, mass storage drivers, and bus drivers) to your <token>winblue_client_Token>, <token>winblue_server_Token>, <token>win8_client_Token>, <token>win8_server_Token>, <token>nextref_client_Token> and <token>nextref_server_Token> boot images. This means that you do not have to export the image, use the tools in the Windows Automated Installation Kit to add driver packages manually, and then add the updated boot image.</para>
     </content>
     <sections>
       <section>
@@ -491,7 +491,7 @@ ms.assetid: 88541bde-edd9-43c1-94a1-b2d20e879e45
             </steps>
           </procedure>
           <alert class="note">
-            <para>When adding driver packages to boot images using WDSUTIL, you must specify <system>/filtertype:packagearchitecture /operator:equal /value:&lt;arch&gt;</system> where &lt;arch&gt; matches the architecture of the boot image. For example, run <system>WDSUTIL /verbose /progress /add-imagedriverpackage/Image:"Microsoft Windows Setup (x64)/Imagetype:boot /architecture:x64 /filtertype:packagearchitecture /operator:equal /value:x64</system>. If you do not specify this command and the package contains packages that do not match the architecture of the image, the command will fail.  </para>
+            <para>When adding driver packages to boot images using WDSUTIL, you must specify <system>/filtertype:packagearchitecture /operator:equal /value:&lt;arch&gt;</system> where &lt;arch&gt; matches the architecture of the boot image. For example, run <system>WDSUTIL /verbose /progress /add-imagedriverpackageImage:"Microsoft Windows Setup (x64)Imagetype:boot /architecture:x64 /filtertype:packagearchitecture /operator:equal /value:x64</system>. If you do not specify this command and the package contains packages that do not match the architecture of the image, the command will fail.  </para>
           </alert>
         </content>
       </section>

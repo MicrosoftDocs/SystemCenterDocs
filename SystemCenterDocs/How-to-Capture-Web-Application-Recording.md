@@ -27,11 +27,11 @@ You can run the **Web Recorder** to create a **Web Application Transaction Monit
 
     1.  Type a name and optionally a description of the recording. The name appears in the **Monitoring** pane.
 
-    2.  Select a management pack in which you want to save your Web Application object, and then click **OK**. For more information, see [Selecting a Management Pack File](./Selecting-a-Management-Pack-File.md).
+    2.  Select a management pack in which you want to save your Web Application object, and then click **OK**. For more information, see [Selecting a Management Pack File](Selecting-a-Management-Pack-File.md).
 
 5.  Click **Start capture**.
 
-    Follow the steps in [To use the Web Recorder](./How-to-Capture-Web-Application-Recording.md#WebRecorder).
+    Follow the steps in [To use the Web Recorder](How-to-Capture-Web-Application-Recording.md#WebRecorder).
 
 ### To add a web recording to an existing browser session
 
@@ -45,11 +45,11 @@ You can run the **Web Recorder** to create a **Web Application Transaction Monit
 
 5.  Click **Start capture** in the **Actions** pane.
 
-    Follow the steps in [To use the Web Recorder](./How-to-Capture-Web-Application-Recording.md#WebRecorder).
+    Follow the steps in [To use the Web Recorder](How-to-Capture-Web-Application-Recording.md#WebRecorder).
 
 ## <a name="WebRecorder"></a>To use the Web Recorder
 
-1.  When you start the capture, Internet Explorer opens with the **Web Recorder** in the navigation pane. If you do not see the **Web Recorder**, see [Troubleshooting Web Capture](./Troubleshooting-Web-Capture.md).
+1.  When you start the capture, Internet Explorer opens with the **Web Recorder** in the navigation pane. If you do not see the **Web Recorder**, see [Troubleshooting Web Capture](Troubleshooting-Web-Capture.md).
 
 2.  In the browser window, follow the actions that you want to be monitored. For example, you might click some links or add a product to a shopping cart. As you perform actions, they are recorded in the **Web Recorder** pane.
 
@@ -63,9 +63,9 @@ You can run the **Web Recorder** to create a **Web Application Transaction Monit
 
 5.  Optionally, add requests or edit captured requests by using the **Insert request** or the **Properties** options in the **Actions** pane.
 
-    For more information, see [How to Edit Settings or Requests in a Web Application](./How-to-Edit-Settings-or-Requests-in-a-Web-Application.md).
+    For more information, see [How to Edit Settings or Requests in a Web Application](How-to-Edit-Settings-or-Requests-in-a-Web-Application.md).
 
 ## See Also
-[Troubleshooting Web Capture](./Troubleshooting-Web-Capture.md)
+[Troubleshooting Web Capture](Troubleshooting-Web-Capture.md)
 
 

@@ -22,7 +22,7 @@ The Rule Type page includes basic settings for the rule including its type and t
 |Option|Description|
 |----------|---------------|
 |Select the type of rule to create|To create a performance collection rule based on the execution of an UNIX\/Linux shell command, select **UNIX\/Linux Shell Command \(Performance\)**.|
-|Management Pack|Management pack file to store the rule or monitor.For more information on management packs, see [Selecting a Management Pack File](./Selecting-a-Management-Pack-File.md).|
+|Management Pack|Management pack file to store the rule or monitor.For more information on management packs, see [Selecting a Management Pack File](Selecting-a-Management-Pack-File.md).|
 
 ### General
 The **General** page includes general settings for the rule including its name, category, target, and the management pack file to store it in.
@@ -31,9 +31,9 @@ The **General** page includes general settings for the rule including its name, 
 |----------|---------------|
 |Rule Name|The name used for the rule. This appears in the **Rules** view in the **Authoring** pane. When you create a view or report, you can select this name to use the data collected by it.|
 |Description|Optional description of the rule.|
-|Management Pack|Management pack to store the rule. For more information on management packs, see [Selecting a Management Pack File](./Selecting-a-Management-Pack-File.md).|
+|Management Pack|Management pack to store the rule. For more information on management packs, see [Selecting a Management Pack File](Selecting-a-Management-Pack-File.md).|
 |Rule Category|The category for the rule. For a performance collection rule, this should be **Performance Collection**.|
-|Rule Target|The class to use for the target of the rule. The rule will be run on any agent that has at least one instance of this class. For more information on targets, see [Understanding Classes and Objects](./Understanding-Classes-and-Objects.md).|
+|Rule Target|The class to use for the target of the rule. The rule will be run on any agent that has at least one instance of this class. For more information on targets, see [Understanding Classes and Objects](Understanding-Classes-and-Objects.md).|
 |Rule is Enabled|If checked, the rule is enabled and the shell command will run according to the schedule. If unchecked, the rule is not enabled and the script will not run. The rule can be enabled for a group of target objects by creating an override to enable the rule.|
 
 ### Schedule
@@ -58,7 +58,7 @@ Shell commands used in performance collection rules must return only a single nu
 
 |Property Name|Description|
 |-----------------|---------------|
-|Filter one or more events|An expression that filters output of the shell command. For more information on building expressions, see [Expressions](./Expressions.md).<br />The Parameter Name syntax for command execution output is:<br />**StdOut**: \/\/\*\[local\-name\(\)\="StdOut"\]<br />**StdErr**: \/\/\*\[local\-name\(\)\="StdErr"\]<br />**Return Code**: \/\/\*\[local\-name\(\)\="ReturnCode"\]<br />The default expression filters that the StdOut value is numeric, and that the script executed successfully, with the expression definition of:<br />**\/\/\*\[local\-name\(\)\=”StdOut”\] Matches Regular Expression ^\[\-\+\]?\\d\*\[0\-9\]\*\(\\.\[0\-9\]\+\)?\[Ee\]?\[\-\+\]?\[0\-9\]\*$**<br />**\/\/\*\[local\-name\(\)\=”ReturnCode”\] Equals 0**|
+|Filter one or more events|An expression that filters output of the shell command. For more information on building expressions, see [Expressions](Expressions.md).<br />The Parameter Name syntax for command execution output is:<br />**StdOut**: \/\/\*\[local\-name\(\)\="StdOut"\]<br />**StdErr**: \/\/\*\[local\-name\(\)\="StdErr"\]<br />**Return Code**: \/\/\*\[local\-name\(\)\="ReturnCode"\]<br />The default expression filters that the StdOut value is numeric, and that the script executed successfully, with the expression definition of:<br />**\/\/\*\[local\-name\(\)\=”StdOut”\] Matches Regular Expression ^\[\-\+\]?\\d\*\[0\-9\]\*\(\\.\[0\-9\]\+\)?\[Ee\]?\[\-\+\]?\[0\-9\]\*$**<br />**\/\/\*\[local\-name\(\)\=”ReturnCode”\] Equals 0**|
 
 ### Performance Mapper
 The **Performance Mapper** page defines the mapping of the command output to a performance counter.
@@ -79,7 +79,7 @@ Use the following procedures to create a Windows performance collection rule in 
 
 #### To create an UNIX\/Linux shell command performance collection rule in Operations Manager
 
-1.  If you don’t have a management pack for the application that you are monitoring, create one using the process in [Selecting a Management Pack File](./Selecting-a-Management-Pack-File.md).
+1.  If you don’t have a management pack for the application that you are monitoring, create one using the process in [Selecting a Management Pack File](Selecting-a-Management-Pack-File.md).
 
 2.  In the Operations console, select the **Authoring** workspace, and then select **Rules**.
 
@@ -142,7 +142,7 @@ Use the following procedures to create a Windows performance collection rule in 
     7.  Click **Create**.
 
 ## See Also
-[Performance Monitors and Rules](./Performance-Monitors-and-Rules.md)
-[Performance Monitors](./Performance-Monitors.md)
+[Performance Monitors and Rules](Performance-Monitors-and-Rules.md)
+[Performance Monitors](Performance-Monitors.md)
 
 

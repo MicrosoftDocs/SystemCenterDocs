@@ -11,13 +11,13 @@ ms.topic: article
 ms.assetid: d10d5c2c-7930-47ba-afa2-f1256bacc442
 ---
 # How to Back Up the Encryption Key in Service Manager
-Your disaster recovery strategy for [!INCLUDE[smlong12](./Token/smlong12_md.md)] depends on backing up the encryption keys as soon as you complete the [!INCLUDE[smshort](./Token/smshort_md.md)] installation. After you back up the encryption keys and store them in a safe location, you can recover from software or hardware failures on the [!INCLUDE[smshort](./Token/smshort_md.md)] and data warehouse management servers.
+Your disaster recovery strategy for [!INCLUDE[smlong12](Token/smlong12_md.md)] depends on backing up the encryption keys as soon as you complete the [!INCLUDE[smshort](Token/smshort_md.md)] installation. After you back up the encryption keys and store them in a safe location, you can recover from software or hardware failures on the [!INCLUDE[smshort](Token/smshort_md.md)] and data warehouse management servers.
 
-You use the Encryption Key Backup or Restore Wizard to back up encryption keys on the management servers and [!INCLUDE[smssp](./Token/smssp_md.md)]. This wizard is located on the [!INCLUDE[smshort](./Token/smshort_md.md)] installation media in the Tools\\SecureStorageBackup folder.
+You use the Encryption Key Backup or Restore Wizard to back up encryption keys on the management servers and [!INCLUDE[smssp](Token/smssp_md.md)]. This wizard is located on the [!INCLUDE[smshort](Token/smshort_md.md)] installation media in the Tools\\SecureStorageBackup folder.
 
 ### To back up the encryption key
 
-1.  Log on to the computer that hosts the [!INCLUDE[smshort](./Token/smshort_md.md)] management server of data warehouse management server by using an account that is a member of the Administrators group.
+1.  Log on to the computer that hosts the [!INCLUDE[smshort](Token/smshort_md.md)] management server of data warehouse management server by using an account that is a member of the Administrators group.
 
 2.  In Windows Explorer, open the Tools\\SecureStorageBackup folder on the installation media.
 

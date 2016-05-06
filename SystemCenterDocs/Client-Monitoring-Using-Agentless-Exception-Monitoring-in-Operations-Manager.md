@@ -11,9 +11,9 @@ ms.topic: article
 ms.assetid: fe53bb3b-9072-4b7d-a518-a210c3e1e17f
 ---
 # Client Monitoring Using Agentless Exception Monitoring in Operations Manager
-The Client Monitoring feature of [!INCLUDE[om12long](./Token/om12long_md.md)] enables you to monitor operating systems and applications for errors and participate in the Customer Experience Improvement Program \(CEIP\).
+The Client Monitoring feature of [!INCLUDE[om12long](Token/om12long_md.md)] enables you to monitor operating systems and applications for errors and participate in the Customer Experience Improvement Program \(CEIP\).
 
-Agentless Exception Monitoring \(AEM\) is a component of the Client Monitoring feature in [!INCLUDE[om12short](./Token/om12short_md.md)]. AEM enables you to monitor operating systems and applications for errors within your organization. By default, when a Microsoft application encounters a severe error, it creates a report that can be sent to Microsoft to consolidate data that can lead to a reduction in errors. Using AEM, you can direct these reports to an Operations Manager management server. Operations Manager can then provide detailed views and reports on this consolidated error data. Using this data, you can determine how often an operating system or application experiences an error and the number of affected computers and users.
+Agentless Exception Monitoring \(AEM\) is a component of the Client Monitoring feature in [!INCLUDE[om12short](Token/om12short_md.md)]. AEM enables you to monitor operating systems and applications for errors within your organization. By default, when a Microsoft application encounters a severe error, it creates a report that can be sent to Microsoft to consolidate data that can lead to a reduction in errors. Using AEM, you can direct these reports to an Operations Manager management server. Operations Manager can then provide detailed views and reports on this consolidated error data. Using this data, you can determine how often an operating system or application experiences an error and the number of affected computers and users.
 
 ## AEM Views
 By default, the following views display AEM data in the Monitoring area of the Operations console:
@@ -35,34 +35,34 @@ A state view that lists the computers that have an operating system failure.
 
 ## Client Monitoring Using Agentless Exception Monitoring topics
 
--   [How to Configure a Management Server for Client Monitoring](./How-to-Configure-a-Management-Server-for-Client-Monitoring.md)
+-   [How to Configure a Management Server for Client Monitoring](How-to-Configure-a-Management-Server-for-Client-Monitoring.md)
 
--   [How to Configure Clients for Client Monitoring](./How-to-Configure-Clients-for-Client-Monitoring.md)
+-   [How to Configure Clients for Client Monitoring](How-to-Configure-Clients-for-Client-Monitoring.md)
 
--   [How to Customize Client Monitoring Data Collection and Solution Response URLs for Error Groups](./How-to-Customize-Client-Monitoring-Data-Collection-and-Solution-Response-URLs-for-Error-Groups.md)
+-   [How to Customize Client Monitoring Data Collection and Solution Response URLs for Error Groups](How-to-Customize-Client-Monitoring-Data-Collection-and-Solution-Response-URLs-for-Error-Groups.md)
 
--   [How to Configure Error Transmission Settings for Client Monitoring in Operations Manager](./How-to-Configure-Error-Transmission-Settings-for-Client-Monitoring-in-Operations-Manager.md)
+-   [How to Configure Error Transmission Settings for Client Monitoring in Operations Manager](How-to-Configure-Error-Transmission-Settings-for-Client-Monitoring-in-Operations-Manager.md)
 
--   [Forwarding Client Error Reports &#40;Client Monitoring&#41;](./Forwarding-Client-Error-Reports--Client-Monitoring-.md)
+-   [Forwarding Client Error Reports &#40;Client Monitoring&#41;](Forwarding-Client-Error-Reports--Client-Monitoring-.md)
 
 ## Other resources for this component
 
 -   [TechNet Library main page for Operations Manager](http://go.microsoft.com/fwlink/p/?LinkId=223634)
 
--   [Operations Guide for System Center 2012 - Operations Manager](./Operations-Guide-for-System-Center-2012---Operations-Manager.md)
+-   [Operations Guide for System Center 2012 - Operations Manager](Operations-Guide-for-System-Center-2012---Operations-Manager.md)
 
--   [Initial Monitoring After Operations Manager Is Installed](./Initial-Monitoring-After-Operations-Manager-Is-Installed.md)
+-   [Initial Monitoring After Operations Manager Is Installed](Initial-Monitoring-After-Operations-Manager-Is-Installed.md)
 
--   [Managing Access in Operations Manager](./Managing-Access-in-Operations-Manager.md)
+-   [Managing Access in Operations Manager](Managing-Access-in-Operations-Manager.md)
 
--   [Getting Information from Operations Manager](./Getting-Information-from-Operations-Manager.md)
+-   [Getting Information from Operations Manager](Getting-Information-from-Operations-Manager.md)
 
--   [General Tasks in Operations Manager_1](./General-Tasks-in-Operations-Manager_1.md)
+-   [General Tasks in Operations Manager_1](General-Tasks-in-Operations-Manager_1.md)
 
--   [Maintenance of Operations Manager](./Maintenance-of-Operations-Manager.md)
+-   [Maintenance of Operations Manager](Maintenance-of-Operations-Manager.md)
 
 -   [Operations Manager Report Authoring Guide](http://go.microsoft.com/fwlink/p/?LinkID=217092)
 
--   [Managing Discovery and Agents](./Managing-Discovery-and-Agents.md)
+-   [Managing Discovery and Agents](Managing-Discovery-and-Agents.md)
 
 

@@ -11,12 +11,12 @@ ms.topic: article
 ms.assetid: ddb44f0f-25a7-442d-a184-a509d69c118f
 ---
 # How to Modify the Self-Service Portal Attachment File Size
-By default, users can attach files in requests that they submit when they use the [!INCLUDE[smssp](./Token/smssp_md.md)] in [!INCLUDE[smlong12](./Token/smlong12_md.md)]. However, the [!INCLUDE[smssp](./Token/smssp_md.md)] limits the attachment file size to 10 megabytes \(MB\). You can modify the [!INCLUDE[smssp](./Token/smssp_md.md)] default attachment file size by editing a property manually in the Web.config file.
+By default, users can attach files in requests that they submit when they use the [!INCLUDE[smssp](Token/smssp_md.md)] in [!INCLUDE[smlong12](Token/smlong12_md.md)]. However, the [!INCLUDE[smssp](Token/smssp_md.md)] limits the attachment file size to 10 megabytes \(MB\). You can modify the [!INCLUDE[smssp](Token/smssp_md.md)] default attachment file size by editing a property manually in the Web.config file.
 
 > [!NOTE]
-> The maximum file size that the [!INCLUDE[smssp](./Token/smssp_md.md)] supports is independent of the work item maximum size settings that are specified in the [!INCLUDE[smcons](./Token/smcons_md.md)] in the Administration workspace.
+> The maximum file size that the [!INCLUDE[smssp](Token/smssp_md.md)] supports is independent of the work item maximum size settings that are specified in the [!INCLUDE[smcons](Token/smcons_md.md)] in the Administration workspace.
 
-### To modify the [!INCLUDE[smssp](./Token/smssp_md.md)] attachment file size
+### To modify the [!INCLUDE[smssp](Token/smssp_md.md)] attachment file size
 
 1.  Log in to the computer that hosts the Web Content Server with administrative credentials.
 
@@ -35,6 +35,6 @@ By default, users can attach files in requests that they submit when they use th
 5.  Close the text editor, and save the changes.
 
 ## See Also
-[Managing the System Center 2012 - Service Manager Self-Service Portal](./Managing-the-System-Center-2012---Service-Manager-Self-Service-Portal.md)
+[Managing the System Center 2012 - Service Manager Self-Service Portal](Managing-the-System-Center-2012---Service-Manager-Self-Service-Portal.md)
 
 

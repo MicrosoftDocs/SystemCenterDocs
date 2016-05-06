@@ -11,7 +11,7 @@ ms.topic: article
 ms.assetid: e68b45fd-a9b4-4767-9a79-cf1aee262109
 ---
 # Administering and Configuring the UNIX - Linux Agent
-This topic describes options to administer and configure the UNIX\/Linux agent for System Center – [!INCLUDE[omblue_2]./Token/omblue_2_md.md)].
+This topic describes options to administer and configure the UNIX\/Linux agent for System Center – [!INCLUDE[omblue_2](Token/omblue_2_md.md)].
 
 ## Agent Directories
 
@@ -82,10 +82,10 @@ cd /opt/microsoft/scx/bin/tools/
 ```
 
 ## scxsslconfig
-The **scxsslconfig** tool is used to generate the certificate in `/etc/opt/Microsoft/scx/ssl/`. This tool is useful in correcting issues in which the fully\-qualified domain name cannot be determined from the UNIX or Linux host itself, or the FQDN known to the UNIX\/Linux host does not match the FQDN used by the [!INCLUDE[omblue_2]./Token/omblue_2_md.md)] server to reach the host.
+The **scxsslconfig** tool is used to generate the certificate in `/etc/opt/Microsoft/scx/ssl/`. This tool is useful in correcting issues in which the fully\-qualified domain name cannot be determined from the UNIX or Linux host itself, or the FQDN known to the UNIX\/Linux host does not match the FQDN used by the [!INCLUDE[omblue_2](Token/omblue_2_md.md)] server to reach the host.
 
 > [!NOTE]
-> The generated certificate must be signed by [!INCLUDE[omblue_2]./Token/omblue_2_md.md)] in order to be used in WS\-Management communication.  Overwriting a previously signed certificate will require that the certificate be signed again.
+> The generated certificate must be signed by [!INCLUDE[omblue_2](Token/omblue_2_md.md)] in order to be used in WS\-Management communication.  Overwriting a previously signed certificate will require that the certificate be signed again.
 
 Usage for the **scxsslconfig** tool can be displayed with the following command: `scxsslconfig -?`
 
@@ -127,7 +127,7 @@ cd /opt/microsoft/scx/bin/tools/
 If required, the SSL cipher list used by the UNIX\/Linux agent can be customized. For more information about this configuration, see the [Configuring SSL Ciphers](http://technet.microsoft.com/library/hh528918.aspx) topic.
 
 ### Universal Linux – Operating System Name\/Version
-The Universal Linux Agent, which supports Linux operating systems such as CentOS, Debian GNU\/Linux, Oracle Linux, and Ubuntu Server, parses release files to determine the host’s operating system name and version. If required, these properties can be customized. To customize the operating system properties presented to [!INCLUDE[omblue_2]./Token/omblue_2_md.md)] for a Universal Linux Agent host, use the following procedure:
+The Universal Linux Agent, which supports Linux operating systems such as CentOS, Debian GNU\/Linux, Oracle Linux, and Ubuntu Server, parses release files to determine the host’s operating system name and version. If required, these properties can be customized. To customize the operating system properties presented to [!INCLUDE[omblue_2](Token/omblue_2_md.md)] for a Universal Linux Agent host, use the following procedure:
 
 Create the file `disablereleasefileupdates` in the directory: `/etc/opt/microsoft/scx/conf/`.
 
@@ -135,7 +135,7 @@ Create the file `disablereleasefileupdates` in the directory: `/etc/opt/microsof
 touch /etc/opt/microsoft/scx/conf/disablereleasefileupdates
 ```
 
-If this file exists, the agent will not attempt to update the operating system properties that are returned to [!INCLUDE[omblue_2]./Token/omblue_2_md.md)]. This ensures that the customizations are preserved.
+If this file exists, the agent will not attempt to update the operating system properties that are returned to [!INCLUDE[omblue_2](Token/omblue_2_md.md)]. This ensures that the customizations are preserved.
 
 Edit the file `scx-release` in the directory: `/etc/opt/microsoft/scx/conf`. This file has the format:
 
@@ -153,8 +153,7 @@ The values of the **OSName**, **OSVersion**, and **OSFullName** properties can b
 > The OSAlias property should not be edited. All properties in this file \(except for OSManufacturer\) are mandatory and should not be null.
 
 ## See Also
-[Managing Discovery and Agents](./Managing-Discovery-and-Agents.md)
-[Accessing UNIX and Linux Computers in Operations Manager](./Accessing-UNIX-and-Linux-Computers-in-Operations-Manager.md)
-
+[Managing Discovery and Agents](Managing-Discovery-and-Agents.md)
+[Accessing UNIX and Linux Computers in Operations Manager](Accessing-UNIX-and-Linux-Computers-in-Operations-Manager.md)
 
 

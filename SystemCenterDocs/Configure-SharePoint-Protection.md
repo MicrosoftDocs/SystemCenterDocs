@@ -11,10 +11,10 @@ ms.topic: article
 ms.assetid: 92263bcb-8d17-4bfe-9e41-b7f52da896ae
 ---
 # Configure SharePoint Protection
-This topic describes how to configure protection for SharePoint data with [!INCLUDE[dpm2012long](./Token/dpm2012long_md.md)], or DPM 2012 R2.
+This topic describes how to configure protection for SharePoint data with [!INCLUDE[dpm2012long](Token/dpm2012long_md.md)], or DPM 2012 R2.
 
 ## Before you start
-Read through the [Prerequisites for SharePoint protection](./Prerequisites-for-SharePoint-protection.md) before you set up protection.
+Read through the [Prerequisites for SharePoint protection](Prerequisites-for-SharePoint-protection.md) before you set up protection.
 
 ## Set up protection
 
@@ -46,9 +46,9 @@ Read through the [Prerequisites for SharePoint protection](./Prerequisites-for-S
 
     3.  Enter the farm administrator credentials. This account should be a member of the local Administrator group on the WFE server. If the farm administrator isn’t a local admin grant the following permissions on the WFE server:
 
-        -   Grant the WSS\_Admin\_WPG group full control to the [!INCLUDE[dpm2012short](./Token/dpm2012short_md.md)] folder \(%Program Files%\\Microsoft Data Protection Manager\\DPM\).
+        -   Grant the WSS\_Admin\_WPG group full control to the [!INCLUDE[dpm2012short](Token/dpm2012short_md.md)] folder \(%Program Files%\\Microsoft Data Protection Manager\\DPM\).
 
-        -   Grant the WSS\_Admin\_WPG group read access to the [!INCLUDE[dpm2012short](./Token/dpm2012short_md.md)] Registry key \(HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Microsoft\\Microsoft Data Protection Manager\).
+        -   Grant the WSS\_Admin\_WPG group read access to the [!INCLUDE[dpm2012short](Token/dpm2012short_md.md)] Registry key \(HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Microsoft\\Microsoft Data Protection Manager\).
 
     After running ConfigureSharePoint.exe to begin protection you’ll need to rerun it if there’s a change in the SharePoint farm administrator credentials. See more details about the tool in [Using ConfigureSharePoint](http://go.microsoft.com/fwlink/p/?LinkId=234748).
 
@@ -58,7 +58,7 @@ Read through the [Prerequisites for SharePoint protection](./Prerequisites-for-S
 
     -   [Plan for protection group long\-term and short\-term protection](assetId:///f2df4e26-7911-4839-b4fe-e86567b32a6c)
 
-    -   [Back up and restore server system state and bare metal recovery &#40;BMR&#41;](./Back-up-and-restore-server-system-state-and-bare-metal-recovery--BMR-.md)
+    -   [Back up and restore server system state and bare metal recovery &#40;BMR&#41;](Back-up-and-restore-server-system-state-and-bare-metal-recovery--BMR-.md)
 
     -   Then follow the instructions in [Create and manage protection groups](assetId:///2ce48037-9d6e-43a0-b3ac-cb3bb429dabd).
 

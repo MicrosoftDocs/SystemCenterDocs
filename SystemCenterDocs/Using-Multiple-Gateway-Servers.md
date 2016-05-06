@@ -16,11 +16,11 @@ Multiple gateway servers can be deployed across a trust boundary to provide redu
 In addition to providing redundancy through agent\-gateway failover, gateway servers can be configured to fail over between management servers in a management group if multiple management servers are available.
 
 ## See Also
-[Monitoring Across Untrusted Boundaries in Operations Manager](./Monitoring-Across-Untrusted-Boundaries-in-Operations-Manager.md)
-[About Gateway Servers in Operations Manager](./About-Gateway-Servers-in-Operations-Manager.md)
-[Determining the Health of Gateway Servers](./Determining-the-Health-of-Gateway-Servers.md)
-[How to Configure Agent Failover to Multiple Gateway Servers](./How-to-Configure-Agent-Failover-to-Multiple-Gateway-Servers.md)
-[How to Configure a Gateway Server to Failover Between Multiple Management Servers](./How-to-Configure-a-Gateway-Server-to-Failover-Between-Multiple-Management-Servers.md)
-[Certificate Renewal for Gateway Servers and Management Servers](./Certificate-Renewal-for-Gateway-Servers-and-Management-Servers.md)
+[Monitoring Across Untrusted Boundaries in Operations Manager](Monitoring-Across-Untrusted-Boundaries-in-Operations-Manager.md)
+[About Gateway Servers in Operations Manager](About-Gateway-Servers-in-Operations-Manager.md)
+[Determining the Health of Gateway Servers](Determining-the-Health-of-Gateway-Servers.md)
+[How to Configure Agent Failover to Multiple Gateway Servers](How-to-Configure-Agent-Failover-to-Multiple-Gateway-Servers.md)
+[How to Configure a Gateway Server to Failover Between Multiple Management Servers](How-to-Configure-a-Gateway-Server-to-Failover-Between-Multiple-Management-Servers.md)
+[Certificate Renewal for Gateway Servers and Management Servers](Certificate-Renewal-for-Gateway-Servers-and-Management-Servers.md)
 
 

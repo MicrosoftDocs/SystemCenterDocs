@@ -16,8 +16,8 @@ Data Protection Manager \(DPM\) provides a self\-service recovery feature to all
 You use the DPM Self\-Service Recovery Configuration Toll to create and manage roles that specify which users can perform self\-service recovery. Then users use the DPM Self\-Service Recovery Wizard to recover SQL Server databases.
 
 ## In This Section
-[Configure self-service recovery of SQL Server databases](./Configure-self-service-recovery-of-SQL-Server-databases.md)
+[Configure self-service recovery of SQL Server databases](Configure-self-service-recovery-of-SQL-Server-databases.md)
 
-[Recover SQL Server databases using self-service recovery](./Recover-SQL-Server-databases-using-self-service-recovery.md)
+[Recover SQL Server databases using self-service recovery](Recover-SQL-Server-databases-using-self-service-recovery.md)
 
 

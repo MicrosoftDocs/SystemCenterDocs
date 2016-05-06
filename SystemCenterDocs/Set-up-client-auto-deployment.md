@@ -63,7 +63,7 @@ Set up DPM client auto deployment as follows:
 
 2.  Edit the details here such as per laptop size, and so on, to set new settings.
 
-    All protection groups created for all [!INCLUDE[dpm2012short](./Token/dpm2012short_md.md)] servers involved in auto protection will use these configuration settings.
+    All protection groups created for all [!INCLUDE[dpm2012short](Token/dpm2012short_md.md)] servers involved in auto protection will use these configuration settings.
 
 ### <a name="BKMK_AddDPM"></a>Add the DPM server
 

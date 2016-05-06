@@ -14,7 +14,7 @@ ms.assetid: d786ccb2-6b49-4121-9f1b-21414f29dc95
 
 ### To view overall web application health
 
-1.  To get a view of the general health of each application you are monitoring, in the [!INCLUDE[om12short](./Token/om12short_md.md)] console, in the navigation pane, click the **Monitoring** button, and then click **Application Monitoring**.
+1.  To get a view of the general health of each application you are monitoring, in the [!INCLUDE[om12short](Token/om12short_md.md)] console, in the navigation pane, click the **Monitoring** button, and then click **Application Monitoring**.
 
 2.  Click **Web Application Availability Monitoring**, and then click **Web Applications State**. This is the best view to see the overall health of each application.
 
@@ -32,7 +32,7 @@ ms.assetid: d786ccb2-6b49-4121-9f1b-21414f29dc95
 
 ### To view alerts and alert details
 
-1.  To see active alerts for the applications you are monitoring, in the [!INCLUDE[om12short](./Token/om12short_md.md)] console, in the navigation pane, click the **Monitoring** button, and then click **Application Monitoring**.
+1.  To see active alerts for the applications you are monitoring, in the [!INCLUDE[om12short](Token/om12short_md.md)] console, in the navigation pane, click the **Monitoring** button, and then click **Application Monitoring**.
 
 2.  Click **Web Application Availability Monitoring**, and then click **Active Alerts**. If there are alerts, you will see them listed in the **Active Alerts** pane. As with the application health, the alert state is displayed in the color according to your alert configurations.
 
@@ -44,7 +44,7 @@ ms.assetid: d786ccb2-6b49-4121-9f1b-21414f29dc95
 
 ### To view data for individual URLs and locations
 
-1.  To get a view of each test you configured in the Web Application Availability Monitoring template, in the [!INCLUDE[om12short](./Token/om12short_md.md)] console, in the navigation pane, click the **Monitoring** button, and then click **Application Monitoring**.
+1.  To get a view of each test you configured in the Web Application Availability Monitoring template, in the [!INCLUDE[om12short](Token/om12short_md.md)] console, in the navigation pane, click the **Monitoring** button, and then click **Application Monitoring**.
 
 2.  Click **Web Application Availability Monitoring**, and then click **Test State**. If there are alerts, you will see them listed in the **Active Alerts** pane. As with the application health, the alert state is displayed in the color according to your alert configurations.
 

@@ -8,11 +8,11 @@ ms.topic: article
 ms.assetid: f5673c1e-5792-4210-acb9-327f5ccafadc
 ---
 # How to import a service template in VMM
-Use the following procedure to import a service template in [!INCLUDE[vmm12sp1_long](./Token/vmm12sp1_long_md.md)].
+Use the following procedure to import a service template in [!INCLUDE[vmm12sp1_long](Token/vmm12sp1_long_md.md)].
 
 ### To import a service template
 
-1.  In the [!INCLUDE[vmm12short](./Token/vmm12short_md.md)] console, open the Library workspace.
+1.  In the [!INCLUDE[vmm12short](Token/vmm12short_md.md)] console, open the Library workspace.
 
 2.  In the Library pane, expand the **Templates** node, and then click **Service Templates**.
 
@@ -40,7 +40,7 @@ Use the following procedure to import a service template in [!INCLUDE[vmm12sp1_l
 
         In the resource list, each missing resource has a **Current Mapping** value of **None**. The most common missing resources are logical networks and virtual hard disks.
 
-    -   If necessary, update missing logical or physical resources to a resource that is available in the current [!INCLUDE[vmm12short](./Token/vmm12short_md.md)] environment.
+    -   If necessary, update missing logical or physical resources to a resource that is available in the current [!INCLUDE[vmm12short](Token/vmm12short_md.md)] environment.
 
         To update a resource, click the pencil icon at the right end of the resource entry to display a list of available resources. After you select a new resource, the **Current Mapping** for the resource displays the selected resource.
 
@@ -49,7 +49,7 @@ Use the following procedure to import a service template in [!INCLUDE[vmm12sp1_l
 
     After you finish updating references, click **Next**.
 
-8.  If the name and the release value match those of an existing service template in the current [!INCLUDE[vmm12short](./Token/vmm12short_md.md)] environment, you will be prompted to confirm whether you want to overwrite settings in the existing service template. Click **Yes** to continue, or cancel the operation and then change the service template name or release value.
+8.  If the name and the release value match those of an existing service template in the current [!INCLUDE[vmm12short](Token/vmm12short_md.md)] environment, you will be prompted to confirm whether you want to overwrite settings in the existing service template. Click **Yes** to continue, or cancel the operation and then change the service template name or release value.
 
 9. On the **Summary** page, review your selections, and then click **Import**.
 
@@ -63,8 +63,8 @@ Use the following procedure to import a service template in [!INCLUDE[vmm12sp1_l
         > If any unavailable resources were not mapped, the template status is **Missing**. To review errors in a service template, open the service template in the Service Template Designer.
 
 ## See Also
-[Exporting and importing service templates in VMM](./Exporting-and-importing-service-templates-in-VMM.md)
-[Managing services with VMM](./Managing-services-with-VMM.md)
-[Managing tenant resources with VMM](./Managing-tenant-resources-with-VMM.md)
+[Exporting and importing service templates in VMM](Exporting-and-importing-service-templates-in-VMM.md)
+[Managing services with VMM](Managing-services-with-VMM.md)
+[Managing tenant resources with VMM](Managing-tenant-resources-with-VMM.md)
 
 

@@ -13,7 +13,7 @@ ms.assetid: 9be981fc-6708-4d00-a42a-2a15f0addbf0
 # Monitor a Folder within a Runbook
 This sample shows you how to create a simple monitor runbook that monitors a folder for new text files. When a file is detected, the runbook sends an event log message, and then starts another runbook.
 
-![](/Image/Orch2012_Sample_MonitorFolder.jpg)
+![](Image/Orch2012_Sample_MonitorFolder.jpg)
 
 ## Create and test a monitor runbook
 The procedures to create, configure, and test a sample runbook that monitors a folder are described below.
@@ -88,7 +88,7 @@ The procedures to create, configure, and test a sample runbook that monitors a f
 15. Click **Finish**.
 
     > [!NOTE]
-    > In this sample, the **Invoke Runbook** activity is not configured. For more information about configuring this activity, see the [Invoke Runbook](./Invoke-Runbook.md) activity in the [!INCLUDE[orchlong](./Token/orchlong_md.md)] Runbook Activity Reference.
+    > In this sample, the **Invoke Runbook** activity is not configured. For more information about configuring this activity, see the [Invoke Runbook](Invoke-Runbook.md) activity in the [!INCLUDE[orchlong](Token/orchlong_md.md)] Runbook Activity Reference.
 
 #### To modify runbook settings
 
@@ -153,6 +153,6 @@ Use the following steps to test your runbook in the **Runbook Tester**.
 14. On the **Runbook Designer** toolbar, click **Check In**.
 
 ## See Also
-[Runbook Samples](./Runbook-Samples.md)
+[Runbook Samples](Runbook-Samples.md)
 
 

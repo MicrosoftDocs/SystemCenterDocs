@@ -11,21 +11,21 @@ ms.topic: article
 ms.assetid: cd0b7e89-7bd2-482a-b840-f3f119e6f9ea
 ---
 # How to install Orchestrator Features
-Use the following steps to install an [!INCLUDE[scor_threshold_1](./Token/scor_threshold_1_md.md)] management server.
+Use the following steps to install an [!INCLUDE[scor_threshold_1](Token/scor_threshold_1_md.md)] management server.
 
-### To install an [!INCLUDE[orchshort](./Token/orchshort_md.md)] management server
+### To install an [!INCLUDE[orchshort](Token/orchshort_md.md)] management server
 
-1.  On the server where you want to install [!INCLUDE[orchshort](./Token/orchshort_md.md)], start the **[!INCLUDE[scor_threshold_1](./Token/scor_threshold_1_md.md)] Setup Wizard**.
+1.  On the server where you want to install [!INCLUDE[orchshort](Token/orchshort_md.md)], start the **[!INCLUDE[scor_threshold_1](Token/scor_threshold_1_md.md)] Setup Wizard**.
 
-    To start the **[!INCLUDE[scor_threshold_1](./Token/scor_threshold_1_md.md)] Setup Wizard**, on your product media or network share, double\-click **SetupOrchestrator.exe**.
+    To start the **[!INCLUDE[scor_threshold_1](Token/scor_threshold_1_md.md)] Setup Wizard**, on your product media or network share, double\-click **SetupOrchestrator.exe**.
 
     > [!IMPORTANT]
-    > Before you begin setup, close any open programs and ensure that there are no pending restarts on the computer. For example, if you have installed a server role by using [!INCLUDE[scsm_threshold_1](./Token/scsm_threshold_1_md.md)] or have applied a security update, you might have to restart the computer, and then log on to the computer with the same user account to finish the installation of the server role or the security update.
+    > Before you begin setup, close any open programs and ensure that there are no pending restarts on the computer. For example, if you have installed a server role by using [!INCLUDE[scsm_threshold_1](Token/scsm_threshold_1_md.md)] or have applied a security update, you might have to restart the computer, and then log on to the computer with the same user account to finish the installation of the server role or the security update.
 
     > [!NOTE]
     > If User Account Control is enabled, then you will be prompted to verify that you want to allow the setup program to run. This is because it requires administrative access to make changes to the system.
 
-2.  On the main page of the **[!INCLUDE[scor_threshold_1](./Token/scor_threshold_1_md.md)] Setup Wizard**, click **Install**.
+2.  On the main page of the **[!INCLUDE[scor_threshold_1](Token/scor_threshold_1_md.md)] Setup Wizard**, click **Install**.
 
     > [!WARNING]
     > If Microsoft .NET Framework 3.5 Service Pack 1 is not installed on your computer, a dialog box appears asking if you want to install .NET Framework 3.5 SP1. Click **Yes** to proceed with the installation.
@@ -52,15 +52,15 @@ Use the following steps to install an [!INCLUDE[scor_threshold_1](./Token/scor_t
 
     3.  Click **Next** to continue.
 
-7.  On the **Configure the service account** page, enter the user name and password for the [!INCLUDE[orchshort](./Token/orchshort_md.md)] service account. Click **Test** to verify the account credentials. If the credentials are accepted, then click **Next**.
+7.  On the **Configure the service account** page, enter the user name and password for the [!INCLUDE[orchshort](Token/orchshort_md.md)] service account. Click **Test** to verify the account credentials. If the credentials are accepted, then click **Next**.
 
-8.  On the **Configure the database server** page, enter the name of the server and the name of the instance of Microsoft SQL Server that you want to use for [!INCLUDE[orchshort](./Token/orchshort_md.md)]. You can also specify whether to use Windows Authentication or SQL Server Authentication, and whether to create a new database or use an existing database. Click **Test Database Connection** to verify the account credentials. If the credentials are accepted, click **Next**.
+8.  On the **Configure the database server** page, enter the name of the server and the name of the instance of Microsoft SQL Server that you want to use for [!INCLUDE[orchshort](Token/orchshort_md.md)]. You can also specify whether to use Windows Authentication or SQL Server Authentication, and whether to create a new database or use an existing database. Click **Test Database Connection** to verify the account credentials. If the credentials are accepted, click **Next**.
 
 9. On the **Configure the database** page, select a database or create a new database, and then click **Next**.
 
-10. On the **Configure Orchestrator management group** page, accept the default configuration or enter the name of the Active Directory user group to manage [!INCLUDE[orchshort](./Token/orchshort_md.md)], and then click **Next**.
+10. On the **Configure Orchestrator management group** page, accept the default configuration or enter the name of the Active Directory user group to manage [!INCLUDE[orchshort](Token/orchshort_md.md)], and then click **Next**.
 
-11. On the **Select the installation location** page, verify the installation location for [!INCLUDE[orchshort](./Token/orchshort_md.md)], and then click **Next**.
+11. On the **Select the installation location** page, verify the installation location for [!INCLUDE[orchshort](Token/orchshort_md.md)], and then click **Next**.
 
 12. On the **Microsoft Update** page, optionally indicate whether you want to use the Microsoft Update services to check for updates, and then click **Next**.
 
@@ -72,14 +72,14 @@ Use the following steps to install an [!INCLUDE[scor_threshold_1](./Token/scor_t
 
 15. On the **Setup completed successfully** page, optionally indicate whether you want to start Runbook Designer, and then click **Close** to complete the installation.
 
-### To install an [!INCLUDE[orchshort](./Token/orchshort_md.md)] runbook server
+### To install an [!INCLUDE[orchshort](Token/orchshort_md.md)] runbook server
 
-1.  On the server where you want to install an [!INCLUDE[orchshort](./Token/orchshort_md.md)] runbook server, start the [!INCLUDE[scor_threshold_1](./Token/scor_threshold_1_md.md)] Setup Wizard.
+1.  On the server where you want to install an [!INCLUDE[orchshort](Token/orchshort_md.md)] runbook server, start the [!INCLUDE[scor_threshold_1](Token/scor_threshold_1_md.md)] Setup Wizard.
 
-    To start the **[!INCLUDE[scor_threshold_1](./Token/scor_threshold_1_md.md)] Setup Wizard**, on your product media or network share, double\-click **SetupOrchestrator.exe**.
+    To start the **[!INCLUDE[scor_threshold_1](Token/scor_threshold_1_md.md)] Setup Wizard**, on your product media or network share, double\-click **SetupOrchestrator.exe**.
 
     > [!NOTE]
-    > Before you begin setup, close any open programs and ensure that there are no pending restarts on the computer. For example, if you have installed a server role by using [!INCLUDE[scsm_threshold_1](./Token/scsm_threshold_1_md.md)] or have applied a security update, you might have to restart the computer, and then log on to the computer with the same user account to finish the installation of the server role or the security update.
+    > Before you begin setup, close any open programs and ensure that there are no pending restarts on the computer. For example, if you have installed a server role by using [!INCLUDE[scsm_threshold_1](Token/scsm_threshold_1_md.md)] or have applied a security update, you might have to restart the computer, and then log on to the computer with the same user account to finish the installation of the server role or the security update.
 
 2.  On the main setup page, under **Standalone installations**, click **Runbook server**.
 
@@ -106,13 +106,13 @@ Use the following steps to install an [!INCLUDE[scor_threshold_1](./Token/scor_t
 
     3.  Click **Next** to continue.
 
-6.  On the **Configure the service account** page, enter the user name and password for the [!INCLUDE[orchshort](./Token/orchshort_md.md)] service account. Click **Test** to verify the account credentials. If the credentials are accepted, click **Next**.
+6.  On the **Configure the service account** page, enter the user name and password for the [!INCLUDE[orchshort](Token/orchshort_md.md)] service account. Click **Test** to verify the account credentials. If the credentials are accepted, click **Next**.
 
-7.  On the **Configure the database server** page, enter the name of the database server associated with your [!INCLUDE[orchshort](./Token/orchshort_md.md)] management server. You can also specify whether to use Windows Authentication or SQL Server Authentication, and whether to create a new database or use an existing database. Click **Test Database Connection** to verify the account credentials. If the credentials are accepted, click **Next**.
+7.  On the **Configure the database server** page, enter the name of the database server associated with your [!INCLUDE[orchshort](Token/orchshort_md.md)] management server. You can also specify whether to use Windows Authentication or SQL Server Authentication, and whether to create a new database or use an existing database. Click **Test Database Connection** to verify the account credentials. If the credentials are accepted, click **Next**.
 
-8.  On the **Configure the database** page, select the [!INCLUDE[orchshort](./Token/orchshort_md.md)] database for your deployment, and then click **Next**.
+8.  On the **Configure the database** page, select the [!INCLUDE[orchshort](Token/orchshort_md.md)] database for your deployment, and then click **Next**.
 
-9. On the **Select the installation location** page, verify the installation location for [!INCLUDE[orchshort](./Token/orchshort_md.md)], and then click **Next**.
+9. On the **Select the installation location** page, verify the installation location for [!INCLUDE[orchshort](Token/orchshort_md.md)], and then click **Next**.
 
 10. On the **Microsoft Update** page, optionally indicate whether you want to use the Microsoft Update services to check for updates, and then click **Next**.
 
@@ -124,16 +124,16 @@ Use the following steps to install an [!INCLUDE[scor_threshold_1](./Token/scor_t
 
 13. On the **Setup completed successfully** page, optionally indicate whether you want to start the Runbook Designer, and then click **Close** to complete the installation.
 
-### To install the [!INCLUDE[orchshort](./Token/orchshort_md.md)] web service
+### To install the [!INCLUDE[orchshort](Token/orchshort_md.md)] web service
 
-1.  On the server where you want to install the [!INCLUDE[orchshort](./Token/orchshort_md.md)] web service, start the **[!INCLUDE[scor_threshold_1](./Token/scor_threshold_1_md.md)] Setup Wizard**.
+1.  On the server where you want to install the [!INCLUDE[orchshort](Token/orchshort_md.md)] web service, start the **[!INCLUDE[scor_threshold_1](Token/scor_threshold_1_md.md)] Setup Wizard**.
 
-    To start the **[!INCLUDE[scor_threshold_1](./Token/scor_threshold_1_md.md)] Setup Wizard**, on your product media or network share, double\-click **SetupOrchestrator.exe**.
+    To start the **[!INCLUDE[scor_threshold_1](Token/scor_threshold_1_md.md)] Setup Wizard**, on your product media or network share, double\-click **SetupOrchestrator.exe**.
 
     > [!NOTE]
-    > Before you begin the installation of the [!INCLUDE[orchshort](./Token/orchshort_md.md)] web service, close any open programs and ensure that there are no pending restarts on the computer. For example, if you have installed a server role by using [!INCLUDE[scsm_threshold_1](./Token/scsm_threshold_1_md.md)] or have applied a security update, you might have to restart the computer, and then log on to the computer with the same user account to finish the installation of the server role or the security update.
+    > Before you begin the installation of the [!INCLUDE[orchshort](Token/orchshort_md.md)] web service, close any open programs and ensure that there are no pending restarts on the computer. For example, if you have installed a server role by using [!INCLUDE[scsm_threshold_1](Token/scsm_threshold_1_md.md)] or have applied a security update, you might have to restart the computer, and then log on to the computer with the same user account to finish the installation of the server role or the security update.
 
-2.  On the main **[!INCLUDE[scor_threshold_1](./Token/scor_threshold_1_md.md)] Setup Wizard** page, click **Install**.
+2.  On the main **[!INCLUDE[scor_threshold_1](Token/scor_threshold_1_md.md)] Setup Wizard** page, click **Install**.
 
     > [!WARNING]
     > If Microsoft .NET Framework 3.5 Service Pack 1 is not installed on your computer, a dialog box appears asking if you want to install .NET Framework 3.5 SP1. Click **Yes** to proceed with the installation.
@@ -158,15 +158,15 @@ Use the following steps to install an [!INCLUDE[scor_threshold_1](./Token/scor_t
 
     3.  Click **Next** to continue.
 
-6.  On the **Configure the service account** page, enter the user name and password for the [!INCLUDE[orchshort](./Token/orchshort_md.md)] service account. Click **Test** to verify the account credentials. If the credentials are accepted, click **Next**.
+6.  On the **Configure the service account** page, enter the user name and password for the [!INCLUDE[orchshort](Token/orchshort_md.md)] service account. Click **Test** to verify the account credentials. If the credentials are accepted, click **Next**.
 
-7.  On the **Configure the database server** page, enter the name of the database server associated with your [!INCLUDE[orchshort](./Token/orchshort_md.md)] management server. You can also specify whether to use Windows Authentication or SQL Server Authentication, and whether to create a new database or use an existing database. Click **Test Database Connection** to verify the account credentials. If the credentials are accepted, click **Next**.
+7.  On the **Configure the database server** page, enter the name of the database server associated with your [!INCLUDE[orchshort](Token/orchshort_md.md)] management server. You can also specify whether to use Windows Authentication or SQL Server Authentication, and whether to create a new database or use an existing database. Click **Test Database Connection** to verify the account credentials. If the credentials are accepted, click **Next**.
 
-8.  On the **Configure the database** page, select the [!INCLUDE[orchshort](./Token/orchshort_md.md)] database for your deployment, and then click **Next**.
+8.  On the **Configure the database** page, select the [!INCLUDE[orchshort](Token/orchshort_md.md)] database for your deployment, and then click **Next**.
 
-9. On the **Configure the port for the web service** page, verify the port numbers for the [!INCLUDE[orchshort](./Token/orchshort_md.md)] web service and the Orchestration console, and then click **Next**.
+9. On the **Configure the port for the web service** page, verify the port numbers for the [!INCLUDE[orchshort](Token/orchshort_md.md)] web service and the Orchestration console, and then click **Next**.
 
-10. On the **Select the installation location** page, verify the installation location for [!INCLUDE[orchshort](./Token/orchshort_md.md)], and then click **Next**.
+10. On the **Select the installation location** page, verify the installation location for [!INCLUDE[orchshort](Token/orchshort_md.md)], and then click **Next**.
 
 11. On the **Microsoft Update** page, optionally indicate whether you want to use the Microsoft Update services to check for updates, and then click **Next**.
 
@@ -178,16 +178,16 @@ Use the following steps to install an [!INCLUDE[scor_threshold_1](./Token/scor_t
 
 14. On the **Setup completed successfully** page, optionally indicate whether you want to start the Runbook Designer, and then click **Close** to complete the installation.
 
-### To install the [!INCLUDE[orchshort](./Token/orchshort_md.md)] Runbook Designer on a single computer
+### To install the [!INCLUDE[orchshort](Token/orchshort_md.md)] Runbook Designer on a single computer
 
-1.  On the server where you want to install the [!INCLUDE[orchshort](./Token/orchshort_md.md)] Runbook Designer, start the **[!INCLUDE[scor_threshold_1](./Token/scor_threshold_1_md.md)] Setup Wizard**.
+1.  On the server where you want to install the [!INCLUDE[orchshort](Token/orchshort_md.md)] Runbook Designer, start the **[!INCLUDE[scor_threshold_1](Token/scor_threshold_1_md.md)] Setup Wizard**.
 
-    To start the **[!INCLUDE[scor_threshold_1](./Token/scor_threshold_1_md.md)] Setup Wizard**, on your product media or network share, double\-click **SetupOrchestrator.exe**.
+    To start the **[!INCLUDE[scor_threshold_1](Token/scor_threshold_1_md.md)] Setup Wizard**, on your product media or network share, double\-click **SetupOrchestrator.exe**.
 
     > [!NOTE]
-    > Before you begin the install of the Runbook Designer, close any open programs and ensure that there are no pending restarts on the computer. For example, if you have installed a server role by using [!INCLUDE[scsm_threshold_1](./Token/scsm_threshold_1_md.md)] or have applied a security update, you might have to restart the computer, and then log on to the computer with the same user account to finish the installation of the server role or the security update.
+    > Before you begin the install of the Runbook Designer, close any open programs and ensure that there are no pending restarts on the computer. For example, if you have installed a server role by using [!INCLUDE[scsm_threshold_1](Token/scsm_threshold_1_md.md)] or have applied a security update, you might have to restart the computer, and then log on to the computer with the same user account to finish the installation of the server role or the security update.
 
-2.  On the main **[!INCLUDE[scor_threshold_1](./Token/scor_threshold_1_md.md)] Setup Wizard** page, click **Runbook Designer**.
+2.  On the main **[!INCLUDE[scor_threshold_1](Token/scor_threshold_1_md.md)] Setup Wizard** page, click **Runbook Designer**.
 
     > [!WARNING]
     > If Microsoft .NET Framework 3.5 Service Pack 1 is not installed on your computer, a dialog box appears asking if you want to install .NET Framework 3.5 SP1. Click **Yes** to proceed with the installation.
@@ -202,7 +202,7 @@ Use the following steps to install an [!INCLUDE[scor_threshold_1](./Token/scor_t
 
     3.  Click **Next** to continue.
 
-4.  On the **Select the installation location** page, verify the installation location for [!INCLUDE[orchshort](./Token/orchshort_md.md)], and then click **Next**.
+4.  On the **Select the installation location** page, verify the installation location for [!INCLUDE[orchshort](Token/orchshort_md.md)], and then click **Next**.
 
 5.  Review the **Installation summary** page, and then click **Install**.
 
@@ -217,7 +217,7 @@ Use the following steps to install an [!INCLUDE[scor_threshold_1](./Token/scor_t
     > [!NOTE]
     > If the Runbook Designer is connected to another management server, the **Connect to a server** icon is disabled. Click the **Disconnect** icon before you connect to a different management server.
 
-2.  In the **System Center Orchestrator 2012 Connection** dialog box, enter the name of the server that hosts your [!INCLUDE[orchshort](./Token/orchshort_md.md)] management server, and then click **OK**.
+2.  In the **System Center Orchestrator 2012 Connection** dialog box, enter the name of the server that hosts your [!INCLUDE[orchshort](Token/orchshort_md.md)] management server, and then click **OK**.
 
 ### To enable network discovery
 

@@ -12,23 +12,23 @@ Activities are organized into categories to help you find the appropriate activi
 
 |Tasks|Categories|
 |---------|--------------|
-|Run system commands.|[System](./System.md)|
-|Perform schedule\-based activities.|[Scheduling](./Scheduling.md)|
-|Monitor processes or system\-level events.|[Monitoring](./Monitoring.md)|
-|Manage file interactions such as copying and moving files.|[File Management](./File-Management.md)|
-|Send e\-mail notifications.|[Email](./Email.md)|
-|Support other notification types.|[Notification](./Notification.md)|
-|Search for or modify data within a workflow.|[Utilities](./Utilities.md)|
-|Manipulate text files.|[Text File Management](./Text-File-Management.md)|
-|Manage workflows.|[Runbook Control](./Runbook-Control.md)|
+|Run system commands.|[System](System.md)|
+|Perform schedule\-based activities.|[Scheduling](Scheduling.md)|
+|Monitor processes or system\-level events.|[Monitoring](Monitoring.md)|
+|Manage file interactions such as copying and moving files.|[File Management](File-Management.md)|
+|Send e\-mail notifications.|[Email](Email.md)|
+|Support other notification types.|[Notification](Notification.md)|
+|Search for or modify data within a workflow.|[Utilities](Utilities.md)|
+|Manipulate text files.|[Text File Management](Text-File-Management.md)|
+|Manage workflows.|[Runbook Control](Runbook-Control.md)|
 
 ## See Also
 
--   [Common Activity Properties](./Common-Activity-Properties.md)
+-   [Common Activity Properties](Common-Activity-Properties.md)
 
     Learn how to configure common tab settings.
 
--   [Alphabetical List of Standard Activities](./Alphabetical-List-of-Standard-Activities.md)
+-   [Alphabetical List of Standard Activities](Alphabetical-List-of-Standard-Activities.md)
 
     View all activities in alphabetical order.
 

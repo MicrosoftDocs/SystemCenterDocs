@@ -11,7 +11,7 @@ ms.topic: article
 ms.assetid: fe0674dd-6c18-406f-925b-4be541476223
 ---
 # How to Remove an Operations Manager Management Pack
-When you no longer need a management pack, you can delete it using the Operations console. When you delete a management pack, all the settings and thresholds associated with it are removed from [!INCLUDE[om12long](./Token/om12long_md.md)]. Also, the .mp or .xml file for that management pack is deleted from the hard disk of the management server. You can delete a management pack only if you have first deleted dependent management packs.
+When you no longer need a management pack, you can delete it using the Operations console. When you delete a management pack, all the settings and thresholds associated with it are removed from [!INCLUDE[om12long](Token/om12long_md.md)]. Also, the .mp or .xml file for that management pack is deleted from the hard disk of the management server. You can delete a management pack only if you have first deleted dependent management packs.
 
 ### To remove a management pack
 
@@ -31,12 +31,12 @@ When you no longer need a management pack, you can delete it using the Operation
 Operations Manager removes the selected management pack.
 
 ## See Also
-[Creating a Management Pack for Overrides](./Creating-a-Management-Pack-for-Overrides.md)
-[Management Packs Installed with Operations Manager](./Management-Packs-Installed-with-Operations-Manager.md)
-[What Is in an Operations Manager Management Pack?](./What-Is-in-an-Operations-Manager-Management-Pack-.md)
-[Management Pack Life Cycle](./Management-Pack-Life-Cycle.md)
-[How to Import an Operations Manager Management Pack](./How-to-Import-an-Operations-Manager-Management-Pack.md)
-[How to Export an Operations Manager Management Pack](./How-to-Export-an-Operations-Manager-Management-Pack.md)
-[How to Add Knowledge to a Management Pack](./How-to-Add-Knowledge-to-a-Management-Pack.md)
+[Creating a Management Pack for Overrides](Creating-a-Management-Pack-for-Overrides.md)
+[Management Packs Installed with Operations Manager](Management-Packs-Installed-with-Operations-Manager.md)
+[What Is in an Operations Manager Management Pack?](What-Is-in-an-Operations-Manager-Management-Pack-.md)
+[Management Pack Life Cycle](Management-Pack-Life-Cycle.md)
+[How to Import an Operations Manager Management Pack](How-to-Import-an-Operations-Manager-Management-Pack.md)
+[How to Export an Operations Manager Management Pack](How-to-Export-an-Operations-Manager-Management-Pack.md)
+[How to Add Knowledge to a Management Pack](How-to-Add-Knowledge-to-a-Management-Pack.md)
 
 

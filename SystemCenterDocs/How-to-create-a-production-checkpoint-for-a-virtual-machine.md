@@ -27,5 +27,5 @@ You can set the checkpoint with the following PowerShell command:
   Set-SCVirtualMachine –CheckpointType (Disabled, Production, ProductionOnly, Standard)
   
   The following screenshot fom the VMM Console illustrates the fields to set for creating a Production Checkpoint
-  ![VMM Production Checkpoint Screen/Image/VMM-Production-Checkpoint-Screen.png)
+  ![VMM Production Checkpoint ScreenImage/VMM-Production-Checkpoint-Screen.png)
 

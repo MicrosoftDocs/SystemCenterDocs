@@ -17,7 +17,7 @@ Using the Fabric Health Dashboard, you can see the overall cloud health and the 
 
 #### To scope to a particular cloud
 
-1.  In the [!INCLUDE[omblue_2](./Token/omblue_2_md.md)] console, click **Monitoring**, expand **Cloud Health Dashboard**, click **Cloud Health**, and you see the private clouds you are monitoring in the **Cloud State** pane.
+1.  In the [!INCLUDE[omblue_2](Token/omblue_2_md.md)] console, click **Monitoring**, expand **Cloud Health Dashboard**, click **Cloud Health**, and you see the private clouds you are monitoring in the **Cloud State** pane.
 
 2.  Select the cloud you want to investigate, then, in the **Tasks** pane, click **Fabric Health Dashboard**.
 

@@ -12,14 +12,14 @@ ms.assetid: 2913fd50-e113-402e-8d67-504dc74cc7de
 robots: noindex,nofollow
 ---
 # How to Create a Knowledge Article
-You can use the following procedure to create a knowledge article in [!INCLUDE[smlong12](./Token/smlong12_md.md)]. This procedure describes how to create a new example knowledge article to help users obtain the latest service pack for Windows Vista. However, you can complete these steps to create any type of knowledge article.
+You can use the following procedure to create a knowledge article in [!INCLUDE[smlong12](Token/smlong12_md.md)]. This procedure describes how to create a new example knowledge article to help users obtain the latest service pack for Windows Vista. However, you can complete these steps to create any type of knowledge article.
 
 > [!NOTE]
-> To view external content in knowledge articles, the computer on which the [!INCLUDE[smcons](./Token/smcons_md.md)] is installed must be connected to the Internet, either directly or through a proxy server.
+> To view external content in knowledge articles, the computer on which the [!INCLUDE[smcons](Token/smcons_md.md)] is installed must be connected to the Internet, either directly or through a proxy server.
 
 ### To create a knowledge article
 
-1.  In the [!INCLUDE[smcons](./Token/smcons_md.md)], click **Library**.
+1.  In the [!INCLUDE[smcons](Token/smcons_md.md)], click **Library**.
 
 2.  In the **Library** pane, expand **Knowledge**, and then click **All Knowledge Articles**.
 

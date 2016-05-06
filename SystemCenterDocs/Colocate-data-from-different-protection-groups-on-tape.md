@@ -28,7 +28,7 @@ System Center Data Protection Manager \(DPM\) allows you to colocate data from 
     -   Write\-period ratio has been crossed. \(By default, this is first backup time \+ 15 per cent of retention range.\)
 
 ## Set up tape colocation and optimization
-To optimize tape usage, [!INCLUDE[dpm2012short](./Token/dpm2012short_md.md)] uses protection group sets. A protection group set is a set of protection groups for which the backups will be colocated on tape. You use the tape optimization feature in [!INCLUDE[dpm2012long](./Token/dpm2012long_md.md)] to allow multiple protection groups to share a tape to store their backups. Note the following:
+To optimize tape usage, [!INCLUDE[dpm2012short](Token/dpm2012short_md.md)] uses protection group sets. A protection group set is a set of protection groups for which the backups will be colocated on tape. You use the tape optimization feature in [!INCLUDE[dpm2012long](Token/dpm2012long_md.md)] to allow multiple protection groups to share a tape to store their backups. Note the following:
 
 -   Data from a protection group that belongs to a set will not necessarily be colocated to a tape. Colocation will be decided by the rite period and expiration tolerance values.
 

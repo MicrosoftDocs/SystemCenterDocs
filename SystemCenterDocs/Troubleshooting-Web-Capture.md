@@ -11,7 +11,7 @@ ms.topic: article
 ms.assetid: 4355df5c-db7e-4805-94dd-3e5b5281389b
 ---
 # Troubleshooting Web Capture
-When you select an option to capture a browser session in [!INCLUDE[om12short](./Token/om12short_md.md)], the **Web Recorder** should start, and requests should be recorded as you select them in the browser. If **Web Recorder** does not work correctly, check the following sections to determine a potential cause and to resolve it.
+When you select an option to capture a browser session in [!INCLUDE[om12short](Token/om12short_md.md)], the **Web Recorder** should start, and requests should be recorded as you select them in the browser. If **Web Recorder** does not work correctly, check the following sections to determine a potential cause and to resolve it.
 
 > [!NOTE]
 > Web Recorder functionality does not work with Internet Explorer 10 and newer versions on Windows 8 and Windows 8.1.
@@ -48,6 +48,6 @@ If you are running the Operations console on a 64\-bit operating environment, th
 2.  Click the **Start** button, and on the **Start** menu, point to **All Programs**, and then click **Internet Explorer \(64\-bit\)**.
 
 ## See Also
-[How to Capture Web Application Recording](./How-to-Capture-Web-Application-Recording.md)
+[How to Capture Web Application Recording](How-to-Capture-Web-Application-Recording.md)
 
 

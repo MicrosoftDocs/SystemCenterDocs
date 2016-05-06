@@ -48,11 +48,11 @@ The following examples describe how to use the Map Published Data activity.
 
 -   Single Published Data or variable item
 
-    The [Read Line](./Read-Line.md) activity creates a Published Data item called File and path name. If the path in this item is expressed as a drive letter, you can create a mapping to convert it to a UNC path.
+    The [Read Line](Read-Line.md) activity creates a Published Data item called File and path name. If the path in this item is expressed as a drive letter, you can create a mapping to convert it to a UNC path.
 
     ##### To map a drive letter to a UNC path
 
-    1.  In the **Source data** field, insert the File and path name Published Data item from the [Read Line](./Read-Line.md) activity.
+    1.  In the **Source data** field, insert the File and path name Published Data item from the [Read Line](Read-Line.md) activity.
 
     2.  In the **Pattern** field, type the drive letter and a colon, such as **Y:**
 

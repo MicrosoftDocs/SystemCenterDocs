@@ -8,9 +8,9 @@ ms.topic: article
 ms.assetid: b3395d9f-b75c-4b97-9a33-299dd2a84677
 ---
 # How to configure preferred and possible owners for a virtual machine on a host cluster
-If you deploy virtual machines on a host cluster, you can use [!INCLUDE[vmm12sp1_long](./Token/vmm12sp1_long_md.md)] to configure preferred owners and possible owners for the virtual machines. By default, there are no preferred owners \(there is no preference\), and the possible owners include all nodes \(servers\) in the host cluster.
+If you deploy virtual machines on a host cluster, you can use [!INCLUDE[vmm12sp1_long](Token/vmm12sp1_long_md.md)] to configure preferred owners and possible owners for the virtual machines. By default, there are no preferred owners \(there is no preference\), and the possible owners include all nodes \(servers\) in the host cluster.
 
-For information about other settings related to availability of virtual machines on a host cluster, see [Configuring availability options for virtual machines in VMM](./Configuring-availability-options-for-virtual-machines-in-VMM.md).
+For information about other settings related to availability of virtual machines on a host cluster, see [Configuring availability options for virtual machines in VMM](Configuring-availability-options-for-virtual-machines-in-VMM.md).
 
 **Account requirements** To complete this procedure you must be a member of the Administrator or Delegated Administrator user role, or a self\-service user who has the **Deploy** action in the scope of their user role.
 
@@ -29,10 +29,10 @@ For information about other settings related to availability of virtual machines
 4.  To verify the settings, reopen the properties sheet.
 
 ## See Also
-[Overview: creating and deploying virtual machines in VMM](./Overview--creating-and-deploying-virtual-machines-in-VMM.md)
-[Configuring availability options for virtual machines in VMM](./Configuring-availability-options-for-virtual-machines-in-VMM.md)
-[Configuring virtual machine options and settings](./Configuring-virtual-machine-options-and-settings.md)
-[Managing virtual machines with VMM](./Managing-virtual-machines-with-VMM.md)
-[Managing tenant resources with VMM](./Managing-tenant-resources-with-VMM.md)
+[Overview: creating and deploying virtual machines in VMM](Overview--creating-and-deploying-virtual-machines-in-VMM.md)
+[Configuring availability options for virtual machines in VMM](Configuring-availability-options-for-virtual-machines-in-VMM.md)
+[Configuring virtual machine options and settings](Configuring-virtual-machine-options-and-settings.md)
+[Managing virtual machines with VMM](Managing-virtual-machines-with-VMM.md)
+[Managing tenant resources with VMM](Managing-tenant-resources-with-VMM.md)
 
 

@@ -11,10 +11,10 @@ ms.topic: article
 ms.assetid: 4feebc8a-0622-4261-94d1-c63b3476c856
 ---
 # Usage Metering Data Model in Service Provider Foundation
-This topic describes how [!INCLUDE[spflong](./Token/spflong_md.md)] provides usage metering data to portals and clients that connect to its usage metering endpoint.
+This topic describes how [!INCLUDE[spflong](Token/spflong_md.md)] provides usage metering data to portals and clients that connect to its usage metering endpoint.
 
 > [!NOTE]
-> For updated information about usage metering and [!INCLUDE[katal_1](./Token/katal_1_md.md)], see the TechNet wiki article [How to Integrate Your Billing System with the Usage Metering System](http://blogs.technet.com/b/systemcenter/archive/2013/08/01/how-to-integrate-your-billing-system-with-the-usage-metering-system.aspx).
+> For updated information about usage metering and [!INCLUDE[katal_1](Token/katal_1_md.md)], see the TechNet wiki article [How to Integrate Your Billing System with the Usage Metering System](http://blogs.technet.com/b/systemcenter/archive/2013/08/01/how-to-integrate-your-billing-system-with-the-usage-metering-system.aspx).
 
 ## Overview of usage metering
 Usage metering consists of the following technologies and resources that participate as components of the usage metering system:
@@ -35,26 +35,26 @@ Usage metering consists of the following technologies and resources that partici
 
     The code used to transmit and parse usage data. This is a RESTful API and is the only way to extract the data from the usage database. Using JSON queries, service providers can easily adapt usage data into their billing system.
 
-Note that [!INCLUDE[spfshort](./Token/spfshort_md.md)] is not listed because it is not required to implement usage metering. Rather, the role of [!INCLUDE[spfshort](./Token/spfshort_md.md)] is to collect metrics from all the data warehouses and aggregate them for billing and analysis purposes.
+Note that [!INCLUDE[spfshort](Token/spfshort_md.md)] is not listed because it is not required to implement usage metering. Rather, the role of [!INCLUDE[spfshort](Token/spfshort_md.md)] is to collect metrics from all the data warehouses and aggregate them for billing and analysis purposes.
 
-[!INCLUDE[spfshort](./Token/spfshort_md.md)] provides usage metering data to any client, such as [!INCLUDE[katal_1](./Token/katal_1_md.md)], that wants to collect it. IaaS metrics in [!INCLUDE[katal_1](./Token/katal_1_md.md)] are provided by VM Clouds resource provider. This data comprises all the usage metering metrics for all the virtual machines that a tenant uses, provided that those virtual machines are being monitored by [!INCLUDE[om12long](./Token/om12long_md.md)] and that the data is being stored in Operations Manager Data Warehouses monitored by an Operations Manager management server.
+[!INCLUDE[spfshort](Token/spfshort_md.md)] provides usage metering data to any client, such as [!INCLUDE[katal_1](Token/katal_1_md.md)], that wants to collect it. IaaS metrics in [!INCLUDE[katal_1](Token/katal_1_md.md)] are provided by VM Clouds resource provider. This data comprises all the usage metering metrics for all the virtual machines that a tenant uses, provided that those virtual machines are being monitored by [!INCLUDE[om12long](Token/om12long_md.md)] and that the data is being stored in Operations Manager Data Warehouses monitored by an Operations Manager management server.
 
 ## Submitting queries
 To obtain usage metering data with a URL that contains a JSON query, as shown the following example:
 
 `https://SPFserver.contoso.com:8090/usage/usage?lastID=0&batchsize=1000`
 
-In the first call, the `lastID` should be zero. There is no limit on the size of a batch. Note that if a batch size is not equal to all the data available, [!INCLUDE[spfshort](./Token/spfshort_md.md)] will fulfill other usage metering requests from other clients and then return to that client to provide its next batch.
+In the first call, the `lastID` should be zero. There is no limit on the size of a batch. Note that if a batch size is not equal to all the data available, [!INCLUDE[spfshort](Token/spfshort_md.md)] will fulfill other usage metering requests from other clients and then return to that client to provide its next batch.
 
 ## Data pulling model
-[!INCLUDE[spfshort](./Token/spfshort_md.md)] implements a data pulling model for obtaining metrics. Clients request data in batches. To track the batches and requests, usage metering uses a bookmark that can be either zero \(which means there has been no data collected since the start of tenant's subscription\) or a value that identifies the last record of the batch.  [!INCLUDE[spfshort](./Token/spfshort_md.md)] provides this bookmark to be used for subsequent requests by the client.
+[!INCLUDE[spfshort](Token/spfshort_md.md)] implements a data pulling model for obtaining metrics. Clients request data in batches. To track the batches and requests, usage metering uses a bookmark that can be either zero \(which means there has been no data collected since the start of tenant's subscription\) or a value that identifies the last record of the batch.  [!INCLUDE[spfshort](Token/spfshort_md.md)] provides this bookmark to be used for subsequent requests by the client.
 
-For each collection cycle, the client collector requests another batch of metered data using the current bookmark as the starting point for the next batch. If the previous batch request returned an empty result set \(because [!INCLUDE[spfshort](./Token/spfshort_md.md)] found no usage records to supply\) the collector uses a bookmark of 0.
+For each collection cycle, the client collector requests another batch of metered data using the current bookmark as the starting point for the next batch. If the previous batch request returned an empty result set \(because [!INCLUDE[spfshort](Token/spfshort_md.md)] found no usage records to supply\) the collector uses a bookmark of 0.
 
 The result set of usage metering records is provided to the collector in a well\-known data contract.
 
 ## Metering Metrics
-The virtual machine usage metrics in the following tables are aggregated using at hour timespan intervals. [!INCLUDE[spfshort](./Token/spfshort_md.md)] gathers these metrics for every virtual machine for every tenant subscription registered and aggregates the values.
+The virtual machine usage metrics in the following tables are aggregated using at hour timespan intervals. [!INCLUDE[spfshort](Token/spfshort_md.md)] gathers these metrics for every virtual machine for every tenant subscription registered and aggregates the values.
 
 A record of usage data consists of the following parts:
 
@@ -472,8 +472,8 @@ $json => Array (100)
 ```
 
 ## See Also
-[Configure Usage Metering in Service Provider Foundation](./Configure-Usage-Metering-in-Service-Provider-Foundation.md)
-[Administering Service Provider Foundation](./Administering-Service-Provider-Foundation.md)
-[Deploying Service Provider Foundation](./Deploying-Service-Provider-Foundation.md)
+[Configure Usage Metering in Service Provider Foundation](Configure-Usage-Metering-in-Service-Provider-Foundation.md)
+[Administering Service Provider Foundation](Administering-Service-Provider-Foundation.md)
+[Deploying Service Provider Foundation](Deploying-Service-Provider-Foundation.md)
 
 

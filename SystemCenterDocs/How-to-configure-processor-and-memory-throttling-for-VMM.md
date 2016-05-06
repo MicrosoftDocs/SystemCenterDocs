@@ -8,9 +8,9 @@ ms.topic: article
 ms.assetid: 9dce4d4a-949f-4e5f-a56e-715dfc2fd535
 ---
 # How to configure processor and memory throttling for VMM
-[!INCLUDE[vmm12sp1_long](./Token/vmm12sp1_long_md.md)] provides processor throttling \(CPU\) and memory throttling capabilities. You can set the throttling values when you configure a virtual machine by using the Create Virtual Machine Wizard, on the property sheet of an existing virtual machine, or on a virtual machine template. This topic describes how to configure processor and memory throttling, and memory weight.
+[!INCLUDE[vmm12sp1_long](Token/vmm12sp1_long_md.md)] provides processor throttling \(CPU\) and memory throttling capabilities. You can set the throttling values when you configure a virtual machine by using the Create Virtual Machine Wizard, on the property sheet of an existing virtual machine, or on a virtual machine template. This topic describes how to configure processor and memory throttling, and memory weight.
 
-For more information about processor and memory throttling, see [Configuring resource throttling for VMM](./Configuring-resource-throttling-for-VMM.md).
+For more information about processor and memory throttling, see [Configuring resource throttling for VMM](Configuring-resource-throttling-for-VMM.md).
 
 ## <a name="BKMK_CPUThrottle"></a>To configure processor throttling
 
@@ -42,7 +42,7 @@ For more information about processor and memory throttling, see [Configuring res
 
     2.  In **Minimum memory**, specify an amount of memory that allows an idle virtual machine to scale back the memory consumption below the startup memory requirement. This makes more memory available for use by other virtual machines.
 
-    3.  In **Maximum memory**, specify the maximum amount of memory that is allocated to a virtual machine. The default setting for [!INCLUDE[win8_server_2](./Token/win8_server_2_md.md)] is 1 TB.
+    3.  In **Maximum memory**, specify the maximum amount of memory that is allocated to a virtual machine. The default setting for [!INCLUDE[win8_server_2](Token/win8_server_2_md.md)] is 1 TB.
 
     4.  In **Memory buffer percentage** specify the amount of available memory that will be assigned to a virtual machine if the need arises. The percentage should be based on the amount of memory that is actually needed by the applications and services that run on the virtual machine. The memory buffer percentage should be calculated as follows: Amount of memory buffer \= memory that is needed by the virtual machine\/ \(memory buffer value\/100\). For example, if the memory that is committed to the virtual machine is 1000 MB and the buffer is 20%, then an additional buffer of 20% \(200 MB\) will be allocated for a total of 1200 MB of physical memory allocated to the virtual machine.
 
@@ -53,9 +53,9 @@ For more information about processor and memory throttling, see [Configuring res
 2.  Configure the priority that is used to allocate memory to a virtual machine when memory resources are in high usage. If you specify a low priority, the virtual machine might not be available to start when the memory resources are not sufficient.
 
 ## See Also
-[Configuring resource throttling for VMM](./Configuring-resource-throttling-for-VMM.md)
-[Configuring virtual machine options and settings](./Configuring-virtual-machine-options-and-settings.md)
-[Managing virtual machines with VMM](./Managing-virtual-machines-with-VMM.md)
-[Managing tenant resources with VMM](./Managing-tenant-resources-with-VMM.md)
+[Configuring resource throttling for VMM](Configuring-resource-throttling-for-VMM.md)
+[Configuring virtual machine options and settings](Configuring-virtual-machine-options-and-settings.md)
+[Managing virtual machines with VMM](Managing-virtual-machines-with-VMM.md)
+[Managing tenant resources with VMM](Managing-tenant-resources-with-VMM.md)
 
 

@@ -8,11 +8,11 @@ ms.topic: article
 ms.assetid: f6a70b51-13ec-4c37-a1b1-af6aba6c3674
 ---
 # How to Change the Credentials for the Action Account
-During the installation of [!INCLUDE[om12long](./Token/om12long_md.md)], you are prompted for credentials for the management server action account. If you want to change the password for the credentials that you provided or use a different set of credentials, use the following procedure.
+During the installation of [!INCLUDE[om12long](Token/om12long_md.md)], you are prompted for credentials for the management server action account. If you want to change the password for the credentials that you provided or use a different set of credentials, use the following procedure.
 
 ### To change the credentials for the action account
 
-1.  Log on to the computer with an account that is a member of the [!INCLUDE[om12short](./Token/om12short_md.md)] Administrators role for the [!INCLUDE[om12short](./Token/om12short_md.md)] management group.
+1.  Log on to the computer with an account that is a member of the [!INCLUDE[om12short](Token/om12short_md.md)] Administrators role for the [!INCLUDE[om12short](Token/om12short_md.md)] management group.
 
 2.  In the Operations console, click the **Administration** button.
 

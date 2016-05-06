@@ -33,9 +33,9 @@ Getting started with monitoring Java applications requires these four general st
     > [!IMPORTANT]
     > Make sure to download the corresponding management pack guide \(.docx file\) for the application server you are using. It contains the details of how to install the management pack and describes what is monitored.
 
-    The System Center Management Pack for Tomcat, for example, allows an IT administrator to monitor the health of JEE application server instances in [!INCLUDE[omblue_2](./Token/omblue_2_md.md)]. In addition, it provides the option to deploy BeanSpy, an open source technology from Microsoft, that provides deeper monitoring, which includes memory usage.
+    The System Center Management Pack for Tomcat, for example, allows an IT administrator to monitor the health of JEE application server instances in [!INCLUDE[omblue_2](Token/omblue_2_md.md)]. In addition, it provides the option to deploy BeanSpy, an open source technology from Microsoft, that provides deeper monitoring, which includes memory usage.
 
-2.  After the management packs for the JEE application servers are imported, the instances of Tomcat application servers will be automatically discovered. The discovery interval is set to 4 hours by default, so discovery can take up to that length of time. On Tomcat, an application server must be running for [!INCLUDE[omblue_2](./Token/omblue_2_md.md)] to discover it for the first time. After an instance of an application is discovered, the configuration is removed only when the application server is uninstalled.
+2.  After the management packs for the JEE application servers are imported, the instances of Tomcat application servers will be automatically discovered. The discovery interval is set to 4 hours by default, so discovery can take up to that length of time. On Tomcat, an application server must be running for [!INCLUDE[omblue_2](Token/omblue_2_md.md)] to discover it for the first time. After an instance of an application is discovered, the configuration is removed only when the application server is uninstalled.
 
     To monitor instances of the Tomcat Application Server, in the Operations console, click **Monitoring**, expand **Application Monitoring**, **expand Java Monitoring**, expand **JEE Application Servers**, expand **Tomcat Application Server**, and then select the monitoring folder you want. For details, see the Management Pack Guide for Tomcat or the management pack guide for JEE monitoring that you chose to download.
 
@@ -96,13 +96,13 @@ Getting started with monitoring Java applications requires these four general st
 
 ### To view events using Application Diagnostics
 
-1.  Like .NET Application Performance Monitoring, you can use Application Diagnostics to view event information for Java Application Performance Monitoring. For information about opening and using Application Diagnostics, see [Working with the Application Diagnostics Console](./Working-with-the-Application-Diagnostics-Console.md) and [Working with Events by Using Application Diagnostics](./Working-with-Events-by-Using-Application-Diagnostics.md).
+1.  Like .NET Application Performance Monitoring, you can use Application Diagnostics to view event information for Java Application Performance Monitoring. For information about opening and using Application Diagnostics, see [Working with the Application Diagnostics Console](Working-with-the-Application-Diagnostics-Console.md) and [Working with Events by Using Application Diagnostics](Working-with-Events-by-Using-Application-Diagnostics.md).
 
     Due to the way Java statistics are reported, some of the standard Application Performance Monitoring reports do not apply to Java Application Performance Monitoring. For instance, you might see **NA** in some of the report columns where Java Application Performance Monitoring does not apply. Additionally, due to the way that Java application containers map to servers, many server\-level reports do not have data.
 
 ## See Also
-[How to Monitor Java Applications](./How-to-Monitor-Java-Applications.md)
-[Strategies for Monitoring a New Java Application](./Strategies-for-Monitoring-a-New-Java-Application.md)
-[Monitoring .NET Applications](./Monitoring-.NET-Applications.md)
+[How to Monitor Java Applications](How-to-Monitor-Java-Applications.md)
+[Strategies for Monitoring a New Java Application](Strategies-for-Monitoring-a-New-Java-Application.md)
+[Monitoring .NET Applications](Monitoring-.NET-Applications.md)
 
 

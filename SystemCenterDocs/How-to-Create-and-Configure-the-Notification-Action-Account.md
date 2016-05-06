@@ -11,7 +11,7 @@ ms.topic: article
 ms.assetid: a4801a5a-5830-48ca-85ee-3a6095600902
 ---
 # How to Create and Configure the Notification Action Account
-In [!INCLUDE[om12long](./Token/om12long_md.md)], when an alert is generated, Operations Manager can notify designated individuals by email, instant message \(IM\), or text message \(SMS\). The Notification Account Run As profile is used to send notifications. For notifications to work correctly, you must create a Run As account that provides the credentials for sending notifications and associate the Run As account to the Notification Account profile.
+In [!INCLUDE[om12long](Token/om12long_md.md)], when an alert is generated, Operations Manager can notify designated individuals by email, instant message \(IM\), or text message \(SMS\). The Notification Account Run As profile is used to send notifications. For notifications to work correctly, you must create a Run As account that provides the credentials for sending notifications and associate the Run As account to the Notification Account profile.
 
 ### To create and configure the notification action account
 
@@ -27,7 +27,7 @@ In [!INCLUDE[om12long](./Token/om12long_md.md)], when an alert is generated, Ope
 
 6.  On the **Credentials** page, type the information for the user name, password, and domain of the user account that to be used for notifications. Click **Next**.
 
-7.  Select the **More secure** distribution security option. For more information on this option, see [Distribution and Targeting for Run As Accounts and Profiles](./Distribution-and-Targeting-for-Run-As-Accounts-and-Profiles.md).
+7.  Select the **More secure** distribution security option. For more information on this option, see [Distribution and Targeting for Run As Accounts and Profiles](Distribution-and-Targeting-for-Run-As-Accounts-and-Profiles.md).
 
 8.  Click **Create**.
 
@@ -58,16 +58,16 @@ In [!INCLUDE[om12long](./Token/om12long_md.md)], when an alert is generated, Ope
 21. Click **Save**. When the association is completed, click **Close** to close the wizard.
 
 ## See Also
-[How to Enable an Email Notification Channel](./How-to-Enable-an-Email-Notification-Channel.md)
-[How to Enable an Instant Message Notification Channel](./How-to-Enable-an-Instant-Message-Notification-Channel.md)
-[How to Enable a Text Message &#40;SMS&#41; Notification Channel](./How-to-Enable-a-Text-Message--SMS--Notification-Channel.md)
-[How to Enable a Command Notification Channel](./How-to-Enable-a-Command-Notification-Channel.md)
-[How to Create Notification Subscribers](./How-to-Create-Notification-Subscribers.md)
-[How to Create Notification Subscriptions](./How-to-Create-Notification-Subscriptions.md)
-[How to Customize Message Content for Notifications](./How-to-Customize-Message-Content-for-Notifications.md)
-[How to Subscribe to Notifications from an Alert](./How-to-Subscribe-to-Notifications-from-an-Alert.md)
-[How to Create Subscriptions Using Classes and Groups](./How-to-Create-Subscriptions-Using-Classes-and-Groups.md)
-[How to Specify Which Alerts Generate Notifications &#40;Conditions&#41;](./How-to-Specify-Which-Alerts-Generate-Notifications--Conditions-.md)
-[Sending Notifications for Specific Computers and Specific Alerts to Specific Teams](./Sending-Notifications-for-Specific-Computers-and-Specific-Alerts-to-Specific-Teams.md)
+[How to Enable an Email Notification Channel](How-to-Enable-an-Email-Notification-Channel.md)
+[How to Enable an Instant Message Notification Channel](How-to-Enable-an-Instant-Message-Notification-Channel.md)
+[How to Enable a Text Message &#40;SMS&#41; Notification Channel](How-to-Enable-a-Text-Message--SMS--Notification-Channel.md)
+[How to Enable a Command Notification Channel](How-to-Enable-a-Command-Notification-Channel.md)
+[How to Create Notification Subscribers](How-to-Create-Notification-Subscribers.md)
+[How to Create Notification Subscriptions](How-to-Create-Notification-Subscriptions.md)
+[How to Customize Message Content for Notifications](How-to-Customize-Message-Content-for-Notifications.md)
+[How to Subscribe to Notifications from an Alert](How-to-Subscribe-to-Notifications-from-an-Alert.md)
+[How to Create Subscriptions Using Classes and Groups](How-to-Create-Subscriptions-Using-Classes-and-Groups.md)
+[How to Specify Which Alerts Generate Notifications &#40;Conditions&#41;](How-to-Specify-Which-Alerts-Generate-Notifications--Conditions-.md)
+[Sending Notifications for Specific Computers and Specific Alerts to Specific Teams](Sending-Notifications-for-Specific-Computers-and-Specific-Alerts-to-Specific-Teams.md)
 
 

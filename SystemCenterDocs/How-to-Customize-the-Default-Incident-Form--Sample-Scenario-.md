@@ -8,16 +8,16 @@ ms.topic: article
 ms.assetid: 22a47ade-7a45-4793-967a-8321296e7af2
 ---
 # How to Customize the Default Incident Form (Sample Scenario)
-This sample scenario describes how to apply simple customizations to a default form in the [!INCLUDE[smatfull2012](./Token/smatfull2012_md.md)]. In this scenario, you customize the Incident form, which is the default form for interacting with incidents. You customize the form in the [!INCLUDE[scauthoringshort](./Token/scauthoringshort_md.md)] and then save the customized form in a new management pack. Then, in the [!INCLUDE[smcons](./Token/smcons_md.md)], you import this new management pack. Afterwards, whenever you create or view an incident, [!INCLUDE[smshort12](./Token/smshort12_md.md)] displays the customized form. The Incident form, System.WorkItem.Incident.ConsoleForm, is defined in the Service Manager Incident Management Library management pack.
+This sample scenario describes how to apply simple customizations to a default form in the [!INCLUDE[smatfull2012](Token/smatfull2012_md.md)]. In this scenario, you customize the Incident form, which is the default form for interacting with incidents. You customize the form in the [!INCLUDE[scauthoringshort](Token/scauthoringshort_md.md)] and then save the customized form in a new management pack. Then, in the [!INCLUDE[smcons](Token/smcons_md.md)], you import this new management pack. Afterwards, whenever you create or view an incident, [!INCLUDE[smshort12](Token/smshort12_md.md)] displays the customized form. The Incident form, System.WorkItem.Incident.ConsoleForm, is defined in the Service Manager Incident Management Library management pack.
 
 The sample scenario for customizing the default Incident form consists of three steps.
 
 ### Step 1: View the Default Incident Form
-Before you customize the form, view the default form in the [!INCLUDE[smcons](./Token/smcons_md.md)] and identify elements on the form that you want to customize. For example, you can plan to rearrange various text boxes on the form.
+Before you customize the form, view the default form in the [!INCLUDE[smcons](Token/smcons_md.md)] and identify elements on the form that you want to customize. For example, you can plan to rearrange various text boxes on the form.
 
 ##### To view the default incident form
 
-1.  In the [!INCLUDE[smcons](./Token/smcons_md.md)], click **Work Items**.
+1.  In the [!INCLUDE[smcons](Token/smcons_md.md)], click **Work Items**.
 
 2.  In the **Work Items** pane, click **Incident Management**.
 
@@ -26,13 +26,13 @@ Before you customize the form, view the default form in the [!INCLUDE[smcons](./
 4.  Review the **Incident** form. This form is the form that you use to create and view incidents. You can identify elements in the form that you might want to customize.
 
 ### Step 2: Customize the Default Incident Form
-Use the following procedure to customize the default Incident form in the [!INCLUDE[scauthoringshort](./Token/scauthoringshort_md.md)].
+Use the following procedure to customize the default Incident form in the [!INCLUDE[scauthoringshort](Token/scauthoringshort_md.md)].
 
 ##### To customize the Incident form
 
 1.  Click **Start**, point to **Programs**, point to **Microsoft System Center**, point to **Service Manager 2012 Authoring**, and then click **Service Manager Authoring Tool**.
 
-2.  In the [!INCLUDE[scauthoringshort](./Token/scauthoringshort_md.md)], click **File**, and then click **New**.
+2.  In the [!INCLUDE[scauthoringshort](Token/scauthoringshort_md.md)], click **File**, and then click **New**.
 
 3.  In the **New Management Pack** dialog box, in the **File name** box, type **MyIncidentFormCustomizations**, and then click **Save**.
 
@@ -50,14 +50,14 @@ Use the following procedure to customize the default Incident form in the [!INCL
 
 8.  In the **Management Pack Explorer**, right\-click **MyIncidentFormCustomizations**, and then click **Save**.
 
-9. Exit the [!INCLUDE[scauthoringshort](./Token/scauthoringshort_md.md)].
+9. Exit the [!INCLUDE[scauthoringshort](Token/scauthoringshort_md.md)].
 
 ### Step 3: Use the Customized Default Incident Form
-Use the following procedure to view and use the customized Incident form in the [!INCLUDE[smcons](./Token/smcons_md.md)].
+Use the following procedure to view and use the customized Incident form in the [!INCLUDE[smcons](Token/smcons_md.md)].
 
 ##### To use the customized System.WorkItem.Incident.ConsoleForm form
 
-1.  Start the [!INCLUDE[smcons](./Token/smcons_md.md)], and then click **Administration**.
+1.  Start the [!INCLUDE[smcons](Token/smcons_md.md)], and then click **Administration**.
 
 2.  In the **Administration** pane, click **Management Packs**.
 

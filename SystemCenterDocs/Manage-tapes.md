@@ -18,14 +18,14 @@ For information on how DPM uses tapes, see [Backup and synchronization overview]
 For information about planning and deploying storage, see [Plan for data storage](assetId:///651bce70-4334-44e8-88a7-84f185f8c8d8).
 
 ## In This Section
-[Manage tapes in the DPM library](./Manage-tapes-in-the-DPM-library.md)
+[Manage tapes in the DPM library](Manage-tapes-in-the-DPM-library.md)
 
-[Copy a tape to tape or disk](./Copy-a-tape-to-tape-or-disk.md)
+[Copy a tape to tape or disk](Copy-a-tape-to-tape-or-disk.md)
 
-[Set tape catalog retention for a protection group](./Set-tape-catalog-retention-for-a-protection-group.md)
+[Set tape catalog retention for a protection group](Set-tape-catalog-retention-for-a-protection-group.md)
 
-[Rotate tapes offsite](./Rotate-tapes-offsite.md)
+[Rotate tapes offsite](Rotate-tapes-offsite.md)
 
-[Recover data from tapes](./Recover-data-from-tapes.md)
+[Recover data from tapes](Recover-data-from-tapes.md)
 
 

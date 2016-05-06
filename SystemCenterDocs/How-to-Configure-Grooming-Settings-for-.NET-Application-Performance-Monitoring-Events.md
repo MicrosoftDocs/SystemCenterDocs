@@ -22,7 +22,7 @@ When you have been monitoring applications using .NET Application Performance Mo
 ## Using Application Diagnostics to configure grooming settings for APM events in the Operations database
 In Application Diagnostics you can select how many APM events you want in the Operations database and how long you want to keep them.
 
-![](/Image/AppMonitoring_Grooming_AppDiagnosticsOpsDB.gif)
+![](Image/AppMonitoring_Grooming_AppDiagnosticsOpsDB.gif)
 
 #### To use Application Diagnostics to configure grooming settings for APM events in the Operations database
 
@@ -31,9 +31,9 @@ In Application Diagnostics you can select how many APM events you want in the Op
     To open Application Diagnostics, paste the Application Diagnostics URL into your browser. Application Diagnostics opens in the web browser window.
 
     > [!NOTE]
-    > If you are running [!INCLUDE[om12short](./Token/om12short_md.md)] on a server rather than a client computer, you can access Application Diagnostics from the **Start** menu in **All Programs**.
+    > If you are running [!INCLUDE[om12short](Token/om12short_md.md)] on a server rather than a client computer, you can access Application Diagnostics from the **Start** menu in **All Programs**.
 
-    Access to Application Diagnostics is controlled through the Application Monitoring Operator and Administrator roles. You must be a member of one of these roles to have rights to the console. For more information, see [User Roles for Application Performance Monitoring](./User-Roles-for-Application-Performance-Monitoring.md)
+    Access to Application Diagnostics is controlled through the Application Monitoring Operator and Administrator roles. You must be a member of one of these roles to have rights to the console. For more information, see [User Roles for Application Performance Monitoring](User-Roles-for-Application-Performance-Monitoring.md)
 
 2.  In Application Diagnostics, click **Tools**, select **Options**, and then click the **Data** tab.
 
@@ -42,7 +42,7 @@ In Application Diagnostics you can select how many APM events you want in the Op
 ## Using Application Advisor to configure grooming settings for “Deleted” or “By Design” APM events in Data Warehouse
 In Application Advisor you can choose the how long you want to keep APM events that have a Deleted or By Design status in Data Warehouse.
 
-![](/Image/AppMonitoring_Grooming.gif)
+![](Image/AppMonitoring_Grooming.gif)
 
 #### To use Application Advisor to configure grooming settings for APM events in Data Warehouse
 
@@ -50,10 +50,10 @@ In Application Advisor you can choose the how long you want to keep APM events t
 
     To open Application Advisor, paste the Application Advisor URL into your browser. Application Advisor opens in the web browser window. Different application monitoring reports display in the context of the application features and services you configured when you created application groups to monitor.
 
-    Access to Application Advisor is controlled through the Application Monitoring Operator, Report Operator and Administrator roles. You must be a member of Application Monitoring Operator and Report Operator roles or the Administrator role. For more information, see [User Roles for Application Performance Monitoring](./User-Roles-for-Application-Performance-Monitoring.md)
+    Access to Application Advisor is controlled through the Application Monitoring Operator, Report Operator and Administrator roles. You must be a member of Application Monitoring Operator and Report Operator roles or the Administrator role. For more information, see [User Roles for Application Performance Monitoring](User-Roles-for-Application-Performance-Monitoring.md)
 
     > [!NOTE]
-    > Application Advisor requires SQL Server Report Services \(SSRS\). You must have [!INCLUDE[om12short](./Token/om12short_md.md)] reporting installed before using Application Advisor.
+    > Application Advisor requires SQL Server Report Services \(SSRS\). You must have [!INCLUDE[om12short](Token/om12short_md.md)] reporting installed before using Application Advisor.
 
 2.  In Application Advisor, click **Tools**, select **Options**, and then click the **Data** tab.
 
@@ -69,11 +69,11 @@ The Operations Manager APM Data Transfer Rule is targeted to the Operations Mana
 
 The Performance Counter setting is intended for hourly performance aggregations, which potentially can take a lot of space. There is no configurable setting for daily performance aggregations. The default for this is 182. Typically, daily aggregations consume a lot less disk space.
 
-![](/Image/AppMonitoring_Grooming_.gif)
+![](Image/AppMonitoring_Grooming_.gif)
 
 #### To use the Data Transfer Rule to configure grooming settings for APM events in the Data Warehouse
 
-1.  In the [!INCLUDE[om12short](./Token/om12short_md.md)] console, in the navigation pane, click the **Authoring** button, click **Management Pack Objects**.
+1.  In the [!INCLUDE[om12short](Token/om12short_md.md)] console, in the navigation pane, click the **Authoring** button, click **Management Pack Objects**.
 
 2.  Click **Rules**, click **Change Scope**, click **View All Targets**, search for **Operations Manager APM Data Transfer Service**, and then click **OK**.
 

@@ -15,18 +15,18 @@ For a description of the differences between dashboard views and reports, see th
 
 ## Using Reports in Operations Manager topics
 
--   [Operations Manager Reports Library](./Operations-Manager-Reports-Library.md)
+-   [Operations Manager Reports Library](Operations-Manager-Reports-Library.md)
 
--   [How to Create Reports in Operations Manager](./How-to-Create-Reports-in-Operations-Manager.md)
+-   [How to Create Reports in Operations Manager](How-to-Create-Reports-in-Operations-Manager.md)
 
--   [How to Save a Report](./How-to-Save-a-Report.md)
+-   [How to Save a Report](How-to-Save-a-Report.md)
 
--   [How to Run a Report](./How-to-Run-a-Report.md)
+-   [How to Run a Report](How-to-Run-a-Report.md)
 
--   [Scheduling Reports](./Scheduling-Reports.md)
+-   [Scheduling Reports](Scheduling-Reports.md)
 
--   [How to Export a Report](./How-to-Export-a-Report.md)
+-   [How to Export a Report](How-to-Export-a-Report.md)
 
--   [How to Troubleshoot Reports that Return No Data](./How-to-Troubleshoot-Reports-that-Return-No-Data.md)
+-   [How to Troubleshoot Reports that Return No Data](How-to-Troubleshoot-Reports-that-Return-No-Data.md)
 
 

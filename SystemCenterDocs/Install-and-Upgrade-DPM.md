@@ -8,7 +8,7 @@ ms.topic: article
 ms.assetid: 1f4dd92d-038e-4f79-89ff-2adeb41273ea
 ---
 # Install and Upgrade DPM
-This content provides instructions for installing, repairing, configuring, and troubleshooting [!INCLUDE[dpm2012long](./Token/dpm2012long_md.md)].
+This content provides instructions for installing, repairing, configuring, and troubleshooting [!INCLUDE[dpm2012long](Token/dpm2012long_md.md)].
 
 ## In This Section
 [Installing DPM](assetId:///d373e205-a09d-466a-bc43-9023d94c788f)

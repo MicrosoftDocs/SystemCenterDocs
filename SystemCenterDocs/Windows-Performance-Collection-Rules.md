@@ -11,7 +11,7 @@ ms.topic: article
 ms.assetid: 5f505896-0954-403d-bdc8-19e372212c6c
 ---
 # Windows Performance Collection Rules
-To define a collection rule in [!INCLUDE[om12short](./Token/om12short_md.md)] based on a Windows performance counter, the object name and counter name of the performance counter to sample must be defined with a frequency that specifies how frequently to sample the data. The instance name only has to be specified if the same counter will be collected for multiple objects on the same agent. If this is the case, a $Target variable will typically be used for the value in the instance name in order to differentiate between the performance values for different objects. The counter must be available on the agent computer that is running the rule or an error will be created in the Operations Manager event log on the agent.
+To define a collection rule in [!INCLUDE[om12short](Token/om12short_md.md)] based on a Windows performance counter, the object name and counter name of the performance counter to sample must be defined with a frequency that specifies how frequently to sample the data. The instance name only has to be specified if the same counter will be collected for multiple objects on the same agent. If this is the case, a $Target variable will typically be used for the value in the instance name in order to differentiate between the performance values for different objects. The counter must be available on the agent computer that is running the rule or an error will be created in the Operations Manager event log on the agent.
 
 ## Windows Performance Collection Wizard Options
 When you run the Windows performance collection wizard, you will need to provide values for options in the following tables. Each table represents a single page in the wizard.
@@ -23,9 +23,9 @@ The **General** page includes general settings for the rule including its name, 
 |----------|---------------|
 |Rule Name|The name used for the rule. This appears in the **Rules** view in the **Authoring** pane. When you create a view or report, you can select this name to use the data collected by it.|
 |Description|Optional description of the rule.|
-|Management Pack|Management pack to store the rule.<br /><br />For more information on management packs, see [Selecting a Management Pack File](./Selecting-a-Management-Pack-File.md).|
+|Management Pack|Management pack to store the rule.<br /><br />For more information on management packs, see [Selecting a Management Pack File](Selecting-a-Management-Pack-File.md).|
 |Rule Category|The category for the rule. For a performance collection rule, this should be **Performance Collection**.|
-|Rule target|The class to use for the target of the rule. The rule will be run on any agent that has at least one instance of this class. For more information on targets, see [Understanding Classes and Objects](./Understanding-Classes-and-Objects.md).|
+|Rule target|The class to use for the target of the rule. The rule will be run on any agent that has at least one instance of this class. For more information on targets, see [Understanding Classes and Objects](Understanding-Classes-and-Objects.md).|
 
 ### Performance Counter
 The **Performance Counter** page includes the definition of the performance counter to collect and the frequency it should be collected.
@@ -39,7 +39,7 @@ The **Performance Counter** page includes the definition of the performance coun
 |Interval|Specifies the frequency to collect the performance counter.|
 
 ### Optimized Collection
-The **Optimized Collection** page allows to you to enable and configure optimized collection for the counter. If you select optimization for a collection rule, a value is only collected if it differs from the previous sample by a specified tolerance, either an absolute value or a percentage. This helps reduce network traffic and the volume of data stored in the [!INCLUDE[om12short](./Token/om12short_md.md)] database. Optimization should be used for performance counters that are expected to only change gradually. For counters that are expected to very significantly from one value to the next, optimized collection should be disabled.
+The **Optimized Collection** page allows to you to enable and configure optimized collection for the counter. If you select optimization for a collection rule, a value is only collected if it differs from the previous sample by a specified tolerance, either an absolute value or a percentage. This helps reduce network traffic and the volume of data stored in the [!INCLUDE[om12short](Token/om12short_md.md)] database. Optimization should be used for performance counters that are expected to only change gradually. For counters that are expected to very significantly from one value to the next, optimized collection should be disabled.
 
 |Option|Description|
 |----------|---------------|
@@ -48,17 +48,17 @@ The **Optimized Collection** page allows to you to enable and configure optimize
 |Percentage|Specifies a percentage of the previous sample that the difference between the current value and the previous value must be for the value to be collected. The change can be in either positive or negative direction.|
 
 ## Creating Windows Performance Collection Rules
-Use the following procedures to create a Windows performance collection rule in [!INCLUDE[om12short](./Token/om12short_md.md)] with the following details:
+Use the following procedures to create a Windows performance collection rule in [!INCLUDE[om12short](Token/om12short_md.md)] with the following details:
 
 -   Runs on all agents with a particular service installed.
 
 -   Collects the % Privileged Time for the selected service.
 
-#### To create a Windows performance collection rule in [!INCLUDE[om12short](./Token/om12short_md.md)]
+#### To create a Windows performance collection rule in [!INCLUDE[om12short](Token/om12short_md.md)]
 
-1.  If you don’t have a management pack for the application that you are monitoring, create one using the process in [Selecting a Management Pack File](./Selecting-a-Management-Pack-File.md).
+1.  If you don’t have a management pack for the application that you are monitoring, create one using the process in [Selecting a Management Pack File](Selecting-a-Management-Pack-File.md).
 
-2.  Create a new target using the process in [To create a Windows Service template](./Windows-Service-Template.md#CreateWindowsServiceTemplate). You can use any service installed on a test agent for this template.
+2.  Create a new target using the process in [To create a Windows Service template](Windows-Service-Template.md#CreateWindowsServiceTemplate). You can use any service installed on a test agent for this template.
 
 3.  In the Operations console, select the **Authoring** workspace, and then select **Rules**.
 
@@ -115,12 +115,12 @@ Use the following procedures to create a Windows performance collection rule in 
     -   Leave the **Use Optimization** option unselected.
 
         > [!NOTE]
-        > If you select optimization for a collection rule, a value is only collected if it differs from the previous sample by a specified tolerance, either an absolute value or a percentage. This helps reduce network traffic and the volume of data stored in the [!INCLUDE[om12short](./Token/om12short_md.md)] database. Optimization should be used for performance counters that are expected to only change gradually.  In this example, the privileged time of the process is expected to vary significantly between samples so it would not benefit from optimized collection.
+        > If you select optimization for a collection rule, a value is only collected if it differs from the previous sample by a specified tolerance, either an absolute value or a percentage. This helps reduce network traffic and the volume of data stored in the [!INCLUDE[om12short](Token/om12short_md.md)] database. Optimization should be used for performance counters that are expected to only change gradually.  In this example, the privileged time of the process is expected to vary significantly between samples so it would not benefit from optimized collection.
 
     -   Click **Create**.
 
 ## See Also
-[Performance Monitors and Rules](./Performance-Monitors-and-Rules.md)
-[Performance Monitors](./Performance-Monitors.md)
+[Performance Monitors and Rules](Performance-Monitors-and-Rules.md)
+[Performance Monitors](Performance-Monitors.md)
 
 

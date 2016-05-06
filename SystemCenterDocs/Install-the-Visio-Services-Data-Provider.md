@@ -11,9 +11,9 @@ ms.topic: article
 ms.assetid: 8b1c21ab-529b-4c04-9384-717a503f3df7
 ---
 # Install the Visio Services Data Provider
-The Visio Services Data Provider for [!INCLUDE[om12long](./Token/om12long_md.md)] leverages SharePoint 2010’s Visio Services to enable Visio diagrams to show live health state from [!INCLUDE[om12short](./Token/om12short_md.md)] in SharePoint.
+The Visio Services Data Provider for [!INCLUDE[om12long](Token/om12long_md.md)] leverages SharePoint 2010’s Visio Services to enable Visio diagrams to show live health state from [!INCLUDE[om12short](Token/om12short_md.md)] in SharePoint.
 
-The Visio Services Data Provider for [!INCLUDE[om12long](./Token/om12long_md.md)] has the following prerequisites:
+The Visio Services Data Provider for [!INCLUDE[om12long](Token/om12long_md.md)] has the following prerequisites:
 
 -   System Center 2012 – Operations Manager, Operations or Authoring console
 
@@ -22,7 +22,7 @@ The Visio Services Data Provider for [!INCLUDE[om12long](./Token/om12long_md.md)
 -   [The Microsoft .NET Framework 3.5 SP1](http://go.microsoft.com/fwlink/?LinkID=131605)
 
 > [!NOTE]
-> You must install SharePoint Server 2010 in a farm environment versus standalone \(on a single server with a built\-in database by using the default settings\) so that Visio Services can be configured to run as a domain account with [!INCLUDE[om12short](./Token/om12short_md.md)] access. For more information about installing SharePoint Server 2010 on a single server farm, see [Deploy a single server with SQL Server \(SharePoint Server 2010\)](http://go.microsoft.com/fwlink/?LinkID=102798). For more information about installing SharePoint Server 2010 on a multiple server farm, see [Multiple servers for a three\-tier farm \(SharePoint Server 2010\)](http://go.microsoft.com/fwlink/?LinkID=244297).
+> You must install SharePoint Server 2010 in a farm environment versus standalone \(on a single server with a built\-in database by using the default settings\) so that Visio Services can be configured to run as a domain account with [!INCLUDE[om12short](Token/om12short_md.md)] access. For more information about installing SharePoint Server 2010 on a single server farm, see [Deploy a single server with SQL Server \(SharePoint Server 2010\)](http://go.microsoft.com/fwlink/?LinkID=102798). For more information about installing SharePoint Server 2010 on a multiple server farm, see [Multiple servers for a three\-tier farm \(SharePoint Server 2010\)](http://go.microsoft.com/fwlink/?LinkID=244297).
 
 ### To install the Visio Services data provider
 

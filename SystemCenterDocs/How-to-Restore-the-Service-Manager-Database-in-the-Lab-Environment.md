@@ -11,7 +11,7 @@ ms.topic: article
 ms.assetid: acc6c46d-3377-47ce-9c94-ce20997d376f
 ---
 # How to Restore the Service Manager Database in the Lab Environment
-Use the following procedure to restore the production [!INCLUDE[smshort](./Token/smshort_md.md)] database using Microsoft SQL Server 2008 R2.
+Use the following procedure to restore the production [!INCLUDE[smshort](Token/smshort_md.md)] database using Microsoft SQL Server 2008 R2.
 
 ### To restore the Service Manager database
 

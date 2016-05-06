@@ -8,7 +8,7 @@ ms.topic: article
 ms.assetid: 7f8c6185-c55c-4e37-8e6e-8f49c5e45675
 ---
 # Alerts_1
-Alerts in [!INCLUDE[om12short]./Token/om12short_md.md)] can be generated from either monitors or rules. While the Operations console does not distinguish between each type, there are distinct differences between the two that you should understand when defining monitors and rules. The sections below provide the alert properties that you will need to define when you configure a monitor to generate an alert or if you create an alerting rule.
+Alerts in [!INCLUDE[om12short](Token/om12short_md.md)] can be generated from either monitors or rules. While the Operations console does not distinguish between each type, there are distinct differences between the two that you should understand when defining monitors and rules. The sections below provide the alert properties that you will need to define when you configure a monitor to generate an alert or if you create an alerting rule.
 
 ## <a name="Alerts"></a>Alerts from Monitors
 An alert will only be generated from a monitor if each of the following is true:
@@ -77,7 +77,7 @@ The name of the alert is a single line of static text and cannot include any var
 The Alert severity defines the alert as either Information, Warning, or Critical. This severity does not have to match the severity of the health state triggering the alert. The severity of the alert is identified by an icon in the Operations console and is used by views and notification subscriptions. The alert priority is inaccessible in the Operations console but is used primarily for notification subscriptions.
 
 ### Alert Description
-The alert description may have several lines of text that includes static text or variables. The most common kind of variable in the alert description will be $Data variables to include different information from the rule’s data source in the description of the alert. The properties that are available will depend on the kind of data source being used. Each section of [Data Sources](./Data-Sources.md) includes a list of the properties available for different data sources.
+The alert description may have several lines of text that includes static text or variables. The most common kind of variable in the alert description will be $Data variables to include different information from the rule’s data source in the description of the alert. The properties that are available will depend on the kind of data source being used. Each section of [Data Sources](Data-Sources.md) includes a list of the properties available for different data sources.
 
 The following table provides syntax and examples of variables in alerts created from rules:
 
@@ -109,6 +109,5 @@ If the rule is targeted at a class that has multiple instances on an agent, howe
 
 > [!NOTE]
 > Alert suppression is not available for monitors because it is not required. Monitors only generate alerts when their state changes from healthy to warning or critical. Even if the detected issue occurs again when the monitor is already in the negative state, then no alert is generated because the monitor state does not change. A new alert is only generated if the monitor returns to a healthy state before the problem occurs.
-
 
 

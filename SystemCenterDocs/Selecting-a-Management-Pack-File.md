@@ -46,7 +46,7 @@ When you determine how to group different elements, take the following considera
 By following the recommend strategy for logically grouping management pack elements, you can ensure that your management group runs as efficiently as possible and can most effectively handle future changes.
 
 ## Sealed and Unsealed Management Pack Files
-When selecting a management pack file, you must consider the implications of sealed and unsealed management packs. An element in one management pack file cannot refer to an element in another file if the file being referenced is not sealed. For this reason, you might have to group\-related elements in a single management pack file or seal management pack files meant for general use. For more information about the effects of sealing a management pack, see [Sealed Management Pack Files](./Sealed-Management-Pack-Files.md).
+When selecting a management pack file, you must consider the implications of sealed and unsealed management packs. An element in one management pack file cannot refer to an element in another file if the file being referenced is not sealed. For this reason, you might have to group\-related elements in a single management pack file or seal management pack files meant for general use. For more information about the effects of sealing a management pack, see [Sealed Management Pack Files](Sealed-Management-Pack-Files.md).
 
 Because a sealed management pack file cannot be modified, you can only store new management pack elements in unsealed files. Any management pack created in the Operations console is unsealed, and any dialog box prompting you for a management pack only includes unsealed files.
 
@@ -56,10 +56,10 @@ If you used the Operations console to create the groups in this example in an un
 
 -   Create groups in each management pack file with the overrides. This has the advantage of being easy to implement without any requirement to seal a management pack file, but it has the disadvantage of requiring you to potentially create multiple copies of the same group.
 
--   Create a separate management pack file for the groups. After you create the groups in the Operations console, export the management pack to an .xml file, and then  seal the .xml file by using the process described in [Selecting a Management Pack File](./Selecting-a-Management-Pack-File.md). You can then install the sealed version of the management pack file so that the groups are available to any other management pack.
+-   Create a separate management pack file for the groups. After you create the groups in the Operations console, export the management pack to an .xml file, and then  seal the .xml file by using the process described in [Selecting a Management Pack File](Selecting-a-Management-Pack-File.md). You can then install the sealed version of the management pack file so that the groups are available to any other management pack.
 
 ## See Also
-[Management Pack Templates](./Management-Pack-Templates.md)
-[Monitors and Rules](./Monitors-and-Rules.md)
+[Management Pack Templates](Management-Pack-Templates.md)
+[Monitors and Rules](Monitors-and-Rules.md)
 
 

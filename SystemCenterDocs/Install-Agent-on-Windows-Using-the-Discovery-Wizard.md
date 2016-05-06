@@ -15,7 +15,7 @@ You can use the Operations console to search your environment for manageable obj
 
 The Discovery Wizard does not show computers that the management group is already monitoring. If you are doing a phased rollout of your management group, you can run the wizard to add new computers to the group. Also, after your initial deployment, you can use the Discovery Wizard to add newly installed computers to be managed.
 
-When agents are pushed out to computers, [!INCLUDE[om12long](./Token/om12long_md.md)] sends credentials that have local administrator rights for that computer; this is required to install the agent.
+When agents are pushed out to computers, [!INCLUDE[om12long](Token/om12long_md.md)] sends credentials that have local administrator rights for that computer; this is required to install the agent.
 
 If the Discovery Wizard is not right for your needs \(for example, if you have a set list of computers to which you want to deploy agents\), you have the option of manually installing agents on systems to be managed. Agents can also be embedded in the host image of the monitored computer.
 
@@ -116,18 +116,18 @@ Use the following procedure to discover computers running Windows and to deploy 
 12. Click **Close**.
 
 ## See Also
-[Operations Manager Agent Installation Methods](./Operations-Manager-Agent-Installation-Methods.md)
-[Install Agent on UNIX and Linux Using the Discovery Wizard](./Install-Agent-on-UNIX-and-Linux-Using-the-Discovery-Wizard.md)
-[Install Agent Using the MOMAgent.msi Setup Wizard](./Install-Agent-Using-the-MOMAgent.msi-Setup-Wizard.md)
-[Install Agent Using the Command Line](./Install-Agent-Using-the-Command-Line.md)
-[Install Agent and Certificate on UNIX and Linux Computers Using the Command Line](./Install-Agent-and-Certificate-on-UNIX-and-Linux-Computers-Using-the-Command-Line.md)
-[Managing Certificates for UNIX and Linux Computers](./Managing-Certificates-for-UNIX-and-Linux-Computers.md)
-[Process Manual Agent Installations](./Process-Manual-Agent-Installations.md)
-[Applying Overrides to Object Discoveries](./Applying-Overrides-to-Object-Discoveries.md)
-[Configuring Agents](./Configuring-Agents.md)
-[Examples of Using MOMAgent Command to Manage Agents](./Examples-of-Using-MOMAgent-Command-to-Manage-Agents.md)
-[Upgrading and Uninstalling Agents on UNIX and Linux Computers](./Upgrading-and-Uninstalling-Agents-on-UNIX-and-Linux-Computers.md)
-[Manually Uninstalling Agents from UNIX and Linux Computers](./Manually-Uninstalling-Agents-from-UNIX-and-Linux-Computers.md)
-[Uninstall Agent from Windows-based Computers](./Uninstall-Agent-from-Windows-based-Computers.md)
+[Operations Manager Agent Installation Methods](Operations-Manager-Agent-Installation-Methods.md)
+[Install Agent on UNIX and Linux Using the Discovery Wizard](Install-Agent-on-UNIX-and-Linux-Using-the-Discovery-Wizard.md)
+[Install Agent Using the MOMAgent.msi Setup Wizard](Install-Agent-Using-the-MOMAgent.msi-Setup-Wizard.md)
+[Install Agent Using the Command Line](Install-Agent-Using-the-Command-Line.md)
+[Install Agent and Certificate on UNIX and Linux Computers Using the Command Line](Install-Agent-and-Certificate-on-UNIX-and-Linux-Computers-Using-the-Command-Line.md)
+[Managing Certificates for UNIX and Linux Computers](Managing-Certificates-for-UNIX-and-Linux-Computers.md)
+[Process Manual Agent Installations](Process-Manual-Agent-Installations.md)
+[Applying Overrides to Object Discoveries](Applying-Overrides-to-Object-Discoveries.md)
+[Configuring Agents](Configuring-Agents.md)
+[Examples of Using MOMAgent Command to Manage Agents](Examples-of-Using-MOMAgent-Command-to-Manage-Agents.md)
+[Upgrading and Uninstalling Agents on UNIX and Linux Computers](Upgrading-and-Uninstalling-Agents-on-UNIX-and-Linux-Computers.md)
+[Manually Uninstalling Agents from UNIX and Linux Computers](Manually-Uninstalling-Agents-from-UNIX-and-Linux-Computers.md)
+[Uninstall Agent from Windows-based Computers](Uninstall-Agent-from-Windows-based-Computers.md)
 
 

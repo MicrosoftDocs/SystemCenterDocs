@@ -38,11 +38,11 @@ If you have deployed multiple gateway servers in a domain that does not have a t
     ```
 
 ## See Also
-[Monitoring Across Untrusted Boundaries in Operations Manager](./Monitoring-Across-Untrusted-Boundaries-in-Operations-Manager.md)
-[About Gateway Servers in Operations Manager](./About-Gateway-Servers-in-Operations-Manager.md)
-[Determining the Health of Gateway Servers](./Determining-the-Health-of-Gateway-Servers.md)
-[Using Multiple Gateway Servers](./Using-Multiple-Gateway-Servers.md)
-[How to Configure a Gateway Server to Failover Between Multiple Management Servers](./How-to-Configure-a-Gateway-Server-to-Failover-Between-Multiple-Management-Servers.md)
-[Certificate Renewal for Gateway Servers and Management Servers](./Certificate-Renewal-for-Gateway-Servers-and-Management-Servers.md)
+[Monitoring Across Untrusted Boundaries in Operations Manager](Monitoring-Across-Untrusted-Boundaries-in-Operations-Manager.md)
+[About Gateway Servers in Operations Manager](About-Gateway-Servers-in-Operations-Manager.md)
+[Determining the Health of Gateway Servers](Determining-the-Health-of-Gateway-Servers.md)
+[Using Multiple Gateway Servers](Using-Multiple-Gateway-Servers.md)
+[How to Configure a Gateway Server to Failover Between Multiple Management Servers](How-to-Configure-a-Gateway-Server-to-Failover-Between-Multiple-Management-Servers.md)
+[Certificate Renewal for Gateway Servers and Management Servers](Certificate-Renewal-for-Gateway-Servers-and-Management-Servers.md)
 
 

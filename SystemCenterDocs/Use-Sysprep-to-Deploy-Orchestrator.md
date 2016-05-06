@@ -33,7 +33,7 @@ Use the following steps to prepare the Windows 2008 R2 image.
 ## <a name="SCO_sysprep2"></a>Create the Orchestrator answer file for sysprep
 Before you can use the Sysprep tool to install Orchestrator on Windows Server 2008 R2, install Orchestrator as part of the Sysprep process using an answer file.
 
-See [Sample Orchestrator.xml file](./Use-Sysprep-to-Deploy-Orchestrator.md#SCO_sysprep4) for sample unattend.xml file. You can customize this sample file and import it into the Windows System Image Manager.
+See [Sample Orchestrator.xml file](Use-Sysprep-to-Deploy-Orchestrator.md#SCO_sysprep4) for sample unattend.xml file. You can customize this sample file and import it into the Windows System Image Manager.
 
 #### To create the answer file
 
@@ -41,7 +41,7 @@ See [Sample Orchestrator.xml file](./Use-Sysprep-to-Deploy-Orchestrator.md#SCO_s
 
 2.  Copy the file to %systemdrive%\\windows\\system32\\sysprep.
 
-3.  Create the Orchestrator batch file that will install the Orchestrator components on this computer. An example of this file is available in [Sample Orchestrator.xml file](./Use-Sysprep-to-Deploy-Orchestrator.md#SCO_sysprep4). This is referred to in the Orchestrator.xml file. See [Install with the Orchestrator Command Line Install Tool](./Install-with-the-Orchestrator-Command-Line-Install-Tool.md) for the available command line options that can be used to install Orchestrator.
+3.  Create the Orchestrator batch file that will install the Orchestrator components on this computer. An example of this file is available in [Sample Orchestrator.xml file](Use-Sysprep-to-Deploy-Orchestrator.md#SCO_sysprep4). This is referred to in the Orchestrator.xml file. See [Install with the Orchestrator Command Line Install Tool](Install-with-the-Orchestrator-Command-Line-Install-Tool.md) for the available command line options that can be used to install Orchestrator.
 
 4.  Run the following command:
 
@@ -85,7 +85,7 @@ This is a sample Orchestrator.xml to be used for deploying Orchestrator with sys
 
 ```
 
-This is a sample install.bat file that is referenced in the Orchestrator.xml unattend file for the FirstLogonCommand. Create this batch file in the %systemdrive%\\sco directory along with the Orchestrator setup files. This file can be customized by using the command line install tool. For more information, see [Install with the Orchestrator Command Line Install Tool](./Install-with-the-Orchestrator-Command-Line-Install-Tool.md).
+This is a sample install.bat file that is referenced in the Orchestrator.xml unattend file for the FirstLogonCommand. Create this batch file in the %systemdrive%\\sco directory along with the Orchestrator setup files. This file can be customized by using the command line install tool. For more information, see [Install with the Orchestrator Command Line Install Tool](Install-with-the-Orchestrator-Command-Line-Install-Tool.md).
 
 ```
 %systemdrive%\sco\setup\setup.exe /Silent /ServiceUserName:%computername%\administrator /ServicePassword:password /Components:All /DbServer:%computername%  /DbPort:1433 /DbNameNew:OrchestratorSysPrep /WebConsolePort:82 /WebServicePort:81 /OrchestratorRemote /UseMicrosoftUpdate:1 /SendCEIPReports:1 /EnableErrorReporting:always

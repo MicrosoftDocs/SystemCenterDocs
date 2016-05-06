@@ -8,7 +8,7 @@ ms.topic: article
 ms.assetid: bf217c19-f448-46bb-8e5d-9b4604af236b
 ---
 # How to deploy a new virtual machine from the SAN copy-capable template
-You can use this procedure to deploy a virtual machine from a SAN copy\-capable template that you created for rapid provisioning in [!INCLUDE[vmm12sp1_long](./Token/vmm12sp1_long_md.md)]. You can use the SAN copy\-capable template to deploy stand\-alone virtual machines, and to deploy virtual machines as part of a service. This procedure shows how to deploy a new stand\-alone virtual machine by using rapid provisioning. If you want to use the template during service creation, you can select an existing SAN clone\-capable virtual machine template when you create a service.
+You can use this procedure to deploy a virtual machine from a SAN copy\-capable template that you created for rapid provisioning in [!INCLUDE[vmm12sp1_long](Token/vmm12sp1_long_md.md)]. You can use the SAN copy\-capable template to deploy stand\-alone virtual machines, and to deploy virtual machines as part of a service. This procedure shows how to deploy a new stand\-alone virtual machine by using rapid provisioning. If you want to use the template during service creation, you can select an existing SAN clone\-capable virtual machine template when you create a service.
 
 > [!IMPORTANT]
 > The hosts where you want to place the virtual machines must have access to the managed storage pool where the logical unit that is associated with the template resides. If you want to deploy the virtual machines to a private cloud, the storage classification that is assigned to the logical unit that was used to create the SAN clone\-capable template must be available to the private cloud. Additionally, the host groups that are used to provide resources for the private cloud must contain the hosts that have access to the managed storage pool where the logical unit that is associated with the template resides.
@@ -45,8 +45,8 @@ You can use this procedure to deploy a virtual machine from a SAN copy\-capable 
 8.  To verify that the virtual machine was created, open the **VMs and Services** workspace. Expand **All Hosts** or **Clouds**, depending on where you deployed the virtual machine, and then locate and click the destination host or private cloud. In the **VMs** pane, verify that the new virtual machine appears. If you open Disk Management \(Diskmgmt.msc\) on the destination host, you can see the new disk that is assigned and registered to the host.
 
 ## See Also
-[Using SAN copy to rapidly provision virtual machines](./Using-SAN-copy-to-rapidly-provision-virtual-machines.md)
-[Managing virtual machines with VMM](./Managing-virtual-machines-with-VMM.md)
-[Managing tenant resources with VMM](./Managing-tenant-resources-with-VMM.md)
+[Using SAN copy to rapidly provision virtual machines](Using-SAN-copy-to-rapidly-provision-virtual-machines.md)
+[Managing virtual machines with VMM](Managing-virtual-machines-with-VMM.md)
+[Managing tenant resources with VMM](Managing-tenant-resources-with-VMM.md)
 
 

@@ -11,10 +11,10 @@ ms.topic: article
 ms.assetid: 7668afd1-2bc8-4861-8279-63361029f3a3
 ---
 # Deploying Runbooks
-There are tools available in [!INCLUDE[orchshort](./Token/orchshort_md.md)] to help you manage the versions of your runbooks. These tools are described in the following sections.
+There are tools available in [!INCLUDE[orchshort](Token/orchshort_md.md)] to help you manage the versions of your runbooks. These tools are described in the following sections.
 
 ## Version Control
-In [!INCLUDE[orchlong](./Token/orchlong_md.md)], multiple users can create and update runbooks. However, only one user at a time can make changes to a runbook. This protects your work from being overwritten by someone else with the same permission level.
+In [!INCLUDE[orchlong](Token/orchlong_md.md)], multiple users can create and update runbooks. However, only one user at a time can make changes to a runbook. This protects your work from being overwritten by someone else with the same permission level.
 
 To edit a runbook, you must check it out. Another user cannot edit that runbook until you either commit all changes by checking the runbook in or revert all changes by undoing the checkout.
 
@@ -41,6 +41,6 @@ When a runbook has been changed and is checked in by a user, an entry appears in
 3.  When you select an item, the **Action** type displays beneath the **Activities** box. For example, **Action: Modified** or **Action: Added**. When you select the **Action: Modified** type, the **Attribute**, **Old Value**, and **New Value** are listed in the bottom text box.
 
 ## See Also
-[Deploy and Start Runbooks](./Deploy-and-Start-Runbooks.md)
+[Deploy and Start Runbooks](Deploy-and-Start-Runbooks.md)
 
 

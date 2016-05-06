@@ -11,9 +11,9 @@ ms.topic: article
 ms.assetid: d7b6d4bd-c0be-499b-bcd4-14bae92b4e5f
 ---
 # Managing Incidents
-The procedures in this section describe how to manage incidents by using [!INCLUDE[scsm_threshold_1](./Token/scsm_threshold_1_md.md)].
+The procedures in this section describe how to manage incidents by using [!INCLUDE[scsm_threshold_1](Token/scsm_threshold_1_md.md)].
 
-Help desk analysts use incident management to restore regular operations as quickly and as cost\-effectively as possible by creating new incidents. They also work in partnership with [!INCLUDE[smshort](./Token/smshort_md.md)] administrators to ensure that incidents that are created automatically or by end users are correctly categorized and reassigned to appropriate personnel. Methods that you might use to accomplish these duties include:
+Help desk analysts use incident management to restore regular operations as quickly and as cost\-effectively as possible by creating new incidents. They also work in partnership with [!INCLUDE[smshort](Token/smshort_md.md)] administrators to ensure that incidents that are created automatically or by end users are correctly categorized and reassigned to appropriate personnel. Methods that you might use to accomplish these duties include:
 
 -   Using the E\-mail Incident template to create new incidents.
 
@@ -23,6 +23,6 @@ Help desk analysts use incident management to restore regular operations as quic
 
 -   Combining incidents into parent\-child relationships when incidents are related.
 
--   [Contact a User from an Incident Form](./Contact-a-User-from-an-Incident-Form.md)
+-   [Contact a User from an Incident Form](Contact-a-User-from-an-Incident-Form.md)
 
 

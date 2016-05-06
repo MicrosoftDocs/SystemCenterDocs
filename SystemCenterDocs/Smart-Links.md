@@ -11,7 +11,7 @@ ms.topic: article
 ms.assetid: 21b60698-13ee-48bc-8575-1c1534fbb981
 ---
 # Smart Links
-The links that connect individual activities in a runbook are called smart links. Smart links in [!INCLUDE[orchlong](./Token/orchlong_md.md)] support precedence between two activities. Smart links invoke the next activity in the runbook as soon as the previous activity finishes successfully. Smart links also provide filtering capabilities for the data so you can limit the data passed to subsequent activities in the workflow.
+The links that connect individual activities in a runbook are called smart links. Smart links in [!INCLUDE[orchlong](Token/orchlong_md.md)] support precedence between two activities. Smart links invoke the next activity in the runbook as soon as the previous activity finishes successfully. Smart links also provide filtering capabilities for the data so you can limit the data passed to subsequent activities in the workflow.
 
 ## Creating and configuring smart links
 You can modify the smart link condition properties by double\-clicking the smart link.
@@ -58,7 +58,7 @@ In the **Link Properties** dialog box, on the **General** tab, you can add Name 
 3.  Click **Finish**.
 
 ## Include and Exclude Tabs
-[!INCLUDE[orchshort](./Token/orchshort_md.md)] lets you configure conditions for passing data to the following tasks in the runbook. By using link conditions, you can build branching capabilities into your runbooks. For example, a runbook must stop a database server before backing it up. If the database server stops correctly, the runbook starts the backup application. If the database does not stop correctly, an email is sent to the administrator to escalate the issue.
+[!INCLUDE[orchshort](Token/orchshort_md.md)] lets you configure conditions for passing data to the following tasks in the runbook. By using link conditions, you can build branching capabilities into your runbooks. For example, a runbook must stop a database server before backing it up. If the database server stops correctly, the runbook starts the backup application. If the database does not stop correctly, an email is sent to the administrator to escalate the issue.
 
 On the **Include** tab, you can specify the conditions that enable data to flow to the next activity in the runbook. The **Exclude** tab specifies the conditions that cause data to be excluded from the next activity in the runbook.
 
@@ -83,7 +83,7 @@ Use the following procedure to add or remove a condition to a smart link.
 
 4.  Select a property from the Published Data and click **OK**. The criteria expression is changed depending on the type of data that the property returns.
 
-5.  To change the different parts of the expression, select the underlined text, and then either select or type in an appropriate value. For more information about criteria, see [Smart link criteria](./Smart-Links.md#BMK_Smartlinkcriteria).
+5.  To change the different parts of the expression, select the underlined text, and then either select or type in an appropriate value. For more information about criteria, see [Smart link criteria](Smart-Links.md#BMK_Smartlinkcriteria).
 
 6.  Click **Finish**.
 
@@ -167,6 +167,6 @@ Certain published data properties return numeric data that you can compare to an
 |is between|The value of the Published Data item is between two specified values.|
 
 ## See Also
-[Workflow Control](./Workflow-Control.md)
+[Workflow Control](Workflow-Control.md)
 
 

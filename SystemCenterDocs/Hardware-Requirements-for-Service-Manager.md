@@ -14,14 +14,14 @@ ms.assetid: e13218d6-05f1-46d1-8f10-068a2497aacb
 <?xml version="1.0" encoding="utf-8"?>
 <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://ddue.schemas.microsoft.com/authoring/2003/5 http://dduestorage.blob.core.windows.net/ddueschema/developer.xsd">
   <introduction>
-    <para>This topic describes the hardware requirements for <token>scsm_threshold_./Token>.</para>
+    <para>This topic describes the hardware requirements for <token>scsm_threshold_Token>.</para>
   </introduction>
   <section>
     <title>Hardware Requirements</title>
     <content>
-      <para>The following table lists the recommended hardware requirements for the individual parts of <token>scsm_threshold_./Token>. These computers can be physical servers or virtual servers.</para>
+      <para>The following table lists the recommended hardware requirements for the individual parts of <token>scsm_threshold_Token>. These computers can be physical servers or virtual servers.</para>
       <para>
-        The hardware requirements for <token>smshort1./Token> in  are unchanged from its initial release.</para>
+        The hardware requirements for <token>smshort1Token> in  are unchanged from its initial release.</para>
       <table xmlns:caps="http://schemas.microsoft.com/build/caps/2013/11">
         <caption>
           <?Comment j: PAGE \# "'Page: '#''"169361 2012-08-29T14:08:00Z  Id='1?>Hardware requirements table<?CommentEnd Id='1'
@@ -30,7 +30,7 @@ ms.assetid: e13218d6-05f1-46d1-8f10-068a2497aacb
           <tr>
             <TD>
               <para>
-                <token>scsm_threshold_./Token> database</para>
+                <token>scsm_threshold_Token> database</para>
             </TD>
             <TD>
               <para>8-core 2.66 gigahertz (GHz) CPU</para>
@@ -44,7 +44,7 @@ ms.assetid: e13218d6-05f1-46d1-8f10-068a2497aacb
           <tr>
             <TD>
               <para>
-                <token>scsm_threshold_./Token> management server</para>
+                <token>scsm_threshold_Token> management server</para>
             </TD>
             <TD>
               <para>
@@ -59,7 +59,7 @@ ms.assetid: e13218d6-05f1-46d1-8f10-068a2497aacb
           <tr>
             <TD>
               <para>
-                <token>smcon./Token>
+                <token>smconToken>
               </para>
             </TD>
             <TD>
@@ -99,7 +99,7 @@ ms.assetid: e13218d6-05f1-46d1-8f10-068a2497aacb
           <tr>
             <TD>
               <para>
-                <token>smss./Token>: Web Content Server with SharePoint Web Parts</para>
+                <token>smssToken>: Web Content Server with SharePoint Web Parts</para>
             </TD>
             <TD>
               <para>

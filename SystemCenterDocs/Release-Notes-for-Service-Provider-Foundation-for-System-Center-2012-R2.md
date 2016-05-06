@@ -11,16 +11,16 @@ ms.topic: article
 ms.assetid: c47ba2f1-426a-4e35-bc1a-48682eb35ae5
 ---
 # Release Notes for Service Provider Foundation for System Center 2012 R2
-These release notes apply to [!INCLUDE[spflong](./Token/spflong_md.md)], a component of [!INCLUDE[orchlong](./Token/orchlong_md.md)]. They contain up\-to\-date information about known issues that you might experience.
+These release notes apply to [!INCLUDE[spflong](Token/spflong_md.md)], a component of [!INCLUDE[orchlong](Token/orchlong_md.md)]. They contain up\-to\-date information about known issues that you might experience.
 
-For release notes that pertain to the [!INCLUDE[spfshort](./Token/spfshort_md.md)] software development guide, see the [Release Notes for Service Provider Foundation Developer's Guide](http://go.microsoft.com/fwlink/p/?LinkID=263702).
+For release notes that pertain to the [!INCLUDE[spfshort](Token/spfshort_md.md)] software development guide, see the [Release Notes for Service Provider Foundation Developer's Guide](http://go.microsoft.com/fwlink/p/?LinkID=263702).
 
 ## Known Issues
 
 ## Installations with VMM 2012 SP1 causes problems
-**Description:** Although you can complete the installation of [!INCLUDE[spfshort](./Token/spfshort_md.md)] 2012 R2 on a server with [!INCLUDE[vmm12sp1_long](./Token/vmm12sp1_long_md.md)] 2012 SP1, they will not function together correctly.
+**Description:** Although you can complete the installation of [!INCLUDE[spfshort](Token/spfshort_md.md)] 2012 R2 on a server with [!INCLUDE[vmm12sp1_long](Token/vmm12sp1_long_md.md)] 2012 SP1, they will not function together correctly.
 
-**Workaround:** None. You must uninstall [!INCLUDE[vmm12sp1_long](./Token/vmm12sp1_long_md.md)] 2012 SP1, then install VMM 2012 R2, and then install [!INCLUDE[spfshort](./Token/spfshort_md.md)] 2012 R2.
+**Workaround:** None. You must uninstall [!INCLUDE[vmm12sp1_long](Token/vmm12sp1_long_md.md)] 2012 SP1, then install VMM 2012 R2, and then install [!INCLUDE[spfshort](Token/spfshort_md.md)] 2012 R2.
 
 ## SPF server names must be in FQDN format
 **Description:** Specifying a NetBIOS name for a Service Provider Foundation \(SPF\) server will not work. Instead, SPF names must be in fully qualified domain name \(FQDN\) format. SPF is a feature in Orchestrator.
@@ -33,12 +33,12 @@ For release notes that pertain to the [!INCLUDE[spfshort](./Token/spfshort_md.md
 **Workaround:** When updating a Run As account with a new Domain, User Name or Password, all values must be entered at the same time.
 
 ## Installation fails on a computer with only IPv6 enabled
-**Description:** Installation of [!INCLUDE[spfshort](./Token/spfshort_md.md)] fails on a computer that has only IPv6 enabled for the network adapters.
+**Description:** Installation of [!INCLUDE[spfshort](Token/spfshort_md.md)] fails on a computer that has only IPv6 enabled for the network adapters.
 
 **Workaround:** Enable IPv4.
 
 ## You cannot move a virtual machine across clouds
-**Description:**[!INCLUDE[spfshort](./Token/spfshort_md.md)] cannot accommodate moving a virtual machine from one cloud to another.
+**Description:**[!INCLUDE[spfshort](Token/spfshort_md.md)] cannot accommodate moving a virtual machine from one cloud to another.
 
 **Workaround:** None. This is a known limitation.
 
@@ -53,7 +53,7 @@ For release notes that pertain to the [!INCLUDE[spfshort](./Token/spfshort_md.md
 **Workaround:** Retry the operation.
 
 ## Creation of a user role fails occasionally
-**Description:** In attempting to create a new user role on a second [!INCLUDE[vmm12sp1_long](./Token/vmm12sp1_long_md.md)] server, the administrator user role might be unable to create a new user role, because the attempt is treated as an accidental impersonation.
+**Description:** In attempting to create a new user role on a second [!INCLUDE[vmm12sp1_long](Token/vmm12sp1_long_md.md)] server, the administrator user role might be unable to create a new user role, because the attempt is treated as an accidental impersonation.
 
 **Workaround:** Recycle the VMM application pool.
 
@@ -74,13 +74,13 @@ PS C:\> $userroles | foreach {New-SCSPFTenantUserRole -Tenant $tenant2 -Name $_.
 ```
 
 ## Passwords with double quotes in a silent installation
-**Description:** If you perform a silent installation of [!INCLUDE[spfshort](./Token/spfshort_md.md)] using passwords that contain double quotes that are not correctly escaped, they can cause the application pools credentials to use the Network Service instead of the expected Service Account.
+**Description:** If you perform a silent installation of [!INCLUDE[spfshort](Token/spfshort_md.md)] using passwords that contain double quotes that are not correctly escaped, they can cause the application pools credentials to use the Network Service instead of the expected Service Account.
 
-**Workaround:** In Internet Information Services \(IIS\), verify the application pool identity credential is set correctly for each of the [!INCLUDE[spfshort](./Token/spfshort_md.md)] web services. For more information about silent installs, see [Setup Command-Line Options for Service Provider Foundation](./Setup-Command-Line-Options-for-Service-Provider-Foundation.md).
+**Workaround:** In Internet Information Services \(IIS\), verify the application pool identity credential is set correctly for each of the [!INCLUDE[spfshort](Token/spfshort_md.md)] web services. For more information about silent installs, see [Setup Command-Line Options for Service Provider Foundation](Setup-Command-Line-Options-for-Service-Provider-Foundation.md).
 
 ## See Also
-[Deploying Service Provider Foundation](./Deploying-Service-Provider-Foundation.md)
-[Administering Service Provider Foundation](./Administering-Service-Provider-Foundation.md)
-[Architecture Overview of Service Provider Foundation](./Architecture-Overview-of-Service-Provider-Foundation.md)
+[Deploying Service Provider Foundation](Deploying-Service-Provider-Foundation.md)
+[Administering Service Provider Foundation](Administering-Service-Provider-Foundation.md)
+[Architecture Overview of Service Provider Foundation](Architecture-Overview-of-Service-Provider-Foundation.md)
 
 

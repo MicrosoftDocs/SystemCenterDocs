@@ -68,15 +68,15 @@ You now must enable the ACS rules.
 5.  Set the **Enabled** parameter to **True**, modify the **Override Value** to **True**, and then click **OK**.
 
 ## See Also
-[Collecting Security Events Using Audit Collection Services in Operations Manager](./Collecting-Security-Events-Using-Audit-Collection-Services-in-Operations-Manager.md)
-[How to Configure Certficates for ACS Collector and Forwarder](./How-to-Configure-Certficates-for-ACS-Collector-and-Forwarder.md)
-[Audit Collection Services Capacity Planning](./Audit-Collection-Services-Capacity-Planning.md)
-[Audit Collection Services Performance Counters](./Audit-Collection-Services-Performance-Counters.md)
-[How to Enable Audit Collection Services &#40;ACS&#41; Forwarders](./How-to-Enable-Audit-Collection-Services--ACS--Forwarders.md)
-[Audit Collection Services Security](./Audit-Collection-Services-Security.md)
-[How to Filter ACS Events for UNIX and Linux Computers](./How-to-Filter-ACS-Events-for-UNIX-and-Linux-Computers.md)
-[Monitoring Audit Collection Services Performance](./Monitoring-Audit-Collection-Services-Performance.md)
-[How to Remove Audit Collection Services &#40;ACS&#41;](./How-to-Remove-Audit-Collection-Services--ACS-.md)
-[Audit Collection Services Administration &#40;AdtAdmin.exe&#41;](./Audit-Collection-Services-Administration--AdtAdmin.exe-.md)
+[Collecting Security Events Using Audit Collection Services in Operations Manager](Collecting-Security-Events-Using-Audit-Collection-Services-in-Operations-Manager.md)
+[How to Configure Certficates for ACS Collector and Forwarder](How-to-Configure-Certficates-for-ACS-Collector-and-Forwarder.md)
+[Audit Collection Services Capacity Planning](Audit-Collection-Services-Capacity-Planning.md)
+[Audit Collection Services Performance Counters](Audit-Collection-Services-Performance-Counters.md)
+[How to Enable Audit Collection Services &#40;ACS&#41; Forwarders](How-to-Enable-Audit-Collection-Services--ACS--Forwarders.md)
+[Audit Collection Services Security](Audit-Collection-Services-Security.md)
+[How to Filter ACS Events for UNIX and Linux Computers](How-to-Filter-ACS-Events-for-UNIX-and-Linux-Computers.md)
+[Monitoring Audit Collection Services Performance](Monitoring-Audit-Collection-Services-Performance.md)
+[How to Remove Audit Collection Services &#40;ACS&#41;](How-to-Remove-Audit-Collection-Services--ACS-.md)
+[Audit Collection Services Administration &#40;AdtAdmin.exe&#41;](Audit-Collection-Services-Administration--AdtAdmin.exe-.md)
 
 

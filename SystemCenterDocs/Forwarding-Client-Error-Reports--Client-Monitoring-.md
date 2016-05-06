@@ -13,7 +13,7 @@ ms.assetid: 08d6365a-4a44-4c84-ac6d-b04291f45403
 # Forwarding Client Error Reports (Client Monitoring)
 The Microsoft Customer Experience Improvement Program \(CEIP\) collects information about how you use Microsoft programs and about some of the issues you might encounter. Microsoft uses this information to improve the products and features you use most often and to help solve issues. Participation in the program is strictly voluntary.
 
-When you choose to participate in the CEIP, you configure clients with Group Policy to redirect CEIP reports to a [!INCLUDE[om12long](./Token/om12long_md.md)] management server, instead of reporting directly to Microsoft. The management servers are configured to forward these reports to Microsoft.
+When you choose to participate in the CEIP, you configure clients with Group Policy to redirect CEIP reports to a [!INCLUDE[om12long](Token/om12long_md.md)] management server, instead of reporting directly to Microsoft. The management servers are configured to forward these reports to Microsoft.
 
 > [!IMPORTANT]
 > The CEIP reports do not contain contact information about you or your organization, such as names or an address.
@@ -23,11 +23,11 @@ The CEIP reports forwarded from your organization to Microsoft are combined with
 Use the following procedure to configure CEIP settings. The management server must have access to the Internet to participate in the program.
 
 > [!IMPORTANT]
-> CEIP is a component of the Client Monitoring feature of [!INCLUDE[om12short](./Token/om12short_md.md)]. Client Monitoring must be enabled on at least one management server and managed computers to participate in the CEIP. For information about enabling the Client Monitoring feature of [!INCLUDE[om12short](./Token/om12short_md.md)], see [Client Monitoring Using Agentless Exception Monitoring](http://go.microsoft.com/fwlink/?LinkID=217096). After a management server has been configured for client monitoring, all agents that are participating in CEIP should be configured via Group Policy to send their CEIP data to that management server.
+> CEIP is a component of the Client Monitoring feature of [!INCLUDE[om12short](Token/om12short_md.md)]. Client Monitoring must be enabled on at least one management server and managed computers to participate in the CEIP. For information about enabling the Client Monitoring feature of [!INCLUDE[om12short](Token/om12short_md.md)], see [Client Monitoring Using Agentless Exception Monitoring](http://go.microsoft.com/fwlink/?LinkID=217096). After a management server has been configured for client monitoring, all agents that are participating in CEIP should be configured via Group Policy to send their CEIP data to that management server.
 
 ### To configure the CEIP settings for Operations Manager
 
-1.  Log on to a management server with an account that is a member of the [!INCLUDE[om12short](./Token/om12short_md.md)] Administrators role for the [!INCLUDE[om12short](./Token/om12short_md.md)] management group.
+1.  Log on to a management server with an account that is a member of the [!INCLUDE[om12short](Token/om12short_md.md)] Administrators role for the [!INCLUDE[om12short](Token/om12short_md.md)] management group.
 
 2.  In the Operations console, click **Administration**.
 
@@ -41,10 +41,10 @@ Use the following procedure to configure CEIP settings. The management server mu
     > You can click **Tell me more about the program** to view information about the CEIP program, including the privacy statement.
 
 ## See Also
-[Client Monitoring Using Agentless Exception Monitoring in Operations Manager](./Client-Monitoring-Using-Agentless-Exception-Monitoring-in-Operations-Manager.md)
-[How to Configure Clients for Client Monitoring](./How-to-Configure-Clients-for-Client-Monitoring.md)
-[How to Customize Client Monitoring Data Collection and Solution Response URLs for Error Groups](./How-to-Customize-Client-Monitoring-Data-Collection-and-Solution-Response-URLs-for-Error-Groups.md)
-[How to Configure Error Transmission Settings for Client Monitoring in Operations Manager](./How-to-Configure-Error-Transmission-Settings-for-Client-Monitoring-in-Operations-Manager.md)
-[How to Configure a Management Server for Client Monitoring](./How-to-Configure-a-Management-Server-for-Client-Monitoring.md)
+[Client Monitoring Using Agentless Exception Monitoring in Operations Manager](Client-Monitoring-Using-Agentless-Exception-Monitoring-in-Operations-Manager.md)
+[How to Configure Clients for Client Monitoring](How-to-Configure-Clients-for-Client-Monitoring.md)
+[How to Customize Client Monitoring Data Collection and Solution Response URLs for Error Groups](How-to-Customize-Client-Monitoring-Data-Collection-and-Solution-Response-URLs-for-Error-Groups.md)
+[How to Configure Error Transmission Settings for Client Monitoring in Operations Manager](How-to-Configure-Error-Transmission-Settings-for-Client-Monitoring-in-Operations-Manager.md)
+[How to Configure a Management Server for Client Monitoring](How-to-Configure-a-Management-Server-for-Client-Monitoring.md)
 
 

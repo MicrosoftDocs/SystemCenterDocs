@@ -11,7 +11,7 @@ ms.topic: article
 ms.assetid: e3b6e51e-21d6-4a01-96b0-a80e9bd98e17
 ---
 # Tasks
-*Tasks* in [!INCLUDE[om12long](./Token/om12long_md.md)] are actions that can be run on demand by the user. Depending on the kind of task, the action may run either on the user’s local workstation or on one or more specified agents.
+*Tasks* in [!INCLUDE[om12long](Token/om12long_md.md)] are actions that can be run on demand by the user. Depending on the kind of task, the action may run either on the user’s local workstation or on one or more specified agents.
 
 ## In This Section
 [Console Tasks \[OM2007\_AuthConsole\]](assetId:///d5d1e2c8-1e56-456e-994f-20cb2e364e52)

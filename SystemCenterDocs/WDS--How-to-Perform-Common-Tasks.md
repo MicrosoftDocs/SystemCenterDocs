@@ -374,7 +374,7 @@ ms.assetid: e73be1e0-2dca-43b2-97e9-5691ea47fbf6
                               <para>
                                 <system>Using WDSUTIL</system>. To specify a remote server to run a WDSUTIL command, append <system>/Server:&lt;name&gt;</system> to the command. For example:</para>
                               <para>
-                                <system>WDSUTIL /Add-Imag/ImageFile:C:\images\capture.wim /Server:MY-WDS-0/ImageType:Boot</system>
+                                <system>WDSUTIL /Add-ImagImageFile:C:\images\capture.wim /Server:MY-WDS-0ImageType:Boot</system>
                               </para>
                             </listItem>
                           </list>

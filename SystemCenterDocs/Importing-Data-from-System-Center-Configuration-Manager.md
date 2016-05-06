@@ -13,7 +13,7 @@ ms.assetid: abaf3337-f620-4220-bbbb-13007dc72754
 # Importing Data from System Center Configuration Manager
 This section describes how to create, configure, disable, and enable a Configuration Manager connector, and how to customize the Configuration Manager extended SMS\_def.mof file for collecting hardware information. You use the connector to import data from System Center Configuration Manager into Service Manager.
 
-The connector for Configuration Manager recognizes User\-device Affinity and Mobile Devices and synchronizes them in the [!INCLUDE[smshort](./Token/smshort_md.md)] database.
+The connector for Configuration Manager recognizes User\-device Affinity and Mobile Devices and synchronizes them in the [!INCLUDE[smshort](Token/smshort_md.md)] database.
 
 ## Importing Data from Configuration Manager Topics
 
@@ -23,11 +23,11 @@ The connector for Configuration Manager recognizes User\-device Affinity and Mob
 
 -   [How to Create a Configuration Manager Connector](How-to-Create-a-Configuration-Manager-Connector.md)
 
-    Describes how to create a Configuration Manager connector and import data from [!INCLUDE[sccmno2007](./Token/sccmno2007_md.md)].
+    Describes how to create a Configuration Manager connector and import data from [!INCLUDE[sccmno2007](Token/sccmno2007_md.md)].
 
 -   [How to Disable and Enable a Configuration Manager Connector](How-to-Disable-and-Enable-a-Configuration-Manager-Connector.md)
 
-    Describes how to disable and enable a Configuration Manager connector to pause and resume data import from [!INCLUDE[sccmno2007](./Token/sccmno2007_md.md)].
+    Describes how to disable and enable a Configuration Manager connector to pause and resume data import from [!INCLUDE[sccmno2007](Token/sccmno2007_md.md)].
 
 -   [How to Synchronize a Configuration Manager Connector](How-to-Synchronize-a-Configuration-Manager-Connector.md)
 

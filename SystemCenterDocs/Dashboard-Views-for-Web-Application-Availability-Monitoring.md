@@ -14,13 +14,13 @@ ms.assetid: 8605ec58-9fef-4715-9f74-a195eefb82c3
 Dashboards show your test results so you can more effectively see trends and isolate problems for certain tests, locations, and applications.
 
 ## Viewing the Dashboards
-To view the Web Application Availability Monitoring dashboards for internal URL tests, you need to use [!INCLUDE[om12short](./Token/om12short_md.md)] script.
+To view the Web Application Availability Monitoring dashboards for internal URL tests, you need to use [!INCLUDE[om12short](Token/om12short_md.md)] script.
 
 #### To view the Summary and Details dashboards
 
-1.  From the **Start** menu, open the [!INCLUDE[om12short](./Token/om12short_md.md)] Shell.
+1.  From the **Start** menu, open the [!INCLUDE[om12short](Token/om12short_md.md)] Shell.
 
-2.  Use New\-SCOMLocation, Get\-SCOMAgent, and Set\-SCOMLocation to add a location, get an [!INCLUDE[om12short](./Token/om12short_md.md)] agent, and then associate the location with the agent. Here is an example using Seattle, WA as a location:
+2.  Use New\-SCOMLocation, Get\-SCOMAgent, and Set\-SCOMLocation to add a location, get an [!INCLUDE[om12short](Token/om12short_md.md)] agent, and then associate the location with the agent. Here is an example using Seattle, WA as a location:
 
     ```
     PS C:\> $Location = New-SCOMLocation -DisplayName “Seattle, WA” -Latitude 47.6063889 -Longitude -122.330833
@@ -28,9 +28,9 @@ To view the Web Application Availability Monitoring dashboards for internal URL 
     PS C:\> Set-SCOMLocation -Location $Location -Agent $Agent
     ```
 
-    For more information about adding a location, see [New\-SCOMLocation](http://go.microsoft.com/fwlink/?LinkId=235473). For more information about getting an [!INCLUDE[om12short](./Token/om12short_md.md)] agent, see [Get\-SCOMAgent](http://go.microsoft.com/fwlink/?LinkID=187686). For more information about associating a location with an agent, see [Set\-SCOMLocation](http://go.microsoft.com/fwlink/?LinkId=235479).
+    For more information about adding a location, see [New\-SCOMLocation](http://go.microsoft.com/fwlink/?LinkId=235473). For more information about getting an [!INCLUDE[om12short](Token/om12short_md.md)] agent, see [Get\-SCOMAgent](http://go.microsoft.com/fwlink/?LinkID=187686). For more information about associating a location with an agent, see [Set\-SCOMLocation](http://go.microsoft.com/fwlink/?LinkId=235479).
 
-3.  After you run the commands, in the [!INCLUDE[om12short](./Token/om12short_md.md)] console, in the navigation pane, click the **Monitoring** button, and then click **Application Monitoring**.
+3.  After you run the commands, in the [!INCLUDE[om12short](Token/om12short_md.md)] console, in the navigation pane, click the **Monitoring** button, and then click **Application Monitoring**.
 
 4.  Expand **Web Application Availability Monitoring**, click **Active Alerts**, **Test State**, or **Web Application Status** to display alerts or status for the category.
 
@@ -41,7 +41,7 @@ If you want to check to see if an application is available, the Summary Dashboar
 
 #### To check the overall status of a web application using the Summary Dashboard
 
-1.  In the [!INCLUDE[om12short](./Token/om12short_md.md)] console, in the navigation pane, click the **Monitoring** button, and then click **Application Monitoring**.
+1.  In the [!INCLUDE[om12short](Token/om12short_md.md)] console, in the navigation pane, click the **Monitoring** button, and then click **Application Monitoring**.
 
 2.  Expand **Web Application Availability Monitoring**, and then click **Active Alerts**, **Test State**, or **Web Application Status** to display alerts or status for the category.
 
@@ -62,7 +62,7 @@ If you want to investigate a particular test or alert, use the Detailed Dashboar
 
 #### To pinpoint problems using the Details Dashboard
 
-1.  Begin the same way you opened the Summary Dashboard. In the [!INCLUDE[om12short](./Token/om12short_md.md)] console, in the navigation pane, click the **Monitoring** button, and then click **Application Monitoring**.
+1.  Begin the same way you opened the Summary Dashboard. In the [!INCLUDE[om12short](Token/om12short_md.md)] console, in the navigation pane, click the **Monitoring** button, and then click **Application Monitoring**.
 
 2.  Expand **Web Application Availability Monitoring**, and then click **Active Alerts**, **Test State**, or **Web Application Status** to display alerts or status for the category.
 

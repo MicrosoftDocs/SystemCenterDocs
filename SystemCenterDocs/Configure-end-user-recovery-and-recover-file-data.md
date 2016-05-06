@@ -33,7 +33,7 @@ Configuring end\-user recovery requires the following:
 
     -   Adds mappings between the source shares and the replica shares
 
-    For administrators who are both schema and domain administrators in AD DS this procedure can be completed with a couple of clicks in the DPM console. For non\-administrators the DPMADSchemaExtension tool runs to complete the configuration. This tool is located on the DPM server in the Microsoft DPM\\DPM\\End User Recovery folder. It will be run on each DPM server in your deployment. For more information about the tool, see D[Changes made to AD DS for end-user recovery](./Changes-made-to-AD-DS-for-end-user-recovery.md).
+    For administrators who are both schema and domain administrators in AD DS this procedure can be completed with a couple of clicks in the DPM console. For non\-administrators the DPMADSchemaExtension tool runs to complete the configuration. This tool is located on the DPM server in the Microsoft DPM\\DPM\\End User Recovery folder. It will be run on each DPM server in your deployment. For more information about the tool, see D[Changes made to AD DS for end-user recovery](Changes-made-to-AD-DS-for-end-user-recovery.md).
 
 2.  [Enable or disable end\-user recovery on the DPM server](#BKMK_Enable)—This step is only required for client computers running computers running Windows XP with SP2 or later and Windows Server 2003 with or without SP1. Computers running later versions of operating systems can skip this step.
 
@@ -72,7 +72,7 @@ The following procedures show you how to configure Active Directory Domain Servi
 6.  In the **Options** dialog box, on the **End\-user Recovery** tab, select the check box for the **Enable end\-user recovery** option, and then click **OK**.
 
 ## <a name="BKMK_Enable"></a>Enable or disable end\-user recovery on the DPM server
-In [!INCLUDE[dpm2012long](./Token/dpm2012long_md.md)], if you want to allow end users to recover their own data, you can use the following procedure to enable the end\-user recovery option.
+In [!INCLUDE[dpm2012long](Token/dpm2012long_md.md)], if you want to allow end users to recover their own data, you can use the following procedure to enable the end\-user recovery option.
 
 #### To enable end\-user recovery
 
@@ -99,7 +99,7 @@ In [!INCLUDE[dpm2012long](./Token/dpm2012long_md.md)], if you want to allow end 
     This action takes effect after the next successful synchronization job is completed. If you want this action to take effect immediately, you can manually synchronize the replica.
 
 ## <a name="BKMK_Shadow"></a>Install the shadow copy client software on client computers
-Before users on operating systems running Windows XP with SP2 or later and Windows Server 2003 with or without SP1 can begin independently recovering previous versions of their files and applications, the [!INCLUDE[dpm2012short](./Token/dpm2012short_md.md)] shadow copy client software must be installed on their computers. If a client for Shadow Copies of Shared Folders is present on the computer, the client software must be updated to support [!INCLUDE[dpm2012short](./Token/dpm2012short_md.md)]. Note that this isn’t required for computers running later versions of operating systems.
+Before users on operating systems running Windows XP with SP2 or later and Windows Server 2003 with or without SP1 can begin independently recovering previous versions of their files and applications, the [!INCLUDE[dpm2012short](Token/dpm2012short_md.md)] shadow copy client software must be installed on their computers. If a client for Shadow Copies of Shared Folders is present on the computer, the client software must be updated to support [!INCLUDE[dpm2012short](Token/dpm2012short_md.md)]. Note that this isn’t required for computers running later versions of operating systems.
 
 #### To install Shadow Copy Client software
 
@@ -111,8 +111,8 @@ Before users on operating systems running Windows XP with SP2 or later and Wind
 
 2.  Install the client software on users’ workstations by using your usual software distribution method—for example, Group Policy Software Installation, Microsoft Systems Management Server, Microsoft System Center Configuration Manager, or shared folders. If your users will install the client software on their own workstations, instruct them to copy the Setup program to any location on their computer, double\-click the file name or icon, and then follow the instructions in the wizard.
 
-    If the setup fails, [!INCLUDE[dpm2012short](./Token/dpm2012short_md.md)] displays the end\-user recovery permissions update failed alert.
+    If the setup fails, [!INCLUDE[dpm2012short](Token/dpm2012short_md.md)] displays the end\-user recovery permissions update failed alert.
 
-3.  When using the end\-user recovery functionality of [!INCLUDE[dpm2012short](./Token/dpm2012short_md.md)], disable the local shadow copies on the protected server.
+3.  When using the end\-user recovery functionality of [!INCLUDE[dpm2012short](Token/dpm2012short_md.md)], disable the local shadow copies on the protected server.
 
 

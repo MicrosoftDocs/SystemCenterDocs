@@ -11,9 +11,9 @@ ms.topic: article
 ms.assetid: 836cd87d-c9fe-4b8e-86c4-f8bdd23cc995
 ---
 # Windows Events
-Many Windows\-based applications post information to events in a Windows event log. This could be a standard log such as **Application** or a log specific to the application being monitored. These events follow a standard format and frequently contain detailed information about the particular issue. If the application you are monitoring creates a Windows event in response to a particular issue, then this likely be the most effective way to detect the issue in an [!INCLUDE[om12short](./Token/om12short_md.md)] management pack.
+Many Windows\-based applications post information to events in a Windows event log. This could be a standard log such as **Application** or a log specific to the application being monitored. These events follow a standard format and frequently contain detailed information about the particular issue. If the application you are monitoring creates a Windows event in response to a particular issue, then this likely be the most effective way to detect the issue in an [!INCLUDE[om12short](Token/om12short_md.md)] management pack.
 
-When you create a rule or monitor that uses a Windows event, [!INCLUDE[om12short](./Token/om12short_md.md)] continuously monitors the log and immediately responds when an event matching the specified criteria is detected. These events are persisted meaning that they are available after they are initially created. [!INCLUDE[om12short](./Token/om12short_md.md)] will record the last position that it read in the log and continue from that position the next time it reads the log. If the health service on the agent is not running when a particular event is created, [!INCLUDE[om12short](./Token/om12short_md.md)] will detect it the next time that the agent is started.
+When you create a rule or monitor that uses a Windows event, [!INCLUDE[om12short](Token/om12short_md.md)] continuously monitors the log and immediately responds when an event matching the specified criteria is detected. These events are persisted meaning that they are available after they are initially created. [!INCLUDE[om12short](Token/om12short_md.md)] will record the last position that it read in the log and continue from that position the next time it reads the log. If the health service on the agent is not running when a particular event is created, [!INCLUDE[om12short](Token/om12short_md.md)] will detect it the next time that the agent is started.
 
 ## Windows Event Wizards
 The table below lists the wizards that are available for Windows events.
@@ -22,11 +22,11 @@ The table below lists the wizards that are available for Windows events.
 
 |Wizards Available|
 |---------------------|
-|Simple Event Detection using each of the standard [Event Monitor Reset](./Event-Monitor-Reset.md) methods|
-|Repeated Event Detection using each of the standard [Event Monitor Reset](./Event-Monitor-Reset.md) methods|
-|Missing Event Detection using each of the standard [Event Monitor Reset](./Event-Monitor-Reset.md) methods|
-|Correlated Event Detection using each of the standard [Event Monitor Reset](./Event-Monitor-Reset.md) methods|
-|Correlated Missing Event Detection using each of the standard [Event Monitor Reset](./Event-Monitor-Reset.md) methods|
+|Simple Event Detection using each of the standard [Event Monitor Reset](Event-Monitor-Reset.md) methods|
+|Repeated Event Detection using each of the standard [Event Monitor Reset](Event-Monitor-Reset.md) methods|
+|Missing Event Detection using each of the standard [Event Monitor Reset](Event-Monitor-Reset.md) methods|
+|Correlated Event Detection using each of the standard [Event Monitor Reset](Event-Monitor-Reset.md) methods|
+|Correlated Missing Event Detection using each of the standard [Event Monitor Reset](Event-Monitor-Reset.md) methods|
 
 **Rules**
 
@@ -45,10 +45,10 @@ The **General** page includes general settings for the rule or wizard including 
 |----------|---------------|
 |Name|The name used for the rule or monitor. For a rule, the name appears in the **Rules** view in the **Authoring** pane. When you create a view or report, you can select this name to use the data collected by it. For a monitor, the name appears in the Health Explorer of any target objects.|
 |Description|Optional description of the rule or monitor.|
-|Management Pack|Management pack file to store the rule or monitor.<br /><br />For more information on management packs, see [Selecting a Management Pack File](./Selecting-a-Management-Pack-File.md).|
+|Management Pack|Management pack file to store the rule or monitor.<br /><br />For more information on management packs, see [Selecting a Management Pack File](Selecting-a-Management-Pack-File.md).|
 |Rule Category \(Rules only\)|The category for the rule. For an event collection rule, this should be **Event Collection**. For an alerting rule, this should be **Alert**.|
-|Parent Monitor \(Monitors only\)|The aggregate monitor that the monitor will be positioned under in the Health Explorer. For more information, see [Aggregate Monitors](./Aggregate-Monitors.md).|
-|Target|The class to use for the target of the rule or monitor. The rule or monitor will be run on any agent that has at least one instance of this class. For more information on targets, see [Understanding Classes and Objects](./Understanding-Classes-and-Objects.md).|
+|Parent Monitor \(Monitors only\)|The aggregate monitor that the monitor will be positioned under in the Health Explorer. For more information, see [Aggregate Monitors](Aggregate-Monitors.md).|
+|Target|The class to use for the target of the rule or monitor. The rule or monitor will be run on any agent that has at least one instance of this class. For more information on targets, see [Understanding Classes and Objects](Understanding-Classes-and-Objects.md).|
 |Rule is enabled<br /><br />Monitor is enabled|Specifies whether the rule or monitor is enabled.|
 
 ### Event Log Type
@@ -82,12 +82,12 @@ The **Auto Reset Timer** page is only available for timer reset monitors. It all
 The **Configure Health** page is only available for monitors. It allows you to specify the health state that will be set for each of the events. For a manual reset monitor, the **Manual Reset** condition will be **Healthy**, and you can specify whether the **Event Raised** condition will set the monitor to a **Warning** or a **Critical** state. For a **Timer Reset** or a **Windows Event Reset**, you can specify the health state set by each event. The first event will typically set the monitor to **Warning** or **Critical** while the second event or the timer will set the monitor to **Healthy**.
 
 ### Configure Alerts
-The **Configure Alerts** page is only available for monitors and alerting rules. Its options are explained in [Alerts](./Alerts.md).
+The **Configure Alerts** page is only available for monitors and alerting rules. Its options are explained in [Alerts](Alerts.md).
 
 ## <a name="Procedures"></a>Creating Windows Event Monitors
 
 ### How to create a Windows event monitor
-Use the following procedure to create an event monitor in [!INCLUDE[om12short](./Token/om12short_md.md)] with the following details:
+Use the following procedure to create an event monitor in [!INCLUDE[om12short](Token/om12short_md.md)] with the following details:
 
 -   Runs on all agents with a particular service installed.
 
@@ -100,9 +100,9 @@ Use the following procedure to create an event monitor in [!INCLUDE[om12short](.
 
 ##### To create an event monitor
 
-1.  If you don’t have a management pack for the application that you are monitoring, create one using the process in [Selecting a Management Pack File](./Selecting-a-Management-Pack-File.md).
+1.  If you don’t have a management pack for the application that you are monitoring, create one using the process in [Selecting a Management Pack File](Selecting-a-Management-Pack-File.md).
 
-2.  Create a new target using the process in [To create a Windows Service template](./Windows-Service-Template.md#CreateWindowsServiceTemplate). You can use any service installed on a test agent for this template.
+2.  Create a new target using the process in [To create a Windows Service template](Windows-Service-Template.md#CreateWindowsServiceTemplate). You can use any service installed on a test agent for this template.
 
 3.  In the Operations console, select the **Authoring** workspace.
 
@@ -179,9 +179,9 @@ Use the following procedure to create an event monitor in [!INCLUDE[om12short](.
     2.  Click **Create**.
 
 ## See Also
-[Event Monitors and Rules](./Event-Monitors-and-Rules.md)
-[Event Monitor Logic](./Event-Monitor-Logic.md)
-[Event Monitor Reset](./Event-Monitor-Reset.md)
-[Alerts](./Alerts.md)
+[Event Monitors and Rules](Event-Monitors-and-Rules.md)
+[Event Monitor Logic](Event-Monitor-Logic.md)
+[Event Monitor Reset](Event-Monitor-Reset.md)
+[Alerts](Alerts.md)
 
 

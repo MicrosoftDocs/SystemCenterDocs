@@ -11,7 +11,7 @@ ms.topic: article
 ms.assetid: c7f7aac4-41b4-4094-bad6-3a509ff71bba
 ---
 # Monitoring Service Level Objectives by Using Operations Manager
-To ensure that resources, such as applications and systems, are available and performing at acceptable levels, companies set goals for their service availability and response times. [!INCLUDE[om12long](./Token/om12long_md.md)] provides the capability to monitor these service goals by tracking service level objectives.
+To ensure that resources, such as applications and systems, are available and performing at acceptable levels, companies set goals for their service availability and response times. [!INCLUDE[om12long](Token/om12long_md.md)] provides the capability to monitor these service goals by tracking service level objectives.
 
 Service level objectives are measurements to ensure that you are meeting defined service level commitments. In Operations Manager, you define a service level objective – the set of monitors that you need to track \(such as performance or availability\) – and then run reports against that service level objective to ensure that you are meeting your goals.
 

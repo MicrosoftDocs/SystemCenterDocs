@@ -112,7 +112,7 @@ Add Reference to your content
   You can also create a link to an existing topic in CAPS with the authoring toolbar
   
 - **Insert Image**
-  You can reference a online image from external resource by using `![Image Label]`, and then wrapping the image resource url in parentheses `(http/ImageURL)`
+  You can reference a online image from external resource by using `![Image Label]`, and then wrapping the image resource url in parentheses `(httpImageURL)`
   
   You can also insert an image from CAPS with the authoring toolbar
 

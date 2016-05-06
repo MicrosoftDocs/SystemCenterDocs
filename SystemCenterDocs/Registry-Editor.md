@@ -18,7 +18,7 @@ ms.assetid: 3165c505-893b-4c3f-852a-848d070dd6ad
     <alert class="caution">
       <para>Incorrectly editing the registry may severely damage your system. Before making changes to the registry, you should back up any valued data on your computer and export the existing registry so that you can restore it if you make a mistake that results in your computer not starting properly.</para>
     </alert>
-    <para>This topic explains how to import and export registry files. <token>whymshelpnotonbo./Token> Much more information about the registry and using Registry Editor is available. <token>helpnotonbo./Token></para>
+    <para>This topic explains how to import and export registry files. <token>whymshelpnotonboToken> Much more information about the registry and using Registry Editor is available. <token>helpnotonboToken></para>
     <para>
       <externalLink>
         <linkText>http://go.microsoft.com/fwlink/p/?linkid=221024</linkText> 

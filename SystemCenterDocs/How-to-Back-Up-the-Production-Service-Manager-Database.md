@@ -11,7 +11,7 @@ ms.topic: article
 ms.assetid: 4ebe6cb4-0352-4c71-b2a9-0a235c0102d5
 ---
 # How to Back Up the Production Service Manager Database
-Use the following procedure to back up the production [!INCLUDE[smshort](./Token/smshort_md.md)] database in Microsoft SQL Server 2008 R2.
+Use the following procedure to back up the production [!INCLUDE[smshort](Token/smshort_md.md)] database in Microsoft SQL Server 2008 R2.
 
 ### To back up the Service Manager database
 

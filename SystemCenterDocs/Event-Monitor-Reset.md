@@ -11,7 +11,7 @@ ms.topic: article
 ms.assetid: d05005cc-56d7-4345-93be-09d836da44a1
 ---
 # Event Monitor Reset
-Unlike other kinds of monitors in [!INCLUDE[om12long](./Token/om12long_md.md)], it may be difficult to define the criteria to return an event monitor to a healthy state. This is because applications often generate an event when a problem occurs but do not create a corresponding event when the problem has been corrected. For this reason, you have the following options for setting the healthy state for an event monitor.
+Unlike other kinds of monitors in [!INCLUDE[om12long](Token/om12long_md.md)], it may be difficult to define the criteria to return an event monitor to a healthy state. This is because applications often generate an event when a problem occurs but do not create a corresponding event when the problem has been corrected. For this reason, you have the following options for setting the healthy state for an event monitor.
 
 |Reset Logic|Description|
 |---------------|---------------|
@@ -47,8 +47,8 @@ The timer reset can be used in the place of a manual reset providing the advanta
 -   If the application you’re monitoring does not create an event when the problem has been corrected, then you should use Manual Reset or Timer Reset. Refer to the descriptions of each above to determine which strategy is most appropriate for your specific purposes.
 
 ## See Also
-[Event Monitors and Rules](./Event-Monitors-and-Rules.md)
-[Windows Events](./Windows-Events.md)
-[Text Logs](./Text-Logs.md)
+[Event Monitors and Rules](Event-Monitors-and-Rules.md)
+[Windows Events](Windows-Events.md)
+[Text Logs](Text-Logs.md)
 
 

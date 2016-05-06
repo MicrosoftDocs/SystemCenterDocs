@@ -9,27 +9,27 @@ ms.assetid: 4693a343-75d4-45c6-b697-78cf50dd7ac8
 robots: noindex,nofollow
 ---
 # Using Groups, Queues, and Lists in System Center 2016 - Service Manager_1
-In [!INCLUDE[scsm_threshold_1](./Token/scsm_threshold_1_md.md)], you can use groups to manage configuration items, queues to manage work items, and lists to customize forms to classify different objects, such as incidents, change requests, activities, or configuration items. Use the overview and the procedures in the following topics to help manage these items.
+In [!INCLUDE[scsm_threshold_1](Token/scsm_threshold_1_md.md)], you can use groups to manage configuration items, queues to manage work items, and lists to customize forms to classify different objects, such as incidents, change requests, activities, or configuration items. Use the overview and the procedures in the following topics to help manage these items.
 
 ## Groups, Queues, and Lists Topics
 
--   [About Groups, Queues, and Lists_1](./About-Groups,-Queues,-and-Lists_1.md)
+-   [About Groups, Queues, and Lists_1](About-Groups,-Queues,-and-Lists_1.md)
 
-    Provides an overview of groups, queues, and lists in [!INCLUDE[smshort12](./Token/smshort12_md.md)].
+    Provides an overview of groups, queues, and lists in [!INCLUDE[smshort12](Token/smshort12_md.md)].
 
--   [How to Create a Group](./How-to-Create-a-Group.md)
+-   [How to Create a Group](How-to-Create-a-Group.md)
 
     Describes how to create a group.
 
--   [How to Create a Queue](./How-to-Create-a-Queue.md)
+-   [How to Create a Queue](How-to-Create-a-Queue.md)
 
     Describes how to create a queue.
 
--   [How to Edit a Queue](./How-to-Edit-a-Queue.md)
+-   [How to Edit a Queue](How-to-Edit-a-Queue.md)
 
     Describes how to edit a queue.
 
--   [How to Add a List Item](./How-to-Add-a-List-Item.md)
+-   [How to Add a List Item](How-to-Add-a-List-Item.md)
 
     Describes how to add a list item.
 

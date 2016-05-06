@@ -11,9 +11,9 @@ ms.topic: article
 ms.assetid: 6e085a23-5fae-4592-a08c-55cefb2a2926
 ---
 # Computer Groups
-[!INCLUDE[orchlong](./Token/orchlong_md.md)] is designed to interact with all of your data center systems. Computer groups let you target selected activities against a set of similar computer systems instead of a single computer. By configuring the activities in your runbook to use a computer group, you have the flexibility to add computers dynamically by adding them to the computer group.
+[!INCLUDE[orchlong](Token/orchlong_md.md)] is designed to interact with all of your data center systems. Computer groups let you target selected activities against a set of similar computer systems instead of a single computer. By configuring the activities in your runbook to use a computer group, you have the flexibility to add computers dynamically by adding them to the computer group.
 
-You can create computer groups by using Active Directory queries, and you can manage the list of computers in a group outside of [!INCLUDE[orchshort](./Token/orchshort_md.md)]. For example, if you have a computer group that is created from an Active Directory query that retrieves all instances of Microsoft SQL Server, when an instance of SQL Server is added to your Active Directory system, it is automatically included in that group.
+You can create computer groups by using Active Directory queries, and you can manage the list of computers in a group outside of [!INCLUDE[orchshort](Token/orchshort_md.md)]. For example, if you have a computer group that is created from an Active Directory query that retrieves all instances of Microsoft SQL Server, when an instance of SQL Server is added to your Active Directory system, it is automatically included in that group.
 
 ## Managing Computer Groups
 To use computer groups in your activities, create a computer group, and then add computers to it.
@@ -26,7 +26,7 @@ You can also organize your computer groups into folders. Use the following steps
 
 2.  Right\-click to select **New**, and then click **Folder**.
 
-Use the following procedure to add a computer group. To add computers by using an Active Directory query or a [!INCLUDE[cm5short](./Token/cm5short_md.md)] collection, use the Active Directory Integration Pack or the Integration Pack for System Center 2012 Configuration Manager.
+Use the following procedure to add a computer group. To add computers by using an Active Directory query or a [!INCLUDE[cm5short](Token/cm5short_md.md)] collection, use the Active Directory Integration Pack or the Integration Pack for System Center 2012 Configuration Manager.
 
 #### To add a computer group
 
@@ -68,6 +68,6 @@ Use the following procedure to use a computer group.
     When the activity runs, it runs on each computer in the group.
 
 ## See Also
-[Data Manipulation](./Data-Manipulation.md)
+[Data Manipulation](Data-Manipulation.md)
 
 

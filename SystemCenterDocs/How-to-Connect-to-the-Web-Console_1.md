@@ -8,7 +8,7 @@ ms.topic: article
 ms.assetid: ba1c06b7-121f-4535-8385-57c53d26200b
 ---
 # How to Connect to the Web Console_1
-In [!INCLUDE[om12long](./Token/om12long_md.md)], the web console provides a monitoring interface for a management group that can be opened on any computer that has connectivity to the web console server. The web console is limited to My Workspace and the Monitoring workspace.
+In [!INCLUDE[om12long](Token/om12long_md.md)], the web console provides a monitoring interface for a management group that can be opened on any computer that has connectivity to the web console server. The web console is limited to My Workspace and the Monitoring workspace.
 
 > [!NOTE]
 > You must use Internet Explorer 7, Internet Explorer 8, or Internet Explorer 9 to connect to the Operations Manager web console. In addition, the Operations Manager web console requires that JavaScript be enabled. To enable JavaScript in Internet Explorer, open **Internet Options**, and click the **Security** tab. Select the zone for the web console \(Internet, Local intranet, or Trusted sites\), and then click **Custom level**. Enable **Active scripting**, click **OK**, click **OK**, and then connect to the web console.
@@ -31,9 +31,9 @@ By default, the web console session is limited to 30 minutes. You can change thi
 For information on installing the web console, see [Deployment Guide for Operations Manager 2012](http://go.microsoft.com/fwlink/p/?LinkID=213291).
 
 ## See Also
-[Comparing the Operations Console and Web Console in Operations Manager](./Comparing-the-Operations-Console-and-Web-Console-in-Operations-Manager.md)
-[Using the Monitoring Workspace in Operations Manager](./Using-the-Monitoring-Workspace-in-Operations-Manager.md)
-[Using My Workspace in Operations Manager](./Using-My-Workspace-in-Operations-Manager.md)
-[Managing Alerts](./Managing-Alerts.md)
+[Comparing the Operations Console and Web Console in Operations Manager](Comparing-the-Operations-Console-and-Web-Console-in-Operations-Manager.md)
+[Using the Monitoring Workspace in Operations Manager](Using-the-Monitoring-Workspace-in-Operations-Manager.md)
+[Using My Workspace in Operations Manager](Using-My-Workspace-in-Operations-Manager.md)
+[Managing Alerts](Managing-Alerts.md)
 
 

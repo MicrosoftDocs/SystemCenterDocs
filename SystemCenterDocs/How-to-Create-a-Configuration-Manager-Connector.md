@@ -18,7 +18,7 @@ You can use the following procedures to create a connector to import data from C
 
 ### To create a Configuration Manager connector
 
-1.  In the [!INCLUDE[smcons](./Token/smcons_md.md)], click **Administration**.
+1.  In the [!INCLUDE[smcons](Token/smcons_md.md)], click **Administration**.
 
 2.  In the **Administration** pane, expand **Administration**, and then click **Connectors**.
 
@@ -73,7 +73,7 @@ You can use the following procedures to create a connector to import data from C
 
 1.  Confirm that the Configuration Manager connector that you created is displayed in the **Connectors** pane.
 
-2.  In the [!INCLUDE[smcons](./Token/smcons_md.md)], click **Configuration Items**. In the **Configuration Items** pane, expand **Configuration Items**, expand **Computers**, and then click **All Windows Computers**. Verify that the intended computers from Configuration Manager appear in the **All Windows Computers** pane.
+2.  In the [!INCLUDE[smcons](Token/smcons_md.md)], click **Configuration Items**. In the **Configuration Items** pane, expand **Configuration Items**, expand **Computers**, and then click **All Windows Computers**. Verify that the intended computers from Configuration Manager appear in the **All Windows Computers** pane.
 
 3.  In the middle pane, double\-click a newly imported computer. Verify that the appropriate computer details appear in the computer form.
 
@@ -81,6 +81,6 @@ You can use the following procedures to create a connector to import data from C
 
 -   View the columns in the **Connector** pane; the columns contain information about the start time, the finish time, the status, and the percentage of completion.
 
-![](/Image/PSSymbol.gif)You can use a Windows PowerShell command to create a new Configuration Manager connector. For information about how to use Windows PowerShell to create a new Configuration Manager connector in Service Manager, see [New\-SCCMConnector](http://go.microsoft.com/fwlink/p/?LinkId=225350).
+![](Image/PSSymbol.gif)You can use a Windows PowerShell command to create a new Configuration Manager connector. For information about how to use Windows PowerShell to create a new Configuration Manager connector in Service Manager, see [New\-SCCMConnector](http://go.microsoft.com/fwlink/p/?LinkId=225350).
 
 

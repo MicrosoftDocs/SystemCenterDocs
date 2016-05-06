@@ -8,7 +8,7 @@ ms.topic: article
 ms.assetid: b109c76e-c479-4f57-b015-82d8b7d018fe
 ---
 # How to Create an Active Directory Domain Services Container for a Management Group_1
-You can use the following command\-line syntax and procedure to create an Active Directory Domain Service \(AD DS\) container for a [!INCLUDE[om12long](./Token/om12long_md.md)] management group. MOMADAdmin.exe is provided for this purpose and is installed with the Operations Manager management server. MOMADAdmin.exe must be run by an administrator of the specified domain. It can be run on a computer running Microsoft Windows 2000 SP4, Windows XP SP2, and Windows Server 2003 with Microsoft .NET Framework 2.0 installed.
+You can use the following command\-line syntax and procedure to create an Active Directory Domain Service \(AD DS\) container for a [!INCLUDE[om12long](Token/om12long_md.md)] management group. MOMADAdmin.exe is provided for this purpose and is installed with the Operations Manager management server. MOMADAdmin.exe must be run by an administrator of the specified domain. It can be run on a computer running Microsoft Windows 2000 SP4, Windows XP SP2, and Windows Server 2003 with Microsoft .NET Framework 2.0 installed.
 
 **Command line syntax:**
 
@@ -61,9 +61,9 @@ You can use the following command\-line syntax and procedure to create an Active
     3.  Add the **MessageDom\\MessageAdAcct** domain user account to the **MessageDom\\MessageMOMAdmin** AD DS security group and assign the security AD DS group the rights necessary to manage the AD DS container.
 
 ## See Also
-[Integrating Active Directory and Operations Manager](./Integrating-Active-Directory-and-Operations-Manager.md)
-[Using Active Directory Domain Services to Assign Computers to Operations Manager Management Groups](./Using-Active-Directory-Domain-Services-to-Assign-Computers-to-Operations-Manager-Management-Groups.md)
-[How to Use Active Directory Domain Services to Assign Computers to Management Servers](./How-to-Use-Active-Directory-Domain-Services-to-Assign-Computers-to-Management-Servers.md)
-[Changing the Active Directory Integration Setting for an Agent](./Changing-the-Active-Directory-Integration-Setting-for-an-Agent.md)
+[Integrating Active Directory and Operations Manager](Integrating-Active-Directory-and-Operations-Manager.md)
+[Using Active Directory Domain Services to Assign Computers to Operations Manager Management Groups](Using-Active-Directory-Domain-Services-to-Assign-Computers-to-Operations-Manager-Management-Groups.md)
+[How to Use Active Directory Domain Services to Assign Computers to Management Servers](How-to-Use-Active-Directory-Domain-Services-to-Assign-Computers-to-Management-Servers.md)
+[Changing the Active Directory Integration Setting for an Agent](Changing-the-Active-Directory-Integration-Setting-for-an-Agent.md)
 
 

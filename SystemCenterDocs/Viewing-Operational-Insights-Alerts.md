@@ -11,7 +11,7 @@ ms.topic: article
 ms.assetid: a885bba6-4114-4ed2-bd5a-3fff66db27ee
 ---
 # Viewing Operational Insights Alerts
-Microsoft Azure Operational Insights is an online service that analyzes installations of Microsoft server software. With [!INCLUDE[omblue_1](./Token/omblue_1_md.md)], you can view Operational Insights alerts in the [!INCLUDE[omblue_2](./Token/omblue_2_md.md)] console.
+Microsoft Azure Operational Insights is an online service that analyzes installations of Microsoft server software. With [!INCLUDE[omblue_1](Token/omblue_1_md.md)], you can view Operational Insights alerts in the [!INCLUDE[omblue_2](Token/omblue_2_md.md)] console.
 
 Operational Insights collects data from your installations, analyzes it, and generates alerts that identify potential issues \(such as missing security patches\) or deviations from identified best practices with regard to configuration and usage. Operational Insights also provides both current and historical views of the configuration of servers in your environment.
 

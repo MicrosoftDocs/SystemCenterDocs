@@ -48,7 +48,7 @@ Uninstall process:
 4.  Review the results and recommendations.
 
 ## Orchestrator rules
-[!INCLUDE[orchlong](./Token/orchlong_md.md)] configuration checks:
+[!INCLUDE[orchlong](Token/orchlong_md.md)] configuration checks:
 
 |Orchestrator Component|Rule|Description|
 |--------------------------|--------|---------------|

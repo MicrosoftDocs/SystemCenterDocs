@@ -11,7 +11,7 @@ ms.topic: article
 ms.assetid: 09b8fca5-e1db-4775-910d-48cb8214401b
 ---
 # How to purge the Service Management Automation database
-In [!INCLUDE[sma_1](./Token/sma_1_md.md)], database purging is automatic, but you can adjust it to your needs.
+In [!INCLUDE[sma_1](Token/sma_1_md.md)], database purging is automatic, but you can adjust it to your needs.
 
 To enable the automatic database purge, you must enable the SQL Server Agent \(MSSQLSERVER\) service for Automatic start. The service is not turned on by default, but it is frequently started by SQL Server database administrators for other tasks.
 
@@ -19,7 +19,7 @@ If the SQL Server Agent service is not running, the purge will not occur and eve
 
 The job task that performs purge can be set up in the installer even if the customer is not running the SQL Server Agent service. But it will not do anything until the service is enabled.
 
-The database purge job is automatic, but it can be regulated by the [!INCLUDE[sma_1](./Token/sma_1_md.md)] administrator.
+The database purge job is automatic, but it can be regulated by the [!INCLUDE[sma_1](Token/sma_1_md.md)] administrator.
 
 -   By default, the database purge job runs every 15 minutes, and it runs only if there are records to purge.
 

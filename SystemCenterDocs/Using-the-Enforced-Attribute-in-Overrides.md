@@ -13,7 +13,7 @@ ms.assetid: 9f87c672-5eb9-4f10-b3b3-b693b51651d0
 # Using the Enforced Attribute in Overrides
 When you configure an override to a rule, monitor, or discovery in Operations Manager for System Center 2012, you will notice an **Enforced** check box in the row for each value that you can override, as shown in the following illustration.
 
-![](/Image/OverrideEnforced.gif)
+![](Image/OverrideEnforced.gif)
 
 When the Enforced attribute is selected for an override, this setting ensures that the override will take precedence over all other overrides of the same type and context that do not have **Enforced** set.
 
@@ -28,9 +28,9 @@ If you create an override that applies to GROUP\-B and sets the threshold to 95%
 If you create an override that applies to COMPUTER1 and sets the threshold to 60%, the resulting threshold for COMPUTER1 is 60% because the object override takes precedence over the class and group overrides.
 
 ## See Also
-[Using Classes and Groups for Overrides in Operations Manager](./Using-Classes-and-Groups-for-Overrides-in-Operations-Manager.md)
-[How to Override a Rule or Monitor](./How-to-Override-a-Rule-or-Monitor.md)
-[How to Enable or Disable a Rule or Monitor](./How-to-Enable-or-Disable-a-Rule-or-Monitor.md)
-[How to Enable Recovery and Diagnostic Tasks](./How-to-Enable-Recovery-and-Diagnostic-Tasks.md)
+[Using Classes and Groups for Overrides in Operations Manager](Using-Classes-and-Groups-for-Overrides-in-Operations-Manager.md)
+[How to Override a Rule or Monitor](How-to-Override-a-Rule-or-Monitor.md)
+[How to Enable or Disable a Rule or Monitor](How-to-Enable-or-Disable-a-Rule-or-Monitor.md)
+[How to Enable Recovery and Diagnostic Tasks](How-to-Enable-Recovery-and-Diagnostic-Tasks.md)
 
 

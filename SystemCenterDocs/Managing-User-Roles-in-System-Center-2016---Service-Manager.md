@@ -13,5 +13,5 @@ ms.assetid: e7cd2a94-13ad-40cf-84c5-f9063072a591
 # Managing User Roles in System Center 2016 - Service Manager
 This section provides an overview of user roles inAppendix A - List of User Role Profiles in System Center 2016 - Service Manager. It includes procedures that you can use to work with user roles.
 
-You can find a complete list of user roles in [!INCLUDE[smshort](./Token/smshort_md.md)] at [Appendix A - List of User Role Profiles in System Center 2016 - Service Manager](Appendix-A---List-of-User-Role-Profiles-in-System-Center-2016---Service-Manager.md).
+You can find a complete list of user roles in [!INCLUDE[smshort](Token/smshort_md.md)] at [Appendix A - List of User Role Profiles in System Center 2016 - Service Manager](Appendix-A---List-of-User-Role-Profiles-in-System-Center-2016---Service-Manager.md).
 

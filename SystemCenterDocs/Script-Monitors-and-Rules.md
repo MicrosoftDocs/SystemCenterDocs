@@ -11,9 +11,9 @@ ms.topic: article
 ms.assetid: 26b778f2-1255-487c-868a-b09c7fc5ab28
 ---
 # Script Monitors and Rules
-Monitoring scripts are used when the required data cannot be collected through other standard means such as an event or performance counter. The script collects data from information on the agent and creates a property bag by using the MOM.ScriptAPI object that is installed with the [!INCLUDE[om12short](./Token/om12short_md.md)] agent.
+Monitoring scripts are used when the required data cannot be collected through other standard means such as an event or performance counter. The script collects data from information on the agent and creates a property bag by using the MOM.ScriptAPI object that is installed with the [!INCLUDE[om12short](Token/om12short_md.md)] agent.
 
-Monitoring scripts may be written in any script language that can access the MOM.ScriptAPI object that is installed on all [!INCLUDE[om12short](./Token/om12short_md.md)] agents. You can use the Operations console to create scripts in VBScript or JScript. To use a [!INCLUDE[powshellshortname](./Token/powshellshortname_md.md)] script, you must use another Authoring tool such as the [Operations Manager R2 Authoring Console](./Authoring-Tools.md#AuthoringConsole) or [MP Author](./Authoring-Tools.md#MPAuthor).
+Monitoring scripts may be written in any script language that can access the MOM.ScriptAPI object that is installed on all [!INCLUDE[om12short](Token/om12short_md.md)] agents. You can use the Operations console to create scripts in VBScript or JScript. To use a [!INCLUDE[powshellshortname](Token/powshellshortname_md.md)] script, you must use another Authoring tool such as the [Operations Manager R2 Authoring Console](Authoring-Tools.md#AuthoringConsole) or [MP Author](Authoring-Tools.md#MPAuthor).
 
 ## <a name="PropertyBags"></a>Property Bags
 Monitoring scripts send any output data as a property bag so that it can be evaluated in an expression for a monitor or mapped into performance data or an event for a collection rule. A property bag is a set of values that each has a name. Any name can be assigned although it is a best practice to use a name descriptive of the particular value. A property bag only exists during the life of the workflow. The next time that the workflow runs, the script is run and creates a new property bag with new values.
@@ -122,15 +122,15 @@ MyScript.vbs MyServer01 "C:\Program Files\Contoso\My Application"
 
 ## Script Monitors and Rules Topics
 
--   [Script Collection Rules](./Script-Collection-Rules.md)
+-   [Script Collection Rules](Script-Collection-Rules.md)
 
     Creating a rule that uses a script to collect performance or event data.
 
--   [Script Monitors](./Script-Monitors.md)
+-   [Script Monitors](Script-Monitors.md)
 
     Creating a monitor that evaluates the results of a script to set its health state.
 
--   [UNIX - Linux Shell Command Monitors](./UNIX---Linux-Shell-Command-Monitors.md)
+-   [UNIX - Linux Shell Command Monitors](UNIX---Linux-Shell-Command-Monitors.md)
 
     Creating a monitor that evaluates the output of execution of an UNIX\/Linux command, script, or one\-line sequence of multiple commands \(using pipeline operators\).
 

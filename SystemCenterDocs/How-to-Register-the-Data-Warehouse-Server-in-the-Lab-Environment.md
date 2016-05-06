@@ -64,7 +64,7 @@ You can use a Windows PowerShell command to complete this task. For information 
 4.  If registration was successful, a table with two rows of data is displayed. One row displays data for the data warehouse management group, and a second row displays data for the Service Manager management group. If registration fails, only the data for the data warehouse management group is displayed.
 
 ## Determine when the deployment is complete
-Because you need to allow enough time for the management pack deployment process to be completed, you will have to determine when that process is complete. You can use the following procedure in [!INCLUDE[smshort](./Token/smshort_md.md)] to determine when the process is complete.
+Because you need to allow enough time for the management pack deployment process to be completed, you will have to determine when that process is complete. You can use the following procedure in [!INCLUDE[smshort](Token/smshort_md.md)] to determine when the process is complete.
 
 #### To determine when management pack deployment has completed
 

@@ -25,7 +25,7 @@ When you install Operations Manager, a component of System Center 2012, a numbe
 |Reporting|-   Data Warehouse Internal Library<br />-   Date Warehouse Library<br />-   Microsoft Data Warehouse Reports<br />-   Microsoft Generic Report Library<br />-   Microsoft ODR Report Library<br />-   Microsoft Service Level Report Library<br />-   Microsoft.SystemCenter.Reports.Deployment|
 |Audit collection services \(ACS\)|-   Microsoft Audit Collection Services|
 
-The following unsealed management packs are included in [!INCLUDE[om12short](./Token/om12short_md.md)]:
+The following unsealed management packs are included in [!INCLUDE[om12short](Token/om12short_md.md)]:
 
 -   Client Monitoring Overrides Management Pack
 
@@ -38,12 +38,12 @@ The following unsealed management packs are included in [!INCLUDE[om12short](./T
 Do not save any settings, views, or overrides to these management packs. You should create your own local pack, which is an unsealed management pack in which to store your customizations. As a best practice, you should create a separate local pack for each sealed management pack you customize.
 
 ## See Also
-[Creating a Management Pack for Overrides](./Creating-a-Management-Pack-for-Overrides.md)
-[What Is in an Operations Manager Management Pack?](./What-Is-in-an-Operations-Manager-Management-Pack-.md)
-[Management Pack Life Cycle](./Management-Pack-Life-Cycle.md)
-[How to Import an Operations Manager Management Pack](./How-to-Import-an-Operations-Manager-Management-Pack.md)
-[How to Remove an Operations Manager Management Pack](./How-to-Remove-an-Operations-Manager-Management-Pack.md)
-[How to Export an Operations Manager Management Pack](./How-to-Export-an-Operations-Manager-Management-Pack.md)
-[How to Add Knowledge to a Management Pack](./How-to-Add-Knowledge-to-a-Management-Pack.md)
+[Creating a Management Pack for Overrides](Creating-a-Management-Pack-for-Overrides.md)
+[What Is in an Operations Manager Management Pack?](What-Is-in-an-Operations-Manager-Management-Pack-.md)
+[Management Pack Life Cycle](Management-Pack-Life-Cycle.md)
+[How to Import an Operations Manager Management Pack](How-to-Import-an-Operations-Manager-Management-Pack.md)
+[How to Remove an Operations Manager Management Pack](How-to-Remove-an-Operations-Manager-Management-Pack.md)
+[How to Export an Operations Manager Management Pack](How-to-Export-an-Operations-Manager-Management-Pack.md)
+[How to Add Knowledge to a Management Pack](How-to-Add-Knowledge-to-a-Management-Pack.md)
 
 

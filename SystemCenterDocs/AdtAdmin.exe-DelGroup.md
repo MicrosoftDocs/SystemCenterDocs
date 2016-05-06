@@ -30,18 +30,17 @@ Use the following example to delete an ACS group that has the name "Accounting C
 `adtadmin /delgroup /group:"Accounting Computers"`
 
 ## See Also
-[Audit Collection Services Administration &#40;AdtAdmin.exe&#41;](./Audit-Collection-Services-Administration--AdtAdmin.exe-.md)
-[AdtAdmin.exe AddGroup](./AdtAdmin.exe-AddGroup.md)
-[AdtAdmin.exe Disconnect](./AdtAdmin.exe-Disconnect.md)
-[AdtAdmin.exe GetDBAuth](./AdtAdmin.exe-GetDBAuth.md)
-[AdtAdmin.exe GetQuery](./AdtAdmin.exe-GetQuery.md)
-[AdtAdmin.exe ListForwarders](./AdtAdmin.exe-ListForwarders.md)
-[AdtAdmin.exe ListGroups](./AdtAdmin.exe-ListGroups.md)
-[AdtAdmin.exe SetDBAuth](./AdtAdmin.exe-SetDBAuth.md)
-[AdtAdmin.exe SetQuery](./AdtAdmin.exe-SetQuery.md)
-[AdtAdmin.exe Stats](./AdtAdmin.exe-Stats.md)
-[AdtAdmin.exe UpdForwarder](./AdtAdmin.exe-UpdForwarder.md)
-[AdtAdmin.exe UpdGroup](./AdtAdmin.exe-UpdGroup.md)
-
+[Audit Collection Services Administration &#40;AdtAdmin.exe&#41;](Audit-Collection-Services-Administration--AdtAdmin.exe-.md)
+[AdtAdmin.exe AddGroup](AdtAdmin.exe-AddGroup.md)
+[AdtAdmin.exe Disconnect](AdtAdmin.exe-Disconnect.md)
+[AdtAdmin.exe GetDBAuth](AdtAdmin.exe-GetDBAuth.md)
+[AdtAdmin.exe GetQuery](AdtAdmin.exe-GetQuery.md)
+[AdtAdmin.exe ListForwarders](AdtAdmin.exe-ListForwarders.md)
+[AdtAdmin.exe ListGroups](AdtAdmin.exe-ListGroups.md)
+[AdtAdmin.exe SetDBAuth](AdtAdmin.exe-SetDBAuth.md)
+[AdtAdmin.exe SetQuery](AdtAdmin.exe-SetQuery.md)
+[AdtAdmin.exe Stats](AdtAdmin.exe-Stats.md)
+[AdtAdmin.exe UpdForwarder](AdtAdmin.exe-UpdForwarder.md)
+[AdtAdmin.exe UpdGroup](AdtAdmin.exe-UpdGroup.md)
 
 

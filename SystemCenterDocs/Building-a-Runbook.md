@@ -11,10 +11,10 @@ ms.topic: article
 ms.assetid: 17d8d1d1-2326-4925-84a0-c83e82cf7806
 ---
 # Building a Runbook
-This topic describes the basic process for building a [!INCLUDE[orchlong](./Token/orchlong_md.md)] runbook.
+This topic describes the basic process for building a [!INCLUDE[orchlong](Token/orchlong_md.md)] runbook.
 
 > [!NOTE]
-> For a list of topics that contain more details about the information covered here, see [Runbook data processing](./Building-a-Runbook.md#BMK_Runbookdataprocessing).
+> For a list of topics that contain more details about the information covered here, see [Runbook data processing](Building-a-Runbook.md#BMK_Runbookdataprocessing).
 
 |Step|Description|
 |--------|---------------|
@@ -26,7 +26,7 @@ This topic describes the basic process for building a [!INCLUDE[orchlong](./Toke
 
 #### To create a new runbook
 
-1.  On the computer where the Runbook Designer is installed, click **Start**, point to **All Programs**, click **[!INCLUDE[orchlong](./Token/orchlong_md.md)]**, and then click **Runbook Designer**.
+1.  On the computer where the Runbook Designer is installed, click **Start**, point to **All Programs**, click **[!INCLUDE[orchlong](Token/orchlong_md.md)]**, and then click **Runbook Designer**.
 
 2.  In Runbook Designer, in the **Connections** pane, click the **Runbooks** folder.
 
@@ -45,7 +45,7 @@ This topic describes the basic process for building a [!INCLUDE[orchlong](./Toke
 2.  In the **Activities** pane, double\-click an activity to open the **Properties** dialog box for that activity.
 
     > [!NOTE]
-    > For information about specific properties of standard activities, see the [Runbook Activity Reference for System Center 2012 - Orchestrator](./Runbook-Activity-Reference-for-System-Center-2012---Orchestrator.md).
+    > For information about specific properties of standard activities, see the [Runbook Activity Reference for System Center 2012 - Orchestrator](Runbook-Activity-Reference-for-System-Center-2012---Orchestrator.md).
 
 #### To add and configure links in a runbook
 
@@ -54,7 +54,7 @@ This topic describes the basic process for building a [!INCLUDE[orchlong](./Toke
 2.  On the newly created link, double\-click the link to open the **Link Properties** dialog box.
 
     > [!NOTE]
-    > For information about the properties of links, see the [Runbook Activity Reference for System Center 2012 - Orchestrator](./Runbook-Activity-Reference-for-System-Center-2012---Orchestrator.md).
+    > For information about the properties of links, see the [Runbook Activity Reference for System Center 2012 - Orchestrator](Runbook-Activity-Reference-for-System-Center-2012---Orchestrator.md).
 
 #### To define the properties of a runbook
 
@@ -70,18 +70,18 @@ This topic describes the basic process for building a [!INCLUDE[orchlong](./Toke
 
 ## <a name="BMK_Runbookdataprocessing"></a>Runbook data processing
 
--   [Data Manipulation](./Data-Manipulation.md)
+-   [Data Manipulation](Data-Manipulation.md)
 
--   [Published Data](./Published-Data.md)
+-   [Published Data](Published-Data.md)
 
 ## Other resources for this product
 
--   TechNet Library main page for [Orchestrator_1](./Orchestrator_1.md)
+-   TechNet Library main page for [Orchestrator_1](Orchestrator_1.md)
 
--   [Using Runbooks in System Center 2012 - Orchestrator](./Using-Runbooks-in-System-Center-2012---Orchestrator.md)
+-   [Using Runbooks in System Center 2012 - Orchestrator](Using-Runbooks-in-System-Center-2012---Orchestrator.md)
 
--   [Designing a Runbook](./Designing-a-Runbook.md)
+-   [Designing a Runbook](Designing-a-Runbook.md)
 
--   [How to Test a Runbook](./How-to-Test-a-Runbook.md)
+-   [How to Test a Runbook](How-to-Test-a-Runbook.md)
 
 

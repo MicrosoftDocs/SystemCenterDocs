@@ -17,7 +17,7 @@ ms.assetid: a9d9ac62-f6d5-4c93-9738-d95fbf7a9b84
     <title>Feature description</title>
     <content>
       <para>A failover cluster is a group of independent computers that work together to increase the availability and scalability of clustered roles. The clustered servers (called nodes) are connected by physical cables and by software. If one or more of the cluster nodes fail, other nodes begin to provide service (a process known as failover). In addition, the clustered roles are proactively monitored to verify that they are working correctly. If they are not working, they are restarted or moved to another node. Failover clusters also provide Cluster Shared Volumes (CSV) functionality that provides a consistent, distributed namespace that clustered roles can use to access shared storage from all nodes. With the Failover Clustering feature, users experience a minimum of disruptions in service.</para>
-      <para>Failover clusters are managed by using the Failover Cluster Manager snap-in and the Failover Clustering <token>wps_./Token> cmdlets. File shares on file server clusters can additionally be managed by using the tools in File and Storage Services. </para>
+      <para>Failover clusters are managed by using the Failover Cluster Manager snap-in and the Failover Clustering <token>wps_Token> cmdlets. File shares on file server clusters can additionally be managed by using the tools in File and Storage Services. </para>
     </content>
   </section>
   <section address="BKMK_APP" expanded="true">
@@ -46,7 +46,7 @@ ms.assetid: a9d9ac62-f6d5-4c93-9738-d95fbf7a9b84
       <para>A failover cluster solution must meet the following hardware requirements:</para>
       <list class="bullet">
         <listItem>
-          <para>Hardware components in the failover cluster solution must meet the qualifications for the Certified for <token>winblue_server_./Token> or <token>win8_server_./Token> logo.</para>
+          <para>Hardware components in the failover cluster solution must meet the qualifications for the Certified for <token>winblue_server_Token> or <token>win8_server_Token> logo.</para>
         </listItem>
         <listItem>
           <para>Storage must be attached to the nodes in the cluster, if the solution is using shared storage.</para>

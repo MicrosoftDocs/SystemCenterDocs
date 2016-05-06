@@ -20,7 +20,7 @@ Use the following information to configure the Return Data activity.
 The available published data items depend on the defined data elements.
 
 ## See Also
-[Invoke Runbook](./Invoke-Runbook.md)
-[Initialize Data](./Initialize-Data.md)
+[Invoke Runbook](Invoke-Runbook.md)
+[Initialize Data](Initialize-Data.md)
 
 

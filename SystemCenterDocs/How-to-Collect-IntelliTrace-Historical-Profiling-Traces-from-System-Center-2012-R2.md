@@ -11,12 +11,12 @@ ms.topic: article
 ms.assetid: e32a8560-aada-42d3-8f6a-ff1cc207f7e6
 ---
 # How to Collect IntelliTrace Historical Profiling Traces from System Center 2012 R2
-In [!INCLUDE[omblue_1](./Token/omblue_1_md.md)], you can use [!INCLUDE[omblue_2](./Token/omblue_2_md.md)] to capture historical snapshots \(traces\) directly from the [!INCLUDE[omblue_2](./Token/omblue_2_md.md)] console and to receive IntelliTrace snapshots from .NET Application Performance Monitoring \(APM\) events. These snapshots can help developers investigate problems. They provide visibility to application execution history without needing to access the servers where the problems occurred. Developers can use Microsoft Visual Studio 2012 Ultimate or Microsoft Visual Studio 2013 Preview to open collected snapshots. For information about IntelliTrace for developers, see [Debug Your App by Recording Code Execution with IntelliTrace](http://go.microsoft.com/fwlink/?LinkId=275118)
+In [!INCLUDE[omblue_1](Token/omblue_1_md.md)], you can use [!INCLUDE[omblue_2](Token/omblue_2_md.md)] to capture historical snapshots \(traces\) directly from the [!INCLUDE[omblue_2](Token/omblue_2_md.md)] console and to receive IntelliTrace snapshots from .NET Application Performance Monitoring \(APM\) events. These snapshots can help developers investigate problems. They provide visibility to application execution history without needing to access the servers where the problems occurred. Developers can use Microsoft Visual Studio 2012 Ultimate or Microsoft Visual Studio 2013 Preview to open collected snapshots. For information about IntelliTrace for developers, see [Debug Your App by Recording Code Execution with IntelliTrace](http://go.microsoft.com/fwlink/?LinkId=275118)
 
-Snapshots can be accessed from a network file share or from Team Foundation Server \(TFS\) work item attachments if TFS synchronization is enabled. For more information, see [How to Configure Integration with IntelliTrace Historical Profiling in System Center 2012 R2](./How-to-Configure-Integration-with-IntelliTrace-Historical-Profiling-in-System-Center-2012-R2.md).
+Snapshots can be accessed from a network file share or from Team Foundation Server \(TFS\) work item attachments if TFS synchronization is enabled. For more information, see [How to Configure Integration with IntelliTrace Historical Profiling in System Center 2012 R2](How-to-Configure-Integration-with-IntelliTrace-Historical-Profiling-in-System-Center-2012-R2.md).
 
 > [!IMPORTANT]
-> After you import and configure the IntelliTrace Profiling management pack, the IntelliTrace tasks are not available until you restart the [!INCLUDE[omblue_2](./Token/omblue_2_md.md)] console.
+> After you import and configure the IntelliTrace Profiling management pack, the IntelliTrace tasks are not available until you restart the [!INCLUDE[omblue_2](Token/omblue_2_md.md)] console.
 
 ## Collecting IntelliTrace Historical Profiling Snapshots
 
@@ -24,7 +24,7 @@ Snapshots can be accessed from a network file share or from Team Foundation Serv
 
 1.  You can perform this procedure when you want to keep collected snapshots and attach an IntelliTrace snapshot to an alert. When TFS synchronization is enabled, the collected snapshots are attached or linked to associated work items in TFS.
 
-2.  In the [!INCLUDE[omblue_2](./Token/omblue_2_md.md)] console, click **Monitoring**, open an alert view, and then click the alert that you want to investigate.
+2.  In the [!INCLUDE[omblue_2](Token/omblue_2_md.md)] console, click **Monitoring**, open an alert view, and then click the alert that you want to investigate.
 
 3.  In the **Tasks** pane, expand **IntelliTrace Tasks**, and then click **Start IntelliTrace Collection**.
 
@@ -52,17 +52,17 @@ Snapshots can be accessed from a network file share or from Team Foundation Serv
 13. To stop IntelliTrace collection, select the same alert on which you started IntelliTrace. In the **Tasks** pane, click **Stop IntelliTrace Collection**.
 
     > [!IMPORTANT]
-    > Be sure to stop IntelliTrace collection. If you do not stop IntelliTrace collection, IntelliTrace will continue to run. This will impact application performance, and APM will remain off so that you will not receive new alerts from this application. To stop IntelliTrace when the alert is already closed and no longer shows in the [!INCLUDE[omblue_2](./Token/omblue_2_md.md)] console, complete the step from the subsequent procedure that stops IntelliTrace: [To collect IntelliTrace snapshots when there are no APM exception alerts](./How-to-Collect-IntelliTrace-Historical-Profiling-Traces-from-System-Center-2012-SP1.md#BKMK_NAPMAL)
+    > Be sure to stop IntelliTrace collection. If you do not stop IntelliTrace collection, IntelliTrace will continue to run. This will impact application performance, and APM will remain off so that you will not receive new alerts from this application. To stop IntelliTrace when the alert is already closed and no longer shows in the [!INCLUDE[omblue_2](Token/omblue_2_md.md)] console, complete the step from the subsequent procedure that stops IntelliTrace: [To collect IntelliTrace snapshots when there are no APM exception alerts](How-to-Collect-IntelliTrace-Historical-Profiling-Traces-from-System-Center-2012-SP1.md#BKMK_NAPMAL)
 
 14. To see the IntelliTrace snapshots that are attached to an alert, select the alert. In the **Tasks** pane, click **Open Snapshot Location**.
 
-15. If TFS synchronization is turned on, you can assign an alert to engineering. To do so, set the alert resolution state to **Assigned to Engineering**. This creates a new work item in TFS, with the snapshot attached or linked. For more information, see [How to Configure Integration with TFS in System Center 2012 R2](./How-to-Configure-Integration-with-TFS-in-System-Center-2012-R2.md).
+15. If TFS synchronization is turned on, you can assign an alert to engineering. To do so, set the alert resolution state to **Assigned to Engineering**. This creates a new work item in TFS, with the snapshot attached or linked. For more information, see [How to Configure Integration with TFS in System Center 2012 R2](How-to-Configure-Integration-with-TFS-in-System-Center-2012-R2.md).
 
 ### <a name="BKMK_NAPMAL"></a>To collect IntelliTrace snapshots when there are no APM alerts
 
 1.  You can perform this procedure when you are investigating problems with application logic, poor performance \(when performance alerting on particular SLA violations is not turned on\), or when APM is not enabled for an application. The subject application in this procedure must be discovered by the IIS management packs.
 
-2.  In the [!INCLUDE[omblue_2](./Token/omblue_2_md.md)] console, click **Monitoring**, expand **Application Monitoring**, and then expand **.NET Monitoring**.
+2.  In the [!INCLUDE[omblue_2](Token/omblue_2_md.md)] console, click **Monitoring**, expand **Application Monitoring**, and then expand **.NET Monitoring**.
 
 3.  If your application is running on Windows Server 2008 R2, click **IIS 7.0 ASP .NET Web Application Inventory**. If your application is running on Windows Server 2012, click **IIS 8.0 ASP .NET Web Application Inventory**.
 
@@ -96,22 +96,22 @@ Snapshots can be accessed from a network file share or from Team Foundation Serv
     > [!IMPORTANT]
     > Be sure to stop IntelliTrace collection. If you do not stop IntelliTrace collection, IntelliTrace will continue to run. This will impact application performance and APM will remain off so that you will not receive new alerts from this application.
 
-16. To see the IntelliTrace snapshots, in the [!INCLUDE[omblue_2](./Token/omblue_2_md.md)] console, click **Monitoring**, expand **IntelliTrace Profiling**, and then click **New Alerts**. The **New Traces** pane shows an alert for each snapshot that you have collected.
+16. To see the IntelliTrace snapshots, in the [!INCLUDE[omblue_2](Token/omblue_2_md.md)] console, click **Monitoring**, expand **IntelliTrace Profiling**, and then click **New Alerts**. The **New Traces** pane shows an alert for each snapshot that you have collected.
 
 17. In the **Tasks** pane, expand **Alert Attachment Tasks**, and then click **Open Attachment Location**.
 
-18. If TFS synchronization is turned on, you can assign an alert to engineering. To do so, set the alert resolution state to **Assigned to Engineering**. This creates a new work item in TFS with the snapshot attached or linked. For more information, see [How to Configure Integration with TFS in System Center 2012 R2](./How-to-Configure-Integration-with-TFS-in-System-Center-2012-R2.md).
+18. If TFS synchronization is turned on, you can assign an alert to engineering. To do so, set the alert resolution state to **Assigned to Engineering**. This creates a new work item in TFS with the snapshot attached or linked. For more information, see [How to Configure Integration with TFS in System Center 2012 R2](How-to-Configure-Integration-with-TFS-in-System-Center-2012-R2.md).
 
 #### To access IntelliTrace snapshots that are generated from APM data
 
 1.  You can perform this procedure when you want to investigate an existing APM performance or exception alert that is based solely on historical data without having to run IntelliTrace Profiling on your application.
 
-2.  In the [!INCLUDE[omblue_2](./Token/omblue_2_md.md)] console, click **Monitoring**, open an alert view, and then click the alert that you want to investigate.
+2.  In the [!INCLUDE[omblue_2](Token/omblue_2_md.md)] console, click **Monitoring**, open an alert view, and then click the alert that you want to investigate.
 
 3.  In the **Tasks** pane, expand **Alert Attachment Tasks**, and then click **Open Attachment Location**. Windows Explorer opens the location of the files that are attached to the alert you have selected.
 
 4.  To see the IntelliTrace snapshot for this alert, in Windows Explorer, open the **APMException** folder.
 
-5.  If TFS synchronization is turned on, you can assign this alert to engineering. To do so, set the alert resolution state to **Assigned to Engineering**. This creates a new work item in TFS, with the snapshot attached or linked. For more information, see [How to Configure Integration with TFS in System Center 2012 R2](./How-to-Configure-Integration-with-TFS-in-System-Center-2012-R2.md).
+5.  If TFS synchronization is turned on, you can assign this alert to engineering. To do so, set the alert resolution state to **Assigned to Engineering**. This creates a new work item in TFS, with the snapshot attached or linked. For more information, see [How to Configure Integration with TFS in System Center 2012 R2](How-to-Configure-Integration-with-TFS-in-System-Center-2012-R2.md).
 
 

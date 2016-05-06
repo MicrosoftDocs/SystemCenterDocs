@@ -25,21 +25,21 @@ When connecting to a rebuilt database:
 
 -   You must have database permissions to create the database.
 
-In contrast, DBconfig only creates a new database; it does not configure the security for the database. DBConfig configures the database schema in the database and creates the contents of **settings.dat**, which contains the connection details for the management server and runbook servers. For more information on running DBConfig, see [How to Change the Orchestrator Database](./How-to-Change-the-Orchestrator-Database.md).
+In contrast, DBconfig only creates a new database; it does not configure the security for the database. DBConfig configures the database schema in the database and creates the contents of **settings.dat**, which contains the connection details for the management server and runbook servers. For more information on running DBConfig, see [How to Change the Orchestrator Database](How-to-Change-the-Orchestrator-Database.md).
 
-### To configure [!INCLUDE[orchshort](./Token/orchshort_md.md)] database connections
+### To configure [!INCLUDE[orchshort](Token/orchshort_md.md)] database connections
 
 -   Run the DBsetup binary from the **Start** menu or from the **Program Files** folder.
 
 ### To create a new database on a new database server
 
-1.  Run the [!INCLUDE[orchlong](./Token/orchlong_md.md)] Setup Wizard and install a new management server.
+1.  Run the [!INCLUDE[orchlong](Token/orchlong_md.md)] Setup Wizard and install a new management server.
 
 2.  On the **Configure the database server** page in the setup wizard, point to the new database server.
 
 3.  After you add a new DB server to your deployment, you must also run permissionsconfig, and then export and import the service master key to the new database server.
 
 ## See Also
-[How to Change the Orchestrator Database](./How-to-Change-the-Orchestrator-Database.md)
+[How to Change the Orchestrator Database](How-to-Change-the-Orchestrator-Database.md)
 
 

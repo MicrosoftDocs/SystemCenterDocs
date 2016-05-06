@@ -70,9 +70,9 @@ You can configure a service level objective \(SLO\) against a group of computers
 After you create a service level objective, you can monitor it by using a Service Level Tracking dashboard view and the Service Level Tracking Report.
 
 ## See Also
-[Running a Service Level Tracking Report](./Running-a-Service-Level-Tracking-Report.md)
-[Defining a Service Level Objective Against an Application](./Defining-a-Service-Level-Objective-Against-an-Application.md)
-[Creating a Service Level Dashboard](./Creating-a-Service-Level-Dashboard.md)
-[Monitoring Service Level Objectives by Using Operations Manager](./Monitoring-Service-Level-Objectives-by-Using-Operations-Manager.md)
+[Running a Service Level Tracking Report](Running-a-Service-Level-Tracking-Report.md)
+[Defining a Service Level Objective Against an Application](Defining-a-Service-Level-Objective-Against-an-Application.md)
+[Creating a Service Level Dashboard](Creating-a-Service-Level-Dashboard.md)
+[Monitoring Service Level Objectives by Using Operations Manager](Monitoring-Service-Level-Objectives-by-Using-Operations-Manager.md)
 
 

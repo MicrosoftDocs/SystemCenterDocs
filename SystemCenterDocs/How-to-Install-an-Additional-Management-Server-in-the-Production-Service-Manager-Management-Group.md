@@ -16,13 +16,13 @@ The following procedure shows how to install an additional management server. Yo
 > [!TIP]
 > You must be a member of the Service Manager Administrators user role in order to install an additional Service Manager management server.
 
-In [!INCLUDE[smlong12](./Token/smlong12_md.md)], when you install a secondary management server, data retention settings are reset. Before you install a secondary management server, make a note of data retention settings. After you have installed the additional management server, adjust the data retention settings to their original values.
+In [!INCLUDE[smlong12](Token/smlong12_md.md)], when you install a secondary management server, data retention settings are reset. Before you install a secondary management server, make a note of data retention settings. After you have installed the additional management server, adjust the data retention settings to their original values.
 
 ### To install an additional management server
 
 1.  By using an account that has administrator rights and that is also a member of the Service Manager Management group administrators, log on to the computer that will host the additional Service Manager Management server.
 
-2.  On the [!INCLUDE[smlong12](./Token/smlong12_md.md)] installation media, double\-click Setup.exe.
+2.  On the [!INCLUDE[smlong12](Token/smlong12_md.md)] installation media, double\-click Setup.exe.
 
 3.  On the **Microsoft System Center 2012 Service Manager** page, click **Install a Service Manager Management server**.
 

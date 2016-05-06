@@ -20,23 +20,23 @@ ms.assetid: 7fe95c9d-2321-4cfa-bcec-300d61145d12
       <list class="nobullet">
         <listItem>
           <para>
-            <legacyLink xlink:href="e8f2eac3-07b2-4241-b41c-2c6bca35d360">What's New in DHCP [VIL]</legacyLink>: Provides information about changes in functionality for DHCP in <token>winblue_server_./Token>.</para>
+            <legacyLink xlink:href="e8f2eac3-07b2-4241-b41c-2c6bca35d360">What's New in DHCP [VIL]</legacyLink>: Provides information about changes in functionality for DHCP in <token>winblue_server_Token>.</para>
         </listItem>
         <listItem>
           <para>
-            <legacyLink xlink:href="f82f8081-235d-4c5a-b47b-8009e705c5fd">What's New in DHCP in Windows Server 2012 [redirected]</legacyLink>: Provides information about changes in functionality for DHCP in <token>win8_server_./Token>.</para>
+            <legacyLink xlink:href="f82f8081-235d-4c5a-b47b-8009e705c5fd">What's New in DHCP in Windows Server 2012 [redirected]</legacyLink>: Provides information about changes in functionality for DHCP in <token>win8_server_Token>.</para>
         </listItem>
         <listItem>
           <para>
-            <legacyLink xlink:href="3c2dfa9e-c4aa-4607-b498-d481a45b265a">Understand and Deploy DHCP Failover</legacyLink>: Provides detailed information about a new option for DHCP high availability in <token>win8_server_./Token>.</para>
+            <legacyLink xlink:href="3c2dfa9e-c4aa-4607-b498-d481a45b265a">Understand and Deploy DHCP Failover</legacyLink>: Provides detailed information about a new option for DHCP high availability in <token>win8_server_Token>.</para>
         </listItem>
         <listItem>
           <para>
-            <legacyLink xlink:href="5f4c7d17-208b-4d5d-a027-d66b9a79e0e5">Step-by-Step: Configure DHCP Using Policy-based Assignment</legacyLink>: Provides step by step instructions for configuring DHCP policies in a test lab with <token>win8_server_./Token>.</para>
+            <legacyLink xlink:href="5f4c7d17-208b-4d5d-a027-d66b9a79e0e5">Step-by-Step: Configure DHCP Using Policy-based Assignment</legacyLink>: Provides step by step instructions for configuring DHCP policies in a test lab with <token>win8_server_Token>.</para>
         </listItem>
         <listItem>
           <para>
-            <legacyLink xlink:href="1c1a6be6-1581-471c-a4a9-a654d7f1d88f">Step-by-Step: Configure DHCP for Failover</legacyLink>: Provides step by step instructions for configuring DHCP failover in a test lab with <token>win8_server_./Token>.</para>
+            <legacyLink xlink:href="1c1a6be6-1581-471c-a4a9-a654d7f1d88f">Step-by-Step: Configure DHCP for Failover</legacyLink>: Provides step by step instructions for configuring DHCP failover in a test lab with <token>win8_server_Token>.</para>
         </listItem>
       </list>
     </content>

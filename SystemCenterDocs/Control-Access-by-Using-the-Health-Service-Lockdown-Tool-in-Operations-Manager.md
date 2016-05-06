@@ -65,12 +65,12 @@ When evaluating allowed and denied listings, know that denies takes priority ove
 6.  Type **HSLockdown \[Management Group Name\] \/A <Action Account>** and then press ENTER.
 
 ## See Also
-[Managing Access in Operations Manager](./Managing-Access-in-Operations-Manager.md)
-[Operations Manager Accounts](./Operations-Manager-Accounts.md)
-[Implementing User Roles](./Implementing-User-Roles.md)
-[How to Create a New Action Account in Operations Manager](./How-to-Create-a-New-Action-Account-in-Operations-Manager.md)
-[How to Manage the Report Server Unattended Execution Account in Operations Manager](./How-to-Manage-the-Report-Server-Unattended-Execution-Account-in-Operations-Manager.md)
-[Accessing UNIX and Linux Computers in Operations Manager](./Accessing-UNIX-and-Linux-Computers-in-Operations-Manager.md)
-[Managing Run As Accounts and Profiles](./Managing-Run-As-Accounts-and-Profiles.md)
+[Managing Access in Operations Manager](Managing-Access-in-Operations-Manager.md)
+[Operations Manager Accounts](Operations-Manager-Accounts.md)
+[Implementing User Roles](Implementing-User-Roles.md)
+[How to Create a New Action Account in Operations Manager](How-to-Create-a-New-Action-Account-in-Operations-Manager.md)
+[How to Manage the Report Server Unattended Execution Account in Operations Manager](How-to-Manage-the-Report-Server-Unattended-Execution-Account-in-Operations-Manager.md)
+[Accessing UNIX and Linux Computers in Operations Manager](Accessing-UNIX-and-Linux-Computers-in-Operations-Manager.md)
+[Managing Run As Accounts and Profiles](Managing-Run-As-Accounts-and-Profiles.md)
 
 

@@ -17,6 +17,6 @@ Insert section body here.
 Insert subsection body here.
 
 ## See Also
-[Managing fabric resources with VMM](./Managing-fabric-resources-with-VMM.md)
+[Managing fabric resources with VMM](Managing-fabric-resources-with-VMM.md)
 
 

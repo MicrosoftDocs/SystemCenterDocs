@@ -11,13 +11,13 @@ ms.topic: article
 ms.assetid: c835def2-faf0-488d-abbe-2737c2862069
 ---
 # How to Promote a Service Manager Management Server
-When you first ran Setup for [!INCLUDE[smlong12](./Token/smlong12_md.md)], you installed the initial [!INCLUDE[smshort](./Token/smshort_md.md)] management server and you defined the management group for your installation. The initial management server handles all the workflows in your Service Manager environment. You can use additional [!INCLUDE[smshort](./Token/smshort_md.md)] management servers to load\-balance [!INCLUDE[smcons](./Token/smcons_md.md)] connections. Also, you can promote one of the additional [!INCLUDE[smshort](./Token/smshort_md.md)] management servers to take over the role of a failed initial [!INCLUDE[smshort](./Token/smshort_md.md)] management server. For more information, see "Deploying Additional [!INCLUDE[smshort](./Token/smshort_md.md)] Management Servers" in the [Deployment Guide for System Center 2012 \- Service Manager](http://go.microsoft.com/fwlink/p/?LinkId=209670)
+When you first ran Setup for [!INCLUDE[smlong12](Token/smlong12_md.md)], you installed the initial [!INCLUDE[smshort](Token/smshort_md.md)] management server and you defined the management group for your installation. The initial management server handles all the workflows in your Service Manager environment. You can use additional [!INCLUDE[smshort](Token/smshort_md.md)] management servers to load\-balance [!INCLUDE[smcons](Token/smcons_md.md)] connections. Also, you can promote one of the additional [!INCLUDE[smshort](Token/smshort_md.md)] management servers to take over the role of a failed initial [!INCLUDE[smshort](Token/smshort_md.md)] management server. For more information, see "Deploying Additional [!INCLUDE[smshort](Token/smshort_md.md)] Management Servers" in the [Deployment Guide for System Center 2012 \- Service Manager](http://go.microsoft.com/fwlink/p/?LinkId=209670)
 
-You can use the following procedures to promote a secondary [!INCLUDE[smshort](./Token/smshort_md.md)] management server.
+You can use the following procedures to promote a secondary [!INCLUDE[smshort](Token/smshort_md.md)] management server.
 
 ### To prepare the secondary management server
 
-1.  On the secondary management server, close the [!INCLUDE[smcons](./Token/smcons_md.md)].
+1.  On the secondary management server, close the [!INCLUDE[smcons](Token/smcons_md.md)].
 
 2.  On the Windows desktop, click **Start**, and then click **Run**.
 
@@ -30,7 +30,7 @@ You can use the following procedures to promote a secondary [!INCLUDE[smshort](.
     -   System Center Management
 
         > [!NOTE]
-        > For [!INCLUDE[smblue_1](./Token/smblue_1_md.md)], the System Center Management service was renamed to Microsoft Monitoring Agent.
+        > For [!INCLUDE[smblue_1](Token/smblue_1_md.md)], the System Center Management service was renamed to Microsoft Monitoring Agent.
 
     -   System Center Management Configuration
 
@@ -42,11 +42,11 @@ You can use the following procedures to promote a secondary [!INCLUDE[smshort](.
 
 ### To define the computer name for the Service Manager database
 
-1.  On the [!INCLUDE[smshort](./Token/smshort_md.md)] database, on the Windows desktop, click **Start**, point to **Programs**, point to **Microsoft SQL Server 2008**, and then click **SQL Server Management Studio**.
+1.  On the [!INCLUDE[smshort](Token/smshort_md.md)] database, on the Windows desktop, click **Start**, point to **Programs**, point to **Microsoft SQL Server 2008**, and then click **SQL Server Management Studio**.
 
 2.  In the **Connect to Database Engine** dialog box, do the following:
 
-    1.  In **Server name**, type the name of the server that hosts the [!INCLUDE[smshort](./Token/smshort_md.md)] database.
+    1.  In **Server name**, type the name of the server that hosts the [!INCLUDE[smshort](Token/smshort_md.md)] database.
 
     2.  In **Authentication**, select **Windows Authentication**.
 
@@ -81,7 +81,7 @@ You can use the following procedures to promote a secondary [!INCLUDE[smshort](.
     -   System Center Management
 
         > [!NOTE]
-        > For [!INCLUDE[smblue_1](./Token/smblue_1_md.md)], the System Center Management service was renamed to Microsoft Monitoring Agent.
+        > For [!INCLUDE[smblue_1](Token/smblue_1_md.md)], the System Center Management service was renamed to Microsoft Monitoring Agent.
 
     -   System Center Management Configuration
 

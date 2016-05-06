@@ -8,9 +8,9 @@ ms.topic: article
 ms.assetid: 88cfa28a-4ce7-4117-a2f4-1ed5de689dc6
 ---
 # How to Complete the Configuration of AlwaysOn Availability Groups for the Database
-If the [!INCLUDE[vmm12sp1_long](./Token/vmm12sp1_long_md.md)] database was configured with AlwaysOn Availability Groups, after you upgrade [!INCLUDE[vmm12short](./Token/vmm12short_md.md)] to [!INCLUDE[sc_threshold_1](./Token/sc_threshold_1_md.md)], you need to complete the configuration of AlwaysOn Availability Groups.
+If the [!INCLUDE[vmm12sp1_long](Token/vmm12sp1_long_md.md)] database was configured with AlwaysOn Availability Groups, after you upgrade [!INCLUDE[vmm12short](Token/vmm12short_md.md)] to [!INCLUDE[sc_threshold_1](Token/sc_threshold_1_md.md)], you need to complete the configuration of AlwaysOn Availability Groups.
 
-For important recommendations about AlwaysOn, see the “SQL Server and database” section of[Preparing your environment for System Center 2016 - Virtual Machine Manager](./Preparing-your-environment-for-System-Center-2016---Virtual-Machine-Manager.md).
+For important recommendations about AlwaysOn, see the “SQL Server and database” section of[Preparing your environment for System Center 2016 - Virtual Machine Manager](Preparing-your-environment-for-System-Center-2016---Virtual-Machine-Manager.md).
 
 ### To complete the configuration of AlwaysOn Availability Groups
 
@@ -31,6 +31,6 @@ For important recommendations about AlwaysOn, see the “SQL Server and database
 5.  If this is a high availability VMM setup, continue to install other high availability VMM nodes.
 
 ## See Also
-[Performing Post-Upgrade Tasks in VMM](./Performing-Post-Upgrade-Tasks-in-VMM.md)
+[Performing Post-Upgrade Tasks in VMM](Performing-Post-Upgrade-Tasks-in-VMM.md)
 
 

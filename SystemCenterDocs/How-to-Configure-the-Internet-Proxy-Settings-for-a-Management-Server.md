@@ -8,11 +8,11 @@ ms.topic: article
 ms.assetid: 14ce5bed-0294-443d-b931-e53d2a4aef7e
 ---
 # How to Configure the Internet Proxy Settings for a Management Server
-Use the following procedure to configure the Internet proxy settings for a [!INCLUDE[om12long](./Token/om12long_md.md)] management server. You must configure these settings if features of [!INCLUDE[om12short](./Token/om12short_md.md)] are enabled that require the management server to communicate over the Internet. For example, you must configure these settings if the Client Monitoring feature of [!INCLUDE[om12short](./Token/om12short_md.md)] is configured to transmit or receive data from Microsoft.
+Use the following procedure to configure the Internet proxy settings for a [!INCLUDE[om12long](Token/om12long_md.md)] management server. You must configure these settings if features of [!INCLUDE[om12short](Token/om12short_md.md)] are enabled that require the management server to communicate over the Internet. For example, you must configure these settings if the Client Monitoring feature of [!INCLUDE[om12short](Token/om12short_md.md)] is configured to transmit or receive data from Microsoft.
 
 ### To Configure Internet Proxy Settings for a Management Server
 
-1.  Log on to the computer with an account that is a member of the [!INCLUDE[om12short](./Token/om12short_md.md)] Administrators role for the [!INCLUDE[om12short](./Token/om12short_md.md)] management group.
+1.  Log on to the computer with an account that is a member of the [!INCLUDE[om12short](Token/om12short_md.md)] Administrators role for the [!INCLUDE[om12short](Token/om12short_md.md)] management group.
 
 2.  In the Operations console, click the Administration button.
 

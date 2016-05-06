@@ -11,7 +11,7 @@ ms.topic: article
 ms.assetid: 90f0f96f-9b54-41e0-8ae9-e3c3a0dc6f3c
 ---
 # Diagnostic and Recovery Tasks
-Monitors in [!INCLUDE[om12long](./Token/om12long_md.md)] can do more than notify you of problems by sending an alert. Some monitors also provide diagnostic and recovery tasks to help investigate and resolve those problems.
+Monitors in [!INCLUDE[om12long](Token/om12long_md.md)] can do more than notify you of problems by sending an alert. Some monitors also provide diagnostic and recovery tasks to help investigate and resolve those problems.
 
 A task is a script or other executable code that runs either on the computer running the Operations console or on the server, client, or device that is being managed. Tasks can potentially perform any kind of activity, including restarting a failed application and deleting files.
 
@@ -37,7 +37,7 @@ For example, the **Health Service Heartbeat Failure** monitor has several diagno
 
 You can see the tasks available for a monitor on the **Diagnostic and Recovery** tab in the properties of the monitor, as shown in the following illustration.
 
-![](/Image/OM12DiagnosticAndRecovery.gif)
+![](Image/OM12DiagnosticAndRecovery.gif)
 
 On this tab, you can also add tasks or edit tasks that you have added previously. For more information on how to add diagnostic and recovery tasks, see [Diagnostics and Recoveries](http://go.microsoft.com/fwlink/?LinkId=230462) in the Author’s Guide. Tasks that are configured by a sealed management pack can only be modified by using overrides. For more information, see [How to enable recovery and diagnoxtic tasks](https://technet.microsoft.com/library/hh212768.aspx) in the Operations Manager 2012 documentation.
 

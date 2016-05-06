@@ -8,15 +8,15 @@ ms.topic: article
 ms.assetid: c549f961-01d0-4d28-8b93-f4108a34f00a
 ---
 # How to Create IP Address Pools for Logical Networks in VMM
-You can use the following procedure to create a static IP address pool for a logical network in [!INCLUDE[vmm12sp1_long](./Token/vmm12sp1_long_md.md)]. With static IP address pools, IP address management for the virtual environment is brought within the scope of the VMM administrator.
+You can use the following procedure to create a static IP address pool for a logical network in [!INCLUDE[vmm12sp1_long](Token/vmm12sp1_long_md.md)]. With static IP address pools, IP address management for the virtual environment is brought within the scope of the VMM administrator.
 
 > [!IMPORTANT]
-> For guidelines about when IP pools are necessary on a logical network, when they are optional, and when to create an IP pool in a VM network in addition to an IP pool in the logical network, see [Guidelines for IP address pools](./Overview--plan-logical-networks,-network-sites,-and-IP-address-pools-in-VMM.md#BKMK_address_pools) in "Overview: plan logical networks, network sites, and IP address pools in VMM."
+> For guidelines about when IP pools are necessary on a logical network, when they are optional, and when to create an IP pool in a VM network in addition to an IP pool in the logical network, see [Guidelines for IP address pools](Overview--plan-logical-networks,-network-sites,-and-IP-address-pools-in-VMM.md#BKMK_address_pools) in "Overview: plan logical networks, network sites, and IP address pools in VMM."
 
 **Account requirements** To complete this procedure, you must be a member of the Administrator or Delegated Administrator user role.
 
 ## Prerequisites
-Before you begin this procedure, make sure that a logical network exists, ideally with one or more associated network sites \(which are part of the logical network\). The network sites must have at least one IP subnet or IP subnet\/VLAN pair assigned. For more information about creating a network site, see [How to create a logical network and IP address pools in VMM](./How-to-create-a-logical-network-and-IP-address-pools-in-VMM.md). If you do not already have network sites defined, you can create a network site when you create the static IP address pool.
+Before you begin this procedure, make sure that a logical network exists, ideally with one or more associated network sites \(which are part of the logical network\). The network sites must have at least one IP subnet or IP subnet\/VLAN pair assigned. For more information about creating a network site, see [How to create a logical network and IP address pools in VMM](How-to-create-a-logical-network-and-IP-address-pools-in-VMM.md). If you do not already have network sites defined, you can create a network site when you create the static IP address pool.
 
 #### To create static IP address pools for logical networks
 
@@ -52,7 +52,7 @@ Before you begin this procedure, make sure that a logical network exists, ideall
     If you select **Use an existing network site**, select the network site and the IP subnet that you want to create the IP address pool from, and then click **Next**.
 
     > [!NOTE]
-    > You cannot change the virtual local area network \(VLAN\) or the assigned host groups for an existing network site from this page. If you try to change the host groups that can use the network site from this page, the value will revert to the original value when you continue to the next page of the wizard. To modify these values, you must modify the properties of the logical network. For more information, see [How to modify or delete a logical network in VMM](./How-to-modify-or-delete-a-logical-network-in-VMM.md).
+    > You cannot change the virtual local area network \(VLAN\) or the assigned host groups for an existing network site from this page. If you try to change the host groups that can use the network site from this page, the value will revert to the original value when you continue to the next page of the wizard. To modify these values, you must modify the properties of the logical network. For more information, see [How to modify or delete a logical network in VMM](How-to-modify-or-delete-a-logical-network-in-VMM.md).
 
     If you select **Create a network site**, do the following, and then click **Next**:
 
@@ -60,13 +60,13 @@ Before you begin this procedure, make sure that a logical network exists, ideall
 
     2.  In the **IP subnet** box, enter the IP subnet that you want to assign to the network site. Later in this procedure you can assign a range of IP addresses from the subnet to the pool. You must specify the IP subnet by using Classless Inter\-Domain Router \(CIDR\) notation, for example 10.0.0.0\/24.
 
-    3.  If you are using VLANs, in the **VLAN** box, enter the VLAN ID. A VLAN of 0 indicates to [!INCLUDE[vmm12short](./Token/vmm12short_md.md)] not to use VLANs. In trunk mode, VLAN 0 indicates native VLAN.
+    3.  If you are using VLANs, in the **VLAN** box, enter the VLAN ID. A VLAN of 0 indicates to [!INCLUDE[vmm12short](Token/vmm12short_md.md)] not to use VLANs. In trunk mode, VLAN 0 indicates native VLAN.
 
     4.  Under **Host groups that can use this network site**, select the check box next to each host group to which you want to make the network site and the associated logical network available.
 
 8.  If you want to use multicasting or broadcasting, follow this step. Otherwise, skip to the next numbered step.
 
-    If the logical network on which you are creating the IP address pool is configured to use network virtualization, you can use this pool to support broadcasting or multicasting. To do this, on the **Network Site** page, click **Create a multicast IP address pool**, select the IP subnet that you want to use for multicasting or broadcasting, and then click **Next**. If you select this option, also see [VMM networking reference: IP address pool requirements for multicasting or broadcasting](./VMM-networking-reference--IP-address-pool-requirements-for-multicasting-or-broadcasting.md).
+    If the logical network on which you are creating the IP address pool is configured to use network virtualization, you can use this pool to support broadcasting or multicasting. To do this, on the **Network Site** page, click **Create a multicast IP address pool**, select the IP subnet that you want to use for multicasting or broadcasting, and then click **Next**. If you select this option, also see [VMM networking reference: IP address pool requirements for multicasting or broadcasting](VMM-networking-reference--IP-address-pool-requirements-for-multicasting-or-broadcasting.md).
 
 9. On the **IP address range** page, do the following, and then click **Next**:
 
@@ -130,15 +130,15 @@ Before you begin this procedure, make sure that a logical network exists, ideall
 > 
 > `Get-SCIPAddress –StaticIPAddressPool $ippool | Format-Table –property Address,AssignedToType,State`
 
-From time to time, you might need to release IP addresses that are in the pool but that are marked by [!INCLUDE[vmm12short](./Token/vmm12short_md.md)] as “inactive.” Releasing them makes them available for reassignment. For more information, see [How to release inactive IP or MAC addresses in VMM](./How-to-release-inactive-IP-or-MAC-addresses-in-VMM.md).
+From time to time, you might need to release IP addresses that are in the pool but that are marked by [!INCLUDE[vmm12short](Token/vmm12short_md.md)] as “inactive.” Releasing them makes them available for reassignment. For more information, see [How to release inactive IP or MAC addresses in VMM](How-to-release-inactive-IP-or-MAC-addresses-in-VMM.md).
 
-After a virtual machine has been deployed in [!INCLUDE[vmm12short](./Token/vmm12short_md.md)], you can view the IP address or addresses assigned to that virtual machine. To do this, right\-click the listing for the virtual machine, click **Properties**, click the **Hardware Configuration** tab, click the network adapter, and in the results pane, click the **Connection details** button.
+After a virtual machine has been deployed in [!INCLUDE[vmm12short](Token/vmm12short_md.md)], you can view the IP address or addresses assigned to that virtual machine. To do this, right\-click the listing for the virtual machine, click **Properties**, click the **Hardware Configuration** tab, click the network adapter, and in the results pane, click the **Connection details** button.
 
 ## See Also
-[How to release inactive IP or MAC addresses in VMM](./How-to-release-inactive-IP-or-MAC-addresses-in-VMM.md)
-[Overview: plan logical networks, network sites, and IP address pools in VMM](./Overview--plan-logical-networks,-network-sites,-and-IP-address-pools-in-VMM.md)
-[How to create a logical network and IP address pools in VMM](./How-to-create-a-logical-network-and-IP-address-pools-in-VMM.md)
-[How to Create IP Address Pools for VM Networks in VMM](./How-to-Create-IP-Address-Pools-for-VM-Networks-in-VMM.md)
-[VMM networking reference: creating custom MAC address pools in VMM](./VMM-networking-reference--creating-custom-MAC-address-pools-in-VMM.md)
+[How to release inactive IP or MAC addresses in VMM](How-to-release-inactive-IP-or-MAC-addresses-in-VMM.md)
+[Overview: plan logical networks, network sites, and IP address pools in VMM](Overview--plan-logical-networks,-network-sites,-and-IP-address-pools-in-VMM.md)
+[How to create a logical network and IP address pools in VMM](How-to-create-a-logical-network-and-IP-address-pools-in-VMM.md)
+[How to Create IP Address Pools for VM Networks in VMM](How-to-Create-IP-Address-Pools-for-VM-Networks-in-VMM.md)
+[VMM networking reference: creating custom MAC address pools in VMM](VMM-networking-reference--creating-custom-MAC-address-pools-in-VMM.md)
 
 

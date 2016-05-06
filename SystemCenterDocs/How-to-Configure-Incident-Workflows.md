@@ -15,7 +15,7 @@ You can use the following procedure to create and configure a workflow rule that
 
 ### To configure an incident workflow
 
-1.  In the [!INCLUDE[smcons](./Token/smcons_md.md)], click **Administration**.
+1.  In the [!INCLUDE[smcons](Token/smcons_md.md)], click **Administration**.
 
 2.  In the **Administration** pane, expand **Administration**, expand **Workflows**, and then click **Configuration**.
 
@@ -45,7 +45,7 @@ You can use the following procedure to create and configure a workflow rule that
 
 ### To validate an incident workflow
 
-1.  In the [!INCLUDE[smcons](./Token/smcons_md.md)], click **Work Items**.
+1.  In the [!INCLUDE[smcons](Token/smcons_md.md)], click **Work Items**.
 
 2.  In the **Work Items** pane, expand **Work Items**, expand **Incident Management**, and then click **All Incidents**.
 
@@ -55,14 +55,14 @@ You can use the following procedure to create and configure a workflow rule that
 
 5.  In a few minutes, press F5. Verify that the value in the **Support Group** box changed to **Tier 2**.
 
-![](/Image/PSSymbol.gif)You can use Windows PowerShell commands to complete these and other related tasks, as follows:
+![](Image/PSSymbol.gif)You can use Windows PowerShell commands to complete these and other related tasks, as follows:
 
 -   For information about how to use Windows PowerShell to create a new workflow in Service Manager, see [New\-SCSMWorkflow](http://go.microsoft.com/fwlink/p/?LinkID=225361).
 
--   For information about how to use Windows PowerShell to retrieve configuration and status information for  [!INCLUDE[smshort](./Token/smshort_md.md)] workflows, see [Get\-SCSMWorkflowStatus](http://go.microsoft.com/fwlink/p/?LinkID=225347).
+-   For information about how to use Windows PowerShell to retrieve configuration and status information for  [!INCLUDE[smshort](Token/smshort_md.md)] workflows, see [Get\-SCSMWorkflowStatus](http://go.microsoft.com/fwlink/p/?LinkID=225347).
 
 -   For information about how to use Windows PowerShell to update workflow properties, see [Update\-SCSMWorkflow cmdlet](http://go.microsoft.com/fwlink/p/?LinkID=225392).
 
--   For information about how to use Windows PowerShell to remove a workflow from [!INCLUDE[smshort](./Token/smshort_md.md)], see [Remove\-SCSMWorkflow](http://go.microsoft.com/fwlink/p/?LinkID=225372).
+-   For information about how to use Windows PowerShell to remove a workflow from [!INCLUDE[smshort](Token/smshort_md.md)], see [Remove\-SCSMWorkflow](http://go.microsoft.com/fwlink/p/?LinkID=225372).
 
 

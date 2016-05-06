@@ -11,16 +11,16 @@ ms.topic: article
 ms.assetid: 9dcf955f-551d-4b9b-bc35-11c82e42d841
 ---
 # How to Connect to a Highly Available VMM Management Server by Using the VMM Console
-You can use the following procedure to connect to a highly available [!INCLUDE[vmm12sp1_long](./Token/vmm12sp1_long_md.md)] management server by using the VMM console.
+You can use the following procedure to connect to a highly available [!INCLUDE[vmm12sp1_long](Token/vmm12sp1_long_md.md)] management server by using the VMM console.
 
-To use the VMM console, you must be a member of a user role in [!INCLUDE[vmm12short](./Token/vmm12short_md.md)].
+To use the VMM console, you must be a member of a user role in [!INCLUDE[vmm12short](Token/vmm12short_md.md)].
 
 ### To connect to a highly available VMM management server by using the VMM console
 
 1.  On a computer on which the VMM console is installed, on the desktop, click the **Virtual Machine Manager Console** icon.
 
     > [!NOTE]
-    > We recommend that you install the VMM console on a different computer from the highly available VMM management server, and connect by using that VMM console. For information about installing, see [How to Install the VMM Console](./How-to-Install-the-VMM-Console.md).
+    > We recommend that you install the VMM console on a different computer from the highly available VMM management server, and connect by using that VMM console. For information about installing, see [How to Install the VMM Console](How-to-Install-the-VMM-Console.md).
 
 2.  In the **Connect to Server** dialog box, in the **Server name** box, type the clustered service name for your highly available VMM management server, followed by a colon and the connection port of your highly available VMM management server. For example, type **havmmcontoso:8100**.
 

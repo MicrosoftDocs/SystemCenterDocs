@@ -39,7 +39,7 @@ If you see this error, do the following:
 
 2.  Make sure that you can open an SSH session with the remote host by using the credentials specified in the Discovery Wizard.
 
-3.  Make sure that the credentials specified in the Discovery Wizard have the required privileges for discovery. For more information see [Required Capabilities for UNIX and Linux Accounts](./Required-Capabilities-for-UNIX-and-Linux-Accounts.md).
+3.  Make sure that the credentials specified in the Discovery Wizard have the required privileges for discovery. For more information see [Required Capabilities for UNIX and Linux Accounts](Required-Capabilities-for-UNIX-and-Linux-Accounts.md).
 
 ## Certificate Name and Host Name do not Match
 The common name \(CN\) that is used in the certificate must match the fully qualified domain name \(FQDN\) that is resolved by Operations Manager.  If the CN does not match, you will see the following error when you run the Discovery Wizard:
@@ -111,15 +111,15 @@ For example, to add an entry for the host named “newhostname.newdomain.name”
 ```
 
 ## See Also
-[Using Templates for Additional Monitoring of UNIX and Linux](./Using-Templates-for-Additional-Monitoring-of-UNIX-and-Linux.md)
-[Troubleshooting UNIX and Linux Monitoring](./Troubleshooting-UNIX-and-Linux-Monitoring.md)
-[Accessing UNIX and Linux Computers in Operations Manager](./Accessing-UNIX-and-Linux-Computers-in-Operations-Manager.md)
-[Required Capabilities for UNIX and Linux Accounts](./Required-Capabilities-for-UNIX-and-Linux-Accounts.md)
-[Management Pack Issues](./Management-Pack-Issues.md)
-[Operating System Issues](./Operating-System-Issues.md)
-[Logging and Debugging](./Logging-and-Debugging.md)
-[Managing Certificates for UNIX and Linux Computers](./Managing-Certificates-for-UNIX-and-Linux-Computers.md)
-[Managing Resource Pools for UNIX and Linux Computers](./Managing-Resource-Pools-for-UNIX-and-Linux-Computers.md)
-[Install Agent on UNIX and Linux Using the Discovery Wizard](./Install-Agent-on-UNIX-and-Linux-Using-the-Discovery-Wizard.md)
+[Using Templates for Additional Monitoring of UNIX and Linux](Using-Templates-for-Additional-Monitoring-of-UNIX-and-Linux.md)
+[Troubleshooting UNIX and Linux Monitoring](Troubleshooting-UNIX-and-Linux-Monitoring.md)
+[Accessing UNIX and Linux Computers in Operations Manager](Accessing-UNIX-and-Linux-Computers-in-Operations-Manager.md)
+[Required Capabilities for UNIX and Linux Accounts](Required-Capabilities-for-UNIX-and-Linux-Accounts.md)
+[Management Pack Issues](Management-Pack-Issues.md)
+[Operating System Issues](Operating-System-Issues.md)
+[Logging and Debugging](Logging-and-Debugging.md)
+[Managing Certificates for UNIX and Linux Computers](Managing-Certificates-for-UNIX-and-Linux-Computers.md)
+[Managing Resource Pools for UNIX and Linux Computers](Managing-Resource-Pools-for-UNIX-and-Linux-Computers.md)
+[Install Agent on UNIX and Linux Using the Discovery Wizard](Install-Agent-on-UNIX-and-Linux-Using-the-Discovery-Wizard.md)
 
 

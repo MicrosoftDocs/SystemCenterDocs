@@ -8,7 +8,7 @@ ms.topic: article
 ms.assetid: 0097ed16-d9c3-4af4-9d14-7abd73afcbc1
 ---
 # How to delete a Run As account in VMM
-Use the following procedure to delete a Run As account that is not being currently consumed by any process in [!INCLUDE[vmm12sp1_long](./Token/vmm12sp1_long_md.md)]. [!INCLUDE[vmm12short](./Token/vmm12short_md.md)] blocks deletion of any Run As account being consumed by a process.
+Use the following procedure to delete a Run As account that is not being currently consumed by any process in [!INCLUDE[vmm12sp1_long](Token/vmm12sp1_long_md.md)]. [!INCLUDE[vmm12short](Token/vmm12short_md.md)] blocks deletion of any Run As account being consumed by a process.
 
 **Account requirements** Administrators can delete Run As accounts. Delegated administrators who have Run As accounts in the scope of their user role can delete those Run As accounts.
 
@@ -25,7 +25,7 @@ Use the following procedure to delete a Run As account that is not being current
 The credentials are removed from the VMM database.
 
 ## See Also
-[Configuring Run As accounts in VMM](./Configuring-Run-As-accounts-in-VMM.md)
-[Securing VMM resources](./Securing-VMM-resources.md)
+[Configuring Run As accounts in VMM](Configuring-Run-As-accounts-in-VMM.md)
+[Securing VMM resources](Securing-VMM-resources.md)
 
 

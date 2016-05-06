@@ -14,7 +14,7 @@ ms.assetid: 150b922a-d9fb-4b36-b964-e1738f054eb3
 # Deploy a RAS Gateway using VMM
 ## Introduction
 
-This topic helps you evaluate the Software Defined Networking (SDN) features in [!INCLUDE[winthreshold_server_2_md./Token/winthreshold_server_2_md.md)] 5 and Virtual Machine Manager 2016 Technology Preview 5. In particular, this topic is focused on scenarios that incorporate a RAS Gateway with the Virtual Machine Manager (VMM).
+This topic helps you evaluate the Software Defined Networking (SDN) features in [!INCLUDE[winthreshold_server_2_mdToken/winthreshold_server_2_md.md)] 5 and Virtual Machine Manager 2016 Technology Preview 5. In particular, this topic is focused on scenarios that incorporate a RAS Gateway with the Virtual Machine Manager (VMM).
 
 A RAS Gateway is a data path element in SDN that enables Site-to-site (S2S) connectivity between two autonomous systems. Specifically, a RAS Gateway enables S2S connectivity between remote tenant networks and your datacenter using IPSec, Generic Routing Encapsulation (GRE) or Layer 3 Forwarding.
 
@@ -48,7 +48,7 @@ Refer to the toplogy diagram in the following Microsoft TechNet Library topic: [
 
 The diagram shows a sample 4-node setup. The setup is highly available with three network controller nodes (virtual machines), three SLB/MUX nodes, and three gateway virtual machines. It shows two tenants with one virtual network broken into two virtual subnets to simulate a web tier and a database tier. Both the infrastructure and tenant virtual machines can be redistributed across any physical host.
 
-All the gateway virtual machines must run [!INCLUDE[winthreshold_server_2_md./Token/winthreshold_server_2_md.md)] 5 with Zero Day Package.
+All the gateway virtual machines must run [!INCLUDE[winthreshold_server_2_mdToken/winthreshold_server_2_md.md)] 5 with Zero Day Package.
 
 #### Logical Networks
 
@@ -208,7 +208,7 @@ Now that the gateway service is deployed, you can configure its properties and a
 
 14. Click **OK**
 
-    ![VMM gateway service properties/Image/VMM-gateway-service-properties.png)
+    ![VMM gateway service propertiesImage/VMM-gateway-service-properties.png)
 
 The Service instance that you deployed is now associated with the Gateway Manager role, and you should see the gateway virtual machine instance listed under the Gateway Manager role.
 
@@ -235,7 +235,7 @@ A S2S IPSec connection allows you to securely access remote virtual machines and
 5.	Click **Add** and select the **IPSec** type connection.
 6.	Type a subnet as shown in the following diagram. This subnet is used to route packets out of the VM Network. This subnet need not be pre-configured in your datacenter.
 
-    ![VMM routing subnet/Image/VMM-routing-subnet.png)
+    ![VMM routing subnetImage/VMM-routing-subnet.png)
 7.	Type a connection name of your choice. The name used in the example screenshot is **TP5_IPSEC**.
 8.	Type the IP address of the Remote endpoint.
 9.	Optionally, you can also configure bandwidth settings on this screen.
@@ -247,7 +247,7 @@ A S2S IPSec connection allows you to securely access remote virtual machines and
 
     >[!NOTE]If you selected **Enable Border Gateway Protocol (BGP)** on the **Connectivity** tab then you can leave this screen blank and instead fill out your ASN, peer BGP IP and its ASN on the **Border Gateway Protocol** tab as shown below:
     
-    ![VMM BGP/Image/VMM-BGP.png)
+    ![VMM BGPImage/VMM-BGP.png)
 
 14. Select the **Advanced** tab. Accept  the default settings and click **OK**.
 
@@ -265,7 +265,7 @@ A S2S GRE connection allows you to access remote virtual machines and services f
 6.	Click **Add** and then select **GRE** type connection.
 7.	Type a subnet as shown in the following diagram. This subnet is used to route packets out of the VM Network. This subnet does not need to be preconfigured in your datacenter.
 
-    ![VMM routing subnet 2/Image/VMM-routing-subnet-2.png)
+    ![VMM routing subnet 2Image/VMM-routing-subnet-2.png)
 
 8.	Type a connection name. The name used in the example screenshot is **TP5_GRE**.
 9.	Type the IP address of the Remote endpoint.

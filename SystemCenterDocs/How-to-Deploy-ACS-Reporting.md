@@ -8,7 +8,7 @@ ms.topic: article
 ms.assetid: 1d8e668e-087e-4117-916b-48aac65ab72b
 ---
 # How to Deploy ACS Reporting
-You deploy Audit Collection Services \(ACS\) Reporting on a supported version of Microsoft SQL Server Reporting Services \(SSRS\) instance. If [!INCLUDE[om12long](./Token/om12long_md.md)] Reporting has also been installed on the same SSRS instance, you can view the ACS Reports in the Operations console. Before you deploy ACS, there are a number of prerequisite steps you must perform, such as ensuring that a ACS is configured on management server within your management group. For more information, see [Deploying ACS and ACS Reporting](assetId:///acbe8dba-82f5-447b-a01c-9abb337e378c).
+You deploy Audit Collection Services \(ACS\) Reporting on a supported version of Microsoft SQL Server Reporting Services \(SSRS\) instance. If [!INCLUDE[om12long](Token/om12long_md.md)] Reporting has also been installed on the same SSRS instance, you can view the ACS Reports in the Operations console. Before you deploy ACS, there are a number of prerequisite steps you must perform, such as ensuring that a ACS is configured on management server within your management group. For more information, see [Deploying ACS and ACS Reporting](assetId:///acbe8dba-82f5-447b-a01c-9abb337e378c).
 
 ### To deploy ACS Reporting
 

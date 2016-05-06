@@ -81,7 +81,7 @@ In order to use this feature you’ll need to install KB [2919355](http://go.mic
 -   Install KB 2919355 on each cluster node. You’ll need to restart the node after the installation.
 
 ### <a name="BKMK_Window"></a>Define backup and consistency check windows
-When you scale up backup of virtual machines you need to be able to isolate backup and production windows to make best use of resources. Update rollup 3 allows you to create protection and synchronization windows for virtual machines only. You can create specific time windows that restrict start and finish times for backups and consistency checks. Pending unscheduled jobs outside the window will be cancelled, and in\-progress jobs will be allowed to continue. For instructions see [Configure backup windows for virtual machines](./Configure-and-run-backups.md#BKMK_VM).
+When you scale up backup of virtual machines you need to be able to isolate backup and production windows to make best use of resources. Update rollup 3 allows you to create protection and synchronization windows for virtual machines only. You can create specific time windows that restrict start and finish times for backups and consistency checks. Pending unscheduled jobs outside the window will be cancelled, and in\-progress jobs will be allowed to continue. For instructions see [Configure backup windows for virtual machines](Configure-and-run-backups.md#BKMK_VM).
 
 ### <a name="BKMK_Cert"></a>Certification process
 Update rollup 3 introduces a certification process for 3rd party tape devices over synthetic fiber channel\-to\-tape. This process is similar to the existing tape certification process for DPM.

@@ -11,12 +11,12 @@ ms.topic: article
 ms.assetid: 9f1b561c-6298-4ee9-a64c-061eda1b01be
 ---
 # Troubleshoot Your Orchestrator Installation_2
-The latest troubleshooting information for [!INCLUDE[orchlong](./Token/orchlong_md.md)] is available in the release notes at [Release Notes for System Center 2012 - Orchestrator_1](./Release-Notes-for-System-Center-2012---Orchestrator_1.md). The following information provides additional instructions and caveats that you can use during installation to resolve problems you might experience.
+The latest troubleshooting information for [!INCLUDE[orchlong](Token/orchlong_md.md)] is available in the release notes at [Release Notes for System Center 2012 - Orchestrator_1](Release-Notes-for-System-Center-2012---Orchestrator_1.md). The following information provides additional instructions and caveats that you can use during installation to resolve problems you might experience.
 
-## [!INCLUDE[orchshort](./Token/orchshort_md.md)] log files
+## [!INCLUDE[orchshort](Token/orchshort_md.md)] log files
 If you experience problems during installation, installation log files are located in the folder **C:\\Users\\%USERNAME%\\AppData\\Local\\SCO\\LOGS**.
 
-If you experience problems when you are running [!INCLUDE[orchshort](./Token/orchshort_md.md)], the product log files are located in the folder **C:\\ProgramData\\Microsoft System Center 2012\\Orchestrator\\**.
+If you experience problems when you are running [!INCLUDE[orchshort](Token/orchshort_md.md)], the product log files are located in the folder **C:\\ProgramData\\Microsoft System Center 2012\\Orchestrator\\**.
 
 ## Windows Firewall
 When you deploy additional Runbook Designer applications to your environment, you might see a failed installation message. To correctly install the Runbook Designer, enable the following firewall rules as they apply to your operating system and deployment configuration.
@@ -33,11 +33,11 @@ If you are running Windows Server 2012 R2, enable the following rules to allow a
 -   Windows Management Instrumentation \(WMI\-In\)
 
 #### Automated deployment
-When a runbook server or Runbook Designer is installed behind a firewall, specific firewall rules are required between the remote computers that are used to deploy the runbook server and Runbook Designer. An additional rule is required for the remote connection between the Runbook Designer and the runbook server to allow the [!INCLUDE[orchshort](./Token/orchshort_md.md)] management service to accept remote connections. If you are using the **Monitor WMI** task, the runbook server requires a special firewall rule on the computer that uses PolicyModule.exe.
+When a runbook server or Runbook Designer is installed behind a firewall, specific firewall rules are required between the remote computers that are used to deploy the runbook server and Runbook Designer. An additional rule is required for the remote connection between the Runbook Designer and the runbook server to allow the [!INCLUDE[orchshort](Token/orchshort_md.md)] management service to accept remote connections. If you are using the **Monitor WMI** task, the runbook server requires a special firewall rule on the computer that uses PolicyModule.exe.
 
 Enable the following firewall rules on your computer:
 
-### Firewall rule between the Runbook Designer and the [!INCLUDE[orchshort](./Token/orchshort_md.md)] management server
+### Firewall rule between the Runbook Designer and the [!INCLUDE[orchshort](Token/orchshort_md.md)] management server
 
 |Operating system|Firewall rule|
 |--------------------|-----------------|
@@ -57,7 +57,7 @@ Enable the following firewall rules on your computer:
 |64\-bit|%ProgramFiles \(x86\)%\\Microsoft System Center 2012 R2\\Orchestrator\\Runbook Server\\PolicyModule.exe|
 |32\-bit|%ProgramFiles\\Microsoft System Center 2012 R2\\Orchestrator\\Runbook Server\\PolicyModule.exe|
 
-[!INCLUDE[crabout](./Token/crabout_md.md)] adding firewall rules, see [Add or Edit a Firewall Rule](http://go.microsoft.com/fwlink/p/?LinkID=201019).
+[!INCLUDE[crabout](Token/crabout_md.md)] adding firewall rules, see [Add or Edit a Firewall Rule](http://go.microsoft.com/fwlink/p/?LinkID=201019).
 
 ## <a name="BKMK_RunbookServicefailstostart"></a>RunbookService fails to start after computer reboot
 When you reboot your runbook server, the RunbookService attempts to connect to the orchestration database. If the database is not available, the RunbookService fails. The event log message is **This computer was unable to communicate with the computer providing the server.**. Typically, this can occur when the SQL server and the runbook server are installed on the same computer.
@@ -65,7 +65,7 @@ When you reboot your runbook server, the RunbookService attempts to connect to t
 To solve this problem. you can manually start the RunbookService, or configure the RunbookService to make multiple attempts during startup to connect to database before failing.
 
 ## Cannot restart runbook service if you uninstall with an account without administrator permissions
-If you attempt to uninstall [!INCLUDE[orchshort](./Token/orchshort_md.md)] while logged in with an account that is a member of OrchestratorSystemGroup but is not an administrator, uninstall removes all accounts from OrchestratorSystemGroup. If you stop the runbook service and attempt to restart the service, the services fails because the user account does not have the correct permissions to retrieve the orchestration database connection. An account that is an administrator or a member of the OrchestratorSystemGroup is required to retrieve the orchestration database connection.
+If you attempt to uninstall [!INCLUDE[orchshort](Token/orchshort_md.md)] while logged in with an account that is a member of OrchestratorSystemGroup but is not an administrator, uninstall removes all accounts from OrchestratorSystemGroup. If you stop the runbook service and attempt to restart the service, the services fails because the user account does not have the correct permissions to retrieve the orchestration database connection. An account that is an administrator or a member of the OrchestratorSystemGroup is required to retrieve the orchestration database connection.
 
 To solve this problem, an administrator can add the user back to OrchestratorSystemGroup.
 
@@ -78,16 +78,16 @@ If you get HTTP errors when starting the Orchestration console, try the followin
 
 ## Other resources for this product
 
--   TechNet Library main page for [Orchestrator_1](./Orchestrator_1.md)
+-   TechNet Library main page for [Orchestrator_1](Orchestrator_1.md)
 
--   [Deploying System Center 2012 - Orchestrator](./Deploying-System-Center-2012---Orchestrator.md)
+-   [Deploying System Center 2012 - Orchestrator](Deploying-System-Center-2012---Orchestrator.md)
 
--   [Deployment Overview](./Deployment-Overview.md)
+-   [Deployment Overview](Deployment-Overview.md)
 
--   [Plan Your Orchestrator Deployment](./Plan-Your-Orchestrator-Deployment.md)
+-   [Plan Your Orchestrator Deployment](Plan-Your-Orchestrator-Deployment.md)
 
--   [Install Orchestrator](./Install-Orchestrator.md)
+-   [Install Orchestrator](Install-Orchestrator.md)
 
--   [Perform Post-Installation Tasks](./Perform-Post-Installation-Tasks.md)
+-   [Perform Post-Installation Tasks](Perform-Post-Installation-Tasks.md)
 
 

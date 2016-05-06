@@ -8,7 +8,7 @@ ms.topic: article
 ms.assetid: 02bb189f-bd3b-420b-93cf-3c14e234f551
 ---
 # How to Move a VMM Database to Another Computer
-You might want to move the [!INCLUDE[vmm12sp1_long](./Token/vmm12sp1_long_md.md)] database for one or more of the following reasons:
+You might want to move the [!INCLUDE[vmm12sp1_long](Token/vmm12sp1_long_md.md)] database for one or more of the following reasons:
 
 -   You want to use a different computer than the one you currently use for the VMM database. For example, you might want to use a new computer with a newer version of SQL Server for the VMM database. Make sure you choose a supported version of SQL Server.
 
@@ -38,7 +38,7 @@ Use the following procedures to collect information about the VMM database and i
 
 7.  If the account you recorded in the previous step is the **Local System** account, or you already know whether it is a local account or a domain account, skip this step. Otherwise, click **Tools > Computer Management**, expand **Local Users and Groups**, and then click **Users**. If the account you recorded is listed under Users \(or is the **Local System** account\), it is a local account. If not, it is a domain account.
 
-8.  Review your records for information about whether you are using distributed key management, or whether encryption keys are being stored locally on the VMM management server. For more information, see [Choosing Service Account and Distributed Key Management Settings During an Upgrade](./Choosing-Service-Account-and-Distributed-Key-Management-Settings-During-an-Upgrade.md).
+8.  Review your records for information about whether you are using distributed key management, or whether encryption keys are being stored locally on the VMM management server. For more information, see [Choosing Service Account and Distributed Key Management Settings During an Upgrade](Choosing-Service-Account-and-Distributed-Key-Management-Settings-During-an-Upgrade.md).
 
 9. If you are moving the VMM database but not upgrading VMM, also review your records about which Update Rollups, if any, have been applied to VMM.
 
@@ -50,7 +50,7 @@ Use the following procedures to collect information about the VMM database and i
 
 3.  Use the tools in SQL Server to restore the database.
 
-4.  If you are upgrading VMM, continue the upgrade as described in [Performing a VMM Upgrade](./Performing-a-VMM-Upgrade.md), and skip the remainder of this procedure.
+4.  If you are upgrading VMM, continue the upgrade as described in [Performing a VMM Upgrade](Performing-a-VMM-Upgrade.md), and skip the remainder of this procedure.
 
     If you are not upgrading, go on to the next step.
 
@@ -87,6 +87,6 @@ Use the following procedures to collect information about the VMM database and i
 For more information about moving a SQL Server database, see [Copying Databases with Backup and Restore](http://technet.microsoft.com/library/ms190436.aspx).
 
 ## See Also
-[Planning an Upgrade of Virtual Machine Manager](./Planning-an-Upgrade-of-Virtual-Machine-Manager.md)
+[Planning an Upgrade of Virtual Machine Manager](Planning-an-Upgrade-of-Virtual-Machine-Manager.md)
 
 

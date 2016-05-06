@@ -31,6 +31,6 @@ The Runbook Tester interface is organized into the following four panes.
 |**Resource Browser**|Displays the counters, variables, computers groups, and schedules that the runbook in the workspace uses.|
 
 ## See Also
-[Tools](./Tools.md)
+[Tools](Tools.md)
 
 

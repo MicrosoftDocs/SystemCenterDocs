@@ -14,7 +14,7 @@ ms.assetid: 2f5d5467-2ef2-4ee4-b4a7-7092977127ef
 When you enable Client Monitoring for a management group, you can configure it to forward error reports for Microsoft products to Microsoft. Error Transmission settings allow you to specify which error reports are sent to Microsoft and the additional diagnostic data that is included with the error reports.
 
 > [!NOTE]
-> For information about enabling the Client Monitoring feature of [!INCLUDE[om12long](./Token/om12long_md.md)], see [How to Configure a Management Server for Client Monitoring](./How-to-Configure-a-Management-Server-for-Client-Monitoring.md).
+> For information about enabling the Client Monitoring feature of [!INCLUDE[om12long](Token/om12long_md.md)], see [How to Configure a Management Server for Client Monitoring](How-to-Configure-a-Management-Server-for-Client-Monitoring.md).
 
 ### To find the Error Transmission tab of the Global Management Server Settings \- Privacy dialog box
 
@@ -58,10 +58,10 @@ When you enable Client Monitoring for a management group, you can configure it t
 2.  Click **OK**.
 
 ## See Also
-[Client Monitoring Using Agentless Exception Monitoring in Operations Manager](./Client-Monitoring-Using-Agentless-Exception-Monitoring-in-Operations-Manager.md)
-[How to Configure Clients for Client Monitoring](./How-to-Configure-Clients-for-Client-Monitoring.md)
-[How to Customize Client Monitoring Data Collection and Solution Response URLs for Error Groups](./How-to-Customize-Client-Monitoring-Data-Collection-and-Solution-Response-URLs-for-Error-Groups.md)
-[How to Configure a Management Server for Client Monitoring](./How-to-Configure-a-Management-Server-for-Client-Monitoring.md)
-[Forwarding Client Error Reports &#40;Client Monitoring&#41;](./Forwarding-Client-Error-Reports--Client-Monitoring-.md)
+[Client Monitoring Using Agentless Exception Monitoring in Operations Manager](Client-Monitoring-Using-Agentless-Exception-Monitoring-in-Operations-Manager.md)
+[How to Configure Clients for Client Monitoring](How-to-Configure-Clients-for-Client-Monitoring.md)
+[How to Customize Client Monitoring Data Collection and Solution Response URLs for Error Groups](How-to-Customize-Client-Monitoring-Data-Collection-and-Solution-Response-URLs-for-Error-Groups.md)
+[How to Configure a Management Server for Client Monitoring](How-to-Configure-a-Management-Server-for-Client-Monitoring.md)
+[Forwarding Client Error Reports &#40;Client Monitoring&#41;](Forwarding-Client-Error-Reports--Client-Monitoring-.md)
 
 

@@ -73,7 +73,7 @@ Scenario 1 shows a scenario in which four DPM servers are chained:
 |DS3 \(secondary\)|DS1, DS2|DS4|
 |DS4 \(secondary\)|DS3|\-|
 
-![](/Image/DPM2012_DRDeployment_Chaining.gif)
+![](Image/DPM2012_DRDeployment_Chaining.gif)
 
 #### Chaining example 2
 **Scenario 2: Chained protection**
@@ -89,10 +89,10 @@ Scenario 2 shows a scenario in which four DPM servers are chained:
 |DS3 \(secondary\)|DS2|DS4|
 |DS4|DS3|\-|
 
-![](/Image/DPM2012_DR_ChainingS1.gif)
+![](Image/DPM2012_DR_ChainingS1.gif)
 
 ### Cyclic protection
-If you don’t want to use a secondary server then two [!INCLUDE[dpm2012short](./Token/dpm2012short_md.md)] servers can protect each other.
+If you don’t want to use a secondary server then two [!INCLUDE[dpm2012short](Token/dpm2012short_md.md)] servers can protect each other.
 
 **Scenario 3: Cyclic protection**
 
@@ -106,7 +106,7 @@ Scenario 3 shows a scenario using cyclic protection
 |DS3 \(primary\)|PS4|DS2|
 |DS3 \(secondary\)|DS2|DS2|
 
-![](/Image/DPM2012_DRDeployment_Cyclic.jpg)
+![](Image/DPM2012_DRDeployment_Cyclic.jpg)
 
 ### Configure chaining
 Set up chaining as follows:

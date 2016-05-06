@@ -12,7 +12,7 @@ ms.assetid: c2d05413-a1c8-444b-a6d8-ae652604a341
 robots: noindex,nofollow
 ---
 # How to Add, View, or Remove Related Configuration Item Information
-You can use the following procedures to add information, such as related work items or files, to configuration items in [!INCLUDE[smlong12](./Token/smlong12_md.md)]. The procedures in this topic describe only how to add items, but you can follow similar steps to view or remove items.
+You can use the following procedures to add information, such as related work items or files, to configuration items in [!INCLUDE[smlong12](Token/smlong12_md.md)]. The procedures in this topic describe only how to add items, but you can follow similar steps to view or remove items.
 
 For example, when you are troubleshooting an incident, you might discover that a relationship exists between two or more objects. A work item to apply an application service pack might be related to more than one configuration item. You might need to update the configuration items to reflect that relationship.
 
@@ -20,7 +20,7 @@ Similarly, work items such as incidents, problems, and change requests are often
 
 ### To add information to configuration items
 
-1.  In the [!INCLUDE[smcons](./Token/smcons_md.md)], click **Configuration Items**.
+1.  In the [!INCLUDE[smcons](Token/smcons_md.md)], click **Configuration Items**.
 
 2.  In the **Configuration Items** pane, expand **Configuration Items**, and then expand **Computers**.
 

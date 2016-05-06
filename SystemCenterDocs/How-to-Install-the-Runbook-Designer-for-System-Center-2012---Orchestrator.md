@@ -11,18 +11,18 @@ ms.topic: article
 ms.assetid: 5d282490-cb50-4011-a6eb-47faf10bb12a
 ---
 # How to Install the Runbook Designer for System Center 2012 - Orchestrator
-Use the following steps to install the [!INCLUDE[orchlong](./Token/orchlong_md.md)] Runbook Designer on a single computer.
+Use the following steps to install the [!INCLUDE[orchlong](Token/orchlong_md.md)] Runbook Designer on a single computer.
 
-### To install the [!INCLUDE[orchshort](./Token/orchshort_md.md)] Runbook Designer on a single computer
+### To install the [!INCLUDE[orchshort](Token/orchshort_md.md)] Runbook Designer on a single computer
 
-1.  On the server where you want to install the [!INCLUDE[orchshort](./Token/orchshort_md.md)] Runbook Designer, start the **[!INCLUDE[orchlong](./Token/orchlong_md.md)] Setup Wizard**.
+1.  On the server where you want to install the [!INCLUDE[orchshort](Token/orchshort_md.md)] Runbook Designer, start the **[!INCLUDE[orchlong](Token/orchlong_md.md)] Setup Wizard**.
 
-    To start the **[!INCLUDE[orchlong](./Token/orchlong_md.md)] Setup Wizard**, on your product media or network share, double\-click **SetupOrchestrator.exe**.
+    To start the **[!INCLUDE[orchlong](Token/orchlong_md.md)] Setup Wizard**, on your product media or network share, double\-click **SetupOrchestrator.exe**.
 
     > [!NOTE]
-    > Before you begin the install of the Runbook Designer, close any open programs and ensure that there are no pending restarts on the computer. For example, if you have installed a server role by using [!INCLUDE[smshort](./Token/smshort_md.md)] or have applied a security update, you might have to restart the computer, and then log on to the computer with the same user account to finish the installation of the server role or the security update.
+    > Before you begin the install of the Runbook Designer, close any open programs and ensure that there are no pending restarts on the computer. For example, if you have installed a server role by using [!INCLUDE[smshort](Token/smshort_md.md)] or have applied a security update, you might have to restart the computer, and then log on to the computer with the same user account to finish the installation of the server role or the security update.
 
-2.  On the main **[!INCLUDE[orchlong](./Token/orchlong_md.md)] Setup Wizard** page, click **Runbook Designer**.
+2.  On the main **[!INCLUDE[orchlong](Token/orchlong_md.md)] Setup Wizard** page, click **Runbook Designer**.
 
     > [!WARNING]
     > If Microsoft .NET Framework 3.5 Service Pack 1 is not installed on your computer, a dialog box appears asking if you want to install .NET Framework 3.5 SP1. Click **Yes** to proceed with the installation.
@@ -37,7 +37,7 @@ Use the following steps to install the [!INCLUDE[orchlong](./Token/orchlong_md.m
 
     3.  Click **Next** to continue.
 
-4.  On the **Select the installation location** page, verify the installation location for [!INCLUDE[orchshort](./Token/orchshort_md.md)], and then click **Next**.
+4.  On the **Select the installation location** page, verify the installation location for [!INCLUDE[orchshort](Token/orchshort_md.md)], and then click **Next**.
 
 5.  Review the **Installation summary** page, and then click **Install**.
 
@@ -52,7 +52,7 @@ Use the following steps to install the [!INCLUDE[orchlong](./Token/orchlong_md.m
     > [!NOTE]
     > If the Runbook Designer is connected to another management server, the **Connect to a server** icon is disabled. Click the **Disconnect** icon before you connect to a different management server.
 
-2.  In the **System Center Orchestrator 2012 Connection** dialog box, enter the name of the server that hosts your [!INCLUDE[orchshort](./Token/orchshort_md.md)] management server, and then click **OK**.
+2.  In the **System Center Orchestrator 2012 Connection** dialog box, enter the name of the server that hosts your [!INCLUDE[orchshort](Token/orchshort_md.md)] management server, and then click **OK**.
 
 ### To enable network discovery
 
@@ -65,6 +65,6 @@ Use the following steps to install the [!INCLUDE[orchlong](./Token/orchlong_md.m
     If you are prompted for an administrator password or confirmation, type the password or provide confirmation.
 
 ## See Also
-[Install Individual Orchestrator Features](./Install-Individual-Orchestrator-Features.md)
+[Install Individual Orchestrator Features](Install-Individual-Orchestrator-Features.md)
 
 

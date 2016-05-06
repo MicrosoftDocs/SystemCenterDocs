@@ -8,7 +8,7 @@ ms.topic: article
 ms.assetid: af3aae13-900f-49b0-98e1-89eda7c25c0a
 ---
 # How to use VMM to convert VMware virtual machines to Hyper-V (V2V)_1
-You can use the following procedure to convert a VMware virtual machine to a Hyper\-V virtual machine through the virtual\-to\-virtual \(V2V\) machine conversion process in [!INCLUDE[vmm12sp1_long](./Token/vmm12sp1_long_md.md)]. The source virtual machine can be stored in the [!INCLUDE[vmm12short](./Token/vmm12short_md.md)] library or managed by a VMware ESX host.
+You can use the following procedure to convert a VMware virtual machine to a Hyper\-V virtual machine through the virtual\-to\-virtual \(V2V\) machine conversion process in [!INCLUDE[vmm12sp1_long](Token/vmm12sp1_long_md.md)]. The source virtual machine can be stored in the [!INCLUDE[vmm12short](Token/vmm12short_md.md)] library or managed by a VMware ESX host.
 
 > [!NOTE]
 > You can also perform V2V conversions with Microsoft Virtual Machine Converter \(MVMC\). For more information, see [Microsoft Virtual Machine Converter 3.0](http://technet.microsoft.com/library/dn873998.aspx).
@@ -17,9 +17,9 @@ You can use the following procedure to convert a VMware virtual machine to a Hyp
 
 Before you begin, there are several things you need to be aware of concerning V2V conversions:
 
--   [!INCLUDE[vmm12short](./Token/vmm12short_md.md)] does not support converting VMware Workstations.
+-   [!INCLUDE[vmm12short](Token/vmm12short_md.md)] does not support converting VMware Workstations.
 
--   [!INCLUDE[vmm12short](./Token/vmm12short_md.md)] does not support converting VMware virtual machines with virtual hard disks that are connected to an integrated drive electronics \(IDE\) bus.
+-   [!INCLUDE[vmm12short](Token/vmm12short_md.md)] does not support converting VMware virtual machines with virtual hard disks that are connected to an integrated drive electronics \(IDE\) bus.
 
 -   Online V2V conversions are not supported. This means VMware virtual machines must be offline \(powered off\).
 
@@ -27,7 +27,7 @@ Before you begin, there are several things you need to be aware of concerning V2
 
 -   You must uninstall VMware Tools on the guest operating system of the virtual machine. For information about VMWare Tools, see [Overview of VMware Tools](http://kb.vmware.com/selfservice/microsites/search.do?language=en_US&cmd=displayKC&externalId=340).
 
-[!INCLUDE[vmm12short](./Token/vmm12short_md.md)] in [!INCLUDE[sc_threshold_1](./Token/sc_threshold_1_md.md)] supports the V2V machine conversion of virtual machines that are running on the following versions of VMware ESX:
+[!INCLUDE[vmm12short](Token/vmm12short_md.md)] in [!INCLUDE[sc_threshold_1](Token/sc_threshold_1_md.md)] supports the V2V machine conversion of virtual machines that are running on the following versions of VMware ESX:
 
 -   ESX\/ESXi 4.1
 
@@ -53,7 +53,7 @@ Before you begin, there are several things you need to be aware of concerning V2
 6.  On the **Specify Virtual Machine Identity** page, either keep or change the virtual machine name, enter an optional description, and then click **Next**.
 
     > [!NOTE]
-    > The virtual machine name identifies the virtual machine to [!INCLUDE[vmm12short](./Token/vmm12short_md.md)]. The name does not have to match the computer name of the virtual machine. However, to avoid confusion, we recommend that you use the same name as the computer name.
+    > The virtual machine name identifies the virtual machine to [!INCLUDE[vmm12short](Token/vmm12short_md.md)]. The name does not have to match the computer name of the virtual machine. However, to avoid confusion, we recommend that you use the same name as the computer name.
 
 7.  On the **Virtual Machine Configuration** page, configure the number of processors and assign the amount of memory in megabytes or gigabytes, and then click **Next**.
 
@@ -88,7 +88,7 @@ Before you begin, there are several things you need to be aware of concerning V2
     3.  In the **VMs** pane, verify that the virtual machine appears.
 
 ## See Also
-[VMM support for VMware](./VMM-support-for-VMware.md)
-[Creating and deploying virtual machines in VMM](./Creating-and-deploying-virtual-machines-in-VMM.md)
+[VMM support for VMware](VMM-support-for-VMware.md)
+[Creating and deploying virtual machines in VMM](Creating-and-deploying-virtual-machines-in-VMM.md)
 
 

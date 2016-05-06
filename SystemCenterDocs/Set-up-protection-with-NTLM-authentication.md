@@ -11,7 +11,7 @@ ms.topic: article
 ms.assetid: a31fc374-1662-4984-834b-ef3c67e20666
 ---
 # Set up protection with NTLM authentication
-[!INCLUDE[dpm2012long](./Token/dpm2012long_md.md)] can protect computers in workgroups and untrusted domains. You can handle authentication using NTLM or certificates. This topic describes how to configure protection using NTLM.
+[!INCLUDE[dpm2012long](Token/dpm2012long_md.md)] can protect computers in workgroups and untrusted domains. You can handle authentication using NTLM or certificates. This topic describes how to configure protection using NTLM.
 
 1.  **[Install the agent](#BKMK_Install)**—Install the agent on the computer you want to protect.
 
@@ -36,7 +36,7 @@ On the computer you want to protect, run DPMAgentInstaller\_X64.exe from the DPM
 
     -   **\-IsNonDomainServer**—Use to indicate that the server is in a workgroup or untrusted domain in relation to the computer you want to protect. Firewall exceptions are created for required ports.
 
-    -   **\-UserName**—Specify the name of the account you want to use for NTLM authentication. To use this option you should have the –isNonDomainServer flag specified. A local user account will be created and the [!INCLUDE[dpm2012short](./Token/dpm2012short_md.md)] protection agent will be configured to use this account for authentication.
+    -   **\-UserName**—Specify the name of the account you want to use for NTLM authentication. To use this option you should have the –isNonDomainServer flag specified. A local user account will be created and the [!INCLUDE[dpm2012short](Token/dpm2012short_md.md)] protection agent will be configured to use this account for authentication.
 
     -   **\-ProductionServerDnsSuffix**—Use this switch if the server has multiple DNS suffixes configured. This switch represents the DNS suffix that the server uses to connect to the computer you’re protecting.
 
@@ -74,7 +74,7 @@ Example to configure a workgroup computer after the agent is installed:
 
 1.  On the computer, run `SetDpmServer.exe -DpmServerName Server01 -isNonDomainServer -UserName mark`.
 
-2.  On the [!INCLUDE[dpm2012short](./Token/dpm2012short_md.md)] server, run `Attach-NonDomainServer.ps1 –DpmServername Server01 -PSName Finance01 -Username mark`.
+2.  On the [!INCLUDE[dpm2012short](Token/dpm2012short_md.md)] server, run `Attach-NonDomainServer.ps1 –DpmServername Server01 -PSName Finance01 -Username mark`.
 
 Because the workgroup computers are typically accessible only by using NetBIOS name, the value for DPMServerName must be the NetBIOS name.
 
@@ -84,6 +84,6 @@ Example to configure a workgroup computer with conflicting NetBIOS names after t
 
 1.  On the workgroup computer, run `SetDpmServer.exe -dpmServerName Server01.corp.contoso.com -isNonDomainServer -userName mark -productionServerDnsSuffix widgets.corp.com`.
 
-2.  On the [!INCLUDE[dpm2012short](./Token/dpm2012short_md.md)] server, run `Attach-NonDomainServer.ps1 -DPMServername Server01.corp.contoso.com -PSName Finance01.widgets.corp.com -Username mark`.
+2.  On the [!INCLUDE[dpm2012short](Token/dpm2012short_md.md)] server, run `Attach-NonDomainServer.ps1 -DPMServername Server01.corp.contoso.com -PSName Finance01.widgets.corp.com -Username mark`.
 
 

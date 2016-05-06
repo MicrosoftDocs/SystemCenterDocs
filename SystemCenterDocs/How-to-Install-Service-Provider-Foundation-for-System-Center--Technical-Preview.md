@@ -11,25 +11,25 @@ ms.topic: get-started-article
 ms.assetid: ce22e119-71d2-4a0c-a9a0-99b886ce392f
 ---
 # How to Install Service Provider Foundation for System Center  Technical Preview
-You can install [!INCLUDE[spflong](./Token/spflong_md.md)] on a single server or on multiple servers, with at least one server that has Microsoft SQL Server installed to contain the [!INCLUDE[spfshort](./Token/spfshort_md.md)] database.
+You can install [!INCLUDE[spflong](Token/spflong_md.md)] on a single server or on multiple servers, with at least one server that has Microsoft SQL Server installed to contain the [!INCLUDE[spfshort](Token/spfshort_md.md)] database.
 
-A side\-by\-side installation of different [!INCLUDE[spfshort](./Token/spfshort_md.md)] versions that are on the same server is not supported.
+A side\-by\-side installation of different [!INCLUDE[spfshort](Token/spfshort_md.md)] versions that are on the same server is not supported.
 
-The Setup wizard configures [!INCLUDE[spfshort](./Token/spfshort_md.md)] along with the web services that you select for that computer. Installation of [!INCLUDE[spfshort](./Token/spfshort_md.md)] onto a virtual machine is supported.
+The Setup wizard configures [!INCLUDE[spfshort](Token/spfshort_md.md)] along with the web services that you select for that computer. Installation of [!INCLUDE[spfshort](Token/spfshort_md.md)] onto a virtual machine is supported.
 
-Before you install [!INCLUDE[spfshort](./Token/spfshort_md.md)], do the following:
+Before you install [!INCLUDE[spfshort](Token/spfshort_md.md)], do the following:
 
--   Make sure that each computer has sufficient RAM and hard disk space for all the web services that you intend to install. Also, be sure to have the prerequisite software installed. For more information, see [System Requirements for System Center Technical Preview](./System-Requirements-for-System-Center-Technical-Preview.md).
+-   Make sure that each computer has sufficient RAM and hard disk space for all the web services that you intend to install. Also, be sure to have the prerequisite software installed. For more information, see [System Requirements for System Center Technical Preview](System-Requirements-for-System-Center-Technical-Preview.md).
 
--   Make sure that you have a domain user account with administrative privileges on the computers on which you want to install [!INCLUDE[spfshort](./Token/spfshort_md.md)].
+-   Make sure that you have a domain user account with administrative privileges on the computers on which you want to install [!INCLUDE[spfshort](Token/spfshort_md.md)].
 
 -   Close any open programs, and make sure that the computer does not have a restart pending.
 
 If there is a problem with the installation completing successfully, refer to the log files, named “Microsoft Service Provider\*.log”, in the %SYSTEMDRIVE%\\%TEMP%  folder.
 
-### To install [!INCLUDE[spfshort](./Token/spfshort_md.md)]
+### To install [!INCLUDE[spfshort](Token/spfshort_md.md)]
 
-1.  On the server where you want to install [!INCLUDE[spfshort](./Token/spfshort_md.md)], double\-click **SetupOrchestrator.exe** on the installation media to start the [!INCLUDE[scor_threshold_1](./Token/scor_threshold_1_md.md)] Setup Wizard.
+1.  On the server where you want to install [!INCLUDE[spfshort](Token/spfshort_md.md)], double\-click **SetupOrchestrator.exe** on the installation media to start the [!INCLUDE[scor_threshold_1](Token/scor_threshold_1_md.md)] Setup Wizard.
 
     > [!NOTE]
     > We recommend that you run setup as Administrator. Doing so allows Customer Experience and Microsoft Update choices to be retained later in the setup.
@@ -48,7 +48,7 @@ If there is a problem with the installation completing successfully, refer to th
 
 7.  On the **Specify a location for the SPF files** page, accept or change the location for the web service files by using the **Change Folder** button. Optionally, change **Website name**. In the **Port Number** section, enter the Internet Information Services \(IIS\) port number that you want to use, or accept the default of 8090.
 
-    The **Server certificate** refers to a certificate to configure the site bindings for the [!INCLUDE[spfshort](./Token/spfshort_md.md)] website in Internet Services Information \(IIS\) Manager. You can either generate a self\-signed certificate or use an existing certificate.
+    The **Server certificate** refers to a certificate to configure the site bindings for the [!INCLUDE[spfshort](Token/spfshort_md.md)] website in Internet Services Information \(IIS\) Manager. You can either generate a self\-signed certificate or use an existing certificate.
 
     > [!IMPORTANT]
     > We recommend that generated self\-signed certificates be used only for a testing purposes in a non\-production environment.
@@ -67,7 +67,7 @@ If there is a problem with the installation completing successfully, refer to th
 
         We recommend that you do not use **Network Service** but instead use a **Service Account** using domain credentials.
 
-        If you select **Network Service**, the account must be a [!INCLUDE[scvm_threshold_1](./Token/scvm_threshold_1_md.md)] administrator, or it must have enough permission to perform the [!INCLUDE[spfshort](./Token/spfshort_md.md)] requests.
+        If you select **Network Service**, the account must be a [!INCLUDE[scvm_threshold_1](Token/scvm_threshold_1_md.md)] administrator, or it must have enough permission to perform the [!INCLUDE[spfshort](Token/spfshort_md.md)] requests.
 
     Click **Next**.
 
@@ -85,7 +85,7 @@ If there is a problem with the installation completing successfully, refer to th
 
     -   Click **Previous** to change any selections.
 
-    -   Click **Install** to install [!INCLUDE[spfshort](./Token/spfshort_md.md)].
+    -   Click **Install** to install [!INCLUDE[spfshort](Token/spfshort_md.md)].
 
     After you click **Install**, the installation progress indicator appears.
 

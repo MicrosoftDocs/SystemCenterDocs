@@ -76,7 +76,7 @@ ms.assetid: a5fae303-e627-4345-b54c-ba0d6d6e1746
           <para>To support manageability, you can do the following with NLB:</para>
           <list class="bullet">
             <listItem>
-              <para>Manage and configure multiple NLB clusters and the cluster hosts from a single computer by using NLB Manager or the NLB <token>wps_./Token> cmdlets. </para>
+              <para>Manage and configure multiple NLB clusters and the cluster hosts from a single computer by using NLB Manager or the NLB <token>wps_Token> cmdlets. </para>
             </listItem>
             <listItem>
               <para>Specify the load balancing behavior for a single IP port or group of ports by using port management rules. </para>
@@ -108,7 +108,7 @@ ms.assetid: a5fae303-e627-4345-b54c-ba0d6d6e1746
     <title>Important functionality</title>
     <content>
       <alert class="note">
-        <para> NLB functionality is the same as in <token>win8_server_./Token> and <token>nextref_server_./Token>. </para>
+        <para> NLB functionality is the same as in <token>win8_server_Token> and <token>nextref_server_Token>. </para>
       </alert>
       <para>NLB is installed as a standard Windows networking driver component. Its operations are transparent to the TCP/IP networking stack. The following figure shows the relationship between NLB and other software components in a typical configuration:</para>
       <mediaLink>
@@ -184,7 +184,7 @@ ms.assetid: a5fae303-e627-4345-b54c-ba0d6d6e1746
   <section address="BKMK_INSTALL">
     <title>Server Manager information</title>
     <content>
-      <para>In Server Manager, use the Add Roles and Features Wizard to add the Network Load Balancing feature. Optionally you can install the Network Load Balancing Tools to manage a local or remote NLB cluster. The tools include Network Load Balancing Manager and the NLB <token>wps_./Token> cmdlets. For more information about installing features, see <externalLink><linkText>Install or Uninstall Roles, Role Services, or Features</linkText><linkUri>http://go.microsoft.com/fwlink/p/?LinkID=239563</linkUri></externalLink>.</para>
+      <para>In Server Manager, use the Add Roles and Features Wizard to add the Network Load Balancing feature. Optionally you can install the Network Load Balancing Tools to manage a local or remote NLB cluster. The tools include Network Load Balancing Manager and the NLB <token>wps_Token> cmdlets. For more information about installing features, see <externalLink><linkText>Install or Uninstall Roles, Role Services, or Features</linkText><linkUri>http://go.microsoft.com/fwlink/p/?LinkID=239563</linkUri></externalLink>.</para>
       <para>To open Network Load Balancing Manager in Server Manager, click <ui>Tools</ui>, and then click <ui>Network Load Balancing Manager</ui>.</para>
     </content>
   </section>

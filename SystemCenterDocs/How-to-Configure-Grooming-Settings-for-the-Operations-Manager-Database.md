@@ -53,14 +53,14 @@ Use the following procedure to specify when specific record types are deleted or
 6.  In the **Global Management Group Settings \- Database Grooming** dialog box, select another record type to **Edit** or click **OK**.
 
 ## See Also
-[Maintenance of Operations Manager](./Maintenance-of-Operations-Manager.md)
-[Monitoring the Health of the Management Group](./Monitoring-the-Health-of-the-Management-Group.md)
-[Inventory of Operations Manager Infrastructure](./Inventory-of-Operations-Manager-Infrastructure.md)
-[Scheduling Maintenance in Operations Manager](./Scheduling-Maintenance-in-Operations-Manager.md)
-[How and When to Clear the Cache](./How-and-When-to-Clear-the-Cache.md)
-[How to Restart a Management Server](./How-to-Restart-a-Management-Server.md)
-[How to Configure Grooming Settings for the Reporting Data Warehouse Database](./How-to-Configure-Grooming-Settings-for-the-Reporting-Data-Warehouse-Database.md)
+[Maintenance of Operations Manager](Maintenance-of-Operations-Manager.md)
+[Monitoring the Health of the Management Group](Monitoring-the-Health-of-the-Management-Group.md)
+[Inventory of Operations Manager Infrastructure](Inventory-of-Operations-Manager-Infrastructure.md)
+[Scheduling Maintenance in Operations Manager](Scheduling-Maintenance-in-Operations-Manager.md)
+[How and When to Clear the Cache](How-and-When-to-Clear-the-Cache.md)
+[How to Restart a Management Server](How-to-Restart-a-Management-Server.md)
+[How to Configure Grooming Settings for the Reporting Data Warehouse Database](How-to-Configure-Grooming-Settings-for-the-Reporting-Data-Warehouse-Database.md)
 [How to Configure Grooming Settings for .NET Application Performance Monitoring Events](http://go.microsoft.com/fwlink/?LinkId=255375)
-[Recommendations for Daily, Weekly, and Monthly Operations Manager Tasks](./Recommendations-for-Daily,-Weekly,-and-Monthly-Operations-Manager-Tasks.md)
+[Recommendations for Daily, Weekly, and Monthly Operations Manager Tasks](Recommendations-for-Daily,-Weekly,-and-Monthly-Operations-Manager-Tasks.md)
 
 

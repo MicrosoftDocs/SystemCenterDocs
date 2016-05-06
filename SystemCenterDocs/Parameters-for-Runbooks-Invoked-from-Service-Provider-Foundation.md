@@ -11,7 +11,7 @@ ms.topic: article
 ms.assetid: 6c3c412d-34be-4311-8d8a-1f74f2bfba8f
 ---
 # Parameters for Runbooks Invoked from Service Provider Foundation
-This topic describes the parameters that [!INCLUDE[spflong](./Token/spflong_md.md)] automatically provides to a runbook that it invokes in [!INCLUDE[orchlong](./Token/orchlong_md.md)], as described in [How to Automate a Runbook from Service Provider Foundation](./How-to-Automate-a-Runbook-from-Service-Provider-Foundation.md). A runbook is not required to process all the parameters it receives, and will simply ignore the parameters which have no purpose in the runbook.
+This topic describes the parameters that [!INCLUDE[spflong](Token/spflong_md.md)] automatically provides to a runbook that it invokes in [!INCLUDE[orchlong](Token/orchlong_md.md)], as described in [How to Automate a Runbook from Service Provider Foundation](How-to-Automate-a-Runbook-from-Service-Provider-Foundation.md). A runbook is not required to process all the parameters it receives, and will simply ignore the parameters which have no purpose in the runbook.
 
 ## Parameters for a new virtual machine
 The following table lists the parameters available when a new virtual machine is created. All parameters are optional unless indicated as required.
@@ -71,8 +71,8 @@ The following table lists the parameters available when a new service is created
 |IgnorePlacementErrors|Boolean|
 
 ## See Also
-[How to Automate a Runbook from Service Provider Foundation](./How-to-Automate-a-Runbook-from-Service-Provider-Foundation.md)
-[Extensibility in Service Provider Foundation](./Extensibility-in-Service-Provider-Foundation.md)
-[Administering Service Provider Foundation](./Administering-Service-Provider-Foundation.md)
+[How to Automate a Runbook from Service Provider Foundation](How-to-Automate-a-Runbook-from-Service-Provider-Foundation.md)
+[Extensibility in Service Provider Foundation](Extensibility-in-Service-Provider-Foundation.md)
+[Administering Service Provider Foundation](Administering-Service-Provider-Foundation.md)
 
 

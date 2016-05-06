@@ -17,7 +17,7 @@ ms.assetid: 3c0857cb-52eb-4139-8b08-9487c53c9496
     <alert class="note">
       <para>If the resource partner publishes its federation metadata or can provide a file copy of it for you to use, we recommend that you retrieve the data automatically because it can save time.</para>
     </alert>
-    <para>Membership in <embeddedLabel>Administrators</embeddedLabel>, or equivalent, on the local computer is the minimum requirement to complete these procedures. <token>review_detail./Token></para>
+    <para>Membership in <embeddedLabel>Administrators</embeddedLabel>, or equivalent, on the local computer is the minimum requirement to complete these procedures. <token>review_detailToken></para>
     <list class="bullet">
       <listItem>
         <para>
@@ -45,7 +45,7 @@ ms.assetid: 3c0857cb-52eb-4139-8b08-9487c53c9496
           <step>
             <content>
               <para>
-                <token>winblue_star./Token> <userInput>AD FS Management</userInput>, and then press Enter.</para>
+                <token>winblue_starToken> <userInput>AD FS Management</userInput>, and then press Enter.</para>
             </content>
           </step>
           <step>
@@ -97,7 +97,7 @@ ms.assetid: 3c0857cb-52eb-4139-8b08-9487c53c9496
           <step>
             <content>
               <para>
-                <token>winblue_star./Token> <userInput>AD FS Management</userInput>, and then press Enter.</para>
+                <token>winblue_starToken> <userInput>AD FS Management</userInput>, and then press Enter.</para>
             </content>
           </step>
           <step>

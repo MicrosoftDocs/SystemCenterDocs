@@ -9,11 +9,11 @@ ms.assetid: 55515ea2-65c2-4cba-ab13-a34f8208c0d8
 robots: noindex,nofollow
 ---
 # How to Create Incident Templates_1
-Use the following procedures to create two incident templates in [!INCLUDE[scsm_threshold_1](./Token/scsm_threshold_1_md.md)]. The first you use to create email\-related incidents, and the second you use with the Incident Change workflow for printer\-related problems.
+Use the following procedures to create two incident templates in [!INCLUDE[scsm_threshold_1](Token/scsm_threshold_1_md.md)]. The first you use to create email\-related incidents, and the second you use with the Incident Change workflow for printer\-related problems.
 
 ### To create an email\-related incident template
 
-1.  In the [!INCLUDE[smcons](./Token/smcons_md.md)], click **Library**.
+1.  In the [!INCLUDE[smcons](Token/smcons_md.md)], click **Library**.
 
 2.  In the **Library** pane, expand **Library**, and then click **Templates**.
 
@@ -53,7 +53,7 @@ Use the following procedures to create two incident templates in [!INCLUDE[scsm_
 
 ### To create a new printer\-related incident template
 
-1.  In the [!INCLUDE[smcons](./Token/smcons_md.md)], click **Library**.
+1.  In the [!INCLUDE[smcons](Token/smcons_md.md)], click **Library**.
 
 2.  In the **Library** pane, expand **Library**, and then click **Templates**.
 

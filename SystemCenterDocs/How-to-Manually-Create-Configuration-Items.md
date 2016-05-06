@@ -15,11 +15,11 @@ You might have to create a configuration item to add computers that do not exist
 
 Additionally, you might have to manually create a new user configuration item to be used in the **Affected User** box in incidents created by Operations Manager.
 
-You can use the following procedures to manually create two computer configuration items. However, you can also use the same procedures to add software, printers, or software updates in [!INCLUDE[smshort](./Token/smshort_md.md)]. After you add the two computers, you can identify them as a service.
+You can use the following procedures to manually create two computer configuration items. However, you can also use the same procedures to add software, printers, or software updates in [!INCLUDE[smshort](Token/smshort_md.md)]. After you add the two computers, you can identify them as a service.
 
 ### To manually create a computer configuration item
 
-1.  In the [!INCLUDE[smcons](./Token/smcons_md.md)], click **Configuration Items**.
+1.  In the [!INCLUDE[smcons](Token/smcons_md.md)], click **Configuration Items**.
 
 2.  In the **Configuration Items** pane, expand **Configuration Items**, and then expand **Computers**.
 
@@ -33,7 +33,7 @@ You can use the following procedures to manually create two computer configurati
 
 ### To manually create a user configuration item
 
-1.  In the [!INCLUDE[smcons](./Token/smcons_md.md)], click **Configuration Items**.
+1.  In the [!INCLUDE[smcons](Token/smcons_md.md)], click **Configuration Items**.
 
 2.  In the **Configuration Items** pane, expand **Configuration Items**, and then click **Users**.
 

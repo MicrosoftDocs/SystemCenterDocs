@@ -8,15 +8,15 @@ ms.topic: article
 ms.assetid: 9c272a03-f15a-482e-b9e5-10ffd5dfccf8
 ---
 # How to add an existing server to a Scale-Out File Server in VMM
-Use these procedures to add  nodes to Scale\-out File Servers that [!INCLUDE[vmm12sp1_long](./Token/vmm12sp1_long_md.md)] manages:
+Use these procedures to add  nodes to Scale\-out File Servers that [!INCLUDE[vmm12sp1_long](Token/vmm12sp1_long_md.md)] manages:
 
--   [Bring a node under management by VMM if you already used Failover Cluster Manager to add the node](./How-to-add-an-existing-server-to-a-host-cluster-in-VMM.md#BKMK_fcm)
+-   [Bring a node under management by VMM if you already used Failover Cluster Manager to add the node](How-to-add-an-existing-server-to-a-host-cluster-in-VMM.md#BKMK_fcm)
 
--   [Use VMM to add an existing server to a Hyper-V host cluster or Scale-Out File Server cluster](./How-to-add-an-existing-server-to-a-host-cluster-in-VMM.md#BKMK_vmm)
+-   [Use VMM to add an existing server to a Hyper-V host cluster or Scale-Out File Server cluster](How-to-add-an-existing-server-to-a-host-cluster-in-VMM.md#BKMK_vmm)
 
-If you want to add a bare\-metal computer as a new node, see [How to add a bare-metal computer to a Scale-Out File Server in VMM](./How-to-add-a-bare-metal-computer-to-a-Scale-Out-File-Server-in-VMM.md).
+If you want to add a bare\-metal computer as a new node, see [How to add a bare-metal computer to a Scale-Out File Server in VMM](How-to-add-a-bare-metal-computer-to-a-Scale-Out-File-Server-in-VMM.md).
 
-## <a name="BKMK_fcm"></a>To bring a node under [!INCLUDE[vmm12short](./Token/vmm12short_md.md)] management if you already used Failover Cluster Manager to add the node to the Scale\-Out File Server
+## <a name="BKMK_fcm"></a>To bring a node under [!INCLUDE[vmm12short](Token/vmm12short_md.md)] management if you already used Failover Cluster Manager to add the node to the Scale\-Out File Server
 
 1.  Open the **Fabric** workspace.
 
@@ -24,9 +24,9 @@ If you want to add a bare\-metal computer as a new node, see [How to add a bare-
 
 3.  Right\-click the file server, click **Properties**, and look for nodes labeled **Pending VMM agent deployment**. Click **Add**, specify the pending node, and then click **OK**.
 
-## <a name="BKMK_vmm"></a>To use [!INCLUDE[vmm12short](./Token/vmm12short_md.md)] to add an existing server to a Scale\-Out File Server
+## <a name="BKMK_vmm"></a>To use [!INCLUDE[vmm12short](Token/vmm12short_md.md)] to add an existing server to a Scale\-Out File Server
 
-1.  As needed, review [Prerequisites: creating a Scale-Out File Server in VMM from existing servers](./Prerequisites--creating-a-Scale-Out-File-Server-in-VMM-from-existing-servers.md). A server to be added to the cluster must meet the same basic requirements as the servers that are in the cluster.
+1.  As needed, review [Prerequisites: creating a Scale-Out File Server in VMM from existing servers](Prerequisites--creating-a-Scale-Out-File-Server-in-VMM-from-existing-servers.md). A server to be added to the cluster must meet the same basic requirements as the servers that are in the cluster.
 
 2.  Open the **Fabric** workspace.
 
@@ -45,13 +45,13 @@ If you want to add a bare\-metal computer as a new node, see [How to add a bare-
 
 6.  When the job completes, verify the cluster status. Expand **Storage** > **File Servers**, and then locate and click the cluster. In the **File Servers** pane, verify that the status of the cluster is **OK**.
 
-    If you added a node to a cluster configured with Storage Spaces Direct, you also added one or more disks to the cluster. If the disks have not been added into your storage pools, see [How to create or modify a storage pool on a Scale-Out File Server in VMM](./How-to-create-or-modify-a-storage-pool-on-a-Scale-Out-File-Server-in-VMM.md).
+    If you added a node to a cluster configured with Storage Spaces Direct, you also added one or more disks to the cluster. If the disks have not been added into your storage pools, see [How to create or modify a storage pool on a Scale-Out File Server in VMM](How-to-create-or-modify-a-storage-pool-on-a-Scale-Out-File-Server-in-VMM.md).
 
 ## See Also
-[Creating a Scale-Out File Server in VMM from existing Windows servers](./Creating-a-Scale-Out-File-Server-in-VMM-from-existing-Windows-servers.md)
-[Managing Scale-Out File Servers with VMM](./Managing-Scale-Out-File-Servers-with-VMM.md)
-[Managing fabric resources with VMM](./Managing-fabric-resources-with-VMM.md)
-[Managing storage resources and capacity with VMM](./Managing-storage-resources-and-capacity-with-VMM.md)
-[Managing fabric resources with VMM](./Managing-fabric-resources-with-VMM.md)
+[Creating a Scale-Out File Server in VMM from existing Windows servers](Creating-a-Scale-Out-File-Server-in-VMM-from-existing-Windows-servers.md)
+[Managing Scale-Out File Servers with VMM](Managing-Scale-Out-File-Servers-with-VMM.md)
+[Managing fabric resources with VMM](Managing-fabric-resources-with-VMM.md)
+[Managing storage resources and capacity with VMM](Managing-storage-resources-and-capacity-with-VMM.md)
+[Managing fabric resources with VMM](Managing-fabric-resources-with-VMM.md)
 
 

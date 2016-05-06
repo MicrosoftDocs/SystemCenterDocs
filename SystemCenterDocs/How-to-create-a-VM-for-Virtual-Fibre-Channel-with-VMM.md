@@ -18,11 +18,11 @@ Virtual Host Bus Adapters \(vHBAs\), which represent the virtualization of Fibre
 
 2.  Still using the **Create Virtual Machine Wizard**, place and deploy the VM to a destination host. Make sure the host contains a virtual SAN that matches the storage fabric. .
 
-    After you deploy the VM to a host, you can zone a Virtual Fibre Channel storage array to the VM. For more information, see [How to manage Virtual Fibre Channel zones and zonesets with VMM](./How-to-manage-Virtual-Fibre-Channel-zones-and-zonesets-with-VMM.md). Finally, create a LUN and register \(unmask\) it to the VM. For more information, see [How to manage storage LUNs for Virtual Fibre Channel with VMM](./How-to-manage-storage-LUNs-for-Virtual-Fibre-Channel-with-VMM.md).
+    After you deploy the VM to a host, you can zone a Virtual Fibre Channel storage array to the VM. For more information, see [How to manage Virtual Fibre Channel zones and zonesets with VMM](How-to-manage-Virtual-Fibre-Channel-zones-and-zonesets-with-VMM.md). Finally, create a LUN and register \(unmask\) it to the VM. For more information, see [How to manage storage LUNs for Virtual Fibre Channel with VMM](How-to-manage-storage-LUNs-for-Virtual-Fibre-Channel-with-VMM.md).
 
 ## See Also
-[Managing Virtual Fibre Channel fabrics with VMM](./Managing-Virtual-Fibre-Channel-fabrics-with-VMM.md)
-[Managing storage resources and capacity with VMM](./Managing-storage-resources-and-capacity-with-VMM.md)
-[Managing fabric resources with VMM](./Managing-fabric-resources-with-VMM.md)
+[Managing Virtual Fibre Channel fabrics with VMM](Managing-Virtual-Fibre-Channel-fabrics-with-VMM.md)
+[Managing storage resources and capacity with VMM](Managing-storage-resources-and-capacity-with-VMM.md)
+[Managing fabric resources with VMM](Managing-fabric-resources-with-VMM.md)
 
 

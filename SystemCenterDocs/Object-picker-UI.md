@@ -12,7 +12,7 @@ ms.assetid: 084c5529-77c8-466a-ab4e-2466391b459f
 <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://ddue.schemas.microsoft.com/authoring/2003/5 http://dduestorage.blob.core.windows.net/ddueschema/developer.xsd">
   <introduction>
     <para>
-      <token>client_redi./Token>
+      <token>client_rediToken>
     </para>
     <para>This topic contains examples of object types that you can select when configuring access to various types of computer objects (for example, ownership and permissions).</para>
   </introduction>
@@ -85,7 +85,7 @@ ms.assetid: 084c5529-77c8-466a-ab4e-2466391b459f
             </TD>
             <TD>
               <para>Represents a computer's access to network resources.</para>
-              <para>The computer name was established when the operating system was installed. The computer name is recorded on the computer information page in <token>winblue_client_./Token>. To view it, type <userInput>System</userInput> on the Start screen.</para>
+              <para>The computer name was established when the operating system was installed. The computer name is recorded on the computer information page in <token>winblue_client_Token>. To view it, type <userInput>System</userInput> on the Start screen.</para>
             </TD>
             <TD>
               <para>

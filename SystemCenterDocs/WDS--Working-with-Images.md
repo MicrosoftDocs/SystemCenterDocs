@@ -131,16 +131,16 @@ ms.assetid: 497f5b73-b795-41d7-a801-6d8cc5fdbf6c
                   <para>Add the following components using the DISM /AddPackage option.</para>
                   <list class="ordered">
                     <listItem>
-                      <para>Setup package: <codeInline>dis/Image:c:\winpe_x86\mount /add-package:”&lt;path to WAIK&gt;\Tools\PETools\&lt;arch&gt;\WinPE_FPs\winpe-setup.cab”</codeInline></para>
+                      <para>Setup package: <codeInline>disImage:c:\winpe_x86\mount /add-package:”&lt;path to WAIK&gt;\Tools\PETools\&lt;arch&gt;\WinPE_FPs\winpe-setup.cab”</codeInline></para>
                     </listItem>
                     <listItem>
-                      <para>Setup branding: <codeInline>dis/Image:c:\winpe_x86\mount /add-package:”&lt;path to WAIK&gt;\Tools\PETools\&lt;arch&gt;\WinPE-FPs\winpe-setup-server.cab”</codeInline></para>
+                      <para>Setup branding: <codeInline>disImage:c:\winpe_x86\mount /add-package:”&lt;path to WAIK&gt;\Tools\PETools\&lt;arch&gt;\WinPE-FPs\winpe-setup-server.cab”</codeInline></para>
                       <alert class="note">
                         <para>You can also use the winpe-setup-client.cab instead as there is no difference between the files.</para>
                       </alert>
                     </listItem>
                     <listItem>
-                      <para>Windows Deployment Services tools: <codeInline>dis/Image:”c:\winpe_x86\mount /add-package:&lt;path to WAIK&gt;\Tools\PETools\&lt;arch&gt;\WinPE_FPs\winpe-wds-tools.cab”</codeInline></para>
+                      <para>Windows Deployment Services tools: <codeInline>disImage:”c:\winpe_x86\mount /add-package:&lt;path to WAIK&gt;\Tools\PETools\&lt;arch&gt;\WinPE_FPs\winpe-wds-tools.cab”</codeInline></para>
                     </listItem>
                   </list>
                 </content>
@@ -148,9 +148,9 @@ ms.assetid: 497f5b73-b795-41d7-a801-6d8cc5fdbf6c
               <step>
                 <content>
                   <para>Add language packs for the above feature packs: </para>
-                  <code>dis/Image:c:\winpe_x86\mount /add-package:&lt;path to WAIK&gt;\Tools\PETools\&lt;arch&gt;\WinPE_FPs\&lt;lang&gt;\winpe-setup_&lt;lang&gt;.cab</code>
-                  <code>dis/Image:c:\winpe_x86\mount /add-package:&lt;path to WAIK&gt;\Tools\PETools\&lt;arch&gt;\WinPE_FPs\&lt;lang&gt;\winpe-setup-server_&lt;lang&gt;.cab</code>
-                  <code>dis/Image:c:\winpe_x86\mount /add-package:&lt;path to WAIK&gt;\Tools\PETools\&lt;arch&gt;\WinPE_FPs\&lt;lang&gt;\winpe-wds-tools_&lt;lang&gt;.cab</code>
+                  <code>disImage:c:\winpe_x86\mount /add-package:&lt;path to WAIK&gt;\Tools\PETools\&lt;arch&gt;\WinPE_FPs\&lt;lang&gt;\winpe-setup_&lt;lang&gt;.cab</code>
+                  <code>disImage:c:\winpe_x86\mount /add-package:&lt;path to WAIK&gt;\Tools\PETools\&lt;arch&gt;\WinPE_FPs\&lt;lang&gt;\winpe-setup-server_&lt;lang&gt;.cab</code>
+                  <code>disImage:c:\winpe_x86\mount /add-package:&lt;path to WAIK&gt;\Tools\PETools\&lt;arch&gt;\WinPE_FPs\&lt;lang&gt;\winpe-wds-tools_&lt;lang&gt;.cab</code>
                 </content>
               </step>
               <step>

@@ -11,7 +11,7 @@ ms.topic: article
 ms.assetid: e1646873-2515-4876-b03a-353e1735c0b4
 ---
 # Correlated Events
-A correlated event monitor in [!INCLUDE[om12short](./Token/om12short_md.md)] uses two separate events in a particular time period to detect a single issue. This kind of monitor supports conditions where an issue cannot be identified by a single event alone.
+A correlated event monitor in [!INCLUDE[om12short](Token/om12short_md.md)] uses two separate events in a particular time period to detect a single issue. This kind of monitor supports conditions where an issue cannot be identified by a single event alone.
 
 When the first event is detected, a timer is triggered. If the second event is received within that period, the state change is triggered. If the second event is not received in the period, the timer is reset until the first event is received again. The monitor may be configured to better tune the specific conditions that must be met in order to perform correlation. These options include the following:
 
@@ -68,7 +68,7 @@ The following table provides an example of a correlated event monitor by using t
 -   The First Occurrence resets its state to healthy at 00:05:30 and 00:09:00 because Event 3 is detected.
 
 ## See Also
-[Event Monitors and Rules](./Event-Monitors-and-Rules.md)
-[Windows Events](./Windows-Events.md)
+[Event Monitors and Rules](Event-Monitors-and-Rules.md)
+[Windows Events](Windows-Events.md)
 
 

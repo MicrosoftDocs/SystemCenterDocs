@@ -26,13 +26,13 @@ If you are not getting any performance or exception events raised, you can use t
 
 To begin monitoring, here are some settings you might want to adjust as noted here:
 
--   Lower the thresholds for performance. This will help you establish a baseline performance measure by seeing what the current performance characteristics of the application are. For more information about performance thresholds, see [How to Configure Monitoring for Java Applications](./How-to-Configure-Monitoring-for-Java-Applications.md).
+-   Lower the thresholds for performance. This will help you establish a baseline performance measure by seeing what the current performance characteristics of the application are. For more information about performance thresholds, see [How to Configure Monitoring for Java Applications](How-to-Configure-Monitoring-for-Java-Applications.md).
 
 -   Examine all exceptions. You need to know what kinds of exceptions are being thrown. Using known exception handlers limits the exceptions you will receive.
 
 This can result in a lot of data—more than you would want for long\-term monitoring—but at first, this amount of data will be helpful as you will see trends, such as the kinds of paths customers are taking through the system and what normal performance looks like.
 
-With the data collection complete, use the Application Advisor reports, such as Application Performance Analysis, to see how the monitored applications are looking. Using the report you will see what the average duration is for the heaviest \(longest running\) calls through the system as well as the maximum amount of time spent processing requests. This allows you to set customized smart thresholds based on real application performance. You will also see which functions are running faster than others, and you can create specific web page, web method, and function transactions for the critical methods so that you can ensure they are responding under a tighter SLA than the application as a whole. For more information on viewing reports, see how to scope and run an Application Advisor report in [Prioritizing Alerts by Using Application Advisor](./Prioritizing-Alerts-by-Using-Application-Advisor.md).
+With the data collection complete, use the Application Advisor reports, such as Application Performance Analysis, to see how the monitored applications are looking. Using the report you will see what the average duration is for the heaviest \(longest running\) calls through the system as well as the maximum amount of time spent processing requests. This allows you to set customized smart thresholds based on real application performance. You will also see which functions are running faster than others, and you can create specific web page, web method, and function transactions for the critical methods so that you can ensure they are responding under a tighter SLA than the application as a whole. For more information on viewing reports, see how to scope and run an Application Advisor report in [Prioritizing Alerts by Using Application Advisor](Prioritizing-Alerts-by-Using-Application-Advisor.md).
 
 ### Adjust Settings and Compare to the Baseline
 Once you have established a baseline performance measure, begin to adjust the settings to tune the monitoring so it catches the kinds of exceptions that are being raised. By reporting all exceptions, you will see if there are any default exception handlers in the application that are catching exceptions for which you would prefer receiving alerts. The data you get will be more meaningful and lower in volume with each adjustment.
@@ -52,8 +52,8 @@ After monitoring the application for a time with the new monitoring configuratio
 Using this basic information, the operator can have a better idea where the problem is with the application or with the infrastructure and know whether it is something only to the development team can fix or the operator can address directly.
 
 ## See Also
-[How to Configure Monitoring for Java Applications](./How-to-Configure-Monitoring-for-Java-Applications.md)
-[Strategies for Monitoring a New Java Application](./Strategies-for-Monitoring-a-New-Java-Application.md)
-[Monitoring .NET Applications](./Monitoring-.NET-Applications.md)
+[How to Configure Monitoring for Java Applications](How-to-Configure-Monitoring-for-Java-Applications.md)
+[Strategies for Monitoring a New Java Application](Strategies-for-Monitoring-a-New-Java-Application.md)
+[Monitoring .NET Applications](Monitoring-.NET-Applications.md)
 
 

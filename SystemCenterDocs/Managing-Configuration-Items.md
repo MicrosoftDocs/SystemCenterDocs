@@ -21,7 +21,7 @@ Similarly, work items such as incidents, problems, and change requests are often
 
 ### To add information to configuration items
 
-1.  In the [!INCLUDE[smcons](./Token/smcons_md.md)], click **Configuration Items**.
+1.  In the [!INCLUDE[smcons](Token/smcons_md.md)], click **Configuration Items**.
 
 2.  In the **Configuration Items** pane, expand **Configuration Items**, and then expand **Computers**.
 

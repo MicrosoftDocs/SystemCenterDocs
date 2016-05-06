@@ -82,7 +82,7 @@ Configure an incoming exception for sqservr.exe for the DPM instance of SQL Serv
 
 7.  On the **Summary** page, click **Install** to begin the installation. If the EULA appears accept it for installation to start. On the **Task** tab of the Installation page you can see whether the installation is successful. You can click **Close** before the wizard is finished and monitor the installation progress in **Agents** tab in the **Management** task area. If the installation is unsuccessful, you can view the alerts in the **Monitoring** task area on the **Alerts** tab.
 
-    Note: After you install a protection agent on a computer that is part of a Windows SharePoint Services farm, each of the computers in the farm will not appear as protected computers on the**Agents** tab in the **Management** task area, only the computer that you selected. However, if the Windows SharePoint Services farm has data on the selected computer, [!INCLUDE[dpm2012short](./Token/dpm2012short_md.md)] protects the data on all of the computers in the farm, provided all of them have the protection agent installed.
+    Note: After you install a protection agent on a computer that is part of a Windows SharePoint Services farm, each of the computers in the farm will not appear as protected computers on the**Agents** tab in the **Management** task area, only the computer that you selected. However, if the Windows SharePoint Services farm has data on the selected computer, [!INCLUDE[dpm2012short](Token/dpm2012short_md.md)] protects the data on all of the computers in the farm, provided all of them have the protection agent installed.
 
 ## <a name="BKMK_Manual"></a>Install the agent manually
 

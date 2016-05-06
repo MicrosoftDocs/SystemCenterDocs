@@ -12,7 +12,7 @@ ms.assetid: b5e8e5b8-c9aa-4a8b-9f66-4f9ddbf62702
 robots: noindex,nofollow
 ---
 # How to Grant Permissions on the SharePoint Site
-Use the following procedure to grant permissions to the [!INCLUDE[smssp](./Token/smssp_md.md)] SharePoint site in [!INCLUDE[scsm_threshold_1](./Token/scsm_threshold_1_md.md)].
+Use the following procedure to grant permissions to the [!INCLUDE[smssp](Token/smssp_md.md)] SharePoint site in [!INCLUDE[scsm_threshold_1](Token/scsm_threshold_1_md.md)].
 
 ### To grant permissions on the Self\-Service Portal SharePoint site
 

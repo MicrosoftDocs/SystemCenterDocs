@@ -46,8 +46,8 @@ Use the following steps to generate a Service Level Tracking Summary report.
 10. Click **Run** to generate the report.
 
 ## See Also
-[Defining a Service Level Objective Against a Group](./Defining-a-Service-Level-Objective-Against-a-Group.md)
-[Defining a Service Level Objective Against an Application](./Defining-a-Service-Level-Objective-Against-an-Application.md)
-[Monitoring Service Level Objectives by Using Operations Manager](./Monitoring-Service-Level-Objectives-by-Using-Operations-Manager.md)
+[Defining a Service Level Objective Against a Group](Defining-a-Service-Level-Objective-Against-a-Group.md)
+[Defining a Service Level Objective Against an Application](Defining-a-Service-Level-Objective-Against-an-Application.md)
+[Monitoring Service Level Objectives by Using Operations Manager](Monitoring-Service-Level-Objectives-by-Using-Operations-Manager.md)
 
 

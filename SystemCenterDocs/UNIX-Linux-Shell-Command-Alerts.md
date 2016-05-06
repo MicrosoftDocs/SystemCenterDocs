@@ -25,7 +25,7 @@ The Rule Type page includes basic settings for the rule including its type and t
 |Option|Description|
 |----------|---------------|
 |Select the type of rule to create|To create an alert\-generating rule based on the execution of an UNIX\/Linux shell command, select **UNIX\/Linux Shell Command \(Alert\)**.|
-|Management Pack|Management pack file to store the rule or monitor.For more information on management packs, see [Selecting a Management Pack File](./Selecting-a-Management-Pack-File.md).|
+|Management Pack|Management pack file to store the rule or monitor.For more information on management packs, see [Selecting a Management Pack File](Selecting-a-Management-Pack-File.md).|
 
 ### General
 The General page includes general settings for the rule including its name, category, target, and the management pack file to store it in.
@@ -35,7 +35,7 @@ The General page includes general settings for the rule including its name, cate
 |Name|The name used for the rule. The name appears in the **Rules** view in the **Authoring** pane. When you create a view or report, you can select this name to use the data collected by it.|
 |Description|Optional description of the rule.|
 |Rule Category|The category for the rule. For a performance collection rule, this should be **Performance Collection**. For an alerting rule, this should be **Alert**.|
-|Rule Target|The class to use for the target of the rule. For more information on targets, see [Understanding Classes and Objects](./Understanding-Classes-and-Objects.md).|
+|Rule Target|The class to use for the target of the rule. For more information on targets, see [Understanding Classes and Objects](Understanding-Classes-and-Objects.md).|
 |Rule is enabled|If checked, the rule is enabled and the shell command will run according to the schedule. If unchecked, the rule is not enabled and the script will not run. The rule can be enabled for a group of target objects by creating an override to enable the rule.|
 
 ### Schedule
@@ -60,10 +60,10 @@ The Filter Expression page allows you to filter for output to generate an alert.
 
 |Property Name|Description|
 |-----------------|---------------|
-|Filter one or more events|An expression that filters output of the shell command. For more information on building expressions see [Expressions](./Expressions.md) The Parameter Name syntax for command execution output is:<br />**StdOut**: \/\/\*\[local\-name\(\)\="StdOut"\]**StdErr**: \/\/\*\[local\-name\(\)\="StdErr"\]**Return Code**: \/\/\*\[local\-name\(\)\="ReturnCode"\]|
+|Filter one or more events|An expression that filters output of the shell command. For more information on building expressions see [Expressions](Expressions.md) The Parameter Name syntax for command execution output is:<br />**StdOut**: \/\/\*\[local\-name\(\)\="StdOut"\]**StdErr**: \/\/\*\[local\-name\(\)\="StdErr"\]**Return Code**: \/\/\*\[local\-name\(\)\="ReturnCode"\]|
 
 ### Configure Alerts
-The Configure Alerts page is used to define alert properties for the rule. Its options are explained in [Alerts](./Alerts.md).
+The Configure Alerts page is used to define alert properties for the rule. Its options are explained in [Alerts](Alerts.md).
 
 ## Creating UNIX\/Linux Shell Command \(Alert\) Rules
 The following procedure shows how to create an UNIX\/Linux shell command alerting rule in Operations Manager with the following details:
@@ -74,7 +74,7 @@ The following procedure shows how to create an UNIX\/Linux shell command alertin
 
 #### To create a UNIX\/Linux shell command alerting rule
 
-1.  If you don’t have a management pack for the application that you are monitoring, create one using the process in [Selecting a Management Pack File](./Selecting-a-Management-Pack-File.md).
+1.  If you don’t have a management pack for the application that you are monitoring, create one using the process in [Selecting a Management Pack File](Selecting-a-Management-Pack-File.md).
 
 2.  In the Operations console, select the **Authoring** workspace, and then select **Rules**.
 
@@ -141,7 +141,7 @@ The following procedure shows how to create an UNIX\/Linux shell command alertin
     6.  Click **Create**.
 
 ## See Also
-[Event Monitors and Rules](./Event-Monitors-and-Rules.md)
-[Alerts](./Alerts.md)
+[Event Monitors and Rules](Event-Monitors-and-Rules.md)
+[Alerts](Alerts.md)
 
 

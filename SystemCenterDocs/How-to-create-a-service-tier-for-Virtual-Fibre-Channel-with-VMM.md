@@ -20,11 +20,11 @@ The following is the high\-level process for creating a service tier to access V
 
 4.  Deploy the tier.
 
-    After you deploy it, you can zone a Virtual Fibre Channel storage array to the service tier. For more information, see [How to manage Virtual Fibre Channel zones and zonesets with VMM](./How-to-manage-Virtual-Fibre-Channel-zones-and-zonesets-with-VMM.md). Finally, create a LUN for the array and register \(unmask\) it to the tier. For more information, see [How to manage storage LUNs for Virtual Fibre Channel with VMM](./How-to-manage-storage-LUNs-for-Virtual-Fibre-Channel-with-VMM.md).
+    After you deploy it, you can zone a Virtual Fibre Channel storage array to the service tier. For more information, see [How to manage Virtual Fibre Channel zones and zonesets with VMM](How-to-manage-Virtual-Fibre-Channel-zones-and-zonesets-with-VMM.md). Finally, create a LUN for the array and register \(unmask\) it to the tier. For more information, see [How to manage storage LUNs for Virtual Fibre Channel with VMM](How-to-manage-storage-LUNs-for-Virtual-Fibre-Channel-with-VMM.md).
 
 ## See Also
-[Managing Virtual Fibre Channel fabrics with VMM](./Managing-Virtual-Fibre-Channel-fabrics-with-VMM.md)
-[Managing storage resources and capacity with VMM](./Managing-storage-resources-and-capacity-with-VMM.md)
-[Managing fabric resources with VMM](./Managing-fabric-resources-with-VMM.md)
+[Managing Virtual Fibre Channel fabrics with VMM](Managing-Virtual-Fibre-Channel-fabrics-with-VMM.md)
+[Managing storage resources and capacity with VMM](Managing-storage-resources-and-capacity-with-VMM.md)
+[Managing fabric resources with VMM](Managing-fabric-resources-with-VMM.md)
 
 

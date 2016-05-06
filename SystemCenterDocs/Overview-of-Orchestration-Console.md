@@ -58,8 +58,8 @@ You cannot start a job; you can only start a runbook.
 When you view an instance, you can choose to stop the associated job. Stopping the job stops the instance, the job, any other associated instances, and the runbook.
 
 ## See Also
-[Orchestration Console Browser Requirements](./Orchestration-Console-Browser-Requirements.md)
-[How to Start the Orchestration Console](./How-to-Start-the-Orchestration-Console.md)
-[How to Work With Runbooks in the Orchestration Console](./How-to-Work-With-Runbooks-in-the-Orchestration-Console.md)
+[Orchestration Console Browser Requirements](Orchestration-Console-Browser-Requirements.md)
+[How to Start the Orchestration Console](How-to-Start-the-Orchestration-Console.md)
+[How to Work With Runbooks in the Orchestration Console](How-to-Work-With-Runbooks-in-the-Orchestration-Console.md)
 
 

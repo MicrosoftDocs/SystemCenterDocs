@@ -11,7 +11,7 @@ ms.topic: article
 ms.assetid: 4c5bb8ee-725f-4ff2-ba85-21e689bcc1de
 ---
 # Publish a Visio diagram to SharePoint 2010
-With the Visio 2010 Add\-in installed on the client and the data provider installed on the SharePoint server, you can now publish diagrams that you have connected to [!INCLUDE[om12short](./Token/om12short_md.md)] data to a SharePoint document library to share them with others in your organization.
+With the Visio 2010 Add\-in installed on the client and the data provider installed on the SharePoint server, you can now publish diagrams that you have connected to [!INCLUDE[om12short](Token/om12short_md.md)] data to a SharePoint document library to share them with others in your organization.
 
 ### To publish a diagram to a SharePoint document library
 

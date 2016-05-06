@@ -8,7 +8,7 @@ ms.topic: article
 ms.assetid: ffa0afbd-714c-403d-af7e-4269e138f35d
 ---
 # Service Reporting in System Center 2012 R2
-Service Reporting in [!INCLUDE[sc2012](./Token/sc2012_md.md)] R2 enables administrators at IT hosting providers to view tenant consumption of virtual machines, resources \(computation, network, and storage\), and operating system inventory in their infrastructure.
+Service Reporting in [!INCLUDE[sc2012](Token/sc2012_md.md)] R2 enables administrators at IT hosting providers to view tenant consumption of virtual machines, resources \(computation, network, and storage\), and operating system inventory in their infrastructure.
 
 ## Service reporting topics
 

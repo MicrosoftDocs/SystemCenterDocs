@@ -11,11 +11,11 @@ ms.topic: article
 ms.assetid: 8cc9a2b5-c265-4909-9d82-4e99346dd30f
 ---
 # How to Assign or Remove a Default Price Sheet for a Selected Cloud
-After [!INCLUDE[smshort](./Token/smshort_md.md)] has discovered cloud objects from the Operations Manager CI connector, you can assign an existing price sheet that applies default price values to all the resources of the cloud. This process is useful when you have many virtual machines so that you do not have to define prices for all the individual virtual machine parts. Once the default price sheet is assigned to a cloud, you can override the default values, on a per\-user basis. [!INCLUDE[crabout](./Token/crabout_md.md)] overriding default prices, see  [How to Override a Default Price Sheet for a Specific VMM User Role](How-to-Override-a-Default-Price-Sheet-for-a-Specific-VMM-User-Role.md).
+After [!INCLUDE[smshort](Token/smshort_md.md)] has discovered cloud objects from the Operations Manager CI connector, you can assign an existing price sheet that applies default price values to all the resources of the cloud. This process is useful when you have many virtual machines so that you do not have to define prices for all the individual virtual machine parts. Once the default price sheet is assigned to a cloud, you can override the default values, on a per\-user basis. [!INCLUDE[crabout](Token/crabout_md.md)] overriding default prices, see  [How to Override a Default Price Sheet for a Specific VMM User Role](How-to-Override-a-Default-Price-Sheet-for-a-Specific-VMM-User-Role.md).
 
 ### To assign a default price sheet to a selected cloud
 
-1.  In the [!INCLUDE[smcons](./Token/smcons_md.md)], select **Administration**.
+1.  In the [!INCLUDE[smcons](Token/smcons_md.md)], select **Administration**.
 
 2.  In the **Administration** pane, expand **Chargeback**, expand **Clouds**, and then select **All Clouds**.
 
@@ -35,7 +35,7 @@ After [!INCLUDE[smshort](./Token/smshort_md.md)] has discovered cloud objects fr
 
 ### To remove a default price sheet from a selected cloud
 
-1.  In the [!INCLUDE[smcons](./Token/smcons_md.md)], select **Administration**.
+1.  In the [!INCLUDE[smcons](Token/smcons_md.md)], select **Administration**.
 
 2.  In the **Administration** pane, expand **Chargeback**, expand **Clouds**, and then select **All Clouds**.
 

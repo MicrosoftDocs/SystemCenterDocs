@@ -8,7 +8,7 @@ ms.topic: article
 ms.assetid: 1efb6377-be9f-46e7-8101-f4258f92d76e
 ---
 # How to create a service template in VMM
-In [!INCLUDE[vmm12sp1_long](./Token/vmm12sp1_long_md.md)], a service is a set of virtual machines that are configured and deployed together and are managed as a single entity—for example, a deployment of a multi\-tier line\-of\-business application. In [!INCLUDE[vmm12short](./Token/vmm12short_md.md)], you use the Service Template Designer to create a service template, which defines the configuration of the service. After you create the service template, you can add tiers and networking components to the service template. For more information, see [Overview: creating and deploying services in VMM](./Overview--creating-and-deploying-services-in-VMM.md).
+In [!INCLUDE[vmm12sp1_long](Token/vmm12sp1_long_md.md)], a service is a set of virtual machines that are configured and deployed together and are managed as a single entity—for example, a deployment of a multi\-tier line\-of\-business application. In [!INCLUDE[vmm12short](Token/vmm12short_md.md)], you use the Service Template Designer to create a service template, which defines the configuration of the service. After you create the service template, you can add tiers and networking components to the service template. For more information, see [Overview: creating and deploying services in VMM](Overview--creating-and-deploying-services-in-VMM.md).
 
 ## Create a new service template
 Use the following procedure to create and save a new service template.
@@ -17,7 +17,7 @@ Use the following procedure to create and save a new service template.
 
 #### To create a new service template by using the Service Template Designer
 
-1.  In the [!INCLUDE[vmm12short](./Token/vmm12short_md.md)] console, open the **Library** workspace.
+1.  In the [!INCLUDE[vmm12short](Token/vmm12short_md.md)] console, open the **Library** workspace.
 
 2.  On the **Home** tab, in the **Create** group, click **Create Service Template**.
 
@@ -27,7 +27,7 @@ Use the following procedure to create and save a new service template.
 
     -   In the **Release** text box, provide a value to indicate the version of the service template.  For example, type **1.0** or type **Beta**.
 
-        The release value is important for when you update a service. The release value helps you to identify the version of the service template. For more information about updating a service, see [Updating services in VMM](./Updating-services-in-VMM.md).
+        The release value is important for when you update a service. The release value helps you to identify the version of the service template. For more information about updating a service, see [Updating services in VMM](Updating-services-in-VMM.md).
 
     -   Under **Patterns**, select the pattern on which you want to base your service template. For example, if you select **Two Tier Application**, your service template will begin with two tiers.
 
@@ -35,9 +35,9 @@ Use the following procedure to create and save a new service template.
 
     Depending on the pattern that you selected, the canvas area of the Service Template Designer may be empty or may contain some default tiers. For information about adding tiers and networking components to the service template, see the following topics:
 
-    -   [How to add a tier to a service template](./How-to-add-a-tier-to-a-service-template.md)
+    -   [How to add a tier to a service template](How-to-add-a-tier-to-a-service-template.md)
 
-    -   [How to add networking components to a service template](./How-to-add-networking-components-to-a-service-template.md)
+    -   [How to add networking components to a service template](How-to-add-networking-components-to-a-service-template.md)
 
 4.  On the **Home** tab, in the **Service Template** group, click **Save and Validate** to save the service template.
 
@@ -48,13 +48,13 @@ Use the following procedure to create and save a new service template.
     > [!IMPORTANT]
     > If you try to save changes to a service template that is used as the basis for a deployed service, you need to save the service template with a new release value. The name of the service template will remain the same. In the Service Templates node in the Library workspace, you will see separate entries for the two versions of the service template.
 
-After you create the service template and add the necessary tiers and network components, you can configure the properties of the elements of the service template. For more information, see [How to configure the properties of a service template](./How-to-configure-the-properties-of-a-service-template.md).
+After you create the service template and add the necessary tiers and network components, you can configure the properties of the elements of the service template. For more information, see [How to configure the properties of a service template](How-to-configure-the-properties-of-a-service-template.md).
 
 ## See Also
-[How to configure the properties of a service template](./How-to-configure-the-properties-of-a-service-template.md)
-[Creating service templates in VMM](./Creating-service-templates-in-VMM.md)
-[Overview: creating profiles and templates in VMM](./Overview--creating-profiles-and-templates-in-VMM.md)
-[Managing services with VMM](./Managing-services-with-VMM.md)
-[Managing tenant resources with VMM](./Managing-tenant-resources-with-VMM.md)
+[How to configure the properties of a service template](How-to-configure-the-properties-of-a-service-template.md)
+[Creating service templates in VMM](Creating-service-templates-in-VMM.md)
+[Overview: creating profiles and templates in VMM](Overview--creating-profiles-and-templates-in-VMM.md)
+[Managing services with VMM](Managing-services-with-VMM.md)
+[Managing tenant resources with VMM](Managing-tenant-resources-with-VMM.md)
 
 

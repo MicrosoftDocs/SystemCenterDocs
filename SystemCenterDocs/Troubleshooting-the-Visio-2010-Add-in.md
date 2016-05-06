@@ -56,7 +56,7 @@ Each refresh option is recorded in a separate log file. The name of the file ref
 For successful refresh attempts, the log file also contains the XML version of the dataset returned to Visio Services for diagram refresh purposes.
 
 ## Known issues with the Visio 2010 Add\-in
-You might see the following issues when you use the Visio Add\-in for [!INCLUDE[om12long](./Token/om12long_md.md)].
+You might see the following issues when you use the Visio Add\-in for [!INCLUDE[om12long](Token/om12long_md.md)].
 
 ### The font size of inserted shapes might appear too small
 When you insert a new graphic by using the **Insert Shape** option, the font size for the shape text might appear too small. The size is determined by the default font size set for a template.
@@ -104,13 +104,13 @@ The state graphic does not appear on a stencil even though you have linked the s
 Some stencils in Visio are not defined with a wrapping group. To resolve this problem, create a group for the shape, and then use the **Link Shape to Data** option again. To create a group, right\-click the shape, and then click **Shape** and **Group**.
 
 ### You see security warnings when you open a diagram
-When you open a document that you previously linked to [!INCLUDE[om12short](./Token/om12short_md.md)], you receive multiple security warnings.
+When you open a document that you previously linked to [!INCLUDE[om12short](Token/om12short_md.md)], you receive multiple security warnings.
 
 This problem occurs because the status of the document components is set to refresh automatically. To suppress the warnings, select **Don’t show this message again**.
 
 ### You cannot re\-install the Visio Add\-in
-If you delete the [!INCLUDE[om12short](./Token/om12short_md.md)] Add\-in by using the Visio Trust Center, you cannot add it again later.
+If you delete the [!INCLUDE[om12short](Token/om12short_md.md)] Add\-in by using the Visio Trust Center, you cannot add it again later.
 
-This behavior occurs by design in Visio. Before you can add the [!INCLUDE[om12short](./Token/om12short_md.md)] Add\-in again, uninstall it by using Add\/Remove Programs \(or Programs and Features\) in the Control Panel, and then reinstall it.
+This behavior occurs by design in Visio. Before you can add the [!INCLUDE[om12short](Token/om12short_md.md)] Add\-in again, uninstall it by using Add\/Remove Programs \(or Programs and Features\) in the Control Panel, and then reinstall it.
 
 

@@ -11,15 +11,15 @@ ms.topic: article
 ms.assetid: ddd02198-d3ec-4408-a41a-dfc31d6741d5
 ---
 # How to Back Up Unsealed Management Packs
-You can use the Windows PowerShell command\-line interface to identify and copy your unsealed management packs to a folder on your hard disk drive. After you copy them, save these management packs so that—as part of your disaster recovery plan for [!INCLUDE[smlong12](./Token/smlong12_md.md)]—you can later import these management packs.
+You can use the Windows PowerShell command\-line interface to identify and copy your unsealed management packs to a folder on your hard disk drive. After you copy them, save these management packs so that—as part of your disaster recovery plan for [!INCLUDE[smlong12](Token/smlong12_md.md)]—you can later import these management packs.
 
 ### To back up unsealed management packs
 
-1.  On the computer that hosts the [!INCLUDE[smshort](./Token/smshort_md.md)] management server, create a folder on the hard disk drive where you will store the backup copy of the management packs. For example, create the folder C:\\mpbackup.
+1.  On the computer that hosts the [!INCLUDE[smshort](Token/smshort_md.md)] management server, create a folder on the hard disk drive where you will store the backup copy of the management packs. For example, create the folder C:\\mpbackup.
 
 2.  On the Windows desktop, click **Start**, point to **Programs**, point to **Windows PowerShell 1.0**, right\-click **Windows PowerShell**, and then click **Run as administrator**.
 
-3.  In the [!INCLUDE[smcons](./Token/smcons_md.md)], click **Administration**.
+3.  In the [!INCLUDE[smcons](Token/smcons_md.md)], click **Administration**.
 
 4.  In the **Tasks** pane, click **Start PowerShell Session**
 

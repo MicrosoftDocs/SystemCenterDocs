@@ -8,7 +8,7 @@ ms.topic: article
 ms.assetid: 261b3804-78af-4879-b76e-1bc9146dfe52
 ---
 # Orchestrator Security Planning
-This topic describes the service account and user account requirements, as well as security considerations for your [!INCLUDE[orchlong](./Token/orchlong_md.md)] deployment. You should review this topic, create the required accounts and groups, and determine if you have any additional security requirements before starting the [!INCLUDE[orchshort](./Token/orchshort_md.md)] installation.
+This topic describes the service account and user account requirements, as well as security considerations for your [!INCLUDE[orchlong](Token/orchlong_md.md)] deployment. You should review this topic, create the required accounts and groups, and determine if you have any additional security requirements before starting the [!INCLUDE[orchshort](Token/orchshort_md.md)] installation.
 
 The following topics are discussed:
 

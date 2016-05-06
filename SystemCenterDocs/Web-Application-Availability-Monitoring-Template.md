@@ -32,7 +32,7 @@ All data collected by the **Web Application Availability Monitoring** template a
 
 **Web Application Availability Monitoring folder**
 
-![](/Image/WAAM_MonitoringFolderLocation.gif)
+![](Image/WAAM_MonitoringFolderLocation.gif)
 
 To view the state of the individual monitors, open the Health Explorer for each test.
 
@@ -40,7 +40,7 @@ To view the state of the individual monitors, open the Health Explorer for each 
 When you run the **Web Application Availability Monitoring** template, you have to provide values for options as listed in the following tables. Each table represents a single page in the wizard.
 
 ### <a name="BKMK_genprop"></a>General
-![](/Image/WAAM_AuthTemp1General.gif)
+![](Image/WAAM_AuthTemp1General.gif)
 
 The following options are available on the **General** page of the wizard.
 
@@ -48,10 +48,10 @@ The following options are available on the **General** page of the wizard.
 |----------|---------------|
 |Name|Enter the friendly name used for the template and test group that you are creating. This name is displayed in the Operations Console in the Web Application status view and is used for the folder under the **Web Application Availability Monitoring** folder. **Note:** After you have given the template a name and saved the template, this name cannot be edited without deleting and re\-creating the template.|
 |Description|Describe the template. \(Optional\)|
-|Select destination management pack|Select the management pack to store the views and configuration created by the template. Use the same name for your new management pack as the test group so you can easily pair the two names. You can use an existing management pack or create a new management pack.<br /><br />For more information about management packs, see [Selecting a Management Pack File](./Selecting-a-Management-Pack-File.md).|
+|Select destination management pack|Select the management pack to store the views and configuration created by the template. Use the same name for your new management pack as the test group so you can easily pair the two names. You can use an existing management pack or create a new management pack.<br /><br />For more information about management packs, see [Selecting a Management Pack File](Selecting-a-Management-Pack-File.md).|
 
 ### <a name="BKMK_whatmonitor"></a>What to Monitor
-![](/Image/WAAM_AuthTemp2WhatToMonitor.gif)
+![](Image/WAAM_AuthTemp2WhatToMonitor.gif)
 
 Add URLs to the list by typing, pasting, or importing a file into the table, including the appropriate protocol \(http:\/\/ or https:\/\/\). You can paste entire rows as pairs of comma\-separated values \(CSV\) that are in the format ‘Name, URL’, or you can paste just the list of URLs.
 
@@ -64,7 +64,7 @@ The following options are available on the **What to Monitor** page of the wizar
 |Add|Add URLs to monitor from an external file. You can paste a list of URLs or rows of a spreadsheet as pairs of comma\-separated values that are in the format: Name, URL|
 
 ### <a name="BKMK_SSConfig"></a>Where to Monitor From
-![](/Image/WAAM_AuthTemp3WhereToMonitorFrom_WAAM_Only.gif)
+![](Image/WAAM_AuthTemp3WhereToMonitorFrom_WAAM_Only.gif)
 
 Select the internal locations from which you want the URLs to be monitored.
 
@@ -76,7 +76,7 @@ The following options are available on the **Where to Monitor From** page of the
 |Add\/Remove|Add or remove internal locations you want to monitor from.|
 
 ### <a name="BKMK_SSCustom"></a>Select Internal Locations
-![](/Image/WAAM_AuthTemp5.gif)
+![](Image/WAAM_AuthTemp5.gif)
 
 Select the internal locations from which you want to monitor the URLs you specified on the **What to Monitor** page. Click Add to add internal locations and then search for and select the internal locations that you want to monitor from.
 
@@ -94,7 +94,7 @@ The following options are available on the **Select internal locations** page of
 |Selected locations: Location|List of the locations you have chosen to monitor from.|
 
 ### <a name="BKMK_SSModifying"></a>View and Validate Tests
-![](/Image/WAAM_AuthTemp6ViewAndValidateTests_WAAM_Only.gif)
+![](Image/WAAM_AuthTemp6ViewAndValidateTests_WAAM_Only.gif)
 
 This is a summary of all tests that will be run. Select an internal location and click **Run Test** to validate the test configuration. Select Change configuration to change the default settings for all tests in this template.
 
@@ -110,7 +110,7 @@ The following options are available on the **View and Validate Tests** page of t
 |Change Configuration|Open the **Change Configuration** page where you can change the settings for all tests in the template you are authoring.|
 
 ### <a name="BKMK_SSTransWebpage"></a>Test Results: Summary Tab
-![](/Image/WAAM_AuthTemp7aTestResultsSummaryTab.gif)
+![](Image/WAAM_AuthTemp7aTestResultsSummaryTab.gif)
 
 The following options are available on the **Test Results Summary** tab of the wizard.
 
@@ -119,7 +119,7 @@ The following options are available on the **Test Results Summary** tab of the w
 |Summary tab|Confirms if the test request was correctly processed and shows the URL and Location used in the test. Additionally. The specific tests and results are shown: Status code, DNS resolution time, and Total response time.|
 
 ### Test Results: Details Tab
-![](/Image/WAAM_AuthTemp7bTestResultsDetailsTab.gif)
+![](Image/WAAM_AuthTemp7bTestResultsDetailsTab.gif)
 
 The following options are available on the **Test Results Details** tab of the wizard.
 
@@ -134,7 +134,7 @@ The following options are available on the **Test Results Details** tab of the w
 |Details tab: Server certificate expiration \(days\)|Displays the certificate expiration of the date when the site expired. Website can have expired certificates.|
 
 ### Test Results: HTTP Request Tab
-![](/Image/WAAM_AuthTemp7cTestResults.gif)
+![](Image/WAAM_AuthTemp7cTestResults.gif)
 
 The following options are available on the **Test Results HTTP Request** tab of the wizard.
 
@@ -143,7 +143,7 @@ The following options are available on the **Test Results HTTP Request** tab of 
 |HTTP Request tab|Displays details about the HTTP request of the test what is sent to the website.|
 
 ### Test Results: HTTP Response Tab
-![](/Image/WAAM_AuthTemp7dTestResults.gif)
+![](Image/WAAM_AuthTemp7dTestResults.gif)
 
 The following options are available on the **Test Results HTTP Response** tab of the wizard.
 
@@ -152,7 +152,7 @@ The following options are available on the **Test Results HTTP Response** tab of
 |What is shown on this tab|Displays details about the HTTP Response for the test comes back from website.|
 
 ### Test Results: Raw Data Tab
-![](/Image/WAAM_AuthTemp7eTestResults.gif)
+![](Image/WAAM_AuthTemp7eTestResults.gif)
 
 The following options are available on the **Test Results Raw Data** tab of the wizard.
 
@@ -161,9 +161,9 @@ The following options are available on the **Test Results Raw Data** tab of the 
 |What is shown on this tab|Displays all of the data unformatted that we get back from the site. If there’s a problem with the website, this information might help you figure out what might be wrong with the website.|
 
 ### <a name="BKMK_SSTransWebService"></a>Change Configuration for Test Set
-![](/Image/WAAM_AuthTemp8aChangeConfigForTest.gif)
+![](Image/WAAM_AuthTemp8aChangeConfigForTest.gif)
 
-![](/Image/WAAM_AuthTemp8bChangeConfigForTest.gif)
+![](Image/WAAM_AuthTemp8bChangeConfigForTest.gif)
 
 The following options are available on the **Change Configuration for Test Set** page of the wizard.
 
@@ -210,12 +210,12 @@ The following options are available on the **Change Configuration for Test Set**
 |Proxy Server: Port number|Specify the port number.|
 
 ### <a name="BKMK_Summary"></a>Summary
-![](/Image/WAAM_AuthTemp9Summary_WAAM_Only.gif)
+![](Image/WAAM_AuthTemp9Summary_WAAM_Only.gif)
 
 The **Summary** page of the wizard lists the settings you have configured for the **Web Application Availability Monitoring** template. If you want to change any of these settings, click **Previous** or the template page until you reach the page with the settings that you want to change.
 
 ### <a name="BKMK_CreateTemp"></a>Creating and Modifying Web Application Availability Monitoring Templates
-For the procedure to run the .NET Application Performance Monitoring wizard, see [How to Configure Web Application Availability Monitoring](./How-to-Configure-Web-Application-Availability-Monitoring.md)
+For the procedure to run the .NET Application Performance Monitoring wizard, see [How to Configure Web Application Availability Monitoring](How-to-Configure-Web-Application-Availability-Monitoring.md)
 
 ##### To modify an existing Web Application Availability Monitoring template
 
@@ -267,9 +267,9 @@ After you configure monitoring for an application, these three views will help y
 6.  Use options in the **Actions** pane to modify the Performance view.
 
 ## See Also
-[How to Configure Web Application Availability Monitoring](./How-to-Configure-Web-Application-Availability-Monitoring.md)
-[Monitoring Web Application Availability Tests and Alerts](./Monitoring-Web-Application-Availability-Tests-and-Alerts.md)
-[Dashboard Views for Web Application Availability Monitoring](./Dashboard-Views-for-Web-Application-Availability-Monitoring.md)
-[Reporting for Web Application Availability Monitoring](./Reporting-for-Web-Application-Availability-Monitoring.md)
+[How to Configure Web Application Availability Monitoring](How-to-Configure-Web-Application-Availability-Monitoring.md)
+[Monitoring Web Application Availability Tests and Alerts](Monitoring-Web-Application-Availability-Tests-and-Alerts.md)
+[Dashboard Views for Web Application Availability Monitoring](Dashboard-Views-for-Web-Application-Availability-Monitoring.md)
+[Reporting for Web Application Availability Monitoring](Reporting-for-Web-Application-Availability-Monitoring.md)
 
 

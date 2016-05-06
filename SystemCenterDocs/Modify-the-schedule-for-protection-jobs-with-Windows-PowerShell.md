@@ -32,7 +32,7 @@ You can set the start time for protection jobs only by using DPM Management Shel
     For technical information, type "**Get\-Help Set\-ProtectionJobStartTime \-full**" in DPM Management Shell.
 
 ## See Also
-[Modify the schedule for maintenance jobs with Windows PowerShell](./Modify-the-schedule-for-maintenance-jobs-with-Windows-PowerShell.md)
+[Modify the schedule for maintenance jobs with Windows PowerShell](Modify-the-schedule-for-maintenance-jobs-with-Windows-PowerShell.md)
 [Understand data protection \[DPM2012\_Web\]](assetId:///ff928689-a0d9-4934-b791-d7fdeef931e6)
 
 

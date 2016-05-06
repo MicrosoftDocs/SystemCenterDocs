@@ -8,7 +8,7 @@ ms.topic: article
 ms.assetid: 60a2b898-c933-48b0-a790-1586f515d0be
 ---
 # How to Configure a Computer for Agentless Management_1
-[!INCLUDE[om12long](./Token/om12long_md.md)] can gather performance and availability data on a computer that does not have an agent installed by using a proxy agent that is installed on another computer. Use agentless\-monitoring of computers when it is not possible or desirable to install an agent on a computer.
+[!INCLUDE[om12long](Token/om12long_md.md)] can gather performance and availability data on a computer that does not have an agent installed by using a proxy agent that is installed on another computer. Use agentless\-monitoring of computers when it is not possible or desirable to install an agent on a computer.
 
 An agentless\-managed computer is a Windows\-based computer that is discovered by using the Operations console. You assign an management server or agent\-managed computer to provide remote \(proxy\) agent functionality for the computers.
 
@@ -99,7 +99,7 @@ Agentless\-managed computers are managed as if there is an agent installed on th
 12. Click **Close**. The computers will be listed in the **Administration** workspace in **Agentless Managed**.
 
 ## See Also
-[Agentless Monitoring in Operations Manager](./Agentless-Monitoring-in-Operations-Manager.md)
-[How to Configure a Proxy for Agentless Monitoring](./How-to-Configure-a-Proxy-for-Agentless-Monitoring.md)
+[Agentless Monitoring in Operations Manager](Agentless-Monitoring-in-Operations-Manager.md)
+[How to Configure a Proxy for Agentless Monitoring](How-to-Configure-a-Proxy-for-Agentless-Monitoring.md)
 
 

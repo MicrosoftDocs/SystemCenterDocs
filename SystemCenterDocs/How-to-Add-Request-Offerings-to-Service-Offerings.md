@@ -11,11 +11,11 @@ ms.topic: article
 ms.assetid: d8a44806-ddfd-4a5d-8286-c167bb2b9595
 ---
 # How to Add Request Offerings to Service Offerings
-Service offerings are logical groups of request offerings. For a service offering to appear in the [!INCLUDE[smssp](./Token/smssp_md.md)], each service offering must have at least one request offering added to it. After a service offering and a request offering are published, it is a straightforward process to associate them as a collection.
+Service offerings are logical groups of request offerings. For a service offering to appear in the [!INCLUDE[smssp](Token/smssp_md.md)], each service offering must have at least one request offering added to it. After a service offering and a request offering are published, it is a straightforward process to associate them as a collection.
 
 ### To add request offerings to service offerings
 
-1.  In the [!INCLUDE[smcons](./Token/smcons_md.md)], select **Library**.
+1.  In the [!INCLUDE[smcons](Token/smcons_md.md)], select **Library**.
 
 2.  In the **Library** pane, expand **Service Catalog**, and then select **Published Request Offerings**.
 

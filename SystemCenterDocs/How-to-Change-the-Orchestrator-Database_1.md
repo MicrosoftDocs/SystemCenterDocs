@@ -8,7 +8,7 @@ ms.topic: article
 ms.assetid: 8a8a283b-f552-443b-b8a0-1b5c03506132
 ---
 # How to Change the Orchestrator Database_1
-You might have to change the location of the [!INCLUDE[orchshort](./Token/orchshort_md.md)] database after installation, because you might want to separate the management server and database server, move the database to a larger server or a cluster, or just reconfigure the orchestration database based on required changes in your environment. You can use standard Microsoft SQL Server methods to move the existing database to another server, but then you must configure the [!INCLUDE[orchshort](./Token/orchshort_md.md)] features to connect to the new server. You must perform this configuration for the management server, the web service supporting the Orchestration console, and each runbook server as described in the following procedures.
+You might have to change the location of the [!INCLUDE[orchshort](Token/orchshort_md.md)] database after installation, because you might want to separate the management server and database server, move the database to a larger server or a cluster, or just reconfigure the orchestration database based on required changes in your environment. You can use standard Microsoft SQL Server methods to move the existing database to another server, but then you must configure the [!INCLUDE[orchshort](Token/orchshort_md.md)] features to connect to the new server. You must perform this configuration for the management server, the web service supporting the Orchestration console, and each runbook server as described in the following procedures.
 
 ## Management server and runbook servers
 You can use the Database Configuration utility to change the connection settings that the management server and runbook servers installed in your environment. The settings for these servers are stored in an encrypted file called **Settings.dat**. If you change your orchestration database settings, such as the port, user account access, or computer name, you must manually uninstall and reinstall all runbook servers, and then re\-run the Database Configuration utility on the management server and all runbook servers.
@@ -42,7 +42,7 @@ You can use the Database Configuration utility to change the connection settings
 ## Web Service
 The web service supporting the Orchestration console does not use the **Settings.dat** file. To change the database settings for the web service, you must modify the Web.config file on the Internet Information Services \(IIS\) server. You can use **IIS Manager** to modify the file, but you must first decrypt it by running the aspnet\_regiis.exe executable file.
 
-#### To change the database settings for the [!INCLUDE[orchshort](./Token/orchshort_md.md)] web service
+#### To change the database settings for the [!INCLUDE[orchshort](Token/orchshort_md.md)] web service
 
 1.  Log on with administrative credentials to the computer with the Orchestration console installed.
 
@@ -71,6 +71,6 @@ The web service supporting the Orchestration console does not use the **Settings
     **C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319\\aspnet\_regiis.exe \-pef "connectionStrings" "C:\\Program Files \(x86\)\\Microsoft System Center 2012\\Orchestrator\\Web Service\\Orchestrator2012"**
 
 ## See Also
-[Administering System Center 2012 - Orchestrator](./Administering-System-Center-2012---Orchestrator.md)
+[Administering System Center 2012 - Orchestrator](Administering-System-Center-2012---Orchestrator.md)
 
 

@@ -11,13 +11,13 @@ ms.topic: article
 ms.assetid: 2e47202e-3cc4-400b-8b4c-cdb52b820da6
 ---
 # Configure self-service recovery of SQL Server databases
-[!INCLUDE[dpm2012long](./Token/dpm2012long_md.md)] includes the [!INCLUDE[dpm2012short](./Token/dpm2012short_md.md)] Self\-Service Recovery Configuration Tool for SQL Server \(SSRCT\), which is installed on the DPM server and accessed from the **Protection** task area in DPM Administrator Console. You can use this tool to create, modify, or delete DPM roles, which specify which users can perform self\-service recovery of protected SQL Server databases that they own.
+[!INCLUDE[dpm2012long](Token/dpm2012long_md.md)] includes the [!INCLUDE[dpm2012short](Token/dpm2012short_md.md)] Self\-Service Recovery Configuration Tool for SQL Server \(SSRCT\), which is installed on the DPM server and accessed from the **Protection** task area in DPM Administrator Console. You can use this tool to create, modify, or delete DPM roles, which specify which users can perform self\-service recovery of protected SQL Server databases that they own.
 
 You set up self\-service recovery by creating a role. You can then manage these roles as required. When you create a role you specify the following settings:
 
 -   **Security groups**: One or more security groups that contain the users for whom you want to enable self\-service recovery of SQL Server databases.
 
--   **Recovery items**: Instances of SQL Server and SQL Server databases that are currently protected by [!INCLUDE[dpm2012short](./Token/dpm2012short_md.md)] for which you want to enable self\-service recovery by users.
+-   **Recovery items**: Instances of SQL Server and SQL Server databases that are currently protected by [!INCLUDE[dpm2012short](Token/dpm2012short_md.md)] for which you want to enable self\-service recovery by users.
 
 -   **Recovery targets**: Instances of SQL Server that users can use as targeted locations to recover databases during self\-service recovery.
 

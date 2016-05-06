@@ -11,7 +11,7 @@ ms.topic: article
 ms.assetid: 3f3c2824-c6eb-4ec1-8b3d-6a4c2f677b48
 ---
 # Install the Operations Manager Web Console
-You can install the web console when you install [!INCLUDE[om12short](./Token/om12short_md.md)], or you can install it separately. You can install a stand\-alone web console or install it on an existing management server that meets the prerequisites. For information about the prerequisites, see [System Requirements for System Center Technical Preview](./System-Requirements-for-System-Center-Technical-Preview.md). After you install the web console, you must configure permissions inheritance to allow users to view performance and diagram views. For instructions, see [To configure permissions inheritance for the web console](#bkmk_toconfigurepermissionsinheritanceforthewebconsole).
+You can install the web console when you install [!INCLUDE[om12short](Token/om12short_md.md)], or you can install it separately. You can install a stand\-alone web console or install it on an existing management server that meets the prerequisites. For information about the prerequisites, see [System Requirements for System Center Technical Preview](System-Requirements-for-System-Center-Technical-Preview.md). After you install the web console, you must configure permissions inheritance to allow users to view performance and diagram views. For instructions, see [To configure permissions inheritance for the web console](#bkmk_toconfigurepermissionsinheritanceforthewebconsole).
 
 > [!IMPORTANT]
 > If you install a stand\-alone web console on a server, you will not be able to add the management server feature to this server. If you want to install the management server and web console on the same server, you must either install both features simultaneously, or install the management server before you install the web console.
@@ -54,7 +54,7 @@ The local and remote parameters are as follows:
 
 1.  Log on to the computer that will host the web console with an account that has local administrative credentials.
 
-2.  On the [!INCLUDE[om12short](./Token/om12short_md.md)] installation media, run **Setup.exe**, and then click **Install**.
+2.  On the [!INCLUDE[om12short](Token/om12short_md.md)] installation media, run **Setup.exe**, and then click **Install**.
 
 3.  On the **Getting Started**, **Select features to install** page, select **Web console**. To read more about what each feature provides and its requirements, click **Expand all**, or expand the buttons next to each feature, and then click **Next**.
 
@@ -94,7 +94,7 @@ The local and remote parameters are as follows:
 
 1.  Log on to the computer that is hosting a management server with an account that has local administrative credentials.
 
-2.  On the [!INCLUDE[om12short](./Token/om12short_md.md)] installation media, run **Setup.exe**, and then click **Install**.
+2.  On the [!INCLUDE[om12short](Token/om12short_md.md)] installation media, run **Setup.exe**, and then click **Install**.
 
 3.  On the **Getting Started**, **What do you want to do?** page, click **Add a feature**.
 
@@ -131,7 +131,7 @@ The local and remote parameters are as follows:
 
 2.  Open a Command Prompt window by using the **Run as Administrator** option.
 
-3.  Change the path to where the [!INCLUDE[om12short](./Token/om12short_md.md)] setup.exe file is located, and run the following command.
+3.  Change the path to where the [!INCLUDE[om12short](Token/om12short_md.md)] setup.exe file is located, and run the following command.
 
     > [!IMPORTANT]
     > Use the `/WebConsoleSSL` parameter only if your website has Secure Sockets Layer \(SSL\) activated.
@@ -166,6 +166,6 @@ The local and remote parameters are as follows:
 All information and content at http:\/\/blogs.technet.com\/b\/momteam\/archive\/2008\/01\/31\/running\-the\-web\-console\-server\-on\-a\-standalone\-server\-using\-windows\-authentication.aspx is provided by the owner or the users of the website. Microsoft makes no warranties, express, implied or statutory, as to the information at this website.
 
 ## See Also
-[Distributed Deployment of Operations Manager](./Distributed-Deployment-of-Operations-Manager.md)
+[Distributed Deployment of Operations Manager](Distributed-Deployment-of-Operations-Manager.md)
 
 

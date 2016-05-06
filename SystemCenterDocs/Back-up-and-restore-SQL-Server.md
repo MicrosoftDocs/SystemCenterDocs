@@ -29,11 +29,10 @@ Why back up SQL Server with DPM:
 
 See the following resources to set up SQL Server protection:
 
-[SQL Server prerequisites](./SQL-Server-prerequisites.md)—Read this article before you begin deployment. It also discusses the prerequisites for protecting a SQL Server database that has **AlwaysOn** enabled.
+[SQL Server prerequisites](SQL-Server-prerequisites.md)—Read this article before you begin deployment. It also discusses the prerequisites for protecting a SQL Server database that has **AlwaysOn** enabled.
 
-[Configure SQL Server protection](./Configure-SQL-Server-protection.md)—This article describes how to set up protection groups and configure monitoring for SQL Server.
+[Configure SQL Server protection](Configure-SQL-Server-protection.md)—This article describes how to set up protection groups and configure monitoring for SQL Server.
 
-[Recover SQL Server data in DPM](./Recover-SQL-Server-data-in-DPM.md)—This article explains how to recover DPM data.
-
+[Recover SQL Server data in DPM](Recover-SQL-Server-data-in-DPM.md)—This article explains how to recover DPM data.
 
 

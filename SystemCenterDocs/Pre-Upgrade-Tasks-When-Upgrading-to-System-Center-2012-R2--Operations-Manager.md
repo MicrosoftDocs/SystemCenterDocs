@@ -13,7 +13,7 @@ ms.assetid: 7518d545-fff2-45a2-93e6-f7b038fe9639
 # Pre-Upgrade Tasks When Upgrading to System Center 2012 R2  Operations Manager
 Perform the following pre\-upgrade tasks in the order presented before you begin the upgrade process.
 
-1.  Review the [!INCLUDE[omblue_2](./Token/omblue_2_md.md)] Event Logs
+1.  Review the [!INCLUDE[omblue_2](Token/omblue_2_md.md)] Event Logs
 
 2.  Cleanup the Database \(ETL Table\)
 
@@ -31,7 +31,7 @@ Perform the following pre\-upgrade tasks in the order presented before you begin
 Review the event logs for Operations Manager on the management servers to look for recurring warning or critical events. Address them and save a copy of the event logs before you perform your upgrade.
 
 ## Cleanup the Database \(ETL Table\)
-As part of upgrade to [!INCLUDE[omblue_1](./Token/omblue_1_md.md)] installation \(setup\) includes a script to cleanup ETL tables, grooming the database.  However, in cases where there are a large number of rows \(greater than 100,000\) to cleanup, we recommend running the script before starting the upgrade to promote a faster upgrade and prevent possible timeout of setup. Performing this pre\-upgrade task in all circumstances ensures a more efficient installation.
+As part of upgrade to [!INCLUDE[omblue_1](Token/omblue_1_md.md)] installation \(setup\) includes a script to cleanup ETL tables, grooming the database.  However, in cases where there are a large number of rows \(greater than 100,000\) to cleanup, we recommend running the script before starting the upgrade to promote a faster upgrade and prevent possible timeout of setup. Performing this pre\-upgrade task in all circumstances ensures a more efficient installation.
 
 Run the following query to determine the number of rows that need to be deleted from ETL and cleanup the database:
 

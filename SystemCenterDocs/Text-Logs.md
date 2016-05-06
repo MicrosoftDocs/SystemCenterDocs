@@ -11,7 +11,7 @@ ms.topic: article
 ms.assetid: a3d2ce59-a94b-4dd0-8aeb-5f985c56a964
 ---
 # Text Logs
-A *text log* is a text file that an application uses to log event information. In order to use a text log data source in a management pack, each entry in the log must be on a single line. If the log file does not fit this requirement, then a [Script Monitors and Rules](./Script-Monitors-and-Rules.md) has to be created to read the log.
+A *text log* is a text file that an application uses to log event information. In order to use a text log data source in a management pack, each entry in the log must be on a single line. If the log file does not fit this requirement, then a [Script Monitors and Rules](Script-Monitors-and-Rules.md) has to be created to read the log.
 
 Applications that use log files frequently create a new file each day or when one file reaches a certain size. To support this functionality, monitors and rules specify a **Directory** and a **Pattern** for the text logs being monitored. Directory is the path of the directory where the text logs will be located. This must be an absolute path without wildcard characters. A $Target variable could also be used if the path to the log files is stored in a property of the target class.  Pattern is the name of the log file including wildcard characters as appropriate.
 
@@ -24,8 +24,8 @@ The table below lists the wizards that are available for both simple and delimit
 
 |Management Pack Object|Wizards Available|
 |--------------------------|---------------------|
-|Monitors|Simple Event Detection using each of the standard [Event Monitor Reset](./Event-Monitor-Reset.md) methods|
-|Monitors|Repeated Event Detection using each of the standard [Event Monitor Reset](./Event-Monitor-Reset.md) methods|
+|Monitors|Simple Event Detection using each of the standard [Event Monitor Reset](Event-Monitor-Reset.md) methods|
+|Monitors|Repeated Event Detection using each of the standard [Event Monitor Reset](Event-Monitor-Reset.md) methods|
 |Rules|Alert Generating rule|
 |Rules|Event collection rule|
 
@@ -39,10 +39,10 @@ The **General** page includes general settings for the rule or wizard including 
 |----------|---------------|
 |Name|The name used for the rule or monitor. For a rule, the name appears in the **Rules** view in the **Authoring** pane. When you create a view or report, you can select this name to use the data collected by it. For a monitor, the name appears in the Health Explorer of any target objects.|
 |Description|Optional description of the rule or monitor.|
-|Management Pack|Management pack to store the rule.<br /><br />For more information on management packs, see [Selecting a Management Pack File](./Selecting-a-Management-Pack-File.md).|
+|Management Pack|Management pack to store the rule.<br /><br />For more information on management packs, see [Selecting a Management Pack File](Selecting-a-Management-Pack-File.md).|
 |Rule Category \(Rules only\)|The category for the rule. For a collection rule, this should be **Event Collection**. For an alerting rule, this should be **Alert**.|
-|Parent Monitor \(Monitors only\)|The aggregate monitor that the monitor will be positioned under in the Health Explorer. For more information, see [Aggregate Monitors](./Aggregate-Monitors.md).|
-|Target|The class to use for the target of the rule or monitor. The rule or monitor will be run on any agent that has at least one instance of this class. For more information on targets, see [Understanding Classes and Objects](./Understanding-Classes-and-Objects.md).|
+|Parent Monitor \(Monitors only\)|The aggregate monitor that the monitor will be positioned under in the Health Explorer. For more information, see [Aggregate Monitors](Aggregate-Monitors.md).|
+|Target|The class to use for the target of the rule or monitor. The rule or monitor will be run on any agent that has at least one instance of this class. For more information on targets, see [Understanding Classes and Objects](Understanding-Classes-and-Objects.md).|
 |Rule is enabled<br /><br />Monitor is enabled|Specifies whether the rule or monitor is enabled.|
 
 ### Application Log Data Source
@@ -71,7 +71,7 @@ The following table lists the common properties available from text log monitors
 |Param\[1\]|Complete entry in a generic text log.|
 |Param\[\#\]|Specific parameter in a generic CSV text log. \# represents the number of the field.|
 
-For more information about expressions, see [Expressions](./Expressions.md).
+For more information about expressions, see [Expressions](Expressions.md).
 
 ### Auto Reset Timer
 The **Auto Reset Timer** page is only available for timer reset monitors. It allows you to set the time that must pass after the alert is created before the alert is automatically resolved.
@@ -80,10 +80,10 @@ The **Auto Reset Timer** page is only available for timer reset monitors. It all
 The **Configure Health** page is only available for monitors. It allows you to specify the health state that will be set for each of the events. For a manual reset monitor, the **Manual Reset** condition will be **Healthy**, and you can specify whether the **Event Raised** condition will set the monitor to a **Warning** or a **Critical** state. For a **Timer Reset** or an **Event Reset**, you can specify the health state set by each event. The first event will typically set the monitor to **Warning** or **Critical** while the second event or the timer will set the monitor to **Healthy**.
 
 ### Configure Alerts
-The **Configure Alerts** page is only available for monitors and alerting rules. Its options are explained in [Alerts](./Alerts.md).
+The **Configure Alerts** page is only available for monitors and alerting rules. Its options are explained in [Alerts](Alerts.md).
 
 ## <a name="Procedures"></a>Creating Text Log Rules and Monitors
-Use the following procedure to create a text log alerting rule in [!INCLUDE[om12short](./Token/om12short_md.md)] with the following details:
+Use the following procedure to create a text log alerting rule in [!INCLUDE[om12short](Token/om12short_md.md)] with the following details:
 
 -   Runs on all agents with a particular service installed.
 
@@ -97,9 +97,9 @@ Use the following procedure to create a text log alerting rule in [!INCLUDE[om12
 
 #### To create a delimited text log alert rule
 
-1.  If you don’t have a management pack for the application that you are monitoring, create one using the process in [Selecting a Management Pack File](./Selecting-a-Management-Pack-File.md).
+1.  If you don’t have a management pack for the application that you are monitoring, create one using the process in [Selecting a Management Pack File](Selecting-a-Management-Pack-File.md).
 
-2.  Create a new target using the process in [To create a Windows Service template](./Windows-Service-Template.md#CreateWindowsServiceTemplate). You can use any service installed on a test agent for this template.
+2.  Create a new target using the process in [To create a Windows Service template](Windows-Service-Template.md#CreateWindowsServiceTemplate). You can use any service installed on a test agent for this template.
 
 3.  In the Operations console, select the **Authoring** workspace, and then select **Rules**.
 
@@ -176,9 +176,9 @@ Use the following procedure to create a text log alerting rule in [!INCLUDE[om12
 10. Click **Finish**.
 
 ## See Also
-[Event Monitors and Rules](./Event-Monitors-and-Rules.md)
-[Event Monitor Reset](./Event-Monitor-Reset.md)
-[Repeating Events](./Repeating-Events.md)
-[Alerts](./Alerts.md)
+[Event Monitors and Rules](Event-Monitors-and-Rules.md)
+[Event Monitor Reset](Event-Monitor-Reset.md)
+[Repeating Events](Repeating-Events.md)
+[Alerts](Alerts.md)
 
 

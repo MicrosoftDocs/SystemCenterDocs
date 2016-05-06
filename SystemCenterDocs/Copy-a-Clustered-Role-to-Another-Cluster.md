@@ -11,7 +11,7 @@ ms.assetid: 34e052dd-ec68-4759-a861-325d29395300
 <?xml version="1.0" encoding="utf-8"?>
 <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://ddue.schemas.microsoft.com/authoring/2003/5 http://dduestorage.blob.core.windows.net/ddueschema/developer.xsd">
   <introduction>
-    <para>You can use the Copy Cluster Roles Wizard to copy clustered roles from a failover cluster that is running <token>winblue_server_./Token>, <token>win8_server_./Token>, or <token>nextref_server_./Token>.</para>
+    <para>You can use the Copy Cluster Roles Wizard to copy clustered roles from a failover cluster that is running <token>winblue_server_Token>, <token>win8_server_Token>, or <token>nextref_server_Token>.</para>
     <para>To copy clustered roles, you must be a local administrator on both the cluster node from which you want to copy clustered roles, and the node in the other cluster to which you want to copy the roles.</para>
     <para>Realize that although role settings are copied, cluster settings, network settings, and data files that are used by the role are not copied. Also, for virtual machines, it assumes that storage is reused.</para>
   </introduction>

@@ -11,7 +11,7 @@ ms.assetid: 40da294b-501b-4357-a047-a8ff391e0ca1
 <?xml version="1.0" encoding="utf-8"?>
 <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://ddue.schemas.microsoft.com/authoring/2003/5 http://dduestorage.blob.core.windows.net/ddueschema/developer.xsd">
   <introduction>
-    <para>This topic describes the controls on the AppLocker user interface to help you create and maintain application control policies by using AppLocker in <token>winblue_server./Token> and <token>winblue_client./Token>.</para>
+    <para>This topic describes the controls on the AppLocker user interface to help you create and maintain application control policies by using AppLocker in <token>winblue_server_Token> and <token>winblue_client_Token>.</para>
   </introduction>
   <section>
     <title>About AppLocker</title>
@@ -123,7 +123,7 @@ ms.assetid: 40da294b-501b-4357-a047-a8ff391e0ca1
   <section address="BKMK_RuleCollections">
     <title>Rule collections</title>
     <content>
-      <para>The AppLocker user interface is accessed through the Microsoft Management Console (MMC), and it is organized into rule collections, which are Executable files, Scripts, Windows Installer files, <token>applocker_modernap./Token>, <token>applocker_pk./Token> and DLL files. These collections give the administrator an easy way to differentiate the rules for different types of applications. The following table lists the file formats that are included in each rule collection.</para>
+      <para>The AppLocker user interface is accessed through the Microsoft Management Console (MMC), and it is organized into rule collections, which are Executable files, Scripts, Windows Installer files, <token>applocker_modernappToken>, <token>applocker_pkgToken> and DLL files. These collections give the administrator an easy way to differentiate the rules for different types of applications. The following table lists the file formats that are included in each rule collection.</para>
       <table xmlns:caps="http://schemas.microsoft.com/build/caps/2013/11">
         <thead>
           <tr>
@@ -169,7 +169,7 @@ ms.assetid: 40da294b-501b-4357-a047-a8ff391e0ca1
           </tr>
           <tr>
             <TD>
-              <para>Appx (<token>applocker_modernap./Token> and <token>applocker_pk./Token>)</para>
+              <para>Appx (<token>applocker_modernappToken> and <token>applocker_pkgToken>)</para>
             </TD>
             <TD>
               <para>.appx</para>
@@ -217,9 +217,9 @@ ms.assetid: 40da294b-501b-4357-a047-a8ff391e0ca1
       <section address="BKMK_Publisher">
         <title>Publisher</title>
         <content>
-          <para>This condition identifies an application based on its digital signature and extended attributes when available. The digital signature contains information about the company that created the application (the publisher). Executable files, DLLs, Windows installers, <token>applocker_modernap./Token>, and <token>applocker_pk./Token> also have extended attributes, which are obtained from the binary resource. Attributes for executable files, DLLs, and Windows installers contain the name of the product that the file is a part of, the original name of the file as supplied by the publisher, and the version number of the file. In <token>applocker_modernap./Token> and <token>applocker_pk./Token>, these extended attributes contain the name and the version of the application package.</para>
+          <para>This condition identifies an application based on its digital signature and extended attributes when available. The digital signature contains information about the company that created the application (the publisher). Executable files, DLLs, Windows installers, <token>applocker_modernappToken>, and <token>applocker_pkgToken> also have extended attributes, which are obtained from the binary resource. Attributes for executable files, DLLs, and Windows installers contain the name of the product that the file is a part of, the original name of the file as supplied by the publisher, and the version number of the file. In <token>applocker_modernappToken> and <token>applocker_pkgToken>, these extended attributes contain the name and the version of the application package.</para>
           <alert class="note">
-            <para>Rules that are created in the <token>applocker_moderna./Token> and <token>applocker_p./Token> rule collection can only have the Publisher condition because Windows does not support unsigned <token>applocker_modernap./Token> or <token>applocker_pk./Token>.</para>
+            <para>Rules that are created in the <token>applocker_modernapToken> and <token>applocker_pkToken> rule collection can only have the Publisher condition because Windows does not support unsigned <token>applocker_modernappToken> or <token>applocker_pkgToken>.</para>
           </alert>
           <para/>
           <alert class="note">
@@ -506,10 +506,10 @@ ms.assetid: 40da294b-501b-4357-a047-a8ff391e0ca1
           <para>Allow members of the <embeddedLabel>Everyone</embeddedLabel> group to run DLLs that are located in the <ui>Program Files</ui> folder.</para>
         </listItem>
       </list>
-      <para>The <token>applocker_moderna./Token> default rule types:</para>
+      <para>The <token>applocker_modernapToken> default rule types:</para>
       <list class="bullet">
         <listItem>
-          <para>Allow members of the <embeddedLabel>Everyone</embeddedLabel> group to install and run all signed <token>applocker_modernap./Token> and <token>applocker_pk./Token>.</para>
+          <para>Allow members of the <embeddedLabel>Everyone</embeddedLabel> group to install and run all signed <token>applocker_modernappToken> and <token>applocker_pkgToken>.</para>
         </listItem>
       </list>
     </content>
@@ -534,7 +534,7 @@ ms.assetid: 40da294b-501b-4357-a047-a8ff391e0ca1
       </alert>
       <para/>
       <alert class="important">
-        <para>If you want to allow any <token>applocker_modernap./Token> in your environment while continuing to control executables, you should create default rules for <token>applocker_modernap./Token> and set the enforcement mode to Audit-only for the <token>applocker_moderna./Token> rule collection.</para>
+        <para>If you want to allow any <token>applocker_modernappToken> in your environment while continuing to control executables, you should create default rules for <token>applocker_modernappToken> and set the enforcement mode to Audit-only for the <token>applocker_modernapToken> rule collection.</para>
       </alert>
     </content>
   </section>
@@ -550,7 +550,7 @@ ms.assetid: 40da294b-501b-4357-a047-a8ff391e0ca1
     <content>
       <para>Because the DLL rule collection is not enabled by default, you must perform the following procedure before you can create and enforce DLL rules.</para>
       <para>
-        <token>mingrp_admi./Token>
+        <token>mingrp_adminToken>
       </para>
       <procedure>
         <title>To enable the DLL rule collection</title>
@@ -558,13 +558,13 @@ ms.assetid: 40da294b-501b-4357-a047-a8ff391e0ca1
           <step>
             <content>
               <para>
-                <token>winblue_sta./Token> <userInput>secpol.msc</userInput>, and then press ENTER. </para>
+                <token>winblue_starToken> <userInput>secpol.msc</userInput>, and then press ENTER. </para>
             </content>
           </step>
           <step>
             <content>
               <para>
-                <token>uac_confirm_acti./Token>
+                <token>uac_confirm_actioToken>
               </para>
             </content>
           </step>
@@ -594,7 +594,7 @@ ms.assetid: 40da294b-501b-4357-a047-a8ff391e0ca1
           <para>The Create Rules Wizard enables you to create one rule at a time. </para>
         </listItem>
         <listItem>
-          <para>The Automatically Generate Rules Wizard allows you to create multiple rules at one time. You can select a folder and let the wizard create rules for the relevant files within that folder, or in case of <token>applocker_modernap./Token>, you can let the wizard create rules for all <token>applocker_modernap./Token> that are installed on the computer. You can also specify the user or group to which to apply the rules. This wizard automatically generates Allow rules only.</para>
+          <para>The Automatically Generate Rules Wizard allows you to create multiple rules at one time. You can select a folder and let the wizard create rules for the relevant files within that folder, or in case of <token>applocker_modernappToken>, you can let the wizard create rules for all <token>applocker_modernappToken> that are installed on the computer. You can also specify the user or group to which to apply the rules. This wizard automatically generates Allow rules only.</para>
         </listItem>
       </list>
     </content>
@@ -623,13 +623,13 @@ ms.assetid: 40da294b-501b-4357-a047-a8ff391e0ca1
           <para>If an application is not digitally signed, you cannot use a Publisher rule condition for that application.</para>
         </listItem>
         <listItem>
-          <para>AppLocker rules cannot be used to manage computers running a Windows operating system earlier than <token>nextref_server./Token> or <token>nextref_client./Token>. Software Restriction Policies must be used instead. If AppLocker rules are defined in a Group Policy Object (GPO), only those rules are applied. To ensure interoperability between Software Restriction Policies rules and AppLocker rules, define Software Restriction Policies rules and AppLocker rules in different GPOs.</para>
+          <para>AppLocker rules cannot be used to manage computers running a Windows operating system earlier than <token>nextref_server_Token> or <token>nextref_client_Token>. Software Restriction Policies must be used instead. If AppLocker rules are defined in a Group Policy Object (GPO), only those rules are applied. To ensure interoperability between Software Restriction Policies rules and AppLocker rules, define Software Restriction Policies rules and AppLocker rules in different GPOs.</para>
         </listItem>
         <listItem>
-          <para>The <token>applocker_moderna./Token> and <token>applocker_p./Token>  rule collection is not available in <token>nextref_server./Token> or <token>nextref_client./Token>.</para>
+          <para>The <token>applocker_modernapToken> and <token>applocker_pkToken>  rule collection is not available in <token>nextref_server_Token> or <token>nextref_client_Token>.</para>
         </listItem>
         <listItem>
-          <para>When the rules for the executable rule  collection are enforced and the <token>applocker_moderna./Token> and <token>applocker_p./Token> rule collection does not contain any rules, no <token>applocker_modernap./Token> or <token>applocker_pk./Token> are allowed to run. To allow <token>applocker_modernap./Token> or <token>applocker_pk./Token>, you must create rules for the <token>applocker_moderna./Token> and <token>applocker_p./Token> rule collection.</para>
+          <para>When the rules for the executable rule  collection are enforced and the <token>applocker_modernapToken> and <token>applocker_pkToken> rule collection does not contain any rules, no <token>applocker_modernappToken> or <token>applocker_pkgToken> are allowed to run. To allow <token>applocker_modernappToken> or <token>applocker_pkgToken>, you must create rules for the <token>applocker_modernapToken> and <token>applocker_pkToken> rule collection.</para>
         </listItem>
         <listItem>
           <para>When an AppLocker rule collection is set to <ui>Audit only</ui>, the rules are not enforced. When a user runs an application that is included in the rule, the application is opened and runs normally, and information about that application is added to the AppLocker event log.</para>
@@ -658,7 +658,7 @@ ms.assetid: 40da294b-501b-4357-a047-a8ff391e0ca1
             </TD>
             <TD>
               <para>
-                <token>winblue_server./Token>, <token>win8_server./Token>, <token>winblue_client./Token> and <token>win8_client./Token></para>
+                <token>winblue_server_Token>, <token>win8_server_Token>, <token>winblue_client_Token> and <token>win8_client_Token></para>
             </TD>
           </tr>
         </thead>
@@ -816,5 +816,4 @@ ms.assetid: 40da294b-501b-4357-a047-a8ff391e0ca1
   </section>
   <relatedTopics/>
 </developerConceptualDocument>
-
 

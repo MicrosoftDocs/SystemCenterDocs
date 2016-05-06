@@ -11,15 +11,15 @@ ms.topic: article
 ms.assetid: 97cb90ee-bbaf-4b5f-8ca7-094c89c5e7ba
 ---
 # Performance Monitors
-Multiple kinds of calculations may be performed to determine the threshold for a performance monitor in [!INCLUDE[om12short](./Token/om12short_md.md)]. These threshold types are listed in the following table:
+Multiple kinds of calculations may be performed to determine the threshold for a performance monitor in [!INCLUDE[om12short](Token/om12short_md.md)]. These threshold types are listed in the following table:
 
 |Threshold Type|Number of States|Description|
 |------------------|--------------------|---------------|
-|[Average Threshold](./Performance-Monitors.md#AverageThreshold)|2|Compare the average of multiple collected values to a threshold.|
-|[Consecutive Samples](./Performance-Monitors.md#ConsecutiveSamples)|2|Compare several consecutive values to a threshold. All collected values must match the threshold criteria.|
-|[Delta Threshold](./Performance-Monitors.md#DeltaThreshold)|2|Compare the change between two consecutive values to a threshold.|
-|[Double Threshold](./Performance-Monitors.md#DoubleThreshold)|3|Compare a single collected value to two thresholds with one that indicates a Warning state and the other that indicates a Critical state.|
-|[Simple Threshold](./Performance-Monitors.md#SimpleThreshold)|2|Compare a single collected value to a threshold.|
+|[Average Threshold](Performance-Monitors.md#AverageThreshold)|2|Compare the average of multiple collected values to a threshold.|
+|[Consecutive Samples](Performance-Monitors.md#ConsecutiveSamples)|2|Compare several consecutive values to a threshold. All collected values must match the threshold criteria.|
+|[Delta Threshold](Performance-Monitors.md#DeltaThreshold)|2|Compare the change between two consecutive values to a threshold.|
+|[Double Threshold](Performance-Monitors.md#DoubleThreshold)|3|Compare a single collected value to two thresholds with one that indicates a Warning state and the other that indicates a Critical state.|
+|[Simple Threshold](Performance-Monitors.md#SimpleThreshold)|2|Compare a single collected value to a threshold.|
 
 Each kind of logic is described in detail in the following sections:
 

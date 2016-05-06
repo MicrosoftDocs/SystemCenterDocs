@@ -62,7 +62,7 @@ ms.assetid: 3595e4ee-3841-43c0-8211-b53470203190
             <para>Different administrative credentials are required to perform this procedure, depending on your environment:</para>
             <list class="bullet">
               <listItem>
-                <para>If you create new software restriction policies for your local computer: <token>mingrp_admin./Token></para>
+                <para>If you create new software restriction policies for your local computer: <token>mingrp_adminToken></para>
               </listItem>
               <listItem>
                 <para>If you create new software restriction policies for a computer that is joined to a domain, members of the Domain Admins group can perform this procedure. </para>
@@ -132,7 +132,7 @@ ms.assetid: 3595e4ee-3841-43c0-8211-b53470203190
             <para>Different administrative credentials are required to perform this procedure, depending on the environment in which you add or delete a designated file type:  </para>
             <list class="bullet">
               <listItem>
-                <para>If you add or delete a designated file type for your local computer: <token>mingrp_admin./Token></para>
+                <para>If you add or delete a designated file type for your local computer: <token>mingrp_adminToken></para>
               </listItem>
               <listItem>
                 <para>If you create new software restriction policies for a computer that is joined to a domain, you must be a member of the Domain Admins group. </para>
@@ -176,7 +176,7 @@ ms.assetid: 3595e4ee-3841-43c0-8211-b53470203190
         <list class="bullet">
           <listItem>
             <para>
-              <token>mingrp_admin./Token>
+              <token>mingrp_adminToken>
             </para>
           </listItem>
           <listItem>
@@ -591,7 +591,7 @@ ms.assetid: 3595e4ee-3841-43c0-8211-b53470203190
                   <step>
                     <content>
                       <para>
-                        <token>winblue_star./Token> <userInputLocalizable>gpedit.msc</userInputLocalizable> and then press ENTER.</para>
+                        <token>winblue_starToken> <userInputLocalizable>gpedit.msc</userInputLocalizable> and then press ENTER.</para>
                     </content>
                   </step>
                   <step>
@@ -652,7 +652,7 @@ ms.assetid: 3595e4ee-3841-43c0-8211-b53470203190
                   <step>
                     <content>
                       <para>
-                        <token>winblue_star./Token> <userInputLocalizable>gpedit.msc</userInputLocalizable>, and then press ENTER.</para>
+                        <token>winblue_starToken> <userInputLocalizable>gpedit.msc</userInputLocalizable>, and then press ENTER.</para>
                     </content>
                   </step>
                   <step>
@@ -910,7 +910,7 @@ ms.assetid: 3595e4ee-3841-43c0-8211-b53470203190
               <step>
                 <content>
                   <para>
-                    <token>winblue_star./Token> <userInput>regedit</userInput>. </para>
+                    <token>winblue_starToken> <userInput>regedit</userInput>. </para>
                 </content>
               </step>
               <step>

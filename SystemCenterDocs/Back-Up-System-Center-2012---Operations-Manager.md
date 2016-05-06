@@ -8,10 +8,10 @@ ms.topic: article
 ms.assetid: 0e167527-3dac-4153-8845-9280eff8da5c
 ---
 # Back Up System Center 2012 - Operations Manager
-To preserve data in case of a failure, you must have a recent backup of [!INCLUDE[om12long](./Token/om12long_md.md)] databases and other important data as listed in this topic.
+To preserve data in case of a failure, you must have a recent backup of [!INCLUDE[om12long](Token/om12long_md.md)] databases and other important data as listed in this topic.
 
 ## Data to Back Up
-To ensure your ability to correctly preserve and restore your [!INCLUDE[om12short](./Token/om12short_md.md)] environment, you should back up the following key items:
+To ensure your ability to correctly preserve and restore your [!INCLUDE[om12short](Token/om12short_md.md)] environment, you should back up the following key items:
 
 -   Operational database, data warehouse database, and the Audit Collection Services \(ACS\) database
 

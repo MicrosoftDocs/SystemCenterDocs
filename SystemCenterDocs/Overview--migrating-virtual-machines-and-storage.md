@@ -8,7 +8,7 @@ ms.topic: article
 ms.assetid: 475c98de-5ea0-49f4-b739-adb6c1746ffd
 ---
 # Overview: migrating virtual machines and storage
-[!INCLUDE[vmm12sp1_long](./Token/vmm12sp1_long_md.md)] supports the following types of migration:
+[!INCLUDE[vmm12sp1_long](Token/vmm12sp1_long_md.md)] supports the following types of migration:
 
 -   **Network migration**—This is the slowest type of migration and performs a network copy of the virtual machine data using BITS. The amount of downtime is in direct proportion to the size of the data transfer.
 
@@ -26,10 +26,10 @@ ms.assetid: 475c98de-5ea0-49f4-b739-adb6c1746ffd
 
 -   **Live migration**—This type of migration moves a virtual machine running as part of a failover cluster from one cluster to another with no noticeable downtime for users or network applications.
 
-[!INCLUDE[vmm12short](./Token/vmm12short_md.md)] automatically selects the type of transfer that will be used for migration. When you perform a migration in the [!INCLUDE[vmm12short](./Token/vmm12short_md.md)] console using the Migrate VM Wizard, the migration type that will be used is displayed in the Transfer Type column.
+[!INCLUDE[vmm12short](Token/vmm12short_md.md)] automatically selects the type of transfer that will be used for migration. When you perform a migration in the [!INCLUDE[vmm12short](Token/vmm12short_md.md)] console using the Migrate VM Wizard, the migration type that will be used is displayed in the Transfer Type column.
 
 ## Live migration features
-[!INCLUDE[vmm12short](./Token/vmm12short_md.md)] provides a number of live migration features based on migration capabilities introduced in [!INCLUDE[win8_server_2](./Token/win8_server_2_md.md)]. These features include:
+[!INCLUDE[vmm12short](Token/vmm12short_md.md)] provides a number of live migration features based on migration capabilities introduced in [!INCLUDE[win8_server_2](Token/win8_server_2_md.md)]. These features include:
 
 -   Live migration outside a cluster—In addition to performing live migration within a cluster, you can perform live migration between two standalone computers that are not cluster nodes.
 
@@ -41,7 +41,7 @@ ms.assetid: 475c98de-5ea0-49f4-b739-adb6c1746ffd
 
 -   Concurrent live migration— You can perform multiple concurrent live migrations of virtual machines and storage. The concurrent limit can be configured manually. Any concurrent live migrations in excess of the limit will be queued.
 
-[!INCLUDE[vmm12short](./Token/vmm12short_md.md)] inspects and validates the configuration settings of a destination host before migration from a source host begins.
+[!INCLUDE[vmm12short](Token/vmm12short_md.md)] inspects and validates the configuration settings of a destination host before migration from a source host begins.
 
 ### Business benefits
 The live migration features provide a number of business benefits:
@@ -52,7 +52,7 @@ The live migration features provide a number of business benefits:
 
 -   **Better hardware utilization**—The distribution of virtual machines can be optimized across the infrastructure. Virtual machines and storage can be moved to stand\-alone servers and clusters with spare capacity, without interrupting availability. Power consumption is reduced as virtual machines can be moved across hosts, and then hosts can be powered down to save energy.
 
--   **Failover clustering features**—[!INCLUDE[vmm12short](./Token/vmm12short_md.md)] takes advantage of failover clustering features that were introduced in [!INCLUDE[win8_server_2](./Token/win8_server_2_md.md)]. These features include additional APIs to migrate virtual machines across cluster nodes, and improved attach\/detach functionality that enables migration of virtual machines in and out of failover clusters without downtime.
+-   **Failover clustering features**—[!INCLUDE[vmm12short](Token/vmm12short_md.md)] takes advantage of failover clustering features that were introduced in [!INCLUDE[win8_server_2](Token/win8_server_2_md.md)]. These features include additional APIs to migrate virtual machines across cluster nodes, and improved attach\/detach functionality that enables migration of virtual machines in and out of failover clusters without downtime.
 
 ### Virtual machine live migration support
 The following table summarizes the support matrix for live migration of virtual machines.
@@ -78,7 +78,7 @@ Note the following requirements and limitations when performing a live migration
 
 -   Live migration requires two or more servers that run Hyper\-V, that support hardware virtualization, and use processors from the same manufacturer, such as all AMD processors or all Intel processors, for example.
 
--   Live migration is supported starting with hosts running [!INCLUDE[win8_server_2](./Token/win8_server_2_md.md)]. There is no backward compatibility to support migration between hosts that run [!INCLUDE[nextref_server_7](./Token/nextref_server_7_md.md)] and [!INCLUDE[win8_server_2](./Token/win8_server_2_md.md)].
+-   Live migration is supported starting with hosts running [!INCLUDE[win8_server_2](Token/win8_server_2_md.md)]. There is no backward compatibility to support migration between hosts that run [!INCLUDE[nextref_server_7](Token/nextref_server_7_md.md)] and [!INCLUDE[win8_server_2](Token/win8_server_2_md.md)].
 
 -   Virtual machines must be configured to use virtual hard disks or virtual Fibre Channel disks, not physical disks.
 
@@ -115,13 +115,13 @@ You can perform a live VSM to migrate both a virtual machine, and the virtual ma
 
 -   To use live VSM, the virtual machine LUN must be masked from the destination host.
 
--   Live VSM is supported between two stand\-alone hosts that run Hyper\-V, starting with [!INCLUDE[win8_server_2](./Token/win8_server_2_md.md)]. The transfer can occur between local disks or SMB 3.0 file shares.
+-   Live VSM is supported between two stand\-alone hosts that run Hyper\-V, starting with [!INCLUDE[win8_server_2](Token/win8_server_2_md.md)]. The transfer can occur between local disks or SMB 3.0 file shares.
 
--   Live VSM is supported between two host clusters that run Hyper\-V, starting with [!INCLUDE[win8_server_2](./Token/win8_server_2_md.md)]. The virtual machine can be transferred to either a CSV or SMB 3.0 file share on the destination host cluster.
+-   Live VSM is supported between two host clusters that run Hyper\-V, starting with [!INCLUDE[win8_server_2](Token/win8_server_2_md.md)]. The virtual machine can be transferred to either a CSV or SMB 3.0 file share on the destination host cluster.
 
 ## See Also
-[Migrating virtual machines and storage in VMM](./Migrating-virtual-machines-and-storage-in-VMM.md)
+[Migrating virtual machines and storage in VMM](Migrating-virtual-machines-and-storage-in-VMM.md)
 [Managing Virtual Machines with VMM](Managing-virtual-machines-with-VMM.md)
-[Managing tenant resources with VMM](./Managing-tenant-resources-with-VMM.md)
+[Managing tenant resources with VMM](Managing-tenant-resources-with-VMM.md)
 
 

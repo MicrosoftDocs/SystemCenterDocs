@@ -15,7 +15,7 @@ ms.assetid: 1602145a-623d-49da-87e0-7c540486f8b4
 
 The **OLE DB Data Source** template lets you monitor the availability and performance of any database that can be accessed with OLE DB. One or more watcher nodes connect to the database to verify its availability and test its performance. The watcher nodes can test the connection to the database or measure the time taken to perform a particular query.
 
-The database can reside on any computer whether it has an agent for [!INCLUDE[om12short](./Token/om12short_md.md)] installed or not, but it must be accessible from the watcher nodes. Each watcher node must have an [!INCLUDE[om12short](./Token/om12short_md.md)] agent installed.
+The database can reside on any computer whether it has an agent for [!INCLUDE[om12short](Token/om12short_md.md)] installed or not, but it must be accessible from the watcher nodes. Each watcher node must have an [!INCLUDE[om12short](Token/om12short_md.md)] agent installed.
 
 ## Scenarios
 Use the **OLE DB Data Source** template in scenarios where applications rely on a database. You can either define a single watcher node to ensure that the database is accessible and responds to requests, or you can define each application server as a watcher node. The monitors that the template creates attempt to connect to the database from each location at the defined interval, and verify that each watcher node can connect successfully. In addition to validating the health of the database itself, any network connections and other required features between the watcher node and the database are also validated. You can use any number of watcher nodes, but it is typically most useful to select a sample that represents different environment or network segments.
@@ -43,7 +43,7 @@ Depending on your selections in the OLE DB Data Source Template wizard, the moni
 ## Viewing Monitoring Data
 All data collected by the **OLE DB Data Source** template is available in the **OLE DB Data Source State** view located in the **Synthetic Transaction** folder. In this view, an object represents each of the watcher nodes. The state of each object represents the worst state of the set of database monitors that are running on that node. If one or more of the nodes is shown with an error while at least one other node is healthy, it could indicate a problem with that particular node accessing the database, a network issue. If all of the nodes are unhealthy, it could indicate a problem with the database itself.
 
-You can view the state of the individual database monitors by opening the [!INCLUDE[om12short](./Token/om12short_md.md)] Health Explorer for each object. You can view performance data by opening the Performance view for each of these objects.
+You can view the state of the individual database monitors by opening the [!INCLUDE[om12short](Token/om12short_md.md)] Health Explorer for each object. You can view performance data by opening the Performance view for each of these objects.
 
 ## Wizard Options
 When you run the **OLE DB Data Source** template, you have to provide values for options in the following tables. Each table represents a single page in the wizard.
@@ -55,7 +55,7 @@ The following options are available on the **General Options** page of the wizar
 |----------|---------------|
 |Name|The name used for the monitoring wizard. This name is displayed in the Operations console in the **OLE DB Data Source State** view.|
 |Description|Optional description of the monitor.|
-|Management Pack|Management pack to store the classes, monitors, and rules that the template created.<br /><br />For more information about management packs, see [Selecting a Management Pack File](./Selecting-a-Management-Pack-File.md).|
+|Management Pack|Management pack to store the classes, monitors, and rules that the template created.<br /><br />For more information about management packs, see [Selecting a Management Pack File](Selecting-a-Management-Pack-File.md).|
 
 ### Connection String
 The following options are available on the **Connection String** page of the wizard.
@@ -80,7 +80,7 @@ The following options are available on the **Watcher Nodes** page of the wizard.
 
 |Option|Description|
 |----------|---------------|
-|Select one or more agent\-managed computers|Specify one or more agent\-managed computers to run the monitor. For more information, see [Watcher Nodes](./Watcher-Nodes.md).|
+|Select one or more agent\-managed computers|Specify one or more agent\-managed computers to run the monitor. For more information, see [Watcher Nodes](Watcher-Nodes.md).|
 |Run this query every|The frequency to attempt the connection to the database and run the query, if specified.|
 
 ## Security Considerations
@@ -108,7 +108,7 @@ Simple authentication lets you connect to the database by using a simple name an
 
 5.  On the **General Properties** page, in the **Name** and **Description** boxes, type a name and an optional description.
 
-6.  Select a management pack in which to save the monitor, or click **New** to create a new management pack. For more information, see [Selecting a Management Pack File](./Selecting-a-Management-Pack-File.md).
+6.  Select a management pack in which to save the monitor, or click **New** to create a new management pack. For more information, see [Selecting a Management Pack File](Selecting-a-Management-Pack-File.md).
 
 7.  Click **Next**.
 
@@ -127,13 +127,13 @@ Simple authentication lets you connect to the database by using a simple name an
 
 13. Select the measurements that you want to monitor and set an error and warning threshold for each. Click **Next**.
 
-14. Select one or more [Watcher Nodes](./Watcher-Nodes.md) to run the monitor.
+14. Select one or more [Watcher Nodes](Watcher-Nodes.md) to run the monitor.
 
 15. Specify the frequency to run the monitor in the **Run this query** box. Click **Next**.
 
 16. Review the summary of the monitor, and then click **Create**.
 
-17. If a Run As account with credentials that have access to the database does not exist, create an appropriate Run As account in the **Administration** workspace. For more information, see [How to Create a Run As Account](./How-to-Create-a-Run-As-Account.md).
+17. If a Run As account with credentials that have access to the database does not exist, create an appropriate Run As account in the **Administration** workspace. For more information, see [How to Create a Run As Account](How-to-Create-a-Run-As-Account.md).
 
     > [!NOTE]
     > To create and modify a Run As account, you must have administrative credentials for the management group.
@@ -182,7 +182,7 @@ Simple authentication lets you connect to the database by using a simple name an
 3.  Use options in the **Actions** pane to modify the Performance view.
 
 ## See Also
-[Creating Management Pack Templates](./Creating-Management-Pack-Templates.md)
-[Watcher Nodes](./Watcher-Nodes.md)
+[Creating Management Pack Templates](Creating-Management-Pack-Templates.md)
+[Watcher Nodes](Watcher-Nodes.md)
 
 

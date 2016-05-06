@@ -8,22 +8,22 @@ ms.topic: article
 ms.assetid: 67d853ce-60c3-4e62-8a0c-2ae94f7bc4b2
 ---
 # Creating a new target_1
-There are multiple methods that you can use to create a new class that can be used as a target for monitors and rules in [!INCLUDE[om12long](./Token/om12long_md.md)]. You can use a separate tool such as [MP Author](http://www.mpauthor.com)that will allow you to directly create targets. Advanced authors can refer to the [Service Model](http://aka.ms/mpauthor#Service_Model) section of the [System Center Management Pack Authoring Guide](http://aka.ms/mpauthor) for detailed information on creating a complex class model for their application. This advanced information is not required though to create a basic class that can act as a target for monitors and rules specific to a particular application.
+There are multiple methods that you can use to create a new class that can be used as a target for monitors and rules in [!INCLUDE[om12long](Token/om12long_md.md)]. You can use a separate tool such as [MP Author](http://www.mpauthor.com)that will allow you to directly create targets. Advanced authors can refer to the [Service Model](http://aka.ms/mpauthor#Service_Model) section of the [System Center Management Pack Authoring Guide](http://aka.ms/mpauthor) for detailed information on creating a complex class model for their application. This advanced information is not required though to create a basic class that can act as a target for monitors and rules specific to a particular application.
 
 ## Management Pack Templates
 The following management pack templates in the Operations console create a class that can be used as a target for monitors and rules:
 
 ### Windows Service Template
-If your application has service a Windows installed on each server, then you should use the [Windows Service Template](./Windows-Service-Template.md). This will create a new class and discover an instance on all agent computers with the service installed. If any monitors or rules use this class as a target, then they will run on those same agents.
+If your application has service a Windows installed on each server, then you should use the [Windows Service Template](Windows-Service-Template.md). This will create a new class and discover an instance on all agent computers with the service installed. If any monitors or rules use this class as a target, then they will run on those same agents.
 
 ### Process Monitoring Template
-If your application does not have a Windows service but does have a process that is running on the agent computer, then you should use the [Process Monitoring Template](./Process-Monitoring-Template.md). This will create a new class and discover an instance on all computers in a specified group. If any monitors or rules use this class as a target, then they will run on those same agents.
+If your application does not have a Windows service but does have a process that is running on the agent computer, then you should use the [Process Monitoring Template](Process-Monitoring-Template.md). This will create a new class and discover an instance on all computers in a specified group. If any monitors or rules use this class as a target, then they will run on those same agents.
 
 ### Unix\/Linux Service
-If your application has a service on a Unix or Linux server, then you should use the [UNIX or Linux Process](./UNIX-or-Linux-Process.md) template. This will create a new class and discover an instance on all agent computers with the service installed.
+If your application has a service on a Unix or Linux server, then you should use the [UNIX or Linux Process](UNIX-or-Linux-Process.md) template. This will create a new class and discover an instance on all agent computers with the service installed.
 
 ## Simple class using Authoring Console
-The [System Center Operations Manager 2007 R2 Authoring Console](./Authoring-Tools.md#AuthoringConsole) is typically used by advanced users for custom management packs. It can be used though to create a simple class and discovery that you can then install in your management group and perform further authoring using the Operations console.
+The [System Center Operations Manager 2007 R2 Authoring Console](Authoring-Tools.md#AuthoringConsole) is typically used by advanced users for custom management packs. It can be used though to create a simple class and discovery that you can then install in your management group and perform further authoring using the Operations console.
 
 In addition to the class, you must create a discovery so that instances of the class can be created on agents where the application is installed. The Authoring Console provides a wizard that creates a discovery based on the Windows registry. This will allow you to specify criteria such as the name of a registry key. If the key is present, then the application is installed, and an instance of the class should be created.
 
@@ -106,8 +106,8 @@ In addition to the class, you must create a discovery so that instances of the c
 3.  Click **Connect**.
 
 ## See Also
-[Understanding Classes and Objects](./Understanding-Classes-and-Objects.md)
-[Selecting a target](./Selecting-a-target.md)
-[Management Pack Templates](./Management-Pack-Templates.md)
+[Understanding Classes and Objects](Understanding-Classes-and-Objects.md)
+[Selecting a target](Selecting-a-target.md)
+[Management Pack Templates](Management-Pack-Templates.md)
 
 

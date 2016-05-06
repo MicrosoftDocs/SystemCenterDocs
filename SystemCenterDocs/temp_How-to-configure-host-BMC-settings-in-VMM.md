@@ -10,11 +10,11 @@ ms.topic: article
 ms.assetid: 9ca3d2a4-3b04-463b-ab89-20bcadaca526
 ---
 # temp_How to configure host BMC settings in VMM
-If a computer is configured for out\-of\-band management through a Baseboard Management Controller \(BMC\), you can configure BMC settings through [!INCLUDE[vmm12sp1_long](./Token/vmm12sp1_long_md.md)] by using the procedure that follows.
+If a computer is configured for out\-of\-band management through a Baseboard Management Controller \(BMC\), you can configure BMC settings through [!INCLUDE[vmm12sp1_long](Token/vmm12sp1_long_md.md)] by using the procedure that follows.
 
-To control the computer through the BMC, see [Powering a computer on or off through VMM](./How-to-configure-computer-BMC-settings-in-VMM.md#BKMK_power), later in this topic.
+To control the computer through the BMC, see [Powering a computer on or off through VMM](How-to-configure-computer-BMC-settings-in-VMM.md#BKMK_power), later in this topic.
 
-The BMC settings are also used for power optimization, described in [Configuring dynamic optimization and power optimization in VMM](./Configuring-dynamic-optimization-and-power-optimization-in-VMM.md).
+The BMC settings are also used for power optimization, described in [Configuring dynamic optimization and power optimization in VMM](Configuring-dynamic-optimization-and-power-optimization-in-VMM.md).
 
 ## Prerequisites
 To complete this procedure, the host must have a BMC installed that supports one of the following out\-of\-band management protocols:
@@ -25,7 +25,7 @@ To complete this procedure, the host must have a BMC installed that supports one
 
 -   System Management Architecture for Server Hardware \(SMASH\) version 1.0 over WS\-Management \(WS\-Man\)
 
-You can create a Run As account before you begin the procedure, or during the procedure. The Run As account must have permissions to access the BMC. For example, the Run As account could be called **BMC Administrator**. For information, see [How to create a Run As account in VMM](./How-to-create-a-Run-As-account-in-VMM.md).
+You can create a Run As account before you begin the procedure, or during the procedure. The Run As account must have permissions to access the BMC. For example, the Run As account could be called **BMC Administrator**. For information, see [How to create a Run As account in VMM](How-to-create-a-Run-As-account-in-VMM.md).
 
 #### To configure BMC settings
 
@@ -49,7 +49,7 @@ You can create a Run As account before you begin the procedure, or during the pr
 
     3.  In the **BMC address** box, enter the IP address of the BMC.
 
-    4.  In the **BMC port** box, accept the default. [!INCLUDE[vmm12short](./Token/vmm12short_md.md)] automatically populates the box with the port number for the selected out\-of\-band management protocol.
+    4.  In the **BMC port** box, accept the default. [!INCLUDE[vmm12short](Token/vmm12short_md.md)] automatically populates the box with the port number for the selected out\-of\-band management protocol.
 
     5.  Next to the **Run As account** box, click **Browse**, click a Run As account that has permissions to access the BMC, and then click **OK**.
 
@@ -78,8 +78,8 @@ You can create a Run As account before you begin the procedure, or during the pr
     > -   On HP computers, after the System Event Log is full, logging of new events stops and BMC logs display older events only.
 
 ## See Also
-[Configuring Hyper-V host properties in VMM](./Configuring-Hyper-V-host-properties-in-VMM.md)
-[Managing VMware ESX hosts and vCenter servers with VMM](./Managing-VMware-ESX-hosts-and-vCenter-servers-with-VMM.md)
-[Managing Hyper-V hosts and host clusters with VMM](./Managing-Hyper-V-hosts-and-host-clusters-with-VMM.md)
+[Configuring Hyper-V host properties in VMM](Configuring-Hyper-V-host-properties-in-VMM.md)
+[Managing VMware ESX hosts and vCenter servers with VMM](Managing-VMware-ESX-hosts-and-vCenter-servers-with-VMM.md)
+[Managing Hyper-V hosts and host clusters with VMM](Managing-Hyper-V-hosts-and-host-clusters-with-VMM.md)
 
 

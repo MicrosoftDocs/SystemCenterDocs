@@ -8,7 +8,7 @@ ms.topic: article
 ms.assetid: d15e7313-dfba-4fdf-8146-c11db2ce2aee
 ---
 # Account Information for Operations Manager
-During the setup and operation of [!INCLUDE[om12long]./Token/om12long_md.md)], you are asked to provide credentials for several accounts. This section provides information about the various accounts and how to change the credentials or passwords for the accounts after a deployment.
+During the setup and operation of [!INCLUDE[om12long](Token/om12long_md.md)], you are asked to provide credentials for several accounts. This section provides information about the various accounts and how to change the credentials or passwords for the accounts after a deployment.
 
 -   [Action Accounts](assetId:///e95045fe-a88a-4f6c-9640-cb42a0ba63eb#BKMK_ActionAccount)
 
@@ -21,7 +21,7 @@ During the setup and operation of [!INCLUDE[om12long]./Token/om12long_md.md)], y
 -   [Data Reader Account](assetId:///e95045fe-a88a-4f6c-9640-cb42a0ba63eb#BKMK_DataReaderAccount)
 
 ## <a name="BKMK_ActionAccount"></a>Action Accounts
-The [!INCLUDE[om12short]./Token/om12short_md.md)] management server, gateway server, and agent, all contain a process called MonitoringHost.exe. MonitoringHost.exe is used to accomplish monitoring activities, such as running a monitor or a task. For example, when an agent subscribes to the event log to read events, it is the MonitoringHost.exe process that runs those activities. The account that a MonitoringHost.exe process runs as is called the action account. The action account for the MonitoringHost.exe process that is running on an agent is called the agent action account. The action account used by the MonitoringHost.exe process on a management server is called the management server action account. The action account used by the MonitoringHost.exe process on a gateway server is called the gateway server action account.
+The [!INCLUDE[om12short](Token/om12short_md.md)] management server, gateway server, and agent, all contain a process called MonitoringHost.exe. MonitoringHost.exe is used to accomplish monitoring activities, such as running a monitor or a task. For example, when an agent subscribes to the event log to read events, it is the MonitoringHost.exe process that runs those activities. The account that a MonitoringHost.exe process runs as is called the action account. The action account for the MonitoringHost.exe process that is running on an agent is called the agent action account. The action account used by the MonitoringHost.exe process on a management server is called the management server action account. The action account used by the MonitoringHost.exe process on a gateway server is called the gateway server action account.
 
 When you validate or change the default action account, you must ensure that the account you are using for your default Action Account is configured to be a **Role** member of the **ConfigServiceMonitoringUsers** database role.
 
@@ -51,7 +51,7 @@ Unless an action has been associated with a Run As profile, the credentials used
 MonitoringHost.exe is the process that runs these actions by using the credentials specified in the action account. A new instance of MonitoringHost.exe is created for each account.
 
 ### Using a Low\-Privileged Account
-When you install [!INCLUDE[om12short]./Token/om12short_md.md)], you can choose one of two options while assigning the action account:
+When you install [!INCLUDE[om12short](Token/om12short_md.md)], you can choose one of two options while assigning the action account:
 
 -   Local System
 
@@ -67,7 +67,7 @@ The default action account must have the following minimum privileges:
 
 -   Allow log\-on\-locally permission \(SetInteractiveLogonRight\)
 
-The minimum described above are the lowest privileges that [!INCLUDE[om12short]./Token/om12short_md.md)] supports for the action account. Other Run As accounts can have lower privileges. The actual privileges required for the Run As accounts depend on which management packs are running on the computer and how they are configured. For more information about which specific credentials are required, see the appropriate management pack guide.
+The minimum described above are the lowest privileges that [!INCLUDE[om12short](Token/om12short_md.md)] supports for the action account. Other Run As accounts can have lower privileges. The actual privileges required for the Run As accounts depend on which management packs are running on the computer and how they are configured. For more information about which specific credentials are required, see the appropriate management pack guide.
 
 Keep the following points in mind when choosing credentials for the agent action account:
 
@@ -97,7 +97,7 @@ When implementing discovery\-based agent deployment, you are prompted for an acc
 The Data Warehouse Write account writes data from the management server to the Reporting data warehouse and reads data from the operational database. The credentials that you supply for this account are made a member of the roles according to the application, as described in the following table.
 
 > [!NOTE]
-> For information about supported configurations for [!INCLUDE[om12long]./Token/om12long_md.md)], see [Supported Configurations for Operations Manager for System Center 2012](http://go.microsoft.com/fwlink/p/?LinkID=219650).
+> For information about supported configurations for [!INCLUDE[om12long](Token/om12long_md.md)], see [Supported Configurations for Operations Manager for System Center 2012](http://go.microsoft.com/fwlink/p/?LinkID=219650).
 
 |Application|Database\/Role|Role\/Account|
 |---------------|------------------|-----------------|
@@ -105,9 +105,9 @@ The Data Warehouse Write account writes data from the management server to the R
 |Supported versions of Microsoft SQL Server|Operational database|dwsync\_user|
 |Supported versions of Microsoft SQL Server|Data warehouse database|OpsMgrWriter|
 |Supported versions of Microsoft SQL Server|Data warehouse database|db\_owner|
-|[!INCLUDE[om12short]./Token/om12short_md.md)]|User role|Operations Manager Report Security Administrators account|
-|[!INCLUDE[om12short]./Token/om12short_md.md)]|Run As account|Data Warehouse Action account|
-|[!INCLUDE[om12short]./Token/om12short_md.md)]|Run As account|Data Warehouse Configuration Synchronization Reader account|
+|[!INCLUDE[om12short](Token/om12short_md.md)]|User role|Operations Manager Report Security Administrators account|
+|[!INCLUDE[om12short](Token/om12short_md.md)]|Run As account|Data Warehouse Action account|
+|[!INCLUDE[om12short](Token/om12short_md.md)]|Run As account|Data Warehouse Configuration Synchronization Reader account|
 
 If you change the password for the credentials that you entered for the Data Warehouse Write account, you have to make the same password changes for the following accounts:
 
@@ -121,15 +121,15 @@ This account is used to deploy reports, define what user the SQL Server Reportin
 The credentials that you supply for this account are made a member of the roles according to the application, as described in the following table.
 
 > [!NOTE]
-> For information about supported configurations for [!INCLUDE[om12long]./Token/om12long_md.md)], see [Supported Configurations for Operations Manager for System Center 2012](http://go.microsoft.com/fwlink/p/?LinkID=219650).
+> For information about supported configurations for [!INCLUDE[om12long](Token/om12long_md.md)], see [Supported Configurations for Operations Manager for System Center 2012](http://go.microsoft.com/fwlink/p/?LinkID=219650).
 
 |Application|Database\/Role|Role\/Account|
 |---------------|------------------|-----------------|
 |Supported versions of Microsoft SQL Server|Reporting server installation instance|Report Server Execution Account|
 |Supported versions of Microsoft SQL Server|Data warehouse database|OpsMgrReader|
-|[!INCLUDE[om12long]./Token/om12long_md.md)]|User role|Operations Manager Report Security Administrators|
-|[!INCLUDE[om12long]./Token/om12long_md.md)]|User role|Operation Manager Report Operators|
-|[!INCLUDE[om12long]./Token/om12long_md.md)]|Run As account|Data Warehouse Report Deployment account|
+|[!INCLUDE[om12long](Token/om12long_md.md)]|User role|Operations Manager Report Security Administrators|
+|[!INCLUDE[om12long](Token/om12long_md.md)]|User role|Operation Manager Report Operators|
+|[!INCLUDE[om12long](Token/om12long_md.md)]|Run As account|Data Warehouse Report Deployment account|
 |Internet Information Services \(IIS\)|Application pool|ReportServer$<INSTANCE>|
 |Windows Service|SQL Server Reporting Services|Log on account|
 
@@ -156,6 +156,5 @@ If you change the password for the credentials that you entered for the Data Rea
 -   [How to Change the Windows Service Account Password for the SQL Server Reporting Service](assetId:///63832555-006c-4b4c-b273-9107c6a87ff1)
 
 -   [How to Change the Run As Account Associated with a Run As Profile](assetId:///76b2c729-9ab5-458b-aafc-62c51eb77471)
-
 
 

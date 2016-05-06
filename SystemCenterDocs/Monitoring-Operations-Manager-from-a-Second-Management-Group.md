@@ -11,7 +11,7 @@ ms.topic: article
 ms.assetid: 4e16ee23-917d-4c0c-91c9-3ee9ebd64b7c
 ---
 # Monitoring Operations Manager from a Second Management Group
-Businesses using [!INCLUDE[om12long](./Token/om12long_md.md)] in multiple management groups sometimes want to monitor one management group from another management group. This topic provides some tips for monitoring one management group \(management group A\) from a second management group \(management group B\).
+Businesses using [!INCLUDE[om12long](Token/om12long_md.md)] in multiple management groups sometimes want to monitor one management group from another management group. This topic provides some tips for monitoring one management group \(management group A\) from a second management group \(management group B\).
 
 -   You can install an agent on management servers in management group A from management group B. If you install the agent manually, configure the agent to report to a management server in management group B.
 
@@ -24,17 +24,17 @@ Businesses using [!INCLUDE[om12long](./Token/om12long_md.md)] in multiple manage
 -   Ensure that the Run As accounts for the Default Action Account and Privileged Monitoring Account profiles for the management server in management group B are using credentials that can remotely authenticate and that have sufficient permissions on the management servers in management group A.
 
 ## See Also
-[Operations Manager Monitoring Scenarios](./Operations-Manager-Monitoring-Scenarios.md)
-[Integrating Active Directory and Operations Manager](./Integrating-Active-Directory-and-Operations-Manager.md)
-[Connecting Operations Manager With Other Management Systems](./Connecting-Operations-Manager-With-Other-Management-Systems.md)
-[Collecting Security Events Using Audit Collection Services in Operations Manager](./Collecting-Security-Events-Using-Audit-Collection-Services-in-Operations-Manager.md)
-[Monitoring UNIX and Linux Computers by Using Operations Manager](./Monitoring-UNIX-and-Linux-Computers-by-Using-Operations-Manager.md)
-[Monitoring .NET Applications](./Monitoring-.NET-Applications.md)
-[Monitoring Service Level Objectives by Using Operations Manager](./Monitoring-Service-Level-Objectives-by-Using-Operations-Manager.md)
-[Monitoring Networks by Using Operations Manager](./Monitoring-Networks-by-Using-Operations-Manager.md)
-[Monitoring Clusters by Using Operations Manager](./Monitoring-Clusters-by-Using-Operations-Manager.md)
-[Client Monitoring Using Agentless Exception Monitoring in Operations Manager](./Client-Monitoring-Using-Agentless-Exception-Monitoring-in-Operations-Manager.md)
-[Monitoring Across Untrusted Boundaries in Operations Manager](./Monitoring-Across-Untrusted-Boundaries-in-Operations-Manager.md)
-[Agentless Monitoring in Operations Manager](./Agentless-Monitoring-in-Operations-Manager.md)
+[Operations Manager Monitoring Scenarios](Operations-Manager-Monitoring-Scenarios.md)
+[Integrating Active Directory and Operations Manager](Integrating-Active-Directory-and-Operations-Manager.md)
+[Connecting Operations Manager With Other Management Systems](Connecting-Operations-Manager-With-Other-Management-Systems.md)
+[Collecting Security Events Using Audit Collection Services in Operations Manager](Collecting-Security-Events-Using-Audit-Collection-Services-in-Operations-Manager.md)
+[Monitoring UNIX and Linux Computers by Using Operations Manager](Monitoring-UNIX-and-Linux-Computers-by-Using-Operations-Manager.md)
+[Monitoring .NET Applications](Monitoring-.NET-Applications.md)
+[Monitoring Service Level Objectives by Using Operations Manager](Monitoring-Service-Level-Objectives-by-Using-Operations-Manager.md)
+[Monitoring Networks by Using Operations Manager](Monitoring-Networks-by-Using-Operations-Manager.md)
+[Monitoring Clusters by Using Operations Manager](Monitoring-Clusters-by-Using-Operations-Manager.md)
+[Client Monitoring Using Agentless Exception Monitoring in Operations Manager](Client-Monitoring-Using-Agentless-Exception-Monitoring-in-Operations-Manager.md)
+[Monitoring Across Untrusted Boundaries in Operations Manager](Monitoring-Across-Untrusted-Boundaries-in-Operations-Manager.md)
+[Agentless Monitoring in Operations Manager](Agentless-Monitoring-in-Operations-Manager.md)
 
 

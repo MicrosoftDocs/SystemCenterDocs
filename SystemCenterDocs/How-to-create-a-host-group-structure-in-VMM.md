@@ -8,7 +8,7 @@ ms.topic: article
 ms.assetid: a515169d-50f3-4b3f-add4-9dd7354e6208
 ---
 # How to create a host group structure in VMM
-You can use the following procedures to create a host group structure in [!INCLUDE[vmm12sp1_long](./Token/vmm12sp1_long_md.md)] that aligns to your organizational needs.
+You can use the following procedures to create a host group structure in [!INCLUDE[vmm12sp1_long](Token/vmm12sp1_long_md.md)] that aligns to your organizational needs.
 
 ### To create a host group structure
 
@@ -73,10 +73,10 @@ You can use the following procedures to create a host group structure in [!INCLU
     -   Click the host group that you want to move. On the **Folder** tab, in the **Actions** group, click **Move**. In the **Parent host group** list, click a parent host group, and then click **OK**.
 
 ## See Also
-[Overview: using host groups in VMM](./Overview--using-host-groups-in-VMM.md)
-[How to configure host group properties in VMM](./How-to-configure-host-group-properties-in-VMM.md)
-[Managing host groups in VMM](./Managing-host-groups-in-VMM.md)
-[Managing hosts and host clusters with VMM](./Managing-hosts-and-host-clusters-with-VMM.md)
-[Managing fabric resources with VMM](./Managing-fabric-resources-with-VMM.md)
+[Overview: using host groups in VMM](Overview--using-host-groups-in-VMM.md)
+[How to configure host group properties in VMM](How-to-configure-host-group-properties-in-VMM.md)
+[Managing host groups in VMM](Managing-host-groups-in-VMM.md)
+[Managing hosts and host clusters with VMM](Managing-hosts-and-host-clusters-with-VMM.md)
+[Managing fabric resources with VMM](Managing-fabric-resources-with-VMM.md)
 
 

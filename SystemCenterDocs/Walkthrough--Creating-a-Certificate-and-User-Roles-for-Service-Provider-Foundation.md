@@ -11,15 +11,15 @@ ms.topic: article
 ms.assetid: 1b546c86-2458-4449-87ee-e48b6be4228a
 ---
 # Walkthrough: Creating a Certificate and User Roles for Service Provider Foundation
-This walkthrough shows how to administer important tasks for managing both certificates and user roles in [!INCLUDE[spflong](./Token/spflong_md.md)]. To start, we show how to generate a self\-signed certificate if you are not already working with an issuer's signed certificate. Next, we show how to obtain the certificate's public key, and how to use that key to create the tenant in [!INCLUDE[spfshort](./Token/spfshort_md.md)] and user roles in [!INCLUDE[vmm12long](./Token/vmm12long_md.md)].
+This walkthrough shows how to administer important tasks for managing both certificates and user roles in [!INCLUDE[spflong](Token/spflong_md.md)]. To start, we show how to generate a self\-signed certificate if you are not already working with an issuer's signed certificate. Next, we show how to obtain the certificate's public key, and how to use that key to create the tenant in [!INCLUDE[spfshort](Token/spfshort_md.md)] and user roles in [!INCLUDE[vmm12long](Token/vmm12long_md.md)].
 
 This walkthrough is organized into the following sections and procedures. The procedures are designed to be performed sequentially, although they contain the information that you need to run them individually as needed. These procedures are tasks for  the hoster administrator to perform.
 
 |Section|Procedures|
 |-----------|--------------|
-|[Create a certificate](./Walkthrough--Creating-a-Certificate-and-User-Roles-for-Service-Provider-Foundation.md#BMK_Cert)|[To create a self-signed certificate for a tenant](./Walkthrough--Creating-a-Certificate-and-User-Roles-for-Service-Provider-Foundation.md#BMK_CreateCert)|
-|[Obtain and export keys](./Walkthrough--Creating-a-Certificate-and-User-Roles-for-Service-Provider-Foundation.md#BMK_Keys)|[To export the public key](./Walkthrough--Creating-a-Certificate-and-User-Roles-for-Service-Provider-Foundation.md#BMK_ExportPublic)<br />[To export the private key](./Walkthrough--Creating-a-Certificate-and-User-Roles-for-Service-Provider-Foundation.md#BMK_ExportPrivate)<br />[To obtain the public key in Windows PowerShell](./Walkthrough--Creating-a-Certificate-and-User-Roles-for-Service-Provider-Foundation.md#BMK_ObtainKey)|
-|[Create the tenant and its user roles](./Walkthrough--Creating-a-Certificate-and-User-Roles-for-Service-Provider-Foundation.md#BMK_Role)|[To create a tenant with the certificate's public key](./Walkthrough--Creating-a-Certificate-and-User-Roles-for-Service-Provider-Foundation.md#BMK_CreateTenant)<br />[To create a tenant administrator role in VMM](./Walkthrough--Creating-a-Certificate-and-User-Roles-for-Service-Provider-Foundation.md#BMK_CreateTARole)<br />[To create a tenant self-service user role](./Walkthrough--Creating-a-Certificate-and-User-Roles-for-Service-Provider-Foundation.md#BMK_CreateSSU)|
+|[Create a certificate](Walkthrough--Creating-a-Certificate-and-User-Roles-for-Service-Provider-Foundation.md#BMK_Cert)|[To create a self-signed certificate for a tenant](Walkthrough--Creating-a-Certificate-and-User-Roles-for-Service-Provider-Foundation.md#BMK_CreateCert)|
+|[Obtain and export keys](Walkthrough--Creating-a-Certificate-and-User-Roles-for-Service-Provider-Foundation.md#BMK_Keys)|[To export the public key](Walkthrough--Creating-a-Certificate-and-User-Roles-for-Service-Provider-Foundation.md#BMK_ExportPublic)<br />[To export the private key](Walkthrough--Creating-a-Certificate-and-User-Roles-for-Service-Provider-Foundation.md#BMK_ExportPrivate)<br />[To obtain the public key in Windows PowerShell](Walkthrough--Creating-a-Certificate-and-User-Roles-for-Service-Provider-Foundation.md#BMK_ObtainKey)|
+|[Create the tenant and its user roles](Walkthrough--Creating-a-Certificate-and-User-Roles-for-Service-Provider-Foundation.md#BMK_Role)|[To create a tenant with the certificate's public key](Walkthrough--Creating-a-Certificate-and-User-Roles-for-Service-Provider-Foundation.md#BMK_CreateTenant)<br />[To create a tenant administrator role in VMM](Walkthrough--Creating-a-Certificate-and-User-Roles-for-Service-Provider-Foundation.md#BMK_CreateTARole)<br />[To create a tenant self-service user role](Walkthrough--Creating-a-Certificate-and-User-Roles-for-Service-Provider-Foundation.md#BMK_CreateSSU)|
 
 ## <a name="BMK_Cert"></a>Create a certificate
 The following procedure describes how to create a certificate for a tenant by using [makecert.exe \(Certificate Creation Tool\)](assetId:///b0343f8e-9c41-4852-a85c-f8a0c408cf0d).
@@ -43,11 +43,11 @@ The following procedure describes how to create a certificate for a tenant by us
 2.  In the **certmgr** window, click **Certificates \- Current User**, open the **Personal** folder, and then open the **Certificates** folder to view the certificate that you just generated.
 
 ## <a name="BMK_Keys"></a>Obtain and export keys
-The procedures in this section show how to export public and private keys from certificate files. You associate a public key with a tenant in [!INCLUDE[spfshort](./Token/spfshort_md.md)] to later validate claims made, or made on behalf of, a tenant. This section includes a procedure that shows how to obtain the public key directly in your PowerShell session.
+The procedures in this section show how to export public and private keys from certificate files. You associate a public key with a tenant in [!INCLUDE[spfshort](Token/spfshort_md.md)] to later validate claims made, or made on behalf of, a tenant. This section includes a procedure that shows how to obtain the public key directly in your PowerShell session.
 
 ### <a name="BMK_ExportPublic"></a>To export the public key
 
-1.  Open your **certificates** folder to view the certificate as described in the [To access the certificate that you created](./Walkthrough--Creating-a-Certificate-and-User-Roles-for-Service-Provider-Foundation.md#BMK_AccessCert) procedure.
+1.  Open your **certificates** folder to view the certificate as described in the [To access the certificate that you created](Walkthrough--Creating-a-Certificate-and-User-Roles-for-Service-Provider-Foundation.md#BMK_AccessCert) procedure.
 
 2.  Right\-click the certificate, click **All Tasks**, and then click **Export**.
 
@@ -61,7 +61,7 @@ The procedures in this section show how to export public and private keys from c
 
 ### <a name="BMK_ExportPrivate"></a>To export the private key
 
-1.  Open your **certificates** folder to view the certificate as described in the [To access the certificate that you created](./Walkthrough--Creating-a-Certificate-and-User-Roles-for-Service-Provider-Foundation.md#BMK_AccessCert) procedure.
+1.  Open your **certificates** folder to view the certificate as described in the [To access the certificate that you created](Walkthrough--Creating-a-Certificate-and-User-Roles-for-Service-Provider-Foundation.md#BMK_AccessCert) procedure.
 
 2.  Right\-click the certificate, click **All Tasks**, and then click **Export**.
 
@@ -79,7 +79,7 @@ The procedures in this section show how to export public and private keys from c
 
 ### <a name="BMK_ObtainKey"></a>To obtain the public key in Windows PowerShell
 
-1.  You can obtain the public key directly from an exported public key certificate file \(.CER\) by using the .NET Framework cryptography classes. Run the following commands to obtain the key from the certificate's public key file that you exported in the [To export the public key](./Walkthrough--Creating-a-Certificate-and-User-Roles-for-Service-Provider-Foundation.md#BMK_ExportPublic) procedure.
+1.  You can obtain the public key directly from an exported public key certificate file \(.CER\) by using the .NET Framework cryptography classes. Run the following commands to obtain the key from the certificate's public key file that you exported in the [To export the public key](Walkthrough--Creating-a-Certificate-and-User-Roles-for-Service-Provider-Foundation.md#BMK_ExportPublic) procedure.
 
     ```
     PS C:\> $path = "C:\Temp\tenant4D.cer"
@@ -93,7 +93,7 @@ The procedures in this section show how to export public and private keys from c
     The next procedure uses the `$key` variable that you just created.
 
 ## <a name="BMK_Role"></a>Create the tenant and its user roles
-[!INCLUDE[spfshort](./Token/spfshort_md.md)] does not create user roles or define their scope \(such as clouds\), resources, or actions. Instead, the New\-SCSPFTenantUserRole cmdlet creates an association for a tenant with a user role name. When that association is created, it also generates an ID that can be used for the corresponding ID for creating the role in [!INCLUDE[vmm12med](./Token/vmm12med_md.md)].
+[!INCLUDE[spfshort](Token/spfshort_md.md)] does not create user roles or define their scope \(such as clouds\), resources, or actions. Instead, the New\-SCSPFTenantUserRole cmdlet creates an association for a tenant with a user role name. When that association is created, it also generates an ID that can be used for the corresponding ID for creating the role in [!INCLUDE[vmm12med](Token/vmm12med_md.md)].
 
 You can also create user roles by using the Admin OData protocol service that uses the [Service Provider Foundation Developer's Guide](http://go.microsoft.com/fwlink/p/?LinkID=263700).
 
@@ -101,7 +101,7 @@ You can also create user roles by using the Admin OData protocol service that us
 
 1.  Run the System Center 2012 Service Provider Foundation Command Shell as Administrator.
 
-2.  Enter the following command to create the tenant. This command assumes that the `$key` variable contains the public key as obtained from the [To obtain the public key in Windows PowerShell](./Walkthrough--Creating-a-Certificate-and-User-Roles-for-Service-Provider-Foundation.md#BMK_ObtainKey) procedure.
+2.  Enter the following command to create the tenant. This command assumes that the `$key` variable contains the public key as obtained from the [To obtain the public key in Windows PowerShell](Walkthrough--Creating-a-Certificate-and-User-Roles-for-Service-Provider-Foundation.md#BMK_ObtainKey) procedure.
 
     ```
     PS C:\> $tenant = New-SCSPFTenant -Name "contoso.cloudspace.com" -IssuerName "contoso.cloudspace.com" –Key $key
@@ -123,13 +123,13 @@ You can also create user roles by using the Admin OData protocol service that us
     PS C:\> Set-Executionpolicy remotesigned
     ```
 
-2.  Enter the following command to import the [!INCLUDE[vmm12sp1_med](./Token/vmm12sp1_med_md.md)] module:
+2.  Enter the following command to import the [!INCLUDE[vmm12sp1_med](Token/vmm12sp1_med_md.md)] module:
 
     ```
     PS C:\> Import-Module virtualmachinemanager
     ```
 
-3.  Use the Windows PowerShell T:Microsoft.SystemCenter.VirtualMachineManager.Cmdlets.New\-SCUserRole cmdlet to create the user role. This command assumes the `$tenant` variable was created as described in the [To create a tenant with the certificate's public key](./Walkthrough--Creating-a-Certificate-and-User-Roles-for-Service-Provider-Foundation.md#BMK_CreateTenant) procedure.
+3.  Use the Windows PowerShell T:Microsoft.SystemCenter.VirtualMachineManager.Cmdlets.New\-SCUserRole cmdlet to create the user role. This command assumes the `$tenant` variable was created as described in the [To create a tenant with the certificate's public key](Walkthrough--Creating-a-Certificate-and-User-Roles-for-Service-Provider-Foundation.md#BMK_CreateTenant) procedure.
 
     ```
     PS C:\> $TARole = New-SCUserRole -Name contoso.cloudspace.com -ID $tenant.Id -UserRoleProfile TenantAdmin
@@ -137,9 +137,9 @@ You can also create user roles by using the Admin OData protocol service that us
     ```
 
     > [!CAUTION]
-    > Note that if the user role was previously created by using the [!INCLUDE[vmm12short](./Token/vmm12short_md.md)] Administration Console, its permissions would be overwritten by those specified by the **New\-SCSUserRole** cmdlet.
+    > Note that if the user role was previously created by using the [!INCLUDE[vmm12short](Token/vmm12short_md.md)] Administration Console, its permissions would be overwritten by those specified by the **New\-SCSUserRole** cmdlet.
 
-4.  Verify that the user role was created by verifying that it is listed in the **User Roles** in **Settings** workspace in the [!INCLUDE[vmm12short](./Token/vmm12short_md.md)] Administration Console.
+4.  Verify that the user role was created by verifying that it is listed in the **User Roles** in **Settings** workspace in the [!INCLUDE[vmm12short](Token/vmm12short_md.md)] Administration Console.
 
 5.  Define the following for the role by selecting the role and clicking **Properties** on the toolbar:
 
@@ -155,27 +155,27 @@ You can also create user roles by using the Admin OData protocol service that us
 
 ### <a name="BMK_CreateSSU"></a>To create a tenant self\-service user role
 
-1.  Enter the following command to create a self\-service user in [!INCLUDE[spfshort](./Token/spfshort_md.md)] for the tenant you created in the [To create a tenant with the certificate's public key](./Walkthrough--Creating-a-Certificate-and-User-Roles-for-Service-Provider-Foundation.md#BMK_CreateTenant) procedure.
+1.  Enter the following command to create a self\-service user in [!INCLUDE[spfshort](Token/spfshort_md.md)] for the tenant you created in the [To create a tenant with the certificate's public key](Walkthrough--Creating-a-Certificate-and-User-Roles-for-Service-Provider-Foundation.md#BMK_CreateTenant) procedure.
 
     ```
     PS C:\> $TenantSSU = New-SCSPFTenantUserRole -Name ContosoCloudSpaceSSU -Tenant $tenant 
     ```
 
-2.  Create the corresponding tenant user role in [!INCLUDE[vmm12short](./Token/vmm12short_md.md)] by entering the following command:
+2.  Create the corresponding tenant user role in [!INCLUDE[vmm12short](Token/vmm12short_md.md)] by entering the following command:
 
     ```
     PS C:\> $vmmSSU = New-SCUserRole -Name ContosoCloudSpaceVMMSSU -UserRoleProfile SelfServiceUser -ParentUserRole $TARole -ID $TenantSSU.ID
 
     ```
 
-3.  Verify that the user role was created by verifying that it is listed in the **User Roles** in **Settings** workspace in the [!INCLUDE[vmm12short](./Token/vmm12short_md.md)] Administration Console. Notice that the parent of the role is the tenant administrator.
+3.  Verify that the user role was created by verifying that it is listed in the **User Roles** in **Settings** workspace in the [!INCLUDE[vmm12short](Token/vmm12short_md.md)] Administration Console. Notice that the parent of the role is the tenant administrator.
 
 Repeat this procedure as needed for the tenant.
 
 ## See Also
-[Manage Certificates and User Roles in Service Provider Foundation](./Manage-Certificates-and-User-Roles-in-Service-Provider-Foundation.md)
-[Administering Service Provider Foundation](./Administering-Service-Provider-Foundation.md)
-[Recommended Administrator Capabilities in Service Provider Foundation](./Recommended-Administrator-Capabilities-in-Service-Provider-Foundation.md)
-[Configuring Portals for Service Provider Foundation](./Configuring-Portals-for-Service-Provider-Foundation.md)
+[Manage Certificates and User Roles in Service Provider Foundation](Manage-Certificates-and-User-Roles-in-Service-Provider-Foundation.md)
+[Administering Service Provider Foundation](Administering-Service-Provider-Foundation.md)
+[Recommended Administrator Capabilities in Service Provider Foundation](Recommended-Administrator-Capabilities-in-Service-Provider-Foundation.md)
+[Configuring Portals for Service Provider Foundation](Configuring-Portals-for-Service-Provider-Foundation.md)
 
 

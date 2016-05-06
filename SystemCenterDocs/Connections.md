@@ -11,10 +11,10 @@ ms.topic: article
 ms.assetid: d82d70df-2de2-4d1f-9e9d-a033af8e6b05
 ---
 # Connections
-An [!INCLUDE[sma_2](./Token/sma_2_md.md)] Connection contains the information required to connect to a service or application from a runbook.  This information is defined in the module for the application and typically includes such information as the username and password and the computer to connect to.  Other information may also be required such as a certificate or a subscription Id.  The properties for a connection are stored securely in the [!INCLUDE[sma_2](./Token/sma_2_md.md)] database and can be accessed in the runbook with the **Get\-AutomationConnection** activity.
+An [!INCLUDE[sma_2](Token/sma_2_md.md)] Connection contains the information required to connect to a service or application from a runbook.  This information is defined in the module for the application and typically includes such information as the username and password and the computer to connect to.  Other information may also be required such as a certificate or a subscription Id.  The properties for a connection are stored securely in the [!INCLUDE[sma_2](Token/sma_2_md.md)] database and can be accessed in the runbook with the **Get\-AutomationConnection** activity.
 
 ## Windows PowerShell Cmdlets
-The cmdlets in the following table are used to create and manage credentials with Windows PowerShell in [!INCLUDE[sma_1](./Token/sma_1_md.md)].
+The cmdlets in the following table are used to create and manage credentials with Windows PowerShell in [!INCLUDE[sma_1](Token/sma_1_md.md)].
 
 |Cmdlets|Description|
 |-----------|---------------|

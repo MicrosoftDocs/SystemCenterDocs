@@ -8,16 +8,16 @@ ms.topic: article
 ms.assetid: 46590533-fa87-40b9-b440-de2a70bf1511
 ---
 # Variables_1
-When building runbooks in [!INCLUDE[orchlong](./Token/orchlong_md.md)], some settings are the same across activities. Variables let you specify a value that activities use in any runbook.
+When building runbooks in [!INCLUDE[orchlong](Token/orchlong_md.md)], some settings are the same across activities. Variables let you specify a value that activities use in any runbook.
 
 > [!IMPORTANT]
 > The access permissions for variables can be modified, but the runbook server does not enforce these permissions.
 
 > [!IMPORTANT]
-> Be aware that in [!INCLUDE[orchshort](./Token/orchshort_md.md)], variables that reference system variables, for example **%ProgramFiles%**, return values from a 32\-bit runtime environment. This is because [!INCLUDE[orchshort](./Token/orchshort_md.md)] is a 32\-bit application.
+> Be aware that in [!INCLUDE[orchshort](Token/orchshort_md.md)], variables that reference system variables, for example **%ProgramFiles%**, return values from a 32\-bit runtime environment. This is because [!INCLUDE[orchshort](Token/orchshort_md.md)] is a 32\-bit application.
 
 > [!NOTE]
-> [!INCLUDE[orchshort](./Token/orchshort_md.md)] does not support moving multiple variables with multiple\-selection. To move more than one variable to another folder, you must move each variable individually.
+> [!INCLUDE[orchshort](Token/orchshort_md.md)] does not support moving multiple variables with multiple\-selection. To move more than one variable to another folder, you must move each variable individually.
 
 Use the following procedures to create, insert, and organize variables.
 
@@ -40,7 +40,7 @@ Use the following procedures to create, insert, and organize variables.
 7.  Click **Finish**.
 
 > [!IMPORTANT]
-> [!INCLUDE[orchlong](./Token/orchlong_md.md)] does not let you combine an encrypted variable with plain text as a parameter value in a runbook.
+> [!INCLUDE[orchlong](Token/orchlong_md.md)] does not let you combine an encrypted variable with plain text as a parameter value in a runbook.
 
 ### To insert a variable in an activity
 
@@ -70,6 +70,6 @@ You can specify special formats of variables to provide dynamic information to y
 **%ENVVAR%**: This variable returns the value of the environment variable between the percent \(%\) symbols. The environment variable is based on the runbook server computer where the runbook is running, and it is not case\-sensitive. All system variables can be resolved. Any user variables are resolved in the context of the service account on the runbook server. If the environment variable does not exist, the text specified within the variable is returned as\-is \(that is, if you type %ENVVAR% and no environment variable named ENVVAR exists, the text ‘%ENVVAR%’ is returned\).
 
 ## See Also
-[Data Manipulation](./Data-Manipulation.md)
+[Data Manipulation](Data-Manipulation.md)
 
 

@@ -11,7 +11,7 @@ ms.topic: article
 ms.assetid: 1e050ac1-20d7-44e5-97a5-45b245a4f9ee
 ---
 # Back up and restore workloads in workgroups and untrusted domains
-[!INCLUDE[dpm2012long](./Token/dpm2012long_md.md)] can protect computers that are in untrusted domains or workgroups. You can authenticate these computers using a local user account \(NTLM authentication\), or using certificates. You set up protection as follows:
+[!INCLUDE[dpm2012long](Token/dpm2012long_md.md)] can protect computers that are in untrusted domains or workgroups. You can authenticate these computers using a local user account \(NTLM authentication\), or using certificates. You set up protection as follows:
 
 1.  **Install a certificate**—If you want to use certificate authentication install a certificate on the DPM server and on the computer you want to protect.
 
@@ -23,9 +23,9 @@ ms.assetid: 1e050ac1-20d7-44e5-97a5-45b245a4f9ee
 
 Before you started check the supported protection scenarios in the table below. Then follow the instructions depending which type of authentication you want to use:
 
--   [Set up protection with NTLM authentication](./Set-up-protection-with-NTLM-authentication.md)
+-   [Set up protection with NTLM authentication](Set-up-protection-with-NTLM-authentication.md)
 
--   [Set up protection with certificate authentication](./Set-up-protection-with-certificate-authentication.md)
+-   [Set up protection with certificate authentication](Set-up-protection-with-certificate-authentication.md)
 
 ## Supported protection scenarios
 

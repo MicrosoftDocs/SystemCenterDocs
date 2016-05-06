@@ -8,16 +8,16 @@ ms.topic: article
 ms.assetid: 7f6dd371-2b40-4e1c-85e9-ab229d30ddca
 ---
 # How to share resources as a self-service user in VMM
-If you are a self\-service user in [!INCLUDE[vmm12sp1_long](./Token/vmm12sp1_long_md.md)], you can use the following procedure to share resources. Before you can share the resources, you must own the resources, and an administrator in [!INCLUDE[vmm12short](./Token/vmm12short_md.md)] must assign the **Share** action to your self\-service user role in [!INCLUDE[vmm12short](./Token/vmm12short_md.md)]. The administrator must also assign the **Receive** action to the self\-service user with whom you want to share resources.
+If you are a self\-service user in [!INCLUDE[vmm12sp1_long](Token/vmm12sp1_long_md.md)], you can use the following procedure to share resources. Before you can share the resources, you must own the resources, and an administrator in [!INCLUDE[vmm12short](Token/vmm12short_md.md)] must assign the **Share** action to your self\-service user role in [!INCLUDE[vmm12short](Token/vmm12short_md.md)]. The administrator must also assign the **Receive** action to the self\-service user with whom you want to share resources.
 
-When the necessary steps have been taken by the administrator in [!INCLUDE[vmm12short](./Token/vmm12short_md.md)], you can share resources that you own with other members of your self\-service user role. You can also share with everyone in another self\-service user role, or with an individual member of another self\-service user role. For example, if you are a member of a self\-service user role called “Application Developers,” you might share your service template with everyone in a self\-service user role called “Application Testers.”
+When the necessary steps have been taken by the administrator in [!INCLUDE[vmm12short](Token/vmm12short_md.md)], you can share resources that you own with other members of your self\-service user role. You can also share with everyone in another self\-service user role, or with an individual member of another self\-service user role. For example, if you are a member of a self\-service user role called “Application Developers,” you might share your service template with everyone in a self\-service user role called “Application Testers.”
 
-If you are an administrator and want enable to resource sharing between self\-service user roles in [!INCLUDE[vmm12short](./Token/vmm12short_md.md)], see [How to enable self-service users to share resources in VMM](./How-to-enable-self-service-users-to-share-resources-in-VMM.md).
+If you are an administrator and want enable to resource sharing between self\-service user roles in [!INCLUDE[vmm12short](Token/vmm12short_md.md)], see [How to enable self-service users to share resources in VMM](How-to-enable-self-service-users-to-share-resources-in-VMM.md).
 
 > [!NOTE]
 > This procedure also can be performed by administrators. The **Access** tab for a resource lists resources that self\-service user roles can access either through sharing or through assignment. To perform this procedure, a delegated administrator must have the resource and the self\-service user role in the scope of their user role. After an administrator assigns a resource to a self\-service user role, the resource is added to the **Resources** tab of the self\-service user role.
 
-### To share a resource as a self\-service user in [!INCLUDE[vmm12short](./Token/vmm12short_md.md)]
+### To share a resource as a self\-service user in [!INCLUDE[vmm12short](Token/vmm12short_md.md)]
 
 1.  Open the **Library** workspace.
 
@@ -46,7 +46,7 @@ If you are an administrator and want enable to resource sharing between self\-se
 6.  Click **OK** to save the updated properties.
 
 ## See Also
-[Managing a self-service environment for tenants](./Managing-a-self-service-environment-for-tenants.md)
-[Managing tenant resources with VMM](./Managing-tenant-resources-with-VMM.md)
+[Managing a self-service environment for tenants](Managing-a-self-service-environment-for-tenants.md)
+[Managing tenant resources with VMM](Managing-tenant-resources-with-VMM.md)
 
 

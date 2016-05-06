@@ -11,20 +11,20 @@ ms.topic: article
 ms.assetid: 4d59ad7c-5206-4cd8-878d-c0520ca96eae
 ---
 # Set up secondary servers
-The main [!INCLUDE[dpm2012short](./Token/dpm2012short_md.md)] server that protects data sources directly is known as the primary [!INCLUDE[dpm2012short](./Token/dpm2012short_md.md)] server. A primary server can be protected by another [!INCLUDE[dpm2012short](./Token/dpm2012short_md.md)] server known as the secondary [!INCLUDE[dpm2012short](./Token/dpm2012short_md.md)] server. The secondary [!INCLUDE[dpm2012short](./Token/dpm2012short_md.md)] server protects the databases and the replicas on the primary [!INCLUDE[dpm2012short](./Token/dpm2012short_md.md)] server, and provides recovery if your primary DPM server fails. Note that a [!INCLUDE[dpm2012short](./Token/dpm2012short_md.md)] server can act as both a primary server protecting data sources, and as a secondary server providing protection to a primary [!INCLUDE[dpm2012short](./Token/dpm2012short_md.md)] server.
+The main [!INCLUDE[dpm2012short](Token/dpm2012short_md.md)] server that protects data sources directly is known as the primary [!INCLUDE[dpm2012short](Token/dpm2012short_md.md)] server. A primary server can be protected by another [!INCLUDE[dpm2012short](Token/dpm2012short_md.md)] server known as the secondary [!INCLUDE[dpm2012short](Token/dpm2012short_md.md)] server. The secondary [!INCLUDE[dpm2012short](Token/dpm2012short_md.md)] server protects the databases and the replicas on the primary [!INCLUDE[dpm2012short](Token/dpm2012short_md.md)] server, and provides recovery if your primary DPM server fails. Note that a [!INCLUDE[dpm2012short](Token/dpm2012short_md.md)] server can act as both a primary server protecting data sources, and as a secondary server providing protection to a primary [!INCLUDE[dpm2012short](Token/dpm2012short_md.md)] server.
 
 ## Set up secondary protection
 You can back up a primary DPM server using a secondary DPM server as follows:
 
-1.  Install the DPM protection agent on each primary [!INCLUDE[dpm2012short](./Token/dpm2012short_md.md)] server that you want to protect. No restart is required.
+1.  Install the DPM protection agent on each primary [!INCLUDE[dpm2012short](Token/dpm2012short_md.md)] server that you want to protect. No restart is required.
 
-2.  Add the primary [!INCLUDE[dpm2012short](./Token/dpm2012short_md.md)] server to an existing protection group, or create a new one.  You can select to protect the following data sources:
+2.  Add the primary [!INCLUDE[dpm2012short](Token/dpm2012short_md.md)] server to an existing protection group, or create a new one.  You can select to protect the following data sources:
 
     -   The SQL Server databases configured for the primary server.
 
-    -   All volumes on the primary [!INCLUDE[dpm2012short](./Token/dpm2012short_md.md)] server \(Shares will not be visible separately\)
+    -   All volumes on the primary [!INCLUDE[dpm2012short](Token/dpm2012short_md.md)] server \(Shares will not be visible separately\)
 
-    -   All replicas on the primary [!INCLUDE[dpm2012short](./Token/dpm2012short_md.md)] server.
+    -   All replicas on the primary [!INCLUDE[dpm2012short](Token/dpm2012short_md.md)] server.
 
 3.  At a minimum, you should select the databases, the \\Program Files\\Microsoft System Center 2012\\DPM\\DPM\\Config folder, and the \\Program Files\\Microsoft System Center 2012\\DPM\\Scripting folder.
 

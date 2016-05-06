@@ -11,15 +11,15 @@ ms.topic: article
 ms.assetid: f88980f5-521f-41cc-98db-997db0019c0f
 ---
 # How to Install the Operations Console
-After you install [!INCLUDE[scom_threshold_1](./Token/scom_threshold_1_md.md)], you can install the Operations console on other servers and computers. For example, you might want to view monitoring data from your desktop computer. Before you install an [!INCLUDE[om12short](./Token/om12short_md.md)] Operations console, you must install [Microsoft .NET Framework 3.5 SP1 hotfix](http://go.microsoft.com/fwlink/p/?LinkID=194637).
+After you install [!INCLUDE[scom_threshold_1](Token/scom_threshold_1_md.md)], you can install the Operations console on other servers and computers. For example, you might want to view monitoring data from your desktop computer. Before you install an [!INCLUDE[om12short](Token/om12short_md.md)] Operations console, you must install [Microsoft .NET Framework 3.5 SP1 hotfix](http://go.microsoft.com/fwlink/p/?LinkID=194637).
 
-You must ensure that the computer that will host the Operations console meets the minimum system requirements. For more information, see [System Requirements for System Center Technical Preview](./System-Requirements-for-System-Center-Technical-Preview.md)
+You must ensure that the computer that will host the Operations console meets the minimum system requirements. For more information, see [System Requirements for System Center Technical Preview](System-Requirements-for-System-Center-Technical-Preview.md)
 
 #### To install the Operations console
 
 1.  Log on to the computer that will host the Operations console with an account that has local administrative credentials.
 
-2.  On the [!INCLUDE[om12short](./Token/om12short_md.md)] installation media, run **Setup.exe**, and then click **Install**.
+2.  On the [!INCLUDE[om12short](Token/om12short_md.md)] installation media, run **Setup.exe**, and then click **Install**.
 
 3.  On the **Getting Started**, **Select features to install** page, select **Operations console**. To read more about what each feature provides and its requirements, click **Expand all**, or expand the buttons next to each feature, and then click **Next**.
 
@@ -51,13 +51,13 @@ You must ensure that the computer that will host the Operations console meets th
 
 2.  Open the Command Prompt window by using the **Run as Administrator** option.
 
-3.  Change the path to where the [!INCLUDE[om12short](./Token/om12short_md.md)] setup.exe file is located, and run the following command.
+3.  Change the path to where the [!INCLUDE[om12short](Token/om12short_md.md)] setup.exe file is located, and run the following command.
 
     ```
     setup.exe /silent /install /components:OMConsole /EnableErrorReporting:[Never|Queued|Always] /SendCEIPReports:[0|1] /UseMicrosoftUpdate: [0|1]
     ```
 
 ## See Also
-[Distributed Deployment of Operations Manager](./Distributed-Deployment-of-Operations-Manager.md)
+[Distributed Deployment of Operations Manager](Distributed-Deployment-of-Operations-Manager.md)
 
 

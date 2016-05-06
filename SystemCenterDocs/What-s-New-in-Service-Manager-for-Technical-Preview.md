@@ -11,9 +11,9 @@ ms.topic: get-started-article
 ms.assetid: 3eeb3265-88e0-47ed-b761-07f4e0634959
 ---
 # What&#39;s New in Service Manager for Technical Preview
-[!INCLUDE[scsm_threshold_1](./Token/scsm_threshold_1_md.md)] is updated for [!INCLUDE[sc_threshold_1](./Token/sc_threshold_1_md.md)] 5.
+[!INCLUDE[scsm_threshold_1](Token/scsm_threshold_1_md.md)] is updated for [!INCLUDE[sc_threshold_1](Token/sc_threshold_1_md.md)] 5.
 
-For details about known issues that could affect you before you install [!INCLUDE[scsm_threshold_1](./Token/scsm_threshold_1_md.md)], read the [Release Notes for System Center Technical Preview](Release-Notes-for-System-Center-Technical-Preview-5.md).
+For details about known issues that could affect you before you install [!INCLUDE[scsm_threshold_1](Token/scsm_threshold_1_md.md)], read the [Release Notes for System Center Technical Preview](Release-Notes-for-System-Center-Technical-Preview-5.md).
 
 ## Improvements in technical preview 5
 
@@ -87,7 +87,7 @@ Service Manger can more easily handle a large inflow of 45 work items per minute
 
 With the Service Manager 2016 TP5 update, Service Manager cubes contain new date dimensions which will help you to create rich reports and slice data based on Year, Quarter, Month, Day etc.
 
-![date dimensions/Image/sm-date-dimensions.png)
+![date dimensionsImage/sm-date-dimensions.png)
 
 The following new dimensions have been added to Service Manager data warehouse  cubes:
 
@@ -140,7 +140,7 @@ Cube Name: Service Manager Service Catalog library cube
 
 All these dimensions have the following attributes, which you can use for slicing your data:
 
- ![dimensions list/Image/sm-dimensions-list.png)
+ ![dimensions listImage/sm-dimensions-list.png)
  
 #### To add date dimensions for other date fields in custom cubes
 
@@ -227,7 +227,7 @@ Key improvements in this relase:
 -   Support for .NET Framework 4.5.1
 
 ### Support for Lync 2013 and Skype for Business
-Service Manager 2016 Technical preview 4 includes updates that supports integration with Lync 2013 and Skype for Business in Microsoft Office suite 2013 and  2016. For information about contacting a user using Lync or Skype for Business, see [Contact a User from an Incident Form](./Contact-a-User-from-an-Incident-Form.md).
+Service Manager 2016 Technical preview 4 includes updates that supports integration with Lync 2013 and Skype for Business in Microsoft Office suite 2013 and  2016. For information about contacting a user using Lync or Skype for Business, see [Contact a User from an Incident Form](Contact-a-User-from-an-Incident-Form.md).
 
 ### New Self Service portal
 This release contains a new HTML\-based Self Service Portal which offers the following enhancements:
@@ -248,7 +248,7 @@ This release contains a new HTML\-based Self Service Portal which offers the fol
 
 -   Rich customization
 
-For more information and installing and customizing the portal, see [Deploy the Self-Service Portal for Service Manager](./Deploy-the-Self-Service-Portal-for-Service-Manager.md).
+For more information and installing and customizing the portal, see [Deploy the Self-Service Portal for Service Manager](Deploy-the-Self-Service-Portal-for-Service-Manager.md).
 
 > [!NOTE]
 > The older Silverlight and SharePoint\-based Self\-Service portal has been removed.
@@ -256,18 +256,18 @@ For more information and installing and customizing the portal, see [Deploy the 
 #### Announcements in the Self Service Portal
 You can see **Announcements** in the portal in the upper right corner.
 
-![](/Image/sm-sspannounce01.png)
+![](Image/sm-sspannounce01.png)
 
 When you click **Announcements**, the list is displayed.
 
-![](/Image/sm-sspannounce02.jpg)
+![](Image/sm-sspannounce02.jpg)
 
 -   Active announcements appear collapsed on the portal home page.
 
 #### Service Catalog in the Self Service Portal
 You can see the **Service Catalog** in the portal in the upper left corner.
 
-![](/Image/sm-sspcatalog01.jpg)
+![](Image/sm-sspcatalog01.jpg)
 
 -   The Service Catalog on the home page presents all the request offerings, grouped by their respective service offerings \(sorted in alphabetical order\), accessible to the logged in user.
 
@@ -280,7 +280,7 @@ You can see the **Service Catalog** in the portal in the upper left corner.
 #### Help Articles in the Self Service Portal
 The **Help Articles** icon is on the left side of the portal home page.
 
-![](/Image/sm-ssphelp01.jpg)
+![](Image/sm-ssphelp01.jpg)
 
 -   When a user clicks the **Help Articles** tab on the navigation bar, the list of all help articles that are marked as a favorite and the most popular help articles are displayed.
 
@@ -299,14 +299,14 @@ The **Help Articles** icon is on the left side of the portal home page.
 #### My Requests in the Self Service Portal
 The **My Requests** icon  is on the left side of the portal home page.
 
-![](/Image/sm-ssprequests01.jpg)
+![](Image/sm-ssprequests01.jpg)
 
 -   **My Requests** displays all the incidents and service requests where the signed\-in user is the affected user.
 
 #### My Activities in the Self Service Portal
 The **My Activities** icon  is on the left side of the portal home page.
 
-![](/Image/sm-sspactivities01.jpg)
+![](Image/sm-sspactivities01.jpg)
 
 -   **My Activities** shows all the manual and review activities which have the signed\-in user as the activity implementer or if the user is in the reviewer list.
 
@@ -317,7 +317,7 @@ The Active Directory and SCCM connectors in Service Manager can import large amo
 
 The ECL table, and the history tables in this case, store details about when the data was brought into Service Manager and the properties that were added or updated for each data item.
 Disabling ELC logging, doesn’t affect importing data from connectors. Instead, most logging data doesn’t get written to the ECL and history tables, which can result is significant performance improvement. 
-Disabled ECL logging is not automatically turned on. In other words, by default, ECL logging is enabled. However, you can easily turn on Disabled ECL logging by revising a registry key value. For more information, see [Optionally Disable ECL Logging for Faster Connector Synchronization](./Optionally-Disable-ECL-Logging-for-Faster-Connector-Synchronization.md).
+Disabled ECL logging is not automatically turned on. In other words, by default, ECL logging is enabled. However, you can easily turn on Disabled ECL logging by revising a registry key value. For more information, see [Optionally Disable ECL Logging for Faster Connector Synchronization](Optionally-Disable-ECL-Logging-for-Faster-Connector-Synchronization.md).
 
 **Grooming improvements for ECL logs**
 
@@ -354,7 +354,7 @@ The Setup wizard allows you to easily install Service Manager in complex configu
 
 Now you can configure the SQL management server, instance name and port number together.
 
-![](/Image/sm-sqlserver-config.png)
+![](Image/sm-sqlserver-config.png)
 
 ### Known Issues in this release
 Service Manager 2016 Technical Preview 4 is still in development and this release contains some issues that haven’t been fixed yet. Some of the known issues in this release include:
@@ -375,7 +375,7 @@ As always, we recommend that you perform typical or routine tasks in the test en
 
 **Active Directory connector fixes**. The Active Directory connector was updated to address a problem where the connector  performed a complete sync after any domain controller failover. The issue put an unnecessary load on the workflow server, causing performance to degrade. Normally, the connector only syncs data that was changed since the last run.
 
-**MPSync job updates**. The MPSync job is improved to be more reliable in [!INCLUDE[scsm_threshold_1](./Token/scsm_threshold_1_md.md)]. Previously, Service Manager could stop responding  when you updated a management pack or if you re\-registered  the data warehouse. This resulted in   reports with data that wasn't  refreshed. Even if you checked the Service Manager console, the jobs listed under Datawarehouse Jobs wouldn't show the correct status. The most common reason for getting into the hung state was due to management pack deployment because the system tried to recreate an existing primary\/foreign key in a table.
+**MPSync job updates**. The MPSync job is improved to be more reliable in [!INCLUDE[scsm_threshold_1](Token/scsm_threshold_1_md.md)]. Previously, Service Manager could stop responding  when you updated a management pack or if you re\-registered  the data warehouse. This resulted in   reports with data that wasn't  refreshed. Even if you checked the Service Manager console, the jobs listed under Datawarehouse Jobs wouldn't show the correct status. The most common reason for getting into the hung state was due to management pack deployment because the system tried to recreate an existing primary\/foreign key in a table.
 
 **Significant performance improvements**.  Service Manager's Active Directory and System Center Configuration Manager connectors performance was improved. In internal testing at Microsoft, sync time improved by about 50% for the SCCM connector and about 35% for the AD connector. You can read more about performance improvements at the [Service Manager blog](http://blogs.technet.com/b/servicemanager/archive/2015/03/19/sccm-lfx-connector-performance-improvements.aspx).
 

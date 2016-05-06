@@ -8,15 +8,15 @@ ms.topic: article
 ms.assetid: bbd26c78-7685-4a8f-b7f1-9b344d91f7d4
 ---
 # How to create a guest cluster by using a service template in VMM
-This topic explains how to create a guest cluster by using a service template in [!INCLUDE[vmm12sp1_long](./Token/vmm12sp1_long_md.md)]. A guest cluster can be configured to run a variety of applications, but one application that guest clusters often run is SQL Server.
+This topic explains how to create a guest cluster by using a service template in [!INCLUDE[vmm12sp1_long](Token/vmm12sp1_long_md.md)]. A guest cluster can be configured to run a variety of applications, but one application that guest clusters often run is SQL Server.
 
-Service templates can be built up from other profiles and templates. Regardless of how a service template is created for a guest cluster, it includes instructions that tell [!INCLUDE[vmm12short](./Token/vmm12short_md.md)] to deploy multiple virtual machines together as a “tier” \(in this case, the tier is the guest cluster\). The service template also includes instructions that tell [!INCLUDE[vmm12short](./Token/vmm12short_md.md)] how to run appropriate scripts to create a cluster from the virtual machines as they are deployed.
+Service templates can be built up from other profiles and templates. Regardless of how a service template is created for a guest cluster, it includes instructions that tell [!INCLUDE[vmm12short](Token/vmm12short_md.md)] to deploy multiple virtual machines together as a “tier” \(in this case, the tier is the guest cluster\). The service template also includes instructions that tell [!INCLUDE[vmm12short](Token/vmm12short_md.md)] how to run appropriate scripts to create a cluster from the virtual machines as they are deployed.
 
 **Prerequisites**
 
 To prepare to create a guest cluster, review the following prerequisites:
 
--   **Host cluster**: Virtual machines in a guest cluster can be deployed only to host clusters running[!INCLUDE[winblue_server_2](./Token/winblue_server_2_md.md)] or [!INCLUDE[winthreshold_server_2](./Token/winthreshold_server_2_md.md)]. If you deploy a service from a service template that includes one or more guest clusters, and there are no host clusters running[!INCLUDE[winblue_server_2](./Token/winblue_server_2_md.md)] or [!INCLUDE[winthreshold_server_2](./Token/winthreshold_server_2_md.md)] to which the guest cluster can be deployed, deployment of the guest cluster will fail. For information about host clusters, see [Managing Hyper-V hosts and host clusters with VMM](./Managing-Hyper-V-hosts-and-host-clusters-with-VMM.md).
+-   **Host cluster**: Virtual machines in a guest cluster can be deployed only to host clusters running[!INCLUDE[winblue_server_2](Token/winblue_server_2_md.md)] or [!INCLUDE[winthreshold_server_2](Token/winthreshold_server_2_md.md)]. If you deploy a service from a service template that includes one or more guest clusters, and there are no host clusters running[!INCLUDE[winblue_server_2](Token/winblue_server_2_md.md)] or [!INCLUDE[winthreshold_server_2](Token/winthreshold_server_2_md.md)] to which the guest cluster can be deployed, deployment of the guest cluster will fail. For information about host clusters, see [Managing Hyper-V hosts and host clusters with VMM](Managing-Hyper-V-hosts-and-host-clusters-with-VMM.md).
 
 -   **Scripts**: Scripts that you will need for creating the guest cluster include:
 
@@ -27,43 +27,43 @@ To prepare to create a guest cluster, review the following prerequisites:
     -   Potentially, scripts that install your application correctly for a cluster. For example, to run SQL Server 2012, you might need a script that installs SQL Server 2012 correctly on the first node of the guest cluster, and another script to install it on later nodes. \(You cannot use   a     sysprepped image of SQL Server for installation, because this does not work in the context of a cluster.\)
 
     > [!NOTE]
-    > In [!INCLUDE[vmm12short](./Token/vmm12short_md.md)], script settings are specified as part of the “application” configuration—either in an application profile or on the application tab of a VM template or service\-tier template.
+    > In [!INCLUDE[vmm12short](Token/vmm12short_md.md)], script settings are specified as part of the “application” configuration—either in an application profile or on the application tab of a VM template or service\-tier template.
 
 -   **Information about hardware settings**: You will need to know basic hardware settings, such as the amount of memory, that you want on the nodes \(the virtual machines\) in the guest cluster.
 
 -   **One or more virtual hard disks to be used by all nodes in the guest cluster**: Most clusters have one or more shared disks that are used by all nodes in the cluster, although this is not required. To configure shared disks for your guest cluster, use the following guidelines:
 
-    -   Review the virtual hard disks \(VHDX files\) in your [!INCLUDE[vmm12short](./Token/vmm12short_md.md)] library, and make sure that the VHDX files that will be shared by the cluster nodes are in the library.
+    -   Review the virtual hard disks \(VHDX files\) in your [!INCLUDE[vmm12short](Token/vmm12short_md.md)] library, and make sure that the VHDX files that will be shared by the cluster nodes are in the library.
 
     -   Use new VHDX files. Do not reuse VHDX files from a previous cluster.
 
     -   Identify a single location \(path\) in SCSI\-based shared storage where all the VHDX files for the guest cluster will be placed at deployment time.
 
-        You can use storage classifications to control the placement of the shared VHDX files, but within your storage classification, you must have at least one location with the capacity to contain all the shared VHDX files for your guest cluster. [!INCLUDE[vmm12short](./Token/vmm12short_md.md)] will not deploy the shared VHDX files to multiple locations.
+        You can use storage classifications to control the placement of the shared VHDX files, but within your storage classification, you must have at least one location with the capacity to contain all the shared VHDX files for your guest cluster. [!INCLUDE[vmm12short](Token/vmm12short_md.md)] will not deploy the shared VHDX files to multiple locations.
 
         You can vary the location of shared VHDX files at deployment time, even if you use the same service template to deploy a series of guest clusters. To do this, you must deploy your guest clusters to a host group \(not a cloud\). Then, at deployment time, you can specify a single location \(path\) for the shared VHDX file or files for that particular guest cluster. This will override the location that you specified in the virtual machine template.
 
     For background information about virtual hard disks that are used for a guest cluster, see[Virtual Hard Disk Sharing Overview](http://technet.microsoft.com/library/dn281956.aspx).
 
     > [!IMPORTANT]
-    > For best results with managing the guest cluster in [!INCLUDE[vmm12short](./Token/vmm12short_md.md)], we recommend that you create the guest cluster as a service in [!INCLUDE[vmm12short](./Token/vmm12short_md.md)], rather than creating the guest cluster by using Hyper\-V.
+    > For best results with managing the guest cluster in [!INCLUDE[vmm12short](Token/vmm12short_md.md)], we recommend that you create the guest cluster as a service in [!INCLUDE[vmm12short](Token/vmm12short_md.md)], rather than creating the guest cluster by using Hyper\-V.
 
--   **Virtual hard disk for the operating system for each node of the guest cluster**: You will need a virtual hard disk file that contains the operating system \(prepared with Sysprep\) that you want the virtual machines in the guest cluster to use. \(This is different from the virtual hard disk file that will be deployed to shared storage.\) When each node is created, [!INCLUDE[vmm12short](./Token/vmm12short_md.md)] will use a copy of this virtual hard disk file for the system disk of the node.
+-   **Virtual hard disk for the operating system for each node of the guest cluster**: You will need a virtual hard disk file that contains the operating system \(prepared with Sysprep\) that you want the virtual machines in the guest cluster to use. \(This is different from the virtual hard disk file that will be deployed to shared storage.\) When each node is created, [!INCLUDE[vmm12short](Token/vmm12short_md.md)] will use a copy of this virtual hard disk file for the system disk of the node.
 
 With these prerequisites in place, you can create a service template and connect all the configuration elements together.
 
 This topic contains the following procedures:
 
-1.  [Specify settings for scripts that run when a guest cluster is created](./How-to-create-a-guest-cluster-by-using-a-service-template-in-VMM.md#BKMK_app)
+1.  [Specify settings for scripts that run when a guest cluster is created](How-to-create-a-guest-cluster-by-using-a-service-template-in-VMM.md#BKMK_app)
 
-2.  [Create a virtual machine template and include it in a service tier for a guest cluster](./How-to-create-a-guest-cluster-by-using-a-service-template-in-VMM.md#BKMK_service)
+2.  [Create a virtual machine template and include it in a service tier for a guest cluster](How-to-create-a-guest-cluster-by-using-a-service-template-in-VMM.md#BKMK_service)
 
 ## <a name="BKMK_app"></a>Specify settings for scripts that run when a guest cluster is created
-In the application settings in [!INCLUDE[vmm12short](./Token/vmm12short_md.md)], you can include scripts that will be run at specific times in relation to the creation of a guest cluster, such as **Creation: First VM** or **Creation: VMs After First**. The following procedure provides steps for specifying such settings.
+In the application settings in [!INCLUDE[vmm12short](Token/vmm12short_md.md)], you can include scripts that will be run at specific times in relation to the creation of a guest cluster, such as **Creation: First VM** or **Creation: VMs After First**. The following procedure provides steps for specifying such settings.
 
 #### To specify settings for scripts that run when a guest cluster is created
 
-1.  Confirm that your application components, especially your scripts, have been copied to the [!INCLUDE[vmm12short](./Token/vmm12short_md.md)] library share. When you copy a script, place it in a folder in the library share and give the folder an extension of **.cr**, which indicates a “custom resource” in [!INCLUDE[vmm12short](./Token/vmm12short_md.md)].
+1.  Confirm that your application components, especially your scripts, have been copied to the [!INCLUDE[vmm12short](Token/vmm12short_md.md)] library share. When you copy a script, place it in a folder in the library share and give the folder an extension of **.cr**, which indicates a “custom resource” in [!INCLUDE[vmm12short](Token/vmm12short_md.md)].
 
 2.  Open the **Library** workspace.
 
@@ -121,7 +121,7 @@ Also, the service tier in which the virtual machine template is placed must have
 
 #### To create a virtual machine template and include it in a service tier for a guest cluster
 
-1.  Ensure that on the [!INCLUDE[vmm12short](./Token/vmm12short_md.md)] library share, you have a virtual hard disk that contains the operating system \(prepared with Sysprep\) that you want the virtual machines in the guest cluster to use. This virtual hard disk cannot be blank. \(This is different from the virtual hard disk file that will be deployed to shared storage.\)
+1.  Ensure that on the [!INCLUDE[vmm12short](Token/vmm12short_md.md)] library share, you have a virtual hard disk that contains the operating system \(prepared with Sysprep\) that you want the virtual machines in the guest cluster to use. This virtual hard disk cannot be blank. \(This is different from the virtual hard disk file that will be deployed to shared storage.\)
 
 2.  Open the **Library** workspace.
 
@@ -158,7 +158,7 @@ Also, the service tier in which the virtual machine template is placed must have
 
     -   As a best practice, under **Advanced**, click **Availability**, and then click the **Manage availability sets** button. To create a new availability set, click the **Create** button, provide a name for the set, and then click **OK**. In the **Manage Availability Sets** dialog box, click **OK**.
 
-        The availability set name that you specify will be used by all the nodes \(virtual machines\) in the guest cluster, which means that [!INCLUDE[vmm12short](./Token/vmm12short_md.md)] will attempt to keep the virtual machines on separate hosts, so that if one host fails, a virtual machine on another host can provide service as needed. \(If you have worked with failover clusters in other contexts, you might know this setting as **AntiAffinityClassNames**.\)
+        The availability set name that you specify will be used by all the nodes \(virtual machines\) in the guest cluster, which means that [!INCLUDE[vmm12short](Token/vmm12short_md.md)] will attempt to keep the virtual machines on separate hosts, so that if one host fails, a virtual machine on another host can provide service as needed. \(If you have worked with failover clusters in other contexts, you might know this setting as **AntiAffinityClassNames**.\)
 
     After you have configured the hardware settings, click **Next**.
 
@@ -168,7 +168,7 @@ Also, the service tier in which the virtual machine template is placed must have
 
     -   Under **Identity Information**, for the **Computer name**, you can provide a pattern to generate computer names. For example, if you enter **server\#\#\#\#**, the computer names that are created are server0001, server0002, and so on. The use of a pattern ensures that when you add additional virtual machines to a service, the computer names that are generated are related and identifiable. If you use this method to specify the computer name, you cannot use it in combination with a name prompt parameter \(@<name>@\). You can use one method or the other, but not both.
 
-    -   Under **Networking**, you can specify specify settings for Active Directory Domain Services by using the FQDN or by using at signs \(@\) before and after the domain name, for example, @Domain@. By using the at signs \(@\) in this way, the necessary information can be entered when the virtual machine is deployed as part of a service. A trust relationship is not necessary between the domain where the service is deployed and the domain of the [!INCLUDE[vmm12short](./Token/vmm12short_md.md)] management server.
+    -   Under **Networking**, you can specify specify settings for Active Directory Domain Services by using the FQDN or by using at signs \(@\) before and after the domain name, for example, @Domain@. By using the at signs \(@\) in this way, the necessary information can be entered when the virtual machine is deployed as part of a service. A trust relationship is not necessary between the domain where the service is deployed and the domain of the [!INCLUDE[vmm12short](Token/vmm12short_md.md)] management server.
 
     After you configure the guest operating system settings, click **Next**.
 
@@ -200,31 +200,31 @@ Also, the service tier in which the virtual machine template is placed must have
 
     If there are any validation errors, a warning icon appears on the element of the service template that caused the validation error, and a message that describes the issue appears in the properties pane in the Service Template Designer window.
 
-17. Right\-click the box that represents the tier for the guest cluster, and then click **Properties**. On the **General** tab, select **This machine tier can be scaled out**, and then specify values greater than 1 for **Default instance count** and **Maximum instance count**. The values that you specify control the number of nodes in the guest cluster. For example, **Default instance count** specifies the number of nodes that [!INCLUDE[vmm12short](./Token/vmm12short_md.md)] will create when the cluster is created.
+17. Right\-click the box that represents the tier for the guest cluster, and then click **Properties**. On the **General** tab, select **This machine tier can be scaled out**, and then specify values greater than 1 for **Default instance count** and **Maximum instance count**. The values that you specify control the number of nodes in the guest cluster. For example, **Default instance count** specifies the number of nodes that [!INCLUDE[vmm12short](Token/vmm12short_md.md)] will create when the cluster is created.
 
     > [!IMPORTANT]
     > Be sure that the **Maximum instance count** is less than or equal to the number of SCSI channels that you previously configured for the disk \(under **Bus Configuration**\). Be sure that the **Default instance count** is less than or equal to the **Maximum instance count**.
 
 18. With the properties of the tier for the guest cluster still displayed \(as in the previous step\), for **Number of upgrade domains**, specify a value that is the same as the **Maximum instance count** that you specified in the previous step.
 
-    For example, if you specified a **Default instance count** of **3** and a **Maximum instance count** of **3**, the guest cluster would have three nodes. When you updated the service, if you specified an incorrect value of **1** for the **Number of upgrade domains**, [!INCLUDE[vmm12short](./Token/vmm12short_md.md)] would perform the update in one stage, which means it would update all three virtual machines at the same time. This would cause the cluster to lose quorum and stop running during the update process. However, if you specified an appropriate value of **3** for the **Number of upgrade domains**, [!INCLUDE[vmm12short](./Token/vmm12short_md.md)] would perform the update in three stages, which means it would update one virtual machine at a time. This would leave two virtual machines in the guest cluster running at any given time, and the cluster would continue to run during the update process.
+    For example, if you specified a **Default instance count** of **3** and a **Maximum instance count** of **3**, the guest cluster would have three nodes. When you updated the service, if you specified an incorrect value of **1** for the **Number of upgrade domains**, [!INCLUDE[vmm12short](Token/vmm12short_md.md)] would perform the update in one stage, which means it would update all three virtual machines at the same time. This would cause the cluster to lose quorum and stop running during the update process. However, if you specified an appropriate value of **3** for the **Number of upgrade domains**, [!INCLUDE[vmm12short](Token/vmm12short_md.md)] would perform the update in three stages, which means it would update one virtual machine at a time. This would leave two virtual machines in the guest cluster running at any given time, and the cluster would continue to run during the update process.
 
-    For more information about upgrade domains, see [Updating services in VMM](./Updating-services-in-VMM.md).
+    For more information about upgrade domains, see [Updating services in VMM](Updating-services-in-VMM.md).
 
 19. On the **Home** tab, in the **Service Template** group, click **Save and Validate** to save the service template.
 
-For information about deploying the service, see [Deploying services in VMM](./Deploying-services-in-VMM.md).
+For information about deploying the service, see [Deploying services in VMM](Deploying-services-in-VMM.md).
 
 ## See Also
-[Creating profiles and templates in VMM](./Creating-profiles-and-templates-in-VMM.md)
-[Preparing to create services in VMM](./Preparing-to-create-services-in-VMM.md)
-[Deploying services in VMM](./Deploying-services-in-VMM.md)
+[Creating profiles and templates in VMM](Creating-profiles-and-templates-in-VMM.md)
+[Preparing to create services in VMM](Preparing-to-create-services-in-VMM.md)
+[Deploying services in VMM](Deploying-services-in-VMM.md)
 [Virtual Hard Disk Sharing Overview](http://technet.microsoft.com/library/dn281956.aspx)
-[Configuring availability options for virtual machines in VMM](./Configuring-availability-options-for-virtual-machines-in-VMM.md)
-[How to configure priority in VMM for a virtual machine on a host cluster](./How-to-configure-priority-in-VMM-for-a-virtual-machine-on-a-host-cluster.md)
+[Configuring availability options for virtual machines in VMM](Configuring-availability-options-for-virtual-machines-in-VMM.md)
+[How to configure priority in VMM for a virtual machine on a host cluster](How-to-configure-priority-in-VMM-for-a-virtual-machine-on-a-host-cluster.md)
 [Using Guest Clustering for High Availability](http://technet.microsoft.com/library/dn440540.aspx)
 [Test Lab Guides: System Center 2012 SP1 - Virtual Machine Manager](http://www.microsoft.com/download/details.aspx?id=38837)
-[Managing services with VMM](./Managing-services-with-VMM.md)
-[Managing tenant resources with VMM](./Managing-tenant-resources-with-VMM.md)
+[Managing services with VMM](Managing-services-with-VMM.md)
+[Managing tenant resources with VMM](Managing-tenant-resources-with-VMM.md)
 
 

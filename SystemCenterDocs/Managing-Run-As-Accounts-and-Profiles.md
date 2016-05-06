@@ -11,11 +11,11 @@ ms.topic: article
 ms.assetid: 2aa0a67f-6ef5-49b8-b607-95461d84fc33
 ---
 # Managing Run As Accounts and Profiles
-[!INCLUDE[om12long](./Token/om12long_md.md)] workflows, such as rules, tasks, monitors, and discoveries, require credentials to run on a targeted agent or computer. By default, workflows use the default action account for the agent or computer. The credentials for the default action account are configured when [!INCLUDE[om12short](./Token/om12short_md.md)] is installed.
+[!INCLUDE[om12long](Token/om12long_md.md)] workflows, such as rules, tasks, monitors, and discoveries, require credentials to run on a targeted agent or computer. By default, workflows use the default action account for the agent or computer. The credentials for the default action account are configured when [!INCLUDE[om12short](Token/om12short_md.md)] is installed.
 
 When a workflow requires rights and privileges that the default action account cannot provide, the workflow can be written to use a Run As profile. A Run As profile can have multiple Run As accounts associated with it. The Run As accounts allow you to specify the necessary credentials for specific computers. Multiple workflows can use the same Run As profile. The following image illustrates the relationship between workflows, Run As profiles, and Run As accounts.
 
-![](/Image/RunAsConcept.jpg)
+![](Image/RunAsConcept.jpg)
 
 In the image, three workflows use the same Run As profile. The Run As profile has three associated Run As accounts. In this example, each workflow that uses the Run As profile will run on Computer A using the credentials for Run As account 1, on Computer B and C using the credentials for Run As account 2, and on Computer D using the credentials for Run As account 3.
 
@@ -27,23 +27,23 @@ A Run As account contains a single set of credentials which are stored in the Op
 
 ## Managing Run As Accounts and Profiles topics
 
--   [Distribution and Targeting for Run As Accounts and Profiles](./Distribution-and-Targeting-for-Run-As-Accounts-and-Profiles.md)
+-   [Distribution and Targeting for Run As Accounts and Profiles](Distribution-and-Targeting-for-Run-As-Accounts-and-Profiles.md)
 
     This topic explains the difference between distribution and targeting, the options for distributing Run As accounts, and the options for selecting targets for Run As profiles.
 
--   [How to Create a Run As Account](./How-to-Create-a-Run-As-Account.md)
+-   [How to Create a Run As Account](How-to-Create-a-Run-As-Account.md)
 
     This topic explains how to create a Run As account and how to modify an existing Run As account.
 
--   [How to Associate a Run As Account to a Run As Profile](./How-to-Associate-a-Run-As-Account-to-a-Run-As-Profile.md)
+-   [How to Associate a Run As Account to a Run As Profile](How-to-Associate-a-Run-As-Account-to-a-Run-As-Profile.md)
 
     This topic explains how to configure a Run As profile to use a Run As account.
 
--   [How to Create a New Run As Account for Accessing the Operations Manager Database](./How-to-Create-a-New-Run-As-Account-for-Accessing-the-Operations-Manager-Database.md)
+-   [How to Create a New Run As Account for Accessing the Operations Manager Database](How-to-Create-a-New-Run-As-Account-for-Accessing-the-Operations-Manager-Database.md)
 
     This topic explains how to create a Run As account that can access the operational database.
 
--   [How to Configure Run As Accounts and Profiles for UNIX and Linux Access](./How-to-Configure-Run-As-Accounts-and-Profiles-for-UNIX-and-Linux-Access.md)
+-   [How to Configure Run As Accounts and Profiles for UNIX and Linux Access](How-to-Configure-Run-As-Accounts-and-Profiles-for-UNIX-and-Linux-Access.md)
 
     This topic explains the Run As accounts you must create to monitor UNIX and Linux computers.
 
@@ -51,10 +51,10 @@ A Run As account contains a single set of credentials which are stored in the Op
 
 -   [TechNet Library main page for Operations Manager](http://go.microsoft.com/fwlink/?LinkID=213297)
 
--   [Operations Guide for System Center 2012 - Operations Manager](./Operations-Guide-for-System-Center-2012---Operations-Manager.md)
+-   [Operations Guide for System Center 2012 - Operations Manager](Operations-Guide-for-System-Center-2012---Operations-Manager.md)
 
--   [Managing Access in Operations Manager](./Managing-Access-in-Operations-Manager.md)
+-   [Managing Access in Operations Manager](Managing-Access-in-Operations-Manager.md)
 
--   [Run As Accounts for Network Monitoring in Operations Manager](./Run-As-Accounts-for-Network-Monitoring-in-Operations-Manager.md)
+-   [Run As Accounts for Network Monitoring in Operations Manager](Run-As-Accounts-for-Network-Monitoring-in-Operations-Manager.md)
 
 

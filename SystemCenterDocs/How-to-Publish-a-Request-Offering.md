@@ -11,7 +11,7 @@ ms.topic: article
 ms.assetid: f0c1088f-92a8-40ba-93ec-edf6bd8b5fb3
 ---
 # How to Publish a Request Offering
-You can publish draft request offerings by using the Publish task or by using a change request. When you publish a request offering by using the Publish task, no additional interaction is required, and the request offering appears in the [!INCLUDE[smssp](./Token/smssp_md.md)] as an uncategorized item. If you want to publish the request offering as part of a category, you must add the request offering to a service offering.
+You can publish draft request offerings by using the Publish task or by using a change request. When you publish a request offering by using the Publish task, no additional interaction is required, and the request offering appears in the [!INCLUDE[smssp](Token/smssp_md.md)] as an uncategorized item. If you want to publish the request offering as part of a category, you must add the request offering to a service offering.
 
 If you want to have an approval process added before publishing, you can associate the request offering to a change request. If you use a change request, you can also send email notifications as the approval process occurs.
 
@@ -22,7 +22,7 @@ You can use the following procedures to publish request offerings.
 
 ### To publish draft request offerings
 
-1.  In the [!INCLUDE[smcons](./Token/smcons_md.md)], select **Library**.
+1.  In the [!INCLUDE[smcons](Token/smcons_md.md)], select **Library**.
 
 2.  In the **Library** pane, expand **Service Catalog**, and then select **Draft Request Offerings**.
 
@@ -30,7 +30,7 @@ You can use the following procedures to publish request offerings.
 
 ### To use a change request to publish draft request offerings
 
-1.  In the [!INCLUDE[smcons](./Token/smcons_md.md)], select **Library**.
+1.  In the [!INCLUDE[smcons](Token/smcons_md.md)], select **Library**.
 
 2.  In the **Library** pane, expand **Service Catalog**, and then select **Draft Request Offerings**.
 

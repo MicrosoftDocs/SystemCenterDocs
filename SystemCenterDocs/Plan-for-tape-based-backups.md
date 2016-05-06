@@ -16,7 +16,7 @@ Tapes are usually used for long\-term storage of data protected by DPM so that d
 
     -   For long\-term protection to tape full backups are always run.
 
-    -   If you’re using tape for both long\-term and short\-term protection, [!INCLUDE[dpm2012short](./Token/dpm2012short_md.md)] creates copies of the latest short\-term full backup in order to generate the long\-term tape backup. We recommend that you schedule the short\-term protection backup to run a day before the long\-term backup. That way you can be sure you’re using the latest short\-term backup in order to create the long\-term backup.
+    -   If you’re using tape for both long\-term and short\-term protection, [!INCLUDE[dpm2012short](Token/dpm2012short_md.md)] creates copies of the latest short\-term full backup in order to generate the long\-term tape backup. We recommend that you schedule the short\-term protection backup to run a day before the long\-term backup. That way you can be sure you’re using the latest short\-term backup in order to create the long\-term backup.
 
     -   If you’re using disk for short\-term back up and tape for long\-term, the long\-term backup will be taken from the disk replica.
 
@@ -26,7 +26,7 @@ Tapes are usually used for long\-term storage of data protected by DPM so that d
 
     -   For short\-term protection to tape you can use a full backup or a full\/incremental backup \(when backups are set to **Daily**\).
 
-    -   If you don’t have a tape or tape library attached to the [!INCLUDE[dpm2012short](./Token/dpm2012short_md.md)] server you’ll only be able to select **Disk** for short\-term protection.
+    -   If you don’t have a tape or tape library attached to the [!INCLUDE[dpm2012short](Token/dpm2012short_md.md)] server you’ll only be able to select **Disk** for short\-term protection.
 
 -   Note the following for freeing up tapes:.
 
@@ -44,19 +44,19 @@ Tapes are usually used for long\-term storage of data protected by DPM so that d
 
 -   For a list of compatible tape libraries, see [Compatible Tape Libraries for System Center 2012 DPM](http://social.technet.microsoft.com/wiki/contents/articles/17105.compatible-tape-libraries-for-system-center-2012-dpm.aspx) in the TechNet wiki.
 
--   For standalone tape drives, [!INCLUDE[dpm2012short](./Token/dpm2012short_md.md)] does the following for each protection group:
+-   For standalone tape drives, [!INCLUDE[dpm2012short](Token/dpm2012short_md.md)] does the following for each protection group:
 
     -   Appends all short\-term backups to a single tape.
 
     -   Appends all long\-term backups to a single tape that is different from the short\-term backup tape.
 
-    -   When a tape fills up, [!INCLUDE[dpm2012short](./Token/dpm2012short_md.md)] raises an alert to add a new free tape.
+    -   When a tape fills up, [!INCLUDE[dpm2012short](Token/dpm2012short_md.md)] raises an alert to add a new free tape.
 
 -   For tape libraries note the following:
 
-    -   [!INCLUDE[dpm2012short](./Token/dpm2012short_md.md)] can allocate two or more tapes for each protection group. All the data sources in a protection group will always append to the same tape for both short\-term and long\-term protection.
+    -   [!INCLUDE[dpm2012short](Token/dpm2012short_md.md)] can allocate two or more tapes for each protection group. All the data sources in a protection group will always append to the same tape for both short\-term and long\-term protection.
 
-    -   If the protection group settings specify the allocation of more than one drive the data sources will be split across tape. For example, if there are five data sources and a drive with a maximum limit of two sources, [!INCLUDE[dpm2012short](./Token/dpm2012short_md.md)] might write three data sources on one tape and two on another. This might cause an uneven distribution of data among tapes, depending the data size, any other scheduled backup tape jobs, and the number of tape drives available at the time.
+    -   If the protection group settings specify the allocation of more than one drive the data sources will be split across tape. For example, if there are five data sources and a drive with a maximum limit of two sources, [!INCLUDE[dpm2012short](Token/dpm2012short_md.md)] might write three data sources on one tape and two on another. This might cause an uneven distribution of data among tapes, depending the data size, any other scheduled backup tape jobs, and the number of tape drives available at the time.
 
 ## Long\-term storage and allocation
 

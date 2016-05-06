@@ -29,18 +29,17 @@ Use the following example to list all ACS groups defined on this ACS collector:
 `adtadmin /listgroups`
 
 ## See Also
-[Audit Collection Services Administration &#40;AdtAdmin.exe&#41;](./Audit-Collection-Services-Administration--AdtAdmin.exe-.md)
-[AdtAdmin.exe AddGroup](./AdtAdmin.exe-AddGroup.md)
-[AdtAdmin.exe DelGroup](./AdtAdmin.exe-DelGroup.md)
-[AdtAdmin.exe Disconnect](./AdtAdmin.exe-Disconnect.md)
-[AdtAdmin.exe GetDBAuth](./AdtAdmin.exe-GetDBAuth.md)
-[AdtAdmin.exe GetQuery](./AdtAdmin.exe-GetQuery.md)
-[AdtAdmin.exe ListForwarders](./AdtAdmin.exe-ListForwarders.md)
-[AdtAdmin.exe SetDBAuth](./AdtAdmin.exe-SetDBAuth.md)
-[AdtAdmin.exe SetQuery](./AdtAdmin.exe-SetQuery.md)
-[AdtAdmin.exe Stats](./AdtAdmin.exe-Stats.md)
-[AdtAdmin.exe UpdForwarder](./AdtAdmin.exe-UpdForwarder.md)
-[AdtAdmin.exe UpdGroup](./AdtAdmin.exe-UpdGroup.md)
-
+[Audit Collection Services Administration &#40;AdtAdmin.exe&#41;](Audit-Collection-Services-Administration--AdtAdmin.exe-.md)
+[AdtAdmin.exe AddGroup](AdtAdmin.exe-AddGroup.md)
+[AdtAdmin.exe DelGroup](AdtAdmin.exe-DelGroup.md)
+[AdtAdmin.exe Disconnect](AdtAdmin.exe-Disconnect.md)
+[AdtAdmin.exe GetDBAuth](AdtAdmin.exe-GetDBAuth.md)
+[AdtAdmin.exe GetQuery](AdtAdmin.exe-GetQuery.md)
+[AdtAdmin.exe ListForwarders](AdtAdmin.exe-ListForwarders.md)
+[AdtAdmin.exe SetDBAuth](AdtAdmin.exe-SetDBAuth.md)
+[AdtAdmin.exe SetQuery](AdtAdmin.exe-SetQuery.md)
+[AdtAdmin.exe Stats](AdtAdmin.exe-Stats.md)
+[AdtAdmin.exe UpdForwarder](AdtAdmin.exe-UpdForwarder.md)
+[AdtAdmin.exe UpdGroup](AdtAdmin.exe-UpdGroup.md)
 
 

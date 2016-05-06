@@ -11,15 +11,15 @@ ms.topic: article
 ms.assetid: 1c8d08db-f510-463a-83db-f5b45411090e
 ---
 # Using Advanced Search
-In [!INCLUDE[om12long](./Token/om12long_md.md)], advanced search is available in My Workspace, when you create a new search. You can also open advanced search in the Monitoring workspace on the **Tools** menu.
+In [!INCLUDE[om12long](Token/om12long_md.md)], advanced search is available in My Workspace, when you create a new search. You can also open advanced search in the Monitoring workspace on the **Tools** menu.
 
 Use advanced search to search for a specific object type that meets specified criteria. Advanced search has two steps:
 
--   [Select the specific object type and criteria](./Using-Advanced-Search.md#BKMK_Selectthespecificobjecttype)
+-   [Select the specific object type and criteria](Using-Advanced-Search.md#BKMK_Selectthespecificobjecttype)
 
--   [Set the criteria values](./Using-Advanced-Search.md#BKMK_Setthecriteriaandvalues)
+-   [Set the criteria values](Using-Advanced-Search.md#BKMK_Setthecriteriaandvalues)
 
-You can also save the searches you create. For more information, see [Running and saving searches](./Using-Advanced-Search.md#bkmk_runningandsavingsearches).
+You can also save the searches you create. For more information, see [Running and saving searches](Using-Advanced-Search.md#bkmk_runningandsavingsearches).
 
 ## <a name="BKMK_Selectthespecificobjecttype"></a>Select the Specific Object Type and Criteria
 Each object type will display a unique set of criteria for your search. The following table lists the object types and the criteria available for each.
@@ -51,7 +51,7 @@ When you run a search or a saved search, a window opens with a view appropriate 
 > When you run a saved search, change the parameters, click **Search**, and then close the results window, you will be asked if you want to save the changes to the search.
 
 ## See Also
-[Finding Data and Objects in the Operations Manager Consoles](./Finding-Data-and-Objects-in-the-Operations-Manager-Consoles.md)
-[Examples of Using Advanced Search in Operations Manager](./Examples-of-Using-Advanced-Search-in-Operations-Manager.md)
+[Finding Data and Objects in the Operations Manager Consoles](Finding-Data-and-Objects-in-the-Operations-Manager-Consoles.md)
+[Examples of Using Advanced Search in Operations Manager](Examples-of-Using-Advanced-Search-in-Operations-Manager.md)
 
 

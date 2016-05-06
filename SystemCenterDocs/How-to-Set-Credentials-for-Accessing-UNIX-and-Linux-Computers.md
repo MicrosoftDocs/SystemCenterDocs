@@ -11,20 +11,20 @@ ms.topic: article
 ms.assetid: 5c7ff14e-cb78-4cd2-b5b5-bf67513b7f29
 ---
 # How to Set Credentials for Accessing UNIX and Linux Computers
-This topic contains procedures for how to set credentials in wizards for the following tasks, as set by wizards in [!INCLUDE[om12long](./Token/om12long_md.md)]:
+This topic contains procedures for how to set credentials in wizards for the following tasks, as set by wizards in [!INCLUDE[om12long](Token/om12long_md.md)]:
 
--   [Credentials for Installing Agents](./How-to-Set-Credentials-for-Accessing-UNIX-and-Linux-Computers.md#BKMK_Installing)
+-   [Credentials for Installing Agents](How-to-Set-Credentials-for-Accessing-UNIX-and-Linux-Computers.md#BKMK_Installing)
 
--   [Credentials for Run As Accounts](./How-to-Set-Credentials-for-Accessing-UNIX-and-Linux-Computers.md#BKMK_RunAs)
+-   [Credentials for Run As Accounts](How-to-Set-Credentials-for-Accessing-UNIX-and-Linux-Computers.md#BKMK_RunAs)
 
--   [Credentials for Upgrading an Agent](./How-to-Set-Credentials-for-Accessing-UNIX-and-Linux-Computers.md#BKMK_Upgrade)
+-   [Credentials for Upgrading an Agent](How-to-Set-Credentials-for-Accessing-UNIX-and-Linux-Computers.md#BKMK_Upgrade)
 
--   [Credentials for Uninstalling an Agent](./How-to-Set-Credentials-for-Accessing-UNIX-and-Linux-Computers.md#BKMK_Uninstall)
+-   [Credentials for Uninstalling an Agent](How-to-Set-Credentials-for-Accessing-UNIX-and-Linux-Computers.md#BKMK_Uninstall)
 
-These wizards define credentials to be authenticated on the UNIX or Linux computer and follow a similar process. For an overview of how credentials are provided, see [Accessing UNIX and Linux Computers in Operations Manager](./Accessing-UNIX-and-Linux-Computers-in-Operations-Manager.md).
+These wizards define credentials to be authenticated on the UNIX or Linux computer and follow a similar process. For an overview of how credentials are provided, see [Accessing UNIX and Linux Computers in Operations Manager](Accessing-UNIX-and-Linux-Computers-in-Operations-Manager.md).
 
 ## <a name="BKMK_Discovering"></a>Credentials for Discovering UNIX and Linux Computers
-The following procedure begins in **Computer and Device Management Wizard**, on the **Discovery Criteria** page, when you click the **Set Credentials** button. For more information, see [Install Agent on UNIX and Linux Using the Discovery Wizard](./Install-Agent-on-UNIX-and-Linux-Using-the-Discovery-Wizard.md).
+The following procedure begins in **Computer and Device Management Wizard**, on the **Discovery Criteria** page, when you click the **Set Credentials** button. For more information, see [Install Agent on UNIX and Linux Using the Discovery Wizard](Install-Agent-on-UNIX-and-Linux-Using-the-Discovery-Wizard.md).
 
 #### To set a user \(unprivileged\) account for discovery of an installed agent with a signed certificate.
 
@@ -100,7 +100,7 @@ The following procedures begin in the **Computer and Device Management Wizard**,
 5.  Click **OK** to return to the **Discovery Criteria** page and continue with the wizard.
 
 ## <a name="BKMK_RunAs"></a>Credentials for Run As Accounts
-The following procedures begin in the **Create UNIX\/Linux Run As Account Wizard** when you select the type for a **Run As Account** \(**Monitoring Account** or **Agent Maintenance Account**\), a name and password and provided a description. For more information, see [How to Configure Run As Accounts and Profiles for UNIX and Linux Access](./How-to-Configure-Run-As-Accounts-and-Profiles-for-UNIX-and-Linux-Access.md).
+The following procedures begin in the **Create UNIX\/Linux Run As Account Wizard** when you select the type for a **Run As Account** \(**Monitoring Account** or **Agent Maintenance Account**\), a name and password and provided a description. For more information, see [How to Configure Run As Accounts and Profiles for UNIX and Linux Access](How-to-Configure-Run-As-Accounts-and-Profiles-for-UNIX-and-Linux-Access.md).
 
 #### To set a privileged credential for a monitoring account
 
@@ -171,7 +171,7 @@ The following procedures begin in the **Create UNIX\/Linux Run As Account Wizard
 5.  Click **Next** to continue with the wizard.
 
 ## <a name="BKMK_Upgrade"></a>Credentials for Upgrading an Agent
-The following procedures begin in the **UNIX\/Linux Agent Upgrade Wizard** on the **Credentials** page, when you select **Provide Upgrade Credentials**. For more information, see [Upgrading and Uninstalling Agents on UNIX and Linux Computers](./Upgrading-and-Uninstalling-Agents-on-UNIX-and-Linux-Computers.md).
+The following procedures begin in the **UNIX\/Linux Agent Upgrade Wizard** on the **Credentials** page, when you select **Provide Upgrade Credentials**. For more information, see [Upgrading and Uninstalling Agents on UNIX and Linux Computers](Upgrading-and-Uninstalling-Agents-on-UNIX-and-Linux-Computers.md).
 
 #### To set a privileged credential by using an SSH key
 
@@ -234,7 +234,7 @@ The following procedures begin in the **UNIX\/Linux Agent Upgrade Wizard** on th
 5.  Click **OK** to return to the **Credentials** page and continue with the wizard.
 
 ## <a name="BKMK_Uninstall"></a>Credentials for Uninstalling an Agent
-The following procedures begin in the  **UNIX\/Linux Agent Uninstall Wizard**, on the **Credentials** page, when you select **Provide Uninstall Credentials**. For more information, see, [Upgrading and Uninstalling Agents on UNIX and Linux Computers](./Upgrading-and-Uninstalling-Agents-on-UNIX-and-Linux-Computers.md).
+The following procedures begin in the  **UNIX\/Linux Agent Uninstall Wizard**, on the **Credentials** page, when you select **Provide Uninstall Credentials**. For more information, see, [Upgrading and Uninstalling Agents on UNIX and Linux Computers](Upgrading-and-Uninstalling-Agents-on-UNIX-and-Linux-Computers.md).
 
 #### To set a privileged credential by using an SSH key
 
@@ -293,10 +293,10 @@ The following procedures begin in the  **UNIX\/Linux Agent Uninstall Wizard**, o
 5.  Click **OK** to return to the **Credentials** page and continue with the wizard.
 
 ## See Also
-[Credentials You Must Have to Access UNIX and Linux Computers](./Credentials-You-Must-Have-to-Access-UNIX-and-Linux-Computers.md)
-[Accessing UNIX and Linux Computers in Operations Manager](./Accessing-UNIX-and-Linux-Computers-in-Operations-Manager.md)
-[How to Configure sudo Elevation and SSH Keys](./How-to-Configure-sudo-Elevation-and-SSH-Keys.md)
-[Required Capabilities for UNIX and Linux Accounts](./Required-Capabilities-for-UNIX-and-Linux-Accounts.md)
-[Configuring SSL Ciphers](./Configuring-SSL-Ciphers.md)
+[Credentials You Must Have to Access UNIX and Linux Computers](Credentials-You-Must-Have-to-Access-UNIX-and-Linux-Computers.md)
+[Accessing UNIX and Linux Computers in Operations Manager](Accessing-UNIX-and-Linux-Computers-in-Operations-Manager.md)
+[How to Configure sudo Elevation and SSH Keys](How-to-Configure-sudo-Elevation-and-SSH-Keys.md)
+[Required Capabilities for UNIX and Linux Accounts](Required-Capabilities-for-UNIX-and-Linux-Accounts.md)
+[Configuring SSL Ciphers](Configuring-SSL-Ciphers.md)
 
 

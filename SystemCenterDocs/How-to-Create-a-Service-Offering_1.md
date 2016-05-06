@@ -8,11 +8,11 @@ ms.topic: article
 ms.assetid: 0cbc46d9-3dcd-4aee-8342-df21f39a1439
 ---
 # How to Create a Service Offering_1
-Service offerings are logical groups of request offerings in [!INCLUDE[scsm_threshold_1](./Token/scsm_threshold_1_md.md)]. Both service offerings and their request offerings are available to [!INCLUDE[smssp](./Token/smssp_md.md)] users, when their status is set to Published and if end users have been assigned a corresponding [!INCLUDE[smshort12](./Token/smshort12_md.md)] user role. Only users who have been assigned a user role that is associated with a catalog group that contains catalog items can use the [!INCLUDE[smssp](./Token/smssp_md.md)] to access the service catalog.
+Service offerings are logical groups of request offerings in [!INCLUDE[scsm_threshold_1](Token/scsm_threshold_1_md.md)]. Both service offerings and their request offerings are available to [!INCLUDE[smssp](Token/smssp_md.md)] users, when their status is set to Published and if end users have been assigned a corresponding [!INCLUDE[smshort12](Token/smshort12_md.md)] user role. Only users who have been assigned a user role that is associated with a catalog group that contains catalog items can use the [!INCLUDE[smssp](Token/smssp_md.md)] to access the service catalog.
 
 ### To create a service offering
 
-1.  In the [!INCLUDE[smcons](./Token/smcons_md.md)], select **Library**.
+1.  In the [!INCLUDE[smcons](Token/smcons_md.md)], select **Library**.
 
 2.  In the **Library** pane, expand **Service Catalog**, and then select **Service Offerings**.
 
@@ -30,9 +30,9 @@ Service offerings are logical groups of request offerings in [!INCLUDE[scsm_thre
 
     4.  In the **Language** list, either leave the default selection or select a language.
 
-    5.  In the **Overview** text box, type a short overview to describe the service offering that will be shown on the [!INCLUDE[smssp](./Token/smssp_md.md)] home page. For example, type **Access to AD Group, Access to Labs**.
+    5.  In the **Overview** text box, type a short overview to describe the service offering that will be shown on the [!INCLUDE[smssp](Token/smssp_md.md)] home page. For example, type **Access to AD Group, Access to Labs**.
 
-    6.  In the description box, type a description that will appear on the service offering page in the [!INCLUDE[smssp](./Token/smssp_md.md)].
+    6.  In the description box, type a description that will appear on the service offering page in the [!INCLUDE[smssp](Token/smssp_md.md)].
 
     7.  Next to **Management pack**, select an unsealed management pack of your choice, and then click **Next**. For example, if you previously created the Sample Management Pack, select it.
 
@@ -61,6 +61,6 @@ Service offerings are logical groups of request offerings in [!INCLUDE[scsm_thre
 12. On the **Completion** page, click **Close**.
 
 ## See Also
-[Using the Service Catalog in System Center Technical Preview - Service Manager](./Using-the-Service-Catalog-in-System-Center-Technical-Preview---Service-Manager.md)
+[Using the Service Catalog in System Center Technical Preview - Service Manager](Using-the-Service-Catalog-in-System-Center-Technical-Preview---Service-Manager.md)
 
 

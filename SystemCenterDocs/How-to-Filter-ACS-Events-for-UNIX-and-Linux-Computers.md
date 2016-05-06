@@ -23,18 +23,18 @@ Best practice is to archive the data by using an ACS Archiver and then restore i
 
     For example, to set a filter so that only the UNIX and Linux security events are logged to the Windows Security Event log , set the query parameters by entering **AdtAdmin \/setquery \/query:”select \* from AdtsEvent where NOT \(EventID\=560 OR EventID\=562 OR EventID\=569 OR EventID\=570 OR EventID\=571 OR EventID\=26401 OR EventID\=4665 OR EventID\=4666 OR EventID\=4667 OR EventID\=4624 OR EventID\=4634 OR EventID\=4648 OR EventID\=5156 OR EventID\=4656 OR EventID\=4658 OR EventID\=5159\)”**.
 
-For additional information about how to use AdtAdmin.exe, see [Audit Collection Services Administration &#40;AdtAdmin.exe&#41;](./Audit-Collection-Services-Administration--AdtAdmin.exe-.md).
+For additional information about how to use AdtAdmin.exe, see [Audit Collection Services Administration &#40;AdtAdmin.exe&#41;](Audit-Collection-Services-Administration--AdtAdmin.exe-.md).
 
 ## See Also
-[Collecting Security Events Using Audit Collection Services in Operations Manager](./Collecting-Security-Events-Using-Audit-Collection-Services-in-Operations-Manager.md)
-[How to Configure Certficates for ACS Collector and Forwarder](./How-to-Configure-Certficates-for-ACS-Collector-and-Forwarder.md)
-[Audit Collection Services Capacity Planning](./Audit-Collection-Services-Capacity-Planning.md)
-[Audit Collection Services Performance Counters](./Audit-Collection-Services-Performance-Counters.md)
-[How to Enable Audit Collection Services &#40;ACS&#41; Forwarders](./How-to-Enable-Audit-Collection-Services--ACS--Forwarders.md)
-[Audit Collection Services Security](./Audit-Collection-Services-Security.md)
-[Audit Collection Services Security](./Audit-Collection-Services-Security.md)
-[Monitoring Audit Collection Services Performance](./Monitoring-Audit-Collection-Services-Performance.md)
-[How to Remove Audit Collection Services &#40;ACS&#41;](./How-to-Remove-Audit-Collection-Services--ACS-.md)
-[Audit Collection Services Administration &#40;AdtAdmin.exe&#41;](./Audit-Collection-Services-Administration--AdtAdmin.exe-.md)
+[Collecting Security Events Using Audit Collection Services in Operations Manager](Collecting-Security-Events-Using-Audit-Collection-Services-in-Operations-Manager.md)
+[How to Configure Certficates for ACS Collector and Forwarder](How-to-Configure-Certficates-for-ACS-Collector-and-Forwarder.md)
+[Audit Collection Services Capacity Planning](Audit-Collection-Services-Capacity-Planning.md)
+[Audit Collection Services Performance Counters](Audit-Collection-Services-Performance-Counters.md)
+[How to Enable Audit Collection Services &#40;ACS&#41; Forwarders](How-to-Enable-Audit-Collection-Services--ACS--Forwarders.md)
+[Audit Collection Services Security](Audit-Collection-Services-Security.md)
+[Audit Collection Services Security](Audit-Collection-Services-Security.md)
+[Monitoring Audit Collection Services Performance](Monitoring-Audit-Collection-Services-Performance.md)
+[How to Remove Audit Collection Services &#40;ACS&#41;](How-to-Remove-Audit-Collection-Services--ACS-.md)
+[Audit Collection Services Administration &#40;AdtAdmin.exe&#41;](Audit-Collection-Services-Administration--AdtAdmin.exe-.md)
 
 

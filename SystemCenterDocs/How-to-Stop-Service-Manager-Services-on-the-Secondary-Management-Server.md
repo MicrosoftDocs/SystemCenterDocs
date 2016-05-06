@@ -11,7 +11,7 @@ ms.topic: article
 ms.assetid: b4f30bdb-d45e-4390-b873-509d0b012398
 ---
 # How to Stop Service Manager Services on the Secondary Management Server
-Use the following procedure to stop the [!INCLUDE[smshort](./Token/smshort_md.md)] services.
+Use the following procedure to stop the [!INCLUDE[smshort](Token/smshort_md.md)] services.
 
 ### To stop the Service Manager services
 

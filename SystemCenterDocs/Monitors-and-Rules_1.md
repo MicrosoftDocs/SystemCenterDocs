@@ -8,7 +8,7 @@ ms.topic: article
 ms.assetid: afbe17db-3818-4b3e-a72c-f730ea03a195
 ---
 # Monitors and Rules_1
-Monitors and rules are the primary elements for measuring health and detecting errors in [!INCLUDE[om12short](./Token/om12short_md.md)] and provide similar yet distinct functionality. Monitors set the state of an object while rules create alerts and collect data for analysis and reporting. Each monitor and rule is primarily defined by the source of the data that is used to perform its required functionality and the logic used to evaluate this data.
+Monitors and rules are the primary elements for measuring health and detecting errors in [!INCLUDE[om12short](Token/om12short_md.md)] and provide similar yet distinct functionality. Monitors set the state of an object while rules create alerts and collect data for analysis and reporting. Each monitor and rule is primarily defined by the source of the data that is used to perform its required functionality and the logic used to evaluate this data.
 
 Although they provide different functionality, monitors and rules both use a common set of sources that provide the data to evaluate. For example, a monitor may use a performance counter to set the state of a particular object. A rule may access the same performance counter in order to store its value for analysis and reporting.
 
@@ -37,19 +37,19 @@ The following diagram shows an example of the Health Explorer for the **Windows 
 
 **Sample Health Explorer**
 
-![](/Image/AuthGuide_05_HealthExplorer.gif)
+![](Image/AuthGuide_05_HealthExplorer.gif)
 
 ## Rules
 Rules do not affect the health state of the target object. They are used for one of three functions as described in the following table:
 
 |Monitor|Description|
 |-----------|---------------|
-|Alerting Rules|Alerting rules create an alert when a particular event is detected. This can be any of the different kinds of events shown in [Data Sources](./Data-Sources.md). Alerting rules do not affect health state.|
-|Collection Rules|Collection rules collect events or performance data to the Operations Manager database and data warehouse. They do not create alerts or set health state.<br /><br />Collection rules can use each of the data sources shown in [Data Sources](./Data-Sources.md). The data will be converted to either an event or to performance data depending on the particular kind of collection rule you are creating. For some wizards, you will need to provide the specific information from the data source that will be used for different properties of the data being collected.|
+|Alerting Rules|Alerting rules create an alert when a particular event is detected. This can be any of the different kinds of events shown in [Data Sources](Data-Sources.md). Alerting rules do not affect health state.|
+|Collection Rules|Collection rules collect events or performance data to the Operations Manager database and data warehouse. They do not create alerts or set health state.<br /><br />Collection rules can use each of the data sources shown in [Data Sources](Data-Sources.md). The data will be converted to either an event or to performance data depending on the particular kind of collection rule you are creating. For some wizards, you will need to provide the specific information from the data source that will be used for different properties of the data being collected.|
 |Command Rules|Command rules will run a script or command on a schedule. They do not create alerts or collect any data.|
 
 ## Should you create a monitor or a rule?
-Unit monitors and rules in [!INCLUDE[om12short](./Token/om12short_md.md)] are similar. They are both workflows that run on an agent, they both can generate an alert when a particular condition is met, and they both use a similar set of data sources to detect these conditions. As a result, it can be difficult to determine if you want to create a monitor or rule for a particular scenario.
+Unit monitors and rules in [!INCLUDE[om12short](Token/om12short_md.md)] are similar. They are both workflows that run on an agent, they both can generate an alert when a particular condition is met, and they both use a similar set of data sources to detect these conditions. As a result, it can be difficult to determine if you want to create a monitor or rule for a particular scenario.
 
 Use the following criteria to determine which one to create for different conditions.
 
@@ -61,10 +61,10 @@ Use the following criteria to determine which one to create for different condit
 
 -   You are creating an alert based on a performance threshold. There are no rules available to generate an alert from a performance threshold. A monitor should be used for this scenario anyway since you can use the condition where the performance counter is under the defined threshold.
 
--   You have a condition that requires more complex logic than is possible with rules. The Operations console provides a variety of options for setting the health state of a monitor but only simple detection for a rule. If you need more complex logic for a rule but don’t have a method to detect the monitor’s healthy state, then you can create a monitor using Manual or Timer reset. See [Event Monitor Reset](./Event-Monitor-Reset.md) for more information.
+-   You have a condition that requires more complex logic than is possible with rules. The Operations console provides a variety of options for setting the health state of a monitor but only simple detection for a rule. If you need more complex logic for a rule but don’t have a method to detect the monitor’s healthy state, then you can create a monitor using Manual or Timer reset. See [Event Monitor Reset](Event-Monitor-Reset.md) for more information.
 
     > [!NOTE]
-    > Using the [Viso Management Pack Designer](./Authoring-Tools.md#VMPD) you can create custom rules using the same logic available in the Operations console for monitors.
+    > Using the [Viso Management Pack Designer](Authoring-Tools.md#VMPD) you can create custom rules using the same logic available in the Operations console for monitors.
 
 ### Create a Rule if…
 
@@ -77,35 +77,35 @@ Use the following criteria to determine which one to create for different condit
 ## Monitors and Rules Topics
 Monitors and rules are described in the following topics.
 
--   [Data Sources](./Data-Sources.md)
+-   [Data Sources](Data-Sources.md)
 
     Describes the concept of a data source and lists the different kinds of data sources available for monitors and rules.
 
--   [Expressions](./Expressions.md)
+-   [Expressions](Expressions.md)
 
     Describes how to create an expression for different kinds of monitors and rules.
 
--   [Alerts](./Alerts.md)
+-   [Alerts](Alerts.md)
 
     Describes how to configure alerts created by monitors and rules.
 
--   [Event Monitors and Rules](./Event-Monitors-and-Rules.md)
+-   [Event Monitors and Rules](Event-Monitors-and-Rules.md)
 
     Describes monitors and rules that use different kinds of events and provides details and procedures for creating them using wizards in the Operations console.
 
--   [Performance Monitors and Rules](./Performance-Monitors-and-Rules.md)
+-   [Performance Monitors and Rules](Performance-Monitors-and-Rules.md)
 
     Describes monitors and rules that collect and monitor performance and provides details and procedures for creating them using wizards in the Operations console.
 
--   [Script Monitors and Rules](./Script-Monitors-and-Rules.md)
+-   [Script Monitors and Rules](Script-Monitors-and-Rules.md)
 
     Provides the details of how to write a monitoring script and how to create monitors and rules using scripts.
 
--   [Dependency Monitors](./Dependency-Monitors.md)
+-   [Dependency Monitors](Dependency-Monitors.md)
 
     Describes monitors that allow the health of one kind of object to be dependent on the health of another object.
 
--   [Aggregate Monitors](./Aggregate-Monitors.md)
+-   [Aggregate Monitors](Aggregate-Monitors.md)
 
     Describes monitors that consolidate  the health of other monitors for a particular kind of object.
 

@@ -11,14 +11,14 @@ ms.topic: article
 ms.assetid: 1045902a-3383-4ba9-b788-4ac757d506f7
 ---
 # How to Modify a Master Page File
-You can edit some web elements of the [!INCLUDE[smssp](./Token/smssp_md.md)] using Microsoft SharePoint Designer 2010. You can use SharePoint Designer 2010 to modify SharePoint master pages and style sheets. However, customization is limited in this example to formatting. In any of the following example modifications, you can choose customizations that better fit your organization.
+You can edit some web elements of the [!INCLUDE[smssp](Token/smssp_md.md)] using Microsoft SharePoint Designer 2010. You can use SharePoint Designer 2010 to modify SharePoint master pages and style sheets. However, customization is limited in this example to formatting. In any of the following example modifications, you can choose customizations that better fit your organization.
 
 > [!NOTE]
 > You should have SharePoint Designer 2010 installed before you use the following procedure. However, you can download SharePoint Designer 2010 from the [Microsoft Download Center](http://go.microsoft.com/fwlink/p/?LinkId=234803) if you do not already have it installed.
 
 ### To modify a master page file
 
-1.  Start a browser, and connect to the [!INCLUDE[smssp](./Token/smssp_md.md)] home page, for example, http:\/\/<WebServerName>:82\/SMPortal.
+1.  Start a browser, and connect to the [!INCLUDE[smssp](Token/smssp_md.md)] home page, for example, http:\/\/<WebServerName>:82\/SMPortal.
 
 2.  In the upper left corner, click **Site Actions**, and then select **Edit in SharePoint Designer**.
 
@@ -42,9 +42,9 @@ You can edit some web elements of the [!INCLUDE[smssp](./Token/smssp_md.md)] usi
 
 12. Save the CSS and SMPortalPage.master files that you have updated, and then close SharePoint Designer 2010.
 
-13. Refresh your view of the [!INCLUDE[smssp](./Token/smssp_md.md)] to view the changes that you have made.
+13. Refresh your view of the [!INCLUDE[smssp](Token/smssp_md.md)] to view the changes that you have made.
 
 ## See Also
-[Managing the System Center 2012 - Service Manager Self-Service Portal](./Managing-the-System-Center-2012---Service-Manager-Self-Service-Portal.md)
+[Managing the System Center 2012 - Service Manager Self-Service Portal](Managing-the-System-Center-2012---Service-Manager-Self-Service-Portal.md)
 
 

@@ -15,13 +15,13 @@ My Workspace provides you with a private area in the Operations console that you
 
 This topic contains the following procedures:
 
--   [Create Folders in My Workspace](./Using-My-Workspace-in-Operations-Manager.md#bkmk_createfoldersinmyworkspace)
+-   [Create Folders in My Workspace](Using-My-Workspace-in-Operations-Manager.md#bkmk_createfoldersinmyworkspace)
 
--   [Add Shortcuts to Views](./Using-My-Workspace-in-Operations-Manager.md#BKMK_AddShortcutstoViews)
+-   [Add Shortcuts to Views](Using-My-Workspace-in-Operations-Manager.md#BKMK_AddShortcutstoViews)
 
--   [Save Searches](./Using-My-Workspace-in-Operations-Manager.md#bkmk_savesearches)
+-   [Save Searches](Using-My-Workspace-in-Operations-Manager.md#bkmk_savesearches)
 
--   [Create Views](./Using-My-Workspace-in-Operations-Manager.md#bkmk_createviews)
+-   [Create Views](Using-My-Workspace-in-Operations-Manager.md#bkmk_createviews)
 
 ## <a name="bkmk_createfoldersinmyworkspace"></a>Create Folders in My Workspace
 My Workspace contains two default folders: **Favorite Views** and **Saved Searches**. You can create additional folders to better organize your workspace. All new folders that you create will be created under **Favorite Views**.
@@ -77,7 +77,7 @@ You can save useful searches in My Workspace to run at any time.
 
     -   Views
 
-    Each object type will display a unique set of criteria for your search. For more information on advanced search criteria, see [Using Advanced Search](./Using-Advanced-Search.md).
+    Each object type will display a unique set of criteria for your search. For more information on advanced search criteria, see [Using Advanced Search](Using-Advanced-Search.md).
 
 4.  In the displayed criteria for the object type, select the condition that you want to search against.
 
@@ -93,15 +93,15 @@ You can run saved searches right\-clicking a search in the list and then clickin
 Views that you create in My Workspace are unique views, not shortcuts to existing views. As an operator, you can create views in the My Workspace pane. You must have the rights of the Author role to create a view in the Monitoring workspace.
 
 > [!NOTE]
-> The general instructions in the following procedure do not apply to Diagram, Web Page, or Dashboard views. For more information on creating a view, see the specific view type in [Creating Views in Operations Manager](./Creating-Views-in-Operations-Manager.md).
+> The general instructions in the following procedure do not apply to Diagram, Web Page, or Dashboard views. For more information on creating a view, see the specific view type in [Creating Views in Operations Manager](Creating-Views-in-Operations-Manager.md).
 
 #### To create a view in My Workspace
 
-1.  Right\-click in the folder where you want to store the view and point to **New**. You can select any view type. For more information on the view types available, see [View Types in Operations Manager](./View-Types-in-Operations-Manager.md).
+1.  Right\-click in the folder where you want to store the view and point to **New**. You can select any view type. For more information on the view types available, see [View Types in Operations Manager](View-Types-in-Operations-Manager.md).
 
 2.  In the view properties, enter a name and description for the view. The view properties dialog box contains two tabs: **Criteria** and **Display**.
 
-    On the **Criteria** tab, in the **Show data related to** field, specify the item to target. The item you select will display related conditions in the **Select conditions** section. For more information, see [Guidance for Scoping and Targeting Views](./Guidance-for-Scoping-and-Targeting-Views.md).
+    On the **Criteria** tab, in the **Show data related to** field, specify the item to target. The item you select will display related conditions in the **Select conditions** section. For more information, see [Guidance for Scoping and Targeting Views](Guidance-for-Scoping-and-Targeting-Views.md).
 
     After you select a condition, you can edit the value for that condition in the **Criteria description** section.
 
@@ -112,17 +112,17 @@ Views that you create in My Workspace are unique views, not shortcuts to existin
 5.  After you have specified the conditions and values for the view, click **OK**. The new view will appear in the navigation pane.
 
 ## See Also
-[Standard Views in Operations Manager](./Standard-Views-in-Operations-Manager.md)
-[How to Personalize a View in Operations Manager](./How-to-Personalize-a-View-in-Operations-Manager.md)
-[Using Advanced Search](./Using-Advanced-Search.md)
-[Guidance for Scoping and Targeting Views](./Guidance-for-Scoping-and-Targeting-Views.md)
-[Using the Reporting Workspace in Operations Manager](./Using-the-Reporting-Workspace-in-Operations-Manager.md)
-[Using the Administration Workspace in Operations Manager](./Using-the-Administration-Workspace-in-Operations-Manager.md)
-[Using the Authoring Workspace in Operations Manager](./Using-the-Authoring-Workspace-in-Operations-Manager.md)
-[Using Health Explorer in Operations Manager](./Using-Health-Explorer-in-Operations-Manager.md)
-[Using the Monitoring Workspace in Operations Manager](./Using-the-Monitoring-Workspace-in-Operations-Manager.md)
-[How to Connect to the Web Console](./How-to-Connect-to-the-Web-Console.md)
-[How to Connect to the Operations Console](./How-to-Connect-to-the-Operations-Console.md)
-[Using the Operations Manager Consoles](./Using-the-Operations-Manager-Consoles.md)
+[Standard Views in Operations Manager](Standard-Views-in-Operations-Manager.md)
+[How to Personalize a View in Operations Manager](How-to-Personalize-a-View-in-Operations-Manager.md)
+[Using Advanced Search](Using-Advanced-Search.md)
+[Guidance for Scoping and Targeting Views](Guidance-for-Scoping-and-Targeting-Views.md)
+[Using the Reporting Workspace in Operations Manager](Using-the-Reporting-Workspace-in-Operations-Manager.md)
+[Using the Administration Workspace in Operations Manager](Using-the-Administration-Workspace-in-Operations-Manager.md)
+[Using the Authoring Workspace in Operations Manager](Using-the-Authoring-Workspace-in-Operations-Manager.md)
+[Using Health Explorer in Operations Manager](Using-Health-Explorer-in-Operations-Manager.md)
+[Using the Monitoring Workspace in Operations Manager](Using-the-Monitoring-Workspace-in-Operations-Manager.md)
+[How to Connect to the Web Console](How-to-Connect-to-the-Web-Console.md)
+[How to Connect to the Operations Console](How-to-Connect-to-the-Operations-Console.md)
+[Using the Operations Manager Consoles](Using-the-Operations-Manager-Consoles.md)
 
 

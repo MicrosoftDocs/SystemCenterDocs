@@ -11,7 +11,7 @@ ms.topic: article
 ms.assetid: 9dacca1d-43be-4caa-ad2a-2183c14a0286
 ---
 # Repeating Events
-Repeated event detection in [!INCLUDE[om12short](./Token/om12short_md.md)] uses one or more occurrences of a particular event in a time window to indicate an error condition in a monitor. Repeated event logic is available for the following monitors:
+Repeated event detection in [!INCLUDE[om12short](Token/om12short_md.md)] uses one or more occurrences of a particular event in a time window to indicate an error condition in a monitor. Repeated event logic is available for the following monitors:
 
 -   Windows Events
 
@@ -89,9 +89,9 @@ The following procedure describes how to create a repeating event monitor with t
 
 #### To create a repeating event monitor
 
-1.  If you don’t have a management pack for the application that you are monitoring, create one using the process in [Selecting a Management Pack File](./Selecting-a-Management-Pack-File.md).
+1.  If you don’t have a management pack for the application that you are monitoring, create one using the process in [Selecting a Management Pack File](Selecting-a-Management-Pack-File.md).
 
-2.  Create a new target using the process in [To create a Windows Service template](./Windows-Service-Template.md#CreateWindowsServiceTemplate). You can use any service installed on a test agent for this template.
+2.  Create a new target using the process in [To create a Windows Service template](Windows-Service-Template.md#CreateWindowsServiceTemplate). You can use any service installed on a test agent for this template.
 
 3.  In the Operations console, select the **Authoring** workspace.
 
@@ -184,9 +184,9 @@ The following procedure describes how to create a repeating event monitor with t
     8.  Click **Create**.
 
 ## See Also
-[Event Monitors and Rules](./Event-Monitors-and-Rules.md)
-[Windows Events](./Windows-Events.md)
-[Text Logs](./Text-Logs.md)
-[WMI Events](./WMI-Events.md)
+[Event Monitors and Rules](Event-Monitors-and-Rules.md)
+[Windows Events](Windows-Events.md)
+[Text Logs](Text-Logs.md)
+[WMI Events](WMI-Events.md)
 
 

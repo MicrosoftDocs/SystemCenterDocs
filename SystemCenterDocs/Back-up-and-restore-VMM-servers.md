@@ -44,19 +44,19 @@ Before setting up a DPM backup for VMM using VMM Express Writer note the followi
 
 ## Before you start
 
--   Review the [release notes](http://technet.microsoft.com/en-us/library/jj860394.aspx) and read about any VMM backup issues in [What's supported and what isn't for DPM?](./What-s-supported-and-what-isn-t-for-DPM-.md)
+-   Review the [release notes](http://technet.microsoft.com/en-us/library/jj860394.aspx) and read about any VMM backup issues in [What's supported and what isn't for DPM?](What-s-supported-and-what-isn-t-for-DPM-.md)
 
 -   Make sure that the VMM machines you want to back up  are in the DPM server domain, or in a domain with a two\-way trust relationship with the DPM domain.
 
--   **Set up storage**—You can store backed up data on disk, on tape, and in the cloud with Azure. Read more in [Prepare data storage](./Prepare-data-storage.md).
+-   **Set up storage**—You can store backed up data on disk, on tape, and in the cloud with Azure. Read more in [Prepare data storage](Prepare-data-storage.md).
 
--   You'll need to deploy the DPM  protection agent on the VMM server.  Learn more in [Deploy the DPM protection agent](./Deploy-the-DPM-protection-agent.md).
+-   You'll need to deploy the DPM  protection agent on the VMM server.  Learn more in [Deploy the DPM protection agent](Deploy-the-DPM-protection-agent.md).
 
 ## Back up VMM
 
 1.  Click **Protection** > **Actions** > **Create Protection Group** to open the **Create New Protection Group** wizard in the DPM console.
 
-2.  In **Select protection group** type click **Clients**. You only select clients if you want to back up data on a Windows computer running a Windows client operating system. For all other workloads select server. Learn more in [Deploy protection groups](./Deploy-protection-groups.md)
+2.  In **Select protection group** type click **Clients**. You only select clients if you want to back up data on a Windows computer running a Windows client operating system. For all other workloads select server. Learn more in [Deploy protection groups](Deploy-protection-groups.md)
 
 3.  In **Select Group Members** expand the VMM machine and select **VMM Express Writer**
 
@@ -91,6 +91,5 @@ Before setting up a DPM backup for VMM using VMM Express Writer note the followi
 13. In **Choose online replication** specify how the initial full replication of data will occur. You can replicate over the network, or do an offline backup \(offline seeding\). Offline backup uses the Azure Import feature. [Read more](https://azure.microsoft.com/en-in/documentation/articles/backup-azure-backup-import-export/).
 
 14. On the  **Summary** page review your settings. After you click **Create Group** initial replication of the data occurs. When it finishes the protection group status will show as **OK** on the **Status** page. Backup then takes place in line with the protection group settings.
-
 
 

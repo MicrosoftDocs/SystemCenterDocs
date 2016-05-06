@@ -11,14 +11,14 @@ ms.topic: article
 ms.assetid: beca23da-0eb7-4f85-93a6-be48e0dd68ff
 ---
 # Choose a Profile
-Before you start the Create User Role Wizard, select one profile that applies to the user role you are creating. A profile determines the actions that a user can perform. Profiles have a defined set of rights and you cannot add or remove any of these assigned rights. When creating user roles for operators and other users, select the profile that most closely matches the responsibilities of the group of users in your [!INCLUDE[om12long](./Token/om12long_md.md)] deployment.
+Before you start the Create User Role Wizard, select one profile that applies to the user role you are creating. A profile determines the actions that a user can perform. Profiles have a defined set of rights and you cannot add or remove any of these assigned rights. When creating user roles for operators and other users, select the profile that most closely matches the responsibilities of the group of users in your [!INCLUDE[om12long](Token/om12long_md.md)] deployment.
 
-[!INCLUDE[om12short](./Token/om12short_md.md)] can monitor many types of applications in the enterprise. As the Operations Manager administrator, you want to limit access to monitoring data. Role\-based security allows you to limit privileges that users have for various aspects of Operations Manager.
+[!INCLUDE[om12short](Token/om12short_md.md)] can monitor many types of applications in the enterprise. As the Operations Manager administrator, you want to limit access to monitoring data. Role\-based security allows you to limit privileges that users have for various aspects of Operations Manager.
 
 > [!IMPORTANT]
 > Adding a machine account to a user role member allows all services on that computer to have software development kit \(SDK\) access. It is recommended that you do not add a machine account to any user role.
 
-In Operations Manager, operations—such as resolving alerts, running tasks, overriding monitors, creating user roles, viewing alerts, viewing events, and so on—have been grouped into profiles, with each profile representing a particular job function as shown in the following table. For a list of specific operations associated with each profile, see [Operations Associated with User Role Profiles](./Operations-Associated-with-User-Role-Profiles.md).
+In Operations Manager, operations—such as resolving alerts, running tasks, overriding monitors, creating user roles, viewing alerts, viewing events, and so on—have been grouped into profiles, with each profile representing a particular job function as shown in the following table. For a list of specific operations associated with each profile, see [Operations Associated with User Role Profiles](Operations-Associated-with-User-Role-Profiles.md).
 
 > [!NOTE]
 > A scope defines the entity groups, object types, tasks, or views that a profile is restricted to. Not all scopes apply to all profiles.
@@ -35,10 +35,10 @@ In Operations Manager, operations—such as resolving alerts, running tasks, ove
 |Report Security Administrator|Enables the integration of SQL Server Reporting Services security with Operations Manager user roles. This gives Operations Manager Administrators the ability to control access to reports. This role can have only one member account and cannot be scoped.|
 
 ## See Also
-[Implementing User Roles](./Implementing-User-Roles.md)
-[Define a Scope Using Operations Manager Groups](./Define-a-Scope-Using-Operations-Manager-Groups.md)
-[Assign Tasks and Views](./Assign-Tasks-and-Views.md)
-[How to Assign Members to User Roles](./How-to-Assign-Members-to-User-Roles.md)
-[Operations Associated with User Role Profiles](./Operations-Associated-with-User-Role-Profiles.md)
+[Implementing User Roles](Implementing-User-Roles.md)
+[Define a Scope Using Operations Manager Groups](Define-a-Scope-Using-Operations-Manager-Groups.md)
+[Assign Tasks and Views](Assign-Tasks-and-Views.md)
+[How to Assign Members to User Roles](How-to-Assign-Members-to-User-Roles.md)
+[Operations Associated with User Role Profiles](Operations-Associated-with-User-Role-Profiles.md)
 
 

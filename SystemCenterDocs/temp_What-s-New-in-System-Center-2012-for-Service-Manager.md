@@ -8,7 +8,7 @@ ms.topic: article
 ms.assetid: ee097c70-6468-408d-91a5-a409b74fdc84
 ---
 # temp_What&#39;s New in System Center 2012 for Service Manager
-[!INCLUDE[sc2012sp1_long](./Token/sc2012sp1_long_md.md)] – [!INCLUDE[smshort](./Token/smshort_md.md)], and [!INCLUDE[smblue_1](./Token/smblue_1_md.md)] have a number of new capabilities and changes outlined in this document. Each version of [!INCLUDE[smshort](./Token/smshort_md.md)] has its own section covering what is new.
+[!INCLUDE[sc2012sp1_long](Token/sc2012sp1_long_md.md)] – [!INCLUDE[smshort](Token/smshort_md.md)], and [!INCLUDE[smblue_1](Token/smblue_1_md.md)] have a number of new capabilities and changes outlined in this document. Each version of [!INCLUDE[smshort](Token/smshort_md.md)] has its own section covering what is new.
 
 ## What’s New
 

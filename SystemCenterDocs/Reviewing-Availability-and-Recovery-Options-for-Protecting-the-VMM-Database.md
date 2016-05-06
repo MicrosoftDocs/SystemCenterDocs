@@ -40,6 +40,6 @@ It can be useful to review the possible effects that can result if the VMM datab
 When choosing among availability and recovery options for protecting the VMM database, it can be useful to review the previous list in relation to your specific environment and requirements.
 
 ## See Also
-[Preparing your environment for System Center 2016 - Virtual Machine Manager](./Preparing-your-environment-for-System-Center-2016---Virtual-Machine-Manager.md)
+[Preparing your environment for System Center 2016 - Virtual Machine Manager](Preparing-your-environment-for-System-Center-2016---Virtual-Machine-Manager.md)
 
 

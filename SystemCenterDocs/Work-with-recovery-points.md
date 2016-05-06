@@ -11,18 +11,18 @@ ms.topic: article
 ms.assetid: 3d1291f8-bb9f-4014-9b51-3dbc5e82d990
 ---
 # Work with recovery points
-[!INCLUDE[dpm2012long](./Token/dpm2012long_md.md)] relies on recovery point technology to allow you to recover your data. A *recovery point*, also referred to as a snapshot, is a point\-in\-time copy of the files and folders that are protected by the [!INCLUDE[dpm2012short](./Token/dpm2012short_md.md)] server.
+[!INCLUDE[dpm2012long](Token/dpm2012long_md.md)] relies on recovery point technology to allow you to recover your data. A *recovery point*, also referred to as a snapshot, is a point\-in\-time copy of the files and folders that are protected by the [!INCLUDE[dpm2012short](Token/dpm2012short_md.md)] server.
 
-A *recovery point*, also referred to as a *snapshot*, is a point\-in\-time copy of a replica stored on the server for [!INCLUDE[dpm2012long](./Token/dpm2012long_md.md)]. A *replica* is a complete point\-in\-time copy of the protected shares, folders, and files for a single volume on a protected computer.
+A *recovery point*, also referred to as a *snapshot*, is a point\-in\-time copy of a replica stored on the server for [!INCLUDE[dpm2012long](Token/dpm2012long_md.md)]. A *replica* is a complete point\-in\-time copy of the protected shares, folders, and files for a single volume on a protected computer.
 
-To start data protection, a full replica of the selected data must be copied to the allocated replica volume on the [!INCLUDE[dpm2012short](./Token/dpm2012short_md.md)] server.
+To start data protection, a full replica of the selected data must be copied to the allocated replica volume on the [!INCLUDE[dpm2012short](Token/dpm2012short_md.md)] server.
 
 > [!NOTE]
 > With data co\-location the allocated replica volume will be shared by other data sources to include their replicas.
 
-Thereafter, the replica is periodically synchronized with changes to the protected data. [!INCLUDE[dpm2012short](./Token/dpm2012short_md.md)] creates recovery points of each replica in a protection group according to a specified schedule. You can access the recovery points to recover previous versions of files in the event of data loss or corruption. You can recover data, and you can also configure end\-user recovery so that users can recover their own data.
+Thereafter, the replica is periodically synchronized with changes to the protected data. [!INCLUDE[dpm2012short](Token/dpm2012short_md.md)] creates recovery points of each replica in a protection group according to a specified schedule. You can access the recovery points to recover previous versions of files in the event of data loss or corruption. You can recover data, and you can also configure end\-user recovery so that users can recover their own data.
 
-When you select recovery point times, [!INCLUDE[dpm2012short](./Token/dpm2012short_md.md)] provides you with estimates for recovery range and maximum data loss. These estimates can help you specify a recovery point schedule that provides adequate data protection and meets your recovery goals. A maximum of eight recovery points can be scheduled per day.
+When you select recovery point times, [!INCLUDE[dpm2012short](Token/dpm2012short_md.md)] provides you with estimates for recovery range and maximum data loss. These estimates can help you specify a recovery point schedule that provides adequate data protection and meets your recovery goals. A maximum of eight recovery points can be scheduled per day.
 
 In the **Recovery** task area, you can access recovery points to recover previous versions of files in the event of data loss or corruption. DPM administrators can recover data, or they can configure end\-user recovery so that end users can independently recover their own data.
 

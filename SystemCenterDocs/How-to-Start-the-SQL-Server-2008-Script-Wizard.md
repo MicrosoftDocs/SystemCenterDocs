@@ -11,7 +11,7 @@ ms.topic: article
 ms.assetid: d66205ea-8470-4994-9ce2-ebb08d404c02
 ---
 # How to Start the SQL Server 2008 Script Wizard
-You can use the following procedure as part of your disaster recovery preparation steps for [!INCLUDE[smlong12](./Token/smlong12_md.md)] to generate a script to capture SQL Server logon permissions and object\-level permissions. You perform this procedure on the computer that hosts SQL Server Reporting Services \(SSRS\) and on the computers that host the following [!INCLUDE[smshort](./Token/smshort_md.md)] and data warehouse databases:
+You can use the following procedure as part of your disaster recovery preparation steps for [!INCLUDE[smlong12](Token/smlong12_md.md)] to generate a script to capture SQL Server logon permissions and object\-level permissions. You perform this procedure on the computer that hosts SQL Server Reporting Services \(SSRS\) and on the computers that host the following [!INCLUDE[smshort](Token/smshort_md.md)] and data warehouse databases:
 
 -   DWDataMart
 
@@ -25,7 +25,7 @@ You can use the following procedure as part of your disaster recovery preparatio
 
 ### To start the SQL Server Script Wizard
 
-1.  Using an account with Administrator privileges, log on to the computer that hosts the [!INCLUDE[smshort](./Token/smshort_md.md)] or data warehouse database.
+1.  Using an account with Administrator privileges, log on to the computer that hosts the [!INCLUDE[smshort](Token/smshort_md.md)] or data warehouse database.
 
 2.  On the Windows desktop, click **Start**, point to **Programs**, point to **Microsoft SQL Server 2008**, and then click **SQL Server Management Studio**.
 
@@ -79,7 +79,7 @@ You can use the following procedure as part of your disaster recovery preparatio
 
     18. On the **Generate Script Progress** page, make sure that **Success** appears, and then click **Close**.
 
-7.  Save the script file that you just created on a separate physical computer, usually at the same location where you are saving your [!INCLUDE[smshort](./Token/smshort_md.md)] encryption keys.
+7.  Save the script file that you just created on a separate physical computer, usually at the same location where you are saving your [!INCLUDE[smshort](Token/smshort_md.md)] encryption keys.
 
 8.  Run this same procedure on each of the three data warehouse databases and SSRS.
 

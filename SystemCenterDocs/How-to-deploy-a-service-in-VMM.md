@@ -8,7 +8,7 @@ ms.topic: article
 ms.assetid: 609585a9-f7d4-48fe-9011-1e395c41538d
 ---
 # How to deploy a service in VMM
-Use the following procedures to deploy a service to a private cloud or to a host group in [!INCLUDE[vmm12sp1_long](./Token/vmm12sp1_long_md.md)]. You can initiate service deployment from the Library workspace, from the Service Template Designer, or from the VMs and Services workspace.
+Use the following procedures to deploy a service to a private cloud or to a host group in [!INCLUDE[vmm12sp1_long](Token/vmm12sp1_long_md.md)]. You can initiate service deployment from the Library workspace, from the Service Template Designer, or from the VMs and Services workspace.
 
 ### To deploy a service from the Library workspace
 
@@ -17,7 +17,7 @@ Use the following procedures to deploy a service to a private cloud or to a host
 2.  In the **Templates** pane that lists the available service templates, select the service template that you want to use to deploy the service.
 
     > [!NOTE]
-    > For information about service templates, see [Creating service templates in VMM](./Creating-service-templates-in-VMM.md).
+    > For information about service templates, see [Creating service templates in VMM](Creating-service-templates-in-VMM.md).
 
 3.  On the **Service Template** tab, in the **Actions** group, click **Configure Deployment**.
 
@@ -29,7 +29,7 @@ Use the following procedures to deploy a service to a private cloud or to a host
 
     After you have made your selections, click **OK**.
 
-5.  [!INCLUDE[vmm12short](./Token/vmm12short_md.md)] performs a placement check to determine the best location on which to deploy the service and then opens the **Deploy Service** window.
+5.  [!INCLUDE[vmm12short](Token/vmm12short_md.md)] performs a placement check to determine the best location on which to deploy the service and then opens the **Deploy Service** window.
 
     The **Deploy Service** window contains the following areas:
 
@@ -41,7 +41,7 @@ Use the following procedures to deploy a service to a private cloud or to a host
 
     -   In the right pane, the **Minimap** tab allows you to adjust the size of the contents in the deployment map. This is intended to help you navigate the deployment map for a service that is made up multiple tiers.
 
-    Review the deployment configuration settings. For more information about making changes, see [How to configure deployment settings for a service](./How-to-configure-deployment-settings-for-a-service.md).
+    Review the deployment configuration settings. For more information about making changes, see [How to configure deployment settings for a service](How-to-configure-deployment-settings-for-a-service.md).
 
 6.  If the placement process encounters an issue, an icon \(error, warning or informational\) will appear on the element of the service that needs attention and a message will appear in the details pane. Resolve any errors that are identified in the deployment configuration, and review warnings to resolve any conditions that need attention. You cannot deploy a service until all errors are resolved.
 
@@ -50,7 +50,7 @@ Use the following procedures to deploy a service to a private cloud or to a host
     > [!NOTE]
     > If you close the **Deploy Service** window before you deploy the service, you will be prompted whether you want to save your deployment configuration settings for the service. If you click **Save**, you can deploy the service at a later time with the deployment configuration settings that you have already specified. To deploy the service at a later time, go to the Library workspace, expand the Templates node, and then click **Service Deployment Configurations**. Select the service that you saved, and then click **Configure Deployment**. The **Deploy Service** window will open.
 
-8.  You can track the progress of the service deployment in the Jobs window.  A **Create service instance** job is created for a service deployment. For information about viewing a service after the service has been deployed, see [How to view and manage a deployed service](./How-to-view-and-manage-a-deployed-service.md).
+8.  You can track the progress of the service deployment in the Jobs window.  A **Create service instance** job is created for a service deployment. For information about viewing a service after the service has been deployed, see [How to view and manage a deployed service](How-to-view-and-manage-a-deployed-service.md).
 
     > [!TIP]
     > Service deployment is a complex process that can take 15 minutes or longer. You can perform other tasks in the VMM console while you monitor the job.
@@ -79,13 +79,13 @@ Use the following procedures to deploy a service to a private cloud or to a host
 
 5.  In the **Create Service** dialog box, enter the name for the service in the **Name** box, ensure that the correct location is specified in the **Destination** list, and then click **OK**.
 
-6.  [!INCLUDE[vmm12short](./Token/vmm12short_md.md)] performs a placement check to determine the best location on which to deploy the service and then opens the **Deploy Service** window.
+6.  [!INCLUDE[vmm12short](Token/vmm12short_md.md)] performs a placement check to determine the best location on which to deploy the service and then opens the **Deploy Service** window.
 
 7.  Follow the steps described above for reviewing the deployment configuration settings, resolving any errors and warnings, and then deploying the service.
 
 ## See Also
-[Deploying services in VMM](./Deploying-services-in-VMM.md)
-[Managing services with VMM](./Managing-services-with-VMM.md)
-[Managing tenant resources with VMM](./Managing-tenant-resources-with-VMM.md)
+[Deploying services in VMM](Deploying-services-in-VMM.md)
+[Managing services with VMM](Managing-services-with-VMM.md)
+[Managing tenant resources with VMM](Managing-tenant-resources-with-VMM.md)
 
 

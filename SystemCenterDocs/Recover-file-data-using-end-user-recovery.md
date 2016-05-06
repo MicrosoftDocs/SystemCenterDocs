@@ -11,7 +11,7 @@ ms.topic: article
 ms.assetid: 9b79610f-a0dd-4388-b85e-7274edf65e6e
 ---
 # Recover file data using end-user recovery
-After users install the recovery point client, they can recover previous versions of data by retrieving recovery points from server for [!INCLUDE[dpm2012long](./Token/dpm2012long_md.md)]. For more information, see [How to Install the Shadow Copy Client Software \[DPM2012\_Web\]](assetId:///6cb51208-648a-4cde-b390-2a2859d51292).
+After users install the recovery point client, they can recover previous versions of data by retrieving recovery points from server for [!INCLUDE[dpm2012long](Token/dpm2012long_md.md)]. For more information, see [How to Install the Shadow Copy Client Software \[DPM2012\_Web\]](assetId:///6cb51208-648a-4cde-b390-2a2859d51292).
 
 > [!NOTE]
 > If a user recovers data using Microsoft Word on a Windows Server 2008 operating system, there is no need to install the shadow copy client software.

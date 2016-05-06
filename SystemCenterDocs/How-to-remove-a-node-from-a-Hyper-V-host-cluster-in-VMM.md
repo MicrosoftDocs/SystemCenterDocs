@@ -11,9 +11,9 @@ ms.topic: article
 ms.assetid: 7a309623-f597-4fb5-8bfa-728b50dfb334
 ---
 # How to remove a node from a Hyper-V host cluster in VMM
-This topic contains procedures for removing one or more nodes from a host cluster that is managed by [!INCLUDE[vmm12sp1_long](./Token/vmm12sp1_long_md.md)]. At the start of the procedure, the cluster must have at least two nodes.
+This topic contains procedures for removing one or more nodes from a host cluster that is managed by [!INCLUDE[vmm12sp1_long](Token/vmm12sp1_long_md.md)]. At the start of the procedure, the cluster must have at least two nodes.
 
-With a host cluster, the host that you remove becomes a stand\-alone host managed in [!INCLUDE[vmm12short](./Token/vmm12short_md.md)].
+With a host cluster, the host that you remove becomes a stand\-alone host managed in [!INCLUDE[vmm12short](Token/vmm12short_md.md)].
 
 ### To remove a node from a Hyper\-V host cluster
 
@@ -29,15 +29,15 @@ With a host cluster, the host that you remove becomes a stand\-alone host manage
 
 2.  Right\-click the host, and then click **Remove Cluster Node**. When prompted, click **Yes**.
 
-    [!INCLUDE[vmm12short](./Token/vmm12short_md.md)] removes the node from the cluster. Open the **Jobs** workspace to view the job status.
+    [!INCLUDE[vmm12short](Token/vmm12short_md.md)] removes the node from the cluster. Open the **Jobs** workspace to view the job status.
 
     > [!NOTE]
-    > As part of the job, any shared storage that is managed through [!INCLUDE[vmm12short](./Token/vmm12short_md.md)] is unregistered from the node that is being removed. If you are using storage management tools other than [!INCLUDE[vmm12short](./Token/vmm12short_md.md)] for the storage, we recommend that you use those tools to unregister the shared storage from the node.
+    > As part of the job, any shared storage that is managed through [!INCLUDE[vmm12short](Token/vmm12short_md.md)] is unregistered from the node that is being removed. If you are using storage management tools other than [!INCLUDE[vmm12short](Token/vmm12short_md.md)] for the storage, we recommend that you use those tools to unregister the shared storage from the node.
 
 ## See Also
-[Modifying Hyper-V host clusters in VMM](./Modifying-Hyper-V-host-clusters-in-VMM.md)
-[Managing Hyper-V hosts and host clusters with VMM](./Managing-Hyper-V-hosts-and-host-clusters-with-VMM.md)
-[Managing hosts and host clusters with VMM](./Managing-hosts-and-host-clusters-with-VMM.md)
-[Managing fabric resources with VMM](./Managing-fabric-resources-with-VMM.md)
+[Modifying Hyper-V host clusters in VMM](Modifying-Hyper-V-host-clusters-in-VMM.md)
+[Managing Hyper-V hosts and host clusters with VMM](Managing-Hyper-V-hosts-and-host-clusters-with-VMM.md)
+[Managing hosts and host clusters with VMM](Managing-hosts-and-host-clusters-with-VMM.md)
+[Managing fabric resources with VMM](Managing-fabric-resources-with-VMM.md)
 
 

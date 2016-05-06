@@ -11,9 +11,9 @@ ms.topic: article
 ms.assetid: d664710d-7e8e-4f83-a4b2-2979197aa099
 ---
 # How to Uninstall a Highly Available VMM Management Server
-You can use the following procedures to uninstall a highly available [!INCLUDE[vmm12sp1_long](./Token/vmm12sp1_long_md.md)] management server. To uninstall high availability completely, you will need to uninstall highly available VMM management server from each node in the cluster.
+You can use the following procedures to uninstall a highly available [!INCLUDE[vmm12sp1_long](Token/vmm12sp1_long_md.md)] management server. To uninstall high availability completely, you will need to uninstall highly available VMM management server from each node in the cluster.
 
-Before uninstalling [!INCLUDE[vmm12short](./Token/vmm12short_md.md)], ensure that the VMM console and the VMM command shell are closed. If you are uninstalling an additional node of a highly available VMM management server, use Failover Cluster Manager to ensure that the node is not currently the owner of the highly available service. If the node is the current owner, move the service to another node in the cluster.
+Before uninstalling [!INCLUDE[vmm12short](Token/vmm12short_md.md)], ensure that the VMM console and the VMM command shell are closed. If you are uninstalling an additional node of a highly available VMM management server, use Failover Cluster Manager to ensure that the node is not currently the owner of the highly available service. If the node is the current owner, move the service to another node in the cluster.
 
 Membership in the local Administrators group, or equivalent, on the computer that you are configuring is the minimum required to complete these procedures.
 

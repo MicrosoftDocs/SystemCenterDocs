@@ -48,7 +48,7 @@ The following options are available on the **General Options** page of the wizar
 |----------|---------------|
 |Name|The name used for the service. This name is displayed in the Operations console for the wizard.|
 |Description|Optional description of the service.|
-|Management Pack|Management pack to store the class and monitors that the template creates. If you create any additional monitors or rules that use the service as a target class, they have to be stored in the same management pack.<br /><br />For more information about management packs, see [Selecting a Management Pack File](./Selecting-a-Management-Pack-File.md).|
+|Management Pack|Management pack to store the class and monitors that the template creates. If you create any additional monitors or rules that use the service as a target class, they have to be stored in the same management pack.<br /><br />For more information about management packs, see [Selecting a Management Pack File](Selecting-a-Management-Pack-File.md).|
 
 ### Service Details
 The following options are available on the **Service Details** page of the wizard.
@@ -82,7 +82,7 @@ In addition to performing the specified monitoring, the **Windows Service** temp
 
     -   If you want to discover the service on all Windows\-based computers in the management group, you do not have to create a group. You can use the existing group **All Windows Computers**.
 
-    -   If you only want the service to be discovered on a certain group of computers, either ensure that an appropriate group exists or create a new group by using the procedure in [How to Create Groups in Operations Manager](./How-to-Create-Groups-in-Operations-Manager.md).
+    -   If you only want the service to be discovered on a certain group of computers, either ensure that an appropriate group exists or create a new group by using the procedure in [How to Create Groups in Operations Manager](How-to-Create-Groups-in-Operations-Manager.md).
 
     -   If the service you are monitoring is in a cluster, create a group with objects of the class **Virtual Server** representing the nodes of the cluster that contains the service.
 
@@ -92,7 +92,7 @@ In addition to performing the specified monitoring, the **Windows Service** temp
 
 4.  On the **General Properties** page, in the **Name** and **Description** boxes, type a **name** and description for this new monitor.
 
-5.  Select a management pack in which to save the monitor, or click **New** to create a new management pack. For more information, see [Selecting a Management Pack File](./Selecting-a-Management-Pack-File.md).
+5.  Select a management pack in which to save the monitor, or click **New** to create a new management pack. For more information, see [Selecting a Management Pack File](Selecting-a-Management-Pack-File.md).
 
 6.  Click **Next**.
 
@@ -104,7 +104,7 @@ In addition to performing the specified monitoring, the **Windows Service** temp
 
 10. Click **Next**.
 
-11. Select the performance counters and thresholds that you want to monitor. For more detailed information, see the [Wizard Options](./Windows-Service-Template.md#Options) section.
+11. Select the performance counters and thresholds that you want to monitor. For more detailed information, see the [Wizard Options](Windows-Service-Template.md#Options) section.
 
 12. If you have selected performance counters, specify the monitoring interval.
 

@@ -11,7 +11,7 @@ ms.topic: article
 ms.assetid: 8c69ac89-eb91-4a06-87f9-8e0c34120255
 ---
 # Deleting Configuration Items
-Deleting configuration items is a two\-step process, and only members of the Advanced Operators, Authors, and Administrators user roles can initiate the Delete process in Service Manager. The first step does not delete configuration items directly. Instead, this process changes the property values of a configuration item so that the item will only be displayed in a **Deleted Items** view. The state of the configuration item is changed from Active to Pending Delete. A [!INCLUDE[smshort](./Token/smshort_md.md)] administrator can later log on and permanently delete the configuration item from the [!INCLUDE[smshort](./Token/smshort_md.md)] database.
+Deleting configuration items is a two\-step process, and only members of the Advanced Operators, Authors, and Administrators user roles can initiate the Delete process in Service Manager. The first step does not delete configuration items directly. Instead, this process changes the property values of a configuration item so that the item will only be displayed in a **Deleted Items** view. The state of the configuration item is changed from Active to Pending Delete. A [!INCLUDE[smshort](Token/smshort_md.md)] administrator can later log on and permanently delete the configuration item from the [!INCLUDE[smshort](Token/smshort_md.md)] database.
 
 ## How to Initiate the Deletion of a Configuration Item
 
@@ -19,9 +19,9 @@ You can use the following procedures to initiate the deletion of a configuration
 
 ### To initiate the deletion of a configuration item
 
-1.  Log on to a computer that hosts the [!INCLUDE[smcons](./Token/smcons_md.md)] by using a user account that is a member of the Advanced Operators, Authors, or Administrators user role.
+1.  Log on to a computer that hosts the [!INCLUDE[smcons](Token/smcons_md.md)] by using a user account that is a member of the Advanced Operators, Authors, or Administrators user role.
 
-2.  In the [!INCLUDE[smcons](./Token/smcons_md.md)], click **Configuration Items**.
+2.  In the [!INCLUDE[smcons](Token/smcons_md.md)], click **Configuration Items**.
 
 3.  In the **Configuration Items** pane, expand **Configuration Items**, expand **Computers**, and then click **All Windows Computers**.
 
@@ -33,14 +33,14 @@ You can use the following procedures to initiate the deletion of a configuration
 
 ### To validate that the deletion of a configuration item has been initiated
 
-1.  In the [!INCLUDE[smcons](./Token/smcons_md.md)], click **View**, and then click **Refresh**. Or, press F5.
+1.  In the [!INCLUDE[smcons](Token/smcons_md.md)], click **View**, and then click **Refresh**. Or, press F5.
 
 2.  Verify that the configuration item you selected is no longer displayed.
 
     > [!NOTE]
     > At this point, the configuration item has been moved to a **Deleted Item** view that is only available to members of the Administrator user role. An administrator must permanently delete the configuration item.
 
-![](/Image/PSSymbol.gif)You can use Windows PowerShell commands to complete these tasks, as follows:
+![](Image/PSSymbol.gif)You can use Windows PowerShell commands to complete these tasks, as follows:
 
 -   For information about how to use Windows PowerShell to initiate the deletion of a configuration item by updating the `PendingDelete` property value, see [Update\-SCSMClassInstance](http://go.microsoft.com/fwlink/p/?LinkID=225420).
 
@@ -48,13 +48,13 @@ You can use the following procedures to initiate the deletion of a configuration
 
 
 ## How to Delete or Restore a Configuration Item
-After members of the Advanced Operators, Authors, or Administrators user roles have initiated the deletion of a configuration item, a Service Manager administrator can use the following procedures to either permanently delete the configuration item or to restore the original properties for this item. You may need to refresh the [!INCLUDE[smcons](./Token/smcons_md.md)] to update the list of configuration items.
+After members of the Advanced Operators, Authors, or Administrators user roles have initiated the deletion of a configuration item, a Service Manager administrator can use the following procedures to either permanently delete the configuration item or to restore the original properties for this item. You may need to refresh the [!INCLUDE[smcons](Token/smcons_md.md)] to update the list of configuration items.
 
 ### To complete the deletion of a configuration item
 
-1.  Log on to a computer that hosts the [!INCLUDE[smcons](./Token/smcons_md.md)] by using a user account that is a member of the Administrators user role.
+1.  Log on to a computer that hosts the [!INCLUDE[smcons](Token/smcons_md.md)] by using a user account that is a member of the Administrators user role.
 
-2.  In the [!INCLUDE[smcons](./Token/smcons_md.md)], click **Administration**.
+2.  In the [!INCLUDE[smcons](Token/smcons_md.md)], click **Administration**.
 
 3.  In the **Administration** pane, expand **Administration**, and then click **Deleted Items**.
 
@@ -69,13 +69,13 @@ After members of the Advanced Operators, Authors, or Administrators user roles h
 
 ### To restore a configuration item
 
-1.  Log on to a computer that hosts the [!INCLUDE[smcons](./Token/smcons_md.md)] by using a user account that is a member of the Administrators user role.
+1.  Log on to a computer that hosts the [!INCLUDE[smcons](Token/smcons_md.md)] by using a user account that is a member of the Administrators user role.
 
-2.  In the [!INCLUDE[smcons](./Token/smcons_md.md)], click **Administration**.
+2.  In the [!INCLUDE[smcons](Token/smcons_md.md)], click **Administration**.
 
 3.  In the **Administration** pane, expand **Administration**, and then click **Deleted Items**.
 
-4.  In the **Deleted Items** pane, click the configuration items that you want to restore to the [!INCLUDE[smshort](./Token/smshort_md.md)] database. You can use the CTRL or SHIFT keys to select multiple configuration items.
+4.  In the **Deleted Items** pane, click the configuration items that you want to restore to the [!INCLUDE[smshort](Token/smshort_md.md)] database. You can use the CTRL or SHIFT keys to select multiple configuration items.
 
 5.  In the **Tasks** pane, click **Restore Items**.
 
@@ -84,7 +84,7 @@ After members of the Advanced Operators, Authors, or Administrators user roles h
 
 6.  In the **Delete Item** dialog box, make sure that you selected the correct items, and then click **Yes**.
 
-![](/Image/PSSymbol.gif)You can use Windows PowerShell commands to complete these tasks, as follows:
+![](Image/PSSymbol.gif)You can use Windows PowerShell commands to complete these tasks, as follows:
 
 -   For information about how to use Windows PowerShell to permanently remove an instance of a configuration item object, see [Remove\-SCSMClassInstance](http://go.microsoft.com/fwlink/p/?LinkID=225414).
 
