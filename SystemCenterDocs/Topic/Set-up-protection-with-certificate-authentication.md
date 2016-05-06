@@ -1,0 +1,175 @@
+---
+title: Set up protection with certificate authentication
+ms.custom: na
+ms.prod: system-center-2012
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - data-protection-manager
+ms.tgt_pltfrm: na
+ms.topic: article
+ms.assetid: 63e0440a-6a31-486d-b1e0-62aa049a4b41
+---
+# Set up protection with certificate authentication
+You can deploy DPM to protect computers in workgroups and untrusted domains. You can handle authentication using NTLM or certificates. This topic describes how to set up protection with certificate authentication.
+
+## Before you start
+
+-   Each computer you want to protect should have at least .NET Framework 3.5 with SP1 installed.
+
+-   The certificate you use for authentication must comply with the following:
+
+    -   X.509 V3 certificate
+
+    -   Enhanced Key Usage \(EKU\) should have client authentication and server authentication.
+
+    -   Key length should be at least 1024 bits.
+
+    -   Key type should be **exchange**.
+
+    -   The subject name of the certificate and the root certificate should not be empty.
+
+    -   The revocation servers of the associated Certificate Authorities are online and accessible by both the protected server and DPM server
+
+    -   The certificate should have associated private key
+
+    -   DPM doesn’t support certificates with CNG Keys
+
+    -   [!INCLUDE[dpm2012short](../Token/dpm2012short_md.md)] doesn’t support self\-signed certificates.
+
+-   Each computer you want to protect \(including virtual machines\) must have its own certificate.
+
+## Set up protection
+
+1.  [Create a DPM certificate template](#BKMK_Template)
+
+2.  [Configure a certificate on the DPM server](#BKMK_CertDPM).
+
+3.  [Install the agent](#BKMK_Agent)
+
+4.  [Configure a certificate on the protected computer](#BKMK_Protected)
+
+5.  [Attach the computer](#BKMK_AttachComputer)
+
+## <a name="BKMK_Template"></a>Create a DPM certificate template
+You can optionally set up a DPM template for web enrollment. If you do want to do this, select a template that has Client Authentication and Server Authentication as its intended purpose. For example:
+
+1.  In the **Certificate Templates** MMC snap\-in you could select the **RAS and IAS Server** template. Right\-click it and select **Duplicate Template**.
+
+2.  In **Duplicate Template**, leave the default setting **Windows Server 2003 Enterprise**.
+
+3.  In the **General** tab, change the template display name to something recognizable. For example **DPM Authentication**. Make sure the setting **Publish certificate in Active Directory** is enabled.
+
+4.  In the **Request Handling** tab, make sure **Allow private key to be exported** is enabled.
+
+5.  After you’ve created the template make it available for use. Open the Certificate Authority snap\-in. Right\-click **Certificate Templates**, select **New**, and choose **Certificate Template to Issue**. In **Enable Certificate Template** select the template and click OK. Now the template will be available when you obtain a certificate.
+
+6.
+
+### Enable enrollment or autoenrollment
+If you want to optionally configure the template for enrollment or autoenrollment, click the Subject Name tab in the template properties. When you configure enrollment the template can be selected in the MMC. If you configure autoenrollment the certificate is automatically assigned to all computers in the domain.
+
+-   For enrollment, in the **Subject Name** tab of the template properties, enable **Select Build from this Active Directory information**. In **Subject name format** select **Common Name** and enable **DNS name**. Then go to the Security tab and assign the **Enroll** permission to authenticated users.
+
+-   For autoenrollment, go to the **Security** tab and assign the **Autoenroll** permission to authenticated users. With this setting enabled the certificate will be automatically assigned to all computers in the domain.
+
+-   If you’ve configured enrollment you’ll be able to request a new certificate in the MMC, based on the template. To do this, on the protected computer, in **Certificates \(Local Computer\)** > **Personal**, right\-click **Certificates**. Select **All Tasks** > **Request New Certificate**. In the **Select Certificate Enrollment Policy** page of the wizard select **Active Directory Enrollment Policy**. In **Request Certificates** you’ll see the template. Expand **Details** and click **Properties**. Select the **General** tab and provide a friendly name. After you apply the settings you should receive a message that the certificate was installed successfully.
+
+## <a name="BKMK_CertDPM"></a>Configure a certificate on the DPM server
+
+1.  Generate a certificate from a CA for the [!INCLUDE[dpm2012short](../Token/dpm2012short_md.md)] server, via web enrollment or some other method. In web enrollment, select **advanced certificate required**, and **Create and Submit a request to this CA**. Make sure the key size is 1024 or higher, and that **Mark key as exportable** is selected.
+
+2.  The certificate is placed in the User store. We need to move it to the Local Computer store.
+
+3.  To do this export the certificate from the User store. Make sure you export it with the private key. You can export it in the default .pfx format. Specify a password for the export.
+
+4.  In Local Computer\\Personal\\Certificate run the Certificate Import Wizard to imported the exported file from its saved location. Specify the password you used to export it and make sure **Mark this key as exportable** is selected. On the Certificate Store page leave the default setting **Place all certificates in the following store**, and ensure **Personal** is displayed.
+
+5.  After the import set the DPM credentials to use the certificate, as follows:
+
+    1.  Obtain the thumbprint for the certificate. In the **Certificates** store double\-click on the certificate. Select the **Details** tab and scroll down to the thumbprint. Click it, highlight and copy it. Paste the thumbprint into Notepad and remove any spaces.
+
+    2.  Run **Set\-DPMCredentials** to configure the [!INCLUDE[dpm2012short](../Token/dpm2012short_md.md)] server:
+
+        ```
+        Set-DPMCredentials [–DPMServerName <String>] [–Type <AuthenticationType>] [Action <Action>] [–OutputFilePath <String>] [–Thumbprint <String>] [–AuthCAThumbprint <String>]
+        ```
+
+    -   **\-Type**—Indicates the type of authentication. Value: **certificate**.
+
+    -   **\-Action**—Specify whether you want to perform the command for the first time, or regenerate the credentials. Possible values: **regenerate** or **configure**.
+
+    -   \-**OutputFilePath**— Location of the output file used in Set\-DPMServer on the protected computer.
+
+    -   **–Thumbprint**—Copy from the Notepad file.
+
+    -   **\-AuthCAThumbprint**—Thumbprint of the CA in the trust chain of the certificate. Optional. If not specified, Root will be used.
+
+6.  This generates a metadata file \(.bin\) that is required at the time of each agent install in untrusted domain. Make sure that the C:\\Temp folder exists before  you run the command. Note that if the file is lost or deleted you can recreate it by running the script with the **–action regenerate** option.
+
+7.  Retrieve the .bin file and copy it to the C:\\Program Files\\Microsoft Data Protection Manager\\DPM\\bin folder on the computer you want to protect. You don’t have to do this, but if you don’t you’ll need to specify the full path of the file for the –DPMcredential parameter when you …
+
+8.  Repeat these steps on every [!INCLUDE[dpm2012short](../Token/dpm2012short_md.md)] server that will protect a computer in a workgroup or in an untrusted domain.
+
+## <a name="BKMK_Agent"></a>Install the agent
+
+1.  On each computer you want to protect, run DPMAgentInstaller\_X64.exe from the DPM installation CD to install the agent.
+
+## <a name="BKMK_Protected"></a>Configure a certificate on the protected computer
+
+1.  Generate a certificate from a CA for the protected computer, via web enrollment or some other method. In web enrollment, select **advanced certificate required**, and **Create and Submit a request to this CA**. Make sure the key size is 1024 or higher, and that **Mark key as exportable** is selected.
+
+2.  The certificate is placed in the User store. We need to move it to the Local Computer store.
+
+3.  To do this export the certificate from the User store. Make sure you export it with the private key. You can export it in the default .pfx format. Specify a password for the export.
+
+4.  In Local Computer\\Personal\\Certificate run the Certificate Import Wizard to imported the exported file from its saved location. Specify the password you used to export it and make sure **Mark this key as exportable** is selected. On the Certificate Store page leave the default setting **Place all certificates in the following store**, and ensure **Personal** is displayed.
+
+5.  After the import configure the computer to recognize the DPM server as authorized to perform backups, as follows
+
+    1.  Obtain the thumbprint for the certificate. In the **Certificates** store double\-click on the certificate. Select the **Details** tab and scroll down to the thumbprint. Click it, highlight and copy it. Paste the thumbprint into Notepad and remove any spaces.
+
+    2.  Navigate to the C:\\Program files\\Microsoft Data Protection anager\\DPM\\bin folder. And run **setdpmserver** as follows:
+
+        ```
+        setdpmserver –dpmCredential CertificateConfiguration_DPM01.contoso.com.bin –OutputFilePath c:\Temp -Thumbprint <ClientThumbprintWithNoSpaces
+        ```
+
+        Where ClientThumbprintWithNoSpaces is copied from the Notepad file.
+
+    3.  You should get output to confirm that the configuration was completed successfully.
+
+6.  Retrieve the .bin file and copy it to the DPM server. We suggest you copy it to the default location in which the Attach process will check for the file \(Windows\\System32\) so you can just specify the filename instead of the full path when you run the Attach command.
+
+## <a name="BKMK_AttachComputer"></a>Attach the computer
+You attach the computer to the DPM server using the Attach\-ProductionServerWithCertificate.ps1 PowerShell script, using the syntax.
+
+```
+Attach-ProductionServerWithCertificate.ps1 [-DPMServerName <String>] [-PSCredential <String>] [<CommonParameters>]
+```
+
+-   \-DPMServerName—Name of the DPM server
+
+-   PSCredential—Name of the .bin file. If you placed it in the Windows\\System32 folder you can specify the file name only. Be careful to specify the .bin file created o nthe protected server. If you specify the .bin file created on the DPM server you’ll remove all the protected computers that are configured for certificate\-based authentication.
+
+After the attach process completes the protected computer should appear in the DPM console.
+
+## Examples
+**Example 1**
+
+Generates a file in c:\\CertMetaData\\ with name CertificateConfiguration\_<DPM SERVER FQDN>.bin
+
+```
+Set-DPMCredentials -DPMServerName dpmserver.contoso.com -Type Certificate -Action Configure -OutputFilePath c:\CertMetaData\ –Thumbprint “cf822d9ba1c801ef40d4b31de0cfcb200a8a2496”
+```
+
+Where dpmserver.contoso.com is the name of the [!INCLUDE[dpm2012short](../Token/dpm2012short_md.md)] server and “cf822d9ba1c801ef40d4b31de0cfcb200a8a2496” is the thumbprint of the [!INCLUDE[dpm2012short](../Token/dpm2012short_md.md)] server certificate.
+
+**Example 2**
+
+Regenerates a lost configuration file in the folder c:\\CertMetaData\\
+
+```
+Set-DPMCredentials -DPMServerName dpmserver.contoso.com -Type Certificate “-OutputFilePath c:\CertMetaData\ -Action Regenerate
+```
+

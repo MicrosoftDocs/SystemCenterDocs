@@ -1,0 +1,1 @@
+The terms privileged and unprivileged refer to the following security concepts for a UNIX or Linux computer:

@@ -1,0 +1,1 @@
+© 2015 Microsoft Corporation. All rights reserved.
