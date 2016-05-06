@@ -8,7 +8,7 @@ ms.topic: article
 ms.assetid: 1dab5b7b-eeb0-43f7-979b-48d0f904bb24
 ---
 # How to configure deployment settings for a service
-When you are configuring a service for deployment to a private cloud or to a host group in [!INCLUDE[vmm12sp1_long](../Token/vmm12sp1_long_md.md)], you can configure settings for the following:
+When you are configuring a service for deployment to a private cloud or to a host group in [!INCLUDE[vmm12sp1_long](./Token/vmm12sp1_long_md.md)], you can configure settings for the following:
 
 -   The service
 
@@ -17,7 +17,7 @@ When you are configuring a service for deployment to a private cloud or to a hos
 -   The applications that are being installed
 
 > [!NOTE]
-> The procedures below assume that you have started the deployment process for a service and that you are working in the **Deploy Service** window. For information about starting the deployment process, see [How to deploy a service in VMM](../Topic/How-to-deploy-a-service-in-VMM.md).
+> The procedures below assume that you have started the deployment process for a service and that you are working in the **Deploy Service** window. For information about starting the deployment process, see [How to deploy a service in VMM](./How-to-deploy-a-service-in-VMM.md).
 
 ### To configure deployment settings for the service
 
@@ -54,10 +54,11 @@ When you are configuring a service for deployment to a private cloud or to a hos
 
 -   In the left pane, the **Settings** tab displays the service settings that will be used during application deployment. The contents of the **Settings** tab varies depending on the application packages and scripts that are configured for the service.
 
--   For more information about configuring application installations, see [How to create an application profile in a service deployment](../Topic/How-to-create-an-application-profile-in-a-service-deployment.md).
+-   For more information about configuring application installations, see [How to create an application profile in a service deployment](./How-to-create-an-application-profile-in-a-service-deployment.md).
 
 ## See Also
-[Deploying services in VMM](../Topic/Deploying-services-in-VMM.md)
-[Managing services with VMM](../Topic/Managing-services-with-VMM.md)
-[Managing tenant resources with VMM](../Topic/Managing-tenant-resources-with-VMM.md)
+[Deploying services in VMM](./Deploying-services-in-VMM.md)
+[Managing services with VMM](./Managing-services-with-VMM.md)
+[Managing tenant resources with VMM](./Managing-tenant-resources-with-VMM.md)
+
 

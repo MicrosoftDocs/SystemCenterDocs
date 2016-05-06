@@ -71,3 +71,4 @@ Verify that you can successfully run a report from the Operations console.
 
 Ensure that the health state of all **Management servers** is **Healthy**.
 
+

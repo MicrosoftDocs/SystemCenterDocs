@@ -44,3 +44,4 @@ Use the following procedure to create an event analysis report.
 
 13. Click **Close** to close the report.
 
+

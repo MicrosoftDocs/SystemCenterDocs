@@ -37,3 +37,4 @@ The following table lists the published data items.
 |Computer to ping|The computer that is being monitored.|
 |Percentage of packets received|The percentage of packets that were received back from the ping.|
 
+

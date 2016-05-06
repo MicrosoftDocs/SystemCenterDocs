@@ -17,9 +17,10 @@ The Operations Guide is a comprehensive resource that can be used to understand 
 
 ## Operations Guide Areas
 
--   [General Tasks in Operations Manager](../Topic/General-Tasks-in-Operations-Manager.md)
+-   [General Tasks in Operations Manager](./General-Tasks-in-Operations-Manager.md)
 
 -   [Operations Manager Monitoring Scenarios](Operations-Manager-Monitoring-Scenarios.md)
 
 -   [Managing Access in Operations Manager](Managing-Access-in-Operations-Manager.md)
+
 

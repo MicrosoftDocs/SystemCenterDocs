@@ -47,11 +47,12 @@ Use the following procedure to run a report from the Reporting workspace. In thi
 14. Click **Close** to close the report.
 
 ## See Also
-[Using Reports in Operations Manager](../Topic/Using-Reports-in-Operations-Manager.md)
-[How to Create Reports in Operations Manager](../Topic/How-to-Create-Reports-in-Operations-Manager.md)
-[How to Save a Report](../Topic/How-to-Save-a-Report.md)
-[Operations Manager Reports Library](../Topic/Operations-Manager-Reports-Library.md)
-[Scheduling Reports](../Topic/Scheduling-Reports.md)
-[Operations Manager Reports Library](../Topic/Operations-Manager-Reports-Library.md)
-[How to Troubleshoot Reports that Return No Data](../Topic/How-to-Troubleshoot-Reports-that-Return-No-Data.md)
+[Using Reports in Operations Manager](./Using-Reports-in-Operations-Manager.md)
+[How to Create Reports in Operations Manager](./How-to-Create-Reports-in-Operations-Manager.md)
+[How to Save a Report](./How-to-Save-a-Report.md)
+[Operations Manager Reports Library](./Operations-Manager-Reports-Library.md)
+[Scheduling Reports](./Scheduling-Reports.md)
+[Operations Manager Reports Library](./Operations-Manager-Reports-Library.md)
+[How to Troubleshoot Reports that Return No Data](./How-to-Troubleshoot-Reports-that-Return-No-Data.md)
+
 

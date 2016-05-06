@@ -16,7 +16,7 @@ This section describes how to configure your environment to place  a Report data
 ## Enabling communications across a firewall
 In an environment where the Reporting data warehouse is separated from the management server and Reporting Server by a firewall, Windows Integrated Authentication cannot be used. You need to take steps to configure SQL Server Authentication. The following sections explain how to enable SQL Server Authentication between the management server \(or management server\), the Reporting Server, and the Reporting data warehouse, as shown in the following illustration.
 
-![](../Image/OM_Reporting.jpeg)
+![](/Image/OM_Reporting.jpeg)
 
 ### Management Server and Reporting Data Warehouse
 Follow these steps to setup SQL Server authentication
@@ -44,7 +44,7 @@ You should determine what port number the computer running SQL Server on the Rep
 A "Could not verify if current user is in sysadmin Role" error message might display when installing Reporting if the reporting server and the management server are separated by a firewall. This error message might display even if the proper firewall ports have been opened. This error occurs after entering the computer name for the management server and clicking **Next**. This error might also display because Reporting Setup was unable to connect to the operational database on the management server. In this environment you must determine what port number is being used by the computer running SQL Server and configure the Operations Manager database to use the port number. See the topic [How to Configure the Operations Manager Database to Listen on a Specific TCP/IP Port](https://technet.microsoft.com/library/hh467903.aspx).
 
 ### Port Assignments
-The following table shows [!INCLUDE[om12short](../Token/om12short_md.md)] feature interaction across a firewall, including information about the ports used for communication between the features, which direction to open the inbound port, and whether the port number can be changed.
+The following table shows [!INCLUDE[om12short](./Token/om12short_md.md)] feature interaction across a firewall, including information about the ports used for communication between the features, which direction to open the inbound port, and whether the port number can be changed.
 
 |Operations Manager Feature A|Port Number and Direction|Operations Manager Featuret B|Configurable|Note|
 |--------------------------------|-----------------------------|---------------------------------|----------------|--------|
@@ -56,7 +56,7 @@ The following table shows [!INCLUDE[om12short](../Token/om12short_md.md)] featur
 |Operations console|5724 \-\-\->|management server|No||
 |Connector framework source|51905 \-\-\->|management server|No||
 |web console server|Web site port \-\-\->|management server|No||
-|web console browser|51908 \-\-\->|web console server|Yes \(IIS Admin\)|Port 51908 is the default port used when selecting Windows Authentication. If you select Forms Authentication, you will need to install an SSL certificate and configure an available port for https functionality for the [!INCLUDE[om12short](../Token/om12short_md.md)] web console web site.|
+|web console browser|51908 \-\-\->|web console server|Yes \(IIS Admin\)|Port 51908 is the default port used when selecting Windows Authentication. If you select Forms Authentication, you will need to install an SSL certificate and configure an available port for https functionality for the [!INCLUDE[om12short](./Token/om12short_md.md)] web console web site.|
 |connected management server \(Local\)|5724 \-\-\->|connected management server \(Connected\)|No||
 |Agent installed using MOMAgent.msi|5723 \-\-\->|management server|Yes \(Setup\)||
 |Agent installed using MOMAgent.msi|5723 \-\-\->|management server|Yes \(Setup\)||
@@ -68,4 +68,5 @@ The following table shows [!INCLUDE[om12short](../Token/om12short_md.md)] featur
 |Operations console \(reports\)|80 \-\-\->|SQL Reporting Services|No|The Operations console uses Port 80 to connect to the SQL Reporting Services web site.|
 |Reporting server|1433 \-\-\->|Reporting data warehouse|Yes||
 |management server \(Audit Collection Services collector\)|1433 \-\-\->|Audit Collection Services database|Yes||
+
 

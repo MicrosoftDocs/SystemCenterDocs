@@ -11,15 +11,15 @@ ms.topic: article
 ms.assetid: 25937b4f-40bc-4765-9322-5b3a0fd1ff8d
 ---
 # Windows PowerShell Workflow Concepts
-One [[type of runbook](Runbook-Types-in-Service-Management-Automation.md)](Runbook%20Types%20in%20Service%20Management%20Automation.md) for Service Management Automation is based on Windows PowerShell Workflows. This section provides a brief overview of critical features of workflows that are common to [!INCLUDE[sma_2](../Token/sma_2_md.md)] runbooks. Complete details on workflows are available in [Getting Started with Windows PowerShell Workflow](http://go.microsoft.com/fwlink/?LinkID=324602).
+One [[type of runbook](Runbook-Types-in-Service-Management-Automation.md)](Runbook%20Types%20in%20Service%20Management%20Automation.md) for Service Management Automation is based on Windows PowerShell Workflows. This section provides a brief overview of critical features of workflows that are common to [!INCLUDE[sma_2](./Token/sma_2_md.md)] runbooks. Complete details on workflows are available in [Getting Started with Windows PowerShell Workflow](http://go.microsoft.com/fwlink/?LinkID=324602).
 
-The runbook structure is identical between runbooks for [!INCLUDE[sma_1](../Token/sma_1_md.md)] and for [Microsoft Azure Automation](http://aka.ms/runbookauthor/azure) although the two will typically work with different resources.
+The runbook structure is identical between runbooks for [!INCLUDE[sma_1](./Token/sma_1_md.md)] and for [Microsoft Azure Automation](http://aka.ms/runbookauthor/azure) although the two will typically work with different resources.
 
 ## Windows PowerShell Workflows
 A workflow is a sequence of programmed, connected steps that perform long\-running tasks or require the coordination of multiple steps across multiple devices or managed nodes. The benefits of a workflow over a normal script include the ability to simultaneously perform an action against multiple devices and the ability to automatically recover from failures. A Windows PowerShell Workflow is a Windows PowerShell script that leverages Windows Workflow Foundation. While the workflow is written with Windows PowerShell syntax and launched by Windows PowerShell, it is processed by Windows Workflow Foundation.
 
 ### Basic Structure
-A Windows PowerShell Workflow starts with the **Workflow** keyword followed by the body of the script enclosed in braces. The name of the workflow follows the **Workflow** keyword as shown in the following syntax. The name of the workflow matches the name of the [!INCLUDE[sma_2](../Token/sma_2_md.md)] runbook.
+A Windows PowerShell Workflow starts with the **Workflow** keyword followed by the body of the script enclosed in braces. The name of the workflow follows the **Workflow** keyword as shown in the following syntax. The name of the workflow matches the name of the [!INCLUDE[sma_2](./Token/sma_2_md.md)] runbook.
 
 ```powershell
 Workflow Test-Runbook
@@ -46,7 +46,7 @@ Workflow Test-Runbook
 ```
 
 ### <a name="BK_Naming"></a>Naming
-The name of the workflow should conform to the Verb\-Noun format that is standard with Windows PowerShell. You can refer to [Approved Verbs for Windows PowerShell Commands](http://go.microsoft.com/fwlink/?LinkID=324604) for a list of approved verbs to use. The name of the workflow must match the name of the [!INCLUDE[sma_2](../Token/sma_2_md.md)] runbook. If the runbook is being imported, then the filename must match the workflow name and must end in .ps1.
+The name of the workflow should conform to the Verb\-Noun format that is standard with Windows PowerShell. You can refer to [Approved Verbs for Windows PowerShell Commands](http://go.microsoft.com/fwlink/?LinkID=324604) for a list of approved verbs to use. The name of the workflow must match the name of the [!INCLUDE[sma_2](./Token/sma_2_md.md)] runbook. If the runbook is being imported, then the filename must match the workflow name and must end in .ps1.
 
 ### Limitations
 For a complete list of limitations and syntax differences between Windows PowerShell Workflows and Windows PowerShell, see [Syntactic Differences Between Script Workflows and Scripts](http://technet.microsoft.com/library/jj574140.aspx).
@@ -57,13 +57,13 @@ An activity is a specific task in a workflow. Just as a script is composed of on
 Workflow activities share a set of common parameters to configure their operation. For details about the workflow common parameters, see [about\_WorkflowCommonParameters](http://go.microsoft.com/fwlink/?LinkID=324606).
 
 ## <a name="GK_Modules"></a>Integration Modules
-An *Integration Module* is a package that contains a [Windows PowerShell Module](http://go.microsoft.com/fwlink/?LinkID=325518) and can be imported into [!INCLUDE[sma_2](../Token/sma_2_md.md)]. Windows PowerShell Modules contain cmdlets that can be used in [!INCLUDE[sma_2](../Token/sma_2_md.md)] runbooks. Products and services such as Operations Manager and Azure have modules that include cmdlets specific to their operation.
+An *Integration Module* is a package that contains a [Windows PowerShell Module](http://go.microsoft.com/fwlink/?LinkID=325518) and can be imported into [!INCLUDE[sma_2](./Token/sma_2_md.md)]. Windows PowerShell Modules contain cmdlets that can be used in [!INCLUDE[sma_2](./Token/sma_2_md.md)] runbooks. Products and services such as Operations Manager and Azure have modules that include cmdlets specific to their operation.
 
-Integration Modules that are imported into [!INCLUDE[sma_2](../Token/sma_2_md.md)] are automatically available to all runbooks. Since [!INCLUDE[sma_2](../Token/sma_2_md.md)] is based on Windows PowerShell 4.0, it supports auto loading of modules meaning that cmdlets from installed modules can be used without importing them into the script with [Import\-Module](http://go.microsoft.com/fwlink/?LinkID=324984).
+Integration Modules that are imported into [!INCLUDE[sma_2](./Token/sma_2_md.md)] are automatically available to all runbooks. Since [!INCLUDE[sma_2](./Token/sma_2_md.md)] is based on Windows PowerShell 4.0, it supports auto loading of modules meaning that cmdlets from installed modules can be used without importing them into the script with [Import\-Module](http://go.microsoft.com/fwlink/?LinkID=324984).
 
-Any Windows PowerShell module can be imported into [!INCLUDE[sma_2](../Token/sma_2_md.md)] as long as all of its dependencies can be located in a single folder. If the module depends on registry settings or files not in the default path, then it can be imported, but it will most likely not work because [!INCLUDE[sma_2](../Token/sma_2_md.md)] will not be able to locate its dependencies. Modules with external dependencies can be used in a runbook by installing them on another host using and then accessing them with an [InlineScript](Windows-PowerShell-Workflow-Concepts.md#bkmk_InlineScript) script block.
+Any Windows PowerShell module can be imported into [!INCLUDE[sma_2](./Token/sma_2_md.md)] as long as all of its dependencies can be located in a single folder. If the module depends on registry settings or files not in the default path, then it can be imported, but it will most likely not work because [!INCLUDE[sma_2](./Token/sma_2_md.md)] will not be able to locate its dependencies. Modules with external dependencies can be used in a runbook by installing them on another host using and then accessing them with an [InlineScript](Windows-PowerShell-Workflow-Concepts.md#bkmk_InlineScript) script block.
 
-With [!INCLUDE[sma_1](../Token/sma_1_md.md)], you can use modules with external dependencies by installing them on each Worker server. While the cmdlets in these modules can be used in runbooks, they will not be discovered by [!INCLUDE[sma_2](../Token/sma_2_md.md)] to support such features as the Insert Activity wizard. In order to use this feature, you can create a Portable module using the **New\-SmaPortableModule** cmdlet. This cmdlet creates a module that includes a stub for each of its cmdlets and can be imported into [!INCLUDE[sma_2](../Token/sma_2_md.md)]. When a runbook uses one of those cmdlets, the stub redirects the call to the actual cmdlet in the external module. That module must be installed on each Worker server or the call will fail.
+With [!INCLUDE[sma_1](./Token/sma_1_md.md)], you can use modules with external dependencies by installing them on each Worker server. While the cmdlets in these modules can be used in runbooks, they will not be discovered by [!INCLUDE[sma_2](./Token/sma_2_md.md)] to support such features as the Insert Activity wizard. In order to use this feature, you can create a Portable module using the **New\-SmaPortableModule** cmdlet. This cmdlet creates a module that includes a stub for each of its cmdlets and can be imported into [!INCLUDE[sma_2](./Token/sma_2_md.md)]. When a runbook uses one of those cmdlets, the stub redirects the call to the actual cmdlet in the external module. That module must be installed on each Worker server or the call will fail.
 
 ## <a name="Parallel"></a>Parallel Execution
 One advantage of Windows PowerShell Workflows is the ability to perform a set of commands in parallel instead of sequentially as with a typical script. This is particularly useful in runbooks since they may perform multiple actions that take a significant time to complete. For example, a runbook might provision a set of virtual machines. Rather than performing each provisioning process in sequence with one another, the actions could be performed simultaneously increasing overall efficiency. Only when all are complete would the runbook continue.
@@ -108,7 +108,7 @@ Parallel
 ```
 
 ## <a name="BK_Checkpoints"></a>Checkpoints
-A checkpoint is a snapshot of the current state of the workflow that includes the current value for variables and any output generated to that point. The last checkpoint to complete in a runbook is saved to the [!INCLUDE[sma_2](../Token/sma_2_md.md)] database so that the workflow can resume even in the case of an outage. The checkpoint data is removed once the runbook job is complete.
+A checkpoint is a snapshot of the current state of the workflow that includes the current value for variables and any output generated to that point. The last checkpoint to complete in a runbook is saved to the [!INCLUDE[sma_2](./Token/sma_2_md.md)] database so that the workflow can resume even in the case of an outage. The checkpoint data is removed once the runbook job is complete.
 
 You can set a checkpoint in a workflow with the **Checkpoint\-Workflow** activity. When you include this activity in a runbook, a checkpoint is immediately taken. If the runbook is suspended by an error, when the job is resumed, it will resume from the point of the last checkpoint set.
 
@@ -143,9 +143,9 @@ InlineScript
 } <Common Parameters>
 ```
 
-The most common use for **InlineScript** in a runbook is to run a block of code on another computer. This is required when cmdlets in your runbook are not installed in [!INCLUDE[sma_2](../Token/sma_2_md.md)] or if the action only has permissions to be performed locally on the target computer. This is illustrated in the following diagram.
+The most common use for **InlineScript** in a runbook is to run a block of code on another computer. This is required when cmdlets in your runbook are not installed in [!INCLUDE[sma_2](./Token/sma_2_md.md)] or if the action only has permissions to be performed locally on the target computer. This is illustrated in the following diagram.
 
-![](../Image/SMAAuth_InlineScript.gif)
+![](/Image/SMAAuth_InlineScript.gif)
 
 In order to run the code block on another computer, the **PSComputer** and **PSCredential** parameters are used with the **InlineScript** activity. A global resource such as a [Credential](Credentials.md) or [Connection](Connections.md) is typically used in a runbook to provide values for these parameters. The following sample code runs a set of commands on a computer represented by a connection called MyConnection.
 
@@ -190,4 +190,5 @@ For further details on using **InlineScript**, see [Running Windows PowerShell C
 ## See Also
 [Runbook Execution in Service Management Automation](Runbook-Execution-in-Service-Management-Automation.md)
 [Authoring Automation Runbooks](Authoring-Automation-Runbooks.md)
+
 

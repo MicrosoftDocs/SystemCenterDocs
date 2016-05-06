@@ -21,9 +21,11 @@ You can deploy DPM to protect SharePoint farms, external SQL Server databases, a
 
 You set up SharePoint protect as follows:
 
-1.  [Prerequisites for SharePoint protection](../Topic/Prerequisites-for-SharePoint-protection.md)—Read these before you begin deployment.
+1.  [Prerequisites for SharePoint protection](./Prerequisites-for-SharePoint-protection.md)—Read these before you begin deployment.
 
-2.  [Configure SharePoint Protection](../Topic/Configure-SharePoint-Protection.md)—Walk through the steps to configure protection
+2.  [Configure SharePoint Protection](./Configure-SharePoint-Protection.md)—Walk through the steps to configure protection
 
-3.  [Recover SharePoint data](../Topic/Recover-SharePoint-data.md)—Learn how to recover backed up data.
+3.  [Recover SharePoint data](./Recover-SharePoint-data.md)—Learn how to recover backed up data.
+
+
 

@@ -11,7 +11,7 @@ ms.topic: article
 ms.assetid: 52b248df-6ce7-4553-be57-c1e94ba9bd2c
 ---
 # Audit Collection Services Security
-In [!INCLUDE[om12long](../Token/om12long_md.md)], Audit Collection Services \(ACS\) requires mutual authentication between the ACS collector and each ACS forwarder. By default, Windows authentication, which uses the Kerberos protocol, is used for this authentication. After authentication is complete, all transmissions between ACS forwarders and the ACS collector are encrypted. You do not need to enable additional encryption between ACS forwarders and the ACS collector unless they belong to different Active Directory forests that have no established trusts.
+In [!INCLUDE[om12long]./Token/om12long_md.md)], Audit Collection Services \(ACS\) requires mutual authentication between the ACS collector and each ACS forwarder. By default, Windows authentication, which uses the Kerberos protocol, is used for this authentication. After authentication is complete, all transmissions between ACS forwarders and the ACS collector are encrypted. You do not need to enable additional encryption between ACS forwarders and the ACS collector unless they belong to different Active Directory forests that have no established trusts.
 
 By default, data is not encrypted between the ACS collector and the ACS database. If your organization requires a higher level of security, you can use Secure Sockets Layer \(SSL\) or Transport Layer Security \(TLS\) to encrypt all communication between these components. To enable SSL encryption between the ACS database and the ACS collector, you need to install a certificate on both the database server and the computer hosting the ACS Collector service. After these certificates are installed, configure the SQL client on the ACS collector to force encryption.
 
@@ -27,14 +27,16 @@ Configuration changes to the ACS forwarder are not allowed locally, even from us
 Because of the limited communication between an ACS forwarder and an ACS collector you only need to open the inbound TCP port 51909 on a firewall to enable an ACS forwarder, separated from your network by a firewall, to reach the ACS collector.
 
 ## See Also
-[Collecting Security Events Using Audit Collection Services in Operations Manager](../Topic/Collecting-Security-Events-Using-Audit-Collection-Services-in-Operations-Manager.md)
-[How to Configure Certficates for ACS Collector and Forwarder](../Topic/How-to-Configure-Certficates-for-ACS-Collector-and-Forwarder.md)
-[Audit Collection Services Capacity Planning](../Topic/Audit-Collection-Services-Capacity-Planning.md)
-[Audit Collection Services Performance Counters](../Topic/Audit-Collection-Services-Performance-Counters.md)
-[How to Enable Audit Collection Services &#40;ACS&#41; Forwarders](../Topic/How-to-Enable-Audit-Collection-Services--ACS--Forwarders.md)
-[How to Enable Event Logging and ACS Rules on Solaris and AIX Computers](../Topic/How-to-Enable-Event-Logging-and-ACS-Rules-on-Solaris-and-AIX-Computers.md)
-[How to Filter ACS Events for UNIX and Linux Computers](../Topic/How-to-Filter-ACS-Events-for-UNIX-and-Linux-Computers.md)
-[Monitoring Audit Collection Services Performance](../Topic/Monitoring-Audit-Collection-Services-Performance.md)
-[How to Remove Audit Collection Services &#40;ACS&#41;](../Topic/How-to-Remove-Audit-Collection-Services--ACS-.md)
-[Audit Collection Services Administration &#40;AdtAdmin.exe&#41;](../Topic/Audit-Collection-Services-Administration--AdtAdmin.exe-.md)
+[Collecting Security Events Using Audit Collection Services in Operations Manager](./Collecting-Security-Events-Using-Audit-Collection-Services-in-Operations-Manager.md)
+[How to Configure Certficates for ACS Collector and Forwarder](./How-to-Configure-Certficates-for-ACS-Collector-and-Forwarder.md)
+[Audit Collection Services Capacity Planning](./Audit-Collection-Services-Capacity-Planning.md)
+[Audit Collection Services Performance Counters](./Audit-Collection-Services-Performance-Counters.md)
+[How to Enable Audit Collection Services &#40;ACS&#41; Forwarders](./How-to-Enable-Audit-Collection-Services--ACS--Forwarders.md)
+[How to Enable Event Logging and ACS Rules on Solaris and AIX Computers](./How-to-Enable-Event-Logging-and-ACS-Rules-on-Solaris-and-AIX-Computers.md)
+[How to Filter ACS Events for UNIX and Linux Computers](./How-to-Filter-ACS-Events-for-UNIX-and-Linux-Computers.md)
+[Monitoring Audit Collection Services Performance](./Monitoring-Audit-Collection-Services-Performance.md)
+[How to Remove Audit Collection Services &#40;ACS&#41;](./How-to-Remove-Audit-Collection-Services--ACS-.md)
+[Audit Collection Services Administration &#40;AdtAdmin.exe&#41;](./Audit-Collection-Services-Administration--AdtAdmin.exe-.md)
+
+
 

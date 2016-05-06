@@ -18,7 +18,7 @@ Use the following procedures to configure settings to specify change request pre
 
 ### To configure general change settings
 
-1.  In the [!INCLUDE[smcons](../Token/smcons_md.md)], click **Administration**.
+1.  In the [!INCLUDE[smcons](./Token/smcons_md.md)], click **Administration**.
 
 2.  In the **Administration** pane, expand **Administration**, and then click **Settings**.
 
@@ -41,4 +41,5 @@ Use the following procedures to configure settings to specify change request pre
 1.  To validate changes to the prefix code, create a new a change request, and verify that the change request IDs have the prefix that you specified.
 
 2.  To validate changes to the attachment settings, open a change request, and attempt to add a file attachment that violates the settings that you specified.
+
 

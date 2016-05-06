@@ -11,7 +11,7 @@ ms.topic: article
 ms.assetid: d47793da-7d78-4794-b471-8dca0673d88e
 ---
 # Finding Data and Objects in the Operations Manager Consoles
-[!INCLUDE[om12long](../Token/om12long_md.md)], with the appropriate management packs imported, will provide you with a comprehensive view of what is going on with your monitored applications, hardware, and processes. This can result in a very large volume of data being displayed in the Operations console. Learning how to quickly locate the data you need is essential to efficient interaction with the console. You can use the **Scope**, **Find**, and **Search** buttons on the Operations console toolbar to filter your view of monitoring data so that you can find the exact monitoring object or group of objects that you need. You can also filter your data based on the number of hours or days you would like to show.
+[!INCLUDE[om12long](./Token/om12long_md.md)], with the appropriate management packs imported, will provide you with a comprehensive view of what is going on with your monitored applications, hardware, and processes. This can result in a very large volume of data being displayed in the Operations console. Learning how to quickly locate the data you need is essential to efficient interaction with the console. You can use the **Scope**, **Find**, and **Search** buttons on the Operations console toolbar to filter your view of monitoring data so that you can find the exact monitoring object or group of objects that you need. You can also filter your data based on the number of hours or days you would like to show.
 
 > [!NOTE]
 > Any time that you do not see the information you expect in the results pane, check the scope and time filters to ensure that the correct objects and time period are set for the results you need.
@@ -20,10 +20,10 @@ The **Scope**, **Search**, **Find**, and **Time** tools apply a temporary filter
 
 |Filter|When to use|For more information, see|
 |----------|---------------|-----------------------------|
-|Scope|Use to limit the data in a view to only those objects that meet your criteria. This scope remains in place until you clear it.|-   [How to Change Scope](../Topic/Finding-Data-and-Objects-in-the-Operations-Manager-Consoles.md#bkmk_howtochangescope)<br />-   [Define a Scope Using Operations Manager Groups](../Topic/Define-a-Scope-Using-Operations-Manager-Groups.md)|
-|Search|Use to display a list of objects that meet your criteria. You can then act on those objects; however, when you navigate away from this list, the filter is removed, and any view will show all objects \(not just those from your search criteria\).|-   [How to Use Find and Search](../Topic/Finding-Data-and-Objects-in-the-Operations-Manager-Consoles.md#bkmk_howtousefindandsearch)<br />-   [Using Advanced Search](../Topic/Using-Advanced-Search.md)<br />-   [Examples of Using Advanced Search in Operations Manager](../Topic/Examples-of-Using-Advanced-Search-in-Operations-Manager.md)|
-|Find|Use to display a known single object.|[How to Use Find and Search](../Topic/Finding-Data-and-Objects-in-the-Operations-Manager-Consoles.md#bkmk_howtousefindandsearch)|
-|Time|Use to limit the data displayed to only that data \(such as alerts\) that has been generated within a defined time frame.|[How to Change the Time Criteria](../Topic/Finding-Data-and-Objects-in-the-Operations-Manager-Consoles.md#bkmk_howtochangethetimecriteria)|
+|Scope|Use to limit the data in a view to only those objects that meet your criteria. This scope remains in place until you clear it.|-   [How to Change Scope](./Finding-Data-and-Objects-in-the-Operations-Manager-Consoles.md#bkmk_howtochangescope)<br />-   [Define a Scope Using Operations Manager Groups](./Define-a-Scope-Using-Operations-Manager-Groups.md)|
+|Search|Use to display a list of objects that meet your criteria. You can then act on those objects; however, when you navigate away from this list, the filter is removed, and any view will show all objects \(not just those from your search criteria\).|-   [How to Use Find and Search](./Finding-Data-and-Objects-in-the-Operations-Manager-Consoles.md#bkmk_howtousefindandsearch)<br />-   [Using Advanced Search](./Using-Advanced-Search.md)<br />-   [Examples of Using Advanced Search in Operations Manager](./Examples-of-Using-Advanced-Search-in-Operations-Manager.md)|
+|Find|Use to display a known single object.|[How to Use Find and Search](./Finding-Data-and-Objects-in-the-Operations-Manager-Consoles.md#bkmk_howtousefindandsearch)|
+|Time|Use to limit the data displayed to only that data \(such as alerts\) that has been generated within a defined time frame.|[How to Change the Time Criteria](./Finding-Data-and-Objects-in-the-Operations-Manager-Consoles.md#bkmk_howtochangethetimecriteria)|
 
 ## <a name="bkmk_howtochangescope"></a>How to Change Scope
 Changing the scope of the monitoring view enables you to view only those objects that meet a certain criteria, such as management servers. For example, if you want to view only those computers in your environment that are running Windows XP, you can apply a scope that uses “Windows XP” as the criteria; no other computers are displayed.
@@ -34,7 +34,7 @@ Changing the scope of the monitoring view enables you to view only those objects
 
 2.  Click the **Scope** button on the Operations Manager toolbar. If this button is not available, check to make sure that you have an object, not a folder, selected in the Monitoring pane. The **Change View Scope** dialog box displays a list of existing groups and distributed applications.
 
-    ![](../Image/Scoping.gif)
+    ![](/Image/Scoping.gif)
 
 3.  If the list is too long, you can find a specific group or distributed application by entering a word or phrase in the **Look for** field. After you make a selection, click **OK**. Now only the objects that meet the scope criteria are shown in the Results pane.
 
@@ -107,4 +107,5 @@ You can filter your view to the following time periods:
 3.  Select the time criteria you are interested in.
 
     Now only the objects that meet the time criteria are shown in the Results pane.
+
 

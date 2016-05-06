@@ -8,12 +8,12 @@ ms.topic: article
 ms.assetid: 399ecf87-5a24-42d5-9925-4a82cb4e3d5b
 ---
 # How to Install Additional Management Servers
-After you have installed [!INCLUDE[om12long](../Token/om12long_md.md)], you can add additional management servers and join them to your existing management group.
+After you have installed [!INCLUDE[om12long](./Token/om12long_md.md)], you can add additional management servers and join them to your existing management group.
 
 > [!IMPORTANT]
 > If you install a stand\-alone web console on a server, you will not be able to add the management server feature to this server. If you want to install the management server and web console on the same server, you must either install both features simultaneously, or install the management server before you install the web console.
 
-You must ensure that your server meets the minimum system requirements for [!INCLUDE[om12long](../Token/om12long_md.md)]. For more information, see [System Requirements for System Center 2012 – Operations Manager](http://go.microsoft.com/fwlink/p/?LinkID=219650).
+You must ensure that your server meets the minimum system requirements for [!INCLUDE[om12long](./Token/om12long_md.md)]. For more information, see [System Requirements for System Center 2012 – Operations Manager](http://go.microsoft.com/fwlink/p/?LinkID=219650).
 
 > [!IMPORTANT]
 > Before you follow these procedures, read the [Before You Begin](assetId:///d81818d2-534e-475c-98e1-65496357d5a5#BKMK_BeforeYouBegin) section of [Deploying System Center 2012 \- Operations Manager](assetId:///d81818d2-534e-475c-98e1-65496357d5a5).
@@ -22,7 +22,7 @@ You must ensure that your server meets the minimum system requirements for [!INC
 
 1.  Log on to the server with an account that has local administrative credentials.
 
-2.  On the [!INCLUDE[om12short](../Token/om12short_md.md)] installation media, run **Setup.exe**, and then click **Install**.
+2.  On the [!INCLUDE[om12short](./Token/om12short_md.md)] installation media, run **Setup.exe**, and then click **Install**.
 
 3.  On the **Getting Started**, **Select features to install** page, select **Management server**.
 
@@ -67,7 +67,7 @@ You must ensure that your server meets the minimum system requirements for [!INC
 
 2.  Open the Command Prompt window by using the **Run as Administrator** option.
 
-3.  Change the path to where the [!INCLUDE[om12short](../Token/om12short_md.md)] setup.exe file is located, and run the following command.
+3.  Change the path to where the [!INCLUDE[om12short](./Token/om12short_md.md)] setup.exe file is located, and run the following command.
 
     > [!IMPORTANT]
     > The following command assumes that you specified the Local System for the Management server action account \(`/UseLocalSystemActionAccount`\) and Data Access service \(`/UseLocalSystemDASAccount`\). To specify a domain\\user name for these accounts, you must provide the following parameters instead.
@@ -92,4 +92,5 @@ You must ensure that your server meets the minimum system requirements for [!INC
 
 ## See Also
 [Distributed Deployment of Operations Manager for System Center 2012](assetId:///e9b6f067-8f3e-465e-9a0f-f3ae46859bd6)
+
 

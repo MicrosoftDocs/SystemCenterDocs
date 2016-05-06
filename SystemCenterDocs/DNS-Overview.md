@@ -20,22 +20,23 @@ ms.assetid: 42d9ba89-9c4e-4a77-839d-2a0d83a24cfd
       <list class="nobullet">
         <listItem>
           <para>
-            <legacyLink xlink:href="e36880f8-70a1-41cd-8341-fb7a9d0c009c">What's New in DNS Server [VIL]</legacyLink>: Provides information about new DNS Server features and functionality in <token>winblue_server_2</token>.</para>
+            <legacyLink xlink:href="e36880f8-70a1-41cd-8341-fb7a9d0c009c">What's New in DNS Server [VIL]</legacyLink>: Provides information about new DNS Server features and functionality in <token>winblue_server_./Token>.</para>
         </listItem>
         <listItem>
           <para>
-            <legacyLink xlink:href="73ccffe3-4c81-4a80-babb-03036504de92">What's New in DNS Client [VIL]</legacyLink>: Provides information about new DNS Client features and functionality in <token>winblue_client_2</token> and <token>winblue_server_2</token>.</para>
+            <legacyLink xlink:href="73ccffe3-4c81-4a80-babb-03036504de92">What's New in DNS Client [VIL]</legacyLink>: Provides information about new DNS Client features and functionality in <token>winblue_client_./Token> and <token>winblue_server_./Token>.</para>
         </listItem>
         <listItem>
           <para>
-            <legacyLink xlink:href="e2694d8c-508a-442b-9249-1ebbfc2c92eb">What's New in DNS Server in Windows Server 2012 [redirected]</legacyLink>: Provides information about new DNS Server features and functionality in <token>win8_server_2</token>.</para>
+            <legacyLink xlink:href="e2694d8c-508a-442b-9249-1ebbfc2c92eb">What's New in DNS Server in Windows Server 2012 [redirected]</legacyLink>: Provides information about new DNS Server features and functionality in <token>win8_server_./Token>.</para>
         </listItem>
         <listItem>
           <para>
-            <legacyLink xlink:href="e9c76643-afdf-4953-8d60-65a3badce838">What's New in DNS Client in Windows 8 [redirected]</legacyLink>: Provides information about new DNS Client features and functionality in <token>win8_client_2</token> and <token>win8_server_2</token>.</para>
+            <legacyLink xlink:href="e9c76643-afdf-4953-8d60-65a3badce838">What's New in DNS Client in Windows 8 [redirected]</legacyLink>: Provides information about new DNS Client features and functionality in <token>win8_client_./Token> and <token>win8_server_./Token>.</para>
         </listItem>
       </list>
     </content>
   </section>
   <relatedTopics />
 </developerConceptualDocument>
+

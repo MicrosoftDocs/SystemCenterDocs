@@ -8,13 +8,13 @@ ms.topic: article
 ms.assetid: c7c5d2f9-62fa-4c65-9065-4e04b9078a4d
 ---
 # How to update a service template to use an updated resource in VMM
-When a resource is updated in [!INCLUDE[vmm12sp1_long](../Token/vmm12sp1_long_md.md)] and it is referenced by a service template, you must copy and update the service template so that it uses the updated resource.
+When a resource is updated in [!INCLUDE[vmm12sp1_long](./Token/vmm12sp1_long_md.md)] and it is referenced by a service template, you must copy and update the service template so that it uses the updated resource.
 
 Use the following procedure to update a service template when one of its dependent resources has been updated.
 
 ### To update a service template to use an updated resource
 
-1.  In the [!INCLUDE[vmm12short](../Token/vmm12short_md.md)] console, open the Library workspace, expand the **Templates** node, and then click **Service Templates**.
+1.  In the [!INCLUDE[vmm12short](./Token/vmm12short_md.md)] console, open the Library workspace, expand the **Templates** node, and then click **Service Templates**.
 
 2.  In the **Templates** pane that lists the available service templates, locate the service template that you want to update.
 
@@ -34,10 +34,11 @@ Use the following procedure to update a service template when one of its depende
 
     A copy of the current service template is created and the outdated resource is replaced with the most recent release from the same family.
 
-5.  Publish the updated service template and then apply the updated template to the deployed service. For instructions, see [How to apply updates to a deployed service in VMM](../Topic/How-to-apply-updates-to-a-deployed-service-in-VMM.md).
+5.  Publish the updated service template and then apply the updated template to the deployed service. For instructions, see [How to apply updates to a deployed service in VMM](./How-to-apply-updates-to-a-deployed-service-in-VMM.md).
 
 ## See Also
-[Updating services in VMM](../Topic/Updating-services-in-VMM.md)
-[Managing services with VMM](../Topic/Managing-services-with-VMM.md)
-[Managing tenant resources with VMM](../Topic/Managing-tenant-resources-with-VMM.md)
+[Updating services in VMM](./Updating-services-in-VMM.md)
+[Managing services with VMM](./Managing-services-with-VMM.md)
+[Managing tenant resources with VMM](./Managing-tenant-resources-with-VMM.md)
+
 

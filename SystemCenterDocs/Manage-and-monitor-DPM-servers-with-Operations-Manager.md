@@ -90,7 +90,7 @@ DPM provides the following management packs:
 
 Note that:
 
--   [!INCLUDE[dpm2012short](../Token/dpm2012short_md.md)] adds firewall exceptions for port 6075 to enable scoped Administrator console. Open ports for SQL Server.exe and SQL browser.exe.
+-   [!INCLUDE[dpm2012short](./Token/dpm2012short_md.md)] adds firewall exceptions for port 6075 to enable scoped Administrator console. Open ports for SQL Server.exe and SQL browser.exe.
 
 -   If you need to uninstall Operations Manager, see [How to Uninstall Operations Manager](http://go.microsoft.com/fwlink/p/?LinkId=245527).
 
@@ -106,4 +106,5 @@ Note that:
 
 ## Next steps
 After you import the Management Packs they discover and monitor data without requiring any additional configuration. You can optionally tweak settings like monitors and rules for your environment. For example if you find that performance\-measuring rules that are enable degrade server performance with slow WAN links, you can disable them. When you have everything configured as needed you can generate DPM reports from Operations Manager
+
 

@@ -11,10 +11,10 @@ ms.topic: article
 ms.assetid: 9849ebcc-519a-4dd5-86c1-e947121c2a6d
 ---
 # Install Service Management Automation from a Command Prompt window
-You can install the features of [!INCLUDE[sma_1](../Token/sma_1_md.md)] by using commands in the Command Prompt window to guide the Windows Installer program for an unattended install.
+You can install the features of [!INCLUDE[sma_1](./Token/sma_1_md.md)] by using commands in the Command Prompt window to guide the Windows Installer program for an unattended install.
 
 ## Windows Installer files
-Your installation media contains Windows Installer files for each [!INCLUDE[sma_1](../Token/sma_1_md.md)] of the following features:
+Your installation media contains Windows Installer files for each [!INCLUDE[sma_1](./Token/sma_1_md.md)] of the following features:
 
 -   PowerShell module: PowershellModuleInstaller.msi
 
@@ -26,7 +26,7 @@ Your installation media contains Windows Installer files for each [!INCLUDE[sma_
 > The installation options must be entered at a command prompt. An answer file is not supported.
 
 ## PowerShell module installation options
-The [!INCLUDE[sma_1](../Token/sma_1_md.md)] PowerShell module is a required prerequisite of the [!INCLUDE[sma_1](../Token/sma_1_md.md)] web service, so you must install the [!INCLUDE[sma_1](../Token/sma_1_md.md)] PowerShell module before you deploy the [!INCLUDE[sma_1](../Token/sma_1_md.md)] web service. The PowerShell module installer takes no parameters. For example, you could use the following command:
+The [!INCLUDE[sma_1](./Token/sma_1_md.md)] PowerShell module is a required prerequisite of the [!INCLUDE[sma_1](./Token/sma_1_md.md)] web service, so you must install the [!INCLUDE[sma_1](./Token/sma_1_md.md)] PowerShell module before you deploy the [!INCLUDE[sma_1](./Token/sma_1_md.md)] web service. The PowerShell module installer takes no parameters. For example, you could use the following command:
 
 ```
 msiexec.exe /i PowershellModuleInstaller.msi
@@ -66,7 +66,7 @@ msiexec.exe /i WebServiceInstaller.msi /L*v C:\Andreas\WebServiceInstaller.log C
 ```
 
 ## Runbook worker installation options
-A runbook worker cannot be installed on the same computer as another runbook worker. Also, you must install the runbook worker on a computer that has access to the same SQL Server instance that the [!INCLUDE[sma_1](../Token/sma_1_md.md)] web service is using.
+A runbook worker cannot be installed on the same computer as another runbook worker. Also, you must install the runbook worker on a computer that has access to the same SQL Server instance that the [!INCLUDE[sma_1](./Token/sma_1_md.md)] web service is using.
 
 The following variables can be specified at a command prompt to override default behaviors.
 
@@ -105,4 +105,5 @@ msiexec.exe /i WorkerInstaller.msi /L*v C:\Andreas\WorkerInstaller.log CREATEDAT
 
 ## See also
 [Deploy Service Management Automation](Deploy-Service-Management-Automation.md)
+
 

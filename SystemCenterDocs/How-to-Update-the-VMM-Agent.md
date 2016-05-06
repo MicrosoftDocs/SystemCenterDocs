@@ -8,7 +8,7 @@ ms.topic: article
 ms.assetid: 7f7c7266-e9f5-485c-be58-d852d543711f
 ---
 # How to Update the VMM Agent
-After you upgrade [!INCLUDE[vmm12sp1_long](../Token/vmm12sp1_long_md.md)] to [!INCLUDE[sc_threshold_1](../Token/sc_threshold_1_md.md)], use the following procedure to update the VMM agent on a virtual machine host.
+After you upgrade [!INCLUDE[vmm12sp1_long](./Token/vmm12sp1_long_md.md)] to [!INCLUDE[sc_threshold_1](./Token/sc_threshold_1_md.md)], use the following procedure to update the VMM agent on a virtual machine host.
 
 ### To update the VMM agent
 
@@ -38,5 +38,6 @@ After you upgrade [!INCLUDE[vmm12sp1_long](../Token/vmm12sp1_long_md.md)] to [!I
     > You can update the VMM agent on a VMM library server in a similar manner. To view a list of VMM library servers, open the **Fabric** workspace, expand **Servers**, and then click **Library Servers**.
 
 ## See Also
-[Performing Post-Upgrade Tasks in VMM](../Topic/Performing-Post-Upgrade-Tasks-in-VMM.md)
+[Performing Post-Upgrade Tasks in VMM](./Performing-Post-Upgrade-Tasks-in-VMM.md)
+
 

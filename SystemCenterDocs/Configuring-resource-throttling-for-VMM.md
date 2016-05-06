@@ -8,7 +8,7 @@ ms.topic: article
 ms.assetid: 85fbfd6e-83e7-451c-af2d-eaa02e5e2466
 ---
 # Configuring resource throttling for VMM
-[!INCLUDE[vmm12sp1_long](../Token/vmm12sp1_long_md.md)] includes resource throttling features such as processor \(CPU\) and memory throttling capabilities. These features can help CPU and memory resources to be allocated more effectively, which then helps virtual machines to run more effectively.
+[!INCLUDE[vmm12sp1_long](./Token/vmm12sp1_long_md.md)] includes resource throttling features such as processor \(CPU\) and memory throttling capabilities. These features can help CPU and memory resources to be allocated more effectively, which then helps virtual machines to run more effectively.
 
 ## Processor \(CPU\) throttling
 You can set the weight of a virtual processor to provide the processor with a larger or smaller share of CPU cycles, using the following properties:
@@ -32,7 +32,7 @@ Memory throttling helps to prioritize or deprioritize access to memory resources
 
     2.  **Minimum memory**—The minimum amount of memory that is required for the virtual machine. It allows an idle machine to scale back the memory consumption below the start\-up memory requirement. The available memory can then be used by other virtual machines.
 
-    3.  **Maximum memory**—The memory limit that is allocated to the virtual machine. The default value for[!INCLUDE[win8_server_2](../Token/win8_server_2_md.md)] is 1 TB.
+    3.  **Maximum memory**—The memory limit that is allocated to the virtual machine. The default value for[!INCLUDE[win8_server_2](./Token/win8_server_2_md.md)] is 1 TB.
 
     4.  **Memory Buffer Percentage**—Dynamic memory adds memory to a virtual machine as required, but there is a chance that an application might demand memory more quickly than dynamic memory allocates it. The memory buffer percentage specifies the amount of available memory that will be assigned to the virtual machine if needed. The percentage is based on the amount of memory that is actually needed by the applications and services that run on the virtual machine. It is expressed as a percentage because it changes depending on the virtual machine requirements.
 
@@ -40,10 +40,11 @@ Memory throttling helps to prioritize or deprioritize access to memory resources
 
     5.  **Memory weight**—The priority that is allocated to a virtual machine when the memory resources are in full use. If you set a high priority value, it will prioritize a virtual machine when the memory resources are allocated. If you set a low priority, a virtual machine might be unable to start if memory resources are insufficient.
 
-For more information, see [How to configure processor and memory throttling for VMM](../Topic/How-to-configure-processor-and-memory-throttling-for-VMM.md).
+For more information, see [How to configure processor and memory throttling for VMM](./How-to-configure-processor-and-memory-throttling-for-VMM.md).
 
 ## See Also
-[Configuring virtual machine options and settings](../Topic/Configuring-virtual-machine-options-and-settings.md)
-[Managing virtual machines with VMM](../Topic/Managing-virtual-machines-with-VMM.md)
-[Managing tenant resources with VMM](../Topic/Managing-tenant-resources-with-VMM.md)
+[Configuring virtual machine options and settings](./Configuring-virtual-machine-options-and-settings.md)
+[Managing virtual machines with VMM](./Managing-virtual-machines-with-VMM.md)
+[Managing tenant resources with VMM](./Managing-tenant-resources-with-VMM.md)
+
 

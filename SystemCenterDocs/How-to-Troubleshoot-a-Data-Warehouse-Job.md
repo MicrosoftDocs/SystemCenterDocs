@@ -11,7 +11,7 @@ ms.topic: article
 ms.assetid: 53e50bfa-c0b9-4fdd-8d96-dd4aea852eb8
 ---
 # How to Troubleshoot a Data Warehouse Job
-In [!INCLUDE[smshort](../Token/smshort_md.md)], you may encounter problems related to data warehouse jobs. After the Data Warehouse Registration Wizard completes and after Reporting becomes available in the [!INCLUDE[smcons](../Token/smcons_md.md)], you can start running reports. If, for example, the incident management report you run doesn’t show updated data, you can use Windows PowerShell cmdlets to troubleshoot the problem.
+In [!INCLUDE[smshort](./Token/smshort_md.md)], you may encounter problems related to data warehouse jobs. After the Data Warehouse Registration Wizard completes and after Reporting becomes available in the [!INCLUDE[smcons](./Token/smcons_md.md)], you can start running reports. If, for example, the incident management report you run doesn’t show updated data, you can use Windows PowerShell cmdlets to troubleshoot the problem.
 
 You can use the first procedure to determine whether a job failed using Windows PowerShell cmdlets, and you can evaluate any error messages that this job created.
 
@@ -37,7 +37,7 @@ The second procedure can be used to change the default transform job timeout per
 
 5.  In the output, locate a status of "Failed," and then review the **Error Message** column for more information about why the data warehouse job failed.
 
-6.  When you are ready to retry the failed job, in the [!INCLUDE[smcons](../Token/smcons_md.md)], click **Data Warehouse**.
+6.  When you are ready to retry the failed job, in the [!INCLUDE[smcons](./Token/smcons_md.md)], click **Data Warehouse**.
 
 7.  Expand **Data Warehouse**, and then click **Data Warehouse Jobs**.
 
@@ -52,5 +52,6 @@ The second procedure can be used to change the default transform job timeout per
 3.  Restart the Microsoft Monitoring Agent service.
 
 4.  You can resume the Transform.common job to see the change.
+
 
 

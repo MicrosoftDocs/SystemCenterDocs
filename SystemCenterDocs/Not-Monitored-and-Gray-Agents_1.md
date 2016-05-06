@@ -8,9 +8,9 @@ ms.topic: article
 ms.assetid: 16579bf8-9d40-4506-ae39-91577404c12c
 ---
 # Not Monitored and Gray Agents_1
-In [!INCLUDE[om12long](../Token/om12long_md.md)], you may see discovered objects in the Operations console displayed as not monitored or gray, as shown in the following illustration.
+In [!INCLUDE[om12long](./Token/om12long_md.md)], you may see discovered objects in the Operations console displayed as not monitored or gray, as shown in the following illustration.
 
-![](../Image/OM12NotMonitored.gif)
+![](/Image/OM12NotMonitored.gif)
 
 The state view in the previous illustration contrasts two “unknown” states.
 
@@ -18,9 +18,9 @@ The state view in the previous illustration contrasts two “unknown” states.
 
 -   The operating system is shown as not monitored.
 
-![](../Image/Healthygrayicon.gif) The gray icon indicates that the health service watcher on the management server that is watching the health service on the monitored computer is not receiving heartbeats from the agent anymore. The health service watcher had received heartbeats previously and the state was reported as healthy. This also means that the management servers are no longer receiving any information from the agent.
+![](/Image/Healthygrayicon.gif) The gray icon indicates that the health service watcher on the management server that is watching the health service on the monitored computer is not receiving heartbeats from the agent anymore. The health service watcher had received heartbeats previously and the state was reported as healthy. This also means that the management servers are no longer receiving any information from the agent.
 
-![](../Image/Unknownicon.gif) The not monitored icon indicates that there are no monitors for the object. In the previous illustration, the view tells you that there are no monitors for the operating system on this computer. In this case, this is because the management packs for the Windows Server operating systems have not been imported in this management group.
+![](/Image/Unknownicon.gif) The not monitored icon indicates that there are no monitors for the object. In the previous illustration, the view tells you that there are no monitors for the operating system on this computer. In this case, this is because the management packs for the Windows Server operating systems have not been imported in this management group.
 
 ## What to do for a gray state
 Some of the common reasons for a gray state are:
@@ -69,12 +69,12 @@ The **Show Gray Agent Connectivity Data** task will help you identify why an age
 
     -   The management server that the agent reports to.
 
-For information on troubleshooting, see the Knowledge Base article [Troubleshooting gray agent state](http://go.microsoft.com/fwlink/p/?LinkID=200488). Although the article was written for Operations Manager 2007, the troubleshooting steps will also be helpful for [!INCLUDE[om12long](../Token/om12long_md.md)].
+For information on troubleshooting, see the Knowledge Base article [Troubleshooting gray agent state](http://go.microsoft.com/fwlink/p/?LinkID=200488). Although the article was written for Operations Manager 2007, the troubleshooting steps will also be helpful for [!INCLUDE[om12long](./Token/om12long_md.md)].
 
 ## What to do for a not monitored state
 When an object shows as not monitored, check whether the appropriate management pack for monitoring the object is imported. Ensure that the appropriate monitors are enabled.
 
-Sometimes restarting the System Center Management Health service on the agent\-managed computer can resolve the issue. You can also try placing the object in maintenance mode for several minutes. For more information, see [How to Suspend Monitoring Temporarily by Using Maintenance Mode](../Topic/How-to-Suspend-Monitoring-Temporarily-by-Using-Maintenance-Mode.md).
+Sometimes restarting the System Center Management Health service on the agent\-managed computer can resolve the issue. You can also try placing the object in maintenance mode for several minutes. For more information, see [How to Suspend Monitoring Temporarily by Using Maintenance Mode](./How-to-Suspend-Monitoring-Temporarily-by-Using-Maintenance-Mode.md).
 
 Next, check the DNS configuration for the computer, both FQDN and DNS suffix.
 
@@ -83,10 +83,11 @@ An agent can also show as not monitored because the new agent has the same NetBI
 For more ideas for troubleshooting, see the blog post [Getting headaches trying to figure out why you are seeing the 'Not Monitored' state for Management Servers or Agents?](http://go.microsoft.com/fwlink/p/?LinkId=229513).
 
 ## See Also
-[Using the Operations Manager Consoles](../Topic/Using-the-Operations-Manager-Consoles.md)
-[Finding Data and Objects in the Operations Manager Consoles](../Topic/Finding-Data-and-Objects-in-the-Operations-Manager-Consoles.md)
-[Using Views in Operations Manager](../Topic/Using-Views-in-Operations-Manager.md)
-[Using SharePoint to View Operations Manager Data](../Topic/Using-SharePoint-to-View-Operations-Manager-Data.md)
-[Subscribing to Alert Notifications](../Topic/Subscribing-to-Alert-Notifications.md)
-[Using Reports in Operations Manager](../Topic/Using-Reports-in-Operations-Manager.md)
+[Using the Operations Manager Consoles](./Using-the-Operations-Manager-Consoles.md)
+[Finding Data and Objects in the Operations Manager Consoles](./Finding-Data-and-Objects-in-the-Operations-Manager-Consoles.md)
+[Using Views in Operations Manager](./Using-Views-in-Operations-Manager.md)
+[Using SharePoint to View Operations Manager Data](./Using-SharePoint-to-View-Operations-Manager-Data.md)
+[Subscribing to Alert Notifications](./Subscribing-to-Alert-Notifications.md)
+[Using Reports in Operations Manager](./Using-Reports-in-Operations-Manager.md)
+
 

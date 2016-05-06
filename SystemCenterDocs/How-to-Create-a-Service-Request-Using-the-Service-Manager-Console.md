@@ -11,11 +11,11 @@ ms.topic: article
 ms.assetid: d2081264-5175-41a4-a96c-283e2e9c23be
 ---
 # How to Create a Service Request Using the Service Manager Console
-End users often create service requests in [!INCLUDE[scsm_threshold_1](../Token/scsm_threshold_1_md.md)] by accessing the service catalog from the [!INCLUDE[smssp](../Token/smssp_md.md)] or by submitting email requests. However, you can use the following procedure to manually create a new service request in the [!INCLUDE[smcons](../Token/smcons_md.md)]. For example, you might want to manually create a new service request if a user contacts the help desk by telephone. In the following example, you can update any information that you want to as you complete the form.
+End users often create service requests in [!INCLUDE[scsm_threshold_1](./Token/scsm_threshold_1_md.md)] by accessing the service catalog from the [!INCLUDE[smssp](./Token/smssp_md.md)] or by submitting email requests. However, you can use the following procedure to manually create a new service request in the [!INCLUDE[smcons](./Token/smcons_md.md)]. For example, you might want to manually create a new service request if a user contacts the help desk by telephone. In the following example, you can update any information that you want to as you complete the form.
 
-### To create a new service request using the [!INCLUDE[smcons](../Token/smcons_md.md)]
+### To create a new service request using the [!INCLUDE[smcons](./Token/smcons_md.md)]
 
-1.  In the [!INCLUDE[smcons](../Token/smcons_md.md)], expand **Work Items**, expand **Service Request Fulfillment**, and then select a subnode, such as **Assigned To Me**.
+1.  In the [!INCLUDE[smcons](./Token/smcons_md.md)], expand **Work Items**, expand **Service Request Fulfillment**, and then select a subnode, such as **Assigned To Me**.
 
 2.  In the **Tasks** pane under **Service Request Fulfillment**, click **Create Service Request from Template**.
 
@@ -38,5 +38,6 @@ End users often create service requests in [!INCLUDE[scsm_threshold_1](../Token/
 11. Click **OK** to save and close the service request form.
 
 ## See Also
-[Managing Service Requests in Service Manager](../Topic/Managing-Service-Requests-in-Service-Manager.md)
+[Managing Service Requests in Service Manager](./Managing-Service-Requests-in-Service-Manager.md)
+
 

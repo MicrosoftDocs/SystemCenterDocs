@@ -11,14 +11,14 @@ ms.topic: article
 ms.assetid: 87d70344-d44d-4c54-b215-3217a217699b
 ---
 # How to Configure General Activity Settings
-Use the following procedure to configure settings to specify activity prefixes when you view activity records. You can then validate the settings. You can define these activity settings in the administrative area of the [!INCLUDE[smcons](../Token/smcons_md.md)].
+Use the following procedure to configure settings to specify activity prefixes when you view activity records. You can then validate the settings. You can define these activity settings in the administrative area of the [!INCLUDE[smcons](./Token/smcons_md.md)].
 
 > [!NOTE]
 > Revising the activity request prefix does not affect existing activity records.
 
 ### To configure general activity settings
 
-1.  In the [!INCLUDE[smcons](../Token/smcons_md.md)], click **Administration**.
+1.  In the [!INCLUDE[smcons](./Token/smcons_md.md)], click **Administration**.
 
 2.  In the **Administration** pane, expand **Administration**, and then click **Settings**.
 
@@ -39,4 +39,5 @@ Use the following procedure to configure settings to specify activity prefixes w
 ### To validate activity setting changes
 
 -   To validate changes to any prefix code, create a new change request, and then verify on the **Activities** tab that the activities have the new prefix that you specified.
+
 

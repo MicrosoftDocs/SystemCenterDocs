@@ -30,20 +30,20 @@ Before you start check that the software doesn’t modify data on the replica vo
 
 1.  To backup databases, in the backup program, browse to \\Program Files\\Microsoft System Center 2012\\DPM\\DPM\\DPMDB, and select the DPMDB folder. Select the backup media and start the backup. Note that some VSS\-enabled backup software does not have a SQL VSS Requester for backing up SQL Server databases through the VSS infrastructure and the MSDE VSS Writer. In that situation, use the procedure for backing up databases with non\-VSS\-enabled backup software.
 
-2.  To back up replicas, in the backup program browse to \\Microsoft System Center 2012\\DPM\\DPM\\Volumes\\Replica\\ on the [!INCLUDE[dpm2012short](../Token/dpm2012short_md.md)] server the DPM server. Select the computer whose replicas you want to archive \(or the individual protected volumes\). Select a backup type that doesn’t modify the replica data. Select the backup media and start the backup.
+2.  To back up replicas, in the backup program browse to \\Microsoft System Center 2012\\DPM\\DPM\\Volumes\\Replica\\ on the [!INCLUDE[dpm2012short](./Token/dpm2012short_md.md)] server the DPM server. Select the computer whose replicas you want to archive \(or the individual protected volumes\). Select a backup type that doesn’t modify the replica data. Select the backup media and start the backup.
 
 ## <a name="BKMK_NoVSS"></a>Back up with an application without DPM or VSS support
-If your backup software doesn’t support DPM or VSS you’ll need to use use the D**PMBackup** command\-line tool to create backup shadow copies of the replicas and database backups of the [!INCLUDE[dpm2012short](../Token/dpm2012short_md.md)] database. Then use the backup software to archive the backup shadow copies and database backups to tape. DPMBackup does the following:
+If your backup software doesn’t support DPM or VSS you’ll need to use use the D**PMBackup** command\-line tool to create backup shadow copies of the replicas and database backups of the [!INCLUDE[dpm2012short](./Token/dpm2012short_md.md)] database. Then use the backup software to archive the backup shadow copies and database backups to tape. DPMBackup does the following:
 
--   Creates and mounts backup shadow copies of each replica volume on the [!INCLUDE[dpm2012short](../Token/dpm2012short_md.md)] server.
+-   Creates and mounts backup shadow copies of each replica volume on the [!INCLUDE[dpm2012short](./Token/dpm2012short_md.md)] server.
 
--   Creates database backups of the [!INCLUDE[dpm2012short](../Token/dpm2012short_md.md)] database.
+-   Creates database backups of the [!INCLUDE[dpm2012short](./Token/dpm2012short_md.md)] database.
 
--   [!INCLUDE[dpm2012short](../Token/dpm2012short_md.md)] creates a mount point of the backup shadow copies of the replicas on the [!INCLUDE[dpm2012short](../Token/dpm2012short_md.md)] server in the folder \\Program Files\\Microsoft System Center 2012\\DPM\\DPM\\Volumes\\ShadowCopy\\. The backup shadow copies of the replicas are organized by computer.
+-   [!INCLUDE[dpm2012short](./Token/dpm2012short_md.md)] creates a mount point of the backup shadow copies of the replicas on the [!INCLUDE[dpm2012short](./Token/dpm2012short_md.md)] server in the folder \\Program Files\\Microsoft System Center 2012\\DPM\\DPM\\Volumes\\ShadowCopy\\. The backup shadow copies of the replicas are organized by computer.
 
 Note that:
 
--   The DPMBackup.exe program is stored on the [!INCLUDE[dpm2012short](../Token/dpm2012short_md.md)] server in the folder \\Program Files\\Microsoft System Center 2012\\DPM\\DPM\\bin. DPMBackup requires Administrator rights on the [!INCLUDE[dpm2012short](../Token/dpm2012short_md.md)] server.
+-   The DPMBackup.exe program is stored on the [!INCLUDE[dpm2012short](./Token/dpm2012short_md.md)] server in the folder \\Program Files\\Microsoft System Center 2012\\DPM\\DPM\\bin. DPMBackup requires Administrator rights on the [!INCLUDE[dpm2012short](./Token/dpm2012short_md.md)] server.
 
 -   You can configure either your tape backup program or Windows Scheduler to run DPMBackup before the tape backup program runs.
 
@@ -56,4 +56,5 @@ You’ll back up the DPM database as follows:
 1.  To back up databases, run DPMBackup.exe –db. In the backup program browse to \\Program Files\\Microsoft DPM\\DPM\\Volumes\\ShadowCopy\\Database Backups. \(DPM database backup: DPMDB.bak; Report database backup: ReportServer.bak\), Select the backup media and start the backup.
 
 2.  To back up replicas, run DPMBackup.exe –replica. In the backup program program, browse to \\Program Files\\Microsoft System Center 2012\\DPM\\DPM\\Volumes\\ShadowCopy\\. The backup shadow copies of the replicas are organized by computer. Select the shadow copies you want to back up and the backup type. Select the backup media and start the backup.
+
 

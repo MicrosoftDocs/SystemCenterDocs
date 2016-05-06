@@ -11,13 +11,13 @@ ms.topic: article
 ms.assetid: 7a15fc3c-c096-4ea1-b768-2df47289a44a
 ---
 # Reporting for Web Application Availability Monitoring
-Web Application Availability Monitoring introduces to two new report tasks: Test Availability and Test Performance. The Test availability reporting shows measures reflecting how available the web application was over time. The Test Performance report shows selected objects and performance counter values over time to relate how well a web application has performed. These two reports directly reflect the web application monitoring for Web Application Availability is integrated into the [!INCLUDE[om12short](../Token/om12short_md.md)] console, you can run these two new reports just as you would run the other standard [!INCLUDE[om12short](../Token/om12short_md.md)] reports.
+Web Application Availability Monitoring introduces to two new report tasks: Test Availability and Test Performance. The Test availability reporting shows measures reflecting how available the web application was over time. The Test Performance report shows selected objects and performance counter values over time to relate how well a web application has performed. These two reports directly reflect the web application monitoring for Web Application Availability is integrated into the [!INCLUDE[om12short](./Token/om12short_md.md)] console, you can run these two new reports just as you would run the other standard [!INCLUDE[om12short](./Token/om12short_md.md)] reports.
 
 ### To run the Test Availability report
 
 1.  You can run the Test Availability report from several locations:
 
-    -   In the [!INCLUDE[om12short](../Token/om12short_md.md)] console, in the navigation pane, click the **Monitoring** button, click **Application Monitoring**, click **Web Application Availability Monitoring**, and then click **Active Alerts**, **Test State**, or **Web Application Status** to display alerts or status for the category. Highlight one or more web applications, alerts, or test states, and then, in the **Tasks** pane, in the **Report Tasks** section, click **Test Availability**.
+    -   In the [!INCLUDE[om12short](./Token/om12short_md.md)] console, in the navigation pane, click the **Monitoring** button, click **Application Monitoring**, click **Web Application Availability Monitoring**, and then click **Active Alerts**, **Test State**, or **Web Application Status** to display alerts or status for the category. Highlight one or more web applications, alerts, or test states, and then, in the **Tasks** pane, in the **Report Tasks** section, click **Test Availability**.
 
     -   If you want to add more objects, click **Add Object**, and in the **Add Object** page, filter your search or just click **Search** to see all tests in for the web application that you have selected. Click the available items you want to include in your report and click **Add**. Click **OK**.
 
@@ -38,7 +38,7 @@ Web Application Availability Monitoring introduces to two new report tasks: Test
 
 1.  You can run the Test Performance report from several locations:
 
-    -   In the [!INCLUDE[om12short](../Token/om12short_md.md)] console, in the navigation pane, click the **Monitoring** button, click **Application Monitoring**, click **Web Application Availability Monitoring**, and then click **Active Alerts**, **Test State**, or **Web Application Status** to display alerts or status for the category. Highlight one or more web applications, alerts, or test states, and then, in the **Tasks** pane, in the **Report Tasks** section, click **Test Performance**.
+    -   In the [!INCLUDE[om12short](./Token/om12short_md.md)] console, in the navigation pane, click the **Monitoring** button, click **Application Monitoring**, click **Web Application Availability Monitoring**, and then click **Active Alerts**, **Test State**, or **Web Application Status** to display alerts or status for the category. Highlight one or more web applications, alerts, or test states, and then, in the **Tasks** pane, in the **Report Tasks** section, click **Test Performance**.
 
     -   If you want to add more objects, click **Add Object**, and in the **Add Object** page, filter your search or just click **Search** to see all tests in for the web application that you have selected. Click the available items you want to include in your report and click **Add**. Click **OK**.
 
@@ -54,4 +54,5 @@ Web Application Availability Monitoring introduces to two new report tasks: Test
 3.  To generate the report, click **Run**.
 
 4.  In the report, click a plus sign to see details.
+
 

@@ -63,3 +63,4 @@ The following table lists the published data items.
 |Origin address|The address of the device that generated the trap.|
 |Specific Id|The specific ID of the trap.|
 
+

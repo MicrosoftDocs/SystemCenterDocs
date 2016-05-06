@@ -13,7 +13,7 @@ ms.assetid: 786b7295-6591-4c26-bec6-dabf5e5f9ff9
 # How to Email Scheduled Reports
 Before you can schedule a report for email delivery, you must configure the email settings in the Report Server using the Reporting Server Configuration Manager.
 
-The example in this procedure uses an availability report that you have already created and saved as a favorite. For more information about creating an availability report, see [How to Create an Availability Report](../Topic/How-to-Create-an-Availability-Report.md). For more information about saving a report as a favorite, see [How to Save a Report](../Topic/How-to-Save-a-Report.md).
+The example in this procedure uses an availability report that you have already created and saved as a favorite. For more information about creating an availability report, see [How to Create an Availability Report](./How-to-Create-an-Availability-Report.md). For more information about saving a report as a favorite, see [How to Save a Report](./How-to-Save-a-Report.md).
 
 ### To configure email settings in the SQL Server Report Server
 
@@ -66,9 +66,10 @@ The example in this procedure uses an availability report that you have already 
 7.  On the **Parameters** page, specify a span of time for the report in the **From** and **To** lists, make any other changes you need for this report, and then click **Finish**.
 
 ## See Also
-[Scheduling Reports](../Topic/Scheduling-Reports.md)
-[How to Create a Report Schedule](../Topic/How-to-Create-a-Report-Schedule.md)
-[How to Edit a Scheduled Report](../Topic/How-to-Edit-a-Scheduled-Report.md)
-[How to Schedule the Delivery of a Report to the SQL Report Server Cache](../Topic/How-to-Schedule-the-Delivery-of-a-Report-to-the-SQL-Report-Server-Cache.md)
-[How to Cancel a Scheduled Report](../Topic/How-to-Cancel-a-Scheduled-Report.md)
+[Scheduling Reports](./Scheduling-Reports.md)
+[How to Create a Report Schedule](./How-to-Create-a-Report-Schedule.md)
+[How to Edit a Scheduled Report](./How-to-Edit-a-Scheduled-Report.md)
+[How to Schedule the Delivery of a Report to the SQL Report Server Cache](./How-to-Schedule-the-Delivery-of-a-Report-to-the-SQL-Report-Server-Cache.md)
+[How to Cancel a Scheduled Report](./How-to-Cancel-a-Scheduled-Report.md)
+
 

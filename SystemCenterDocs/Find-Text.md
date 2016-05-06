@@ -56,3 +56,4 @@ The following table lists the published data items.
 |Search text|The search string that was used for the search.|
 |Use Regex|Indicates whether the Use regular expressions check box was selected.|
 
+

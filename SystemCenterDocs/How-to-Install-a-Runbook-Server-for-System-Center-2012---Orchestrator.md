@@ -11,16 +11,16 @@ ms.topic: article
 ms.assetid: 3a9fdfc2-9980-446e-8464-539b6b0d261d
 ---
 # How to Install a Runbook Server for System Center 2012 - Orchestrator
-Use the following steps to install an [!INCLUDE[orchlong](../Token/orchlong_md.md)] runbook server.
+Use the following steps to install an [!INCLUDE[orchlong](./Token/orchlong_md.md)] runbook server.
 
-### To install an [!INCLUDE[orchshort](../Token/orchshort_md.md)] runbook server
+### To install an [!INCLUDE[orchshort](./Token/orchshort_md.md)] runbook server
 
-1.  On the server where you want to install an [!INCLUDE[orchshort](../Token/orchshort_md.md)] runbook server, start the [!INCLUDE[orchlong](../Token/orchlong_md.md)] Setup Wizard.
+1.  On the server where you want to install an [!INCLUDE[orchshort](./Token/orchshort_md.md)] runbook server, start the [!INCLUDE[orchlong](./Token/orchlong_md.md)] Setup Wizard.
 
-    To start the **[!INCLUDE[orchlong](../Token/orchlong_md.md)] Setup Wizard**, on your product media or network share, double\-click **SetupOrchestrator.exe**.
+    To start the **[!INCLUDE[orchlong](./Token/orchlong_md.md)] Setup Wizard**, on your product media or network share, double\-click **SetupOrchestrator.exe**.
 
     > [!NOTE]
-    > Before you begin setup, close any open programs and ensure that there are no pending restarts on the computer. For example, if you have installed a server role by using [!INCLUDE[smshort](../Token/smshort_md.md)] or have applied a security update, you might have to restart the computer, and then log on to the computer with the same user account to finish the installation of the server role or the security update.
+    > Before you begin setup, close any open programs and ensure that there are no pending restarts on the computer. For example, if you have installed a server role by using [!INCLUDE[smshort](./Token/smshort_md.md)] or have applied a security update, you might have to restart the computer, and then log on to the computer with the same user account to finish the installation of the server role or the security update.
 
 2.  On the main setup page, under **Standalone installations**, click **Runbook server**.
 
@@ -47,13 +47,13 @@ Use the following steps to install an [!INCLUDE[orchlong](../Token/orchlong_md.m
 
     3.  Click **Next** to continue.
 
-6.  On the **Configure the service account** page, enter the user name and password for the [!INCLUDE[orchshort](../Token/orchshort_md.md)] service account. Click **Test** to verify the account credentials. If the credentials are accepted, click **Next**.
+6.  On the **Configure the service account** page, enter the user name and password for the [!INCLUDE[orchshort](./Token/orchshort_md.md)] service account. Click **Test** to verify the account credentials. If the credentials are accepted, click **Next**.
 
-7.  On the **Configure the database server** page, enter the name of the database server associated with your [!INCLUDE[orchshort](../Token/orchshort_md.md)] management server. You can also specify whether to use Windows Authentication or SQL Server Authentication, and whether to create a new database or use an existing database. Click **Test Database Connection** to verify the account credentials. If the credentials are accepted, click **Next**.
+7.  On the **Configure the database server** page, enter the name of the database server associated with your [!INCLUDE[orchshort](./Token/orchshort_md.md)] management server. You can also specify whether to use Windows Authentication or SQL Server Authentication, and whether to create a new database or use an existing database. Click **Test Database Connection** to verify the account credentials. If the credentials are accepted, click **Next**.
 
-8.  On the **Configure the database** page, select the [!INCLUDE[orchshort](../Token/orchshort_md.md)] database for your deployment, and then click **Next**.
+8.  On the **Configure the database** page, select the [!INCLUDE[orchshort](./Token/orchshort_md.md)] database for your deployment, and then click **Next**.
 
-9. On the **Select the installation location** page, verify the installation location for [!INCLUDE[orchshort](../Token/orchshort_md.md)], and then click **Next**.
+9. On the **Select the installation location** page, verify the installation location for [!INCLUDE[orchshort](./Token/orchshort_md.md)], and then click **Next**.
 
 10. On the **Microsoft Update** page, optionally indicate whether you want to use the Microsoft Update services to check for updates, and then click **Next**.
 
@@ -66,5 +66,6 @@ Use the following steps to install an [!INCLUDE[orchlong](../Token/orchlong_md.m
 13. On the **Setup completed successfully** page, optionally indicate whether you want to start the Runbook Designer, and then click **Close** to complete the installation.
 
 ## See Also
-[Install Individual Orchestrator Features](../Topic/Install-Individual-Orchestrator-Features.md)
+[Install Individual Orchestrator Features](./Install-Individual-Orchestrator-Features.md)
+
 

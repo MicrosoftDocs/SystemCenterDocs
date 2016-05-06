@@ -26,7 +26,7 @@ Depending on your current version of Service Manager, use the following informat
     
     In other words, if it is off, let it remain off and if it is on, let it remain on until the connector runs for the first time. See the screenshot below. This applies only to the first time that the Active Directory connector runs after you upgrade. You can change your preferences for Active Directory group expansion workflow after the first time that the Active Directory connector sync completes.
 
-    ![Active Directory Connector wizard](../Image/sm-adconnector01.png)
+    ![Active Directory Connector wizard](/Image/sm-adconnector01.png)
 
  
 
@@ -65,6 +65,7 @@ Use the following step to upgrade your Self Service portal and Service Manger ma
 
 ## Upgrading the Self Service Portal from Service Manager 2016 TP5 Self Service portal (stand alone or with a management server)
   - You can upgrade the Self Service portal directly from Service Manager 2012 R2 to Service Manager 2016.
+
 
 
 

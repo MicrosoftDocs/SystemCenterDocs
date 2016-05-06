@@ -98,3 +98,4 @@ The Invoke Web Service object builds an assembly at **C:\\ProgramData\\Microsoft
 
 If you publish additional services, or update an existing service, you must clean the cache, except for the **wspkey.snk** file. After cleaning the cache, the web service changes are correctly published.
 
+

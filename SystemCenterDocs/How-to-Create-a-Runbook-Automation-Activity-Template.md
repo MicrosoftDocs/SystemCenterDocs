@@ -12,16 +12,16 @@ ms.assetid: 5f3f00f2-f9a9-407c-8974-109609988907
 robots: noindex,nofollow
 ---
 # How to Create a Runbook Automation Activity Template
-After you import runbooks into [!INCLUDE[smlong12](../Token/smlong12_md.md)] using the Orchestrator connector from [!INCLUDE[orchlong](../Token/orchlong_md.md)], you can create a runbook automation activity template to map parameters in [!INCLUDE[orchshort](../Token/orchshort_md.md)] to corresponding parameters in [!INCLUDE[smshort](../Token/smshort_md.md)].
+After you import runbooks into [!INCLUDE[smlong12](./Token/smlong12_md.md)] using the Orchestrator connector from [!INCLUDE[orchlong](./Token/orchlong_md.md)], you can create a runbook automation activity template to map parameters in [!INCLUDE[orchshort](./Token/orchshort_md.md)] to corresponding parameters in [!INCLUDE[smshort](./Token/smshort_md.md)].
 
-As an example, you can implement a new request offering using an [!INCLUDE[orchshort](../Token/orchshort_md.md)] runbook to automate it. Then, you can go to the Runbooks view in the Library workspace, select a runbook, and create a runbook automation activity template. You can go to the templates view and verify that the template is created. You can then add the [!INCLUDE[orchshort](../Token/orchshort_md.md)] activity template to a service request template and create the request offering. You then can then map the runbook template to a different runbook with the same inputs and outputs if you find that you need to fix a problem or improve the process.
+As an example, you can implement a new request offering using an [!INCLUDE[orchshort](./Token/orchshort_md.md)] runbook to automate it. Then, you can go to the Runbooks view in the Library workspace, select a runbook, and create a runbook automation activity template. You can go to the templates view and verify that the template is created. You can then add the [!INCLUDE[orchshort](./Token/orchshort_md.md)] activity template to a service request template and create the request offering. You then can then map the runbook template to a different runbook with the same inputs and outputs if you find that you need to fix a problem or improve the process.
 
 > [!IMPORTANT]
 > If you have extended root classes such as service request or release record, then you can map runbook activity parameter to extended properties only if the runbook activity template and service request templates are saved in same management pack where the definition extension is located.
 
 ### To create a runbook automation activity template
 
-1.  In the [!INCLUDE[smcons](../Token/smcons_md.md)], click **Library**.
+1.  In the [!INCLUDE[smcons](./Token/smcons_md.md)], click **Library**.
 
 2.  In the **Library** pane, click **Runbooks**.
 
@@ -43,7 +43,8 @@ As an example, you can implement a new request offering using an [!INCLUDE[orchs
 
 11. For any parameter, click **Edit Mapping**.
 
-12. Expand **Object**, and then click **Id**. This ID value will be used by the [!INCLUDE[orchshort](../Token/orchshort_md.md)] runbook to find the particular runbook activity that is being executed. Click **Close**.
+12. Expand **Object**, and then click **Id**. This ID value will be used by the [!INCLUDE[orchshort](./Token/orchshort_md.md)] runbook to find the particular runbook activity that is being executed. Click **Close**.
 
 13. Click **OK** to close the form and create the template.
+
 

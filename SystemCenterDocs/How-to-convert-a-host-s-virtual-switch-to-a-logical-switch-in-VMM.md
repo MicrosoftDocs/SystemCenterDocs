@@ -11,7 +11,7 @@ ms.topic: article
 ms.assetid: cabe44ea-905d-42f0-ab25-5d21a7af5875
 ---
 # How to convert a host&#39;s virtual switch to a logical switch in VMM
-If a host that you're managing with [!INCLUDE[vmm12sp1_long](../Token/vmm12sp1_long_md.md)] has a standard virtual switch configuration, you can convert the configuration to use a logical switch.
+If a host that you're managing with [!INCLUDE[vmm12sp1_long](./Token/vmm12sp1_long_md.md)] has a standard virtual switch configuration, you can convert the configuration to use a logical switch.
 
 Logical switches \(and the port profiles inside them\) act as templates or containers for the switch settings and capabilities that you want to use. Instead of configuring switch settings individually for each network adapter, you can specify the settings and capabilities in a logical switch, and then use the logical switch to apply those settings consistently across network adapters on multiple hosts.
 
@@ -20,9 +20,9 @@ Logical switches \(and the port profiles inside them\) act as templates or conta
 
 Do the tasks in this topic in this order:
 
-1.  [Compare important settings in an existing virtual switch with settings in a logical switch](../Topic/How-to-convert-a-host-s-virtual-switch-to-a-logical-switch-in-VMM.md#BKMK_compare)
+1.  [Compare important settings in an existing virtual switch with settings in a logical switch](./How-to-convert-a-host-s-virtual-switch-to-a-logical-switch-in-VMM.md#BKMK_compare)
 
-2.  [Convert a host from using a standard virtual switch to using a logical switch](../Topic/How-to-convert-a-host-s-virtual-switch-to-a-logical-switch-in-VMM.md#BKMK_convert)
+2.  [Convert a host from using a standard virtual switch to using a logical switch](./How-to-convert-a-host-s-virtual-switch-to-a-logical-switch-in-VMM.md#BKMK_convert)
 
 **Account requirements** To complete these procedures, you must be a member of the Administrator user role or a member of the Delegated Administrator user role where the management scope includes the host group where the Hyper\-V host is located.
 
@@ -39,13 +39,13 @@ To prepare for converting to a logical switch, review the settings in the follow
 
 4.  Close the **NIC Teaming** dialog box.
 
-5.  Still on the host, in Hyper\-V Manager \(not [!INCLUDE[vmm12short](../Token/vmm12short_md.md)]\), right\-click the host and then click **Virtual Switch Manager**.
+5.  Still on the host, in Hyper\-V Manager \(not [!INCLUDE[vmm12short](./Token/vmm12short_md.md)]\), right\-click the host and then click **Virtual Switch Manager**.
 
 6.  In the **Virtual Switch Manager** dialog box, select the virtual switch, and in the results pane, see whether **Enable single\-root I\/O virtualization \(SR\-IOV\)** is selected. Record this information.
 
 7.  Close the **Virtual Switch Manager** dialog box, and then close Hyper\-V Manager.
 
-8.  Start the [!INCLUDE[vmm12short](../Token/vmm12short_md.md)] console, and then open the **Fabric** workspace.
+8.  Start the [!INCLUDE[vmm12short](./Token/vmm12short_md.md)] console, and then open the **Fabric** workspace.
 
 9. In the **Fabric** pane, expand **Servers** > **All Hosts**.
 
@@ -91,16 +91,16 @@ To prepare for converting to a logical switch, review the settings in the follow
 
 21. If the settings in the logical switch do not match the virtual switch in the ways listed in the preceding table, locate or create a logical switch that does match. For information about creating a logical switch, see:
 
-    -   [Overview: plan logical switches and port profiles in VMM](../Topic/Overview--plan-logical-switches-and-port-profiles-in-VMM.md)
+    -   [Overview: plan logical switches and port profiles in VMM](./Overview--plan-logical-switches-and-port-profiles-in-VMM.md)
 
-    -   [How to create a logical switch in VMM](../Topic/How-to-create-a-logical-switch-in-VMM.md)
+    -   [How to create a logical switch in VMM](./How-to-create-a-logical-switch-in-VMM.md)
 
 ## <a name="BKMK_convert"></a>Convert a host from using a standard virtual switch to using a logical switch
 After you use the preceding procedure to confirm the settings in the logical switch that you want to convert to, you can do the conversion. The conversion will not interrupt network traffic. If any operation in the conversion fails, no settings will be changed, and the switch will not be converted. If the conversion fails, please see the tables in [Compare important settings in an existing virtual switch with settings in a logical switch](#BKMK_compare), earlier in this topic.
 
 #### To convert a host from using a standard virtual switch to using a logical switch
 
-1.  In [!INCLUDE[vmm12short](../Token/vmm12short_md.md)], open the **Fabric** workspace.
+1.  In [!INCLUDE[vmm12short](./Token/vmm12short_md.md)], open the **Fabric** workspace.
 
 2.  In the **Fabric** pane, expand **Servers** > **All Hosts**.
 
@@ -121,6 +121,7 @@ After you use the preceding procedure to confirm the settings in the logical swi
 9. To verify that the switch was converted, right\-click the host, click **Properties**, and then click the **Virtual Switches** tab.
 
 ## See Also
-[Configuring logical networks, VM networks, and logical switches in VMM](../Topic/Configuring-logical-networks,-VM-networks,-and-logical-switches-in-VMM.md)
-[Managing network resources with VMM](../Topic/Managing-network-resources-with-VMM.md)
+[Configuring logical networks, VM networks, and logical switches in VMM](./Configuring-logical-networks,-VM-networks,-and-logical-switches-in-VMM.md)
+[Managing network resources with VMM](./Managing-network-resources-with-VMM.md)
+
 

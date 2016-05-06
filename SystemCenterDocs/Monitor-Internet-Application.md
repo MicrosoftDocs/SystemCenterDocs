@@ -102,3 +102,4 @@ The following table lists the published data items.
 |Server Greeting|The greeting message received from the Internet application.|
 |Web page|The HTML of the web page that was retrieved when in Web \(HTTP\) mode.|
 
+

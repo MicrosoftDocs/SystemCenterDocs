@@ -11,7 +11,7 @@ ms.topic: article
 ms.assetid: aa50d20a-5f38-476f-b79c-8f2f99e4ff1f
 ---
 # How to Personalize a View in Operations Manager
-In [!INCLUDE[om12long](../Token/om12long_md.md)], views are contained in management packs. If a view is contained in a sealed management pack, you can open the properties of the view but you cannot save any changes to it. However, you can change the display options of the view and then save it as a personalized view.
+In [!INCLUDE[om12long](./Token/om12long_md.md)], views are contained in management packs. If a view is contained in a sealed management pack, you can open the properties of the view but you cannot save any changes to it. However, you can change the display options of the view and then save it as a personalized view.
 
 > [!NOTE]
 > Personalized views are only visible to the user who personalized the view.
@@ -36,8 +36,9 @@ In [!INCLUDE[om12long](../Token/om12long_md.md)], views are contained in managem
 3.  Click **Reset to Default**, and then click **OK**.
 
 ## See Also
-[Using Views in Operations Manager](../Topic/Using-Views-in-Operations-Manager.md)
-[Standard Views in Operations Manager](../Topic/Standard-Views-in-Operations-Manager.md)
-[Creating Views in Operations Manager](../Topic/Creating-Views-in-Operations-Manager.md)
-[Guidance for Scoping and Targeting Views](../Topic/Guidance-for-Scoping-and-Targeting-Views.md)
+[Using Views in Operations Manager](./Using-Views-in-Operations-Manager.md)
+[Standard Views in Operations Manager](./Standard-Views-in-Operations-Manager.md)
+[Creating Views in Operations Manager](./Creating-Views-in-Operations-Manager.md)
+[Guidance for Scoping and Targeting Views](./Guidance-for-Scoping-and-Targeting-Views.md)
+
 

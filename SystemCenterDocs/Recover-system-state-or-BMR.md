@@ -121,3 +121,4 @@ You’ll need to:
     3.  Use the version identifier to start system state restore. At the command line type: **wbadmin start systemstaterecovery –version:<versionidentified> –backuptarget:<servername\\sharename>**
 
         Confirm that you want to start the recovery. You can see the process in the command window. A restore log is created. You’ll need restart the server after the restore.
+

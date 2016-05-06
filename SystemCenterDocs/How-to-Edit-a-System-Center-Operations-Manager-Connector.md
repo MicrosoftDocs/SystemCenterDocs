@@ -15,7 +15,7 @@ After you install a System Center Operations Manager alert connector and configu
 
 ### To edit an Operations Manager CI connector
 
-1.  In the [!INCLUDE[smcons](../Token/smcons_md.md)], click **Administration**.
+1.  In the [!INCLUDE[smcons](./Token/smcons_md.md)], click **Administration**.
 
 2.  In the **Administration** pane, expand **Administration**, and then click **Connectors**.
 
@@ -30,4 +30,5 @@ After you install a System Center Operations Manager alert connector and configu
 7.  In the **Credentials** dialog box, enter the credentials to connect to Operations Manager, and then click **OK**.
 
 8.  In the **Management Packs** list, select the management packs that define the configuration items that you want to import, and then click **OK**.
+
 

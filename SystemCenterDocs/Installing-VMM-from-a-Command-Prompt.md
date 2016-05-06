@@ -14,7 +14,7 @@ ms.assetid: 84b45ef1-bb8a-48f8-a2d7-5a93157ffc78
 <?xml version="1.0" encoding="utf-8"?>
 <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://ddue.schemas.microsoft.com/authoring/2003/5 http://dduestorage.blob.core.windows.net/ddueschema/developer.xsd">
   <introduction>
-    <para>You can install <token>vmm12sp1_long</token> by using a command prompt. Installing <token>vmm12short</token> features involves saving installation settings in an .ini file and using the <system>setup.exe</system> command with that file.</para>
+    <para>You can install <token>vmm12sp1_lon./Token> by using a command prompt. Installing <token>vmm12shor./Token> features involves saving installation settings in an .ini file and using the <system>setup.exe</system> command with that file.</para>
     <alert class="important">
       <para>For all of these procedures, use the <ui>Run as administrator</ui> option to open an elevated command prompt.</para>
     </alert>
@@ -22,25 +22,25 @@ ms.assetid: 84b45ef1-bb8a-48f8-a2d7-5a93157ffc78
   <section>
     <title>Installation files</title>
     <content>
-      <para>Your installation media contains .ini files for each <token>vmm12short</token> feature:</para>
+      <para>Your installation media contains .ini files for each <token>vmm12shor./Token> feature:</para>
       <list class="bullet">
         <listItem>
           <para>
             <system>VMServer.ini</system>
           </para>
-          <para>Settings for the <token>vmm12short</token> management server.</para>
+          <para>Settings for the <token>vmm12shor./Token> management server.</para>
         </listItem>
         <listItem>
           <para>
             <system>VMClient.ini</system>
           </para>
-          <para>Settings for the <token>vmm12short</token> console.</para>
+          <para>Settings for the <token>vmm12shor./Token> console.</para>
         </listItem>
         <listItem>
           <para>
             <system>VMServerUninstall.ini</system>
           </para>
-          <para>Uninstallation settings for the <token>vmm12short</token> management server.</para>
+          <para>Uninstallation settings for the <token>vmm12shor./Token> management server.</para>
         </listItem>
       </list>
       <para>The files contain key/value pairs that have default values. These entries are commented out. To edit the file, remove the comment symbol (#) and change the value.</para>
@@ -50,9 +50,9 @@ ms.assetid: 84b45ef1-bb8a-48f8-a2d7-5a93157ffc78
   <section>
     <title>Installing a VMM management server by using a command prompt</title>
     <content>
-      <para>To install a <token>vmm12short</token> management server, edit the VMServer.ini file and then run the <system>setup.exe</system> command.</para>
+      <para>To install a <token>vmm12shor./Token> management server, edit the VMServer.ini file and then run the <system>setup.exe</system> command.</para>
       <alert class="note">
-        <para>When you install a <token>vmm12short</token> management server, the <token>vmm12short</token> console is automatically installed.</para>
+        <para>When you install a <token>vmm12shor./Token> management server, the <token>vmm12shor./Token> console is automatically installed.</para>
       </alert>
     </content>
     <sections>
@@ -120,7 +120,7 @@ ms.assetid: 84b45ef1-bb8a-48f8-a2d7-5a93157ffc78
                   <para>ProgramFiles</para>
                 </TD>
                 <TD>
-                  <para>Location for <token>vmm12short</token> files.</para>
+                  <para>Location for <token>vmm12shor./Token> files.</para>
                 </TD>
                 <TD>
                   <para>C:\Program Files\Microsoft System Center 2012\Virtual Machine Manager</para>
@@ -289,8 +289,8 @@ ms.assetid: 84b45ef1-bb8a-48f8-a2d7-5a93157ffc78
                   <para>VmmServiceLocalAccount</para>
                 </TD>
                 <TD>
-                  <para>0: Use a domain account for the <token>vmm12short</token> service (scvmmservice). </para>
-                  <para>1: Use the Local System account for the <token>vmm12short</token> service.</para>
+                  <para>0: Use a domain account for the <token>vmm12shor./Token> service (scvmmservice). </para>
+                  <para>1: Use the Local System account for the <token>vmm12shor./Token> service.</para>
                   <alert class="note">
                     <para>To use a domain account, when you run <system>setup.exe</system>, provide values for the <system>VMMServiceDomain</system>, <system>VMMServiceUserName</system>, and <system>VMMServiceUserPassword</system> parameters. </para>
                     <para>For more information about service accounts, see <link xlink:href="edaf90db-563d-4fd3-b6ef-55ea5abc7835">Specifying a Service Account for VMM</link>.</para>
@@ -330,9 +330,9 @@ ms.assetid: 84b45ef1-bb8a-48f8-a2d7-5a93157ffc78
                   <para>VmmServerName</para>
                 </TD>
                 <TD>
-                  <para>Clustered service name for a highly available <token>vmm12short</token> management server.</para>
+                  <para>Clustered service name for a highly available <token>vmm12shor./Token> management server.</para>
                   <alert class="important">
-                    <para>Do not enter the name of the failover cluster or the name of the computer on which the highly available <token>vmm12short</token> management server is installed. For more information, see <link xlink:href="dbc92290-e10b-4a9b-9794-3dc4bc71ca25">How to Install a Highly Available VMM Management Server</link>.</para>
+                    <para>Do not enter the name of the failover cluster or the name of the computer on which the highly available <token>vmm12shor./Token> management server is installed. For more information, see <link xlink:href="dbc92290-e10b-4a9b-9794-3dc4bc71ca25">How to Install a Highly Available VMM Management Server</link>.</para>
                   </alert>
                 </TD>
                 <TD>
@@ -346,7 +346,7 @@ ms.assetid: 84b45ef1-bb8a-48f8-a2d7-5a93157ffc78
                   <para>VMMStaticIPAddress</para>
                 </TD>
                 <TD>
-                  <para>IP address for the clustered service name for a highly available <token>vmm12short</token> management server, if you are not using Dynamic Host Configuration Protocol (DHCP).</para>
+                  <para>IP address for the clustered service name for a highly available <token>vmm12shor./Token> management server, if you are not using Dynamic Host Configuration Protocol (DHCP).</para>
                   <alert class="note">
                     <para>Both IPv4 and IPv6 are supported.</para>
                   </alert>
@@ -362,7 +362,7 @@ ms.assetid: 84b45ef1-bb8a-48f8-a2d7-5a93157ffc78
                   <para>Upgrade</para>
                 </TD>
                 <TD>
-                  <para>0: Do not upgrade from a previous version of <token>vmm12short</token>.</para>
+                  <para>0: Do not upgrade from a previous version of <token>vmm12shor./Token>.</para>
                   <para>1: Upgrade from a previous version.</para>
                 </TD>
                 <TD>
@@ -382,7 +382,7 @@ ms.assetid: 84b45ef1-bb8a-48f8-a2d7-5a93157ffc78
               <para>
                 <system>/server</system>
               </para>
-              <para>Specifies installation of the <token>vmm12short</token> management server.</para>
+              <para>Specifies installation of the <token>vmm12shor./Token> management server.</para>
             </listItem>
             <listItem>
               <para>
@@ -402,19 +402,19 @@ ms.assetid: 84b45ef1-bb8a-48f8-a2d7-5a93157ffc78
               <para>
                 <system>/VmmServiceDomain &lt;domainName&gt;</system>
               </para>
-              <para>Specifies the domain name for the account that is running the <token>vmm12short</token> service (scvmmservice). Use this parameter only if you set <system>VmmServiceLocalAccount</system> to 0 in VMServer.ini.</para>
+              <para>Specifies the domain name for the account that is running the <token>vmm12shor./Token> service (scvmmservice). Use this parameter only if you set <system>VmmServiceLocalAccount</system> to 0 in VMServer.ini.</para>
             </listItem>
             <listItem>
               <para>
                 <system>/VmmServiceUserName &lt;userName&gt;</system>
               </para>
-              <para>Specifies the user name for the account that is running the <token>vmm12short</token> service (scvmmservice). Use this parameter only if you set <system>VmmServiceLocalAccount</system> to 0 in VMServer.ini.</para>
+              <para>Specifies the user name for the account that is running the <token>vmm12shor./Token> service (scvmmservice). Use this parameter only if you set <system>VmmServiceLocalAccount</system> to 0 in VMServer.ini.</para>
             </listItem>
             <listItem>
               <para>
                 <system>/VmmServiceUserPassword &lt;password&gt;</system>
               </para>
-              <para>Specifies the password for the account that is running the <token>vmm12short</token> service (scvmmservice). Use this parameter only if you set <system>VmmServiceLocalAccount</system> to 0 in VMServer.ini.</para>
+              <para>Specifies the password for the account that is running the <token>vmm12shor./Token> service (scvmmservice). Use this parameter only if you set <system>VmmServiceLocalAccount</system> to 0 in VMServer.ini.</para>
             </listItem>
             <listItem>
               <para>
@@ -441,7 +441,7 @@ ms.assetid: 84b45ef1-bb8a-48f8-a2d7-5a93157ffc78
               <para>Notes acceptance of the Microsoft Software License Terms. This is a mandatory parameter.</para>
             </listItem>
           </list>
-          <para>For example, to use a VMServer.ini file that is stored in C:\Temp with a SQL Server administrator account of contoso\SQLAdmin01 and a <token>vmm12short</token> service account of contoso\VMMadmin14, use the following command:</para>
+          <para>For example, to use a VMServer.ini file that is stored in C:\Temp with a SQL Server administrator account of contoso\SQLAdmin01 and a <token>vmm12shor./Token> service account of contoso\VMMadmin14, use the following command:</para>
           <para>
             <userInput>setup.exe /server /i /f C:\Temp\VMServer.ini /SqlDBAdminDomain contoso /SqlDBAdminName SQLAdmin01 /SqlDBAdminPassword password123 /VmmServiceDomain contoso /VmmServiceUserName VMMadmin14 /VmmServiceUserPassword password456 /IACCEPTSCEULA</userInput>
           </para>
@@ -452,7 +452,7 @@ ms.assetid: 84b45ef1-bb8a-48f8-a2d7-5a93157ffc78
   <section>
     <title>Uninstalling a VMM management server by using a command prompt</title>
     <content>
-      <para>To uninstall a <token>vmm12short</token> management server, edit the VMServerUninstall.ini file and then run the <system>setup.exe</system> command.</para>
+      <para>To uninstall a <token>vmm12shor./Token> management server, edit the VMServerUninstall.ini file and then run the <system>setup.exe</system> command.</para>
     </content>
     <sections>
       <section>
@@ -509,7 +509,7 @@ ms.assetid: 84b45ef1-bb8a-48f8-a2d7-5a93157ffc78
                 <TD>
                   <para>0: Do not force uninstallation if <system>setup.exe</system> cannot verify whether this node is the final node of the highly available installation.</para>
                   <para>1: Force the uninstallation. </para>
-                  <para>For more information about uninstalling a highly available <token>vmm12short</token> management server, see <link xlink:href="d664710d-7e8e-4f83-a4b2-2979197aa099">How to Uninstall a Highly Available VMM Management Server</link>.</para>
+                  <para>For more information about uninstalling a highly available <token>vmm12shor./Token> management server, see <link xlink:href="d664710d-7e8e-4f83-a4b2-2979197aa099">How to Uninstall a Highly Available VMM Management Server</link>.</para>
                 </TD>
                 <TD>
                   <para>0</para>
@@ -522,7 +522,7 @@ ms.assetid: 84b45ef1-bb8a-48f8-a2d7-5a93157ffc78
       <section>
         <title>Uninstalling a VMM management server by using a command prompt</title>
         <content>
-          <para>To uninstall a <token>vmm12short</token> management server by using a VMServerUninstall.ini file that is stored in C:\Temp, with a SQL Server administrator account of contoso\SQLAdmin01, use this command:</para>
+          <para>To uninstall a <token>vmm12shor./Token> management server by using a VMServerUninstall.ini file that is stored in C:\Temp, with a SQL Server administrator account of contoso\SQLAdmin01, use this command:</para>
           <para>
             <userInput>setup.exe /server /x /f C:\Temp\VMServerUninstall.ini /SqlDBAdminDomain contoso /SqlDBAdminName SQLAdmin01 /SqlDBAdminPassword password123</userInput>
           </para>
@@ -533,10 +533,10 @@ ms.assetid: 84b45ef1-bb8a-48f8-a2d7-5a93157ffc78
   <section>
     <title>Installing or uninstalling a VMM console by using a command prompt</title>
     <content>
-      <para>To install a <token>vmm12short</token> console, edit the VMClient.ini file and then run the <system>setup.exe</system> command.</para>
-      <para>To uninstall a <token>vmm12short</token> console, run the <system>setup.exe</system> command. There is no separate .ini file for uninstalling the <token>vmm12short</token> console.</para>
+      <para>To install a <token>vmm12shor./Token> console, edit the VMClient.ini file and then run the <system>setup.exe</system> command.</para>
+      <para>To uninstall a <token>vmm12shor./Token> console, run the <system>setup.exe</system> command. There is no separate .ini file for uninstalling the <token>vmm12shor./Token> console.</para>
       <alert class="note">
-        <para>Do not attempt to uninstall the <token>vmm12short</token> console from a system that includes a <token>vmm12short</token> management server. You must first uninstall the <token>vmm12short</token> management server.</para>
+        <para>Do not attempt to uninstall the <token>vmm12shor./Token> console from a system that includes a <token>vmm12shor./Token> management server. You must first uninstall the <token>vmm12shor./Token> management server.</para>
       </alert>
     </content>
     <sections>
@@ -564,7 +564,7 @@ ms.assetid: 84b45ef1-bb8a-48f8-a2d7-5a93157ffc78
                   <para>ProgramFiles</para>
                 </TD>
                 <TD>
-                  <para>Location for <token>vmm12short</token> files.</para>
+                  <para>Location for <token>vmm12shor./Token> files.</para>
                 </TD>
                 <TD>
                   <para>C:\Program Files\Microsoft System Center 2012\Virtual Machine Manager</para>
@@ -575,7 +575,7 @@ ms.assetid: 84b45ef1-bb8a-48f8-a2d7-5a93157ffc78
                   <para>IndigoTcpPort</para>
                 </TD>
                 <TD>
-                  <para>Port that is used for communication between the <token>vmm12short</token> management server and the <token>vmm12short</token> console.</para>
+                  <para>Port that is used for communication between the <token>vmm12shor./Token> management server and the <token>vmm12shor./Token> console.</para>
                 </TD>
                 <TD>
                   <para>8100</para>
@@ -621,7 +621,7 @@ ms.assetid: 84b45ef1-bb8a-48f8-a2d7-5a93157ffc78
               <para>
                 <system>/client</system>
               </para>
-              <para>Specifies installation of the <token>vmm12short</token> console.</para>
+              <para>Specifies installation of the <token>vmm12shor./Token> console.</para>
             </listItem>
             <listItem>
               <para>
@@ -657,3 +657,4 @@ ms.assetid: 84b45ef1-bb8a-48f8-a2d7-5a93157ffc78
     <link xlink:href="1b4c3f5f-4ade-44c2-8866-f7b37168607d">Installing System Center vNext Virtual Machine Manager</link>
   </relatedTopics>
 </developerConceptualDocument>
+

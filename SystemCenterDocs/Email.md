@@ -15,5 +15,6 @@ The following table provides a brief description of tasks you can accomplish whe
 
 |Tasks|Email Activities|
 |---------|--------------------|
-|Send an email message.|[Send Email](../Topic/Send-Email.md)|
+|Send an email message.|[Send Email](./Send-Email.md)|
+
 

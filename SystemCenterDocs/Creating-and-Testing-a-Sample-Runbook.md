@@ -170,7 +170,7 @@ The **Junction** activity is configured to coordinate the workflow so that no fu
 
 The **Append and Copy Workflow** runbook is now completed. It should look similar to the following illustration.
 
-![](../Image/SampleRunbook1.jpg)
+![](/Image/SampleRunbook1.jpg)
 
 ## Testing the runbook
 You can test the runbook by using the Runbook Tester. This tool lets you run the entire runbook and inspect the completion status and output of each activity. The Runbook Tester runs the activities, so you must first create the folders specified for the runbook.
@@ -196,5 +196,6 @@ You can test the runbook by using the Runbook Tester. This tool lets you run the
 9. Open the C:\\Copy folder and ensure that the file has been copied. Also verify that the MasterLog.txt file has the contents of the original file.
 
 ## See Also
-[Runbook Samples](../Topic/Runbook-Samples.md)
+[Runbook Samples](./Runbook-Samples.md)
+
 

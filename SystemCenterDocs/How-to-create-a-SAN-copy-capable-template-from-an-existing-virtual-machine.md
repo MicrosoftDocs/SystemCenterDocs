@@ -8,14 +8,14 @@ ms.topic: article
 ms.assetid: fd02e62b-86f9-4282-a857-453c0641a2a9
 ---
 # How to create a SAN copy-capable template from an existing virtual machine
-You can use the procedures in this topic to create a SAN copy\-capable template from an existing virtual machine in [!INCLUDE[vmm12sp1_long](../Token/vmm12sp1_long_md.md)]. In these procedures, you create and assign a logical unit to the library server, mount the logical unit to a folder in the library share, copy an existing virtual hard disk to the folder in the library share, and then create a SAN\-copy capable template by using the virtual hard disk file as the template source.
+You can use the procedures in this topic to create a SAN copy\-capable template from an existing virtual machine in [!INCLUDE[vmm12sp1_long](./Token/vmm12sp1_long_md.md)]. In these procedures, you create and assign a logical unit to the library server, mount the logical unit to a folder in the library share, copy an existing virtual hard disk to the folder in the library share, and then create a SAN\-copy capable template by using the virtual hard disk file as the template source.
 
 ## Prerequisites
 Before you begin these procedures, make sure that the following prerequisites are met:
 
--   Your configuration must meet all the prerequisites that are defined in the [Prerequisites for rapid provisioning using SAN copy](../Topic/Using-SAN-copy-to-rapidly-provision-virtual-machines.md#BKMK_prereq) section of "Rapid Provisioning of Virtual Machines Using SAN Copy Overview."
+-   Your configuration must meet all the prerequisites that are defined in the [Prerequisites for rapid provisioning using SAN copy](./Using-SAN-copy-to-rapidly-provision-virtual-machines.md#BKMK_prereq) section of "Rapid Provisioning of Virtual Machines Using SAN Copy Overview."
 
--   If you want to perform this procedure entirely within [!INCLUDE[vmm12short](../Token/vmm12short_md.md)], you must add the library server as a managed Hyper\-V host. This enables you to assign the logical unit to the library server through [!INCLUDE[vmm12short](../Token/vmm12short_md.md)]. If you do not want to make the library a managed Hyper\-V host, you can use your array vendor’s management tools to assign the logical unit to the library server.
+-   If you want to perform this procedure entirely within [!INCLUDE[vmm12short](./Token/vmm12short_md.md)], you must add the library server as a managed Hyper\-V host. This enables you to assign the logical unit to the library server through [!INCLUDE[vmm12short](./Token/vmm12short_md.md)]. If you do not want to make the library a managed Hyper\-V host, you can use your array vendor’s management tools to assign the logical unit to the library server.
 
 -   You must have an existing virtual hard disk \(that was generalized by using Sysprep\) that you want to use as a base image for rapid provisioning.
 
@@ -25,9 +25,9 @@ Before you begin these procedures, make sure that the following prerequisites ar
 
 #### To create a SAN\-copy capable virtual hard disk
 
-1.  Create a logical unit from a storage pool that is managed by [!INCLUDE[vmm12short](../Token/vmm12short_md.md)], assign it to the library server, format the logical unit, and mount the logical unit to the folder path that you created in the Prerequisites section of this topic.
+1.  Create a logical unit from a storage pool that is managed by [!INCLUDE[vmm12short](./Token/vmm12short_md.md)], assign it to the library server, format the logical unit, and mount the logical unit to the folder path that you created in the Prerequisites section of this topic.
 
-    If the library server is a managed Hyper\-V host, you can create and assign the logical unit from the library server. You can also format the disk with NTFS and mount the logical unit to the folder path in the library share at the same time. For information about how to create and assign a logical unit to a host through [!INCLUDE[vmm12short](../Token/vmm12short_md.md)], see [How to configure storage on a Hyper-V host in VMM](../Topic/How-to-configure-storage-on-a-Hyper-V-host-in-VMM.md).
+    If the library server is a managed Hyper\-V host, you can create and assign the logical unit from the library server. You can also format the disk with NTFS and mount the logical unit to the folder path in the library share at the same time. For information about how to create and assign a logical unit to a host through [!INCLUDE[vmm12short](./Token/vmm12short_md.md)], see [How to configure storage on a Hyper-V host in VMM](./How-to-configure-storage-on-a-Hyper-V-host-in-VMM.md).
 
     > [!IMPORTANT]
     > When you create the logical unit, choose the option **Mount in the following empty NTFS folder**, click **Browse**, and then click the folder that you created in the Prerequisites section. Do not assign a drive letter. Also, do not ever create multiple mount points to the folder.
@@ -89,8 +89,9 @@ Before you begin these procedures, make sure that the following prerequisites ar
     > To add the SAN Copy Capable column to the Templates pane, right\-click the column header, and then click **SAN Copy Capable**.
 
 ## See Also
-[Using SAN copy to rapidly provision virtual machines](../Topic/Using-SAN-copy-to-rapidly-provision-virtual-machines.md)
-[How to deploy a new virtual machine from the SAN copy-capable template](../Topic/How-to-deploy-a-new-virtual-machine-from-the-SAN-copy-capable-template.md)
-[Managing virtual machines with VMM](../Topic/Managing-virtual-machines-with-VMM.md)
-[Managing tenant resources with VMM](../Topic/Managing-tenant-resources-with-VMM.md)
+[Using SAN copy to rapidly provision virtual machines](./Using-SAN-copy-to-rapidly-provision-virtual-machines.md)
+[How to deploy a new virtual machine from the SAN copy-capable template](./How-to-deploy-a-new-virtual-machine-from-the-SAN-copy-capable-template.md)
+[Managing virtual machines with VMM](./Managing-virtual-machines-with-VMM.md)
+[Managing tenant resources with VMM](./Managing-tenant-resources-with-VMM.md)
+
 

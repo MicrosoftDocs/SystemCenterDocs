@@ -36,7 +36,7 @@ Use the following information to configure the Search and Replace Text activity.
 |**File encoding**|Click the ellipsis button **\(...\)** to open the **File Encoding** dialog box and select the format that the file is encoded in from the **File Encoding** drop\-down list. Verify that you select the correct encoding format: if the file uses a different encoding format, the activity fails.|
 |**Search text**|Type the text that you are searching for in the file.|
 |**Case sensitive**|Select this option to search only for lines where the case of the words matches the text from the **Search text** field exactly.|
-|**Use regular expressions**|Select this option to use regular expressions in your search. [!INCLUDE[crdefault](../Token/crdefault_md.md)][Using Regular Expressions](assetId:///5f8da032-06a9-4ba0-acc1-29144a08dfca).|
+|**Use regular expressions**|Select this option to use regular expressions in your search. [!INCLUDE[crdefault](./Token/crdefault_md.md)][Using Regular Expressions](assetId:///5f8da032-06a9-4ba0-acc1-29144a08dfca).|
 |**Replacement text**|Type the text that you want to replace the search text with.|
 
 ### Published Data
@@ -55,4 +55,5 @@ The following table lists the published data items.
 |Replace text|The text that was used to replace the search text.|
 |Search text|The search string that was used for the search.|
 |Use Regex|Indicates whether the Use regular expressions check box was checked or not.|
+
 

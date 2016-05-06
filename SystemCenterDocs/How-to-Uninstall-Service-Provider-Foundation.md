@@ -11,19 +11,19 @@ ms.topic: article
 ms.assetid: 0a5353ec-11e0-45c8-aea9-b4b7419647bd
 ---
 # How to Uninstall Service Provider Foundation
-When you uninstall [!INCLUDE[spflong](../Token/spflong_md.md)], you remove all [!INCLUDE[spfshort](../Token/spfshort_md.md)] features, including all web services that are associated with [!INCLUDE[spfshort](../Token/spfshort_md.md)].
+When you uninstall [!INCLUDE[spflong](./Token/spflong_md.md)], you remove all [!INCLUDE[spfshort](./Token/spfshort_md.md)] features, including all web services that are associated with [!INCLUDE[spfshort](./Token/spfshort_md.md)].
 
-You can also run a silent, unattended, uninstallation. For more information, see [Setup Command-Line Options for Service Provider Foundation](../Topic/Setup-Command-Line-Options-for-Service-Provider-Foundation.md).
+You can also run a silent, unattended, uninstallation. For more information, see [Setup Command-Line Options for Service Provider Foundation](./Setup-Command-Line-Options-for-Service-Provider-Foundation.md).
 
 You must use a domain user account with administrative privileges on the computers on which you want to uninstall Service Provider Foundation.
 
-If there is a problem with the uninstallation, consult the log files in the **%SYSTEMDRIVE%\\%TEMP%\\** folder in which you want to uninstall [!INCLUDE[spfshort](../Token/spfshort_md.md)].
+If there is a problem with the uninstallation, consult the log files in the **%SYSTEMDRIVE%\\%TEMP%\\** folder in which you want to uninstall [!INCLUDE[spfshort](./Token/spfshort_md.md)].
 
-When you uninstall [!INCLUDE[spfshort](../Token/spfshort_md.md)], you can keep or remove the Service Provider Foundation database.
+When you uninstall [!INCLUDE[spfshort](./Token/spfshort_md.md)], you can keep or remove the Service Provider Foundation database.
 
-### To uninstall [!INCLUDE[spfshort](../Token/spfshort_md.md)] and all associated web services
+### To uninstall [!INCLUDE[spfshort](./Token/spfshort_md.md)] and all associated web services
 
-1.  On the computer on which [!INCLUDE[spfshort](../Token/spfshort_md.md)] is installed, click **Start**, and then click **Control Panel**.
+1.  On the computer on which [!INCLUDE[spfshort](./Token/spfshort_md.md)] is installed, click **Start**, and then click **Control Panel**.
 
 2.  In **Programs**, click **Uninstall a program**.
 
@@ -33,16 +33,17 @@ When you uninstall [!INCLUDE[spfshort](../Token/spfshort_md.md)], you can keep o
 
     -   Click **Previous** to change any selections.
 
-    -   Click **Uninstall** to uninstall [!INCLUDE[spfshort](../Token/spfshort_md.md)].
+    -   Click **Uninstall** to uninstall [!INCLUDE[spfshort](./Token/spfshort_md.md)].
 
     After you click **Uninstall**, the **Uninstalling web services** page appears and an uninstallation progress indicator appears.
 
-5.  After [!INCLUDE[spfshort](../Token/spfshort_md.md)] is uninstalled, on **The selected components were removed successfully** page, click **Close**.
+5.  After [!INCLUDE[spfshort](./Token/spfshort_md.md)] is uninstalled, on **The selected components were removed successfully** page, click **Close**.
 
 ## See Also
-[How to Install Service Provider Foundation for System Center 2012 R2](../Topic/How-to-Install-Service-Provider-Foundation-for-System-Center-2012-R2.md)
-[Setup Command-Line Options for Service Provider Foundation](../Topic/Setup-Command-Line-Options-for-Service-Provider-Foundation.md)
-[Deploying Service Provider Foundation](../Topic/Deploying-Service-Provider-Foundation.md)
-[Administering Service Provider Foundation](../Topic/Administering-Service-Provider-Foundation.md)
-[Architecture Overview of Service Provider Foundation](../Topic/Architecture-Overview-of-Service-Provider-Foundation.md)
+[How to Install Service Provider Foundation for System Center 2012 R2](./How-to-Install-Service-Provider-Foundation-for-System-Center-2012-R2.md)
+[Setup Command-Line Options for Service Provider Foundation](./Setup-Command-Line-Options-for-Service-Provider-Foundation.md)
+[Deploying Service Provider Foundation](./Deploying-Service-Provider-Foundation.md)
+[Administering Service Provider Foundation](./Administering-Service-Provider-Foundation.md)
+[Architecture Overview of Service Provider Foundation](./Architecture-Overview-of-Service-Provider-Foundation.md)
+
 

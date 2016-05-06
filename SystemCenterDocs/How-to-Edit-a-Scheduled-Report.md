@@ -11,7 +11,7 @@ ms.topic: article
 ms.assetid: 0ddcd526-c619-4eac-be66-11f3a0fd36f9
 ---
 # How to Edit a Scheduled Report
-Use the following procedure to edit settings for scheduled reports from the **Reporting** pane in [!INCLUDE[om12long](../Token/om12long_md.md)].
+Use the following procedure to edit settings for scheduled reports from the **Reporting** pane in [!INCLUDE[om12long](./Token/om12long_md.md)].
 
 ### To edit a scheduled report
 
@@ -32,9 +32,10 @@ Use the following procedure to edit settings for scheduled reports from the **Re
 8.  Type any changes you need to make on the **Report Parameters** page, and then click **Finish.**
 
 ## See Also
-[Scheduling Reports](../Topic/Scheduling-Reports.md)
-[How to Create a Report Schedule](../Topic/How-to-Create-a-Report-Schedule.md)
-[How to Email Scheduled Reports](../Topic/How-to-Email-Scheduled-Reports.md)
-[How to Schedule the Delivery of a Report to the SQL Report Server Cache](../Topic/How-to-Schedule-the-Delivery-of-a-Report-to-the-SQL-Report-Server-Cache.md)
-[How to Cancel a Scheduled Report](../Topic/How-to-Cancel-a-Scheduled-Report.md)
+[Scheduling Reports](./Scheduling-Reports.md)
+[How to Create a Report Schedule](./How-to-Create-a-Report-Schedule.md)
+[How to Email Scheduled Reports](./How-to-Email-Scheduled-Reports.md)
+[How to Schedule the Delivery of a Report to the SQL Report Server Cache](./How-to-Schedule-the-Delivery-of-a-Report-to-the-SQL-Report-Server-Cache.md)
+[How to Cancel a Scheduled Report](./How-to-Cancel-a-Scheduled-Report.md)
+
 

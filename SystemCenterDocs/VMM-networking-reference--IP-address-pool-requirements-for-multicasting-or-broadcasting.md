@@ -11,7 +11,7 @@ ms.topic: article
 ms.assetid: aad9a045-1f25-4297-aab1-fba7c502d7b5
 ---
 # VMM networking reference: IP address pool requirements for multicasting or broadcasting
-If you are using network virtualization on your VM networks, you can support an application that requires multicasting or broadcasting on the VM networks. To do this, you must create an IP address pool that supports multicasting, and you must follow several other configuration requirements. \(For information about what it means to use network virtualization on a VM network, see [Prerequisites for gateways in VMM](../Topic/Prerequisites-for-gateways-in-VMM.md).\) The requirements for using multicasting or broadcasting on a VM network are as follows:
+If you are using network virtualization on your VM networks, you can support an application that requires multicasting or broadcasting on the VM networks. To do this, you must create an IP address pool that supports multicasting, and you must follow several other configuration requirements. \(For information about what it means to use network virtualization on a VM network, see [Prerequisites for gateways in VMM](./Prerequisites-for-gateways-in-VMM.md).\) The requirements for using multicasting or broadcasting on a VM network are as follows:
 
 -   The logical network that you create must have network virtualization enabled.
 
@@ -21,7 +21,7 @@ If you are using network virtualization on your VM networks, you can support an 
 
 -   For the VM network in which you want to support multicasting, the IP protocol setting \(either IPv4 or IPv6\) must match the IP protocol setting for the underlying logical network. To configure this, in the Create VM Network Wizard, on the **Isolation** page of the wizard, select the same IP address protocol \(IPv4 or IPv6\) for both the logical network and the VM network.
 
-    Note that after you finish creating the VM network, you cannot view this protocol setting in the [!INCLUDE[vmm12short](../Token/vmm12short_md.md)] management console. Instead, run the Windows PowerShell cmdlet [Get-SCVMNetwork](http://technet.microsoft.com/library/jj613172.aspx) to view the setting. Use the following syntax, where `<VMNetworkName>` is the name of your VM network:
+    Note that after you finish creating the VM network, you cannot view this protocol setting in the [!INCLUDE[vmm12short](./Token/vmm12short_md.md)] management console. Instead, run the Windows PowerShell cmdlet [Get-SCVMNetwork](http://technet.microsoft.com/library/jj613172.aspx) to view the setting. Use the following syntax, where `<VMNetworkName>` is the name of your VM network:
 
     `Get-SCVMNetwork –Name <VMNetworkName> | Format-List Name, IsolationType, *PoolType`
 
@@ -35,9 +35,10 @@ If you are using network virtualization on your VM networks, you can support an 
 When these configuration steps are complete, multicast and broadcast packets on the VM network will use the IP addresses from the multicast IP address pool. Within each VM network, each subnet that you configure will consume one IP address from the multicast pool.
 
 ## See Also
-[Overview: plan logical networks, network sites, and IP address pools in VMM](../Topic/Overview--plan-logical-networks,-network-sites,-and-IP-address-pools-in-VMM.md)
-[Prerequisites for gateways in VMM](../Topic/Prerequisites-for-gateways-in-VMM.md)
-[How to create a logical network and IP address pools in VMM](../Topic/How-to-create-a-logical-network-and-IP-address-pools-in-VMM.md)
-[VMM networking reference: illustrations, settings, and optional procedures](../Topic/VMM-networking-reference--illustrations,-settings,-and-optional-procedures.md)
-[Managing network resources with VMM](../Topic/Managing-network-resources-with-VMM.md)
+[Overview: plan logical networks, network sites, and IP address pools in VMM](./Overview--plan-logical-networks,-network-sites,-and-IP-address-pools-in-VMM.md)
+[Prerequisites for gateways in VMM](./Prerequisites-for-gateways-in-VMM.md)
+[How to create a logical network and IP address pools in VMM](./How-to-create-a-logical-network-and-IP-address-pools-in-VMM.md)
+[VMM networking reference: illustrations, settings, and optional procedures](./VMM-networking-reference--illustrations,-settings,-and-optional-procedures.md)
+[Managing network resources with VMM](./Managing-network-resources-with-VMM.md)
+
 

@@ -16,17 +16,17 @@ The source and target class for a dependency monitor are defined by the relation
 
 **Dependency monitor based on unit monitor**
 
-![](../Image/AuthGuide_10_DependencyMonitorUnit.gif)
+![](/Image/AuthGuide_10_DependencyMonitorUnit.gif)
 
 **Dependency monitor based on aggregate monitor**
 
-![](../Image/AuthGuide_11_DependencyMonitorAggregate.gif)
+![](/Image/AuthGuide_11_DependencyMonitorAggregate.gif)
 
 Multiple dependency monitors can be created on a single relationship if the health of the source class should be affected by multiple unit or aggregate monitors on the target class. For example, a dependency monitor might be created for each standard aggregate monitor as shown in the following image.
 
 **Multiple dependency monitors for a single class**
 
-![](../Image/AuthGuide_12_DependencyMonitorMutiple.gif)
+![](/Image/AuthGuide_12_DependencyMonitorMutiple.gif)
 
 ## Health Rollup Policy
 There may be multiple instances of the target class, each with a different health state. Each dependency monitor must define a health rollup policy to define the logic that is used to determine the health of the dependency monitor based on the health of the instances of its target monitor. The possible health rollup policies for a dependency monitor are as follows:
@@ -36,7 +36,7 @@ The source object matches the state of the target object that has the worst heal
 
 **Worst state health policy**
 
-![](../Image/AuthGuide_13_DependencyWorstOf.gif)
+![](/Image/AuthGuide_13_DependencyWorstOf.gif)
 
 ### Best state policy
 The source object matches the state of the target object that has the best health state. This policy is used when only one of the source objects has to be healthy for the target object to be healthy.
@@ -45,7 +45,7 @@ For example, the **Microsoft Windows Hyper\-V 2008 Monitoring** management pack 
 
 **Best state health policy**
 
-![](../Image/AuthGuide_14_DependencyBestOf.gif)
+![](/Image/AuthGuide_14_DependencyBestOf.gif)
 
 ### Percentage policy
 The source object matches the worst state of a single member of a specified percentage of target objects in the best state. This policy is used when a certain percentage of target objects must be healthy for the target object to be considered healthy.
@@ -54,12 +54,13 @@ For example an application might run on a web farm that includes multiple Web se
 
 **Percentage health policy**
 
-![](../Image/AuthGuide_15_DependencyPercentage.gif)
+![](/Image/AuthGuide_15_DependencyPercentage.gif)
 
 ## Health rollup between agents
 Health state can only be rolled up between objects managed by the same agent unless the source object is managed by the Root Management Server. Groups and classes used for health rollup are typically unhosted. This means that they are managed by the RMS so that they can roll up health from objects managed by different agents. A relationship can be discovered between objects managed by different agents, but any dependency monitor associated with that relationship will not work as expected.
 
 **Health rollup between agents**
 
-![](../Image/AuthGuide_16_RollupBetweenAgents.gif)
+![](/Image/AuthGuide_16_RollupBetweenAgents.gif)
+
 

@@ -12,11 +12,11 @@ ms.assetid: 90b35dee-ae3b-42f0-986b-17bd1bc84037
 robots: noindex,nofollow
 ---
 # How to Add a List Item
-In [!INCLUDE[smlong12](../Token/smlong12_md.md)], you can use these procedures to add a list item to an existing list and then validate it. For example, you can use this procedure to add a Laser Printer and Check\-Writing Printer list item to the **Incident Classification** list.
+In [!INCLUDE[smlong12](./Token/smlong12_md.md)], you can use these procedures to add a list item to an existing list and then validate it. For example, you can use this procedure to add a Laser Printer and Check\-Writing Printer list item to the **Incident Classification** list.
 
 ### To add list items to Service Manager lists
 
-1.  In the [!INCLUDE[smcons](../Token/smcons_md.md)], click **Library**.
+1.  In the [!INCLUDE[smcons](./Token/smcons_md.md)], click **Library**.
 
 2.  In the **Library** pane, click **Lists**. The **Lists** pane displays all the existing lists.
 
@@ -35,7 +35,8 @@ In [!INCLUDE[smlong12](../Token/smlong12_md.md)], you can use these procedures t
 
 1.  Select the same list again, click **Properties** in the **Tasks** pane, and then verify that the new list item appears.
 
-2.  In the [!INCLUDE[smcons](../Token/smcons_md.md)], create a new incident, and then locate the new list item in the **Classification Category** list. For example, expand **Printer Problems**, and then locate the **Laser Printer** and **Check\-Writing Printer** list items.
+2.  In the [!INCLUDE[smcons](./Token/smcons_md.md)], create a new incident, and then locate the new list item in the **Classification Category** list. For example, expand **Printer Problems**, and then locate the **Laser Printer** and **Check\-Writing Printer** list items.
 
-    For more information about creating a new incident, see the topic [How to Manually Create a New Incident](assetId:///e6541088-f94a-4fb5-80ce-be8afad11b81) in the Operations Guide for [!INCLUDE[smlong12](../Token/smlong12_md.md)].
+    For more information about creating a new incident, see the topic [How to Manually Create a New Incident](assetId:///e6541088-f94a-4fb5-80ce-be8afad11b81) in the Operations Guide for [!INCLUDE[smlong12](./Token/smlong12_md.md)].
+
 

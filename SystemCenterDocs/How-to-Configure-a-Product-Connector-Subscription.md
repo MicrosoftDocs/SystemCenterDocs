@@ -11,7 +11,7 @@ ms.topic: article
 ms.assetid: 5de28eac-5d62-47bf-bc20-0d1897868a5d
 ---
 # How to Configure a Product Connector Subscription
-[!INCLUDE[om12long](../Token/om12long_md.md)] supports the ability to synchronize alert data with other applications, such as other management systems, using product connectors. After a product connector is installed, by default, all alerts are forwarded through the product connector. In the following procedure, you use the Product Connector Subscription Wizard to specify which alerts you want the product connector to forward.
+[!INCLUDE[om12long](./Token/om12long_md.md)] supports the ability to synchronize alert data with other applications, such as other management systems, using product connectors. After a product connector is installed, by default, all alerts are forwarded through the product connector. In the following procedure, you use the Product Connector Subscription Wizard to specify which alerts you want the product connector to forward.
 
 > [!NOTE]
 > You must have a product connector installed prior to beginning this procedure. Install the product connector according to the product connector vendor's installation instructions.
@@ -36,5 +36,6 @@ ms.assetid: 5de28eac-5d62-47bf-bc20-0d1897868a5d
 7.  On the **Criteria** page, you can filter which alerts this connector forwards based on the severity, priority, resolution state, and category of the alert. By default, all criteria are selected, so all alerts are forwarded. However, you can individually select which alerts you want forwarded. After you make your selections, click **Create** to create the product connector subscription. You can view the newly created subscription in the details pane.
 
 ## See Also
-[Connecting Operations Manager With Other Management Systems](../Topic/Connecting-Operations-Manager-With-Other-Management-Systems.md)
+[Connecting Operations Manager With Other Management Systems](./Connecting-Operations-Manager-With-Other-Management-Systems.md)
+
 

@@ -17,7 +17,7 @@ Before you configure certificates, ensure that the following actions have been c
 
 -   On the ACS Forwarder:
 
-    -   An agent is installed on the computer that will serve as the ACS Forwarder. For more information, see [Operations Manager Agent Installation Methods](../Topic/Operations-Manager-Agent-Installation-Methods.md).
+    -   An agent is installed on the computer that will serve as the ACS Forwarder. For more information, see [Operations Manager Agent Installation Methods](./Operations-Manager-Agent-Installation-Methods.md).
 
     -   A certificate and certification authority \[CA\] certificate is installed on the computer hosting the agent. For more information, see [Authentication and Data Encryption for Windows Computers](http://go.microsoft.com/fwlink/p/?LinkID=227146) in the Deployment Guide.
 
@@ -25,7 +25,7 @@ Before you configure certificates, ensure that the following actions have been c
 
     -   A certificate \(and CA certificate\) is installed on the management server hosting the ACS Collector. For more information, see [Authentication and Data Encryption for Windows Computers](http://go.microsoft.com/fwlink/p/?LinkID=227146) in the Deployment Guide.
 
-    -   The pending agent is approved and communication between the agent and the management server is operating properly. For more information, see [Process Manual Agent Installations](../Topic/Process-Manual-Agent-Installations.md).
+    -   The pending agent is approved and communication between the agent and the management server is operating properly. For more information, see [Process Manual Agent Installations](./Process-Manual-Agent-Installations.md).
 
     -   The ACS Collector and database is installed. For more information, see [How to Install an Audit Collection Services \(ACS\) Collector and Database](http://go.microsoft.com/fwlink/?LinkID=229042) in the Deployment Guide.
 
@@ -94,7 +94,7 @@ On the computer hosting the ACS Forwarder:
 
 12. Repeat steps 4–11 for each computer you have added.
 
-After you complete these procedures, you need to enable the ACS Forwarders. For more information, see [How to Enable Audit Collection Services &#40;ACS&#41; Forwarders](../Topic/How-to-Enable-Audit-Collection-Services--ACS--Forwarders.md).
+After you complete these procedures, you need to enable the ACS Forwarders. For more information, see [How to Enable Audit Collection Services &#40;ACS&#41; Forwarders](./How-to-Enable-Audit-Collection-Services--ACS--Forwarders.md).
 
 ### To export the certificate
 
@@ -154,14 +154,15 @@ After you complete these procedures, you need to enable the ACS Forwarders. For 
 8.  Type **exit** to close the command window.
 
 ## See Also
-[Collecting Security Events Using Audit Collection Services in Operations Manager](../Topic/Collecting-Security-Events-Using-Audit-Collection-Services-in-Operations-Manager.md)
-[Audit Collection Services Security](../Topic/Audit-Collection-Services-Security.md)
-[Audit Collection Services Capacity Planning](../Topic/Audit-Collection-Services-Capacity-Planning.md)
-[Audit Collection Services Performance Counters](../Topic/Audit-Collection-Services-Performance-Counters.md)
-[How to Enable Audit Collection Services &#40;ACS&#41; Forwarders](../Topic/How-to-Enable-Audit-Collection-Services--ACS--Forwarders.md)
-[How to Enable Event Logging and ACS Rules on Solaris and AIX Computers](../Topic/How-to-Enable-Event-Logging-and-ACS-Rules-on-Solaris-and-AIX-Computers.md)
-[How to Filter ACS Events for UNIX and Linux Computers](../Topic/How-to-Filter-ACS-Events-for-UNIX-and-Linux-Computers.md)
-[Monitoring Audit Collection Services Performance](../Topic/Monitoring-Audit-Collection-Services-Performance.md)
-[How to Remove Audit Collection Services &#40;ACS&#41;](../Topic/How-to-Remove-Audit-Collection-Services--ACS-.md)
-[Audit Collection Services Administration &#40;AdtAdmin.exe&#41;](../Topic/Audit-Collection-Services-Administration--AdtAdmin.exe-.md)
+[Collecting Security Events Using Audit Collection Services in Operations Manager](./Collecting-Security-Events-Using-Audit-Collection-Services-in-Operations-Manager.md)
+[Audit Collection Services Security](./Audit-Collection-Services-Security.md)
+[Audit Collection Services Capacity Planning](./Audit-Collection-Services-Capacity-Planning.md)
+[Audit Collection Services Performance Counters](./Audit-Collection-Services-Performance-Counters.md)
+[How to Enable Audit Collection Services &#40;ACS&#41; Forwarders](./How-to-Enable-Audit-Collection-Services--ACS--Forwarders.md)
+[How to Enable Event Logging and ACS Rules on Solaris and AIX Computers](./How-to-Enable-Event-Logging-and-ACS-Rules-on-Solaris-and-AIX-Computers.md)
+[How to Filter ACS Events for UNIX and Linux Computers](./How-to-Filter-ACS-Events-for-UNIX-and-Linux-Computers.md)
+[Monitoring Audit Collection Services Performance](./Monitoring-Audit-Collection-Services-Performance.md)
+[How to Remove Audit Collection Services &#40;ACS&#41;](./How-to-Remove-Audit-Collection-Services--ACS-.md)
+[Audit Collection Services Administration &#40;AdtAdmin.exe&#41;](./Audit-Collection-Services-Administration--AdtAdmin.exe-.md)
+
 

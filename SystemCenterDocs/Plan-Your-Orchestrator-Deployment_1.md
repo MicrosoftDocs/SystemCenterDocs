@@ -8,37 +8,38 @@ ms.topic: article
 ms.assetid: 7c37f2b2-940c-4417-abe2-26a331266bb5
 ---
 # Plan Your Orchestrator Deployment_1
-This section describes the planning required before you install [!INCLUDE[orchlong](../Token/orchlong_md.md)].
+This section describes the planning required before you install [!INCLUDE[orchlong](./Token/orchlong_md.md)].
 
 ## Planning Your Deployment
 
 -   System Requirements
 
-    Describes the hardware, operating system, and software requirements for [!INCLUDE[orchshort](../Token/orchshort_md.md)].
+    Describes the hardware, operating system, and software requirements for [!INCLUDE[orchshort](./Token/orchshort_md.md)].
 
 -   Orchestrator Security Planning
 
-    Describes the service accounts and security groups for [!INCLUDE[orchshort](../Token/orchshort_md.md)].
+    Describes the service accounts and security groups for [!INCLUDE[orchshort](./Token/orchshort_md.md)].
 
 -   TCP Port Requirements
 
-    Describes the TCP port and web service requirements for [!INCLUDE[orchshort](../Token/orchshort_md.md)].
+    Describes the TCP port and web service requirements for [!INCLUDE[orchshort](./Token/orchshort_md.md)].
 
 -   Scale Planning
 
-    Provides scale planning for [!INCLUDE[orchshort](../Token/orchshort_md.md)].
+    Provides scale planning for [!INCLUDE[orchshort](./Token/orchshort_md.md)].
 
 ## Other resources for this product
 
--   TechNet Library main page for [Orchestrator_1](../Topic/Orchestrator_1.md)
+-   TechNet Library main page for [Orchestrator_1](./Orchestrator_1.md)
 
--   [Deploying System Center 2012 - Orchestrator](../Topic/Deploying-System-Center-2012---Orchestrator.md)
+-   [Deploying System Center 2012 - Orchestrator](./Deploying-System-Center-2012---Orchestrator.md)
 
--   [Deployment Overview](../Topic/Deployment-Overview.md)
+-   [Deployment Overview](./Deployment-Overview.md)
 
--   [Install Orchestrator](../Topic/Install-Orchestrator.md)
+-   [Install Orchestrator](./Install-Orchestrator.md)
 
--   [Perform Post-Installation Tasks](../Topic/Perform-Post-Installation-Tasks.md)
+-   [Perform Post-Installation Tasks](./Perform-Post-Installation-Tasks.md)
 
--   [Troubleshoot Your Orchestrator Installation_2](../Topic/Troubleshoot-Your-Orchestrator-Installation_2.md)
+-   [Troubleshoot Your Orchestrator Installation_2](./Troubleshoot-Your-Orchestrator-Installation_2.md)
+
 

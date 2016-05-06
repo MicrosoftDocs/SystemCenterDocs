@@ -11,9 +11,9 @@ ms.topic: article
 ms.assetid: 3fd32574-f1fd-44c7-b466-620d18998b12
 ---
 # Backing Up Service Manager Management Servers
-When you deploy [!INCLUDE[smlong12](../Token/smlong12_md.md)], an encryption key is created and stored in the registry on the management servers. A matching encryption key is created in the associated databases. The encryption keys for the [!INCLUDE[smshort](../Token/smshort_md.md)] and data warehouse management servers are stored in the [!INCLUDE[smshort](../Token/smshort_md.md)] database. The matching encryption key for the data warehouse management server is stored in the DWStagingAndConfig database. By backing up the SQL Server databases, you back up the encryption key.
+When you deploy [!INCLUDE[smlong12](./Token/smlong12_md.md)], an encryption key is created and stored in the registry on the management servers. A matching encryption key is created in the associated databases. The encryption keys for the [!INCLUDE[smshort](./Token/smshort_md.md)] and data warehouse management servers are stored in the [!INCLUDE[smshort](./Token/smshort_md.md)] database. The matching encryption key for the data warehouse management server is stored in the DWStagingAndConfig database. By backing up the SQL Server databases, you back up the encryption key.
 
-In addition, the computer name of the management server and [!INCLUDE[smssp](../Token/smssp_md.md)] is stored in the associated databases. Regardless of whether you encounter a software or hardware failure of a management server or [!INCLUDE[smssp](../Token/smssp_md.md)], your recovery process is based on restoring a computer that has the same computer name as the computer that failed.
+In addition, the computer name of the management server and [!INCLUDE[smssp](./Token/smssp_md.md)] is stored in the associated databases. Regardless of whether you encounter a software or hardware failure of a management server or [!INCLUDE[smssp](./Token/smssp_md.md)], your recovery process is based on restoring a computer that has the same computer name as the computer that failed.
 
 The steps for recovering from a management server failure are as follows:
 
@@ -23,9 +23,10 @@ The steps for recovering from a management server failure are as follows:
 
 3.  When you install the management server, select **Use an existing database**, and then specify the name of the computer that hosts the associated database.
 
-For more information about these steps, see the topic [Management Server Disaster Recovery in Service Manager](../Topic/Management-Server-Disaster-Recovery-in-Service-Manager.md) in this guide.
+For more information about these steps, see the topic [Management Server Disaster Recovery in Service Manager](./Management-Server-Disaster-Recovery-in-Service-Manager.md) in this guide.
 
 ## In This Section
-[How to Back Up the Encryption Key in Service Manager](../Topic/How-to-Back-Up-the-Encryption-Key-in-Service-Manager.md)
-Describes how to back up the [!INCLUDE[smshort](../Token/smshort_md.md)] encryption key.
+[How to Back Up the Encryption Key in Service Manager](./How-to-Back-Up-the-Encryption-Key-in-Service-Manager.md)
+Describes how to back up the [!INCLUDE[smshort](./Token/smshort_md.md)] encryption key.
+
 

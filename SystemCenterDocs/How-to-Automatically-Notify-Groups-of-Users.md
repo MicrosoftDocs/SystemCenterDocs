@@ -15,7 +15,7 @@ In some scenarios, you may want to use a group rather than an individual user in
 
 Messaging\-enabled universal security groups in Microsoft Exchange Server are the key to this task. This topic describes how to accomplish this using the Exchange Server Exchange Management console for incidents. You can use the following procedures to create a messaging\-enabled universal security group, create a workflow to notify stakeholders when an incident is created, and then test for success.
 
-In Exchange Server, the **Require that all senders are authenticated** setting is enabled by default for mail\-enabled universal security groups. You can modify the setting in the distribution group properties, in Mail\-Flow settings, in the **Message Delivery Restrictions** dialog box. If your outgoing Simple Mail Transfer Protocol \(SMTP\) server specified in the [!INCLUDE[smshort](../Token/smshort_md.md)] settings \(Under **Administration**\>**Notifications Channels**\>**Edit**\) is using Anonymous as the Authentication Method \(either in  [!INCLUDE[smshort](../Token/smshort_md.md)] or the SMTP settings\), then given the above default setting in exchange, the email would not be sent out. If you have Anonymous Access configured on the SMTP side, it is necessary either to clear the **Require that all senders are authenticated** setting in exchange for the Mail Enabled Universal Security Group, or change the SMTP authentication settings \(in [!INCLUDE[smshort](../Token/smshort_md.md)] or the outgoing SMTP Server settings\) from anonymous to Windows Integrated, so that the user is authenticated, allowing the email to be sent.
+In Exchange Server, the **Require that all senders are authenticated** setting is enabled by default for mail\-enabled universal security groups. You can modify the setting in the distribution group properties, in Mail\-Flow settings, in the **Message Delivery Restrictions** dialog box. If your outgoing Simple Mail Transfer Protocol \(SMTP\) server specified in the [!INCLUDE[smshort](./Token/smshort_md.md)] settings \(Under **Administration**\>**Notifications Channels**\>**Edit**\) is using Anonymous as the Authentication Method \(either in  [!INCLUDE[smshort](./Token/smshort_md.md)] or the SMTP settings\), then given the above default setting in exchange, the email would not be sent out. If you have Anonymous Access configured on the SMTP side, it is necessary either to clear the **Require that all senders are authenticated** setting in exchange for the Mail Enabled Universal Security Group, or change the SMTP authentication settings \(in [!INCLUDE[smshort](./Token/smshort_md.md)] or the outgoing SMTP Server settings\) from anonymous to Windows Integrated, so that the user is authenticated, allowing the email to be sent.
 
 As an alternative, you can avoid using **Assigned to** and instead use **Support Group** changing as a triggering field. To set this up, create a new email notification subscription, and under additional criteria, use the following:
 
@@ -39,9 +39,9 @@ Setting up one of these for each support group will ensure that all your groups 
 
 5.  Add members to the group by right\-clicking them, clicking **Properties**, and accessing the **Members** tab.
 
-6.  Wait for [!INCLUDE[smshort](../Token/smshort_md.md)] to sync with Active Directory Domain Services \(AD DS\), or perform a manual Synchronization from **Administration**>**Connectors**. \(Click **AD Connector**, and then click the **Synchronize Now** task on the right\-hand side\).
+6.  Wait for [!INCLUDE[smshort](./Token/smshort_md.md)] to sync with Active Directory Domain Services \(AD DS\), or perform a manual Synchronization from **Administration**>**Connectors**. \(Click **AD Connector**, and then click the **Synchronize Now** task on the right\-hand side\).
 
-7.  Once the Active Directory synchronization has completed, the newly created group will be available as a configuration item in [!INCLUDE[smshort](../Token/smshort_md.md)], and it can be selected in the user picker fields, such as **Affected User** and **Assigned To**.
+7.  Once the Active Directory synchronization has completed, the newly created group will be available as a configuration item in [!INCLUDE[smshort](./Token/smshort_md.md)], and it can be selected in the user picker fields, such as **Affected User** and **Assigned To**.
 
 ### To create a workflow to notify stakeholders when an incident is created
 
@@ -68,4 +68,5 @@ Setting up one of these for each support group will ensure that all your groups 
 ### To test the workflow and mail the enabled universal security group
 
 - Create an incident and assign it to the messaging\-enabled universal security group that you created earlier.
+
 

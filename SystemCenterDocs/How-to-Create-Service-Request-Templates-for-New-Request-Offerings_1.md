@@ -8,11 +8,11 @@ ms.topic: article
 ms.assetid: d76cea9b-5d61-471a-a05f-af1ef41874f8
 ---
 # How to Create Service Request Templates for New Request Offerings_1
-By default, [!INCLUDE[scsm_threshold_1](../Token/scsm_threshold_1_md.md)] includes a number of service request templates that are based on a generic incident template. By viewing the template, you can gain an understanding of the categories of information to collect and convey to end users as they submit requests through the [!INCLUDE[smssp](../Token/smssp_md.md)]. You can use the following procedure to create a new service request template without using the default generic incident request template.
+By default, [!INCLUDE[scsm_threshold_1](./Token/scsm_threshold_1_md.md)] includes a number of service request templates that are based on a generic incident template. By viewing the template, you can gain an understanding of the categories of information to collect and convey to end users as they submit requests through the [!INCLUDE[smssp](./Token/smssp_md.md)]. You can use the following procedure to create a new service request template without using the default generic incident request template.
 
 ### To create a service request template
 
-1.  In the [!INCLUDE[smcons](../Token/smcons_md.md)], select **Library**.
+1.  In the [!INCLUDE[smcons](./Token/smcons_md.md)], select **Library**.
 
 2.  In the **Library** pane, click **Templates**, and then in the **Tasks** lists under **Templates**, click **Create Template**.
 
@@ -51,5 +51,6 @@ By default, [!INCLUDE[scsm_threshold_1](../Token/scsm_threshold_1_md.md)] includ
 19. Click **OK** to close the **Service Request Template** form.
 
 ## See Also
-[Using the Service Catalog in System Center Technical Preview - Service Manager](../Topic/Using-the-Service-Catalog-in-System-Center-Technical-Preview---Service-Manager.md)
+[Using the Service Catalog in System Center Technical Preview - Service Manager](./Using-the-Service-Catalog-in-System-Center-Technical-Preview---Service-Manager.md)
+
 

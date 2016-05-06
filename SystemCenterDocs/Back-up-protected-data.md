@@ -25,7 +25,8 @@ DPM provides scheduled and on\-demand backups for protected data.
 
 -   On\-demand backups—You can run an on\-demand backup for specific data sources in a protection group. Note that if you want to run a single scheduled backup you’ll need to create a new protection group to do that.
 
-[Configure and run backups](../Topic/Configure-and-run-backups.md)
+[Configure and run backups](./Configure-and-run-backups.md)
 
-[Run system state and bare metal backups](../Topic/Run-system-state-and-bare-metal-backups.md)
+[Run system state and bare metal backups](./Run-system-state-and-bare-metal-backups.md)
+
 

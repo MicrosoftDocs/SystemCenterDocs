@@ -11,13 +11,13 @@ ms.topic: article
 ms.assetid: f0569325-0e89-4633-8b6b-b900afbfda54
 ---
 # Install Agent Using the Command Line
-You can use MOMAgent.msi to deploy [!INCLUDE[om12long](../Token/om12long_md.md)] agents from the command line. Deploying agents from the command line is also referred to as a manual install.
+You can use MOMAgent.msi to deploy [!INCLUDE[om12long](./Token/om12long_md.md)] agents from the command line. Deploying agents from the command line is also referred to as a manual install.
 
 Before you begin deployment, ensure the following conditions have been met:
 
 -   The account that is used to run MOMAgent.msi must have administrative privileges on the computers on which you are installing agents.
 
--   A management group \(or single management server\) must be configured to accept agents installed with MOMAgent.msi or they will be automatically rejected and therefore not display in the Operations console. For more information, see [Process Manual Agent Installations](../Topic/Process-Manual-Agent-Installations.md). If the management group or server is configured to accept manually installed agents after the agents have been manually installed, the agents will display in the console after approximately one hour.
+-   A management group \(or single management server\) must be configured to accept agents installed with MOMAgent.msi or they will be automatically rejected and therefore not display in the Operations console. For more information, see [Process Manual Agent Installations](./Process-Manual-Agent-Installations.md). If the management group or server is configured to accept manually installed agents after the agents have been manually installed, the agents will display in the console after approximately one hour.
 
 -   If an agent is manually deployed to a domain controller and an Active Directory management pack is later deployed, errors might occur during deployment of the management pack. To prevent errors from occurring before deploying the Active Directory management pack, or to recover from errors that might have already occurred, you need to deploy the Active Directory management pack helper object by running the file OomADs.msi on the affected domain controller. The file OomADs.msi is on the computer that is hosting the agent at C:\\Program Files\\System Center Operations Manager\\Agent\\HelperObjects. After an agent has been manually deployed to a domain controller, locate OomADs.msi and double\-click the file to install the Active Directory Management Pack helper object. The Active Directory Management Pack helper object is automatically installed when the agent is deployed using the Discovery Wizard.
 
@@ -25,7 +25,7 @@ Before you begin deployment, ensure the following conditions have been met:
 
 MOMAgent.msi can be found in the Operations Manager installation media and the management server installation directory.
 
-Use the following procedure to deploy an agent. For examples of ways in which you can customize the MOMAgent.msi command, see [Examples of Using MOMAgent Command to Manage Agents](../Topic/Examples-of-Using-MOMAgent-Command-to-Manage-Agents.md).
+Use the following procedure to deploy an agent. For examples of ways in which you can customize the MOMAgent.msi command, see [Examples of Using MOMAgent Command to Manage Agents](./Examples-of-Using-MOMAgent-Command-to-Manage-Agents.md).
 
 ### To deploy the Operations Manager agent from the command line
 
@@ -61,21 +61,22 @@ Use the following procedure to deploy an agent. For examples of ways in which yo
     |ACTIONSUSER\=*UserName*|Sets the Agent Action account to *UserName*. This parameter is required if you specified ACTIONS\_USE\_COMPUTER\_ACCOUNT\=0.|
     |ACTIONSDOMAIN\= *DomainName*|Sets the domain for the Agent Action account identified with the ACTIONSUSER parameter.|
     |ACTIONSPASSWORD\= *Password*|The password for the user identified with the ACTIONSUSER parameter.|
-    |NOAPM\=1|Optional parameter. Installs the Operations Manager agent without .NET Application Performance Monitoring. If you are using [!INCLUDE[avicode57](../Token/avicode57_md.md)], NOAPM\=1 leaves the AVIcode agent in place. If you are using [!INCLUDE[avicode57](../Token/avicode57_md.md)] and install the Operations Manager agent by using momagent.msi without NOAPM\=1, the AVIcode agent will not work correctly and an alert will be generated.|
+    |NOAPM\=1|Optional parameter. Installs the Operations Manager agent without .NET Application Performance Monitoring. If you are using [!INCLUDE[avicode57](./Token/avicode57_md.md)], NOAPM\=1 leaves the AVIcode agent in place. If you are using [!INCLUDE[avicode57](./Token/avicode57_md.md)] and install the Operations Manager agent by using momagent.msi without NOAPM\=1, the AVIcode agent will not work correctly and an alert will be generated.|
     |AcceptEndUserLicenseAgreement\=1|Used to specify that you accept the End User License Agreement \(EULA\).|
 
 ## See Also
-[Operations Manager Agent Installation Methods](../Topic/Operations-Manager-Agent-Installation-Methods.md)
-[Install Agent on Windows Using the Discovery Wizard](../Topic/Install-Agent-on-Windows-Using-the-Discovery-Wizard.md)
-[Install Agent on UNIX and Linux Using the Discovery Wizard](../Topic/Install-Agent-on-UNIX-and-Linux-Using-the-Discovery-Wizard.md)
-[Install Agent Using the MOMAgent.msi Setup Wizard](../Topic/Install-Agent-Using-the-MOMAgent.msi-Setup-Wizard.md)
-[Install Agent and Certificate on UNIX and Linux Computers Using the Command Line](../Topic/Install-Agent-and-Certificate-on-UNIX-and-Linux-Computers-Using-the-Command-Line.md)
-[Managing Certificates for UNIX and Linux Computers](../Topic/Managing-Certificates-for-UNIX-and-Linux-Computers.md)
-[Process Manual Agent Installations](../Topic/Process-Manual-Agent-Installations.md)
-[Applying Overrides to Object Discoveries](../Topic/Applying-Overrides-to-Object-Discoveries.md)
-[Configuring Agents](../Topic/Configuring-Agents.md)
-[Examples of Using MOMAgent Command to Manage Agents](../Topic/Examples-of-Using-MOMAgent-Command-to-Manage-Agents.md)
-[Upgrading and Uninstalling Agents on UNIX and Linux Computers](../Topic/Upgrading-and-Uninstalling-Agents-on-UNIX-and-Linux-Computers.md)
-[Manually Uninstalling Agents from UNIX and Linux Computers](../Topic/Manually-Uninstalling-Agents-from-UNIX-and-Linux-Computers.md)
-[Uninstall Agent from Windows-based Computers](../Topic/Uninstall-Agent-from-Windows-based-Computers.md)
+[Operations Manager Agent Installation Methods](./Operations-Manager-Agent-Installation-Methods.md)
+[Install Agent on Windows Using the Discovery Wizard](./Install-Agent-on-Windows-Using-the-Discovery-Wizard.md)
+[Install Agent on UNIX and Linux Using the Discovery Wizard](./Install-Agent-on-UNIX-and-Linux-Using-the-Discovery-Wizard.md)
+[Install Agent Using the MOMAgent.msi Setup Wizard](./Install-Agent-Using-the-MOMAgent.msi-Setup-Wizard.md)
+[Install Agent and Certificate on UNIX and Linux Computers Using the Command Line](./Install-Agent-and-Certificate-on-UNIX-and-Linux-Computers-Using-the-Command-Line.md)
+[Managing Certificates for UNIX and Linux Computers](./Managing-Certificates-for-UNIX-and-Linux-Computers.md)
+[Process Manual Agent Installations](./Process-Manual-Agent-Installations.md)
+[Applying Overrides to Object Discoveries](./Applying-Overrides-to-Object-Discoveries.md)
+[Configuring Agents](./Configuring-Agents.md)
+[Examples of Using MOMAgent Command to Manage Agents](./Examples-of-Using-MOMAgent-Command-to-Manage-Agents.md)
+[Upgrading and Uninstalling Agents on UNIX and Linux Computers](./Upgrading-and-Uninstalling-Agents-on-UNIX-and-Linux-Computers.md)
+[Manually Uninstalling Agents from UNIX and Linux Computers](./Manually-Uninstalling-Agents-from-UNIX-and-Linux-Computers.md)
+[Uninstall Agent from Windows-based Computers](./Uninstall-Agent-from-Windows-based-Computers.md)
+
 

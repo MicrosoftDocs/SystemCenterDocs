@@ -15,7 +15,7 @@ You can use the following procedures in Service Manager to create,  validate, an
 
 ### To create an Active Directory connector and to import objects from AD DS
 
-1.  In the [!INCLUDE[smcons](../Token/smcons_md.md)], click **Administration**.
+1.  In the [!INCLUDE[smcons](./Token/smcons_md.md)], click **Administration**.
 
 2.  In the **Administration** pane, expand **Administration**, and then click **Connectors**.
 
@@ -46,7 +46,7 @@ You can use the following procedures in Service Manager to create,  validate, an
 
         3.  Select **Provide LDAP query filters for computers, printers, users, or user groups** if you want to create your own Lightweight Directory Access Protocol \(LDAP\) query.
 
-        If you want new users that are added to any groups you import to be added automatically to [!INCLUDE[smshort12](../Token/smshort12_md.md)], select **Automatically add users of AD Groups imported by this connector**, and then click **Next**.
+        If you want new users that are added to any groups you import to be added automatically to [!INCLUDE[smshort12](./Token/smshort12_md.md)], select **Automatically add users of AD Groups imported by this connector**, and then click **Next**.
 
     8.  On the **Schedule** page, in the **Synchronize** list, set the frequency and time of synchronization, and then click **Next**.
 
@@ -69,11 +69,12 @@ You can use the following procedures in Service Manager to create,  validate, an
 
 3.  In the **Configuration Items** pane, expand **Configuration Items**. Expand **Computers** and **All Windows Computers**, and verify that the intended computers from AD DS appear in the **All Windows Computers** pane. Expand **Printers**, expand **All Printers**, and then verify that the intended printers from AD DS appear in the **All Printers** pane.
 
-4.  In the [!INCLUDE[smcons](../Token/smcons_md.md)], click **Configuration Items**. In the **Configuration Items** pane, click **Users**, and then verify that the intended users and user groups from AD DS appear in the **Users** pane.
+4.  In the [!INCLUDE[smcons](./Token/smcons_md.md)], click **Configuration Items**. In the **Configuration Items** pane, click **Users**, and then verify that the intended users and user groups from AD DS appear in the **Users** pane.
 
 ### To confirm the status of an Active Directory connector
 
 -   View the columns in the **Connector** pane; the columns contain information about the start time, the finish time, the status, and the percentage of imported configuration items.
 
-![](../Image/PSSymbol.gif)You can use a Windows PowerShell command to create a new [!INCLUDE[smshort12](../Token/smshort12_md.md)] Active Directory connector. For information about how to use Windows PowerShell to create a new [!INCLUDE[smshort12](../Token/smshort12_md.md)] Active Directory connector, see [New\-SCADConnector](http://go.microsoft.com/fwlink/?LinkId=225349).
+![](/Image/PSSymbol.gif)You can use a Windows PowerShell command to create a new [!INCLUDE[smshort12](./Token/smshort12_md.md)] Active Directory connector. For information about how to use Windows PowerShell to create a new [!INCLUDE[smshort12](./Token/smshort12_md.md)] Active Directory connector, see [New\-SCADConnector](http://go.microsoft.com/fwlink/?LinkId=225349).
+
 

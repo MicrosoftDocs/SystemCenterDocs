@@ -12,7 +12,7 @@ ms.assetid: 4cc6e765-1cfd-4e0a-aac6-2b5fd3b671b5
 ---
 # How to Change the Password for the Operational Database Account
 
-### To change the log\-on password for the [!INCLUDE[smshort](../Token/smshort_md.md)] Data Access and [!INCLUDE[smshort](../Token/smshort_md.md)] Management Configuration services
+### To change the log\-on password for the [!INCLUDE[smshort](./Token/smshort_md.md)] Data Access and [!INCLUDE[smshort](./Token/smshort_md.md)] Management Configuration services
 
 1.  On the Windows desktop, click **Start**, and then click **Run**.
 
@@ -24,7 +24,7 @@ ms.assetid: 4cc6e765-1cfd-4e0a-aac6-2b5fd3b671b5
 
 5.  Type the new password in the **Password** and **Confirm Password** text boxes, and then click **OK**.
 
-6.  Restart the [!INCLUDE[smshort](../Token/smshort_md.md)] Data Access Service.
+6.  Restart the [!INCLUDE[smshort](./Token/smshort_md.md)] Data Access Service.
 
 7.  Right\-click **System Center Management Configuration**, and then click **Properties**.
 
@@ -33,4 +33,5 @@ ms.assetid: 4cc6e765-1cfd-4e0a-aac6-2b5fd3b671b5
 9. Type the new password in the **Password** and **Confirm Password** text boxes, and then click **OK**.
 
 10. Restart the System Center Management Configuration service.
+
 

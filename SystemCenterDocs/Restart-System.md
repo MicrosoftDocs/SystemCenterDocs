@@ -43,3 +43,4 @@ The following table lists the published data items.
 |Shutdown delay|The number of seconds of delay between the message being sent and the computer restart.|
 |Force open apps to close|Determines whether open applications were forced to shut down when the computer was restarted. This value can be either True or False.|
 
+

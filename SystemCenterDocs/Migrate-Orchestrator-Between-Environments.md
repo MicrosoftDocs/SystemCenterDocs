@@ -97,7 +97,7 @@ Use the following steps to create a batch script to run on the new SQL Server co
     ```
 
 ## <a name="SCO_Migrate6"></a>Deploy Orchestrator components in environment B
-Deploy Orchestrator components \(management server, Web features, runbook servers, and Runbook Designers\) using the silent install commands of Orchestrator setup. See [Install with the Orchestrator Command Line Install Tool](../Topic/Install-with-the-Orchestrator-Command-Line-Install-Tool.md) for more information on deploying Orchestrator through the command line.
+Deploy Orchestrator components \(management server, Web features, runbook servers, and Runbook Designers\) using the silent install commands of Orchestrator setup. See [Install with the Orchestrator Command Line Install Tool](./Install-with-the-Orchestrator-Command-Line-Install-Tool.md) for more information on deploying Orchestrator through the command line.
 
 The following example installs all of Orchestrator on a computer with SQL Server 2008 R2 and .NET Framework 4:
 
@@ -138,4 +138,5 @@ Sqlcmd –Q "RESTORE DATABASE [Orchestrator] FROM  DISK = N'C:\BACKUP\Orchestrat
 %systemdrive%\sco\setup\setup.exe /Silent /ServiceUserName:%computername%\administrator /ServicePassword:password /Components:All /DbServer:%computername%  /DbPort:1433 /DbNameNew:OrchestratorSysPrep /WebConsolePort:82 /WebServicePort:81 /OrchestratorRemote /UseMicrosoftUpdate:1 /SendCEIPReports:1 /EnableErrorReporting:always
 
 ```
+
 

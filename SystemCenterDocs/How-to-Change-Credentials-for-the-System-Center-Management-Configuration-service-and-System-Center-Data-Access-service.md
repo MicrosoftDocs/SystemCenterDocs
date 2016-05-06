@@ -8,7 +8,7 @@ ms.topic: article
 ms.assetid: d15a2b53-7911-4558-a302-c92212ff124e
 ---
 # How to Change Credentials for the System Center Management Configuration service and System Center Data Access service
-During the installation of [!INCLUDE[om12long](../Token/om12long_md.md)], you are prompted for credentials for the System Center Configuration service and System Center Data Access service. If you want to change the password for the credentials that you provided or use a different set of credentials, use the following procedure.
+During the installation of [!INCLUDE[om12long](./Token/om12long_md.md)], you are prompted for credentials for the System Center Configuration service and System Center Data Access service. If you want to change the password for the credentials that you provided or use a different set of credentials, use the following procedure.
 
 > [!NOTE]
 > The same credentials must be used for both services.
@@ -36,4 +36,5 @@ During the installation of [!INCLUDE[om12long](../Token/om12long_md.md)], you ar
 ## See Also
 [Making Changes to an Operations Manager for System Center 2012 Environment](assetId:///22675bc3-1668-44c7-bc40-484e06a01946)
 [How to Change the Credentials for the Action Account](assetId:///df996b1d-ffc4-4840-b34b-a287ce4dd041)
+
 

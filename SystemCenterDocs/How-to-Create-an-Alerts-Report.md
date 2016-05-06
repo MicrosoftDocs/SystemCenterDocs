@@ -37,3 +37,4 @@ An alerts report summarizes alerts that have occurred on a managed entity. The f
 
 8.  Click **Close** to close the report.
 
+

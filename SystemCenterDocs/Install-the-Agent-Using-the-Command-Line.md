@@ -11,7 +11,7 @@ ms.topic: article
 ms.assetid: 6008c780-2df9-4f93-8912-f5d641812c80
 ---
 # Install the Agent Using the Command Line
-You can use MOMAgent.msi to deploy [!INCLUDE[scom_threshold_1](../Token/scom_threshold_1_md.md)] agents from the command line. Deploying agents from the command line is also referred to as a manual install.
+You can use MOMAgent.msi to deploy [!INCLUDE[scom_threshold_1](./Token/scom_threshold_1_md.md)] agents from the command line. Deploying agents from the command line is also referred to as a manual install.
 
 Before you begin deployment, ensure the following conditions have been met:
 
@@ -59,6 +59,7 @@ Use the following procedure to deploy an agent.
     |ACTIONSUSER\=*UserName*|Sets the Agent Action account to *UserName*. This parameter is required if you specified ACTIONS\_USE\_COMPUTER\_ACCOUNT\=0.|
     |ACTIONSDOMAIN\= *DomainName*|Sets the domain for the Agent Action account identified with the ACTIONSUSER parameter.|
     |ACTIONSPASSWORD\= *Password*|The password for the user identified with the ACTIONSUSER parameter.|
-    |NOAPM\=1|Optional parameter. Installs the Operations Manager agent without .NET Application Performance Monitoring. If you are using [!INCLUDE[avicode57](../Token/avicode57_md.md)], NOAPM\=1 leaves the AVIcode agent in place. If you are using [!INCLUDE[avicode57](../Token/avicode57_md.md)] and install the Operations Manager agent by using momagent.msi without NOAPM\=1, the AVIcode agent will not work correctly and an alert will be generated.|
+    |NOAPM\=1|Optional parameter. Installs the Operations Manager agent without .NET Application Performance Monitoring. If you are using [!INCLUDE[avicode57](./Token/avicode57_md.md)], NOAPM\=1 leaves the AVIcode agent in place. If you are using [!INCLUDE[avicode57](./Token/avicode57_md.md)] and install the Operations Manager agent by using momagent.msi without NOAPM\=1, the AVIcode agent will not work correctly and an alert will be generated.|
     |AcceptEndUserLicenseAgreement\=1|Used to specify that you accept the End User License Agreement \(EULA\).|
+
 

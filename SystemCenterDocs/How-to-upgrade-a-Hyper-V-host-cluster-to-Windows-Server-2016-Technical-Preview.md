@@ -11,9 +11,9 @@ ms.topic: article
 ms.assetid: b90e0e52-a56a-4a75-b0de-4ba85b48ffde
 ---
 # How to upgrade a Hyper-V host cluster to Windows Server 2016 Technical Preview
-Use the following procedure to upgrade a [!INCLUDE[vmm12short](../Token/vmm12short_md.md)]\-managed  [!INCLUDE[winblue_server_2](../Token/winblue_server_2_md.md)] cluster to [!INCLUDE[winthreshold_server_2](../Token/winthreshold_server_2_md.md)]. Before you begin, be sure to review the prerequisites listed in [Upgrading Windows Server 2012 R2 host clusters to Windows Server 2016 Technical Preview in VMM](../Topic/Upgrading-Windows-Server-2012-R2-host-clusters-to-Windows-Server-2016-Technical-Preview-in-VMM.md).
+Use the following procedure to upgrade a [!INCLUDE[vmm12short](./Token/vmm12short_md.md)]\-managed  [!INCLUDE[winblue_server_2](./Token/winblue_server_2_md.md)] cluster to [!INCLUDE[winthreshold_server_2](./Token/winthreshold_server_2_md.md)]. Before you begin, be sure to review the prerequisites listed in [Upgrading Windows Server 2012 R2 host clusters to Windows Server 2016 Technical Preview in VMM](./Upgrading-Windows-Server-2012-R2-host-clusters-to-Windows-Server-2016-Technical-Preview-in-VMM.md).
 
-### To upgrade a [!INCLUDE[winblue_server_2](../Token/winblue_server_2_md.md)] host cluster to [!INCLUDE[winthreshold_server_2](../Token/winthreshold_server_2_md.md)]
+### To upgrade a [!INCLUDE[winblue_server_2](./Token/winblue_server_2_md.md)] host cluster to [!INCLUDE[winthreshold_server_2](./Token/winthreshold_server_2_md.md)]
 
 1.  Open the **Fabric** workspace.
 
@@ -36,7 +36,7 @@ Use the following procedure to upgrade a [!INCLUDE[vmm12short](../Token/vmm12sho
 
     Then click **Next**.
 
-5.  On the **Deployment Customization** page, review the list of nodes to upgrade. The wizard displays the configuration of each node. If the wizard was not able to determine all of the required information for a node, it displays a **Missing settings** alert for that node.  For example, if the nodes were not provisioned by [!INCLUDE[vmm12short](../Token/vmm12short_md.md)] using its bare\-metal provisioning process, the BMC settings may not be complete. In addition, if you want to change the configuration of one or more nodes, you can do so from this page.
+5.  On the **Deployment Customization** page, review the list of nodes to upgrade. The wizard displays the configuration of each node. If the wizard was not able to determine all of the required information for a node, it displays a **Missing settings** alert for that node.  For example, if the nodes were not provisioned by [!INCLUDE[vmm12short](./Token/vmm12short_md.md)] using its bare\-metal provisioning process, the BMC settings may not be complete. In addition, if you want to change the configuration of one or more nodes, you can do so from this page.
 
     In the list of nodes on the left of the pane, click the node you want to check. Check the following configuration areas:
 
@@ -58,7 +58,7 @@ Use the following procedure to upgrade a [!INCLUDE[vmm12short](../Token/vmm12sho
             -   **MAC address\(host clusters only—management NIC\)**: If this is the management NIC for a host cluster, and you want to configure it as a virtual network adapter, type a MAC address.
 
                 > [!NOTE]
-                > This is not the MAC address of the BMC. It is the MAC address of the management NIC, which [!INCLUDE[vmm12short](../Token/vmm12short_md.md)] uses to communicate with the [!INCLUDE[vmm12short](../Token/vmm12short_md.md)] management server.
+                > This is not the MAC address of the BMC. It is the MAC address of the management NIC, which [!INCLUDE[vmm12short](./Token/vmm12short_md.md)] uses to communicate with the [!INCLUDE[vmm12short](./Token/vmm12short_md.md)] management server.
 
             -   **Specify static IP settings for this network adapter**: If you check this box, select a logical network and \(if applicable in that logical network\) an IP subnet. If the selected IP subnet includes IP address pool, you can check **Obtain an IP address corresponding to the selected subnet**. Otherwise, type an IP address that is in within the logical network or its subnet.
 
@@ -73,7 +73,7 @@ Use the following procedure to upgrade a [!INCLUDE[vmm12short](../Token/vmm12sho
 
     Depending on your settings, the **Jobs** dialog box might appear. Make sure that all steps in the job reach the **Completed** status, and then close the dialog box.
 
-    If the wizard finishes the node upgrades successfully and all of the cluster nodes are running [!INCLUDE[winthreshold_server_2](../Token/winthreshold_server_2_md.md)], the wizard updates the cluster functional level to [!INCLUDE[winthreshold_server_2](../Token/winthreshold_server_2_md.md)].
+    If the wizard finishes the node upgrades successfully and all of the cluster nodes are running [!INCLUDE[winthreshold_server_2](./Token/winthreshold_server_2_md.md)], the wizard updates the cluster functional level to [!INCLUDE[winthreshold_server_2](./Token/winthreshold_server_2_md.md)].
 
 > [!NOTE]
 > To view detailed status information for a host cluster, including a link to the cluster validation test report, right\-click the cluster, click **Properties**, and then click the **Status** tab.
@@ -81,8 +81,9 @@ Use the following procedure to upgrade a [!INCLUDE[vmm12short](../Token/vmm12sho
 > On a host cluster, you can perform cluster validation at any time. To do this, click the cluster and then on the ribbon, click **Validate Cluster**. Cluster validation begins immediately.
 
 ## See Also
-[Upgrading Windows Server 2012 R2 host clusters to Windows Server 2016 Technical Preview in VMM](../Topic/Upgrading-Windows-Server-2012-R2-host-clusters-to-Windows-Server-2016-Technical-Preview-in-VMM.md)
-[Managing Hyper-V hosts and host clusters with VMM](../Topic/Managing-Hyper-V-hosts-and-host-clusters-with-VMM.md)
-[Managing hosts and host clusters with VMM](../Topic/Managing-hosts-and-host-clusters-with-VMM.md)
-[Managing fabric resources with VMM](../Topic/Managing-fabric-resources-with-VMM.md)
+[Upgrading Windows Server 2012 R2 host clusters to Windows Server 2016 Technical Preview in VMM](./Upgrading-Windows-Server-2012-R2-host-clusters-to-Windows-Server-2016-Technical-Preview-in-VMM.md)
+[Managing Hyper-V hosts and host clusters with VMM](./Managing-Hyper-V-hosts-and-host-clusters-with-VMM.md)
+[Managing hosts and host clusters with VMM](./Managing-hosts-and-host-clusters-with-VMM.md)
+[Managing fabric resources with VMM](./Managing-fabric-resources-with-VMM.md)
+
 

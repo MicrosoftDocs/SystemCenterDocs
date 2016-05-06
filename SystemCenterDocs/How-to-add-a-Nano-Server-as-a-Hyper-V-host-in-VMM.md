@@ -115,3 +115,4 @@ You should see "Package Identity : Microsoft-NanoServer-SCVMM-Feature-Package~31
 
 4.	Restart the Nano Server-based host.
   
+

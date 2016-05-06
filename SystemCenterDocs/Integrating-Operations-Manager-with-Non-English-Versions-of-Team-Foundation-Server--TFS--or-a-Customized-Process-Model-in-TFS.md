@@ -33,7 +33,7 @@ If you are using a non\-English version of TFS or want to customize a pre\-defin
 
 1.  Make sure you are using the Team Foundation Server Work Item Synchronization Management Pack that came with System Center 2012 R2 Update Rollup 1 or later and System Center 2012 SP1 Update Rollup 5 or later. This management pack is included in the Update Rollup 1 and Update Rollup 5 download. If you are using a previous TFS Work Item Synchronization management pack, you must remove it before importing the latest version.
 
-2.  Make sure you have imported the Alert Attachment management pack. For more information, see [How to Configure File Attachments for Operations Manager Alerts in System Center 2012 R2](../Topic/How-to-Configure-File-Attachments-for-Operations-Manager-Alerts-in-System-Center-2012-R2.md)
+2.  Make sure you have imported the Alert Attachment management pack. For more information, see [How to Configure File Attachments for Operations Manager Alerts in System Center 2012 R2](./How-to-Configure-File-Attachments-for-Operations-Manager-Alerts-in-System-Center-2012-R2.md)
 
 3.  Follow the [How to Configure Integration with TFS in System Center 2012 R2](http://go.microsoft.com/fwlink/?LinkId=391721), but don’t automatically import the Work Item Type Operational Issue.
 
@@ -140,4 +140,5 @@ Now that you’ve changed your process model, you need to change the correspondi
 |Severity High|Use value from customized WIDT|Not Applicable|Use value from customized WIDT|2 \- High|
 |Severity Medium|Use value from customized WIDT|Not Applicable|Use value from customized WIDT|3 \- Medium|
 |Severity Information|Use value from customized WIDT|Not Applicable|Use value from customized WIDT|4 \- Low|
+
 

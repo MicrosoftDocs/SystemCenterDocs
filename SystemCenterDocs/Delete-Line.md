@@ -46,3 +46,4 @@ The following table lists the published data items.
 |Deleted text|The text that was deleted from the file.|
 |Number of deletions|The number of deletions that occurred.|
 
+

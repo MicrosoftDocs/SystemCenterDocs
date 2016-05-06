@@ -112,3 +112,4 @@ The following table lists the published data items.
 |Receive variable 9|The ninth variable retrieved when in Custom mode.|
 |Receive variable 10|The tenth variable retrieved when in Custom mode.|
 
+

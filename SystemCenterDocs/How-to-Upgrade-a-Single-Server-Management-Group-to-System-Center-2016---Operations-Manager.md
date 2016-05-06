@@ -11,13 +11,13 @@ ms.topic: article
 ms.assetid: deb38f1e-f045-4ca1-8844-4ff38f06e7c3
 ---
 # How to Upgrade a Single-Server Management Group to System Center 2016 - Operations Manager
-When you upgrade a single\-server management group to [!INCLUDE[scom_threshold_1](../Token/scom_threshold_1_md.md)], all features that are installed on the server are upgraded. Before you begin the upgrade process, make sure that your server meets the minimum supported configurations. For more information, see [System Requirements for System Center 2016](System-Requirements-for-System-Center-Technical-Preview.md).
+When you upgrade a single\-server management group to [!INCLUDE[scom_threshold_1](./Token/scom_threshold_1_md.md)], all features that are installed on the server are upgraded. Before you begin the upgrade process, make sure that your server meets the minimum supported configurations. For more information, see [System Requirements for System Center 2016](System-Requirements-for-System-Center-Technical-Preview.md).
 
 ### To upgrade a single\-server management group
 
-1.  Log on to the server with an account that is a member of the [!INCLUDE[omblue_2](../Token/omblue_2_md.md)] Administrators role for your [!INCLUDE[omblue_2](../Token/omblue_2_md.md)] management group, a member of the SQL Server sysadmin fixed server role, and a local administrator on the computer.
+1.  Log on to the server with an account that is a member of the [!INCLUDE[omblue_2](./Token/omblue_2_md.md)] Administrators role for your [!INCLUDE[omblue_2](./Token/omblue_2_md.md)] management group, a member of the SQL Server sysadmin fixed server role, and a local administrator on the computer.
 
-2.  On the [!INCLUDE[omblue_2](../Token/omblue_2_md.md)] media, run **Setup.exe**, and then click **Install**.
+2.  On the [!INCLUDE[omblue_2](./Token/omblue_2_md.md)] media, run **Setup.exe**, and then click **Install**.
 
     > [!NOTE]
     > The **Getting Started** page displays information about what will be upgraded. Click **Next** to proceed with the upgrade.
@@ -44,7 +44,7 @@ When you upgrade a single\-server management group to [!INCLUDE[scom_threshold_1
 
 ### To upgrade a single\-server management group by using the Command Prompt window
 
-1.  Log on to the server with an account that is a member of the [!INCLUDE[omblue_2](../Token/omblue_2_md.md)] Administrators role for your [!INCLUDE[omblue_2](../Token/omblue_2_md.md)] management group, a member of the SQL Server sysadmin fixed server role, and a local administrator on the computer.
+1.  Log on to the server with an account that is a member of the [!INCLUDE[omblue_2](./Token/omblue_2_md.md)] Administrators role for your [!INCLUDE[omblue_2](./Token/omblue_2_md.md)] management group, a member of the SQL Server sysadmin fixed server role, and a local administrator on the computer.
 
 2.  Open a Command Prompt window by using the **Run as Administrator** option.
 
@@ -94,4 +94,5 @@ When you upgrade a single\-server management group to [!INCLUDE[scom_threshold_1
 1. In the Operations console, select the Administration workspace.
 
 2. In Device Management select Management Servers. In the results pane, you should see the management server that you just installed with a green check mark in the Health State column.
+
 

@@ -34,3 +34,4 @@ Individual fact tables inherit the global retention value when created, or you c
 
 1.  Use the **Set\-SCDWRetentionPeriod** PowerShell cmdlet to set the retention period for either a specific fact table within a specific data warehouse database or the default for fact tables within the database. See [Set\-SCDWRetentionPeriod](https://technet.microsoft.com/en-us/library/hh541725(v=sc.20).aspx) for detailed descriptions of available parameters and example usage.
 
+

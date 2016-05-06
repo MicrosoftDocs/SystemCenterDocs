@@ -8,7 +8,7 @@ ms.topic: article
 ms.assetid: 87379755-e9f0-4197-b56b-c189e5d502a6
 ---
 # Manage the DPM server
-This section provides information about performing common maintenance tasks on [!INCLUDE[dpm2012short](../Token/dpm2012short_md.md)] servers.
+This section provides information about performing common maintenance tasks on [!INCLUDE[dpm2012short](./Token/dpm2012short_md.md)] servers.
 
 -   [Modify the SQL Server database used by DPM](assetId:///99070a20-c3cd-4940-9f06-e02cc86b7575)
 
@@ -29,4 +29,5 @@ This section provides information about performing common maintenance tasks on [
 -   [Replacing the DPM System Disk](assetId:///9ae0f8c9-e0ab-4dbf-b9ab-e9c55f11c8c3)
 
 -   [Enrol in the Customer Experience Improvement Program \(CEIP\)](assetId:///3e4a40e3-9bb4-47c1-ba6f-8c415b3f69af)
+
 

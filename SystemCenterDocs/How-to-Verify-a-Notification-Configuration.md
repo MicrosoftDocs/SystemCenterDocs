@@ -17,7 +17,7 @@ If you are verifying a recurring notification subscription, you must wait for th
 
 ### To verify a notification configuration
 
-1.  In the [!INCLUDE[smcons](../Token/smcons_md.md)], click **Work Items**.
+1.  In the [!INCLUDE[smcons](./Token/smcons_md.md)], click **Work Items**.
 
 2.  In the **Work Items** pane, expand **Work Items**, expand **Incident Management**, and then click **All Open Incidents**.
 
@@ -28,4 +28,5 @@ If you are verifying a recurring notification subscription, you must wait for th
 5.  In the **Classification Category** list, select **E\-mail Problems**, and then click **OK**.
 
 6.  Verify that an email notification that contains the information you entered in the template is received. The email title should contain the incident ID number.
+
 

@@ -11,10 +11,10 @@ ms.topic: get-started-article
 ms.assetid: 4c6535e3-756c-4b48-8e7c-28085ba06677
 ---
 # Installing Operations Manager by Using the Command Prompt Window
-You can install features of [!INCLUDE[om12short](../Token/om12short_md.md)] by using the **setup.exe** command in the Command Prompt window. Gateway and agent installations require the use of MOMGateway.msi and MOMAgent.msi. You must ensure that all servers meet the minimum supported configuration requirements for [!INCLUDE[scom_threshold_1](../Token/scom_threshold_1_md.md)]. For more information, see [System Requirements for System Center Technical Preview](../Topic/System-Requirements-for-System-Center-Technical-Preview.md).
+You can install features of [!INCLUDE[om12short](./Token/om12short_md.md)] by using the **setup.exe** command in the Command Prompt window. Gateway and agent installations require the use of MOMGateway.msi and MOMAgent.msi. You must ensure that all servers meet the minimum supported configuration requirements for [!INCLUDE[scom_threshold_1](./Token/scom_threshold_1_md.md)]. For more information, see [System Requirements for System Center Technical Preview](./System-Requirements-for-System-Center-Technical-Preview.md).
 
 ## Command\-line Parameters
-The following table lists the command\-line parameters for installing features of [!INCLUDE[om12short](../Token/om12short_md.md)].
+The following table lists the command\-line parameters for installing features of [!INCLUDE[om12short](./Token/om12short_md.md)].
 
 > [!NOTE]
 > If the parameter contains a colon, a value is required. Otherwise, it is simply a switch.
@@ -51,5 +51,6 @@ The following table lists the command\-line parameters for installing features o
 |\/WebConsoleAuthorizationMode:|Mixed: Used for intranet scenarios.<br /><br />Network: Used for extranet scenarios.<br /><br />Used for web console installations.|
 |\/SRSInstance|The reporting server and instance \(<server\\instance>\).<br /><br />Used for Reporting Server installations.|
 |\/SendODRReports:|0: Do not opt in to sending operational data reports.<br /><br />1: opt in to sending operational data reports.<br /><br />Used for Reporting Server Installations.|
-|\/uninstall|Uninstalls [!INCLUDE[om12short](../Token/om12short_md.md)]. Use **\/components** to indicate specific features to uninstall. If **\/components** is not specified, it will uninstall all features of [!INCLUDE[om12short](../Token/om12short_md.md)] on the server.|
+|\/uninstall|Uninstalls [!INCLUDE[om12short](./Token/om12short_md.md)]. Use **\/components** to indicate specific features to uninstall. If **\/components** is not specified, it will uninstall all features of [!INCLUDE[om12short](./Token/om12short_md.md)] on the server.|
+
 

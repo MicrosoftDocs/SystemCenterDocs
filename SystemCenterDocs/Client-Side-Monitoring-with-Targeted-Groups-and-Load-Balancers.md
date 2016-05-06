@@ -22,3 +22,4 @@ When you configure client\-side monitoring, you have the option to set the targe
 
 -   **Solution 2** If you are already running client\-side monitoring with a targeted group and a load balancer, you can resolve this issue by creating a rule on the load balancer that directs all of the monitoring traffic to the monitored servers. Monitoring traffic is the monitoring JavaScripts that send data to the collector endpoint. You can identify monitoring traffic because it contains **\/CSMCollector** in the URL. Each load balancer has its own model for configuring rules. Refer to your load balancer’s documentation for details about how to create the rule.
 
+

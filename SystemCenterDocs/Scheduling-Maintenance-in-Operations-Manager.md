@@ -11,10 +11,10 @@ ms.topic: article
 ms.assetid: 78329674-d244-44cb-b03e-6dc3b6362468
 ---
 # Scheduling Maintenance in Operations Manager
-This topic details the default schedule for [!INCLUDE[om12long](../Token/om12long_md.md)] maintenance tasks.
+This topic details the default schedule for [!INCLUDE[om12long](./Token/om12long_md.md)] maintenance tasks.
 
 ## Maintenance Tasks Schedule
-By default, [!INCLUDE[om12short](../Token/om12short_md.md)] performs maintenance tasks daily to maintain optimal performance of the Operations Manager database.  These maintenance tasks are defined as system rules in the Operations Manager management pack.
+By default, [!INCLUDE[om12short](./Token/om12short_md.md)] performs maintenance tasks daily to maintain optimal performance of the Operations Manager database.  These maintenance tasks are defined as system rules in the Operations Manager management pack.
 
 The following table displays the maintenance tasks and the time they are scheduled to run:
 
@@ -51,12 +51,13 @@ The following table displays the maintenance tasks and the time they are schedul
     > The scheduled times of the grooming jobs cannot be reconfigured by using an override. If you need to change the schedules of these maintenance tasks, you must first disable them with an override and then create new system rules that match the configuration of the original rules with new schedules.
 
 ## See Also
-[Maintenance of Operations Manager](../Topic/Maintenance-of-Operations-Manager.md)
-[Monitoring the Health of the Management Group](../Topic/Monitoring-the-Health-of-the-Management-Group.md)
-[Inventory of Operations Manager Infrastructure](../Topic/Inventory-of-Operations-Manager-Infrastructure.md)
-[How to Configure Grooming Settings for the Reporting Data Warehouse Database](../Topic/How-to-Configure-Grooming-Settings-for-the-Reporting-Data-Warehouse-Database.md)
-[How and When to Clear the Cache](../Topic/How-and-When-to-Clear-the-Cache.md)
-[How to Restart a Management Server](../Topic/How-to-Restart-a-Management-Server.md)
-[How to Configure Grooming Settings for the Operations Manager Database](../Topic/How-to-Configure-Grooming-Settings-for-the-Operations-Manager-Database.md)
-[Recommendations for Daily, Weekly, and Monthly Operations Manager Tasks](../Topic/Recommendations-for-Daily,-Weekly,-and-Monthly-Operations-Manager-Tasks.md)
+[Maintenance of Operations Manager](./Maintenance-of-Operations-Manager.md)
+[Monitoring the Health of the Management Group](./Monitoring-the-Health-of-the-Management-Group.md)
+[Inventory of Operations Manager Infrastructure](./Inventory-of-Operations-Manager-Infrastructure.md)
+[How to Configure Grooming Settings for the Reporting Data Warehouse Database](./How-to-Configure-Grooming-Settings-for-the-Reporting-Data-Warehouse-Database.md)
+[How and When to Clear the Cache](./How-and-When-to-Clear-the-Cache.md)
+[How to Restart a Management Server](./How-to-Restart-a-Management-Server.md)
+[How to Configure Grooming Settings for the Operations Manager Database](./How-to-Configure-Grooming-Settings-for-the-Operations-Manager-Database.md)
+[Recommendations for Daily, Weekly, and Monthly Operations Manager Tasks](./Recommendations-for-Daily,-Weekly,-and-Monthly-Operations-Manager-Tasks.md)
+
 

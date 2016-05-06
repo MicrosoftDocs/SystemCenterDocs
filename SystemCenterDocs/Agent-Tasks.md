@@ -11,7 +11,7 @@ ms.topic: article
 ms.assetid: f6269883-c45e-4102-a2ba-fa19739e06c7
 ---
 # Agent Tasks
-*Agent tasks* in [!INCLUDE[om12long](../Token/om12long_md.md)] are run on the agent computer where the target object is managed. An agent task can be a script or an executable program run from a command line. If an executable program is used, the application must be installed on the agent computer.
+*Agent tasks* in [!INCLUDE[om12long]./Token/om12long_md.md)] are run on the agent computer where the target object is managed. An agent task can be a script or an executable program run from a command line. If an executable program is used, the application must be installed on the agent computer.
 
 Agent tasks are useful for performing actions on the agent computer or for retrieving information for the user. They provide the following capabilities:
 
@@ -23,7 +23,7 @@ Agent tasks are useful for performing actions on the agent computer or for retri
 
 **Agent Task**
 
-![](../Image/AuthGuide_22_TaskAgent.gif)
+![/Image/AuthGuide_22_TaskAgent.gif)
 
 ## Credentials
 Tasks run under the credentials of the Default Action Account on the agent computer. This account typically has sufficient privileges for accessing most application components, even if the user running the task does not have these user rights. If the task is required to perform an action requiring other credentials, such as accessing an external data source, then you can specify credentials when you run the task.
@@ -70,7 +70,7 @@ The following options are available on the **Script** page of the wizard. This p
 |File Name|Name of the script. Must end in a .vbs or .js extension depending on whether your script is written in VBScript or JScript.|
 |Timeout|The number of seconds that the script can run before the agent stops it. This prevents problem scripts from running continuously and putting excess overhead on the agent computer.|
 |Script|The body of the script.|
-|Parameters|Click to provide values for any arguments in the script. For more information, see [Script Arguments](../Topic/Script-Monitors-and-Rules.md#ScriptArguments).|
+|Parameters|Click to provide values for any arguments in the script. For more information, see [Script Arguments](./Script-Monitors-and-Rules.md#ScriptArguments).|
 
 ## Creating Agent Tasks
 
@@ -91,7 +91,7 @@ The following procedure creates a console task to run the **netstat** utility to
 
     1.  Under **Agent Tasks**, select **Command line**.
 
-    2.  In the **Select destination management pack** dropdown, select the management pack file to store the task. For more information about management packs, see [Selecting a Management Pack File](../Topic/Selecting-a-Management-Pack-File.md).
+    2.  In the **Select destination management pack** dropdown, select the management pack file to store the task. For more information about management packs, see [Selecting a Management Pack File](./Selecting-a-Management-Pack-File.md).
 
     3.  Click **Next**.
 
@@ -128,7 +128,7 @@ The following procedure creates a console task to run the **netstat** utility to
 
     1.  Under **Agent Tasks**, select **Run an UNIX\/Linux Shell Command**.
 
-    2.  In the **Select destination management pack** dropdown, select the management pack file to store the task. For more information about management packs, see [Selecting a Management Pack File](../Topic/Selecting-a-Management-Pack-File.md).
+    2.  In the **Select destination management pack** dropdown, select the management pack file to store the task. For more information about management packs, see [Selecting a Management Pack File](./Selecting-a-Management-Pack-File.md).
 
     3.  Click **Next**.
 
@@ -169,7 +169,7 @@ The following procedure creates an agent script task to reboot the target comput
 
     1.  Under **Agent Tasks**, select **Run a script**.
 
-    2.  In the **Select destination management pack** dropdown, select the management pack file to store the task. For more information about management packs, see [Selecting a Management Pack File](../Topic/Selecting-a-Management-Pack-File.md).
+    2.  In the **Select destination management pack** dropdown, select the management pack file to store the task. For more information about management packs, see [Selecting a Management Pack File](./Selecting-a-Management-Pack-File.md).
 
     3.  Click **Next**.
 
@@ -220,6 +220,8 @@ The following procedure creates an agent script task to reboot the target comput
     8.  Click **Create**.
 
 ## See Also
-[Tasks](../Topic/Tasks.md)
-[Console Tasks](../Topic/Console-Tasks.md)
+[Tasks](./Tasks.md)
+[Console Tasks](./Console-Tasks.md)
+
+
 

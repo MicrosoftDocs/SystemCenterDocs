@@ -42,3 +42,4 @@ The following table lists the published data items.
 |The XPath query.|The XPath query that was used in the search.|
 |Node count|The number of results published from the query.|
 
+

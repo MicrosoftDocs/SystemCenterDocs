@@ -69,3 +69,4 @@ The following table lists the published data items.
 |Timestamp of matching line|The timestamp of the line that was read.|
 |Message of matching line|The log message of the line that was read.|
 
+

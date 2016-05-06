@@ -110,3 +110,4 @@ DPM can protect data in the following clustered applications:
 
 DPM can protect cluster workloads that are located in the same domain as the DPM server, and in a child or trusted domain. If you want to protect data source in untrusted domains or workgroups you’ll need to use NTLM or certificate authentication for a single server, or certificate authentication only for a cluster.
 
+

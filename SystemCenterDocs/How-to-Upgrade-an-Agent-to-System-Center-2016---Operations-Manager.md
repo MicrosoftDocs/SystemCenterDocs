@@ -11,19 +11,19 @@ ms.topic: article
 ms.assetid: c8153b24-0618-4f3c-a9b2-1dc27107470f
 ---
 # How to Upgrade an Agent to System Center 2016 - Operations Manager
-Use the following procedures to upgrade to [!INCLUDE[scom_threshold_1](../Token/scom_threshold_1_md.md)] agents. You should first verify that the agents meet minimum supported configurations. For more information, see [System Requirements: System Center 2016 - Operations Manager](System-Requirements-for-System-Center-Technical-Preview.md).
+Use the following procedures to upgrade to [!INCLUDE[scom_threshold_1](./Token/scom_threshold_1_md.md)] agents. You should first verify that the agents meet minimum supported configurations. For more information, see [System Requirements: System Center 2016 - Operations Manager](System-Requirements-for-System-Center-Technical-Preview.md).
 
 > [!NOTE]
 > If before upgrade an agent was installed using the push install method, after upgrade the server the agent will be put into a pending update state and can be upgraded through the Console. Otherwise the agent should be upgraded manually.
 
-When you upgrade an agent, the [!INCLUDE[omblue_2](../Token/omblue_2_md.md)] installer service runs and is not removed until after the completion of the upgrade. If the agent upgrade fails, you might have to re\-install the agent because the installer service was not properly removed. If you attempt to upgrade the agent again and it fails, you should re\-install the agent after you have completed upgrading all features of [!INCLUDE[omblue_2](../Token/omblue_2_md.md)].
+When you upgrade an agent, the [!INCLUDE[omblue_2](./Token/omblue_2_md.md)] installer service runs and is not removed until after the completion of the upgrade. If the agent upgrade fails, you might have to re\-install the agent because the installer service was not properly removed. If you attempt to upgrade the agent again and it fails, you should re\-install the agent after you have completed upgrading all features of [!INCLUDE[omblue_2](./Token/omblue_2_md.md)].
 
 > [!NOTE]
 > If you have Audit Collection Services \(ACS\) enabled for an agent prior to this upgrade, it is disabled as part of the agent upgrade process. ACS must be re\-enabled after upgrade completes.
 
-If you are upgrading agents that are deployed to a computer that has other [!INCLUDE[omblue_1](../Token/omblue_1_md.md)] features installed, you must do the following:
+If you are upgrading agents that are deployed to a computer that has other [!INCLUDE[omblue_1](./Token/omblue_1_md.md)] features installed, you must do the following:
 
--   If the agent is installed on a computer that has [!INCLUDE[omblue_1](../Token/omblue_1_md.md)] Operations console or web console installed, you must first uninstall the consoles before you upgrade the agents. You can do this by uninstalling [!INCLUDE[omblue_1](../Token/omblue_1_md.md)]in Programs and Features. You can reinstall these consoles after upgrade is completed.
+-   If the agent is installed on a computer that has [!INCLUDE[omblue_1](./Token/omblue_1_md.md)] Operations console or web console installed, you must first uninstall the consoles before you upgrade the agents. You can do this by uninstalling [!INCLUDE[omblue_1](./Token/omblue_1_md.md)]in Programs and Features. You can reinstall these consoles after upgrade is completed.
 
 > [!NOTE]
 > If UAC is enabled, you must run the agent upgrade from an elevated command prompt.
@@ -36,7 +36,7 @@ Push\-installed agents are agents that were installed by using the **Computer an
 
 #### To upgrade push\-installed Windows agents by using the Operations console
 
-1.  Log on to the computer hosting the [!INCLUDE[omblue_2](../Token/omblue_2_md.md)] Operations console. Use an account that is a member of the [!INCLUDE[omblue_2](../Token/omblue_2_md.md)] Administrators role for the [!INCLUDE[omblue_2](../Token/omblue_2_md.md)] management group.
+1.  Log on to the computer hosting the [!INCLUDE[omblue_2](./Token/omblue_2_md.md)] Operations console. Use an account that is a member of the [!INCLUDE[omblue_2](./Token/omblue_2_md.md)] Administrators role for the [!INCLUDE[omblue_2](./Token/omblue_2_md.md)] management group.
 
 2.  In the Operations console, click **Administration**.
 
@@ -59,9 +59,9 @@ Manually\-installed agents are agents that were installed manually, either by us
 
 #### To upgrade a manually installed Windows agent by using the Setup Wizard
 
-1.  Log on to the computer that hosts the agent with an [!INCLUDE[omblue_2](../Token/omblue_2_md.md)] Administrators role account for your [!INCLUDE[omblue_2](../Token/omblue_2_md.md)] management group.
+1.  Log on to the computer that hosts the agent with an [!INCLUDE[omblue_2](./Token/omblue_2_md.md)] Administrators role account for your [!INCLUDE[omblue_2](./Token/omblue_2_md.md)] management group.
 
-2.  Run **Setup.exe** from the [!INCLUDE[omblue_2](../Token/omblue_2_md.md)] installation media.
+2.  Run **Setup.exe** from the [!INCLUDE[omblue_2](./Token/omblue_2_md.md)] installation media.
 
 3.  On the first page of the Setup Wizard, click **Local agent**. When the **Welcome to the Microsoft Monitoring Agent Upgrade Wizard** page opens, click **Next**.
 
@@ -71,7 +71,7 @@ Manually\-installed agents are agents that were installed manually, either by us
 
 #### To upgrade a manually installed Windows agent by using the Command Prompt window
 
-1.  Log on to the computer that hosts the agent with an [!INCLUDE[omblue_2](../Token/omblue_2_md.md)] Administrators role account for your [!INCLUDE[omblue_2](../Token/omblue_2_md.md)] management group.
+1.  Log on to the computer that hosts the agent with an [!INCLUDE[omblue_2](./Token/omblue_2_md.md)] Administrators role account for your [!INCLUDE[omblue_2](./Token/omblue_2_md.md)] management group.
 
 2.  Open a Command Prompt window by using the **Run as Administrator** option.
 
@@ -102,7 +102,7 @@ Manually\-installed agents are agents that were installed manually, either by us
 
 -   In the Operations console, in the **Administration** pane, run the **UNIX\/Linux Upgrade Wizard**.
 
-    Any existing Run As profiles and Run As accounts continue to have valid configurations. For information about changes to Run As profiles and accounts for UNIX and Linux monitoring in [!INCLUDE[omblue_2](../Token/omblue_2_md.md)], see [Accessing UNIX and Linux Computers in Operations Manager](http://go.microsoft.com/fwlink/p/?LinkID=223881)
+    Any existing Run As profiles and Run As accounts continue to have valid configurations. For information about changes to Run As profiles and accounts for UNIX and Linux monitoring in [!INCLUDE[omblue_2](./Token/omblue_2_md.md)], see [Accessing UNIX and Linux Computers in Operations Manager](http://go.microsoft.com/fwlink/p/?LinkID=223881)
 
 #### To manually upgrade UNIX and Linux agents
 
@@ -134,4 +134,5 @@ Manually\-installed agents are agents that were installed manually, either by us
 
     > [!NOTE]
     > It can take up to one hour for the console to show the updated version of the agent.
+
 

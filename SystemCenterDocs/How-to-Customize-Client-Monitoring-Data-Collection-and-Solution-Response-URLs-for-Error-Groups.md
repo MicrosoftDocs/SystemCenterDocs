@@ -35,9 +35,10 @@ You can help decrease the time it takes to diagnose and resolve operating system
 8.  In the **Error Group Responses** dialog box, select **Custom error information**, type the URL for the custom error information, such as **http:\/\/server\/errors\/100.htm**, click **Test Link**, and then click **OK**.
 
 ## See Also
-[Client Monitoring Using Agentless Exception Monitoring in Operations Manager](../Topic/Client-Monitoring-Using-Agentless-Exception-Monitoring-in-Operations-Manager.md)
-[How to Configure Clients for Client Monitoring](../Topic/How-to-Configure-Clients-for-Client-Monitoring.md)
-[How to Configure a Management Server for Client Monitoring](../Topic/How-to-Configure-a-Management-Server-for-Client-Monitoring.md)
-[How to Configure Error Transmission Settings for Client Monitoring in Operations Manager](../Topic/How-to-Configure-Error-Transmission-Settings-for-Client-Monitoring-in-Operations-Manager.md)
-[Forwarding Client Error Reports &#40;Client Monitoring&#41;](../Topic/Forwarding-Client-Error-Reports--Client-Monitoring-.md)
+[Client Monitoring Using Agentless Exception Monitoring in Operations Manager](./Client-Monitoring-Using-Agentless-Exception-Monitoring-in-Operations-Manager.md)
+[How to Configure Clients for Client Monitoring](./How-to-Configure-Clients-for-Client-Monitoring.md)
+[How to Configure a Management Server for Client Monitoring](./How-to-Configure-a-Management-Server-for-Client-Monitoring.md)
+[How to Configure Error Transmission Settings for Client Monitoring in Operations Manager](./How-to-Configure-Error-Transmission-Settings-for-Client-Monitoring-in-Operations-Manager.md)
+[Forwarding Client Error Reports &#40;Client Monitoring&#41;](./Forwarding-Client-Error-Reports--Client-Monitoring-.md)
+
 

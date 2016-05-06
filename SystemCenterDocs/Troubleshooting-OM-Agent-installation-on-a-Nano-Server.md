@@ -38,3 +38,4 @@ If you encounter any difficulties with setting up the Operations Manager Agent o
 |Unable to locate agent folder on the Nano Server.|Either the NanoAgent directory has been moved, or the account has insufficient permissions to access the NanoAgent directory.|Make sure the account the script is running under has sufficient permissions to access the NanoAgent directory and that the NanoAgent directory is present and run the Uninstallation script again.|
 |Unable to remove the agent directory. Try restarting the Nano Server and then re\-running this script.|A process may be using the SCOM Agent.|Make sure there are no processes attached to the SCOM agent and run the Uninstallation script again.|
 
+

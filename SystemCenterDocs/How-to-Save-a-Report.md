@@ -36,11 +36,12 @@ After the wizard completes, the management pack is saved to Operations Manager a
 > Only users with administrator authorization can save reports to management packs.
 
 ## See Also
-[Using Reports in Operations Manager](../Topic/Using-Reports-in-Operations-Manager.md)
-[How to Create Reports in Operations Manager](../Topic/How-to-Create-Reports-in-Operations-Manager.md)
-[Operations Manager Reports Library](../Topic/Operations-Manager-Reports-Library.md)
-[How to Run a Report](../Topic/How-to-Run-a-Report.md)
-[Scheduling Reports](../Topic/Scheduling-Reports.md)
-[Operations Manager Reports Library](../Topic/Operations-Manager-Reports-Library.md)
-[How to Troubleshoot Reports that Return No Data](../Topic/How-to-Troubleshoot-Reports-that-Return-No-Data.md)
+[Using Reports in Operations Manager](./Using-Reports-in-Operations-Manager.md)
+[How to Create Reports in Operations Manager](./How-to-Create-Reports-in-Operations-Manager.md)
+[Operations Manager Reports Library](./Operations-Manager-Reports-Library.md)
+[How to Run a Report](./How-to-Run-a-Report.md)
+[Scheduling Reports](./Scheduling-Reports.md)
+[Operations Manager Reports Library](./Operations-Manager-Reports-Library.md)
+[How to Troubleshoot Reports that Return No Data](./How-to-Troubleshoot-Reports-that-Return-No-Data.md)
+
 

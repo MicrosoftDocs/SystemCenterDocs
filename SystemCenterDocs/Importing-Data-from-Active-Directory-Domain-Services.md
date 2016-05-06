@@ -15,23 +15,24 @@ This section provides an overview of using a connector to import data from Activ
 
 ## Importing Data from Active Directory Domain Services Topics
 
--   [About Importing Data from Active Directory Domain Services](../Topic/About-Importing-Data-from-Active-Directory-Domain-Services.md)
+-   [About Importing Data from Active Directory Domain Services](./About-Importing-Data-from-Active-Directory-Domain-Services.md)
 
     Provides an overview of how to use a connector to import data from AD DS.
 
--   [How to Create an Active Directory Connector](../Topic/How-to-Create-an-Active-Directory-Connector.md)
+-   [How to Create an Active Directory Connector](./How-to-Create-an-Active-Directory-Connector.md)
 
     Describes how to create an Active Directory connector.
 
--   [How to Synchronize an Active Directory Connector](../Topic/How-to-Synchronize-an-Active-Directory-Connector.md)
+-   [How to Synchronize an Active Directory Connector](./How-to-Synchronize-an-Active-Directory-Connector.md)
 
-    Describes how to synchronize the data in AD DS with the [!INCLUDE[smshort](../Token/smshort_md.md)] database.
+    Describes how to synchronize the data in AD DS with the [!INCLUDE[smshort](./Token/smshort_md.md)] database.
 
--   [How to Disable and Enable an Active Directory Connector](../Topic/How-to-Disable-and-Enable-an-Active-Directory-Connector.md)
+-   [How to Disable and Enable an Active Directory Connector](./How-to-Disable-and-Enable-an-Active-Directory-Connector.md)
 
     Describes how to enable or disable an Active Directory connector.
 
--   [How to Import Data from Other Domains](../Topic/How-to-Import-Data-from-Other-Domains.md)
+-   [How to Import Data from Other Domains](./How-to-Import-Data-from-Other-Domains.md)
 
-    Describes how to import data from domains other than the domain in which [!INCLUDE[smshort](../Token/smshort_md.md)] resides.
+    Describes how to import data from domains other than the domain in which [!INCLUDE[smshort](./Token/smshort_md.md)] resides.
+
 

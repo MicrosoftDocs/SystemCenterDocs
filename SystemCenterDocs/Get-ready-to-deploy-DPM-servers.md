@@ -85,3 +85,4 @@ Before you begin a DPM deployment, verify that appropriate users have been grant
 |Access previous versions of protected data from protected machine|User account with access to protected share|
 |Recover SharePoint data|SharePoint farm admin that's also an admin on the front\-end Web server on which the protection agent is installed.|
 
+

@@ -19,7 +19,7 @@ You still need to select the application you want to monitor and the target mana
 ## Using Default Settings for Client\-Side Monitoring
 The defaults are enough to get this started and to allow you to test it out from localhost connections. It is simply scoped to monitor localhost by default.
 
-You can certainly accept the default settings for client\-side monitoring, but it is very important to run the compatibility check task to validate if the application can be monitored and if any of the pages should be excluded from monitoring. Therefore, simply applying of client\-side monitoring defaults might be risky. For more information about running the compatibility check task, see [Before You Begin Monitoring .NET Applications](../Topic/Before-You-Begin-Monitoring-.NET-Applications.md)
+You can certainly accept the default settings for client\-side monitoring, but it is very important to run the compatibility check task to validate if the application can be monitored and if any of the pages should be excluded from monitoring. Therefore, simply applying of client\-side monitoring defaults might be risky. For more information about running the compatibility check task, see [Before You Begin Monitoring .NET Applications](./Before-You-Begin-Monitoring-.NET-Applications.md)
 
 In general, client\-side threshold settings should be higher than server\-side threshold settings. This is because the client\-side monitoring contains the server time, too. For instance, when a client\-side event is divided into various parts, some of the time is spent on the server, but the client also monitors the time spent on the network and the time spent in the browser.
 
@@ -27,9 +27,11 @@ In general, client\-side threshold settings should be higher than server\-side t
 
 There is no default for the load balancers. The load balancer setting is one you can opt to change, whereas you must change the client IP filters because if you do not update those settings you will not get any data at all.
 
-**IP Address Filters** You can use client IP filters to choose the networks that you want to monitor. By applying filters, administrators can limit the scope of the monitored computers. By default, only localhost IP addresses are monitored. If the IP filter list is empty, all IP addresses are monitored. Any IP addresses that fit the filter definitions are excluded from client\-side monitoring. For more information, see [How to Configure IP Address Exclusion Filters for Client-Side Monitoring](../Topic/How-to-Configure-IP-Address-Exclusion-Filters-for-Client-Side-Monitoring.md)
+**IP Address Filters** You can use client IP filters to choose the networks that you want to monitor. By applying filters, administrators can limit the scope of the monitored computers. By default, only localhost IP addresses are monitored. If the IP filter list is empty, all IP addresses are monitored. Any IP addresses that fit the filter definitions are excluded from client\-side monitoring. For more information, see [How to Configure IP Address Exclusion Filters for Client-Side Monitoring](./How-to-Configure-IP-Address-Exclusion-Filters-for-Client-Side-Monitoring.md)
 
 ## See Also
-[Authoring Strategies for .NET Application Monitoring](../Topic/Authoring-Strategies-for-.NET-Application-Monitoring.md)
-[How to Start Monitoring a New Application](../Topic/How-to-Start-Monitoring-a-New-Application.md)
+[Authoring Strategies for .NET Application Monitoring](./Authoring-Strategies-for-.NET-Application-Monitoring.md)
+[How to Start Monitoring a New Application](./How-to-Start-Monitoring-a-New-Application.md)
+
+
 

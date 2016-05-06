@@ -8,19 +8,19 @@ ms.topic: article
 ms.assetid: b3b46c83-fd6a-499b-bead-7affd7164ac5
 ---
 # Comparing the Operations Console and Web Console in Operations Manager_1
-[!INCLUDE[om12long](../Token/om12long_md.md)] operators use a console to view monitoring data. The consoles available are the Operations console and the web console. The Operations console allows you to perform all actions that your user role allows, while the web console displays only My Workspace and the Monitoring workspace.
+[!INCLUDE[om12long](./Token/om12long_md.md)] operators use a console to view monitoring data. The consoles available are the Operations console and the web console. The Operations console allows you to perform all actions that your user role allows, while the web console displays only My Workspace and the Monitoring workspace.
 
 Both consoles share a similar layout:
 
-![](../Image/Consoleframe.gif)
+![](/Image/Consoleframe.gif)
 
 Each navigation button opens a specific workspace, such as Monitoring or Administration. In the Operations console, the following navigation buttons may be available, depending on the user role you are assigned:
 
-![](../Image/OpsConsoleNavButtons.gif)
+![](/Image/OpsConsoleNavButtons.gif)
 
 In the web console, only Monitoring and My Workspace are available:
 
-![](../Image/Webconsolenavbuttons.gif)
+![](/Image/Webconsolenavbuttons.gif)
 
 > [!TIP]
 > In the Operations console, you can change the navigation buttons into small icons and increase the space available in the navigation pane by clicking on the top border of the navigation buttons and dragging downward. You can also hide and reveal the navigation and task panes.
@@ -36,4 +36,5 @@ There are a few differences between the Operations console and web console that 
 -   You do not have the options to show, hide, personalize, or create views in the web console, although you can create a dashboard view in My Workspace in the web console.
 
 -   There are no subscription options in the web console.
+
 

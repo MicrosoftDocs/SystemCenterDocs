@@ -14,7 +14,7 @@ ms.assetid: 25392668-5bc2-42ea-b6ea-293a191b57fa
 When you configure a logical switch, you can also create an uplink port profile. However, you can create uplink port profiles outside of the Create Logical Switch Wizard, using the settings listed in this topic.
 
 > [!IMPORTANT]
-> For information about prerequisites and settings for port profiles and logical switches, see [Overview: plan logical switches and port profiles in VMM](../Topic/Overview--plan-logical-switches-and-port-profiles-in-VMM.md).
+> For information about prerequisites and settings for port profiles and logical switches, see [Overview: plan logical switches and port profiles in VMM](./Overview--plan-logical-switches-and-port-profiles-in-VMM.md).
 
 ### To create an uplink port profile
 
@@ -45,7 +45,7 @@ When you configure a logical switch, you can also create an uplink port profile.
 
     -   **Mac Addresses**: Uses the source and destination MAC addresses to create a hash and then assigns the packets that have that hash value to one of the available network adapters.
 
-    -   **Dynamic**: Uses the dynamic load balancing that is available in [!INCLUDE[winthreshold_server_2](../Token/winthreshold_server_2_md.md)] and [!INCLUDE[winblue_server_2](../Token/winblue_server_2_md.md)] only.
+    -   **Dynamic**: Uses the dynamic load balancing that is available in [!INCLUDE[winthreshold_server_2](./Token/winthreshold_server_2_md.md)] and [!INCLUDE[winblue_server_2](./Token/winblue_server_2_md.md)] only.
 
     -   **Host default**: This specifies the **Dynamic** algorithm for hosts that support it, and the **Hyper\-V Port** algorithm for hosts that do not.
 
@@ -73,7 +73,8 @@ When you configure a logical switch, you can also create an uplink port profile.
 7.  On the **Summary** page, review and confirm the settings, and then click **Finish**.
 
 ## See Also
-[Configuring logical networks, VM networks, and logical switches in VMM](../Topic/Configuring-logical-networks,-VM-networks,-and-logical-switches-in-VMM.md)
-[VMM networking reference: illustrations, settings, and optional procedures](../Topic/VMM-networking-reference--illustrations,-settings,-and-optional-procedures.md)
-[Managing network resources with VMM](../Topic/Managing-network-resources-with-VMM.md)
+[Configuring logical networks, VM networks, and logical switches in VMM](./Configuring-logical-networks,-VM-networks,-and-logical-switches-in-VMM.md)
+[VMM networking reference: illustrations, settings, and optional procedures](./VMM-networking-reference--illustrations,-settings,-and-optional-procedures.md)
+[Managing network resources with VMM](./Managing-network-resources-with-VMM.md)
+
 

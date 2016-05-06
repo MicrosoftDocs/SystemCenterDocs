@@ -22,7 +22,7 @@ The **Rule Type** page includes basic settings for the rule including its type a
 |Option|Description|
 |----------|---------------|
 |Select the type of monitor to create|To create a shell command monitor that evaluates for two states \(healthy and error\), select **UNIX\/Linux Shell Command Two State Monitor**. <br />To create a shell command monitor that evaluates for three states \(healthy, warning and error\), select **UNIX\/Linux Shell Command Three State Monitor**.|
-|Management Pack|Management pack file to store the rule or monitor.For more information on management packs, see [Selecting a Management Pack File](../Topic/Selecting-a-Management-Pack-File.md).|
+|Management Pack|Management pack file to store the rule or monitor.For more information on management packs, see [Selecting a Management Pack File](./Selecting-a-Management-Pack-File.md).|
 
 ### General
 The **General** page includes general settings for the rule including its name, category, target, and the management pack file to store it in.
@@ -31,7 +31,7 @@ The **General** page includes general settings for the rule including its name, 
 |----------|---------------|
 |Name|The name used for the monitor. This appears in the **Monitors** view in the **Authoring** pane. When you view the Health Explorer for the monitoring target, you can see the health state of this monitor.|
 |Description|Optional description of the rule.|
-|Monitor Target|The class to use for the target of the rule. The rule will be run on any agent that has at least one instance of this class. For more information on targets, see [Understanding Classes and Objects](../Topic/Understanding-Classes-and-Objects.md).|
+|Monitor Target|The class to use for the target of the rule. The rule will be run on any agent that has at least one instance of this class. For more information on targets, see [Understanding Classes and Objects](./Understanding-Classes-and-Objects.md).|
 |Parent Monitor|The aggregate monitor that this monitor will be placed under in the Health Explorer.|
 |Monitor is enabled|If checked, the monitor is enabled and the shell command will run according to the schedule.<br />If unchecked, the monitor is not enabled and the script will not run. The monitor can be enabled for a group of target objects by creating an override to enable the monitor.|
 
@@ -68,7 +68,7 @@ A three\-state monitor will have the following expressions:
 3.  Healthy Expression
 
 > [!NOTE]
-> Detailed information on expressions is available in [Expressions](../Topic/Expressions.md).
+> Detailed information on expressions is available in [Expressions](./Expressions.md).
 
 Each expression will typically compare the value of one or more of the properties from the command’s output to some value. Each expression must be different, and only one of the expressions should evaluate to True under any particular condition. In the next page of the wizard, you will associate each of the health states of the monitor with one of these expressions. When an expression evaluates to the True, the monitor will be set to that health state.
 
@@ -109,7 +109,7 @@ The following procedure shows how to create a monitor based on a monitoring shel
 
 #### To create a two state UNIX\/Linux shell command monitor
 
-1.  If you don’t have a management pack for the application that you are monitoring, create one using the process in [Selecting a Management Pack File](../Topic/Selecting-a-Management-Pack-File.md).
+1.  If you don’t have a management pack for the application that you are monitoring, create one using the process in [Selecting a Management Pack File](./Selecting-a-Management-Pack-File.md).
 
 2.  In the Operations console, select the **Authoring** workspace, and then select **Monitors**.
 
@@ -194,5 +194,6 @@ The following procedure shows how to create a monitor based on a monitoring shel
 12. Click **Create**.
 
 ## See Also
-[Script Monitors and Rules](../Topic/Script-Monitors-and-Rules.md)
+[Script Monitors and Rules](./Script-Monitors-and-Rules.md)
+
 

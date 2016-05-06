@@ -58,3 +58,4 @@ The availability report provides the following information about the selected co
 
 12. Click **Close** to close the report.
 
+

@@ -64,3 +64,4 @@ The following table lists the published data items.
 |Total file size number|The number given to evaluate the **Total file size is** option.|
 |User name|The user name used to access the folder if it was on a remote computer.|
 
+

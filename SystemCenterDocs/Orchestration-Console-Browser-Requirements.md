@@ -36,7 +36,8 @@ The Orchestration console requires authentication by using your domain credentia
 7.  Click **OK** for this and the remaining dialog boxes.
 
 ## See Also
-[Overview of Orchestration Console](../Topic/Overview-of-Orchestration-Console.md)
-[How to Start the Orchestration Console](../Topic/How-to-Start-the-Orchestration-Console.md)
-[How to Work With Runbooks in the Orchestration Console](../Topic/How-to-Work-With-Runbooks-in-the-Orchestration-Console.md)
+[Overview of Orchestration Console](./Overview-of-Orchestration-Console.md)
+[How to Start the Orchestration Console](./How-to-Start-the-Orchestration-Console.md)
+[How to Work With Runbooks in the Orchestration Console](./How-to-Work-With-Runbooks-in-the-Orchestration-Console.md)
+
 

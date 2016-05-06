@@ -20,11 +20,11 @@ Use the procedures in this section to create and search for knowledge articles.
 You can use the following procedure to create a knowledge article in Service Manger. This procedure describes how to create a new example knowledge article to help users obtain the latest service pack for Windows 10. However, you can complete these steps to create any type of knowledge article.
 
 > [!NOTE]
-> To view external content in knowledge articles, the computer on which the [!INCLUDE[smcons](../Token/smcons_md.md)] is installed must be connected to the Internet, either directly or through a proxy server.
+> To view external content in knowledge articles, the computer on which the [!INCLUDE[smcons](./Token/smcons_md.md)] is installed must be connected to the Internet, either directly or through a proxy server.
 
 ### To create a knowledge article
 
-1.  In the [!INCLUDE[smcons](../Token/smcons_md.md)], click **Library**.
+1.  In the [!INCLUDE[smcons](./Token/smcons_md.md)], click **Library**.
 
 2.  In the **Library** pane, expand **Knowledge**, and then click **All Knowledge Articles**.
 
@@ -57,7 +57,7 @@ You can use the following procedure to create a knowledge article in Service Man
 
 
 ## How to Search for a Knowledge Article
-You can use the following procedures to search for a knowledge article by using the [!INCLUDE[smcons](../Token/smcons_md.md)] in Service Manager. If you want to link a knowledge article to an incident or to a change request, save the incident or change request first. You can perform full\-text searches when you search for knowledge articles. When you search, [!INCLUDE[smshort](../Token/smshort_md.md)] queries the following fields in the knowledge search form:
+You can use the following procedures to search for a knowledge article by using the [!INCLUDE[smcons](./Token/smcons_md.md)] in Service Manager. If you want to link a knowledge article to an incident or to a change request, save the incident or change request first. You can perform full\-text searches when you search for knowledge articles. When you search, [!INCLUDE[smshort](./Token/smshort_md.md)] queries the following fields in the knowledge search form:
 
 -   **Title**
 
@@ -73,14 +73,14 @@ You can use the following procedures to search for a knowledge article by using 
 
 -   **Analyst Content**
 
-When the search is complete, [!INCLUDE[smshort](../Token/smshort_md.md)] displays matches for content in the **Title**, **End\-User** content, and **Analyst Content** fields. If you want to view the whole article, click **Open article to see external content**. If you type **Windows 10** in the search box, that exact string must exist in one of the knowledge article fields.
+When the search is complete, [!INCLUDE[smshort](./Token/smshort_md.md)] displays matches for content in the **Title**, **End\-User** content, and **Analyst Content** fields. If you want to view the whole article, click **Open article to see external content**. If you type **Windows 10** in the search box, that exact string must exist in one of the knowledge article fields.
 
 > [!NOTE]
 > Partial matches are not returned by a search. Therefore, when you search for a knowledge article based on a keyword, you must type the exact word. However, you can use the asterisk \(\*\) as a wildcard character when you perform a search.
 
-### To search for a knowledge article using the [!INCLUDE[smcons](../Token/smcons_md.md)]
+### To search for a knowledge article using the [!INCLUDE[smcons](./Token/smcons_md.md)]
 
-1.  In the [!INCLUDE[smcons](../Token/smcons_md.md)], in the search box, type a keyword or term. For example, type **Windows 10**.
+1.  In the [!INCLUDE[smcons](./Token/smcons_md.md)], in the search box, type a keyword or term. For example, type **Windows 10**.
 
 2.  Click the arrow to the right of the search box to view a list of the objects for which you want to search, and then click **Knowledge**.
 
@@ -94,7 +94,7 @@ The **Knowledge Search** form displays the knowledge articles that match the sea
 
 ### To link a knowledge article to an incident or change request
 
-1.  In the [!INCLUDE[smcons](../Token/smcons_md.md)], in the search box, type the keyword or term for which you want to search. For example, type **Windows 10**.
+1.  In the [!INCLUDE[smcons](./Token/smcons_md.md)], in the search box, type the keyword or term for which you want to search. For example, type **Windows 10**.
 
 2.  Click the arrow to the right of the search box to view a list of the objects for which you want to search, and then click **Knowledge**.
 
@@ -109,4 +109,5 @@ The **Knowledge Search** form displays the knowledge articles that match the sea
 7.  Click **OK** to close the informational message.
 
 8.  In the **Knowledge Search** form, click **Close**.
+
 

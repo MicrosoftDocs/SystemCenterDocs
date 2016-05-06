@@ -46,7 +46,7 @@ This topic provides the information that you should consider when you’re plann
 
     When DPM is protecting SQL AlwaysOn, it will automatically detect availability groups. It will also detect a failover occurrence and will continue to protect the database.
 
-    For more information about SQL protection prerequisites, go to this page [SQL Server prerequisites](../Topic/SQL-Server-prerequisites.md). We recommend that you read through the SQL Server prerequisites page before you set up your SQL protection.
+    For more information about SQL protection prerequisites, go to this page [SQL Server prerequisites](./SQL-Server-prerequisites.md). We recommend that you read through the SQL Server prerequisites page before you set up your SQL protection.
 
 ## Prepare DPM before you configure SQL Server protection
 Before you set up SQL Server protection, you should make sure that you follow these steps:
@@ -93,7 +93,7 @@ For each instance of SQL Server, you can also run a system state backup or full 
 
 2.  [Plan for protection group long\-term and short\-term protection](assetId:///f2df4e26-7911-4839-b4fe-e86567b32a6c)
 
-3.  [Back up and restore server system state and bare metal recovery &#40;BMR&#41;](../Topic/Back-up-and-restore-server-system-state-and-bare-metal-recovery--BMR-.md)
+3.  [Back up and restore server system state and bare metal recovery &#40;BMR&#41;](./Back-up-and-restore-server-system-state-and-bare-metal-recovery--BMR-.md)
 
 4.  Then follow the instructions in [Create and manage protection groups](assetId:///2ce48037-9d6e-43a0-b3ac-cb3bb429dabd)
 
@@ -119,4 +119,5 @@ After the protection groups are created, the initial replication occurs, and DPM
 5.  Click **Options** > **Notifications**, and then select the kinds of alerts about which recipients want to be notified. In **Recipients**, type the email address of each recipient to whom you want DPM to send copies of the notifications.
 
 6.  To test the SMTP server settings, click **Send Test Notification** > **OK**.
+
 

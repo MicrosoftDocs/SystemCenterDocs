@@ -10,14 +10,14 @@ ms.topic: article
 ms.assetid: b6c8942f-84f6-4ebf-9d5a-be30d3b92892
 ---
 # How to add a VMware vCenter server to VMM
-You can use the following procedure to add a VMware vCenter Server to [!INCLUDE[vmm12sp1_long](../Token/vmm12sp1_long_md.md)]. You must add the vCenter Server before you can add VMware ESX hosts.
+You can use the following procedure to add a VMware vCenter Server to [!INCLUDE[vmm12sp1_long](./Token/vmm12sp1_long_md.md)]. You must add the vCenter Server before you can add VMware ESX hosts.
 
 ## Prerequisites
 Before you begin this procedure, make sure that the following prerequisites are met:
 
--   The server that you want to add must be running a supported version of vCenter Server. For more information, see [VMM support for VMware](../Topic/VMM-support-for-VMware.md).
+-   The server that you want to add must be running a supported version of vCenter Server. For more information, see [VMM support for VMware](./VMM-support-for-VMware.md).
 
--   For communications between the [!INCLUDE[vmm12short](../Token/vmm12short_md.md)] management server and the vCenter Server, encryption using Secure Sockets Layer \(SSL\) requires a certificate to verify the identity of the vCenter Server. You can either use a self\-signed certificate for the vCenter Server, or a third\-party, verified certificate. If you are using a self\-signed certificate, you can manually import the certificate to the Trusted People certificate store on the [!INCLUDE[vmm12short](../Token/vmm12short_md.md)] management server before you add the vCenter Server, or you can import the certificate during this procedure when you are prompted to do this.
+-   For communications between the [!INCLUDE[vmm12short](./Token/vmm12short_md.md)] management server and the vCenter Server, encryption using Secure Sockets Layer \(SSL\) requires a certificate to verify the identity of the vCenter Server. You can either use a self\-signed certificate for the vCenter Server, or a third\-party, verified certificate. If you are using a self\-signed certificate, you can manually import the certificate to the Trusted People certificate store on the [!INCLUDE[vmm12short](./Token/vmm12short_md.md)] management server before you add the vCenter Server, or you can import the certificate during this procedure when you are prompted to do this.
 
     > [!NOTE]
     > If you are using a third\-party, verified certificate, you do not have to import the certificate to the Trusted People certificate store.
@@ -27,7 +27,7 @@ Before you begin this procedure, make sure that the following prerequisites are 
     For example, create a Run As account that is named **VMware vCenter**.
 
     > [!NOTE]
-    > You can create a Run As account in the **Settings** workspace. For more information about Run As accounts, see [How to create a Run As account in VMM](../Topic/How-to-create-a-Run-As-account-in-VMM.md).
+    > You can create a Run As account in the **Settings** workspace. For more information about Run As accounts, see [How to create a Run As account in VMM](./How-to-create-a-Run-As-account-in-VMM.md).
 
 #### To add a vCenter Server
 
@@ -43,7 +43,7 @@ Before you begin this procedure, make sure that the following prerequisites are 
 
     1.  In the **Computer name** box, enter the fully qualified domain name \(FQDN\), NetBIOS name, or IP address of the vCenter Server.
 
-    2.  In the **TCP\/IP port** box, enter the port to use to connect to the vCenter Server. By default, [!INCLUDE[vmm12short](../Token/vmm12short_md.md)] uses TCP\/IP port 443 to connect to the server through Secure Socket Layer \(SSL\).
+    2.  In the **TCP\/IP port** box, enter the port to use to connect to the vCenter Server. By default, [!INCLUDE[vmm12short](./Token/vmm12short_md.md)] uses TCP\/IP port 443 to connect to the server through Secure Socket Layer \(SSL\).
 
     3.  Next to the **Run As account** box, click **Browse**, click the Run As account that has administrative access to the vCenter Server, and then click **OK**.
 
@@ -68,8 +68,9 @@ Before you begin this procedure, make sure that the following prerequisites are 
     In the **vCenter Servers** pane, verify that the vCenter Server is listed, with a status of **Responding**.
 
 ## See Also
-[Managing VMware ESX hosts and vCenter servers with VMM](../Topic/Managing-VMware-ESX-hosts-and-vCenter-servers-with-VMM.md)
-[How to add VMware ESX hosts to VMM](../Topic/How-to-add-VMware-ESX-hosts-to-VMM.md)
-[Managing hosts and host clusters with VMM](../Topic/Managing-hosts-and-host-clusters-with-VMM.md)
-[Managing fabric resources with VMM](../Topic/Managing-fabric-resources-with-VMM.md)
+[Managing VMware ESX hosts and vCenter servers with VMM](./Managing-VMware-ESX-hosts-and-vCenter-servers-with-VMM.md)
+[How to add VMware ESX hosts to VMM](./How-to-add-VMware-ESX-hosts-to-VMM.md)
+[Managing hosts and host clusters with VMM](./Managing-hosts-and-host-clusters-with-VMM.md)
+[Managing fabric resources with VMM](./Managing-fabric-resources-with-VMM.md)
+
 

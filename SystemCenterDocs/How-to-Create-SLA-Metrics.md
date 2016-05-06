@@ -15,7 +15,7 @@ In Service Manager you create a service level management metric, which is analog
 
 ### To create a metric for incidents
 
-1.  In the [!INCLUDE[smcons](../Token/smcons_md.md)], click **Administration**.
+1.  In the [!INCLUDE[smcons](./Token/smcons_md.md)], click **Administration**.
 
 2.  In the **Administration** pane, expand **Service Level Management**, and then click **Metric**.
 
@@ -33,7 +33,7 @@ In Service Manager you create a service level management metric, which is analog
 
 ### To create a metric for service requests
 
-1.  In the [!INCLUDE[smcons](../Token/smcons_md.md)], click **Administration**.
+1.  In the [!INCLUDE[smcons](./Token/smcons_md.md)], click **Administration**.
 
 2.  In the **Administration** pane, expand **Service Level Management**, and then click **Metric**.
 
@@ -48,4 +48,5 @@ In Service Manager you create a service level management metric, which is analog
 7.  Click the list next to **End date**, and then select the item that you want to use to define the end date. For example, select **Completed date**.
 
 8.  Click **OK** to close the **Create\/Edit SLA Metric** dialog box.
+
 

@@ -29,7 +29,7 @@ ms.assetid: bf7f9cf4-6170-40e8-83dd-e636cb4f9ecb
         </listItem>
         <listItem>
           <para>To enable the Device Registration Service (DRS), you need to be a member of the Enterprise Admins group or the Domain Admins group in the root domain of the forest in order to create the DRS configuration and registered device containers and objects in Active Directory. </para>
-          <para>DRS also requires the <token>winblue_server_2</token> Active Directory schema. To extend the schema, you must run <embeddedLabel>adprep /forestprep</embeddedLabel>, which requires Schema Admins, Enterprise Admins, and Domain Admins credentials. For more information about how to run <embeddedLabel>adprep /forestprep</embeddedLabel>, see <externalLink><linkText>Running Adprep.exe</linkText><linkUri>http://technet.microsoft.com/library/dd464018(v=ws.10).aspx</linkUri></externalLink>. </para>
+          <para>DRS also requires the <token>winblue_server_./Token> Active Directory schema. To extend the schema, you must run <embeddedLabel>adprep /forestprep</embeddedLabel>, which requires Schema Admins, Enterprise Admins, and Domain Admins credentials. For more information about how to run <embeddedLabel>adprep /forestprep</embeddedLabel>, see <externalLink><linkText>Running Adprep.exe</linkText><linkUri>http://technet.microsoft.com/library/dd464018(v=ws.10).aspx</linkUri></externalLink>. </para>
         </listItem>
       </list>
     </content>
@@ -116,7 +116,7 @@ ms.assetid: bf7f9cf4-6170-40e8-83dd-e636cb4f9ecb
               <para>Device Registration Service (DRS)</para>
             </TD>
             <TD>
-              <para>To install the DRS, the Active Directory schema must be <token>winblue_server_2</token>. For more information about how to extend the schema, see <externalLink><linkText>Running Adprep.exe</linkText><linkUri>http://technet.microsoft.com/library/dd464018(v=WS.10).aspx</linkUri></externalLink>.</para>
+              <para>To install the DRS, the Active Directory schema must be <token>winblue_server_./Token>. For more information about how to extend the schema, see <externalLink><linkText>Running Adprep.exe</linkText><linkUri>http://technet.microsoft.com/library/dd464018(v=WS.10).aspx</linkUri></externalLink>.</para>
             </TD>
           </tr>
         </tbody>
@@ -126,24 +126,25 @@ ms.assetid: bf7f9cf4-6170-40e8-83dd-e636cb4f9ecb
   <section>
     <title>Updating the AD DS schema to support Device Registration Service</title>
     <content>
-      <para>To create the new containers and objects, the AD DS schema must be extended to the <token>winblue_server_2</token> level. For the permissions that are required to update the AD DS schema, see <link xlink:href="bf7f9cf4-6170-40e8-83dd-e636cb4f9ecb#BKMK_InstallPermissions">Installation permission requirements</link>. There are three ways to extend the schema:</para>
+      <para>To create the new containers and objects, the AD DS schema must be extended to the <token>winblue_server_./Token> level. For the permissions that are required to update the AD DS schema, see <link xlink:href="bf7f9cf4-6170-40e8-83dd-e636cb4f9ecb#BKMK_InstallPermissions">Installation permission requirements</link>. There are three ways to extend the schema:</para>
       <list class="bullet">
         <listItem>
-          <para>In an existing Active Directory forest, run <embeddedLabel>adprep /forestprep</embeddedLabel> from the \Support\Adprep folder of the <token>winblue_server_2</token> operating system DVD on any 64-bit server that runs Windows Server 2008 or later. In this case, no additional domain controller has to be installed, and no existing domain controllers have to be upgraded. </para>
+          <para>In an existing Active Directory forest, run <embeddedLabel>adprep /forestprep</embeddedLabel> from the \Support\Adprep folder of the <token>winblue_server_./Token> operating system DVD on any 64-bit server that runs Windows Server 2008 or later. In this case, no additional domain controller has to be installed, and no existing domain controllers have to be upgraded. </para>
           <para>To run <embeddedLabel>adprep /forestprep</embeddedLabel>, you must be a member of the Schema Admins group, the Enterprise Admins group, and the Domain Admins group of the domain that hosts the schema master. </para>
         </listItem>
         <listItem>
-          <para>In an existing Active Directory forest, install a domain controller that runs <token>winblue_server_2</token>. In this case, <embeddedLabel>adprep /forestprep</embeddedLabel> runs automatically as part of the domain controller installation.</para>
+          <para>In an existing Active Directory forest, install a domain controller that runs <token>winblue_server_./Token>. In this case, <embeddedLabel>adprep /forestprep</embeddedLabel> runs automatically as part of the domain controller installation.</para>
           <para>During the domain controller installation, you must enter additional credentials to run <embeddedLabel>adprep /forestprep</embeddedLabel>. </para>
         </listItem>
         <listItem>
-          <para>Create a new Active Directory forest by installing AD DS on a server that runs <token>winblue_server_2</token>. In this case, <embeddedLabel>adprep /forestprep</embeddedLabel> does not need to be run because the schema will be initially created with all the necessary containers and objects to support DRS.</para>
+          <para>Create a new Active Directory forest by installing AD DS on a server that runs <token>winblue_server_./Token>. In this case, <embeddedLabel>adprep /forestprep</embeddedLabel> does not need to be run because the schema will be initially created with all the necessary containers and objects to support DRS.</para>
           <para>To create a new forest, you must be a member of the Administrators group on the server where you install AD DS.</para>
         </listItem>
       </list>
-      <para>For more information about Adprep.exe, see <externalLink><linkText>Running Adprep.exe</linkText><linkUri>http://technet.microsoft.com/library/dd464018(v=WS.10).aspx</linkUri></externalLink>. For a list of objects and containers that are created when the AD DS schema is extended for <token>winblue_server_2</token>, <?Comment JTH: I should add a list here of what the objects are, not the whole ldf file but just a list of the objects. Then link as planed to the topic about the changes made by adprep.Pad:There are no new forest or domain operations in this release.These ldfs contain DRS schema changes:Sch59Sch61Sch62Sch63Sch64Sch65Sch67Enterprise client sync:Sch66MSODSSch60(There is one more incoming schema change for a MP feature and will be in sch68). 2013-06-13T10:34:00Z  Id='3?>see the SCH.ldf files that are listed for DRS in <?CommentEnd Id='3'
+      <para>For more information about Adprep.exe, see <externalLink><linkText>Running Adprep.exe</linkText><linkUri>http://technet.microsoft.com/library/dd464018(v=WS.10).aspx</linkUri></externalLink>. For a list of objects and containers that are created when the AD DS schema is extended for <token>winblue_server_./Token>, <?Comment JTH: I should add a list here of what the objects are, not the whole ldf file but just a list of the objects. Then link as planed to the topic about the changes made by adprep.Pad:There are no new forest or domain operations in this release.These ldfs contain DRS schema changes:Sch59Sch61Sch62Sch63Sch64Sch65Sch67Enterprise client sync:Sch66MSODSSch60(There is one more incoming schema change for a MP feature and will be in sch68). 2013-06-13T10:34:00Z  Id='3?>see the SCH.ldf files that are listed for DRS in <?CommentEnd Id='3'
     ?><externalLink><linkText>Changes to Adprep</linkText><linkUri>http://technet.microsoft.com/library/jj916254.aspx</linkUri></externalLink>.</para>
     </content>
   </section>
   <relatedTopics />
 </developerConceptualDocument>
+

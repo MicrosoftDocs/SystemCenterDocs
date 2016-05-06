@@ -32,6 +32,7 @@ You can set the schedules for maintenance jobs to be carried out on the DPM serv
     For technical information, type "**Get\-Help Set\-MaintenanceJobStartTime \-full**" in DPM Management Shell.
 
 ## See Also
-[Modify the schedule for protection jobs with Windows PowerShell](../Topic/Modify-the-schedule-for-protection-jobs-with-Windows-PowerShell.md)
-[Manage tapes](../Topic/Manage-tapes.md)
+[Modify the schedule for protection jobs with Windows PowerShell](./Modify-the-schedule-for-protection-jobs-with-Windows-PowerShell.md)
+[Manage tapes](./Manage-tapes.md)
+
 

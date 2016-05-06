@@ -11,11 +11,11 @@ ms.topic: article
 ms.assetid: 22483e3d-1be4-4285-99d6-850ef1405770
 ---
 # How to Add a Portal Announcement Page
-You can add a new page on the [!INCLUDE[smssp](../Token/smssp_md.md)] in [!INCLUDE[smlong12](../Token/smlong12_md.md)] for administrative announcements. As an example, the following procedures add an announcement page, and then you add an announcement, informing end users that the Help Desk will be closed on New Year’s Day.
+You can add a new page on the [!INCLUDE[smssp](./Token/smssp_md.md)] in [!INCLUDE[smlong12](./Token/smlong12_md.md)] for administrative announcements. As an example, the following procedures add an announcement page, and then you add an announcement, informing end users that the Help Desk will be closed on New Year’s Day.
 
 ### To add an announcement page
 
-1.  Start a browser, and connect to the [!INCLUDE[smssp](../Token/smssp_md.md)] home page, for example, http:\/\/<WebServerName>:82\/SMPortal.
+1.  Start a browser, and connect to the [!INCLUDE[smssp](./Token/smssp_md.md)] home page, for example, http:\/\/<WebServerName>:82\/SMPortal.
 
 2.  In the upper left corner, click **Site Actions**, and then click **Site Settings**.
 
@@ -29,7 +29,7 @@ You can add a new page on the [!INCLUDE[smssp](../Token/smssp_md.md)] in [!INCLU
 
 ### To create an announcement
 
-1.  Start a browser, and connect to the [!INCLUDE[smssp](../Token/smssp_md.md)] home page, for example, http:\/\/<WebServerName>:82\/SMPortal.
+1.  Start a browser, and connect to the [!INCLUDE[smssp](./Token/smssp_md.md)] home page, for example, http:\/\/<WebServerName>:82\/SMPortal.
 
 2.  Click **Announcements**.
 
@@ -44,5 +44,6 @@ You can add a new page on the [!INCLUDE[smssp](../Token/smssp_md.md)] in [!INCLU
 7.  Click **Save** to close the announcement.
 
 ## See Also
-[Managing the System Center 2012 - Service Manager Self-Service Portal](../Topic/Managing-the-System-Center-2012---Service-Manager-Self-Service-Portal.md)
+[Managing the System Center 2012 - Service Manager Self-Service Portal](./Managing-the-System-Center-2012---Service-Manager-Self-Service-Portal.md)
+
 

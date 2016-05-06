@@ -8,7 +8,7 @@ ms.topic: article
 ms.assetid: 41b13d22-f1b3-4691-978d-d279653963ec
 ---
 # How to add an infrastructure server to VMM
-Use the following procedure to add an infrastructure server to [!INCLUDE[vmm12sp1_long](../Token/vmm12sp1_long_md.md)].
+Use the following procedure to add an infrastructure server to [!INCLUDE[vmm12sp1_long](./Token/vmm12sp1_long_md.md)].
 
 ### To add an infrastructure server
 
@@ -31,8 +31,9 @@ Use the following procedure to add an infrastructure server to [!INCLUDE[vmm12sp
     5.  In the **Add Infrastructure Server** wizard, click **Add**.
 
 ## See Also
-[Using infrastructure servers in VMM](../Topic/Using-infrastructure-servers-in-VMM.md)
-[Managing infrastructure resources with VMM](../Topic/Managing-infrastructure-resources-with-VMM.md)
-[Managing fabric updates in VMM](../Topic/Managing-fabric-updates-in-VMM.md)
-[Managing fabric resources with VMM](../Topic/Managing-fabric-resources-with-VMM.md)
+[Using infrastructure servers in VMM](./Using-infrastructure-servers-in-VMM.md)
+[Managing infrastructure resources with VMM](./Managing-infrastructure-resources-with-VMM.md)
+[Managing fabric updates in VMM](./Managing-fabric-updates-in-VMM.md)
+[Managing fabric resources with VMM](./Managing-fabric-resources-with-VMM.md)
+
 

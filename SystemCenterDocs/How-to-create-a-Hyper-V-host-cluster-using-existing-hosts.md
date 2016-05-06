@@ -27,7 +27,7 @@ You can create a Hyper-v host cluster in the VMM fabric using the VMM console.
 5. In IP address (if it appears) type in the IP address you want to use for the cluster.
 6. In **Storage** select the data disks you want the cluster to use. The list of available disks includes the logical units associated with the host group that you selected at the beginning of the wizard.
 
-    -   If you assigned storage out\-of\-band, disks that are not managed by [!INCLUDE[vmm12short](../Token/vmm12short_md.md)] are displayed and selected as available disks, with the check box next to each disk dimmed and unavailable.
+    -   If you assigned storage out\-of\-band, disks that are not managed by [!INCLUDE[vmm12short](./Token/vmm12short_md.md)] are displayed and selected as available disks, with the check box next to each disk dimmed and unavailable.
      -   If you are using a third\-party clustered file system \(CFS\) solution, make sure you are aware which disks are CFS disks. Do not select those disks for the cluster. If you do, cluster creation will fail. If you are using a third\-party clustered file system \(CFS\) solution, make sure you are aware which disks are CFS disks. Do not select those disks for the cluster. If you do, cluster creation will fail.
        -   If the number of selected hosts for the cluster is even, the smallest disk that is larger than 500 megabytes \(MB\) is automatically chosen as the witness disk and is unavailable for selection.
 
@@ -48,6 +48,7 @@ Here's what VMM does after you create the cluster:
 5.  Creates the cluster with quorum settings, configures any cluster static IP settings that you specified, and enables Cluster Shared Volumes \(CSV\)
 
 6.  For each logical unit that is designated as a CSV, assigns the logical unit as a CSV on the cluster
+
 
 
 

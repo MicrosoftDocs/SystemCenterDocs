@@ -42,3 +42,4 @@ ms.assetid: e058694a-035c-4207-a6cf-9acf89ed7f8c
 |subscribe|To request data from the data bus.|
 |variable|A global value that is used to define a frequently used setting, such as a directory path to common files or server names.|
 
+

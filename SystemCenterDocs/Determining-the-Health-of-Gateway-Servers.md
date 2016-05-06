@@ -35,9 +35,10 @@ Use the following procedure to view the primary management server for an agent.
 4.  Look for the gateway server of interest. Grouped under it are all the agents that are currently using the gateway server.
 
 ## See Also
-[Monitoring Across Untrusted Boundaries in Operations Manager](../Topic/Monitoring-Across-Untrusted-Boundaries-in-Operations-Manager.md)
-[About Gateway Servers in Operations Manager](../Topic/About-Gateway-Servers-in-Operations-Manager.md)
-[How to Configure Agent Failover to Multiple Gateway Servers](../Topic/How-to-Configure-Agent-Failover-to-Multiple-Gateway-Servers.md)
-[How to Configure a Gateway Server to Failover Between Multiple Management Servers](../Topic/How-to-Configure-a-Gateway-Server-to-Failover-Between-Multiple-Management-Servers.md)
-[Certificate Renewal for Gateway Servers and Management Servers](../Topic/Certificate-Renewal-for-Gateway-Servers-and-Management-Servers.md)
+[Monitoring Across Untrusted Boundaries in Operations Manager](./Monitoring-Across-Untrusted-Boundaries-in-Operations-Manager.md)
+[About Gateway Servers in Operations Manager](./About-Gateway-Servers-in-Operations-Manager.md)
+[How to Configure Agent Failover to Multiple Gateway Servers](./How-to-Configure-Agent-Failover-to-Multiple-Gateway-Servers.md)
+[How to Configure a Gateway Server to Failover Between Multiple Management Servers](./How-to-Configure-a-Gateway-Server-to-Failover-Between-Multiple-Management-Servers.md)
+[Certificate Renewal for Gateway Servers and Management Servers](./Certificate-Renewal-for-Gateway-Servers-and-Management-Servers.md)
+
 

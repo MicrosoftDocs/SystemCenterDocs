@@ -51,3 +51,4 @@ The following table lists the published data items.
 |Value to compare to|The second value that was entered for the comparison. This published data is only available when **Compare Numeric Values** is selected on the **General** tab.|
 |Comparison result|The result of the comparison. This value will be true if the two strings or numeric values match and false otherwise.|
 
+

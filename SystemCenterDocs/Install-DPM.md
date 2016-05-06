@@ -8,7 +8,7 @@ ms.topic: article
 ms.assetid: b6e048b4-018c-428c-9cc5-35ab8072e490
 ---
 # Install DPM
-Before you install [!INCLUDE[dpm2012long](../Token/dpm2012long_md.md)] read the [System Requirements for DPM in System Center 2012](assetId:///179c6de2-77c7-4a3f-aaaf-8196dd185961). Then use the following procedures:
+Before you install [!INCLUDE[dpm2012long](./Token/dpm2012long_md.md)] read the [System Requirements for DPM in System Center 2012](assetId:///179c6de2-77c7-4a3f-aaaf-8196dd185961). Then use the following procedures:
 
 -   [Setup prerequisites](assetId:///a0e59d36-73af-42a3-a8b7-2612eb89fc56)—Check the prerequisites needed for DPM setup.
 
@@ -25,4 +25,5 @@ Before you install [!INCLUDE[dpm2012long](../Token/dpm2012long_md.md)] read the 
 -   [Install DPM on a domain controller](assetId:///8ed1cf06-c8d1-4617-98ef-58e0f00b8b92)—Follow the steps to get DPM set up on a domain controller.
 
 -   [Run an unattended install for System Center 2012 R2 \- DPM](assetId:///e0969f98-0343-4f59-bffc-88b2cd8bd371)—Follow these steps for an unattended install of DPM 2012 R2.
+
 

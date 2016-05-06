@@ -25,11 +25,12 @@ If you want to manage and distribute reports securely, you can export reports to
 2.  In the **Save As** dialog box, select the folder where you want to save the report, and then click **Save**.
 
 ## See Also
-[Using Reports in Operations Manager](../Topic/Using-Reports-in-Operations-Manager.md)
-[How to Create Reports in Operations Manager](../Topic/How-to-Create-Reports-in-Operations-Manager.md)
-[How to Save a Report](../Topic/How-to-Save-a-Report.md)
-[How to Run a Report](../Topic/How-to-Run-a-Report.md)
-[Scheduling Reports](../Topic/Scheduling-Reports.md)
-[Operations Manager Reports Library](../Topic/Operations-Manager-Reports-Library.md)
-[How to Troubleshoot Reports that Return No Data](../Topic/How-to-Troubleshoot-Reports-that-Return-No-Data.md)
+[Using Reports in Operations Manager](./Using-Reports-in-Operations-Manager.md)
+[How to Create Reports in Operations Manager](./How-to-Create-Reports-in-Operations-Manager.md)
+[How to Save a Report](./How-to-Save-a-Report.md)
+[How to Run a Report](./How-to-Run-a-Report.md)
+[Scheduling Reports](./Scheduling-Reports.md)
+[Operations Manager Reports Library](./Operations-Manager-Reports-Library.md)
+[How to Troubleshoot Reports that Return No Data](./How-to-Troubleshoot-Reports-that-Return-No-Data.md)
+
 

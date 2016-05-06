@@ -30,16 +30,18 @@ This example uses the *\/SetQuery* parameter to define a WQL query that filters 
 `adtadmin /setquery /collector:"Collector Name" /query:"SELECT * FROM AdtsEvent WHERE NOT ((HeaderUser='SYSTEM' OR HeaderUser='LOCAL SERVICE' OR HeaderUser='NETWORK SERVICE') OR (EventId=538 OR EventId=566 OR EventId=672 OR EventId=680 OR (EventId>=541 AND EventId<=547))"`
 
 ## See Also
-[Audit Collection Services Administration &#40;AdtAdmin.exe&#41;](../Topic/Audit-Collection-Services-Administration--AdtAdmin.exe-.md)
-[AdtAdmin.exe AddGroup](../Topic/AdtAdmin.exe-AddGroup.md)
-[AdtAdmin.exe DelGroup](../Topic/AdtAdmin.exe-DelGroup.md)
-[AdtAdmin.exe Disconnect](../Topic/AdtAdmin.exe-Disconnect.md)
-[AdtAdmin.exe GetDBAuth](../Topic/AdtAdmin.exe-GetDBAuth.md)
-[AdtAdmin.exe GetQuery](../Topic/AdtAdmin.exe-GetQuery.md)
-[AdtAdmin.exe ListForwarders](../Topic/AdtAdmin.exe-ListForwarders.md)
-[AdtAdmin.exe ListGroups](../Topic/AdtAdmin.exe-ListGroups.md)
-[AdtAdmin.exe SetDBAuth](../Topic/AdtAdmin.exe-SetDBAuth.md)
-[AdtAdmin.exe Stats](../Topic/AdtAdmin.exe-Stats.md)
-[AdtAdmin.exe UpdForwarder](../Topic/AdtAdmin.exe-UpdForwarder.md)
-[AdtAdmin.exe UpdGroup](../Topic/AdtAdmin.exe-UpdGroup.md)
+[Audit Collection Services Administration &#40;AdtAdmin.exe&#41;](./Audit-Collection-Services-Administration--AdtAdmin.exe-.md)
+[AdtAdmin.exe AddGroup](./AdtAdmin.exe-AddGroup.md)
+[AdtAdmin.exe DelGroup](./AdtAdmin.exe-DelGroup.md)
+[AdtAdmin.exe Disconnect](./AdtAdmin.exe-Disconnect.md)
+[AdtAdmin.exe GetDBAuth](./AdtAdmin.exe-GetDBAuth.md)
+[AdtAdmin.exe GetQuery](./AdtAdmin.exe-GetQuery.md)
+[AdtAdmin.exe ListForwarders](./AdtAdmin.exe-ListForwarders.md)
+[AdtAdmin.exe ListGroups](./AdtAdmin.exe-ListGroups.md)
+[AdtAdmin.exe SetDBAuth](./AdtAdmin.exe-SetDBAuth.md)
+[AdtAdmin.exe Stats](./AdtAdmin.exe-Stats.md)
+[AdtAdmin.exe UpdForwarder](./AdtAdmin.exe-UpdForwarder.md)
+[AdtAdmin.exe UpdGroup](./AdtAdmin.exe-UpdGroup.md)
+
+
 

@@ -37,3 +37,4 @@ The following table lists the published data items.
 |Line number|The line number of the text that was read. A published data item is created for each line that was read.|
 |Line numbers|The line number range that the user typed in the field.|
 
+

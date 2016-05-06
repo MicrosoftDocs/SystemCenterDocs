@@ -19,7 +19,7 @@ The ACS database runs on a supported version of Microsoft SQL Server. The Audit
 
 1.  Log on to the server by using an account that has local administrative credentials.
 
-2.  On the [!INCLUDE[om12short](../Token/om12short_md.md)] installation media, run **Setup.exe**, and then click **Audit collection services**.
+2.  On the [!INCLUDE[om12short](./Token/om12short_md.md)] installation media, run **Setup.exe**, and then click **Audit collection services**.
 
     For monitoring UNIX and Linux computers, click **Audit collection services for UNIX\/Linux**.
 
@@ -38,7 +38,7 @@ The ACS database runs on a supported version of Microsoft SQL Server. The Audit
 8.  In the **Database server instance name** field, type the name of the database that will be created for ACS. If you leave this field blank, the default name is used. In the **Database** name field, the default database name of **OperationsManagerAC** is automatically entered. You can select the text and type in a different name or leave the default name. Click **Next**.
 
     > [!NOTE]
-    > To display a list of SQL Server Instances, on the database computer click **Start**, point to **Programs** and open **SQL Server** \(the appropriate version of SQL Server is dependent on the version of [!INCLUDE[om12short](../Token/om12short_md.md)] – see [System Requirements for System Center 2012 – Operations Manager](http://go.microsoft.com/fwlink/p/?LinkID=219650)\), and then click **SQL Server Management Studio**. On the **Server name** list, click **Browse for more** and then expand **Database Engine**. All databases are listed as server name\\database name.
+    > To display a list of SQL Server Instances, on the database computer click **Start**, point to **Programs** and open **SQL Server** \(the appropriate version of SQL Server is dependent on the version of [!INCLUDE[om12short](./Token/om12short_md.md)] – see [System Requirements for System Center 2012 – Operations Manager](http://go.microsoft.com/fwlink/p/?LinkID=219650)\), and then click **SQL Server Management Studio**. On the **Server name** list, click **Browse for more** and then expand **Database Engine**. All databases are listed as server name\\database name.
 
 9. On the **Database Authentication** page, select one of the authentication methods. If the ACS collector and the ACS database are members of the same domain, you can select **Windows authentication**, otherwise select **SQL authentication**, and then click **Next**.
 
@@ -88,4 +88,5 @@ The ACS database runs on a supported version of Microsoft SQL Server. The Audit
 9. Click the **Db Audit** data source.
 
 10. In the **Connect Using** section, select **Windows Integrated Security** and click **Apply**.
+
 

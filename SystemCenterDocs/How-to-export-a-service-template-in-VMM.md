@@ -8,13 +8,13 @@ ms.topic: article
 ms.assetid: 0aae8258-0c2f-416d-b39c-378957ea4a31
 ---
 # How to export a service template in VMM
-Use the following procedure to export a service template in [!INCLUDE[vmm12sp1_long](../Token/vmm12sp1_long_md.md)].
+Use the following procedure to export a service template in [!INCLUDE[vmm12sp1_long](./Token/vmm12sp1_long_md.md)].
 
-**Account requirements** Administrators and delegated administrators can export any template in [!INCLUDE[vmm12short](../Token/vmm12short_md.md)]. Self\-service users can export templates that they own.
+**Account requirements** Administrators and delegated administrators can export any template in [!INCLUDE[vmm12short](./Token/vmm12short_md.md)]. Self\-service users can export templates that they own.
 
 ### To export a service template
 
-1.  In the [!INCLUDE[vmm12short](../Token/vmm12short_md.md)] console, open the Library workspace.
+1.  In the [!INCLUDE[vmm12short](./Token/vmm12short_md.md)] console, open the Library workspace.
 
 2.  In the Library pane, expand the **Templates** node, click **Service Templates**, and then in the **Template** pane, select the service template that you want to export.
 
@@ -46,7 +46,8 @@ Use the following procedure to export a service template in [!INCLUDE[vmm12sp1_l
     -   If you stored the exported service template on a library share, you can verify that the .XML file was added to physical library objects in the Library workspace. On the **Library** pane, navigate to the library share where you stored the exported service template. You should see an .XML file with the name of the service template.
 
 ## See Also
-[Exporting and importing service templates in VMM](../Topic/Exporting-and-importing-service-templates-in-VMM.md)
-[Managing services with VMM](../Topic/Managing-services-with-VMM.md)
-[Managing tenant resources with VMM](../Topic/Managing-tenant-resources-with-VMM.md)
+[Exporting and importing service templates in VMM](./Exporting-and-importing-service-templates-in-VMM.md)
+[Managing services with VMM](./Managing-services-with-VMM.md)
+[Managing tenant resources with VMM](./Managing-tenant-resources-with-VMM.md)
+
 

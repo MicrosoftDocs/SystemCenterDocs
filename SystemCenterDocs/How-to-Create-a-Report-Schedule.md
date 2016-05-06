@@ -11,7 +11,7 @@ ms.topic: article
 ms.assetid: 0c2e5750-f222-4642-9fc8-a22461cfc506
 ---
 # How to Create a Report Schedule
-Use the following procedure to create a schedule to save a report. Make sure that you have created an Availability report and saved it as a favorite before using this procedure. For more information about creating an Availability report, see [How to Create an Availability Report](../Topic/How-to-Create-an-Availability-Report.md) and for more information about saving a report as a favorite, see [How to Save a Report](../Topic/How-to-Save-a-Report.md).
+Use the following procedure to create a schedule to save a report. Make sure that you have created an Availability report and saved it as a favorite before using this procedure. For more information about creating an Availability report, see [How to Create an Availability Report](./How-to-Create-an-Availability-Report.md) and for more information about saving a report as a favorite, see [How to Save a Report](./How-to-Save-a-Report.md).
 
 ### To create a report schedule
 
@@ -59,9 +59,10 @@ Use the following procedure to create a schedule to save a report. Make sure tha
 8.  Make any other changes you need for this report, and then click **Finish**.
 
 ## See Also
-[Scheduling Reports](../Topic/Scheduling-Reports.md)
-[How to Edit a Scheduled Report](../Topic/How-to-Edit-a-Scheduled-Report.md)
-[How to Email Scheduled Reports](../Topic/How-to-Email-Scheduled-Reports.md)
-[How to Schedule the Delivery of a Report to the SQL Report Server Cache](../Topic/How-to-Schedule-the-Delivery-of-a-Report-to-the-SQL-Report-Server-Cache.md)
-[How to Cancel a Scheduled Report](../Topic/How-to-Cancel-a-Scheduled-Report.md)
+[Scheduling Reports](./Scheduling-Reports.md)
+[How to Edit a Scheduled Report](./How-to-Edit-a-Scheduled-Report.md)
+[How to Email Scheduled Reports](./How-to-Email-Scheduled-Reports.md)
+[How to Schedule the Delivery of a Report to the SQL Report Server Cache](./How-to-Schedule-the-Delivery-of-a-Report-to-the-SQL-Report-Server-Cache.md)
+[How to Cancel a Scheduled Report](./How-to-Cancel-a-Scheduled-Report.md)
+
 

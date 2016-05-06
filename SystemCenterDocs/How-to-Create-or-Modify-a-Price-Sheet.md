@@ -17,7 +17,7 @@ Although you can create multiple price sheets without publishing them, you must 
 
 ### To create a price sheet
 
-1.  In the [!INCLUDE[smcons](../Token/smcons_md.md)], select **Administration**.
+1.  In the [!INCLUDE[smcons](./Token/smcons_md.md)], select **Administration**.
 
 2.  In the **Administration** pane, expand **Chargeback**, expand **Infrastructure**, expand **Price Sheets**, and then select **All Price Sheets**.
 
@@ -63,7 +63,7 @@ Although you can create multiple price sheets without publishing them, you must 
 
 ### To modify a price sheet
 
-1.  In the [!INCLUDE[smcons](../Token/smcons_md.md)], select **Administration**.
+1.  In the [!INCLUDE[smcons](./Token/smcons_md.md)], select **Administration**.
 
 2.  In the **Administration** pane, expand **Price Sheets**, and then select a view that contains a price sheet that you want to modify.
 
@@ -108,5 +108,6 @@ Although you can create multiple price sheets without publishing them, you must 
     4.  If you want to remove private cloud objects, in the list of **Private Cloud** objects, select one or more private cloud objects and then click **Remove**.
 
     5.  Click **OK** to close the price sheet form.
+
 
 

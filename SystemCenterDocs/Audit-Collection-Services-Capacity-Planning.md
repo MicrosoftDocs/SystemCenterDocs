@@ -11,7 +11,7 @@ ms.topic: article
 ms.assetid: b8c811e5-ad81-4c59-b7ec-c0f6fac33933
 ---
 # Audit Collection Services Capacity Planning
-Audit policies can generate a large amount of data. In [!INCLUDE[om12long](../Token/om12long_md.md)], for better performance, you can change settings on the Audit Collection Services \(ACS\) collector to adjust for the actual auditing load. The queue that the ACS collector uses to store events that are ready to be written to the ACS database has a considerable impact on ACS's ability to handle a surge in the amount of generated security events. Balancing the capacity of this queue along with maintaining the correct amount of RAM on the ACS collector can improve the performance of ACS.
+Audit policies can generate a large amount of data. In [!INCLUDE[om12long]./Token/om12long_md.md)], for better performance, you can change settings on the Audit Collection Services \(ACS\) collector to adjust for the actual auditing load. The queue that the ACS collector uses to store events that are ready to be written to the ACS database has a considerable impact on ACS's ability to handle a surge in the amount of generated security events. Balancing the capacity of this queue along with maintaining the correct amount of RAM on the ACS collector can improve the performance of ACS.
 
 ## ACS Collector Queue
 The ACS collector queue is used to store events after they are received from ACS forwarders but before they are sent to the ACS database. The number of events in the queue increases during periods of high audit traffic or when the ACS database is not available to accept new events, such as during database purging. Three registry values control how the ACS collector reacts when this queue is approaching maximum capacity.
@@ -45,20 +45,22 @@ When ACS is operating normally, the queue length should seldom reach the BackOff
 
 To reduce the number of events written to the ACS database, you can change your audit policy to reduce the number of generated events or use filters, applied at the ACS collector, to discard unnecessary events and keep them out of the ACS database. You can also reduce the number of ACS forwarders that send events to the ACS database by deploying an additional ACS collector and database so that fewer ACS forwarders are serviced by each ACS collector.
 
-For more information on filters, see the [AdtAdmin.exe SetQuery](../Topic/AdtAdmin.exe-SetQuery.md). For more information on the number of ACS forwarders that an ACS collector can support, see [Collecting Security Events Using Audit Collection Services in Operations Manager](../Topic/Collecting-Security-Events-Using-Audit-Collection-Services-in-Operations-Manager.md).
+For more information on filters, see the [AdtAdmin.exe SetQuery](./AdtAdmin.exe-SetQuery.md). For more information on the number of ACS forwarders that an ACS collector can support, see [Collecting Security Events Using Audit Collection Services in Operations Manager](./Collecting-Security-Events-Using-Audit-Collection-Services-in-Operations-Manager.md).
 
 ## UNIX and Linux Considerations
 The performance for deploying ACS on UNIX and Linux computers diminishes with datasets that exceed 10,000 records.
 
 ## See Also
-[Collecting Security Events Using Audit Collection Services in Operations Manager](../Topic/Collecting-Security-Events-Using-Audit-Collection-Services-in-Operations-Manager.md)
-[How to Configure Certficates for ACS Collector and Forwarder](../Topic/How-to-Configure-Certficates-for-ACS-Collector-and-Forwarder.md)
-[Audit Collection Services Security](../Topic/Audit-Collection-Services-Security.md)
-[Audit Collection Services Performance Counters](../Topic/Audit-Collection-Services-Performance-Counters.md)
-[How to Enable Audit Collection Services &#40;ACS&#41; Forwarders](../Topic/How-to-Enable-Audit-Collection-Services--ACS--Forwarders.md)
-[How to Enable Event Logging and ACS Rules on Solaris and AIX Computers](../Topic/How-to-Enable-Event-Logging-and-ACS-Rules-on-Solaris-and-AIX-Computers.md)
-[How to Filter ACS Events for UNIX and Linux Computers](../Topic/How-to-Filter-ACS-Events-for-UNIX-and-Linux-Computers.md)
-[Monitoring Audit Collection Services Performance](../Topic/Monitoring-Audit-Collection-Services-Performance.md)
-[How to Remove Audit Collection Services &#40;ACS&#41;](../Topic/How-to-Remove-Audit-Collection-Services--ACS-.md)
-[Audit Collection Services Administration &#40;AdtAdmin.exe&#41;](../Topic/Audit-Collection-Services-Administration--AdtAdmin.exe-.md)
+[Collecting Security Events Using Audit Collection Services in Operations Manager](./Collecting-Security-Events-Using-Audit-Collection-Services-in-Operations-Manager.md)
+[How to Configure Certficates for ACS Collector and Forwarder](./How-to-Configure-Certficates-for-ACS-Collector-and-Forwarder.md)
+[Audit Collection Services Security](./Audit-Collection-Services-Security.md)
+[Audit Collection Services Performance Counters](./Audit-Collection-Services-Performance-Counters.md)
+[How to Enable Audit Collection Services &#40;ACS&#41; Forwarders](./How-to-Enable-Audit-Collection-Services--ACS--Forwarders.md)
+[How to Enable Event Logging and ACS Rules on Solaris and AIX Computers](./How-to-Enable-Event-Logging-and-ACS-Rules-on-Solaris-and-AIX-Computers.md)
+[How to Filter ACS Events for UNIX and Linux Computers](./How-to-Filter-ACS-Events-for-UNIX-and-Linux-Computers.md)
+[Monitoring Audit Collection Services Performance](./Monitoring-Audit-Collection-Services-Performance.md)
+[How to Remove Audit Collection Services &#40;ACS&#41;](./How-to-Remove-Audit-Collection-Services--ACS-.md)
+[Audit Collection Services Administration &#40;AdtAdmin.exe&#41;](./Audit-Collection-Services-Administration--AdtAdmin.exe-.md)
+
+
 

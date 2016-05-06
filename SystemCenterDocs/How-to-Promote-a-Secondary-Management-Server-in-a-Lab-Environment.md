@@ -79,3 +79,4 @@ Use the following procedure to promote the secondary management server.
 
 Your secondary management server is now the primary management server for the management group.
 
+

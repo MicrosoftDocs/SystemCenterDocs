@@ -12,30 +12,30 @@ Remote Console provides tenants with the ability to access the console of their 
 
 Remote Console needs the following to run:
 
--   [!INCLUDE[winthreshold_server_2](../Token/winthreshold_server_2_md.md)] with the Hyper\-V role
+-   [!INCLUDE[winthreshold_server_2](./Token/winthreshold_server_2_md.md)] with the Hyper\-V role
 
--   [!INCLUDE[vmm12sp1_long](../Token/vmm12sp1_long_md.md)] in [!INCLUDE[sc_threshold_1](../Token/sc_threshold_1_md.md)]
+-   [!INCLUDE[vmm12sp1_long](./Token/vmm12sp1_long_md.md)] in [!INCLUDE[sc_threshold_1](./Token/sc_threshold_1_md.md)]
 
--   Service Provider Foundation in [!INCLUDE[sc_threshold_1](../Token/sc_threshold_1_md.md)]
+-   Service Provider Foundation in [!INCLUDE[sc_threshold_1](./Token/sc_threshold_1_md.md)]
 
--   [!INCLUDE[katal_1](../Token/katal_1_md.md)]
+-   [!INCLUDE[katal_1](./Token/katal_1_md.md)]
 
 > [!NOTE]
-> Tenants need a client computer that supports Remote Desktop Protocol 8.1. For example, users who are running [!INCLUDE[win8_client_2](../Token/win8_client_2_md.md)] must upgrade to [!INCLUDE[winblue_client_2](../Token/winblue_client_2_md.md)]. In addition, clients using Windows 7 SP1 must install [KB2830477](http://support.microsoft.com/kb/2830477).
+> Tenants need a client computer that supports Remote Desktop Protocol 8.1. For example, users who are running [!INCLUDE[win8_client_2](./Token/win8_client_2_md.md)] must upgrade to [!INCLUDE[winblue_client_2](./Token/winblue_client_2_md.md)]. In addition, clients using Windows 7 SP1 must install [KB2830477](http://support.microsoft.com/kb/2830477).
 
 In this release, Remote Console supports limited functionality. Features such as the clipboard, sound, printer redirection, and drive mapping are not supported. Remote Console functions in a manner that is similar to the keyboard, video, and mouse \(KVM\) connection that is used by physical computers.
 
 ## User authentication
-In Hyper\-V, certificate\-based authentication can be used to help ensure that tenants only access virtual machines that are assigned to them. The [!INCLUDE[katal_1](../Token/katal_1_md.md)] web portal, Service Provider Foundation, and [!INCLUDE[vmm12short](../Token/vmm12short_md.md)] authenticate and authorize access to virtual machines and provide a token that the Hyper\-V host uses to grant access to a single virtual machine.
+In Hyper\-V, certificate\-based authentication can be used to help ensure that tenants only access virtual machines that are assigned to them. The [!INCLUDE[katal_1](./Token/katal_1_md.md)] web portal, Service Provider Foundation, and [!INCLUDE[vmm12short](./Token/vmm12short_md.md)] authenticate and authorize access to virtual machines and provide a token that the Hyper\-V host uses to grant access to a single virtual machine.
 
 The following diagram illustrates the components that are needed for Remote Console access when tenants are accessing a virtual machine across an untrusted network such as the Internet. Remote Desktop Gateway \(RD Gateway\) is omitted if this environment is deployed in a corporate network.
 
-![](../Image/RemoteConsoleCertificate-basedAuthentication.gif)
+![](/Image/RemoteConsoleCertificate-basedAuthentication.gif)
 
 The private and public keys for a certificate are used to establish a trust relationship. The following sections describe how to create the required certificates.
 
 ### Creating a certificate for remote access
-A certificate is used to create a trust relationship between RD Gateway server, the Hyper\-V hosts, and [!INCLUDE[vmm12short](../Token/vmm12short_md.md)]. The certificate allows RD Gateway and the Hyper\-V hosts to accept claims tokens that are issued by [!INCLUDE[vmm12short](../Token/vmm12short_md.md)] RD Gateway. It is possible to use the same or different certificates for validation on RD Gateway and the Hyper\-V hosts. Valid certificates must meet the following requirements:
+A certificate is used to create a trust relationship between RD Gateway server, the Hyper\-V hosts, and [!INCLUDE[vmm12short](./Token/vmm12short_md.md)]. The certificate allows RD Gateway and the Hyper\-V hosts to accept claims tokens that are issued by [!INCLUDE[vmm12short](./Token/vmm12short_md.md)] RD Gateway. It is possible to use the same or different certificates for validation on RD Gateway and the Hyper\-V hosts. Valid certificates must meet the following requirements:
 
 1.  The certificate must not be expired.
 
@@ -125,7 +125,7 @@ if (! (Test-Certificate $cert -EKU "1.3.6.1.5.5.7.3.2") )
 ```
 
 ### Installing the certificate
-Once the certificate has been created, you must then install it and configure [!INCLUDE[vmm12short](../Token/vmm12short_md.md)] to use the certificate to issue claims tokens. The private key for the certificate is then imported into the [!INCLUDE[vmm12short](../Token/vmm12short_md.md)] database. To do this, use the **Set\-SCVMMServer** Windows PowerShell cmdlet, for example:
+Once the certificate has been created, you must then install it and configure [!INCLUDE[vmm12short](./Token/vmm12short_md.md)] to use the certificate to issue claims tokens. The private key for the certificate is then imported into the [!INCLUDE[vmm12short](./Token/vmm12short_md.md)] database. To do this, use the **Set\-SCVMMServer** Windows PowerShell cmdlet, for example:
 
 ```
 PS C:\> $mypwd = ConvertTo-SecureString "password" -AsPlainText -Force
@@ -134,7 +134,7 @@ PS C:\> $VMMServer = VMMServer01.Contoso.com
 PS C:\> Set-SCVMMServer -VMConnectGatewayCertificatePassword $mypwd -VMConnectGatewayCertificatePath $cert -VMConnectHostIdentificationMode FQDN -VMConnectHyperVCertificatePassword $mypwd -VMConnectHyperVCertificatePath $cert -VMConnectTimeToLiveInMinutes 2 -VMMServer $VMMServer
 ```
 
-In this example, the same certificate is used for RD Gateway and for the [!INCLUDE[nextref_virtualname](../Token/nextref_virtualname_md.md)] hosts, and tokens have a lifetime of two minutes. You can select a lifetime for tokens of 1 to 60 minutes.
+In this example, the same certificate is used for RD Gateway and for the [!INCLUDE[nextref_virtualname](./Token/nextref_virtualname_md.md)] hosts, and tokens have a lifetime of two minutes. You can select a lifetime for tokens of 1 to 60 minutes.
 
 You identify the host server by its Fully Qualified Domain Name \(FQDN\). Alternatively, hosts can be identified by IPv4 address, IPv6 address, and host name. The host identity is included in the Remote Desktop Protocol \(RDP\) file that is sent to tenants.
 
@@ -143,32 +143,32 @@ You identify the host server by its Fully Qualified Domain Name \(FQDN\). Altern
 
 `RemoteConsoleConnect.pfx` is used to import the PFX file where the certificate keys are stored to the VMM database. ‎
 
-When each host is refreshed in [!INCLUDE[vmm12short](../Token/vmm12short_md.md)], it installs the certificate in the Personal certificate store of the [!INCLUDE[nextref_virtualname](../Token/nextref_virtualname_md.md)] host and configures the [!INCLUDE[nextref_virtualname](../Token/nextref_virtualname_md.md)] host to validate tokens by using the certificate. You can use the following Windows PowerShell command to force a refresh of all [!INCLUDE[nextref_virtualname](../Token/nextref_virtualname_md.md)] hosts:
+When each host is refreshed in [!INCLUDE[vmm12short](./Token/vmm12short_md.md)], it installs the certificate in the Personal certificate store of the [!INCLUDE[nextref_virtualname](./Token/nextref_virtualname_md.md)] host and configures the [!INCLUDE[nextref_virtualname](./Token/nextref_virtualname_md.md)] host to validate tokens by using the certificate. You can use the following Windows PowerShell command to force a refresh of all [!INCLUDE[nextref_virtualname](./Token/nextref_virtualname_md.md)] hosts:
 
 ```
 PS C:\> Get-SCVMHost -VMMServer "VMMServer01.Contoso.com" | Read-SCVMHost
 ```
 
 ### Hyper\-V hosts
-Hyper\-V supports Remote Console functionality as of [!INCLUDE[winblue_server_2](../Token/winblue_server_2_md.md)].
+Hyper\-V supports Remote Console functionality as of [!INCLUDE[winblue_server_2](./Token/winblue_server_2_md.md)].
 
-When authenticating tokens, Hyper\-V only accepts tokens that are signed by using specific certificates and hash algorithms. [!INCLUDE[vmm12short](../Token/vmm12short_md.md)] performs the required configuration for the Hyper\-V hosts.
+When authenticating tokens, Hyper\-V only accepts tokens that are signed by using specific certificates and hash algorithms. [!INCLUDE[vmm12short](./Token/vmm12short_md.md)] performs the required configuration for the Hyper\-V hosts.
 
-When you use a self\-signed certificate, you must import the public key of the certificate to the Trusted Root Certification Authorities certificate store for the [!INCLUDE[nextref_virtualname](../Token/nextref_virtualname_md.md)] host. The following script provides an example of how to use Windows PowerShell to import the public key:
+When you use a self\-signed certificate, you must import the public key of the certificate to the Trusted Root Certification Authorities certificate store for the [!INCLUDE[nextref_virtualname](./Token/nextref_virtualname_md.md)] host. The following script provides an example of how to use Windows PowerShell to import the public key:
 
 ```
 PS C:\> Import-Certificate -CertStoreLocation cert:\LocalMachine\Root -Filepath "<certificate path>.cer"
 ```
 
-You must restart the Hyper\-V Virtual Machine Management service if you install a certificate after you configure [!INCLUDE[vmm12short](../Token/vmm12short_md.md)].
+You must restart the Hyper\-V Virtual Machine Management service if you install a certificate after you configure [!INCLUDE[vmm12short](./Token/vmm12short_md.md)].
 
 You can verify that the Hyper\-V host is correctly configured for Remote Console as follows:
 
-1.  Check that the certificate is in the Personal certificate store of the [!INCLUDE[nextref_virtualname](../Token/nextref_virtualname_md.md)] host and that it is trusted.
+1.  Check that the certificate is in the Personal certificate store of the [!INCLUDE[nextref_virtualname](./Token/nextref_virtualname_md.md)] host and that it is trusted.
 
 2.  Check the hash configuration for the trusted issuer certificate.
 
-The following script provides an example of how to use Windows PowerShell to check that the certificate is installed in the Personal certificate store of the [!INCLUDE[nextref_virtualname](../Token/nextref_virtualname_md.md)] host:
+The following script provides an example of how to use Windows PowerShell to check that the certificate is installed in the Personal certificate store of the [!INCLUDE[nextref_virtualname](./Token/nextref_virtualname_md.md)] host:
 
 ```
 PS C:\> dir cert:\localmachine\My\ | Where-Object { $_.subject -eq "CN=Remote Console Connect" }
@@ -183,7 +183,7 @@ PS C:\> $TSData = Get-WmiObject -computername $Server -NameSpace "root\virtualiz
 The **TrustedIssuerCertificateHashes** array must contain the certificate thumbprint that is used to connect Remote Console. The **AllowedHashAlgorithms** array must be empty or contain the SHA256 algorithm. When the array is empty, it defaults to SHA256 or SHA512.
 
 > [!NOTE]
-> [!INCLUDE[vmm12short](../Token/vmm12short_md.md)] generates SHA256 tokens.
+> [!INCLUDE[vmm12short](./Token/vmm12short_md.md)] generates SHA256 tokens.
 
 ### Remote Desktop Gateway
 Remote Desktop Gateway \(RD Gateway\) can only be used for console access to virtual machines. When you configure RD Gateway, a configuration change occurs, which makes the gateway unusable for other purposes. The following tasks are completed when you configure RD Gateway:
@@ -258,7 +258,7 @@ You can verify the configuration of RD Gateway by performing the following steps
 ### Windows Azure Pack for Windows Server for Remote Console
 You can enable access to Remote Console on a per plan basis through the Virtual Machine Clouds service in Windows Azure Pack for Windows Server. In the dashboard of the plan, select the **Virtual Machine Clouds** under plan services, and select **Connect to the console of virtual machines** under additional settings.
 
-If you have installed a Remote Desktop Gateway, read the procedure [How to configure Windows Azure Pack to use the Remote Desktop Gateway](../Topic/How-to-configure-Windows-Azure-Pack-to-use-the-Remote-Desktop-Gateway.md).
+If you have installed a Remote Desktop Gateway, read the procedure [How to configure Windows Azure Pack to use the Remote Desktop Gateway](./How-to-configure-Windows-Azure-Pack-to-use-the-Remote-Desktop-Gateway.md).
 
 ## Security recommendations
 We recommend that you perform the following tasks to improve security:
@@ -274,7 +274,8 @@ We recommend that you perform the following tasks to improve security:
 |Network configuration|A malicious user can use properties in the RDP file to gain insight about a network configuration.|Determine if the host name or IP address should be used to connect to a server running Hyper\-V. This information is included in the RDP file that is sent to the service consumer. It is also in the certificate that is presented by the server running Hyper\-V when the console connection is initiated.<br /><br />Set the network configuration to ensure that servers running Hyper\-V are not directly accessible from the Internet or from a user’s virtual machine. An IP address \(in particular, an IPv6 address\) reduces the amount of information that is disclosed.|
 
 ## See Also
-[How to configure Windows Azure Pack to use the Remote Desktop Gateway](../Topic/How-to-configure-Windows-Azure-Pack-to-use-the-Remote-Desktop-Gateway.md)
-[Managing a self-service environment for tenants](../Topic/Managing-a-self-service-environment-for-tenants.md)
-[Managing tenant resources with VMM](../Topic/Managing-tenant-resources-with-VMM.md)
+[How to configure Windows Azure Pack to use the Remote Desktop Gateway](./How-to-configure-Windows-Azure-Pack-to-use-the-Remote-Desktop-Gateway.md)
+[Managing a self-service environment for tenants](./Managing-a-self-service-environment-for-tenants.md)
+[Managing tenant resources with VMM](./Managing-tenant-resources-with-VMM.md)
+
 

@@ -59,7 +59,7 @@ In the second procedure, you will troubleshoot an instance when no data is displ
 14. In the **Legend** area, examine the **Target** column and verify that the text in the **Target** column matches what is listed in the **Object** column in the Parameter Area of the report. If the value listed in the **Target** column is different, use the value listed in **Target** column in the report and run the report again.
 
     > [!NOTE]
-    > When searching for the name of an object in a report, you might find that the name of the hosting computer is listed only in the **Object path** column in the Parameter Area. If you want to locate multiple specific objects, you can create a dynamic group containing the correct types of objects and run the report with this new group. For more information about creating groups, see [How to Create Groups in Operations Manager](../Topic/How-to-Create-Groups-in-Operations-Manager.md).
+    > When searching for the name of an object in a report, you might find that the name of the hosting computer is listed only in the **Object path** column in the Parameter Area. If you want to locate multiple specific objects, you can create a dynamic group containing the correct types of objects and run the report with this new group. For more information about creating groups, see [How to Create Groups in Operations Manager](./How-to-Create-Groups-in-Operations-Manager.md).
 
 ### To troubleshoot no data in a configuration data report
 
@@ -84,14 +84,15 @@ In the second procedure, you will troubleshoot an instance when no data is displ
 10. In the Test1 results pane, examine the content in the **Name** column. The values listed in the **Name** column are the correct object names you need to search for when searching for objects for the report.
 
     > [!NOTE]
-    > When searching for the name of an object in a report, you might find that the name of the hosting computer is listed only in the **Object path** in the Parameter Area. In this instance, you need to create a dynamic group containing the correct types of objects and run the report with this new group. For more information about creating groups, see [How to Create Groups in Operations Manager](../Topic/How-to-Create-Groups-in-Operations-Manager.md).
+    > When searching for the name of an object in a report, you might find that the name of the hosting computer is listed only in the **Object path** in the Parameter Area. In this instance, you need to create a dynamic group containing the correct types of objects and run the report with this new group. For more information about creating groups, see [How to Create Groups in Operations Manager](./How-to-Create-Groups-in-Operations-Manager.md).
 
 ## See Also
-[Using Reports in Operations Manager](../Topic/Using-Reports-in-Operations-Manager.md)
-[How to Create Reports in Operations Manager](../Topic/How-to-Create-Reports-in-Operations-Manager.md)
-[How to Save a Report](../Topic/How-to-Save-a-Report.md)
-[How to Run a Report](../Topic/How-to-Run-a-Report.md)
-[Scheduling Reports](../Topic/Scheduling-Reports.md)
-[How to Export a Report](../Topic/How-to-Export-a-Report.md)
-[Operations Manager Reports Library](../Topic/Operations-Manager-Reports-Library.md)
+[Using Reports in Operations Manager](./Using-Reports-in-Operations-Manager.md)
+[How to Create Reports in Operations Manager](./How-to-Create-Reports-in-Operations-Manager.md)
+[How to Save a Report](./How-to-Save-a-Report.md)
+[How to Run a Report](./How-to-Run-a-Report.md)
+[Scheduling Reports](./Scheduling-Reports.md)
+[How to Export a Report](./How-to-Export-a-Report.md)
+[Operations Manager Reports Library](./Operations-Manager-Reports-Library.md)
+
 

@@ -60,16 +60,17 @@ DebugView is an alternative method to EnableOpsmgrModuleLogging for troubleshoot
 4.  DebugView will present a step\-by\-step readout of the discovery wizard process. This is often the fastest method of troubleshooting discovery issues.
 
 ## See Also
-[Using Templates for Additional Monitoring of UNIX and Linux](../Topic/Using-Templates-for-Additional-Monitoring-of-UNIX-and-Linux.md)
-[Troubleshooting UNIX and Linux Monitoring](../Topic/Troubleshooting-UNIX-and-Linux-Monitoring.md)
-[Accessing UNIX and Linux Computers in Operations Manager](../Topic/Accessing-UNIX-and-Linux-Computers-in-Operations-Manager.md)
-[Required Capabilities for UNIX and Linux Accounts](../Topic/Required-Capabilities-for-UNIX-and-Linux-Accounts.md)
-[Management Pack Issues](../Topic/Management-Pack-Issues.md)
-[Operating System Issues](../Topic/Operating-System-Issues.md)
-[Certificate Issues](../Topic/Certificate-Issues.md)
-[Managing Certificates for UNIX and Linux Computers](../Topic/Managing-Certificates-for-UNIX-and-Linux-Computers.md)
-[Managing Resource Pools for UNIX and Linux Computers](../Topic/Managing-Resource-Pools-for-UNIX-and-Linux-Computers.md)
-[Install Agent on UNIX and Linux Using the Discovery Wizard](../Topic/Install-Agent-on-UNIX-and-Linux-Using-the-Discovery-Wizard.md)
-[How to enable Operations Manager logging for Remote Management Queries](../Topic/How-to-enable-Operations-Manager-logging-for-Remote-Management-Queries.md)
-[Manage UNIX and Linux Log Files](../Topic/Manage-UNIX-and-Linux-Log-Files.md)
+[Using Templates for Additional Monitoring of UNIX and Linux](./Using-Templates-for-Additional-Monitoring-of-UNIX-and-Linux.md)
+[Troubleshooting UNIX and Linux Monitoring](./Troubleshooting-UNIX-and-Linux-Monitoring.md)
+[Accessing UNIX and Linux Computers in Operations Manager](./Accessing-UNIX-and-Linux-Computers-in-Operations-Manager.md)
+[Required Capabilities for UNIX and Linux Accounts](./Required-Capabilities-for-UNIX-and-Linux-Accounts.md)
+[Management Pack Issues](./Management-Pack-Issues.md)
+[Operating System Issues](./Operating-System-Issues.md)
+[Certificate Issues](./Certificate-Issues.md)
+[Managing Certificates for UNIX and Linux Computers](./Managing-Certificates-for-UNIX-and-Linux-Computers.md)
+[Managing Resource Pools for UNIX and Linux Computers](./Managing-Resource-Pools-for-UNIX-and-Linux-Computers.md)
+[Install Agent on UNIX and Linux Using the Discovery Wizard](./Install-Agent-on-UNIX-and-Linux-Using-the-Discovery-Wizard.md)
+[How to enable Operations Manager logging for Remote Management Queries](./How-to-enable-Operations-Manager-logging-for-Remote-Management-Queries.md)
+[Manage UNIX and Linux Log Files](./Manage-UNIX-and-Linux-Log-Files.md)
+
 

@@ -8,12 +8,12 @@ ms.topic: article
 ms.assetid: 435cbfad-3cc6-465a-aee9-ca78c02d525f
 ---
 # How to provision storage logical units in VMM
-You can use the following procedure to create logical units from storage pools that are managed by [!INCLUDE[vmm12sp1_long](../Token/vmm12sp1_long_md.md)].
+You can use the following procedure to create logical units from storage pools that are managed by [!INCLUDE[vmm12sp1_long](./Token/vmm12sp1_long_md.md)].
 
 > [!NOTE]
-> If you allocate a storage pool to a host group, you can also create and assign logical units directly from managed servers that are running Hyper\-V in the host group. For more information, see [How to configure storage on a Hyper-V host in VMM](../Topic/How-to-configure-storage-on-a-Hyper-V-host-in-VMM.md) and [How to configure storage on a Hyper-V host cluster in VMM](../Topic/How-to-configure-storage-on-a-Hyper-V-host-cluster-in-VMM.md).
+> If you allocate a storage pool to a host group, you can also create and assign logical units directly from managed servers that are running Hyper\-V in the host group. For more information, see [How to configure storage on a Hyper-V host in VMM](./How-to-configure-storage-on-a-Hyper-V-host-in-VMM.md) and [How to configure storage on a Hyper-V host cluster in VMM](./How-to-configure-storage-on-a-Hyper-V-host-cluster-in-VMM.md).
 
-Before you begin this procedure, ensure that one or more storage pools are defined in [!INCLUDE[vmm12short](../Token/vmm12short_md.md)] management. For more information, see [Overview: configuring block storage VMM](../Topic/Overview--configuring-block-storage-VMM.md) and [How to add and classify SMI-S and SMP storage devices in VMM](../Topic/How-to-add-and-classify-SMI-S-and-SMP-storage-devices-in-VMM.md).
+Before you begin this procedure, ensure that one or more storage pools are defined in [!INCLUDE[vmm12short](./Token/vmm12short_md.md)] management. For more information, see [Overview: configuring block storage VMM](./Overview--configuring-block-storage-VMM.md) and [How to add and classify SMI-S and SMP storage devices in VMM](./How-to-add-and-classify-SMI-S-and-SMP-storage-devices-in-VMM.md).
 
 **Account requirements** To complete this procedure, you must be member of the Administrator user role or a member of the Delegated Administrator user role.
 
@@ -49,10 +49,11 @@ Before you begin this procedure, ensure that one or more storage pools are defin
 
     4.  In the list of logical units, verify that the new logical unit appears.
 
-You can now assign the logical unit to a host group. For more information, see [How to allocate storage logical units to a host group in VMM](../Topic/How-to-allocate-storage-logical-units-to-a-host-group-in-VMM.md).
+You can now assign the logical unit to a host group. For more information, see [How to allocate storage logical units to a host group in VMM](./How-to-allocate-storage-logical-units-to-a-host-group-in-VMM.md).
 
 ## See Also
-[Configuring block storage in VMM](../Topic/Configuring-block-storage-in-VMM.md)
-[Managing storage resources and capacity with VMM](../Topic/Managing-storage-resources-and-capacity-with-VMM.md)
-[Managing fabric resources with VMM](../Topic/Managing-fabric-resources-with-VMM.md)
+[Configuring block storage in VMM](./Configuring-block-storage-in-VMM.md)
+[Managing storage resources and capacity with VMM](./Managing-storage-resources-and-capacity-with-VMM.md)
+[Managing fabric resources with VMM](./Managing-fabric-resources-with-VMM.md)
+
 

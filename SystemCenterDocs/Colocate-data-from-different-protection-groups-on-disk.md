@@ -11,11 +11,11 @@ ms.topic: article
 ms.assetid: e76c5e69-90c5-4d2c-aa13-c96d78c8c418
 ---
 # Colocate data from different protection groups on disk
-Colocation allows you to locate data from different protection groups on the same disk or tape storage. Since [!INCLUDE[dpm2012long](../Token/dpm2012long_md.md)] requires you must to have one replica volume and one recovery point volume per protected data source, colocation enables you to have multiple data sources mapping on a single replica and recovery point volume. This enables you to store data more efficiently.
+Colocation allows you to locate data from different protection groups on the same disk or tape storage. Since [!INCLUDE[dpm2012long](./Token/dpm2012long_md.md)] requires you must to have one replica volume and one recovery point volume per protected data source, colocation enables you to have multiple data sources mapping on a single replica and recovery point volume. This enables you to store data more efficiently.
 
 Note that you can only collocate data on volumes created using the storage pool disks. You can’t collocate data on custom volumes.
 
-[!INCLUDE[dpm2012short](../Token/dpm2012short_md.md)] supports co\-location for the following data sources:
+[!INCLUDE[dpm2012short](./Token/dpm2012short_md.md)] supports co\-location for the following data sources:
 
 -   Hyper\-V virtual machines
 
@@ -32,7 +32,7 @@ Note the following:
 -   You can look at the size allocated to each volume and the number of data sources co\-located on each volume by clicking **Modify** on the Review Disk Allocation Page. Each row in the table represents one volume. Click **Collocated Protection** to see the data sources that share that volume.
 
 ## Colocating Hyper\-V data
-[!INCLUDE[sc2012sp1_short](../Token/sc2012sp1_short_md.md)] increases the scale supported for Hyper\-V virtual machines. The 250 GB colocation size in [!INCLUDE[sc2012](../Token/sc2012_md.md)] is not sufficient when you protect large scale deployments of Hyper\-V virtual machines. For example, if the virtual machine is 100 GB in size, DPM will be able to put one virtual machine in a volume. [!INCLUDE[dpm2012short](../Token/dpm2012short_md.md)] supports protecting up to 800 virtual machines on one DPM server. This requires increasing the colocation limits to 450 GB. You can do this by editing the following registry keys:
+[!INCLUDE[sc2012sp1_short](./Token/sc2012sp1_short_md.md)] increases the scale supported for Hyper\-V virtual machines. The 250 GB colocation size in [!INCLUDE[sc2012](./Token/sc2012_md.md)] is not sufficient when you protect large scale deployments of Hyper\-V virtual machines. For example, if the virtual machine is 100 GB in size, DPM will be able to put one virtual machine in a volume. [!INCLUDE[dpm2012short](./Token/dpm2012short_md.md)] supports protecting up to 800 virtual machines on one DPM server. This requires increasing the colocation limits to 450 GB. You can do this by editing the following registry keys:
 
 |||
 |-|-|
@@ -76,4 +76,5 @@ You can stop protection for co\-located data sources like you would for any data
 -   If you stop protection without **Retain Data**, DPM will remove the records of that data source from the DPMDB. The replica volume space that was used by the replica of those data sources will be made available for co\-locating more data sources in the same protection group.
 
 -   If you try to restore a database that was once co\-located and then later removed, the status of the replica will show as **Inconsistent**. To handle this situation, run a consistency check on the replica. This will allow you to proceed with the recovery.
+
 

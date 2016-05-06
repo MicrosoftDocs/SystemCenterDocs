@@ -13,24 +13,24 @@ ms.assetid: 8715ed07-5eea-41cb-b5a8-4134b047b91b
 # How to Create a Service
 You can use the following procedures to create a service in Service Manager. You should create and define business services that are critical to your enterprise. When you create a service, you create service configuration items, you define their business data, and you define relationships to other configuration items.
 
-In the first procedure, you manually create a service from configuration items that are already present in [!INCLUDE[smshort](../Token/smshort_md.md)]. This is a simple example and requires little other than a few existing configuration items.
+In the first procedure, you manually create a service from configuration items that are already present in [!INCLUDE[smshort](./Token/smshort_md.md)]. This is a simple example and requires little other than a few existing configuration items.
 
-In the second procedure, you view an edit a distributed application that was imported from Operations Manager. The prerequisites for this example can be very complex, depending on the distributed applications that you have created in Operations Manager. The following are high\-level steps needed to import distributed applications from Operations Manager into [!INCLUDE[smshort](../Token/smshort_md.md)] as services:
+In the second procedure, you view an edit a distributed application that was imported from Operations Manager. The prerequisites for this example can be very complex, depending on the distributed applications that you have created in Operations Manager. The following are high\-level steps needed to import distributed applications from Operations Manager into [!INCLUDE[smshort](./Token/smshort_md.md)] as services:
 
 1.  In Operations Manager, export each management pack that contains a component for your distributed application. Ensure that you export all management pack dependencies.
 
     > [!NOTE]
     > You might need to download management packs or install them from the installation folder of your Operations Manager Root Management Server.
 
-2.  In [!INCLUDE[smshort](../Token/smshort_md.md)], import the management pack that contains the distributed application and its dependences. A new, empty, business service should appear in Business Services in the Configuration Items workspace.
+2.  In [!INCLUDE[smshort](./Token/smshort_md.md)], import the management pack that contains the distributed application and its dependences. A new, empty, business service should appear in Business Services in the Configuration Items workspace.
 
 3.  Browse to **Administration** and then **Connectors** and ensure that you refresh the list of management packs. Then, synchronize the Operations Manager configuration items connector. When synchronization is complete, the service components appear in the **Configuration Items** workspace under the business service.
 
-Generally, you should construct service maps that are 3\-5 levels deep. Components of a service map should vary from 5\-20 at each level. However, the total number of components should not exceed few hundred. This recommendation depends on the complexity of the service map, but keeping the number of components lower that a few hundred still provides reasonable response times, as you navigate throughout service map tree view. While the service map tree view expansion is still in progress, even for larger tree structures, the [!INCLUDE[smcons](../Token/smcons_md.md)] remains responsive. Service maps are not designed to handle a large number of components; as a result, we recommend that you keep your service map tree structures small.
+Generally, you should construct service maps that are 3\-5 levels deep. Components of a service map should vary from 5\-20 at each level. However, the total number of components should not exceed few hundred. This recommendation depends on the complexity of the service map, but keeping the number of components lower that a few hundred still provides reasonable response times, as you navigate throughout service map tree view. While the service map tree view expansion is still in progress, even for larger tree structures, the [!INCLUDE[smcons](./Token/smcons_md.md)] remains responsive. Service maps are not designed to handle a large number of components; as a result, we recommend that you keep your service map tree structures small.
 
 ### To manually create a service for an IT messaging application
 
-1.  In the [!INCLUDE[smcons](../Token/smcons_md.md)], click **Configuration Items**.
+1.  In the [!INCLUDE[smcons](./Token/smcons_md.md)], click **Configuration Items**.
 
 2.  In the **Configuration Items** pane, expand **Configuration Items**, and then expand **Business Services**.
 
@@ -71,7 +71,7 @@ Generally, you should construct service maps that are 3\-5 levels deep. Componen
 
 ### To view and edit a distributed application that was imported from Operations Manager
 
-1.  In the [!INCLUDE[smcons](../Token/smcons_md.md)], click **Configuration Items**.
+1.  In the [!INCLUDE[smcons](./Token/smcons_md.md)], click **Configuration Items**.
 
 2.  In the **Configuration Items** pane, expand **Configuration Items**, expand **Business Services**, and then click **All Business Services**.
 
@@ -85,7 +85,7 @@ Generally, you should construct service maps that are 3\-5 levels deep. Componen
 
 ### To view dependent services
 
-1.  In the [!INCLUDE[smcons](../Token/smcons_md.md)], click **Configuration Items**.
+1.  In the [!INCLUDE[smcons](./Token/smcons_md.md)], click **Configuration Items**.
 
 2.  In the **Configuration Items** pane, expand **Configuration Items**, expand **Business Services**, and then click **All Business Services**.
 
@@ -94,4 +94,5 @@ Generally, you should construct service maps that are 3\-5 levels deep. Componen
 4.  In the form that appears, click the **Service Dependents** tab. Services that use the new service are listed. For example, **IT Messaging Service** appears in the list.
 
 5.  Click **OK**.
+
 

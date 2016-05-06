@@ -8,7 +8,7 @@ ms.topic: article
 ms.assetid: abc04f90-e31f-4696-9cec-56cc7895af0c
 ---
 # How to increase the capacity of a private cloud in VMM
-You can use this procedure to increase the capacity of a private cloud in [!INCLUDE[vmm12sp1_long](../Token/vmm12sp1_long_md.md)].
+You can use this procedure to increase the capacity of a private cloud in [!INCLUDE[vmm12sp1_long](./Token/vmm12sp1_long_md.md)].
 
 > [!NOTE]
 > -   You can decidewhether to limit the placement of virtual machines to stay within the aggregate capacity of a particular cloud. For non\-replica virtual machines, it is a best practice to stay within the aggregate capacity. If you have replica virtual machines, you might want to exceed the specified capacity of a preconfigured cloud. In other words, you might want to overcommit the cloud as you place replica virtual machines.
@@ -38,7 +38,8 @@ You can use this procedure to increase the capacity of a private cloud in [!INCL
 
 ## See Also
 [Creating a Private Cloud in VMM](assetId:///6fbce258-d10e-4bc0-91fc-de4f5e00905f)
-[Overview: creating a private cloud with VMM](../Topic/Overview--creating-a-private-cloud-with-VMM.md)
-[Managing private clouds with VMM](../Topic/Managing-private-clouds-with-VMM.md)
-[Managing tenant resources with VMM](../Topic/Managing-tenant-resources-with-VMM.md)
+[Overview: creating a private cloud with VMM](./Overview--creating-a-private-cloud-with-VMM.md)
+[Managing private clouds with VMM](./Managing-private-clouds-with-VMM.md)
+[Managing tenant resources with VMM](./Managing-tenant-resources-with-VMM.md)
+
 

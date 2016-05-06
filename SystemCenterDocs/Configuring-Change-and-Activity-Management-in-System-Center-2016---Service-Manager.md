@@ -17,3 +17,4 @@ Configure workflows to automatically close completed change requests and send no
 
 A change request template is useful when you create a change request for a recurring type of issue because you can set an issue category and define a standard priority, effect, and risk level for it in the template. You can also create additional templates for other types of recurring change requests. Another benefit of creating a change request template is that users spend less time when they submit new change requests.
 
+

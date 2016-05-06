@@ -11,7 +11,7 @@ ms.topic: article
 ms.assetid: 7067cf2d-8eb5-426d-a491-d0d116fef325
 ---
 # Inventory of Operations Manager Infrastructure
-Both maintaining and troubleshooting [!INCLUDE[om12long](../Token/om12long_md.md)] can be easier when you have a comprehensive inventory of the Operations Manager infrastructure. Ideally, the inventory is started when you first install Operations Manager, and updated as you add features and extend monitoring. If you have an existing infrastructure and no inventory, we recommend that you invest the time to document a complete inventory. [Recommendations for Daily, Weekly, and Monthly Operations Manager Tasks](../Topic/Recommendations-for-Daily,-Weekly,-and-Monthly-Operations-Manager-Tasks.md) includes a monthly task to review and update the inventory.
+Both maintaining and troubleshooting [!INCLUDE[om12long](./Token/om12long_md.md)] can be easier when you have a comprehensive inventory of the Operations Manager infrastructure. Ideally, the inventory is started when you first install Operations Manager, and updated as you add features and extend monitoring. If you have an existing infrastructure and no inventory, we recommend that you invest the time to document a complete inventory. [Recommendations for Daily, Weekly, and Monthly Operations Manager Tasks](./Recommendations-for-Daily,-Weekly,-and-Monthly-Operations-Manager-Tasks.md) includes a monthly task to review and update the inventory.
 
 The following is a list of information you will find useful to include in your inventory.
 
@@ -220,12 +220,13 @@ The following is a list of information you will find useful to include in your i
     -   Are the backups tested on their validity on a regular basis
 
 ## See Also
-[Maintenance of Operations Manager](../Topic/Maintenance-of-Operations-Manager.md)
-[Monitoring the Health of the Management Group](../Topic/Monitoring-the-Health-of-the-Management-Group.md)
-[How to Configure Grooming Settings for the Reporting Data Warehouse Database](../Topic/How-to-Configure-Grooming-Settings-for-the-Reporting-Data-Warehouse-Database.md)
-[Scheduling Maintenance in Operations Manager](../Topic/Scheduling-Maintenance-in-Operations-Manager.md)
-[How and When to Clear the Cache](../Topic/How-and-When-to-Clear-the-Cache.md)
-[How to Restart a Management Server](../Topic/How-to-Restart-a-Management-Server.md)
-[How to Configure Grooming Settings for the Operations Manager Database](../Topic/How-to-Configure-Grooming-Settings-for-the-Operations-Manager-Database.md)
-[Recommendations for Daily, Weekly, and Monthly Operations Manager Tasks](../Topic/Recommendations-for-Daily,-Weekly,-and-Monthly-Operations-Manager-Tasks.md)
+[Maintenance of Operations Manager](./Maintenance-of-Operations-Manager.md)
+[Monitoring the Health of the Management Group](./Monitoring-the-Health-of-the-Management-Group.md)
+[How to Configure Grooming Settings for the Reporting Data Warehouse Database](./How-to-Configure-Grooming-Settings-for-the-Reporting-Data-Warehouse-Database.md)
+[Scheduling Maintenance in Operations Manager](./Scheduling-Maintenance-in-Operations-Manager.md)
+[How and When to Clear the Cache](./How-and-When-to-Clear-the-Cache.md)
+[How to Restart a Management Server](./How-to-Restart-a-Management-Server.md)
+[How to Configure Grooming Settings for the Operations Manager Database](./How-to-Configure-Grooming-Settings-for-the-Operations-Manager-Database.md)
+[Recommendations for Daily, Weekly, and Monthly Operations Manager Tasks](./Recommendations-for-Daily,-Weekly,-and-Monthly-Operations-Manager-Tasks.md)
+
 

@@ -15,7 +15,7 @@ To ensure that the Service Manager database is up to date, the Active Directory 
 
 ### To manually synchronize an Active Directory connector
 
-1.  In the [!INCLUDE[smcons](../Token/smcons_md.md)], click **Administration**.
+1.  In the [!INCLUDE[smcons](./Token/smcons_md.md)], click **Administration**.
 
 2.  In the **Administration** pane, expand **Administration**, and then click **Connectors**.
 
@@ -28,13 +28,14 @@ To ensure that the Service Manager database is up to date, the Active Directory 
 
 ### To validate that an Active Directory connector synchronized
 
-1.  In the [!INCLUDE[smcons](../Token/smcons_md.md)], click **Configuration Items**.
+1.  In the [!INCLUDE[smcons](./Token/smcons_md.md)], click **Configuration Items**.
 
 2.  In the **Configuration Items** pane, expand **Printers**, and then click **All Printers**. Verify that any new printers in AD DS appear in the middle pane.
 
 3.  Expand **Computers**, and then click **All Windows Computers**. Verify that any new computers in AD DS appear in the middle pane.
 
-4.  In the [!INCLUDE[smcons](../Token/smcons_md.md)], click **Configuration Items**.
+4.  In the [!INCLUDE[smcons](./Token/smcons_md.md)], click **Configuration Items**.
 
 5.  In the **Configuration Items** pane, click **Users**. Verify that any new users and groups in AD DS appear in the middle pane.
+
 

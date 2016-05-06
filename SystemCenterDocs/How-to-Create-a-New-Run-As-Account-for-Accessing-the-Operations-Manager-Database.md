@@ -83,9 +83,10 @@ Use the following procedure to create a new Run As account that can access the o
 7.  In the **Database User \- New** dialog box, in the **Database role membership** list, select **dbmodule\_users**, and then click **OK**.
 
 ## See Also
-[Managing Run As Accounts and Profiles](../Topic/Managing-Run-As-Accounts-and-Profiles.md)
-[How to Create a Run As Account](../Topic/How-to-Create-a-Run-As-Account.md)
-[Distribution and Targeting for Run As Accounts and Profiles](../Topic/Distribution-and-Targeting-for-Run-As-Accounts-and-Profiles.md)
-[How to Associate a Run As Account to a Run As Profile](../Topic/How-to-Associate-a-Run-As-Account-to-a-Run-As-Profile.md)
-[How to Configure Run As Accounts and Profiles for UNIX and Linux Access](../Topic/How-to-Configure-Run-As-Accounts-and-Profiles-for-UNIX-and-Linux-Access.md)
+[Managing Run As Accounts and Profiles](./Managing-Run-As-Accounts-and-Profiles.md)
+[How to Create a Run As Account](./How-to-Create-a-Run-As-Account.md)
+[Distribution and Targeting for Run As Accounts and Profiles](./Distribution-and-Targeting-for-Run-As-Accounts-and-Profiles.md)
+[How to Associate a Run As Account to a Run As Profile](./How-to-Associate-a-Run-As-Account-to-a-Run-As-Profile.md)
+[How to Configure Run As Accounts and Profiles for UNIX and Linux Access](./How-to-Configure-Run-As-Accounts-and-Profiles-for-UNIX-and-Linux-Access.md)
+
 

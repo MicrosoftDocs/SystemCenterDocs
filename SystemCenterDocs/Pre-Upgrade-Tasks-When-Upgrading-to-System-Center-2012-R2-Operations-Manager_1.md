@@ -10,7 +10,7 @@ ms.assetid: cef210f5-ca0f-43c7-945c-c16161b0c94d
 # Pre-Upgrade Tasks When Upgrading to System Center 2012 R2 Operations Manager_1
 Perform the following pre\-upgrade tasks in the order presented before you begin the upgrade process.
 
-1.  Review the [!INCLUDE[omblue_2](../Token/omblue_2_md.md)] Event Logs
+1.  Review the [!INCLUDE[omblue_2](./Token/omblue_2_md.md)] Event Logs
 
 2.  Cleanup the Database \(ETL Table\)
 
@@ -28,7 +28,7 @@ Perform the following pre\-upgrade tasks in the order presented before you begin
 Review the event logs for Operations Manager on the management servers to look for recurring warning or critical events. Address them and save a copy of the event logs before you perform your upgrade.
 
 ## Cleanup the Database \(ETL Table\)
-As part of upgrade to [!INCLUDE[omblue_1](../Token/omblue_1_md.md)] installation \(setup\) includes a script to cleanup ETL tables, grooming the database.  However, in cases where there are a large number of rows \(greater than 100,000\) to cleanup, we recommend running the script before starting the upgrade to promote a faster upgrade and prevent possible timeout of setup. Performing this pre\-upgrade task in all circumstances ensures a more efficient installation.
+As part of upgrade to [!INCLUDE[omblue_1](./Token/omblue_1_md.md)] installation \(setup\) includes a script to cleanup ETL tables, grooming the database.  However, in cases where there are a large number of rows \(greater than 100,000\) to cleanup, we recommend running the script before starting the upgrade to promote a faster upgrade and prevent possible timeout of setup. Performing this pre\-upgrade task in all circumstances ensures a more efficient installation.
 
 Run the following query to determine the number of rows that need to be deleted from ETL and cleanup the database:
 
@@ -146,4 +146,5 @@ You must verify that the operational database has more than 50 percent of free s
 
 ## Back up the Operations Manager Databases
 Obtain verified recent backups of the operational database and of the data warehouse database before you upgrade the secondary management server. You should also create backups of databases for optional features, such as the Reporting and the Audit Collection Services database before you upgrade them. For more information, see [How to: Back up a Database](http://go.microsoft.com/fwlink/p/?LinkId=220190) and [How to Schedule Backups of Operations Manager Databases](assetId:///301b7af3-3695-41b5-b91c-e1a672bce591).
+
 

@@ -56,3 +56,4 @@ Use the following series of tasks when using an existing management group with a
     3. In Step 7, *Configure the registry on all the management servers*, change the registry key `HKEY\_LOCAL\_MACHINE\Software\Microsoft\System Center2010\Common\Database` and give `DatabaseServerName` as \<AGL Name,AGL Port number\>
 
 To summarize, you are changing the computer name hosting the Service Manager database to \<AGL Name,AGL Port number\> for SQL Server AlwaysOn support.
+

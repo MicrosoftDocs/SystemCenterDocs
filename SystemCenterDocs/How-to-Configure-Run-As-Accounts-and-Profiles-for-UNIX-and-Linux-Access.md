@@ -11,7 +11,7 @@ ms.topic: article
 ms.assetid: f7c739f4-e51d-42f6-b55a-4c914e5fd95d
 ---
 # How to Configure Run As Accounts and Profiles for UNIX and Linux Access
-If you are the system administrator in charge of the monitoring of UNIX and Linux computers, you must create Run As accounts for agent maintenance operations, and for health and performance monitoring. These Run As accounts must then be associated with the Run As profiles defined in the UNIX and Linux management packs, so they can access the agents on UNIX and Linux computers. For an overview of the process, see [Accessing UNIX and Linux Computers in Operations Manager](../Topic/Accessing-UNIX-and-Linux-Computers-in-Operations-Manager.md).
+If you are the system administrator in charge of the monitoring of UNIX and Linux computers, you must create Run As accounts for agent maintenance operations, and for health and performance monitoring. These Run As accounts must then be associated with the Run As profiles defined in the UNIX and Linux management packs, so they can access the agents on UNIX and Linux computers. For an overview of the process, see [Accessing UNIX and Linux Computers in Operations Manager](./Accessing-UNIX-and-Linux-Computers-in-Operations-Manager.md).
 
 ## Configuring Run As Accounts
 The **UNIX\/Linux Run As Accounts Wizard** creates Run As accounts that can be of two Run As account types:
@@ -99,9 +99,10 @@ Now that you have created the Run As accounts, you must add each Run As account 
 Repeat as needed until all three profiles have been configured with one or more Run As accounts.
 
 ## See Also
-[Managing Run As Accounts and Profiles](../Topic/Managing-Run-As-Accounts-and-Profiles.md)
-[How to Create a Run As Account](../Topic/How-to-Create-a-Run-As-Account.md)
-[Distribution and Targeting for Run As Accounts and Profiles](../Topic/Distribution-and-Targeting-for-Run-As-Accounts-and-Profiles.md)
-[How to Create a New Run As Account for Accessing the Operations Manager Database](../Topic/How-to-Create-a-New-Run-As-Account-for-Accessing-the-Operations-Manager-Database.md)
-[How to Associate a Run As Account to a Run As Profile](../Topic/How-to-Associate-a-Run-As-Account-to-a-Run-As-Profile.md)
+[Managing Run As Accounts and Profiles](./Managing-Run-As-Accounts-and-Profiles.md)
+[How to Create a Run As Account](./How-to-Create-a-Run-As-Account.md)
+[Distribution and Targeting for Run As Accounts and Profiles](./Distribution-and-Targeting-for-Run-As-Accounts-and-Profiles.md)
+[How to Create a New Run As Account for Accessing the Operations Manager Database](./How-to-Create-a-New-Run-As-Account-for-Accessing-the-Operations-Manager-Database.md)
+[How to Associate a Run As Account to a Run As Profile](./How-to-Associate-a-Run-As-Account-to-a-Run-As-Profile.md)
+
 

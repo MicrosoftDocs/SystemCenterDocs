@@ -11,7 +11,7 @@ ms.topic: article
 ms.assetid: c6c5bcfa-32e6-400d-8256-c083042f18a4
 ---
 # SNMP Events
-SNMP monitors and rules in [!INCLUDE[om12short](../Token/om12short_md.md)] allow you to retrieve messages from computers and devices that support Simple Network Management Protocol \(SNMP\). You can create rules and monitors that either wait for an SNMP trap to be sent or that retrieve information on a periodic basis using an SNMP probe.
+SNMP monitors and rules in [!INCLUDE[om12short](./Token/om12short_md.md)] allow you to retrieve messages from computers and devices that support Simple Network Management Protocol \(SNMP\). You can create rules and monitors that either wait for an SNMP trap to be sent or that retrieve information on a periodic basis using an SNMP probe.
 
 ## Target
 Rules and monitors run on the agent computer of each instance of the target class, and they usually access data on the local computer. SNMP rules and monitors typically work with information from a computer or device different from the one running the monitors or rules. For SNMP traps, the monitor or rule needs to be running on the agent that receives the trap. The device needs to be configured to deliver traps to this agent. For SNMP probes, the monitor or rule needs to be running on any agent that is authorized to access the device with SNMP. The device may need to be configured to allow communication from this agent.
@@ -40,10 +40,10 @@ The **General** page includes general settings for the rule or wizard including 
 |----------|---------------|
 |Name|The name used for the rule or monitor. For a rule, the name appears in the **Rules** view in the **Authoring** pane. When you create a view or report, you can select this name to use the data collected by it. For a monitor, the name appears in the Health Explorer of any target objects.|
 |Description|Optional description of the rule or monitor.|
-|Management Pack|Management pack file to store the rule or monitor.<br /><br />For more information on management packs, see [Selecting a Management Pack File](../Topic/Selecting-a-Management-Pack-File.md).|
+|Management Pack|Management pack file to store the rule or monitor.<br /><br />For more information on management packs, see [Selecting a Management Pack File](./Selecting-a-Management-Pack-File.md).|
 |Rule Category \(Rules only\)|The category for the rule. For an event collection rule, this should be **Event Collection**. For a performance collection rule, this should be **Performance Collection**. For an alerting rule, this should be **Alert**.|
-|Parent Monitor \(Monitors only\)|The aggregate monitor that the monitor will be positioned under in the Health Explorer. For more information, see [Aggregate Monitors](../Topic/Aggregate-Monitors.md).|
-|Target|The class to use for the target of the rule or monitor. The rule or monitor will be run on any agent that has at least one instance of this class. For more information on targets, see [Understanding Classes and Objects](../Topic/Understanding-Classes-and-Objects.md).<br /><br />If you are monitoring a network device discovered in the Discovery Wizard, then use the class for the device or one of its components, depending on what the monitor most applies to.|
+|Parent Monitor \(Monitors only\)|The aggregate monitor that the monitor will be positioned under in the Health Explorer. For more information, see [Aggregate Monitors](./Aggregate-Monitors.md).|
+|Target|The class to use for the target of the rule or monitor. The rule or monitor will be run on any agent that has at least one instance of this class. For more information on targets, see [Understanding Classes and Objects](./Understanding-Classes-and-Objects.md).<br /><br />If you are monitoring a network device discovered in the Discovery Wizard, then use the class for the device or one of its components, depending on what the monitor most applies to.|
 |Rule is enabled<br /><br />Monitor is enabled|Specifies whether the rule or monitor is enabled.|
 
 ### SNMP Probe \/ SNMP Trap Provider
@@ -59,7 +59,7 @@ SNMP probe rules have an **SNMP Probe** page, while SNMP trap rules have an **SN
 ### Build Expression \(Monitors Only\)
 SNMP monitors have a **Build Expression** page for each of the **SNMP Probe** or **SNMP Trap Provider** pages. The expression evaluates the SNMP data returned to determine the health state of the monitor.
 
-For more information about expressions, [Expressions](../Topic/Expressions.md).
+For more information about expressions, [Expressions](./Expressions.md).
 
 The **Parameter Name** in each expression requires a variable referring to a piece of data from the SNMP probe or trap. The data that is available includes header information and a data element for each OID specified. The header information is shown in the following table:
 
@@ -91,12 +91,12 @@ To refer to the OID data elements, you can use the following syntax:
 The **Configure Health** page is only available for monitors. It allows you to specify the health state that will be set for each of the events. The first event will typically set the monitor to **Warning** or **Critical** while the second event or the timer will set the monitor to **Healthy**.
 
 ### Configure Alerts
-The **Configure Alerts** page is only available for monitors and alerting rules. Its options are explained in [Alerts](../Topic/Alerts.md).
+The **Configure Alerts** page is only available for monitors and alerting rules. Its options are explained in [Alerts](./Alerts.md).
 
 ## Creating SNMP Monitors and Rules
 
 ### Creating an SNMP Rule
-Use the following procedure to create an SNMP performance collection rule in [!INCLUDE[om12short](../Token/om12short_md.md)] with the following details:
+Use the following procedure to create an SNMP performance collection rule in [!INCLUDE[om12short](./Token/om12short_md.md)] with the following details:
 
 -   Runs on all network devices by using Node for the target.
 
@@ -104,7 +104,7 @@ Use the following procedure to create an SNMP performance collection rule in [!I
 
 ##### To create an SNMP Performance Collection Rule
 
-1.  If you don’t have a management pack for the application that you are monitoring, create one using the process in [Selecting a Management Pack File](../Topic/Selecting-a-Management-Pack-File.md).
+1.  If you don’t have a management pack for the application that you are monitoring, create one using the process in [Selecting a Management Pack File](./Selecting-a-Management-Pack-File.md).
 
 2.  In the Operations console, select the **Authoring** workspace, and then select **Rules**.
 
@@ -139,7 +139,7 @@ Use the following procedure to create an SNMP performance collection rule in [!I
     3.  Click **Create**.
 
 ### Creating an SNMP Monitor
-Use the following procedure to create an SNMP trap monitor [!INCLUDE[om12short](../Token/om12short_md.md)] with the following details:
+Use the following procedure to create an SNMP trap monitor [!INCLUDE[om12short](./Token/om12short_md.md)] with the following details:
 
 -   Runs on all network devices by using Node for the target.
 
@@ -151,7 +151,7 @@ Use the following procedure to create an SNMP trap monitor [!INCLUDE[om12short](
 
 ##### To create an SNMP Trap monitor
 
-1.  If you don’t have a management pack for the application that you are monitoring, create one using the process in [Selecting a Management Pack File](../Topic/Selecting-a-Management-Pack-File.md).
+1.  If you don’t have a management pack for the application that you are monitoring, create one using the process in [Selecting a Management Pack File](./Selecting-a-Management-Pack-File.md).
 
 2.  In the Operations console, select the **Authoring** workspace.
 
@@ -254,6 +254,7 @@ Use the following procedure to create an SNMP trap monitor [!INCLUDE[om12short](
 12. Click **Create**.
 
 ## See Also
-[Monitoring Networks by Using Operations Manager](../Topic/Monitoring-Networks-by-Using-Operations-Manager.md)
-[How to Discover Network Devices in Operations Manager](../Topic/How-to-Discover-Network-Devices-in-Operations-Manager.md)
+[Monitoring Networks by Using Operations Manager](./Monitoring-Networks-by-Using-Operations-Manager.md)
+[How to Discover Network Devices in Operations Manager](./How-to-Discover-Network-Devices-in-Operations-Manager.md)
+
 

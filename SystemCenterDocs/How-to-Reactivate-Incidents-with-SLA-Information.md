@@ -15,7 +15,7 @@ In Service Manager, you can reactivate resolved incidents that have an associate
 
 ### To reactivate an incident with SLA information
 
-1.  In the [!INCLUDE[smcons](../Token/smcons_md.md)], click **Work Items**.
+1.  In the [!INCLUDE[smcons](./Token/smcons_md.md)], click **Work Items**.
 
 2.  In the **Work Items** pane, expand **Incident Management**, and then click **All** .
 
@@ -24,4 +24,5 @@ In Service Manager, you can reactivate resolved incidents that have an associate
 4.  In the **Tasks** list, under **<IncidentID – IncidentTitle>**, click **Change Incident Status**, and then select **Activate**.
 
 5.  In the **Activate** box, type a comment describing why you are activating the incident, and then click **OK**.
+
 

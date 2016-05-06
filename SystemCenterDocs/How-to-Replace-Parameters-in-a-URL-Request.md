@@ -22,7 +22,7 @@ A single application can use any number of context parameters. Any number of req
 ## Session ID Example
 Consider the example where an application creates a session ID when a user logs on. This session ID is required in each request after the logon page. To implement this scenario, you have to capture the session ID when it is first generated, and then use that value in each subsequent request.
 
-You start by using the process described in [How to Capture Web Application Recording](../Topic/How-to-Capture-Web-Application-Recording.md) to capture the logon and subsequent actions. The recorded session for logging on to the application and performing some actions might look similar to the following example.
+You start by using the process described in [How to Capture Web Application Recording](./How-to-Capture-Web-Application-Recording.md) to capture the logon and subsequent actions. The recorded session for logging on to the application and performing some actions might look similar to the following example.
 
 ```html
 http://www.myapp.com/home.aspx
@@ -73,17 +73,17 @@ The following procedure provides an example of using parameter extraction in a w
 
 The main Bing page is shown below with the **Popular Now** section highlighted.
 
-![](../Image/OM2007_UsersGuide_BingHomepage.gif)
+![](/Image/OM2007_UsersGuide_BingHomepage.gif)
 
 To determine where in the response body the search term appears, you can view the source of the page. A portion of the source is shown below with the HTML code of the **Popular Now** section. In this HTML code, you only need the search string which is highlighted in the following illustration. The request is formed from **http:\/\/www.bing.com** followed by this string.
 
-![](../Image/OM2007_UsersGuide_PopularNowSearchStringHTML.gif)
+![](/Image/OM2007_UsersGuide_PopularNowSearchStringHTML.gif)
 
 You could just pull out the term itself, but it is more straightforward to include the entire string in the parameter. This string is preceded by the characters **<h3>Popular now<\/h3><ul><li><a href\="** and ends with the next occurrence of **"**. Those are the values that you will use when you define the parameter extraction.
 
 #### To record a sample web application
 
-1.  Use the procedure in [How to Capture Web Application Recording](../Topic/How-to-Capture-Web-Application-Recording.md) to record a web application.
+1.  Use the procedure in [How to Capture Web Application Recording](./How-to-Capture-Web-Application-Recording.md) to record a web application.
 
 2.  While recording, connect to **http:\/\/www.bing.com**.
 
@@ -95,7 +95,7 @@ You could just pull out the term itself, but it is more straightforward to inclu
 
 6.  Remove the last request because this is not required. To remove the last request, select the request, and then click **Delete** in the **Actions** pane. The resulting requests should look similar to the following URLs:
 
-    ![](../Image/OM2007_UsersGuide_WebAppRecorded.gif)
+    ![](/Image/OM2007_UsersGuide_WebAppRecorded.gif)
 
 #### To create an extraction rule
 
@@ -111,7 +111,7 @@ You could just pull out the term itself, but it is more straightforward to inclu
 
 6.  In the **Ends with** box, type **"**. The extraction rule should look similar to the following illustration.
 
-    ![](../Image/OM2007_UsersGuide_ExtractionRule.gif)
+    ![](/Image/OM2007_UsersGuide_ExtractionRule.gif)
 
 7.  Click **OK** to save and close the extraction rule.
 
@@ -127,13 +127,14 @@ You could just pull out the term itself, but it is more straightforward to inclu
 
 4.  With the cursor positioned at the end of the URL, just after **www.bing.com**, select **SearchString** in the **Parameters** box, and then click **Insert**. This inserts the variable `$ParametersContext/SearchString$`. The final request looks similar to the following illustration.
 
-    ![](../Image/OM2007_UsersGuide_InsertParameter.gif)
+    ![](/Image/OM2007_UsersGuide_InsertParameter.gif)
 
 5.  Click **OK** to close the dialog box.
 
 6.  Click **OK** to save and close the request. The modified request sequence should look similar to the following illustration.
 
-    ![](../Image/OM2007_UsersGuide_WebAppModified.gif)
+    ![](/Image/OM2007_UsersGuide_WebAppModified.gif)
 
 7.  Click **Apply** to apply the changes, and then close the **Web Application Editor**.
+
 

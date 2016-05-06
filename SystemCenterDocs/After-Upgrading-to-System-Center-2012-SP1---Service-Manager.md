@@ -11,7 +11,7 @@ ms.topic: article
 ms.assetid: a21c98a9-c10a-41db-8d8c-9eac164c2517
 ---
 # After Upgrading to System Center 2012 SP1 - Service Manager
-This topic describes how to restart the Data Access service if it fails to start after an upgrade to [!INCLUDE[smlong12](../Token/smlong12_md.md)] SP1. After the upgrade, you will also have to start the [!INCLUDE[smshort](../Token/smshort_md.md)] workflows and restart the data warehouse jobs. This topic also describes how to stop and then start SQL Server Reporting Services \(SSRS\) after an upgrade.
+This topic describes how to restart the Data Access service if it fails to start after an upgrade to [!INCLUDE[smlong12]./Token/smlong12_md.md)] SP1. After the upgrade, you will also have to start the [!INCLUDE[smshort]./Token/smshort_md.md)] workflows and restart the data warehouse jobs. This topic also describes how to stop and then start SQL Server Reporting Services \(SSRS\) after an upgrade.
 
 ## Restart the Data Access Service and Workflows on the Data Warehouse Management Server
 If necessary, use the following procedures to restart the service and workflows.
@@ -26,7 +26,7 @@ If necessary, use the following procedures to restart the service and workflows.
 
 #### To start Service Manager workflows
 
-1.  On the computer that hosts the [!INCLUDE[smshort12](../Token/smshort12_md.md)] management server, on the Windows desktop, click **Start**, and then click **Run**.
+1.  On the computer that hosts the [!INCLUDE[smshort12]./Token/smshort12_md.md)] management server, on the Windows desktop, click **Start**, and then click **Run**.
 
 2.  In the **Run** dialog box, in **Open**, type **services.msc**, and then click **OK**.
 
@@ -42,7 +42,7 @@ After you upgrade the data warehouse management server, you might need to restar
 2.  Type the following commands and then press Enter after each command.
 
     > [!NOTE]
-    > It is assumed in the following command examples that [!INCLUDE[smshort](../Token/smshort_md.md)] was installed in its default location on the C: drive. If necessary, change directories to the location where you installed [!INCLUDE[smshort](../Token/smshort_md.md)].
+    > It is assumed in the following command examples that [!INCLUDE[smshort]./Token/smshort_md.md)] was installed in its default location on the C: drive. If necessary, change directories to the location where you installed [!INCLUDE[smshort]./Token/smshort_md.md)].
 
     ```
     cd 'C:\Program Files\Microsoft System Center 2012\Service Manager'
@@ -87,7 +87,7 @@ After you upgrade the data warehouse management server, you might need to restar
     The last command, **Start\-SCDWJob – JobName MPSyncJob**, will enable the ETL jobs to run.
 
 ## Stop and Then Start SSRS
-After you perform an upgrade to [!INCLUDE[smlong12](../Token/smlong12_md.md)] SP1, use the following procedure to stop and then start SSRS.
+After you perform an upgrade to [!INCLUDE[smlong12]./Token/smlong12_md.md)] SP1, use the following procedure to stop and then start SSRS.
 
 #### To stop and then start SSRS
 
@@ -98,4 +98,6 @@ After you perform an upgrade to [!INCLUDE[smlong12](../Token/smlong12_md.md)] SP
 3.  In the **Services** window, in the **Services \(Local\)** pane, right\-click **SQL Server Reporting Services**, and then click **Stop**.
 
 4.  In the **Services** window, in the **Services \(Local\)** pane, right\-click **SQL Server Reporting Services**, and then click **Start**.
+
+
 

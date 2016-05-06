@@ -98,7 +98,7 @@ You can override the default behavior and assign a primary and any number of sta
 ## <a name="BKMK_Logging"></a>Logging
 This feature controls what data is logged to the orchestration database. If stored in the orchestration database, this data is visible in views such as the **Log** pane in the Runbook Designer and in the Orchestration console. This information does not affect the availability of Published Data in a running runbook.
 
-Published Data includes data specific to each activity. For detailed information about the Published Data available in each standard activity, see the [Runbook Activity Reference for System Center 2012 - Orchestrator](../Topic/Runbook-Activity-Reference-for-System-Center-2012---Orchestrator.md). For detailed information about published data available in integration packs, see [Integration Packs for System Center 2012 \- Orchestrator &#91;Orch2012\_TechNet\_IP&#93;](assetId:///e6aff353-c364-4852-bfb7-9088407a7bd9).
+Published Data includes data specific to each activity. For detailed information about the Published Data available in each standard activity, see the [Runbook Activity Reference for System Center 2012 - Orchestrator](./Runbook-Activity-Reference-for-System-Center-2012---Orchestrator.md). For detailed information about published data available in integration packs, see [Integration Packs for System Center 2012 \- Orchestrator &#91;Orch2012\_TechNet\_IP&#93;](assetId:///e6aff353-c364-4852-bfb7-9088407a7bd9).
 
 Common Published Data is a set of data items that are common to all activities. These items are as follows:
 
@@ -126,7 +126,7 @@ If you want to be notified when a runbook runs for more than a specified length 
 
 If you want to be notified if the runbook does not run, click the **Runbook fails to run** option.
 
-For more information about Event Notifications, see [Orchestrator Logs](../Topic/Orchestrator-Logs.md).
+For more information about Event Notifications, see [Orchestrator Logs](./Orchestrator-Logs.md).
 
 ## Job Concurrency
 The job concurrency setting lets you set the maximum number of simultaneous jobs, so that you can carry out multiple requests for the same runbook at the same time. This setting applies to the individual runbook. A runbook server can run 50 runbooks at the same time. If you select a job concurrency setting over 50, your environment requires more runbook servers or the requests to start a runbook will queue.
@@ -135,7 +135,7 @@ The following limitations apply:
 
 -   You cannot run simultaneous requests for runbooks that start with Monitoring activities. If you try to change the maximum number of simultaneous requests for these runbooks, the Runbook Designer resets the **Maximum number of simultaneous jobs** value to 1 and displays an error message.
 
--   A runbook server runs simultaneous requests for runbooks up to the maximum processing limit. To change the maximum processing limit, see [How to Configure Runbook Throttling](../Topic/How-to-Configure-Runbook-Throttling.md).
+-   A runbook server runs simultaneous requests for runbooks up to the maximum processing limit. To change the maximum processing limit, see [How to Configure Runbook Throttling](./How-to-Configure-Runbook-Throttling.md).
 
 -   Do not create simultaneous requests for runbooks that contain Modify Counter activities. When you run different copies of the same runbook at the same time that modify \(set, reset, increment, or decrement\), a Counter can cause the Counter value to become unreliable. You can read the value of Counters in runbooks that run at the same time.
 
@@ -152,13 +152,14 @@ You access the Returned Data values through Published Data in one of several way
 
 -   View the Published Data from the Runbook Designer or Orchestration console.
 
--   Use the [!INCLUDE[orchshort](../Token/orchshort_md.md)] web service to return the Published Data programmatically.
+-   Use the [!INCLUDE[orchshort](./Token/orchshort_md.md)] web service to return the Published Data programmatically.
 
-For more information about the standard activities Invoke Runbook, Initialize Data, and Return Data, see the [Runbook Activity Reference for System Center 2012 - Orchestrator](../Topic/Runbook-Activity-Reference-for-System-Center-2012---Orchestrator.md).
+For more information about the standard activities Invoke Runbook, Initialize Data, and Return Data, see the [Runbook Activity Reference for System Center 2012 - Orchestrator](./Runbook-Activity-Reference-for-System-Center-2012---Orchestrator.md).
 
 To define the Returned Data for a runbook to return, use **Add**, **Edit**, and **Remove** to create each parameter.
 
 ## See Also
-[Runbook Activity Reference for System Center 2012 - Orchestrator](../Topic/Runbook-Activity-Reference-for-System-Center-2012---Orchestrator.md)
-[Orchestrator Logs](../Topic/Orchestrator-Logs.md)
+[Runbook Activity Reference for System Center 2012 - Orchestrator](./Runbook-Activity-Reference-for-System-Center-2012---Orchestrator.md)
+[Orchestrator Logs](./Orchestrator-Logs.md)
+
 

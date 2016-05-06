@@ -50,14 +50,15 @@ The following examples show how to use the *ExecuteCommand* and *ExecuteShellCom
     `<p:ExecuteShellCommand_INPUT xmlns:p="http://schemas.microsoft.com/wbem/wscim/1/cim-schema/2/SCX_OperatingSystem"> <p:Command> uptime |  awk '{print $10}' |awk -F"," '{print $1}' </p:Command> <p:timeout>10</p:timeout> </p:ExecuteShellCommand_INPUT>`
 
 ## See Also
-[Using Templates for Additional Monitoring of UNIX and Linux](../Topic/Using-Templates-for-Additional-Monitoring-of-UNIX-and-Linux.md)
-[Troubleshooting UNIX and Linux Monitoring](../Topic/Troubleshooting-UNIX-and-Linux-Monitoring.md)
-[Accessing UNIX and Linux Computers in Operations Manager](../Topic/Accessing-UNIX-and-Linux-Computers-in-Operations-Manager.md)
-[Required Capabilities for UNIX and Linux Accounts](../Topic/Required-Capabilities-for-UNIX-and-Linux-Accounts.md)
-[Certificate Issues](../Topic/Certificate-Issues.md)
-[Operating System Issues](../Topic/Operating-System-Issues.md)
-[Logging and Debugging](../Topic/Logging-and-Debugging.md)
-[Managing Certificates for UNIX and Linux Computers](../Topic/Managing-Certificates-for-UNIX-and-Linux-Computers.md)
-[Managing Resource Pools for UNIX and Linux Computers](../Topic/Managing-Resource-Pools-for-UNIX-and-Linux-Computers.md)
-[Install Agent on UNIX and Linux Using the Discovery Wizard](../Topic/Install-Agent-on-UNIX-and-Linux-Using-the-Discovery-Wizard.md)
+[Using Templates for Additional Monitoring of UNIX and Linux](./Using-Templates-for-Additional-Monitoring-of-UNIX-and-Linux.md)
+[Troubleshooting UNIX and Linux Monitoring](./Troubleshooting-UNIX-and-Linux-Monitoring.md)
+[Accessing UNIX and Linux Computers in Operations Manager](./Accessing-UNIX-and-Linux-Computers-in-Operations-Manager.md)
+[Required Capabilities for UNIX and Linux Accounts](./Required-Capabilities-for-UNIX-and-Linux-Accounts.md)
+[Certificate Issues](./Certificate-Issues.md)
+[Operating System Issues](./Operating-System-Issues.md)
+[Logging and Debugging](./Logging-and-Debugging.md)
+[Managing Certificates for UNIX and Linux Computers](./Managing-Certificates-for-UNIX-and-Linux-Computers.md)
+[Managing Resource Pools for UNIX and Linux Computers](./Managing-Resource-Pools-for-UNIX-and-Linux-Computers.md)
+[Install Agent on UNIX and Linux Using the Discovery Wizard](./Install-Agent-on-UNIX-and-Linux-Using-the-Discovery-Wizard.md)
+
 

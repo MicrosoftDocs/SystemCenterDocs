@@ -17,7 +17,7 @@ Methods define entry points used to start measuring for performance events and t
 
 #### To add a method
 
-1.  To open the .NET Application Performance Monitoring template, in the [!INCLUDE[om12short](../Token/om12short_md.md)] console, in the navigation pane, click the **Authoring** button, click **Management Pack Templates**, and then click **.NET Application Performance Monitoring**.
+1.  To open the .NET Application Performance Monitoring template, in the [!INCLUDE[om12short](./Token/om12short_md.md)] console, in the navigation pane, click the **Authoring** button, click **Management Pack Templates**, and then click **.NET Application Performance Monitoring**.
 
 2.  Right click the application group whose settings you want to modify, and then select **Properties**.
 
@@ -37,7 +37,7 @@ Methods define entry points used to start measuring for performance events and t
 
 #### To edit a method
 
-1.  To open the .NET Application Performance Monitoring template, in the [!INCLUDE[om12short](../Token/om12short_md.md)] console, in the navigation pane, click the **Authoring** button, click **Management Pack Templates**, and then click **.NET Application Performance Monitoring**.
+1.  To open the .NET Application Performance Monitoring template, in the [!INCLUDE[om12short](./Token/om12short_md.md)] console, in the navigation pane, click the **Authoring** button, click **Management Pack Templates**, and then click **.NET Application Performance Monitoring**.
 
 2.  Right click the application group whose settings you want to modify, and then select **Properties**.
 
@@ -54,7 +54,7 @@ Methods define entry points used to start measuring for performance events and t
 
 #### To remove a method
 
-1.  To open the .NET Application Performance Monitoring template, in the [!INCLUDE[om12short](../Token/om12short_md.md)] console, in the navigation pane, click the **Authoring** button, click **Management Pack Templates**, and then click **.NET Application Performance Monitoring**.
+1.  To open the .NET Application Performance Monitoring template, in the [!INCLUDE[om12short](./Token/om12short_md.md)] console, in the navigation pane, click the **Authoring** button, click **Management Pack Templates**, and then click **.NET Application Performance Monitoring**.
 
 2.  Right click the application group whose settings you want to modify, and then select **Properties**.
 
@@ -63,4 +63,5 @@ Methods define entry points used to start measuring for performance events and t
 4.  On the **Advanced settings** page, click **Set Methods** to open the **Methods list** page. This is where you can remove methods.
 
 5.  To remove a method, on the **Methods list** page, select the method you want to remove, click **Remove**, and then click **OK**.
+
 

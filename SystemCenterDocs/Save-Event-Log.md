@@ -71,3 +71,4 @@ The following table lists the published data items.
 |Name and path of the file where entries are saved|The full path of the file where the event log was saved.|
 |Number of Entries|The number of entries that were saved.|
 
+

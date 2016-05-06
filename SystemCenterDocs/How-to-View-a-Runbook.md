@@ -12,7 +12,7 @@ ms.assetid: 5b4fbe04-ae00-4b0d-a04b-167a5a3ee7a9
 robots: noindex,nofollow
 ---
 # How to View a Runbook
-After you import runbooks from [!INCLUDE[orchlong](../Token/orchlong_md.md)] into [!INCLUDE[smlong12](../Token/smlong12_md.md)], you can open the runbook in the [!INCLUDE[smcons](../Token/smcons_md.md)] to ensure that it contains the parameters you want to use in an automation activity template in [!INCLUDE[smshort](../Token/smshort_md.md)].
+After you import runbooks from [!INCLUDE[orchlong](./Token/orchlong_md.md)] into [!INCLUDE[smlong12](./Token/smlong12_md.md)], you can open the runbook in the [!INCLUDE[smcons](./Token/smcons_md.md)] to ensure that it contains the parameters you want to use in an automation activity template in [!INCLUDE[smshort](./Token/smshort_md.md)].
 
 > [!NOTE]
 > This procedure requires Windows Internet Explorer with Microsoft Silverlight installed.
@@ -21,7 +21,7 @@ When you view the runbook, you can perform basic actions with the runbook, such 
 
 ### To view a runbook
 
-1.  In the [!INCLUDE[smcons](../Token/smcons_md.md)], select **Library**.
+1.  In the [!INCLUDE[smcons](./Token/smcons_md.md)], select **Library**.
 
 2.  In the **Library** pane, select **Runbooks**.
 
@@ -30,5 +30,6 @@ When you view the runbook, you can perform basic actions with the runbook, such 
 4.  In the **Tasks** pane under **<RunbookName>**, click **View Runbooks** to open the runbook in Internet Explorer.
 
 ## See Also
-[Using Runbooks in System Center 2012 - Service Manager](../Topic/Using-Runbooks-in-System-Center-2012---Service-Manager.md)
+[Using Runbooks in System Center 2012 - Service Manager](./Using-Runbooks-in-System-Center-2012---Service-Manager.md)
+
 

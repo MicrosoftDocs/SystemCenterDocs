@@ -19,3 +19,4 @@ The following topics provide detailed information about how to manage virtual ma
 * [Configuring virtual machine options and settings](Configuring-virtual-machine-options-and-settings.md)
 * [Migrating virtual machines and storage with VMM](Migrating-virtual-machines-and-storage-in-VMM.md)
 * [Managing virtual machine role templates](Managing-virtual-machine-role-templates.md)
+

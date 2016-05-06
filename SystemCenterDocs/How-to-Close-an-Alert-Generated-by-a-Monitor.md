@@ -37,3 +37,4 @@ If the monitor generates an alert when the health state changes to red and you d
 
 6.  Refresh the alerts view. If the alert is still listed, click the alert and then click **Close Alert** in the Actions pane.
 
+

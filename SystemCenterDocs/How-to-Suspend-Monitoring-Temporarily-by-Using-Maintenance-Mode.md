@@ -11,7 +11,7 @@ ms.topic: article
 ms.assetid: e929ecc9-ad1f-46f6-bb93-9e0aa02580b2
 ---
 # How to Suspend Monitoring Temporarily by Using Maintenance Mode
-Maintenance mode in [!INCLUDE[om12short](../Token/om12short_md.md)] enables you to avoid any alerts or errors that might occur when a monitored object, such as a computer, a SQL database, or distributed application, is taken offline for maintenance. Maintenance mode suspends the following features:
+Maintenance mode in [!INCLUDE[om12short](./Token/om12short_md.md)] enables you to avoid any alerts or errors that might occur when a monitored object, such as a computer, a SQL database, or distributed application, is taken offline for maintenance. Maintenance mode suspends the following features:
 
 -   Rules and monitors
 
@@ -114,7 +114,7 @@ The following section describes how to work with the different options for the o
 6.  In the **Windows Computers** pane, the maintenance mode icon disappears from the **Maintenance Mode** column for the computer you selected.
 
     > [!NOTE]
-    > Because [!INCLUDE[om12short](../Token/om12short_md.md)] polls maintenance mode settings only once every 5 minutes, there can be a delay in an object's scheduled removal from maintenance mode.
+    > Because [!INCLUDE[om12short](./Token/om12short_md.md)] polls maintenance mode settings only once every 5 minutes, there can be a delay in an object's scheduled removal from maintenance mode.
 
 ## Scheduling Maintenance Mode
  
@@ -160,3 +160,4 @@ The following procedures describes how to create a maintenance schedule for sele
 
 The new schedule will appear in the list of maintenance schedules and you can edit, disable, or delete a maintenance schedule from the list.  This can be accomplished by selecting the schedule from the list and choosing the corresponding option from the **Tasks** pane.    
          
+

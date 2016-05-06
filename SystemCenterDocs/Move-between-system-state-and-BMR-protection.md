@@ -19,9 +19,10 @@ You can migrate from system state protection to BMR protecting by modifying the 
 
 -   If you move from BMR protection to system state protection you’ll need more space on the recovery point volume.
 
-    [!INCLUDE[dpm2012short](../Token/dpm2012short_md.md)] might try to automatically grow the volume. If there is insufficient space in the storage pool, an error will be issued.
+    [!INCLUDE[dpm2012short](./Token/dpm2012short_md.md)] might try to automatically grow the volume. If there is insufficient space in the storage pool, an error will be issued.
 
--   If you move from BMR protection to system state protection you’ll need space on the protected computer because system state protection first writes the replica to the local computer and then transfers it to the [!INCLUDE[dpm2012short](../Token/dpm2012short_md.md)] server.
+-   If you move from BMR protection to system state protection you’ll need space on the protected computer because system state protection first writes the replica to the local computer and then transfers it to the [!INCLUDE[dpm2012short](./Token/dpm2012short_md.md)] server.
 
 -   If you are trying to remove BMR protection to free up disk space, you must stop protection of BMR and system state.
+
 

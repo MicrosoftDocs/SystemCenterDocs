@@ -11,7 +11,7 @@ ms.assetid: 36c98a41-36fe-4c1d-8582-3d7709be0882
 <?xml version="1.0" encoding="utf-8"?>
 <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://ddue.schemas.microsoft.com/authoring/2003/5 http://dduestorage.blob.core.windows.net/ddueschema/developer.xsd">
   <introduction>
-    <para>The Desktop Experience feature allows you to install a variety of applications and features that are not normally installed on a server. . If you are running <token>win8_server_2</token>, the following <token>win8_client_2</token> features are installed when you install Desktop Experience:</para>
+    <para>The Desktop Experience feature allows you to install a variety of applications and features that are not normally installed on a server. . If you are running <token>win8_server_./Token>, the following <token>win8_client_./Token> features are installed when you install Desktop Experience:</para>
     <list class="bullet">
       <listItem>
         <para>Windows Media Player</para>
@@ -44,7 +44,7 @@ ms.assetid: 36c98a41-36fe-4c1d-8582-3d7709be0882
         <para>Windows Store</para>
       </listItem>
     </list>
-    <para>If you are running <token>winblue_server_2</token>, the following <token>winblue_client_2</token> features are installed when you install Desktop Experience:</para>
+    <para>If you are running <token>winblue_server_./Token>, the following <token>winblue_client_./Token> features are installed when you install Desktop Experience:</para>
     <list class="bullet">
       <listItem>
         <para>Windows Media Player</para>
@@ -87,7 +87,7 @@ ms.assetid: 36c98a41-36fe-4c1d-8582-3d7709be0882
       </listItem>
     </list>
     <alert class="important">
-      <para>When you install Desktop Experience in <token>winblue_server_2</token>, the integrated search is on by default. This feature sends information to Microsoft. You can turn off the integrated search feature with the following steps:</para>
+      <para>When you install Desktop Experience in <token>winblue_server_./Token>, the integrated search is on by default. This feature sends information to Microsoft. You can turn off the integrated search feature with the following steps:</para>
     </alert>
     <procedure>
       <title>To turn off integrated search</title>
@@ -116,3 +116,4 @@ ms.assetid: 36c98a41-36fe-4c1d-8582-3d7709be0882
   </introduction>
   <relatedTopics />
 </developerConceptualDocument>
+

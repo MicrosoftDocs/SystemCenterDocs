@@ -11,22 +11,22 @@ ms.topic: article
 ms.assetid: 801c28e1-653c-4c70-8889-fb4e7d5c7ce3
 ---
 # Monitoring Linux Computers in Windows Azure by Using Operations Manager
-[!INCLUDE[omblue_1](../Token/omblue_1_md.md)] provides monitoring of Linux computers both in your data center and hosted as persistent virtual machines in Windows Azure. This topic describes considerations for monitoring of Linux virtual machines in Windows Azure.
+[!INCLUDE[omblue_1](./Token/omblue_1_md.md)] provides monitoring of Linux computers both in your data center and hosted as persistent virtual machines in Windows Azure. This topic describes considerations for monitoring of Linux virtual machines in Windows Azure.
 
 ## <a name="bkmk_topologies"></a>Supported Topologies
 Monitoring of Linux computers running as persistent virtual machines in Windows Azure is supported in the following topologies:
 
--   [!INCLUDE[omblue_2](../Token/omblue_2_md.md)] and supporting services \(SQL Server and Active Directory\) deployed in your on\-premises data center with a site\-to\-site VPN connection to the Windows Azure virtual network where the Linux virtual machines are deployed.
+-   [!INCLUDE[omblue_2](./Token/omblue_2_md.md)] and supporting services \(SQL Server and Active Directory\) deployed in your on\-premises data center with a site\-to\-site VPN connection to the Windows Azure virtual network where the Linux virtual machines are deployed.
 
     -   More information about Windows Azure site\-to\-site VPN connections can be found [here](http://go.microsoft.com/fwlink/?LinkId=325539).
 
--   [!INCLUDE[omblue_2](../Token/omblue_2_md.md)] and supporting services \(SQL Server and Active Directory\) deployed in Windows Azure, with virtual network connectivity between the Operations Manager Management Server and Linux virtual machines.
+-   [!INCLUDE[omblue_2](./Token/omblue_2_md.md)] and supporting services \(SQL Server and Active Directory\) deployed in Windows Azure, with virtual network connectivity between the Operations Manager Management Server and Linux virtual machines.
 
 > [!NOTE]
-> [!INCLUDE[omblue_2](../Token/omblue_2_md.md)] monitoring of Linux virtual machines in Windows Azure over the public Internet without a VPN connection is not a supported configuration.
+> [!INCLUDE[omblue_2](./Token/omblue_2_md.md)] monitoring of Linux virtual machines in Windows Azure over the public Internet without a VPN connection is not a supported configuration.
 
 ## Supported Linux Operating Systems
-All Linux operating systems and versions supported both by [!INCLUDE[omblue_1](../Token/omblue_1_md.md)] and Windows Azure are supported for monitoring in the [Supported Topologies](../Topic/Monitoring-Linux-Computers-in-Windows-Azure-by-Using-Operations-Manager.md#bkmk_topologies) section above.
+All Linux operating systems and versions supported both by [!INCLUDE[omblue_1](./Token/omblue_1_md.md)] and Windows Azure are supported for monitoring in the [Supported Topologies](./Monitoring-Linux-Computers-in-Windows-Azure-by-Using-Operations-Manager.md#bkmk_topologies) section above.
 
 For more information about supported Linux operating systems, see the following:
 
@@ -35,13 +35,13 @@ For more information about supported Linux operating systems, see the following:
 -   [Windows Azure supported Linux operating systems](http://go.microsoft.com/fwlink/?LinkID=325542)
 
 ## Certificate and Name Resolution Requirements
-Whether Linux computers are running on\-premises or in Windows Azure, the following requirements for [!INCLUDE[omblue_2](../Token/omblue_2_md.md)] monitoring of Linux computers apply:
+Whether Linux computers are running on\-premises or in Windows Azure, the following requirements for [!INCLUDE[omblue_2](./Token/omblue_2_md.md)] monitoring of Linux computers apply:
 
 -   The Management Server can resolve the fully\-qualified domain name and IP address of the managed Linux computer with forward and reverse DNS lookups.
 
 -   The agent certificate on the Linux computer is created with the fully\-qualified domain name \(for the Linux computer\) that the Management Server uses to identify the Linux computer.
 
-For Linux virtual machines deployed in Windows Azure, additional configuration may be required to meet the certificate configuration requirements, as the fully\-qualified domain name known locally to the Linux computer may not be the FQDN used to reach the Linux computer. The following options can be used to ensure that the [!INCLUDE[omblue_2](../Token/omblue_2_md.md)]agent is able to generate a certificate with the correct FQDN during agent installation.
+For Linux virtual machines deployed in Windows Azure, additional configuration may be required to meet the certificate configuration requirements, as the fully\-qualified domain name known locally to the Linux computer may not be the FQDN used to reach the Linux computer. The following options can be used to ensure that the [!INCLUDE[omblue_2](./Token/omblue_2_md.md)]agent is able to generate a certificate with the correct FQDN during agent installation.
 
 #### Option 1: Edit \/etc\/hosts
 
@@ -160,10 +160,10 @@ For Linux virtual machines deployed in Windows Azure, additional configuration m
 If the agent certificate was created with an incorrect fully\-qualified domain name for the Linux virtual machine, the **scxsslconfig** utility can be used to regenerate the certificate.  More information and troubleshooting steps can be found [here](http://go.microsoft.com/fwlink/?LinkID=325544).
 
 ## Additional Configuration
-The following additional configuration steps may be necessary when managing Linux virtual machines in Windows Azure with [!INCLUDE[omblue_2](../Token/omblue_2_md.md)].
+The following additional configuration steps may be necessary when managing Linux virtual machines in Windows Azure with [!INCLUDE[omblue_2](./Token/omblue_2_md.md)].
 
 ### Create a Group for Linux Computers hosted in Windows Azure
-To simplify override configuration of rules and monitors, it is recommended to create a Group in [!INCLUDE[omblue_2](../Token/omblue_2_md.md)] that contains the Linux computer instances that are hosted in Windows Azure.
+To simplify override configuration of rules and monitors, it is recommended to create a Group in [!INCLUDE[omblue_2](./Token/omblue_2_md.md)] that contains the Linux computer instances that are hosted in Windows Azure.
 
 1.  In the **Operations Console**, navigate to the **Authoring** pane.
 
@@ -226,4 +226,5 @@ The SUSE Linux Enterprise Server management packs include a default monitor for 
 -   [Create a Virtual Machine Running Linux](http://go.microsoft.com/fwlink/?LinkID=325551)
 
 -   [Windows Azure Name Resolution](http://go.microsoft.com/fwlink/?LinkID=325552)
+
 

@@ -11,11 +11,11 @@ ms.topic: article
 ms.assetid: 6c11d1e8-d320-4760-a462-0e31e8124492
 ---
 # How to Create a Catalog Item Group
-Catalog item groups are lists of catalog items that are used to secure the service catalog and provide access to users, based on membership in a corresponding [!INCLUDE[smshort](../Token/smshort_md.md)] user role. In the following procedure, you create a simple catalog item group. After you create the group, use an existing user role, or create a new user role, to provide access to catalog items that have been associated with the group.
+Catalog item groups are lists of catalog items that are used to secure the service catalog and provide access to users, based on membership in a corresponding [!INCLUDE[smshort](./Token/smshort_md.md)] user role. In the following procedure, you create a simple catalog item group. After you create the group, use an existing user role, or create a new user role, to provide access to catalog items that have been associated with the group.
 
 ### To create a catalog item group
 
-1.  In the [!INCLUDE[smcons](../Token/smcons_md.md)], select **Library**, and then click **Groups**.
+1.  In the [!INCLUDE[smcons](./Token/smcons_md.md)], select **Library**, and then click **Groups**.
 
 2.  In the **Tasks** pane under **Groups**, click **Create Catalog Group** to open the Create Group Wizard.
 
@@ -44,5 +44,6 @@ Catalog item groups are lists of catalog items that are used to secure the servi
 9. On the **Summary** page, review the information, and then click **Create**.
 
 10. On the **Completion** page, click **Close**.
+
 
 

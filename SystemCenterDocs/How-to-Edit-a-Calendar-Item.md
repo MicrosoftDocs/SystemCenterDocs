@@ -18,7 +18,7 @@ You edit a calendar item in Service Manager to update work days, work hours, and
 
 ### To edit a calendar item
 
-1.  In the [!INCLUDE[smcons](../Token/smcons_md.md)], click **Administration**.
+1.  In the [!INCLUDE[smcons](./Token/smcons_md.md)], click **Administration**.
 
 2.  In the **Administration** pane, expand **Service Level Management**, and then click **Calendar**.
 
@@ -35,4 +35,5 @@ You edit a calendar item in Service Manager to update work days, work hours, and
     -   **Holidays**
 
 5.  Click **OK** to close the **Create\/Edit Calendar** dialog box.
+
 

@@ -8,37 +8,37 @@ ms.topic: article
 ms.assetid: c716211e-43ad-41cc-a651-3c371752b485
 ---
 # Orchestrator_2
-Welcome to [!INCLUDE[orchlong](../Token/orchlong_md.md)]. Orchestrator is a workflow management solution for the data center. Orchestrator lets you automate the creation, monitoring, and deployment of resources in your environment.   This topic is intended solely to point you to information on various [!INCLUDE[orchshort](../Token/orchshort_md.md)] features.
+Welcome to [!INCLUDE[orchlong](./Token/orchlong_md.md)]. Orchestrator is a workflow management solution for the data center. Orchestrator lets you automate the creation, monitoring, and deployment of resources in your environment.   This topic is intended solely to point you to information on various [!INCLUDE[orchshort](./Token/orchshort_md.md)] features.
 
-The following topics provide information to help you deploy and use [!INCLUDE[orchshort](../Token/orchshort_md.md)].
+The following topics provide information to help you deploy and use [!INCLUDE[orchshort](./Token/orchshort_md.md)].
 
 ## In this release
 
--   [Release Notes for System Center 2012 - Orchestrator_1](../Topic/Release-Notes-for-System-Center-2012---Orchestrator_1.md)
+-   [Release Notes for System Center 2012 - Orchestrator_1](./Release-Notes-for-System-Center-2012---Orchestrator_1.md)
 
-## Learn [!INCLUDE[orchshort](../Token/orchshort_md.md)]
+## Learn [!INCLUDE[orchshort](./Token/orchshort_md.md)]
 
--   [Getting Started with System Center 2012 - Orchestrator](../Topic/Getting-Started-with-System-Center-2012---Orchestrator.md)
+-   [Getting Started with System Center 2012 - Orchestrator](./Getting-Started-with-System-Center-2012---Orchestrator.md)
 
-## Install and configure [!INCLUDE[orchshort](../Token/orchshort_md.md)]
+## Install and configure [!INCLUDE[orchshort](./Token/orchshort_md.md)]
 
 -   [Upgrading System Center 2012 \- Orchestrator to System Center 2012 SP1](assetId:///b36553d2-6029-4eb0-9365-56b2cd6e16a9)
 
--   [Deploying System Center 2012 - Orchestrator](../Topic/Deploying-System-Center-2012---Orchestrator.md)
+-   [Deploying System Center 2012 - Orchestrator](./Deploying-System-Center-2012---Orchestrator.md)
 
--   [Administering System Center 2012 - Orchestrator](../Topic/Administering-System-Center-2012---Orchestrator.md)
+-   [Administering System Center 2012 - Orchestrator](./Administering-System-Center-2012---Orchestrator.md)
 
 -   [Integration Packs for System Center 2012 \- Orchestrator &#91;Orch2012\_TechNet\_IP&#93;](assetId:///e6aff353-c364-4852-bfb7-9088407a7bd9)
 
-## Install and configure [!INCLUDE[spfshort](../Token/spfshort_md.md)]
+## Install and configure [!INCLUDE[spfshort](./Token/spfshort_md.md)]
 
--   [Service Provider Foundation](../Topic/Service-Provider-Foundation.md)
+-   [Service Provider Foundation](./Service-Provider-Foundation.md)
 
 ## Work with runbooks
 
--   [Using Runbooks in System Center 2012 - Orchestrator](../Topic/Using-Runbooks-in-System-Center-2012---Orchestrator.md)
+-   [Using Runbooks in System Center 2012 - Orchestrator](./Using-Runbooks-in-System-Center-2012---Orchestrator.md)
 
--   [Using the Orchestration Console in System Center 2012 - Orchestrator](../Topic/Using-the-Orchestration-Console-in-System-Center-2012---Orchestrator.md)
+-   [Using the Orchestration Console in System Center 2012 - Orchestrator](./Using-the-Orchestration-Console-in-System-Center-2012---Orchestrator.md)
 
 ## Downloadable documentation
 You can download [a copy of this technical documentation from the Microsoft Download Center](http://go.microsoft.com/fwlink/?LinkId=247109). However, for the most up\-to\-date information, always use the TechNet library.
@@ -54,13 +54,14 @@ The following table compares Orchestrator to the other Microsoft automation tool
 
 ## Reference information
 
--   [Runbook Activity Reference for System Center 2012 - Orchestrator](../Topic/Runbook-Activity-Reference-for-System-Center-2012---Orchestrator.md)
+-   [Runbook Activity Reference for System Center 2012 - Orchestrator](./Runbook-Activity-Reference-for-System-Center-2012---Orchestrator.md)
 
 -   [System Center 2012 \- Orchestrator SDK](http://go.microsoft.com/fwlink/p/?LinkId=230570)
 
 -   [System Center Orchestrator 2012 Beta Privacy Statement](assetId:///bab5f7fc-05bf-4c8c-ac49-53d60d3c1cd6)
 
--   [Glossary for System Center 2012 - Orchestrator](../Topic/Glossary-for-System-Center-2012---Orchestrator.md)
+-   [Glossary for System Center 2012 - Orchestrator](./Glossary-for-System-Center-2012---Orchestrator.md)
 
--   [Glossary for Opalis Integration Server 6.3](../Topic/Glossary-for-Opalis-Integration-Server-6.3.md)
+-   [Glossary for Opalis Integration Server 6.3](./Glossary-for-Opalis-Integration-Server-6.3.md)
+
 

@@ -35,7 +35,7 @@ The default list of exception handlers includes:
 
 -   System.Windows.Forms.DataGridView.OnDataError
 
-For [!INCLUDE[sc2012sp1_short](../Token/sc2012sp1_short_md.md)] these resources are included:
+For [!INCLUDE[sc2012sp1_short](./Token/sc2012sp1_short_md.md)] these resources are included:
 
 -   Microsoft.Office.Server.Data.SqlSession.LogException
 
@@ -67,7 +67,7 @@ For [!INCLUDE[sc2012sp1_short](../Token/sc2012sp1_short_md.md)] these resources 
 
 #### To add an exception handler
 
-1.  To open the .NET Application Performance Monitoring template, in the [!INCLUDE[om12short](../Token/om12short_md.md)] console, in the navigation pane, click the **Authoring** button, click **Management Pack Templates**, and then click **.NET Application Performance Monitoring**.
+1.  To open the .NET Application Performance Monitoring template, in the [!INCLUDE[om12short](./Token/om12short_md.md)] console, in the navigation pane, click the **Authoring** button, click **Management Pack Templates**, and then click **.NET Application Performance Monitoring**.
 
 2.  Right click the application group you want to modify, and then select **Properties**.
 
@@ -87,7 +87,7 @@ For [!INCLUDE[sc2012sp1_short](../Token/sc2012sp1_short_md.md)] these resources 
 
 #### To edit an exception handler
 
-1.  Open the .NET Application Performance Monitoring template. In the [!INCLUDE[om12short](../Token/om12short_md.md)] console, in the navigation pane, click the **Authoring** button, click **Management Pack Templates**, and then click **.NET Application Performance Monitoring**.
+1.  Open the .NET Application Performance Monitoring template. In the [!INCLUDE[om12short](./Token/om12short_md.md)] console, in the navigation pane, click the **Authoring** button, click **Management Pack Templates**, and then click **.NET Application Performance Monitoring**.
 
 2.  Right click the application group you want to modify and select **Properties**.
 
@@ -104,7 +104,7 @@ For [!INCLUDE[sc2012sp1_short](../Token/sc2012sp1_short_md.md)] these resources 
 
 #### To remove an exception handler
 
-1.  Open the .NET Application Performance Monitoring template. In the [!INCLUDE[om12short](../Token/om12short_md.md)] console, in the navigation pane, click the **Authoring** button, click **Management Pack Templates**, and then click **.NET Application Performance Monitoring**.
+1.  Open the .NET Application Performance Monitoring template. In the [!INCLUDE[om12short](./Token/om12short_md.md)] console, in the navigation pane, click the **Authoring** button, click **Management Pack Templates**, and then click **.NET Application Performance Monitoring**.
 
 2.  Right click the application group you want to modify and select **Properties**.
 
@@ -113,4 +113,5 @@ For [!INCLUDE[sc2012sp1_short](../Token/sc2012sp1_short_md.md)] these resources 
 4.  On the **Advanced settings** page, click **Critical Exceptions**. This opens the **Exception handlers list** page where you can remove exception handlers.
 
 5.  To remove an exception handler, select the exception handler you want to remove, click **Remove**, and then click **OK**.
+
 

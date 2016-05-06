@@ -28,7 +28,7 @@ The *parameter name* specifies a parameter from the data source for the rule or 
 The sections below provide the parameter name syntax for different kinds of data sources.
 
 #### Windows Events
-Windows events provide a prompt in the expression dialog box to select individual properties so you will typically not have to understand the actual syntax. The list of properties with their description is at [Windows Events](../Topic/Windows-Events.md).
+Windows events provide a prompt in the expression dialog box to select individual properties so you will typically not have to understand the actual syntax. The list of properties with their description is at [Windows Events](./Windows-Events.md).
 
 Event Description is not included in the dropdown list for property name. It can be used by typing in **EventDescription**. Before using Event Description though, you should verify whether the information that you are using in the description is available in parameters. Event descriptions are often made up of standard text with unique information included through parameters. Parameters are more efficient that the full description since they contain a specific piece of information.
 
@@ -47,7 +47,7 @@ For a Generic CSV Text Log, each field of the entry is referred to with a separa
 Params/Param[#]
 ```
 
-Further details on text log expressions are available at [Event Expression](../Topic/Text-Logs.md#Expression).
+Further details on text log expressions are available at [Event Expression](./Text-Logs.md#Expression).
 
 #### WMI Events
 WMI Events do not provide a prompt for the parameter name, so you need to type it in using the appropriate syntax.
@@ -60,10 +60,10 @@ The syntax for properties from a WMI event is as follows:
 Collection[@Name='TargetInstance']/Property[@Name='Caption']
 ```
 
-Further details on WMI Events are available at [WMI Events](../Topic/WMI-Events.md).
+Further details on WMI Events are available at [WMI Events](./WMI-Events.md).
 
 #### Syslog Events
-Syslog Events do not provide a prompt for the parameter name, so you need to type it in using the appropriate syntax. The syntax for the properties of a syslog event is simply the name of the property. These properties are listed in [Syslog Events](../Topic/Syslog-Events.md).
+Syslog Events do not provide a prompt for the parameter name, so you need to type it in using the appropriate syntax. The syntax for the properties of a syslog event is simply the name of the property. These properties are listed in [Syslog Events](./Syslog-Events.md).
 
 #### SNMP Events
 SNMP probes and traps do not provide a prompt for the parameter name, so you need to type it in using the appropriate syntax. The syntax for the properties in the header of an SNMP probe or trap is simply the name of the property.
@@ -86,7 +86,7 @@ When you have multiple OIDs and want to refer to each by the specific OID:
 SnmpVarBinds/SnmpVarBind[OID="OID"]/ElementName
 ```
 
-Further details on SNMP events are listed in [SNMP Events](../Topic/SNMP-Events.md).
+Further details on SNMP events are listed in [SNMP Events](./SNMP-Events.md).
 
 #### Scripts
 Scripts do not provide a prompt for the parameter name, so you need to type it in using the appropriate syntax. Monitoring scripts output information in the form of a property bag that includes one or more values. The parameter specifies the name of one of the values from the property bag using the following syntax:
@@ -95,7 +95,7 @@ Scripts do not provide a prompt for the parameter name, so you need to type it i
 Property[@Name="PropertyName"]
 ```
 
-Further details on monitoring scripts are available at [Script Monitors and Rules](../Topic/Script-Monitors-and-Rules.md).
+Further details on monitoring scripts are available at [Script Monitors and Rules](./Script-Monitors-and-Rules.md).
 
 ### Operator
 The *operator* specifies the comparison that will be performed between the value from the data property specified in **Parameter Name** and the value specified in **Value**. Possible values are shown in the following table.
@@ -170,4 +170,5 @@ The following expression identifies a numeric value from a script called “Perf
 |---------------------------------------------------------|------------|---------|
 |Property\[@Name\="PerfValue"\]|Greater than|10|
 |Property\[@Name\="PerfValue"\]|Less than|20|
+
 

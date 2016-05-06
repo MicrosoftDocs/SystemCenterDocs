@@ -11,16 +11,16 @@ ms.topic: article
 ms.assetid: e7c94f0d-67f1-4c79-8bb0-b9b7fe72c236
 ---
 # Overview: creating hosts or host clusters from bare metal with VMM
-The procedures in this section describe how to use [!INCLUDE[vmm12sp1_long](../Token/vmm12sp1_long_md.md)] to discover physical computers \(bare\-metal computers\) on the network, automatically install one of the operating systems listed in this topic, and provision the computers into managed Hyper\-V hosts or host clusters.
+The procedures in this section describe how to use [!INCLUDE[vmm12sp1_long](./Token/vmm12sp1_long_md.md)] to discover physical computers \(bare\-metal computers\) on the network, automatically install one of the operating systems listed in this topic, and provision the computers into managed Hyper\-V hosts or host clusters.
 
 ## Video overview of host provisioning
 View the video overview here: [Quickly create multiple Hyper-V hosts in Virtual Machine Manager](http://channel9.msdn.com/blogs/System-Center-Help-Videos/Quickly-create-multiple-Hyper-V-hosts-in-Virtual-Machine-Manager)
 
 The following sections provide more detail about the process shown in the video:
 
--   [Workflow and deployment process](../Topic/Overview--creating-hosts-or-host-clusters-from-bare-metal-with-VMM.md#BKMK_workflow)
+-   [Workflow and deployment process](./Overview--creating-hosts-or-host-clusters-from-bare-metal-with-VMM.md#BKMK_workflow)
 
--   [Example scenario overview](../Topic/Overview--creating-hosts-or-host-clusters-from-bare-metal-with-VMM.md#BKMK_example)
+-   [Example scenario overview](./Overview--creating-hosts-or-host-clusters-from-bare-metal-with-VMM.md#BKMK_example)
 
 ## <a name="BKMK_workflow"></a>Workflow and deployment process
 The following sequences describes the workflow and deployment process for provisioning bare\-metal computers into managed Hyper\-V hosts or host clusters. The workflow has two main parts:
@@ -39,17 +39,17 @@ The following sequences describes the workflow and deployment process for provis
 
     -   Configuring the logon credentials and IP address settings for the BMC on each computer.
 
-    For more information, see [Prerequisites: creating hosts or host clusters from bare metal with VMM](../Topic/Prerequisites--creating-hosts-or-host-clusters-from-bare-metal-with-VMM.md).
+    For more information, see [Prerequisites: creating hosts or host clusters from bare metal with VMM](./Prerequisites--creating-hosts-or-host-clusters-from-bare-metal-with-VMM.md).
 
 2.  Create Domain Name System \(DNS\) entries and Active Directory computer accounts for the computer names that will be provisioned, and allow time for DNS replication to occur.
 
     This step is not required, but it is strongly recommended in an environment where you have multiple DNS servers, where DNS replication may take some time.
 
-3.  Prepare the PXE server environment, and add the PXE server to [!INCLUDE[vmm12short](../Token/vmm12short_md.md)] management, as described in [Prerequisites: creating hosts or host clusters from bare metal with VMM](../Topic/Prerequisites--creating-hosts-or-host-clusters-from-bare-metal-with-VMM.md) and [How to add a PXE server to VMM](../Topic/How-to-add-a-PXE-server-to-VMM.md).
+3.  Prepare the PXE server environment, and add the PXE server to [!INCLUDE[vmm12short](./Token/vmm12short_md.md)] management, as described in [Prerequisites: creating hosts or host clusters from bare metal with VMM](./Prerequisites--creating-hosts-or-host-clusters-from-bare-metal-with-VMM.md) and [How to add a PXE server to VMM](./How-to-add-a-PXE-server-to-VMM.md).
 
-4.  Add the required resources to the [!INCLUDE[vmm12short](../Token/vmm12short_md.md)] library.
+4.  Add the required resources to the [!INCLUDE[vmm12short](./Token/vmm12short_md.md)] library.
 
-    These resources include a generalized virtual hard disk with an appropriate operating system \(as listed in [Prerequisites: creating hosts or host clusters from bare metal with VMM](../Topic/Prerequisites--creating-hosts-or-host-clusters-from-bare-metal-with-VMM.md)\) that will be used as the base image, and optional driver files to add to the operating system during installation.
+    These resources include a generalized virtual hard disk with an appropriate operating system \(as listed in [Prerequisites: creating hosts or host clusters from bare metal with VMM](./Prerequisites--creating-hosts-or-host-clusters-from-bare-metal-with-VMM.md)\) that will be used as the base image, and optional driver files to add to the operating system during installation.
 
 5.  In the library, create one or more physical computer profiles that include:
 
@@ -59,7 +59,7 @@ The following sequences describes the workflow and deployment process for provis
 
     -   Operating system configuration settings.
 
-    For more information, see [How to create a physical computer profile to provision hosts or host cluster nodes from bare metal in VMM](../Topic/How-to-create-a-physical-computer-profile-to-provision-hosts-or-host-cluster-nodes-from-bare-metal-in-VMM.md).
+    For more information, see [How to create a physical computer profile to provision hosts or host cluster nodes from bare metal in VMM](./How-to-create-a-physical-computer-profile-to-provision-hosts-or-host-cluster-nodes-from-bare-metal-in-VMM.md).
 
 ### <a name="BKMK_Wiz"></a>2. Run the appropriate wizard and scripts
 
@@ -67,9 +67,9 @@ The following sequences describes the workflow and deployment process for provis
 
     |To create a Hyper\-V host, run the Add Resources Wizard|To create a Hyper\-V host cluster, run the Create Hyper\-V Cluster Wizard|
     |-----------------------------------------------------------|-----------------------------------------------------------------------------|
-    |Use the wizard to:<br /><br />-   Discover the physical computers.<br />-   Configure settings such as the host group and the physical computer profile to use.<br />-   Configure custom deployment settings.<br />-   Start deploying the operating system and Hyper\-V.<br /><br />For more information, see [How to deploy Hyper-V hosts from bare metal in VMM](../Topic/How-to-deploy-Hyper-V-hosts-from-bare-metal-in-VMM.md).|Use the wizard to:<br /><br />-   Discover the physical computers.<br />-   Configure settings such as the host group and the physical computer profile to use.<br />-   Configure custom deployment settings.<br />-   Start deploying the host cluster.<br /><br />For more information, see [How to deploy a host cluster from bare metal in VMM](../Topic/How-to-deploy-a-host-cluster-from-bare-metal-in-VMM.md).|
+    |Use the wizard to:<br /><br />-   Discover the physical computers.<br />-   Configure settings such as the host group and the physical computer profile to use.<br />-   Configure custom deployment settings.<br />-   Start deploying the operating system and Hyper\-V.<br /><br />For more information, see [How to deploy Hyper-V hosts from bare metal in VMM](./How-to-deploy-Hyper-V-hosts-from-bare-metal-in-VMM.md).|Use the wizard to:<br /><br />-   Discover the physical computers.<br />-   Configure settings such as the host group and the physical computer profile to use.<br />-   Configure custom deployment settings.<br />-   Start deploying the host cluster.<br /><br />For more information, see [How to deploy a host cluster from bare metal in VMM](./How-to-deploy-a-host-cluster-from-bare-metal-in-VMM.md).|
 
-2.  During the deployment process \(host or host cluster\), the [!INCLUDE[vmm12short](../Token/vmm12short_md.md)] management server restarts the physical computers.
+2.  During the deployment process \(host or host cluster\), the [!INCLUDE[vmm12short](./Token/vmm12short_md.md)] management server restarts the physical computers.
 
     The management servers restarts the computers by issuing “Power Off” and “Power On” commands to the Baseboard Management Controller \(BMC\) using out\-of\-band management. When the physical computers restart, the PXE server responds to the boot requests from the physical computers.
 
@@ -89,14 +89,14 @@ The following sequences describes the workflow and deployment process for provis
 
     |Hyper\-V hosts|Hyper\-V host clusters|
     |------------------|--------------------------|
-    |Hyper\-V role.|-   Hyper\-V role.<br />-   Failover cluster feature.<br />-   Multipath I\/O \(MPIO\) feature.<br /><br />After the [!INCLUDE[vmm12short](../Token/vmm12short_md.md)] management server configures the cluster nodes, it creates the cluster.|
+    |Hyper\-V role.|-   Hyper\-V role.<br />-   Failover cluster feature.<br />-   Multipath I\/O \(MPIO\) feature.<br /><br />After the [!INCLUDE[vmm12short](./Token/vmm12short_md.md)] management server configures the cluster nodes, it creates the cluster.|
 
-5.  The [!INCLUDE[vmm12short](../Token/vmm12short_md.md)] management server runs any post\-deployment scripts, restarting the computers as specified by the scripts.
+5.  The [!INCLUDE[vmm12short](./Token/vmm12short_md.md)] management server runs any post\-deployment scripts, restarting the computers as specified by the scripts.
 
-6.  At the end of the deployment process, the [!INCLUDE[vmm12short](../Token/vmm12short_md.md)] management server restarts the computer or computers.
+6.  At the end of the deployment process, the [!INCLUDE[vmm12short](./Token/vmm12short_md.md)] management server restarts the computer or computers.
 
 ## <a name="BKMK_example"></a>Example naming overview
-The example names in this section are intended to demonstrate the concepts used when provisioning bare\-metal computers in [!INCLUDE[vmm12short](../Token/vmm12short_md.md)].
+The example names in this section are intended to demonstrate the concepts used when provisioning bare\-metal computers in [!INCLUDE[vmm12short](./Token/vmm12short_md.md)].
 
 The following table summarizes the example names that could be used in this scenario. Some of these names are also used in examples in procedures in this section.
 
@@ -113,8 +113,9 @@ The following table summarizes the example names that could be used in this scen
 |Physical computer profiles|**WS12Ent Hyper\-V Hosts \- Static**<br /><br />**WS12Ent Hyper\-V Hosts \- DHCP**|
 
 ## See Also
-[Deploying Hyper-V hosts or host clusters from bare metal with VMM](../Topic/Deploying-Hyper-V-hosts-or-host-clusters-from-bare-metal-with-VMM.md)
-[Managing Hyper-V hosts and host clusters with VMM](../Topic/Managing-Hyper-V-hosts-and-host-clusters-with-VMM.md)
-[Managing hosts and host clusters with VMM](../Topic/Managing-hosts-and-host-clusters-with-VMM.md)
-[Managing fabric resources with VMM](../Topic/Managing-fabric-resources-with-VMM.md)
+[Deploying Hyper-V hosts or host clusters from bare metal with VMM](./Deploying-Hyper-V-hosts-or-host-clusters-from-bare-metal-with-VMM.md)
+[Managing Hyper-V hosts and host clusters with VMM](./Managing-Hyper-V-hosts-and-host-clusters-with-VMM.md)
+[Managing hosts and host clusters with VMM](./Managing-hosts-and-host-clusters-with-VMM.md)
+[Managing fabric resources with VMM](./Managing-fabric-resources-with-VMM.md)
+
 

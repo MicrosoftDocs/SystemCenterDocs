@@ -12,13 +12,13 @@ ms.assetid: 7b94a5c9-b426-4536-98b2-5fdc28455b80
 robots: noindex,nofollow
 ---
 # How to Create a Queue
-You can create queues in [!INCLUDE[smlong12](../Token/smlong12_md.md)] to create a grouping of related work items, such as incidents and change requests. For example, you can create a queue that you use for escalation, named **Exchange Send Problems Queue**, and then escalate that type of incident to that queue.
+You can create queues in [!INCLUDE[smlong12](./Token/smlong12_md.md)] to create a grouping of related work items, such as incidents and change requests. For example, you can create a queue that you use for escalation, named **Exchange Send Problems Queue**, and then escalate that type of incident to that queue.
 
 You can use the following procedure to create a queue.
 
 ### To create a queue
 
-1.  In the [!INCLUDE[smcons](../Token/smcons_md.md)], click **Library**.
+1.  In the [!INCLUDE[smcons](./Token/smcons_md.md)], click **Library**.
 
 2.  In the **Library** pane, expand **Library**, and then click **Queues**.
 
@@ -44,9 +44,10 @@ You can use the following procedure to create a queue.
 
 ### To validate the creation of a queue
 
-1.  In the [!INCLUDE[smcons](../Token/smcons_md.md)], verify that the new queue appears in the **Queues** pane.
+1.  In the [!INCLUDE[smcons](./Token/smcons_md.md)], verify that the new queue appears in the **Queues** pane.
 
 2.  In the **Tasks** pane, click **Properties**, and then verify that the queue appears as you defined it.
 
-![](../Image/PSSymbol.gif)You can use a Windows PowerShell command to complete this task. For information about how to use Windows PowerShell to retrieve queues that are defined in [!INCLUDE[smshort](../Token/smshort_md.md)], see [Get\-SCSMQueue](http://go.microsoft.com/fwlink/p/?LinkId=225331).
+![](/Image/PSSymbol.gif)You can use a Windows PowerShell command to complete this task. For information about how to use Windows PowerShell to retrieve queues that are defined in [!INCLUDE[smshort](./Token/smshort_md.md)], see [Get\-SCSMQueue](http://go.microsoft.com/fwlink/p/?LinkId=225331).
+
 

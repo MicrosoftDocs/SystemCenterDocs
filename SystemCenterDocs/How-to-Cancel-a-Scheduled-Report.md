@@ -26,9 +26,10 @@ Use the following procedure to cancel scheduled reports.
 5.  In the **System Center Operations Manager** dialog box, click **OK** to confirm the deletion of your schedule or click **No** to keep your schedule.
 
 ## See Also
-[Scheduling Reports](../Topic/Scheduling-Reports.md)
-[How to Create a Report Schedule](../Topic/How-to-Create-a-Report-Schedule.md)
-[How to Email Scheduled Reports](../Topic/How-to-Email-Scheduled-Reports.md)
-[How to Schedule the Delivery of a Report to the SQL Report Server Cache](../Topic/How-to-Schedule-the-Delivery-of-a-Report-to-the-SQL-Report-Server-Cache.md)
-[How to Edit a Scheduled Report](../Topic/How-to-Edit-a-Scheduled-Report.md)
+[Scheduling Reports](./Scheduling-Reports.md)
+[How to Create a Report Schedule](./How-to-Create-a-Report-Schedule.md)
+[How to Email Scheduled Reports](./How-to-Email-Scheduled-Reports.md)
+[How to Schedule the Delivery of a Report to the SQL Report Server Cache](./How-to-Schedule-the-Delivery-of-a-Report-to-the-SQL-Report-Server-Cache.md)
+[How to Edit a Scheduled Report](./How-to-Edit-a-Scheduled-Report.md)
+
 

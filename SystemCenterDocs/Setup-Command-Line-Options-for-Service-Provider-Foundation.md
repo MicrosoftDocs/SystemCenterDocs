@@ -11,9 +11,9 @@ ms.topic: article
 ms.assetid: e42b1ed8-e53e-4032-b34d-0134b0d9c453
 ---
 # Setup Command-Line Options for Service Provider Foundation
-You can use command\-line options with the [!INCLUDE[spflong](../Token/spflong_md.md)] setup to perform an unattended installation by using the **–Silent** option. All options that you want to specify must be in a response file \(text file\) whose path is specified after the **–Silent** option, except for **–Silent –Uninstall** which performs an unattended uninstallation. The options can be delineated by either one line for each option, or a single space separating each option.
+You can use command\-line options with the [!INCLUDE[spflong](./Token/spflong_md.md)] setup to perform an unattended installation by using the **–Silent** option. All options that you want to specify must be in a response file \(text file\) whose path is specified after the **–Silent** option, except for **–Silent –Uninstall** which performs an unattended uninstallation. The options can be delineated by either one line for each option, or a single space separating each option.
 
-This topic requires that you have located the **setup.exe** file for [!INCLUDE[spfshort](../Token/spfshort_md.md)] in the installation media for [!INCLUDE[orchshort](../Token/orchshort_md.md)].
+This topic requires that you have located the **setup.exe** file for [!INCLUDE[spfshort](./Token/spfshort_md.md)] in the installation media for [!INCLUDE[orchshort](./Token/orchshort_md.md)].
 
 ## Setup Command\-Line Options
 The **\-Silent** option must be specified followed by the name of the response file, or followed by the **\-Uninstall** option:
@@ -92,7 +92,7 @@ The following table describes the command\-line options:
 |**\-UseMicrosoftUpdate**|Use Microsoft Update to check for updates.|
 |**\-SpecifyCertificate**|Specify true to use an existing certificate or false to automatically generate a self\-signed certificate. If you specify true, you must also specify a value for the **CertificateSerialNumber** option.|
 |**\-CertificateSerialNumber**|The serial number of the certificate used by IIS for HTTPS authentication. Must not contain any spaces. You can omit this option if you specified the  **SpecifyCertificate** option as false.|
-|\[**\-DatabaseServer** <*ServerName*>\]|The name of the server that contains the [!INCLUDE[spfshort](../Token/spfshort_md.md)] database. Use localhost if the database is on the same computer on which you are installing [!INCLUDE[spfshort](../Token/spfshort_md.md)].|
+|\[**\-DatabaseServer** <*ServerName*>\]|The name of the server that contains the [!INCLUDE[spfshort](./Token/spfshort_md.md)] database. Use localhost if the database is on the same computer on which you are installing [!INCLUDE[spfshort](./Token/spfshort_md.md)].|
 |\[**\-CertificationStore**\]|The store location of the certificate.|
 |\[**\-InstallFolder** <*InstallFolder*>\]|The path to the directory to install the product. The path must not contain any spaces.|
 |\[**\-WebSitePortNumber** <*PortNumber*>\]|The port number for the web service.|
@@ -112,9 +112,10 @@ The following table describes the command\-line options:
     Create a directory named "{97585be5\-93f3\-41eb\-8b19\-34f5fe52879d}" in the **C:\\ProgramData\\Package Cache\\** directory and run the setup command again.
 
 ## See Also
-[How to Install Service Provider Foundation for System Center 2012 R2](../Topic/How-to-Install-Service-Provider-Foundation-for-System-Center-2012-R2.md)
-[How to Uninstall Service Provider Foundation](../Topic/How-to-Uninstall-Service-Provider-Foundation.md)
-[Deploying Service Provider Foundation](../Topic/Deploying-Service-Provider-Foundation.md)
-[Administering Service Provider Foundation](../Topic/Administering-Service-Provider-Foundation.md)
-[Architecture Overview of Service Provider Foundation](../Topic/Architecture-Overview-of-Service-Provider-Foundation.md)
+[How to Install Service Provider Foundation for System Center 2012 R2](./How-to-Install-Service-Provider-Foundation-for-System-Center-2012-R2.md)
+[How to Uninstall Service Provider Foundation](./How-to-Uninstall-Service-Provider-Foundation.md)
+[Deploying Service Provider Foundation](./Deploying-Service-Provider-Foundation.md)
+[Administering Service Provider Foundation](./Administering-Service-Provider-Foundation.md)
+[Architecture Overview of Service Provider Foundation](./Architecture-Overview-of-Service-Provider-Foundation.md)
+
 

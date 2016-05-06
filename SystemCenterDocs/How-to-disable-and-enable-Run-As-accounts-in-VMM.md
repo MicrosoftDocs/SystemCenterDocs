@@ -8,11 +8,11 @@ ms.topic: article
 ms.assetid: 2a631141-cf10-4200-94ed-f539098d73cd
 ---
 # How to disable and enable Run As accounts in VMM
-To temporarily make a Run As account unavailable for use in [!INCLUDE[vmm12sp1_long](../Token/vmm12sp1_long_md.md)], you can disable the account. To make the Run As account available for use again, enable the account.
+To temporarily make a Run As account unavailable for use in [!INCLUDE[vmm12sp1_long](./Token/vmm12sp1_long_md.md)], you can disable the account. To make the Run As account available for use again, enable the account.
 
 **Account requirements** Administrators and delegated administrators can disable and enable Run As accounts. Delegated administrators can only disable and enable Run As accounts in the scope of their user role.
 
-### To disable a Run As account in [!INCLUDE[vmm12short](../Token/vmm12short_md.md)]
+### To disable a Run As account in [!INCLUDE[vmm12short](./Token/vmm12short_md.md)]
 
 1.  Open the **Settings** workspace.
 
@@ -35,6 +35,7 @@ The **Enabled** status of the Run As account changes to a red X. The account is 
 4.  On the **Home** tab, in the **Run As account** group, click **Enable**.
 
 ## See Also
-[Configuring Run As accounts in VMM](../Topic/Configuring-Run-As-accounts-in-VMM.md)
-[Securing VMM resources](../Topic/Securing-VMM-resources.md)
+[Configuring Run As accounts in VMM](./Configuring-Run-As-accounts-in-VMM.md)
+[Securing VMM resources](./Securing-VMM-resources.md)
+
 

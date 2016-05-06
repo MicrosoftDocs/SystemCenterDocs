@@ -12,14 +12,14 @@ ms.assetid: f14fe5e7-2957-4cd5-b9ab-19d9de8d1ec6
 robots: noindex,nofollow
 ---
 # How to Configure Release Management Settings
-The [!INCLUDE[smlong12](../Token/smlong12_md.md)] Administrator configures release management settings by using the following procedure.
+The [!INCLUDE[smlong12](./Token/smlong12_md.md)] Administrator configures release management settings by using the following procedure.
 
 > [!NOTE]
 > Revising the release record prefix does not affect existing release records.
 
 ### To configure release management settings
 
-1.  In the [!INCLUDE[smcons](../Token/smcons_md.md)], click **Administration**.
+1.  In the [!INCLUDE[smcons](./Token/smcons_md.md)], click **Administration**.
 
 2.  In the **Administration** pane, expand **Administration**, and then click **Settings**.
 
@@ -36,4 +36,5 @@ The [!INCLUDE[smlong12](../Token/smlong12_md.md)] Administrator configures relea
     3.  If you want to change the maximum size of files that you attach to a release record, change the default value in the **Maximum size \(KB\)** box. For example, type **300**.
 
 6.  Click **OK** to close the **Release Management Settings** dialog box.
+
 

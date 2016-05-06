@@ -13,7 +13,7 @@ ms.assetid: 21f4a15d-de90-4bd0-aa38-682d8038ce50
 # User Roles for Application Performance Monitoring
 
 ## .NET Application Performance Monitoring Tasks and User Roles
-This table shows the [!INCLUDE[om12long](../Token/om12long_md.md)] .NET Application Performance Monitoring tasks and the user roles with their permissions.
+This table shows the [!INCLUDE[om12long](./Token/om12long_md.md)] .NET Application Performance Monitoring tasks and the user roles with their permissions.
 
 Legend:
 
@@ -29,4 +29,5 @@ Legend:
 
 > [!NOTE]
 > \* The Application Monitoring Operator role and Report Operator role are both required to access Application Advisor.
+
 

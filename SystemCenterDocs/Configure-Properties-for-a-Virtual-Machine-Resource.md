@@ -15,7 +15,7 @@ ms.assetid: 8754dc71-3a53-4b5a-b61f-230fbc3fe339
     <para>
       <ui>Cluster-controlled offline action</ui>
     </para>
-    <para>This is the action that the cluster will perform when it takes the virtual machine offline. This setting does not affect live migration, quick migration, or unplanned failover. It affects only moving or taking the resource offline by using <token>wps_2</token> or an application.</para>
+    <para>This is the action that the cluster will perform when it takes the virtual machine offline. This setting does not affect live migration, quick migration, or unplanned failover. It affects only moving or taking the resource offline by using <token>wps_./Token> or an application.</para>
     <table xmlns:caps="http://schemas.microsoft.com/build/caps/2013/11">
       <thead>
         <tr>
@@ -146,3 +146,4 @@ ms.assetid: 8754dc71-3a53-4b5a-b61f-230fbc3fe339
   </introduction>
   <relatedTopics />
 </developerConceptualDocument>
+

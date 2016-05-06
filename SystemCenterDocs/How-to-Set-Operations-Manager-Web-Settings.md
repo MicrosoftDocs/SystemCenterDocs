@@ -15,7 +15,7 @@ Use the following procedures to set the web settings of System Center Operations
 
 ### To set Operations Manager web settings
 
-1.  In the [!INCLUDE[smcons](../Token/smcons_md.md)], click **Administration**.
+1.  In the [!INCLUDE[smcons](./Token/smcons_md.md)], click **Administration**.
 
 2.  In the **Administration** pane, expand **Administration**, and then click **Settings**.
 
@@ -30,4 +30,5 @@ Use the following procedures to set the web settings of System Center Operations
 ### To validate Operations Manager web settings
 
 -   Make sure that you can access the web console server by entering **http:\/\/\<servername\>:51908** into your browser, where \<servername\> is the name of the computer hosting the web console server.
+
 

@@ -11,7 +11,7 @@ ms.topic: article
 ms.assetid: 46d707f5-7500-4a87-8e35-ed24f8b33ae5
 ---
 # Grant Visio Services with Read-Only Operator Permissions
-In order for Visio Services to refresh the diagrams that are published and connected to [!INCLUDE[om12short](../Token/om12short_md.md)] data, the Visio Services service application must be configured with credentials that have access to the management server. This is because the Visio Services service application is executing the data provider that is responsible for returning the updated dataset from the management server.
+In order for Visio Services to refresh the diagrams that are published and connected to [!INCLUDE[om12short](./Token/om12short_md.md)] data, the Visio Services service application must be configured with credentials that have access to the management server. This is because the Visio Services service application is executing the data provider that is responsible for returning the updated dataset from the management server.
 
 The easiest way to configure this is to make the account that Visio Services is running as a Read\-Only Operator on the management server.
 
@@ -38,4 +38,5 @@ If you need to determine the account that is configured for Visio Services, use 
 5.  On the **Select User or Groups** page, enter the account that is configured for Service Application Pool, and then click **OK**.
 
 6.  Click **Apply**, and then click **OK** to close the **Operations Manager Read\-Only Operators \-User Role Properties** dialog box.
+
 

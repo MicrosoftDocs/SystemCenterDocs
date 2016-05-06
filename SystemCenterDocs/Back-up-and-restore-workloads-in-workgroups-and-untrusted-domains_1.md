@@ -8,7 +8,7 @@ ms.topic: article
 ms.assetid: 86d7facb-e96c-463e-a03b-78c2290e6fb2
 ---
 # Back up and restore workloads in workgroups and untrusted domains_1
-[!INCLUDE[dpm2012long](../Token/dpm2012long_md.md)] can protect computers that are in untrusted domains or workgroups. You can authenticate these computers using a local user account \(NTLM authentication\), or using certificates. You set up protection as follows:
+[!INCLUDE[dpm2012long](./Token/dpm2012long_md.md)] can protect computers that are in untrusted domains or workgroups. You can authenticate these computers using a local user account \(NTLM authentication\), or using certificates. You set up protection as follows:
 
 1.  **Install a certificate**—If you want to use certificate authentication install a certificate on the DPM server and on the computer you want to protect.
 
@@ -20,9 +20,9 @@ ms.assetid: 86d7facb-e96c-463e-a03b-78c2290e6fb2
 
 Before you started check the supported protection scenarios in the table below. Then follow the instructions depending which type of authentication you want to use:
 
--   [Set up protection with NTLM authentication](../Topic/Set-up-protection-with-NTLM-authentication.md)
+-   [Set up protection with NTLM authentication](./Set-up-protection-with-NTLM-authentication.md)
 
--   [Set up protection with certificate authentication](../Topic/Set-up-protection-with-certificate-authentication.md)
+-   [Set up protection with certificate authentication](./Set-up-protection-with-certificate-authentication.md)
 
 ## Supported protection scenarios
 
@@ -51,4 +51,5 @@ Before you started check the supported protection scenarios in the table below. 
 |Agent installation|Agent installed on protected computer|
 |Perimeter network|Perimeter network protection not supported.|
 |IPSEC|Ensure IPSEC doesn’t block communications.|
+
 

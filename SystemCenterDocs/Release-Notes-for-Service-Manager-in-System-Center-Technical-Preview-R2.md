@@ -9,14 +9,14 @@ ms.assetid: 8f131fe4-d13a-4139-850d-de53b602c491
 robots: noindex,nofollow
 ---
 # Release Notes for Service Manager in System Center Technical Preview R2
-Before you install and use [!INCLUDE[smshort12](../Token/smshort12_md.md)] in [!INCLUDE[sc2012r2_1](../Token/sc2012r2_1_md.md)], read these release notes.
+Before you install and use [!INCLUDE[smshort12](./Token/smshort12_md.md)] in [!INCLUDE[sc2012r2_1](./Token/sc2012r2_1_md.md)], read these release notes.
 
 ## Known Issues
 
-## [!INCLUDE[smcons](../Token/smcons_md.md)] Installed on a VMM Server Causes VMM Connector Failure
-**Description:** If the [!INCLUDE[smcons](../Token/smcons_md.md)] is installed on the same server as VMM, then you cannot use that [!INCLUDE[smcons](../Token/smcons_md.md)] to create a VMM connector to that VMM server.
+## [!INCLUDE[smcons](./Token/smcons_md.md)] Installed on a VMM Server Causes VMM Connector Failure
+**Description:** If the [!INCLUDE[smcons](./Token/smcons_md.md)] is installed on the same server as VMM, then you cannot use that [!INCLUDE[smcons](./Token/smcons_md.md)] to create a VMM connector to that VMM server.
 
-**Workaround:** None, however you can use a different [!INCLUDE[smcons](../Token/smcons_md.md)] to create the VMM connector.
+**Workaround:** None, however you can use a different [!INCLUDE[smcons](./Token/smcons_md.md)] to create the VMM connector.
 
 ## Data Warehouse stops working after upgrading Service Manager
 **Description:** The Data Warehouse stops working after upgrading Service Manager in System Center 2012 SP1 to System Center 2012 R2 due to a Data Warehouse fact entity upgrade.
@@ -109,7 +109,7 @@ END
 
 #### To prepare for chargeback
 
-1.  On the server running [!INCLUDE[scvm_threshold_1](../Token/scvm_threshold_1_md.md)], copy the following management packs from their installed location, by default *InstallationDrive*:\\Program Files\\Microsoft System Center 2012 R2\\Virtual Machine Manager\\ManagementPacks to a folder on the server running the [!INCLUDE[smshort12](../Token/smshort12_md.md)] management server.
+1.  On the server running [!INCLUDE[scvm_threshold_1](./Token/scvm_threshold_1_md.md)], copy the following management packs from their installed location, by default *InstallationDrive*:\\Program Files\\Microsoft System Center 2012 R2\\Virtual Machine Manager\\ManagementPacks to a folder on the server running the [!INCLUDE[smshort12](./Token/smshort12_md.md)] management server.
 
     -   Microsoft.SystemCenter.VirtualMachineManager.PRO.Library
 
@@ -121,22 +121,22 @@ END
 
     -   Microsoft.SystemCenter.VirtualMachineManager.2012.Discovery
 
-2.  Start the [!INCLUDE[smcons](../Token/smcons_md.md)] and navigate to **Administration**, **Management Packs**.
+2.  Start the [!INCLUDE[smcons](./Token/smcons_md.md)] and navigate to **Administration**, **Management Packs**.
 
-3.  **Import** the management packs that you copied to the [!INCLUDE[smshort12](../Token/smshort12_md.md)] management server. Make sure to click **Yes** on the **Online Data Connection** dialog box.
+3.  **Import** the management packs that you copied to the [!INCLUDE[smshort12](./Token/smshort12_md.md)] management server. Make sure to click **Yes** on the **Online Data Connection** dialog box.
 
 ## Service Manager Requires a Hotfix
 **Description:** Service Manager might stop unexpectedly unless you apply a Hotfix which is available at Microsoft Support.
 
 **Workaround:** Apply Hotfix [2600907](http://go.microsoft.com/fwlink/p/?LinkId=230954).
 
-## [!INCLUDE[smssp](../Token/smssp_md.md)] Installation
-**Description:** For [!INCLUDE[smshort12](../Token/smshort12_md.md)] in [!INCLUDE[sc2012r2_1](../Token/sc2012r2_1_md.md)], you must install the [!INCLUDE[smssp](../Token/smssp_md.md)] on a server that does not host a [!INCLUDE[smshort12](../Token/smshort12_md.md)] role.
+## [!INCLUDE[smssp](./Token/smssp_md.md)] Installation
+**Description:** For [!INCLUDE[smshort12](./Token/smshort12_md.md)] in [!INCLUDE[sc2012r2_1](./Token/sc2012r2_1_md.md)], you must install the [!INCLUDE[smssp](./Token/smssp_md.md)] on a server that does not host a [!INCLUDE[smshort12](./Token/smshort12_md.md)] role.
 
 **Workaround:** None.
 
-## [!INCLUDE[smshort12](../Token/smshort12_md.md)] Requires SQL Server 2008 R2 SP1 or Later
-**Description:** The [!INCLUDE[smshort12](../Token/smshort12_md.md)] prerequisite checker included in Setup does not check for SQL Server 2008 R2 SP1, however it is required. If you are running the RTM version of SQL Server 2008 R2, then you must upgrade it to SQL Server 2008 R2 SP1 or later before you can install [!INCLUDE[sc2012r2_1](../Token/sc2012r2_1_md.md)].
+## [!INCLUDE[smshort12](./Token/smshort12_md.md)] Requires SQL Server 2008 R2 SP1 or Later
+**Description:** The [!INCLUDE[smshort12](./Token/smshort12_md.md)] prerequisite checker included in Setup does not check for SQL Server 2008 R2 SP1, however it is required. If you are running the RTM version of SQL Server 2008 R2, then you must upgrade it to SQL Server 2008 R2 SP1 or later before you can install [!INCLUDE[sc2012r2_1](./Token/sc2012r2_1_md.md)].
 
 **Workaround:** None.
 
@@ -168,15 +168,15 @@ END
 ## Registering an Operations Manager 2007 R2 Data Source Fails
 **Description:** When you attempt to register an Operations Manager 2007 R2 data source in the Data Warehouse workspace, registration fails and an error appears stating that `The Data Access service is either not running or not yet initialized. Check the event log for more information`.
 
-**Workaround:** None. This is a known problem when you try to register an Operations Manager 2007 R2 data source with [!INCLUDE[smshort12](../Token/smshort12_md.md)] in [!INCLUDE[sc2012r2_1](../Token/sc2012r2_1_md.md)].
+**Workaround:** None. This is a known problem when you try to register an Operations Manager 2007 R2 data source with [!INCLUDE[smshort12](./Token/smshort12_md.md)] in [!INCLUDE[sc2012r2_1](./Token/sc2012r2_1_md.md)].
 
 ## Information Linked from Setup Might Not Display Localized Content
-**Description:** Information that is linked from Setup to the Setup log and to technical documentation might not display localized content. Setup logs in [!INCLUDE[smshort12](../Token/smshort12_md.md)] are available in English only. Technical documentation is available in a variety of localized languages. Where available, localized technical documentation is displayed on TechNet; however, not all languages are available.
+**Description:** Information that is linked from Setup to the Setup log and to technical documentation might not display localized content. Setup logs in [!INCLUDE[smshort12](./Token/smshort12_md.md)] are available in English only. Technical documentation is available in a variety of localized languages. Where available, localized technical documentation is displayed on TechNet; however, not all languages are available.
 
 **Workaround:** None.
 
 ## Full Text Search Does Not Work for Some Turkish Language Characters
-**Description:** Full text search in the [!INCLUDE[smssp](../Token/smssp_md.md)] works only if you have a licensed non\-Microsoft word breaker installed. However, full text search does not work for some characters of the Turkish language even if you have a licensed non\-Microsoft Turkish word breaker installed.
+**Description:** Full text search in the [!INCLUDE[smssp](./Token/smssp_md.md)] works only if you have a licensed non\-Microsoft word breaker installed. However, full text search does not work for some characters of the Turkish language even if you have a licensed non\-Microsoft Turkish word breaker installed.
 
 **Workaround:** Load a licensed non\-Microsoft word breaker that enables full\-text search to function. For more information, see the following links for the version of SQL Server that you are using:
 
@@ -225,7 +225,7 @@ END
 **Workaround:** When you create service requests, avoid modifying or deleting activities that are contained in a request offering template. If necessary, you can create a new request offering template with only the activities that are necessary and configured properly for your intended use.
 
 ## The Service Manager Console Stops When You Attempt to Open a Change Request if the SelectedDate Value Is Not Valid
-**Description:** This problem can occur after upgrading from [!INCLUDE[scvm_threshold_1](../Token/scvm_threshold_1_md.md)] to Service Manager in [!INCLUDE[sc2012r2_1](../Token/sc2012r2_1_md.md)] if a change request’s scheduled end is set before the scheduled start date. The error message might resemble `System.ArgumentOutOfRangeException: SelectedDate value is not valid`.
+**Description:** This problem can occur after upgrading from [!INCLUDE[scvm_threshold_1](./Token/scvm_threshold_1_md.md)] to Service Manager in [!INCLUDE[sc2012r2_1](./Token/sc2012r2_1_md.md)] if a change request’s scheduled end is set before the scheduled start date. The error message might resemble `System.ArgumentOutOfRangeException: SelectedDate value is not valid`.
 
 **Workaround:** To display the change request containing a ScheduledStartDate value that is greater than the ScheduledEndDate value, you can use the following sets of commands in a Service Manager module for Windows PowerShell window:
 
@@ -280,7 +280,7 @@ $instances | %{ $_.ScheduledEndDate = $_.ScheduledStartDate ; $_ } | update-sccl
 ## Analyze Cube in Excel Does Not Work with Excel Viewer
 **Description:** If you attempt to analyze an OLAP data cube in the Data Warehouse workspace using Microsoft Office Excel Viewer, a dialog box appears, stating erroneously that you can install Microsoft Excel viewer and try again.
 
-**Workaround:** Close the [!INCLUDE[smcons](../Token/smcons_md.md)], install Microsoft Excel, and then try again.
+**Workaround:** Close the [!INCLUDE[smcons](./Token/smcons_md.md)], install Microsoft Excel, and then try again.
 
 ## Configuring the Reporting Server Might Take a Long Time
 **Description:** When you install the data warehouse, validation of the default web server URL might take as long as 25 seconds to complete.
@@ -295,7 +295,7 @@ $instances | %{ $_.ScheduledEndDate = $_.ScheduledStartDate ; $_ } | update-sccl
 ## Data Binding Does Not Work for Class Extension Properties
 **Description:** The value for an extended property is not saved when a form control is bound to an extended property on a class.
 
-**Workaround:** Restart the [!INCLUDE[smcons](../Token/smcons_md.md)] after binding to a property.
+**Workaround:** Restart the [!INCLUDE[smcons](./Token/smcons_md.md)] after binding to a property.
 
 ## Sorting Knowledge Articles by Date Does Not Work
 **Description:** When you try to sort knowledge articles by date, sorting does not work.
@@ -307,7 +307,7 @@ $instances | %{ $_.ScheduledEndDate = $_.ScheduledStartDate ; $_ } | update-sccl
 
 **Workaround:** First, create a data source for Operations Manager. For more information, see [How to Register the System Center Data Warehouse to Operations Manager](http://technet.microsoft.com/library/hh542405.aspx) in the Service Manager Administrator's Guide.
 
-Next, make sure that the System Center Data Warehouse Operations Manager management pack has been imported. In the [!INCLUDE[smcons](../Token/smcons_md.md)], click **Data Warehouse**, click **Management Packs**, and confirm that **System Center Datawarehouse Operations Manager Library** is listed.
+Next, make sure that the System Center Data Warehouse Operations Manager management pack has been imported. In the [!INCLUDE[smcons](./Token/smcons_md.md)], click **Data Warehouse**, click **Management Packs**, and confirm that **System Center Datawarehouse Operations Manager Library** is listed.
 
 Finally, on the Data Warehouse Management Server, type the following Windows PowerShell commands to manually import the management pack. \(This example assumes that Service Manager is on drive C and that you installed Service Manager using the default path\).
 
@@ -316,4 +316,5 @@ cd 'C:\Program Files\Microsoft System Center\Service Manager 2012 R2\PowerShell'
 Import-Module .\System.Center.Service.Manager.psd1
 Import-SCSMManagementPack ..\AlertCube.mpb
 ```
+
 

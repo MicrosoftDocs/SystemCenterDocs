@@ -11,7 +11,7 @@ ms.topic: article
 ms.assetid: 76911720-30ec-497b-9dc5-3e8efc1417b6
 ---
 # How to Configure Concurrent Sessions and Calls
-By limiting the number of concurrent calls and sessions on the Web Content Server in [!INCLUDE[smlong12](../Token/smlong12_md.md)], you can limit the number of resources used by the [!INCLUDE[smssp](../Token/smssp_md.md)]. Use the following procedure to configure the number of concurrent calls and sessions. For more information, see the MSDN article [<serviceThrottling>](http://go.microsoft.com/fwlink/p/?LinkID=166610) to specify the throttling mechanism of a Windows Communication Foundation \(WCF\) service.
+By limiting the number of concurrent calls and sessions on the Web Content Server in [!INCLUDE[smlong12](./Token/smlong12_md.md)], you can limit the number of resources used by the [!INCLUDE[smssp](./Token/smssp_md.md)]. Use the following procedure to configure the number of concurrent calls and sessions. For more information, see the MSDN article [<serviceThrottling>](http://go.microsoft.com/fwlink/p/?LinkID=166610) to specify the throttling mechanism of a Windows Communication Foundation \(WCF\) service.
 
 ### To configure concurrent calls and sessions
 
@@ -64,5 +64,6 @@ By limiting the number of concurrent calls and sessions on the Web Content Serve
 5.  Close your text editor, and save the changes.
 
 ## See Also
-[Managing the System Center 2012 - Service Manager Self-Service Portal](../Topic/Managing-the-System-Center-2012---Service-Manager-Self-Service-Portal.md)
+[Managing the System Center 2012 - Service Manager Self-Service Portal](./Managing-the-System-Center-2012---Service-Manager-Self-Service-Portal.md)
+
 

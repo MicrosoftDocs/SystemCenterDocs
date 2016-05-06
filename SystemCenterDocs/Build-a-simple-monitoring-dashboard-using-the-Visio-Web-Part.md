@@ -55,3 +55,4 @@ SharePoint 2010 Enterprise edition includes a Web part for Visio Services called
 
 Your Web part should now display with the published diagram in the Visio Web Access Web part. Notice that the **Open in Visio** button \(normally available by default\) is no longer available in the Web part toolbar.
 
+

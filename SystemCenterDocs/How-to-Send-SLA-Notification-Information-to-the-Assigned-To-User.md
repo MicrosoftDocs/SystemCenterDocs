@@ -15,7 +15,7 @@ In Service Manager, you can send notifications to analysts who are responsible f
 
 ### To send an SLA notification to the assigned\-to user
 
-1.  In the [!INCLUDE[smcons](../Token/smcons_md.md)], click **Administration**.
+1.  In the [!INCLUDE[smcons](./Token/smcons_md.md)], click **Administration**.
 
 2.  In the **Administration** pane, expand **Notifications**, and then click **Subscriptions**.
 
@@ -43,7 +43,7 @@ In Service Manager, you can send notifications to analysts who are responsible f
 
     2.  On the **Changed To** tab, set **\[Service Level Instance Time Information\] Status Equals Warning**, and then click **Next**.
 
-8.  On the **Template** page, select an email template or create a new one targeted at the Service Level Instance Time Information class. [!INCLUDE[crabout](../Token/crabout_md.md)] creating email notification templates, see [How to Create Notification Templates](How-to-Create-Notification-Templates.md). Click **Next**.
+8.  On the **Template** page, select an email template or create a new one targeted at the Service Level Instance Time Information class. [!INCLUDE[crabout](./Token/crabout_md.md)] creating email notification templates, see [How to Create Notification Templates](How-to-Create-Notification-Templates.md). Click **Next**.
 
 9. On the **Recipient** page, click **Add** and select the groups and users to send the notification to, and then click **Next**.
 
@@ -52,4 +52,5 @@ In Service Manager, you can send notifications to analysts who are responsible f
 11. On the **Summary** page, review the information, and then click **Create**.
 
 12. On the **Completion** page, click **OK** to close the wizard.
+
 

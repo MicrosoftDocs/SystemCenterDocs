@@ -52,3 +52,4 @@ To provide quick recovery of application data, DPM must create an express full b
 2.  Click **Optimize performance** and on the **Express Full Backu**p tab, select the available times for the express full backups and click Add.
     Select the days of the week for the express full backups.
 
+

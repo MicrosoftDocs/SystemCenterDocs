@@ -11,7 +11,7 @@ ms.topic: article
 ms.assetid: 8133f0ab-07ee-4c23-8c8c-7c13eac1492a
 ---
 # How to Create a Configuration Changes Report
-[!INCLUDE[om12long](../Token/om12long_md.md)] monitors parameters of objects that are defined in management packs. You can create a Configuration Changes report listing changes that have occurred to monitored parameters. You should expect a delay of at least 2 minutes from the time when a change is made until it is reflected in a Configuration Changes report. In the following example procedure, you will make a change to the Heartbeat Interval setting and then create a Configuration Changes report to view the result.
+[!INCLUDE[om12long](./Token/om12long_md.md)] monitors parameters of objects that are defined in management packs. You can create a Configuration Changes report listing changes that have occurred to monitored parameters. You should expect a delay of at least 2 minutes from the time when a change is made until it is reflected in a Configuration Changes report. In the following example procedure, you will make a change to the Heartbeat Interval setting and then create a Configuration Changes report to view the result.
 
 ### To report configuration changes
 
@@ -51,4 +51,5 @@ ms.assetid: 8133f0ab-07ee-4c23-8c8c-7c13eac1492a
 16. Click **Run** to display the **Configuration Changes Report**.
 
 17. Click **Close** to close the report.
+
 

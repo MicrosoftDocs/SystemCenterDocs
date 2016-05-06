@@ -31,11 +31,12 @@ Exporting a management pack allows customizations to a sealed management pack to
     The management pack is saved as an Operations Manager XML management pack file and is ready for importing into another management group.
 
 ## See Also
-[Creating a Management Pack for Overrides](../Topic/Creating-a-Management-Pack-for-Overrides.md)
-[Management Packs Installed with Operations Manager](../Topic/Management-Packs-Installed-with-Operations-Manager.md)
-[What Is in an Operations Manager Management Pack?](../Topic/What-Is-in-an-Operations-Manager-Management-Pack-.md)
-[Management Pack Life Cycle](../Topic/Management-Pack-Life-Cycle.md)
-[How to Import an Operations Manager Management Pack](../Topic/How-to-Import-an-Operations-Manager-Management-Pack.md)
-[How to Remove an Operations Manager Management Pack](../Topic/How-to-Remove-an-Operations-Manager-Management-Pack.md)
-[How to Add Knowledge to a Management Pack](../Topic/How-to-Add-Knowledge-to-a-Management-Pack.md)
+[Creating a Management Pack for Overrides](./Creating-a-Management-Pack-for-Overrides.md)
+[Management Packs Installed with Operations Manager](./Management-Packs-Installed-with-Operations-Manager.md)
+[What Is in an Operations Manager Management Pack?](./What-Is-in-an-Operations-Manager-Management-Pack-.md)
+[Management Pack Life Cycle](./Management-Pack-Life-Cycle.md)
+[How to Import an Operations Manager Management Pack](./How-to-Import-an-Operations-Manager-Management-Pack.md)
+[How to Remove an Operations Manager Management Pack](./How-to-Remove-an-Operations-Manager-Management-Pack.md)
+[How to Add Knowledge to a Management Pack](./How-to-Add-Knowledge-to-a-Management-Pack.md)
+
 

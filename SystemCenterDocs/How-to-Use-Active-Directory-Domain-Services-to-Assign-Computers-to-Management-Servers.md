@@ -55,7 +55,7 @@ Changing the agent assignment rule can result in computers no longer being assig
     -   Set **Select Run As Profile** to the Run As profile associated with the Run As account provided when MOMADAdmin.exe was run for the domain. The default account used to perform agent assignment is the default action account specified during Setup, also referred to as the **Active Directory Based Agent Assignment Account**. This account represents credentials used when connecting to the specified domain’s Active Directory and modifying Active Directory objects, and should match the account specified when running MOMAdmin.exe. If this was not the account used to run MOMADAdmin.exe, select **Use a different account to perform agent assignment in the specified domain,** and then select or create the account from the **Select Run As Profile** drop\-down list. The **Active Directory Based Agent Assignment Account** profile must be configured to use an Operations Manager administrator account which is distributed to all servers in the AD Agent Assignment resource pool.
 
         > [!NOTE]
-        > For more information about Run As profiles and Run As accounts, see [Managing Run As Accounts and Profiles](../Topic/Managing-Run-As-Accounts-and-Profiles.md).
+        > For more information about Run As profiles and Run As accounts, see [Managing Run As Accounts and Profiles](./Managing-Run-As-Accounts-and-Profiles.md).
 
 3.  On the **Inclusion Criteria** page, either type the LDAP query for assigning computers to this management server in the text box and then click **Next,** or click **Configure**. If you click **Configure**, do the following:
 
@@ -86,8 +86,9 @@ Changing the agent assignment rule can result in computers no longer being assig
     > It can take up to one hour for the agent assignment setting to propagate in AD DS.
 
 ## See Also
-[Integrating Active Directory and Operations Manager](../Topic/Integrating-Active-Directory-and-Operations-Manager.md)
-[Using Active Directory Domain Services to Assign Computers to Operations Manager Management Groups](../Topic/Using-Active-Directory-Domain-Services-to-Assign-Computers-to-Operations-Manager-Management-Groups.md)
-[How to Create an Active Directory Domain Services Container for a Management Group](../Topic/How-to-Create-an-Active-Directory-Domain-Services-Container-for-a-Management-Group.md)
-[Changing the Active Directory Integration Setting for an Agent](../Topic/Changing-the-Active-Directory-Integration-Setting-for-an-Agent.md)
+[Integrating Active Directory and Operations Manager](./Integrating-Active-Directory-and-Operations-Manager.md)
+[Using Active Directory Domain Services to Assign Computers to Operations Manager Management Groups](./Using-Active-Directory-Domain-Services-to-Assign-Computers-to-Operations-Manager-Management-Groups.md)
+[How to Create an Active Directory Domain Services Container for a Management Group](./How-to-Create-an-Active-Directory-Domain-Services-Container-for-a-Management-Group.md)
+[Changing the Active Directory Integration Setting for an Agent](./Changing-the-Active-Directory-Integration-Setting-for-an-Agent.md)
+
 

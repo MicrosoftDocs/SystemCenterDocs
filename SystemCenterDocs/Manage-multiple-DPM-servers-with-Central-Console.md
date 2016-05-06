@@ -48,3 +48,4 @@ You can install Central Console on a server computer running Windows Server 2008
 
 5.  After the Central Console is installed a view folder **System Central 2012 Data Protection Manager** is created in the Operations Manager console. You can manage most tasks for managed DPM servers from the Central Console.
 
+

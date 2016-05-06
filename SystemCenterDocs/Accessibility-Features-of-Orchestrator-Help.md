@@ -11,7 +11,7 @@ ms.topic: article
 ms.assetid: 76b9fd9d-df14-42de-9cf9-361512308349
 ---
 # Accessibility Features of Orchestrator Help
-[!INCLUDE[orchshort](../Token/orchshort_md.md)] Help includes features that make it accessible to a wider range of users, including those who have limited dexterity, low vision, or other disabilities. In addition, [!INCLUDE[orchshort](../Token/orchshort_md.md)] Help is available on the Web at [Accessibility for People with Disabilities](http://go.microsoft.com/fwlink/p/?LinkID=245852).
+[!INCLUDE[orchshort]./Token/orchshort_md.md)] Help includes features that make it accessible to a wider range of users, including those who have limited dexterity, low vision, or other disabilities. In addition, [!INCLUDE[orchshort]./Token/orchshort_md.md)] Help is available on the Web at [Accessibility for People with Disabilities](http://go.microsoft.com/fwlink/p/?LinkID=245852).
 
 ## Keyboard Shortcuts for Using the Help Window
 By using the following keyboard shortcuts in Help, you can quickly accomplish many common tasks.
@@ -72,4 +72,6 @@ By using the following keyboard shortcuts in Help, you can quickly accomplish ma
 
     > [!NOTE]
     > If you change the font of the Help topics in the Help window, the change also affects the font when you view a Web page in Internet Explorer.
+
+
 

@@ -11,7 +11,7 @@ ms.topic: article
 ms.assetid: d7e061b0-5d6e-49de-b93f-85215f7c4b73
 ---
 # How to Subscribe to Notifications from an Alert
-In [!INCLUDE[om12long](../Token/om12long_md.md)], when an alert is generated, Operations Manager can notify designated individuals by email, instant message \(IM\), or text message \(SMS\). Notifications can also run commands automatically when an alert is raised on a monitored system. A notification requires a channel, a subscriber, and a subscription.
+In [!INCLUDE[om12long](./Token/om12long_md.md)], when an alert is generated, Operations Manager can notify designated individuals by email, instant message \(IM\), or text message \(SMS\). Notifications can also run commands automatically when an alert is raised on a monitored system. A notification requires a channel, a subscriber, and a subscription.
 
 You can create a notification subscription from an alert to ensure that you are notified if the alert is sent again. You can either create a new subscription or add the alert to an existing subscription. In the following procedure, you create a new subscription.
 
@@ -45,16 +45,17 @@ You can create a notification subscription from an alert to ensure that you are 
 12. Click **Close**.
 
 ## See Also
-[How to Enable an Instant Message Notification Channel](../Topic/How-to-Enable-an-Instant-Message-Notification-Channel.md)
-[How to Enable a Text Message &#40;SMS&#41; Notification Channel](../Topic/How-to-Enable-a-Text-Message--SMS--Notification-Channel.md)
-[How to Enable a Command Notification Channel](../Topic/How-to-Enable-a-Command-Notification-Channel.md)
-[How to Create Notification Subscribers](../Topic/How-to-Create-Notification-Subscribers.md)
-[How to Create Notification Subscriptions](../Topic/How-to-Create-Notification-Subscriptions.md)
-[Subscribing to Alert Notifications](../Topic/Subscribing-to-Alert-Notifications.md)
-[How to Create and Configure the Notification Action Account](../Topic/How-to-Create-and-Configure-the-Notification-Action-Account.md)
-[How to Customize Message Content for Notifications](../Topic/How-to-Customize-Message-Content-for-Notifications.md)
-[How to Enable an Email Notification Channel](../Topic/How-to-Enable-an-Email-Notification-Channel.md)
-[How to Create Subscriptions Using Classes and Groups](../Topic/How-to-Create-Subscriptions-Using-Classes-and-Groups.md)
-[How to Specify Which Alerts Generate Notifications &#40;Conditions&#41;](../Topic/How-to-Specify-Which-Alerts-Generate-Notifications--Conditions-.md)
-[Sending Notifications for Specific Computers and Specific Alerts to Specific Teams](../Topic/Sending-Notifications-for-Specific-Computers-and-Specific-Alerts-to-Specific-Teams.md)
+[How to Enable an Instant Message Notification Channel](./How-to-Enable-an-Instant-Message-Notification-Channel.md)
+[How to Enable a Text Message &#40;SMS&#41; Notification Channel](./How-to-Enable-a-Text-Message--SMS--Notification-Channel.md)
+[How to Enable a Command Notification Channel](./How-to-Enable-a-Command-Notification-Channel.md)
+[How to Create Notification Subscribers](./How-to-Create-Notification-Subscribers.md)
+[How to Create Notification Subscriptions](./How-to-Create-Notification-Subscriptions.md)
+[Subscribing to Alert Notifications](./Subscribing-to-Alert-Notifications.md)
+[How to Create and Configure the Notification Action Account](./How-to-Create-and-Configure-the-Notification-Action-Account.md)
+[How to Customize Message Content for Notifications](./How-to-Customize-Message-Content-for-Notifications.md)
+[How to Enable an Email Notification Channel](./How-to-Enable-an-Email-Notification-Channel.md)
+[How to Create Subscriptions Using Classes and Groups](./How-to-Create-Subscriptions-Using-Classes-and-Groups.md)
+[How to Specify Which Alerts Generate Notifications &#40;Conditions&#41;](./How-to-Specify-Which-Alerts-Generate-Notifications--Conditions-.md)
+[Sending Notifications for Specific Computers and Specific Alerts to Specific Teams](./Sending-Notifications-for-Specific-Computers-and-Specific-Alerts-to-Specific-Teams.md)
+
 

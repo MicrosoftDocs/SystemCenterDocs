@@ -33,7 +33,7 @@ The following options are available on the **General Options** page of the wizar
 |----------|---------------|
 |Name|The name used for the template. This is the name that is displayed in the Operations console.|
 |Description|Optional description of the template.|
-|Management Pack|Management pack to store the class and monitors that the template creates. If you create any additional monitors or rules that are using the process as a targeted process, you must store them in the same management pack.<br /><br />For more information about management packs, see [Selecting a Management Pack File](../Topic/Selecting-a-Management-Pack-File.md).|
+|Management Pack|Management pack to store the class and monitors that the template creates. If you create any additional monitors or rules that are using the process as a targeted process, you must store them in the same management pack.<br /><br />For more information about management packs, see [Selecting a Management Pack File](./Selecting-a-Management-Pack-File.md).|
 
 ### Process Monitoring Details
 The following options are available on the **Process Monitoring Details** page of the wizard.
@@ -65,7 +65,7 @@ In addition to performing the specified monitoring, the **UNIX\/Linux Process Mo
 
     -   If you want to discover the process on all UNIX and Linux computers in the management group, you do not have to create a group. You can use the existing group **UNIX\/Linux Computer Group**.
 
-    -   If you only want the process to be discovered on a certain group of computers, then either ensure that an appropriate group exists or create a one by using the procedure in [How to Create Groups in Operations Manager](../Topic/How-to-Create-Groups-in-Operations-Manager.md).
+    -   If you only want the process to be discovered on a certain group of computers, then either ensure that an appropriate group exists or create a one by using the procedure in [How to Create Groups in Operations Manager](./How-to-Create-Groups-in-Operations-Manager.md).
 
 2.  Start the **Add Monitoring** wizard.
 
@@ -73,7 +73,7 @@ In addition to performing the specified monitoring, the **UNIX\/Linux Process Mo
 
 4.  On the **General Properties** page, in the **Name** and **Description** boxes, type a name and optional description for this new template.
 
-5.  Select a management pack in which to save the monitor or click **New** to create a new management pack. For more information, see [Selecting a Management Pack File](../Topic/Selecting-a-Management-Pack-File.md).
+5.  Select a management pack in which to save the monitor or click **New** to create a new management pack. For more information, see [Selecting a Management Pack File](./Selecting-a-Management-Pack-File.md).
 
 6.  Click **Next**.
 
@@ -128,5 +128,6 @@ In addition to performing the specified monitoring, the **UNIX\/Linux Process Mo
 3.  Expand the **Availability** node, and then click the **Application\/Service Availability Rollup** node to view the individual process monitor.
 
 ## See Also
-[Creating Management Pack Templates](../Topic/Creating-Management-Pack-Templates.md)
+[Creating Management Pack Templates](./Creating-Management-Pack-Templates.md)
+
 

@@ -11,7 +11,7 @@ ms.topic: article
 ms.assetid: 3f949c61-c495-4639-aa71-d7ad0b197b74
 ---
 # Check Schedule
-The Check schedule activity verifies that a runbook is allowed to run at the current time according to the permitted times or interval configured in a schedule. To use this activity, you can create a schedule and configure the permitted times, denied times, or interval at which the runbook can run. Then you can insert the activity into a runbook following a [Monitor Date and Time](../Topic/Monitor-Date-and-Time.md) activity and configure it to check the schedule to verify whether a runbook is allowed to run at the current time. You can also use the Check Schedule activity in a runbook that monitors systems for availability. If a problem is encountered, the Check Schedule activity can verify whether the current time is during business hours, or in or out of a maintenance window.
+The Check schedule activity verifies that a runbook is allowed to run at the current time according to the permitted times or interval configured in a schedule. To use this activity, you can create a schedule and configure the permitted times, denied times, or interval at which the runbook can run. Then you can insert the activity into a runbook following a [Monitor Date and Time](./Monitor-Date-and-Time.md) activity and configure it to check the schedule to verify whether a runbook is allowed to run at the current time. You can also use the Check Schedule activity in a runbook that monitors systems for availability. If a problem is encountered, the Check Schedule activity can verify whether the current time is during business hours, or in or out of a maintenance window.
 
 ## Configuring the Check Schedule Activity
 Use the following information to configure the Check Schedule activity.
@@ -30,4 +30,5 @@ The following table lists published data items.
 |Item|Description|
 |--------|---------------|
 |Conforms to schedule|Determines whether the current time is within the schedule specified. This value can be either True or False.|
+
 

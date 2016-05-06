@@ -24,7 +24,7 @@ DPM can back up virtual machines running on Hyper\-V host servers in the followi
 
 -   **[Back up replica virtual machines](#BKMK_Replica)**—Back up replica virtual machines running on a secondary server \(DPM 2012 R2 only\)
 
-Learn about supported DPM and Hyper\-V versions in [What can DPM back up?](../Topic/What-can-DPM-back-up-.md) .
+Learn about supported DPM and Hyper\-V versions in [What can DPM back up?](./What-can-DPM-back-up-.md) .
 
 ## <a name="BKMK_Online"></a>Host v guest backup
 DPM can perform a host or guest\-level backup of Hyper\-V VMs. At the host level the DPM protection agent is installed on the Hyper\-V host server or cluster and protects the entire VMs and data files running on that host.   At the guest level the agent is installed on each virtual machine and protects the workload present on that machine.
@@ -234,4 +234,5 @@ You can recover backed up virtual machines. In the DPM Administrator console you
     -   **Item\-level recovery**: DPM supports item\-level recovery \(ILR\), which allows you to do item\-level recovery of files, folders, volumes, and virtual hard disks \(VHDs\) from a host\-level backup of Hyper\-V virtual machines to a network share or a volume on a DPM protected server. The DPM protection agent doesn’t have to be installed inside the guest to perform item\-level recovery.
 
 In **Specify Recovery Options** you can configure the recovery options for SAN, network bandwidth usage throttling if you're recovering over low bandwidth, and email notifications to specify when the restore job finishes, and complete the wiard.
+
 

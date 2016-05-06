@@ -11,7 +11,7 @@ ms.topic: article
 ms.assetid: 02119d3c-250d-46ed-80be-3609dfa832a8
 ---
 # How to View Group Members, State, and Diagram
-Use the following procedure in [!INCLUDE[om12long](../Token/om12long_md.md)] to view the objects that are members of a specific group.
+Use the following procedure in [!INCLUDE[om12long](./Token/om12long_md.md)] to view the objects that are members of a specific group.
 
 ### To view members, state, and diagram of a group
 
@@ -28,10 +28,11 @@ Use the following procedure in [!INCLUDE[om12long](../Token/om12long_md.md)] to 
     -   **View Diagram** to view a diagram of the group.
 
 ## See Also
-[Creating and Managing Groups](../Topic/Creating-and-Managing-Groups.md)
-[Define a Scope Using Operations Manager Groups](../Topic/Define-a-Scope-Using-Operations-Manager-Groups.md)
-[Using Classes and Groups for Overrides in Operations Manager](../Topic/Using-Classes-and-Groups-for-Overrides-in-Operations-Manager.md)
-[How to Create Groups in Operations Manager](../Topic/How-to-Create-Groups-in-Operations-Manager.md)
-[How to Create Subscriptions Using Classes and Groups](../Topic/How-to-Create-Subscriptions-Using-Classes-and-Groups.md)
-[Guidance for Scoping and Targeting Views](../Topic/Guidance-for-Scoping-and-Targeting-Views.md)
+[Creating and Managing Groups](./Creating-and-Managing-Groups.md)
+[Define a Scope Using Operations Manager Groups](./Define-a-Scope-Using-Operations-Manager-Groups.md)
+[Using Classes and Groups for Overrides in Operations Manager](./Using-Classes-and-Groups-for-Overrides-in-Operations-Manager.md)
+[How to Create Groups in Operations Manager](./How-to-Create-Groups-in-Operations-Manager.md)
+[How to Create Subscriptions Using Classes and Groups](./How-to-Create-Subscriptions-Using-Classes-and-Groups.md)
+[Guidance for Scoping and Targeting Views](./Guidance-for-Scoping-and-Targeting-Views.md)
+
 

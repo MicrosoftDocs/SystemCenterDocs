@@ -29,11 +29,12 @@ When you install the agent using a manual method, updates to the agent must also
 > -   You can run the Setup Wizard from the Operations Manager installation media and install the agent directly on a computer running Windows.
 > -   You can install an agent directly on a computer running Windows, UNIX, and Linux operating systems by using a command line.
 
-[Install the Agent Using the Discovery Wizard](../Topic/Install-the-Agent-Using-the-Discovery-Wizard.md)
+[Install the Agent Using the Discovery Wizard](./Install-the-Agent-Using-the-Discovery-Wizard.md)
 
-[Install the Agent Using the Command Line](../Topic/Install-the-Agent-Using-the-Command-Line.md)
+[Install the Agent Using the Command Line](./Install-the-Agent-Using-the-Command-Line.md)
 
-[Install the Agent and Certificate on UNIX and Linux Computers Using the Command Line](../Topic/Install-the-Agent-and-Certificate-on-UNIX-and-Linux-Computers-Using-the-Command-Line.md)
+[Install the Agent and Certificate on UNIX and Linux Computers Using the Command Line](./Install-the-Agent-and-Certificate-on-UNIX-and-Linux-Computers-Using-the-Command-Line.md)
 
-[Install Agent Using the MOMAgent.msi Setup Wizard_1](../Topic/Install-Agent-Using-the-MOMAgent.msi-Setup-Wizard_1.md)
+[Install Agent Using the MOMAgent.msi Setup Wizard_1](./Install-Agent-Using-the-MOMAgent.msi-Setup-Wizard_1.md)
+
 

@@ -8,12 +8,12 @@ ms.topic: article
 ms.assetid: 9ec7ba8b-21d1-4ff3-a5cf-52e899ca0bd6
 ---
 # How to remediate updates on infrastructure servers in VMM
-Use the following procedure to remediate updates for infrastructure servers that have been added to the configuration in [!INCLUDE[vmm12sp1_long](../Token/vmm12sp1_long_md.md)]. Infrastructure servers support services such as Active Directory, DNS, DHCP, Operations Manager, Service Manager, and so on.
+Use the following procedure to remediate updates for infrastructure servers that have been added to the configuration in [!INCLUDE[vmm12sp1_long](./Token/vmm12sp1_long_md.md)]. Infrastructure servers support services such as Active Directory, DNS, DHCP, Operations Manager, Service Manager, and so on.
 
 > [!NOTE]
-> The **Remediate** action is only available after you install a WSUS server for [!INCLUDE[vmm12short](../Token/vmm12short_md.md)], enable update management, create and assign update baselines for computers managed by [!INCLUDE[vmm12short](../Token/vmm12short_md.md)], and scan the computers for compliance. For more information, see [Managing fabric updates in VMM](../Topic/Managing-fabric-updates-in-VMM.md).
+> The **Remediate** action is only available after you install a WSUS server for [!INCLUDE[vmm12short](./Token/vmm12short_md.md)], enable update management, create and assign update baselines for computers managed by [!INCLUDE[vmm12short](./Token/vmm12short_md.md)], and scan the computers for compliance. For more information, see [Managing fabric updates in VMM](./Managing-fabric-updates-in-VMM.md).
 
-### To remediate updates for infrastructure servers in [!INCLUDE[vmm12short](../Token/vmm12short_md.md)]
+### To remediate updates for infrastructure servers in [!INCLUDE[vmm12short](./Token/vmm12short_md.md)]
 
 1.  Display the **Compliance** view for the managed computers:
 
@@ -38,13 +38,14 @@ Use the following procedure to remediate updates for infrastructure servers that
     By default, the wizard restarts the computer after installing updates if any of the updates requires a restart. If you choose not to restart the servers after remediation, and any updates require a restart, the operational status of the computer changes to **Pending Machine Reboot** after the remediation. The updates will not be activated until you restart the computer.
 
     > [!NOTE]
-    > If you choose to manually restart computers after installing updates, that status of the computers will remain **Pending Reboot** until after you scan the computer for updates again. [!INCLUDE[vmm12short](../Token/vmm12short_md.md)] does not scan computers to assess their update compliance status during refreshes.
+    > If you choose to manually restart computers after installing updates, that status of the computers will remain **Pending Reboot** until after you scan the computer for updates again. [!INCLUDE[vmm12short](./Token/vmm12short_md.md)] does not scan computers to assess their update compliance status during refreshes.
 
 6.  Click **Remediate** to start update remediation.
 
 ## See Also
-[Using infrastructure servers in VMM](../Topic/Using-infrastructure-servers-in-VMM.md)
-[How to configure update baselines in VMM](../Topic/How-to-configure-update-baselines-in-VMM.md)
-[Managing fabric updates in VMM](../Topic/Managing-fabric-updates-in-VMM.md)
-[Managing fabric resources with VMM](../Topic/Managing-fabric-resources-with-VMM.md)
+[Using infrastructure servers in VMM](./Using-infrastructure-servers-in-VMM.md)
+[How to configure update baselines in VMM](./How-to-configure-update-baselines-in-VMM.md)
+[Managing fabric updates in VMM](./Managing-fabric-updates-in-VMM.md)
+[Managing fabric resources with VMM](./Managing-fabric-resources-with-VMM.md)
+
 

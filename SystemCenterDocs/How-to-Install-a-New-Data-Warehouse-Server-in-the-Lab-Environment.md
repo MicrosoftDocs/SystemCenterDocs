@@ -77,3 +77,4 @@ Use the following procedure to install a new data warehouse server in the lab en
 
 5.  Verify that the **DWDataMart**, **DWRepository**, and **DWStagingAndConfig** databases are listed.
 
+

@@ -17,7 +17,7 @@ Creating work items in Team Foundation Server \(TFS\) with large attachments can
 
 1.  In TFS, configure the maximum attachment size for work items to accommodate your business needs. For more information, see [How to: Set the Maximum Attachment Size for Work Items](http://go.microsoft.com/fwlink/p/?LinkId=272016).
 
-2.  In the [!INCLUDE[om12short](../Token/om12short_md.md)] console, click **Authoring**, expand **Management Pack Objects**, and then click **Rules**.
+2.  In the [!INCLUDE[om12short](./Token/om12short_md.md)] console, click **Authoring**, expand **Management Pack Objects**, and then click **Rules**.
 
 3.  To set the scope of displayed rules, click **Scope**, and then click **View all targets**. Locate and select **TFS Collection**. Click **OK**.
 
@@ -37,7 +37,7 @@ Creating work items in Team Foundation Server \(TFS\) with large attachments can
     > [!NOTE]
     > By default, alert attachments that are synchronized with TFS work items are added as links that point to the alert attachment network file share.
 
-2.  In the [!INCLUDE[om12short](../Token/om12short_md.md)] console, click **Authoring**, expand **Management Pack Objects**, and then click **Rules**.
+2.  In the [!INCLUDE[om12short](./Token/om12short_md.md)] console, click **Authoring**, expand **Management Pack Objects**, and then click **Rules**.
 
 3.  To set the scope of displayed rules, click **Scope**, and then click **View all targets**. Locate and select **TFS Collection**. Click **OK**.
 
@@ -51,5 +51,6 @@ Creating work items in Team Foundation Server \(TFS\) with large attachments can
 6.  Save the settings to a management pack.
 
 ## See Also
-[How to Configure File Attachments for Operations Manager Alerts in System Center 2012 R2](../Topic/How-to-Configure-File-Attachments-for-Operations-Manager-Alerts-in-System-Center-2012-R2.md)
+[How to Configure File Attachments for Operations Manager Alerts in System Center 2012 R2](./How-to-Configure-File-Attachments-for-Operations-Manager-Alerts-in-System-Center-2012-R2.md)
+
 

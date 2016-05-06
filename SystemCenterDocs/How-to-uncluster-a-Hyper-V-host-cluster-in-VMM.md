@@ -11,7 +11,7 @@ ms.topic: article
 ms.assetid: 40844392-4a5e-4b27-9ef1-06c4b4ccaa4f
 ---
 # How to uncluster a Hyper-V host cluster in VMM
-You can use the following procedures to uncluster or remove a host cluster that is being managed in [!INCLUDE[vmm12sp1_long](../Token/vmm12sp1_long_md.md)].
+You can use the following procedures to uncluster or remove a host cluster that is being managed in [!INCLUDE[vmm12sp1_long](./Token/vmm12sp1_long_md.md)].
 
 ### To uncluster a Hyper\-V host cluster
 
@@ -30,11 +30,12 @@ You can use the following procedures to uncluster or remove a host cluster that 
     When the job is completed, the hosts appear as stand\-alone hosts in the **Fabric** workspace.
 
     > [!NOTE]
-    > As part of the job, [!INCLUDE[vmm12short](../Token/vmm12short_md.md)] unregisters the shared storage that is managed through [!INCLUDE[vmm12short](../Token/vmm12short_md.md)] from the cluster nodes. If the cluster had shared storage assigned that was not managed by [!INCLUDE[vmm12short](../Token/vmm12short_md.md)], we recommend that you unregister the shared storage by using your storage array vendor’s management tools.
+    > As part of the job, [!INCLUDE[vmm12short](./Token/vmm12short_md.md)] unregisters the shared storage that is managed through [!INCLUDE[vmm12short](./Token/vmm12short_md.md)] from the cluster nodes. If the cluster had shared storage assigned that was not managed by [!INCLUDE[vmm12short](./Token/vmm12short_md.md)], we recommend that you unregister the shared storage by using your storage array vendor’s management tools.
 
 ## See Also
-[Modifying Hyper-V host clusters in VMM](../Topic/Modifying-Hyper-V-host-clusters-in-VMM.md)
-[Managing Hyper-V hosts and host clusters with VMM](../Topic/Managing-Hyper-V-hosts-and-host-clusters-with-VMM.md)
-[Managing hosts and host clusters with VMM](../Topic/Managing-hosts-and-host-clusters-with-VMM.md)
-[Managing fabric resources with VMM](../Topic/Managing-fabric-resources-with-VMM.md)
+[Modifying Hyper-V host clusters in VMM](./Modifying-Hyper-V-host-clusters-in-VMM.md)
+[Managing Hyper-V hosts and host clusters with VMM](./Managing-Hyper-V-hosts-and-host-clusters-with-VMM.md)
+[Managing hosts and host clusters with VMM](./Managing-hosts-and-host-clusters-with-VMM.md)
+[Managing fabric resources with VMM](./Managing-fabric-resources-with-VMM.md)
+
 

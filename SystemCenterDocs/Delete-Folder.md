@@ -41,3 +41,4 @@ The following table lists the published data items.
 |Delete folder options|The option that you selected for the delete folder operation.|
 |Name and path of the folder|The name and path of the folder that was deleted.|
 
+

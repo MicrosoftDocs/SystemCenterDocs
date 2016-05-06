@@ -11,7 +11,7 @@ ms.topic: article
 ms.assetid: ac69f3db-00ab-4ca3-a2fc-f87d4503f1ed
 ---
 # Install the Visio 2010 Add-in
-The Visio 2010 Add\-in for [!INCLUDE[om12long](../Token/om12long_md.md)] has the following prerequisites:
+The Visio 2010 Add\-in for [!INCLUDE[om12long](./Token/om12long_md.md)] has the following prerequisites:
 
 -   System Center 2012 – Operations Manager Operations or Authoring console.
 
@@ -27,7 +27,7 @@ When you run the Setup program for the Visio Add\-in, your system is checked aga
 > If you have previously installed the Vision 2007 version of the Add\-in on this computer, uninstall it before installing the Visio 2010 Add\-in.
 
 > [!NOTE]
-> If you previously installed the Visio Add\-in with [!INCLUDE[om2007r2long](../Token/om2007r2long_md.md)], and upgraded to [!INCLUDE[om12long](../Token/om12long_md.md)], you must uninstall it prior to installing the [!INCLUDE[om12long](../Token/om12long_md.md)] version.
+> If you previously installed the Visio Add\-in with [!INCLUDE[om2007r2long](./Token/om2007r2long_md.md)], and upgraded to [!INCLUDE[om12long](./Token/om12long_md.md)], you must uninstall it prior to installing the [!INCLUDE[om12long](./Token/om12long_md.md)] version.
 
 ### To install the Visio 2010 Add\-in
 
@@ -44,4 +44,5 @@ When you run the Setup program for the Visio Add\-in, your system is checked aga
 6.  Click **Close** when the installation is complete.
 
 The next time you start Visio, you are asked if you want to install the Visio Add\-in. Click **Install**. When the installation is complete, the Operations Manager command is available in the Visio ribbon.
+
 

@@ -45,3 +45,4 @@ The following table lists the published data items.
 |\#Name\# line numbers|For each item that you add in the Lines list of the dialog, a new published data item is created. This item displays the line numbers where text was found from each item in the Lines list. \#Name\# represents the name that you assigned in the Name field.|
 |Total Number of Lines in the Ranges Specified|The total number of lines that were found in the ranges that were specified.|
 
+

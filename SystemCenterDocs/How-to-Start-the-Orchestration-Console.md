@@ -35,7 +35,8 @@ The Orchestration console is a web\-based tool and is accessed through your web 
 3.  Click **Finish**.
 
 ## See Also
-[Overview of Orchestration Console](../Topic/Overview-of-Orchestration-Console.md)
-[Orchestration Console Browser Requirements](../Topic/Orchestration-Console-Browser-Requirements.md)
-[How to Work With Runbooks in the Orchestration Console](../Topic/How-to-Work-With-Runbooks-in-the-Orchestration-Console.md)
+[Overview of Orchestration Console](./Overview-of-Orchestration-Console.md)
+[Orchestration Console Browser Requirements](./Orchestration-Console-Browser-Requirements.md)
+[How to Work With Runbooks in the Orchestration Console](./How-to-Work-With-Runbooks-in-the-Orchestration-Console.md)
+
 

@@ -17,7 +17,7 @@ Use the following procedure to configure notifications when developers assign wo
 
 ### To configure notifications when developers assign work items to IT operations
 
-1.  In the [!INCLUDE[om12short](../Token/om12short_md.md)] console, click **Administration**, expand **Notifications**, and then click **Subscriptions**.
+1.  In the [!INCLUDE[om12short](./Token/om12short_md.md)] console, click **Administration**, expand **Notifications**, and then click **Subscriptions**.
 
 2.  In the **Tasks** pane, click **New**.
 
@@ -32,4 +32,5 @@ Use the following procedure to configure notifications when developers assign wo
 7.  On the **Channels** page, to configure a new notification channel, such as email, instant message \(IM\), or text message, click **New**. Or, to search for a previously configured subscription channel, click **Add**. For details about using the Notification Channel Configuration Wizard, see [How to Create Notification Subscriptions](http://go.microsoft.com/fwlink/?LinkId=273060).
 
 8.  Click **Next**, and then click **Finish**.
+
 

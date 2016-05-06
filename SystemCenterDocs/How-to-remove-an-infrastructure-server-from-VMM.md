@@ -8,7 +8,7 @@ ms.topic: article
 ms.assetid: 879d8c92-7bd2-421e-9cac-785a7d90947f
 ---
 # How to remove an infrastructure server from VMM
-Use the following procedure to remove an infrastructure server from [!INCLUDE[vmm12sp1_long](../Token/vmm12sp1_long_md.md)].
+Use the following procedure to remove an infrastructure server from [!INCLUDE[vmm12sp1_long](./Token/vmm12sp1_long_md.md)].
 
 ### To remove an infrastructure server
 
@@ -23,8 +23,9 @@ Use the following procedure to remove an infrastructure server from [!INCLUDE[vm
 5.  In the **Remove <computer name>** wizard, select an existing Run As account or enter credentials for an account that has sufficient permissions to remove the computer, and then click **OK**.
 
 ## See Also
-[Using infrastructure servers in VMM](../Topic/Using-infrastructure-servers-in-VMM.md)
-[Managing infrastructure resources with VMM](../Topic/Managing-infrastructure-resources-with-VMM.md)
-[Managing fabric updates in VMM](../Topic/Managing-fabric-updates-in-VMM.md)
-[Managing fabric resources with VMM](../Topic/Managing-fabric-resources-with-VMM.md)
+[Using infrastructure servers in VMM](./Using-infrastructure-servers-in-VMM.md)
+[Managing infrastructure resources with VMM](./Managing-infrastructure-resources-with-VMM.md)
+[Managing fabric updates in VMM](./Managing-fabric-updates-in-VMM.md)
+[Managing fabric resources with VMM](./Managing-fabric-resources-with-VMM.md)
+
 

@@ -14,7 +14,7 @@ ms.assetid: 0a6734d7-245c-4522-b7c3-bccd64909efa
 DPM can back up client computer file data.
 
 ## Before you start
-Read through the [Back up client computers with DPM](../Topic/Back-up-client-computers-with-DPM.md) before you set up protection.
+Read through the [Back up client computers with DPM](./Back-up-client-computers-with-DPM.md) before you set up protection.
 
 ## Set up protection
 
@@ -46,7 +46,7 @@ Read through the [Back up client computers with DPM](../Topic/Back-up-client-com
 
     -   [Plan for protection group long\-term and short\-term protection](assetId:///f2df4e26-7911-4839-b4fe-e86567b32a6c)
 
-    -   [Back up and restore server system state and bare metal recovery &#40;BMR&#41;](../Topic/Back-up-and-restore-server-system-state-and-bare-metal-recovery--BMR-.md)
+    -   [Back up and restore server system state and bare metal recovery &#40;BMR&#41;](./Back-up-and-restore-server-system-state-and-bare-metal-recovery--BMR-.md)
 
     -   Then follow the instructions in [Create and manage protection groups](assetId:///2ce48037-9d6e-43a0-b3ac-cb3bb429dabd). Note that when you run the New Protection Group Wizard you’ll be able to configure Exchange\-specific settings the wizard.
 
@@ -60,15 +60,15 @@ Read through the [Back up client computers with DPM](../Topic/Back-up-client-com
 
         -   Comp3.abc.domain.com
 
-        If [!INCLUDE[dpm2012short](../Token/dpm2012short_md.md)] can’t find any of the computers that you specified in the .txt file or that you entered in the **Text file location** box, the failed set of computers is placed in a log file. Click the **Failed to add machines** link at the bottom of the page to open the log file.
+        If [!INCLUDE[dpm2012short](./Token/dpm2012short_md.md)] can’t find any of the computers that you specified in the .txt file or that you entered in the **Text file location** box, the failed set of computers is placed in a log file. Click the **Failed to add machines** link at the bottom of the page to open the log file.
 
     -   On the **Specify Inclusions and Exclusions** page, specify the folders to include or exclude for protection on the selected computers. To select from a list of well\-known folders, such as **Documents**, click the drop\-down list. Note that:
 
-        -   When you exclude a folder, and then specify a separate inclusion rule for a subfolder, [!INCLUDE[dpm2012short](../Token/dpm2012short_md.md)] doesn’t back up the subfolder. The exclusion rule overrides the inclusion rule.
+        -   When you exclude a folder, and then specify a separate inclusion rule for a subfolder, [!INCLUDE[dpm2012short](./Token/dpm2012short_md.md)] doesn’t back up the subfolder. The exclusion rule overrides the inclusion rule.
 
-        -   When you include a folder, and then specify a separate exclude rule for a subfolder, [!INCLUDE[dpm2012short](../Token/dpm2012short_md.md)] backs up the entire folder, except for the excluded subfolder.
+        -   When you include a folder, and then specify a separate exclude rule for a subfolder, [!INCLUDE[dpm2012short](./Token/dpm2012short_md.md)] backs up the entire folder, except for the excluded subfolder.
 
-        -   When you include a well\-known folder such as **Documents**, [!INCLUDE[dpm2012short](../Token/dpm2012short_md.md)] locates the **Documents** folder for all users on the computer, and then applies the rule. For example, if the user profile for computer **Comp1** contains the **Documents** folder for both User1 and User2, [!INCLUDE[dpm2012short](../Token/dpm2012short_md.md)] will back up both folders.
+        -   When you include a well\-known folder such as **Documents**, [!INCLUDE[dpm2012short](./Token/dpm2012short_md.md)] locates the **Documents** folder for all users on the computer, and then applies the rule. For example, if the user profile for computer **Comp1** contains the **Documents** folder for both User1 and User2, [!INCLUDE[dpm2012short](./Token/dpm2012short_md.md)] will back up both folders.
 
     -   In the **Folder** column you type the folder names using variables such as *programfiles*, or you can use the exact folder name. Select **Include** or **Exclude** for each entry in the **Rule** column.
 
@@ -76,7 +76,7 @@ Read through the [Back up client computers with DPM](../Topic/Back-up-client-com
 
     -   Under **File type exclusions** you can specify the file types to exclude using their file extensions.
 
-5.  On the Allocate Storage page we recommend that you co\-located multiple client data sources to one replica volume if you have a large number of client computers. You won’t be able to protect 1000 or more client computers with one [!INCLUDE[dpm2012short](../Token/dpm2012short_md.md)] server without co\-locating your data. We recommend that you do not co\-locate if you have less than ten client computers in a protection group. Select **Automatically grow the volumes** to automatically increase size when more disk space is required for protecting data on the client computers.
+5.  On the Allocate Storage page we recommend that you co\-located multiple client data sources to one replica volume if you have a large number of client computers. You won’t be able to protect 1000 or more client computers with one [!INCLUDE[dpm2012short](./Token/dpm2012short_md.md)] server without co\-locating your data. We recommend that you do not co\-locate if you have less than ten client computers in a protection group. Select **Automatically grow the volumes** to automatically increase size when more disk space is required for protecting data on the client computers.
 
 6.  After you create the protection group initial replication of the data occurs. Backup then takes place in line with the protection group settings.
 
@@ -108,4 +108,5 @@ After the protection group’s been created the initial replication occurs and D
 2.  In Options click **Alert Publishing** > **Publish Active Alerts**.
 
 3.  After you enable **Alert Publishing** all existing DPM alerts that might require a user action are published to the **DPM Alerts** event log. The Operations Manager agent that is installed on the DPM server then publishes these alerts to the Operations Manager and continues to update the console as new alerts are generated.
+
 

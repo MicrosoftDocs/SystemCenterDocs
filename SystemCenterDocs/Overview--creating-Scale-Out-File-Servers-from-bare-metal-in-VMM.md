@@ -8,7 +8,7 @@ ms.topic: article
 ms.assetid: ad4b7faa-26fb-4f3f-849e-e563162956cf
 ---
 # Overview: creating Scale-Out File Servers from bare metal in VMM
-The procedures in this section describe how to use [!INCLUDE[vmm12sp1_long](../Token/vmm12sp1_long_md.md)] to discover physical computers \(bare\-metal computers\) on the network, automatically install one of the operating systems listed in this topic, and provision the computers into managed Scale\-Out File Servers.
+The procedures in this section describe how to use [!INCLUDE[vmm12sp1_long](./Token/vmm12sp1_long_md.md)] to discover physical computers \(bare\-metal computers\) on the network, automatically install one of the operating systems listed in this topic, and provision the computers into managed Scale\-Out File Servers.
 
 ## <a name="BKMK_workflow"></a>Workflow and deployment process
 The following sequence describes the workflow and deployment process for provisioning bare\-metal computers into Scale\-Out File Servers.
@@ -19,7 +19,7 @@ The following sequences describes the workflow and deployment process for provis
 
 -   [2. Run the appropriate wizard and scripts](#BKMK_Wiz)
 
-### <a name="BKMK_Prep"></a>1. Prepare the computers and the[!INCLUDE[vmm12short](../Token/vmm12short_md.md)] environment
+### <a name="BKMK_Prep"></a>1. Prepare the computers and the[!INCLUDE[vmm12short](./Token/vmm12short_md.md)] environment
 
 1.  Perform initial configuration of the physical computers, including:
 
@@ -29,17 +29,17 @@ The following sequences describes the workflow and deployment process for provis
 
     -   Configuring the logon credentials and IP address settings for the BMC on each computer.
 
-    For more information, see [Prerequisites: creating Scale-Out File Servers from bare metal with VMM](../Topic/Prerequisites--creating-Scale-Out-File-Servers-from-bare-metal-with-VMM.md).
+    For more information, see [Prerequisites: creating Scale-Out File Servers from bare metal with VMM](./Prerequisites--creating-Scale-Out-File-Servers-from-bare-metal-with-VMM.md).
 
 2.  Create Domain Name System \(DNS\) entries and Active Directory computer accounts for the computer names that will be provisioned, and allow time for DNS replication to occur.
 
     This step is not required, but it is strongly recommended in an environment where you have multiple DNS servers, where DNS replication may take some time.
 
-3.  Prepare the PXE server environment, and add the PXE server to [!INCLUDE[vmm12short](../Token/vmm12short_md.md)] management, as described in [Prerequisites: creating Scale-Out File Servers from bare metal with VMM](../Topic/Prerequisites--creating-Scale-Out-File-Servers-from-bare-metal-with-VMM.md) and [How to add a PXE server to VMM](../Topic/How-to-add-a-PXE-server-to-VMM.md).
+3.  Prepare the PXE server environment, and add the PXE server to [!INCLUDE[vmm12short](./Token/vmm12short_md.md)] management, as described in [Prerequisites: creating Scale-Out File Servers from bare metal with VMM](./Prerequisites--creating-Scale-Out-File-Servers-from-bare-metal-with-VMM.md) and [How to add a PXE server to VMM](./How-to-add-a-PXE-server-to-VMM.md).
 
-4.  Add the required resources to the [!INCLUDE[vmm12short](../Token/vmm12short_md.md)] library.
+4.  Add the required resources to the [!INCLUDE[vmm12short](./Token/vmm12short_md.md)] library.
 
-    These resources include a generalized virtual hard disk with an appropriate operating system \(as listed in [Prerequisites: creating Scale-Out File Servers from bare metal with VMM](../Topic/Prerequisites--creating-Scale-Out-File-Servers-from-bare-metal-with-VMM.md)\) that will be used as the base image, and optional driver files to add to the operating system during installation.
+    These resources include a generalized virtual hard disk with an appropriate operating system \(as listed in [Prerequisites: creating Scale-Out File Servers from bare metal with VMM](./Prerequisites--creating-Scale-Out-File-Servers-from-bare-metal-with-VMM.md)\) that will be used as the base image, and optional driver files to add to the operating system during installation.
 
 5.  In the library, create one or more physical computer profiles that include:
 
@@ -49,7 +49,7 @@ The following sequences describes the workflow and deployment process for provis
 
     -   Operating system configuration settings.
 
-    For more information, see [How to create a physical computer profile to provision hosts or host cluster nodes from bare metal in VMM](../Topic/How-to-create-a-physical-computer-profile-to-provision-hosts-or-host-cluster-nodes-from-bare-metal-in-VMM.md).
+    For more information, see [How to create a physical computer profile to provision hosts or host cluster nodes from bare metal in VMM](./How-to-create-a-physical-computer-profile-to-provision-hosts-or-host-cluster-nodes-from-bare-metal-in-VMM.md).
 
 ### <a name="BKMK_Wiz"></a>2. Run the wizard and scripts
 
@@ -63,9 +63,9 @@ The following sequences describes the workflow and deployment process for provis
 
     -   Start deploying the Scale\-Out File Server.
 
-    For more information, see [How to deploy a Scale-Out File Server from bare metal in VMM](../Topic/How-to-deploy-a-Scale-Out-File-Server-from-bare-metal-in-VMM.md).
+    For more information, see [How to deploy a Scale-Out File Server from bare metal in VMM](./How-to-deploy-a-Scale-Out-File-Server-from-bare-metal-in-VMM.md).
 
-2.  During the deployment process, the [!INCLUDE[vmm12short](../Token/vmm12short_md.md)] management server restarts the physical computers.
+2.  During the deployment process, the [!INCLUDE[vmm12short](./Token/vmm12short_md.md)] management server restarts the physical computers.
 
     The management servers restarts the computers by issuing “Power Off” and “Power On” commands to the Baseboard Management Controller \(BMC\) using out\-of\-band management. When the physical computers restart, the PXE server responds to the boot requests from the physical computers.
 
@@ -87,18 +87,18 @@ The following sequences describes the workflow and deployment process for provis
 
     -   File server role.
 
-    After the [!INCLUDE[vmm12short](../Token/vmm12short_md.md)] management server configures the cluster nodes, it creates the cluster.
+    After the [!INCLUDE[vmm12short](./Token/vmm12short_md.md)] management server configures the cluster nodes, it creates the cluster.
 
-5.  The [!INCLUDE[vmm12short](../Token/vmm12short_md.md)] management server installs the Scale\-Out File Server role on the new cluster.
+5.  The [!INCLUDE[vmm12short](./Token/vmm12short_md.md)] management server installs the Scale\-Out File Server role on the new cluster.
 
-6.  The [!INCLUDE[vmm12short](../Token/vmm12short_md.md)] management server runs any post\-deployment scripts, restarting the computers as specified by the scripts.
+6.  The [!INCLUDE[vmm12short](./Token/vmm12short_md.md)] management server runs any post\-deployment scripts, restarting the computers as specified by the scripts.
 
-7.  At the end of the deployment process, the [!INCLUDE[vmm12short](../Token/vmm12short_md.md)] management server restarts the computers.
+7.  At the end of the deployment process, the [!INCLUDE[vmm12short](./Token/vmm12short_md.md)] management server restarts the computers.
 
-8.  You can now configure storage pools and file shares on the Scale\-Out File Server as described in the section [Configuring storage using Scale-Out File Servers in VMM](../Topic/Configuring-storage-using-Scale-Out-File-Servers-in-VMM.md).
+8.  You can now configure storage pools and file shares on the Scale\-Out File Server as described in the section [Configuring storage using Scale-Out File Servers in VMM](./Configuring-storage-using-Scale-Out-File-Servers-in-VMM.md).
 
 ## <a name="BKMK_example"></a>Example naming overview
-The example names in this section are intended to demonstrate the concepts used when provisioning bare\-metal computers in [!INCLUDE[vmm12short](../Token/vmm12short_md.md)].
+The example names in this section are intended to demonstrate the concepts used when provisioning bare\-metal computers in [!INCLUDE[vmm12short](./Token/vmm12short_md.md)].
 
 The following table summarizes the example names that could be used in this scenario. Some of these names are also used in examples in procedures in this section.
 
@@ -116,8 +116,9 @@ The following table summarizes the example names that could be used in this scen
 |Physical computer profiles|**WS12Ent SOFSNode \- Static**<br /><br />**WS12Ent SOFSNode \- DHCP**|
 
 ## See Also
-[Deploying Scale-Out File Servers from bare metal with VMM](../Topic/Deploying-Scale-Out-File-Servers-from-bare-metal-with-VMM.md)
-[Managing Scale-Out File Servers with VMM](../Topic/Managing-Scale-Out-File-Servers-with-VMM.md)
-[Managing storage resources and capacity with VMM](../Topic/Managing-storage-resources-and-capacity-with-VMM.md)
-[Managing fabric resources with VMM](../Topic/Managing-fabric-resources-with-VMM.md)
+[Deploying Scale-Out File Servers from bare metal with VMM](./Deploying-Scale-Out-File-Servers-from-bare-metal-with-VMM.md)
+[Managing Scale-Out File Servers with VMM](./Managing-Scale-Out-File-Servers-with-VMM.md)
+[Managing storage resources and capacity with VMM](./Managing-storage-resources-and-capacity-with-VMM.md)
+[Managing fabric resources with VMM](./Managing-fabric-resources-with-VMM.md)
+
 

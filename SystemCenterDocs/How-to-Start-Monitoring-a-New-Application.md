@@ -11,7 +11,7 @@ ms.topic: article
 ms.assetid: cc1f2e64-0fa0-4d7f-8127-1e4586b9e2d9
 ---
 # How to Start Monitoring a New Application
-When you have a new application that you are learning about, you can use the .NET Application Performance Monitoring template in [!INCLUDE[om12long](../Token/om12long_md.md)] to configure monitoring for it. Here are some settings to start with that will help you get to know your new application. In addition, it is ideal that you begin monitoring in a test or development environment.
+When you have a new application that you are learning about, you can use the .NET Application Performance Monitoring template in [!INCLUDE[om12long](./Token/om12long_md.md)] to configure monitoring for it. Here are some settings to start with that will help you get to know your new application. In addition, it is ideal that you begin monitoring in a test or development environment.
 
 ## Monitoring Settings for a New Application
 Following this strategy for monitoring a new application will help you get to know how the application behaves within your system and for your customer.
@@ -53,14 +53,15 @@ Compare the new data to your baseline. You will begin to see the real average re
 After monitoring the application for a time with the new monitoring configuration, when you feel your application is healthy, increase the number of servers you are running the application on and monitoring from one to 10, for example. Once you have it running healthy at that level, increase the deployment and monitoring to more servers, and so on. This gradual rollout approach will help you gain confidence in the monitoring for that application and help ensure the health of your system.
 
 ### Begin Client\-Side Monitoring
-When you are confident that your application is running well within your system, it’s a good time to monitor what the customer experiences. This is what client\-side application monitoring does. To enable client\-side monitoring, see [How to Configure Monitoring for .NET Applications](../Topic/How-to-Configure-Monitoring-for-.NET-Applications.md)
+When you are confident that your application is running well within your system, it’s a good time to monitor what the customer experiences. This is what client\-side application monitoring does. To enable client\-side monitoring, see [How to Configure Monitoring for .NET Applications](./How-to-Configure-Monitoring-for-.NET-Applications.md)
 
 ### What the Operator can do with This Information
 Using this basic information, the operator can have a better idea where the problem is with the application or with the infrastructure and know whether it is something only to the development team can fix or the operator can address directly.
 
 ## See Also
-[How to Add, Enable, and Disable Namespaces](../Topic/How-to-Add,-Enable,-and-Disable-Namespaces.md)
-[Using Exception Handlers to Define Critical Exceptions](../Topic/Using-Exception-Handlers-to-Define-Critical-Exceptions.md)
-[Authoring Strategies for .NET Application Monitoring](../Topic/Authoring-Strategies-for-.NET-Application-Monitoring.md)
-[Application Monitoring Using the Default Settings](../Topic/Application-Monitoring-Using-the-Default-Settings.md)
+[How to Add, Enable, and Disable Namespaces](./How-to-Add,-Enable,-and-Disable-Namespaces.md)
+[Using Exception Handlers to Define Critical Exceptions](./Using-Exception-Handlers-to-Define-Critical-Exceptions.md)
+[Authoring Strategies for .NET Application Monitoring](./Authoring-Strategies-for-.NET-Application-Monitoring.md)
+[Application Monitoring Using the Default Settings](./Application-Monitoring-Using-the-Default-Settings.md)
+
 

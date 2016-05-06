@@ -14,7 +14,7 @@ ms.assetid: 262cd9b5-f651-4ba5-a5a7-a6a05baf9eef
 Here are some scenarios and settings to change during authoring that can help you receive the monitoring experience and data that are most helpful for you.
 
 ## Monitoring a New Application for which the Administrator has Little Knowledge
-Accepting all defaults can be a good way to start monitoring an application for which the administrator has very little or no knowledge. Then, after monitoring with all defaults for some time, the administrator can begin adjusting settings based on the monitoring alerts, Application Diagnostics data, and Application Advisor reports. For more information, see [How to Monitor Java Applications](../Topic/How-to-Monitor-Java-Applications.md).
+Accepting all defaults can be a good way to start monitoring an application for which the administrator has very little or no knowledge. Then, after monitoring with all defaults for some time, the administrator can begin adjusting settings based on the monitoring alerts, Application Diagnostics data, and Application Advisor reports. For more information, see [How to Monitor Java Applications](./How-to-Monitor-Java-Applications.md).
 
 ## Limit Monitoring to a Specific Set of Servers
 Defining a targeted group allows you to limit monitoring to a specific set of servers. For very large application deployments, you typically do not need to monitor all instances of the application. A representative sample is enough to get the data you need. Using only a representative sample will keep the amount of data collected and stored lower.
@@ -31,7 +31,8 @@ It is also possible for high sensitivity to hide problems. In the situation wher
 Application failure alerts are application, or code, failures that are detected within the application. You can choose not to receive application failure alerts, which will potentially occur very often if an application has problems because these kinds of alerts usually require code modifications to address. Turning this off reduces the “noise” of many alerts raised that cannot be directly resolved by the operations team.
 
 ## See Also
-[How to Monitor Java Applications](../Topic/How-to-Monitor-Java-Applications.md)
-[How to Configure Monitoring for Java Applications](../Topic/How-to-Configure-Monitoring-for-Java-Applications.md)
-[Monitoring .NET Applications](../Topic/Monitoring-.NET-Applications.md)
+[How to Monitor Java Applications](./How-to-Monitor-Java-Applications.md)
+[How to Configure Monitoring for Java Applications](./How-to-Configure-Monitoring-for-Java-Applications.md)
+[Monitoring .NET Applications](./Monitoring-.NET-Applications.md)
+
 

@@ -16,7 +16,7 @@ The three main activities involved with agent administration are discovery of ta
 ### Agents Inside a Trust Boundary
 
 #### Discovery
-Discovery requires that the TCP 135 \(RPC\), RPC range, and TCP 445 \(SMB\) ports remain open and that the SMB service is enabled. For UNIX\\Linux computers, default discovery and management occurs over TCP 1270, troubleshooting, and diagnostics discovery occur over SSH, TCP 22. Discovery and deployment over SSH, default TCP 22, can also be enabled to allow [!INCLUDE[om12short](../Token/om12short_md.md)] to install the WSMAN communication layer on the discovered UNIX\/Linux computer.
+Discovery requires that the TCP 135 \(RPC\), RPC range, and TCP 445 \(SMB\) ports remain open and that the SMB service is enabled. For UNIX\\Linux computers, default discovery and management occurs over TCP 1270, troubleshooting, and diagnostics discovery occur over SSH, TCP 22. Discovery and deployment over SSH, default TCP 22, can also be enabled to allow [!INCLUDE[om12short]./Token/om12short_md.md)] to install the WSMAN communication layer on the discovered UNIX\/Linux computer.
 
 #### Installation
 After a target device has been discovered, an agent can be deployed to it. Agent installation requires the following:
@@ -31,7 +31,7 @@ After a target device has been discovered, an agent can be deployed to it. Agent
 
 -   Windows Installer 3.1. To install, see [Windows Installer 3.1](http://go.microsoft.com/fwlink/p/?LinkId=86322) \(article 893803\) in the Microsoft Knowledge Base.
 
--   Microsoft Core XML services \(MSXML\) 6 on the [!INCLUDE[om12short](../Token/om12short_md.md)] product installation media in the \\msxml subdirectory.
+-   Microsoft Core XML services \(MSXML\) 6 on the [!INCLUDE[om12short]./Token/om12short_md.md)] product installation media in the \\msxml subdirectory.
 
 > [!NOTE]
 > Push agent installation will install MSXML 6 on the targeted device if it is not there.
@@ -44,7 +44,7 @@ For agents that lie outside the trust boundary of the management servers, the en
 
 Because the device is going to have an installed agent, the software, service, and port requirements remain the same. However, because there is no underlying infrastructure to support Kerberos authentication, certificates must be used on both sides of the connection.
 
-To simplify the cross trust boundary configuration, you can install an [!INCLUDE[om12short](../Token/om12short_md.md)] gateway server in the same trust boundary as the devices that you will monitor. The gateway server acts as a proxy so that all communication between the management server and agents is routed through the gateway server. This communication is done over a single port, TCP 5723, and requires certificates on the management server and the gateway server. In addition, the gateway server performs discovery and installation, and relays ongoing administration traffic on behalf of the management server to the agents. The use of gateway servers also reduces the volume of network traffic and is therefore useful in low bandwidth conditions
+To simplify the cross trust boundary configuration, you can install an [!INCLUDE[om12short]./Token/om12short_md.md)] gateway server in the same trust boundary as the devices that you will monitor. The gateway server acts as a proxy so that all communication between the management server and agents is routed through the gateway server. This communication is done over a single port, TCP 5723, and requires certificates on the management server and the gateway server. In addition, the gateway server performs discovery and installation, and relays ongoing administration traffic on behalf of the management server to the agents. The use of gateway servers also reduces the volume of network traffic and is therefore useful in low bandwidth conditions
 
 Gateway servers can also discover and manage UNIX\/Linux computers; this is done over TCP ports 1270 and as needed SSH TCP 22, this port is configurable.
 
@@ -58,4 +58,6 @@ Agentless monitoring of devices is performed by either a management server or by
 
 ## See Also
 [Environmental Prerequisites for Operations Manager for System Center 2012](assetId:///95d59f73-5aa9-4616-b98c-30680406959a)
+
+
 

@@ -8,11 +8,11 @@ ms.topic: article
 ms.assetid: 2b2c11ea-cf0c-4558-95fb-a3c837f7f02c
 ---
 # How to scale out a service in VMM
-Use the following procedure to scale out a tier in a service that is deployed in [!INCLUDE[vmm12sp1_long](../Token/vmm12sp1_long_md.md)].
+Use the following procedure to scale out a tier in a service that is deployed in [!INCLUDE[vmm12sp1_long](./Token/vmm12sp1_long_md.md)].
 
 ### To scale out a service
 
-1.  In the [!INCLUDE[vmm12short](../Token/vmm12short_md.md)] console, open the VMs and Services workspace.
+1.  In the [!INCLUDE[vmm12short](./Token/vmm12short_md.md)] console, open the VMs and Services workspace.
 
 2.  Select the private cloud or host group to which you deployed the service.
 
@@ -57,10 +57,11 @@ Use the following procedure to scale out a tier in a service that is deployed in
     > [!TIP]
     > Deploying a virtual machine can take 15 minutes or longer. You can perform other tasks in the VMM console while you monitor the job.
 
-11. After the **Create virtual machine** job completes successfully, open the VMs and Services workspace and verify that the new virtual machine was added to the tier of the service. For information about viewing a service and its tiers, see [How to view and manage a deployed service](../Topic/How-to-view-and-manage-a-deployed-service.md).
+11. After the **Create virtual machine** job completes successfully, open the VMs and Services workspace and verify that the new virtual machine was added to the tier of the service. For information about viewing a service and its tiers, see [How to view and manage a deployed service](./How-to-view-and-manage-a-deployed-service.md).
 
 ## See Also
-[Scaling out services in VMM](../Topic/Scaling-out-services-in-VMM.md)
-[Managing services with VMM](../Topic/Managing-services-with-VMM.md)
-[Managing tenant resources with VMM](../Topic/Managing-tenant-resources-with-VMM.md)
+[Scaling out services in VMM](./Scaling-out-services-in-VMM.md)
+[Managing services with VMM](./Managing-services-with-VMM.md)
+[Managing tenant resources with VMM](./Managing-tenant-resources-with-VMM.md)
+
 

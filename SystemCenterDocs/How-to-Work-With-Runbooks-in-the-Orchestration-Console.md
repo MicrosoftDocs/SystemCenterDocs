@@ -61,7 +61,8 @@ Use the following steps to run a runbook, to view the status of the jobs and ins
 6.  If the runbook was started successfully, you receive a confirmation message that the job was stopped. If the runbook has no running jobs, you receive a message that no job was running.
 
 ## See Also
-[Overview of Orchestration Console](../Topic/Overview-of-Orchestration-Console.md)
-[Orchestration Console Browser Requirements](../Topic/Orchestration-Console-Browser-Requirements.md)
-[Orchestration Console Browser Requirements](../Topic/Orchestration-Console-Browser-Requirements.md)
+[Overview of Orchestration Console](./Overview-of-Orchestration-Console.md)
+[Orchestration Console Browser Requirements](./Orchestration-Console-Browser-Requirements.md)
+[Orchestration Console Browser Requirements](./Orchestration-Console-Browser-Requirements.md)
+
 

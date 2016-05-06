@@ -116,7 +116,7 @@ robots: noindex,nofollow
               <tr>
                 <TD>
                   <para>
-                    <token>winblue_server_2</token>
+                    <token>winblue_server_./Token>
                   </para>
                 </TD>
                 <TD>
@@ -129,7 +129,7 @@ robots: noindex,nofollow
               <tr>
                 <TD>
                   <para>
-                    <token>win8_server_2</token>
+                    <token>win8_server_./Token>
                   </para>
                 </TD>
                 <TD>
@@ -164,7 +164,7 @@ robots: noindex,nofollow
               <tr>
                 <TD>
                   <para>
-                    <token>winthreshold_client_1</token>
+                    <token>winthreshold_client_./Token>
                   </para>
                 </TD>
                 <TD>
@@ -177,7 +177,7 @@ robots: noindex,nofollow
               <tr>
                 <TD>
                   <para>
-                    <token>winblue_client_2</token>
+                    <token>winblue_client_./Token>
                   </para>
                 </TD>
                 <TD>
@@ -190,7 +190,7 @@ robots: noindex,nofollow
               <tr>
                 <TD>
                   <para>
-                    <token>win8_client_2</token>
+                    <token>win8_client_./Token>
                   </para>
                 </TD>
                 <TD>
@@ -232,7 +232,7 @@ robots: noindex,nofollow
               <tr>
                 <TD>
                   <para>
-                    <token>winthreshold_client_1</token>
+                    <token>winthreshold_client_./Token>
                   </para>
                 </TD>
                 <TD>
@@ -245,7 +245,7 @@ robots: noindex,nofollow
               <tr>
                 <TD>
                   <para>
-                    <token>winblue_client_2</token>
+                    <token>winblue_client_./Token>
                   </para>
                 </TD>
                 <TD>
@@ -258,7 +258,7 @@ robots: noindex,nofollow
               <tr>
                 <TD>
                   <para>
-                    <token>win8_client_2</token>
+                    <token>win8_client_./Token>
                   </para>
                 </TD>
                 <TD>
@@ -747,3 +747,4 @@ robots: noindex,nofollow
     <legacyLink xlink:href="990ff94a-30fb-434b-b4a2-3804a5245ba6">Linux and FreeBSD Virtual Machines on Hyper-V</legacyLink>
   </relatedTopics>
 </developerConceptualDocument>
+

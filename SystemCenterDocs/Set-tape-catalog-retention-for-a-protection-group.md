@@ -21,3 +21,4 @@ DPM maintains metadata for each tape in a database, referred to as the *tape cat
 
 3.  If you want DPM to alert you when the DPM database reaches a specific size, in the **DPM Database** section, select **Alert me when the DPM database size reaches**, and then specify the size of the database.
 
+

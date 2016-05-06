@@ -11,10 +11,10 @@ ms.topic: article
 ms.assetid: ec0035ba-4997-4340-88f1-05565b4ea796
 ---
 # How to Configure Clients for Client Monitoring
-This topic provides the procedure to configure clients for the Client Monitoring feature of [!INCLUDE[om12long](../Token/om12long_md.md)].
+This topic provides the procedure to configure clients for the Client Monitoring feature of [!INCLUDE[om12long](./Token/om12long_md.md)].
 
 > [!IMPORTANT]
-> You must first configure a management server for the server component of Client Monitoring by running the Client Monitoring Configuration Wizard. For more information, see [How to Configure a Management Server for Client Monitoring](../Topic/How-to-Configure-a-Management-Server-for-Client-Monitoring.md).
+> You must first configure a management server for the server component of Client Monitoring by running the Client Monitoring Configuration Wizard. For more information, see [How to Configure a Management Server for Client Monitoring](./How-to-Configure-a-Management-Server-for-Client-Monitoring.md).
 
 ### To configure clients for Client Monitoring in Operations Manager
 
@@ -31,9 +31,10 @@ This topic provides the procedure to configure clients for the Client Monitoring
     > Use the same procedure to **Disable** the Group Policy settings, thereby disabling Client Monitoring on the clients.
 
 ## See Also
-[Client Monitoring Using Agentless Exception Monitoring in Operations Manager](../Topic/Client-Monitoring-Using-Agentless-Exception-Monitoring-in-Operations-Manager.md)
-[How to Configure a Management Server for Client Monitoring](../Topic/How-to-Configure-a-Management-Server-for-Client-Monitoring.md)
-[How to Customize Client Monitoring Data Collection and Solution Response URLs for Error Groups](../Topic/How-to-Customize-Client-Monitoring-Data-Collection-and-Solution-Response-URLs-for-Error-Groups.md)
-[How to Configure Error Transmission Settings for Client Monitoring in Operations Manager](../Topic/How-to-Configure-Error-Transmission-Settings-for-Client-Monitoring-in-Operations-Manager.md)
-[Forwarding Client Error Reports &#40;Client Monitoring&#41;](../Topic/Forwarding-Client-Error-Reports--Client-Monitoring-.md)
+[Client Monitoring Using Agentless Exception Monitoring in Operations Manager](./Client-Monitoring-Using-Agentless-Exception-Monitoring-in-Operations-Manager.md)
+[How to Configure a Management Server for Client Monitoring](./How-to-Configure-a-Management-Server-for-Client-Monitoring.md)
+[How to Customize Client Monitoring Data Collection and Solution Response URLs for Error Groups](./How-to-Customize-Client-Monitoring-Data-Collection-and-Solution-Response-URLs-for-Error-Groups.md)
+[How to Configure Error Transmission Settings for Client Monitoring in Operations Manager](./How-to-Configure-Error-Transmission-Settings-for-Client-Monitoring-in-Operations-Manager.md)
+[Forwarding Client Error Reports &#40;Client Monitoring&#41;](./Forwarding-Client-Error-Reports--Client-Monitoring-.md)
+
 

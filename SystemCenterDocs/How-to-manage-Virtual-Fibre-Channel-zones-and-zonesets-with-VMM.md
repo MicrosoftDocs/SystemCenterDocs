@@ -102,7 +102,8 @@ Use the following procedures to view the zonesets associated with a fabric, edit
 5.  When complete, click **OK**.
 
 ## See Also
-[Managing Virtual Fibre Channel fabrics with VMM](../Topic/Managing-Virtual-Fibre-Channel-fabrics-with-VMM.md)
-[Managing storage resources and capacity with VMM](../Topic/Managing-storage-resources-and-capacity-with-VMM.md)
-[Managing fabric resources with VMM](../Topic/Managing-fabric-resources-with-VMM.md)
+[Managing Virtual Fibre Channel fabrics with VMM](./Managing-Virtual-Fibre-Channel-fabrics-with-VMM.md)
+[Managing storage resources and capacity with VMM](./Managing-storage-resources-and-capacity-with-VMM.md)
+[Managing fabric resources with VMM](./Managing-fabric-resources-with-VMM.md)
+
 

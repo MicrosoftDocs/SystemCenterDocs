@@ -11,7 +11,7 @@ ms.topic: article
 ms.assetid: 5caa64ee-9163-4f9f-b7ae-257b8c15e03c
 ---
 # Backup methods for the DPM database
-As part of your DPM backup strategy, you’ll have to back up the [!INCLUDE[dpm2012short](../Token/dpm2012short_md.md)] database. The DPM database is named DPMDB. This database contains the DPM configuration together with data about DPM’s backups. In case of disaster, you can rebuild most of the functionality of a DPM server by using a recent backup of the database. Assuming you can restore the database, tape\- based backups are accessible, and they maintain all protection group settings and backup schedules. If the DPM storage pool disks were not affected by the outage, disk\-based backups are also usable after a rebuild. You can back up the database by using several different methods.
+As part of your DPM backup strategy, you’ll have to back up the [!INCLUDE[dpm2012short](./Token/dpm2012short_md.md)] database. The DPM database is named DPMDB. This database contains the DPM configuration together with data about DPM’s backups. In case of disaster, you can rebuild most of the functionality of a DPM server by using a recent backup of the database. Assuming you can restore the database, tape\- based backups are accessible, and they maintain all protection group settings and backup schedules. If the DPM storage pool disks were not affected by the outage, disk\-based backups are also usable after a rebuild. You can back up the database by using several different methods.
 
 |Database backup method|Advantages|Disadvantages|
 |--------------------------|--------------|-----------------|
@@ -410,11 +410,11 @@ order by CreationDate desc
 
 **Configure the backup**
 
-1.  In [!INCLUDE[dpm2012short](../Token/dpm2012short_md.md)] Administrator Console, click **Protection** on the navigation bar and click **New** in the **Actions** pane.
+1.  In [!INCLUDE[dpm2012short](./Token/dpm2012short_md.md)] Administrator Console, click **Protection** on the navigation bar and click **New** in the **Actions** pane.
 
-2.  On the **Select group members** page, if you’re running SQL Server remotely select the remote SQL Server installed and select **DPM database**. If SQL Server is running on the DPM server expand the [!INCLUDE[dpm2012short](../Token/dpm2012short_md.md)] server item and select **DPMDB**.
+2.  On the **Select group members** page, if you’re running SQL Server remotely select the remote SQL Server installed and select **DPM database**. If SQL Server is running on the DPM server expand the [!INCLUDE[dpm2012short](./Token/dpm2012short_md.md)] server item and select **DPMDB**.
 
-3.  On the **Select data protection method** page, select **I want short\-term protection using tape**.  Specify the short\-term protection policy options. We recommend a retention range of two weeks for [!INCLUDE[dpm2012short](../Token/dpm2012short_md.md)] databases.
+3.  On the **Select data protection method** page, select **I want short\-term protection using tape**.  Specify the short\-term protection policy options. We recommend a retention range of two weeks for [!INCLUDE[dpm2012short](./Token/dpm2012short_md.md)] databases.
 
 4.  In the **Select Library and Tape Details** page select the library you want to use for your tape backups. In **Drives allocated**, select the number of drives you want to allocate for the tape backups. In the **Copy library**section, if you want to copy data across multiple sites, select the library you want to use for the multiple backup copies.
 
@@ -618,4 +618,5 @@ Your tape library status may have changed.
 Recommendation: Go to the Library tab in the Management Task Area of the DPM Administration Console and choose the Inventory Library action.
 
 ```
+
 

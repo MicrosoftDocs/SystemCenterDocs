@@ -11,15 +11,15 @@ ms.topic: article
 ms.assetid: 2f228f97-54fd-4126-8a05-2065aab4dc19
 ---
 # How to Install an Operations Manager Management Server
-In [!INCLUDE[scom_threshold_1](../Token/scom_threshold_1_md.md)] the first feature you install is the management server. The setup procedure creates the operational database and data warehouse database. The procedure described in this topic assumes that you have already installed a supported version of Microsoft SQL Server locally on the  management server. However, you can specify an instance of SQL Server that is installed on a separate server.
+In [!INCLUDE[scom_threshold_1](./Token/scom_threshold_1_md.md)] the first feature you install is the management server. The setup procedure creates the operational database and data warehouse database. The procedure described in this topic assumes that you have already installed a supported version of Microsoft SQL Server locally on the  management server. However, you can specify an instance of SQL Server that is installed on a separate server.
 
-You must ensure that your server meets the minimum system requirements for [!INCLUDE[scom_threshold_1](../Token/scom_threshold_1_md.md)]. For more information, see [System Requirements for System Center Technical Preview](../Topic/System-Requirements-for-System-Center-Technical-Preview.md) .
+You must ensure that your server meets the minimum system requirements for [!INCLUDE[scom_threshold_1](./Token/scom_threshold_1_md.md)]. For more information, see [System Requirements for System Center Technical Preview](./System-Requirements-for-System-Center-Technical-Preview.md) .
 
 ### To install the management server in the management group
 
 1.  Log on to the server by using an account that has local administrative credentials.
 
-2.  On the [!INCLUDE[om12short](../Token/om12short_md.md)] installation media, run **Setup.exe**, and then click **Install**.
+2.  On the [!INCLUDE[om12short](./Token/om12short_md.md)] installation media, run **Setup.exe**, and then click **Install**.
 
 3.  On the **Getting Started**, **Select features to install** page, select the **Management server** feature. You can also select any of the additional features listed. For example, to also install the Operations console, select **Operations console**. To read more about each feature and its requirements, click **Expand all**, or expand the buttons next to each feature, and then click **Next**.
 
@@ -111,7 +111,7 @@ You must ensure that your server meets the minimum system requirements for [!INC
     > [!NOTE]
     > Setup.exe requires administrator privileges because the Setup process requires access to system processes that can only be used by a local administrator.
 
-3.  Change the path to where the [!INCLUDE[om12short](../Token/om12short_md.md)] setup.exe file is located, and run the following command.
+3.  Change the path to where the [!INCLUDE[om12short](./Token/om12short_md.md)] setup.exe file is located, and run the following command.
 
     > [!IMPORTANT]
     > The following command assumes that you specified the Local System for the Management server action account \(`/UseLocalSystemActionAccount`\) and Data Access service \(`/UseLocalSystemDASAccount`\). To specify a domain\\user name for these accounts, you must provide the following parameters instead.
@@ -139,5 +139,6 @@ You must ensure that your server meets the minimum system requirements for [!INC
     ```
 
 ## See Also
-[Distributed Deployment of Operations Manager](../Topic/Distributed-Deployment-of-Operations-Manager.md)
+[Distributed Deployment of Operations Manager](./Distributed-Deployment-of-Operations-Manager.md)
+
 

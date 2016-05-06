@@ -33,3 +33,4 @@ The following table lists the published data items.
 |Dial\-up or VPN name|The name assigned to the dial\-up connection|
 |Line status|Indicates whether the network connection is connected or disconnected|
 
+

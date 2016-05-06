@@ -58,3 +58,4 @@ The following table lists the published data items.
 |Notify if file security changed|Indicates that the **Security** check box was selected.|
 |User name|The user name used to access the folder if it was on a remote computer.|
 
+

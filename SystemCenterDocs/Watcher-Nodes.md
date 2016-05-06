@@ -23,7 +23,7 @@ When you use one of these templates, you must specify one or more watcher nodes 
 
 **Conceptual view of watcher nodes**
 
-![](../Image/OM12Author_WatcherNode.gif)
+![](/Image/OM12Author_WatcherNode.gif)
 
 A watcher node can either be the agent with the application or feature installed, or it can be a separate agent. If the watcher node is a separate computer, in addition to ensuring that the application or feature is healthy, the watcher node can validate that clients can connect to it and  test such additional features as security, network availability, and firewalls.
 
@@ -32,7 +32,8 @@ You can best ensure availability of an application or feature by specifying watc
 You can also specify the computer with the application or feature itself as a watcher node. This watcher node performs the test without relying on any external features.
 
 ## See Also
-[TCP Port Template](../Topic/TCP-Port-Template.md)
-[OLE DB Data Source Template](../Topic/OLE-DB-Data-Source-Template.md)
-[Web Application Transaction Monitoring Template](../Topic/Web-Application-Transaction-Monitoring-Template.md)
+[TCP Port Template](./TCP-Port-Template.md)
+[OLE DB Data Source Template](./OLE-DB-Data-Source-Template.md)
+[Web Application Transaction Monitoring Template](./Web-Application-Transaction-Monitoring-Template.md)
+
 

@@ -48,7 +48,7 @@ Use the following information to configure the Query Database activity.
 |**Database type**|Select the **Database type** from the drop\-down list. The options include the following:<br /><br />-   Access<br />-   ODBC<br />-   Oracle<br />-   SQL Server|
 
 > [!IMPORTANT]
-> When [!INCLUDE[orchshort](../Token/orchshort_md.md)] is installed on a non\-English operating system, and you set the **Connection** for **Database type** to **SQL Server**, the Server input value cannot be **localhost**. You must use the actual computer name.
+> When [!INCLUDE[orchshort](./Token/orchshort_md.md)] is installed on a non\-English operating system, and you set the **Connection** for **Database type** to **SQL Server**, the Server input value cannot be **localhost**. You must use the actual computer name.
 
 Configuration instructions for each **Connection** tab **Database type** are listed in the following tables.
 
@@ -115,4 +115,5 @@ The following table lists the published data items.
 |Access workgroup information file|The Access workgroup file that is associated with the Access database file. This published xata will only be available when **Access** is selected on the **Connection** tab.|
 |For each row published|
 |Full line as a string with fields separated by ;|The entire the row that was published with each field in the row separated by a semi\-colon \(;\). Use the **Field** data manipulation function to obtain the values of a field within the row|
+
 

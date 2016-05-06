@@ -11,7 +11,7 @@ ms.topic: article
 ms.assetid: ff46b3ca-8afc-4470-ab84-cd741f3791c5
 ---
 # Attributes
-*Attributes* in [!INCLUDE[om12short](../Token/om12short_md.md)] are properties of a class. Each instance of the class has the same set of attributes, but each instance can have its own value for each attribute. These values are populated when the object is discovered.
+*Attributes* in [!INCLUDE[om12short]./Token/om12short_md.md)] are properties of a class. Each instance of the class has the same set of attributes, but each instance can have its own value for each attribute. These values are populated when the object is discovered.
 
 ## Uses for Attributes
 The following table lists different ways that attributes can be used.
@@ -29,7 +29,7 @@ You may want to add custom attributes to existing classes so that you can collec
 When you create a new attribute, a new class is created based on the existing class. The new class has the new attribute and inherits all of the attributes from the original class, so that it is interchangeable with the original class. In order to use the new attribute, you must select the new class. An instance of the new class will be discovered for each member of the original class and the new attribute populated only on those agents where the specified data is found.
 
 > [!WARNING]
-> When you create a new attribute in the Operations console, a new class is created for each custom attribute that you create. Even if you create multiple attributes on the same class, a new class will be created for each one. Too many classes can result in excessive overhead. If you create more than a few custom attributes for a class, you should use another tool such as the [!INCLUDE[om2007r2long](../Token/om2007r2long_md.md)] Authoring Console that will allow you to create a single class with multiple attributes.
+> When you create a new attribute in the Operations console, a new class is created for each custom attribute that you create. Even if you create multiple attributes on the same class, a new class will be created for each one. Too many classes can result in excessive overhead. If you create more than a few custom attributes for a class, you should use another tool such as the [!INCLUDE[om2007r2long]./Token/om2007r2long_md.md)] Authoring Console that will allow you to create a single class with multiple attributes.
 
 ## Wizard Options
 When you run the **Create Attribute Wizard**, you will need to provide values for options in the following tables. Each table represents a single page in the wizard.
@@ -49,7 +49,7 @@ The **Discovery Method** page includes the method for populating the attribute a
 |----------|---------------|
 |Discovery Type|Specifies if the value of the attribute will be populated from the registry or from a WMI query.|
 |Target|The class to which to add the attribute.|
-|Management Pack|Management pack to store the attribute.<br /><br />For more information on management packs, see [Selecting a Management Pack File](../Topic/Selecting-a-Management-Pack-File.md).|
+|Management Pack|Management pack to store the attribute.<br /><br />For more information on management packs, see [Selecting a Management Pack File](./Selecting-a-Management-Pack-File.md).|
 
 ### Registry Probe Configuration
 The **Registry Probe Configuration** page includes the details of the registry key or value used to populate the attribute. This page is only displayed if the **Discovery Type** is **Registry**.
@@ -80,7 +80,7 @@ The following example procedure creates an attribute with the following details:
 
 #### To create a new attribute using the registry
 
-1.  If you don’t have a management pack for the application that you are monitoring, create one using the process in [Selecting a Management Pack File](../Topic/Selecting-a-Management-Pack-File.md).
+1.  If you don’t have a management pack for the application that you are monitoring, create one using the process in [Selecting a Management Pack File](./Selecting-a-Management-Pack-File.md).
 
 2.  In the Operations console, select the **Authoring** workspace, and then expand **Management Pack Objects**.
 
@@ -124,7 +124,7 @@ The following example procedure creates an attribute with the following details:
 
 #### To create a new attribute using WMI
 
-1.  If you don’t have a management pack for the application that you are monitoring, create one using the process in [Selecting a Management Pack File](../Topic/Selecting-a-Management-Pack-File.md).
+1.  If you don’t have a management pack for the application that you are monitoring, create one using the process in [Selecting a Management Pack File](./Selecting-a-Management-Pack-File.md).
 
 2.  In the Operations console, select the **Authoring** workspace, and then expand **Management Pack Objects**.
 
@@ -161,7 +161,9 @@ The following example procedure creates an attribute with the following details:
     5.  Click **Finish**.
 
 ## See Also
-[Base Classes](../Topic/Understanding-Classes-and-Objects.md#BaseClasses)
-[Script Monitors and Rules](../Topic/Script-Monitors-and-Rules.md)
-[Alerts](../Topic/Alerts.md)
+[Base Classes](./Understanding-Classes-and-Objects.md#BaseClasses)
+[Script Monitors and Rules](./Script-Monitors-and-Rules.md)
+[Alerts](./Alerts.md)
+
+
 

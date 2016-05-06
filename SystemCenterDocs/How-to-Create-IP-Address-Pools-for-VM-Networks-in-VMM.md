@@ -8,15 +8,15 @@ ms.topic: article
 ms.assetid: ae6e919f-0308-4e2f-a8ad-8d97ccba77dc
 ---
 # How to Create IP Address Pools for VM Networks in VMM
-You can use the following procedure to create a static IP address pool for a VM network in [!INCLUDE[vmm12short](../Token/vmm12short_md.md)] in [!INCLUDE[sc_threshold_1](../Token/sc_threshold_1_md.md)]. When you create a static IP address pool for a VM network, [!INCLUDE[vmm12short](../Token/vmm12short_md.md)] can assign static IP addresses to Windows\-based virtual machines \(running on any supported hypervisor platform\) that use the VM network. By using static IP address pools, IP address management for the virtual environment is brought within the scope of the VMM administrator.
+You can use the following procedure to create a static IP address pool for a VM network in [!INCLUDE[vmm12short](./Token/vmm12short_md.md)] in [!INCLUDE[sc_threshold_1](./Token/sc_threshold_1_md.md)]. When you create a static IP address pool for a VM network, [!INCLUDE[vmm12short](./Token/vmm12short_md.md)] can assign static IP addresses to Windows\-based virtual machines \(running on any supported hypervisor platform\) that use the VM network. By using static IP address pools, IP address management for the virtual environment is brought within the scope of the VMM administrator.
 
 > [!IMPORTANT]
-> For guidelines about when IP pools are necessary on a VM network, when they are optional, and when to create an IP pool in a logical network rather than a VM network, see [Guidelines for IP address pools](../Topic/Overview--plan-logical-networks,-network-sites,-and-IP-address-pools-in-VMM.md#BKMK_address_pools) in "Overview: plan logical networks, network sites, and IP address pools in VMM."
+> For guidelines about when IP pools are necessary on a VM network, when they are optional, and when to create an IP pool in a logical network rather than a VM network, see [Guidelines for IP address pools](./Overview--plan-logical-networks,-network-sites,-and-IP-address-pools-in-VMM.md#BKMK_address_pools) in "Overview: plan logical networks, network sites, and IP address pools in VMM."
 
 **Account requirements** To complete this procedure, you must be a member of the Administrator or Delegated Administrator user role.
 
 ## Prerequisites
-Perform this procedure only after all the other networking elements have been configured for your virtual machines, including the logical network \(which is used as a foundation for VM networks\), the network sites for the logical network, and the VM network for which you want to create IP address pools. For more information, see [Prerequisites for gateways in VMM](../Topic/Prerequisites-for-gateways-in-VMM.md).
+Perform this procedure only after all the other networking elements have been configured for your virtual machines, including the logical network \(which is used as a foundation for VM networks\), the network sites for the logical network, and the VM network for which you want to create IP address pools. For more information, see [Prerequisites for gateways in VMM](./Prerequisites-for-gateways-in-VMM.md).
 
 #### To create static IP address pools for VM networks in VMM
 
@@ -88,13 +88,14 @@ Perform this procedure only after all the other networking elements have been co
 > 
 > `Get-SCIPAddress –StaticIPAddressPool $ippool | Format-Table –property Address,AssignedToType,State`
 
-From time to time, you might need to release IP addresses that are in the pool but that are marked by [!INCLUDE[vmm12short](../Token/vmm12short_md.md)] as “inactive.” Releasing them makes them available for reassignment. For more information, see [How to release inactive IP addresses for VM networks in VMM](../Topic/How-to-release-inactive-IP-addresses-for-VM-networks-in-VMM.md).
+From time to time, you might need to release IP addresses that are in the pool but that are marked by [!INCLUDE[vmm12short](./Token/vmm12short_md.md)] as “inactive.” Releasing them makes them available for reassignment. For more information, see [How to release inactive IP addresses for VM networks in VMM](./How-to-release-inactive-IP-addresses-for-VM-networks-in-VMM.md).
 
-After a virtual machine has been deployed in [!INCLUDE[vmm12short](../Token/vmm12short_md.md)], you can view the IP address or addresses assigned to that virtual machine. To do this, right\-click the listing for the virtual machine, click **Properties**, click the **Hardware Configuration** tab, click the network adapter, and in the results pane, click the **Connection details** button.
+After a virtual machine has been deployed in [!INCLUDE[vmm12short](./Token/vmm12short_md.md)], you can view the IP address or addresses assigned to that virtual machine. To do this, right\-click the listing for the virtual machine, click **Properties**, click the **Hardware Configuration** tab, click the network adapter, and in the results pane, click the **Connection details** button.
 
 ## See Also
-[How to release inactive IP addresses for VM networks in VMM](../Topic/How-to-release-inactive-IP-addresses-for-VM-networks-in-VMM.md)
-[Prerequisites for gateways in VMM](../Topic/Prerequisites-for-gateways-in-VMM.md)
-[How to create a VM network for a VLAN in VMM](../Topic/How-to-create-a-VM-network-for-a-VLAN-in-VMM.md)
-[Overview: plan logical networks, network sites, and IP address pools in VMM](../Topic/Overview--plan-logical-networks,-network-sites,-and-IP-address-pools-in-VMM.md)
+[How to release inactive IP addresses for VM networks in VMM](./How-to-release-inactive-IP-addresses-for-VM-networks-in-VMM.md)
+[Prerequisites for gateways in VMM](./Prerequisites-for-gateways-in-VMM.md)
+[How to create a VM network for a VLAN in VMM](./How-to-create-a-VM-network-for-a-VLAN-in-VMM.md)
+[Overview: plan logical networks, network sites, and IP address pools in VMM](./Overview--plan-logical-networks,-network-sites,-and-IP-address-pools-in-VMM.md)
+
 

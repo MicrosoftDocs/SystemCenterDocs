@@ -11,11 +11,11 @@ ms.topic: article
 ms.assetid: 589ab8a8-f723-4da1-8488-683d4939c12a
 ---
 # Database Sizing and Performance
-Database sizing is the key to understanding the performance of [!INCLUDE[orchlong](../Token/orchlong_md.md)]. The runbook servers, management server, and web components all depend on the Orchestrator database for their operations. Problems with [!INCLUDE[orchshort](../Token/orchshort_md.md)] deployments can arise from an incomplete understanding of the types of data in the database and how to manage them.
+Database sizing is the key to understanding the performance of [!INCLUDE[orchlong](./Token/orchlong_md.md)]. The runbook servers, management server, and web components all depend on the Orchestrator database for their operations. Problems with [!INCLUDE[orchshort](./Token/orchshort_md.md)] deployments can arise from an incomplete understanding of the types of data in the database and how to manage them.
 
 Because the Runbook Designer communicates with the Orchestrator database \(through the management server\), poor database performance will impede that communication.
 
-The [!INCLUDE[orchshort](../Token/orchshort_md.md)] operator experience is based on two components: The **Orchestration Console** and the Web Service. The **Orchestration Console** is a Silverlight\-based application that depends on the Web Service for its connection to the Orchestrator database. The Web Service is an IIS application that connects to the database. Consequently, the Web Service and **Orchestration Console** are both dependent on the performance of the Orchestrator database.
+The [!INCLUDE[orchshort](./Token/orchshort_md.md)] operator experience is based on two components: The **Orchestration Console** and the Web Service. The **Orchestration Console** is a Silverlight\-based application that depends on the Web Service for its connection to the Orchestrator database. The Web Service is an IIS application that connects to the database. Consequently, the Web Service and **Orchestration Console** are both dependent on the performance of the Orchestrator database.
 
 Additionally, while the **Orchestration Console** is dependent on the Web Service, it also has logic unique to its function as a user interface and its own performance characteristics.
 
@@ -26,13 +26,13 @@ At a high level the Orchestrator database contains two kinds of data:
 
 -   Configuration Data
 
-    The [!INCLUDE[orchshort](../Token/orchshort_md.md)] infrastructure contains configuration data. This data is not a concern in the context of database growth because the storage requirements for this type of data are small.
+    The [!INCLUDE[orchshort](./Token/orchshort_md.md)] infrastructure contains configuration data. This data is not a concern in the context of database growth because the storage requirements for this type of data are small.
 
 -   Log Data
 
-    [!INCLUDE[orchshort](../Token/orchshort_md.md)] creates different types of log data, all of which can be viewed and managed in the **Runbook Designer**. The storage requirements for this data can vary in size and be large.
+    [!INCLUDE[orchshort](./Token/orchshort_md.md)] creates different types of log data, all of which can be viewed and managed in the **Runbook Designer**. The storage requirements for this data can vary in size and be large.
 
-    The following table lists the types of log data that can be stored in the Orchestrator database. [!INCLUDE[orchshort](../Token/orchshort_md.md)] also stores data in separate log files \(outside of the database\) for audit trails and tracing. For more information about all the types of log data, see [Orchestrator Logs](../Topic/Orchestrator-Logs.md).
+    The following table lists the types of log data that can be stored in the Orchestrator database. [!INCLUDE[orchshort](./Token/orchshort_md.md)] also stores data in separate log files \(outside of the database\) for audit trails and tracing. For more information about all the types of log data, see [Orchestrator Logs](./Orchestrator-Logs.md).
 
     |Type of Log Data|Location in Runbook Designer|Managed by Log Purge?|
     |--------------------|--------------------------------|-------------------------|
@@ -41,7 +41,7 @@ At a high level the Orchestrator database contains two kinds of data:
     |Audit history|**Audit History** tab|No|
 
 ### Platform Code and Domain Code
-[!INCLUDE[orchshort](../Token/orchshort_md.md)] runbook activities contains two distinct types of code:
+[!INCLUDE[orchshort](./Token/orchshort_md.md)] runbook activities contains two distinct types of code:
 
 -   Platform Code
 
@@ -64,7 +64,7 @@ The **Logging** tab on the **Properties** for a runbook allows you to optionally
 
 -   *Common Published Data*
 
-    The set of data items common to all activities. For a list, see the [Runbook Log Options](../Topic/Runbook-logs.md#LogOptions) section in [Runbook logs](../Topic/Runbook-logs.md).
+    The set of data items common to all activities. For a list, see the [Runbook Log Options](./Runbook-logs.md#LogOptions) section in [Runbook logs](./Runbook-logs.md).
 
     This logging option generates 6082 bytes for each activity.
 
@@ -80,9 +80,9 @@ The **Logging** tab on the **Properties** for a runbook allows you to optionally
 Setting logging options can significantly affect performance and increase database growth. Consider the scenario where the same runbook activity is run twice, first with data logging at the default level \(no published data options selected\) and then set with common published data selected. The domain code should take the same amount of time to complete. However, the platform code will take longer to run because it has to support 12 times the amount of common published data logging than it does with just default logging.
 
 ### Purging Logs
-The default options specified for the **Log Purge** feature in the **Runbook Designer** is configured to provide the best user experience for an out\-of\-the\-box [!INCLUDE[orchshort](../Token/orchshort_md.md)] deployment. Changing these values can change the performance characteristics of the environment, and should be implemented gradually and high\-watermarked, so that the impact of the change can be evaluated.
+The default options specified for the **Log Purge** feature in the **Runbook Designer** is configured to provide the best user experience for an out\-of\-the\-box [!INCLUDE[orchshort](./Token/orchshort_md.md)] deployment. Changing these values can change the performance characteristics of the environment, and should be implemented gradually and high\-watermarked, so that the impact of the change can be evaluated.
 
-For more information on automatic and manual purging of logs, see the [Purging Runbook Logs](../Topic/Runbook-logs.md#Purge) section of [Runbook logs](../Topic/Runbook-logs.md).
+For more information on automatic and manual purging of logs, see the [Purging Runbook Logs](./Runbook-logs.md#Purge) section of [Runbook logs](./Runbook-logs.md).
 
 ## Creating Performance Benchmarks
 To create a simple runbook to test logging growth you can use the Standard Activity **Compare Values** to create benchmarks of an Orchestrator environment.
@@ -181,7 +181,7 @@ The following table shows growth and performance estimates for the logging level
 ## Examples
 
 ### Example 1
-The following table describes the database sizing considerations for a deployment of [!INCLUDE[orchshort](../Token/orchshort_md.md)].
+The following table describes the database sizing considerations for a deployment of [!INCLUDE[orchshort](./Token/orchshort_md.md)].
 
 |Runbook Name|Number of Activities|Logging Level|Invocations per Day|
 |----------------|------------------------|-----------------|-----------------------|
@@ -203,7 +203,7 @@ Using the database sizing described above, you can estimate the storage requirem
 This example clearly illustrates the importance of making sound decisions for data logging. Runbook 4 contains only eight activities, but when configured at the Common Published Data Logging level, it consumes most of storage in the database because of the high frequency of invocation. Based on these results you may prefer to reduce the logging level of Runbook 4 to the Default logging configuration.
 
 ### Example 2
-The following table describes the database sizing considerations for another deployment of [!INCLUDE[orchshort](../Token/orchshort_md.md)].
+The following table describes the database sizing considerations for another deployment of [!INCLUDE[orchshort](./Token/orchshort_md.md)].
 
 |Runbook Name|Number of Activities|Logging Level|Invocations per Day|
 |----------------|------------------------|-----------------|-----------------------|
@@ -240,7 +240,8 @@ Use the following guidelines to manage database sizing and performance:
 -   Identify opportunities for improvement by making normalized comparisons of your measurements.
 
 ## See Also
-[Orchestrator Logs](../Topic/Orchestrator-Logs.md)
-[Runbook logs](../Topic/Runbook-logs.md)
-[Orchestrator Architecture](../Topic/Orchestrator-Architecture.md)
+[Orchestrator Logs](./Orchestrator-Logs.md)
+[Runbook logs](./Runbook-logs.md)
+[Orchestrator Architecture](./Orchestrator-Architecture.md)
+
 

@@ -48,7 +48,7 @@ Uninstall process:
 4.  Review the results and recommendations.
 
 ## Orchestrator rules
-[!INCLUDE[orchlong](../Token/orchlong_md.md)] configuration checks:
+[!INCLUDE[orchlong](./Token/orchlong_md.md)] configuration checks:
 
 |Orchestrator Component|Rule|Description|
 |--------------------------|--------|---------------|
@@ -65,4 +65,5 @@ Uninstall process:
 |Web components|Check memory on the server hosting the Orchestration Console|This rule checks that the memory allocated to the Orchestration Console server is greater than 2048MB. If the server has less than 2048MB you should monitor its performance to ensure it is meeting the expected goals in the environment. Please refer to [http:\/\/go.microsoft.com\/fwlink\/?LinkID\=242545](http://go.microsoft.com/fwlink/?LinkID=242545) for information on the Orchestrator Management Pack.|
 |Web components|Check users group managing runbook access|This rule checks that the windows group that is used to manage access to runbooks is configured as a domain group if the web components are not installed on the Management Server. The group must be a domain group in order for users to have access through the web service and Orchestration console when the web components are installed on a separate server than the Management Server. Please refer to [http:\/\/go.microsoft.com\/fwlink\/?LinkID\=239561](http://go.microsoft.com/fwlink/?LinkID=239561) for more information on configuring the Orchestrator users group.|
 |Designer|Check memory on the computer hosting the Orchestrator Designer|This rule checks that the memory allocated to the Orchestrator Designer is greater than 2048MB. If the computer has less than 2048MB you should monitor its performance to ensure it is meeting the expected goals in the environment. Please refer to [http:\/\/go.microsoft.com\/fwlink\/?LinkID\=242545](http://go.microsoft.com/fwlink/?LinkID=242545) for information on the Orchestrator Management Pack.|
+
 

@@ -41,7 +41,7 @@ Depending on your selections in the Process Monitoring wizard, the monitoring pe
 ## Viewing Monitoring Data
 All data collected by the **Process Monitoring** template is available in the **Process State** view located in the **Windows Service and Process Monitoring** folder. In this view, an object is listed for each agent in the group that you selected. Even if an agent does not monitor a process, it is listed, and the monitor reflects the state for the process that is not running.
 
-You can view the state of the individual process monitors by opening the [!INCLUDE[om12short](../Token/om12short_md.md)] Health Explorer for the process object. You can view performance data by opening the Performance view for the process object.
+You can view the state of the individual process monitors by opening the [!INCLUDE[om12short](./Token/om12short_md.md)] Health Explorer for the process object. You can view performance data by opening the Performance view for the process object.
 
 The same process objects that are listed in the **Process State** view are included in the Health Explorer for the computer that hosts the process. The health state of the process monitors rolls up to the health of the computer.
 
@@ -55,7 +55,7 @@ The following options are available on the **General Options** page of the wizar
 |----------|---------------|
 |Name|The name used for the process. This name is displayed in the Operations console for the wizard. It does not have to be the same name as the process.|
 |Description|Optional description of the process.|
-|Management Pack|Management pack to store the class and monitors that the template creates. If you create any additional monitors or rules that are using the service as a target class, they have to be stored in the same management pack.<br /><br />For more information about management packs, see [Selecting a Management Pack File](../Topic/Selecting-a-Management-Pack-File.md).|
+|Management Pack|Management pack to store the class and monitors that the template creates. If you create any additional monitors or rules that are using the service as a target class, they have to be stored in the same management pack.<br /><br />For more information about management packs, see [Selecting a Management Pack File](./Selecting-a-Management-Pack-File.md).|
 
 ### Process to Monitor
 The following options are available on the **Process to Monitor** page of the wizard.
@@ -100,7 +100,7 @@ In addition to performing the specified monitoring, the **Process Monitoring** t
 
     -   If you want to discover the process on all Windows\-based computers in the management group, you do not have to create a group. You can use the existing group **All Windows Computers**.
 
-    -   If you only want the process to be discovered on a certain group of computers, either ensure that an appropriate group exists or create a new group by using the procedure in [How to Create Groups in Operations Manager](../Topic/How-to-Create-Groups-in-Operations-Manager.md).
+    -   If you only want the process to be discovered on a certain group of computers, either ensure that an appropriate group exists or create a new group by using the procedure in [How to Create Groups in Operations Manager](./How-to-Create-Groups-in-Operations-Manager.md).
 
     -   If the process that you are monitoring is in a cluster, create a group with objects of the class **Virtual Server** representing the nodes of the cluster that contain the service.
 
@@ -110,7 +110,7 @@ In addition to performing the specified monitoring, the **Process Monitoring** t
 
 4.  On the **General Properties** page, in the **Name** and **Description** boxes, type a name and an optional description. The name is used to describe the process in the Operations console. It is not the actual name of the process.
 
-5.  Select a management pack in which to save the monitor, or click **New** to create a new management pack. For more information, see [Selecting a Management Pack File](../Topic/Selecting-a-Management-Pack-File.md).
+5.  Select a management pack in which to save the monitor, or click **New** to create a new management pack. For more information, see [Selecting a Management Pack File](./Selecting-a-Management-Pack-File.md).
 
 6.  Click **Next**.
 
@@ -142,7 +142,7 @@ In addition to performing the specified monitoring, the **Process Monitoring** t
 
         2.  In the **Duration** box, enter the maximum length of time that you want the process to run before the monitor is set to a critical state. This value should not be set to less than 1 minute.
 
-9. If you selected the option for a wanted process, on the **Performance Data** page, select the performance counters and thresholds that you want to monitor. For more detailed information, see the [Wizard Options](../Topic/Process-Monitoring-Template.md#Options) section.
+9. If you selected the option for a wanted process, on the **Performance Data** page, select the performance counters and thresholds that you want to monitor. For more detailed information, see the [Wizard Options](./Process-Monitoring-Template.md#Options) section.
 
     > [!NOTE]
     > This page is disabled if you selected the option for an **unwanted** process.
@@ -192,6 +192,7 @@ In addition to performing the specified monitoring, the **Process Monitoring** t
 3.  Use options in the **Actions** pane to modify the Performance view.
 
 ## See Also
-[Creating Management Pack Templates](../Topic/Creating-Management-Pack-Templates.md)
-[Watcher Nodes](../Topic/Watcher-Nodes.md)
+[Creating Management Pack Templates](./Creating-Management-Pack-Templates.md)
+[Watcher Nodes](./Watcher-Nodes.md)
+
 

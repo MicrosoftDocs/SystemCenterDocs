@@ -11,7 +11,7 @@ ms.topic: article
 ms.assetid: bbd5dddd-b002-45fa-999a-3e751309ee93
 ---
 # Post-Upgrade Tasks When Upgrading to System Center 2012  R2 Operations Manager
-After you have completed the upgrade process to [!INCLUDE[omblue_1](../Token/omblue_1_md.md)], you must perform a number of post\-upgrade tasks.
+After you have completed the upgrade process to [!INCLUDE[omblue_1](./Token/omblue_1_md.md)], you must perform a number of post\-upgrade tasks.
 
 ## Post\-Upgrade Tasks
 Perform the following tasks when you have completed the upgrade process.
@@ -29,19 +29,19 @@ After the upgrade has finished, use the following procedure to re\-enable subscr
 
 #### To re\-enable the subscriptions
 
-1.  Open the Operations console by using an account that is a member of the [!INCLUDE[omblue_2](../Token/omblue_2_md.md)] Administrators role for the [!INCLUDE[omblue_2](../Token/omblue_2_md.md)] management group.
+1.  Open the Operations console by using an account that is a member of the [!INCLUDE[omblue_2](./Token/omblue_2_md.md)] Administrators role for the [!INCLUDE[omblue_2](./Token/omblue_2_md.md)] management group.
 
 2.  In the Operations console, in the navigation pane, click the **Administration** button.
 
     > [!NOTE]
-    > When you run the Operations console on a computer that is not a management server, the **Connect To Server** dialog box appears. In the **Server name** text box, type the name of the [!INCLUDE[omblue_2](../Token/omblue_2_md.md)] management server to which you want to connect.
+    > When you run the Operations console on a computer that is not a management server, the **Connect To Server** dialog box appears. In the **Server name** text box, type the name of the [!INCLUDE[omblue_2](./Token/omblue_2_md.md)] management server to which you want to connect.
 
 3.  In the **Administration** pane, under **Notifications**, click **Subscriptions**.
 
 4.  In the **Actions** pane, click **Enable** for each subscription listed.
 
 ## Restart or Re\-enable the Connector Services
-Refer to the third\-party documentation for any installed connectors to determine if the connectors are supported for [!INCLUDE[omblue_1](../Token/omblue_1_md.md)].  If you stopped a connector for any reason during upgrade, restart the service.
+Refer to the third\-party documentation for any installed connectors to determine if the connectors are supported for [!INCLUDE[omblue_1](./Token/omblue_1_md.md)].  If you stopped a connector for any reason during upgrade, restart the service.
 
 #### To restart a connector service
 
@@ -66,4 +66,5 @@ Perform the following tasks to verify that the upgrade was successful.
 -   If the Reporting feature is installed, click **Reporting**, and then run a generic performance report to ensure that Reporting is functioning correctly.
 
 -   Re\-deploy any agents that you uninstalled during the upgrade process.
+
 

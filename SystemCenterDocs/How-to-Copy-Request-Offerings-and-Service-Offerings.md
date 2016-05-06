@@ -17,7 +17,7 @@ You can use the following procedures to copy a request offering and a service of
 
 ### To copy a request offering
 
-1.  In the [!INCLUDE[smcons](../Token/smcons_md.md)], select **Library**.
+1.  In the [!INCLUDE[smcons](./Token/smcons_md.md)], select **Library**.
 
 2.  In the **Library** pane, expand **Service Catalog**, expand **Request Offerings**, and then select **All Request Offerings**.
 
@@ -33,7 +33,7 @@ You can use the following procedures to copy a request offering and a service of
 
 ### To copy a service offering
 
-1.  In the [!INCLUDE[smcons](../Token/smcons_md.md)], select **Library**.
+1.  In the [!INCLUDE[smcons](./Token/smcons_md.md)], select **Library**.
 
 2.  In the **Library** pane, expand **Service Catalog**, expand **Service Offerings**, and then select **All Service Offerings**.
 
@@ -44,4 +44,5 @@ You can use the following procedures to copy a request offering and a service of
 5.  Click **OK** to close the dialog box and create the copy.
 
 6.  The copied item appears in the list, with a prefix of **Copy of**. For example, your copy might have the name **Copy of Access Services**.
+
 

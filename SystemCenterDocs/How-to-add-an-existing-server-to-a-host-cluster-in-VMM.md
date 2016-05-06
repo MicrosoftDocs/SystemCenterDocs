@@ -11,15 +11,15 @@ ms.topic: article
 ms.assetid: 6ea976dc-f64c-4a78-858f-f18e33eb3acf
 ---
 # How to add an existing server to a host cluster in VMM
-Use these procedures to add  nodes to host clusters that [!INCLUDE[vmm12sp1_long](../Token/vmm12sp1_long_md.md)] manages:
+Use these procedures to add  nodes to host clusters that [!INCLUDE[vmm12sp1_long](./Token/vmm12sp1_long_md.md)] manages:
 
--   [Bring a node under management by VMM if you already used Failover Cluster Manager to add the node](../Topic/How-to-add-an-existing-server-to-a-host-cluster-in-VMM.md#BKMK_fcm)
+-   [Bring a node under management by VMM if you already used Failover Cluster Manager to add the node](./How-to-add-an-existing-server-to-a-host-cluster-in-VMM.md#BKMK_fcm)
 
--   [Use VMM to add an existing server to a Hyper-V host cluster or Scale-Out File Server cluster](../Topic/How-to-add-an-existing-server-to-a-host-cluster-in-VMM.md#BKMK_vmm)
+-   [Use VMM to add an existing server to a Hyper-V host cluster or Scale-Out File Server cluster](./How-to-add-an-existing-server-to-a-host-cluster-in-VMM.md#BKMK_vmm)
 
-If you want to add a bare\-metal computer as a new node, see [How to add a bare-metal computer to a host cluster in VMM](../Topic/How-to-add-a-bare-metal-computer-to-a-host-cluster-in-VMM.md).
+If you want to add a bare\-metal computer as a new node, see [How to add a bare-metal computer to a host cluster in VMM](./How-to-add-a-bare-metal-computer-to-a-host-cluster-in-VMM.md).
 
-## <a name="BKMK_fcm"></a>To bring a node under [!INCLUDE[vmm12short](../Token/vmm12short_md.md)] management if you already used Failover Cluster Manager to add the node to the cluster
+## <a name="BKMK_fcm"></a>To bring a node under [!INCLUDE[vmm12short](./Token/vmm12short_md.md)] management if you already used Failover Cluster Manager to add the node to the cluster
 
 1.  Open the **Fabric** workspace.
 
@@ -27,14 +27,14 @@ If you want to add a bare\-metal computer as a new node, see [How to add a bare-
 
 3.  Right\-click the host with a status of **Pending**, and then click **Add to Host Cluster**.
 
-## <a name="BKMK_vmm"></a>To use [!INCLUDE[vmm12short](../Token/vmm12short_md.md)] to add an existing server to a Hyper\-V host cluster
+## <a name="BKMK_vmm"></a>To use [!INCLUDE[vmm12short](./Token/vmm12short_md.md)] to add an existing server to a Hyper\-V host cluster
 
-1.  As needed, review [Prerequisites: creating a host cluster in VMM from existing Windows servers](../Topic/Prerequisites--creating-a-host-cluster-in-VMM-from-existing-Windows-servers.md). A server to be added to the cluster must meet the same basic requirements as the servers that are in the cluster.
+1.  As needed, review [Prerequisites: creating a host cluster in VMM from existing Windows servers](./Prerequisites--creating-a-host-cluster-in-VMM-from-existing-Windows-servers.md). A server to be added to the cluster must meet the same basic requirements as the servers that are in the cluster.
 
     > [!NOTE]
-    > You can add a [!INCLUDE[winthreshold_server_2](../Token/winthreshold_server_2_md.md)] node to a [!INCLUDE[winblue_server_2](../Token/winblue_server_2_md.md)] cluster. The cluster continues to function as a [!INCLUDE[winblue_server_2](../Token/winblue_server_2_md.md)] cluster, in mixed mode. For more information, see the [Server Operating Systems](https://technet.microsoft.com/library/dn997307.aspx) requirements.
+    > You can add a [!INCLUDE[winthreshold_server_2](./Token/winthreshold_server_2_md.md)] node to a [!INCLUDE[winblue_server_2](./Token/winblue_server_2_md.md)] cluster. The cluster continues to function as a [!INCLUDE[winblue_server_2](./Token/winblue_server_2_md.md)] cluster, in mixed mode. For more information, see the [Server Operating Systems](https://technet.microsoft.com/library/dn997307.aspx) requirements.
 
-    For Hyper\-V host clusters, the hosts you want to add must already be under management by [!INCLUDE[vmm12short](../Token/vmm12short_md.md)]. For more information, see the topics listed in [Adding Windows servers as Hyper-V hosts or host clusters in VMM](../Topic/Adding-Windows-servers-as-Hyper-V-hosts-or-host-clusters-in-VMM.md).
+    For Hyper\-V host clusters, the hosts you want to add must already be under management by [!INCLUDE[vmm12short](./Token/vmm12short_md.md)]. For more information, see the topics listed in [Adding Windows servers as Hyper-V hosts or host clusters in VMM](./Adding-Windows-servers-as-Hyper-V-hosts-or-host-clusters-in-VMM.md).
 
 2.  Open the **Fabric** workspace.
 
@@ -59,8 +59,9 @@ If you want to add a bare\-metal computer as a new node, see [How to add a bare-
     > For a host cluster, you can perform cluster validation at any time by right\-clicking the host cluster and then clicking **Validate Cluster**. Cluster validation begins immediately.
 
 ## See Also
-[Creating a host cluster in VMM from existing Windows servers](../Topic/Creating-a-host-cluster-in-VMM-from-existing-Windows-servers.md)
-[Deploying Hyper-V hosts or host clusters from bare metal with VMM](../Topic/Deploying-Hyper-V-hosts-or-host-clusters-from-bare-metal-with-VMM.md)
-[Managing Hyper-V hosts and host clusters with VMM](../Topic/Managing-Hyper-V-hosts-and-host-clusters-with-VMM.md)
-[Managing fabric resources with VMM](../Topic/Managing-fabric-resources-with-VMM.md)
+[Creating a host cluster in VMM from existing Windows servers](./Creating-a-host-cluster-in-VMM-from-existing-Windows-servers.md)
+[Deploying Hyper-V hosts or host clusters from bare metal with VMM](./Deploying-Hyper-V-hosts-or-host-clusters-from-bare-metal-with-VMM.md)
+[Managing Hyper-V hosts and host clusters with VMM](./Managing-Hyper-V-hosts-and-host-clusters-with-VMM.md)
+[Managing fabric resources with VMM](./Managing-fabric-resources-with-VMM.md)
+
 

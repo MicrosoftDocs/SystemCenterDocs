@@ -80,7 +80,7 @@ You can inventory tapes by performing a fast inventory that reads the barcode of
 2.  Click **Inventory** > **Fast inventory** or **Detailed inventory**> **Start**.
 
 ## <a name="BKMK_Free"></a>Mark a tape as free
-A *free* tape is a tape that blank or available to be written to by operations such as backup or copy. To reuse an expired tape from another server you add it to tape library or drive and mark it as free. Expired tapes that are being managed by that [!INCLUDE[dpm2012short](../Token/dpm2012short_md.md)] server can be reused automatically without marking. Mark a tape as follows:
+A *free* tape is a tape that blank or available to be written to by operations such as backup or copy. To reuse an expired tape from another server you add it to tape library or drive and mark it as free. Expired tapes that are being managed by that [!INCLUDE[dpm2012short](./Token/dpm2012short_md.md)] server can be reused automatically without marking. Mark a tape as follows:
 
 1.  In the DPM Administrator Console click **Management** > **Libraries** and then select a library.
 
@@ -272,11 +272,12 @@ You can reuse an expired tape without erasing the contents of the tape. However,
     For technical information, type "**Get\-Help Start\-TapeErase \-full**" in DPM Management Shell.
 
 ### Enable short erase
-By default, when you erase a tape by using [!INCLUDE[dpm2012long](../Token/dpm2012long_md.md)], it performs a long erase. If your tape drive supports short erase, you can enable it on the [!INCLUDE[dpm2012short](../Token/dpm2012short_md.md)] server by creating the DWORD **UseShortErase** under `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Microsoft Data Protection Manager\Agent`.
+By default, when you erase a tape by using [!INCLUDE[dpm2012long](./Token/dpm2012long_md.md)], it performs a long erase. If your tape drive supports short erase, you can enable it on the [!INCLUDE[dpm2012short](./Token/dpm2012short_md.md)] server by creating the DWORD **UseShortErase** under `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Microsoft Data Protection Manager\Agent`.
 
 Set the value of the DWORD to 00000000.
 
-After this value is set, all erase operations on the [!INCLUDE[dpm2012short](../Token/dpm2012short_md.md)] server will be short erases. To revert to long erases, remove this registry key.
+After this value is set, all erase operations on the [!INCLUDE[dpm2012short](./Token/dpm2012short_md.md)] server will be short erases. To revert to long erases, remove this registry key.
 
 Short erase is faster but it doesn’t erase the data.. If you have a policy that all data from the tape must be erased and unrecoverable you shouldn’t use this option.
+
 

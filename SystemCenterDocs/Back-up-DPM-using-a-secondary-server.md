@@ -19,7 +19,7 @@ Data and replicas on a DPM server can be backed up and protected by another DPM 
 
     -   Select to switch protection to the secondary DPM server. With this setting you then restore to the protected computer directly from the secondary server when the need arises.
 
-        For instructions, see [Set up secondary servers](../Topic/Set-up-secondary-servers.md).
+        For instructions, see [Set up secondary servers](./Set-up-secondary-servers.md).
 
 -   [DPM chaining](#BKMK_Chain)—A chain of DPM servers provide protection, and each server protects the next one in in the chain. For example:
 
@@ -27,7 +27,7 @@ Data and replicas on a DPM server can be backed up and protected by another DPM 
 
     -   DPM2 is protected by DPM3 \(DPM2 is the primary and DPM3 is the secondary\)
 
-    For instructions, see [Set up chaining](../Topic/Set-up-chaining.md).
+    For instructions, see [Set up chaining](./Set-up-chaining.md).
 
 -   [Cyclic protection](#BKMK_Cyclic)—One DPM server is backed up by another DPM server, and vice versa. So that DPM1 protects DPM2, and likewise DPM2 protects DPM1. This is useful for small environments.
 
@@ -53,7 +53,7 @@ Scenario 1 shows a scenario in which four DPM servers are chained:
 |DS3 \(secondary\)|DS1, DS2|DS4|
 |DS4 \(secondary\)|DS3|\-|
 
-![](../Image/DPM2012_DRDeployment_Chaining.gif)
+![](/Image/DPM2012_DRDeployment_Chaining.gif)
 
 **Scenario 2: Chained protection**
 
@@ -68,10 +68,10 @@ Scenario 2 shows a scenario in which four DPM servers are chained:
 |DS3 \(secondary\)|DS2|DS4|
 |DS4|DS3|\-|
 
-![](../Image/DPM2012_DR_ChainingS1.gif)
+![](/Image/DPM2012_DR_ChainingS1.gif)
 
 ## <a name="BKMK_Cyclic"></a>Cyclic protection
-If you don’t want to use a secondary server then two [!INCLUDE[dpm2012short](../Token/dpm2012short_md.md)] servers can protect each other.
+If you don’t want to use a secondary server then two [!INCLUDE[dpm2012short](./Token/dpm2012short_md.md)] servers can protect each other.
 
 **Scenario 3: Cyclic protection**
 
@@ -85,5 +85,6 @@ Scenario 3 shows a scenario using cyclic protection
 |DS3 \(primary\)|PS4|DS2|
 |DS3 \(secondary\)|DS2|DS2|
 
-![](../Image/DPM2012_DRDeployment_Cyclic.jpg)
+![](/Image/DPM2012_DRDeployment_Cyclic.jpg)
+
 

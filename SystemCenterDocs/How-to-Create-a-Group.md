@@ -12,14 +12,14 @@ ms.assetid: c0410edc-b59a-48dd-b68e-7ee969b83894
 robots: noindex,nofollow
 ---
 # How to Create a Group
-Use the following procedures in [!INCLUDE[smlong12](../Token/smlong12_md.md)] to create a new group \(such as the **Exchange Servers** group\) that includes the servers in your environment that are running Microsoft Exchange Server.
+Use the following procedures in [!INCLUDE[smlong12](./Token/smlong12_md.md)] to create a new group \(such as the **Exchange Servers** group\) that includes the servers in your environment that are running Microsoft Exchange Server.
 
 > [!NOTE]
 > We recommend that you create a Configuration Manager 2007 connector before you run this procedure. For more information, see [Importing Data from Configuration Manager 2007](http://go.microsoft.com/fwlink/p/?LinkID=232312).
 
 ### To create a new group
 
-1.  In the [!INCLUDE[smcons](../Token/smcons_md.md)], click **Library**.
+1.  In the [!INCLUDE[smcons](./Token/smcons_md.md)], click **Library**.
 
 2.  In the **Library** pane, expand **Library**, and then click **Groups**.
 
@@ -61,9 +61,10 @@ Use the following procedures in [!INCLUDE[smlong12](../Token/smlong12_md.md)] to
 
 ### To validate the creating of a new group
 
--   Make sure that **Exchange Servers** appears in the **Groups** pane. If necessary, press the F5 key to refresh the [!INCLUDE[smcons](../Token/smcons_md.md)] view.
+-   Make sure that **Exchange Servers** appears in the **Groups** pane. If necessary, press the F5 key to refresh the [!INCLUDE[smcons](./Token/smcons_md.md)] view.
 
     In the **Tasks** pane, under the name of the group, click **View Group Members** to make sure that the Exchange servers appear in the **Group Members** window.
 
-![](../Image/PSSymbol.gif)You can use a Windows PowerShell command to retrieve groups from Operations Manager and from Service Manager. For more information, see [Get\-SCSMGroup](http://go.microsoft.com/fwlink/p/?LinkID=225402).
+![](/Image/PSSymbol.gif)You can use a Windows PowerShell command to retrieve groups from Operations Manager and from Service Manager. For more information, see [Get\-SCSMGroup](http://go.microsoft.com/fwlink/p/?LinkID=225402).
+
 

@@ -11,7 +11,7 @@ ms.topic: article
 ms.assetid: e3dead65-a5b9-4e16-af59-e5bd5e6f2320
 ---
 # How to Work Around Configuration Service Startup Issues
-There are two workaround procedures that you can use to try to resolve the issue in which an upgrade to [!INCLUDE[smlong12](../Token/smlong12_md.md)] SP1 fails as a result of Configuration service Startup timing out. You can:
+There are two workaround procedures that you can use to try to resolve the issue in which an upgrade to [!INCLUDE[smlong12](./Token/smlong12_md.md)] SP1 fails as a result of Configuration service Startup timing out. You can:
 
 -   Disable signature verification on the computer that is running Setup.
 
@@ -48,4 +48,5 @@ There are two workaround procedures that you can use to try to resolve the issue
 2.  Start the computer again.
 
 3.  Attempt the upgrade again.
+
 

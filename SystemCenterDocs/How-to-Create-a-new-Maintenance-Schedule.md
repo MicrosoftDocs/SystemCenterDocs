@@ -32,3 +32,4 @@ You can see all the entities in your environment that are in Maintenance mode by
 
     You can also prevent the schedule from starting by removing the check from  the **Enable Schedule c**heck\-box.
 
+

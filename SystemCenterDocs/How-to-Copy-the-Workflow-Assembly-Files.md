@@ -22,3 +22,4 @@ Use the following procedure to copy the workflow assembly files from the Service
     > [!NOTE]
     > You must place the workflow assembly files in the Service Manager installation folder. This is very important step if you want to test the custom workflows that depend on workflow assembly files. Failure to copy these files would lead to failed custom workflows in the lab environment.
 
+

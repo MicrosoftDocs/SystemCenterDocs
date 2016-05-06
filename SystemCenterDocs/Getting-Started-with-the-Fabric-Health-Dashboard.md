@@ -17,17 +17,17 @@ The Fabric Health Dashboard shows a detailed overview of the health of your priv
 
 #### To view the Fabric Health Dashboard
 
-1.  Before you can begin to monitor the fabric of your private clouds, you must integrate [!INCLUDE[omblue_1](../Token/omblue_1_md.md)] and Virtual Machine Manager. For more information, see [Configuring Operations Manager Integration with VMM](http://go.microsoft.com/fwlink/?LinkId=325587). During the integration, the management pack for VMM Fabric Dashboard 2012 R2 is imported automatically.
+1.  Before you can begin to monitor the fabric of your private clouds, you must integrate [!INCLUDE[omblue_1](./Token/omblue_1_md.md)] and Virtual Machine Manager. For more information, see [Configuring Operations Manager Integration with VMM](http://go.microsoft.com/fwlink/?LinkId=325587). During the integration, the management pack for VMM Fabric Dashboard 2012 R2 is imported automatically.
 
-2.  To view the Fabric Health Dashboard, after you integrate [!INCLUDE[omblue_1](../Token/omblue_1_md.md)] and Virtual Machine Manager, click **Monitoring**, and in **Cloud Health Dashboard**, click **Cloud Health**.
+2.  To view the Fabric Health Dashboard, after you integrate [!INCLUDE[omblue_1](./Token/omblue_1_md.md)] and Virtual Machine Manager, click **Monitoring**, and in **Cloud Health Dashboard**, click **Cloud Health**.
 
 3.  In the **Cloud State** view, select the cloud you want to investigate.
 
-    ![](../Image/1FabricMonitoring_CloudHealthView.gif)
+    ![](/Image/1FabricMonitoring_CloudHealthView.gif)
 
 4.  In the **Tasks** pane, click **Fabric Health Dashboard**. From here, you get to other dashboards and other information to investigate issues across the areas that the Fabric Health Dashboard displays.
 
-![](../Image/1FabricMonitoring.gif)
+![](/Image/1FabricMonitoring.gif)
 
 **For each cloud, the Fabric Health Dashboard displays these aspects of the fabric:**
 
@@ -35,7 +35,7 @@ The Fabric Health Dashboard shows a detailed overview of the health of your priv
 
 -   **Storage Pools State File Share and LUN State:** monitors the health state of the storage aspect of fabric for issues, such as disk space capacity and allocation
 
--   **Network Node State:** utilizes network monitoring in Operations Manager and displays the health state of network nodes \(devices\) that are relevant for the cloud you selected. Only physical network devices within one hop from the hosts are shown. To see the physical network devices, you must enable the Network Monitoring feature of [!INCLUDE[om12short](../Token/om12short_md.md)] and monitor the physical network devices connected to the hosts. Virtual networks are not shown in the dashboard.
+-   **Network Node State:** utilizes network monitoring in Operations Manager and displays the health state of network nodes \(devices\) that are relevant for the cloud you selected. Only physical network devices within one hop from the hosts are shown. To see the physical network devices, you must enable the Network Monitoring feature of [!INCLUDE[om12short](./Token/om12short_md.md)] and monitor the physical network devices connected to the hosts. Virtual networks are not shown in the dashboard.
 
 The **Active Alerts** and **Number of VMs** fields on this dashboard help indicate which issues are having the greatest impact on your cloud and can help you prioritize your work.
 
@@ -44,4 +44,5 @@ The **Active Alerts** and **Number of VMs** fields on this dashboard help indica
 -   [Monitoring a Private Cloud \- video series](https://curah.microsoft.com/217123/monitoring-a-private-cloud-video-series)
 
 -   [How Healthy is Your Cloud? Fabric Monitoring Can Tell...](http://curah.microsoft.com/42340/how-healthy-is-your-cloud-fabric-monitoring-can-tell)
+
 

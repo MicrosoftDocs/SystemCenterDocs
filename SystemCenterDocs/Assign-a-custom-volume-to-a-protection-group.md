@@ -95,5 +95,7 @@ After you have created and assigned a custom volume, DPM does not increase the s
 
 ## See Also
 [New Protection Group Wizard \[DPM2012\_Web\]](assetId:///1b3b1b30-7b8d-44ca-8137-d94176290480)
-[Manage the disk storage pool](../Topic/Manage-the-disk-storage-pool.md)
+[Manage the disk storage pool](./Manage-the-disk-storage-pool.md)
+
+
 

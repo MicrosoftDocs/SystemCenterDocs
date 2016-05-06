@@ -15,7 +15,8 @@ The following table provides a brief description of tasks you can accomplish whe
 
 |Tasks|Notification Activities|
 |---------|---------------------------|
-|Create an entry in the Application Windows Event Log.|[Send Event Log Message](../Topic/Send-Event-Log-Message.md)|
-|Create a message on the Syslog server.|[Send Syslog Message](../Topic/Send-Syslog-Message.md)|
-|Create an entry in the Application Windows Event Log.|[Send Platform Event](../Topic/Send-Platform-Event.md)|
+|Create an entry in the Application Windows Event Log.|[Send Event Log Message](./Send-Event-Log-Message.md)|
+|Create a message on the Syslog server.|[Send Syslog Message](./Send-Syslog-Message.md)|
+|Create an entry in the Application Windows Event Log.|[Send Platform Event](./Send-Platform-Event.md)|
+
 

@@ -39,3 +39,4 @@ The following table lists the published data items.
 |--------|---------------|
 |Counter Value|The value of the counter|
 
+

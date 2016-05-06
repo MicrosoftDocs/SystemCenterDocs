@@ -8,7 +8,7 @@ ms.topic: article
 ms.assetid: 49d7421f-39fd-4e3e-9b83-532a6594a4d7
 ---
 # How to Reassociate a Host or Library Server
-After you upgrade [!INCLUDE[vmm12sp1_long](../Token/vmm12sp1_long_md.md)] to [!INCLUDE[sc_threshold_1](../Token/sc_threshold_1_md.md)], use the following procedure to reassociate a virtual machine host with the VMM management server.
+After you upgrade [!INCLUDE[vmm12sp1_long](./Token/vmm12sp1_long_md.md)] to [!INCLUDE[sc_threshold_1](./Token/sc_threshold_1_md.md)], use the following procedure to reassociate a virtual machine host with the VMM management server.
 
 ### To reassociate a host
 
@@ -34,11 +34,12 @@ After you upgrade [!INCLUDE[vmm12sp1_long](../Token/vmm12sp1_long_md.md)] to [!I
     > [!TIP]
     > You can see a **Reassociate agent** job in the **Jobs** workspace.
 
-7.  After you have reassociated the host, you will most likely have to update the VMM agent on the host. For more information, see [How to Update the VMM Agent](../Topic/How-to-Update-the-VMM-Agent.md).
+7.  After you have reassociated the host, you will most likely have to update the VMM agent on the host. For more information, see [How to Update the VMM Agent](./How-to-Update-the-VMM-Agent.md).
 
     > [!NOTE]
     > You can reassociate a VMM library server in a similar manner. To view a list of VMM library servers, open the **Fabric** workspace, expand **Servers**, and then click **Library Servers**.
 
 ## See Also
-[Performing Post-Upgrade Tasks in VMM](../Topic/Performing-Post-Upgrade-Tasks-in-VMM.md)
+[Performing Post-Upgrade Tasks in VMM](./Performing-Post-Upgrade-Tasks-in-VMM.md)
+
 

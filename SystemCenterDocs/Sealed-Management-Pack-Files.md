@@ -42,9 +42,10 @@ Management pack files are sealed by using the MPSeal tool that is located in the
 
 You can use the Strong Name tool \(Sn.exe\) included with the Microsoft .NET Framework SDK to create a certificate sufficient for sealing management packs for testing. For production, use a client certificate from the correct certification authority \(CA\) appropriate for signing code for sealing management packs.
 
-For information about the process for sealing a management pack file, see [How to Seal a Management Pack File](../Topic/How-to-Seal-a-Management-Pack-File.md).
+For information about the process for sealing a management pack file, see [How to Seal a Management Pack File](./How-to-Seal-a-Management-Pack-File.md).
 
 ## See Also
-[How to Seal a Management Pack File](../Topic/How-to-Seal-a-Management-Pack-File.md)
-[Structure of a Management Pack](../Topic/Structure-of-a-Management-Pack.md)
+[How to Seal a Management Pack File](./How-to-Seal-a-Management-Pack-File.md)
+[Structure of a Management Pack](./Structure-of-a-Management-Pack.md)
+
 

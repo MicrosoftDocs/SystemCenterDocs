@@ -11,16 +11,16 @@ ms.topic: article
 ms.assetid: 189f12a2-ee3b-49c1-ba78-7aa6d829da10
 ---
 # How to create VIP templates for hardware load balancers in VMM
-You can use the following procedure to create a virtual IP \(VIP\) template for a hardware load balancer in [!INCLUDE[vmm12sp1_long](../Token/vmm12sp1_long_md.md)]. A VIP template contains load balancer\-related configuration settings for a specific type of network traffic. For example, you can create a template that specifies the load\-balancing behavior for HTTPS traffic on a specific load balancer by manufacturer and model. These templates represent the best practices from a load\-balancer configuration standpoint.
+You can use the following procedure to create a virtual IP \(VIP\) template for a hardware load balancer in [!INCLUDE[vmm12sp1_long](./Token/vmm12sp1_long_md.md)]. A VIP template contains load balancer\-related configuration settings for a specific type of network traffic. For example, you can create a template that specifies the load\-balancing behavior for HTTPS traffic on a specific load balancer by manufacturer and model. These templates represent the best practices from a load\-balancer configuration standpoint.
 
 > [!NOTE]
-> For information about how to create a VIP template for Microsoft Network Load Balancing \(NLB\), see [How to create VIP templates for Network Load Balancing &#40;NLB&#41; in VMM](../Topic/How-to-create-VIP-templates-for-Network-Load-Balancing--NLB--in-VMM.md).
+> For information about how to create a VIP template for Microsoft Network Load Balancing \(NLB\), see [How to create VIP templates for Network Load Balancing &#40;NLB&#41; in VMM](./How-to-create-VIP-templates-for-Network-Load-Balancing--NLB--in-VMM.md).
 
-When users create a service, they can select a VIP template to use when they want to load\-balance a service tier. For an overview of the load\-balancer and VIP workflow, see [Load balancer integration](../Topic/Configuring-load-balancing-in-VMM.md#BKMK_LoadBalancerIntegration) in the topic [Configuring load balancing in VMM](../Topic/Configuring-load-balancing-in-VMM.md).
+When users create a service, they can select a VIP template to use when they want to load\-balance a service tier. For an overview of the load\-balancer and VIP workflow, see [Load balancer integration](./Configuring-load-balancing-in-VMM.md#BKMK_LoadBalancerIntegration) in the topic [Configuring load balancing in VMM](./Configuring-load-balancing-in-VMM.md).
 
 ### To create a VIP template for a hardware load balancer
 
-1.  In [!INCLUDE[vmm12sp1_long](../Token/vmm12sp1_long_md.md)], open the **Fabric** workspace.
+1.  In [!INCLUDE[vmm12sp1_long](./Token/vmm12sp1_long_md.md)], open the **Fabric** workspace.
 
 2.  In the **Fabric** pane, expand **Networking**, and then click **VIP Templates**.
 
@@ -45,7 +45,7 @@ When users create a service, they can select a VIP template to use when they wan
     -   Click **Specific** to create a VIP template that applies to a specific hardware load balancer, and then specify the manufacturer and model.
 
         > [!NOTE]
-        > In the **Manufacturer** list, the **Microsoft** entry is for NLB. For information about creating a VIP template for NLB, see [How to create VIP templates for Network Load Balancing &#40;NLB&#41; in VMM](../Topic/How-to-create-VIP-templates-for-Network-Load-Balancing--NLB--in-VMM.md).
+        > In the **Manufacturer** list, the **Microsoft** entry is for NLB. For information about creating a VIP template for NLB, see [How to create VIP templates for Network Load Balancing &#40;NLB&#41; in VMM](./How-to-create-VIP-templates-for-Network-Load-Balancing--NLB--in-VMM.md).
 
     Click either of the options, depending on your test environment, and then click **Next**.
 
@@ -99,7 +99,8 @@ When users create a service, they can select a VIP template to use when they wan
 12. Verify that the VIP template that you added appears in the **VIP Templates** pane.
 
 ## See Also
-[Configuring load balancing in VMM](../Topic/Configuring-load-balancing-in-VMM.md)
-[Managing network resources with VMM](../Topic/Managing-network-resources-with-VMM.md)
-[How to add hardware load balancers in VMM](../Topic/How-to-add-hardware-load-balancers-in-VMM.md)
+[Configuring load balancing in VMM](./Configuring-load-balancing-in-VMM.md)
+[Managing network resources with VMM](./Managing-network-resources-with-VMM.md)
+[How to add hardware load balancers in VMM](./How-to-add-hardware-load-balancers-in-VMM.md)
+
 

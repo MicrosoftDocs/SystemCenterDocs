@@ -9,20 +9,20 @@ ms.topic: article
 ms.assetid: fd77880c-3a53-4c7d-980f-ef392909bff9
 ---
 # How to configure storage on a Hyper-V host in VMM
-You can use the following procedures to configure storage on a Hyper\-V host that is already under management in [!INCLUDE[vmm12sp1_long](../Token/vmm12sp1_long_md.md)]. These procedures all use Hyper\-V host properties to configure the storage for a specific host:
+You can use the following procedures to configure storage on a Hyper\-V host that is already under management in [!INCLUDE[vmm12sp1_long](./Token/vmm12sp1_long_md.md)]. These procedures all use Hyper\-V host properties to configure the storage for a specific host:
 
--   [Creating a logical unit and assigning it to a host](../Topic/How-to-configure-storage-on-a-Hyper-V-host-in-VMM.md#BKMK_create_assign)
+-   [Creating a logical unit and assigning it to a host](./How-to-configure-storage-on-a-Hyper-V-host-in-VMM.md#BKMK_create_assign)
 
--   [Assigning a logical unit to a host](../Topic/How-to-configure-storage-on-a-Hyper-V-host-in-VMM.md#BKMK_assignLU)
+-   [Assigning a logical unit to a host](./How-to-configure-storage-on-a-Hyper-V-host-in-VMM.md#BKMK_assignLU)
 
--   [Removing a logical unit from a host](../Topic/How-to-configure-storage-on-a-Hyper-V-host-in-VMM.md#BKMK_remove)
+-   [Removing a logical unit from a host](./How-to-configure-storage-on-a-Hyper-V-host-in-VMM.md#BKMK_remove)
 
--   [Creating an iSCSI session on a host](../Topic/How-to-configure-storage-on-a-Hyper-V-host-in-VMM.md#BKMK_iSCSI)
+-   [Creating an iSCSI session on a host](./How-to-configure-storage-on-a-Hyper-V-host-in-VMM.md#BKMK_iSCSI)
 
 > [!IMPORTANT]
 > The storage prerequisites for this topic are almost the same as those for hosts that you are preparing to bring together into a cluster. The one exception is that Multipath I\/O might not be necessary, depending on your configuration. Therefore, for prerequisites, see two sections in "Prerequisites: creating a cluster in VMM from existing servers": 
-> [Host cluster prerequisites: Fibre Channel or iSCSI storage arrays](../Topic/Prerequisites--creating-a-host-cluster-in-VMM-from-existing-Windows-servers.md#BKMK_arrays) \(although Multipath I\/O might not be necessary\)
-> [Host cluster prerequisites: storage allocation and configuration](../Topic/Prerequisites--creating-a-host-cluster-in-VMM-from-existing-Windows-servers.md#BKMK_storage_allocation)
+> [Host cluster prerequisites: Fibre Channel or iSCSI storage arrays](./Prerequisites--creating-a-host-cluster-in-VMM-from-existing-Windows-servers.md#BKMK_arrays) \(although Multipath I\/O might not be necessary\)
+> [Host cluster prerequisites: storage allocation and configuration](./Prerequisites--creating-a-host-cluster-in-VMM-from-existing-Windows-servers.md#BKMK_storage_allocation)
 
 **Account requirements** To complete these procedures, you must be a member of the Administrator user role or a member of the Delegated Administrator user role where the management scope includes the host group where the Hyper\-V host is located.
 
@@ -85,12 +85,12 @@ You can use the following procedures to configure storage on a Hyper\-V host tha
 
 9. When you are finished, click **OK**.
 
-    [!INCLUDE[vmm12short](../Token/vmm12short_md.md)] registers the storage logical unit to the host and mounts the storage disk. To view the associated job information, open the **Jobs** workspace.
+    [!INCLUDE[vmm12short](./Token/vmm12short_md.md)] registers the storage logical unit to the host and mounts the storage disk. To view the associated job information, open the **Jobs** workspace.
 
 10. To verify that the logical unit was assigned, view the information on the **Storage** tab in the *Host Name* **Properties** dialog box. The newly assigned logical unit appears under **Disk**. Click the new disk to view the disk details.
 
     > [!TIP]
-    > If the **Array** field is populated in the disk details, this indicates that the storage array is under [!INCLUDE[vmm12short](../Token/vmm12short_md.md)] management.
+    > If the **Array** field is populated in the disk details, this indicates that the storage array is under [!INCLUDE[vmm12short](./Token/vmm12short_md.md)] management.
 
 11. To perform further configuration of the disk, open Disk Management on the host. \(To open Disk Management, click **Start**, type **diskmgmt.msc** in the search box, and then press ENTER.\)
 
@@ -112,10 +112,10 @@ You can use the following procedures to configure storage on a Hyper\-V host tha
 
 6.  In the **Logical unit** list, click the logical unit that you want to assign to the host.
 
-7.  Configure the format and mount point options, and then click **OK** to assign the logical unit to the host. For more information about these options and how to verify that the logical unit was assigned, see steps 7 through 11 of [Creating a logical unit and assigning it to a host](../Topic/How-to-configure-storage-on-a-Hyper-V-host-in-VMM.md#BKMK_create_assign), earlier in this topic.
+7.  Configure the format and mount point options, and then click **OK** to assign the logical unit to the host. For more information about these options and how to verify that the logical unit was assigned, see steps 7 through 11 of [Creating a logical unit and assigning it to a host](./How-to-configure-storage-on-a-Hyper-V-host-in-VMM.md#BKMK_create_assign), earlier in this topic.
 
     > [!NOTE]
-    > If the logical unit has existing data, and you do not use the **Force Format** option, the [!INCLUDE[vmm12short](../Token/vmm12short_md.md)] job to assign the logical unit will complete with a warning. [!INCLUDE[vmm12short](../Token/vmm12short_md.md)] assigns the logical unit to the host. You can format the disk later.
+    > If the logical unit has existing data, and you do not use the **Force Format** option, the [!INCLUDE[vmm12short](./Token/vmm12short_md.md)] job to assign the logical unit will complete with a warning. [!INCLUDE[vmm12short](./Token/vmm12short_md.md)] assigns the logical unit to the host. You can format the disk later.
 
 ## <a name="BKMK_remove"></a>Removing a logical unit from a host
 
@@ -132,7 +132,7 @@ You can use the following procedures to configure storage on a Hyper\-V host tha
 5.  Under **Disk**, click the logical unit that you want to remove, and then on the toolbar, click **Remove**.
 
     > [!NOTE]
-    > For the Remove button to be enabled, the logical unit must be under [!INCLUDE[vmm12short](../Token/vmm12short_md.md)] management.
+    > For the Remove button to be enabled, the logical unit must be under [!INCLUDE[vmm12short](./Token/vmm12short_md.md)] management.
 
 6.  Review the warning message, and then click **Yes** to remove the logical unit.
 
@@ -141,7 +141,7 @@ You can use the following procedures to configure storage on a Hyper\-V host tha
 
 7.  Click **OK** to commit the changes.
 
-    [!INCLUDE[vmm12short](../Token/vmm12short_md.md)] unregisters the logical unit from the host. To view the associated job information, open the **Jobs** workspace.
+    [!INCLUDE[vmm12short](./Token/vmm12short_md.md)] unregisters the logical unit from the host. To view the associated job information, open the **Jobs** workspace.
 
 ## <a name="BKMK_iSCSI"></a>Creating an iSCSI session on a host
 
@@ -179,15 +179,16 @@ You can use the following procedures to configure storage on a Hyper\-V host tha
 
 9. To create additional iSCSI sessions to the array, click **Create session**. In the **Create New iSCSI Session** dialog box, do either of the following:
 
-    1.  Click **Create** to have [!INCLUDE[vmm12short](../Token/vmm12short_md.md)] automatically determine the connection information. [!INCLUDE[vmm12short](../Token/vmm12short_md.md)] creates the iSCSI session by matching the host initiator IP address subnets with the iSCSI target portal IP subnets.
+    1.  Click **Create** to have [!INCLUDE[vmm12short](./Token/vmm12short_md.md)] automatically determine the connection information. [!INCLUDE[vmm12short](./Token/vmm12short_md.md)] creates the iSCSI session by matching the host initiator IP address subnets with the iSCSI target portal IP subnets.
 
     2.  Click **Use advanced settings** to manually select the target portal, target name and the initiator IP address, and then click **Create**.
 
 ## See Also
-[Configuring Hyper-V host properties in VMM](../Topic/Configuring-Hyper-V-host-properties-in-VMM.md)
-[Managing storage resources and capacity with VMM](../Topic/Managing-storage-resources-and-capacity-with-VMM.md)
-[How to configure storage on a Hyper-V host cluster in VMM](../Topic/How-to-configure-storage-on-a-Hyper-V-host-cluster-in-VMM.md)
-[Managing Hyper-V hosts and host clusters with VMM](../Topic/Managing-Hyper-V-hosts-and-host-clusters-with-VMM.md)
-[Managing hosts and host clusters with VMM](../Topic/Managing-hosts-and-host-clusters-with-VMM.md)
-[Managing fabric resources with VMM](../Topic/Managing-fabric-resources-with-VMM.md)
+[Configuring Hyper-V host properties in VMM](./Configuring-Hyper-V-host-properties-in-VMM.md)
+[Managing storage resources and capacity with VMM](./Managing-storage-resources-and-capacity-with-VMM.md)
+[How to configure storage on a Hyper-V host cluster in VMM](./How-to-configure-storage-on-a-Hyper-V-host-cluster-in-VMM.md)
+[Managing Hyper-V hosts and host clusters with VMM](./Managing-Hyper-V-hosts-and-host-clusters-with-VMM.md)
+[Managing hosts and host clusters with VMM](./Managing-hosts-and-host-clusters-with-VMM.md)
+[Managing fabric resources with VMM](./Managing-fabric-resources-with-VMM.md)
+
 

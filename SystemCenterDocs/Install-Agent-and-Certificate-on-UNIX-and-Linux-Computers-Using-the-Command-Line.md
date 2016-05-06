@@ -11,7 +11,7 @@ ms.topic: article
 ms.assetid: 372cea7b-f987-452a-b6a4-fbb6ae6fe98e
 ---
 # Install Agent and Certificate on UNIX and Linux Computers Using the Command Line
-Your environment may require that you manually install the agent. Use the following procedures to manually install agents to UNIX and Linux computers for monitoring in [!INCLUDE[om12long](../Token/om12long_md.md)] and [!INCLUDE[sc2012sp1_long](../Token/sc2012sp1_long_md.md)], [!INCLUDE[om12short](../Token/om12short_md.md)].
+Your environment may require that you manually install the agent. Use the following procedures to manually install agents to UNIX and Linux computers for monitoring in [!INCLUDE[om12long](./Token/om12long_md.md)] and [!INCLUDE[sc2012sp1_long](./Token/sc2012sp1_long_md.md)], [!INCLUDE[om12short](./Token/om12short_md.md)].
 
 #### To install the agent on Red Hat Enterprise Linux and SUSE Linux Enterprise Server
 
@@ -146,9 +146,9 @@ You must have already manually installed an agent before you start this procedur
 
 #### To install certificates for UNIX and Linux support
 
-1.  On the computer that is running the UNIX or Linux operating system, locate the file `/etc/opt/microsoft/scx/ssl/scx-host-<hostname>.pem` and securely copy or transfer it to any location on the computer that is hosting [!INCLUDE[om12short](../Token/om12short_md.md)].
+1.  On the computer that is running the UNIX or Linux operating system, locate the file `/etc/opt/microsoft/scx/ssl/scx-host-<hostname>.pem` and securely copy or transfer it to any location on the computer that is hosting [!INCLUDE[om12short](./Token/om12short_md.md)].
 
-2.  On the computer that is hosting [!INCLUDE[om12short](../Token/om12short_md.md)], on the Windows desktop, click **Start**, and then click **Run**.
+2.  On the computer that is hosting [!INCLUDE[om12short](./Token/om12short_md.md)], on the Windows desktop, click **Start**, and then click **Run**.
 
 3.  In the **Run** dialog box, type **cmd**, and then press **Enter**.
 
@@ -157,27 +157,28 @@ You must have already manually installed an agent before you start this procedur
 5.  Type the command `scxcertconfig -sign scx-host-<hostname>.pem scx_new.pem`, and then press **Enter**. This command will self\-sign your certificate \(`scx-host-<hostname>.pem`\) and then save the new certificate \(`scx-host-<hostname>_new.pem`\).
 
     > [!NOTE]
-    > Ensure that the location where [!INCLUDE[om12short](../Token/om12short_md.md)] is installed is in your path statement, or use the fully qualified path of the `scxcertconfig.exe` file.
+    > Ensure that the location where [!INCLUDE[om12short](./Token/om12short_md.md)] is installed is in your path statement, or use the fully qualified path of the `scxcertconfig.exe` file.
 
 6.  Securely copy or transfer the `scx_new.pem` file into the `/etc/opt/microsoft/scx/ssl` folder on the computer that is hosting the UNIX or Linux operating system. This replaces the `original scx-host-<hostname>.pem` file.
 
 7.  Restart the agent by typing `scxadmin –restart`.
 
 ## <a name="bkmk_DiscoveringSystemsafterManualDeployment"></a>Discovering Computers after Manual Deployment
-After you have manually deployed agents to UNIX and Linux computers, they still need to be discovered by Operations Manager by using the Discovery Wizard. For the **Discovery type**, select **Discover only computers with the UNIX\/Linux agent installed**. For more information see [Install Agent on UNIX and Linux Using the Discovery Wizard](../Topic/Install-Agent-on-UNIX-and-Linux-Using-the-Discovery-Wizard.md).
+After you have manually deployed agents to UNIX and Linux computers, they still need to be discovered by Operations Manager by using the Discovery Wizard. For the **Discovery type**, select **Discover only computers with the UNIX\/Linux agent installed**. For more information see [Install Agent on UNIX and Linux Using the Discovery Wizard](./Install-Agent-on-UNIX-and-Linux-Using-the-Discovery-Wizard.md).
 
 ## See Also
-[Operations Manager Agent Installation Methods](../Topic/Operations-Manager-Agent-Installation-Methods.md)
-[Install Agent on Windows Using the Discovery Wizard](../Topic/Install-Agent-on-Windows-Using-the-Discovery-Wizard.md)
-[Install Agent on UNIX and Linux Using the Discovery Wizard](../Topic/Install-Agent-on-UNIX-and-Linux-Using-the-Discovery-Wizard.md)
-[Install Agent Using the MOMAgent.msi Setup Wizard](../Topic/Install-Agent-Using-the-MOMAgent.msi-Setup-Wizard.md)
-[Install Agent Using the Command Line](../Topic/Install-Agent-Using-the-Command-Line.md)
-[Process Manual Agent Installations](../Topic/Process-Manual-Agent-Installations.md)
-[Applying Overrides to Object Discoveries](../Topic/Applying-Overrides-to-Object-Discoveries.md)
-[Configuring Agents](../Topic/Configuring-Agents.md)
-[Examples of Using MOMAgent Command to Manage Agents](../Topic/Examples-of-Using-MOMAgent-Command-to-Manage-Agents.md)
-[Managing Certificates for UNIX and Linux Computers](../Topic/Managing-Certificates-for-UNIX-and-Linux-Computers.md)
-[Upgrading and Uninstalling Agents on UNIX and Linux Computers](../Topic/Upgrading-and-Uninstalling-Agents-on-UNIX-and-Linux-Computers.md)
-[Manually Uninstalling Agents from UNIX and Linux Computers](../Topic/Manually-Uninstalling-Agents-from-UNIX-and-Linux-Computers.md)
-[Uninstall Agent from Windows-based Computers](../Topic/Uninstall-Agent-from-Windows-based-Computers.md)
+[Operations Manager Agent Installation Methods](./Operations-Manager-Agent-Installation-Methods.md)
+[Install Agent on Windows Using the Discovery Wizard](./Install-Agent-on-Windows-Using-the-Discovery-Wizard.md)
+[Install Agent on UNIX and Linux Using the Discovery Wizard](./Install-Agent-on-UNIX-and-Linux-Using-the-Discovery-Wizard.md)
+[Install Agent Using the MOMAgent.msi Setup Wizard](./Install-Agent-Using-the-MOMAgent.msi-Setup-Wizard.md)
+[Install Agent Using the Command Line](./Install-Agent-Using-the-Command-Line.md)
+[Process Manual Agent Installations](./Process-Manual-Agent-Installations.md)
+[Applying Overrides to Object Discoveries](./Applying-Overrides-to-Object-Discoveries.md)
+[Configuring Agents](./Configuring-Agents.md)
+[Examples of Using MOMAgent Command to Manage Agents](./Examples-of-Using-MOMAgent-Command-to-Manage-Agents.md)
+[Managing Certificates for UNIX and Linux Computers](./Managing-Certificates-for-UNIX-and-Linux-Computers.md)
+[Upgrading and Uninstalling Agents on UNIX and Linux Computers](./Upgrading-and-Uninstalling-Agents-on-UNIX-and-Linux-Computers.md)
+[Manually Uninstalling Agents from UNIX and Linux Computers](./Manually-Uninstalling-Agents-from-UNIX-and-Linux-Computers.md)
+[Uninstall Agent from Windows-based Computers](./Uninstall-Agent-from-Windows-based-Computers.md)
+
 

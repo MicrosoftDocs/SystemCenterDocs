@@ -11,7 +11,7 @@ ms.assetid: a62dc1ea-f89e-4132-a550-c1c362517e86
 <?xml version="1.0" encoding="utf-8"?>
 <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://ddue.schemas.microsoft.com/authoring/2003/5 http://dduestorage.blob.core.windows.net/ddueschema/developer.xsd">
   <introduction>
-    <para>This topic describes Updating Run options that can be configured for a CAU Updating Run. These advanced options can be configured when you use either the CAU UI or the CAU <token>wps_2</token> cmdlets to apply updates or to configure self-updating options. </para>
+    <para>This topic describes Updating Run options that can be configured for a CAU Updating Run. These advanced options can be configured when you use either the CAU UI or the CAU <token>wps./Token> cmdlets to apply updates or to configure self-updating options. </para>
     <para>Most configuration settings can be saved as an XML file called an Updating Run Profile and reused for later Updating Runs. The default values for the Updating Run options that are provided by CAU can also be used in many cluster environments.</para>
     <para>For information about additional options that you can specify for each Updating Run and about Updating Run Profiles, see the following sections later in this topic:</para>
     <list class="bullet">
@@ -32,7 +32,7 @@ ms.assetid: a62dc1ea-f89e-4132-a550-c1c362517e86
     <content>
       <para>The following table lists options that you can set in a CAU Updating Run Profile. </para>
       <alert class="important">
-        <para>To set the <ui>PreUpdateScript</ui> or <ui>PostUpdateScript</ui> option, ensure that <token>wps_2</token> 4.0 and .NET Framework 4.5 are installed and that <token>wps_2</token> remoting is enabled on each node in the cluster. For more information, see <legacyLink xlink:href="c4c50fef-cfa1-4844-8921-deeb7653d8ba#BKMK_NODE_CONFIG">Configure nodes for remote management</legacyLink> in <legacyLink xlink:href="c4c50fef-cfa1-4844-8921-deeb7653d8ba">Requirements and Best Practices for Cluster-Aware Updating [WS8]</legacyLink>.</para>
+        <para>To set the <ui>PreUpdateScript</ui> or <ui>PostUpdateScript</ui> option, ensure that <token>wps./Token> 4.0 and .NET Framework 4.5 are installed and that <token>wps./Token> remoting is enabled on each node in the cluster. For more information, see <legacyLink xlink:href="c4c50fef-cfa1-4844-8921-deeb7653d8ba#BKMK_NODE_CONFIG">Configure nodes for remote management</legacyLink> in <legacyLink xlink:href="c4c50fef-cfa1-4844-8921-deeb7653d8ba">Requirements and Best Practices for Cluster-Aware Updating [WS8]</legacyLink>.</para>
       </alert>
       <table xmlns:caps="http://schemas.microsoft.com/build/caps/2013/11">
         <thead>
@@ -61,7 +61,7 @@ ms.assetid: a62dc1ea-f89e-4132-a550-c1c362517e86
             <TD>
               <para>Time in minutes after which the Updating Run will be stopped if it has not completed.</para>
               <alert class="note">
-                <para>If you specify a pre-update or a post-update <token>wps_2</token> script, the entire process of running scripts and performing updates must be complete within the <ui>StopAfter</ui> time limit.</para>
+                <para>If you specify a pre-update or a post-update <token>wps./Token> script, the entire process of running scripts and performing updates must be complete within the <ui>StopAfter</ui> time limit.</para>
               </alert>
             </TD>
           </tr>
@@ -141,7 +141,7 @@ ms.assetid: a62dc1ea-f89e-4132-a550-c1c362517e86
               <para>None</para>
             </TD>
             <TD>
-              <para>The path and file name for a <token>wps_2</token> script to run on each node before updating begins, and before the node is put into maintenance mode. The file name extension must be <system>.ps1</system>, and the total length of the path plus file name must not exceed 260 characters. As a best practice, the script should be located on a disk in cluster storage, or at a highly available network file share, to ensure that it is always accessible to all of the cluster nodes. If the script is located on a network file share, ensure that you configure the file share for Read permission for the Everyone group, and restrict write access to prevent tampering with the files by unauthorized users.</para>
+              <para>The path and file name for a <token>wps./Token> script to run on each node before updating begins, and before the node is put into maintenance mode. The file name extension must be <system>.ps1</system>, and the total length of the path plus file name must not exceed 260 characters. As a best practice, the script should be located on a disk in cluster storage, or at a highly available network file share, to ensure that it is always accessible to all of the cluster nodes. If the script is located on a network file share, ensure that you configure the file share for Read permission for the Everyone group, and restrict write access to prevent tampering with the files by unauthorized users.</para>
               <para>If you specify a pre-update script, be sure that settings such as the time limits (for example, <ui>StopAfter</ui>) are configured to allow the script to run successfully. These limits span the entire process of running scripts and installing updates, not just the process of installing updates.</para>
             </TD>
           </tr>
@@ -155,7 +155,7 @@ ms.assetid: a62dc1ea-f89e-4132-a550-c1c362517e86
               <para>None</para>
             </TD>
             <TD>
-              <para>The path and file name for a <token>wps_2</token> script to run after updating completes (after the node leaves maintenance mode). The file name extension must be <system>.ps1</system> and the total length of the path plus file name must not exceed 260 characters. As a best practice, the script should be located on a disk in cluster storage, or at a highly available network file share, to ensure that it is always accessible to all of the cluster nodes. If the script is located on a network file share, ensure that you configure the file share for Read permission for the Everyone group, and restrict write access to prevent tampering with the files by unauthorized users.</para>
+              <para>The path and file name for a <token>wps./Token> script to run after updating completes (after the node leaves maintenance mode). The file name extension must be <system>.ps1</system> and the total length of the path plus file name must not exceed 260 characters. As a best practice, the script should be located on a disk in cluster storage, or at a highly available network file share, to ensure that it is always accessible to all of the cluster nodes. If the script is located on a network file share, ensure that you configure the file share for Read permission for the Everyone group, and restrict write access to prevent tampering with the files by unauthorized users.</para>
               <para>If you specify a post-update script, be sure that settings such as the time limits (for example, <ui>StopAfter</ui>) are configured to allow the script to run successfully. These limits span the entire process of running scripts and installing updates, not just the process of installing updates.</para>
             </TD>
           </tr>
@@ -167,10 +167,10 @@ ms.assetid: a62dc1ea-f89e-4132-a550-c1c362517e86
             </TD>
             <TD>
               <para>This setting only has an effect if you run scripts.</para>
-              <para>If you specify a pre-update script or a post-update script, but you do not specify a <ui>ConfigurationName</ui>, the default session configuration for <token>wps_2</token> (Microsoft.PowerShell) is used.</para>
+              <para>If you specify a pre-update script or a post-update script, but you do not specify a <ui>ConfigurationName</ui>, the default session configuration for <token>wps./Token> (Microsoft.PowerShell) is used.</para>
             </TD>
             <TD>
-              <para>Specifies the <token>wps_2</token> session configuration that defines the session in which scripts (specified by <ui>PreUpdateScript</ui> and <ui>PostUpdateScript</ui>) are run, and can limit the commands that can be run.</para>
+              <para>Specifies the <token>wps./Token> session configuration that defines the session in which scripts (specified by <ui>PreUpdateScript</ui> and <ui>PostUpdateScript</ui>) are run, and can limit the commands that can be run.</para>
               <para />
             </TD>
           </tr>
@@ -257,7 +257,7 @@ ms.assetid: a62dc1ea-f89e-4132-a550-c1c362517e86
               <para>Current account credentials</para>
             </TD>
             <TD>
-              <para>Administrative credentials for the target cluster on which the Updating Run will be performed. You may already have the necessary credentials if you start the CAU UI (or open a <token>wps_2</token> session, if you are using the CAU <token>wps_2</token> cmdlets) from an account that has administrator rights and permissions on the cluster.</para>
+              <para>Administrative credentials for the target cluster on which the Updating Run will be performed. You may already have the necessary credentials if you start the CAU UI (or open a <token>wps./Token> session, if you are using the CAU <token>wps./Token> cmdlets) from an account that has administrator rights and permissions on the cluster.</para>
             </TD>
           </tr>
           <tr>
@@ -287,7 +287,7 @@ ms.assetid: a62dc1ea-f89e-4132-a550-c1c362517e86
           <image xlink:href="eda3e676-68d6-4a56-90af-dd29179cfd9b" />
         </mediaLinkInline>
         <embeddedLabel>
-          <token>wps_proc_title</token>
+          <token>wps_proc_tit./Token>
         </embeddedLabel>
       </para>
       <para>You can import the settings from an Updating Run Profile when you run the <system>Invoke-CauRun</system>, <system>Add-CauClusterRole</system>, or <system>Set-CauClusterRole</system> cmdlet.</para>
@@ -326,3 +326,5 @@ Invoke-CauRun –ClusterName CONTOSO-FC1 @MyRunProfile </code>
   </section>
   <relatedTopics />
 </developerConceptualDocument>
+
+

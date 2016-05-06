@@ -11,7 +11,7 @@ ms.topic: article
 ms.assetid: d55b7545-0bba-4169-bcab-4e185afe3f93
 ---
 # Back up and restore server system state and bare metal recovery (BMR)
-DPM can back up system state and provider bare metal recovery \(BMR\) protection. This enables you System protection aims to protect you against two scenarios – one where your computer starts, but you have lost system files and registry; and the other where the computer does not start and you have to recover everything. [!INCLUDE[dpm2012long](../Token/dpm2012long_md.md)] enables you to protect your computer against both these scenarios.
+DPM can back up system state and provider bare metal recovery \(BMR\) protection. This enables you System protection aims to protect you against two scenarios – one where your computer starts, but you have lost system files and registry; and the other where the computer does not start and you have to recover everything. [!INCLUDE[dpm2012long]./Token/dpm2012long_md.md)] enables you to protect your computer against both these scenarios.
 
 -   BMR protection—Backs up operating system files and all data except user data on critical volumes. By definition a BMR back up includes a system state backup.
 
@@ -42,7 +42,7 @@ Here’s a summary of what you can recover if you’ve backed up with these meth
 
 -   You can’t protect BMR and system state for the same computer in different protection groups.
 
--   A [!INCLUDE[dpm2012short](../Token/dpm2012short_md.md)] server can’t protect itself for BMR.
+-   A [!INCLUDE[dpm2012short]./Token/dpm2012short_md.md)] server can’t protect itself for BMR.
 
 -   Short\-term protection to tape \(D2T\) isn’t supported for BMR. Long\-term storage to tape \(D2D2T\) is supported.
 
@@ -80,4 +80,6 @@ Here’s a summary of what you can recover if you’ve backed up with these meth
 2.  DPM server calls WSB and shares out the replica volume for that BMR backup. In this case it doesn’t tell WSB to use the drive with the most free space, but instead to use the share created for the job.
 
 3.  When the backup finishes the file is transferred to the DPM server. Logs are stored in C:\\Windows\\Logs\\WindowsServerBackup.
+
+
 

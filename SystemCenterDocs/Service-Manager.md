@@ -26,3 +26,4 @@ Service Manager  provides an integrated platform for automating and adapting you
 
 - [Glossary for System Center 2016 – Service Manager](Glossary-for-System-Center-2016-%E2%80%93-Service-Manager.md)
 
+

@@ -8,7 +8,7 @@ ms.topic: article
 ms.assetid: 112d96f5-7fe0-49e6-a2c8-261b350d6f0f
 ---
 # Uninstall Agent from Windows-based Computers_1
-Use one of the following procedures to uninstall an [!INCLUDE[om12long](../Token/om12long_md.md)] agent from an agent\-managed computer.
+Use one of the following procedures to uninstall an [!INCLUDE[om12long](./Token/om12long_md.md)] agent from an agent\-managed computer.
 
 ## <a name="bkmk_TouninstalltheagentbyusingtheOperationsconsole"></a>To uninstall the agent by using the Operations console
 
@@ -70,17 +70,18 @@ Use one of the following procedures to uninstall an [!INCLUDE[om12long](../Token
 4.  In the **Agentless Managed** pane, locate all virtual instances for the cluster, right\-click, and then select **Delete**.
 
 ## See Also
-[Operations Manager Agent Installation Methods](../Topic/Operations-Manager-Agent-Installation-Methods.md)
-[Install Agent on Windows Using the Discovery Wizard](../Topic/Install-Agent-on-Windows-Using-the-Discovery-Wizard.md)
-[Install Agent on UNIX and Linux Using the Discovery Wizard](../Topic/Install-Agent-on-UNIX-and-Linux-Using-the-Discovery-Wizard.md)
-[Install Agent Using the MOMAgent.msi Setup Wizard](../Topic/Install-Agent-Using-the-MOMAgent.msi-Setup-Wizard.md)
-[Install Agent and Certificate on UNIX and Linux Computers Using the Command Line](../Topic/Install-Agent-and-Certificate-on-UNIX-and-Linux-Computers-Using-the-Command-Line.md)
-[Managing Certificates for UNIX and Linux Computers](../Topic/Managing-Certificates-for-UNIX-and-Linux-Computers.md)
-[Process Manual Agent Installations](../Topic/Process-Manual-Agent-Installations.md)
-[Applying Overrides to Object Discoveries](../Topic/Applying-Overrides-to-Object-Discoveries.md)
-[Configuring Agents](../Topic/Configuring-Agents.md)
-[Examples of Using MOMAgent Command to Manage Agents](../Topic/Examples-of-Using-MOMAgent-Command-to-Manage-Agents.md)
-[Upgrading and Uninstalling Agents on UNIX and Linux Computers](../Topic/Upgrading-and-Uninstalling-Agents-on-UNIX-and-Linux-Computers.md)
-[Manually Uninstalling Agents from UNIX and Linux Computers](../Topic/Manually-Uninstalling-Agents-from-UNIX-and-Linux-Computers.md)
-[Install Agent Using the Command Line](../Topic/Install-Agent-Using-the-Command-Line.md)
+[Operations Manager Agent Installation Methods](./Operations-Manager-Agent-Installation-Methods.md)
+[Install Agent on Windows Using the Discovery Wizard](./Install-Agent-on-Windows-Using-the-Discovery-Wizard.md)
+[Install Agent on UNIX and Linux Using the Discovery Wizard](./Install-Agent-on-UNIX-and-Linux-Using-the-Discovery-Wizard.md)
+[Install Agent Using the MOMAgent.msi Setup Wizard](./Install-Agent-Using-the-MOMAgent.msi-Setup-Wizard.md)
+[Install Agent and Certificate on UNIX and Linux Computers Using the Command Line](./Install-Agent-and-Certificate-on-UNIX-and-Linux-Computers-Using-the-Command-Line.md)
+[Managing Certificates for UNIX and Linux Computers](./Managing-Certificates-for-UNIX-and-Linux-Computers.md)
+[Process Manual Agent Installations](./Process-Manual-Agent-Installations.md)
+[Applying Overrides to Object Discoveries](./Applying-Overrides-to-Object-Discoveries.md)
+[Configuring Agents](./Configuring-Agents.md)
+[Examples of Using MOMAgent Command to Manage Agents](./Examples-of-Using-MOMAgent-Command-to-Manage-Agents.md)
+[Upgrading and Uninstalling Agents on UNIX and Linux Computers](./Upgrading-and-Uninstalling-Agents-on-UNIX-and-Linux-Computers.md)
+[Manually Uninstalling Agents from UNIX and Linux Computers](./Manually-Uninstalling-Agents-from-UNIX-and-Linux-Computers.md)
+[Install Agent Using the Command Line](./Install-Agent-Using-the-Command-Line.md)
+
 

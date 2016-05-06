@@ -199,7 +199,7 @@ ms.assetid: c66c7f4b-6b8f-4e44-8331-63fa85f858c2
       <para>To enable the Device Registration Service in the local forest, the following prerequisites must be met:</para>
       <list class="bullet">
         <listItem>
-          <para>The Active Directory schema must be at <token>winblue_server_1</token> level. </para>
+          <para>The Active Directory schema must be at <token>winblue_server_./Token> level. </para>
         </listItem>
         <listItem>
           <para>You need to run Windows PowerShell cmdlets as a member of the Enterprise Admins group in order to enable DRS.</para>
@@ -221,3 +221,4 @@ ms.assetid: c66c7f4b-6b8f-4e44-8331-63fa85f858c2
   </section>
   <relatedTopics />
 </developerConceptualDocument>
+

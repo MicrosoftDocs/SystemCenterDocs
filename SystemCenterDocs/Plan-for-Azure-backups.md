@@ -25,3 +25,4 @@ You can back up protected DPM data to Azure using Azure Backup. When you set up 
     |3|120 x 7 x 3|2520|
     |4|120 x 7 x 4|3360|
 
+

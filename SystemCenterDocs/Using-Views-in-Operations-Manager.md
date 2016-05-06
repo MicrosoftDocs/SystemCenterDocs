@@ -15,13 +15,14 @@ For a description of the differences between dashboard views and reports, see th
 
 ## Using Views in Operations Manager topics
 
--   [View Types in Operations Manager](../Topic/View-Types-in-Operations-Manager.md)
+-   [View Types in Operations Manager](./View-Types-in-Operations-Manager.md)
 
--   [Standard Views in Operations Manager](../Topic/Standard-Views-in-Operations-Manager.md)
+-   [Standard Views in Operations Manager](./Standard-Views-in-Operations-Manager.md)
 
--   [Creating Views in Operations Manager](../Topic/Creating-Views-in-Operations-Manager.md)
+-   [Creating Views in Operations Manager](./Creating-Views-in-Operations-Manager.md)
 
--   [How to Personalize a View in Operations Manager](../Topic/How-to-Personalize-a-View-in-Operations-Manager.md)
+-   [How to Personalize a View in Operations Manager](./How-to-Personalize-a-View-in-Operations-Manager.md)
 
--   [Guidance for Scoping and Targeting Views](../Topic/Guidance-for-Scoping-and-Targeting-Views.md)
+-   [Guidance for Scoping and Targeting Views](./Guidance-for-Scoping-and-Targeting-Views.md)
+
 

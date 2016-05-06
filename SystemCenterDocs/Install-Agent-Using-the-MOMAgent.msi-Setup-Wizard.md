@@ -11,11 +11,11 @@ ms.topic: article
 ms.assetid: ee7b443a-5105-4303-97d3-8018a7e74af4
 ---
 # Install Agent Using the MOMAgent.msi Setup Wizard
-Use the following procedure to deploy the [!INCLUDE[om12long](../Token/om12long_md.md)] agent on computers running Windows by using the MOMAgent.msi setup wizard. For a list of the supported operating system versions, see [Supported Configurations](http://go.microsoft.com/fwlink/p/?LinkID=223642).
+Use the following procedure to deploy the [!INCLUDE[om12long](./Token/om12long_md.md)] agent on computers running Windows by using the MOMAgent.msi setup wizard. For a list of the supported operating system versions, see [Supported Configurations](http://go.microsoft.com/fwlink/p/?LinkID=223642).
 
 Before you use the Setup Wizard, ensure the following conditions are met:
 
--   Each agent that is installed with the Setup Wizard must be approved by a management group. For more information, see [Process Manual Agent Installations](../Topic/Process-Manual-Agent-Installations.md).
+-   Each agent that is installed with the Setup Wizard must be approved by a management group. For more information, see [Process Manual Agent Installations](./Process-Manual-Agent-Installations.md).
 
 -   If an agent is manually deployed to a domain controller and an Active Directory management pack is later deployed, errors might occur during deployment of the management pack. To prevent errors from occurring before deploying the Active Directory management pack, or to recover from errors that might have already occurred, you need to deploy the Active Directory management pack helper object by running the file OomADs.msi on the affected domain controller. The file OomADs.msi is on the computer that is hosting the agent at C:\\Program Files\\System Center Operations Manager\\Agent\\HelperObjects. After an agent has been manually deployed to a domain controller, locate OomADs.msi and double\-click the file to install the Active Directory Management Pack helper object. The Active Directory Management Pack helper object is automatically installed when the agent is deployed using the Discovery Wizard.
 
@@ -63,17 +63,18 @@ Before you use the Setup Wizard, ensure the following conditions are met:
 11. When the **Completing the Operations Manager Agent Setup Wizard** page appears, click **Finish**.
 
 ## See Also
-[Operations Manager Agent Installation Methods](../Topic/Operations-Manager-Agent-Installation-Methods.md)
-[Install Agent on Windows Using the Discovery Wizard](../Topic/Install-Agent-on-Windows-Using-the-Discovery-Wizard.md)
-[Install Agent on UNIX and Linux Using the Discovery Wizard](../Topic/Install-Agent-on-UNIX-and-Linux-Using-the-Discovery-Wizard.md)
-[Install Agent Using the Command Line](../Topic/Install-Agent-Using-the-Command-Line.md)
-[Install Agent and Certificate on UNIX and Linux Computers Using the Command Line](../Topic/Install-Agent-and-Certificate-on-UNIX-and-Linux-Computers-Using-the-Command-Line.md)
-[Managing Certificates for UNIX and Linux Computers](../Topic/Managing-Certificates-for-UNIX-and-Linux-Computers.md)
-[Process Manual Agent Installations](../Topic/Process-Manual-Agent-Installations.md)
-[Applying Overrides to Object Discoveries](../Topic/Applying-Overrides-to-Object-Discoveries.md)
-[Configuring Agents](../Topic/Configuring-Agents.md)
-[Examples of Using MOMAgent Command to Manage Agents](../Topic/Examples-of-Using-MOMAgent-Command-to-Manage-Agents.md)
-[Upgrading and Uninstalling Agents on UNIX and Linux Computers](../Topic/Upgrading-and-Uninstalling-Agents-on-UNIX-and-Linux-Computers.md)
-[Manually Uninstalling Agents from UNIX and Linux Computers](../Topic/Manually-Uninstalling-Agents-from-UNIX-and-Linux-Computers.md)
-[Uninstall Agent from Windows-based Computers](../Topic/Uninstall-Agent-from-Windows-based-Computers.md)
+[Operations Manager Agent Installation Methods](./Operations-Manager-Agent-Installation-Methods.md)
+[Install Agent on Windows Using the Discovery Wizard](./Install-Agent-on-Windows-Using-the-Discovery-Wizard.md)
+[Install Agent on UNIX and Linux Using the Discovery Wizard](./Install-Agent-on-UNIX-and-Linux-Using-the-Discovery-Wizard.md)
+[Install Agent Using the Command Line](./Install-Agent-Using-the-Command-Line.md)
+[Install Agent and Certificate on UNIX and Linux Computers Using the Command Line](./Install-Agent-and-Certificate-on-UNIX-and-Linux-Computers-Using-the-Command-Line.md)
+[Managing Certificates for UNIX and Linux Computers](./Managing-Certificates-for-UNIX-and-Linux-Computers.md)
+[Process Manual Agent Installations](./Process-Manual-Agent-Installations.md)
+[Applying Overrides to Object Discoveries](./Applying-Overrides-to-Object-Discoveries.md)
+[Configuring Agents](./Configuring-Agents.md)
+[Examples of Using MOMAgent Command to Manage Agents](./Examples-of-Using-MOMAgent-Command-to-Manage-Agents.md)
+[Upgrading and Uninstalling Agents on UNIX and Linux Computers](./Upgrading-and-Uninstalling-Agents-on-UNIX-and-Linux-Computers.md)
+[Manually Uninstalling Agents from UNIX and Linux Computers](./Manually-Uninstalling-Agents-from-UNIX-and-Linux-Computers.md)
+[Uninstall Agent from Windows-based Computers](./Uninstall-Agent-from-Windows-based-Computers.md)
+
 

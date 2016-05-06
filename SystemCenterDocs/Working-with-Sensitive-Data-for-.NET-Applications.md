@@ -11,14 +11,14 @@ ms.topic: article
 ms.assetid: 69f2c1e7-4732-49f0-8643-4d95bdbb144c
 ---
 # Working with Sensitive Data for .NET Applications
-Here are some ways to work with sensitive data and .NET Application Performance Monitoring in [!INCLUDE[om12long](../Token/om12long_md.md)].
+Here are some ways to work with sensitive data and .NET Application Performance Monitoring in [!INCLUDE[om12long](./Token/om12long_md.md)].
 
 ## Masking Sensitive Data for .NET Applications
 Masking sensitive data allows you to use a regular expression to filter out common parameters and insert **\*** or some other character in place of the real value. This is used for functions and exceptions where you might capture sensitive information, such as credit card information, passwords, and other personally identifiable information.
 
 #### To mask sensitive data for .NET applications
 
-1.  To open the .NET Application Performance Monitoring template, in the [!INCLUDE[om12short](../Token/om12short_md.md)] console, in the navigation pane, click the **Authoring** button, expand **Management Pack Objects**, click **Rules**, and then click **change scope** in the right\-hand side of the information bar to see the current scoping.
+1.  To open the .NET Application Performance Monitoring template, in the [!INCLUDE[om12short](./Token/om12short_md.md)] console, in the navigation pane, click the **Authoring** button, expand **Management Pack Objects**, click **Rules**, and then click **change scope** in the right\-hand side of the information bar to see the current scoping.
 
 2.  In the **Scope Management Packs objects** page, select **.NET Application Monitoring Agent** to the current scope, and click **OK**.
 
@@ -37,7 +37,7 @@ If you do not want to get this sensitive information at all, here is how to avoi
 
 #### To disable parameter collection of a method
 
-1.  To open the .NET Application Performance Monitoring template, in the [!INCLUDE[om12short](../Token/om12short_md.md)] console, in the navigation pane, click the **Authoring** button, click **Management Pack Templates**, click **.NET Application Performance Monitoring**, right\-click the application group you want to modify, and then click **Properties**.
+1.  To open the .NET Application Performance Monitoring template, in the [!INCLUDE[om12short](./Token/om12short_md.md)] console, in the navigation pane, click the **Authoring** button, click **Management Pack Templates**, click **.NET Application Performance Monitoring**, right\-click the application group you want to modify, and then click **Properties**.
 
 2.  On the **What to Monitor** tab, select the application component you want to change and click **Customize**.
 
@@ -52,7 +52,7 @@ If you do not want to get this sensitive information at all, here is how to avoi
 
 #### To disable collection of exceptions
 
-1.  To open the .NET Application Performance Monitoring template, in the [!INCLUDE[om12short](../Token/om12short_md.md)] console, in the navigation pane, click the **Authoring** button, click **Management Pack Templates**, click **.NET Application Performance Monitoring**, right\-click the application group you want to modify, and then click **Properties**.
+1.  To open the .NET Application Performance Monitoring template, in the [!INCLUDE[om12short](./Token/om12short_md.md)] console, in the navigation pane, click the **Authoring** button, click **Management Pack Templates**, click **.NET Application Performance Monitoring**, right\-click the application group you want to modify, and then click **Properties**.
 
 2.  On the **Server\-Side Defaults** tab, click **Advanced Settings**.
 
@@ -64,4 +64,5 @@ If you do not want to get this sensitive information at all, here is how to avoi
 
 ## See Also
 [Operations Manager Privacy Statement](http://go.microsoft.com/fwlink/?LinkID=190868)
+
 

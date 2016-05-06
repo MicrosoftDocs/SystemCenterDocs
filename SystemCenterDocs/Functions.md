@@ -11,7 +11,7 @@ ms.topic: article
 ms.assetid: 4552c484-d0c0-49e4-b963-fe360ea3f20e
 ---
 # Functions
-By using [!INCLUDE[orchlong](../Token/orchlong_md.md)], you can manipulate string data from text files, Published Data, or other sources, and convert it into a usable form. You can also perform simple arithmetic operations, such as calculating sums and differences, and performing division and multiplication operations. For example, you can extract text from a text file by using a **Text File Management** activity, trim leading and trailing spaces from the text, and then retrieve specific parts of the text that you can pass to other activities as returned data items.
+By using [!INCLUDE[orchlong](./Token/orchlong_md.md)], you can manipulate string data from text files, Published Data, or other sources, and convert it into a usable form. You can also perform simple arithmetic operations, such as calculating sums and differences, and performing division and multiplication operations. For example, you can extract text from a text file by using a **Text File Management** activity, trim leading and trailing spaces from the text, and then retrieve specific parts of the text that you can pass to other activities as returned data items.
 
 For a complete list of the functions that you can perform, see the following Functions table.
 
@@ -49,5 +49,6 @@ Functions are case\-sensitive. For example, Upper\('Text'\) will be processed, b
 |Len \- returns the length of text.|Len\('Text'\)|Text \- the text that is being measured.|Len\('Measure this text'\) returns 17|
 
 ## See Also
-[Data Manipulation](../Topic/Data-Manipulation.md)
+[Data Manipulation](./Data-Manipulation.md)
+
 

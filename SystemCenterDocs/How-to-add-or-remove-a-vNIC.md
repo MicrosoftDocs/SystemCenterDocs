@@ -31,3 +31,4 @@ PS C:\> $Adapter = Get-SCVirtualNetworkAdapter -VM $VM
 PS C:\> Remove-SCVirtualNetworkAdapter -VirtualNetworkAdapter $Adapter
 ```
 **Note:** The second PowerShell sample above assumes that there is only one vNIC on the virtual machine.
+

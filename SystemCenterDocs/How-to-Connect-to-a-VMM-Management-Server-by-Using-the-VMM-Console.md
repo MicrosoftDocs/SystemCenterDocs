@@ -11,9 +11,9 @@ ms.topic: article
 ms.assetid: afe4c02a-6698-4cfb-9f2b-ec42adf70549
 ---
 # How to Connect to a VMM Management Server by Using the VMM Console
-You can use the following procedure to use the [!INCLUDE[vmm12sp1_long](../Token/vmm12sp1_long_md.md)] console to connect to a VMM management server.
+You can use the following procedure to use the [!INCLUDE[vmm12sp1_long](./Token/vmm12sp1_long_md.md)] console to connect to a VMM management server.
 
-To use the VMM console, you must be a member of a user role in [!INCLUDE[vmm12short](../Token/vmm12short_md.md)].
+To use the VMM console, you must be a member of a user role in [!INCLUDE[vmm12short](./Token/vmm12short_md.md)].
 
 ### To connect to a VMM management server by using the VMM console
 
@@ -39,4 +39,5 @@ To use the VMM console, you must be a member of a user role in [!INCLUDE[vmm12sh
 5.  If the **Select User Role** dialog box appears, select a user role, and then click **OK**.
 
     This dialog box appears only if the current user belongs to more than one user role in VMM.
+
 

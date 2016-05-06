@@ -20,15 +20,16 @@ There are times where you might have to add additional monitoring scenarios to a
 ## What tools do I use?
 Because management packs are implemented in .xml files, any XML editor can create and modify the XML code, however, this is the most complex method. Generally, you can create any monitoring that you require by using much simpler methods in the Operations console. When using the console, you have to select which management pack file you want to use to store any elements that you create, but there are few other details about the management pack that you have to consider.
 
-For more information about the tools that you can use to create a management pack, see [Authoring Tools](../Topic/Authoring-Tools.md).
+For more information about the tools that you can use to create a management pack, see [Authoring Tools](./Authoring-Tools.md).
 
 ## What permissions do I require?
-The permissions that you require to perform authoring depend on the method that you are using. Permissions in [!INCLUDE[om12short](../Token/om12short_md.md)] are controlled through user roles. All authoring performed in the Operations console requires access to the **Authoring** workspace. To access this workspace, you must have the **Author** or **Administrator** user role. Your authoring credentials might be limited to particular target classes depending on the author scope of the user role. If this is the case, you only can author elements against these classes. For more information about user roles, see [Implementing User Roles](http://go.microsoft.com/fwlink/?LinkID=232869).
+The permissions that you require to perform authoring depend on the method that you are using. Permissions in [!INCLUDE[om12short](./Token/om12short_md.md)] are controlled through user roles. All authoring performed in the Operations console requires access to the **Authoring** workspace. To access this workspace, you must have the **Author** or **Administrator** user role. Your authoring credentials might be limited to particular target classes depending on the author scope of the user role. If this is the case, you only can author elements against these classes. For more information about user roles, see [Implementing User Roles](http://go.microsoft.com/fwlink/?LinkID=232869).
 
 If you are using one of the offline methods for authoring, the Authoring console or an XML editor, you do not require any permissions because you are simply creating a file offline. In contrast, to install the management pack, you must have the **Administrator** user role.
 
 ## See Also
-[Authoring Tools](../Topic/Authoring-Tools.md)
-[Understanding Classes and Objects](../Topic/Understanding-Classes-and-Objects.md)
+[Authoring Tools](./Authoring-Tools.md)
+[Understanding Classes and Objects](./Understanding-Classes-and-Objects.md)
 [Implementing User Roles](http://go.microsoft.com/fwlink/?LinkID=232869)
+
 

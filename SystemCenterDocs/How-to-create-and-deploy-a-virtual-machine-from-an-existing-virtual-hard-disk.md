@@ -8,7 +8,7 @@ ms.topic: article
 ms.assetid: ac66fe03-b0c9-4bfe-b27c-335d92398cef
 ---
 # How to create and deploy a virtual machine from an existing virtual hard disk
-Use the following procedure in to create a virtual machine from an existing virtual hard disk that is stored in the [!INCLUDE[vmm12sp1_long](../Token/vmm12sp1_long_md.md)] library.
+Use the following procedure in to create a virtual machine from an existing virtual hard disk that is stored in the [!INCLUDE[vmm12sp1_long](./Token/vmm12sp1_long_md.md)] library.
 
 Before you complete this procedure, note the following:
 
@@ -18,9 +18,9 @@ Before you complete this procedure, note the following:
 
     -   The self\-service user role must have the **Store and re\-deploy** action assigned.
 
-    -   The self\-service user must first deploy the virtual machine to a private cloud, and then store it in the [!INCLUDE[vmm12short](../Token/vmm12short_md.md)] library.
+    -   The self\-service user must first deploy the virtual machine to a private cloud, and then store it in the [!INCLUDE[vmm12short](./Token/vmm12short_md.md)] library.
 
--   The virtual hard disk that you want to use must be stored in the [!INCLUDE[vmm12short](../Token/vmm12short_md.md)] library. If the virtual hard disk currently exists on another computer or device, copy it to the [!INCLUDE[vmm12short](../Token/vmm12short_md.md)] library. For instructions, see [How to add file-based resources to the VMM library](../Topic/How-to-add-file-based-resources-to-the-VMM-library.md).
+-   The virtual hard disk that you want to use must be stored in the [!INCLUDE[vmm12short](./Token/vmm12short_md.md)] library. If the virtual hard disk currently exists on another computer or device, copy it to the [!INCLUDE[vmm12short](./Token/vmm12short_md.md)] library. For instructions, see [How to add file-based resources to the VMM library](./How-to-add-file-based-resources-to-the-VMM-library.md).
 
 -   Use a virtual hard disk that has been generalized by using the Sysprep tool. If you do not use a generalized virtual hard disk, the identity of the new virtual machine will be the same as the source. Issues might occur if you turn on two virtual machines with the same identity at the same time.
 
@@ -43,7 +43,7 @@ Use the following procedure to create a virtual machine from an existing virtual
 
 6.  On the **Identity** page, enter the virtual machine name and an optional description.
 
-    If the virtual hard disk file that you selected on the previous page uses the .vhdx file format, the **Generation** box also appears. In the **Generation** box, select **Generation 1** or **Generation 2**. For more information, see [Understanding generation 1 and generation 2 virtual machines in VMM](../Topic/Understanding-generation-1-and-generation-2-virtual-machines-in-VMM.md).
+    If the virtual hard disk file that you selected on the previous page uses the .vhdx file format, the **Generation** box also appears. In the **Generation** box, select **Generation 1** or **Generation 2**. For more information, see [Understanding generation 1 and generation 2 virtual machines in VMM](./Understanding-generation-1-and-generation-2-virtual-machines-in-VMM.md).
 
     Then click **Next**.
 
@@ -62,9 +62,9 @@ Use the following procedure to deploy the virtual machine in a private cloud.
 
 #### To deploy the virtual machine in a private cloud
 
-1.  On the **Select Cloud** page, select the private cloud on which you want to place the virtual machine. If you are connected as an administrator, you can select the host on which the virtual machine should be deployed in the private cloud. The private cloud suggestions are based on a 0\-5 star rating. For more information, see [Understanding virtual machine placement and ratings in VMM](../Topic/Understanding-virtual-machine-placement-and-ratings-in-VMM.md). Verify the settings and modify if required:
+1.  On the **Select Cloud** page, select the private cloud on which you want to place the virtual machine. If you are connected as an administrator, you can select the host on which the virtual machine should be deployed in the private cloud. The private cloud suggestions are based on a 0\-5 star rating. For more information, see [Understanding virtual machine placement and ratings in VMM](./Understanding-virtual-machine-placement-and-ratings-in-VMM.md). Verify the settings and modify if required:
 
-    -   **Expected utilization**—For a virtual machine that is created from a blank hard disk, the expected utilization is based on standard defaults. For a virtual machine that is created from an existing virtual machine, the default settings are based on past performance of the existing machine. [!INCLUDE[vmm12short](../Token/vmm12short_md.md)] updates host suggestions and ratings in response to modifications that are made to the expected virtual machine utilization.
+    -   **Expected utilization**—For a virtual machine that is created from a blank hard disk, the expected utilization is based on standard defaults. For a virtual machine that is created from an existing virtual machine, the default settings are based on past performance of the existing machine. [!INCLUDE[vmm12short](./Token/vmm12short_md.md)] updates host suggestions and ratings in response to modifications that are made to the expected virtual machine utilization.
 
     -   **Make this VM highly available**—With this option selected, only hosts located in a cluster available for selection.
 
@@ -72,9 +72,9 @@ Use the following procedure to deploy the virtual machine in a private cloud.
 
     -   **Rating Explanation** or **Deployment and Transfer Explanation**—Provides an explanation if a host received a zero rating.
 
-    -   **SAN Explanation** or **Deployment and Transfer Explanation**—Lists any factors that make a storage area network \(SAN\) transfer unavailable. [!INCLUDE[vmm12short](../Token/vmm12short_md.md)] does not recognize a virtual machine that is stored on a SAN as available for deployment using SAN transfer if the virtual machine was stored directly in the [!INCLUDE[vmm12short](../Token/vmm12short_md.md)] library when it was created, or was added to the library during a library refresh. To avoid this issue, deploy the virtual machine to a host by using a LAN transfer, and then store the virtual machine in the same [!INCLUDE[vmm12short](../Token/vmm12short_md.md)] library, library share, and logical unit number \(LUN\).
+    -   **SAN Explanation** or **Deployment and Transfer Explanation**—Lists any factors that make a storage area network \(SAN\) transfer unavailable. [!INCLUDE[vmm12short](./Token/vmm12short_md.md)] does not recognize a virtual machine that is stored on a SAN as available for deployment using SAN transfer if the virtual machine was stored directly in the [!INCLUDE[vmm12short](./Token/vmm12short_md.md)] library when it was created, or was added to the library during a library refresh. To avoid this issue, deploy the virtual machine to a host by using a LAN transfer, and then store the virtual machine in the same [!INCLUDE[vmm12short](./Token/vmm12short_md.md)] library, library share, and logical unit number \(LUN\).
 
-        In addition, the **Deployment and Transfer Explanation** tab provides an explanation if fast file copy cannot be used. Fast file copy is based on the Windows Offloaded Data Transfers \(ODX\) feature, introduced in [!INCLUDE[winblue_server_2](../Token/winblue_server_2_md.md)]. For information about ODX, see [Windows Offloaded Data Transfers Overview](http://technet.microsoft.com/library/hh831628.aspx).
+        In addition, the **Deployment and Transfer Explanation** tab provides an explanation if fast file copy cannot be used. Fast file copy is based on the Windows Offloaded Data Transfers \(ODX\) feature, introduced in [!INCLUDE[winblue_server_2](./Token/winblue_server_2_md.md)]. For information about ODX, see [Windows Offloaded Data Transfers Overview](http://technet.microsoft.com/library/hh831628.aspx).
 
 2.  On the **Configure Settings** page, review the virtual machine settings:
 
@@ -96,9 +96,9 @@ Use the following procedure to deploy the virtual machine on a host.
 
 #### To deploy the virtual machine on a host
 
-1.  On the **Select Host** page, view the ratings, click the host on which you want to deploy the virtual machine, and then click **Next**. The host suggestions are based on a 0\-5 star rating. For more information, see [Understanding virtual machine placement and ratings in VMM](../Topic/Understanding-virtual-machine-placement-and-ratings-in-VMM.md). Note the following settings:
+1.  On the **Select Host** page, view the ratings, click the host on which you want to deploy the virtual machine, and then click **Next**. The host suggestions are based on a 0\-5 star rating. For more information, see [Understanding virtual machine placement and ratings in VMM](./Understanding-virtual-machine-placement-and-ratings-in-VMM.md). Note the following settings:
 
-    -   **Expected utilization**—For a virtual machine that is created from a blank hard disk, the expected utilization is based on standard defaults. For a virtual machine that is created from an existing virtual machine, the default settings are based on past performance of the existing virtual machine. [!INCLUDE[vmm12short](../Token/vmm12short_md.md)] updates the host suggestions and ratings in response to modifications that are made to the expected virtual machine utilization.
+    -   **Expected utilization**—For a virtual machine that is created from a blank hard disk, the expected utilization is based on standard defaults. For a virtual machine that is created from an existing virtual machine, the default settings are based on past performance of the existing virtual machine. [!INCLUDE[vmm12short](./Token/vmm12short_md.md)] updates the host suggestions and ratings in response to modifications that are made to the expected virtual machine utilization.
 
     -   **Make this VM highly available**—With this option selected, only hosts that are located in a cluster are available for selection.
 
@@ -106,9 +106,9 @@ Use the following procedure to deploy the virtual machine on a host.
 
     -   **Rating Explanation**—Provides an explanation if a host received a zero rating.
 
-    -   **SAN Explanation** or  **Deployment and Transfer Explanation**—Lists any factors that make a SAN transfer unavailable. [!INCLUDE[vmm12short](../Token/vmm12short_md.md)] does not recognize a virtual machine that is stored on a SAN as available for deployment using SAN transfer if the virtual machine was stored directly in the [!INCLUDE[vmm12short](../Token/vmm12short_md.md)] library when it was created, or if it was added to the [!INCLUDE[vmm12short](../Token/vmm12short_md.md)] library during a library refresh. To avoid this issue, deploy the virtual machine to a host by using a LAN transfer, and then store the virtual machine in the same [!INCLUDE[vmm12short](../Token/vmm12short_md.md)] library, library share, and logical unit number \(LUN\).
+    -   **SAN Explanation** or  **Deployment and Transfer Explanation**—Lists any factors that make a SAN transfer unavailable. [!INCLUDE[vmm12short](./Token/vmm12short_md.md)] does not recognize a virtual machine that is stored on a SAN as available for deployment using SAN transfer if the virtual machine was stored directly in the [!INCLUDE[vmm12short](./Token/vmm12short_md.md)] library when it was created, or if it was added to the [!INCLUDE[vmm12short](./Token/vmm12short_md.md)] library during a library refresh. To avoid this issue, deploy the virtual machine to a host by using a LAN transfer, and then store the virtual machine in the same [!INCLUDE[vmm12short](./Token/vmm12short_md.md)] library, library share, and logical unit number \(LUN\).
 
-        In addition, the **Deployment and Transfer Explanation** tab provides an explanation if fast file copy cannot be used. Fast file copy is based on the Windows Offloaded Data Transfers \(ODX\) feature, introduced in [!INCLUDE[winblue_server_2](../Token/winblue_server_2_md.md)]. For information about ODX, see [Windows Offloaded Data Transfers Overview](http://technet.microsoft.com/library/hh831628.aspx).
+        In addition, the **Deployment and Transfer Explanation** tab provides an explanation if fast file copy cannot be used. Fast file copy is based on the Windows Offloaded Data Transfers \(ODX\) feature, introduced in [!INCLUDE[winblue_server_2](./Token/winblue_server_2_md.md)]. For information about ODX, see [Windows Offloaded Data Transfers Overview](http://technet.microsoft.com/library/hh831628.aspx).
 
 2.  On the **Configure Settings** page, review the settings for the virtual machine:
 
@@ -128,7 +128,7 @@ Use the following procedure to deploy the virtual machine on a host.
 5.  On the **Summary** page, confirm the settings, and then click **Create**.
 
 ## <a name="BKMK_Library"></a>Storing the virtual machine in the library
-Use the following procedure to store the virtual machine in the [!INCLUDE[vmm12short](../Token/vmm12short_md.md)] library.
+Use the following procedure to store the virtual machine in the [!INCLUDE[vmm12short](./Token/vmm12short_md.md)] library.
 
 #### To store the virtual machine in the library
 
@@ -141,8 +141,9 @@ Use the following procedure to store the virtual machine in the [!INCLUDE[vmm12s
 To confirm that the virtual machine was created, in the **Library** workspace, in the **Library** pane, expand **Library Servers**, expand the library server where you stored the virtual machine, and then click **Stored Virtual Machines and Services**. The stored virtual machine appears in the **Physical Library Objects** pane.
 
 ## See Also
-[Creating and deploying virtual machines in VMM](../Topic/Creating-and-deploying-virtual-machines-in-VMM.md)
-[Configuring virtual machine options and settings](../Topic/Configuring-virtual-machine-options-and-settings.md)
-[Managing virtual machines with VMM](../Topic/Managing-virtual-machines-with-VMM.md)
-[Managing tenant resources with VMM](../Topic/Managing-tenant-resources-with-VMM.md)
+[Creating and deploying virtual machines in VMM](./Creating-and-deploying-virtual-machines-in-VMM.md)
+[Configuring virtual machine options and settings](./Configuring-virtual-machine-options-and-settings.md)
+[Managing virtual machines with VMM](./Managing-virtual-machines-with-VMM.md)
+[Managing tenant resources with VMM](./Managing-tenant-resources-with-VMM.md)
+
 

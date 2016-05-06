@@ -11,9 +11,9 @@ ms.topic: article
 ms.assetid: db18c324-ee25-4b6f-a7e6-2ea019a623d6
 ---
 # Runbook Output and Messages
-Most Automation runbooks will have some form of output such as an error message to the user or a complex object intended to be consumed by another workflow. Windows PowerShell provides [multiple streams](http://aka.ms/runbookauthor/streams) to send output from a workflow. [!INCLUDE[sma_1](../Token/sma_1_md.md)] works with each of these streams differently, and you should follow best practices for how to use each when you are creating a runbook.
+Most Automation runbooks will have some form of output such as an error message to the user or a complex object intended to be consumed by another workflow. Windows PowerShell provides [multiple streams](http://aka.ms/runbookauthor/streams) to send output from a workflow. [!INCLUDE[sma_1](./Token/sma_1_md.md)] works with each of these streams differently, and you should follow best practices for how to use each when you are creating a runbook.
 
-The following table provides a brief description of each of the streams and their behavior in the Management Portal both when running a published runbook and when [testing a runbook](../Topic/Testing-a-Runbook.md). Further details on each stream are provided in subsequent sections.
+The following table provides a brief description of each of the streams and their behavior in the Management Portal both when running a published runbook and when [testing a runbook](./Testing-a-Runbook.md). Further details on each stream are provided in subsequent sections.
 
 |Stream|Description|Published|Test|
 |----------|---------------|-------------|--------|
@@ -25,7 +25,7 @@ The following table provides a brief description of each of the streams and thei
 |Debug|Messages intended for an interactive user. Should not be used in runbooks.|Not written to job history.|Not written to Test Output Pane.|
 
 ## <a name="Output"></a>Output Stream
-The Output stream is intended for output of objects created by a workflow when it runs correctly. In [!INCLUDE[sma_2](../Token/sma_2_md.md)], this stream is primarily used for objects intended to be consumed by [parent runbooks that call the current runbook](Child-Runbooks-in-Service-Management-Automation.md). When you [call a runbook inline](Child-Runbooks-in-Service-Management-Automation.md#InlineExecution) from a parent runbook, it returns data from the output stream to the parent. You should only use the output stream to communicate general information back to the user if you know the runbook will never be called by another runbook. As a best practice, however, you should typically use the [Verbose Stream](Runbook-Output-and-Messages.md#Verbose) to communicate general information to the user.
+The Output stream is intended for output of objects created by a workflow when it runs correctly. In [!INCLUDE[sma_2](./Token/sma_2_md.md)], this stream is primarily used for objects intended to be consumed by [parent runbooks that call the current runbook](Child-Runbooks-in-Service-Management-Automation.md). When you [call a runbook inline](Child-Runbooks-in-Service-Management-Automation.md#InlineExecution) from a parent runbook, it returns data from the output stream to the parent. You should only use the output stream to communicate general information back to the user if you know the runbook will never be called by another runbook. As a best practice, however, you should typically use the [Verbose Stream](Runbook-Output-and-Messages.md#Verbose) to communicate general information to the user.
 
 You can write data to the output stream using [Write\-Output](http://aka.ms/runbookauthor/cmdlet/writeoutput) or by putting the object on its own line in the runbook.
 
@@ -90,7 +90,7 @@ Workflow Test-Runbook
 ```
 
 ## <a name="MessageStreams"></a>Message Streams
-Unlike the output stream, message streams are intended to communicate information to the user. There are multiple message streams for different kinds of information, and each is handled differently by [!INCLUDE[sma_2](../Token/sma_2_md.md)].
+Unlike the output stream, message streams are intended to communicate information to the user. There are multiple message streams for different kinds of information, and each is handled differently by [!INCLUDE[sma_2](./Token/sma_2_md.md)].
 
 ### <a name="WarningError"></a>Warning and Error Streams
 The Warning and Error streams are intended to log problems that occur in a runbook. They are written to the job history when a runbook is executed, and are included in the Test Output Pane in the Management Portal when a runbook is tested. By default, the runbook will continue executing after a warning or error. You can specify that the runbook should be suspended on a warning or error by setting a [preference variable](Runbook-Output-and-Messages.md#PreferenceVariables) in the runbook before creating the message. For example, to cause a runbook to suspend on an error as it would an exception, set $ErrorActionPreference to **Stop**.
@@ -131,7 +131,7 @@ The [Write\-Progress](http://aka.ms/runbookauthor/cmdlet/writeprogress) cmdlet i
 ## <a name="PreferenceVariables"></a>Preference Variables
 Windows PowerShell uses [preference variables](http://aka.ms/runbookauthor/preferencevariables) to determine how to respond to data sent to different output streams. You can set these variables in a runbook to control how it will respond to data sent into different streams.
 
-The following table lists the preference variables that can be used in runbooks with their valid and default values. Note that this table only includes the values that are valid in a runbook. Additional values are valid for the preference variables when used in Windows PowerShell outside of [!INCLUDE[sma_1](../Token/sma_1_md.md)].
+The following table lists the preference variables that can be used in runbooks with their valid and default values. Note that this table only includes the values that are valid in a runbook. Additional values are valid for the preference variables when used in Windows PowerShell outside of [!INCLUDE[sma_1](./Token/sma_1_md.md)].
 
 |Variable|Default Value|Valid Values|
 |------------|-----------------|----------------|
@@ -176,4 +176,5 @@ Get-SmaJobOutput –WebServiceEndpoint $webServer –Port $port -Id $job.Id –S
 ## See Also
 [Automation Runbooks](Automation-Runbooks.md)
 [Authoring Automation Runbooks](Authoring-Automation-Runbooks.md)
+
 

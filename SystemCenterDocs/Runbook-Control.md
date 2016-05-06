@@ -15,11 +15,12 @@ The following table provides a brief description of tasks you can accomplish wit
 
 |Tasks|Activity|
 |---------|------------|
-|Create a starting point in your runbook.|[Initialize Data](../Topic/Initialize-Data.md)|
-|Return data from your runbook to another runbook or to an external system.|[Return Data](../Topic/Return-Data.md)|
-|Publish data from any branch.|[Junction](../Topic/Junction.md)|
-|Run a runbook.|[Invoke Runbook](../Topic/Invoke-Runbook.md)|
+|Create a starting point in your runbook.|[Initialize Data](./Initialize-Data.md)|
+|Return data from your runbook to another runbook or to an external system.|[Return Data](./Return-Data.md)|
+|Publish data from any branch.|[Junction](./Junction.md)|
+|Run a runbook.|[Invoke Runbook](./Invoke-Runbook.md)|
 
 ## See Also
-[Standard Activities](../Topic/Standard-Activities.md)
+[Standard Activities](./Standard-Activities.md)
+
 

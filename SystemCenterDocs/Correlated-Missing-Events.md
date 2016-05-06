@@ -11,7 +11,7 @@ ms.topic: article
 ms.assetid: 71cbd5d7-d84e-4e1b-ac8e-35005890a84a
 ---
 # Correlated Missing Events
-A correlated missing event monitor in [!INCLUDE[om12short](../Token/om12short_md.md)] determines an error by the absence of a particular event after the occurrence of another. This resembles the missing event monitor except that instead of searching for the missing event in a particular time window, the monitor searches for the event in a particular time after another event is first detected.
+A correlated missing event monitor in [!INCLUDE[om12short](./Token/om12short_md.md)] determines an error by the absence of a particular event after the occurrence of another. This resembles the missing event monitor except that instead of searching for the missing event in a particular time window, the monitor searches for the event in a particular time after another event is first detected.
 
 For example, consider an application that performs a backup each evening and creates an event when it starts and a second event when it has completed successfully. A correlated missing event monitor could be created that searches for the event in a particular time window each evening. If both events are detected, then the monitor remains in a healthy state. If the first is found, then the timer starts. If the time is reached before the second event is detected, then the state change is triggered to indicate that the last backup did not occur successfully.
 
@@ -50,6 +50,7 @@ The following table provides an example of a correlated missing event monitor by
 -   The single occurrence of Event 3 at 00:05:00 resets both monitors to healthy.
 
 ## See Also
-[Event Monitors and Rules](../Topic/Event-Monitors-and-Rules.md)
-[Windows Events](../Topic/Windows-Events.md)
+[Event Monitors and Rules](./Event-Monitors-and-Rules.md)
+[Windows Events](./Windows-Events.md)
+
 

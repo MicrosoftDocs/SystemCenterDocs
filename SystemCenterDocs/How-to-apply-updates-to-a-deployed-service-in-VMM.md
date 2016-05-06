@@ -8,11 +8,11 @@ ms.topic: article
 ms.assetid: a5e80340-0604-45ec-a581-72caa17b57c4
 ---
 # How to apply updates to a deployed service in VMM
-You can apply updates to a deployed service in [!INCLUDE[vmm12sp1_long](../Token/vmm12sp1_long_md.md)]. To apply updates, first publish an updated service template and then use that updated service template to apply updates to the deployed service.
+You can apply updates to a deployed service in [!INCLUDE[vmm12sp1_long](./Token/vmm12sp1_long_md.md)]. To apply updates, first publish an updated service template and then use that updated service template to apply updates to the deployed service.
 
 ### To publish an updated service template
 
-1.  In the [!INCLUDE[vmm12short](../Token/vmm12short_md.md)] console, open the Library workspace, expand the **Templates** node, and then click **Service Templates**.
+1.  In the [!INCLUDE[vmm12short](./Token/vmm12short_md.md)] console, open the Library workspace, expand the **Templates** node, and then click **Service Templates**.
 
 2.  In the **Templates** pane that lists the available service templates, select the service template that you want to publish.
 
@@ -41,7 +41,7 @@ You can apply updates to a deployed service in [!INCLUDE[vmm12sp1_long](../Token
 6.  On the **Update Method** page, select whether you want to make the updates in\-place to the existing virtual machines or whether you want to deploy new virtual machines with the updated settings, and then click **Next**.
 
     > [!NOTE]
-    > For more information about these two update methods, see [Updating services in VMM](../Topic/Updating-services-in-VMM.md).
+    > For more information about these two update methods, see [Updating services in VMM](./Updating-services-in-VMM.md).
 
 7.  On the **Updates Review** page, review your selections, and then **Next**.
 
@@ -61,7 +61,8 @@ You can apply updates to a deployed service in [!INCLUDE[vmm12sp1_long](../Token
 12. After the update job has completed, in the VMs and Services workspace, verify that the **Template Release** value for the service has been updated.
 
 ## See Also
-[Updating services in VMM](../Topic/Updating-services-in-VMM.md)
-[Managing services with VMM](../Topic/Managing-services-with-VMM.md)
-[Managing tenant resources with VMM](../Topic/Managing-tenant-resources-with-VMM.md)
+[Updating services in VMM](./Updating-services-in-VMM.md)
+[Managing services with VMM](./Managing-services-with-VMM.md)
+[Managing tenant resources with VMM](./Managing-tenant-resources-with-VMM.md)
+
 

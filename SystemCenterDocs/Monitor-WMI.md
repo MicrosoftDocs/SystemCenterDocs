@@ -59,3 +59,4 @@ The following table lists the published data items.
 |WMI Query Result as a string|The result of the WMI query.|
 |WMI Namespace|The WMI namespace that you queried.|
 
+

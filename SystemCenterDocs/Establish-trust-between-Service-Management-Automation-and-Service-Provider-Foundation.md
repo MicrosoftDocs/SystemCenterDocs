@@ -11,13 +11,13 @@ ms.topic: article
 ms.assetid: 1b1ce164-f5c2-4a94-bce9-9271e3666f89
 ---
 # Establish trust between Service Management Automation and Service Provider Foundation
-For [!INCLUDE[spflong](../Token/spflong_md.md)] to successfully call the [!INCLUDE[sma_1](../Token/sma_1_md.md)] web service, the [!INCLUDE[sma_1](../Token/sma_1_md.md)] web service certificate must be trusted by the server on which [!INCLUDE[spfshort](../Token/spfshort_md.md)] is installed. This topic applies whether you are using a self\-signed certificate or a certification authority certificate for your [!INCLUDE[sma_1](../Token/sma_1_md.md)] web service.
+For [!INCLUDE[spflong](./Token/spflong_md.md)] to successfully call the [!INCLUDE[sma_1](./Token/sma_1_md.md)] web service, the [!INCLUDE[sma_1](./Token/sma_1_md.md)] web service certificate must be trusted by the server on which [!INCLUDE[spfshort](./Token/spfshort_md.md)] is installed. This topic applies whether you are using a self\-signed certificate or a certification authority certificate for your [!INCLUDE[sma_1](./Token/sma_1_md.md)] web service.
 
-#### To trust the [!INCLUDE[sma_1](../Token/sma_1_md.md)] certificate
+#### To trust the [!INCLUDE[sma_1](./Token/sma_1_md.md)] certificate
 
-1.  Log on to the computer that is running [!INCLUDE[spfshort](../Token/spfshort_md.md)].
+1.  Log on to the computer that is running [!INCLUDE[spfshort](./Token/spfshort_md.md)].
 
-2.  In a web browser, connect to the [!INCLUDE[sma_1](../Token/sma_1_md.md)] web service endpoint. This procedure assumes that Internet Explorer is being used and that it is being run with elevated privileges.
+2.  In a web browser, connect to the [!INCLUDE[sma_1](./Token/sma_1_md.md)] web service endpoint. This procedure assumes that Internet Explorer is being used and that it is being run with elevated privileges.
 
 3.  Click **Continue to this website \(not recommended\)**.
 
@@ -35,7 +35,8 @@ For [!INCLUDE[spflong](../Token/spflong_md.md)] to successfully call the [!INCLU
 
 10. If the import is successful, click OK to close the **Certificate** dialog box.
 
-[!INCLUDE[spflong](../Token/spflong_md.md)] should now be able to successfully call the [!INCLUDE[sma_1](../Token/sma_1_md.md)] web service.
+[!INCLUDE[spflong](./Token/spflong_md.md)] should now be able to successfully call the [!INCLUDE[sma_1](./Token/sma_1_md.md)] web service.
 
-For detailed guidance to understand, create, test, and publish runbooks, see [Authoring Automation Runbooks](../Topic/Authoring-Automation-Runbooks.md).
+For detailed guidance to understand, create, test, and publish runbooks, see [Authoring Automation Runbooks](./Authoring-Automation-Runbooks.md).
+
 

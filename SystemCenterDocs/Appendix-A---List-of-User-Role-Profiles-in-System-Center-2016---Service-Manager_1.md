@@ -9,7 +9,7 @@ ms.assetid: 796e8eaf-649d-40b9-8a47-9f79fc6df038
 robots: noindex,nofollow
 ---
 # Appendix A - List of User Role Profiles in System Center 2016 - Service Manager_1
-This appendix provides detailed information about the scope and properties of user role profiles in [!INCLUDE[scsm_threshold_1](../Token/scsm_threshold_1_md.md)].
+This appendix provides detailed information about the scope and properties of user role profiles in [!INCLUDE[scsm_threshold_1]./Token/scsm_threshold_1_md.md)].
 
 ## EndUser
 
@@ -177,4 +177,6 @@ The permissions for the implied CI Primary User profile are granted through the 
 |Create|None|None|None|
 |Update|None|None|None|
 |Delete|None|None|None|
+
+
 

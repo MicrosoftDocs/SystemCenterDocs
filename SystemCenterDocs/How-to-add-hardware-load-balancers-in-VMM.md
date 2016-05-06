@@ -11,23 +11,23 @@ ms.topic: article
 ms.assetid: 679cc787-b5e9-4fb1-ae6f-91ba20f15124
 ---
 # How to add hardware load balancers in VMM
-You can use the following procedure to discover and add hardware load balancers to [!INCLUDE[vmm12sp1_long](../Token/vmm12sp1_long_md.md)]. By adding load balancers to [!INCLUDE[vmm12short](../Token/vmm12short_md.md)] management and by creating associated virtual IP templates \(VIP templates\), users who create services can automatically provision load balancers when they create and deploy a service.
+You can use the following procedure to discover and add hardware load balancers to [!INCLUDE[vmm12sp1_long](./Token/vmm12sp1_long_md.md)]. By adding load balancers to [!INCLUDE[vmm12short](./Token/vmm12short_md.md)] management and by creating associated virtual IP templates \(VIP templates\), users who create services can automatically provision load balancers when they create and deploy a service.
 
 > [!IMPORTANT]
-> If you want to use Microsoft Network Load Balancing \(NLB\), you do not have to complete this procedure. When you install [!INCLUDE[vmm12short](../Token/vmm12short_md.md)], NLB is automatically included as a load balancer. To use NLB, you must create NLB virtual IP templates. For more information, see [How to create VIP templates for Network Load Balancing &#40;NLB&#41; in VMM](../Topic/How-to-create-VIP-templates-for-Network-Load-Balancing--NLB--in-VMM.md).
+> If you want to use Microsoft Network Load Balancing \(NLB\), you do not have to complete this procedure. When you install [!INCLUDE[vmm12short](./Token/vmm12short_md.md)], NLB is automatically included as a load balancer. To use NLB, you must create NLB virtual IP templates. For more information, see [How to create VIP templates for Network Load Balancing &#40;NLB&#41; in VMM](./How-to-create-VIP-templates-for-Network-Load-Balancing--NLB--in-VMM.md).
 
 **Account requirements** To complete this procedure, you must be a member of the Administrator user role or a Delegated Administrator where the administrative scope includes the host groups to which you want to make the load balancer available.
 
 ## Prerequisites
 Before you begin this procedure, make sure that the following prerequisites are met:
 
--   You must have a supported hardware load balancer. [!INCLUDE[vmm12short](../Token/vmm12short_md.md)] supports the following hardware load balancers:
+-   You must have a supported hardware load balancer. [!INCLUDE[vmm12short](./Token/vmm12short_md.md)] supports the following hardware load balancers:
 
     -   Brocade ServerIron ADX from Brocade Communications Systems, Inc.
 
     -   Citrix NetScaler from Citrix Systems, Inc.
 
--   You must obtain the load balancer provider from the load balancer vendor, and install the provider on the [!INCLUDE[vmm12short](../Token/vmm12short_md.md)] management server. You can use the following links to obtain the load balancer provider from your vendor’s website:
+-   You must obtain the load balancer provider from the load balancer vendor, and install the provider on the [!INCLUDE[vmm12short](./Token/vmm12short_md.md)] management server. You can use the following links to obtain the load balancer provider from your vendor’s website:
 
     > [!NOTE]
     > In the following list, all information and content at the listed Web addresses is provided by the owner or the users of each website. Microsoft makes no warranties, express, implied or statutory, as to the information at this website.
@@ -42,14 +42,14 @@ Before you begin this procedure, make sure that the following prerequisites are 
     > [!IMPORTANT]
     > After you install the load balancer provider, you must restart the System Center Virtual Machine Manager service. To restart the service, from an elevated command prompt, type the command **net stop scvmmservice**, press ENTER, type **net start scvmmservice**, and then press ENTER.
     > 
-    > Also, if you uninstall a [!INCLUDE[vmm12short](../Token/vmm12short_md.md)] management server and then reinstall it, you must also uninstall and then reinstall the load balancer provider.
+    > Also, if you uninstall a [!INCLUDE[vmm12short](./Token/vmm12short_md.md)] management server and then reinstall it, you must also uninstall and then reinstall the load balancer provider.
 
 -   Although it is not a required prerequisite, you can create a Run As account before you begin this procedure. \(You can also create the account during the procedure.\) The associated credentials must have permissions to configure the load balancers that you want to add.
 
     For example, create a Run As account that is named **Load Balancers**.
 
     > [!NOTE]
-    > You can create a Run As account in the **Settings** workspace. For more information about Run As accounts, see [How to create a Run As account in VMM](../Topic/How-to-create-a-Run-As-account-in-VMM.md).
+    > You can create a Run As account in the **Settings** workspace. For more information about Run As accounts, see [How to create a Run As account in VMM](./How-to-create-a-Run-As-account-in-VMM.md).
 
 #### To add a hardware load balancer
 
@@ -86,11 +86,11 @@ Before you begin this procedure, make sure that the following prerequisites are 
 
 9. On the **Logical Network Affinity** page, specify the load balancer affinity to logical networks, and then click **Next**.
 
-    Setting the load balancer affinity enables you to provide some control over which load balancer will be used for a service. This is based on logical network information. [!INCLUDE[vmm12short](../Token/vmm12short_md.md)] uses this information to determine the valid static IP address pools that are accessible from both the load balancer and the host group that the service tier will be deployed to. Note the following:
+    Setting the load balancer affinity enables you to provide some control over which load balancer will be used for a service. This is based on logical network information. [!INCLUDE[vmm12short](./Token/vmm12short_md.md)] uses this information to determine the valid static IP address pools that are accessible from both the load balancer and the host group that the service tier will be deployed to. Note the following:
 
     -   When you configure front\-end affinity, select the logical networks from which the load balancer can obtain its virtual IP \(VIP\) address. The VIP address is the IP address that is assigned to a load balancer during the deployment of a load\-balanced service tier. Clients can connect to the VIP address through a registered DNS name to access the service.
 
-        During the deployment of a load\-balanced service tier, [!INCLUDE[vmm12short](../Token/vmm12short_md.md)] looks for static IP address pools with available VIP addresses on the logical network that you select for the “Client connection” object when you configure a load balancer in a service template.
+        During the deployment of a load\-balanced service tier, [!INCLUDE[vmm12short](./Token/vmm12short_md.md)] looks for static IP address pools with available VIP addresses on the logical network that you select for the “Client connection” object when you configure a load balancer in a service template.
 
         For the load balancer to be selected during placement, when you configure the load balancer “Client connection” object, the logical network that you select must be in the list of logical networks that are selected for front\-end affinity.
 
@@ -114,7 +114,8 @@ Before you begin this procedure, make sure that the following prerequisites are 
 12. Verify that the load balancer appears in the **Load Balancers** pane. The **Provider Status** column indicates whether the provider is active.
 
 ## See Also
-[Configuring load balancing in VMM](../Topic/Configuring-load-balancing-in-VMM.md)
-[Managing network resources with VMM](../Topic/Managing-network-resources-with-VMM.md)
-[How to create VIP templates for hardware load balancers in VMM](../Topic/How-to-create-VIP-templates-for-hardware-load-balancers-in-VMM.md)
+[Configuring load balancing in VMM](./Configuring-load-balancing-in-VMM.md)
+[Managing network resources with VMM](./Managing-network-resources-with-VMM.md)
+[How to create VIP templates for hardware load balancers in VMM](./How-to-create-VIP-templates-for-hardware-load-balancers-in-VMM.md)
+
 

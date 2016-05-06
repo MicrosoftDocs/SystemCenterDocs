@@ -8,7 +8,7 @@ ms.topic: article
 ms.assetid: 0cc4a55e-0244-4417-bfb0-7e4bc28a539b
 ---
 # Data Protection Manager (DPM)
-Deploy [!INCLUDE[dpm2012long](../Token/dpm2012long_md.md)] to back up servers, computers, Microsoft workloads, system state, and bare metal recovery \(BMR\).
+Deploy [!INCLUDE[dpm2012long](./Token/dpm2012long_md.md)] to back up servers, computers, Microsoft workloads, system state, and bare metal recovery \(BMR\).
 
 -   [Get Started with DPM](assetId:///4f68f81d-5fed-4410-b08a-7b739464d456)—Learn what’s new, verify system requirements and unsupported scenarios, and get an overview of DPM features.
 
@@ -30,4 +30,5 @@ Deploy [!INCLUDE[dpm2012long](../Token/dpm2012long_md.md)] to back up servers, c
 
 ## Download
 You can download the latest copy of the DPM documentation from the [Microsoft Download Center](http://go.microsoft.com/fwlink/p/?LinkId=264967). Note that downloadable documentation is prepared periodically. The latest content is available from TechNet.
+
 

@@ -36,7 +36,7 @@ You can interact with DPM jobs in a number of ways:
     -   Use the **Group by** drop\-down list box to group the list of jobs by protection group, computer, status, or type.
 
 ## <a name="BKMK_Retry"></a>Retry a job
-If one or more jobs fail or are canceled by [!INCLUDE[dpm2012long](../Token/dpm2012long_md.md)], you can retry the jobs. If you manually cancel one or more jobs, they are deleted and can’t be retried. Retry a job as follows:
+If one or more jobs fail or are canceled by [!INCLUDE[dpm2012long](./Token/dpm2012long_md.md)], you can retry the jobs. If you manually cancel one or more jobs, they are deleted and can’t be retried. Retry a job as follows:
 
 1.  In DPM Administrator Console, go to the **Monitoring** > **Jobs**.
 
@@ -50,7 +50,7 @@ You can cancel single or multiple jobs as follows:
 2.  Group by **Status**. Select the scheduled job, and click **Cancel** > **Yes**. A job you cancel is deleted. However a job that’s canceled by DPM can be run again using **Retry**.
 
 ## <a name="BKMK_Status"></a>Check data protection job status
-[!INCLUDE[dpm2012long](../Token/dpm2012long_md.md)] tracks the status of data protection jobs as scheduled, completed, canceled, or failed. Check status as follows:
+[!INCLUDE[dpm2012long](./Token/dpm2012long_md.md)] tracks the status of data protection jobs as scheduled, completed, canceled, or failed. Check status as follows:
 
 1.  In DPM Administrator Console, go to **Monitoring** > **Jobs**.
 
@@ -84,4 +84,5 @@ You can create and manage filters to help with jobs, as follows:
 2.  Specify a filter name, time or data options, jobs types and status, group by protection group or computer, and select the protection members for which you want to display information. You can also filter on external media, time elapset and amount of data transferred.
 
 3.  Click **Preview** to preview the filtered jobs display, and then **Save**. **Refresh** the filter to detect configuration changes.
+
 

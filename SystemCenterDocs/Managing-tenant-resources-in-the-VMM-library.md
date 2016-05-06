@@ -14,10 +14,11 @@ Insert introduction here.
 Insert section body here.
 
 ## See Also
-[Managing private clouds with VMM](../Topic/Managing-private-clouds-with-VMM.md)
-[Managing virtual machines with VMM](../Topic/Managing-virtual-machines-with-VMM.md)
-[Managing services with VMM](../Topic/Managing-services-with-VMM.md)
-[Managing tenant resources with VMM](../Topic/Managing-tenant-resources-with-VMM.md)
-[Managing the VMM library and its resources](../Topic/Managing-the-VMM-library-and-its-resources.md)
-[Managing fabric resources with VMM](../Topic/Managing-fabric-resources-with-VMM.md)
+[Managing private clouds with VMM](./Managing-private-clouds-with-VMM.md)
+[Managing virtual machines with VMM](./Managing-virtual-machines-with-VMM.md)
+[Managing services with VMM](./Managing-services-with-VMM.md)
+[Managing tenant resources with VMM](./Managing-tenant-resources-with-VMM.md)
+[Managing the VMM library and its resources](./Managing-the-VMM-library-and-its-resources.md)
+[Managing fabric resources with VMM](./Managing-fabric-resources-with-VMM.md)
+
 

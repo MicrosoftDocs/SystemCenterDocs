@@ -11,9 +11,9 @@ ms.topic: article
 ms.assetid: 6b57cd04-dbf2-4c1b-be42-f28a5ce6e0cc
 ---
 # Managing Changes and Activities in Service Manager
-Information Technology \(IT\) departments must manage changes to their IT environment and the risk associated with such changes. The change management features in [!INCLUDE[scsm_threshold_1](../Token/scsm_threshold_1_md.md)] help you manage change by providing repeatable, predictable, and measured processes to implement change.
+Information Technology \(IT\) departments must manage changes to their IT environment and the risk associated with such changes. The change management features in [!INCLUDE[scsm_threshold_1](./Token/scsm_threshold_1_md.md)] help you manage change by providing repeatable, predictable, and measured processes to implement change.
 
-The following tasks are organized according to common change management scenarios and they describe how to use the change and activity management features in [!INCLUDE[smshort](../Token/smshort_md.md)].
+The following tasks are organized according to common change management scenarios and they describe how to use the change and activity management features in [!INCLUDE[smshort](./Token/smshort_md.md)].
 
 ## To Manage Changes  and Activities
 
@@ -31,7 +31,7 @@ The following tasks are organized according to common change management scenario
 
     -   Add a change reviewer
 
-    -   Approve a review activity using the [!INCLUDE[smcons](../Token/smcons_md.md)]
+    -   Approve a review activity using the [!INCLUDE[smcons](./Token/smcons_md.md)]
 
 -   Suspend and resume a change request
 
@@ -48,4 +48,5 @@ The following tasks are organized according to common change management scenario
     -   Close a change request
 
     -   Send automated activity and change request notifications
+
 

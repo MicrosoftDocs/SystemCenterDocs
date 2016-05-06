@@ -56,3 +56,4 @@ The following table lists the published data items.
 |Community string|The community string that was used to authenticate against this SNMP variable.|
 |Request port|The port used to communicate to the SNMP device.|
 
+

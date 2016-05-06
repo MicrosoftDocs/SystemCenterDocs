@@ -17,11 +17,12 @@ Views let you group SLA metrics that share certain criteria. However, when you p
 
 ### To personalize an SLA metric view
 
-1.  In the [!INCLUDE[smcons](../Token/smcons_md.md)], click **Administration**.
+1.  In the [!INCLUDE[smcons](./Token/smcons_md.md)], click **Administration**.
 
 2.  In the **Administration** pane, expand **Service Level Management**, and then select **Metric**.
 
 3.  Right\-click any view column heading to resize columns, to remove items from the results, or to change column sorting and grouping. Repeat this step until you are satisfied with the results.
 
 4.  You can also type in the **Filter** box to show results that are limited items that match what you typed.
+
 

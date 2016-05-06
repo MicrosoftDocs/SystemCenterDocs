@@ -8,7 +8,7 @@ ms.topic: article
 ms.assetid: 32d35af1-e748-441d-afed-7dbf61d71ecb
 ---
 # Operations Manager Reports Library_1
-[!INCLUDE[om12long](../Token/om12long_md.md)] provides the reports described in the following tables. For more information on a report, in the **Reporting** workspace, click the report and view the **Report Details**. For information on reports that are provided by other management packs, see the respective management pack guides.
+[!INCLUDE[om12long](./Token/om12long_md.md)] provides the reports described in the following tables. For more information on a report, in the **Reporting** workspace, click the report and view the **Report Details**. For information on reports that are provided by other management packs, see the respective management pack guides.
 
 > [!NOTE]
 > When you first install Operations Manager, it may take several minutes for all report libraries to appear in **Reporting**.
@@ -121,11 +121,12 @@ ms.assetid: 32d35af1-e748-441d-afed-7dbf61d71ecb
 |\(Resource Utilization Analysis\) Computer Memory Utilization Analysis|This reports highlights servers that have the heaviest memory utilization and provides a breakdown of memory utilization based on the monitored applications running on each server.|
 
 ## See Also
-[Using Reports in Operations Manager](../Topic/Using-Reports-in-Operations-Manager.md)
-[How to Create Reports in Operations Manager](../Topic/How-to-Create-Reports-in-Operations-Manager.md)
-[How to Save a Report](../Topic/How-to-Save-a-Report.md)
-[How to Run a Report](../Topic/How-to-Run-a-Report.md)
-[Scheduling Reports](../Topic/Scheduling-Reports.md)
-[How to Export a Report](../Topic/How-to-Export-a-Report.md)
-[How to Troubleshoot Reports that Return No Data](../Topic/How-to-Troubleshoot-Reports-that-Return-No-Data.md)
+[Using Reports in Operations Manager](./Using-Reports-in-Operations-Manager.md)
+[How to Create Reports in Operations Manager](./How-to-Create-Reports-in-Operations-Manager.md)
+[How to Save a Report](./How-to-Save-a-Report.md)
+[How to Run a Report](./How-to-Run-a-Report.md)
+[Scheduling Reports](./Scheduling-Reports.md)
+[How to Export a Report](./How-to-Export-a-Report.md)
+[How to Troubleshoot Reports that Return No Data](./How-to-Troubleshoot-Reports-that-Return-No-Data.md)
+
 

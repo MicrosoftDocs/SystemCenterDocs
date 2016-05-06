@@ -11,26 +11,26 @@ ms.topic: article
 ms.assetid: d19b28c0-a346-4806-8973-18d5f40ce4fb
 ---
 # Using SharePoint to View Operations Manager Data
-[!INCLUDE[om12long](../Token/om12long_md.md)] includes a SharePoint Web Part that displays selected dashboards from the web console. A configured Web Part allows you to see at a glance the availability and performance metrics for applications in your environment.
+[!INCLUDE[om12long](./Token/om12long_md.md)] includes a SharePoint Web Part that displays selected dashboards from the web console. A configured Web Part allows you to see at a glance the availability and performance metrics for applications in your environment.
 
 The Operations Manager Web Part is particularly useful for providing current status views to individuals in your organization who are not Operations Manager users. Use the following procedures, as applicable, to set up dashboards on a SharePoint page.
 
-[How to Deploy the Operations Manager Web Part](../Topic/Using-SharePoint-to-View-Operations-Manager-Data.md#bkmk_howtodeploytheoperationsmanagerwebpart)
+[How to Deploy the Operations Manager Web Part](./Using-SharePoint-to-View-Operations-Manager-Data.md#bkmk_howtodeploytheoperationsmanagerwebpart)
 Before you can add the Operations Manager Web Part to a SharePoint page, the Web Part must be deployed to the SharePoint site.
 
-[How to Configure the Web Part to Connect to a Web Console](../Topic/Using-SharePoint-to-View-Operations-Manager-Data.md#bkmk_howtoconfigurethewebparttoconnecttoawebconsole)
+[How to Configure the Web Part to Connect to a Web Console](./Using-SharePoint-to-View-Operations-Manager-Data.md#bkmk_howtoconfigurethewebparttoconnecttoawebconsole)
 After you deploy the Operations Manager Web Part, you configure it to connect to a specific web console.
 
-[How to Add the Operations Manager Web Part to a SharePoint Page](../Topic/Using-SharePoint-to-View-Operations-Manager-Data.md#bkmk_howtoaddtheoperationsmanagerwebparttoasharepointpage)
+[How to Add the Operations Manager Web Part to a SharePoint Page](./Using-SharePoint-to-View-Operations-Manager-Data.md#bkmk_howtoaddtheoperationsmanagerwebparttoasharepointpage)
 After the Operations Manager Web Part is deployed to a SharePoint site, you can add the Web Part to a SharePoint page.
 
-[How to Configure the Web Part to Use Shared Credentials](../Topic/Using-SharePoint-to-View-Operations-Manager-Data.md#bkmk_howtoconfigurethewebparttousesharedcredentials)
+[How to Configure the Web Part to Use Shared Credentials](./Using-SharePoint-to-View-Operations-Manager-Data.md#bkmk_howtoconfigurethewebparttousesharedcredentials)
 To configure the Operations Manager Web Part so that those who are not Operations Manager users can view it, you must configure the Web Part to use shared credentials.
 
-[How to Add Additional Environments to the Web Part](../Topic/Using-SharePoint-to-View-Operations-Manager-Data.md#bkmk_howtoaddadditionalenvironmentstothewebpart)
+[How to Add Additional Environments to the Web Part](./Using-SharePoint-to-View-Operations-Manager-Data.md#bkmk_howtoaddadditionalenvironmentstothewebpart)
 When you deploy the Operations Manager Web Part, you configure it to connect to a Web Console Server or *environment*. You can add additional environments to a Web Part, which will enable you to display dashboards from multiple management groups.
 
-[How to Uninstall the Operations Manager Web Part](../Topic/Using-SharePoint-to-View-Operations-Manager-Data.md#bkmk_howtouninstalltheoperationsmanagerwebpart)
+[How to Uninstall the Operations Manager Web Part](./Using-SharePoint-to-View-Operations-Manager-Data.md#bkmk_howtouninstalltheoperationsmanagerwebpart)
 You can uninstall the Operations Manager Web Part from all sites and web applications in the farm or from a specific site or web application.
 
 ## <a name="bkmk_howtodeploytheoperationsmanagerwebpart"></a>How to Deploy the Operations Manager Web Part
@@ -299,10 +299,11 @@ As with deploying the Operations Manager Web Part, you can uninstall the Web Par
 4.  Right\-click the Microsoft.EnterpriseManagement.SharePointIntegration.wsp file, and then click **Retract**.
 
 ## See Also
-[Using the Operations Manager Consoles](../Topic/Using-the-Operations-Manager-Consoles.md)
-[Finding Data and Objects in the Operations Manager Consoles](../Topic/Finding-Data-and-Objects-in-the-Operations-Manager-Consoles.md)
-[Using Views in Operations Manager](../Topic/Using-Views-in-Operations-Manager.md)
-[Not Monitored and Gray Agents](../Topic/Not-Monitored-and-Gray-Agents.md)
-[Subscribing to Alert Notifications](../Topic/Subscribing-to-Alert-Notifications.md)
-[Using Reports in Operations Manager](../Topic/Using-Reports-in-Operations-Manager.md)
+[Using the Operations Manager Consoles](./Using-the-Operations-Manager-Consoles.md)
+[Finding Data and Objects in the Operations Manager Consoles](./Finding-Data-and-Objects-in-the-Operations-Manager-Consoles.md)
+[Using Views in Operations Manager](./Using-Views-in-Operations-Manager.md)
+[Not Monitored and Gray Agents](./Not-Monitored-and-Gray-Agents.md)
+[Subscribing to Alert Notifications](./Subscribing-to-Alert-Notifications.md)
+[Using Reports in Operations Manager](./Using-Reports-in-Operations-Manager.md)
+
 

@@ -42,7 +42,7 @@ ms.assetid: 700cd500-c335-4138-9678-a6d28dfa8078
       </list>
       <para>For many clustered roles in the cluster, the automatic update process triggers a planned failover. This can cause a transient service interruption for connected clients. However, in the case of continuously available workloads, such as Hyper-V with live migration or file server with SMB Transparent Failover, CAU can coordinate cluster updates with no impact to the service availability.</para>
       <alert class="note">
-        <para>The CAU feature is only compatible with <token>winblue_server_2</token> and <token>win8_server_2</token> failover clusters and the clustered roles that are supported on those versions.</para>
+        <para>The CAU feature is only compatible with <token>winblue_server_./Token> and <token>win8_server_./Token> failover clusters and the clustered roles that are supported on those versions.</para>
       </alert>
     </content>
   </section>
@@ -74,13 +74,13 @@ ms.assetid: 700cd500-c335-4138-9678-a6d28dfa8078
       <para>The following is a description of important CAU functionality:</para>
       <list class="bullet">
         <listItem>
-          <para>A user interface (UI) and a set of <token>wps_2</token> cmdlets that you can use to preview, apply, monitor, and report on the updates</para>
+          <para>A user interface (UI) and a set of <token>wps_./Token> cmdlets that you can use to preview, apply, monitor, and report on the updates</para>
         </listItem>
         <listItem>
           <para>An end-to-end automation of the cluster-updating operation (an Updating Run), orchestrated by one or more Update Coordinator computers</para>
         </listItem>
         <listItem>
-          <para>A default plug-in that integrates with the existing Windows Update Agent (WUA) and Windows Server Update Services (WSUS) infrastructure in <token>winblue_server_2</token> or <token>win8_server_2</token> to apply important Microsoft updates</para>
+          <para>A default plug-in that integrates with the existing Windows Update Agent (WUA) and Windows Server Update Services (WSUS) infrastructure in <token>winblue_server_./Token> or <token>win8_server_./Token> to apply important Microsoft updates</para>
         </listItem>
         <listItem>
           <para>A second plug-in that can be used to apply Microsoft hotfixes, and that can be customized to apply non-Microsoft updates</para>
@@ -109,11 +109,11 @@ ms.assetid: 700cd500-c335-4138-9678-a6d28dfa8078
     <title>Hardware and software requirements</title>
     <content>
       <para>To use CAU in self-updating mode, the Failover Clustering Tools must be installed on each cluster node.</para>
-      <para>To enable remote-updating mode for a <token>winblue_server_2</token> failover cluster, you must install the Failover Clustering Tools from the RSAT on a local or a remote computer that is running <token>winblue_server_2</token> or <token>winblue_client_2</token> and that has network connectivity to the failover cluster.</para>
+      <para>To enable remote-updating mode for a <token>winblue_server_./Token> failover cluster, you must install the Failover Clustering Tools from the RSAT on a local or a remote computer that is running <token>winblue_server_./Token> or <token>winblue_client_./Token> and that has network connectivity to the failover cluster.</para>
       <alert class="note">
         <list class="bullet">
           <listItem>
-            <para>You must use the Failover Clustering Tools from the <token>winblue_server_2</token> RSAT to remotely manage updates for a <token>winblue_server_2</token> failover cluster. You can also use the <token>winblue_server_2</token> RSAT to remotely manage updates on a <token>win8_server_2</token> failover cluster.</para>
+            <para>You must use the Failover Clustering Tools from the <token>winblue_server_./Token> RSAT to remotely manage updates for a <token>winblue_server_./Token> failover cluster. You can also use the <token>winblue_server_./Token> RSAT to remotely manage updates on a <token>win8_server_./Token> failover cluster.</para>
           </listItem>
           <listItem>
             <para>To use CAU only in remote-updating mode, installation of the Failover Clustering Tools on the cluster nodes is not required. However, certain CAU features will not be available. For more information, see <externalLink><linkText>Requirements and Best Practices for Cluster-Aware Updating</linkText><linkUri>http://go.microsoft.com/fwlink/p/?LinkId=234906</linkUri></externalLink>.</para>
@@ -123,8 +123,8 @@ ms.assetid: 700cd500-c335-4138-9678-a6d28dfa8078
           </listItem>
         </list>
       </alert>
-      <para>To enable self-updating mode, the CAU clustered role must also be added to the failover cluster. To do this by using the CAU UI, under <ui>Cluster Actions</ui>, use the <ui>Configure Self-Updating Options</ui> action. Alternatively, run the <externalLink><linkText>Add-CauClusterRole</linkText><linkUri>http://technet.microsoft.com/library/hh847235.aspx</linkUri></externalLink> <token>wps_2</token> cmdlet.</para>
-      <para>To uninstall CAU, uninstall the Failover Clustering feature or Failover Clustering Tools by using Server Manager, <token>wps_2</token> cmdlets, or the DISM command-line tools.</para>
+      <para>To enable self-updating mode, the CAU clustered role must also be added to the failover cluster. To do this by using the CAU UI, under <ui>Cluster Actions</ui>, use the <ui>Configure Self-Updating Options</ui> action. Alternatively, run the <externalLink><linkText>Add-CauClusterRole</linkText><linkUri>http://technet.microsoft.com/library/hh847235.aspx</linkUri></externalLink> <token>wps_./Token> cmdlet.</para>
+      <para>To uninstall CAU, uninstall the Failover Clustering feature or Failover Clustering Tools by using Server Manager, <token>wps_./Token> cmdlets, or the DISM command-line tools.</para>
     </content>
     <sections>
       <section>
@@ -222,3 +222,4 @@ ms.assetid: 700cd500-c335-4138-9678-a6d28dfa8078
   </section>
   <relatedTopics />
 </developerConceptualDocument>
+

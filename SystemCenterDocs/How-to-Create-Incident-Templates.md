@@ -15,7 +15,7 @@ Use the following procedures to create two incident templates in Service Manager
 
 ### To create an email\-related incident template
 
-1.  In the [!INCLUDE[smcons](../Token/smcons_md.md)], click **Library**.
+1.  In the [!INCLUDE[smcons](./Token/smcons_md.md)], click **Library**.
 
 2.  In the **Library** pane, expand **Library**, and then click **Templates**.
 
@@ -55,7 +55,7 @@ Use the following procedures to create two incident templates in Service Manager
 
 ### To create a new printer\-related incident template
 
-1.  In the [!INCLUDE[smcons](../Token/smcons_md.md)], click **Library**.
+1.  In the [!INCLUDE[smcons](./Token/smcons_md.md)], click **Library**.
 
 2.  In the **Library** pane, expand **Library**, and then click **Templates**.
 
@@ -84,4 +84,5 @@ Use the following procedures to create two incident templates in Service Manager
 ### To validate that the new incident template was created
 
 -   Verify that the new incident templates are listed in the **Templates** pane.
+
 

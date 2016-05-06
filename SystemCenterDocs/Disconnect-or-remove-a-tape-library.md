@@ -17,3 +17,4 @@ If you disconnect or remove a tape library or stand\-alone tape drive that is no
 
 If you remove a tape library that is associated with a protection group and you do not intend to bring the tape library online again, you should modify the protection group to specify a different tape library. When all protection groups that were associated with the tape library that you removed are associated with other tape libraries, the entry for the tape library or stand\-alone tape drive will be removed from DPM Administrator Console during the daily inventory or when rescan runs, whichever occurs first.
 
+

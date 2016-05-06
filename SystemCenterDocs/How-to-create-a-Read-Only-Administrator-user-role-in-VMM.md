@@ -8,7 +8,7 @@ ms.topic: article
 ms.assetid: 8d31878b-2515-4c56-be56-85619127984c
 ---
 # How to create a Read-Only Administrator user role in VMM
-Use this procedure to create a Read\-Only Administrator user role in [!INCLUDE[vmm12sp1_long](../Token/vmm12sp1_long_md.md)].
+Use this procedure to create a Read\-Only Administrator user role in [!INCLUDE[vmm12sp1_long](./Token/vmm12sp1_long_md.md)].
 
 **Account requirements** Administrators and delegated administrators can create a Read\-Only Administrator role. Delegated administrators can create Read\-Only Administrator user roles that include a subset of the Delegated Administrator user role’s scope, library servers, and Run As accounts.
 
@@ -39,7 +39,8 @@ Use this procedure to create a Read\-Only Administrator user role in [!INCLUDE[v
 After you create a read\-only administrator, you can change its **Members**, **Scope**, **Library servers**, and **Run As accounts** in the **Properties** dialog box for the Read\-Only Administrator user role.
 
 ## See Also
-[Creating user roles in VMM](../Topic/Creating-user-roles-in-VMM.md)
-[How to create a Self-Service User role in VMM](../Topic/How-to-create-a-Self-Service-User-role-in-VMM.md)
-[Securing VMM resources](../Topic/Securing-VMM-resources.md)
+[Creating user roles in VMM](./Creating-user-roles-in-VMM.md)
+[How to create a Self-Service User role in VMM](./How-to-create-a-Self-Service-User-role-in-VMM.md)
+[Securing VMM resources](./Securing-VMM-resources.md)
+
 

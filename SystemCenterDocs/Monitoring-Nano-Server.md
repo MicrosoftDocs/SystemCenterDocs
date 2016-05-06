@@ -11,7 +11,7 @@ ms.topic: article
 ms.assetid: 3b1e34e3-7a86-42f3-acc6-363fc00b0e62
 ---
 # Monitoring Nano Server
-[!INCLUDE[winthreshold_nano](../Token/winthreshold_nano_md.md)] is a new installation option introduced in [!INCLUDE[winthreshold_server_1](../Token/winthreshold_server_1_md.md)]. Nano Server is optimized for private cloud and datacenter operations. With [!INCLUDE[scom_threshold_1](../Token/scom_threshold_1_md.md)] you can now monitor Nano Server by installing the Operations Manager agent.
+[!INCLUDE[winthreshold_nano](./Token/winthreshold_nano_md.md)] is a new installation option introduced in [!INCLUDE[winthreshold_server_1](./Token/winthreshold_server_1_md.md)]. Nano Server is optimized for private cloud and datacenter operations. With [!INCLUDE[scom_threshold_1](./Token/scom_threshold_1_md.md)] you can now monitor Nano Server by installing the Operations Manager agent.
 
 ## Nano Server monitoring capabilities
 With the release of Nano Server you can  monitor the basic operations of the Server by using the Windows Server Operating System Management Pack. You can also monitor a Nano Server running the following workloads:
@@ -135,4 +135,5 @@ Use the following procedure to install the agent with a PowerShell script.
 
     > [!NOTE]
     > You can  validate that the Operations Manager agent has been removed by checking that the uninstalllog.txt file in the \\NanoAgent\\NanoServer folder does not contain any errors and that  you see the message "Successfully un\-installed the agent from Nano Server" in the log file.
+
 

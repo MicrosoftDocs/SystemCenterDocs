@@ -11,7 +11,7 @@ ms.topic: article
 ms.assetid: 1c0f5967-227b-480c-a84f-965c7c232513
 ---
 # Tuning Monitoring by Using Targeting and Overrides
-When you import a management pack, [!INCLUDE[om12long](../Token/om12long_md.md)] discovers the objects defined by the management pack and begins applying the management pack’s rules and monitors to the discovered objects. You should always import a new management pack in a pre\-production environment first so that you can evaluate the management pack and adjust or tune the management pack as necessary to meet your business needs.
+When you import a management pack, [!INCLUDE[om12long](./Token/om12long_md.md)] discovers the objects defined by the management pack and begins applying the management pack’s rules and monitors to the discovered objects. You should always import a new management pack in a pre\-production environment first so that you can evaluate the management pack and adjust or tune the management pack as necessary to meet your business needs.
 
 To tune a management pack effectively, you should involve the service owner or subject matter experts, the operations team members who monitor the alerts and events and take action when something requires attention, and the engineering team responsible for the Operations Manager infrastructure. Depending on the service that is monitored by the management pack, you might also include the networking or security teams.  Those responsible for the Operations Manager infrastructure might not have the knowledge and experience with the service to effectively tune the management pack without expert input.
 
@@ -54,23 +54,24 @@ Each rule should be evaluated according to the following criteria:
 
 ## Tuning Monitoring by Using Targeting and Overrides topics
 
--   [Using Classes and Groups for Overrides in Operations Manager](../Topic/Using-Classes-and-Groups-for-Overrides-in-Operations-Manager.md)
+-   [Using Classes and Groups for Overrides in Operations Manager](./Using-Classes-and-Groups-for-Overrides-in-Operations-Manager.md)
 
--   [How to Override a Rule or Monitor](../Topic/How-to-Override-a-Rule-or-Monitor.md)
+-   [How to Override a Rule or Monitor](./How-to-Override-a-Rule-or-Monitor.md)
 
--   [How to Enable or Disable a Rule or Monitor](../Topic/How-to-Enable-or-Disable-a-Rule-or-Monitor.md)
+-   [How to Enable or Disable a Rule or Monitor](./How-to-Enable-or-Disable-a-Rule-or-Monitor.md)
 
--   [Using the Enforced Attribute in Overrides](../Topic/Using-the-Enforced-Attribute-in-Overrides.md)
+-   [Using the Enforced Attribute in Overrides](./Using-the-Enforced-Attribute-in-Overrides.md)
 
--   [How to Enable Recovery and Diagnostic Tasks](../Topic/How-to-Enable-Recovery-and-Diagnostic-Tasks.md)
+-   [How to Enable Recovery and Diagnostic Tasks](./How-to-Enable-Recovery-and-Diagnostic-Tasks.md)
 
 ## Other resources for this component
 
 -   [TechNet Library main page for Operations Manager](http://go.microsoft.com/fwlink/p/?LinkId=223634)
 
--   [Operations Guide for System Center 2012 - Operations Manager](../Topic/Operations-Guide-for-System-Center-2012---Operations-Manager.md)
+-   [Operations Guide for System Center 2012 - Operations Manager](./Operations-Guide-for-System-Center-2012---Operations-Manager.md)
 
--   [Managing Discovery and Agents](../Topic/Managing-Discovery-and-Agents.md)
+-   [Managing Discovery and Agents](./Managing-Discovery-and-Agents.md)
 
--   [Using Management Packs](../Topic/Using-Management-Packs.md)
+-   [Using Management Packs](./Using-Management-Packs.md)
+
 

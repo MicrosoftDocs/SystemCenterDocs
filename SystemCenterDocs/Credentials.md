@@ -11,19 +11,19 @@ ms.topic: article
 ms.assetid: 978a72d8-a446-42e5-b2bb-53a838623ee0
 ---
 # Credentials
-An [!INCLUDE[sma_2](../Token/sma_2_md.md)] Credential is either a username and password that can be used with Windows PowerShell commands or a certificate that is uploaded to the server.  The properties for a credential are stored securely in the [!INCLUDE[sma_2](../Token/sma_2_md.md)] database and can be accessed in the runbook with either the **Get\-AutomationPSCredential** or **Get\-AutomationCertificate** activity.
+An [!INCLUDE[sma_2](./Token/sma_2_md.md)] Credential is either a username and password that can be used with Windows PowerShell commands or a certificate that is uploaded to the server.  The properties for a credential are stored securely in the [!INCLUDE[sma_2](./Token/sma_2_md.md)] database and can be accessed in the runbook with either the **Get\-AutomationPSCredential** or **Get\-AutomationCertificate** activity.
 
 ## Windows PowerShell Cmdlets
-The cmdlets in the following table are used to create and manage credentials with Windows PowerShell in [!INCLUDE[sma_1](../Token/sma_1_md.md)].
+The cmdlets in the following table are used to create and manage credentials with Windows PowerShell in [!INCLUDE[sma_1](./Token/sma_1_md.md)].
 
 |Cmdlets|Description|
 |-----------|---------------|
-|[Get\-SmaCertificate](http://go.microsoft.com/fwlink/?LinkID=306447)|Retrieves an [!INCLUDE[sma_2](../Token/sma_2_md.md)] certificate.|
-|[Get\-SmaCredential](http://go.microsoft.com/fwlink/?LinkID=306451)|Retrieves an [!INCLUDE[sma_2](../Token/sma_2_md.md)] PowerShell credential.|
-|[Remove\-SmaCertificate](http://go.microsoft.com/fwlink/?LinkID=306464)|Removes an [!INCLUDE[sma_2](../Token/sma_2_md.md)] certificate.|
-|[Remove\-SmaCredential](http://go.microsoft.com/fwlink/?LinkID=306466)|Removes an [!INCLUDE[sma_2](../Token/sma_2_md.md)] PowerShell credental.|
+|[Get\-SmaCertificate](http://go.microsoft.com/fwlink/?LinkID=306447)|Retrieves an [!INCLUDE[sma_2](./Token/sma_2_md.md)] certificate.|
+|[Get\-SmaCredential](http://go.microsoft.com/fwlink/?LinkID=306451)|Retrieves an [!INCLUDE[sma_2](./Token/sma_2_md.md)] PowerShell credential.|
+|[Remove\-SmaCertificate](http://go.microsoft.com/fwlink/?LinkID=306464)|Removes an [!INCLUDE[sma_2](./Token/sma_2_md.md)] certificate.|
+|[Remove\-SmaCredential](http://go.microsoft.com/fwlink/?LinkID=306466)|Removes an [!INCLUDE[sma_2](./Token/sma_2_md.md)] PowerShell credental.|
 |[Set\-SmaCertificate](http://go.microsoft.com/fwlink/?LinkID=306473)|Creates a new certificate or sets the properties for an existing certificate including uploading the certificate file and setting the password for a .pfx.|
-|[Set\-SmaCredential](http://go.microsoft.com/fwlink/?LinkID=306475)|Creates a new [!INCLUDE[sma_2](../Token/sma_2_md.md)] PowerShell credential or sets the properties for an existing credential.|
+|[Set\-SmaCredential](http://go.microsoft.com/fwlink/?LinkID=306475)|Creates a new [!INCLUDE[sma_2](./Token/sma_2_md.md)] PowerShell credential or sets the properties for an existing credential.|
 
 ## Runbook Activities
 The activities in the following table are used to access credentials in a runbook.
@@ -34,7 +34,7 @@ The activities in the following table are used to access credentials in a runboo
 |Get\-AutomationPSCredential|Gets a username\/password to use in a runbook.|
 
 > [!NOTE]
-> You should avoid using variables in the –Name parameter of **Get\-AutomationPSCredential** and **Get\-AutomationCertificate** since this can complicate discovering dependencies between runbooks and [!INCLUDE[sma_2](../Token/sma_2_md.md)] variables.
+> You should avoid using variables in the –Name parameter of **Get\-AutomationPSCredential** and **Get\-AutomationCertificate** since this can complicate discovering dependencies between runbooks and [!INCLUDE[sma_2](./Token/sma_2_md.md)] variables.
 
 ## Creating a new credential
 
@@ -125,4 +125,5 @@ You retrieve a PowerShell Credential in a runbook with the **Get\-AutomationPSCr
 [Service Management Automation](Service-Management-Automation.md)
 [Authoring Automation Runbooks](Authoring-Automation-Runbooks.md)
 [Global Assets](Global-Assets.md)
+
 

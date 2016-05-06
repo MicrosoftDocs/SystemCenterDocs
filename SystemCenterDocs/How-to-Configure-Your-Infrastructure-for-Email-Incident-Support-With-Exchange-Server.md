@@ -83,7 +83,7 @@ Use the following procedures to configure your Microsoft Exchange Server infras
 
 ### To configure Service Manager for email
 
-1.  Open the [!INCLUDE[smcons](../Token/smcons_md.md)], and then select **Administration**.
+1.  Open the [!INCLUDE[smcons](./Token/smcons_md.md)], and then select **Administration**.
 
 2.  In the **Administration** pane, expand **Administration**, and then click **Settings**.
 
@@ -95,13 +95,13 @@ Use the following procedures to configure your Microsoft Exchange Server infras
 
 6.  In **SMTP Service bad folder location**, type the path, share, and folder to the Badmail folder. In this example, type **\\\\<computer\_name>\\Mailroot\\Badmail** where **\<computer\_name\>** is the name of the computer that is hosting the SMTP Server service, **Mailroot** is the share name, and **Badmail** is the subfolder name.
 
-7.  In **Maximum number of e\-mails to process at a time**, type a number for the emails that you want [!INCLUDE[smshort](../Token/smshort_md.md)] to process during an email processing cycle.
+7.  In **Maximum number of e\-mails to process at a time**, type a number for the emails that you want [!INCLUDE[smshort](./Token/smshort_md.md)] to process during an email processing cycle.
 
 8.  Select **Turn on incoming e\-mails processing**, and then click **OK**.
 
 ### To configure email notifications
 
-1.  In the [!INCLUDE[smcons](../Token/smcons_md.md)], click **Administration**.
+1.  In the [!INCLUDE[smcons](./Token/smcons_md.md)], click **Administration**.
 
 2.  In the **Administration** pane, expand **Notifications**, and then click **Channels**.
 
@@ -231,4 +231,5 @@ In the following procedures, you configure Exchange Server for use with Service
     > The file should be removed automatically. This indicates that the Exchange server is using it.
 
 9. Using the user credentials for the **To** recipient that you typed previously, open Outlook and confirm that the email was received.
+
 

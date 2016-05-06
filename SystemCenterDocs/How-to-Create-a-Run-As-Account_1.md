@@ -38,7 +38,7 @@ When you create a Run As Account you are warned that you must associate the Run 
 
 7.  Click **Next**.
 
-8.  On the **Distribution Security** page, select the **Less secure** or **More secure** option as appropriate. For more information, see [Distribution and Targeting for Run As Accounts and Profiles](../Topic/Distribution-and-Targeting-for-Run-As-Accounts-and-Profiles.md).
+8.  On the **Distribution Security** page, select the **Less secure** or **More secure** option as appropriate. For more information, see [Distribution and Targeting for Run As Accounts and Profiles](./Distribution-and-Targeting-for-Run-As-Accounts-and-Profiles.md).
 
 9. Click **Create**.
 
@@ -71,9 +71,10 @@ When you create a Run As Account you are warned that you must associate the Run 
 9. Click **OK**. This returns you to the **Distribution** tab and the computers are displayed. Click **OK**.
 
 ## See Also
-[Managing Run As Accounts and Profiles](../Topic/Managing-Run-As-Accounts-and-Profiles.md)
-[Distribution and Targeting for Run As Accounts and Profiles](../Topic/Distribution-and-Targeting-for-Run-As-Accounts-and-Profiles.md)
-[How to Associate a Run As Account to a Run As Profile](../Topic/How-to-Associate-a-Run-As-Account-to-a-Run-As-Profile.md)
-[How to Create a New Run As Account for Accessing the Operations Manager Database](../Topic/How-to-Create-a-New-Run-As-Account-for-Accessing-the-Operations-Manager-Database.md)
-[How to Configure Run As Accounts and Profiles for UNIX and Linux Access](../Topic/How-to-Configure-Run-As-Accounts-and-Profiles-for-UNIX-and-Linux-Access.md)
+[Managing Run As Accounts and Profiles](./Managing-Run-As-Accounts-and-Profiles.md)
+[Distribution and Targeting for Run As Accounts and Profiles](./Distribution-and-Targeting-for-Run-As-Accounts-and-Profiles.md)
+[How to Associate a Run As Account to a Run As Profile](./How-to-Associate-a-Run-As-Account-to-a-Run-As-Profile.md)
+[How to Create a New Run As Account for Accessing the Operations Manager Database](./How-to-Create-a-New-Run-As-Account-for-Accessing-the-Operations-Manager-Database.md)
+[How to Configure Run As Accounts and Profiles for UNIX and Linux Access](./How-to-Configure-Run-As-Accounts-and-Profiles-for-UNIX-and-Linux-Access.md)
+
 

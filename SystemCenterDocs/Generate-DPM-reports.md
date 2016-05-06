@@ -359,3 +359,4 @@ DPM provides a number of predefined views that you can use to search more simply
 |ProtectedGroupName|varchar\(max\)|Name of the protection group that owns the tape|
 |MediaExpiryDate|datetime|Expiry date of the tape|
 
+

@@ -8,20 +8,20 @@ ms.topic: article
 ms.assetid: 68ca9a30-858f-4e50-a523-0b9afbf0e6bf
 ---
 # Recover protected data_1
-Loss of data is an unwanted event for any organization. [!INCLUDE[dpm2012long](../Token/dpm2012long_md.md)] helps mitigate such losses by providing you with the ability to recover backed up data. To enable data recovery, [!INCLUDE[dpm2012short](../Token/dpm2012short_md.md)] creates recovery points \(previous versions\) of your protected data in accordance with settings you specify in the policy for a protection group. A recovery point, also referred to as a snapshot, is a point\-in\-time copy of a replica stored on the [!INCLUDE[dpm2012short](../Token/dpm2012short_md.md)] server. A replica is a complete point\-in\-time copy of the protected shares, folders, and files for a single volume on a protected computer. When you start protecting data, an initial full replica of the data is copied to the allocated replica volume.
+Loss of data is an unwanted event for any organization. [!INCLUDE[dpm2012long](./Token/dpm2012long_md.md)] helps mitigate such losses by providing you with the ability to recover backed up data. To enable data recovery, [!INCLUDE[dpm2012short](./Token/dpm2012short_md.md)] creates recovery points \(previous versions\) of your protected data in accordance with settings you specify in the policy for a protection group. A recovery point, also referred to as a snapshot, is a point\-in\-time copy of a replica stored on the [!INCLUDE[dpm2012short](./Token/dpm2012short_md.md)] server. A replica is a complete point\-in\-time copy of the protected shares, folders, and files for a single volume on a protected computer. When you start protecting data, an initial full replica of the data is copied to the allocated replica volume.
 
-You can browse through the recovery points to find, select, and recover previous versions of your protected data. [!INCLUDE[dpm2012short](../Token/dpm2012short_md.md)] provides search and browse features that help you find the data that you need to recover. After you find the data, you can recover the version you find, or you can display a list of all available versions so that you can select a specific version to recover. Recovered data can be from any workloads you protect using [!INCLUDE[dpm2012short](../Token/dpm2012short_md.md)] — client computer or server data, files, applications, or workloads such as SQL Server, SharePoint, Hyper\-V, or Exchange.
+You can browse through the recovery points to find, select, and recover previous versions of your protected data. [!INCLUDE[dpm2012short](./Token/dpm2012short_md.md)] provides search and browse features that help you find the data that you need to recover. After you find the data, you can recover the version you find, or you can display a list of all available versions so that you can select a specific version to recover. Recovered data can be from any workloads you protect using [!INCLUDE[dpm2012short](./Token/dpm2012short_md.md)] — client computer or server data, files, applications, or workloads such as SQL Server, SharePoint, Hyper\-V, or Exchange.
 
 It takes only a few minutes to find data, select a version, and start a recovery job or recovery collection \(multiple jobs\). Depending on the size of data being recovered, the job can take less than a minute or it could take hours. You can check the status of recovery jobs in the **Monitoring** task area.
 
 ## In this section
-[Work with recovery points](../Topic/Work-with-recovery-points.md)
+[Work with recovery points](./Work-with-recovery-points.md)
 
-[Find recoverable data](../Topic/Find-recoverable-data.md)
+[Find recoverable data](./Find-recoverable-data.md)
 
 [Recover client computer data &#91;TO DELETE&#93;](assetId:///ba1d7ab2-41f9-4c2e-b2dd-5e5cfb4af9ab)
 
-[Recover system state or BMR](../Topic/Recover-system-state-or-BMR.md)
+[Recover system state or BMR](./Recover-system-state-or-BMR.md)
 
 [Recover virtual machine data &#91;TO DELETE&#93;](assetId:///f4b0b4c4-ac5f-44f8-b66e-575a9b3d38fc)
 
@@ -34,4 +34,5 @@ It takes only a few minutes to find data, select a version, and start a recovery
 [Recover SQL Server data &#91;TO DELETE&#93;](assetId:///8df7bffc-b96d-4906-8664-4d539d01cd9f)
 
 [Recover Hyper\-V data &#91;TO DELETE&#93;](assetId:///673b31ee-24a2-41cc-90af-dcbba319f89b)
+
 

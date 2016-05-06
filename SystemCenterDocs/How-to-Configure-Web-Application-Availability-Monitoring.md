@@ -11,7 +11,7 @@ ms.topic: article
 ms.assetid: 340c7bbc-ca87-4bf2-8fe8-48b8a141aac4
 ---
 # How to Configure Web Application Availability Monitoring
-The **Web Application Availability Monitoring** template in [!INCLUDE[om12long](../Token/om12long_md.md)] lets you monitor web applications from internal locations.
+The **Web Application Availability Monitoring** template in [!INCLUDE[om12long](./Token/om12long_md.md)] lets you monitor web applications from internal locations.
 
 ## Key Concepts and Strategies
 Here are some key concepts and strategies to keep in mind as you use the template to configure tests:
@@ -34,11 +34,11 @@ Here are some key concepts and strategies to keep in mind as you use the templat
 
 1.  To configure internal URL tests, use the Web Application Availability Monitoring template. This template allows you to create availability monitoring tests for one or more Web Application URLs and run them from internal locations and will walk you through selecting the URLs you want to monitor and where you want to monitor them from.
 
-    To open the Web Application Availability Monitoring template, in the [!INCLUDE[om12short](../Token/om12short_md.md)] console, in the navigation pane, click the **Authoring** button, click **Management Pack Templates**, click **Web Application Availability Monitoring**, and then, in the tasks pane, click the **Add Monitoring Wizard**. Click **Web Application Availability Monitoring**, and then click **Next**.
+    To open the Web Application Availability Monitoring template, in the [!INCLUDE[om12short](./Token/om12short_md.md)] console, in the navigation pane, click the **Authoring** button, click **Management Pack Templates**, click **Web Application Availability Monitoring**, and then, in the tasks pane, click the **Add Monitoring Wizard**. Click **Web Application Availability Monitoring**, and then click **Next**.
 
     **Location of Web Application Availability Monitoring**
 
-    ![](../Image/WAAM_AuthoringFolderLocation.gif)
+    ![](/Image/WAAM_AuthoringFolderLocation.gif)
 
 2.  On the **General** page, enter a friendly name and description for your test and the management pack, which stores settings that are specific to this version of the template. Click **Next**
 
@@ -59,7 +59,7 @@ Here are some key concepts and strategies to keep in mind as you use the templat
 5.  To monitor from internal locations, use the dropdown menu to select to run tests from a server agent or a resource pool. Above the **Internal locations** field, click **Add** and select the internal locations \(server names\) you want to monitor from and add those to your list of **Selected locations**. Click **OK**
 
     > [!NOTE]
-    > The **Select internal locations** page verifies the version of health service on the agents and only [!INCLUDE[om12short](../Token/om12short_md.md)] agents are shown. If the version is not verifiable or not supported, the agents will not be displayed.
+    > The **Select internal locations** page verifies the version of health service on the agents and only [!INCLUDE[om12short](./Token/om12short_md.md)] agents are shown. If the version is not verifiable or not supported, the agents will not be displayed.
 
 6.  The **View and Validate Tests** page shows a summary of all internal tests that will be run. You can only validate a configuration of internal tests. To validate an internal test configuration, select a test and click **Run Test**.  If you want to change the default settings for the tests, performance data, and alerts for all tests \(external and internal\) created in this template, click **Change Configuration**. For more information, see the “Configuring alerts and performance data collection” in this document. When you have validated your tests, click **Next** to see the **Test Results** page of the test configuration you created with this template.
 
@@ -70,7 +70,7 @@ Here are some key concepts and strategies to keep in mind as you use the templat
 
 #### To configure alerts and performance data collection
 
-1.  Configure alerts and performance during test configuration. To configure alerts, on the **View and Validate Tests** page, click **Change Configuration**. Here you can set the criteria that are most important for you to monitor. These are the URL monitoring performance counters you can set and a description of what each tracks. Most of these are collected by default. For detailed information about the authoring template, see [Web Application Availability Monitoring Template](../Topic/Web-Application-Availability-Monitoring-Template.md)
+1.  Configure alerts and performance during test configuration. To configure alerts, on the **View and Validate Tests** page, click **Change Configuration**. Here you can set the criteria that are most important for you to monitor. These are the URL monitoring performance counters you can set and a description of what each tracks. Most of these are collected by default. For detailed information about the authoring template, see [Web Application Availability Monitoring Template](./Web-Application-Availability-Monitoring-Template.md)
 
     Base page \(the page served by the request URL\)
 
@@ -108,4 +108,5 @@ Here are some key concepts and strategies to keep in mind as you use the templat
     > If you are monitoring a vertical website or an application, you can focus alerts on application state by setting up a summary alert for an application, rather than choosing to receive an alert for each URL test for an application. To do this, select the **Generate a single summary alert** checkbox. This will reduce the number of alerts you receive and keep the focus of your alerts the overall state of the application. You can further reduce alerts by raising the threshold for how many failures you want to have before receiving an alert. Together, these two approaches will focus your alerts on what is most important to you: How well the application is running, given the performance you require.
 
 4.  You also can change settings for **Http Headers**, designate a **Proxy Server** \(used for internal locations only\), and change other general settings. When you have finished configuring the settings for your tests, click **OK** to return to the **View and Validate Tests** page.
+
 

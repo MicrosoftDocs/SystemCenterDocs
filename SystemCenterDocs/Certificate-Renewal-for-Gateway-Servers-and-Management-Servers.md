@@ -16,10 +16,11 @@ Eventually, the certificates that were obtained and installed on the gateway ser
 To do this, follow the procedures that were used to obtain and import the certificates in the first place. For more information, see [Deploying a Gateway Server](http://go.microsoft.com/fwlink/p/?LinkId=231391) in the Deployment Guide. It is not necessary to rerun the Gateway Approval Tool.
 
 ## See Also
-[Monitoring Across Untrusted Boundaries in Operations Manager](../Topic/Monitoring-Across-Untrusted-Boundaries-in-Operations-Manager.md)
-[About Gateway Servers in Operations Manager](../Topic/About-Gateway-Servers-in-Operations-Manager.md)
-[Determining the Health of Gateway Servers](../Topic/Determining-the-Health-of-Gateway-Servers.md)
-[Using Multiple Gateway Servers](../Topic/Using-Multiple-Gateway-Servers.md)
-[How to Configure Agent Failover to Multiple Gateway Servers](../Topic/How-to-Configure-Agent-Failover-to-Multiple-Gateway-Servers.md)
-[How to Configure a Gateway Server to Failover Between Multiple Management Servers](../Topic/How-to-Configure-a-Gateway-Server-to-Failover-Between-Multiple-Management-Servers.md)
+[Monitoring Across Untrusted Boundaries in Operations Manager](./Monitoring-Across-Untrusted-Boundaries-in-Operations-Manager.md)
+[About Gateway Servers in Operations Manager](./About-Gateway-Servers-in-Operations-Manager.md)
+[Determining the Health of Gateway Servers](./Determining-the-Health-of-Gateway-Servers.md)
+[Using Multiple Gateway Servers](./Using-Multiple-Gateway-Servers.md)
+[How to Configure Agent Failover to Multiple Gateway Servers](./How-to-Configure-Agent-Failover-to-Multiple-Gateway-Servers.md)
+[How to Configure a Gateway Server to Failover Between Multiple Management Servers](./How-to-Configure-a-Gateway-Server-to-Failover-Between-Multiple-Management-Servers.md)
+
 

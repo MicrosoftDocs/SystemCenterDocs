@@ -13,29 +13,29 @@ ms.assetid: 95bdbd33-82f5-4474-8472-f5b9dd9524ea
 # How to Configure the System Center Resource Provider for Windows Azure Pack
 
 > [!IMPORTANT]
-> This topic should be used only for the earlier versions of [!INCLUDE[katal_1](../Token/katal_1_md.md)] when the [!INCLUDE[spfshort](../Token/spfshort_md.md)] could not be changed in the [!INCLUDE[katal_adminportal_1](../Token/katal_adminportal_1_md.md)]. This is no longer the case. For more information, see [Register the Service Provider Foundation Endpoint for Virtual Machine Clouds](assetId:///197ac7a4-6ca2-46a4-855d-327979b68ea5).
+> This topic should be used only for the earlier versions of [!INCLUDE[katal_1](./Token/katal_1_md.md)] when the [!INCLUDE[spfshort](./Token/spfshort_md.md)] could not be changed in the [!INCLUDE[katal_adminportal_1](./Token/katal_adminportal_1_md.md)]. This is no longer the case. For more information, see [Register the Service Provider Foundation Endpoint for Virtual Machine Clouds](assetId:///197ac7a4-6ca2-46a4-855d-327979b68ea5).
 
-If you want to change the location of the [!INCLUDE[spflong](../Token/spflong_md.md)] server, or the username and password for the account, that has been registered with [!INCLUDE[katal_long](../Token/katal_long_md.md)], you will need to change the System Center resource provider settings by using the Management Service Configuration Windows PowerShell cmdlets.
+If you want to change the location of the [!INCLUDE[spflong](./Token/spflong_md.md)] server, or the username and password for the account, that has been registered with [!INCLUDE[katal_long](./Token/katal_long_md.md)], you will need to change the System Center resource provider settings by using the Management Service Configuration Windows PowerShell cmdlets.
 
-This topic describes how to update the [!INCLUDE[spflong](../Token/spflong_md.md)] URLs that have been configured as endpoints by [!INCLUDE[katal_long](../Token/katal_long_md.md)].
+This topic describes how to update the [!INCLUDE[spflong](./Token/spflong_md.md)] URLs that have been configured as endpoints by [!INCLUDE[katal_long](./Token/katal_long_md.md)].
 
-When a portal administrator registers [!INCLUDE[spfshort](../Token/spfshort_md.md)] in the Admin Portal, the [!INCLUDE[katal_long](../Token/katal_long_md.md)] uses the base URL \(for example: `https://spfserver.constoso.skyspace.com:8090/`\) to create the following endpoints:
+When a portal administrator registers [!INCLUDE[spfshort](./Token/spfshort_md.md)] in the Admin Portal, the [!INCLUDE[katal_long](./Token/katal_long_md.md)] uses the base URL \(for example: `https://spfserver.constoso.skyspace.com:8090/`\) to create the following endpoints:
 
 -   AdminEndpoint
 
 -   TenantEndpoint
 
--   NotificationEndPoint \(Use by the Provider service in [!INCLUDE[spfshort](../Token/spfshort_md.md)]\)
+-   NotificationEndPoint \(Use by the Provider service in [!INCLUDE[spfshort](./Token/spfshort_md.md)]\)
 
 -   UsageEndPoint
 
-    The usage endpoint is registered separately in [!INCLUDE[katal_long](../Token/katal_long_md.md)] but takes the same base URL. For more information about configuring usage metering, see [Configure Usage Metering in Service Provider Foundation](../Topic/Configure-Usage-Metering-in-Service-Provider-Foundation.md).
+    The usage endpoint is registered separately in [!INCLUDE[katal_long](./Token/katal_long_md.md)] but takes the same base URL. For more information about configuring usage metering, see [Configure Usage Metering in Service Provider Foundation](./Configure-Usage-Metering-in-Service-Provider-Foundation.md).
 
-If you changed the location of your [!INCLUDE[spfshort](../Token/spfshort_md.md)] server, you will need to change the URL, username and password for each of these endpoints. The HealthCheckNotificationEndpoint is reserved for future use and is not configured.
+If you changed the location of your [!INCLUDE[spfshort](./Token/spfshort_md.md)] server, you will need to change the URL, username and password for each of these endpoints. The HealthCheckNotificationEndpoint is reserved for future use and is not configured.
 
-The username and passwords for the Admin, Tenant, and Notification endpoints must be for the account specified on the [!INCLUDE[spfshort](../Token/spfshort_md.md)] server  in the **Local Users and Groups** for the local SPF\_Admin, SPF\_VMM, and SPF\_Provider groups. For more information, see the section "Verify local user credentials for portal access" in [Configuring Portals for Service Provider Foundation](../Topic/Configuring-Portals-for-Service-Provider-Foundation.md#LocalCreds).
+The username and passwords for the Admin, Tenant, and Notification endpoints must be for the account specified on the [!INCLUDE[spfshort](./Token/spfshort_md.md)] server  in the **Local Users and Groups** for the local SPF\_Admin, SPF\_VMM, and SPF\_Provider groups. For more information, see the section "Verify local user credentials for portal access" in [Configuring Portals for Service Provider Foundation](./Configuring-Portals-for-Service-Provider-Foundation.md#LocalCreds).
 
-For more information about registering [!INCLUDE[spfshort](../Token/spfshort_md.md)] in [!INCLUDE[katal_long](../Token/katal_long_md.md)], see the 'Provision Virtual Machine Clouds' section of [Provisioning Services](http://msdn.microsoft.com/library/jj838661.aspx).
+For more information about registering [!INCLUDE[spfshort](./Token/spfshort_md.md)] in [!INCLUDE[katal_long](./Token/katal_long_md.md)], see the 'Provision Virtual Machine Clouds' section of [Provisioning Services](http://msdn.microsoft.com/library/jj838661.aspx).
 
 ### To change Service Provider Foundation endpoints
 
@@ -67,7 +67,7 @@ For more information about registering [!INCLUDE[spfshort](../Token/spfshort_md.
     PS C:\> $rp = Get-ResourceProvider -name systemcenter
     ```
 
-6.  Create variables for the username and password to your [!INCLUDE[spfshort](../Token/spfshort_md.md)] server:
+6.  Create variables for the username and password to your [!INCLUDE[spfshort](./Token/spfshort_md.md)] server:
 
     ```
     PS C:\> $username = 'Administrator'
@@ -149,7 +149,8 @@ For more information about registering [!INCLUDE[spfshort](../Token/spfshort_md.
     ```
 
 ## See Also
-[Configuring Portals for Service Provider Foundation](../Topic/Configuring-Portals-for-Service-Provider-Foundation.md)
-[Portals in Service Provider Foundation](../Topic/Portals-in-Service-Provider-Foundation.md)
-[Administering Service Provider Foundation](../Topic/Administering-Service-Provider-Foundation.md)
+[Configuring Portals for Service Provider Foundation](./Configuring-Portals-for-Service-Provider-Foundation.md)
+[Portals in Service Provider Foundation](./Portals-in-Service-Provider-Foundation.md)
+[Administering Service Provider Foundation](./Administering-Service-Provider-Foundation.md)
+
 

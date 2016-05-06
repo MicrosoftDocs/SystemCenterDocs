@@ -11,7 +11,7 @@ ms.topic: article
 ms.assetid: 5bf76997-344c-4bda-abb3-42c604cd56b2
 ---
 # How to Prepare Service Manager 2012 for Upgrade to SP1
-This topic describes how to prepare your [!INCLUDE[smlong12](../Token/smlong12_md.md)] environment for an upgrade. To do this, perform the following procedures for upgrading the data warehouse management server:
+This topic describes how to prepare your [!INCLUDE[smlong12](./Token/smlong12_md.md)] environment for an upgrade. To do this, perform the following procedures for upgrading the data warehouse management server:
 
 1.  List the data warehouse jobs that are running.
 
@@ -21,9 +21,9 @@ This topic describes how to prepare your [!INCLUDE[smlong12](../Token/smlong12_m
 
 When the data warehouse jobs have completed, start the upgrade of the data warehouse management server.
 
-After the data warehouse has been upgraded, perform the following procedures on the first [!INCLUDE[smshort](../Token/smshort_md.md)] management server:
+After the data warehouse has been upgraded, perform the following procedures on the first [!INCLUDE[smshort](./Token/smshort_md.md)] management server:
 
-1.  Wait 10 minutes, and then start the upgrade of the [!INCLUDE[smshort](../Token/smshort_md.md)] management server.
+1.  Wait 10 minutes, and then start the upgrade of the [!INCLUDE[smshort](./Token/smshort_md.md)] management server.
 
 ### To list the data warehouse jobs by using Windows PowerShell cmdlets
 
@@ -83,11 +83,11 @@ After the data warehouse has been upgraded, perform the following procedures on 
 
 ### To confirm that the data warehouse jobs have stopped running
 
-1.  In the [!INCLUDE[smcons](../Token/smcons_md.md)], click **Data Warehouse**.
+1.  In the [!INCLUDE[smcons](./Token/smcons_md.md)], click **Data Warehouse**.
 
 2.  In the **Data Warehouse** pane, expand **Data Warehouse**, and then click **Data Warehouse Jobs**.
 
-3.  In the **Data Warehouse Jobs** pane, observe the **Status** column for each data warehouse job. When the status for each job is listed as **Not Started**, proceed to the next procedure to stop the [!INCLUDE[smssp](../Token/smssp_md.md)]. If no [!INCLUDE[smssp](../Token/smssp_md.md)] exists in your environment, you can start the upgrade process in [How to Upgrade to System Center 2012 SP1 - Service Manager](../Topic/How-to-Upgrade-to-System-Center-2012-SP1---Service-Manager.md).
+3.  In the **Data Warehouse Jobs** pane, observe the **Status** column for each data warehouse job. When the status for each job is listed as **Not Started**, proceed to the next procedure to stop the [!INCLUDE[smssp](./Token/smssp_md.md)]. If no [!INCLUDE[smssp](./Token/smssp_md.md)] exists in your environment, you can start the upgrade process in [How to Upgrade to System Center 2012 SP1 - Service Manager](./How-to-Upgrade-to-System-Center-2012-SP1---Service-Manager.md).
 
 ### To prevent MPSync jobs from failing
 
@@ -139,4 +139,5 @@ After the data warehouse has been upgraded, perform the following procedures on 
     FROM    FactPKListStr f
 
     ```
+
 

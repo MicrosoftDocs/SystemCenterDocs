@@ -63,7 +63,7 @@ Set up DPM client auto deployment as follows:
 
 2.  Edit the details here such as per laptop size, and so on, to set new settings.
 
-    All protection groups created for all [!INCLUDE[dpm2012short](../Token/dpm2012short_md.md)] servers involved in auto protection will use these configuration settings.
+    All protection groups created for all [!INCLUDE[dpm2012short](./Token/dpm2012short_md.md)] servers involved in auto protection will use these configuration settings.
 
 ### <a name="BKMK_AddDPM"></a>Add the DPM server
 
@@ -78,4 +78,5 @@ Set up DPM client auto deployment as follows:
 1.  Download the System Center Configuration Manager integration program.
 
 2.  Open an elevated command prompt and run the following command: SCCMClientAD.exe –s <Time of daily run><Day of global run><Share path><Configuration Manager site code>.
+
 

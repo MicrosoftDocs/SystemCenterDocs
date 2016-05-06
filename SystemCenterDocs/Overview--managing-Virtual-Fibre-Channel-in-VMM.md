@@ -8,21 +8,21 @@ ms.topic: article
 ms.assetid: 81189655-4e01-4a55-8d7d-be8dd62e3d8b
 ---
 # Overview: managing Virtual Fibre Channel in VMM
-This topic provides background information to help you understand Virtual Fibre Channel in [!INCLUDE[vmm12sp1_long](../Token/vmm12sp1_long_md.md)].
+This topic provides background information to help you understand Virtual Fibre Channel in [!INCLUDE[vmm12sp1_long](./Token/vmm12sp1_long_md.md)].
 
 Virtual Fibre Channel enables Hyper\-V virtual machines \(VMs\) on host computers to have direct access to Fibre Channel storage area network \(SAN\) array resources. In this way, you can virtualize applications and workloads that require direct access to SAN logical unit numbers \(LUNs\). Using Virtual Fibre Channel, VM failover clusters can also access Fibre Channel SAN arrays.
 
-For a list of procedures for configuring Virtual Fibre Channel in [!INCLUDE[vmm12short](../Token/vmm12short_md.md)], see [Managing Virtual Fibre Channel fabrics with VMM](../Topic/Managing-Virtual-Fibre-Channel-fabrics-with-VMM.md).
+For a list of procedures for configuring Virtual Fibre Channel in [!INCLUDE[vmm12short](./Token/vmm12short_md.md)], see [Managing Virtual Fibre Channel fabrics with VMM](./Managing-Virtual-Fibre-Channel-fabrics-with-VMM.md).
 
 In this topic:
 
--   [Glossary of terms](../Topic/Overview--managing-Virtual-Fibre-Channel-in-VMM.md#BKMK_glossary)
+-   [Glossary of terms](./Overview--managing-Virtual-Fibre-Channel-in-VMM.md#BKMK_glossary)
 
--   [Supported configurations](../Topic/Overview--managing-Virtual-Fibre-Channel-in-VMM.md#BKMK_supported)
+-   [Supported configurations](./Overview--managing-Virtual-Fibre-Channel-in-VMM.md#BKMK_supported)
 
--   [Prerequisites](../Topic/Overview--managing-Virtual-Fibre-Channel-in-VMM.md#BKMK_prerequisites)
+-   [Prerequisites](./Overview--managing-Virtual-Fibre-Channel-in-VMM.md#BKMK_prerequisites)
 
--   [Steps to deploy Virtual Fibre Channel](../Topic/Overview--managing-Virtual-Fibre-Channel-in-VMM.md#BKMK_deploy)
+-   [Steps to deploy Virtual Fibre Channel](./Overview--managing-Virtual-Fibre-Channel-in-VMM.md#BKMK_deploy)
 
 ## <a name="BKMK_glossary"></a>Glossary of terms
 The following terms represent the most important elements of a Virtual Fibre Channel environment:
@@ -56,7 +56,7 @@ The following terms represent the most important elements of a Virtual Fibre Cha
 **Zone set**. A database of zone definitions that fabrics use to determine traffic routes. All Fibre Channel switches keep a copy of the zone set. An active zone set refers to all the zones that are available to the fabric. An inactive zone set refers to those zones whose information has not yet been propagated to the fabric and hence are not available to the fabric. Zone information is always changed or updated in an inactive zone set first; such information cannot be changed in an active zone set.
 
 ## <a name="BKMK_supported"></a>Supported configurations
-[!INCLUDE[vmm12short](../Token/vmm12short_md.md)] supports the following Virtual Fibre Channel configurations:
+[!INCLUDE[vmm12short](./Token/vmm12short_md.md)] supports the following Virtual Fibre Channel configurations:
 
 -   Single storage array connected to a single fabric \(comprised of single or multiple switches\) connected to a single vSAN.
 
@@ -78,27 +78,28 @@ In order to successfully deploy Virtual Fibre Channel in your network environmen
 
 -   Enable NPIV on Fibre Channel switches and HBAs.
 
--   Host computers must be running at least [!INCLUDE[win8_server_2](../Token/win8_server_2_md.md)].
+-   Host computers must be running at least [!INCLUDE[win8_server_2](./Token/win8_server_2_md.md)].
 
--   Ensure that an SMI\-S provider is installed. [!INCLUDE[vmm12short](../Token/vmm12short_md.md)] manages Fibre Channel fabrics and SAN devices using the SMI\-S provider.
+-   Ensure that an SMI\-S provider is installed. [!INCLUDE[vmm12short](./Token/vmm12short_md.md)] manages Fibre Channel fabrics and SAN devices using the SMI\-S provider.
 
 ## <a name="BKMK_deploy"></a>Configuring Virtual Fibre Channel with VMM
-Complete the following steps to integrate Virtual Fibre Channel with your [!INCLUDE[vmm12short](../Token/vmm12short_md.md)] environment:
+Complete the following steps to integrate Virtual Fibre Channel with your [!INCLUDE[vmm12short](./Token/vmm12short_md.md)] environment:
 
 |Step|More information|
 |--------|--------------------|
-|Discover Fibre Channel fabrics and assign classifications to each fabric.|[How to discover and classify Virtual Fibre Channel Fabrics with VMM](../Topic/How-to-discover-and-classify-Virtual-Fibre-Channel-Fabrics-with-VMM.md)|
-|For each host computer that [!INCLUDE[vmm12short](../Token/vmm12short_md.md)] manages, create vSANs by grouping host HBA ports.|[How to manage vSANs and vHBAs with VMM](../Topic/How-to-manage-vSANs-and-vHBAs-with-VMM.md)|
-|Create zones and activate any inactive zone sets. Zones connect each host or VM vHBA to a storage array.|[How to manage Virtual Fibre Channel zones and zonesets with VMM](../Topic/How-to-manage-Virtual-Fibre-Channel-zones-and-zonesets-with-VMM.md)|
-|Create storage array LUNs and register \(unmask\) them for a host, VM, or service tier as needed.|[How to manage storage LUNs for Virtual Fibre Channel with VMM](../Topic/How-to-manage-storage-LUNs-for-Virtual-Fibre-Channel-with-VMM.md)|
-|Create a VM template, and for each virtual Fibre Channel adapter \(vHBA\) that is created, specify dynamic or static WWN assignments and select the fabric classification. The fabric classification is used to connect a vHBA to a storage fabric.|[How to create a VM for Virtual Fibre Channel with VMM](../Topic/How-to-create-a-VM-for-Virtual-Fibre-Channel-with-VMM.md)|
-|Create a VM, select the destination host to deploy the VM to, zone a Fibre Channel array to the VM, add a disk to the VM, create a LUN, and then register \(unmask\) the LUN to the VM.|[How to create a VM for Virtual Fibre Channel with VMM](../Topic/How-to-create-a-VM-for-Virtual-Fibre-Channel-with-VMM.md)|
-|Create a service template, add VM templates to it, and for each virtual Fibre Channel adapter \(vHBA\) that is created, specify dynamic or static WWN assignments and select the fabric classification.|[How to create a service tier for Virtual Fibre Channel with VMM](../Topic/How-to-create-a-service-tier-for-Virtual-Fibre-Channel-with-VMM.md)|
-|Create and deploy the service tier, zone a Fibre Channel array to the service tier, add a disk to the service tier, create a LUN, and register \(unmask\) the LUN to the service tier.|[How to create a service tier for Virtual Fibre Channel with VMM](../Topic/How-to-create-a-service-tier-for-Virtual-Fibre-Channel-with-VMM.md)|
+|Discover Fibre Channel fabrics and assign classifications to each fabric.|[How to discover and classify Virtual Fibre Channel Fabrics with VMM](./How-to-discover-and-classify-Virtual-Fibre-Channel-Fabrics-with-VMM.md)|
+|For each host computer that [!INCLUDE[vmm12short](./Token/vmm12short_md.md)] manages, create vSANs by grouping host HBA ports.|[How to manage vSANs and vHBAs with VMM](./How-to-manage-vSANs-and-vHBAs-with-VMM.md)|
+|Create zones and activate any inactive zone sets. Zones connect each host or VM vHBA to a storage array.|[How to manage Virtual Fibre Channel zones and zonesets with VMM](./How-to-manage-Virtual-Fibre-Channel-zones-and-zonesets-with-VMM.md)|
+|Create storage array LUNs and register \(unmask\) them for a host, VM, or service tier as needed.|[How to manage storage LUNs for Virtual Fibre Channel with VMM](./How-to-manage-storage-LUNs-for-Virtual-Fibre-Channel-with-VMM.md)|
+|Create a VM template, and for each virtual Fibre Channel adapter \(vHBA\) that is created, specify dynamic or static WWN assignments and select the fabric classification. The fabric classification is used to connect a vHBA to a storage fabric.|[How to create a VM for Virtual Fibre Channel with VMM](./How-to-create-a-VM-for-Virtual-Fibre-Channel-with-VMM.md)|
+|Create a VM, select the destination host to deploy the VM to, zone a Fibre Channel array to the VM, add a disk to the VM, create a LUN, and then register \(unmask\) the LUN to the VM.|[How to create a VM for Virtual Fibre Channel with VMM](./How-to-create-a-VM-for-Virtual-Fibre-Channel-with-VMM.md)|
+|Create a service template, add VM templates to it, and for each virtual Fibre Channel adapter \(vHBA\) that is created, specify dynamic or static WWN assignments and select the fabric classification.|[How to create a service tier for Virtual Fibre Channel with VMM](./How-to-create-a-service-tier-for-Virtual-Fibre-Channel-with-VMM.md)|
+|Create and deploy the service tier, zone a Fibre Channel array to the service tier, add a disk to the service tier, create a LUN, and register \(unmask\) the LUN to the service tier.|[How to create a service tier for Virtual Fibre Channel with VMM](./How-to-create-a-service-tier-for-Virtual-Fibre-Channel-with-VMM.md)|
 
 ## See Also
-[Managing Virtual Fibre Channel fabrics with VMM](../Topic/Managing-Virtual-Fibre-Channel-fabrics-with-VMM.md)
+[Managing Virtual Fibre Channel fabrics with VMM](./Managing-Virtual-Fibre-Channel-fabrics-with-VMM.md)
 [Hyper-V Virtual Fibre Channel Troubleshooting Guide](http://social.technet.microsoft.com/wiki/contents/articles/18698.hyper-v-virtual-fibre-channel-troubleshooting-guide.aspx)
-[Managing storage resources and capacity with VMM](../Topic/Managing-storage-resources-and-capacity-with-VMM.md)
-[Managing fabric resources with VMM](../Topic/Managing-fabric-resources-with-VMM.md)
+[Managing storage resources and capacity with VMM](./Managing-storage-resources-and-capacity-with-VMM.md)
+[Managing fabric resources with VMM](./Managing-fabric-resources-with-VMM.md)
+
 

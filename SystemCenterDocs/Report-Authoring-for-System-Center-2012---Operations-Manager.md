@@ -24,3 +24,4 @@ The knowledge and procedures that you need for authoring custom reports in Opera
 
 -   [Operations Manager for System Center 2012 Supported Configurations](http://go.microsoft.com/fwlink/p/?LinkId=223642)
 
+

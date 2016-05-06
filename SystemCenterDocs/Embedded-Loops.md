@@ -11,7 +11,7 @@ ms.topic: article
 ms.assetid: fc9e2b46-a272-415c-a7f7-ab5b2242bcaa
 ---
 # Embedded Loops
-In [!INCLUDE[orchlong](../Token/orchlong_md.md)], looping can be configured for any runbook. By using loops, you can build automatic retries and monitor at any location in a runbook.
+In [!INCLUDE[orchlong](./Token/orchlong_md.md)], looping can be configured for any runbook. By using loops, you can build automatic retries and monitor at any location in a runbook.
 
 Each activity can create a loop so that you can retry operations if they fail or test the output information of the activity for valid data. You can also use these mechanisms to build wait conditions into your workflows.
 
@@ -66,5 +66,6 @@ Use the following procedure to add or remove an **Exit** condition.
 3.  Click **Finish**.
 
 ## See Also
-[Workflow Control](../Topic/Workflow-Control.md)
+[Workflow Control](./Workflow-Control.md)
+
 

@@ -11,26 +11,26 @@ ms.topic: article
 ms.assetid: f5a4749c-e042-401c-86ae-f9830576fcf2
 ---
 # Add Links to Operations Manager to a New or Existing Visio 2010 Document
-The Visio 2010 Add\-in for [!INCLUDE[om12long](../Token/om12long_md.md)] lets you create a new Microsoft Office Visio document that you can link to [!INCLUDE[om12short](../Token/om12short_md.md)] objects. The Visio Add\-in also lets you add live health state information to an existing Visio document.
+The Visio 2010 Add\-in for [!INCLUDE[om12long]./Token/om12long_md.md)] lets you create a new Microsoft Office Visio document that you can link to [!INCLUDE[om12short]./Token/om12short_md.md)] objects. The Visio Add\-in also lets you add live health state information to an existing Visio document.
 
-To do this, you first specify the [!INCLUDE[om12short](../Token/om12short_md.md)] management server from which the Visio Add\-in will get information about the managed objects and their health state. Then, you add the links by using one of the following methods:
+To do this, you first specify the [!INCLUDE[om12short]./Token/om12short_md.md)] management server from which the Visio Add\-in will get information about the managed objects and their health state. Then, you add the links by using one of the following methods:
 
--   Link a single shape to a managed object. You can quickly link a few shapes to any object managed by [!INCLUDE[om12short](../Token/om12short_md.md)].
+-   Link a single shape to a managed object. You can quickly link a few shapes to any object managed by [!INCLUDE[om12short]./Token/om12short_md.md)].
 
 -   Add multiple links to the document and then associate these to Visio shapes later. This option works best for large documents that have many different types of managed object.
 
 -   Automatically link shapes in the document to computers and to network devices. This option uses a single wizard to automatically add health state information to large and complex network or topology diagrams.
 
--   Insert a new shape that is linked to an [!INCLUDE[om12short](../Token/om12short_md.md)] object and that uses the [!INCLUDE[om12short](../Token/om12short_md.md)] icons.
+-   Insert a new shape that is linked to an [!INCLUDE[om12short]./Token/om12short_md.md)] object and that uses the [!INCLUDE[om12short]./Token/om12short_md.md)] icons.
 
 > [!NOTE]
-> This latest version of the Visio 2010 Add\-in also functions with [!INCLUDE[om2007r2short](../Token/om2007r2short_md.md)]. If installing this version with [!INCLUDE[om2007r2short](../Token/om2007r2short_md.md)], ensure that credentials and access are configured to the RMS instead of the management server.
+> This latest version of the Visio 2010 Add\-in also functions with [!INCLUDE[om2007r2short]./Token/om2007r2short_md.md)]. If installing this version with [!INCLUDE[om2007r2short]./Token/om2007r2short_md.md)], ensure that credentials and access are configured to the RMS instead of the management server.
 
 ### To link a single Visio shape to an object managed by Operations Manager
 
 1.  Click **Operations Manager** in the ribbon, and then click **Link Shape**.
 
-2.  Select the [!INCLUDE[om12short](../Token/om12short_md.md)] class of the object, such as **Windows Computer**, to display a filtered list of available [!INCLUDE[om12short](../Token/om12short_md.md)] objects.
+2.  Select the [!INCLUDE[om12short]./Token/om12short_md.md)] class of the object, such as **Windows Computer**, to display a filtered list of available [!INCLUDE[om12short]./Token/om12short_md.md)] objects.
 
 3.  Select the object that you want to link to this shape, and then click **Link**.
 
@@ -66,7 +66,7 @@ The shape in the diagram now includes a state indicator in the upper\-right corn
 
 4.  In the Automatically Link wizard, select **Selected shapes** or **All shapes in the document**, and then click **Next**.
 
-5.  Match the Visio shape property to the [!INCLUDE[om12short](../Token/om12short_md.md)] property. For example, match the Visio network name to the [!INCLUDE[om12short](../Token/om12short_md.md)] display name. The following [!INCLUDE[om12short](../Token/om12short_md.md)] classes are matched automatically:
+5.  Match the Visio shape property to the [!INCLUDE[om12short]./Token/om12short_md.md)] property. For example, match the Visio network name to the [!INCLUDE[om12short]./Token/om12short_md.md)] display name. The following [!INCLUDE[om12short]./Token/om12short_md.md)] classes are matched automatically:
 
     -   Windows Computer \(Microsoft.Windows.Computer\)
 
@@ -92,5 +92,7 @@ The shapes are automatically connected to the managed objects they represent on 
 
 3.  Select the specific object, and then click **Insert**.
 
-The new shape is added to the diagram. The shape icon matches those of other [!INCLUDE[om12short](../Token/om12short_md.md)] objects of the same class, and the shape data is populated with information from the management server.
+The new shape is added to the diagram. The shape icon matches those of other [!INCLUDE[om12short]./Token/om12short_md.md)] objects of the same class, and the shape data is populated with information from the management server.
+
+
 

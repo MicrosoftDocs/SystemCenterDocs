@@ -71,3 +71,4 @@ If you’re protecting a server running an operating system earlier than Windows
 
 -   The logs for system state backup are stored at C:\\Document and Settings\\Default User\\Application Data\\Microsoft\\NTBackup. Log files will be named NTBackup0.log, NTBackup1.log, and so forth. You can view these logs to help resolve any issues that occur with the system state backup. You can change the default location of the backup file in the same way described above for Windows Server Backup.
 
+

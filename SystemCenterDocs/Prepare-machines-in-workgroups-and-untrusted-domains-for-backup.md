@@ -113,7 +113,7 @@ Example to configure a workgroup computer after the agent is installed:
 
 1.  On the computer, run `SetDpmServer.exe -DpmServerName Server01 -isNonDomainServer -UserName mark`.
 
-2.  On the [!INCLUDE[dpm2012short](../Token/dpm2012short_md.md)] server, run `Attach-NonDomainServer.ps1 –DpmServername Server01 -PSName Finance01 -Username mark`.
+2.  On the [!INCLUDE[dpm2012short](./Token/dpm2012short_md.md)] server, run `Attach-NonDomainServer.ps1 –DpmServername Server01 -PSName Finance01 -Username mark`.
 
 Because the workgroup computers are typically accessible only by using NetBIOS name, the value for DPMServerName must be the NetBIOS name.
 
@@ -123,7 +123,7 @@ Example to configure a workgroup computer with conflicting NetBIOS names after t
 
 1.  On the workgroup computer, run `SetDpmServer.exe -dpmServerName Server01.corp.contoso.com -isNonDomainServer -userName mark -productionServerDnsSuffix widgets.corp.com`.
 
-2.  On the [!INCLUDE[dpm2012short](../Token/dpm2012short_md.md)] server, run `Attach-NonDomainServer.ps1 -DPMServername Server01.corp.contoso.com -PSName Finance01.widgets.corp.com -Username mark`.
+2.  On the [!INCLUDE[dpm2012short](./Token/dpm2012short_md.md)] server, run `Attach-NonDomainServer.ps1 -DPMServername Server01.corp.contoso.com -PSName Finance01.widgets.corp.com -Username mark`.
 
 ## Back up using certificate authentication
 Here's how to set up protection with certificate authentication.
@@ -283,4 +283,5 @@ Regenerates a lost configuration file in the folder c:\\CertMetaData\\
 ```
 Set-DPMCredentials -DPMServerName dpmserver.contoso.com -Type Certificate “-OutputFilePath c:\CertMetaData\ -Action Regenerate
 ```
+
 

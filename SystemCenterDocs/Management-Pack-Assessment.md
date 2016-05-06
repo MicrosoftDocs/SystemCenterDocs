@@ -81,3 +81,4 @@ The following procedure describes how to use the Get All MPs option to download 
 >[!NOTE]  When you click **Install**, any management packs in the **Install** list that display the **Information** or **Error** icon are not imported.
 
 8. The **Import Management Packs** page appears and shows the progress for each management pack. Each management pack is downloaded to a temporary directory, imported to Operations Manager, and then deleted from the temporary directory. If there is a problem at any stage of the import process, select the management pack in the list to view the status details. Click **Close**.
+

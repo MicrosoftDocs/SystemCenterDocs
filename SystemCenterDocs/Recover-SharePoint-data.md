@@ -51,7 +51,7 @@ There a couple of possible scenarios for farm recovery:
 
 #### Restore data to a functioning farm
 
-1.  In [!INCLUDE[dpm2012short](../Token/dpm2012short_md.md)] Administrator Console, click **Recovery** on the navigation bar.
+1.  In [!INCLUDE[dpm2012short](./Token/dpm2012short_md.md)] Administrator Console, click **Recovery** on the navigation bar.
 
 2.  In the **Protected data** pane, expand the server that contains the farm you want to recover, and then click **All Protected SharePoint Data**.The farm displays in the **Recoverable** item pane as server name\\farm name.
 
@@ -83,7 +83,7 @@ There a couple of possible scenarios for farm recovery:
 
 2.  On the front\-end Web server that DPM uses to recover farm data, run the following command at the command prompt:`ConfigureSharePoint-EnableSharePointProtection`
 
-3.  In [!INCLUDE[dpm2012short](../Token/dpm2012short_md.md)] Administrator Console, click **Recovery** on the navigation bar.
+3.  In [!INCLUDE[dpm2012short](./Token/dpm2012short_md.md)] Administrator Console, click **Recovery** on the navigation bar.
 
 4.  In the **Protected data** pane, expand the server that contains the farm you want to recover, and then click **All Protected SharePoint Data**.The farm displays in the **Recoverable** item pane as server name\\farm name.
 
@@ -110,4 +110,5 @@ There a couple of possible scenarios for farm recovery:
 11. On the **Summary** page, review the recovery settings, and then click **Recover**.
 
 12. On the main front\-end Web server for the server farm, run the SharePoint Products and Technologies Configuration Wizard and disconnect the front\-end Web server from the farm.
+
 

@@ -35,7 +35,7 @@ You can deploy DPM to protect computers in workgroups and untrusted domains. You
 
     -   DPM doesn’t support certificates with CNG Keys
 
-    -   [!INCLUDE[dpm2012short](../Token/dpm2012short_md.md)] doesn’t support self\-signed certificates.
+    -   [!INCLUDE[dpm2012short](./Token/dpm2012short_md.md)] doesn’t support self\-signed certificates.
 
 -   Each computer you want to protect \(including virtual machines\) must have its own certificate.
 
@@ -77,7 +77,7 @@ If you want to optionally configure the template for enrollment or autoenrollmen
 
 ## <a name="BKMK_CertDPM"></a>Configure a certificate on the DPM server
 
-1.  Generate a certificate from a CA for the [!INCLUDE[dpm2012short](../Token/dpm2012short_md.md)] server, via web enrollment or some other method. In web enrollment, select **advanced certificate required**, and **Create and Submit a request to this CA**. Make sure the key size is 1024 or higher, and that **Mark key as exportable** is selected.
+1.  Generate a certificate from a CA for the [!INCLUDE[dpm2012short](./Token/dpm2012short_md.md)] server, via web enrollment or some other method. In web enrollment, select **advanced certificate required**, and **Create and Submit a request to this CA**. Make sure the key size is 1024 or higher, and that **Mark key as exportable** is selected.
 
 2.  The certificate is placed in the User store. We need to move it to the Local Computer store.
 
@@ -89,7 +89,7 @@ If you want to optionally configure the template for enrollment or autoenrollmen
 
     1.  Obtain the thumbprint for the certificate. In the **Certificates** store double\-click on the certificate. Select the **Details** tab and scroll down to the thumbprint. Click it, highlight and copy it. Paste the thumbprint into Notepad and remove any spaces.
 
-    2.  Run **Set\-DPMCredentials** to configure the [!INCLUDE[dpm2012short](../Token/dpm2012short_md.md)] server:
+    2.  Run **Set\-DPMCredentials** to configure the [!INCLUDE[dpm2012short](./Token/dpm2012short_md.md)] server:
 
         ```
         Set-DPMCredentials [–DPMServerName <String>] [–Type <AuthenticationType>] [Action <Action>] [–OutputFilePath <String>] [–Thumbprint <String>] [–AuthCAThumbprint <String>]
@@ -109,7 +109,7 @@ If you want to optionally configure the template for enrollment or autoenrollmen
 
 7.  Retrieve the .bin file and copy it to the C:\\Program Files\\Microsoft Data Protection Manager\\DPM\\bin folder on the computer you want to protect. You don’t have to do this, but if you don’t you’ll need to specify the full path of the file for the –DPMcredential parameter when you …
 
-8.  Repeat these steps on every [!INCLUDE[dpm2012short](../Token/dpm2012short_md.md)] server that will protect a computer in a workgroup or in an untrusted domain.
+8.  Repeat these steps on every [!INCLUDE[dpm2012short](./Token/dpm2012short_md.md)] server that will protect a computer in a workgroup or in an untrusted domain.
 
 ## <a name="BKMK_Agent"></a>Install the agent
 
@@ -163,7 +163,7 @@ Generates a file in c:\\CertMetaData\\ with name CertificateConfiguration\_<DPM 
 Set-DPMCredentials -DPMServerName dpmserver.contoso.com -Type Certificate -Action Configure -OutputFilePath c:\CertMetaData\ –Thumbprint “cf822d9ba1c801ef40d4b31de0cfcb200a8a2496”
 ```
 
-Where dpmserver.contoso.com is the name of the [!INCLUDE[dpm2012short](../Token/dpm2012short_md.md)] server and “cf822d9ba1c801ef40d4b31de0cfcb200a8a2496” is the thumbprint of the [!INCLUDE[dpm2012short](../Token/dpm2012short_md.md)] server certificate.
+Where dpmserver.contoso.com is the name of the [!INCLUDE[dpm2012short](./Token/dpm2012short_md.md)] server and “cf822d9ba1c801ef40d4b31de0cfcb200a8a2496” is the thumbprint of the [!INCLUDE[dpm2012short](./Token/dpm2012short_md.md)] server certificate.
 
 **Example 2**
 
@@ -172,4 +172,5 @@ Regenerates a lost configuration file in the folder c:\\CertMetaData\\
 ```
 Set-DPMCredentials -DPMServerName dpmserver.contoso.com -Type Certificate “-OutputFilePath c:\CertMetaData\ -Action Regenerate
 ```
+
 

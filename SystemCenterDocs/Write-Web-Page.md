@@ -57,3 +57,4 @@ The following table lists the published data items.
 |Title to add to the created web page|The title that was added to the web page. This published data is only available when **Create Web Page** is selected on the **General** tab.|
 |Text to add to the web page|The text that was added to the web page. This value is determined by the **Text** field in both the **Create Web Page** and **Append to Web Page** modes.|
 
+

@@ -27,21 +27,21 @@ You can configure a number of settings for the Operations Manager Client Auto De
 
 1.  On the System Center Operations Manager console, go to the **Monitoring** view, expand **DPM Client Auto Deployment**, and then select **Auto deployment DPM server state**.
 
-2.  On the main pane, select the [!INCLUDE[dpm2012short](../Token/dpm2012short_md.md)] server you want to include. On the **Actions** pane, click **Include DPM for auto deployment**.
+2.  On the main pane, select the [!INCLUDE[dpm2012short](./Token/dpm2012short_md.md)] server you want to include. On the **Actions** pane, click **Include DPM for auto deployment**.
 
     You can also select **Exclude DPM for auto deployment** to remove a DPM server.
 
 ## <a name="BKMK_Clients"></a>Specify the number of clients a DPM server can handle
 
-1.  To change the number of client computers a [!INCLUDE[dpm2012short](../Token/dpm2012short_md.md)] server can be allotted, use the following [!INCLUDE[dpm2012short](../Token/dpm2012short_md.md)] Management Shell cmdlet:
+1.  To change the number of client computers a [!INCLUDE[dpm2012short](./Token/dpm2012short_md.md)] server can be allotted, use the following [!INCLUDE[dpm2012short](./Token/dpm2012short_md.md)] Management Shell cmdlet:
 
 2.  Set\-DPMGlobalProperty –Dpmservername <DPMServer> \-MaxCapacityForClientAutoDeployment <NewCapacity>
 
 ## <a name="BKMK_All"></a>Change settings for all DPM servers configured for client auto deployment
 
-1.  To change the settings, edit the ClientPGSettings.xml file. See [Set up client auto deployment](../Topic/Set-up-client-auto-deployment.md).
+1.  To change the settings, edit the ClientPGSettings.xml file. See [Set up client auto deployment](./Set-up-client-auto-deployment.md).
 
-2.  To apply the changes on all DPM servers, in the System Center Operations Manager console, go to the **Monitoring** view, expand **[!INCLUDE[dpm2012short](../Token/dpm2012short_md.md)] Client Auto Deployment**, and then click **Auto deployment server state**.
+2.  To apply the changes on all DPM servers, in the System Center Operations Manager console, go to the **Monitoring** view, expand **[!INCLUDE[dpm2012short](./Token/dpm2012short_md.md)] Client Auto Deployment**, and then click **Auto deployment server state**.
 
 3.  Select a System Center Operations Manager server from the main pane.
 
@@ -49,13 +49,13 @@ You can configure a number of settings for the Operations Manager Client Auto De
 
 5.  On the **Run task** dialog box, click **Run**.
 
-    The changes will be applied to all protection groups created by [!INCLUDE[dpm2012short](../Token/dpm2012short_md.md)] client auto deployment on all relevant [!INCLUDE[dpm2012short](../Token/dpm2012short_md.md)] servers.
+    The changes will be applied to all protection groups created by [!INCLUDE[dpm2012short](./Token/dpm2012short_md.md)] client auto deployment on all relevant [!INCLUDE[dpm2012short](./Token/dpm2012short_md.md)] servers.
 
 ## <a name="BKMK_DPMSelected"></a>Change settings for selected DPM servers configured for client auto deployment
 
-1.  To change the settings, edit the ClientPGSettings.xml file. See [Set up client auto deployment](../Topic/Set-up-client-auto-deployment.md).
+1.  To change the settings, edit the ClientPGSettings.xml file. See [Set up client auto deployment](./Set-up-client-auto-deployment.md).
 
-2.  To apply the settings on selected DPM servers, on System Center Operations Manager console, go to the **Monitoring** view, expand **[!INCLUDE[dpm2012short](../Token/dpm2012short_md.md)] Client Auto Deployment**, and then click **Auto deployment server state**.
+2.  To apply the settings on selected DPM servers, on System Center Operations Manager console, go to the **Monitoring** view, expand **[!INCLUDE[dpm2012short](./Token/dpm2012short_md.md)] Client Auto Deployment**, and then click **Auto deployment server state**.
 
 3.  Select a System Center Operations Manager server from the main pane.
 
@@ -73,7 +73,7 @@ You can configure a number of settings for the Operations Manager Client Auto De
 
 ## <a name="BKMK_Stale"></a>Manage stale clients that haven’t been backed up recently
 
-1.  A stale client is a client computer which resides in a protection group for [!INCLUDE[dpm2012short](../Token/dpm2012short_md.md)] client auto deployment and hasn’t been backed up for the period specified by the administrator. The default period is 90 days.
+1.  A stale client is a client computer which resides in a protection group for [!INCLUDE[dpm2012short](./Token/dpm2012short_md.md)] client auto deployment and hasn’t been backed up for the period specified by the administrator. The default period is 90 days.
 
 2.  To set the stale threshold, open the Registry Editor:
 
@@ -86,4 +86,5 @@ You can configure a number of settings for the Operations Manager Client Auto De
     -   Navigate to **HKLM\\SOFTWARE\\Microsoft\\Microsoft Data Protection Manager\\Configuration\\Client**.
 
     -   Set the following—Value: **StopProtectStaleClients**; Data: **1** to stop protection, **0** to continue protection; Type: **DWORD**.
+
 

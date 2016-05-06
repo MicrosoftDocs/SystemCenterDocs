@@ -11,7 +11,7 @@ ms.topic: article
 ms.assetid: 9deed7cf-5546-485f-9276-a1e4ad9dd928
 ---
 # Distributed Applications
-A *Distributed Application* in [!INCLUDE[om12short](../Token/om12short_md.md)] is an application that is comprised of multiple objects. These objects may be defined by different management packs and may be managed on the same agent or on different agents. The purpose of the distributed application is to provide an overall health for an application that is comprised of different objects.
+A *Distributed Application* in [!INCLUDE[om12short](./Token/om12short_md.md)] is an application that is comprised of multiple objects. These objects may be defined by different management packs and may be managed on the same agent or on different agents. The purpose of the distributed application is to provide an overall health for an application that is comprised of different objects.
 
 Distributed applications do not provide any additional monitoring for the objects in an application. Instead, they include objects that are already being monitored. The value of the distributed application is to provide a relationship between the health of objects that are part of a single application.
 
@@ -24,19 +24,19 @@ The *Distributed Application Designer* provides you with the ability to create a
 
 -   You cannot create multiple levels of health rollup. The health of the application will be the worst health of any of the component groups regardless of the relationships that have been created for them.
 
-You can create a distributed application without these limitations by using the [Visual Management Pack Designer](../Topic/Authoring-Tools.md#VMPD).
+You can create a distributed application without these limitations by using the [Visual Management Pack Designer](./Authoring-Tools.md#VMPD).
 
 ## Contents of Distributed Applications
 
 ### Objects
-A distributed application must include one or more objects in order to be useful. Any object discovered by different management packs installed in the management group can be used in a distributed application. This might come from a management pack installed from the catalog or one that you have created on your own. These can be objects created by different monitoring wizards as discussed in [Management Pack Templates](../Topic/Management-Pack-Templates.md).
+A distributed application must include one or more objects in order to be useful. Any object discovered by different management packs installed in the management group can be used in a distributed application. This might come from a management pack installed from the catalog or one that you have created on your own. These can be objects created by different monitoring wizards as discussed in [Management Pack Templates](./Management-Pack-Templates.md).
 
 ### Component Groups
 A component group can contain any number of objects, and any object added to the distributed application must be contained in a component group. When you create the component group, you specify one or more classes that the group can contain. Only objects that are instances of these classes may be added to the particular group. If you specify **All Objects** then any objects in the management group can be included in the component group.
 
 If you want to limit the objects that can be included in the component group, then you should select the **Object\(s\) if the following type\(s\)** and then select one or more classes from the class tree. The tree will contain all of the classes in the management group which are provided by all the management packs currently installed.
 
-The dialog box arranges classes in a tree according to their base classes. You can read more about base classes at [Base Classes](../Topic/Understanding-Classes-and-Objects.md#BaseClasses). If you select a class, then each of its base classes will also be selected. This allows you to select a single class such as **Computer Role** that is often used as a base class and automatically select all of its base classes.
+The dialog box arranges classes in a tree according to their base classes. You can read more about base classes at [Base Classes](./Understanding-Classes-and-Objects.md#BaseClasses). If you select a class, then each of its base classes will also be selected. This allows you to select a single class such as **Computer Role** that is often used as a base class and automatically select all of its base classes.
 
 ### Relationships
 *Relationships* can be drawn between component groups to represent some relation between different kinds of objects. Health is not rolled up between the component groups, but the relationship is indicated by lines between the groups.
@@ -60,7 +60,7 @@ Each distributed application will be listed in the **Distributed Application** s
 
 #### To create a distributed application
 
-1.  If you don’t have a management pack for the application that you are monitoring, create one using the process in [Selecting a Management Pack File](../Topic/Selecting-a-Management-Pack-File.md).
+1.  If you don’t have a management pack for the application that you are monitoring, create one using the process in [Selecting a Management Pack File](./Selecting-a-Management-Pack-File.md).
 
 2.  In the Operations console, select the **Authoring** workspace.
 
@@ -68,7 +68,7 @@ Each distributed application will be listed in the **Distributed Application** s
 
 4.  In the **Name** box, type a name for the distributed application. This name will appear in the **Monitoring** workspace of the Operations console.
 
-5.  In the **Template** box, select  the template for the starting point of the distributed application. See [Distributed Application Templates](../Topic/Distributed-Applications.md#Templates) for information on the available templates.
+5.  In the **Template** box, select  the template for the starting point of the distributed application. See [Distributed Application Templates](./Distributed-Applications.md#Templates) for information on the available templates.
 
 6.  Select the management pack that you created in step 1.
 
@@ -111,5 +111,6 @@ Each distributed application will be listed in the **Distributed Application** s
 4.  Click and drag one or more of the objects into a component group. Note that you will only be able to add the objects to a component group that will accept objects of that type.
 
 ## See Also
-[Understanding Classes and Objects](../Topic/Understanding-Classes-and-Objects.md)
+[Understanding Classes and Objects](./Understanding-Classes-and-Objects.md)
+
 

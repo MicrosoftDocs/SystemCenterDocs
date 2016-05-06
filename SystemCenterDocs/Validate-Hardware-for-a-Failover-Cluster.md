@@ -11,7 +11,7 @@ ms.assetid: 140727a5-cfad-4f87-99da-fdefcc9865ab
 <?xml version="1.0" encoding="utf-8"?>
 <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://ddue.schemas.microsoft.com/authoring/2003/5 http://dduestorage.blob.core.windows.net/ddueschema/developer.xsd">
   <introduction>
-    <para>You can use the Validate a Configuration Wizard, which is integrated in Failover Cluster Manager, or the <externalLink><linkText>Test-Cluster</linkText><linkUri>http://technet.microsoft.com/library/hh847274</linkUri></externalLink> <token>wps_2</token> cmdlet, to run a set of focused validation tests. You can run this process on a collection of servers that you intend to use as nodes in a cluster. This tests the underlying hardware and software, directly and individually, to obtain an accurate assessment of how well Failover Clustering can be supported in a given configuration.</para>
+    <para>You can use the Validate a Configuration Wizard, which is integrated in Failover Cluster Manager, or the <externalLink><linkText>Test-Cluster</linkText><linkUri>http://technet.microsoft.com/library/hh847274</linkUri></externalLink> <token>wps_./Token> cmdlet, to run a set of focused validation tests. You can run this process on a collection of servers that you intend to use as nodes in a cluster. This tests the underlying hardware and software, directly and individually, to obtain an accurate assessment of how well Failover Clustering can be supported in a given configuration.</para>
     <alert class="important">
       <para>A cluster validation report is required by Microsoft as a condition of Microsoft support for a given configuration.</para>
     </alert>
@@ -45,7 +45,7 @@ ms.assetid: 140727a5-cfad-4f87-99da-fdefcc9865ab
             </para>
           </TD>
           <TD>
-            <para>Run the Validate a Configuration Wizard or the <externalLink><linkText>Test-Cluster</linkText><linkUri>http://technet.microsoft.com/library/hh847274</linkUri></externalLink> <token>wps_2</token> cmdlet.</para>
+            <para>Run the Validate a Configuration Wizard or the <externalLink><linkText>Test-Cluster</linkText><linkUri>http://technet.microsoft.com/library/hh847274</linkUri></externalLink> <token>wps_./Token> cmdlet.</para>
           </TD>
         </tr>
         <tr>
@@ -88,7 +88,7 @@ ms.assetid: 140727a5-cfad-4f87-99da-fdefcc9865ab
       <section>
         <title>What is cluster validation?</title>
         <content>
-          <para>The Validate a Configuration Wizard or the <externalLink><linkText>Test-Cluster</linkText><linkUri>http://technet.microsoft.com/library/hh847274</linkUri></externalLink> <token>wps_2</token> cmdlet enables you to run a set of focused tests on a collection of servers, networks, and associated storage that are planned for use as a failover cluster. The cluster validation process tests the underlying hardware and software to obtain an accurate assessment of how well Failover Clustering can be supported in a given configuration.</para>
+          <para>The Validate a Configuration Wizard or the <externalLink><linkText>Test-Cluster</linkText><linkUri>http://technet.microsoft.com/library/hh847274</linkUri></externalLink> <token>wps_./Token> cmdlet enables you to run a set of focused tests on a collection of servers, networks, and associated storage that are planned for use as a failover cluster. The cluster validation process tests the underlying hardware and software to obtain an accurate assessment of how well Failover Clustering can be supported in a given configuration.</para>
           <para>Before you create a failover cluster, we strongly recommend that you run all the cluster validation tests.</para>
           <para>Cluster validation is intended to do the following: </para>
           <list class="bullet">
@@ -110,39 +110,39 @@ ms.assetid: 140727a5-cfad-4f87-99da-fdefcc9865ab
       <section address="BKMK_SUPPORT">
         <title>Supported cluster configurations </title>
         <content>
-          <para>For Microsoft Customer Service and Support to officially support a failover cluster in <token>winblue_server_2</token> or <token>win8_server_2</token>, the cluster solution must meet the following criteria:</para>
+          <para>For Microsoft Customer Service and Support to officially support a failover cluster in <token>winblue_server_./Token> or <token>win8_server_./Token>, the cluster solution must meet the following criteria:</para>
           <list class="bullet">
             <listItem>
-              <para>All hardware and software components must meet the qualifications for the appropriate logo. For <token>winblue_server_2</token>, this is the "Certified for <token>winblue_server_2</token>" logo. For <token>win8_server_2</token>, this is the "Certified for <token>win8_server_2</token>" logo. For more information, see <externalLink><linkText>Logo Program Requirements and Policies</linkText><linkUri>http://go.microsoft.com/fwlink/p/?LinkId=111561</linkUri></externalLink> on the Microsoft website. The following are descriptions of the logos.</para>
+              <para>All hardware and software components must meet the qualifications for the appropriate logo. For <token>winblue_server_./Token>, this is the "Certified for <token>winblue_server_./Token>" logo. For <token>win8_server_./Token>, this is the "Certified for <token>win8_server_./Token>" logo. For more information, see <externalLink><linkText>Logo Program Requirements and Policies</linkText><linkUri>http://go.microsoft.com/fwlink/p/?LinkId=111561</linkUri></externalLink> on the Microsoft website. The following are descriptions of the logos.</para>
               <list class="bullet">
                 <listItem>
                   <para>
-                    <embeddedLabel>Certified <token>winblue_server_2</token> Systems</embeddedLabel>
+                    <embeddedLabel>Certified <token>winblue_server_./Token> Systems</embeddedLabel>
                   </para>
-                  <para>The Certified for <token>winblue_server_2</token> logo demonstrates that a server system meets Microsoft’s highest technical bar for security, reliability and manageability; and with other certified devices and drivers, it can support the roles, features and interfaces for Cloud and Enterprise workloads, as well as business critical applications.</para>
+                  <para>The Certified for <token>winblue_server_./Token> logo demonstrates that a server system meets Microsoft’s highest technical bar for security, reliability and manageability; and with other certified devices and drivers, it can support the roles, features and interfaces for Cloud and Enterprise workloads, as well as business critical applications.</para>
                 </listItem>
                 <listItem>
                   <para>
-                    <embeddedLabel>Certified <token>winblue_server_2</token> Devices</embeddedLabel>
+                    <embeddedLabel>Certified <token>winblue_server_./Token> Devices</embeddedLabel>
                   </para>
-                  <para>The Certified for <token>winblue_server_2</token> logo demonstrates that a server system meets Microsoft’s highest technical bar for security, reliability and manageability; and with other certified devices and drivers, it can support the roles, features and interfaces for Cloud and Enterprise workloads, as well as business critical applications.</para>
+                  <para>The Certified for <token>winblue_server_./Token> logo demonstrates that a server system meets Microsoft’s highest technical bar for security, reliability and manageability; and with other certified devices and drivers, it can support the roles, features and interfaces for Cloud and Enterprise workloads, as well as business critical applications.</para>
                 </listItem>
                 <listItem>
                   <para>
-                    <embeddedLabel>Certified for <token>win8_server_2</token> Devices</embeddedLabel>
+                    <embeddedLabel>Certified for <token>win8_server_./Token> Devices</embeddedLabel>
                   </para>
-                  <para>Designed for line-of-business and mission-critical applications, the Certified for <token>win8_server_2</token> logo demonstrates that your solution meets Microsoft’s highest technical bar for Windows fundamentals and platform compatibility. </para>
+                  <para>Designed for line-of-business and mission-critical applications, the Certified for <token>win8_server_./Token> logo demonstrates that your solution meets Microsoft’s highest technical bar for Windows fundamentals and platform compatibility. </para>
                 </listItem>
                 <listItem>
                   <para>
-                    <embeddedLabel>Certified <token>win8_server_2</token> Systems</embeddedLabel>
+                    <embeddedLabel>Certified <token>win8_server_./Token> Systems</embeddedLabel>
                   </para>
-                  <para>Designed for cloud and infrastructure workloads, as well as business critical applications, the Microsoft Certified for <token>win8_server_2</token> logo demonstrates that a server system meets Microsoft’s highest technical bar for security, reliability, and manageability, and with any required hardware components, can support all the roles, features, and interfaces that are supported by <token>win8_server_2</token>.</para>
+                  <para>Designed for cloud and infrastructure workloads, as well as business critical applications, the Microsoft Certified for <token>win8_server_./Token> logo demonstrates that a server system meets Microsoft’s highest technical bar for security, reliability, and manageability, and with any required hardware components, can support all the roles, features, and interfaces that are supported by <token>win8_server_./Token>.</para>
                 </listItem>
               </list>
             </listItem>
             <listItem>
-              <para>The fully configured system (servers, network, and storage) must pass all the required tests in the Validate a Configuration Wizard, which you can run from Failover Cluster Manager. Alternatively, you can run the validation tests using the <externalLink><linkText>Test-Cluster</linkText><linkUri>http://technet.microsoft.com/library/hh847274</linkUri></externalLink> <token>wps_2</token> cmdlet.</para>
+              <para>The fully configured system (servers, network, and storage) must pass all the required tests in the Validate a Configuration Wizard, which you can run from Failover Cluster Manager. Alternatively, you can run the validation tests using the <externalLink><linkText>Test-Cluster</linkText><linkUri>http://technet.microsoft.com/library/hh847274</linkUri></externalLink> <token>wps_./Token> cmdlet.</para>
             </listItem>
           </list>
           <para>Microsoft support policies are also described at the <externalLink><linkText>Microsoft Support</linkText><linkUri>http://support.microsoft.com/kb/2775067</linkUri></externalLink> website.</para>
@@ -292,7 +292,7 @@ ms.assetid: 140727a5-cfad-4f87-99da-fdefcc9865ab
   <section address="BKMK_RUN_TESTS">
     <title>Step 2: Validate a new or existing failover cluster</title>
     <content>
-      <para>This step provides procedures for running the Validate a Configuration Wizard or the <externalLink><linkText>Test-Cluster</linkText><linkUri>http://technet.microsoft.com/library/hh847274</linkUri></externalLink> <token>wps_2</token> cmdlet to validate a new or existing failover cluster.</para>
+      <para>This step provides procedures for running the Validate a Configuration Wizard or the <externalLink><linkText>Test-Cluster</linkText><linkUri>http://technet.microsoft.com/library/hh847274</linkUri></externalLink> <token>wps_./Token> cmdlet to validate a new or existing failover cluster.</para>
       <alert class="important">
         <para>To begin the process of adding hardware (such as an additional server) to a failover cluster, connect the hardware to the failover cluster. Then run the Validate a Configuration Wizard, and specify all servers that you want to include in the cluster. The wizard tests cluster connectivity and failover, not only isolated components (such as individual servers).</para>
       </alert>
@@ -400,11 +400,11 @@ ms.assetid: 140727a5-cfad-4f87-99da-fdefcc9865ab
           <image xlink:href="eda3e676-68d6-4a56-90af-dd29179cfd9b" />
         </mediaLinkInline>
         <embeddedLabel>
-          <token>wps_proc_title</token>
+          <token>wps_proc_titl./Token>
         </embeddedLabel>
       </para>
       <para>
-        <token>wps_proc_intro</token>
+        <token>wps_proc_intr./Token>
       </para>
       <para>The following example runs all cluster validation tests on the nodes named <placeholder>node1</placeholder> and <placeholder>node2</placeholder>. If <placeholder>node1</placeholder> or <placeholder>node2</placeholder> is already a member of a cluster, the tests will include all nodes in that cluster.</para>
       <code language="powershell">Test-Cluster -Node node1,node2</code>
@@ -972,7 +972,7 @@ ms.assetid: 140727a5-cfad-4f87-99da-fdefcc9865ab
             <title>Considerations when you include storage tests</title>
             <content>
               <para>The Validate a Configuration Wizard runs all storage tests by default. All or some of the storage tests can be unselected by choosing the <ui>Run only tests I select</ui> option on the <ui>Testing Options</ui> page of the wizard. When storage tests are included, the <ui>Review Storage Status</ui> page of the wizard shows all of the disks and storage pools in the cluster and allows you to select the disks and storage pools to include in the storage tests. Storage tests require that a disk or storage pool that is assigned to a clustered role or Cluster Shared Volume be taken offline first. Therefore, anything using the storage will not have access to it during the storage tests. We recommend that any clustered role or other process that may be using the disk or storage pool is taken offline before the storage is included in the storage validation tests. </para>
-              <para>The <externalLink><linkText>Test-Cluster</linkText><linkUri>http://technet.microsoft.com/library/hh847274</linkUri></externalLink> <token>wps_2</token> cmdlet runs all storage tests by default. You can specify the <system>–Include</system> parameter to only run storage tests or to run a specific storage test. You can use the <system>–Disk</system> and <system>-Pool</system> parameters to enable targeted storage validation. The <system>–Disk</system> parameter or the <system>–Pool</system> parameter allows specifying, respectively, one or more disks or one or more storage pools to include in the storage validation testing. If the <system>–Disk</system> parameter or the <system>–Pool</system> parameter is used to specify a disk or storage pool that is currently online and is assigned to a clustered role or Cluster Shared Volume, you must also specify the <system>–Force</system> parameter to validate the corresponding disk or storage pool; otherwise, you must ensure that the clustered disk or storage pool is offline before running the tests. If the <system>–Disk</system> parameter or the <system>–Pool</system> parameter is not specified, <system>Test-Cluster</system> runs storage tests on all disks and storage pools that are available for cluster use or that are in the cluster resource offline or failed state. We recommend that any clustered role or other process that may be using the disk or storage pool is taken offline before the storage is included in the validation testing. </para>
+              <para>The <externalLink><linkText>Test-Cluster</linkText><linkUri>http://technet.microsoft.com/library/hh847274</linkUri></externalLink> <token>wps_./Token> cmdlet runs all storage tests by default. You can specify the <system>–Include</system> parameter to only run storage tests or to run a specific storage test. You can use the <system>–Disk</system> and <system>-Pool</system> parameters to enable targeted storage validation. The <system>–Disk</system> parameter or the <system>–Pool</system> parameter allows specifying, respectively, one or more disks or one or more storage pools to include in the storage validation testing. If the <system>–Disk</system> parameter or the <system>–Pool</system> parameter is used to specify a disk or storage pool that is currently online and is assigned to a clustered role or Cluster Shared Volume, you must also specify the <system>–Force</system> parameter to validate the corresponding disk or storage pool; otherwise, you must ensure that the clustered disk or storage pool is offline before running the tests. If the <system>–Disk</system> parameter or the <system>–Pool</system> parameter is not specified, <system>Test-Cluster</system> runs storage tests on all disks and storage pools that are available for cluster use or that are in the cluster resource offline or failed state. We recommend that any clustered role or other process that may be using the disk or storage pool is taken offline before the storage is included in the validation testing. </para>
               <para>
                 <embeddedLabel>Storage that is not directly connected to all nodes in the cluster</embeddedLabel>
               </para>
@@ -1007,7 +1007,7 @@ ms.assetid: 140727a5-cfad-4f87-99da-fdefcc9865ab
       <section>
         <title>If a cluster passes all tests in the Validate a Configuration Wizard, is it supported?</title>
         <content>
-          <para>If all the hardware and software components in the cluster meet the qualifications for the "Certified for <token>winblue_server_2</token>" or "Certified for <token>win8_server_2</token>" logo, and the cluster passes the validation tests, it is considered to be supported by Microsoft Customer Service and Support for Failover Clustering. For more information, see <link xlink:href="#BKMK_SUPPORT">Supported cluster configurations</link> earlier in this guide.</para>
+          <para>If all the hardware and software components in the cluster meet the qualifications for the "Certified for <token>winblue_server_./Token>" or "Certified for <token>win8_server_./Token>" logo, and the cluster passes the validation tests, it is considered to be supported by Microsoft Customer Service and Support for Failover Clustering. For more information, see <link xlink:href="#BKMK_SUPPORT">Supported cluster configurations</link> earlier in this guide.</para>
         </content>
       </section>
       <section>
@@ -1049,3 +1049,4 @@ ms.assetid: 140727a5-cfad-4f87-99da-fdefcc9865ab
   </section>
   <relatedTopics />
 </developerConceptualDocument>
+

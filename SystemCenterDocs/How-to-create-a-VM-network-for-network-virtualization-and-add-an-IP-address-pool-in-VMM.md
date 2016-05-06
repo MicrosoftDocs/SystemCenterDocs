@@ -11,21 +11,21 @@ ms.topic: article
 ms.assetid: 168132bf-9c34-4bb7-ab00-d7b07b28598c
 ---
 # How to create a VM network for network virtualization and add an IP address pool in VMM
-In [!INCLUDE[vmm12sp1_long](../Token/vmm12sp1_long_md.md)], to support multiple tenants \(also called clients or customers\) with their own networks, isolated from the networks of others, use VM networks configured for Hyper\-V network virtualization. For more information, see [Plan VM networks for Hyper-V network virtualization](../Topic/Overview--plan-VM-networks-in-VMM.md#BKMK_hnv) in "Overview: plan VM networks in VMM." To see how this procedure fits into an overall workflow, see [Implementing the configuration](../Topic/Configuring-logical-networks,-VM-networks,-and-logical-switches-in-VMM.md#BKMK_implementing) in "Configuring logical networks, VM networks, and logical switches in VMM."
+In [!INCLUDE[vmm12sp1_long](./Token/vmm12sp1_long_md.md)], to support multiple tenants \(also called clients or customers\) with their own networks, isolated from the networks of others, use VM networks configured for Hyper\-V network virtualization. For more information, see [Plan VM networks for Hyper-V network virtualization](./Overview--plan-VM-networks-in-VMM.md#BKMK_hnv) in "Overview: plan VM networks in VMM." To see how this procedure fits into an overall workflow, see [Implementing the configuration](./Configuring-logical-networks,-VM-networks,-and-logical-switches-in-VMM.md#BKMK_implementing) in "Configuring logical networks, VM networks, and logical switches in VMM."
 
-After creating the VM network, create one or more IP address pools on it, regardless of whether you will use static IP addresses or DHCP on the VM network. If you choose DHCP, [!INCLUDE[vmm12short](../Token/vmm12short_md.md)] will respond to a DHCP request with an address from an IP address pool.
+After creating the VM network, create one or more IP address pools on it, regardless of whether you will use static IP addresses or DHCP on the VM network. If you choose DHCP, [!INCLUDE[vmm12short](./Token/vmm12short_md.md)] will respond to a DHCP request with an address from an IP address pool.
 
 This topic contains the following procedures:
 
--   [Create a VM network on a logical network where network virtualization is enabled](../Topic/How-to-create-a-VM-network-for-network-virtualization-and-add-an-IP-address-pool-in-VMM.md#BKMK_nv_enabled)
+-   [Create a VM network on a logical network where network virtualization is enabled](./How-to-create-a-VM-network-for-network-virtualization-and-add-an-IP-address-pool-in-VMM.md#BKMK_nv_enabled)
 
--   [Create a static IP address pool for a VM network](../Topic/How-to-create-a-VM-network-for-network-virtualization-and-add-an-IP-address-pool-in-VMM.md#BKMK_pool)
+-   [Create a static IP address pool for a VM network](./How-to-create-a-VM-network-for-network-virtualization-and-add-an-IP-address-pool-in-VMM.md#BKMK_pool)
 
 ## <a name="BKMK_nv_enabled"></a>Create a VM network on a logical network where network virtualization is enabled
 To perform this procedure, you must already have a logical network that uses the **One connected network** option, with the option **Allow new VM networks created on this logical network to use network virtualization**.
 
 > [!NOTE]
-> If you want to create a VM network and configure it with a gateway at the same time, you must first add the gateway to your [!INCLUDE[vmm12short](../Token/vmm12short_md.md)] configuration. You can also add a gateway later, then open the property sheet of an existing VM network and configure the VM network to use the gateway. For more information, see [Configuring gateways in VMM](../Topic/Configuring-gateways-in-VMM.md).
+> If you want to create a VM network and configure it with a gateway at the same time, you must first add the gateway to your [!INCLUDE[vmm12short](./Token/vmm12short_md.md)] configuration. You can also add a gateway later, then open the property sheet of an existing VM network and configure the VM network to use the gateway. For more information, see [Configuring gateways in VMM](./Configuring-gateways-in-VMM.md).
 
 #### To create a VM network on a logical network where network virtualization is enabled
 
@@ -59,7 +59,7 @@ To perform this procedure, you must already have a logical network that uses the
 
     -   **Connect to another network through a VPN tunnel** Select this option if the virtual machines on this VM network will communicate with other networks through a VPN tunnel. If the device will use the Border Gateway Protocol, also select the check box to enable this protocol. In the **Gateway device** list, select the VPN gateway device that you want to use. Confirm that the capabilities that are listed for the device are as expected.
 
-        If you select **Connect to another network through a VPN tunnel** and select a **Gateway device**, the **VPN Connections** page of the wizard appears. If you selected the check box for Border Gateway Protocol, the **Border Gateway Protocol** page also appears. Fill in these pages based on information that you obtain from the administrator of that VPN gateway, for example, information about the VPN endpoint and the bandwidth. For more information, see [Prerequisites for gateways in VMM](../Topic/Prerequisites-for-gateways-in-VMM.md).
+        If you select **Connect to another network through a VPN tunnel** and select a **Gateway device**, the **VPN Connections** page of the wizard appears. If you selected the check box for Border Gateway Protocol, the **Border Gateway Protocol** page also appears. Fill in these pages based on information that you obtain from the administrator of that VPN gateway, for example, information about the VPN endpoint and the bandwidth. For more information, see [Prerequisites for gateways in VMM](./Prerequisites-for-gateways-in-VMM.md).
 
     -   **Connect directly to an additional logical network** Select this option if the virtual machines on this VM network will communicate with other networks in this data center. Also select either **Direct routing** or **Network address translation \(NAT\)**. In the **Gateway device** list, select the gateway device that you want to use. Confirm that the capabilities that are listed for the device are as expected.
 
@@ -70,7 +70,7 @@ To perform this procedure, you must already have a logical network that uses the
 11. Verify that the VM network appears in the **VM Networks and IP Pools** pane.
 
 ## <a name="BKMK_pool"></a>Create a static IP address pool for a VM network
-In a VM network for network virtualization, create at least one IP address pool. For more information about IP address pools, see [Guidelines for IP address pools](../Topic/Overview--plan-logical-networks,-network-sites,-and-IP-address-pools-in-VMM.md#BKMK_address_pools) in "Overview: plan logical networks, network sites, and IP address pools in VMM."
+In a VM network for network virtualization, create at least one IP address pool. For more information about IP address pools, see [Guidelines for IP address pools](./Overview--plan-logical-networks,-network-sites,-and-IP-address-pools-in-VMM.md#BKMK_address_pools) in "Overview: plan logical networks, network sites, and IP address pools in VMM."
 
 #### To create a static IP address pool for a VM network
 
@@ -142,20 +142,21 @@ In a VM network for network virtualization, create at least one IP address pool.
 > 
 > `Get-SCIPAddress –StaticIPAddressPool $ippool | Format-Table –property Address,AssignedToType,State`
 
-From time to time, you might need to release IP addresses that are in the pool but that are marked by [!INCLUDE[vmm12short](../Token/vmm12short_md.md)] as “inactive.” Releasing them makes them available for reassignment. For more information, see [How to release inactive IP addresses for VM networks in VMM](../Topic/How-to-release-inactive-IP-addresses-for-VM-networks-in-VMM.md).
+From time to time, you might need to release IP addresses that are in the pool but that are marked by [!INCLUDE[vmm12short](./Token/vmm12short_md.md)] as “inactive.” Releasing them makes them available for reassignment. For more information, see [How to release inactive IP addresses for VM networks in VMM](./How-to-release-inactive-IP-addresses-for-VM-networks-in-VMM.md).
 
-After a virtual machine has been deployed in [!INCLUDE[vmm12short](../Token/vmm12short_md.md)], you can view the IP address or addresses assigned to that virtual machine. To do this, right\-click the listing for the virtual machine, click **Properties**, click the **Hardware Configuration** tab, click the network adapter, and in the results pane, click the **Connection details** button.
+After a virtual machine has been deployed in [!INCLUDE[vmm12short](./Token/vmm12short_md.md)], you can view the IP address or addresses assigned to that virtual machine. To do this, right\-click the listing for the virtual machine, click **Properties**, click the **Hardware Configuration** tab, click the network adapter, and in the results pane, click the **Connection details** button.
 
 > [!IMPORTANT]
-> If you configure a virtual machine to obtain a static IP address from an IP address pool, you must also configure the virtual machine to use a static MAC address. You can either specify the MAC address manually \(during the **Configure Settings** step\) or have [!INCLUDE[vmm12short](../Token/vmm12short_md.md)] automatically assign a MAC address from a MAC address pool.
+> If you configure a virtual machine to obtain a static IP address from an IP address pool, you must also configure the virtual machine to use a static MAC address. You can either specify the MAC address manually \(during the **Configure Settings** step\) or have [!INCLUDE[vmm12short](./Token/vmm12short_md.md)] automatically assign a MAC address from a MAC address pool.
 > 
-> This requirement for static MAC addresses is necessary because [!INCLUDE[vmm12short](../Token/vmm12short_md.md)] uses the MAC address to identify which network adapter to set the static IP address to, and this identification must happen before the virtual machine starts. Identifying the network adapter is especially important if a virtual machine has multiple adapters. If the MAC addresses were assigned dynamically through Hyper\-V, [!INCLUDE[vmm12short](../Token/vmm12short_md.md)] could not consistently identify the correct adapter to set a static IP address on.
+> This requirement for static MAC addresses is necessary because [!INCLUDE[vmm12short](./Token/vmm12short_md.md)] uses the MAC address to identify which network adapter to set the static IP address to, and this identification must happen before the virtual machine starts. Identifying the network adapter is especially important if a virtual machine has multiple adapters. If the MAC addresses were assigned dynamically through Hyper\-V, [!INCLUDE[vmm12short](./Token/vmm12short_md.md)] could not consistently identify the correct adapter to set a static IP address on.
 > 
-> [!INCLUDE[vmm12short](../Token/vmm12short_md.md)] provides static MAC address pools by default, but you can customize the pools. For more information, see [VMM networking reference: creating custom MAC address pools in VMM](../Topic/VMM-networking-reference--creating-custom-MAC-address-pools-in-VMM.md).
+> [!INCLUDE[vmm12short](./Token/vmm12short_md.md)] provides static MAC address pools by default, but you can customize the pools. For more information, see [VMM networking reference: creating custom MAC address pools in VMM](./VMM-networking-reference--creating-custom-MAC-address-pools-in-VMM.md).
 
 ## See Also
-[How to create a VM network for a VLAN in VMM](../Topic/How-to-create-a-VM-network-for-a-VLAN-in-VMM.md)
-[Overview: plan VM networks in VMM](../Topic/Overview--plan-VM-networks-in-VMM.md)
-[Configuring logical networks, VM networks, and logical switches in VMM](../Topic/Configuring-logical-networks,-VM-networks,-and-logical-switches-in-VMM.md)
-[Managing network resources with VMM](../Topic/Managing-network-resources-with-VMM.md)
+[How to create a VM network for a VLAN in VMM](./How-to-create-a-VM-network-for-a-VLAN-in-VMM.md)
+[Overview: plan VM networks in VMM](./Overview--plan-VM-networks-in-VMM.md)
+[Configuring logical networks, VM networks, and logical switches in VMM](./Configuring-logical-networks,-VM-networks,-and-logical-switches-in-VMM.md)
+[Managing network resources with VMM](./Managing-network-resources-with-VMM.md)
+
 

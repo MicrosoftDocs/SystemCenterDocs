@@ -19,7 +19,7 @@ You can deploy DPM to protect SharePoint farms, external SQL Server databases, a
 
 ## Prerequisites and limitations
 
--   For a list of supported SharePoint versions and the DPM versions required to back them up see [What can DPM back up?](../Topic/What-can-DPM-back-up-.md)
+-   For a list of supported SharePoint versions and the DPM versions required to back them up see [What can DPM back up?](./What-can-DPM-back-up-.md)
 
 -   By default when you protect SharePoint all content databases \(and the SharePoint\_Config and SharePoint\_AdminContent\* databases\) will be protected. If you want to add customizations such as search indexes, templates or application service databases, or the user profile service you’ll need to configure these for protection separately. Be sure that you enable protection for all folders that include these types of features or customization files.
 
@@ -43,15 +43,15 @@ You can deploy DPM to protect SharePoint farms, external SQL Server databases, a
 
     -   System requirements for DPM
 
-    -   [What can DPM back up?](../Topic/What-can-DPM-back-up-.md)
+    -   [What can DPM back up?](./What-can-DPM-back-up-.md)
 
-    -   [What's supported and what isn't for DPM?](../Topic/What-s-supported-and-what-isn-t-for-DPM-.md)
+    -   [What's supported and what isn't for DPM?](./What-s-supported-and-what-isn-t-for-DPM-.md)
 
-    -   [Get DPM installed](../Topic/Get-DPM-installed.md)
+    -   [Get DPM installed](./Get-DPM-installed.md)
 
-2.  **Set up storage**—You can store backed up data on disk, on tape, and in the cloud with Azure. Read more in [Prepare data storage](../Topic/Prepare-data-storage.md).
+2.  **Set up storage**—You can store backed up data on disk, on tape, and in the cloud with Azure. Read more in [Prepare data storage](./Prepare-data-storage.md).
 
-3.  **Set up the DPM protection agent**—You'll need to install the DPM protection agent on every server in the SharePoint farm, including SQL Servers.  The only exception is that you only install it on a single Web Front End \(WFE\) server. For example if you have a single farm with two WFE servers, an index server and a two\-node SQL Server cluster you’d install the agent on the index server, both nodes in the SQL Server cluster, and one of the WFE servers.  Because WFE servers don't host content DPM only needs the agent on one of them to serve as the entry point for protection. . Read [Deploy the DPM protection agent](../Topic/Deploy-the-DPM-protection-agent.md).
+3.  **Set up the DPM protection agent**—You'll need to install the DPM protection agent on every server in the SharePoint farm, including SQL Servers.  The only exception is that you only install it on a single Web Front End \(WFE\) server. For example if you have a single farm with two WFE servers, an index server and a two\-node SQL Server cluster you’d install the agent on the index server, both nodes in the SQL Server cluster, and one of the WFE servers.  Because WFE servers don't host content DPM only needs the agent on one of them to serve as the entry point for protection. . Read [Deploy the DPM protection agent](./Deploy-the-DPM-protection-agent.md).
 
     If the SharePoint SQL Server database is remote you'll need to configure the DPM agent on it. If it's clustered then install the agent on all cluster nodes.
 
@@ -84,7 +84,7 @@ To back up SharePoint farm you configure protection for SharePoint by using Conf
 
 3.  In **Select Protection Group Type** select **Servers**.
 
-4.  In **Select Group Members** expand the server that holds the WFE role. If there's more than one WFE server select the one on which you installed ConfigureSharePoint.exe. Learn more in [Deploy protection groups](../Topic/Deploy-protection-groups.md).
+4.  In **Select Group Members** expand the server that holds the WFE role. If there's more than one WFE server select the one on which you installed ConfigureSharePoint.exe. Learn more in [Deploy protection groups](./Deploy-protection-groups.md).
 
     When you expand the SharePoint server  DPM queries VSS to see what data DPM can protect.  If the SharePoint database is remote DPM connects to it.        If SharePoint data sources don't appear, check that the VSS writer is running on the SharePoint server and any remote SQL Server, and ensure that the DPM agent is installed on both the SharePoint server and remote SQL Server. In addition ensure that SharePoint databases aren't being protected elsewhere as SQL Server databases.
 
@@ -241,4 +241,5 @@ There a couple of possible scenarios for farm recovery:
 11. On the **Summary** page, review the recovery settings, and then click **Recover**.
 
 12. On the main front\-end Web server for the server farm, run the SharePoint Products and Technologies Configuration Wizard and disconnect the front\-end Web server from the farm.
+
 

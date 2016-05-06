@@ -13,7 +13,7 @@ ms.assetid: 58d4359b-155b-4406-8978-8b40fc87f5d0
 # Send Platform Event
 The Send Platform Event activity creates an activity event with text that you specify. You can use the Send Platform Event activity to create notifications of any problems or general information that occur in the runbook.
 
-For more information about activity events, see [Activity Events](../Topic/Activity-Events.md).
+For more information about activity events, see [Activity Events](./Activity-Events.md).
 
 ## Activity Properties
 
@@ -35,4 +35,5 @@ For more information about activity events, see [Activity Events](../Topic/Activ
 |Type|The type of event that was generated.|
 |Summary|The summary text of the event.|
 |Details|The detailed description of the event.|
+
 

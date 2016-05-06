@@ -13,25 +13,25 @@ ms.assetid: 1e9a5425-b8e8-4681-9498-89538a558fc4
 # Moving Data Warehouse Databases
 The following high\-level steps are required to move the Data Warehouse databases. Each step in this list links to an associated procedure later in this document.
 
-1.  [Locate user accounts and instances of SQL Server](../Topic/Moving-Data-Warehouse-Databases.md#bkmk_locating)
+1.  [Locate user accounts and instances of SQL Server](./Moving-Data-Warehouse-Databases.md#bkmk_locating)
 
-2.  [Stop Service Manager services](../Topic/Moving-Data-Warehouse-Databases.md#BKMK_stop)
+2.  [Stop Service Manager services](./Moving-Data-Warehouse-Databases.md#BKMK_stop)
 
-3.  [Back up the data warehouse databases](../Topic/Moving-Data-Warehouse-Databases.md#BKMK_backup)
+3.  [Back up the data warehouse databases](./Moving-Data-Warehouse-Databases.md#BKMK_backup)
 
-4.  [Take the data warehouse databases offline](../Topic/Moving-Data-Warehouse-Databases.md#BKMK_offline)
+4.  [Take the data warehouse databases offline](./Moving-Data-Warehouse-Databases.md#BKMK_offline)
 
-5.  [Restore the data warehouse databases on the new computer running SQL Server](../Topic/Moving-Data-Warehouse-Databases.md#BKMK_restore)
+5.  [Restore the data warehouse databases on the new computer running SQL Server](./Moving-Data-Warehouse-Databases.md#BKMK_restore)
 
-6.  [Prepare the data warehouse databases on the new database server](../Topic/Moving-Data-Warehouse-Databases.md#BKMK_prepareDB)
+6.  [Prepare the data warehouse databases on the new database server](./Moving-Data-Warehouse-Databases.md#BKMK_prepareDB)
 
-7.  [Update data warehouse management server with the new database server name](../Topic/Moving-Data-Warehouse-Databases.md#BKMK_updatename)
+7.  [Update data warehouse management server with the new database server name](./Moving-Data-Warehouse-Databases.md#BKMK_updatename)
 
-8.  [Update the data sources on the reporting server](../Topic/Moving-Data-Warehouse-Databases.md#BKMK_updateDS)
+8.  [Update the data sources on the reporting server](./Moving-Data-Warehouse-Databases.md#BKMK_updateDS)
 
-9. [Update the data sources for the Analysis Services to point to the new computer running SQL Server](../Topic/Moving-Data-Warehouse-Databases.md#BKMK_updateDSAS)
+9. [Update the data sources for the Analysis Services to point to the new computer running SQL Server](./Moving-Data-Warehouse-Databases.md#BKMK_updateDSAS)
 
-10. [Start Service Manager services on the data warehouse management server](../Topic/Moving-Data-Warehouse-Databases.md#BKMK_StartSer)
+10. [Start Service Manager services on the data warehouse management server](./Moving-Data-Warehouse-Databases.md#BKMK_StartSer)
 
 > [!IMPORTANT]
 > After you move the **DWStagingAndConfig** and **DWRepository** databases, they have to be restored on the same instance of SQL Server. Restoring them on a separate instances of SQL Server is not supported.
@@ -111,7 +111,7 @@ Use the following procedures to locate the user accounts and instances of SQL Se
 1.  > [!NOTE]
     > The account that is configured by using the names in the following data sources in SQL Server Reporting Services is called the **Reporting account**.
 
-    Log on to the server with SQL Server Reporting Services that are hosting the [!INCLUDE[smshort](../Token/smshort_md.md)] reports.
+    Log on to the server with SQL Server Reporting Services that are hosting the [!INCLUDE[smshort](./Token/smshort_md.md)] reports.
 
     > [!NOTE]
     > In this procedure, you will use values that you noted in the "To identify the reporting server and instance names used by data warehouse management server" procedure above.
@@ -618,4 +618,5 @@ Use the following procedure to start the Service Manager services on the data wa
     2.  Microsoft Monitoring Agent
 
     3.  System Center Management Configuration
+
 

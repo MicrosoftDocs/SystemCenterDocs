@@ -38,14 +38,15 @@ This procedure should be run after the ACS collector and database are installed 
 10. When the task completes successfully, click **Close**.
 
 ## See Also
-[Collecting Security Events Using Audit Collection Services in Operations Manager](../Topic/Collecting-Security-Events-Using-Audit-Collection-Services-in-Operations-Manager.md)
-[How to Configure Certficates for ACS Collector and Forwarder](../Topic/How-to-Configure-Certficates-for-ACS-Collector-and-Forwarder.md)
-[Audit Collection Services Capacity Planning](../Topic/Audit-Collection-Services-Capacity-Planning.md)
-[Audit Collection Services Performance Counters](../Topic/Audit-Collection-Services-Performance-Counters.md)
-[Audit Collection Services Security](../Topic/Audit-Collection-Services-Security.md)
-[How to Enable Event Logging and ACS Rules on Solaris and AIX Computers](../Topic/How-to-Enable-Event-Logging-and-ACS-Rules-on-Solaris-and-AIX-Computers.md)
-[How to Filter ACS Events for UNIX and Linux Computers](../Topic/How-to-Filter-ACS-Events-for-UNIX-and-Linux-Computers.md)
-[Monitoring Audit Collection Services Performance](../Topic/Monitoring-Audit-Collection-Services-Performance.md)
-[How to Remove Audit Collection Services &#40;ACS&#41;](../Topic/How-to-Remove-Audit-Collection-Services--ACS-.md)
-[Audit Collection Services Administration &#40;AdtAdmin.exe&#41;](../Topic/Audit-Collection-Services-Administration--AdtAdmin.exe-.md)
+[Collecting Security Events Using Audit Collection Services in Operations Manager](./Collecting-Security-Events-Using-Audit-Collection-Services-in-Operations-Manager.md)
+[How to Configure Certficates for ACS Collector and Forwarder](./How-to-Configure-Certficates-for-ACS-Collector-and-Forwarder.md)
+[Audit Collection Services Capacity Planning](./Audit-Collection-Services-Capacity-Planning.md)
+[Audit Collection Services Performance Counters](./Audit-Collection-Services-Performance-Counters.md)
+[Audit Collection Services Security](./Audit-Collection-Services-Security.md)
+[How to Enable Event Logging and ACS Rules on Solaris and AIX Computers](./How-to-Enable-Event-Logging-and-ACS-Rules-on-Solaris-and-AIX-Computers.md)
+[How to Filter ACS Events for UNIX and Linux Computers](./How-to-Filter-ACS-Events-for-UNIX-and-Linux-Computers.md)
+[Monitoring Audit Collection Services Performance](./Monitoring-Audit-Collection-Services-Performance.md)
+[How to Remove Audit Collection Services &#40;ACS&#41;](./How-to-Remove-Audit-Collection-Services--ACS-.md)
+[Audit Collection Services Administration &#40;AdtAdmin.exe&#41;](./Audit-Collection-Services-Administration--AdtAdmin.exe-.md)
+
 

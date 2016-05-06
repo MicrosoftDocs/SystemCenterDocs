@@ -11,7 +11,7 @@ ms.topic: article
 ms.assetid: a9d0f6f6-90df-4159-9a24-5ba0647a2343
 ---
 # Prioritizing Alerts by Using Application Advisor
-Application Advisor works with .NET Application Performance Monitoring in [!INCLUDE[om12long](../Token/om12long_md.md)] and helps you prioritize and manage which alerts to address. It identifies which applications are causing the most alerts within an environment. These are the applications you should investigate first because they are causing the most service level agreement \(SLA\) violations. Use Application Advisor as a first step in alert management and as a view into the overall health of an application. Essentially, Application Advisor helps you “follow the noise” and find out where the most events are occurring. Application failure and analysis reports let you view those individual applications in fine detail. Summary reports give you key information at a glance, such as the top\-five alerts to resolve.
+Application Advisor works with .NET Application Performance Monitoring in [!INCLUDE[om12long](./Token/om12long_md.md)] and helps you prioritize and manage which alerts to address. It identifies which applications are causing the most alerts within an environment. These are the applications you should investigate first because they are causing the most service level agreement \(SLA\) violations. Use Application Advisor as a first step in alert management and as a view into the overall health of an application. Essentially, Application Advisor helps you “follow the noise” and find out where the most events are occurring. Application failure and analysis reports let you view those individual applications in fine detail. Summary reports give you key information at a glance, such as the top\-five alerts to resolve.
 
 ### To scope and run an Application Advisor report
 
@@ -25,12 +25,12 @@ Application Advisor works with .NET Application Performance Monitoring in [!INCL
 
     To open Application Advisor, paste the Application Advisor URL into your browser. Application Advisor opens in the web browser window. Different application monitoring reports display in the context of the application features and services you configured when you created application groups to monitor.
 
-    Access to Application Advisor is controlled through the Application Monitoring Operator, Report Operator and Administrator roles. You must be a member of Application Monitoring Operator and Report Operator roles or the Administrator role. For more information, see [User Roles for Application Performance Monitoring](../Topic/User-Roles-for-Application-Performance-Monitoring.md)
+    Access to Application Advisor is controlled through the Application Monitoring Operator, Report Operator and Administrator roles. You must be a member of Application Monitoring Operator and Report Operator roles or the Administrator role. For more information, see [User Roles for Application Performance Monitoring](./User-Roles-for-Application-Performance-Monitoring.md)
 
     Access to Application Diagnostics is controlled through the Application Monitoring Operator and Administrator roles. You must be a member of one of these roles to have rights to the console.
 
     > [!NOTE]
-    > Application Advisor requires SQL Server Report Services \(SSRS\). You must have [!INCLUDE[om12short](../Token/om12short_md.md)] reporting installed before using Application Advisor.
+    > Application Advisor requires SQL Server Report Services \(SSRS\). You must have [!INCLUDE[om12short](./Token/om12short_md.md)] reporting installed before using Application Advisor.
 
 2.  In the **Navigation** pane, in the **All application groups** dropdown menu, select whether you want reports to include information for all application groups or a subset of application groups.
 
@@ -81,7 +81,7 @@ To show how Application Advisor prioritizes alerts, this walkthrough uses a repo
     > [!IMPORTANT]
     > This is the stage where you shift from a prioritized list to investigating individual alerts related to the most important issue. None of the events in this list is more important than another, but each can help highlight the route cause.
 
-4.  Click a link in **Event Description** and the Application Diagnostics Event Properties page opens. Here you are viewing data about the event itself. And this is the place to start troubleshooting. See [Working with Events by Using Application Diagnostics](../Topic/Working-with-Events-by-Using-Application-Diagnostics.md) for more information.
+4.  Click a link in **Event Description** and the Application Diagnostics Event Properties page opens. Here you are viewing data about the event itself. And this is the place to start troubleshooting. See [Working with Events by Using Application Diagnostics](./Working-with-Events-by-Using-Application-Diagnostics.md) for more information.
 
     Beginning with Event properties tab, use this and other tabs to discover more about what happened, whether it was likely a system issue as shown by performance data, and what application tier the problem occurred in, using distributed chains. Following this information should reveal if it was a system problem or an application code problem, and thus who should resolve the issue.
 
@@ -103,6 +103,7 @@ To show how Application Advisor prioritizes alerts, this walkthrough uses a repo
 6.  To view a report in your Favorites, just click the report you want to view.
 
 ## See Also
-[Working with the Application Diagnostics Console](../Topic/Working-with-the-Application-Diagnostics-Console.md)
-[Working with Events by Using Application Diagnostics](../Topic/Working-with-Events-by-Using-Application-Diagnostics.md)
+[Working with the Application Diagnostics Console](./Working-with-the-Application-Diagnostics-Console.md)
+[Working with Events by Using Application Diagnostics](./Working-with-Events-by-Using-Application-Diagnostics.md)
+
 

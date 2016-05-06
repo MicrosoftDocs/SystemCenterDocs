@@ -38,3 +38,4 @@ You can use the following procedure to disable the schedule for the extract, tra
 
 3.  Type **exit**, and then press ENTER.
 
+

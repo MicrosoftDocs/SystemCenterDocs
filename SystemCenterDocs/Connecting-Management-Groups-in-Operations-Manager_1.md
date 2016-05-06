@@ -8,7 +8,7 @@ ms.topic: article
 ms.assetid: 97c09afe-b80a-480c-a9dd-3656c3795c37
 ---
 # Connecting Management Groups in Operations Manager_1
-Connecting management groups in [!INCLUDE[om12long](../Token/om12long_md.md)] enables the ability to view and interact with data from multiple management groups in a single Operations console. The management group in which the consolidated view is available is called the local management group, and those that contribute their data to the consolidated view are called the connected management groups. They relate to each other in a hierarchical fashion, with connected groups in the bottom tier and the local group in the top tier. The connected groups are in a peer\-to\-peer relationship with each other. Each connected group has no visibility or interaction with the other connected groups; the visibility is strictly from the local group into the connected group.
+Connecting management groups in [!INCLUDE[om12long](./Token/om12long_md.md)] enables the ability to view and interact with data from multiple management groups in a single Operations console. The management group in which the consolidated view is available is called the local management group, and those that contribute their data to the consolidated view are called the connected management groups. They relate to each other in a hierarchical fashion, with connected groups in the bottom tier and the local group in the top tier. The connected groups are in a peer\-to\-peer relationship with each other. Each connected group has no visibility or interaction with the other connected groups; the visibility is strictly from the local group into the connected group.
 
 > [!NOTE]
 > Operations Manager does not support communication of data between peer management groups. Only the local to connected hierarchy configuration is supported. Multiple tiers, where a management group would be both a local group and a connected group, are not supported.
@@ -76,12 +76,13 @@ In this procedure, you create a connection between two management groups. These 
 6.  A **Log On** dialog box appears and prompts the user for credentials \(to log on to the connected management groups\). Enter the credentials, and then click **OK**. Alerts appear from all connected management groups for which you have access and permission. You can run tasks in the managed computers of connected management groups.
 
 ## See Also
-[General Tasks in Operations Manager_1](../Topic/General-Tasks-in-Operations-Manager_1.md)
-[Managing Alerts](../Topic/Managing-Alerts.md)
-[How to Suspend Monitoring Temporarily by Using Maintenance Mode](../Topic/How-to-Suspend-Monitoring-Temporarily-by-Using-Maintenance-Mode.md)
-[Creating and Managing Groups](../Topic/Creating-and-Managing-Groups.md)
-[Running Tasks in Operations Manager](../Topic/Running-Tasks-in-Operations-Manager.md)
-[How to Create a Resource Pool](../Topic/How-to-Create-a-Resource-Pool.md)
-[Managing Resource Pools for UNIX and Linux Computers](../Topic/Managing-Resource-Pools-for-UNIX-and-Linux-Computers.md)
-[Using Operations Manager Shell](../Topic/Using-Operations-Manager-Shell.md)
+[General Tasks in Operations Manager_1](./General-Tasks-in-Operations-Manager_1.md)
+[Managing Alerts](./Managing-Alerts.md)
+[How to Suspend Monitoring Temporarily by Using Maintenance Mode](./How-to-Suspend-Monitoring-Temporarily-by-Using-Maintenance-Mode.md)
+[Creating and Managing Groups](./Creating-and-Managing-Groups.md)
+[Running Tasks in Operations Manager](./Running-Tasks-in-Operations-Manager.md)
+[How to Create a Resource Pool](./How-to-Create-a-Resource-Pool.md)
+[Managing Resource Pools for UNIX and Linux Computers](./Managing-Resource-Pools-for-UNIX-and-Linux-Computers.md)
+[Using Operations Manager Shell](./Using-Operations-Manager-Shell.md)
+
 

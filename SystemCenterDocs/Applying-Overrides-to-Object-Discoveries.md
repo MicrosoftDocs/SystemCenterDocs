@@ -11,15 +11,15 @@ ms.topic: article
 ms.assetid: 727d2bf5-fd95-46a7-a654-46b299ee7136
 ---
 # Applying Overrides to Object Discoveries
-[!INCLUDE[om12long](../Token/om12long_md.md)] monitors computers and devices that it has discovered, and it also discovers applications and features that it discovers on monitored computers. There may be situations where you want to limit discovery. For example, you might want only some instances of SQL Server to be discovered and monitored, or you want to remove a computer that has already been discovered.
+[!INCLUDE[om12long]./Token/om12long_md.md)] monitors computers and devices that it has discovered, and it also discovers applications and features that it discovers on monitored computers. There may be situations where you want to limit discovery. For example, you might want only some instances of SQL Server to be discovered and monitored, or you want to remove a computer that has already been discovered.
 
-The precise steps to limit or restrict discovery depend on the object, application, or feature that you want to exclude from discovery. However, the general procedure is the same: identify the discovery that you want to limit and create an override to disable the discovery. For information on how to create an override, see [How to Override a Rule or Monitor](../Topic/How-to-Override-a-Rule-or-Monitor.md).
+The precise steps to limit or restrict discovery depend on the object, application, or feature that you want to exclude from discovery. However, the general procedure is the same: identify the discovery that you want to limit and create an override to disable the discovery. For information on how to create an override, see [How to Override a Rule or Monitor](./How-to-Override-a-Rule-or-Monitor.md).
 
 The override to disable the discovery can apply to:
 
 -   All objects in the class that the discovery applies to. If you use this selection for your override, you disable the discovery completely.
 
--   A group. Group membership can be defined explicitly or dynamically. When you create a group, you save it to an unsealed management pack. However, an element in an unsealed management pack, such as an override, cannot reference an element in a different unsealed management pack, such as a group. If you are going to use a group to limit the application of an override, you must either save the group to the same unsealed management pack as the override, or you must seal the management pack that contains the group. For more information, see [Creating and Managing Groups](../Topic/Creating-and-Managing-Groups.md).
+-   A group. Group membership can be defined explicitly or dynamically. When you create a group, you save it to an unsealed management pack. However, an element in an unsealed management pack, such as an override, cannot reference an element in a different unsealed management pack, such as a group. If you are going to use a group to limit the application of an override, you must either save the group to the same unsealed management pack as the override, or you must seal the management pack that contains the group. For more information, see [Creating and Managing Groups](./Creating-and-Managing-Groups.md).
 
 -   One or more specific objects in the class that the discovery applies to. Using this method, you can select from discovered objects.
 
@@ -32,17 +32,19 @@ For example, you want to disable discovery of logical disks on management server
 After an object has been already discovered, if you want to delete the object and not let it be discovered again, disable the discovery for that object and then run the **Remove\-SCOMDisabledClassInstance** cmdlet in Operations Manager Shell. For help with this cmdlet, open Operations Manager Shell, and then type **Get\-Help Remove\-SCOMDisabledClassInstance**.
 
 ## See Also
-[Operations Manager Agent Installation Methods](../Topic/Operations-Manager-Agent-Installation-Methods.md)
-[Install Agent on Windows Using the Discovery Wizard](../Topic/Install-Agent-on-Windows-Using-the-Discovery-Wizard.md)
-[Install Agent on UNIX and Linux Using the Discovery Wizard](../Topic/Install-Agent-on-UNIX-and-Linux-Using-the-Discovery-Wizard.md)
-[Install Agent Using the MOMAgent.msi Setup Wizard](../Topic/Install-Agent-Using-the-MOMAgent.msi-Setup-Wizard.md)
-[Install Agent and Certificate on UNIX and Linux Computers Using the Command Line](../Topic/Install-Agent-and-Certificate-on-UNIX-and-Linux-Computers-Using-the-Command-Line.md)
-[Managing Certificates for UNIX and Linux Computers](../Topic/Managing-Certificates-for-UNIX-and-Linux-Computers.md)
-[Process Manual Agent Installations](../Topic/Process-Manual-Agent-Installations.md)
-[Install Agent Using the Command Line](../Topic/Install-Agent-Using-the-Command-Line.md)
-[Configuring Agents](../Topic/Configuring-Agents.md)
-[Examples of Using MOMAgent Command to Manage Agents](../Topic/Examples-of-Using-MOMAgent-Command-to-Manage-Agents.md)
-[Upgrading and Uninstalling Agents on UNIX and Linux Computers](../Topic/Upgrading-and-Uninstalling-Agents-on-UNIX-and-Linux-Computers.md)
-[Manually Uninstalling Agents from UNIX and Linux Computers](../Topic/Manually-Uninstalling-Agents-from-UNIX-and-Linux-Computers.md)
-[Uninstall Agent from Windows-based Computers](../Topic/Uninstall-Agent-from-Windows-based-Computers.md)
+[Operations Manager Agent Installation Methods](./Operations-Manager-Agent-Installation-Methods.md)
+[Install Agent on Windows Using the Discovery Wizard](./Install-Agent-on-Windows-Using-the-Discovery-Wizard.md)
+[Install Agent on UNIX and Linux Using the Discovery Wizard](./Install-Agent-on-UNIX-and-Linux-Using-the-Discovery-Wizard.md)
+[Install Agent Using the MOMAgent.msi Setup Wizard](./Install-Agent-Using-the-MOMAgent.msi-Setup-Wizard.md)
+[Install Agent and Certificate on UNIX and Linux Computers Using the Command Line](./Install-Agent-and-Certificate-on-UNIX-and-Linux-Computers-Using-the-Command-Line.md)
+[Managing Certificates for UNIX and Linux Computers](./Managing-Certificates-for-UNIX-and-Linux-Computers.md)
+[Process Manual Agent Installations](./Process-Manual-Agent-Installations.md)
+[Install Agent Using the Command Line](./Install-Agent-Using-the-Command-Line.md)
+[Configuring Agents](./Configuring-Agents.md)
+[Examples of Using MOMAgent Command to Manage Agents](./Examples-of-Using-MOMAgent-Command-to-Manage-Agents.md)
+[Upgrading and Uninstalling Agents on UNIX and Linux Computers](./Upgrading-and-Uninstalling-Agents-on-UNIX-and-Linux-Computers.md)
+[Manually Uninstalling Agents from UNIX and Linux Computers](./Manually-Uninstalling-Agents-from-UNIX-and-Linux-Computers.md)
+[Uninstall Agent from Windows-based Computers](./Uninstall-Agent-from-Windows-based-Computers.md)
+
+
 

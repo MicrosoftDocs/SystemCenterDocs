@@ -59,14 +59,15 @@ To resolve this issue, perform the following steps:
 3.  If the issue persists, try the configuration again with a File Descriptor limit of 2048, and then restart the agent. If the process continues to exhaust File Descriptors with the 2048 limit set, contact support.
 
 ## See Also
-[Using Templates for Additional Monitoring of UNIX and Linux](../Topic/Using-Templates-for-Additional-Monitoring-of-UNIX-and-Linux.md)
-[Troubleshooting UNIX and Linux Monitoring](../Topic/Troubleshooting-UNIX-and-Linux-Monitoring.md)
-[Accessing UNIX and Linux Computers in Operations Manager](../Topic/Accessing-UNIX-and-Linux-Computers-in-Operations-Manager.md)
-[Required Capabilities for UNIX and Linux Accounts](../Topic/Required-Capabilities-for-UNIX-and-Linux-Accounts.md)
-[Management Pack Issues](../Topic/Management-Pack-Issues.md)
-[Certificate Issues](../Topic/Certificate-Issues.md)
-[Logging and Debugging](../Topic/Logging-and-Debugging.md)
-[Managing Certificates for UNIX and Linux Computers](../Topic/Managing-Certificates-for-UNIX-and-Linux-Computers.md)
-[Managing Resource Pools for UNIX and Linux Computers](../Topic/Managing-Resource-Pools-for-UNIX-and-Linux-Computers.md)
-[Install Agent on UNIX and Linux Using the Discovery Wizard](../Topic/Install-Agent-on-UNIX-and-Linux-Using-the-Discovery-Wizard.md)
+[Using Templates for Additional Monitoring of UNIX and Linux](./Using-Templates-for-Additional-Monitoring-of-UNIX-and-Linux.md)
+[Troubleshooting UNIX and Linux Monitoring](./Troubleshooting-UNIX-and-Linux-Monitoring.md)
+[Accessing UNIX and Linux Computers in Operations Manager](./Accessing-UNIX-and-Linux-Computers-in-Operations-Manager.md)
+[Required Capabilities for UNIX and Linux Accounts](./Required-Capabilities-for-UNIX-and-Linux-Accounts.md)
+[Management Pack Issues](./Management-Pack-Issues.md)
+[Certificate Issues](./Certificate-Issues.md)
+[Logging and Debugging](./Logging-and-Debugging.md)
+[Managing Certificates for UNIX and Linux Computers](./Managing-Certificates-for-UNIX-and-Linux-Computers.md)
+[Managing Resource Pools for UNIX and Linux Computers](./Managing-Resource-Pools-for-UNIX-and-Linux-Computers.md)
+[Install Agent on UNIX and Linux Using the Discovery Wizard](./Install-Agent-on-UNIX-and-Linux-Using-the-Discovery-Wizard.md)
+
 

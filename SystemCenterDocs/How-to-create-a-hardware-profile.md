@@ -8,7 +8,7 @@ ms.topic: article
 ms.assetid: 7ea7a41f-a294-43a8-a768-f11180ebebd6
 ---
 # How to create a hardware profile
-You can use the following procedure to create a hardware profile in [!INCLUDE[vmm12sp1_long](../Token/vmm12sp1_long_md.md)]. A hardware profile specifies the hardware settings that you want the virtual machine to use when the virtual machine is created and deployed.
+You can use the following procedure to create a hardware profile in [!INCLUDE[vmm12sp1_long](./Token/vmm12sp1_long_md.md)]. A hardware profile specifies the hardware settings that you want the virtual machine to use when the virtual machine is created and deployed.
 
 ### To create a hardware profile
 
@@ -20,7 +20,7 @@ You can use the following procedure to create a hardware profile in [!INCLUDE[vm
 
 3.  On the **General** tab, in the **Name** box, enter a name for the hardware profile. For example, enter **8 GB 2 processor server**.
 
-    In the **Generation** box, select **Generation 1** or **Generation 2**. \(For more information, see [Understanding generation 1 and generation 2 virtual machines in VMM](../Topic/Understanding-generation-1-and-generation-2-virtual-machines-in-VMM.md).\)
+    In the **Generation** box, select **Generation 1** or **Generation 2**. \(For more information, see [Understanding generation 1 and generation 2 virtual machines in VMM](./Understanding-generation-1-and-generation-2-virtual-machines-in-VMM.md).\)
 
 4.  Click the **Hardware Profile** tab, and then configure the desired settings. For example, you can configure the following settings:
 
@@ -35,7 +35,7 @@ You can use the following procedure to create a hardware profile in [!INCLUDE[vm
     -   Which capability profiles to use
 
     > [!NOTE]
-    > -   If you want to deploy the virtual machine to a private cloud, you must select a capability profile that is supported by the private cloud. For more information about capability profiles, see [How to create a private cloud from host groups in VMM](../Topic/How-to-create-a-private-cloud-from-host-groups-in-VMM.md).
+    > -   If you want to deploy the virtual machine to a private cloud, you must select a capability profile that is supported by the private cloud. For more information about capability profiles, see [How to create a private cloud from host groups in VMM](./How-to-create-a-private-cloud-from-host-groups-in-VMM.md).
     > -   The hardware options that are available are those of the generation that you selected in the previous step.
 
     After you have made your selections, click **OK**.
@@ -45,7 +45,8 @@ You can use the following procedure to create a hardware profile in [!INCLUDE[vm
     The hardware profile appears in the **Profiles** pane.
 
 ## See Also
-[Creating profiles and templates in VMM](../Topic/Creating-profiles-and-templates-in-VMM.md)
-[Managing the VMM library and its resources](../Topic/Managing-the-VMM-library-and-its-resources.md)
-[Managing fabric resources with VMM](../Topic/Managing-fabric-resources-with-VMM.md)
+[Creating profiles and templates in VMM](./Creating-profiles-and-templates-in-VMM.md)
+[Managing the VMM library and its resources](./Managing-the-VMM-library-and-its-resources.md)
+[Managing fabric resources with VMM](./Managing-fabric-resources-with-VMM.md)
+
 

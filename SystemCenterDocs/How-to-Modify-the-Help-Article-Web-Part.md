@@ -11,11 +11,11 @@ ms.topic: article
 ms.assetid: 7e28bd59-37b8-4eb2-a1af-6bee5d853ec2
 ---
 # How to Modify the Help Article Web Part
-You can edit SharePoint Web parts of the [!INCLUDE[smssp](../Token/smssp_md.md)] in order to modify the [!INCLUDE[smshort](../Token/smshort_md.md)] help article web part, which end users use to search for knowledge articles. However, customization is limited in this example.
+You can edit SharePoint Web parts of the [!INCLUDE[smssp](./Token/smssp_md.md)] in order to modify the [!INCLUDE[smshort](./Token/smshort_md.md)] help article web part, which end users use to search for knowledge articles. However, customization is limited in this example.
 
 ### To modify the help article web part
 
-1.  Start a browser, and connect to the [!INCLUDE[smssp](../Token/smssp_md.md)] home page, for example, http:\/\/<WebServerName>:82\/SMPortal.
+1.  Start a browser, and connect to the [!INCLUDE[smssp](./Token/smssp_md.md)] home page, for example, http:\/\/<WebServerName>:82\/SMPortal.
 
 2.  Click **Help Articles**, and then in the upper left corner, click **Site Actions**.
 
@@ -38,5 +38,6 @@ You can edit SharePoint Web parts of the [!INCLUDE[smssp](../Token/smssp_md.md)]
 5.  Click **OK** to close the **Edit Web Part** box, and then click **Save & Close** to close the Web part page editor.
 
 ## See Also
-[Managing the System Center 2012 - Service Manager Self-Service Portal](../Topic/Managing-the-System-Center-2012---Service-Manager-Self-Service-Portal.md)
+[Managing the System Center 2012 - Service Manager Self-Service Portal](./Managing-the-System-Center-2012---Service-Manager-Self-Service-Portal.md)
+
 

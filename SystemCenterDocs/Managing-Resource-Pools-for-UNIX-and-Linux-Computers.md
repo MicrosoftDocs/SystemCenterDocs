@@ -16,7 +16,7 @@ You can specify the resource pool that manages a particular UNIX or Linux comput
 The following procedures show how to change a resource pool for a managed UNIX or Linux computer, and how to configure certificates for a resource pool. Configuring certificates is required to maintain high availability in resource pools and must be performed whenever a resource pool is created and when a management server is added to a resource pool.
 
 ## Changing Resource Pools
-Changing a resource pool for a UNIX or Linux computer is different than modifying the set of management servers that are members of resource pool, as described in [How to Create a Resource Pool](../Topic/How-to-Create-a-Resource-Pool.md). The following procedure does not modify the members of a resource pool, only what the resource pool manages.
+Changing a resource pool for a UNIX or Linux computer is different than modifying the set of management servers that are members of resource pool, as described in [How to Create a Resource Pool](./How-to-Create-a-Resource-Pool.md). The following procedure does not modify the members of a resource pool, only what the resource pool manages.
 
 #### To change resource pools
 
@@ -73,11 +73,12 @@ To configure high availability, each management server in the resource pool must
 Perform this procedure whenever you add a new management server to the resource pool so that high availability is maintained.
 
 ## See Also
-[General Tasks in Operations Manager_1](../Topic/General-Tasks-in-Operations-Manager_1.md)
-[Managing Alerts](../Topic/Managing-Alerts.md)
-[How to Suspend Monitoring Temporarily by Using Maintenance Mode](../Topic/How-to-Suspend-Monitoring-Temporarily-by-Using-Maintenance-Mode.md)
-[Creating and Managing Groups](../Topic/Creating-and-Managing-Groups.md)
-[Running Tasks in Operations Manager](../Topic/Running-Tasks-in-Operations-Manager.md)
-[How to Create a Resource Pool](../Topic/How-to-Create-a-Resource-Pool.md)
-[Using Operations Manager Shell](../Topic/Using-Operations-Manager-Shell.md)
+[General Tasks in Operations Manager_1](./General-Tasks-in-Operations-Manager_1.md)
+[Managing Alerts](./Managing-Alerts.md)
+[How to Suspend Monitoring Temporarily by Using Maintenance Mode](./How-to-Suspend-Monitoring-Temporarily-by-Using-Maintenance-Mode.md)
+[Creating and Managing Groups](./Creating-and-Managing-Groups.md)
+[Running Tasks in Operations Manager](./Running-Tasks-in-Operations-Manager.md)
+[How to Create a Resource Pool](./How-to-Create-a-Resource-Pool.md)
+[Using Operations Manager Shell](./Using-Operations-Manager-Shell.md)
+
 

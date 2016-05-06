@@ -43,3 +43,4 @@ The following table lists the published data items.
 |Domain name credential|The domain name used by the activity when establishing a connection|
 |User name credential|The user name used by the activity when establishing a connection|
 
+

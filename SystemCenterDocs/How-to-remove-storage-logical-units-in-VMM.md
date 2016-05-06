@@ -8,10 +8,10 @@ ms.topic: article
 ms.assetid: 27d1eac7-6467-4dc1-b9f5-77a3d09ce3d0
 ---
 # How to remove storage logical units in VMM
-Use the following procedure to delete a logical unit that is under [!INCLUDE[vmm12sp1_long](../Token/vmm12sp1_long_md.md)] management.
+Use the following procedure to delete a logical unit that is under [!INCLUDE[vmm12sp1_long](./Token/vmm12sp1_long_md.md)] management.
 
 ## Prerequisites
-Ensure that the logical unit that you want to delete is not currently assigned to a server that is running Hyper\-V or is assigned as storage to a virtual machine. For information about how to remove an assigned logical unit from a server that is running Hyper\-V or a server in a host cluster, see [How to configure storage on a Hyper-V host in VMM](../Topic/How-to-configure-storage-on-a-Hyper-V-host-in-VMM.md) and [How to configure storage on a Hyper-V host cluster in VMM](../Topic/How-to-configure-storage-on-a-Hyper-V-host-cluster-in-VMM.md).
+Ensure that the logical unit that you want to delete is not currently assigned to a server that is running Hyper\-V or is assigned as storage to a virtual machine. For information about how to remove an assigned logical unit from a server that is running Hyper\-V or a server in a host cluster, see [How to configure storage on a Hyper-V host in VMM](./How-to-configure-storage-on-a-Hyper-V-host-in-VMM.md) and [How to configure storage on a Hyper-V host cluster in VMM](./How-to-configure-storage-on-a-Hyper-V-host-cluster-in-VMM.md).
 
 **Account requirements** You must be a member of the Administrator user role or a member of the Delegated Administrator user role to complete this procedure.
 
@@ -37,7 +37,8 @@ Ensure that the logical unit that you want to delete is not currently assigned t
     If removal is successful, the logical unit is deleted and is removed from the list in the **Classifications, Storage Pools, and Logical Units** pane.
 
 ## See Also
-[Configuring block storage in VMM](../Topic/Configuring-block-storage-in-VMM.md)
-[Managing storage resources and capacity with VMM](../Topic/Managing-storage-resources-and-capacity-with-VMM.md)
-[Managing fabric resources with VMM](../Topic/Managing-fabric-resources-with-VMM.md)
+[Configuring block storage in VMM](./Configuring-block-storage-in-VMM.md)
+[Managing storage resources and capacity with VMM](./Managing-storage-resources-and-capacity-with-VMM.md)
+[Managing fabric resources with VMM](./Managing-fabric-resources-with-VMM.md)
+
 

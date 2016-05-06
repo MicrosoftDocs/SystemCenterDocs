@@ -22,8 +22,8 @@ The table below lists the wizards that are available for WMI events.
 |||
 |-|-|
 |Management Pack Object|Wizards Available|
-|Monitors|Simple Event Detection using each of the standard [Event Monitor Reset](../Topic/Event-Monitor-Reset.md) methods|
-|Monitors|Repeated Event Detection using each of the standard [Event Monitor Reset](../Topic/Event-Monitor-Reset.md) methods|
+|Monitors|Simple Event Detection using each of the standard [Event Monitor Reset](./Event-Monitor-Reset.md) methods|
+|Monitors|Repeated Event Detection using each of the standard [Event Monitor Reset](./Event-Monitor-Reset.md) methods|
 |Rules|Alert Generating WMI event rule|
 |Rules|Event collection WMI event rule|
 
@@ -37,10 +37,10 @@ The **General** page includes general settings for the rule or monitor including
 |----------|---------------|
 |Name|The name used for the rule or monitor. For a rule, the name appears in the **Rules** view in the **Authoring** pane. When you create a view or report, you can select this name to use the data collected by it. For a monitor, the name appears in the Health Explorer of any target objects.|
 |Description|Optional description of the rule or monitor.|
-|Management Pack|Management pack file to store the rule or monitor.<br /><br />For more information on management packs, see [Selecting a Management Pack File](../Topic/Selecting-a-Management-Pack-File.md).|
+|Management Pack|Management pack file to store the rule or monitor.<br /><br />For more information on management packs, see [Selecting a Management Pack File](./Selecting-a-Management-Pack-File.md).|
 |Rule Category \(Rules only\)|The category for the rule. For an event collection rule, this should be **Event Collection**. For an alerting rule, this should be **Alert**.|
-|Parent Monitor \(Monitors only\)|The aggregate monitor that the monitor will be positioned under in the Health Explorer. For more information, see [Aggregate Monitors](../Topic/Aggregate-Monitors.md).|
-|Target|The class to use for the target of the rule or monitor. The rule or monitor will be run on any agent that has at least one instance of this class. For more information on targets, see [Understanding Classes and Objects](../Topic/Understanding-Classes-and-Objects.md).|
+|Parent Monitor \(Monitors only\)|The aggregate monitor that the monitor will be positioned under in the Health Explorer. For more information, see [Aggregate Monitors](./Aggregate-Monitors.md).|
+|Target|The class to use for the target of the rule or monitor. The rule or monitor will be run on any agent that has at least one instance of this class. For more information on targets, see [Understanding Classes and Objects](./Understanding-Classes-and-Objects.md).|
 |Rule is enabled<br /><br />Monitor is enabled|Specifies whether the rule or monitor is enabled.|
 
 ### WMI Configuration \/ WMI Event Provider
@@ -50,11 +50,11 @@ The **WMI Configuration** Page allows you to provide the WMI namespace, query, a
 |----------|---------------|
 |WMI Namespace|The namespace containing the class that is used in the WMI query.|
 |Query|WMI notification query that looks for the occurrence of a particular WMI event.|
-|Poll Interval|Specifies how frequently [!INCLUDE[om12short](../Token/om12short_md.md)] will poll WMI for the occurrence of the event. This value should be the same as the value used in the WITHIN clause of the notification query.|
+|Poll Interval|Specifies how frequently [!INCLUDE[om12short](./Token/om12short_md.md)] will poll WMI for the occurrence of the event. This value should be the same as the value used in the WITHIN clause of the notification query.|
 
 **WMI matching poll intervals**
 
-![](../Image/AuthGuide_04_WMIPollInterval.gif)
+![](/Image/AuthGuide_04_WMIPollInterval.gif)
 
 ### Build Expression
 The **Build Expression** page allows you to define a filter for the data coming from the WMI query. There will be a single **Build Expression** page for a WMI event monitor using manual or timer reset. For a monitor using **WMI Event Reset**, there is an expression for each health state.
@@ -89,10 +89,10 @@ The **Auto Reset Timer** page is only available for timer reset monitors. It all
 The **Configure Health** page is only available for monitors. It allows you to specify the health state that will be set for each of the events. For a manual reset monitor, the **Manual Reset** condition will be **Healthy**, and you can specify whether the **Event Raised** condition will set the monitor to a **Warning** or a **Critical** state. For a **Timer Reset** or an **WMI Event Reset**, you can specify the health state set by each event. The first event will typically set the monitor to **Warning** or **Critical** while the second event or the timer will set the monitor to **Healthy**.
 
 ### Configure Alerts
-The **Configure Alerts** page is only available for monitors and alerting rules. Its options are explained in [Alerts](../Topic/Alerts.md).
+The **Configure Alerts** page is only available for monitors and alerting rules. Its options are explained in [Alerts](./Alerts.md).
 
 ## Creating WMI event monitors and rules
-The following procedure shows how to create a WMI event monitor in [!INCLUDE[om12short](../Token/om12short_md.md)] with the following details:
+The following procedure shows how to create a WMI event monitor in [!INCLUDE[om12short](./Token/om12short_md.md)] with the following details:
 
 -   Runs on all agents with a particular service installed.
 
@@ -105,9 +105,9 @@ The following procedure shows how to create a WMI event monitor in [!INCLUDE[om1
 
 #### To create a WMI event monitor
 
-1.  If you don’t have a management pack for the application that you are monitoring, create one using the process in [Selecting a Management Pack File](../Topic/Selecting-a-Management-Pack-File.md).
+1.  If you don’t have a management pack for the application that you are monitoring, create one using the process in [Selecting a Management Pack File](./Selecting-a-Management-Pack-File.md).
 
-2.  Create a new target using the process in [To create a Windows Service template](../Topic/Windows-Service-Template.md#CreateWindowsServiceTemplate). You can use any service installed on a test agent for this template.
+2.  Create a new target using the process in [To create a Windows Service template](./Windows-Service-Template.md#CreateWindowsServiceTemplate). You can use any service installed on a test agent for this template.
 
 3.  In the Operations console, select the **Authoring** workspace.
 
@@ -225,8 +225,9 @@ The following procedure shows how to create a WMI event monitor in [!INCLUDE[om1
 17. Click **OK**.
 
 ## See Also
-[Event Monitors and Rules](../Topic/Event-Monitors-and-Rules.md)
-[Event Monitor Reset](../Topic/Event-Monitor-Reset.md)
-[Repeating Events](../Topic/Repeating-Events.md)
-[Alerts](../Topic/Alerts.md)
+[Event Monitors and Rules](./Event-Monitors-and-Rules.md)
+[Event Monitor Reset](./Event-Monitor-Reset.md)
+[Repeating Events](./Repeating-Events.md)
+[Alerts](./Alerts.md)
+
 

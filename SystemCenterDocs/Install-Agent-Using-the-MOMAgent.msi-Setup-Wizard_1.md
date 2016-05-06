@@ -11,7 +11,7 @@ ms.topic: article
 ms.assetid: 8b668552-daf7-4a09-8b0c-3da181e979d1
 ---
 # Install Agent Using the MOMAgent.msi Setup Wizard_1
-Use the following procedure to deploy the [!INCLUDE[scom_threshold_1](../Token/scom_threshold_1_md.md)] agent on computers running Windows by using the MOMAgent.msi setup wizard. For a list of the supported operating system versions, see [Supported Configurations](http://go.microsoft.com/fwlink/p/?LinkID=223642).
+Use the following procedure to deploy the [!INCLUDE[scom_threshold_1](./Token/scom_threshold_1_md.md)] agent on computers running Windows by using the MOMAgent.msi setup wizard. For a list of the supported operating system versions, see [Supported Configurations](http://go.microsoft.com/fwlink/p/?LinkID=223642).
 
 Before you use the Setup Wizard, ensure the following conditions are met:
 
@@ -61,4 +61,5 @@ Before you use the Setup Wizard, ensure the following conditions are met:
 10. On the **Ready to Install** page, review the settings and then click **Install** to display the **Installing System Center Operations Manager Agent** page.
 
 11. When the **Completing the Operations Manager Agent Setup Wizard** page appears, click **Finish**.
+
 

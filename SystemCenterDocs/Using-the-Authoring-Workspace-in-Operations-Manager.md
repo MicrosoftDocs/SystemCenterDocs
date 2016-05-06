@@ -48,12 +48,13 @@ The Management Pack Objects section provides access to the different elements th
 |Views|*Views* display managed objects and collected data in the Operations Console.<br /><br />Views are created and modified in the Monitoring workspace. This option displays the existing views available for each target class.|
 
 ## See Also
-[Using the Reporting Workspace in Operations Manager](../Topic/Using-the-Reporting-Workspace-in-Operations-Manager.md)
-[Using the Administration Workspace in Operations Manager](../Topic/Using-the-Administration-Workspace-in-Operations-Manager.md)
-[Using My Workspace in Operations Manager](../Topic/Using-My-Workspace-in-Operations-Manager.md)
-[Using Health Explorer in Operations Manager](../Topic/Using-Health-Explorer-in-Operations-Manager.md)
-[Using the Monitoring Workspace in Operations Manager](../Topic/Using-the-Monitoring-Workspace-in-Operations-Manager.md)
-[How to Connect to the Web Console](../Topic/How-to-Connect-to-the-Web-Console.md)
-[How to Connect to the Operations Console](../Topic/How-to-Connect-to-the-Operations-Console.md)
-[Using the Operations Manager Consoles](../Topic/Using-the-Operations-Manager-Consoles.md)
+[Using the Reporting Workspace in Operations Manager](./Using-the-Reporting-Workspace-in-Operations-Manager.md)
+[Using the Administration Workspace in Operations Manager](./Using-the-Administration-Workspace-in-Operations-Manager.md)
+[Using My Workspace in Operations Manager](./Using-My-Workspace-in-Operations-Manager.md)
+[Using Health Explorer in Operations Manager](./Using-Health-Explorer-in-Operations-Manager.md)
+[Using the Monitoring Workspace in Operations Manager](./Using-the-Monitoring-Workspace-in-Operations-Manager.md)
+[How to Connect to the Web Console](./How-to-Connect-to-the-Web-Console.md)
+[How to Connect to the Operations Console](./How-to-Connect-to-the-Operations-Console.md)
+[Using the Operations Manager Consoles](./Using-the-Operations-Manager-Consoles.md)
+
 

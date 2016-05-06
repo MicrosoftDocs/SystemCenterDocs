@@ -27,5 +27,6 @@ Runbook access permissions are set through the Runbook Designer. By default, onl
 5.  To close the **Permissions for Runbook** dialog box and save any changes, click **OK**.
 
 ## See Also
-[Runbook Concepts](../Topic/Runbook-Concepts.md)
+[Runbook Concepts](./Runbook-Concepts.md)
+
 

@@ -26,11 +26,11 @@ Each of the command\-line options are described in the following table.
 |Option|Description|
 |----------|---------------|
 |Management Pack File Name|The full name of the .xml file to seal. If the file is not in the current directory, you must include the full path to the file. If the path includes a space, you must enclose it in quotes.|
-|Include Path|The path to a directory containing .mp files that are referenced by the management pack that you are sealing. For more information, see [Management Pack References](../Topic/How-to-Seal-a-Management-Pack-File.md#MPReferences).|
-|Key File Path|The file containing the private and public key. For more information, see [Key File](../Topic/How-to-Seal-a-Management-Pack-File.md#KeyFile).|
+|Include Path|The path to a directory containing .mp files that are referenced by the management pack that you are sealing. For more information, see [Management Pack References](./How-to-Seal-a-Management-Pack-File.md#MPReferences).|
+|Key File Path|The file containing the private and public key. For more information, see [Key File](./How-to-Seal-a-Management-Pack-File.md#KeyFile).|
 |Company Name|The name of your company. If it includes a space, you must enclose it in quotes.|
 |Output Directory|The directory to store the output file. If not specified, the current directory is used.|
-|DelaySign|If this option is used, only the public key is used. For more information, see [Delayed Signing](../Topic/How-to-Seal-a-Management-Pack-File.md#DelayedSigning).|
+|DelaySign|If this option is used, only the public key is used. For more information, see [Delayed Signing](./How-to-Seal-a-Management-Pack-File.md#DelayedSigning).|
 |Copyright text|Text to include for copyright information. While this option is functional, the text is not currently accessible from Operations Manager.|
 
 ## Example
@@ -74,14 +74,15 @@ Management pack files created in the Operations console are unsealed. You can us
 
 #### To seal a management pack file that was created in the Operations console
 
-1.  Export the management pack file to an .xml file. For more information, see [How to Export an Operations Manager Management Pack](../Topic/How-to-Export-an-Operations-Manager-Management-Pack.md).
+1.  Export the management pack file to an .xml file. For more information, see [How to Export an Operations Manager Management Pack](./How-to-Export-an-Operations-Manager-Management-Pack.md).
 
-2.  Seal the XML code. For more information, see [MPSeal Syntax](../Topic/How-to-Seal-a-Management-Pack-File.md#MPSeal).
+2.  Seal the XML code. For more information, see [MPSeal Syntax](./How-to-Seal-a-Management-Pack-File.md#MPSeal).
 
-3.  Delete the management pack file from the management group. For more information, see [How to Remove an Operations Manager Management Pack](../Topic/How-to-Remove-an-Operations-Manager-Management-Pack.md).
+3.  Delete the management pack file from the management group. For more information, see [How to Remove an Operations Manager Management Pack](./How-to-Remove-an-Operations-Manager-Management-Pack.md).
 
-4.  Import the .mp file created by MPSeal. For more information, see [How to Import an Operations Manager Management Pack](../Topic/How-to-Import-an-Operations-Manager-Management-Pack.md).
+4.  Import the .mp file created by MPSeal. For more information, see [How to Import an Operations Manager Management Pack](./How-to-Import-an-Operations-Manager-Management-Pack.md).
 
 ## See Also
-[Sealed Management Pack Files](../Topic/Sealed-Management-Pack-Files.md)
+[Sealed Management Pack Files](./Sealed-Management-Pack-Files.md)
+
 

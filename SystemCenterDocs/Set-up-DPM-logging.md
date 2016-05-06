@@ -51,3 +51,4 @@ Mappings between some of the log binary names and services are summarized in the
 |SQL EUR Client|EurClient|Installed on machines where SQL EUR client is installed. Logs information about connecting to DPMserver, triggering and canceling recovery etc.<br /><br />Logs at: %USERPROFILE%\\AppData\\Roaming\\Microsoft\\Microsoft System Center Data ProtectionManager 2012\\|
 |Laptop Client UI|DPMClientUI|Logs about various actions triggered from DPM client UI and failures.<br /><br />Logs at: %USERPROFILE%\\AppData\\Roaming\\Microsoft\\Microsoft System Center Data ProtectionManager 2012\\|
 
+

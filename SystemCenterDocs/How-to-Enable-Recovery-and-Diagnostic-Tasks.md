@@ -29,18 +29,19 @@ Some monitors have diagnostic or recovery tasks that are disabled by default. Yo
 
 3.  On the **Diagnostic and Recovery** tab, in the **Configure diagnostic tasks** or **Configure recovery tasks** section, ensure the desired task is selected and then click **Edit**.
 
-4.  On the **Overrides** tab, click **Override**. You can choose to override this monitor for objects of a specific type or for all objects within a group. After you choose which group or object type to override, the **Override Properties** dialog box opens. For more information about applying an override, see [Using Classes and Groups for Overrides in Operations Manager](../Topic/Using-Classes-and-Groups-for-Overrides-in-Operations-Manager.md).
+4.  On the **Overrides** tab, click **Override**. You can choose to override this monitor for objects of a specific type or for all objects within a group. After you choose which group or object type to override, the **Override Properties** dialog box opens. For more information about applying an override, see [Using Classes and Groups for Overrides in Operations Manager](./Using-Classes-and-Groups-for-Overrides-in-Operations-Manager.md).
 
 5.  In the **Override\-controlled parameters** section, click **Enabled** and set the override value to **True**.
 
-6.  Either select a management pack from the **Select destination management pack** list or create a new unsealed management pack by clicking **New**. For more information about selecting a destination management pack, see [Creating a Management Pack for Overrides](../Topic/Creating-a-Management-Pack-for-Overrides.md).
+6.  Either select a management pack from the **Select destination management pack** list or create a new unsealed management pack by clicking **New**. For more information about selecting a destination management pack, see [Creating a Management Pack for Overrides](./Creating-a-Management-Pack-for-Overrides.md).
 
 7.  Click **OK**. Close the open properties windows.
 
 ## See Also
-[Diagnostic and Recovery Tasks](../Topic/Diagnostic-and-Recovery-Tasks.md)
-[Using Classes and Groups for Overrides in Operations Manager](../Topic/Using-Classes-and-Groups-for-Overrides-in-Operations-Manager.md)
-[How to Override a Rule or Monitor](../Topic/How-to-Override-a-Rule-or-Monitor.md)
-[How to Enable or Disable a Rule or Monitor](../Topic/How-to-Enable-or-Disable-a-Rule-or-Monitor.md)
-[Using the Enforced Attribute in Overrides](../Topic/Using-the-Enforced-Attribute-in-Overrides.md)
+[Diagnostic and Recovery Tasks](./Diagnostic-and-Recovery-Tasks.md)
+[Using Classes and Groups for Overrides in Operations Manager](./Using-Classes-and-Groups-for-Overrides-in-Operations-Manager.md)
+[How to Override a Rule or Monitor](./How-to-Override-a-Rule-or-Monitor.md)
+[How to Enable or Disable a Rule or Monitor](./How-to-Enable-or-Disable-a-Rule-or-Monitor.md)
+[Using the Enforced Attribute in Overrides](./Using-the-Enforced-Attribute-in-Overrides.md)
+
 

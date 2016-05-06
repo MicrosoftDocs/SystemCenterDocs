@@ -11,7 +11,7 @@ ms.assetid: 2c3ae9c6-2d4b-4b0d-9c88-23db34a2b5f8
 This section provides information on major concepts to consider in the design and planning phase. This document provides high level scenarios, and points to details found throughout the [Deployment Guide for System Center 2012 – Operations Manager](http://go.microsoft.com/fwlink/p/?LinkID=213291) as well as the [Operations Manager Sizing Helper](http://go.microsoft.com/fwlink/?LinkId=231853) and specific concepts and procedures found in the [Operations Guide for System Center 2012 – Operations Manager](http://go.microsoft.com/fwlink/p/?LinkID=207751).
 
 ## Before You Begin
-Before deploying, there are several sources of information you should read that are helpful for gaining context about [!INCLUDE[om12short](../Token/om12short_md.md)] functionality and requirements:
+Before deploying, there are several sources of information you should read that are helpful for gaining context about [!INCLUDE[om12short](./Token/om12short_md.md)] functionality and requirements:
 
 -   [Getting Started](assetId:///78fae5f9-1e9f-409a-9760-976aa419affc)
 
@@ -26,11 +26,11 @@ This document contains the following sections:
 
 -   [Considerations when Upgrading to System Center 2012 \- Operations Manager](assetId:///c8df800c-8197-41cd-9611-2943bc3a0508)
 
-    Covers key concepts and considerations for upgrading to [!INCLUDE[om12long](../Token/om12long_md.md)]
+    Covers key concepts and considerations for upgrading to [!INCLUDE[om12long](./Token/om12long_md.md)]
 
 -   [Considerations for a Clean Installation of System Center 2012 – Operations Manager](assetId:///8e6033b2-9f4e-4b2b-8deb-b303f83f935a)
 
-    Covers key concepts and common configurations for a new, clean installation of [!INCLUDE[om12long](../Token/om12long_md.md)]
+    Covers key concepts and common configurations for a new, clean installation of [!INCLUDE[om12long](./Token/om12long_md.md)]
 
 -   [Considerations when Designing a Management Group for Network Monitoring](assetId:///50d910ac-cb58-4798-9258-4359e44cbc7d)
 
@@ -43,4 +43,5 @@ This document contains the following sections:
 -   [Considerations for High Availability and Disaster Recovery](assetId:///864d988e-1d0b-459f-9d95-65b6bfe022e1)
 
     Covers key concepts to consider when designing for disaster recovery
+
 

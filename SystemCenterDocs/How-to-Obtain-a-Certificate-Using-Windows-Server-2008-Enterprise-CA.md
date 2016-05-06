@@ -212,7 +212,7 @@ The high\-level process to obtain a certificate from an Enterprise certification
 
 3.  In the **Run** dialog box, type **cmd**, and then click **OK**.
 
-4.  At the command prompt, type **<***drive\_letter***>:** \(where <*drive\_letter*> is the drive where the [!INCLUDE[om12short](../Token/om12short_md.md)] installation media is located\), and then press ENTER.
+4.  At the command prompt, type **<***drive\_letter***>:** \(where <*drive\_letter*> is the drive where the [!INCLUDE[om12short](./Token/om12short_md.md)] installation media is located\), and then press ENTER.
 
 5.  Type **cd\\SupportTools\\i386**, and then press ENTER.
 
@@ -227,4 +227,5 @@ The high\-level process to obtain a certificate from an Enterprise certification
 
 ## See Also
 [Authentication and Data Encryption for Windows Computers](assetId:///8ee895a9-7bac-4274-80b8-092475a83c67)
+
 

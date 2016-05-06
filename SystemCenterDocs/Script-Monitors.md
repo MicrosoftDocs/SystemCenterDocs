@@ -11,7 +11,7 @@ ms.topic: article
 ms.assetid: e411a40f-a71e-47a9-9b41-f5f1f8bfcfe4
 ---
 # Script Monitors
-Script monitors run a script on a schedule and use its output to determine the health state of the target object. Script monitors are useful for performing test transactions against applications or gathering information that is not accessible through other means. The results of the script are returned in a [Property Bags](../Topic/Script-Monitors-and-Rules.md#PropertyBags) that are evaluated against criteria to determine the resulting health state.
+Script monitors run a script on a schedule and use its output to determine the health state of the target object. Script monitors are useful for performing test transactions against applications or gathering information that is not accessible through other means. The results of the script are returned in a [Property Bags](./Script-Monitors-and-Rules.md#PropertyBags) that are evaluated against criteria to determine the resulting health state.
 
 \[Conceptual view of script monitor\]
 
@@ -24,8 +24,8 @@ When you run a script monitor wizard, you will need to provide values for option
 |----------|---------------|
 |Name|The name used for the monitor. This appears in the Health Explorer for each target object.|
 |Description|Optional description of the monitor.|
-|Management Pack|Management pack to store the classes, monitors, and rules created by the template.<br /><br />For more information on management packs, see [Selecting a Management Pack File](../Topic/Selecting-a-Management-Pack-File.md).|
-|Monitor target|The class to use for the target of the monitor. The monitor will be run on any agent that has at least one instance of this class, and the health of those objects will be affected by the health of this monitor. For more information on targets, see [Understanding Classes and Objects](../Topic/Understanding-Classes-and-Objects.md).|
+|Management Pack|Management pack to store the classes, monitors, and rules created by the template.<br /><br />For more information on management packs, see [Selecting a Management Pack File](./Selecting-a-Management-Pack-File.md).|
+|Monitor target|The class to use for the target of the monitor. The monitor will be run on any agent that has at least one instance of this class, and the health of those objects will be affected by the health of this monitor. For more information on targets, see [Understanding Classes and Objects](./Understanding-Classes-and-Objects.md).|
 |Parent Monitor|The aggregate monitor that this monitor will be placed under in the Health Explorer.|
 |Monitor is enabled|If checked, the monitor is enabled and the script will run according to the schedule.<br /><br />If unchecked, the monitor is not enabled and the script will not run. The monitor can be enabled for a group of target objects by creating an override to enable the monitor.|
 
@@ -45,7 +45,7 @@ The **Script** page contains the body of the script itself and its parameters. Y
 |File Name|Name of the script. Must have either a .vbs or .js extension depending on its language. There is no requirement to make this name unique because each script is provided its own temporary directory on the agent.|
 |Timeout|The number of seconds that the script can run before the agent stops it. This prevents problem scripts from running continuously and putting excess overhead on the agent computer.<br /><br />The timeout value assigned to a script should allow enough time for the script to run under ordinary conditions, but should be less than the interval that the script is scheduled to run. If a script is configured to have a timeout value greater than its duration, then possibly multiple copies of the script could be running concurrently.|
 |Script|The body of the script.|
-|Parameters|Click to provide values for any arguments in the script. For more information, see [Script Arguments](../Topic/Script-Monitors-and-Rules.md#ScriptArguments).|
+|Parameters|Click to provide values for any arguments in the script. For more information, see [Script Arguments](./Script-Monitors-and-Rules.md#ScriptArguments).|
 
 ### Expressions
 Each required expression for the monitor will have its own page in the wizard. A two state monitor will have the following expressions:
@@ -63,7 +63,7 @@ A three state monitor will have the following expressions:
 -   Healthy Expression
 
 > [!NOTE]
-> Detailed information on expressions is available in [Expressions](../Topic/Expressions.md).
+> Detailed information on expressions is available in [Expressions](./Expressions.md).
 
 Each expression will typically compare the value of one or more of the properties from the script’s property bag to some value. Each expression must be different, and only one of the expressions should evaluate to True under any particular condition. In the next page of the wizard, you will associate each of the health states of the monitor with one of these expressions. When an expression evaluates to the True, the monitor will be set to that health state.
 
@@ -112,9 +112,9 @@ The monitor created in this procedure has the following characteristics:
 
 #### To create a two state script monitor
 
-1.  If you don’t have a management pack for the application that you are monitoring, create one using the process in [Selecting a Management Pack File](../Topic/Selecting-a-Management-Pack-File.md).
+1.  If you don’t have a management pack for the application that you are monitoring, create one using the process in [Selecting a Management Pack File](./Selecting-a-Management-Pack-File.md).
 
-2.  Create a new target using the process in [To create a Windows Service template](../Topic/Windows-Service-Template.md#CreateWindowsServiceTemplate). You can use any service installed on a test agent for this template.
+2.  Create a new target using the process in [To create a Windows Service template](./Windows-Service-Template.md#CreateWindowsServiceTemplate). You can use any service installed on a test agent for this template.
 
 3.  In the Operations console, select the **Authoring** workspace, and then select **Monitors**.
 
@@ -241,5 +241,6 @@ The monitor created in this procedure has the following characteristics:
 15. Click **Create**.
 
 ## See Also
-[Script Monitors and Rules](../Topic/Script-Monitors-and-Rules.md)
+[Script Monitors and Rules](./Script-Monitors-and-Rules.md)
+
 

@@ -25,3 +25,4 @@ A history of data warehouse jobs is collected as they run in Service Manager. Yo
 
 3.  Type **exit**, and then press ENTER.
 
+

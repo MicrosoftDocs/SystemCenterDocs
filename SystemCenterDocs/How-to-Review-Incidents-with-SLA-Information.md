@@ -15,9 +15,10 @@ You can use the following procedure to view incidents that have a service level 
 
 ### To review incidents with SLA information
 
-1.  In the [!INCLUDE[smcons](../Token/smcons_md.md)], click **Work Items**.
+1.  In the [!INCLUDE[smcons](./Token/smcons_md.md)], click **Work Items**.
 
 2.  In the **Work Items** pane, expand **Incident Management**, and then click **Incidents with Service Level Warning** or **Incidents with Service Level Breached**.
 
 3.  In the list of incidents, notice the time that is displayed for **Service Level Target**.
+
 

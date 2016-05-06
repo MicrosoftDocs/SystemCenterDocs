@@ -13,9 +13,9 @@ ms.assetid: a0d8f2b5-7b0e-4853-8072-9801c49ed6ce
 # Example SAML Assertion for Authentication in Service Provider Foundation
 
 > [!CAUTION]
-> This topic is outdated. In a [!INCLUDE[katal_1](../Token/katal_1_md.md)] environment, authentication is provided by the REST API. For more information, see [Windows Azure Pack Authentication Overview](http://msdn.microsoft.com/library/dn479300.aspx).
+> This topic is outdated. In a [!INCLUDE[katal_1](./Token/katal_1_md.md)] environment, authentication is provided by the REST API. For more information, see [Windows Azure Pack Authentication Overview](http://msdn.microsoft.com/library/dn479300.aspx).
 
-This topic shows an example of using a Security Assertion Markup Language \(SAML\) 2.0 assertion for providing authentication and token information to access tenant resources. In this scenario, this assertion would be provided by a client portal application to [!INCLUDE[spflong](../Token/spflong_md.md)] to authenticate access to tenant resources by a self\-service\-user \(SSU\).
+This topic shows an example of using a Security Assertion Markup Language \(SAML\) 2.0 assertion for providing authentication and token information to access tenant resources. In this scenario, this assertion would be provided by a client portal application to [!INCLUDE[spflong](./Token/spflong_md.md)] to authenticate access to tenant resources by a self\-service\-user \(SSU\).
 
 ## SAML 2.0 assertion example
 
@@ -71,6 +71,7 @@ This topic shows an example of using a Security Assertion Markup Language \(SAML
 ```
 
 ## See Also
-[Manage Certificates and User Roles in Service Provider Foundation](../Topic/Manage-Certificates-and-User-Roles-in-Service-Provider-Foundation.md)
+[Manage Certificates and User Roles in Service Provider Foundation](./Manage-Certificates-and-User-Roles-in-Service-Provider-Foundation.md)
 [Service Provider Foundation Developer's Guide](http://go.microsoft.com/fwlink/p/?LinkID=263700)
+
 

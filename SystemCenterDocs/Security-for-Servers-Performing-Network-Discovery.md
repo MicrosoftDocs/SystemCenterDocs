@@ -18,16 +18,17 @@ You must ensure the following firewall configuration for network monitoring:
 -   If your network devices are using a port other than 161 and 162, you need to open bi\-directional UDP traffic on these ports as well.
 
 > [!IMPORTANT]
-> Note for customers who used EMC Solutions for Microsoft System Center Operations Manager: EMC Smarts included tools to create an isolation layer to prevent denial of service attacks. In [!INCLUDE[om12long](../Token/om12long_md.md)], you need to protect your network against packet storms by using external tools.
+> Note for customers who used EMC Solutions for Microsoft System Center Operations Manager: EMC Smarts included tools to create an isolation layer to prevent denial of service attacks. In [!INCLUDE[om12long](./Token/om12long_md.md)], you need to protect your network against packet storms by using external tools.
 
 ## See Also
-[Monitoring Networks by Using Operations Manager](../Topic/Monitoring-Networks-by-Using-Operations-Manager.md)
-[How to Discover Network Devices in Operations Manager](../Topic/How-to-Discover-Network-Devices-in-Operations-Manager.md)
-[Network Device Discovery Settings](../Topic/Network-Device-Discovery-Settings.md)
-[Run As Accounts for Network Monitoring in Operations Manager](../Topic/Run-As-Accounts-for-Network-Monitoring-in-Operations-Manager.md)
-[How to Delete or Restore a Network Device in Operations Manager](../Topic/How-to-Delete-or-Restore-a-Network-Device-in-Operations-Manager.md)
-[Viewing Network Devices and Data in Operations Manager](../Topic/Viewing-Network-Devices-and-Data-in-Operations-Manager.md)
-[Tuning Network Monitoring](../Topic/Tuning-Network-Monitoring.md)
-[Network Devices Supported for Discovery by Operations Manager](../Topic/Network-Devices-Supported-for-Discovery-by-Operations-Manager.md)
-[Reports for Network Monitoring in Operations Manager](../Topic/Reports-for-Network-Monitoring-in-Operations-Manager.md)
+[Monitoring Networks by Using Operations Manager](./Monitoring-Networks-by-Using-Operations-Manager.md)
+[How to Discover Network Devices in Operations Manager](./How-to-Discover-Network-Devices-in-Operations-Manager.md)
+[Network Device Discovery Settings](./Network-Device-Discovery-Settings.md)
+[Run As Accounts for Network Monitoring in Operations Manager](./Run-As-Accounts-for-Network-Monitoring-in-Operations-Manager.md)
+[How to Delete or Restore a Network Device in Operations Manager](./How-to-Delete-or-Restore-a-Network-Device-in-Operations-Manager.md)
+[Viewing Network Devices and Data in Operations Manager](./Viewing-Network-Devices-and-Data-in-Operations-Manager.md)
+[Tuning Network Monitoring](./Tuning-Network-Monitoring.md)
+[Network Devices Supported for Discovery by Operations Manager](./Network-Devices-Supported-for-Discovery-by-Operations-Manager.md)
+[Reports for Network Monitoring in Operations Manager](./Reports-for-Network-Monitoring-in-Operations-Manager.md)
+
 

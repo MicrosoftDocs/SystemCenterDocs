@@ -11,7 +11,7 @@ ms.topic: article
 ms.assetid: 85abccbf-62b5-4f57-b04d-4f03d52b5fae
 ---
 # What Is in an Operations Manager Management Pack?
-Management packs typically contain monitoring settings for applications and services. After a management pack is imported into a management group, [!INCLUDE[om12long](../Token/om12long_md.md)] immediately begins monitoring objects based on default configurations and thresholds that are set by the management pack.
+Management packs typically contain monitoring settings for applications and services. After a management pack is imported into a management group, [!INCLUDE[om12long](./Token/om12long_md.md)] immediately begins monitoring objects based on default configurations and thresholds that are set by the management pack.
 
 Each management pack can contain any or all of the following parts:
 
@@ -56,7 +56,7 @@ The Operations Manager Operations console provides standard views such as State,
 ### Knowledge
 Knowledge is content, embedded in rules and monitors, that contains information from the management pack author about the causes of an alert and suggestions on how to fix the issue that caused an alert to be raised. Knowledge appears as text in the console, and its goal is to help an operator diagnose and fix problems. The text can include links to tasks, allowing the author of this knowledge to walk an operator through the recovery process. For example, the operator might first be instructed to run task A, and then based on the result of this task, run either task B or task C. Knowledge can also contain links to performance views and to reports, giving the operator direct access to information needed to solve a problem.
 
-Knowledge is referred to as *product knowledge* or *company knowledge*. Product knowledge is added to the management pack by the management pack author. Administrators can add their own knowledge to rules and monitors to expand the troubleshooting information and provide company\-specific information for operators, which is known as company knowledge. For more information on adding company knowledge to a management pack, see [How to Add Knowledge to a Management Pack](../Topic/How-to-Add-Knowledge-to-a-Management-Pack.md).
+Knowledge is referred to as *product knowledge* or *company knowledge*. Product knowledge is added to the management pack by the management pack author. Administrators can add their own knowledge to rules and monitors to expand the troubleshooting information and provide company\-specific information for operators, which is known as company knowledge. For more information on adding company knowledge to a management pack, see [How to Add Knowledge to a Management Pack](./How-to-Add-Knowledge-to-a-Management-Pack.md).
 
 ### Tasks
 A task is a script or other executable code that runs either on the management server or on the server, client, or other device that is being managed. Tasks can potentially perform any kind of activity, including restarting a failed application and deleting files. Like other aspects of a management pack, each task is associated with a particular managed class. For example, running chkdsk makes sense only on a disk drive while a task that restarts Microsoft Exchange Server is meaningful only on a computer that is running Exchange Server. If necessary, an operator can also run the same task simultaneously on multiple managed systems. Monitors can have two special kinds of tasks associated with them: diagnostic tasks that try to discover the cause of a problem, and recovery tasks that try to fix the problem. These tasks can be run automatically when the monitor enters an error state, providing an automated way to solve problems. They can also be run manually, because automated recovery isn’t always the preferred approach.
@@ -80,7 +80,7 @@ In general, management packs obtained from an application or hardware device ven
 Although you cannot change the settings in a sealed management pack, you can still customize the applied settings of a management pack after it is imported by using overrides or by creating additional settings such as rules, monitors, and tasks that supersede the management pack's default settings. All customizations that you create are saved to a separate management pack file.
 
 ## Management Pack Libraries and Dependencies
-Certain management packs are referred to as *libraries*, because they provide a foundation of classes on which other management packs depend. A management pack that you download from the Operations Manager Catalog might include a library management pack. Several library management packs are imported as part of the Operations Manager installation process. For a list of management packs imported during the installation of [!INCLUDE[om12short](../Token/om12short_md.md)], see [Management Packs Installed with Operations Manager](../Topic/Management-Packs-Installed-with-Operations-Manager.md).
+Certain management packs are referred to as *libraries*, because they provide a foundation of classes on which other management packs depend. A management pack that you download from the Operations Manager Catalog might include a library management pack. Several library management packs are imported as part of the Operations Manager installation process. For a list of management packs imported during the installation of [!INCLUDE[om12short](./Token/om12short_md.md)], see [Management Packs Installed with Operations Manager](./Management-Packs-Installed-with-Operations-Manager.md).
 
 A dependency exists when a management pack references other management packs. You must import all referenced management packs before you can import the management pack that depends on those management packs. Management packs include a management pack guide that should document the dependencies of the management pack. In addition, if you attempt to import a management pack and the management packs that it is dependent on are not present, the **Import Management Packs** dialog box will display a message that the management pack will fail to import and a list of the missing management packs. After you import a management pack, you can view its dependencies in the Operations console.
 
@@ -95,11 +95,12 @@ A dependency exists when a management pack references other management packs. Yo
     The **Dependencies** tab lists any management packs that the selected management pack depends on and any management packs that depend on the selected management pack.
 
 ## See Also
-[Creating a Management Pack for Overrides](../Topic/Creating-a-Management-Pack-for-Overrides.md)
-[Management Packs Installed with Operations Manager](../Topic/Management-Packs-Installed-with-Operations-Manager.md)
-[Management Pack Life Cycle](../Topic/Management-Pack-Life-Cycle.md)
-[How to Import an Operations Manager Management Pack](../Topic/How-to-Import-an-Operations-Manager-Management-Pack.md)
-[How to Remove an Operations Manager Management Pack](../Topic/How-to-Remove-an-Operations-Manager-Management-Pack.md)
-[How to Export an Operations Manager Management Pack](../Topic/How-to-Export-an-Operations-Manager-Management-Pack.md)
-[How to Add Knowledge to a Management Pack](../Topic/How-to-Add-Knowledge-to-a-Management-Pack.md)
+[Creating a Management Pack for Overrides](./Creating-a-Management-Pack-for-Overrides.md)
+[Management Packs Installed with Operations Manager](./Management-Packs-Installed-with-Operations-Manager.md)
+[Management Pack Life Cycle](./Management-Pack-Life-Cycle.md)
+[How to Import an Operations Manager Management Pack](./How-to-Import-an-Operations-Manager-Management-Pack.md)
+[How to Remove an Operations Manager Management Pack](./How-to-Remove-an-Operations-Manager-Management-Pack.md)
+[How to Export an Operations Manager Management Pack](./How-to-Export-an-Operations-Manager-Management-Pack.md)
+[How to Add Knowledge to a Management Pack](./How-to-Add-Knowledge-to-a-Management-Pack.md)
+
 

@@ -17,15 +17,15 @@ Namespaces define where application performance monitoring should go to collect 
 > Many large .NET Framework namespaces \(such as System.\* and Microsoft.\*\) are disabled by default. To enable them, you need to explicitly add them to the namespaces list as enabled namespaces. Additionally, adding namespaces can affect performance and you should add them only after careful testing.
 
 > [!NOTE]
-> [!INCLUDE[sc2012sp1note](../Token/sc2012sp1note_md.md)]**All namespaces** is present in the list and enabled for monitoring by default. However, **All namespaces**, does not include namespaces that have been explicitly disabled by the user or by the default configuration files.
+> [!INCLUDE[sc2012sp1note](./Token/sc2012sp1note_md.md)]**All namespaces** is present in the list and enabled for monitoring by default. However, **All namespaces**, does not include namespaces that have been explicitly disabled by the user or by the default configuration files.
 
-If a namespace is generating too many events, collection for that namespace is turned off by the agent automatically to prevent overloading the agend and an event is written on the agent in the [!INCLUDE[om12short](../Token/om12short_md.md)] event log. However, everything else will continue to run as expected.
+If a namespace is generating too many events, collection for that namespace is turned off by the agent automatically to prevent overloading the agend and an event is written on the agent in the [!INCLUDE[om12short](./Token/om12short_md.md)] event log. However, everything else will continue to run as expected.
 
 ## Add a Namespace
 
 #### To add a namespace
 
-1.  To open the .NET Application Performance Monitoring template, in the [!INCLUDE[om12short](../Token/om12short_md.md)] console, in the navigation pane, click the **Authoring** button, click **Management Pack Templates**, and then click **.NET Application Performance Monitoring**.
+1.  To open the .NET Application Performance Monitoring template, in the [!INCLUDE[om12short](./Token/om12short_md.md)] console, in the navigation pane, click the **Authoring** button, click **Management Pack Templates**, and then click **.NET Application Performance Monitoring**.
 
 2.  Right\-click the application group whose settings you want to modify, and then select **Properties**.
 
@@ -50,7 +50,7 @@ If a namespace is generating too many events, collection for that namespace is t
 
 #### To edit a namespace
 
-1.  To open the .NET Application Performance Monitoring template, in the [!INCLUDE[om12short](../Token/om12short_md.md)] console, in the navigation pane, click the **Authoring** button, click **Management Pack Templates**, and then click **.NET Application Performance Monitoring**.
+1.  To open the .NET Application Performance Monitoring template, in the [!INCLUDE[om12short](./Token/om12short_md.md)] console, in the navigation pane, click the **Authoring** button, click **Management Pack Templates**, and then click **.NET Application Performance Monitoring**.
 
 2.  Right click the application group whose settings you want to modify, and then select **Properties**.
 
@@ -67,7 +67,7 @@ If a namespace is generating too many events, collection for that namespace is t
 
 #### To remove a namespace
 
-1.  To open the .NET Application Performance Monitoring template, in the [!INCLUDE[om12short](../Token/om12short_md.md)] console, in the navigation pane, click the **Authoring** button, click **Management Pack Templates**, and then click **.NET Application Performance Monitoring**.
+1.  To open the .NET Application Performance Monitoring template, in the [!INCLUDE[om12short](./Token/om12short_md.md)] console, in the navigation pane, click the **Authoring** button, click **Management Pack Templates**, and then click **.NET Application Performance Monitoring**.
 
 2.  Right click the application group whose settings you want to modify, and then select **Properties**.
 
@@ -87,25 +87,25 @@ This setting is used to figure out what you do not know when you are troubleshoo
 > [!TIP]
 > It is best to enable all namespaces in a test environment before implementing it in a production environment as there is a performance penalty to monitoring all namespaces. When a test environment is not available, begin by measuring a single server’s baseline performance, and then enabling all namespaces on that single server. When you can determine that performance is not impacted, then roll out the setting to more servers.
 > 
-> [!INCLUDE[sc2012sp1note](../Token/sc2012sp1note_md.md)]**All namespaces** is in the list and enabled for monitoring by default. However, **All namespaces**, does not include namespaces that have been explicitly disabled.
+> [!INCLUDE[sc2012sp1note](./Token/sc2012sp1note_md.md)]**All namespaces** is in the list and enabled for monitoring by default. However, **All namespaces**, does not include namespaces that have been explicitly disabled.
 
 This example shows the difference in monitoring data when you change which namespaces are enabled.
 
 **Monitoring with no namespaces**
 
-![](../Image/AppAuth_Name.gif)
+![](/Image/AppAuth_Name.gif)
 
 Monitoring with no additional namespaces enabled, the execution tree shows that calls are going to WCF services, but has no details about the actual flow or where those calls are coming from. If a developer tries to investigate this issue and sees that the web service is called from multiple places, the information is incomplete and less useful in helping them find the true root cause.
 
 **Monitoring with specific namespaces**
 
-![](../Image/AppAuth_Namespaces2ExecTreeWithNamespaces.gif)
+![](/Image/AppAuth_Namespaces2ExecTreeWithNamespaces.gif)
 
 By adding the appropriate application specific namespaces, the execution tree shows more details about what is happening in the slow webpage.
 
 #### To enable or disable monitoring of all namespaces and classes
 
-1.  To open the .NET Application Performance Monitoring template, in the [!INCLUDE[om12short](../Token/om12short_md.md)] console, in the navigation pane, click the **Authoring** button, click **Management Pack Templates**, and then click **.NET Application Performance Monitoring**.
+1.  To open the .NET Application Performance Monitoring template, in the [!INCLUDE[om12short](./Token/om12short_md.md)] console, in the navigation pane, click the **Authoring** button, click **Management Pack Templates**, and then click **.NET Application Performance Monitoring**.
 
 2.  Right click the application group whose settings you want to modify, and then select **Properties**.
 
@@ -122,4 +122,5 @@ By adding the appropriate application specific namespaces, the execution tree sh
 
 ## See Also
 [Understanding and Using Assemblies and Namespaces in .NET](http://go.microsoft.com/fwlink/?LinkId=230965)
+
 

@@ -8,7 +8,7 @@ ms.topic: article
 ms.assetid: 65cfeb42-4516-42c9-8d33-1717e6cfc9a2
 ---
 # How to view and modify properties of a deployed virtual machine in VMM
-After a virtual machine has been deployed in [!INCLUDE[vmm12sp1_long](../Token/vmm12sp1_long_md.md)], you can view the properties of the virtual machine. You can modify some of the properties that you view in the properties dialog box. However, for some properties, the state of the virtual machine must be off to allow modifications.
+After a virtual machine has been deployed in [!INCLUDE[vmm12sp1_long](./Token/vmm12sp1_long_md.md)], you can view the properties of the virtual machine. You can modify some of the properties that you view in the properties dialog box. However, for some properties, the state of the virtual machine must be off to allow modifications.
 
 The IP addresses displayed in virtual machine properties include all addresses on a vNIC, not just the addresses that are in an IP pool.
 
@@ -29,6 +29,7 @@ The IP addresses displayed in virtual machine properties include all addresses o
     -   To view processor and memory: Click the **Hardware Configuration** tab, and in the results pane, under **General**, click **Processor** or **Memory**. If you need to, you can modify the number of processors and the amount of memory that is allocated.
 
 ## See Also
-[Creating and deploying virtual machines in VMM](../Topic/Creating-and-deploying-virtual-machines-in-VMM.md)
+[Creating and deploying virtual machines in VMM](./Creating-and-deploying-virtual-machines-in-VMM.md)
 [How to Create IP Address Pools for VM Networks in VMM](assetId:///ae6e919f-0308-4e2f-a8ad-8d97ccba77dc)
+
 

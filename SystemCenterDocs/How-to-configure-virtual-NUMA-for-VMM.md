@@ -8,7 +8,7 @@ ms.topic: article
 ms.assetid: 45ae8c7e-93e8-4e4a-b940-4be767e8c794
 ---
 # How to configure virtual NUMA for VMM
-With [!INCLUDE[vmm12sp1_long](../Token/vmm12sp1_long_md.md)] you can configure the virtual Non\-Uniform Memory Access \(NUMA\) features that were introduced in Hyper\-V in [!INCLUDE[win8_server_2](../Token/win8_server_2_md.md)]. For more information about these features, see [Deploying virtual NUMA for VMM](../Topic/Deploying-virtual-NUMA-for-VMM.md). This topic provides the following procedures for configuring virtual NUMA:
+With [!INCLUDE[vmm12sp1_long](./Token/vmm12sp1_long_md.md)] you can configure the virtual Non\-Uniform Memory Access \(NUMA\) features that were introduced in Hyper\-V in [!INCLUDE[win8_server_2](./Token/win8_server_2_md.md)]. For more information about these features, see [Deploying virtual NUMA for VMM](./Deploying-virtual-NUMA-for-VMM.md). This topic provides the following procedures for configuring virtual NUMA:
 
 1.  [Configuring virtual NUMA settings](#BKMK_VNUMA)—When a new virtual machine is created, Hyper\-V specifies the default settings for virtual NUMA. These settings are in sync with the NUMA topology of the Hyper\-V host. For example, if a host has 16 cores and 64 GB divided evenly between two NUMA nodes, with two NUMA nodes per physical processor socket, then by default, a virtual machine that was created on the host will have the **Maximum processors per virtual NUMA node** property set to 8, the **Maximum virtual NUMA nodes per socket** set to 2, and the **Maximum memory per virtual NUMA node \(MB\)** property set to 32 GB. You can modify the default values as required.
 
@@ -35,8 +35,9 @@ Use this procedure to enable or disable virtual NUMA spanning.
 1.  In the **Virtual NUMA** properties page, to enable spanning, select **Allow virtual machine to span hardware NUMA nodes**. Clear the check box to disable spanning.
 
 ## See Also
-[Deploying virtual NUMA for VMM](../Topic/Deploying-virtual-NUMA-for-VMM.md)
-[Configuring virtual machine options and settings](../Topic/Configuring-virtual-machine-options-and-settings.md)
-[Managing virtual machines with VMM](../Topic/Managing-virtual-machines-with-VMM.md)
-[Managing tenant resources with VMM](../Topic/Managing-tenant-resources-with-VMM.md)
+[Deploying virtual NUMA for VMM](./Deploying-virtual-NUMA-for-VMM.md)
+[Configuring virtual machine options and settings](./Configuring-virtual-machine-options-and-settings.md)
+[Managing virtual machines with VMM](./Managing-virtual-machines-with-VMM.md)
+[Managing tenant resources with VMM](./Managing-tenant-resources-with-VMM.md)
+
 

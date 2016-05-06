@@ -8,7 +8,7 @@ ms.topic: article
 ms.assetid: d88087e5-b517-428e-bde9-8df9fe9366a6
 ---
 # Operations Manager_1
-[!INCLUDE[om12long](../Token/om12long_md.md)] provides infrastructure monitoring that is flexible and cost\-effective, helps ensure the predictable performance and availability of vital applications, and offers comprehensive monitoring for your datacenter and cloud, both private and public.
+[!INCLUDE[om12long](./Token/om12long_md.md)] provides infrastructure monitoring that is flexible and cost\-effective, helps ensure the predictable performance and availability of vital applications, and offers comprehensive monitoring for your datacenter and cloud, both private and public.
 
 -   [Getting Started](assetId:///78fae5f9-1e9f-409a-9760-976aa419affc)
 
@@ -22,25 +22,25 @@ ms.assetid: d88087e5-b517-428e-bde9-8df9fe9366a6
 
 -   [System Requirements for System Center 2012 \- Operations Manager](assetId:///56d0b6b3-44ae-4663-bc43-29fcedb4058f)
 
-    Lists the hardware and software requirements for installing [!INCLUDE[om12short](../Token/om12short_md.md)].
+    Lists the hardware and software requirements for installing [!INCLUDE[om12short](./Token/om12short_md.md)].
 
 -   [Upgrading System Center 2012 SP1 \- Operations Manager to System Center 2012 R2](http://go.microsoft.com/fwlink/?LinkId=328375)
 
-    The procedure for upgrading from [!INCLUDE[sc2012sp1_long](../Token/sc2012sp1_long_md.md)] – [!INCLUDE[omblue_2](../Token/omblue_2_md.md)] to [!INCLUDE[omblue_1](../Token/omblue_1_md.md)].
+    The procedure for upgrading from [!INCLUDE[sc2012sp1_long](./Token/sc2012sp1_long_md.md)] – [!INCLUDE[omblue_2](./Token/omblue_2_md.md)] to [!INCLUDE[omblue_1](./Token/omblue_1_md.md)].
 
 -   [Upgrading System Center 2012 – Operations Manager to System Center 2012 SP1](http://go.microsoft.com/fwlink/?LinkId=328373)
 
-    The procedure for upgrading from [!INCLUDE[om12long](../Token/om12long_md.md)] to [!INCLUDE[sc2012sp1_long](../Token/sc2012sp1_long_md.md)] – [!INCLUDE[omblue_2](../Token/omblue_2_md.md)].
+    The procedure for upgrading from [!INCLUDE[om12long](./Token/om12long_md.md)] to [!INCLUDE[sc2012sp1_long](./Token/sc2012sp1_long_md.md)] – [!INCLUDE[omblue_2](./Token/omblue_2_md.md)].
 
 -   [Deployment Guide for Operations Manager 2012](assetId:///969a31d6-5ef2-4127-9cfe-0af66c981b6c)
 
-    The Deployment Guide contains installation procedures for multiple deployment scenarios and instructions for upgrading an Operations Manager 2007 R2 management group to [!INCLUDE[om12short](../Token/om12short_md.md)].
+    The Deployment Guide contains installation procedures for multiple deployment scenarios and instructions for upgrading an Operations Manager 2007 R2 management group to [!INCLUDE[om12short](./Token/om12short_md.md)].
 
--   [Operations Guide for System Center 2012 - Operations Manager](../Topic/Operations-Guide-for-System-Center-2012---Operations-Manager.md)
+-   [Operations Guide for System Center 2012 - Operations Manager](./Operations-Guide-for-System-Center-2012---Operations-Manager.md)
 
     The Operations Guide includes administrative, monitoring, reporting, and operating tasks typically performed by an administrator or operator. It follows the Deployment Guide in order of use during an Operations Manager implementation project, but does not assume that the administrator or operator participated in the installation of the Operations Manager infrastructure.
 
--   [Authoring for System Center 2012 - Operations Manager](../Topic/Authoring-for-System-Center-2012---Operations-Manager.md)
+-   [Authoring for System Center 2012 - Operations Manager](./Authoring-for-System-Center-2012---Operations-Manager.md)
 
     The Author’s Guide explains how to create rules, monitors, and monitoring solutions.
 
@@ -65,4 +65,5 @@ You can download a [copy of this technical documentation from the Microsoft Down
 
 ## See Also
 [Operations Manager Management Pack Guides](http://go.microsoft.com/fwlink/?LinkId=393573)
+
 

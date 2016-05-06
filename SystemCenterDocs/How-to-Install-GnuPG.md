@@ -17,5 +17,6 @@ GnuPG is an open source program used by the standard activities **PGP Encrypt Fi
 2.  Save **gpg.exe** and **iconv.dll** to the <System drive>:\\Program Files \(x86\)\\Common Files\\Microsoft System Center 2012\\Orchestrator\\Extensions\\Support\\Encryption folder on each runbook server and computer that is running the Runbook Designer.
 
 ## See Also
-[Perform Post-Installation Tasks](../Topic/Perform-Post-Installation-Tasks.md)
+[Perform Post-Installation Tasks](./Perform-Post-Installation-Tasks.md)
+
 

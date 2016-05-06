@@ -51,11 +51,12 @@ Use the following procedure to create a new action account. The new action accou
 12. Click **Save**.
 
 ## See Also
-[Managing Access in Operations Manager](../Topic/Managing-Access-in-Operations-Manager.md)
-[Operations Manager Accounts](../Topic/Operations-Manager-Accounts.md)
-[Implementing User Roles](../Topic/Implementing-User-Roles.md)
-[How to Manage the Report Server Unattended Execution Account in Operations Manager](../Topic/How-to-Manage-the-Report-Server-Unattended-Execution-Account-in-Operations-Manager.md)
-[Control Access by Using the Health Service Lockdown Tool in Operations Manager](../Topic/Control-Access-by-Using-the-Health-Service-Lockdown-Tool-in-Operations-Manager.md)
-[Accessing UNIX and Linux Computers in Operations Manager](../Topic/Accessing-UNIX-and-Linux-Computers-in-Operations-Manager.md)
-[Managing Run As Accounts and Profiles](../Topic/Managing-Run-As-Accounts-and-Profiles.md)
+[Managing Access in Operations Manager](./Managing-Access-in-Operations-Manager.md)
+[Operations Manager Accounts](./Operations-Manager-Accounts.md)
+[Implementing User Roles](./Implementing-User-Roles.md)
+[How to Manage the Report Server Unattended Execution Account in Operations Manager](./How-to-Manage-the-Report-Server-Unattended-Execution-Account-in-Operations-Manager.md)
+[Control Access by Using the Health Service Lockdown Tool in Operations Manager](./Control-Access-by-Using-the-Health-Service-Lockdown-Tool-in-Operations-Manager.md)
+[Accessing UNIX and Linux Computers in Operations Manager](./Accessing-UNIX-and-Linux-Computers-in-Operations-Manager.md)
+[Managing Run As Accounts and Profiles](./Managing-Run-As-Accounts-and-Profiles.md)
+
 

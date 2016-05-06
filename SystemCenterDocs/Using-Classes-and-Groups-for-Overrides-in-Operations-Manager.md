@@ -11,10 +11,10 @@ ms.topic: article
 ms.assetid: 65b166bc-2e18-41f3-8062-ca3f8e8b412b
 ---
 # Using Classes and Groups for Overrides in Operations Manager
-This topic describes the differences between classes and groups in [!INCLUDE[om12long](../Token/om12long_md.md)], and how workflows, such as rules and monitors, apply to each. The following sections define classes and groups, and provide examples for applying overrides with the available override options.
+This topic describes the differences between classes and groups in [!INCLUDE[om12long](./Token/om12long_md.md)], and how workflows, such as rules and monitors, apply to each. The following sections define classes and groups, and provide examples for applying overrides with the available override options.
 
 ## Classes
-In [!INCLUDE[om12short](../Token/om12short_md.md)], a *class* is a definition of an item that can be discovered and managed. A class can represent a computer, a database, a service, a disk, an application, or any other kind of object that requires monitoring. Monitors, rules, discoveries, overrides, and tasks can apply to a class. For example, **Windows Server 2003 Logical Disk** is a class that defines logical disks on a computer that is running the Windows Server 2003 operating system. A monitor that applies to the **Windows Server 2003 Logical Disk** class will be applied only to objects that meet that class definition.
+In [!INCLUDE[om12short](./Token/om12short_md.md)], a *class* is a definition of an item that can be discovered and managed. A class can represent a computer, a database, a service, a disk, an application, or any other kind of object that requires monitoring. Monitors, rules, discoveries, overrides, and tasks can apply to a class. For example, **Windows Server 2003 Logical Disk** is a class that defines logical disks on a computer that is running the Windows Server 2003 operating system. A monitor that applies to the **Windows Server 2003 Logical Disk** class will be applied only to objects that meet that class definition.
 
 > [!NOTE]
 > In the Operations console, the term *target* is used instead of *class*.
@@ -45,7 +45,7 @@ You have seen that classes are used to target workflows such as rules and monito
 
     When you select this option for your override, the override settings apply only to objects of a class other than the targeted class. The rule or monitor without the override settings continues to apply to all objects in the targeted class.
 
-Overrides that apply to a class are applied first, then overrides that apply to a group, and finally overrides that apply to a specific object. For more information, see [Using the Enforced Attribute in Overrides](../Topic/Using-the-Enforced-Attribute-in-Overrides.md).
+Overrides that apply to a class are applied first, then overrides that apply to a group, and finally overrides that apply to a specific object. For more information, see [Using the Enforced Attribute in Overrides](./Using-the-Enforced-Attribute-in-Overrides.md).
 
 ## How to Apply Overrides
 Here are some examples of when you would use the override options.
@@ -70,8 +70,9 @@ In this common scenario, you must perform the following two tasks:
 2.  Select to override **For a group**, **For a specific object of class:** *Class*, or **For all objects of another class**, and change **Enabled** to **True**. This enables the rule or monitor for members of that group, the specified object, or the selected class only.
 
 ## See Also
-[How to Override a Rule or Monitor](../Topic/How-to-Override-a-Rule-or-Monitor.md)
-[How to Enable or Disable a Rule or Monitor](../Topic/How-to-Enable-or-Disable-a-Rule-or-Monitor.md)
-[Using the Enforced Attribute in Overrides](../Topic/Using-the-Enforced-Attribute-in-Overrides.md)
-[How to Enable Recovery and Diagnostic Tasks](../Topic/How-to-Enable-Recovery-and-Diagnostic-Tasks.md)
+[How to Override a Rule or Monitor](./How-to-Override-a-Rule-or-Monitor.md)
+[How to Enable or Disable a Rule or Monitor](./How-to-Enable-or-Disable-a-Rule-or-Monitor.md)
+[Using the Enforced Attribute in Overrides](./Using-the-Enforced-Attribute-in-Overrides.md)
+[How to Enable Recovery and Diagnostic Tasks](./How-to-Enable-Recovery-and-Diagnostic-Tasks.md)
+
 

@@ -12,7 +12,7 @@ ms.assetid: 1e7e20b4-26e1-46b4-8427-650e62fe428e
 <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://ddue.schemas.microsoft.com/authoring/2003/5 http://dduestorage.blob.core.windows.net/ddueschema/developer.xsd">
   <introduction>
     <para>Your cluster environment and existing software update infrastructure must meet certain requirements before you can use Cluster-Aware Updating (CAU). For detailed information, see <legacyLink xlink:href="c4c50fef-cfa1-4844-8921-deeb7653d8ba">Requirements and Best Practices for Cluster-Aware Updating [WS8]</legacyLink>.</para>
-    <para>At any time, to verify that your cluster environment is ready for CAU, select the <ui>Analyze cluster updating readiness</ui> action in the CAU console. This action performs several tests to verify that your environment meets the prerequisites and some of the recommended configurations for using CAU. For example, the cluster must have quorum, and all cluster nodes must be running <token>winblue_server_2</token> or <token>win8_server_2</token>. The tests also detect common issues that can interfere with using CAU. After the tests complete, you can review the results and perform any necessary corrective actions.</para>
+    <para>At any time, to verify that your cluster environment is ready for CAU, select the <ui>Analyze cluster updating readiness</ui> action in the CAU console. This action performs several tests to verify that your environment meets the prerequisites and some of the recommended configurations for using CAU. For example, the cluster must have quorum, and all cluster nodes must be running <token>winblue_server_./Token> or <token>win8_server_./Token>. The tests also detect common issues that can interfere with using CAU. After the tests complete, you can review the results and perform any necessary corrective actions.</para>
   </introduction>
   <section>
     <title>Recommendations for using CAU to apply updates</title>
@@ -63,3 +63,4 @@ ms.assetid: 1e7e20b4-26e1-46b4-8427-650e62fe428e
   </section>
   <relatedTopics />
 </developerConceptualDocument>
+

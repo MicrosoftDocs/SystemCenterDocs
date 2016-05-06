@@ -11,7 +11,7 @@ ms.topic: article
 ms.assetid: 9a3c14c5-98cf-4de2-a6ce-6383d3b231f5
 ---
 # How to Configure a Proxy for Agentless Monitoring
-[!INCLUDE[om12long](../Token/om12long_md.md)] can monitor Microsoft Windows\-based computers on which an agent is not installed by using an agent on another computer to act as a proxy. This is called agentless management.
+[!INCLUDE[om12long](./Token/om12long_md.md)] can monitor Microsoft Windows\-based computers on which an agent is not installed by using an agent on another computer to act as a proxy. This is called agentless management.
 
 > [!NOTE]
 > Not all management packs support agentless management, so make sure agentless management will serve your needs before using it. For example, the Active Directory and Microsoft Exchange Server 2003 management packs do not support agentless management.
@@ -54,6 +54,7 @@ Both the agentless\-managed system and its proxy need to have access to the mana
 5.  In the **Change Proxy Agent** dialog box, select the computer you want to be the new proxy agent, and then click **OK**.
 
 ## See Also
-[Agentless Monitoring in Operations Manager](../Topic/Agentless-Monitoring-in-Operations-Manager.md)
-[How to Configure a Computer for Agentless Management](../Topic/How-to-Configure-a-Computer-for-Agentless-Management.md)
+[Agentless Monitoring in Operations Manager](./Agentless-Monitoring-in-Operations-Manager.md)
+[How to Configure a Computer for Agentless Management](./How-to-Configure-a-Computer-for-Agentless-Management.md)
+
 

@@ -11,7 +11,7 @@ ms.topic: article
 ms.assetid: 4aff9aea-e074-4103-b9db-f8dd327817d8
 ---
 # Management Pack Life Cycle
-[!INCLUDE[om12long](../Token/om12long_md.md)] uses management packs to extend monitoring functionality. Ideally, a management pack tells you everything you want to know about the application or technology that you are monitoring and nothing that you do not want to know. Management packs are designed to provide a useful monitoring experience for most environments, however you will want to test, tune, and tailor each management pack to provide optimal results for your organization’s needs.
+[!INCLUDE[om12long](./Token/om12long_md.md)] uses management packs to extend monitoring functionality. Ideally, a management pack tells you everything you want to know about the application or technology that you are monitoring and nothing that you do not want to know. Management packs are designed to provide a useful monitoring experience for most environments, however you will want to test, tune, and tailor each management pack to provide optimal results for your organization’s needs.
 
 The management pack life cycle, described in the following table, is the recommended approach to using management packs. The sections following the table provide details for each stage.
 
@@ -34,15 +34,15 @@ When you have a new management pack, you should import it to a *pre\-production*
 
 To accurately measure the data that a management pack gathers, you need to expose the agent to the demands of your production environment. The hardware of the management server in the pre\-production environment should reflect the hardware that is in use in your production environment. Your pre\-production management group should have the same management packs imported to the management server as the production management group. To test interoperability, your pre\-production environment should also include the same types of server roles that are in your production environment, just on a smaller scale.
 
-You can assign an Operations Manager agent to more than one management group, which is called *multihoming*. If you multihome a representative subset of agents in your production environment and your pre\-production environment, the pre\-production environment should give you much of the information you need to correctly tune the management pack. For more information on multihoming agents, see [Configuring Agents](../Topic/Configuring-Agents.md).
+You can assign an Operations Manager agent to more than one management group, which is called *multihoming*. If you multihome a representative subset of agents in your production environment and your pre\-production environment, the pre\-production environment should give you much of the information you need to correctly tune the management pack. For more information on multihoming agents, see [Configuring Agents](./Configuring-Agents.md).
 
 ## <a name="bkmk_tuneandcustomize"></a>Tune and Customize
 You can use overrides to refine the settings of a monitoring object in Operations Manager, including monitors, rules, object discoveries, and attributes. You should create a management pack in which to save customizations that you make.
 
-For more information about using overrides, see [Tuning Monitoring by Using Targeting and Overrides](../Topic/Tuning-Monitoring-by-Using-Targeting-and-Overrides.md). For more information about creating management packs in which to save customizations, see [Best Practices for Change Control](../Topic/Management-Pack-Life-Cycle.md#bkmk_bestpracticesforchangecontrol).
+For more information about using overrides, see [Tuning Monitoring by Using Targeting and Overrides](./Tuning-Monitoring-by-Using-Targeting-and-Overrides.md). For more information about creating management packs in which to save customizations, see [Best Practices for Change Control](./Management-Pack-Life-Cycle.md#bkmk_bestpracticesforchangecontrol).
 
 ## <a name="bkmk_deploy"></a>Deploy
-When you are satisfied with the performance and results of the management pack in the pre\-production environment, you can deploy the management pack and its customizations in the production environment. The management pack in which you saved the customizations must be exported so that you can import it to other computers. For more information, see [How to Export an Operations Manager Management Pack](../Topic/How-to-Export-an-Operations-Manager-Management-Pack.md). The management pack that contains the overrides that you set is dependent on the original management pack and can be imported only to management groups that have the original management pack installed.
+When you are satisfied with the performance and results of the management pack in the pre\-production environment, you can deploy the management pack and its customizations in the production environment. The management pack in which you saved the customizations must be exported so that you can import it to other computers. For more information, see [How to Export an Operations Manager Management Pack](./How-to-Export-an-Operations-Manager-Management-Pack.md). The management pack that contains the overrides that you set is dependent on the original management pack and can be imported only to management groups that have the original management pack installed.
 
 ## <a name="bkmk_maintain"></a>Maintain
 After a management pack has been deployed, you should periodically evaluate its performance and results in the production environment to ensure that it continues to meet business needs. The following list describes common events that might require changes to a management pack:
@@ -72,18 +72,19 @@ The following are some best practices to follow when managing Operations Manager
 
 -   Maintain an archive of management pack versions to enable you to roll back changes when necessary. An efficient method for maintaining the archive is by using version control software, such as Microsoft Team Foundation Server or Windows SharePoint Services. Another method is to use a file share on the network with individual folders for each management pack version.
 
--   When you set overrides for a management pack, save them to a management pack that is named *ManagementPack*\_Override, where *ManagementPack* is the name of the sealed management pack to which the overrides apply. For example, overrides to the management pack Microsoft.InformationWorker.Office.XP.mp would be saved to Microsoft.InformationWorker.Office.XP\_Overrides.xml. For more information, see [Creating a Management Pack for Overrides](../Topic/Creating-a-Management-Pack-for-Overrides.md).
+-   When you set overrides for a management pack, save them to a management pack that is named *ManagementPack*\_Override, where *ManagementPack* is the name of the sealed management pack to which the overrides apply. For example, overrides to the management pack Microsoft.InformationWorker.Office.XP.mp would be saved to Microsoft.InformationWorker.Office.XP\_Overrides.xml. For more information, see [Creating a Management Pack for Overrides](./Creating-a-Management-Pack-for-Overrides.md).
 
 -   When a management pack is updated, update the corresponding \_Overrides.xml file with the new version number. You must use an XML editor to update the version number of the \_Overrides.xml file. If you make changes to an \_Overrides.xml file but do not change the version attribute, you can import the file but the settings in the file will not be applied.
 
 -   Document the overrides that you make to management packs. When you set an override, add an explanation of the action you are taking and the reason for it to the description field by clicking **Edit** in the Details pane of the Override Properties dialog box. You may also want to maintain a spreadsheet or other form to document changes that you make to management packs.
 
 ## See Also
-[Creating a Management Pack for Overrides](../Topic/Creating-a-Management-Pack-for-Overrides.md)
-[Management Packs Installed with Operations Manager](../Topic/Management-Packs-Installed-with-Operations-Manager.md)
-[What Is in an Operations Manager Management Pack?](../Topic/What-Is-in-an-Operations-Manager-Management-Pack-.md)
-[How to Import an Operations Manager Management Pack](../Topic/How-to-Import-an-Operations-Manager-Management-Pack.md)
-[How to Remove an Operations Manager Management Pack](../Topic/How-to-Remove-an-Operations-Manager-Management-Pack.md)
-[How to Export an Operations Manager Management Pack](../Topic/How-to-Export-an-Operations-Manager-Management-Pack.md)
-[How to Add Knowledge to a Management Pack](../Topic/How-to-Add-Knowledge-to-a-Management-Pack.md)
+[Creating a Management Pack for Overrides](./Creating-a-Management-Pack-for-Overrides.md)
+[Management Packs Installed with Operations Manager](./Management-Packs-Installed-with-Operations-Manager.md)
+[What Is in an Operations Manager Management Pack?](./What-Is-in-an-Operations-Manager-Management-Pack-.md)
+[How to Import an Operations Manager Management Pack](./How-to-Import-an-Operations-Manager-Management-Pack.md)
+[How to Remove an Operations Manager Management Pack](./How-to-Remove-an-Operations-Manager-Management-Pack.md)
+[How to Export an Operations Manager Management Pack](./How-to-Export-an-Operations-Manager-Management-Pack.md)
+[How to Add Knowledge to a Management Pack](./How-to-Add-Knowledge-to-a-Management-Pack.md)
+
 

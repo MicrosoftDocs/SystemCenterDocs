@@ -8,13 +8,13 @@ ms.topic: article
 ms.assetid: 4ed5fceb-d013-4376-a8ae-694c659f3e07
 ---
 # How to configure availability sets in VMM for virtual machines on a host cluster
-If you deploy virtual machines on a host cluster, you can use [!INCLUDE[vmm12sp1_long](../Token/vmm12sp1_long_md.md)] to configure availability sets for the virtual machines. When you place virtual machines in an availability set, VMM will attempt to keep those virtual machines on separate hosts and avoid placing them together on the same host whenever possible. This helps to improve continuity of service.
+If you deploy virtual machines on a host cluster, you can use [!INCLUDE[vmm12sp1_long](./Token/vmm12sp1_long_md.md)] to configure availability sets for the virtual machines. When you place virtual machines in an availability set, VMM will attempt to keep those virtual machines on separate hosts and avoid placing them together on the same host whenever possible. This helps to improve continuity of service.
 
-You can also configure availability sets in a service template, to specify how virtual machines that are created with that template should be placed on hosts. For more information, see [How to configure the properties of a service template](../Topic/How-to-configure-the-properties-of-a-service-template.md).
+You can also configure availability sets in a service template, to specify how virtual machines that are created with that template should be placed on hosts. For more information, see [How to configure the properties of a service template](./How-to-configure-the-properties-of-a-service-template.md).
 
 For virtual machines that have been deployed on a host cluster, another way to configure this setting is to use Windows PowerShell commands for failover clustering. In this context, the setting appears in the [Get-ClusterGroup](http://technet.microsoft.com/library/hh847242.aspx) listing and is called **AntiAffinityClassNames**.
 
-For information about other settings related to availability of virtual machines on a host cluster, see [Configuring availability options for virtual machines in VMM](../Topic/Configuring-availability-options-for-virtual-machines-in-VMM.md).
+For information about other settings related to availability of virtual machines on a host cluster, see [Configuring availability options for virtual machines in VMM](./Configuring-availability-options-for-virtual-machines-in-VMM.md).
 
 **Account requirements** To complete this procedure you must be a member of the Administrator or Delegated Administrator user role, or a self\-service user who has the **Deploy** action in the scope of your user role.
 
@@ -41,9 +41,10 @@ For information about other settings related to availability of virtual machines
 8.  To verify the setting for a deployed virtual machine, in the listing for the virtual machine, view the name under **Availability Set Name**.
 
 ## See Also
-[Overview: creating and deploying virtual machines in VMM](../Topic/Overview--creating-and-deploying-virtual-machines-in-VMM.md)
-[Configuring availability options for virtual machines in VMM](../Topic/Configuring-availability-options-for-virtual-machines-in-VMM.md)
-[Configuring virtual machine options and settings](../Topic/Configuring-virtual-machine-options-and-settings.md)
-[Managing virtual machines with VMM](../Topic/Managing-virtual-machines-with-VMM.md)
-[Managing tenant resources with VMM](../Topic/Managing-tenant-resources-with-VMM.md)
+[Overview: creating and deploying virtual machines in VMM](./Overview--creating-and-deploying-virtual-machines-in-VMM.md)
+[Configuring availability options for virtual machines in VMM](./Configuring-availability-options-for-virtual-machines-in-VMM.md)
+[Configuring virtual machine options and settings](./Configuring-virtual-machine-options-and-settings.md)
+[Managing virtual machines with VMM](./Managing-virtual-machines-with-VMM.md)
+[Managing tenant resources with VMM](./Managing-tenant-resources-with-VMM.md)
+
 

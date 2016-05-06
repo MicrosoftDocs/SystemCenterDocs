@@ -11,7 +11,7 @@ ms.topic: article
 ms.assetid: 4ebe6cb4-0352-4c71-b2a9-0a235c0102d5
 ---
 # How to Back Up the Production Service Manager Database
-Use the following procedure to back up the production [!INCLUDE[smshort](../Token/smshort_md.md)] database in Microsoft SQL Server 2008 R2.
+Use the following procedure to back up the production [!INCLUDE[smshort](./Token/smshort_md.md)] database in Microsoft SQL Server 2008 R2.
 
 ### To back up the Service Manager database
 
@@ -53,4 +53,5 @@ Use the following procedure to back up the production [!INCLUDE[smshort](../Toke
 14. Select an Overwrite Media option, by clicking either **Back up to the existing media set** or **Back up to a new media set, and erase all existing backup sets**.
 
 15. In the Reliability section, select either **Verify backup when finished** or **Perform checksum before writing to media**, and then optionally select **Continue on checksum error**. For more information, see [Detecting and Coping with Media Errors During Backup and Restore](http://go.microsoft.com/fwlink/p/?LinkId=236004)
+
 

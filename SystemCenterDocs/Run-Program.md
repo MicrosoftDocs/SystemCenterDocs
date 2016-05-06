@@ -67,3 +67,4 @@ The Run Program activity inherits certain security concerns from PsExec.  Specif
 
 A work\-around for customers concerned about security vulnerabilities is to create a mapped drive to the server that is the target of the Run Program activity. This establishes a security context for the Run Program activity.
 
+

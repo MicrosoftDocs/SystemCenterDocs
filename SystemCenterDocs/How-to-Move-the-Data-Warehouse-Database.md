@@ -8,7 +8,7 @@ ms.topic: article
 ms.assetid: 038b11bb-2e70-413b-a51c-1e60c380b978
 ---
 # How to Move the Data Warehouse Database
-After the initial deployment of [!INCLUDE[om12long](../Token/om12long_md.md)], you might need to move the data warehouse database from one Microsoft SQL Server\-based computer to another.
+After the initial deployment of [!INCLUDE[om12long](./Token/om12long_md.md)], you might need to move the data warehouse database from one Microsoft SQL Server\-based computer to another.
 
 > [!CAUTION]
 > This procedure can result in data loss if it is not performed correctly and within a reasonable length of time of the failure. Ensure that you follow all steps precisely, without unnecessary delays between the steps.
@@ -158,4 +158,5 @@ Use the procedure below to move the data warehouse database to a different syste
     3.  Search the **Performance Data Source Module Events**  pane for events with a **Date and Time** that is later than the move.
 
         There is a problem with the data warehouse database if events have a **Source** of **Health Service Module** and an **Event Number** of 10103.
+
 

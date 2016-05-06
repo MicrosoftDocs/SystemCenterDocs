@@ -67,3 +67,4 @@ The following table lists the published data items.
 |Outgoing mail server port number|The port used to communicate with the SMTP server.|
 |Outgoing mail server SSL enabled|Indicates whether the mail server has SSL enabled.|
 
+

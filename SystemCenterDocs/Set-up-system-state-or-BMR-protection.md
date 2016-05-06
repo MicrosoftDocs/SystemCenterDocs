@@ -57,5 +57,6 @@ You can back up system state data and data to allow a bare metal recovery \(BMR\
 
     -   Then follow the instructions in [Create and manage protection groups](assetId:///2ce48037-9d6e-43a0-b3ac-cb3bb429dabd).
 
-5.  After you create the protection group initial replication of the data occurs. Backup then takes place in line with the protection group settings. To recover see [Recover system state or BMR](../Topic/Recover-system-state-or-BMR.md).
+5.  After you create the protection group initial replication of the data occurs. Backup then takes place in line with the protection group settings. To recover see [Recover system state or BMR](./Recover-system-state-or-BMR.md).
+
 

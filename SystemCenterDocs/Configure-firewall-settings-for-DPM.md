@@ -74,3 +74,4 @@ If you use a remote SQL Server for your DPM database, as part of the process you
 
 -   You’ll need to enable RPC on the remote SQL Server.
 
+

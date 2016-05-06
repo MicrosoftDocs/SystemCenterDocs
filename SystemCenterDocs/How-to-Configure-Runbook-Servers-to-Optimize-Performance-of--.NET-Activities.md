@@ -32,5 +32,6 @@ The solution to removing the delay is to deactivate **generatePublisherEvidence*
 -   On the runbook server where runbooks run that contain an activity referencing the .NET libraries, log on to the computer that is using the service account credentials. A profile is created on first logon.
 
 ## See Also
-[Administering System Center 2012 - Orchestrator](../Topic/Administering-System-Center-2012---Orchestrator.md)
+[Administering System Center 2012 - Orchestrator](./Administering-System-Center-2012---Orchestrator.md)
+
 

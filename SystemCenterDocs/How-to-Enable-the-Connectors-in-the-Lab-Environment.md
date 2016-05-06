@@ -11,7 +11,7 @@ ms.topic: article
 ms.assetid: 20ec2aaa-9fee-463b-a1d7-9cb272d8dd73
 ---
 # How to Enable the Connectors in the Lab Environment
-Use the following procedure to enable the [!INCLUDE[smshort](../Token/smshort_md.md)] connectors in the lab environment. In this procedure, you will not be enabling the Operations Manager connector.
+Use the following procedure to enable the [!INCLUDE[smshort](./Token/smshort_md.md)] connectors in the lab environment. In this procedure, you will not be enabling the Operations Manager connector.
 
 > [!WARNING]
 > Do not enable or delete the Operations Manager alert connector in the lab environment. Doing so will cause the alert connector in the production environment to fail.
@@ -25,4 +25,5 @@ Use the following procedure to enable the [!INCLUDE[smshort](../Token/smshort_md
 3.  In the **Connectors** pane, select the connector that you want to enable.
 
 4.  In the **Tasks** pane, under the connector name, click **Enable**.
+
 

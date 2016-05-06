@@ -11,13 +11,13 @@ ms.topic: article
 ms.assetid: 3165d194-b63d-455a-b6d9-dedf895ab096
 ---
 # Trace Logs
-[!INCLUDE[orchshort](../Token/orchshort_md.md)] can create trace log messages on the management server to help you identify problems in the environment. By default, trace log messages are only written when there is an exception in the [!INCLUDE[orchshort](../Token/orchshort_md.md)] Management Service, but you can increase this level of logging by modifying a registry setting. Trace log files are available in directories for each [!INCLUDE[orchshort](../Token/orchshort_md.md)] feature under **C:\\ProgramData\\Microsoft System Center 2012\\Orchestrator**. You can change these log locations by changing the registry values for the different features.
+[!INCLUDE[orchshort](./Token/orchshort_md.md)] can create trace log messages on the management server to help you identify problems in the environment. By default, trace log messages are only written when there is an exception in the [!INCLUDE[orchshort](./Token/orchshort_md.md)] Management Service, but you can increase this level of logging by modifying a registry setting. Trace log files are available in directories for each [!INCLUDE[orchshort](./Token/orchshort_md.md)] feature under **C:\\ProgramData\\Microsoft System Center 2012\\Orchestrator**. You can change these log locations by changing the registry values for the different features.
 
 > [!NOTE]
 > The **C:\\ProgramData** directory is often a hidden system folder.
 
 ## Modifying Trace Log Settings
-Trace log settings are configured with registry values under the key **HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Wow6432Node\\Microsoft\\SystemCenter2012\\Orchestrator\\TraceLogger**. Each of the [!INCLUDE[orchshort](../Token/orchshort_md.md)] services has a set of registry values as shown in the following table.
+Trace log settings are configured with registry values under the key **HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Wow6432Node\\Microsoft\\SystemCenter2012\\Orchestrator\\TraceLogger**. Each of the [!INCLUDE[orchshort](./Token/orchshort_md.md)] services has a set of registry values as shown in the following table.
 
 |Feature|Registry key|
 |-----------|----------------|
@@ -49,5 +49,6 @@ The following table provides the possible values that you can use for the log le
 |7|Full logging.|
 
 ## See Also
-[Orchestrator Logs](../Topic/Orchestrator-Logs.md)
+[Orchestrator Logs](./Orchestrator-Logs.md)
+
 

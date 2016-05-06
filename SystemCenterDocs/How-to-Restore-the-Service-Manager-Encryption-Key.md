@@ -11,11 +11,11 @@ ms.topic: article
 ms.assetid: a117356d-ba50-49ec-b41b-d7771bccc973
 ---
 # How to Restore the Service Manager Encryption Key
-You can use the following procedure to restore the encryption keys before you run Setup.exe to restore a part of [!INCLUDE[smlong12](../Token/smlong12_md.md)].
+You can use the following procedure to restore the encryption keys before you run Setup.exe to restore a part of [!INCLUDE[smlong12](./Token/smlong12_md.md)].
 
 ### To restore the encryption key
 
-1.  Log on to the computer that will host the [!INCLUDE[smshort](../Token/smshort_md.md)] part that you are attempting to recover by using an account that is a member of the Administrators group. For example, log on to the computer that will host the [!INCLUDE[smshort](../Token/smshort_md.md)] or data warehouse management servers.
+1.  Log on to the computer that will host the [!INCLUDE[smshort](./Token/smshort_md.md)] part that you are attempting to recover by using an account that is a member of the Administrators group. For example, log on to the computer that will host the [!INCLUDE[smshort](./Token/smshort_md.md)] or data warehouse management servers.
 
 2.  In Windows Explorer, open the Tools\\SecureStorageBackup folder on the installation media.
 
@@ -33,4 +33,5 @@ You can use the following procedure to restore the encryption keys before you ru
 7.  On the **Provide a Password** page, type the password that you used to back up the encryption key in the **Password** box. In the **Confirm Password** box, reenter the same password, and then click **Next**.
 
 8.  After you receive the message, “Secure Storage Key Restore Complete,” click **Finish**.
+
 

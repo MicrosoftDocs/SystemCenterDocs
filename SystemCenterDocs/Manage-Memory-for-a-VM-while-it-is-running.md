@@ -25,3 +25,4 @@ The first command gets the virtual machine object named VM02, and then stores th
 PS C:\> $VM = Get-SCVirtualMachine -Name "VM02"
 PS C:\> Set-SCVirtualMachine -VM $VM -DynamicMemoryEnabled $True -MemoryMB 1024 -DynamicMemoryMaximumMB 2048
 ```
+

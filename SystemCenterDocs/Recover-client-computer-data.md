@@ -11,9 +11,9 @@ ms.topic: article
 ms.assetid: 42676258-525d-495e-97e4-2161fe1e272d
 ---
 # Recover client computer data
-You can recover client computer data using the Recovery Wizard as described in this topic. You can also let end users recover their own data. For more details see [Configure end-user recovery and recover file data](../Topic/Configure-end-user-recovery-and-recover-file-data.md).
+You can recover client computer data using the Recovery Wizard as described in this topic. You can also let end users recover their own data. For more details see [Configure end-user recovery and recover file data](./Configure-end-user-recovery-and-recover-file-data.md).
 
-1.  In [!INCLUDE[dpm2012short](../Token/dpm2012short_md.md)] Administrator Console, click **Recovery** on the navigation bar.
+1.  In [!INCLUDE[dpm2012short](./Token/dpm2012short_md.md)] Administrator Console, click **Recovery** on the navigation bar.
 
 2.  Browse or search for the data you want to recover, and then, in the results pane, select the data.
 
@@ -21,7 +21,7 @@ You can recover client computer data using the Recovery Wizard as described in t
 
 4.  In the **Recoverable item** pane, click to select the recoverable item you want to recover.
 
-5.  In the **Actions** pane, click **Recover**. [!INCLUDE[dpm2012short](../Token/dpm2012short_md.md)] starts the Recovery Wizard.
+5.  In the **Actions** pane, click **Recover**. [!INCLUDE[dpm2012short](./Token/dpm2012short_md.md)] starts the Recovery Wizard.
 
 6.  Review your recovery selection, and click **Next**.
 
@@ -34,7 +34,7 @@ You can recover client computer data using the Recovery Wizard as described in t
 
     2.  **Recover to an alternate location**. Click **Browse** to browse for an alternate recovery destination. On the **Specify Alternate Recovery Destination** dialog box, select the recovery destination and click **OK**.
 
-    3.  **Copy to tape**. This option copies the volume that contains the selected data to a tape in a [!INCLUDE[dpm2012short](../Token/dpm2012short_md.md)] library. Click **Next**, and on the **Specify Library** dialog box, select library details and tape options. You can also choose to compress or encrypt the data on tape.
+    3.  **Copy to tape**. This option copies the volume that contains the selected data to a tape in a [!INCLUDE[dpm2012short](./Token/dpm2012short_md.md)] library. Click **Next**, and on the **Specify Library** dialog box, select library details and tape options. You can also choose to compress or encrypt the data on tape.
 
 8.  Click **Next** after you have specified one of the preceding options.
 
@@ -48,7 +48,7 @@ You can recover client computer data using the Recovery Wizard as described in t
 
     4.  **Enable SAN based recovery using hardware snapshots**. Select this option to use SAN\-based hardware snapshots for quicker recovery.
 
-        This option is valid only when you have a SAN where hardware snapshot functionality is enabled, the SAN has the capability to create a clone and to split a clone to make it writable, and the protected computer and the [!INCLUDE[dpm2012short](../Token/dpm2012short_md.md)] server are connected to the same SAN.
+        This option is valid only when you have a SAN where hardware snapshot functionality is enabled, the SAN has the capability to create a clone and to split a clone to make it writable, and the protected computer and the [!INCLUDE[dpm2012short](./Token/dpm2012short_md.md)] server are connected to the same SAN.
 
     5.  **Notification**. Click **Send an e\-mail when the recovery completes**, and specify the recipients who will receive the notification. Separate the e\-mail addresses with commas.
 
@@ -58,4 +58,5 @@ You can recover client computer data using the Recovery Wizard as described in t
 
     > [!NOTE]
     > Any synchronization job for the selected recovery item will be canceled while the recovery is in progress.
+
 

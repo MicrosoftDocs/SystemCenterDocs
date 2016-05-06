@@ -27,7 +27,7 @@ Note that you can’t recover a system database to a different instance of SQL S
 
 ## Recover a database
 
-1.  In [!INCLUDE[dpm2012short](../Token/dpm2012short_md.md)] Administrator Console, click **Recovery** on the navigation bar.
+1.  In [!INCLUDE[dpm2012short](./Token/dpm2012short_md.md)] Administrator Console, click **Recovery** on the navigation bar.
 
 2.  Using the browse functionality, select the database to recover.
 
@@ -62,7 +62,7 @@ DPM uses SQL Server functionality to recover a database so that all uncommitted 
 
 #### To recover a database without transaction roll back
 
-1.  In [!INCLUDE[dpm2012short](../Token/dpm2012short_md.md)] Administrator Console, click **Recovery** on the navigation bar.
+1.  In [!INCLUDE[dpm2012short](./Token/dpm2012short_md.md)] Administrator Console, click **Recovery** on the navigation bar.
 
 2.  Using the browse functionality, select the database to recover.
 
@@ -84,7 +84,7 @@ DPM uses SQL Server functionality to recover a database so that all uncommitted 
 
 10. Select **Copy SQL transaction logs between the selected recovery point and latest available recovery point**, specify a copy destination for the transaction logs, and then click **Next**.
 
-    [!INCLUDE[dpm2012short](../Token/dpm2012short_md.md)] must have Write permission for the copy destination for the transaction logs.
+    [!INCLUDE[dpm2012short](./Token/dpm2012short_md.md)] must have Write permission for the copy destination for the transaction logs.
 
 11. Specify recovery options for network bandwidth usage throttling, SAN\-based recovery, and e\-mail notifications, and then click **Next**.
 
@@ -95,4 +95,5 @@ DPM uses SQL Server functionality to recover a database so that all uncommitted 
 14. Use the Restore command with the Log argument to apply the desired logs to the database in the right order.
 
     For more information on the Restore command, see [RESTORE Arguments \(Transact\-SQL\)](http://go.microsoft.com/fwlink/?LinkId=104665).
+
 

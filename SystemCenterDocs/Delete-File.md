@@ -45,3 +45,4 @@ The following table lists the published data items.
 |File path|The path of the file that was deleted.|
 |Delete files from sub\-folders|Indicates whether the Delete files from sub\-folders check box was selected.|
 
+

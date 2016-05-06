@@ -74,3 +74,4 @@ The following table lists the published data items.
 |Name and path of the origin file|The name and path that the file was copied from.|
 |Include sub\-folders|Indicates whether the Include sub\-folders check box was selected.|
 
+

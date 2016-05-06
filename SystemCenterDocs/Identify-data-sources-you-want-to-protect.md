@@ -11,7 +11,7 @@ ms.assetid: 4774dd1a-f50a-4a75-8783-abb5d134298a
 # Identify data sources you want to protect
 To protect data sources with DPM you'll need to do the following:
 
--   Read [What can DPM back up?](../Topic/What-can-DPM-back-up-.md) to understand what's supported for DPM backup.
+-   Read [What can DPM back up?](./What-can-DPM-back-up-.md) to understand what's supported for DPM backup.
 
 -   DPM applies backup settings to all data sources in a particular protection group. You'll need to figure out how you want to gather data you want to protect into those groups. Examples include:
 
@@ -24,5 +24,6 @@ To protect data sources with DPM you'll need to do the following:
     -   **By data characteristics**—For example how often data changes, how rapidly it grows, or its storage requirements.
 
 ## Next steps
-[Deploy the DPM protection agent](../Topic/Deploy-the-DPM-protection-agent.md)
+[Deploy the DPM protection agent](./Deploy-the-DPM-protection-agent.md)
+
 

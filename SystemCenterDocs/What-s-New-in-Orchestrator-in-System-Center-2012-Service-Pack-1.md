@@ -11,12 +11,12 @@ ms.topic: article
 ms.assetid: ccf058ef-d118-4142-ade4-e9100f5315ca
 ---
 # What&#39;s New in Orchestrator in System Center 2012 Service Pack 1
-The following are the new features for [!INCLUDE[orchshort](../Token/orchshort_md.md)] in [!INCLUDE[sc2012sp1_long](../Token/sc2012sp1_long_md.md)].
+The following are the new features for [!INCLUDE[orchshort](./Token/orchshort_md.md)] in [!INCLUDE[sc2012sp1_long](./Token/sc2012sp1_long_md.md)].
 
 ## What’s New
-In [!INCLUDE[sc2012sp1_long](../Token/sc2012sp1_long_md.md)], [!INCLUDE[orchshort](../Token/orchshort_md.md)] has the following new and updated integration Packs \(IPs\).
+In [!INCLUDE[sc2012sp1_long](./Token/sc2012sp1_long_md.md)], [!INCLUDE[orchshort](./Token/orchshort_md.md)] has the following new and updated integration Packs \(IPs\).
 
-### New in [!INCLUDE[sc2012sp1_short](../Token/sc2012sp1_short_md.md)]
+### New in [!INCLUDE[sc2012sp1_short](./Token/sc2012sp1_short_md.md)]
 
 ||
 |-|
@@ -24,7 +24,7 @@ In [!INCLUDE[sc2012sp1_long](../Token/sc2012sp1_long_md.md)], [!INCLUDE[orchshor
 |Exchange Users Integration Pack for Orchestrator in System Center 2012 SP1|
 |Representational State Transfer \(REST\) Integration Pack Guide for Orchestrator in System Center 2012 SP1|
 
-### Updated in [!INCLUDE[sc2012sp1_short](../Token/sc2012sp1_short_md.md)]
+### Updated in [!INCLUDE[sc2012sp1_short](./Token/sc2012sp1_short_md.md)]
 
 ||
 |-|
@@ -33,4 +33,5 @@ In [!INCLUDE[sc2012sp1_long](../Token/sc2012sp1_long_md.md)], [!INCLUDE[orchshor
 |System Center Integration Pack for System Center 2012 Operations Manager|
 |System Center Integration Pack for System Center 2012 Virtual Machine Manager|
 |VMware vSphere Integration Pack for System Center 2012 \- Orchestrator|
+
 

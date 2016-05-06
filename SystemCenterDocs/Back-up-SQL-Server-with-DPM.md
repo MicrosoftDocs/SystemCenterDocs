@@ -95,15 +95,15 @@ DPM provides backup and recovery for SQL Server databases. In addition to backin
 
     -   System requirements for DPM
 
-    -   [What can DPM back up?](../Topic/What-can-DPM-back-up-.md)
+    -   [What can DPM back up?](./What-can-DPM-back-up-.md)
 
-    -   [What's supported and what isn't for DPM?](../Topic/What-s-supported-and-what-isn-t-for-DPM-.md)
+    -   [What's supported and what isn't for DPM?](./What-s-supported-and-what-isn-t-for-DPM-.md)
 
-    -   [Get DPM installed](../Topic/Get-DPM-installed.md)
+    -   [Get DPM installed](./Get-DPM-installed.md)
 
-2.  **Set up storage**—You can store backed up data on disk, on tape, and in the cloud with Azure. Read more in [Prepare data storage](../Topic/Prepare-data-storage.md).
+2.  **Set up storage**—You can store backed up data on disk, on tape, and in the cloud with Azure. Read more in [Prepare data storage](./Prepare-data-storage.md).
 
-3.  **Set up the DPM protection agent**—You'll need to install the DPM protection agent on every machine you want to back up. Read [Deploy the DPM protection agent](../Topic/Deploy-the-DPM-protection-agent.md).
+3.  **Set up the DPM protection agent**—You'll need to install the DPM protection agent on every machine you want to back up. Read [Deploy the DPM protection agent](./Deploy-the-DPM-protection-agent.md).
 
 ## Configure backup
 
@@ -111,7 +111,7 @@ DPM provides backup and recovery for SQL Server databases. In addition to backin
 
 2.  In **Select Protection Group Type** select **Servers**.
 
-3.  In **Select Group Members** select the SQL Server instances on the server you want to protect.  Learn more in [Deploy protection groups](../Topic/Deploy-protection-groups.md). Note that:
+3.  In **Select Group Members** select the SQL Server instances on the server you want to protect.  Learn more in [Deploy protection groups](./Deploy-protection-groups.md). Note that:
 
     -   You have the option of selecting protection at the instance level or protection of individual databases.
 
@@ -251,4 +251,5 @@ Users with self\-service recovery permissions should recover as follows:
 6.  If you're recovering to a database, on the **Specify Database State**  page specify whether the database should remain operational after recovery, and specify whether you want to copy SQL transaction logs.
 
 7.  On the **Specify Recovery Options** page specify whether you want to retain security settings from the source server, or apply settings from the destination server. You can also specify that an email notification should be sent when recovery finishes.
+
 

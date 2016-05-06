@@ -12,11 +12,11 @@ ms.assetid: b407c1e7-0d9b-44b6-bcfe-8ef701054d75
 robots: noindex,nofollow
 ---
 # How to Create a Virtual Machine Manager Connector
-Use the following procedures in [!INCLUDE[smlong12](../Token/smlong12_md.md)] to create a System Center Virtual Machine Manager connector and validate the creation of the connector.
+Use the following procedures in [!INCLUDE[smlong12](./Token/smlong12_md.md)] to create a System Center Virtual Machine Manager connector and validate the creation of the connector.
 
 ### To create a System Center Virtual Machine Manager connector
 
-1.  In the [!INCLUDE[smcons](../Token/smcons_md.md)], click **Administration**.
+1.  In the [!INCLUDE[smcons](./Token/smcons_md.md)], click **Administration**.
 
 2.  In the **Administration** pane, expand **Administration**, and then click **Connectors**.
 
@@ -32,7 +32,7 @@ Use the following procedures in [!INCLUDE[smlong12](../Token/smlong12_md.md)] to
 
     4.  On the **Connection** page, in the **Credentials** area, either select an existing account or click **New**, and then do the following:
 
-        1.  In the **Run As Account** dialog box, in the **Display name** box, type a name for the Run As account. In the **Account** list, select **Windows Account**. Enter the credentials for an account that has rights to connect [!INCLUDE[vmm12short](../Token/vmm12short_md.md)], and then click **OK**. On the **Connection** page, click **Test Connection**.
+        1.  In the **Run As Account** dialog box, in the **Display name** box, type a name for the Run As account. In the **Account** list, select **Windows Account**. Enter the credentials for an account that has rights to connect [!INCLUDE[vmm12short](./Token/vmm12short_md.md)], and then click **OK**. On the **Connection** page, click **Test Connection**.
 
             > [!NOTE]
             > Special characters \(such as the ampersand \[&\]\) in the **User Name** box are not supported.
@@ -52,7 +52,7 @@ Use the following procedures in [!INCLUDE[smlong12](../Token/smlong12_md.md)] to
     > [!NOTE]
     > Allow sufficient time for the import process to finish if you are importing a large number of virtual machines or clouds.
 
-3.  In the [!INCLUDE[smcons](../Token/smcons_md.md)], click **Configuration Items**.
+3.  In the [!INCLUDE[smcons](./Token/smcons_md.md)], click **Configuration Items**.
 
 4.  In the **Tasks** pane, click **Create Folder**.
 
@@ -83,4 +83,5 @@ Use the following procedures in [!INCLUDE[smlong12](../Token/smlong12_md.md)] to
 9. In the **Configuration Items** pane, expand the folder you created, and then click the view you created. For example, expand **Test**, and then click **VMMTemplates**
 
 10. In the **VMMTemplates** pane, you will see the Virtual Machine Manager templates that have been created.
+
 

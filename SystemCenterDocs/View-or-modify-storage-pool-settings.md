@@ -34,7 +34,7 @@ When you create a protection group, DPM recommends and allocates disk space for 
 
 -   Use the [Storage Calculators for DPM](http://go.microsoft.com/fwlink/?LinkID=180658) to help you figure out storage capacity requirements based on a set of input factors.
 
--   With data co\-location enabled, DPM will allocate fixed size volumes in the storage pool. For more information, see [Colocate data from different protection groups on disk](../Topic/Colocate-data-from-different-protection-groups-on-disk.md).
+-   With data co\-location enabled, DPM will allocate fixed size volumes in the storage pool. For more information, see [Colocate data from different protection groups on disk](./Colocate-data-from-different-protection-groups-on-disk.md).
 
 -   If you’re protecting only a subset of the data on the protected volume, you can calculate the size of the protected data so that DPM can adjust its recommendations for disk allocation. To compute the disk allocation using the size of the data on the protected volume, in the **ModifyDisk Allocation** dialog box, click **Calculate**.
 
@@ -73,4 +73,5 @@ If you still want to modify disk allocation settings do the following:
     -   If data co\-location is enabled on disk, click **Collocated Protection** to view co\-located replica details for each co\-located data source.
 
     -   The default disk space is 300 MB. You can increase, but not decrease, the space allocated for the change journal.
+
 

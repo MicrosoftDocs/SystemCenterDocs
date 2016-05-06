@@ -15,13 +15,13 @@ A tape library is typical a collection of tape drives that automatically mount a
 
 DPM can act as a tape library server or a tape library client. DPM acting as a library server has the medium changer enabled and the server library\-sharing command has been run. DPM acting as a library client doesn’t have the medium changer enabled and the client library\-sharing commands have been run. The following diagram shows the topology of a shared library.
 
-![](../Image/dpm_LibrarySharingTopology_c.png)
+![](/Image/dpm_LibrarySharingTopology_c.png)
 
 Note the following before you start:
 
 -   The tape library must be in a fibre channel storage area network \(SAN\) environment, or be a iSCSI attached so that all DPM servers that participate in library sharing have direct access to the tape drives in the library.
 
--   All [!INCLUDE[dpm2012short](../Token/dpm2012short_md.md)] servers using a shared library must use a similar SQL Server instance for hosting [!INCLUDE[dpm2012short](../Token/dpm2012short_md.md)] databases. For example, they should all use a local instance or a remote instance. You can’t have a mixture of local and remote. DPM doesn’t support sharing tape library between different DPM versions.
+-   All [!INCLUDE[dpm2012short](./Token/dpm2012short_md.md)] servers using a shared library must use a similar SQL Server instance for hosting [!INCLUDE[dpm2012short](./Token/dpm2012short_md.md)] databases. For example, they should all use a local instance or a remote instance. You can’t have a mixture of local and remote. DPM doesn’t support sharing tape library between different DPM versions.
 
 -   We recommend that the system configuration of the library server computer and all library client computers be as similar as possible.
 
@@ -111,4 +111,5 @@ If the library server fails, DPM detects the failure and raises an alert. All ta
         SetSharedDpmDatabase \-DatabaseName <**SqlServer\\Instance\\DatabaseName**> \[\-DoNotMoveData\]
 
         where *<SQLServer\\Instance\\Databasename>* is the database name of the library server.
+
 

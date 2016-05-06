@@ -8,7 +8,7 @@ ms.topic: article
 ms.assetid: 65b22be5-a087-4df8-b2a9-a8e9f644a158
 ---
 # Set up data backup storage
-Your [!INCLUDE[dpm2012long](../Token/dpm2012long_md.md)] deployment can use the following storage options for backed up data:
+Your [!INCLUDE[dpm2012long](./Token/dpm2012long_md.md)] deployment can use the following storage options for backed up data:
 
 -   **Tape**—Tape is generally used for long\-term storage of backed up data. DPM can also be configured to use tapes for short\-term backup of file data. Read more in [Plan for tape\-based backups](assetId:///d6fabe7f-3f0b-4086-b3b9-ba47ebb04645).
 
@@ -35,4 +35,5 @@ The deployment steps you need to complete depend on the storage option you want 
 -   [Configure backup to Azure](assetId:///badf8928-9678-46c3-b444-5ab4ad01596f)
 
 -   [Configure tape storage](assetId:///34bea8ca-10b9-493e-84be-b5db93f0251b)
+
 

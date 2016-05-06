@@ -16,15 +16,15 @@ ms.assetid: 0f34e650-f06e-4c0a-9a33-4393641c288a
 
 Microsoft Monitoring Agent includes many features that each have different requirements:
 
--   [Infrastructure and Workload Monitoring with System Center Operations Manager](../Topic/Microsoft-Monitoring-Agent-Requirements-and-Compatibility.md#bkmk_InfraWrkflowMonitor)
+-   [Infrastructure and Workload Monitoring with System Center Operations Manager](./Microsoft-Monitoring-Agent-Requirements-and-Compatibility.md#bkmk_InfraWrkflowMonitor)
 
--   [APM with System Center Operations Manager](../Topic/Microsoft-Monitoring-Agent-Requirements-and-Compatibility.md#bkmk_APMwithSysCenter)
+-   [APM with System Center Operations Manager](./Microsoft-Monitoring-Agent-Requirements-and-Compatibility.md#bkmk_APMwithSysCenter)
 
--   [APM with Stand\-Alone Monitoring using IntelliTrace log as an output](../Topic/Microsoft-Monitoring-Agent-Requirements-and-Compatibility.md#bkmk_APMwithMonitor)
+-   [APM with Stand\-Alone Monitoring using IntelliTrace log as an output](./Microsoft-Monitoring-Agent-Requirements-and-Compatibility.md#bkmk_APMwithMonitor)
 
--   [APM with Application Insights for Visual Studio Online \(supported for preview versions only\)](../Topic/Microsoft-Monitoring-Agent-Requirements-and-Compatibility.md#bkmk_APMwithAppInsights)
+-   [APM with Application Insights for Visual Studio Online \(supported for preview versions only\)](./Microsoft-Monitoring-Agent-Requirements-and-Compatibility.md#bkmk_APMwithAppInsights)
 
--   [Monitoring of Windows Azure Cloud Services with Application Insights for Visual Studio Online](../Topic/Microsoft-Monitoring-Agent-Requirements-and-Compatibility.md#bkmk_MonitorWinAzure)
+-   [Monitoring of Windows Azure Cloud Services with Application Insights for Visual Studio Online](./Microsoft-Monitoring-Agent-Requirements-and-Compatibility.md#bkmk_MonitorWinAzure)
 
 ### <a name="bkmk_InfraWrkflowMonitor"></a>Infrastructure and Workload Monitoring with System Center Operations Manager
 When connected to System Center Operations Manager, the agent calculates the health state of the monitored computers and objects, and then reports back to the management server. The management servers centrally distribute the configuration to agents and store data received from the monitored computers. Management packs installed on the management server control this type of data collected, tasks, and alerts you receive in Operations Manager.
@@ -120,4 +120,5 @@ By using APM with stand\-alone monitoring using IntelliTrace logs as an output, 
 
     > [!NOTE]
     > When using Visual Studio Ultimate 2012 to view APM IntelliTrace logs, you only see details about exceptions but not performance data. To see complete APM traces, including performance events, use Visual Studio Ultimate 2013.
+
 

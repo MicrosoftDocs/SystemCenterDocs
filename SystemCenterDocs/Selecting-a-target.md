@@ -13,9 +13,9 @@ ms.assetid: 06284569-9178-4ccf-b068-df0b9b12eee9
 # Selecting a target
 Every time you create a monitor or rule, you must select a target for it. The target determines where the monitor or rule will run and how its information will be organized in the Operations console. It is important to understand how targets work so that you can select the most appropriate one for the monitor or rule that you are creating.
 
-If you are creating a monitor or rule for an application or device that already has a management pack installed, then you can most likely use a target that already exists in your management group. If you are creating a monitor or rule for a new application then you may need to create a new target specifically for this purpose. Creating a new target is covered in [Creating a new target](../Topic/Creating-a-new-target.md).
+If you are creating a monitor or rule for an application or device that already has a management pack installed, then you can most likely use a target that already exists in your management group. If you are creating a monitor or rule for a new application then you may need to create a new target specifically for this purpose. Creating a new target is covered in [Creating a new target](./Creating-a-new-target.md).
 
-You do not select specific objects to target in Operations Manager 2012 but rather you select a particular class of object. The monitor or rule will apply to all instances of the target class. For more information on classes and instances of classes, see [Understanding Classes and Objects](../Topic/Understanding-Classes-and-Objects.md).
+You do not select specific objects to target in Operations Manager 2012 but rather you select a particular class of object. The monitor or rule will apply to all instances of the target class. For more information on classes and instances of classes, see [Understanding Classes and Objects](./Understanding-Classes-and-Objects.md).
 
 ## Quick Logic
 If you do not have a full understanding of the logic behind the selection of a target, you can use the following quick logic. Refer to the rest of this section for a complete explanation of the effects of a target and how to select an appropriate one.
@@ -35,13 +35,13 @@ If you do not have a full understanding of the logic behind the selection of a t
 ## <a name="Effects"></a>Effects of a target
 The target of a monitor or rule determines the following:
 
--   [Where the monitor or rule will run](../Topic/Selecting-a-target.md#WhereMonitorWillRun)
+-   [Where the monitor or rule will run](./Selecting-a-target.md#WhereMonitorWillRun)
 
--   [How many copies of the monitor or rule will run on the agent](../Topic/Selecting-a-target.md#HowManyCopies)
+-   [How many copies of the monitor or rule will run on the agent](./Selecting-a-target.md#HowManyCopies)
 
--   [What object the data will be associated with](../Topic/Selecting-a-target.md#WhatObject)
+-   [What object the data will be associated with](./Selecting-a-target.md#WhatObject)
 
--   [What properties will be available for the expression and the alert description](../Topic/Selecting-a-target.md#WhatProperties)
+-   [What properties will be available for the expression and the alert description](./Selecting-a-target.md#WhatProperties)
 
 ### <a name="WhereMonitorWillRun"></a>Where the monitor or rule will run
 The monitor or rule will run on each agent that has at least one instance of the target class. You should select a target that only includes those agents where you want the rule or monitor to run.
@@ -50,24 +50,24 @@ When a management pack is installed or changed, it is delivered to any agent tha
 
 You must ensure that the data that the monitor or rule is accessing will be available in the agent where it is running. For example, if you are creating a monitor that looks for a particular event, you must ensure that the event will be written to the event log where the monitor is running. If you are creating a rule that collects a performance counter, you must ensure that the performance counter is available on that agent. If you are creating a monitor that runs a script, then the script will run on that agent and any resources that it access must be available on the local computer.
 
-If you select a very broad class such as **Windows Computer**, then the monitor or rule will probably run on the agents that you need, but it will also probably run on additional agents where it is not needed. If a broad class such as this is the only one that includes the agents that you need, then consider creating a new target as described in [Creating a new target](../Topic/Creating-a-new-target.md).
+If you select a very broad class such as **Windows Computer**, then the monitor or rule will probably run on the agents that you need, but it will also probably run on additional agents where it is not needed. If a broad class such as this is the only one that includes the agents that you need, then consider creating a new target as described in [Creating a new target](./Creating-a-new-target.md).
 
 **Management pack delivery**
 
-![](../Image/AuthGuide_01_ManagementPackDelivery.gif)
+![](/Image/AuthGuide_01_ManagementPackDelivery.gif)
 
 ### <a name="HowManyCopies"></a>How many copies of the monitor or rule will run on the agent
-One copy of the monitor or rule will run for each instance of the target. If there is more than one instance of the target on an agent, then more than one copy of the monitor or rule will run on that agent. You can determine how many objects are running on each agent in your environment using the procedure in [Viewing Classes and Objects](../Topic/Selecting-a-target.md#ViewingObjects).
+One copy of the monitor or rule will run for each instance of the target. If there is more than one instance of the target on an agent, then more than one copy of the monitor or rule will run on that agent. You can determine how many objects are running on each agent in your environment using the procedure in [Viewing Classes and Objects](./Selecting-a-target.md#ViewingObjects).
 
 For targets such as **Windows Computer**, you can be assured that they will only have a single object on a particular agent. Other targets such as **Logical Disk** may have only object but could have multiple depending on the configuration of the agent computer.
 
 **Workflow targeted at a single instance**
 
-![](../Image/AuthGuide_02_WorkflowSingleInstance.gif)
+![](/Image/AuthGuide_02_WorkflowSingleInstance.gif)
 
 **Workflow targeted at multiple instances**
 
-![](../Image/AuthGuide_02a_WorkflowMultipleInstance.gif)
+![](/Image/AuthGuide_02a_WorkflowMultipleInstance.gif)
 
 If you do target a class that may have multiple instances on a single agent, then you need to include criteria in the expression to unique identify each instance.
 
@@ -95,7 +95,7 @@ You can view the discovered inventory for a particular class using the following
 ## <a name="Groups"></a>Targeting a group
 Groups are included in the dialog box for selecting a target, but you will receive a warning if you select one. The reason for this is that there is rarely a case where you will want to select one. Monitors and rules run on the agent that manages their target object. The workflow will not enumerate the contents of the group but will attempt to run against the group object itself. Since groups are managed by the management server currently running the Root Management Server services, any workflows targeted at them will be loaded only on that server.
 
-If you do want to have a monitor or rule run only on the members of a particular group, then you can use the following procedure. Note that this is not an ideal strategy, and under most circumstances it would be more effective to create a target for your application as described in [Creating a new target](../Topic/Creating-a-new-target.md).
+If you do want to have a monitor or rule run only on the members of a particular group, then you can use the following procedure. Note that this is not an ideal strategy, and under most circumstances it would be more effective to create a target for your application as described in [Creating a new target](./Creating-a-new-target.md).
 
 #### To create a monitor or rule that runs on agents in a group
 
@@ -117,4 +117,5 @@ Certain monitoring wizards will require a group to be specified. This specifies 
 -   If you want the wizard to include all computers running SQL Server 2008 in your management group, then select **SQL 2008 Computers**.
 
 -   If you want the wizard to include all computers running any version of SQL Server in your management group, then select **SQL Computers**.
+
 

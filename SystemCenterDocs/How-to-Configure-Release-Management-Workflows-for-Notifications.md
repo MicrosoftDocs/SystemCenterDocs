@@ -12,11 +12,11 @@ ms.assetid: c44fdc5f-4eca-4464-9c6a-94ed45aeeace
 robots: noindex,nofollow
 ---
 # How to Configure Release Management Workflows for Notifications
-You can configure notifications for release records in [!INCLUDE[smlong12](../Token/smlong12_md.md)] by completing the following procedures. The following procedure sends a notification when a release record is created or updated.
+You can configure notifications for release records in [!INCLUDE[smlong12](./Token/smlong12_md.md)] by completing the following procedures. The following procedure sends a notification when a release record is created or updated.
 
 ### To configure a notification for updated release records
 
-1.  In the [!INCLUDE[smcons](../Token/smcons_md.md)], click **Administration**.
+1.  In the [!INCLUDE[smcons](./Token/smcons_md.md)], click **Administration**.
 
 2.  In the **Administration** pane, expand **Administration**, expand **Workflows**, and then click **Configuration**.
 
@@ -45,4 +45,5 @@ You can configure notifications for release records in [!INCLUDE[smlong12](../To
     9. On the **Summary** page, review your settings, and then click **Create**.
 
     10. On the **Completion** page, click **Close**.
+
 

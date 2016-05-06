@@ -15,21 +15,22 @@ This section describes how to deploy and start runbooks in your environment.
 
 ## Using runbooks
 
--   [Deploying Runbooks](../Topic/Deploying-Runbooks.md)
+-   [Deploying Runbooks](./Deploying-Runbooks.md)
 
--   [Running Runbooks](../Topic/Running-Runbooks.md)
+-   [Running Runbooks](./Running-Runbooks.md)
 
 ## Other resources for this product
 
--   TechNet Library main page for [Orchestrator_1](../Topic/Orchestrator_1.md)
+-   TechNet Library main page for [Orchestrator_1](./Orchestrator_1.md)
 
--   [Using Runbooks in System Center 2012 - Orchestrator](../Topic/Using-Runbooks-in-System-Center-2012---Orchestrator.md)
+-   [Using Runbooks in System Center 2012 - Orchestrator](./Using-Runbooks-in-System-Center-2012---Orchestrator.md)
 
--   [Runbook Concepts](../Topic/Runbook-Concepts.md)
+-   [Runbook Concepts](./Runbook-Concepts.md)
 
--   [Tools](../Topic/Tools.md)
+-   [Tools](./Tools.md)
 
--   [Design and Build Runbooks](../Topic/Design-and-Build-Runbooks.md)
+-   [Design and Build Runbooks](./Design-and-Build-Runbooks.md)
 
--   [Runbook Samples](../Topic/Runbook-Samples.md)
+-   [Runbook Samples](./Runbook-Samples.md)
+
 
