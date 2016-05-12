@@ -1,0 +1,1 @@
+<Token xmlns:xlink="http://www.w3.org/1999/xlink">System Center Virtual Machine Manager (VMM) 2008 R2</Token>

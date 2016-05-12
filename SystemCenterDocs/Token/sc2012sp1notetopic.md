@@ -1,0 +1,1 @@
+<Token xmlns:xlink="http://www.w3.org/1999/xlink">The information in this topic applies only to System Center 2012 SP1.</Token>

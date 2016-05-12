@@ -4,7 +4,7 @@
   "docsets_to_publish": [
     {
       "docset_name": "SystemCenterDocs",
-      "build_source_folder": "system-center",
+      "build_source_folder": "SystemCenterDocs",
       "build_output_subfolder": "system-center",
       "locale": "en-us",
       "version": 0,

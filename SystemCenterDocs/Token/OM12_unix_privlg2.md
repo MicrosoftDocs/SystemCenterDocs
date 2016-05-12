@@ -1,0 +1,1 @@
+<Token xmlns:xlink="http://www.w3.org/1999/xlink">A privileged account is a user account that has root-level access, including access to security logs and read, write, and execute permissions for the directories in which the Operations Manager agent is installed.</Token>
