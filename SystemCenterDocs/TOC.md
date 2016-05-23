@@ -52,7 +52,7 @@
 ##### [Operations Manager Key Concepts](OM/Get Started/Operations-Manager-Key-Concepts.md)
 ##### [Walkthrough: Installing Operations Manager on a Single Server](OM/Get Started/Walkthrough--Installing-Operations-Manager-on-a-Single-Server.md)
 ##### [Installing Operations Manager by Using the Command Prompt Window](OM/Deploy/Installing-Operations-Manager-by-Using-the-Command-Prompt-Window.md)
-#### [Deploying System Center 2016 - Operations Manager](Deploying-System-Center-2016---OM/Operations-Manager.md)
+#### [Deploying System Center 2016 - Operations Manager](Deploying-System-Center-2016-OM/Operations-Manager.md)
 ##### [Single-Server Deployment of Operations Manager](Single-Server-Deployment-of-OM/Operations-Manager.md)
 ##### [Distributed Deployment of Operations Manager](Distributed-Deployment-of-OM/Operations-Manager.md)
 ###### [How to Install an Operations Manager Management Server](OM/Deploy/How-to-Install-an-Operations-Manager-Management-Server.md)
