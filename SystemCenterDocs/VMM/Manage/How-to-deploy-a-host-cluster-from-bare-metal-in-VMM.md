@@ -11,7 +11,7 @@ ms.topic: article
 ms.assetid: 2fe49d04-4382-468a-bf91-cdce837507b4
 ---
 # How to deploy a host cluster from bare metal in VMM
-You can use [!INCLUDE[vmm12sp1_long](Token/vmm12sp1_long_md.md)] to deploy a host cluster, either to “bare\-metal computers” \(no operating system installed\), or computers with an installed operating system that will be overwritten during the process. For this deployment, [!INCLUDE[vmm12short](Token/vmm12short_md.md)] does the following:
+You can use [!INCLUDE[vmm12sp1_long](../../Token/vmm12sp1_long_md.md)] to deploy a host cluster, either to “bare\-metal computers” \(no operating system installed\), or computers with an installed operating system that will be overwritten during the process. For this deployment, [!INCLUDE[vmm12short](../../Token/vmm12short_md.md)] does the following:
 
 1.  Discovers the physical computers through out\-of\-band management
 
@@ -19,7 +19,7 @@ You can use [!INCLUDE[vmm12sp1_long](Token/vmm12sp1_long_md.md)] to deploy a hos
 
 3.  Installs the Hyper\-V role, the MPIO feature, and the failover clustering feature.
 
-4.  Brings the provisioned cluster under [!INCLUDE[vmm12short](Token/vmm12short_md.md)] management.
+4.  Brings the provisioned cluster under [!INCLUDE[vmm12short](../../Token/vmm12short_md.md)] management.
 
 ### To deploy a host cluster from bare metal
 
@@ -37,7 +37,7 @@ You can use [!INCLUDE[vmm12sp1_long](Token/vmm12sp1_long_md.md)] to deploy a hos
 
 6.  On the **Resource Type** page, select **Physical computers to be provisioned**, then fill in the options:
 
-    1.  Specify the Administrator Run As account that [!INCLUDE[vmm12short](Token/vmm12short_md.md)] will use for creating the cluster.
+    1.  Specify the Administrator Run As account that [!INCLUDE[vmm12short](../../Token/vmm12short_md.md)] will use for creating the cluster.
 
     2.  Select the physical computer profile \(which will provide the domain name and administrator Run As account for each node\).
 
@@ -64,7 +64,7 @@ You can use [!INCLUDE[vmm12sp1_long](Token/vmm12sp1_long_md.md)] to deploy a hos
 
 8.  If you specified a single IP address on the previous page, skip this step. Otherwise, the **Target Resources** page appears. Review the list of discovered BMCs \(identified by IP addresses\), and select the ones you want to include in the cluster.
 
-    If you don't see all the BMCs that you expect, confirm that they are on a network accessible to the [!INCLUDE[vmm12short](Token/vmm12short_md.md)] server, and as needed, click **Refresh**. If BMCs still appear to be missing, review [Prerequisites: creating hosts or host clusters from bare metal with VMM](Prerequisites--creating-hosts-or-host-clusters-from-bare-metal-with-VMM.md).
+    If you don't see all the BMCs that you expect, confirm that they are on a network accessible to the [!INCLUDE[vmm12short](../../Token/vmm12short_md.md)] server, and as needed, click **Refresh**. If BMCs still appear to be missing, review [Prerequisites: creating hosts or host clusters from bare metal with VMM](Prerequisites--creating-hosts-or-host-clusters-from-bare-metal-with-VMM.md).
 
     Deep discovery provides detailed information about a computer \(for example, MAC addresses of network adapters\) but restarts the computer, and requires additional time. You can allow or skip deep discovery.
 
@@ -95,7 +95,7 @@ You can use [!INCLUDE[vmm12sp1_long](Token/vmm12sp1_long_md.md)] to deploy a hos
         -   **MAC address\(host clusters only—management NIC\)**: If this is the management NIC for a host cluster, and you want to configure it as a virtual network adapter, type a MAC address.
 
             > [!NOTE]
-            > This is not the MAC address of the BMC. It is the MAC address of the management NIC, which can be used to communicate with the [!INCLUDE[vmm12short](Token/vmm12short_md.md)] management server.
+            > This is not the MAC address of the BMC. It is the MAC address of the management NIC, which can be used to communicate with the [!INCLUDE[vmm12short](../../Token/vmm12short_md.md)] management server.
 
         -   **Specify static IP settings for this network adapter**: If you check this box, select a logical network and \(if applicable in that logical network\) an IP subnet. If the selected IP subnet includes IP address pool, you can check **Obtain an IP address corresponding to the selected subnet**. Otherwise, type an IP address that is in within the logical network or its subnet.
 
@@ -111,7 +111,7 @@ You can use [!INCLUDE[vmm12sp1_long](Token/vmm12sp1_long_md.md)] to deploy a hos
 
     When you have filled in needed information for all the computers you want to provision, click **Next**.
 
-10. On the **Summary** page, confirm the settings, and then click **Finish** to deploy the computers, create the cluster, and bring it under [!INCLUDE[vmm12short](Token/vmm12short_md.md)] management.
+10. On the **Summary** page, confirm the settings, and then click **Finish** to deploy the computers, create the cluster, and bring it under [!INCLUDE[vmm12short](../../Token/vmm12short_md.md)] management.
 
     Depending on your settings, the **Jobs** dialog box might appear. Make sure that all steps in the job reach the **Completed** status, and then close the dialog box.
 

@@ -11,13 +11,13 @@ ms.topic: article
 ms.assetid: 1137cb8c-abcb-4929-bf4b-f3a41db1bf2e
 ---
 # How to Create a Request Offering
-Request offerings are catalog items that describe the item, assistance, or action that is available to end users in the service catalog. Request offerings are normally placed in logical groups of service offerings. Both service offerings and their request offerings are available to [!INCLUDE[smssp](Token/smssp_md.md)] users when the status of the offerings is set to Published and if end users have been assigned a corresponding [!INCLUDE[smshort](Token/smshort_md.md)] user role. Only users who have been assigned a user role associated with a catalog group that contains catalog items can use the [!INCLUDE[smssp](Token/smssp_md.md)] to access the service catalog.
+Request offerings are catalog items that describe the item, assistance, or action that is available to end users in the service catalog. Request offerings are normally placed in logical groups of service offerings. Both service offerings and their request offerings are available to [!INCLUDE[smssp](../../Token/smssp_md.md)] users when the status of the offerings is set to Published and if end users have been assigned a corresponding [!INCLUDE[smshort](../../Token/smshort_md.md)] user role. Only users who have been assigned a user role associated with a catalog group that contains catalog items can use the [!INCLUDE[smssp](../../Token/smssp_md.md)] to access the service catalog.
 
 You can use the following procedure to create a request offering.
 
 ### To create a request offering
 
-1.  In the [!INCLUDE[smcons](Token/smcons_md.md)], select **Library**.
+1.  In the [!INCLUDE[smcons](../../Token/smcons_md.md)], select **Library**.
 
 2.  In the **Library** pane, expand **Service Catalog**, and then select **Request Offerings**.
 
@@ -31,13 +31,13 @@ You can use the following procedure to create a request offering.
 
     2.  Optionally, next to **Image**, you can either **Browse** to an image file, or leave the default selection.
 
-    3.  In the **Description** text box, type a short description that describes the request offering that will appear on the [!INCLUDE[smssp](Token/smssp_md.md)] page. For example, type **Use this request offering to request membership to an Active Directory Group**.
+    3.  In the **Description** text box, type a short description that describes the request offering that will appear on the [!INCLUDE[smssp](../../Token/smssp_md.md)] page. For example, type **Use this request offering to request membership to an Active Directory Group**.
 
     4.  Under **Select template**, select **Service Request**, and then in the **Select Template** dialog box, select a template that you created previously for a service request. For example, select the **Request Membership to Group** template, and then click **OK**.
 
     5.  Next to **Management pack**, select an unsealed management pack of your choice, and then click **Next**. For example, if you previously created the Sample Management Pack, select it.
 
-6.  On the **User Prompts** page, enter questions for users or define other instructions which will appear in the [!INCLUDE[smssp](Token/smssp_md.md)] when a user submits a request by completing the following steps:
+6.  On the **User Prompts** page, enter questions for users or define other instructions which will appear in the [!INCLUDE[smssp](../../Token/smssp_md.md)] when a user submits a request by completing the following steps:
 
     1.  In the **Form instructions** box, type a summary of the information that the user must provide for the request. For example, type **Provide the information below to request membership to the Active Directory Group**
 

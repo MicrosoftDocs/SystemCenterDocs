@@ -8,7 +8,7 @@ ms.topic: article
 ms.assetid: 7926fd47-a33a-46fa-8adb-a797d52f0d20
 ---
 # How to select a method for creating logical units in VMM
-You can use the following procedure to configure the preferred capacity allocation method for a managed storage array in [!INCLUDE[vmm12sp1_long](Token/vmm12sp1_long_md.md)]. This setting defines how new logical units are allocated when you rapid provision virtual machines by using storage area network \(SAN\) copy technology. You can either create logical units by using the snapshot capability or by using the cloning capability.
+You can use the following procedure to configure the preferred capacity allocation method for a managed storage array in [!INCLUDE[vmm12sp1_long](../../Token/vmm12sp1_long_md.md)]. This setting defines how new logical units are allocated when you rapid provision virtual machines by using storage area network \(SAN\) copy technology. You can either create logical units by using the snapshot capability or by using the cloning capability.
 
 > [!NOTE]
 > The storage array must support the selected allocation method, and the functionality for the selected method must be enabled on the array. Also, realize that the selected allocation method might require additional licensing from your storage vendor.

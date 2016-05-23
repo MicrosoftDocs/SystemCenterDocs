@@ -11,15 +11,15 @@ ms.topic: article
 ms.assetid: 4190285b-64f7-44a9-95f4-f8ed816b7724
 ---
 # Starting a Runbook
-You can start a runbook in [!INCLUDE[sma_1](Token/sma_1_md.md)] using one of the following three methods.
+You can start a runbook in [!INCLUDE[sma_1](../../Token/sma_1_md.md)] using one of the following three methods.
 
 -   [Management Portal](Starting-a-Runbook.md#Portal)
 
 -   [PowerShell](Starting-a-Runbook.md#PowerShell)
 
--   [From another runbook](Child-Runbooks-in-Service-Management-Automation.md)
+-   [From another runbook](Child-Runbooks-in-../Service-Management-Automation.md)
 
-The first two methods are documented below. Calling a runbook from another runbook is documented in [Child Runbooks](Child-Runbooks-in-Service-Management-Automation.md).
+The first two methods are documented below. Calling a runbook from another runbook is documented in [Child Runbooks](Child-Runbooks-in-../Service-Management-Automation.md).
 
 ## <a name="Portal"></a>To start a runbook from the Windows Azure Pack Management Portal
 
@@ -91,7 +91,7 @@ To reset the runbook to use any available Worker server, set the **RunbookWorker
 ## <a name="Parameters"></a>Runbook Parameters
 Parameters are values that a runbook requires when it is started. For example, a runbook that creates a new virtual machine would presumably have a parameter for you to specify the computer name. If a parameter is mandatory, then you must provide a value for it when you start the runbook. If a parameter is not mandatory, then can provide a value but are not required to.
 
-When you start a runbook using the Management Portal or Windows PowerShell, the instruction is sent through the Automation web service. This service does not support parameters with complex data types. If you need to provide a value for a complex parameter, then you must call it inline from another runbook as described in [Child Runbooks](Child-Runbooks-in-Service-Management-Automation.md).
+When you start a runbook using the Management Portal or Windows PowerShell, the instruction is sent through the Automation web service. This service does not support parameters with complex data types. If you need to provide a value for a complex parameter, then you must call it inline from another runbook as described in [Child Runbooks](Child-Runbooks-in-../Service-Management-Automation.md).
 
 The Automation web service will provide special functionality for parameters using certain data types as described in the following sections.
 
@@ -168,7 +168,7 @@ Smith
 ```
 
 ### <a name="Credentials"></a>Credentials
-If the parameter is data type \[PSCredential\], then you can provide the name of a [!INCLUDE[sma_1](Token/sma_1_md.md)] credential asset. The runbook will retrieve the [credential asset](http://aka.ms/runbookauthor/assets/credentials) with the name that you specify.
+If the parameter is data type \[PSCredential\], then you can provide the name of a [!INCLUDE[sma_1](../../Token/sma_1_md.md)] credential asset. The runbook will retrieve the [credential asset](http://aka.ms/runbookauthor/assets/credentials) with the name that you specify.
 
 Consider the following test runbook that accepts a parameter called *credential*.
 
@@ -195,8 +195,8 @@ jsmith
 ```
 
 ## See Also
-[Service Management Automation](Service-Management-Automation.md)
+[Service Management Automation](../Service-Management-Automation.md)
 [Runbook Operations](Runbook-Operations.md)
-[Child Runbooks](Child-Runbooks-in-Service-Management-Automation.md)
+[Child Runbooks](Child-Runbooks-in-../Service-Management-Automation.md)
 
 

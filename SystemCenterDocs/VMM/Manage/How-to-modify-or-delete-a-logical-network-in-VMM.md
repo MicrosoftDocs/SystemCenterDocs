@@ -11,7 +11,7 @@ ms.topic: article
 ms.assetid: 2705c237-8576-44bb-9871-f5ba644d854e
 ---
 # How to modify or delete a logical network in VMM
-You can use the following procedures to modify or delete a logical network in [!INCLUDE[vmm12sp1_long](Token/vmm12sp1_long_md.md)]. For example, you may want to add or remove an associated network site, or modify an IP address pool.
+You can use the following procedures to modify or delete a logical network in [!INCLUDE[vmm12sp1_long](../../Token/vmm12sp1_long_md.md)]. For example, you may want to add or remove an associated network site, or modify an IP address pool.
 
 **Account requirements** To complete this procedure, you must be a member of the Administrator or the Delegated Administrator user role.
 

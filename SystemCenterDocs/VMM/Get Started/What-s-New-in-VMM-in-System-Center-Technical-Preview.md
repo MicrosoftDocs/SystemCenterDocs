@@ -62,7 +62,7 @@ The following Compute enhancements are available in VMM 2016 Technical Preview:
 You can now use VMM and perform full lifecycle management of Nano Server-based hosts and virtual machines and leverage the benefits that Nano Server comes with. 
 
 * **Preparing a Nano Server-based host for VMM management**
-The very first step in getting started with the lifecycle management of Nano Server is to prepare a Nano Server-based host for VMM. For details, see [How to add a Nano Server as a Hyper-V host in VMM](How-to-add-a-Nano-Server-as-a-Hyper-V-host-in-VMM.md)
+The very first step in getting started with the lifecycle management of Nano Server is to prepare a Nano Server-based host for VMM. For details, see [How to add a Nano Server as a Hyper-V host in VMM](../Manage/How-to-add-a-Nano-Server-as-a-Hyper-V-host-in-VMM.md)
 
 * **Management of Nano Server-based hosts and clusters (both compute and storage)**
 You can now add and manage existing Nano Server-based standalone hosts, compute clusters, and storage clusters (both dis-aggregated and hyper-converged) using VMM. For more details, see [Working with Hyper-V hosts, host clusters and Scale-Out File Servers in VMM](https://technet.microsoft.com/library/mt218831.aspx)
@@ -90,12 +90,12 @@ With VMM 2016, you can now directly add a bare-metal computer to an existing Hyp
 
 ### **New operations for running VMs**
 
-You can now increase/decrease static memory and add/remove virtual network adapter for a running VM. For more details about how to increase or decrease static memory including sample PowerShell scripts, see [Manage Memory for a VM while it is running](Manage-Memory-for-a-VM-while-it-is-running.md)
-For more information about adding or removing a vNIC see [How to add or remove a vNIC for a running VM](How-to-add-or-remove-a-vNIC.md)
+You can now increase/decrease static memory and add/remove virtual network adapter for a running VM. For more details about how to increase or decrease static memory including sample PowerShell scripts, see [Manage Memory for a VM while it is running](../Manage/Manage-Memory-for-a-VM-while-it-is-running.md)
+For more information about adding or removing a vNIC see [How to add or remove a vNIC for a running VM](../Manage/How-to-add-or-remove-a-vNIC.md)
 
 ### **Production checkpoints** 
 
-You can now create “production checkpoints” for VMs. These checkpoints are based on Volume Shadow Copy Service (VSS) and are application-consistent compared to the “standard checkpoints” that are based on Saved State technology and were not application-consistent.  For more information on production checkpoints see [How to create a production checkpoint for a virtual machine](How-to-create-a-production-checkpoint-for-a-virtual-machine.md)
+You can now create “production checkpoints” for VMs. These checkpoints are based on Volume Shadow Copy Service (VSS) and are application-consistent compared to the “standard checkpoints” that are based on Saved State technology and were not application-consistent.  For more information on production checkpoints see [How to create a production checkpoint for a virtual machine](../Manage/How-to-create-a-production-checkpoint-for-a-virtual-machine.md)
 
 ### **Server App-V deprecation in VMM 2016**
 
@@ -109,20 +109,20 @@ The following storage enhancements are available in VMM in System Center 2016 Te
 
 Windows Server 2016 Technical Preview introduces Storage Spaces Direct which enables you to build highly available storage system that fit your specific needs, regardless of the exact configuration of your available storage systems. You can use VMM to create a Scale-Out File Server running Windows Server Technical Preview and configure it with Storage Spaces Direct. Then you can create storage pools and file shares on the Scale-Out File Server.
 
--   For more information, see [Deploying Storage Spaces Direct with VMM](Deploying-Storage-Spaces-Direct-with-VMM.md)
+-   For more information, see [Deploying Storage Spaces Direct with VMM](../Manage/Deploying-Storage-Spaces-Direct-with-VMM.md)
 -   For information about Storage Spaces Direct, see [Storage Spaces Direct in Windows Server Technical Preview](https://technet.microsoft.com/library/mt126109.aspx)
 
 ### **Storage Replica** 
 
 With VMM 2016 you can protect data in a volume by synchronously replicating it to another volume. These two volumes are called the Primary and Recovery volumes. You can deploy the Primary and Secondary volumes either to a single cluster, to two different clusters, or to two stand-alone servers. With VMM 2016 you can use PowerShell to setup Storage Replica between two volumes that are part of a single cluster. Once Storage Replica is setup you can use PowerShell to failover from the Primary Volume to the Recovery Volume.
 
--   For more information, see [Deploying Storage Replica in VMM](Deploying-Storage-Replica-in-VMM.md)
+-   For more information, see [Deploying Storage Replica in VMM](../Manage/Deploying-Storage-Replica-in-VMM.md)
 -   For more information about Storage Replica, see [Storage Replica OVerview](https://technet.microsoft.com/library/mt126183.aspx)
 
 ### **Quality of Service (QoS) for storage**: 
 
 When hosts and storage are under heavy load, you might want to ensure that certain disks, virtual machines, applications, or tenants will not drop below a certain Quality of Service (QoS) for storage. VMM has been improved so it’s easier to specify QoS. 
-- For more information, see [Managing storage Quality of Service for Scale-out file servers in VMM](Managing-storage-Quality-of-Service-policies-for-Scale-Out-File-Servers-in-VMM.md)
+- For more information, see [Managing storage Quality of Service for Scale-out file servers in VMM](../Manage/Managing-storage-Quality-of-Service-policies-for-Scale-Out-File-Servers-in-VMM.md)
 ## <a name="bkmkNetworking"></a>Networking
 
 
@@ -135,7 +135,7 @@ With VMM 2016, you can deploy the entire Software Defined Networking (SDN) stack
 * You can deploy and manage a multi-node Network Controller(NC) in a subnet using VMM Service Templates. After you deploy and onboard the Network Controller, you can configure Network Controller managed fabric to provide connectivity to tenant VMs and to define policies.
 * You can deploy and configure a Software Load Balancer to distribute traffic within a network managed by Network Controller. With VMM 2016 Technical Preview release, Software Load Balancer can now also be used for in bound and out bound NAT.
 * You can deploy and configure a Windows Server Gateway pool with M+N redundancy using VMM Service Templates. After onboarding Windows Server Gateway, you can connect a tenant network to a hosting provider network or to your own remote data center network using either of the three types of connections supported by Gateway – S2S GRE, S2S IPSec and L3.
--   For more information, see [Deploy a Software Defined Network Infrastructure using VMM](Deploy-a-Software-Defined-Network-infrastructure-using-VMM.md)
+-   For more information, see [Deploy a Software Defined Network Infrastructure using VMM](../Manage/Deploy-a-Software-Defined-Network-infrastructure-using-VMM.md)
 
 ### **Access Control Lists (ACL) for individual ports**
 

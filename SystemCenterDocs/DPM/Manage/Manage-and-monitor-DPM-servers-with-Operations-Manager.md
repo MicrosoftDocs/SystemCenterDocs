@@ -90,7 +90,7 @@ DPM provides the following management packs:
 
 Note that:
 
--   [!INCLUDE[dpm2012short](Token/dpm2012short_md.md)] adds firewall exceptions for port 6075 to enable scoped Administrator console. Open ports for SQL Server.exe and SQL browser.exe.
+-   [!INCLUDE[dpm2012short](../../Token/dpm2012short_md.md)] adds firewall exceptions for port 6075 to enable scoped Administrator console. Open ports for SQL Server.exe and SQL browser.exe.
 
 -   If you need to uninstall Operations Manager, see [How to Uninstall Operations Manager](http://go.microsoft.com/fwlink/p/?LinkId=245527).
 

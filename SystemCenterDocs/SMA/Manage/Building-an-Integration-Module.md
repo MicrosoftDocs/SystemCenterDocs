@@ -49,7 +49,7 @@ If the module should contain a [Connection](Connections.md) type, it must also c
 |MyModule|MyModule.psd1 or<br /><br />MyModule.psm1 or<br /><br />MyModule.dll<br /><br />MyModule\-Automation.json|
 
 ## See Also
-[Service Management Automation](Service-Management-Automation.md)
+[Service Management Automation](../Service-Management-Automation.md)
 [Authoring Automation Runbooks](Authoring-Automation-Runbooks.md)
 [Working with Integration Modules](Working-with-Integration-Modules.md)
 

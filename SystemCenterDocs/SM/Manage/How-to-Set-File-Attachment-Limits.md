@@ -15,7 +15,7 @@ Use the following procedure to limit the number and size of files that can be at
 
 ### To set file attachment limits
 
-1.  In the [!INCLUDE[smcons](Token/smcons_md.md)], click **Administration**.
+1.  In the [!INCLUDE[smcons](../../Token/smcons_md.md)], click **Administration**.
 
 2.  In the **Administration** pane, expand **Administration**, and then click **Settings**.
 

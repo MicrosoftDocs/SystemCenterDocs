@@ -11,13 +11,13 @@ ms.topic: article
 ms.assetid: bcede83b-0c4c-4dbd-b943-d62bbcb1242e
 ---
 # How to Publish a Service Offering
-You can publish draft service offerings by using the Publish task or by using a change request. When you publish a service offering by using the Publish task, the service offing must contain at least one published request offering before it appears in the [!INCLUDE[smssp](Token/smssp_md.md)]. If you want to have an approval process added before publishing, you can associate the service offering with a change request. If you use a change request, you can also send email notifications as the approval process occurs.
+You can publish draft service offerings by using the Publish task or by using a change request. When you publish a service offering by using the Publish task, the service offing must contain at least one published request offering before it appears in the [!INCLUDE[smssp](../../Token/smssp_md.md)]. If you want to have an approval process added before publishing, you can associate the service offering with a change request. If you use a change request, you can also send email notifications as the approval process occurs.
 
 You can use the following procedures to publish a draft service offering and then use a change request to publish it.
 
 ### To publish a draft service offering
 
-1.  In the [!INCLUDE[smcons](Token/smcons_md.md)], select **Library**.
+1.  In the [!INCLUDE[smcons](../../Token/smcons_md.md)], select **Library**.
 
 2.  In the **Library** pane, expand **Service Catalog**, and then select **Draft Service Offerings**.
 
@@ -25,7 +25,7 @@ You can use the following procedures to publish a draft service offering and the
 
 ### To use a change request to publish a draft service offering
 
-1.  In the [!INCLUDE[smcons](Token/smcons_md.md)], select **Library**.
+1.  In the [!INCLUDE[smcons](../../Token/smcons_md.md)], select **Library**.
 
 2.  In the **Library** pane, expand **Service Catalog**, and then select **Draft Service Offerings**.
 

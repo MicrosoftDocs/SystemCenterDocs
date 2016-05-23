@@ -111,7 +111,7 @@ Use the following procedures to locate the user accounts and instances of SQL Se
 1.  > [!NOTE]
     > The account that is configured by using the names in the following data sources in SQL Server Reporting Services is called the **Reporting account**.
 
-    Log on to the server with SQL Server Reporting Services that are hosting the [!INCLUDE[smshort](Token/smshort_md.md)] reports.
+    Log on to the server with SQL Server Reporting Services that are hosting the [!INCLUDE[smshort](../../Token/smshort_md.md)] reports.
 
     > [!NOTE]
     > In this procedure, you will use values that you noted in the "To identify the reporting server and instance names used by data warehouse management server" procedure above.

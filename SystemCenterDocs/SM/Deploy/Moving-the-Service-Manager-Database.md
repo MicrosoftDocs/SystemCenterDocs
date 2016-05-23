@@ -11,20 +11,20 @@ ms.topic: article
 ms.assetid: 0c83c9a4-720f-4327-98b9-16dca71a13b2
 ---
 # Moving the Service Manager Database
-You must use the following high\-level steps to move the [!INCLUDE[smshort](Token/smshort_md.md)] database.
+You must use the following high\-level steps to move the [!INCLUDE[smshort](../../Token/smshort_md.md)] database.
 
 > [!NOTE]
-> These steps link to content in the [!INCLUDE[smshort](Token/smshort_md.md)] Upgrade Guide.
+> These steps link to content in the [!INCLUDE[smshort](../../Token/smshort_md.md)] Upgrade Guide.
 
 1.  Open the inbound SQL Port on new Service Manager database server. The default port is 1433.
 
 2.  Stop the System Center services on all the management servers, as described in [How to Stop Service Manager Services on the Secondary Management Server](http://technet.microsoft.com/library/jj900194.aspx).
 
-3.  Back up the [!INCLUDE[smshort](Token/smshort_md.md)] database, as described in [How to Back Up the Production Service Manager Database](http://technet.microsoft.com/library/jj900185.aspx).
+3.  Back up the [!INCLUDE[smshort](../../Token/smshort_md.md)] database, as described in [How to Back Up the Production Service Manager Database](http://technet.microsoft.com/library/jj900185.aspx).
 
-4.  Restore the [!INCLUDE[smshort](Token/smshort_md.md)] database on the target computer that is running Microsoft SQL Server, as described in [How to Restore the Service Manager Database in the Lab Environment](http://technet.microsoft.com/library/jj900192.aspx).
+4.  Restore the [!INCLUDE[smshort](../../Token/smshort_md.md)] database on the target computer that is running Microsoft SQL Server, as described in [How to Restore the Service Manager Database in the Lab Environment](http://technet.microsoft.com/library/jj900192.aspx).
 
-5.  Configure the [!INCLUDE[smshort](Token/smshort_md.md)] database, as described in [How to Prepare the Service Manager Database in the Lab Environment](http://technet.microsoft.com/library/jj900187.aspx).
+5.  Configure the [!INCLUDE[smshort](../../Token/smshort_md.md)] database, as described in [How to Prepare the Service Manager Database in the Lab Environment](http://technet.microsoft.com/library/jj900187.aspx).
 
     > [!IMPORTANT]
     > Do not perform step 17 in the procedure for configuring tables.
@@ -55,7 +55,7 @@ You must use the following high\-level steps to move the [!INCLUDE[smshort](Toke
 
 9. Start the System Center services on all the management servers, as described in [How to Start Service Manager Services on the Secondary Management Server](http://technet.microsoft.com/library/jj900196.aspx).
 
-10. Install another [!INCLUDE[smshort](Token/smshort_md.md)] database that has a different name on the same computer that is running SQL Server, by installing another [!INCLUDE[smshort](Token/smshort_md.md)] management server and choosing to create a new database. This step will populate the master database with error message text so that if an error occurs in the future, the error message can describe the specific problem instead of displaying generic text. After the database is installed, you can drop it from the computer that is running SQL Server and uninstall the additional, temporary management server.
+10. Install another [!INCLUDE[smshort](../../Token/smshort_md.md)] database that has a different name on the same computer that is running SQL Server, by installing another [!INCLUDE[smshort](../../Token/smshort_md.md)] management server and choosing to create a new database. This step will populate the master database with error message text so that if an error occurs in the future, the error message can describe the specific problem instead of displaying generic text. After the database is installed, you can drop it from the computer that is running SQL Server and uninstall the additional, temporary management server.
 
     \-Or\-
 

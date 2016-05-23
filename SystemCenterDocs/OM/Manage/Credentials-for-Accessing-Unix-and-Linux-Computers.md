@@ -14,7 +14,7 @@ ms.assetid: 840ea9cc-9407-4bfe-afcd-2ce62aa6cf7d
 This topic describes the credentials required to install, maintain, upgrade, and uninstall agents on a UNIX or Linux computer.
 
 ## Credentials for Installing Agents
-[!INCLUDE[om12short](Token/om12short_md.md)] uses the Secure Shell \(SSH\) protocol to install an agent and Web Services for Management \(WS\-Management\) to discover previously installed agents. Installation requires a privileged account on the UNIX or Linux computer. There are two ways to provide credentials to the targeted computer, as obtained by the **Computer and Device Management Wizard**:
+[!INCLUDE[om12short](../../Token/om12short_md.md)] uses the Secure Shell \(SSH\) protocol to install an agent and Web Services for Management \(WS\-Management\) to discover previously installed agents. Installation requires a privileged account on the UNIX or Linux computer. There are two ways to provide credentials to the targeted computer, as obtained by the **Computer and Device Management Wizard**:
 
 -   Specify a user name and password.
 
@@ -35,7 +35,7 @@ The installation is not completed until the agent is verified. Agent verificatio
 Alternatively, you can install the agent, including its certificate, manually on the UNIX or Linux computer and then discover that computer. This method is the most secure way to install agents. For more information, see [Install the Agent and Certificate on UNIX and Linux Computers Using the Command Line](Install-the-Agent-and-Certificate-on-UNIX-and-Linux-Computers-Using-the-Command-Line.md).
 
 ### Credentials for Monitoring Operations and Performing Agent Maintenance
-[!INCLUDE[om12short](Token/om12short_md.md)] contains three predefined profiles to use in monitoring UNIX and Linux computers and performing agent maintenance:
+[!INCLUDE[om12short](../../Token/om12short_md.md)] contains three predefined profiles to use in monitoring UNIX and Linux computers and performing agent maintenance:
 
 -   UNIX\/Linux action account
 
@@ -51,7 +51,7 @@ Alternatively, you can install the agent, including its certificate, manually on
 
 In the UNIX and Linux management packs, all the rules, monitors, tasks, recoveries, and other management pack elements are configured to use these profiles. Consequently, there is no requirement to define additional profiles by using the Run As Profiles Wizard unless special circumstances dictate it. The profiles are not cumulative in the scope. For example, the UNIX\/Linux maintenance account profile cannot be used in place of the other profiles simply because it is configured by using a privileged account.
 
-In [!INCLUDE[om12short](Token/om12short_md.md)], a profile cannot function until it is associated with at least one Run As account. The credentials for accessing the UNIX or Linux computers are configured in the Run As accounts. Because there are no predefined Run As accounts for UNIX and Linux monitoring, you must create them.
+In [!INCLUDE[om12short](../../Token/om12short_md.md)], a profile cannot function until it is associated with at least one Run As account. The credentials for accessing the UNIX or Linux computers are configured in the Run As accounts. Because there are no predefined Run As accounts for UNIX and Linux monitoring, you must create them.
 
 To create a Run As account, you must run the **UNIX\/Linux Run As Account Wizard** that is available when you select **UNIX\/Linux Accounts** in the **Administration** workspace. The wizard creates a Run As account based on the choice of a Run As account type. There are two Run As account types:
 

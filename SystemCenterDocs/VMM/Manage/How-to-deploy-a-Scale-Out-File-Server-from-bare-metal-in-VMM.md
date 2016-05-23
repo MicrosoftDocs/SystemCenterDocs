@@ -8,7 +8,7 @@ ms.topic: article
 ms.assetid: a13a8ace-ccc8-4ecc-ba69-b2c9fb05c9c4
 ---
 # How to deploy a Scale-Out File Server from bare metal in VMM
-You can use [!INCLUDE[vmm12sp1_long](Token/vmm12sp1_long_md.md)] to deploy a Scale\-Out File Server, either to “bare\-metal computers” \(no operating system installed\), or computers with an installed operating system that will be overwritten during the process. For this deployment, [!INCLUDE[vmm12short](Token/vmm12short_md.md)] does the following:
+You can use [!INCLUDE[vmm12sp1_long](../../Token/vmm12sp1_long_md.md)] to deploy a Scale\-Out File Server, either to “bare\-metal computers” \(no operating system installed\), or computers with an installed operating system that will be overwritten during the process. For this deployment, [!INCLUDE[vmm12short](../../Token/vmm12short_md.md)] does the following:
 
 1.  Discovers the physical computers through out\-of\-band management
 
@@ -18,7 +18,7 @@ You can use [!INCLUDE[vmm12sp1_long](Token/vmm12sp1_long_md.md)] to deploy a Sca
 
 4.  After creating the cluster, enables the Scale\-Out File Server role.
 
-5.  Brings the provisioned Scale\-Out File Server under [!INCLUDE[vmm12short](Token/vmm12short_md.md)] management
+5.  Brings the provisioned Scale\-Out File Server under [!INCLUDE[vmm12short](../../Token/vmm12short_md.md)] management
 
 ### To deploy a Scale\-Out File Server from bare metal
 
@@ -32,7 +32,7 @@ You can use [!INCLUDE[vmm12sp1_long](Token/vmm12sp1_long_md.md)] to deploy a Sca
 
 5.  On the **General Configuration** page,  specify a **Cluster name**, a **Scale\-Out File Server name**, and \(if you are not using DHCP\) **Cluster IP addresses**. For example, you could use the names **Cluster03**, **SOFileSrv02**, and an appropriate IP address for your environment.
 
-    If the existing servers are running [!INCLUDE[winthreshold_server_2](Token/winthreshold_server_2_md.md)], also choose a **Storage configuration**:
+    If the existing servers are running [!INCLUDE[winthreshold_server_2](../../Token/winthreshold_server_2_md.md)], also choose a **Storage configuration**:
 
     -   For shared storage, click **Storage connected to the cluster using shared SAS, FC, or iSCSI**.
 
@@ -69,7 +69,7 @@ You can use [!INCLUDE[vmm12sp1_long](Token/vmm12sp1_long_md.md)] to deploy a Sca
 
 8.  If you specified a single IP address on the previous page, skip this step. Otherwise, the **Target Resources** page appears. Review the list of discovered BMCs \(identified by IP addresses\), and select the ones you want to include in the cluster.
 
-    If you don't see all the BMCs that you expect, confirm that they are on a network accessible to the [!INCLUDE[vmm12short](Token/vmm12short_md.md)] server, and as needed, click **Refresh**. If BMCs still appear to be missing, review [Prerequisites: creating Scale-Out File Servers from bare metal with VMM](Prerequisites--creating-Scale-Out-File-Servers-from-bare-metal-with-VMM.md).
+    If you don't see all the BMCs that you expect, confirm that they are on a network accessible to the [!INCLUDE[vmm12short](../../Token/vmm12short_md.md)] server, and as needed, click **Refresh**. If BMCs still appear to be missing, review [Prerequisites: creating Scale-Out File Servers from bare metal with VMM](Prerequisites--creating-Scale-Out-File-Servers-from-bare-metal-with-VMM.md).
 
     Deep discovery provides detailed information about a computer \(for example, MAC addresses of network adapters\) but restarts the computer, and requires additional time. You can allow or skip deep discovery.
 
@@ -111,7 +111,7 @@ You can use [!INCLUDE[vmm12sp1_long](Token/vmm12sp1_long_md.md)] to deploy a Sca
 
     When you have filled in needed information for all the computers you want to provision, click **Next**.
 
-10. On the **Summary** page, confirm the settings, and then click **Finish** to deploy the computers, create the cluster, and bring it under [!INCLUDE[vmm12short](Token/vmm12short_md.md)] management.
+10. On the **Summary** page, confirm the settings, and then click **Finish** to deploy the computers, create the cluster, and bring it under [!INCLUDE[vmm12short](../../Token/vmm12short_md.md)] management.
 
     Depending on your settings, the **Jobs** dialog box might appear. Make sure that all steps in the job reach the **Completed** status, and then close the dialog box.
 

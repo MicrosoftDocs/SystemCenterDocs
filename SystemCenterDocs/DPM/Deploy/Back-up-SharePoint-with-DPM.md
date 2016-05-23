@@ -19,7 +19,7 @@ You can deploy DPM to protect SharePoint farms, external SQL Server databases, a
 
 ## Prerequisites and limitations
 
--   For a list of supported SharePoint versions and the DPM versions required to back them up see [What can DPM back up?](What-can-DPM-back-up-.md)
+-   For a list of supported SharePoint versions and the DPM versions required to back them up see [What can DPM back up?](../Get Started/What-can-DPM-back-up-.md)
 
 -   By default when you protect SharePoint all content databases \(and the SharePoint\_Config and SharePoint\_AdminContent\* databases\) will be protected. If you want to add customizations such as search indexes, templates or application service databases, or the user profile service you’ll need to configure these for protection separately. Be sure that you enable protection for all folders that include these types of features or customization files.
 
@@ -43,13 +43,13 @@ You can deploy DPM to protect SharePoint farms, external SQL Server databases, a
 
     -   System requirements for DPM
 
-    -   [What can DPM back up?](What-can-DPM-back-up-.md)
+    -   [What can DPM back up?](../Get Started/What-can-DPM-back-up-.md)
 
-    -   [What's supported and what isn't for DPM?](What-s-supported-and-what-isn-t-for-DPM-.md)
+    -   [What's supported and what isn't for DPM?](../Get Started/What-s-supported-and-what-isn-t-for-DPM-.md)
 
-    -   [Get DPM installed](Get-DPM-installed.md)
+    -   [Get DPM installed](../Get Started/Get-DPM-installed.md)
 
-2.  **Set up storage**—You can store backed up data on disk, on tape, and in the cloud with Azure. Read more in [Prepare data storage](Prepare-data-storage.md).
+2.  **Set up storage**—You can store backed up data on disk, on tape, and in the cloud with Azure. Read more in [Prepare data storage](../Get Started/Prepare-data-storage.md).
 
 3.  **Set up the DPM protection agent**—You'll need to install the DPM protection agent on every server in the SharePoint farm, including SQL Servers.  The only exception is that you only install it on a single Web Front End \(WFE\) server. For example if you have a single farm with two WFE servers, an index server and a two\-node SQL Server cluster you’d install the agent on the index server, both nodes in the SQL Server cluster, and one of the WFE servers.  Because WFE servers don't host content DPM only needs the agent on one of them to serve as the entry point for protection. . Read [Deploy the DPM protection agent](Deploy-the-DPM-protection-agent.md).
 

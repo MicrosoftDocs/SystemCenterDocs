@@ -11,13 +11,13 @@ ms.topic: article
 ms.assetid: ef24bc6b-17ec-4cb3-8de8-35ca0cc7d5a7
 ---
 # How to Install the Service Manager Data Warehouse (Four-Computer Scenario)
-To start deployment of the [!INCLUDE[scsm_threshold_1](Token/scsm_threshold_1_md.md)] data warehouse and data warehouse databases, install the data warehouse management server on one computer \(for example, computer 3\), and all of the data warehouse databases on another computer \(for example, computer 4\).
+To start deployment of the [!INCLUDE[scsm_threshold_1](../../Token/scsm_threshold_1_md.md)] data warehouse and data warehouse databases, install the data warehouse management server on one computer \(for example, computer 3\), and all of the data warehouse databases on another computer \(for example, computer 4\).
 
 During Setup, you will be prompted to provide credentials for the following accounts:
 
 -   Management group administrator
 
--   [!INCLUDE[smshort12](Token/smshort12_md.md)] services account
+-   [!INCLUDE[smshort12](../../Token/smshort12_md.md)] services account
 
 -   Reporting account
 
@@ -29,7 +29,7 @@ The data warehouse databases include the following three databases: DWStagingAnd
 
 ### To install a data warehouse management server
 
-1.  Because, in this scenario, the computer that hosts SQL Server Reporting Services \(SSRS\) is not the same computer that hosts the data warehouse management server, you have to prepare the computer that will remotely host SSRS for [!INCLUDE[smshort12](Token/smshort12_md.md)]. See [Manual Steps to Configure the Remote SQL Server Reporting Services](Manual-Steps-to-Configure-the-Remote-SQL-Server-Reporting-Services.md) before continuing with this procedure.
+1.  Because, in this scenario, the computer that hosts SQL Server Reporting Services \(SSRS\) is not the same computer that hosts the data warehouse management server, you have to prepare the computer that will remotely host SSRS for [!INCLUDE[smshort12](../../Token/smshort12_md.md)]. See [Manual Steps to Configure the Remote SQL Server Reporting Services](Manual-Steps-to-Configure-the-Remote-SQL-Server-Reporting-Services.md) before continuing with this procedure.
 
 2.  Log on to the computer that will host the data warehouse management server by using an account that has administrator rights. For example, run Setup on Computer 3.
 
@@ -37,9 +37,9 @@ The data warehouse databases include the following three databases: DWStagingAnd
 
 4.  On the **Service Manager Setup Wizard** page, click **Service Manager data warehouse management server**.
 
-5.  On the **Product registration** page, in the **Product key** boxes, type the product key that you received with [!INCLUDE[smshort12](Token/smshort12_md.md)], or as an alternative, select **Install as an evaluation edition \(180 day trial\)**. Read the Microsoft Software License Terms, and, if applicable, click **I have read, understood, and agree with the terms of the license agreement**, and then click **Next**.
+5.  On the **Product registration** page, in the **Product key** boxes, type the product key that you received with [!INCLUDE[smshort12](../../Token/smshort12_md.md)], or as an alternative, select **Install as an evaluation edition \(180 day trial\)**. Read the Microsoft Software License Terms, and, if applicable, click **I have read, understood, and agree with the terms of the license agreement**, and then click **Next**.
 
-6.  On the **Installation location** page, verify that sufficient free disk space is available, and then click **Next**. If necessary, click **Browse** to change the location where the [!INCLUDE[smshort12](Token/smshort12_md.md)] management server will be installed.
+6.  On the **Installation location** page, verify that sufficient free disk space is available, and then click **Next**. If necessary, click **Browse** to change the location where the [!INCLUDE[smshort12](../../Token/smshort12_md.md)] management server will be installed.
 
 7.  On the **System check results** page, verify that prerequisites passed or at least passed with warnings, and then click **Next**.
 
@@ -63,9 +63,9 @@ The data warehouse databases include the following three databases: DWStagingAnd
     1.  In the **Management group name** box, type a unique name for the group name.
 
         > [!CAUTION]
-        > Management group names must be unique. Do not use the same management group name even when deploying a [!INCLUDE[smshort12](Token/smshort12_md.md)] management server and a [!INCLUDE[smshort12](Token/smshort12_md.md)] data warehouse management server. Furthermore, do not use the management group name that is used for Operations Manager. All data warehouse management group names have the prefix DW\_.
+        > Management group names must be unique. Do not use the same management group name even when deploying a [!INCLUDE[smshort12](../../Token/smshort12_md.md)] management server and a [!INCLUDE[smshort12](../../Token/smshort12_md.md)] data warehouse management server. Furthermore, do not use the management group name that is used for Operations Manager. All data warehouse management group names have the prefix DW\_.
 
-    2.  Click **Browse**, enter the user or group that you want to be the [!INCLUDE[smshort12](Token/smshort12_md.md)] administrator, and then click **Next**.
+    2.  Click **Browse**, enter the user or group that you want to be the [!INCLUDE[smshort12](../../Token/smshort12_md.md)] administrator, and then click **Next**.
 
         > [!NOTE]
         > The group Domain\\Administrators is not allowed as a management group administrator.
@@ -99,7 +99,7 @@ The data warehouse databases include the following three databases: DWStagingAnd
 
 17. On the **Help improve System Center Service Manager** page, indicate your preference for participation in the Customer Experience Improvement Program. Optionally, click **Tell me more about the program**, and then click **Next**.
 
-18. On the **Use Microsoft Update to help keep your computer secure and up\-to\-date** page, indicate your preference for using Microsoft Update to check for [!INCLUDE[smshort12](Token/smshort12_md.md)] updates. Select **Initiate machine wide Automatic update** if you want Windows Update to check for updates. Click **Next**.
+18. On the **Use Microsoft Update to help keep your computer secure and up\-to\-date** page, indicate your preference for using Microsoft Update to check for [!INCLUDE[smshort12](../../Token/smshort12_md.md)] updates. Select **Initiate machine wide Automatic update** if you want Windows Update to check for updates. Click **Next**.
 
 19. On the **Installation summary** page, click **Install**.
 

@@ -11,7 +11,7 @@ ms.topic: article
 ms.assetid: 9715f228-3a9c-4158-a764-e3b23ee45c67
 ---
 # How to Import an Operations Manager Management Pack
-There are numerous management packs available for [!INCLUDE[om12long](Token/om12long_md.md)]. You have several options for importing management packs:
+There are numerous management packs available for [!INCLUDE[om12long](../../Token/om12long_md.md)]. You have several options for importing management packs:
 
 -   [Import a management pack from the catalog](#BKMK_importcat) on the [Microsoft Pinpoint Site](http://go.microsoft.com/fwlink/?LinkId=82105) by using the Operations console.
 

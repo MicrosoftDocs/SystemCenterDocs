@@ -8,13 +8,13 @@ ms.topic: article
 ms.assetid: 2b37e839-f245-4e51-83ec-e2c11864a10b
 ---
 # How to create and deploy a virtual machine from a template
-Use the following procedure to create a virtual machine from a virtual machine template in [!INCLUDE[vmm12sp1_long](Token/vmm12sp1_long_md.md)]. You can use a virtual machine template to create new stand\-alone virtual machines or to create tiers in a service template. For more information about service templates, see [Creating service templates in VMM](Creating-service-templates-in-VMM.md).
+Use the following procedure to create a virtual machine from a virtual machine template in [!INCLUDE[vmm12sp1_long](../../Token/vmm12sp1_long_md.md)]. You can use a virtual machine template to create new stand\-alone virtual machines or to create tiers in a service template. For more information about service templates, see [Creating service templates in VMM](Creating-service-templates-in-VMM.md).
 
 Note the following:
 
 -   Server roles and features, application installation, and settings on an instance of Microsoft SQL Server apply only when a virtual machine template is used for service deployments. For stand\-alone virtual machine creation, these settings are not used and are not visible when you use a template with these settings to create a virtual machine.
 
--   To configure a virtual machine to use static IP addresses from an IP address pool that is managed by [!INCLUDE[vmm12short](Token/vmm12short_md.md)], you must use a virtual machine template as the source.
+-   To configure a virtual machine to use static IP addresses from an IP address pool that is managed by [!INCLUDE[vmm12short](../../Token/vmm12short_md.md)], you must use a virtual machine template as the source.
 
 -   To complete this procedure, you must be a member of the Administrator, the Delegated Administrator, or the self\-service user role.
 
@@ -26,7 +26,7 @@ Note the following:
 
     For information about how to assign resources to a self\-service role, see [How to create a Self-Service User role in VMM](How-to-create-a-Self-Service-User-role-in-VMM.md). For information about how self\-service users can share resources between self\-service user roles, see [How to enable self-service users to share resources in VMM](How-to-enable-self-service-users-to-share-resources-in-VMM.md).
 
--   You can use [!INCLUDE[vmm12short](Token/vmm12short_md.md)] to configure availability settings for the virtual machine. For more information, see [Configuring availability options for virtual machines in VMM](Configuring-availability-options-for-virtual-machines-in-VMM.md).
+-   You can use [!INCLUDE[vmm12short](../../Token/vmm12short_md.md)] to configure availability settings for the virtual machine. For more information, see [Configuring availability options for virtual machines in VMM](Configuring-availability-options-for-virtual-machines-in-VMM.md).
 
 ## Creating a virtual machine
 Use the following procedure to create a virtual machine from a template.
@@ -72,7 +72,7 @@ Use the following procedure to create a virtual machine from a template.
 
 1.  On the **Select Cloud** page, select the private cloud on which you want to place the virtual machine.  If you are connected as an administrator, you can select the host on which the virtual machine should be deployed in the private cloud. The cloud suggestions are based on a 0\-5 star rating. For more information, see [Understanding virtual machine placement and ratings in VMM](Understanding-virtual-machine-placement-and-ratings-in-VMM.md). Verify the settings and modify them if required:
 
-    -   **Expected utilization**—For a virtual machine that is created from a blank hard disk, the expected utilization is based on standard defaults. For a virtual machine that is created from an existing virtual machine, the default settings are based on past performance of the existing virtual machine. [!INCLUDE[vmm12short](Token/vmm12short_md.md)] updates host suggestions and ratings in response to modifications that are made to the expected virtual machine utilization.
+    -   **Expected utilization**—For a virtual machine that is created from a blank hard disk, the expected utilization is based on standard defaults. For a virtual machine that is created from an existing virtual machine, the default settings are based on past performance of the existing virtual machine. [!INCLUDE[vmm12short](../../Token/vmm12short_md.md)] updates host suggestions and ratings in response to modifications that are made to the expected virtual machine utilization.
 
     -   **Make this VM highly available**—With this option selected, only hosts that are located in a cluster are available for selection.
 
@@ -80,13 +80,13 @@ Use the following procedure to create a virtual machine from a template.
 
     -   **Rating Explanation**—Provides an explanation if a host received a zero rating.
 
-    -   **SAN Explanation** or **Deployment and Transfer Explanation**—Lists any factors that make a storage area network \(SAN\) transfer unavailable. [!INCLUDE[vmm12short](Token/vmm12short_md.md)] does not recognize a virtual machine that is stored on a SAN as available for deployment using SAN transfer if the virtual machine was stored directly in the [!INCLUDE[vmm12short](Token/vmm12short_md.md)] library when it was created, or was added to the library during a library refresh. To avoid this issue, deploy the virtual machine to a host by using a LAN transfer, and then store the virtual machine in the same [!INCLUDE[vmm12short](Token/vmm12short_md.md)] library, library share, and logical unit number \(LUN\).
+    -   **SAN Explanation** or **Deployment and Transfer Explanation**—Lists any factors that make a storage area network \(SAN\) transfer unavailable. [!INCLUDE[vmm12short](../../Token/vmm12short_md.md)] does not recognize a virtual machine that is stored on a SAN as available for deployment using SAN transfer if the virtual machine was stored directly in the [!INCLUDE[vmm12short](../../Token/vmm12short_md.md)] library when it was created, or was added to the library during a library refresh. To avoid this issue, deploy the virtual machine to a host by using a LAN transfer, and then store the virtual machine in the same [!INCLUDE[vmm12short](../../Token/vmm12short_md.md)] library, library share, and logical unit number \(LUN\).
 
-        In addition, the **Deployment and Transfer Explanation** tab provides an explanation if fast file copy cannot be used. Fast file copy is based on the Windows Offloaded Data Transfers \(ODX\) feature, introduced in [!INCLUDE[winblue_server_2](Token/winblue_server_2_md.md)]. For information about ODX, see [Windows Offloaded Data Transfers Overview](http://technet.microsoft.com/library/hh831628.aspx).
+        In addition, the **Deployment and Transfer Explanation** tab provides an explanation if fast file copy cannot be used. Fast file copy is based on the Windows Offloaded Data Transfers \(ODX\) feature, introduced in [!INCLUDE[winblue_server_2](../../Token/winblue_server_2_md.md)]. For information about ODX, see [Windows Offloaded Data Transfers Overview](http://technet.microsoft.com/library/hh831628.aspx).
 
 2.  On the **Configure Settings** page, confirm or change the computer name, and then click **Next**.
 
-3.  On the **Add Properties** page, configure the action to take when the host starts or stops. If you are a [!INCLUDE[vmm12short](Token/vmm12short_md.md)] administrator, to prevent the virtual machine from being migrated by Performance and Resource Optimization \(PRO\) or dynamic optimization, select the **Exclude virtual machine from optimization actions** check box. Then click **Next**.
+3.  On the **Add Properties** page, configure the action to take when the host starts or stops. If you are a [!INCLUDE[vmm12short](../../Token/vmm12short_md.md)] administrator, to prevent the virtual machine from being migrated by Performance and Resource Optimization \(PRO\) or dynamic optimization, select the **Exclude virtual machine from optimization actions** check box. Then click **Next**.
 
 4.  On the **Summary** page, confirm the settings, and then click **Create**.
 
@@ -97,7 +97,7 @@ Use the following procedure to deploy the virtual machine on a host.
 
 1.  On the **Select Host** page, view the ratings, click the host on which you want to deploy the virtual machine, and then click **Next**. The host suggestions are based on a 0\-5 star rating. For more information, see [Understanding virtual machine placement and ratings in VMM](Understanding-virtual-machine-placement-and-ratings-in-VMM.md). Note the following settings:
 
-    1.  **Expected utilization**—For a virtual machine that is created from a blank hard disk, the expected utilization is based on standard defaults. For a virtual machine that is created from an existing virtual machine, the default settings are based on past performance of the existing virtual machine. [!INCLUDE[vmm12short](Token/vmm12short_md.md)] updates the host suggestions and ratings in response to modifications that are made to the expected virtual machine utilization.
+    1.  **Expected utilization**—For a virtual machine that is created from a blank hard disk, the expected utilization is based on standard defaults. For a virtual machine that is created from an existing virtual machine, the default settings are based on past performance of the existing virtual machine. [!INCLUDE[vmm12short](../../Token/vmm12short_md.md)] updates the host suggestions and ratings in response to modifications that are made to the expected virtual machine utilization.
 
     2.  **Make this VM highly available**—With this option selected, only hosts that are located in a cluster are available for selection.
 
@@ -105,9 +105,9 @@ Use the following procedure to deploy the virtual machine on a host.
 
     4.  **Rating Explanation**—Provides an explanation if a host received a zero rating.
 
-    5.  **SAN Explanation** or  **Deployment and Transfer Explanation**—Lists any factors that make a SAN transfer unavailable. [!INCLUDE[vmm12short](Token/vmm12short_md.md)] does not recognize a virtual machine that is stored on a SAN as available for deployment using SAN transfer if the virtual machine was stored directly in the [!INCLUDE[vmm12short](Token/vmm12short_md.md)] library when it was created, or if it was added to the [!INCLUDE[vmm12short](Token/vmm12short_md.md)] library during a library refresh. To avoid this issue, deploy the virtual machine to a host by using a LAN transfer, and then store the virtual machine in the same [!INCLUDE[vmm12short](Token/vmm12short_md.md)] library, library share, and logical unit number \(LUN\).
+    5.  **SAN Explanation** or  **Deployment and Transfer Explanation**—Lists any factors that make a SAN transfer unavailable. [!INCLUDE[vmm12short](../../Token/vmm12short_md.md)] does not recognize a virtual machine that is stored on a SAN as available for deployment using SAN transfer if the virtual machine was stored directly in the [!INCLUDE[vmm12short](../../Token/vmm12short_md.md)] library when it was created, or if it was added to the [!INCLUDE[vmm12short](../../Token/vmm12short_md.md)] library during a library refresh. To avoid this issue, deploy the virtual machine to a host by using a LAN transfer, and then store the virtual machine in the same [!INCLUDE[vmm12short](../../Token/vmm12short_md.md)] library, library share, and logical unit number \(LUN\).
 
-        In addition, the **Deployment and Transfer Explanation** tab provides an explanation if fast file copy cannot be used. Fast file copy is based on the Windows Offloaded Data Transfers \(ODX\) feature, introduced in [!INCLUDE[winblue_server_2](Token/winblue_server_2_md.md)]. For information about ODX, see [Windows Offloaded Data Transfers Overview](http://technet.microsoft.com/library/hh831628.aspx).
+        In addition, the **Deployment and Transfer Explanation** tab provides an explanation if fast file copy cannot be used. Fast file copy is based on the Windows Offloaded Data Transfers \(ODX\) feature, introduced in [!INCLUDE[winblue_server_2](../../Token/winblue_server_2_md.md)]. For information about ODX, see [Windows Offloaded Data Transfers Overview](http://technet.microsoft.com/library/hh831628.aspx).
 
 2.  On the **Configure Settings** page, review the settings for the virtual machine:
 

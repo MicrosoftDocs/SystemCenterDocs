@@ -11,7 +11,7 @@ ms.topic: article
 ms.assetid: 83c3f1df-6eb7-43c0-b9e0-cd5621872474
 ---
 # Deploying System Center 2016 - Virtual Machine Manager
-The following topics provide information to help you deploy and configure [!INCLUDE[vmm12sp1_long](Token/vmm12sp1_long_md.md)]:
+The following topics provide information to help you deploy and configure [!INCLUDE[vmm12sp1_long](../../Token/vmm12sp1_long_md.md)]:
 
 -   [Specifying a Service Account for VMM](Specifying-a-Service-Account-for-VMM.md)
 
@@ -29,10 +29,10 @@ The following topics provide information to help you deploy and configure [!INCL
 
 -   [How to Configure the VMM Database with AlwaysOn Availability Groups](How-to-Configure-the-VMM-Database-with-AlwaysOn-Availability-Groups.md)
 
-Before you begin the deployment of [!INCLUDE[vmm12short](Token/vmm12short_md.md)]:
+Before you begin the deployment of [!INCLUDE[vmm12short](../../Token/vmm12short_md.md)]:
 
--   Read the [Release Notes for System Center 2016 TP5](Release-Notes-for-System-Center-Technical-Preview-5.md).
--   Review the [System Requirements for System Center 2016 TP5](System-Requirements-for-System-Center-Technical-Preview.md) and [Preparing your environment for System Center 2016 - Virtual Machine Manager](Preparing-your-environment-for-System-Center-2016---Virtual-Machine-Manager.md).
+-   Read the [Release Notes for System Center 2016 TP5](../../System Center/Getting Started/Release-Notes-for-System-Center-Technical-Preview-5.md).
+-   Review the [System Requirements for System Center 2016 TP5](../../System Center/System Requirements/System-Requirements-for-System-Center-Technical-Preview.md) and [Preparing your environment for System Center 2016 - Virtual Machine Manager](Preparing-your-environment-for-System-Center-2016---Virtual-Machine-Manager.md).
 
 
 

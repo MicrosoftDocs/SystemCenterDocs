@@ -23,7 +23,7 @@ DPM can back up system state and provide bare metal recovery \(BMR\) protection.
 
 -   **Bare metal backup**: Backs up operating system files and all data except user data on critical volumes. By definition a BMR backup includes a system state backup. Provides protection when a machine won't start and you have to recover everythin.
 
-This table summarizes what you can back up and recover. You can see detailed information about app versions that can be protected with system state and BMR in [What can DPM back up?](What-can-DPM-back-up-.md)
+This table summarizes what you can back up and recover. You can see detailed information about app versions that can be protected with system state and BMR in [What can DPM back up?](../Get Started/What-can-DPM-back-up-.md)
 
 |Backup|Issue|Recover from DPM backup|Recover from system state backup|BMR|
 |----------|---------|---------------------------|------------------------------------|-------|
@@ -100,13 +100,13 @@ This table summarizes what you can back up and recover. You can see detailed inf
 
     -   System requirements for DPM
 
-    -   [What can DPM back up?](What-can-DPM-back-up-.md)
+    -   [What can DPM back up?](../Get Started/What-can-DPM-back-up-.md)
 
-    -   [What's supported and what isn't for DPM?](What-s-supported-and-what-isn-t-for-DPM-.md)
+    -   [What's supported and what isn't for DPM?](../Get Started/What-s-supported-and-what-isn-t-for-DPM-.md)
 
-    -   [Get DPM installed](Get-DPM-installed.md)
+    -   [Get DPM installed](../Get Started/Get-DPM-installed.md)
 
-2.  **Set up storage**—You can store backed up data on disk, on tape, and in the cloud with Azure. Read more in [Prepare data storage](Prepare-data-storage.md).
+2.  **Set up storage**—You can store backed up data on disk, on tape, and in the cloud with Azure. Read more in [Prepare data storage](../Get Started/Prepare-data-storage.md).
 
 3.  **Set up the DPM protection agent**—You'll need to install the DPM protection agent on machine you want to back up. Read [Deploy the DPM protection agent](Deploy-the-DPM-protection-agent.md)
 

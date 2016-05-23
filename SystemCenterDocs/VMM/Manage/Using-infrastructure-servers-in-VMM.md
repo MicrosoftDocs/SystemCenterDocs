@@ -8,14 +8,14 @@ ms.topic: article
 ms.assetid: d62a59f5-1e2a-4c8e-ab4c-1f1e68c7ef7f
 ---
 # Using infrastructure servers in VMM
-You can add infrastructure servers to [!INCLUDE[vmm12sp1_long](Token/vmm12sp1_long_md.md)], that is, servers that support services such as Active Directory, DNS, DHCP, Operations Manager, Service Manager, and so on. In [!INCLUDE[vmm12short](Token/vmm12short_md.md)], these servers are listed under the role of **Infrastructure**. Adding infrastructure servers can make it easier to keep them updated.
+You can add infrastructure servers to [!INCLUDE[vmm12sp1_long](../../Token/vmm12sp1_long_md.md)], that is, servers that support services such as Active Directory, DNS, DHCP, Operations Manager, Service Manager, and so on. In [!INCLUDE[vmm12short](../../Token/vmm12short_md.md)], these servers are listed under the role of **Infrastructure**. Adding infrastructure servers can make it easier to keep them updated.
 
 > [!NOTE]
-> All infrastructure servers in [!INCLUDE[vmm12short](Token/vmm12short_md.md)] must run [!INCLUDE[winblue_server_2](Token/winblue_server_2_md.md)] or [!INCLUDE[winthreshold_server_2](Token/winthreshold_server_2_md.md)].
+> All infrastructure servers in [!INCLUDE[vmm12short](../../Token/vmm12short_md.md)] must run [!INCLUDE[winblue_server_2](../../Token/winblue_server_2_md.md)] or [!INCLUDE[winthreshold_server_2](../../Token/winthreshold_server_2_md.md)].
 
 You can perform the following procedures on infrastructure servers:
 
--   Create baselines for infrastructure nodes using existing [!INCLUDE[vmm12short](Token/vmm12short_md.md)] baseline tools and processes.
+-   Create baselines for infrastructure nodes using existing [!INCLUDE[vmm12short](../../Token/vmm12short_md.md)] baseline tools and processes.
 
 -   Apply baselines to all infrastructure nodes once they are added as managed computers.
 
@@ -24,7 +24,7 @@ You can perform the following procedures on infrastructure servers:
 -   Orchestrate remediation to the infrastructure nodes using existing baseline tools and procedures.
 
 ## In This Section
-Follow these procedures to when using infrastructure servers in [!INCLUDE[vmm12short](Token/vmm12short_md.md)].
+Follow these procedures to when using infrastructure servers in [!INCLUDE[vmm12short](../../Token/vmm12short_md.md)].
 
 |Procedure|Description|
 |-------------|---------------|

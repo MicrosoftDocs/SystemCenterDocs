@@ -8,7 +8,7 @@ ms.topic: article
 ms.assetid: 6805c8cf-d768-4680-9990-2b8c895f31ec
 ---
 # Adding an Azure subscription in VMM
-Withthe Add Azure Subscription feature, administrators of [!INCLUDE[vmm12sp1_long](Token/vmm12sp1_long_md.md)] can add Microsoft Azure subscriptions to VMM and perform basic actions on Azure instances in those subscriptions. For each Azure subscription you add, you can use a console to see all role instances in all Deployment Groups in that subscription.
+Withthe Add Azure Subscription feature, administrators of [!INCLUDE[vmm12sp1_long](../../Token/vmm12sp1_long_md.md)] can add Microsoft Azure subscriptions to VMM and perform basic actions on Azure instances in those subscriptions. For each Azure subscription you add, you can use a console to see all role instances in all Deployment Groups in that subscription.
 
 ## What you can do with this feature
 If you already manage your on\-premise virtual machines in VMM, you can use this feature to perform some very basic actions on Azure instances without leaving the VMM console. You can:

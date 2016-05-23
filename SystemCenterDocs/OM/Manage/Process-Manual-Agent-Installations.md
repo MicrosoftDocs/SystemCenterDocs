@@ -11,15 +11,15 @@ ms.topic: article
 ms.assetid: ba2a2815-10bf-4904-ae1c-1e572e2b5fa5
 ---
 # Process Manual Agent Installations
-Manual installation of an agent refers to the process of running MOMAgent.msi locally on a computer that is to host a [!INCLUDE[om12long](Token/om12long_md.md)] agent. When it is installed, the agent attempts to join the specified management group by contacting a specified management server. You can use security settings at both the management group and the management server level to configure how requests from manually installed agents are processed.
+Manual installation of an agent refers to the process of running MOMAgent.msi locally on a computer that is to host a [!INCLUDE[om12long](../../Token/om12long_md.md)] agent. When it is installed, the agent attempts to join the specified management group by contacting a specified management server. You can use security settings at both the management group and the management server level to configure how requests from manually installed agents are processed.
 
 The following three options are available to process manually installed agents.
 
 |Option|Action|
 |----------|----------|
-|**Reject new manual agent installations**|Designates that all requests from a manually installed agent will be denied by [!INCLUDE[om12short](Token/om12short_md.md)]. This is the most secure setting and is selected by default.|
+|**Reject new manual agent installations**|Designates that all requests from a manually installed agent will be denied by [!INCLUDE[om12short](../../Token/om12short_md.md)]. This is the most secure setting and is selected by default.|
 |**Review new manual agent installations in pending management view**|Designates that all requests from a manually installed agent will be directed to Pending Management before being allowed to join the management group. An administrator must review the request and manually approve the agents' request.|
-|**Auto\-approve new manually installed agents**|This option is available only if **Review new manual agent installations in pending management view** has been selected. This setting causes [!INCLUDE[om12short](Token/om12short_md.md)] to automatically allow any manually installed agent to join the management group. This is the least secure option.|
+|**Auto\-approve new manually installed agents**|This option is available only if **Review new manual agent installations in pending management view** has been selected. This setting causes [!INCLUDE[om12short](../../Token/om12short_md.md)] to automatically allow any manually installed agent to join the management group. This is the least secure option.|
 
 > [!IMPORTANT]
 > A management group or management server must be configured to accept agents that are installed with MOMAgent.msi or they will be automatically rejected and therefore not displayed in the Operations console. If a management group is configured to accept manually installed agents, the agents will display in the console approximately one hour after they are installed.

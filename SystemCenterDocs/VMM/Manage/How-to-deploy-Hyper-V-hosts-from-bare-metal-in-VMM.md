@@ -11,7 +11,7 @@ ms.topic: article
 ms.assetid: b0ad90c3-5e6f-4a69-83dd-983ee9a9e4c6
 ---
 # How to deploy Hyper-V hosts from bare metal in VMM
-You can use [!INCLUDE[vmm12sp1_long](Token/vmm12sp1_long_md.md)] to deploy fully\-managed Hyper\-V hosts, either to “bare\-metal computers” \(no operating system installed\), or computers with an installed operating system that will be overwritten during the process. For this deployment, [!INCLUDE[vmm12short](Token/vmm12short_md.md)] does the following:
+You can use [!INCLUDE[vmm12sp1_long](../../Token/vmm12sp1_long_md.md)] to deploy fully\-managed Hyper\-V hosts, either to “bare\-metal computers” \(no operating system installed\), or computers with an installed operating system that will be overwritten during the process. For this deployment, [!INCLUDE[vmm12short](../../Token/vmm12short_md.md)] does the following:
 
 1.  Discovers the physical computer through out\-of\-band management
 
@@ -19,9 +19,9 @@ You can use [!INCLUDE[vmm12sp1_long](Token/vmm12sp1_long_md.md)] to deploy fully
 
 3.  Enables the Hyper\-V role on the computer
 
-4.  Brings the computer under [!INCLUDE[vmm12short](Token/vmm12short_md.md)] management as a managed Hyper\-V host
+4.  Brings the computer under [!INCLUDE[vmm12short](../../Token/vmm12short_md.md)] management as a managed Hyper\-V host
 
-### To deploy Hyper\-V hosts from bare metal in [!INCLUDE[vmm12short](Token/vmm12short_md.md)]
+### To deploy Hyper\-V hosts from bare metal in [!INCLUDE[vmm12short](../../Token/vmm12short_md.md)]
 
 1.  Ensure that you have met the requirements in [Prerequisites: creating hosts or host clusters from bare metal with VMM](Prerequisites--creating-hosts-or-host-clusters-from-bare-metal-with-VMM.md).
 
@@ -56,7 +56,7 @@ You can use [!INCLUDE[vmm12sp1_long](Token/vmm12sp1_long_md.md)] to deploy fully
 
 8.  If you specified a single IP address on the previous page, skip this step. Otherwise, the **Target Resources** page appears. Review the list of discovered BMCs \(identified by IP addresses\), and select the ones you want to provision as hosts.
 
-    If you don't see all the BMCs that you expect, confirm that they are on a network accessible to the [!INCLUDE[vmm12short](Token/vmm12short_md.md)] server, and as needed, click **Refresh**. If BMCs still appear to be missing, review [Prerequisites: creating hosts or host clusters from bare metal with VMM](Prerequisites--creating-hosts-or-host-clusters-from-bare-metal-with-VMM.md).
+    If you don't see all the BMCs that you expect, confirm that they are on a network accessible to the [!INCLUDE[vmm12short](../../Token/vmm12short_md.md)] server, and as needed, click **Refresh**. If BMCs still appear to be missing, review [Prerequisites: creating hosts or host clusters from bare metal with VMM](Prerequisites--creating-hosts-or-host-clusters-from-bare-metal-with-VMM.md).
 
     When you have finished making selections, click **Next**.
 
@@ -95,7 +95,7 @@ You can use [!INCLUDE[vmm12sp1_long](Token/vmm12sp1_long_md.md)] to deploy fully
         -   **MAC address**: If this is the management NIC for the host, and you want to configure it as a virtual network adapter, type a MAC address.
 
             > [!NOTE]
-            > This is not the MAC address of the BMC. It is the MAC address of the management NIC, which can be used to communicate with the [!INCLUDE[vmm12short](Token/vmm12short_md.md)] management server.
+            > This is not the MAC address of the BMC. It is the MAC address of the management NIC, which can be used to communicate with the [!INCLUDE[vmm12short](../../Token/vmm12short_md.md)] management server.
 
         -   **Specify static IP settings for this network adapter**: If you check this box, select a logical network and \(if applicable in that logical network\) an IP subnet. If the selected IP subnet includes IP address pool, you can check **Obtain an IP address corresponding to the selected subnet**. Otherwise, type an IP address that is in within the logical network or its subnet.
 
@@ -111,7 +111,7 @@ You can use [!INCLUDE[vmm12sp1_long](Token/vmm12sp1_long_md.md)] to deploy fully
 
     When you have filled in needed information for all the computers you want to provision, click **Next**.
 
-11. On the **Summary** page, confirm the settings, and then click **Finish** to deploy the new Hyper\-V hosts and bring them under [!INCLUDE[vmm12short](Token/vmm12short_md.md)] management.
+11. On the **Summary** page, confirm the settings, and then click **Finish** to deploy the new Hyper\-V hosts and bring them under [!INCLUDE[vmm12short](../../Token/vmm12short_md.md)] management.
 
     Depending on your settings, the **Jobs** dialog box might appear. Make sure that all steps in the job have a status of **Completed**, and then close the dialog box.
 

@@ -44,11 +44,11 @@ Before setting up a DPM backup for VMM using VMM Express Writer note the followi
 
 ## Before you start
 
--   Review the [release notes](http://technet.microsoft.com/en-us/library/jj860394.aspx) and read about any VMM backup issues in [What's supported and what isn't for DPM?](What-s-supported-and-what-isn-t-for-DPM-.md)
+-   Review the [release notes](http://technet.microsoft.com/en-us/library/jj860394.aspx) and read about any VMM backup issues in [What's supported and what isn't for DPM?](../Get Started/What-s-supported-and-what-isn-t-for-DPM-.md)
 
 -   Make sure that the VMM machines you want to back up  are in the DPM server domain, or in a domain with a two\-way trust relationship with the DPM domain.
 
--   **Set up storage**—You can store backed up data on disk, on tape, and in the cloud with Azure. Read more in [Prepare data storage](Prepare-data-storage.md).
+-   **Set up storage**—You can store backed up data on disk, on tape, and in the cloud with Azure. Read more in [Prepare data storage](../Get Started/Prepare-data-storage.md).
 
 -   You'll need to deploy the DPM  protection agent on the VMM server.  Learn more in [Deploy the DPM protection agent](Deploy-the-DPM-protection-agent.md).
 

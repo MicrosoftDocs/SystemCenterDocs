@@ -11,7 +11,7 @@ ms.topic: article
 ms.assetid: 0415dfa5-bf13-4f0e-9105-8cc6cd36c6e2
 ---
 # How to Upgrade a Web Console to System Center 2016 - Operations Manager
-If you have a stand\-alone [!INCLUDE[sc2012sp1_long](Token/sc2012sp1_long_md.md)], [!INCLUDE[omblue_2](Token/omblue_2_md.md)] web console server, you can upgrade it to [!INCLUDE[omblue_1](Token/omblue_1_md.md)].
+If you have a stand\-alone [!INCLUDE[sc2012sp1_long](../../Token/sc2012sp1_long_md.md)], [!INCLUDE[omblue_2](../../Token/omblue_2_md.md)] web console server, you can upgrade it to [!INCLUDE[omblue_1](../../Token/omblue_1_md.md)].
 
 Before you begin the upgrade process, make sure that your server meets the minimum supported configurations. For more information, see [System Requirements: System Center 2012 R2 Operations Manager](http://go.microsoft.com/fwlink/?LinkId=309038)
 
@@ -45,9 +45,9 @@ If you made changes after you set up your web console to either enable or disabl
 
 ### To upgrade the web console server
 
-1.  Log on to the computer that hosts the web console server with an [!INCLUDE[omblue_2](Token/omblue_2_md.md)] Administrators role account for your [!INCLUDE[omblue_2](Token/omblue_2_md.md)] management group.
+1.  Log on to the computer that hosts the web console server with an [!INCLUDE[omblue_2](../../Token/omblue_2_md.md)] Administrators role account for your [!INCLUDE[omblue_2](../../Token/omblue_2_md.md)] management group.
 
-2.  On the [!INCLUDE[omblue_2](Token/omblue_2_md.md)] source media, run **Setup.exe**, and then click **Install**.
+2.  On the [!INCLUDE[omblue_2](../../Token/omblue_2_md.md)] source media, run **Setup.exe**, and then click **Install**.
 
 3.  On the **Getting Started**, **System Center 2012 R2 Operations Manager Upgrade** page, review the features that will be upgraded, and then click **Next**.
 
@@ -61,11 +61,11 @@ If you made changes after you set up your web console to either enable or disabl
 
 ### To upgrade the web console server by using the Command Prompt window
 
-1.  Log on to the computer that hosts the web console server with an [!INCLUDE[omblue_2](Token/omblue_2_md.md)] Administrators role account for your [!INCLUDE[omblue_2](Token/omblue_2_md.md)] management group.
+1.  Log on to the computer that hosts the web console server with an [!INCLUDE[omblue_2](../../Token/omblue_2_md.md)] Administrators role account for your [!INCLUDE[omblue_2](../../Token/omblue_2_md.md)] management group.
 
 2.  Open a Command Prompt window by using the **Run as Administrator** option.
 
-3.  Change the path to where the [!INCLUDE[omblue_2](Token/omblue_2_md.md)] Setup.exe file is located, and run the following command.
+3.  Change the path to where the [!INCLUDE[omblue_2](../../Token/omblue_2_md.md)] Setup.exe file is located, and run the following command.
 
     > [!IMPORTANT]
     > Use the `/WebConsoleUseSSL` parameter only if your website has Secure Sockets Layer \(SSL\) activated. For a default web installation, specify **Default Web Site** for the `/WebSiteName` parameter.

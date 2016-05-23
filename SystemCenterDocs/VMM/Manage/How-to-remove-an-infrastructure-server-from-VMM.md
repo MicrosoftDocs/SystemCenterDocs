@@ -8,7 +8,7 @@ ms.topic: article
 ms.assetid: 879d8c92-7bd2-421e-9cac-785a7d90947f
 ---
 # How to remove an infrastructure server from VMM
-Use the following procedure to remove an infrastructure server from [!INCLUDE[vmm12sp1_long](Token/vmm12sp1_long_md.md)].
+Use the following procedure to remove an infrastructure server from [!INCLUDE[vmm12sp1_long](../../Token/vmm12sp1_long_md.md)].
 
 ### To remove an infrastructure server
 

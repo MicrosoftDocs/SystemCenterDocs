@@ -15,7 +15,7 @@ Depending on your current version of Service Manager, use the following informat
 
 ## Recommendations for Upgrading to Service Manager 2016 Technical Preview 5
 
-- Refer to [System Requirements for System Center Technical Preview](System-Requirements-for-System-Center-Technical-Preview.md)
+- Refer to [System Requirements for System Center Technical Preview](../../System Center/System Requirements/System-Requirements-for-System-Center-Technical-Preview.md)
 - Upgrade Service Manager 2012 R2 to Service Manger 2016 first, then upgrade your operating system to Windows Server 2016.
 - The order that you upgrade SQL Server and the server operating system should not matter.
 - For Service Manager data warehouse database restoration, the Reporting database also needs to be restored **after** you install the data warehouse. 

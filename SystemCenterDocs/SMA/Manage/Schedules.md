@@ -11,10 +11,10 @@ ms.topic: article
 ms.assetid: 0092bd39-187d-42ea-b126-02ef516e21e4
 ---
 # Schedules
-[!INCLUDE[sma_2](Token/sma_2_md.md)] Schedules are used to schedule runbooks to run automatically.  This could be either a single date and time for the runbook to run once.  Or it could be a recurring schedule to start the runbook multiple times.  Schedules are typically not accessed from runbooks.
+[!INCLUDE[sma_2](../../Token/sma_2_md.md)] Schedules are used to schedule runbooks to run automatically.  This could be either a single date and time for the runbook to run once.  Or it could be a recurring schedule to start the runbook multiple times.  Schedules are typically not accessed from runbooks.
 
 ## Windows PowerShell Cmdlets
-The cmdlets in the following table are used to create and manage variables with Windows PowerShell in [!INCLUDE[sma_1](Token/sma_1_md.md)].
+The cmdlets in the following table are used to create and manage variables with Windows PowerShell in [!INCLUDE[sma_1](../../Token/sma_1_md.md)].
 
 |Cmdlets|Description|
 |-----------|---------------|
@@ -62,7 +62,7 @@ Set-SmaSchedule –WebServiceEndpoint $web –Port $port –Name $scheduleName �
 ```
 
 ## See Also
-[Service Management Automation](Service-Management-Automation.md)
+[Service Management Automation](../Service-Management-Automation.md)
 [Authoring Automation Runbooks](Authoring-Automation-Runbooks.md)
 [Global Assets](Global-Assets.md)
 [Scheduling a Runbook](Scheduling-a-Runbook.md)

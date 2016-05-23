@@ -26,7 +26,7 @@ Using Operations Manager in the environment makes it easier to monitor multiple 
 Operations Manager will tell you which monitored objects are not healthy, send alerts when problems are identified, and provide information to help you identify the cause of a problem and possible solutions. As the administrator, you configure what will be monitored by selecting computers and devices to be monitored and importing management packs that provide monitoring for specific features and applications. To decide which objects to monitor and what to monitor for, you need to understand the features that comprise the Operations Manager infrastructure and how Operations Manager works.
 
 ## The Operations Manager Infrastructure
-Installing [!INCLUDE[om12short](Token/om12short_md.md)] creates a *management group*. The management group is the basic unit of functionality. At a minimum, a management group consists of a *management server*, the *operational database*, and the *reporting data warehouse database*.
+Installing [!INCLUDE[om12short](../../Token/om12short_md.md)] creates a *management group*. The management group is the basic unit of functionality. At a minimum, a management group consists of a *management server*, the *operational database*, and the *reporting data warehouse database*.
 
 -   The **management server** is the focal point for administering the management group and communicating with the database. When you open the Operations console and connect to a management group, you connect to a management server for that management group. Depending on the size of your computing environment, a management group can contain a single management server or multiple management servers.
 
@@ -122,11 +122,11 @@ For each agent, Operations Manager runs a *health service watcher*, which monito
 
 ### Other resources for Operations Manager
 
--   [TechNet Library main page for System Center 2016 Technical Preview - Operations Manager](Operations-Manager.md)
+-   [TechNet Library main page for System Center 2016 Technical Preview - Operations Manager](../Operations-Manager.md)
 
--   To learn how to install Operations Manager and deploy a management group, see [Deploying System Center 2016 Technical Preview - Operations Manager](Deploying-System-Center-2016---Operations-Manager.md)
+-   To learn how to install Operations Manager and deploy a management group, see [Deploying System Center 2016 Technical Preview - Operations Manager](../Deploy/Deploying-System-Center-2016---../Operations-Manager.md)
 
--   To learn how to use Operations Manager after the management group is set up, see [System Center 2016 Technical Preview - Operations Manager Operations Guide](System-Center-2016---Operations-Manager-Operations-Guide.md)
+-   To learn how to use Operations Manager after the management group is set up, see [System Center 2016 Technical Preview - Operations Manager Operations Guide](../Manage/System-Center-2016---Operations-Manager-Operations-Guide.md)
 
 -   To learn how to create a management pack, see [Author’s Guide for Operations Manager for System Center 2012](http://go.microsoft.com/fwlink/p/?LinkID=212377)
 

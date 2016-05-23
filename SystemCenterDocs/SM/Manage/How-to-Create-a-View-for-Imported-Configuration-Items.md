@@ -13,13 +13,13 @@ ms.assetid: 9507e47e-16d7-4621-a724-39aea32d847c
 # How to Create a View for Imported Configuration Items
 You can use the following procedures in Service Manager to create a view for imported Microsoft SQL Server database configuration items and then view the items in a dynamically generated form.
 
-You can view and edit items that were imported from a System Center Operations Manager configuration item \(CI\) connector. However, [!INCLUDE[smshort](Token/smshort_md.md)] does not have system\-defined views or forms for some items. For example, [!INCLUDE[smshort](Token/smshort_md.md)] does not have a defined view for SQL Server databases, so you must manually create a view to see these configuration items. Although [!INCLUDE[smshort](Token/smshort_md.md)] does not have a predefined form for SQL Server databases or for many other objects that you might have imported, you can still view any configuration item in a dynamically generated form \(if you created a view for those items\).
+You can view and edit items that were imported from a System Center Operations Manager configuration item \(CI\) connector. However, [!INCLUDE[smshort](../../Token/smshort_md.md)] does not have system\-defined views or forms for some items. For example, [!INCLUDE[smshort](../../Token/smshort_md.md)] does not have a defined view for SQL Server databases, so you must manually create a view to see these configuration items. Although [!INCLUDE[smshort](../../Token/smshort_md.md)] does not have a predefined form for SQL Server databases or for many other objects that you might have imported, you can still view any configuration item in a dynamically generated form \(if you created a view for those items\).
 
-Before you use these procedures, make sure that you import the SQL Server management packs for Operations Manager  and for [!INCLUDE[smshort](Token/smshort_md.md)]. Although these procedures rely on SQL Server databases imported from Operations Manager, you can use the same steps to view other imported configuration items that do not have system\-defined views or forms.
+Before you use these procedures, make sure that you import the SQL Server management packs for Operations Manager  and for [!INCLUDE[smshort](../../Token/smshort_md.md)]. Although these procedures rely on SQL Server databases imported from Operations Manager, you can use the same steps to view other imported configuration items that do not have system\-defined views or forms.
 
 ### To create a view for imported SQL Server database configuration items
 
-1.  In the [!INCLUDE[smcons](Token/smcons_md.md)], click **Configuration Items**.
+1.  In the [!INCLUDE[smcons](../../Token/smcons_md.md)], click **Configuration Items**.
 
 2.  In the **Configuration Items** pane, expand **Configuration Items**, and then click **All Windows Computers**.
 
@@ -53,6 +53,6 @@ Before you use these procedures, make sure that you import the SQL Server manag
 
 5.  If you have made any changes to the item, click **OK**; otherwise, click **Cancel** to close the form.
 
-![](Image/PSSymbol.gif)You can use Windows PowerShell commands to display views that are defined in [!INCLUDE[smshort](Token/smshort_md.md)]. For more information, see [Get\-SCSMView](http://go.microsoft.com/fwlink/p/?LinkID=225344).
+![](Image/PSSymbol.gif)You can use Windows PowerShell commands to display views that are defined in [!INCLUDE[smshort](../../Token/smshort_md.md)]. For more information, see [Get\-SCSMView](http://go.microsoft.com/fwlink/p/?LinkID=225344).
 
 

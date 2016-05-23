@@ -15,7 +15,7 @@ To ensure that the Service Manager database is up to date, the System Center Con
 
 ### To manually synchronize a Configuration Manager connector
 
-1.  In the [!INCLUDE[smcons](Token/smcons_md.md)], click **Administration**.
+1.  In the [!INCLUDE[smcons](../../Token/smcons_md.md)], click **Administration**.
 
 2.  In the **Administration** pane, expand **Administration**, and then click **Connectors**.
 
@@ -28,7 +28,7 @@ To ensure that the Service Manager database is up to date, the System Center Con
 
 ### To validate that a Configuration Manager connector synchronized
 
-1.  In the [!INCLUDE[smcons](Token/smcons_md.md)], click **Configuration Items**.
+1.  In the [!INCLUDE[smcons](../../Token/smcons_md.md)], click **Configuration Items**.
 
 2.  In the **Configuration Items** pane, expand **Computers**, and then click **All Windows Computers**. Verify that any new computers in Configuration Manager appear in the middle pane.
 

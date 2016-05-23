@@ -95,13 +95,13 @@ DPM provides backup and recovery for SQL Server databases. In addition to backin
 
     -   System requirements for DPM
 
-    -   [What can DPM back up?](What-can-DPM-back-up-.md)
+    -   [What can DPM back up?](../Get Started/What-can-DPM-back-up-.md)
 
-    -   [What's supported and what isn't for DPM?](What-s-supported-and-what-isn-t-for-DPM-.md)
+    -   [What's supported and what isn't for DPM?](../Get Started/What-s-supported-and-what-isn-t-for-DPM-.md)
 
-    -   [Get DPM installed](Get-DPM-installed.md)
+    -   [Get DPM installed](../Get Started/Get-DPM-installed.md)
 
-2.  **Set up storage**—You can store backed up data on disk, on tape, and in the cloud with Azure. Read more in [Prepare data storage](Prepare-data-storage.md).
+2.  **Set up storage**—You can store backed up data on disk, on tape, and in the cloud with Azure. Read more in [Prepare data storage](../Get Started/Prepare-data-storage.md).
 
 3.  **Set up the DPM protection agent**—You'll need to install the DPM protection agent on every machine you want to back up. Read [Deploy the DPM protection agent](Deploy-the-DPM-protection-agent.md).
 

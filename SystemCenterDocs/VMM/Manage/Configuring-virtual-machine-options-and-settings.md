@@ -8,7 +8,7 @@ ms.topic: article
 ms.assetid: 5dd8aa5a-ae21-4c9b-9b8b-0ab73fc668c2
 ---
 # Configuring virtual machine options and settings
-This section describes the following types of settings in [!INCLUDE[vmm12short](Token/vmm12short_md.md)]:
+This section describes the following types of settings in [!INCLUDE[vmm12short](../../Token/vmm12short_md.md)]:
 
 -   [How to view and modify properties of a deployed virtual machine in VMM](How-to-view-and-modify-properties-of-a-deployed-virtual-machine-in-VMM.md)
 

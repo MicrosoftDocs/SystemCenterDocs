@@ -8,9 +8,9 @@ ms.topic: article
 ms.assetid: fc4b0684-a9da-4840-b962-77eb6e1398f1
 ---
 # Overview: creating a private cloud with VMM
-A private cloud is a cloud that is provisioned and managed on\-premises by an organization. The private cloud is deployed by using an organization’s own hardware to leverage the advantages of the private cloud model. By using [!INCLUDE[vmm12sp1_long](Token/vmm12sp1_long_md.md)], an organization can manage the private cloud definition and can manage access to the private cloud and the underlying physical resources.
+A private cloud is a cloud that is provisioned and managed on\-premises by an organization. The private cloud is deployed by using an organization’s own hardware to leverage the advantages of the private cloud model. By using [!INCLUDE[vmm12sp1_long](../../Token/vmm12sp1_long_md.md)], an organization can manage the private cloud definition and can manage access to the private cloud and the underlying physical resources.
 
-In [!INCLUDE[vmm12short](Token/vmm12short_md.md)], a private cloud provides the following benefits:
+In [!INCLUDE[vmm12short](../../Token/vmm12short_md.md)], a private cloud provides the following benefits:
 
 -   **Self service**—Administrators can delegate management and usage of the private cloud while they retain the opaque usage model. Self\-service users do not have to ask the private cloud provider for administrative changes except to request increase capacity and quotas as their requirements change.
 
@@ -28,7 +28,7 @@ You can create a private cloud from either of the following sources:
 
 -   A VMware resource pool
 
-During private cloud creation, you select the underlying fabric resources that will be available in the private cloud, configure library paths for private cloud users, and set the capacity for the private cloud. Therefore, before you create a private cloud, you should configure the fabric resources, such as storage, networking, library servers and shares, host groups, and hosts. For information about how to configure the fabric and add hosts to [!INCLUDE[vmm12short](Token/vmm12short_md.md)] management, see the following sections:
+During private cloud creation, you select the underlying fabric resources that will be available in the private cloud, configure library paths for private cloud users, and set the capacity for the private cloud. Therefore, before you create a private cloud, you should configure the fabric resources, such as storage, networking, library servers and shares, host groups, and hosts. For information about how to configure the fabric and add hosts to [!INCLUDE[vmm12short](../../Token/vmm12short_md.md)] management, see the following sections:
 
 -   [Configuring Fabric Resources in VMM](assetId:///16125788-949e-4caf-a323-a38a224bf2b9)
 
@@ -42,7 +42,7 @@ In the example scenarios, a private cloud that is named **Finance** is created f
 The following table summarizes the examples that are used.
 
 > [!NOTE]
-> The example resource names and configuration are used to help demonstrate the concepts. The examples build from examples that are used in the "Preparing the Fabric in [!INCLUDE[vmm12short](Token/vmm12short_md.md)]" section. You can adapt them to your test environment.
+> The example resource names and configuration are used to help demonstrate the concepts. The examples build from examples that are used in the "Preparing the Fabric in [!INCLUDE[vmm12short](../../Token/vmm12short_md.md)]" section. You can adapt them to your test environment.
 
 |Private cloud|Resource|
 |-----------------|------------|

@@ -11,7 +11,7 @@ ms.topic: article
 ms.assetid: 55d44d60-9ddf-45d5-b0db-b67e3941e134
 ---
 # Runbook Settings
-Each runbook in [!INCLUDE[sma_1](Token/sma_1_md.md)] has multiple settings that help it to be identified and to change its logging behavior. Each of these settings is described below followed by procedures on how to modify them.
+Each runbook in [!INCLUDE[sma_1](../../Token/sma_1_md.md)] has multiple settings that help it to be identified and to change its logging behavior. Each of these settings is described below followed by procedures on how to modify them.
 
 ## Settings
 
@@ -52,7 +52,7 @@ Set-SmaRunbookConfiguration –WebServiceEndpoint $webServer –Port $port –Na
 ```
 
 ## See Also
-[Service Management Automation](Service-Management-Automation.md)
+[Service Management Automation](../Service-Management-Automation.md)
 [Runbook Operations \(old\) \[SMA\]](assetId:///230817bd-e503-4beb-9ec3-8c1f028e9b48)
 [How to purge the Service Management Automation database](How-to-purge-the-Service-Management-Automation-database.md)
 

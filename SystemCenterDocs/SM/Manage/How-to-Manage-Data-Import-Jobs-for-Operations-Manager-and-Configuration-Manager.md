@@ -11,7 +11,7 @@ ms.topic: article
 ms.assetid: 24cdcc7c-8b46-42a0-a699-d5061b01aec6
 ---
 # How to Manage Data Import Jobs for Operations Manager and Configuration Manager
-You can use the following procedure to manage data warehouse data import jobs in Service Manager. Data import jobs are like other data warehouse jobs, and you can manage them with the [!INCLUDE[smcons](Token/smcons_md.md)] and also with Windows PowerShell cmdlets. Methods of management include:
+You can use the following procedure to manage data warehouse data import jobs in Service Manager. Data import jobs are like other data warehouse jobs, and you can manage them with the [!INCLUDE[smcons](../../Token/smcons_md.md)] and also with Windows PowerShell cmdlets. Methods of management include:
 
 -   Revising the processing schedule to hourly, daily, or weekly
 
@@ -21,7 +21,7 @@ You can use the following procedure to manage data warehouse data import jobs in
 
 ### To manage data import jobs and change a job schedule
 
-1.  In the [!INCLUDE[smcons](Token/smcons_md.md)], click **Data Warehouse**, expand **Data Warehouse**, and then click **Data Warehouse Jobs**.
+1.  In the [!INCLUDE[smcons](../../Token/smcons_md.md)], click **Data Warehouse**, expand **Data Warehouse**, and then click **Data Warehouse Jobs**.
 
 2.  In the **Data Warehouse Jobs** pane, select a job name, and then under **Tasks**, click **Properties**.
 

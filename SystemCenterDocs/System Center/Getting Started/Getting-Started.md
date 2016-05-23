@@ -14,12 +14,12 @@ ms.assetid: 805406cb-4ab8-4a51-a855-d2498524f333
 You should read the topics in this section if you are new to Operations Manager or are looking for the new capabilities added in the System Center 2016 Technical Preview.
 
 ## Getting Started topics
-[What's New in OM in Technical Preview](What-s-New-in-OM-in-Technical-Preview.md)
+[What's New in OM in Technical Preview](../../OM/Get Started/What-s-New-in-OM-in-Technical-Preview.md)
 
-[Operations Manager Key Concepts](Operations-Manager-Key-Concepts.md)
+[Operations Manager Key Concepts](../../OM/Get Started/Operations-Manager-Key-Concepts.md)
 
-[Walkthrough: Installing Operations Manager on a Single Server](Walkthrough--Installing-Operations-Manager-on-a-Single-Server.md)
+[Walkthrough: Installing Operations Manager on a Single Server](../../OM/Get Started/Walkthrough--Installing-Operations-Manager-on-a-Single-Server.md)
 
-[Installing Operations Manager by Using the Command Prompt Window](Installing-Operations-Manager-by-Using-the-Command-Prompt-Window.md)
+[Installing Operations Manager by Using the Command Prompt Window](../../OM/Deploy/Installing-Operations-Manager-by-Using-the-Command-Prompt-Window.md)
 
 

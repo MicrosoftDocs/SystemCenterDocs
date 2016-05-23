@@ -46,18 +46,18 @@ The Microsoft.EnterpriseManagement.GatewayApprovalTool.exe tool is needed only o
 
 ##### To copy Microsoft.EnterpriseManagement.GatewayApprovalTool.exe to management servers
 
-1.  From a target management server, open the [!INCLUDE[om12short](Token/om12short_md.md)] installation media \\SupportTools directory.
+1.  From a target management server, open the [!INCLUDE[om12short](../../Token/om12short_md.md)] installation media \\SupportTools directory.
 
-2.  Copy the Microsoft.EnterpriseManagement.GatewayApprovalTool.exe from the installation media to the [!INCLUDE[om12short](Token/om12short_md.md)] installation directory.
+2.  Copy the Microsoft.EnterpriseManagement.GatewayApprovalTool.exe from the installation media to the [!INCLUDE[om12short](../../Token/om12short_md.md)] installation directory.
 
 ### Registering the Gateway with the Management Group
 This procedure registers the gateway server with the management group, and when this is completed, the gateway server appears in the Discovered Inventory view of the management group.
 
 ##### To run the gateway Approval tool
 
-1.  On the management server that was targeted during the gateway server installation, log on with the [!INCLUDE[om12short](Token/om12short_md.md)] Administrator account.
+1.  On the management server that was targeted during the gateway server installation, log on with the [!INCLUDE[om12short](../../Token/om12short_md.md)] Administrator account.
 
-2.  Open a command prompt, and navigate to the [!INCLUDE[om12short](Token/om12short_md.md)] installation directory or to the directory that you copied the Microsoft.EnterpriseManagement.gatewayApprovalTool.exe to.
+2.  Open a command prompt, and navigate to the [!INCLUDE[om12short](../../Token/om12short_md.md)] installation directory or to the directory that you copied the Microsoft.EnterpriseManagement.gatewayApprovalTool.exe to.
 
 3.  At the command prompt, run `Microsoft.EnterpriseManagement.gatewayApprovalTool.exe /ManagementServerName=<managementserverFQDN> /GatewayName=<GatewayFQDN> /Action=Create`
 
@@ -77,7 +77,7 @@ This procedure installs the gateway server. The server that is to be the gateway
 
 1.  On the Windows desktop, click **Start**, point to **Programs**, point to **Accessories**, right\-click **Command Prompt**, and then click **Run as administrator**.
 
-2.  In the **Administrator: Command Prompt** window, navigate to the local drive that hosts the [!INCLUDE[om12short](Token/om12short_md.md)] installation media.
+2.  In the **Administrator: Command Prompt** window, navigate to the local drive that hosts the [!INCLUDE[om12short](../../Token/om12short_md.md)] installation media.
 
 3.  Navigate to the directory where the .msi file is located, type the name of the .msi file, and then press ENTER.
 
@@ -85,7 +85,7 @@ This procedure installs the gateway server. The server that is to be the gateway
 
 1.  Log on to the gateway server with Administrator rights.
 
-2.  From the [!INCLUDE[om12short](Token/om12short_md.md)] installation media, start **Setup.exe**.
+2.  From the [!INCLUDE[om12short](../../Token/om12short_md.md)] installation media, start **Setup.exe**.
 
 3.  In the **Install** area, click the **Gateway management server** link.
 
@@ -109,7 +109,7 @@ This procedure installs the gateway server. The server that is to be the gateway
 
 2.  Open the Command Prompt window by using the **Run as Administrator** option.
 
-3.  Run the following command, where *path\\Directory* is the location of the Momgateway.msi, and *path\\Logs* is the location where you want to save the log file. Momgateway.msi can be found in the [!INCLUDE[om12short](Token/om12short_md.md)] installation media.
+3.  Run the following command, where *path\\Directory* is the location of the Momgateway.msi, and *path\\Logs* is the location where you want to save the log file. Momgateway.msi can be found in the [!INCLUDE[om12short](../../Token/om12short_md.md)] installation media.
 
     ```
     %WinDir%\System32\msiexec.exe /i path\Directory\MOMGateway.msi /qn /l*v path\Logs\GatewayInstall.log
@@ -131,9 +131,9 @@ Perform this operation on each gateway server, management server, and computer t
 
 ##### To import computer certificates by using MOMCertImport.exe
 
-1.  Copy the MOMCertImport.exe tool from the installation media \\SupportTools\\<platform> \(x86 or ia64\) directory to the root of the target server or to the [!INCLUDE[om12short](Token/om12short_md.md)] installation directory if the target server is a management server.
+1.  Copy the MOMCertImport.exe tool from the installation media \\SupportTools\\<platform> \(x86 or ia64\) directory to the root of the target server or to the [!INCLUDE[om12short](../../Token/om12short_md.md)] installation directory if the target server is a management server.
 
-2.  As an administrator, open a Command Prompt window and change the directory to the directory where MOMCertImport.exe is, and then run `momcertimport.exe /SubjectName <certificate subject name>`. This makes the certificate usable by [!INCLUDE[om12short](Token/om12short_md.md)].
+2.  As an administrator, open a Command Prompt window and change the directory to the directory where MOMCertImport.exe is, and then run `momcertimport.exe /SubjectName <certificate subject name>`. This makes the certificate usable by [!INCLUDE[om12short](../../Token/om12short_md.md)].
 
 ### Configuring Gateway Servers for Failover Between Management Servers
 Although gateway servers can communicate with any management server in the management group, this must be configured. In this scenario, the secondary management servers are identified as targets for gateway server failover.

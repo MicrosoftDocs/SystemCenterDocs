@@ -11,11 +11,11 @@ ms.topic: article
 ms.assetid: f7229aef-0a5c-40de-9219-c1df83fd3aa9
 ---
 # Network Device Discovery Settings
-[!INCLUDE[om12long](Token/om12long_md.md)] offers a number of settings that you can use to configure discovery of network devices. The following table explains the available settings and how to configure them in the Network Devices Discovery Wizard.
+[!INCLUDE[om12long](../../Token/om12long_md.md)] offers a number of settings that you can use to configure discovery of network devices. The following table explains the available settings and how to configure them in the Network Devices Discovery Wizard.
 
 |Setting|Location|Notes|
 |-----------|------------|---------|
-|**Name or IP address**|**Devices** page, **Add** button|Enter either a fully qualified domain name \(FQDN\) or an IPv4 address. [!INCLUDE[om12short](Token/om12short_md.md)] can identify connected devices in a recursive discovery that use an IPv6 address; however, the initial device that is discovered must use an IPv4 address.|
+|**Name or IP address**|**Devices** page, **Add** button|Enter either a fully qualified domain name \(FQDN\) or an IPv4 address. [!INCLUDE[om12short](../../Token/om12short_md.md)] can identify connected devices in a recursive discovery that use an IPv6 address; however, the initial device that is discovered must use an IPv4 address.|
 |**Access mode**|**Devices** page, **Add** button|Select either **ICMP and SNMP**, **ICMP**, or **SNMP**. This specifies the protocol that will be used for both discovery and monitoring. If you select **ICMP and SNMP**, the device must be accessible by both protocols, or discovery will fail.|
 |**SNMP version**|**Devices** page, **Add** button|Select either **v1 or v2** or **v3**. SNMP v1 and v2 devices can use the same Run As account. SNMP v3 devices require a different format Run As account.|
 |**Port number**|**Devices** page, **Add** button|The default port is 161. You can change this value if you are discovering a network device that uses another port.|

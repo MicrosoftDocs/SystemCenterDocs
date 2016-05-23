@@ -21,7 +21,7 @@ If the account that is used for the SQL Server Analysis Services account changes
 
     1.  In the **Server Type** list, click **Analysis Services**.
 
-    2.  In the **Server Name** list, select the server name for your [!INCLUDE[smshort](Token/smshort_md.md)] or data warehouse databases.
+    2.  In the **Server Name** list, select the server name for your [!INCLUDE[smshort](../../Token/smshort_md.md)] or data warehouse databases.
 
     3.  In the **Authentication** list, select **Windows Authentication**, and then click **Connect**.
 

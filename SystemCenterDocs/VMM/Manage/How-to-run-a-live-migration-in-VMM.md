@@ -8,7 +8,7 @@ ms.topic: article
 ms.assetid: e5027e2b-85f5-466d-a261-044280b2d27a
 ---
 # How to run a live migration in VMM
-[!INCLUDE[vmm12sp1_long](Token/vmm12sp1_long_md.md)] provides live migration support between stand\-alone Hyper\-V hosts, or cluster hosts that have the Live Migration feature enabled. This topic describes the following migration procedures:
+[!INCLUDE[vmm12sp1_long](../../Token/vmm12sp1_long_md.md)] provides live migration support between stand\-alone Hyper\-V hosts, or cluster hosts that have the Live Migration feature enabled. This topic describes the following migration procedures:
 
 -   [Live migration of a virtual machine between two stand-alone hosts](#BKMK_Standalone)—This procedure describes how to migrate a virtual machine from one stand\-alone Hyper\-V host to another stand\-alone Hyper\-V host. Note that the virtual machine configuration files and virtual hard disk must be located on a Server Message Block \(SMB\) 3.0 file share.
 
@@ -111,7 +111,7 @@ Use the following procedure to perform a live migration between locations on sta
 8.  To track the job status, open the **Jobs** workspace.
 
 ## <a name="BKMK_Concurrent"></a>Concurrent live migrations
-To run live migrations concurrently, perform any of the procedures in this topic on multiple virtual machines so that two migrations occur at the same time on the same host. In the user interface, you cannot multi\-select virtual machines to perform live migrations. Instead, you must manually start each migration. You can specify how many concurrent migrations to run. The default setting is two, which is the number of simultaneous live migration and storage migrations that are enabled in Hyper\-V. For example, a host can participate in one outgoing live migration plus one incoming, two outgoing live migrations, or two incoming live migrations. Live migrations and live storage migrations are independent. Therefore, you can perform two live migrations and two live storage migrations simultaneously. [!INCLUDE[vmm12short](Token/vmm12short_md.md)] considers live virtual machine and storage migration \(live VSM\) as one live migration and one storage migration. Use the following procedure to view concurrent migrations.
+To run live migrations concurrently, perform any of the procedures in this topic on multiple virtual machines so that two migrations occur at the same time on the same host. In the user interface, you cannot multi\-select virtual machines to perform live migrations. Instead, you must manually start each migration. You can specify how many concurrent migrations to run. The default setting is two, which is the number of simultaneous live migration and storage migrations that are enabled in Hyper\-V. For example, a host can participate in one outgoing live migration plus one incoming, two outgoing live migrations, or two incoming live migrations. Live migrations and live storage migrations are independent. Therefore, you can perform two live migrations and two live storage migrations simultaneously. [!INCLUDE[vmm12short](../../Token/vmm12short_md.md)] considers live virtual machine and storage migration \(live VSM\) as one live migration and one storage migration. Use the following procedure to view concurrent migrations.
 
 #### To view concurrent migrations
 

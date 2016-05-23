@@ -8,7 +8,7 @@ ms.topic: article
 ms.assetid: 31a0cf55-1141-4db6-9e78-ec51b1279259
 ---
 # How to create a SAN copy-capable template from a new virtual machine
-You can use the procedures in this topic to create a SAN copy\-capable template from a new virtual machine in [!INCLUDE[vmm12sp1_long](Token/vmm12sp1_long_md.md)]. In these procedures, you create a new virtual machine on a logical unit that is assigned to a Hyper\-V host, and then create a SAN\-copy capable template from the virtual machine on the library server. When you create the template, the logical unit is automatically unregistered from the host and registered to the library server.
+You can use the procedures in this topic to create a SAN copy\-capable template from a new virtual machine in [!INCLUDE[vmm12sp1_long](../../Token/vmm12sp1_long_md.md)]. In these procedures, you create a new virtual machine on a logical unit that is assigned to a Hyper\-V host, and then create a SAN\-copy capable template from the virtual machine on the library server. When you create the template, the logical unit is automatically unregistered from the host and registered to the library server.
 
 ## Prerequisites
 Before you begin these procedures, make sure that the following prerequisites are met:
@@ -17,7 +17,7 @@ Before you begin these procedures, make sure that the following prerequisites ar
 
 -   You must create a logical unit from the managed storage pool that you want to use for rapid provisioning, and assign it to the host where you want to create the new virtual machine. You must also format the logical unit with NTFS, and assign a drive letter. You can use any of the following methods:
 
-    -   Create and assign the logical unit through the VMM console from the Storage tab in the managed Hyper\-V host’s properties. When you assign the logical unit, you can format and assign a drive letter to the logical unit at the same time. For information about how to create and assign a logical unit to a host through [!INCLUDE[vmm12short](Token/vmm12short_md.md)], see [How to configure storage on a Hyper-V host in VMM](How-to-configure-storage-on-a-Hyper-V-host-in-VMM.md).
+    -   Create and assign the logical unit through the VMM console from the Storage tab in the managed Hyper\-V host’s properties. When you assign the logical unit, you can format and assign a drive letter to the logical unit at the same time. For information about how to create and assign a logical unit to a host through [!INCLUDE[vmm12short](../../Token/vmm12short_md.md)], see [How to configure storage on a Hyper-V host in VMM](How-to-configure-storage-on-a-Hyper-V-host-in-VMM.md).
 
     -   Create a logical unit from the Storage node in the Fabric workspace. Then, allocate the logical unit to a host group, and assign the logical unit to the host from the managed Hyper\-V host. When you assign the logical unit, you can format and assign a drive letter to the logical unit at the same time. For information about how to create a logical unit from the Storage node, see [How to provision storage logical units in VMM](How-to-provision-storage-logical-units-in-VMM.md).
 

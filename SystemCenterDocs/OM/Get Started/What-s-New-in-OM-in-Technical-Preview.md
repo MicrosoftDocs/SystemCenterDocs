@@ -14,7 +14,7 @@ ms.assetid: 5b6096d3-55f0-4bcb-b501-42664e947cb3
 The content in this section describes what's new and changed in System Center 2016 - Operations Manager Technical Preview. 
 
 ## Management Pack Updates and Recommendations
-We have added a new capability to Operations Manager to assess the management packs.  Operations Manager includes a new feature called Updates and Recommendations, to help you proactively identify new technologies or components (i.e. workloads) deployed in your IT infrastructure that were not monitored by Operations Manager or are not monitored using the latest version of a management pack. For more information about Updates and Recommendations see  [Management Pack Assessment](Management-Pack-Assessment.md).
+We have added a new capability to Operations Manager to assess the management packs.  Operations Manager includes a new feature called Updates and Recommendations, to help you proactively identify new technologies or components (i.e. workloads) deployed in your IT infrastructure that were not monitored by Operations Manager or are not monitored using the latest version of a management pack. For more information about Updates and Recommendations see  [Management Pack Assessment](../Manage/Management-Pack-Assessment.md).
 
 ## Alert Data Management 
 With the release of System Center 2016 Technical Preview 5 – Operations Manager, you get better visibility of the alerts being generated in your management group which helps you reduce alerts that you don't consider actionable or relevant.   
@@ -45,7 +45,7 @@ In the System Center 2016 Technical Preview 5 – Operations Manager release, we
 
 -  Supports ACS security audit event collection
     
-For specific instructions on how to configure [!INCLUDE[scom_threshold_1](Token/scom_threshold_1_md.md)] to monitor Nano Server, see [Monitoring Nano Server](Monitoring-Nano-Server.md).
+For specific instructions on how to configure [!INCLUDE[scom_threshold_1](../../Token/scom_threshold_1_md.md)] to monitor Nano Server, see [Monitoring Nano Server](../Manage/Monitoring-Nano-Server.md).
 
 ## Console User Interface Performance Improvements
 With the release of System Center 2016 Technical Preview 5 – Operations Manager, we have made performance improvements to alert views in the Operations console to increase responsiveness.
@@ -76,7 +76,7 @@ The “Maintenance Schedules” feature offers the following advantages over the
 -   Ability to schedule multiple jobs for the same monitored entity.
 
 ## Extend Operations Manager with Operations Management Suite
-With [!INCLUDE[OMS_1](Token/OMS_1_md.md)] you can extend your management capabilities by connecting your Operations Management infrastructure to management and analysis services provided through your Azure account. The main scenarios for connecting [!INCLUDE[scom_threshold_1](Token/scom_threshold_1_md.md)] to [!INCLUDE[OMS_1](Token/OMS_1_md.md)] include:
+With [!INCLUDE[OMS_1](../../Token/OMS_1_md.md)] you can extend your management capabilities by connecting your Operations Management infrastructure to management and analysis services provided through your Azure account. The main scenarios for connecting [!INCLUDE[scom_threshold_1](../../Token/scom_threshold_1_md.md)] to [!INCLUDE[OMS_1](../../Token/OMS_1_md.md)] include:
 
 -   Configuration Assessment
 
@@ -84,7 +84,7 @@ With [!INCLUDE[OMS_1](Token/OMS_1_md.md)] you can extend your management capabil
 
 -   Capacity Planning
 
-For more information please review the [!INCLUDE[OMS_1](Token/OMS_1_md.md)] [Operations Management Suite](https://technet.microsoft.com/library/mt484091.aspx) documentation.
+For more information please review the [!INCLUDE[OMS_1](../../Token/OMS_1_md.md)] [Operations Management Suite](https://technet.microsoft.com/library/mt484091.aspx) documentation.
 
 ## Partner Program in Administration Pane
 Customers can view certified System Center Operations Manager partner solutions directly from the console. Customers can obtain a view of the partner solutions and visit the partner websites to download and install the solutions.  

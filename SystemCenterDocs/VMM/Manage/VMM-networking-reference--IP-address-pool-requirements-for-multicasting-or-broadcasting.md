@@ -21,7 +21,7 @@ If you are using network virtualization on your VM networks, you can support an 
 
 -   For the VM network in which you want to support multicasting, the IP protocol setting \(either IPv4 or IPv6\) must match the IP protocol setting for the underlying logical network. To configure this, in the Create VM Network Wizard, on the **Isolation** page of the wizard, select the same IP address protocol \(IPv4 or IPv6\) for both the logical network and the VM network.
 
-    Note that after you finish creating the VM network, you cannot view this protocol setting in the [!INCLUDE[vmm12short](Token/vmm12short_md.md)] management console. Instead, run the Windows PowerShell cmdlet [Get-SCVMNetwork](http://technet.microsoft.com/library/jj613172.aspx) to view the setting. Use the following syntax, where `<VMNetworkName>` is the name of your VM network:
+    Note that after you finish creating the VM network, you cannot view this protocol setting in the [!INCLUDE[vmm12short](../../Token/vmm12short_md.md)] management console. Instead, run the Windows PowerShell cmdlet [Get-SCVMNetwork](http://technet.microsoft.com/library/jj613172.aspx) to view the setting. Use the following syntax, where `<VMNetworkName>` is the name of your VM network:
 
     `Get-SCVMNetwork –Name <VMNetworkName> | Format-List Name, IsolationType, *PoolType`
 

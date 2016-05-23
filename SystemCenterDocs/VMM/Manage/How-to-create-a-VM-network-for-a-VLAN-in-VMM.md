@@ -11,7 +11,7 @@ ms.topic: article
 ms.assetid: dba9273e-008e-4f21-a3cf-52f9b1530f60
 ---
 # How to create a VM network for a VLAN in VMM
-You can use familiar virtual local area network \(VLAN\) technology for network isolation, and manage your configuration in [!INCLUDE[vmm12sp1_long](Token/vmm12sp1_long_md.md)] by creating VM networks for your VLANs. To plan your VM networks, see [Plan VM networks for a VLAN-based configuration](Overview--plan-VM-networks-in-VMM.md#BKMK_VLAN). To see how this procedure fits into an overall workflow, see [Implementing the configuration](Configuring-logical-networks,-VM-networks,-and-logical-switches-in-VMM.md#BKMK_implementing) in "Configuring logical networks, VM networks, and logical switches in VMM."
+You can use familiar virtual local area network \(VLAN\) technology for network isolation, and manage your configuration in [!INCLUDE[vmm12sp1_long](../../Token/vmm12sp1_long_md.md)] by creating VM networks for your VLANs. To plan your VM networks, see [Plan VM networks for a VLAN-based configuration](Overview--plan-VM-networks-in-VMM.md#BKMK_VLAN). To see how this procedure fits into an overall workflow, see [Implementing the configuration](Configuring-logical-networks,-VM-networks,-and-logical-switches-in-VMM.md#BKMK_implementing) in "Configuring logical networks, VM networks, and logical switches in VMM."
 
 > [!NOTE]
 > A "VLAN\-based configuration" means a configuration where VLANs are used for isolation, not just for broadcast boundaries.
@@ -40,7 +40,7 @@ To perform this procedure, you must already have a logical network that uses the
 
 6.  On the **Isolation Options** page, select one of the following options, and then click **Next**. If you do not see these options, confirm that you selected a logical network that uses either the **VLAN\-based independent networks** option or the **Private VLAN \(PVLAN\) networks** option, or see the links listed at the end of this topic.
 
-    -   **Automatic** Select this option to have [!INCLUDE[vmm12short](Token/vmm12short_md.md)] automatically configure the isolation of the VM network. [!INCLUDE[vmm12short](Token/vmm12short_md.md)] will select a network site and subnet VLAN, based on those that are available on the logical network.
+    -   **Automatic** Select this option to have [!INCLUDE[vmm12short](../../Token/vmm12short_md.md)] automatically configure the isolation of the VM network. [!INCLUDE[vmm12short](../../Token/vmm12short_md.md)] will select a network site and subnet VLAN, based on those that are available on the logical network.
 
     -   **Specify a VLAN** Select this option to manually configure the isolation of the VM network, and then select the **Network site** and **Subnet VLAN**.
 
@@ -51,14 +51,14 @@ To perform this procedure, you must already have a logical network that uses the
 
 8.  Verify that the VM network appears in the **VM Networks and IP Pools** pane.
 
-After a virtual machine has been deployed in [!INCLUDE[vmm12short](Token/vmm12short_md.md)], you can view the IP address or addresses assigned to that virtual machine. To do this, right\-click the listing for the virtual machine, click **Properties**, click the **Hardware Configuration** tab, click the network adapter, and in the results pane, click the **Connection details** button.
+After a virtual machine has been deployed in [!INCLUDE[vmm12short](../../Token/vmm12short_md.md)], you can view the IP address or addresses assigned to that virtual machine. To do this, right\-click the listing for the virtual machine, click **Properties**, click the **Hardware Configuration** tab, click the network adapter, and in the results pane, click the **Connection details** button.
 
 > [!IMPORTANT]
-> If you configure a virtual machine to obtain a static IP address from an IP address pool, you must also configure the virtual machine to use a static MAC address. You can either specify the MAC address manually \(during the **Configure Settings** step\) or have [!INCLUDE[vmm12short](Token/vmm12short_md.md)] automatically assign a MAC address from a MAC address pool.
+> If you configure a virtual machine to obtain a static IP address from an IP address pool, you must also configure the virtual machine to use a static MAC address. You can either specify the MAC address manually \(during the **Configure Settings** step\) or have [!INCLUDE[vmm12short](../../Token/vmm12short_md.md)] automatically assign a MAC address from a MAC address pool.
 > 
-> This requirement for static MAC addresses is necessary because [!INCLUDE[vmm12short](Token/vmm12short_md.md)] uses the MAC address to identify which network adapter to set the static IP address to, and this identification must happen before the virtual machine starts. Identifying the network adapter is especially important if a virtual machine has multiple adapters. If the MAC addresses were assigned dynamically through Hyper\-V, [!INCLUDE[vmm12short](Token/vmm12short_md.md)] could not consistently identify the correct adapter to set a static IP address on.
+> This requirement for static MAC addresses is necessary because [!INCLUDE[vmm12short](../../Token/vmm12short_md.md)] uses the MAC address to identify which network adapter to set the static IP address to, and this identification must happen before the virtual machine starts. Identifying the network adapter is especially important if a virtual machine has multiple adapters. If the MAC addresses were assigned dynamically through Hyper\-V, [!INCLUDE[vmm12short](../../Token/vmm12short_md.md)] could not consistently identify the correct adapter to set a static IP address on.
 > 
-> [!INCLUDE[vmm12short](Token/vmm12short_md.md)] provides static MAC address pools by default, but you can customize the pools. [!INCLUDE[vmm12short](Token/vmm12short_md.md)] provides static MAC address pools by default, but you can customize the pools, as described in [VMM networking reference: creating custom MAC address pools in VMM](VMM-networking-reference--creating-custom-MAC-address-pools-in-VMM.md).
+> [!INCLUDE[vmm12short](../../Token/vmm12short_md.md)] provides static MAC address pools by default, but you can customize the pools. [!INCLUDE[vmm12short](../../Token/vmm12short_md.md)] provides static MAC address pools by default, but you can customize the pools, as described in [VMM networking reference: creating custom MAC address pools in VMM](VMM-networking-reference--creating-custom-MAC-address-pools-in-VMM.md).
 
 ## See Also
 [Overview: plan VM networks in VMM](Overview--plan-VM-networks-in-VMM.md)

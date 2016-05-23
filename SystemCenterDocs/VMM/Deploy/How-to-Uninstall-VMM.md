@@ -13,7 +13,7 @@ ms.assetid: 34ead8d2-f244-4d8a-95f2-e985b7c69976
 # How to Uninstall VMM
 You can use the following procedures to uninstall a VMM management server or the VMM console.
 
-Before uninstalling [!INCLUDE[vmm12short](Token/vmm12short_md.md)], ensure that the VMM console and the VMM command shell are closed.
+Before uninstalling [!INCLUDE[vmm12short](../../Token/vmm12short_md.md)], ensure that the VMM console and the VMM command shell are closed.
 
 > [!NOTE]
 > If there is a problem with uninstallation completing successfully, consult the log files in the **%SYSTEMDRIVE%\\ProgramData\\VMMLogs** folder. **ProgramData** is a hidden folder.
@@ -47,7 +47,7 @@ Membership in the local Administrators group, or equivalent, on the computer tha
 
 8.  After the VMM management server is uninstalled, on the **The selected features were removed successfully** page, click **Close**.
 
-The following firewall rules, which were enabled during [!INCLUDE[vmm12short](Token/vmm12short_md.md)] Setup, remain in effect after you uninstall [!INCLUDE[vmm12short](Token/vmm12short_md.md)]:
+The following firewall rules, which were enabled during [!INCLUDE[vmm12short](../../Token/vmm12short_md.md)] Setup, remain in effect after you uninstall [!INCLUDE[vmm12short](../../Token/vmm12short_md.md)]:
 
 -   File Server Remote Management
 

@@ -8,14 +8,14 @@ ms.topic: article
 ms.assetid: 6ce1f959-fb44-4f37-9f68-640f15505185
 ---
 # How to create an application profile in a service deployment
-You can use the following procedure to create an application profile in [!INCLUDE[vmm12sp1_long](Token/vmm12sp1_long_md.md)]. An application profile provides instructions for installing Microsoft Web Deploy applications or Microsoft SQL Server data\-tier applications \(DACs\), and instructions for running scripts, when a virtual machine is deployed as part of a service. Application profiles are not supported for Linux operating systems because application profiles are designed for technologies that are specific to Windows operating systems.
+You can use the following procedure to create an application profile in [!INCLUDE[vmm12sp1_long](../../Token/vmm12sp1_long_md.md)]. An application profile provides instructions for installing Microsoft Web Deploy applications or Microsoft SQL Server data\-tier applications \(DACs\), and instructions for running scripts, when a virtual machine is deployed as part of a service. Application profiles are not supported for Linux operating systems because application profiles are designed for technologies that are specific to Windows operating systems.
 
 > [!IMPORTANT]
 > You can only use an application profile when you deploy a virtual machine as part of a service.
 
 ### To create an application profile
 
-1.  Confirm that your application components, such as packages, scripts, and so on, have been copied to the [!INCLUDE[vmm12short](Token/vmm12short_md.md)] library share. For example, if you plan to create a profile for a SQL Server application host, confirm that your SQL Server DAC packages and SQL Server scripts have been copied to the [!INCLUDE[vmm12short](Token/vmm12short_md.md)] library share.
+1.  Confirm that your application components, such as packages, scripts, and so on, have been copied to the [!INCLUDE[vmm12short](../../Token/vmm12short_md.md)] library share. For example, if you plan to create a profile for a SQL Server application host, confirm that your SQL Server DAC packages and SQL Server scripts have been copied to the [!INCLUDE[vmm12short](../../Token/vmm12short_md.md)] library share.
 
 2.  Open the **Library** workspace.
 
@@ -47,7 +47,7 @@ You can use the following procedure to create an application profile in [!INCLUD
 
         -   Regardless of whether you add an application, if you kept the **Compatibility** option set to **General**, you can select **Scripts** to add a script. The number of scripts is not limited, and you can specify the order in which the scripts will run.
 
-            You can use scripts to create a guest cluster out of multiple virtual machines that are all deployed as part of a [!INCLUDE[vmm12short](Token/vmm12short_md.md)] service. For example, you can specify that one script will run at **Creation: First VM** \(to form the cluster on the first virtual machine\) and a different script will run at **Creation: VMs After First** \(to add additional virtual machines to the cluster\). For more information, see [How to create a guest cluster by using a service template in VMM](How-to-create-a-guest-cluster-by-using-a-service-template-in-VMM.md).
+            You can use scripts to create a guest cluster out of multiple virtual machines that are all deployed as part of a [!INCLUDE[vmm12short](../../Token/vmm12short_md.md)] service. For example, you can specify that one script will run at **Creation: First VM** \(to form the cluster on the first virtual machine\) and a different script will run at **Creation: VMs After First** \(to add additional virtual machines to the cluster\). For more information, see [How to create a guest cluster by using a service template in VMM](How-to-create-a-guest-cluster-by-using-a-service-template-in-VMM.md).
 
     3.  For each application or script that you add, configure the appropriate settings. Some of the settings that you can configure are as follows:
 

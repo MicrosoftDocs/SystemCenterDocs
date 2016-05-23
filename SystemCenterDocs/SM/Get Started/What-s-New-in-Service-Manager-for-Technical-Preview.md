@@ -11,9 +11,9 @@ ms.topic: get-started-article
 ms.assetid: 3eeb3265-88e0-47ed-b761-07f4e0634959
 ---
 # What&#39;s New in Service Manager for Technical Preview
-[!INCLUDE[scsm_threshold_1](Token/scsm_threshold_1_md.md)] is updated for [!INCLUDE[sc_threshold_1](Token/sc_threshold_1_md.md)] 5.
+[!INCLUDE[scsm_threshold_1](../../Token/scsm_threshold_1_md.md)] is updated for [!INCLUDE[sc_threshold_1](../../Token/sc_threshold_1_md.md)] 5.
 
-For details about known issues that could affect you before you install [!INCLUDE[scsm_threshold_1](Token/scsm_threshold_1_md.md)], read the [Release Notes for System Center Technical Preview](Release-Notes-for-System-Center-Technical-Preview-5.md).
+For details about known issues that could affect you before you install [!INCLUDE[scsm_threshold_1](../../Token/scsm_threshold_1_md.md)], read the [Release Notes for System Center Technical Preview](../../System Center/Getting Started/Release-Notes-for-System-Center-Technical-Preview-5.md).
 
 ## Improvements in technical preview 5
 
@@ -184,7 +184,7 @@ The Self Service portal was updated for Technical Preview 5 with a number of bug
   - Adding selected items of a query to sub-activities for any hierarchy level
   - A `User Portal` user token in Query criteria
 - The Self Service portal now filters the Service Offerings based on language.
-- The Self Sevice portal now allows you to configure a Generic request button to have default and language specific Request Offerings associated with it. For more information about customizing the Self Service Portal, see [Deploy the New Self-Service Portal](Deploy-the-Self-Service-Portal-for-Service-Manager.md#Customize-the-Self-Service-Portal).
+- The Self Sevice portal now allows you to configure a Generic request button to have default and language specific Request Offerings associated with it. For more information about customizing the Self Service Portal, see [Deploy the New Self-Service Portal](../Deploy/Deploy-the-Self-Service-Portal-for-Service-Manager.md#Customize-the-Self-Service-Portal).
 - Access to Announcements can now be controlled with user roles.
 - A share button has been added in all Self Service Portal pages to easily share a Request offering, submitted Request, Activity or a Help article.
 - You can configure the work item active state enumeration.
@@ -227,7 +227,7 @@ Key improvements in this relase:
 -   Support for .NET Framework 4.5.1
 
 ### Support for Lync 2013 and Skype for Business
-Service Manager 2016 Technical preview 4 includes updates that supports integration with Lync 2013 and Skype for Business in Microsoft Office suite 2013 and  2016. For information about contacting a user using Lync or Skype for Business, see [Contact a User from an Incident Form](Contact-a-User-from-an-Incident-Form.md).
+Service Manager 2016 Technical preview 4 includes updates that supports integration with Lync 2013 and Skype for Business in Microsoft Office suite 2013 and  2016. For information about contacting a user using Lync or Skype for Business, see [Contact a User from an Incident Form](../Manage/Contact-a-User-from-an-Incident-Form.md).
 
 ### New Self Service portal
 This release contains a new HTML\-based Self Service Portal which offers the following enhancements:
@@ -248,7 +248,7 @@ This release contains a new HTML\-based Self Service Portal which offers the fol
 
 -   Rich customization
 
-For more information and installing and customizing the portal, see [Deploy the Self-Service Portal for Service Manager](Deploy-the-Self-Service-Portal-for-Service-Manager.md).
+For more information and installing and customizing the portal, see [Deploy the Self-Service Portal for Service Manager](../Deploy/Deploy-the-Self-Service-Portal-for-Service-Manager.md).
 
 > [!NOTE]
 > The older Silverlight and SharePoint\-based Self\-Service portal has been removed.
@@ -317,7 +317,7 @@ The Active Directory and SCCM connectors in Service Manager can import large amo
 
 The ECL table, and the history tables in this case, store details about when the data was brought into Service Manager and the properties that were added or updated for each data item.
 Disabling ELC logging, doesn’t affect importing data from connectors. Instead, most logging data doesn’t get written to the ECL and history tables, which can result is significant performance improvement. 
-Disabled ECL logging is not automatically turned on. In other words, by default, ECL logging is enabled. However, you can easily turn on Disabled ECL logging by revising a registry key value. For more information, see [Optionally Disable ECL Logging for Faster Connector Synchronization](Optionally-Disable-ECL-Logging-for-Faster-Connector-Synchronization.md).
+Disabled ECL logging is not automatically turned on. In other words, by default, ECL logging is enabled. However, you can easily turn on Disabled ECL logging by revising a registry key value. For more information, see [Optionally Disable ECL Logging for Faster Connector Synchronization](../Deploy/Optionally-Disable-ECL-Logging-for-Faster-Connector-Synchronization.md).
 
 **Grooming improvements for ECL logs**
 
@@ -375,7 +375,7 @@ As always, we recommend that you perform typical or routine tasks in the test en
 
 **Active Directory connector fixes**. The Active Directory connector was updated to address a problem where the connector  performed a complete sync after any domain controller failover. The issue put an unnecessary load on the workflow server, causing performance to degrade. Normally, the connector only syncs data that was changed since the last run.
 
-**MPSync job updates**. The MPSync job is improved to be more reliable in [!INCLUDE[scsm_threshold_1](Token/scsm_threshold_1_md.md)]. Previously, Service Manager could stop responding  when you updated a management pack or if you re\-registered  the data warehouse. This resulted in   reports with data that wasn't  refreshed. Even if you checked the Service Manager console, the jobs listed under Datawarehouse Jobs wouldn't show the correct status. The most common reason for getting into the hung state was due to management pack deployment because the system tried to recreate an existing primary\/foreign key in a table.
+**MPSync job updates**. The MPSync job is improved to be more reliable in [!INCLUDE[scsm_threshold_1](../../Token/scsm_threshold_1_md.md)]. Previously, Service Manager could stop responding  when you updated a management pack or if you re\-registered  the data warehouse. This resulted in   reports with data that wasn't  refreshed. Even if you checked the Service Manager console, the jobs listed under Datawarehouse Jobs wouldn't show the correct status. The most common reason for getting into the hung state was due to management pack deployment because the system tried to recreate an existing primary\/foreign key in a table.
 
 **Significant performance improvements**.  Service Manager's Active Directory and System Center Configuration Manager connectors performance was improved. In internal testing at Microsoft, sync time improved by about 50% for the SCCM connector and about 35% for the AD connector. You can read more about performance improvements at the [Service Manager blog](http://blogs.technet.com/b/servicemanager/archive/2015/03/19/sccm-lfx-connector-performance-improvements.aspx).
 

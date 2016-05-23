@@ -8,7 +8,7 @@ ms.topic: article
 ms.assetid: 129b0f58-bc3b-4ee4-bd5f-0048ba24179c
 ---
 # How to delete a private cloud in VMM
-You can use this procedure to delete a private cloud in [!INCLUDE[vmm12sp1_long](Token/vmm12sp1_long_md.md)].
+You can use this procedure to delete a private cloud in [!INCLUDE[vmm12sp1_long](../../Token/vmm12sp1_long_md.md)].
 
 > [!IMPORTANT]
 > Before you can delete a private cloud, there must be no objects that reference the private cloud, such as services, service deployment configurations, and deployed or stored virtual machines.

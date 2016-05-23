@@ -11,18 +11,18 @@ ms.topic: article
 ms.assetid: db239f58-9852-4fb9-a7fd-251103a70dba
 ---
 # About Importing Data from Comma-Separated Files into Service Manager
-Configuration items contained in a comma\-separated value \(.csv\) file can be imported into the [!INCLUDE[smshort](Token/smshort_md.md)] database by using the Import from CSV File feature. This feature lets you to bulk\-import instances of any class type or projection type that is defined in the [!INCLUDE[smshort](Token/smshort_md.md)] database. You can use this feature to:
+Configuration items contained in a comma\-separated value \(.csv\) file can be imported into the [!INCLUDE[smshort](../../Token/smshort_md.md)] database by using the Import from CSV File feature. This feature lets you to bulk\-import instances of any class type or projection type that is defined in the [!INCLUDE[smshort](../../Token/smshort_md.md)] database. You can use this feature to:
 
 -   Create configuration item or work item instances from data stored in a tabular format.
 
 -   Bulk\-edit existing database instances.
 
--   Populate the [!INCLUDE[smshort](Token/smshort_md.md)] database by using data exported from an external database.
+-   Populate the [!INCLUDE[smshort](../../Token/smshort_md.md)] database by using data exported from an external database.
 
 -   Circumvent data entry through forms when many class instances must be created at the same time.
 
 > [!NOTE]
-> Importing many complex items—for example, 5,000 computer projections—could take an hour or more. During this time, [!INCLUDE[smshort](Token/smshort_md.md)] continues to function.
+> Importing many complex items—for example, 5,000 computer projections—could take an hour or more. During this time, [!INCLUDE[smshort](../../Token/smshort_md.md)] continues to function.
 
 Two files are required to import a set of instances by using the Import from CSV File feature:
 
@@ -31,7 +31,7 @@ Two files are required to import a set of instances by using the Import from CSV
 2.  A format file that specifies the class type or projection type of the instances present in the data file. Every instance in the data file is assumed to be of this kind. The format file also specifies \(1\) the subset of properties and, for projections, specifies components. They are being imported for the indicated type, and \(2\) the order in which those properties appear as columns in the associated data file. The format file must have the same file name as the csv file that it describes, and it must end with the .xml file name extension.
 
 ## Creating the Data File
-For example, you receive a spreadsheet that contains information about computers that you want to import into the [!INCLUDE[smshort](Token/smshort_md.md)] database. The following is a sample of the first 10 computers in the spreadsheet.
+For example, you receive a spreadsheet that contains information about computers that you want to import into the [!INCLUDE[smshort](../../Token/smshort_md.md)] database. The following is a sample of the first 10 computers in the spreadsheet.
 
 |Computer Name|IP Address|Domain Name|
 |-----------------|--------------|---------------|

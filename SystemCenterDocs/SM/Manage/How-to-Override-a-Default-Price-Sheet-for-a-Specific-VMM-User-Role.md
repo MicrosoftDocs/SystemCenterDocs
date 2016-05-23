@@ -11,11 +11,11 @@ ms.topic: article
 ms.assetid: 383a9a81-7543-4350-9618-02435baaac82
 ---
 # How to Override a Default Price Sheet for a Specific VMM User Role
-After [!INCLUDE[smshort](Token/smshort_md.md)] has discovered cloud objects from the Operations Manager CI connector, you can assign an existing price sheet that applies default price values to all the resources of the cloud. This process is useful when you have many virtual machines so that you do not have to define prices for all the individual virtual machine parts. Once the default price sheet is assigned to a cloud, you can override the default values, on a per\-user basis. [!INCLUDE[crabout](Token/crabout_md.md)] assigning a default price sheet to a cloud, see [How to Assign or Remove a Default Price Sheet for a Selected Cloud](How-to-Assign-or-Remove-a-Default-Price-Sheet-for-a-Selected-Cloud.md).
+After [!INCLUDE[smshort](../../Token/smshort_md.md)] has discovered cloud objects from the Operations Manager CI connector, you can assign an existing price sheet that applies default price values to all the resources of the cloud. This process is useful when you have many virtual machines so that you do not have to define prices for all the individual virtual machine parts. Once the default price sheet is assigned to a cloud, you can override the default values, on a per\-user basis. [!INCLUDE[crabout](../../Token/crabout_md.md)] assigning a default price sheet to a cloud, see [How to Assign or Remove a Default Price Sheet for a Selected Cloud](How-to-Assign-or-Remove-a-Default-Price-Sheet-for-a-Selected-Cloud.md).
 
 ### To override a default price sheet for a specific VMM user role
 
-1.  In the [!INCLUDE[smcons](Token/smcons_md.md)], select **Administration**.
+1.  In the [!INCLUDE[smcons](../../Token/smcons_md.md)], select **Administration**.
 
 2.  In the **Administration** pane, expand **Chargeback**, expand **Clouds**, and then select **All Clouds**.
 

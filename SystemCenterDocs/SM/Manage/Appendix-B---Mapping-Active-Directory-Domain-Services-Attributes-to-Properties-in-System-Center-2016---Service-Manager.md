@@ -11,10 +11,10 @@ ms.topic: article
 ms.assetid: fb609f10-418e-4e1c-a514-ee36f9fdc560
 ---
 # Appendix B - Mapping Active Directory Domain Services Attributes to Properties in System Center 2016 - Service Manager
-Using an Active Directory connector, Service Manager synchronizes data with the User, Group, Computer, and Printer Active Directory Domain Services \(AD DS\) objects. The following tables describe the mapping between the attributes of the Active Directory objects and the corresponding [!INCLUDE[smshort](Token/smshort_md.md)] class properties.
+Using an Active Directory connector, Service Manager synchronizes data with the User, Group, Computer, and Printer Active Directory Domain Services \(AD DS\) objects. The following tables describe the mapping between the attributes of the Active Directory objects and the corresponding [!INCLUDE[smshort](../../Token/smshort_md.md)] class properties.
 
 ## User\/Microsoft.AD.User
-The following table describes the mapping between the attributes of the Active Directory User object and the  [!INCLUDE[smshort](Token/smshort_md.md)] **Microsoft.AD.User** class properties.
+The following table describes the mapping between the attributes of the Active Directory User object and the  [!INCLUDE[smshort](../../Token/smshort_md.md)] **Microsoft.AD.User** class properties.
 
 |Active Directory user attribute|Microsoft.AD.User property|
 |-----------------------------------|------------------------------|
@@ -47,7 +47,7 @@ The following table describes the mapping between the attributes of the Active 
 |Domain|Domain|
 
 ## Group\/Microsoft.AD.UserBase
-The following table describes the mapping between the attributes of the Active Directory Group object and the [!INCLUDE[smshort](Token/smshort_md.md)] **Microsoft.AD.UserBase** class properties.
+The following table describes the mapping between the attributes of the Active Directory Group object and the [!INCLUDE[smshort](../../Token/smshort_md.md)] **Microsoft.AD.UserBase** class properties.
 
 |Active Directory group attribute|Microsoft.AD.UserBase property|
 |------------------------------------|----------------------------------|
@@ -59,7 +59,7 @@ The following table describes the mapping between the attributes of the Active 
 |Domain|Domain|
 
 ## Printer\/Microsoft.AD.Printer
-The following table describes the mapping between the attributes of the Active Directory PrintQueue object and the [!INCLUDE[smshort](Token/smshort_md.md)] **Microsoft.AD.Printer** class properties.
+The following table describes the mapping between the attributes of the Active Directory PrintQueue object and the [!INCLUDE[smshort](../../Token/smshort_md.md)] **Microsoft.AD.Printer** class properties.
 
 |Active Directory printer attribute|Microsoft.AD.Printer property|
 |--------------------------------------|---------------------------------|
@@ -107,7 +107,7 @@ The following table describes the mapping between the attributes of the Active 
 |description|description|
 
 ## Computer\/Microsoft.Windows.Computer
-The following table describes the mapping between the attributes of the Active Directory Computer object and the  [!INCLUDE[smshort](Token/smshort_md.md)] **Microsoft.Windows.Computer** class properties.
+The following table describes the mapping between the attributes of the Active Directory Computer object and the  [!INCLUDE[smshort](../../Token/smshort_md.md)] **Microsoft.Windows.Computer** class properties.
 
 |Active Directory computer attribute|Microsoft.Windows.Computer property|
 |---------------------------------------|---------------------------------------|

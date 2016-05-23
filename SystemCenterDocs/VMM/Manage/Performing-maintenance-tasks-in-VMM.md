@@ -8,7 +8,7 @@ ms.topic: article
 ms.assetid: 91cc4d84-7189-436b-a846-a16d8c96a76d
 ---
 # Performing maintenance tasks in VMM
-The procedures in this section describe how to perform common maintenance tasks in [!INCLUDE[vmm12sp1_long](Token/vmm12sp1_long_md.md)].
+The procedures in this section describe how to perform common maintenance tasks in [!INCLUDE[vmm12sp1_long](../../Token/vmm12sp1_long_md.md)].
 
 -   [How to create and assign a servicing window in VMM](How-to-create-and-assign-a-servicing-window-in-VMM.md)
 
@@ -20,6 +20,6 @@ The procedures in this section describe how to perform common maintenance tasks 
 
 -   [Back up and restore VMM](Back-up-and-restore-VMM.md)
 
-    Describes how to backup and restore the [!INCLUDE[vmm12short](Token/vmm12short_md.md)] environment.
+    Describes how to backup and restore the [!INCLUDE[vmm12short](../../Token/vmm12short_md.md)] environment.
 
 

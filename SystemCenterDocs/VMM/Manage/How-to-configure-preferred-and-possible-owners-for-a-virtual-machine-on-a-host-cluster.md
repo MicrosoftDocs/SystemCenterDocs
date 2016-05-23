@@ -8,7 +8,7 @@ ms.topic: article
 ms.assetid: b3395d9f-b75c-4b97-9a33-299dd2a84677
 ---
 # How to configure preferred and possible owners for a virtual machine on a host cluster
-If you deploy virtual machines on a host cluster, you can use [!INCLUDE[vmm12sp1_long](Token/vmm12sp1_long_md.md)] to configure preferred owners and possible owners for the virtual machines. By default, there are no preferred owners \(there is no preference\), and the possible owners include all nodes \(servers\) in the host cluster.
+If you deploy virtual machines on a host cluster, you can use [!INCLUDE[vmm12sp1_long](../../Token/vmm12sp1_long_md.md)] to configure preferred owners and possible owners for the virtual machines. By default, there are no preferred owners \(there is no preference\), and the possible owners include all nodes \(servers\) in the host cluster.
 
 For information about other settings related to availability of virtual machines on a host cluster, see [Configuring availability options for virtual machines in VMM](Configuring-availability-options-for-virtual-machines-in-VMM.md).
 

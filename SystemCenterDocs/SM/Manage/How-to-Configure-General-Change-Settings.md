@@ -18,7 +18,7 @@ Use the following procedures to configure settings to specify change request pre
 
 ### To configure general change settings
 
-1.  In the [!INCLUDE[smcons](Token/smcons_md.md)], click **Administration**.
+1.  In the [!INCLUDE[smcons](../../Token/smcons_md.md)], click **Administration**.
 
 2.  In the **Administration** pane, expand **Administration**, and then click **Settings**.
 

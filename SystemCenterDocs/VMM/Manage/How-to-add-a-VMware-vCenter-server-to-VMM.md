@@ -10,14 +10,14 @@ ms.topic: article
 ms.assetid: b6c8942f-84f6-4ebf-9d5a-be30d3b92892
 ---
 # How to add a VMware vCenter server to VMM
-You can use the following procedure to add a VMware vCenter Server to [!INCLUDE[vmm12sp1_long](Token/vmm12sp1_long_md.md)]. You must add the vCenter Server before you can add VMware ESX hosts.
+You can use the following procedure to add a VMware vCenter Server to [!INCLUDE[vmm12sp1_long](../../Token/vmm12sp1_long_md.md)]. You must add the vCenter Server before you can add VMware ESX hosts.
 
 ## Prerequisites
 Before you begin this procedure, make sure that the following prerequisites are met:
 
 -   The server that you want to add must be running a supported version of vCenter Server. For more information, see [VMM support for VMware](VMM-support-for-VMware.md).
 
--   For communications between the [!INCLUDE[vmm12short](Token/vmm12short_md.md)] management server and the vCenter Server, encryption using Secure Sockets Layer \(SSL\) requires a certificate to verify the identity of the vCenter Server. You can either use a self\-signed certificate for the vCenter Server, or a third\-party, verified certificate. If you are using a self\-signed certificate, you can manually import the certificate to the Trusted People certificate store on the [!INCLUDE[vmm12short](Token/vmm12short_md.md)] management server before you add the vCenter Server, or you can import the certificate during this procedure when you are prompted to do this.
+-   For communications between the [!INCLUDE[vmm12short](../../Token/vmm12short_md.md)] management server and the vCenter Server, encryption using Secure Sockets Layer \(SSL\) requires a certificate to verify the identity of the vCenter Server. You can either use a self\-signed certificate for the vCenter Server, or a third\-party, verified certificate. If you are using a self\-signed certificate, you can manually import the certificate to the Trusted People certificate store on the [!INCLUDE[vmm12short](../../Token/vmm12short_md.md)] management server before you add the vCenter Server, or you can import the certificate during this procedure when you are prompted to do this.
 
     > [!NOTE]
     > If you are using a third\-party, verified certificate, you do not have to import the certificate to the Trusted People certificate store.
@@ -43,7 +43,7 @@ Before you begin this procedure, make sure that the following prerequisites are 
 
     1.  In the **Computer name** box, enter the fully qualified domain name \(FQDN\), NetBIOS name, or IP address of the vCenter Server.
 
-    2.  In the **TCP\/IP port** box, enter the port to use to connect to the vCenter Server. By default, [!INCLUDE[vmm12short](Token/vmm12short_md.md)] uses TCP\/IP port 443 to connect to the server through Secure Socket Layer \(SSL\).
+    2.  In the **TCP\/IP port** box, enter the port to use to connect to the vCenter Server. By default, [!INCLUDE[vmm12short](../../Token/vmm12short_md.md)] uses TCP\/IP port 443 to connect to the server through Secure Socket Layer \(SSL\).
 
     3.  Next to the **Run As account** box, click **Browse**, click the Run As account that has administrative access to the vCenter Server, and then click **OK**.
 

@@ -11,7 +11,7 @@ ms.topic: article
 ms.assetid: 90b57d6b-bbeb-4949-867c-0a4fdd1faf8a
 ---
 # Preparing the fabric scenario in VMM
-The example scenario that is used in this section illustrates one way to configure the fabric with [!INCLUDE[vmm12sp1_long](Token/vmm12sp1_long_md.md)], including sample host groups, library shares, networking resources, and storage resources. Because some of these examples depend on your existing hardware and physical infrastructure, consider the examples as guidelines. For more information, see the topics listed in [Managing Fabric Resources in VMM](Managing-fabric-resources-in-VMM.md).
+The example scenario that is used in this section illustrates one way to configure the fabric with [!INCLUDE[vmm12sp1_long](../../Token/vmm12sp1_long_md.md)], including sample host groups, library shares, networking resources, and storage resources. Because some of these examples depend on your existing hardware and physical infrastructure, consider the examples as guidelines. For more information, see the topics listed in [Managing Fabric Resources in VMM](Managing-fabric-resources-in-VMM.md).
 
 The following table summarizes a set of sample **RESOURCES** that you could create to try out a sample infrastructure.
 

@@ -11,7 +11,7 @@ ms.topic: article
 ms.assetid: 923cdb13-3c6f-4892-ae15-6dc55c0593d4
 ---
 # Operations Manager Accounts
-To communicate with various parts of the monitoring infrastructure, the [!INCLUDE[om12long](Token/om12long_md.md)] management group requires two accounts: the Management Server Action Account and the System Center Configuration service and System Center Data Access Service Account. You are required to specify credentials for these accounts during installation.
+To communicate with various parts of the monitoring infrastructure, the [!INCLUDE[om12long](../../Token/om12long_md.md)] management group requires two accounts: the Management Server Action Account and the System Center Configuration service and System Center Data Access Service Account. You are required to specify credentials for these accounts during installation.
 
 If you install Reporting, you need to specify credentials for two additional accounts: the Data Warehouse Write account and the Data Reader account.
 
@@ -35,7 +35,7 @@ The separation of the Health Service process from the single and multiple uses o
 The action account can be managed through the Default action account located in **Run As Profiles** in the **Administration** workspace.
 
 ### Using a Low\-Privileged Account
-When you install [!INCLUDE[om12short](Token/om12short_md.md)], you have the option of specifying either a domain account or using Local System. The more secure approach is to specify a domain account which allows you to select a user with the least amount of privileges necessary for your environment.
+When you install [!INCLUDE[om12short](../../Token/om12short_md.md)], you have the option of specifying either a domain account or using Local System. The more secure approach is to specify a domain account which allows you to select a user with the least amount of privileges necessary for your environment.
 
 You can use a low\-privileged account for the agent’s action account. On computers running Windows Server 2003 and Windows Vista, the account must have the following minimum privileges:
 

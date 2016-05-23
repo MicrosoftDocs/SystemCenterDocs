@@ -11,7 +11,7 @@ ms.topic: article
 ms.assetid: b224c157-4a93-42d1-9eaa-898ef7e2a1dd
 ---
 # How to create VIP templates for Network Load Balancing (NLB) in VMM
-You can use the following procedure to create a virtual IP \(VIP\) template for Microsoft Network Load Balancing \(NLB\) in [!INCLUDE[vmm12sp1_long](Token/vmm12sp1_long_md.md)]. A VIP template contains load balancer\-related configuration settings for a specific type of network traffic. For example, you could create a template that specifies the load balancing behavior for HTTPS traffic on port 443.
+You can use the following procedure to create a virtual IP \(VIP\) template for Microsoft Network Load Balancing \(NLB\) in [!INCLUDE[vmm12sp1_long](../../Token/vmm12sp1_long_md.md)]. A VIP template contains load balancer\-related configuration settings for a specific type of network traffic. For example, you could create a template that specifies the load balancing behavior for HTTPS traffic on port 443.
 
 When a user creates a service, they can select a VIP template to use when they want to load balance a service tier. For more information, see [Configuring load balancing in VMM](Configuring-load-balancing-in-VMM.md).
 
@@ -57,7 +57,7 @@ When a user creates a service, they can select a VIP template to use when they w
     -   **Network**. If you select this option, NLB directs multiple requests from the same TCP\/IP Class C address range to the same host in the NLB cluster. This setting ensures that clients that use multiple proxy servers to access the NLB cluster have their TCP or UDP connections directed to the same host in the NLB cluster.
 
     > [!NOTE]
-    > When you deploy a service where a tier is configured to use NLB, [!INCLUDE[vmm12short](Token/vmm12short_md.md)] automatically creates the NLB host cluster.
+    > When you deploy a service where a tier is configured to use NLB, [!INCLUDE[vmm12short](../../Token/vmm12short_md.md)] automatically creates the NLB host cluster.
 
     When you are finished, click **Next**.
 

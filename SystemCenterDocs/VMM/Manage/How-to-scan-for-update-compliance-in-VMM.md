@@ -8,7 +8,7 @@ ms.topic: article
 ms.assetid: 1598fe63-91a9-42a6-8fad-837ff31f060d
 ---
 # How to scan for update compliance in VMM
-After you assign computers to an update baseline in [!INCLUDE[vmm12sp1_long](Token/vmm12sp1_long_md.md)], you can scan the computers to determine their compliance status for the baselines.
+After you assign computers to an update baseline in [!INCLUDE[vmm12sp1_long](../../Token/vmm12sp1_long_md.md)], you can scan the computers to determine their compliance status for the baselines.
 
 When a computer is scanned for compliance, WSUS checks each update in the assigned update baselines to determine whether the update is applicable and, if the update is applicable, whether the update has been installed. After a compliance scan, for every computer, each update has a compliance status of **Compliant**, **Non Compliant**, **Error**, **Pending Reboot**, or **Unknown**. You can view compliance properties for additional information.
 
@@ -33,7 +33,7 @@ The following changes can cause an **Unknown** update status for a computer, and
 
 3.  On the **Home** tab, in the **Show** group, click **Compliance**.
 
-    The results pane displays the compliance status of the computers in the [!INCLUDE[vmm12short](Token/vmm12short_md.md)] fabric. Because you have not yet scanned the computers for compliance, the computers that you added to a baseline have a compliance status of **Unknown** and an operational status of **Pending Compliance Scan**.
+    The results pane displays the compliance status of the computers in the [!INCLUDE[vmm12short](../../Token/vmm12short_md.md)] fabric. Because you have not yet scanned the computers for compliance, the computers that you added to a baseline have a compliance status of **Unknown** and an operational status of **Pending Compliance Scan**.
 
 ### To scan computers for compliance
 
@@ -41,7 +41,7 @@ The following changes can cause an **Unknown** update status for a computer, and
 
 2.  On the **Home** tab, in the **Compliance** group, click **Scan**.
 
-    While the scan is in progress, the compliance status changes to **Unknown**. After the compliance scan completes, the computer's compliance status of each update is **Compliant**, **NonCompliant**, or **Error**. To bring noncompliant computers into compliance, you will perform update remediations in [!INCLUDE[vmm12short](Token/vmm12short_md.md)].
+    While the scan is in progress, the compliance status changes to **Unknown**. After the compliance scan completes, the computer's compliance status of each update is **Compliant**, **NonCompliant**, or **Error**. To bring noncompliant computers into compliance, you will perform update remediations in [!INCLUDE[vmm12short](../../Token/vmm12short_md.md)].
 
 ## See Also
 [How to configure update baselines in VMM](How-to-configure-update-baselines-in-VMM.md)

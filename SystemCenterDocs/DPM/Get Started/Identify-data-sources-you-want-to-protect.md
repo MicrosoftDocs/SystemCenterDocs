@@ -24,6 +24,6 @@ To protect data sources with DPM you'll need to do the following:
     -   **By data characteristics**—For example how often data changes, how rapidly it grows, or its storage requirements.
 
 ## Next steps
-[Deploy the DPM protection agent](Deploy-the-DPM-protection-agent.md)
+[Deploy the DPM protection agent](../Deploy/Deploy-the-DPM-protection-agent.md)
 
 

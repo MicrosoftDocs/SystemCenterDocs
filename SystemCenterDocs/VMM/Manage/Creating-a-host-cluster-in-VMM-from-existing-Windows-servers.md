@@ -11,7 +11,7 @@ ms.topic: article
 ms.assetid: aa816494-2a57-40bc-8b89-99b054713b26
 ---
 # Creating a host cluster in VMM from existing Windows servers
-The topics in this section describe the process for creating a host cluster in [!INCLUDE[vmm12sp1_long](Token/vmm12sp1_long_md.md)], using existing servers running a Windows Server operating system:
+The topics in this section describe the process for creating a host cluster in [!INCLUDE[vmm12sp1_long](../../Token/vmm12sp1_long_md.md)], using existing servers running a Windows Server operating system:
 
 -   [Prerequisites: creating a host cluster in VMM from existing Windows servers](Prerequisites--creating-a-host-cluster-in-VMM-from-existing-Windows-servers.md)
 
@@ -19,8 +19,8 @@ The topics in this section describe the process for creating a host cluster in [
 
 This topic also provides information about [VMM actions during cluster creation](Creating-a-host-cluster-in-VMM-from-existing-Windows-servers.md#BKMK_workflow) and lists [Example resource names](Creating-a-host-cluster-in-VMM-from-existing-Windows-servers.md#BKMK_example). For information about other ways of creating or adding clusters, see the links at the end of this topic.
 
-## <a name="BKMK_workflow"></a>How [!INCLUDE[vmm12short](Token/vmm12short_md.md)] creates a Hyper\-V host cluster
-During the cluster creation process, after you click **Finish** on the cluster creation wizard, [!INCLUDE[vmm12short](Token/vmm12short_md.md)] does the following:
+## <a name="BKMK_workflow"></a>How [!INCLUDE[vmm12short](../../Token/vmm12short_md.md)] creates a Hyper\-V host cluster
+During the cluster creation process, after you click **Finish** on the cluster creation wizard, [!INCLUDE[vmm12short](../../Token/vmm12short_md.md)] does the following:
 
 1.  Validates that all hosts meet the prerequisites, such as required operating system and domain membership
 
@@ -35,7 +35,7 @@ During the cluster creation process, after you click **Finish** on the cluster c
 6.  For each logical unit that is designated as a CSV, assigns the logical unit as a CSV on the cluster
 
 ## <a name="BKMK_example"></a>Example resource names
-The example names in this section are intended to demonstrate the concepts used when creating a cluster in [!INCLUDE[vmm12short](Token/vmm12short_md.md)] from existing servers. The following table summarizes the example names that could be used in this scenario. Some of these names are also used in examples in procedures in this section.
+The example names in this section are intended to demonstrate the concepts used when creating a cluster in [!INCLUDE[vmm12short](../../Token/vmm12short_md.md)] from existing servers. The following table summarizes the example names that could be used in this scenario. Some of these names are also used in examples in procedures in this section.
 
 > [!NOTE]
 > The example resource names and configuration are used to help demonstrate the concepts. You can adapt them to your test environment.

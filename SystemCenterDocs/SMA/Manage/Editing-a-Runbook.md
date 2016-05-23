@@ -11,7 +11,7 @@ ms.topic: article
 ms.assetid: a6daafc4-bc8d-4cd5-bd14-5f5b55da90a2
 ---
 # Editing a Runbook
-Each runbook in [!INCLUDE[sma_1](Token/sma_1_md.md)] has two versions, Draft and Published. You edit the Draft version of the workflow and then publish it so it can be executed. The Published version cannot be edited.
+Each runbook in [!INCLUDE[sma_1](../../Token/sma_1_md.md)] has two versions, Draft and Published. You edit the Draft version of the workflow and then publish it so it can be executed. The Published version cannot be edited.
 
 ## <a name="Portal"></a>To Edit a Runbook with the Management Portal
 The Management Portal includes an editor that you can use to view and edit runbooks. In addition to providing basic text editing capabilities, the editor provides the ability to automatically insert code for [Global Assets](#InsertGlobalSetting), [Activities](#InsertActivity), and [Runbooks](#InsertRunbook).
@@ -141,7 +141,7 @@ Windows PowerShell Integrated Scripting Environment (ISE) is an application that
 
 ## See Also
 [Creating or Importing a Runbook](Creating-or-Importing-a-Runbook.md)
-[Service Management Automation](Service-Management-Automation.md)
+[Service Management Automation](../Service-Management-Automation.md)
 [Authoring Automation Runbooks](Authoring-Automation-Runbooks.md)
 
 

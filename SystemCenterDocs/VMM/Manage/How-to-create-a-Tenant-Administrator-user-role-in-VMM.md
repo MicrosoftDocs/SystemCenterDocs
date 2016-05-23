@@ -8,7 +8,7 @@ ms.topic: article
 ms.assetid: 1a3b82ff-03bd-49f4-b083-d75e4902f345
 ---
 # How to create a Tenant Administrator user role in VMM
-In [!INCLUDE[vmm12sp1_long](Token/vmm12sp1_long_md.md)], tenant administrators can create and manage self\-service users and VM networks. Tenant administrators can create, deploy, and manage their own virtual machines and services by using the[!INCLUDE[vmm12short](Token/vmm12short_md.md)] console or a web portal. A tenant administrator can specify which tasks the self\-service users can perform on their virtual machines and services, and can place quotas on computing resources and virtual machines.
+In [!INCLUDE[vmm12sp1_long](../../Token/vmm12sp1_long_md.md)], tenant administrators can create and manage self\-service users and VM networks. Tenant administrators can create, deploy, and manage their own virtual machines and services by using the[!INCLUDE[vmm12short](../../Token/vmm12short_md.md)] console or a web portal. A tenant administrator can specify which tasks the self\-service users can perform on their virtual machines and services, and can place quotas on computing resources and virtual machines.
 
 **Account requirements** Administrators and delegated administrators can create a Tenant Administrator user role.
 

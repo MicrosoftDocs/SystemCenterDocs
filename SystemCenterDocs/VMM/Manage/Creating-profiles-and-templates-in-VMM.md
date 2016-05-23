@@ -8,7 +8,7 @@ ms.topic: article
 ms.assetid: b97646c3-e2cb-4222-b448-41f391e0942a
 ---
 # Creating profiles and templates in VMM
-[!INCLUDE[vmm12sp1_long](Token/vmm12sp1_long_md.md)] profiles contain configuration settings that you can apply to a new virtual machine template or virtual machine. You can create, view, and modify profiles in the **Library** workspace. The following topics provide information about how to create profiles and virtual machine templates:
+[!INCLUDE[vmm12sp1_long](../../Token/vmm12sp1_long_md.md)] profiles contain configuration settings that you can apply to a new virtual machine template or virtual machine. You can create, view, and modify profiles in the **Library** workspace. The following topics provide information about how to create profiles and virtual machine templates:
 
 -   [Overview: creating profiles and templates in VMM](Overview--creating-profiles-and-templates-in-VMM.md)
 
@@ -23,7 +23,7 @@ ms.assetid: b97646c3-e2cb-4222-b448-41f391e0942a
 -   [How to create a virtual machine template](How-to-create-a-virtual-machine-template.md)
 
 > [!NOTE]
-> [!INCLUDE[vmm12short](Token/vmm12short_md.md)] also includes physical computer profiles. These profiles are not used for virtual machine creation. They are used for provisioning Hyper\-V hosts, host clusters, or Scale\-Out File Server clusters from bare metal.
+> [!INCLUDE[vmm12short](../../Token/vmm12short_md.md)] also includes physical computer profiles. These profiles are not used for virtual machine creation. They are used for provisioning Hyper\-V hosts, host clusters, or Scale\-Out File Server clusters from bare metal.
 
 For more information about service deployments, see the following:
 

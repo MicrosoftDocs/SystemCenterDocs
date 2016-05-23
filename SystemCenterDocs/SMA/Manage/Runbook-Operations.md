@@ -11,17 +11,17 @@ ms.topic: article
 ms.assetid: c8ccceea-3bc2-4487-b174-4f0edbd51fa2
 ---
 # Runbook Operations
-The following topics provide details on different operations related to runbooks in [!INCLUDE[sma_1](Token/sma_1_md.md)] in [!INCLUDE[katal_2](Token/katal_2_md.md)].
+The following topics provide details on different operations related to runbooks in [!INCLUDE[sma_1](../../Token/sma_1_md.md)] in [!INCLUDE[katal_2](../../Token/katal_2_md.md)].
 
 -   [Starting a Runbook](Starting-a-Runbook.md)
 
-    Create or import a runbook into [!INCLUDE[sma_1](Token/sma_1_md.md)].
+    Create or import a runbook into [!INCLUDE[sma_1](../../Token/sma_1_md.md)].
 
 -   [Scheduling a Runbook](Scheduling-a-Runbook.md)
 
     Schedule a runbook to start at a later time or on a recurring schedule.
 
--   [Tracking a Runbook Job](Tracking-a-Runbook-Job-in-Service-Management-Automation.md)
+-   [Tracking a Runbook Job](Tracking-a-Runbook-Job-in-../Service-Management-Automation.md)
 
     View the completion status, exceptions, errors, and output for runbook jobs.
 
@@ -30,6 +30,6 @@ The following topics provide details on different operations related to runbooks
     Understand the effects of different configuration settings for a runbook.
 
 ## See Also
-[Service Management Automation](Service-Management-Automation.md)
+[Service Management Automation](../Service-Management-Automation.md)
 
 
