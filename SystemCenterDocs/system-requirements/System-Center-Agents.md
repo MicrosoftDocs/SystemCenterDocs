@@ -9,7 +9,7 @@ ms.topic: get-started-article
 ms.assetid: cd5d13e8-71da-4e91-9bcf-f3be00a03d54
 ---
 # System Center Agents
-This information lists both Microsoft and non\-Microsoft operating systems and versions of Microsoft SQL Server software, Microsoft Exchange, or Microsoft SharePoint that each [!INCLUDE[sc_threshold_1](../../Token/sc_threshold_1_md.md)] agent supports
+This information lists both Microsoft and non\-Microsoft operating systems and versions of Microsoft SQL Server software, Microsoft Exchange, or Microsoft SharePoint that each [!INCLUDE[sc_threshold_1](../Token/sc_threshold_1_md.md)] agent supports
 
 ## Data Protection Manager Agent
 
@@ -63,11 +63,11 @@ This information lists both Microsoft and non\-Microsoft operating systems and v
 
 -   Windows 2008 Server R2 SP1
 
--   [!INCLUDE[win8_server_1](../../Token/win8_server_1_md.md)]
+-   [!INCLUDE[win8_server_1](../Token/win8_server_1_md.md)]
 
--   [!INCLUDE[winblue_server_1](../../Token/winblue_server_1_md.md)]
+-   [!INCLUDE[winblue_server_1](../Token/winblue_server_1_md.md)]
 
--   [!INCLUDE[hv_blue_1](../../Token/hv_blue_1_md.md)]
+-   [!INCLUDE[hv_blue_1](../Token/hv_blue_1_md.md)]
 
 -   Windows Vista SP2
 
@@ -77,13 +77,13 @@ This information lists both Microsoft and non\-Microsoft operating systems and v
 
 -   Windows 7
 
--   [!INCLUDE[win8_client_1](../../Token/win8_client_1_md.md)]
+-   [!INCLUDE[win8_client_1](../Token/win8_client_1_md.md)]
 
--   [!INCLUDE[winblue_client_1](../../Token/winblue_client_1_md.md)]
+-   [!INCLUDE[winblue_client_1](../Token/winblue_client_1_md.md)]
 
--   [!INCLUDE[winthreshold_client_2](../../Token/winthreshold_client_2_md.md)]
+-   [!INCLUDE[winthreshold_client_2](../Token/winthreshold_client_2_md.md)]
 
--   [!INCLUDE[winthreshold_server_1](../../Token/winthreshold_server_1_md.md)]
+-   [!INCLUDE[winthreshold_server_1](../Token/winthreshold_server_1_md.md)]
 
 ## Virtual Machine Manager Guest Agent
 
@@ -95,9 +95,9 @@ This information lists both Microsoft and non\-Microsoft operating systems and v
 
 -   Windows 2008 Server R2 SP1
 
--   [!INCLUDE[winblue_server_1](../../Token/winblue_server_1_md.md)]
+-   [!INCLUDE[winblue_server_1](../Token/winblue_server_1_md.md)]
 
--   [!INCLUDE[winthreshold_server_1](../../Token/winthreshold_server_1_md.md)]
+-   [!INCLUDE[winthreshold_server_1](../Token/winthreshold_server_1_md.md)]
 
 ## Virtual Machine Manager Linux Guest Agent
 

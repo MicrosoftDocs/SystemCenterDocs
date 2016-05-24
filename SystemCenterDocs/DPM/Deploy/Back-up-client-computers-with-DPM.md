@@ -16,9 +16,9 @@ You can deploy DPM to back up client computers.   Depending on the client operat
 ## Prerequisites and limitations
 .Before you deploy DPM to protect client computer data verify the deployment prerequisites:
 
--   Read about the client operating systems you can support in [What can DPM back up?](../Get Started/What-can-DPM-back-up-.md)
+-   Read about the client operating systems you can support in [What can DPM back up?](../get-started/What-can-DPM-back-up-.md)
 
--   Review the [release notes](http://technet.microsoft.com/en-us/library/jj860394.aspx) and read about any client protection issues in [What's supported and what isn't for DPM?](../Get Started/What-s-supported-and-what-isn-t-for-DPM-.md)
+-   Review the [release notes](http://technet.microsoft.com/en-us/library/jj860394.aspx) and read about any client protection issues in [What's supported and what isn't for DPM?](../get-started/What-s-supported-and-what-isn-t-for-DPM-.md)
 
 -   Make sure that client machines you want to back up  are in the DPM server domain, or in a domain with a two\-way trust relationship with the DPM domain.
 
@@ -48,15 +48,15 @@ You can deploy DPM to back up client computers.   Depending on the client operat
 
     -   System requirements for DPM
 
-    -   [What can DPM back up?](../Get Started/What-can-DPM-back-up-.md)
+    -   [What can DPM back up?](../get-started/What-can-DPM-back-up-.md)
 
-    -   [What's supported and what isn't for DPM?](../Get Started/What-s-supported-and-what-isn-t-for-DPM-.md)
+    -   [What's supported and what isn't for DPM?](../get-started/What-s-supported-and-what-isn-t-for-DPM-.md)
 
-    -   [Get DPM installed](../Get Started/Get-DPM-installed.md)
+    -   [Get DPM installed](../get-started/Get-DPM-installed.md)
 
 2.  **Set up storage**—
     You can store backed up data on disk, on tape, and in the cloud with Azure.
-      Read more in [Prepare data storage](../Get Started/Prepare-data-storage.md).
+      Read more in [Prepare data storage](../get-started/Prepare-data-storage.md).
 
 3.  **Set up the DPM protection agent**—The agent needs to be installed on client computers you want to protect.  Read [Deploy the DPM protection agent](Deploy-the-DPM-protection-agent.md).
 

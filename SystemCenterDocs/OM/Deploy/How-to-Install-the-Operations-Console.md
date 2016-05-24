@@ -13,7 +13,7 @@ ms.assetid: f88980f5-521f-41cc-98db-997db0019c0f
 # How to Install the Operations Console
 After you install [!INCLUDE[scom_threshold_1](../../Token/scom_threshold_1_md.md)], you can install the Operations console on other servers and computers. For example, you might want to view monitoring data from your desktop computer. Before you install an [!INCLUDE[om12short](../../Token/om12short_md.md)] Operations console, you must install [Microsoft .NET Framework 3.5 SP1 hotfix](http://go.microsoft.com/fwlink/p/?LinkID=194637).
 
-You must ensure that the computer that will host the Operations console meets the minimum system requirements. For more information, see [System Requirements for System Center Technical Preview](../../System Center/System Requirements/System-Requirements-for-System-Center-Technical-Preview.md)
+You must ensure that the computer that will host the Operations console meets the minimum system requirements. For more information, see [System Requirements for System Center Technical Preview](../../system-requirements/System-Requirements-for-System-Center-Technical-Preview.md)
 
 #### To install the Operations console
 

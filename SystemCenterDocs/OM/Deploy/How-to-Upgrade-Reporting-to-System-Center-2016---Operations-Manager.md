@@ -13,7 +13,7 @@ ms.assetid: d4acce38-b84d-42af-8a41-b9464126cbc9
 # How to Upgrade Reporting to System Center 2016 - Operations Manager
 Use this procedure to upgrade a stand\-alone Reporting server to [!INCLUDE[scom_threshold_1](../../Token/scom_threshold_1_md.md)]. You should not run upgrade on the Reporting server until after you have upgraded the management servers, gateways, Operation consoles, and agents.
 
-Before you begin the upgrade process, make sure that your server meets the minimum supported configurations. For more information, see [System Requirements: System Center 2016 - Operations Manager](../../System Center/System Requirements/System-Requirements-for-System-Center-Technical-Preview.md).
+Before you begin the upgrade process, make sure that your server meets the minimum supported configurations. For more information, see [System Requirements: System Center 2016 - Operations Manager](../../system-requirements/System-Requirements-for-System-Center-Technical-Preview.md).
 
 ### To upgrade the Reporting server
 

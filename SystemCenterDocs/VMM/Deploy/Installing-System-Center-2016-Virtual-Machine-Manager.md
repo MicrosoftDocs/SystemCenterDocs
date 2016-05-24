@@ -13,7 +13,7 @@ ms.assetid: 1b4c3f5f-4ade-44c2-8866-f7b37168607d
 # Installing System Center 2016 Virtual Machine Manager
 This section shows how to install the different components of [!INCLUDE[vmm12sp1_long](../../Token/vmm12sp1_long_md.md)]. Before you install [!INCLUDE[vmm12short](../../Token/vmm12short_md.md)], ensure that the computer meets the minimum hardware requirements and that all prerequisite software is installed, as described in the following topics:
 
--   [System Requirements for System Center Technical Preview](../../System Center/System Requirements/System-Requirements-for-System-Center-Technical-Preview.md)
+-   [System Requirements for System Center Technical Preview](../../system-requirements/System-Requirements-for-System-Center-Technical-Preview.md)
 
 -   [Preparing your environment for System Center 2016 - Virtual Machine Manager](Preparing-your-environment-for-System-Center-2016---Virtual-Machine-Manager.md)
 

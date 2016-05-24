@@ -26,11 +26,11 @@ The following table compares Orchestrator to the other Microsoft automation tool
 
 ## [!INCLUDE[smalong](../Token/smalong_md.md)] topics
 
--   [Overview of Service Management Automation](Get Started/Overview-of-Service-Management-Automation.md)
+-   [Overview of Service Management Automation](get-started/Overview-of-Service-Management-Automation.md)
 
     Provides a brief overview of the purpose and capabilities of [!INCLUDE[smalong](../Token/smalong_md.md)].
 
--   [Architecture of Service Management Automation](Get Started/Architecture-of-Service-Management-Automation.md)
+-   [Architecture of Service Management Automation](get-started/Architecture-of-Service-Management-Automation.md)
 
     Describes the architecture of a basic [!INCLUDE[smalong](../Token/smalong_md.md)] deployment.
 

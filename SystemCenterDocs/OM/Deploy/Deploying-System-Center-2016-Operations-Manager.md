@@ -26,7 +26,7 @@ Before you begin your deployment, you should read the release notes, and ensure 
 
 -   [Release Notes for System Center Technical Preview 4](Release-Notes-for-System-Center-Technical-Preview-4.md)
 
--   [System Requirements for System Center Technical Preview](../../System Center/System Requirements/System-Requirements-for-System-Center-Technical-Preview.md)
+-   [System Requirements for System Center Technical Preview](../../system-requirements/System-Requirements-for-System-Center-Technical-Preview.md)
 
 ### Operations Manager Administrators Role Assignment
 The [!INCLUDE[scom_threshold_1](../../Token/scom_threshold_1_md.md)], setup procedure automatically assigns the Administrators group on the local computer to the Operations Manager Administrators role. You must be logged on with an account that has local Administrator rights to run Setup on the first management server that you install; this ensures that you can open the Operations console after Setup is completed. When you install additional management servers, you must use a Domain account of which you are a member.

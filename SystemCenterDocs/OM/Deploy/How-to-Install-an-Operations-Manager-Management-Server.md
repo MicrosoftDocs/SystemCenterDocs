@@ -13,7 +13,7 @@ ms.assetid: 2f228f97-54fd-4126-8a05-2065aab4dc19
 # How to Install an Operations Manager Management Server
 In [!INCLUDE[scom_threshold_1](../../Token/scom_threshold_1_md.md)] the first feature you install is the management server. The setup procedure creates the operational database and data warehouse database. The procedure described in this topic assumes that you have already installed a supported version of Microsoft SQL Server locally on the  management server. However, you can specify an instance of SQL Server that is installed on a separate server.
 
-You must ensure that your server meets the minimum system requirements for [!INCLUDE[scom_threshold_1](../../Token/scom_threshold_1_md.md)]. For more information, see [System Requirements for System Center Technical Preview](../../System Center/System Requirements/System-Requirements-for-System-Center-Technical-Preview.md) .
+You must ensure that your server meets the minimum system requirements for [!INCLUDE[scom_threshold_1](../../Token/scom_threshold_1_md.md)]. For more information, see [System Requirements for System Center Technical Preview](../../system-requirements/System-Requirements-for-System-Center-Technical-Preview.md) .
 
 ### To install the management server in the management group
 

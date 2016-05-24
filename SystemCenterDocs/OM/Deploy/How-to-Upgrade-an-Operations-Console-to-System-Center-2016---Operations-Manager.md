@@ -13,7 +13,7 @@ ms.assetid: 98117114-70f8-49ad-a424-8be5561b822e
 # How to Upgrade an Operations Console to System Center 2016 - Operations Manager
 This procedure upgrades a stand\-alone Operations console to [!INCLUDE[scom_threshold_1](../../Token/scom_threshold_1_md.md)]. Perform this procedure locally on the computer that has a stand\-alone Operations console installed. You do not have to perform this procedure to upgrade Operations consoles that are installed locally on a management server.
 
-Before you begin the upgrade process, make sure that your server meets the minimum supported configurations. For more information, see [System Requirements: System Center 2016 - Operations Manager](../../System Center/System Requirements/System-Requirements-for-System-Center-Technical-Preview.md).
+Before you begin the upgrade process, make sure that your server meets the minimum supported configurations. For more information, see [System Requirements: System Center 2016 - Operations Manager](../../system-requirements/System-Requirements-for-System-Center-Technical-Preview.md).
 
 ### To upgrade a stand\-alone Operations console
 

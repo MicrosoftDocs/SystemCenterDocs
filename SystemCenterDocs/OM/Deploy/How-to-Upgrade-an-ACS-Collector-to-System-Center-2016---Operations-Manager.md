@@ -16,7 +16,7 @@ Perform this procedure to upgrade the Audit Collection Services \(ACS\) Collecto
 > [!WARNING]
 > A computer that hosts an ACS Collector must also be an [!INCLUDE[omblue_2](../../Token/omblue_2_md.md)] management server or gateway server.
 
-Before you begin the upgrade process, make sure that your server meets the minimum supported configurations. For more information, see [System Requirements: System Center 2016 Operations Manager](../../System Center/System Requirements/System-Requirements-for-System-Center-Technical-Preview.md)
+Before you begin the upgrade process, make sure that your server meets the minimum supported configurations. For more information, see [System Requirements: System Center 2016 Operations Manager](../../system-requirements/System-Requirements-for-System-Center-Technical-Preview.md)
 
 ### To upgrade an ACS Collector
 

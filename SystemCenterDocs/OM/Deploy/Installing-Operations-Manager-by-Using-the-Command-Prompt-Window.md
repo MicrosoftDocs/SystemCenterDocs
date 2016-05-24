@@ -11,7 +11,7 @@ ms.topic: get-started-article
 ms.assetid: 4c6535e3-756c-4b48-8e7c-28085ba06677
 ---
 # Installing Operations Manager by Using the Command Prompt Window
-You can install features of [!INCLUDE[om12short](../../Token/om12short_md.md)] by using the **setup.exe** command in the Command Prompt window. Gateway and agent installations require the use of MOMGateway.msi and MOMAgent.msi. You must ensure that all servers meet the minimum supported configuration requirements for [!INCLUDE[scom_threshold_1](../../Token/scom_threshold_1_md.md)]. For more information, see [System Requirements for System Center Technical Preview](../../System Center/System Requirements/System-Requirements-for-System-Center-Technical-Preview.md).
+You can install features of [!INCLUDE[om12short](../../Token/om12short_md.md)] by using the **setup.exe** command in the Command Prompt window. Gateway and agent installations require the use of MOMGateway.msi and MOMAgent.msi. You must ensure that all servers meet the minimum supported configuration requirements for [!INCLUDE[scom_threshold_1](../../Token/scom_threshold_1_md.md)]. For more information, see [System Requirements for System Center Technical Preview](../../system-requirements/System-Requirements-for-System-Center-Technical-Preview.md).
 
 ## Command\-line Parameters
 The following table lists the command\-line parameters for installing features of [!INCLUDE[om12short](../../Token/om12short_md.md)].

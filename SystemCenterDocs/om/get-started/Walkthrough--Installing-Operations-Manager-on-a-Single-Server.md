@@ -22,7 +22,7 @@ This walkthrough guides you through an installation of [!INCLUDE[scom_threshold_
 -   Reporting server
 
 ## Prerequisites
-You must ensure that your server meets the minimum supported configurations for [!INCLUDE[scom_threshold_1](../../Token/scom_threshold_1_md.md)]. For more information, see [System Requirements for System Center Technical Preview](../../System Center/System Requirements/System-Requirements-for-System-Center-Technical-Preview.md).
+You must ensure that your server meets the minimum supported configurations for [!INCLUDE[scom_threshold_1](../../Token/scom_threshold_1_md.md)]. For more information, see [System Requirements for System Center Technical Preview](../../system-requirements/System-Requirements-for-System-Center-Technical-Preview.md).
 
 **Required SQL Server Components**
 

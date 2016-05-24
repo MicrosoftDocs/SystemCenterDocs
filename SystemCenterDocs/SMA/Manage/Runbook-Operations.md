@@ -21,7 +21,7 @@ The following topics provide details on different operations related to runbooks
 
     Schedule a runbook to start at a later time or on a recurring schedule.
 
--   [Tracking a Runbook Job](Tracking-a-Runbook-Job-in-../Service-Management-Automation.md)
+-   [Tracking a Runbook Job](../Service-Management-Automation.md)
 
     View the completion status, exceptions, errors, and output for runbook jobs.
 

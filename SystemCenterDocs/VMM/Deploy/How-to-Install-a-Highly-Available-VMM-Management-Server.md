@@ -15,7 +15,7 @@ You can use the following procedure to install a highly available VMM management
 
 Before you begin the installation of the [!INCLUDE[vmm12short](../../Token/vmm12short_md.md)] management server, review the system requirements. As part of this, ensure that you have a computer that is running a supported version of Microsoft SQL Server software. Setup will not automatically install an Express edition of SQL Server. For information on system requirements, including supported versions of SQL Server, see the following:
 
--   [System Requirements for System Center Technical Preview](../../System Center/System Requirements/System-Requirements-for-System-Center-Technical-Preview.md)
+-   [System Requirements for System Center Technical Preview](../../system-requirements/System-Requirements-for-System-Center-Technical-Preview.md)
 
 -   [Preparing your environment for System Center 2016 - Virtual Machine Manager](Preparing-your-environment-for-System-Center-2016---Virtual-Machine-Manager.md)
 

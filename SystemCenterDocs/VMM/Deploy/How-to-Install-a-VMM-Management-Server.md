@@ -15,7 +15,7 @@ You can use the following procedure to install a [!INCLUDE[vmm12sp1_long](../../
 
 Before you begin the installation of the [!INCLUDE[vmm12short](../../Token/vmm12short_md.md)] management server, review the system requirements. As part of this, ensure that you have a computer that is running a supported version of Microsoft SQL Server software. Setup will not automatically install an Express edition of SQL Server. For information, see:
 
--   [System Requirements for System Center Technical Preview](../../System Center/System Requirements/System-Requirements-for-System-Center-Technical-Preview.md)
+-   [System Requirements for System Center Technical Preview](../../system-requirements/System-Requirements-for-System-Center-Technical-Preview.md)
 
 -   [Preparing your environment for System Center 2016 - Virtual Machine Manager](Preparing-your-environment-for-System-Center-2016---Virtual-Machine-Manager.md)
 
@@ -54,7 +54,7 @@ To complete the installation procedures, you need, at a minimum, membership in t
 
 8.  On the **Installation location** page, use the default path or type a different installation path for the [!INCLUDE[vmm12short](../../Token/vmm12short_md.md)] program files, and then click **Next**.
 
-    The setup program checks the computer on which you are installing the [!INCLUDE[vmm12short](../../Token/vmm12short_md.md)] management server to ensure that the computer meets the appropriate hardware and software requirements. If the computer does not meet a prerequisite, a page that contains information about the prerequisite and how to resolve the issue appears. For information about hardware and software requirements for [!INCLUDE[vmm12short](../../Token/vmm12short_md.md)], see [System Requirements for System Center Technical Preview](../../System Center/System Requirements/System-Requirements-for-System-Center-Technical-Preview.md).
+    The setup program checks the computer on which you are installing the [!INCLUDE[vmm12short](../../Token/vmm12short_md.md)] management server to ensure that the computer meets the appropriate hardware and software requirements. If the computer does not meet a prerequisite, a page that contains information about the prerequisite and how to resolve the issue appears. For information about hardware and software requirements for [!INCLUDE[vmm12short](../../Token/vmm12short_md.md)], see [System Requirements for System Center Technical Preview](../../system-requirements/System-Requirements-for-System-Center-Technical-Preview.md).
 
     If the computer meets all prerequisites, the **Database configuration** page appears.
 

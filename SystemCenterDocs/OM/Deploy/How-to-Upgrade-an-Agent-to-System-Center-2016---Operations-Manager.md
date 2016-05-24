@@ -11,7 +11,7 @@ ms.topic: article
 ms.assetid: c8153b24-0618-4f3c-a9b2-1dc27107470f
 ---
 # How to Upgrade an Agent to System Center 2016 - Operations Manager
-Use the following procedures to upgrade to [!INCLUDE[scom_threshold_1](../../Token/scom_threshold_1_md.md)] agents. You should first verify that the agents meet minimum supported configurations. For more information, see [System Requirements: System Center 2016 - Operations Manager](../../System Center/System Requirements/System-Requirements-for-System-Center-Technical-Preview.md).
+Use the following procedures to upgrade to [!INCLUDE[scom_threshold_1](../../Token/scom_threshold_1_md.md)] agents. You should first verify that the agents meet minimum supported configurations. For more information, see [System Requirements: System Center 2016 - Operations Manager](../../system-requirements/System-Requirements-for-System-Center-Technical-Preview.md).
 
 > [!NOTE]
 > If before upgrade an agent was installed using the push install method, after upgrade the server the agent will be put into a pending update state and can be upgraded through the Console. Otherwise the agent should be upgraded manually.

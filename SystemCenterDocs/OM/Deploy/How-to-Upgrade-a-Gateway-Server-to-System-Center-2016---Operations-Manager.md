@@ -11,7 +11,7 @@ ms.topic: article
 ms.assetid: 49145c22-91aa-44d1-aeed-94db11072ce1
 ---
 # How to Upgrade a Gateway Server to System Center 2016 - Operations Manager
-After you upgrade the management servers in your management group, you upgrade any gateway servers.  The procedure to upgrade a gateway server to [!INCLUDE[scom_threshold_1](../../Token/scom_threshold_1_md.md)] is performed locally on the gateway server. You can then verify whether the upgrade is successful. Before you begin the upgrade process, make sure that your gateway server meets the minimum supported configurations. For more information, see [System Requirements: System Center 2016 - Operations Manager](../../System Center/System Requirements/System-Requirements-for-System-Center-Technical-Preview.md)
+After you upgrade the management servers in your management group, you upgrade any gateway servers.  The procedure to upgrade a gateway server to [!INCLUDE[scom_threshold_1](../../Token/scom_threshold_1_md.md)] is performed locally on the gateway server. You can then verify whether the upgrade is successful. Before you begin the upgrade process, make sure that your gateway server meets the minimum supported configurations. For more information, see [System Requirements: System Center 2016 - Operations Manager](../../system-requirements/System-Requirements-for-System-Center-Technical-Preview.md)
 
 ### To upgrade a gateway server
 

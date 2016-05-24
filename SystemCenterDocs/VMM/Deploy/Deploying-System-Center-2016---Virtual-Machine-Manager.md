@@ -31,8 +31,8 @@ The following topics provide information to help you deploy and configure [!INCL
 
 Before you begin the deployment of [!INCLUDE[vmm12short](../../Token/vmm12short_md.md)]:
 
--   Read the [Release Notes for System Center 2016 TP5](../../System Center/Getting Started/Release-Notes-for-System-Center-Technical-Preview-5.md).
--   Review the [System Requirements for System Center 2016 TP5](../../System Center/System Requirements/System-Requirements-for-System-Center-Technical-Preview.md) and [Preparing your environment for System Center 2016 - Virtual Machine Manager](Preparing-your-environment-for-System-Center-2016---Virtual-Machine-Manager.md).
+-   Read the [Release Notes for System Center 2016 TP5](../../get-started/Release-Notes-for-System-Center-Technical-Preview-5.md).
+-   Review the [System Requirements for System Center 2016 TP5](../../system-requirements/System-Requirements-for-System-Center-Technical-Preview.md) and [Preparing your environment for System Center 2016 - Virtual Machine Manager](Preparing-your-environment-for-System-Center-2016---Virtual-Machine-Manager.md).
 
 
 

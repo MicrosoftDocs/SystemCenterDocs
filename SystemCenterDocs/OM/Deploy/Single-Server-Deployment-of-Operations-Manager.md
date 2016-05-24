@@ -86,6 +86,6 @@ In this configuration, you need to make sure that network ports are opened for c
 
 For a complete listing of ports used, the direction of the communication, and if the ports can be configured, see [Supported Configurations for System Center 2012 – Operations Manager](http://go.microsoft.com/fwlink/p/?LinkID=219650).
 
-To deploy [!INCLUDE[om12short](../../Token/om12short_md.md)] in a single\-server management group, see [Walkthrough: Installing Operations Manager on a Single Server](../Get Started/Walkthrough--Installing-Operations-Manager-on-a-Single-Server.md).
+To deploy [!INCLUDE[om12short](../../Token/om12short_md.md)] in a single\-server management group, see [Walkthrough: Installing Operations Manager on a Single Server](../get-started/Walkthrough--Installing-Operations-Manager-on-a-Single-Server.md).
 
 

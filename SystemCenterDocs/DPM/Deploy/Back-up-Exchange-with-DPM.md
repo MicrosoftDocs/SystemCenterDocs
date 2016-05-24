@@ -18,7 +18,7 @@ DPM provides backup and recovery for Exchange 2013. You can back up the followin
 ## Prerequisites and limitations
 Before you deploy DPM to protection Exchange 2013 verify the deployment prerequisites:
 
--   Review the [Release Notes for System Center Technical Preview 5](../../System Center/Getting Started/Release-Notes-for-System-Center-Technical-Preview-5.md) and [What's supported and what isn't for DPM?](../Get Started/What-s-supported-and-what-isn-t-for-DPM-.md) to check for any Exchange issues.
+-   Review the [Release Notes for System Center Technical Preview 5](../../get-started/Release-Notes-for-System-Center-Technical-Preview-5.md) and [What's supported and what isn't for DPM?](../get-started/What-s-supported-and-what-isn-t-for-DPM-.md) to check for any Exchange issues.
 
 -   Make sure the same versions of Eseutil.exe and Ese.dll are installed on both the Exchange and the DPM server. For example, if you’re using the 64\-bit version of DPM, you must have the 64\-bit version of eseutil.exe and ese.dll.  If you update these files on the Exchange server you’ll need to update them on the DPM server too. The .ese and .eseutil files are usually in C:\\Program Files\\Microsoft\\Exchange Server\\V15\\Bin folder.
 
@@ -85,13 +85,13 @@ However native protection might not be enough if application errors, corruptions
 
     -   System requirements for DPM
 
-    -   [What can DPM back up?](../Get Started/What-can-DPM-back-up-.md)
+    -   [What can DPM back up?](../get-started/What-can-DPM-back-up-.md)
 
-    -   [What's supported and what isn't for DPM?](../Get Started/What-s-supported-and-what-isn-t-for-DPM-.md)
+    -   [What's supported and what isn't for DPM?](../get-started/What-s-supported-and-what-isn-t-for-DPM-.md)
 
-    -   [Get DPM installed](../Get Started/Get-DPM-installed.md)
+    -   [Get DPM installed](../get-started/Get-DPM-installed.md)
 
-2.  Set up storage—You can store backed up data on disk, on tape, and in the cloud with Azure.  Read more in [Prepare data storage](../Get Started/Prepare-data-storage.md).
+2.  Set up storage—You can store backed up data on disk, on tape, and in the cloud with Azure.  Read more in [Prepare data storage](../get-started/Prepare-data-storage.md).
 
 3.  **Set up the DPM protection agent**—The agent needs to be installed on the Exchange server.  Read [Deploy the DPM protection agent](Deploy-the-DPM-protection-agent.md).
 

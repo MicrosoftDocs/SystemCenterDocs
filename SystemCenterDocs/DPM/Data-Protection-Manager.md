@@ -25,7 +25,7 @@ You can deploy  DPM for:
 
 -   **VMware backup:** Back up of VMware virtual machines when DPM is deployed on a VMware VM running Windows.
 
--   Get a full list in [What can DPM back up?](Get Started/What-can-DPM-back-up-.md)
+-   Get a full list in [What can DPM back up?](get-started/What-can-DPM-back-up-.md)
 
 DPM stores back up data as follows:
 
@@ -40,6 +40,6 @@ When outages occur and source data is unavailable, you can easily restore data t
 ![](Image/DPM-backup.png)
 
 ## Next steps
-Learn more in [How does DPM work?](Get Started/How-does-DPM-work-.md)
+Learn more in [How does DPM work?](get-started/How-does-DPM-work-.md)
 
 

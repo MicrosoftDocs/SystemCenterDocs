@@ -13,7 +13,7 @@ ms.assetid: 66b6b089-d888-431f-845f-ee689b69ba1a
 # Managing Discovery and Agents
 [!INCLUDE[om12long](../../Token/om12long_md.md)] can monitor computers running Windows, UNIX, and Linux operating systems. For a list of the supported operating system versions, see [Supported Configurations](http://go.microsoft.com/fwlink/p/?LinkID=223642).
 
-To begin monitoring, computers must be discovered. For a description of the discovery process, see “How Objects Are Discovered and Monitored” in [Key Concepts](../Get Started/Operations-Manager-Key-Concepts.md).
+To begin monitoring, computers must be discovered. For a description of the discovery process, see “How Objects Are Discovered and Monitored” in [Key Concepts](../get-started/Operations-Manager-Key-Concepts.md).
 
 Comprehensive monitoring requires that an agent be installed on the discovered computer. This section explains how to discover computers, install agents on discovered computers, and configure agents. It also provides instructions for uninstalling agents. For information about monitoring computers without installing an agent, see [Agentless Monitoring in Operations Manager](Agentless-Monitoring-in-Operations-Manager.md) and [Client Monitoring Using Agentless Exception Monitoring in Operations Manager](Client-Monitoring-Using-Agentless-Exception-Monitoring-in-Operations-Manager.md).
 

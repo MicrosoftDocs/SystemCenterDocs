@@ -38,7 +38,7 @@ If you’re evaluating your environment, see LINK\_HERE.
 
 -   **Avoiding installation on a Hyper\-V host**: Don’t install the VMM management server, or other System Center components other than agents, on servers running Hyper\-V. You can install System Center components in virtual machines.
 
--   **Installing in a virtual machine**: Installing the VMM management server in a virtual machine can help you reduce the number of physical servers that you maintain, and simplify some management tasks. For information about memory and other requirements, see [Minimum Hardware Recommendations for System Center Technical Preview](../../System Center/System Requirements/Minimum-Hardware-Recommendations-for-System-Center-Technical-Preview.md).
+-   **Installing in a virtual machine**: Installing the VMM management server in a virtual machine can help you reduce the number of physical servers that you maintain, and simplify some management tasks. For information about memory and other requirements, see [Minimum Hardware Recommendations for System Center Technical Preview](../../system-requirements/Minimum-Hardware-Recommendations-for-System-Center-Technical-Preview.md).
 
 -   **Dynamic Memory \(for installation as a virtual machine\)**: If you install the [!INCLUDE[vmm12short](../../Token/vmm12short_md.md)] management server on a virtual machine and you use the Dynamic Memory feature of Hyper\-V, then you must set the startup RAM for the virtual machine to be at least 2,048 megabytes \(MB\).
 
@@ -102,7 +102,7 @@ For more information about library servers in [!INCLUDE[vmm12short](../../Token/
 [!INCLUDE[vmm12sp1_long](../../Token/vmm12sp1_long_md.md)] supports Microsoft Hyper\-V and VMware ESX as virtual machine hosts.
 
 ### Hyper\-V hosts
-[!INCLUDE[scvm_threshold_1](../../Token/scvm_threshold_1_md.md)] can manage a variety of Hyper\-V hosts. For the complete list of Windows Server Hyper\-V hosts see [Operating Systems Compatibility for System Center Technical Preview](../../System Center/System Requirements/Operating-Systems-Compatibility-for-System-Center-Technical-Preview.md).
+[!INCLUDE[scvm_threshold_1](../../Token/scvm_threshold_1_md.md)] can manage a variety of Hyper\-V hosts. For the complete list of Windows Server Hyper\-V hosts see [Operating Systems Compatibility for System Center Technical Preview](../../system-requirements/Operating-Systems-Compatibility-for-System-Center-Technical-Preview.md).
 
 > [!NOTE]
 > The following list describes some features that require hosts that run [!INCLUDE[winthreshold_server_2](../../Token/winthreshold_server_2_md.md)]:

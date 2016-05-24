@@ -30,7 +30,7 @@ The additional services provided by Automation for working with Windows PowerShe
 ## Runbook Authoring Topics
 The following topics provide information on creating and working with [!INCLUDE[sma_2](../../Token/sma_2_md.md)] runbooks.
 
--   [Runbook Types in Service Management Automation](Runbook-Types-in-../Service-Management-Automation.md)
+-   [Runbook Types in Service Management Automation](../Service-Management-Automation.md)
 
     Describes the different types of runbooks supported by Service Management Automation.
 
@@ -62,7 +62,7 @@ The following topics provide information on creating and working with [!INCLUDE[
 
     Details on the different methods for sending output and user messages from a runbook.
 
--   [Child Runbooks](Child-Runbooks-in-../Service-Management-Automation.md)
+-   [Child Runbooks](../Service-Management-Automation.md)
 
     Guidance on the different methods for calling one runbook from another runbook.
 

@@ -25,7 +25,7 @@ Before you begin the installation of a highly available VMM management server, e
 
 -   All computers on which you are installing the highly available VMM management server meet the minimum hardware requirements and that all prerequisite software is installed on all computers, as described in the following topics:
 
-    -   [System Requirements for System Center Technical Preview](../../System Center/System Requirements/System-Requirements-for-System-Center-Technical-Preview.md)
+    -   [System Requirements for System Center Technical Preview](../../system-requirements/System-Requirements-for-System-Center-Technical-Preview.md)
 
     -   [Preparing your environment for System Center 2016 - Virtual Machine Manager](Preparing-your-environment-for-System-Center-2016---Virtual-Machine-Manager.md)
 
@@ -37,7 +37,7 @@ Before you begin the installation of a highly available VMM management server, e
 
 -   You have a computer with a supported version of Microsoft SQL Server installed and running before you start the installation of [!INCLUDE[vmm12short](../../Token/vmm12short_md.md)]. For information about supported versions of SQL Server for the VMM database, see the following:
 
-    -   [SQL Server Version Compatibility for System Center Technical Preview](../../System Center/System Requirements/SQL-Server-Version-Compatibility-for-System-Center-Technical-Preview.md)
+    -   [SQL Server Version Compatibility for System Center Technical Preview](../../system-requirements/SQL-Server-Version-Compatibility-for-System-Center-Technical-Preview.md)
 
     -   [Preparing your environment for System Center 2016 - Virtual Machine Manager](Preparing-your-environment-for-System-Center-2016---Virtual-Machine-Manager.md)
 

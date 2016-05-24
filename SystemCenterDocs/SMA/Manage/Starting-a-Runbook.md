@@ -17,9 +17,9 @@ You can start a runbook in [!INCLUDE[sma_1](../../Token/sma_1_md.md)] using one 
 
 -   [PowerShell](Starting-a-Runbook.md#PowerShell)
 
--   [From another runbook](Child-Runbooks-in-../Service-Management-Automation.md)
+-   [From another runbook](../Service-Management-Automation.md)
 
-The first two methods are documented below. Calling a runbook from another runbook is documented in [Child Runbooks](Child-Runbooks-in-../Service-Management-Automation.md).
+The first two methods are documented below. Calling a runbook from another runbook is documented in [Child Runbooks](../Service-Management-Automation.md).
 
 ## <a name="Portal"></a>To start a runbook from the Windows Azure Pack Management Portal
 
@@ -91,7 +91,7 @@ To reset the runbook to use any available Worker server, set the **RunbookWorker
 ## <a name="Parameters"></a>Runbook Parameters
 Parameters are values that a runbook requires when it is started. For example, a runbook that creates a new virtual machine would presumably have a parameter for you to specify the computer name. If a parameter is mandatory, then you must provide a value for it when you start the runbook. If a parameter is not mandatory, then can provide a value but are not required to.
 
-When you start a runbook using the Management Portal or Windows PowerShell, the instruction is sent through the Automation web service. This service does not support parameters with complex data types. If you need to provide a value for a complex parameter, then you must call it inline from another runbook as described in [Child Runbooks](Child-Runbooks-in-../Service-Management-Automation.md).
+When you start a runbook using the Management Portal or Windows PowerShell, the instruction is sent through the Automation web service. This service does not support parameters with complex data types. If you need to provide a value for a complex parameter, then you must call it inline from another runbook as described in [Child Runbooks](../Service-Management-Automation.md).
 
 The Automation web service will provide special functionality for parameters using certain data types as described in the following sections.
 
@@ -197,6 +197,6 @@ jsmith
 ## See Also
 [Service Management Automation](../Service-Management-Automation.md)
 [Runbook Operations](Runbook-Operations.md)
-[Child Runbooks](Child-Runbooks-in-../Service-Management-Automation.md)
+[Child Runbooks](../Service-Management-Automation.md)
 
 

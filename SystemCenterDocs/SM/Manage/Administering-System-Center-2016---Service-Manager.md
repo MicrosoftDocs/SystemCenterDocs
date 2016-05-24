@@ -15,39 +15,39 @@ Welcome to the Administrator’s Guide for Microsoft [!INCLUDE[scsm_threshold_1]
 
 ## Administrator’s Guide Topics
 
--   [Using Management Packs in System Center 2016 - Service Manager](Using-Management-Packs-in-System-Center-2016---../Service-Manager.md)
+-   [Using Management Packs in System Center 2016 - Service Manager](../Service-Manager.md)
 
     Provides information about how to create, import, and export management packs in [!INCLUDE[smshort12](../../Token/smshort12_md.md)].
 
--   [Using Connectors to Import Data into System Center 2016 - Service Manager](Using-Connectors-to-Import-Data-into-System-Center-2016---../Service-Manager.md)
+-   [Using Connectors to Import Data into System Center 2016 - Service Manager](../Service-Manager.md)
 
     Describes how to import data into [!INCLUDE[smshort12](../../Token/smshort12_md.md)] by using connectors.
 
--   [Configuration Items in System Center 2016 - Service Manager](Configuration-Items-in-System-Center-2016---../Service-Manager.md)
+-   [Configuration Items in System Center 2016 - Service Manager](../Service-Manager.md)
 
     Describes how to manage configuration items in [!INCLUDE[smshort12](../../Token/smshort12_md.md)].
 
--   [Configuring Incident Management in System Center 2016 - Service Manager](Configuring-Incident-Management-in-System-Center-2016---../Service-Manager.md)
+-   [Configuring Incident Management in System Center 2016 - Service Manager](../Service-Manager.md)
 
     Describes how to set configuration settings that streamline the creation of incidents in [!INCLUDE[smshort12](../../Token/smshort12_md.md)].
 
--   [Configuring Service Level Management in System Center 2016 - Service Manager](Configuring-Service-Level-Management-in-System-Center-2016---../Service-Manager.md)
+-   [Configuring Service Level Management in System Center 2016 - Service Manager](../Service-Manager.md)
 
     Provides an overview of how to configure service\-level management in [!INCLUDE[smshort12](../../Token/smshort12_md.md)].
 
--   [Configuring Workflows in System Center 2016 - Service Manager](Configuring-Workflows-in-System-Center-2016---../Service-Manager.md)
+-   [Configuring Workflows in System Center 2016 - Service Manager](../Service-Manager.md)
 
     Describes how to create and use workflows in [!INCLUDE[smshort12](../../Token/smshort12_md.md)].
 
--   [Configuring Change and Activity Management in System Center 2016 - Service Manager](Configuring-Change-and-Activity-Management-in-System-Center-2016---../Service-Manager.md)
+-   [Configuring Change and Activity Management in System Center 2016 - Service Manager](../Service-Manager.md)
 
     Describes how to streamline change and activity management in [!INCLUDE[smshort12](../../Token/smshort12_md.md)].
 
--   [Configuring Release Management in System Center 2016 - Service Manager](Configuring-Release-Management-in-System-Center-2016---../Service-Manager.md)
+-   [Configuring Release Management in System Center 2016 - Service Manager](../Service-Manager.md)
 
     Describes how to configure settings and workflows for release management.
 
--   [Configuring Desired Configuration Management to Generate Incidents in System Center 2016 - Service Manager](Configuring-Desired-Configuration-Management-to-Generate-Incidents-in-System-Center-2016---../Service-Manager.md)
+-   [Configuring Desired Configuration Management to Generate Incidents in System Center 2016 - Service Manager](../Service-Manager.md)
 
     Describes how to configure [!INCLUDE[smshort12](../../Token/smshort12_md.md)] to create incidents based on desired configuration management reports from System Center Configuration Manager.
 
@@ -55,35 +55,35 @@ Welcome to the Administrator’s Guide for Microsoft [!INCLUDE[scsm_threshold_1]
 
     Describes how to configure notifications in [!INCLUDE[smshort12](../../Token/smshort12_md.md)].
 
--   [Using the Service Catalog in System Center 2016 - Service Manager](Using-the-Service-Catalog-in-System-Center-2016---../Service-Manager.md)
+-   [Using the Service Catalog in System Center 2016 - Service Manager](../Service-Manager.md)
 
     Provides an overview of how to use the service catalog in [!INCLUDE[smshort12](../../Token/smshort12_md.md)].
 
--   [Using Groups, Queues, and Lists in System Center 2016 - Service Manager](Using-Groups,-Queues,-and-Lists-in-System-Center-2016---../Service-Manager.md)
+-   [Using Groups, Queues, and Lists in System Center 2016 - Service Manager](../Service-Manager.md)
 
     Describes how to use groups to manage configuration items, use queues to manage work items, and use lists to customize forms in [!INCLUDE[smshort12](../../Token/smshort12_md.md)].
 
--   [Using Runbooks in System Center 2016 - Service Manager](Using-Runbooks-in-System-Center-2016---../Service-Manager.md)
+-   [Using Runbooks in System Center 2016 - Service Manager](../Service-Manager.md)
 
     Describes how to use runbooks in [!INCLUDE[smshort12](../../Token/smshort12_md.md)] and System Center 2016 \- Orchestrator to automate procedures.
 
--   [Installing and Configuring Chargeback Reports in System Center 2016 - Service Manager](Installing-and-Configuring-Chargeback-Reports-in-System-Center-2016---../Service-Manager.md)
+-   [Installing and Configuring Chargeback Reports in System Center 2016 - Service Manager](../Service-Manager.md)
 
     Describes how to install and configure chargeback reports.
 
--   [User Interface Customization in System Center 2016 - Service Manager](User-Interface-Customization-in-System-Center-2016---../Service-Manager.md)
+-   [User Interface Customization in System Center 2016 - Service Manager](../Service-Manager.md)
 
     Describes how to use unsealed management packs to edit the properties of views, list items, or templates.
 
--   [Managing User Roles in System Center 2016 - Service Manager](Managing-User-Roles-in-System-Center-2016---../Service-Manager.md)
+-   [Managing User Roles in System Center 2016 - Service Manager](../Service-Manager.md)
 
     Provides an overview of user roles and describes how to use user roles to define a scope of activities that can be performed in [!INCLUDE[smshort12](../../Token/smshort12_md.md)].
 
--   [Managing Run As Accounts in System Center 2016 - Service Manager](Managing-Run-As-Accounts-in-System-Center-2016---../Service-Manager.md)
+-   [Managing Run As Accounts in System Center 2016 - Service Manager](../Service-Manager.md)
 
     Describes how to change the Operational System and Workflow Run As accounts.
 
--   [Managing Knowledge Articles in System Center 2016 - Service Manager](Managing-Knowledge-Articles-in-System-Center-2016---../Service-Manager.md)
+-   [Managing Knowledge Articles in System Center 2016 - Service Manager](../Service-Manager.md)
 
     Describes how to create and search for knowledge articles.
 
@@ -91,11 +91,11 @@ Welcome to the Administrator’s Guide for Microsoft [!INCLUDE[scsm_threshold_1]
 
     Describes how to use the [!INCLUDE[smshort12](../../Token/smshort12_md.md)] cmdlets for Windows PowerShell.
 
--   [Managing the Data Warehouse in System Center 2016 - Service Manager](Managing-the-Data-Warehouse-in-System-Center-2016---../Service-Manager.md)
+-   [Managing the Data Warehouse in System Center 2016 - Service Manager](../Service-Manager.md)
 
     Describes how to view, schedule, and troubleshoot extract, transform, and load \(ETL\) jobs.
 
--   [Managing the System Center 2016 - Service Manager Self-Service Portal](Managing-the-Data-Warehouse-in-System-Center-2016---../Service-Manager.md)
+-   [Managing the System Center 2016 - Service Manager Self-Service Portal](../Service-Manager.md)
 
     Describes how to customize the portal home page, add navigational links, and how to configure concurrent sessions and calls in the [!INCLUDE[smssp](../../Token/smssp_md.md)].
 
@@ -107,11 +107,11 @@ Welcome to the Administrator’s Guide for Microsoft [!INCLUDE[scsm_threshold_1]
 
     Describes how to configure Customer Experience Improvement Program \(CEIP\) settings in [!INCLUDE[smshort12](../../Token/smshort12_md.md)].
 
--   [Appendix A - List of User Role Profiles in System Center 2016 - Service Manager](Appendix-A---List-of-User-Role-Profiles-in-System-Center-2016---../Service-Manager.md)
+-   [Appendix A - List of User Role Profiles in System Center 2016 - Service Manager](../Service-Manager.md)
 
     Lists the user role profiles.
 
--   [Appendix B - Mapping Active Directory Domain Services Attributes to Properties in System Center 2016 - Service Manager](Appendix-B---Mapping-Active-Directory-Domain-Services-Attributes-to-Properties-in-System-Center-2016---../Service-Manager.md)
+-   [Appendix B - Mapping Active Directory Domain Services Attributes to Properties in System Center 2016 - Service Manager](../Service-Manager.md)
 
     Describes the mapping of data that is imported by Active Directory Connector to  [!INCLUDE[smshort12](../../Token/smshort12_md.md)] properties.
 
@@ -127,9 +127,9 @@ Welcome to the Administrator’s Guide for Microsoft [!INCLUDE[scsm_threshold_1]
 
 -   TechNet Library main page for [System Center 2016 – Service Manager](../Service-Manager.md)
 
--   [Planning Guide for System Center 2016 – Service Manager](../Plan/Planning-for-System-Center-2016---../Service-Manager.md)
+-   [Planning Guide for System Center 2016 – Service Manager](../Service-Manager.md)
 
--   [Operations Guide for System Center 2016 – Service Manager](Operations-Guide-for-System-Center-2016---../Service-Manager.md)
+-   [Operations Guide for System Center 2016 – Service Manager](../Service-Manager.md)
 
 
 

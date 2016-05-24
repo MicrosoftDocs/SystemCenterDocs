@@ -13,7 +13,7 @@ ms.assetid: 3eeb3265-88e0-47ed-b761-07f4e0634959
 # What&#39;s New in Service Manager for Technical Preview
 [!INCLUDE[scsm_threshold_1](../../Token/scsm_threshold_1_md.md)] is updated for [!INCLUDE[sc_threshold_1](../../Token/sc_threshold_1_md.md)] 5.
 
-For details about known issues that could affect you before you install [!INCLUDE[scsm_threshold_1](../../Token/scsm_threshold_1_md.md)], read the [Release Notes for System Center Technical Preview](../../System Center/Getting Started/Release-Notes-for-System-Center-Technical-Preview-5.md).
+For details about known issues that could affect you before you install [!INCLUDE[scsm_threshold_1](../../Token/scsm_threshold_1_md.md)], read the [Release Notes for System Center Technical Preview](../../get-started/Release-Notes-for-System-Center-Technical-Preview-5.md).
 
 ## Improvements in technical preview 5
 
@@ -184,7 +184,7 @@ The Self Service portal was updated for Technical Preview 5 with a number of bug
   - Adding selected items of a query to sub-activities for any hierarchy level
   - A `User Portal` user token in Query criteria
 - The Self Service portal now filters the Service Offerings based on language.
-- The Self Sevice portal now allows you to configure a Generic request button to have default and language specific Request Offerings associated with it. For more information about customizing the Self Service Portal, see [Deploy the New Self-Service Portal](../Deploy/Deploy-the-Self-Service-Portal-for-Service-Manager.md#Customize-the-Self-Service-Portal).
+- The Self Sevice portal now allows you to configure a Generic request button to have default and language specific Request Offerings associated with it. For more information about customizing the Self Service Portal, see [Deploy the New Self-Service Portal](../deploy/Deploy-the-Self-Service-Portal-for-Service-Manager.md#Customize-the-Self-Service-Portal).
 - Access to Announcements can now be controlled with user roles.
 - A share button has been added in all Self Service Portal pages to easily share a Request offering, submitted Request, Activity or a Help article.
 - You can configure the work item active state enumeration.
@@ -248,7 +248,7 @@ This release contains a new HTML\-based Self Service Portal which offers the fol
 
 -   Rich customization
 
-For more information and installing and customizing the portal, see [Deploy the Self-Service Portal for Service Manager](../Deploy/Deploy-the-Self-Service-Portal-for-Service-Manager.md).
+For more information and installing and customizing the portal, see [Deploy the Self-Service Portal for Service Manager](../deploy/Deploy-the-Self-Service-Portal-for-Service-Manager.md).
 
 > [!NOTE]
 > The older Silverlight and SharePoint\-based Self\-Service portal has been removed.

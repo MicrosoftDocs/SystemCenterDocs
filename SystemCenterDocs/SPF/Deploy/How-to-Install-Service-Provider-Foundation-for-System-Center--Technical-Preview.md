@@ -19,7 +19,7 @@ The Setup wizard configures [!INCLUDE[spfshort](../../Token/spfshort_md.md)] alo
 
 Before you install [!INCLUDE[spfshort](../../Token/spfshort_md.md)], do the following:
 
--   Make sure that each computer has sufficient RAM and hard disk space for all the web services that you intend to install. Also, be sure to have the prerequisite software installed. For more information, see [System Requirements for System Center Technical Preview](../../System Center/System Requirements/System-Requirements-for-System-Center-Technical-Preview.md).
+-   Make sure that each computer has sufficient RAM and hard disk space for all the web services that you intend to install. Also, be sure to have the prerequisite software installed. For more information, see [System Requirements for System Center Technical Preview](../../system-requirements/System-Requirements-for-System-Center-Technical-Preview.md).
 
 -   Make sure that you have a domain user account with administrative privileges on the computers on which you want to install [!INCLUDE[spfshort](../../Token/spfshort_md.md)].
 
