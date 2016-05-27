@@ -37,7 +37,7 @@ DPM stores back up data as follows:
 
 When outages occur and source data is unavailable, you can easily restore data to the original source or to an alternate location. Then if the original data is unavailable because of planned or unexpected issues, you can easily restore data. DPM uses SQL Server as its database and you protect the DPM server itself for disaster recovery purposes. The following diagram provides an overview of DPM backup functionality.
 
-![](Image/DPM-backup.png)
+![](../Media/DPM-backup.png)
 
 ## Next steps
 Learn more in [How does DPM work?](get-started/How-does-DPM-work-.md)
