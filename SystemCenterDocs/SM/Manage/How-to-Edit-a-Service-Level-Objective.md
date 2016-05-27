@@ -17,13 +17,13 @@ The service level objective that you edit is linked to a queue. If you want to m
 
 ### To modify a service level objective
 
-1.  In the [!INCLUDE[smcons](../../Token/smcons_md.md)], click **Administration**.
+1.  In the [!INCLUDE[smcons](../../includes/smcons_md.md)], click **Administration**.
 
 2.  In the **Administration** pane, expand **Service Level Management**, and then click **Service Level Objective**.
 
 3.  In the **Service Level Objectives** list, select an existing service level objective, and then in the **Tasks** pane, under **\<ServiceLevelObjectiveName\>**, click **Properties**.
 
-4.  In the **Edit SLO** dialog box, modify any of the following items, as needed. [!INCLUDE[crabout](../../Token/crabout_md.md)] the elements on this page, see [How to Create a Service Level Objective](How-to-Create-a-Service-Level-Objective.md).
+4.  In the **Edit SLO** dialog box, modify any of the following items, as needed. [!INCLUDE[crabout](../../includes/crabout_md.md)] the elements on this page, see [How to Create a Service Level Objective](How-to-Create-a-Service-Level-Objective.md).
 
     -   **Title**
 

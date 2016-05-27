@@ -11,7 +11,7 @@ ms.topic: article
 ms.assetid: 8031bcf3-4b9b-496e-a328-1e9a31010e4c
 ---
 # Configuring gateways in VMM
-Use a gateway in [!INCLUDE[vmm12sp1_long](../../Token/vmm12sp1_long_md.md)] to connect a VM network to other networks. \(To use this configuration, you must configure the logical network underlying the VM network to use network virtualization.\) When you configure the VM network to use a gateway, you can specify an option for network address translation \(NAT\), or an option for a virtual private network \(VPN\) tunnel, with or without Border Gateway Protocol \(BGP\).
+Use a gateway in [!INCLUDE[vmm12sp1_long](../../includes/vmm12sp1_long_md.md)] to connect a VM network to other networks. \(To use this configuration, you must configure the logical network underlying the VM network to use network virtualization.\) When you configure the VM network to use a gateway, you can specify an option for network address translation \(NAT\), or an option for a virtual private network \(VPN\) tunnel, with or without Border Gateway Protocol \(BGP\).
 
 This section contains the following topics:
 

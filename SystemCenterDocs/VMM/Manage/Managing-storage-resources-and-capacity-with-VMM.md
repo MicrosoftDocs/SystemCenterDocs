@@ -10,7 +10,7 @@ ms.topic: article
 ms.assetid: 2175427a-aa42-43ce-abb0-2841bc1ff1a9
 ---
 # Managing storage resources and capacity with VMM
-This section describes how to use [!INCLUDE[vmm12sp1_long](../../Token/vmm12sp1_long_md.md)] to manage storage devices such as Scale\-out File Servers or various types of disk arrays, and to classify and configure storage resources such as storage pools and file shares. It includes the following sections and topics:
+This section describes how to use [!INCLUDE[vmm12sp1_long](../../includes/vmm12sp1_long_md.md)] to manage storage devices such as Scale\-out File Servers or various types of disk arrays, and to classify and configure storage resources such as storage pools and file shares. It includes the following sections and topics:
 
 * [Overview: storage capabilities in VMM](Overview--storage-capabilities-in-VMM.md)
 

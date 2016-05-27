@@ -11,7 +11,7 @@ ms.topic: article
 ms.assetid: 29d977b5-56de-4bc4-ba0b-2d45d02516a4
 ---
 # What&#39;s supported and what isn&#39;t for DPM?
-This topic summarizes some of the common support information you might need when deploying and maintaining [!INCLUDE[scdp_threshold_1](../../Token/scdp_threshold_1_md.md)].
+This topic summarizes some of the common support information you might need when deploying and maintaining [!INCLUDE[scdp_threshold_1](../../includes/scdp_threshold_1_md.md)].
 
 -   [Installation and deployment issues](#BKMK_Install)
 
@@ -49,7 +49,7 @@ This topic summarizes some of the common support information you might need when
 ### System Center 2012 – DPM can’t be installed on servers running Windows Server 2012
 **Issue**: Operating system not supported.
 
-**Workaround**: Install [!INCLUDE[sc_threshold_1](../../Token/sc_threshold_1_md.md)] SP1 in order to get [!INCLUDE[dpm2012short](../../Token/dpm2012short_md.md)] running on a server running Windows Server 2012.
+**Workaround**: Install [!INCLUDE[sc_threshold_1](../../includes/sc_threshold_1_md.md)] SP1 in order to get [!INCLUDE[dpm2012short](../../includes/dpm2012short_md.md)] running on a server running Windows Server 2012.
 
 ### System Center 2012 – DPM with SP1 can’t be installed on servers running Windows Server 2012 R2
 **Issue**: Operating system not supported.

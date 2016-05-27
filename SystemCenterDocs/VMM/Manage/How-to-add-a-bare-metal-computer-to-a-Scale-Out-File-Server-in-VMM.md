@@ -8,9 +8,9 @@ ms.topic: article
 ms.assetid: 1ddee956-c5e0-4b74-9796-b38b28c503e5
 ---
 # How to add a bare-metal computer to a Scale-Out File Server in VMM
-You can use the following procedure to add one or more bare\-metal computers to a host cluster or Scale\-Out File Server cluster in [!INCLUDE[vmm12sp1_long](../../Token/vmm12sp1_long_md.md)].
+You can use the following procedure to add one or more bare\-metal computers to a host cluster or Scale\-Out File Server cluster in [!INCLUDE[vmm12sp1_long](../../includes/vmm12sp1_long_md.md)].
 
-### To add a bare\-metal computer to a Scale\-Out File Server in [!INCLUDE[vmm12short](../../Token/vmm12short_md.md)]
+### To add a bare\-metal computer to a Scale\-Out File Server in [!INCLUDE[vmm12short](../../includes/vmm12short_md.md)]
 
 1.  As needed, review [Prerequisites: creating Scale-Out File Servers from bare metal with VMM](Prerequisites--creating-Scale-Out-File-Servers-from-bare-metal-with-VMM.md). If you created the cluster from bare metal, you can use the same physical computer profile, PXE server, and other similar elements that you used when creating the cluster.
 
@@ -49,7 +49,7 @@ You can use the following procedure to add one or more bare\-metal computers to 
 
 6.  If you specified a single IP address on the previous page, skip this step. Otherwise, the **Target Resources** page appears. Review the list of discovered BMCs \(identified by IP addresses\), and select the ones you want to include in the cluster.
 
-    If you don't see all the BMCs that you expect, confirm that they are on a network accessible to the [!INCLUDE[vmm12short](../../Token/vmm12short_md.md)] server, and as needed, click **Refresh**. If BMCs still appear to be missing, review [Prerequisites: creating Scale-Out File Servers from bare metal with VMM](Prerequisites--creating-Scale-Out-File-Servers-from-bare-metal-with-VMM.md).
+    If you don't see all the BMCs that you expect, confirm that they are on a network accessible to the [!INCLUDE[vmm12short](../../includes/vmm12short_md.md)] server, and as needed, click **Refresh**. If BMCs still appear to be missing, review [Prerequisites: creating Scale-Out File Servers from bare metal with VMM](Prerequisites--creating-Scale-Out-File-Servers-from-bare-metal-with-VMM.md).
 
     Deep discovery provides detailed information about a computer \(for example, MAC addresses of network adapters\) but restarts the computer, and requires additional time. You can allow or skip deep discovery.
 
@@ -93,7 +93,7 @@ You can use the following procedure to add one or more bare\-metal computers to 
 
     When you have filled in needed information for all the computers you want to provision, click **Next**.
 
-8.  On the **Summary** page, confirm the settings, and then click **Finish** to provision the computers and add them to the cluster under [!INCLUDE[vmm12short](../../Token/vmm12short_md.md)] management.
+8.  On the **Summary** page, confirm the settings, and then click **Finish** to provision the computers and add them to the cluster under [!INCLUDE[vmm12short](../../includes/vmm12short_md.md)] management.
 
     Depending on your settings, the **Jobs** dialog box might appear. Make sure that all steps in the job reach the **Completed** status, and then close the dialog box.
 

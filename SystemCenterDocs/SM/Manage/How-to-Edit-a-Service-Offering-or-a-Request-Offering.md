@@ -11,13 +11,13 @@ ms.topic: article
 ms.assetid: fd49432f-f22c-4366-8cfd-16d301a6a46c
 ---
 # How to Edit a Service Offering or a Request Offering
-Request offerings are catalog items that describe the item, assistance, or action that is available to end users in the service catalog. Request offerings are normally placed in logical groups of service offerings. Both service offerings and their request offerings are available to [!INCLUDE[smssp](../../Token/smssp_md.md)] users, when the status of the offerings is set to Published and if end users have been assigned a corresponding [!INCLUDE[smshort](../../Token/smshort_md.md)] user role. Only users that have been assigned a user role that is associated with a catalog group that contains catalog items can use the [!INCLUDE[smssp](../../Token/smssp_md.md)] to access the service catalog.
+Request offerings are catalog items that describe the item, assistance, or action that is available to end users in the service catalog. Request offerings are normally placed in logical groups of service offerings. Both service offerings and their request offerings are available to [!INCLUDE[smssp](../../includes/smssp_md.md)] users, when the status of the offerings is set to Published and if end users have been assigned a corresponding [!INCLUDE[smshort](../../includes/smshort_md.md)] user role. Only users that have been assigned a user role that is associated with a catalog group that contains catalog items can use the [!INCLUDE[smssp](../../includes/smssp_md.md)] to access the service catalog.
 
 You can use the following procedures to edit a service offering or a request offering.
 
 ### To edit a request offering
 
-1.  In the [!INCLUDE[smcons](../../Token/smcons_md.md)], select **Library**.
+1.  In the [!INCLUDE[smcons](../../includes/smcons_md.md)], select **Library**.
 
 2.  In the **Library** pane, expand **Service Catalog**, expand **Request Offerings**, and then select **All Request Offerings**.
 
@@ -31,9 +31,9 @@ You can use the following procedures to edit a service offering or a request off
 
     2.  Optionally, next to **Image**, you can either click **Browse** to find an image file or leave the default selection.
 
-    3.  In the **Description** text box, type a short description that will describe the request offering that will appear on the [!INCLUDE[smssp](../../Token/smssp_md.md)] page. For example, type **Use this request offering to request membership to an Active Directory Group**.
+    3.  In the **Description** text box, type a short description that will describe the request offering that will appear on the [!INCLUDE[smssp](../../includes/smssp_md.md)] page. For example, type **Use this request offering to request membership to an Active Directory Group**.
 
-6.  On the **User Prompts** page, enter questions for users or define other instructions that will appear on the [!INCLUDE[smssp](../../Token/smssp_md.md)] when a user submits a request by completing the following steps:
+6.  On the **User Prompts** page, enter questions for users or define other instructions that will appear on the [!INCLUDE[smssp](../../includes/smssp_md.md)] when a user submits a request by completing the following steps:
 
     1.  In the **Form instructions** box, type a summary of the information that the user must provide for the request. For example, type **Provide the information below to request membership to the Active Directory Group**
 
@@ -79,7 +79,7 @@ You can use the following procedures to edit a service offering or a request off
 
 ### To edit a service offering
 
-1.  In the [!INCLUDE[smcons](../../Token/smcons_md.md)], select **Library**.
+1.  In the [!INCLUDE[smcons](../../includes/smcons_md.md)], select **Library**.
 
 2.  In the **Library** pane, expand **Service Catalog**, expand **Service Offerings**, and then select **All Service Offerings**.
 
@@ -97,9 +97,9 @@ You can use the following procedures to edit a service offering or a request off
 
     4.  In the **Language** list, either leave the default selection or select a language.
 
-    5.  In the **Overview** text box, type a short overview that will describe the service offering that will appear on the [!INCLUDE[smssp](../../Token/smssp_md.md)] home page. For example, type **Access to AD Group, Access to Labs**.
+    5.  In the **Overview** text box, type a short overview that will describe the service offering that will appear on the [!INCLUDE[smssp](../../includes/smssp_md.md)] home page. For example, type **Access to AD Group, Access to Labs**.
 
-    6.  In the description box, type a description that will appear on the service offering page on the [!INCLUDE[smssp](../../Token/smssp_md.md)].
+    6.  In the description box, type a description that will appear on the service offering page on the [!INCLUDE[smssp](../../includes/smssp_md.md)].
 
 6.  On the **Detailed Information** page, complete these steps:
 

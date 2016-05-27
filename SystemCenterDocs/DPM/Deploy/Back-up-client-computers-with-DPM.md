@@ -159,7 +159,7 @@ Recover data from the DPM console as follows:
 
 3.  In the **Recoverable item** pane, click to select the recoverable item you want to recover.
 
-4.  In the **Actions** pane, click **Recover**. [!INCLUDE[dpm2012short](../../Token/dpm2012short_md.md)] starts the Recovery Wizard.
+4.  In the **Actions** pane, click **Recover**. [!INCLUDE[dpm2012short](../../includes/dpm2012short_md.md)] starts the Recovery Wizard.
 
 5.  You can recover data as follows:
 

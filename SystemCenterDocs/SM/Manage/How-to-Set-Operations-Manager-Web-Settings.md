@@ -15,7 +15,7 @@ Use the following procedures to set the web settings of System Center Operations
 
 ### To set Operations Manager web settings
 
-1.  In the [!INCLUDE[smcons](../../Token/smcons_md.md)], click **Administration**.
+1.  In the [!INCLUDE[smcons](../../includes/smcons_md.md)], click **Administration**.
 
 2.  In the **Administration** pane, expand **Administration**, and then click **Settings**.
 

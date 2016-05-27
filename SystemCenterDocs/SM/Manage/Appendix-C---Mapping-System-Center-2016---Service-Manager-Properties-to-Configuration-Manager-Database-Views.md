@@ -11,7 +11,7 @@ ms.topic: article
 ms.assetid: b1af3b48-696b-4db8-94e6-9da28c2ef125
 ---
 # Appendix C - Mapping System Center 2016 - Service Manager Properties to Configuration Manager Database Views
-The hardware inventory feature in Configuration Manager gathers information about computers in the organization. In [!INCLUDE[smshort](../../Token/smshort_md.md)], by using a Configuration Manager Connector, you can import that hardware inventory data from Configuration Manager. The tables in this appendix describe the mapping between [!INCLUDE[smshort](../../Token/smshort_md.md)] properties and column names of Configuration Manager database views.
+The hardware inventory feature in Configuration Manager gathers information about computers in the organization. In [!INCLUDE[smshort](../../includes/smshort_md.md)], by using a Configuration Manager Connector, you can import that hardware inventory data from Configuration Manager. The tables in this appendix describe the mapping between [!INCLUDE[smshort](../../includes/smshort_md.md)] properties and column names of Configuration Manager database views.
 
 ## Microsoft.SystemCenter.ConfigurationManager.DeployedComputer
 The following table describes the mapping for the **Microsoft.SystemCenter.ConfigurationManager.DeployedComputer** type.

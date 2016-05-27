@@ -11,7 +11,7 @@ ms.topic: article
 ms.assetid: 66b6b089-d888-431f-845f-ee689b69ba1a
 ---
 # Managing Discovery and Agents
-[!INCLUDE[om12long](../../Token/om12long_md.md)] can monitor computers running Windows, UNIX, and Linux operating systems. For a list of the supported operating system versions, see [Supported Configurations](http://go.microsoft.com/fwlink/p/?LinkID=223642).
+[!INCLUDE[om12long](../../includes/om12long_md.md)] can monitor computers running Windows, UNIX, and Linux operating systems. For a list of the supported operating system versions, see [Supported Configurations](http://go.microsoft.com/fwlink/p/?LinkID=223642).
 
 To begin monitoring, computers must be discovered. For a description of the discovery process, see “How Objects Are Discovered and Monitored” in [Key Concepts](../get-started/Operations-Manager-Key-Concepts.md).
 

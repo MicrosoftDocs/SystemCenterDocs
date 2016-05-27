@@ -11,14 +11,14 @@ ms.topic: article
 ms.assetid: 70db0991-63d5-464a-978b-45e8783ec539
 ---
 # How to Create a Configuration Manager Connector_1
-You can use the following procedures to create a connector to import data from Configuration Manager into [!INCLUDE[scsm_threshold_1](../../Token/scsm_threshold_1_md.md)] and confirm the status of the connector.
+You can use the following procedures to create a connector to import data from Configuration Manager into [!INCLUDE[scsm_threshold_1](../../includes/scsm_threshold_1_md.md)] and confirm the status of the connector.
 
 > [!IMPORTANT]
 > Before you can create the Configuration Manager connector, you have to verify that System Center Configuration Manager is installed in your environment, and you have to turn on Windows User Account Control \(UAC\). For more information about UAC, see [User Account Control](http://go.microsoft.com/fwlink/p/?LinkID=177523).
 
 ### To create a Configuration Manager connector
 
-1.  In the [!INCLUDE[smcons](../../Token/smcons_md.md)], click **Administration**.
+1.  In the [!INCLUDE[smcons](../../includes/smcons_md.md)], click **Administration**.
 
 2.  In the **Administration** pane, expand **Administration**, and then click **Connectors**.
 
@@ -73,7 +73,7 @@ You can use the following procedures to create a connector to import data from C
 
 1.  Confirm that the Configuration Manager connector that you created is displayed in the **Connectors** pane.
 
-2.  In the [!INCLUDE[smcons](../../Token/smcons_md.md)], click **Configuration Items**. In the **Configuration Items** pane, expand **Configuration Items**, expand **Computers**, and then click **All Windows Computers**. Verify that the intended computers from  appear in the **All Windows Computers** pane.
+2.  In the [!INCLUDE[smcons](../../includes/smcons_md.md)], click **Configuration Items**. In the **Configuration Items** pane, expand **Configuration Items**, expand **Computers**, and then click **All Windows Computers**. Verify that the intended computers from  appear in the **All Windows Computers** pane.
 
 3.  In the middle pane, double\-click a newly imported computer. Verify that the appropriate computer details appear in the computer form.
 

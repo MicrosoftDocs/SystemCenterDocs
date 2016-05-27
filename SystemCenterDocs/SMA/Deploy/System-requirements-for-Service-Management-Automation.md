@@ -11,7 +11,7 @@ ms.topic: article
 ms.assetid: 222692ab-765c-44bd-8d50-0c0596d26a94
 ---
 # System requirements for Service Management Automation
-This topic describes the minimum hardware and software configurations that are required for a full installation of [!INCLUDE[sma_1](../../Token/sma_1_md.md)].
+This topic describes the minimum hardware and software configurations that are required for a full installation of [!INCLUDE[sma_1](../../includes/sma_1_md.md)].
 
 ## Hardware requirements
 The following recommended configurations should be used.
@@ -50,10 +50,10 @@ Before installing the web service, use the following procedure to install .NET F
 
 8.  Click **Next**, and follow the prompts to finish the installation.
 
-### Running [!INCLUDE[sma_1](../../Token/sma_1_md.md)] on Windows Azure virtual machines
-[!INCLUDE[sma_1](../../Token/sma_1_md.md)] runs on Windows Azure just as it does on physical computer systems.
+### Running [!INCLUDE[sma_1](../../includes/sma_1_md.md)] on Windows Azure virtual machines
+[!INCLUDE[sma_1](../../includes/sma_1_md.md)] runs on Windows Azure just as it does on physical computer systems.
 
-[!INCLUDE[sma_1](../../Token/sma_1_md.md)] was tested by Microsoft by installing and using it in a Windows Azure virtual machine. The testing concluded that [!INCLUDE[sma_1](../../Token/sma_1_md.md)] was fully functional and operated exactly the same as it does on physical hardware. Stability and performance benchmarks inside a Windows Azure virtual machine were at a level where no special considerations were needed.
+[!INCLUDE[sma_1](../../includes/sma_1_md.md)] was tested by Microsoft by installing and using it in a Windows Azure virtual machine. The testing concluded that [!INCLUDE[sma_1](../../includes/sma_1_md.md)] was fully functional and operated exactly the same as it does on physical hardware. Stability and performance benchmarks inside a Windows Azure virtual machine were at a level where no special considerations were needed.
 
 ### Security Requirements
 The following ports must be opened for each role.
@@ -61,7 +61,7 @@ The following ports must be opened for each role.
 |Role|Requirement|
 |--------|---------------|
 |Runbook worker|None|
-|Automation web service|Default value: 9090. Configurable at install time port defaults to 9090. The installation program for [!INCLUDE[sma_1](../../Token/sma_1_md.md)] automatically opens the web service port on the local firewall.|
+|Automation web service|Default value: 9090. Configurable at install time port defaults to 9090. The installation program for [!INCLUDE[sma_1](../../includes/sma_1_md.md)] automatically opens the web service port on the local firewall.|
 |Windows PowerShell module|None|
 
 The following certificates are required for each component.
@@ -69,7 +69,7 @@ The following certificates are required for each component.
 |Role|Requirement|
 |--------|---------------|
 |Runbook worker|None|
-|Automation web service|A certificate that can be used for Secure Sockets Layer \(SSL\) encryption over HTTPS. The installation program for [!INCLUDE[sma_1](../../Token/sma_1_md.md)] can be used to generate a self\-signed certificate.|
+|Automation web service|A certificate that can be used for Secure Sockets Layer \(SSL\) encryption over HTTPS. The installation program for [!INCLUDE[sma_1](../../includes/sma_1_md.md)] can be used to generate a self\-signed certificate.|
 |Windows PowerShell module|None|
 
 

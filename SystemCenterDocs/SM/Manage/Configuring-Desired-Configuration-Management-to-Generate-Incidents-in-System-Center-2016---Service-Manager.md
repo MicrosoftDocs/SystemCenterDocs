@@ -17,17 +17,17 @@ In Service Manager, you must create a Configuration Manager connector to import 
 
 You can use desired configuration management in Configuration Manager to monitor software to ensure that it is compliant with defined values. For example, you can monitor software versions, security settings, and software updates. The configurations that you want to monitor are added as Configuration Manager configuration items to configuration baselines so that they can be evaluated for compliance as a group.
 
-In [!INCLUDE[smshort](../../Token/smshort_md.md)], you can import configuration baselines from Configuration Manager  by using a Configuration Manager Connector. You can then configure [!INCLUDE[smshort](../../Token/smshort_md.md)] to create incidents for each [!INCLUDE[smshort](../../Token/smshort_md.md)] configuration item that reports as noncompliant against the defined values.
+In [!INCLUDE[smshort](../../includes/smshort_md.md)], you can import configuration baselines from Configuration Manager  by using a Configuration Manager Connector. You can then configure [!INCLUDE[smshort](../../includes/smshort_md.md)] to create incidents for each [!INCLUDE[smshort](../../includes/smshort_md.md)] configuration item that reports as noncompliant against the defined values.
 
 Use the following procedure to configure incident management to automatically generate incidents based on desired configuration management.
 
-In Service Manager, you can import configuration baselines from System Center Configuration Manager by using a Configuration Manager connector. Then, you can configure [!INCLUDE[smshort](../../Token/smshort_md.md)] to create incidents for each [!INCLUDE[smshort](../../Token/smshort_md.md)] configuration item that is reported as noncompliant against the defined values.
+In Service Manager, you can import configuration baselines from System Center Configuration Manager by using a Configuration Manager connector. Then, you can configure [!INCLUDE[smshort](../../includes/smshort_md.md)] to create incidents for each [!INCLUDE[smshort](../../includes/smshort_md.md)] configuration item that is reported as noncompliant against the defined values.
 
 You can use the following procedures to configure incident management to automatically generate desired configuration management–based incidents and validate that the desired configuration management is configured.
 
 ## To configure incident management to automatically generate desired configuration management–based incidents
 
-1.  In the [!INCLUDE[smcons](../../Token/smcons_md.md)], click **Administration**.
+1.  In the [!INCLUDE[smcons](../../includes/smcons_md.md)], click **Administration**.
 
 2.  In the **Administration** pane, expand **Workflows**, and then click **Configuration**.
 
@@ -58,9 +58,9 @@ You can use the following procedures to configure incident management to automat
 
 ### To validate that desired configuration management is configured
 
-1.  Import an out\-of\-compliance [!INCLUDE[smshort](../../Token/smshort_md.md)] configuration item that would match one of the desired configuration management rules. Then, locate the desired configuration management–based incident in [!INCLUDE[smshort](../../Token/smshort_md.md)].
+1.  Import an out\-of\-compliance [!INCLUDE[smshort](../../includes/smshort_md.md)] configuration item that would match one of the desired configuration management rules. Then, locate the desired configuration management–based incident in [!INCLUDE[smshort](../../includes/smshort_md.md)].
 
-2.  In the [!INCLUDE[smcons](../../Token/smcons_md.md)], click **Work Items**
+2.  In the [!INCLUDE[smcons](../../includes/smcons_md.md)], click **Work Items**
 
 3.  In the **Work Items** pane, expand **Incident Management**, and then click **All Open DCM Incidents**.
 
@@ -72,12 +72,12 @@ You can use the following procedures to configure incident management to automat
 
 ![](Image/PSSymbol.gif)You can use Windows PowerShell commands to complete these and other related tasks, as follows:
 
--   For information about how to use Windows PowerShell to create a desired configuration management workflow in [!INCLUDE[smshort](../../Token/smshort_md.md)], see [New\-SCSMDCMWorkflow](http://go.microsoft.com/fwlink/p/?LinkID=225354).
+-   For information about how to use Windows PowerShell to create a desired configuration management workflow in [!INCLUDE[smshort](../../includes/smshort_md.md)], see [New\-SCSMDCMWorkflow](http://go.microsoft.com/fwlink/p/?LinkID=225354).
 
--   For information about how to use Windows PowerShell to retrieve the list of all DCM workflows that are defined in [!INCLUDE[smshort](../../Token/smshort_md.md)], see [Get\-SCSMDCMWorkflow](http://go.microsoft.com/fwlink/p/?LinkID=225321).
+-   For information about how to use Windows PowerShell to retrieve the list of all DCM workflows that are defined in [!INCLUDE[smshort](../../includes/smshort_md.md)], see [Get\-SCSMDCMWorkflow](http://go.microsoft.com/fwlink/p/?LinkID=225321).
 
 -   For information about how to use Windows PowerShell to update properties of a desired configuration management workflow, see [Update\-SCSMDCMWorkflow](http://go.microsoft.com/fwlink/p/?LinkID=225383).
 
--   For information about how to use Windows PowerShell to remove a desired configuration management workflow from [!INCLUDE[smshort](../../Token/smshort_md.md)], see [Remove\-SCSMDCMWorkflow](http://go.microsoft.com/fwlink/p/?LinkID=225365).
+-   For information about how to use Windows PowerShell to remove a desired configuration management workflow from [!INCLUDE[smshort](../../includes/smshort_md.md)], see [Remove\-SCSMDCMWorkflow](http://go.microsoft.com/fwlink/p/?LinkID=225365).
 
 

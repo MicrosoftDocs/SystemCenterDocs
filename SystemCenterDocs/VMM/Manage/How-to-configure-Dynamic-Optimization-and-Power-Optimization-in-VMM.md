@@ -8,11 +8,11 @@ ms.topic: article
 ms.assetid: 3e099462-8a49-4d5a-b8c0-ecc5c48cd840
 ---
 # How to configure Dynamic Optimization and Power Optimization in VMM
-Use the following procedures to enable Dynamic Optimization and Power Optimization for a host group in [!INCLUDE[vmm12sp1_long](../../Token/vmm12sp1_long_md.md)] and to configure resource Power Optimization usage on a host group.
+Use the following procedures to enable Dynamic Optimization and Power Optimization for a host group in [!INCLUDE[vmm12sp1_long](../../includes/vmm12sp1_long_md.md)] and to configure resource Power Optimization usage on a host group.
 
 -   [To turn on Dynamic Optimization and Power Optimization for a host group](#BKMK_OnHG).
 
--   [To configure settings for Power Optimization](#BKMK_Settings). Use this procedure to change the thresholds for CPU, memory, disk I\/O, and network I\/O on hosts that govern how [!INCLUDE[vmm12short](../../Token/vmm12short_md.md)] performs Dynamic Optimization and Power Optimization within a host group. You do not need to perform this procedure unless you want to change the default thresholds.
+-   [To configure settings for Power Optimization](#BKMK_Settings). Use this procedure to change the thresholds for CPU, memory, disk I\/O, and network I\/O on hosts that govern how [!INCLUDE[vmm12short](../../includes/vmm12short_md.md)] performs Dynamic Optimization and Power Optimization within a host group. You do not need to perform this procedure unless you want to change the default thresholds.
 
 For more information about Dynamic Optimization and Power Optimization, see [Configuring dynamic optimization and power optimization in VMM](Configuring-dynamic-optimization-and-power-optimization-in-VMM.md).
 
@@ -32,7 +32,7 @@ For more information about Dynamic Optimization and Power Optimization, see [Con
 
     Aggressiveness determines the amount of imbalance in virtual machine load on the hosts that is required in order to initiate a migration during Dynamic Optimization. When you configure frequency and aggressiveness for Dynamic Optimization, you should try to balance the resource cost of additional migrations against the advantages of balancing load among hosts in a host cluster. Initially, you might accept the default value of **Medium**. After you observe the effects of Dynamic Optimization in your environment, you can increase the aggressiveness.
 
-    To help conserve energy by having [!INCLUDE[vmm12short](../../Token/vmm12short_md.md)] turn off hosts when they are not needed and turn them on again when they are needed, configure Power Optimization for the host group. Power Optimization is only available when virtual machines are being migrated automatically to balance load.
+    To help conserve energy by having [!INCLUDE[vmm12short](../../includes/vmm12short_md.md)] turn off hosts when they are not needed and turn them on again when they are needed, configure Power Optimization for the host group. Power Optimization is only available when virtual machines are being migrated automatically to balance load.
 
 6.  To periodically run Dynamic Optimization on qualifying host clusters in the host group, enter the following settings:
 
@@ -54,7 +54,7 @@ For more information about Dynamic Optimization and Power Optimization, see [Con
 
 4.  Under **Schedule**, select the hours when you want power optimization to be performed. Click a box to turn power optimization on or off for that hour.
 
-    [!INCLUDE[vmm12short](../../Token/vmm12short_md.md)] applies the Power Optimization schedule locally according to the time zone of each host.
+    [!INCLUDE[vmm12short](../../includes/vmm12short_md.md)] applies the Power Optimization schedule locally according to the time zone of each host.
 
 5.  Click **OK** to close the dialog box and **OK** again to close the group **Properties**.
 

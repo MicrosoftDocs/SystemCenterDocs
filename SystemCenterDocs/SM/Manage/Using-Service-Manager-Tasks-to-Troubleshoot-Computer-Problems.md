@@ -13,12 +13,12 @@ ms.assetid: 7814be87-cbc7-42fe-a5c8-5a8720e3921c
 # Using Service Manager Tasks to Troubleshoot Computer Problems
 If you want to view the logs on a remote computer that is exhibiting problems, you must first create a task that opens Event Viewer. Event Viewer reads logs from remote computers.
 
-In Service Manager, administrators can create and use tasks to automate and simplify lengthy, complex, or repetitive processes. Operators typically use tasks to help troubleshoot user incidents. After creating a task, operators can run the task directly from the [!INCLUDE[smcons](../../Token/smcons_md.md)].
+In Service Manager, administrators can create and use tasks to automate and simplify lengthy, complex, or repetitive processes. Operators typically use tasks to help troubleshoot user incidents. After creating a task, operators can run the task directly from the [!INCLUDE[smcons](../../includes/smcons_md.md)].
 
 > [!IMPORTANT]
 > In this release, to create a task, the logged\-on user must have administrative credentials.
 
-The Event Viewer task that you create will display logs from the computer that is identified as a configuration item in the incident. The help desk analyst can then select an incident in the [!INCLUDE[smcons](../../Token/smcons_md.md)] and run this task for the computers that are related to the incident.
+The Event Viewer task that you create will display logs from the computer that is identified as a configuration item in the incident. The help desk analyst can then select an incident in the [!INCLUDE[smcons](../../includes/smcons_md.md)] and run this task for the computers that are related to the incident.
 
 ## How to Create a Task
 
@@ -26,7 +26,7 @@ Use the following procedures in Service Manager to create a task—for example, 
 
 ### To create a task
 
-1.  In the [!INCLUDE[smcons](../../Token/smcons_md.md)], click **Library**.
+1.  In the [!INCLUDE[smcons](../../includes/smcons_md.md)], click **Library**.
 
 2.  On the **Library** pane, expand **Library**, and then select **Tasks.**
 
@@ -72,7 +72,7 @@ Use the following procedures in Service Manager to create a task—for example, 
 
 ### To validate a new task
 
-1.  In the [!INCLUDE[smcons](../../Token/smcons_md.md)], click **Work Items**.
+1.  In the [!INCLUDE[smcons](../../includes/smcons_md.md)], click **Work Items**.
 
 2.  In the **Work Items** pane, expand **Work Items**, expand **Incident Management**, and then click **All Incidents**.
 
@@ -82,7 +82,7 @@ Use the following procedures in Service Manager to create a task—for example, 
 
 5.  Notice that Event Viewer starts, and the events from the computer that are associated with the incident are displayed.
 
-![](Image/PSSymbol.gif)You can use the Get\-SCSMTask Windows PowerShell command to view [!INCLUDE[smshort](../../Token/smshort_md.md)] tasks.
+![](Image/PSSymbol.gif)You can use the Get\-SCSMTask Windows PowerShell command to view [!INCLUDE[smshort](../../includes/smshort_md.md)] tasks.
 
 
 
@@ -92,7 +92,7 @@ Use the following procedure to run a task, such as the Ping task, from an Incide
 
 ### To run a task from an Incident view
 
-1.  In the [!INCLUDE[smcons](../../Token/smcons_md.md)], click **Work Items**, and then select any Incident Management view. Select an incident in the view, and notice that in the **Tasks** pane, under **\<Incident Name\>**, the **Ping Related Computer** task appears.
+1.  In the [!INCLUDE[smcons](../../includes/smcons_md.md)], click **Work Items**, and then select any Incident Management view. Select an incident in the view, and notice that in the **Tasks** pane, under **\<Incident Name\>**, the **Ping Related Computer** task appears.
 
 2.  In the **Tasks** pane, click the task to run it. For example, **Ping Related Computer**. If a computer is not associated with the incident, you must specify the name of the computer to run the task on. If more than one computer is associated with an incident, choose one computer to run the task on.
 

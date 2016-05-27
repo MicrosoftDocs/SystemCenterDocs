@@ -14,7 +14,7 @@ ms.assetid: 98767073-f0c5-47a8-9551-f532cecb8d08
 # Deploy a Network Controller using VMM
 ## Introduction
 
-This topic helps you evaluate the Software Defined Networking (SDN) features available with Windows Server 2016 Technical Preview 5. In particular, it focuses on using Virtual Machine Manager (VMM) 2016 Technical Preview 5 to deploy a highly available three-node [network controller](https://technet.microsoft.com/library/dn859239.aspx?f=255&MSPPError=-2147217396); a new SDN capability in [!INCLUDE[winthreshold_server_2_md../../Token/winthreshold_server_2_md.md)]. The network controller is a scalable and highly available server role that enables you to automate network infrastructure configuration instead of performing manual network device configuration.
+This topic helps you evaluate the Software Defined Networking (SDN) features available with Windows Server 2016 Technical Preview 5. In particular, it focuses on using Virtual Machine Manager (VMM) 2016 Technical Preview 5 to deploy a highly available three-node [network controller](https://technet.microsoft.com/library/dn859239.aspx?f=255&MSPPError=-2147217396); a new SDN capability in [!INCLUDE[winthreshold_server_2_md../../includes/winthreshold_server_2_md.md)]. The network controller is a scalable and highly available server role that enables you to automate network infrastructure configuration instead of performing manual network device configuration.
 
 ## Prerequisites
 
@@ -37,13 +37,13 @@ Before proceeding to deploy the network controller, make sure that you perform t
 > [!IMPORTANT]
 > Before you begin deployment, you must plan and configure your hosts and physical network infrastructure. 
 >
->You must have a dedicated Host group with [!INCLUDE[winthreshold_server_2_md../../Token/winthreshold_server_2_md.md)] 5 + ZDP installed that will be used for Network Controller deployment by VMM. Ensure that none of the infrastructure virtual machines (VMM Server, SQL, AD\DNS etc.) are deployed or migrated to any of the hosts in this Host group.
+>You must have a dedicated Host group with [!INCLUDE[winthreshold_server_2_md../../includes/winthreshold_server_2_md.md)] 5 + ZDP installed that will be used for Network Controller deployment by VMM. Ensure that none of the infrastructure virtual machines (VMM Server, SQL, AD\DNS etc.) are deployed or migrated to any of the hosts in this Host group.
 >
 >For more information, see [Plan a Software Defined Network Infrastructure](https://technet.microsoft.com/library/mt605207.aspx).
 
  
 
-All Hyper\-V hosts must have [!INCLUDE[winthreshold_server_2](../../Token/winthreshold_server_2_md.md)] 5 installed, and Hyper\-V enabled.
+All Hyper\-V hosts must have [!INCLUDE[winthreshold_server_2](../../includes/winthreshold_server_2_md.md)] 5 installed, and Hyper\-V enabled.
 
 ## Deployment steps
 ### To create the Management logical network
@@ -181,9 +181,9 @@ Now you can prepare to deploy the network controller service template.
 
 The service template requires one virtual hard disk that must be prepared and imported into the VMM library prior to importing the service template.
 
-With [!INCLUDE[winthreshold_server_2_md../../Token/winthreshold_server_2_md.md)] 5, VMM service templates for the network controller support multi-node deployment on both Generation 1 and Generation 2 virtual machines.This virtual hard disk must contain an operating system running [!INCLUDE[winthreshold_server_2_md../../Token/winthreshold_server_2_md.md)] 5 with the Zero Day Package and can be in either VHD or VHDX format.
+With [!INCLUDE[winthreshold_server_2_md../../includes/winthreshold_server_2_md.md)] 5, VMM service templates for the network controller support multi-node deployment on both Generation 1 and Generation 2 virtual machines.This virtual hard disk must contain an operating system running [!INCLUDE[winthreshold_server_2_md../../includes/winthreshold_server_2_md.md)] 5 with the Zero Day Package and can be in either VHD or VHDX format.
 
-You can download [!INCLUDE[winthreshold_server_2_md../../Token/winthreshold_server_2_md.md)] 5 + Zero Day Package in either VHD or VHDX format from the Microsoft Download Center. These are English language files. If you want to deploy a non-English environment, you can download the Language Pack of your choice.
+You can download [!INCLUDE[winthreshold_server_2_md../../includes/winthreshold_server_2_md.md)] 5 + Zero Day Package in either VHD or VHDX format from the Microsoft Download Center. These are English language files. If you want to deploy a non-English environment, you can download the Language Pack of your choice.
 * [**VHD** download](http://download.microsoft.com/download/4/4/F/44F93CCF-1AAE-42E5-BDCB-924991A005DA/14300.1000.amd64fre.rs1_release_svc.160324-1723_server_serverdatacenter_en-us.vhd)
 
 * [**VHDX** download](http://download.microsoft.com/download/4/4/F/44F93CCF-1AAE-42E5-BDCB-924991A005DA/14300.1000.amd64fre.rs1_release_svc.160324-1723_server_serverdatacenter_en-us.vhdx)
@@ -222,7 +222,7 @@ The previous link also contains three custom resource folders: NCSetup.cr, Serve
 
 Use the following procedure to deploy a network controller service instance:
 
-1. Select the network controller service template and click **Configure Deployment** to begin. You will have to type a name and select a destination for the service instance. The destination must map to a Host Group that contains [!INCLUDE[winthreshold_server_2_md../../Token/winthreshold_server_2_md.md)] 5 hosts.
+1. Select the network controller service template and click **Configure Deployment** to begin. You will have to type a name and select a destination for the service instance. The destination must map to a Host Group that contains [!INCLUDE[winthreshold_server_2_md../../includes/winthreshold_server_2_md.md)] 5 hosts.
 
 2.  On the left side of the Configure Deployment window, there are a number of settings that you must configure. The table below summarizes each field's values.
 

@@ -14,9 +14,9 @@ ms.assetid: e80fa4de-39bc-4463-bb29-661575b0b1ab
 You can use the following procedures to view the status of a data warehouse job in Service Manager to determine whether a job is running, stopped, or failed.
 
 
-### To view the status of a data warehouse job by using the [!INCLUDE[smcons](../../Token/smcons_md.md)]
+### To view the status of a data warehouse job by using the [!INCLUDE[smcons](../../includes/smcons_md.md)]
 
-1.  In the [!INCLUDE[smcons](../../Token/smcons_md.md)], click **Data Warehouse**.
+1.  In the [!INCLUDE[smcons](../../includes/smcons_md.md)], click **Data Warehouse**.
 
 2.  In the **Data Warehouse** pane, expand **Data Warehouse**, and then click **Data Warehouse Jobs**.
 

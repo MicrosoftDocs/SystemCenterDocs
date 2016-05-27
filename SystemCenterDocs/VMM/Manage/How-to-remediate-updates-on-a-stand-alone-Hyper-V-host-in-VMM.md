@@ -8,12 +8,12 @@ ms.topic: article
 ms.assetid: f98a78c4-eea8-4b65-af06-5494bc77be48
 ---
 # How to remediate updates on a stand-alone Hyper-V host in VMM
-Use the following procedure to remediate updates for stand\-alone Hyper\-V hosts that are managed by [!INCLUDE[vmm12sp1_long](../../Token/vmm12sp1_long_md.md)]. You can also orchestrate updates of a managed Hyper\-V host cluster in [!INCLUDE[vmm12short](../../Token/vmm12short_md.md)]. For information, see [How to perform rolling updates on a Hyper-V host cluster in VMM](How-to-perform-rolling-updates-on-a-Hyper-V-host-cluster-in-VMM.md).
+Use the following procedure to remediate updates for stand\-alone Hyper\-V hosts that are managed by [!INCLUDE[vmm12sp1_long](../../includes/vmm12sp1_long_md.md)]. You can also orchestrate updates of a managed Hyper\-V host cluster in [!INCLUDE[vmm12short](../../includes/vmm12short_md.md)]. For information, see [How to perform rolling updates on a Hyper-V host cluster in VMM](How-to-perform-rolling-updates-on-a-Hyper-V-host-cluster-in-VMM.md).
 
 > [!NOTE]
-> The **Remediate** action is only available after you install a WSUS server for [!INCLUDE[vmm12short](../../Token/vmm12short_md.md)], enable update management, create and assign update baselines for computers managed by [!INCLUDE[vmm12short](../../Token/vmm12short_md.md)], and scan the computers for compliance. For more information, see [Managing fabric updates in VMM](Managing-fabric-updates-in-VMM.md).
+> The **Remediate** action is only available after you install a WSUS server for [!INCLUDE[vmm12short](../../includes/vmm12short_md.md)], enable update management, create and assign update baselines for computers managed by [!INCLUDE[vmm12short](../../includes/vmm12short_md.md)], and scan the computers for compliance. For more information, see [Managing fabric updates in VMM](Managing-fabric-updates-in-VMM.md).
 
-### To remediate updates for a Hyper\-V host in [!INCLUDE[vmm12short](../../Token/vmm12short_md.md)]
+### To remediate updates for a Hyper\-V host in [!INCLUDE[vmm12short](../../includes/vmm12short_md.md)]
 
 1.  Display **Compliance** view for the managed computers:
 
@@ -38,7 +38,7 @@ Use the following procedure to remediate updates for stand\-alone Hyper\-V hosts
     By default, the wizard restarts the computer after installing updates if any of the updates requires a restart. If you choose not to restart the servers after remediation, and any updates require a restart, the operational status of the computer changes to **Pending Machine Reboot** after the remediation. The updates will not be activated until you restart the computer.
 
     > [!NOTE]
-    > If you choose to manually restart computers after installing updates, that status of the computers will remain **Pending Reboot** until after you scan the computer for updates again. [!INCLUDE[vmm12short](../../Token/vmm12short_md.md)] does not scan computers to assess their update compliance status during refreshes.
+    > If you choose to manually restart computers after installing updates, that status of the computers will remain **Pending Reboot** until after you scan the computer for updates again. [!INCLUDE[vmm12short](../../includes/vmm12short_md.md)] does not scan computers to assess their update compliance status during refreshes.
 
 6.  Click **Remediate** to start update remediation.
 

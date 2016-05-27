@@ -12,15 +12,15 @@ ms.assetid: 15b8e1cc-d5b1-4e23-a485-fa3b06b29bfe
 ---
 # Configure computer BMC settings for bare-metal deployment
 Using a Baseboard Management Controller \(BMC\), you can manage a computer remotely independent of the operating system, and control system functions such as the ability to turn the computer off or on.
-[!INCLUDE[vmm12sp1_long](../../Token/vmm12sp1_long_md.md)] uses BMCs to restart computers during bare\-metal provisioning processes, and when optimizing power usage.
+[!INCLUDE[vmm12sp1_long](../../includes/vmm12sp1_long_md.md)] uses BMCs to restart computers during bare\-metal provisioning processes, and when optimizing power usage.
 
-You can configure BMC settings and use the BMC   through [!INCLUDE[vmm12short](../../Token/vmm12short_md.md)] using the following procedures:
+You can configure BMC settings and use the BMC   through [!INCLUDE[vmm12short](../../includes/vmm12short_md.md)] using the following procedures:
 
 -   [Configuring BMC settings](#BKMK_ConfigBMC)
 
 -   [Powering a computer on or off through VMM](How-to-configure-computer-BMC-settings-in-VMM.md#BKMK_power)
 
-In order for [!INCLUDE[vmm12short](../../Token/vmm12short_md.md)] to use a BMC, the BMC must meet the following requirements:
+In order for [!INCLUDE[vmm12short](../../includes/vmm12short_md.md)] to use a BMC, the BMC must meet the following requirements:
 
 -   The BMC must use one of the supported out\-of\-band management protocols, and the management protocol must be enabled in the BMC settings. The BMC must use one of the following management protocols:
 
@@ -36,7 +36,7 @@ In order for [!INCLUDE[vmm12short](../../Token/vmm12short_md.md)] to use a BMC, 
 
 -   The BMC must be configured with logon credentials and must use either static IP addressing or Dynamic Host Configuration Protocol \(DHCP\). If you use DHCP, we recommend that you configure DHCP to assign a constant IP address to each BMC, for example by using DHCP reservations.
 
--   The [!INCLUDE[vmm12short](../../Token/vmm12short_md.md)] management server must be able to access the network segment on which the BMCs are configured.
+-   The [!INCLUDE[vmm12short](../../includes/vmm12short_md.md)] management server must be able to access the network segment on which the BMCs are configured.
 
 **Account requirements.** You can create a Run As account before you begin the procedure, or during the procedure. The Run As account must have permissions to access the BMC. For example, the Run As account could be called **BMC Administrator**. For information, see [How to create a Run As account in VMM](How-to-create-a-Run-As-account-in-VMM.md).
 
@@ -62,7 +62,7 @@ In order for [!INCLUDE[vmm12short](../../Token/vmm12short_md.md)] to use a BMC, 
 
     3.  In the **BMC address** box, enter the IP address of the BMC.
 
-    4.  In the **BMC port** box, accept the default. [!INCLUDE[vmm12short](../../Token/vmm12short_md.md)] automatically populates the box with the port number for the selected out\-of\-band management protocol.
+    4.  In the **BMC port** box, accept the default. [!INCLUDE[vmm12short](../../includes/vmm12short_md.md)] automatically populates the box with the port number for the selected out\-of\-band management protocol.
 
     5.  Next to the **Run As account** box, click **Browse**, click a Run As account that has permissions to access the BMC, and then click **OK**.
 

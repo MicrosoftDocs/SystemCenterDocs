@@ -11,7 +11,7 @@ ms.topic: get-started-article
 ms.assetid: 0c3275b4-2809-49a1-8aac-d2ef2edf7cce
 ---
 # Getting Started with System Center Technical Preview - Virtual Machine Manager
-The following topics provide information to help you get started with learning about [!INCLUDE[vmm12sp1_long](../../Token/vmm12sp1_long_md.md)].
+The following topics provide information to help you get started with learning about [!INCLUDE[vmm12sp1_long](../../includes/vmm12sp1_long_md.md)].
 
 -   [What's New in VMM in System Center Technical Preview](What-s-New-in-VMM-in-System-Center-Technical-Preview.md)
 

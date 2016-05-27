@@ -11,7 +11,7 @@ ms.topic: get-started-article
 ms.assetid: 76eb99bf-9aca-49d1-b5e7-63909fd21b13
 ---
 # Walkthrough: Installing Operations Manager on a Single Server
-This walkthrough guides you through an installation of [!INCLUDE[scom_threshold_1](../../Token/scom_threshold_1_md.md)] on a single server. The features installed include the following:
+This walkthrough guides you through an installation of [!INCLUDE[scom_threshold_1](../../includes/scom_threshold_1_md.md)] on a single server. The features installed include the following:
 
 -   Management server
 
@@ -22,7 +22,7 @@ This walkthrough guides you through an installation of [!INCLUDE[scom_threshold_
 -   Reporting server
 
 ## Prerequisites
-You must ensure that your server meets the minimum supported configurations for [!INCLUDE[scom_threshold_1](../../Token/scom_threshold_1_md.md)]. For more information, see [System Requirements for System Center Technical Preview](../../system-requirements/System-Requirements-for-System-Center-Technical-Preview.md).
+You must ensure that your server meets the minimum supported configurations for [!INCLUDE[scom_threshold_1](../../includes/scom_threshold_1_md.md)]. For more information, see [System Requirements for System Center Technical Preview](../../system-requirements/System-Requirements-for-System-Center-Technical-Preview.md).
 
 **Required SQL Server Components**
 
@@ -34,7 +34,7 @@ You must ensure that your server meets the minimum supported configurations for 
 
 1.  Log on to the server by using an account that has local administrative credentials.
 
-2.  On the [!INCLUDE[scom_threshold_1](../../Token/scom_threshold_1_md.md)] installation media, run **Setup.exe**, and then click **Install**.
+2.  On the [!INCLUDE[scom_threshold_1](../../includes/scom_threshold_1_md.md)] installation media, run **Setup.exe**, and then click **Install**.
 
 3.  On the **Getting Started**, **Select features to install** page select the **Management server**, **Operations console**, **Web console**, and **Reporting server** features. To read more about each feature and its requirements, click **Expand all**, or expand the buttons next to each feature. Then click **Next**.
 
@@ -104,7 +104,7 @@ You must ensure that your server meets the minimum supported configurations for 
     > [!NOTE]
     > These paths do not change if you connect to a different instance of SQL Server.
 
-15. On the **Configuration**, **SQL Server instance for reporting services** page, select the SQL Server database instance from the drop\-down list. This drop\-down list contains the SQL Server database instance name that was created when you installed SQL Server 2012 or 2012 SP1, SQL Server 2014 or 2014 SP1, or SQL Server 2016 RC1 and should be the name of the server on which you are installing [!INCLUDE[scom_threshold_1](../../Token/scom_threshold_1_md.md)]. Click **Next**.
+15. On the **Configuration**, **SQL Server instance for reporting services** page, select the SQL Server database instance from the drop\-down list. This drop\-down list contains the SQL Server database instance name that was created when you installed SQL Server 2012 or 2012 SP1, SQL Server 2014 or 2014 SP1, or SQL Server 2016 RC1 and should be the name of the server on which you are installing [!INCLUDE[scom_threshold_1](../../includes/scom_threshold_1_md.md)]. Click **Next**.
 
 16. On the **Configuration**, **Specify a web site for use with the Web console** page, select **Default Web Site** or the name of an existing website. Select the option **Enable SSL** only if the website has been configured to use SSL, and then click **Next**.
 
@@ -131,7 +131,7 @@ You must ensure that your server meets the minimum supported configurations for 
     > [!NOTE]
     > Setup.exe requires administrator privileges because the Setup process requires access to system processes that can only be used by a local administrator.
 
-3.  Change the path to where the [!INCLUDE[scom_threshold_1](../../Token/scom_threshold_1_md.md)] setup.exe file is located, and run the following command.
+3.  Change the path to where the [!INCLUDE[scom_threshold_1](../../includes/scom_threshold_1_md.md)] setup.exe file is located, and run the following command.
 
     > [!IMPORTANT]
     > Use the `/WebConsoleUseSSL` parameter only if your website has Secure Sockets Layer \(SSL\) activated.
@@ -203,6 +203,6 @@ You must ensure that your server meets the minimum supported configurations for 
 3.  Close the report window.
 
 ## Next Steps
-Now that you have installed [!INCLUDE[scom_threshold_1](../../Token/scom_threshold_1_md.md)], you can deploy agents and start monitoring your applications, servers, and network devices. For more information, see [Managing Discovery and Agents](http://go.microsoft.com/fwlink/p/?LinkID=207756) and [Operations Manager 2016 Monitoring Scenarios](http://go.microsoft.com/fwlink/p/?LinkID=218372).
+Now that you have installed [!INCLUDE[scom_threshold_1](../../includes/scom_threshold_1_md.md)], you can deploy agents and start monitoring your applications, servers, and network devices. For more information, see [Managing Discovery and Agents](http://go.microsoft.com/fwlink/p/?LinkID=207756) and [Operations Manager 2016 Monitoring Scenarios](http://go.microsoft.com/fwlink/p/?LinkID=218372).
 
 

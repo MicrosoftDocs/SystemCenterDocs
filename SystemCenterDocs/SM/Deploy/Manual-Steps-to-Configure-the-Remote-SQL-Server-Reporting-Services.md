@@ -11,15 +11,15 @@ ms.topic: article
 ms.assetid: 21737383-4edf-4d52-a3ed-185496367070
 ---
 # Manual Steps to Configure the Remote SQL Server Reporting Services
-During deployment of the [!INCLUDE[smshort12](../../Token/smshort12_md.md)] data warehouse management server, you can specify the server to which Microsoft SQL Server Reporting Services \(SSRS\) will be deployed. During setup, the computer that is hosting the data warehouse management server is selected by default. If you specify a different computer to host SSRS, you are prompted to follow this procedure to prepare the server. Preparing the remote computer to host SSRS involves the following steps, which are covered in detail in this section:
+During deployment of the [!INCLUDE[smshort12](../../includes/smshort12_md.md)] data warehouse management server, you can specify the server to which Microsoft SQL Server Reporting Services \(SSRS\) will be deployed. During setup, the computer that is hosting the data warehouse management server is selected by default. If you specify a different computer to host SSRS, you are prompted to follow this procedure to prepare the server. Preparing the remote computer to host SSRS involves the following steps, which are covered in detail in this section:
 
--   Copy Microsoft.EnterpriseManagement.Reporting.Code.dll from the [!INCLUDE[smshort12](../../Token/smshort12_md.md)] installation media to the computer that is hosting SSRS.
+-   Copy Microsoft.EnterpriseManagement.Reporting.Code.dll from the [!INCLUDE[smshort12](../../includes/smshort12_md.md)] installation media to the computer that is hosting SSRS.
 
 -   Add a code segment to the rssrvpolicy configuration file on the computer that is hosting SSRS.
 
 -   Add an Extension tag to the existing Data segment in the rsreportserver configuration file on the same computer.
 
-If you used the default instance of SQL Server, use Windows Explorer to drag Microsoft.EnterpriseManagement.Reporting.Code.dll \(which is located in the Prerequisites folder on your [!INCLUDE[smshort12](../../Token/smshort12_md.md)] installation media\) to the folder \\Program Files\\Microsoft SQL Server\\MSRS10.MSSQLSERVER\\Reporting Services\\ReportServer\\Bin on the computer that is hosting SSRS. If you did not use the default instance of SQL Server, the path of the required folder is \\Program Files\\Microsoft SQL Server\\MSRS10.<INSTANCE\_NAME>\\Reporting Services\\ReportServer\\Bin. In the following procedure, the default instance name is used.
+If you used the default instance of SQL Server, use Windows Explorer to drag Microsoft.EnterpriseManagement.Reporting.Code.dll \(which is located in the Prerequisites folder on your [!INCLUDE[smshort12](../../includes/smshort12_md.md)] installation media\) to the folder \\Program Files\\Microsoft SQL Server\\MSRS10.MSSQLSERVER\\Reporting Services\\ReportServer\\Bin on the computer that is hosting SSRS. If you did not use the default instance of SQL Server, the path of the required folder is \\Program Files\\Microsoft SQL Server\\MSRS10.<INSTANCE\_NAME>\\Reporting Services\\ReportServer\\Bin. In the following procedure, the default instance name is used.
 
 ### To copy the Microsoft.EnterpriseManagement.Reporting.Code.dll file
 
@@ -31,7 +31,7 @@ If you used the default instance of SQL Server, use Windows Explorer to drag M
 
     2.  For SQL Server 2008 R2, locate the folder \\Program Files\\Microsoft SQL Server\\MSRS10\_50.MSSQLSERVER\\Reporting Services\\ReportServer\\Bin.
 
-3.  Start a second instance of Windows Explorer, locate the drive that contains the [!INCLUDE[smshort12](../../Token/smshort12_md.md)] installation media, and then open the Prerequisites folder.
+3.  Start a second instance of Windows Explorer, locate the drive that contains the [!INCLUDE[smshort12](../../includes/smshort12_md.md)] installation media, and then open the Prerequisites folder.
 
 4.  In the Prerequisites folder, click **Microsoft.EnterpriseManagement.Reporting.Code.dll**, and drag it to the folder that you located in either step 2a or step 2b.
 

@@ -11,11 +11,11 @@ ms.topic: article
 ms.assetid: c8ccceea-3bc2-4487-b174-4f0edbd51fa2
 ---
 # Runbook Operations
-The following topics provide details on different operations related to runbooks in [!INCLUDE[sma_1](../../Token/sma_1_md.md)] in [!INCLUDE[katal_2](../../Token/katal_2_md.md)].
+The following topics provide details on different operations related to runbooks in [!INCLUDE[sma_1](../../includes/sma_1_md.md)] in [!INCLUDE[katal_2](../../includes/katal_2_md.md)].
 
 -   [Starting a Runbook](Starting-a-Runbook.md)
 
-    Create or import a runbook into [!INCLUDE[sma_1](../../Token/sma_1_md.md)].
+    Create or import a runbook into [!INCLUDE[sma_1](../../includes/sma_1_md.md)].
 
 -   [Scheduling a Runbook](Scheduling-a-Runbook.md)
 

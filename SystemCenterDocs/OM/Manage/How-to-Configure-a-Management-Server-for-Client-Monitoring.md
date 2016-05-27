@@ -11,7 +11,7 @@ ms.topic: article
 ms.assetid: 78b3896d-2333-4900-82e1-202b834d0f77
 ---
 # How to Configure a Management Server for Client Monitoring_1
-Use the following procedures to configure a management server for the server component of the Client Monitoring feature of [!INCLUDE[om12long](../../Token/om12long_md.md)].
+Use the following procedures to configure a management server for the server component of the Client Monitoring feature of [!INCLUDE[om12long](../../includes/om12long_md.md)].
 
 > [!IMPORTANT]
 > If you plan to configure the management server to forward error reports to Microsoft and receive links to available solutions for those errors or participate in the Customer Experience Improvement Program \(CEIP\), you must first configure the management server's proxy settings if it uses a proxy server to access the Internet.

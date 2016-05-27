@@ -8,7 +8,7 @@ ms.topic: article
 ms.assetid: 1d0d6fac-dab5-4e97-9751-1f4035b6aa01
 ---
 # How to create and deploy a virtual machine from a blank virtual hard disk
-Use the following procedure to create a virtual machine from a blank virtual hard disk in [!INCLUDE[vmm12sp1_long](../../Token/vmm12sp1_long_md.md)]. After you create the virtual machine, you can install an operating system from an .iso image, from a CD or DVD, or from a network boot if a Pre\-Boot Execution Environment \(PXE\) server is available.
+Use the following procedure to create a virtual machine from a blank virtual hard disk in [!INCLUDE[vmm12sp1_long](../../includes/vmm12sp1_long_md.md)]. After you create the virtual machine, you can install an operating system from an .iso image, from a CD or DVD, or from a network boot if a Pre\-Boot Execution Environment \(PXE\) server is available.
 
 Before you complete this procedure, note the following:
 
@@ -22,7 +22,7 @@ Before you complete this procedure, note the following:
 
 -   You can customize static IP address settings only if you create a virtual machine from a virtual machine template.
 
--   You can use [!INCLUDE[vmm12short](../../Token/vmm12short_md.md)] to configure the availability settings for the virtual machine. For more information, see [Configuring availability options for virtual machines in VMM](Configuring-availability-options-for-virtual-machines-in-VMM.md).
+-   You can use [!INCLUDE[vmm12short](../../includes/vmm12short_md.md)] to configure the availability settings for the virtual machine. For more information, see [Configuring availability options for virtual machines in VMM](Configuring-availability-options-for-virtual-machines-in-VMM.md).
 
 ## Creating a virtual machine
 Use the following procedure to create a virtual machine from a blank virtual hard disk.
@@ -45,9 +45,9 @@ Use the following procedure to create a virtual machine from a blank virtual har
 
     -   The hardware profiles and hardware options that are available are those of the generation that you selected in the previous step. For more information, see [Understanding generation 1 and generation 2 virtual machines in VMM](Understanding-generation-1-and-generation-2-virtual-machines-in-VMM.md).
 
-    -   In **Bus Configuration**, if you want to install an operating system from a DVD or an .iso image, ensure there is a virtual DVD drive that is configured to use an available option such as the **Existing ISO image file** option. If you want to use an ISO image file, the file must be present in the [!INCLUDE[vmm12short](../../Token/vmm12short_md.md)] library.
+    -   In **Bus Configuration**, if you want to install an operating system from a DVD or an .iso image, ensure there is a virtual DVD drive that is configured to use an available option such as the **Existing ISO image file** option. If you want to use an ISO image file, the file must be present in the [!INCLUDE[vmm12short](../../includes/vmm12short_md.md)] library.
 
-    -   If you want to store the virtual machine in the [!INCLUDE[vmm12short](../../Token/vmm12short_md.md)] library before you deploy it to a host, use of one of the blank virtual hard disks that by default are provided in the [!INCLUDE[vmm12short](../../Token/vmm12short_md.md)] library. Do this as follows:
+    -   If you want to store the virtual machine in the [!INCLUDE[vmm12short](../../includes/vmm12short_md.md)] library before you deploy it to a host, use of one of the blank virtual hard disks that by default are provided in the [!INCLUDE[vmm12short](../../includes/vmm12short_md.md)] library. Do this as follows:
 
         1.  In **Bus Configuration**, click the virtual hard disk.
 
@@ -70,7 +70,7 @@ Use the following procedure to deploy the virtual machine in a private cloud.
 
 1.  On the **Select Cloud** page, select the private cloud on which you want to place the virtual machine. If you are connected as an Administrator, you can select the host on which the virtual machine should be deployed in the private cloud. The cloud suggestions are based on a 0\-5 star rating. For more information, see [Understanding virtual machine placement and ratings in VMM](Understanding-virtual-machine-placement-and-ratings-in-VMM.md). Verify the settings and modify if required:
 
-    -   **Expected utilization**—For a virtual machine that is created from a blank hard disk, the expected utilization is based on standard defaults. For a virtual machine that is created from an existing virtual machine, the default settings are based on past performance of the existing machine. [!INCLUDE[vmm12short](../../Token/vmm12short_md.md)] updates host suggestions and ratings in response to modifications made to the expected virtual machine utilization.
+    -   **Expected utilization**—For a virtual machine that is created from a blank hard disk, the expected utilization is based on standard defaults. For a virtual machine that is created from an existing virtual machine, the default settings are based on past performance of the existing machine. [!INCLUDE[vmm12short](../../includes/vmm12short_md.md)] updates host suggestions and ratings in response to modifications made to the expected virtual machine utilization.
 
     -   **Make this VM highly available**—With this option selected, only hosts that are located in a cluster are available for selection.
 
@@ -78,9 +78,9 @@ Use the following procedure to deploy the virtual machine in a private cloud.
 
     -   **Rating Explanation**—Provides an explanation if a host received a zero rating.
 
-    -   **SAN Explanation** or **Deployment and Transfer Explanation**—Lists any factors that make a storage area network \(SAN\) transfer unavailable. [!INCLUDE[vmm12short](../../Token/vmm12short_md.md)] does not recognize a virtual machine that is stored on a SAN as available for deployment by using SAN transfer if the virtual machine was stored directly in the library when it was created or was added to the library during a library refresh. To avoid this issue, deploy the virtual machine to a host by using a LAN transfer, and then store the virtual machine in the same [!INCLUDE[vmm12short](../../Token/vmm12short_md.md)] library, library share, and logical unit number \(LUN\).
+    -   **SAN Explanation** or **Deployment and Transfer Explanation**—Lists any factors that make a storage area network \(SAN\) transfer unavailable. [!INCLUDE[vmm12short](../../includes/vmm12short_md.md)] does not recognize a virtual machine that is stored on a SAN as available for deployment by using SAN transfer if the virtual machine was stored directly in the library when it was created or was added to the library during a library refresh. To avoid this issue, deploy the virtual machine to a host by using a LAN transfer, and then store the virtual machine in the same [!INCLUDE[vmm12short](../../includes/vmm12short_md.md)] library, library share, and logical unit number \(LUN\).
 
-        In addition, the **Deployment and Transfer Explanation** tab provides an explanation if fast file copy cannot be used. Fast file copy is based on the Windows Offloaded Data Transfers \(ODX\) feature, introduced in [!INCLUDE[winblue_server_2](../../Token/winblue_server_2_md.md)]. For information about ODX, see [Windows Offloaded Data Transfers Overview](http://technet.microsoft.com/library/hh831628.aspx).
+        In addition, the **Deployment and Transfer Explanation** tab provides an explanation if fast file copy cannot be used. Fast file copy is based on the Windows Offloaded Data Transfers \(ODX\) feature, introduced in [!INCLUDE[winblue_server_2](../../includes/winblue_server_2_md.md)]. For information about ODX, see [Windows Offloaded Data Transfers Overview](http://technet.microsoft.com/library/hh831628.aspx).
 
 2.  On the **Configure Settings** page, review the virtual machine settings:
 
@@ -104,7 +104,7 @@ Use the following procedure to deploy the virtual machine on a host.
 
 1.  On the **Select Host** page, view the ratings, click the host on which you want to deploy the virtual machine, and then click **Next**. The host suggestions are based on a 0\-5 star rating. For more information, see [Understanding virtual machine placement and ratings in VMM](Understanding-virtual-machine-placement-and-ratings-in-VMM.md). Note the following settings:
 
-    -   **Expected utilization**—For a virtual machine that is created from a blank hard disk, the expected utilization is based on standard defaults. For a virtual machine that is created from an existing virtual machine, the default settings are based on past performance of the existing machine. [!INCLUDE[vmm12short](../../Token/vmm12short_md.md)] updates host suggestions and ratings in response to modifications that are made to the expected virtual machine utilization.
+    -   **Expected utilization**—For a virtual machine that is created from a blank hard disk, the expected utilization is based on standard defaults. For a virtual machine that is created from an existing virtual machine, the default settings are based on past performance of the existing machine. [!INCLUDE[vmm12short](../../includes/vmm12short_md.md)] updates host suggestions and ratings in response to modifications that are made to the expected virtual machine utilization.
 
     -   **Make this VM highly available**—With this option selected, only hosts that are in a cluster are available for selection.
 
@@ -112,9 +112,9 @@ Use the following procedure to deploy the virtual machine on a host.
 
     -   **Rating Explanation**—Provides an explanation if a host received a zero rating.
 
-    -   **SAN Explanation** or **Deployment and Transfer Explanation**—Lists any factors that make a SAN transfer unavailable. [!INCLUDE[vmm12short](../../Token/vmm12short_md.md)] does not recognize a virtual machine that is stored on a SAN as available for deployment by using SAN transfer if the virtual machine was stored directly in the library when it was created or was added to the library during a library refresh. To avoid this issue, deploy the virtual machine to a host by using a LAN transfer, and then store the virtual machine in the same [!INCLUDE[vmm12short](../../Token/vmm12short_md.md)] library, library share, and logical unit number \(LUN\).
+    -   **SAN Explanation** or **Deployment and Transfer Explanation**—Lists any factors that make a SAN transfer unavailable. [!INCLUDE[vmm12short](../../includes/vmm12short_md.md)] does not recognize a virtual machine that is stored on a SAN as available for deployment by using SAN transfer if the virtual machine was stored directly in the library when it was created or was added to the library during a library refresh. To avoid this issue, deploy the virtual machine to a host by using a LAN transfer, and then store the virtual machine in the same [!INCLUDE[vmm12short](../../includes/vmm12short_md.md)] library, library share, and logical unit number \(LUN\).
 
-        In addition, the **Deployment and Transfer Explanation** tab provides an explanation if fast file copy cannot be used. Fast file copy is based on the Windows Offloaded Data Transfers \(ODX\) feature, introduced in [!INCLUDE[winblue_server_2](../../Token/winblue_server_2_md.md)]. For information about ODX, see [Windows Offloaded Data Transfers Overview](http://technet.microsoft.com/library/hh831628.aspx).
+        In addition, the **Deployment and Transfer Explanation** tab provides an explanation if fast file copy cannot be used. Fast file copy is based on the Windows Offloaded Data Transfers \(ODX\) feature, introduced in [!INCLUDE[winblue_server_2](../../includes/winblue_server_2_md.md)]. For information about ODX, see [Windows Offloaded Data Transfers Overview](http://technet.microsoft.com/library/hh831628.aspx).
 
 2.  On the **Configure Settings** page, review the settings for the virtual machine:
 

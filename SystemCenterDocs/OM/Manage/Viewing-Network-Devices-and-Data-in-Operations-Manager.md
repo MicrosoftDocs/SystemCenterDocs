@@ -11,7 +11,7 @@ ms.topic: article
 ms.assetid: f210ed66-1bed-4571-b506-868258f33329
 ---
 # Viewing Network Devices and Data in Operations Manager
-After [!INCLUDE[om12long](../../Token/om12long_md.md)] discovers your network devices, you can view information about the devices using the following procedures.
+After [!INCLUDE[om12long](../../includes/om12long_md.md)] discovers your network devices, you can view information about the devices using the following procedures.
 
 > [!IMPORTANT]
 > You must open the Operations console as an Operations Manager administrator to view the dashboard views.
@@ -90,7 +90,7 @@ A node can be any device connected to a network. Nodes can be switches, routers,
 5.  In the **Tasks** pane, select **Network Node Dashboard**.
 
 ## <a name="bkmk_NetworkInterfaceDashboard"></a>Network Interface Dashboard View
-An interface is a physical entity with which network connections are made, such as a port. By default, [!INCLUDE[om12short](../../Token/om12short_md.md)] will only monitor ports that are connected to another device that is being monitored. Ports that are not connected will not be monitored. Use the Network Interface Dashboard view to view the following information:
+An interface is a physical entity with which network connections are made, such as a port. By default, [!INCLUDE[om12short](../../includes/om12short_md.md)] will only monitor ports that are connected to another device that is being monitored. Ports that are not connected will not be monitored. Use the Network Interface Dashboard view to view the following information:
 
 -   Bytes sent and received over the past 24 hours
 
@@ -132,7 +132,7 @@ The vicinity view shows the relation between network devices and the Windows com
 > Network adapters using NIC teaming will not be identified as “teamed” in the Network Vicinity Dashboard.
 
 > [!NOTE]
-> Virtual machines are associated with the same network device as their host. This version of [!INCLUDE[om12short](../../Token/om12short_md.md)] does not show a relationship between the two computers.
+> Virtual machines are associated with the same network device as their host. This version of [!INCLUDE[om12short](../../includes/om12short_md.md)] does not show a relationship between the two computers.
 
 > [!NOTE]
 > Operations Manager does not display UNIX\- and Linux\-based devices in the Network Vicinity Dashboard.

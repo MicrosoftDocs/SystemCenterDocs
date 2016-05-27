@@ -14,7 +14,7 @@ Virtual Host Bus Adapters \(vHBAs\) represent the virtualization of Fibre Channe
 
 Using N\_Port ID Virtualization \(NPIV\), a host computer HBA can map to multiple vHBAs. HBA ports assigned to a vSAN can be added or removed as needed.
 
-Use the following procedures to manage vSANs with [!INCLUDE[vmm12sp1_long](../../Token/vmm12sp1_long_md.md)]:
+Use the following procedures to manage vSANs with [!INCLUDE[vmm12sp1_long](../../includes/vmm12sp1_long_md.md)]:
 
 -   [To create a vSAN and assign HBAs to it](#BKMK_CreateVSAN)
 

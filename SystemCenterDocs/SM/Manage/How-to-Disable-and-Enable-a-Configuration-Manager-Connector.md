@@ -15,7 +15,7 @@ You can use the following procedures to disable or enable a System Center Config
 
 ### To disable a Configuration Manager connector
 
-1.  In the [!INCLUDE[smcons](../../Token/smcons_md.md)], click **Administration**.
+1.  In the [!INCLUDE[smcons](../../includes/smcons_md.md)], click **Administration**.
 
 2.  In the **Administration** pane, expand **Administration**, and then click **Connectors**.
 
@@ -28,7 +28,7 @@ You can use the following procedures to disable or enable a System Center Config
 
 ### To enable a Configuration Manager connector
 
-1.  In the [!INCLUDE[smcons](../../Token/smcons_md.md)], click **Administration**.
+1.  In the [!INCLUDE[smcons](../../includes/smcons_md.md)], click **Administration**.
 
 2.  In the **Administration** pane, expand **Administration**, and then click **Connectors**.
 
@@ -38,7 +38,7 @@ You can use the following procedures to disable or enable a System Center Config
 
 ### To validate the status change of a Configuration Manager connector
 
-1.  After you disable or enable the connector, wait 30 seconds. Then, in the [!INCLUDE[smcons](../../Token/smcons_md.md)], click **Administration**, and then click **Connectors**.
+1.  After you disable or enable the connector, wait 30 seconds. Then, in the [!INCLUDE[smcons](../../includes/smcons_md.md)], click **Administration**, and then click **Connectors**.
 
 2.  In the **Connectors** pane, locate the connector for which you have changed status, and verify the value in the **Enabled** column.
 

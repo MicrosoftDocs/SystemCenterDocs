@@ -11,7 +11,7 @@ ms.topic: article
 ms.assetid: fcdb6644-66e0-4a50-a4e0-5f23e2c3b152
 ---
 # Uninstall Agent from Windows-based Computers
-Use one of the following procedures to uninstall an [!INCLUDE[om12long](../../Token/om12long_md.md)] agent from an agent\-managed computer.
+Use one of the following procedures to uninstall an [!INCLUDE[om12long](../../includes/om12long_md.md)] agent from an agent\-managed computer.
 
 ## <a name="bkmk_TouninstalltheagentbyusingtheOperationsconsole"></a>To uninstall the agent by using the Operations console
 

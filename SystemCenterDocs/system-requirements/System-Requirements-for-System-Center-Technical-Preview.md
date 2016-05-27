@@ -9,7 +9,7 @@ ms.topic: get-started-article
 ms.assetid: 38a4c1f7-e088-4ab9-b250-674dde7387fc
 ---
 # System Requirements for System Center Technical Preview
-Use this information to evaluate if your environment is ready to support an installation of [!INCLUDE[sc_threshold_1](../Token/sc_threshold_1_md.md)]
+Use this information to evaluate if your environment is ready to support an installation of [!INCLUDE[sc_threshold_1](../includes/sc_threshold_1_md.md)]
 
 The topics below specify minimum and recommended hardware requirements along with compatibility  for, server and client operating systems, SQL Server, Web console, PowerShell, and the .NET Framework.
 

@@ -8,16 +8,16 @@ ms.topic: article
 ms.assetid: aa482e44-bd66-4346-92cc-a16ec0ded0b1
 ---
 # Configuring Run As accounts in VMM
-In [!INCLUDE[vmm12sp1_long](../../Token/vmm12sp1_long_md.md)], the credentials that a user enters for any process can be provided by a Run As account. A Run As account is a container for a set of stored credentials.
+In [!INCLUDE[vmm12sp1_long](../../includes/vmm12sp1_long_md.md)], the credentials that a user enters for any process can be provided by a Run As account. A Run As account is a container for a set of stored credentials.
 
 Only administrators and delegated administrators can create and manage Run As accounts. Read\-only administrators can see the account names associated with Run As accounts that are in the scope of their user role.
 
-The same restrictions on creating, managing, and viewing Run As accounts are in effect in both the [!INCLUDE[vmm12short](../../Token/vmm12short_md.md)] console and the [!INCLUDE[vmm12short](../../Token/vmm12short_md.md)] command shell. Delegated administrators and self\-service users can only get objects that are in the scope of their user role and can only perform the actions that their user role allows.
+The same restrictions on creating, managing, and viewing Run As accounts are in effect in both the [!INCLUDE[vmm12short](../../includes/vmm12short_md.md)] console and the [!INCLUDE[vmm12short](../../includes/vmm12short_md.md)] command shell. Delegated administrators and self\-service users can only get objects that are in the scope of their user role and can only perform the actions that their user role allows.
 
-## Security for Run As accounts in [!INCLUDE[vmm12short](../../Token/vmm12short_md.md)]
-[!INCLUDE[vmm12short](../../Token/vmm12short_md.md)] uses the Windows Data Protection API \(DPAPI\) to provide operating system level data protection services during storage and retrieval of the Run As account credentials. DPAPI is a password\-based data protection service that uses cryptographic routines \(the strong Triple\-DES algorithm, with strong keys\) to offset the risk posed by password\-based data protection. For more information about DPAPI architecture and security, see [Windows Data Protection](http://msdn.microsoft.com/library/ms995355).
+## Security for Run As accounts in [!INCLUDE[vmm12short](../../includes/vmm12short_md.md)]
+[!INCLUDE[vmm12short](../../includes/vmm12short_md.md)] uses the Windows Data Protection API \(DPAPI\) to provide operating system level data protection services during storage and retrieval of the Run As account credentials. DPAPI is a password\-based data protection service that uses cryptographic routines \(the strong Triple\-DES algorithm, with strong keys\) to offset the risk posed by password\-based data protection. For more information about DPAPI architecture and security, see [Windows Data Protection](http://msdn.microsoft.com/library/ms995355).
 
-During the installation of a [!INCLUDE[vmm12short](../../Token/vmm12short_md.md)] management server, you can configure [!INCLUDE[vmm12short](../../Token/vmm12short_md.md)] to use Distributed Key Management to store encryption keys in Active Directory Domain Services \(AD DS\). For more information, see [Configuring Distributed Key Management in VMM](../Deploy/Configuring-Distributed-Key-Management-in-VMM.md).
+During the installation of a [!INCLUDE[vmm12short](../../includes/vmm12short_md.md)] management server, you can configure [!INCLUDE[vmm12short](../../includes/vmm12short_md.md)] to use Distributed Key Management to store encryption keys in Active Directory Domain Services \(AD DS\). For more information, see [Configuring Distributed Key Management in VMM](../Deploy/Configuring-Distributed-Key-Management-in-VMM.md).
 
 ## In this section
 Use the procedures in this section to perform the following tasks.

@@ -11,14 +11,14 @@ ms.topic: article
 ms.assetid: edb5786f-8032-4705-8b17-8ae50f7edf17
 ---
 # How to Configure Notification Channels
-You can use the following procedures to configure notification channels and validate the configuration. Notification channels are the method by which notification messages are sent to users. You use the **Configure E\-Mail Notification Channel** dialog box to configure and enable email notifications that [!INCLUDE[smshort](../../Token/smshort_md.md)] sends to a Simple Mail Transfer Protocol \(SMTP\) server.
+You can use the following procedures to configure notification channels and validate the configuration. Notification channels are the method by which notification messages are sent to users. You use the **Configure E\-Mail Notification Channel** dialog box to configure and enable email notifications that [!INCLUDE[smshort](../../includes/smshort_md.md)] sends to a Simple Mail Transfer Protocol \(SMTP\) server.
 
 > [!NOTE]
-> In this release of [!INCLUDE[smshort](../../Token/smshort_md.md)], only email notification is supported.
+> In this release of [!INCLUDE[smshort](../../includes/smshort_md.md)], only email notification is supported.
 
 ### To configure email notifications
 
-1.  In the [!INCLUDE[smcons](../../Token/smcons_md.md)], click **Administration**.
+1.  In the [!INCLUDE[smcons](../../includes/smcons_md.md)], click **Administration**.
 
 2.  In the **Administration** pane, expand **Notifications**, and then click **Channels**.
 
@@ -36,7 +36,7 @@ You can use the following procedures to configure notification channels and vali
 
 9. In the **Return e\-mail address** box, type the email address of the service account that is used during setup. For example, type **smadmin@woodgrove.com**.
 
-10. In the **Retry primary after** box, type or select the number of seconds that you want [!INCLUDE[smshort](../../Token/smshort_md.md)] to wait before it tries to resend outgoing email notifications. For example, select **25**.
+10. In the **Retry primary after** box, type or select the number of seconds that you want [!INCLUDE[smshort](../../includes/smshort_md.md)] to wait before it tries to resend outgoing email notifications. For example, select **25**.
 
 11. Click **OK** to close the dialog box.
 
@@ -50,8 +50,8 @@ You can use the following procedures to configure notification channels and vali
 
 ![](Image/PSSymbol.gif)You can use a Windows PowerShell command to complete these tasks, as follows:
 
--   For information about how to use Windows PowerShell to set the properties of an email notification channel in [!INCLUDE[smshort](../../Token/smshort_md.md)], see [Set\-SCSMChannel](http://go.microsoft.com/fwlink/p/?LinkId=225375).
+-   For information about how to use Windows PowerShell to set the properties of an email notification channel in [!INCLUDE[smshort](../../includes/smshort_md.md)], see [Set\-SCSMChannel](http://go.microsoft.com/fwlink/p/?LinkId=225375).
 
--   For information about how to use Windows PowerShell to retrieve the Email Notification channels that are defined in [!INCLUDE[smshort](../../Token/smshort_md.md)], see [Get\-SCSMChannel](http://go.microsoft.com/fwlink/p/?LinkId=225319).
+-   For information about how to use Windows PowerShell to retrieve the Email Notification channels that are defined in [!INCLUDE[smshort](../../includes/smshort_md.md)], see [Get\-SCSMChannel](http://go.microsoft.com/fwlink/p/?LinkId=225319).
 
 

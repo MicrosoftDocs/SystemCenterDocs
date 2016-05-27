@@ -11,7 +11,7 @@ ms.topic: article
 ms.assetid: e7c94f0d-67f1-4c79-8bb0-b9b7fe72c236
 ---
 # Overview: creating hosts or host clusters from bare metal with VMM
-The procedures in this section describe how to use [!INCLUDE[vmm12sp1_long](../../Token/vmm12sp1_long_md.md)] to discover physical computers \(bare\-metal computers\) on the network, automatically install one of the operating systems listed in this topic, and provision the computers into managed Hyper\-V hosts or host clusters.
+The procedures in this section describe how to use [!INCLUDE[vmm12sp1_long](../../includes/vmm12sp1_long_md.md)] to discover physical computers \(bare\-metal computers\) on the network, automatically install one of the operating systems listed in this topic, and provision the computers into managed Hyper\-V hosts or host clusters.
 
 ## Video overview of host provisioning
 View the video overview here: [Quickly create multiple Hyper-V hosts in Virtual Machine Manager](http://channel9.msdn.com/blogs/System-Center-Help-Videos/Quickly-create-multiple-Hyper-V-hosts-in-Virtual-Machine-Manager)
@@ -45,9 +45,9 @@ The following sequences describes the workflow and deployment process for provis
 
     This step is not required, but it is strongly recommended in an environment where you have multiple DNS servers, where DNS replication may take some time.
 
-3.  Prepare the PXE server environment, and add the PXE server to [!INCLUDE[vmm12short](../../Token/vmm12short_md.md)] management, as described in [Prerequisites: creating hosts or host clusters from bare metal with VMM](Prerequisites--creating-hosts-or-host-clusters-from-bare-metal-with-VMM.md) and [How to add a PXE server to VMM](How-to-add-a-PXE-server-to-VMM.md).
+3.  Prepare the PXE server environment, and add the PXE server to [!INCLUDE[vmm12short](../../includes/vmm12short_md.md)] management, as described in [Prerequisites: creating hosts or host clusters from bare metal with VMM](Prerequisites--creating-hosts-or-host-clusters-from-bare-metal-with-VMM.md) and [How to add a PXE server to VMM](How-to-add-a-PXE-server-to-VMM.md).
 
-4.  Add the required resources to the [!INCLUDE[vmm12short](../../Token/vmm12short_md.md)] library.
+4.  Add the required resources to the [!INCLUDE[vmm12short](../../includes/vmm12short_md.md)] library.
 
     These resources include a generalized virtual hard disk with an appropriate operating system \(as listed in [Prerequisites: creating hosts or host clusters from bare metal with VMM](Prerequisites--creating-hosts-or-host-clusters-from-bare-metal-with-VMM.md)\) that will be used as the base image, and optional driver files to add to the operating system during installation.
 
@@ -69,7 +69,7 @@ The following sequences describes the workflow and deployment process for provis
     |-----------------------------------------------------------|-----------------------------------------------------------------------------|
     |Use the wizard to:<br /><br />-   Discover the physical computers.<br />-   Configure settings such as the host group and the physical computer profile to use.<br />-   Configure custom deployment settings.<br />-   Start deploying the operating system and Hyper\-V.<br /><br />For more information, see [How to deploy Hyper-V hosts from bare metal in VMM](How-to-deploy-Hyper-V-hosts-from-bare-metal-in-VMM.md).|Use the wizard to:<br /><br />-   Discover the physical computers.<br />-   Configure settings such as the host group and the physical computer profile to use.<br />-   Configure custom deployment settings.<br />-   Start deploying the host cluster.<br /><br />For more information, see [How to deploy a host cluster from bare metal in VMM](How-to-deploy-a-host-cluster-from-bare-metal-in-VMM.md).|
 
-2.  During the deployment process \(host or host cluster\), the [!INCLUDE[vmm12short](../../Token/vmm12short_md.md)] management server restarts the physical computers.
+2.  During the deployment process \(host or host cluster\), the [!INCLUDE[vmm12short](../../includes/vmm12short_md.md)] management server restarts the physical computers.
 
     The management servers restarts the computers by issuing “Power Off” and “Power On” commands to the Baseboard Management Controller \(BMC\) using out\-of\-band management. When the physical computers restart, the PXE server responds to the boot requests from the physical computers.
 
@@ -89,14 +89,14 @@ The following sequences describes the workflow and deployment process for provis
 
     |Hyper\-V hosts|Hyper\-V host clusters|
     |------------------|--------------------------|
-    |Hyper\-V role.|-   Hyper\-V role.<br />-   Failover cluster feature.<br />-   Multipath I\/O \(MPIO\) feature.<br /><br />After the [!INCLUDE[vmm12short](../../Token/vmm12short_md.md)] management server configures the cluster nodes, it creates the cluster.|
+    |Hyper\-V role.|-   Hyper\-V role.<br />-   Failover cluster feature.<br />-   Multipath I\/O \(MPIO\) feature.<br /><br />After the [!INCLUDE[vmm12short](../../includes/vmm12short_md.md)] management server configures the cluster nodes, it creates the cluster.|
 
-5.  The [!INCLUDE[vmm12short](../../Token/vmm12short_md.md)] management server runs any post\-deployment scripts, restarting the computers as specified by the scripts.
+5.  The [!INCLUDE[vmm12short](../../includes/vmm12short_md.md)] management server runs any post\-deployment scripts, restarting the computers as specified by the scripts.
 
-6.  At the end of the deployment process, the [!INCLUDE[vmm12short](../../Token/vmm12short_md.md)] management server restarts the computer or computers.
+6.  At the end of the deployment process, the [!INCLUDE[vmm12short](../../includes/vmm12short_md.md)] management server restarts the computer or computers.
 
 ## <a name="BKMK_example"></a>Example naming overview
-The example names in this section are intended to demonstrate the concepts used when provisioning bare\-metal computers in [!INCLUDE[vmm12short](../../Token/vmm12short_md.md)].
+The example names in this section are intended to demonstrate the concepts used when provisioning bare\-metal computers in [!INCLUDE[vmm12short](../../includes/vmm12short_md.md)].
 
 The following table summarizes the example names that could be used in this scenario. Some of these names are also used in examples in procedures in this section.
 

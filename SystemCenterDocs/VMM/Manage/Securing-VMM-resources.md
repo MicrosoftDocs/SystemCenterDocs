@@ -8,7 +8,7 @@ ms.topic: article
 ms.assetid: ac30d975-458d-41c9-b606-de33ac36832a
 ---
 # Securing VMM resources
-The following topics provide information to help you configure security for [!INCLUDE[vmm12sp1_long](../../Token/vmm12sp1_long_md.md)].
+The following topics provide information to help you configure security for [!INCLUDE[vmm12sp1_long](../../includes/vmm12sp1_long_md.md)].
 
 -   [Configuring Run As accounts in VMM](Configuring-Run-As-accounts-in-VMM.md)
 

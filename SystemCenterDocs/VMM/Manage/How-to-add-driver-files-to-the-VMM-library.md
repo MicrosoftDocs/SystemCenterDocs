@@ -11,16 +11,16 @@ ms.topic: article
 ms.assetid: e934fc89-0578-4994-b63b-c2582b63eef5
 ---
 # How to add driver files to the VMM library
-You can use the following procedures to add driver files to the library in [!INCLUDE[vmm12sp1_long](../../Token/vmm12sp1_long_md.md)], and to assign tags to the drivers. After you add driver files to the [!INCLUDE[vmm12short](../../Token/vmm12short_md.md)] library, when you configure a physical computer profile, you can specify the driver files. Then [!INCLUDE[vmm12short](../../Token/vmm12short_md.md)] can install the specified drivers when it installs the operating system on a physical computer.
+You can use the following procedures to add driver files to the library in [!INCLUDE[vmm12sp1_long](../../includes/vmm12sp1_long_md.md)], and to assign tags to the drivers. After you add driver files to the [!INCLUDE[vmm12short](../../includes/vmm12short_md.md)] library, when you configure a physical computer profile, you can specify the driver files. Then [!INCLUDE[vmm12short](../../includes/vmm12short_md.md)] can install the specified drivers when it installs the operating system on a physical computer.
 
-In the physical computer profile, you can select to filter the drivers by tags, or you can select to filter drivers with matching Plug and Play \(PnP\) IDs on the physical computer. If you select to filter the drivers by tags, [!INCLUDE[vmm12short](../../Token/vmm12short_md.md)] determines the drivers to apply by matching the tags that you assign to the drivers in the library to the tags that you assign in the profile. If you select to filter drivers with matching PnP IDs, you do not have to complete the “To assign custom tags to the driver files” procedure in this topic.
+In the physical computer profile, you can select to filter the drivers by tags, or you can select to filter drivers with matching Plug and Play \(PnP\) IDs on the physical computer. If you select to filter the drivers by tags, [!INCLUDE[vmm12short](../../includes/vmm12short_md.md)] determines the drivers to apply by matching the tags that you assign to the drivers in the library to the tags that you assign in the profile. If you select to filter drivers with matching PnP IDs, you do not have to complete the “To assign custom tags to the driver files” procedure in this topic.
 
 > [!NOTE]
 > These procedures are optional.
 
 **Account requirements** To add driver files to the library, you must be a member of the Administrator user role, or a member of the Delegated Administrator user role where the management scope includes the library server where the library share is located.
 
-### To add driver files to the [!INCLUDE[vmm12short](../../Token/vmm12short_md.md)] library
+### To add driver files to the [!INCLUDE[vmm12short](../../includes/vmm12short_md.md)] library
 
 1.  Locate a driver package that you want to add to the library.
 
@@ -31,9 +31,9 @@ In the physical computer profile, you can select to filter the drivers by tags, 
     For example, create a folder that is named **Drivers** in the library share, and then copy the driver package for a network adapter driver \(in its own folder\) to the **Drivers** folder.
 
     > [!IMPORTANT]
-    > We strongly recommend that you create a separate folder for each driver package, and that you do not mix resources in the driver folders. If you include other library resources such as .iso images, .vhd files or scripts with an .inf file name extension in the same folder, the [!INCLUDE[vmm12short](../../Token/vmm12short_md.md)] library server will not discover those resources. Also, when you delete an .inf driver package from the library, [!INCLUDE[vmm12short](../../Token/vmm12short_md.md)] deletes the entire folder where the driver .inf file resides.
+    > We strongly recommend that you create a separate folder for each driver package, and that you do not mix resources in the driver folders. If you include other library resources such as .iso images, .vhd files or scripts with an .inf file name extension in the same folder, the [!INCLUDE[vmm12short](../../includes/vmm12short_md.md)] library server will not discover those resources. Also, when you delete an .inf driver package from the library, [!INCLUDE[vmm12short](../../includes/vmm12short_md.md)] deletes the entire folder where the driver .inf file resides.
 
-3.  In the [!INCLUDE[vmm12short](../../Token/vmm12short_md.md)] console, open the **Library** workspace.
+3.  In the [!INCLUDE[vmm12short](../../includes/vmm12short_md.md)] console, open the **Library** workspace.
 
 4.  In the **Library** pane, expand **Library Servers**, expand the library server where the share is located, right\-click the share, and then click **Refresh**.
 

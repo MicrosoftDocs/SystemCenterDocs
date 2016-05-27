@@ -21,7 +21,7 @@ The Service Manager Administrator configures release management settings by usin
 
 ### To configure release management settings
 
-1.  In the [!INCLUDE[smcons](../../Token/smcons_md.md)], click **Administration**.
+1.  In the [!INCLUDE[smcons](../../includes/smcons_md.md)], click **Administration**.
 
 2.  In the **Administration** pane, expand **Administration**, and then click **Settings**.
 
@@ -46,7 +46,7 @@ You can configure notifications for release records by completing the following 
 
 ### To configure a notification for updated release records
 
-1.  In the [!INCLUDE[smcons](../../Token/smcons_md.md)], click **Administration**.
+1.  In the [!INCLUDE[smcons](../../includes/smcons_md.md)], click **Administration**.
 
 2.  In the **Administration** pane, expand **Administration**, expand **Workflows**, and then click **Configuration**.
 

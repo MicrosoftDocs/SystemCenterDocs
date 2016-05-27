@@ -11,7 +11,7 @@ ms.topic: article
 ms.assetid: 4190285b-64f7-44a9-95f4-f8ed816b7724
 ---
 # Starting a Runbook
-You can start a runbook in [!INCLUDE[sma_1](../../Token/sma_1_md.md)] using one of the following three methods.
+You can start a runbook in [!INCLUDE[sma_1](../../includes/sma_1_md.md)] using one of the following three methods.
 
 -   [Management Portal](Starting-a-Runbook.md#Portal)
 
@@ -168,7 +168,7 @@ Smith
 ```
 
 ### <a name="Credentials"></a>Credentials
-If the parameter is data type \[PSCredential\], then you can provide the name of a [!INCLUDE[sma_1](../../Token/sma_1_md.md)] credential asset. The runbook will retrieve the [credential asset](http://aka.ms/runbookauthor/assets/credentials) with the name that you specify.
+If the parameter is data type \[PSCredential\], then you can provide the name of a [!INCLUDE[sma_1](../../includes/sma_1_md.md)] credential asset. The runbook will retrieve the [credential asset](http://aka.ms/runbookauthor/assets/credentials) with the name that you specify.
 
 Consider the following test runbook that accepts a parameter called *credential*.
 

@@ -8,7 +8,7 @@ ms.topic: article
 ms.assetid: a515169d-50f3-4b3f-add4-9dd7354e6208
 ---
 # How to create a host group structure in VMM
-You can use the following procedures to create a host group structure in [!INCLUDE[vmm12sp1_long](../../Token/vmm12sp1_long_md.md)] that aligns to your organizational needs.
+You can use the following procedures to create a host group structure in [!INCLUDE[vmm12sp1_long](../../includes/vmm12sp1_long_md.md)] that aligns to your organizational needs.
 
 ### To create a host group structure
 

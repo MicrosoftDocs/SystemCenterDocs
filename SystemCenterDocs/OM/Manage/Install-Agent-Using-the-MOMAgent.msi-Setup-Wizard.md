@@ -11,7 +11,7 @@ ms.topic: article
 ms.assetid: ee7b443a-5105-4303-97d3-8018a7e74af4
 ---
 # Install Agent Using the MOMAgent.msi Setup Wizard
-Use the following procedure to deploy the [!INCLUDE[om12long](../../Token/om12long_md.md)] agent on computers running Windows by using the MOMAgent.msi setup wizard. For a list of the supported operating system versions, see [Supported Configurations](http://go.microsoft.com/fwlink/p/?LinkID=223642).
+Use the following procedure to deploy the [!INCLUDE[om12long](../../includes/om12long_md.md)] agent on computers running Windows by using the MOMAgent.msi setup wizard. For a list of the supported operating system versions, see [Supported Configurations](http://go.microsoft.com/fwlink/p/?LinkID=223642).
 
 Before you use the Setup Wizard, ensure the following conditions are met:
 

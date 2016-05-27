@@ -11,7 +11,7 @@ ms.topic: article
 ms.assetid: 96394295-bf03-4089-83d2-f039110f0b82
 ---
 # Managing Hyper-V hosts and host clusters with VMM
-This section describes how to use [!INCLUDE[vmm12sp1_long](../../Token/vmm12sp1_long_md.md)] to add, provision, and manage Hyper\-V hosts and host clusters. It includes the following sections and topics:
+This section describes how to use [!INCLUDE[vmm12sp1_long](../../includes/vmm12sp1_long_md.md)] to add, provision, and manage Hyper\-V hosts and host clusters. It includes the following sections and topics:
 
 -   [Adding Windows servers as Hyper-V hosts or host clusters in VMM](Adding-Windows-servers-as-Hyper-V-hosts-or-host-clusters-in-VMM.md)
 

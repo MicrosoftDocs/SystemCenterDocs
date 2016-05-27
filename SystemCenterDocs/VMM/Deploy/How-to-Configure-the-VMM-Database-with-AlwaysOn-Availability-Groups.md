@@ -11,7 +11,7 @@ ms.topic: article
 ms.assetid: e2c3d79d-2dc9-4a4e-a27d-1ecae7e2ce53
 ---
 # How to Configure the VMM Database with AlwaysOn Availability Groups
-In [!INCLUDE[sc_threshold_1](../../Token/sc_threshold_1_md.md)], you can take advantage of AlwaysOn Availability Groups in Microsoft SQL Server 2012 or Microsoft SQL Server 2014 to ensure high availability of the VMM database. However, be sure to review the recommendations for Availability Groups in the “SQL Server and database” section of [Preparing your environment for System Center 2016 - Virtual Machine Manager](Preparing-your-environment-for-System-Center-2016---Virtual-Machine-Manager.md).
+In [!INCLUDE[sc_threshold_1](../../includes/sc_threshold_1_md.md)], you can take advantage of AlwaysOn Availability Groups in Microsoft SQL Server 2012 or Microsoft SQL Server 2014 to ensure high availability of the VMM database. However, be sure to review the recommendations for Availability Groups in the “SQL Server and database” section of [Preparing your environment for System Center 2016 - Virtual Machine Manager](Preparing-your-environment-for-System-Center-2016---Virtual-Machine-Manager.md).
 
 If you have not configured Availability Groups during the initial configuration, you can use the following procedure to perform that configuration.
 

@@ -11,7 +11,7 @@ ms.topic: article
 ms.assetid: cabe44ea-905d-42f0-ab25-5d21a7af5875
 ---
 # How to convert a host&#39;s virtual switch to a logical switch in VMM
-If a host that you're managing with [!INCLUDE[vmm12sp1_long](../../Token/vmm12sp1_long_md.md)] has a standard virtual switch configuration, you can convert the configuration to use a logical switch.
+If a host that you're managing with [!INCLUDE[vmm12sp1_long](../../includes/vmm12sp1_long_md.md)] has a standard virtual switch configuration, you can convert the configuration to use a logical switch.
 
 Logical switches \(and the port profiles inside them\) act as templates or containers for the switch settings and capabilities that you want to use. Instead of configuring switch settings individually for each network adapter, you can specify the settings and capabilities in a logical switch, and then use the logical switch to apply those settings consistently across network adapters on multiple hosts.
 
@@ -39,13 +39,13 @@ To prepare for converting to a logical switch, review the settings in the follow
 
 4.  Close the **NIC Teaming** dialog box.
 
-5.  Still on the host, in Hyper\-V Manager \(not [!INCLUDE[vmm12short](../../Token/vmm12short_md.md)]\), right\-click the host and then click **Virtual Switch Manager**.
+5.  Still on the host, in Hyper\-V Manager \(not [!INCLUDE[vmm12short](../../includes/vmm12short_md.md)]\), right\-click the host and then click **Virtual Switch Manager**.
 
 6.  In the **Virtual Switch Manager** dialog box, select the virtual switch, and in the results pane, see whether **Enable single\-root I\/O virtualization \(SR\-IOV\)** is selected. Record this information.
 
 7.  Close the **Virtual Switch Manager** dialog box, and then close Hyper\-V Manager.
 
-8.  Start the [!INCLUDE[vmm12short](../../Token/vmm12short_md.md)] console, and then open the **Fabric** workspace.
+8.  Start the [!INCLUDE[vmm12short](../../includes/vmm12short_md.md)] console, and then open the **Fabric** workspace.
 
 9. In the **Fabric** pane, expand **Servers** > **All Hosts**.
 
@@ -100,7 +100,7 @@ After you use the preceding procedure to confirm the settings in the logical swi
 
 #### To convert a host from using a standard virtual switch to using a logical switch
 
-1.  In [!INCLUDE[vmm12short](../../Token/vmm12short_md.md)], open the **Fabric** workspace.
+1.  In [!INCLUDE[vmm12short](../../includes/vmm12short_md.md)], open the **Fabric** workspace.
 
 2.  In the **Fabric** pane, expand **Servers** > **All Hosts**.
 

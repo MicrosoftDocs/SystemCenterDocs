@@ -15,7 +15,7 @@ Before you can import data from a comma\-separated value \(CSV\) file, you have 
 
 ### To import configuration items from a CSV file
 
-1.  In the [!INCLUDE[smcons](../../Token/smcons_md.md)], click **Administration**.
+1.  In the [!INCLUDE[smcons](../../includes/smcons_md.md)], click **Administration**.
 
 2.  In the **Administration** pane, expand **Administration**, and then click **Connectors**.
 
@@ -35,7 +35,7 @@ Before you can import data from a comma\-separated value \(CSV\) file, you have 
 
 ### To validate the import of configuration items from a CSV file
 
-1.  In the [!INCLUDE[smcons](../../Token/smcons_md.md)], click **Configuration Items**.
+1.  In the [!INCLUDE[smcons](../../includes/smcons_md.md)], click **Configuration Items**.
 
 2.  In the **Configuration Items** pane, expand **Configuration Items**, expand **Computers**, and then click **All Windows Computers**.
 

@@ -8,7 +8,7 @@ ms.topic: article
 ms.assetid: 4ed5fceb-d013-4376-a8ae-694c659f3e07
 ---
 # How to configure availability sets in VMM for virtual machines on a host cluster
-If you deploy virtual machines on a host cluster, you can use [!INCLUDE[vmm12sp1_long](../../Token/vmm12sp1_long_md.md)] to configure availability sets for the virtual machines. When you place virtual machines in an availability set, VMM will attempt to keep those virtual machines on separate hosts and avoid placing them together on the same host whenever possible. This helps to improve continuity of service.
+If you deploy virtual machines on a host cluster, you can use [!INCLUDE[vmm12sp1_long](../../includes/vmm12sp1_long_md.md)] to configure availability sets for the virtual machines. When you place virtual machines in an availability set, VMM will attempt to keep those virtual machines on separate hosts and avoid placing them together on the same host whenever possible. This helps to improve continuity of service.
 
 You can also configure availability sets in a service template, to specify how virtual machines that are created with that template should be placed on hosts. For more information, see [How to configure the properties of a service template](How-to-configure-the-properties-of-a-service-template.md).
 

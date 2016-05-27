@@ -8,7 +8,7 @@ ms.topic: article
 ms.assetid: 7ea7a41f-a294-43a8-a768-f11180ebebd6
 ---
 # How to create a hardware profile
-You can use the following procedure to create a hardware profile in [!INCLUDE[vmm12sp1_long](../../Token/vmm12sp1_long_md.md)]. A hardware profile specifies the hardware settings that you want the virtual machine to use when the virtual machine is created and deployed.
+You can use the following procedure to create a hardware profile in [!INCLUDE[vmm12sp1_long](../../includes/vmm12sp1_long_md.md)]. A hardware profile specifies the hardware settings that you want the virtual machine to use when the virtual machine is created and deployed.
 
 ### To create a hardware profile
 

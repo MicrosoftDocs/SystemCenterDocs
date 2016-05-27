@@ -15,7 +15,7 @@ You create a calendar item to define work days, work hours, and holidays in Serv
 
 ### To create a calendar item
 
-1.  In the [!INCLUDE[smcons](../../Token/smcons_md.md)], click **Administration**.
+1.  In the [!INCLUDE[smcons](../../includes/smcons_md.md)], click **Administration**.
 
 2.  In the **Administration** pane, expand **Service Level Management**, and then click **Calendar**.
 

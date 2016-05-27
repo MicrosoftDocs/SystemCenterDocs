@@ -11,11 +11,11 @@ ms.topic: article
 ms.assetid: 5f5ba36d-4fc3-4852-8dbc-9ef05b20a8c0
 ---
 # How to configure storage on a Hyper-V host cluster in VMM
-You can use the following procedure to configure storage on a managed Hyper\-V host cluster in [!INCLUDE[vmm12sp1_long](../../Token/vmm12sp1_long_md.md)]. The storage must already be provisioned before you can configure it for the cluster.
+You can use the following procedure to configure storage on a managed Hyper\-V host cluster in [!INCLUDE[vmm12sp1_long](../../includes/vmm12sp1_long_md.md)]. The storage must already be provisioned before you can configure it for the cluster.
 
 **Account requirements** To complete this procedure, you must be a member of the Administrator user role or a member of the Delegated Administrator user role where the management scope includes the host group where the Hyper\-V host cluster is located.
 
-### To configure storage on a Hyper\-V host cluster in [!INCLUDE[vmm12short](../../Token/vmm12short_md.md)]
+### To configure storage on a Hyper\-V host cluster in [!INCLUDE[vmm12short](../../includes/vmm12short_md.md)]
 
 1.  Make sure you have completed the process of discovering, classifying, and provisioning storage. For more information, see [Prerequisites: creating a host cluster in VMM from existing Windows servers](Prerequisites--creating-a-host-cluster-in-VMM-from-existing-Windows-servers.md). As described in that topic,make sure you have allocated either storage pools or logical units to the host group \(or parent host group\) of the host cluster.
 
@@ -29,7 +29,7 @@ You can use the following procedure to configure storage on a managed Hyper\-V h
 
     -   **Available Storage**: for adding available storage, converting available storage to shared storage \(CSV\), or removing available storage.
 
-    -   **Shared Volumes**: for adding cluster shared volumes \(CSVs\), converting CSVs to available storage, or removing CSVs. The cluster must run at least [!INCLUDE[win8_server_2](../../Token/win8_server_2_md.md)] to support CSVs.
+    -   **Shared Volumes**: for adding cluster shared volumes \(CSVs\), converting CSVs to available storage, or removing CSVs. The cluster must run at least [!INCLUDE[win8_server_2](../../includes/win8_server_2_md.md)] to support CSVs.
 
 6.  Configure storage for the host cluster, using the notes in the following table:
 

@@ -8,7 +8,7 @@ ms.topic: article
 ms.assetid: 41b13d22-f1b3-4691-978d-d279653963ec
 ---
 # How to add an infrastructure server to VMM
-Use the following procedure to add an infrastructure server to [!INCLUDE[vmm12sp1_long](../../Token/vmm12sp1_long_md.md)].
+Use the following procedure to add an infrastructure server to [!INCLUDE[vmm12sp1_long](../../includes/vmm12sp1_long_md.md)].
 
 ### To add an infrastructure server
 

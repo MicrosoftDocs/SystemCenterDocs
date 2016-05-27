@@ -8,13 +8,13 @@ ms.topic: article
 ms.assetid: 0b4e7540-3db5-4f79-8776-2571ff99e8c9
 ---
 # Managing Scale-Out File Servers with VMM
-[!INCLUDE[vmm12sp1_long](../../Token/vmm12sp1_long_md.md)] supports both the Shared Storage Spaces \(released in [!INCLUDE[win8_server_2](../../Token/win8_server_2_md.md)]\) and Storage Spaces Direct \([!INCLUDE[winthreshold_server_2](../../Token/winthreshold_server_2_md.md)]\) types of Scale\-Out File Server. For more information about these technologies, see:
+[!INCLUDE[vmm12sp1_long](../../includes/vmm12sp1_long_md.md)] supports both the Shared Storage Spaces \(released in [!INCLUDE[win8_server_2](../../includes/win8_server_2_md.md)]\) and Storage Spaces Direct \([!INCLUDE[winthreshold_server_2](../../includes/winthreshold_server_2_md.md)]\) types of Scale\-Out File Server. For more information about these technologies, see:
 
 -   [Storage Spaces Overview](https://technet.microsoft.com/library/hh831739.aspx)
 
 -   [Storage Spaces Direct in Windows Server 2016 Technical Preview](https://technet.microsoft.com/library/mt126109.aspx)
 
-This section describes how to use [!INCLUDE[vmm12short](../../Token/vmm12short_md.md)] to provision and manage Scale\-Out File Servers. It includes the following sections and topics:
+This section describes how to use [!INCLUDE[vmm12short](../../includes/vmm12short_md.md)] to provision and manage Scale\-Out File Servers. It includes the following sections and topics:
 
 -   [Creating a Scale-Out File Server in VMM from existing Windows servers](Creating-a-Scale-Out-File-Server-in-VMM-from-existing-Windows-servers.md)
 

@@ -11,7 +11,7 @@ ms.topic: article
 ms.assetid: 80d9a925-0688-44bf-b1bd-60e79baa63a1
 ---
 # Managing network resources with VMM
-This section describes how to use [!INCLUDE[vmm12sp1_long](../../Token/vmm12sp1_long_md.md)] to configure networks for virtual machines. It includes the following sections and topics:
+This section describes how to use [!INCLUDE[vmm12sp1_long](../../includes/vmm12sp1_long_md.md)] to configure networks for virtual machines. It includes the following sections and topics:
 
 -   [Configuring logical networks, VM networks, and logical switches in VMM](Configuring-logical-networks,-VM-networks,-and-logical-switches-in-VMM.md)
 

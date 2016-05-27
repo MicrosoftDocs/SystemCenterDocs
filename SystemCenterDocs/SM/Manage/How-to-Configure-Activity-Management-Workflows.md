@@ -15,15 +15,15 @@ Use the following procedures to automatically assign all unassigned manual activ
 
 Before you can complete the steps in this procedure, you have to create the following templates:
 
--   **Set \<named user\> as the Activity Implementer**: [!INCLUDE[crdefault](../../Token/crdefault_md.md)] [How to Create a Manual Activity Template](How-to-Create-a-Manual-Activity-Template.md).
+-   **Set \<named user\> as the Activity Implementer**: [!INCLUDE[crdefault](../../includes/crdefault_md.md)] [How to Create a Manual Activity Template](How-to-Create-a-Manual-Activity-Template.md).
 
--   **New Activity Assigned Received Template**: [!INCLUDE[crdefault](../../Token/crdefault_md.md)] [How to Create Notification Templates](How-to-Create-Notification-Templates.md).
+-   **New Activity Assigned Received Template**: [!INCLUDE[crdefault](../../includes/crdefault_md.md)] [How to Create Notification Templates](How-to-Create-Notification-Templates.md).
 
 The new workflow you are about to create applies the **Set \<named user\> as the Activity Implementer** template, which assigns the named user all the activities that do not have a designated activity implementer. The **New Activity Assigned Received Template** sends notification to a user if the email notification channel is configured.
 
 ### To create an activity management workflow
 
-1.  In the [!INCLUDE[smcons](../../Token/smcons_md.md)], click **Administration**.
+1.  In the [!INCLUDE[smcons](../../includes/smcons_md.md)], click **Administration**.
 
 2.  In the **Administration** pane, expand **Administration**, expand **Workflows**, and then click **Configuration**.
 

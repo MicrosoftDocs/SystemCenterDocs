@@ -15,14 +15,14 @@ Runbooks in Service Manger are used to automate procedures. The following sectio
 
 ## About Runbooks in Service Manager
 
-To automate processes in System Center, Orchestrator uses runbooks to automate procedures. Runbooks are visual representations of the procedures. The value that runbooks have is that they help ensure that [!INCLUDE[orchshort](../../Token/orchshort_md.md)] automation is driven and tracked from Service Manager and that [!INCLUDE[smshort](../../Token/smshort_md.md)] interactions with other System Center products and non\-Microsoft systems are much easier to implement.
+To automate processes in System Center, Orchestrator uses runbooks to automate procedures. Runbooks are visual representations of the procedures. The value that runbooks have is that they help ensure that [!INCLUDE[orchshort](../../includes/orchshort_md.md)] automation is driven and tracked from Service Manager and that [!INCLUDE[smshort](../../includes/smshort_md.md)] interactions with other System Center products and non\-Microsoft systems are much easier to implement.
 
-Additionally, the [!INCLUDE[orchshort](../../Token/orchshort_md.md)] workflow authoring interface is available for your custom [!INCLUDE[smshort](../../Token/smshort_md.md)] scenarios. Runbooks are imported into [!INCLUDE[smshort](../../Token/smshort_md.md)] using the [!INCLUDE[orchshort](../../Token/orchshort_md.md)] connector. After the connector is synchronized, imported runbooks appear in the **Library** workspace under the **Runbooks** node in the [!INCLUDE[smcons](../../Token/smcons_md.md)], where you can view them and also create runbook automation activity templates.
+Additionally, the [!INCLUDE[orchshort](../../includes/orchshort_md.md)] workflow authoring interface is available for your custom [!INCLUDE[smshort](../../includes/smshort_md.md)] scenarios. Runbooks are imported into [!INCLUDE[smshort](../../includes/smshort_md.md)] using the [!INCLUDE[orchshort](../../includes/orchshort_md.md)] connector. After the connector is synchronized, imported runbooks appear in the **Library** workspace under the **Runbooks** node in the [!INCLUDE[smcons](../../includes/smcons_md.md)], where you can view them and also create runbook automation activity templates.
 
 ## About Orchestrator
-System Center - Orchestrator is an automation platform for orchestrating and integrating IT tools to drive down the cost of datacenter operations, while improving the reliability of IT processes. [!INCLUDE[orchshort](../../Token/orchshort_md.md)] enables IT organizations to automate best practices, such as those that are found in the Microsoft Operations Framework \(MOF\) and Information Technology Infrastructure Library \(ITIL\). This is achieved through workflow processes that coordinate Microsoft and other management tools to automate incident response, change and compliance, and service\-life\-cycle management processes.
+System Center - Orchestrator is an automation platform for orchestrating and integrating IT tools to drive down the cost of datacenter operations, while improving the reliability of IT processes. [!INCLUDE[orchshort](../../includes/orchshort_md.md)] enables IT organizations to automate best practices, such as those that are found in the Microsoft Operations Framework \(MOF\) and Information Technology Infrastructure Library \(ITIL\). This is achieved through workflow processes that coordinate Microsoft and other management tools to automate incident response, change and compliance, and service\-life\-cycle management processes.
 
-Through its workflow designer, [!INCLUDE[orchshort](../../Token/orchshort_md.md)] automatically shares data and initiates tasks in System Center components, including [!INCLUDE[om12short](../../Token/om12short_md.md)], [!INCLUDE[smshort](../../Token/smshort_md.md)], Virtual Machine Manager, Configuration Manager, Active Directory Domain Services \(AD DS\), and non\-Microsoft tools. [!INCLUDE[orchshort](../../Token/orchshort_md.md)] workflow automates IT infrastructure tasks, while  [!INCLUDE[smshort](../../Token/smshort_md.md)] workflow provides automation of human workflow. The combined offering ensures repeatable, consistent results by removing the latency associated with manual coordination service delivery. System Center and [!INCLUDE[orchshort](../../Token/orchshort_md.md)] enable integration, efficiency, and business alignment of datacenter IT services by:
+Through its workflow designer, [!INCLUDE[orchshort](../../includes/orchshort_md.md)] automatically shares data and initiates tasks in System Center components, including [!INCLUDE[om12short](../../includes/om12short_md.md)], [!INCLUDE[smshort](../../includes/smshort_md.md)], Virtual Machine Manager, Configuration Manager, Active Directory Domain Services \(AD DS\), and non\-Microsoft tools. [!INCLUDE[orchshort](../../includes/orchshort_md.md)] workflow automates IT infrastructure tasks, while  [!INCLUDE[smshort](../../includes/smshort_md.md)] workflow provides automation of human workflow. The combined offering ensures repeatable, consistent results by removing the latency associated with manual coordination service delivery. System Center and [!INCLUDE[orchshort](../../includes/orchshort_md.md)] enable integration, efficiency, and business alignment of datacenter IT services by:
 
 -   Automating processes and enforcing best practices for incident, change, and service\-life\-cycle management.
 
@@ -35,16 +35,16 @@ Through its workflow designer, [!INCLUDE[orchshort](../../Token/orchshort_md.md)
 
 ## How to Create a Runbook Automation Activity Template
 
-After you import runbooks into Service Manager using the Orchestrator connector from Orchestrator, you can create a runbook automation activity template to map parameters in [!INCLUDE[orchshort](../../Token/orchshort_md.md)] to corresponding parameters in [!INCLUDE[smshort](../../Token/smshort_md.md)].
+After you import runbooks into Service Manager using the Orchestrator connector from Orchestrator, you can create a runbook automation activity template to map parameters in [!INCLUDE[orchshort](../../includes/orchshort_md.md)] to corresponding parameters in [!INCLUDE[smshort](../../includes/smshort_md.md)].
 
-As an example, you can implement a new request offering using an [!INCLUDE[orchshort](../../Token/orchshort_md.md)] runbook to automate it. Then, you can go to the Runbooks view in the Library workspace, select a runbook, and create a runbook automation activity template. You can go to the templates view and verify that the template is created. You can then add the [!INCLUDE[orchshort](../../Token/orchshort_md.md)] activity template to a service request template and create the request offering. You then can then map the runbook template to a different runbook with the same inputs and outputs if you find that you need to fix a problem or improve the process.
+As an example, you can implement a new request offering using an [!INCLUDE[orchshort](../../includes/orchshort_md.md)] runbook to automate it. Then, you can go to the Runbooks view in the Library workspace, select a runbook, and create a runbook automation activity template. You can go to the templates view and verify that the template is created. You can then add the [!INCLUDE[orchshort](../../includes/orchshort_md.md)] activity template to a service request template and create the request offering. You then can then map the runbook template to a different runbook with the same inputs and outputs if you find that you need to fix a problem or improve the process.
 
 > [!IMPORTANT]
 > If you have extended root classes such as service request or release record, then you can map runbook activity parameter to extended properties only if the runbook activity template and service request templates are saved in same management pack where the definition extension is located.
 
 ### To create a runbook automation activity template
 
-1.  In the [!INCLUDE[smcons](../../Token/smcons_md.md)], click **Library**.
+1.  In the [!INCLUDE[smcons](../../includes/smcons_md.md)], click **Library**.
 
 2.  In the **Library** pane, click **Runbooks**.
 
@@ -66,20 +66,20 @@ As an example, you can implement a new request offering using an [!INCLUDE[orchs
 
 11. For any parameter, click **Edit Mapping**.
 
-12. Expand **Object**, and then click **Id**. This ID value will be used by the [!INCLUDE[orchshort](../../Token/orchshort_md.md)] runbook to find the particular runbook activity that is being executed. Click **Close**.
+12. Expand **Object**, and then click **Id**. This ID value will be used by the [!INCLUDE[orchshort](../../includes/orchshort_md.md)] runbook to find the particular runbook activity that is being executed. Click **Close**.
 
 13. Click **OK** to close the form and create the template.
 
 
 
 ## How to View a Runbook
-After you import runbooks from Orchestrator into Service Manager, you can open the runbook in the [!INCLUDE[smcons](../../Token/smcons_md.md)] to ensure that it contains the parameters you want to use in an automation activity template in [!INCLUDE[smshort](../../Token/smshort_md.md)].
+After you import runbooks from Orchestrator into Service Manager, you can open the runbook in the [!INCLUDE[smcons](../../includes/smcons_md.md)] to ensure that it contains the parameters you want to use in an automation activity template in [!INCLUDE[smshort](../../includes/smshort_md.md)].
 
 When you view the runbook, you can perform basic actions with the runbook, such as viewing the summary, jobs, instances, and definition of the runbook. You can also start and stop the runbook.
 
 ### To view a runbook
 
-1.  In the [!INCLUDE[smcons](../../Token/smcons_md.md)], select **Library**.
+1.  In the [!INCLUDE[smcons](../../includes/smcons_md.md)], select **Library**.
 
 2.  In the **Library** pane, select **Runbooks**.
 

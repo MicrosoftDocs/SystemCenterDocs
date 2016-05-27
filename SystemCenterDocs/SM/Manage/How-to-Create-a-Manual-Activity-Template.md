@@ -17,7 +17,7 @@ In the following procedure, you will create a manual activity template named "Se
 
 ### To create a manual activity template
 
-1.  In the [!INCLUDE[smcons](../../Token/smcons_md.md)], click **Library**.
+1.  In the [!INCLUDE[smcons](../../includes/smcons_md.md)], click **Library**.
 
 2.  In the **Library** pane, click **Templates**.
 

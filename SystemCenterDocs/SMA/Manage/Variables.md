@@ -11,7 +11,7 @@ ms.topic: article
 ms.assetid: e7e41871-6acf-4531-970f-92e1cb86eefb
 ---
 # Variables
-[!INCLUDE[sma_2](../../Token/sma_2_md.md)] variables are values that are available to all runbooks.  They can be created, modified, and retrieved from the management portal, Windows PowerShell, or from within a runbook. [!INCLUDE[sma_2](../../Token/sma_2_md.md)] variables are useful for the following scenarios:
+[!INCLUDE[sma_2](../../includes/sma_2_md.md)] variables are values that are available to all runbooks.  They can be created, modified, and retrieved from the management portal, Windows PowerShell, or from within a runbook. [!INCLUDE[sma_2](../../includes/sma_2_md.md)] variables are useful for the following scenarios:
 
 -   Share a value between multiple runbooks.
 
@@ -19,7 +19,7 @@ ms.assetid: e7e41871-6acf-4531-970f-92e1cb86eefb
 
 -   Manage a value from the management portal or from the Windows PowerShell command line that is used by runbooks.
 
-[!INCLUDE[sma_2](../../Token/sma_2_md.md)] Variables are persisted so that they continue to be available even if the runbook fails.  This also allows a value to be set by one runbook that is then used by another, or is used by the same runbook the next time that it is run.
+[!INCLUDE[sma_2](../../includes/sma_2_md.md)] Variables are persisted so that they continue to be available even if the runbook fails.  This also allows a value to be set by one runbook that is then used by another, or is used by the same runbook the next time that it is run.
 
 When a variable is created, you must specify its data type from the following list. This is so the management portal can display the appropriate control for the variable value. You can only assign a value of the correct type to a variable.
 
@@ -34,7 +34,7 @@ When a variable is created, you must specify its data type from the following li
 When a variable is created, you can specify that it be stored encrypted.  When a variable is encrypted, it is stored securely in the SMA database, and its value cannot be retrieved from the **Get\-SmaVariable** cmdlet.  The only way that an encrypted value can be retrieved is from the **Get\-AutomationVariable** activity in a runbook.  You can store multiple values of the defined type to a single variable by creating a hashtable.
 
 ## Windows PowerShell Cmdlets
-The cmdlets in the following table are used to create and manage variables with Windows PowerShell in [!INCLUDE[sma_1](../../Token/sma_1_md.md)].
+The cmdlets in the following table are used to create and manage variables with Windows PowerShell in [!INCLUDE[sma_1](../../includes/sma_1_md.md)].
 
 |Cmdlets|Description|
 |-----------|---------------|
@@ -50,7 +50,7 @@ The activities in the following table are used to access variables in a runbook.
 |Set\-AutomationVariable|Sets the value for an existing variable.|
 
 > [!NOTE]
-> You should avoid using variables in the –Name parameter of Get\-AutomationVariable since this can complicate discovering dependencies between runbooks and [!INCLUDE[sma_2](../../Token/sma_2_md.md)] variables.
+> You should avoid using variables in the –Name parameter of Get\-AutomationVariable since this can complicate discovering dependencies between runbooks and [!INCLUDE[sma_2](../../includes/sma_2_md.md)] variables.
 
 ## Creating a New Automation variable
 

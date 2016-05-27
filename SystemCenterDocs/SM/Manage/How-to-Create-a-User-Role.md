@@ -15,7 +15,7 @@ Use the following procedures to create a user role and assign users to that role
 
 ### To create a user role
 
-1.  In the [!INCLUDE[smcons](../../Token/smcons_md.md)], select **Administration**.
+1.  In the [!INCLUDE[smcons](../../includes/smcons_md.md)], select **Administration**.
 
 2.  In the **Administration** pane, expand **Security**, and then select **User Roles**.
 
@@ -42,18 +42,18 @@ Use the following procedures to create a user role and assign users to that role
 
 ### To validate the creation of a user role
 
-1.  In the [!INCLUDE[smcons](../../Token/smcons_md.md)], verify that the newly created user role appears in the middle pane.
+1.  In the [!INCLUDE[smcons](../../includes/smcons_md.md)], verify that the newly created user role appears in the middle pane.
 
-2.  Log on to the [!INCLUDE[smcons](../../Token/smcons_md.md)] as one of the users assigned to the user role. Verify that you cannot access data for which you do not have access rights, as specified in the user role.
+2.  Log on to the [!INCLUDE[smcons](../../includes/smcons_md.md)] as one of the users assigned to the user role. Verify that you cannot access data for which you do not have access rights, as specified in the user role.
 
 ![](Image/PSSymbol.gif)You can use Windows PowerShell commands to complete these and other related tasks, as follows:
 
--   For information about how to use Windows PowerShell to create a new user role in [!INCLUDE[smshort](../../Token/smshort_md.md)], see [New\-SCSMUserRole](http://go.microsoft.com/fwlink/p/?LinkId=225360).
+-   For information about how to use Windows PowerShell to create a new user role in [!INCLUDE[smshort](../../includes/smshort_md.md)], see [New\-SCSMUserRole](http://go.microsoft.com/fwlink/p/?LinkId=225360).
 
--   For information about how to use Windows PowerShell to retrieve user roles that are defined in [!INCLUDE[smshort](../../Token/smshort_md.md)], see [Get\-SCSMUserRole](http://go.microsoft.com/fwlink/p/?LinkId=225343).
+-   For information about how to use Windows PowerShell to retrieve user roles that are defined in [!INCLUDE[smshort](../../includes/smshort_md.md)], see [Get\-SCSMUserRole](http://go.microsoft.com/fwlink/p/?LinkId=225343).
 
--   For information about how to use Windows PowerShell to set the UserRole property for a [!INCLUDE[smshort](../../Token/smshort_md.md)] user, see [Update\-SCSMUserRole](http://go.microsoft.com/fwlink/p/?LinkId=225389).
+-   For information about how to use Windows PowerShell to set the UserRole property for a [!INCLUDE[smshort](../../includes/smshort_md.md)] user, see [Update\-SCSMUserRole](http://go.microsoft.com/fwlink/p/?LinkId=225389).
 
--   For information about how to use Windows PowerShell to remove a user role from [!INCLUDE[smshort](../../Token/smshort_md.md)], see [Remove\-SCSMUserRole](http://go.microsoft.com/fwlink/p/?LinkId=225371).
+-   For information about how to use Windows PowerShell to remove a user role from [!INCLUDE[smshort](../../includes/smshort_md.md)], see [Remove\-SCSMUserRole](http://go.microsoft.com/fwlink/p/?LinkId=225371).
 
 

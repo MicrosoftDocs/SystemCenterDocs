@@ -14,9 +14,9 @@ ms.assetid: d89df5c3-b0b0-44da-9b8f-7e505c305045
 In this procedure, the Reporting server is installed on a stand\-alone server that is hosting the SQL Server database and SQL Server Reporting Services.
 
 > [!WARNING]
-> Although SQL Server Reporting Services is installed on the stand\-alone server, Operations Manager reports are not accessed on this server; instead, they are accessed in the **Reporting** workspace in the Operations console. If you want to access published reports via the web console, you must install the [!INCLUDE[om12short](../../Token/om12short_md.md)] web console on the same computer as [!INCLUDE[om12short](../../Token/om12short_md.md)] Reporting server.
+> Although SQL Server Reporting Services is installed on the stand\-alone server, Operations Manager reports are not accessed on this server; instead, they are accessed in the **Reporting** workspace in the Operations console. If you want to access published reports via the web console, you must install the [!INCLUDE[om12short](../../includes/om12short_md.md)] web console on the same computer as [!INCLUDE[om12short](../../includes/om12short_md.md)] Reporting server.
 
-You must ensure that your server meets the minimum system requirement for [!INCLUDE[om12short](../../Token/om12short_md.md)]. For more information, see [System Requirements for System Center Technical Preview](../../system-requirements/System-Requirements-for-System-Center-Technical-Preview.md).
+You must ensure that your server meets the minimum system requirement for [!INCLUDE[om12short](../../includes/om12short_md.md)]. For more information, see [System Requirements for System Center Technical Preview](../../system-requirements/System-Requirements-for-System-Center-Technical-Preview.md).
 
 ## Installing Operations Manager Reporting
 No other applications that are using SQL Server Reporting Services can be installed on this instance of SQL Server.
@@ -54,7 +54,7 @@ Ensure that SQL Server Reporting Services has been correctly installed and confi
 
 1.  Log on to the computer with an account that has local administrative credentials.
 
-2.  On the [!INCLUDE[om12short](../../Token/om12short_md.md)] installation media, run **Setup.exe**, and then click **Install**.
+2.  On the [!INCLUDE[om12short](../../includes/om12short_md.md)] installation media, run **Setup.exe**, and then click **Install**.
 
 3.  On the **Getting Started**, **Select features to install** page, select the **Reporting server** feature. To read more about each feature and its requirements, click **Expand all**, or expand the buttons next to each feature, and then click **Next**.
 
@@ -84,7 +84,7 @@ Ensure that SQL Server Reporting Services has been correctly installed and confi
 
 2.  Open the Command Prompt window by using the **Run as Administrator** option.
 
-3.  Change the path to where the [!INCLUDE[om12short](../../Token/om12short_md.md)] setup.exe file is located, and run the following command.
+3.  Change the path to where the [!INCLUDE[om12short](../../includes/om12short_md.md)] setup.exe file is located, and run the following command.
 
     > [!NOTE]
     > The \/ManagementServer parameter is only required when you are installing reporting on a server that is not a management server.

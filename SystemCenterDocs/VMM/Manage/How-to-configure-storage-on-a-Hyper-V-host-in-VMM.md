@@ -9,7 +9,7 @@ ms.topic: article
 ms.assetid: fd77880c-3a53-4c7d-980f-ef392909bff9
 ---
 # How to configure storage on a Hyper-V host in VMM
-You can use the following procedures to configure storage on a Hyper\-V host that is already under management in [!INCLUDE[vmm12sp1_long](../../Token/vmm12sp1_long_md.md)]. These procedures all use Hyper\-V host properties to configure the storage for a specific host:
+You can use the following procedures to configure storage on a Hyper\-V host that is already under management in [!INCLUDE[vmm12sp1_long](../../includes/vmm12sp1_long_md.md)]. These procedures all use Hyper\-V host properties to configure the storage for a specific host:
 
 -   [Creating a logical unit and assigning it to a host](How-to-configure-storage-on-a-Hyper-V-host-in-VMM.md#BKMK_create_assign)
 
@@ -85,12 +85,12 @@ You can use the following procedures to configure storage on a Hyper\-V host tha
 
 9. When you are finished, click **OK**.
 
-    [!INCLUDE[vmm12short](../../Token/vmm12short_md.md)] registers the storage logical unit to the host and mounts the storage disk. To view the associated job information, open the **Jobs** workspace.
+    [!INCLUDE[vmm12short](../../includes/vmm12short_md.md)] registers the storage logical unit to the host and mounts the storage disk. To view the associated job information, open the **Jobs** workspace.
 
 10. To verify that the logical unit was assigned, view the information on the **Storage** tab in the *Host Name* **Properties** dialog box. The newly assigned logical unit appears under **Disk**. Click the new disk to view the disk details.
 
     > [!TIP]
-    > If the **Array** field is populated in the disk details, this indicates that the storage array is under [!INCLUDE[vmm12short](../../Token/vmm12short_md.md)] management.
+    > If the **Array** field is populated in the disk details, this indicates that the storage array is under [!INCLUDE[vmm12short](../../includes/vmm12short_md.md)] management.
 
 11. To perform further configuration of the disk, open Disk Management on the host. \(To open Disk Management, click **Start**, type **diskmgmt.msc** in the search box, and then press ENTER.\)
 
@@ -115,7 +115,7 @@ You can use the following procedures to configure storage on a Hyper\-V host tha
 7.  Configure the format and mount point options, and then click **OK** to assign the logical unit to the host. For more information about these options and how to verify that the logical unit was assigned, see steps 7 through 11 of [Creating a logical unit and assigning it to a host](How-to-configure-storage-on-a-Hyper-V-host-in-VMM.md#BKMK_create_assign), earlier in this topic.
 
     > [!NOTE]
-    > If the logical unit has existing data, and you do not use the **Force Format** option, the [!INCLUDE[vmm12short](../../Token/vmm12short_md.md)] job to assign the logical unit will complete with a warning. [!INCLUDE[vmm12short](../../Token/vmm12short_md.md)] assigns the logical unit to the host. You can format the disk later.
+    > If the logical unit has existing data, and you do not use the **Force Format** option, the [!INCLUDE[vmm12short](../../includes/vmm12short_md.md)] job to assign the logical unit will complete with a warning. [!INCLUDE[vmm12short](../../includes/vmm12short_md.md)] assigns the logical unit to the host. You can format the disk later.
 
 ## <a name="BKMK_remove"></a>Removing a logical unit from a host
 
@@ -132,7 +132,7 @@ You can use the following procedures to configure storage on a Hyper\-V host tha
 5.  Under **Disk**, click the logical unit that you want to remove, and then on the toolbar, click **Remove**.
 
     > [!NOTE]
-    > For the Remove button to be enabled, the logical unit must be under [!INCLUDE[vmm12short](../../Token/vmm12short_md.md)] management.
+    > For the Remove button to be enabled, the logical unit must be under [!INCLUDE[vmm12short](../../includes/vmm12short_md.md)] management.
 
 6.  Review the warning message, and then click **Yes** to remove the logical unit.
 
@@ -141,7 +141,7 @@ You can use the following procedures to configure storage on a Hyper\-V host tha
 
 7.  Click **OK** to commit the changes.
 
-    [!INCLUDE[vmm12short](../../Token/vmm12short_md.md)] unregisters the logical unit from the host. To view the associated job information, open the **Jobs** workspace.
+    [!INCLUDE[vmm12short](../../includes/vmm12short_md.md)] unregisters the logical unit from the host. To view the associated job information, open the **Jobs** workspace.
 
 ## <a name="BKMK_iSCSI"></a>Creating an iSCSI session on a host
 
@@ -179,7 +179,7 @@ You can use the following procedures to configure storage on a Hyper\-V host tha
 
 9. To create additional iSCSI sessions to the array, click **Create session**. In the **Create New iSCSI Session** dialog box, do either of the following:
 
-    1.  Click **Create** to have [!INCLUDE[vmm12short](../../Token/vmm12short_md.md)] automatically determine the connection information. [!INCLUDE[vmm12short](../../Token/vmm12short_md.md)] creates the iSCSI session by matching the host initiator IP address subnets with the iSCSI target portal IP subnets.
+    1.  Click **Create** to have [!INCLUDE[vmm12short](../../includes/vmm12short_md.md)] automatically determine the connection information. [!INCLUDE[vmm12short](../../includes/vmm12short_md.md)] creates the iSCSI session by matching the host initiator IP address subnets with the iSCSI target portal IP subnets.
 
     2.  Click **Use advanced settings** to manually select the target portal, target name and the initiator IP address, and then click **Create**.
 

@@ -15,9 +15,9 @@ You can use the following steps in Service Manager to register Configuration Man
 
 ### To register Configuration Manager with the data warehouse
 
-1.  By using an account that is a member of the [!INCLUDE[smshort](../../Token/smshort_md.md)] and data warehouse management administrators group, log on to the computer that hosts the [!INCLUDE[smcons](../../Token/smcons_md.md)].
+1.  By using an account that is a member of the [!INCLUDE[smshort](../../includes/smshort_md.md)] and data warehouse management administrators group, log on to the computer that hosts the [!INCLUDE[smcons](../../includes/smcons_md.md)].
 
-2.  In the [!INCLUDE[smcons](../../Token/smcons_md.md)], select **Data Warehouse**.
+2.  In the [!INCLUDE[smcons](../../includes/smcons_md.md)], select **Data Warehouse**.
 
 3.  In the **Administration** pane, expand **Data Warehouse**, and then select **Data Sources**.
 
@@ -38,7 +38,7 @@ You can use the following steps in Service Manager to register Configuration Man
 9. On the **Credentials** page, you can accept the default entry in the **Run as account** list, and then click **Next**, or you can enter credentials from a user or group of your choice.
 
     > [!IMPORTANT]
-    > The account that you specify will be assigned administrative credentials on the [!INCLUDE[smshort](../../Token/smshort_md.md)] management server and granted Read permission on the [!INCLUDE[smshort](../../Token/smshort_md.md)] database. You can specify different credentials from other [!INCLUDE[smshort](../../Token/smshort_md.md)] management groups when you are registering with the data warehouse.
+    > The account that you specify will be assigned administrative credentials on the [!INCLUDE[smshort](../../includes/smshort_md.md)] management server and granted Read permission on the [!INCLUDE[smshort](../../includes/smshort_md.md)] database. You can specify different credentials from other [!INCLUDE[smshort](../../includes/smshort_md.md)] management groups when you are registering with the data warehouse.
 
 10. On the **Data Selection** page, choose the domains to extract, and then click **Next**. For example, select **System Center Configuration Manager Connector Configuration** and **System Center Configuration Manager Power Management Connector**.
 

@@ -11,7 +11,7 @@ ms.topic: article
 ms.assetid: 24cd18c8-4aea-4f22-971b-756d9fa45a8e
 ---
 # Tracking a Runbook Job in Service Management Automation
-When you start a runbook in [!INCLUDE[sma_1](../../Token/sma_1_md.md)], a job is created. A job is a single execution instance of a runbook. A single runbook may have multiple jobs, each with their own set of values for the runbook’s parameters. 
+When you start a runbook in [!INCLUDE[sma_1](../../includes/sma_1_md.md)], a job is created. A job is a single execution instance of a runbook. A single runbook may have multiple jobs, each with their own set of values for the runbook’s parameters. 
 
 If the RunbookWorker property of the runbook is populated, then that Worker server will service the job. If the Worker server is not available, then the job will fail with an error. If the RunbookWorker property of the runbook is not populated, then SMA will randomly select an available Worker server to service the request.
 
@@ -42,7 +42,7 @@ The following table describes the different statuses that are possible for a job
 ## <a name="Portal"></a>Viewing Job Status using the Management Portal
 
 ### Automation Dashboard
-The Automation Dashboard shows a summary of all of the runbooks in the [!INCLUDE[sma_1](../../Token/sma_1_md.md)] environment. The summary graph shows the number of total jobs for all runbooks that entered each status over a given number of days or hours. You can select the time range on the top right corner of the graph. The time axis of the chart will change according to the type of time range that you select. You can choose whether to display the line for a particular status by clicking on it at the top of screen.
+The Automation Dashboard shows a summary of all of the runbooks in the [!INCLUDE[sma_1](../../includes/sma_1_md.md)] environment. The summary graph shows the number of total jobs for all runbooks that entered each status over a given number of days or hours. You can select the time range on the top right corner of the graph. The time axis of the chart will change according to the type of time range that you select. You can choose whether to display the line for a particular status by clicking on it at the top of screen.
 
 You can use the following steps to display the Automation Dashboard.
 

@@ -11,24 +11,24 @@ ms.topic: article
 ms.assetid: 4b1a2528-00f0-4d42-b045-635f4ba888c1
 ---
 # VMM networking reference: adding a top-of-rack (TOR) switch in VMM
-With [!INCLUDE[sc_threshold_1](../../Token/sc_threshold_1_md.md)], you can add a top\-of\-rack \(TOR\) switch as a resource in [!INCLUDE[vmm12sp1_long](../../Token/vmm12sp1_long_md.md)]. This helps you keep the settings in the TOR switch synchronized with the settings that you see in [!INCLUDE[vmm12short](../../Token/vmm12short_md.md)].
+With [!INCLUDE[sc_threshold_1](../../includes/sc_threshold_1_md.md)], you can add a top\-of\-rack \(TOR\) switch as a resource in [!INCLUDE[vmm12sp1_long](../../includes/vmm12sp1_long_md.md)]. This helps you keep the settings in the TOR switch synchronized with the settings that you see in [!INCLUDE[vmm12short](../../includes/vmm12short_md.md)].
 
-To do this, you must first ensure that you have the necessary provider software on the [!INCLUDE[vmm12short](../../Token/vmm12short_md.md)] management server. If your switch is based on the Common Information Model \(CIM\) network switch profile, you can use the provider that is included in [!INCLUDE[vmm12short](../../Token/vmm12short_md.md)] in [!INCLUDE[sc_threshold_1](../../Token/sc_threshold_1_md.md)]. Otherwise, you must obtain the provider software that is provided by the switch vendor and install it on the [!INCLUDE[vmm12short](../../Token/vmm12short_md.md)] management server. Then you can add the TOR switch to [!INCLUDE[vmm12short](../../Token/vmm12short_md.md)].
+To do this, you must first ensure that you have the necessary provider software on the [!INCLUDE[vmm12short](../../includes/vmm12short_md.md)] management server. If your switch is based on the Common Information Model \(CIM\) network switch profile, you can use the provider that is included in [!INCLUDE[vmm12short](../../includes/vmm12short_md.md)] in [!INCLUDE[sc_threshold_1](../../includes/sc_threshold_1_md.md)]. Otherwise, you must obtain the provider software that is provided by the switch vendor and install it on the [!INCLUDE[vmm12short](../../includes/vmm12short_md.md)] management server. Then you can add the TOR switch to [!INCLUDE[vmm12short](../../includes/vmm12short_md.md)].
 
 ## Prerequisites
-If you want to add a TOR switch to your configuration in [!INCLUDE[vmm12short](../../Token/vmm12short_md.md)], you must first perform the following actions:
+If you want to add a TOR switch to your configuration in [!INCLUDE[vmm12short](../../includes/vmm12short_md.md)], you must first perform the following actions:
 
-1.  Ensure that you have the necessary provider software on the [!INCLUDE[vmm12short](../../Token/vmm12short_md.md)] management server. If your switch is based on the Common Information Model \(CIM\) network switch profile, you can use the provider that is included in [!INCLUDE[vmm12short](../../Token/vmm12short_md.md)] in [!INCLUDE[sc_threshold_1](../../Token/sc_threshold_1_md.md)]. Otherwise, you must obtain the provider software that is provided by the switch vendor and install it on the [!INCLUDE[vmm12short](../../Token/vmm12short_md.md)] management server. After you install the provider software, restart the System Center Virtual Machine Manager service.
+1.  Ensure that you have the necessary provider software on the [!INCLUDE[vmm12short](../../includes/vmm12short_md.md)] management server. If your switch is based on the Common Information Model \(CIM\) network switch profile, you can use the provider that is included in [!INCLUDE[vmm12short](../../includes/vmm12short_md.md)] in [!INCLUDE[sc_threshold_1](../../includes/sc_threshold_1_md.md)]. Otherwise, you must obtain the provider software that is provided by the switch vendor and install it on the [!INCLUDE[vmm12short](../../includes/vmm12short_md.md)] management server. After you install the provider software, restart the System Center Virtual Machine Manager service.
 
-    If you have installed a high availability [!INCLUDE[vmm12short](../../Token/vmm12short_md.md)] management server on a cluster, ensure that the provider is installed on all nodes of the cluster.
+    If you have installed a high availability [!INCLUDE[vmm12short](../../includes/vmm12short_md.md)] management server on a cluster, ensure that the provider is installed on all nodes of the cluster.
 
     For more information about installing provider software, refer to the manufacturer’s documentation.
 
 2.  For your TOR switch, make sure that you know the manufacturer and model, the name of an account that has configuration permissions, the connection string, and the host groups to include. If certificates are used for the provider software, make sure you know how to view the thumbprint information for those certificates.
 
-#### To add a top\-of\-rack \(TOR\) switch in [!INCLUDE[vmm12short](../../Token/vmm12short_md.md)]
+#### To add a top\-of\-rack \(TOR\) switch in [!INCLUDE[vmm12short](../../includes/vmm12short_md.md)]
 
-1.  If you installed provider software as part of fulfilling the “Prerequisites” that are listed before this procedure, confirm that the provider is listed in [!INCLUDE[vmm12short](../../Token/vmm12short_md.md)]. To do this, open the **Settings** workspace, and in the **Settings** pane, click **Configuration Providers**. In the **Configuration Providers** pane, review the list of installed provider software.
+1.  If you installed provider software as part of fulfilling the “Prerequisites” that are listed before this procedure, confirm that the provider is listed in [!INCLUDE[vmm12short](../../includes/vmm12short_md.md)]. To do this, open the **Settings** workspace, and in the **Settings** pane, click **Configuration Providers**. In the **Configuration Providers** pane, review the list of installed provider software.
 
 2.  Open the **Fabric** workspace.
 
@@ -46,7 +46,7 @@ If you want to add a TOR switch to your configuration in [!INCLUDE[vmm12short](.
 
 7.  On the **Manufacturer and Model** page, make selections as follows:
 
-    -   To use the provider software that is included in [!INCLUDE[vmm12short](../../Token/vmm12short_md.md)], in the **Manufacturer** list, click **Microsoft**, and in the **Model** list, click **Microsoft Network Switch Profile Switch**.
+    -   To use the provider software that is included in [!INCLUDE[vmm12short](../../includes/vmm12short_md.md)], in the **Manufacturer** list, click **Microsoft**, and in the **Model** list, click **Microsoft Network Switch Profile Switch**.
 
     -   To use provider software that is provided by the switch vendor, click the appropriate **Manufacturer** and **Model** for your switch.
 
@@ -61,7 +61,7 @@ If you want to add a TOR switch to your configuration in [!INCLUDE[vmm12short](.
     **https:\/\/TORswitch1.contoso.com:5986**
 
     > [!IMPORTANT]
-    > If you are not using the provider software that is included in [!INCLUDE[vmm12short](../../Token/vmm12short_md.md)], when you enter the connection string, use the syntax that is defined by the manufacturer of your TOR switch. For more information about the required syntax, refer to the manufacturer’s documentation.
+    > If you are not using the provider software that is included in [!INCLUDE[vmm12short](../../includes/vmm12short_md.md)], when you enter the connection string, use the syntax that is defined by the manufacturer of your TOR switch. For more information about the required syntax, refer to the manufacturer’s documentation.
 
 10. On the **Certificates** page, if certificates are listed, verify that the thumbprints of those certificates match the thumbprints of the certificates that are installed on the TOR switch. Then select the box to confirm that the certificates can be imported to the trusted certificate store. Click **Next**.
 

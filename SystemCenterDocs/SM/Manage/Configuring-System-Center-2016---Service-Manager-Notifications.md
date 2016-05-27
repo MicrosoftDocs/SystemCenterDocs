@@ -11,13 +11,13 @@ ms.topic: article
 ms.assetid: a74d2677-96ac-44ac-8f45-12d2e24b0275
 ---
 # Configuring System Center 2016 - Service Manager Notifications
-You may want to be notified by email when incidents or other changes in Service Manager. By using [!INCLUDE[smshort](../../Token/smshort_md.md)], you can make sure that notifications are generated for almost any kind of change. For example, you can configure notifications to be sent to a messaging analyst when changes occur to a work item or configuration item that pertains to email problems.
+You may want to be notified by email when incidents or other changes in Service Manager. By using [!INCLUDE[smshort](../../includes/smshort_md.md)], you can make sure that notifications are generated for almost any kind of change. For example, you can configure notifications to be sent to a messaging analyst when changes occur to a work item or configuration item that pertains to email problems.
 
 Before notifications are sent, first configure each notification channel, such as the settings for Simple Mail Transfer Protocol \(SMTP\). Notification messages are sent based on a notification template. Therefore, you must create a notification template. You can then use the Notification Subscription Wizard to subscribe a group of users to a notification that will be sent whenever the changes that you specify occur. Finally, you can verify that a notification is sent by manually generating the change.
 
 You must complete these steps in the order shown. For example, before you can configure a notification, the SMTP channel must be enabled.
 
 > [!NOTE]
-> You must add the [!INCLUDE[smshort](../../Token/smshort_md.md)] workflow account to the [!INCLUDE[smshort](../../Token/smshort_md.md)] Administrators user role for notifications to function properly.
+> You must add the [!INCLUDE[smshort](../../includes/smshort_md.md)] workflow account to the [!INCLUDE[smshort](../../includes/smshort_md.md)] Administrators user role for notifications to function properly.
 
 

@@ -11,13 +11,13 @@ ms.topic: article
 ms.assetid: 4bc6b71e-39d5-4053-972a-61675154bd2c
 ---
 # How to view compliance information for a physical network adapter on a host in VMM
-Compliance information lets you see whether the settings on physical network adapters on a host are consistent with the configuration in [!INCLUDE[vmm12sp1_long](../../Token/vmm12sp1_long_md.md)]. For example, you can see whether all the IP subnets and VLANs that are included in a network site in a logical network are assigned to a physical network adapter.
+Compliance information lets you see whether the settings on physical network adapters on a host are consistent with the configuration in [!INCLUDE[vmm12sp1_long](../../includes/vmm12sp1_long_md.md)]. For example, you can see whether all the IP subnets and VLANs that are included in a network site in a logical network are assigned to a physical network adapter.
 
 If you want more detail about compliance information for logical switches, see [How to bring host network adapters into compliance with logical switch settings in VMM](How-to-bring-host-network-adapters-into-compliance-with-logical-switch-settings-in-VMM.md) instead.
 
 ### To view compliance information for a physical network adapter
 
-1.  In the [!INCLUDE[vmm12short](../../Token/vmm12short_md.md)] console, open the **Fabric** workspace.
+1.  In the [!INCLUDE[vmm12short](../../includes/vmm12short_md.md)] console, open the **Fabric** workspace.
 
 2.  In the **Fabric** pane, expand **Networking**, and then click **Logical Networks**.
 

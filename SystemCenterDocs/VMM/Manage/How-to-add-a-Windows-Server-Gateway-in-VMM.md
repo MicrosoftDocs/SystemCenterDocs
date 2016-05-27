@@ -11,13 +11,13 @@ ms.topic: article
 ms.assetid: 26b83ffb-bb6a-4153-915c-5730fd122a2a
 ---
 # How to add a Windows Server Gateway in VMM
-In [!INCLUDE[vmm12sp1_long](../../Token/vmm12sp1_long_md.md)] in [!INCLUDE[sc_threshold_1](../../Token/sc_threshold_1_md.md)], you can connect a VM network to other networks by using a gateway.
+In [!INCLUDE[vmm12sp1_long](../../includes/vmm12sp1_long_md.md)] in [!INCLUDE[sc_threshold_1](../../includes/sc_threshold_1_md.md)], you can connect a VM network to other networks by using a gateway.
 
 > [!IMPORTANT]
 > This topic is for Windows Server Gateways only. For information about non\-Windows gateways, see [How to add a non-Windows gateway in VMM](How-to-add-a-non-Windows-gateway-in-VMM.md).
 
 ## <a name="BKMK_gateway"></a>Gateway configuration and options
-A gateway running [!INCLUDE[winthreshold_server_2](../../Token/winthreshold_server_2_md.md)] is also called a Windows Server Gateway. The configuration uses a host cluster that runs [!INCLUDE[winthreshold_server_2](../../Token/winthreshold_server_2_md.md)], and the gateway itself is virtual\-machine based. The gateway consists of a pair of virtual machines that work with the host cluster to help provide high availability and good performance for the gateway. For information about the hardware requirements for a Windows Server Gateway, see[Windows Server Gateway Hardware and Configuration Requirements](http://technet.microsoft.com/library/dn423897.aspx).
+A gateway running [!INCLUDE[winthreshold_server_2](../../includes/winthreshold_server_2_md.md)] is also called a Windows Server Gateway. The configuration uses a host cluster that runs [!INCLUDE[winthreshold_server_2](../../includes/winthreshold_server_2_md.md)], and the gateway itself is virtual\-machine based. The gateway consists of a pair of virtual machines that work with the host cluster to help provide high availability and good performance for the gateway. For information about the hardware requirements for a Windows Server Gateway, see[Windows Server Gateway Hardware and Configuration Requirements](http://technet.microsoft.com/library/dn423897.aspx).
 
 You can configure the gateway in a variety of ways, as described in the second half of [Windows Server Gateway](http://technet.microsoft.com/library/dn313101.aspx). One of the main choices that you make when configuring a Windows Server Gateway is whether to make it a forwarding gateway:
 
@@ -38,15 +38,15 @@ For more information about the connectivity settings for VM networks, see [Prere
 
 **Prerequisites for adding a Windows Server gateway**
 
-Before you can add a gateway that runs [!INCLUDE[winthreshold_server_2](../../Token/winthreshold_server_2_md.md)] to your configuration in [!INCLUDE[vmm12short](../../Token/vmm12short_md.md)], you must perform the tasks in this section.
+Before you can add a gateway that runs [!INCLUDE[winthreshold_server_2](../../includes/winthreshold_server_2_md.md)] to your configuration in [!INCLUDE[vmm12short](../../includes/vmm12short_md.md)], you must perform the tasks in this section.
 
 **Preparatory task**: Download the compressed file \(with a .zip extension\) for the Windows Server Gateway from the [Microsoft Download Center](http://download.microsoft.com/download/0/D/1/0D189100-07B7-4CBF-B774-7A3F43960145/Windows%20Server%202012%20R2%20HA%20Gateway.zip). Extract the files contained within the download. These files include a Quick Start Guide, two service templates, and a custom resource folder \(a folder with a .cr extension\) that contains files required for the service templates. You will choose one of the two service templates for your gateway. The template with 2NIC in the filename is designed for a host cluster configured with two network adapters, and the template with 3NIC in the filename is designed for a host cluster configured with three network adapters.
 
-Review the Quick Start Guide, especially the network requirements and the gateway architecture diagram near the beginning of the guide. However, do not try to import a service template into [!INCLUDE[vmm12short](../../Token/vmm12short_md.md)] yet. Instead, proceed with the following tasks, which are also described in the Quick Start Guide.
+Review the Quick Start Guide, especially the network requirements and the gateway architecture diagram near the beginning of the guide. However, do not try to import a service template into [!INCLUDE[vmm12short](../../includes/vmm12short_md.md)] yet. Instead, proceed with the following tasks, which are also described in the Quick Start Guide.
 
-1.  Review your domain structure, and choose the domain location that you will use for the host cluster. This domain will also be the domain for the gateway virtual machines that run on the host cluster. If the gateway will be facing untrusted networks, such as the public Internet, we recommend that you place the host cluster and the [!INCLUDE[vmm12short](../../Token/vmm12short_md.md)] server in two different domains that do not have a trust relationship.
+1.  Review your domain structure, and choose the domain location that you will use for the host cluster. This domain will also be the domain for the gateway virtual machines that run on the host cluster. If the gateway will be facing untrusted networks, such as the public Internet, we recommend that you place the host cluster and the [!INCLUDE[vmm12short](../../includes/vmm12short_md.md)] server in two different domains that do not have a trust relationship.
 
-2.  Ensure that the logical networks \(and the associated network sites\) that will be connected to the gateway have been configured in [!INCLUDE[vmm12short](../../Token/vmm12short_md.md)]. If you want to configure network settings on the host cluster by using a port profile and logical switch, also create those now.
+2.  Ensure that the logical networks \(and the associated network sites\) that will be connected to the gateway have been configured in [!INCLUDE[vmm12short](../../includes/vmm12short_md.md)]. If you want to configure network settings on the host cluster by using a port profile and logical switch, also create those now.
 
     > [!IMPORTANT]
     > Review both the list and the table that follow before creating the logical networks.
@@ -65,7 +65,7 @@ Review the Quick Start Guide, especially the network requirements and the gatewa
     |----------------|-------------------------------|------------|
     |Network Virtualization|The back end network. This is the logical network on which VM networks using network virtualization will be created. On this network, encapsulated packets will be sent to and received from the tenant virtual machines.  This network must be used for network virtualization only.|**One connected network**<br />**Allow new VM networks created on this logical network to use network virtualization**|
     |External|The front end network. This is the network through which your virtual networks can access outside networks.<br /><br />If you will use your gateway for site\-to\-site VPN, this network must have an Internet\-routable IP address space.|**One connected network**<br />**Create a VM network with the same name to allow virtual machines to access this logical network directly**|
-    |Infrastructure|The management network. This is the network that connects the [!INCLUDE[vmm12short](../../Token/vmm12short_md.md)] server with the host cluster and the gateway \(virtual machines\). There must be a domain controller and a DNS server available on this network. You can configure a static IP address pool for this network, or use a DHCP server to provide IP addresses.|**One connected network**<br />**Create a VM network with the same name to allow virtual machines to access this logical network directly**|
+    |Infrastructure|The management network. This is the network that connects the [!INCLUDE[vmm12short](../../includes/vmm12short_md.md)] server with the host cluster and the gateway \(virtual machines\). There must be a domain controller and a DNS server available on this network. You can configure a static IP address pool for this network, or use a DHCP server to provide IP addresses.|**One connected network**<br />**Create a VM network with the same name to allow virtual machines to access this logical network directly**|
 
     After you have finished creating the logical networks, network sites, and IP address pools, review the following:
 
@@ -77,28 +77,28 @@ Review the Quick Start Guide, especially the network requirements and the gatewa
 
         For information about logical switches \(specifically, the **Uplinks** page of the logical switch wizard\), see [How to create a logical switch in VMM](How-to-create-a-logical-switch-in-VMM.md).
 
-3.  Ensure that your [!INCLUDE[vmm12short](../../Token/vmm12short_md.md)] resources include a Scale\-Out File Server. Also ensure that the Scale\-Out File Server contains a share.
+3.  Ensure that your [!INCLUDE[vmm12short](../../includes/vmm12short_md.md)] resources include a Scale\-Out File Server. Also ensure that the Scale\-Out File Server contains a share.
 
     -   For background information about a Scale\-Out File Server, see [Scale-Out File Server for Application Data Overview](http://technet.microsoft.com/library/hh831349.aspx).
 
-    -   If you already have a Scale\-Out File Server in your datacenter, ensure that it has been added to [!INCLUDE[vmm12short](../../Token/vmm12short_md.md)]. For more information, see [How to add an existing Scale-Out File Server to storage in VMM](How-to-add-an-existing-Scale-Out-File-Server-to-storage-in-VMM.md).
+    -   If you already have a Scale\-Out File Server in your datacenter, ensure that it has been added to [!INCLUDE[vmm12short](../../includes/vmm12short_md.md)]. For more information, see [How to add an existing Scale-Out File Server to storage in VMM](How-to-add-an-existing-Scale-Out-File-Server-to-storage-in-VMM.md).
 
-    -   For information about using [!INCLUDE[winthreshold_server_2](../../Token/winthreshold_server_2_md.md)] to deploy a Scale\-Out File Server, see [Deploy Scale-Out File Server](http://technet.microsoft.com/library/hh831359.aspx). For information about adding the Scale\-Out File Server to [!INCLUDE[vmm12short](../../Token/vmm12short_md.md)], see [How to add an existing Scale-Out File Server to storage in VMM](How-to-add-an-existing-Scale-Out-File-Server-to-storage-in-VMM.md).
+    -   For information about using [!INCLUDE[winthreshold_server_2](../../includes/winthreshold_server_2_md.md)] to deploy a Scale\-Out File Server, see [Deploy Scale-Out File Server](http://technet.microsoft.com/library/hh831359.aspx). For information about adding the Scale\-Out File Server to [!INCLUDE[vmm12short](../../includes/vmm12short_md.md)], see [How to add an existing Scale-Out File Server to storage in VMM](How-to-add-an-existing-Scale-Out-File-Server-to-storage-in-VMM.md).
 
-    -   For information about using [!INCLUDE[vmm12short](../../Token/vmm12short_md.md)] to deploy a Scale\-Out File Server, see  [Deploying Hyper-V hosts or host clusters from bare metal with VMM](Deploying-Hyper-V-hosts-or-host-clusters-from-bare-metal-with-VMM.md).
+    -   For information about using [!INCLUDE[vmm12short](../../includes/vmm12short_md.md)] to deploy a Scale\-Out File Server, see  [Deploying Hyper-V hosts or host clusters from bare metal with VMM](Deploying-Hyper-V-hosts-or-host-clusters-from-bare-metal-with-VMM.md).
 
     > [!IMPORTANT]
-    > To confirm that the Scale\-Out File Server has been added to [!INCLUDE[vmm12short](../../Token/vmm12short_md.md)] and the share is being managed in [!INCLUDE[vmm12short](../../Token/vmm12short_md.md)], open the **Fabric** workspace, expand **Storage**, and then click **File Servers**. In the list, find the file server, and confirm that the **Type** is **Scale\-Out File Server** and the **Status** is **OK**. Expand the listing for the Scale\-Out File Server, right\-click the share, and then click **Properties**. Ensure that the **File share managed by Virtual Machine Manager** check box is selected.
+    > To confirm that the Scale\-Out File Server has been added to [!INCLUDE[vmm12short](../../includes/vmm12short_md.md)] and the share is being managed in [!INCLUDE[vmm12short](../../includes/vmm12short_md.md)], open the **Fabric** workspace, expand **Storage**, and then click **File Servers**. In the list, find the file server, and confirm that the **Type** is **Scale\-Out File Server** and the **Status** is **OK**. Expand the listing for the Scale\-Out File Server, right\-click the share, and then click **Properties**. Ensure that the **File share managed by Virtual Machine Manager** check box is selected.
 
 4.  Create three virtual hard disks that will be used in your configuration:
 
-    -   Create a virtual hard disk containing the [!INCLUDE[winthreshold_server_2](../../Token/winthreshold_server_2_md.md)] operating system. Ensure that the virtual hard disk has been generalized by using the Sysprep tool. The virtual hard disk can use the .vhd or .vhdx format. Copy the virtual hard disk into the [!INCLUDE[vmm12short](../../Token/vmm12short_md.md)] library, in the subfolder where you store virtual machine hard disk files. For more information, see[How to Add File-Based Resources to the VMM Library](https://technet.microsoft.com/library/gg610607.aspx).
+    -   Create a virtual hard disk containing the [!INCLUDE[winthreshold_server_2](../../includes/winthreshold_server_2_md.md)] operating system. Ensure that the virtual hard disk has been generalized by using the Sysprep tool. The virtual hard disk can use the .vhd or .vhdx format. Copy the virtual hard disk into the [!INCLUDE[vmm12short](../../includes/vmm12short_md.md)] library, in the subfolder where you store virtual machine hard disk files. For more information, see[How to Add File-Based Resources to the VMM Library](https://technet.microsoft.com/library/gg610607.aspx).
 
-    -   Make two copies of the small blank .vhdx files that are included in the [!INCLUDE[vmm12short](../../Token/vmm12short_md.md)] library. Provide them with names that help identify them as the virtual hard disk files for a Cluster Shared Volume \(CSV\) and a quorum resource. In the [!INCLUDE[vmm12short](../../Token/vmm12short_md.md)] library, create a folder named **Windows Server Gateway**, and then copy the two blank .vhdx files into that folder.
+    -   Make two copies of the small blank .vhdx files that are included in the [!INCLUDE[vmm12short](../../includes/vmm12short_md.md)] library. Provide them with names that help identify them as the virtual hard disk files for a Cluster Shared Volume \(CSV\) and a quorum resource. In the [!INCLUDE[vmm12short](../../includes/vmm12short_md.md)] library, create a folder named **Windows Server Gateway**, and then copy the two blank .vhdx files into that folder.
 
-5.  Navigate to the resources that you downloaded, and locate the folder called **VMClusterSetup.cr**. The .cr filename extension is a standard extension in [!INCLUDE[vmm12short](../../Token/vmm12short_md.md)] that indicates a custom resource folder. Copy the entire folder and its contents into the **Windows Server Gateway** folder that you just created. Confirm that the **VMClusterSetup.cr** folder is a subfolder in the **Windows Server Gateway** folder.
+5.  Navigate to the resources that you downloaded, and locate the folder called **VMClusterSetup.cr**. The .cr filename extension is a standard extension in [!INCLUDE[vmm12short](../../includes/vmm12short_md.md)] that indicates a custom resource folder. Copy the entire folder and its contents into the **Windows Server Gateway** folder that you just created. Confirm that the **VMClusterSetup.cr** folder is a subfolder in the **Windows Server Gateway** folder.
 
-    To confirm that the virtual hard disks and the custom resource folder for the gateway are in the [!INCLUDE[vmm12short](../../Token/vmm12short_md.md)] library, in [!INCLUDE[vmm12short](../../Token/vmm12short_md.md)], open the **Library** workspace, right\-click the library server or library share, click **Refresh**, and then review the items in the list.
+    To confirm that the virtual hard disks and the custom resource folder for the gateway are in the [!INCLUDE[vmm12short](../../includes/vmm12short_md.md)] library, in [!INCLUDE[vmm12short](../../includes/vmm12short_md.md)], open the **Library** workspace, right\-click the library server or library share, click **Refresh**, and then review the items in the list.
 
 6.  Collect the following information:
 
@@ -110,11 +110,11 @@ Review the Quick Start Guide, especially the network requirements and the gatewa
 
     -   The name of the shared folder on the Scale\-Out File Server that you will use with the gateway.
 
-    -   The name of a domain account that has permissions to add computers to the domain in the first item in this list. Also, from this domain account, create a Run As account in [!INCLUDE[vmm12short](../../Token/vmm12short_md.md)], and record the name of the Run As account. For more information, see [How to create a Run As account in VMM](How-to-create-a-Run-As-account-in-VMM.md).
+    -   The name of a domain account that has permissions to add computers to the domain in the first item in this list. Also, from this domain account, create a Run As account in [!INCLUDE[vmm12short](../../includes/vmm12short_md.md)], and record the name of the Run As account. For more information, see [How to create a Run As account in VMM](How-to-create-a-Run-As-account-in-VMM.md).
 
-        Because this account will be used by [!INCLUDE[vmm12short](../../Token/vmm12short_md.md)] to manage the gateway, the service template will add this account to the local **Administrators** group on the virtual machines that together comprise the gateway.
+        Because this account will be used by [!INCLUDE[vmm12short](../../includes/vmm12short_md.md)] to manage the gateway, the service template will add this account to the local **Administrators** group on the virtual machines that together comprise the gateway.
 
-    -   The name of a domain user account. The service template will add this account to the local **Administrators** group on the virtual machines that comprise the gateway, to ensure that administrative access to the virtual machines is always available. Create a Run As account in [!INCLUDE[vmm12short](../../Token/vmm12short_md.md)] from this domain account also.
+    -   The name of a domain user account. The service template will add this account to the local **Administrators** group on the virtual machines that comprise the gateway, to ensure that administrative access to the virtual machines is always available. Create a Run As account in [!INCLUDE[vmm12short](../../includes/vmm12short_md.md)] from this domain account also.
 
     -   Product keys for the operating system on the virtual machines that comprise the gateway. If you have these product keys, have this information available as you configure the gateway.
 
@@ -126,15 +126,15 @@ Review the Quick Start Guide, especially the network requirements and the gatewa
 
     -   The name of the virtual switch to be used on the back end connection. However, ensure that you do not specify this information until you reach the last step of the procedure that follows.
 
-#### To use a server running [!INCLUDE[winthreshold_server_2](../../Token/winthreshold_server_2_md.md)] as a gateway with [!INCLUDE[vmm12short](../../Token/vmm12short_md.md)]
+#### To use a server running [!INCLUDE[winthreshold_server_2](../../includes/winthreshold_server_2_md.md)] as a gateway with [!INCLUDE[vmm12short](../../includes/vmm12short_md.md)]
 
-1.  Open the Quick Start Guide that was included in the file that you downloaded in the preparatory step at the beginning of the Prerequisites. Follow instructions in the Quick Start Guide to import the appropriate service template into the [!INCLUDE[vmm12short](../../Token/vmm12short_md.md)] library. For more information, see [How to import a service template in VMM](How-to-import-a-service-template-in-VMM.md).
+1.  Open the Quick Start Guide that was included in the file that you downloaded in the preparatory step at the beginning of the Prerequisites. Follow instructions in the Quick Start Guide to import the appropriate service template into the [!INCLUDE[vmm12short](../../includes/vmm12short_md.md)] library. For more information, see [How to import a service template in VMM](How-to-import-a-service-template-in-VMM.md).
 
     When you import the template, ensure that you configure references to the following items:
 
     -   The custom resource folder, called **VMClusterSetup.cr**.
 
-    -   The virtual hard disk containing the [!INCLUDE[winthreshold_server_2](../../Token/winthreshold_server_2_md.md)] operating system.
+    -   The virtual hard disk containing the [!INCLUDE[winthreshold_server_2](../../includes/winthreshold_server_2_md.md)] operating system.
 
     -   The blank virtual hard disk that you added to the library for the CSV that the gateway will use.
 
@@ -142,11 +142,11 @@ Review the Quick Start Guide, especially the network requirements and the gatewa
 
     Also follow the instructions in the Quick Start Guide that describe how to customize the service template for your environment.
 
-2.  Create a two\-node host cluster that runs [!INCLUDE[winthreshold_server_2](../../Token/winthreshold_server_2_md.md)] with the Hyper\-V role, and add it to [!INCLUDE[vmm12short](../../Token/vmm12short_md.md)]. As with any cluster, in the network infrastructure that connects the cluster nodes, avoid having single points of failure. Ensure that the host cluster is in an appropriate domain, as described in prerequisite 1. For information about the hardware requirements for the host cluster \(the servers that run Hyper\-V\), see [Windows Server Gateway Hardware and Configuration Requirements](http://technet.microsoft.com/library/dn423897.aspx). When you deploy the host cluster, be sure to run the Validate a Configuration Wizard and confirm that the cluster passes the cluster validation tests.
+2.  Create a two\-node host cluster that runs [!INCLUDE[winthreshold_server_2](../../includes/winthreshold_server_2_md.md)] with the Hyper\-V role, and add it to [!INCLUDE[vmm12short](../../includes/vmm12short_md.md)]. As with any cluster, in the network infrastructure that connects the cluster nodes, avoid having single points of failure. Ensure that the host cluster is in an appropriate domain, as described in prerequisite 1. For information about the hardware requirements for the host cluster \(the servers that run Hyper\-V\), see [Windows Server Gateway Hardware and Configuration Requirements](http://technet.microsoft.com/library/dn423897.aspx). When you deploy the host cluster, be sure to run the Validate a Configuration Wizard and confirm that the cluster passes the cluster validation tests.
 
-    -   For more information about using [!INCLUDE[winthreshold_server_2](../../Token/winthreshold_server_2_md.md)] to deploy a host cluster, see [Deploy a Hyper-V Cluster](http://technet.microsoft.com/library/jj863389.aspx). Then, for more information about adding the host cluster to [!INCLUDE[vmm12short](../../Token/vmm12short_md.md)], see [How to add existing servers or clusters as Hyper-V hosts or host clusters in VMM](How-to-add-existing-servers-or-clusters-as-Hyper-V-hosts-or-host-clusters-in-VMM.md).
+    -   For more information about using [!INCLUDE[winthreshold_server_2](../../includes/winthreshold_server_2_md.md)] to deploy a host cluster, see [Deploy a Hyper-V Cluster](http://technet.microsoft.com/library/jj863389.aspx). Then, for more information about adding the host cluster to [!INCLUDE[vmm12short](../../includes/vmm12short_md.md)], see [How to add existing servers or clusters as Hyper-V hosts or host clusters in VMM](How-to-add-existing-servers-or-clusters-as-Hyper-V-hosts-or-host-clusters-in-VMM.md).
 
-    -   For more information about using [!INCLUDE[vmm12short](../../Token/vmm12short_md.md)] to deploy a host cluster, see  [Deploying Hyper-V hosts or host clusters from bare metal with VMM](Deploying-Hyper-V-hosts-or-host-clusters-from-bare-metal-with-VMM.md).
+    -   For more information about using [!INCLUDE[vmm12short](../../includes/vmm12short_md.md)] to deploy a host cluster, see  [Deploying Hyper-V hosts or host clusters from bare metal with VMM](Deploying-Hyper-V-hosts-or-host-clusters-from-bare-metal-with-VMM.md).
 
 3.  Verify that the host cluster was successfully added by performing the following actions:
 
@@ -176,18 +176,18 @@ Review the Quick Start Guide, especially the network requirements and the gatewa
 
     3.  Repeat the process on the other host.
 
-7.  On the host cluster, deploy the service. To do this, follow the instructions in the Quick Start Guide that was included in the download. The result will be a pair of virtual machines that use a guest cluster internally for high availability, although they do not use the property in [!INCLUDE[vmm12short](../../Token/vmm12short_md.md)] called **Make this virtual machine highly available**. However, the pair of virtual machines together, when deployed on a host cluster, constitute a highly available gateway. The gateway runs [!INCLUDE[winthreshold_server_2](../../Token/winthreshold_server_2_md.md)] and is configured with multiple virtual network adapters and with the necessary role, role services, and features.
+7.  On the host cluster, deploy the service. To do this, follow the instructions in the Quick Start Guide that was included in the download. The result will be a pair of virtual machines that use a guest cluster internally for high availability, although they do not use the property in [!INCLUDE[vmm12short](../../includes/vmm12short_md.md)] called **Make this virtual machine highly available**. However, the pair of virtual machines together, when deployed on a host cluster, constitute a highly available gateway. The gateway runs [!INCLUDE[winthreshold_server_2](../../includes/winthreshold_server_2_md.md)] and is configured with multiple virtual network adapters and with the necessary role, role services, and features.
 
 8.  Perform the following verification tasks to ensure that the service deployment was successful:
 
-    -   Confirm that the backend virtual network adapter on the gateway is not connected \(it should not be connected yet\). In [!INCLUDE[vmm12short](../../Token/vmm12short_md.md)], in the **VMs and Services** workspace, on the **Home** tab, in the **Show** group, click **Services**. Expand **All Hosts** and then click the host group that the host cluster is in. In the **Services** pane, expand the service until you can see the gateway virtual machines, right\-click a gateway virtual machine, click **Properties**, and then in the properties sheet, click the **Hardware Configuration** tab. Under **Network Adapters**, confirm that there are three network adapters, and that one of them is labeled **Not connected**.
+    -   Confirm that the backend virtual network adapter on the gateway is not connected \(it should not be connected yet\). In [!INCLUDE[vmm12short](../../includes/vmm12short_md.md)], in the **VMs and Services** workspace, on the **Home** tab, in the **Show** group, click **Services**. Expand **All Hosts** and then click the host group that the host cluster is in. In the **Services** pane, expand the service until you can see the gateway virtual machines, right\-click a gateway virtual machine, click **Properties**, and then in the properties sheet, click the **Hardware Configuration** tab. Under **Network Adapters**, confirm that there are three network adapters, and that one of them is labeled **Not connected**.
 
     -   Start the new service and confirm that the virtual machines enter the **Running** state.
 
-    -   With the virtual machines running, on the [!INCLUDE[vmm12short](../../Token/vmm12short_md.md)] server, open a command prompt as an administrator, and then type **ping** followed by the name or IP address of the gateway itself. Press Enter and confirm that a response is received from the gateway. If a response is not received, review possible causes, such as DNS settings, firewall settings, and the state of the gateway cluster.
+    -   With the virtual machines running, on the [!INCLUDE[vmm12short](../../includes/vmm12short_md.md)] server, open a command prompt as an administrator, and then type **ping** followed by the name or IP address of the gateway itself. Press Enter and confirm that a response is received from the gateway. If a response is not received, review possible causes, such as DNS settings, firewall settings, and the state of the gateway cluster.
 
     > [!IMPORTANT]
-    > -   On the virtual machines that constitute a gateway, avoid directly specifying VLAN information for the virtual network adapters. The provider software requires this information to be supplied through network sites configured in [!INCLUDE[vmm12short](../../Token/vmm12short_md.md)].
+    > -   On the virtual machines that constitute a gateway, avoid directly specifying VLAN information for the virtual network adapters. The provider software requires this information to be supplied through network sites configured in [!INCLUDE[vmm12short](../../includes/vmm12short_md.md)].
     > -   On the virtual machines that constitute a gateway, if you must disable any integration services \(which are all enabled by default\), be sure that you do not disable the integration service called **Data Exchange**, which is a required service.
 
 9. Open the **Fabric** workspace.
@@ -208,7 +208,7 @@ Review the Quick Start Guide, especially the network requirements and the gatewa
 
 15. On the **Credentials** page, specify the domain account that has permissions to add computers to the domain. This is the account that you specified for **DomainUserRAA** in the service template. To specify this account, click **Browse** and then on the **Select a Run As Account** dialog box, select the account. Then click **Next**.
 
-16. On the **Connection String** page, in the **Connection string** box, type the connection string for the gateway to use, and then click **Next**. For a gateway running [!INCLUDE[winthreshold_server_2](../../Token/winthreshold_server_2_md.md)], include the following items in the connection string, separated by semicolons \(;\).
+16. On the **Connection String** page, in the **Connection string** box, type the connection string for the gateway to use, and then click **Next**. For a gateway running [!INCLUDE[winthreshold_server_2](../../includes/winthreshold_server_2_md.md)], include the following items in the connection string, separated by semicolons \(;\).
 
     -   **VMHost\=** followed by the name of the host cluster.
 

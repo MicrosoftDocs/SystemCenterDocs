@@ -11,9 +11,9 @@ ms.topic: article
 ms.assetid: a8b7e82f-e3fc-4286-8570-8d5ded944b27
 ---
 # Authoring Automation Runbooks
-Runbooks in [!INCLUDE[sma_1](../../Token/sma_1_md.md)] and Microsoft Azure Automation are Windows PowerShell workflows. They provide the ability to automate administrative processes for managing and deploying cloud servers or any other function that a Windows PowerShell script can perform.
+Runbooks in [!INCLUDE[sma_1](../../includes/sma_1_md.md)] and Microsoft Azure Automation are Windows PowerShell workflows. They provide the ability to automate administrative processes for managing and deploying cloud servers or any other function that a Windows PowerShell script can perform.
 
-There is no difference in the runbooks between the two systems, and the same runbook can run on either with identical functionality. When the term *Automation* is used in this guide, it refers to both [!INCLUDE[sma_1](../../Token/sma_1_md.md)] and Microsoft Azure Automation.
+There is no difference in the runbooks between the two systems, and the same runbook can run on either with identical functionality. When the term *Automation* is used in this guide, it refers to both [!INCLUDE[sma_1](../../includes/sma_1_md.md)] and Microsoft Azure Automation.
 
 The additional services provided by Automation for working with Windows PowerShell Workflows include the following:
 
@@ -28,7 +28,7 @@ The additional services provided by Automation for working with Windows PowerShe
 -   Set of cmdlets for managing and starting runbooks.
 
 ## Runbook Authoring Topics
-The following topics provide information on creating and working with [!INCLUDE[sma_2](../../Token/sma_2_md.md)] runbooks.
+The following topics provide information on creating and working with [!INCLUDE[sma_2](../../includes/sma_2_md.md)] runbooks.
 
 -   [Runbook Types in Service Management Automation](../Service-Management-Automation.md)
 

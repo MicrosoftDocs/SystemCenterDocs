@@ -9,24 +9,24 @@ ms.topic: get-started-article
 ms.assetid: 5fad5608-4cb7-48b0-aa31-35ca5cc2d560
 ---
 # Release Notes for System Center Technical Preview 5
-### The following set of notes lists known issues and steps to mitigate the issue. These notes only apply to [!INCLUDE[sc_threshold_1](../Token/sc_threshold_1_md.md)].
+### The following set of notes lists known issues and steps to mitigate the issue. These notes only apply to [!INCLUDE[sc_threshold_1](../includes/sc_threshold_1_md.md)].
 
 
-## [!INCLUDE[scdp_threshold_1](../Token/scdp_threshold_1_md.md)] Release Notes
-### The following release notes apply to [!INCLUDE[scdp_threshold_1](../Token/scdp_threshold_1_md.md)].
+## [!INCLUDE[scdp_threshold_1](../includes/scdp_threshold_1_md.md)] Release Notes
+### The following release notes apply to [!INCLUDE[scdp_threshold_1](../includes/scdp_threshold_1_md.md)].
 
 ### SQL Server Setup error
-**Description:** When you specify a SQL Server while setting up [!INCLUDE[scdp_threshold_1](../Token/scdp_threshold_1_md.md)] you may encounter an error.
+**Description:** When you specify a SQL Server while setting up [!INCLUDE[scdp_threshold_1](../includes/scdp_threshold_1_md.md)] you may encounter an error.
 
 **Work around:** Specify the Fully Qualified Domain Name \(FQDN\) for the computer hosting SQL Server.
 
 ### VM backup from a remote file share
-**Description:** If you attempt to use [!INCLUDE[scdp_threshold_1](../Token/scdp_threshold_1_md.md)] to backup a virtual machine stored on a remote file share you will receive an error.
+**Description:** If you attempt to use [!INCLUDE[scdp_threshold_1](../includes/scdp_threshold_1_md.md)] to backup a virtual machine stored on a remote file share you will receive an error.
 
 **Work around:** Add all Hyper\-V compute nodes to the Backup Operators group on the Scale\-out File Server \(SOFS\) nodes. To do this run  the following command on the SOFS nodes:  `net localgroup "Backup Operators" domainname\hypervmachinename$ /add`
 
-### [!INCLUDE[scdp_threshold_1](../Token/scdp_threshold_1_md.md)]TP4 supports protecting workloads on Windows Server 2008 R2 SP1 and above
-**Description:**Installing the DPM agent on Windows Server 2008 or Windows Server 2008 R2 is not supported in this release of [!INCLUDE[scdp_threshold_1](../Token/scdp_threshold_1_md.md)].
+### [!INCLUDE[scdp_threshold_1](../includes/scdp_threshold_1_md.md)]TP4 supports protecting workloads on Windows Server 2008 R2 SP1 and above
+**Description:**Installing the DPM agent on Windows Server 2008 or Windows Server 2008 R2 is not supported in this release of [!INCLUDE[scdp_threshold_1](../includes/scdp_threshold_1_md.md)].
 
 **Workaround:** Install SP1 on the Windows Server 2008 R2 server, and install Windows Management Framework 4.0.
 
@@ -40,8 +40,8 @@ ms.assetid: 5fad5608-4cb7-48b0-aa31-35ca5cc2d560
 
 **Workaround:** Retrieve the list of alternate recovery locations via PowerShell.
 
-### DPM will not protect [!INCLUDE[winthreshold_nano](../Token/winthreshold_nano_md.md)]
-**Description:** You can't use DPM to back up [!INCLUDE[winthreshold_nano](../Token/winthreshold_nano_md.md)].
+### DPM will not protect [!INCLUDE[winthreshold_nano](../includes/winthreshold_nano_md.md)]
+**Description:** You can't use DPM to back up [!INCLUDE[winthreshold_nano](../includes/winthreshold_nano_md.md)].
 
 ### Online recovery of SQL master database fails, after upgrading DPM to TP5 
 **Description:** If your DPM installation's SQL server master database is protected (i.e, backed up) to Azure, and you upgrade to System Center DPM 2016 and then attempt to restore using an online recovery point, the recovery job will fail. 
@@ -79,13 +79,13 @@ Edit-DPMDiskAllocation –Datasource <Datasource object> -ShadowCopySize <new si
 ```
 
 
-## [!INCLUDE[scom_threshold_1](../Token/scom_threshold_1_md.md)] Release Notes
-### The following release notes apply to [!INCLUDE[scom_threshold_1](../Token/scom_threshold_1_md.md)].
+## [!INCLUDE[scom_threshold_1](../includes/scom_threshold_1_md.md)] Release Notes
+### The following release notes apply to [!INCLUDE[scom_threshold_1](../includes/scom_threshold_1_md.md)].
 
 ### Operations Manager Console will stop responding if you attempt to resolve a dependency while  importing a Management Pack
 **Description:**When you click **Import Management Packs** from the Administration section of the Operations Manager console, the console will display the **Resolve** button if the Management Pack is dependent on another Management Pack. If you click  Resolve you will see the **Dependency Warning**. If you click the **Resolve** button in the warning the Operations Manager console will stop responding.
 
-**Workaround:** Install the Update for[!INCLUDE[scom_threshold_1](../Token/scom_threshold_1_md.md)]. See the Knowledge Base article [3117586](https://support.microsoft.com/en-us/kb/3117586) for specific instructions.
+**Workaround:** Install the Update for[!INCLUDE[scom_threshold_1](../includes/scom_threshold_1_md.md)]. See the Knowledge Base article [3117586](https://support.microsoft.com/en-us/kb/3117586) for specific instructions.
 
 ### Client\-side monitoring \(CSM\) alerts might stop flowing from the System Center Operations Manager management server host
 **Description:**The update sequence of System Center Operation Manager management server may cause an issue with the client\-side monitoring alerts collection from the management server host. System Center Operations Manager agents are not affected.
@@ -129,7 +129,7 @@ System Center Operations Manager management server is not affected.
 **Workaround:** Set both the exception tracking and performance tracking settings to include the same custom namespaces.
 
 ### Operations Manager web console is not compatible with Microsoft Edge web browser
-**Description:** When you open the Operations Manager web console from the [!INCLUDE[winthreshold_client_2](../Token/winthreshold_client_2_md.md)]Start Menu the console will open in the Microsoft Edge web browser. This will result in an error.
+**Description:** When you open the Operations Manager web console from the [!INCLUDE[winthreshold_client_2](../includes/winthreshold_client_2_md.md)]Start Menu the console will open in the Microsoft Edge web browser. This will result in an error.
 
 **Work around:** Open the Operations Manager web console with Internet Explorer. Internet Explorer is available from  Windows Accessories sub\-menu.
 
@@ -149,13 +149,13 @@ System Center Operations Manager management server is not affected.
 9. Select the option - “Place all certificates in the following store” Browse to Trusted Publishers. 
 10. Click Next and then Finish.
 11. Refresh the Browser
-## [!INCLUDE[scor_threshold_1](../Token/scor_threshold_1_md.md)] and [!INCLUDE[sma_1](../Token/sma_1_md.md)] Release Notes
-### The following release notes apply to [!INCLUDE[scor_threshold_1](../Token/scor_threshold_1_md.md)] and [!INCLUDE[sma_1](../Token/sma_1_md.md)] .
+## [!INCLUDE[scor_threshold_1](../includes/scor_threshold_1_md.md)] and [!INCLUDE[sma_1](../includes/sma_1_md.md)] Release Notes
+### The following release notes apply to [!INCLUDE[scor_threshold_1](../includes/scor_threshold_1_md.md)] and [!INCLUDE[sma_1](../includes/sma_1_md.md)] .
 
 ### Sending telemetry data for SMA and SPF to Microsoft can only be turned off via PowerShell
-**Description:**The default  telemetry data setting is to send data to Microsoft. Since [!INCLUDE[sma_1](../Token/sma_1_md.md)] and [!INCLUDE[spfshort](../Token/spfshort_md.md)]do not provide a user interface, you can only change this setting for [!INCLUDE[sma_1](../Token/sma_1_md.md)] or [!INCLUDE[spfshort](../Token/spfshort_md.md)] with a  PowerShell cmdlet.
+**Description:**The default  telemetry data setting is to send data to Microsoft. Since [!INCLUDE[sma_1](../includes/sma_1_md.md)] and [!INCLUDE[spfshort](../includes/spfshort_md.md)]do not provide a user interface, you can only change this setting for [!INCLUDE[sma_1](../includes/sma_1_md.md)] or [!INCLUDE[spfshort](../includes/spfshort_md.md)] with a  PowerShell cmdlet.
 
-**Work around:**See  [Knowledge Base article 3096505](http://go.microsoft.com/fwlink/?LinkID=708446&clcid=0x409) for detailed instructions on how to stop sending telemetry data to Microsoft for [!INCLUDE[sma_1](../Token/sma_1_md.md)] or [!INCLUDE[spfshort](../Token/spfshort_md.md)].
+**Work around:**See  [Knowledge Base article 3096505](http://go.microsoft.com/fwlink/?LinkID=708446&clcid=0x409) for detailed instructions on how to stop sending telemetry data to Microsoft for [!INCLUDE[sma_1](../includes/sma_1_md.md)] or [!INCLUDE[spfshort](../includes/spfshort_md.md)].
 
 ### Orchestrator Web Console is not compatible with the Microsoft Edge web browser
 **Description:** You can not open the Orchestrator web console with the Microsoft Edge web browser.
@@ -169,8 +169,8 @@ System Center Operations Manager management server is not affected.
 **Workaround:** Use Orchestrator 2012 Integration packs for evaluation purposes. 
 
 
-## [!INCLUDE[scsm_threshold_1](../Token/scsm_threshold_1_md.md)] Release Notes
-### The following release notes apply to [!INCLUDE[scsm_threshold_1](../Token/scsm_threshold_1_md.md)].
+## [!INCLUDE[scsm_threshold_1](../includes/scsm_threshold_1_md.md)] Release Notes
+### The following release notes apply to [!INCLUDE[scsm_threshold_1](../includes/scsm_threshold_1_md.md)].
 
 ### The Create Exchange Connector Wizard Might Crash
 **Description:** When you run the Create Exchange Connector wizard, the wizard crashes when you click **Test Connection**.
@@ -194,15 +194,15 @@ If the crash has already occurred, you can restart the wizard and use this worka
 
 
 ### Manual steps to configure remote SQL Server 2014 Reporting Services
-**Description:** During deployment of the [!INCLUDE[smshort12](../Token/smshort12_md.md)] data warehouse management server, you can specify the server to which Microsoft SQL Server Reporting Services \(SSRS\) will be deployed. During setup, the computer that is hosting the data warehouse management server is selected by default. If you specify a different computer to host SSRS, you are prompted to follow a procedure in the Deployment Guide to prepare the server. However, if you use SQL Server 2014, you should instead use the following information to prepare the remote computer to host SSRS.
+**Description:** During deployment of the [!INCLUDE[smshort12](../includes/smshort12_md.md)] data warehouse management server, you can specify the server to which Microsoft SQL Server Reporting Services \(SSRS\) will be deployed. During setup, the computer that is hosting the data warehouse management server is selected by default. If you specify a different computer to host SSRS, you are prompted to follow a procedure in the Deployment Guide to prepare the server. However, if you use SQL Server 2014, you should instead use the following information to prepare the remote computer to host SSRS.
 
--   Copy Microsoft.EnterpriseManagement.Reporting.Code.dll from the [!INCLUDE[smshort12](../Token/smshort12_md.md)] installation media to the computer that is hosting SSRS.
+-   Copy Microsoft.EnterpriseManagement.Reporting.Code.dll from the [!INCLUDE[smshort12](../includes/smshort12_md.md)] installation media to the computer that is hosting SSRS.
 
 -   Add a code segment to the rssrvpolicy configuration file on the computer that is hosting SSRS.
 
 -   Add an Extension tag to the existing Data segment in the rsreportserver configuration file on the same computer.
 
-If you used the default instance of SQL Server, use Windows Explorer to drag Microsoft.EnterpriseManagement.Reporting.Code.dll \(which is located in the Prerequisites folder on your [!INCLUDE[smshort12](../Token/smshort12_md.md)] installation media\) to the folder \\Program Files\\Microsoft SQL Server\\MSRS12.MSSQLSERVER\\Reporting Services\\ReportServer\\Bin on the computer that is hosting SSRS. If you did not use the default instance of SQL Server, the path of the required folder is \\Program Files\\Microsoft SQL Server\\MSRS12.<INSTANCE\_NAME>\\Reporting Services\\ReportServer\\Bin. In the following procedure, the default instance name is used.
+If you used the default instance of SQL Server, use Windows Explorer to drag Microsoft.EnterpriseManagement.Reporting.Code.dll \(which is located in the Prerequisites folder on your [!INCLUDE[smshort12](../includes/smshort12_md.md)] installation media\) to the folder \\Program Files\\Microsoft SQL Server\\MSRS12.MSSQLSERVER\\Reporting Services\\ReportServer\\Bin on the computer that is hosting SSRS. If you did not use the default instance of SQL Server, the path of the required folder is \\Program Files\\Microsoft SQL Server\\MSRS12.<INSTANCE\_NAME>\\Reporting Services\\ReportServer\\Bin. In the following procedure, the default instance name is used.
 
 ##### To copy the Microsoft.EnterpriseManagement.Reporting.Code.dll file
 
@@ -210,7 +210,7 @@ If you used the default instance of SQL Server, use Windows Explorer to drag M
 
 2.  For SQL Server 2014, locate the folder \\Program Files\\Microsoft SQL Server\\MSRS12.MSSQLSERVER\\Reporting Services\\ReportServer\\Bin.
 
-3.  Start a second instance of Windows Explorer, locate the drive that contains the [!INCLUDE[smshort12](../Token/smshort12_md.md)] installation media, and then open the Prerequisites folder.
+3.  Start a second instance of Windows Explorer, locate the drive that contains the [!INCLUDE[smshort12](../includes/smshort12_md.md)] installation media, and then open the Prerequisites folder.
 
 4.  In the Prerequisites folder, click **Microsoft.EnterpriseManagement.Reporting.Code.dll**, and drag it to the folder that you located previously.
 
@@ -274,15 +274,15 @@ If you used the default instance of SQL Server, use Windows Explorer to drag M
 
 5.  Save the changes and close the XML editor.
 
-### [!INCLUDE[smssp](../Token/smssp_md.md)] is not compatible with the Microsoft Edge web browser
-**Description:**You can not open the [!INCLUDE[smssp](../Token/smssp_md.md)] with the Microsoft Edge web browser.
+### [!INCLUDE[smssp](../includes/smssp_md.md)] is not compatible with the Microsoft Edge web browser
+**Description:**You can not open the [!INCLUDE[smssp](../includes/smssp_md.md)] with the Microsoft Edge web browser.
 
-**Workaround:**Use Internet Explorer to open [!INCLUDE[smssp](../Token/smssp_md.md)].
+**Workaround:**Use Internet Explorer to open [!INCLUDE[smssp](../includes/smssp_md.md)].
 
-### [!INCLUDE[smcons](../Token/smcons_md.md)] Installed on a VMM Server Causes VMM Connector Failure
-**Description:** If the [!INCLUDE[smcons](../Token/smcons_md.md)] is installed on the same server as VMM, then you cannot use that [!INCLUDE[smcons](../Token/smcons_md.md)] to create a VMM connector to that VMM server.
+### [!INCLUDE[smcons](../includes/smcons_md.md)] Installed on a VMM Server Causes VMM Connector Failure
+**Description:** If the [!INCLUDE[smcons](../includes/smcons_md.md)] is installed on the same server as VMM, then you cannot use that [!INCLUDE[smcons](../includes/smcons_md.md)] to create a VMM connector to that VMM server.
 
-**Workaround:** None, however you can use a different [!INCLUDE[smcons](../Token/smcons_md.md)] to create the VMM connector.
+**Workaround:** None, however you can use a different [!INCLUDE[smcons](../includes/smcons_md.md)] to create the VMM connector.
 
 
 ### Data Warehouse Setup Might Fail if the Database or Log Path Includes a Single Quotation Mark Character
@@ -311,12 +311,12 @@ If you used the default instance of SQL Server, use Windows Explorer to drag M
 **Workaround:** If your Orchestrator connector account password contains a $ character, change the password to one that does not include the $ character.
 
 ### Information Linked from Setup Might Not Display Localized Content
-**Description:** Information that is linked from Setup to the Setup log and to technical documentation might not display localized content. Setup logs in [!INCLUDE[smshort12](../Token/smshort12_md.md)] are available in English only. Technical documentation is available in a variety of localized languages. Where available, localized technical documentation is displayed on TechNet; however, not all languages are available.
+**Description:** Information that is linked from Setup to the Setup log and to technical documentation might not display localized content. Setup logs in [!INCLUDE[smshort12](../includes/smshort12_md.md)] are available in English only. Technical documentation is available in a variety of localized languages. Where available, localized technical documentation is displayed on TechNet; however, not all languages are available.
 
 **Workaround:** None.
 
 ### Full Text Search Does Not Work for Some Turkish Language Characters
-**Description:** Full text search in the [!INCLUDE[smssp](../Token/smssp_md.md)] works only if you have a licensed non\-Microsoft word breaker installed. However, full text search does not work for some characters of the Turkish language even if you have a licensed non\-Microsoft Turkish word breaker installed.
+**Description:** Full text search in the [!INCLUDE[smssp](../includes/smssp_md.md)] works only if you have a licensed non\-Microsoft word breaker installed. However, full text search does not work for some characters of the Turkish language even if you have a licensed non\-Microsoft Turkish word breaker installed.
 
 **Workaround:** Load a licensed non\-Microsoft word breaker that enables full\-text search to function. For more information, see the following links for the version of SQL Server that you are using:
 
@@ -394,8 +394,8 @@ If you used the default instance of SQL Server, use Windows Explorer to drag M
 
 **Workaround:** Switch the Cardinality Estimator \(CE\) for the SQL Server to use the SQL Server 2012 version. See the following article for more information on changing the Cardinality Estimator: [New functionality in SQL Server 2014 – Part 2 – New Cardinality Estimation](http://blogs.msdn.com/b/saponsqlserver/archive/2014/01/16/new-functionality-in-sql-server-2014-part-2-new-cardinality-estimation.aspx).
 
-## [!INCLUDE[scvm_threshold_1](../Token/scvm_threshold_1_md.md)] Release Notes
-### The following release notes apply to [!INCLUDE[scvm_threshold_1](../Token/scvm_threshold_1_md.md)].
+## [!INCLUDE[scvm_threshold_1](../includes/scvm_threshold_1_md.md)] Release Notes
+### The following release notes apply to [!INCLUDE[scvm_threshold_1](../includes/scvm_threshold_1_md.md)].
 
 ### Upgrading a cluster's functional level does not refresh the platform information for a File Server
 **Description:** If you upgrade the functional level for a cluster that includes a file server the new platform information will not be automatically updated in the VMM database.
