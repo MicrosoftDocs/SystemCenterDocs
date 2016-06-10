@@ -4,7 +4,7 @@ ms.custom: na
 ms.prod: system-center-threshold
 ms.reviewer: na
 ms.suite: na
-ms.technology: 
+ms.technology:
   - service-manager
 ms.tgt_pltfrm: na
 ms.topic: article
@@ -58,6 +58,3 @@ In [!INCLUDE[scsm_threshold_1](../../includes/scsm_threshold_1_md.md)], incident
 2.  In the **Work Items** pane, expand **Incident Management**, and then click **All Incidents**. New incidents appear in the **All Incidents** view.
 
 ## See Also
-[Managing Incidents_Retired](Managing-Incidents_Retired.md)
-
-
