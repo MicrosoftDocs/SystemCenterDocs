@@ -136,7 +136,7 @@
 #### [How to install Orchestrator Features](Orch/Deploy/How-to-install-Orchestrator-Features.md)
 #### [How to install System Center Technical Preview - Orchestrator from the command prompt](Orch/Deploy/How-to-install-System-Center-Technical-Preview---Orchestrator-from-the-command-prompt.md)
 ## [Service Manager](SM/Service-Manager.md)
-### [What's New in Service Manager for Technical Preview](sm/get-started/What-s-New-in-Service-Manager-for-Technical-Preview.md)
+### [What's New in Service Manager](sm/getstarted/what-s-new-in-service-manager.md)
 ### [Planning for System Center 2016 - Service Manager](sm/Service-Manager.md)
 #### [Planning for Service Manager Deployment](SM/Plan/Planning-for-Service-Manager-Deployment.md)
 ##### [Service Manager Parts](SM/Plan/Service-Manager-Parts.md)
@@ -639,6 +639,3 @@
 ##### [Building an Integration Module](SMA/Manage/Building-an-Integration-Module.md)
 ## [Service Provider Foundation](SPF/Service-Provider-Foundation.md)
 ### [How to Install Service Provider Foundation for System Center  Technical Preview](SPF/Deploy/How-to-Install-Service-Provider-Foundation-for-System-Center--Technical-Preview.md)
-
-
-

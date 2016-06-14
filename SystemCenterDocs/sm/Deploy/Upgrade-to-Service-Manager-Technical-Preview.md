@@ -4,7 +4,7 @@ ms.custom: na
 ms.prod: system-center-threshold
 ms.reviewer: na
 ms.suite: na
-ms.technology: 
+ms.technology:
   - service-manager
 ms.tgt_pltfrm: na
 ms.topic: article
@@ -22,13 +22,13 @@ Depending on your current version of Service Manager, use the following informat
 - Use the published information for the order of System Center components as well as Service Manager components.
 - Do not mix Service Manager 2016 and Service Manager 2012 R2 with different Service Manager components - all should use the same version. For example, both the Self Service portal and the Service Manager management server  should use the same version.
 - You can only use the Service Manager 2012 R2 old or new portal with Service Manager 2012 R2. You cannot use the Self Service portal in Service Manager 2016 with Service Manager 2012 R2.
-- When upgrading from Service Manager 2012 R2 to Service Manager 2016 TP5, you should not enable or disable the Active Directory group expansion for any of the Active Directory connectors. 
-    
+- When upgrading from Service Manager 2012 R2 to Service Manager 2016 TP5, you should not enable or disable the Active Directory group expansion for any of the Active Directory connectors.
+
     In other words, if it is off, let it remain off and if it is on, let it remain on until the connector runs for the first time. See the screenshot below. This applies only to the first time that the Active Directory connector runs after you upgrade. You can change your preferences for Active Directory group expansion workflow after the first time that the Active Directory connector sync completes.
 
-    ![Active Directory Connector wizard](Image/sm-adconnector01.png)
+    ![Active Directory Connector wizard](../../media/sm-adconnector01.png)
 
- 
+
 
 ## Upgrading the Self Service Portal from a standalone installation of the Service Manager 2012 R2 Silverlight-based Self Service portal
 Use the following steps to upgrade your Self Service portal and Service Manager management servers where they are installed on different computers.
@@ -65,7 +65,3 @@ Use the following step to upgrade your Self Service portal and Service Manger ma
 
 ## Upgrading the Self Service Portal from Service Manager 2016 TP5 Self Service portal (stand alone or with a management server)
   - You can upgrade the Self Service portal directly from Service Manager 2012 R2 to Service Manager 2016.
-
-
-
-
