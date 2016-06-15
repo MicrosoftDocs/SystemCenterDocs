@@ -4,7 +4,7 @@ ms.custom: na
 ms.prod: system-center-threshold
 ms.reviewer: na
 ms.suite: na
-ms.technology: 
+ms.technology:
   - service-manager
 ms.tgt_pltfrm: na
 ms.topic: article
@@ -40,7 +40,7 @@ You can use the following procedures to initiate the deletion of a configuration
     > [!NOTE]
     > At this point, the configuration item has been moved to a **Deleted Item** view that is only available to members of the Administrator user role. An administrator must permanently delete the configuration item.
 
-![](Image/PSSymbol.gif)You can use Windows PowerShell commands to complete these tasks, as follows:
+![](../../media/PSSymbol.gif)You can use Windows PowerShell commands to complete these tasks, as follows:
 
 -   For information about how to use Windows PowerShell to initiate the deletion of a configuration item by updating the `PendingDelete` property value, see [Update\-SCSMClassInstance](http://go.microsoft.com/fwlink/p/?LinkID=225420).
 
@@ -84,10 +84,8 @@ After members of the Advanced Operators, Authors, or Administrators user roles h
 
 6.  In the **Delete Item** dialog box, make sure that you selected the correct items, and then click **Yes**.
 
-![](Image/PSSymbol.gif)You can use Windows PowerShell commands to complete these tasks, as follows:
+![](../../media/PSSymbol.gif)You can use Windows PowerShell commands to complete these tasks, as follows:
 
 -   For information about how to use Windows PowerShell to permanently remove an instance of a configuration item object, see [Remove\-SCSMClassInstance](http://go.microsoft.com/fwlink/p/?LinkID=225414).
 
 -   For information about how to use Windows PowerShell to restore items that were previously marked for deletion in Service Manager, see [Restore\-SCSMDeleteItem](http://go.microsoft.com/fwlink/p/?LinkID=225374).
-
-

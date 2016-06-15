@@ -21,11 +21,11 @@ A third deployment option maximizes performance and scalability by using four co
 
 You might decide that, for the evaluation phase, you will choose the option to install [!INCLUDE[scsm_threshold_1](../../includes/scsm_threshold_1_md.md)] on two computers. After installing [!INCLUDE[scsm_threshold_1](../../includes/scsm_threshold_1_md.md)] in the lab, you can import data from Active Directory Domain Services \(AD DS\) and System Center Configuration Manager, and then you can import data and alerts from Operations Manager. You would then configure User Roles within [!INCLUDE[scsm_threshold_1](../../includes/scsm_threshold_1_md.md)] and, if necessary, manually add users that were not imported from AD DS. The following illustration represents an overview of this installation and initial configuration.
 
-![](Image/SM_Installation_Topology.gif)
+![](../../media/SM_Installation_Topology.gif)
 
 You can limit the number of SQL Server licenses that you need by placing all of the [!INCLUDE[scsm_threshold_1](../../includes/scsm_threshold_1_md.md)] databases on the same computer, as shown in the following illustration.
 
-![](Image/SM_Installation_Topology_Single_SQL.jpg)
+![](../../media/SM_Installation_Topology_Single_SQL.jpg)
 
 You continue the deployment process by creating several templates; configuring initial parameters; creating queues, lists, and groups; and then creating a management pack to save these custom objects.
 

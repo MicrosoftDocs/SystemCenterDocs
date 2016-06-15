@@ -44,7 +44,7 @@ You can use the following procedures to disable or enable a System Center Config
 
 3.  If you enabled the connector, verify that the connector resumes synchronization according to the schedule. If you disabled the connector, verify that the connector no longer synchronizes according to the schedule.
 
-![](Image/PSSymbol.gif)You can use Windows PowerShell commands to complete these tasks and other related tasks, as follows:
+![](../../media/PSSymbol.gif)You can use Windows PowerShell commands to complete these tasks and other related tasks, as follows:
 
 -   For information about how to use Windows PowerShell to start a Service Manager connector, see [Start\-SCSMConnector](http://go.microsoft.com/fwlink/?LinkId=203113).
 

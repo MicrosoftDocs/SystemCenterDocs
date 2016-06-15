@@ -55,7 +55,7 @@ You can use the following procedure to create and configure a workflow rule that
 
 5.  In a few minutes, press F5. Verify that the value in the **Support Group** box changed to **Tier 2**.
 
-![](Image/PSSymbol.gif)You can use Windows PowerShell commands to complete these and other related tasks, as follows:
+![](../../media/PSSymbol.gif)You can use Windows PowerShell commands to complete these and other related tasks, as follows:
 
 -   For information about how to use Windows PowerShell to create a new workflow in Service Manager, see [New\-SCSMWorkflow](http://go.microsoft.com/fwlink/p/?LinkID=225361).
 

@@ -4,7 +4,7 @@ ms.custom: na
 ms.prod: system-center-threshold
 ms.reviewer: na
 ms.suite: na
-ms.technology: 
+ms.technology:
   - service-manager
 ms.tgt_pltfrm: na
 ms.topic: article
@@ -70,7 +70,7 @@ You can use the following procedures to configure incident management to automat
 
 6.  Verify that the correct configuration baseline and Configuration Manager configuration items are listed.
 
-![](Image/PSSymbol.gif)You can use Windows PowerShell commands to complete these and other related tasks, as follows:
+![](../../media/PSSymbol.gif)You can use Windows PowerShell commands to complete these and other related tasks, as follows:
 
 -   For information about how to use Windows PowerShell to create a desired configuration management workflow in [!INCLUDE[smshort](../../includes/smshort_md.md)], see [New\-SCSMDCMWorkflow](http://go.microsoft.com/fwlink/p/?LinkID=225354).
 
@@ -79,5 +79,3 @@ You can use the following procedures to configure incident management to automat
 -   For information about how to use Windows PowerShell to update properties of a desired configuration management workflow, see [Update\-SCSMDCMWorkflow](http://go.microsoft.com/fwlink/p/?LinkID=225383).
 
 -   For information about how to use Windows PowerShell to remove a desired configuration management workflow from [!INCLUDE[smshort](../../includes/smshort_md.md)], see [Remove\-SCSMDCMWorkflow](http://go.microsoft.com/fwlink/p/?LinkID=225365).
-
-
