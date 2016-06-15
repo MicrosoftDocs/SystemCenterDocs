@@ -1,5 +1,5 @@
 ---
-title: What&#39;s New in Service Manager
+title: What's New in Service Manager
 ms.custom: na
 ms.prod: system-center-threshold
 ms.reviewer: na
@@ -10,7 +10,7 @@ ms.tgt_pltfrm: na
 ms.topic: get-started-article
 ms.assetid: 3eeb3265-88e0-47ed-b761-07f4e0634959
 ---
-# What&#39;s New in Service Manager
+# What's New in Service Manager
 [!INCLUDE[scsm_threshold_1](../../includes/scsm_threshold_1_md.md)] is updated for [!INCLUDE[sc_threshold_1](../../includes/sc_threshold_1_md.md)] 5.
 
 For details about known issues that could affect you before you install [!INCLUDE[scsm_threshold_1](../../includes/scsm_threshold_1_md.md)], read the [Release Notes for System Center Technical Preview](../../get-started/Release-Notes-for-System-Center-Technical-Preview-5.md).
