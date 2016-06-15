@@ -40,7 +40,7 @@ You can use the following procedures to initiate the deletion of a configuration
     > [!NOTE]
     > At this point, the configuration item has been moved to a **Deleted Item** view that is only available to members of the Administrator user role. An administrator must permanently delete the configuration item.
 
-![](../../media/PSSymbol.gif)You can use Windows PowerShell commands to complete these tasks, as follows:
+![PowerShell icon](../../media/PSSymbol.gif)You can use Windows PowerShell commands to complete these tasks, as follows:
 
 -   For information about how to use Windows PowerShell to initiate the deletion of a configuration item by updating the `PendingDelete` property value, see [Update\-SCSMClassInstance](http://go.microsoft.com/fwlink/p/?LinkID=225420).
 
