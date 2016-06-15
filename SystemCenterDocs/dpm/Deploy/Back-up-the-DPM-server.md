@@ -73,7 +73,7 @@ Scenario 1 shows a scenario in which four DPM servers are chained:
 |DS3 \(secondary\)|DS1, DS2|DS4|
 |DS4 \(secondary\)|DS3|\-|
 
-![](Media/DPM2012_DRDeployment_Chaining.gif)
+![Scenario with four DPM servers chained](../../Media/DPM2012_DRDeployment_Chaining.jpg)
 
 #### Chaining example 2
 **Scenario 2: Chained protection**
@@ -89,7 +89,7 @@ Scenario 2 shows a scenario in which four DPM servers are chained:
 |DS3 \(secondary\)|DS2|DS4|
 |DS4|DS3|\-|
 
-![](Media/DPM2012_DR_ChainingS1.gif)
+![alternate scenario with four DPM servers chained](../../media/DPM2012_DR_ChainingS1.jpg)
 
 ### Cyclic protection
 If you don’t want to use a secondary server then two [!INCLUDE[dpm2012short](../../includes/dpm2012short_md.md)] servers can protect each other.
@@ -106,7 +106,7 @@ Scenario 3 shows a scenario using cyclic protection
 |DS3 \(primary\)|PS4|DS2|
 |DS3 \(secondary\)|DS2|DS2|
 
-![](Media/DPM2012_DRDeployment_Cyclic.jpg)
+![example of cyclic protection scenario](../../Media/DPM2012_DRDeployment_Cyclic.jpg)
 
 ### Configure chaining
 Set up chaining as follows:
@@ -135,12 +135,12 @@ As part of your DPM backup strategy, you’ll have to back up the DPNdatabase. T
 
 |Database backup method|Advantages|Disadvantages|
 |--------------------------|--------------|-----------------|
-|[Back up to Azure](#Back-up-to-Azure)|Easily configured and monitored in DPM.<br /><br />Multiple locations of the backup database files.<br /><br />Cloud storage provides a robust solution for disaster recovery.<br /><br />Very secure storage for the database.<br /><br />Supports 120 online recovery points.|Only available on DPM 2012 SP1 or later.<br /><br />Requires Azure account and additional DPM configuration. Incurs some cost for Azure storage.<br /><br />\- Requires an alternate Windows Server 2012 based system with the Azure agent to gain access to DPM backups stored in the Azure backup vault. This can’t be another DPM server.<br /><br />Not an option if the database is hosted locally and you want to enable secondary protection. A workaround would be to use a remote SQL Server to host the database.<br /><br />Some extra preparation and recovery time is incurred.|
-|[Back up to the DPM storage pool](#Back-up-the-database-by-backing-up-the-DPM-storage-pool)|Simple to configure and monitor.<br /><br />The backup is kept on the DPM storage pool disks and is easy to access locally.<br /><br />DPM scheduled backups support 512 express full backups. If you back up hourly you’ll have 21 days of full protection.|Not a good option for disaster recovery. It’s online and recovery might not work as expected if the DPM server or storage pool disk fails.<br /><br />Not an option if the database is hosted locally and you want to enable secondary protection. A workaround would be to use a remote SQL Server to host the database.<br /><br />Some preparation and special steps are required to gain access to the recovery points if the DPM service or console isn’t running or working.|
-|[Back up to a secondary DPM server](#Back-up-the-database-to-a-secondary-server)|Easily configured and monitored in DPM.<br /><br />DPM scheduled backups support 512 express full backups. If done hourly, this provides 21 days of short term protection. If done every 30 minutes, it provides 10 days of protection.<br /><br />The backup is kept on the secondary DPM server storage pool disks which are locally accessible.<br /><br />Provides a good disaster recovery solution if secondary DPM server is offsite.|Additional DPM server and storage are required. Both DPM servers must to be running the same DPM version and update rollups.|
-|[Back up to tape](#Back-up-the-database-to-tape)|Easily configured and monitored in DPM.<br /><br />DPM scheduled tape backups support retention up to 99 years.<br /><br />Tape backup can be taken offsite for disaster recovery.<br /><br />Tape backup can be restored from any other DPM server that has a tape drive\/library attached that uses the same tape media type.<br /><br />Tape can be encrypted for secure storage.|Not an option if the database is hosted locally and you want to enable secondary protection. A workaround would be to use a remote SQL Server to host the database.<br /><br />Only one tape backup per day can be scheduled.<br /><br />You need a working DPM server with a tape library to be able to read a DPM backup tape that contains the copy of the database you want to restore.<br /><br />Some preparation and special steps are required to gain access to the tape based recovery points.|
-|[Back up with native SQL Server backup to a local disk](#Back-up-with-native-SQL-Server-backup-to-a-local-disk)|Built\-in to SQL Server.<br /><br />The backup is kept on a local disk which is easily accessible.<br /><br />It can be scheduled to run as often as you like.<br /><br />Totally independent of DPM.<br /><br />You can schedule a backup file cleanup.|Not a good option for disaster recovery unless the backups are copied to a remote location.<br /><br />Requires local storage for backups which may limit retention and frequency.|
-|[Back up with native SQL backup and DPM protection to a share protected by DPM](#Back-up-with-native-SQL-Server-backup-to-a-share-protected-by-DPM)|Easily monitored in DPM.<br /><br />Multiple locations of the backup database files.<br /><br />Easily accessible from any Windows machine on the network.<br /><br />Potentially the fastest recovery method.|Only supports 64 recovery points.<br /><br />Not a good option for site disaster recovery. DPM server or DPM storage pool disk failure may hinder recovery efforts.<br /><br />Not an option if the DPM DB is hosted locally and you want to enable secondary protection. A workaround would be to use a remote SQL Server to host the DPMDB.<br /><br />Some extra preparation is needed to get it configured and tested.<br /><br />Some extra preparation and recovery time is needed should the DPM server itself be down but DPM storage pool disks are fine.|
+|[Back up to Azure](#back-up-to-azure)|Easily configured and monitored in DPM.<br /><br />Multiple locations of the backup database files.<br /><br />Cloud storage provides a robust solution for disaster recovery.<br /><br />Very secure storage for the database.<br /><br />Supports 120 online recovery points.|Only available on DPM 2012 SP1 or later.<br /><br />Requires Azure account and additional DPM configuration. Incurs some cost for Azure storage.<br /><br />\- Requires an alternate Windows Server 2012 based system with the Azure agent to gain access to DPM backups stored in the Azure backup vault. This can’t be another DPM server.<br /><br />Not an option if the database is hosted locally and you want to enable secondary protection. A workaround would be to use a remote SQL Server to host the database.<br /><br />Some extra preparation and recovery time is incurred.|
+|[Back up the database by backing up the DPM storage pool](#Back-up-the-database-by-backing-up-the-DPM-storage-pool)|Simple to configure and monitor.<br /><br />The backup is kept on the DPM storage pool disks and is easy to access locally.<br /><br />DPM scheduled backups support 512 express full backups. If you back up hourly you’ll have 21 days of full protection.|Not a good option for disaster recovery. It’s online and recovery might not work as expected if the DPM server or storage pool disk fails.<br /><br />Not an option if the database is hosted locally and you want to enable secondary protection. A workaround would be to use a remote SQL Server to host the database.<br /><br />Some preparation and special steps are required to gain access to the recovery points if the DPM service or console isn’t running or working.|
+|[Back up to a secondary DPM server](#back-up-the-database-to-a-secondary-server)|Easily configured and monitored in DPM.<br /><br />DPM scheduled backups support 512 express full backups. If done hourly, this provides 21 days of short term protection. If done every 30 minutes, it provides 10 days of protection.<br /><br />The backup is kept on the secondary DPM server storage pool disks which are locally accessible.<br /><br />Provides a good disaster recovery solution if secondary DPM server is offsite.|Additional DPM server and storage are required. Both DPM servers must to be running the same DPM version and update rollups.|
+|[Back up to tape](#back-up-the-database-to-tape)|Easily configured and monitored in DPM.<br /><br />DPM scheduled tape backups support retention up to 99 years.<br /><br />Tape backup can be taken offsite for disaster recovery.<br /><br />Tape backup can be restored from any other DPM server that has a tape drive\/library attached that uses the same tape media type.<br /><br />Tape can be encrypted for secure storage.|Not an option if the database is hosted locally and you want to enable secondary protection. A workaround would be to use a remote SQL Server to host the database.<br /><br />Only one tape backup per day can be scheduled.<br /><br />You need a working DPM server with a tape library to be able to read a DPM backup tape that contains the copy of the database you want to restore.<br /><br />Some preparation and special steps are required to gain access to the tape based recovery points.|
+|[Back up with native SQL Server backup to a local disk](#back-up-with-native-sql-server-backup-to-a-local-disk)|Built\-in to SQL Server.<br /><br />The backup is kept on a local disk which is easily accessible.<br /><br />It can be scheduled to run as often as you like.<br /><br />Totally independent of DPM.<br /><br />You can schedule a backup file cleanup.|Not a good option for disaster recovery unless the backups are copied to a remote location.<br /><br />Requires local storage for backups which may limit retention and frequency.|
+|[Back up with native SQL backup and DPM protection to a share protected by DPM](#back-up-with-native-sql-server-backup-to-a-share-protected-by-dpm)|Easily monitored in DPM.<br /><br />Multiple locations of the backup database files.<br /><br />Easily accessible from any Windows machine on the network.<br /><br />Potentially the fastest recovery method.|Only supports 64 recovery points.<br /><br />Not a good option for site disaster recovery. DPM server or DPM storage pool disk failure may hinder recovery efforts.<br /><br />Not an option if the DPM DB is hosted locally and you want to enable secondary protection. A workaround would be to use a remote SQL Server to host the DPMDB.<br /><br />Some extra preparation is needed to get it configured and tested.<br /><br />Some extra preparation and recovery time is needed should the DPM server itself be down but DPM storage pool disks are fine.|
 
 -   If you back up by using a DPM protection group, we recommend that you use a unique protection group for the database.
 
@@ -170,8 +170,8 @@ As part of your DPM backup strategy, you’ll have to back up the DPNdatabase. T
     join tbl_PRM_LogicalReplica as lr on ds.DataSourceId=lr.DataSourceId
     join tbl_AM_Server as ag on ds.ServerId=ag.ServerId
     join tbl_SPM_Volume as vol on lr.PhysicalReplicaId=vol.VolumeSetID
-    and vol.Usage =1 
-    and lr.Validity in (1,2) 
+    and vol.Usage =1
+    and lr.Validity in (1,2)
     where ds.datasourcename like '%dpmdb%'
     and servername like '%dpmsqlservername%' --netbios name of server hosting DPMDB
     ```
@@ -202,8 +202,8 @@ from tbl_IM_DataSource as ds
 join tbl_PRM_LogicalReplica as lr on ds.DataSourceId=lr.DataSourceId
 join tbl_AM_Server as ag on ds.ServerId=ag.ServerId
 join tbl_SPM_Volume as vol on lr.PhysicalReplicaId=vol.VolumeSetID
-and vol.Usage =1 
-and lr.Validity in (1,2) 
+and vol.Usage =1
+and lr.Validity in (1,2)
 where ds.datasourcename like '%dpmdb%'
 and servername like '%dpmsqlservername%' --netbios name of server hosting DPMDB
 ```
@@ -257,8 +257,8 @@ You’ll need to know the barcode or tape labels of the tapes that contain a cop
 Select Path,ro.FileSpec,media.Label,media.BarcodeValue,pd.CreationDate,
 pd.ExpiryDate,pd.LifeStatus as "1=valid, 2=expired"
 from dbo.tbl_MM_MediaMap mm
-join dbo.tbl_MM_PhysicalDataset pd on pd.datasetid = mm.datasetid 
-join dbo.tbl_MM_Media media on media.MediaId = mm.MediaId 
+join dbo.tbl_MM_PhysicalDataset pd on pd.datasetid = mm.datasetid
+join dbo.tbl_MM_Media media on media.MediaId = mm.MediaId
 join dbo.tbl_RM_RecoverableObjectFileSpec ro on ro.DatasetId = mm.DatasetId
 where ro.filespec like '%DPMDB%'
 order by CreationDate desc
@@ -394,7 +394,3 @@ You can back up the DPM database as you would any other SQL Server database usin
     3.  Connect to the \\\\SERVERNAME\\DPMSERVERNAME\-dpmdb share using Explorer from any Windows computer
 
     4.  Right\-click the dpmdb.bak file to view the Properties. On the **Previous Versions** tab are all the backups that you can select and copy.
-
-
-
-
