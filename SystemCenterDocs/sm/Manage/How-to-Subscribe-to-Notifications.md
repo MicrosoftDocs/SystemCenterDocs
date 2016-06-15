@@ -114,7 +114,7 @@ In the first procedure, you set up a subscription so that a messaging analyst is
 
 -   Locate the notification subscription that you created in the list of subscriptions.
 
-![](Image/PSSymbol.gif)You can use a Windows PowerShell command to complete these tasks and other related tasks, as follows:
+![](../../media/PSSymbol.gif)You can use a Windows PowerShell command to complete these tasks and other related tasks, as follows:
 
 -   For information about how to use Windows PowerShell to create a new subscription in [!INCLUDE[smshort](../../includes/smshort_md.md)], see [New\-SCSMSubscription](http://go.microsoft.com/fwlink/p/?LinkID=225359).
 

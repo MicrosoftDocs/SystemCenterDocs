@@ -29,6 +29,6 @@ Use the following procedure to view the success or failure instances of the work
 
     The status of each workflow is displayed in the **Status** column.
 
-![](Image/PSSymbol.gif)You can use a Windows PowerShell command to complete this task. For information about how to use Windows PowerShell to retrieve the status of workflows in [!INCLUDE[smshort](../../includes/smshort_md.md)], see [Get\-SCSMWorkflowStatus](http://go.microsoft.com/fwlink/p/?LinkID=225347).
+![](../../media/PSSymbol.gif)You can use a Windows PowerShell command to complete this task. For information about how to use Windows PowerShell to retrieve the status of workflows in [!INCLUDE[smshort](../../includes/smshort_md.md)], see [Get\-SCSMWorkflowStatus](http://go.microsoft.com/fwlink/p/?LinkID=225347).
 
 
