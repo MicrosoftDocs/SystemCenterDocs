@@ -14,11 +14,10 @@ ms.assetid: 15b8e1cc-d5b1-4e23-a485-fa3b06b29bfe
 Using a Baseboard Management Controller \(BMC\), you can manage a computer remotely independent of the operating system, and control system functions such as the ability to turn the computer off or on.
 [!INCLUDE[vmm12sp1_long](../../includes/vmm12sp1_long_md.md)] uses BMCs to restart computers during bare\-metal provisioning processes, and when optimizing power usage.
 
-You can configure BMC settings and use the BMC   through [!INCLUDE[vmm12short](../../includes/vmm12short_md.md)] using the following procedures:
+You can configure BMC settings and use the BMC   through [!INCLUDE[vmm12short](../../includes/vmm12short_md.md)] using the following procedure:
 
 -   [Configuring BMC settings](#BKMK_ConfigBMC)
 
--   [Powering a computer on or off through VMM](How-to-configure-computer-BMC-settings-in-VMM.md#BKMK_power)
 
 In order for [!INCLUDE[vmm12short](../../includes/vmm12short_md.md)] to use a BMC, the BMC must meet the following requirements:
 
@@ -88,12 +87,5 @@ In order for [!INCLUDE[vmm12short](../../includes/vmm12short_md.md)] to use a BM
     > -   Information about power on and power off events is available in the BMC logs. To view BMC log information for a host, open the host properties, click the **Hardware** tab, and then under **Advanced**, click **BMC Logs**.
     > -   On HP computers, after the System Event Log is full, logging of new events stops and BMC logs display older events only.
 
-## See Also
-[Configuring Hyper-V host properties in VMM](Configuring-Hyper-V-host-properties-in-VMM.md)
-[Managing VMware ESX hosts and vCenter servers with VMM](Managing-VMware-ESX-hosts-and-vCenter-servers-with-VMM.md)
-[Deploying Scale-Out File Servers from bare metal with VMM](Deploying-Scale-Out-File-Servers-from-bare-metal-with-VMM.md)
-[Deploying Hyper-V hosts or host clusters from bare metal with VMM](Deploying-Hyper-V-hosts-or-host-clusters-from-bare-metal-with-VMM.md)
-[Managing infrastructure resources with VMM](Managing-infrastructure-resources-with-VMM.md)
-[Managing fabric resources with VMM](Managing-fabric-resources-with-VMM.md)
 
 

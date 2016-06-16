@@ -26,7 +26,7 @@ Note the following:
 
     For information about how to assign resources to a self\-service role, see [How to create a Self-Service User role in VMM](How-to-create-a-Self-Service-User-role-in-VMM.md). For information about how self\-service users can share resources between self\-service user roles, see [How to enable self-service users to share resources in VMM](How-to-enable-self-service-users-to-share-resources-in-VMM.md).
 
--   You can use [!INCLUDE[vmm12short](../../includes/vmm12short_md.md)] to configure availability settings for the virtual machine. For more information, see [Configuring availability options for virtual machines in VMM](Configuring-availability-options-for-virtual-machines-in-VMM.md).
+-   You can use [!INCLUDE[vmm12short](../../includes/vmm12short_md.md)] to configure availability settings for the virtual machine. 
 
 ## Creating a virtual machine
 Use the following procedure to create a virtual machine from a template.
@@ -140,10 +140,5 @@ Use the following procedure to deploy the virtual machine on a host.
 
     To confirm that the virtual machine was created, in the **Library** workspace, in the **Library** pane, expand **Library Servers**, expand the library server where you stored the virtual machine, and then click **Stored Virtual Machines and Services**. The stored virtual machine appears in the **Physical Library Objects** pane.
 
-## See Also
-[Creating and deploying virtual machines in VMM](Creating-and-deploying-virtual-machines-in-VMM.md)
-[How to create a virtual machine template](How-to-create-a-virtual-machine-template.md)
-[Managing virtual machines with VMM](Managing-virtual-machines-with-VMM.md)
-[Managing tenant resources with VMM](Managing-tenant-resources-with-VMM.md)
 
 

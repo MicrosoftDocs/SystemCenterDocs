@@ -49,11 +49,4 @@ You can use the following procedure to create a SQL Server profile in [!INCLUDE
 
     The SQL Server profile appears in the **Profiles** pane.
 
-## See Also
-[Creating profiles and templates in VMM](Creating-profiles-and-templates-in-VMM.md)
-[Preparing to create services in VMM](Preparing-to-create-services-in-VMM.md)
-[Creating service templates in VMM](Creating-service-templates-in-VMM.md)
-[Managing the VMM library and its resources](Managing-the-VMM-library-and-its-resources.md)
-[Managing fabric resources with VMM](Managing-fabric-resources-with-VMM.md)
-
 
