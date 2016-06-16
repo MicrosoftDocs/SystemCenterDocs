@@ -84,7 +84,7 @@ After members of the Advanced Operators, Authors, or Administrators user roles h
 
 6.  In the **Delete Item** dialog box, make sure that you selected the correct items, and then click **Yes**.
 
-![](../../media/PSSymbol.gif)You can use Windows PowerShell commands to complete these tasks, as follows:
+![PowerShell icon](../../media/PSSymbol.gif)You can use Windows PowerShell commands to complete these tasks, as follows:
 
 -   For information about how to use Windows PowerShell to permanently remove an instance of a configuration item object, see [Remove\-SCSMClassInstance](http://go.microsoft.com/fwlink/p/?LinkID=225414).
 
