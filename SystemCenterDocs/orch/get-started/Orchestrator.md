@@ -20,10 +20,6 @@ The following topics provide information to help you get started with [!INCLUDE[
 
 You can  read this topics to get an overview if you are new to Orchestrator.
 
-[Orchestrator Architecture](Orchestrator-Architecture.md)
-
-This topic goes into more details of the different  parts of Orchestrator.
-
 [Install Orchestrator](../Deploy/Install-Orchestrator.md)
 
 Topics in this section describe how to setup Orchestrator.
