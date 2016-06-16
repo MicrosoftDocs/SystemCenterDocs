@@ -4,7 +4,7 @@ ms.custom: na
 ms.prod: system-center-threshold
 ms.reviewer: na
 ms.suite: na
-ms.technology: 
+ms.technology:
   - service-manager
 ms.tgt_pltfrm: na
 ms.topic: article
@@ -15,7 +15,7 @@ It is assumed in this guide that you are installing [!INCLUDE[scsm_threshold_1](
 
 Including English, [!INCLUDE[scsm_threshold_1](../../includes/scsm_threshold_1_md.md)] supports a total of 21 languages. There are some search\-related issues with six languages: Czech, Danish, Finnish, Greek, Polish, and Turkish. For more information about these issues, see the section "Search Issues" in this topic.
 
-Setting your Windows locale on a computer that hosts a [!INCLUDE[smcons](../../includes/smcons_md.md)] to one of the supported languages results in [!INCLUDE[smshort12](../../includes/smshort12_md.md)] being displayed in that language. In addition to the languages that [!INCLUDE[smshort12](../../includes/smshort12_md.md)] supports, you must also consider the ability to search and sort data in the [!INCLUDE[smshort12](../../includes/smshort12_md.md)] databases. The ability to search and sort data in a specific language is defined by the collation settings in Microsoft SQL Server. For more information about SQL Server collations, see the section "Microsoft SQL Server 2008 with SP1" in [System Requirements for System Center 2012 - Service Manager](assetId:///847fcf88-bee5-49e5-a783-92ed432db3a4) in this guide.
+Setting your Windows locale on a computer that hosts a [!INCLUDE[smcons](../../includes/smcons_md.md)] to one of the supported languages results in [!INCLUDE[smshort12](../../includes/smshort12_md.md)] being displayed in that language. In addition to the languages that [!INCLUDE[smshort12](../../includes/smshort12_md.md)] supports, you must also consider the ability to search and sort data in the [!INCLUDE[smshort12](../../includes/smshort12_md.md)] databases. The ability to search and sort data in a specific language is defined by the collation settings in Microsoft SQL Server.
 
 The information in the following table represents the approved collations and the locale identifiers that were tested for [!INCLUDE[smshort12](../../includes/smshort12_md.md)]. In the list of collations in this table, “CI” indicates case\-insensitive, and “AS” indicates accent\-sensitive.
 
@@ -63,5 +63,3 @@ For more information, see the following links for the version of SQL Server tha
 
 ### Turkish Language
 None of the Turkish collations is supported in [!INCLUDE[smshort12](../../includes/smshort12_md.md)]. The Latin1\_General\_100\_CI\_AS collation was used for testing with the Turkish language. As a result, some search and sort operations in [!INCLUDE[smshort12](../../includes/smshort12_md.md)] will be affected for some Turkish characters.
-
-

@@ -4,14 +4,14 @@ ms.custom: na
 ms.prod: system-center-threshold
 ms.reviewer: na
 ms.suite: na
-ms.technology: 
+ms.technology:
   - data-protection-manager
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 4ed6e64f-21d4-4c93-9979-3f1a48317cbe
 ---
 # Identify compatible tape libraries
-Find the latest list of compatible tape libraries for DPM on the [TechNet wiki.](http://social.technet.microsoft.com/wiki/contents/articles/17105.compatible-tape-libraries-for-system-center-2012-dpm.aspx).
+Use the TechNet wiki to find the latest list of [compatible tape libraries for DPM](http://social.technet.microsoft.com/wiki/contents/articles/17105.compatible-tape-libraries-for-system-center-2012-dpm.aspx).
 
 ## Virtual tape library support
 Virtual tape libraries configured with a virtual fibre channel adapter are supported if you’re running Data Protection Manager 2012 R2 UR3 or later with certified hardware listed in the wiki. To check if your tape library is supported by the virtual fibre channel adapter, ask your tape hardware vendor to verify tape library compatibility.
@@ -90,5 +90,3 @@ DPMLibraryTest.exe /CERTIFY /<switch_1> [/switch_2]
 |\/SA|Run standalone drive test cases|**DPMLibraryTest.exe \/CERTIFY \/TL \\\\.\\Tape21745678 \/SA**|
 |\/EX|Show examples||
 |\/Help or \/?|Show help||
-
-

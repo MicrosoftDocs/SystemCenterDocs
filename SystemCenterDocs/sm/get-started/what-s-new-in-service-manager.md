@@ -1,16 +1,16 @@
 ---
-title: What&#39;s New in Service Manager for Technical Preview
+title: What&#39;s New in Service Manager
 ms.custom: na
 ms.prod: system-center-threshold
 ms.reviewer: na
 ms.suite: na
-ms.technology: 
+ms.technology:
   - service-manager
 ms.tgt_pltfrm: na
 ms.topic: get-started-article
 ms.assetid: 3eeb3265-88e0-47ed-b761-07f4e0634959
 ---
-# What&#39;s New in Service Manager for Technical Preview
+# What&#39;s New in Service Manager
 [!INCLUDE[scsm_threshold_1](../../includes/scsm_threshold_1_md.md)] is updated for [!INCLUDE[sc_threshold_1](../../includes/sc_threshold_1_md.md)] 5.
 
 For details about known issues that could affect you before you install [!INCLUDE[scsm_threshold_1](../../includes/scsm_threshold_1_md.md)], read the [Release Notes for System Center Technical Preview](../../get-started/Release-Notes-for-System-Center-Technical-Preview-5.md).
@@ -36,7 +36,7 @@ Here is the test bed that we tested:
 - 42 queues
 - Service Manager Data Warehouse registered
 - AD connector was running syncing 100K users
-- All computers had standard recommended configurations 
+- All computers had standard recommended configurations
 
 
 **Performance improvements are realized in the following ways:**
@@ -87,7 +87,7 @@ Service Manger can more easily handle a large inflow of 45 work items per minute
 
 With the Service Manager 2016 TP5 update, Service Manager cubes contain new date dimensions which will help you to create rich reports and slice data based on Year, Quarter, Month, Day etc.
 
-![date dimensionsImage/sm-date-dimensions.png)
+![date dimensions](../../media/sm-date-dimensions.png)
 
 The following new dimensions have been added to Service Manager data warehouse  cubes:
 
@@ -140,27 +140,27 @@ Cube Name: Service Manager Service Catalog library cube
 
 All these dimensions have the following attributes, which you can use for slicing your data:
 
- ![dimensions listImage/sm-dimensions-list.png)
- 
+![dimensions list](../../media/sm-dimensions-list.png)
+
 #### To add date dimensions for other date fields in custom cubes
 
-1.	In the management pack defining the cube definition, add the named Calculations for the required field like mentioned below: 
+1.	In the management pack defining the cube definition, add the named Calculations for the required field like mentioned below:
 
     ```
     <NamedCalculation ID="Incident_CreatedDate__DateKey" Target="IncidentDW!IncidentDim" ColumnType="Int">
             <Calculation>isNull(CONVERT(nvarchar(8), CreatedDate, 112),'20000101')</Calculation>
           </NamedCalculation>
     ```
- 
+
 The NamedCalculation ID should have string `__DateKey` in the end, and this field in the data warehouse should not be NULL or 0.
 2.	Seal the managment pack and import it into Service Manager.
 3.	Run the MPSyncJob on the data warehouse and wait until the management pack is marked **Completed**.
 4.	Process all the cubes, or wait for automatic processing overnight.
 5.	Cubes are updated with new date dimensions, as defined above.
- 
- 
+
+
  ## Updates to the Self Service Portal
- 
+
 The Self Service portal was updated for Technical Preview 5 with a number of bug fixes and new features:
 
 - Nested enumeration lists are now supported inside the Request offering forms.
@@ -189,7 +189,7 @@ The Self Service portal was updated for Technical Preview 5 with a number of bug
 - A share button has been added in all Self Service Portal pages to easily share a Request offering, submitted Request, Activity or a Help article.
 - You can configure the work item active state enumeration.
 - Attachments are now listed and you can download them from My Requests.
- 
+
 
 
 ## Improvements from previous technical preview releases of Service Manager 2016
@@ -206,7 +206,7 @@ Service Manager technical previews are cumulative, so this version contains all 
 
 
 ## Improvements in technical preview 4
-Key improvements in this relase:
+Key improvements in this release:
 
 -   Support for Lync 2013 and Skype for Business
 
@@ -256,18 +256,18 @@ For more information and installing and customizing the portal, see [Deploy the 
 #### Announcements in the Self Service Portal
 You can see **Announcements** in the portal in the upper right corner.
 
-![](Image/sm-sspannounce01.png)
+![](../../media/sm-sspannounce01.png)
 
 When you click **Announcements**, the list is displayed.
 
-![](Image/sm-sspannounce02.jpg)
+![](../../media/sm-sspannounce02.jpg)
 
 -   Active announcements appear collapsed on the portal home page.
 
 #### Service Catalog in the Self Service Portal
 You can see the **Service Catalog** in the portal in the upper left corner.
 
-![](Image/sm-sspcatalog01.jpg)
+![](../../media/sm-sspcatalog01.jpg)
 
 -   The Service Catalog on the home page presents all the request offerings, grouped by their respective service offerings \(sorted in alphabetical order\), accessible to the logged in user.
 
@@ -280,7 +280,7 @@ You can see the **Service Catalog** in the portal in the upper left corner.
 #### Help Articles in the Self Service Portal
 The **Help Articles** icon is on the left side of the portal home page.
 
-![](Image/sm-ssphelp01.jpg)
+![](../../media/sm-ssphelp01.jpg)
 
 -   When a user clicks the **Help Articles** tab on the navigation bar, the list of all help articles that are marked as a favorite and the most popular help articles are displayed.
 
@@ -294,19 +294,19 @@ The **Help Articles** icon is on the left side of the portal home page.
 
 -   The hyperlink to the help article only works for those users who have access to that article.
 
--   Clicking **Favorite this** adds the help article to the list of favourite help articles for easy access to frequently used help pages.
+-   Clicking **Favorite this** adds the help article to the list of favorite help articles for easy access to frequently used help pages.
 
 #### My Requests in the Self Service Portal
 The **My Requests** icon  is on the left side of the portal home page.
 
-![](Image/sm-ssprequests01.jpg)
+![](../../media/sm-ssprequests01.jpg)
 
 -   **My Requests** displays all the incidents and service requests where the signed\-in user is the affected user.
 
 #### My Activities in the Self Service Portal
 The **My Activities** icon  is on the left side of the portal home page.
 
-![](Image/sm-sspactivities01.jpg)
+![](../../media/sm-sspactivities01.jpg)
 
 -   **My Activities** shows all the manual and review activities which have the signed\-in user as the activity implementer or if the user is in the reviewer list.
 
@@ -316,7 +316,7 @@ The **My Activities** icon  is on the left side of the portal home page.
 The Active Directory and SCCM connectors in Service Manager can import large amounts of data into the Service Manager database. In doing so, they not only increase the size of the data table, which is where the data from the connectors are stored, but they also increase the size of the EntityChangeLog \(ECL\) table and history tables considerably. A large ECL table size can be a problem—in some cases, it can slow down the system significantly.
 
 The ECL table, and the history tables in this case, store details about when the data was brought into Service Manager and the properties that were added or updated for each data item.
-Disabling ELC logging, doesn’t affect importing data from connectors. Instead, most logging data doesn’t get written to the ECL and history tables, which can result is significant performance improvement. 
+Disabling ELC logging, doesn’t affect importing data from connectors. Instead, most logging data doesn’t get written to the ECL and history tables, which can result is significant performance improvement.
 Disabled ECL logging is not automatically turned on. In other words, by default, ECL logging is enabled. However, you can easily turn on Disabled ECL logging by revising a registry key value. For more information, see [Optionally Disable ECL Logging for Faster Connector Synchronization](../Deploy/Optionally-Disable-ECL-Logging-for-Faster-Connector-Synchronization.md).
 
 **Grooming improvements for ECL logs**
@@ -354,7 +354,7 @@ The Setup wizard allows you to easily install Service Manager in complex configu
 
 Now you can configure the SQL management server, instance name and port number together.
 
-![](Image/sm-sqlserver-config.png)
+![](../../media/sm-sqlserver-config.png)
 
 ### Known Issues in this release
 Service Manager 2016 Technical Preview 4 is still in development and this release contains some issues that haven’t been fixed yet. Some of the known issues in this release include:
@@ -380,5 +380,3 @@ As always, we recommend that you perform typical or routine tasks in the test en
 **Significant performance improvements**.  Service Manager's Active Directory and System Center Configuration Manager connectors performance was improved. In internal testing at Microsoft, sync time improved by about 50% for the SCCM connector and about 35% for the AD connector. You can read more about performance improvements at the [Service Manager blog](http://blogs.technet.com/b/servicemanager/archive/2015/03/19/sccm-lfx-connector-performance-improvements.aspx).
 
 **Configurable Active Directory connector sync schedules**. Now you can better plan the load placed on your workflow server by scheduling AD connector sync cycles outside of work hours.
-
-
