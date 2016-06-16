@@ -31,8 +31,7 @@ A virtual IP \(VIP\) template contains load balancer\-related configuration sett
 
 After you create a VIP template, users \(including self\-service users\) can specify the VIP template when they create a service. When a user models a service, they can pick an available template that best matches their needs for the type of load balancer and the type of application.
 
-> [!NOTE]
-> For information about how to create VIP templates, see [How to create VIP templates for hardware load balancers in VMM](How-to-create-VIP-templates-for-hardware-load-balancers-in-VMM.md) and [How to create VIP templates for Network Load Balancing &#40;NLB&#41; in VMM](How-to-create-VIP-templates-for-Network-Load-Balancing--NLB--in-VMM.md).
+
 
 ### <a name="BKMK_hw"></a>Hardware load balancer workflow
 The following list describes the hardware load balancer workflow to load balance a service tier:
@@ -106,7 +105,7 @@ This is the NLB workflow:
 
 3.  A user \(typically a self\-service user\) configures a service template by doing the following:
 
-    -   For the tier that will be load balanced, the user must specify a virtual machine template that meets the specific configuration requirements for NLB. For information about the configuration requirements, see [How to configure NLB for a service tier](How-to-configure-NLB-for-a-service-tier.md).
+    -   For the tier that will be load balanced, the user must specify a virtual machine template that meets the specific configuration requirements for NLB. 
 
     -   In the Service Template Designer window, the user adds a load balancer, and then selects which VIP template to use.
 
@@ -116,21 +115,4 @@ This is the NLB workflow:
 
     > [!NOTE]
     > For more detailed information about how to load\-balance a service tier by using NLB, see [How to configure NLB for a service tier](How-to-configure-NLB-for-a-service-tier.md).
-
-## In this section
-To configure load balancing in your virtualized environment, follow these procedures:
-
-|Procedure|Description|
-|-------------|---------------|
-|[How to add hardware load balancers in VMM](How-to-add-hardware-load-balancers-in-VMM.md)|Describes how to add supported hardware load balancers to the [!INCLUDE[vmm12short](../../includes/vmm12short_md.md)] environment so that you can load balance service requests. **Note:** If you want to use Microsoft Network Load Balancing \(NLB\), you do not have to add a hardware load balancer. When you install [!INCLUDE[vmm12short](../../includes/vmm12short_md.md)], NLB is automatically included as a load balancer. To use NLB, you must create NLB virtual IP templates, described in the last row of this table.|
-|[How to create VIP templates for hardware load balancers in VMM](How-to-create-VIP-templates-for-hardware-load-balancers-in-VMM.md)|Describes how to create VIP templates that you can use during service creation to help choose a hardware load balancer that best suits the need of the application.|
-|[How to create VIP templates for Network Load Balancing &#40;NLB&#41; in VMM](How-to-create-VIP-templates-for-Network-Load-Balancing--NLB--in-VMM.md)|Describes how to create NLB VIP templates that you can use during service creation to configure NLB for a service tier.|
-
-## See Also
-[Overview: plan logical networks, network sites, and IP address pools in VMM](Overview--plan-logical-networks,-network-sites,-and-IP-address-pools-in-VMM.md)
-[Overview: plan logical switches and port profiles in VMM](Overview--plan-logical-switches-and-port-profiles-in-VMM.md)
-[Prerequisites for gateways in VMM](Prerequisites-for-gateways-in-VMM.md)
-[Managing network resources with VMM](Managing-network-resources-with-VMM.md)
-[Managing fabric resources with VMM](Managing-fabric-resources-with-VMM.md)
-
 

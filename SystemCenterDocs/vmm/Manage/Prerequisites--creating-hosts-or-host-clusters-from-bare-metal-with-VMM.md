@@ -22,7 +22,7 @@ This topic lists the prerequisites for the process of provisioning Hyper\-V host
 ## <a name="BKMK_computer"></a>Physical computer and related requirements
 The computers to which you deploy hosts or clusters can be “bare\-metal computers” \(no operating system installed\), or computers with an installed operating system that will be overwritten during the process.
 
--   **BMC**: Each physical computer must have a baseboard management controller \(BMC\) installed and configured for out\-of\-band management by [!INCLUDE[vmm12short](../../includes/vmm12short_md.md)] as described in [How to configure computer BMC settings in VMM](How-to-configure-computer-BMC-settings-in-VMM.md).
+-   **BMC**: Each physical computer must have a baseboard management controller \(BMC\) installed and configured for out\-of\-band management by [!INCLUDE[vmm12short](../../includes/vmm12short_md.md)].
 
 -   **BIOS boot order**: On each computer, set the BIOS boot order to boot from a Pre\-Boot Execution Environment \(PXE\)\-enabled network adapter as the first device.
 
