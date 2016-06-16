@@ -17,10 +17,6 @@ For information about how to install [!INCLUDE[scor_threshold_1](../../includes/
 
 ## Install [!INCLUDE[scor_threshold_1](../../includes/scor_threshold_1_md.md)]
 
--   [How to Install Orchestrator on a Single Computer](How-to-Install-Orchestrator-on-a-Single-Computer.md)
-
-    Provides detailed information about how to install [!INCLUDE[scor_threshold_1](../../includes/scor_threshold_1_md.md)] on a single computer.
-
 -   [How to install Orchestrator Features](How-to-install-Orchestrator-Features.md)
 
     Provides detailed information about how to install each [!INCLUDE[scor_threshold_1](../../includes/scor_threshold_1_md.md)] feature.
