@@ -53,6 +53,6 @@ Before you use these procedures, make sure that you import the SQL Server manag
 
 5.  If you have made any changes to the item, click **OK**; otherwise, click **Cancel** to close the form.
 
-![](../../media/PSSymbol.gif)You can use Windows PowerShell commands to display views that are defined in [!INCLUDE[smshort](../../includes/smshort_md.md)]. For more information, see [Get\-SCSMView](http://go.microsoft.com/fwlink/p/?LinkID=225344).
+![](../../media/pssymbol.png)You can use Windows PowerShell commands to display views that are defined in [!INCLUDE[smshort](../../includes/smshort_md.md)]. For more information, see [Get\-SCSMView](http://go.microsoft.com/fwlink/p/?LinkID=225344).
 
 

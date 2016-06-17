@@ -15,7 +15,7 @@ The single\-server management group scenario combines all the management group r
 
 You deploy [!INCLUDE[om12short](../../includes/om12short_md.md)] in a single\-server management group when you want to use it for evaluation, testing, and management pack development, usually in non\-production or preproduction environments.
 
-![](Image/OperationsManager_SingleServer.jpeg)
+![Single Server Deployment](../media/om-single-server-deployment.png)
 
 ## Operations Manager Services
 The single\-server management group configuration supports the following services:

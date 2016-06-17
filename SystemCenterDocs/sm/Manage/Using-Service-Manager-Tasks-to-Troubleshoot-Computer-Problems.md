@@ -82,7 +82,7 @@ Use the following procedures in Service Manager to create a task—for example, 
 
 5.  Notice that Event Viewer starts, and the events from the computer that are associated with the incident are displayed.
 
-![](../../media/PSSymbol.gif)You can use the Get\-SCSMTask Windows PowerShell command to view [!INCLUDE[smshort](../../includes/smshort_md.md)] tasks.
+![](../../media/pssymbol.png)You can use the Get\-SCSMTask Windows PowerShell command to view [!INCLUDE[smshort](../../includes/smshort_md.md)] tasks.
 
 
 

@@ -16,6 +16,6 @@ Many of the configuration items that are found in the Service Manager database a
 If you are creating a new connector to replace an existing connector, create the new connector first, and then synchronize the new connector before deleting the old connector.
 
 > [!TIP]
-> ![](../../media/PSSymbol.gif)You can use a Windows PowerShell command to remove a connector from Service Manager. For more information, see [Remove\-SCSMConnector](http://go.microsoft.com/fwlink/p/?LinkID=225363).
+> ![](../../media/pssymbol.png)You can use a Windows PowerShell command to remove a connector from Service Manager. For more information, see [Remove\-SCSMConnector](http://go.microsoft.com/fwlink/p/?LinkID=225363).
 
 

@@ -28,7 +28,7 @@ Monitoring a Nano Server installation is similar to monitoring any other install
 
 You will need to follow the steps listed below to start monitoring a Nano Server.
 
-1.  [Install the Operations Manager agent on a Nano server](Install-Agent-on-Windows-Using-the-Discovery-Wizard.xml).
+1.  [Install the Operations Manager agent on a Nano server](Install-the-Agent-Using-the-Discovery-Wizard.md).
 
 2.  [Validate that the Operations Manager agent has been successfully installed](#BKMK_validateinstall)
 
