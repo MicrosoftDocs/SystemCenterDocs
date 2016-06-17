@@ -37,6 +37,6 @@ Use the following procedures to add a user to the [!INCLUDE[smshort](../../inclu
 
 -   Log on to the [!INCLUDE[smcons](../../includes/smcons_md.md)] as one of the users assigned to the user role. Verify that you cannot access data for which you do not have access rights, as specified in the user roles.
 
-![](../../media/PSSymbol.gif)You can use a Windows PowerShell command to view users. For information about how to use Windows PowerShell to retrieve users that are defined in [!INCLUDE[smshort](../../includes/smshort_md.md)], see [Get\-SCSMUser](http://go.microsoft.com/fwlink/p/?LinkId=225335).
+![](../../media/pssymbol.png)You can use a Windows PowerShell command to view users. For information about how to use Windows PowerShell to retrieve users that are defined in [!INCLUDE[smshort](../../includes/smshort_md.md)], see [Get\-SCSMUser](http://go.microsoft.com/fwlink/p/?LinkId=225335).
 
 

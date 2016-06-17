@@ -81,6 +81,6 @@ You can use the following procedures to create a connector to import data from C
 
 -   View the columns in the **Connector** pane; the columns contain information about the start time, the finish time, the status, and the percentage of completion.
 
-![](../../media/PSSymbol.gif)You can use a Windows PowerShell command to create a new Configuration Manager 2007 connector. For information about how to use Windows PowerShell to create a new Configuration Manager 2007 connector in Service Manager, see [New\-SCCMConnector](http://go.microsoft.com/fwlink/p/?LinkId=225350).
+![](../../media/pssymbol.png)You can use a Windows PowerShell command to create a new Configuration Manager 2007 connector. For information about how to use Windows PowerShell to create a new Configuration Manager 2007 connector in Service Manager, see [New\-SCCMConnector](http://go.microsoft.com/fwlink/p/?LinkId=225350).
 
 

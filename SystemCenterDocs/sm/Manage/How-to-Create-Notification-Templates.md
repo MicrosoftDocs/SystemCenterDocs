@@ -113,7 +113,7 @@ The following two templates are prerequisites for other procedures:
 
 -   Verify that the new template you created appears in the list of notification templates.
 
-![](../../media/PSSymbol.gif)You can use Windows PowerShell commands to complete these and other related tasks, as follows:
+![](../../media/pssymbol.png)You can use Windows PowerShell commands to complete these and other related tasks, as follows:
 
 -   For information about how to use Windows PowerShell to create a new Email template in [!INCLUDE[smshort](../../includes/smshort_md.md)], see [New\-SCSMEmailTemplate](http://go.microsoft.com/fwlink/p/?LinkID=225355).
 

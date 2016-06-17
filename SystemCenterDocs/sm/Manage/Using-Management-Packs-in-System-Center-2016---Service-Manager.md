@@ -46,7 +46,7 @@ For more information about how to create and customize management packs, see [Ma
 
 -   In the [!INCLUDE[smcons](../../includes/smcons_md.md)], open the **Management Packs** view, and verify that the new management pack appears in the **Management Packs** pane.
 
-![](../../media/PSSymbol.gif)You can use Windows PowerShell commands to complete these tasks, as follows:
+![](../../media/pssymbol.png)You can use Windows PowerShell commands to complete these tasks, as follows:
 
 -   For information about how to use Windows PowerShell to create a new management pack, see [New\-SCSMManagementPack](http://go.microsoft.com/fwlink/p/?LinkID=225411).
 
@@ -83,7 +83,7 @@ Use the following procedures to export an unsealed management pack and then vali
 
 -   In Windows Explorer, ensure that you can locate the management pack file.
 
-![](../../media/PSSymbol.gif)You can use Windows PowerShell commands to complete this task. For information about how to use Windows PowerShell to export a management pack as a valid XML\-formatted file that you can later import into [!INCLUDE[smshort](../../includes/smshort_md.md)] or [!INCLUDE[om12short](../../includes/om12short_md.md)], see [Export\-SCSMManagementPack](http://go.microsoft.com/fwlink/p/?LinkID=225398).
+![](../../media/pssymbol.png)You can use Windows PowerShell commands to complete this task. For information about how to use Windows PowerShell to export a management pack as a valid XML\-formatted file that you can later import into [!INCLUDE[smshort](../../includes/smshort_md.md)] or [!INCLUDE[om12short](../../includes/om12short_md.md)], see [Export\-SCSMManagementPack](http://go.microsoft.com/fwlink/p/?LinkID=225398).
 
 
 ## How to Import a Management Pack
@@ -118,7 +118,7 @@ Use the following procedure to import a single management pack, or a management 
 
 -   In the [!INCLUDE[smcons](../../includes/smcons_md.md)], select the **Management Packs** view, and ensure that the intended management packs appear in the **Management Packs** list.
 
-![](../../media/PSSymbol.gif)You can use Windows PowerShell commands to complete these and other related tasks, as follows:
+![](../../media/pssymbol.png)You can use Windows PowerShell commands to complete these and other related tasks, as follows:
 
 -   For information about how to use Windows PowerShell to import a management pack, see [Import\-SCSMManagementPack](http://go.microsoft.com/fwlink/p/?LinkID=225396).
 

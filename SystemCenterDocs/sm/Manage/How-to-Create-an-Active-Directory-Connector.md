@@ -75,6 +75,6 @@ You can use the following procedures in Service Manager to create,  validate, an
 
 -   View the columns in the **Connector** pane; the columns contain information about the start time, the finish time, the status, and the percentage of imported configuration items.
 
-![](../../media/PSSymbol.gif)You can use a Windows PowerShell command to create a new [!INCLUDE[smshort12](../../includes/smshort12_md.md)] Active Directory connector. For information about how to use Windows PowerShell to create a new [!INCLUDE[smshort12](../../includes/smshort12_md.md)] Active Directory connector, see [New\-SCADConnector](http://go.microsoft.com/fwlink/?LinkId=225349).
+![](../../media/pssymbol.png)You can use a Windows PowerShell command to create a new [!INCLUDE[smshort12](../../includes/smshort12_md.md)] Active Directory connector. For information about how to use Windows PowerShell to create a new [!INCLUDE[smshort12](../../includes/smshort12_md.md)] Active Directory connector, see [New\-SCADConnector](http://go.microsoft.com/fwlink/?LinkId=225349).
 
 

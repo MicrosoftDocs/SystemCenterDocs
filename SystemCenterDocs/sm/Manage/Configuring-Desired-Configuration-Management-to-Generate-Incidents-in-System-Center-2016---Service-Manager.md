@@ -70,7 +70,7 @@ You can use the following procedures to configure incident management to automat
 
 6.  Verify that the correct configuration baseline and Configuration Manager configuration items are listed.
 
-![](../../media/PSSymbol.gif)You can use Windows PowerShell commands to complete these and other related tasks, as follows:
+![](../../media/pssymbol.png)You can use Windows PowerShell commands to complete these and other related tasks, as follows:
 
 -   For information about how to use Windows PowerShell to create a desired configuration management workflow in [!INCLUDE[smshort](../../includes/smshort_md.md)], see [New\-SCSMDCMWorkflow](http://go.microsoft.com/fwlink/p/?LinkID=225354).
 

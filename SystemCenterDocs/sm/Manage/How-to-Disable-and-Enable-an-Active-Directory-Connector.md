@@ -41,7 +41,7 @@ You can use the following procedure to disable or enable an Active Directory con
 
 2.  In the middle pane, locate the connector for which you have changed status, and then verify the value in the **Enabled** column.
 
-![](../../media/PSSymbol.gif)You can use Windows PowerShell commands to complete these tasks and other related tasks, as follows:
+![](../../media/pssymbol.png)You can use Windows PowerShell commands to complete these tasks and other related tasks, as follows:
 
 -   For information about how to use Windows PowerShell to start a Service Manager connector, see [Start\-SCSMConnector](http://go.microsoft.com/fwlink/p/?LinkID=225378).
 
