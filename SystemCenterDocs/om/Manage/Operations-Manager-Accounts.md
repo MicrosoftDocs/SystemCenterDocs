@@ -73,12 +73,12 @@ When implementing discovery\-based agent deployment, you are prompted for an acc
 This is the action account which is used for creating and sending notifications. Ensure that the credentials you use for this account have sufficient rights for the SMTP server, instant messaging server, or SIP server that you will use for notifications.
 
 ## See Also
-[Implementing User Roles](Implementing-User-Roles.md)
+[Implementing User Roles](https://technet.microsoft.com/library/hh230728%28v=sc.12%29.aspx)
 [Managing Access in Operations Manager](Managing-Access-in-Operations-Manager.md)
-[How to Create a New Action Account in Operations Manager](How-to-Create-a-New-Action-Account-in-Operations-Manager.md)
-[How to Manage the Report Server Unattended Execution Account in Operations Manager](How-to-Manage-the-Report-Server-Unattended-Execution-Account-in-Operations-Manager.md)
-[Control Access by Using the Health Service Lockdown Tool in Operations Manager](Control-Access-by-Using-the-Health-Service-Lockdown-Tool-in-Operations-Manager.md)
-[Accessing UNIX and Linux Computers in Operations Manager](Accessing-UNIX-and-Linux-Computers-in-Operations-Manager.md)
+[How to Create a New Action Account in Operations Manager](https://technet.microsoft.com/library/hh230739%28v=sc.12%29.aspx)
+[How to Manage the Report Server Unattended Execution Account in Operations Manager](https://technet.microsoft.com/library/hh443401%28v=sc.12%29.aspx)
+[Control Access by Using the Health Service Lockdown Tool in Operations Manager](https://technet.microsoft.com/library/hh212737%28v=sc.12%29.aspx)
+[Accessing UNIX and Linux Computers in Operations Manager](https://technet.microsoft.com/library/hh212886%28v=sc.12%29.aspx)
 [Managing Run As Accounts and Profiles](Managing-Run-As-Accounts-and-Profiles.md)
 
 
