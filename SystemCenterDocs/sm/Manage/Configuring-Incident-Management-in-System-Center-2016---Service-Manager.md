@@ -41,7 +41,7 @@ The policy at your organization might limit the number of files that can be atta
 
 Incident priority calculation is rated on a scale from 1 to 9. A priority of 1 is the highest priority. It is based on a combination of impact and urgency. Impact and urgency settings are defined as High, Medium, or Low, and they are configured when the incident is created. The following table shows how to define the incident priority for each possible combination of impact and urgency.
 
-![](../../media/PriorityCalculationTable.gif)
+![](../../media/PriorityCalculationTable.png)
 
 The resolution time defines how much time it should take to resolve an incident. Resolution time is based on priority. Typically, you should set resolution times for higher\-priority incidents. The procedures in this section describe how to set the values for file attachments, incident priority, and resolution time.
 
