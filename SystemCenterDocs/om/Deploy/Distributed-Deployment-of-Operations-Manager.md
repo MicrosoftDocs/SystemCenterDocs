@@ -15,7 +15,7 @@ The distributed management group installation will form the foundation of 99 per
 
 The following diagram presents one possible option for the distributed management group topology.
 
-![](Image/OM_Distributed_Deployment.gif)
+![Example OM Distributed MG](../media/om-distributed-deployment.png)
 
 > [!NOTE]
 > There is no direct communication between an operations console and the databases. All communication goes to the resource pool through TCP 5724, and then to the database servers using OLE DB on TCP 1433 or another customized port a customer establishes. However, there is direct communication between an Application Diagnostics console \(residing with a web console\) and databases.
@@ -113,6 +113,6 @@ This section of the Deployment Guide contains the following topics:
 -   [How to Deploy a Gateway Server](assetId:///cc38412e-d5c6-429a-ac70-b01b7651e4d5)
 
 ## See Also
-[Deploying System Center 2016 - Operations Manager](Deploying-System-Center-2016---Operations-Manager.md)
+[Deploying System Center 2016 - Operations Manager](Deploying-System-Center-2016-Operations-Manager.md)
 
 

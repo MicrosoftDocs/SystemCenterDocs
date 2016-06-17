@@ -14,16 +14,16 @@ ms.assetid: 99476f7f-102f-47ab-b3b2-72dd55d2f601
 
 ## Operations Manager Monitoring Scenarios topics
 
--   [Agentless Monitoring in Operations Manager_1](Agentless-Monitoring-in-Operations-Manager_1.md)
+-   [Agentless Monitoring in Operations Manager](https://technet.microsoft.com/en-us/library/hh212910%28v=sc.12%29.aspx)
 
--   [Collecting Security Events Using Audit Collection Services in Operations Manager_1](Collecting-Security-Events-Using-Audit-Collection-Services-in-Operations-Manager_1.md)
+-   [Collecting Security Events Using Audit Collection Services in Operations Manager](https://technet.microsoft.com/library/hh212908%28v=sc.12%29.aspx)
 
 -   [Monitoring Nano Server](Monitoring-Nano-Server.md)
 
--   [Monitoring Networks by Using Operations Manager_1](Monitoring-Networks-by-Using-Operations-Manager_1.md)
+-   [Monitoring Networks by Using Operations Manager](https://technet.microsoft.com/library/hh212935%28v=sc.12%29.aspx)
 
--   [Monitoring Service Level Objectives by Using Operations Manager_1](Monitoring-Service-Level-Objectives-by-Using-Operations-Manager_1.md)
+-   [Monitoring Service Level Objectives by Using Operations Manager](https://technet.microsoft.com/library/hh212753%28v=sc.12%29.aspx)
 
--   [Monitoring UNIX and Linux Computers by Using Operations Manager_1](Monitoring-UNIX-and-Linux-Computers-by-Using-Operations-Manager_1.md)
+-   [Monitoring UNIX and Linux Computers by Using Operations Manager](https://technet.microsoft.com/library/hh212754%28v=sc.12%29.aspx)
 
 

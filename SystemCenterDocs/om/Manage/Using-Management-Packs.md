@@ -17,7 +17,7 @@ Management packs might also contain tasks, diagnostics, and recovery tools and g
 
 ## Using Management Packs topics
 
--   [What Is in an Operations Manager Management Pack?](What-is-in-an-Operations-Manager-Management-Pack-.md)
+-   [What Is in an Operations Manager Management Pack?](https://technet.microsoft.com/library/hh212794%28v=sc.12%29.aspx)
 
     Provides an overview of management pack structure and components.
 
@@ -25,7 +25,7 @@ Management packs might also contain tasks, diagnostics, and recovery tools and g
 
     Provides procedures for downloading and importing management packs.
 
--   [Creating a Management Pack for Overrides](Creating-a-Management-Pack-for-Overrides.md)
+-   [Creating a Management Pack for Overrides](https://technet.microsoft.com/library/hh212841%28v=sc.12%29.aspx)
 
     Explains how to organize and store the overrides you configure.
 

@@ -15,7 +15,7 @@ ms.assetid: 66b6b089-d888-431f-845f-ee689b69ba1a
 
 To begin monitoring, computers must be discovered. For a description of the discovery process, see “How Objects Are Discovered and Monitored” in [Key Concepts](../get-started/Operations-Manager-Key-Concepts.md).
 
-Comprehensive monitoring requires that an agent be installed on the discovered computer. This section explains how to discover computers, install agents on discovered computers, and configure agents. It also provides instructions for uninstalling agents. For information about monitoring computers without installing an agent, see [Agentless Monitoring in Operations Manager](Agentless-Monitoring-in-Operations-Manager.md) and [Client Monitoring Using Agentless Exception Monitoring in Operations Manager](Client-Monitoring-Using-Agentless-Exception-Monitoring-in-Operations-Manager.md).
+Comprehensive monitoring requires that an agent be installed on the discovered computer. This section explains how to discover computers, install agents on discovered computers, and configure agents. It also provides instructions for uninstalling agents. For information about monitoring computers without installing an agent, see [Agentless Monitoring in Operations Manager](Agentless-Monitoring-in-Operations-Manager.md) and [Client Monitoring Using Agentless Exception Monitoring in Operations Manager](https://technet.microsoft.com/library/hh230748%28v=sc.12%29.aspx).
 
 > [!NOTE]
 > For problems with discovery, see [Troubleshooting Discovery in Operations Manager](http://go.microsoft.com/fwlink/p/?LinkId=235123).
@@ -64,10 +64,10 @@ Comprehensive monitoring requires that an agent be installed on the discovered c
 
 -   [Operations Manager Monitoring Scenarios](Operations-Manager-Monitoring-Scenarios.md)
 
--   [Getting Information from Operations Manager](Getting-Information-from-Operations-Manager.md)
+-   [Getting Information from Operations Manager](https://technet.microsoft.com/library/hh212876%28v=sc.12%29.aspx)
 
--   [General Tasks in Operations Manager](General-Tasks-in-Operations-Manager.md)
+-   [General Tasks in Operations Manager](https://technet.microsoft.com/library/hh212906%28v=sc.16%29.aspx)
 
--   [Maintenance of Operations Manager](Maintenance-of-Operations-Manager.md)
+-   [Maintenance of Operations Manager](https://technet.microsoft.com/library/hh212717%28v=sc.12%29.aspx)
 
 

@@ -25,7 +25,7 @@ You can use resource pools for:
 
 Resource pools ensure the continuity of monitoring by providing multiple management servers that can take on monitoring workflows if one of the management servers becomes unavailable. You can create resource pools for specific purposes. For example, you might create a resource pool of management servers that are located in the same geographic area to provide network device monitoring.
 
-When [!INCLUDE[om12short](../../includes/om12short_md.md)] is installed, three resource pools are created: All Management Servers Resource Pool, Notifications Resource Pool, and AD Assignment Resource Pool. All management servers are automatically members of these resource pools. For information about removing a management server from the Notifications Resource Pool and AD Assignment Resource Pool, see [Modifying Resource Pool Membership](#bkmk_modifyingresourcepoolmembership).   
+When [!INCLUDE[om12short](../../includes/om12short_md.md)] is installed, three resource pools are created: All Management Servers Resource Pool, Notifications Resource Pool, and AD Assignment Resource Pool. All management servers are automatically members of these resource pools. For information about removing a management server from the Notifications Resource Pool and AD Assignment Resource Pool, see [Modifying Resource Pool Membership](#modifying-resource-pool-membership).   
 
 > [!NOTE]
 > The membership of the All Management Servers Resource Pool is read\-only.  To change its membership  from automatic to manual, run the following PowerShell code in the Operations Manager Command Shell:
@@ -34,9 +34,9 @@ When [!INCLUDE[om12short](../../includes/om12short_md.md)] is installed, three r
 
 In certain architectures and design considerations, such as those incorporating geographically dispersed contingency operations, automatic assignment to the All Management Servers Resource Pool may not be desired.  In these situations, it is recommended to change the membership assignment from automatic to manual.  As such, management servers must be added to the All Management Servers Resource Pool through manual assignment.  With the introduction of resource pools it is recommended that all management servers be connected by a low latency network (less than 10 ms). Management servers should not be deployed across multiple data centers or in a hybrid-cloud environment like Microsoft Azure.
 
-For information about configuring resource pools with managed UNIX and Linux computers and for configuring certificates, see [Changing Resource Pools for UNIX or Linux Computers](#BKMK_changeunix)
+For information about configuring resource pools with managed UNIX and Linux computers and for configuring certificates, see [Managing Resource Pools for UNIX or Linux Computers](https://technet.microsoft.com/library/hh287152%28v=sc.12%29.aspx)
 
-## <a name="bkmk_tocreatearesourcepool"></a>To create a resource pool
+## To create a resource pool
 
 1.  Log on to the Operations console with an account that is a member of the Operations Manager Administrators role.
 
@@ -60,10 +60,10 @@ For information about configuring resource pools with managed UNIX and Linux com
 
 11. When the wizard completes, click **Close**.
 
-## <a name="bkmk_modifyingresourcepoolmembership"></a>Modifying Resource Pool Membership
+## Modifying Resource Pool Membership
 When you view the resource pools in the **Administration** workspace, you will see that resource pools that you create have a manual membership type and resource pools created when Operations Manager was installed have an automatic membership type, as shown in the following image.
 
-![](Image/ResourcePoolMembershipType.gif)
+![Resource Pool Membership Type](../media/om-resourcepool-membership-type.png)
 
 By default, all management servers are members of the resource pools created when Operations Manager is installed, and any management servers added to the management group are automatically added to the resource pools that have an automatic membership type. You can remove individual management servers from those resource pools, however that will change the membership type to manual. If you add a management server to a management group after the membership type of the resource pools created when Operations Manager was installed is changed to manual, you must add the management server to the resource pool manually.
 
@@ -88,7 +88,7 @@ By default, all management servers are members of the resource pools created whe
 
 8.  On the **Summary** page, click **Save**.
 
-## <a name="BKMK_changeunix"></a>Changing Resource Pools
+## Changing Resource Pools
 The following procedure does not modify the members of a resource pool, only what the resource pool manages.
 
 #### To change resource pools
