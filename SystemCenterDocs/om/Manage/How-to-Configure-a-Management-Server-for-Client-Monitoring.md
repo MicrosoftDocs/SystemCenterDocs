@@ -10,7 +10,8 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 78b3896d-2333-4900-82e1-202b834d0f77
 ---
-# How to Configure a Management Server for Client Monitoring_1
+# How to Configure a Management Server for Client Monitoring
+
 Use the following procedures to configure a management server for the server component of the Client Monitoring feature of [!INCLUDE[om12long](../../includes/om12long_md.md)].
 
 > [!IMPORTANT]
