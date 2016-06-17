@@ -1,13 +1,16 @@
 ---
-title: Manage and monitor DPM servers with Operations Manager
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 97fd6656-af44-4e5c-bef8-dc57643b0181
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  markgalioto
+ms.prod:  system center 2016
+keywords:  system center, dpm
+ms.date:  2016-06-17
+title:  Manage and monitor DPM servers with Operations Manager
+ms.technology:  dpm
+ms.assetid:  97fd6656-af44-4e5c-bef8-dc57643b0181
 ---
+
 # Manage and monitor DPM servers with Operations Manager
 Central Console is a System Center Operations Manager console that you can deploy to manage and monitor multiple DPM servers from a single location. It provides:
 

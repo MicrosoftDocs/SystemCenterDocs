@@ -1,4 +1,16 @@
 ---
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  markgalioto
+ms.prod:  system center 2016
+keywords:  system center, dpm
+ms.date:  2016-06-17
+title:  Data Protection Manager
+ms.technology:  dpm
+---
+
+---
 title: Data Protection Manager
 ms.custom: na
 ms.prod: system-center-threshold
