@@ -1,4 +1,16 @@
 ---
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  markgalioto
+ms.prod:  system center 2016
+keywords:  system center, dpm
+ms.date:  2016-06-17
+title:  Get ready to deploy DPM servers
+ms.technology:  dpm
+---
+
+---
 title: Get ready to deploy DPM servers
 ms.custom: na
 ms.prod: system-center-threshold

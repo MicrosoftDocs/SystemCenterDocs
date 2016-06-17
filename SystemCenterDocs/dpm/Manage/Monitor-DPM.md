@@ -1,13 +1,16 @@
 ---
-title: Monitor DPM
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 99901174-76d4-4eb7-a72b-3ec300f1fa0b
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  markgalioto
+ms.prod:  system center 2016
+keywords:  system center, dpm
+ms.date:  2016-06-17
+title:  Monitor DPM
+ms.technology:  dpm
+ms.assetid:  99901174-76d4-4eb7-a72b-3ec300f1fa0b
 ---
+
 # Monitor DPM
 You can monitor a single DPM server from the DPM Administrator console, multiple DPM servers from the Central Console, or monitor DPM activity with Operations Manager.
 

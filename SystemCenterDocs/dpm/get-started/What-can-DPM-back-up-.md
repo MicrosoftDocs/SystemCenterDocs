@@ -1,4 +1,16 @@
 ---
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  markgalioto
+ms.prod:  system center 2016
+keywords:  system center, dpm
+ms.date:  2016-06-17
+title:  What can DPM back up 
+ms.technology:  dpm
+---
+
+---
 title: What can DPM back up?
 ms.custom: na
 ms.prod: system-center-threshold
@@ -109,3 +121,4 @@ DPM can protect data in the following clustered applications:
 -   SQL Server—Note that DPM doesn’t support the protection of SQL Server databases hosted on cluster\-shared volumes \(CSVs\).
 
 DPM can protect cluster workloads that are located in the same domain as the DPM server, and in a child or trusted domain. If you want to protect data source in untrusted domains or workgroups you’ll need to use NTLM or certificate authentication for a single server, or certificate authentication only for a cluster.
+

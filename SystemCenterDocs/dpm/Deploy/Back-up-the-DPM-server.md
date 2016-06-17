@@ -1,13 +1,16 @@
 ---
-title: Back up the DPM server
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: e5a31d08-e483-4dda-abd3-1b562656b24f
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  markgalioto
+ms.prod:  system center 2016
+keywords:  system center, dpm
+ms.date:  2016-06-17
+title:  Back up the DPM server
+ms.technology:  dpm
+ms.assetid:  e5a31d08-e483-4dda-abd3-1b562656b24f
 ---
+
 # Back up the DPM server
 To ensure that data can be recovered if DPM fails you'll need a strategy for backing up the DPM server. If it  isn’t backed up you’ll need to rebuild it manually after a failure, and disk\-based recovery points won’t be recoverable. You can back up DPM servers using a couple of methods:
 
@@ -394,3 +397,4 @@ You can back up the DPM database as you would any other SQL Server database usin
     3.  Connect to the \\\\SERVERNAME\\DPMSERVERNAME\-dpmdb share using Explorer from any Windows computer
 
     4.  Right\-click the dpmdb.bak file to view the Properties. On the **Previous Versions** tab are all the backups that you can select and copy.
+

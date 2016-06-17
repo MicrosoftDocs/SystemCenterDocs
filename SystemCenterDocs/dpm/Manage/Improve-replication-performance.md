@@ -1,13 +1,16 @@
 ---
-title: Improve replication performance
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: dc7b7b49-dcbb-4e44-9ea7-31374c5773ff
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  markgalioto
+ms.prod:  system center 2016
+keywords:  system center, dpm
+ms.date:  2016-06-17
+title:  Improve replication performance
+ms.technology:  dpm
+ms.assetid:  dc7b7b49-dcbb-4e44-9ea7-31374c5773ff
 ---
+
 # Improve replication performance
 There are a number of steps you can take to optimize the performance of System Center 2012 – Data Protection Manager \(DPM\) data replication and synchronization, including network throttling, data compression, staggering synchronization, and optimizing express backups.
 

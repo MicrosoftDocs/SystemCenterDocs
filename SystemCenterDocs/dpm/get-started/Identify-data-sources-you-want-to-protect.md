@@ -1,13 +1,16 @@
 ---
-title: Identify data sources you want to protect
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 4774dd1a-f50a-4a75-8783-abb5d134298a
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  markgalioto
+ms.prod:  system center 2016
+keywords:  system center, dpm
+ms.date:  2016-06-17
+title:  Identify data sources you want to protect
+ms.technology:  dpm
+ms.assetid:  4774dd1a-f50a-4a75-8783-abb5d134298a
 ---
+
 # Identify data sources you want to protect
 To protect data sources with DPM you'll need to do the following:
 

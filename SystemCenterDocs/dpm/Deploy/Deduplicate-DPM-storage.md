@@ -1,13 +1,16 @@
 ---
-title: Deduplicate DPM storage
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: af49cdc3-1f63-4c10-843a-d1cd27af473a
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  markgalioto
+ms.prod:  system center 2016
+keywords:  system center, dpm
+ms.date:  2016-06-17
+title:  Deduplicate DPM storage
+ms.technology:  dpm
+ms.assetid:  af49cdc3-1f63-4c10-843a-d1cd27af473a
 ---
+
 # Deduplicate DPM storage
 Data deduplication \(dedup\) finds and removed duplicated data in a volume  while ensuring data remains correct and complete.   Learn more about [deduplication planning](http://go.microsoft.com/fwlink/?LinkId=522614) .
 

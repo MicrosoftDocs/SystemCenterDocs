@@ -1,4 +1,16 @@
 ---
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  markgalioto
+ms.prod:  system center 2016
+keywords:  system center, dpm
+ms.date:  2016-06-17
+title:  What s supported and what isn t for DPM 
+ms.technology:  dpm
+---
+
+---
 title: What&#39;s supported and what isn&#39;t for DPM?
 ms.custom: na
 ms.prod: system-center-threshold
@@ -446,3 +458,4 @@ Workaround: We recommend that in this scenario you use host\-level backup of the
 -   DPM running as an Azure virtual machine can’t protect on\-premises workloads.
 
 **Workaround**: For more information about this scenario see [Install DPM as an Azure virtual machine](./Get-DPM-installed.md#setup-prerequisites).
+
