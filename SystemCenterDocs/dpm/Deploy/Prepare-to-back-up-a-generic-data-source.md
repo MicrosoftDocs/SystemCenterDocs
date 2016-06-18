@@ -1,16 +1,4 @@
 ---
-description:  
-manager:  cfreemanwa
-ms.topic:  article
-author:  markgalioto
-ms.prod:  system center 2016
-keywords:  system center, dpm
-ms.date:  2016-06-17
-title:  Prepare to back up a generic data source
-ms.technology:  dpm
----
-
----
 title: Prepare to back up a generic data source
 ms.custom: na
 ms.prod: system-center-threshold

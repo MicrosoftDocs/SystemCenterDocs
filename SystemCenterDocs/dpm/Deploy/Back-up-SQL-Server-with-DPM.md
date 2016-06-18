@@ -1,16 +1,13 @@
 ---
-description:  
-manager:  cfreemanwa
-ms.topic:  article
-author:  markgalioto
-ms.prod:  system center 2016
-keywords:  system center, dpm
-ms.date:  2016-06-17
-title:  Back up SQL Server with DPM
-ms.technology:  dpm
-ms.assetid:  3718b565-9640-4c3f-9d44-aa969041e0e6
+title: Back up SQL Server with DPM
+ms.custom: na
+ms.prod: system-center-threshold
+ms.reviewer: na
+ms.suite: na
+ms.tgt_pltfrm: na
+ms.topic: article
+ms.assetid: 3718b565-9640-4c3f-9d44-aa969041e0e6
 ---
-
 # Back up SQL Server with DPM
 DPM provides backup and recovery for SQL Server databases. In addition to backing up SQL Server databases you can run a system backup or full bare\-metal  backup of the SQL Server computer. Here's what DPM can protect:
 

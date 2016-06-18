@@ -1,16 +1,13 @@
 ---
-description:  
-manager:  cfreemanwa
-ms.topic:  article
-author:  markgalioto
-ms.prod:  system center 2016
-keywords:  system center, dpm
-ms.date:  2016-06-17
-title:  Back up Exchange with DPM
-ms.technology:  dpm
-ms.assetid:  79fb8831-1d70-4d1d-bed1-f28fa9186730
+title: Back up Exchange with DPM
+ms.custom: na
+ms.prod: system-center-threshold
+ms.reviewer: na
+ms.suite: na
+ms.tgt_pltfrm: na
+ms.topic: article
+ms.assetid: 79fb8831-1d70-4d1d-bed1-f28fa9186730
 ---
-
 # Back up Exchange with DPM
 DPM provides backup and recovery for Exchange 2013. You can back up the following:
 
