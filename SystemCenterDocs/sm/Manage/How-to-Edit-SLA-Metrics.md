@@ -18,7 +18,7 @@ In Service Manager, you edit a service level agreement \(SLA\) metric to update 
 
 ### To edit an SLA metric
 
-1.  In the [!INCLUDE[smcons](../../includes/smcons_md.md)], click **Administration**.
+1.  In the Service Manager console, click **Administration**.
 
 2.  In the **Administration** pane, expand **Service Level Management**, and then click **Metric**.
 

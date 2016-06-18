@@ -11,7 +11,7 @@ ms.topic: article
 ms.assetid: 18833e51-8624-463a-a2d7-cd3be75f2efb
 ---
 # Deploy the Self-Service Portal for Service Manager
-The [!INCLUDE[smssp](../../includes/smssp_md.md)] provides web\-based access to the features of [!INCLUDE[scsm_threshold_1](../../includes/scsm_threshold_1_md.md)]. This section describes how you can deploy the [!INCLUDE[smssp](../../includes/smssp_md.md)], and customize it.
+The Self\-Service Portal provides web\-based access to the features of System Center 2016 Technical Preview \- Service Manager. This section describes how you can deploy the Self\-Service Portal, and customize it.
 
 ## Supported Web Browsers
 The Self Service portal needs a screen resolution above 1024 X 768.    It is supported on the following browsers.

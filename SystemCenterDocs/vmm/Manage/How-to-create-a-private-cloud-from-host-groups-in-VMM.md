@@ -8,7 +8,7 @@ ms.topic: article
 ms.assetid: f34d577d-8e99-4fee-98ab-055d747c3745
 ---
 # How to create a private cloud from host groups in VMM
-You can use this procedure to create a private cloud from resources in one or more host groups in [!INCLUDE[vmm12sp1_long](../../includes/vmm12sp1_long_md.md)]. You can create a private cloud from host groups that contain a single type of host, or from host groups that contain a mix of Hyper\-V and VMware ESX hosts.
+You can use this procedure to create a private cloud from resources in one or more host groups in Virtual Machine Manager \(VMM\). You can create a private cloud from host groups that contain a single type of host, or from host groups that contain a mix of Hyper\-V and VMware ESX hosts.
 
 > [!NOTE]
 > You can also create a private cloud from a VMware resource pool. For more information, see [How to create a private cloud from a VMware resource pool in VMM](How-to-create-a-private-cloud-from-a-VMware-resource-pool-in-VMM.md).
@@ -18,7 +18,7 @@ You can use this procedure to create a private cloud from resources in one or mo
 ## Prerequisites
 Before you create a private cloud, make sure that the following prerequisites are met:
 
--   Configure the fabric and add hosts to [!INCLUDE[vmm12short](../../includes/vmm12short_md.md)] management by using the procedures in the following sections:
+-   Configure the fabric and add hosts to VMM management by using the procedures in the following sections:
 
     -   [Managing fabric resources with VMM](Managing-fabric-resources-with-VMM.md)
 
@@ -26,14 +26,14 @@ Before you create a private cloud, make sure that the following prerequisites ar
 
     -   [VMM support for VMware](VMM-support-for-VMware.md) \(if you have VMware ESX hosts\)
 
--   If you want to provide self\-service users the ability to store virtual machines to the [!INCLUDE[vmm12short](../../includes/vmm12short_md.md)] library, then create a library share, or create a folder in a library share that will serve as the storage location. Note that self\-service users must have the **Store and re\-deploy** permission to store their virtual machines.
+-   If you want to provide self\-service users the ability to store virtual machines to the VMM library, then create a library share, or create a folder in a library share that will serve as the storage location. Note that self\-service users must have the **Store and re\-deploy** permission to store their virtual machines.
 
     > [!IMPORTANT]
     > The library share location that you designate for stored virtual machines must be different from the shares that you designate as read\-only resource locations for the private cloud. Also, the path or part of the path must be unique when compared to the user role data path that is specified for a self\-service user role. For example, if the user role data path for a self\-service user role is \\\\VMMServer01\\Finance, you cannot create a stored virtual machine path of \\\\VMMServer01\\Finance\\StoredVMs. However, if the user role data path is \\\\VMMServer01\\Finance\\FinanceUserRoleData, you could specify \\\\VMMServer01\\Finance\\StoredVMs as the stored virtual machine path, as the full path is unique. You could also create entirely separate library shares.
     > 
     > Note that you configure the stored virtual machine path and read\-only library shares when you run the Create Cloud Wizard. The self\-service user role data path is specified when you create a self\-service user role or modify the properties of a self\-service user role.
 
-    For example, outside [!INCLUDE[vmm12short](../../includes/vmm12short_md.md)], you could create the **\\\\VMMServer01\\Finance\\StoredVMs** path, and then add the **VMMServer01\\Finance** library share to the [!INCLUDE[vmm12short](../../includes/vmm12short_md.md)] library.
+    For example, outside VMM, you could create the **\\\\VMMServer01\\Finance\\StoredVMs** path, and then add the **VMMServer01\\Finance** library share to the VMM library.
 
 -   If you want to assign read\-only shares to the private cloud, where administrators can store read\-only resources such as .iso files that they want to make available to self\-service users, make sure that one or more library shares exists that you can assign as the read\-only library shares. Note that self\-service users must have the **Author** permission to access the resources.
 

@@ -13,22 +13,22 @@ ms.assetid: 04c4c092-e4e4-4e09-bfed-b3f83bb7ae43
 # How to Change the User Credentials for the Operational Database Account
 If the user account for the Operational Database Account in Service Manager changes, you must make the following changes:
 
-1.  Add the new account to the [!INCLUDE[smshort](../../includes/smshort_md.md)] Administrators user role for both the [!INCLUDE[smshort](../../includes/smshort_md.md)] and data warehouse management servers
+1.  Add the new account to the Service Manager Administrators user role for both the Service Manager and data warehouse management servers
 
-2.  Create a SQL Server logon account for the new user on computers hosting [!INCLUDE[smshort](../../includes/smshort_md.md)] databases. On the computer hosting the [!INCLUDE[smshort](../../includes/smshort_md.md)] database, assign the new user to the skd\_users and configsvc\_users roles.
+2.  Create a SQL Server logon account for the new user on computers hosting Service Manager databases. On the computer hosting the Service Manager database, assign the new user to the skd\_users and configsvc\_users roles.
 
-3.  Make the new account a local administrator on the [!INCLUDE[smshort](../../includes/smshort_md.md)] computers.
+3.  Make the new account a local administrator on the Service Manager computers.
 
-4.  Make the new user account the logon account for the [!INCLUDE[smshort](../../includes/smshort_md.md)] Data Access Service and  [!INCLUDE[smshort](../../includes/smshort_md.md)] Management Configuration services, and then restart these services.
+4.  Make the new user account the logon account for the Service Manager Data Access Service and  Service Manager Management Configuration services, and then restart these services.
 
     > [!NOTE]
-    > The logon account for the [!INCLUDE[smshort](../../includes/smshort_md.md)] Management service is always the local system account and must not be changed.
+    > The logon account for the Service Manager Management service is always the local system account and must not be changed.
 
-5.  Restart the [!INCLUDE[smshort](../../includes/smshort_md.md)] Management service.
+5.  Restart the Service Manager Management service.
 
 6.  Make the new user the Operational Run As account.
 
-Use the following procedures to make these changes in [!INCLUDE[smshort](../../includes/smshort_md.md)].
+Use the following procedures to make these changes in Service Manager.
 
 > [!IMPORTANT]
 > Do not configure the Operational Database Account to use the Network Service account.
@@ -37,19 +37,19 @@ Use the following procedures to make these changes in [!INCLUDE[smshort](../../i
 
 1.  Add the new user as a member of the Administrators local group in Windows on the computers hosting the following:
 
-    -   [!INCLUDE[smshort](../../includes/smshort_md.md)] management server
+    -   Service Manager management server
 
     -   Data warehouse management server
 
-    -   [!INCLUDE[smssp](../../includes/smssp_md.md)]
+    -   Self\-Service Portal
 
-    -   [!INCLUDE[smshort](../../includes/smshort_md.md)] database
+    -   Service Manager database
 
     -   Data warehouse databases
 
 ### To add the user to the Administrators user role
 
-1.  In the [!INCLUDE[smcons](../../includes/smcons_md.md)], click **Administration**.
+1.  In the Service Manager console, click **Administration**.
 
 2.  In the **Administration** pane, expand **Administration**, expand **Security**, and then click **User Roles**.
 
@@ -61,15 +61,15 @@ Use the following procedures to make these changes in [!INCLUDE[smshort](../../i
 
 6.  Click **Remove** to remove the existing credentials, click **Add** and add the new credentials, and then click **OK**.
 
-7.  In the [!INCLUDE[smcons](../../includes/smcons_md.md)], click **Data Warehouse**.
+7.  In the Service Manager console, click **Data Warehouse**.
 
 8.  In the **Data Warehouse** pane, expand **Data Warehouse**, expand **Security**, and then click **User Roles**.
 
 9. Repeat steps 3 through 6.
 
-### To change the logon account for the [!INCLUDE[smshort](../../includes/smshort_md.md)] Data Access Service and [!INCLUDE[smshort](../../includes/smshort_md.md)] Management Configuration services
+### To change the logon account for the Service Manager Data Access Service and Service Manager Management Configuration services
 
-1.  On the computer that hosts the [!INCLUDE[smssp](../../includes/smssp_md.md)], on the Windows desktop, click **Start**, and then click **Run**.
+1.  On the computer that hosts the Self\-Service Portal, on the Windows desktop, click **Start**, and then click **Run**.
 
 2.  In the **Run** dialog box, in the **Open** box, type **services.msc**, and then click **OK**.
 
@@ -85,7 +85,7 @@ Use the following procedures to make these changes in [!INCLUDE[smshort](../../i
 
     3.  In the **Password** and **Confirm Password** boxes, type the password for the new user, and then click **OK**.
 
-6.  Restart the [!INCLUDE[smshort](../../includes/smshort_md.md)] Data Access Service.
+6.  Restart the Service Manager Data Access Service.
 
 7.  Right\-click **System Center Management Configuration**, and then click **Properties**.
 
@@ -99,17 +99,17 @@ Use the following procedures to make these changes in [!INCLUDE[smshort](../../i
 
     3.  In the **Password** and **Confirm Password** boxes, type the password for the new user, and then click **OK**.
 
-10. Restart the [!INCLUDE[smshort](../../includes/smshort_md.md)] Management Configuration service.
+10. Restart the Service Manager Management Configuration service.
 
 ### To create a SQL Server logon
 
-1.  On the computers hosting the [!INCLUDE[smshort](../../includes/smshort_md.md)] and data warehouse databases, open **SQL Server Management Studio**.
+1.  On the computers hosting the Service Manager and data warehouse databases, open **SQL Server Management Studio**.
 
 2.  In the **Connect to Server** dialog box, complete these steps:
 
     1.  In the **Server Type** list, select **Database Engine**.
 
-    2.  In the **Server Name** list, select the server name for your [!INCLUDE[smshort](../../includes/smshort_md.md)] or data warehouse databases.
+    2.  In the **Server Name** list, select the server name for your Service Manager or data warehouse databases.
 
     3.  In the **Authentication** list, select **Windows Authentication**, and then click **Connect**.
 
@@ -127,7 +127,7 @@ Use the following procedures to make these changes in [!INCLUDE[smshort](../../i
 
 7.  In the **Select a page** pane, click **Server Roles**, and in the **Server roles** list, ensure that **sysadmin** and **public** are selected, and then click **OK**.
 
-### To change the [!INCLUDE[smshort](../../includes/smshort_md.md)][!INCLUDE[smssp](../../includes/smssp_md.md)] application pool account
+### To change the Service ManagerSelf\-Service Portal application pool account
 
 1.  On the Windows desktop, click **Start**, point to **Programs**, point to **Administrative Tools**, and then click **Internet Information Services \(IIS\) Manager**.
 
@@ -149,7 +149,7 @@ Use the following procedures to make these changes in [!INCLUDE[smshort](../../i
 
 ### To change the Operational Database Account
 
-1.  In the [!INCLUDE[smcons](../../includes/smcons_md.md)], click **Administration**.
+1.  In the Service Manager console, click **Administration**.
 
 2.  In the **Administration** pane, expand **Administration**, expand **Security**, and then click **Run As Accounts**.
 

@@ -11,7 +11,7 @@ ms.topic: article
 ms.assetid: bd4ce7ab-9e8f-4f83-a04a-f4385c2ac6b0
 ---
 # User Interface Customization in System Center 2016 - Service Manager
-The sealed management packs in [!INCLUDE[smshort](../../includes/smshort_md.md)] contain, among other things, views, list items, and templates. Because these items are in a sealed management pack, they cannot be edited or changed. In Service Manager, you have the option of hiding views. You can duplicate list items and templates, saving the duplicates into an unsealed management pack, and because the duplicates are in an unsealed management pack, you can edit the properties of the list item or template using the [!INCLUDE[smcons](../../includes/smcons_md.md)].
+The sealed management packs in Service Manager contain, among other things, views, list items, and templates. Because these items are in a sealed management pack, they cannot be edited or changed. In Service Manager, you have the option of hiding views. You can duplicate list items and templates, saving the duplicates into an unsealed management pack, and because the duplicates are in an unsealed management pack, you can edit the properties of the list item or template using the Service Manager console.
 
 
 ## How to Customize a View
@@ -19,7 +19,7 @@ The **Failed Service Requests** view in Service Manager is in a sealed managemen
 
 ### To customize a view
 
-1.  In the [!INCLUDE[smcons](../../includes/smcons_md.md)], click **Work Items**.
+1.  In the Service Manager console, click **Work Items**.
 
 2.  In the **Work Items** pane, expand **Service Request Fulfillment**.
 
@@ -40,7 +40,7 @@ The items in a list in a sealed management pack in Service Manager cannot be cha
 
 ### To customize a list item
 
-1.  In the [!INCLUDE[smcons](../../includes/smcons_md.md)], click **Library**.
+1.  In the Service Manager console, click **Library**.
 
 2.  In the **Library** pane, expand **Library**, and then click **Lists**.
 
@@ -62,7 +62,7 @@ Templates in a sealed management pack in Service Manager cannot be changed. In t
 
 ### To customize a template
 
-1.  In the [!INCLUDE[smcons](../../includes/smcons_md.md)], click **Library**.
+1.  In the Service Manager console, click **Library**.
 
 2.  In the **Library** pane, expand **Library**, and then click **Templates**.
 

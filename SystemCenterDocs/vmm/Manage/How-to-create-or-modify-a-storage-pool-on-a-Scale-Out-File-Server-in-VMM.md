@@ -11,7 +11,7 @@ ms.topic: article
 ms.assetid: ce7dfc06-7d96-404d-82ad-de4ccdf44c26
 ---
 # How to create or modify a storage pool on a Scale-Out File Server in VMM
-You can use [!INCLUDE[vmm12sp1_long](../../includes/vmm12sp1_long_md.md)] to create or modify storage pools on Scale\-Out File Servers. Storage pools are described in [Storage Spaces Overview](http://technet.microsoft.com/library/hh831739.aspx). To see how this procedure fits into an overall workflow, see [Overview: configuring storage using Scale-Out File Servers in VMM](Overview--configuring-storage-using-Scale-Out-File-Servers-in-VMM.md).
+You can use Virtual Machine Manager \(VMM\) to create or modify storage pools on Scale\-Out File Servers. Storage pools are described in [Storage Spaces Overview](http://technet.microsoft.com/library/hh831739.aspx). To see how this procedure fits into an overall workflow, see [Overview: configuring storage using Scale-Out File Servers in VMM](Overview--configuring-storage-using-Scale-Out-File-Servers-in-VMM.md).
 
 ### To create or modify a storage pool on a Scale\-Out File Server
 

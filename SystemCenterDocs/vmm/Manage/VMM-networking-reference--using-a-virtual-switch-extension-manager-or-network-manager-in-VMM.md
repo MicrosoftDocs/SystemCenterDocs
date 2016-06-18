@@ -11,18 +11,18 @@ ms.topic: article
 ms.assetid: cb75bf3c-32bc-4e71-bcf5-e35f9caedb6e
 ---
 # VMM networking reference: using a virtual switch extension manager or network manager in VMM
-With [!INCLUDE[sc_threshold_1](../../includes/sc_threshold_1_md.md)], if you add a virtual switch extension or network manager to [!INCLUDE[vmm12sp1_long](../../includes/vmm12sp1_long_md.md)], you can use the console for that virtual switch extension or network manager in a way that is coordinated with the [!INCLUDE[vmm12short](../../includes/vmm12short_md.md)] management server. This helps you keep the settings that you see in [!INCLUDE[vmm12short](../../includes/vmm12short_md.md)] synchronized with the settings that you configured through an interface other than [!INCLUDE[vmm12short](../../includes/vmm12short_md.md)].
+With System Center 2016 Technical Preview, if you add a virtual switch extension or network manager to Virtual Machine Manager \(VMM\), you can use the console for that virtual switch extension or network manager in a way that is coordinated with the VMM management server. This helps you keep the settings that you see in VMM synchronized with the settings that you configured through an interface other than VMM.
 
-To do this, you must first install the provider software \(provided by the vendor\) on the [!INCLUDE[vmm12short](../../includes/vmm12short_md.md)] management server. Then you can add the virtual switch extension or network manager to [!INCLUDE[vmm12short](../../includes/vmm12short_md.md)].
+To do this, you must first install the provider software \(provided by the vendor\) on the VMM management server. Then you can add the virtual switch extension or network manager to VMM.
 
 ## Prerequisites
-If you want to add a virtual switch extension or network manager to your configuration in [!INCLUDE[vmm12short](../../includes/vmm12short_md.md)], you must first perform the following tasks:
+If you want to add a virtual switch extension or network manager to your configuration in VMM, you must first perform the following tasks:
 
-1.  Obtain provider software from the manufacturer of the virtual switch extension or network manager, install the provider on the [!INCLUDE[vmm12short](../../includes/vmm12short_md.md)] management server, and then restart the System Center Virtual Machine Manager service. If you have installed a high\-availability [!INCLUDE[vmm12short](../../includes/vmm12short_md.md)] management server on a cluster, be sure to install the provider on all nodes of the cluster. For more information about installing the provider, refer to the manufacturer’s documentation.
+1.  Obtain provider software from the manufacturer of the virtual switch extension or network manager, install the provider on the VMM management server, and then restart the System Center Virtual Machine Manager service. If you have installed a high\-availability VMM management server on a cluster, be sure to install the provider on all nodes of the cluster. For more information about installing the provider, refer to the manufacturer’s documentation.
 
 2.  For your virtual switch extension or network manager, make sure that you know the manufacturer and model, the name of an account that has configuration permissions, the connection string, and the host groups to include. If certificates are used for the provider software, make sure you know how to view the thumbprint information for those certificates.
 
-#### To add a virtual switch extension or network manager in [!INCLUDE[vmm12short](../../includes/vmm12short_md.md)]
+#### To add a virtual switch extension or network manager in VMM
 
 1.  Confirm that you have installed the necessary provider software. To do this, open the **Settings** workspace, and in the **Settings** pane, click **Configuration Providers**. In the **Configuration Providers** pane, review the list of installed provider software.
 

@@ -8,12 +8,12 @@ ms.topic: article
 ms.assetid: ce536f0a-0614-4220-9081-53f4ecec1a3b
 ---
 # Using Reporting in VMM
-After you connect [!INCLUDE[vmm12sp1_long](../../includes/vmm12sp1_long_md.md)] with [!INCLUDE[om12long](../../includes/om12long_md.md)], you can create and view reports relating to [!INCLUDE[vmm12short](../../includes/vmm12short_md.md)] managed components, including virtual machine hosts, virtual machines, and [!INCLUDE[vmm12short](../../includes/vmm12short_md.md)]\-related servers \(for example, library servers.\)
+After you connect Virtual Machine Manager \(VMM\) with System Center Operations Manager, you can create and view reports relating to VMM managed components, including virtual machine hosts, virtual machines, and VMM\-related servers \(for example, library servers.\)
 
 > [!NOTE]
-> For information about connecting [!INCLUDE[vmm12short](../../includes/vmm12short_md.md)] to [!INCLUDE[om12long](../../includes/om12long_md.md)], see [How to connect VMM to Operations Manager](How-to-connect-VMM-to-Operations-Manager.md).
+> For information about connecting VMM to System Center Operations Manager, see [How to connect VMM to Operations Manager](How-to-connect-VMM-to-Operations-Manager.md).
 
-You can view reports in the **Reporting** workspace in [!INCLUDE[om12long](../../includes/om12long_md.md)], or by using a web browser and entering this address:
+You can view reports in the **Reporting** workspace in System Center Operations Manager, or by using a web browser and entering this address:
 
 `http[s]://<OpsMgrReportServer>[:<port>]/<reports>`
 
@@ -23,10 +23,10 @@ You can view reports in the **Reporting** workspace in [!INCLUDE[om12long](../..
 
 -   `<reports>` is the reporting server virtual directory, by default, `reports`
 
-You can view the following preconfigured reports for [!INCLUDE[vmm12short](../../includes/vmm12short_md.md)] managed components.
+You can view the following preconfigured reports for VMM managed components.
 
 > [!NOTE]
-> To use the forecasting reports, SQL Server Analysis Services must be installed on the [!INCLUDE[om12long](../../includes/om12long_md.md)] Reporting server. For more information, see [How to configure SQL Server Analysis Services for VMM](How-to-configure-SQL-Server-Analysis-Services-for-VMM.md).
+> To use the forecasting reports, SQL Server Analysis Services must be installed on the System Center Operations Manager Reporting server. For more information, see [How to configure SQL Server Analysis Services for VMM](How-to-configure-SQL-Server-Analysis-Services-for-VMM.md).
 
 |Report|Description|
 |----------|---------------|

@@ -22,7 +22,7 @@ In the first procedure, you set up a subscription so that a messaging analyst is
 
 ### To create a notification subscription for an incident
 
-1.  In the [!INCLUDE[smcons](../../includes/smcons_md.md)], click **Administration**.
+1.  In the Service Manager console, click **Administration**.
 
 2.  In the **Administration** pane, expand **Notification**, and then click **Subscriptions**.
 
@@ -65,7 +65,7 @@ In the first procedure, you set up a subscription so that a messaging analyst is
 
 ### To create a periodic notification subscription for a release record
 
-1.  In the [!INCLUDE[smcons](../../includes/smcons_md.md)], click **Administration**.
+1.  In the Service Manager console, click **Administration**.
 
 2.  In the **Administration** pane, expand **Notifications**, and then click **Subscriptions**.
 
@@ -116,12 +116,12 @@ In the first procedure, you set up a subscription so that a messaging analyst is
 
 ![](../../media/pssymbol.png)You can use a Windows PowerShell command to complete these tasks and other related tasks, as follows:
 
--   For information about how to use Windows PowerShell to create a new subscription in [!INCLUDE[smshort](../../includes/smshort_md.md)], see [New\-SCSMSubscription](http://go.microsoft.com/fwlink/p/?LinkID=225359).
+-   For information about how to use Windows PowerShell to create a new subscription in Service Manager, see [New\-SCSMSubscription](http://go.microsoft.com/fwlink/p/?LinkID=225359).
 
--   For information about how to use Windows PowerShell to retrieve subscriptions that are configured in [!INCLUDE[smshort](../../includes/smshort_md.md)], see [Get\-SCSMSubscription](http://go.microsoft.com/fwlink/p/?LinkID=225333).
+-   For information about how to use Windows PowerShell to retrieve subscriptions that are configured in Service Manager, see [Get\-SCSMSubscription](http://go.microsoft.com/fwlink/p/?LinkID=225333).
 
--   For information about how to use Windows PowerShell to update subscription properties in [!INCLUDE[smshort](../../includes/smshort_md.md)], see [Update\-SCSMSubscription](http://go.microsoft.com/fwlink/p/?LinkID=225388).
+-   For information about how to use Windows PowerShell to update subscription properties in Service Manager, see [Update\-SCSMSubscription](http://go.microsoft.com/fwlink/p/?LinkID=225388).
 
--   For information about how to use Windows PowerShell to remove a subscription from [!INCLUDE[smshort](../../includes/smshort_md.md)], see [Remove\-SCSMSubscription](http://go.microsoft.com/fwlink/p/?LinkID=225370).
+-   For information about how to use Windows PowerShell to remove a subscription from Service Manager, see [Remove\-SCSMSubscription](http://go.microsoft.com/fwlink/p/?LinkID=225370).
 
 

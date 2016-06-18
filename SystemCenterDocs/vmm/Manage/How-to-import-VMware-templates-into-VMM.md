@@ -10,12 +10,12 @@ ms.topic: article
 ms.assetid: ee39fd79-6eab-493a-98dd-09304108c1fb
 ---
 # How to import VMware templates into VMM
-You can use the following procedure to import a VMware template to the [!INCLUDE[vmm12sp1_long](../../includes/vmm12sp1_long_md.md)] library.
+You can use the following procedure to import a VMware template to the Virtual Machine Manager \(VMM\) library.
 
-For you to complete this procedure, a VMware template must exist. Make sure that the server that is running vCenter Server, and that contains the template, is under [!INCLUDE[vmm12short](../../includes/vmm12short_md.md)] management. For more information, see [How to add a VMware vCenter Server to VMM](How-to-add-a-VMware-vCenter-Server-to-VMM.md).
+For you to complete this procedure, a VMware template must exist. Make sure that the server that is running vCenter Server, and that contains the template, is under VMM management. For more information, see [How to add a VMware vCenter Server to VMM](How-to-add-a-VMware-vCenter-Server-to-VMM.md).
 
 > [!NOTE]
-> You cannot install VMware Tools through [!INCLUDE[vmm12short](../../includes/vmm12short_md.md)]. Therefore, we recommend that you install the tools for Windows\-based guest operating systems on the virtual machine before you use vCenter Server to create the template.
+> You cannot install VMware Tools through VMM. Therefore, we recommend that you install the tools for Windows\-based guest operating systems on the virtual machine before you use vCenter Server to create the template.
 
 ### To import a template from vCenter Server
 

@@ -11,9 +11,9 @@ ms.topic: article
 ms.assetid: 8e104877-97b2-4453-ae63-b57aa1564c4b
 ---
 # Contact a User from an Incident Form
-In [!INCLUDE[smshort](../../includes/smshort_md.md)], you can contact a user by email or by instant message when an incident form is open. The presence indicator is shown in the form next to the affected user’s name, and it displays their current status, if known.
+In Service Manager, you can contact a user by email or by instant message when an incident form is open. The presence indicator is shown in the form next to the affected user’s name, and it displays their current status, if known.
 
-Both the computer  running the [!INCLUDE[smcons](../../includes/smcons_md.md)] and the user you want to contact must have either  Lync 2013 or Skype for Business in Microsoft Office 2013 or Office 2016 installed.
+Both the computer  running the Service Manager console and the user you want to contact must have either  Lync 2013 or Skype for Business in Microsoft Office 2013 or Office 2016 installed.
 
 #### To contact a user by email
 

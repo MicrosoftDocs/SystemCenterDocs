@@ -11,7 +11,7 @@ ms.topic: article
 ms.assetid: 727d2bf5-fd95-46a7-a654-46b299ee7136
 ---
 # Applying Overrides to Object Discoveries
-[!INCLUDE[om12long](../../includes/om12long_md.md)] monitors computers and devices that it has discovered, and it also discovers applications and features that it discovers on monitored computers. There may be situations where you want to limit discovery. For example, you might want only some instances of SQL Server to be discovered and monitored, or you want to remove a computer that has already been discovered.
+System Center Operations Manager monitors computers and devices that it has discovered, and it also discovers applications and features that it discovers on monitored computers. There may be situations where you want to limit discovery. For example, you might want only some instances of SQL Server to be discovered and monitored, or you want to remove a computer that has already been discovered.
 
 The precise steps to limit or restrict discovery depend on the object, application, or feature that you want to exclude from discovery. However, the general procedure is the same: identify the discovery that you want to limit and create an override to disable the discovery. For information on how to create an override, see [How to Override a Rule or Monitor](https://technet.microsoft.com/library/hh212869%28v=sc.12%29.aspx).
 

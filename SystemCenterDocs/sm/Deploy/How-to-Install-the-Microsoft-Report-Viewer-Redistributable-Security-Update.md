@@ -11,16 +11,16 @@ ms.topic: article
 ms.assetid: 8ac05138-86a7-4a1d-bd59-b55a49d3ec0d
 ---
 # How to Install the Microsoft Report Viewer Redistributable Security Update
-You can use the following procedure to install the Microsoft Report Viewer Redistributable security update for a deployment of [!INCLUDE[scsm_threshold_1](../../includes/scsm_threshold_1_md.md)].
+You can use the following procedure to install the Microsoft Report Viewer Redistributable security update for a deployment of System Center 2016 Technical Preview \- Service Manager.
 
 > [!NOTE]
 > If your system is configured to use a language other than English, you must manually install the Report Viewer Language Pack for that language. You can download the [Microsoft Report Viewer Redistributable 2008 SP1 Language Pack](http://go.microsoft.com/fwlink/p/?LinkID=191491) from the Microsoft Download Center.
 
 ### To install the Microsoft Report Viewer Redistributable security update
 
-1.  On the computer that will host a [!INCLUDE[smshort12](../../includes/smshort12_md.md)] management server, open Windows Explorer.
+1.  On the computer that will host a Service Manager management server, open Windows Explorer.
 
-2.  Locate the drive that contains the [!INCLUDE[smshort12](../../includes/smshort12_md.md)] installation media, and then open the Prerequisites folder
+2.  Locate the drive that contains the Service Manager installation media, and then open the Prerequisites folder
 
 3.  Double\-click the **ReportViewer** file.
 

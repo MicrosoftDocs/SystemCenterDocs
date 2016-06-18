@@ -20,7 +20,7 @@ Change request templates store commonly used settings and apply the information 
 
 ### To create a messaging change request template
 
-1.  In the [!INCLUDE[smcons](../../includes/smcons_md.md)], click **Library**.
+1.  In the Service Manager console, click **Library**.
 
 2.  In the **Library** pane, click **Templates**.
 
@@ -60,7 +60,7 @@ Change request templates store commonly used settings and apply the information 
 
 ### To create a priority\-modifying template
 
-1.  In the [!INCLUDE[smcons](../../includes/smcons_md.md)], click **Library**.
+1.  In the Service Manager console, click **Library**.
 
 2.  In the **Library** pane, click **Templates**.
 

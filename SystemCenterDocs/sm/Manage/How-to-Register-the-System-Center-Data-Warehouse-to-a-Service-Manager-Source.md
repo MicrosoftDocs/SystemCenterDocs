@@ -11,13 +11,13 @@ ms.topic: article
 ms.assetid: 30b83b58-d257-43ae-997b-2514231f5059
 ---
 # How to Register the System Center Data Warehouse to a Service Manager Source
-You can use the following procedures in Service Manager to register the System Center Data Warehouse with a Service Manager management group and then validate the registration. This makes it possible to host multiple [!INCLUDE[smshort](../../includes/smshort_md.md)] management groups in a single data warehouse.
+You can use the following procedures in Service Manager to register the System Center Data Warehouse with a Service Manager management group and then validate the registration. This makes it possible to host multiple Service Manager management groups in a single data warehouse.
 
 ### To register the data warehouse with another Service Manager management group
 
-1.  By using an account that is a member of the [!INCLUDE[smshort](../../includes/smshort_md.md)] and data warehouse management administrators group, log on to the computer that hosts the [!INCLUDE[smcons](../../includes/smcons_md.md)].
+1.  By using an account that is a member of the Service Manager and data warehouse management administrators group, log on to the computer that hosts the Service Manager console.
 
-2.  In the [!INCLUDE[smcons](../../includes/smcons_md.md)], select **Data Warehouse**.
+2.  In the Service Manager console, select **Data Warehouse**.
 
 3.  In the **Administration** pane, expand **Data Warehouse**, and then select **Data Sources**.
 
@@ -36,13 +36,13 @@ You can use the following procedures in Service Manager to register the System C
 9. On the **Credentials** page, you can accept the default entry in the **Run as account** list, and then click **Next**, or you can enter credentials from a user or group of your choice.
 
     > [!IMPORTANT]
-    > The account that you specify will be assigned administrative credentials on the [!INCLUDE[smshort](../../includes/smshort_md.md)] management server and granted Read permission on the [!INCLUDE[smshort](../../includes/smshort_md.md)] database. You can specify different credentials from other [!INCLUDE[smshort](../../includes/smshort_md.md)] management groups when registering with the data warehouse.
+    > The account that you specify will be assigned administrative credentials on the Service Manager management server and granted Read permission on the Service Manager database. You can specify different credentials from other Service Manager management groups when registering with the data warehouse.
 
 10. On the **Summary** page, you can review the settings that you have chosen. Click **Finish**.
 
 11. On the **Result** page, when **Data source registration complete.** appears, click **Finish**.
 
-### To validate the  [!INCLUDE[smshort](../../includes/smshort_md.md)] registration process
+### To validate the  Service Manager registration process
 
 -   In the **Data Sources** view, the new data source appears in the list of data sources, with the data source type of **Service Manager**. You might have to refresh your view to see the new data source.
 

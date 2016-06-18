@@ -13,7 +13,7 @@ ms.assetid: dbc92290-e10b-4a9b-9794-3dc4bc71ca25
 # How to Install a Highly Available VMM Management Server
 You can use the following procedure to install a highly available VMM management server on the first node of a cluster. To install on the other nodes of the cluster, see [How to Install a VMM Management Server on an Additional Node of a Cluster](How-to-Install-a-VMM-Management-Server-on-an-Additional-Node-of-a-Cluster.md).
 
-Before you begin the installation of the [!INCLUDE[vmm12short](../../includes/vmm12short_md.md)] management server, review the system requirements. As part of this, ensure that you have a computer that is running a supported version of Microsoft SQL Server software. Setup will not automatically install an Express edition of SQL Server. For information on system requirements, including supported versions of SQL Server, see the following:
+Before you begin the installation of the VMM management server, review the system requirements. As part of this, ensure that you have a computer that is running a supported version of Microsoft SQL Server software. Setup will not automatically install an Express edition of SQL Server. For information on system requirements, including supported versions of SQL Server, see the following:
 
 -   [System Requirements for System Center Technical Preview](../../system-requirements/System-Requirements-for-System-Center-Technical-Preview.md)
 
@@ -23,10 +23,10 @@ Membership in the local **Administrators** group, or equivalent, on the computer
 
 ### To install a highly available VMM management server on the first node of a cluster
 
-1.  On the first node of your cluster, start the Virtual Machine Manager Setup Wizard for [!INCLUDE[sc_threshold_1](../../includes/sc_threshold_1_md.md)]. To start the wizard, on your installation media, right\-click **setup.exe**, and then click **Run as administrator**.
+1.  On the first node of your cluster, start the Virtual Machine Manager Setup Wizard for System Center 2016 Technical Preview. To start the wizard, on your installation media, right\-click **setup.exe**, and then click **Run as administrator**.
 
     > [!NOTE]
-    > Before beginning the installation of [!INCLUDE[vmm12short](../../includes/vmm12short_md.md)], close any open programs and ensure that there are no pending restarts on the computer. For example, if you have installed a server role by using Server Manager or have applied a security update, you may need to restart the computer and then log on to the computer with the same user account to finish the installation of the server role or the security update.
+    > Before beginning the installation of VMM, close any open programs and ensure that there are no pending restarts on the computer. For example, if you have installed a server role by using Server Manager or have applied a security update, you may need to restart the computer and then log on to the computer with the same user account to finish the installation of the server role or the security update.
 
 2.  On the main setup page, click **Install**.
 
@@ -36,7 +36,7 @@ Membership in the local **Administrators** group, or equivalent, on the computer
 
 5.  On the **Select features to install** page, click **Next**.
 
-6.  On the **Product registration information** page, provide the appropriate information, and then click **Next**.  If you do not enter a product key, [!INCLUDE[vmm12short](../../includes/vmm12short_md.md)] will be installed as an evaluation version that expires in 180 days after installation.
+6.  On the **Product registration information** page, provide the appropriate information, and then click **Next**.  If you do not enter a product key, VMM will be installed as an evaluation version that expires in 180 days after installation.
 
 7.  On the **Please read this license agreement** page, review the license agreement, select the **I have read, understood, and agree with the terms of the license agreement** check box, and then click **Next**.
 
@@ -47,11 +47,11 @@ Membership in the local **Administrators** group, or equivalent, on the computer
     > [!NOTE]
     > If you have previously chosen to use Microsoft Update on this computer, the **Microsoft Update** page does not appear.
 
-10. On the **Installation location** page, use the default path or type a different installation path for the [!INCLUDE[vmm12short](../../includes/vmm12short_md.md)] program files, and then click **Next**.
+10. On the **Installation location** page, use the default path or type a different installation path for the VMM program files, and then click **Next**.
 
     The computer on which you are installing the highly available VMM management server will be checked to ensure that the appropriate hardware and software requirements are met. If a prerequisite is not met, a page will appear with information about which prerequisite has not been met and how to resolve the issue. If all prerequisites have been met, the **Database configuration** page will appear.
 
-    For information about hardware and software requirements for [!INCLUDE[vmm12short](../../includes/vmm12short_md.md)], see SQL Server Requirements for System Center vNext.
+    For information about hardware and software requirements for VMM, see SQL Server Requirements for System Center vNext.
 
 11. On the **Database configuration** page, do the following:
 
@@ -77,7 +77,7 @@ Membership in the local **Administrators** group, or equivalent, on the computer
 
     -   In the **Name** box, type the name you want to give to this highly available VMM management server implementation. For example, type **havmmcontoso**. Do not enter the name of the failover cluster or the name of the computer on which the highly available VMM management server is installed.
 
-        You will use this clustered service name when you connect to this highly available VMM management server implementation by using the VMM console. Because there will be multiple nodes on the failover cluster that have the VMM management server feature installed, you need a single name to use when you connect to your [!INCLUDE[vmm12short](../../includes/vmm12short_md.md)] environment by using the VMM console.
+        You will use this clustered service name when you connect to this highly available VMM management server implementation by using the VMM console. Because there will be multiple nodes on the failover cluster that have the VMM management server feature installed, you need a single name to use when you connect to your VMM environment by using the VMM console.
 
     -   If you are using static IPv4 addresses, you must specify the IP address to assign to the clustered service name. The clustered service name and its assigned IP address will be registered in DNS. If you are using IPv6 addresses or you are using DHCP, no additional configuration is needed.
 
@@ -101,7 +101,7 @@ Membership in the local **Administrators** group, or equivalent, on the computer
 15. On the **Library configuration** page, click **Next**.
 
     > [!NOTE]
-    > After you install [!INCLUDE[vmm12short](../../includes/vmm12short_md.md)], you will need to add a library share. Be sure to use the **Add Default Resources** option to add Application Frameworks resources. For more information on adding a library share, see [How to add a VMM library server or VMM library share](../Manage/How-to-add-a-VMM-library-server-or-VMM-library-share.md).
+    > After you install VMM, you will need to add a library share. Be sure to use the **Add Default Resources** option to add Application Frameworks resources. For more information on adding a library share, see [How to add a VMM library server or VMM library share](../Manage/How-to-add-a-VMM-library-server-or-VMM-library-share.md).
 
 16. On the **Installation summary** page, review your selections and do one of the following:
 

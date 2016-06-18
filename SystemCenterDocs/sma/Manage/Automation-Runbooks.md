@@ -11,15 +11,15 @@ ms.topic: article
 ms.assetid: 00ad011f-f02c-484b-8eda-7d1d14d9f09a
 ---
 # Automation Runbooks
-Runbooks in [!INCLUDE[sma_1](../../includes/sma_1_md.md)] automate management tasks in [!INCLUDE[katal_1](../../includes/katal_1_md.md)] and orchestrate processes across different systems and services. The topics below provide information for working with runbooks and authoring new runbooks.
+Runbooks in Service Management Automation automate management tasks in Windows Azure Pack for Windows Server and orchestrate processes across different systems and services. The topics below provide information for working with runbooks and authoring new runbooks.
 
 -   [Runbook Operations](Runbook-Operations.md)
 
-    Procedures for performing different common operations with runbooks in [!INCLUDE[sma_1](../../includes/sma_1_md.md)].
+    Procedures for performing different common operations with runbooks in Service Management Automation.
 
 -   [Authoring Automation Runbooks](Authoring-Automation-Runbooks.md)
 
-    Information on creating your own runbooks to automate management tasks with [!INCLUDE[katal_2](../../includes/katal_2_md.md)] resources.
+    Information on creating your own runbooks to automate management tasks with Windows Azure Pack resources.
 
 -   [Service Management Automation sample runbooks](Service-Management-Automation-sample-runbooks.md)
 
@@ -27,7 +27,7 @@ Runbooks in [!INCLUDE[sma_1](../../includes/sma_1_md.md)] automate management ta
 
 -   [Service Management Automation system runbooks](Service-Management-Automation-system-runbooks.md)
 
-    Describes the runbooks that are used to govern internal processes in [!INCLUDE[sma_1](../../includes/sma_1_md.md)].
+    Describes the runbooks that are used to govern internal processes in Service Management Automation.
 
 ## See Also
 [Service Management Automation](../Service-Management-Automation.md)

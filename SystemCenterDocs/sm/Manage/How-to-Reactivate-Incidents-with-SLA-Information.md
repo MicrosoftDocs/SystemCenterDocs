@@ -15,7 +15,7 @@ In Service Manager, you can reactivate resolved incidents that have an associate
 
 ### To reactivate an incident with SLA information
 
-1.  In the [!INCLUDE[smcons](../../includes/smcons_md.md)], click **Work Items**.
+1.  In the Service Manager console, click **Work Items**.
 
 2.  In the **Work Items** pane, expand **Incident Management**, and then click **All** .
 

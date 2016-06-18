@@ -19,7 +19,7 @@ When an incident has already been breached, no notification bar is displayed in 
 
 ### To view warning SLA information in an incident form
 
-1.  In the [!INCLUDE[smcons](../../includes/smcons_md.md)], click **Work Items**.
+1.  In the Service Manager console, click **Work Items**.
 
 2.  In the **Work Items** pane, expand **Incident Management**, and then click **Incidents with Service Level Warning**.
 
@@ -33,7 +33,7 @@ When an incident has already been breached, no notification bar is displayed in 
 
 ### To view breached SLA information in an incident form
 
-1.  In the [!INCLUDE[smcons](../../includes/smcons_md.md)], click **Work Items**.
+1.  In the Service Manager console, click **Work Items**.
 
 2.  In the **Work Items** pane, expand **Incident Management**, and then click **Incidents with Service Level Breached**.
 

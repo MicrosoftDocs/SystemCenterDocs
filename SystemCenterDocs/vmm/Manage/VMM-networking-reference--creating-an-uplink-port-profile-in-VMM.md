@@ -45,7 +45,7 @@ When you configure a logical switch, you can also create an uplink port profile.
 
     -   **Mac Addresses**: Uses the source and destination MAC addresses to create a hash and then assigns the packets that have that hash value to one of the available network adapters.
 
-    -   **Dynamic**: Uses the dynamic load balancing that is available in [!INCLUDE[winthreshold_server_2](../../includes/winthreshold_server_2_md.md)] and [!INCLUDE[winblue_server_2](../../includes/winblue_server_2_md.md)] only.
+    -   **Dynamic**: Uses the dynamic load balancing that is available in Windows Server Technical Preview and Windows Server 2012 R2 only.
 
     -   **Host default**: This specifies the **Dynamic** algorithm for hosts that support it, and the **Hyper\-V Port** algorithm for hosts that do not.
 
