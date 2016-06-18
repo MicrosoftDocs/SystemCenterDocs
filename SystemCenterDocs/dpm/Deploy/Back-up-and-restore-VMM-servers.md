@@ -1,16 +1,4 @@
 ---
-description:  
-manager:  cfreemanwa
-ms.topic:  article
-author:  markgalioto
-ms.prod:  system center 2016
-keywords:  system center, dpm
-ms.date:  2016-06-17
-title:  Back up and restore VMM servers
-ms.technology:  dpm
----
-
----
 title: Back up and restore VMM servers
 ms.custom: na
 ms.prod: system-center-threshold

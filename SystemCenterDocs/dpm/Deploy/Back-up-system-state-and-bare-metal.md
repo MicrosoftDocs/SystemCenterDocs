@@ -1,16 +1,13 @@
 ---
-description:  
-manager:  cfreemanwa
-ms.topic:  article
-author:  markgalioto
-ms.prod:  system center 2016
-keywords:  system center, dpm
-ms.date:  2016-06-17
-title:  Back up system state and bare metal
-ms.technology:  dpm
-ms.assetid:  7035095c-6d30-40aa-ae73-4159e305d7ea
+title: Back up system state and bare metal
+ms.custom: na
+ms.prod: system-center-threshold
+ms.reviewer: na
+ms.suite: na
+ms.tgt_pltfrm: na
+ms.topic: article
+ms.assetid: 7035095c-6d30-40aa-ae73-4159e305d7ea
 ---
-
 # Back up system state and bare metal
 DPM can back up system state and provide bare metal recovery \(BMR\) protection.
 

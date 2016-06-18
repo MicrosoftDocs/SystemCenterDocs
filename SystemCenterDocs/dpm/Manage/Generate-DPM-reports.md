@@ -1,16 +1,13 @@
 ---
-description:  
-manager:  cfreemanwa
-ms.topic:  article
-author:  markgalioto
-ms.prod:  system center 2016
-keywords:  system center, dpm
-ms.date:  2016-06-17
-title:  Generate DPM reports
-ms.technology:  dpm
-ms.assetid:  f9a97135-1c5b-45a9-b307-bb957fde21d8
+title: Generate DPM reports
+ms.custom: na
+ms.prod: system-center-threshold
+ms.reviewer: na
+ms.suite: na
+ms.tgt_pltfrm: na
+ms.topic: article
+ms.assetid: f9a97135-1c5b-45a9-b307-bb957fde21d8
 ---
-
 # Generate DPM reports
 DPM uses SQL Server Reporting Services to create reports. In the **Reporting** task area you can generate and view reports, schedule automation report generation, managing settings, and subscribe to reports. Alternatively you can generate DPM reports from Operations Manager if you're using it to monitor DPM.
 

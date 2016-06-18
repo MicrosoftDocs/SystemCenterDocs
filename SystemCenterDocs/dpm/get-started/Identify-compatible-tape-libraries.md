@@ -1,16 +1,4 @@
 ---
-description:  
-manager:  cfreemanwa
-ms.topic:  article
-author:  markgalioto
-ms.prod:  system center 2016
-keywords:  system center, dpm
-ms.date:  2016-06-17
-title:  Identify compatible tape libraries
-ms.technology:  dpm
----
-
----
 title: Identify compatible tape libraries
 ms.custom: na
 ms.prod: system-center-threshold
@@ -102,4 +90,3 @@ DPMLibraryTest.exe /CERTIFY /<switch_1> [/switch_2]
 |\/SA|Run standalone drive test cases|**DPMLibraryTest.exe \/CERTIFY \/TL \\\\.\\Tape21745678 \/SA**|
 |\/EX|Show examples||
 |\/Help or \/?|Show help||
-
