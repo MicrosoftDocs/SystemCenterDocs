@@ -51,7 +51,7 @@ All the Software Load Balancer virtual machines must have [!INCLUDE[winthreshold
 
 In addition to the Management and HNV Provider logical networks that you already have configured during network controller deployment, you need the Transit (sometimes called Front End), Private VIP and Public VIP networks to deploy the SLB. Refer to the [Plan a Software Defined Network Infrastructure](https://technet.microsoft.com/library/mt605207.aspx) topic for more information about these networks.
                                                                                                                                     
- >[!NOTE]Normally you would use the Transit network for BGP peering. But because of a limitation in [!INCLUDE[winthreshold_server_2_mdToken/winthreshold_server_2_md.md)] 5, the SLB actually uses the Management network for BGP peering. However, this doesn’t impact how you deploy the SLB.  
+Normally you would use the Transit network for BGP peering. But because of a limitation in [!INCLUDE[winthreshold_server_2_mdToken/winthreshold_server_2_md.md)] 5, the SLB actually uses the Management network for BGP peering. However, this doesn’t impact how you deploy the SLB.  
 
 Active Directory and DNS must be available and reachable from these networks. You must have Domain Administrator credentials and the ability to create DNS entries in the domain.
 
@@ -201,7 +201,7 @@ Open the **VMs and Services** workspace.
 
 4.  Verify that the state is **Deployed**.
 
->[!NOTE]If you want to scale-in or scale-out a deployed Software Load Balancer Service instance, see [System Center: Virtual Machine Manager Engineering Blog](https://blogs.technet.microsoft.com/scvmm/2011/05/18/scvmm-2012-an-explanation-of-scale-in-and-scale-out-for-a-service/).
+If you want to scale-in or scale-out a deployed Software Load Balancer Service instance, see [System Center: Virtual Machine Manager Engineering Blog](https://blogs.technet.microsoft.com/scvmm/2011/05/18/scvmm-2012-an-explanation-of-scale-in-and-scale-out-for-a-service/).
 
 ##### Configure the SLB role and SLB/MUX Instance Properties
 
@@ -239,7 +239,7 @@ Now that the service is deployed, you can configure its properties. This involve
 
 The SLB Service instance is now associated with the SLBM service, and you should see the SLB/MUX virtual machine instance with all the settings listed under the **Load Balancer role**.
 
->[!NOTE]As a quick validation step, you can also try to access the following URL from a browser on your VMM Server:
+As a quick validation step, you can also try to access the following URL from a browser on your VMM Server:
 >
 >``https://<RESTIP-or-FQDN>/networking/v1/loadbalancermuxes``
 >
@@ -316,7 +316,7 @@ Check the **Jobs** window to verify that the Update Fabric Role with required co
 
 To complete the BGP peering operation you need to configure BGP to peer with your SLB/MUX instance on the router. If you use a hardware router, you need to consult your vendor’s documentation regarding how to setup BGP peering for that device. You also need to know the IP address of the SLB/MUX instance that you deployed earlier. To do this, you can either log on to the SLB MUX virtual machine and run ``ipconfig /all`` from the command prompt, or you can get the IP address from the VMM console.
 
->[!NOTE]  After peering is completed for the SLB/MUX, you need to advertise all the VIP address pools that will be used by the SLB/MUX to the SLB Manager role using Windows PowerShell cmdlets. This also applies for the Public VIP address pool you may create later to configure an IPSec connection type after you deployed and on-boarded a gateway.
+After peering is completed for the SLB/MUX, you need to advertise all the VIP address pools that will be used by the SLB/MUX to the SLB Manager role using Windows PowerShell cmdlets. This also applies for the Public VIP address pool you may create later to configure an IPSec connection type after you deployed and on-boarded a gateway.
 
 ### Windows PowerShell for advertising VIP address pools to the SLB Manager                          
 The following is a sample Windows PowerShell script that advertises your Private and Public VIP address pools to the SLBM. Substitute your own parameters from your datacenter.
@@ -480,8 +480,7 @@ Use the following steps to configure NAT:
     ![VMM NATImage/VMM-NAT.png)
 10.	Click **OK**.
 
->[!NOTE]
->The existing NAT connections will not be visible when you close the network connectivity wizard and re-open it. You can, however, still add additional NAT connections through the user interface.
+The existing NAT connections will not be visible when you close the network connectivity wizard and re-open it. You can, however, still add additional NAT connections through the user interface.
 > 
 >To see the existing NAT connections, you can use the following PowerShell cmdlet:
 ``Get-SCNATConnection``

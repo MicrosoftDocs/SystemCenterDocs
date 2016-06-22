@@ -18,8 +18,5 @@ This section describes the following types of settings in VMM:
 
 -   [Deploying virtual NUMA for VMM](Deploying-virtual-NUMA-for-VMM.md)
 
-## See Also
-[Managing virtual machines with VMM](Managing-virtual-machines-with-VMM.md)
-[Managing tenant resources with VMM](Managing-tenant-resources-with-VMM.md)
 
 

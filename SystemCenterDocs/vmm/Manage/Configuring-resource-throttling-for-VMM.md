@@ -42,9 +42,6 @@ Memory throttling helps to prioritize or deprioritize access to memory resources
 
 For more information, see [How to configure processor and memory throttling for VMM](How-to-configure-processor-and-memory-throttling-for-VMM.md).
 
-## See Also
-[Configuring virtual machine options and settings](Configuring-virtual-machine-options-and-settings.md)
-[Managing virtual machines with VMM](Managing-virtual-machines-with-VMM.md)
-[Managing tenant resources with VMM](Managing-tenant-resources-with-VMM.md)
+
 
 

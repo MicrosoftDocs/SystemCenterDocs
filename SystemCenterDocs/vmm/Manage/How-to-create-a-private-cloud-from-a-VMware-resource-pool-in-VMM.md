@@ -118,6 +118,8 @@ Before you create a private cloud from a VMware resource pool, make sure that th
 
 After you create a private cloud, you can assign the private cloud to one or more user roles. To assign the private cloud to an existing user role, or to assign the private cloud and create a user role at the same time, in the **VMs and Services** workspace, click the private cloud that you want to assign. Then, on the **Home** tab, in the **Cloud** group, click **Assign Cloud** to open the **Assign Cloud** dialog box. If you select an existing user role, you can modify the properties of the user role. If you select **Create a user role and assign this cloud**, the Create User Role Wizard opens.
 
+<<<<<<< HEAD
+=======
 For information about how to create a self\-service user role, see [How to create a Self-Service User role in VMM](How-to-create-a-Self-Service-User-role-in-VMM.md).
 
 ## See Also
@@ -125,5 +127,6 @@ For information about how to create a self\-service user role, see [How to creat
 [Overview: creating a private cloud with VMM](Overview--creating-a-private-cloud-with-VMM.md)
 [Managing private clouds with VMM](Managing-private-clouds-with-VMM.md)
 [Managing tenant resources with VMM](Managing-tenant-resources-with-VMM.md)
+>>>>>>> cbd5a0248f8f546ef51e06ea65d5578a2007427e
 
 

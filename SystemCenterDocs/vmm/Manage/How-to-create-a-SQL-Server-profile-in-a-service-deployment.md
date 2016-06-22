@@ -49,4 +49,3 @@ You can use the following procedure to create a SQL Server profile in Virtual M
 
     The SQL Server profile appears in the **Profiles** pane.
 
-

@@ -80,8 +80,11 @@ The following list describes the hardware load balancer workflow to load balance
 
 6.  After the service is deployed, the administrator verifies in the VMM console which virtual IP address is being used as the front\-end IP address for the service tier. The administrator then contacts the DNS administrator to create a DNS entry for the assigned virtual IP address. For example, if the front\-end Web tier of a service is load balanced, the administrator can verify which virtual IP address is used for that tier. The DNS administrator can then create an entry in DNS for the name that users will specify to connect to the Web front\-end. For example, the DNS administrator could create a DNS entry for *ServiceName*.contoso.com with the corresponding virtual IP address.
 
+<<<<<<< HEAD
+=======
     > [!NOTE]
     > For more detailed information about how to load\-balance a service tier by using a hardware load balancer, see [How to add networking components to a service template](How-to-add-networking-components-to-a-service-template.md) and [How to configure a hardware load balancer for a service tier](How-to-configure-a-hardware-load-balancer-for-a-service-tier.md).
+>>>>>>> cbd5a0248f8f546ef51e06ea65d5578a2007427e
 
 ### NLB workflow
 The following list describes the NLB workflow to load balance a service tier. However, in service tiers running Linux, or in a service where the VM networks are configured with network virtualization, you cannot use the NLB workflow. Instead, use the [Hardware load balancer workflow](Configuring-load-balancing-in-VMM.md#BKMK_hw), listed earlier in this topic.

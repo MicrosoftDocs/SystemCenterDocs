@@ -210,8 +210,8 @@ After you restore the VMM management server and the VMM database, library server
 
 ##### To reassociate library servers with physical computers
 
-1.  If the newly restored computer has the same name as the original computer, install the Virtual Machine Manager agent locally on that computer and then reassociate that computer with the VMM management server. For more information, see [How to Reassociate a Host or Library Server](How-to-Reassociate-a-Host-or-Library-Server.md).
 
+1.  If the newly restored computer has the same name as the original computer, install the Virtual Machine Manager agent locally on that computer and then reassociate that computer with the VMM management server. 
 2.  If the newly restored computer has a different name than the original computer, use the VMM console to remove the original computer from the list of managed computers, and then add the new computer.
 
 ### <a name="BKMK_r_misc"></a>Restore registry keys, Active Directory objects, and non\-VMM managed credentials
@@ -239,7 +239,8 @@ Depending on your VMM configuration, you might need to do some of the following 
 -   [Review add-ins, driver packages, and certificates](Back-up-and-restore-VMM.md#BKMK_post_misc)
 
 ### <a name="BKMK_post_AlwaysOn"></a>Configure AlwaysOn Availability Groups
-If the VMM database was configured by using SQL Server AlwaysOn Availability Groups, you must complete a few tasks to ensure that the database is correctly configured with Availability Groups. For more information, see [How to Complete the Configuration of AlwaysOn Availability Groups for the Database](How-to-Complete-the-Configuration-of-AlwaysOn-Availability-Groups-for-the-Database.md).
+
+If the VMM database was configured by using SQL Server AlwaysOn Availability Groups, you must complete a few tasks to ensure that the database is correctly configured with Availability Groups. 
 
 ### <a name="BKMK_post_WAP"></a>Reinstall Windows Azure Pack
 If Windows Azure Pack \(WAP\) was deployed in your environment to support tenants by using VMM, then you’ll have to reinstall it after you restore the VMM environment. For more information about Windows Azure Pack for Windows Server, see [Windows Azure Pack for Windows Server](http://technet.microsoft.com/library/dn296435.aspx).
@@ -261,7 +262,7 @@ All virtual machine templates that were restored must correctly specify the virt
 ### <a name="BKMK_post_RM"></a>Restore Windows Azure Hyper\-V Recovery Manager
 If Windows Azure Hyper\-V Recovery Manager is implemented in the VMM environment, then you must perform a few steps to restore the Windows Azure Hyper\-V Recovery Manager Provider.
 
-For more information, see [How to Restore Windows Azure Hyper-V Recovery Manager Provider](How-to-Restore-Windows-Azure-Hyper-V-Recovery-Manager-Provider.md).
+
 
 ### <a name="BKMK_post_misc"></a>Review add\-ins, driver packages, and certificates
 After you restore VMM, review the following items to ensure that you have taken necessary steps for your add\-ins, driver packages, and certificates:

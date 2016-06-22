@@ -31,7 +31,7 @@ For information about additional Windows PowerShell cmdlets that you can use to 
 ## <a name="BKMK_architecture"></a>Architecture design
 The SMI\-S provider follows an "embedded" provider model, where the provider is installed on the iSCSI Target Server computer. The following diagram shows how the SMI\-S provider interacts with other components. The SMI\-S provider is WMI\-based and manages the iSCSI Target Server by using the iSCSI Target WMI provider.
 
-![](Image/VMMiSCSI1.png)
+![](../../media/VMMiSCSI1.png)
 
 ## <a name="BKMK_known"></a>Known issues with the SMI\-S provider
 In this release of the SMI\-S provider, there are the following known issues:
@@ -51,12 +51,12 @@ In this release of the SMI\-S provider, there are the following known issues:
 ### Two providers for VMM management
 In this case, as the following diagrams show, two SMI\-S providers are installed on the same computer, and each provider is registered with the Storage Management service for VMM. Due to a known issue with the Storage Management service, the service only discovers one of the providers.
 
-![](Image/VMMiSCSI2.png)
+![](../../media/ VMMiSCSI2.png)
 
 ### Two providers for different storage management
 In this case, two WMI\-based SMI\-S providers are installed on the same computer, but only one SMI\-S provider is intended for VMM management. The other provider is a third\-party SMI\-S provider is intended for File Server Storage Management. Due to a known issue in the Storage Management service, both VMM and File Service Storage Management only discover one provider, which might not be the intended provider for the application.
 
-![](Image/VMMiSCSI3.png)
+![](../../media/VMMiSCSI3.png)
 
 ## <a name="BKMK_provider"></a>Provider details
 As shown in the previous diagrams, the SMI\-S provider is WMI\-based and passes information from the iSCSI Target service to the Storage Management service on the VMM server. After registering the provider, VMM sends a full discovery request to retrieve all the objects and their mappings from the SMI\-S provider.

@@ -128,19 +128,17 @@ Review the Quick Start Guide, especially the network requirements and the gatewa
 
 #### To use a server running Windows Server Technical Preview as a gateway with VMM
 
-1.  Open the Quick Start Guide that was included in the file that you downloaded in the preparatory step at the beginning of the Prerequisites. Follow instructions in the Quick Start Guide to import the appropriate service template into the VMM library. For more information, see [How to import a service template in VMM](How-to-import-a-service-template-in-VMM.md).
 
-    When you import the template, ensure that you configure references to the following items:
+1.  Open the Quick Start Guide that was included in the file that you downloaded in the preparatory step at the beginning of the Prerequisites. Follow instructions in the Quick Start Guide to import the appropriate service template into the VMM library.
 
-    -   The custom resource folder, called **VMClusterSetup.cr**.
+ When you import the template, ensure that you configure references to the following items:
 
-    -   The virtual hard disk containing the Windows Server Technical Preview operating system.
+- The custom resource folder, called **VMClusterSetup.cr**.
+- The virtual hard disk containing the Windows Server Technical Preview operating system.
+- The blank virtual hard disk that you added to the library for the CSV that the gateway will use.
+- The blank virtual hard disk that you added to the library for the quorum resource that the gateway will use.
 
-    -   The blank virtual hard disk that you added to the library for the CSV that the gateway will use.
-
-    -   The blank virtual hard disk that you added to the library for the quorum resource that the gateway will use.
-
-    Also follow the instructions in the Quick Start Guide that describe how to customize the service template for your environment.
+Also follow the instructions in the Quick Start Guide that describe how to customize the service template for your environment.
 
 2.  Create a two\-node host cluster that runs Windows Server Technical Preview with the Hyper\-V role, and add it to VMM. As with any cluster, in the network infrastructure that connects the cluster nodes, avoid having single points of failure. Ensure that the host cluster is in an appropriate domain, as described in prerequisite 1. For information about the hardware requirements for the host cluster \(the servers that run Hyper\-V\), see [Windows Server Gateway Hardware and Configuration Requirements](http://technet.microsoft.com/library/dn423897.aspx). When you deploy the host cluster, be sure to run the Validate a Configuration Wizard and confirm that the cluster passes the cluster validation tests.
 

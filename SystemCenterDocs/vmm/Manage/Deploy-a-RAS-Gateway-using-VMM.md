@@ -168,7 +168,7 @@ If the gateway deployment fails, ensure you delete the failed instance of the se
 3. Click **All Hosts** and select the **Services** option.
 4. Delete the failed Gateway Service instance.
 
->[!NOTE]If you want to scale-in or scale-out a deployed Software Load Balancer Service instance, see [System Center: Virtual Machine Manager Engineering Blog](https://blogs.technet.microsoft.com/scvmm/2011/05/18/scvmm-2012-an-explanation-of-scale-in-and-scale-out-for-a-service/).  
+If you want to scale-in or scale-out a deployed Software Load Balancer Service instance, see [System Center: Virtual Machine Manager Engineering Blog](https://blogs.technet.microsoft.com/scvmm/2011/05/18/scvmm-2012-an-explanation-of-scale-in-and-scale-out-for-a-service/).  
 
 ### Configure the Gateway Manager Role
 
@@ -214,7 +214,7 @@ The Service instance that you deployed is now associated with the Gateway Manage
 
 ### Configure and validate Gateway connection types 
 
->[!NOTE]As a quick validation step, you can also try to access the following URL from a browser on your VMM Server:
+As a quick validation step, you can also try to access the following URL from a browser on your VMM Server:
 >
 >``https://<RESTIP-or-FQDN>/networking/v1/gateways ``
 >
@@ -241,11 +241,12 @@ A S2S IPSec connection allows you to securely access remote virtual machines and
 9.	Optionally, you can also configure bandwidth settings on this screen.
 10.	Select the **Authentication** tab.
 11.	Choose your preferred authentication method for the connection. 
-    >[!NOTE]If you choose the authentication using ‘Run As Account’, then you need to create a user account with the username of your choice and the IPSec key as the password for the account. Browse and select this account as your Run As Account.
+
+If you choose the authentication using ‘Run As Account’, then you need to create a user account with the username of your choice and the IPSec key as the password for the account. Browse and select this account as your Run As Account.
 12.	Select the **Routes** tab.
 13.	Type all the remote subnets that you need to connect to.
 
-    >[!NOTE]If you selected **Enable Border Gateway Protocol (BGP)** on the **Connectivity** tab then you can leave this screen blank and instead fill out your ASN, peer BGP IP and its ASN on the **Border Gateway Protocol** tab as shown below:
+If you selected **Enable Border Gateway Protocol (BGP)** on the **Connectivity** tab then you can leave this screen blank and instead fill out your ASN, peer BGP IP and its ASN on the **Border Gateway Protocol** tab as shown below:
     
     ![VMM BGPImage/VMM-BGP.png)
 
@@ -272,8 +273,7 @@ A S2S GRE connection allows you to access remote virtual machines and services f
 10.	Type the GRE key.
 11.	Optionally, you can complete the other fields on this screen but these values are not required to set up a S2S GRE connection.
 12.	Select the **Routes** tab.
-13.	Type all the remote subnets that you need to connect to.
-    >[!NOTE]If you selected **Enable Border Gateway Protocol (BGP)** on the **Connectivity** tab, you can leave this screen blank and instead complete your ASN, peer BGP IP and ASN fields on the **Border Gateway Protocol** tab.
+13.	Type all the remote subnets that you need to connect to. If you selected **Enable Border Gateway Protocol (BGP)** on the **Connectivity** tab, you can leave this screen blank and instead complete your ASN, peer BGP IP and ASN fields on the **Border Gateway Protocol** tab.
 15.	You can use the defaults for the remaining configuration.
 
 To validate that your S2S GRE connectivity is configured properly, try to ping the remote endpoint IP address from one of the virtual machines on the VM Network.
@@ -282,7 +282,7 @@ To validate that your S2S GRE connectivity is configured properly, try to ping t
 
 An L3 gateway acts as a bridge between the physical infrastructure in the datacenter and the virtualized infrastructure in the Hyper-V Network Virtualization cloud. For more information about L3 gateway deployment scenarios, see [Windows Server Gateway](https://technet.microsoft.com/library/dn313101.aspx#bkmk_private).
 
->[!NOTE]VMM does not support configuring BGP-enabled dynamic L3 connectivity in TP 5.
+VMM does not support configuring BGP-enabled dynamic L3 connectivity in TP 5.
 
 An L3 connection can be configured using a PowerShell script.
 

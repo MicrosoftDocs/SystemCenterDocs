@@ -33,8 +33,5 @@ The following topics describe how to create and deploy virtual machines in Virtu
 
 -   [How to view and modify properties of a deployed virtual machine in VMM](How-to-view-and-modify-properties-of-a-deployed-virtual-machine-in-VMM.md)
 
-## See Also
-[Managing virtual machines with VMM](Managing-virtual-machines-with-VMM.md)
-[Managing tenant resources with VMM](Managing-tenant-resources-with-VMM.md)
 
 

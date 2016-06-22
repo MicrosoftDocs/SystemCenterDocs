@@ -12,9 +12,8 @@ You can use VMM to configure the iSCSI Target Server through Windows PowerShell.
 
 ### To manage storage on an iSCSI Target Server
 
-1.  To open the VMM PowerShell interface, use the Windows PowerShell menu, as shown in the following illustration.
 
-    ![](Image/VMMiSCSI5.gif)
+1.  Open the PowerShell interface.
 
 2.  You can use the following Windows PowerShell cmdlets to manage iSCSI Target Server resources. VMM.
 

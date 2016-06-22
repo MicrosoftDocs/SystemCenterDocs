@@ -127,3 +127,4 @@ Before you create a virtual machine template, note the following:
 
 10. On the **Summary** page, confirm the settings, and then click **Create**.
 
+

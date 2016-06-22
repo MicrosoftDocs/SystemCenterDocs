@@ -37,7 +37,7 @@ The rules are applied to virtual switch ports on Hyper-V servers as "extended po
 
 Each of these actions is covered in more detail later in this topic.
 
->[!NOTE]Port ACL settings are exposed only through PowerShell cmdlets in VMM and are not available in the VMM console user interface.
+Port ACL settings are exposed only through PowerShell cmdlets in VMM and are not available in the VMM console user interface.
 
 ### Define port ACL rules for the port ACL
 Each port ACL consists of a collection of port ACL rules. Each rule contains different parameters:
@@ -56,7 +56,7 @@ Each port ACL consists of a collection of port ACL rules. Each rule contains dif
 * Priority: 1 – 65535 (lowest number has highest priority). 
   This priority is relative to the layer in which it is applied. More information about how ACL rules are applied based on priority and the object to which     the ACL is attached follows.
 
->[!NOTE] If you are configuring Port ACLs for a network controller managed fabric, you must specify a priority equal to or greater than 100. The network controller currently doesn’t support a priority below 100.
+If you are configuring Port ACLs for a network controller managed fabric, you must specify a priority equal to or greater than 100. The network controller currently doesn’t support a priority below 100.
 #### New PowerShell cmdlets
 * ``New-SCPortACLrule -PortACL <PortACL> -Name <string> [-Description <string>] -Type <Inbound | Outbound> -Action <Allow | Deny> -Priority <uint16> -Protocol <Tcp | Udp | Any> [-SourceAddressPrefix <string: IPAddress | IPSubnet>] [-SourcePortRange <string:X|X-Y|Any>] [-DestinationAddressPrefix <string: IPAddress | IPSubnet>] [-DestinationPortRange <string:X|X-Y|Any>]``
 * ``Get-SCPortACLrule``
