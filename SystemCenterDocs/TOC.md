@@ -102,7 +102,7 @@
 ##### [How to Create a Resource Pool](OM/Manage/How-to-Create-a-Resource-Pool.md)
 ##### [How to Suspend Monitoring Temporarily by Using Maintenance Mode](OM/Manage/How-to-Suspend-Monitoring-Temporarily-by-Using-Maintenance-Mode.md)
 #### [Operations Manager Monitoring Scenarios](OM/Manage/Operations-Manager-Monitoring-Scenarios.md)
-####### [How to Configure a Management Server for Client Monitoring](How-to-Configure-a-Management-Server-for-Client-Monitoring_1.md)
+##### [How to Configure a Management Server for Client Monitoring](How-to-Configure-a-Management-Server-for-Client-Monitoring_1.md)
 ##### [Collecting Security Events Using Audit Collection Services in Operations Manager](om/Collecting-Security-Events-Using-Audit-Collection-Services-in-Operations-Manager.md)
 ##### [Monitoring Nano Server](OM/Manage/Monitoring-Nano-Server.md)
 ###### [Troubleshooting OM Agent installation on a Nano Server](OM/Manage/Troubleshooting-OM-Agent-installation-on-a-Nano-Server.md)
