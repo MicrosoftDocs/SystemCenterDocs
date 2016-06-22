@@ -8,21 +8,21 @@ ms.topic: article
 ms.assetid: 4660c9cf-9d5d-4dbf-bdab-73035f7d023b
 ---
 # How to create a private cloud from a VMware resource pool in VMM
-You can use this procedure to create a private cloud from a VMware resource pool in [!INCLUDE[vmm12sp1_long](../../includes/vmm12sp1_long_md.md)].
+You can use this procedure to create a private cloud from a VMware resource pool in Virtual Machine Manager \(VMM\).
 
 **Account requirements** You must perform this procedure as a member of the Administrator user role or as a member of the Delegated Administrator user role where the administrative scope includes the host group where the ESX host or host cluster that contains the VMware resource pool resides.
 
 ## Prerequisites
 Before you create a private cloud from a VMware resource pool, make sure that the following prerequisites are met:
 
--   Configure the fabric by using the procedures in [Managing fabric resources with VMM](Managing-fabric-resources-with-VMM.md). The fabric resource examples in this procedure use examples from the “Preparing the Fabric in [!INCLUDE[vmm12short](../../includes/vmm12short_md.md)]” section.
+-   Configure the fabric by using the procedures in [Managing fabric resources with VMM](Managing-fabric-resources-with-VMM.md). The fabric resource examples in this procedure use examples from the “Preparing the Fabric in VMM” section.
 
     > [!NOTE]
-    > You cannot discover and manage storage for VMware ESX hosts through [!INCLUDE[vmm12short](../../includes/vmm12short_md.md)].
+    > You cannot discover and manage storage for VMware ESX hosts through VMM.
 
--   In VMware vCenter Server, one or more resource pools must be configured. A vCenter Server and the VMware ESX host or host cluster that contains the VMware resource pool must be under [!INCLUDE[vmm12short](../../includes/vmm12short_md.md)] management. For information about how to add vCenter Server and ESX hosts to [!INCLUDE[vmm12short](../../includes/vmm12short_md.md)] management, see [VMM support for VMware](VMM-support-for-VMware.md).
+-   In VMware vCenter Server, one or more resource pools must be configured. A vCenter Server and the VMware ESX host or host cluster that contains the VMware resource pool must be under VMM management. For information about how to add vCenter Server and ESX hosts to VMM management, see [VMM support for VMware](VMM-support-for-VMware.md).
 
--   If you want to provide self\-service users the ability to store virtual machines to the [!INCLUDE[vmm12short](../../includes/vmm12short_md.md)] library, create a folder in an existing library share that will serve as the storage location. Note that self\-service users must have the **Store and re\-deploy** permission to store their virtual machines.
+-   If you want to provide self\-service users the ability to store virtual machines to the VMM library, create a folder in an existing library share that will serve as the storage location. Note that self\-service users must have the **Store and re\-deploy** permission to store their virtual machines.
 
     > [!IMPORTANT]
     > The library share location that you designate for stored virtual machines must be different from the shares that you designate as read\-only resource locations for the private cloud. Also, the path or part of the path must be unique when compared to the user role data path that is specified for a self\-service user role. For example, if the user role data path for a self\-service user role is \\\\VMMServer01\\Marketing, you cannot create a stored virtual machine path of \\\\VMMServer01\\Marketing\\StoredVMs. However, if the user role data path is \\\\VMMServer01\\Marketing\\MarketingUserRoleData, you could specify \\\\VMMServer01\\Marketing\\StoredVMs as the stored virtual machine path, as the full path is unique. You could also create entirely separate library shares.
@@ -56,7 +56,7 @@ Before you create a private cloud from a VMware resource pool, make sure that th
 4.  On the **Resources** page, click **VMware resource pools**, click an available VMware resource pool, and then click **Next**.
 
     > [!NOTE]
-    > For the resource pool to be available for selection, the VMware ESX host or host cluster that contains the VMware resource pool must be under [!INCLUDE[vmm12short](../../includes/vmm12short_md.md)] management.
+    > For the resource pool to be available for selection, the VMware ESX host or host cluster that contains the VMware resource pool must be under VMM management.
 
 5.  On the **Logical Networks** page, select each logical network that you want to make available to the private cloud, and then click **Next**.
 
@@ -76,7 +76,7 @@ Before you create a private cloud from a VMware resource pool, make sure that th
 8.  On the **Storage** page, click **Next**.
 
     > [!NOTE]
-    > You cannot use [!INCLUDE[vmm12short](../../includes/vmm12short_md.md)] to manage or assign storage classifications for storage that is assigned to ESX hosts.
+    > You cannot use VMM to manage or assign storage classifications for storage that is assigned to ESX hosts.
 
 9. On the **Library** page, do the following:
 

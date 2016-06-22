@@ -8,9 +8,9 @@ ms.topic: article
 ms.assetid: eb9a9e46-9a99-45f0-9c57-9aa97704b2d1
 ---
 # How to add users to the Administrator user role in VMM
-The Administrator user role is created when you install [!INCLUDE[vmm12sp1_long](../../includes/vmm12sp1_long_md.md)]. The user who performs the [!INCLUDE[vmm12short](../../includes/vmm12short_md.md)] installation and all domain users in the Local Administrators group are added to the Administrator user role.
+The Administrator user role is created when you install Virtual Machine Manager \(VMM\). The user who performs the VMM installation and all domain users in the Local Administrators group are added to the Administrator user role.
 
-Use this procedure to add users to the Administrator user role in [!INCLUDE[vmm12short](../../includes/vmm12short_md.md)] or remove users from the user role.
+Use this procedure to add users to the Administrator user role in VMM or remove users from the user role.
 
 **Account requirements** Administrators can add new users to the Administrator user role or remove users from that user role.
 

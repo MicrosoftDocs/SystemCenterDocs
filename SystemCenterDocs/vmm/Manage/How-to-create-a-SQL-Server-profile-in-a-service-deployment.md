@@ -8,10 +8,10 @@ ms.topic: article
 ms.assetid: 75f2f67b-4b39-4005-adc1-bbc66cd5e926
 ---
 # How to create a SQL Server profile in a service deployment
-You can use the following procedure to create a SQL Server profile in [!INCLUDE[vmm12sp1_long](../../includes/vmm12sp1_long_md.md)]. The SQL Server profile provides instructions for installing an instance of Microsoft SQL Server on a virtual machine.
+You can use the following procedure to create a SQL Server profile in Virtual Machine Manager \(VMM\). The SQL Server profile provides instructions for installing an instance of Microsoft SQL Server on a virtual machine.
 
 > [!IMPORTANT]
-> You can only use a SQL Server profile when you want to deploy a virtual machine as part of a service. In addition, you must use a virtual hard disk that contains a prepared instance of SQL Server \(generalized by using the Sysprep tool\). With [!INCLUDE[vmm12short](../../includes/vmm12short_md.md)] in [!INCLUDE[sc_threshold_1](../../includes/sc_threshold_1_md.md)], you can choose from the following versions of SQL Server:
+> You can only use a SQL Server profile when you want to deploy a virtual machine as part of a service. In addition, you must use a virtual hard disk that contains a prepared instance of SQL Server \(generalized by using the Sysprep tool\). With VMM in System Center 2016 Technical Preview, you can choose from the following versions of SQL Server:
 > 
 > -   SQL Server 2012
 > -   SQL Server 2014
@@ -35,7 +35,7 @@ You can use the following procedure to create a SQL Server profile in [!INCLUDE
 
     1.  Click **SQL Server Deployment, Deployment 1**. In the results pane, enter the required configuration information.
 
-        Required information includes the name of this SQL Server deployment \(for which you can choose to enter a more meaningful name than "Deployment 1"\), the SQL Server instance name, and the SQL Server instance ID \(the instance ID specified during installation of SQL Server\). The installation Run As account is optional and uses the [!INCLUDE[vmm12short](../../includes/vmm12short_md.md)] Service account unless you specify otherwise. For more information about Run As accounts, see [Configuring Run As accounts in VMM](Configuring-Run-As-accounts-in-VMM.md).
+        Required information includes the name of this SQL Server deployment \(for which you can choose to enter a more meaningful name than "Deployment 1"\), the SQL Server instance name, and the SQL Server instance ID \(the instance ID specified during installation of SQL Server\). The installation Run As account is optional and uses the VMM Service account unless you specify otherwise. For more information about Run As accounts, see [Configuring Run As accounts in VMM](Configuring-Run-As-accounts-in-VMM.md).
 
     2.  Click **Configuration**. In the results pane, enter the required configuration information.
 

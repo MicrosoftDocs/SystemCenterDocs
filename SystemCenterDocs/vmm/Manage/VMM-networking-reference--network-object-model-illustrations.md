@@ -11,9 +11,9 @@ ms.topic: article
 ms.assetid: 00f72c3e-157c-4310-ad2c-b4a6e8357c4e
 ---
 # VMM networking reference: network object model illustrations
-This topic contains illustrations that show the network object model in [!INCLUDE[vmm12sp1_long](../../includes/vmm12sp1_long_md.md)]. The illustrations show the relationships among network objects only, rather than indicating information about the wizards through which the objects are configured in the [!INCLUDE[vmm12short](../../includes/vmm12short_md.md)] console. The illustrations can be especially useful if you are learning about configuring [!INCLUDE[vmm12short](../../includes/vmm12short_md.md)] through Windows PowerShell scripts, which reflect the network object models directly.
+This topic contains illustrations that show the network object model in Virtual Machine Manager \(VMM\). The illustrations show the relationships among network objects only, rather than indicating information about the wizards through which the objects are configured in the VMM console. The illustrations can be especially useful if you are learning about configuring VMM through Windows PowerShell scripts, which reflect the network object models directly.
 
-For more general information about networking in [!INCLUDE[vmm12short](../../includes/vmm12short_md.md)], see the overview topics listed in [Configuring logical networks, VM networks, and logical switches in VMM](Configuring-logical-networks,-VM-networks,-and-logical-switches-in-VMM.md).
+For more general information about networking in VMM, see the overview topics listed in [Configuring logical networks, VM networks, and logical switches in VMM](Configuring-logical-networks,-VM-networks,-and-logical-switches-in-VMM.md).
 
 The following table describes the illustrations in this topic.
 
@@ -30,7 +30,7 @@ The following table describes the illustrations in this topic.
 -   Figure 6   [Network object model for logical switches](VMM-networking-reference--network-object-model-illustrations.md#BKMK_switch)
 
 ## <a name="BKMK_logical2"></a>Network object model for logical networks
-The following illustration shows the network object model for logical networks in [!INCLUDE[vmm12short](../../includes/vmm12short_md.md)]. The illustration shows the relationships among network objects only, rather than indicating information about the wizards and property sheets through which the objects are configured in the [!INCLUDE[vmm12short](../../includes/vmm12short_md.md)] console. The illustration can be especially useful if you are learning about configuring [!INCLUDE[vmm12short](../../includes/vmm12short_md.md)] through Windows PowerShell scripts, which reflect the network object models directly.
+The following illustration shows the network object model for logical networks in VMM. The illustration shows the relationships among network objects only, rather than indicating information about the wizards and property sheets through which the objects are configured in the VMM console. The illustration can be especially useful if you are learning about configuring VMM through Windows PowerShell scripts, which reflect the network object models directly.
 
 For some objects, sample names such as “Contoso1” and “Building1” are included to help illustrate the purpose of those objects. \(The object labeled “Network site” is also known as a “logical network definition.”\)
 
@@ -46,8 +46,8 @@ The following key explains the notations on the arrows:
 
 -   **M\-M** means “many\-to\-many.”
 
-## Network object models for VM networks in [!INCLUDE[vmm12short](../../includes/vmm12short_md.md)]
-The following illustrations show the network object models for logical networks and VM networks in [!INCLUDE[vmm12short](../../includes/vmm12short_md.md)]. These illustrations show the relationships among network objects only, rather than indicating information about the wizards and property sheets through which the objects are configured in the [!INCLUDE[vmm12short](../../includes/vmm12short_md.md)] console. The illustrations can be especially useful if you are learning about configuring [!INCLUDE[vmm12short](../../includes/vmm12short_md.md)] through Windows PowerShell scripts, which reflect the network object models directly.
+## Network object models for VM networks in VMM
+The following illustrations show the network object models for logical networks and VM networks in VMM. These illustrations show the relationships among network objects only, rather than indicating information about the wizards and property sheets through which the objects are configured in the VMM console. The illustrations can be especially useful if you are learning about configuring VMM through Windows PowerShell scripts, which reflect the network object models directly.
 
 ### <a name="BKMK_VLAN2"></a>Network object model for VM networks in a VLAN\-based configuration
 The following illustration shows the network object model for VM networks in a VLAN\-based configuration.
@@ -104,9 +104,9 @@ The following key explains the notations on the arrows:
 -   **1\-M** means “one\-to\-many.”
 
 ## <a name="BKMK_switch"></a>Network object model for logical switches
-The following illustration shows the network object model for logical switches in [!INCLUDE[vmm12short](../../includes/vmm12short_md.md)] in [!INCLUDE[sc_threshold_1](../../includes/sc_threshold_1_md.md)]. This illustration shows the relationships among network objects only, rather than indicating information about the wizards and property sheets through which the objects are configured in the [!INCLUDE[vmm12short](../../includes/vmm12short_md.md)] console. The illustration can be especially useful if you are learning about configuring [!INCLUDE[vmm12short](../../includes/vmm12short_md.md)] through Windows PowerShell scripts, which reflect the network object models directly.
+The following illustration shows the network object model for logical switches in VMM in System Center 2016 Technical Preview. This illustration shows the relationships among network objects only, rather than indicating information about the wizards and property sheets through which the objects are configured in the VMM console. The illustration can be especially useful if you are learning about configuring VMM through Windows PowerShell scripts, which reflect the network object models directly.
 
-For some objects in the illustration, sample names such as “Switch for central buildings” and “High\-bandwidth DB” are included to help illustrate the purpose of those objects. Two of the objects, the **Set of uplink port profiles** and the **Set of port profiles for virtual network adapters**, are visible in Windows PowerShell, but not in the [!INCLUDE[vmm12short](../../includes/vmm12short_md.md)] console.
+For some objects in the illustration, sample names such as “Switch for central buildings” and “High\-bandwidth DB” are included to help illustrate the purpose of those objects. Two of the objects, the **Set of uplink port profiles** and the **Set of port profiles for virtual network adapters**, are visible in Windows PowerShell, but not in the VMM console.
 
 ![](Image/03_VMM_Net_Obj.gif)
 

@@ -8,7 +8,7 @@ ms.topic: article
 ms.assetid: 9c272a03-f15a-482e-b9e5-10ffd5dfccf8
 ---
 # How to add an existing server to a Scale-Out File Server in VMM
-Use these procedures to add  nodes to Scale\-out File Servers that [!INCLUDE[vmm12sp1_long](../../includes/vmm12sp1_long_md.md)] manages:
+Use these procedures to add  nodes to Scale\-out File Servers that Virtual Machine Manager \(VMM\) manages:
 
 -   [Bring a node under management by VMM if you already used Failover Cluster Manager to add the node](How-to-add-an-existing-server-to-a-host-cluster-in-VMM.md#BKMK_fcm)
 
@@ -16,7 +16,7 @@ Use these procedures to add  nodes to Scale\-out File Servers that [!INCLUDE[vmm
 
 If you want to add a bare\-metal computer as a new node, see [How to add a bare-metal computer to a Scale-Out File Server in VMM](How-to-add-a-bare-metal-computer-to-a-Scale-Out-File-Server-in-VMM.md).
 
-## <a name="BKMK_fcm"></a>To bring a node under [!INCLUDE[vmm12short](../../includes/vmm12short_md.md)] management if you already used Failover Cluster Manager to add the node to the Scale\-Out File Server
+## <a name="BKMK_fcm"></a>To bring a node under VMM management if you already used Failover Cluster Manager to add the node to the Scale\-Out File Server
 
 1.  Open the **Fabric** workspace.
 
@@ -24,7 +24,7 @@ If you want to add a bare\-metal computer as a new node, see [How to add a bare-
 
 3.  Right\-click the file server, click **Properties**, and look for nodes labeled **Pending VMM agent deployment**. Click **Add**, specify the pending node, and then click **OK**.
 
-## <a name="BKMK_vmm"></a>To use [!INCLUDE[vmm12short](../../includes/vmm12short_md.md)] to add an existing server to a Scale\-Out File Server
+## <a name="BKMK_vmm"></a>To use VMM to add an existing server to a Scale\-Out File Server
 
 1.  As needed, review [Prerequisites: creating a Scale-Out File Server in VMM from existing servers](Prerequisites--creating-a-Scale-Out-File-Server-in-VMM-from-existing-servers.md). A server to be added to the cluster must meet the same basic requirements as the servers that are in the cluster.
 

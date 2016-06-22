@@ -10,16 +10,16 @@ ms.topic: article
 ms.assetid: a88e021c-e21f-4947-a98f-fb3ec68bbb59
 ---
 # How to add VMware ESX hosts to VMM
-You can use the following procedure to add a VMware ESX or ESXi host or host cluster to [!INCLUDE[vmm12sp1_long](../../includes/vmm12sp1_long_md.md)].
+You can use the following procedure to add a VMware ESX or ESXi host or host cluster to Virtual Machine Manager \(VMM\).
 
 ## Prerequisites
 Before you begin this procedure, make sure that the following prerequisites are met:
 
--   The VMware vCenter Server that manages the ESX hosts that you want to add must already be under [!INCLUDE[vmm12short](../../includes/vmm12short_md.md)] management. For more information, see the topic [How to add a VMware vCenter Server to VMM](How-to-add-a-VMware-vCenter-Server-to-VMM.md).
+-   The VMware vCenter Server that manages the ESX hosts that you want to add must already be under VMM management. For more information, see the topic [How to add a VMware vCenter Server to VMM](How-to-add-a-VMware-vCenter-Server-to-VMM.md).
 
 -   The hosts that you want to add must be running a supported version of ESX. For more information, see [VMM support for VMware](VMM-support-for-VMware.md).
 
--   If when you added the vCenter Server you selected the option to communicate with the ESX hosts in secure mode, [!INCLUDE[vmm12short](../../includes/vmm12short_md.md)] requires a certificate and public key for each managed ESX\/ESXi host. This enables all supported management tasks. You can either use the self\-signed certificate that VMware created when ESX was installed on the hosts, or a certificate from a trusted certification authority. If you are using the self\-signed certificate, you can import the certificate from each ESX host to the [!INCLUDE[vmm12short](../../includes/vmm12short_md.md)] management server beforehand, or you can import the certificate during this procedure. If you are using a certificate from a trusted certification authority, you do not have to manually retrieve the certificate from each host.
+-   If when you added the vCenter Server you selected the option to communicate with the ESX hosts in secure mode, VMM requires a certificate and public key for each managed ESX\/ESXi host. This enables all supported management tasks. You can either use the self\-signed certificate that VMware created when ESX was installed on the hosts, or a certificate from a trusted certification authority. If you are using the self\-signed certificate, you can import the certificate from each ESX host to the VMM management server beforehand, or you can import the certificate during this procedure. If you are using a certificate from a trusted certification authority, you do not have to manually retrieve the certificate from each host.
 
 -   Although it is not a required prerequisite, as you can create a Run As account when you add the ESX hosts, you can create a Run As account beforehand. The Run As account need not have root credentials on the ESX hosts that you want to add. The Run As account must be a local account on the ESX host that has administrator permissions on the ESX host. Domain accounts are not supported.
 
@@ -29,7 +29,7 @@ Before you begin this procedure, make sure that the following prerequisites are 
     > You can create Run As accounts in the **Settings** workspace. For more information about Run As accounts, see [old_How to create a Run As account in VMM](old_How-to-create-a-Run-As-account-in-VMM.md).
 
     > [!NOTE]
-    > In [!INCLUDE[vmm12short](../../includes/vmm12short_md.md)] in [!INCLUDE[sc_threshold_1](../../includes/sc_threshold_1_md.md)], you do not have to enable Secure Shell \(SSH\) root login on each ESX host. Also note that the use of a virtual machine delegate is not supported.
+    > In VMM in System Center 2016 Technical Preview, you do not have to enable Secure Shell \(SSH\) root login on each ESX host. Also note that the use of a virtual machine delegate is not supported.
 
 #### To add an ESX host or host cluster
 
@@ -65,7 +65,7 @@ Before you begin this procedure, make sure that the following prerequisites are 
 
     If each host has a status of **OK**, you do not have to complete the rest of this procedure.
 
-9. If the host status is **OK \(Limited\)**, you must provide security information for the host to enable all supported management tasks in [!INCLUDE[vmm12short](../../includes/vmm12short_md.md)]. The host status indicates **OK \(Limited\)** if you enabled secure mode, but have not yet imported a certificate and public key. To update the host status to **OK**, follow these steps:
+9. If the host status is **OK \(Limited\)**, you must provide security information for the host to enable all supported management tasks in VMM. The host status indicates **OK \(Limited\)** if you enabled secure mode, but have not yet imported a certificate and public key. To update the host status to **OK**, follow these steps:
 
     > [!TIP]
     > To view or change the secure mode setting, in the **Fabric** pane, expand **Servers**, and then click **vCenter Servers**. In the **vCenter Servers** pane, right\-click the vCenter Server, and then click **Properties**. The secure mode setting is under **Security**.

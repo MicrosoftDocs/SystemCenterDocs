@@ -11,7 +11,7 @@ ms.topic: article
 ms.assetid: bf1a333d-0772-49c4-8cac-171bcfb79a72
 ---
 # How to assign file shares on a Scale-Out File Server to a Hyper-V host or cluster in VMM
-On a Scale\-Out File Server in [!INCLUDE[vmm12sp1_long](../../includes/vmm12sp1_long_md.md)], after file shares have been created, assign them to a Hyper\-V host or host cluster. This configures the necessary permissions. For information about steps to take before and after assigning file shares to hosts and host clusters, see [Overview: configuring storage using Scale-Out File Servers in VMM](Overview--configuring-storage-using-Scale-Out-File-Servers-in-VMM.md).
+On a Scale\-Out File Server in Virtual Machine Manager \(VMM\), after file shares have been created, assign them to a Hyper\-V host or host cluster. This configures the necessary permissions. For information about steps to take before and after assigning file shares to hosts and host clusters, see [Overview: configuring storage using Scale-Out File Servers in VMM](Overview--configuring-storage-using-Scale-Out-File-Servers-in-VMM.md).
 
 This topic contains two procedures:
 
@@ -37,7 +37,7 @@ Use this procedure for working with a Hyper\-V host cluster.
 6.  In the **Run As account** box, configure the account settings. Note the following:
 
     > [!NOTE]
-    > By default, the Run As account that was used to add the host to [!INCLUDE[vmm12short](../../includes/vmm12short_md.md)] is listed. If you want to change the Run As account, click **Browse**, and then select an existing Run As account, or click **Create Run As Account** to create a new account. Do not use the same account that you used for the [!INCLUDE[vmm12short](../../includes/vmm12short_md.md)] service account. You must use the same Run As account on all cluster nodes.
+    > By default, the Run As account that was used to add the host to VMM is listed. If you want to change the Run As account, click **Browse**, and then select an existing Run As account, or click **Create Run As Account** to create a new account. Do not use the same account that you used for the VMM service account. You must use the same Run As account on all cluster nodes.
 
 7.  Repeat steps 4 through 6 on each node of the host cluster.
 
@@ -71,16 +71,16 @@ Use this procedure for working with a stand\-alone Hyper\-V host. If you are wor
 
 6.  In the **Run As account** box, configure the account settings. Note the following:
 
-    -   By default, the Run As account that was used to add the host to [!INCLUDE[vmm12short](../../includes/vmm12short_md.md)] is listed. If you want to change the Run As account, click **Browse**, and then select an existing Run As account, or click **Create Run As Account** to create a new account. You cannot use the same account that you used for the [!INCLUDE[vmm12short](../../includes/vmm12short_md.md)] service account.
+    -   By default, the Run As account that was used to add the host to VMM is listed. If you want to change the Run As account, click **Browse**, and then select an existing Run As account, or click **Create Run As Account** to create a new account. You cannot use the same account that you used for the VMM service account.
 
-    -   If you used a domain account for the [!INCLUDE[vmm12short](../../includes/vmm12short_md.md)] service account, add the domain account to the local Administrators group on the file server.
+    -   If you used a domain account for the VMM service account, add the domain account to the local Administrators group on the file server.
 
-    -   If you used the local system account for the [!INCLUDE[vmm12short](../../includes/vmm12short_md.md)] service account, add the computer account for the [!INCLUDE[vmm12short](../../includes/vmm12short_md.md)] management server to the local Administrators group on the file server. For example, for a [!INCLUDE[vmm12short](../../includes/vmm12short_md.md)] management server that is named **VMMServer01**, add the computer account **VMMServer01$**.
+    -   If you used the local system account for the VMM service account, add the computer account for the VMM management server to the local Administrators group on the file server. For example, for a VMM management server that is named **VMMServer01**, add the computer account **VMMServer01$**.
 
-    -   Any host or host cluster that accesses the SMB 3.0 file share must have been added to [!INCLUDE[vmm12short](../../includes/vmm12short_md.md)] by using a Run As account. [!INCLUDE[vmm12short](../../includes/vmm12short_md.md)] automatically uses this Run As account to access the SMB 3.0 file share.
+    -   Any host or host cluster that accesses the SMB 3.0 file share must have been added to VMM by using a Run As account. VMM automatically uses this Run As account to access the SMB 3.0 file share.
 
         > [!NOTE]
-        > If you specified explicit user credentials when you added a host or host cluster, you can remove the host or cluster from [!INCLUDE[vmm12short](../../includes/vmm12short_md.md)], and then add it again by using a Run As account.
+        > If you specified explicit user credentials when you added a host or host cluster, you can remove the host or cluster from VMM, and then add it again by using a Run As account.
 
 7.  In the *Host Name* **Properties** dialog box, click the **Storage** tab.
 

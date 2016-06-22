@@ -9,21 +9,21 @@ ms.topic: get-started-article
 ms.assetid: b8b4ec94-d6f4-4359-9a21-06178aa1de42
 ---
 # System Center 2016 Technical Preview 5
-Welcome to the [!INCLUDE[sc_threshold_1](includes/sc_threshold_1_md.md)]. We are releasing this version of System Center so you can try out new features that build on the improvements included in [!INCLUDE[winthreshold_server_1](includes/winthreshold_server_1_md.md)]. This is the fourth release of [!INCLUDE[sc_threshold_1](includes/sc_threshold_1_md.md)]. In this documentation System Center is referred to as [!INCLUDE[sc_threshold_1](includes/sc_threshold_1_md.md)] unless there is a need to distinguish between this release and a previous release. Windows Server Technical Preview 5 is also referred to as Windows Server Technical Preview, unless there is a reason to specify a particular release of Technical Preview.
+Welcome to the System Center 2016 Technical Preview. We are releasing this version of System Center so you can try out new features that build on the improvements included in Windows Server® Technical Preview. This is the fourth release of System Center 2016 Technical Preview. In this documentation System Center is referred to as System Center 2016 Technical Preview unless there is a need to distinguish between this release and a previous release. Windows Server Technical Preview 5 is also referred to as Windows Server Technical Preview, unless there is a reason to specify a particular release of Technical Preview.
 
 **This information is preliminary and subject to change.**
 
 The components updated for this release are:
 
--   [!INCLUDE[scdp_threshold_1](includes/scdp_threshold_1_md.md)]
+-   System Center 2016 Technical Preview \- Data Protection Manager
 
--   [!INCLUDE[scom_threshold_1](includes/scom_threshold_1_md.md)]
+-   System Center 2016 Technical Preview \- Operations Manager
 
--   [!INCLUDE[scor_threshold_1](includes/scor_threshold_1_md.md)]
+-   System Center 2016 Technical Preview \- Orchestrator
 
--   [!INCLUDE[scsm_threshold_1](includes/scsm_threshold_1_md.md)]
+-   System Center 2016 Technical Preview \- Service Manager
 
--   [!INCLUDE[scvm_threshold_1](includes/scvm_threshold_1_md.md)]
+-   System Center 2016 Technical Preview \- Virtual Machine Manager
 
 You can download these components from the [TechNet Evaluation Center](http://www.microsoft.com/en-us/evalcenter/evaluate-system-center-technical-preview).
 

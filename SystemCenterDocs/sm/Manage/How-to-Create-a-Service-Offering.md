@@ -11,11 +11,11 @@ ms.topic: article
 ms.assetid: 86b13898-ecdf-430a-90b7-67c66fc956c0
 ---
 # How to Create a Service Offering
-Service offerings are logical groups of request offerings. Both service offerings and their request offerings are available to [!INCLUDE[smssp](../../includes/smssp_md.md)] users, when their status is set to Published and if end users have been assigned a corresponding [!INCLUDE[smshort](../../includes/smshort_md.md)] user role. Only users who have been assigned a user role that is associated with a catalog group that contains catalog items can use the [!INCLUDE[smssp](../../includes/smssp_md.md)] to access the service catalog.
+Service offerings are logical groups of request offerings. Both service offerings and their request offerings are available to Self\-Service Portal users, when their status is set to Published and if end users have been assigned a corresponding Service Manager user role. Only users who have been assigned a user role that is associated with a catalog group that contains catalog items can use the Self\-Service Portal to access the service catalog.
 
 ### To create a service offering
 
-1.  In the [!INCLUDE[smcons](../../includes/smcons_md.md)], select **Library**.
+1.  In the Service Manager console, select **Library**.
 
 2.  In the **Library** pane, expand **Service Catalog**, and then select **Service Offerings**.
 
@@ -33,9 +33,9 @@ Service offerings are logical groups of request offerings. Both service offering
 
     4.  In the **Language** list, either leave the default selection or select a language.
 
-    5.  In the **Overview** text box, type a short overview to describe the service offering that will be shown on the [!INCLUDE[smssp](../../includes/smssp_md.md)] home page. For example, type **Access to AD Group, Access to Labs**.
+    5.  In the **Overview** text box, type a short overview to describe the service offering that will be shown on the Self\-Service Portal home page. For example, type **Access to AD Group, Access to Labs**.
 
-    6.  In the description box, type a description that will appear on the service offering page in the [!INCLUDE[smssp](../../includes/smssp_md.md)].
+    6.  In the description box, type a description that will appear on the service offering page in the Self\-Service Portal.
 
     7.  Next to **Management pack**, select an unsealed management pack of your choice, and then click **Next**. For example, if you previously created the Sample Management Pack, select it.
 

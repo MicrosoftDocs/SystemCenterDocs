@@ -11,7 +11,7 @@ ms.topic: article
 ms.assetid: b952e8ab-ce6f-4014-9e96-50cedaf415ed
 ---
 # Installing a Highly Available VMM Management Server
-The procedures in this section describe how to do the following in [!INCLUDE[vmm12sp1_long](../../includes/vmm12sp1_long_md.md)]:
+The procedures in this section describe how to do the following in Virtual Machine Manager \(VMM\):
 
 -   [How to Install a Highly Available VMM Management Server](How-to-Install-a-Highly-Available-VMM-Management-Server.md)
 
@@ -35,13 +35,13 @@ Before you begin the installation of a highly available VMM management server, e
 
 -   You are prepared to use distributed key management to store encryption keys in Active Directory Domain Services \(AD DS\). You must use distributed key management for a highly available VMM management server. For more information about distributed key management, see [Configuring Distributed Key Management in VMM](Configuring-Distributed-Key-Management-in-VMM.md).
 
--   You have a computer with a supported version of Microsoft SQL Server installed and running before you start the installation of [!INCLUDE[vmm12short](../../includes/vmm12short_md.md)]. For information about supported versions of SQL Server for the VMM database, see the following:
+-   You have a computer with a supported version of Microsoft SQL Server installed and running before you start the installation of VMM. For information about supported versions of SQL Server for the VMM database, see the following:
 
     -   [SQL Server Version Compatibility for System Center Technical Preview](../../system-requirements/SQL-Server-Version-Compatibility-for-System-Center-Technical-Preview.md)
 
     -   [Preparing your environment for System Center 2016 - Virtual Machine Manager](Preparing-your-environment-for-System-Center-2016---Virtual-Machine-Manager.md)
 
-The following are some recommendations to consider for installing highly available VMM management servers in [!INCLUDE[vmm12short](../../includes/vmm12short_md.md)]:
+The following are some recommendations to consider for installing highly available VMM management servers in VMM:
 
 -   We recommend that you use a highly available installation of SQL Server.
 
@@ -49,7 +49,7 @@ The following are some recommendations to consider for installing highly availab
 
 -   We also recommend that you use a highly available file server for hosting your library shares.
 
-The following are some additional considerations about highly available VMM management servers in [!INCLUDE[vmm12short](../../includes/vmm12short_md.md)]:
+The following are some additional considerations about highly available VMM management servers in VMM:
 
 -   You can only have one implementation of a highly available VMM management server on a given failover cluster.
 

@@ -17,7 +17,7 @@ If you are verifying a recurring notification subscription, you must wait for th
 
 ### To verify a notification configuration
 
-1.  In the [!INCLUDE[smcons](../../includes/smcons_md.md)], click **Work Items**.
+1.  In the Service Manager console, click **Work Items**.
 
 2.  In the **Work Items** pane, expand **Work Items**, expand **Incident Management**, and then click **All Open Incidents**.
 

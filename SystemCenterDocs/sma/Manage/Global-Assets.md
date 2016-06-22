@@ -11,7 +11,7 @@ ms.topic: article
 ms.assetid: d3544ae9-8fc7-40ce-843c-51ce7c49df6d
 ---
 # Global Assets
-Global Assets are available to all runbooks in an [!INCLUDE[sma_2](../../includes/sma_2_md.md)] environment.  You create and configure them using either the Automation workspace in the management portal or with the appropriate cmdlets in Windows PowerShell. From a runbook, you can retrieve and set values for global assets with activities in the **RunbookConstructs** module. The Windows PowerShell cmdlets are available to use in runbooks in [!INCLUDE[sma_1](../../includes/sma_1_md.md)], but the activities are recommended as they are more efficient because they do not have to work through the [!INCLUDE[sma_2](../../includes/sma_2_md.md)] web service.
+Global Assets are available to all runbooks in an Automation environment.  You create and configure them using either the Automation workspace in the management portal or with the appropriate cmdlets in Windows PowerShell. From a runbook, you can retrieve and set values for global assets with activities in the **RunbookConstructs** module. The Windows PowerShell cmdlets are available to use in runbooks in Service Management Automation, but the activities are recommended as they are more efficient because they do not have to work through the Automation web service.
 
 The following topics provide details on the different global assets, how to create and edit them using both the Management Portal and Windows PowerShell, and using them with activities in a runbook.
 

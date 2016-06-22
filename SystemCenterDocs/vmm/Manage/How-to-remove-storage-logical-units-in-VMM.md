@@ -8,7 +8,7 @@ ms.topic: article
 ms.assetid: 27d1eac7-6467-4dc1-b9f5-77a3d09ce3d0
 ---
 # How to remove storage logical units in VMM
-Use the following procedure to delete a logical unit that is under [!INCLUDE[vmm12sp1_long](../../includes/vmm12sp1_long_md.md)] management.
+Use the following procedure to delete a logical unit that is under Virtual Machine Manager \(VMM\) management.
 
 ## Prerequisites
 Ensure that the logical unit that you want to delete is not currently assigned to a server that is running Hyper\-V or is assigned as storage to a virtual machine. For information about how to remove an assigned logical unit from a server that is running Hyper\-V or a server in a host cluster, see [How to configure storage on a Hyper-V host in VMM](How-to-configure-storage-on-a-Hyper-V-host-in-VMM.md) and [How to configure storage on a Hyper-V host cluster in VMM](How-to-configure-storage-on-a-Hyper-V-host-cluster-in-VMM.md).

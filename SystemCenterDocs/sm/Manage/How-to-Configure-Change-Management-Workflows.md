@@ -15,13 +15,13 @@ Use the following procedures to set the priority of all standard change requests
 
 Before you can complete the steps in this procedure, you have to create the following templates:
 
--   **Set Standard Change Requests to Low Priority**: [!INCLUDE[crdefault](../../includes/crdefault_md.md)] the procedure "To create a priority\-modifying template" in [How to Create Change Request Templates](How-to-Create-Change-Request-Templates.md).
+-   **Set Standard Change Requests to Low Priority**: For more information, see the procedure "To create a priority\-modifying template" in [How to Create Change Request Templates](How-to-Create-Change-Request-Templates.md).
 
--   **New Standard Change Request Received Template**: [!INCLUDE[crdefault](../../includes/crdefault_md.md)] the procedure "To create a notification template for change requests" in [How to Create Notification Templates](How-to-Create-Notification-Templates.md).
+-   **New Standard Change Request Received Template**: For more information, see the procedure "To create a notification template for change requests" in [How to Create Notification Templates](How-to-Create-Notification-Templates.md).
 
 ### To create a workflow to set all standard change requests to low
 
-1.  In the [!INCLUDE[smcons](../../includes/smcons_md.md)], click **Administration**.
+1.  In the Service Manager console, click **Administration**.
 
 2.  In the **Administration** pane, expand **Administration**, expand **Workflows**, and then click **Configuration**.
 

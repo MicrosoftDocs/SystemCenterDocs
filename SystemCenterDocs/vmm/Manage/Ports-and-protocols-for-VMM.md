@@ -8,14 +8,14 @@ ms.topic: article
 ms.assetid: 6a33f439-9e47-443d-b36c-359986260df9
 ---
 # Ports and protocols for VMM
-When you install the [!INCLUDE[vmm12sp1_long](../../includes/vmm12sp1_long_md.md)] management server, you can assign some of the ports that it will use for communications and file transfers between various [!INCLUDE[vmm12short](../../includes/vmm12short_md.md)] components and other devices. While it is a best security practice to change the default ports, not all of the ports can be changed through [!INCLUDE[vmm12short](../../includes/vmm12short_md.md)]. The default settings for the ports are listed in the following tables.
+When you install the Virtual Machine Manager \(VMM\) management server, you can assign some of the ports that it will use for communications and file transfers between various VMM components and other devices. While it is a best security practice to change the default ports, not all of the ports can be changed through VMM. The default settings for the ports are listed in the following tables.
 
-## [!INCLUDE[vmm12short](../../includes/vmm12short_md.md)] management server \- source
-The [!INCLUDE[vmm12short](../../includes/vmm12short_md.md)] management server communicates with various components and devices over these ports:
+## VMM management server \- source
+The VMM management server communicates with various components and devices over these ports:
 
 |Component\/device connection target|Default ports\(s\)|Protocol\(s\)|Where to change port settings|
 |---------------------------------------|----------------------|-----------------|---------------------------------|
-|Hyper\-V Host \([!INCLUDE[vmm12short](../../includes/vmm12short_md.md)] agent\)|80\/135\/139\/445|WinRM\/RPC\/NetBIOS\/SMB \(over TCP\)|VMM Setup Wizard|
+|Hyper\-V Host \(VMM agent\)|80\/135\/139\/445|WinRM\/RPC\/NetBIOS\/SMB \(over TCP\)|VMM Setup Wizard|
 |Hyper\-V Host \(file transfer\)|443|HTTPS \(using BITS\)||
 |Hyper\-V Host \(control channel\)|5985\/5986|WS\-Management|VMM Setup Wizard|
 |VM Guest Agent  \(file transfer\)|443|HTTPS \(using BITS\)|Windows Registry|
@@ -28,31 +28,31 @@ The [!INCLUDE[vmm12short](../../includes/vmm12short_md.md)] management server co
 |Load Balancer|80\/443|Load balancer config provider||
 |Storage Management Service|n\/a|WMI||
 
-## [!INCLUDE[vmm12short](../../includes/vmm12short_md.md)] management server \- target
-The following components and devices communicate with the [!INCLUDE[vmm12short](../../includes/vmm12short_md.md)] management server over these ports:
+## VMM management server \- target
+The following components and devices communicate with the VMM management server over these ports:
 
 |Component\/device connection source|Default ports\(s\)|Protocol\(s\)|Where to change port settings|
 |---------------------------------------|----------------------|-----------------|---------------------------------|
-|Hyper\-V host in untrusted domain or perimeter network \(File Transfer\)<br /><br />If the [!INCLUDE[vmm12short](../../includes/vmm12short_md.md)] library server is on the same computer as the [!INCLUDE[vmm12short](../../includes/vmm12short_md.md)] management server, also see the port 443 listing in the next table, [VMM Library Server](Ports-and-protocols-for-VMM.md#BKMK_library).|443|TCP|Windows Registry|
-|[!INCLUDE[vmm12short](../../includes/vmm12short_md.md)] Administrator Console|8100, 8101 \(HTTPS\), 8102 \(NET.TCP\), 8103 \(HTTP\)|WCF|[!INCLUDE[vmm12short](../../includes/vmm12short_md.md)] Setup Wizard|
-|Windows PE Agent|8101 \(control\), 8103 \(time sync\)|WCF|[!INCLUDE[vmm12short](../../includes/vmm12short_md.md)] Setup Wizard|
-|WDS PXE Provider|8102|WCF|[!INCLUDE[vmm12short](../../includes/vmm12short_md.md)] Setup Wizard|
+|Hyper\-V host in untrusted domain or perimeter network \(File Transfer\)<br /><br />If the VMM library server is on the same computer as the VMM management server, also see the port 443 listing in the next table, [VMM Library Server](Ports-and-protocols-for-VMM.md#BKMK_library).|443|TCP|Windows Registry|
+|VMM Administrator Console|8100, 8101 \(HTTPS\), 8102 \(NET.TCP\), 8103 \(HTTP\)|WCF|VMM Setup Wizard|
+|Windows PE Agent|8101 \(control\), 8103 \(time sync\)|WCF|VMM Setup Wizard|
+|WDS PXE Provider|8102|WCF|VMM Setup Wizard|
 
-## <a name="BKMK_library"></a>[!INCLUDE[vmm12short](../../includes/vmm12short_md.md)] library server
-The [!INCLUDE[vmm12short](../../includes/vmm12short_md.md)] library server communicates with various components and devices over these ports:
-
-|Component\/device connection target|Default ports\(s\)|Protocol\(s\)|Where to change port settings|
-|---------------------------------------|----------------------|-----------------|---------------------------------|
-|Hyper\-V Host \(file transfer\)|443|BITS|[!INCLUDE[vmm12short](../../includes/vmm12short_md.md)] Setup Wizard|
-
-## [!INCLUDE[vmm12short](../../includes/vmm12short_md.md)] administrator console
-The [!INCLUDE[vmm12short](../../includes/vmm12short_md.md)] administrator console communicates with various components and devices over these ports:
+## <a name="BKMK_library"></a>VMM library server
+The VMM library server communicates with various components and devices over these ports:
 
 |Component\/device connection target|Default ports\(s\)|Protocol\(s\)|Where to change port settings|
 |---------------------------------------|----------------------|-----------------|---------------------------------|
-|[!INCLUDE[vmm12short](../../includes/vmm12short_md.md)] management server|8100, 8101 \(HTTPS\), 8102 \(NET.TCP\), 8103 \(HTTP\)|WCF|[!INCLUDE[vmm12short](../../includes/vmm12short_md.md)] Setup Wizard|
-|Hyper\-V Host|2179|RDP \(using VMConnect\)|[!INCLUDE[vmm12short](../../includes/vmm12short_md.md)] administrator console|
-|VMWare Web Services|443|WCF|[!INCLUDE[vmm12short](../../includes/vmm12short_md.md)] administrator console|
+|Hyper\-V Host \(file transfer\)|443|BITS|VMM Setup Wizard|
+
+## VMM administrator console
+The VMM administrator console communicates with various components and devices over these ports:
+
+|Component\/device connection target|Default ports\(s\)|Protocol\(s\)|Where to change port settings|
+|---------------------------------------|----------------------|-----------------|---------------------------------|
+|VMM management server|8100, 8101 \(HTTPS\), 8102 \(NET.TCP\), 8103 \(HTTP\)|WCF|VMM Setup Wizard|
+|Hyper\-V Host|2179|RDP \(using VMConnect\)|VMM administrator console|
+|VMWare Web Services|443|WCF|VMM administrator console|
 
 ## Other
 The following miscellaneous ports are also used:

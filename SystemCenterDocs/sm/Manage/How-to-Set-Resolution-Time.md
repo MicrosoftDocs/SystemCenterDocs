@@ -15,7 +15,7 @@ Use the following procedure to set a resolution time based on incident priority 
 
 ### To set resolution time
 
-1.  In the [!INCLUDE[smcons](../../includes/smcons_md.md)], click **Administration**.
+1.  In the Service Manager console, click **Administration**.
 
 2.  In the **Administration** pane, expand **Administration**, and then click **Settings**.
 

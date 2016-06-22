@@ -8,7 +8,7 @@ ms.topic: article
 ms.assetid: ae6ab645-0882-420d-942a-1617d76b9b52
 ---
 # Prerequisites: creating Scale-Out File Servers from bare metal with VMM
-This topic lists the prerequisites for the process of provisioning Scale\-Out File Servers from bare metal using [!INCLUDE[vmm12sp1_long](../../includes/vmm12sp1_long_md.md)]:
+This topic lists the prerequisites for the process of provisioning Scale\-Out File Servers from bare metal using Virtual Machine Manager \(VMM\):
 
 -   [Physical computer and related requirements](#BKMK_computer)
 
@@ -19,7 +19,7 @@ This topic lists the prerequisites for the process of provisioning Scale\-Out Fi
 ## <a name="BKMK_computer"></a>Physical computer and related requirements
 The computers to which you deploy Scale\-Out File Servers can be “bare\-metal computers” \(no operating system installed\), or computers with an installed operating system that will be overwritten during the process.
 
--   **BMC**: Each physical computer must have a baseboard management controller \(BMC\) installed and configured for out\-of\-band management by [!INCLUDE[vmm12short](../../includes/vmm12short_md.md)].
+-   **BMC**: Each physical computer must have a baseboard management controller \(BMC\) installed and configured for out\-of\-band management by VMM.
 
 -   **BIOS boot order**: On each computer, set the BIOS boot order to boot from a Pre\-Boot Execution Environment \(PXE\)\-enabled network adapter as the first device.
 
@@ -27,7 +27,7 @@ The computers to which you deploy Scale\-Out File Servers can be “bare\-metal 
 
 ## <a name="BKMK_pxe"></a>PXE server requirements
 You must have a PXE server configured with Windows Deployment Services.
-The PXE server must be in the same subnet as the physical computers that you want to provision, and must be configured for [!INCLUDE[vmm12short](../../includes/vmm12short_md.md)] to use as described in [How to add a PXE server to VMM](How-to-add-a-PXE-server-to-VMM.md).
+The PXE server must be in the same subnet as the physical computers that you want to provision, and must be configured for VMM to use as described in [How to add a PXE server to VMM](How-to-add-a-PXE-server-to-VMM.md).
 
 ## <a name="BKMK_profile"></a>Profile requirements \(for the physical computer profile\)
 Physical computer profiles include information such as the location of the operating system image to use during deployment, and hardware and operating system settings.
@@ -51,7 +51,7 @@ If you're ready to create the physical computer profile, see [How to create a ph
 One of the elements you need for deploying Scale\-Out File Servers from bare metal is a generalized virtual hard disk with an appropriate operating system. The virtual hard disk must be on a library share. The choice of operating system is listed in [Operating system requirements for the virtual hard disk that you deploy](Prerequisites--creating-hosts-or-host-clusters-from-bare-metal-with-VMM.md#BKMK_osreq), later in this topic.
 
 > [!NOTE]
-> -   We recommend that for production servers, you use a fixed disk \(.vhd or .vhdx file format\) to increase performance and to help protect user data. Note that by default, when you create a physical computer profile, [!INCLUDE[vmm12short](../../includes/vmm12short_md.md)] converts a dynamic disk to a fixed disk.
+> -   We recommend that for production servers, you use a fixed disk \(.vhd or .vhdx file format\) to increase performance and to help protect user data. Note that by default, when you create a physical computer profile, VMM converts a dynamic disk to a fixed disk.
 > -   If you use Remote Desktop Services \(RDS\) to manage servers, we recommend that you enable the RDS connections in the image. You can also enable RDS by using an answer file in the physical computer profile.
 
 To create the virtual hard disk, you can create a virtual machine, install the guest operating system, and then use Sysprep with the **\/generalize** and the **\/oobe** options. For more information, see [Sysprep Command-Line Options](http://technet.microsoft.com/library/hh825033.aspx).
@@ -62,20 +62,20 @@ Another method that you can use to create a virtual hard disk is to follow the p
 The operating system on the virtual hard disks that you deploy on Scale\-Out File Servers must support the boot from virtual hard disk \(VHD\) option. For information about supported operating systems, see [Server Operating Systems](https://technet.microsoft.com/library/dn997307.aspx).
 
 > [!NOTE]
-> You can add a [!INCLUDE[winthreshold_server_2](../../includes/winthreshold_server_2_md.md)] node to a [!INCLUDE[winblue_server_2](../../includes/winblue_server_2_md.md)] cluster, subject to the requirements specified previously; however, you cannot add a [!INCLUDE[winblue_server_2](../../includes/winblue_server_2_md.md)] node to a [!INCLUDE[winthreshold_server_2](../../includes/winthreshold_server_2_md.md)] cluster.
+> You can add a Windows Server Technical Preview node to a Windows Server 2012 R2 cluster, subject to the requirements specified previously; however, you cannot add a Windows Server 2012 R2 node to a Windows Server Technical Preview cluster.
 
 For more information, see [Understanding Virtual Hard Disks with Native Boot](http://technet.microsoft.com/library/hh825689.aspx).
 
 ### <a name="BKMK_answer"></a>Answer file or custom resources \(optional\)
-If you want a physical computer profile to include references to an answer file \(Unattend.xml file\) or to custom resources \(for example, an application installer that you will reference in post\-deployment script commands\), create the answer file or obtain the custom resources before deployment, and add them to a [!INCLUDE[vmm12short](../../includes/vmm12short_md.md)] library share.
+If you want a physical computer profile to include references to an answer file \(Unattend.xml file\) or to custom resources \(for example, an application installer that you will reference in post\-deployment script commands\), create the answer file or obtain the custom resources before deployment, and add them to a VMM library share.
 
 > [!NOTE]
-> Within a library share, place custom resources in one or more folders with a .CR \(custom resource\) extension. [!INCLUDE[vmm12short](../../includes/vmm12short_md.md)] will recognize them as custom resources.
+> Within a library share, place custom resources in one or more folders with a .CR \(custom resource\) extension. VMM will recognize them as custom resources.
 
 For example, you might want to create an answer file to enable Remote Desktop Services and place it on a library share. Then you can select that file when you configure a physical computer profile.
 
 > [!IMPORTANT]
-> When you deploy Scale\-Out File Servers from bare metal, [!INCLUDE[vmm12short](../../includes/vmm12short_md.md)] automatically performs the following \(no answer file or post\-deployment commands needed\):
+> When you deploy Scale\-Out File Servers from bare metal, VMM automatically performs the following \(no answer file or post\-deployment commands needed\):
 > 
 > -   Installs the
 >                       failover cluster feature and file server role on each node.

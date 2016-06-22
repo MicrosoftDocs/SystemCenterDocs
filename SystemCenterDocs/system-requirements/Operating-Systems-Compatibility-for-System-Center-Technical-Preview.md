@@ -9,41 +9,41 @@ ms.topic: get-started-article
 ms.assetid: 466af3dd-17e5-46b3-b33b-b21a4a65b875
 ---
 # Operating Systems Compatibility for System Center Technical Preview
-Use this information to evaluate if your server\-side operating system environment is ready to support the installation of or upgrade to [!INCLUDE[sc_threshold_1](../includes/sc_threshold_1_md.md)]. Use this information whether you are deploying one or multiple components.
+Use this information to evaluate if your server\-side operating system environment is ready to support the installation of or upgrade to System Center 2016 Technical Preview. Use this information whether you are deploying one or multiple components.
 
-|System Center  component|Windows Server 2008|Windows Server 2008 SP2|Windows Server 2008 R2|Windows Server 2008 R2 SP1|[!INCLUDE[win8_server_1](../includes/win8_server_1_md.md)] Standard, Datacenter|[!INCLUDE[winblue_server_2](../includes/winblue_server_2_md.md)] Standard, Datacenter|[!INCLUDE[winthreshold_server_1](../includes/winthreshold_server_1_md.md)]\(Server with Desktop Experience\)|[!INCLUDE[winthreshold_server_1](../includes/winthreshold_server_1_md.md)]|[!INCLUDE[winthreshold_server_1](../includes/winthreshold_server_1_md.md)] Nano Server|
+|System Center  component|Windows Server 2008|Windows Server 2008 SP2|Windows Server 2008 R2|Windows Server 2008 R2 SP1|Windows Server® 2012 Standard, Datacenter|Windows Server 2012 R2 Standard, Datacenter|Windows Server® Technical Preview\(Server with Desktop Experience\)|Windows Server® Technical Preview|Windows Server® Technical Preview Nano Server|
 |----------------------------|-----------------------|---------------------------|--------------------------|------------------------------|--------------------------------------------------------------------------------|--------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------|---------------------------------------------------------------------------------------|
-|**[!INCLUDE[dpm2012short](../includes/dpm2012short_md.md)]** Remote Administration console\*|||●|●|●|●|●|||
-|**[!INCLUDE[dpm2012short](../includes/dpm2012short_md.md)]** Server\*|||●|●|●|●|●|●||
-|**[!INCLUDE[om12short](../includes/om12short_md.md)]** Management Server||||||●|●|||
-|**[!INCLUDE[om12short](../includes/om12short_md.md)]** Data Warehouse||||||●|●|||
-|**[!INCLUDE[om12short](../includes/om12short_md.md)]** Gateway Server||||||●|●|||
-|**[!INCLUDE[om12short](../includes/om12short_md.md)]** Web Console||||||●|●|||
-|**[!INCLUDE[om12short](../includes/om12short_md.md)]** Operational Database||||||●|●|||
-|**[!INCLUDE[om12short](../includes/om12short_md.md)]** Reporting Server||||||●|●|||
-|**[!INCLUDE[orchshort](../includes/orchshort_md.md)]** management server||||||●|●|||
-|**[!INCLUDE[orchshort](../includes/orchshort_md.md)]** runbook server||||||●|●|||
-|**[!INCLUDE[orchshort](../includes/orchshort_md.md)]** web service||||||●|●|||
-|**[!INCLUDE[orchshort](../includes/orchshort_md.md)]** Runbook Designer||||||●|●|||
-|**[!INCLUDE[sma_1](../includes/sma_1_md.md)]**Web Service|||||||●|●||
-|**[!INCLUDE[sma_1](../includes/sma_1_md.md)]**Runbook Worker|||||||●|●||
-|**[!INCLUDE[sma_1](../includes/sma_1_md.md)]**PowerShell Module|||||||●|●||
-|**[!INCLUDE[smshort12](../includes/smshort12_md.md)]** Management Server||||||●|●|||
-|**[!INCLUDE[smshort12](../includes/smshort12_md.md)]**<br /><br />Data Warehouse Management Server||||||●|●|||
-|**[!INCLUDE[smshort12](../includes/smshort12_md.md)]** Database or Data Warehouse Database||||||●|●|||
-|**[!INCLUDE[smshort12](../includes/smshort12_md.md)]** Self\-Service Portal \(SharePoint Server and Web Content Server\)||||||●|●|||
-|**[!INCLUDE[spflong](../includes/spflong_md.md)]**|||||||●|●||
-|**[!INCLUDE[vmm12sp1_med](../includes/vmm12sp1_med_md.md)]** Management Server|||||||●|||
-|**[!INCLUDE[vmm12sp1_med](../includes/vmm12sp1_med_md.md)]** Virtual Machine Hosts||||||●|●||●|
-|**[!INCLUDE[vmm12sp1_med](../includes/vmm12sp1_med_md.md)]** Scale\-out File Server||||||●|●||●|
-|**[!INCLUDE[vmm12sp1_med](../includes/vmm12sp1_med_md.md)]** PXE Server||||||●|●|||
-|**[!INCLUDE[vmm12sp1_med](../includes/vmm12sp1_med_md.md)]** Update Server||||||●|●|||
-|**[!INCLUDE[vmm12sp1_med](../includes/vmm12sp1_med_md.md)]** Library||||||●|●|||
+|**DPM** Remote Administration console\*|||●|●|●|●|●|||
+|**DPM** Server\*|||●|●|●|●|●|●||
+|**Operations Manager** Management Server||||||●|●|||
+|**Operations Manager** Data Warehouse||||||●|●|||
+|**Operations Manager** Gateway Server||||||●|●|||
+|**Operations Manager** Web Console||||||●|●|||
+|**Operations Manager** Operational Database||||||●|●|||
+|**Operations Manager** Reporting Server||||||●|●|||
+|**Orchestrator** management server||||||●|●|||
+|**Orchestrator** runbook server||||||●|●|||
+|**Orchestrator** web service||||||●|●|||
+|**Orchestrator** Runbook Designer||||||●|●|||
+|**Service Management Automation**Web Service|||||||●|●||
+|**Service Management Automation**Runbook Worker|||||||●|●||
+|**Service Management Automation**PowerShell Module|||||||●|●||
+|**Service Manager** Management Server||||||●|●|||
+|**Service Manager**<br /><br />Data Warehouse Management Server||||||●|●|||
+|**Service Manager** Database or Data Warehouse Database||||||●|●|||
+|**Service Manager** Self\-Service Portal \(SharePoint Server and Web Content Server\)||||||●|●|||
+|**Service Provider Foundation**|||||||●|●||
+|**Virtual Machine Manager** Management Server|||||||●|||
+|**Virtual Machine Manager** Virtual Machine Hosts||||||●|●||●|
+|**Virtual Machine Manager** Scale\-out File Server||||||●|●||●|
+|**Virtual Machine Manager** PXE Server||||||●|●|||
+|**Virtual Machine Manager** Update Server||||||●|●|||
+|**Virtual Machine Manager** Library||||||●|●|||
 
 > [!IMPORTANT]
 > You must download Windows Management Framework 4.0 if you plan to install DPM on Windows Server 2008 R2. See the [Release Notes for System Center Technical Preview 5](../get-started/Release-Notes-for-System-Center-Technical-Preview-5.md) for more information,
 
 > [!IMPORTANT]
-> You can perform  fabric operations such as patching, cluster creation, and cluster rolling upgrades, on either Windows Server 2012 R2 or Windows Server 2016 TP3 hosts managed  by [!INCLUDE[sc_threshold_1](../includes/sc_threshold_1_md.md)]. However   live migration and workload creation are only supported on Windows Server 2016 TP3 hosts and clusters.
+> You can perform  fabric operations such as patching, cluster creation, and cluster rolling upgrades, on either Windows Server 2012 R2 or Windows Server 2016 TP3 hosts managed  by System Center 2016 Technical Preview. However   live migration and workload creation are only supported on Windows Server 2016 TP3 hosts and clusters.
 
 

@@ -45,7 +45,7 @@ In the System Center 2016 Technical Preview 5 – Operations Manager release, we
 
 -  Supports ACS security audit event collection
     
-For specific instructions on how to configure [!INCLUDE[scom_threshold_1](../../includes/scom_threshold_1_md.md)] to monitor Nano Server, see [Monitoring Nano Server](../Manage/Monitoring-Nano-Server.md).
+For specific instructions on how to configure System Center 2016 Technical Preview \- Operations Manager to monitor Nano Server, see [Monitoring Nano Server](../Manage/Monitoring-Nano-Server.md).
 
 ## Console User Interface Performance Improvements
 With the release of System Center 2016 Technical Preview 5 – Operations Manager, we have made performance improvements to alert views in the Operations console to increase responsiveness.
@@ -76,7 +76,7 @@ The “Maintenance Schedules” feature offers the following advantages over the
 -   Ability to schedule multiple jobs for the same monitored entity.
 
 ## Extend Operations Manager with Operations Management Suite
-With [!INCLUDE[OMS_1](../../includes/OMS_1_md.md)] you can extend your management capabilities by connecting your Operations Management infrastructure to management and analysis services provided through your Azure account. The main scenarios for connecting [!INCLUDE[scom_threshold_1](../../includes/scom_threshold_1_md.md)] to [!INCLUDE[OMS_1](../../includes/OMS_1_md.md)] include:
+With Microsoft Operations Management Suite you can extend your management capabilities by connecting your Operations Management infrastructure to management and analysis services provided through your Azure account. The main scenarios for connecting System Center 2016 Technical Preview \- Operations Manager to Microsoft Operations Management Suite include:
 
 -   Configuration Assessment
 
@@ -84,7 +84,7 @@ With [!INCLUDE[OMS_1](../../includes/OMS_1_md.md)] you can extend your managemen
 
 -   Capacity Planning
 
-For more information please review the [!INCLUDE[OMS_1](../../includes/OMS_1_md.md)] [Operations Management Suite](https://technet.microsoft.com/library/mt484091.aspx) documentation.
+For more information please review the Microsoft Operations Management Suite [Operations Management Suite](https://technet.microsoft.com/library/mt484091.aspx) documentation.
 
 ## Partner Program in Administration Pane
 Customers can view certified System Center Operations Manager partner solutions directly from the console. Customers can obtain a view of the partner solutions and visit the partner websites to download and install the solutions.  

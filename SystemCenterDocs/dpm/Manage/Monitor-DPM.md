@@ -34,7 +34,7 @@ Central Console is a System Center Operations Manager console that you can deplo
 -   In **State View** you can get information about the state of  DPM objects.
 
 ## Monitor DPM in the Azure console
-You use the Dashboard to get a quick overview of the state of your [!INCLUDE[sc2012](../../includes/sc2012_md.md)] \- [!INCLUDE[dpm2012sp1long](../../includes/dpm2012sp1long_md.md)] backups in Windows Azure Backup. The Dashboard provides a centralized gateway to view servers protected by backup vaults, as follows:
+You use the Dashboard to get a quick overview of the state of your System Center 2012 \- Data Protection Manager \(DPM\) backups in Windows Azure Backup. The Dashboard provides a centralized gateway to view servers protected by backup vaults, as follows:
 
 -   **Usage Overview** shows how you are using the backup vault. You can select a vault and see how much storage is being consumed by the vault, versus the amount of storage provided by your subscription. You can also see the number of servers registered to the vault.
 

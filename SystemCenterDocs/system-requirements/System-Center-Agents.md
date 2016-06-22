@@ -9,7 +9,7 @@ ms.topic: get-started-article
 ms.assetid: cd5d13e8-71da-4e91-9bcf-f3be00a03d54
 ---
 # System Center Agents
-This information lists both Microsoft and non\-Microsoft operating systems and versions of Microsoft SQL Server software, Microsoft Exchange, or Microsoft SharePoint that each [!INCLUDE[sc_threshold_1](../includes/sc_threshold_1_md.md)] agent supports
+This information lists both Microsoft and non\-Microsoft operating systems and versions of Microsoft SQL Server software, Microsoft Exchange, or Microsoft SharePoint that each System Center 2016 Technical Preview agent supports
 
 ## Data Protection Manager Agent
 
@@ -63,11 +63,11 @@ This information lists both Microsoft and non\-Microsoft operating systems and v
 
 -   Windows 2008 Server R2 SP1
 
--   [!INCLUDE[win8_server_1](../includes/win8_server_1_md.md)]
+-   Windows Server® 2012
 
--   [!INCLUDE[winblue_server_1](../includes/winblue_server_1_md.md)]
+-   Windows Server® 2012 R2
 
--   [!INCLUDE[hv_blue_1](../includes/hv_blue_1_md.md)]
+-   Microsoft® Hyper\-V® Server 2012 R2
 
 -   Windows Vista SP2
 
@@ -77,13 +77,13 @@ This information lists both Microsoft and non\-Microsoft operating systems and v
 
 -   Windows 7
 
--   [!INCLUDE[win8_client_1](../includes/win8_client_1_md.md)]
+-   Windows® 8
 
--   [!INCLUDE[winblue_client_1](../includes/winblue_client_1_md.md)]
+-   Windows® 8.1
 
--   [!INCLUDE[winthreshold_client_2](../includes/winthreshold_client_2_md.md)]
+-   Windows 10
 
--   [!INCLUDE[winthreshold_server_1](../includes/winthreshold_server_1_md.md)]
+-   Windows Server® Technical Preview
 
 ## Virtual Machine Manager Guest Agent
 
@@ -95,9 +95,9 @@ This information lists both Microsoft and non\-Microsoft operating systems and v
 
 -   Windows 2008 Server R2 SP1
 
--   [!INCLUDE[winblue_server_1](../includes/winblue_server_1_md.md)]
+-   Windows Server® 2012 R2
 
--   [!INCLUDE[winthreshold_server_1](../includes/winthreshold_server_1_md.md)]
+-   Windows Server® Technical Preview
 
 ## Virtual Machine Manager Linux Guest Agent
 
