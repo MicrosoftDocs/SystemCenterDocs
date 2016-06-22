@@ -11,7 +11,7 @@ ms.topic: article
 ms.assetid: b6044e0c-0caa-459c-9489-c379a154136b
 ---
 # How to install the Service Management Automation web service
-The Service Management Automation service endpoint enables you to automate IT administration and business processes by using Windows PowerShell workflow\-based runbooks in Windows Azure Pack for Windows Server.
+The Service Management Automation service endpoint enables you to automate IT administration and business processes by using Windows PowerShell workflow-based runbooks in Windows Azure Pack for Windows Server.
 
 Use the following information to install and configure the Automation web service in Windows Azure Pack. The Service Management Automation PowerShell module is a required prerequisite of the Service Management Automation web service, so you must install the Service Management Automation PowerShell module before you deploy the Service Management Automation web service.
 
@@ -45,12 +45,12 @@ Install the web service on any machine that can communicate with Windows Azure P
 
     |||
     |-|-|
-    |**Server**|Enter the name of the database server. By default, this is localhost.<br /><br />The format is sqlserver\\instance, where \\instance is optional.|
+    |**Server**|Enter the name of the database server. By default, this is localhost.<br /><br />The format is sqlserver\instance, where \instance is optional.|
     |**Port number**|Enter the port number that you want to use for the database. The default is 1433.|
     |**Database name**|Enter the name of the database. The default is SMA.|
     |**Authentication Credentials**|Select the type of authentication that you want to use. You can use Windows authentication or SQL Server authentication.<br /><br />If you choose SQL Server authentication, enter the user name and password for the computer running SQL Server.|
 
-8.  Provide the following information to configure the Internet Information Settings \(IIS\) for the web service, and then click **Next**.
+8.  Provide the following information to configure the Internet Information Settings (IIS) for the web service, and then click **Next**.
 
     |||
     |-|-|
@@ -62,13 +62,13 @@ Install the web service on any machine that can communicate with Windows Azure P
 
 10. Choose the security certificate to use to encrypt communication between Windows Azure Pack and the Service Management Automation web service endpoint.
 
-    You can have the installer generate a self\-signed certificate to use, or you can select an existing certificate in your local certificate store.
+    You can have the installer generate a self-signed certificate to use, or you can select an existing certificate in your local certificate store.
 
     Click **Next**.
 
 11. Review the location for the web service files. You can accept the default or specify a different location. Click **Next**.
 
-12. Indicate whether you want to participate in the Customer Experience Improvement Program \(CEIP\) and whether you want to use Microsoft Update to keep your software up\-to\-date. Click **Next**.
+12. Indicate whether you want to participate in the Customer Experience Improvement Program (CEIP) and whether you want to use Microsoft Update to keep your software up-to-date. Click **Next**.
 
 13. Review the installation summary, and then click **Install**.
 

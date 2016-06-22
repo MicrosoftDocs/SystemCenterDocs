@@ -11,9 +11,9 @@ ms.topic: article
 ms.assetid: 98fa48a6-c974-4563-be89-a1e692dff5f3
 ---
 # Configuring storage using Scale-Out File Servers in VMM
-You can use Virtual Machine Manager \(VMM\) to configure a Scale\-Out File Server cluster as the storage for Hyper\-V hosts or host clusters. If your Scale\-Out File Server cluster runs Windows Server Technical Preview, you can configure it with Storage Spaces Direct, which is described in [Storage Spaces Direct in Windows Server Technical Preview](https://technet.microsoft.com/library/mt126109.aspx).
+You can use Virtual Machine Manager (VMM) to configure a Scale-Out File Server cluster as the storage for Hyper-V hosts or host clusters. If your Scale-Out File Server cluster runs Windows Server Technical Preview, you can configure it with Storage Spaces Direct, which is described in [Storage Spaces Direct in Windows Server Technical Preview](https://technet.microsoft.com/library/mt126109.aspx).
 
-This section focuses on the process after a Scale\-Out File Server cluster already exists and is under management in VMM. For links to topics about cluster creation, see [Stage 1: Discover storage during creation of your Scale-Out File Server](Overview--configuring-storage-using-Scale-Out-File-Servers-in-VMM.md#BKMK_discovery) in "Overview: configuring storage using Scale\-Out File Server clusters in VMM."
+This section focuses on the process after a Scale-Out File Server cluster already exists and is under management in VMM. For links to topics about cluster creation, see [Stage 1: Discover storage during creation of your Scale-Out File Server](Overview--configuring-storage-using-Scale-Out-File-Servers-in-VMM.md#BKMK_discovery) in "Overview: configuring storage using Scale-Out File Server clusters in VMM."
 
 -   [Overview: configuring storage using Scale-Out File Servers in VMM](Overview--configuring-storage-using-Scale-Out-File-Servers-in-VMM.md)
 

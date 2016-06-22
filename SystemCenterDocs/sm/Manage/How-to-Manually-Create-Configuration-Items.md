@@ -11,7 +11,7 @@ ms.topic: article
 ms.assetid: 24089a9b-eaa2-42f7-b600-2d0e6a2149ec
 ---
 # How to Manually Create Configuration Items
-You might have to create a configuration item to add computers that do not exist in Active Directory Domain Services \(AD DS\) and that are not managed by Configuration Manager to the Service Manager database.
+You might have to create a configuration item to add computers that do not exist in Active Directory Domain Services (AD DS) and that are not managed by Configuration Manager to the Service Manager database.
 
 Additionally, you might have to manually create a new user configuration item to be used in the **Affected User** box in incidents created by Operations Manager.
 

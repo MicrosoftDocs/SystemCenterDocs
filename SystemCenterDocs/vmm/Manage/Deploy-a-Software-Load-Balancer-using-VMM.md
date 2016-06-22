@@ -169,7 +169,7 @@ On the left side of the **Configure Deployment** window, there are a number of s
 | Setting| Requirement| Description|
 |--------|------------|------------|
 | Datacenter Network|Required| Your Transit VM network
-|LocalAdmin|Required|Select a **Run as** account in your environment which will be used as the local Administrator on the virtual machines.<br>User name should be .\\Administrator   
+|LocalAdmin|Required|Select a **Run as** account in your environment which will be used as the local Administrator on the virtual machines.<br>User name should be .\Administrator   
 |Management Network|Required| Choose the Management VM network that you created for host management.                                                                                
 | MgmtDomainAccount| Required| Select a **Run as** account that has the privilege to add the SLB/MUX virtual machines to the Active Directory Domain associated with the network controller. This can be the same account you used in MgmtDomainAccount while deploying the network controller.|
 | MgmtDomainFQDN| Required| Fully qualified domain name for the Active directory domain that the SLB/MUX virtual machines will join.<br>Example: ``Contoso.com``                                                              
@@ -257,7 +257,7 @@ Use the following steps to disable IPv6:
 2. When you have console access to the virtual machine, press **Windows+R**, type **NCPA.cpl** and press **Enter**.
 3. Select a vNIC on the Network Connections dialog, right-click the vNIC and select **Properties**.
 4. Uncheck the **Internet Protocol Version 6(TCP/IPv6)** checkbox if its enabled as shown in the screenshot below
-    a.	Repeat this step for all the vNICs in Network Connections.
+    a.  Repeat this step for all the vNICs in Network Connections.
 ![VMM Network ConnectionsImage/VMM-Network-Connections.png)    
 5. Repeat Steps 1-4 for all the SLB/MUX virtual machines.
 
@@ -462,23 +462,23 @@ After you deploy and on-board the Software Load Balancer as a Network Service us
 
 Use the following steps to configure NAT:
 
-1.	Open the VMM Administrator console and select the **VMs and Services** tab.
-2.	Select the **VM Networks** tab and then double click the VM network you want to configure with NAT rules.
-3.	Select the **Connectivity** tab on the property wizard.
-4.	Check **Connect directly to an additional Network** and select **Network Address Translation (NAT)**.
-5.	In **Gateway Device**, type your network controller service name. 
-6.	Select the **Network Address Translation** tab.
-7.	In the **IP address pool** field, choose your Public VIP pool.
-8.	Leave the IP address field empty. A VIP address will be automatically assigned to this rule. This is a Technical Preview limitation.
-9.	In **NAT rules** click **Add** and type the following values:
-    1.	The name of the NAT rule.
-    2.	The protocol to use.
-    3.	The value for the incoming port.
-    4.	Type the destination IP address for this NAT rule.
-    5.	Type the destination port.
+1.  Open the VMM Administrator console and select the **VMs and Services** tab.
+2.  Select the **VM Networks** tab and then double click the VM network you want to configure with NAT rules.
+3.  Select the **Connectivity** tab on the property wizard.
+4.  Check **Connect directly to an additional Network** and select **Network Address Translation (NAT)**.
+5.  In **Gateway Device**, type your network controller service name. 
+6.  Select the **Network Address Translation** tab.
+7.  In the **IP address pool** field, choose your Public VIP pool.
+8.  Leave the IP address field empty. A VIP address will be automatically assigned to this rule. This is a Technical Preview limitation.
+9.  In **NAT rules** click **Add** and type the following values:
+    1.  The name of the NAT rule.
+    2.  The protocol to use.
+    3.  The value for the incoming port.
+    4.  Type the destination IP address for this NAT rule.
+    5.  Type the destination port.
 
     ![VMM NATImage/VMM-NAT.png)
-10.	Click **OK**.
+10. Click **OK**.
 
 >[!NOTE]
 >The existing NAT connections will not be visible when you close the network connectivity wizard and re-open it. You can, however, still add additional NAT connections through the user interface.

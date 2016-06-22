@@ -8,9 +8,9 @@ ms.topic: article
 ms.assetid: d894a98d-ac9d-42b3-be7f-aadf23659931
 ---
 # Overview: creating profiles and templates in VMM
-In Virtual Machine Manager \(VMM\), a profile is a “building block” containing some of the specifications that go into creating a new virtual machine or virtual machine template. You can use profiles to simplify the process of creating templates.
+In Virtual Machine Manager (VMM), a profile is a “building block” containing some of the specifications that go into creating a new virtual machine or virtual machine template. You can use profiles to simplify the process of creating templates.
 
-Templates help you to quickly create virtual machines with consistent hardware and operating system settings. Templates can also be used to restrict the virtual machine settings that are available to self\-service users who create new virtual machines. A virtual machine template typically consists of a hardware profile, an operating system profile, and a virtual hard disk, which will be used by the virtual machine that is created from the template. The virtual hard disk might be stored in the VMM library, or it might be a disk from an existing virtual machine.
+Templates help you to quickly create virtual machines with consistent hardware and operating system settings. Templates can also be used to restrict the virtual machine settings that are available to self-service users who create new virtual machines. A virtual machine template typically consists of a hardware profile, an operating system profile, and a virtual hard disk, which will be used by the virtual machine that is created from the template. The virtual hard disk might be stored in the VMM library, or it might be a disk from an existing virtual machine.
 
 ## Profiles
 VMM provides the following profiles for virtual machine templates:
@@ -37,7 +37,7 @@ VMM includes the concept of services, service templates, and a number of profile
 
 -   In addition to the standard building blocks of virtual hard disks, hardware profiles, and operating system profiles, service templates can leverage additional profiles that include:
 
-    -   **Application profile**—Application profiles provide instructions that are necessary for installing an application. VMM supports multiple mechanisms for application deployment. Two of these mechanisms are for specific application packaging technologies: data\-tier applications \(DAC\) and WebDeploy, also known as MSDeploy. A third mechanism enables you to install any application by running a script. You can use scripts that are created for Windows Installer \(MSI\), Setup.exe installation programs, Windows PowerShell Desired State Configuration \(DSC\), Puppet software, and Chef software.
+    -   **Application profile**—Application profiles provide instructions that are necessary for installing an application. VMM supports multiple mechanisms for application deployment. Two of these mechanisms are for specific application packaging technologies: data-tier applications (DAC) and WebDeploy, also known as MSDeploy. A third mechanism enables you to install any application by running a script. You can use scripts that are created for Windows Installer (MSI), Setup.exe installation programs, Windows PowerShell Desired State Configuration (DSC), Puppet software, and Chef software.
 
     -   **SQL Server profile**—SQL Server profiles provide instructions for customizing an instance of Microsoft SQL Server for a SQL Server DAC when a virtual machine is deployed as part of a service.
 

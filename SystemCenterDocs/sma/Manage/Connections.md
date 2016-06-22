@@ -11,26 +11,26 @@ ms.topic: article
 ms.assetid: d82d70df-2de2-4d1f-9e9d-a033af8e6b05
 ---
 # Connections
-An Automation Connection contains the information required to connect to a service or application from a runbook.  This information is defined in the module for the application and typically includes such information as the username and password and the computer to connect to.  Other information may also be required such as a certificate or a subscription Id.  The properties for a connection are stored securely in the Automation database and can be accessed in the runbook with the **Get\-AutomationConnection** activity.
+An Automation Connection contains the information required to connect to a service or application from a runbook.  This information is defined in the module for the application and typically includes such information as the username and password and the computer to connect to.  Other information may also be required such as a certificate or a subscription Id.  The properties for a connection are stored securely in the Automation database and can be accessed in the runbook with the **Get-AutomationConnection** activity.
 
 ## Windows PowerShell Cmdlets
 The cmdlets in the following table are used to create and manage credentials with Windows PowerShell in Service Management Automation.
 
 |Cmdlets|Description|
 |-----------|---------------|
-|[Get\-SmaConnection](http://go.microsoft.com/fwlink/?LinkID=306448)|Retrieves the values for each field in a particular connection.|
-|[Get\-SmaConnectionField](http://go.microsoft.com/fwlink/?LinkID=306449)|Retrieves the field definitions for a particular connection type.|
-|[Get\-SmaConnectionType](http://go.microsoft.com/fwlink/?LinkID=306450)|Retrieves the available connection types.|
-|[New\-SmaConnection](http://go.microsoft.com/fwlink/?LinkID=306461)|Creates a new connection.|
-|[Remove\-SmaConnection](http://go.microsoft.com/fwlink/?LinkID=306465)|Remove an existing connection.|
-|[Set\-SmaConnectionFieldValue](http://go.microsoft.com/fwlink/?LinkID=306474)|Sets the value of a particular field for an existing connection.|
+|[Get-SmaConnection](http://go.microsoft.com/fwlink/?LinkID=306448)|Retrieves the values for each field in a particular connection.|
+|[Get-SmaConnectionField](http://go.microsoft.com/fwlink/?LinkID=306449)|Retrieves the field definitions for a particular connection type.|
+|[Get-SmaConnectionType](http://go.microsoft.com/fwlink/?LinkID=306450)|Retrieves the available connection types.|
+|[New-SmaConnection](http://go.microsoft.com/fwlink/?LinkID=306461)|Creates a new connection.|
+|[Remove-SmaConnection](http://go.microsoft.com/fwlink/?LinkID=306465)|Remove an existing connection.|
+|[Set-SmaConnectionFieldValue](http://go.microsoft.com/fwlink/?LinkID=306474)|Sets the value of a particular field for an existing connection.|
 
 ## Runbook Activities
 The activities in the following table are used to access connections in a runbook.
 
 |Activities|Description|
 |--------------|---------------|
-|Get\-AutomationConnection|Gets a connection to use in a runbook.|
+|Get-AutomationConnection|Gets a connection to use in a runbook.|
 
 ## Creating a New Connection
 
@@ -57,7 +57,7 @@ The activities in the following table are used to access connections in a runboo
 ### To create a new connection with Windows PowerShell in Service Management Automation
 The following sample commands create a new Virtual Machine Manager connection with the name MyVMMConnection.  Note that we use a hashtable to define the properties of the connection. This is because different types of connections require different sets of properties. A connection of another type would use a different set of field values.
 
-For more information about hash tables, see [about\_Hash\_Tables](http://go.microsoft.com/fwlink/?LinkID=324844).
+For more information about hash tables, see [about_Hash_Tables](http://go.microsoft.com/fwlink/?LinkID=324844).
 
 ```powershell
 $webServer = 'https://MyWebServer'
@@ -68,9 +68,9 @@ New-SmaConnection –WebServiceEndpoint $webServer –port $port –Name $connec
 ```
 
 ## Using a connection in a runbook
-Use the **Get\-AutomationConnection** activity to use a connection in a runbook.  This activity retrieves the values of the different fields in the connection and returns them as a hashtable which can then be used with the appropriate commands in the runbook.
+Use the **Get-AutomationConnection** activity to use a connection in a runbook.  This activity retrieves the values of the different fields in the connection and returns them as a hashtable which can then be used with the appropriate commands in the runbook.
 
-For more information about hash tables, see [about\_Hash\_Tables](http://go.microsoft.com/fwlink/?LinkID=324844).
+For more information about hash tables, see [about_Hash_Tables](http://go.microsoft.com/fwlink/?LinkID=324844).
 
 The following sample code shows how to use a connection to provide the computer name and credentials for an [InlineScript](Windows-PowerShell-Workflow-Concepts.md#bkmk_InlineScript) block that runs commands on another computer.
 

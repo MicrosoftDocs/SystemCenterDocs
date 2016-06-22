@@ -63,7 +63,7 @@ You can use the following procedure to import a script file into Service Managem
 5.  Your new runbook will appear on the **Runbooks** tab for the Automation Account.
 
 ### <a name="ImportPowerShell"></a>To import a runbook from a script file with Windows PowerShell
-You can use the [Import\-SmaRunbook](http://aka.ms/runbookauthor/cmdlet/importsmarunbook) cmdlet to create a new runbook from a script file containing a workflow. To modify the draft version of an existing runbook with the contents of a script file, see [To Change the Contents of a Runbook Using Windows PowerShell](Editing-a-Runbook.md#ChangeContentsPowerShell).
+You can use the [Import-SmaRunbook](http://aka.ms/runbookauthor/cmdlet/importsmarunbook) cmdlet to create a new runbook from a script file containing a workflow. To modify the draft version of an existing runbook with the contents of a script file, see [To Change the Contents of a Runbook Using Windows PowerShell](Editing-a-Runbook.md#ChangeContentsPowerShell).
 
 The following sample commands show how to import a script file into an existing runbook and then publish it.
 

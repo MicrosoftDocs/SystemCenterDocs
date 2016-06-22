@@ -11,7 +11,7 @@ ms.topic: article
 ms.assetid: 0c83c9a4-720f-4327-98b9-16dca71a13b2
 ---
 # Moving the Service Manager Database
-You must use the following high\-level steps to move the Service Manager database.
+You must use the following high-level steps to move the Service Manager database.
 
 > [!NOTE]
 > These steps link to content in the Service Manager Upgrade Guide.
@@ -31,33 +31,33 @@ You must use the following high\-level steps to move the Service Manager databas
 
 6.  After you move the ServiceManager database, ensure that you manually change all the Service Manager database and data warehouse registration information in the DWStagingAndConfig database. Old information about where the ServiceManager database is located remains in the DWStagingAndConfig database in the following tables:
 
-    -   MT\_Microsoft$Systemcenter$Datawarehouse$CMDBSource
+    -   MT_Microsoft$Systemcenter$Datawarehouse$CMDBSource
 
-        -   In the corresponding entry with DataSourceName\_GUID \= <Service Manager Data Source Name>, change the field DatabaseServer\_GUID with the new name of the SQLServer\\Instance where the ServiceManager database has moved to.
+        -   In the corresponding entry with DataSourceName_GUID = <Service Manager Data Source Name>, change the field DatabaseServer_GUID with the new name of the SQLServer\Instance where the ServiceManager database has moved to.
 
-    -   MT\_Microsoft$Systemcenter$ResourceAccessLayer$SqlResourceStore
+    -   MT_Microsoft$Systemcenter$ResourceAccessLayer$SqlResourceStore
 
-        -   In the corresponding entry with DataService\_GUID \= ServiceManager, change the field Server\_GUID to the new name of the SQLServer\\Instance where the ServiceManager database has moved to.
+        -   In the corresponding entry with DataService_GUID = ServiceManager, change the field Server_GUID to the new name of the SQLServer\Instance where the ServiceManager database has moved to.
 
 7.  Configure the registry on all the management servers that will access the new SQL Server instance, by using the following steps:
 
     1.  Open Registry Editor.
 
-    2.  Browse to **HKEY\_LOCAL\_MACHINE\\Software\\Microsoft\\System Center\\2010\\Common\\Database**.
+    2.  Browse to **HKEY_LOCAL_MACHINE\Software\Microsoft\System Center\2010\Common\Database**.
 
-    3.  Configure two keys: one for the server name \(DatabaseServerName\) and one for the database name \(DatabaseName\). Set values to the new server name and database name, if they are different from the original values.
+    3.  Configure two keys: one for the server name (DatabaseServerName) and one for the database name (DatabaseName). Set values to the new server name and database name, if they are different from the original values.
 
 8.  If you are also upgrading the SQL server while moving, then upgrade the following SQL Server prerequisites for the Service Manager Management server. There are 2 SQL Server prerequisites:
 
     -   SQL Native Client
 
-    -   Analysis Management Objects \(AMO\)
+    -   Analysis Management Objects (AMO)
 
 9. Start the System Center services on all the management servers, as described in [How to Start Service Manager Services on the Secondary Management Server](http://technet.microsoft.com/library/jj900196.aspx).
 
 10. Install another Service Manager database that has a different name on the same computer that is running SQL Server, by installing another Service Manager management server and choosing to create a new database. This step will populate the master database with error message text so that if an error occurs in the future, the error message can describe the specific problem instead of displaying generic text. After the database is installed, you can drop it from the computer that is running SQL Server and uninstall the additional, temporary management server.
 
-    \-Or\-
+    -Or-
 
     Run the following query on the source Service Manager database server and copy the output script and then run it on new Service Manager database server.
 
@@ -68,28 +68,28 @@ You must use the following high\-level steps to move the Service Manager databas
     SET @tab = CHAR(9);
 
     SELECT 
-           'EXEC sp_addmessage ' + @crlf + @tab
-            + '@msgnum = ' + CAST(m.message_id AS varchar(30))
-                  + ', ' + @crlf + @tab
-          + '@severity = ' + CAST(m.severity AS varchar(3))  
-                  + ', ' + @crlf + @tab
-          + '@msgtext = N''' + REPLACE(m.[text],'''','''''')  
-                  + ''''  + ', ' + @crlf + @tab
-            + '@lang = ''' + 
-                  (SELECT TOP 1 alias 
-                   FROM master.sys.syslanguages l 
-                   WHERE l.lcid = m.language_id) 
-                   + ''', ' + @crlf + @tab
-          + '@with_log = ''' + 
-                  CASE WHEN m.is_event_logged = 1 
-                   THEN 'TRUE' ELSE 'FALSE' END   + ''', ' +  @crlf + @tab
-                  -- Uncomment ONLY if you want to replace:
-            + '@replace = ''replace'';' 
-            + @crlf + 'GO' + @crlf + @crlf 
+           'EXEC sp_addmessage ' + @crlf + @tab
+            + '@msgnum = ' + CAST(m.message_id AS varchar(30))
+                  + ', ' + @crlf + @tab
+          + '@severity = ' + CAST(m.severity AS varchar(3))  
+                  + ', ' + @crlf + @tab
+          + '@msgtext = N''' + REPLACE(m.[text],'''','''''')  
+                  + ''''  + ', ' + @crlf + @tab
+            + '@lang = ''' + 
+                  (SELECT TOP 1 alias 
+                   FROM master.sys.syslanguages l 
+                   WHERE l.lcid = m.language_id) 
+                   + ''', ' + @crlf + @tab
+          + '@with_log = ''' + 
+                  CASE WHEN m.is_event_logged = 1 
+                   THEN 'TRUE' ELSE 'FALSE' END   + ''', ' +  @crlf + @tab
+                  -- Uncomment ONLY if you want to replace:
+            + '@replace = ''replace'';' 
+            + @crlf + 'GO' + @crlf + @crlf 
     FROM 
-            master.sys.messages m
+            master.sys.messages m
     WHERE 
-           m.message_id > 50000;
+           m.message_id > 50000;
 
     GO
     ```

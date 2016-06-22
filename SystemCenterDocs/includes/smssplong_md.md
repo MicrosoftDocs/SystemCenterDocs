@@ -1,1 +1,1 @@
-Service Manager Self\-Service Portal
+Service Manager Self-Service Portal

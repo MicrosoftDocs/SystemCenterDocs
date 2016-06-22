@@ -11,9 +11,9 @@ ms.topic: get-started-article
 ms.assetid: 3eeb3265-88e0-47ed-b761-07f4e0634959
 ---
 # What's New in Service Manager
-System Center 2016 Technical Preview \- Service Manager is updated for System Center 2016 Technical Preview 5.
+System Center 2016 Technical Preview - Service Manager is updated for System Center 2016 Technical Preview 5.
 
-For details about known issues that could affect you before you install System Center 2016 Technical Preview \- Service Manager, read the [Release Notes for System Center Technical Preview](../../get-started/Release-Notes-for-System-Center-Technical-Preview-5.md).
+For details about known issues that could affect you before you install System Center 2016 Technical Preview - Service Manager, read the [Release Notes for System Center Technical Preview](../../get-started/Release-Notes-for-System-Center-Technical-Preview-5.md).
 
 ## Improvements in technical preview 5
 
@@ -144,7 +144,7 @@ All these dimensions have the following attributes, which you can use for slicin
 
 #### To add date dimensions for other date fields in custom cubes
 
-1.	In the management pack defining the cube definition, add the named Calculations for the required field like mentioned below:
+1.  In the management pack defining the cube definition, add the named Calculations for the required field like mentioned below:
 
     ```
     <NamedCalculation ID="Incident_CreatedDate__DateKey" Target="IncidentDW!IncidentDim" ColumnType="Int">
@@ -153,10 +153,10 @@ All these dimensions have the following attributes, which you can use for slicin
     ```
 
 The NamedCalculation ID should have string `__DateKey` in the end, and this field in the data warehouse should not be NULL or 0.
-2.	Seal the managment pack and import it into Service Manager.
-3.	Run the MPSyncJob on the data warehouse and wait until the management pack is marked **Completed**.
-4.	Process all the cubes, or wait for automatic processing overnight.
-5.	Cubes are updated with new date dimensions, as defined above.
+2.  Seal the managment pack and import it into Service Manager.
+3.  Run the MPSyncJob on the data warehouse and wait until the management pack is marked **Completed**.
+4.  Process all the cubes, or wait for automatic processing overnight.
+5.  Cubes are updated with new date dimensions, as defined above.
 
 
  ## Updates to the Self Service Portal
@@ -230,9 +230,9 @@ Key improvements in this release:
 Service Manager 2016 Technical preview 4 includes updates that supports integration with Lync 2013 and Skype for Business in Microsoft Office suite 2013 and  2016. For information about contacting a user using Lync or Skype for Business, see [Contact a User from an Incident Form](../Manage/Contact-a-User-from-an-Incident-Form.md).
 
 ### New Self Service portal
-This release contains a new HTML\-based Self Service Portal which offers the following enhancements:
+This release contains a new HTML-based Self Service Portal which offers the following enhancements:
 
--   Updated modern UI with easy\-to\-use navigation
+-   Updated modern UI with easy-to-use navigation
 
 -   Multiple browser support
 
@@ -251,7 +251,7 @@ This release contains a new HTML\-based Self Service Portal which offers the fol
 For more information and installing and customizing the portal, see [Deploy the Self-Service Portal for Service Manager](../Deploy/Deploy-the-Self-Service-Portal-for-Service-Manager.md).
 
 > [!NOTE]
-> The older Silverlight and SharePoint\-based Self\-Service portal has been removed.
+> The older Silverlight and SharePoint-based Self-Service portal has been removed.
 
 #### Announcements in the Self Service Portal
 You can see **Announcements** in the portal in the upper right corner.
@@ -269,13 +269,13 @@ You can see the **Service Catalog** in the portal in the upper left corner.
 
 ![](../../media/sm-sspcatalog01.jpg)
 
--   The Service Catalog on the home page presents all the request offerings, grouped by their respective service offerings \(sorted in alphabetical order\), accessible to the logged in user.
+-   The Service Catalog on the home page presents all the request offerings, grouped by their respective service offerings (sorted in alphabetical order), accessible to the logged in user.
 
 -   Favorites appear on top of all other request offerings, for easy access to selected request offerings.
 
 -   Clicking a request offering tile opens a new page containing the description, associated knowledge articles, and the form with options to submit or go back.
 
--   When you click the favorite icon for an offering, which appears as a heart\-shaped image, it is added to the favorites list.
+-   When you click the favorite icon for an offering, which appears as a heart-shaped image, it is added to the favorites list.
 
 #### Help Articles in the Self Service Portal
 The **Help Articles** icon is on the left side of the portal home page.
@@ -301,19 +301,19 @@ The **My Requests** icon  is on the left side of the portal home page.
 
 ![](../../media/sm-ssprequests01.jpg)
 
--   **My Requests** displays all the incidents and service requests where the signed\-in user is the affected user.
+-   **My Requests** displays all the incidents and service requests where the signed-in user is the affected user.
 
 #### My Activities in the Self Service Portal
 The **My Activities** icon  is on the left side of the portal home page.
 
 ![](../../media/sm-sspactivities01.jpg)
 
--   **My Activities** shows all the manual and review activities which have the signed\-in user as the activity implementer or if the user is in the reviewer list.
+-   **My Activities** shows all the manual and review activities which have the signed-in user as the activity implementer or if the user is in the reviewer list.
 
 ### Performance Enhancements
 **Optionally disable ECL logging for faster SCCM and Active Directory connector sync**
 
-The Active Directory and SCCM connectors in Service Manager can import large amounts of data into the Service Manager database. In doing so, they not only increase the size of the data table, which is where the data from the connectors are stored, but they also increase the size of the EntityChangeLog \(ECL\) table and history tables considerably. A large ECL table size can be a problem—in some cases, it can slow down the system significantly.
+The Active Directory and SCCM connectors in Service Manager can import large amounts of data into the Service Manager database. In doing so, they not only increase the size of the data table, which is where the data from the connectors are stored, but they also increase the size of the EntityChangeLog (ECL) table and history tables considerably. A large ECL table size can be a problem—in some cases, it can slow down the system significantly.
 
 The ECL table, and the history tables in this case, store details about when the data was brought into Service Manager and the properties that were added or updated for each data item.
 Disabling ELC logging, doesn’t affect importing data from connectors. Instead, most logging data doesn’t get written to the ECL and history tables, which can result is significant performance improvement.
@@ -323,19 +323,19 @@ Disabled ECL logging is not automatically turned on. In other words, by default,
 
 During ECL log grooming, Service Manager does not groom the latest change to an entity, even if the retention history period of that entity has elapsed.
 
-Grooming eventually leaves one entry for every object ever created in the ECL table for the lifetime of your Service Manager deployment. In order to keep the last entry in the ECL table, the execution of the stored procedure \(p\_GroomChangeLog\) can take a time. In some cases, longer than 30 minutes when the ECL entry is very large. As part of the optimization, Service Manager does not keep the entry, which results in a performance improvement for the grooming stored procedure. Typically, the grooming stored procedure runs 3 to 4 times faster.
+Grooming eventually leaves one entry for every object ever created in the ECL table for the lifetime of your Service Manager deployment. In order to keep the last entry in the ECL table, the execution of the stored procedure (p_GroomChangeLog) can take a time. In some cases, longer than 30 minutes when the ECL entry is very large. As part of the optimization, Service Manager does not keep the entry, which results in a performance improvement for the grooming stored procedure. Typically, the grooming stored procedure runs 3 to 4 times faster.
 
 As a result, the history tab would not show any entry for an entity if its history retention period has elapsed, as opposed to seeing one entry earlier.
 
 **Reduction in incident workflow lag**
 
-The following incident\-related workflows included in Service Manager have been optimized to reduce the amount of time to update incidents, especially when many work items are created simultaneously.
+The following incident-related workflows included in Service Manager have been optimized to reduce the amount of time to update incidents, especially when many work items are created simultaneously.
 
--   WorkItem\_SetFirstAssingedTo\_RelationhsipAdd\_Rule
+-   WorkItem_SetFirstAssingedTo_RelationhsipAdd_Rule
 
--   Incident\_Adjust\_PriorityAndResolutionTime\_Custom\_Rule.Update
+-   Incident_Adjust_PriorityAndResolutionTime_Custom_Rule.Update
 
--   Incident\_Adjust\_PriorityAndResolutionTime\_Custom\_Rule.Add
+-   Incident_Adjust_PriorityAndResolutionTime_Custom_Rule.Add
 
 -   ServiceManager.IncidentManagement.ParentIncidentActivated.UpdateRule
 
@@ -361,7 +361,7 @@ Service Manager 2016 Technical Preview 4 is still in development and this releas
 
 New Self Service Portal issues:
 
--   Small screen devices \(Phones\) are not supported in this release. The minimum supported resolution is 1024 x 768.
+-   Small screen devices (Phones) are not supported in this release. The minimum supported resolution is 1024 x 768.
 
 -   The Service Catalog filter is not working for some browsers including Internet Explorer.
 
@@ -375,7 +375,7 @@ As always, we recommend that you perform typical or routine tasks in the test en
 
 **Active Directory connector fixes**. The Active Directory connector was updated to address a problem where the connector  performed a complete sync after any domain controller failover. The issue put an unnecessary load on the workflow server, causing performance to degrade. Normally, the connector only syncs data that was changed since the last run.
 
-**MPSync job updates**. The MPSync job is improved to be more reliable in System Center 2016 Technical Preview \- Service Manager. Previously, Service Manager could stop responding  when you updated a management pack or if you re\-registered  the data warehouse. This resulted in   reports with data that wasn't  refreshed. Even if you checked the Service Manager console, the jobs listed under Datawarehouse Jobs wouldn't show the correct status. The most common reason for getting into the hung state was due to management pack deployment because the system tried to recreate an existing primary\/foreign key in a table.
+**MPSync job updates**. The MPSync job is improved to be more reliable in System Center 2016 Technical Preview - Service Manager. Previously, Service Manager could stop responding  when you updated a management pack or if you re-registered  the data warehouse. This resulted in   reports with data that wasn't  refreshed. Even if you checked the Service Manager console, the jobs listed under Datawarehouse Jobs wouldn't show the correct status. The most common reason for getting into the hung state was due to management pack deployment because the system tried to recreate an existing primary/foreign key in a table.
 
 **Significant performance improvements**.  Service Manager's Active Directory and System Center Configuration Manager connectors performance was improved. In internal testing at Microsoft, sync time improved by about 50% for the SCCM connector and about 35% for the AD connector. You can read more about performance improvements at the [Service Manager blog](http://blogs.technet.com/b/servicemanager/archive/2015/03/19/sccm-lfx-connector-performance-improvements.aspx).
 

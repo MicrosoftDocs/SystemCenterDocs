@@ -8,7 +8,7 @@ ms.topic: article
 ms.assetid: 977826e7-4a33-4dba-8666-6b66bc751280
 ---
 # How to create and assign a servicing window in VMM
-Servicing windows provide a method for scheduling servicing outside Virtual Machine Manager \(VMM\). In VMM, you can associate a servicing window with individual hosts, virtual machines, or services. Before using other applications to schedule maintenance tasks, you can use Windows PowerShell scripts or custom applications to query the object and determines if it is currently in a servicing window. Servicing windows do not interfere with the regular use and functionality of VMM.
+Servicing windows provide a method for scheduling servicing outside Virtual Machine Manager (VMM). In VMM, you can associate a servicing window with individual hosts, virtual machines, or services. Before using other applications to schedule maintenance tasks, you can use Windows PowerShell scripts or custom applications to query the object and determines if it is currently in a servicing window. Servicing windows do not interfere with the regular use and functionality of VMM.
 
 ### To create a servicing window
 
@@ -22,7 +22,7 @@ Servicing windows provide a method for scheduling servicing outside Virtual Mach
 
 5.  In **Duration**, specify the number of hours or minutes in the servicing window.
 
-6.  Under **Recurrence pattern**, select the frequency \(**Daily**, **Weekly**, or **Monthly**\), and then schedule the occurrences within that frequency.
+6.  Under **Recurrence pattern**, select the frequency (**Daily**, **Weekly**, or **Monthly**), and then schedule the occurrences within that frequency.
 
     -   To configure a daily servicing window, click **Daily**. Then, either click **Every** and enter the number of days between servicing, or click **Every weekday** to configure daily servicing.
 
@@ -30,9 +30,9 @@ Servicing windows provide a method for scheduling servicing outside Virtual Mach
 
     -   To configure a monthly servicing window, click **Monthly**, and then use one of the following methods to configure the monthly servicing window.
 
-        Click **Day**, enter a number to indicate which day of the month, and in **of every**, enter a number to indicate the number of months between servicing. For example, you might configure a servicing window to be performed on the first day \(day 1\) of each quarter \(every 3 months\).
+        Click **Day**, enter a number to indicate which day of the month, and in **of every**, enter a number to indicate the number of months between servicing. For example, you might configure a servicing window to be performed on the first day (day 1) of each quarter (every 3 months).
 
-        Click second option \(beginning with **The**\). Select the week of the month \(**first**, **second**, **third**, **fourth**, or **last**\). Select a day of the week. Then, in **of every**, specify the number of months between servicing. For example, you might specify the second Tuesday of every month \(every 1 months\).
+        Click second option (beginning with **The**). Select the week of the month (**first**, **second**, **third**, **fourth**, or **last**). Select a day of the week. Then, in **of every**, specify the number of months between servicing. For example, you might specify the second Tuesday of every month (every 1 months).
 
 7.  Click **OK** to save your servicing window.
 

@@ -1,1 +1,1 @@
-Data Protection Manager \(DPM\)
+Data Protection Manager (DPM)

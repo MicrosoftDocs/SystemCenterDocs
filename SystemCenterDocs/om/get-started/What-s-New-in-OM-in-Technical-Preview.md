@@ -34,7 +34,7 @@ This feature provides the following benefits:
 This feature is available for members of the Operations Manager Administrators role from the Tune Management Packs screen in the Operations console.  
 
 ## Extensible Network Monitoring
-In Technical Preview 5 release of System Center 2016 - Operations Manager, we include a tool which will allow you to create a custom management pack to monitor generic network devices (non-certified as of Operations Manager 2012 R2) and include resource utilization metrics, such as processor and memory. Or you can create extended monitoring workflows for an existing network device already monitored by your management group. This tool enables customers to generate a management pack for their network devices to get extended network monitoring. In addition to the current extended monitoring support for Network devices (Processor and Memory monitoring), this tool enables customers to add monitoring of additional device components such as fan, temperature sensor, voltage sensor and power supply.  
+In Technical Preview 5 release of System Center 2016 - Operations Manager, we include a tool which will allow you to create a custom management pack to monitor generic network devices (non-certified as of Operations Manager 2012 R2) and include resource utilization metrics, such as processor and memory. Or you can create extended monitoring workflows for an existing network device already monitored by your management group. This tool enables customers to generate a management pack for their network devices to get extended network monitoring. In addition to the current extended monitoring support for Network devices (Processor and Memory monitoring), this tool enables customers to add monitoring of additional device components such as fan, temperature sensor, voltage sensor and power supply.  
 
 ## Monitoring Nano Server and Workloads
 In the System Center 2016 Technical Preview 5 – Operations Manager release, we have included the following changes to monitor Nano Server:
@@ -45,7 +45,7 @@ In the System Center 2016 Technical Preview 5 – Operations Manager release, we
 
 -  Supports ACS security audit event collection
     
-For specific instructions on how to configure System Center 2016 Technical Preview \- Operations Manager to monitor Nano Server, see [Monitoring Nano Server](../Manage/Monitoring-Nano-Server.md).
+For specific instructions on how to configure System Center 2016 Technical Preview - Operations Manager to monitor Nano Server, see [Monitoring Nano Server](../Manage/Monitoring-Nano-Server.md).
 
 ## Console User Interface Performance Improvements
 With the release of System Center 2016 Technical Preview 5 – Operations Manager, we have made performance improvements to alert views in the Operations console to increase responsiveness.
@@ -76,7 +76,7 @@ The “Maintenance Schedules” feature offers the following advantages over the
 -   Ability to schedule multiple jobs for the same monitored entity.
 
 ## Extend Operations Manager with Operations Management Suite
-With Microsoft Operations Management Suite you can extend your management capabilities by connecting your Operations Management infrastructure to management and analysis services provided through your Azure account. The main scenarios for connecting System Center 2016 Technical Preview \- Operations Manager to Microsoft Operations Management Suite include:
+With Microsoft Operations Management Suite you can extend your management capabilities by connecting your Operations Management infrastructure to management and analysis services provided through your Azure account. The main scenarios for connecting System Center 2016 Technical Preview - Operations Manager to Microsoft Operations Management Suite include:
 
 -   Configuration Assessment
 

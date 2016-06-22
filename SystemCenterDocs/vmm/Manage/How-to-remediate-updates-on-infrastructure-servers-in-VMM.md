@@ -8,7 +8,7 @@ ms.topic: article
 ms.assetid: 9ec7ba8b-21d1-4ff3-a5cf-52e899ca0bd6
 ---
 # How to remediate updates on infrastructure servers in VMM
-Use the following procedure to remediate updates for infrastructure servers that have been added to the configuration in Virtual Machine Manager \(VMM\). Infrastructure servers support services such as Active Directory, DNS, DHCP, Operations Manager, Service Manager, and so on.
+Use the following procedure to remediate updates for infrastructure servers that have been added to the configuration in Virtual Machine Manager (VMM). Infrastructure servers support services such as Active Directory, DNS, DHCP, Operations Manager, Service Manager, and so on.
 
 > [!NOTE]
 > The **Remediate** action is only available after you install a WSUS server for VMM, enable update management, create and assign update baselines for computers managed by VMM, and scan the computers for compliance. For more information, see [Managing fabric updates in VMM](Managing-fabric-updates-in-VMM.md).
@@ -27,7 +27,7 @@ Use the following procedure to remediate updates for infrastructure servers that
 
     The system may be compliant for some baselines and not compliant for others. You can select a single update baseline or a single update within a baseline.
 
-3.  On the **Home** tab, in the **Compliance** group, click **Remediate**. \(The **Remediate** task is only available when the selected objects are noncompliant.\)
+3.  On the **Home** tab, in the **Compliance** group, click **Remediate**. (The **Remediate** task is only available when the selected objects are noncompliant.)
 
     The **Update Remediation** dialog box opens.
 

@@ -1,1 +1,1 @@
-System Center 2012 – Data Protection Manager \(DPM\)
+System Center 2012 – Data Protection Manager (DPM)

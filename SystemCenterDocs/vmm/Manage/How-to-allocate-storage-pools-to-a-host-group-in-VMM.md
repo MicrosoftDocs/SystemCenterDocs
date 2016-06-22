@@ -8,14 +8,14 @@ ms.topic: article
 ms.assetid: 109cc677-3ae5-4a89-b8bb-12fa9d5f2f13
 ---
 # How to allocate storage pools to a host group in VMM
-You can use the following procedure to allocate one or more storage pools to a host group in Virtual Machine Manager \(VMM\). After you allocate a storage pool to a host group, you can do either of the following:
+You can use the following procedure to allocate one or more storage pools to a host group in Virtual Machine Manager (VMM). After you allocate a storage pool to a host group, you can do either of the following:
 
--   Create logical units from servers that are running Hyper\-V in the host group that can access the storage array where the storage pool resides.
+-   Create logical units from servers that are running Hyper-V in the host group that can access the storage array where the storage pool resides.
 
     > [!NOTE]
     > For more information, see [How to configure storage on a Hyper-V host in VMM](How-to-configure-storage-on-a-Hyper-V-host-in-VMM.md) and [How to configure storage on a Hyper-V host cluster in VMM](How-to-configure-storage-on-a-Hyper-V-host-cluster-in-VMM.md).
 
--   Use the storage pool for the rapid provisioning of virtual machines. During rapid provisioning by using storage area network \(SAN\) cloning or snapshots, VMM requests a copy of an existing logical unit through a SAN copy\-capable storage array. Therefore, you do not have to create logical units beforehand. For more information, see [Using SAN copy to rapidly provision virtual machines](Using-SAN-copy-to-rapidly-provision-virtual-machines.md).
+-   Use the storage pool for the rapid provisioning of virtual machines. During rapid provisioning by using storage area network (SAN) cloning or snapshots, VMM requests a copy of an existing logical unit through a SAN copy-capable storage array. Therefore, you do not have to create logical units beforehand. For more information, see [Using SAN copy to rapidly provision virtual machines](Using-SAN-copy-to-rapidly-provision-virtual-machines.md).
 
 > [!NOTE]
 > You can also allocate storage pools to a host group through the host group properties.
@@ -33,7 +33,7 @@ You can use the following procedure to allocate one or more storage pools to a h
     The **Allocate Storage Capacity** dialog box opens.
 
     > [!NOTE]
-    > To allocate storage capacity if you are a delegated administrator, where your management scope is restricted to specific host groups, you must right\-click a host group that is included in your scope, click **Properties**, and then click the **Storage** tab. Then, continue to step 5.
+    > To allocate storage capacity if you are a delegated administrator, where your management scope is restricted to specific host groups, you must right-click a host group that is included in your scope, click **Properties**, and then click the **Storage** tab. Then, continue to step 5.
 
 4.  In the **Host groups** list, click the host group to which you want to allocate storage capacity.
 

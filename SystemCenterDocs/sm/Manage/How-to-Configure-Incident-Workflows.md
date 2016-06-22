@@ -11,7 +11,7 @@ ms.topic: article
 ms.assetid: bf7c1bd2-c986-4979-b7c6-b6ccf300a632
 ---
 # How to Configure Incident Workflows
-You can use the following procedure to create and configure a workflow rule that will change the support tier to **Tier 2** whenever the **Urgency** property of an incident that is related to printing problems is changed to **High**. This procedure assumes that you already created an incident template to change the support tier to **Tier 2**, and it assumes that you already created the priority calculation table. For more information, see [How to Set Incident Priority](How-to-Set-Incident-Priority.md) and “To create a new printer\-related incident template” in [How to Create Incident Templates](How-to-Create-Incident-Templates.md).
+You can use the following procedure to create and configure a workflow rule that will change the support tier to **Tier 2** whenever the **Urgency** property of an incident that is related to printing problems is changed to **High**. This procedure assumes that you already created an incident template to change the support tier to **Tier 2**, and it assumes that you already created the priority calculation table. For more information, see [How to Set Incident Priority](How-to-Set-Incident-Priority.md) and “To create a new printer-related incident template” in [How to Create Incident Templates](How-to-Create-Incident-Templates.md).
 
 ### To configure an incident workflow
 
@@ -19,7 +19,7 @@ You can use the following procedure to create and configure a workflow rule that
 
 2.  In the **Administration** pane, expand **Administration**, expand **Workflows**, and then click **Configuration**.
 
-3.  In the **Configuration** pane, double\-click **Incident Event Workflow Configuration**.
+3.  In the **Configuration** pane, double-click **Incident Event Workflow Configuration**.
 
 4.  In the **Configure Incident Event Workflows** dialog box, click **Add**.
 
@@ -49,7 +49,7 @@ You can use the following procedure to create and configure a workflow rule that
 
 2.  In the **Work Items** pane, expand **Work Items**, expand **Incident Management**, and then click **All Incidents**.
 
-3.  In the **All Incidents** pane, double\-click an incident that is not currently assigned to the tier 2 support group.
+3.  In the **All Incidents** pane, double-click an incident that is not currently assigned to the tier 2 support group.
 
 4.  In the **Incident Form** page, set the **Urgency** property to **High**, and then click **OK**.
 
@@ -57,12 +57,12 @@ You can use the following procedure to create and configure a workflow rule that
 
 ![](../../media/pssymbol.png)You can use Windows PowerShell commands to complete these and other related tasks, as follows:
 
--   For information about how to use Windows PowerShell to create a new workflow in Service Manager, see [New\-SCSMWorkflow](http://go.microsoft.com/fwlink/p/?LinkID=225361).
+-   For information about how to use Windows PowerShell to create a new workflow in Service Manager, see [New-SCSMWorkflow](http://go.microsoft.com/fwlink/p/?LinkID=225361).
 
--   For information about how to use Windows PowerShell to retrieve configuration and status information for  Service Manager workflows, see [Get\-SCSMWorkflowStatus](http://go.microsoft.com/fwlink/p/?LinkID=225347).
+-   For information about how to use Windows PowerShell to retrieve configuration and status information for  Service Manager workflows, see [Get-SCSMWorkflowStatus](http://go.microsoft.com/fwlink/p/?LinkID=225347).
 
--   For information about how to use Windows PowerShell to update workflow properties, see [Update\-SCSMWorkflow cmdlet](http://go.microsoft.com/fwlink/p/?LinkID=225392).
+-   For information about how to use Windows PowerShell to update workflow properties, see [Update-SCSMWorkflow cmdlet](http://go.microsoft.com/fwlink/p/?LinkID=225392).
 
--   For information about how to use Windows PowerShell to remove a workflow from Service Manager, see [Remove\-SCSMWorkflow](http://go.microsoft.com/fwlink/p/?LinkID=225372).
+-   For information about how to use Windows PowerShell to remove a workflow from Service Manager, see [Remove-SCSMWorkflow](http://go.microsoft.com/fwlink/p/?LinkID=225372).
 
 

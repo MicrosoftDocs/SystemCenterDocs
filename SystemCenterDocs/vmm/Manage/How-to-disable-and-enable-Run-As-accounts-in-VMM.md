@@ -8,7 +8,7 @@ ms.topic: article
 ms.assetid: 2a631141-cf10-4200-94ed-f539098d73cd
 ---
 # How to disable and enable Run As accounts in VMM
-To temporarily make a Run As account unavailable for use in Virtual Machine Manager \(VMM\), you can disable the account. To make the Run As account available for use again, enable the account.
+To temporarily make a Run As account unavailable for use in Virtual Machine Manager (VMM), you can disable the account. To make the Run As account available for use again, enable the account.
 
 **Account requirements** Administrators and delegated administrators can disable and enable Run As accounts. Delegated administrators can only disable and enable Run As accounts in the scope of their user role.
 

@@ -1,1 +1,1 @@
-Self\-Service Portal
+Self-Service Portal

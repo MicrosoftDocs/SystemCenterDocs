@@ -11,13 +11,13 @@ ms.topic: article
 ms.assetid: b90e0e52-a56a-4a75-b0de-4ba85b48ffde
 ---
 # How to upgrade a Hyper-V host cluster to Windows Server 2016 Technical Preview
-Use the following procedure to upgrade a VMM\-managed  Windows Server 2012 R2 cluster to Windows Server Technical Preview. Before you begin, be sure to review the prerequisites listed in [Upgrading Windows Server 2012 R2 host clusters to Windows Server 2016 Technical Preview in VMM](Upgrading-Windows-Server-2012-R2-host-clusters-to-Windows-Server-2016-Technical-Preview-in-VMM.md).
+Use the following procedure to upgrade a VMM-managed  Windows Server 2012 R2 cluster to Windows Server Technical Preview. Before you begin, be sure to review the prerequisites listed in [Upgrading Windows Server 2012 R2 host clusters to Windows Server 2016 Technical Preview in VMM](Upgrading-Windows-Server-2012-R2-host-clusters-to-Windows-Server-2016-Technical-Preview-in-VMM.md).
 
 ### To upgrade a Windows Server 2012 R2 host cluster to Windows Server Technical Preview
 
 1.  Open the **Fabric** workspace.
 
-2.  In the **Fabric** pane, expand **Servers** > **All Hosts**, and locate the host cluster. Right\-click it and then click **Upgrade Cluster**.
+2.  In the **Fabric** pane, expand **Servers** > **All Hosts**, and locate the host cluster. Right-click it and then click **Upgrade Cluster**.
 
 3.  On the **Nodes** page, click the nodes that you want to upgrade. To upgrade the entire cluster at once, click **Select All**. Then click **Physical computer profile**, and click the physical computer profile for the cluster nodes. Click **Next**.
 
@@ -27,16 +27,16 @@ Use the following procedure to upgrade a VMM\-managed  Windows Server 2012 R2 cl
 
         If you do not already have a Run As account, click **Browse**, and then in the **Select a Run As Account** dialog box, click **Create Run As Account**.
 
-    2.  In the **Out\-of\-band management protocol** list, click the protocol that your BMCs use.
+    2.  In the **Out-of-band management protocol** list, click the protocol that your BMCs use.
 
         > [!NOTE]
-        > If you want to use Data Center Management Interface \(DCMI\), click **Intelligent Platform Management Interface \(IPMI\)**. Although DCMI 1.0 is not listed, it is supported.
+        > If you want to use Data Center Management Interface (DCMI), click **Intelligent Platform Management Interface (IPMI)**. Although DCMI 1.0 is not listed, it is supported.
 
     3.  For **Out of band management port**, ensure that the correct port is selected.
 
     Then click **Next**.
 
-5.  On the **Deployment Customization** page, review the list of nodes to upgrade. The wizard displays the configuration of each node. If the wizard was not able to determine all of the required information for a node, it displays a **Missing settings** alert for that node.  For example, if the nodes were not provisioned by VMM using its bare\-metal provisioning process, the BMC settings may not be complete. In addition, if you want to change the configuration of one or more nodes, you can do so from this page.
+5.  On the **Deployment Customization** page, review the list of nodes to upgrade. The wizard displays the configuration of each node. If the wizard was not able to determine all of the required information for a node, it displays a **Missing settings** alert for that node.  For example, if the nodes were not provisioned by VMM using its bare-metal provisioning process, the BMC settings may not be complete. In addition, if you want to change the configuration of one or more nodes, you can do so from this page.
 
     In the list of nodes on the left of the pane, click the node you want to check. Check the following configuration areas:
 
@@ -51,16 +51,16 @@ Use the following procedure to upgrade a VMM\-managed  Windows Server 2012 R2 cl
 
     -   **Network adapter configuration**.
 
-        1.  For the node you are configuring, click a network adapter \(on the left\). You can leave the displayed configuration unchanged, or fill in more information by clicking the button on the right, labeled either with **Configure** or with an ellipsis \(**...**\).
+        1.  For the node you are configuring, click a network adapter (on the left). You can leave the displayed configuration unchanged, or fill in more information by clicking the button on the right, labeled either with **Configure** or with an ellipsis (**...**).
 
         2.  If you click the button, in the **Network Adapter IP Configuration** box, you can specify the following:
 
-            -   **MAC address\(host clusters only—management NIC\)**: If this is the management NIC for a host cluster, and you want to configure it as a virtual network adapter, type a MAC address.
+            -   **MAC address(host clusters only—management NIC)**: If this is the management NIC for a host cluster, and you want to configure it as a virtual network adapter, type a MAC address.
 
                 > [!NOTE]
                 > This is not the MAC address of the BMC. It is the MAC address of the management NIC, which VMM uses to communicate with the VMM management server.
 
-            -   **Specify static IP settings for this network adapter**: If you check this box, select a logical network and \(if applicable in that logical network\) an IP subnet. If the selected IP subnet includes IP address pool, you can check **Obtain an IP address corresponding to the selected subnet**. Otherwise, type an IP address that is in within the logical network or its subnet.
+            -   **Specify static IP settings for this network adapter**: If you check this box, select a logical network and (if applicable in that logical network) an IP subnet. If the selected IP subnet includes IP address pool, you can check **Obtain an IP address corresponding to the selected subnet**. Otherwise, type an IP address that is in within the logical network or its subnet.
 
                 > [!IMPORTANT]
                 > If you select an IP subnet, make sure that it corresponds to the physical location where you are deploying the hosts and to the network that the adapter is connected to. Otherwise, deployment may fail.
@@ -76,7 +76,7 @@ Use the following procedure to upgrade a VMM\-managed  Windows Server 2012 R2 cl
     If the wizard finishes the node upgrades successfully and all of the cluster nodes are running Windows Server Technical Preview, the wizard updates the cluster functional level to Windows Server Technical Preview.
 
 > [!NOTE]
-> To view detailed status information for a host cluster, including a link to the cluster validation test report, right\-click the cluster, click **Properties**, and then click the **Status** tab.
+> To view detailed status information for a host cluster, including a link to the cluster validation test report, right-click the cluster, click **Properties**, and then click the **Status** tab.
 > 
 > On a host cluster, you can perform cluster validation at any time. To do this, click the cluster and then on the ribbon, click **Validate Cluster**. Cluster validation begins immediately.
 

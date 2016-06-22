@@ -11,7 +11,7 @@ ms.topic: article
 ms.assetid: be6c5f89-9296-4590-8c0e-8f8ac158fe29
 ---
 # How to Unpublish a Request Offering
-When you unpublish a request offering, it is removed from the Self\-Service Portal so that end users cannot request it. You can use the following procedure to unpublish a request offering.
+When you unpublish a request offering, it is removed from the Self-Service Portal so that end users cannot request it. You can use the following procedure to unpublish a request offering.
 
 ### To unpublish a request offering
 
@@ -19,6 +19,6 @@ When you unpublish a request offering, it is removed from the Self\-Service Port
 
 2.  In the **Library** pane, expand **Service Catalog**, and then select **Published Request Offerings**.
 
-3.  In the **Published Request Offerings** list, select one or more request offerings, and in the **Tasks** pane under **\<RequestOfferingName\>**, click **Unpublish**.
+3.  In the **Published Request Offerings** list, select one or more request offerings, and in the **Tasks** pane under **<RequestOfferingName\>**, click **Unpublish**.
 
 

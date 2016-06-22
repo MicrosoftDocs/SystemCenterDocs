@@ -32,7 +32,7 @@ Use the following procedures to configure settings to specify change request pre
 
     2.  If you want to change the maximum number of files that you can attach to a change request, change the default value in the **Maximum number of attached files** box. For example, type **2**.
 
-    3.  If you want to change the maximum size of files that you attach to a change request, change the default value in the **Maximum size \(KB\)** box. For example, type **300**.
+    3.  If you want to change the maximum size of files that you attach to a change request, change the default value in the **Maximum size (KB)** box. For example, type **300**.
 
 6.  Click **OK** to close the **Change Request Settings** dialog box.
 
