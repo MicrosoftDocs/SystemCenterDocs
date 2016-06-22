@@ -8,7 +8,7 @@ ms.topic: article
 ms.assetid: 96db0f54-5b56-426a-9866-9e3b0902609c
 ---
 # How to add and classify SMI-S and SMP storage devices in VMM
-Use the following procedure to add remote storage devices in [!INCLUDE[vmm12sp1_long](../../includes/vmm12sp1_long_md.md)]. You can add and discover external storage arrays that are managed by Storage Management Initiative – Specification \(SMI\-S\) or Store Management Provider \(SMP\) providers. You can assign friendly\-name classifications for the added storage. For example, you can assign a Gold classification to solid\-state drive \(SSD\) storage and a Bronze classification to slower drives.
+Use the following procedure to add remote storage devices in Virtual Machine Manager \(VMM\). You can add and discover external storage arrays that are managed by Storage Management Initiative – Specification \(SMI\-S\) or Store Management Provider \(SMP\) providers. You can assign friendly\-name classifications for the added storage. For example, you can assign a Gold classification to solid\-state drive \(SSD\) storage and a Bronze classification to slower drives.
 
 **Account requirements** To complete this procedure, you must be a member of the Administrator user role, or a member of the Delegated Administrator user role.
 
@@ -16,12 +16,12 @@ Before you begin this procedure, verify the following prerequisites:
 
 -   Ensure that you are using a supported storage array. For a list of supported arrays, see the "Supported Storage Arrays" section of the topic [Configuring Storage in VMM](assetId:///55836f52-ebe1-4b5a-a37b-b29d4bb2c355).
 
--   To add an SMI\-S storage device, ensure that you have installed the SMI\-S provider for the array on a server that the [!INCLUDE[vmm12short](../../includes/vmm12short_md.md)] management server can access over the network by IP address or by fully qualified domain name \(FQDN\). For information about how to obtain SMI\-S providers, see [Configuring iSCSI Target Server and the SMI-S Provider in VMM](Configuring-iSCSI-Target-Server-and-the-SMI-S-Provider-in-VMM.md).
+-   To add an SMI\-S storage device, ensure that you have installed the SMI\-S provider for the array on a server that the VMM management server can access over the network by IP address or by fully qualified domain name \(FQDN\). For information about how to obtain SMI\-S providers, see [Configuring iSCSI Target Server and the SMI-S Provider in VMM](Configuring-iSCSI-Target-Server-and-the-SMI-S-Provider-in-VMM.md).
 
     > [!NOTE]
-    > Do not install the SMI\-S provider on the [!INCLUDE[vmm12short](../../includes/vmm12short_md.md)] management server. This configuration is not supported.
+    > Do not install the SMI\-S provider on the VMM management server. This configuration is not supported.
     > 
-    > WMI SMP providers from Dell EqualLogic and NexSan must be installed on the [!INCLUDE[vmm12short](../../includes/vmm12short_md.md)] server.
+    > WMI SMP providers from Dell EqualLogic and NexSan must be installed on the VMM server.
 
 -   You can create a Run As account before or while you are run the Add Storage Devices Wizard to discover storage. The Run As account must have permissions to access the SMI\-S provider. You can create a Run As account in the **Settings** workspace. For more information about Run As accounts, see [How to create a Run As account in VMM](How-to-create-a-Run-As-account-in-VMM.md).
 
@@ -65,11 +65,11 @@ Use the following procedures to add and classify block storage devices:
 
     2.  To add an SMP provider, select it from the **Provider** list. If the SMP provider is not in the list, click **Import** to refresh the list.
 
-6.  On the **Gather Information** page, [!INCLUDE[vmm12short](../../includes/vmm12short_md.md)] automatically tries to discover and import the storage device information. To retry discovery, click **Scan Provider**. Note the following if you selected the option to use an SSL connection for an SMI\-S provider:
+6.  On the **Gather Information** page, VMM automatically tries to discover and import the storage device information. To retry discovery, click **Scan Provider**. Note the following if you selected the option to use an SSL connection for an SMI\-S provider:
 
     1.  During discovery, the **Import Certificate** dialog box appears. Review the certificate information for the storage provider, and then click **Import**.
 
-    2.  By default, when you import a certificate for a storage provider, verification of the common name \(CN\) that is used in the certificate occurs. However, this process might cause an issue where storage discovery fails when the certificate does not contain a CN value, or the CN value does not match the expected format of NetBIOS name, FQDN, or IP address that [!INCLUDE[vmm12short](../../includes/vmm12short_md.md)] uses.
+    2.  By default, when you import a certificate for a storage provider, verification of the common name \(CN\) that is used in the certificate occurs. However, this process might cause an issue where storage discovery fails when the certificate does not contain a CN value, or the CN value does not match the expected format of NetBIOS name, FQDN, or IP address that VMM uses.
 
     3.  If you receive the error messages "SSL certificate common name is invalid" or "Certificate Authority not recognized", you must disable CN verification for the storage provider certificate in the registry. To do this, follow these steps on the VMM management server:
 
@@ -98,7 +98,7 @@ Use the following procedures to add and classify block storage devices:
 
 7.  On the **Select Storage Devices** page, do the following for each storage pool that requires a classification:
 
-    1.  Select the check box next to a storage pool that you want [!INCLUDE[vmm12short](../../includes/vmm12short_md.md)] to manage.
+    1.  Select the check box next to a storage pool that you want VMM to manage.
 
     2.  In the **Classification** column, select the storage classification that you want to assign. For instructions about how to create a new classification, see [How to create storage classifications in VMM](How-to-create-storage-classifications-in-VMM.md). Then click **Next**.
 

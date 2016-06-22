@@ -11,7 +11,7 @@ ms.topic: article
 ms.assetid: 2bf69867-ff73-48e0-b8b5-83b3b104b046
 ---
 # Upgrading and Uninstalling Agents on UNIX and Linux Computers
-This topic describes how to upgrade and uninstall agents on UNIX and Linux computers, using the **UNIX\/Linux Agent Upgrade Wizard** and the **UNIX\/Linux Agent Uninstall Wizard**. These wizards are similar in how you select the target computers and provide credentials. Both wizards require privileged credentials on the UNIX or Linux computers to complete their tasks, for more information see [Accessing UNIX and Linux Computers in Operations Manager](Accessing-UNIX-and-Linux-Computers-in-Operations-Manager.md).
+This topic describes how to upgrade and uninstall agents on UNIX and Linux computers, using the **UNIX\/Linux Agent Upgrade Wizard** and the **UNIX\/Linux Agent Uninstall Wizard**. These wizards are similar in how you select the target computers and provide credentials. Both wizards require privileged credentials on the UNIX or Linux computers to complete their tasks, for more information see [Accessing UNIX and Linux Computers in Operations Manager](https://technet.microsoft.com/library/hh212886%28v=sc.12%29.aspx).
 
 ## Upgrading Agents
 You must run the **UNIX\/Linux Agent Upgrade Wizard** to upgrade agents from earlier versions, or when updates are issued by Microsoft, for of Operations Manager.
@@ -34,7 +34,7 @@ You must run the **UNIX\/Linux Agent Upgrade Wizard** to upgrade agents from ear
 
     -   Click **Show Computers** \(in the alert text\) for a list of the computers that do not have the required credentials specified in Run As Accounts. Then click **Previous** to unselect them and try again.
 
-    For detailed instructions on how to set credentials, see [How to Set Credentials for Accessing UNIX and Linux Computers](How-to-Set-Credentials-for-Accessing-UNIX-and-Linux-Computers.md).
+    For detailed instructions on how to set credentials, see [How to Set Credentials for Accessing UNIX and Linux Computers](https://technet.microsoft.com/library/hh287150%28v=sc.12%29.aspx).
 
 6.  Click **Upgrade**.
 

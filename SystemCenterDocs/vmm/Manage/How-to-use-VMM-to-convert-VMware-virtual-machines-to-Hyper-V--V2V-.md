@@ -10,7 +10,7 @@ ms.topic: article
 ms.assetid: 4deab84b-42c2-43c7-b528-3420925cbdcd
 ---
 # How to use VMM to convert VMware virtual machines to Hyper-V (V2V)
-You can use the following procedure to convert a VMware virtual machine to a Hyper\-V virtual machine through the virtual\-to\-virtual \(V2V\) machine conversion process in [!INCLUDE[vmm12sp1_long](../../includes/vmm12sp1_long_md.md)]. The source virtual machine can be stored in the [!INCLUDE[vmm12short](../../includes/vmm12short_md.md)] library or managed by a VMware ESX host.
+You can use the following procedure to convert a VMware virtual machine to a Hyper\-V virtual machine through the virtual\-to\-virtual \(V2V\) machine conversion process in Virtual Machine Manager \(VMM\). The source virtual machine can be stored in the VMM library or managed by a VMware ESX host.
 
 > [!NOTE]
 > You can also perform V2V conversions with Microsoft Virtual Machine Converter \(MVMC\). For more information, see [Microsoft Virtual Machine Converter 3.0](http://technet.microsoft.com/library/dn873998.aspx).
@@ -19,9 +19,9 @@ You can use the following procedure to convert a VMware virtual machine to a Hyp
 
 Before you begin, there are several things you need to be aware of concerning V2V conversions:
 
--   [!INCLUDE[vmm12short](../../includes/vmm12short_md.md)] does not support converting VMware Workstations.
+-   VMM does not support converting VMware Workstations.
 
--   [!INCLUDE[vmm12short](../../includes/vmm12short_md.md)] does not support converting VMware virtual machines with virtual hard disks that are connected to an integrated drive electronics \(IDE\) bus.
+-   VMM does not support converting VMware virtual machines with virtual hard disks that are connected to an integrated drive electronics \(IDE\) bus.
 
 -   Online V2V conversions are not supported. This means VMware virtual machines must be offline \(powered off\).
 
@@ -29,7 +29,7 @@ Before you begin, there are several things you need to be aware of concerning V2
 
 -   You must uninstall VMware Tools on the guest operating system of the virtual machine. For information about VMWare Tools, see [Overview of VMware Tools](http://kb.vmware.com/selfservice/microsites/search.do?language=en_US&cmd=displayKC&externalId=340).
 
-[!INCLUDE[vmm12short](../../includes/vmm12short_md.md)] in [!INCLUDE[sc_threshold_1](../../includes/sc_threshold_1_md.md)] supports the V2V machine conversion of virtual machines that are running on the following versions of VMware ESX:
+VMM in System Center 2016 Technical Preview supports the V2V machine conversion of virtual machines that are running on the following versions of VMware ESX:
 
 -   ESX\/ESXi 4.1
 
@@ -55,7 +55,7 @@ Before you begin, there are several things you need to be aware of concerning V2
 6.  On the **Specify Virtual Machine Identity** page, either keep or change the virtual machine name, enter an optional description, and then click **Next**.
 
     > [!NOTE]
-    > The virtual machine name identifies the virtual machine to [!INCLUDE[vmm12short](../../includes/vmm12short_md.md)]. The name does not have to match the computer name of the virtual machine. However, to avoid confusion, we recommend that you use the same name as the computer name.
+    > The virtual machine name identifies the virtual machine to VMM. The name does not have to match the computer name of the virtual machine. However, to avoid confusion, we recommend that you use the same name as the computer name.
 
 7.  On the **Virtual Machine Configuration** page, configure the number of processors and assign the amount of memory in megabytes or gigabytes, and then click **Next**.
 

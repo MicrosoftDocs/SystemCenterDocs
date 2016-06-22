@@ -11,7 +11,7 @@ ms.topic: article
 ms.assetid: 9a0a10f3-b755-4a3a-b6e7-e2475dfae2f2
 ---
 # Install the Agent and Certificate on UNIX and Linux Computers Using the Command Line
-Your environment may require that you manually install the agent. Use the following procedures to manually install agents to UNIX and Linux computers for monitoring in [!INCLUDE[scom_threshold_1](../../includes/scom_threshold_1_md.md)] and [!INCLUDE[sc_threshold_1](../../includes/sc_threshold_1_md.md)], [!INCLUDE[scom_threshold_1](../../includes/scom_threshold_1_md.md)].
+Your environment may require that you manually install the agent. Use the following procedures to manually install agents to UNIX and Linux computers for monitoring in System Center 2016 Technical Preview \- Operations Manager and System Center 2016 Technical Preview, System Center 2016 Technical Preview \- Operations Manager.
 
 #### To install the agent on Red Hat Enterprise Linux and SUSE Linux Enterprise Server
 
@@ -146,9 +146,9 @@ You must have already manually installed an agent before you start this procedur
 
 #### To install certificates for UNIX and Linux support
 
-1.  On the computer that is running the UNIX or Linux operating system, locate the file `/etc/opt/microsoft/scx/ssl/scx-host-<hostname>.pem` and securely copy or transfer it to any location on the computer that is hosting [!INCLUDE[om12short](../../includes/om12short_md.md)].
+1.  On the computer that is running the UNIX or Linux operating system, locate the file `/etc/opt/microsoft/scx/ssl/scx-host-<hostname>.pem` and securely copy or transfer it to any location on the computer that is hosting Operations Manager.
 
-2.  On the computer that is hosting [!INCLUDE[om12short](../../includes/om12short_md.md)], on the Windows desktop, click **Start**, and then click **Run**.
+2.  On the computer that is hosting Operations Manager, on the Windows desktop, click **Start**, and then click **Run**.
 
 3.  In the **Run** dialog box, type **cmd**, and then press **Enter**.
 
@@ -157,7 +157,7 @@ You must have already manually installed an agent before you start this procedur
 5.  Type the command `scxcertconfig -sign scx-host-<hostname>.pem scx_new.pem`, and then press **Enter**. This command will self\-sign your certificate \(`scx-host-<hostname>.pem`\) and then save the new certificate \(`scx-host-<hostname>_new.pem`\).
 
     > [!NOTE]
-    > Ensure that the location where [!INCLUDE[om12short](../../includes/om12short_md.md)] is installed is in your path statement, or use the fully qualified path of the `scxcertconfig.exe` file.
+    > Ensure that the location where Operations Manager is installed is in your path statement, or use the fully qualified path of the `scxcertconfig.exe` file.
 
 6.  Securely copy or transfer the `scx_new.pem` file into the `/etc/opt/microsoft/scx/ssl` folder on the computer that is hosting the UNIX or Linux operating system. This replaces the `original scx-host-<hostname>.pem` file.
 

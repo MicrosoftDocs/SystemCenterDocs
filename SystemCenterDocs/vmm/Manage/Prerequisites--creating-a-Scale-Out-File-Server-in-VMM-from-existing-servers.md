@@ -8,11 +8,11 @@ ms.topic: article
 ms.assetid: b5244c8e-e3a7-4345-90e4-d103837500c7
 ---
 # Prerequisites: creating a Scale-Out File Server in VMM from existing servers
-Before you use [!INCLUDE[vmm12sp1_long](../../includes/vmm12sp1_long_md.md)] to create a Scale\-Out File Server from existing servers, review the prerequisites in this topic. For information about bare\-metal provisioning, or procedures you can follow after meeting these prerequisites, see the links at the end of this topic.
+Before you use Virtual Machine Manager \(VMM\) to create a Scale\-Out File Server from existing servers, review the prerequisites in this topic. For information about bare\-metal provisioning, or procedures you can follow after meeting these prerequisites, see the links at the end of this topic.
 
 You must meet the following prerequisites for the servers that you will use to create the Scale\-Out File Server:
 
--   Either the [!INCLUDE[winblue_server_2](../../includes/winblue_server_2_md.md)] or the [!INCLUDE[winthreshold_server_2](../../includes/winthreshold_server_2_md.md)] operating system must be installed.
+-   Either the Windows Server 2012 R2 or the Windows Server Technical Preview operating system must be installed.
 
 -   The same operating system must be installed on all servers from which the cluster will be created.
 

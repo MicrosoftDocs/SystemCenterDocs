@@ -8,7 +8,7 @@ ms.topic: article
 ms.assetid: 0e55d41f-bbf7-489a-9ad2-db0073b6169a
 ---
 # Deploying Scale-Out File Servers from bare metal with VMM
-The procedures in this section describe how to use [!INCLUDE[vmm12sp1_long](../../includes/vmm12sp1_long_md.md)] to discover physical computers on the network, automatically install an operating system, and provision the computers into a Scale\-Out File Server.
+The procedures in this section describe how to use Virtual Machine Manager \(VMM\) to discover physical computers on the network, automatically install an operating system, and provision the computers into a Scale\-Out File Server.
 
 For information about other approaches to deploying a Scale\-Out File Server, see [Managing Scale-Out File Servers with VMM](Managing-Scale-Out-File-Servers-with-VMM.md).
 

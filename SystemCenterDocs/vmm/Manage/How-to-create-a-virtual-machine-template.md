@@ -8,13 +8,12 @@ ms.topic: article
 ms.assetid: 4b4f0d28-a723-4197-a825-ec2766787e15
 ---
 # How to create a virtual machine template
-You can use the following procedure to create a virtual machine template in [!INCLUDE[vmm12sp1_long](../../includes/vmm12sp1_long_md.md)]. Virtual machine templates help you create new virtual machines and configure tiers in a service template. For more information about service templates, see [Creating service templates in VMM](Creating-service-templates-in-VMM.md).
+You can use the following procedure to create a virtual machine template in Virtual Machine Manager \(VMM\). Virtual machine templates help you create new virtual machines and configure tiers in a service template. 
 
 You can create a virtual machine template based on an existing virtual machine template or based on an existing virtual hard disk that is stored in a library. Alternatively, you can create a virtual machine template based on an existing virtual machine that is deployed on a host. This option requires that the existing machine has been stopped.
 
-If you base your new virtual machine template on an existing virtual machine template or on a virtual hard disk that is stored in the library, you can configure hardware settings, guest operating system settings, application installations, and the installation of instances of Microsoft SQL Server. You can configure each of these settings manually, or you can import the settings from an existing profile. For more information about creating profiles, see [Creating profiles and templates in VMM](Creating-profiles-and-templates-in-VMM.md).
-
-If you create a virtual machine template that is based on the Linux operating system, some of the Linux\-specific settings, such as operating system specialization, work only if you deploy the Linux\-based virtual machine on a Hyper\-V host. Also, the option to create a virtual machine template that is based on an existing virtual machine that is deployed on a host is not applicable for Linux\-based virtual machine templates. For more information about creating Linux\-based virtual machines, see [Requirements for Linux-based virtual machines](Requirements-for-Linux-based-virtual-machines.md).
+If you base your new virtual machine template on an existing virtual machine template or on a virtual hard disk that is stored in the library, you can configure hardware settings, guest operating system settings, application installations, and the installation of instances of Microsoft SQL Server. You can configure each of these settings manually, or you can import the settings from an existing profile. 
+If you create a virtual machine template that is based on the Linux operating system, some of the Linux\-specific settings, such as operating system specialization, work only if you deploy the Linux\-based virtual machine on a Hyper\-V host. Also, the option to create a virtual machine template that is based on an existing virtual machine that is deployed on a host is not applicable for Linux\-based virtual machine templates. 
 
 Before you create a virtual machine template, note the following:
 
@@ -61,12 +60,9 @@ Before you create a virtual machine template, note the following:
 
     -   **Network—static IP**: If you configure a network adapter to use static IP addresses, you must also set the media access control \(MAC\) address to static.
 
-    -   **Storage classifications**: If you want the virtual hard disks that are created from this template to be placed on storage resources in one of your storage classifications \(for example, you might have created storage classifications called **Gold**, **Silver**, and **Bronze**\), at the bottom of the pane for a virtual hard disk, select the classification. For more information about classifications, see[Stage 2: Plan your storage classifications](Overview--configuring-storage-using-Scale-Out-File-Servers-in-VMM.md#BKMK_classifications) in "Overview: configuring storage using Scale\-Out File Server clusters in VMM."
-
-    -   **Priority \(on a host cluster\)**: If the virtual machine will be on a host cluster, you can use [!INCLUDE[vmm12short](../../includes/vmm12short_md.md)] to configure virtual machine priority for the virtual machine. For more information, see [How to configure priority in VMM for a virtual machine on a host cluster](How-to-configure-priority-in-VMM-for-a-virtual-machine-on-a-host-cluster.md).
-
-    -   **Guest clustering**: You can use [!INCLUDE[vmm12short](../../includes/vmm12short_md.md)] to create virtual machines that will work together as a guest cluster. For more information, see [How to create a guest cluster by using a service template in VMM](How-to-create-a-guest-cluster-by-using-a-service-template-in-VMM.md).
-
+    -   **Storage classifications**: If you want the virtual hard disks that are created from this template to be placed on storage resources in one of your storage classifications \(for example, you might have created storage classifications called **Gold**, **Silver**, and **Bronze**\), at the bottom of the pane for a virtual hard disk, select the classification. 
+    -   **Priority \(on a host cluster\)**: If the virtual machine will be on a host cluster, you can use VMM to configure virtual machine priority for the virtual machine. 
+    -   **Guest clustering**: You can use VMM to create virtual machines that will work together as a guest cluster. 
 7.  On the **Configure Operating System** page, open the  **Guest OS profile** list and either select a guest operating system profile, or select the type of operating system for which you want to create customized settings—Windows, Linux, or none. Your selection from the list determines the settings that are displayed on the wizard page. Your selection also determines whether additional wizard pages are displayed.
 
     Configure the guest operating system settings, and then click **Next**.
@@ -79,13 +75,13 @@ Before you create a virtual machine template, note the following:
 
         -   **DNS domain name** is a Linux\-specific option. Enter the domain name portion of the fully qualified domain name \(FQDN\).
 
-    -   The **Roles and Features** settings apply only for Windows, and only if you use the virtual machine template in a service template. Also, to support these settings, the virtual machine cannot use a guest operating system earlier than [!INCLUDE[nextref_server_7](../../includes/nextref_server_7_md.md)].
+    -   The **Roles and Features** settings apply only for Windows, and only if you use the virtual machine template in a service template. Also, to support these settings, the virtual machine cannot use a guest operating system earlier than Windows Server 2008 R2.
 
     -   The **RunOnce commands** apply only to Linux\-based virtual machine templates. These commands run in the specified order during deployment after the operating system has been configured. If shell conventions, such as pipes, are used, we recommend wrapping each command with an explicit invocation of the shell, for example, `/bin/sh –c “<your command>”`. In this example, double quotes in the command must be escaped.
 
     -   Under **Root Credentials**, **Public SSH key** is a Linux\-specific option. This option sets the content of a specified public Secure Shell \(SSH\) key as an authorized key for authentication of the root user. Enter the name of a public key file that is stored in the VMM library and has the extension .sshkey.
 
-    -   If you will use the virtual machine template in a service template, under **Networking**, you can specify optional Active Directory domain settings by using the FQDN or by using at signs \(@\) before and after, for example, by entering @Domain@. By using the at signs \(@\) in this way, the necessary information can be entered when the virtual machine is deployed as part of a service. A trust relationship is not necessary between the domain where the service is deployed and the domain of the [!INCLUDE[vmm12short](../../includes/vmm12short_md.md)] management server.
+    -   If you will use the virtual machine template in a service template, under **Networking**, you can specify optional Active Directory domain settings by using the FQDN or by using at signs \(@\) before and after, for example, by entering @Domain@. By using the at signs \(@\) in this way, the necessary information can be entered when the virtual machine is deployed as part of a service. A trust relationship is not necessary between the domain where the service is deployed and the domain of the VMM management server.
 
         You can use the virtual machine template in a service template regardless of which option you select under **Admin Password**.
 
@@ -130,12 +126,4 @@ Before you create a virtual machine template, note the following:
 9. On the **Select Path** page, click **Browse**, click a library share and optional folder path, click **OK**, and then click **Next**.
 
 10. On the **Summary** page, confirm the settings, and then click **Create**.
-
-## See Also
-[Creating and deploying virtual machines in VMM](Creating-and-deploying-virtual-machines-in-VMM.md)
-[How to create and deploy a virtual machine from a template](How-to-create-and-deploy-a-virtual-machine-from-a-template.md)
-[Creating service templates in VMM](Creating-service-templates-in-VMM.md)
-[Managing the VMM library and its resources](Managing-the-VMM-library-and-its-resources.md)
-[Managing fabric resources with VMM](Managing-fabric-resources-with-VMM.md)
-
 

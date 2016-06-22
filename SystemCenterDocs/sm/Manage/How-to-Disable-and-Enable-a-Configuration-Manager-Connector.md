@@ -15,7 +15,7 @@ You can use the following procedures to disable or enable a System Center Config
 
 ### To disable a Configuration Manager connector
 
-1.  In the [!INCLUDE[smcons](../../includes/smcons_md.md)], click **Administration**.
+1.  In the Service Manager console, click **Administration**.
 
 2.  In the **Administration** pane, expand **Administration**, and then click **Connectors**.
 
@@ -28,7 +28,7 @@ You can use the following procedures to disable or enable a System Center Config
 
 ### To enable a Configuration Manager connector
 
-1.  In the [!INCLUDE[smcons](../../includes/smcons_md.md)], click **Administration**.
+1.  In the Service Manager console, click **Administration**.
 
 2.  In the **Administration** pane, expand **Administration**, and then click **Connectors**.
 
@@ -38,13 +38,13 @@ You can use the following procedures to disable or enable a System Center Config
 
 ### To validate the status change of a Configuration Manager connector
 
-1.  After you disable or enable the connector, wait 30 seconds. Then, in the [!INCLUDE[smcons](../../includes/smcons_md.md)], click **Administration**, and then click **Connectors**.
+1.  After you disable or enable the connector, wait 30 seconds. Then, in the Service Manager console, click **Administration**, and then click **Connectors**.
 
 2.  In the **Connectors** pane, locate the connector for which you have changed status, and verify the value in the **Enabled** column.
 
 3.  If you enabled the connector, verify that the connector resumes synchronization according to the schedule. If you disabled the connector, verify that the connector no longer synchronizes according to the schedule.
 
-![](Image/PSSymbol.gif)You can use Windows PowerShell commands to complete these tasks and other related tasks, as follows:
+![](../../media/pssymbol.png)You can use Windows PowerShell commands to complete these tasks and other related tasks, as follows:
 
 -   For information about how to use Windows PowerShell to start a Service Manager connector, see [Start\-SCSMConnector](http://go.microsoft.com/fwlink/?LinkId=203113).
 

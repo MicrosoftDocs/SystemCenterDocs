@@ -8,7 +8,7 @@ ms.topic: article
 ms.assetid: b14ecfc3-41ae-4fe8-a9d9-bbc9d440d159
 ---
 # Modifying Scale-Out File Servers in VMM
-Use these procedures to modify a Scale\-Out File Server that is under [!INCLUDE[vmm12short](../../includes/vmm12short_md.md)] management.
+Use these procedures to modify a Scale\-Out File Server that is under VMM management.
 
 This section contains the following topics:
 

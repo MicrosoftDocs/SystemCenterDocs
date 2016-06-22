@@ -11,7 +11,7 @@ ms.topic: article
 ms.assetid: 6fcb27a4-2141-4cd6-856d-173b6490856c
 ---
 # How to add a non-Windows gateway in VMM
-You can connect a VM network to other networks by using a gateway in [!INCLUDE[vmm12sp1_long](../../includes/vmm12sp1_long_md.md)].
+You can connect a VM network to other networks by using a gateway in Virtual Machine Manager \(VMM\).
 
 > [!IMPORTANT]
 > This topic is for non\-Windows gateways. For information about Windows Server gateways, see [How to add a Windows Server Gateway in VMM](How-to-add-a-Windows-Server-Gateway-in-VMM.md).
@@ -19,13 +19,13 @@ You can connect a VM network to other networks by using a gateway in [!INCLUDE[v
 After you add the gateway, you can configure a VM network to use the gateway. You have several choices for the VM network settings. You can choose the setting for a connection through a VPN tunnel, with or without Border Gateway Protocol \(BGP\), or the setting for connecting directly to an additional logical network, with or without network address translation \(NAT\).
 
 ## Prerequisites
-If you want to add a gateway to your configuration in [!INCLUDE[vmm12short](../../includes/vmm12short_md.md)], you must first perform the following tasks:
+If you want to add a gateway to your configuration in VMM, you must first perform the following tasks:
 
-1.  Obtain provider software from the manufacturer of the gateway device, install the provider on the [!INCLUDE[vmm12short](../../includes/vmm12short_md.md)] management server, and then restart the System Center Virtual Machine Manager service. If you have installed a high\-availability [!INCLUDE[vmm12short](../../includes/vmm12short_md.md)] management server on a cluster, be sure to install the provider on all nodes of the cluster. For more information about installing the provider, refer to the manufacturer’s documentation.
+1.  Obtain provider software from the manufacturer of the gateway device, install the provider on the VMM management server, and then restart the System Center Virtual Machine Manager service. If you have installed a high\-availability VMM management server on a cluster, be sure to install the provider on all nodes of the cluster. For more information about installing the provider, refer to the manufacturer’s documentation.
 
 2.  Make sure that you know the manufacturer and model of your gateway, the name of an account that has permission to configure the gateway, the connection string that the gateway will use, and the host groups for which the gateway should be available. If certificates are required for the gateway, for example, if the gateway is in an untrusted domain, make sure you know how to view the thumbprint information for those certificates.
 
-3.  As a best practice, in the operating system of the gateway, ensure that network adapters \(physical network adapters, virtual network adapters, or both\) have adapter names that indicate their intended use. For example, if your adapters have the default names Ethernet, Ethernet 2, and Ethernet 3, a best practice would be to rename them for their intended uses, such as Management, External, and Tenant. This makes them easy to recognize when you see them in a list in [!INCLUDE[vmm12short](../../includes/vmm12short_md.md)].
+3.  As a best practice, in the operating system of the gateway, ensure that network adapters \(physical network adapters, virtual network adapters, or both\) have adapter names that indicate their intended use. For example, if your adapters have the default names Ethernet, Ethernet 2, and Ethernet 3, a best practice would be to rename them for their intended uses, such as Management, External, and Tenant. This makes them easy to recognize when you see them in a list in VMM.
 
 4.  Ensure that the logical networks \(and the associated network sites\) that will be connected to the gateway have been configured. The VM networks that will use the gateway must be based on logical networks that use network virtualization and IP address pools.
 
@@ -36,7 +36,7 @@ If you want to add a gateway to your configuration in [!INCLUDE[vmm12short](../.
 
 6.  Obtain information from your tenant, customer, or client as described in [Prerequisites for gateways in VMM](Prerequisites-for-gateways-in-VMM.md).
 
-#### To add a gateway in [!INCLUDE[vmm12short](../../includes/vmm12short_md.md)]
+#### To add a gateway in VMM
 
 1.  Confirm that the necessary provider software for the gateway device has been installed. To do this, open the **Settings** workspace, and in the **Settings** pane, click **Configuration Providers**. In the **Configuration Providers** pane, review the list of installed provider software.
 

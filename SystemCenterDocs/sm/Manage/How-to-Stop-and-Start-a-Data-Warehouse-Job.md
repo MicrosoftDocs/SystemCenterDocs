@@ -11,14 +11,14 @@ ms.topic: article
 ms.assetid: ab2b063e-6094-4ec5-9ecc-48754c30438c
 ---
 # How to Stop and Start a Data Warehouse Job
-You can stop and start data warehouse jobs that are running in Service Manager. For example, you might have to stop all of the data warehouse jobs that are running to ensure that a security update to the data warehouse management server does not interfere with any jobs that might run. After the server has been updated and restarted, you resume all the data warehouse jobs. You can stop and then start jobs by using the [!INCLUDE[smcons](../../includes/smcons_md.md)] or by using Windows PowerShell cmdlets. In this example, only the extract, transform, and load \(ETL\) jobs are running.
+You can stop and start data warehouse jobs that are running in Service Manager. For example, you might have to stop all of the data warehouse jobs that are running to ensure that a security update to the data warehouse management server does not interfere with any jobs that might run. After the server has been updated and restarted, you resume all the data warehouse jobs. You can stop and then start jobs by using the Service Manager console or by using Windows PowerShell cmdlets. In this example, only the extract, transform, and load \(ETL\) jobs are running.
 
 > [!NOTE]
-> For information about using the [!INCLUDE[smshort](../../includes/smshort_md.md)] Windows PowerShell cmdlets, see [Getting Started with Service Manager Cmdlets for Windows PowerShell](Getting-Started-with-Service-Manager-Cmdlets-for-Windows-PowerShell.md).
+> For information about using the Service Manager Windows PowerShell cmdlets, see [Getting Started with Service Manager Cmdlets for Windows PowerShell](Getting-Started-with-Service-Manager-Cmdlets-for-Windows-PowerShell.md).
 
-### To stop and start data warehouse jobs using the [!INCLUDE[smcons](../../includes/smcons_md.md)]
+### To stop and start data warehouse jobs using the Service Manager console
 
-1.  In the [!INCLUDE[smcons](../../includes/smcons_md.md)], click **Data Warehouse**.
+1.  In the Service Manager console, click **Data Warehouse**.
 
 2.  Expand **Data Warehouse**, and then click **Data Warehouse Jobs**.
 

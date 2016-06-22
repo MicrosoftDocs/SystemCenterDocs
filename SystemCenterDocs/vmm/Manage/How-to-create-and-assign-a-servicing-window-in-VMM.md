@@ -8,7 +8,7 @@ ms.topic: article
 ms.assetid: 977826e7-4a33-4dba-8666-6b66bc751280
 ---
 # How to create and assign a servicing window in VMM
-Servicing windows provide a method for scheduling servicing outside [!INCLUDE[vmm12sp1_long](../../includes/vmm12sp1_long_md.md)]. In [!INCLUDE[vmm12short](../../includes/vmm12short_md.md)], you can associate a servicing window with individual hosts, virtual machines, or services. Before using other applications to schedule maintenance tasks, you can use Windows PowerShell scripts or custom applications to query the object and determines if it is currently in a servicing window. Servicing windows do not interfere with the regular use and functionality of [!INCLUDE[vmm12short](../../includes/vmm12short_md.md)].
+Servicing windows provide a method for scheduling servicing outside Virtual Machine Manager \(VMM\). In VMM, you can associate a servicing window with individual hosts, virtual machines, or services. Before using other applications to schedule maintenance tasks, you can use Windows PowerShell scripts or custom applications to query the object and determines if it is currently in a servicing window. Servicing windows do not interfere with the regular use and functionality of VMM.
 
 ### To create a servicing window
 

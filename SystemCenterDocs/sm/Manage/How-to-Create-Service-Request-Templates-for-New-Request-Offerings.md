@@ -11,11 +11,11 @@ ms.topic: article
 ms.assetid: 78965a33-426c-4d7c-82f2-14f23e32fdc9
 ---
 # How to Create Service Request Templates for New Request Offerings
-By default, Service Manager includes a number of service request templates that are based on a generic incident template. By viewing the template, you can gain an understanding of the categories of information to collect and convey to end users as they submit requests through the [!INCLUDE[smssp](../../includes/smssp_md.md)]. You can use the following procedure to create a new service request template without using the default generic incident request template.
+By default, Service Manager includes a number of service request templates that are based on a generic incident template. By viewing the template, you can gain an understanding of the categories of information to collect and convey to end users as they submit requests through the Self\-Service Portal. You can use the following procedure to create a new service request template without using the default generic incident request template.
 
 ### To create a service request template
 
-1.  In the [!INCLUDE[smcons](../../includes/smcons_md.md)], select **Library**.
+1.  In the Service Manager console, select **Library**.
 
 2.  In the **Library** pane, click **Templates**, and then in the **Tasks** lists under **Templates**, click **Create Template**.
 

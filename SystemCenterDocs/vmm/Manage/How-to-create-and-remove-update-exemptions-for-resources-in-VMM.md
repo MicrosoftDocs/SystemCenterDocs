@@ -8,19 +8,19 @@ ms.topic: article
 ms.assetid: f1ed9144-fcac-401b-bee8-179a12e76fac
 ---
 # How to create and remove update exemptions for resources in VMM
-The procedures in this topic explain how to create an update exemption that prevents an update from being installed on a server managed by [!INCLUDE[vmm12sp1_long](../../includes/vmm12sp1_long_md.md)], and how to remove the exemption so that the update can be installed in the next update remediation.
+The procedures in this topic explain how to create an update exemption that prevents an update from being installed on a server managed by Virtual Machine Manager \(VMM\), and how to remove the exemption so that the update can be installed in the next update remediation.
 
 When an administrator creates an update exemption for a managed computer, the computer remains accountable to an assigned baseline while it is exempted from a particular update in the baseline.
 
 The most common reason for creating an update exemption is that a specific update has placed a managed computer in an unhealthy state. The administrator uninstalls the update, which returns the computer to a healthy state, and wants to prevent the update from being reinstalled until the issues can be identified and resolved so that the update can be installed without placing the computer in an unhealthy state.
 
-Because the update was removed out of band, the computer's update status in [!INCLUDE[vmm12short](../../includes/vmm12short_md.md)] remains **Compliant** until the computer is again scanned for update compliance. The next scan will change the computer's status to **Non Compliant**. To prevent an accidental reinstallation of that update before the issues are resolved, and to provide a valid business justification, the administrator adds an update exemption to the baseline. After the issues are resolved on the computer, the administrator removes the exemption so that the update will be installed during the next update remediation.
+Because the update was removed out of band, the computer's update status in VMM remains **Compliant** until the computer is again scanned for update compliance. The next scan will change the computer's status to **Non Compliant**. To prevent an accidental reinstallation of that update before the issues are resolved, and to provide a valid business justification, the administrator adds an update exemption to the baseline. After the issues are resolved on the computer, the administrator removes the exemption so that the update will be installed during the next update remediation.
 
 ### To create an update exemption for a resource
 
 1.  Open the **Fabric** workspace.
 
-2.  Display **Compliance** view of the [!INCLUDE[vmm12short](../../includes/vmm12short_md.md)] fabric. To display **Compliance** view, on the **Home** tab, in the **Show** group, click **Compliance**.
+2.  Display **Compliance** view of the VMM fabric. To display **Compliance** view, on the **Home** tab, in the **Show** group, click **Compliance**.
 
 3.  On the **Fabric** pane, expand **Servers**, navigate to the server that is to be exempted from the update, and click the server to select it.
 

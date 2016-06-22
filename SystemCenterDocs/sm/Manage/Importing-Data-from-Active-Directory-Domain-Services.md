@@ -25,7 +25,7 @@ This section provides an overview of using a connector to import data from Activ
 
 -   [How to Synchronize an Active Directory Connector](How-to-Synchronize-an-Active-Directory-Connector.md)
 
-    Describes how to synchronize the data in AD DS with the [!INCLUDE[smshort](../../includes/smshort_md.md)] database.
+    Describes how to synchronize the data in AD DS with the Service Manager database.
 
 -   [How to Disable and Enable an Active Directory Connector](How-to-Disable-and-Enable-an-Active-Directory-Connector.md)
 
@@ -33,6 +33,6 @@ This section provides an overview of using a connector to import data from Activ
 
 -   [How to Import Data from Other Domains](How-to-Import-Data-from-Other-Domains.md)
 
-    Describes how to import data from domains other than the domain in which [!INCLUDE[smshort](../../includes/smshort_md.md)] resides.
+    Describes how to import data from domains other than the domain in which Service Manager resides.
 
 

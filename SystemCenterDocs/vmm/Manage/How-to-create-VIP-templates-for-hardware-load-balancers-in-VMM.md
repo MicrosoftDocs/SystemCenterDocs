@@ -11,7 +11,7 @@ ms.topic: article
 ms.assetid: 189f12a2-ee3b-49c1-ba78-7aa6d829da10
 ---
 # How to create VIP templates for hardware load balancers in VMM
-You can use the following procedure to create a virtual IP \(VIP\) template for a hardware load balancer in [!INCLUDE[vmm12sp1_long](../../includes/vmm12sp1_long_md.md)]. A VIP template contains load balancer\-related configuration settings for a specific type of network traffic. For example, you can create a template that specifies the load\-balancing behavior for HTTPS traffic on a specific load balancer by manufacturer and model. These templates represent the best practices from a load\-balancer configuration standpoint.
+You can use the following procedure to create a virtual IP \(VIP\) template for a hardware load balancer in Virtual Machine Manager \(VMM\). A VIP template contains load balancer\-related configuration settings for a specific type of network traffic. For example, you can create a template that specifies the load\-balancing behavior for HTTPS traffic on a specific load balancer by manufacturer and model. These templates represent the best practices from a load\-balancer configuration standpoint.
 
 > [!NOTE]
 > For information about how to create a VIP template for Microsoft Network Load Balancing \(NLB\), see [How to create VIP templates for Network Load Balancing &#40;NLB&#41; in VMM](How-to-create-VIP-templates-for-Network-Load-Balancing--NLB--in-VMM.md).
@@ -20,7 +20,7 @@ When users create a service, they can select a VIP template to use when they wan
 
 ### To create a VIP template for a hardware load balancer
 
-1.  In [!INCLUDE[vmm12sp1_long](../../includes/vmm12sp1_long_md.md)], open the **Fabric** workspace.
+1.  In Virtual Machine Manager \(VMM\), open the **Fabric** workspace.
 
 2.  In the **Fabric** pane, expand **Networking**, and then click **VIP Templates**.
 

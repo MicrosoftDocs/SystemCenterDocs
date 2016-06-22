@@ -17,9 +17,9 @@ Before you run the wizard, gather the following information:
 
 -   The host name, IP address, or range of IP addresses of the UNIX or Linux computers that you want to discover.
 
--   At a minimum, you will need a low\-privileged account established on the UNIX or Linux computer to discover it. To install an agent, you will need privileged access. For more information, see [Accessing UNIX and Linux Computers in Operations Manager](Accessing-UNIX-and-Linux-Computers-in-Operations-Manager.md).
+-   At a minimum, you will need a low\-privileged account established on the UNIX or Linux computer to discover it. To install an agent, you will need privileged access. For more information, see [Accessing UNIX and Linux Computers in Operations Manager](https://technet.microsoft.com/library/hh212886%28v=sc.12%29.aspx).
 
--   If defined, the name of the resource pool created to monitor UNIX or Linux computers. Resource pools can contain management servers or gateways for monitoring UNIX or Linux computers. For more information, see [Managing Resource Pools for UNIX and Linux Computers](Managing-Resource-Pools-for-UNIX-and-Linux-Computers.md).
+-   If defined, the name of the resource pool created to monitor UNIX or Linux computers. Resource pools can contain management servers or gateways for monitoring UNIX or Linux computers. For more information, see [Managing Resource Pools for UNIX and Linux Computers](https://technet.microsoft.com/library/hh287152%28v=sc.12%29.aspx).
 
 ### To discover and install an agent on a UNIX or Linux Computer
 
@@ -44,14 +44,11 @@ Before you run the wizard, gather the following information:
             > [!IMPORTANT]
             > Discovering only computers with the agent installed requires that the agent is currently installed and configured with a signed certificate.
 
-        3.  To specify the credentials for installing an agent, click **Set credentials**. For detailed instructions, see “Credentials for Installing Agents” in [Setting Credentials for Accessing UNIX and Linux Computers](How-to-Set-Credentials-for-Accessing-UNIX-and-Linux-Computers.md#BKMK_Installing).
+        3.  To specify the credentials for installing an agent, click **Set credentials**. For detailed instructions, see “Credentials for Installing Agents” in [Setting Credentials for Accessing UNIX and Linux Computers](https://technet.microsoft.com/library/hh287150%28v=sc.12%29.aspx).
 
         4.  Click **Save**.
 
-    2.  Select a management pool to monitor the UNIX or Linux computer.
-
-        > [!NOTE]
-        > The option will be changed from **management pool** to **resource pool** in the final release of Operations Manager.
+    2.  Select a resource pool to monitor the UNIX or Linux computer.
 
 6.  Click **Discover** to display the **Discovery Progress**  page. The time it takes to finish discovery depends on many factors, such as the criteria specified and the configuration of the environment. If a large number \(100 or more\) of computers are being discovered or agents are being installed, the Operations console will not be usable during discovery and agent installation.
 
@@ -61,7 +58,7 @@ Before you run the wizard, gather the following information:
 
 9. On the **Computer Management** page, after the deployment process is completed, click **Done**.
 
-You must have, at a minimum, a UNIX\/Linux Action Account profile configured with a Monitoring Run As Account to monitor the UNIX or Linux computer. For more information, see [How to Configure Run As Accounts and Profiles for UNIX and Linux Access](How-to-Configure-Run-As-Accounts-and-Profiles-for-UNIX-and-Linux-Access.md).
+You must have, at a minimum, a UNIX\/Linux Action Account profile configured with a Monitoring Run As Account to monitor the UNIX or Linux computer. For more information, see [How to Configure Run As Accounts and Profiles for UNIX and Linux Access](https://technet.microsoft.com/library/hh212926%28v=sc.12%29.aspx).
 
 > [!NOTE]
 > Solaris Zones are supported on Solaris 10 or newer versions. In monitoring a computer with Zones, each Zone is treated like a separate computer. You must install the agent on each computer that you want to monitor. Install the agent on the global zone first, because sparse zones share files with the global zone. If you try to install on a sparse zone first, the installation fails. For more information about troubleshooting, see [Operating System Issues](http://go.microsoft.com/fwlink/?LinkId=318149).

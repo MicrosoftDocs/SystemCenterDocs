@@ -11,12 +11,12 @@ ms.topic: article
 ms.assetid: 173187c5-4a8b-4410-9d6e-a700a1184d7b
 ---
 # VMM networking reference: creating custom MAC address pools in VMM
-You can use the following optional procedure to create custom media access control \(MAC\) address pools for virtual machines that are running on managed hosts. By using static MAC address pools, [!INCLUDE[vmm12sp1_long](../../includes/vmm12sp1_long_md.md)] can automatically generate and assign MAC addresses to new virtual network devices. You can use either the default MAC address pools or configure custom MAC address pools that are scoped to specific host groups.
+You can use the following optional procedure to create custom media access control \(MAC\) address pools for virtual machines that are running on managed hosts. By using static MAC address pools, Virtual Machine Manager \(VMM\) can automatically generate and assign MAC addresses to new virtual network devices. You can use either the default MAC address pools or configure custom MAC address pools that are scoped to specific host groups.
 
 > [!IMPORTANT]
 > If you want to use the default MAC address pools, do not complete this procedure.
 
-[!INCLUDE[vmm12short](../../includes/vmm12short_md.md)] uses the following default MAC address pool ranges.
+VMM uses the following default MAC address pool ranges.
 
 |Default MAC Address Pool Name|Hypervisor Platform|Default MAC Address Pool Range|
 |---------------------------------|-----------------------|----------------------------------|
@@ -39,7 +39,7 @@ If you create custom MAC address pools, the following restrictions apply:
 
     |Reserved For|Prefixes|
     |----------------|------------|
-    |Microsoft|00:03:FF<br /><br />00:0D:3A<br /><br />00:12:5A<br /><br />00:15:5D<br /><br />00:17:FA<br /><br />00:50:F2<br /><br />00:1D:D8 \(except for the 00:1D:D8:B7:1C:00 – 00:1D:D8:F4:1F:FF range that is reserved for [!INCLUDE[vmm12short](../../includes/vmm12short_md.md)]\)|
+    |Microsoft|00:03:FF<br /><br />00:0D:3A<br /><br />00:12:5A<br /><br />00:15:5D<br /><br />00:17:FA<br /><br />00:50:F2<br /><br />00:1D:D8 \(except for the 00:1D:D8:B7:1C:00 – 00:1D:D8:F4:1F:FF range that is reserved for VMM\)|
     |VMware|00:05:69<br /><br />00:0C:29<br /><br />00:1C:14<br /><br />00:50:56 \(except for the 00:50:56:00:00:00 – 00:50:56:3F:FF:FF range that is the reserved as the default VMware static range\)|
     |Citrix|00:16:3E|
 
@@ -119,7 +119,7 @@ If you create custom MAC address pools, the following restrictions apply:
 > 
 > `Get-SCMACAddress –MACAddressPool $MACpool | Format-Table –property Address,VirtualNetworkAdapter,State`
 
-From time to time, you might need to release MAC addresses that are in the pool but that are marked by [!INCLUDE[vmm12short](../../includes/vmm12short_md.md)] as “inactive.” Releasing them makes them available for reassignment. For more information, see [How to release inactive IP or MAC addresses in VMM](How-to-release-inactive-IP-or-MAC-addresses-in-VMM.md).
+From time to time, you might need to release MAC addresses that are in the pool but that are marked by VMM as “inactive.” Releasing them makes them available for reassignment. For more information, see [How to release inactive IP or MAC addresses in VMM](How-to-release-inactive-IP-or-MAC-addresses-in-VMM.md).
 
 ## See Also
 [How to release inactive IP or MAC addresses in VMM](How-to-release-inactive-IP-or-MAC-addresses-in-VMM.md)

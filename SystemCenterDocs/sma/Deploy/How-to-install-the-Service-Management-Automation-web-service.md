@@ -11,20 +11,20 @@ ms.topic: article
 ms.assetid: b6044e0c-0caa-459c-9489-c379a154136b
 ---
 # How to install the Service Management Automation web service
-The [!INCLUDE[sma_1](../../includes/sma_1_md.md)] service endpoint enables you to automate IT administration and business processes by using Windows PowerShell workflow\-based runbooks in [!INCLUDE[katal_1](../../includes/katal_1_md.md)].
+The Service Management Automation service endpoint enables you to automate IT administration and business processes by using Windows PowerShell workflow\-based runbooks in Windows Azure Pack for Windows Server.
 
-Use the following information to install and configure the [!INCLUDE[sma_2](../../includes/sma_2_md.md)] web service in [!INCLUDE[katal_2](../../includes/katal_2_md.md)]. The [!INCLUDE[sma_1](../../includes/sma_1_md.md)] PowerShell module is a required prerequisite of the [!INCLUDE[sma_1](../../includes/sma_1_md.md)] web service, so you must install the [!INCLUDE[sma_1](../../includes/sma_1_md.md)] PowerShell module before you deploy the [!INCLUDE[sma_1](../../includes/sma_1_md.md)] web service.
+Use the following information to install and configure the Automation web service in Windows Azure Pack. The Service Management Automation PowerShell module is a required prerequisite of the Service Management Automation web service, so you must install the Service Management Automation PowerShell module before you deploy the Service Management Automation web service.
 
-You can also install the [!INCLUDE[sma_1](../../includes/sma_1_md.md)] components by using an unattended installation. For more information, see [Installing Service Management Automation from a Command Prompt](http://go.microsoft.com/fwlink/p/?LinkId=313193).
+You can also install the Service Management Automation components by using an unattended installation. For more information, see [Installing Service Management Automation from a Command Prompt](http://go.microsoft.com/fwlink/p/?LinkId=313193).
 
 ## Install the Service Management Automation web service
-The [!INCLUDE[sma_1](../../includes/sma_1_md.md)] web service endpoint provides the connection between [!INCLUDE[sma_1](../../includes/sma_1_md.md)] and [!INCLUDE[katal_2](../../includes/katal_2_md.md)]. The [!INCLUDE[sma_1](../../includes/sma_1_md.md)] web service can be installed from the [!INCLUDE[orchblue_1](../../includes/orchblue_1_md.md)] installation software.
+The Service Management Automation web service endpoint provides the connection between Service Management Automation and Windows Azure Pack. The Service Management Automation web service can be installed from the System Center 2012 R2 Orchestrator installation software.
 
-Install the web service on any machine that can communicate with [!INCLUDE[katal_2](../../includes/katal_2_md.md)] and an instance of SQL Server.
+Install the web service on any machine that can communicate with Windows Azure Pack and an instance of SQL Server.
 
 #### To install the Service Automation web service
 
-1.  In the folder where you downloaded the [!INCLUDE[orchblue_1](../../includes/orchblue_1_md.md)] installation software, click Setup to start the Setup wizard.
+1.  In the folder where you downloaded the System Center 2012 R2 Orchestrator installation software, click Setup to start the Setup wizard.
 
 2.  Under **Service Management**, click **Web Service**, and then click **Install**.
 
@@ -60,7 +60,7 @@ Install the web service on any machine that can communicate with [!INCLUDE[katal
 
 9. Enter the port number for the web service to use. By default, this is 9090.
 
-10. Choose the security certificate to use to encrypt communication between [!INCLUDE[katal_2](../../includes/katal_2_md.md)] and the [!INCLUDE[sma_1](../../includes/sma_1_md.md)] web service endpoint.
+10. Choose the security certificate to use to encrypt communication between Windows Azure Pack and the Service Management Automation web service endpoint.
 
     You can have the installer generate a self\-signed certificate to use, or you can select an existing certificate in your local certificate store.
 

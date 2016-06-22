@@ -13,7 +13,7 @@ ms.assetid: c43bfb32-0c1a-4e8e-8f10-373e68fc11a4
 # Importing Data from System Center Virtual Machine Manager
 You can import objects, such as VM templates, service templates, and storage classifications that are created in Virtual Machine Manager \(VMM\) into the Service Manager database by creating a Virtual Machine Manager connector. After you import these objects into the Service Manager database, you can use these objects, for example, when you create Request Offerings.
 
-If, in your environment, your VMM server pushes discovery data to an [!INCLUDE[om12short](../../includes/om12short_md.md)] server, you will want to create an Operations Manager CI connector. You must make sure that the VMM management pack, Microsoft.SystemCenter.VirtualMachineManager.2016.Discovery, is synchronized with the [!INCLUDE[smshort](../../includes/smshort_md.md)] management server. You can create the Operations Manager CI connector either before or after creating the Virtual Machine Manager connector.
+If, in your environment, your VMM server pushes discovery data to an Operations Manager server, you will want to create an Operations Manager CI connector. You must make sure that the VMM management pack, Microsoft.SystemCenter.VirtualMachineManager.2016.Discovery, is synchronized with the Service Manager management server. You can create the Operations Manager CI connector either before or after creating the Virtual Machine Manager connector.
 
 ## How to Create a Virtual Machine Manager Connector
 
@@ -21,7 +21,7 @@ Use the following procedures to create a System Center Virtual Machine Manager c
 
 ### To create a System Center Virtual Machine Manager connector
 
-1.  In the [!INCLUDE[smcons](../../includes/smcons_md.md)], click **Administration**.
+1.  In the Service Manager console, click **Administration**.
 
 2.  In the **Administration** pane, expand **Administration**, and then click **Connectors**.
 
@@ -57,7 +57,7 @@ Use the following procedures to create a System Center Virtual Machine Manager c
     > [!NOTE]
     > Allow sufficient time for the import process to finish if you are importing a large number of virtual machines or clouds.
 
-3.  In the [!INCLUDE[smcons](../../includes/smcons_md.md)], click **Configuration Items**.
+3.  In the Service Manager console, click **Configuration Items**.
 
 4.  In the **Tasks** pane, click **Create Folder**.
 
@@ -93,11 +93,11 @@ Use the following procedures to create a System Center Virtual Machine Manager c
 
 ## How to Synchronize a Virtual Machine Manager Connector
 
-To ensure that the [!INCLUDE[smshort](../../includes/smshort_md.md)] database is up to date, the Virtual Machine Manager connector synchronizes with Service Manager on a daily basis. You can use the following procedures to synchronize the connector manually and validate that the connector synchronized.
+To ensure that the Service Manager database is up to date, the Virtual Machine Manager connector synchronizes with Service Manager on a daily basis. You can use the following procedures to synchronize the connector manually and validate that the connector synchronized.
 
 ### To manually synchronize a Virtual Machine Manager connector
 
-1.  In the [!INCLUDE[smcons](../../includes/smcons_md.md)], click **Administration**.
+1.  In the Service Manager console, click **Administration**.
 
 2.  In the **Administration** pane, expand **Administration**, and then click **Connectors**.
 
@@ -107,7 +107,7 @@ To ensure that the [!INCLUDE[smshort](../../includes/smshort_md.md)] database is
 
 ### To validate that a Virtual Machine Manager connector synchronized
 
-1.  In the [!INCLUDE[smcons](../../includes/smcons_md.md)], click **Connectors**.
+1.  In the Service Manager console, click **Connectors**.
 
 2.  In the **Connectors** pane, examine the start time and finish time to determine when the synchronization process started and finished.
 
@@ -121,7 +121,7 @@ You can use the following procedures to disable or enable a Virtual Machine Mana
 
 ### To disable a virtual Machine Manager connector
 
-1.  In the [!INCLUDE[smcons](../../includes/smcons_md.md)], click **Administration**.
+1.  In the Service Manager console, click **Administration**.
 
 2.  In the **Administration** pane, expand **Administration**, and then click **Connectors**.
 
@@ -133,7 +133,7 @@ You can use the following procedures to disable or enable a Virtual Machine Mana
 
 ### To enable a virtual Machine Manager connector
 
-1.  In the [!INCLUDE[smcons](../../includes/smcons_md.md)], click **Administration**, and then click **Connectors**.
+1.  In the Service Manager console, click **Administration**, and then click **Connectors**.
 
 2.  In the **Connectors** pane, select the Virtual Machine Manager connector that you want to enable.
 

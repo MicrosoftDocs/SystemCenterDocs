@@ -15,7 +15,7 @@ Before you can import data from a comma\-separated value \(CSV\) file, you have 
 
 ### To import configuration items from a CSV file
 
-1.  In the [!INCLUDE[smcons](../../includes/smcons_md.md)], click **Administration**.
+1.  In the Service Manager console, click **Administration**.
 
 2.  In the **Administration** pane, expand **Administration**, and then click **Connectors**.
 
@@ -31,11 +31,11 @@ Before you can import data from a comma\-separated value \(CSV\) file, you have 
 
 6.  In the **Import Instances from CSV File** dialog box, verify that the numbers next to **Items saved**, **Instances created in memory**, and **Instances committed to database** are equal to the number of rows in the data file, and then click **Close**.
 
-![](Image/PSSymbol.gif)You can use a Windows PowerShell command to complete this task. For information about how to use Windows PowerShell to import configuration items from a CSV file, see [Import\-SCSMInstance](http://go.microsoft.com/fwlink/p/?LinkId=225348).
+![](../../media/pssymbol.png)You can use a Windows PowerShell command to complete this task. For information about how to use Windows PowerShell to import configuration items from a CSV file, see [Import\-SCSMInstance](http://go.microsoft.com/fwlink/p/?LinkId=225348).
 
 ### To validate the import of configuration items from a CSV file
 
-1.  In the [!INCLUDE[smcons](../../includes/smcons_md.md)], click **Configuration Items**.
+1.  In the Service Manager console, click **Configuration Items**.
 
 2.  In the **Configuration Items** pane, expand **Configuration Items**, expand **Computers**, and then click **All Windows Computers**.
 

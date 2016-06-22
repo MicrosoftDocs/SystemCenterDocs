@@ -8,7 +8,7 @@ ms.topic: article
 ms.assetid: 01b6ebb7-3278-46e8-9dc4-535d456c6169
 ---
 # How to create and deploy a virtual machine from an existing virtual machine
-Use the following procedure to use [!INCLUDE[vmm12sp1_long](../../includes/vmm12sp1_long_md.md)] to create a virtual machine by *cloning* an existing virtual machine. You can also use cloning to create backups of existing virtual machines.
+Use the following procedure to use Virtual Machine Manager \(VMM\) to create a virtual machine by *cloning* an existing virtual machine. You can also use cloning to create backups of existing virtual machines.
 
 Note the following:
 
@@ -16,15 +16,15 @@ Note the following:
 
 -   When you clone a virtual machine, the existing virtual machine source is not deleted. We recommend that you clone a virtual machine that has been prepared and generalized with the Sysprep tool. If you do not use a generalized virtual hard disk, the identity of the new virtual machine will be the same as the source. Issues might occur if you turn on two virtual machines with the same identity at the same time.
 
--   You can clone a virtual machine that is deployed on a host, or a virtual machine that is stored in the [!INCLUDE[vmm12short](../../includes/vmm12short_md.md)] library. Starting with hosts running [!INCLUDE[winblue_server_2](../../includes/winblue_server_2_md.md)], virtual machines can be cloned when they're online, stopped, or in a saved state. Otherwise, virtual machines must be stopped or in a saved state.
+-   You can clone a virtual machine that is deployed on a host, or a virtual machine that is stored in the VMM library. Starting with hosts running Windows Server 2012 R2, virtual machines can be cloned when they're online, stopped, or in a saved state. Otherwise, virtual machines must be stopped or in a saved state.
 
 -   The option to use differencing disk optimizations is automatically applied when you deploy the virtual machine on a host, if a base disk exists on that host.
 
--   For a self\-service user to store a virtual machine in the [!INCLUDE[vmm12short](../../includes/vmm12short_md.md)] library, the following is required:
+-   For a self\-service user to store a virtual machine in the VMM library, the following is required:
 
     1.  The self\-service user role must have the **Store and re\-deploy** action assigned.
 
-    2.  The self\-service user must first deploy the virtual machine to a private cloud, and then store it in the [!INCLUDE[vmm12short](../../includes/vmm12short_md.md)] library.
+    2.  The self\-service user must first deploy the virtual machine to a private cloud, and then store it in the VMM library.
 
 ## Creating a virtual machine
 Use the following procedure to create a virtual machine from an existing virtual machine.
@@ -57,7 +57,7 @@ Use the following procedure to create a virtual machine from an existing virtual
 
 1.  On the **Select Cloud** page, select the private cloud on which you want to place the virtual machine. If you are connected as an administrator, you can select the host on which the virtual machine should be deployed in the private cloud. The cloud suggestions are based on a 0\-5 star rating. For more information, see [Understanding virtual machine placement and ratings in VMM](Understanding-virtual-machine-placement-and-ratings-in-VMM.md). Verify the settings and modify them if required:
 
-    -   **Expected utilization**—For a virtual machine that is created from a blank hard disk, the expected utilization is based on standard defaults. For a virtual machine created that is created from an existing virtual machine, the default settings are based on past performance of the existing virtual machine. [!INCLUDE[vmm12short](../../includes/vmm12short_md.md)] updates host suggestions and ratings in response to modifications that are made to the expected virtual machine utilization.
+    -   **Expected utilization**—For a virtual machine that is created from a blank hard disk, the expected utilization is based on standard defaults. For a virtual machine created that is created from an existing virtual machine, the default settings are based on past performance of the existing virtual machine. VMM updates host suggestions and ratings in response to modifications that are made to the expected virtual machine utilization.
 
     -   **Make this VM highly available**—With this option selected, only hosts that are located in a cluster are available for selection.
 
@@ -65,9 +65,9 @@ Use the following procedure to create a virtual machine from an existing virtual
 
     -   **Rating Explanation**—Provides an explanation if a host received a zero rating.
 
-    -   **SAN Explanation** or **Deployment and Transfer Explanation**—Lists any factors that make a storage area network \(SAN\) transfer unavailable. [!INCLUDE[vmm12short](../../includes/vmm12short_md.md)] does not recognize a virtual machine that is stored on a SAN as available for deployment using SAN transfer if the virtual machine was stored directly in the [!INCLUDE[vmm12short](../../includes/vmm12short_md.md)] library when it was created, or was added to the library during a library refresh. To avoid this issue, deploy the virtual machine to a host by using a LAN transfer, and then store the virtual machine in the same [!INCLUDE[vmm12short](../../includes/vmm12short_md.md)] library, library share, and logical unit number \(LUN\).
+    -   **SAN Explanation** or **Deployment and Transfer Explanation**—Lists any factors that make a storage area network \(SAN\) transfer unavailable. VMM does not recognize a virtual machine that is stored on a SAN as available for deployment using SAN transfer if the virtual machine was stored directly in the VMM library when it was created, or was added to the library during a library refresh. To avoid this issue, deploy the virtual machine to a host by using a LAN transfer, and then store the virtual machine in the same VMM library, library share, and logical unit number \(LUN\).
 
-        In addition, the **Deployment and Transfer Explanation** tab provides an explanation if fast file copy cannot be used. Fast file copy is based on the Windows Offloaded Data Transfers \(ODX\) feature, introduced in [!INCLUDE[winblue_server_2](../../includes/winblue_server_2_md.md)]. For information about ODX, see [Windows Offloaded Data Transfers Overview](http://technet.microsoft.com/library/hh831628.aspx).
+        In addition, the **Deployment and Transfer Explanation** tab provides an explanation if fast file copy cannot be used. Fast file copy is based on the Windows Offloaded Data Transfers \(ODX\) feature, introduced in Windows Server 2012 R2. For information about ODX, see [Windows Offloaded Data Transfers Overview](http://technet.microsoft.com/library/hh831628.aspx).
 
 2.  On the **Configure Settings** page, review the virtual machine settings:
 
@@ -88,7 +88,7 @@ Use the following procedure to create a virtual machine from an existing virtual
 
 1.  On the **Select Host** page, review the placement ratings and transfer type, click a host, and then click **Next**. Note the following settings:
 
-    -   **Expected Utilization**—For a virtual machine that is created from a blank hard disk, the expected utilization is based on standard defaults. For a virtual machine that is created from an existing virtual machine, the default settings are based on past performance of the existing virtual machine. [!INCLUDE[vmm12short](../../includes/vmm12short_md.md)] updates host suggestions and ratings in response to modifications that are made to the expected virtual machine utilization.
+    -   **Expected Utilization**—For a virtual machine that is created from a blank hard disk, the expected utilization is based on standard defaults. For a virtual machine that is created from an existing virtual machine, the default settings are based on past performance of the existing virtual machine. VMM updates host suggestions and ratings in response to modifications that are made to the expected virtual machine utilization.
 
     -   **Make this VM highly available**—With this option selected, only hosts in a cluster available for selection.
 
@@ -96,9 +96,9 @@ Use the following procedure to create a virtual machine from an existing virtual
 
     -   **Rating Explanation**—Provides an explanation if a host received a zero rating.
 
-    -   **SAN Explanation** or **Deployment and Transfer Explanation**—Lists any factors that make a storage area network \(SAN\) transfer unavailable. [!INCLUDE[vmm12short](../../includes/vmm12short_md.md)] does not recognize a virtual machine that is stored on a SAN as available for deployment using SAN transfer if the virtual machine was stored directly in the [!INCLUDE[vmm12short](../../includes/vmm12short_md.md)] library when it was created, or was added to the library during a library refresh. To avoid this issue, deploy the virtual machine to a host by using a LAN transfer, and then store the virtual machine in the same [!INCLUDE[vmm12short](../../includes/vmm12short_md.md)] library, library share, and logical unit number \(LUN\).
+    -   **SAN Explanation** or **Deployment and Transfer Explanation**—Lists any factors that make a storage area network \(SAN\) transfer unavailable. VMM does not recognize a virtual machine that is stored on a SAN as available for deployment using SAN transfer if the virtual machine was stored directly in the VMM library when it was created, or was added to the library during a library refresh. To avoid this issue, deploy the virtual machine to a host by using a LAN transfer, and then store the virtual machine in the same VMM library, library share, and logical unit number \(LUN\).
 
-        In addition, the **Deployment and Transfer Explanation** tab provides an explanation if fast file copy cannot be used. Fast file copy is based on the Windows Offloaded Data Transfers \(ODX\) feature, introduced in [!INCLUDE[winblue_server_2](../../includes/winblue_server_2_md.md)]. For information about ODX, see [Windows Offloaded Data Transfers Overview](http://technet.microsoft.com/library/hh831628.aspx).
+        In addition, the **Deployment and Transfer Explanation** tab provides an explanation if fast file copy cannot be used. Fast file copy is based on the Windows Offloaded Data Transfers \(ODX\) feature, introduced in Windows Server 2012 R2. For information about ODX, see [Windows Offloaded Data Transfers Overview](http://technet.microsoft.com/library/hh831628.aspx).
 
 2.  On the **Configure Settings** page, review the settings for the virtual machine:
 

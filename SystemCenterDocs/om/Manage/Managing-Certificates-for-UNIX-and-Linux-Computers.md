@@ -11,7 +11,7 @@ ms.topic: article
 ms.assetid: 41f74547-a776-414c-80d9-9b8dbb93a1e0
 ---
 # Managing Certificates for UNIX and Linux Computers
-With [!INCLUDE[om12long](../../includes/om12long_md.md)], you can deploy agents to UNIX or Linux computers. Kerberos authentication is not possible. Therefore, certificates are used between the management server and the UNIX or Linux computers. In this scenario, the certificates are self\-signed by the management server. \(Although it is possible to use third\-party certificates, they are not needed.\)
+With System Center Operations Manager, you can deploy agents to UNIX or Linux computers. Kerberos authentication is not possible. Therefore, certificates are used between the management server and the UNIX or Linux computers. In this scenario, the certificates are self\-signed by the management server. \(Although it is possible to use third\-party certificates, they are not needed.\)
 
 There are two methods you can use to deploy agents. You can use the Discovery Wizard or you can manually install an agent. Of these two methods, manually installing an agent is the more secure option. When you use the Discovery Wizard to push agents to UNIX or Linux computers, you trust that the computer that you are deploying to is really the computer that you think it is. When you use the Discovery Wizard to deploy agents, it involves greater risk than when you deploy to computers on the public network or in a perimeter network.
 

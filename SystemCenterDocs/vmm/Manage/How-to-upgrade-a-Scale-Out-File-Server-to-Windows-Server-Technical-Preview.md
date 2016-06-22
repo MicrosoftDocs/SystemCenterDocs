@@ -8,9 +8,9 @@ ms.topic: article
 ms.assetid: 8b2e920b-23fc-4261-a3a6-702bbde7780a
 ---
 # How to upgrade a Scale-Out File Server to Windows Server Technical Preview
-Use the following procedure to upgrade a [!INCLUDE[vmm12short](../../includes/vmm12short_md.md)]\-managed  [!INCLUDE[winblue_server_2](../../includes/winblue_server_2_md.md)] Scale\-Out File Server to [!INCLUDE[winthreshold_server_2](../../includes/winthreshold_server_2_md.md)]. Before you begin, be sure to review the prerequisites listed in [Upgrading Windows Server 2012 R2 host clusters to Windows Server 2016 Technical Preview in VMM](Upgrading-Windows-Server-2012-R2-host-clusters-to-Windows-Server-2016-Technical-Preview-in-VMM.md).
+Use the following procedure to upgrade a VMM\-managed  Windows Server 2012 R2 Scale\-Out File Server to Windows Server Technical Preview. Before you begin, be sure to review the prerequisites listed in [Upgrading Windows Server 2012 R2 host clusters to Windows Server 2016 Technical Preview in VMM](Upgrading-Windows-Server-2012-R2-host-clusters-to-Windows-Server-2016-Technical-Preview-in-VMM.md).
 
-### To upgrade a [!INCLUDE[winblue_server_2](../../includes/winblue_server_2_md.md)] Scale\-Out File Server to [!INCLUDE[winthreshold_server_2](../../includes/winthreshold_server_2_md.md)]
+### To upgrade a Windows Server 2012 R2 Scale\-Out File Server to Windows Server Technical Preview
 
 1.  Open the **Fabric** workspace.
 
@@ -33,7 +33,7 @@ Use the following procedure to upgrade a [!INCLUDE[vmm12short](../../includes/vm
 
     Then click **Next**.
 
-5.  On the **Deployment Customization** page, review the list of nodes to upgrade. The wizard displays the configuration of each node. If the wizard was not able to determine all of the required information for a node, it displays a **Missing settings** alert for that node.  For example, if the nodes were not provisioned by [!INCLUDE[vmm12short](../../includes/vmm12short_md.md)] using its bare\-metal provisioning process, the BMC settings may not be complete. In addition, if you want to change the configuration of one or more nodes, you can do so from this page.
+5.  On the **Deployment Customization** page, review the list of nodes to upgrade. The wizard displays the configuration of each node. If the wizard was not able to determine all of the required information for a node, it displays a **Missing settings** alert for that node.  For example, if the nodes were not provisioned by VMM using its bare\-metal provisioning process, the BMC settings may not be complete. In addition, if you want to change the configuration of one or more nodes, you can do so from this page.
 
     In the list of nodes on the left of the pane, click the node you want to check. Check the following configuration areas:
 
@@ -65,7 +65,7 @@ Use the following procedure to upgrade a [!INCLUDE[vmm12short](../../includes/vm
 
     Depending on your settings, the **Jobs** dialog box might appear. Make sure that all steps in the job reach the **Completed** status, and then close the dialog box.
 
-    If the wizard finishes the node upgrades successfully and all of the Scale\-Out File Server nodes are running [!INCLUDE[winthreshold_server_2](../../includes/winthreshold_server_2_md.md)], the wizard updates the cluster functional level to [!INCLUDE[winthreshold_server_2](../../includes/winthreshold_server_2_md.md)].
+    If the wizard finishes the node upgrades successfully and all of the Scale\-Out File Server nodes are running Windows Server Technical Preview, the wizard updates the cluster functional level to Windows Server Technical Preview.
 
 ## See Also
 [Upgrading Windows Server 2012 R2 Scale-Out File Servers to Windows Server 2016 Technical Preview in VMM](Upgrading-Windows-Server-2012-R2-Scale-Out-File-Servers-to-Windows-Server-2016-Technical-Preview-in-VMM.md)

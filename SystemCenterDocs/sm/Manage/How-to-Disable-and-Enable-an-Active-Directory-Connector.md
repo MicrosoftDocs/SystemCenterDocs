@@ -15,7 +15,7 @@ You can use the following procedure to disable or enable an Active Directory con
 
 ### To disable an Active Directory connector
 
-1.  In the [!INCLUDE[smcons](../../includes/smcons_md.md)], click **Administration**.
+1.  In the Service Manager console, click **Administration**.
 
 2.  In the **Administration** pane, expand **Administration**, and then click **Connectors**.
 
@@ -27,7 +27,7 @@ You can use the following procedure to disable or enable an Active Directory con
 
 ### To enable an Active Directory connector
 
-1.  In the [!INCLUDE[smcons](../../includes/smcons_md.md)], click **Administration**, and then click **Connectors**.
+1.  In the Service Manager console, click **Administration**, and then click **Connectors**.
 
 2.  In the **Connectors** pane, select the Active Directory connector that you want to enable.
 
@@ -37,16 +37,16 @@ You can use the following procedure to disable or enable an Active Directory con
 
 ### To validate the status change of an Active Directory connector
 
-1.  After you enable or disable an Active Directory connector, wait for about 30 seconds. Then, in the [!INCLUDE[smcons](../../includes/smcons_md.md)], click **Administration**, and then click **Connectors**.
+1.  After you enable or disable an Active Directory connector, wait for about 30 seconds. Then, in the Service Manager console, click **Administration**, and then click **Connectors**.
 
 2.  In the middle pane, locate the connector for which you have changed status, and then verify the value in the **Enabled** column.
 
-![](Image/PSSymbol.gif)You can use Windows PowerShell commands to complete these tasks and other related tasks, as follows:
+![](../../media/pssymbol.png)You can use Windows PowerShell commands to complete these tasks and other related tasks, as follows:
 
 -   For information about how to use Windows PowerShell to start a Service Manager connector, see [Start\-SCSMConnector](http://go.microsoft.com/fwlink/p/?LinkID=225378).
 
 -   For information about how to use Windows PowerShell to retrieve connectors that are defined in Service Manager and view their status, see [Get\-SCSMConnector](http://go.microsoft.com/fwlink/p/?LinkID=225320).
 
--   For information about how to use Windows PowerShell to update properties of a [!INCLUDE[smshort](../../includes/smshort_md.md)] connector, see [Update\-SCSMConnector](http://go.microsoft.com/fwlink/p/?LinkID=225382).
+-   For information about how to use Windows PowerShell to update properties of a Service Manager connector, see [Update\-SCSMConnector](http://go.microsoft.com/fwlink/p/?LinkID=225382).
 
 

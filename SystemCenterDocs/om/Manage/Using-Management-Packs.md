@@ -11,13 +11,13 @@ ms.topic: article
 ms.assetid: def60c40-34d4-4077-b76e-9d71d903b0e2
 ---
 # Using Management Packs
-Management packs contain settings that enable agents to monitor a specific service or application in [!INCLUDE[om12long](../../includes/om12long_md.md)]. These settings include discovery information that allows management servers to automatically detect and begin monitoring objects, a knowledge base that contains error and troubleshooting information, rules and monitors that generate alerts, and reports.
+Management packs contain settings that enable agents to monitor a specific service or application in System Center Operations Manager. These settings include discovery information that allows management servers to automatically detect and begin monitoring objects, a knowledge base that contains error and troubleshooting information, rules and monitors that generate alerts, and reports.
 
 Management packs might also contain tasks, diagnostics, and recovery tools and guidance to help fix problems.
 
 ## Using Management Packs topics
 
--   [What Is in an Operations Manager Management Pack?](What-is-in-an-Operations-Manager-Management-Pack-.md)
+-   [What Is in an Operations Manager Management Pack?](https://technet.microsoft.com/library/hh212794%28v=sc.12%29.aspx)
 
     Provides an overview of management pack structure and components.
 
@@ -25,7 +25,7 @@ Management packs might also contain tasks, diagnostics, and recovery tools and g
 
     Provides procedures for downloading and importing management packs.
 
--   [Creating a Management Pack for Overrides](Creating-a-Management-Pack-for-Overrides.md)
+-   [Creating a Management Pack for Overrides](https://technet.microsoft.com/library/hh212841%28v=sc.12%29.aspx)
 
     Explains how to organize and store the overrides you configure.
 

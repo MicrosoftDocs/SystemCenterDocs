@@ -11,7 +11,7 @@ ms.topic: article
 ms.assetid: bb877f14-01d6-4f3c-80b6-4c3468ee1dba
 ---
 # Configuring Agents
-In [!INCLUDE[om12long](../../includes/om12long_md.md)], when you install an agent on a computer, an Operations Manager Agent application is added to Control Panel. You can use the application to change the account that the agent will use when performing actions requested by the management server, to remove a management group from an agent configuration, and to configure the Active Directory integration setting for the agent. To perform these tasks, you must have local Administrator permissions on the computer.
+In System Center Operations Manager, when you install an agent on a computer, an Operations Manager Agent application is added to Control Panel. You can use the application to change the account that the agent will use when performing actions requested by the management server, to remove a management group from an agent configuration, and to configure the Active Directory integration setting for the agent. To perform these tasks, you must have local Administrator permissions on the computer.
 
 > [!NOTE]
 > If you want to automate the process of adding or removing management groups from an agent, you can use the Agent API that allows you to write scripts that can automate the agent configuration process. For more information, see [Using the Operations Manager Agent Configuration Library](http://go.microsoft.com/fwlink/p/?LinkID=229163).

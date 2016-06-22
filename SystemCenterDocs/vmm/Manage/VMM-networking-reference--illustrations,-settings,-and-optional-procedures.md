@@ -11,7 +11,7 @@ ms.topic: article
 ms.assetid: 7a0878f1-5884-409c-ad4f-1ea1dfd763a4
 ---
 # VMM networking reference: illustrations, settings, and optional procedures
-This section addresses several specialised networking topics.  These topics may help you to adapt [!INCLUDE[vmm12short](../../includes/vmm12short_md.md)] to your specific networking environment:
+This section addresses several specialised networking topics.  These topics may help you to adapt VMM to your specific networking environment:
 
 -   [VMM networking reference: creating custom MAC address pools in VMM](VMM-networking-reference--creating-custom-MAC-address-pools-in-VMM.md)
 

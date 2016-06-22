@@ -1,5 +1,5 @@
 ---
-title: What&#39;s New in Service Manager
+title: What's New in Service Manager
 ms.custom: na
 ms.prod: system-center-threshold
 ms.reviewer: na
@@ -10,10 +10,10 @@ ms.tgt_pltfrm: na
 ms.topic: get-started-article
 ms.assetid: 3eeb3265-88e0-47ed-b761-07f4e0634959
 ---
-# What&#39;s New in Service Manager
-[!INCLUDE[scsm_threshold_1](../../includes/scsm_threshold_1_md.md)] is updated for [!INCLUDE[sc_threshold_1](../../includes/sc_threshold_1_md.md)] 5.
+# What's New in Service Manager
+System Center 2016 Technical Preview \- Service Manager is updated for System Center 2016 Technical Preview 5.
 
-For details about known issues that could affect you before you install [!INCLUDE[scsm_threshold_1](../../includes/scsm_threshold_1_md.md)], read the [Release Notes for System Center Technical Preview](../../get-started/Release-Notes-for-System-Center-Technical-Preview-5.md).
+For details about known issues that could affect you before you install System Center 2016 Technical Preview \- Service Manager, read the [Release Notes for System Center Technical Preview](../../get-started/Release-Notes-for-System-Center-Technical-Preview-5.md).
 
 ## Improvements in technical preview 5
 
@@ -375,7 +375,7 @@ As always, we recommend that you perform typical or routine tasks in the test en
 
 **Active Directory connector fixes**. The Active Directory connector was updated to address a problem where the connector  performed a complete sync after any domain controller failover. The issue put an unnecessary load on the workflow server, causing performance to degrade. Normally, the connector only syncs data that was changed since the last run.
 
-**MPSync job updates**. The MPSync job is improved to be more reliable in [!INCLUDE[scsm_threshold_1](../../includes/scsm_threshold_1_md.md)]. Previously, Service Manager could stop responding  when you updated a management pack or if you re\-registered  the data warehouse. This resulted in   reports with data that wasn't  refreshed. Even if you checked the Service Manager console, the jobs listed under Datawarehouse Jobs wouldn't show the correct status. The most common reason for getting into the hung state was due to management pack deployment because the system tried to recreate an existing primary\/foreign key in a table.
+**MPSync job updates**. The MPSync job is improved to be more reliable in System Center 2016 Technical Preview \- Service Manager. Previously, Service Manager could stop responding  when you updated a management pack or if you re\-registered  the data warehouse. This resulted in   reports with data that wasn't  refreshed. Even if you checked the Service Manager console, the jobs listed under Datawarehouse Jobs wouldn't show the correct status. The most common reason for getting into the hung state was due to management pack deployment because the system tried to recreate an existing primary\/foreign key in a table.
 
 **Significant performance improvements**.  Service Manager's Active Directory and System Center Configuration Manager connectors performance was improved. In internal testing at Microsoft, sync time improved by about 50% for the SCCM connector and about 35% for the AD connector. You can read more about performance improvements at the [Service Manager blog](http://blogs.technet.com/b/servicemanager/archive/2015/03/19/sccm-lfx-connector-performance-improvements.aspx).
 

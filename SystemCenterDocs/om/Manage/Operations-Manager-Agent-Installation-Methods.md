@@ -35,6 +35,6 @@ When you install the agent using a manual method, updates to the agent must also
 
 [Install the Agent and Certificate on UNIX and Linux Computers Using the Command Line](Install-the-Agent-and-Certificate-on-UNIX-and-Linux-Computers-Using-the-Command-Line.md)
 
-[Install Agent Using the MOMAgent.msi Setup Wizard_1](Install-Agent-Using-the-MOMAgent.msi-Setup-Wizard_1.md)
+[Install Agent Using the MOMAgent.msi Setup Wizard](Install-Agent-Using-the-MOMAgent.msi-Setup-Wizard.md)
 
 

@@ -11,7 +11,7 @@ ms.topic: article
 ms.assetid: ea68682c-23f5-4fd2-948f-ed9d778e64c5
 ---
 # How to Upgrade a Management Server to System Center 2016 - Operations Manager - Upgrading a Distributed Management Group
-When you upgrade a distributed management group to [!INCLUDE[scom_threshold_1](../../includes/scom_threshold_1_md.md)], you start by upgrading each of the management servers in your management group. There are a number of pre\-upgrade tasks that you must perform first. For more information, see [Pre-Upgrade Tasks When Upgrading to System Center 2016 -  Operations Manager](Pre-Upgrade-Tasks-When-Upgrading-to-System-Center-2016---Operations-Manager.md).
+When you upgrade a distributed management group to System Center 2016 Technical Preview \- Operations Manager, you start by upgrading each of the management servers in your management group. There are a number of pre\-upgrade tasks that you must perform first. For more information, see [Pre-Upgrade Tasks When Upgrading to System Center 2016 -  Operations Manager](Pre-Upgrade-Tasks-When-Upgrading-to-System-Center-2016---Operations-Manager.md).
 
 > [!IMPORTANT]
 > Between the time that you upgrade the management servers and upgrade the agents, you might experience Application Platform Monitoring \(APM\)\-related event log entries on the agent\-managed servers. These event log entries might occur on agent\-managed servers that are not APM\-enabled. These event log entries will be resolved when you complete the upgrade of the agents. You might have to restart the health service after the agent is upgraded in order to clear the events.
@@ -27,9 +27,9 @@ When you upgrade a distributed management group to [!INCLUDE[scom_threshold_1](.
 
 ### To upgrade a management server
 
-1.  Log on to the [!INCLUDE[omblue_2](../../includes/omblue_2_md.md)] management server with an account that is a member of the [!INCLUDE[omblue_2](../../includes/omblue_2_md.md)] Administrators role for your [!INCLUDE[omblue_2](../../includes/omblue_2_md.md)] management group, a member of the SQL Server sysadmin fixed server role, and a local administrator on the computer.
+1.  Log on to the Operations Manager management server with an account that is a member of the Operations Manager Administrators role for your Operations Manager management group, a member of the SQL Server sysadmin fixed server role, and a local administrator on the computer.
 
-2.  From the [!INCLUDE[omblue_2](../../includes/omblue_2_md.md)] media, run **Setup.exe**, and then click **Install**. The **Getting Started** page displays information about which features will be upgraded.
+2.  From the Operations Manager media, run **Setup.exe**, and then click **Install**. The **Getting Started** page displays information about which features will be upgraded.
 
 3.  On the **Getting Started, System Center 2016 Operations Manager Upgrade** page, click **Next** to proceed with the upgrade.
 
@@ -52,7 +52,7 @@ When you upgrade a distributed management group to [!INCLUDE[scom_threshold_1](.
 
 ### To upgrade a management server by using the Command Prompt window
 
-1.  Log on to the management server with an account that is a member of the [!INCLUDE[omblue_2](../../includes/omblue_2_md.md)] Administrators role for your [!INCLUDE[omblue_2](../../includes/omblue_2_md.md)] management group, a member of the SQL Server sysadmin fixed server role, and a local administrator on the computer.
+1.  Log on to the management server with an account that is a member of the Operations Manager Administrators role for your Operations Manager management group, a member of the SQL Server sysadmin fixed server role, and a local administrator on the computer.
 
 2.  Open a Command Prompt window by using the **Run as Administrator** option.
 
