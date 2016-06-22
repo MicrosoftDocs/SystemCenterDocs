@@ -11,7 +11,7 @@ ms.topic: article
 ms.assetid: 71326238-bb75-4f83-a83b-29996ca136f0
 ---
 # Reviewing Availability and Recovery Options for Protecting the VMM Database
-When you are choosing among options for protecting the VMM database, whether in the context of availability or the context of disaster recovery, it is a good idea to review what can happen if the VMM database must be put “back in time” because of a failure situation. This can be necessary with some backup and recovery options and some availability options. For example, using SQL Server Availability Groups in asynchronous-commit availability mode can require that you perform a failover that puts the database “back in time.”
+When you are choosing among options for protecting the VMM database, whether in the context of availability or the context of disaster recovery, it is a good idea to review what can happen if the VMM database must be put “back in time” because of a failure situation. This can be necessary with some backup and recovery options and some availability options. For example, using SQL Server Availability Groups in asynchronous\-commit availability mode can require that you perform a failover that puts the database “back in time.”
 
 ## Database failover or recovery situations that might require restoring “back in time”
 As with any database, if a hardware failure or other problem occurs, recent changes to the VMM database might be lost. Depending on the availability and recovery options in place, the VMM database might have to be failed over, or restored from backup, when the only version of the VMM database that remains available is slightly out of date. This is sometimes called going “back in time” for a database.
@@ -24,7 +24,7 @@ Database administrators study availability and recovery options with careful tho
 
     -   [Availability Modes (AlwaysOn Availability Groups)](http://msdn.microsoft.com/library/ff877931.aspx), especially the [Asynchronous-Commit Availability Mode section](http://msdn.microsoft.com/library/ff877931.aspx#AsyncCommitAvMode) in that topic
 
--   For disaster recovery, it might be necessary to restore from a backup that was made somewhat before the moment of failure. This of course depends on the interval between VMM database backups (including offsite backups). If it is necessary to restore from a backup that was made before the point of failure, the VMM database would be put back in time.
+-   For disaster recovery, it might be necessary to restore from a backup that was made somewhat before the moment of failure. This of course depends on the interval between VMM database backups \(including offsite backups\). If it is necessary to restore from a backup that was made before the point of failure, the VMM database would be put back in time.
 
 ## Information that can be affected if the VMM database must be put back in time
 It can be useful to review the possible effects that can result if the VMM database must be put back in time. Examples include:

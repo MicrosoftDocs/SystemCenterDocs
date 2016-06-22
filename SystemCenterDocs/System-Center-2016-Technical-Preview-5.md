@@ -15,15 +15,15 @@ Welcome to the System Center 2016 Technical Preview. We are releasing this versi
 
 The components updated for this release are:
 
--   System Center 2016 Technical Preview - Data Protection Manager
+-   System Center 2016 Technical Preview \- Data Protection Manager
 
--   System Center 2016 Technical Preview - Operations Manager
+-   System Center 2016 Technical Preview \- Operations Manager
 
--   System Center 2016 Technical Preview - Orchestrator
+-   System Center 2016 Technical Preview \- Orchestrator
 
--   System Center 2016 Technical Preview - Service Manager
+-   System Center 2016 Technical Preview \- Service Manager
 
--   System Center 2016 Technical Preview - Virtual Machine Manager
+-   System Center 2016 Technical Preview \- Virtual Machine Manager
 
 You can download these components from the [TechNet Evaluation Center](http://www.microsoft.com/en-us/evalcenter/evaluate-system-center-technical-preview).
 

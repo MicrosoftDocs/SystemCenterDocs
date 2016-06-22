@@ -8,9 +8,9 @@ ms.topic: article
 ms.assetid: 32532316-0282-491c-b884-6bf5fa787c7c
 ---
 # How to manage storage LUNs for Virtual Fibre Channel with VMM
-For a host computer, VM, or computer service tier to access storage array resources, Logical Units (LUs) and associated Numbers (LUNs) must be created and then registered (unmasked) to the host, VM, or tier.
+For a host computer, VM, or computer service tier to access storage array resources, Logical Units \(LUs\) and associated Numbers \(LUNs\) must be created and then registered \(unmasked\) to the host, VM, or tier.
 
-Use the following procedures to create a new logical unit number (LUN) for a storage array and  register (unmask) a LUN to one or more host HBA initiator ports:
+Use the following procedures to create a new logical unit number \(LUN\) for a storage array and  register \(unmask\) a LUN to one or more host HBA initiator ports:
 
 -   [To create a LUN](#BKMK_CreateLUN)
 
@@ -26,7 +26,7 @@ Use the following procedures to create a new logical unit number (LUN) for a sto
 
 4.  In the **Create Logical Unit** dialog box, do the following:
 
-    1.  In the **Storage pool** box, select a pool from the drop-down list.
+    1.  In the **Storage pool** box, select a pool from the drop\-down list.
 
     2.  In the **Name** box, enter a name.
 
@@ -42,7 +42,7 @@ Use the following procedures to create a new logical unit number (LUN) for a sto
 
 1.  Open the **VMs and Services** workspace.
 
-2.  In the **VMs and Services** pane, right-click the applicable VM and then click **Properties**.
+2.  In the **VMs and Services** pane, right\-click the applicable VM and then click **Properties**.
 
 3.  On the **Properties** page, click the **Storage** tab.
 
@@ -50,13 +50,13 @@ Use the following procedures to create a new logical unit number (LUN) for a sto
 
 5.  On the **Create Logical Unit** page, do the following:
 
-    -   Next to **Storage pool**, select a pool from the drop-down list.
+    -   Next to **Storage pool**, select a pool from the drop\-down list.
 
     -   In **Name**, enter a name for the LUN.
 
     -   In **Size**, enter a storage size in GB.
 
-6.  When complete, click **OK**. The LUN is now registered (unmasked).
+6.  When complete, click **OK**. The LUN is now registered \(unmasked\).
 
 ## See Also
 [Managing Virtual Fibre Channel fabrics with VMM](Managing-Virtual-Fibre-Channel-fabrics-with-VMM.md)

@@ -11,10 +11,10 @@ ms.topic: article
 ms.assetid: ea68682c-23f5-4fd2-948f-ed9d778e64c5
 ---
 # How to Upgrade a Management Server to System Center 2016 - Operations Manager - Upgrading a Distributed Management Group
-When you upgrade a distributed management group to System Center 2016 Technical Preview - Operations Manager, you start by upgrading each of the management servers in your management group. There are a number of pre-upgrade tasks that you must perform first. For more information, see [Pre-Upgrade Tasks When Upgrading to System Center 2016 -  Operations Manager](Pre-Upgrade-Tasks-When-Upgrading-to-System-Center-2016---Operations-Manager.md).
+When you upgrade a distributed management group to System Center 2016 Technical Preview \- Operations Manager, you start by upgrading each of the management servers in your management group. There are a number of pre\-upgrade tasks that you must perform first. For more information, see [Pre-Upgrade Tasks When Upgrading to System Center 2016 -  Operations Manager](Pre-Upgrade-Tasks-When-Upgrading-to-System-Center-2016---Operations-Manager.md).
 
 > [!IMPORTANT]
-> Between the time that you upgrade the management servers and upgrade the agents, you might experience Application Platform Monitoring (APM)-related event log entries on the agent-managed servers. These event log entries might occur on agent-managed servers that are not APM-enabled. These event log entries will be resolved when you complete the upgrade of the agents. You might have to restart the health service after the agent is upgraded in order to clear the events.
+> Between the time that you upgrade the management servers and upgrade the agents, you might experience Application Platform Monitoring \(APM\)\-related event log entries on the agent\-managed servers. These event log entries might occur on agent\-managed servers that are not APM\-enabled. These event log entries will be resolved when you complete the upgrade of the agents. You might have to restart the health service after the agent is upgraded in order to clear the events.
 
 > [!NOTE]
 > Because the ACS Collector server must be on same machine as a management server, we recommend you perform the steps described in [How to Upgrade an ACS Collector to System Center 2016](How-to-Upgrade-an-ACS-Collector-to-System-Center-2016---Operations-Manager.md) along with the upgrade of the management server on which ACS resides.
@@ -35,7 +35,7 @@ When you upgrade a distributed management group to System Center 2016 Technical 
 
 4.  On the **Getting Started, Please read the license terms** page, read the Microsoft Software License Terms, click **I have read, understood, and agree with the terms of the license agreement**, and then click **Next**.
 
-5.  On the **Getting Started, Select installation location** page, accept the default value of **C:\Program Files\Microsoft System Center 2016\Operations Manager**, or type in a new location, or browse to one. Then click **Next**.
+5.  On the **Getting Started, Select installation location** page, accept the default value of **C:\\Program Files\\Microsoft System Center 2016\\Operations Manager**, or type in a new location, or browse to one. Then click **Next**.
 
 6.  On the **Prerequisites** page, review and address any warnings or errors that the Prerequisites checker returns, and then click **Verify prerequisites again** to recheck the system.
 
@@ -67,6 +67,6 @@ When you upgrade a distributed management group to System Center 2016 Technical 
     /DataReaderPassword:<password>
     ```
 
-After you have upgraded all of the management servers in your management group, you should upgrade gateway servers, and then upgrade any stand-alone Operations consoles.
+After you have upgraded all of the management servers in your management group, you should upgrade gateway servers, and then upgrade any stand\-alone Operations consoles.
 
 

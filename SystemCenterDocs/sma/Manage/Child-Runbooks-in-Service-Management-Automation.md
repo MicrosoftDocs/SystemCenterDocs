@@ -20,7 +20,7 @@ When you invoke a runbook inline, it runs in the same job as the parent runbook.
 
 When a runbook is published, any child runbooks that it calls must already have a published version. This is because Automation builds an association with any child runbooks when a runbook is compiled. If they aren’t, the parent runbook will appear to publish properly, it but will generate an exception when it’s started. If this happens, you can republish the parent runbook in order to properly reference the child runbooks. You do not need to republish the parent runbook if any of the child runbooks are changed because the association will have already been created.
 
-The parameters of a child runbook called inline can be any data type including complex objects, and there is no [JSON serialization](Starting-a-Runbook.md#Parameters) as there is when you start the runbook using the Management Portal or with the [Start-SmaRunbook](http://aka.ms/runbookauthor/cmdlet/startsmarunbook) cmdlet.
+The parameters of a child runbook called inline can be any data type including complex objects, and there is no [JSON serialization](Starting-a-Runbook.md#Parameters) as there is when you start the runbook using the Management Portal or with the [Start\-SmaRunbook](http://aka.ms/runbookauthor/cmdlet/startsmarunbook) cmdlet.
 
 ### Runbook types
 
@@ -44,7 +44,7 @@ $output = .\Test-ChildRunbook.ps1 –VM $vm –RepeatCount 2 –Restart $true
 ```
 
 ## <a name="cmdlet"></a>Starting a Child Runbook Using Cmdlet
-You can use the [Start-SMARunbook](http://aka.ms/runbookauthor/cmdlet/startsmarunbook) cmdlet to start a runbook as described in [To start a runbook with Windows PowerShell](assetId:///6ff9b0b3-d210-4463-96a1-cbab272eac4c#PowerShell). When you start a child runbook from a cmdlet, the parent runbook will move to the next line as soon as the job is created for the child runbook. If you need to retrieve any output from the runbook, then you need to access the job using [Get-SMAJobOutput](http://aka.ms/runbookauthor/getsmajoboutput).
+You can use the [Start\-SMARunbook](http://aka.ms/runbookauthor/cmdlet/startsmarunbook) cmdlet to start a runbook as described in [To start a runbook with Windows PowerShell](assetId:///6ff9b0b3-d210-4463-96a1-cbab272eac4c#PowerShell). When you start a child runbook from a cmdlet, the parent runbook will move to the next line as soon as the job is created for the child runbook. If you need to retrieve any output from the runbook, then you need to access the job using [Get\-SMAJobOutput](http://aka.ms/runbookauthor/getsmajoboutput).
 
 The job from a child runbook started with a cmdlet will run in a separate job from the parent runbook. This results in more jobs than invoking the workflow inline, increasing overhead on the worker server, and making them more difficult to track. The parent can start multiple child runbooks though without waiting for each to complete. For that same kind of parallel execution calling the child runbooks inline, the parent runbook would need to use the [parallel keyword](http://aka.ms/runbookauthor/parallel).
 

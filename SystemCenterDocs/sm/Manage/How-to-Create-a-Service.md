@@ -15,7 +15,7 @@ You can use the following procedures to create a service in Service Manager. You
 
 In the first procedure, you manually create a service from configuration items that are already present in Service Manager. This is a simple example and requires little other than a few existing configuration items.
 
-In the second procedure, you view an edit a distributed application that was imported from Operations Manager. The prerequisites for this example can be very complex, depending on the distributed applications that you have created in Operations Manager. The following are high-level steps needed to import distributed applications from Operations Manager into Service Manager as services:
+In the second procedure, you view an edit a distributed application that was imported from Operations Manager. The prerequisites for this example can be very complex, depending on the distributed applications that you have created in Operations Manager. The following are high\-level steps needed to import distributed applications from Operations Manager into Service Manager as services:
 
 1.  In Operations Manager, export each management pack that contains a component for your distributed application. Ensure that you export all management pack dependencies.
 
@@ -26,7 +26,7 @@ In the second procedure, you view an edit a distributed application that was imp
 
 3.  Browse to **Administration** and then **Connectors** and ensure that you refresh the list of management packs. Then, synchronize the Operations Manager configuration items connector. When synchronization is complete, the service components appear in the **Configuration Items** workspace under the business service.
 
-Generally, you should construct service maps that are 3-5 levels deep. Components of a service map should vary from 5-20 at each level. However, the total number of components should not exceed few hundred. This recommendation depends on the complexity of the service map, but keeping the number of components lower that a few hundred still provides reasonable response times, as you navigate throughout service map tree view. While the service map tree view expansion is still in progress, even for larger tree structures, the Service Manager console remains responsive. Service maps are not designed to handle a large number of components; as a result, we recommend that you keep your service map tree structures small.
+Generally, you should construct service maps that are 3\-5 levels deep. Components of a service map should vary from 5\-20 at each level. However, the total number of components should not exceed few hundred. This recommendation depends on the complexity of the service map, but keeping the number of components lower that a few hundred still provides reasonable response times, as you navigate throughout service map tree view. While the service map tree view expansion is still in progress, even for larger tree structures, the Service Manager console remains responsive. Service maps are not designed to handle a large number of components; as a result, we recommend that you keep your service map tree structures small.
 
 ### To manually create a service for an IT messaging application
 
@@ -38,11 +38,11 @@ Generally, you should construct service maps that are 3-5 levels deep. Component
 
 4.  In the form that appears, click the **General** tab. In the **Display Name** box, type the name of the service to create. For example, type **IT Messaging Service**.
 
-5.  In the **Classification** list, select **E-mail and Communication**. In the **Owned By Organization** box, type the person or organization that provides the service. For example, type **Exchange Team**.
+5.  In the **Classification** list, select **E\-mail and Communication**. In the **Owned By Organization** box, type the person or organization that provides the service. For example, type **Exchange Team**.
 
 6.  In the **Priority** list, select **Medium**. In the **Status** list, select **In Service**.
 
-7.  Next to the **Service owner** box, click the ellipsis button (**…**). Select the user who owns the service.
+7.  Next to the **Service owner** box, click the ellipsis button \(**…**\). Select the user who owns the service.
 
 8.  Next to the **Service contacts** box, click **Add** to select and add users who are contacts for the service.
 
@@ -79,7 +79,7 @@ Generally, you should construct service maps that are 3-5 levels deep. Component
 
 4.  In the **Tasks** pane, under the title of the distributed application, click **Edit**.
 
-5.  In the **Service Maps – <DistributedApplicationName\>** dialog box, click the **Service Components** tab to view the items defined in the Operations Manager distributed application. Then, expand the **Service Components** tree three levels.
+5.  In the **Service Maps – \<DistributedApplicationName\>** dialog box, click the **Service Components** tab to view the items defined in the Operations Manager distributed application. Then, expand the **Service Components** tree three levels.
 
 6.  Select any configuration item, and then click **Open** to view or edit its properties.
 
@@ -89,7 +89,7 @@ Generally, you should construct service maps that are 3-5 levels deep. Component
 
 2.  In the **Configuration Items** pane, expand **Configuration Items**, expand **Business Services**, and then click **All Business Services**.
 
-3.  Select the **<DistributedApplicationName\>**. In the **Tasks** pane, under **<DistributedApplicationName\>**, click **Edit**.
+3.  Select the **\<DistributedApplicationName\>**. In the **Tasks** pane, under **\<DistributedApplicationName\>**, click **Edit**.
 
 4.  In the form that appears, click the **Service Dependents** tab. Services that use the new service are listed. For example, **IT Messaging Service** appears in the list.
 

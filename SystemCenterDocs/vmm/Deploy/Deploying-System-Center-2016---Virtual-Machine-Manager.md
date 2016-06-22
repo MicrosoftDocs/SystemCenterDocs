@@ -11,7 +11,7 @@ ms.topic: article
 ms.assetid: 83c3f1df-6eb7-43c0-b9e0-cd5621872474
 ---
 # Deploying System Center 2016 - Virtual Machine Manager
-The following topics provide information to help you deploy and configure Virtual Machine Manager (VMM):
+The following topics provide information to help you deploy and configure Virtual Machine Manager \(VMM\):
 
 -   [Specifying a Service Account for VMM](Specifying-a-Service-Account-for-VMM.md)
 

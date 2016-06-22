@@ -11,10 +11,10 @@ ms.topic: article
 ms.assetid: ab2b063e-6094-4ec5-9ecc-48754c30438c
 ---
 # How to Stop and Start a Data Warehouse Job
-You can stop and start data warehouse jobs that are running in Service Manager. For example, you might have to stop all of the data warehouse jobs that are running to ensure that a security update to the data warehouse management server does not interfere with any jobs that might run. After the server has been updated and restarted, you resume all the data warehouse jobs. You can stop and then start jobs by using the Service Manager console or by using Windows PowerShell cmdlets. In this example, only the extract, transform, and load (ETL) jobs are running.
+You can stop and start data warehouse jobs that are running in Service Manager. For example, you might have to stop all of the data warehouse jobs that are running to ensure that a security update to the data warehouse management server does not interfere with any jobs that might run. After the server has been updated and restarted, you resume all the data warehouse jobs. You can stop and then start jobs by using the Service Manager console or by using Windows PowerShell cmdlets. In this example, only the extract, transform, and load \(ETL\) jobs are running.
 
 > [!NOTE]
-> For information about using the Service Manager Windows PowerShell cmdlets, see [Getting Started with Service Manager Cmdlets for Windows PowerShell](Getting-Started-with-Service-Manager-Cmdlets-for-Windows-PowerShell.md).
+> For information about using the Service Manager Windows PowerShell cmdlets, see [Getting Started with Service Manager Cmdlets for Windows PowerShell](Getting-Started-with-Service-Manager-Cmdlets-for-Windows-PowerShell.md).
 
 ### To stop and start data warehouse jobs using the Service Manager console
 
@@ -28,7 +28,7 @@ You can stop and start data warehouse jobs that are running in Service Manager. 
 
 5.  To resume each job, select a job that is stopped in the **Data Warehouse Jobs** pane, and then click **Resume** in the **Tasks** list.
 
-### To stop all data warehouse jobs using Windows PowerShell cmdlets
+### To stop all data warehouse jobs using Windows PowerShell cmdlets
 
 1.  On the computer that hosts the data warehouse management server, click **Start**, point to **All Programs**, click **Microsoft System Center**, click **Service Manager 2016**, and then click **Service Manager Shell**.
 
@@ -52,7 +52,7 @@ You can stop and start data warehouse jobs that are running in Service Manager. 
 
 3.  Type **exit**, and then press ENTER.
 
-### To start all data warehouse jobs using Windows PowerShell cmdlets
+### To start all data warehouse jobs using Windows PowerShell cmdlets
 
 1.  On the computer that hosts the data warehouse management server, click **Start**, point to **All Programs**, click **Microsoft System Center**, click **Service Manager 2016**, and then click **Service Manager Shell**.
 

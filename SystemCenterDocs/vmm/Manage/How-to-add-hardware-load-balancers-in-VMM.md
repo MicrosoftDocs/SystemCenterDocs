@@ -11,10 +11,10 @@ ms.topic: article
 ms.assetid: 679cc787-b5e9-4fb1-ae6f-91ba20f15124
 ---
 # How to add hardware load balancers in VMM
-You can use the following procedure to discover and add hardware load balancers to Virtual Machine Manager (VMM). By adding load balancers to VMM management and by creating associated virtual IP templates (VIP templates), users who create services can automatically provision load balancers when they create and deploy a service.
+You can use the following procedure to discover and add hardware load balancers to Virtual Machine Manager \(VMM\). By adding load balancers to VMM management and by creating associated virtual IP templates \(VIP templates\), users who create services can automatically provision load balancers when they create and deploy a service.
 
 > [!IMPORTANT]
-> If you want to use Microsoft Network Load Balancing (NLB), you do not have to complete this procedure. When you install VMM, NLB is automatically included as a load balancer. To use NLB, you must create NLB virtual IP templates. For more information, see [How to create VIP templates for Network Load Balancing &#40;NLB&#41; in VMM](How-to-create-VIP-templates-for-Network-Load-Balancing--NLB--in-VMM.md).
+> If you want to use Microsoft Network Load Balancing \(NLB\), you do not have to complete this procedure. When you install VMM, NLB is automatically included as a load balancer. To use NLB, you must create NLB virtual IP templates. For more information, see [How to create VIP templates for Network Load Balancing &#40;NLB&#41; in VMM](How-to-create-VIP-templates-for-Network-Load-Balancing--NLB--in-VMM.md).
 
 **Account requirements** To complete this procedure, you must be a member of the Administrator user role or a Delegated Administrator where the administrative scope includes the host groups to which you want to make the load balancer available.
 
@@ -30,7 +30,7 @@ Before you begin this procedure, make sure that the following prerequisites are 
 -   You must obtain the load balancer provider from the load balancer vendor, and install the provider on the VMM management server. You can use the following links to obtain the load balancer provider from your vendor’s website:
 
     > [!NOTE]
-    > In the following list, all information and content at the listed Web addresses is provided by the owner or the users of each website. Microsoft makes no warranties, express, implied or statutory, as to the information at this website.
+    > In the following list, all information and content at the listed Web addresses is provided by the owner or the users of each website. Microsoft makes no warranties, express, implied or statutory, as to the information at this website.
 
     -   [Download the Brocade ServerIron ADX load balancer provider](http://www.brocade.com/partnerships/technology-alliance-partners/partner-details/microsoft/microsoft-systems-center/index.page)
 
@@ -44,7 +44,7 @@ Before you begin this procedure, make sure that the following prerequisites are 
     > 
     > Also, if you uninstall a VMM management server and then reinstall it, you must also uninstall and then reinstall the load balancer provider.
 
--   Although it is not a required prerequisite, you can create a Run As account before you begin this procedure. (You can also create the account during the procedure.) The associated credentials must have permissions to configure the load balancers that you want to add.
+-   Although it is not a required prerequisite, you can create a Run As account before you begin this procedure. \(You can also create the account during the procedure.\) The associated credentials must have permissions to configure the load balancers that you want to add.
 
     For example, create a Run As account that is named **Load Balancers**.
 
@@ -78,7 +78,7 @@ Before you begin this procedure, make sure that the following prerequisites are 
 
 8.  On the **Address** page, do the following, and then click **Next**:
 
-    1.  Specify the IP address, fully qualified domain name (FQDN), or the NetBIOS names of the load balancers that are of the same manufacturer and model that you specified in the previous step. Separate each load balancer by using a comma or by adding the load balancer on a new line.
+    1.  Specify the IP address, fully qualified domain name \(FQDN\), or the NetBIOS names of the load balancers that are of the same manufacturer and model that you specified in the previous step. Separate each load balancer by using a comma or by adding the load balancer on a new line.
 
     2.  In the **Port number** box, enter the port number that you use to connect to for management of the load balancers.
 
@@ -88,18 +88,18 @@ Before you begin this procedure, make sure that the following prerequisites are 
 
     Setting the load balancer affinity enables you to provide some control over which load balancer will be used for a service. This is based on logical network information. VMM uses this information to determine the valid static IP address pools that are accessible from both the load balancer and the host group that the service tier will be deployed to. Note the following:
 
-    -   When you configure front-end affinity, select the logical networks from which the load balancer can obtain its virtual IP (VIP) address. The VIP address is the IP address that is assigned to a load balancer during the deployment of a load-balanced service tier. Clients can connect to the VIP address through a registered DNS name to access the service.
+    -   When you configure front\-end affinity, select the logical networks from which the load balancer can obtain its virtual IP \(VIP\) address. The VIP address is the IP address that is assigned to a load balancer during the deployment of a load\-balanced service tier. Clients can connect to the VIP address through a registered DNS name to access the service.
 
-        During the deployment of a load-balanced service tier, VMM looks for static IP address pools with available VIP addresses on the logical network that you select for the “Client connection” object when you configure a load balancer in a service template.
+        During the deployment of a load\-balanced service tier, VMM looks for static IP address pools with available VIP addresses on the logical network that you select for the “Client connection” object when you configure a load balancer in a service template.
 
-        For the load balancer to be selected during placement, when you configure the load balancer “Client connection” object, the logical network that you select must be in the list of logical networks that are selected for front-end affinity.
+        For the load balancer to be selected during placement, when you configure the load balancer “Client connection” object, the logical network that you select must be in the list of logical networks that are selected for front\-end affinity.
 
         > [!IMPORTANT]
-        > For front-end affinity, make sure that you select one or more logical networks where the associated network site with a reserved VIP address range is available to a host group or parent host group that is also available to the hardware load balancer.
+        > For front\-end affinity, make sure that you select one or more logical networks where the associated network site with a reserved VIP address range is available to a host group or parent host group that is also available to the hardware load balancer.
 
-    -   When you configure back-end affinity, select the logical networks to which you want to make the load balancer available for connections from the virtual machines that make up a service tier.
+    -   When you configure back\-end affinity, select the logical networks to which you want to make the load balancer available for connections from the virtual machines that make up a service tier.
 
-        For the load balancer to be selected during placement, when you configure the load balancer “Server connection” object in a service template, the logical network that the NIC object is connected to must be in the list of logical networks that are selected for back-end affinity.
+        For the load balancer to be selected during placement, when you configure the load balancer “Server connection” object in a service template, the logical network that the NIC object is connected to must be in the list of logical networks that are selected for back\-end affinity.
 
 10. On the **Provider** page, do the following, and then click **Next**:
 

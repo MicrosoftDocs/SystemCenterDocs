@@ -8,7 +8,7 @@ ms.topic: article
 ms.assetid: a515169d-50f3-4b3f-add4-9dd7354e6208
 ---
 # How to create a host group structure in VMM
-You can use the following procedures to create a host group structure in Virtual Machine Manager (VMM) that aligns to your organizational needs.
+You can use the following procedures to create a host group structure in Virtual Machine Manager \(VMM\) that aligns to your organizational needs.
 
 ### To create a host group structure
 
@@ -16,7 +16,7 @@ You can use the following procedures to create a host group structure in Virtual
 
 2.  In the **Fabric** pane, expand **Servers**, and then do either of the following:
 
-    -   Right-click **All Hosts**, and then click **Create Host Group**.
+    -   Right\-click **All Hosts**, and then click **Create Host Group**.
 
     -   Click **All Hosts**. On the **Folder** tab, in the **Create** group, click **Create Host Group**.
 
@@ -29,7 +29,7 @@ You can use the following procedures to create a host group structure in Virtual
     > [!NOTE]
     > To rename a host group, do either of the following:
     > 
-    > -   Right-click the host group, and then click **Rename**.
+    > -   Right\-click the host group, and then click **Rename**.
     > -   On the **General** tab of the host group properties, enter the host group name in the **Name** box.
 
 4.  Repeat the steps in this procedure to create the rest of the host group structure.
@@ -37,26 +37,26 @@ You can use the following procedures to create a host group structure in Virtual
     For example, create the following host group structure. This host group structure is used in the examples throughout the documentation and is used to help demonstrate the concepts. You can adapt the examples to your test environment.
 
     > [!TIP]
-    > To create a host group at a specific location in the tree, right-click the desired parent node, and then click **Create Host Group**.
+    > To create a host group at a specific location in the tree, right\-click the desired parent node, and then click **Create Host Group**.
 
     **Seattle**
 
-    **Tier0_SEA**
+    **Tier0\_SEA**
 
-    **Tier1_SEA**
+    **Tier1\_SEA**
 
-    **Tier2_SEA**
+    **Tier2\_SEA**
 
     **New York**
 
-    **Tier0_NY**
+    **Tier0\_NY**
 
-    **Tier1_NY**
+    **Tier1\_NY**
 
-    **Tier2_NY**
+    **Tier2\_NY**
 
     > [!NOTE]
-    > This example host group structure is based on location and the capabilities of the hardware, including the level of redundancy. For example, in Tier0 you may have clustered hosts, the fastest and most reliable storage with replication, load balancing and the most network throughput. Tier1 may have clustered hosts, but lower speed storage that is not replicated. Tier2 may consist of stand-alone hosts with the lowest speed storage, and possibly less bandwidth. This is just one example of a host group structure. In your organization you may use a different model, such as one that is based on applications or server role, type of hypervisor, business unit or delegation model.
+    > This example host group structure is based on location and the capabilities of the hardware, including the level of redundancy. For example, in Tier0 you may have clustered hosts, the fastest and most reliable storage with replication, load balancing and the most network throughput. Tier1 may have clustered hosts, but lower speed storage that is not replicated. Tier2 may consist of stand\-alone hosts with the lowest speed storage, and possibly less bandwidth. This is just one example of a host group structure. In your organization you may use a different model, such as one that is based on applications or server role, type of hypervisor, business unit or delegation model.
 
 ### To move a host group to another location
 
@@ -68,7 +68,7 @@ You can use the following procedures to create a host group structure in Virtual
 
     -   Drag the host group that you want to move to its new location in the tree.
 
-    -   Right-click the host group that you want to move, and then click **Move**. In the **Parent host group** list, click a parent host group, and then click **OK**.
+    -   Right\-click the host group that you want to move, and then click **Move**. In the **Parent host group** list, click a parent host group, and then click **OK**.
 
     -   Click the host group that you want to move. On the **Folder** tab, in the **Actions** group, click **Move**. In the **Parent host group** list, click a parent host group, and then click **OK**.
 

@@ -16,7 +16,7 @@ Use the following procedures to create two change request templates and then val
 Change request templates store commonly used settings and apply the information to new change requests. For example, you can create a change request template that includes a number of activities. However, activities that you want to include in a change request template must have been previously created as activity templates.
 
 > [!NOTE]
-> When you create a change request template, do not create links to configuration items or work items, and do not enter any user information. If you create a template with these objects, you cannot remove them, and you will have to re-create the template.
+> When you create a change request template, do not create links to configuration items or work items, and do not enter any user information. If you create a template with these objects, you cannot remove them, and you will have to re\-create the template.
 
 ### To create a messaging change request template
 
@@ -58,7 +58,7 @@ Change request templates store commonly used settings and apply the information 
 
 17. In each open form or dialog box, click **OK**.
 
-### To create a priority-modifying template
+### To create a priority\-modifying template
 
 1.  In the Service Manager console, click **Library**.
 

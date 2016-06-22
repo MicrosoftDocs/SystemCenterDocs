@@ -11,7 +11,7 @@ ms.topic: article
 ms.assetid: 41f74547-a776-414c-80d9-9b8dbb93a1e0
 ---
 # Managing Certificates for UNIX and Linux Computers
-With System Center Operations Manager, you can deploy agents to UNIX or Linux computers. Kerberos authentication is not possible. Therefore, certificates are used between the management server and the UNIX or Linux computers. In this scenario, the certificates are self-signed by the management server. (Although it is possible to use third-party certificates, they are not needed.)
+With System Center Operations Manager, you can deploy agents to UNIX or Linux computers. Kerberos authentication is not possible. Therefore, certificates are used between the management server and the UNIX or Linux computers. In this scenario, the certificates are self\-signed by the management server. \(Although it is possible to use third\-party certificates, they are not needed.\)
 
 There are two methods you can use to deploy agents. You can use the Discovery Wizard or you can manually install an agent. Of these two methods, manually installing an agent is the more secure option. When you use the Discovery Wizard to push agents to UNIX or Linux computers, you trust that the computer that you are deploying to is really the computer that you think it is. When you use the Discovery Wizard to deploy agents, it involves greater risk than when you deploy to computers on the public network or in a perimeter network.
 
@@ -25,12 +25,12 @@ When you use the Discovery Wizard to deploy an agent, the Discovery Wizard perfo
 
 When you manually deploy an agent, you perform the first two steps that are typically handled by the Discovery Wizard: deployment and certificate signing. Then, you use the Discovery Wizard to add the computer to the Operations Manager database.
 
-If there are existing certificates on the system, they are reused during agent installation. New certificates are not created. Certificates are not automatically deleted when you uninstall an agent. You must manually delete the certificates that are listed in the /etc/opt/microsoft/scx/ssl folder. To regenerate the certificates during instalation, you must remove this folder before agent installation.
+If there are existing certificates on the system, they are reused during agent installation. New certificates are not created. Certificates are not automatically deleted when you uninstall an agent. You must manually delete the certificates that are listed in the \/etc\/opt\/microsoft\/scx\/ssl folder. To regenerate the certificates during instalation, you must remove this folder before agent installation.
 
 For instructions on how to manually deploy an agent, see [Install Agent and Certificate on UNIX and Linux Computers Using the Command Line](Install-Agent-and-Certificate-on-UNIX-and-Linux-Computers-Using-the-Command-Line.md), and then use the following procedure to install the certificates.
 
 ## UNIX and Linux Firewall Considerations
-If you have a firewall on your UNIX or Linux computer, you must open port 1270 (inbound). This port number is not configurable. If you are deploying agents in a low security environment and you use the Discovery Wizard to deploy and sign the certificates, you must open the SSH port. The SSH port number is configurable. By default, SSH uses inbound TCP port 22.
+If you have a firewall on your UNIX or Linux computer, you must open port 1270 \(inbound\). This port number is not configurable. If you are deploying agents in a low security environment and you use the Discovery Wizard to deploy and sign the certificates, you must open the SSH port. The SSH port number is configurable. By default, SSH uses inbound TCP port 22.
 
 ## See Also
 [Operations Manager Agent Installation Methods](Operations-Manager-Agent-Installation-Methods.md)

@@ -11,7 +11,7 @@ ms.topic: article
 ms.assetid: 7dd194e2-6ad7-4cea-9221-3eb3f028aa26
 ---
 # How to Install a VMM Management Server
-You can use the following procedure to install a Virtual Machine Manager (VMM) management server. For similar topics, see [Installing VMM from a Command Prompt](Installing-VMM-from-a-Command-Prompt.md) and [Installing a Highly Available VMM Management Server](Installing-a-Highly-Available-VMM-Management-Server.md).
+You can use the following procedure to install a Virtual Machine Manager \(VMM\) management server. For similar topics, see [Installing VMM from a Command Prompt](Installing-VMM-from-a-Command-Prompt.md) and [Installing a Highly Available VMM Management Server](Installing-a-Highly-Available-VMM-Management-Server.md).
 
 Before you begin the installation of the VMM management server, review the system requirements. As part of this, ensure that you have a computer that is running a supported version of Microsoft SQL Server software. Setup will not automatically install an Express edition of SQL Server. For information, see:
 
@@ -19,13 +19,13 @@ Before you begin the installation of the VMM management server, review the syste
 
 -   [Preparing your environment for System Center 2016 - Virtual Machine Manager](Preparing-your-environment-for-System-Center-2016---Virtual-Machine-Manager.md)
 
-In some organizations it might be necessary to pre-create the VMM database before installing VMM. For more information, see [Pre-Creating the VMM Database](Pre-Creating-the-VMM-Database.md).
+In some organizations it might be necessary to pre\-create the VMM database before installing VMM. For more information, see [Pre-Creating the VMM Database](Pre-Creating-the-VMM-Database.md).
 
-To complete the installation procedures, you need, at a minimum, membership in the local Administrators group (or equivalent) on the computer that you are configuring.
+To complete the installation procedures, you need, at a minimum, membership in the local Administrators group \(or equivalent\) on the computer that you are configuring.
 
 ### To install a VMM management server
 
-1.  To start the Virtual Machine Manager Setup wizard, on your installation media, right-click **setup.exe**, and then click **Run as administrator**.
+1.  To start the Virtual Machine Manager Setup wizard, on your installation media, right\-click **setup.exe**, and then click **Run as administrator**.
 
     > [!NOTE]
     > Before you begin the installation of VMM, close any open programs and ensure that no restarts are pending on the computer. For example, if you have installed a server role by using Server Manager or have applied a security update, you may need to restart the computer and then log on to the computer by using the same user account to finish the installation of the server role or the security update.
@@ -70,7 +70,7 @@ To complete the installation procedures, you need, at a minimum, membership in t
 
     -   If your VMM database is not clustered, or is clustered but does not use AlwaysOn Availability Groups, complete the following steps:
 
-        1.  On the **Database configuration** page, specify the name of the computer that is running SQL Server. If you are installing the VMM management server on the same computer that is running SQL Server, then in the **Server name** box, either type the name of the computer (for example, **vmmserver01**) or type **localhost**. If the SQL Server is in a cluster, type the cluster name.
+        1.  On the **Database configuration** page, specify the name of the computer that is running SQL Server. If you are installing the VMM management server on the same computer that is running SQL Server, then in the **Server name** box, either type the name of the computer \(for example, **vmmserver01**\) or type **localhost**. If the SQL Server is in a cluster, type the cluster name.
 
         2.  Ensure that the port on the computer that is running SQL Server is open. Then, specify the port that you want to use to communicate with the computer that is running SQL Server. Do not do this unless all of the following conditions are true:
 
@@ -90,9 +90,9 @@ To complete the installation procedures, you need, at a minimum, membership in t
 
 11. On the **Configure service account and distributed key management** page, specify the account that the VMM service will use. Realize that you cannot change the identity of the VMM service account after installation. For more information about which type of account to use, see [Specifying a Service Account for VMM](Specifying-a-Service-Account-for-VMM.md).
 
-    Under **Distributed Key Management**, select whether to store encryption keys in Active Directory Domain Services (AD DS). For more information about key management, see [Configuring Distributed Key Management in VMM](Configuring-Distributed-Key-Management-in-VMM.md).
+    Under **Distributed Key Management**, select whether to store encryption keys in Active Directory Domain Services \(AD DS\). For more information about key management, see [Configuring Distributed Key Management in VMM](Configuring-Distributed-Key-Management-in-VMM.md).
 
-    After you select an account and, if necessary, enter AD DS information, click **Next**.
+    After you select an account and, if necessary, enter AD DS information, click **Next**.
 
 12. On the **Port configuration** page, use the default port number for each feature or provide a unique port number that is appropriate in your environment, and then click **Next**.
 
@@ -102,7 +102,7 @@ To complete the installation procedures, you need, at a minimum, membership in t
 13. On the **Library configuration** page, select whether to create a new library share or to use an existing library share on the computer.
 
     > [!NOTE]
-    > The default library share that VMM creates is named MSSCVMMLibrary, and the folder is located at **%SYSTEMDRIVE%\ProgramData\Virtual Machine Manager Library Files**. **ProgramData** is a hidden folder, and you cannot remove it.
+    > The default library share that VMM creates is named MSSCVMMLibrary, and the folder is located at **%SYSTEMDRIVE%\\ProgramData\\Virtual Machine Manager Library Files**. **ProgramData** is a hidden folder, and you cannot remove it.
     > 
     > After the VMM management server is installed, you can add library shares and library servers by using the VMM console or by using the VMM command shell.
 
@@ -124,10 +124,10 @@ During Setup, VMM enables the following firewall rules. These rules remain in ef
 
 -   Windows Remote Management
 
--   Windows Standards-Based Storage Management
+-   Windows Standards\-Based Storage Management
 
 > [!NOTE]
-> If Setup does not finish successfully, consult the log files in the **%SYSTEMDRIVE%\ProgramData\VMMLogs** folder. **ProgramData** is a hidden folder.
+> If Setup does not finish successfully, consult the log files in the **%SYSTEMDRIVE%\\ProgramData\\VMMLogs** folder. **ProgramData** is a hidden folder.
 
 ### To configure SQL Server to use AlwaysOn Availability Groups
 
@@ -143,10 +143,10 @@ During Setup, VMM enables the following firewall rules. These rules remain in ef
 
     -   The login is configured with the credentials of the database owner.
 
-4.  Initiate a failover to the secondary SQL Server node, and verify that you can restart the VMM service (scvmmservice).
+4.  Initiate a failover to the secondary SQL Server node, and verify that you can restart the VMM service \(scvmmservice\).
 
 5.  Repeat the previous two steps for every secondary SQL Server node in the cluster.
 
-6.  If this is a high-availability VMM setup, continue to install other high-availability VMM nodes.
+6.  If this is a high\-availability VMM setup, continue to install other high\-availability VMM nodes.
 
 

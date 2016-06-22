@@ -8,7 +8,7 @@ ms.topic: article
 ms.assetid: 251e813d-6d69-4b6b-b25b-0a3fa0e70c60
 ---
 # How to create a Delegated Administrator user role in VMM
-Use this procedure to create a Delegated Administrator user role in Virtual Machine Manager (VMM).
+Use this procedure to create a Delegated Administrator user role in Virtual Machine Manager \(VMM\).
 
 **Account requirements** Administrators and delegated administrators can create a Delegated Administrator user role. Delegated administrators can create Delegated Administrator user roles that include a subset of their scope, library servers, and Run As accounts.
 

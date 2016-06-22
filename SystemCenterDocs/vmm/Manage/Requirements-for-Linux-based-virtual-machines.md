@@ -8,9 +8,9 @@ ms.topic: article
 ms.assetid: c91336a5-147e-4c9b-9bbc-a0468f9ed945
 ---
 # Requirements for Linux-based virtual machines
-Virtual Machine Manager (VMM) supports virtual machines that contain Linux as the guest operating system. There are several requirements when creating such virtual machines, as follows:
+Virtual Machine Manager \(VMM\) supports virtual machines that contain Linux as the guest operating system. There are several requirements when creating such virtual machines, as follows:
 
--   Linux Integration Services (LIS) must be installed on the virtual machine. By default, LIS is included with some distributions of Linux. If LIS is not included in the distribution of Linux that you are using for the virtual machine, then you must manually install it. For more information about installing LIS for Hyper-V, see [Linux and FreeBSD Virtual Machines on Hyper-V](http://technet.microsoft.com/library/dn531030.aspx).
+-   Linux Integration Services \(LIS\) must be installed on the virtual machine. By default, LIS is included with some distributions of Linux. If LIS is not included in the distribution of Linux that you are using for the virtual machine, then you must manually install it. For more information about installing LIS for Hyper\-V, see [Linux and FreeBSD Virtual Machines on Hyper-V](http://technet.microsoft.com/library/dn531030.aspx).
 
 -   The VMM guest agent for Linux must be installed on the virtual machine. It is required for service template integration, and it allows you to modify properties on the Linux computer such as the host name. For information about installation, see [How to install the VMM agent for Linux](How-to-install-the-VMM-agent-for-Linux.md).
 

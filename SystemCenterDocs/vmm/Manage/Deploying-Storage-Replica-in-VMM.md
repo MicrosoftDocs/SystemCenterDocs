@@ -43,20 +43,20 @@ In System Center 2016 Technical Preview 5 you can use Storage Replica to replica
 
 ## Deployment steps
 
-1.  **Identify storage**: Identify the source and destination storage you want to use. 
-2.  **Discover and classify**: If your storage isn’t currently in the VMM fabric, you’ll need to discover it with VMM. Both the source and desintation storage must be managed by the same VMM server. After discovery you’ll create a storage pool for it, and a storage classification for it. [Learn more](https://technet.microsoft.com/library/gg610600.aspx).
-3.  **Pair**: Pair the source and destination storage array.
-4.  **Provision**: After your storage is paired you’ll need to provision identical data and log volumes from the source and destination storage pools created on the respective storage arrays. In addition to provisioning a volume for data that will be replicated, you’ll also need to provision a volume for replication transaction logs. As data is updated on source storage, the transaction log is appended and delta changes are synchronized (using synchronous replication) with destination storage. 
-5.  **Create replication groups**: After the volumes are in place you create replication groups. Replication groups are logical groups containing multiple volumes. The replication groups need to be identical, containing the data and log volumes for the source and destination sites respectively.
-6.  **Enable replication**: Now you can enable replication between the source and destination replication groups.
-7.  **Refresh**: To finalize creation of replication groups and to trigger the initial data replication, you need to refresh the primary and secondary storage provider. Data replicates to destination storage.
-8.  **Verify status**: Now you can check the status of the primary replication group. It should be in the Replicating state. 
-9.  **Add VMs**: When delta replication is up and running you can add VMs that use storage contained in the replication group. When you add the VMs they’ll be detected and will begin replicating automatically. 
-10. **Run failover**: After replication is in a Synchronizing state, you can run a failover to check it’s working as expected. There isn’t a test failover mechanism right now, so you’ll run a manual failover in response to planned or unplanned outages. After failover you can delete the VM on the source site (if it still exists) and create a VM on the destination site using the replicated data.
-11. **Run failback**: After failover is complete and replica VMs are up and running, you can fail back as you need to. Note that:
+1.	**Identify storage**: Identify the source and destination storage you want to use. 
+2.	**Discover and classify**: If your storage isn’t currently in the VMM fabric, you’ll need to discover it with VMM. Both the source and desintation storage must be managed by the same VMM server. After discovery you’ll create a storage pool for it, and a storage classification for it. [Learn more](https://technet.microsoft.com/library/gg610600.aspx).
+3.	**Pair**: Pair the source and destination storage array.
+4.	**Provision**: After your storage is paired you’ll need to provision identical data and log volumes from the source and destination storage pools created on the respective storage arrays. In addition to provisioning a volume for data that will be replicated, you’ll also need to provision a volume for replication transaction logs. As data is updated on source storage, the transaction log is appended and delta changes are synchronized (using synchronous replication) with destination storage. 
+5.	**Create replication groups**: After the volumes are in place you create replication groups. Replication groups are logical groups containing multiple volumes. The replication groups need to be identical, containing the data and log volumes for the source and destination sites respectively.
+6.	**Enable replication**: Now you can enable replication between the source and destination replication groups.
+7.	**Refresh**: To finalize creation of replication groups and to trigger the initial data replication, you need to refresh the primary and secondary storage provider. Data replicates to destination storage.
+8.	**Verify status**: Now you can check the status of the primary replication group. It should be in the Replicating state. 
+9.	**Add VMs**: When delta replication is up and running you can add VMs that use storage contained in the replication group. When you add the VMs they’ll be detected and will begin replicating automatically. 
+10.	**Run failover**: After replication is in a Synchronizing state, you can run a failover to check it’s working as expected. There isn’t a test failover mechanism right now, so you’ll run a manual failover in response to planned or unplanned outages. After failover you can delete the VM on the source site (if it still exists) and create a VM on the destination site using the replicated data.
+11.	**Run failback**: After failover is complete and replica VMs are up and running, you can fail back as you need to. Note that:
 
-    - If you’ve run an unplanned failover and your source location isn’t available, you’ll run a failover to failback from the secondary to primary location, and then create the VM in the primary location.
-    - If you’ve run a planned failover and the source VM is still available, you’ll need to stop replication, remove the source VM, create the VM in the secondary location, and then restart replication. Then at the primary site you can create the VM with the same settings as the original VM.
+	- If you’ve run an unplanned failover and your source location isn’t available, you’ll run a failover to failback from the secondary to primary location, and then create the VM in the primary location.
+	- If you’ve run a planned failover and the source VM is still available, you’ll need to stop replication, remove the source VM, create the VM in the secondary location, and then restart replication. Then at the primary site you can create the VM with the same settings as the original VM.
 
 
 ## Retrieve PowerShell objects
@@ -64,11 +64,11 @@ In System Center 2016 Technical Preview 5 you can use Storage Replica to replica
 1. Before you start retrieve the name of the PowerShell objects you’re going to use.
 2. Get the name of the primary storage array and assign to variable.
 
-        $PriArray = Get-SCStorageArray - Name $PriArrayName
+	    $PriArray = Get-SCStorageArray - Name $PriArrayName
 
 3. Get the name of the secondary storage array and assign to variable.
 
-        RecArray = Get-SCStorageArray - Name $RecArrayName
+	    RecArray = Get-SCStorageArray - Name $RecArrayName
 
 4. Get the name of the primary storage pool and assign to variable.
 
@@ -78,14 +78,14 @@ In System Center 2016 Technical Preview 5 you can use Storage Replica to replica
 
 5. Get the name of the secondary storage pool and assign to variable.
 
-        $ $PriPoolName $RecPool = Get-SCStoragePool -Name $
+	    $ $PriPoolName $RecPool = Get-SCStoragePool -Name $
 
-      
+	  
 ## Pair the storage arrays
 
 Pair the primary and secondary storage arrays using the variables for the storage array names.
 
-        Set-SCStorageArray -StorageArray $PriArray -PeerStorageArrayName $RecArray.name
+	    Set-SCStorageArray -StorageArray $PriArray -PeerStorageArrayName $RecArray.name
 
 
 ## Provision LUNs and create the storage groups

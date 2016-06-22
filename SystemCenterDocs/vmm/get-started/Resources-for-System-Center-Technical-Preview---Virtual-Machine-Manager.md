@@ -11,13 +11,13 @@ ms.topic: get-started-article
 ms.assetid: 7e1c809e-34c5-46ea-b056-7376befd6b63
 ---
 # Resources for System Center Technical Preview - Virtual Machine Manager
-The following resources are available for Virtual Machine Manager (VMM) in System Center 2016 Technical Preview.
+The following resources are available for Virtual Machine Manager \(VMM\) in System Center 2016 Technical Preview.
 
 ## Evaluation software for VMM in System Center 2016 Technical Preview
 
 |Name|Description|Location|
 |--------|---------------|------------|
-|Evaluation VHD for VMM in System Center 2016 Technical Preview|Provides a downloadable pre-configured virtual hard disk (VHD) to create a virtual machine that runs an evaluation version of VMM in System Center 2016 Technical Preview.<br /><br />Intended for evaluation and deployment planning purposes only.|[Microsoft Technet Evaluation Center](https://www.microsoft.com/en-us/evalcenter/evaluate-system-center-technical-preview)|
+|Evaluation VHD for VMM in System Center 2016 Technical Preview|Provides a downloadable pre\-configured virtual hard disk \(VHD\) to create a virtual machine that runs an evaluation version of VMM in System Center 2016 Technical Preview.<br /><br />Intended for evaluation and deployment planning purposes only.|[Microsoft Technet Evaluation Center](https://www.microsoft.com/en-us/evalcenter/evaluate-system-center-technical-preview)|
 
 ## Documentation for VMM
 The following documentation is available for VMM:

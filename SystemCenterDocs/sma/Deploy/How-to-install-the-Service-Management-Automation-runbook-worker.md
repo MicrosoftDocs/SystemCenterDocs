@@ -11,9 +11,9 @@ ms.topic: article
 ms.assetid: 3586c160-4e4d-4a08-9e30-13cdd49e8a01
 ---
 # How to install the Service Management Automation runbook worker
-The Service Management Automation web service endpoint enables you to automate IT administration and business processes by using Windows PowerShell workflow-based runbooks in Windows Azure Pack for Windows Server.
+The Service Management Automation web service endpoint enables you to automate IT administration and business processes by using Windows PowerShell workflow\-based runbooks in Windows Azure Pack for Windows Server.
 
-Use the following information to install and configure the Automation runbook worker in Windows Azure Pack. Before installing or uninstalling an Automation runbook worker, ensure that you have stopped the Runbook Worker service (rbsvc) on the computer where the runbook worker is installed. For instructions on how to avoid any data loss when removing a runbook worker, including Windows PowerShell cmdlets and scripting help for this operation, see the [overview of runbook worker deployments](http://go.microsoft.com/fwlink/?LinkId=301478).
+Use the following information to install and configure the Automation runbook worker in Windows Azure Pack. Before installing or uninstalling an Automation runbook worker, ensure that you have stopped the Runbook Worker service \(rbsvc\) on the computer where the runbook worker is installed. For instructions on how to avoid any data loss when removing a runbook worker, including Windows PowerShell cmdlets and scripting help for this operation, see the [overview of runbook worker deployments](http://go.microsoft.com/fwlink/?LinkId=301478).
 
 You can also install the Service Management Automation components by using an unattended installation. For more information, see [Install Service Management Automation from a Command Prompt](http://go.microsoft.com/fwlink/p/?LinkId=313193).
 

@@ -21,7 +21,7 @@ Both the computer  running the Service Manager console and the user you want to 
 
 2.  Click **Send Mail**.
 
-3.  Your email client program opens and adds the user’s name to the **To** box. Compose the e-mail message, and then send it.
+3.  Your email client program opens and adds the user’s name to the **To** box. Compose the e\-mail message, and then send it.
 
 #### To contact a user by instant message
 

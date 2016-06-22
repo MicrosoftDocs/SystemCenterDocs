@@ -11,11 +11,11 @@ ms.topic: article
 ms.assetid: 98117114-70f8-49ad-a424-8be5561b822e
 ---
 # How to Upgrade an Operations Console to System Center 2016 - Operations Manager
-This procedure upgrades a stand-alone Operations console to System Center 2016 Technical Preview - Operations Manager. Perform this procedure locally on the computer that has a stand-alone Operations console installed. You do not have to perform this procedure to upgrade Operations consoles that are installed locally on a management server.
+This procedure upgrades a stand\-alone Operations console to System Center 2016 Technical Preview \- Operations Manager. Perform this procedure locally on the computer that has a stand\-alone Operations console installed. You do not have to perform this procedure to upgrade Operations consoles that are installed locally on a management server.
 
 Before you begin the upgrade process, make sure that your server meets the minimum supported configurations. For more information, see [System Requirements: System Center 2016 - Operations Manager](../../system-requirements/System-Requirements-for-System-Center-Technical-Preview.md).
 
-### To upgrade a stand-alone Operations console
+### To upgrade a stand\-alone Operations console
 
 1.  Log on to the computer that hosts the Operations console with an account that is a member of the Operations Manager Administrators role in your Operations Manager management group.
 
@@ -23,7 +23,7 @@ Before you begin the upgrade process, make sure that your server meets the minim
 
 3.  On the **Getting Started**, **System Center 2016 Operations Manager Upgrade** page, click **Next**.
 
-4.  On the **Getting Started**, **Select installation location** page, accept the default value of **C:\Program Files\Microsoft System Center 2016\Operations Manager**, or type in a new location or browse to one. Then click **Next**.
+4.  On the **Getting Started**, **Select installation location** page, accept the default value of **C:\\Program Files\\Microsoft System Center 2016\\Operations Manager**, or type in a new location or browse to one. Then click **Next**.
 
 5.  On the **Prerequisites** page, review and address any warnings or errors that are returned by the Prerequisites checker, and then click **Verify Prerequisites Again** to recheck the system.
 
@@ -33,7 +33,7 @@ Before you begin the upgrade process, make sure that your server meets the minim
 
 8.  When the upgrade is finished, the **Upgrade complete** page appears. Click **Close**.
 
-### To upgrade a stand-alone Operations console by using the Command Prompt window
+### To upgrade a stand\-alone Operations console by using the Command Prompt window
 
 1.  Log on to the computer that hosts the Operations console with an account that is a member of the Operations Manager Administrators role for your Operations Manager management group.
 
@@ -54,8 +54,8 @@ Before you begin the upgrade process, make sure that your server meets the minim
     > [!CAUTION]
     > Incorrectly editing the registry can severely damage your system. Before you make changes to the registry, you should back up any valued data that is on the computer.
 
-3.  Browse to the **HKey_Local_Machine\Software\Microsoft\Microsoft Operations Manager\3.0\Setup** key. If the value of the **UIVersion** entry is 7.2.11469.0, the Operations console was upgraded successfully.
+3.  Browse to the **HKey\_Local\_Machine\\Software\\Microsoft\\Microsoft Operations Manager\\3.0\\Setup** key. If the value of the **UIVersion** entry is 7.2.11469.0, the Operations console was upgraded successfully.
 
-After you have upgraded all of the stand-alone operations consoles in your management group, you can upgrade the agents.  See [How to Upgrade an Agent to System Center 2016 -   Operations Manager](How-to-Upgrade-an-Agent-to-System-Center-2016---Operations-Manager.md) for more information.
+After you have upgraded all of the stand\-alone operations consoles in your management group, you can upgrade the agents.  See [How to Upgrade an Agent to System Center 2016 -   Operations Manager](How-to-Upgrade-an-Agent-to-System-Center-2016---Operations-Manager.md) for more information.
 
 

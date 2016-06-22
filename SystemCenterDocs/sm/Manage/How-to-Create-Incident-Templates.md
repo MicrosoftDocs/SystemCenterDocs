@@ -11,9 +11,9 @@ ms.topic: article
 ms.assetid: 5563fbd2-40ee-4b57-b3c9-22c88759a6a1
 ---
 # How to Create Incident Templates
-Use the following procedures to create two incident templates in Service Manager. The first you use to create email-related incidents, and the second you use with the Incident Change workflow for printer-related problems.
+Use the following procedures to create two incident templates in Service Manager. The first you use to create email\-related incidents, and the second you use with the Incident Change workflow for printer\-related problems.
 
-### To create an email-related incident template
+### To create an email\-related incident template
 
 1.  In the Service Manager console, click **Library**.
 
@@ -23,9 +23,9 @@ Use the following procedures to create two incident templates in Service Manager
 
 4.  In the **Create Template** dialog box, complete these steps:
 
-    1.  In the **Name** box, type a name for the incident template. For example, type **E-mail Incident**.
+    1.  In the **Name** box, type a name for the incident template. For example, type **E\-mail Incident**.
 
-    2.  In the **Description** box, type a description for the incident template. For example, type **Use this template to start all email-related incidents**.
+    2.  In the **Description** box, type a description for the incident template. For example, type **Use this template to start all email\-related incidents**.
 
     3.  Click **Browse** to choose a class.
 
@@ -41,7 +41,7 @@ Use the following procedures to create two incident templates in Service Manager
 
     3.  In the **Title** box, type a title for the template. Or, type a preface, such as **Email:**.
 
-    4.  In the **Classification Category** box, select the category that reflects the problem to report. For example, select **E-mail Problems**.
+    4.  In the **Classification Category** box, select the category that reflects the problem to report. For example, select **E\-mail Problems**.
 
     5.  Leave the **Source** box empty. The **Source** box is automatically populated when the incident is created.
 
@@ -49,11 +49,11 @@ Use the following procedures to create two incident templates in Service Manager
 
         In the **Urgency** box, select a value. For example, select **High**.
 
-    7.  In the **Support Group** box, select a tier. For example, if you want all email-related issues to be assigned to the tier 2 support group, select **Tier 2**.
+    7.  In the **Support Group** box, select a tier. For example, if you want all email\-related issues to be assigned to the tier 2 support group, select **Tier 2**.
 
     8.  Click **OK**.
 
-### To create a new printer-related incident template
+### To create a new printer\-related incident template
 
 1.  In the Service Manager console, click **Library**.
 
@@ -65,7 +65,7 @@ Use the following procedures to create two incident templates in Service Manager
 
     1.  In the **Name** box, type a name for the incident template. For example, type **Escalate Printer Problems to Tier 2**.
 
-    2.  In the **Description** box, type a description for the incident template. For example, type **Use this template to assign high-urgency printer-related problems to tier 2**.
+    2.  In the **Description** box, type a description for the incident template. For example, type **Use this template to assign high\-urgency printer\-related problems to tier 2**.
 
     3.  Click **Browse** to choose a class.
 
@@ -75,7 +75,7 @@ Use the following procedures to create two incident templates in Service Manager
 
 5.  In the incident template form, follow these steps:
 
-    1.  In the **Support Group** box, select a tier. For example, if you want all printer-related issues to be assigned to the tier 2 support group, select **Tier 2**.
+    1.  In the **Support Group** box, select a tier. For example, if you want all printer\-related issues to be assigned to the tier 2 support group, select **Tier 2**.
 
     2.  Click **OK**.
 

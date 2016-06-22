@@ -28,20 +28,20 @@ In System Center Operations Manager, when you install an agent on a computer, an
 -   [Changing the Active Directory Integration Setting for an Agent](Configuring-Agents.md#bkmk_ChangingtheActiveDirectoryIntegrationSettingforanAgent)
 
 ## <a name="bkmk_configuringanagenttoreporttomultiplemanagementgorups"></a>Configuring an Agent to Report to Multiple Management Groups
-Use the following procedure to make an Operations Manager agent a member of multiple management groups, also referred to as *multihoming*. For example, an agent can be configured to report Active Directory data to the Networking Management Group and Exchange data to the Messaging Management Group. An agent can be a member of up to four management groups.
+Use the following procedure to make an Operations Manager agent a member of multiple management groups, also referred to as *multihoming*. For example, an agent can be configured to report Active Directory data to the Networking Management Group and Exchange data to the Messaging Management Group. An agent can be a member of up to four management groups.
 
 You do not need to use the same deployment method for all of the management groups.
 
 > [!NOTE]
 > It might take one day or longer for the discovered instances of the agent to be made part of the new management group. They will be added after the next discovery interval.
 
-#### To make an Operations Manager agent a member of multiple management groups
+#### To make an Operations Manager agent a member of multiple management groups
 
 -   Do one of the following:
 
-    -   On the agent-managed computer, in Control Panel, double-click Operations Manager Agent. (In the category view of Control Panel in Windows Server 2008, Operations Manager Agent is in the **System and Security** category.) In **Operations Manager Agent**, on the **Management Groups** tab, click **Add**, enter the information for the new management group, and then click **OK**.
+    -   On the agent\-managed computer, in Control Panel, double\-click Operations Manager Agent. \(In the category view of Control Panel in Windows Server 2008, Operations Manager Agent is in the **System and Security** category.\) In **Operations Manager Agent**, on the **Management Groups** tab, click **Add**, enter the information for the new management group, and then click **OK**.
 
-    -   Run the Discovery Wizard from the Operations Manager Operations console that is connected to the new management group, select the desired computers, and deploy the agent to them. For more information, see [Install Agent on Windows Using the Discovery Wizard](Install-Agent-on-Windows-Using-the-Discovery-Wizard.md). (The menu item in the Operations console named Discovery Wizard opens the Computer and Device Management Wizard.)
+    -   Run the Discovery Wizard from the Operations Manager Operations console that is connected to the new management group, select the desired computers, and deploy the agent to them. For more information, see [Install Agent on Windows Using the Discovery Wizard](Install-Agent-on-Windows-Using-the-Discovery-Wizard.md). \(The menu item in the Operations console named Discovery Wizard opens the Computer and Device Management Wizard.\)
 
     -   Run the MOMAgent.msi on the desired computers, and modify the installation by adding a new management group. For more information, see [Install Agent Using the MOMAgent.msi Setup Wizard](Install-Agent-Using-the-MOMAgent.msi-Setup-Wizard.md).
 
@@ -50,7 +50,7 @@ You can use the following procedure to change the account that the agent will us
 
 #### To change the account configuration for an agent
 
-1.  On the agent-managed computer, in Control Panel, double-click Operations Manager Agent. (In the category view of Control Panel in Windows Server 2008, Operations Manager Agent is in the **System and Security** category.)
+1.  On the agent\-managed computer, in Control Panel, double\-click Operations Manager Agent. \(In the category view of Control Panel in Windows Server 2008, Operations Manager Agent is in the **System and Security** category.\)
 
 2.  On the **Management Group** tab, select a management group and then click **Edit**.
 
@@ -61,7 +61,7 @@ You can use the following procedure to remove a management group from the agent 
 
 #### To remove a management group from an agent
 
-1.  On the agent-managed computer, in Control Panel, double-click Operations Manager Agent. (In the category view of Control Panel in Windows Server 2008, Operations Manager Agent is in the **System and Security** category.)
+1.  On the agent\-managed computer, in Control Panel, double\-click Operations Manager Agent. \(In the category view of Control Panel in Windows Server 2008, Operations Manager Agent is in the **System and Security** category.\)
 
 2.  On the **Management Group** tab, select a management group and then click **Remove**.
 
@@ -75,7 +75,7 @@ You can use the following procedure to change the Active Directory integration s
 
 #### To change the Active Directory integration setting for an agent
 
-1.  On the agent-managed computer, in Control Panel, double-click Operations Manager Agent. (In the category view of Control Panel in Windows Server 2008, Operations Manager Agent is in the **System and Security** category.)
+1.  On the agent\-managed computer, in Control Panel, double\-click Operations Manager Agent. \(In the category view of Control Panel in Windows Server 2008, Operations Manager Agent is in the **System and Security** category.\)
 
 2.  On the **Management Group** tab, clear or select **Automatically update management group assignments from AD DS**. If you select this option, on agent startup, the agent will query Active Directory for a list of management groups to which it has been assigned. Those management groups, if any, will be added to the list. If you clear this option, all management groups assigned to the agent in Active Directory will be removed from the list.
 

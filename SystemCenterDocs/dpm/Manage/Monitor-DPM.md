@@ -34,7 +34,7 @@ Central Console is a System Center Operations Manager console that you can deplo
 -   In **State View** you can get information about the state of  DPM objects.
 
 ## Monitor DPM in the Azure console
-You use the Dashboard to get a quick overview of the state of your System Center 2012 - Data Protection Manager (DPM) backups in Windows Azure Backup. The Dashboard provides a centralized gateway to view servers protected by backup vaults, as follows:
+You use the Dashboard to get a quick overview of the state of your System Center 2012 \- Data Protection Manager \(DPM\) backups in Windows Azure Backup. The Dashboard provides a centralized gateway to view servers protected by backup vaults, as follows:
 
 -   **Usage Overview** shows how you are using the backup vault. You can select a vault and see how much storage is being consumed by the vault, versus the amount of storage provided by your subscription. You can also see the number of servers registered to the vault.
 
@@ -45,11 +45,11 @@ From the dashboard you can download the Backup agent for installation on a serve
 ## Monitor DPM in Operations Manager
 You can use monitor and report on the health and status of DPM servers using System Center Operations Manager Management Packs for DPM. DPM provides the following management packs:
 
--   **Reporting management pack** (Microsoft.SystemCenter.DataProtectionManager.2012.Reporting.mp)—Collects and displays reporting data from all DPM servers, and exposes a set of Operations Manager warehouse views for DPM. You can query these views to generate custom reports.
+-   **Reporting management pack** \(Microsoft.SystemCenter.DataProtectionManager.2012.Reporting.mp\)—Collects and displays reporting data from all DPM servers, and exposes a set of Operations Manager warehouse views for DPM. You can query these views to generate custom reports.
 
--   **Discovery and monitoring management pack** (Microsoft.SystemCenter.DataProtectionManager.2012.Discovery.mp)
+-   **Discovery and monitoring management pack** \(Microsoft.SystemCenter.DataProtectionManager.2012.Discovery.mp\)
 
--   **Library management pack**—(Microsoft.SystemCenter.DataProtectionManager.2012.Library)
+-   **Library management pack**—\(Microsoft.SystemCenter.DataProtectionManager.2012.Library\)
 
 Using these packs you can:
 
@@ -84,15 +84,15 @@ Then obtain the Management Packs, import the Discovery and Library Management Pa
     If you need to obtain the latest version of the agent see [Microsoft Monitoring Agent](https://www.microsoft.com/en-us/download/details.aspx?id=40316) in the Download Center.
 
 2.  Download the packs from the [Download Center](https://www.microsoft.com/en-US/download/details.aspx?id=45525).
-    Note that at the time of release (February 2015) the version for all the packs is 4.2.1277.0
-    By default, the download places the Discovery and Library Management Packs in the C:\Program Files\System Center Management Packs folder. The Reporting Management Pack is placed in a separate folder inside that folder.
+    Note that at the time of release \(February 2015\) the version for all the packs is 4.2.1277.0
+    By default, the download places the Discovery and Library Management Packs in the C:\\Program Files\\System Center Management Packs folder. The Reporting Management Pack is placed in a separate folder inside that folder.
 
 #### Import the Management Packs
 Import the Discovery and Library Management Packs
 Log on to the Operations Manager server with an account that is a member of the Operations Manager Administrators role.
 Remember to remove any previous versions of the Library or Discover Management Packs running on the server.
 
-1.  In the Operations console, click **Administration**. Right-click **Management Packs** > **Import Management Packs**.
+1.  In the Operations console, click **Administration**. Right\-click **Management Packs** > **Import Management Packs**.
      Select **Microsoft.SystemCenter.DataProtectionManagerDiscovery.MP** > **Open** and then **Microsoft.SystemCenter.DataProtectionManagerLibrary.MP** > **Open**
 
 2.  Follow the instructions in the Import Management Packs wizard. You can get more information about running this wizard in [How to Import an Operations Manager Management Pack](https://technet.microsoft.com/en-us/library/hh212691.aspx).
@@ -114,12 +114,12 @@ I
 
 1.  Log on to the Operations Manager server with an account that is a member of the Operations Manager Administrators role.
 
-2.  In the Operations console, click **Administration**. Right-click **Management Packs** > **Import Management Packs**.
+2.  In the Operations console, click **Administration**. Right\-click **Management Packs** > **Import Management Packs**.
 
 3.  Select **Microsoft.SystemCenter.DataProtectionManagerReporting.MP** > **Open**. 
     Follow the instructions in the Import Management Packs wizard.
 
 #### Tweaking Management Pack settings
-After you import the Management Packs they discover and monitor data without requiring any additional configuration. You can optionally tweak settings like monitors and rules for your environment. For example if you find that performance-measuring rules that are enable degrade server performance with slow WAN links, you can disable them. For instructions, see [How to enable or disable a rule or monitor](https://technet.microsoft.com/en-us/library/hh212818.aspx).
+After you import the Management Packs they discover and monitor data without requiring any additional configuration. You can optionally tweak settings like monitors and rules for your environment. For example if you find that performance\-measuring rules that are enable degrade server performance with slow WAN links, you can disable them. For instructions, see [How to enable or disable a rule or monitor](https://technet.microsoft.com/en-us/library/hh212818.aspx).
 
 

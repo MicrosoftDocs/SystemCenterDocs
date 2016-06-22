@@ -43,10 +43,10 @@ You can use the following procedure to disable or enable an Active Directory con
 
 ![](../../media/pssymbol.png)You can use Windows PowerShell commands to complete these tasks and other related tasks, as follows:
 
--   For information about how to use Windows PowerShell to start a Service Manager connector, see [Start-SCSMConnector](http://go.microsoft.com/fwlink/p/?LinkID=225378).
+-   For information about how to use Windows PowerShell to start a Service Manager connector, see [Start\-SCSMConnector](http://go.microsoft.com/fwlink/p/?LinkID=225378).
 
--   For information about how to use Windows PowerShell to retrieve connectors that are defined in Service Manager and view their status, see [Get-SCSMConnector](http://go.microsoft.com/fwlink/p/?LinkID=225320).
+-   For information about how to use Windows PowerShell to retrieve connectors that are defined in Service Manager and view their status, see [Get\-SCSMConnector](http://go.microsoft.com/fwlink/p/?LinkID=225320).
 
--   For information about how to use Windows PowerShell to update properties of a Service Manager connector, see [Update-SCSMConnector](http://go.microsoft.com/fwlink/p/?LinkID=225382).
+-   For information about how to use Windows PowerShell to update properties of a Service Manager connector, see [Update\-SCSMConnector](http://go.microsoft.com/fwlink/p/?LinkID=225382).
 
 

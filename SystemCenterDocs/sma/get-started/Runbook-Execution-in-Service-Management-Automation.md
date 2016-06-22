@@ -11,7 +11,7 @@ ms.topic: article
 ms.assetid: 93ab946a-4faf-4c9d-a625-4ea31128eda6
 ---
 # Runbook Execution in Service Management Automation
-Requests to start a runbook are performed by the Service Management Automation web service using either the Service Management Portal or the [Start-SmaRunbook](http://aka.ms/runbookauthor/startsmarunbook) Windows PowerShell cmdlet. The web service writes this request to the Automation database where it is retrieved by one of the Automation Worker servers. 
+Requests to start a runbook are performed by the Service Management Automation web service using either the Service Management Portal or the [Start\-SmaRunbook](http://aka.ms/runbookauthor/startsmarunbook) Windows PowerShell cmdlet. The web service writes this request to the Automation database where it is retrieved by one of the Automation Worker servers. 
 
 If the RunbookWorker property of the runbook is populated, then that Worker server will service the job.  If the Worker server is not available, then the job will fail with an error.  If the RunbookWorker property of the runbook is not populated, then SMA will randomly select an available Worker server to service the request.
 

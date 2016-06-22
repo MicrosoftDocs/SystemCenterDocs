@@ -10,7 +10,7 @@ ms.topic: article
 ms.assetid: c391296f-7c63-4e56-9597-92d4616c4fc2
 ---
 # How to configure network settings on a VMware ESX host in VMM
-You can use the following procedures to configure logical network settings on a VMware ESX host in Virtual Machine Manager (VMM), and to view compliance information for physical network adapters on the host.
+You can use the following procedures to configure logical network settings on a VMware ESX host in Virtual Machine Manager \(VMM\), and to view compliance information for physical network adapters on the host.
 
 To make logical networks available to virtual machines on an external virtual network, you must associate logical networks with physical network adapters on the ESX host. Compliance information indicates whether all IP subnets and VLANs that are included in the network site that is associated with a logical network are assigned to the physical network adapter.
 
@@ -25,14 +25,14 @@ Before you begin these procedures, make sure that the following prerequisites ar
 -   If the logical network has associated network sites, one or more of the network sites must be scoped to the host group where the ESX host resides.
 
 > [!IMPORTANT]
-> VMM does not automatically create port groups on ESX hosts. Therefore, for logical networks and associated network sites, you must use vCenter Server to configure port groups with the necessary VLANs that correspond to the network sites.
+> VMM does not automatically create port groups on ESX hosts. Therefore, for logical networks and associated network sites, you must use vCenter Server to configure port groups with the necessary VLANs that correspond to the network sites.
 
-#### To associate logical networks with a physical network adapter (for an external virtual network)
+#### To associate logical networks with a physical network adapter \(for an external virtual network\)
 
 1.  Open the **Fabric** workspace.
 
     > [!NOTE]
-    > The term fabric is used to denote the infrastructure - the software, servers, high-speed connections and switches that enable access to storage devices in a network.
+    > The term fabric is used to denote the infrastructure \- the software, servers, high\-speed connections and switches that enable access to storage devices in a network.
 
 2.  In the **Fabric** pane, expand **Servers** > **All Hosts**, and then click the host group where the host resides.
 
@@ -56,7 +56,7 @@ Before you begin these procedures, make sure that the following prerequisites ar
     > [!NOTE]
     > If no IP subnets or VLANs appear in the **Available** or **Assigned** columns, this indicates that no network site exists for the selected logical network that is scoped to the host group or inherited by the host group.
 
-    To view the available IP subnets and VLANs, click a logical network in the **Logical network** list. As mentioned earlier, you must use vCenter Server to configure port groups with the necessary VLANs that correspond to the network sites.
+    To view the available IP subnets and VLANs, click a logical network in the **Logical network** list. As mentioned earlier, you must use vCenter Server to configure port groups with the necessary VLANs that correspond to the network sites.
 
     In the **Logical network** list, if the **Unassigned** option is available, you can view any VLANs that the physical network adapter is connected to, but are not included in a network site. If desired, you can define them in a network site.
 

@@ -13,9 +13,9 @@ Use this information to evaluate if your SQL Server environment is ready to supp
 
 ## SQL Server version support
 
-|**System Center 2016 Technical Preview** component|SQL Server 2008 R2 SP1 Standard, Datacenter|SQL Server 2008 R2 SP2 Standard, Datacenter|SQL Server 2012 Enterprise, Standard (64-bit)|SQL Server 2012 SP1 Enterprise, Standard (64-bit)|SQL Server 2012 SP2 Enterprise, Standard (64 bit)|SQL Server 2014 Enterprise, Standard (64-bit)|SQL Server 2014 SP1 Enterprise, Standard (64-bit)|SQL Server 2016 RC1, Enterprise, Standard  (64-bit)|
+|**System Center 2016 Technical Preview** component|SQL Server 2008 R2 SP1 Standard, Datacenter|SQL Server 2008 R2 SP2 Standard, Datacenter|SQL Server 2012 Enterprise, Standard \(64\-bit\)|SQL Server 2012 SP1 Enterprise, Standard \(64\-bit\)|SQL Server 2012 SP2 Enterprise, Standard \(64 bit\)|SQL Server 2014 Enterprise, Standard \(64\-bit\)|SQL Server 2014 SP1 Enterprise, Standard \(64\-bit\)|SQL Server 2016 RC1, Enterprise, Standard  (64\-bit\)|
 |-------------------------------------------------------------------|-----------------------------------------------|-----------------------------------------------|----------------------------------------------------|--------------------------------------------------------|-------------------------------------------------------|----------------------------------------------------|--------------------------------------------------------|------------------------------------------------|
-|**Data Protection Manager (DPM)** Database Server|●|●|●|●|●|●|||
+|**Data Protection Manager \(DPM\)** Database Server|●|●|●|●|●|●|||
 |**Operations Manager** Data Warehouse|||||●|●|●|●|
 |**Operations Manager** Operational Database|||||●|●|●|●|
 |**Operations Manager** Reporting Server|||||●|●|●|●|

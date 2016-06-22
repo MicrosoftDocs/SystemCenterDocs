@@ -11,9 +11,9 @@ ms.topic: article
 ms.assetid: deb38f1e-f045-4ca1-8844-4ff38f06e7c3
 ---
 # How to Upgrade a Single-Server Management Group to System Center 2016 - Operations Manager
-When you upgrade a single-server management group to System Center 2016 Technical Preview - Operations Manager, all features that are installed on the server are upgraded. Before you begin the upgrade process, make sure that your server meets the minimum supported configurations. For more information, see [System Requirements for System Center 2016](../../system-requirements/System-Requirements-for-System-Center-Technical-Preview.md).
+When you upgrade a single\-server management group to System Center 2016 Technical Preview \- Operations Manager, all features that are installed on the server are upgraded. Before you begin the upgrade process, make sure that your server meets the minimum supported configurations. For more information, see [System Requirements for System Center 2016](../../system-requirements/System-Requirements-for-System-Center-Technical-Preview.md).
 
-### To upgrade a single-server management group
+### To upgrade a single\-server management group
 
 1.  Log on to the server with an account that is a member of the Operations Manager Administrators role for your Operations Manager management group, a member of the SQL Server sysadmin fixed server role, and a local administrator on the computer.
 
@@ -24,7 +24,7 @@ When you upgrade a single-server management group to System Center 2016 Technica
 
 3.  On the **Getting Started, Please read the license terms page**, read the Microsoft Software License Terms, click **I have read, understood, and agree with the license terms**, and then click **Next**.
 
-4.  On the **Select installation location** page, accept the default value of **C:\Program Files\Microsoft System Center 2016\Operations Manager**, or type in a new location or browse to one. Then click **Next**.
+4.  On the **Select installation location** page, accept the default value of **C:\\Program Files\\Microsoft System Center 2016\\Operations Manager**, or type in a new location or browse to one. Then click **Next**.
 
 5.  On the **Prerequisites** page, review and address any warnings or errors that the Prerequisites checker returns, and then click **Verify prerequisites again** to recheck the system.
 
@@ -36,13 +36,13 @@ When you upgrade a single-server management group to System Center 2016 Technica
 7.  On the **Configuration, Configure Operations Manager accounts** page, enter the domain account or Local System credentials for the System Center Data Access service account, and then click **Next**.
 
     > [!IMPORTANT]
-    > If you receive a message about using the wrong version of SQL Server, or experience      a problem with the SQL Server Windows Management Instrumentation (WMI) provider,        you can resolve this. Open a Command Prompt window by using the **Run as administrator** option. Then run the following command, replace the *\<path>* placeholder with the location of Microsoft SQL Server:
+    > If you receive a message about using the wrong version of SQL Server, or experience      a problem with the SQL Server Windows Management Instrumentation \(WMI\) provider,        you can resolve this. Open a Command Prompt window by using the **Run as administrator** option. Then run the following command, replace the *\<path>* placeholder with the location of Microsoft SQL Server:
         >
         > **mofcomp.exe “\<path>\Microsoft SQL Server\100\Shared\sqlmgmproviderxpsp2up.mof”**
 
 8.  When the **Ready to Upgrade** page appears, review the upgrade summary, and then click **Upgrade**.
 
-### To upgrade a single-server management group by using the Command Prompt window
+### To upgrade a single\-server management group by using the Command Prompt window
 
 1.  Log on to the server with an account that is a member of the Operations Manager Administrators role for your Operations Manager management group, a member of the SQL Server sysadmin fixed server role, and a local administrator on the computer.
 
@@ -51,10 +51,10 @@ When you upgrade a single-server management group to System Center 2016 Technica
 3.  Change the path to where the Operations Manager Setup.exe file is located.
 
     > [!IMPORTANT]
-    > Use the `/WebConsoleUseSSL` parameter only if your website has Secure Sockets Layer (SSL) activated. For a default web installation, specify **Default Web Site** for the `/WebSiteName` parameter.
+    > Use the `/WebConsoleUseSSL` parameter only if your website has Secure Sockets Layer \(SSL\) activated. For a default web installation, specify **Default Web Site** for the `/WebSiteName` parameter.
 
     > [!IMPORTANT]
-    > The following commands assume that you specified the Local System for the Data Access service `(/UseLocalSystemDASAccount`). To specify a domain\user name for these accounts, you must provide the following parameters instead:`/DASAccountUser: <domain\username> /DASAccountPassword: <password>`
+    > The following commands assume that you specified the Local System for the Data Access service `(/UseLocalSystemDASAccount`\). To specify a domain\\user name for these accounts, you must provide the following parameters instead:`/DASAccountUser: <domain\username> /DASAccountPassword: <password>`
 
 4.  Run the following command.
 
@@ -84,7 +84,7 @@ When you upgrade a single-server management group to System Center 2016 Technica
     > [!TIP]
     > If you want to upgrade a specific component, you can add `/components: <component name1> [<, component name2>][ <, component name3>]`
 
-    After you have upgraded your single-server management group, you can upgrade the agents.
+    After you have upgraded your single\-server management group, you can upgrade the agents.
 
 ## Verifying the Upgrade
 

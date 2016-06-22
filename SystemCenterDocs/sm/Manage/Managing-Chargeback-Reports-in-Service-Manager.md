@@ -14,7 +14,7 @@ ms.assetid: 52ce9a2c-f29e-4db6-913a-9aa6b5fab36a
 This section provides an overview of how to view chargeback reports and how to configure the sample reports in Service Manager. Before you can use the reports, they must be installed and configured for your installation of Service Manager.  You can use the information below to help you instal, and configure chargeback reports .
 
 ## View and Use Chargeback Reports
-You can use the following procedure to view and analyze a Microsoft Online Analytical Processing (OLAP) data cube from Service Manager with Microsoft Excel. You can also save your workbooks into an analysis library. Using the PivotTable field list, you can drag and drop fields from the cube into the workbook.
+You can use the following procedure to view and analyze a Microsoft Online Analytical Processing \(OLAP\) data cube from Service Manager with Microsoft Excel. You can also save your workbooks into an analysis library. Using the PivotTable field list, you can drag and drop fields from the cube into the workbook.
 
 You must have Excel, or a viewer capable of opening Excel data files, installed on the computer running the Service Manager console in order to use the following procedure.
 
@@ -36,7 +36,7 @@ You must have Excel, or a viewer capable of opening Excel data files, installed 
 4.  Optionally, you can save the workbook to a shared folder or other shared location, such as the analysis library.
 
 ## Configure Sample Chargeback Reports
-You can use the following procedure to configure the sample Microsoft Excel chargeback report (ChargebackReport.xlsx) that is included with Service Manager. This sample report is designed for you to modify for use in your organization. You can update the report any way you like. The sample report contains the following tabs:
+You can use the following procedure to configure the sample Microsoft Excel chargeback report \(ChargebackReport.xlsx\) that is included with Service Manager. This sample report is designed for you to modify for use in your organization. You can update the report any way you like. The sample report contains the following tabs:
 
 -   Dashboard – This tab shows a chart of the top 3 cost centers, clouds, VMM user roles, price sheets, spending trend, and overall spending for the period that you select.
 

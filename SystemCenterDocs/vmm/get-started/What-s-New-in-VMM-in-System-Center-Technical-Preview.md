@@ -167,7 +167,7 @@ You can now configure guarded hosts and shielded VMs to help provide protection 
 -   Configure guarded hosts in your VMM environment to use Code Integrity policies. These policies restrict software that can run in kernel mode on a guarded host.
 -   View and manage guarded hosts.
 -   Create and manage shielded VMs.
--   Convert existing un-shielded VMs to shielded VMs.
+-	Convert existing un-shielded VMs to shielded VMs.
 
 For more information and step-by-step instructions for deploying guarded hosts and managing shielded VMs with VMM see [Shielded VMs and Guarded Fabric Deployment Guide for Windows Server 2016 TP5](https://gallery.technet.microsoft.com/Shielded-VMs-and-Guarded-98d2b045)
 

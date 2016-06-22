@@ -9,7 +9,7 @@ ms.topic: article
 ms.assetid: fd77880c-3a53-4c7d-980f-ef392909bff9
 ---
 # How to configure storage on a Hyper-V host in VMM
-You can use the following procedures to configure storage on a Hyper-V host that is already under management in Virtual Machine Manager (VMM). These procedures all use Hyper-V host properties to configure the storage for a specific host:
+You can use the following procedures to configure storage on a Hyper\-V host that is already under management in Virtual Machine Manager \(VMM\). These procedures all use Hyper\-V host properties to configure the storage for a specific host:
 
 -   [Creating a logical unit and assigning it to a host](How-to-configure-storage-on-a-Hyper-V-host-in-VMM.md#BKMK_create_assign)
 
@@ -20,21 +20,21 @@ You can use the following procedures to configure storage on a Hyper-V host that
 -   [Creating an iSCSI session on a host](How-to-configure-storage-on-a-Hyper-V-host-in-VMM.md#BKMK_iSCSI)
 
 > [!IMPORTANT]
-> The storage prerequisites for this topic are almost the same as those for hosts that you are preparing to bring together into a cluster. The one exception is that Multipath I/O might not be necessary, depending on your configuration. Therefore, for prerequisites, see two sections in "Prerequisites: creating a cluster in VMM from existing servers": 
-> [Host cluster prerequisites: Fibre Channel or iSCSI storage arrays](Prerequisites--creating-a-host-cluster-in-VMM-from-existing-Windows-servers.md#BKMK_arrays) (although Multipath I/O might not be necessary)
+> The storage prerequisites for this topic are almost the same as those for hosts that you are preparing to bring together into a cluster. The one exception is that Multipath I\/O might not be necessary, depending on your configuration. Therefore, for prerequisites, see two sections in "Prerequisites: creating a cluster in VMM from existing servers": 
+> [Host cluster prerequisites: Fibre Channel or iSCSI storage arrays](Prerequisites--creating-a-host-cluster-in-VMM-from-existing-Windows-servers.md#BKMK_arrays) \(although Multipath I\/O might not be necessary\)
 > [Host cluster prerequisites: storage allocation and configuration](Prerequisites--creating-a-host-cluster-in-VMM-from-existing-Windows-servers.md#BKMK_storage_allocation)
 
-**Account requirements** To complete these procedures, you must be a member of the Administrator user role or a member of the Delegated Administrator user role where the management scope includes the host group where the Hyper-V host is located.
+**Account requirements** To complete these procedures, you must be a member of the Administrator user role or a member of the Delegated Administrator user role where the management scope includes the host group where the Hyper\-V host is located.
 
 ## <a name="BKMK_create_assign"></a>Creating a logical unit and assigning it to a host
 
-#### To use Hyper-V host properties to create a logical unit and assign it to the host
+#### To use Hyper\-V host properties to create a logical unit and assign it to the host
 
 1.  Open the **Fabric** workspace.
 
 2.  In the **Fabric** pane, expand **Servers** > **All Hosts**.
 
-3.  In the **Hosts** pane, right-click the host that you want to configure, and then click **Properties**.
+3.  In the **Hosts** pane, right\-click the host that you want to configure, and then click **Properties**.
 
 4.  In the *Host Name* **Properties** dialog box, click the **Storage** tab.
 
@@ -52,7 +52,7 @@ You can use the following procedures to configure storage on a Hyper-V host that
 
     5.  Optionally, in the **Description** box, enter a description for the logical unit.
 
-    6.  In the **Size (GB)** box, enter the size of the logical unit, in gigabytes.
+    6.  In the **Size \(GB\)** box, enter the size of the logical unit, in gigabytes.
 
     7.  When you are finished, click **OK**.
 
@@ -62,11 +62,11 @@ You can use the following procedures to configure storage on a Hyper-V host that
 
 7.  In the **Format new disk** area, if you want to format the disk, select the **Format this volume as NTFS volume with the following settings** check box, and then do the following:
 
-    1.  In the **Partition style** list, click **MBR** (Master Boot Record) or **GPT** (GUID Partition Table).
+    1.  In the **Partition style** list, click **MBR** \(Master Boot Record\) or **GPT** \(GUID Partition Table\).
 
     2.  In the **Volume label** box, enter a volume label, for example **Finance Data**.
 
-    3.  In the **Allocation unit size** list, either accept the default, or click a specific allocation unit size. (Note that the values 512, 1024, 2048, 4096 and 8192 are in bytes.)
+    3.  In the **Allocation unit size** list, either accept the default, or click a specific allocation unit size. \(Note that the values 512, 1024, 2048, 4096 and 8192 are in bytes.\)
 
     4.  Select or clear the **Quick format** check box. By default, the check box is selected. To prevent data loss, quick format formats the disk only if the disk is unformatted.
 
@@ -77,7 +77,7 @@ You can use the following procedures to configure storage on a Hyper-V host that
 
 8.  In the **Mount point** area, select one of the following options:
 
-    -   **Assign the following drive letter** (the default). If you select this option, click the desired drive letter.
+    -   **Assign the following drive letter** \(the default\). If you select this option, click the desired drive letter.
 
     -   **Mount in the following empty NTFS folder**. If you select this option, click **Browse**, and then select the empty destination folder.
 
@@ -92,19 +92,19 @@ You can use the following procedures to configure storage on a Hyper-V host that
     > [!TIP]
     > If the **Array** field is populated in the disk details, this indicates that the storage array is under VMM management.
 
-11. To perform further configuration of the disk, open Disk Management on the host. (To open Disk Management, click **Start**, type **diskmgmt.msc** in the search box, and then press ENTER.)
+11. To perform further configuration of the disk, open Disk Management on the host. \(To open Disk Management, click **Start**, type **diskmgmt.msc** in the search box, and then press ENTER.\)
 
-    The new disk appears in the list of disks as a basic disk. If you chose to format the disk, the disk is already formatted and online. You can right-click the disk to see the available options, such as **Format** and **Change Drive Letter and Paths**.
+    The new disk appears in the list of disks as a basic disk. If you chose to format the disk, the disk is already formatted and online. You can right\-click the disk to see the available options, such as **Format** and **Change Drive Letter and Paths**.
 
 ## <a name="BKMK_assignLU"></a>Assigning a logical unit to a host
 
-#### To use Hyper-V host properties to assign a logical unit to a host
+#### To use Hyper\-V host properties to assign a logical unit to a host
 
 1.  Open the **Fabric** workspace.
 
 2.  In the **Fabric** pane, expand **Servers** > **All Hosts**.
 
-3.  In the **Hosts** pane, right-click the host that you want to configure, and then click **Properties**.
+3.  In the **Hosts** pane, right\-click the host that you want to configure, and then click **Properties**.
 
 4.  In the *Host Name* **Properties** dialog box, click the **Storage** tab.
 
@@ -125,7 +125,7 @@ You can use the following procedures to configure storage on a Hyper-V host that
 
 2.  In the **Fabric** pane, expand **Servers** > **All Hosts**.
 
-3.  In the **Hosts** pane, right-click the host that you want to configure, and then click **Properties**.
+3.  In the **Hosts** pane, right\-click the host that you want to configure, and then click **Properties**.
 
 4.  In the *Host Name* **Properties** dialog box, click the **Storage** tab.
 
@@ -147,13 +147,13 @@ You can use the following procedures to configure storage on a Hyper-V host that
 
 #### To create an iSCSI session on a host
 
-1.  On the target host, in the Services snap-in, make sure that the Microsoft iSCSI Initiator Service is started and set to Automatic.
+1.  On the target host, in the Services snap\-in, make sure that the Microsoft iSCSI Initiator Service is started and set to Automatic.
 
 2.  In the VMM console, open the **Fabric** workspace.
 
 3.  In the **Fabric** pane, expand **Servers** > **All Hosts**.
 
-4.  In the **Hosts** pane, right-click the host that you want to configure, and then click **Properties**.
+4.  In the **Hosts** pane, right\-click the host that you want to configure, and then click **Properties**.
 
 5.  In the *Host Name* **Properties** dialog box, click the **Storage** tab.
 
@@ -169,7 +169,7 @@ You can use the following procedures to configure storage on a Hyper-V host that
 
     1.  In the **Target portal** list, click the IP address and port number for the connection to the storage array.
 
-    2.  In the **Target name** list, click the iSCSI Qualified Name (IQN) of the storage array.
+    2.  In the **Target name** list, click the iSCSI Qualified Name \(IQN\) of the storage array.
 
     3.  In the **Initiator IP** list, click the IP address of the network card on the host that you want to use. The associated logical networks are also listed.
 

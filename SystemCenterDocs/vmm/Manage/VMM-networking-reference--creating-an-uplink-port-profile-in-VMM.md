@@ -24,7 +24,7 @@ When you configure a logical switch, you can also create an uplink port profile.
 
 3.  In the **Fabric** pane, expand **Networking**, and then click **Port Profiles**.
 
-4.  On the **Home** tab, in the **Create** group, click **Create**, and then click **Hyper-V Port Profile**.
+4.  On the **Home** tab, in the **Create** group, click **Create**, and then click **Hyper\-V Port Profile**.
 
     The wizard for creating port profiles opens.
 
@@ -35,9 +35,9 @@ When you configure a logical switch, you can also create an uplink port profile.
 
     The options for load balancing and teaming are as follows:
 
-    **Load-balancing algorithm**: the algorithm that the team uses to distribute network traffic between the network adapters. The following options are available:
+    **Load\-balancing algorithm**: the algorithm that the team uses to distribute network traffic between the network adapters. The following options are available:
 
-    -   **Hyper-V Port**: Distributes network traffic based on the Hyper-V switch port identifier of the source virtual machine. This is the default algorithm.
+    -   **Hyper\-V Port**: Distributes network traffic based on the Hyper\-V switch port identifier of the source virtual machine. This is the default algorithm.
 
     -   **Transport Ports**: Uses the source and destination TCP ports and the IP addresses to create a hash and then assigns the packets that have that hash value to one of the available network adapters.
 
@@ -47,13 +47,13 @@ When you configure a logical switch, you can also create an uplink port profile.
 
     -   **Dynamic**: Uses the dynamic load balancing that is available in Windows Server Technical Preview and Windows Server 2012 R2 only.
 
-    -   **Host default**: This specifies the **Dynamic** algorithm for hosts that support it, and the **Hyper-V Port** algorithm for hosts that do not.
+    -   **Host default**: This specifies the **Dynamic** algorithm for hosts that support it, and the **Hyper\-V Port** algorithm for hosts that do not.
 
     **Teaming mode**: the mode of the NIC teaming. The following options are available:
 
     -   **Switch Independent**: Specifies that a network switch configuration is not needed for the NIC team. Because the network switch is not configured to know about the interface teaming, the team interfaces can be connected to different switches. This is the default mode.
 
-    -   **LACP**: Uses the Link Aggregation Control Protocol (LACP) from IEEE 802.1ax (also known as IEEE 802.3ad) to dynamically identify links that are connected between the host and a given switch.
+    -   **LACP**: Uses the Link Aggregation Control Protocol \(LACP\) from IEEE 802.1ax \(also known as IEEE 802.3ad\) to dynamically identify links that are connected between the host and a given switch.
 
     -   **Static Teaming**: Requires configuration on both the switch and the host to identify which links form the team.
 
@@ -63,7 +63,7 @@ When you configure a logical switch, you can also create an uplink port profile.
 
     -   Select one or more network sites for this uplink port profile to support.
 
-    -   If you want to enable network virtualization (which allows you to deploy multiple VM networks on the same physical network), select **Enable Hyper-V Network Virtualization**.
+    -   If you want to enable network virtualization \(which allows you to deploy multiple VM networks on the same physical network\), select **Enable Hyper\-V Network Virtualization**.
 
         > [!NOTE]
         > The setting for enabling network virtualization requires a logical network on which you have selected **Allow new VM networks created on this logical network to use network virtualization**.

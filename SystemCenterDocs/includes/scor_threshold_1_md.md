@@ -1,1 +1,1 @@
-System Center 2016 Technical Preview - Orchestrator
+System Center 2016 Technical Preview \- Orchestrator

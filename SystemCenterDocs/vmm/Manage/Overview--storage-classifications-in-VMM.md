@@ -11,15 +11,15 @@ ms.topic: article
 ms.assetid: edad40e9-bf3b-4766-bea2-1d844dc065ea
 ---
 # Overview: storage classifications in VMM
-Applies To:  System Center 2016 Technical Preview - Virtual Machine Manager
+Applies To:  System Center 2016 Technical Preview \- Virtual Machine Manager
 
-In Virtual Machine Manager (VMM), to simplify the assignment of storage to users and virtual machines, you create storage classifications that fit your environment. You can do this when running a wizard such as the New Storage Pool Wizard, on the page that asks you to assign a classification to the object you're creating. Or you can create the storage classification as a separate action: in the **Fabric** workspace, click **Create Storage Classification**.
+In Virtual Machine Manager \(VMM\), to simplify the assignment of storage to users and virtual machines, you create storage classifications that fit your environment. You can do this when running a wizard such as the New Storage Pool Wizard, on the page that asks you to assign a classification to the object you're creating. Or you can create the storage classification as a separate action: in the **Fabric** workspace, click **Create Storage Classification**.
 
 For example, you could create the following classifications:
 
--   **Bldg1Gold**: A set of solid-state drives (SSDs) that you will make available to users in building 1.
+-   **Bldg1Gold**: A set of solid\-state drives \(SSDs\) that you will make available to users in building 1.
 
--   **Bldg1Silver**: A set of SSDs and hard disk drives (HDDs) that you will make available to users in building 1.
+-   **Bldg1Silver**: A set of SSDs and hard disk drives \(HDDs\) that you will make available to users in building 1.
 
 -   **Bldg2Gold**: A set of SSDs that you will make available to users in building 2.
 
@@ -27,7 +27,7 @@ For example, you could create the following classifications:
 
 After you create your classifications, you can assign the classifications to storage pools. When you create file shares in a pool, they inherit the pool's classification, but you can adjust file share classifications individually, if needed.
 
-Later, you can use these classifications to provide the classified storage to a particular set of virtual machines or cloud users, avoiding the need to assign each individual unit of storage (such as a storage pool or a share) manually.
+Later, you can use these classifications to provide the classified storage to a particular set of virtual machines or cloud users, avoiding the need to assign each individual unit of storage \(such as a storage pool or a share\) manually.
 
 ## See Also
 [How to create storage classifications in VMM](How-to-create-storage-classifications-in-VMM.md)

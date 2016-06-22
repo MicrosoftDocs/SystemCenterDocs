@@ -11,7 +11,7 @@ ms.topic: article
 ms.assetid: e2c3d79d-2dc9-4a4e-a27d-1ecae7e2ce53
 ---
 # How to Configure the VMM Database with AlwaysOn Availability Groups
-In System Center 2016 Technical Preview, you can take advantage of AlwaysOn Availability Groups in Microsoft SQL Server 2012 or Microsoft SQL Server 2014 to ensure high availability of the VMM database. However, be sure to review the recommendations for Availability Groups in the “SQL Server and database” section of [Preparing your environment for System Center 2016 - Virtual Machine Manager](Preparing-your-environment-for-System-Center-2016---Virtual-Machine-Manager.md).
+In System Center 2016 Technical Preview, you can take advantage of AlwaysOn Availability Groups in Microsoft SQL Server 2012 or Microsoft SQL Server 2014 to ensure high availability of the VMM database. However, be sure to review the recommendations for Availability Groups in the “SQL Server and database” section of [Preparing your environment for System Center 2016 - Virtual Machine Manager](Preparing-your-environment-for-System-Center-2016---Virtual-Machine-Manager.md).
 
 If you have not configured Availability Groups during the initial configuration, you can use the following procedure to perform that configuration.
 
@@ -23,7 +23,7 @@ Perform the following procedure on the SQL Server cluster that hosts the VMM dat
 
 2.  Initiate a failover to the computer that is running SQL Server and on which the VMM database is installed.
 
-3.  On the VMM management server, start the Virtual Machine Manager Setup Wizard. To start the wizard, on your installation media, right-click **setup.exe**, and then click **Run as administrator**.
+3.  On the VMM management server, start the Virtual Machine Manager Setup Wizard. To start the wizard, on your installation media, right\-click **setup.exe**, and then click **Run as administrator**.
 
 4.  Skip the first five wizard pages, and then on the **Database configuration** page do as follows:
 
@@ -43,7 +43,7 @@ Perform the following procedure on the SQL Server cluster that hosts the VMM dat
 
     -   The login is configured with the database owner credentials.
 
-6.  Initiate a failover to the secondary node computer that is running SQL Server, and verify that you can restart the VMM service (scvmmservice).
+6.  Initiate a failover to the secondary node computer that is running SQL Server, and verify that you can restart the VMM service \(scvmmservice\).
 
 7.  Repeat the last two steps for every secondary node in the cluster that is running SQL Server.
 

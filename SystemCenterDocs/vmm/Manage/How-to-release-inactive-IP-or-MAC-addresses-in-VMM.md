@@ -11,9 +11,9 @@ ms.topic: article
 ms.assetid: ff59f3fe-d82d-416a-bc14-b779b6cc3a3f
 ---
 # How to release inactive IP or MAC addresses in VMM
-You can use the following procedure to release inactive IP addresses and MAC addresses. When you release an inactive address, Virtual Machine Manager (VMM) returns the address to the static IP address or MAC address pool, and considers it available for reassignment. An IP or MAC address is considered inactive when either of the following conditions is true:
+You can use the following procedure to release inactive IP addresses and MAC addresses. When you release an inactive address, Virtual Machine Manager \(VMM\) returns the address to the static IP address or MAC address pool, and considers it available for reassignment. An IP or MAC address is considered inactive when either of the following conditions is true:
 
--   A host that was assigned a static IP address through the bare-metal deployment process is removed from VMM management. When you remove the host, any IP and MAC addresses that were statically assigned to virtual machines on the host are also marked as inactive.
+-   A host that was assigned a static IP address through the bare\-metal deployment process is removed from VMM management. When you remove the host, any IP and MAC addresses that were statically assigned to virtual machines on the host are also marked as inactive.
 
 -   A virtual machine goes into a missing state because it was removed outside VMM.
 

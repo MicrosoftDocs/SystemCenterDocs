@@ -11,7 +11,7 @@ ms.topic: article
 ms.assetid: 1385aaea-b6cc-408a-9bbc-fbd9a251e48d
 ---
 # Upgrading Windows Server 2012 R2 host clusters to Windows Server 2016 Technical Preview in VMM
-VMM can manage the upgrade of Hyper-V host clusters in the VMM fabric to Windows Server Technical Preview. You can upgrade the entire cluster, or select specific nodes to upgrade.
+VMM can manage the upgrade of Hyper\-V host clusters in the VMM fabric to Windows Server Technical Preview. You can upgrade the entire cluster, or select specific nodes to upgrade.
 
 Here's what upgrade does:
 
@@ -39,8 +39,8 @@ Before you start the cluster upgrade, make sure of the following:
 
 -   The cluster must be managed by VMM.
 
--   The cluster must meet the requirements for bare-metal deployment , except that the physical computer profile does not need to include network or disk configuration details. During the upgrade process, VMM records the node's actual network and disk configuration, and uses that information instead of the corresponding settings in the physical computer profile.
--   You can use this process to upgrade nodes that were not originally provisioned using VMM's bare-metal deployment process, as long as those nodes meet the requirements (such as having a baseboard management controller, or BMC). You must provide the BMC configuration information to the Cluster Upgrade wizard.
+-   The cluster must meet the requirements for bare\-metal deployment , except that the physical computer profile does not need to include network or disk configuration details. During the upgrade process, VMM records the node's actual network and disk configuration, and uses that information instead of the corresponding settings in the physical computer profile.
+-   You can use this process to upgrade nodes that were not originally provisioned using VMM's bare\-metal deployment process, as long as those nodes meet the requirements \(such as having a baseboard management controller, or BMC\). You must provide the BMC configuration information to the Cluster Upgrade wizard.
 -   The VMM library must contain a VHD configured with Windows Server Technical Preview.
 
 

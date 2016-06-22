@@ -11,23 +11,23 @@ ms.topic: article
 ms.assetid: 6fcb27a4-2141-4cd6-856d-173b6490856c
 ---
 # How to add a non-Windows gateway in VMM
-You can connect a VM network to other networks by using a gateway in Virtual Machine Manager (VMM).
+You can connect a VM network to other networks by using a gateway in Virtual Machine Manager \(VMM\).
 
 > [!IMPORTANT]
-> This topic is for non-Windows gateways. For information about Windows Server gateways, see [How to add a Windows Server Gateway in VMM](How-to-add-a-Windows-Server-Gateway-in-VMM.md).
+> This topic is for non\-Windows gateways. For information about Windows Server gateways, see [How to add a Windows Server Gateway in VMM](How-to-add-a-Windows-Server-Gateway-in-VMM.md).
 
-After you add the gateway, you can configure a VM network to use the gateway. You have several choices for the VM network settings. You can choose the setting for a connection through a VPN tunnel, with or without Border Gateway Protocol (BGP), or the setting for connecting directly to an additional logical network, with or without network address translation (NAT).
+After you add the gateway, you can configure a VM network to use the gateway. You have several choices for the VM network settings. You can choose the setting for a connection through a VPN tunnel, with or without Border Gateway Protocol \(BGP\), or the setting for connecting directly to an additional logical network, with or without network address translation \(NAT\).
 
 ## Prerequisites
 If you want to add a gateway to your configuration in VMM, you must first perform the following tasks:
 
-1.  Obtain provider software from the manufacturer of the gateway device, install the provider on the VMM management server, and then restart the System Center Virtual Machine Manager service. If you have installed a high-availability VMM management server on a cluster, be sure to install the provider on all nodes of the cluster. For more information about installing the provider, refer to the manufacturer’s documentation.
+1.  Obtain provider software from the manufacturer of the gateway device, install the provider on the VMM management server, and then restart the System Center Virtual Machine Manager service. If you have installed a high\-availability VMM management server on a cluster, be sure to install the provider on all nodes of the cluster. For more information about installing the provider, refer to the manufacturer’s documentation.
 
 2.  Make sure that you know the manufacturer and model of your gateway, the name of an account that has permission to configure the gateway, the connection string that the gateway will use, and the host groups for which the gateway should be available. If certificates are required for the gateway, for example, if the gateway is in an untrusted domain, make sure you know how to view the thumbprint information for those certificates.
 
-3.  As a best practice, in the operating system of the gateway, ensure that network adapters (physical network adapters, virtual network adapters, or both) have adapter names that indicate their intended use. For example, if your adapters have the default names Ethernet, Ethernet 2, and Ethernet 3, a best practice would be to rename them for their intended uses, such as Management, External, and Tenant. This makes them easy to recognize when you see them in a list in VMM.
+3.  As a best practice, in the operating system of the gateway, ensure that network adapters \(physical network adapters, virtual network adapters, or both\) have adapter names that indicate their intended use. For example, if your adapters have the default names Ethernet, Ethernet 2, and Ethernet 3, a best practice would be to rename them for their intended uses, such as Management, External, and Tenant. This makes them easy to recognize when you see them in a list in VMM.
 
-4.  Ensure that the logical networks (and the associated network sites) that will be connected to the gateway have been configured. The VM networks that will use the gateway must be based on logical networks that use network virtualization and IP address pools.
+4.  Ensure that the logical networks \(and the associated network sites\) that will be connected to the gateway have been configured. The VM networks that will use the gateway must be based on logical networks that use network virtualization and IP address pools.
 
     > [!NOTE]
     > Configure the IP address pools even if you use NAT. IP addresses used by NAT are allocated through the IP address pools.
@@ -46,7 +46,7 @@ If you want to add a gateway to your configuration in VMM, you must first perfor
 
 4.  In the **Fabric** pane, expand **Networking**, and then click **Network Service**.
 
-    Network services include gateways, virtual switch extensions, network managers, and top-of-rack (TOR) switches.
+    Network services include gateways, virtual switch extensions, network managers, and top\-of\-rack \(TOR\) switches.
 
 5.  On the **Home** tab, in the **Add** group, click **Add Resources**, and then click **Network Service**.
 
@@ -74,13 +74,13 @@ If you want to add a gateway to your configuration in VMM, you must first perfor
 
 13. On the **Summary** page, review and confirm the settings, and then click **Finish**.
 
-14. After the gateway is created, under **Network Services**, find the listing for the gateway. Right-click the listing, click **Properties**, click **Connectivity**, and then specify the following:
+14. After the gateway is created, under **Network Services**, find the listing for the gateway. Right\-click the listing, click **Properties**, click **Connectivity**, and then specify the following:
 
-    -   Select **Enable front end connection**, and then select the gateway network adapter and the network site that provide connectivity outside the hosting-provider or enterprise datacenter. If you will allow VPN connections, the network site needs to be routable to and from the Internet. Also, the network site must have a static IP address pool.
+    -   Select **Enable front end connection**, and then select the gateway network adapter and the network site that provide connectivity outside the hosting\-provider or enterprise datacenter. If you will allow VPN connections, the network site needs to be routable to and from the Internet. Also, the network site must have a static IP address pool.
 
-    -   Select **Enable back end connection**, and then select a gateway network adapter and network site in a logical network within the hosting-provider or enterprise datacenter. The logical network must have Hyper-V network virtualization enabled. Also, the network site must have a static IP address pool.
+    -   Select **Enable back end connection**, and then select a gateway network adapter and network site in a logical network within the hosting\-provider or enterprise datacenter. The logical network must have Hyper\-V network virtualization enabled. Also, the network site must have a static IP address pool.
 
-When you are ready to configure the VM network that uses the newly added gateway, open the wizard or property sheet for the VM network, and on the **Connectivity** page or tab, choose the appropriate setting for the connectivity of the gateway. You can choose the setting for a connection through a VPN tunnel, with or without Border Gateway Protocol (BGP), or the setting for connecting directly to an additional logical network, with or without network address translation (NAT). For more information, see [Prerequisites for gateways in VMM](Prerequisites-for-gateways-in-VMM.md).
+When you are ready to configure the VM network that uses the newly added gateway, open the wizard or property sheet for the VM network, and on the **Connectivity** page or tab, choose the appropriate setting for the connectivity of the gateway. You can choose the setting for a connection through a VPN tunnel, with or without Border Gateway Protocol \(BGP\), or the setting for connecting directly to an additional logical network, with or without network address translation \(NAT\). For more information, see [Prerequisites for gateways in VMM](Prerequisites-for-gateways-in-VMM.md).
 
 ## See Also
 [Configuring gateways in VMM](Configuring-gateways-in-VMM.md)

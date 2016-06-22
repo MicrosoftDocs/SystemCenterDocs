@@ -8,7 +8,7 @@ ms.topic: article
 ms.assetid: 7ea7a41f-a294-43a8-a768-f11180ebebd6
 ---
 # How to create a hardware profile
-You can use the following procedure to create a hardware profile in Virtual Machine Manager (VMM). A hardware profile specifies the hardware settings that you want the virtual machine to use when the virtual machine is created and deployed.
+You can use the following procedure to create a hardware profile in Virtual Machine Manager \(VMM\). A hardware profile specifies the hardware settings that you want the virtual machine to use when the virtual machine is created and deployed.
 
 ### To create a hardware profile
 
@@ -20,7 +20,7 @@ You can use the following procedure to create a hardware profile in Virtual Mach
 
 3.  On the **General** tab, in the **Name** box, enter a name for the hardware profile. For example, enter **8 GB 2 processor server**.
 
-    In the **Generation** box, select **Generation 1** or **Generation 2**. (For more information, see [Understanding generation 1 and generation 2 virtual machines in VMM](Understanding-generation-1-and-generation-2-virtual-machines-in-VMM.md).)
+    In the **Generation** box, select **Generation 1** or **Generation 2**. \(For more information, see [Understanding generation 1 and generation 2 virtual machines in VMM](Understanding-generation-1-and-generation-2-virtual-machines-in-VMM.md).\)
 
 4.  Click the **Hardware Profile** tab, and then configure the desired settings. For example, you can configure the following settings:
 

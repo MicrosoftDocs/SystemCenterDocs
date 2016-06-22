@@ -24,7 +24,7 @@ ms.assetid: e13218d6-05f1-46d1-8f10-068a2497aacb
         The hardware requirements for <token>smshort1Token> in  are unchanged from its initial release.</para>
       <table xmlns:caps="http://schemas.microsoft.com/build/caps/2013/11">
         <caption>
-          <?Comment j: PAGE # "'Page: '#''"169361 2012-08-29T14:08:00Z  Id='1?>Hardware requirements table<?CommentEnd Id='1'
+          <?Comment j: PAGE \# "'Page: '#''"169361 2012-08-29T14:08:00Z  Id='1?>Hardware requirements table<?CommentEnd Id='1'
     ?></caption>
         <tbody>
           <tr>
@@ -35,7 +35,7 @@ ms.assetid: e13218d6-05f1-46d1-8f10-068a2497aacb
             <TD>
               <para>8-core 2.66 gigahertz (GHz) CPU</para>
               <para>
-                <?Comment j: PAGE # "'Page: '#''"174421 2012-08-29T14:08:00Z  Id='2?>8 gigabytes (GB) of RAM for 20,000 users, 32 GB of RAM for 50,000 users<?CommentEnd Id='2'
+                <?Comment j: PAGE \# "'Page: '#''"174421 2012-08-29T14:08:00Z  Id='2?>8 gigabytes (GB) of RAM for 20,000 users, 32 GB of RAM for 50,000 users<?CommentEnd Id='2'
     ?></para>
               <para>80 GB of available disk space</para>
               <para>RAID Level 1 or Level 10 drive*</para>
@@ -48,10 +48,10 @@ ms.assetid: e13218d6-05f1-46d1-8f10-068a2497aacb
             </TD>
             <TD>
               <para>
-                <?Comment JD: PAGE # "'Page: '#''"238454 2012-08-29T14:08:00Z  Id='3?>4-Core 2.66 GHz CPU<?CommentEnd Id='3'
+                <?Comment JD: PAGE \# "'Page: '#''"238454 2012-08-29T14:08:00Z  Id='3?>4-Core 2.66 GHz CPU<?CommentEnd Id='3'
     ?></para>
               <para>
-                <?Comment j: PAGE # "'Page: '#''"174421 2012-08-29T14:08:00Z  Id='4?>8 GB of RAM<?CommentEnd Id='4'
+                <?Comment j: PAGE \# "'Page: '#''"174421 2012-08-29T14:08:00Z  Id='4?>8 GB of RAM<?CommentEnd Id='4'
     ?></para>
               <para>10 GB of available disk space</para>
             </TD>
@@ -74,10 +74,10 @@ ms.assetid: e13218d6-05f1-46d1-8f10-068a2497aacb
             </TD>
             <TD>
               <para>
-                <?Comment JD: PAGE # "'Page: '#''"238454 2012-08-29T14:08:00Z  Id='5?>4-Core 2.66 GHz CPU<?CommentEnd Id='5'
+                <?Comment JD: PAGE \# "'Page: '#''"238454 2012-08-29T14:08:00Z  Id='5?>4-Core 2.66 GHz CPU<?CommentEnd Id='5'
     ?></para>
               <para>
-                <?Comment j: PAGE # "'Page: '#''"174421 2012-08-29T14:08:00Z  Id='6?>8 GB of RAM <!--Removed broken links to Hardware Performance--><?CommentEnd Id='6'
+                <?Comment j: PAGE \# "'Page: '#''"174421 2012-08-29T14:08:00Z  Id='6?>8 GB of RAM <!--Removed broken links to Hardware Performance--><?CommentEnd Id='6'
     ?></para>
               <para>When a data warehouse management group and SQL Server Analysis Services are hosted on a single server, it should contain at least 16 GB RAM.</para>
               <para>10 GB of available disk space</para>
@@ -90,7 +90,7 @@ ms.assetid: e13218d6-05f1-46d1-8f10-068a2497aacb
             <TD>
               <para>8-core 2.66 GHz CPU</para>
               <para>
-                <?Comment j: PAGE # "'Page: '#''"174421 2012-08-29T14:08:00Z  Id='7?>8 GB of RAM for 20,000 users, 32 GB of RAM for 50,000 users<?CommentEnd Id='7'
+                <?Comment j: PAGE \# "'Page: '#''"174421 2012-08-29T14:08:00Z  Id='7?>8 GB of RAM for 20,000 users, 32 GB of RAM for 50,000 users<?CommentEnd Id='7'
     ?></para>
               <para>400 GB of available disk space</para>
               <para>RAID Level 1 or Level (1+0) drive</para>
@@ -103,13 +103,13 @@ ms.assetid: e13218d6-05f1-46d1-8f10-068a2497aacb
             </TD>
             <TD>
               <para>
-                <?Comment JD: PAGE # "'Page: '#''"238454 2012-08-29T14:08:00Z  Id='8?>
-                <?Comment j: PAGE # "'Page: '#''"Per discussion with Jim Truher, we are using the same hardware specs at the SM MS for the WCS. 2012-08-29T14:08:00Z  Id='9?>8-Core 2.66 GHz CPU<?CommentEnd Id='9'
+                <?Comment JD: PAGE \# "'Page: '#''"238454 2012-08-29T14:08:00Z  Id='8?>
+                <?Comment j: PAGE \# "'Page: '#''"Per discussion with Jim Truher, we are using the same hardware specs at the SM MS for the WCS. 2012-08-29T14:08:00Z  Id='9?>8-Core 2.66 GHz CPU<?CommentEnd Id='9'
     ?><?CommentEnd Id='8'
     ?></para>
               <para>8-core, 64-bit CPU for medium deployments</para>
               <para>
-                <?Comment j: PAGE # "'Page: '#''"174421 2012-08-29T14:08:00Z  Id='10?>16 GB of RAM for 20,000 users, 32 GB of RAM for 50,000 users.<?CommentEnd Id='10'
+                <?Comment j: PAGE \# "'Page: '#''"174421 2012-08-29T14:08:00Z  Id='10?>16 GB of RAM for 20,000 users, 32 GB of RAM for 50,000 users.<?CommentEnd Id='10'
     ?></para>
               <para>80 GB of available hard disk space</para>
             </TD>

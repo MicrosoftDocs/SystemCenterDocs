@@ -31,9 +31,9 @@ The following two templates are prerequisites for other procedures:
 
 2.  In the **Administration** pane, expand **Notifications**, and then click **Templates**.
 
-3.  In the **Tasks** pane, under **Templates**, click **Create E-mail Template**.
+3.  In the **Tasks** pane, under **Templates**, click **Create E\-mail Template**.
 
-4.  On the **General** page of the Create E-mail Notification Template Wizard, in the **Notification template name** box, type a name. For example, type **New E-mail Incident Template**. Optionally, in the **Description** box, you can type a description for the template that you are creating.
+4.  On the **General** page of the Create E\-mail Notification Template Wizard, in the **Notification template name** box, type a name. For example, type **New E\-mail Incident Template**. Optionally, in the **Description** box, you can type a description for the template that you are creating.
 
 5.  Next to the **Targeted class** box, click **Browse**.
 
@@ -41,7 +41,7 @@ The following two templates are prerequisites for other procedures:
 
 7.  Make sure that an unsealed management pack of your choice is selected, and then click **Next**. For example, select the **Sample Management Pack**.
 
-8.  On the **Template Design** page, in the **Message subject** box, type a subject for the email template. For example, type **New Incident created with ID#**. Then, click **Insert**.
+8.  On the **Template Design** page, in the **Message subject** box, type a subject for the email template. For example, type **New Incident created with ID\#**. Then, click **Insert**.
 
 9. In the **Select Property** dialog box, select **ID**, and then click **Add**.
 
@@ -59,9 +59,9 @@ The following two templates are prerequisites for other procedures:
 
 2.  In the **Administration** pane, expand **Notifications**, and then click **Templates**.
 
-3.  In the **Tasks** pane, under **Templates**, click **Create E-mail Template**.
+3.  In the **Tasks** pane, under **Templates**, click **Create E\-mail Template**.
 
-4.  On the **General** page of the Create E-mail Notification Template Wizard, in the **Notification template name** box, type a name. For example, type **New Standard Change Request Received Template**. Optionally, in the **Description** box, you can type a description for the template that you are creating.
+4.  On the **General** page of the Create E\-mail Notification Template Wizard, in the **Notification template name** box, type a name. For example, type **New Standard Change Request Received Template**. Optionally, in the **Description** box, you can type a description for the template that you are creating.
 
 5.  Next to the **Targeted class** box, click **Browse**.
 
@@ -69,7 +69,7 @@ The following two templates are prerequisites for other procedures:
 
 7.  Make sure that an unsealed management pack of your choice is selected, and then click **Next**. For example, select the **Sample Management Pack**.
 
-8.  On the **Template Design** page, in the **Message subject** box, type a subject for the email template. For example, type **New Standard Change Request with ID#**. Then, click **Insert**.
+8.  On the **Template Design** page, in the **Message subject** box, type a subject for the email template. For example, type **New Standard Change Request with ID\#**. Then, click **Insert**.
 
 9. In the **Select Property** dialog box, select **ID**, and then click **Add**.
 
@@ -87,9 +87,9 @@ The following two templates are prerequisites for other procedures:
 
 2.  In the **Administration** pane, expand **Notifications**, and then click **Templates**.
 
-3.  In the **Tasks** pane, under **Templates**, click **Create E-mail Template**.
+3.  In the **Tasks** pane, under **Templates**, click **Create E\-mail Template**.
 
-4.  On the **General** page of the Create E-mail Notification Template Wizard, in the **Notification template name** box, type a name. For example, type **New Activity Assigned Received Template**. Optionally, in the **Description** box, you can type a description for the template that you are creating.
+4.  On the **General** page of the Create E\-mail Notification Template Wizard, in the **Notification template name** box, type a name. For example, type **New Activity Assigned Received Template**. Optionally, in the **Description** box, you can type a description for the template that you are creating.
 
 5.  Next to the **Targeted class** box, click **Browse**.
 
@@ -97,7 +97,7 @@ The following two templates are prerequisites for other procedures:
 
 7.  Make sure that an unsealed management pack of your choice is selected, and then click **Next**. For example, select the **Sample Management Pack**.
 
-8.  On the **Template Design** page, in the **Message subject** box, type a subject for the email template. For example, type **New Activity Assigned with ID#**. Then, click **Insert**.
+8.  On the **Template Design** page, in the **Message subject** box, type a subject for the email template. For example, type **New Activity Assigned with ID\#**. Then, click **Insert**.
 
 9. In the **Select Property** dialog box, select **ID**, and then click **Add**.
 
@@ -115,14 +115,14 @@ The following two templates are prerequisites for other procedures:
 
 ![](../../media/pssymbol.png)You can use Windows PowerShell commands to complete these and other related tasks, as follows:
 
--   For information about how to use Windows PowerShell to create a new Email template in Service Manager, see [New-SCSMEmailTemplate](http://go.microsoft.com/fwlink/p/?LinkID=225355).
+-   For information about how to use Windows PowerShell to create a new Email template in Service Manager, see [New\-SCSMEmailTemplate](http://go.microsoft.com/fwlink/p/?LinkID=225355).
 
--   For information about how to use Windows PowerShell to retrieve Email templates that are defined in Service Manager, see [Get-SCSMEmailTemplate](http://go.microsoft.com/fwlink/p/?LinkID=225323).
+-   For information about how to use Windows PowerShell to retrieve Email templates that are defined in Service Manager, see [Get\-SCSMEmailTemplate](http://go.microsoft.com/fwlink/p/?LinkID=225323).
 
--   For information about how to use Windows PowerShell to retrieve the content of a Service Manager Email template, see [Get-SCSMEmailTemplateContent](http://go.microsoft.com/fwlink/p/?LinkID=225324).
+-   For information about how to use Windows PowerShell to retrieve the content of a Service Manager Email template, see [Get\-SCSMEmailTemplateContent](http://go.microsoft.com/fwlink/p/?LinkID=225324).
 
--   For information about how to use Windows PowerShell to update properties of an Email template, see [Update-SCSMEmailtemplate](http://go.microsoft.com/fwlink/p/?LinkID=225384).
+-   For information about how to use Windows PowerShell to update properties of an Email template, see [Update\-SCSMEmailtemplate](http://go.microsoft.com/fwlink/p/?LinkID=225384).
 
--   For information about how to use Windows PowerShell to remove an Email template from Service Manager, see [Remove-SCSMEmailTemplate](http://go.microsoft.com/fwlink/p/?LinkId=246064).
+-   For information about how to use Windows PowerShell to remove an Email template from Service Manager, see [Remove\-SCSMEmailTemplate](http://go.microsoft.com/fwlink/p/?LinkId=246064).
 
 

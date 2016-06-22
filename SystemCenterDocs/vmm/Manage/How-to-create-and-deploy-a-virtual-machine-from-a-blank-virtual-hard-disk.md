@@ -8,17 +8,17 @@ ms.topic: article
 ms.assetid: 1d0d6fac-dab5-4e97-9751-1f4035b6aa01
 ---
 # How to create and deploy a virtual machine from a blank virtual hard disk
-Use the following procedure to create a virtual machine from a blank virtual hard disk in Virtual Machine Manager (VMM). After you create the virtual machine, you can install an operating system from an .iso image, from a CD or DVD, or from a network boot if a Pre-Boot Execution Environment (PXE) server is available.
+Use the following procedure to create a virtual machine from a blank virtual hard disk in Virtual Machine Manager \(VMM\). After you create the virtual machine, you can install an operating system from an .iso image, from a CD or DVD, or from a network boot if a Pre\-Boot Execution Environment \(PXE\) server is available.
 
 Before you complete this procedure, note the following:
 
--   To complete the procedure, you must be a member of the Administrator or Delegated Administrator user role, or you must be a self-service user who has the **Deploy** action in the scope of their user role.
+-   To complete the procedure, you must be a member of the Administrator or Delegated Administrator user role, or you must be a self\-service user who has the **Deploy** action in the scope of their user role.
 
--   For a self-service user to store a virtual machine in the library, the following is required:
+-   For a self\-service user to store a virtual machine in the library, the following is required:
 
-    -   The self-service user role must have the **Store and re-deploy** action assigned.
+    -   The self\-service user role must have the **Store and re\-deploy** action assigned.
 
-    -   The self-service user must first deploy the virtual machine to a private cloud, and then store it in the library.
+    -   The self\-service user must first deploy the virtual machine to a private cloud, and then store it in the library.
 
 -   You can customize static IP address settings only if you create a virtual machine from a virtual machine template.
 
@@ -31,7 +31,7 @@ Use the following procedure to create a virtual machine from a blank virtual har
 
 1.  Open the **VMs and Services** workspace.
 
-2.  On the **Home** tab, click the **Create Virtual Machine** drop-down arrow, and then click **Create Virtual Machine**.
+2.  On the **Home** tab, click the **Create Virtual Machine** drop\-down arrow, and then click **Create Virtual Machine**.
 
     The **Create Virtual Machine Wizard** opens.
 
@@ -68,7 +68,7 @@ Use the following procedure to deploy the virtual machine in a private cloud.
 
 ##### To deploy the virtual machine in a private cloud
 
-1.  On the **Select Cloud** page, select the private cloud on which you want to place the virtual machine. If you are connected as an Administrator, you can select the host on which the virtual machine should be deployed in the private cloud. The cloud suggestions are based on a 0-5 star rating. For more information, see [Understanding virtual machine placement and ratings in VMM](Understanding-virtual-machine-placement-and-ratings-in-VMM.md). Verify the settings and modify if required:
+1.  On the **Select Cloud** page, select the private cloud on which you want to place the virtual machine. If you are connected as an Administrator, you can select the host on which the virtual machine should be deployed in the private cloud. The cloud suggestions are based on a 0\-5 star rating. For more information, see [Understanding virtual machine placement and ratings in VMM](Understanding-virtual-machine-placement-and-ratings-in-VMM.md). Verify the settings and modify if required:
 
     -   **Expected utilization**—For a virtual machine that is created from a blank hard disk, the expected utilization is based on standard defaults. For a virtual machine that is created from an existing virtual machine, the default settings are based on past performance of the existing machine. VMM updates host suggestions and ratings in response to modifications made to the expected virtual machine utilization.
 
@@ -78,20 +78,20 @@ Use the following procedure to deploy the virtual machine in a private cloud.
 
     -   **Rating Explanation**—Provides an explanation if a host received a zero rating.
 
-    -   **SAN Explanation** or **Deployment and Transfer Explanation**—Lists any factors that make a storage area network (SAN) transfer unavailable. VMM does not recognize a virtual machine that is stored on a SAN as available for deployment by using SAN transfer if the virtual machine was stored directly in the library when it was created or was added to the library during a library refresh. To avoid this issue, deploy the virtual machine to a host by using a LAN transfer, and then store the virtual machine in the same VMM library, library share, and logical unit number (LUN).
+    -   **SAN Explanation** or **Deployment and Transfer Explanation**—Lists any factors that make a storage area network \(SAN\) transfer unavailable. VMM does not recognize a virtual machine that is stored on a SAN as available for deployment by using SAN transfer if the virtual machine was stored directly in the library when it was created or was added to the library during a library refresh. To avoid this issue, deploy the virtual machine to a host by using a LAN transfer, and then store the virtual machine in the same VMM library, library share, and logical unit number \(LUN\).
 
-        In addition, the **Deployment and Transfer Explanation** tab provides an explanation if fast file copy cannot be used. Fast file copy is based on the Windows Offloaded Data Transfers (ODX) feature, introduced in Windows Server 2012 R2. For information about ODX, see [Windows Offloaded Data Transfers Overview](http://technet.microsoft.com/library/hh831628.aspx).
+        In addition, the **Deployment and Transfer Explanation** tab provides an explanation if fast file copy cannot be used. Fast file copy is based on the Windows Offloaded Data Transfers \(ODX\) feature, introduced in Windows Server 2012 R2. For information about ODX, see [Windows Offloaded Data Transfers Overview](http://technet.microsoft.com/library/hh831628.aspx).
 
 2.  On the **Configure Settings** page, review the virtual machine settings:
 
     1.  In **Locations**, either accept the default virtual machine path on the host to store the virtual machine files, or click **Browse** to specify a different location. Optionally, select the **Add this path to the list of default virtual machine paths on the host** check box.
 
-    2.  In **Machine Resources**, click **Virtual Hard Disk**. Accept the default values, or select a different destination path on the host for the virtual hard drive file (.vhd or .vhdx file). To change the file name, enter a new name in the **File name** box.
+    2.  In **Machine Resources**, click **Virtual Hard Disk**. Accept the default values, or select a different destination path on the host for the virtual hard drive file \(.vhd or .vhdx file\). To change the file name, enter a new name in the **File name** box.
 
     > [!TIP]
-    > To prevent placement from choosing a different value for these settings, click the pin icon next to the setting. Note that self-service users do not see this option.
+    > To prevent placement from choosing a different value for these settings, click the pin icon next to the setting. Note that self\-service users do not see this option.
 
-3.  On the **Select Networks** page, if the page appears, optionally, select the virtual machine network that you want to use, the virtual network, and the virtual LAN (VLAN) ID, if applicable, and then click **Next**.
+3.  On the **Select Networks** page, if the page appears, optionally, select the virtual machine network that you want to use, the virtual network, and the virtual LAN \(VLAN\) ID, if applicable, and then click **Next**.
 
 4.  On the **Add Properties** page, configure the action to take when the host starts or stops, and the operating system that you will install on the virtual machine. Click **Next.**
 
@@ -102,7 +102,7 @@ Use the following procedure to deploy the virtual machine on a host.
 
 ##### To deploy the virtual machine on a host
 
-1.  On the **Select Host** page, view the ratings, click the host on which you want to deploy the virtual machine, and then click **Next**. The host suggestions are based on a 0-5 star rating. For more information, see [Understanding virtual machine placement and ratings in VMM](Understanding-virtual-machine-placement-and-ratings-in-VMM.md). Note the following settings:
+1.  On the **Select Host** page, view the ratings, click the host on which you want to deploy the virtual machine, and then click **Next**. The host suggestions are based on a 0\-5 star rating. For more information, see [Understanding virtual machine placement and ratings in VMM](Understanding-virtual-machine-placement-and-ratings-in-VMM.md). Note the following settings:
 
     -   **Expected utilization**—For a virtual machine that is created from a blank hard disk, the expected utilization is based on standard defaults. For a virtual machine that is created from an existing virtual machine, the default settings are based on past performance of the existing machine. VMM updates host suggestions and ratings in response to modifications that are made to the expected virtual machine utilization.
 
@@ -112,20 +112,20 @@ Use the following procedure to deploy the virtual machine on a host.
 
     -   **Rating Explanation**—Provides an explanation if a host received a zero rating.
 
-    -   **SAN Explanation** or **Deployment and Transfer Explanation**—Lists any factors that make a SAN transfer unavailable. VMM does not recognize a virtual machine that is stored on a SAN as available for deployment by using SAN transfer if the virtual machine was stored directly in the library when it was created or was added to the library during a library refresh. To avoid this issue, deploy the virtual machine to a host by using a LAN transfer, and then store the virtual machine in the same VMM library, library share, and logical unit number (LUN).
+    -   **SAN Explanation** or **Deployment and Transfer Explanation**—Lists any factors that make a SAN transfer unavailable. VMM does not recognize a virtual machine that is stored on a SAN as available for deployment by using SAN transfer if the virtual machine was stored directly in the library when it was created or was added to the library during a library refresh. To avoid this issue, deploy the virtual machine to a host by using a LAN transfer, and then store the virtual machine in the same VMM library, library share, and logical unit number \(LUN\).
 
-        In addition, the **Deployment and Transfer Explanation** tab provides an explanation if fast file copy cannot be used. Fast file copy is based on the Windows Offloaded Data Transfers (ODX) feature, introduced in Windows Server 2012 R2. For information about ODX, see [Windows Offloaded Data Transfers Overview](http://technet.microsoft.com/library/hh831628.aspx).
+        In addition, the **Deployment and Transfer Explanation** tab provides an explanation if fast file copy cannot be used. Fast file copy is based on the Windows Offloaded Data Transfers \(ODX\) feature, introduced in Windows Server 2012 R2. For information about ODX, see [Windows Offloaded Data Transfers Overview](http://technet.microsoft.com/library/hh831628.aspx).
 
 2.  On the **Configure Settings** page, review the settings for the virtual machine:
 
     1.  In **Locations**, either accept the default virtual machine path on the host to store the virtual machine files, or click **Browse** to specify a different location. Optionally, select the **Add this path to the list of default virtual machine paths on the host** check box.
 
-    2.  In **Machine Resources**, click **Virtual Hard Disk**. Accept the default values, or select a different destination path on the host for the virtual hard drive file (.vhd or .vhdx file). To change the file name, enter a new name in the **File name** box.
+    2.  In **Machine Resources**, click **Virtual Hard Disk**. Accept the default values, or select a different destination path on the host for the virtual hard drive file \(.vhd or .vhdx file\). To change the file name, enter a new name in the **File name** box.
 
     > [!TIP]
-    > To prevent placement from choosing a different value for these settings, click the pin icon next to the setting. Note that self-service users do not see this option.
+    > To prevent placement from choosing a different value for these settings, click the pin icon next to the setting. Note that self\-service users do not see this option.
 
-3.  On the **Select Networks** page, if the page appears, optionally, select the virtual machine network that you want to use, the virtual network, and the virtual LAN (VLAN) ID, if applicable, and then click **Next**.
+3.  On the **Select Networks** page, if the page appears, optionally, select the virtual machine network that you want to use, the virtual network, and the virtual LAN \(VLAN\) ID, if applicable, and then click **Next**.
 
 4.  On the **Add Properties** page, configure the action to take when the host starts or stops, and the operating system to install on the virtual machine. Then click **Next**.
 

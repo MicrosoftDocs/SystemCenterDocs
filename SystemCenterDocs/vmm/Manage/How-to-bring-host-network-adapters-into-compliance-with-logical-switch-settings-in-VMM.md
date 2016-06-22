@@ -11,7 +11,7 @@ ms.topic: article
 ms.assetid: cb0fe4a5-8a67-47b2-94a3-a28e614f6a15
 ---
 # How to bring host network adapters into compliance with logical switch settings in VMM
-In Virtual Machine Manager (VMM), you can review and control the configuration of virtual switches that have been created from logical switches. When such a virtual switch is first created, it complies with the settings that are configured in the logical switch. However, the settings on either the virtual switch or the logical switch might later be changed, resulting in a virtual switch that is out of compliance with the corresponding logical switch. VMM provides a straightforward way to see whether a virtual switch is out of compliance, and then to bring the virtual switch back into compliance. Bringing a virtual switch into compliance is also called remediating the virtual switch.
+In Virtual Machine Manager \(VMM\), you can review and control the configuration of virtual switches that have been created from logical switches. When such a virtual switch is first created, it complies with the settings that are configured in the logical switch. However, the settings on either the virtual switch or the logical switch might later be changed, resulting in a virtual switch that is out of compliance with the corresponding logical switch. VMM provides a straightforward way to see whether a virtual switch is out of compliance, and then to bring the virtual switch back into compliance. Bringing a virtual switch into compliance is also called remediating the virtual switch.
 
 ### To view host network adapter settings and increase compliance with logical switch settings
 
@@ -36,9 +36,9 @@ In Virtual Machine Manager (VMM), you can review and control the configuration o
     -   A value of **Non compliant** indicates that the settings on the host are missing from the configuration in VMM. For example, **Non compliant** indicates that none of the IP subnets and VLANs that are defined for the logical network are assigned to the physical adapter. If an adapter is non compliant, you can view the reason in the **Compliance errors** section.
 
     > [!TIP]
-    > In addition to the compliance information, you can also view detailed information about the network adapter, such as the assigned IP address and media access control (MAC) address.
+    > In addition to the compliance information, you can also view detailed information about the network adapter, such as the assigned IP address and media access control \(MAC\) address.
 
-7.  To bring a non-compliant virtual switch into compliance, click the virtual switch and, in the **Network Compliance** group, click **Remediate**. If possible, VMM will bring the virtual switch into compliance.
+7.  To bring a non\-compliant virtual switch into compliance, click the virtual switch and, in the **Network Compliance** group, click **Remediate**. If possible, VMM will bring the virtual switch into compliance.
 
     If you use failover clustering, you might have to review compliance and perform remediation for virtual switches on all nodes of the cluster.
 

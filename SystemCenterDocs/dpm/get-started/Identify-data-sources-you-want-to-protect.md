@@ -17,9 +17,9 @@ To protect data sources with DPM you'll need to do the following:
 
     -   **By computer**—So that all data sources for a computer belonging to the same protection group. This provides a single point of adjustment for the computer’s performance loads. However, all data sources will then have the same backup and recovery settings.
 
-    -   **By workload**—So that you separate files and each application data type into different protection groups. This allows you to manage workloads as a group. However recovering a multi-application server might require multiple tapes from different protection groups.
+    -   **By workload**—So that you separate files and each application data type into different protection groups. This allows you to manage workloads as a group. However recovering a multi\-application server might require multiple tapes from different protection groups.
 
-    -   **By RPO/RTO**—Gather data sources with similar Recovery Point Objectives (RPOs) and Recovery Time Objectives (RTOs). You control the RPO by setting the synchronization frequency for the protection group which determines the amount of potential data loss (in time) in the case of unexpected outages. The RTO measures the acceptable amount of time that data is unavailable and is affected by the storage methods your select for the protection group.
+    -   **By RPO\/RTO**—Gather data sources with similar Recovery Point Objectives \(RPOs\) and Recovery Time Objectives \(RTOs\). You control the RPO by setting the synchronization frequency for the protection group which determines the amount of potential data loss \(in time\) in the case of unexpected outages. The RTO measures the acceptable amount of time that data is unavailable and is affected by the storage methods your select for the protection group.
 
     -   **By data characteristics**—For example how often data changes, how rapidly it grows, or its storage requirements.
 

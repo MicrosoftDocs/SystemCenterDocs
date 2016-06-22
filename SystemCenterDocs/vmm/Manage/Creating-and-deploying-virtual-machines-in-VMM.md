@@ -8,7 +8,7 @@ ms.topic: article
 ms.assetid: b09284a9-a66c-415a-ab43-ee5c4af16583
 ---
 # Creating and deploying virtual machines in VMM
-The following topics describe how to create and deploy virtual machines in Virtual Machine Manager (VMM):
+The following topics describe how to create and deploy virtual machines in Virtual Machine Manager \(VMM\):
 
 -   [Overview: creating and deploying virtual machines in VMM](Overview--creating-and-deploying-virtual-machines-in-VMM.md)
 

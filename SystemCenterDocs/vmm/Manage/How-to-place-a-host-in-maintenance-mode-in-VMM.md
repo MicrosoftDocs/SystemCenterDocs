@@ -8,13 +8,13 @@ ms.topic: article
 ms.assetid: 46ee87d0-2823-4a82-a4b1-c67af1fb607f
 ---
 # How to place a host in maintenance mode in VMM
-In Virtual Machine Manager (VMM), you can start maintenance mode for a virtual machine host whenever you need to perform maintenance tasks on the physical host, such as applying security updates or replacing hardware on the physical host computer. You can place Hyper-V hosts and VMware ESX hosts that are managed by VMM into maintenance mode.
+In Virtual Machine Manager \(VMM\), you can start maintenance mode for a virtual machine host whenever you need to perform maintenance tasks on the physical host, such as applying security updates or replacing hardware on the physical host computer. You can place Hyper\-V hosts and VMware ESX hosts that are managed by VMM into maintenance mode.
 
 When you start maintenance mode on a host, you can do one of the following:
 
 -   Place all running virtual machines into a saved state.
 
--   On a host cluster that is capable of live migration (including VMware vMotion), move all highly available virtual machines to other hosts in the cluster.
+-   On a host cluster that is capable of live migration \(including VMware vMotion\), move all highly available virtual machines to other hosts in the cluster.
 
 > [!CAUTION]
 > Placing a running virtual machine in a saved state causes a loss of service to any users of that virtual machine.

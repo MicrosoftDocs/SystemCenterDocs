@@ -30,7 +30,7 @@ Each runbook in Service Management Automation has a Draft and a Published versio
 7.  Click **Yes** to the verification message.
 
 ## To Publish a Runbook Using Windows PowerShell
-You can use the Publish-SmaRunbook to publish a runbook with Windows PowerShell. The following sample commands show how to publish a runbook.
+You can use the Publish\-SmaRunbook to publish a runbook with Windows PowerShell. The following sample commands show how to publish a runbook.
 
 ```powershell
 $webServer = 'https://MyServer'

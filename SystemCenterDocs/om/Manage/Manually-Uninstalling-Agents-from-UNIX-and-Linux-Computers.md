@@ -13,7 +13,7 @@ ms.assetid: 75b94d49-c630-4096-8130-201dc0e04aca
 # Manually Uninstalling Agents from UNIX and Linux Computers
 There are three ways to uninstall the UNIX and Linux management packs and agents.
 
-1.  Delete selected UNIX or Linux system management packs from the Operations Manager Operations Console.
+1.  Delete selected UNIX or Linux system management packs from the Operations Manager Operations Console.
 
 2.  Delete an agent from Operations Manager, and uninstall the agent from the monitored computer. It will be uninstalled first from the UNIX or Linux computer.
 
@@ -37,7 +37,7 @@ After the UNIX or Linux computer has been deleted from the list of monitored com
 
     **rpm –q scx**
 
-### To uninstall the agent from RPM based Universal Linux servers (Oracle and Centos)
+### To uninstall the agent from RPM based Universal Linux servers \(Oracle and Centos\)
 
 1.  Log on as the root user, and uninstall the agent by typing
 
@@ -47,7 +47,7 @@ After the UNIX or Linux computer has been deleted from the list of monitored com
 
     **rpm –q scx**
 
-### To uninstall the agent from DEB based Universal Linux servers (Debian and Ubuntu)
+### To uninstall the agent from DEB based Universal Linux servers \(Debian and Ubuntu\)
 
 1.  Log on as the root user, and uninstall the agent by typing
 
@@ -67,7 +67,7 @@ After the UNIX or Linux computer has been deleted from the list of monitored com
 
     **pkginfo –I MSFTscx**
 
-### To uninstall the agent from HP-UX
+### To uninstall the agent from HP\-UX
 
 1.  Log on as the root user, and uninstall the agent by typing
 

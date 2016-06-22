@@ -123,7 +123,7 @@ ms.assetid: 84b45ef1-bb8a-48f8-a2d7-5a93157ffc78
                   <para>Location for <token>vmm12shorToken> files.</para>
                 </TD>
                 <TD>
-                  <para>C:Program FilesMicrosoft System Center 2012Virtual Machine Manager</para>
+                  <para>C:\Program Files\Microsoft System Center 2012\Virtual Machine Manager</para>
                 </TD>
               </tr>
               <tr>
@@ -243,7 +243,7 @@ ms.assetid: 84b45ef1-bb8a-48f8-a2d7-5a93157ffc78
                   <para>Location of the existing file share or the new file share to be created.</para>
                 </TD>
                 <TD>
-                  <para>C:ProgramDataVirtual Machine Manager Library Files</para>
+                  <para>C:\ProgramData\Virtual Machine Manager Library Files</para>
                 </TD>
               </tr>
               <tr>
@@ -441,9 +441,9 @@ ms.assetid: 84b45ef1-bb8a-48f8-a2d7-5a93157ffc78
               <para>Notes acceptance of the Microsoft Software License Terms. This is a mandatory parameter.</para>
             </listItem>
           </list>
-          <para>For example, to use a VMServer.ini file that is stored in C:Temp with a SQL Server administrator account of contosoSQLAdmin01 and a <token>vmm12shorToken> service account of contosoVMMadmin14, use the following command:</para>
+          <para>For example, to use a VMServer.ini file that is stored in C:\Temp with a SQL Server administrator account of contoso\SQLAdmin01 and a <token>vmm12shorToken> service account of contoso\VMMadmin14, use the following command:</para>
           <para>
-            <userInput>setup.exe /server /i /f C:TempVMServer.ini /SqlDBAdminDomain contoso /SqlDBAdminName SQLAdmin01 /SqlDBAdminPassword password123 /VmmServiceDomain contoso /VmmServiceUserName VMMadmin14 /VmmServiceUserPassword password456 /IACCEPTSCEULA</userInput>
+            <userInput>setup.exe /server /i /f C:\Temp\VMServer.ini /SqlDBAdminDomain contoso /SqlDBAdminName SQLAdmin01 /SqlDBAdminPassword password123 /VmmServiceDomain contoso /VmmServiceUserName VMMadmin14 /VmmServiceUserPassword password456 /IACCEPTSCEULA</userInput>
           </para>
         </content>
       </section>
@@ -481,7 +481,7 @@ ms.assetid: 84b45ef1-bb8a-48f8-a2d7-5a93157ffc78
                   <para>0: Local SQL Server installation. </para>
                   <para>1: Remote SQL Server installation. </para>
                   <para>When you run <system>setup.exe</system>, provide a value for the <system>SqlDBAdminName</system>, <system>SqlDBAdminPassword,</system> and <system>SqlDBAdminDomain</system> parameters unless the user who is running <system>setup.exe</system> is an administrator for SQL Server.</para>
-                  <para>Replaces the <system>OnRemoteServer</system> setting in VMM 2008 R2.</para>
+                  <para>Replaces the <system>OnRemoteServer</system> setting in VMM 2008 R2.</para>
                 </TD>
                 <TD>
                   <para>0</para>
@@ -522,9 +522,9 @@ ms.assetid: 84b45ef1-bb8a-48f8-a2d7-5a93157ffc78
       <section>
         <title>Uninstalling a VMM management server by using a command prompt</title>
         <content>
-          <para>To uninstall a <token>vmm12shorToken> management server by using a VMServerUninstall.ini file that is stored in C:Temp, with a SQL Server administrator account of contosoSQLAdmin01, use this command:</para>
+          <para>To uninstall a <token>vmm12shorToken> management server by using a VMServerUninstall.ini file that is stored in C:\Temp, with a SQL Server administrator account of contoso\SQLAdmin01, use this command:</para>
           <para>
-            <userInput>setup.exe /server /x /f C:TempVMServerUninstall.ini /SqlDBAdminDomain contoso /SqlDBAdminName SQLAdmin01 /SqlDBAdminPassword password123</userInput>
+            <userInput>setup.exe /server /x /f C:\Temp\VMServerUninstall.ini /SqlDBAdminDomain contoso /SqlDBAdminName SQLAdmin01 /SqlDBAdminPassword password123</userInput>
           </para>
         </content>
       </section>
@@ -567,7 +567,7 @@ ms.assetid: 84b45ef1-bb8a-48f8-a2d7-5a93157ffc78
                   <para>Location for <token>vmm12shorToken> files.</para>
                 </TD>
                 <TD>
-                  <para>C:Program FilesMicrosoft System Center 2012Virtual Machine Manager</para>
+                  <para>C:\Program Files\Microsoft System Center 2012\Virtual Machine Manager</para>
                 </TD>
               </tr>
               <tr>
@@ -645,9 +645,9 @@ ms.assetid: 84b45ef1-bb8a-48f8-a2d7-5a93157ffc78
               </alert>
             </listItem>
           </list>
-          <para>For example, to use a VMClient.ini file that is stored in C:Temp, use this command:</para>
+          <para>For example, to use a VMClient.ini file that is stored in C:\Temp, use this command:</para>
           <para>
-            <userInput>setup.exe /client /i /f C:TempVMClient.ini</userInput>
+            <userInput>setup.exe /client /i /f C:\Temp\VMClient.ini</userInput>
           </para>
         </content>
       </section>

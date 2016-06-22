@@ -17,9 +17,9 @@ The Discovery Wizard does not show computers that the management group is alread
 
 When agents are pushed out to computers, System Center Operations Manager sends credentials that have local administrator rights for that computer; this is required to install the agent.
 
-If the Discovery Wizard is not right for your needs (for example, if you have a set list of computers to which you want to deploy agents), you have the option of manually installing agents on systems to be managed. Agents can also be embedded in the host image of the monitored computer.
+If the Discovery Wizard is not right for your needs \(for example, if you have a set list of computers to which you want to deploy agents\), you have the option of manually installing agents on systems to be managed. Agents can also be embedded in the host image of the monitored computer.
 
-Use the following procedure to discover computers running Windows and to deploy the Operations Manager agent to the discovered computers from the Operations console. For a list of the supported operating system versions, see [Supported Configurations](http://go.microsoft.com/fwlink/p/?LinkID=223642).
+Use the following procedure to discover computers running Windows and to deploy the Operations Manager agent to the discovered computers from the Operations console. For a list of the supported operating system versions, see [Supported Configurations](http://go.microsoft.com/fwlink/p/?LinkID=223642).
 
 > [!NOTE]
 > For information about port requirements for agents, see [Agent and Agentless Monitoring](http://go.microsoft.com/fwlink/p/?LinkId=230474) in the Deployment Guide.
@@ -39,10 +39,10 @@ Use the following procedure to discover computers running Windows and to deploy 
 
 5.  On the **Auto or Advanced?** page, do the following:
 
-    1.  Select either **Automatic computer discovery** or **Advanced discovery**. If you select **Automatic computer discovery**, click **Next**, and then go to step 7. If you select **Advanced discovery**, continue with the following steps.
+    1.  Select either **Automatic computer discovery** or **Advanced discovery**. If you select **Automatic computer discovery**, click **Next**, and then go to step 7. If you select **Advanced discovery**, continue with the following steps.
 
         > [!NOTE]
-        > Automatic computer discovery scans for Windows-based computers in the domain. Advanced discovery allows you to specify criteria for the computers that the wizard will return, such as computer names starting with NY.
+        > Automatic computer discovery scans for Windows\-based computers in the domain. Advanced discovery allows you to specify criteria for the computers that the wizard will return, such as computer names starting with NY.
 
     2.  In the **Computer and Device Classes** list, select **Servers and Clients**, **Servers Only**, or **Clients Only**.
 
@@ -70,9 +70,9 @@ Use the following procedure to discover computers running Windows and to deploy 
 
     If you want to browse Active Directory Domain Services or type the computer names, do the following:
 
-    -   Select **Browse for, or type-in computer names**, click **Browse**, specify the names of the computers that you want to manage, and then click **OK**.
+    -   Select **Browse for, or type\-in computer names**, click **Browse**, specify the names of the computers that you want to manage, and then click **OK**.
 
-    -   In the **Browse for, or type-in computer names** box, type the computer names, separated by a semi-colon, comma, or a new line. You can use NetBIOS computer names or fully qualified domain names (FQDN).
+    -   In the **Browse for, or type\-in computer names** box, type the computer names, separated by a semi\-colon, comma, or a new line. You can use NetBIOS computer names or fully qualified domain names \(FQDN\).
 
 7.  Click **Next**, and on the **Administrator Account** page, do one of the following:
 
@@ -83,14 +83,14 @@ Use the following procedure to discover computers running Windows and to deploy 
         > [!IMPORTANT]
         > The account must have administrative privileges on the targeted computers. If **This is a local computer account, not a domain account** is selected, the management server action account will be used to perform discovery.
 
-8.  Click **Discover** to display the **Discovery Progress** page. The time it takes discovery to finish depends on many factors, such as the criteria specified and the configuration of the IT environment. If a large number (100 or more) of computers are being discovered or agents are being installed, the Operations console will not be usable during discovery and agent installation.
+8.  Click **Discover** to display the **Discovery Progress** page. The time it takes discovery to finish depends on many factors, such as the criteria specified and the configuration of the IT environment. If a large number \(100 or more\) of computers are being discovered or agents are being installed, the Operations console will not be usable during discovery and agent installation.
 
     > [!NOTE]
     > Computers that are already managed by the management group will not be returned by the wizard.
 
 9. On the **Select Objects to Manage** page, do the following:
 
-    1.  Select the computers that you want to be agent-managed computers.
+    1.  Select the computers that you want to be agent\-managed computers.
 
     2.  In the **Management Mode** list, click **Agent** and then click **Next**.
 
@@ -99,10 +99,10 @@ Use the following procedure to discover computers running Windows and to deploy 
 
 10. On the **Summary** page, do the following:
 
-    1.  Leave the **Agent installation directory** set to the default of **%ProgramFiles%\System Center Operations Manager** or type an installation path.
+    1.  Leave the **Agent installation directory** set to the default of **%ProgramFiles%\\System Center Operations Manager** or type an installation path.
 
         > [!IMPORTANT]
-        > If a different **Agent installation directory** is specified, the root of the path must exist on the targeted computer or the agent installation fails. Subdirectories, such as **\Agent**, are created if they do not exist.
+        > If a different **Agent installation directory** is specified, the root of the path must exist on the targeted computer or the agent installation fails. Subdirectories, such as **\\Agent**, are created if they do not exist.
 
     2.  Leave **Agent Action Account** set to the default, **Local System**, or select **Other** and type the **User name**, **Password**, and **Domain**. The Agent Action Account is the default account that the agent will use to perform actions.
 

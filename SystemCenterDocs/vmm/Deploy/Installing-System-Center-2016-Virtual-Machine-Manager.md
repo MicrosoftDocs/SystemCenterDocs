@@ -11,7 +11,7 @@ ms.topic: article
 ms.assetid: 1b4c3f5f-4ade-44c2-8866-f7b37168607d
 ---
 # Installing System Center 2016 Virtual Machine Manager
-This section shows how to install the different components of Virtual Machine Manager (VMM). Before you install VMM, ensure that the computer meets the minimum hardware requirements and that all prerequisite software is installed, as described in the following topics:
+This section shows how to install the different components of Virtual Machine Manager \(VMM\). Before you install VMM, ensure that the computer meets the minimum hardware requirements and that all prerequisite software is installed, as described in the following topics:
 
 -   [System Requirements for System Center Technical Preview](../../system-requirements/System-Requirements-for-System-Center-Technical-Preview.md)
 

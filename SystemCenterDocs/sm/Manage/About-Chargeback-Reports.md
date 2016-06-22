@@ -11,9 +11,9 @@ ms.topic: article
 ms.assetid: 4d4d2c54-b812-4d83-af58-9345b43a05d5
 ---
 # About Chargeback Reports
-As traditional IT transitions into a cloud-optimized IT, service providers are facing a new set of challenges that places a high demand on them. One of the goals of System Center 2016 is to enable and help you, the service provider, to manage the transition, and to help you succeed in your offerings.
+As traditional IT transitions into a cloud\-optimized IT, service providers are facing a new set of challenges that places a high demand on them. One of the goals of System Center 2016 is to enable and help you, the service provider, to manage the transition, and to help you succeed in your offerings.
 
-In traditional IT, infrastructure was largely physical, service level agreements (SLAs) were typically periods of weeks and months, and capacity was owned and managed by the consumers. However, this is no longer true. With the arrival of centrally pooled resources, on-demand self-service, and short SLAs, service consumers can continue their old habits, which are to over-subscribe and underutilize, without having to carry the burden of managing the acquired capacity. If not managed properly, the ability of the service provider can be compromised in these situations.
+In traditional IT, infrastructure was largely physical, service level agreements \(SLAs\) were typically periods of weeks and months, and capacity was owned and managed by the consumers. However, this is no longer true. With the arrival of centrally pooled resources, on\-demand self\-service, and short SLAs, service consumers can continue their old habits, which are to over\-subscribe and underutilize, without having to carry the burden of managing the acquired capacity. If not managed properly, the ability of the service provider can be compromised in these situations.
 
 In System Center, chargeback is one of the tools that help you communicate with business units about how they consume capacity. This helps you by utilize existing investments, proportionate to your customer’s requests. System Center components help you manage the following processes:
 
@@ -31,7 +31,7 @@ Specifically, Chargeback in Service Manager uses information discovered from the
 
 Price sheets, or rate cards, are created in Service Manager for Virtual Machine Manager clouds. The clouds are then assigned to prices sheets. For example, you might have price sheets that are associated to silver and bronze clouds in order to differentiate levels of service.
 
-Service Manager comes with a sample report, but its reporting infrastructure is OLAP cube-based, so you can easily create your own reports. You can easily customize the sample report with colors, logos, or whatever you can think of that will best suit your needs. You can use the OLAP cube information presented in the Data Warehouse workspace to easily create a simple pivot table in Microsoft Excel. After you select fields you like, you can format the data any way you like just like you would any other information in Excel.
+Service Manager comes with a sample report, but its reporting infrastructure is OLAP cube\-based, so you can easily create your own reports. You can easily customize the sample report with colors, logos, or whatever you can think of that will best suit your needs. You can use the OLAP cube information presented in the Data Warehouse workspace to easily create a simple pivot table in Microsoft Excel. After you select fields you like, you can format the data any way you like just like you would any other information in Excel.
 
 It’s important to let customers know that IT resources are limited in their capacity. You can use chargeback or showback reports to show resource utilization and the associated costs to influence consumption behaviors.
 

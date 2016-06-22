@@ -11,11 +11,11 @@ ms.topic: article
 ms.assetid: 7a309623-f597-4fb5-8bfa-728b50dfb334
 ---
 # How to remove a node from a Hyper-V host cluster in VMM
-This topic contains procedures for removing one or more nodes from a host cluster that is managed by Virtual Machine Manager (VMM). At the start of the procedure, the cluster must have at least two nodes.
+This topic contains procedures for removing one or more nodes from a host cluster that is managed by Virtual Machine Manager \(VMM\). At the start of the procedure, the cluster must have at least two nodes.
 
-With a host cluster, the host that you remove becomes a stand-alone host managed in VMM.
+With a host cluster, the host that you remove becomes a stand\-alone host managed in VMM.
 
-### To remove a node from a Hyper-V host cluster
+### To remove a node from a Hyper\-V host cluster
 
 1.  Ensure that the node that you want to remove is in maintenance mode:
 
@@ -23,11 +23,11 @@ With a host cluster, the host that you remove becomes a stand-alone host managed
 
     2.  Locate and click the cluster node that you want to remove, and view the status in the **Hosts** pane.
 
-    3.  If the node is not already in maintenance mode, right-click it and click **Start Maintenance Mode**. Click **Move all virtual machines to other hosts in the cluster**, and then click **OK**.
+    3.  If the node is not already in maintenance mode, right\-click it and click **Start Maintenance Mode**. Click **Move all virtual machines to other hosts in the cluster**, and then click **OK**.
 
     4.  In the **Hosts** pane, verify that the host status is **In Maintenance Mode**.
 
-2.  Right-click the host, and then click **Remove Cluster Node**. When prompted, click **Yes**.
+2.  Right\-click the host, and then click **Remove Cluster Node**. When prompted, click **Yes**.
 
     VMM removes the node from the cluster. Open the **Jobs** workspace to view the job status.
 

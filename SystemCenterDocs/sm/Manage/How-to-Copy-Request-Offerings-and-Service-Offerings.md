@@ -21,7 +21,7 @@ You can use the following procedures to copy a request offering and a service of
 
 2.  In the **Library** pane, expand **Service Catalog**, expand **Request Offerings**, and then select **All Request Offerings**.
 
-3.  In the **All Request Offerings** list, select the request offering that you want to copy, and then in the **Tasks** pane under **<RequestOfferingName\>**, click **Create a Copy** to open the **Copy Request Offering** dialog box.
+3.  In the **All Request Offerings** list, select the request offering that you want to copy, and then in the **Tasks** pane under **\<RequestOfferingName\>**, click **Create a Copy** to open the **Copy Request Offering** dialog box.
 
 4.  In the dialog box, you can optionally select **Also create a copy of the template referred to in this Request Offering** to create a copy of the template.
 
@@ -37,7 +37,7 @@ You can use the following procedures to copy a request offering and a service of
 
 2.  In the **Library** pane, expand **Service Catalog**, expand **Service Offerings**, and then select **All Service Offerings**.
 
-3.  In the **All Service Offerings** list, select the service offering that you want to copy, and then in the **Tasks** pane under **<ServiceOfferingName\>**, click **Create a Copy** to open the **Copy Service Offering** dialog box.
+3.  In the **All Service Offerings** list, select the service offering that you want to copy, and then in the **Tasks** pane under **\<ServiceOfferingName\>**, click **Create a Copy** to open the **Copy Service Offering** dialog box.
 
 4.  Optionally, you can change the management pack where information about the copied service offering is stored or you can create a new management pack.
 

@@ -11,9 +11,9 @@ ms.topic: article
 ms.assetid: 2f172715-1a44-41a9-9560-f4a41b6c8dd1
 ---
 # How to release inactive IP addresses for VM networks in VMM
-With Virtual Machine Manager (VMM) in System Center 2016 Technical Preview, you can use the following procedure to release inactive IP addresses that are in an IP address pool on a VM network. When you release an inactive address, VMM returns the address to the static IP address pool, and considers it available for reassignment. An IP address is considered inactive when either of the following conditions is true:
+With Virtual Machine Manager \(VMM\) in System Center 2016 Technical Preview, you can use the following procedure to release inactive IP addresses that are in an IP address pool on a VM network. When you release an inactive address, VMM returns the address to the static IP address pool, and considers it available for reassignment. An IP address is considered inactive when either of the following conditions is true:
 
--   A host that was assigned a static IP address through the bare-metal deployment process is removed from VMM management. When you remove the host, any IP and MAC addresses that were statically assigned to virtual machines on the host are also marked as inactive.
+-   A host that was assigned a static IP address through the bare\-metal deployment process is removed from VMM management. When you remove the host, any IP and MAC addresses that were statically assigned to virtual machines on the host are also marked as inactive.
 
 -   A virtual machine goes into a missing state because it was removed outside VMM.
 
@@ -34,7 +34,7 @@ With Virtual Machine Manager (VMM) in System Center 2016 Technical Preview, you 
 
 5.  In the **VM Networks and IP Pools** pane, expand the VM network.
 
-6.  Right-click the desired IP address pool, and then click **Properties**.
+6.  Right\-click the desired IP address pool, and then click **Properties**.
 
 7.  Click the **Inactive addresses** tab.
 

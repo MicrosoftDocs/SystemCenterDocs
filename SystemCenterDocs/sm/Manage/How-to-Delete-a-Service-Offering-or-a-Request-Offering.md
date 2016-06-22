@@ -11,7 +11,7 @@ ms.topic: article
 ms.assetid: cda2d242-0c31-4a9e-a381-9afffad5603d
 ---
 # How to Delete a Service Offering or a Request Offering
-Service offerings and their request offerings are available to Self-Service Portal users, when the status of the offering is set to Published and if end users have been assigned a corresponding Service Manager user role. Only users who have been assigned a user role associated with a catalog group that contains catalog items can use the Self-Service Portal to access the service catalog. You can also delete a catalog item when it is no longer needed.
+Service offerings and their request offerings are available to Self\-Service Portal users, when the status of the offering is set to Published and if end users have been assigned a corresponding Service Manager user role. Only users who have been assigned a user role associated with a catalog group that contains catalog items can use the Self\-Service Portal to access the service catalog. You can also delete a catalog item when it is no longer needed.
 
 You can use the following procedures to delete a service offering or a request offering.
 
@@ -23,7 +23,7 @@ You can use the following procedures to delete a service offering or a request o
 
 3.  In the **All Service Offerings** list, select the service offering that you want to delete.
 
-4.  In the **Tasks** list under **<ServiceOfferingName\>**, click **Delete**.
+4.  In the **Tasks** list under **\<ServiceOfferingName\>**, click **Delete**.
 
 5.  In the **Delete Item** dialog box, click **Yes**.
 
@@ -35,7 +35,7 @@ You can use the following procedures to delete a service offering or a request o
 
 3.  In the **All Request Offerings** list, select the request offering that you want to delete.
 
-4.  In the **Tasks** list under **<RequestOfferingName\>**, click **Delete**.
+4.  In the **Tasks** list under **\<RequestOfferingName\>**, click **Delete**.
 
 5.  In the **Delete Item** dialog box, click **Yes**.
 
