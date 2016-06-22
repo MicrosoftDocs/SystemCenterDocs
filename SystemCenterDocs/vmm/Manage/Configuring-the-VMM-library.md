@@ -56,8 +56,13 @@ The VMM library can store the following types of resources:
 
 -   **Self\-service user content**. This node enables self\-service users to upload their own resources such as authored templates, virtual disks, ISO image files, application files, scripts and other building blocks to the VMM library. They can use these resources when they author templates. Because this node enables self\-service users to write to a common file path that other members of their user role have access to, self\-service users with appropriate permissions can share resources with other users in the same or a different self\-service user role.
 
+<<<<<<< HEAD
+
+    > To share with users in a different self\-service user role, the target self\-service user role must have appropriate permissions. 
+=======
     > [!NOTE]
     > To share with users in a different self\-service user role, the target self\-service user role must have appropriate permissions. For information about how to configure permissions for a self\-service user role, see [How to create a Self-Service User role in VMM](How-to-create-a-Self-Service-User-role-in-VMM.md).
+>>>>>>> cbd5a0248f8f546ef51e06ea65d5578a2007427e
 
 -   **Stored virtual machines and services**. Users can choose to store virtual machines that are not in use to the **Stored Virtual Machines and Services** node. This node is available when you expand **Library Servers**, and then expand the library server.
 

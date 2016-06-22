@@ -23,9 +23,3 @@ In addition, NUMA spanning can be enabled or disabled. With spanning enabled, in
 
 For information about how to configure virtual NUMA, see [How to configure virtual NUMA for VMM](How-to-configure-virtual-NUMA-for-VMM.md).
 
-## See Also
-[Configuring virtual machine options and settings](Configuring-virtual-machine-options-and-settings.md)
-[Managing virtual machines with VMM](Managing-virtual-machines-with-VMM.md)
-[Managing tenant resources with VMM](Managing-tenant-resources-with-VMM.md)
-
-

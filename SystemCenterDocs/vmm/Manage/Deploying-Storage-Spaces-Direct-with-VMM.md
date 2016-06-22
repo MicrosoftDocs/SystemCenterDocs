@@ -13,7 +13,6 @@ ms.assetid: bb9bff2f-25fa-4707-998a-b178e85f54f1
 # Deploying Storage Spaces Direct with VMM
 Windows Server 2016 Technical Preview introduces Storage Spaces Direct, which enables building highly available  storage systems with local storage. Then, this storage can be leveraged by VM’s running on the same cluster (hyperconverged deployment) or the storage can be exported as a File Share (disaggregated deployment).
 The hyper-converged deployment scenario has the Hyper-V (compute) and Storage Spaces Direct (storage) components on the same cluster. Virtual machine's files are stored on local CSVs. This allows for simultaneously scaling both Hyper-V compute clusters and the storage it is using. Once Storage Spaces Direct is configured and the CSV volumes are available, configuring and provisioning Hyper-V is the same process and uses the same tools that you would use with any other Hyper-V deployment on a failover cluster. Figure 1 illustrates the hyper-converged deployment stack. 
-
 ![Hyper-Converged StackImage/Hyper-Converged-Stack.png)
 
 **Figure 1: Hyper-converged deployment- – same cluster configured for Storage Spaces Direct and the hosting of virtual machines**
@@ -51,8 +50,8 @@ Next, select the **Enable Storage Spaces Direct** option on the on the **General
 
 The rest of the steps to create the Spaces Direct Cluster are exactly the same as creating a Hyper-V Host Cluster. For step-by-step instructions,  see [How to create a Hyper-V host cluster in VMM using existing hosts](https://technet.microsoft.com/library/mt238037.aspx)
 
-> [!NOTE] As part of the cluster creation wizard, cluster validation is performed as part of Storage Spaces Direct cluster creation (see Figure 4). 
-> [!IMPORTANT] Currently, you cannot use VMM to enable Storage Spaces Direct on a Bare Metal OS on which Nano needs to be enabled.
+As part of the cluster creation wizard, cluster validation is performed as part of Storage Spaces Direct cluster creation (see Figure 4). 
+Currently, you cannot use VMM to enable Storage Spaces Direct on a Bare Metal OS on which Nano needs to be enabled.
 
 
 ![Cluster Resource ScreenImage/Cluster-Resource-Screen.png)
@@ -117,7 +116,7 @@ As part of creating the pool, the physical disks that are part of the hosts in t
  
 The rest of the steps and options for creating a pool using a Spaces Direct cluster are the same as those found here: [How to create or modify a storage pool on a Scale-Out File Server in VMM](https://technet.microsoft.com/library/dn706196(v=sc.16).aspx)
 
->[!NOTE] Using Windows Powershell, the pool and the storage tier is automatically created as part of the “Enable-CLusterS2D autoconfig=true” option. This is currently not supported in VMM Technical Preview 5.
+Using Windows Powershell, the pool and the storage tier is automatically created as part of the “Enable-CLusterS2D autoconfig=true” option. This is currently not supported in VMM Technical Preview 5.
 
 ### Create a Cluster Shared Volume
 
@@ -140,7 +139,7 @@ Now, VM’s can be directly deployed on this cluster with their vhd(s) placed on
 
 The disaggregated mode of Storage Spaces Direct deployment (see Figure 11) has the Hyper-V servers (compute component) in a separate cluster from the Storage Spaces Direct servers (storage component). Virtual machines are configured to store their files on the Scale-Out File Server which is accessed through the network using the SMB3 protocol. This allows for scaling Hyper-V clusters (compute) and Scale Out File Server cluster (storage) independently. For example, the compute nodes are nearing capacity for the number of VMs that they can host but the storage has excess capacity (both disk and IOPS), more compute nodes can be added without adding additional storage nodes.  
 
-![Disaggregated deployment of Storage Spaces Direct](Image/S2DVMMDisaggregated.png)
+![Disaggregated deployment of Storage Spaces Direct](../../media/S2DVMMDisaggregated.png)
 
  **Figure 11: Disaggregated deployment of Storage Spaces Direct**
  

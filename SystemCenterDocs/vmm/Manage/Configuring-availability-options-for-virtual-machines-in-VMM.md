@@ -24,12 +24,6 @@ The following topics describe how to configure availability options for virtual 
 
 -   [How to configure availability sets in VMM for virtual machines on a host cluster](How-to-configure-availability-sets-in-VMM-for-virtual-machines-on-a-host-cluster.md)
 
-## See Also
-[Adding Windows servers as Hyper-V hosts or host clusters in VMM](Adding-Windows-servers-as-Hyper-V-hosts-or-host-clusters-in-VMM.md)
-[Creating a host cluster in VMM from existing Windows servers](Creating-a-host-cluster-in-VMM-from-existing-Windows-servers.md)
-[Deploying Hyper-V hosts or host clusters from bare metal with VMM](Deploying-Hyper-V-hosts-or-host-clusters-from-bare-metal-with-VMM.md)
-[Configuring virtual machine options and settings](Configuring-virtual-machine-options-and-settings.md)
-[Managing virtual machines with VMM](Managing-virtual-machines-with-VMM.md)
-[Managing tenant resources with VMM](Managing-tenant-resources-with-VMM.md)
+
 
 

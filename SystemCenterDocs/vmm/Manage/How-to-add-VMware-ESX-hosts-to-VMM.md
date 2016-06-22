@@ -26,7 +26,7 @@ Before you begin this procedure, make sure that the following prerequisites are 
     For example, create a Run As account that is named **ESX Hosts**.
 
     > [!NOTE]
-    > You can create Run As accounts in the **Settings** workspace. For more information about Run As accounts, see [old_How to create a Run As account in VMM](old_How-to-create-a-Run-As-account-in-VMM.md).
+    > You can create Run As accounts in the **Settings** workspace. F
 
     > [!NOTE]
     > In VMM in System Center 2016 Technical Preview, you do not have to enable Secure Shell \(SSH\) root login on each ESX host. Also note that the use of a virtual machine delegate is not supported.

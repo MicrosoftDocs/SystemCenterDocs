@@ -15,8 +15,6 @@ The topics in this section describe the process for creating a host cluster in V
 
 -   [Prerequisites: creating a host cluster in VMM from existing Windows servers](Prerequisites--creating-a-host-cluster-in-VMM-from-existing-Windows-servers.md)
 
--   [How to create a Hyper-V host cluster in VMM using existing hosts](How-to-create-a-Hyper-V-host-cluster-in-VMM-using-existing-hosts.md)
-
 This topic also provides information about [VMM actions during cluster creation](Creating-a-host-cluster-in-VMM-from-existing-Windows-servers.md#BKMK_workflow) and lists [Example resource names](Creating-a-host-cluster-in-VMM-from-existing-Windows-servers.md#BKMK_example). For information about other ways of creating or adding clusters, see the links at the end of this topic.
 
 ## <a name="BKMK_workflow"></a>How VMM creates a Hyper\-V host cluster
@@ -50,11 +48,6 @@ The following table summarizes the example resource names that you can use:
 |Host group where added|**New York\\Tier0\_NY**|
 |Logical network|**MANAGEMENT**|
 
-## See Also
-[How to add an existing server to a host cluster in VMM](How-to-add-an-existing-server-to-a-host-cluster-in-VMM.md)
-[Deploying Hyper-V hosts or host clusters from bare metal with VMM](Deploying-Hyper-V-hosts-or-host-clusters-from-bare-metal-with-VMM.md)
-[Managing Hyper-V hosts and host clusters with VMM](Managing-Hyper-V-hosts-and-host-clusters-with-VMM.md)
-[Managing hosts and host clusters with VMM](Managing-hosts-and-host-clusters-with-VMM.md)
-[Managing fabric resources with VMM](Managing-fabric-resources-with-VMM.md)
+
 
 

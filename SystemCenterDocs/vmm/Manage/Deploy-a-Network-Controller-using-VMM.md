@@ -65,7 +65,7 @@ The Management logical network models the Management network connectivity for th
 
 6.  Review the **Summary** information and click **Finish** to complete.
 
->[!NOTE]
+
  For a highly available network controller deployment, you need a REST IP address that can be assigned to the network controller service. This REST IP address will be reserved from the Management logical network IP address space. So now create an IP address pool for the Management logical network and reserve an IP address for the network controller service.
 
 ###  To create the IP Address pool in the Management logical network:
@@ -172,7 +172,7 @@ To request a CA-signed certificate for a Windows-based enterprise CA, follow the
 
 After requesting the certificate, use the **Certificates** snap-in (certlm.msc) to export it (located in Personal/Certificates) and its private key into a .pfx file. When exporting, choose **Personal Information Exchange - PKCS \#12 (.PFX)** and accept the default to **Include all certificates in the certification path if possible**. The export wizard requires that you protect the private key by either a security or a password. Be sure to assign a password, as you will need it later during network controller deployment.
 
->[!NOTE]Later, this .PFX certificate should be placed directly in the ServerCertificate.cr folder for use during deployment. Details of ServerCertificate.cr folder are included in following sections in this guide.
+Later, this .PFX certificate should be placed directly in the ServerCertificate.cr folder for use during deployment. Details of ServerCertificate.cr folder are included in following sections in this guide.
 
 ### Network controller deployment
 Now you can prepare to deploy the network controller service template.
@@ -195,7 +195,7 @@ The product key for these virtual hard disks is 6XBNX-4JQGW-QX6QG-74P76-72V67.
 
 This section describes how to import a network controller service template into your VMM library. Before importing a network controller service template, download the template and related resources to your computer from the  [Microsoft SDN GitHub repository](https://github.com/Microsoft/SDN/tree/master/VMM/Templates/NC). You will find four service templates at the repository. While production service templates deploy a three node network controller, standalone service templates deploy a single node network controller.  Use the Network Controller Production Generation 1 VM Service Template for this deployment.
 
->[!NOTE] For TP5, the Network Controller Service template scale-in and scale-out is not supported.
+For TP5, the Network Controller Service template scale-in and scale-out is not supported.
 
 The previous link also contains three custom resource folders: NCSetup.cr, ServerCertificate.cr, and TrustedRootCertificate.cr folders. Ensure you import these resources into the VMM Library and refresh the library before proceeding further.
 
@@ -235,13 +235,13 @@ Use the following procedure to deploy a network controller service instance:
 | LocalAdmin| Required| Select a Run as account in your environment which will be used as the local Administrator on the NC virtual machines.<br><br> User name should be ``.\Administrator``(create if not already present)                                                                                                                                                                                                   |
 | Management| Required| Select the management Logical Network you created earlier|
 | MgmtDomainAccount| Required| Select a Run as account in your environment which will be used to prepare the network controller. This user must be a member of the management security group, specified below, which has privileges to manage the network controller. |
-| MgmtDomainAccountName| Required| This must be the full user name (including domain name) of the Run as account mapped to MgmtDomainAccount.<br><br>Example: ``contoso\Username``.<br><br> **Note:**<br>The domain user name will be added to the Administrators group during deployment. |                                                                                                                                                    |
+| MgmtDomainAccountName| Required| This must be the full user name (including domain name) of the Run as account mapped to MgmtDomainAccount.<br><br>Example: ``contoso\Username``.<br><br> <br>The domain user name will be added to the Administrators group during deployment. |                                                                                                                                                    |
 | MgmtDomainAccountPassword  | Required| Password for the management Run as account mapped to MgmtDomainAccount.                                                                                                                                                                |
 | MgmtDomainFQDN| Required    | Fully qualified domain name for the Active directory domain that the network controller virtual machines will join.<br><br>Example: ``Contoso.com``                                                                                                                                                                                                                    |
 | MgmtSecurityGroup| Required| Name of the security group containing network controller management accounts. This is the group you created previously.<br><br>Example: ``contoso\network controller Management``|
 | RestIPAddress| Required| Enter the VIP address along with the subnet mask from the Management logical network IP address pool you reserved for the network controller earlier.<br><br>Example: ``10.184.109.69/23``                                                                                                                                                                                                               |
 | ServerCertificatePassword  | Required    | Password needed to import the SSL Certificate into the machine store.                                                                                                                                                                  |
->[!NOTE]
+
 It is normal for the virtual machine instances to be initially red. Click **Refresh Preview** to have the deployment service automatically find suitable hosts for the virtual machines to be created.
 
 After you configure these settings, click **Deploy Service** to begin the service deployment job. Deployment times will vary depending on your hardware but are typically between 30 and 60 minutes.
@@ -292,7 +292,7 @@ After the network controller service is successfully deployed, the next step is 
 
 ![VMM Network ServicesImage/VMM-Network-Services.png)
 
->[!NOTE]If you click the properties of the network controller service, you will find the **Logical Network Affinity** section. You don’t need to specify any selection on this page. This is an obsolete page that will be removed in upcoming releases. 
+If you click the properties of the network controller service, you will find the **Logical Network Affinity** section. You don’t need to specify any selection on this page. This is an obsolete page that will be removed in upcoming releases. 
 
 ![VMM NC Properties 2Image/VMM-NC-Properties-2.png)
 
@@ -307,7 +307,7 @@ You can create a new teaming-enabled logical switch and associate it with the Up
 
 The following steps help you convert the existing non-teamed deployment to a teamed deployment by disconnecting all the network controller managed hosts from the existing non-teamed Management logical switch and then deploying a new teaming-enabled logical switch on the hosts.
 
->[!NOTE] The the SDN planning diagram in [Plan a Software Defined Network Infrastructure](https://technet.microsoft.com/library/mt605207.aspx) shows four network controller managed hosts. If you need to use fewer hosts, ensure you have at least three hosts in your set up and the three Network Controller Service virtual machines are spread across all the three hosts. This ensures that as you disconnect and reconnect the network controller virtual machines on each host sequentially, at all stages the Network Controller Service has majority of the virtual machines running so the REST IP movement is reliable.
+The SDN planning diagram in [Plan a Software Defined Network Infrastructure](https://technet.microsoft.com/library/mt605207.aspx) shows four network controller managed hosts. If you need to use fewer hosts, ensure you have at least three hosts in your set up and the three Network Controller Service virtual machines are spread across all the three hosts. This ensures that as you disconnect and reconnect the network controller virtual machines on each host sequentially, at all stages the Network Controller Service has majority of the virtual machines running so the REST IP movement is reliable.
 
 ### To create the SDN switch
 First, let’s create a new teaming enabled logical switch using VMM that you will deploy on network controller managed hosts.
@@ -350,10 +350,9 @@ After you deploy the newly created teamed logical switch to all the hosts in you
 
 Although not required for network controller deployment itself, this section allows you to validate a successful network controller deployment. You will create a network controller managed **HNV Provider** network (sometimes called the "Back End" network)  and configure two tenant VM networks on top of that. You will also test connectivity between two tenant virtual machines deployed on different hosts to ensure the network controller is deployed correctly.
 
->[!NOTE]As a quick validation step, you can also try to access the following URL from a browser on your VMM Server:
->
+As a quick validation step, you can also try to access the following URL from a browser on your VMM Server:
 >``https://<RESTIP-or-FQDN>/networking/v1/servers``
->
+
 >Example:
 >
 >``https://10.184.108.56/networking/v1/servers``
@@ -417,10 +416,10 @@ The previous step makes the HNV Provider logical network accessible to all the h
 
 Next, you will create two VM networks and IP pools for two tenants in your SDN infrastructure.
 
->[!IMPORTANT]
+
 Don't use the first three IP addresses of your available subnet. For example, if your available subnet is from .1 to .254, start your range at .4 or greater.
 
->[!NOTE] Currently you can’t create a VM Network with **No Isolation** for logical networks that are managed by the network controller. You must choose the **Isolate using Hyper-V Network Virtualization** isolation option when creating VM Networks associated with HNV Provider logical networks.
+Currently you can’t create a VM Network with **No Isolation** for logical networks that are managed by the network controller. You must choose the **Isolate using Hyper-V Network Virtualization** isolation option when creating VM Networks associated with HNV Provider logical networks.
 
 To create a VM network and an IP pool based on the HNV Provider logical network, follow the steps in the following Microsoft TechNet Library topic: [How to create a VM network for network virtualization and add an IP address pool in VMM](How-to-create-a-VM-network-for-network-virtualization-and-add-an-IP-address-pool-in-VMM.md)   
 
@@ -441,6 +440,6 @@ To create a virtual machine from an existing virtual hard disk, follow the steps
 
 After you deploy at least two virtual machines connected to your VM Network, you can ping one tenant virtual machine from the other tenant virtual machine to validate that the network controller has been deployed as a network service successfully, and that it can manage the HNV Provider network so that tenant virtual machines can ping each other.
 
->[!NOTE]Ensure that your tenant virtual machines allow IPv4 ICMP through their firewall. By default, Windows Server blocks this.
+Ensure that your tenant virtual machines allow IPv4 ICMP through their firewall. By default, Windows Server blocks this.
 > You can run the following PowerShell cmdlet to allow ICMP v4 in through the firewall: ``New-NetFirewallRule –DisplayName “Allow ICMPv4-In” –Protocol ICMPv4``
 

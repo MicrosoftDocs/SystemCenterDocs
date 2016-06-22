@@ -38,9 +38,5 @@ Use this procedure to create a Delegated Administrator user role in Virtual Mach
 
 After you create a delegated administrator, you can change **Members**, **Scope**, **Library servers**, and **Run As accounts** in the **Properties** dialog box for the Delegated Administrator user role.
 
-## See Also
-[Creating user roles in VMM](Creating-user-roles-in-VMM.md)
-[How to create a Self-Service User role in VMM](How-to-create-a-Self-Service-User-role-in-VMM.md)
-[Securing VMM resources](Securing-VMM-resources.md)
 
 

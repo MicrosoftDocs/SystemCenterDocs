@@ -38,9 +38,4 @@ Use this procedure to create a Read\-Only Administrator user role in Virtual Mac
 
 After you create a read\-only administrator, you can change its **Members**, **Scope**, **Library servers**, and **Run As accounts** in the **Properties** dialog box for the Read\-Only Administrator user role.
 
-## See Also
-[Creating user roles in VMM](Creating-user-roles-in-VMM.md)
-[How to create a Self-Service User role in VMM](How-to-create-a-Self-Service-User-role-in-VMM.md)
-[Securing VMM resources](Securing-VMM-resources.md)
-
 

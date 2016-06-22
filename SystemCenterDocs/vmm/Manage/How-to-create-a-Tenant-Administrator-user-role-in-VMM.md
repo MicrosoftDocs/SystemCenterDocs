@@ -54,9 +54,6 @@ In Virtual Machine Manager \(VMM\), tenant administrators can create and manage 
 
 After you create a Tenant Administrator user role, you can change **Members**, **Scope**, **Networking**, **Resources**, and **Actions** in the **Properties** dialog box for the Tenant Administrator user role.
 
-## See Also
-[Creating user roles in VMM](Creating-user-roles-in-VMM.md)
-[How to create a Self-Service User role in VMM](How-to-create-a-Self-Service-User-role-in-VMM.md)
-[Securing VMM resources](Securing-VMM-resources.md)
+
 
 
