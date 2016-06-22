@@ -13,7 +13,7 @@ ms.assetid: a52f6f49-795a-43d1-a6d6-d86140c7d9d6
 # How to Subscribe to Notifications
 After you create a notification template, and after you have enabled at least one notification channel, you can use the following procedure to subscribe to notifications by using the Notification Subscription Wizard. Then, notifications will be sent when an object is created or updated or periodically when other criteria that you specify are met.
 
-The scenarios in this topic center on the Create E\-Mail Notification Subscription Wizard. The condition that you choose to notify will dynamically change the wizard pages that are available.
+The scenarios in this topic center on the Create E-Mail Notification Subscription Wizard. The condition that you choose to notify will dynamically change the wizard pages that are available.
 
 In the first procedure, you set up a subscription so that a messaging analyst is notified when a new incident that pertains to an email problem is opened. In the second procedure, you set up a subscription so that daily status updates are sent to the release manager while the HR web application is in development, testing, and deployment.
 
@@ -28,9 +28,9 @@ In the first procedure, you set up a subscription so that a messaging analyst is
 
 3.  In the **Tasks** pane, click **Create Subscription**.
 
-4.  On the **Before You Begin** page of the Create E\-mail Notification Subscription Wizard, click **Next**.
+4.  On the **Before You Begin** page of the Create E-mail Notification Subscription Wizard, click **Next**.
 
-5.  On the **General** page, in the **Notification subscription name** box, type a name. For example, type **New Incident for E\-mail Problem Notification Subscription**. Optionally, in the **Description** box, you can type a description for the subscription that you are creating.
+5.  On the **General** page, in the **Notification subscription name** box, type a name. For example, type **New Incident for E-mail Problem Notification Subscription**. Optionally, in the **Description** box, you can type a description for the subscription that you are creating.
 
 6.  Next to the **Targeted class** box, click **Browse**.
 
@@ -42,11 +42,11 @@ In the first procedure, you set up a subscription so that a messaging analyst is
 
 10. On the **Additional Criteria** page, select **Incident**. In the **Available Properties** list, select **Classification Category**, and then click **Add**.
 
-11. On the **Additional Criteria** page, click the **Criteria** tab. In the **Criteria** area, next to **\[Incident\] Classification Category**, select **equals**. In the list, select **E\-mail Problems**, and then click **Next**.
+11. On the **Additional Criteria** page, click the **Criteria** tab. In the **Criteria** area, next to **[Incident] Classification Category**, select **equals**. In the list, select **E-mail Problems**, and then click **Next**.
 
-12. On the **Template** page, next to the **E\-mail template** box, click **Select**.
+12. On the **Template** page, next to the **E-mail template** box, click **Select**.
 
-13. In the **Select Objects** dialog box, in the **Templates** list, select a notification template. For example, select **New E\-mail Incident Template**, click **OK**, and then click **Next**.
+13. In the **Select Objects** dialog box, in the **Templates** list, select a notification template. For example, select **New E-mail Incident Template**, click **OK**, and then click **Next**.
 
 14. On the **Recipient** page, click **Add**.
 
@@ -71,7 +71,7 @@ In the first procedure, you set up a subscription so that a messaging analyst is
 
 3.  In the **Tasks** pane, click **Create Subscription**.
 
-4.  On the **Before You Begin** page of the Create E\-mail Notification Subscription Wizard, click **Next**.
+4.  On the **Before You Begin** page of the Create E-mail Notification Subscription Wizard, click **Next**.
 
 5.  On the **General** page, in the **Notification subscription name** box, type a name. For example, type **Daily Notification for Deploy HR Web 2.0 Release Record**. Optionally, in the **Description** box, you can type a description for the subscription that you are creating. For example, type **This subscription sends a daily notification of the status for the HR Web 2.0 release record**.
 
@@ -85,13 +85,13 @@ In the first procedure, you set up a subscription so that a messaging analyst is
 
 10. On the **Additional Criteria** page, select **Release Record**. In the **Available Properties** list, select **Status**, and then click **Add**.
 
-11. In the **Criteria** area, next to **\[Release Record\] Status**, select **does not equal**. In the list, select **Closed**, and then click **Next**.
+11. In the **Criteria** area, next to **[Release Record] Status**, select **does not equal**. In the list, select **Closed**, and then click **Next**.
 
-12. On the **Recurring Notification** page under **Recurrence pattern**, select **Notify every \<TimeInterval\>** and then choose an interval. For example, set the recurrence pattern to every 1 day.
+12. On the **Recurring Notification** page under **Recurrence pattern**, select **Notify every <TimeInterval\>** and then choose an interval. For example, set the recurrence pattern to every 1 day.
 
 13. On the **Recurring Notification** page under **Range of recurrence**, select a range of recurrence or choose no end date. For example, select **No end date**.
 
-14. On the **Template** page, next to the **E\-mail template** box, click **Select**.
+14. On the **Template** page, next to the **E-mail template** box, click **Select**.
 
 15. In the **Select Template** dialog box, in the **Templates** list, select a notification template that you have created for release record notifications.
 
@@ -116,12 +116,12 @@ In the first procedure, you set up a subscription so that a messaging analyst is
 
 ![](../../media/pssymbol.png)You can use a Windows PowerShell command to complete these tasks and other related tasks, as follows:
 
--   For information about how to use Windows PowerShell to create a new subscription in Service Manager, see [New\-SCSMSubscription](http://go.microsoft.com/fwlink/p/?LinkID=225359).
+-   For information about how to use Windows PowerShell to create a new subscription in Service Manager, see [New-SCSMSubscription](http://go.microsoft.com/fwlink/p/?LinkID=225359).
 
--   For information about how to use Windows PowerShell to retrieve subscriptions that are configured in Service Manager, see [Get\-SCSMSubscription](http://go.microsoft.com/fwlink/p/?LinkID=225333).
+-   For information about how to use Windows PowerShell to retrieve subscriptions that are configured in Service Manager, see [Get-SCSMSubscription](http://go.microsoft.com/fwlink/p/?LinkID=225333).
 
--   For information about how to use Windows PowerShell to update subscription properties in Service Manager, see [Update\-SCSMSubscription](http://go.microsoft.com/fwlink/p/?LinkID=225388).
+-   For information about how to use Windows PowerShell to update subscription properties in Service Manager, see [Update-SCSMSubscription](http://go.microsoft.com/fwlink/p/?LinkID=225388).
 
--   For information about how to use Windows PowerShell to remove a subscription from Service Manager, see [Remove\-SCSMSubscription](http://go.microsoft.com/fwlink/p/?LinkID=225370).
+-   For information about how to use Windows PowerShell to remove a subscription from Service Manager, see [Remove-SCSMSubscription](http://go.microsoft.com/fwlink/p/?LinkID=225370).
 
 

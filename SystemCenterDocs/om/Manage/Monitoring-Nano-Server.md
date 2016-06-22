@@ -11,7 +11,7 @@ ms.topic: article
 ms.assetid: 3b1e34e3-7a86-42f3-acc6-363fc00b0e62
 ---
 # Monitoring Nano Server
-Windows Server 2016 Technical Preview Nano Server is a new installation option introduced in Windows Server® Technical Preview. Nano Server is optimized for private cloud and datacenter operations. With System Center 2016 Technical Preview \- Operations Manager you can now monitor Nano Server by installing the Operations Manager agent.
+Windows Server 2016 Technical Preview Nano Server is a new installation option introduced in Windows Server® Technical Preview. Nano Server is optimized for private cloud and datacenter operations. With System Center 2016 Technical Preview - Operations Manager you can now monitor Nano Server by installing the Operations Manager agent.
 
 ## Nano Server monitoring capabilities
 With the release of Nano Server you can  monitor the basic operations of the Server by using the Windows Server Operating System Management Pack. You can also monitor a Nano Server running the following workloads:
@@ -70,7 +70,7 @@ There are several limitations in this release of the Nano Server agent. The foll
     > [!NOTE]
     > The  Nano Server must be in  the same domain as the Operations Manager Management Server.
 
-2.  Add the Microsoft\-OneCore\-ReverseForwarders package as described in the Getting Started with Nano Server topic.
+2.  Add the Microsoft-OneCore-ReverseForwarders package as described in the Getting Started with Nano Server topic.
 
 3.  Join the Nano Server to the same domain as the  Operations Manager Management Server.
 There are two methods available for installing the Operations Manager agent on Nano Servers, Discovery Wizard from the Operations console or PowerShell script.  The process of installing the agent using the Discovery Wizard is consistent with the steps described in the following document [Use the Discovery Wizard to Deploy Agents](Install-Agent-on-Windows-Using-the-Discovery-Wizard.xml).
@@ -81,7 +81,7 @@ Use the following procedure to install the agent with a PowerShell script.
 
 2.  Open a PowerShell command window on the Nano Server from a computer running in the same domain as the Nano Server.
 
-3.  Set the file path on the Nano Server to NanoAgent\\NanoServer
+3.  Set the file path on the Nano Server to NanoAgent\NanoServer
 
 4.  Run the following script:
 
@@ -90,7 +90,7 @@ Use the following procedure to install the agent with a PowerShell script.
     ```
 
     > [!NOTE]
-    > If the installation is successful you will see "Installation successful" in the Installlog.txt file which the installer will add to the NanoAgent\\NanoServer directory on the Nano Server. You should not see any errors in that file.
+    > If the installation is successful you will see "Installation successful" in the Installlog.txt file which the installer will add to the NanoAgent\NanoServer directory on the Nano Server. You should not see any errors in that file.
 
 8.  Run the following command on the Nano Server:
 
@@ -102,7 +102,7 @@ Use the following procedure to install the agent with a PowerShell script.
 
 1.  Open the Services console on a computer joined to the same domain as the Nano Server by running the running the services.msc command.
 
-2.  Connect to the Nano Server in the Action panel by specifying the Fully Qualified Domain Name \(FQDN\) of the Nano Server.
+2.  Connect to the Nano Server in the Action panel by specifying the Fully Qualified Domain Name (FQDN) of the Nano Server.
 
 3.  Verify that the Status of the Microsoft Monitoring Agent Service is "Running".
 
@@ -125,7 +125,7 @@ Use the following procedure to install the agent with a PowerShell script.
 
 1.  Open a PowerShell window as an administrator on the Nano Server.
 
-2.  Change to the \\NanoAgent\\NanoServer folder.
+2.  Change to the \NanoAgent\NanoServer folder.
 
 3.  Run the following script:
 
@@ -134,6 +134,6 @@ Use the following procedure to install the agent with a PowerShell script.
     ```
 
     > [!NOTE]
-    > You can  validate that the Operations Manager agent has been removed by checking that the uninstalllog.txt file in the \\NanoAgent\\NanoServer folder does not contain any errors and that  you see the message "Successfully un\-installed the agent from Nano Server" in the log file.
+    > You can  validate that the Operations Manager agent has been removed by checking that the uninstalllog.txt file in the \NanoAgent\NanoServer folder does not contain any errors and that  you see the message "Successfully un-installed the agent from Nano Server" in the log file.
 
 

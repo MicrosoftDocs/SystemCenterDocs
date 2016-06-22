@@ -23,7 +23,7 @@ Use the following procedures to add a user to the Service Manager Advanced Opera
 
 2.  In the **Administration** pane, expand **Security**, and then select **User Roles**.
 
-3.  In the **User Roles** pane, double\-click **Advanced Operators**.
+3.  In the **User Roles** pane, double-click **Advanced Operators**.
 
 4.  In the **Edit User Role** dialog box, click **Users**.
 
@@ -37,6 +37,6 @@ Use the following procedures to add a user to the Service Manager Advanced Opera
 
 -   Log on to the Service Manager console as one of the users assigned to the user role. Verify that you cannot access data for which you do not have access rights, as specified in the user roles.
 
-![](../../media/pssymbol.png)You can use a Windows PowerShell command to view users. For information about how to use Windows PowerShell to retrieve users that are defined in Service Manager, see [Get\-SCSMUser](http://go.microsoft.com/fwlink/p/?LinkId=225335).
+![](../../media/pssymbol.png)You can use a Windows PowerShell command to view users. For information about how to use Windows PowerShell to retrieve users that are defined in Service Manager, see [Get-SCSMUser](http://go.microsoft.com/fwlink/p/?LinkId=225335).
 
 

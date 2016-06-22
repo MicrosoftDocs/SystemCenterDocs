@@ -11,7 +11,7 @@ ms.topic: article
 ms.assetid: 86b13898-ecdf-430a-90b7-67c66fc956c0
 ---
 # How to Create a Service Offering
-Service offerings are logical groups of request offerings. Both service offerings and their request offerings are available to Self\-Service Portal users, when their status is set to Published and if end users have been assigned a corresponding Service Manager user role. Only users who have been assigned a user role that is associated with a catalog group that contains catalog items can use the Self\-Service Portal to access the service catalog.
+Service offerings are logical groups of request offerings. Both service offerings and their request offerings are available to Self-Service Portal users, when their status is set to Published and if end users have been assigned a corresponding Service Manager user role. Only users who have been assigned a user role that is associated with a catalog group that contains catalog items can use the Self-Service Portal to access the service catalog.
 
 ### To create a service offering
 
@@ -33,15 +33,15 @@ Service offerings are logical groups of request offerings. Both service offering
 
     4.  In the **Language** list, either leave the default selection or select a language.
 
-    5.  In the **Overview** text box, type a short overview to describe the service offering that will be shown on the Self\-Service Portal home page. For example, type **Access to AD Group, Access to Labs**.
+    5.  In the **Overview** text box, type a short overview to describe the service offering that will be shown on the Self-Service Portal home page. For example, type **Access to AD Group, Access to Labs**.
 
-    6.  In the description box, type a description that will appear on the service offering page in the Self\-Service Portal.
+    6.  In the description box, type a description that will appear on the service offering page in the Self-Service Portal.
 
     7.  Next to **Management pack**, select an unsealed management pack of your choice, and then click **Next**. For example, if you previously created the Sample Management Pack, select it.
 
 6.  On the **Detailed Information** page, complete these steps:
 
-    1.  In the **Service level agreement information** box, type a summary of the service level agreement \(SLA\) information. For example, type **The SLAs for these requests, depending on the criticality of the requests, range from 1\-2 business days. For more information, click the link below.**
+    1.  In the **Service level agreement information** box, type a summary of the service level agreement (SLA) information. For example, type **The SLAs for these requests, depending on the criticality of the requests, range from 1-2 business days. For more information, click the link below.**
 
     2.  In the first **Link for additional information** box, type a hyperlink that users can click to view additional information about the SLA for this service offering.
 

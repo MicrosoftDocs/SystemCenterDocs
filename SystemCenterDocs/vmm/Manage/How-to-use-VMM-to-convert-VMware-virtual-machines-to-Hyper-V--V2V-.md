@@ -10,10 +10,10 @@ ms.topic: article
 ms.assetid: 4deab84b-42c2-43c7-b528-3420925cbdcd
 ---
 # How to use VMM to convert VMware virtual machines to Hyper-V (V2V)
-You can use the following procedure to convert a VMware virtual machine to a Hyper\-V virtual machine through the virtual\-to\-virtual \(V2V\) machine conversion process in Virtual Machine Manager \(VMM\). The source virtual machine can be stored in the VMM library or managed by a VMware ESX host.
+You can use the following procedure to convert a VMware virtual machine to a Hyper-V virtual machine through the virtual-to-virtual (V2V) machine conversion process in Virtual Machine Manager (VMM). The source virtual machine can be stored in the VMM library or managed by a VMware ESX host.
 
 > [!NOTE]
-> You can also perform V2V conversions with Microsoft Virtual Machine Converter \(MVMC\). For more information, see [Microsoft Virtual Machine Converter 3.0](http://technet.microsoft.com/library/dn873998.aspx).
+> You can also perform V2V conversions with Microsoft Virtual Machine Converter (MVMC). For more information, see [Microsoft Virtual Machine Converter 3.0](http://technet.microsoft.com/library/dn873998.aspx).
 
 **Before you begin**
 
@@ -21,25 +21,25 @@ Before you begin, there are several things you need to be aware of concerning V2
 
 -   VMM does not support converting VMware Workstations.
 
--   VMM does not support converting VMware virtual machines with virtual hard disks that are connected to an integrated drive electronics \(IDE\) bus.
+-   VMM does not support converting VMware virtual machines with virtual hard disks that are connected to an integrated drive electronics (IDE) bus.
 
--   Online V2V conversions are not supported. This means VMware virtual machines must be offline \(powered off\).
+-   Online V2V conversions are not supported. This means VMware virtual machines must be offline (powered off).
 
--   You must stop any anti\-virus applications that are running.
+-   You must stop any anti-virus applications that are running.
 
 -   You must uninstall VMware Tools on the guest operating system of the virtual machine. For information about VMWare Tools, see [Overview of VMware Tools](http://kb.vmware.com/selfservice/microsites/search.do?language=en_US&cmd=displayKC&externalId=340).
 
-VMM in System Center 2016 Technical Preview supports the V2V machine conversion of virtual machines that are running on the following versions of VMware ESX:
+VMM in System Center 2016 Technical Preview supports the V2V machine conversion of virtual machines that are running on the following versions of VMware ESX:
 
--   ESX\/ESXi 4.1
+-   ESX/ESXi 4.1
 
--   ESXi 5.1
+-   ESXi 5.1
 
-### To convert VMware virtual machines to Hyper\-V using the Convert Virtual Machine Wizard
+### To convert VMware virtual machines to Hyper-V using the Convert Virtual Machine Wizard
 
 1.  Open the **VMs and Services** workspace.
 
-2.  On the **Home** tab, in the **Create** group, click the **Create Virtual Machine** drop\-down arrow, and then click **Convert Virtual Machine**.
+2.  On the **Home** tab, in the **Create** group, click the **Create Virtual Machine** drop-down arrow, and then click **Convert Virtual Machine**.
 
     The Convert Virtual Machine Wizard opens.
 
@@ -59,7 +59,7 @@ VMM in System Center 2016 Technical Preview supports the V2V machine conversion 
 
 7.  On the **Virtual Machine Configuration** page, configure the number of processors and assign the amount of memory in megabytes or gigabytes, and then click **Next**.
 
-8.  On the **Select Host** page, select a Hyper\-V host for placement, and then click **Next**.
+8.  On the **Select Host** page, select a Hyper-V host for placement, and then click **Next**.
 
 9. On the **Select Path** page, do the following, and then click **Next**:
 
@@ -70,7 +70,7 @@ VMM in System Center 2016 Technical Preview supports the V2V machine conversion 
 
     2.  To add the path to the list of storage locations on the virtual machine host, select the **Add this path to the list of default storage locations on the host** check box.
 
-10. On the **Select Networks** page, select the logical network, the virtual network, and the virtual LAN \(VLAN\), if applicable, to use for the virtual machine, and then click **Next**.
+10. On the **Select Networks** page, select the logical network, the virtual network, and the virtual LAN (VLAN), if applicable, to use for the virtual machine, and then click **Next**.
 
     > [!NOTE]
     > The list of available logical networks, virtual networks, and VLANs matches what is configured on the host physical network adapters.
@@ -83,7 +83,7 @@ VMM in System Center 2016 Technical Preview supports the V2V machine conversion 
 
 13. To verify that the virtual machine was converted, do the following:
 
-    1.  In the **VMs and Services** workspace, locate and then click the Hyper\-V host which you selected during placement.
+    1.  In the **VMs and Services** workspace, locate and then click the Hyper-V host which you selected during placement.
 
     2.  On the **Home** tab, in the **Show** group, click **VMs**.
 

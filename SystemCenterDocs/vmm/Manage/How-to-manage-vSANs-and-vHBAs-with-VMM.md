@@ -8,13 +8,13 @@ ms.topic: article
 ms.assetid: a64b46b0-5ce6-435a-8de6-70a86c2b0ff5
 ---
 # How to manage vSANs and vHBAs with VMM
-A virtual storage area network \(vSAN\) is a named group of physical Fibre Channel Host Bus Adapter \(HBA\) ports on a host computer that a VM connects to in order to access Fibre Channel storage devices. One or more vSANs can be created for each host computer. Each vSAN can only contain HBAs that are from the same fabric.
+A virtual storage area network (vSAN) is a named group of physical Fibre Channel Host Bus Adapter (HBA) ports on a host computer that a VM connects to in order to access Fibre Channel storage devices. One or more vSANs can be created for each host computer. Each vSAN can only contain HBAs that are from the same fabric.
 
-Virtual Host Bus Adapters \(vHBAs\) represent the virtualization of Fibre Channel HBAs, and are used by VMs to connect with vSANs. Each vHBA has a World Wide Node Name \(WWNN\), which is different than the host HBA WWNN.
+Virtual Host Bus Adapters (vHBAs) represent the virtualization of Fibre Channel HBAs, and are used by VMs to connect with vSANs. Each vHBA has a World Wide Node Name (WWNN), which is different than the host HBA WWNN.
 
-Using N\_Port ID Virtualization \(NPIV\), a host computer HBA can map to multiple vHBAs. HBA ports assigned to a vSAN can be added or removed as needed.
+Using N_Port ID Virtualization (NPIV), a host computer HBA can map to multiple vHBAs. HBA ports assigned to a vSAN can be added or removed as needed.
 
-Use the following procedures to manage vSANs with Virtual Machine Manager \(VMM\):
+Use the following procedures to manage vSANs with Virtual Machine Manager (VMM):
 
 -   [To create a vSAN and assign HBAs to it](#BKMK_CreateVSAN)
 
@@ -30,7 +30,7 @@ Use the following procedures to manage vSANs with Virtual Machine Manager \(VMM\
 
 1.  Open the **Fabric** workspace.
 
-2.  In the **Fabric** pane, right\-click the applicable host, and then click **Properties**.
+2.  In the **Fabric** pane, right-click the applicable host, and then click **Properties**.
 
 3.  On the **Properties** page, click the **Hardware** tab, then click **New Virtual SAN**, and do the following:
 
@@ -38,7 +38,7 @@ Use the following procedures to manage vSANs with Virtual Machine Manager \(VMM\
 
     2.  In the **Description** box, enter a description for the vSAN.
 
-    3.  Under **Fibre Channel adapters**, select the check boxes next to the Fibre Channel adapters \(HBAs\) that you want to assign to the vSAN.
+    3.  Under **Fibre Channel adapters**, select the check boxes next to the Fibre Channel adapters (HBAs) that you want to assign to the vSAN.
 
     4.  When completed, click **OK**.
 
@@ -46,7 +46,7 @@ Use the following procedures to manage vSANs with Virtual Machine Manager \(VMM\
 
 1.  Open the **Fabric** workspace.
 
-2.  In the **Fabric** pane, right\-click the applicable host, and then click **Properties**.
+2.  In the **Fabric** pane, right-click the applicable host, and then click **Properties**.
 
 3.  On the **Properties** page, click the **Hardware** tab, and then scroll down to **FC Virtual SAN**.
 
@@ -56,24 +56,24 @@ Use the following procedures to manage vSANs with Virtual Machine Manager \(VMM\
 
 1.  Open the **Fabric** workspace.
 
-2.  In the **Fabric** pane, right\-click the applicable host, and then click **Properties**.
+2.  In the **Fabric** pane, right-click the applicable host, and then click **Properties**.
 
 3.  On the **Properties** page, click the **Hardware** tab, and then scroll down to **FC Virtual SAN**.
 
     > [!NOTE]
     > Before you remove a vSAN, remove any vHBAs attached to the vSAN.
 
-4.  Right\-click the applicable vSAN, click **Delete**, and then click **OK**.
+4.  Right-click the applicable vSAN, click **Delete**, and then click **OK**.
 
 ## <a name="BKMK_AddVHBA"></a>To add a new vHBA and assign it to a vSAN
 
 1.  Open the **Fabric** workspace.
 
-2.  In the **Fabric** pane, right\-click the applicable host, and then click **Properties**.
+2.  In the **Fabric** pane, right-click the applicable host, and then click **Properties**.
 
 3.  On the **Properties** page, click the **Hardware Configuration** tab, click **New**, click **Fibre Channel Adapter**, and then do the following:
 
-    1.  In the **Virtual SAN name** box, select a vSAN from the drop\-down list to assign to the vHBA.
+    1.  In the **Virtual SAN name** box, select a vSAN from the drop-down list to assign to the vHBA.
 
     2.  If you want to dynamically assign the range of port settings for the vHBA, click **Dynamically assign World Wide Names**.
 
@@ -85,7 +85,7 @@ Use the following procedures to manage vSANs with Virtual Machine Manager \(VMM\
 
 1.  Open the **Fabric** workspace.
 
-2.  In the **Fabric** pane, right\-click the applicable host, and then click **Properties**.
+2.  In the **Fabric** pane, right-click the applicable host, and then click **Properties**.
 
 3.  On the **Properties** page, click the **Hardware** tab, and then scroll down to **Global FC settings**.
 

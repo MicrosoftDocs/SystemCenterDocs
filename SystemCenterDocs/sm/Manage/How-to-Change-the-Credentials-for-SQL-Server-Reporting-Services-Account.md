@@ -15,9 +15,9 @@ If the account that is used for the SQL Server Reporting Services account change
 
 ### To change the credentials for the SQL Server Reporting Services account
 
-1.  On the computer hosting SQL Server Reporting Server \(SSRS\), start a browser, and connect to `http://<server name>/reports`.
+1.  On the computer hosting SQL Server Reporting Server (SSRS), start a browser, and connect to `http://<server name>/reports`.
 
-2.  On the **SQL Server Reporting Services Home** page, double\-click **Service Manager**, and then double\-click **DWStagingAndConfig**.
+2.  On the **SQL Server Reporting Services Home** page, double-click **Service Manager**, and then double-click **DWStagingAndConfig**.
 
 3.  In the **Connect using** area, click **Credentials stored securely in the report server**, type the current credentials in the **User name** and **Password** boxes, and then click **Apply**.
 

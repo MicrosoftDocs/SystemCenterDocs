@@ -1,1 +1,1 @@
-System Center 2012 – Virtual Machine Manager \(VMM\)
+System Center 2012 – Virtual Machine Manager (VMM)

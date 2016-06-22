@@ -8,7 +8,7 @@ ms.topic: article
 ms.assetid: 8a9a055f-1f56-4b26-994e-e32fcc272312
 ---
 # How to update WSUS settings in VMM
-Use the following procedure to update the properties of the Windows Server Update Services \(WSUS\) server that is used for fabric updates in Virtual Machine Manager \(VMM\). In VMM, you update the properties of the update server to configure a proxy server for use during synchronizations and to change the update categories, products, and supported languages that are synchronized by the WSUS server.
+Use the following procedure to update the properties of the Windows Server Update Services (WSUS) server that is used for fabric updates in Virtual Machine Manager (VMM). In VMM, you update the properties of the update server to configure a proxy server for use during synchronizations and to change the update categories, products, and supported languages that are synchronized by the WSUS server.
 
 > [!IMPORTANT]
 > After you add a WSUS server to VMM, you should only manage the WSUS server in VMM.

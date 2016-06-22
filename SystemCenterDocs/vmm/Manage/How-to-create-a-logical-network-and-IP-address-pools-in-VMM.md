@@ -11,14 +11,14 @@ ms.topic: article
 ms.assetid: 9f7b6403-876a-4eae-9f00-5372626d51bc
 ---
 # How to create a logical network and IP address pools in VMM
-Logical networks form the foundation of your network configuration in Virtual Machine Manager \(VMM\) in System Center 2016 Technical Preview. You create and name logical networks based on the function they serve in your environment, for example, the “Management,” “Cluster,” “Storage,” or “Tenant” networks. Within each logical network, you create one or more network sites that specify IP subnets, virtual local area networks \(VLANs\), or subnet\/VLAN pairs that represent your environment.
+Logical networks form the foundation of your network configuration in Virtual Machine Manager (VMM) in System Center 2016 Technical Preview. You create and name logical networks based on the function they serve in your environment, for example, the “Management,” “Cluster,” “Storage,” or “Tenant” networks. Within each logical network, you create one or more network sites that specify IP subnets, virtual local area networks (VLANs), or subnet/VLAN pairs that represent your environment.
 
 For information about planning your logical networks, see [Overview: plan logical networks, network sites, and IP address pools in VMM](Overview--plan-logical-networks,-network-sites,-and-IP-address-pools-in-VMM.md). To see how this procedure fits into an overall workflow, see [Implementing the configuration](Configuring-logical-networks,-VM-networks,-and-logical-switches-in-VMM.md#BKMK_implementing) in "Configuring logical networks, VM networks, and logical switches in VMM."
 
-If you want to use a virtual switch extension, network manager, or vendor network\-management console to manage your networks instead of working with them directly in VMM, see [VMM networking reference: using a virtual switch extension manager or network manager in VMM](VMM-networking-reference--using-a-virtual-switch-extension-manager-or-network-manager-in-VMM.md)
+If you want to use a virtual switch extension, network manager, or vendor network-management console to manage your networks instead of working with them directly in VMM, see [VMM networking reference: using a virtual switch extension manager or network manager in VMM](VMM-networking-reference--using-a-virtual-switch-extension-manager-or-network-manager-in-VMM.md)
 
 > [!IMPORTANT]
-> VMM does not automatically create port groups on VMware ESX hosts. Therefore, in order for logical networks to work correctly for managed ESX hosts, you must use VMware vCenter Server to configure port groups with the necessary VLANs that correspond to the network sites.
+> VMM does not automatically create port groups on VMware ESX hosts. Therefore, in order for logical networks to work correctly for managed ESX hosts, you must use VMware vCenter Server to configure port groups with the necessary VLANs that correspond to the network sites.
 
 This topic contains the following procedures:
 
@@ -51,8 +51,8 @@ This topic contains the following procedures:
 
         |Use of VM networks that will be created on top of this logical network|Action|
         |--------------------------------------------------------------------------|----------|
-        |**Hyper\-V network virtualization**: multiple VM networks with isolation|Select **One connected network** and then select **Allow new VM networks created on this logical network to use network virtualization**.|
-        |**VLAN\-based configuration**: manage VLANs that have been created for network isolation within the physical network|In most cases, select **VLAN\-based independent networks**. However, if you are using private VLAN technology, select **Private VLAN \(PVLAN\) networks**.|
+        |**Hyper-V network virtualization**: multiple VM networks with isolation|Select **One connected network** and then select **Allow new VM networks created on this logical network to use network virtualization**.|
+        |**VLAN-based configuration**: manage VLANs that have been created for network isolation within the physical network|In most cases, select **VLAN-based independent networks**. However, if you are using private VLAN technology, select **Private VLAN (PVLAN) networks**.|
         |**One VM network that gives direct access to the logical network**: no isolation|Select **One connected network** and select **Create a VM network with the same name to allow virtual machines to access this logical network directly**. If this logical network will also support network virtualization, select the check box to allow network virtualization.<br /><br />If you select **One connected network** but you do not create the VM network now, you will still be able to create the VM network later.|
 
 6.  Click **Next**.
@@ -70,13 +70,13 @@ This topic contains the following procedures:
 
     2.  Review the network site name and ensure that it is no longer than 64 characters. To change the default name, in the **Network site name** box, enter a new name for the network site.
 
-        For example, enter the name **Management \- Seattle**.
+        For example, enter the name **Management - Seattle**.
 
     3.  Under **Host groups that can use this network site**, select the check box next to each host group to which you want to make the logical network available.
 
-        For example, to make the **Management** logical network available to a host group called **Seattle** \(and all its child host groups\), select the check box next to **Seattle**.
+        For example, to make the **Management** logical network available to a host group called **Seattle** (and all its child host groups), select the check box next to **Seattle**.
 
-    4.  Under **Associated VLANs and IP subnets**, enter the VLANs and IP subnets that you want to assign to the network site. To enter VLAN and IP subnet information, click **Insert row**, click the field under **VLAN** or **IP subnet**, depending on what you want to configure, and then enter a VLAN, an IP subnet, or a subnet\/VLAN pair. You can insert multiple rows.
+    4.  Under **Associated VLANs and IP subnets**, enter the VLANs and IP subnets that you want to assign to the network site. To enter VLAN and IP subnet information, click **Insert row**, click the field under **VLAN** or **IP subnet**, depending on what you want to configure, and then enter a VLAN, an IP subnet, or a subnet/VLAN pair. You can insert multiple rows.
 
         If you previously selected the option for private VLANs, also enter the **SecondaryVLAN** for each VLAN that you enter.
 
@@ -90,7 +90,7 @@ This topic contains the following procedures:
 
     5.  Optionally, create additional network sites by clicking **Add** and repeating the process.
 
-        For example, you could create a network site named **Management\-New York**, assign it to the **New York** host group, and add an appropriate IP subnet\/VLAN pair for the network in New York.
+        For example, you could create a network site named **Management-New York**, assign it to the **New York** host group, and add an appropriate IP subnet/VLAN pair for the network in New York.
 
     6.  When you complete this step, click **Next**.
 
@@ -98,7 +98,7 @@ This topic contains the following procedures:
 
     The **Jobs** dialog box appears. Make sure the job has a status of **Completed**, and then close the dialog box.
 
-9. Verify that the logical network appears in the **Logical Networks and IP Pools** pane. Also, if you added network sites, right\-click the logical network, click **Properties**, click the **Network Site** tab, and verify that the intended network sites appear on the tab.
+9. Verify that the logical network appears in the **Logical Networks and IP Pools** pane. Also, if you added network sites, right-click the logical network, click **Properties**, click the **Network Site** tab, and verify that the intended network sites appear on the tab.
 
 ## <a name="BKMK_pool"></a>Create a static IP address pool for a logical network
 In a logical network, you can provide static IP addressing by creating static IP address pools. Static IP address pools also have other uses. To decide whether you need an IP address pool, see [Guidelines for IP address pools](Overview--plan-logical-networks,-network-sites,-and-IP-address-pools-in-VMM.md#BKMK_address_pools) in "Overview: plan logical networks, network sites, and IP address pools in VMM."
@@ -132,20 +132,20 @@ In a logical network, you can provide static IP addressing by creating static IP
     |||
     |-|-|
     |Name:|**Management – Seattle IP pool**|
-    |Description:|**IP addresses for management \- Seattle**|
+    |Description:|**IP addresses for management - Seattle**|
 
 7.  On the **Network Site** page, select an existing network site or create a new one. Alternatively, if you want to use multicasting or broadcasting, skip to the next numbered step.
 
     If you select **Use an existing network site**, select the network site and the IP subnet that you want to create the IP address pool from, and then click **Next**.
 
     > [!NOTE]
-    > You cannot change the virtual local area network \(VLAN\) or the assigned host groups for an existing network site from this page. If you try to change the host groups that can use the network site from this page, the value will revert to the original value when you continue to the next page of the wizard. To modify these values, you must modify the properties of the logical network. For more information, see [How to modify or delete a logical network in VMM](How-to-modify-or-delete-a-logical-network-in-VMM.md).
+    > You cannot change the virtual local area network (VLAN) or the assigned host groups for an existing network site from this page. If you try to change the host groups that can use the network site from this page, the value will revert to the original value when you continue to the next page of the wizard. To modify these values, you must modify the properties of the logical network. For more information, see [How to modify or delete a logical network in VMM](How-to-modify-or-delete-a-logical-network-in-VMM.md).
 
     If you select **Create a network site**, do the following, and then click **Next**:
 
     1.  In the **Network site** name box, enter a name for the network site.
 
-    2.  In the **IP subnet** box, enter the IP subnet that you want to assign to the network site. Later in this procedure you can assign a range of IP addresses from the subnet to the pool. Specify the IP subnet with Classless Inter\-Domain Router \(CIDR\) notation, for example 10.0.0.0\/24.
+    2.  In the **IP subnet** box, enter the IP subnet that you want to assign to the network site. Later in this procedure you can assign a range of IP addresses from the subnet to the pool. Specify the IP subnet with Classless Inter-Domain Router (CIDR) notation, for example 10.0.0.0/24.
 
     3.  If you are using VLANs, in the **VLAN** box, enter the VLAN ID. A VLAN of 0 indicates to VMM not to use VLANs. In trunk mode, VLAN 0 indicates native VLAN.
 
@@ -165,22 +165,22 @@ In a logical network, you can provide static IP addressing by creating static IP
         > [!TIP]
         > The **Total addresses** field displays the total number of IP addresses in the specified IP address range.
 
-    2.  Under **VIPs and reserved IP addresses**, specify IP address ranges that you want to reserve, such as a range for load balancer virtual IP addresses \(VIPs\). The IP addresses that you want to reserve must fall within the IP address range that you specified for the IP address pool.
+    2.  Under **VIPs and reserved IP addresses**, specify IP address ranges that you want to reserve, such as a range for load balancer virtual IP addresses (VIPs). The IP addresses that you want to reserve must fall within the IP address range that you specified for the IP address pool.
 
         > [!NOTE]
-        > During deployment of a service with a load\-balanced service tier, VMM automatically assigns a virtual IP address to the load balancer from the reserved range of VIP addresses. After the DNS administrator registers the assigned VIP address in DNS, clients can access the service by connecting through its registered name in DNS.
+        > During deployment of a service with a load-balanced service tier, VMM automatically assigns a virtual IP address to the load balancer from the reserved range of VIP addresses. After the DNS administrator registers the assigned VIP address in DNS, clients can access the service by connecting through its registered name in DNS.
 
 10. Optionally, on the **Gateway** page, click **Insert**, and then specify one or more default gateway addresses and the metric. The default gateway address must fall within the same subnet range as the IP address pool. It does not have to be part of the IP address pool range.
 
     > [!NOTE]
     > The metric is a value that is assigned to an IP route for a particular network interface that identifies the cost that is associated with using that route. If you use the automatic metric, the metric is automatically configured for local routes based on the link speed.
 
-11. Optionally, on the **DNS** page, specify Domain Name System \(DNS\)\-related information, such as the list of DNS servers and their order, the default DNS suffix for the connection, and the list of DNS search suffixes.
+11. Optionally, on the **DNS** page, specify Domain Name System (DNS)-related information, such as the list of DNS servers and their order, the default DNS suffix for the connection, and the list of DNS search suffixes.
 
     > [!IMPORTANT]
-    > For virtual machines that will join an Active Directory domain, we recommend that you use Group Policy to set the primary DNS suffix. This will ensure that when a Windows\-based virtual machine is set to register its IP addresses with the primary DNS suffix, a Windows\-based DNS server will register the IP address dynamically. Additionally, the use of Group Policy enables you to have an IP address pool that spans multiple domains. In this case, you would not want to specify a single primary DNS suffix.
+    > For virtual machines that will join an Active Directory domain, we recommend that you use Group Policy to set the primary DNS suffix. This will ensure that when a Windows-based virtual machine is set to register its IP addresses with the primary DNS suffix, a Windows-based DNS server will register the IP address dynamically. Additionally, the use of Group Policy enables you to have an IP address pool that spans multiple domains. In this case, you would not want to specify a single primary DNS suffix.
 
-12. Optionally, on the **WINS** page, click **Insert**, and then enter the IP address of a Windows Internet Name Service \(WINS\) server. You can also select the check box that indicates whether to enable NetBIOS over TCP\/IP. Be aware that enabling NetBIOS over TCP\/IP is not recommended if the address range consists of public IP addresses.
+12. Optionally, on the **WINS** page, click **Insert**, and then enter the IP address of a Windows Internet Name Service (WINS) server. You can also select the check box that indicates whether to enable NetBIOS over TCP/IP. Be aware that enabling NetBIOS over TCP/IP is not recommended if the address range consists of public IP addresses.
 
 13. On the **Summary** page, confirm the settings, and then click **Finish**.
 
@@ -201,7 +201,7 @@ In a logical network, you can provide static IP addressing by creating static IP
 
 From time to time, you might need to release IP addresses that are in the pool but that are marked by VMM as “inactive.” Releasing them makes them available for reassignment. For more information, see [How to release inactive IP or MAC addresses in VMM](How-to-release-inactive-IP-or-MAC-addresses-in-VMM.md).
 
-After a virtual machine has been deployed in VMM, you can view the IP address or addresses assigned to that virtual machine. To do this, right\-click the listing for the virtual machine, click **Properties**, click the **Hardware Configuration** tab, click the network adapter, and in the results pane, click the **Connection details** button.
+After a virtual machine has been deployed in VMM, you can view the IP address or addresses assigned to that virtual machine. To do this, right-click the listing for the virtual machine, click **Properties**, click the **Hardware Configuration** tab, click the network adapter, and in the results pane, click the **Connection details** button.
 
 ## See Also
 [Configuring logical networks, VM networks, and logical switches in VMM](Configuring-logical-networks,-VM-networks,-and-logical-switches-in-VMM.md)

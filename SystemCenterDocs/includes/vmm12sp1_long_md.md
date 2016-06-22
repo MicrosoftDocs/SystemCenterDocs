@@ -1,1 +1,1 @@
-Virtual Machine Manager \(VMM\)
+Virtual Machine Manager (VMM)

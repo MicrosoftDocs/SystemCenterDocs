@@ -11,30 +11,30 @@ ms.topic: article
 ms.assetid: 978a72d8-a446-42e5-b2bb-53a838623ee0
 ---
 # Credentials
-An Automation Credential is either a username and password that can be used with Windows PowerShell commands or a certificate that is uploaded to the server.  The properties for a credential are stored securely in the Automation database and can be accessed in the runbook with either the **Get\-AutomationPSCredential** or **Get\-AutomationCertificate** activity.
+An Automation Credential is either a username and password that can be used with Windows PowerShell commands or a certificate that is uploaded to the server.  The properties for a credential are stored securely in the Automation database and can be accessed in the runbook with either the **Get-AutomationPSCredential** or **Get-AutomationCertificate** activity.
 
 ## Windows PowerShell Cmdlets
 The cmdlets in the following table are used to create and manage credentials with Windows PowerShell in Service Management Automation.
 
 |Cmdlets|Description|
 |-----------|---------------|
-|[Get\-SmaCertificate](http://go.microsoft.com/fwlink/?LinkID=306447)|Retrieves an Automation certificate.|
-|[Get\-SmaCredential](http://go.microsoft.com/fwlink/?LinkID=306451)|Retrieves an Automation PowerShell credential.|
-|[Remove\-SmaCertificate](http://go.microsoft.com/fwlink/?LinkID=306464)|Removes an Automation certificate.|
-|[Remove\-SmaCredential](http://go.microsoft.com/fwlink/?LinkID=306466)|Removes an Automation PowerShell credental.|
-|[Set\-SmaCertificate](http://go.microsoft.com/fwlink/?LinkID=306473)|Creates a new certificate or sets the properties for an existing certificate including uploading the certificate file and setting the password for a .pfx.|
-|[Set\-SmaCredential](http://go.microsoft.com/fwlink/?LinkID=306475)|Creates a new Automation PowerShell credential or sets the properties for an existing credential.|
+|[Get-SmaCertificate](http://go.microsoft.com/fwlink/?LinkID=306447)|Retrieves an Automation certificate.|
+|[Get-SmaCredential](http://go.microsoft.com/fwlink/?LinkID=306451)|Retrieves an Automation PowerShell credential.|
+|[Remove-SmaCertificate](http://go.microsoft.com/fwlink/?LinkID=306464)|Removes an Automation certificate.|
+|[Remove-SmaCredential](http://go.microsoft.com/fwlink/?LinkID=306466)|Removes an Automation PowerShell credental.|
+|[Set-SmaCertificate](http://go.microsoft.com/fwlink/?LinkID=306473)|Creates a new certificate or sets the properties for an existing certificate including uploading the certificate file and setting the password for a .pfx.|
+|[Set-SmaCredential](http://go.microsoft.com/fwlink/?LinkID=306475)|Creates a new Automation PowerShell credential or sets the properties for an existing credential.|
 
 ## Runbook Activities
 The activities in the following table are used to access credentials in a runbook.
 
 |Activities|Description|
 |--------------|---------------|
-|Get\-AutomationCertificate|Gets a certificate to use in a runbook.|
-|Get\-AutomationPSCredential|Gets a username\/password to use in a runbook.|
+|Get-AutomationCertificate|Gets a certificate to use in a runbook.|
+|Get-AutomationPSCredential|Gets a username/password to use in a runbook.|
 
 > [!NOTE]
-> You should avoid using variables in the –Name parameter of **Get\-AutomationPSCredential** and **Get\-AutomationCertificate** since this can complicate discovering dependencies between runbooks and Automation variables.
+> You should avoid using variables in the –Name parameter of **Get-AutomationPSCredential** and **Get-AutomationCertificate** since this can complicate discovering dependencies between runbooks and Automation variables.
 
 ## Creating a new credential
 
@@ -108,7 +108,7 @@ Set-SmaCertificate -WebServiceEndpoint $webServer -port $port -Name $certName �
 ```
 
 ## Using a PowerShell Credential in a Runbook
-You retrieve a PowerShell Credential in a runbook with the **Get\-AutomationPSCredential** activity. This returns a PSCredential object that you can use in the workflow.
+You retrieve a PowerShell Credential in a runbook with the **Get-AutomationPSCredential** activity. This returns a PSCredential object that you can use in the workflow.
 
 #### To use a PowerShell credential in a runbook
 

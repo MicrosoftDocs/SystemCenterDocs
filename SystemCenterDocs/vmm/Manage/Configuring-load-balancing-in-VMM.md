@@ -11,10 +11,10 @@ ms.topic: article
 ms.assetid: 0add8a3b-884e-4fe3-8bac-8834ed4f8d5d
 ---
 # Configuring load balancing in VMM
-Networking in Virtual Machine Manager \(VMM\) includes load balancing integration, so that you can automatically provision load balancers in your virtualized environment. Load balancing integration works together with other network enhancements in VMM. For information about these enhancements, see the list of topics at the end of this topic.
+Networking in Virtual Machine Manager (VMM) includes load balancing integration, so that you can automatically provision load balancers in your virtualized environment. Load balancing integration works together with other network enhancements in VMM. For information about these enhancements, see the list of topics at the end of this topic.
 
 ## <a name="BKMK_LoadBalancerIntegration"></a>Load balancer integration
-By adding a load balancer to VMM, you can load balance requests to the virtual machines that make up a service tier. You can add supported hardware load balancers through the VMM console or, for some configurations, you can use Microsoft Network Load Balancing \(NLB\). NLB is included as a possible load balancer when you install VMM. NLB uses round robin as the load\-balancing method.
+By adding a load balancer to VMM, you can load balance requests to the virtual machines that make up a service tier. You can add supported hardware load balancers through the VMM console or, for some configurations, you can use Microsoft Network Load Balancing (NLB). NLB is included as a possible load balancer when you install VMM. NLB uses round robin as the load-balancing method.
 
 > [!NOTE]
 > -   Service tiers running Linux cannot use NLB.
@@ -22,14 +22,14 @@ By adding a load balancer to VMM, you can load balance requests to the virtual m
 > 
 > Both of the previous configurations can use hardware load balancing instead.
 
-To add supported hardware load balancers, you must install a configuration provider that is available from the load balancer manufacturer. The configuration provider is a plug\-in to VMM that translates VMM PowerShell commands to API calls that are specific to a load balancer manufacturer and model.
+To add supported hardware load balancers, you must install a configuration provider that is available from the load balancer manufacturer. The configuration provider is a plug-in to VMM that translates VMM PowerShell commands to API calls that are specific to a load balancer manufacturer and model.
 
-Before you can use a hardware load balancer or NLB, you must create associated virtual IP \(VIP\) templates.
+Before you can use a hardware load balancer or NLB, you must create associated virtual IP (VIP) templates.
 
 ### VIP templates
-A virtual IP \(VIP\) template contains load balancer\-related configuration settings for a specific type of network traffic. For example, you could create a template that specifies the load balancing behavior for HTTPS traffic on a specific load balancer manufacturer and model. These templates represent the best practices from a load balancer configuration standpoint.
+A virtual IP (VIP) template contains load balancer-related configuration settings for a specific type of network traffic. For example, you could create a template that specifies the load balancing behavior for HTTPS traffic on a specific load balancer manufacturer and model. These templates represent the best practices from a load balancer configuration standpoint.
 
-After you create a VIP template, users \(including self\-service users\) can specify the VIP template when they create a service. When a user models a service, they can pick an available template that best matches their needs for the type of load balancer and the type of application.
+After you create a VIP template, users (including self-service users) can specify the VIP template when they create a service. When a user models a service, they can pick an available template that best matches their needs for the type of load balancer and the type of application.
 
 
 
@@ -52,7 +52,7 @@ The following list describes the hardware load balancer workflow to load balance
 
     -   Specifies the load balancer manufacturer and model
 
-    -   Specifies the load balancer DNS names \(or IP addresses\) and the port number that is used for load balancer management
+    -   Specifies the load balancer DNS names (or IP addresses) and the port number that is used for load balancer management
 
     -   Specifies the affinity to logical networks
 
@@ -66,7 +66,7 @@ The following list describes the hardware load balancer workflow to load balance
 
     -   Whether the template applies to any supported load balancer or to a specific type of load balancer
 
-    -   The type of protocol to load balance \(for example HTTPS\)
+    -   The type of protocol to load balance (for example HTTPS)
 
     -   Whether to enable session persistence
 
@@ -76,12 +76,12 @@ The following list describes the hardware load balancer workflow to load balance
 
     For more information, see [How to create VIP templates for hardware load balancers in VMM](How-to-create-VIP-templates-for-hardware-load-balancers-in-VMM.md).
 
-5.  A user \(typically a self\-service user\) creates a service template. In the Service Template Designer window, they add a load balancer to a service tier, and then select which VIP template to use. When the service is deployed, VMM automatically selects a virtual IP address from the reserved range in the static IP address pool and assigns it to the load balancer. This IP address is considered the “front\-end” IP address for a load\-balanced service tier. VMM also assigns static IP addresses to the virtual machines that make up the service tier. These are considered “back\-end” dedicated IP addresses, as they are behind the load balancer.
+5.  A user (typically a self-service user) creates a service template. In the Service Template Designer window, they add a load balancer to a service tier, and then select which VIP template to use. When the service is deployed, VMM automatically selects a virtual IP address from the reserved range in the static IP address pool and assigns it to the load balancer. This IP address is considered the “front-end” IP address for a load-balanced service tier. VMM also assigns static IP addresses to the virtual machines that make up the service tier. These are considered “back-end” dedicated IP addresses, as they are behind the load balancer.
 
-6.  After the service is deployed, the administrator verifies in the VMM console which virtual IP address is being used as the front\-end IP address for the service tier. The administrator then contacts the DNS administrator to create a DNS entry for the assigned virtual IP address. For example, if the front\-end Web tier of a service is load balanced, the administrator can verify which virtual IP address is used for that tier. The DNS administrator can then create an entry in DNS for the name that users will specify to connect to the Web front\-end. For example, the DNS administrator could create a DNS entry for *ServiceName*.contoso.com with the corresponding virtual IP address.
+6.  After the service is deployed, the administrator verifies in the VMM console which virtual IP address is being used as the front-end IP address for the service tier. The administrator then contacts the DNS administrator to create a DNS entry for the assigned virtual IP address. For example, if the front-end Web tier of a service is load balanced, the administrator can verify which virtual IP address is used for that tier. The DNS administrator can then create an entry in DNS for the name that users will specify to connect to the Web front-end. For example, the DNS administrator could create a DNS entry for *ServiceName*.contoso.com with the corresponding virtual IP address.
 
     > [!NOTE]
-    > For more detailed information about how to load\-balance a service tier by using a hardware load balancer, see [How to add networking components to a service template](How-to-add-networking-components-to-a-service-template.md) and [How to configure a hardware load balancer for a service tier](How-to-configure-a-hardware-load-balancer-for-a-service-tier.md).
+    > For more detailed information about how to load-balance a service tier by using a hardware load balancer, see [How to add networking components to a service template](How-to-add-networking-components-to-a-service-template.md) and [How to configure a hardware load balancer for a service tier](How-to-configure-a-hardware-load-balancer-for-a-service-tier.md).
 
 ### NLB workflow
 The following list describes the NLB workflow to load balance a service tier. However, in service tiers running Linux, or in a service where the VM networks are configured with network virtualization, you cannot use the NLB workflow. Instead, use the [Hardware load balancer workflow](Configuring-load-balancing-in-VMM.md#BKMK_hw), listed earlier in this topic.
@@ -97,22 +97,22 @@ This is the NLB workflow:
 
     -   The port to use for the type of network traffic that will be load balanced
 
-    -   The template type \(in this case, the Specific template type, set to Microsoft NLB\)
+    -   The template type (in this case, the Specific template type, set to Microsoft NLB)
 
-    -   The type of protocol to load balance \(TCP, UPD, or both\)
+    -   The type of protocol to load balance (TCP, UPD, or both)
 
     -   Whether to enable session persistence
 
-3.  A user \(typically a self\-service user\) configures a service template by doing the following:
+3.  A user (typically a self-service user) configures a service template by doing the following:
 
     -   For the tier that will be load balanced, the user must specify a virtual machine template that meets the specific configuration requirements for NLB. 
 
     -   In the Service Template Designer window, the user adds a load balancer, and then selects which VIP template to use.
 
-    When the service is deployed, VMM automatically selects a virtual IP address from the reserved range in the static IP address pool and assigns it to a load\-balanced service tier. VMM also assigns static IP addresses to the virtual machines that make up the service tier.
+    When the service is deployed, VMM automatically selects a virtual IP address from the reserved range in the static IP address pool and assigns it to a load-balanced service tier. VMM also assigns static IP addresses to the virtual machines that make up the service tier.
 
-4.  After the service is deployed, the administrator verifies in the VMM console which virtual IP address is being used for a service. The administrator then contacts the DNS administrator to create a DNS entry for the assigned virtual IP address. For example, if the front\-end Web tier of a service is load balanced, the administrator can verify which virtual IP address is used for that tier. The DNS administrator can then create an entry in DNS for the name that users will specify to connect to the Web front\-end. For example, the DNS administrator could create a DNS entry for *ServiceName*.contoso.com with the corresponding virtual IP address.
+4.  After the service is deployed, the administrator verifies in the VMM console which virtual IP address is being used for a service. The administrator then contacts the DNS administrator to create a DNS entry for the assigned virtual IP address. For example, if the front-end Web tier of a service is load balanced, the administrator can verify which virtual IP address is used for that tier. The DNS administrator can then create an entry in DNS for the name that users will specify to connect to the Web front-end. For example, the DNS administrator could create a DNS entry for *ServiceName*.contoso.com with the corresponding virtual IP address.
 
     > [!NOTE]
-    > For more detailed information about how to load\-balance a service tier by using NLB, see [How to configure NLB for a service tier](How-to-configure-NLB-for-a-service-tier.md).
+    > For more detailed information about how to load-balance a service tier by using NLB, see [How to configure NLB for a service tier](How-to-configure-NLB-for-a-service-tier.md).
 

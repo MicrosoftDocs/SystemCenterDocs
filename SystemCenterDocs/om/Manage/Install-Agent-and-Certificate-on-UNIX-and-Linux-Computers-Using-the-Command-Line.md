@@ -11,11 +11,11 @@ ms.topic: article
 ms.assetid: 372cea7b-f987-452a-b6a4-fbb6ae6fe98e
 ---
 # Install Agent and Certificate on UNIX and Linux Computers Using the Command Line
-Your environment may require that you manually install the agent. Use the following procedures to manually install agents to UNIX and Linux computers for monitoring in System Center Operations Manager and System Center 2012 Service Pack 1 \(SP1\), Operations Manager.
+Your environment may require that you manually install the agent. Use the following procedures to manually install agents to UNIX and Linux computers for monitoring in System Center Operations Manager and System Center 2012 Service Pack 1 (SP1), Operations Manager.
 
 #### To install the agent on Red Hat Enterprise Linux and SUSE Linux Enterprise Server
 
-1.  Transfer the agent \(`scx-<version>-<os>-<arch>.rpm`\) to the Linux server, type:
+1.  Transfer the agent (`scx-<version>-<os>-<arch>.rpm`) to the Linux server, type:
 
     `scx-<version>-<os>-<arch>.rpm`
 
@@ -31,9 +31,9 @@ Your environment may require that you manually install the agent. Use the follow
 
     `service omiserver status`
 
-#### To install the agent on RPM based Universal Linux Servers \(Oracle and Centos\)
+#### To install the agent on RPM based Universal Linux Servers (Oracle and Centos)
 
-1.  Transfer the agent \(`scx-<version>-universalr-<arch>.rpm`\) to the Linux server. This should be done via SCP or FTP in binary mode.
+1.  Transfer the agent (`scx-<version>-universalr-<arch>.rpm`) to the Linux server. This should be done via SCP or FTP in binary mode.
 
 2.  To install the package, type:
 
@@ -47,9 +47,9 @@ Your environment may require that you manually install the agent. Use the follow
 
     `scxadmin -status`
 
-#### To install the agent on DPKG\-based Universal Linux Servers \(Debian and Utuntu\)
+#### To install the agent on DPKG-based Universal Linux Servers (Debian and Utuntu)
 
-1.  Transfer the agent \(`scx-<version>-universald-<arch>.rpm`\) to the Linux server. This should be done via SCP or FTP in binary mode.
+1.  Transfer the agent (`scx-<version>-universald-<arch>.rpm`) to the Linux server. This should be done via SCP or FTP in binary mode.
 
 2.  To install the package, type:
 
@@ -65,7 +65,7 @@ Your environment may require that you manually install the agent. Use the follow
 
 #### To install the agent on Solaris
 
-1.  Transfer the agent \(`scx-<version>-<os>-<arch>.pkg.Z`\) to the Solaris server, type:
+1.  Transfer the agent (`scx-<version>-<os>-<arch>.pkg.Z`) to the Solaris server, type:
 
     `scx-<version>-<os>-<arch>.pkg.Z`
 
@@ -85,9 +85,9 @@ Your environment may require that you manually install the agent. Use the follow
 
     `svcs omiserver`
 
-#### To install the agent on HP\-UX
+#### To install the agent on HP-UX
 
-1.  Transfer the agent \(`scx-<version>-<os>-<arch>.gz`\) to the HP server:
+1.  Transfer the agent (`scx-<version>-<os>-<arch>.gz`) to the HP server:
 
     `cp scx-<version>-<os>-<arch>.gz`
 
@@ -113,7 +113,7 @@ Your environment may require that you manually install the agent. Use the follow
 
 #### To install the agent on AIX
 
-1.  Transfer the agent \(`scx-<version>-<os>-<arch>.gz`\) to the AIX server, type:
+1.  Transfer the agent (`scx-<version>-<os>-<arch>.gz`) to the AIX server, type:
 
     `cp scx-<version>-<os>-<arch>.gz`
 
@@ -154,7 +154,7 @@ You must have already manually installed an agent before you start this procedur
 
 4.  Change directories to the location where you copied the `pem` file.
 
-5.  Type the command `scxcertconfig -sign scx-host-<hostname>.pem scx_new.pem`, and then press **Enter**. This command will self\-sign your certificate \(`scx-host-<hostname>.pem`\) and then save the new certificate \(`scx-host-<hostname>_new.pem`\).
+5.  Type the command `scxcertconfig -sign scx-host-<hostname>.pem scx_new.pem`, and then press **Enter**. This command will self-sign your certificate (`scx-host-<hostname>.pem`) and then save the new certificate (`scx-host-<hostname>_new.pem`).
 
     > [!NOTE]
     > Ensure that the location where Operations Manager is installed is in your path statement, or use the fully qualified path of the `scxcertconfig.exe` file.
@@ -164,7 +164,7 @@ You must have already manually installed an agent before you start this procedur
 7.  Restart the agent by typing `scxadmin –restart`.
 
 ## <a name="bkmk_DiscoveringSystemsafterManualDeployment"></a>Discovering Computers after Manual Deployment
-After you have manually deployed agents to UNIX and Linux computers, they still need to be discovered by Operations Manager by using the Discovery Wizard. For the **Discovery type**, select **Discover only computers with the UNIX\/Linux agent installed**. For more information see [Install Agent on UNIX and Linux Using the Discovery Wizard](Install-Agent-on-UNIX-and-Linux-Using-the-Discovery-Wizard.md).
+After you have manually deployed agents to UNIX and Linux computers, they still need to be discovered by Operations Manager by using the Discovery Wizard. For the **Discovery type**, select **Discover only computers with the UNIX/Linux agent installed**. For more information see [Install Agent on UNIX and Linux Using the Discovery Wizard](Install-Agent-on-UNIX-and-Linux-Using-the-Discovery-Wizard.md).
 
 ## See Also
 [Operations Manager Agent Installation Methods](Operations-Manager-Agent-Installation-Methods.md)

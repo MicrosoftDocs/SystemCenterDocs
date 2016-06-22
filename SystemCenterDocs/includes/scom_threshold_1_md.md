@@ -1,1 +1,1 @@
-System Center 2016 Technical Preview \- Operations Manager
+System Center 2016 Technical Preview - Operations Manager

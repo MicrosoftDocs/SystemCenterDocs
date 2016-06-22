@@ -22,7 +22,7 @@ You can use the following procedures to view the status of a data warehouse job 
 
 3.  In the **Data Warehouse Jobs** pane, review the list of jobs to view their status.
 
-### To view the status of a data warehouse job by using a Windows PowerShell cmdlet
+### To view the status of a data warehouse job by using a Windows PowerShell cmdlet
 
 1.  On the computer that hosts the data warehouse management server, click **Start**, point to **All Programs**, click **Microsoft System Center**, click **Service Manager 2016**, and then click **Service Manager Shell**.
 

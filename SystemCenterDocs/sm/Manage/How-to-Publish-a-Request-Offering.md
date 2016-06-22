@@ -11,7 +11,7 @@ ms.topic: article
 ms.assetid: f0c1088f-92a8-40ba-93ec-edf6bd8b5fb3
 ---
 # How to Publish a Request Offering
-You can publish draft request offerings by using the Publish task or by using a change request. When you publish a request offering by using the Publish task, no additional interaction is required, and the request offering appears in the Self\-Service Portal as an uncategorized item. If you want to publish the request offering as part of a category, you must add the request offering to a service offering.
+You can publish draft request offerings by using the Publish task or by using a change request. When you publish a request offering by using the Publish task, no additional interaction is required, and the request offering appears in the Self-Service Portal as an uncategorized item. If you want to publish the request offering as part of a category, you must add the request offering to a service offering.
 
 If you want to have an approval process added before publishing, you can associate the request offering to a change request. If you use a change request, you can also send email notifications as the approval process occurs.
 
@@ -26,7 +26,7 @@ You can use the following procedures to publish request offerings.
 
 2.  In the **Library** pane, expand **Service Catalog**, and then select **Draft Request Offerings**.
 
-3.  In the **Draft Request Offerings** list, select one or more request offerings, and in the **Tasks** pane under **\<RequestOfferingName\>**, click **Publish**.
+3.  In the **Draft Request Offerings** list, select one or more request offerings, and in the **Tasks** pane under **<RequestOfferingName\>**, click **Publish**.
 
 ### To use a change request to publish draft request offerings
 
@@ -34,11 +34,11 @@ You can use the following procedures to publish request offerings.
 
 2.  In the **Library** pane, expand **Service Catalog**, and then select **Draft Request Offerings**.
 
-3.  In the **Draft Request Offerings** list, select one or more request offerings, and in the **Tasks** pane under **\<RequestOfferingName\>**, click **Create Change Request to Publish**.
+3.  In the **Draft Request Offerings** list, select one or more request offerings, and in the **Tasks** pane under **<RequestOfferingName\>**, click **Create Change Request to Publish**.
 
 4.  In the **Select Template** dialog box, select the **Publish Offering** change request template, and then click **OK** to open a new change request form.
 
-5.  In the **\<ChangeRequestID: Publish Offerings\>** form, notice that the catalog items to publish appear under **Catalog items**.
+5.  In the **<ChangeRequestID: Publish Offerings>** form, notice that the catalog items to publish appear under **Catalog items**.
 
 6.  Click the **Activities** tab, and notice that there is a review activity and an automated activity associated with the change request. Later, when the review activity is approved, the automated activity will set the publish status to Published.
 

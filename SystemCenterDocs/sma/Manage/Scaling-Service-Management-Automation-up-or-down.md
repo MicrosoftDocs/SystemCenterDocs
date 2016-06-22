@@ -19,11 +19,11 @@ The recommended configuration is 3 virtual machines, each with an installed a ru
 ### SQL Server recommendations
 For the SQL Server database, 8 GB of RAM and 8 cores are recommended.
 
-1 month of data under heavy load \(12 jobs per minute for a month\) results in 20 GB of database space usage. By default, job purging should keep the space usage from growing much beyond this. For more on settings for database purging, see [How to purge the Service Management Automation database](How-to-purge-the-Service-Management-Automation-database.md).
+1 month of data under heavy load (12 jobs per minute for a month) results in 20 GB of database space usage. By default, job purging should keep the space usage from growing much beyond this. For more on settings for database purging, see [How to purge the Service Management Automation database](How-to-purge-the-Service-Management-Automation-database.md).
 
 ### Scale out Service Management Automation
-If runbook jobs are running slowly, you might want to increase the number of runbook workers that are sharing workloads. New runbook worker\/web service instances must be installed on their own virtual machines.
+If runbook jobs are running slowly, you might want to increase the number of runbook workers that are sharing workloads. New runbook worker/web service instances must be installed on their own virtual machines.
 
-Before installing or uninstalling a Service Management Automation runbook worker, ensure that you have stopped the Runbook Worker service \(rbsvc\) on the computer where the runbook worker is installed. For instructions on how to avoid any data loss when removing a runbook worker, including Windows PowerShell cmdlets and scripting help for this operation, see the [overview of runbook worker deployments](http://go.microsoft.com/fwlink/?LinkId=301478).
+Before installing or uninstalling a Service Management Automation runbook worker, ensure that you have stopped the Runbook Worker service (rbsvc) on the computer where the runbook worker is installed. For instructions on how to avoid any data loss when removing a runbook worker, including Windows PowerShell cmdlets and scripting help for this operation, see the [overview of runbook worker deployments](http://go.microsoft.com/fwlink/?LinkId=301478).
 
 

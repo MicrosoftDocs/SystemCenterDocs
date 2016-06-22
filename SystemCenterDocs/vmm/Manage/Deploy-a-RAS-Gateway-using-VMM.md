@@ -122,7 +122,7 @@ Configuration parameters:
 
 | Resource type|Resource name and description|
 |--------------|-----------------------------|
-| Library Resources | **Resource name**: win\_server.vhd<br>**Description**: Windows Server Virtual Hard Disk. Format can be VHD or VHDX depending on the service template you choose.<br><br>Select the base VHD image that you downloaded and imported to the VMM Library earlier during network controller deployment.<br><br>**Resource name**: NCCertificate.cr<br><br>**Description**: A custom library resource that contains the trusted root certificate (.CER) for the Network Controller. This will be used for secure communications between the Network Controller and the Gateway instances.<br><br>Map to the NCCertificate.cr library resource in your VMM library.<br><br>**Resource Name**: EdgeDeployment.cr<br><br>**Description**: A custom library resource that contains an SSL Certificate in .PFX format and the scripts required to install and configure RRAS.<br><br>Select the **EdgeDeployment.cr** library resource that you prepared earlier and imported into you VMM library.                                                                                                                  |
+| Library Resources | **Resource name**: win_server.vhd<br>**Description**: Windows Server Virtual Hard Disk. Format can be VHD or VHDX depending on the service template you choose.<br><br>Select the base VHD image that you downloaded and imported to the VMM Library earlier during network controller deployment.<br><br>**Resource name**: NCCertificate.cr<br><br>**Description**: A custom library resource that contains the trusted root certificate (.CER) for the Network Controller. This will be used for secure communications between the Network Controller and the Gateway instances.<br><br>Map to the NCCertificate.cr library resource in your VMM library.<br><br>**Resource Name**: EdgeDeployment.cr<br><br>**Description**: A custom library resource that contains an SSL Certificate in .PFX format and the scripts required to install and configure RRAS.<br><br>Select the **EdgeDeployment.cr** library resource that you prepared earlier and imported into you VMM library.                                                                                                                  |
 
 6.  Click **Next**.
 
@@ -227,23 +227,23 @@ The Service instance that you deployed is now associated with the Gateway Manage
 After you deploy the gateway using the VMM template, you can configure S2S GRE, S2S IPSec, or L3 connection types and validate a successful Gateway deployment.
 #### To validate S2S IPSec connection
 A S2S IPSec connection allows you to securely access remote virtual machines and services from your datacenter. Use the following steps to create a S2S IPSec connection.
-1.	Select the VM Network that you want to configure a S2S IPSec connection and click the **Connectivity** tab.
-2.	Select **Connect to another network through a VPN tunnel**
-    1.	Optionally, if you want to enable BGP peering in your datacenter,  you can also select **Enable Border Gateway Protocol (BGP)**.
-3.	Select your Network Controller Service for the gateway device.
-4.	Select the **VPN Connections** tab.
-5.	Click **Add** and select the **IPSec** type connection.
-6.	Type a subnet as shown in the following diagram. This subnet is used to route packets out of the VM Network. This subnet need not be pre-configured in your datacenter.
+1.  Select the VM Network that you want to configure a S2S IPSec connection and click the **Connectivity** tab.
+2.  Select **Connect to another network through a VPN tunnel**
+    1.  Optionally, if you want to enable BGP peering in your datacenter,  you can also select **Enable Border Gateway Protocol (BGP)**.
+3.  Select your Network Controller Service for the gateway device.
+4.  Select the **VPN Connections** tab.
+5.  Click **Add** and select the **IPSec** type connection.
+6.  Type a subnet as shown in the following diagram. This subnet is used to route packets out of the VM Network. This subnet need not be pre-configured in your datacenter.
 
     ![VMM routing subnetImage/VMM-routing-subnet.png)
-7.	Type a connection name of your choice. The name used in the example screenshot is **TP5_IPSEC**.
-8.	Type the IP address of the Remote endpoint.
-9.	Optionally, you can also configure bandwidth settings on this screen.
-10.	Select the **Authentication** tab.
-11.	Choose your preferred authentication method for the connection. 
+7.  Type a connection name of your choice. The name used in the example screenshot is **TP5_IPSEC**.
+8.  Type the IP address of the Remote endpoint.
+9.  Optionally, you can also configure bandwidth settings on this screen.
+10. Select the **Authentication** tab.
+11. Choose your preferred authentication method for the connection. 
     >[!NOTE]If you choose the authentication using ‘Run As Account’, then you need to create a user account with the username of your choice and the IPSec key as the password for the account. Browse and select this account as your Run As Account.
-12.	Select the **Routes** tab.
-13.	Type all the remote subnets that you need to connect to.
+12. Select the **Routes** tab.
+13. Type all the remote subnets that you need to connect to.
 
     >[!NOTE]If you selected **Enable Border Gateway Protocol (BGP)** on the **Connectivity** tab then you can leave this screen blank and instead fill out your ASN, peer BGP IP and its ASN on the **Border Gateway Protocol** tab as shown below:
     
@@ -257,24 +257,24 @@ To validate that your S2S IPSec connection is configured properly, try to ping t
 
 A S2S GRE connection allows you to access remote virtual machines and services from your datacenter. Use the following steps to configure a S2S GRE connection:
 
-1.	Select the VM Network where you want to configure a S2S GRE connection and click **Connectivity**.
-2.	Select **Connect to another network through a VPN tunnel**.
-3.	Optionally, if you want to enable BGP peering in your datacenter, you can also select **Enable Border Gateway Protocol (BGP)**.
-4.	Select your Network Controller Service for the Gateway Device.
-5.	Select the **VPN Connections** tab.
-6.	Click **Add** and then select **GRE** type connection.
-7.	Type a subnet as shown in the following diagram. This subnet is used to route packets out of the VM Network. This subnet does not need to be preconfigured in your datacenter.
+1.  Select the VM Network where you want to configure a S2S GRE connection and click **Connectivity**.
+2.  Select **Connect to another network through a VPN tunnel**.
+3.  Optionally, if you want to enable BGP peering in your datacenter, you can also select **Enable Border Gateway Protocol (BGP)**.
+4.  Select your Network Controller Service for the Gateway Device.
+5.  Select the **VPN Connections** tab.
+6.  Click **Add** and then select **GRE** type connection.
+7.  Type a subnet as shown in the following diagram. This subnet is used to route packets out of the VM Network. This subnet does not need to be preconfigured in your datacenter.
 
     ![VMM routing subnet 2Image/VMM-routing-subnet-2.png)
 
-8.	Type a connection name. The name used in the example screenshot is **TP5_GRE**.
-9.	Type the IP address of the Remote endpoint.
-10.	Type the GRE key.
-11.	Optionally, you can complete the other fields on this screen but these values are not required to set up a S2S GRE connection.
-12.	Select the **Routes** tab.
-13.	Type all the remote subnets that you need to connect to.
+8.  Type a connection name. The name used in the example screenshot is **TP5_GRE**.
+9.  Type the IP address of the Remote endpoint.
+10. Type the GRE key.
+11. Optionally, you can complete the other fields on this screen but these values are not required to set up a S2S GRE connection.
+12. Select the **Routes** tab.
+13. Type all the remote subnets that you need to connect to.
     >[!NOTE]If you selected **Enable Border Gateway Protocol (BGP)** on the **Connectivity** tab, you can leave this screen blank and instead complete your ASN, peer BGP IP and ASN fields on the **Border Gateway Protocol** tab.
-15.	You can use the defaults for the remaining configuration.
+15. You can use the defaults for the remaining configuration.
 
 To validate that your S2S GRE connectivity is configured properly, try to ping the remote endpoint IP address from one of the virtual machines on the VM Network.
 

@@ -11,11 +11,11 @@ ms.topic: article
 ms.assetid: db239f58-9852-4fb9-a7fd-251103a70dba
 ---
 # About Importing Data from Comma-Separated Files into Service Manager
-Configuration items contained in a comma\-separated value \(.csv\) file can be imported into the Service Manager database by using the Import from CSV File feature. This feature lets you to bulk\-import instances of any class type or projection type that is defined in the Service Manager database. You can use this feature to:
+Configuration items contained in a comma-separated value (.csv) file can be imported into the Service Manager database by using the Import from CSV File feature. This feature lets you to bulk-import instances of any class type or projection type that is defined in the Service Manager database. You can use this feature to:
 
 -   Create configuration item or work item instances from data stored in a tabular format.
 
--   Bulk\-edit existing database instances.
+-   Bulk-edit existing database instances.
 
 -   Populate the Service Manager database by using data exported from an external database.
 
@@ -26,25 +26,25 @@ Configuration items contained in a comma\-separated value \(.csv\) file can be i
 
 Two files are required to import a set of instances by using the Import from CSV File feature:
 
-1.  A data file that consists of a series of comma\-delimited object instances. The data file must end with the .csv file name extension.
+1.  A data file that consists of a series of comma-delimited object instances. The data file must end with the .csv file name extension.
 
-2.  A format file that specifies the class type or projection type of the instances present in the data file. Every instance in the data file is assumed to be of this kind. The format file also specifies \(1\) the subset of properties and, for projections, specifies components. They are being imported for the indicated type, and \(2\) the order in which those properties appear as columns in the associated data file. The format file must have the same file name as the csv file that it describes, and it must end with the .xml file name extension.
+2.  A format file that specifies the class type or projection type of the instances present in the data file. Every instance in the data file is assumed to be of this kind. The format file also specifies (1) the subset of properties and, for projections, specifies components. They are being imported for the indicated type, and (2) the order in which those properties appear as columns in the associated data file. The format file must have the same file name as the csv file that it describes, and it must end with the .xml file name extension.
 
 ## Creating the Data File
 For example, you receive a spreadsheet that contains information about computers that you want to import into the Service Manager database. The following is a sample of the first 10 computers in the spreadsheet.
 
 |Computer Name|IP Address|Domain Name|
 |-----------------|--------------|---------------|
-|WG\-Det\-1|172.30.14.21|DETROIT|
-|WG\-Det\-2|172.30.14.22|DETROIT|
-|WG\-Det\-3|172.30.14.23|DETROIT|
-|WG\-Dal\-1|172.30.14.24|DALLAS|
-|WG\-Dal\-2|172.30.14.25|DALLAS|
-|WG\-Chi\-1|172.30.14.26|CHICAGO|
-|WG\-Chi\-2|172.30.14.27|CHICAGO|
-|WG\-Chi\-3|172.30.14.28|CHICAGO|
-|WG\-Chi\-4|172.30.14.29|CHICAGO|
-|WG\-Chi\-5|172.30.14.30|CHICAGO|
+|WG-Det-1|172.30.14.21|DETROIT|
+|WG-Det-2|172.30.14.22|DETROIT|
+|WG-Det-3|172.30.14.23|DETROIT|
+|WG-Dal-1|172.30.14.24|DALLAS|
+|WG-Dal-2|172.30.14.25|DALLAS|
+|WG-Chi-1|172.30.14.26|CHICAGO|
+|WG-Chi-2|172.30.14.27|CHICAGO|
+|WG-Chi-3|172.30.14.28|CHICAGO|
+|WG-Chi-4|172.30.14.29|CHICAGO|
+|WG-Chi-5|172.30.14.30|CHICAGO|
 
 The first step is to convert the data in the table into a .csv file format. In the .csv file, you make the assumption that the first row is data, and not a header. Therefore, you remove the header line from the spreadsheet and save the results as **newcomputers.csv** as in the following example.
 

@@ -1,1 +1,1 @@
-Windows PowerShell Desired State Configuration \(DSC\)
+Windows PowerShell Desired State Configuration (DSC)

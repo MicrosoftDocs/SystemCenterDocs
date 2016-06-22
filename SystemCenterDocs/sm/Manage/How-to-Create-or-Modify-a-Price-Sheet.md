@@ -37,11 +37,11 @@ Although you can create multiple price sheets without publishing them, you must 
 
     2.  In the **Cloud Membership Price per day** box, type the base price value for membership in the cloud. For example, type **10.20**.
 
-    3.  In the **VM CPU Price per Core\/day** box, type the price value of the CPU core in the virtual machine that is included in the virtual machine. For example, type **1.20**.
+    3.  In the **VM CPU Price per Core/day** box, type the price value of the CPU core in the virtual machine that is included in the virtual machine. For example, type **1.20**.
 
-    4.  In the **VM Memory Price per GB\/day** box, type the price value of each GB of memory in the virtual machine that is included in the associated cloud. For example, type **.30**.
+    4.  In the **VM Memory Price per GB/day** box, type the price value of each GB of memory in the virtual machine that is included in the associated cloud. For example, type **.30**.
 
-    5.  In the **VM Storage Price per GB\/day** box, type the base value of each GB of storage space in the virtual machine that is included in the associated cloud. For example, type **.10**.
+    5.  In the **VM Storage Price per GB/day** box, type the base value of each GB of storage space in the virtual machine that is included in the associated cloud. For example, type **.10**.
 
     6.  In the **Highly Available VM Price per day** box, type the price value for each virtual machine that is highly available. For example, type **1.10**.
 
@@ -83,11 +83,11 @@ Although you can create multiple price sheets without publishing them, you must 
 
     2.  In the **Cloud Membership Price per day** box, update the base price value for membership in the cloud. For example, type **9.10**
 
-    3.  In the **VM CPU Price per Core\/day** box, update the price value of the CPU core in the virtual machine. For example, type **0.60**
+    3.  In the **VM CPU Price per Core/day** box, update the price value of the CPU core in the virtual machine. For example, type **0.60**
 
-    4.  In the **VM Memory Price per GB\/day** box, update the price value of each GB of memory in the virtual machine. For example, type **.15**
+    4.  In the **VM Memory Price per GB/day** box, update the price value of each GB of memory in the virtual machine. For example, type **.15**
 
-    5.  In the **VM Storage Price per GB\/day** box, update the base value of each GB of storage space in the virtual machine. For example, type **.05**
+    5.  In the **VM Storage Price per GB/day** box, update the base value of each GB of storage space in the virtual machine. For example, type **.05**
 
     6.  In the **Highly Available VM Price per day** box, update the price value for each virtual machine that is highly available. For example, type **.90**.
 

@@ -23,9 +23,9 @@ When an incident has already been breached, no notification bar is displayed in 
 
 2.  In the **Work Items** pane, expand **Incident Management**, and then click **Incidents with Service Level Warning**.
 
-3.  In the **Incidents with Service Level Warning** list, select an incident, and then in the **Tasks** pane, under **\<IncidentID\-IncidentName\>**, click **Edit**.
+3.  In the **Incidents with Service Level Warning** list, select an incident, and then in the **Tasks** pane, under **<IncidentID-IncidentName>**, click **Edit**.
 
-4.  In the **\<Incident IncidentID\-IncidentName – Status\>** form, observe the **One or more Service Level Objectives are about to breach** warning.
+4.  In the **<Incident IncidentID-IncidentName – Status>** form, observe the **One or more Service Level Objectives are about to breach** warning.
 
 5.  Click the **Service Level** tab, and observe the status of the incident as **Warning**. You can also see other information about the incident, most notably **Time Before SLA Breached**.
 
@@ -37,7 +37,7 @@ When an incident has already been breached, no notification bar is displayed in 
 
 2.  In the **Work Items** pane, expand **Incident Management**, and then click **Incidents with Service Level Breached**.
 
-3.  In the **Incidents with Service Level Breached** list, select an incident, and then in the **Tasks** pane, under **\<IncidentID\-IncidentName\>**, click **Edit**.
+3.  In the **Incidents with Service Level Breached** list, select an incident, and then in the **Tasks** pane, under **<IncidentID-IncidentName>**, click **Edit**.
 
 4.  Click the **Service Level** tab, and observe the status of the incident as **Breached**.
 

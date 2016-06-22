@@ -11,7 +11,7 @@ ms.topic: article
 ms.assetid: 3a3b43a0-d777-452a-987b-5f41f58e62d0
 ---
 # View and Analyze an OLAP Data Cube with Excel
-You can use the following procedure to view and analyze a Microsoft Online Analytical Processing \(OLAP\) data cube from System Center 2016 Technical Preview \- Service Manager with Microsoft Excel. You can also save your workbooks into an analysis library. Using the PivotTable field list, you can drag and drop fields from the cube into the workbook.
+You can use the following procedure to view and analyze a Microsoft Online Analytical Processing (OLAP) data cube from System Center 2016 Technical Preview - Service Manager with Microsoft Excel. You can also save your workbooks into an analysis library. Using the PivotTable field list, you can drag and drop fields from the cube into the workbook.
 
 You must have Microsoft Excel 2007 or later installed on the computer running the Service Manager console in order to use the following procedure.
 

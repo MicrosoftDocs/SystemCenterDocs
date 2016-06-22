@@ -26,7 +26,7 @@ Events with a source of **Deployment** are usually generated during management p
 
 When you start and stop Service Manager services, you must stop and start all three services.
 
-After the data warehouse is deployed, events are more likely to have a source of **Data Warehouse**. These events are created by jobs within the normal course of operations like extract, transform, and load \(ETL\) jobs; the MPSync job; and the DWMaintenance job.
+After the data warehouse is deployed, events are more likely to have a source of **Data Warehouse**. These events are created by jobs within the normal course of operations like extract, transform, and load (ETL) jobs; the MPSync job; and the DWMaintenance job.
 
 ## Using the  Service Manager console to troubleshoot errors
 In the Service Manager console, click **Data Warehouse Jobs** and you will see ETL job and MPSync job status. If your deployment was successful and your data warehouse is correctly registered to at least one Service Manager management group, you see at least five jobs. Every job should have the status **Running** or **Not Started**.
@@ -42,10 +42,10 @@ The Windows PowerShell cmdlets in the following table provide detailed informati
 
 |Command|Description|
 |-----------|---------------|
-|Get\-SCDWMgmtGroup|This command tells you which sources are currently registered with the data warehouse. You should expect to see at least two different DataSourceName values.|
-|Get\-SCDWJob|This command lists the data warehouse job status of the current batch. Using the command, you can check whether the jobs are enabled or not, which jobs are running, and when they started.<br /><br />When the MPSync or DWMaintenance jobs start, they disable all of the ETL jobs. You will see the **Is Enabled** column set to **False** for each of the ETL jobs. This means that even if the ETL job status shows it is running, it actually is not running. When the MPSync or DWMaintenance job completes, the ETL jobs are automatically enabled and resume processing.<br /><br />Jobs normally have the **Not Started** status, unless the previous batch has completed. If you prefer, you can use the **Get\-SCDWJob** command to view the last few batches of a specific job.|
-|Get\-SCDWJob –JobName \<Specific job name\> \-NumberOfBatches \<number\>|Use this command to see the latest job, specified by \<Specific job name\>, completed, when it started, and when it ended. You can calculate how long it ran and what the next batch ID and status is. The job batch ID is always incremental.|
-|Get\-SCDWJobModule|This command provides detailed information about the specific modules within the job. This is very useful when you see job failures and you want to find out what caused the failure.|
+|Get-SCDWMgmtGroup|This command tells you which sources are currently registered with the data warehouse. You should expect to see at least two different DataSourceName values.|
+|Get-SCDWJob|This command lists the data warehouse job status of the current batch. Using the command, you can check whether the jobs are enabled or not, which jobs are running, and when they started.<br /><br />When the MPSync or DWMaintenance jobs start, they disable all of the ETL jobs. You will see the **Is Enabled** column set to **False** for each of the ETL jobs. This means that even if the ETL job status shows it is running, it actually is not running. When the MPSync or DWMaintenance job completes, the ETL jobs are automatically enabled and resume processing.<br /><br />Jobs normally have the **Not Started** status, unless the previous batch has completed. If you prefer, you can use the **Get-SCDWJob** command to view the last few batches of a specific job.|
+|Get-SCDWJob –JobName <Specific job name\> -NumberOfBatches <number\>|Use this command to see the latest job, specified by <Specific job name\>, completed, when it started, and when it ended. You can calculate how long it ran and what the next batch ID and status is. The job batch ID is always incremental.|
+|Get-SCDWJobModule|This command provides detailed information about the specific modules within the job. This is very useful when you see job failures and you want to find out what caused the failure.|
 
 ## Troubleshooting Common Data Warehouse Issues
 This list is not exhaustive, but it covers most of the common problems that you are likely to encounter.
@@ -65,9 +65,9 @@ Step 1: Check the deployment status of your management packs:
 
 1.  In the Service Manager console, click **Data Warehouse**.
 
-2.  Click **Management Packs**, and in the search **Filter** box, type **report**. This filters results to report\-related management packs.
+2.  Click **Management Packs**, and in the search **Filter** box, type **report**. This filters results to report-related management packs.
 
-3.  Check the deployment status \(last column\) of the following management packs. None of the management packs should have a status of **Failed**.
+3.  Check the deployment status (last column) of the following management packs. None of the management packs should have a status of **Failed**.
 
     -   ServiceManager.ActivityManagement.Report.Library
 
@@ -89,7 +89,7 @@ If any of the above five management packs failed deployment:
 
 3.  If there are error messages in the event log that indicate **cannot load Assembly Microsoft.EnterpriseManagement.Reporting.Code.dll**, review the following items:
 
-    1.  Your installation of SQL Server Reporting Services \(SSRS\) may be on a different server than the data warehouse management server.
+    1.  Your installation of SQL Server Reporting Services (SSRS) may be on a different server than the data warehouse management server.
 
     2.  If your SSRS installation is on the same server as the data warehouse management server, restart the SSRS service.
 
@@ -111,7 +111,7 @@ Step 3: Redeploy any failed report management packs:
 
 2.  Click **Management Packs**, and then in the search filter, type **report**.
 
-3.  For each of the management packs listed in step 1, in the **Tasks Pane**, click **Restart Deployment**.
+3.  For each of the management packs listed in step 1, in the **Tasks Pane**, click **Restart Deployment**.
 
     > [!NOTE]
     > If the deployment status of a management pack is listed as **Completed**, the **Restart Deployment** option is unavailable.
@@ -143,11 +143,11 @@ To troubleshoot this problem, complete the following steps:
 
     3.  Verify that the custom management pack is listed in **Data Warehouse** under **Management Packs**.
 
-    4.  After the MP Sync job is completed, resume the failed job either from the Service Manager console or with a Windows PowerShell cmdlet.
+    4.  After the MP Sync job is completed, resume the failed job either from the Service Manager console or with a Windows PowerShell cmdlet.
 
 3.  Fix and reimport the custom management pack:
 
-    1.  Remove the custom management pack and recover from the failure using step 2, shown previously.
+    1.  Remove the custom management pack and recover from the failure using step 2, shown previously.
 
     2.  Fix the custom management pack.
 
@@ -162,15 +162,15 @@ You do not see data or new data in any of your reports. Another symptom is that 
 
 To troubleshoot this problem, complete the following steps:
 
-1.  Use the Windows PowerShell cmdlet **Get\-SCDWJob** to determine if all ETL jobs are enabled. Start Windows PowerShell, and then type **Get\-SCDWJob**.
+1.  Use the Windows PowerShell cmdlet **Get-SCDWJob** to determine if all ETL jobs are enabled. Start Windows PowerShell, and then type **Get-SCDWJob**.
 
-2.  If the ETL jobs are disabled and either the MPSyncJob or DWMaintenance jobs are running, you will have to wait awhile to get the job status again because these two background jobs disable the ETL jobs. However, if the two jobs are listed as **Not Started** and the ETL jobs are disabled, you can use the **Enable\-SCDWJob** cmdlet to enable each of them, for example:
+2.  If the ETL jobs are disabled and either the MPSyncJob or DWMaintenance jobs are running, you will have to wait awhile to get the job status again because these two background jobs disable the ETL jobs. However, if the two jobs are listed as **Not Started** and the ETL jobs are disabled, you can use the **Enable-SCDWJob** cmdlet to enable each of them, for example:
 
     ```
     Enable-SCDWJob -JobName Transform.Common
     ```
 
-3.  If the MPSync and DWMaintenance ETL jobs are all enabled and running but their individual batch ID has not changed for a long time, or if you use the **Get\-SCDWJobModule** cmdlet for specific jobs and you do not see that any module is actually running, check the event log and see if there are any error messages. Sometimes the error message might be many days old and you might need to review many days\-worth of events.
+3.  If the MPSync and DWMaintenance ETL jobs are all enabled and running but their individual batch ID has not changed for a long time, or if you use the **Get-SCDWJobModule** cmdlet for specific jobs and you do not see that any module is actually running, check the event log and see if there are any error messages. Sometimes the error message might be many days old and you might need to review many days-worth of events.
 
 4.  Check if the three services—System Center Data Access Service, Microsoft Monitoring Agent, and System Center Management Configuration—on the data warehouse management server are actually running. On the data warehouse management server, click **Start**, click **Run**, and then type **Services.msc**. In **Services** verify that the following services are running: System Center Data Access Service, Microsoft Monitoring Agent, and System Center Management Configuration.
 
@@ -195,7 +195,7 @@ Ensure that your management pack is synced to the data warehouse by completing t
 
     1.  It might have failed to import into the data warehouse management server. Go to the data warehouse management server, open the Operations Manager event log and then filter the events with **Event Sources** as **OpsMgr SDK Service**.
 
-    2.  The MPSync job may not have run yet. It runs on a recurring schedule, which is, by default, once every hour. You can modify the schedule with Windows PowerShell. To speed up management pack synchronization, after you import your management pack you can manually resume the MPSync job, either from the Service Manager console or by using Windows PowerShell.
+    2.  The MPSync job may not have run yet. It runs on a recurring schedule, which is, by default, once every hour. You can modify the schedule with Windows PowerShell. To speed up management pack synchronization, after you import your management pack you can manually resume the MPSync job, either from the Service Manager console or by using Windows PowerShell.
 
 Check the deployment status of your management pack:
 
@@ -214,7 +214,7 @@ Check the deployment status of your management pack:
 ### Management packs are stuck in Pending Association status after registering to the data warehouse
 **Symptom**
 
-Some management packs remain in **Pending Association** status several hours after registering Service Manager with the data warehouse and several \(up to four or more\) hours have passed. You can determine the time elapsed by opening the Service Manager console and navigating to **Data Warehouse**, **Data Warehouse Jobs**, **MPSync Job**, and then clicking **Details** from the **Tasks** pane.
+Some management packs remain in **Pending Association** status several hours after registering Service Manager with the data warehouse and several (up to four or more) hours have passed. You can determine the time elapsed by opening the Service Manager console and navigating to **Data Warehouse**, **Data Warehouse Jobs**, **MPSync Job**, and then clicking **Details** from the **Tasks** pane.
 
 **Troubleshooting Steps**
 
@@ -269,7 +269,7 @@ To troubleshoot this problem, check if the password for each Run As account has 
 
 It is easy to update the password if it is expired. However it is more difficult to update the system if you change the Run As account. We do not recommend that you modify Run As accounts.
 
-If the job failure is not related to the password, make sure that the Run As account for the failed job can be used to connect to the target database. For example, ensure that the Extract job Run As account can be used to connect to the Service Manager database. If not, make sure that the Structured Query Language \(SQL\) service that is hosting the database is running.
+If the job failure is not related to the password, make sure that the Run As account for the failed job can be used to connect to the target database. For example, ensure that the Extract job Run As account can be used to connect to the Service Manager database. If not, make sure that the Structured Query Language (SQL) service that is hosting the database is running.
 
 
 

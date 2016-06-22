@@ -11,15 +11,15 @@ ms.topic: article
 ms.assetid: d0b304e6-34d8-4316-a132-6cc6aec764d1
 ---
 # How to add an existing Scale-Out File Server to storage in VMM
-This topic describes how to add an existing Windows\-based Scale\-Out File Server to storage in Virtual Machine Manager \(VMM\). For information about how to use VMM to create the Scale\-Out File Server and add it at the same time, see the links at the end of this topic.
+This topic describes how to add an existing Windows-based Scale-Out File Server to storage in Virtual Machine Manager (VMM). For information about how to use VMM to create the Scale-Out File Server and add it at the same time, see the links at the end of this topic.
 
-When you add a file server, VMM automatically discovers all the shares that are currently present on the server.  For information about the steps to take after adding the Scale\-Out File Server, see [Overview: configuring storage using Scale-Out File Servers in VMM](Overview--configuring-storage-using-Scale-Out-File-Servers-in-VMM.md).
+When you add a file server, VMM automatically discovers all the shares that are currently present on the server.  For information about the steps to take after adding the Scale-Out File Server, see [Overview: configuring storage using Scale-Out File Servers in VMM](Overview--configuring-storage-using-Scale-Out-File-Servers-in-VMM.md).
 
 **Account requirements** To complete this procedure, you must be a member of the Administrator user role or a member of the Delegated Administrator user role.
 
-You will need a Run As account with administrator permissions on the Scale\-Out File Server. You can create the Run As account before or during the procedure in this topic. For more information, see [How to create a Run As account in VMM](How-to-create-a-Run-As-account-in-VMM.md).
+You will need a Run As account with administrator permissions on the Scale-Out File Server. You can create the Run As account before or during the procedure in this topic. For more information, see [How to create a Run As account in VMM](How-to-create-a-Run-As-account-in-VMM.md).
 
-### To add a Scale\-Out File Server to storage in VMM
+### To add a Scale-Out File Server to storage in VMM
 
 1.  Open the **Fabric** workspace.
 
@@ -31,9 +31,9 @@ You will need a Run As account with administrator permissions on the Scale\-Out 
 
     |Page|Action|
     |--------|----------|
-    |**Select Provider Type**|Select  **Windows\-based file server**.|
-    |**Specify Discovery Scope**|-   Specify the **Provider IP address or FQDN** of the Scale\-Out File Server \(this is the name or address of the file server, not the underlying cluster\). For example, you could specify a name such as **SOFS1.contoso.com**.<br />-   If the file server is in a domain that is not trusted by the domain of the Hyper\-V hosts, select **This computer is in an untrusted Active Directory domain**.<br />-   Click **Browse**, select a Run As account that has administrator permissions on the Scale\-Out File Server, and then click **OK**. Or, to create a new Run As account for accessing the file server, click **Browse**, and then click **Create Run As Account**.|
-    |**Gather Information**|VMM tries to discover and import information about the Scale\-Out File Server. If the discovery process succeeds, confirm that the display lists the correct file server, and then click **Next**.|
+    |**Select Provider Type**|Select  **Windows-based file server**.|
+    |**Specify Discovery Scope**|-   Specify the **Provider IP address or FQDN** of the Scale-Out File Server (this is the name or address of the file server, not the underlying cluster). For example, you could specify a name such as **SOFS1.contoso.com**.<br />-   If the file server is in a domain that is not trusted by the domain of the Hyper-V hosts, select **This computer is in an untrusted Active Directory domain**.<br />-   Click **Browse**, select a Run As account that has administrator permissions on the Scale-Out File Server, and then click **OK**. Or, to create a new Run As account for accessing the file server, click **Browse**, and then click **Create Run As Account**.|
+    |**Gather Information**|VMM tries to discover and import information about the Scale-Out File Server. If the discovery process succeeds, confirm that the display lists the correct file server, and then click **Next**.|
     |**Select Storage Devices**|Select the file shares that you want VMM to manage. You will be able to perform additional configuration steps on the file server, such as creating storage pools and adding shares, after finishing the wizard.|
 
 5.  On the **Summary** page, confirm the settings, and then click **Finish**.
@@ -42,7 +42,7 @@ You will need a Run As account with administrator permissions on the Scale\-Out 
 
 6.  To verify the newly discovered storage information, in the **Fabric** workspace, on the **Home** tab, click **Fabric Resources**. In the **Fabric** pane, expand **Storage** and click **File Servers**.
 
-    After you add the Scale\-Out File Server, you can perform additional configuration steps as described in [Overview: configuring storage using Scale-Out File Servers in VMM](Overview--configuring-storage-using-Scale-Out-File-Servers-in-VMM.md).
+    After you add the Scale-Out File Server, you can perform additional configuration steps as described in [Overview: configuring storage using Scale-Out File Servers in VMM](Overview--configuring-storage-using-Scale-Out-File-Servers-in-VMM.md).
 
 ## See Also
 [Creating a host cluster in VMM from existing Windows servers](Creating-a-host-cluster-in-VMM-from-existing-Windows-servers.md)

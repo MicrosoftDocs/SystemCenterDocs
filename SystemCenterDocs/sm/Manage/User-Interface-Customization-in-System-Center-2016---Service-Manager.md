@@ -23,20 +23,20 @@ The **Failed Service Requests** view in Service Manager is in a sealed managemen
 
 2.  In the **Work Items** pane, expand **Service Request Fulfillment**.
 
-3.  Right\-click **Failed Service Requests**, and then click **Duplicate View**.
+3.  Right-click **Failed Service Requests**, and then click **Duplicate View**.
 
 4.  In the **Select management pack** dialog box, accept the default management pack, **Service Manager Service Request Configuration Library**, and then click **OK**.
 
-5.  Right\-click **Failed Service Requests – Copy**, and then click **Edit View**.
+5.  Right-click **Failed Service Requests – Copy**, and then click **Edit View**.
 
 6.  In the Edit Failed Service Requests – Copy Wizard, in **Name**, type a new name for this view. For example, type **New Failed Service Requests**, and then click **OK**.
 
-7.  Right\-click **Failed Service Requests**, and then click **Hide View**.
+7.  Right-click **Failed Service Requests**, and then click **Hide View**.
 
 
 ## How to Customize a List Item
 
-The items in a list in a sealed management pack in Service Manager cannot be changed. In this example, you will add a list item \(phone\) to the **Service Request Source** list and save it into an unsealed management pack, and then edit the new view by changing its name to **New Failed Service Requests**. You will finish this exercise by hiding the original Failed Service Requests view. As an administrator, you will still see the hidden view.
+The items in a list in a sealed management pack in Service Manager cannot be changed. In this example, you will add a list item (phone) to the **Service Request Source** list and save it into an unsealed management pack, and then edit the new view by changing its name to **New Failed Service Requests**. You will finish this exercise by hiding the original Failed Service Requests view. As an administrator, you will still see the hidden view.
 
 ### To customize a list item
 

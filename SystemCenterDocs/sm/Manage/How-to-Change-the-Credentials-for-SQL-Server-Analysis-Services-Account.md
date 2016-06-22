@@ -15,7 +15,7 @@ If the account that is used for the SQL Server Analysis Services account changes
 
 ### To change the credentials for the SQL Server Analysis Services account
 
-1.  On the computer hosting SQL Server Analysis Server \(SSAS\), open **SQL Server Management Studio**.
+1.  On the computer hosting SQL Server Analysis Server (SSAS), open **SQL Server Management Studio**.
 
 2.  In the **Connect to Server** dialog box, complete these steps:
 
@@ -25,12 +25,12 @@ If the account that is used for the SQL Server Analysis Services account changes
 
     3.  In the **Authentication** list, select **Windows Authentication**, and then click **Connect**.
 
-3.  In **Microsoft SQL Server Management Studios**, in the **Object Explorer** pane, expand **Databases**, expand **DWASDataBase**, expand **Data Sources**, and then double\-click **DWDataMart**.
+3.  In **Microsoft SQL Server Management Studios**, in the **Object Explorer** pane, expand **Databases**, expand **DWASDataBase**, expand **Data Sources**, and then double-click **DWDataMart**.
 
-4.  In **Data Source Properties – DWDataMart**, under **Security Settings**, click the ellipsis button \(…\) next to **ImpersonateAccount**.
+4.  In **Data Source Properties – DWDataMart**, under **Security Settings**, click the ellipsis button (…) next to **ImpersonateAccount**.
 
 5.  In the **Impersonation Information** window, select **Use a specific Windows user name and password**, type the credentials for the new account, and then click **OK**.
 
-6.  Click **OK** to close **Data Source Properties – DWDataMart**, and then close Microsoft SQL Server Management Studio.
+6.  Click **OK** to close **Data Source Properties – DWDataMart**, and then close Microsoft SQL Server Management Studio.
 
 

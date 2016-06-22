@@ -9,7 +9,7 @@ ms.topic: get-started-article
 ms.assetid: 8c431276-ecd5-47d2-9b8c-e1936aa4e496
 ---
 # Console Compatibility for System Center Technical Preview
-Use this information to evaluate if your Microsoft SilverLight and Internet Explorer environments are ready to support Self\-Service Web Consoles for System Center 2016 Technical Preview.
+Use this information to evaluate if your Microsoft SilverLight and Internet Explorer environments are ready to support Self-Service Web Consoles for System Center 2016 Technical Preview.
 
 ## Web Console Compatibility
 
@@ -17,6 +17,6 @@ Use this information to evaluate if your Microsoft SilverLight and Internet Expl
 |---------------------------|-----------------|-----------------|-----------------------|-----------------------|------------------------|------------------------|
 |**Operations Manager** Web Console||●||||●|
 |**Orchestrator** Web Console|●|●|●|●|●|●|
-|**Service Manager Self\-Service Portal** Console|●|●|●|●|●|●|
+|**Service Manager Self-Service Portal** Console|●|●|●|●|●|●|
 
 

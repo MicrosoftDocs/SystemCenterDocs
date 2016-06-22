@@ -17,7 +17,7 @@ Use the procedures in this section to create and search for knowledge articles.
 
 ## How to Create a Knowledge Article
 
-You can use the following procedure to create a knowledge article in Service Manger. This procedure describes how to create a new example knowledge article to help users obtain the latest service pack for Windows 10. However, you can complete these steps to create any type of knowledge article.
+You can use the following procedure to create a knowledge article in Service Manger. This procedure describes how to create a new example knowledge article to help users obtain the latest service pack for Windows 10. However, you can complete these steps to create any type of knowledge article.
 
 > [!NOTE]
 > To view external content in knowledge articles, the computer on which the Service Manager console is installed must be connected to the Internet, either directly or through a proxy server.
@@ -44,7 +44,7 @@ You can use the following procedure to create a knowledge article in Service Man
 
     3.  In the **Category** list, select an applicable category. For example, select **Software**.
 
-6.  Expand the **External Content** area. In the **URL** box, type the web address if the information source of the article is known. For example, type **http:\/\/support.microsoft.com\/kb\/935791**.
+6.  Expand the **External Content** area. In the **URL** box, type the web address if the information source of the article is known. For example, type **http://support.microsoft.com/kb/935791**.
 
 7.  Expand **Internal Content**. In the box, type or paste information about how the user can apply information from the **External Content** box to fix a problem that is specific to your organization. For example, type **Visit the URL to read about how to download the latest service pack for Windows 10**.
 
@@ -57,7 +57,7 @@ You can use the following procedure to create a knowledge article in Service Man
 
 
 ## How to Search for a Knowledge Article
-You can use the following procedures to search for a knowledge article by using the Service Manager console in Service Manager. If you want to link a knowledge article to an incident or to a change request, save the incident or change request first. You can perform full\-text searches when you search for knowledge articles. When you search, Service Manager queries the following fields in the knowledge search form:
+You can use the following procedures to search for a knowledge article by using the Service Manager console in Service Manager. If you want to link a knowledge article to an incident or to a change request, save the incident or change request first. You can perform full-text searches when you search for knowledge articles. When you search, Service Manager queries the following fields in the knowledge search form:
 
 -   **Title**
 
@@ -73,10 +73,10 @@ You can use the following procedures to search for a knowledge article by using 
 
 -   **Analyst Content**
 
-When the search is complete, Service Manager displays matches for content in the **Title**, **End\-User** content, and **Analyst Content** fields. If you want to view the whole article, click **Open article to see external content**. If you type **Windows 10** in the search box, that exact string must exist in one of the knowledge article fields.
+When the search is complete, Service Manager displays matches for content in the **Title**, **End-User** content, and **Analyst Content** fields. If you want to view the whole article, click **Open article to see external content**. If you type **Windows 10** in the search box, that exact string must exist in one of the knowledge article fields.
 
 > [!NOTE]
-> Partial matches are not returned by a search. Therefore, when you search for a knowledge article based on a keyword, you must type the exact word. However, you can use the asterisk \(\*\) as a wildcard character when you perform a search.
+> Partial matches are not returned by a search. Therefore, when you search for a knowledge article based on a keyword, you must type the exact word. However, you can use the asterisk (*) as a wildcard character when you perform a search.
 
 ### To search for a knowledge article using the Service Manager console
 

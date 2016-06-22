@@ -8,12 +8,12 @@ ms.topic: article
 ms.assetid: 3af9228e-96a3-4eea-a97c-0c5bfa95d937
 ---
 # How to configure SQL Server Analysis Services for VMM
-You can integrate Virtual Machine Manager \(VMM\) with SQL Server Analysis Service \(SSAS\) in order to provide forecasting reports. Be sure that SQL Server Analysis Services are installed on the Operations Manager Reporting server.
+You can integrate Virtual Machine Manager (VMM) with SQL Server Analysis Service (SSAS) in order to provide forecasting reports. Be sure that SQL Server Analysis Services are installed on the Operations Manager Reporting server.
 
 Before you enable SSAS, you need to connect to an Operations Manager management server, as described in [How to connect VMM to Operations Manager](How-to-connect-VMM-to-Operations-Manager.md).
 
 > [!IMPORTANT]
-> SSAS requires Analysis Management Objects \(AMO\) be installed on the VMM management server. To download AMO, see the[Microsoft SQL Server 2012 Feature Pack](http://www.microsoft.com/download/details.aspx?id=29065) or the [Microsoft SQL Server 2014 Feature Pack](http://www.microsoft.com/download/details.aspx?id=42295).
+> SSAS requires Analysis Management Objects (AMO) be installed on the VMM management server. To download AMO, see the[Microsoft SQL Server 2012 Feature Pack](http://www.microsoft.com/download/details.aspx?id=29065) or the [Microsoft SQL Server 2014 Feature Pack](http://www.microsoft.com/download/details.aspx?id=42295).
 
 **Account requirements** You must be a member of the Administrator user role to configure SSAS.
 

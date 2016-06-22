@@ -1,1 +1,1 @@
-System Center 2016 Technical Preview \- Virtual Machine Manager
+System Center 2016 Technical Preview - Virtual Machine Manager

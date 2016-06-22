@@ -18,10 +18,10 @@ The following diagram presents one possible option for the distributed managemen
 ![Example OM Distributed MG](../media/om-distributed-deployment.png)
 
 > [!NOTE]
-> There is no direct communication between an operations console and the databases. All communication goes to the resource pool through TCP 5724, and then to the database servers using OLE DB on TCP 1433 or another customized port a customer establishes. However, there is direct communication between an Application Diagnostics console \(residing with a web console\) and databases.
+> There is no direct communication between an operations console and the databases. All communication goes to the resource pool through TCP 5724, and then to the database servers using OLE DB on TCP 1433 or another customized port a customer establishes. However, there is direct communication between an Application Diagnostics console (residing with a web console) and databases.
 
-## System Center 2016 \- Operations Manager Features
-This configuration supports all System Center 2016 Technical Preview \- Operations Manager features:
+## System Center 2016 - Operations Manager Features
+This configuration supports all System Center 2016 Technical Preview - Operations Manager features:
 
 -   Monitoring and alerting, targeted for up to 15,000 agents
 
@@ -42,11 +42,11 @@ This configuration supports all System Center 2016 Technical Preview \- Operatio
 ## Operations Manager Servers
 This configuration supports all Operations Manager server roles:
 
--   Audit Collection Services \(ACS\) collector
+-   Audit Collection Services (ACS) collector
 
 -   ACS database
 
--   ACS forwarder \(on agent\-managed devices\)
+-   ACS forwarder (on agent-managed devices)
 
 -   Gateway server
 
@@ -94,9 +94,9 @@ This configuration supports full distribution of features among servers in the m
 ## Distributed Deployment
 You deploy  Operations Manager in a distributed management group when you want to allow for scalability and high availability of your management servers and gateway servers. By default, all management servers are members of the All Management Servers Resource Pool, which balances the monitoring load of your management group as new management servers are added, and provides automatic failover for monitoring.
 
-A distributed management group distributes the various features of Operations Manager across several servers. For example, you can install the operational database on one server, the web console on a second server, and the Reporting server on a separate server. This differs from the single\-server management group installation, where all features are installed on one server. For more information, see [Single-Server Deployment of Operations Manager](Single-Server-Deployment-of-Operations-Manager.md)
+A distributed management group distributes the various features of Operations Manager across several servers. For example, you can install the operational database on one server, the web console on a second server, and the Reporting server on a separate server. This differs from the single-server management group installation, where all features are installed on one server. For more information, see [Single-Server Deployment of Operations Manager](Single-Server-Deployment-of-Operations-Manager.md)
 
-You can install a web console on a stand\-alone server or on an existing management server, but you cannot install the management server feature on a server that has an existing web console. If you want to install the management server and web console on the same server, you must either install both features simultaneously, or install the management server before you install the web console.
+You can install a web console on a stand-alone server or on an existing management server, but you cannot install the management server feature on a server that has an existing web console. If you want to install the management server and web console on the same server, you must either install both features simultaneously, or install the management server before you install the web console.
 
 This section of the Deployment Guide contains the following topics:
 

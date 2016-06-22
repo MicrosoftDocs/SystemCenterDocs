@@ -11,7 +11,7 @@ ms.topic: article
 ms.assetid: fd49432f-f22c-4366-8cfd-16d301a6a46c
 ---
 # How to Edit a Service Offering or a Request Offering
-Request offerings are catalog items that describe the item, assistance, or action that is available to end users in the service catalog. Request offerings are normally placed in logical groups of service offerings. Both service offerings and their request offerings are available to Self\-Service Portal users, when the status of the offerings is set to Published and if end users have been assigned a corresponding Service Manager user role. Only users that have been assigned a user role that is associated with a catalog group that contains catalog items can use the Self\-Service Portal to access the service catalog.
+Request offerings are catalog items that describe the item, assistance, or action that is available to end users in the service catalog. Request offerings are normally placed in logical groups of service offerings. Both service offerings and their request offerings are available to Self-Service Portal users, when the status of the offerings is set to Published and if end users have been assigned a corresponding Service Manager user role. Only users that have been assigned a user role that is associated with a catalog group that contains catalog items can use the Self-Service Portal to access the service catalog.
 
 You can use the following procedures to edit a service offering or a request offering.
 
@@ -21,7 +21,7 @@ You can use the following procedures to edit a service offering or a request off
 
 2.  In the **Library** pane, expand **Service Catalog**, expand **Request Offerings**, and then select **All Request Offerings**.
 
-3.  In the **All Request Offerings** list, double\-click the request offering that you want to edit.
+3.  In the **All Request Offerings** list, double-click the request offering that you want to edit.
 
 4.  In the **Edit Request Offering** form, you can edit information on the following pages:
 
@@ -31,9 +31,9 @@ You can use the following procedures to edit a service offering or a request off
 
     2.  Optionally, next to **Image**, you can either click **Browse** to find an image file or leave the default selection.
 
-    3.  In the **Description** text box, type a short description that will describe the request offering that will appear on the Self\-Service Portal page. For example, type **Use this request offering to request membership to an Active Directory Group**.
+    3.  In the **Description** text box, type a short description that will describe the request offering that will appear on the Self-Service Portal page. For example, type **Use this request offering to request membership to an Active Directory Group**.
 
-6.  On the **User Prompts** page, enter questions for users or define other instructions that will appear on the Self\-Service Portal when a user submits a request by completing the following steps:
+6.  On the **User Prompts** page, enter questions for users or define other instructions that will appear on the Self-Service Portal when a user submits a request by completing the following steps:
 
     1.  In the **Form instructions** box, type a summary of the information that the user must provide for the request. For example, type **Provide the information below to request membership to the Active Directory Group**
 
@@ -53,7 +53,7 @@ You can use the following procedures to edit a service offering or a request off
 
     4.  In the **Configure Instance Picker** dialog box in the **Frequently user basic classes** list, select **All basic classes**; in the filter box, type **Active**; and then select **Active Directory Group**.
 
-    5.  Click the **Configure Criteria \(optional\)** tab; in the list of properties under **User**, select **Department**; and then click **Add Constraint**.
+    5.  Click the **Configure Criteria (optional)** tab; in the list of properties under **User**, select **Department**; and then click **Add Constraint**.
 
     6.  In the **Criteria** box, click **Department equals**; in the **Set Token** list, click **Select token**; and then click **1. Enter your cost center: Integer**.
 
@@ -61,13 +61,13 @@ You can use the following procedures to edit a service offering or a request off
 
     8.  Click the **Display Columns** tab, and then select **Display Name**, **Department**, and **Last Name**.
 
-    9. Click the **Options** tab, select **Allow the user to select multiple objects**, select **Add user\-selected objects as affected configuration items**, and then select **Add the requesting user to the list of Active Directory group in the impacted configuration items \(Manual Activity\)**.
+    9. Click the **Options** tab, select **Allow the user to select multiple objects**, select **Add user-selected objects as affected configuration items**, and then select **Add the requesting user to the list of Active Directory group in the impacted configuration items (Manual Activity)**.
 
     10. Click **Ok** to close the **Configure Instance Picker** dialog box.
 
 8.  On the **Map Prompts** page, associate prompts with various fields of a service request or its activities, depending on the complexity of the form and the extension of the class that you have made. Complete the following steps to associate a justification with the review activity:
 
-    1.  Select **Approval for the user requesting membership to the Active Directory group – \(Review Activity\)**.
+    1.  Select **Approval for the user requesting membership to the Active Directory group – (Review Activity)**.
 
     2.  Next to **Description**, select the box under **Prompt Output**, and then in the list, select **3**. Enter your justification: .
 
@@ -83,7 +83,7 @@ You can use the following procedures to edit a service offering or a request off
 
 2.  In the **Library** pane, expand **Service Catalog**, expand **Service Offerings**, and then select **All Service Offerings**.
 
-3.  In the **All Service Offerings** list, double\-click the service offering that you want to edit.
+3.  In the **All Service Offerings** list, double-click the service offering that you want to edit.
 
 4.  In the **Edit Service Offering** form, edit information on the following pages.
 
@@ -97,13 +97,13 @@ You can use the following procedures to edit a service offering or a request off
 
     4.  In the **Language** list, either leave the default selection or select a language.
 
-    5.  In the **Overview** text box, type a short overview that will describe the service offering that will appear on the Self\-Service Portal home page. For example, type **Access to AD Group, Access to Labs**.
+    5.  In the **Overview** text box, type a short overview that will describe the service offering that will appear on the Self-Service Portal home page. For example, type **Access to AD Group, Access to Labs**.
 
-    6.  In the description box, type a description that will appear on the service offering page on the Self\-Service Portal.
+    6.  In the description box, type a description that will appear on the service offering page on the Self-Service Portal.
 
 6.  On the **Detailed Information** page, complete these steps:
 
-    1.  In the **Service level agreement information** box, type a summary of the service level agreement \(SLA\) information. For example, type **The SLAs for these requests range from 1\-2 business days.  For more information, click the link below.**
+    1.  In the **Service level agreement information** box, type a summary of the service level agreement (SLA) information. For example, type **The SLAs for these requests range from 1-2 business days.  For more information, click the link below.**
 
     2.  In the first **Link for additional information** box, type a hyperlink that users can click to view additional information about the SLA for this service offering.
 
