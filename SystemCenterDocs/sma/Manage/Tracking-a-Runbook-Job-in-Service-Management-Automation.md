@@ -83,7 +83,7 @@ You can use the following steps to view the jobs for a runbook.
 6.  From the **History** tab, click **View Source** at the bottom of the screen to the source for the job.
 
 ## <a name="PowerShell"></a>Retrieving Job Status using Windows PowerShell
-You can use the [Get-SmaJob](http://aka.ms/runbookauthor/cmdlet/getsmajob) to retrieve the jobs created for a runbook and the details of a particular job. If you start a runbook with Windows PowerShell using [Start-SmaRunbook](http://aka.ms/runbookauthor/cmdlet/startsmarunbook), then it will return the resulting job. Use [Get-SmaJobOutput](http://aka.ms/runbookauthor/cmdlet/getsmajoboutput) to get a job’s output.
+You can use the [Get\-SmaJob](http://aka.ms/runbookauthor/cmdlet/getsmajob) to retrieve the jobs created for a runbook and the details of a particular job. If you start a runbook with Windows PowerShell using [Start\-SmaRunbook](http://aka.ms/runbookauthor/cmdlet/startsmarunbook), then it will return the resulting job. Use [Get\-SmaJobOutput](http://aka.ms/runbookauthor/cmdlet/getsmajoboutput) to get a job’s output.
 
 The following sample commands retrieves the last job for a sample runbook and displays its status, the values provide for the runbook parameters, and the output from the job.
 

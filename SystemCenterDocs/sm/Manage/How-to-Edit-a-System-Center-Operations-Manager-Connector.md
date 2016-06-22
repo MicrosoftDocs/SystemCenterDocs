@@ -11,7 +11,7 @@ ms.topic: article
 ms.assetid: ae06d1ea-e30b-47ad-b991-0daee7c14cd4
 ---
 # How to Edit a System Center Operations Manager Connector
-After you install a System Center Operations Manager alert connector and configuration item (CI) connector, you can edit the connectors. For example, you can use the following procedure to add more management packs to the CI connector.
+After you install a System Center Operations Manager alert connector and configuration item \(CI\) connector, you can edit the connectors. For example, you can use the following procedure to add more management packs to the CI connector.
 
 ### To edit an Operations Manager CI connector
 

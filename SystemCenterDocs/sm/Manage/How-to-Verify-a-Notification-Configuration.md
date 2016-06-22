@@ -23,9 +23,9 @@ If you are verifying a recurring notification subscription, you must wait for th
 
 3.  In the **Tasks** pane, under **Incident Management**, click **Create Incident**.
 
-4.  In the **Incident <Number\> New** form, enter the required information in the **Affected user**, **Title**, **Classification Category**, **Impact**, and **Urgency** boxes.
+4.  In the **Incident \<Number\> New** form, enter the required information in the **Affected user**, **Title**, **Classification Category**, **Impact**, and **Urgency** boxes.
 
-5.  In the **Classification Category** list, select **E-mail Problems**, and then click **OK**.
+5.  In the **Classification Category** list, select **E\-mail Problems**, and then click **OK**.
 
 6.  Verify that an email notification that contains the information you entered in the template is received. The email title should contain the incident ID number.
 

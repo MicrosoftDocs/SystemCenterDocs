@@ -11,19 +11,19 @@ ms.topic: article
 ms.assetid: 26697203-df1e-4232-b9be-7c9976a362b8
 ---
 # SQL Server Requirements for Service Manager
-Microsoft® SQL Server® hosts the databases that System Center 2016 Technical Preview - Service Manager creates. In addition, System Center 2016 Technical Preview - Service Manager requires SQL Server Analysis Services (SSAS) to work with Microsoft Online Analytical Processing (OLAP) cubes. SQL Server Reporting Services (SSRS) is required to support System Center 2016 Technical Preview - Service Managerreporting.
+Microsoft® SQL Server® hosts the databases that System Center 2016 Technical Preview \- Service Manager creates. In addition, System Center 2016 Technical Preview \- Service Manager requires SQL Server Analysis Services \(SSAS\) to work with Microsoft Online Analytical Processing \(OLAP\) cubes. SQL Server Reporting Services \(SSRS\) is required to support System Center 2016 Technical Preview \- Service Managerreporting.
 
-All SQL Server requirements are listed at [SQL Server](http://go.microsoft.com/fwlink/?LinkId=268329) and SQL Server editions are listed at [Operating System and Database Edition Support](http://go.microsoft.com/fwlink/?LinkId=268324).
+All SQL Server requirements are listed at [SQL Server](http://go.microsoft.com/fwlink/?LinkId=268329) and SQL Server editions are listed at [Operating System and Database Edition Support](http://go.microsoft.com/fwlink/?LinkId=268324).
 
 > [!NOTE]
-> System Center 2016 Technical Preview - Service Manager 2012 with no service pack is supported on SQL Server 2008 R2 without a service pack. System Center 2016 Technical Preview - Service Manager 2012 SP1 requires SQL Server 2008 R2 SP1 or later.
+> System Center 2016 Technical Preview \- Service Manager 2012 with no service pack is supported on SQL Server 2008 R2 without a service pack. System Center 2016 Technical Preview \- Service Manager 2012 SP1 requires SQL Server 2008 R2 SP1 or later.
 > 
-> System Center 2016 Technical Preview - Service Manager does not support setting the MultiSubnetFailover parameter. This parameter is not used in System Center 2016 Technical Preview - Service Manager connection strings.
+> System Center 2016 Technical Preview \- Service Manager does not support setting the MultiSubnetFailover parameter. This parameter is not used in System Center 2016 Technical Preview \- Service Manager connection strings.
 
 ## SQL Server 2012 Standard and Enterprise Editions
-SQL Server 2012 is available in Standard, Enterprise, and Business Intelligence editions. System Center 2016 Technical Preview - Service Manager will function with all editions. However, there are additional features available in SQL Server 2012 Enterprise that can enhance your experience with the System Center 2016 Technical Preview - Service Manager data warehouse:
+SQL Server 2012 is available in Standard, Enterprise, and Business Intelligence editions. System Center 2016 Technical Preview \- Service Manager will function with all editions. However, there are additional features available in SQL Server 2012 Enterprise that can enhance your experience with the System Center 2016 Technical Preview \- Service Manager data warehouse:
 
--   **Analysis Services Files**: In the Enterprise and Business Intelligence editions of SQL Server 2012, you can decide where Analysis Services database files will be stored. In the Standard edition, there is only one default location for the files.
+-   **Analysis Services Files**: In the Enterprise and Business Intelligence editions of SQL Server 2012, you can decide where Analysis Services database files will be stored. In the Standard edition, there is only one default location for the files.
 
 -   **Cube Processing**: In the Enterprise and Business Intelligence editions, cubes are processed incrementally each night. In the Standard edition, the entire cube is processed each night and therefore, the amount of processing time required will increase as more data is accumulated. Cubes can still be queried when being processed however, reporting performance will be reduced.
 
@@ -31,19 +31,19 @@ SQL Server 2012 is available in Standard, Enterprise, and Business Intelligence 
 
 -   **PowerPivot**: In the Enterprise and Business Intelligence editions, you can use Microsoft SQL Server PowerPiviot for SharePoint.
 
-You must make your decision to use either the Standard, Enterprise, or Business Intelligence editions of SQL Server 2012 before you install System Center 2016 Technical Preview - Service Manager. It is possible to use a combination of editions for the System Center 2016 Technical Preview - Service Manager database and use a different edition for the data warehouse databases.
+You must make your decision to use either the Standard, Enterprise, or Business Intelligence editions of SQL Server 2012 before you install System Center 2016 Technical Preview \- Service Manager. It is possible to use a combination of editions for the System Center 2016 Technical Preview \- Service Manager database and use a different edition for the data warehouse databases.
 
-For more information comparing SQL Server editions, see [SQL Server 2012 Editions](http://go.microsoft.com/fwlink/p/?LinkId=259487).
+For more information comparing SQL Server editions, see [SQL Server 2012 Editions](http://go.microsoft.com/fwlink/p/?LinkId=259487).
 
 > [!NOTE]
-> System Center 2016 Technical Preview - Service Manager was tested using the Standard and Enterprise editions of SQL Server 2012.
+> System Center 2016 Technical Preview \- Service Manager was tested using the Standard and Enterprise editions of SQL Server 2012.
 
-For information about the specific versions of SQL Server that are supported in System Center 2016 Technical Preview - Service Manager see [Software Requirements for Service Manager](Software-Requirements-for-Service-Manager.md).
+For information about the specific versions of SQL Server that are supported in System Center 2016 Technical Preview \- Service Manager see [Software Requirements for Service Manager](Software-Requirements-for-Service-Manager.md).
 
 ## SQL Server 2008 R2 Standard and Enterprise Editions
-SQL Server 2008 R2 is available in both Standard and Enterprise editions. System Center 2016 Technical Preview - Service Manager will function with both editions. However, there are additional features available in SQL Server 2008 Enterprise that can enhance your experience with the System Center 2016 Technical Preview - Service Manager data warehouse:
+SQL Server 2008 R2 is available in both Standard and Enterprise editions. System Center 2016 Technical Preview \- Service Manager will function with both editions. However, there are additional features available in SQL Server 2008 Enterprise that can enhance your experience with the System Center 2016 Technical Preview \- Service Manager data warehouse:
 
--   **Analysis Services Files**: In the Enterprise edition of SQL Server 2008, you can decide where Analysis Services database files will be stored. In the Standard edition, there is only one default location for the files.
+-   **Analysis Services Files**: In the Enterprise edition of SQL Server 2008, you can decide where Analysis Services database files will be stored. In the Standard edition, there is only one default location for the files.
 
 -   **Cube Processing**: In the Enterprise edition, cubes are processed incrementally each night. In the Standard edition, the entire cube is processed each night and therefore, the amount of processing time required will increase as more data is accumulated. Cubes can still be queried when being processed however, reporting performance will be reduced.
 
@@ -51,38 +51,38 @@ SQL Server 2008 R2 is available in both Standard and Enterprise editions. System
 
 -   **PowerPivot**: In the Enterprise edition, you can use Microsoft SQL Server PowerPiviot for SharePoint.
 
-You must make your decision to use either the Standard or Enterprise editions of SQL Server 2008 before you install System Center 2016 Technical Preview - Service Manager. It is possible to use SQL Server 2008 Standard for the System Center 2016 Technical Preview - Service Manager database and use SQL Server 2008 Enterprise for the data warehouse databases.
+You must make your decision to use either the Standard or Enterprise editions of SQL Server 2008 before you install System Center 2016 Technical Preview \- Service Manager. It is possible to use SQL Server 2008 Standard for the System Center 2016 Technical Preview \- Service Manager database and use SQL Server 2008 Enterprise for the data warehouse databases.
 
-For more information comparing SQL Server editions, see [Microsoft SQL Server 2008 Enterprise and Standard Feature Compare](http://go.microsoft.com/fwlink/?LinkId=242074). (Adobe Reader is required.)
+For more information comparing SQL Server editions, see [Microsoft SQL Server 2008 Enterprise and Standard Feature Compare](http://go.microsoft.com/fwlink/?LinkId=242074). \(Adobe Reader is required.\)
 
 > [!NOTE]
-> System Center 2016 Technical Preview - Service Manager was tested using both the Standard and Enterprise editions of SQL Server 2008. No other editions of SQL Server are supported.
+> System Center 2016 Technical Preview \- Service Manager was tested using both the Standard and Enterprise editions of SQL Server 2008. No other editions of SQL Server are supported.
 
-For information about the specific versions of SQL Server that are supported in System Center 2016 Technical Preview - Service Manager see [Software Requirements for Service Manager](Software-Requirements-for-Service-Manager.md).
+For information about the specific versions of SQL Server that are supported in System Center 2016 Technical Preview \- Service Manager see [Software Requirements for Service Manager](Software-Requirements-for-Service-Manager.md).
 
 ## Allow Updates
-To either install or upgrade System Center 2016 Technical Preview - Service Manager, computers running SQL Server that host databases must be configured to allow updates. If updates are not allowed, System Center 2016 Technical Preview - Service Manager Setup will not complete and the following error message will appear at the **Create database** stage of the installation:
+To either install or upgrade System Center 2016 Technical Preview \- Service Manager, computers running SQL Server that host databases must be configured to allow updates. If updates are not allowed, System Center 2016 Technical Preview \- Service Manager Setup will not complete and the following error message will appear at the **Create database** stage of the installation:
 
-"An error occurred while executing a customer action: _ExecuteSqlScripts. This upgrade attempt has failed before permanent modifications were made. Upgrade has successfully rolled back to the original state of the system. Once the corrections are made, you can retry upgrade for this role."
+"An error occurred while executing a customer action: \_ExecuteSqlScripts. This upgrade attempt has failed before permanent modifications were made. Upgrade has successfully rolled back to the original state of the system. Once the corrections are made, you can retry upgrade for this role."
 
-You can check the status of **allow updates** on SQL Server by executing the following stored procedure from within SQL Server Management Studio:
+You can check the status of **allow updates** on SQL Server by executing the following stored procedure from within SQL Server Management Studio:
 
 ```
 sp_configure 'allow updates'
 ```
 
-In the results table, examine the value for "run_value". If the value of "run value" is 1, set it back to 0 with the following stored procedure, and then run Setup again.
+In the results table, examine the value for "run\_value". If the value of "run value" is 1, set it back to 0 with the following stored procedure, and then run Setup again.
 
 ```
 sp_configure 'allow updates',0 reconfigure with override
 ```
 
 ## AlwaysOn Availability Groups Considerations for Service Manager Databases
-SQL Server AlwaysOn Availability Groups functionality is supported by all versions of System Center 2016 Technical Preview - Service Manager for the default server instance. However, SQL AlwaysOn Availability Groups functionality is not supported for a named instance.
+SQL Server AlwaysOn Availability Groups functionality is supported by all versions of System Center 2016 Technical Preview \- Service Manager for the default server instance. However, SQL AlwaysOn Availability Groups functionality is not supported for a named instance.
 
-When considering SQL Server AlwaysOn Availability Groups for the Service Manager database or the DWDataMart, you should determine whether availability replica should support either or both of the following active-secondary capabilities:
+When considering SQL Server AlwaysOn Availability Groups for the Service Manager database or the DWDataMart, you should determine whether availability replica should support either or both of the following active\-secondary capabilities:
 
--   Read-only connection access which enables read-only connections to the replica to access and read its databases when it is running as a secondary replica.
+-   Read\-only connection access which enables read\-only connections to the replica to access and read its databases when it is running as a secondary replica.
 
 -   Performing backup operations on its databases when it is running as a secondary replica.
 

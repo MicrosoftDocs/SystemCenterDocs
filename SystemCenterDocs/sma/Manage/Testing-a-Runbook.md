@@ -15,7 +15,7 @@ You can test the Draft version of a runbook in Service Management Automation whi
 
 When you test a runbook, the Draft runbook is executed and any actions that it performs are completed. No job history is created, but the [Output](Runbook-Output-and-Messages.md#Output) and [Warning and Error](Runbook-Output-and-Messages.md#WarningError) streams are displayed in the Test Output Pane. Messages to the [Verbose Stream](Runbook-Output-and-Messages.md#Verbose) are displayed in the Output Pane only if the [$VerbosePreference variable](Runbook-Output-and-Messages.md#PreferenceVariables) is set to **Continue**.
 
-When a runbook is tested, it still executes the workflow normally and performs any actions against resources in the environment. For this reason, you should only test runbooks against non-production resources.
+When a runbook is tested, it still executes the workflow normally and performs any actions against resources in the environment. For this reason, you should only test runbooks against non\-production resources.
 
 ## To Test a Runbook in Service Management Automation
 To test a runbook, [open the Draft version of the runbook in the Management Portal](Editing-a-Runbook.md#Portal). Click the **Test** button at the bottom of the screen to start the test.

@@ -11,7 +11,7 @@ ms.topic: article
 ms.assetid: afe4c02a-6698-4cfb-9f2b-ec42adf70549
 ---
 # How to Connect to a VMM Management Server by Using the VMM Console
-You can use the following procedure to use the Virtual Machine Manager (VMM) console to connect to a VMM management server.
+You can use the following procedure to use the Virtual Machine Manager \(VMM\) console to connect to a VMM management server.
 
 To use the VMM console, you must be a member of a user role in VMM.
 

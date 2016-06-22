@@ -11,10 +11,10 @@ ms.topic: article
 ms.assetid: 2696dbca-8160-471e-8b10-e678a25329cc
 ---
 # How to Synchronize a System Center Operations Manager Connector
-When you create a System Center Operations Manager alert connector for Service Manager, it polls Operations Manager every 30 seconds. When you create an Operations Manager configuration item (CI) connector, it synchronizes data from Operations Manager every day at the time you specified in the configured schedule. However, you can use the following procedure to manually synchronize either type of connector.
+When you create a System Center Operations Manager alert connector for Service Manager, it polls Operations Manager every 30 seconds. When you create an Operations Manager configuration item \(CI\) connector, it synchronizes data from Operations Manager every day at the time you specified in the configured schedule. However, you can use the following procedure to manually synchronize either type of connector.
 
 > [!NOTE]
-> The **Start Time** and **Finish Time** values are not updated when an alert connector is synchronized. These values are only updated when alert data is transferred between Operations Manager and Service Manager.
+> The **Start Time** and **Finish Time** values are not updated when an alert connector is synchronized. These values are only updated when alert data is transferred between Operations Manager and Service Manager.
 
 ### To manually synchronize an Operations Manager connector
 

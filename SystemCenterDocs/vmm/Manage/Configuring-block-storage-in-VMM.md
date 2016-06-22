@@ -8,7 +8,7 @@ ms.topic: article
 ms.assetid: b47fcec1-a310-43e7-9d37-19ee4913d097
 ---
 # Configuring block storage in VMM
-Use the procedures in this section to configure block storage resources (for example, storage on iSCSI arrays).
+Use the procedures in this section to configure block storage resources \(for example, storage on iSCSI arrays\).
 
 -   [Overview: configuring block storage VMM](Overview--configuring-block-storage-VMM.md)
 

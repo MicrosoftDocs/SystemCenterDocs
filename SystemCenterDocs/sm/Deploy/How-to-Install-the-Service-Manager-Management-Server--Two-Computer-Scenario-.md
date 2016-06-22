@@ -11,7 +11,7 @@ ms.topic: article
 ms.assetid: ae34217b-d394-46d9-ab3b-96dacef2dbd4
 ---
 # How to Install the Service Manager Management Server (Two-Computer Scenario)
-As the first step in the two-computer installation process, install the Service Manager management server, the Service Manager database, and the Service Manager console on one of the two computers.
+As the first step in the two\-computer installation process, install the Service Manager management server, the Service Manager database, and the Service Manager console on one of the two computers.
 
 During setup, you will be prompted to provide credentials for the following accounts:
 
@@ -27,22 +27,22 @@ For more information about the permissions that these accounts require, see "Acc
 
 1.  Log on to the computer that will host the Service Manager management server by using an account that has administrative rights.
 
-2.  On the Service Manager installation media, double-click the **Setup.exe** file.
+2.  On the Service Manager installation media, double\-click the **Setup.exe** file.
 
 3.  On the **Service Manager Setup Wizard** page, click **Service Manager management server**.
 
-4.  On the **Product registration** page, type information in the boxes. In the **Product key** boxes, type the product key that you received with Service Manager, or as an alternative, select **Install as an evaluation edition (180 day trial**. Read the Microsoft Software License Terms, and, if applicable, click **I have read, understood, and agree with the terms of the license agreement**, and then click **Next**.
+4.  On the **Product registration** page, type information in the boxes. In the **Product key** boxes, type the product key that you received with Service Manager, or as an alternative, select **Install as an evaluation edition \(180 day trial**. Read the Microsoft Software License Terms, and, if applicable, click **I have read, understood, and agree with the terms of the license agreement**, and then click **Next**.
 
 5.  On the **Installation location** page, verify that sufficient free disk space is available, and then click **Next**. If necessary, click **Browse** to change the location in which the Service Manager management server will be installed.
 
 6.  On the **System check results** page, make sure that the prerequisite check passed or at least passed with warnings, and then click **Next**.
 
-    If the prerequisite checker determines that the Microsoft Report Viewer Redistributable has not been installed, click **Install Microsoft Report Viewer Redistributable**. After the Microsoft Report Viewer Redistributable 2008 (KB971119) Setup Wizard completes, click **Check prerequisites again**.
+    If the prerequisite checker determines that the Microsoft Report Viewer Redistributable has not been installed, click **Install Microsoft Report Viewer Redistributable**. After the Microsoft Report Viewer Redistributable 2008 \(KB971119\) Setup Wizard completes, click **Check prerequisites again**.
 
-7.  On the **Configure the Service Manager database** page, Service Manager will check the current computer to see if an instance of SQL Server exists. By default, if an instance is found, Service Manager creates a new database in the existing instance. If an instance appears, click **Next**.
+7.  On the **Configure the Service Manager database** page, Service Manager will check the current computer to see if an instance of SQL Server exists. By default, if an instance is found, Service Manager creates a new database in the existing instance. If an instance appears, click **Next**.
 
     > [!IMPORTANT]
-    > A warning message appears if you are using the default collation (SQL_Latin1_General_CP1_CI_AS). Support for multiple languages in Service Manager is not possible when you are using the default collation. If later you decide to support multiple languages using a different collation, you have to reinstall SQL Server. See "Microsoft SQL Server 2008 with SP1" in the [Planning Guide for System Center 2012 - Service Manager](http://go.microsoft.com/fwlink/?LinkId=209672).
+    > A warning message appears if you are using the default collation \(SQL\_Latin1\_General\_CP1\_CI\_AS\). Support for multiple languages in Service Manager is not possible when you are using the default collation. If later you decide to support multiple languages using a different collation, you have to reinstall SQL Server. See "Microsoft SQL Server 2008 with SP1" in the [Planning Guide for System Center 2012 - Service Manager](http://go.microsoft.com/fwlink/?LinkId=209672).
 
 8.  On the **Configure the Service Manager management group** page, complete these steps:
 
@@ -59,7 +59,7 @@ For more information about the permissions that these accounts require, see "Acc
 
 11. On the **Help improve System Center Service Manager** page, indicate your preference for participation in the Customer Experience Improvement Program. As an option, click **Tell me more about the program**, and then click **Next**.
 
-12. On the **Use Microsoft Update to help keep your computer secure and up-to-date** page, indicate your preference for using Microsoft Update to check for Service Manager updates. If you want Windows Update to check for updates, select **Initiate machine wide Automatic update**. Click **Next**.
+12. On the **Use Microsoft Update to help keep your computer secure and up\-to\-date** page, indicate your preference for using Microsoft Update to check for Service Manager updates. If you want Windows Update to check for updates, select **Initiate machine wide Automatic update**. Click **Next**.
 
 13. On the **Installation summary** page, click **Install**.
 

@@ -8,7 +8,7 @@ ms.topic: article
 ms.assetid: 96db0f54-5b56-426a-9866-9e3b0902609c
 ---
 # How to add and classify SMI-S and SMP storage devices in VMM
-Use the following procedure to add remote storage devices in Virtual Machine Manager (VMM). You can add and discover external storage arrays that are managed by Storage Management Initiative – Specification (SMI-S) or Store Management Provider (SMP) providers. You can assign friendly-name classifications for the added storage. For example, you can assign a Gold classification to solid-state drive (SSD) storage and a Bronze classification to slower drives.
+Use the following procedure to add remote storage devices in Virtual Machine Manager \(VMM\). You can add and discover external storage arrays that are managed by Storage Management Initiative – Specification \(SMI\-S\) or Store Management Provider \(SMP\) providers. You can assign friendly\-name classifications for the added storage. For example, you can assign a Gold classification to solid\-state drive \(SSD\) storage and a Bronze classification to slower drives.
 
 **Account requirements** To complete this procedure, you must be a member of the Administrator user role, or a member of the Delegated Administrator user role.
 
@@ -16,14 +16,14 @@ Before you begin this procedure, verify the following prerequisites:
 
 -   Ensure that you are using a supported storage array. For a list of supported arrays, see the "Supported Storage Arrays" section of the topic [Configuring Storage in VMM](assetId:///55836f52-ebe1-4b5a-a37b-b29d4bb2c355).
 
--   To add an SMI-S storage device, ensure that you have installed the SMI-S provider for the array on a server that the VMM management server can access over the network by IP address or by fully qualified domain name (FQDN). For information about how to obtain SMI-S providers, see [Configuring iSCSI Target Server and the SMI-S Provider in VMM](Configuring-iSCSI-Target-Server-and-the-SMI-S-Provider-in-VMM.md).
+-   To add an SMI\-S storage device, ensure that you have installed the SMI\-S provider for the array on a server that the VMM management server can access over the network by IP address or by fully qualified domain name \(FQDN\). For information about how to obtain SMI\-S providers, see [Configuring iSCSI Target Server and the SMI-S Provider in VMM](Configuring-iSCSI-Target-Server-and-the-SMI-S-Provider-in-VMM.md).
 
     > [!NOTE]
-    > Do not install the SMI-S provider on the VMM management server. This configuration is not supported.
+    > Do not install the SMI\-S provider on the VMM management server. This configuration is not supported.
     > 
     > WMI SMP providers from Dell EqualLogic and NexSan must be installed on the VMM server.
 
--   You can create a Run As account before or while you are run the Add Storage Devices Wizard to discover storage. The Run As account must have permissions to access the SMI-S provider. You can create a Run As account in the **Settings** workspace. For more information about Run As accounts, see [How to create a Run As account in VMM](How-to-create-a-Run-As-account-in-VMM.md).
+-   You can create a Run As account before or while you are run the Add Storage Devices Wizard to discover storage. The Run As account must have permissions to access the SMI\-S provider. You can create a Run As account in the **Settings** workspace. For more information about Run As accounts, see [How to create a Run As account in VMM](How-to-create-a-Run-As-account-in-VMM.md).
 
 Use the following procedures to add and classify block storage devices:
 
@@ -41,35 +41,35 @@ Use the following procedures to add and classify block storage devices:
 
 4.  On the **Select Provider Type**  page, select one of the following:
 
-    1.  Select the **Add a storage device that is managed by an SMI-S provider** check box to specify and discover a storage device or an array that is supported by the SMI-S protocol.
+    1.  Select the **Add a storage device that is managed by an SMI\-S provider** check box to specify and discover a storage device or an array that is supported by the SMI\-S protocol.
 
     2.  Select **Add a storage device that is managed by an SMP provider** to specify and discover a storage device or an array that is supported by the SMP protocol.
 
 5.  On the **Specify Discovery Scope** page, do the following:
 
-    1.  If you are adding an SMI-S provider storage device, do the following:
+    1.  If you are adding an SMI\-S provider storage device, do the following:
 
         1.  In the **Protocol** list, select one of the following:
 
-            -   **SMI-S CIMXML** Choose this option to specify the SMI-S CIMXML-based storage provider that can be used to manage the storage devices.
+            -   **SMI\-S CIMXML** Choose this option to specify the SMI\-S CIMXML\-based storage provider that can be used to manage the storage devices.
 
-            -   **SMI-S WMI WMI** Choose this option to specify the SMI-S WMI-based storage provider that can be used to manage the storage devices.
+            -   **SMI\-S WMI WMI** Choose this option to specify the SMI\-S WMI\-based storage provider that can be used to manage the storage devices.
 
         2.  In the **Provider IP address or FQDN** box, enter either the IP address or the FQDN of the storage provider.
 
-        3.  In the **TCP/IP port** box, enter the port number that is used to connect to the provider.
+        3.  In the **TCP\/IP port** box, enter the port number that is used to connect to the provider.
 
-        4.  Select the **Use Secure Sockets Layer (SSL) connection** check box to enable HTTPS for communicating with the SMI-S CIMXML provider. This setting is not available for the SIM-S WMI protocol.
+        4.  Select the **Use Secure Sockets Layer \(SSL\) connection** check box to enable HTTPS for communicating with the SMI\-S CIMXML provider. This setting is not available for the SIM\-S WMI protocol.
 
         5.  Next to the **Run As account** box, click **Browse**, and select a Run As account that can access the storage provider. If you do not have an account, click **Browse**, and then in the **Select a Run As Account** dialog box, click **Create Run As Account**.
 
     2.  To add an SMP provider, select it from the **Provider** list. If the SMP provider is not in the list, click **Import** to refresh the list.
 
-6.  On the **Gather Information** page, VMM automatically tries to discover and import the storage device information. To retry discovery, click **Scan Provider**. Note the following if you selected the option to use an SSL connection for an SMI-S provider:
+6.  On the **Gather Information** page, VMM automatically tries to discover and import the storage device information. To retry discovery, click **Scan Provider**. Note the following if you selected the option to use an SSL connection for an SMI\-S provider:
 
     1.  During discovery, the **Import Certificate** dialog box appears. Review the certificate information for the storage provider, and then click **Import**.
 
-    2.  By default, when you import a certificate for a storage provider, verification of the common name (CN) that is used in the certificate occurs. However, this process might cause an issue where storage discovery fails when the certificate does not contain a CN value, or the CN value does not match the expected format of NetBIOS name, FQDN, or IP address that VMM uses.
+    2.  By default, when you import a certificate for a storage provider, verification of the common name \(CN\) that is used in the certificate occurs. However, this process might cause an issue where storage discovery fails when the certificate does not contain a CN value, or the CN value does not match the expected format of NetBIOS name, FQDN, or IP address that VMM uses.
 
     3.  If you receive the error messages "SSL certificate common name is invalid" or "Certificate Authority not recognized", you must disable CN verification for the storage provider certificate in the registry. To do this, follow these steps on the VMM management server:
 
@@ -82,13 +82,13 @@ Use the following procedures to add and classify block storage devices:
 
         3.  In Registry Editor, locate, and then click the following registry subkey:
 
-            **HKEY_LOCAL_MACHINE/SOFTWARE/Microsoft/Storage Management/**
+            **HKEY\_LOCAL\_MACHINE\/SOFTWARE\/Microsoft\/Storage Management\/**
 
-        4.  On the **Edit** menu, point to **New**, and then click **DWORD (32-bit) Value**.
+        4.  On the **Edit** menu, point to **New**, and then click **DWORD \(32\-bit\) Value**.
 
         5.  Type **DisableHttpsCommonNameCheck**, and then press ENTER.
 
-        6.  Double-click **DisableHttpsCommonNameCheck**.
+        6.  Double\-click **DisableHttpsCommonNameCheck**.
 
         7.  In the **Value data** box, type a value of **1**, and then click **OK**.
 
@@ -120,7 +120,7 @@ Use the following procedures to add and classify block storage devices:
 
 2.  In the **Classifications, Storage Pools and Logical Units** pane, expand the storage classification that contains the storage pool that you want to reclassify.
 
-3.  Right-click the storage pool that you want to reclassify, and then click **Properties**.
+3.  Right\-click the storage pool that you want to reclassify, and then click **Properties**.
 
 4.  In the **Classification** list, click the classification that you want to assign, and then click **OK**.
 

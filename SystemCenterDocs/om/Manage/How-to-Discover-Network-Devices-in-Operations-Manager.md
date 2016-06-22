@@ -41,19 +41,19 @@ To create a network devices discovery rule, you need the following information:
 -   The name of the management server resource pool that will monitor the discovered devices.
 
 > [!NOTE]
-> When Network Load Balancing (NLB) is used, the destination MAC address for the network adapter (cluster adapter) uses the format of 02-BF-1-2-3-4 and the cluster hosts use a format of 02-h-1-2-3-4, where h is the host's priority within the cluster (set in the Network Load Balancing Properties dialog box). Operations Manager will create a network connection between the devices using 02-h-1-2-3-4 to the destination MAC address of 02-BF-1-2-3-4.
+> When Network Load Balancing \(NLB\) is used, the destination MAC address for the network adapter \(cluster adapter\) uses the format of 02\-BF\-1\-2\-3\-4 and the cluster hosts use a format of 02\-h\-1\-2\-3\-4, where h is the host's priority within the cluster \(set in the Network Load Balancing Properties dialog box\). Operations Manager will create a network connection between the devices using 02\-h\-1\-2\-3\-4 to the destination MAC address of 02\-BF\-1\-2\-3\-4.
 
 You must ensure the following firewall configuration before creating the network devices discovery rule:
 
--   All firewalls between the management server and the network devices need to allow SNMP (UDP) and ICMP bi-directionally, and ports 161 and 162 need to be open bi-directionally. This includes Windows Firewall on the management server itself.
+-   All firewalls between the management server and the network devices need to allow SNMP \(UDP\) and ICMP bi\-directionally, and ports 161 and 162 need to be open bi\-directionally. This includes Windows Firewall on the management server itself.
 
--   If your network devices are using a port other than 161 and 162, you need to open bi-directional UDP traffic on these ports.
+-   If your network devices are using a port other than 161 and 162, you need to open bi\-directional UDP traffic on these ports.
 
 ### To create a network devices discovery rule
 
 1.  Open the Operations console with an account that is a member of Operations Manager Administrators.
 
-2.  In the **Administration** workspace, right-click **Administration**, and then click **Discovery Wizard**.
+2.  In the **Administration** workspace, right\-click **Administration**, and then click **Discovery Wizard**.
 
 3.  On the **What would you like to manage?** page, select **Network devices**, and then click **Next**.
 
@@ -61,9 +61,9 @@ You must ensure the following firewall configuration before creating the network
 
     1.  In the Name box, type a name, such as **My Network Devices**.
 
-    2.  In the **Available servers** drop-down list, select a management server that has access to the devices you are discovering to run the discovery rule. Servers that already run a network devices discovery rule will not be listed.
+    2.  In the **Available servers** drop\-down list, select a management server that has access to the devices you are discovering to run the discovery rule. Servers that already run a network devices discovery rule will not be listed.
 
-    3.  Click **Create Resource Pool** to create a management server resource pool for monitoring the devices, or in the **Select a resource pool** drop-down list, click a resource pool, and then click **Next**.
+    3.  Click **Create Resource Pool** to create a management server resource pool for monitoring the devices, or in the **Select a resource pool** drop\-down list, click a resource pool, and then click **Next**.
 
 5.  On the **Discovery Method** page, select **Explicit discovery** or **Recursive discovery**, and then click **Next**.
 
@@ -90,7 +90,7 @@ You must ensure the following firewall configuration before creating the network
         > [!NOTE]
         > If the rule will discover devices that use more than one SNMP community string, you must create one Run As account for each SNMP community string.
 
-    7.  On the **Default Accounts** page, you will see that the Run As account that you just created is listed in the **SNMPv1/v2 Run As accounts** box and is selected. Click **Next**
+    7.  On the **Default Accounts** page, you will see that the Run As account that you just created is listed in the **SNMPv1\/v2 Run As accounts** box and is selected. Click **Next**
 
 7.  If you are adding an SNMP v1 or v2 device, on the **Devices** page, do the following:
 
@@ -106,9 +106,9 @@ You must ensure the following firewall configuration before creating the network
         > [!NOTE]
         > If you select **ICMP and SNMP**, the device must be accessible by both protocols or it will not be discovered. If you select **ICMP**, discovery will be limited to the specified device, and monitoring will be limited to whether the device is online or offline.
 
-    4.  In **Port number**, retain the default port (161) or select another port number for the device.
+    4.  In **Port number**, retain the default port \(161\) or select another port number for the device.
 
-    5.  Select **v1 or v2** from the **SNMP version** drop-down box.
+    5.  Select **v1 or v2** from the **SNMP version** drop\-down box.
 
     6.  In **SNMP V1 or V2 Run As account**, select **Use selected default account**. If you specify an account in this window, then only the specified account will be used for discovery.
 
@@ -139,9 +139,9 @@ You must ensure the following firewall configuration before creating the network
         > [!NOTE]
         > If you select **ICMP and SNMP**, the device must be accessible by both protocols or it will not be discovered. If you select **ICMP**, discovery will be limited to the specified device, and monitoring will be limited to whether the device is online or offline.
 
-    4.  In **Port number**, retain the default port (161) or select another port number for the device.
+    4.  In **Port number**, retain the default port \(161\) or select another port number for the device.
 
-    5.  Select **v3** from the **SNMP version** drop-down box.
+    5.  Select **v3** from the **SNMP version** drop\-down box.
 
     6.  Click **Add SNMP V3 Run As Account**.
 
@@ -167,14 +167,14 @@ You must ensure the following firewall configuration before creating the network
 
         In the **IP address range** field, you can enter addresses such as the following:
 
-        -   **10.193.220.25** (a single IP address to include one specific device)
+        -   **10.193.220.25** \(a single IP address to include one specific device\)
 
-        -   **172.23.136<1-100>** (include any IP address from 1 to 100 in 172.23.136/255.255.255.0)
+        -   **172.23.136<1\-100>** \(include any IP address from 1 to 100 in 172.23.136\/255.255.255.0\)
 
-        -   **172.23.135.\*** (include any IP address in 172.23.135/255.255.255.0)
+        -   **172.23.135.\*** \(include any IP address in 172.23.135\/255.255.255.0\)
 
         > [!NOTE]
-        > For more information on formatting an IP address range, see “Network Device Discovery Settings” in the [Operations Manager 2012 Operations Guide](http://go.microsoft.com/fwlink/p/?LinkID=207751).
+        > For more information on formatting an IP address range, see “Network Device Discovery Settings” in the [Operations Manager 2012 Operations Guide](http://go.microsoft.com/fwlink/p/?LinkID=207751).
 
     2.  On the **Exclude Filters** page, leave the default setting to not exclude any of the discovered devices. If you want to filter an IP address from being discovered, click **Add** and specify an IP address. Click **Next** when complete.
 
@@ -188,7 +188,7 @@ You must ensure the following firewall configuration before creating the network
 
 11. Review your settings on the **Summary** page, and then click **Finish** when you are ready to proceed.
 
-12. You will see a Warning popup that reads  "The following accounts need to be distributed to the health service *management server name* in order for the discovery to work: *DiscoveryName\Run As Account*. Would you like Operations Manager to distribute the accounts? Yes: Distribute the accounts and create the discovery. No: Do not distribute the accounts and do not create the discovery.”  Click **Yes**.
+12. You will see a Warning popup that reads  "The following accounts need to be distributed to the health service *management server name* in order for the discovery to work: *DiscoveryName\\Run As Account*. Would you like Operations Manager to distribute the accounts? Yes: Distribute the accounts and create the discovery. No: Do not distribute the accounts and do not create the discovery.”  Click **Yes**.
 
 13. The wizard completes and you see the message **The network discovery rule was successfully created**. Ensure **Run the network discovery rule after the wizard is closed** is selected if you want the rule to run immediately, and then click **Close**. The network devices discovery rule is created. If you did not select **Run the network discovery rule after the wizard is closed**, the discovery rule will run on the scheduled day and time.
 
@@ -219,15 +219,15 @@ You must ensure the following firewall configuration before creating the network
 
 If a network device discovery rule fails, the device or devices will be listed in **Network Devices Pending Management**. This can be a subset of the devices specified in the discovery rule. Use one of the following methods to retry the discovery:
 
--   To attempt to discover that specific device only, right-click the device in **Network Devices Pending Management** and then click **Submit rediscovery**.
+-   To attempt to discover that specific device only, right\-click the device in **Network Devices Pending Management** and then click **Submit rediscovery**.
 
--   To retry a recursive discovery that begins with that device, click **Discovery Rules**, right-click the respective rule, and then click **Run**.
+-   To retry a recursive discovery that begins with that device, click **Discovery Rules**, right\-click the respective rule, and then click **Run**.
 
 ### To change the discovery type of a network devices discovery rule
 
 1.  In the Operations console, in the **Administration** workspace, click **Discovery Rules**.
 
-2.  In the results pane, right-click the discovery rule that you want to change and click **Properties**.
+2.  In the results pane, right\-click the discovery rule that you want to change and click **Properties**.
 
 3.  On the **General Properties** page, click **Next**.
 

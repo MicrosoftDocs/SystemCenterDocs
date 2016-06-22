@@ -27,9 +27,9 @@ The override to disable the discovery can apply to:
 
 Choosing how to apply the override to disable the discovery depends on your situation. The simplest situation is when you want to disable discovery for a specific object or for all objects in a class. When you want to disable the discovery for any object that meets certain criteria, you must use a group that contains those objects or create a group that will identify those objects.
 
-For example, you want to disable discovery of logical disks on management servers. You can configure an override to disable the discovery of Windows Server 2008 logical disks and apply it to the Operations Manager Management Servers group which is created automatically when you install Operations Manager. If, instead, you want to disable discovery of logical disks on computers in a specific organizational unit, there is no built-in group that satisfies that definition and so you would need to create a group that identifies those computers.
+For example, you want to disable discovery of logical disks on management servers. You can configure an override to disable the discovery of Windows Server 2008 logical disks and apply it to the Operations Manager Management Servers group which is created automatically when you install Operations Manager. If, instead, you want to disable discovery of logical disks on computers in a specific organizational unit, there is no built\-in group that satisfies that definition and so you would need to create a group that identifies those computers.
 
-After an object has been already discovered, if you want to delete the object and not let it be discovered again, disable the discovery for that object and then run the **Remove-SCOMDisabledClassInstance** cmdlet in Operations Manager Shell. For help with this cmdlet, open Operations Manager Shell, and then type **Get-Help Remove-SCOMDisabledClassInstance**.
+After an object has been already discovered, if you want to delete the object and not let it be discovered again, disable the discovery for that object and then run the **Remove\-SCOMDisabledClassInstance** cmdlet in Operations Manager Shell. For help with this cmdlet, open Operations Manager Shell, and then type **Get\-Help Remove\-SCOMDisabledClassInstance**.
 
 ## See Also
 [Operations Manager Agent Installation Methods](Operations-Manager-Agent-Installation-Methods.md)

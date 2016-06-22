@@ -8,7 +8,7 @@ ms.topic: article
 ms.assetid: ac30d975-458d-41c9-b606-de33ac36832a
 ---
 # Securing VMM resources
-The following topics provide information to help you configure security for Virtual Machine Manager (VMM).
+The following topics provide information to help you configure security for Virtual Machine Manager \(VMM\).
 
 -   [Configuring Run As accounts in VMM](Configuring-Run-As-accounts-in-VMM.md)
 

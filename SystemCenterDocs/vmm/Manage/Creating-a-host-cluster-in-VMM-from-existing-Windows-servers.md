@@ -11,7 +11,7 @@ ms.topic: article
 ms.assetid: aa816494-2a57-40bc-8b89-99b054713b26
 ---
 # Creating a host cluster in VMM from existing Windows servers
-The topics in this section describe the process for creating a host cluster in Virtual Machine Manager (VMM), using existing servers running a Windows Server operating system:
+The topics in this section describe the process for creating a host cluster in Virtual Machine Manager \(VMM\), using existing servers running a Windows Server operating system:
 
 -   [Prerequisites: creating a host cluster in VMM from existing Windows servers](Prerequisites--creating-a-host-cluster-in-VMM-from-existing-Windows-servers.md)
 
@@ -19,7 +19,7 @@ The topics in this section describe the process for creating a host cluster in V
 
 This topic also provides information about [VMM actions during cluster creation](Creating-a-host-cluster-in-VMM-from-existing-Windows-servers.md#BKMK_workflow) and lists [Example resource names](Creating-a-host-cluster-in-VMM-from-existing-Windows-servers.md#BKMK_example). For information about other ways of creating or adding clusters, see the links at the end of this topic.
 
-## <a name="BKMK_workflow"></a>How VMM creates a Hyper-V host cluster
+## <a name="BKMK_workflow"></a>How VMM creates a Hyper\-V host cluster
 During the cluster creation process, after you click **Finish** on the cluster creation wizard, VMM does the following:
 
 1.  Validates that all hosts meet the prerequisites, such as required operating system and domain membership
@@ -30,7 +30,7 @@ During the cluster creation process, after you click **Finish** on the cluster c
 
 4.  Runs the cluster validation process
 
-5.  Creates the cluster with quorum settings, configures any cluster static IP settings that you specified, and enables Cluster Shared Volumes (CSV)
+5.  Creates the cluster with quorum settings, configures any cluster static IP settings that you specified, and enables Cluster Shared Volumes \(CSV\)
 
 6.  For each logical unit that is designated as a CSV, assigns the logical unit as a CSV on the cluster
 
@@ -44,10 +44,10 @@ The following table summarizes the example resource names that you can use:
 
 |Resource|Example resource name|
 |------------|-------------------------|
-|Stand-alone Hyper-V hosts|**HyperVHost05** and **HyperVHost06**|
+|Stand\-alone Hyper\-V hosts|**HyperVHost05** and **HyperVHost06**|
 |Domain|**contoso.com**|
 |Cluster name|**HyperVClus01.contoso.com**|
-|Host group where added|**New York\Tier0_NY**|
+|Host group where added|**New York\\Tier0\_NY**|
 |Logical network|**MANAGEMENT**|
 
 ## See Also

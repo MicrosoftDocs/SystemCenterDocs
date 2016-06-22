@@ -8,7 +8,7 @@ ms.topic: article
 ms.assetid: 9b0d5224-065f-4418-87ab-88fcb809b37d
 ---
 # Overview: the VMM storage lifecycle
-With Virtual Machine Manager (VMM), you can simplify and automate the process of discovering, classifying, and assigning storage to support your virtualized environment. You can also use VMM to modify and expand your storage resources. In general, VMM supports the following lifecycle for storage resources (details may vary for different storage technologies).
+With Virtual Machine Manager \(VMM\), you can simplify and automate the process of discovering, classifying, and assigning storage to support your virtualized environment. You can also use VMM to modify and expand your storage resources. In general, VMM supports the following lifecycle for storage resources \(details may vary for different storage technologies\).
 
 1.  **Classify storage.** You can use storage classifications as labels to group or subdivide your storage resources. When users create virtual machines, they can assign storage based on the label without knowing the underlying configuration.
 
@@ -18,7 +18,7 @@ With Virtual Machine Manager (VMM), you can simplify and automate the process of
     > You can create storage classifications before or after VMM discovers you storage devices; you can also create classifications as needed while you configure the storage capacity.
 
     > [!NOTE]
-    > If you are using Scale-Out File Servers for storage, you can add quality of service policies to your storage classifications; for more information, see [Managing quality of service policies for Scale-Out File Servers in VMM](Managing-quality-of-service-policies-for-Scale-Out-File-Servers-in-VMM.md).
+    > If you are using Scale\-Out File Servers for storage, you can add quality of service policies to your storage classifications; for more information, see [Managing quality of service policies for Scale-Out File Servers in VMM](Managing-quality-of-service-policies-for-Scale-Out-File-Servers-in-VMM.md).
 
 2.  **Discover storage devices.**VMM can automatically discover local and remote storage resources that include storage arrays, pools, and logical units.
 
@@ -33,11 +33,11 @@ With Virtual Machine Manager (VMM), you can simplify and automate the process of
     -   [How to add and classify SMI-S and SMP storage devices in VMM](How-to-add-and-classify-SMI-S-and-SMP-storage-devices-in-VMM.md)
 
     > [!NOTE]
-    > If you want to use a Scale-out File Server for storage, you can start with a set of unconfigured computers and use VMM to provision them (also known as bare-metal provisioning a Scale-out File Server). At the end of the provisioning process, the Scale-out File Server is ready to configure with VMM. For more information, see [How to deploy a Scale-Out File Server from bare metal in VMM](How-to-deploy-a-Scale-Out-File-Server-from-bare-metal-in-VMM.md).
+    > If you want to use a Scale\-out File Server for storage, you can start with a set of unconfigured computers and use VMM to provision them \(also known as bare\-metal provisioning a Scale\-out File Server\). At the end of the provisioning process, the Scale\-out File Server is ready to configure with VMM. For more information, see [How to deploy a Scale-Out File Server from bare metal in VMM](How-to-deploy-a-Scale-Out-File-Server-from-bare-metal-in-VMM.md).
 
 3.  **Configure the storage structure.** After VMM discovers resources, you can use VMM to configure them. For example, you can use VMM to initialize disks and format volumes. You can configure either block or file storage types: depending on the type of storage device, you can create and configure file shares or logical units.
 
-    Alternatively, you can create logical units out-of-band by using your array vendor’s management tools. 
+    Alternatively, you can create logical units out\-of\-band by using your array vendor’s management tools. 
       If you use this method, it takes some time for VMM to discover and reflect the changes.
 
     For more information, see the following topics:

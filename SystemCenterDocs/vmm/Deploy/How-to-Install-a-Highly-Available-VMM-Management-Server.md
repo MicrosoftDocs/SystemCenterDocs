@@ -23,7 +23,7 @@ Membership in the local **Administrators** group, or equivalent, on the computer
 
 ### To install a highly available VMM management server on the first node of a cluster
 
-1.  On the first node of your cluster, start the Virtual Machine Manager Setup Wizard for System Center 2016 Technical Preview. To start the wizard, on your installation media, right-click **setup.exe**, and then click **Run as administrator**.
+1.  On the first node of your cluster, start the Virtual Machine Manager Setup Wizard for System Center 2016 Technical Preview. To start the wizard, on your installation media, right\-click **setup.exe**, and then click **Run as administrator**.
 
     > [!NOTE]
     > Before beginning the installation of VMM, close any open programs and ensure that there are no pending restarts on the computer. For example, if you have installed a server role by using Server Manager or have applied a security update, you may need to restart the computer and then log on to the computer with the same user account to finish the installation of the server role or the security update.
@@ -55,7 +55,7 @@ Membership in the local **Administrators** group, or equivalent, on the computer
 
 11. On the **Database configuration** page, do the following:
 
-    -   Specify the name of the computer that is running Microsoft SQL Server. If you are installing the highly available VMM management server on the same computer that is running SQL Server (which is not recommended), in the **Server name** box, either type the name of the computer (for example, vmmserver01) or type **localhost**.
+    -   Specify the name of the computer that is running Microsoft SQL Server. If you are installing the highly available VMM management server on the same computer that is running SQL Server \(which is not recommended\), in the **Server name** box, either type the name of the computer \(for example, vmmserver01\) or type **localhost**.
 
     -   Specify the port to use for communication with the computer that is running SQL Server, if all of the following conditions are true:
 
@@ -87,7 +87,7 @@ Membership in the local **Administrators** group, or equivalent, on the computer
 
     -   Under **Virtual Machine Manager Service Account**, select **Domain account**, and then provide the name and password of the domain account that will be used by the Virtual Machine Manager service. You must use a domain account for a highly available VMM management server. For more information about using a domain account, see [Specifying a Service Account for VMM](Specifying-a-Service-Account-for-VMM.md).
 
-    -   Under **Distributed Key Management**, specify the location in Active Directory to store encryption keys. For example, type **CN=VMMDKM,DC=contoso,DC=com**.
+    -   Under **Distributed Key Management**, specify the location in Active Directory to store encryption keys. For example, type **CN\=VMMDKM,DC\=contoso,DC\=com**.
 
         You must use distributed key management to store the encryption keys in Active Directory for a highly available VMM management server. For more information about distributed key management, see [Configuring Distributed Key Management in VMM](Configuring-Distributed-Key-Management-in-VMM.md).
 
@@ -120,6 +120,6 @@ Membership in the local **Administrators** group, or equivalent, on the computer
     To install on the other nodes of the cluster, see [How to Install a VMM Management Server on an Additional Node of a Cluster](How-to-Install-a-VMM-Management-Server-on-an-Additional-Node-of-a-Cluster.md).
 
 > [!NOTE]
-> If there is a problem with setup completing successfully, consult the log files in the **%SYSTEMDRIVE%\ProgramData\VMMLogs** folder. **ProgramData** is a hidden folder.
+> If there is a problem with setup completing successfully, consult the log files in the **%SYSTEMDRIVE%\\ProgramData\\VMMLogs** folder. **ProgramData** is a hidden folder.
 
 

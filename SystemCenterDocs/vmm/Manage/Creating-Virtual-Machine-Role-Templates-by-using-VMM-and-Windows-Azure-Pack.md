@@ -8,7 +8,7 @@ ms.topic: article
 ms.assetid: e2581377-1e74-49c1-b02f-1fd245ccd478
 ---
 # Creating Virtual Machine Role Templates by using VMM and Windows Azure Pack
-As a hosting provider, you can use VMM in combination with Windows Azure Pack to increase the range of capabilities that you can offer to tenants. To help tenants create virtual machines with specific operating systems and applications already installed, in a way that works flexibly with software licensing methods, you can create Virtual Machine Role templates. Tenants can use these templates to create Virtual Machine Roles in both on-premises hosting environments and service-provider hosting environments.
+As a hosting provider, you can use VMM in combination with Windows Azure Pack to increase the range of capabilities that you can offer to tenants. To help tenants create virtual machines with specific operating systems and applications already installed, in a way that works flexibly with software licensing methods, you can create Virtual Machine Role templates. Tenants can use these templates to create Virtual Machine Roles in both on\-premises hosting environments and service\-provider hosting environments.
 
 To begin to create a Virtual Machine Role template, you can download and install one or more Windows Azure Pack Gallery Resources into your hosting environment. Windows Azure Pack Gallery Resources include two types of standard, reusable software packages:
 
@@ -25,7 +25,7 @@ Use the following table to find more information about the process for creating 
 |Type of information|Link|
 |-----------------------|--------|
 |Information about Windows Azure Pack|[Windows Azure Pack](http://www.microsoft.com/server-cloud/windows-azure-pack.aspx) on the Microsoft website<br /><br />[Windows Azure Pack for Windows Server](http://technet.microsoft.com/library/dn296435.aspx) on TechNet|
-|Description of how to add file-based resources, such as virtual hard disk files, to the VMM library|[How to add file-based resources to the VMM library](How-to-add-file-based-resources-to-the-VMM-library.md) on TechNet|
+|Description of how to add file\-based resources, such as virtual hard disk files, to the VMM library|[How to add file-based resources to the VMM library](How-to-add-file-based-resources-to-the-VMM-library.md) on TechNet|
 |Steps for creating a Virtual Machine Role template, including steps for downloading items from the Windows Azure Pack Gallery and steps for importing Resource Extension packages into VMM|[Downloading and Installing Windows Azure Pack Gallery Resource](http://social.technet.microsoft.com/wiki/contents/articles/20194.downloading-and-installing-windows-azure-pack-gallery-resource.aspx) on the TechNet wiki|
 |A link for downloading the Web Platform Installer, with which you can download Windows Azure Pack Gallery Resources|[Microsoft Web Platform Installer](http://www.microsoft.com/web/downloads/platform.aspx)|
 |Description and diagram of how Virtual Machine Role templates are created, with descriptions of Resource Definitions and Resource Extensions|[System Center 2012 R2 Virtual Machine Role Authoring Guide](http://social.technet.microsoft.com/wiki/contents/articles/18272.system-center-2012-r2-virtual-machine-role-authoring-guide.aspx) on the TechNet wiki|

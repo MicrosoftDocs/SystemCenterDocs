@@ -1,1 +1,1 @@
-System Center 2012 - Orchestrator
+System Center 2012 \- Orchestrator

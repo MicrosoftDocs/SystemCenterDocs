@@ -8,7 +8,7 @@ ms.topic: article
 ms.assetid: 1598fe63-91a9-42a6-8fad-837ff31f060d
 ---
 # How to scan for update compliance in VMM
-After you assign computers to an update baseline in Virtual Machine Manager (VMM), you can scan the computers to determine their compliance status for the baselines.
+After you assign computers to an update baseline in Virtual Machine Manager \(VMM\), you can scan the computers to determine their compliance status for the baselines.
 
 When a computer is scanned for compliance, WSUS checks each update in the assigned update baselines to determine whether the update is applicable and, if the update is applicable, whether the update has been installed. After a compliance scan, for every computer, each update has a compliance status of **Compliant**, **Non Compliant**, **Error**, **Pending Reboot**, or **Unknown**. You can view compliance properties for additional information.
 
@@ -37,7 +37,7 @@ The following changes can cause an **Unknown** update status for a computer, and
 
 ### To scan computers for compliance
 
-1.  In **Compliance** view of the **Fabric** workspace, select the computers that you want to scan.
+1.  In **Compliance** view of the **Fabric** workspace, select the computers that you want to scan.
 
 2.  On the **Home** tab, in the **Compliance** group, click **Scan**.
 

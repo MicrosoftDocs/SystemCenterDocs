@@ -34,7 +34,7 @@ The first two methods are documented below. Calling a runbook from another runbo
 5.  Either select **View Job** next to the **Starting runbook** message or select the **Jobs** tab for the runbook to view the job’s status.
 
 ## <a name="PowerShell"></a>To start a runbook with Windows PowerShell
-You can use the [Start-SmaRunbook](http://aka.ms/runbookauthor/cmdlet/startsmarunbook) to start a runbook with Windows PowerShell. The following sample code starts a runbook called Test-Runbook.
+You can use the [Start\-SmaRunbook](http://aka.ms/runbookauthor/cmdlet/startsmarunbook) to start a runbook with Windows PowerShell. The following sample code starts a runbook called Test\-Runbook.
 
 ```powershell
 $webServer = 'https://MyServer'
@@ -43,7 +43,7 @@ $runbookName = "Test-Runbook"
 Start-SmaRunbook –WebServiceEndpoint $webServer –Port $port –Name $runbookName
 ```
 
-Start-SmaRunbook returns a job object that you can use to track its status once the runbook is started. You can then use this job object with [Get-SmaJob](http://aka.ms/runbookauthor/cmdlet/getsmajob) to determine the status of the job and [Get-SmaJobOutput](http://aka.ms/runbookauthor/cmdlet/getsmajoboutput) to get its output. The following sample code starts a runbook called Test-Runbook, waits until it has completed, and then displays its output.
+Start\-SmaRunbook returns a job object that you can use to track its status once the runbook is started. You can then use this job object with [Get\-SmaJob](http://aka.ms/runbookauthor/cmdlet/getsmajob) to determine the status of the job and [Get\-SmaJobOutput](http://aka.ms/runbookauthor/cmdlet/getsmajoboutput) to get its output. The following sample code starts a runbook called Test\-Runbook, waits until it has completed, and then displays its output.
 
 ```powershell
 $webServer = 'https://MyServer'
@@ -96,7 +96,7 @@ When you start a runbook using the Management Portal or Windows PowerShell, the 
 The Automation web service will provide special functionality for parameters using certain data types as described in the following sections.
 
 ### <a name="NamedValues"></a>Named Values
-If the parameter is data type [object], then you can use the following JSON format to send it a list of named values: *{"Name1":Value1, "Name2":Value2, "Name3":Value3}*. These values must be simple types. The runbook will receive the parameter as a [PSCustomObject](http://aka.ms/runbookauthor/pscustomobject) with properties that correspond to each named value.
+If the parameter is data type \[object\], then you can use the following JSON format to send it a list of named values: *{"Name1":Value1, "Name2":Value2, "Name3":Value3}*. These values must be simple types. The runbook will receive the parameter as a [PSCustomObject](http://aka.ms/runbookauthor/pscustomobject) with properties that correspond to each named value.
 
 Consider the following test runbook that accepts a parameter called *user*.
 
@@ -132,7 +132,7 @@ Smith
 ```
 
 ### <a name="Arrays"></a>Arrays
-If the parameter is an array such as [array] or [string[]], then you can use the following JSON format to send it a list of values: *[Value1,Value2,Value3]*. These values must be simple types.
+If the parameter is an array such as \[array\] or \[string\[\]\], then you can use the following JSON format to send it a list of values: *\[Value1,Value2,Value3\]*. These values must be simple types.
 
 Consider the following test runbook that accepts a parameter called *user*.
 
@@ -168,7 +168,7 @@ Smith
 ```
 
 ### <a name="Credentials"></a>Credentials
-If the parameter is data type [PSCredential], then you can provide the name of a Service Management Automation credential asset. The runbook will retrieve the [credential asset](http://aka.ms/runbookauthor/assets/credentials) with the name that you specify.
+If the parameter is data type \[PSCredential\], then you can provide the name of a Service Management Automation credential asset. The runbook will retrieve the [credential asset](http://aka.ms/runbookauthor/assets/credentials) with the name that you specify.
 
 Consider the following test runbook that accepts a parameter called *credential*.
 

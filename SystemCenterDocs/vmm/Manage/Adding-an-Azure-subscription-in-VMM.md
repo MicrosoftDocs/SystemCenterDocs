@@ -8,10 +8,10 @@ ms.topic: article
 ms.assetid: 6805c8cf-d768-4680-9990-2b8c895f31ec
 ---
 # Adding an Azure subscription in VMM
-Withthe Add Azure Subscription feature, administrators of Virtual Machine Manager (VMM) can add Microsoft Azure subscriptions to VMM and perform basic actions on Azure instances in those subscriptions. For each Azure subscription you add, you can use a console to see all role instances in all Deployment Groups in that subscription.
+Withthe Add Azure Subscription feature, administrators of Virtual Machine Manager \(VMM\) can add Microsoft Azure subscriptions to VMM and perform basic actions on Azure instances in those subscriptions. For each Azure subscription you add, you can use a console to see all role instances in all Deployment Groups in that subscription.
 
 ## What you can do with this feature
-If you already manage your on-premise virtual machines in VMM, you can use this feature to perform some very basic actions on Azure instances without leaving the VMM console. You can:
+If you already manage your on\-premise virtual machines in VMM, you can use this feature to perform some very basic actions on Azure instances without leaving the VMM console. You can:
 
 -   Add and Remove one or more Azure subscriptions by using the VMM console.
 
@@ -42,7 +42,7 @@ You cannot:
 
 -   Deploy instances to Azure
 
--   Migrate on-premise virtual machines to Azure
+-   Migrate on\-premise virtual machines to Azure
 
 -   Manage Azure Storage
 
@@ -61,7 +61,7 @@ The following is a list of system and environment requirements that are needed i
 |Azure Subscription|You will need to have an Azure Subscription in order to be able to add it to the VMM console. If you want to evaluate the Azure instance actions functionality, you will need to have one or more Azure instances deployed in that subscription.|
 |Service Administrator|To perform this action, you must be at least a **Service Administrator** for the Microsoft Azure Subscription being added. This provides access to the Management Certificate information required to complete this operation.|
 |Management Certificate in Azure|The Microsoft Azure Subscription must have a **Management Certificate** associated with it in order to allow VMM to use the service management API in Microsoft Azure. For information about how to configure this, see [Create and Upload a Management Certificate for Azure](http://msdn.microsoft.com/library/azure/gg551722.aspx). Make note of your subscription ID and the certificate thumbprint, because you will need it during configuration.<br /><br />Microsoft Azure requires certificates to be x509 v3 compliant.|
-|Management Certificate in the local certificate Store|The Management Certificate that is associated with the Azure Subscription must be present in the local certificate store on the computer that the wizard is being run on. The certificate needs to be present in the **Current User \ Personal** store of the computer running the VMM console.|
+|Management Certificate in the local certificate Store|The Management Certificate that is associated with the Azure Subscription must be present in the local certificate store on the computer that the wizard is being run on. The certificate needs to be present in the **Current User \\ Personal** store of the computer running the VMM console.|
 
 ## Using the Add Azure Subscription Feature
 
@@ -91,7 +91,7 @@ Before you try to add a subscription, it's a good idea to check a few things, su
 
 4.  Upload your certificate to Windows Azure:
 
-    1.  In the Azure Portal, in **Settings** > **Management Certificates**, click the **Upload** button. You’ll be prompted for your .cer file (certificate file).
+    1.  In the Azure Portal, in **Settings** > **Management Certificates**, click the **Upload** button. You’ll be prompted for your .cer file \(certificate file\).
 
         For instructions on importing and exporting certificates and private keys, see [To import a certificate](http://social.technet.microsoft.com/wiki/contents/articles/2167.how-to-use-the-certificates-console.aspx#To_import_certificates) and [To export a certificate](http://social.technet.microsoft.com/wiki/contents/articles/2167.how-to-use-the-certificates-console.aspx#To_export_certificates) in "How to Use the Certificates Console."
 
@@ -99,7 +99,7 @@ Before you try to add a subscription, it's a good idea to check a few things, su
 
 5.  Import the Management Certificate to the Certificate Store on the computer you’ll be running the VMM console on.
 
-    Make sure you import the certificate to the **Current User \ Personal** certificate store on the local computer.
+    Make sure you import the certificate to the **Current User \\ Personal** certificate store on the local computer.
 
     For instructions, see [To import a certificate](http://social.technet.microsoft.com/wiki/contents/articles/2167.how-to-use-the-certificates-console.aspx#To_import_certificates) in "How to Use the Certificates Console."
 
@@ -117,7 +117,7 @@ To start the **Add Azure Subscription Wizard**, in VMM, click the Azure **Add Su
 **Figure 3: Add Azure Subscription Wizard**
 
 > [!NOTE]
-> Certificates and subscription setting information is stored in the Registry under HKEY_CURRENT_USER and is per login specific. This means that subscriptions that are added are visible on a per-machine, per-login basis. If users log in to VMM Server using a shared account (not a recommended best practice by VMM), and the subscription is added under that account, then the subscription will be exposed to all users. Alternately, Azure subscriptions that are added by one Admin user are not automatically visible to all other VMM Admins. In this case, the process will need to be repeated for all VMM Admins that require access to the Azure Subscription.
+> Certificates and subscription setting information is stored in the Registry under HKEY\_CURRENT\_USER and is per login specific. This means that subscriptions that are added are visible on a per\-machine, per\-login basis. If users log in to VMM Server using a shared account \(not a recommended best practice by VMM\), and the subscription is added under that account, then the subscription will be exposed to all users. Alternately, Azure subscriptions that are added by one Admin user are not automatically visible to all other VMM Admins. In this case, the process will need to be repeated for all VMM Admins that require access to the Azure Subscription.
 
 ### View an Azure subscription
 Once you have successfully added the subscription, if you look in the VMM console with the **VMs and Services** workspace open, and you look in the navigation tree under the **Azure Subscriptions** node, you should see the subscription.
@@ -126,13 +126,13 @@ Once you have successfully added the subscription, if you look in the VMM consol
 
 **Figure 4: Newly added Azure Subscription**
 
-Selecting the subscription node will display the following context-sensitive actions in the VMM ribbon:
+Selecting the subscription node will display the following context\-sensitive actions in the VMM ribbon:
 
 ![](Image/VMM-R2-UR6-AddAzureSub06.jpg)
 
 **Figure 5: Azure Subscription actions in the VMM console ribbon**
 
-|Action/Button|What it does|
+|Action\/Button|What it does|
 |------------------|----------------|
 |Add Subscription|Opens the wizard described in [Add Azure Subscription Wizard](Adding-an-Azure-subscription-in-VMM.md#BKMK_wizard), earlier in this document. New subscriptions are added to the top level Azure Subscriptions node, rather than underneath the currently selected node.|
 |Remove Subscription|Removes the currently selected Azure Subscription. You will be prompted for confirmation.|
@@ -158,10 +158,10 @@ When an individual virtual machine is selected from the list, a set of VM action
 |Action|Description|
 |----------|---------------|
 |Start|Starts an instance that is in the stopped state.|
-|Stop|Stops a running instance but does not de-allocate it.|
-|Shut Down|Requests a graceful shutdown of a running instance and de-allocates it.|
+|Stop|Stops a running instance but does not de\-allocate it.|
+|Shut Down|Requests a graceful shutdown of a running instance and de\-allocates it.|
 |Restart|Requests a restart of a running instance.|
-|Connect via RDP|Initiates a remote desktop session to the Host Name (DNS Name) of the instance.|
+|Connect via RDP|Initiates a remote desktop session to the Host Name \(DNS Name\) of the instance.|
 
 ![](Image/VMM-R2-UR6-AddAzureSub09.jpg)
 

@@ -11,7 +11,7 @@ ms.topic: article
 ms.assetid: 7daff90a-e99a-43a1-9a91-7b306112dd86
 ---
 # Managing fabric resources with VMM
-Read this section to learn about deploying and using the Virtual Machine Manager (VMM) fabric.
+Read this section to learn about deploying and using the Virtual Machine Manager \(VMM\) fabric.
 
 The VMM fabric is an abstracted collection of resources that can be discovered, identified, and managed.  There are three main resource groups in the fabric - compute (server), network, and storage.
 

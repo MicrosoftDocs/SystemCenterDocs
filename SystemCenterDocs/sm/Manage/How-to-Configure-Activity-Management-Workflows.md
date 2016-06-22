@@ -15,11 +15,11 @@ Use the following procedures to automatically assign all unassigned manual activ
 
 Before you can complete the steps in this procedure, you have to create the following templates:
 
--   **Set <named user\> as the Activity Implementer**: For more information, see [How to Create a Manual Activity Template](How-to-Create-a-Manual-Activity-Template.md).
+-   **Set \<named user\> as the Activity Implementer**: For more information, see [How to Create a Manual Activity Template](How-to-Create-a-Manual-Activity-Template.md).
 
 -   **New Activity Assigned Received Template**: For more information, see [How to Create Notification Templates](How-to-Create-Notification-Templates.md).
 
-The new workflow you are about to create applies the **Set <named user\> as the Activity Implementer** template, which assigns the named user all the activities that do not have a designated activity implementer. The **New Activity Assigned Received Template** sends notification to a user if the email notification channel is configured.
+The new workflow you are about to create applies the **Set \<named user\> as the Activity Implementer** template, which assigns the named user all the activities that do not have a designated activity implementer. The **New Activity Assigned Received Template** sends notification to a user if the email notification channel is configured.
 
 ### To create an activity management workflow
 
@@ -37,9 +37,9 @@ The new workflow you are about to create applies the **Set <named user\> as the 
 
 7.  On the **Before You Begin** page of the **Configure workflows for objects of class Manual Activity** wizard, click **Next**.
 
-8.  On the **Workflow Information** page, in the **Name** box, type a name for the workflow. For example, type **Assign Unassigned Activities to <named user\>**.
+8.  On the **Workflow Information** page, in the **Name** box, type a name for the workflow. For example, type **Assign Unassigned Activities to \<named user\>**.
 
-9. Optionally, in the **Description** box, you can type a description of the new workflow. For example, you can type **This workflow automatically assigns unassigned manual activities to the <named user\>**.
+9. Optionally, in the **Description** box, you can type a description of the new workflow. For example, you can type **This workflow automatically assigns unassigned manual activities to the \<named user\>**.
 
 10. In the **Check for events** list, select **When an object is created**.
 
@@ -49,11 +49,11 @@ The new workflow you are about to create applies the **Set <named user\> as the 
 
 13. In the **Available properties** list, select the **Stage** check box, and then click **Add**.
 
-14. In the **Criteria** area, next to the **[Activity] Stage** box, select **equals**, select **Approve** for the value, and then click **Next**.
+14. In the **Criteria** area, next to the **\[Activity\] Stage** box, select **equals**, select **Approve** for the value, and then click **Next**.
 
 15. On the **Apply Template** page, make sure that **Apply the selected template** check box is selected.
 
-16. In the **Templates** list, select **Set <named users\> as the Activity Implementer**, and then click **Next**.
+16. In the **Templates** list, select **Set \<named users\> as the Activity Implementer**, and then click **Next**.
 
 17. On the **Select People to Notify** page, select the **Enable notification** check box.
 
@@ -71,6 +71,6 @@ The new workflow you are about to create applies the **Set <named user\> as the 
 
 1.  In the **Administration** pane, expand **Administration**, expand **Workflows**, and then click **Status**.
 
-2.  In the **Status** pane, verify that the new workflow template titled **Assign Unassigned Activities to the <named user\>** is listed.
+2.  In the **Status** pane, verify that the new workflow template titled **Assign Unassigned Activities to the \<named user\>** is listed.
 
 

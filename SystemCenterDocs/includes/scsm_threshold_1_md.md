@@ -1,1 +1,1 @@
-System Center 2016 Technical Preview - Service Manager
+System Center 2016 Technical Preview \- Service Manager

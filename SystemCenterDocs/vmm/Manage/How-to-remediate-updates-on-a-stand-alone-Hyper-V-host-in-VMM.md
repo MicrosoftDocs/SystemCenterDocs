@@ -8,12 +8,12 @@ ms.topic: article
 ms.assetid: f98a78c4-eea8-4b65-af06-5494bc77be48
 ---
 # How to remediate updates on a stand-alone Hyper-V host in VMM
-Use the following procedure to remediate updates for stand-alone Hyper-V hosts that are managed by Virtual Machine Manager (VMM). You can also orchestrate updates of a managed Hyper-V host cluster in VMM. For information, see [How to perform rolling updates on a Hyper-V host cluster in VMM](How-to-perform-rolling-updates-on-a-Hyper-V-host-cluster-in-VMM.md).
+Use the following procedure to remediate updates for stand\-alone Hyper\-V hosts that are managed by Virtual Machine Manager \(VMM\). You can also orchestrate updates of a managed Hyper\-V host cluster in VMM. For information, see [How to perform rolling updates on a Hyper-V host cluster in VMM](How-to-perform-rolling-updates-on-a-Hyper-V-host-cluster-in-VMM.md).
 
 > [!NOTE]
 > The **Remediate** action is only available after you install a WSUS server for VMM, enable update management, create and assign update baselines for computers managed by VMM, and scan the computers for compliance. For more information, see [Managing fabric updates in VMM](Managing-fabric-updates-in-VMM.md).
 
-### To remediate updates for a Hyper-V host in VMM
+### To remediate updates for a Hyper\-V host in VMM
 
 1.  Display **Compliance** view for the managed computers:
 
@@ -27,7 +27,7 @@ Use the following procedure to remediate updates for stand-alone Hyper-V hosts t
 
     The system may be compliant for some baselines and not compliant for others. You can select a single update baseline or a single update within a baseline.
 
-3.  On the **Home** tab, in the **Compliance** group, click **Remediate**. (The **Remediate** task is only available when the selected objects are noncompliant.)
+3.  On the **Home** tab, in the **Compliance** group, click **Remediate**. \(The **Remediate** task is only available when the selected objects are noncompliant.\)
 
     The **Update Remediation** dialog box opens.
 

@@ -11,8 +11,8 @@ ms.topic: article
 ms.assetid: 15b8e1cc-d5b1-4e23-a485-fa3b06b29bfe
 ---
 # Configure computer BMC settings for bare-metal deployment
-Using a Baseboard Management Controller (BMC), you can manage a computer remotely independent of the operating system, and control system functions such as the ability to turn the computer off or on.
-Virtual Machine Manager (VMM) uses BMCs to restart computers during bare-metal provisioning processes, and when optimizing power usage.
+Using a Baseboard Management Controller \(BMC\), you can manage a computer remotely independent of the operating system, and control system functions such as the ability to turn the computer off or on.
+Virtual Machine Manager \(VMM\) uses BMCs to restart computers during bare\-metal provisioning processes, and when optimizing power usage.
 
 You can configure BMC settings and use the BMC   through VMM using the following procedure:
 
@@ -21,19 +21,19 @@ You can configure BMC settings and use the BMC   through VMM using the following
 
 In order for VMM to use a BMC, the BMC must meet the following requirements:
 
--   The BMC must use one of the supported out-of-band management protocols, and the management protocol must be enabled in the BMC settings. The BMC must use one of the following management protocols:
+-   The BMC must use one of the supported out\-of\-band management protocols, and the management protocol must be enabled in the BMC settings. The BMC must use one of the following management protocols:
 
-    -   Intelligent Platform Management Interface (IPMI) versions 1.5 or 2.0
+    -   Intelligent Platform Management Interface \(IPMI\) versions 1.5 or 2.0
 
-    -   Data Center Management Interface (DCMI) version 1.0
+    -   Data Center Management Interface \(DCMI\) version 1.0
 
-    -   System Management Architecture for Server Hardware (SMASH) version 1.0 over WS-Management (WS-Man)
+    -   System Management Architecture for Server Hardware \(SMASH\) version 1.0 over WS\-Management \(WS\-Man\)
 
-    -   Custom protocols such as Integrated Lights-Out (iLO)
+    -   Custom protocols such as Integrated Lights\-Out \(iLO\)
 
 -   The BMC should use the latest version of firmware for the BMC model.
 
--   The BMC must be configured with logon credentials and must use either static IP addressing or Dynamic Host Configuration Protocol (DHCP). If you use DHCP, we recommend that you configure DHCP to assign a constant IP address to each BMC, for example by using DHCP reservations.
+-   The BMC must be configured with logon credentials and must use either static IP addressing or Dynamic Host Configuration Protocol \(DHCP\). If you use DHCP, we recommend that you configure DHCP to assign a constant IP address to each BMC, for example by using DHCP reservations.
 
 -   The VMM management server must be able to access the network segment on which the BMCs are configured.
 
@@ -53,15 +53,15 @@ In order for VMM to use a BMC, the BMC must meet the following requirements:
 
 6.  Under **Advanced**, click **BMC Setting**.
 
-7.  To enable out-of-band management, do the following:
+7.  To enable out\-of\-band management, do the following:
 
     1.  Select **This physical machine is configured for OOB management with the following settings**.
 
-    2.  In the **This computer supports the specified OOB power management configuration provider** list, click the out-of-band management protocol that the BMC supports.
+    2.  In the **This computer supports the specified OOB power management configuration provider** list, click the out\-of\-band management protocol that the BMC supports.
 
     3.  In the **BMC address** box, enter the IP address of the BMC.
 
-    4.  In the **BMC port** box, accept the default. VMM automatically populates the box with the port number for the selected out-of-band management protocol.
+    4.  In the **BMC port** box, accept the default. VMM automatically populates the box with the port number for the selected out\-of\-band management protocol.
 
     5.  Next to the **Run As account** box, click **Browse**, click a Run As account that has permissions to access the BMC, and then click **OK**.
 
@@ -80,7 +80,7 @@ In order for VMM to use a BMC, the BMC must meet the following requirements:
 
 3.  In the **Hosts** pane, click the host that you want to configure.
 
-4.  On the **Host** tab, in the **Host** group, click **Power On** or **Power Off**. (Additional options that are available with out-of-band power management include **Shutdown** and **Reset**.)
+4.  On the **Host** tab, in the **Host** group, click **Power On** or **Power Off**. \(Additional options that are available with out\-of\-band power management include **Shutdown** and **Reset**.\)
 
     > [!NOTE]
     > -   If BMC settings are not configured, these options will not be available.

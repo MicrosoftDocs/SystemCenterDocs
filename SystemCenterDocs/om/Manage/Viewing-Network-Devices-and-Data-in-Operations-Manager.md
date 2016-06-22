@@ -31,7 +31,7 @@ The Network Summary Dashboard view provides a view of important data for the nod
 
 Use the Network Summary Dashboard view to view the following information:
 
--   Nodes with Slowest Response (ICMP ping)
+-   Nodes with Slowest Response \(ICMP ping\)
 
 -   Nodes with Highest CPU Usage
 
@@ -135,7 +135,7 @@ The vicinity view shows the relation between network devices and the Windows com
 > Virtual machines are associated with the same network device as their host. This version of Operations Manager does not show a relationship between the two computers.
 
 > [!NOTE]
-> Operations Manager does not display UNIX- and Linux-based devices in the Network Vicinity Dashboard.
+> Operations Manager does not display UNIX\- and Linux\-based devices in the Network Vicinity Dashboard.
 
 #### To open Network Vicinity View
 

@@ -11,7 +11,7 @@ ms.topic: article
 ms.assetid: aaa97a7e-362c-45ff-940d-7fb503703744
 ---
 # How to install the Service Management Automation PowerShell module
-The Service Management Automation service endpoint enables you to automate IT administration and business processes by using Windows PowerShell workflow-based runbooks in Windows Azure Pack for Windows Server.
+The Service Management Automation service endpoint enables you to automate IT administration and business processes by using Windows PowerShell workflow\-based runbooks in Windows Azure Pack for Windows Server.
 
 Use the following information to install and configure the Service Management Automation PowerShell module. The Service Management Automation PowerShell module is a required prerequisite for the Service Management Automation web service, so you must install the Service Management Automation PowerShell module before you deploy the Service Management Automation web service.
 

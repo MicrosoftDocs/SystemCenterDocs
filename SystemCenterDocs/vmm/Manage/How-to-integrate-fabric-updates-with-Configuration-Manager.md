@@ -8,12 +8,12 @@ ms.topic: article
 ms.assetid: 4e867fdc-a1a1-4766-b34f-3e2910725088
 ---
 # How to integrate fabric updates with Configuration Manager
-Virtual Machine Manager (VMM) supports using a WSUS server that is part of a Configuration Manager environment. This will also enable you to use the reporting capabilities of Configuration Manager to provide compliance information.
+Virtual Machine Manager \(VMM\) supports using a WSUS server that is part of a Configuration Manager environment. This will also enable you to use the reporting capabilities of Configuration Manager to provide compliance information.
 
-If you use an existing WSUS server from a Configuration Manager environment, changes to configuration settings for the WSUS server (for example, update classifications, languages, and proxy settings) should only be made from Configuration Manager. The VMM administrator can view the configuration settings from the VMM console, but cannot make changes.
+If you use an existing WSUS server from a Configuration Manager environment, changes to configuration settings for the WSUS server \(for example, update classifications, languages, and proxy settings\) should only be made from Configuration Manager. The VMM administrator can view the configuration settings from the VMM console, but cannot make changes.
 
 > [!NOTE]
-> For VMM, the synchronization schedule is always on-demand, regardless of the setting specified in Configuration Manager.
+> For VMM, the synchronization schedule is always on\-demand, regardless of the setting specified in Configuration Manager.
 
 Before you perform any configuration steps for update management in VMM, you should first configure the Configuration Manager environment.
 

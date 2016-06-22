@@ -18,8 +18,8 @@ The cmdlets in the following table are used to create and manage variables with 
 
 |Cmdlets|Description|
 |-----------|---------------|
-|[Get-SmaSchedule](http://go.microsoft.com/fwlink/?LinkID=306457)|Retrieves a schedule.|
-|[Set-SmaSchedule](http://go.microsoft.com/fwlink/?LinkID=306476)|Creates a new schedule or sets the properties for an existing schedule.|
+|[Get\-SmaSchedule](http://go.microsoft.com/fwlink/?LinkID=306457)|Retrieves a schedule.|
+|[Set\-SmaSchedule](http://go.microsoft.com/fwlink/?LinkID=306476)|Creates a new schedule or sets the properties for an existing schedule.|
 
 ## Creating a new Schedule
 
@@ -50,7 +50,7 @@ The cmdlets in the following table are used to create and manage variables with 
 10. Click the check mark to save the variable.
 
 ### To create a new schedule with Windows PowerShell in Service Management Automation
-The[Set-SmaSchedule](http://aka.ms/runbookauthor/cmdlet/setsmaschedule) cmdlet both creates a new schedule and sets the value for an existing schedule.  The following sample Windows PowerShell commands create a new schedule called My Daily Schedule that starts on the current day and fires every day at noon for one year:
+The[Set\-SmaSchedule](http://aka.ms/runbookauthor/cmdlet/setsmaschedule) cmdlet both creates a new schedule and sets the value for an existing schedule.  The following sample Windows PowerShell commands create a new schedule called My Daily Schedule that starts on the current day and fires every day at noon for one year:
 
 ```powershell
 $web = 'https://MySMAServer'

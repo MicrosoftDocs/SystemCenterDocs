@@ -61,40 +61,40 @@ The rest of the steps to create the Spaces Direct Cluster are exactly the same a
 
 
 As part of creating this cluster, VMM performs the following steps:
-1.  On each host: 
-a.  Installs the File Server role. 
-b.  Installs the Failover Clustering feature.
-c.  Enables Storage Replica and Data Deduplication.
-2.  Performs Cluster Configuration validation. 
-3.  Creates the cluster. 
-4.  Enables Storage Spaces Direct and creates an array with the same name as the one provided in the wizard.
+1.	On each host: 
+a.	Installs the File Server role. 
+b.	Installs the Failover Clustering feature.
+c.	Enables Storage Replica and Data Deduplication.
+2.	Performs Cluster Configuration validation. 
+3.	Creates the cluster. 
+4.	Enables Storage Spaces Direct and creates an array with the same name as the one provided in the wizard.
 
 ## Bring an already created Spaces Direct cluster under VMM Management
 
 In certain scenarios, users may have already created a Spaces Direct cluster out of band and may want to bring it under the management of VMM. This can be achieved using the following steps: 
 
-1.  Add the host cluster as follows:
-a.  On the **VMs and Services** Tab, right click **All Hosts** and select **Add Hyper-V Hosts and Clusters**.
-b.  If the cluster is in some other domain, select the Windows server computer in untrusted Active Directory domain.
-c.  Provide the RunAsAccount and the cluster name (see Figure 5) and proceed.
+1.	Add the host cluster as follows:
+a.	On the **VMs and Services** Tab, right click **All Hosts** and select **Add Hyper-V Hosts and Clusters**.
+b.	If the cluster is in some other domain, select the Windows server computer in untrusted Active Directory domain.
+c.	Provide the RunAsAccount and the cluster name (see Figure 5) and proceed.
      
      ![Select Existing Cluster for VMM ManagementImage/VMM_S2D_OOBSelectCluster.png)
      
      **Figure 5: Adding an existing Storage Spaces Direct Cluster under VMM Management**
       
-     d. This adds the Host cluster into VMM.
+     d.	This adds the Host cluster into VMM.
 Once that is added, the Storage Provider for Spaces Direct needs to be added.
 
-2.  Add the Storage Provider as follows:
-a.  On **Fabric** Tab, Select **Add Resources** (Ribbon Button) -> **Storage Devices** (see Figure 6).
+2.	Add the Storage Provider as follows:
+a.	On **Fabric** Tab, Select **Add Resources** (Ribbon Button) -> **Storage Devices** (see Figure 6).
     
     ![Launch the Add Resource WizardImage/VMM_S2D_AddResourceWizardLaunch.png)
     
     **Figure 6: Launching the Add Resource Wizard to add the Storage Provider**
     
-b.  Select **Windows-based File Server**
-c.  Provide RunAsAccount and Cluster name and check the checkbox if the cluster is in other domain and proceed.
-d.  This adds Storage Provider into VMM.
+b.	Select **Windows-based File Server**
+c.	Provide RunAsAccount and Cluster name and check the checkbox if the cluster is in other domain and proceed.
+d.	This adds Storage Provider into VMM.
 
 ### Create Storage Resources on a Spaces Direct Cluster
 

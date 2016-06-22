@@ -19,7 +19,7 @@ Central Console is a System Center Operations Manager console that you can deplo
 
 -   Remote corrective actions and remote recovery
 
--   Service-level agreement (SLA)-based alerting. Alerts are generated when an SLA is broken.
+-   Service\-level agreement \(SLA\)\-based alerting. Alerts are generated when an SLA is broken.
 
 -   Monitor DPM server memory, CPU, disk resources, database, and performance trends.
 
@@ -60,23 +60,23 @@ Install the agent as follows:
 ### <a name="BKMK_Import"></a>Import the DPM discovery and library management packs
 DPM provides the following management packs:
 
--   Reporting management pack (Microsoft.SystemCenter.DataProtectionManager.2012.Reporting.mp)—Collects and displays reporting data from all DPM servers, and exposes a set of Operations Manager warehouse views for DPM. You can query these views to generate custom reports.
+-   Reporting management pack \(Microsoft.SystemCenter.DataProtectionManager.2012.Reporting.mp\)—Collects and displays reporting data from all DPM servers, and exposes a set of Operations Manager warehouse views for DPM. You can query these views to generate custom reports.
 
--   Discovery and monitoring management pack (Microsoft.SystemCenter.DataProtectionManager.2012.Discovery.mp)
+-   Discovery and monitoring management pack \(Microsoft.SystemCenter.DataProtectionManager.2012.Discovery.mp\)
 
--   Library management pack—(Microsoft.SystemCenter.DataProtectionManager.2012.Library)
+-   Library management pack—\(Microsoft.SystemCenter.DataProtectionManager.2012.Library\)
 
 1.  On the Operations Manager server remove any existing DPM management packs.
 
 2.  [Download](http://go.microsoft.com/fwlink/?LinkId=524726) the DPM management packs.
 
-    By default, the download places the Discovery and Library Management Packs in the C:\Program Files\System Center Management Packs folder. The Reporting Management Pack is placed in a separate folder inside that folder.
+    By default, the download places the Discovery and Library Management Packs in the C:\\Program Files\\System Center Management Packs folder. The Reporting Management Pack is placed in a separate folder inside that folder.
 
 3.  Log on to the Operations Manager server with an account that is a member of the Operations Manager Administrators role.
 
 4.  Remember to remove any previous versions of the Library or Discover Management Packs running on the server.
 
-5.  In the Operations console, click **Administration**. Right-click **Management Packs** > **Import Management Packs**.
+5.  In the Operations console, click **Administration**. Right\-click **Management Packs** > **Import Management Packs**.
 
 6.  Select **Microsoft.SystemCenter.DataProtectionManagerDiscovery.MP** > **Open** and then **Microsoft.SystemCenter.DataProtectionManagerLibrary.MP** > **Open**.
 
@@ -98,13 +98,13 @@ Note that:
 
 1.  Log on to the Operations Manager server with an account that is a member of the Operations Manager Administrators role.
 
-2.  In the Operations console, click **Administration**. Right-click **Management Packs** > **Import Management Packs**.
+2.  In the Operations console, click **Administration**. Right\-click **Management Packs** > **Import Management Packs**.
 
 3.  Select **Microsoft.SystemCenter.DataProtectionManagerReporting.MP** > **Open**.
 
 4.  Follow the instructions in the Import Management Packs wizard.
 
 ## Next steps
-After you import the Management Packs they discover and monitor data without requiring any additional configuration. You can optionally tweak settings like monitors and rules for your environment. For example if you find that performance-measuring rules that are enable degrade server performance with slow WAN links, you can disable them. When you have everything configured as needed you can generate DPM reports from Operations Manager
+After you import the Management Packs they discover and monitor data without requiring any additional configuration. You can optionally tweak settings like monitors and rules for your environment. For example if you find that performance\-measuring rules that are enable degrade server performance with slow WAN links, you can disable them. When you have everything configured as needed you can generate DPM reports from Operations Manager
 
 

@@ -36,10 +36,10 @@ Service Management Automation uses the following three underlying components tha
 
 -   Enables Service Management Automation management by using Windows PowerShell cmdlets
 
-### Should I use Service Management Automation or System Center 2016 Technical Preview - Orchestrator?
+### Should I use Service Management Automation or System Center 2016 Technical Preview \- Orchestrator?
 In System Center 2016 Technical Preview, the Orchestrator component enables you to automate business processes and IT operations in your data center without scripting or programming. Orchestrator is a feature in System Center 2016 Technical Preview. If you already have System Center 2016 Technical Preview installed, and you do not plan to install Windows Azure Pack, use Orchestrator.
 
-Service Management Automation in Windows Azure Pack enables you to automate processes within the Windows Azure Pack. Because Service Management Automation runs Windows PowerShell workflows, you can also use Windows PowerShell cmdlets to run other System Center 2016 Technical Preview components, including Orchestrator. If you are planning to use the Windows Azure Pack, use Service Management Automation, and then you can continue to leverage your System Center 2016 Technical Preview installation (if one exists).
+Service Management Automation in Windows Azure Pack enables you to automate processes within the Windows Azure Pack. Because Service Management Automation runs Windows PowerShell workflows, you can also use Windows PowerShell cmdlets to run other System Center 2016 Technical Preview components, including Orchestrator. If you are planning to use the Windows Azure Pack, use Service Management Automation, and then you can continue to leverage your System Center 2016 Technical Preview installation \(if one exists\).
 
 > [!IMPORTANT]
 > The [Service Management Automation Developer's Guide](http://go.microsoft.com/fwlink/?LinkId=398741) is now available. This is a set of REST API reference documentation for the Service Management Automation web service.

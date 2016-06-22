@@ -11,7 +11,7 @@ ms.topic: article
 ms.assetid: b224c157-4a93-42d1-9eaa-898ef7e2a1dd
 ---
 # How to create VIP templates for Network Load Balancing (NLB) in VMM
-You can use the following procedure to create a virtual IP (VIP) template for Microsoft Network Load Balancing (NLB) in Virtual Machine Manager (VMM). A VIP template contains load balancer-related configuration settings for a specific type of network traffic. For example, you could create a template that specifies the load balancing behavior for HTTPS traffic on port 443.
+You can use the following procedure to create a virtual IP \(VIP\) template for Microsoft Network Load Balancing \(NLB\) in Virtual Machine Manager \(VMM\). A VIP template contains load balancer\-related configuration settings for a specific type of network traffic. For example, you could create a template that specifies the load balancing behavior for HTTPS traffic on port 443.
 
 When a user creates a service, they can select a VIP template to use when they want to load balance a service tier. For more information, see [Configuring load balancing in VMM](Configuring-load-balancing-in-VMM.md).
 
@@ -36,7 +36,7 @@ When a user creates a service, they can select a VIP template to use when they w
 
     2.  The virtual IP port to use. The virtual IP port is the port that is used for the type of network traffic that you want to load balance.
 
-    For example, enter the name **Web tier (HTTPS traffic-NLB)**, and a description of **Uses NLB to load balance HTTPS traffic to production Web servers**. Enter the virtual IP port **443**.
+    For example, enter the name **Web tier \(HTTPS traffic\-NLB\)**, and a description of **Uses NLB to load balance HTTPS traffic to production Web servers**. Enter the virtual IP port **443**.
 
 6.  On the **Type** page, do the following, and then click **Next**:
 
@@ -44,17 +44,17 @@ When a user creates a service, they can select a VIP template to use when they w
 
     2.  In the **Manufacturer** list, click **Microsoft**.
 
-        By default, in the **Model** list, **Network Load Balancing (NLB)** is listed.
+        By default, in the **Model** list, **Network Load Balancing \(NLB\)** is listed.
 
 7.  On the **Protocol** page, click the protocol that you want to create the virtual IP template for, and then click **Next**. You can select **TCP**, **UDP** or **Both TCP and UDP**.
 
-8.  On the **Persistence** page, you can select the **Enable persistence** check box to enable session persistence (also known as affinity). If you enable persistence, the load balancer will always try to direct the same client to the same virtual machine that is behind the load balancer. This is based on the source IP address and the subnet mask.
+8.  On the **Persistence** page, you can select the **Enable persistence** check box to enable session persistence \(also known as affinity\). If you enable persistence, the load balancer will always try to direct the same client to the same virtual machine that is behind the load balancer. This is based on the source IP address and the subnet mask.
 
     If you select the **Enable persistence** check box, accept the default value of **Source IP** in the **Persistence type** list. In the **Subnet mask to apply** list, click either of the following options:
 
     -   **Single**. If you select this option, NLB directs multiple requests from the same client IP address to the same host in the NLB cluster.
 
-    -   **Network**. If you select this option, NLB directs multiple requests from the same TCP/IP Class C address range to the same host in the NLB cluster. This setting ensures that clients that use multiple proxy servers to access the NLB cluster have their TCP or UDP connections directed to the same host in the NLB cluster.
+    -   **Network**. If you select this option, NLB directs multiple requests from the same TCP\/IP Class C address range to the same host in the NLB cluster. This setting ensures that clients that use multiple proxy servers to access the NLB cluster have their TCP or UDP connections directed to the same host in the NLB cluster.
 
     > [!NOTE]
     > When you deploy a service where a tier is configured to use NLB, VMM automatically creates the NLB host cluster.

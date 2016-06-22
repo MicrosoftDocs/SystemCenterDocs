@@ -11,7 +11,7 @@ ms.topic: article
 ms.assetid: 2705c237-8576-44bb-9871-f5ba644d854e
 ---
 # How to modify or delete a logical network in VMM
-You can use the following procedures to modify or delete a logical network in Virtual Machine Manager (VMM). For example, you may want to add or remove an associated network site, or modify an IP address pool.
+You can use the following procedures to modify or delete a logical network in Virtual Machine Manager \(VMM\). For example, you may want to add or remove an associated network site, or modify an IP address pool.
 
 **Account requirements** To complete this procedure, you must be a member of the Administrator or the Delegated Administrator user role.
 
@@ -34,7 +34,7 @@ You can use the following procedures to modify or delete a logical network in Vi
 
     2.  To modify an associated IP address pool, in the **Logical Networks and IP Pools** pane, expand the logical network, and then click the IP address pool. On the **Home** tab, in the **Properties** group, click **Properties**.
 
-        You can modify the name, description, the IP address range, virtual IP (VIP) address reservations, the default gateway, Domain Name System (DNS) information, and Windows Internet Name Service (WINS) information. On the **Inactive addresses** tab, you can also release inactive IP addresses back to the static IP address pool.
+        You can modify the name, description, the IP address range, virtual IP \(VIP\) address reservations, the default gateway, Domain Name System \(DNS\) information, and Windows Internet Name Service \(WINS\) information. On the **Inactive addresses** tab, you can also release inactive IP addresses back to the static IP address pool.
 
         > [!NOTE]
         > You can view but cannot modify network site information from the IP address pool properties. To modify network site information, open the properties of the logical network.
@@ -51,7 +51,7 @@ You can use the following procedures to modify or delete a logical network in Vi
 
 5.  On the **Home** tab, in the **Dependencies** group, click **View Dependent Resources**.
 
-    The **Show Dependencies** dialog box lists any items that depend on the logical network. The list can include objects such as network sites (listed under **Type** as logical network definitions), load balancers, IP address pools, hosts, virtual machines, services, and templates. Before you can delete the logical network, you must modify or delete the dependent items so that they do not reference the logical network.
+    The **Show Dependencies** dialog box lists any items that depend on the logical network. The list can include objects such as network sites \(listed under **Type** as logical network definitions\), load balancers, IP address pools, hosts, virtual machines, services, and templates. Before you can delete the logical network, you must modify or delete the dependent items so that they do not reference the logical network.
 
 6.  After you modify or remove all dependencies, with the logical network selected, on the **Home** tab, in the **Remove** group, click **Remove**.
 

@@ -15,7 +15,7 @@ If the user account for the Operational Database Account in Service Manager chan
 
 1.  Add the new account to the Service Manager Administrators user role for both the Service Manager and data warehouse management servers
 
-2.  Create a SQL Server logon account for the new user on computers hosting Service Manager databases. On the computer hosting the Service Manager database, assign the new user to the skd_users and configsvc_users roles.
+2.  Create a SQL Server logon account for the new user on computers hosting Service Manager databases. On the computer hosting the Service Manager database, assign the new user to the skd\_users and configsvc\_users roles.
 
 3.  Make the new account a local administrator on the Service Manager computers.
 
@@ -41,7 +41,7 @@ Use the following procedures to make these changes in Service Manager.
 
     -   Data warehouse management server
 
-    -   Self-Service Portal
+    -   Self\-Service Portal
 
     -   Service Manager database
 
@@ -69,13 +69,13 @@ Use the following procedures to make these changes in Service Manager.
 
 ### To change the logon account for the Service Manager Data Access Service and Service Manager Management Configuration services
 
-1.  On the computer that hosts the Self-Service Portal, on the Windows desktop, click **Start**, and then click **Run**.
+1.  On the computer that hosts the Self\-Service Portal, on the Windows desktop, click **Start**, and then click **Run**.
 
 2.  In the **Run** dialog box, in the **Open** box, type **services.msc**, and then click **OK**.
 
-3.  In the **Services** window, in the **Services (Local)** pane, right-click **System Center Data Access Service**, and then click **Properties**.
+3.  In the **Services** window, in the **Services \(Local\)** pane, right\-click **System Center Data Access Service**, and then click **Properties**.
 
-4.  In the **System Center Data Access Service Properties (Local Computer)** dialog box, click **Log On**, and then click **Browse**.
+4.  In the **System Center Data Access Service Properties \(Local Computer\)** dialog box, click **Log On**, and then click **Browse**.
 
 5.  In the **Select User or Group** dialog box, complete these steps:
 
@@ -87,9 +87,9 @@ Use the following procedures to make these changes in Service Manager.
 
 6.  Restart the Service Manager Data Access Service.
 
-7.  Right-click **System Center Management Configuration**, and then click **Properties**.
+7.  Right\-click **System Center Management Configuration**, and then click **Properties**.
 
-8.  In the **System Center Management Configuration Properties (Local Computer)** dialog box, click **Log On**, and then click **Browse**.
+8.  In the **System Center Management Configuration Properties \(Local Computer\)** dialog box, click **Log On**, and then click **Browse**.
 
 9. In the **Select User or Group** dialog box, complete these steps:
 
@@ -115,7 +115,7 @@ Use the following procedures to make these changes in Service Manager.
 
 3.  In the **Object Explorer** pane, expand **Security**, and then expand **Logins**.
 
-4.  Right-click **Logins**, and then click **New Login**.
+4.  Right\-click **Logins**, and then click **New Login**.
 
 5.  In the **Login – New** dialog box, in the **Select a page** pane, click **General**, and then click **Search**.
 
@@ -127,15 +127,15 @@ Use the following procedures to make these changes in Service Manager.
 
 7.  In the **Select a page** pane, click **Server Roles**, and in the **Server roles** list, ensure that **sysadmin** and **public** are selected, and then click **OK**.
 
-### To change the Service ManagerSelf-Service Portal application pool account
+### To change the Service ManagerSelf\-Service Portal application pool account
 
-1.  On the Windows desktop, click **Start**, point to **Programs**, point to **Administrative Tools**, and then click **Internet Information Services (IIS) Manager**.
+1.  On the Windows desktop, click **Start**, point to **Programs**, point to **Administrative Tools**, and then click **Internet Information Services \(IIS\) Manager**.
 
-2.  In the **Internet Information Services (IIS) Manager** window, in the **Connections** pane, expand the name of your computer, and then click **Application Pools**.
+2.  In the **Internet Information Services \(IIS\) Manager** window, in the **Connections** pane, expand the name of your computer, and then click **Application Pools**.
 
-3.  In the **Application Pools** pane, right-click **SM_AppPool**, and then click **Advanced Settings**.
+3.  In the **Application Pools** pane, right\-click **SM\_AppPool**, and then click **Advanced Settings**.
 
-4.  In the **Advanced Settings** dialog box, in the **Process Model** area, click **Identity**, and then click the ellipsis (**…**) button.
+4.  In the **Advanced Settings** dialog box, in the **Process Model** area, click **Identity**, and then click the ellipsis \(**…**\) button.
 
 5.  In the **Application Pool Identity** dialog box, select **Custom account**, and then click **Set**.
 
@@ -145,7 +145,7 @@ Use the following procedures to make these changes in Service Manager.
 
 8.  In the **Advanced Settings** dialog box, click **OK**.
 
-9. Close Internet Information Services (IIS) Manager.
+9. Close Internet Information Services \(IIS\) Manager.
 
 ### To change the Operational Database Account
 

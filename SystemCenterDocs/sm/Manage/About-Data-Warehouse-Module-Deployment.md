@@ -42,7 +42,7 @@ Sequentially, report deployment occurs in the following process:
 
 2.  Because the DWStagingandConfig database is the final destination of the management packs that have been synchronized, the deployment workflow queries the DWStagingandConfig database for any new or changed reports to deploy or any reports to remove.
 
-3.  The deployment workflow then publishes any new or updated reports to the SQL Server Reporting Services (SSRS) server through the SSRS web services.
+3.  The deployment workflow then publishes any new or updated reports to the SQL Server Reporting Services \(SSRS\) server through the SSRS web services.
 
 4.  SSRS stores the reports and appropriate metadata.
 
@@ -52,9 +52,9 @@ Sequentially, report deployment occurs in the following process:
 
 7.  Schema changes are deployed to the DWRepository database.
 
-8.  Any necessary changes to extract, transform, and load (ETL) modules are made to the DWStagingandConfig database.
+8.  Any necessary changes to extract, transform, and load \(ETL\) modules are made to the DWStagingandConfig database.
 
-Management packs that contain only Service Manager–specific information do not cause the deployment activities to execute. They are only be triggered for new data warehouse and reporting-specific elements.
+Management packs that contain only Service Manager–specific information do not cause the deployment activities to execute. They are only be triggered for new data warehouse and reporting\-specific elements.
 
 ## Understanding the ETL Processes
 After the data warehouse schema and reports are deployed, the DWDataMart database is populated with actual data for reporting purposes. This is done by the ETL processes. These three processes each serve their own specific purpose:
@@ -65,12 +65,12 @@ After the data warehouse schema and reports are deployed, the DWDataMart databas
 
 -   **Load** is designed for transferring the data that has already been processed into its target destination in a bulk manner.
 
-One of the main reasons for having three different databases is so that you can optimize your hardware environment more easily. In high-volume environments, the DWStagingandConfig and DWRepository databases must be on computer hardware that is optimized for read/write I/O. However, the computer hardware hosting the DWDatamart database must be optimized for read I/O. With that difference in mind, you can separate the DWDatamart to a different server or drive from the DWStagingandConfig and DWRepository databases. However, the DWStagingandConfig and DWRepository databases must remain on the same server.
+One of the main reasons for having three different databases is so that you can optimize your hardware environment more easily. In high\-volume environments, the DWStagingandConfig and DWRepository databases must be on computer hardware that is optimized for read\/write I\/O. However, the computer hardware hosting the DWDatamart database must be optimized for read I\/O. With that difference in mind, you can separate the DWDatamart to a different server or drive from the DWStagingandConfig and DWRepository databases. However, the DWStagingandConfig and DWRepository databases must remain on the same server.
 
 At a high level, ETL occurs in the processes described in the following sections. If you plan on authoring management packs that are used for custom reporting, you will probably need to know more about these processes in depth.
 
 ### Extract
-The extract process starts on a scheduled interval. Extract is the process that retrieves raw data from your online transaction processing system (OLTP) store, which in this case is the  Service Manager database.
+The extract process starts on a scheduled interval. Extract is the process that retrieves raw data from your online transaction processing system \(OLTP\) store, which in this case is the  Service Manager database.
 
 1.  The extract process queries Service Manager for the delta data that has accumulated since the last time the extract process ran.
 
@@ -80,6 +80,6 @@ The extract process starts on a scheduled interval. Extract is the process that 
 The transform process starts on a scheduled interval. Transform is the process that moves the raw data from the DWStagingandConfig database. It also does any cleansing, reformatting, and aggregation that is required to alter the raw data into the final format for reporting. This transformed data is written into the DWRepository database.
 
 ### Load
-The load process starts on a scheduled interval. The load process queries for the data from the DWRepository database. The transformed data from DWRepository is inserted into the DWDatamart database. The DWDatamart is the database that is used for all end-user reporting needs.
+The load process starts on a scheduled interval. The load process queries for the data from the DWRepository database. The transformed data from DWRepository is inserted into the DWDatamart database. The DWDatamart is the database that is used for all end\-user reporting needs.
 
 

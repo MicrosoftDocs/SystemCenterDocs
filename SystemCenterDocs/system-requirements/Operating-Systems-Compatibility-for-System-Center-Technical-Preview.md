@@ -9,12 +9,12 @@ ms.topic: get-started-article
 ms.assetid: 466af3dd-17e5-46b3-b33b-b21a4a65b875
 ---
 # Operating Systems Compatibility for System Center Technical Preview
-Use this information to evaluate if your server-side operating system environment is ready to support the installation of or upgrade to System Center 2016 Technical Preview. Use this information whether you are deploying one or multiple components.
+Use this information to evaluate if your server\-side operating system environment is ready to support the installation of or upgrade to System Center 2016 Technical Preview. Use this information whether you are deploying one or multiple components.
 
-|System Center  component|Windows Server 2008|Windows Server 2008 SP2|Windows Server 2008 R2|Windows Server 2008 R2 SP1|Windows Server® 2012 Standard, Datacenter|Windows Server 2012 R2 Standard, Datacenter|Windows Server® Technical Preview(Server with Desktop Experience)|Windows Server® Technical Preview|Windows Server® Technical Preview Nano Server|
+|System Center  component|Windows Server 2008|Windows Server 2008 SP2|Windows Server 2008 R2|Windows Server 2008 R2 SP1|Windows Server® 2012 Standard, Datacenter|Windows Server 2012 R2 Standard, Datacenter|Windows Server® Technical Preview\(Server with Desktop Experience\)|Windows Server® Technical Preview|Windows Server® Technical Preview Nano Server|
 |----------------------------|-----------------------|---------------------------|--------------------------|------------------------------|--------------------------------------------------------------------------------|--------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------|---------------------------------------------------------------------------------------|
-|**DPM** Remote Administration console*|||●|●|●|●|●|||
-|**DPM** Server*|||●|●|●|●|●|●||
+|**DPM** Remote Administration console\*|||●|●|●|●|●|||
+|**DPM** Server\*|||●|●|●|●|●|●||
 |**Operations Manager** Management Server||||||●|●|||
 |**Operations Manager** Data Warehouse||||||●|●|||
 |**Operations Manager** Gateway Server||||||●|●|||
@@ -31,11 +31,11 @@ Use this information to evaluate if your server-side operating system environmen
 |**Service Manager** Management Server||||||●|●|||
 |**Service Manager**<br /><br />Data Warehouse Management Server||||||●|●|||
 |**Service Manager** Database or Data Warehouse Database||||||●|●|||
-|**Service Manager** Self-Service Portal (SharePoint Server and Web Content Server)||||||●|●|||
+|**Service Manager** Self\-Service Portal \(SharePoint Server and Web Content Server\)||||||●|●|||
 |**Service Provider Foundation**|||||||●|●||
 |**Virtual Machine Manager** Management Server|||||||●|||
 |**Virtual Machine Manager** Virtual Machine Hosts||||||●|●||●|
-|**Virtual Machine Manager** Scale-out File Server||||||●|●||●|
+|**Virtual Machine Manager** Scale\-out File Server||||||●|●||●|
 |**Virtual Machine Manager** PXE Server||||||●|●|||
 |**Virtual Machine Manager** Update Server||||||●|●|||
 |**Virtual Machine Manager** Library||||||●|●|||

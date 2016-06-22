@@ -8,7 +8,7 @@ ms.topic: article
 ms.assetid: bb288be0-b213-4066-a0bb-dae7b439c645
 ---
 # How to add a VMM library server or VMM library share
-You can use the following procedures to add a library server and library shares to an existing Virtual Machine Manager (VMM) installation. When you add a library server to VMM management, VMM installs the VMM agent on the new library server.
+You can use the following procedures to add a library server and library shares to an existing Virtual Machine Manager \(VMM\) installation. When you add a library server to VMM management, VMM installs the VMM agent on the new library server.
 
 > [!NOTE]
 > During VMM Setup, you can either create a library share or specify an existing share. If you accept the default, a library share that is named MSSCVMMLibrary is created on the VMM management server.
@@ -19,9 +19,9 @@ You can use the following procedures to add a library server and library shares 
 
 -   To add a library server, the server must meet the operating system requirements described in [Preparing your environment for System Center 2016 - Virtual Machine Manager](../Deploy/Preparing-your-environment-for-System-Center-2016---Virtual-Machine-Manager.md).
 
--   The library server that you want to add must be in the same domain as the VMM management server, or in a domain that has a two-way trust with the domain of the VMM management server (including domains with disjointed namespaces).
+-   The library server that you want to add must be in the same domain as the VMM management server, or in a domain that has a two\-way trust with the domain of the VMM management server \(including domains with disjointed namespaces\).
 
--   When you add a library server, the firewall on the server that you want to add must allow File and Print Sharing (SMB) traffic to enable VMM to enumerate and display the available shares.
+-   When you add a library server, the firewall on the server that you want to add must allow File and Print Sharing \(SMB\) traffic to enable VMM to enumerate and display the available shares.
 
 -   When you add a library server or you add a library share to a library server that is already under VMM management, you must designate an existing share. Therefore, before you add a library server or library share, you must manually create the shared folder on the target server outside VMM.
 
@@ -29,9 +29,9 @@ You can use the following procedures to add a library server and library shares 
     > Do not create highly available file shares for the VMM library on the same cluster as a highly available VMM management server installation. VMM does not support this configuration.
 
     > [!NOTE]
-    > For a library share to function through VMM, the minimum required permissions are that the Local System (SYSTEM) account has full control permissions at both the share and the NTFS file system level. By default, the Local System account has full control permissions when you create a file share and then add the library share to VMM management.
+    > For a library share to function through VMM, the minimum required permissions are that the Local System \(SYSTEM\) account has full control permissions at both the share and the NTFS file system level. By default, the Local System account has full control permissions when you create a file share and then add the library share to VMM management.
     > 
-    > However, to add resources to a library share, an administrator typically needs to access the share through Windows Explorer. They can do this either outside VMM or through the VMM console, where they can right-click the library share, and then click **Explore**. Because of this, make sure that you assign the appropriate access control permissions outside VMM. For example, we recommend that you assign full control share and NTFS permissions to the Administrators group.
+    > However, to add resources to a library share, an administrator typically needs to access the share through Windows Explorer. They can do this either outside VMM or through the VMM console, where they can right\-click the library share, and then click **Explore**. Because of this, make sure that you assign the appropriate access control permissions outside VMM. For example, we recommend that you assign full control share and NTFS permissions to the Administrators group.
 
 -   When you add a library server, you must specify account credentials for a domain account that has administrative rights on the computers that you want to add. You can enter a user name and password or specify a Run As account. If you want to use a Run As account, you can create the Run As account before you begin this procedure, or create it during the procedure.
 
@@ -46,7 +46,7 @@ You can use the following procedures to add a library server and library shares 
 
     The Add Library Server wizard opens.
 
-3.  On the **Enter Credentials** page, enter the credentials for a domain account that has administrative rights on the servers that you want to add, and then click **Next**. You can specify a Run As account or manually enter user credentials in the format *domain_name*\\*user_name*.
+3.  On the **Enter Credentials** page, enter the credentials for a domain account that has administrative rights on the servers that you want to add, and then click **Next**. You can specify a Run As account or manually enter user credentials in the format *domain\_name*\\*user\_name*.
 
     > [!NOTE]
     > If you do not already have a Run As account, click **Browse**, and then in the **Select a Run As Account** dialog box, click **Create Run As Account**.

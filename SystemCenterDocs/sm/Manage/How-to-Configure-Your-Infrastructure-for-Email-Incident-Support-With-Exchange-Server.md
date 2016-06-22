@@ -11,14 +11,14 @@ ms.topic: article
 ms.assetid: fba0077d-5ddb-4bf1-bceb-a6211c91294c
 ---
 # How to Configure Your Infrastructure for Email Incident Support with Exchange Server
-Use the following procedures to configure your Microsoft Exchange Server infrastructure to support the creation of incidents through email.
+Use the following procedures to configure your Microsoft Exchange Server infrastructure to support the creation of incidents through email.
 
 ### To install and configure the SMTP server
 
-1.  Log on with administrative credentials on the server that will host the Simple Mail Transfer Protocol (SMTP) server role.
+1.  Log on with administrative credentials on the server that will host the Simple Mail Transfer Protocol \(SMTP\) server role.
 
     > [!NOTE]
-    > A server running Exchange Server cannot be your SMTP server.
+    > A server running Exchange Server cannot be your SMTP server.
 
 2.  Click **Start**, navigate to **All Programs**, **Administrative Tools**, and then click **Server Manager**.
 
@@ -30,7 +30,7 @@ Use the following procedures to configure your Microsoft Exchange Server infrast
 
 6.  On the **Select Features** page, click **Next**.
 
-7.  On the **Web Server (IIS)** page, click **Next**.
+7.  On the **Web Server \(IIS\)** page, click **Next**.
 
 8.  On the **Select Role Service** page, click **Next**.
 
@@ -40,20 +40,20 @@ Use the following procedures to configure your Microsoft Exchange Server infrast
 
 ### To configure the IIS SMTP server service for Service Manager
 
-1.  On the server that is hosting the SMTP server service, open **Administrative Tools**, and then click **Internet Information Services (IIS) Manager**.
+1.  On the server that is hosting the SMTP server service, open **Administrative Tools**, and then click **Internet Information Services \(IIS\) Manager**.
 
-2.  Expand the SMTP server until you see **SMTP Virtual Server #1**. The SMTP server might have a different name, but it appears with an email icon.
+2.  Expand the SMTP server until you see **SMTP Virtual Server \#1**. The SMTP server might have a different name, but it appears with an email icon.
 
-3.  Right-click **SMTP Virtual Server #1**, click **Rename**, and then type the name of your server.
+3.  Right\-click **SMTP Virtual Server \#1**, click **Rename**, and then type the name of your server.
 
-4.  Expand **Domains**, and then rename the domain to the fully qualified domain name (FQDN) of the server or the domain name that you want to use.
+4.  Expand **Domains**, and then rename the domain to the fully qualified domain name \(FQDN\) of the server or the domain name that you want to use.
 
     > [!NOTE]
     > This cannot be the same domain that the server is a member of. However, it can be a child domain.
 
     For example, if the domain name is contoso.com, you use a server name that resembles server.contoso.com.
 
-5.  Using the server name from step 3, right-click the server name, and then click **Properties**.
+5.  Using the server name from step 3, right\-click the server name, and then click **Properties**.
 
 6.  Click the **Access** tab, and then click **Relay**.
 
@@ -71,15 +71,15 @@ Use the following procedures to configure your Microsoft Exchange Server infrast
 
     4.  Click **OK**, and then click **OK** again to close the **Advanced Delivery** window.
 
-10. Close IIS Manager, open Windows Explorer, and navigate to <SystemDrive\>:\Inetpub\Mailroot.
+10. Close IIS Manager, open Windows Explorer, and navigate to \<SystemDrive\>:\\Inetpub\\Mailroot.
 
 11. Create two child folders. Name the first folder **Badmail**, and name the second folder **Drop**.
 
-12. Right-click the <SystemDrive\>:\Inetpub\Mailroot folder, and then click **Share**.
+12. Right\-click the \<SystemDrive\>:\\Inetpub\\Mailroot folder, and then click **Share**.
 
 13. For sharing permissions, select the domain user that you specified for the Service Manager account, click **Contributor**, click **Share**, and then click **Done**.
 
-14. Restart the Simple Mail Transfer Protocol (SMTP) service, ensure that it is set to **Automatic**, and verify that it has started.
+14. Restart the Simple Mail Transfer Protocol \(SMTP\) service, ensure that it is set to **Automatic**, and verify that it has started.
 
 ### To configure Service Manager for email
 
@@ -87,17 +87,17 @@ Use the following procedures to configure your Microsoft Exchange Server infrast
 
 2.  In the **Administration** pane, expand **Administration**, and then click **Settings**.
 
-3.  In the **Settings** pane, double-click **Incident Settings**.
+3.  In the **Settings** pane, double\-click **Incident Settings**.
 
-4.  Scroll to **Incoming E-mail**.
+4.  Scroll to **Incoming E\-mail**.
 
-5.  In **The SMTP Service drop folder location**, type the path, share, and folder for the Drop folder. In this example, type **\\\\<computer_name>\mailroot\Drop**, where **<computer_name>** is the name of the computer that is hosting the SMTP Server service, **Mailroot** is the share name, and **Drop** is the subfolder name.
+5.  In **The SMTP Service drop folder location**, type the path, share, and folder for the Drop folder. In this example, type **\\\\<computer\_name>\\mailroot\\Drop**, where **\<computer\_name\>** is the name of the computer that is hosting the SMTP Server service, **Mailroot** is the share name, and **Drop** is the subfolder name.
 
-6.  In **SMTP Service bad folder location**, type the path, share, and folder to the Badmail folder. In this example, type **\\\\<computer_name>\Mailroot\Badmail** where **<computer_name>** is the name of the computer that is hosting the SMTP Server service, **Mailroot** is the share name, and **Badmail** is the subfolder name.
+6.  In **SMTP Service bad folder location**, type the path, share, and folder to the Badmail folder. In this example, type **\\\\<computer\_name>\\Mailroot\\Badmail** where **\<computer\_name\>** is the name of the computer that is hosting the SMTP Server service, **Mailroot** is the share name, and **Badmail** is the subfolder name.
 
-7.  In **Maximum number of e-mails to process at a time**, type a number for the emails that you want Service Manager to process during an email processing cycle.
+7.  In **Maximum number of e\-mails to process at a time**, type a number for the emails that you want Service Manager to process during an email processing cycle.
 
-8.  Select **Turn on incoming e-mails processing**, and then click **OK**.
+8.  Select **Turn on incoming e\-mails processing**, and then click **OK**.
 
 ### To configure email notifications
 
@@ -105,11 +105,11 @@ Use the following procedures to configure your Microsoft Exchange Server infrast
 
 2.  In the **Administration** pane, expand **Notifications**, and then click **Channels**.
 
-3.  In the **Channels** pane, click **E-Mail Notification Channel**.
+3.  In the **Channels** pane, click **E\-Mail Notification Channel**.
 
-4.  In the **Tasks** pane, under **E-Mail Notification Channel**, click **Properties** to open the **Configure E-Mail Notification Channel** dialog box.
+4.  In the **Tasks** pane, under **E\-Mail Notification Channel**, click **Properties** to open the **Configure E\-Mail Notification Channel** dialog box.
 
-5.  Click **Enable e-mail notifications**, and then click **Add**.
+5.  Click **Enable e\-mail notifications**, and then click **Add**.
 
 6.  In the **Add SMTP Server** dialog box, type the FQDN of the SMTP server that you want to use. For example, type **Servername.domain.com**.
 
@@ -121,7 +121,7 @@ Use the following procedures to configure your Microsoft Exchange Server infrast
 
 10. In **Authentication method**, click **Anonymous**, and then click **OK**.
 
-11. In **Return e-mail address**, type the email address of the service account that was used during Setup. For example, type **Helpdek@Servername.domain.com**.
+11. In **Return e\-mail address**, type the email address of the service account that was used during Setup. For example, type **Helpdek@Servername.domain.com**.
 
 12. In **Retry primary after**, type or select the number of seconds that you want Service Manager to wait before trying to resend outgoing email notifications. For example, select **25**.
 
@@ -129,14 +129,14 @@ Use the following procedures to configure your Microsoft Exchange Server infrast
 
 ### To validate email notification configuration
 
-1.  In the **Channels** pane, **click E-Mail Notification Channel**.
+1.  In the **Channels** pane, **click E\-Mail Notification Channel**.
 
-2.  In the **Tasks** pane, under **E-Mail Notification Channel**, click **Configure** to open the **Configure E-Mail Notification Channel** dialog box.
+2.  In the **Tasks** pane, under **E\-Mail Notification Channel**, click **Configure** to open the **Configure E\-Mail Notification Channel** dialog box.
 
 3.  Confirm that the configuration you entered is correct.
 
-## Configuring Exchange Server for use with Service Manager
-In the following procedures, you configure Exchange Server for use with Service Manager. You perform these procedures on the server that hosts Exchange Server.
+## Configuring Exchange Server for use with Service Manager
+In the following procedures, you configure Exchange Server for use with Service Manager. You perform these procedures on the server that hosts Exchange Server.
 
 #### To configure the Organization Hub Transport
 
@@ -164,7 +164,7 @@ In the following procedures, you configure Exchange Server for use with Service 
 
 6.  On the **New Connector** page, click **New** to complete the wizard.
 
-7.  Double-click the newly created **Receive Connector** to open its properties, click the **Authentication** tab, and then clear any items that are selected.
+7.  Double\-click the newly created **Receive Connector** to open its properties, click the **Authentication** tab, and then clear any items that are selected.
 
 8.  Click the **Permissions Groups** tab, click **only Anonymous users**, and then click **OK**.
 
@@ -189,7 +189,7 @@ In the following procedures, you configure Exchange Server for use with Service 
 
 5.  In **Alias**, type the name that you want users to use as the **Email Alias** name. For example, type **Helpdesk**.
 
-6.  Edit the **External e-mail address**, and type the FQDN for the email address. For example, type **helpdesk@server.domain.com**.
+6.  Edit the **External e\-mail address**, and type the FQDN for the email address. For example, type **helpdesk@server.domain.com**.
 
 7.  Click **Next**, and then click **New** to complete the wizard.
 
@@ -199,7 +199,7 @@ In the following procedures, you configure Exchange Server for use with Service 
 
 2.  Remove the TXT file name extension from the new file.
 
-3.  Right-click the TESTMAIL file, and then click **Open**.
+3.  Right\-click the TESTMAIL file, and then click **Open**.
 
 4.  When you are prompted to open the file with a program, click **Notepad**, and then click **OK**.
 
@@ -225,7 +225,7 @@ In the following procedures, you configure Exchange Server for use with Service 
 
 7.  Copy the file to a location where you can use it in the future for testing.
 
-8.  Copy the file into the <SystemDrive\>:\inetpub\mailroot\Pickup folder.
+8.  Copy the file into the \<SystemDrive\>:\\inetpub\\mailroot\\Pickup folder.
 
     > [!NOTE]
     > The file should be removed automatically. This indicates that the Exchange server is using it.

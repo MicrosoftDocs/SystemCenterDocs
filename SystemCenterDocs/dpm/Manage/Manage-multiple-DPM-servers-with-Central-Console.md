@@ -13,12 +13,12 @@ Central Console is a System Center Operations Manager console that you can deplo
 
 -   Centralized monitoring of DPM servers from a single location—You can monitor different versions of DPM, and track the status of servers, tasks, protected resources, tape libraries, available storage and disk space.
 
--   Role-based access control
+-   Role\-based access control
 
 -   Remote recovery
      and remote corrective actions
 
--   Service level agreement (SLA)-based alerting and alert consolidation—Alerts are generated when an SLA is broken.
+-   Service level agreement \(SLA\)\-based alerting and alert consolidation—Alerts are generated when an SLA is broken.
     You can consolidate alerts and work on high priority items, as follows:
 
     -   Repeated alerts—Display only one alert for repeated alerts. For example if a job is scheduled to run hourly and hasn’t run for the last ten hours, only one alert for the failed job is displayed.
@@ -34,7 +34,7 @@ You can install Central Console on a server computer running Windows Server 2008
 
 1.  Deploy an Operations Manager agent to your DPM server.  [Read more](https://technet.microsoft.com/library/hh551142.aspx).
 
-2.  The Central Console consists of two management packs - Microsoft.SystemCenter.DataProtectionManager.2012.Discovery.mp and Microsoft.SystemCenter.DataProtectionManager.2012.Library.mp. You'll need to import both of these and they're located in<CDDrive:>\Management Packs.
+2.  The Central Console consists of two management packs \- Microsoft.SystemCenter.DataProtectionManager.2012.Discovery.mp and Microsoft.SystemCenter.DataProtectionManager.2012.Library.mp. You'll need to import both of these and they're located in<CDDrive:>\\Management Packs.
     Note that when you import the management pack, Windows displays a warning about write actions. This is an expected warning, and you can click **OK** to continue.
     A
 
@@ -44,7 +44,7 @@ You can install Central Console on a server computer running Windows Server 2008
     Select **Install Central Console** if you want to use the scoped DPM Administrator console only, without server monitoring.
     Select **Install Central Console Server side Components** if you want to monitor servers only, without using the scoped DPM Administrator console.
 
-4.  DPM adds firewall exceptions for port 6075 and creates a default role-based access configuration.
+4.  DPM adds firewall exceptions for port 6075 and creates a default role\-based access configuration.
 
 5.  After the Central Console is installed a view folder **System Central 2012 Data Protection Manager** is created in the Operations Manager console. You can manage most tasks for managed DPM servers from the Central Console.
 

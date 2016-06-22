@@ -11,7 +11,7 @@ ms.topic: article
 ms.assetid: b738db5b-041e-46ee-801f-bfd11fc04493
 ---
 # Operations Manager
-Welcome to System Center 2016 Technical Preview Operations Manager.  Operations Manager provides infrastructure monitoring that is flexible and cost-effective, helps ensure the predictable performance and availability of vital applications, and offers comprehensive monitoring for your datacenter and cloud, both private and public.
+Welcome to System Center 2016 Technical Preview Operations Manager.  Operations Manager provides infrastructure monitoring that is flexible and cost\-effective, helps ensure the predictable performance and availability of vital applications, and offers comprehensive monitoring for your datacenter and cloud, both private and public.
 
 ## Operations Manager Documentation
 

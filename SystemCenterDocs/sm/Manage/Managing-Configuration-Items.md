@@ -11,7 +11,7 @@ ms.topic: article
 ms.assetid: 22d6d616-e0b3-47b2-a8d8-f235091bf1d5
 ---
 # Managing Configuration Items
-You might want to associate a work item to apply a Microsoft Exchange Server service pack update to the service that represents the computers that are affected by the email incident. To accomplish this, you can update the service configuration item and then add the respective work item as a related item.
+You might want to associate a work item to apply a Microsoft Exchange Server service pack update to the service that represents the computers that are affected by the email incident. To accomplish this, you can update the service configuration item and then add the respective work item as a related item.
 
 You can use the following procedures to add information, such as related work items or files, to configuration items in Service Manager. The procedures in this topic describe only how to add items, but you can follow similar steps to view or remove items.
 
@@ -25,7 +25,7 @@ Similarly, work items such as incidents, problems, and change requests are often
 
 2.  In the **Configuration Items** pane, expand **Configuration Items**, and then expand **Computers**.
 
-3.  Click **All Windows Computers**. In the **All Windows Computers** pane, double-click the computer to which you want to add information.
+3.  Click **All Windows Computers**. In the **All Windows Computers** pane, double\-click the computer to which you want to add information.
 
 4.  In the computer form, click the **Related Items**tab.
 

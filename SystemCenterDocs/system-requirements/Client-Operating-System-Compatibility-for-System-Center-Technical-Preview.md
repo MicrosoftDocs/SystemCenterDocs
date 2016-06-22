@@ -13,7 +13,7 @@ Use this information to evaluate the client operating system requirements to sup
 
 ## Client Operating Systems
 
-|System Center client-side components|Windows® 7|Windows® 8|Windows® 8.1|Windows Server® 2008 R2 SP1|Windows Server® 2012|Windows Server® 2012 R2 Standard, Datacenter|Windows 10 Enterprise|Windows Server® Technical Preview Standard, Datacenter|
+|System Center client\-side components|Windows® 7|Windows® 8|Windows® 8.1|Windows Server® 2008 R2 SP1|Windows Server® 2012|Windows Server® 2012 R2 Standard, Datacenter|Windows 10 Enterprise|Windows Server® Technical Preview Standard, Datacenter|
 |-----------------------------------------|-------------------------------------------------------------------|-----------------------------------------------------------|-----------------------------------------------------------------|-----------------------------------------------------------------------|-----------------------------------------------------------|--------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------|
 |**DPM** Central Console|●|●|●|●|●|●|●|●|
 |**DPM** Remote Administrator|●|●|●|●|●|●|●|●|

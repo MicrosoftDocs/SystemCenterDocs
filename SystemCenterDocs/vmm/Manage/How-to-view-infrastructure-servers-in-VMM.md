@@ -8,7 +8,7 @@ ms.topic: article
 ms.assetid: bb256644-2149-4106-af3c-e62d25afb5c2
 ---
 # How to view infrastructure servers in VMM
-Use the following procedures to view a list of infrastructure servers in Virtual Machine Manager (VMM) and to view the properties of those servers.
+Use the following procedures to view a list of infrastructure servers in Virtual Machine Manager \(VMM\) and to view the properties of those servers.
 
 ### To view a list of infrastructure servers
 

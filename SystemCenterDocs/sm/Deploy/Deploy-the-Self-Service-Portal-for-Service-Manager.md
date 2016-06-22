@@ -11,7 +11,7 @@ ms.topic: article
 ms.assetid: 18833e51-8624-463a-a2d7-cd3be75f2efb
 ---
 # Deploy the Self-Service Portal for Service Manager
-The Self-Service Portal provides web-based access to the features of System Center 2016 Technical Preview - Service Manager. This section describes how you can deploy the Self-Service Portal, and customize it.
+The Self\-Service Portal provides web\-based access to the features of System Center 2016 Technical Preview \- Service Manager. This section describes how you can deploy the Self\-Service Portal, and customize it.
 
 ## Supported Web Browsers
 The Self Service portal needs a screen resolution above 1024 X 768.    It is supported on the following browsers.
@@ -48,7 +48,7 @@ Select a Windows 2012 R2 server. Join the server machine to the same domain wher
 
         ![](../../media/sm-sspdeploy2c.png)
 
-3.  Enable the following role services on the Web Server Role (IIS) page.
+3.  Enable the following role services on the Web Server Role \(IIS\) page.
 
     1.  **Basic Authentication** and **Windows Authentication**
 
@@ -79,11 +79,11 @@ Use the following steps to install the Self Service Portal WebApp using Setup.
 
     -   **WebSite Name** :   The name of the website to display in the IIS Management console.
 
-    -   **SM Server name**:  You can provide a fully-qualified domain name or the NetBIOS name of the server running the Service Manager SDK service. We recommend that you use a dedicated secondary Service Manager management server to communicate with the portal.
+    -   **SM Server name**:  You can provide a fully\-qualified domain name or the NetBIOS name of the server running the Service Manager SDK service. We recommend that you use a dedicated secondary Service Manager management server to communicate with the portal.
 
     -   **Portal Port**: The port number that the  website will use.
 
-    -   **SSL Certificate:** (Optional) The SSL certificate to configure the website in secure mode (https://). This is the recommended setting if you are using Basic Authentication. The default is Windows  Authentication.
+    -   **SSL Certificate:** \(Optional\) The SSL certificate to configure the website in secure mode \(https:\/\/\). This is the recommended setting if you are using Basic Authentication. The default is Windows  Authentication.
 
     ![](../../media/sm-ssp09.png)
 
@@ -113,7 +113,7 @@ SetupWizard.exe /Install:SelfServicePortal /silent /accepteula /CustomerExperien
 ### Complete the Installation
 Use the following step to complete your installation.
 
--   Restart IIS. You can access the Web App (http://yourwebsite:port)  in your browser. It will resemble the following image.
+-   Restart IIS. You can access the Web App \(http:\/\/yourwebsite:port\)  in your browser. It will resemble the following image.
 
     ![](../../media/sm-sspdeploy-complete.png)
 
@@ -129,11 +129,11 @@ The <appSettings> tab in the Web.config file offers some standard settings to ea
 |CompanyLogoLocation|The value of this key is used as the image file, which is displayed as the company’s logo inside the portal.|
 |ITPhone|This key takes the value to configure the IT help desk’s phone number. This information appears at the bottom of the navigation menu.|
 |ITEmail|The value of this key is used configure the IT help desk’s email ID. This information appears at the bottom of the navigation menu.|
-|DefaultLanguage|By default, the Portal web pages are loaded as defined by the browser’s language. Then current user can manually select the language in the top-right corner of each page.<br />The value of this key defines the default failover language which is chosen by the portal, when the browser’s language is not available.|
+|DefaultLanguage|By default, the Portal web pages are loaded as defined by the browser’s language. Then current user can manually select the language in the top\-right corner of each page.<br />The value of this key defines the default failover language which is chosen by the portal, when the browser’s language is not available.|
 |GenericOffering|The value of this key accepts the name of the request offering which is mapped to the generic request button. This generic request button is used by the user, when they can’t find an appropriate request offering in the catalog.|
 |SDKServerName|The value of this key defines the name of the server where the Service Manager SDK runs and it is used to interact with other Service Manager servers. By default, it has the same value that you provided in Setup.<br />You can use the fully qualified domain name or the NetBIOS name of the server running the Service Manger SDK service. We recommend that you dedicate a secondary Service Manager management server to communicate with the portal.|
 |MaxQueryResults|The value of this key defines the maximum number of results that are returned by any query form element inside your request offering forms.|
-|UserCacheTimeout|The Portal uses a caching infrastructure to provide a swift user experience. The value of this key defines the timeout, in seconds, to cache user-specific details of the signed-in user.|
+|UserCacheTimeout|The Portal uses a caching infrastructure to provide a swift user experience. The value of this key defines the timeout, in seconds, to cache user\-specific details of the signed\-in user.|
 |DataCacheTimeout|The Portal uses a caching infrastructure to provide a swift user experience. The value of this key defines the timeout, in seconds, to cache generic data which can be shared among different users.|
 |EnableTelemetry|The value of this key defines your selection about participating in Microsoft’s Customer Experience Improvement Program. Your portal sends usage telemetry data to Microsoft when this key is marked as “True”. By default, it has the same value that you chose during Setup.|
 
@@ -141,12 +141,12 @@ The <appSettings> tab in the Web.config file offers some standard settings to ea
 > You must restart the IIS service after you make any changes to the Web.config file.
 
 ### Style Customization
-Web page style, such as font, color, and background, is customized by adding the Custom.css file in the \Content\css website folder.
+Web page style, such as font, color, and background, is customized by adding the Custom.css file in the \\Content\\css website folder.
 
 Styles defined in the CSS file overrides the default styles of the Self Service Portal..
 
 ### Customizing the left menu bar
-You can modify the content shown in the left navigation bar (menu) by editing the Sidebar.cshtml file which is in the \Views\Shared inside the website folder.
+You can modify the content shown in the left navigation bar \(menu\) by editing the Sidebar.cshtml file which is in the \\Views\\Shared inside the website folder.
 
 For example:
 

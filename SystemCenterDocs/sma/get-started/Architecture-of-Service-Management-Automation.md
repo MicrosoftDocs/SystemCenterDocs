@@ -17,7 +17,7 @@ The following diagram illustrates each of the Service Management Automation feat
 
 -   The Service Management Automation web service communicates with Windows Azure Pack and authenticates users.
 
--   The SQL Server databases store and retrieve runbooks, runbook assets, activities, integration modules, and runbook job information.
+-   The SQL Server databases store and retrieve runbooks, runbook assets, activities, integration modules, and runbook job information.
 
 -   Runbook workers run the runbooks, and they can be used for load balancing.
 

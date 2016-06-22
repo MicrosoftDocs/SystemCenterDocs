@@ -20,27 +20,27 @@ You can deploy DPM to back up client computers.   Depending on the client operat
 
 -   Review the [release notes](http://technet.microsoft.com/en-us/library/jj860394.aspx) and read about any client protection issues in [What's supported and what isn't for DPM?](../get-started/What-s-supported-and-what-isn-t-for-DPM-.md)
 
--   Make sure that client machines you want to back up  are in the DPM server domain, or in a domain with a two-way trust relationship with the DPM domain.
+-   Make sure that client machines you want to back up  are in the DPM server domain, or in a domain with a two\-way trust relationship with the DPM domain.
 
 -   To set up client machines for protection you install the DPM protection agent on them. If Windows Firewall is configured on the client computer, the agent installation will set up the firewall exceptions it needs. If you need to reset the firewall, you can reconfigure it by running SetDpmServer.exe.  If you are using a firewall other than Windows Firewall, you'll need to open the necessary ports. Learn more in [Deploy the DPM protection agent](Deploy-the-DPM-protection-agent.md).
 
--   DPM  can back up client computers that are physically or wirelessly connected to the local area network (LAN)or back up over VPN. For VPN backup the ICMP should be enabled on the client computer.
+-   DPM  can back up client computers that are physically or wirelessly connected to the local area network \(LAN\)or back up over VPN. For VPN backup the ICMP should be enabled on the client computer.
 
--   Each DPM server can protect up to 3000 client computers
+-   Each DPM server can protect up to 3000 client computers
 
 -   You can tweak the performance of client data backup as follows:
 
-    -   If client data backup is slow you can set this key to a lower value:  HKLM\Software\Microsoft\Microsoft Data Protection Manager\Agent\ClientProtection\WaitInMSPerRequestForClientRead to a lower value.
+    -   If client data backup is slow you can set this key to a lower value:  HKLM\\Software\\Microsoft\\Microsoft Data Protection Manager\\Agent\\ClientProtection\\WaitInMSPerRequestForClientRead to a lower value.
 
     -   To scale up client performance you can tweak these registry keys:
 
-        -   Software\Microsoft\Microsoft Data Protection Manager\Configuration\DPMTaskController\MaxRunningTasksThreshold. Value: 9037ebb9-5c1b-4ab8-a446-052b13485f57
+        -   Software\\Microsoft\\Microsoft Data Protection Manager\\Configuration\\DPMTaskController\\MaxRunningTasksThreshold. Value: 9037ebb9\-5c1b\-4ab8\-a446\-052b13485f57
 
-        -   Software\Microsoft\Microsoft Data Protection Manager\Configuration\DPMTaskController\MaxRunningTasksThreshold. Value: 3d859d8c-d0bb-4142-8696-c0d215203e0d
+        -   Software\\Microsoft\\Microsoft Data Protection Manager\\Configuration\\DPMTaskController\\MaxRunningTasksThreshold. Value: 3d859d8c\-d0bb\-4142\-8696\-c0d215203e0d
 
-        -   Software\Microsoft\Microsoft Data Protection Manager\Configuration\DPMTaskController\MaxRunningTasksThreshold. Value: c4cae2f7-f068-4a37-914e-9f02991868da
+        -   Software\\Microsoft\\Microsoft Data Protection Manager\\Configuration\\DPMTaskController\\MaxRunningTasksThreshold. Value: c4cae2f7\-f068\-4a37\-914e\-9f02991868da
 
-        -   HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Microsoft Data Protection Manager\Collocation\Client. Value: DSCollocationFactor
+        -   HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Microsoft\\Microsoft Data Protection Manager\\Collocation\\Client. Value: DSCollocationFactor
 
 ## Before you start
 
@@ -74,15 +74,15 @@ You can deploy DPM to back up client computers.   Depending on the client operat
 
     -   Comp3.abc.domain.com
 
-    Note that if DPM can't find the text file or any of the computers it will add them to the log file. Click **Failed to add machines**to open the log file. To add new client computers to an existing protection group you right-click the group name and select **Add client computers**.
+    Note that if DPM can't find the text file or any of the computers it will add them to the log file. Click **Failed to add machines**to open the log file. To add new client computers to an existing protection group you right\-click the group name and select **Add client computers**.
 
-    -   On the **Specify Inclusions and Exclusions** page, specify the folders to include or exclude for protection on the selected computers. To select from a list of well-known folders, such as **Documents**, click the drop-down list. Note that:
+    -   On the **Specify Inclusions and Exclusions** page, specify the folders to include or exclude for protection on the selected computers. To select from a list of well\-known folders, such as **Documents**, click the drop\-down list. Note that:
 
         -   When you exclude a folder, and then specify a separate inclusion rule for a subfolder, DPM doesn’t back up the subfolder. The exclusion rule overrides the inclusion rule.
 
         -   When you include a folder, and then specify a separate exclude rule for a subfolder, DPM backs up the entire folder, except for the excluded subfolder.
 
-        -   When you include a well-known folder such as **Documents**, DPM locates the **Documents** folder for all users on the computer, and then applies the rule. For example, if the user profile for computer **Comp1** contains the **Documents** folder for both User1 and User2, DPM will back up both folders.
+        -   When you include a well\-known folder such as **Documents**, DPM locates the **Documents** folder for all users on the computer, and then applies the rule. For example, if the user profile for computer **Comp1** contains the **Documents** folder for both User1 and User2, DPM will back up both folders.
 
         -   In the **Folder** column you type the folder names using variables such as *programfiles*, or you can use the exact folder name. Select **Include** or **Exclude** for each entry in the **Rule** column.
 
@@ -90,65 +90,65 @@ You can deploy DPM to back up client computers.   Depending on the client operat
 
         -   Under **File type exclusions** you can specify the file types to exclude using their file extensions.
 
-4.  In **Select data protection method**  specify how you want to handle short and long-term backup. Short-term back up is always to disk first, with the option of backing up from the disk to the Azure cloud with Azure backup (for short or long-term). As an alternative to long-term backup to the cloud you can also configure long-term back up to a standalone tape device or tape library connected to the DPM server.
+4.  In **Select data protection method**  specify how you want to handle short and long\-term backup. Short\-term back up is always to disk first, with the option of backing up from the disk to the Azure cloud with Azure backup \(for short or long\-term\). As an alternative to long\-term backup to the cloud you can also configure long\-term back up to a standalone tape device or tape library connected to the DPM server.
 
-5.  In **Select short-term goals** specify how you want to back up to short-term storage on disk.   In Retention range you specify how long you want to keep the data on disk. In **Synchronization frequency** you specify how often you want to run an incremental backup to disk. If you don't want to set a back up interval you can check Just before  a recovery point so that DPM will run an express full backup just before each recovery point is scheduled.
+5.  In **Select short\-term goals** specify how you want to back up to short\-term storage on disk.   In Retention range you specify how long you want to keep the data on disk. In **Synchronization frequency** you specify how often you want to run an incremental backup to disk. If you don't want to set a back up interval you can check Just before  a recovery point so that DPM will run an express full backup just before each recovery point is scheduled.
 
-6.  If you want to store data on tape for long-term storage in **Specify long-term goals** indicate how long you want to keep tape data (1-99 years). In Frequency of backup specify how often backups to tape should run. The frequency is based on the retention range you've specified:
+6.  If you want to store data on tape for long\-term storage in **Specify long\-term goals** indicate how long you want to keep tape data \(1\-99 years\). In Frequency of backup specify how often backups to tape should run. The frequency is based on the retention range you've specified:
 
-    -   When the retention range is 1–99 years, you can select backups to occur daily, weekly, bi-weekly, monthly, quarterly, half-yearly, or yearly.
+    -   When the retention range is 1–99 years, you can select backups to occur daily, weekly, bi\-weekly, monthly, quarterly, half\-yearly, or yearly.
 
-    -   When the retention range is 1–11 months, you can select backups to occur daily, weekly, bi-weekly, or monthly.
+    -   When the retention range is 1–11 months, you can select backups to occur daily, weekly, bi\-weekly, or monthly.
 
     -   When the retention range is 1–4 weeks, you can select backups to occur daily or weekly.
 
-    On a stand-alone tape drive, for a single protection group, DPM uses the same tape for daily backups until there is insufficient space on the tape. You can also colocate data from different protection groups on tape.
+    On a stand\-alone tape drive, for a single protection group, DPM uses the same tape for daily backups until there is insufficient space on the tape. You can also colocate data from different protection groups on tape.
 
-    On the **Select Tape and Library Details** page specify the tape/library to use, and whether data should be compressed and encrypted on tape.
+    On the **Select Tape and Library Details** page specify the tape\/library to use, and whether data should be compressed and encrypted on tape.
 
-7.  In **Review disk allocation** page review the storage pool disk space allocated for the protection group. **Data size** shows the size of the data you want to back up, and **Disk space** shows the space that DPM recommends for the protection group. We recommend that you select **Colocate data** to back up multiple client data sources to one replica volume if you have a large number of client computers. You won’t be able to protect 1000 or more client computers with one DPM server without co-locating your data. We recommend that you do not co-locate if you have less than ten client computers in a protection group. Select **Automatically grow the volumes** to automatically increase size when more disk space is required for protecting data on the client computers.
+7.  In **Review disk allocation** page review the storage pool disk space allocated for the protection group. **Data size** shows the size of the data you want to back up, and **Disk space** shows the space that DPM recommends for the protection group. We recommend that you select **Colocate data** to back up multiple client data sources to one replica volume if you have a large number of client computers. You won’t be able to protect 1000 or more client computers with one DPM server without co\-locating your data. We recommend that you do not co\-locate if you have less than ten client computers in a protection group. Select **Automatically grow the volumes** to automatically increase size when more disk space is required for protecting data on the client computers.
 
-8.  In **Choose replica creation method** select how you want to handle the initial full data replication.  If you select to replicate over the network we recommended you choose an off-peak time. For large amounts of data or less than optimal network conditions, consider replicating the data offline using removable media.
+8.  In **Choose replica creation method** select how you want to handle the initial full data replication.  If you select to replicate over the network we recommended you choose an off\-peak time. For large amounts of data or less than optimal network conditions, consider replicating the data offline using removable media.
 
-9. In **Choose consistency check options**, select how you want to automate consistency checks. You can enable a check to run only when replica data becomes inconsistent, or according to a schedule. If you don’t want to configure automatic consistency checking, you can run a manual check at any time by right-clicking the protection group in the **Protection** area of the DPM console, and selecting **Perform Consistency Check**.
+9. In **Choose consistency check options**, select how you want to automate consistency checks. You can enable a check to run only when replica data becomes inconsistent, or according to a schedule. If you don’t want to configure automatic consistency checking, you can run a manual check at any time by right\-clicking the protection group in the **Protection** area of the DPM console, and selecting **Perform Consistency Check**.
 
 10. If you've selected to back up to the cloud with Azure Backup, on the **Specify online protection data** page make sure the workloads you want to back up to Azure are selected.
 
-11. In **Specify online backup schedule** specify how often incremental backups to Azure should occur. You can schedule backups to run every day/week/month/year and the time/date at which they should run. Backups can occur up to twice a day. Each time a back up runs a data recovery point is created in Azure from the copy of the backed up data stored on the DPM disk.
+11. In **Specify online backup schedule** specify how often incremental backups to Azure should occur. You can schedule backups to run every day\/week\/month\/year and the time\/date at which they should run. Backups can occur up to twice a day. Each time a back up runs a data recovery point is created in Azure from the copy of the backed up data stored on the DPM disk.
 
-12. In **Specify online retention policy** you can specify how the recovery points created from the daily/weekly/monthly/yearly backups are retained in Azure.
+12. In **Specify online retention policy** you can specify how the recovery points created from the daily\/weekly\/monthly\/yearly backups are retained in Azure.
 
-13. In **Choose online replication** specify how the initial full replication of data will occur. You can replicate over the network, or do an offline backup (offline seeding). Offline backup uses the Azure Import feature. [Read more](https://azure.microsoft.com/en-in/documentation/articles/backup-azure-backup-import-export/).
+13. In **Choose online replication** specify how the initial full replication of data will occur. You can replicate over the network, or do an offline backup \(offline seeding\). Offline backup uses the Azure Import feature. [Read more](https://azure.microsoft.com/en-in/documentation/articles/backup-azure-backup-import-export/).
 
 14. On the  **Summary** page review your settings. After you click **Create Group** initial replication of the data occurs. When it finishes the protection group status will show as **OK** on the **Status** page. Backup then takes place in line with the protection group settings.
 
 ## Recover client data
-You can recover client computer data using the Recovery Wizard. You can also set up end-user recovery so that  users can recover their own data.
+You can recover client computer data using the Recovery Wizard. You can also set up end\-user recovery so that  users can recover their own data.
 
 ### Allow clients to recover their own data
-End-user recovery enables users to independently recover file data by retrieving recovery points of their files. Note that:
+End\-user recovery enables users to independently recover file data by retrieving recovery points of their files. Note that:
 
 -   Users can only recover data stored on disk.
 
--   You'll need to modify the Active Directory schema to enable end-user recovery. DPM extends the schema, creates a container (MS-ShareMapConfiguration), grants the DPM server permissions to change the container contents, and adds mappings between source and replica shares. [View](https://technet.microsoft.com/en-us/library/hh758112.aspx) a detailed list of classes and attributes added to AD by DPM.
+-   You'll need to modify the Active Directory schema to enable end\-user recovery. DPM extends the schema, creates a container \(MS\-ShareMapConfiguration\), grants the DPM server permissions to change the container contents, and adds mappings between source and replica shares. [View](https://technet.microsoft.com/en-us/library/hh758112.aspx) a detailed list of classes and attributes added to AD by DPM.
 
--   If you enable end-user recovery you can’t specify on which file servers end-user recovery is enabled.
+-   If you enable end\-user recovery you can’t specify on which file servers end\-user recovery is enabled.
 
--   You can’t control which Active Directory users or groups can perform end-user recovery.
+-   You can’t control which Active Directory users or groups can perform end\-user recovery.
 
-To configure end-user recovery here's what you'll need to do:
+To configure end\-user recovery here's what you'll need to do:
 
-1.  Configure Active Directory to support end-user recovery:
+1.  Configure Active Directory to support end\-user recovery:
 
-    1.  In the DPM console click **Options** > **End-user Recovery** > **Configure Active Directory**.
+    1.  In the DPM console click **Options** > **End\-user Recovery** > **Configure Active Directory**.
 
     2.  In  **Configure Active Directory** select **Use current credentials** or type in a user name and password with schema and domain admin permissions. Confirm your settings.
 
-    3.  If you don't have an account that has schedule and domain admin permissions you can ask another user with those permissions to run <drive:>\Program Files\Microsoft Data Protection Manager\DPM\End User Recovery\DPMADSchemaExtension.exe on a computer in the same domain as the DPM server.   When the app runs the user should specify the name of the computer on which you want to enable end-user recovery and the DNS domain name of the DPM server.
+    3.  If you don't have an account that has schedule and domain admin permissions you can ask another user with those permissions to run <drive:>\\Program Files\\Microsoft Data Protection Manager\\DPM\\End User Recovery\\DPMADSchemaExtension.exe on a computer in the same domain as the DPM server.   When the app runs the user should specify the name of the computer on which you want to enable end\-user recovery and the DNS domain name of the DPM server.
 
         Note that if the protected computer and DPM reside in different domains, the schema needs to be extended by running the DPMADSchemaExtension.exe tool on the other domain.
 
-2.  After AD settings are complete in the **End-user Recovery** tab click **Enable end-user recovery**.
+2.  After AD settings are complete in the **End\-user Recovery** tab click **Enable end\-user recovery**.
 
 ### Recover data
 Recover data from the DPM console as follows:
@@ -177,11 +177,11 @@ Recover data from the DPM console as follows:
 
     3.  **Network bandwidth usage throttling**. Click **Modify** to enable network bandwidth usage throttling.
 
-    4.  **Enable SAN based recovery using hardware snapshots**. Select this option to use SAN-based hardware snapshots for quicker recovery.
+    4.  **Enable SAN based recovery using hardware snapshots**. Select this option to use SAN\-based hardware snapshots for quicker recovery.
 
         This option is valid only when you have a SAN where hardware snapshot functionality is enabled, the SAN has the capability to create a clone and to split a clone to make it writable, and the protected computer and the DPM server are connected to the same SAN.
 
-    5.  **Notification**. Click **Send an e-mail when the recovery completes**, and specify the recipients who will receive the notification. Separate the e-mail addresses with commas.
+    5.  **Notification**. Click **Send an e\-mail when the recovery completes**, and specify the recipients who will receive the notification. Separate the e\-mail addresses with commas.
 
 7.  Click **Next** after you have made your selections for the preceding options.
 
@@ -189,7 +189,7 @@ Recover data from the DPM console as follows:
 
 End users should recover data as follows:
 
-1.  Navigate to the protected data file. Right-click the file name > **Properties**.
+1.  Navigate to the protected data file. Right\-click the file name > **Properties**.
 
 2.  In **Properties** > **Previous Versions** select the version that you want to recover from.
 
