@@ -1,1 +1,0 @@
-<Token xmlns:xlink="http://www.w3.org/1999/xlink">Microsoft, Active Directory, Azure, Internet Explorer, Hyper-V, Silverlight, SQL Server, Windows, and Windows PowerShell are trademarks of the Microsoft group of companies. All other trademarks are property of their respective owners.</Token>

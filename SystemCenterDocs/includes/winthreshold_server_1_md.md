@@ -1,1 +1,0 @@
-Windows Server® Technical Preview

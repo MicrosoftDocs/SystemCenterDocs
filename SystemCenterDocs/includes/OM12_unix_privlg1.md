@@ -1,1 +1,0 @@
-<Token xmlns:xlink="http://www.w3.org/1999/xlink">The terms privileged and unprivileged refer to the following security concepts for a UNIX or Linux computer:</Token>

@@ -1,1 +1,0 @@
-Microsoft System Center Configuration Manager 2007

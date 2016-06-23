@@ -1,1 +1,0 @@
-<Token xmlns:xlink="http://www.w3.org/1999/xlink">An unprivileged account is a normal user account that does not have root-level access or special permissions. However, an unprivileged account allows monitoring of system processes and of performance data.</Token>

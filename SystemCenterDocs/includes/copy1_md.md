@@ -1,1 +1,0 @@
-This document is provided "as-is". Information and views expressed in this document, including URL and other Internet website references, may change without notice.
