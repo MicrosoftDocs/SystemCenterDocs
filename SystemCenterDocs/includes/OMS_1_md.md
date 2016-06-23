@@ -1,1 +1,0 @@
-Microsoft Operations Management Suite

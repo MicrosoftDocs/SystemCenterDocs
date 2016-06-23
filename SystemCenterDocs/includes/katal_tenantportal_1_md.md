@@ -1,1 +1,0 @@
-management portal for tenants

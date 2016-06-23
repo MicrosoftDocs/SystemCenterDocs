@@ -1,1 +1,0 @@
-For System Center 2012 SP1 only:

@@ -1,1 +1,0 @@
-<Token xmlns:xlink="http://www.w3.org/1999/xlink">System Center Operations Manager 2007 R2</Token>
