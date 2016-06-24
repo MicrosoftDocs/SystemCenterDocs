@@ -11,14 +11,14 @@ ms.topic: article
 ms.assetid: 7c72117a-8742-4a68-90d1-00c6d9dcd012
 ---
 # How to Install Orchestrator on a Single Computer
-Use the following steps to install all [!INCLUDE[orchlong](Token/orchlong_md.md)] features on a single computer.
+Use the following steps to install all Orchestrator features on a single computer.
 
-### To install [!INCLUDE[orchshort](Token/orchshort_md.md)] on a single computer
+### To install Orchestrator on a single computer
 
-1.  To start the [!INCLUDE[orchlong](Token/orchlong_md.md)] Setup Wizard on the server where you want to install [!INCLUDE[orchshort](Token/orchshort_md.md)], double\-click **SetupOrchestrator.exe**.
+1.  To start the Orechestrator Setup Wizard on the server where you want to install Orechestator, double\-click **SetupOrchestrator.exe**.
 
     > [!IMPORTANT]
-    > Before you begin setup, close any open programs and ensure that there are no pending restarts on the computer. For example, if you have installed a server role by using [!INCLUDE[smshort](Token/smshort_md.md)] or have applied a security update, you might have to restart the computer, and then log on to the computer with the same user account to finish the installation of the server role or the security update.
+    > Before you begin setup, close any open programs and ensure that there are no pending restarts on the computer. For example, if you have installed a server role by using Orchestator or have applied a security update, you might have to restart the computer, and then log on to the computer with the same user account to finish the installation of the server role or the security update.
 
     > [!NOTE]
     > If User Account Control is enabled, then you will be prompted to verify that you want to allow the setup program to run. This is because it requires administrative access to make changes to the system.
@@ -54,28 +54,28 @@ Use the following steps to install all [!INCLUDE[orchlong](Token/orchlong_md.md)
 
     2.  After you resolve the missing prerequisites, click **Verify prerequisites again**.
 
-7.  On the **Configure the service account** page, enter the user name and password for the [!INCLUDE[orchshort](Token/orchshort_md.md)] Management Service account. Click **Test** to verify the account credentials. If the credentials are accepted, click **Next**.
+7.  On the **Configure the service account** page, enter the user name and password for the Orchestrator Management Service account. Click **Test** to verify the account credentials. If the credentials are accepted, click **Next**.
 
     > [!IMPORTANT]
-    > The [!INCLUDE[orchshort](Token/orchshort_md.md)] Management Service account must be created before this step. For more information about the [!INCLUDE[orchshort](Token/orchshort_md.md)] Management Service account, see [Orchestrator Management Service account](assetId:///82621881-a044-45e8-a8b6-9b9b24eb978f#BKMK_OrchestratorManagementServiceaccount) in [Orchestrator Security Planning](assetId:///358c5344-8649-4d40-a53c-37f8e70e58f6).
+    > The Orchestrator Management Service account must be created before this step. For more information about the Orchestrator Management Service account, see [Orchestrator Management Service account](assetId:///82621881-a044-45e8-a8b6-9b9b24eb978f#BKMK_OrchestratorManagementServiceaccount) in [Orchestrator Security Planning](assetId:///358c5344-8649-4d40-a53c-37f8e70e58f6).
 
-8.  On the **Configure the database server** page, enter the name of the server and the name of the instance and port number of the Microsoft SQL Server that you want to use for [!INCLUDE[orchshort](Token/orchshort_md.md)]. You can also specify whether to use Windows Authentication or SQL Server Authentication, and whether to create a new database or use an existing database.
+8.  On the **Configure the database server** page, enter the name of the server and the name of the instance and port number of the Microsoft SQL Server that you want to use for Orchestrator. You can also specify whether to use Windows Authentication or SQL Server Authentication, and whether to create a new database or use an existing database.
 
 9. Click **Test Database Connection** to verify the account credentials. If the credentials are accepted, click **Next**.
 
 10. On the **Configure the database** page, select an existing database or specify the name of a new database, and then click **Next**.
 
-11. On the **Configure Orchestrator management group** page, accept the default configuration or enter the name of the user group to manage [!INCLUDE[orchshort](Token/orchshort_md.md)] permissions, and then click **Next**.
+11. On the **Configure Orchestrator management group** page, accept the default configuration or enter the name of the user group to manage Orchestrator permissions, and then click **Next**.
 
     > [!NOTE]
-    > For more information about the [!INCLUDE[orchshort](Token/orchshort_md.md)] users group, see [Orchestrator Users Group](assetId:///cfb5afed-1928-4c1a-ac5b-52feff15a54a).
+    > For more information about the Orchestrator users group, see [Orchestrator Users Group](assetId:///cfb5afed-1928-4c1a-ac5b-52feff15a54a).
 
-12. On the **Configure the port for the web service** page, verify the port numbers for the [!INCLUDE[orchshort](Token/orchshort_md.md)] web service and the Orchestration console, and then click **Next**.
+12. On the **Configure the port for the web service** page, verify the port numbers for the Orchestrator web service and the Orchestration console, and then click **Next**.
 
     > [!NOTE]
     > For more information about the TCP ports, see [TCP Port Requirements](assetId:///dc879c86-4855-4fd0-808d-06f64a9657ca).
 
-13. On the **Select the installation location** page, verify the installation location for [!INCLUDE[orchshort](Token/orchshort_md.md)], and then click **Next**.
+13. On the **Select the installation location** page, verify the installation location for Orchestrator, and then click **Next**.
 
 14. On the **Microsoft Update** page, optionally indicate whether you want to use the Microsoft Update services to check for updates, and then click **Next**.
 
