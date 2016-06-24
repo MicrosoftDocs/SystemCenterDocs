@@ -34,7 +34,7 @@ The following topics provide information on creating and working with Automation
 
     Describes the different types of runbooks supported by Service Management Automation.
 
--   [Windows PowerShell Workflow Concepts](Runbook-Concepts.md)
+-   Windows PowerShell Workflow Concepts
 
     Describes the concepts of Windows PowerShell Workflows as they relate to runbooks.
 
