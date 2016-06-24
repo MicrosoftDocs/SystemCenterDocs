@@ -10,7 +10,7 @@
 ### [Console Compatibility for System Center Technical Preview](system-requirements/Console-Compatibility-for-System-Center-Technical-Preview.md)
 ### [PowerShell Version Support](system-requirements/PowerShell-Version-Support.md)
 ### [System Center Agents](system-requirements/System-Center-Agents.md)
-### [.Net Version Support](system-requirements/.Net-Version-Support.md)
+### [.Net Version Support](system-requirements/Dot-Net-Version-Support.md)
 ## [Data Protection Manager](DPM/Data-Protection-Manager.md)
 ### [How does DPM work?](dpm/get-started/How-does-DPM-work-.md)
 ### [What's new in DPM in System Center Technical Preview](dpm/get-started/What-s-new-in-DPM-in-System-Center-Technical-Preview.md)
