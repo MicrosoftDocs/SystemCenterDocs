@@ -41,7 +41,7 @@ Use the following steps to install all Orchestrator features on a single compute
     > You can choose to remove individual features. The management server is mandatory and is selected by default. The check boxes for the other features can be cleared as required.
 
     > [!TIP]
-    > If you want to install only an individual feature after installing a management server, use the information in [Install Individual Orchestrator Features](Install-Individual-Orchestrator-Features.md).
+    > If you want to install only an individual feature after installing a management server, use the information in [Install Individual Orchestrator Features](How-to-Install-Orchestrator-Features.md).
 
 6.  Your computer is checked for required hardware and software. If your computer meets all of the requirements, the **All prerequisites are installed** page appears. Click **Next** and proceed to the next step.
 
