@@ -8,7 +8,7 @@ ms.topic: article
 ms.assetid: f1ed9144-fcac-401b-bee8-179a12e76fac
 ---
 # How to create and remove update exemptions for resources in VMM
-The procedures in this topic explain how to create an update exemption that prevents an update from being installed on a server managed by Virtual Machine Manager \(VMM\), and how to remove the exemption so that the update can be installed in the next update remediation.
+The procedures in this topic explain how to create an update exemption that prevents an update from being installed on a server managed by Virtual Machine Manager (VMM), and how to remove the exemption so that the update can be installed in the next update remediation.
 
 When an administrator creates an update exemption for a managed computer, the computer remains accountable to an assigned baseline while it is exempted from a particular update in the baseline.
 
@@ -34,7 +34,7 @@ Because the update was removed out of band, the computer's update status in VMM 
 
 6.  Select the update or updates to include in the exemption and then click **Create** to open the **Create Exemption** dialog box.
 
-7.  In **Notes**, enter information about the reason, intended duration of the exemption, contact person, and so forth. For example, you might enter the following notes: "Exempt through 03\/15\/2015 to resolve issues with MyService.exe interactions."
+7.  In **Notes**, enter information about the reason, intended duration of the exemption, contact person, and so forth. For example, you might enter the following notes: "Exempt through 03/15/2015 to resolve issues with MyService.exe interactions."
 
 8.  Click **Create**.
 

@@ -8,7 +8,7 @@ ms.topic: article
 ms.assetid: a0bdcd69-546e-435a-a2b6-8a85a8c5fb64
 ---
 # How to run a quick storage migration in VMM
-Use the following procedure to run a *quick storage migration* in Virtual Machine Manager \(VMM\). Quick storage migration enables you to move the files of a virtual machine from one storage location to another on the same virtual machine host. If the virtual machine is running, you can perform a quick storage migration, which results in little or no service outage for users of the virtual machine. If the virtual machine has more than one virtual hard disk, you can specify a separate location for each virtual hard disk \(.vhd or .vhdx\) file.
+Use the following procedure to run a *quick storage migration* in Virtual Machine Manager (VMM). Quick storage migration enables you to move the files of a virtual machine from one storage location to another on the same virtual machine host. If the virtual machine is running, you can perform a quick storage migration, which results in little or no service outage for users of the virtual machine. If the virtual machine has more than one virtual hard disk, you can specify a separate location for each virtual hard disk (.vhd or .vhdx) file.
 
 Use the following procedure to run a quick storage migration.
 
@@ -16,9 +16,9 @@ Use the following procedure to run a quick storage migration.
 
 1.  In the VMM console, open the **VM’s and Services** workspace. In the **VM’s and Services** pane, expand **All Hosts**, and then select the host on which the virtual machine is deployed.
 
-2.  In the **VM’s** pane, right\-click the virtual machine, and then click **Migrate Storage**.
+2.  In the **VM’s** pane, right-click the virtual machine, and then click **Migrate Storage**.
 
-    The Migrate Storage Wizard opens at the **Select Path** page. It displays the current locations of the virtual machine’s files. The current path to the location of the configuration files is displayed in the **Storage location for VM configuration** box, and the current path to the location of each virtual hard disk \(.vhd\) is displayed in the **Disks** list.
+    The Migrate Storage Wizard opens at the **Select Path** page. It displays the current locations of the virtual machine’s files. The current path to the location of the configuration files is displayed in the **Storage location for VM configuration** box, and the current path to the location of each virtual hard disk (.vhd) is displayed in the **Disks** list.
 
 3.  On the **Select Path** page, do the following:
 

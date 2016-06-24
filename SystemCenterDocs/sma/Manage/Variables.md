@@ -31,26 +31,26 @@ When a variable is created, you must specify its data type from the following li
 
 -   Datetime
 
-When a variable is created, you can specify that it be stored encrypted.  When a variable is encrypted, it is stored securely in the SMA database, and its value cannot be retrieved from the **Get\-SmaVariable** cmdlet.  The only way that an encrypted value can be retrieved is from the **Get\-AutomationVariable** activity in a runbook.  You can store multiple values of the defined type to a single variable by creating a hashtable.
+When a variable is created, you can specify that it be stored encrypted.  When a variable is encrypted, it is stored securely in the SMA database, and its value cannot be retrieved from the **Get-SmaVariable** cmdlet.  The only way that an encrypted value can be retrieved is from the **Get-AutomationVariable** activity in a runbook.  You can store multiple values of the defined type to a single variable by creating a hashtable.
 
 ## Windows PowerShell Cmdlets
 The cmdlets in the following table are used to create and manage variables with Windows PowerShell in Service Management Automation.
 
 |Cmdlets|Description|
 |-----------|---------------|
-|[Get\-SmaVariable](http://go.microsoft.com/fwlink/?LinkID=306458)|Retrieves the value of an existing variable.|
-|[Set\-SmaVariable](http://go.microsoft.com/fwlink/?LinkID=306477)|Creates a new variable or sets the value for an existing variable.|
+|[Get-SmaVariable](http://go.microsoft.com/fwlink/?LinkID=306458)|Retrieves the value of an existing variable.|
+|[Set-SmaVariable](http://go.microsoft.com/fwlink/?LinkID=306477)|Creates a new variable or sets the value for an existing variable.|
 
 ## Runbook Activities
 The activities in the following table are used to access variables in a runbook.
 
 |Activities|Description|
 |--------------|---------------|
-|Get\-AutomationVariable|Retrieves the value of an existing variable.|
-|Set\-AutomationVariable|Sets the value for an existing variable.|
+|Get-AutomationVariable|Retrieves the value of an existing variable.|
+|Set-AutomationVariable|Sets the value for an existing variable.|
 
 > [!NOTE]
-> You should avoid using variables in the –Name parameter of Get\-AutomationVariable since this can complicate discovering dependencies between runbooks and Automation variables.
+> You should avoid using variables in the –Name parameter of Get-AutomationVariable since this can complicate discovering dependencies between runbooks and Automation variables.
 
 ## Creating a New Automation variable
 
@@ -75,7 +75,7 @@ The activities in the following table are used to access variables in a runbook.
 9. Click the check mark to save the new variable.
 
 ### To create a new variable with Windows PowerShell in Service Management Automation
-The [Set\-SmaVariable](http://aka.ms/runbookauthor/cmdlet/setsmavariable) cmdlet both creates a new variable and sets the value for an existing variable.  The following sample commands show how to create a variable of type string.
+The [Set-SmaVariable](http://aka.ms/runbookauthor/cmdlet/setsmavariable) cmdlet both creates a new variable and sets the value for an existing variable.  The following sample commands show how to create a variable of type string.
 
 ```powershell
 $web = 'https://MySMAServer'
@@ -85,7 +85,7 @@ Set-SMAVariable –WebServiceEndpoint $web –Port $port –Name 'MyVariable' �
 ```
 
 ## Using a variable in a runbook
-Use the **Get\-AutomationVariable** activity to use a variable in a runbook.
+Use the **Get-AutomationVariable** activity to use a variable in a runbook.
 
 #### To use a variable in a runbook
 

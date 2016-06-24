@@ -11,7 +11,7 @@ ms.topic: article
 ms.assetid: d4acce38-b84d-42af-8a41-b9464126cbc9
 ---
 # How to Upgrade Reporting to System Center 2016 - Operations Manager
-Use this procedure to upgrade a stand\-alone Reporting server to System Center 2016 Technical Preview \- Operations Manager. You should not run upgrade on the Reporting server until after you have upgraded the management servers, gateways, Operation consoles, and agents.
+Use this procedure to upgrade a stand-alone Reporting server to System Center 2016 Technical Preview - Operations Manager. You should not run upgrade on the Reporting server until after you have upgraded the management servers, gateways, Operation consoles, and agents.
 
 Before you begin the upgrade process, make sure that your server meets the minimum supported configurations. For more information, see [System Requirements: System Center 2016 - Operations Manager](../../system-requirements/System-Requirements-for-System-Center-Technical-Preview.md).
 
@@ -23,7 +23,7 @@ Before you begin the upgrade process, make sure that your server meets the minim
 
 3.  On the **Getting Started**, **System Center 2016 Operations Manager Upgrade** page, review the features that will be upgraded. In this case, it is Operations Manager Reporting. Click **Next**.
 
-4.  On the **Select installation location** page, accept the default value of **C:\\Program Files\\ Microsoft System Center 2016\\Operations Manager**, or type in a new location or browse to one. Then click **Next**.
+4.  On the **Select installation location** page, accept the default value of **C:\Program Files\ Microsoft System Center 2016\Operations Manager**, or type in a new location or browse to one. Then click **Next**.
 
 5.  On the **Prerequisites** page, review and address any warnings or errors that the Prerequisites checker returns, and then click **Verify Prerequisites Again** to recheck the system.
 

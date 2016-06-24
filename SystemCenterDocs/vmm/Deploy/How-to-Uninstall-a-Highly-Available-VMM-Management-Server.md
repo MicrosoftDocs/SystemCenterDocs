@@ -11,7 +11,7 @@ ms.topic: article
 ms.assetid: d664710d-7e8e-4f83-a4b2-2979197aa099
 ---
 # How to Uninstall a Highly Available VMM Management Server
-You can use the following procedures to uninstall a highly available Virtual Machine Manager \(VMM\) management server. To uninstall high availability completely, you will need to uninstall highly available VMM management server from each node in the cluster.
+You can use the following procedures to uninstall a highly available Virtual Machine Manager (VMM) management server. To uninstall high availability completely, you will need to uninstall highly available VMM management server from each node in the cluster.
 
 Before uninstalling VMM, ensure that the VMM console and the VMM command shell are closed. If you are uninstalling an additional node of a highly available VMM management server, use Failover Cluster Manager to ensure that the node is not currently the owner of the highly available service. If the node is the current owner, move the service to another node in the cluster.
 
@@ -23,7 +23,7 @@ Membership in the local Administrators group, or equivalent, on the computer tha
 
 2.  Under **Programs**, click **Uninstall a program**.
 
-3.  Under **Name**, double\-click **Microsoft System Center 2012 Virtual Machine Manager**.
+3.  Under **Name**, double-click **Microsoft System Center 2012 Virtual Machine Manager**.
 
 4.  On the **What would you like to do?** page, click **Remove features**.
 
@@ -50,7 +50,7 @@ Membership in the local Administrators group, or equivalent, on the computer tha
 
 2.  Under **Programs**, click **Uninstall a program**.
 
-3.  Under **Name**, double\-click **Microsoft System Center 2012 Virtual Machine Manager**.
+3.  Under **Name**, double-click **Microsoft System Center 2012 Virtual Machine Manager**.
 
 4.  On the **What would you like to do?** page, click **Remove features**.
 
@@ -79,6 +79,6 @@ Membership in the local Administrators group, or equivalent, on the computer tha
 11. After the VMM management server is uninstalled, on the **The selected features were removed successfully** page, click **Close**.
 
 > [!NOTE]
-> If there is a problem with uninstallation completing successfully, consult the log files in the **%SYSTEMDRIVE%\\ProgramData\\VMMLogs** folder. **ProgramData** is a hidden folder.
+> If there is a problem with uninstallation completing successfully, consult the log files in the **%SYSTEMDRIVE%\ProgramData\VMMLogs** folder. **ProgramData** is a hidden folder.
 
 

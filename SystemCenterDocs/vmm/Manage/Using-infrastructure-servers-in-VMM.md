@@ -8,7 +8,7 @@ ms.topic: article
 ms.assetid: d62a59f5-1e2a-4c8e-ab4c-1f1e68c7ef7f
 ---
 # Using infrastructure servers in VMM
-You can add infrastructure servers to Virtual Machine Manager \(VMM\), that is, servers that support services such as Active Directory, DNS, DHCP, Operations Manager, Service Manager, and so on. In VMM, these servers are listed under the role of **Infrastructure**. Adding infrastructure servers can make it easier to keep them updated.
+You can add infrastructure servers to Virtual Machine Manager (VMM), that is, servers that support services such as Active Directory, DNS, DHCP, Operations Manager, Service Manager, and so on. In VMM, these servers are listed under the role of **Infrastructure**. Adding infrastructure servers can make it easier to keep them updated.
 
 > [!NOTE]
 > All infrastructure servers in VMM must run Windows Server 2012 R2 or Windows Server Technical Preview.

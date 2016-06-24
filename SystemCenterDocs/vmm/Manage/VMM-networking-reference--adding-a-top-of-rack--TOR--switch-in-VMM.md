@@ -11,14 +11,14 @@ ms.topic: article
 ms.assetid: 4b1a2528-00f0-4d42-b045-635f4ba888c1
 ---
 # VMM networking reference: adding a top-of-rack (TOR) switch in VMM
-With System Center 2016 Technical Preview, you can add a top\-of\-rack \(TOR\) switch as a resource in Virtual Machine Manager \(VMM\). This helps you keep the settings in the TOR switch synchronized with the settings that you see in VMM.
+With System Center 2016 Technical Preview, you can add a top-of-rack (TOR) switch as a resource in Virtual Machine Manager (VMM). This helps you keep the settings in the TOR switch synchronized with the settings that you see in VMM.
 
-To do this, you must first ensure that you have the necessary provider software on the VMM management server. If your switch is based on the Common Information Model \(CIM\) network switch profile, you can use the provider that is included in VMM in System Center 2016 Technical Preview. Otherwise, you must obtain the provider software that is provided by the switch vendor and install it on the VMM management server. Then you can add the TOR switch to VMM.
+To do this, you must first ensure that you have the necessary provider software on the VMM management server. If your switch is based on the Common Information Model (CIM) network switch profile, you can use the provider that is included in VMM in System Center 2016 Technical Preview. Otherwise, you must obtain the provider software that is provided by the switch vendor and install it on the VMM management server. Then you can add the TOR switch to VMM.
 
 ## Prerequisites
 If you want to add a TOR switch to your configuration in VMM, you must first perform the following actions:
 
-1.  Ensure that you have the necessary provider software on the VMM management server. If your switch is based on the Common Information Model \(CIM\) network switch profile, you can use the provider that is included in VMM in System Center 2016 Technical Preview. Otherwise, you must obtain the provider software that is provided by the switch vendor and install it on the VMM management server. After you install the provider software, restart the System Center Virtual Machine Manager service.
+1.  Ensure that you have the necessary provider software on the VMM management server. If your switch is based on the Common Information Model (CIM) network switch profile, you can use the provider that is included in VMM in System Center 2016 Technical Preview. Otherwise, you must obtain the provider software that is provided by the switch vendor and install it on the VMM management server. After you install the provider software, restart the System Center Virtual Machine Manager service.
 
     If you have installed a high availability VMM management server on a cluster, ensure that the provider is installed on all nodes of the cluster.
 
@@ -26,7 +26,7 @@ If you want to add a TOR switch to your configuration in VMM, you must first per
 
 2.  For your TOR switch, make sure that you know the manufacturer and model, the name of an account that has configuration permissions, the connection string, and the host groups to include. If certificates are used for the provider software, make sure you know how to view the thumbprint information for those certificates.
 
-#### To add a top\-of\-rack \(TOR\) switch in VMM
+#### To add a top-of-rack (TOR) switch in VMM
 
 1.  If you installed provider software as part of fulfilling the “Prerequisites” that are listed before this procedure, confirm that the provider is listed in VMM. To do this, open the **Settings** workspace, and in the **Settings** pane, click **Configuration Providers**. In the **Configuration Providers** pane, review the list of installed provider software.
 
@@ -58,7 +58,7 @@ If you want to add a TOR switch to your configuration in VMM, you must first per
 
     For example, you might enter the following connection string:
 
-    **https:\/\/TORswitch1.contoso.com:5986**
+    **https://TORswitch1.contoso.com:5986**
 
     > [!IMPORTANT]
     > If you are not using the provider software that is included in VMM, when you enter the connection string, use the syntax that is defined by the manufacturer of your TOR switch. For more information about the required syntax, refer to the manufacturer’s documentation.

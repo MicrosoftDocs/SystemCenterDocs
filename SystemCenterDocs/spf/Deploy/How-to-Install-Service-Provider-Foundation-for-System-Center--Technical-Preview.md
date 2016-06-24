@@ -11,9 +11,9 @@ ms.topic: get-started-article
 ms.assetid: ce22e119-71d2-4a0c-a9a0-99b886ce392f
 ---
 # How to Install Service Provider Foundation for System Center  Technical Preview
-You can install Service Provider Foundation on a single server or on multiple servers, with at least one server that has Microsoft SQL Server installed to contain the Service Provider Foundation database.
+You can install Service Provider Foundation on a single server or on multiple servers, with at least one server that has Microsoft SQL Server installed to contain the Service Provider Foundation database.
 
-A side\-by\-side installation of different Service Provider Foundation versions that are on the same server is not supported.
+A side-by-side installation of different Service Provider Foundation versions that are on the same server is not supported.
 
 The Setup wizard configures Service Provider Foundation along with the web services that you select for that computer. Installation of Service Provider Foundation onto a virtual machine is supported.
 
@@ -25,11 +25,11 @@ Before you install Service Provider Foundation, do the following:
 
 -   Close any open programs, and make sure that the computer does not have a restart pending.
 
-If there is a problem with the installation completing successfully, refer to the log files, named “Microsoft Service Provider\*.log”, in the %SYSTEMDRIVE%\\%TEMP%  folder.
+If there is a problem with the installation completing successfully, refer to the log files, named “Microsoft Service Provider*.log”, in the %SYSTEMDRIVE%\\%TEMP%  folder.
 
 ### To install Service Provider Foundation
 
-1.  On the server where you want to install Service Provider Foundation, double\-click **SetupOrchestrator.exe** on the installation media to start the System Center 2016 Technical Preview \- Orchestrator Setup Wizard.
+1.  On the server where you want to install Service Provider Foundation, double-click **SetupOrchestrator.exe** on the installation media to start the System Center 2016 Technical Preview - Orchestrator Setup Wizard.
 
     > [!NOTE]
     > We recommend that you run setup as Administrator. Doing so allows Customer Experience and Microsoft Update choices to be retained later in the setup.
@@ -44,18 +44,18 @@ If there is a problem with the installation completing successfully, refer to th
 
     When all of the prerequisites are met, click **Next**.
 
-6.  On the **Configure the database server** page, in the **server** text box, enter the name of the server that hosts SQL Server, or accept the default localhost. In **Port Number**, type the port number that accesses the database, or accept the default of 1433, and then click **Next**.
+6.  On the **Configure the database server** page, in the **server** text box, enter the name of the server that hosts SQL Server, or accept the default localhost. In **Port Number**, type the port number that accesses the database, or accept the default of 1433, and then click **Next**.
 
-7.  On the **Specify a location for the SPF files** page, accept or change the location for the web service files by using the **Change Folder** button. Optionally, change **Website name**. In the **Port Number** section, enter the Internet Information Services \(IIS\) port number that you want to use, or accept the default of 8090.
+7.  On the **Specify a location for the SPF files** page, accept or change the location for the web service files by using the **Change Folder** button. Optionally, change **Website name**. In the **Port Number** section, enter the Internet Information Services (IIS) port number that you want to use, or accept the default of 8090.
 
-    The **Server certificate** refers to a certificate to configure the site bindings for the Service Provider Foundation website in Internet Services Information \(IIS\) Manager. You can either generate a self\-signed certificate or use an existing certificate.
+    The **Server certificate** refers to a certificate to configure the site bindings for the Service Provider Foundation website in Internet Services Information (IIS) Manager. You can either generate a self-signed certificate or use an existing certificate.
 
     > [!IMPORTANT]
-    > We recommend that generated self\-signed certificates be used only for a testing purposes in a non\-production environment.
+    > We recommend that generated self-signed certificates be used only for a testing purposes in a non-production environment.
 
     Click **Next**.
 
-8.  On the **Configure the Admin web service** page, in the **Domain security groups or users** text box, type the domain and user name of each security group or user who will use this web service. Use the format **domain\\user name**, and use a semicolon to separate multiple entries, for example, **CONTOSO\\JohnDoe; CONTOSO\\TestGroup**.
+8.  On the **Configure the Admin web service** page, in the **Domain security groups or users** text box, type the domain and user name of each security group or user who will use this web service. Use the format **domain\user name**, and use a semicolon to separate multiple entries, for example, **CONTOSO\JohnDoe; CONTOSO\TestGroup**.
 
     For application pool credentials, select the type of account that you want to use:
 
@@ -67,7 +67,7 @@ If there is a problem with the installation completing successfully, refer to th
 
         We recommend that you do not use **Network Service** but instead use a **Service Account** using domain credentials.
 
-        If you select **Network Service**, the account must be a System Center 2016 Technical Preview \- Virtual Machine Manager administrator, or it must have enough permission to perform the Service Provider Foundation requests.
+        If you select **Network Service**, the account must be a System Center 2016 Technical Preview - Virtual Machine Manager administrator, or it must have enough permission to perform the Service Provider Foundation requests.
 
     Click **Next**.
 

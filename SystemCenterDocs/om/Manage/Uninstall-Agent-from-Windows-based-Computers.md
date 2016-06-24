@@ -11,7 +11,7 @@ ms.topic: article
 ms.assetid: fcdb6644-66e0-4a50-a4e0-5f23e2c3b152
 ---
 # Uninstall Agent from Windows-based Computers
-Use one of the following procedures to uninstall an System Center Operations Manager agent from an agent\-managed computer.
+Use one of the following procedures to uninstall an System Center Operations Manager agent from an agent-managed computer.
 
 ## <a name="bkmk_TouninstalltheagentbyusingtheOperationsconsole"></a>To uninstall the agent by using the Operations console
 
@@ -21,7 +21,7 @@ Use one of the following procedures to uninstall an System Center Operations Man
 
 3.  In the **Administration** workspace, click **Agent Managed**.
 
-4.  In the **Agent Managed** pane, right\-click the computers for which you want to uninstall the agent, and then select **Uninstall**.
+4.  In the **Agent Managed** pane, right-click the computers for which you want to uninstall the agent, and then select **Uninstall**.
 
 5.  In the **Uninstall Agents** dialog box, either leave **Use selected Management Server Action Account** selected or do the following:
 
@@ -47,10 +47,10 @@ Use one of the following procedures to uninstall an System Center Operations Man
 
 2.  In **Control Panel**, click **Uninstall a program**.
 
-3.  In **Programs and Features**, click **System Center Operations Manager 2012 Agent**, click **Remove**, and then click **Yes**.
+3.  In **Programs and Features**, click **System Center Operations Manager 2012 Agent**, click **Remove**, and then click **Yes**.
 
     > [!NOTE]
-    > The **Agent Setup Wizard** can also be run by double\-clicking **MOMAgent.msi**, which is available on the Operations Manager installation media.
+    > The **Agent Setup Wizard** can also be run by double-clicking **MOMAgent.msi**, which is available on the Operations Manager installation media.
 
 ### To uninstall the agent by using MOMAgent.msi from the command line
 
@@ -60,7 +60,7 @@ Use one of the following procedures to uninstall an System Center Operations Man
 
 3.  At the prompt, for example, type the following:
 
-    **%WinDir%\\System32\\msiexec.exe \/x <path>\\MOMAgent.msi \/qb**
+    **%WinDir%\System32\msiexec.exe /x <path>\MOMAgent.msi /qb**
 
 ## <a name="bkmk_Touninstalltheagentfromacluster"></a>To uninstall the agent from a cluster
 
@@ -70,7 +70,7 @@ Use one of the following procedures to uninstall an System Center Operations Man
 
 3.  In the **Administration** workspace, click **Agentless Managed**.
 
-4.  In the **Agentless Managed** pane, locate all virtual instances for the cluster, right\-click, and then select **Delete**.
+4.  In the **Agentless Managed** pane, locate all virtual instances for the cluster, right-click, and then select **Delete**.
 
 ## See Also
 [Operations Manager Agent Installation Methods](Operations-Manager-Agent-Installation-Methods.md)

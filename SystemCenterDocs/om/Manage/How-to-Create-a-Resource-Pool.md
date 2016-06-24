@@ -13,7 +13,7 @@ ms.assetid: de0eb016-4817-43b8-ac12-84e4017fcc3d
 # How to Create a Resource Pool
 A Resource Pool is a collection of management servers and/or gateway servers used to distribute work amongst themselves and take over work from a failed member.  
 
-Resource pools apply a logic similar to clustering “majority node set”, where (*\<number of nodes as members of the pool>*\/2) + 1. At a minimum, there must be three members in the resource pool to maintain quorum - two must be management servers, and the third is an observer (commonly referred to as the witness in clustering terminology).  The Operations Manager database by default is the observer and given a vote, even if you have an even number of members in the pool, in order to allow quorum to be reached.  
+Resource pools apply a logic similar to clustering “majority node set”, where (*\<number of nodes as members of the pool>*/2) + 1. At a minimum, there must be three members in the resource pool to maintain quorum - two must be management servers, and the third is an observer (commonly referred to as the witness in clustering terminology).  The Operations Manager database by default is the observer and given a vote, even if you have an even number of members in the pool, in order to allow quorum to be reached.  
 
 You can use resource pools for:
 
@@ -28,7 +28,7 @@ Resource pools ensure the continuity of monitoring by providing multiple managem
 When Operations Manager is installed, three resource pools are created: All Management Servers Resource Pool, Notifications Resource Pool, and AD Assignment Resource Pool. All management servers are automatically members of these resource pools. For information about removing a management server from the Notifications Resource Pool and AD Assignment Resource Pool, see [Modifying Resource Pool Membership](#modifying-resource-pool-membership).   
 
 > [!NOTE]
-> The membership of the All Management Servers Resource Pool is read\-only.  To change its membership  from automatic to manual, run the following PowerShell code in the Operations Manager Command Shell:
+> The membership of the All Management Servers Resource Pool is read-only.  To change its membership  from automatic to manual, run the following PowerShell code in the Operations Manager Command Shell:
 > 
 > ```Get-SCOMResourcePool –DisplayName “All Management Servers Resource Pool” | Set-SCOMResourcePool –EnableAutomaticMembership 0```
 
@@ -112,13 +112,13 @@ To configure high availability, each management server in the resource pool must
 
 1.  Export the root certificates from each management server in the resource pool to a file.
 
-2.  Import all the exported certificate files into each management server \(except for the file that was exported by that same server\).
+2.  Import all the exported certificate files into each management server (except for the file that was exported by that same server).
 
 #### To configure certificates for high availability
 
 1.  Log on to a management server to start the process of exporting certificates.
 
-2.  At the command prompt, change the directory to %ProgramFiles%\\System Center Operations Manager 2012\\Server.
+2.  At the command prompt, change the directory to %ProgramFiles%\System Center Operations Manager 2012\Server.
 
 3.  Run the following command, specifying a file name of your choosing such as **Server3.cert**:
 
@@ -130,9 +130,9 @@ To configure high availability, each management server in the resource pool must
 
 6.  Log on to a management server to start the process of importing certificates.
 
-7.  At the command prompt, change the directory to %ProgramFiles%\\System Center Operations Manager 2012\\Server.
+7.  At the command prompt, change the directory to %ProgramFiles%\System Center Operations Manager 2012\Server.
 
-8.  Run the following command for each exported certificate file \(except for the file that was exported by the current management server\):
+8.  Run the following command for each exported certificate file (except for the file that was exported by the current management server):
 
     `scxcertconfig.exe –import <filename>`
 
@@ -141,7 +141,7 @@ To configure high availability, each management server in the resource pool must
 
 9. Repeat the previous three steps until all the certificate files have been imported to the applicable management servers in the resource pool.
 
-10. Delete the certificate files from the shared directory. Although the file contains only the public key of the certificate, you should still treat it as a security\-sensitive file.
+10. Delete the certificate files from the shared directory. Although the file contains only the public key of the certificate, you should still treat it as a security-sensitive file.
 
 Perform this procedure whenever you add a new management server to the resource pool so that high availability is maintained.
 

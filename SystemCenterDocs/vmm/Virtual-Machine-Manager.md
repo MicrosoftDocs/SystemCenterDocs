@@ -11,7 +11,7 @@ ms.topic: article
 ms.assetid: 45b19e89-f19f-48e3-92de-b0c63324e46f
 ---
 # Virtual Machine Manager
-For information about features in Virtual Machine Manager \(VMM\) in System Center 2016 Technical Preview, see [What's New in VMM in System Center Technical Preview](get-started/What-s-New-in-VMM-in-System-Center-Technical-Preview.md).
+For information about features in Virtual Machine Manager (VMM) in System Center 2016 Technical Preview, see [What's New in VMM in System Center Technical Preview](get-started/What-s-New-in-VMM-in-System-Center-Technical-Preview.md).
 
 For information about using    some of the improved features in VMM in System Center 2016 Technical Preview, see these sections:
 

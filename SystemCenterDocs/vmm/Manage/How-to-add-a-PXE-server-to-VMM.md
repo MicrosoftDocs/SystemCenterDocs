@@ -11,9 +11,9 @@ ms.topic: article
 ms.assetid: a0f97147-d9b7-43b3-ad1a-9a5b2c138ab5
 ---
 # How to add a PXE server to VMM
-You can use the following procedure to add a pre\-boot execution environment \(PXE\) server to Virtual Machine Manager \(VMM\). The PXE server is used to initiate operating system installations on bare\-metal computers, as described in [Overview: creating hosts or host clusters from bare metal with VMM](Overview--creating-hosts-or-host-clusters-from-bare-metal-with-VMM.md) and [Overview: creating Scale-Out File Servers from bare metal in VMM](Overview--creating-Scale-Out-File-Servers-from-bare-metal-in-VMM.md).
+You can use the following procedure to add a pre-boot execution environment (PXE) server to Virtual Machine Manager (VMM). The PXE server is used to initiate operating system installations on bare-metal computers, as described in [Overview: creating hosts or host clusters from bare metal with VMM](Overview--creating-hosts-or-host-clusters-from-bare-metal-with-VMM.md) and [Overview: creating Scale-Out File Servers from bare metal in VMM](Overview--creating-Scale-Out-File-Servers-from-bare-metal-in-VMM.md).
 
-If you have an existing PXE server in your environment configured with Windows Deployment Services, you can add that server to VMM. Then you can use it for provisioning in VMM \(and VMM will recognize only the resulting servers\). All other requests will continue to be handled by the PXE server according to how it is configured.
+If you have an existing PXE server in your environment configured with Windows Deployment Services, you can add that server to VMM. Then you can use it for provisioning in VMM (and VMM will recognize only the resulting servers). All other requests will continue to be handled by the PXE server according to how it is configured.
 
 If you do not have an existing PXE server, you can deploy the Windows Deployment Services role on a server running a supported operating system. When you install Windows Deployment Services, consider the following:
 
@@ -55,7 +55,7 @@ For example, you could create a Run As account called **PXE Administrator**. For
 
     2.  Enter the credentials for an account that has local administrator permissions on the PXE server.
 
-        You can specify an existing Run As account or manually enter user credentials in the format *domain\_name*\\*user\_name*.
+        You can specify an existing Run As account or manually enter user credentials in the format *domain_name*\\*user_name*.
 
         > [!NOTE]
         > If you do not already have a Run As account, click **Browse**, and then in the **Select a Run As Account** dialog box, click **Create Run As Account**.
@@ -64,7 +64,7 @@ For example, you could create a Run As account called **PXE Administrator**. For
 
     3.  Click **Add**.
 
-        The **Jobs** dialog box opens. Verify that the job has a status of **Completed**, and then close the dialog box. The job sets up the new PXE server, installs the VMM agent on the PXE server, imports a new Windows Preinstallation Environment \(Windows PE\) image, and adds the machine account for the PXE server to VMM.
+        The **Jobs** dialog box opens. Verify that the job has a status of **Completed**, and then close the dialog box. The job sets up the new PXE server, installs the VMM agent on the PXE server, imports a new Windows Preinstallation Environment (Windows PE) image, and adds the machine account for the PXE server to VMM.
 
 5.  To verify that the PXE server was added, perform these steps:
 

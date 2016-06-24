@@ -43,7 +43,7 @@ Before proceeding to deploy the network controller, make sure that you perform t
 
  
 
-All Hyper\-V hosts must have Windows Server Technical Preview 5 installed, and Hyper\-V enabled.
+All Hyper-V hosts must have Windows Server Technical Preview 5 installed, and Hyper-V enabled.
 
 ## Deployment steps
 ### To create the Management logical network
@@ -170,7 +170,7 @@ To request a CA-signed certificate for a Windows-based enterprise CA, follow the
 
 ### Export the certificate
 
-After requesting the certificate, use the **Certificates** snap-in (certlm.msc) to export it (located in Personal/Certificates) and its private key into a .pfx file. When exporting, choose **Personal Information Exchange - PKCS \#12 (.PFX)** and accept the default to **Include all certificates in the certification path if possible**. The export wizard requires that you protect the private key by either a security or a password. Be sure to assign a password, as you will need it later during network controller deployment.
+After requesting the certificate, use the **Certificates** snap-in (certlm.msc) to export it (located in Personal/Certificates) and its private key into a .pfx file. When exporting, choose **Personal Information Exchange - PKCS #12 (.PFX)** and accept the default to **Include all certificates in the certification path if possible**. The export wizard requires that you protect the private key by either a security or a password. Be sure to assign a password, as you will need it later during network controller deployment.
 
 Later, this .PFX certificate should be placed directly in the ServerCertificate.cr folder for use during deployment. Details of ServerCertificate.cr folder are included in following sections in this guide.
 
@@ -230,7 +230,7 @@ Use the following procedure to deploy a network controller service instance:
 |---------|-------------|------------|
 | ClientSecurityGroup| Require| Name of the security group containing network controller client accounts. This is the group you created previously.<br><br>Example: ``contoso\network controller Clients``                                                                                                                                                                                            |
 | DiagnosticLogShare| Optional| File share location where the diagnostic logs will be periodically uploaded. If this is not provided, the logs are stored locally on each node.<br><br>Example: ``\\fileserver.contoso.com\nc\_logs\``                                                                                                                                                                                         |
-| DiagnosticLogShareUsername | Optional| Full username (including domain name) for an account that has access permissions to the diagnostic log share. Must be in the form \[domain\]\\\[username\].<br><br>Example: ``contoso\Username``                                                                                                                                                                                                              |
+| DiagnosticLogShareUsername | Optional| Full username (including domain name) for an account that has access permissions to the diagnostic log share. Must be in the form [domain]\\[username].<br><br>Example: ``contoso\Username``                                                                                                                                                                                                              |
 | DiagnosticLogSharePassword | Optional| The password for the account specified in the DiagnosticLogShareUsernamee parameter.|
 | LocalAdmin| Required| Select a Run as account in your environment which will be used as the local Administrator on the NC virtual machines.<br><br> User name should be ``.\Administrator``(create if not already present)                                                                                                                                                                                                   |
 | Management| Required| Select the management Logical Network you created earlier|
@@ -312,37 +312,37 @@ The SDN planning diagram in [Plan a Software Defined Network Infrastructure](htt
 ### To create the SDN switch
 First, let’s create a new teaming enabled logical switch using VMM that you will deploy on network controller managed hosts.
 
-1.	Right-click the logical switch in the VMM Administrator Console Fabric section and select **Create new Logical Switch**.
-2.	Type a name.
-3.	In the Uplink mode, select **Team**.
-4.	In the **Settings** tab, select the desired bandwidth mode and check **Managed by Microsoft Network Controller**.
-5.	Optionally add port classifications in the **Virtual Port** tab.
-6.	On the **Uplinks** tab, click **Add** and then either create a new Uplink Port Profile or use an existing Uplink Port Profile if you already have one configured. For this example, create a new Uplink Port Profile.
-7.	For the new Uplink Port Profile:
-     1.	Type a name.
-     2.	Select a Load Balancing algorithm and Teaming mode. For more information about SET supported Load Balancing algorithms and Teaming modes see [Remote Direct Memory Access (RDMA) and Switch Embedded Teaming (SET)](https://technet.microsoft.com/library/mt403349.aspx).
-     3.	Select the Network Sites that are available for this Uplink Port Profile.
+1.  Right-click the logical switch in the VMM Administrator Console Fabric section and select **Create new Logical Switch**.
+2.  Type a name.
+3.  In the Uplink mode, select **Team**.
+4.  In the **Settings** tab, select the desired bandwidth mode and check **Managed by Microsoft Network Controller**.
+5.  Optionally add port classifications in the **Virtual Port** tab.
+6.  On the **Uplinks** tab, click **Add** and then either create a new Uplink Port Profile or use an existing Uplink Port Profile if you already have one configured. For this example, create a new Uplink Port Profile.
+7.  For the new Uplink Port Profile:
+     1. Type a name.
+     2. Select a Load Balancing algorithm and Teaming mode. For more information about SET supported Load Balancing algorithms and Teaming modes see [Remote Direct Memory Access (RDMA) and Switch Embedded Teaming (SET)](https://technet.microsoft.com/library/mt403349.aspx).
+     3. Select the Network Sites that are available for this Uplink Port Profile.
      4. Click **OK**. 
 8. Review the summary and click **Finish**.
 
 After you create the teamed logical switch, use the following steps on all the hosts where the network controller virtual machines are running.
 
-1.	Shut down the network controller virtual machine on one of the hosts where network controller virtual machine is running.	 
-2.	After the shut down is complete, select the network controller virtual machine and click **Properties**.
-3.	Select **Hardware Configuration**.
-4.	Go to the **Network Adaptors** section and change each vNIC to **Not Connected**. Take note of the VM Networks the vNICs are connected to. Later you need to restore this setting manually.
+1.  Shut down the network controller virtual machine on one of the hosts where network controller virtual machine is running.    
+2.  After the shut down is complete, select the network controller virtual machine and click **Properties**.
+3.  Select **Hardware Configuration**.
+4.  Go to the **Network Adaptors** section and change each vNIC to **Not Connected**. Take note of the VM Networks the vNICs are connected to. Later you need to restore this setting manually.
     * If this virtual machine is a SDNAPI Primary Service virtual machine (meaning the REST IP address was assigned to this virtual machine before shutdown) ensure you wait until the REST IP is assigned to one of the other network controller virtual machines before you proceed.
     
     ![VMM NIC PropertiesImage/VMM-NIC-Properties.png)
 
-5.	Remove this host from the non-teamed Management logical switch.
-6.	Deploy the newly created teamed SDN logical switch on this host specifying all the member physical NICs you intend to team together.
+5.  Remove this host from the non-teamed Management logical switch.
+6.  Deploy the newly created teamed SDN logical switch on this host specifying all the member physical NICs you intend to team together.
     >[!IMPORTANT]Remember to create a host vNIC as part of this deployment if you need it for host connectivity.
-7.	Restore VM Network connectivity for all the vNICs of the Network Controller virtual machines that you removed in Step 4.
-8.	Start the virtual machine. This virtual machine should now automatically become part of the Network Controller Service.
-9.	Repeat Steps 1-8 on the other hosts where a network controller vitual machine is running.
-10.	If you have other hosts in your Host Group that are not hosting any of the network controller virtual machines, you can simply disconnect these hosts from the non-teamed Management logical switch and deploy the newly created teamed logical switch.
-	 
+7.  Restore VM Network connectivity for all the vNICs of the Network Controller virtual machines that you removed in Step 4.
+8.  Start the virtual machine. This virtual machine should now automatically become part of the Network Controller Service.
+9.  Repeat Steps 1-8 on the other hosts where a network controller vitual machine is running.
+10. If you have other hosts in your Host Group that are not hosting any of the network controller virtual machines, you can simply disconnect these hosts from the non-teamed Management logical switch and deploy the newly created teamed logical switch.
+     
 After you deploy the newly created teamed logical switch to all the hosts in your Host Group, all your hosts are now connected using a teamed logical switch and you can add eligible physical NICs to the team.
 
 

@@ -25,7 +25,7 @@ For example, the **Health Service Heartbeat Failure** monitor has several diagno
 
 -   **Ping Computer on Heartbeat Failure** and **Check If Health Service Is Running**
 
-    These are diagnostic tasks that run automatically when the state for this monitor changes to critical \(red\).
+    These are diagnostic tasks that run automatically when the state for this monitor changes to critical (red).
 
 -   **Set the "Computer Not Reachable" monitor to success because the "Ping Computer on Heartbeat Failure" diagnostic succeeded**
 

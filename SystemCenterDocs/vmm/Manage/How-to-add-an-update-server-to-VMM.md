@@ -8,7 +8,7 @@ ms.topic: article
 ms.assetid: 414f9079-4c8f-4433-b78d-5cec4ecf56ee
 ---
 # How to add an update server to VMM
-In order to use Virtual Machine Manager \(VMM\) to manage updates, you can either install a dedicated Windows Server Update Services \(WSUS\) server or use an existing WSUS server running Windows Server 2012 R2 or Windows Server Technical Preview. For instructions on how to install a WSUS server, see [How to install a WSUS server for VMM](How-to-install-a-WSUS-server-for-VMM.md).
+In order to use Virtual Machine Manager (VMM) to manage updates, you can either install a dedicated Windows Server Update Services (WSUS) server or use an existing WSUS server running Windows Server 2012 R2 or Windows Server Technical Preview. For instructions on how to install a WSUS server, see [How to install a WSUS server for VMM](How-to-install-a-WSUS-server-for-VMM.md).
 
 To use an existing WSUS server that is deployed in a System Center Configuration Manager environment, see [How to integrate fabric updates with Configuration Manager](How-to-integrate-fabric-updates-with-Configuration-Manager.md).
 
@@ -26,11 +26,11 @@ This procedure describes how to add a WSUS server to your VMM environment.
 
 3.  Type in the **Computer name** of the WSUS server.
 
-4.  Specify the TCP\/IP port that the WSUS website listens on for connections. For WSUS on a computer running Windows Server 2012 R2 or Windows Server Technical Preview, use port 8530 \(non\-SSL\) or 8531 \(SSL\).
+4.  Specify the TCP/IP port that the WSUS website listens on for connections. For WSUS on a computer running Windows Server 2012 R2 or Windows Server Technical Preview, use port 8530 (non-SSL) or 8531 (SSL).
 
 5.  Enter credentials for connecting to the WSUS server. The account must have administrator rights on the WSUS server. You can use an existing Run As Account, or create a new one.
 
-6.  If necessary, select the **Use Secure Socket Layer \(SSL\) to communicate with the WSUS server and clients** check box.
+6.  If necessary, select the **Use Secure Socket Layer (SSL) to communicate with the WSUS server and clients** check box.
 
 7.  Click **Add**.
 

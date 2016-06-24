@@ -11,13 +11,13 @@ ms.topic: article
 ms.assetid: f7fb8119-565a-4796-a639-5051a9c52a75
 ---
 # Examples of Using MOMAgent Command to Manage Agents
-The following examples show different ways in which you can use the MOMAgent command. You can use this command to perform new installations of agents, upgrade agents from previous releases of Operations Manager, or change the configuration of an agent \(such as the management group or management server associated with the agent\).
+The following examples show different ways in which you can use the MOMAgent command. You can use this command to perform new installations of agents, upgrade agents from previous releases of Operations Manager, or change the configuration of an agent (such as the management group or management server associated with the agent).
 
 ### Agent installation using a specific Action Account
 The following example shows a fresh installation of an agent and uses a specific Action Account.
 
 ```
-msiexec.exe /i path\Directory\MOMAgent.msi /qn /l*v %temp% MOMAgentinstall.log USE_SETTINGS_FROM_AD=0 MANAGEMENT_GROUP=<MG_Name> MANAGEMENT_SERVER_DNS=<MSDNSName> MANAGEMENT_SERVER_AD_NAME=<MSDNSName> ACTIONS_USE_COMPUTER_ACCOUNT=0 ACTIONSUSER=<AccountUser> ACTIONSDOMAIN=<AccountDomain> ACTIONSPASSWORD=<AccountPassword> USE_MANUALLY_SPECIFIED_SETTINGS=1
+msiexec.exe /i path\Directory\MOMAgent.msi /qn /l*v %temp% MOMAgentinstall.log USE_SETTINGS_FROM_AD=0 MANAGEMENT_GROUP=<MG_Name> MANAGEMENT_SERVER_DNS=<MSDNSName> MANAGEMENT_SERVER_AD_NAME=<MSDNSName> ACTIONS_USE_COMPUTER_ACCOUNT=0 ACTIONSUSER=<AccountUser> ACTIONSDOMAIN=<AccountDomain> ACTIONSPASSWORD=<AccountPassword> USE_MANUALLY_SPECIFIED_SETTINGS=1
 
 ```
 
@@ -25,7 +25,7 @@ msiexec.exe /i path\Directory\MOMAgent.msi /qn /l*v %temp% MOMAgentinstall.log 
 The following example shows a fresh installation of an agent and uses the Local System for the Action Account.
 
 ```
-msiexec.exe /i path\Directory\MOMAgent.msi /qn /l*v %temp%\MOMAgentinstall.log USE_SETTINGS_FROM_AD=0 MANAGEMENT_GROUP=<MG_Name> MANAGEMENT_SERVER_DNS=<MSDNSName> MANAGEMENT_SERVER_AD_NAME=<MSDNSName> ACTIONS_USE_COMPUTER_ACCOUNT=1 USE_MANUALLY_SPECIFIED_SETTINGS=1
+msiexec.exe /i path\Directory\MOMAgent.msi /qn /l*v %temp%\MOMAgentinstall.log USE_SETTINGS_FROM_AD=0 MANAGEMENT_GROUP=<MG_Name> MANAGEMENT_SERVER_DNS=<MSDNSName> MANAGEMENT_SERVER_AD_NAME=<MSDNSName> ACTIONS_USE_COMPUTER_ACCOUNT=1 USE_MANUALLY_SPECIFIED_SETTINGS=1
 
 ```
 
@@ -33,7 +33,7 @@ msiexec.exe /i path\Directory\MOMAgent.msi /qn /l*v %temp%\MOMAgentinstall.log 
 The following example installs an agent by using Active Directory and a specific Action Account.
 
 ```
-msiexec /i path\Directory\MOMAgent.msi /qn /l*v %temp%mominst.NoGroupSpecified.log USE_SETTINGS_FROM_AD=1 USE_MANUALLY_SPECIFIED_SETTINGS=0 ACTIONS_USE_COMPUTER_ACCOUNT=0 ACTIONSUSER=<AccountUser> ACTIONSDOMAIN=<AccountDomain> ACTIONSPASSWORD=<AccountPassword>
+msiexec /i path\Directory\MOMAgent.msi /qn /l*v %temp%mominst.NoGroupSpecified.log USE_SETTINGS_FROM_AD=1 USE_MANUALLY_SPECIFIED_SETTINGS=0 ACTIONS_USE_COMPUTER_ACCOUNT=0 ACTIONSUSER=<AccountUser> ACTIONSDOMAIN=<AccountDomain> ACTIONSPASSWORD=<AccountPassword>
 
 ```
 

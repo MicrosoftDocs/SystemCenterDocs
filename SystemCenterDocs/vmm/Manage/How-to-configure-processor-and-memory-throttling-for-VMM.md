@@ -8,7 +8,7 @@ ms.topic: article
 ms.assetid: 9dce4d4a-949f-4e5f-a56e-715dfc2fd535
 ---
 # How to configure processor and memory throttling for VMM
-Virtual Machine Manager \(VMM\) provides processor throttling \(CPU\) and memory throttling capabilities. You can set the throttling values when you configure a virtual machine by using the Create Virtual Machine Wizard, on the property sheet of an existing virtual machine, or on a virtual machine template. This topic describes how to configure processor and memory throttling, and memory weight.
+Virtual Machine Manager (VMM) provides processor throttling (CPU) and memory throttling capabilities. You can set the throttling values when you configure a virtual machine by using the Create Virtual Machine Wizard, on the property sheet of an existing virtual machine, or on a virtual machine template. This topic describes how to configure processor and memory throttling, and memory weight.
 
 For more information about processor and memory throttling, see [Configuring resource throttling for VMM](Configuring-resource-throttling-for-VMM.md).
 
@@ -16,7 +16,7 @@ For more information about processor and memory throttling, see [Configuring res
 
 1.  In the **Advanced** section of the virtual machine or of the virtual machine template properties, click **CPU Priority**.
 
-2.  Select a priority value for the virtual machine. These values specify how the CPU resources are balanced between virtual machine, and correspond to the relative weight value in Hyper\-V:
+2.  Select a priority value for the virtual machine. These values specify how the CPU resources are balanced between virtual machine, and correspond to the relative weight value in Hyper-V:
 
     -   High—Relative weight value of 200
 
@@ -26,9 +26,9 @@ For more information about processor and memory throttling, see [Configuring res
 
     -   Custom—Relative weight values that are supported are between 1 and 10000
 
-3.  In **Reserve CPU cycles \(%\)**, specify the percentage of the CPU resources on one logical processor that should be reserved for a virtual machine. This is useful when a virtual machine runs applications that are particularly CPU\-intensive, and you want to ensure a minimal level of CPU resources. A zero setting indicates that no specific CPU percentage is reserved.
+3.  In **Reserve CPU cycles (%)**, specify the percentage of the CPU resources on one logical processor that should be reserved for a virtual machine. This is useful when a virtual machine runs applications that are particularly CPU-intensive, and you want to ensure a minimal level of CPU resources. A zero setting indicates that no specific CPU percentage is reserved.
 
-4.  In **Limit CPU cycles \(%\)**, specify the maximum percentage of the CPU resources on one logical processor that the virtual machine should consume. The virtual machine will not be allocated more than this percentage.
+4.  In **Limit CPU cycles (%)**, specify the maximum percentage of the CPU resources on one logical processor that the virtual machine should consume. The virtual machine will not be allocated more than this percentage.
 
 ## <a name="BKMK_MemoryThrottle"></a>To configure memory throttling
 
@@ -44,7 +44,7 @@ For more information about processor and memory throttling, see [Configuring res
 
     3.  In **Maximum memory**, specify the maximum amount of memory that is allocated to a virtual machine. The default setting for Windows Server 2012 is 1 TB.
 
-    4.  In **Memory buffer percentage** specify the amount of available memory that will be assigned to a virtual machine if the need arises. The percentage should be based on the amount of memory that is actually needed by the applications and services that run on the virtual machine. The memory buffer percentage should be calculated as follows: Amount of memory buffer \= memory that is needed by the virtual machine\/ \(memory buffer value\/100\). For example, if the memory that is committed to the virtual machine is 1000 MB and the buffer is 20%, then an additional buffer of 20% \(200 MB\) will be allocated for a total of 1200 MB of physical memory allocated to the virtual machine.
+    4.  In **Memory buffer percentage** specify the amount of available memory that will be assigned to a virtual machine if the need arises. The percentage should be based on the amount of memory that is actually needed by the applications and services that run on the virtual machine. The memory buffer percentage should be calculated as follows: Amount of memory buffer = memory that is needed by the virtual machine/ (memory buffer value/100). For example, if the memory that is committed to the virtual machine is 1000 MB and the buffer is 20%, then an additional buffer of 20% (200 MB) will be allocated for a total of 1200 MB of physical memory allocated to the virtual machine.
 
 ## <a name="BKMK_Weight"></a>To configure memory weight
 

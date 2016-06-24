@@ -11,7 +11,7 @@ ms.topic: article
 ms.assetid: 4d44a1f8-4046-4a97-b10b-30f67fa438ea
 ---
 # Configuring logical networks, VM networks, and logical switches in VMM
-You can use Virtual Machine Manager \(VMM\) to manage your physical and virtualized network infrastructure. In VMM, the foundations of the network configuration are networks—the underlying logical networks and the VM networks—and switches. Switches can be configured as standard virtual switches, but this set of topics describes logical switches, which help you configure switch settings consistently across multiple hosts. To configure these network elements in VMM, use the following overviews and procedures, in the order shown.
+You can use Virtual Machine Manager (VMM) to manage your physical and virtualized network infrastructure. In VMM, the foundations of the network configuration are networks—the underlying logical networks and the VM networks—and switches. Switches can be configured as standard virtual switches, but this set of topics describes logical switches, which help you configure switch settings consistently across multiple hosts. To configure these network elements in VMM, use the following overviews and procedures, in the order shown.
 
 ## <a name="BKMK_planning"></a>Planning the configuration and configuring global settings
 Use the following overviews to plan your configuration:
@@ -27,7 +27,7 @@ Optionally, configure global network settings, which have an effect only when yo
 -   [How to configure global network settings in VMM](How-to-configure-global-network-settings-in-VMM.md)
 
 ## <a name="BKMK_implementing"></a>Implementing the configuration
-After you have planned your logical networks, VM networks, and logical switches \(and the elements within them, such as network sites within logical networks\), use the following procedures, in order, to create your network configuration in VMM:
+After you have planned your logical networks, VM networks, and logical switches (and the elements within them, such as network sites within logical networks), use the following procedures, in order, to create your network configuration in VMM:
 
 1.  **Logical networks**: [How to create a logical network and IP address pools in VMM](How-to-create-a-logical-network-and-IP-address-pools-in-VMM.md)
 
@@ -37,9 +37,9 @@ After you have planned your logical networks, VM networks, and logical switches 
 
     -   [How to create a VM network for network virtualization and add an IP address pool in VMM](How-to-create-a-VM-network-for-network-virtualization-and-add-an-IP-address-pool-in-VMM.md)
 
-3.  **Logical switches** \(creating\): [How to create a logical switch in VMM](How-to-create-a-logical-switch-in-VMM.md)
+3.  **Logical switches** (creating): [How to create a logical switch in VMM](How-to-create-a-logical-switch-in-VMM.md)
 
-4.  **Logical switches** \(applying settings to host\): [How to configure network settings on a host by using a logical switch in VMM](How-to-configure-network-settings-on-a-host-by-using-a-logical-switch-in-VMM.md)
+4.  **Logical switches** (applying settings to host): [How to configure network settings on a host by using a logical switch in VMM](How-to-configure-network-settings-on-a-host-by-using-a-logical-switch-in-VMM.md)
 
 Depending on your environment, you might also use the following procedures, for example, if you want to convert the switch on a host from a "standard" virtual switch to a logical switch:
 

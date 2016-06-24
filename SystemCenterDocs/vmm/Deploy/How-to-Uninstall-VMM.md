@@ -16,7 +16,7 @@ You can use the following procedures to uninstall a VMM management server or the
 Before uninstalling VMM, ensure that the VMM console and the VMM command shell are closed.
 
 > [!NOTE]
-> If there is a problem with uninstallation completing successfully, consult the log files in the **%SYSTEMDRIVE%\\ProgramData\\VMMLogs** folder. **ProgramData** is a hidden folder.
+> If there is a problem with uninstallation completing successfully, consult the log files in the **%SYSTEMDRIVE%\ProgramData\VMMLogs** folder. **ProgramData** is a hidden folder.
 
 Membership in the local Administrators group, or equivalent, on the computer that you are configuring is the minimum required to complete these procedures.
 
@@ -26,7 +26,7 @@ Membership in the local Administrators group, or equivalent, on the computer tha
 
 2.  Under **Programs**, click **Uninstall a program**.
 
-3.  Under **Name**, double\-click **Microsoft System Center 2016 Virtual Machine Manager**.
+3.  Under **Name**, double-click **Microsoft System Center 2016 Virtual Machine Manager**.
 
 4.  On the **What would you like to do?** page, click **Remove features**.
 
@@ -51,10 +51,10 @@ The following firewall rules, which were enabled during VMM Setup, remain in eff
 
 -   File Server Remote Management
 
--   Windows Standards\-Based Storage Management firewall rules
+-   Windows Standards-Based Storage Management firewall rules
 
 > [!NOTE]
-> If there is a problem with setup completing successfully, consult the log files in the **%SYSTEMDRIVE%\\ProgramData\\VMMLogs** folder. **ProgramData** is a hidden folder.
+> If there is a problem with setup completing successfully, consult the log files in the **%SYSTEMDRIVE%\ProgramData\VMMLogs** folder. **ProgramData** is a hidden folder.
 
 ### To uninstall the VMM console
 
@@ -62,7 +62,7 @@ The following firewall rules, which were enabled during VMM Setup, remain in eff
 
 2.  Under **Programs**, click **Uninstall a program**.
 
-3.  Under **Name**, double\-click **Microsoft System Center 2016 Virtual Machine Manager**.
+3.  Under **Name**, double-click **Microsoft System Center 2016 Virtual Machine Manager**.
 
 4.  On the **What would you like to do?** page, click **Remove features**.
 

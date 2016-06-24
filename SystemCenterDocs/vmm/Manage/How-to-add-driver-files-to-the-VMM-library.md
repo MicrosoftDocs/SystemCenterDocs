@@ -11,9 +11,9 @@ ms.topic: article
 ms.assetid: e934fc89-0578-4994-b63b-c2582b63eef5
 ---
 # How to add driver files to the VMM library
-You can use the following procedures to add driver files to the library in Virtual Machine Manager \(VMM\), and to assign tags to the drivers. After you add driver files to the VMM library, when you configure a physical computer profile, you can specify the driver files. Then VMM can install the specified drivers when it installs the operating system on a physical computer.
+You can use the following procedures to add driver files to the library in Virtual Machine Manager (VMM), and to assign tags to the drivers. After you add driver files to the VMM library, when you configure a physical computer profile, you can specify the driver files. Then VMM can install the specified drivers when it installs the operating system on a physical computer.
 
-In the physical computer profile, you can select to filter the drivers by tags, or you can select to filter drivers with matching Plug and Play \(PnP\) IDs on the physical computer. If you select to filter the drivers by tags, VMM determines the drivers to apply by matching the tags that you assign to the drivers in the library to the tags that you assign in the profile. If you select to filter drivers with matching PnP IDs, you do not have to complete the “To assign custom tags to the driver files” procedure in this topic.
+In the physical computer profile, you can select to filter the drivers by tags, or you can select to filter drivers with matching Plug and Play (PnP) IDs on the physical computer. If you select to filter the drivers by tags, VMM determines the drivers to apply by matching the tags that you assign to the drivers in the library to the tags that you assign in the profile. If you select to filter drivers with matching PnP IDs, you do not have to complete the “To assign custom tags to the driver files” procedure in this topic.
 
 > [!NOTE]
 > These procedures are optional.
@@ -28,14 +28,14 @@ In the physical computer profile, you can select to filter the drivers by tags, 
 
 2.  In the library share that is located on the library server that is associated with the group where you want to deploy the physical computers, create a folder to store the drivers, and then copy the driver package to the folder.
 
-    For example, create a folder that is named **Drivers** in the library share, and then copy the driver package for a network adapter driver \(in its own folder\) to the **Drivers** folder.
+    For example, create a folder that is named **Drivers** in the library share, and then copy the driver package for a network adapter driver (in its own folder) to the **Drivers** folder.
 
     > [!IMPORTANT]
     > We strongly recommend that you create a separate folder for each driver package, and that you do not mix resources in the driver folders. If you include other library resources such as .iso images, .vhd files or scripts with an .inf file name extension in the same folder, the VMM library server will not discover those resources. Also, when you delete an .inf driver package from the library, VMM deletes the entire folder where the driver .inf file resides.
 
 3.  In the VMM console, open the **Library** workspace.
 
-4.  In the **Library** pane, expand **Library Servers**, expand the library server where the share is located, right\-click the share, and then click **Refresh**.
+4.  In the **Library** pane, expand **Library Servers**, expand the library server where the share is located, right-click the share, and then click **Refresh**.
 
     After the library refreshes, the folder that you created to store the drivers appears.
 
@@ -47,9 +47,9 @@ In the physical computer profile, you can select to filter the drivers by tags, 
 
     The driver .inf file of type **Driver Package** is listed in the **Physical Library Objects** pane.
 
-2.  In the **Physical Library Objects** pane, right\-click the driver .inf file, and then click **Properties**.
+2.  In the **Physical Library Objects** pane, right-click the driver .inf file, and then click **Properties**.
 
-3.  In the *Driver File Name* **Properties** dialog box, in the **Custom tags** box, enter custom tags separated by a semi\-colon, or click **Select** to assign available tags or to create and assign new ones. If you click **Select**, and then click **New Tag**, you can change the name of the tag after you click **OK**.
+3.  In the *Driver File Name* **Properties** dialog box, in the **Custom tags** box, enter custom tags separated by a semi-colon, or click **Select** to assign available tags or to create and assign new ones. If you click **Select**, and then click **New Tag**, you can change the name of the tag after you click **OK**.
 
     For example, if you added a network adapter driver file, you could create a tag that is named *ServerModel* *NetworkAdapterModel*, where *ServerModel* is the server model and *NetworkAdapterModel* is the network adapter model.
 

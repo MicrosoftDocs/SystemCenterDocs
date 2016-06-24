@@ -34,7 +34,7 @@ Use the following procedures to create a user role and assign users to that role
         > [!IMPORTANT]
         > The groups and the queues lists are not filtered—all groups and queues from all management packs are listed. If you select the **Select all queues** item on the **Queues** page, on the **Groups** page, **Select all Groups** is selected automatically. In addition, by default, no groups have been created. You have to create a group if you want to limit scope by group.
 
-    5.  On the **Users** page, click **Add**, and use the **Select Users or Groups** dialog box to select users and user groups from Active Directory Domain Services \(AD DS\) for this user role, and then click **Next**.
+    5.  On the **Users** page, click **Add**, and use the **Select Users or Groups** dialog box to select users and user groups from Active Directory Domain Services (AD DS) for this user role, and then click **Next**.
 
     6.  On the **Summary** page, make sure that the settings are correct, and then click **Create**.
 
@@ -48,12 +48,12 @@ Use the following procedures to create a user role and assign users to that role
 
 ![](../../media/pssymbol.png)You can use Windows PowerShell commands to complete these and other related tasks, as follows:
 
--   For information about how to use Windows PowerShell to create a new user role in Service Manager, see [New\-SCSMUserRole](http://go.microsoft.com/fwlink/p/?LinkId=225360).
+-   For information about how to use Windows PowerShell to create a new user role in Service Manager, see [New-SCSMUserRole](http://go.microsoft.com/fwlink/p/?LinkId=225360).
 
--   For information about how to use Windows PowerShell to retrieve user roles that are defined in Service Manager, see [Get\-SCSMUserRole](http://go.microsoft.com/fwlink/p/?LinkId=225343).
+-   For information about how to use Windows PowerShell to retrieve user roles that are defined in Service Manager, see [Get-SCSMUserRole](http://go.microsoft.com/fwlink/p/?LinkId=225343).
 
--   For information about how to use Windows PowerShell to set the UserRole property for a Service Manager user, see [Update\-SCSMUserRole](http://go.microsoft.com/fwlink/p/?LinkId=225389).
+-   For information about how to use Windows PowerShell to set the UserRole property for a Service Manager user, see [Update-SCSMUserRole](http://go.microsoft.com/fwlink/p/?LinkId=225389).
 
--   For information about how to use Windows PowerShell to remove a user role from Service Manager, see [Remove\-SCSMUserRole](http://go.microsoft.com/fwlink/p/?LinkId=225371).
+-   For information about how to use Windows PowerShell to remove a user role from Service Manager, see [Remove-SCSMUserRole](http://go.microsoft.com/fwlink/p/?LinkId=225371).
 
 

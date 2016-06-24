@@ -8,11 +8,11 @@ ms.topic: article
 ms.assetid: 3e099462-8a49-4d5a-b8c0-ecc5c48cd840
 ---
 # How to configure Dynamic Optimization and Power Optimization in VMM
-Use the following procedures to enable Dynamic Optimization and Power Optimization for a host group in Virtual Machine Manager \(VMM\) and to configure resource Power Optimization usage on a host group.
+Use the following procedures to enable Dynamic Optimization and Power Optimization for a host group in Virtual Machine Manager (VMM) and to configure resource Power Optimization usage on a host group.
 
 -   [To turn on Dynamic Optimization and Power Optimization for a host group](#BKMK_OnHG).
 
--   [To configure settings for Power Optimization](#BKMK_Settings). Use this procedure to change the thresholds for CPU, memory, disk I\/O, and network I\/O on hosts that govern how VMM performs Dynamic Optimization and Power Optimization within a host group. You do not need to perform this procedure unless you want to change the default thresholds.
+-   [To configure settings for Power Optimization](#BKMK_Settings). Use this procedure to change the thresholds for CPU, memory, disk I/O, and network I/O on hosts that govern how VMM performs Dynamic Optimization and Power Optimization within a host group. You do not need to perform this procedure unless you want to change the default thresholds.
 
 For more information about Dynamic Optimization and Power Optimization, see [Configuring dynamic optimization and power optimization in VMM](Configuring-dynamic-optimization-and-power-optimization-in-VMM.md).
 
@@ -38,7 +38,7 @@ For more information about Dynamic Optimization and Power Optimization, see [Con
 
     1.  Select the **Automatically migrate virtual machines to balance load** check box.
 
-    2.  In **Frequency \(minutes\)**, specify how often to run Dynamic Optimization. You can enter any value between 10 minutes \(the default frequency\) and 1440 minutes \(24 hours\).
+    2.  In **Frequency (minutes)**, specify how often to run Dynamic Optimization. You can enter any value between 10 minutes (the default frequency) and 1440 minutes (24 hours).
 
 7.  To turn on Power Optimization on the host group, select the **Enable power optimization** check box.
 
@@ -50,7 +50,7 @@ For more information about Dynamic Optimization and Power Optimization, see [Con
 
 2.  Click **Dynamic Optimization** and, on the **Specify dynamic optimization settings** page, click **Settings**.
 
-3.  In the **Customize Power Optimization Schedule** dialog box, change the settings for any of these resources: CPU, memory, disk input\/output \(I\/O\), or network I\/O.
+3.  In the **Customize Power Optimization Schedule** dialog box, change the settings for any of these resources: CPU, memory, disk input/output (I/O), or network I/O.
 
 4.  Under **Schedule**, select the hours when you want power optimization to be performed. Click a box to turn power optimization on or off for that hour.
 

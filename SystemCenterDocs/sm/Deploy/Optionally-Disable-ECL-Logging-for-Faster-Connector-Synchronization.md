@@ -11,7 +11,7 @@ ms.topic: article
 ms.assetid: 805b479a-9312-4039-be44-01dda07086d8
 ---
 # Optionally Disable ECL Logging for Faster Connector Synchronization
-The Active Directory and SCCM connectors in Service Manager can import large amounts of data into the Service Manager database. In doing so, they not only increase the size of the data table, which is where the data from the connectors are stored, but they also increase the size of the EntityChangeLog \(ECL\) table and history tables considerably. A large ECL table size can be a problem—in some cases, it can slow down the system significantly.
+The Active Directory and SCCM connectors in Service Manager can import large amounts of data into the Service Manager database. In doing so, they not only increase the size of the data table, which is where the data from the connectors are stored, but they also increase the size of the EntityChangeLog (ECL) table and history tables considerably. A large ECL table size can be a problem—in some cases, it can slow down the system significantly.
 
 The ECL table, and the history tables in this case, store details about when the data was brought into Service Manager and the properties that were added or updated for each data item.
 
@@ -19,7 +19,7 @@ Disabling ELC logging, doesn’t affect importing data from connectors. Instead,
  
 Disabled ECL logging is not automatically turned on. In other words, by default, ECL logging is enabled. However, you can easily turn on Disabled ECL logging by using a PowerShell cmdlet.
 
--   Disabling ECL logging doesn’t turn off logging history data about work items like incident, change requests etc. They will continue to work as\-is.
+-   Disabling ECL logging doesn’t turn off logging history data about work items like incident, change requests etc. They will continue to work as-is.
 
 -   Any *explicit change made by the user* to the data imported by the connectors, such as a user or a computer, is still recorded in the ECL and history.
 
@@ -41,9 +41,9 @@ Here are some disadvantages of this feature:
 
 You cannot create DCM incidents when you disable ECL logging.
 
-Some Service Manager users have created user\-defined workflows that monitor data being imported by connectors. If you have defined workflows that need to be triggered when the data is imported by connectors, then enabling this feature will not trigger those workflows. Because the workflows look into the ECL table for entries and this feature doesn’t log entries in the ECL table, these workflows will not work. In this case, you should not disable ECL logging.
+Some Service Manager users have created user-defined workflows that monitor data being imported by connectors. If you have defined workflows that need to be triggered when the data is imported by connectors, then enabling this feature will not trigger those workflows. Because the workflows look into the ECL table for entries and this feature doesn’t log entries in the ECL table, these workflows will not work. In this case, you should not disable ECL logging.
 
-Because entries are not written to the ECL and history table, the history of the creation and\/or the changes to data items imported by connectors in Service Manager are not recorded. In other words, if you disable ECL logging you cannot determine when a user or a computer object was imported into the Service Manager database and\/or when changes to these objects are imported into the Service Manager database.
+Because entries are not written to the ECL and history table, the history of the creation and/or the changes to data items imported by connectors in Service Manager are not recorded. In other words, if you disable ECL logging you cannot determine when a user or a computer object was imported into the Service Manager database and/or when changes to these objects are imported into the Service Manager database.
 
 In some cases, changes to data like users and computers need be recorded in the database for auditing purposes. In this example, an alternative is to get the change history from the source. For example, would need to get the history of changes made to the user from Active Directory or get the history of changes made to the computer from System Center Configuration Manager.
 

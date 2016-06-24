@@ -38,7 +38,7 @@ You can change settings for a runbook in the Management Portal from the **Config
 4.  Select the **Configure** tab.
 
 ### Changing Runbook Settings with Windows PowerShell
-You can use the [Set\-SmaRunbookConfiguration](http://aka.ms/runbookauthor/cmdlet/setsmarunbookconfiguration) cmdlet to change all the settings for a runbook except for Tags. You can only change and add Tags for existing runbooks using the Management Portal. You can only set Tags for runbooks with PowerShell when you import a runbook using [Import\-SmaRunbook](http://aka.ms/runbookauthor/cmdlet/importsmarunbook).
+You can use the [Set-SmaRunbookConfiguration](http://aka.ms/runbookauthor/cmdlet/setsmarunbookconfiguration) cmdlet to change all the settings for a runbook except for Tags. You can only change and add Tags for existing runbooks using the Management Portal. You can only set Tags for runbooks with PowerShell when you import a runbook using [Import-SmaRunbook](http://aka.ms/runbookauthor/cmdlet/importsmarunbook).
 
 The following sample commands show how to set the properties for a runbook. This sample adds a description and specifies that verbose records should be logged.
 
@@ -53,7 +53,7 @@ Set-SmaRunbookConfiguration –WebServiceEndpoint $webServer –Port $port –Na
 
 ## See Also
 [Service Management Automation](../Service-Management-Automation.md)
-[Runbook Operations \(old\) \[SMA\]](assetId:///230817bd-e503-4beb-9ec3-8c1f028e9b48)
+[Runbook Operations (old) \[SMA\]](assetId:///230817bd-e503-4beb-9ec3-8c1f028e9b48)
 [How to purge the Service Management Automation database](How-to-purge-the-Service-Management-Automation-database.md)
 
 

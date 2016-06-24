@@ -8,15 +8,15 @@ ms.topic: article
 ms.assetid: a3633a09-a9ec-42ce-9774-185679502839
 ---
 # How to manage Virtual Fibre Channel zones and zonesets with VMM
-Zones are used to connect a Fibre Channel array to a host computer or virtual machine \(VM\). Specifically, the storage array target ports are mapped to the HBA ports on the host or to the virtual HBA \(vHBA\) ports for the VM. The HBA and vHBA ports are referred to as initiator ports. The zoning process is also known as onboarding.
+Zones are used to connect a Fibre Channel array to a host computer or virtual machine (VM). Specifically, the storage array target ports are mapped to the HBA ports on the host or to the virtual HBA (vHBA) ports for the VM. The HBA and vHBA ports are referred to as initiator ports. The zoning process is also known as onboarding.
 
-You can create zones for a host, a VM, or both. For Hyper\-V failover clusters, a zone is needed for each host computer in the cluster.
+You can create zones for a host, a VM, or both. For Hyper-V failover clusters, a zone is needed for each host computer in the cluster.
 
 Zones are grouped into zonesets, which use common Fibre Channel fabric devices. When all zones in a zone set have been added, modified, or removed as needed, the zoneset must be activated. Zoneset activation pushes information for each zone down to the Fibre Channel switches in the selected fabric.
 
 Only members of the same zone can communicate with each other.
 
-Use the following procedures to create new zones and then activate the zoneset. If you want to add a storage array to a Hyper\-V cluster, you need to zone the array to each host computer first. Similarly, if you want to add an array to a guest cluster, you need to zone the array to each VM first.
+Use the following procedures to create new zones and then activate the zoneset. If you want to add a storage array to a Hyper-V cluster, you need to zone the array to each host computer first. Similarly, if you want to add an array to a guest cluster, you need to zone the array to each VM first.
 
 1.  [To create a new zone](#BKMK_CreateZone)
 
@@ -37,7 +37,7 @@ Use the following procedures to view the zonesets associated with a fabric, edit
 
 1.  Open the **VMs and Services** workspace.
 
-2.  In the **Services** pane, right\-click the applicable VM, and then click **Properties**.
+2.  In the **Services** pane, right-click the applicable VM, and then click **Properties**.
 
 3.  On the **Properties** page, click the **Storage** tab, click **Add**, and then click **Add Fibre Channel Array**.
 
@@ -45,9 +45,9 @@ Use the following procedures to view the zonesets associated with a fabric, edit
 
     1.  In the **Zone Name** box, enter a name for the zone.
 
-    2.  In the **Storage Array** box, select an array from the drop\-down list.
+    2.  In the **Storage Array** box, select an array from the drop-down list.
 
-    3.  In the **Fabric** box, select a switch from the drop\-down list.
+    3.  In the **Fabric** box, select a switch from the drop-down list.
 
     4.  Under **Storage array target ports**, select the applicable WWPM port or ports.
 
@@ -67,7 +67,7 @@ Use the following procedures to view the zonesets associated with a fabric, edit
 
 1.  Open the **Fabric** workspace, and then click **Fibre Channel Fabric**.
 
-2.  Under **Name**, right\-click the applicable fabric, and then click **Properties**.
+2.  Under **Name**, right-click the applicable fabric, and then click **Properties**.
 
 3.  On the **Properties** page, click the **Zonesets** tab.
 
@@ -75,7 +75,7 @@ Use the following procedures to view the zonesets associated with a fabric, edit
 
 1.  Open the **Fabric** workspace.
 
-2.  Under **Name**, right\-click the applicable zoneset, and then click **Properties**.
+2.  Under **Name**, right-click the applicable zoneset, and then click **Properties**.
 
 3.  On the **Properties** page, click the **Zones** tab.
 
@@ -87,7 +87,7 @@ Use the following procedures to view the zonesets associated with a fabric, edit
 
 1.  Open the **VMs and Services** workspace.
 
-2.  In the **VMs and Services** pane, right\-click the applicable host, and then click **Properties**.
+2.  In the **VMs and Services** pane, right-click the applicable host, and then click **Properties**.
 
 3.  On the **Properties** page, click the **Storage** tab.
 
