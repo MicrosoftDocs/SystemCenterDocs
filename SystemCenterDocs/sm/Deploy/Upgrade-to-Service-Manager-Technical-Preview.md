@@ -43,18 +43,18 @@ Use the following step to upgrade your Self Service portal and Service Manger ma
 - Upgrade the Self Service portal directly from Service Manager 2012 R2 to Service Manager 2016.
 
 ## Upgrading the Self Service Portal from Service Manager 2012 R2 installed on a secondary management server with a Silverlight-based Self Service Portal
-1.	Uninstall Service Manager 2012 R2. This step uninstalls the management server role from the computer.
-2.	Upgrade the primary Management Server from Service Manager 2012 R2 to Service Manager 2016.
-3.	Install the secondary Management Server 2016 role on new computer.
-4.	Install the Service Manager 2016 version of the Self Service Portal (HTML5) on same computer as the secondary management server.
+1.  Uninstall Service Manager 2012 R2. This step uninstalls the management server role from the computer.
+2.  Upgrade the primary Management Server from Service Manager 2012 R2 to Service Manager 2016.
+3.  Install the secondary Management Server 2016 role on new computer.
+4.  Install the Service Manager 2016 version of the Self Service Portal (HTML5) on same computer as the secondary management server.
 
 ## Upgrading the Self Service Portal from Service Manager 2012 R2 installed on a secondary management server with a HTML-based Self Service Portal
 
-1.	Decommission the computer - neither the Self Service portal nor Service Manager 2012 R2 can be uninstalled. Create backups of the Self Service portal configuration files - web.config (inside the website folder), custom.css (inside the website folder \Content\CSS) and sidebar.cshtml (inside the website folder \Views\Shared) because they are required later.
-2.	Upgrade the primary Management Server from Service Manager 2012 R2 to Service Manager 2016.
-3.	Install the secondary Management Server 2016 role on new computer.
-4.	Install the Service Manager 2016 version of the Self Service Portal (HTML5) on the same computer as the secondary management server.
-5.	Overwrite the current configuration files with those backed-up in step 1 to restore any customizations.
+1.  Decommission the computer - neither the Self Service portal nor Service Manager 2012 R2 can be uninstalled. Create backups of the Self Service portal configuration files - web.config (inside the website folder), custom.css (inside the website folder \Content\CSS) and sidebar.cshtml (inside the website folder \Views\Shared) because they are required later.
+2.  Upgrade the primary Management Server from Service Manager 2012 R2 to Service Manager 2016.
+3.  Install the secondary Management Server 2016 role on new computer.
+4.  Install the Service Manager 2016 version of the Self Service Portal (HTML5) on the same computer as the secondary management server.
+5.  Overwrite the current configuration files with those backed-up in step 1 to restore any customizations.
 
 ## Upgrading the Self Service Portal from Service Manager 2012 R2 installed on a primary Management Server with the Self Service portal (Silverlight/HTML5):
 *Installing the Self Service portal on the same computer as the primary management server is not recommended.* However, in the event that you are using this combination, then use the following steps to upgrade to Service Manager 2016. Enabling the upgrade is the first step to move the primary Management Server to a Secondary management server by using the following steps.

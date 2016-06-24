@@ -11,14 +11,14 @@ ms.topic: article
 ms.assetid: cb75bf3c-32bc-4e71-bcf5-e35f9caedb6e
 ---
 # VMM networking reference: using a virtual switch extension manager or network manager in VMM
-With System Center 2016 Technical Preview, if you add a virtual switch extension or network manager to Virtual Machine Manager \(VMM\), you can use the console for that virtual switch extension or network manager in a way that is coordinated with the VMM management server. This helps you keep the settings that you see in VMM synchronized with the settings that you configured through an interface other than VMM.
+With System Center 2016 Technical Preview, if you add a virtual switch extension or network manager to Virtual Machine Manager (VMM), you can use the console for that virtual switch extension or network manager in a way that is coordinated with the VMM management server. This helps you keep the settings that you see in VMM synchronized with the settings that you configured through an interface other than VMM.
 
-To do this, you must first install the provider software \(provided by the vendor\) on the VMM management server. Then you can add the virtual switch extension or network manager to VMM.
+To do this, you must first install the provider software (provided by the vendor) on the VMM management server. Then you can add the virtual switch extension or network manager to VMM.
 
 ## Prerequisites
 If you want to add a virtual switch extension or network manager to your configuration in VMM, you must first perform the following tasks:
 
-1.  Obtain provider software from the manufacturer of the virtual switch extension or network manager, install the provider on the VMM management server, and then restart the System Center Virtual Machine Manager service. If you have installed a high\-availability VMM management server on a cluster, be sure to install the provider on all nodes of the cluster. For more information about installing the provider, refer to the manufacturer’s documentation.
+1.  Obtain provider software from the manufacturer of the virtual switch extension or network manager, install the provider on the VMM management server, and then restart the System Center Virtual Machine Manager service. If you have installed a high-availability VMM management server on a cluster, be sure to install the provider on all nodes of the cluster. For more information about installing the provider, refer to the manufacturer’s documentation.
 
 2.  For your virtual switch extension or network manager, make sure that you know the manufacturer and model, the name of an account that has configuration permissions, the connection string, and the host groups to include. If certificates are used for the provider software, make sure you know how to view the thumbprint information for those certificates.
 
@@ -32,7 +32,7 @@ If you want to add a virtual switch extension or network manager to your configu
 
 4.  In the **Fabric** pane, expand **Networking**, and then click **Network Service**.
 
-    Network services include gateways, virtual switch extensions, network managers, and top\-of\-rack \(TOR\) switches.
+    Network services include gateways, virtual switch extensions, network managers, and top-of-rack (TOR) switches.
 
 5.  On the **Home** tab, in the **Add** group, click **Add Resources**, and then click **Network Service**.
 

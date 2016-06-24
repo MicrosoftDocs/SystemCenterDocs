@@ -11,10 +11,10 @@ ms.topic: article
 ms.assetid: fb609f10-418e-4e1c-a514-ee36f9fdc560
 ---
 # Appendix B - Mapping Active Directory Domain Services Attributes to Properties in System Center 2016 - Service Manager
-Using an Active Directory connector, Service Manager synchronizes data with the User, Group, Computer, and Printer Active Directory Domain Services \(AD DS\) objects. The following tables describe the mapping between the attributes of the Active Directory objects and the corresponding Service Manager class properties.
+Using an Active Directory connector, Service Manager synchronizes data with the User, Group, Computer, and Printer Active Directory Domain Services (AD DS) objects. The following tables describe the mapping between the attributes of the Active Directory objects and the corresponding Service Manager class properties.
 
-## User\/Microsoft.AD.User
-The following table describes the mapping between the attributes of the Active Directory User object and the  Service Manager **Microsoft.AD.User** class properties.
+## User/Microsoft.AD.User
+The following table describes the mapping between the attributes of the Active Directory User object and the  Service Manager **Microsoft.AD.User** class properties.
 
 |Active Directory user attribute|Microsoft.AD.User property|
 |-----------------------------------|------------------------------|
@@ -42,12 +42,12 @@ The following table describes the mapping between the attributes of the Active 
 |postalCode|Zip|
 |co|Country|
 |localeID|Locale|
-|msRTCSIP\-PrimaryUserAddress|SipAddress|
+|msRTCSIP-PrimaryUserAddress|SipAddress|
 |objectSid|SID|
 |Domain|Domain|
 
-## Group\/Microsoft.AD.UserBase
-The following table describes the mapping between the attributes of the Active Directory Group object and the Service Manager **Microsoft.AD.UserBase** class properties.
+## Group/Microsoft.AD.UserBase
+The following table describes the mapping between the attributes of the Active Directory Group object and the Service Manager **Microsoft.AD.UserBase** class properties.
 
 |Active Directory group attribute|Microsoft.AD.UserBase property|
 |------------------------------------|----------------------------------|
@@ -58,8 +58,8 @@ The following table describes the mapping between the attributes of the Active 
 |objectSid|SID|
 |Domain|Domain|
 
-## Printer\/Microsoft.AD.Printer
-The following table describes the mapping between the attributes of the Active Directory PrintQueue object and the Service Manager **Microsoft.AD.Printer** class properties.
+## Printer/Microsoft.AD.Printer
+The following table describes the mapping between the attributes of the Active Directory PrintQueue object and the Service Manager **Microsoft.AD.Printer** class properties.
 
 |Active Directory printer attribute|Microsoft.AD.Printer property|
 |--------------------------------------|---------------------------------|
@@ -106,16 +106,16 @@ The following table describes the mapping between the attributes of the Active 
 |distinguishedname|Distinguishedname|
 |description|description|
 
-## Computer\/Microsoft.Windows.Computer
-The following table describes the mapping between the attributes of the Active Directory Computer object and the  Service Manager **Microsoft.Windows.Computer** class properties.
+## Computer/Microsoft.Windows.Computer
+The following table describes the mapping between the attributes of the Active Directory Computer object and the  Service Manager **Microsoft.Windows.Computer** class properties.
 
 |Active Directory computer attribute|Microsoft.Windows.Computer property|
 |---------------------------------------|---------------------------------------|
-|msDS\-SiteName|ActiveDirectorySite|
+|msDS-SiteName|ActiveDirectorySite|
 |dNSHostName|DNSName|
 |ipHostNumber|IPAddress|
 |networkAddress|NetworkName|
-|msDS\-PrincipalName|PrincipalName|
+|msDS-PrincipalName|PrincipalName|
 |displayname|displayname|
 |samaccountname|NetbiosComputerName|
 |objectSid|ActiveDirectoryObjectSid|

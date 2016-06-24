@@ -21,7 +21,7 @@ You create a calendar item to define work days, work hours, and holidays in Serv
 
 3.  In the **Tasks** pane, under **Calendar**, click **Create Calendar**.
 
-4.  In the **Create\/Edit Calendar** dialog box, in the **Title** box, type a title for the calendar. For example, type **Normal Work Calendar**.
+4.  In the **Create/Edit Calendar** dialog box, in the **Title** box, type a title for the calendar. For example, type **Normal Work Calendar**.
 
 5.  In the **Time zone** list, select the time zone of your location.
 
@@ -29,6 +29,6 @@ You create a calendar item to define work days, work hours, and holidays in Serv
 
 7.  Under **Holidays**, click **Add** to define any holidays that your organization does not normally work. In the **Add Holiday** dialog box, type the name and select the date of the holiday and then click **OK** to close the dialog box.
 
-8.  Click **OK** to close the **Create\/Edit Calendar** dialog box.
+8.  Click **OK** to close the **Create/Edit Calendar** dialog box.
 
 

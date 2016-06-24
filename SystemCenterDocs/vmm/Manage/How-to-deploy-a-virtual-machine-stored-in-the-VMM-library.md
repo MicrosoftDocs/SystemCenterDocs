@@ -8,7 +8,7 @@ ms.topic: article
 ms.assetid: c679edf5-58c8-4518-9716-32428bf8ca78
 ---
 # How to deploy a virtual machine stored in the VMM library
-Use the following procedure to deploy a virtual machine that is stored in the Virtual Machine Manager \(VMM\) library. For information about creating a virtual machine and storing it in the library, see [Creating and deploying virtual machines in VMM](Creating-and-deploying-virtual-machines-in-VMM.md).
+Use the following procedure to deploy a virtual machine that is stored in the Virtual Machine Manager (VMM) library. For information about creating a virtual machine and storing it in the library, see [Creating and deploying virtual machines in VMM](Creating-and-deploying-virtual-machines-in-VMM.md).
 
 ### To deploy a virtual machine stored in the VMM library
 
@@ -22,9 +22,9 @@ Use the following procedure to deploy a virtual machine that is stored in the Vi
 
 4.  On the **Select Host** page, select a host on which to deploy the virtual machine. In the list of hosts, all available hosts are given a rating of 0–5 stars, based on their suitability to host the virtual machine. The host rating levels are recommendations. You can select any host that has the required disk space, even if the host has a zero host rating. For more information, see [Understanding virtual machine placement and ratings in VMM](Understanding-virtual-machine-placement-and-ratings-in-VMM.md).
 
-    **Network optimization** If a host has network optimization enabled, a green check mark appears in the **Network Optimization** column. Network optimization capabilities apply to Hyper\-V hosts running Windows Server 2008 R2. For information about network optimization and the hardware that supports it, see the Windows Server 2008 R2 topics, [Using Virtual Machine Chimney](http://technet.microsoft.com/library/gg162677.aspx) and [Using Virtual Machine Queue](http://technet.microsoft.com/library/gg162704.aspx).
+    **Network optimization** If a host has network optimization enabled, a green check mark appears in the **Network Optimization** column. Network optimization capabilities apply to Hyper-V hosts running Windows Server 2008 R2. For information about network optimization and the hardware that supports it, see the Windows Server 2008 R2 topics, [Using Virtual Machine Chimney](http://technet.microsoft.com/library/gg162677.aspx) and [Using Virtual Machine Queue](http://technet.microsoft.com/library/gg162704.aspx).
 
-    **Highly available virtual machines** To make a virtual machine a highly available virtual machine \(HAVM\), you can migrate the virtual machine to a host that is in a host cluster, even if the virtual machine has not been configured as highly available. The wizard also enables you to migrate a highly available virtual machine to a stand\-alone host. Because of the resulting change to the virtual machine’s highly available setting, either of these actions requires confirmation.
+    **Highly available virtual machines** To make a virtual machine a highly available virtual machine (HAVM), you can migrate the virtual machine to a host that is in a host cluster, even if the virtual machine has not been configured as highly available. The wizard also enables you to migrate a highly available virtual machine to a stand-alone host. Because of the resulting change to the virtual machine’s highly available setting, either of these actions requires confirmation.
 
     > [!NOTE]
     > For more information about environmental factors and settings that affect virtual machine placement in VMM, see [Understanding virtual machine placement and ratings in VMM](Understanding-virtual-machine-placement-and-ratings-in-VMM.md).
@@ -37,9 +37,9 @@ Use the following procedure to deploy a virtual machine that is stored in the Vi
 
         **SAN Explanation** or **Deployment and Transfer Explanation**— Lists factors that make a SAN transfer unavailable.
 
-        In addition, the **Deployment and Transfer Explanation** tab provides an explanation if fast file copy cannot be used. Fast file copy is based on the Windows Offloaded Data Transfers \(ODX\) feature, introduced in Windows Server 2012 R2. For information about ODX, see [Windows Offloaded Data Transfers Overview](http://technet.microsoft.com/library/hh831628.aspx).
+        In addition, the **Deployment and Transfer Explanation** tab provides an explanation if fast file copy cannot be used. Fast file copy is based on the Windows Offloaded Data Transfers (ODX) feature, introduced in Windows Server 2012 R2. For information about ODX, see [Windows Offloaded Data Transfers Overview](http://technet.microsoft.com/library/hh831628.aspx).
 
-    -   To change the host rating criteria for the current virtual machine, click **Customize Ratings**. You can change the placement goal and the relative importance that is placed on the availability of CPU, memory, disk I\/O capacity, and network capacity for the current virtual machine. For more information, see [Understanding virtual machine placement and ratings in VMM](Understanding-virtual-machine-placement-and-ratings-in-VMM.md).
+    -   To change the host rating criteria for the current virtual machine, click **Customize Ratings**. You can change the placement goal and the relative importance that is placed on the availability of CPU, memory, disk I/O capacity, and network capacity for the current virtual machine. For more information, see [Understanding virtual machine placement and ratings in VMM](Understanding-virtual-machine-placement-and-ratings-in-VMM.md).
 
 5.  On the **Select Path** page, do the following:
 
@@ -47,7 +47,7 @@ Use the following procedure to deploy a virtual machine that is stored in the Vi
 
     2.  If you selected a path other than a default virtual machine path, and you want to store other virtual machines on that path, select the **Add this path to the list of host default paths** check box to add the path to the default paths on the host.
 
-    3.  If SAN transfers are enabled for this deployment, by default, the virtual machine is transferred to the host over the storage area network \(SAN\). If you do not want to perform a SAN transfer, select the **Transfer over the network even if a SAN transfer is available** check box. If SAN transfers are not available for this deployment, this option is not available.
+    3.  If SAN transfers are enabled for this deployment, by default, the virtual machine is transferred to the host over the storage area network (SAN). If you do not want to perform a SAN transfer, select the **Transfer over the network even if a SAN transfer is available** check box. If SAN transfers are not available for this deployment, this option is not available.
 
 6.  On the **Select Networks** page, select the network settings for the virtual machine to use.
 

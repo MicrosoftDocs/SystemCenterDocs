@@ -8,7 +8,7 @@ ms.topic: article
 ms.assetid: 43c1b9f1-a8cf-4075-81df-2e78d64c3cfb
 ---
 # How to connect VMM to Operations Manager
-You can connect Virtual Machine Manager \(VMM\) to Operations Manager so that they work in an integrated way. To connect VMM to Operations Manager, you must choose a supported version of Operations Manager, as described in [Preparing your environment for System Center 2016 - Virtual Machine Manager](../Deploy/Preparing-your-environment-for-System-Center-2016---Virtual-Machine-Manager.md).
+You can connect Virtual Machine Manager (VMM) to Operations Manager so that they work in an integrated way. To connect VMM to Operations Manager, you must choose a supported version of Operations Manager, as described in [Preparing your environment for System Center 2016 - Virtual Machine Manager](../Deploy/Preparing-your-environment-for-System-Center-2016---Virtual-Machine-Manager.md).
 
 You must also configure the Operations Manager server to work with VMM.
 
@@ -32,13 +32,13 @@ Before you connect VMM to Operations Manager, perform the following actions:
 
     To determine which version of Windows PowerShell is on a server, run the following:
 
-    **Get\-Host | Select\-Object Version**
+    **Get-Host | Select-Object Version**
 
 2.  Make sure that port 5724 is open between VMM and Operations Manager.
 
 3.  Install an Operations Manager operations console on the VMM management server.
 
-4.  Install Operations Manager agents on the VMM management server and all hosts under management by VMM \(managed hosts\). For more information, see[Operations Manager Agent Installation Methods](http://technet.microsoft.com/library/hh551142.aspx).
+4.  Install Operations Manager agents on the VMM management server and all hosts under management by VMM (managed hosts). For more information, see[Operations Manager Agent Installation Methods](http://technet.microsoft.com/library/hh551142.aspx).
 
 5.  Verify that the managed hosts on which you installed agents are visible in Operations Manager by performing the following actions:
 
@@ -46,7 +46,7 @@ Before you connect VMM to Operations Manager, perform the following actions:
 
     2.  In the **Administration** pane, under **Device Management**, click **Agent Managed**. Verify that the expected hosts are listed.
 
-    3.  Double\-click a host in the list, click the **Security** tab, and then ensure that **Allow this agent to act as a proxy and discover managed objects on other computers** has been selected. Repeat this step for each of the hosts.
+    3.  Double-click a host in the list, click the **Security** tab, and then ensure that **Allow this agent to act as a proxy and discover managed objects on other computers** has been selected. Repeat this step for each of the hosts.
 
 6.  In Operations Manager, import the necessary management packs, as described in [How to Import an Operations Manager Management Pack](http://technet.microsoft.com/library/hh212691.aspx). You can find management packs, sometimes called “monitoring packs,” by searching the [Microsoft Download Center](http://www.microsoft.com/downloads/default.aspx). The necessary management packs are as follows:
 
@@ -54,7 +54,7 @@ Before you connect VMM to Operations Manager, perform the following actions:
 
     -   Management packs that are required by the management pack for Windows Server 2008 Internet Information Services 7:
 
-        -   Windows Server 2008 Operating System \(Discovery\)
+        -   Windows Server 2008 Operating System (Discovery)
 
         -   Windows Server Operating System Library
 
@@ -95,7 +95,7 @@ Before you connect VMM to Operations Manager, perform the following actions:
     > [!IMPORTANT]
     > This account must be a member of the Operations Manager Administrator role.
 
-6.  Select **Enable Performance and Resource Optimization \(PRO\)**, if desired.
+6.  Select **Enable Performance and Resource Optimization (PRO)**, if desired.
 
 7.  Select **Enable maintenance mode integration with Operations Manager**, if desired.
 
@@ -113,7 +113,7 @@ Before you connect VMM to Operations Manager, perform the following actions:
 
     You can view the status of the new connection in the **Jobs** workspace.
 
-11. With **System Center Settings** still selected, in the results pane, right\-click **Operations Manager Server**, and then click **Properties**.
+11. With **System Center Settings** still selected, in the results pane, right-click **Operations Manager Server**, and then click **Properties**.
 
     The **Operation Manager Settings** dialog box opens.
 
@@ -140,7 +140,7 @@ When you set up integration with Operations Manager, the Fabric Health Dashboard
 
 #### To update management packs
 
-1.  On the VMM management server, open the management packs directory. By default, the directory location is C:\\Program Files\\Microsoft System Center 2012\\Virtual Machine Manager\\ManagementPacks.
+1.  On the VMM management server, open the management packs directory. By default, the directory location is C:\Program Files\Microsoft System Center 2012\Virtual Machine Manager\ManagementPacks.
 
 2.  Back up the existing .mp files.
 
@@ -150,7 +150,7 @@ When you set up integration with Operations Manager, the Fabric Health Dashboard
 
 5.  Connect to the Operations Manager server, by using the procedure in this topic.
 
-After the connection has been set up, open the **Settings** workspace. In the **Settings** pane, click **System Center Settings**.  In the results pane, right\-click **Operations Manager Server**, and then click **Properties**. On the **Management Pack** page, verify the installed version of the management packs.
+After the connection has been set up, open the **Settings** workspace. In the **Settings** pane, click **System Center Settings**.  In the results pane, right-click **Operations Manager Server**, and then click **Properties**. On the **Management Pack** page, verify the installed version of the management packs.
 
 ## <a name="BKMK_remove"></a>Remove an Operations Manager server connection
 
@@ -158,14 +158,14 @@ After the connection has been set up, open the **Settings** workspace. In the **
 
 1.  In the VMM console, open the **Settings** workspace.
 
-2.  In the **Settings** pane, click **System Center Settings**, right\-click **Operations Manager Server**, and then click **Remove**.
+2.  In the **Settings** pane, click **System Center Settings**, right-click **Operations Manager Server**, and then click **Remove**.
 
     When prompted, verify that you want to remove the server.
 
 You can check the progress of the removal in the **Jobs** workspace.
 
 > [!NOTE]
-> The VMM management packs are not removed from Operations Manager, but any Connectors that have been added are removed. \(A Connector is a custom service or program that makes it possible for Operations Manager to communicate with other software.\)
+> The VMM management packs are not removed from Operations Manager, but any Connectors that have been added are removed. (A Connector is a custom service or program that makes it possible for Operations Manager to communicate with other software.)
 
 If you want to reconnect VMM to the Operations Manager server, see [To set up integration with Operations Manager](How-to-connect-VMM-to-Operations-Manager.md#BKMK_integration).
 

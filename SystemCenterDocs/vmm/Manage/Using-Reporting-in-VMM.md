@@ -8,7 +8,7 @@ ms.topic: article
 ms.assetid: ce536f0a-0614-4220-9081-53f4ecec1a3b
 ---
 # Using Reporting in VMM
-After you connect Virtual Machine Manager \(VMM\) with System Center Operations Manager, you can create and view reports relating to VMM managed components, including virtual machine hosts, virtual machines, and VMM\-related servers \(for example, library servers.\)
+After you connect Virtual Machine Manager (VMM) with System Center Operations Manager, you can create and view reports relating to VMM managed components, including virtual machine hosts, virtual machines, and VMM-related servers (for example, library servers.)
 
 > [!NOTE]
 > For information about connecting VMM to System Center Operations Manager, see [How to connect VMM to Operations Manager](How-to-connect-VMM-to-Operations-Manager.md).
@@ -38,7 +38,7 @@ You can view the following preconfigured reports for VMM managed components.
 |SAN Usage Forecasting|Predicts SAN usage based on history.|
 |Virtual Machine Allocation|Provides information about allocation of virtual machines.|
 |Virtual Machine Utilization|Provides information about resource utilization by virtual machines, including average usage and total or maximum values for virtual machine processors, memory, and disk space.|
-|Virtualization Candidates|Helps identify physical computers that are good candidates for conversion to virtual machines. You can use the Virtualization Candidates report to identify little\-used servers and display average values for a set of commonly requested performance counters for CPU, memory, and disk usage, along with hardware configurations, including processor speed, number of processors, and total RAM. You can limit the report to computers that meet specified CPU and RAM requirements, and you can sort the results by selected columns in the report.|
+|Virtualization Candidates|Helps identify physical computers that are good candidates for conversion to virtual machines. You can use the Virtualization Candidates report to identify little-used servers and display average values for a set of commonly requested performance counters for CPU, memory, and disk usage, along with hardware configurations, including processor speed, number of processors, and total RAM. You can limit the report to computers that meet specified CPU and RAM requirements, and you can sort the results by selected columns in the report.|
 
 You can also design your own reports.
 

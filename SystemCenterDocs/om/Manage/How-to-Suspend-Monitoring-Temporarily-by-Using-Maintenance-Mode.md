@@ -70,7 +70,7 @@ The following section describes how to work with the different options for the o
 
 3.  In the **Monitoring** workspace, expand **Monitoring**, and then click **Windows Computers**.
 
-4.  In the **Windows Computers** pane, right\-click the computer that you want to place into maintenance mode, click **Maintenance Mode**, and then click **Start Maintenance Mode**. You can use ctrl\+click or shift\+click to select multiple computers to place into maintenance mode.
+4.  In the **Windows Computers** pane, right-click the computer that you want to place into maintenance mode, click **Maintenance Mode**, and then click **Start Maintenance Mode**. You can use ctrl+click or shift+click to select multiple computers to place into maintenance mode.
 
 5.  In the **Maintenance Mode Settings** dialog box, under **Apply to**, click **Selected objects only** if only the computer is to be placed into maintenance mode; otherwise, click **Selected objects and all their contained objects**.
 
@@ -81,7 +81,7 @@ The following section describes how to work with the different options for the o
 8.  Under **Duration**, select and enter the **Number of minutes** or select and enter the **Specific end time**, and then click **OK**. A maintenance mode icon appears in the **Computers** pane, in the **Maintenance Mode** column for the computer you selected.
 
     > [!NOTE]
-    > The minimum value for **Number of minutes** is 5. The maximum value is 1,051,200 \(2 years\).
+    > The minimum value for **Number of minutes** is 5. The maximum value is 1,051,200 (2 years).
 
 ### To edit maintenance mode settings for a monitored object
 
@@ -91,7 +91,7 @@ The following section describes how to work with the different options for the o
 
 3.  In the **Monitoring** workspace, expand **Monitoring**, and then click **Windows Computers**.
 
-4.  Right\-click the computer in the **Windows Computers** pane whose settings you want to edit, click **Maintenance Mode**, and then click **Edit Maintenance Mode settings**.
+4.  Right-click the computer in the **Windows Computers** pane whose settings you want to edit, click **Maintenance Mode**, and then click **Edit Maintenance Mode settings**.
 
 5.  In the **Maintenance Mode Settings** dialog box, edit the settings you want to change, and then click **OK**.
 
@@ -103,7 +103,7 @@ The following section describes how to work with the different options for the o
 
 3.  In the **Monitoring** workspace, expand **Monitoring**, and then click **Windows Computers**.
 
-4.  In the **Windows Computers** pane, right\-click the computer that you want to take out of maintenance mode, click **Maintenance Mode**, and then click **Stop Maintenance Mode**.
+4.  In the **Windows Computers** pane, right-click the computer that you want to take out of maintenance mode, click **Maintenance Mode**, and then click **Stop Maintenance Mode**.
 
 5.  In the **Maintenance Mode** dialog box, do the following:
 
@@ -114,7 +114,7 @@ The following section describes how to work with the different options for the o
 6.  In the **Windows Computers** pane, the maintenance mode icon disappears from the **Maintenance Mode** column for the computer you selected.
 
     > [!NOTE]
-    > Because Operations Manager polls maintenance mode settings only once every 5 minutes, there can be a delay in an object's scheduled removal from maintenance mode.
+    > Because Operations Manager polls maintenance mode settings only once every 5 minutes, there can be a delay in an object's scheduled removal from maintenance mode.
 
 ## Scheduling Maintenance Mode
  

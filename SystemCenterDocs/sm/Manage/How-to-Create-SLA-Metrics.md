@@ -11,7 +11,7 @@ ms.topic: article
 ms.assetid: 6215e448-568f-4956-8d4c-60b685ce9d3e
 ---
 # How to Create SLA Metrics
-In Service Manager you create a service level management metric, which is analogous to service level agreements \(SLAs\), as a time metric to measure the difference between start and end times for incidents and service requests. After you define a metric, you associate it with a service level objective. If the metric is already associated with a service level objective, it appears in the **Related SLA\(s\)** area.
+In Service Manager you create a service level management metric, which is analogous to service level agreements (SLAs), as a time metric to measure the difference between start and end times for incidents and service requests. After you define a metric, you associate it with a service level objective. If the metric is already associated with a service level objective, it appears in the **Related SLA(s)** area.
 
 ### To create a metric for incidents
 
@@ -19,7 +19,7 @@ In Service Manager you create a service level management metric, which is analog
 
 2.  In the **Administration** pane, expand **Service Level Management**, and then click **Metric**.
 
-3.  In the **Create\/Edit SLA Metric** dialog box, in the **Title** box, type a title for the metric. For example, type **Incident Metric**.
+3.  In the **Create/Edit SLA Metric** dialog box, in the **Title** box, type a title for the metric. For example, type **Incident Metric**.
 
 4.  In the **Description** box, type a description of the metric. For example, type **Time that incidents are resolved**.
 
@@ -29,7 +29,7 @@ In Service Manager you create a service level management metric, which is analog
 
 7.  Click the list next to **End date**, and then select the item that you want to use to define the end date. For example, select **Resolved date**.
 
-8.  Click **OK** to close the **Create\/Edit SLA Metric** dialog box.
+8.  Click **OK** to close the **Create/Edit SLA Metric** dialog box.
 
 ### To create a metric for service requests
 
@@ -37,7 +37,7 @@ In Service Manager you create a service level management metric, which is analog
 
 2.  In the **Administration** pane, expand **Service Level Management**, and then click **Metric**.
 
-3.  In the **Create\/Edit SLA Metric** dialog box, in the **Title** box, type a title for the metric. For example, type **Service Request Metric**.
+3.  In the **Create/Edit SLA Metric** dialog box, in the **Title** box, type a title for the metric. For example, type **Service Request Metric**.
 
 4.  In the **Description** box, type a description of the metric. For example, type **Time that service requests are completed**.
 
@@ -47,6 +47,6 @@ In Service Manager you create a service level management metric, which is analog
 
 7.  Click the list next to **End date**, and then select the item that you want to use to define the end date. For example, select **Completed date**.
 
-8.  Click **OK** to close the **Create\/Edit SLA Metric** dialog box.
+8.  Click **OK** to close the **Create/Edit SLA Metric** dialog box.
 
 

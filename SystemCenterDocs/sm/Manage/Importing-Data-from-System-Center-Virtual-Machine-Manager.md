@@ -11,7 +11,7 @@ ms.topic: article
 ms.assetid: c43bfb32-0c1a-4e8e-8f10-373e68fc11a4
 ---
 # Importing Data from System Center Virtual Machine Manager
-You can import objects, such as VM templates, service templates, and storage classifications that are created in Virtual Machine Manager \(VMM\) into the Service Manager database by creating a Virtual Machine Manager connector. After you import these objects into the Service Manager database, you can use these objects, for example, when you create Request Offerings.
+You can import objects, such as VM templates, service templates, and storage classifications that are created in Virtual Machine Manager (VMM) into the Service Manager database by creating a Virtual Machine Manager connector. After you import these objects into the Service Manager database, you can use these objects, for example, when you create Request Offerings.
 
 If, in your environment, your VMM server pushes discovery data to an Operations Manager server, you will want to create an Operations Manager CI connector. You must make sure that the VMM management pack, Microsoft.SystemCenter.VirtualMachineManager.2016.Discovery, is synchronized with the Service Manager management server. You can create the Operations Manager CI connector either before or after creating the Virtual Machine Manager connector.
 
@@ -33,14 +33,14 @@ Use the following procedures to create a System Center Virtual Machine Manager c
 
     2.  On the **General** page, in the **Name** box, type a name for the new connector. Make sure that **Enable this connector** is selected, and then click **Next**.
 
-    3.  On the **Connection** page, in the **Server Information** area, type the same of the computer hosting Virtual Machine Manager \(VMM\).
+    3.  On the **Connection** page, in the **Server Information** area, type the same of the computer hosting Virtual Machine Manager (VMM).
 
     4.  On the **Connection** page, in the **Credentials** area, either select an existing account or click **New**, and then do the following:
 
         1.  In the **Run As Account** dialog box, in the **Display name** box, type a name for the Run As account. In the **Account** list, select **Windows Account**. Enter the credentials for an account that has rights to connect VMM, and then click **OK**. On the **Connection** page, click **Test Connection**.
 
             > [!NOTE]
-            > Special characters \(such as the ampersand \[&\]\) in the **User Name** box are not supported.
+            > Special characters (such as the ampersand [&]) in the **User Name** box are not supported.
 
         2.  In the **Test Connection** dialog box, make sure that **The connection to the server was successful** appears, and then click **OK**. On the **Connection** page, click **Next**.
 
@@ -81,7 +81,7 @@ Use the following procedures to create a System Center Virtual Machine Manager c
 
     4.  In the **Advanced Search** area, click **Browse**.
 
-    5.  In the drop\-down list \(located to the right of the **Type to filter** box\), select **All basic classes**.
+    5.  In the drop-down list (located to the right of the **Type to filter** box), select **All basic classes**.
 
     6.  In the **Type to filter** box, type **virtual machine template**, click **Virtual Machine Template**, click **OK**, and then click **OK** to save and close the form.
 
@@ -112,7 +112,7 @@ To ensure that the Service Manager database is up to date, the Virtual Machine M
 2.  In the **Connectors** pane, examine the start time and finish time to determine when the synchronization process started and finished.
 
     > [!NOTE]
-    > Synchronization events are also written to the Event log in the Applications and Services Logs\/Operations Manager folder.
+    > Synchronization events are also written to the Event log in the Applications and Services Logs/Operations Manager folder.
 
 
 

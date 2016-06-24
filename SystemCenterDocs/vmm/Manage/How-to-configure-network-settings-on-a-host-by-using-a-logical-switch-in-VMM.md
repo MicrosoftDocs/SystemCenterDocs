@@ -11,7 +11,7 @@ ms.topic: article
 ms.assetid: 06b231a6-4587-4e91-887e-583c0f1e380a
 ---
 # How to configure network settings on a host by using a logical switch in VMM
-With Virtual Machine Manager \(VMM\), you can configure network adapters on Hyper\-V hosts by applying the settings in a logical switch to the adapters. The network adapters that you configure can be physical network adapters or virtual network adapters on the hosts.
+With Virtual Machine Manager (VMM), you can configure network adapters on Hyper-V hosts by applying the settings in a logical switch to the adapters. The network adapters that you configure can be physical network adapters or virtual network adapters on the hosts.
 
 For other ways of configuring network adapters on a host, see the links at the end of this topic.
 
@@ -23,10 +23,10 @@ Do the tasks in this topic in this order:
 
 After you perform the procedures in this topic, as a best practice, review the procedures in [How to bring host network adapters into compliance with logical switch settings in VMM](How-to-bring-host-network-adapters-into-compliance-with-logical-switch-settings-in-VMM.md).
 
-**Account requirements** To complete these procedures, you must be a member of the Administrator user role or a member of the Delegated Administrator user role where the management scope includes the host group where the Hyper\-V host is located.
+**Account requirements** To complete these procedures, you must be a member of the Administrator user role or a member of the Delegated Administrator user role where the management scope includes the host group where the Hyper-V host is located.
 
 ## <a name="BKMK_use"></a>Specify whether a network adapter is used for virtual machines, host management, neither, or both
-Regardless of any logical switches you are using in your network configuration, you must specify whether a network adapter in a host is used for virtual machines, host management, neither, or both. \(The host must already be under management in VMM.\)
+Regardless of any logical switches you are using in your network configuration, you must specify whether a network adapter in a host is used for virtual machines, host management, neither, or both. (The host must already be under management in VMM.)
 
 #### To specify whether a network adapter is used for virtual machines, host management, neither, or both
 
@@ -34,7 +34,7 @@ Regardless of any logical switches you are using in your network configuration, 
 
 2.  In the **Fabric** pane, expand **Servers** > **All Hosts**.
 
-3.  Navigate to the host, right\-click it, and click **Properties**.
+3.  Navigate to the host, right-click it, and click **Properties**.
 
 4.  In the **Properties** dialog box, click the **Hardware** tab.
 
@@ -53,7 +53,7 @@ Before you begin the following procedure, make sure you have configured the buil
 
 2.  In the **Fabric** pane, expand **Servers** > **All Hosts**.
 
-3.  Navigate to the host, right\-click it, and click **Properties**.
+3.  Navigate to the host, right-click it, and click **Properties**.
 
 4.  In the **Properties** dialog box, click the **Virtual Switches** tab.
 
@@ -82,7 +82,7 @@ Before you begin the following procedure, make sure you have configured the buil
 The following tips may also be useful:
 
 > [!TIP]
-> **Network optimizations**: VMM can detect whether the operating system on your host provides the network optimizations called Virtual Machine Queue \(VMQ\) or TCP Chimney Offload. If VMM detects either of them, it displays a message saying **Network optimization is available**. Look for the message in the **Host Properties** dialog box, on the **Virtual Switches** tab.
+> **Network optimizations**: VMM can detect whether the operating system on your host provides the network optimizations called Virtual Machine Queue (VMQ) or TCP Chimney Offload. If VMM detects either of them, it displays a message saying **Network optimization is available**. Look for the message in the **Host Properties** dialog box, on the **Virtual Switches** tab.
 
 > [!TIP]
 > **Compliance of network settings**: If you're using logical switches, you can later check to see if the network adapter settings on a host are still in compliance with the logical switch settings. If they’re not, you can use VMM to bring them back into compliance. For more information, see [How to bring host network adapters into compliance with logical switch settings in VMM](How-to-bring-host-network-adapters-into-compliance-with-logical-switch-settings-in-VMM.md).

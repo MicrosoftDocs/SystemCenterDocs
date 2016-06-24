@@ -8,10 +8,10 @@ ms.topic: article
 ms.assetid: 435cbfad-3cc6-465a-aee9-ca78c02d525f
 ---
 # How to provision storage logical units in VMM
-You can use the following procedure to create logical units from storage pools that are managed by Virtual Machine Manager \(VMM\).
+You can use the following procedure to create logical units from storage pools that are managed by Virtual Machine Manager (VMM).
 
 > [!NOTE]
-> If you allocate a storage pool to a host group, you can also create and assign logical units directly from managed servers that are running Hyper\-V in the host group. For more information, see [How to configure storage on a Hyper-V host in VMM](How-to-configure-storage-on-a-Hyper-V-host-in-VMM.md) and [How to configure storage on a Hyper-V host cluster in VMM](How-to-configure-storage-on-a-Hyper-V-host-cluster-in-VMM.md).
+> If you allocate a storage pool to a host group, you can also create and assign logical units directly from managed servers that are running Hyper-V in the host group. For more information, see [How to configure storage on a Hyper-V host in VMM](How-to-configure-storage-on-a-Hyper-V-host-in-VMM.md) and [How to configure storage on a Hyper-V host cluster in VMM](How-to-configure-storage-on-a-Hyper-V-host-cluster-in-VMM.md).
 
 Before you begin this procedure, ensure that one or more storage pools are defined in VMM management. For more information, see [Overview: configuring block storage VMM](Overview--configuring-block-storage-VMM.md) and [How to add and classify SMI-S and SMP storage devices in VMM](How-to-add-and-classify-SMI-S-and-SMP-storage-devices-in-VMM.md).
 
@@ -23,7 +23,7 @@ Before you begin this procedure, ensure that one or more storage pools are defin
 
 2.  In the **Fabric** pane, click **Storage**.
 
-3.  Right\-click **Classification and Pools**, and then click **Create Logical Unit**.
+3.  Right-click **Classification and Pools**, and then click **Create Logical Unit**.
 
 4.  To create a logical unit, in the **Create Logical Unit** dialog box, do the following:
 
@@ -33,7 +33,7 @@ Before you begin this procedure, ensure that one or more storage pools are defin
 
     3.  Optionally, in the **Description** box, enter a description for the logical unit.
 
-    4.  In the **Size \(GB\)** box, enter the size of the logical unit, in gigabytes.
+    4.  In the **Size (GB)** box, enter the size of the logical unit, in gigabytes.
 
     5.  When you are finished, click **OK**.
 

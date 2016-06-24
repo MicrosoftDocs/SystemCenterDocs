@@ -35,7 +35,7 @@ The Service Manager Administrator configures release management settings by usin
 
     2.  If you want to change the maximum number of files that you can attach to a release record, change the default value in the **Maximum number of attached files** box. For example, type **2**.
 
-    3.  If you want to change the maximum size of files that you attach to a release record, change the default value in the **Maximum size \(KB\)** box. For example, type **300**.
+    3.  If you want to change the maximum size of files that you attach to a release record, change the default value in the **Maximum size (KB)** box. For example, type **300**.
 
 6.  Click **OK** to close the **Release Management Settings** dialog box.
 
@@ -50,7 +50,7 @@ You can configure notifications for release records by completing the following 
 
 2.  In the **Administration** pane, expand **Administration**, expand **Workflows**, and then click **Configuration**.
 
-3.  In the **Configuration** pane, double\-click **Release Record Event Workflow Configuration**.
+3.  In the **Configuration** pane, double-click **Release Record Event Workflow Configuration**.
 
 4.  In the **Configure Workflows** dialog box, click **Add**.
 
@@ -60,7 +60,7 @@ You can configure notifications for release records by completing the following 
 
     2.  On the **Workflow Information** page, in the **Name** box, type a name for the workflow. For example, type **Updated Release Records**.
 
-    3.  In the **Description** box, type a description of what the workflow does. For example, type **This workflow notifies the assigned\-to user and the created\-by user when release records are updated.**
+    3.  In the **Description** box, type a description of what the workflow does. For example, type **This workflow notifies the assigned-to user and the created-by user when release records are updated.**
 
     4.  In the **Check for events** list, select **When an object is created** or select **When an object is updated**, ensure that the **Enabled** check box is selected, and then click **Next**.
 

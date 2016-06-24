@@ -8,13 +8,13 @@ ms.topic: article
 ms.assetid: 0b4e7540-3db5-4f79-8776-2571ff99e8c9
 ---
 # Managing Scale-Out File Servers with VMM
-Virtual Machine Manager \(VMM\) supports both the Shared Storage Spaces \(released in Windows Server 2012\) and Storage Spaces Direct \(Windows Server Technical Preview\) types of Scale\-Out File Server. For more information about these technologies, see:
+Virtual Machine Manager (VMM) supports both the Shared Storage Spaces (released in Windows Server 2012) and Storage Spaces Direct (Windows Server Technical Preview) types of Scale-Out File Server. For more information about these technologies, see:
 
 -   [Storage Spaces Overview](https://technet.microsoft.com/library/hh831739.aspx)
 
 -   [Storage Spaces Direct in Windows Server 2016 Technical Preview](https://technet.microsoft.com/library/mt126109.aspx)
 
-This section describes how to use VMM to provision and manage Scale\-Out File Servers. It includes the following sections and topics:
+This section describes how to use VMM to provision and manage Scale-Out File Servers. It includes the following sections and topics:
 
 -   [Creating a Scale-Out File Server in VMM from existing Windows servers](Creating-a-Scale-Out-File-Server-in-VMM-from-existing-Windows-servers.md)
 

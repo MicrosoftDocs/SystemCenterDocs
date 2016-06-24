@@ -10,7 +10,7 @@ ms.topic: article
 ms.assetid: 094b82ff-3baf-4ed2-bd6d-6d53e24e3916
 ---
 # Managing hosts and host clusters with VMM
-This section describes how to bring host and storage servers under management in Virtual Machine Manager \(VMM\), and how to configure them. It includes the following sections and topics:
+This section describes how to bring host and storage servers under management in Virtual Machine Manager (VMM), and how to configure them. It includes the following sections and topics:
 
 -   [Managing host groups in VMM](Managing-host-groups-in-VMM.md)
 

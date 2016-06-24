@@ -25,19 +25,19 @@ Service Management Automation is a workflow management solution for Windows Azur
 
 -   [How to install the Service Management Automation web service](How-to-install-the-Service-Management-Automation-web-service.md)
 
-    Provides step\-by\-step instructions to install the Service Management Automation web service.
+    Provides step-by-step instructions to install the Service Management Automation web service.
 
 -   [How to install the Service Management Automation runbook worker](How-to-install-the-Service-Management-Automation-runbook-worker.md)
 
-    Provides step\-by\-step instructions to install a Service Management Automation runbook worker.
+    Provides step-by-step instructions to install a Service Management Automation runbook worker.
 
 -   [How to install the Service Management Automation PowerShell module](How-to-install-the-Service-Management-Automation-PowerShell-module.md)
 
-    Provides step\-by\-step instructions to install a Service Management Automation PowerShell module.
+    Provides step-by-step instructions to install a Service Management Automation PowerShell module.
 
 -   [Install Service Management Automation from a Command Prompt window](Install-Service-Management-Automation-from-a-Command-Prompt-window.md)
 
-    Provides complete documentation of the available command\-line options for installing Service Management Automation.
+    Provides complete documentation of the available command-line options for installing Service Management Automation.
 
 -   [Post-installation tasks for Service Management Automation](Post-installation-tasks-for-Service-Management-Automation.md)
 
@@ -45,6 +45,6 @@ Service Management Automation is a workflow management solution for Windows Azur
 
 -   [How to uninstall Service Management Automation](How-to-uninstall-Service-Management-Automation.md)
 
-    Provides step\-by\-step instructions to install for uninstalling Service Management Automation.
+    Provides step-by-step instructions to install for uninstalling Service Management Automation.
 
 

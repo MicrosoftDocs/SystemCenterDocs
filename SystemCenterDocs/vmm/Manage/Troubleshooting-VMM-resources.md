@@ -8,7 +8,7 @@ ms.topic: article
 ms.assetid: d8bfec1d-83c8-44aa-a672-2dfc4f50074c
 ---
 # Troubleshooting VMM resources
-The following troubleshooting resources for Virtual Machine Manager \(VMM\) are available on the TechNet Wiki:
+The following troubleshooting resources for Virtual Machine Manager (VMM) are available on the TechNet Wiki:
 
 |Resource|Description|
 |------------|---------------|
@@ -19,7 +19,7 @@ The following are other troubleshooting resources that are available for VMM:
 
 |Resource|Description|
 |------------|---------------|
-|Virtual Machine Manager Configuration Analyzer \(VMMCA\) in [System Center 2012 – Virtual Machine Manager Component Add-ons and Extensions](http://www.microsoft.com/en-us/download/details.aspx?id=29309) on the Microsoft Download Center|A diagnostic tool that you can use to evaluate important post\-installation configuration settings for computers that either might serve or are serving VMM roles or other VMM functions.|
+|Virtual Machine Manager Configuration Analyzer (VMMCA) in [System Center 2012 – Virtual Machine Manager Component Add-ons and Extensions](http://www.microsoft.com/en-us/download/details.aspx?id=29309) on the Microsoft Download Center|A diagnostic tool that you can use to evaluate important post-installation configuration settings for computers that either might serve or are serving VMM roles or other VMM functions.|
 |Articles in the [Microsoft Support Knowledge Base](http://support.microsoft.com)|Searchable articles describing issues and workarounds for VMM.|
 |[System Center Virtual Machine Manager Forums](https://social.technet.microsoft.com/Forums/systemcenter/home?category=virtualmachinemanager)|Forums for asking questions about or discussing VMM.|
 

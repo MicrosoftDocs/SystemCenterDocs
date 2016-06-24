@@ -11,7 +11,7 @@ ms.topic: article
 ms.assetid: b952e8ab-ce6f-4014-9e96-50cedaf415ed
 ---
 # Installing a Highly Available VMM Management Server
-The procedures in this section describe how to do the following in Virtual Machine Manager \(VMM\):
+The procedures in this section describe how to do the following in Virtual Machine Manager (VMM):
 
 -   [How to Install a Highly Available VMM Management Server](How-to-Install-a-Highly-Available-VMM-Management-Server.md)
 
@@ -33,7 +33,7 @@ Before you begin the installation of a highly available VMM management server, e
 
 -   You have installed and configured the failover cluster on which you will install the highly available VMM management server.  For more information about installing and configuring a failover cluster, see[Failover Clustering Overview](http://technet.microsoft.com/library/hh831579.aspx).
 
--   You are prepared to use distributed key management to store encryption keys in Active Directory Domain Services \(AD DS\). You must use distributed key management for a highly available VMM management server. For more information about distributed key management, see [Configuring Distributed Key Management in VMM](Configuring-Distributed-Key-Management-in-VMM.md).
+-   You are prepared to use distributed key management to store encryption keys in Active Directory Domain Services (AD DS). You must use distributed key management for a highly available VMM management server. For more information about distributed key management, see [Configuring Distributed Key Management in VMM](Configuring-Distributed-Key-Management-in-VMM.md).
 
 -   You have a computer with a supported version of Microsoft SQL Server installed and running before you start the installation of VMM. For information about supported versions of SQL Server for the VMM database, see the following:
 
@@ -55,7 +55,7 @@ The following are some additional considerations about highly available VMM mana
 
 -   You can have VMM management servers installed on as many as sixteen nodes on a failover cluster, but there can only be one node active at any time.
 
--   You cannot perform a planned failover \(for example, to install a security update or to do maintenance on a node of the cluster\) by using the VMM console. To perform a planned failover, use Failover Cluster Manager.
+-   You cannot perform a planned failover (for example, to install a security update or to do maintenance on a node of the cluster) by using the VMM console. To perform a planned failover, use Failover Cluster Manager.
 
 -   During a planned failover, ensure that there are no tasks actively running on the VMM management server. Any running tasks will fail during a failover. Any failed jobs will not start automatically after a failover.
 

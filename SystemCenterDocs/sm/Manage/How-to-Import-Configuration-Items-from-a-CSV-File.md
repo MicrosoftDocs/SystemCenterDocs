@@ -11,7 +11,7 @@ ms.topic: article
 ms.assetid: b4d69a52-baed-4c59-8052-6b012ce25632
 ---
 # How to Import Configuration Items from a CSV File
-Before you can import data from a comma\-separated value \(CSV\) file, you have to create two files: a data file and a format file. For more information about how to create these files, see [About Importing Data From Comma\-Separated Files into Service Manager](About-Importing-Data-from-Comma-Separated-Files-into-Service-Manager.md). You can use the following procedure to import the Newcomputers.csv file by using the Newcomputers.xml format file.
+Before you can import data from a comma-separated value (CSV) file, you have to create two files: a data file and a format file. For more information about how to create these files, see [About Importing Data From Comma-Separated Files into Service Manager](About-Importing-Data-from-Comma-Separated-Files-into-Service-Manager.md). You can use the following procedure to import the Newcomputers.csv file by using the Newcomputers.xml format file.
 
 ### To import configuration items from a CSV file
 
@@ -31,7 +31,7 @@ Before you can import data from a comma\-separated value \(CSV\) file, you have 
 
 6.  In the **Import Instances from CSV File** dialog box, verify that the numbers next to **Items saved**, **Instances created in memory**, and **Instances committed to database** are equal to the number of rows in the data file, and then click **Close**.
 
-![](../../media/pssymbol.png)You can use a Windows PowerShell command to complete this task. For information about how to use Windows PowerShell to import configuration items from a CSV file, see [Import\-SCSMInstance](http://go.microsoft.com/fwlink/p/?LinkId=225348).
+![](../../media/pssymbol.png)You can use a Windows PowerShell command to complete this task. For information about how to use Windows PowerShell to import configuration items from a CSV file, see [Import-SCSMInstance](http://go.microsoft.com/fwlink/p/?LinkId=225348).
 
 ### To validate the import of configuration items from a CSV file
 

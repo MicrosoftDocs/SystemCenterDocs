@@ -11,7 +11,7 @@ ms.topic: article
 ms.assetid: 37d9aa0b-2b6a-4b9b-b3c9-9cf01361bf37
 ---
 # Modifying Hyper-V host clusters in VMM
-This section contains information about clusters. For information about individual Hyper\-V hosts, see [Configuring Hyper-V host properties in VMM](Configuring-Hyper-V-host-properties-in-VMM.md).
+This section contains information about clusters. For information about individual Hyper-V hosts, see [Configuring Hyper-V host properties in VMM](Configuring-Hyper-V-host-properties-in-VMM.md).
 
 This section contains the following topics:
 

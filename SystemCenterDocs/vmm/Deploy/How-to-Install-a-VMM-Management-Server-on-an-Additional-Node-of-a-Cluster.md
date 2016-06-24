@@ -11,16 +11,16 @@ ms.topic: article
 ms.assetid: 3961bdac-8b4c-42f9-a2ce-57025adce7f7
 ---
 # How to Install a VMM Management Server on an Additional Node of a Cluster
-You can use the following procedure to install a highly available Virtual Machine Manager \(VMM\) management server on an additional node of a failover cluster. For installing on the first node of a cluster, see [How to Install a Highly Available VMM Management Server](How-to-Install-a-Highly-Available-VMM-Management-Server.md).
+You can use the following procedure to install a highly available Virtual Machine Manager (VMM) management server on an additional node of a failover cluster. For installing on the first node of a cluster, see [How to Install a Highly Available VMM Management Server](How-to-Install-a-Highly-Available-VMM-Management-Server.md).
 
 > [!NOTE]
-> If there is a problem with setup completing successfully, consult the log files in the **%SYSTEMDRIVE%\\ProgramData\\VMMLogs** folder. **ProgramData** folder is a hidden folder.
+> If there is a problem with setup completing successfully, consult the log files in the **%SYSTEMDRIVE%\ProgramData\VMMLogs** folder. **ProgramData** folder is a hidden folder.
 
 Membership in the local **Administrators** group, or equivalent, on the computer that you are configuring is the minimum required to complete this procedure.
 
 ### To install a highly available VMM management server on an additional node of a cluster
 
-1.  On an additional node of your cluster, start the Virtual Machine Manager Setup Wizard. To start the wizard, on your installation media, right\-click **setup.exe**, and then click **Run as administrator**.
+1.  On an additional node of your cluster, start the Virtual Machine Manager Setup Wizard. To start the wizard, on your installation media, right-click **setup.exe**, and then click **Run as administrator**.
 
     > [!NOTE]
     > Before beginning the installation of VMM, close any open programs and ensure that there are no pending restarts on the computer. For example, if you have installed a server role by using Server Manager or have applied a security update, you may need to restart the computer and then log on to the computer with the same user account to finish the installation of the server role or the security update.
@@ -50,7 +50,7 @@ Membership in the local **Administrators** group, or equivalent, on the computer
 
     For information about hardware and software requirements for VMM, see System Requirements for System Center vNext.
 
-11. On the **Database configuration** page, the database server is displayed as a read\-only value in the **Server name** text box. If the account you are using does not have permissions for that database, select **Use the following credentials**, and then type credentials for the database. Click **Next** to continue.
+11. On the **Database configuration** page, the database server is displayed as a read-only value in the **Server name** text box. If the account you are using does not have permissions for that database, select **Use the following credentials**, and then type credentials for the database. Click **Next** to continue.
 
 12. On the **Configure service account and distributed key management** page, provide the password of the domain account that will be used by the Virtual Machine Manager service.
 

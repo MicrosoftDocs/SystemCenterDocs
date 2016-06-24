@@ -13,11 +13,11 @@ ms.assetid: 56f31a2e-68ec-49f0-b0e6-628c832897dc
 # How to Install the VMM Console
 You can use the following procedure to install a VMM console.
 
-To complete this procedure, you need, at a minimum, membership in the local Administrators group \(or equivalent\) on the computer that you are configuring.
+To complete this procedure, you need, at a minimum, membership in the local Administrators group (or equivalent) on the computer that you are configuring.
 
 ### To install the VMM console
 
-1.  To start the Virtual Machine Manager Setup Wizard, on your installation media, right\-click **setup.exe**, and then click **Run as administrator**.
+1.  To start the Virtual Machine Manager Setup Wizard, on your installation media, right-click **setup.exe**, and then click **Run as administrator**.
 
 2.  On the main setup page, click **Install**.
 
@@ -58,6 +58,6 @@ To complete this procedure, you need, at a minimum, membership in the local Admi
     To open the VMM console, ensure that the **Open the VMM console when this wizard closes** check box is selected.
 
 > [!NOTE]
-> If setup does not finish successfully, consult the log files in the **%SYSTEMDRIVE%\\ProgramData\\VMMLogs** folder. **ProgramData** is a hidden folder.
+> If setup does not finish successfully, consult the log files in the **%SYSTEMDRIVE%\ProgramData\VMMLogs** folder. **ProgramData** is a hidden folder.
 
 

@@ -8,7 +8,7 @@ ms.topic: article
 ms.assetid: 61ab9fda-681f-4c65-ae39-a04f45b1287a
 ---
 # How to associate a VMM library server with a host group
-You can use the following procedure to associate a library server with a host group in Virtual Machine Manager \(VMM\). During placement, VMM uses this association as an input to help determine which resource to use when a resource with equivalent objects is defined in a profile or template.
+You can use the following procedure to associate a library server with a host group in Virtual Machine Manager (VMM). During placement, VMM uses this association as an input to help determine which resource to use when a resource with equivalent objects is defined in a profile or template.
 
 **Account requirements** You must be a member of the Administrator user role or a member of the Delegated Administrator user role where the management scope includes the library server that you want to configure.
 
@@ -22,7 +22,7 @@ You can use the following procedure to associate a library server with a host gr
 
 4.  In the *Library Server Name* **Properties** dialog box, in the **Host group** list, click the host group that you want to associate the library server with, and then click **OK**.
 
-    For example, associate the **VMMServer01.contoso.com** library server \(located in Seattle\) with the **Seattle** host group. Associate the **NYLibrary01.contoso.com** library server with the **New York** host group.
+    For example, associate the **VMMServer01.contoso.com** library server (located in Seattle) with the **Seattle** host group. Associate the **NYLibrary01.contoso.com** library server with the **New York** host group.
 
     > [!NOTE]
     > You can associate a library server with only one host group. However, child host groups are automatically associated with the library server of the parent host group. Also, realize that you can associate more than one library server with a host group.

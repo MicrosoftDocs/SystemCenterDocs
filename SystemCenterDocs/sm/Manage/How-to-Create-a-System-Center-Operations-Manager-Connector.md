@@ -11,7 +11,7 @@ ms.topic: article
 ms.assetid: f435d4b2-e965-4ae6-8f99-c9f00b956937
 ---
 # How to Create a System Center Operations Manager Connector
-In Service Manager, there are two types of connectors for System Center Operations Manager. You use the first type of connector, the alert connector, to automatically generate incidents that are based on Operations Manager alerts. You use the second type of connector, the configuration item \(CI\) connector, to import discovered objects from Operations Manager as configuration items into the Service Manager database. You can use the following procedures to create both connectors, validate them, and confirm their creation.
+In Service Manager, there are two types of connectors for System Center Operations Manager. You use the first type of connector, the alert connector, to automatically generate incidents that are based on Operations Manager alerts. You use the second type of connector, the configuration item (CI) connector, to import discovered objects from Operations Manager as configuration items into the Service Manager database. You can use the following procedures to create both connectors, validate them, and confirm their creation.
 
 > [!NOTE]
 > For the Operations Manager CI connector to function correctly, you have to import a set of management packs into Service Manager. For more information, see[How to Import Management Packs for System Center Operations Manager Configuration Item Connectors](How-to-Import-Management-Packs-for-System-Center-Operations-Manager-Configuration-Item-Connectors.md).
@@ -22,7 +22,7 @@ You have the option of defining Service Manager templates that run when alerts o
 
 There are two phases for creating the Alert connector. The first part involves creating the Alert connector on the Service Manager management server. The second part requires that you start the Operations Manager console and set up a subscription for the newly created connector. The subscription you create must be unique for the Alert connector; no connector that is created to point to Operations Manager should have a subscription that overlaps with another Operations Manager internal connector. Both phases are described in the following procedure.
 
-### To create an Operations Manager alert connector
+### To create an Operations Manager alert connector
 
 1.  In the Service Manager console, click **Administration**.
 
@@ -60,7 +60,7 @@ There are two phases for creating the Alert connector. The first part involves c
 
 8.  In the **Actions** pane, click **Properties**.
 
-9. In the **Alert Sync: \<name of connector\>** dialog box, click **Add**.
+9. In the **Alert Sync: <name of connector\>** dialog box, click **Add**.
 
 10. In the **Product Connector Subscription Wizard** dialog box, on the **General** page, in the **Subscription Name** box, type the name for this subscription. For example, type **All Alerts**, and then click **Next**.
 
@@ -70,7 +70,7 @@ There are two phases for creating the Alert connector. The first part involves c
 
 13. On the **Criteria** page, click **Create**.
 
-14. In the **Alert Sync:\<name of connector\>** dialog box, click **OK**.
+14. In the **Alert Sync:<name of connector\>** dialog box, click **OK**.
 
 ### To validate the creation of an Operations Manager alert connector
 
@@ -94,7 +94,7 @@ There are two phases for creating the Alert connector. The first part involves c
 
     3.  Use one of the following methods to enter credentials:
 
-        -   Under **Credentials**, select the Run As account you created for the alert connector, and then go to step 4d.
+        -   Under **Credentials**, select the Run As account you created for the alert connector, and then go to step 4d.
 
         -   Under **Credentials**, click **New**. In the **User name**, **Password**, and **Domain** boxes, type the credentials for the Run As account, and then click **OK**. 
 
@@ -116,12 +116,12 @@ There are two phases for creating the Alert connector. The first part involves c
 
 ![](../../media/pssymbol.png)You can use a Windows PowerShell command to complete these tasks, as follows:
 
--   For information about how to use Windows PowerShell to create a new Operations Manager alert connector in Service Manager, see [New\-SCOMAlertConnector](http://go.microsoft.com/fwlink/p/?LinkID=225351).
+-   For information about how to use Windows PowerShell to create a new Operations Manager alert connector in Service Manager, see [New-SCOMAlertConnector](http://go.microsoft.com/fwlink/p/?LinkID=225351).
 
--   For information about how to use Windows PowerShell to create an alert rule to be used with an Operations Manager alert connector in Service Manager, see [New\-SCSMAlertRule](http://go.microsoft.com/fwlink/p/?LinkId=225353).
+-   For information about how to use Windows PowerShell to create an alert rule to be used with an Operations Manager alert connector in Service Manager, see [New-SCSMAlertRule](http://go.microsoft.com/fwlink/p/?LinkId=225353).
 
--   For information about how to use Windows PowerShell to create a new Operations Manager CI connector in Service Manager, see [New\-SCOMConfigurationItemConnector](http://go.microsoft.com/fwlink/p/?LinkID=225352).
+-   For information about how to use Windows PowerShell to create a new Operations Manager CI connector in Service Manager, see [New-SCOMConfigurationItemConnector](http://go.microsoft.com/fwlink/p/?LinkID=225352).
 
--   For information about how to use Windows PowerShell to retrieve connectors that are defined in Service Manager and to view their status, see [Get\-SCSMConnector](http://go.microsoft.com/fwlink/p/?LinkId=225320).
+-   For information about how to use Windows PowerShell to retrieve connectors that are defined in Service Manager and to view their status, see [Get-SCSMConnector](http://go.microsoft.com/fwlink/p/?LinkId=225320).
 
 

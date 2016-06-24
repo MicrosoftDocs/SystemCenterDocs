@@ -8,7 +8,7 @@ ms.topic: article
 ms.assetid: 91c5dd2a-550b-4884-9d3a-b935c428ead7
 ---
 # How to configure an iSCSI Target Server with Windows PowerShell and VMM
-You can use VMM to configure the iSCSI Target Server through Windows PowerShell. This section lists some common tasks with examples of Windows PowerShell commands that you can use for those tasks. The SMI\-S provider supports all management tasks through VMM.
+You can use VMM to configure the iSCSI Target Server through Windows PowerShell. This section lists some common tasks with examples of Windows PowerShell commands that you can use for those tasks. The SMI-S provider supports all management tasks through VMM.
 
 ### To manage storage on an iSCSI Target Server
 
@@ -45,7 +45,7 @@ You can use VMM to configure the iSCSI Target Server through Windows PowerShell.
 
         |Command|Purpose|
         |-----------|-----------|
-        |`$LUN = New-SCStorageLogicalUnit -Name "iSCSI1" -StoragePool $pool -DiskSizeMB 1000`|Create an iSCSI logical unit number \(LUN\).|
+        |`$LUN = New-SCStorageLogicalUnit -Name "iSCSI1" -StoragePool $pool -DiskSizeMB 1000`|Create an iSCSI logical unit number (LUN).|
         |`Set-SCStorageLogicalUnit -StorageLogicalUnit $LUN -VMHostGroup (Get-SCVMHostGroup -Name "All Hosts")`|Allocate the LUN to the host group.|
         |`$host = Get-SCVMhost -ComputerName <host name>`|Retrieve the properties of a host.|
         |`Register-SCStorageLogicalUnit -StorageLogicalUnit $LUN -VMHost $host`|Assign the LUN to the host.|
