@@ -17,7 +17,7 @@ If the RunbookWorker property of the runbook is populated, then that Worker serv
 
 The Worker server will create a job that runs on the Worker server that services the request and remotely accesses any computers or other resources that it will work with. This requires the cmdlets in the runbook to be able to remotely access these resources. Alternatively, the runbook can include an [InlineScript](../Manage/Windows-PowerShell-Workflow-Concepts.md#bkmk_InlineScript) command in order to use PowerShell Remoting to run commands locally on a target computer. This concept is illustrated in the following diagram.
 
-![](Image/SMAAuth_RunbookConcept.gif)
+![](..\media/SMAAuth_RunbookConcept.gif)
 
 If a job is suspended or interrupted, it may be resumed on a different Worker server. Because of this, you should be careful about using local resources that are not accessible to all Worker servers such as a file on a local computer. You should leverage [Global Assets](../Manage/Global-Assets.md) such as [Variables](../Manage/Variables.md) as much as possible for sharing information between [checkpoints](../Manage/Windows-PowerShell-Workflow-Concepts.md#BK_Checkpoints).
 
