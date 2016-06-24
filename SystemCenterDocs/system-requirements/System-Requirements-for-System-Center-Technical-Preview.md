@@ -29,6 +29,6 @@ The topics below specify minimum and recommended hardware requirements along wit
 
 -   [System Center Agents](System-Center-Agents.md)
 
--   [.Net Version Support](.Net-Version-Support.md)
+-   [.Net Version Support](Dot-Net-Version-Support.md)
 
 
