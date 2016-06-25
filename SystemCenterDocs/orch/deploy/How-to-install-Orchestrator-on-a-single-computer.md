@@ -105,6 +105,6 @@ Use the following steps to install all Orchestrator features on a single compute
     If you are prompted for an administrator password or confirmation, type the password or provide confirmation.
 
 ## See Also
-[Install Individual Orchestrator Features](Install-Individual-Orchestrator-Features.md)
+[Install Individual Orchestrator Features](How-to-install-orchestrator-features.md)
 [Orchestrator Security Planning](assetId:///358c5344-8649-4d40-a53c-37f8e70e58f6)
 [TCP Port Requirements](assetId:///dc879c86-4855-4fd0-808d-06f64a9657ca)
