@@ -59,7 +59,7 @@ You can uninstall an agent from the targeted computer by using the **UNIX/Linux 
 
     -   Click **Show Computers** (in the alert text) for a list of the computers does not have the required credentials specified in Run As Accounts. Then click **Previous** to unselect them and try again.
 
-    For detailed instructions on how to set credentials, see [How to Set Credentials for Accessing UNIX and Linux Computers](How-to-Set-Credentials-for-Accessing-UNIX-and-Linux-Computers.md).
+    For detailed instructions on how to set credentials, see [How to Set Credentials for Accessing UNIX and Linux Computers](https://technet.microsoft.com/library/hh287150%28v=sc.12%29.aspx).
 
 6.  Click **Uninstall**.
 

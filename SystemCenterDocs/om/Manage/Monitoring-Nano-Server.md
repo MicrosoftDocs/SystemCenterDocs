@@ -73,7 +73,7 @@ There are several limitations in this release of the Nano Server agent. The foll
 2.  Add the Microsoft-OneCore-ReverseForwarders package as described in the Getting Started with Nano Server topic.
 
 3.  Join the Nano Server to the same domain as the  Operations Manager Management Server.
-There are two methods available for installing the Operations Manager agent on Nano Servers, Discovery Wizard from the Operations console or PowerShell script.  The process of installing the agent using the Discovery Wizard is consistent with the steps described in the following document [Use the Discovery Wizard to Deploy Agents](Install-Agent-on-Windows-Using-the-Discovery-Wizard.xml).
+There are two methods available for installing the Operations Manager agent on Nano Servers, Discovery Wizard from the Operations console or PowerShell script.  The process of installing the agent using the Discovery Wizard is consistent with the steps described in the following document [Use the Discovery Wizard to Deploy Agents](Install-Agent-on-Windows-Using-the-Discovery-Wizard.md).
 
 Use the following procedure to install the agent with a PowerShell script.   
 
