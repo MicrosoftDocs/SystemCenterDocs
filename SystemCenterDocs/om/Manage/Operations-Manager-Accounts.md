@@ -79,6 +79,6 @@ This is the action account which is used for creating and sending notifications.
 [How to Manage the Report Server Unattended Execution Account in Operations Manager](https://technet.microsoft.com/library/hh443401%28v=sc.12%29.aspx)
 [Control Access by Using the Health Service Lockdown Tool in Operations Manager](https://technet.microsoft.com/library/hh212737%28v=sc.12%29.aspx)
 [Accessing UNIX and Linux Computers in Operations Manager](https://technet.microsoft.com/library/hh212886%28v=sc.12%29.aspx)
-[Managing Run As Accounts and Profiles](Managing-Run-As-Accounts-and-Profiles.md)
+[Managing Run As Accounts and Profiles](https://technet.microsoft.com/library/hh212714%28v=sc.12%29.aspx)
 
 

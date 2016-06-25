@@ -15,7 +15,7 @@ System Center Operations Manager can monitor computers running Windows, UNIX, an
 
 To begin monitoring, computers must be discovered. For a description of the discovery process, see “How Objects Are Discovered and Monitored” in [Key Concepts](../get-started/Operations-Manager-Key-Concepts.md).
 
-Comprehensive monitoring requires that an agent be installed on the discovered computer. This section explains how to discover computers, install agents on discovered computers, and configure agents. It also provides instructions for uninstalling agents. For information about monitoring computers without installing an agent, see [Agentless Monitoring in Operations Manager](Agentless-Monitoring-in-Operations-Manager.md) and [Client Monitoring Using Agentless Exception Monitoring in Operations Manager](https://technet.microsoft.com/library/hh230748%28v=sc.12%29.aspx).
+Comprehensive monitoring requires that an agent be installed on the discovered computer. This section explains how to discover computers, install agents on discovered computers, and configure agents. It also provides instructions for uninstalling agents. For information about monitoring computers without installing an agent, see [Agentless Monitoring in Operations Manager](https://technet.microsoft.com/library/hh212910%28v=sc.12%29.aspx) and [Client Monitoring Using Agentless Exception Monitoring in Operations Manager](https://technet.microsoft.com/library/hh230748%28v=sc.12%29.aspx).
 
 > [!NOTE]
 > For problems with discovery, see [Troubleshooting Discovery in Operations Manager](http://go.microsoft.com/fwlink/p/?LinkId=235123).
