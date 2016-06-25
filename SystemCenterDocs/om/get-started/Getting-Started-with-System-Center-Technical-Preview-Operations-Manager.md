@@ -21,9 +21,9 @@ Operations Manager enables you to monitor the applications, networks devices, sy
 
 [What's New in OM in Technical Preview](What-s-New-in-OM-in-Technical-Preview.md)
 
-[Operations Manager Key Concepts](Operations-Manager-Key-Concepts)
+[Operations Manager Key Concepts](Operations-Manager-Key-Concepts.md)
 
-[Walkthrough: Installing Operations Manager on a Single Server](Walkthrough--Installing-Operations-Manager-on-a-Single-Server)
+[Walkthrough: Installing Operations Manager on a Single Server](Walkthrough--Installing-Operations-Manager-on-a-Single-Server.md)
 
 
 
