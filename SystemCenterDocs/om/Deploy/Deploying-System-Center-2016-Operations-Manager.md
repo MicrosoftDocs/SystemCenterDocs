@@ -24,7 +24,7 @@ For information about connecting management groups, see [Connecting Management G
 ## <a name="BKMK_BeforeYouBegin"></a>Before You Begin
 Before you begin your deployment, you should read the release notes, and ensure that your server meets the minimum system requirements for Operations Manager. For more information, see:
 
--   [Release Notes for System Center Technical Preview 5](Release-Notes-for-System-Center-Technical-Preview-5.md)
+-   [Release Notes for System Center Technical Preview 5](../../get-started/Release-Notes-for-System-Center-Technical-Preview-5.md)
 
 -   [System Requirements for System Center Technical Preview](../../system-requirements/System-Requirements-for-System-Center-Technical-Preview.md)
 
