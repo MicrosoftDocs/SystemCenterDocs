@@ -114,10 +114,6 @@ Use the following steps to deploy a virtual machine by using rapid provisioning.
 |Step 1: Use either of the following instructions:<br /><br />-   [How to create a SAN copy-capable template from a new virtual machine](How-to-create-a-SAN-copy-capable-template-from-a-new-virtual-machine.md)<br />-   [How to create a SAN copy-capable template from an existing virtual machine](How-to-create-a-SAN-copy-capable-template-from-an-existing-virtual-machine.md)|Describes how to create a SAN copy-capable template from either a new or existing virtual machine. Includes scenario-specific prerequisites.|
 |Step 2: [How to deploy a new virtual machine from the SAN copy-capable template](How-to-deploy-a-new-virtual-machine-from-the-SAN-copy-capable-template.md)|Describes how to create and deploy the new virtual machine by using the SAN copy-capable template.|
 
-## See Also
-[Managing virtual machines with VMM](Managing-virtual-machines-with-VMM.md)
-[Managing tenant resources with VMM](Managing-tenant-resources-with-VMM.md)
-[Overview: storage capabilities in VMM](Overview--storage-capabilities-in-VMM.md)
-[Overview: the VMM storage lifecycle](Overview--the-VMM-storage-lifecycle.md)
+
 
 

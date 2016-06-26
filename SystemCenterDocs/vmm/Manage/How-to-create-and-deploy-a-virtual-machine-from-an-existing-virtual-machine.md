@@ -125,10 +125,4 @@ Use the following procedure to create a virtual machine from an existing virtual
 
     To confirm that the virtual machine was created, in the **Library** workspace, in the **Library** pane, expand **Library Servers**, expand the library server where you stored the virtual machine, and then click **Stored Virtual Machines and Services**. The stored virtual machine appears in the **Physical Library Objects** pane.
 
-## See Also
-[Creating and deploying virtual machines in VMM](Creating-and-deploying-virtual-machines-in-VMM.md)
-[Configuring virtual machine options and settings](Configuring-virtual-machine-options-and-settings.md)
-[Managing tenant resources with VMM](Managing-tenant-resources-with-VMM.md)
-[Managing virtual machines with VMM](Managing-virtual-machines-with-VMM.md)
-
 

@@ -100,10 +100,5 @@ Use the following procedure to migrate a virtual machine by using a drag-and-dro
 > [!NOTE]
 > If you encounter difficulties using drag-and-drop, log out of VMM, and then log back in and try again. Also try restarting the virtual machine and then try again.
 
-## See Also
-[Overview: migrating virtual machines and storage](Overview--migrating-virtual-machines-and-storage.md)
-[Migrating virtual machines and storage in VMM](Migrating-virtual-machines-and-storage-in-VMM.md)
-[Managing virtual machines with VMM](Managing-virtual-machines-with-VMM.md)
-[Managing tenant resources with VMM](Managing-tenant-resources-with-VMM.md)
 
 

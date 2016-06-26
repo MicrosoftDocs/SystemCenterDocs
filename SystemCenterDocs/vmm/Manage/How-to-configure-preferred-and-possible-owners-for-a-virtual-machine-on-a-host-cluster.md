@@ -28,11 +28,4 @@ For information about other settings related to availability of virtual machines
 
 4.  To verify the settings, reopen the properties sheet.
 
-## See Also
-[Overview: creating and deploying virtual machines in VMM](Overview--creating-and-deploying-virtual-machines-in-VMM.md)
-[Configuring availability options for virtual machines in VMM](Configuring-availability-options-for-virtual-machines-in-VMM.md)
-[Configuring virtual machine options and settings](Configuring-virtual-machine-options-and-settings.md)
-[Managing virtual machines with VMM](Managing-virtual-machines-with-VMM.md)
-[Managing tenant resources with VMM](Managing-tenant-resources-with-VMM.md)
-
 

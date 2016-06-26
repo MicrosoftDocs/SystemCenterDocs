@@ -8,11 +8,8 @@ ms.topic: article
 ms.assetid: cc2f6fee-c93a-437e-8056-5af90dd47ee3
 ---
 # How to prepare an iSCSI Target Server to work with VMM
-This topic provides an example of how to prepare a Microsoft iSCSI Target Server to work with System Center 2012 – Virtual Machine Manager (VMM), including how to install the SMI-S provider. The following diagram shows the example topology: one computer for the VMM management server, and one computer that is running the iSCSI Target Server.
-
-![](Image/VMMiSCSI4.png)
-
-The VMM management server must be in a domain. The iSCSI Target Server can be in a domain or a workgroup.
+This topic provides an example of how to prepare a Microsoft iSCSI Target Server to work with System Center 2012 – Virtual Machine Manager (VMM), including how to install the SMI-S provider. 
+Note that the VMM management server must be in a domain. The iSCSI Target Server can be in a domain or a workgroup.
 
 ### To prepare the example iSCSI-VMM topology
 

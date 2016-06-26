@@ -38,14 +38,4 @@ For information about other settings related to availability of virtual machines
 
 6.  To verify the setting, reopen the properties sheet.
 
-## See Also
-[How to create and deploy a virtual machine from a blank virtual hard disk](How-to-create-and-deploy-a-virtual-machine-from-a-blank-virtual-hard-disk.md)
-[How to create and deploy a virtual machine from an existing virtual hard disk](How-to-create-and-deploy-a-virtual-machine-from-an-existing-virtual-hard-disk.md)
-[How to create a virtual machine template](How-to-create-a-virtual-machine-template.md)
-[How to create and deploy a virtual machine from a template](How-to-create-and-deploy-a-virtual-machine-from-a-template.md)
-[Configuring availability options for virtual machines in VMM](Configuring-availability-options-for-virtual-machines-in-VMM.md)
-[Configuring virtual machine options and settings](Configuring-virtual-machine-options-and-settings.md)
-[Managing virtual machines with VMM](Managing-virtual-machines-with-VMM.md)
-[Managing tenant resources with VMM](Managing-tenant-resources-with-VMM.md)
-
 

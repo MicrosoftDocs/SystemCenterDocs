@@ -49,12 +49,4 @@ The following table summarizes the examples that are used.
 |**Finance**<br /><br />(Private cloud that is created from host groups)|Host groups: **Seattle\Tier0_SEA**, **Seattle\Tier1_SEA**, **New York\Tier0_NY**, **New York\Tier1_NY**<br /><br />Logical network: **Tenants**<br /><br />Load balancer: **LoadBalancer01.contoso.com**<br /><br />Virtual IP profile: **Web tier (HTTPS traffic)**<br /><br />Storage classification: **GOLD** and **SILVER**<br /><br />Read-only library shares: **SEALibrary** and **NYLibrary**<br /><br />Stored virtual machine path: **VMMServer01\Finance\StoredVMs**<br /><br />Capability profile: **Hyper-V**|
 |**Marketing**<br /><br />(Private cloud that is created from a VMware resource pool)|VMware resource pool: **Resource pool 1**<br /><br />Logical network: **Tenants**<br /><br />Load balancer: **LoadBalancer01.contoso.com**<br /><br />Virtual IP profile: **Web tier (HTTPS traffic)**<br /><br />Read-only library shares: **SEALibrary** and **NYLibrary**<br /><br />Stored virtual machine path: **VMMServer01\Marketing\StoredVMs**<br /><br />Capability profile: **ESX Server**|
 
-## See Also
-[How to create a private cloud from host groups in VMM](How-to-create-a-private-cloud-from-host-groups-in-VMM.md)
-[How to create a private cloud from a VMware resource pool in VMM](How-to-create-a-private-cloud-from-a-VMware-resource-pool-in-VMM.md)
-[How to increase the capacity of a private cloud in VMM](How-to-increase-the-capacity-of-a-private-cloud-in-VMM.md)
-[How to delete a private cloud in VMM](How-to-delete-a-private-cloud-in-VMM.md)
-[Managing private clouds with VMM](Managing-private-clouds-with-VMM.md)
-[Managing tenant resources with VMM](Managing-tenant-resources-with-VMM.md)
-
 

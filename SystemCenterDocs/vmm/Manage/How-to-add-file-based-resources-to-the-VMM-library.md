@@ -15,12 +15,9 @@ You can use the following procedure to add file-based resources (such as virtual
 
 For information about the types of file-based resources that the VMM library automatically indexes and adds as physical resources, see the table under the “File-based resources” bullet in [Configuring the VMM library](Configuring-the-VMM-library.md).
 
-<<<<<<< HEAD
 
 **Account requirements** To add resources to a library share outside VMM or by using the **Explore** option in the Library workspace, a user must have appropriate share and file system permissions assigned outside VMM. This applies to administrators, delegated administrators and to self-service users (for private cloud library shares). 
-=======
-**Account requirements** To add resources to a library share outside VMM or by using the **Explore** option in the Library workspace, a user must have appropriate share and file system permissions assigned outside VMM. This applies to administrators, delegated administrators and to self-service users (for private cloud library shares). For information about the account requirements to import and export file-based resources, see [How to import and export physical resources to and from the VMM library](How-to-import-and-export-physical-resources-to-and-from-the-VMM-library.md).
->>>>>>> cbd5a0248f8f546ef51e06ea65d5578a2007427e
+
 
 ### To add file-based resources to the library
 
@@ -30,7 +27,7 @@ For information about the types of file-based resources that the VMM library aut
 
     -   In the **Library** workspace of the VMM console, expand **Library Servers**, expand a library server, right-click a library share, and then click **Explore**. Then, copy files to the share.
 
-    -   In the **Library** workspace of the VMM console, on the **Home** tab, use the **Import Physical Resource** and **Export Physical Resource** options to import and export file-based resources between library shares. For more information, see [How to import and export physical resources to and from the VMM library](How-to-import-and-export-physical-resources-to-and-from-the-VMM-library.md).
+    -   In the **Library** workspace of the VMM console, on the **Home** tab, use the **Import Physical Resource** and **Export Physical Resource** options to import and export file-based resources between library shares. 
 
     For example, copy files that you want to use to the library shares in both sites (**VMMServer01\SEALibrary** and **NYLibrary01\NYLibrary**).
 

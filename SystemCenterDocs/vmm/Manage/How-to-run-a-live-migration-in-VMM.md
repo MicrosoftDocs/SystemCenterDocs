@@ -136,10 +136,5 @@ By default, faster live migration is enabled to use the compression method. You 
 
     -   To use SMB for faster live migration, click **Use SMB as Transport**.
 
-## See Also
-[Overview: migrating virtual machines and storage](Overview--migrating-virtual-machines-and-storage.md)
-[Migrating virtual machines and storage in VMM](Migrating-virtual-machines-and-storage-in-VMM.md)
-[Managing virtual machines with VMM](assetId:///d403f964-cff2-4caa-978d-b9dc08a39594)
-[Managing tenant resources with VMM](Managing-tenant-resources-with-VMM.md)
 
 

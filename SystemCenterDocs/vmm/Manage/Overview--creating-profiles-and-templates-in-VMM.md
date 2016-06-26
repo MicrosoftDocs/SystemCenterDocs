@@ -41,12 +41,5 @@ VMM includes the concept of services, service templates, and a number of profile
 
     -   **SQL Server profile**—SQL Server profiles provide instructions for customizing an instance of Microsoft SQL Server for a SQL Server DAC when a virtual machine is deployed as part of a service.
 
-For more information about service profiles and templates, see [Overview: creating and deploying services in VMM](Overview--creating-and-deploying-services-in-VMM.md).
-
-## See Also
-[Creating profiles and templates in VMM](Creating-profiles-and-templates-in-VMM.md)
-[Windows PowerShell Desired State Configuration](http://technet.microsoft.com/library/dn249912.aspx)
-[Managing the VMM library and its resources](Managing-the-VMM-library-and-its-resources.md)
-[Managing fabric resources with VMM](Managing-fabric-resources-with-VMM.md)
 
 

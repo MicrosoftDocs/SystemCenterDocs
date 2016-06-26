@@ -8,7 +8,7 @@ ms.topic: article
 ms.assetid: 2b37e839-f245-4e51-83ec-e2c11864a10b
 ---
 # How to create and deploy a virtual machine from a template
-Use the following procedure to create a virtual machine from a virtual machine template in Virtual Machine Manager (VMM). You can use a virtual machine template to create new stand-alone virtual machines or to create tiers in a service template. For more information about service templates, see [Creating service templates in VMM](Creating-service-templates-in-VMM.md).
+Use the following procedure to create a virtual machine from a virtual machine template in Virtual Machine Manager (VMM). You can use a virtual machine template to create new stand-alone virtual machines or to create tiers in a service template. 
 
 Note the following:
 
@@ -23,8 +23,6 @@ Note the following:
     -   The self-service user role must have the **Deploy** or **Deploy (From template only)** actions in their user role scope.
 
     -   The template must be available to the self-service user role as an assigned resource, or the self-service user role must be granted access in the template properties.
-
-    For information about how to assign resources to a self-service role, see [How to create a Self-Service User role in VMM](How-to-create-a-Self-Service-User-role-in-VMM.md). For information about how self-service users can share resources between self-service user roles, see [How to enable self-service users to share resources in VMM](How-to-enable-self-service-users-to-share-resources-in-VMM.md).
 
 -   You can use VMM to configure availability settings for the virtual machine. 
 

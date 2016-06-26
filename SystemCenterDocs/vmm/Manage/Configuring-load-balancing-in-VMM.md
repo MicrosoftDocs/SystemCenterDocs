@@ -116,6 +116,4 @@ This is the NLB workflow:
 
 4.  After the service is deployed, the administrator verifies in the VMM console which virtual IP address is being used for a service. The administrator then contacts the DNS administrator to create a DNS entry for the assigned virtual IP address. For example, if the front-end Web tier of a service is load balanced, the administrator can verify which virtual IP address is used for that tier. The DNS administrator can then create an entry in DNS for the name that users will specify to connect to the Web front-end. For example, the DNS administrator could create a DNS entry for *ServiceName*.contoso.com with the corresponding virtual IP address.
 
-    > [!NOTE]
-    > For more detailed information about how to load-balance a service tier by using NLB, see [How to configure NLB for a service tier](How-to-configure-NLB-for-a-service-tier.md).
 

@@ -56,7 +56,6 @@ In this case, as the following diagrams show, two SMI-S providers are installed 
 ### Two providers for different storage management
 In this case, two WMI-based SMI-S providers are installed on the same computer, but only one SMI-S provider is intended for VMM management. The other provider is a third-party SMI-S provider is intended for File Server Storage Management. Due to a known issue in the Storage Management service, both VMM and File Service Storage Management only discover one provider, which might not be the intended provider for the application.
 
-![](../../media/VMMiSCSI3.png)
 
 ## <a name="BKMK_provider"></a>Provider details
 As shown in the previous diagrams, the SMI-S provider is WMI-based and passes information from the iSCSI Target service to the Storage Management service on the VMM server. After registering the provider, VMM sends a full discovery request to retrieve all the objects and their mappings from the SMI-S provider.
