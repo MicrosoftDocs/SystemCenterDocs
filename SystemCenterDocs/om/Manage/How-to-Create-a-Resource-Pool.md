@@ -63,7 +63,7 @@ For information about configuring resource pools with managed UNIX and Linux com
 ## Modifying Resource Pool Membership
 When you view the resource pools in the **Administration** workspace, you will see that resource pools that you create have a manual membership type and resource pools created when Operations Manager was installed have an automatic membership type, as shown in the following image.
 
-![Resource Pool Membership Type](../media/om-resourcepool-membership-type.png)
+![Resource Pool Membership Type](../../media/om-resourcepool-membership-type.png)
 
 By default, all management servers are members of the resource pools created when Operations Manager is installed, and any management servers added to the management group are automatically added to the resource pools that have an automatic membership type. You can remove individual management servers from those resource pools, however that will change the membership type to manual. If you add a management server to a management group after the membership type of the resource pools created when Operations Manager was installed is changed to manual, you must add the management server to the resource pool manually.
 

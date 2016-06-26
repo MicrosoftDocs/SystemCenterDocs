@@ -16,7 +16,7 @@ This section describes how to configure your environment to place  a Report data
 ## Enabling communications across a firewall
 In an environment where the Reporting data warehouse is separated from the management server and Reporting Server by a firewall, Windows Integrated Authentication cannot be used. You need to take steps to configure SQL Server Authentication. The following sections explain how to enable SQL Server Authentication between the management server (or management server), the Reporting Server, and the Reporting data warehouse, as shown in the following illustration.
 
-![Reporting Firewall Ports](../media/om-reporting-network-config.png) 
+![Reporting Firewall Ports](../../media/om-reporting-network-config.png) 
 
 ### Management Server and Reporting Data Warehouse
 Follow these steps to setup SQL Server authentication

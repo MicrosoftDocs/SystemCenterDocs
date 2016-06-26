@@ -15,7 +15,7 @@ Welcome to System Center 2016 Technical Preview Operations Manager.  Operations 
 
 ## Operations Manager Documentation
 
--   [Getting Started with System Center Technical Preview - Operations Manager](Getting-Started-with-System-Center-Technical-Preview-Operations-Manager.md)
+-   [Getting Started with System Center Technical Preview - Operations Manager](get-started/Getting-Started-with-System-Center-Technical-Preview-Operations-Manager.md)
 
     Written for customers who are either new to Operations Manager or are looking for “What’s New” information.
 
@@ -27,7 +27,7 @@ Welcome to System Center 2016 Technical Preview Operations Manager.  Operations 
 
     Read these topics to learn how to deploy Operations Manager in a distributed environment.
 
--   [System Center 2016 - Operations Manager Operations Guide](Manage/System-Center-2016-Operations-Manager-Operations-Guide.md)
+-   [System Center 2016 - Operations Manager Operations Guide](Manage/System-Center-2016---Operations-Manager-Operations-Guide.md)
 
     Read these topics once you have Operations Manager up and running and are looking for procedures for day to day operations.
 

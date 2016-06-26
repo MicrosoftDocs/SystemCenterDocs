@@ -15,7 +15,7 @@ The distributed management group installation will form the foundation of 99 per
 
 The following diagram presents one possible option for the distributed management group topology.
 
-![Example OM Distributed MG](../media/om-distributed-deployment.png)
+![Example OM Distributed MG](../../media/om-distributed-deployment.png)
 
 > [!NOTE]
 > There is no direct communication between an operations console and the databases. All communication goes to the resource pool through TCP 5724, and then to the database servers using OLE DB on TCP 1433 or another customized port a customer establishes. However, there is direct communication between an Application Diagnostics console (residing with a web console) and databases.
