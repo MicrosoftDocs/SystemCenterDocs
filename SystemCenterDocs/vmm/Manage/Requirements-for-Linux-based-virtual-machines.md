@@ -16,9 +16,6 @@ Virtual Machine Manager (VMM) supports virtual machines that contain Linux as th
 
 VMM does not verify that the virtual machine meets these requirements. However, if these requirements are not met, the virtual machine will fail to deploy.
 
-## See Also
-[Creating and deploying virtual machines in VMM](Creating-and-deploying-virtual-machines-in-VMM.md)
-[Managing virtual machines with VMM](Managing-virtual-machines-with-VMM.md)
-[Managing tenant resources with VMM](Managing-tenant-resources-with-VMM.md)
+
 
 

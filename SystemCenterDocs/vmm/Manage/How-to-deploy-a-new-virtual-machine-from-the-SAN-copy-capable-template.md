@@ -44,9 +44,6 @@ You can use this procedure to deploy a virtual machine from a SAN copy-capable t
 
 8.  To verify that the virtual machine was created, open the **VMs and Services** workspace. Expand **All Hosts** or **Clouds**, depending on where you deployed the virtual machine, and then locate and click the destination host or private cloud. In the **VMs** pane, verify that the new virtual machine appears. If you open Disk Management (Diskmgmt.msc) on the destination host, you can see the new disk that is assigned and registered to the host.
 
-## See Also
-[Using SAN copy to rapidly provision virtual machines](Using-SAN-copy-to-rapidly-provision-virtual-machines.md)
-[Managing virtual machines with VMM](Managing-virtual-machines-with-VMM.md)
-[Managing tenant resources with VMM](Managing-tenant-resources-with-VMM.md)
+
 
 

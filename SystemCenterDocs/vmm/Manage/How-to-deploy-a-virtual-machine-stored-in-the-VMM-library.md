@@ -59,10 +59,5 @@ Use the following procedure to deploy a virtual machine that is stored in the Vi
 
     To review the progress and results of the operation, open the **Jobs** workspace. By default, the workspace opens when the wizard closes. To view this workspace at any time, click **Jobs** on the taskbar in the results pane of the VMM console.
 
-## See Also
-[Creating and deploying virtual machines in VMM](Creating-and-deploying-virtual-machines-in-VMM.md)
-[Managing virtual machines with VMM](Managing-virtual-machines-with-VMM.md)
-[Managing tenant resources with VMM](Managing-tenant-resources-with-VMM.md)
-[Managing the VMM library and its resources](Managing-the-VMM-library-and-its-resources.md)
 
 

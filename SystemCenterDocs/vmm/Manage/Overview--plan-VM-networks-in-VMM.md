@@ -33,11 +33,6 @@ Use the following guidelines to plan for VM networks for a VLAN-based configurat
 
 The following illustration shows the VMM configuration for a network where VLAN 1 and VLAN 4 are used for network isolation. In VMM, the logical network uses the **VLAN-based independent networks** setting, and contains network sites with the appropriate VLAN and IP subnet settings (only one network site is visible). For each VLAN, a VM network has been created, and it receives the VLAN and IP subnet information directly from the logical network. The associated IP address pools provide for static IP addressing in the VM networks.
 
-![](Image/01_TH_VM_netwk_VLAN.png)
-
-**Figure 1   VM networks for VLAN configuration**
-
-In the illustration, bold text represents items you configure by opening a wizard or a **Properties** dialog box. Regular text represents items on a page or tab within the wizard or dialog box.
 
 ## <a name="BKMK_hnv"></a>Plan VM networks for Hyper-V network virtualization
 To support multiple tenants (also called clients or customers) with their own networks, isolated from the networks of others, use VM networks configured for Hyper-V network virtualization. For more information about Hyper-V network virtualization, which was introduced in Windows Server 2012, see [Network Virtualization technical details](http://technet.microsoft.com/library/jj134174.aspx).
@@ -55,20 +50,7 @@ Use the following guidelines to plan for VM networks that use network virtualiza
 
 -   On top of that logical network, plan for multiple VM networks on which you will select **Isolate using Hyper-V network virtualization**.
 
-The following illustration shows the VMM configuration for  a VM network called "AdventureWorks" that uses Hyper-V network virtualization. The underlying logical network, "Contoso1," is configured with **Allow new VM networks created on this logical network to use network virtualization**. In the VM network, the associated IP address pools provide for static IP addressing.
 
-![](Image/02_th_vm_netwk_nv.gif)
 
-**Figure 2    VM networks with network virtualization**
-
-In the illustration, bold text represents items you configure by opening a wizard or a **Properties** dialog box. Regular text represents items on a page or tab within the wizard or dialog box.
-
-To explore older diagrams showing logical networks and VM networks, see the System Center 2012 R2 topic, [Configuring VM Networks in VMM Illustrated Overview](https://technet.microsoft.com/library/jj983727.aspx).
-
-## See Also
-[How to create a VM network for a VLAN in VMM](How-to-create-a-VM-network-for-a-VLAN-in-VMM.md)
-[How to create a VM network for network virtualization and add an IP address pool in VMM](How-to-create-a-VM-network-for-network-virtualization-and-add-an-IP-address-pool-in-VMM.md)
-[Configuring logical networks, VM networks, and logical switches in VMM](Configuring-logical-networks,-VM-networks,-and-logical-switches-in-VMM.md)
-[Managing network resources with VMM](Managing-network-resources-with-VMM.md)
 
 

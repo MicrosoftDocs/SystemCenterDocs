@@ -46,10 +46,6 @@ The following folders and files are created on the virtual hard disk during the 
 
 -   A configuration file - scvmm.conf. This file contains the location of the log file and is used to control logging during deployment and specialization.
 
-## See Also
-[Requirements for Linux-based virtual machines](Requirements-for-Linux-based-virtual-machines.md)
-[Creating and deploying virtual machines in VMM](Creating-and-deploying-virtual-machines-in-VMM.md)
-[Managing virtual machines with VMM](Managing-virtual-machines-with-VMM.md)
-[Managing tenant resources with VMM](Managing-tenant-resources-with-VMM.md)
+
 
 

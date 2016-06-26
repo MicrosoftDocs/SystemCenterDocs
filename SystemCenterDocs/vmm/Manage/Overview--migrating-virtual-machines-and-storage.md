@@ -119,9 +119,6 @@ You can perform a live VSM to migrate both a virtual machine, and the virtual ma
 
 -   Live VSM is supported between two host clusters that run Hyper-V, starting with Windows Server 2012. The virtual machine can be transferred to either a CSV or SMB 3.0 file share on the destination host cluster.
 
-## See Also
-[Migrating virtual machines and storage in VMM](Migrating-virtual-machines-and-storage-in-VMM.md)
-[Managing Virtual Machines with VMM](Managing-virtual-machines-with-VMM.md)
-[Managing tenant resources with VMM](Managing-tenant-resources-with-VMM.md)
+
 
 

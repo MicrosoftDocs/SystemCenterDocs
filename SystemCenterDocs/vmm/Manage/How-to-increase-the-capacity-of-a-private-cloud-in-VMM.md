@@ -36,10 +36,6 @@ You can use this procedure to increase the capacity of a private cloud in Virtua
 
 5.  Under **Cloud capacity**, modify the desired capacity settings, and then click **OK**.
 
-## See Also
-[Creating a Private Cloud in VMM](assetId:///6fbce258-d10e-4bc0-91fc-de4f5e00905f)
-[Overview: creating a private cloud with VMM](Overview--creating-a-private-cloud-with-VMM.md)
-[Managing private clouds with VMM](Managing-private-clouds-with-VMM.md)
-[Managing tenant resources with VMM](Managing-tenant-resources-with-VMM.md)
+
 
 

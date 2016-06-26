@@ -28,17 +28,6 @@ To plan your logical switch, go through the sections that apply to your requirem
 ## <a name="BKMK_illustration"></a>Review how a logical switch acts as a container for network settings
 The following illustration shows how a logical switch acts as a template or container for switch settings or capabilities that you want to use. At the top of the illustration, in the host group “Test systems,” there is a single test system on which the administrator has configured switch and port settings individually. Lower in the illustration, there are multiple hosts in host groups, to which a logical switch has been applied. The logical switch helps ensure that switch and port settings are applied consistently across the host systems.
 
-![](Image/06_VMM_Net_LS.gif)
-
-**Figure 1   Logical switch**
-
-This illustration shows how a logical switch brings the following together so that you can apply them to multiple network adapters:
-
--   Port profiles for uplinks (also called uplink port profiles)—for physical network adapters
-
--   Port classifications—for virtual network adapters
-
--   Port profiles for virtual network adapters
 
 > [!NOTE]
 > When you add an uplink port profile to a logical switch, it's placed in a list of profiles in the logical switch. Then, when you select that logical switch for a network adapter in a host, you can open the list and select the uplink port profile for that network adapter. This helps you to create consistency in the settings across multiple hosts, but also adjust the settings for a given network adapter.
@@ -139,12 +128,6 @@ You can control how bandwidth is used on network adapters by setting the minimum
 |**Absolute**|Minimum bandwidth is bits per second.|
 |**None**|Minimum bandwidth is disabled on the switch. Users cannot configure minimum bandwidth on any network adapter connected to the switch.|
 
-## See Also
-[How to create a logical switch in VMM](How-to-create-a-logical-switch-in-VMM.md)
-[How to configure network settings on a host by using a logical switch in VMM](How-to-configure-network-settings-on-a-host-by-using-a-logical-switch-in-VMM.md)
-[How to convert a host's virtual switch to a logical switch in VMM](How-to-convert-a-host-s-virtual-switch-to-a-logical-switch-in-VMM.md)
-[VMM networking reference: creating a custom port profile for virtual network adapters](VMM-networking-reference--creating-a-custom-port-profile-for-virtual-network-adapters.md)
-[Configuring logical networks, VM networks, and logical switches in VMM](Configuring-logical-networks,-VM-networks,-and-logical-switches-in-VMM.md)
-[Managing network resources with VMM](Managing-network-resources-with-VMM.md)
+
 
 

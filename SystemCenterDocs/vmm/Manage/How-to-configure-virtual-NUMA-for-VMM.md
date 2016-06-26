@@ -34,10 +34,5 @@ Use this procedure to enable or disable virtual NUMA spanning.
 
 1.  In the **Virtual NUMA** properties page, to enable spanning, select **Allow virtual machine to span hardware NUMA nodes**. Clear the check box to disable spanning.
 
-## See Also
-[Deploying virtual NUMA for VMM](Deploying-virtual-NUMA-for-VMM.md)
-[Configuring virtual machine options and settings](Configuring-virtual-machine-options-and-settings.md)
-[Managing virtual machines with VMM](Managing-virtual-machines-with-VMM.md)
-[Managing tenant resources with VMM](Managing-tenant-resources-with-VMM.md)
 
 

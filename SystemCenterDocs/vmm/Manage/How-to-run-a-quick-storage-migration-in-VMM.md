@@ -42,10 +42,5 @@ Use the following procedure to run a quick storage migration.
 
 5.  To review the progress and results of the operation, open the **Jobs** pane. By default, this pane opens after the wizard closes. To view this pane at any time, click **Jobs** on the VMM console toolbar.
 
-## See Also
-[Overview: migrating virtual machines and storage](Overview--migrating-virtual-machines-and-storage.md)
-[Migrating virtual machines and storage in VMM](Migrating-virtual-machines-and-storage-in-VMM.md)
-[Managing virtual machines with VMM](assetId:///d403f964-cff2-4caa-978d-b9dc08a39594)
-[Managing tenant resources with VMM](Managing-tenant-resources-with-VMM.md)
 
 

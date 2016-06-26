@@ -84,10 +84,6 @@ This topic contains the following procedures:
         > -   Make sure that you use VLANs and IP subnets that are available in your network.
         > -   By default, if you leave the VLAN field empty, VMM assigns a VLAN of 0. This indicates to VMM not to use VLANs. In trunk mode, VLAN 0 indicates native VLAN.
 
-        **Example of typical network site configuration**
-
-        ![](Image/VMM_TH_LogicalNetwork.JPG)
-
     5.  Optionally, create additional network sites by clicking **Add** and repeating the process.
 
         For example, you could create a network site named **Management-New York**, assign it to the **New York** host group, and add an appropriate IP subnet/VLAN pair for the network in New York.

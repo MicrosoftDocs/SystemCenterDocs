@@ -124,10 +124,3 @@ Before you begin these procedures, make sure that the following prerequisites ar
     > [!TIP]
     > To add the SAN Copy Capable column to the Templates pane, right-click the column header, and then click **SAN Copy Capable**.
 
-## See Also
-[Using SAN copy to rapidly provision virtual machines](Using-SAN-copy-to-rapidly-provision-virtual-machines.md)
-[How to deploy a new virtual machine from the SAN copy-capable template](How-to-deploy-a-new-virtual-machine-from-the-SAN-copy-capable-template.md)
-[Managing virtual machines with VMM](Managing-virtual-machines-with-VMM.md)
-[Managing tenant resources with VMM](Managing-tenant-resources-with-VMM.md)
-
-

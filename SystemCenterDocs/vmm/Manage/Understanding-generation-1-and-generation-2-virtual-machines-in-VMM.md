@@ -61,12 +61,5 @@ After the generation has been determined for a hardware profile, virtual machine
 
 Similarly, with a Windows PowerShell command, if you try to combine the unique capabilities of both generations into one virtual machine or virtual machine template, the command does not succeed, and an error message is displayed. Also, if you try to modify an existing virtual machine or virtual machine template by adding options from the other generation, the command does not succeed, and an error message is displayed. For more information about the unique capabilities in generation 2 virtual machines, see [Generation 2 Virtual Machine Overview](http://technet.microsoft.com/library/dn282285.aspx).
 
-## See Also
-[Creating and deploying virtual machines in VMM](Creating-and-deploying-virtual-machines-in-VMM.md)
-[How to create a virtual machine template](How-to-create-a-virtual-machine-template.md)
-[How to create a hardware profile](How-to-create-a-hardware-profile.md)
-[Generation 2 Virtual Machine Overview](http://technet.microsoft.com/library/dn282285.aspx)
-[Managing virtual machines with VMM](Managing-virtual-machines-with-VMM.md)
-[Managing tenant resources with VMM](Managing-tenant-resources-with-VMM.md)
 
 

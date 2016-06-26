@@ -18,8 +18,3 @@ This section provides an overview of migration in Virtual Machine Manager (VMM) 
 
 -   [How to run a live migration in VMM](How-to-run-a-live-migration-in-VMM.md)
 
-## See Also
-[Managing virtual machines with VMM](Managing-virtual-machines-with-VMM.md)
-[Managing tenant resources with VMM](Managing-tenant-resources-with-VMM.md)
-
-

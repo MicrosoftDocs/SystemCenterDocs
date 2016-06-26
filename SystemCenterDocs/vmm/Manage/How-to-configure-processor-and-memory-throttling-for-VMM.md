@@ -52,10 +52,3 @@ For more information about processor and memory throttling, see [Configuring res
 
 2.  Configure the priority that is used to allocate memory to a virtual machine when memory resources are in high usage. If you specify a low priority, the virtual machine might not be available to start when the memory resources are not sufficient.
 
-## See Also
-[Configuring resource throttling for VMM](Configuring-resource-throttling-for-VMM.md)
-[Configuring virtual machine options and settings](Configuring-virtual-machine-options-and-settings.md)
-[Managing virtual machines with VMM](Managing-virtual-machines-with-VMM.md)
-[Managing tenant resources with VMM](Managing-tenant-resources-with-VMM.md)
-
-

@@ -17,9 +17,6 @@ With Virtual Machine Manager (VMM), you can simplify and automate the process of
     > [!NOTE]
     > You can create storage classifications before or after VMM discovers you storage devices; you can also create classifications as needed while you configure the storage capacity.
 
-    > [!NOTE]
-    > If you are using Scale-Out File Servers for storage, you can add quality of service policies to your storage classifications; for more information, see [Managing quality of service policies for Scale-Out File Servers in VMM](Managing-quality-of-service-policies-for-Scale-Out-File-Servers-in-VMM.md).
-
 2.  **Discover storage devices.**VMM can automatically discover local and remote storage resources that include storage arrays, pools, and logical units.
 
     For more information, see the following topics:

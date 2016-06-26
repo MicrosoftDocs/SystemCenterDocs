@@ -47,7 +47,7 @@ You can use the following procedure to create an application profile in Virtual 
 
         -   Regardless of whether you add an application, if you kept the **Compatibility** option set to **General**, you can select **Scripts** to add a script. The number of scripts is not limited, and you can specify the order in which the scripts will run.
 
-            You can use scripts to create a guest cluster out of multiple virtual machines that are all deployed as part of a VMM service. For example, you can specify that one script will run at **Creation: First VM** (to form the cluster on the first virtual machine) and a different script will run at **Creation: VMs After First** (to add additional virtual machines to the cluster). For more information, see [How to create a guest cluster by using a service template in VMM](How-to-create-a-guest-cluster-by-using-a-service-template-in-VMM.md).
+            You can use scripts to create a guest cluster out of multiple virtual machines that are all deployed as part of a VMM service. For example, you can specify that one script will run at **Creation: First VM** (to form the cluster on the first virtual machine) and a different script will run at **Creation: VMs After First** (to add additional virtual machines to the cluster). 
 
     3.  For each application or script that you add, configure the appropriate settings. Some of the settings that you can configure are as follows:
 
