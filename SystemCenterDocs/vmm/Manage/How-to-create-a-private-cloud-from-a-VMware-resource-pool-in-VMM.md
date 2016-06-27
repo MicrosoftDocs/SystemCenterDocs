@@ -38,9 +38,6 @@ Before you create a private cloud from a VMware resource pool, make sure that th
 
     For example, you could use library shares called **SEALibrary** and **NYLibrary**.
 
-    > [!NOTE]
-    > For more information about self-service user permissions, see [How to create a Self-Service User role in VMM](How-to-create-a-Self-Service-User-role-in-VMM.md).
-
 #### How to create a private cloud from a VMware resource pool
 
 1.  Open the **VMs and Services** workspace.
