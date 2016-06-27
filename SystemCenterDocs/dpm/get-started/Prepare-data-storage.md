@@ -1,13 +1,16 @@
 ---
-title: Prepare data storage
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: ebe047b4-0737-4ce5-8fe2-d5e0cfd9b852
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  markgalioto
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-27
+title:  Prepare data storage
+ms.technology:  data-protection-manager
+ms.assetid:  ebe047b4-0737-4ce5-8fe2-d5e0cfd9b852
 ---
+
 # Prepare data storage
 A major part of your DPM deployment will be figuring out how to store data backed up by DPM. Learn about:
 
