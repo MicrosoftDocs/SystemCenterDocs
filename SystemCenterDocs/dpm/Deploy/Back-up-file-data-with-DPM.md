@@ -1,15 +1,16 @@
 ---
-title: Back up file data with DPM
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - data-protection-manager
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 98626f09-e4b1-4cbb-9195-651d54e118d1
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  markgalioto
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-27
+title:  Back up file data with DPM
+ms.technology:  data-protection-manager
+ms.assetid:  98626f09-e4b1-4cbb-9195-651d54e118d1
 ---
+
 # Back up file data with DPM
 
 >Applies To: System Center 2016 Technical Preview - Data Protection Manager

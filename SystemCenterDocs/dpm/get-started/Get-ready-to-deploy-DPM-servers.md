@@ -1,15 +1,16 @@
 ---
-title: Get ready to deploy DPM servers
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - data-protection-manager
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 517ce276-b811-4a06-ade3-ff71303ccf5b
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  markgalioto
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-27
+title:  Get ready to deploy DPM servers
+ms.technology:  data-protection-manager
+ms.assetid:  517ce276-b811-4a06-ade3-ff71303ccf5b
 ---
+
 # Get ready to deploy DPM servers
 
 >Applies To: System Center 2016 Technical Preview - Data Protection Manager

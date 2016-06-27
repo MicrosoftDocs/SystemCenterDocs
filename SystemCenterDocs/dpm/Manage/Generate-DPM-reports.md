@@ -1,13 +1,16 @@
 ---
-title: Generate DPM reports
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: f9a97135-1c5b-45a9-b307-bb957fde21d8
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  markgalioto
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-27
+title:  Generate DPM reports
+ms.technology:  data-protection-manager
+ms.assetid:  f9a97135-1c5b-45a9-b307-bb957fde21d8
 ---
+
 # Generate DPM reports
 
 >Applies To: System Center 2016 Technical Preview - Data Protection Manager

@@ -1,13 +1,16 @@
 ---
-title: Back up SharePoint with DPM
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 3769bebe-3e5a-4b51-9c01-d07e94fc8c43
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  markgalioto
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-27
+title:  Back up SharePoint with DPM
+ms.technology:  data-protection-manager
+ms.assetid:  3769bebe-3e5a-4b51-9c01-d07e94fc8c43
 ---
+
 # Back up SharePoint with DPM
 
 >Applies To: System Center 2016 Technical Preview - Data Protection Manager

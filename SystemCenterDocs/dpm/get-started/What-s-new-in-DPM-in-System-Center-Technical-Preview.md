@@ -1,15 +1,16 @@
 ---
-title: What&#39;s new in DPM in System Center Technical Preview
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - data-protection-manager
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: a5e81bf0-43a6-4099-af2e-dfb0c1aa7ed8
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  markgalioto
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-27
+title:  What s new in DPM in System Center Technical Preview
+ms.technology:  data-protection-manager
+ms.assetid:  a5e81bf0-43a6-4099-af2e-dfb0c1aa7ed8
 ---
+
 # What&#39;s new in DPM in System Center Technical Preview
 Here's what's new in Data Protection Manager (DPM) in System Center Technical Preview 5. Before you begin, check the [Release Notes for System Center Technical Preview 5](../../get-started/Release-Notes-for-System-Center-Technical-Preview-5.md) for last minute issues.
 

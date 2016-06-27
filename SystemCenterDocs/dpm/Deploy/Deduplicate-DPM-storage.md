@@ -1,13 +1,16 @@
 ---
-title: Deduplicate DPM storage
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: af49cdc3-1f63-4c10-843a-d1cd27af473a
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  markgalioto
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-27
+title:  Deduplicate DPM storage
+ms.technology:  data-protection-manager
+ms.assetid:  af49cdc3-1f63-4c10-843a-d1cd27af473a
 ---
+
 # Deduplicate DPM storage
 
 >Applies To: System Center 2016 Technical Preview - Data Protection Manager

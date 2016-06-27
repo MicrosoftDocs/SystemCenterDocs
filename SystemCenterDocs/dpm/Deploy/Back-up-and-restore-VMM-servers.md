@@ -1,15 +1,16 @@
 ---
-title: Back up and restore VMM servers
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - data-protection-manager
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: e9ed546c-b12b-4a2c-9668-3dc23963114e
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  markgalioto
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-27
+title:  Back up and restore VMM servers
+ms.technology:  data-protection-manager
+ms.assetid:  e9ed546c-b12b-4a2c-9668-3dc23963114e
 ---
+
 # Back up and restore VMM servers
 
 >Applies To: System Center 2016 Technical Preview - Data Protection Manager

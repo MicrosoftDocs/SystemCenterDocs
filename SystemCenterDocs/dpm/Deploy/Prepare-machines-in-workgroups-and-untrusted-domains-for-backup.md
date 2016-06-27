@@ -1,13 +1,16 @@
 ---
-title: Prepare machines in workgroups and untrusted domains for backup
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: e63b86d4-1f83-48ef-82bb-636b9dc745e2
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  markgalioto
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-27
+title:  Prepare machines in workgroups and untrusted domains for backup
+ms.technology:  data-protection-manager
+ms.assetid:  e63b86d4-1f83-48ef-82bb-636b9dc745e2
 ---
+
 # Prepare machines in workgroups and untrusted domains for backup
 
 >Applies To: System Center 2016 Technical Preview - Data Protection Manager

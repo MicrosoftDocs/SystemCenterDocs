@@ -1,13 +1,16 @@
 ---
-title: Back up the DPM server
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: e5a31d08-e483-4dda-abd3-1b562656b24f
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  markgalioto
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-27
+title:  Back up the DPM server
+ms.technology:  data-protection-manager
+ms.assetid:  e5a31d08-e483-4dda-abd3-1b562656b24f
 ---
+
 # Back up the DPM server
 
 >Applies To: System Center 2016 Technical Preview - Data Protection Manager

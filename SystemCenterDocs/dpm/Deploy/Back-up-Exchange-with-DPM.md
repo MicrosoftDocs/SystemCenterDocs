@@ -1,13 +1,16 @@
 ---
-title: Back up Exchange with DPM
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 79fb8831-1d70-4d1d-bed1-f28fa9186730
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  markgalioto
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-27
+title:  Back up Exchange with DPM
+ms.technology:  data-protection-manager
+ms.assetid:  79fb8831-1d70-4d1d-bed1-f28fa9186730
 ---
+
 # Back up Exchange with DPM
 
 >Applies To: System Center 2016 Technical Preview - Data Protection Manager

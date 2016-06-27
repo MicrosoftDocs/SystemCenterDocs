@@ -1,13 +1,16 @@
 ---
-title: Manage and monitor DPM
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 241fe091-0044-4664-8eaf-9b022e6874f3
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  markgalioto
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-27
+title:  Manage and monitor DPM
+ms.technology:  data-protection-manager
+ms.assetid:  241fe091-0044-4664-8eaf-9b022e6874f3
 ---
+
 # Manage and monitor DPM
 
 >Applies To: System Center 2016 Technical Preview - Data Protection Manager

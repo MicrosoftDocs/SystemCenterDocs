@@ -1,15 +1,16 @@
 ---
-title: Prepare to back up a generic data source
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - data-protection-manager
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 8ad00a50-108a-4212-ad43-c12a8f8f5587
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  markgalioto
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-27
+title:  Prepare to back up a generic data source
+ms.technology:  data-protection-manager
+ms.assetid:  8ad00a50-108a-4212-ad43-c12a8f8f5587
 ---
+
 # Prepare to back up a generic data source
 
 >Applies To: System Center 2016 Technical Preview - Data Protection Manager

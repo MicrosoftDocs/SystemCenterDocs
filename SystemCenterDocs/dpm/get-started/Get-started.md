@@ -1,13 +1,16 @@
 ---
-title: Get started
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: bcb3a5fe-ce5b-4e62-9254-7d85dbf29443
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  markgalioto
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-27
+title:  Get started
+ms.technology:  data-protection-manager
+ms.assetid:  bcb3a5fe-ce5b-4e62-9254-7d85dbf29443
 ---
+
 # Get started
 
 >Applies To: System Center 2016 Technical Preview - Data Protection Manager

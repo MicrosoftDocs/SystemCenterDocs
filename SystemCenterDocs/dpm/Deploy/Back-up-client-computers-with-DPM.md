@@ -1,15 +1,16 @@
 ---
-title: Back up client computers with DPM
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - data-protection-manager
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 0e12f557-0396-465d-b60f-7695b44bbd12
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  markgalioto
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-27
+title:  Back up client computers with DPM
+ms.technology:  data-protection-manager
+ms.assetid:  0e12f557-0396-465d-b60f-7695b44bbd12
 ---
+
 # Back up client computers with DPM
 
 >Applies To: System Center 2016 Technical Preview - Data Protection Manager

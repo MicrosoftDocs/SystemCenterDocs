@@ -1,13 +1,16 @@
 ---
-title: Manage multiple DPM servers with Central Console
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 6e08e911-36e0-48d6-b71e-df4741811a0a
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  markgalioto
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-27
+title:  Manage multiple DPM servers with Central Console
+ms.technology:  data-protection-manager
+ms.assetid:  6e08e911-36e0-48d6-b71e-df4741811a0a
 ---
+
 # Manage multiple DPM servers with Central Console
 
 >Applies To: System Center 2016 Technical Preview - Data Protection Manager

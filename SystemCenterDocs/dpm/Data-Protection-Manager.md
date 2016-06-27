@@ -1,15 +1,16 @@
 ---
-title: Data Protection Manager
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - data-protection-manager
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: ee706e89-20fd-4883-82e3-75565a705751
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  markgalioto
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-27
+title:  Data Protection Manager
+ms.technology:  data-protection-manager
+ms.assetid:  ee706e89-20fd-4883-82e3-75565a705751
 ---
+
 # Data Protection Manager
 
 >Applies To: System Center 2016 Technical Preview - Data Protection Manager

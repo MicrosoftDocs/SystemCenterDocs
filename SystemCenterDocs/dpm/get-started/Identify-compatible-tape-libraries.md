@@ -1,15 +1,16 @@
 ---
-title: Identify compatible tape libraries
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology:
-  - data-protection-manager
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 4ed6e64f-21d4-4c93-9979-3f1a48317cbe
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  markgalioto
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-27
+title:  Identify compatible tape libraries
+ms.technology:  data-protection-manager
+ms.assetid:  4ed6e64f-21d4-4c93-9979-3f1a48317cbe
 ---
+
 # Identify compatible tape libraries
 
 >Applies To: System Center 2016 Technical Preview - Data Protection Manager

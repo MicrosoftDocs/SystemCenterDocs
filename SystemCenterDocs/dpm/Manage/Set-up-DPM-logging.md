@@ -1,13 +1,16 @@
 ---
-title: Set up DPM logging
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 710459cd-75ec-4052-9199-c45828cbc19b
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  markgalioto
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-27
+title:  Set up DPM logging
+ms.technology:  data-protection-manager
+ms.assetid:  710459cd-75ec-4052-9199-c45828cbc19b
 ---
+
 # Set up DPM logging
 
 >Applies To: System Center 2016 Technical Preview - Data Protection Manager

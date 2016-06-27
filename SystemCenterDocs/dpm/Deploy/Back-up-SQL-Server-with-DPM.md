@@ -1,13 +1,16 @@
 ---
-title: Back up SQL Server with DPM
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 3718b565-9640-4c3f-9d44-aa969041e0e6
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  markgalioto
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-27
+title:  Back up SQL Server with DPM
+ms.technology:  data-protection-manager
+ms.assetid:  3718b565-9640-4c3f-9d44-aa969041e0e6
 ---
+
 # Back up SQL Server with DPM
 
 >Applies To: System Center 2016 Technical Preview - Data Protection Manager

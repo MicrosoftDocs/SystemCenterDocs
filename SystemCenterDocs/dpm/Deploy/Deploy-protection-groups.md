@@ -1,13 +1,16 @@
 ---
-title: Deploy protection groups
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 2a4f4ec8-6185-4fe9-8120-e4dc3b6c9409
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  markgalioto
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-27
+title:  Deploy protection groups
+ms.technology:  data-protection-manager
+ms.assetid:  2a4f4ec8-6185-4fe9-8120-e4dc3b6c9409
 ---
+
 # Deploy protection groups
 
 >Applies To: System Center 2016 Technical Preview - Data Protection Manager
