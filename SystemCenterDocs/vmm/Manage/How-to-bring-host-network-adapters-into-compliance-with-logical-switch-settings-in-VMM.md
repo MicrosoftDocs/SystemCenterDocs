@@ -11,6 +11,9 @@ ms.topic: article
 ms.assetid: cb0fe4a5-8a67-47b2-94a3-a28e614f6a15
 ---
 # How to bring host network adapters into compliance with logical switch settings in VMM
+
+>Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
+
 In Virtual Machine Manager (VMM), you can review and control the configuration of virtual switches that have been created from logical switches. When such a virtual switch is first created, it complies with the settings that are configured in the logical switch. However, the settings on either the virtual switch or the logical switch might later be changed, resulting in a virtual switch that is out of compliance with the corresponding logical switch. VMM provides a straightforward way to see whether a virtual switch is out of compliance, and then to bring the virtual switch back into compliance. Bringing a virtual switch into compliance is also called remediating the virtual switch.
 
 ### To view host network adapter settings and increase compliance with logical switch settings
@@ -46,5 +49,6 @@ In Virtual Machine Manager (VMM), you can review and control the configuration o
 [Configuring logical networks, VM networks, and logical switches in VMM](Configuring-logical-networks,-VM-networks,-and-logical-switches-in-VMM.md)
 [Managing network resources with VMM](Managing-network-resources-with-VMM.md)
 [How to configure network settings on a host by using a logical switch in VMM](How-to-configure-network-settings-on-a-host-by-using-a-logical-switch-in-VMM.md)
+
 
 

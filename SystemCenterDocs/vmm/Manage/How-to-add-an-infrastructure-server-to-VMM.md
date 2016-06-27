@@ -8,6 +8,9 @@ ms.topic: article
 ms.assetid: 41b13d22-f1b3-4691-978d-d279653963ec
 ---
 # How to add an infrastructure server to VMM
+
+>Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
+
 Use the following procedure to add an infrastructure server to Virtual Machine Manager (VMM).
 
 ### To add an infrastructure server
@@ -35,5 +38,6 @@ Use the following procedure to add an infrastructure server to Virtual Machine M
 [Managing infrastructure resources with VMM](Managing-infrastructure-resources-with-VMM.md)
 [Managing fabric updates in VMM](Managing-fabric-updates-in-VMM.md)
 [Managing fabric resources with VMM](Managing-fabric-resources-with-VMM.md)
+
 
 

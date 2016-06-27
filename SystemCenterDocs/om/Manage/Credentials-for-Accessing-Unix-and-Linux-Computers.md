@@ -11,6 +11,9 @@ ms.topic: article
 ms.assetid: 840ea9cc-9407-4bfe-afcd-2ce62aa6cf7d
 ---
 # Credentials for Accessing Unix and Linux Computers
+
+>Applies To: System Center 2016 Technical Preview - Operations Manager
+
 This topic describes the credentials required to install, maintain, upgrade, and uninstall agents on a UNIX or Linux computer.
 
 ## Credentials for Installing Agents
@@ -92,6 +95,7 @@ The **UNIX/Linux Agent Upgrade Wizard** and the **UNIX/Linux Agent Uninstall Wiz
 
 -   **Specify credentials**
 
-    Select this option to specify Secure Shell (SSH) credentials by using a user name and password or a user name and a key. You can optionally provide a passphrase with a key. If the credentials are not for a privileged account, you can have them elevated to a privileged account on the target computered by using the UNIX su or sudo elevation programs. The â€˜suâ€™ elevation requires a password. If you use sudo elevation, you are prompted for a user name and password for agent verification by using an unprivileged account.
+    Select this option to specify Secure Shell (SSH) credentials by using a user name and password or a user name and a key. You can optionally provide a passphrase with a key. If the credentials are not for a privileged account, you can have them elevated to a privileged account on the target computered by using the UNIX su or sudo elevation programs. The ‘su’ elevation requires a password. If you use sudo elevation, you are prompted for a user name and password for agent verification by using an unprivileged account.
+
 
 

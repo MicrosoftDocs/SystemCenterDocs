@@ -8,6 +8,9 @@ ms.topic: article
 ms.assetid: ae6ab645-0882-420d-942a-1617d76b9b52
 ---
 # Prerequisites: creating Scale-Out File Servers from bare metal with VMM
+
+>Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
+
 This topic lists the prerequisites for the process of provisioning Scale-Out File Servers from bare metal using Virtual Machine Manager (VMM):
 
 -   [Physical computer and related requirements](#BKMK_computer)
@@ -17,7 +20,7 @@ This topic lists the prerequisites for the process of provisioning Scale-Out Fil
 -   [Profile requirements (for the physical computer profile)](#BKMK_profile)
 
 ## <a name="BKMK_computer"></a>Physical computer and related requirements
-The computers to which you deploy Scale-Out File Servers can be ‚Äúbare-metal computers‚Äù (no operating system installed), or computers with an installed operating system that will be overwritten during the process.
+The computers to which you deploy Scale-Out File Servers can be ìbare-metal computersî (no operating system installed), or computers with an installed operating system that will be overwritten during the process.
 
 -   **BMC**: Each physical computer must have a baseboard management controller (BMC) installed and configured for out-of-band management by VMM.
 
@@ -98,5 +101,6 @@ Before you create a physical computer profile, also review the following require
 [Managing storage resources and capacity with VMM](Managing-storage-resources-and-capacity-with-VMM.md)
 [Managing infrastructure resources with VMM](Managing-infrastructure-resources-with-VMM.md)
 [Managing fabric resources with VMM](Managing-fabric-resources-with-VMM.md)
+
 
 

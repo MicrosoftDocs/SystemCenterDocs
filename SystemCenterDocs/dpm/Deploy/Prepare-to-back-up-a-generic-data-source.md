@@ -12,6 +12,9 @@ ms.assetid:  8ad00a50-108a-4212-ad43-c12a8f8f5587
 ---
 
 # Prepare to back up a generic data source
+
+>Applies To: System Center 2016 Technical Preview - Data Protection Manager
+
 DPM provides the Generic Data Source (GDS) infrastructure  so that you can protect any Microsoft workload as long as it has a VSS writer.
 
 Here's what you can do:
@@ -29,7 +32,7 @@ Here's what you can do:
 -   Back up to tape
 
 ## <a name="GenericDataSource"></a>Registering a new data source
-Youâ€™ll need to run the Modify-RegisteredWriters command to add, remove or modify the VSS writer ID for a data source to the list thatâ€™s registered with DPM.
+You’ll need to run the Modify-RegisteredWriters command to add, remove or modify the VSS writer ID for a data source to the list that’s registered with DPM.
 
 **Syntax**
 
@@ -61,5 +64,6 @@ The Modify-RegisteredWriters command adds the two new writer IDs to the list of 
 The Modify-RegisteredWriters command removes the specified writer ID from the list of registered writers on DPM server dpm1.contoso.com.
 
 `Modify-RegisteredWriters -DpmServerName dpm1.contoso.com -Remove -Writers 46eef637-28ca-4223-8bb6-2e87bd945179`
+
 
 

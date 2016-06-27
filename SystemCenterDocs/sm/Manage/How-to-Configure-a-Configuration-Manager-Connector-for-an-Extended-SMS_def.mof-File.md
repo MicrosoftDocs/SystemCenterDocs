@@ -11,6 +11,9 @@ ms.topic: article
 ms.assetid: 26a8586b-a5f5-47a9-9bf8-626ef75d48eb
 ---
 # How to Configure a Configuration Manager Connector for an Extended SMS_def.mof File
+
+>Applies To: System Center 2016 Technical Preview - Service Manager
+
 Service Manager hardware inventory collects and then provides system information, such as available disk space, processor type, and operating system, about each computer in the Configuration Manager hierarchy. In Configuration Manager, users can customize the default Configuration Manager SMS_def.mof file to extend the hardware inventory information that is collected.
 
 When you create a Configuration Manager connector in Service Manager, you can select the default System Center Configuration Manager Connector Configuration management pack that must be used for that connector. By using the default management pack, the connector imports hardware, software, and desired configuration management information for the computers that are in the system.
@@ -56,7 +59,7 @@ A custom Configuration Manager Connector Configuration management pack is simila
 The **DataProvider** section provides information, such as which data to import, that you must have when you are importing data from Configuration Manager into the staging tables of **LinkingFramework**. The **DataProvider** section includes the queries that run on the Configuration Manager site database; directives for staging table creation; custom SQL scripts; and information that is relevant for incremental synchronization, such as watermarking and batching.
 
 ### DataConsumer Section
-The **DataConsumer** section provides information about reading the data from staging tables and writing it to the **ServiceManager** database‚Äôs instances space, such as **Entities** or **Relationships**. The **DataConsumer** section includes queries that run on the staging tables; mapping to the Service Manager type system; custom SQL scripts; and information that is relevant for incremental synchronization, such as watermarking and batching.
+The **DataConsumer** section provides information about reading the data from staging tables and writing it to the **ServiceManager** databaseís instances space, such as **Entities** or **Relationships**. The **DataConsumer** section includes queries that run on the staging tables; mapping to the Service Manager type system; custom SQL scripts; and information that is relevant for incremental synchronization, such as watermarking and batching.
 
 ### Structure of the DataProvider and DataConsumer Object Templates Sections
 Basically, the **DataProvider** and the **DataConsumer** are object templates that are targeted to a projection type. The following code shows the general structure of the **DataProvider** and the **DataConsumer** sections:
@@ -84,26 +87,26 @@ The following table provides the details about each property in the custom Confi
 
 |Property|Expected value|Validation after import|
 |------------|------------------|---------------------------|
-|ID|For both **DataProvider** and **DataConsumer** templates‚Äîas indicated in the sample|Yes|
+|ID|For both **DataProvider** and **DataConsumer** templatesóas indicated in the sample|Yes|
 |**DataConnector Properties**|||
-|DataConnectorName|For both **DataProvider** and **DataConsumer** templates‚Äîidentical to the values in the sample|Yes|
-|IsProvider|In **DataProvider** template‚ÄîTrue<br /><br />In **DataConsumer** template‚ÄîFalse|Yes|
+|DataConnectorName|For both **DataProvider** and **DataConsumer** templatesóidentical to the values in the sample|Yes|
+|IsProvider|In **DataProvider** templateóTrue<br /><br />In **DataConsumer** templateóFalse|Yes|
 |SolutionName|A comment. For example, it can indicate the type of the imported data.|An attempt to import a management pack in which the solution name is already being used; it causes an error that is logged to the event log.|
 |Entrypoint, EntryAssembly & WinformUIAssembly|Identical to the value in the sample||
-|InstallSQLScripts section|SQL scripts that must run after the staging tables are set up. They are usually used in the **DataConsumer** template to configure views that display data from the staging tables.<br /><br />Everything that is enclosed between the <Script\><\/Script> tags is expected to be valid SQL script. Therefore, for comments, you must use the ‚Äò/*‚Äô and the ‚Äò\*/‚Äô multi-line comment delimiters instead of the standard XML comment tags.|Not validated. Use custom table names to ensure that this does not cause overwriting or changing any tables except the ones that are declared in the management pack.|
-|UnInstallSQLScripts section|SQL scripts that must run after you delete the Configuration Manager Connector management pack in the Service Manager console.<br /><br />Everything that is enclosed between the <Script\><\/Script> tags is expected to be valid SQL script. Therefore, for comments, you must use the ‚Äò/*‚Äô and the ‚Äò\*/‚Äô multi-line comment delimiters instead of the standard XML comment tags.|Not validated. Use custom table names to ensure that this does not cause overwriting or changing any tables except the tables that are declared in the management pack.|
+|InstallSQLScripts section|SQL scripts that must run after the staging tables are set up. They are usually used in the **DataConsumer** template to configure views that display data from the staging tables.<br /><br />Everything that is enclosed between the <Script\><\/Script> tags is expected to be valid SQL script. Therefore, for comments, you must use the ë/*í and the ë\*/í multi-line comment delimiters instead of the standard XML comment tags.|Not validated. Use custom table names to ensure that this does not cause overwriting or changing any tables except the ones that are declared in the management pack.|
+|UnInstallSQLScripts section|SQL scripts that must run after you delete the Configuration Manager Connector management pack in the Service Manager console.<br /><br />Everything that is enclosed between the <Script\><\/Script> tags is expected to be valid SQL script. Therefore, for comments, you must use the ë/*í and the ë\*/í multi-line comment delimiters instead of the standard XML comment tags.|Not validated. Use custom table names to ensure that this does not cause overwriting or changing any tables except the tables that are declared in the management pack.|
 |DisableParallelProcessing|True||
 |**DataTable Properties**|||
 |DataName|The table from which to import data. It is used in the user interface (UI) and not used in queries.||
 |StageTableName|The name of the staging table. It must be unique.|An attempt to import a management pack, in which the table name is already being used, causes an error to be logged to the event log.|
 |WatermarkField|The name of the **rowversion** column||
-|WatermarkType|Possible values are:<br /><br />-   0‚ÄîIndicates **DateTime** type<br />-   1‚ÄîIndicates the **Timestamp** type<br />-   (-1)‚ÄîIndicates no watermarking, in which case **WatermarkField** becomes optional|Other types of watermarking are not supported.|
+|WatermarkType|Possible values are:<br /><br />-   0óIndicates **DateTime** type<br />-   1óIndicates the **Timestamp** type<br />-   (-1)óIndicates no watermarking, in which case **WatermarkField** becomes optional|Other types of watermarking are not supported.|
 |BatchIdField|The name of the column that has good selectivity; used to separate incremental data into batches when importing to staging tables||
-|BatchIdType|Possible values are:<br /><br />-   0‚ÄîInt<br />-   (-1)‚ÄîNo batching, in which case **BatchIdField** becomes optional|Integer column|
+|BatchIdType|Possible values are:<br /><br />-   0óInt<br />-   (-1)óNo batching, in which case **BatchIdField** becomes optional|Integer column|
 |BatchIdSize|The size of the batch, if batching is used. A high number indicates that much data is being read or written at the same time. The recommended value is 500.|Integer column|
 |UseCache|True||
-|GroomType|Possible values are:<br /><br />-   1‚ÄîThe data in staging tables can be groomed after it is transferred to the Service Manager database.<br />-   2‚ÄîThe data in staging tables is groomed only after it is marked as deleted in the Configuration Manager database and has also been deleted in the Service Manager database because of the Service Manager connector synchronization.||
-|QueryString|The actual query that Configuration Manager 2007 uses to retrieve the requested data. The query must be of the form:<br /><br />`SELECT ‚Ä¶`<br /><br />`FROM ‚Ä¶`<br /><br />`WHERE ‚Ä¶`<br /><br />`ORDER BY ‚Ä¶`<br /><br />The WHERE clause can contain the ‚Äú$COLLECTIONLIST‚Äù token. During synchronization, this token is replaced by the collections that are specified in the System Center Configuration Manager Connector Wizard.<br /><br />The data that is exposed by Configuration Manager SCCM_Ext.* views is supported for import. This data can be extended by using standard sms_def.mof extensions or by using noidmifs. Other tables are not supported.<br /><br />Notably, subqueries are not supported, but joins to other tables are supported.|Not validated. All queries have an Lfx_Status column with value ‚ÄúU‚Äù or ‚ÄúD,‚Äù indicating whether the row represents an Update or a Delete operation.|
+|GroomType|Possible values are:<br /><br />-   1óThe data in staging tables can be groomed after it is transferred to the Service Manager database.<br />-   2óThe data in staging tables is groomed only after it is marked as deleted in the Configuration Manager database and has also been deleted in the Service Manager database because of the Service Manager connector synchronization.||
+|QueryString|The actual query that Configuration Manager 2007 uses to retrieve the requested data. The query must be of the form:<br /><br />`SELECT Ö`<br /><br />`FROM Ö`<br /><br />`WHERE Ö`<br /><br />`ORDER BY Ö`<br /><br />The WHERE clause can contain the ì$COLLECTIONLISTî token. During synchronization, this token is replaced by the collections that are specified in the System Center Configuration Manager Connector Wizard.<br /><br />The data that is exposed by Configuration Manager SCCM_Ext.* views is supported for import. This data can be extended by using standard sms_def.mof extensions or by using noidmifs. Other tables are not supported.<br /><br />Notably, subqueries are not supported, but joins to other tables are supported.|Not validated. All queries have an Lfx_Status column with value ìUî or ìD,î indicating whether the row represents an Update or a Delete operation.|
 |CollectionName|A name for a group of data tables; this name must be unique. Tables in the same collection cannot depend on each other.|An attempt to import a management pack, in which the collection name is already being used, causes an error to be logged to the event log.|
 |PrimaryKeyName|A section that declares the unique primary key name for the staging table.|An attempt to import a management pack, in which the key name is already being used, causes an error to be logged to the event log.|
 |DependOnDataTable|The name or names of **DataTable** that must be synchronized first before this one. Typically, this is used to synchronize the staging table before the system reads it in the Consumer view.<br /><br />If you are using multiple collections, dependency should be expressed only between tables in different collections.|Not validated|
@@ -113,9 +116,9 @@ The following table provides the details about each property in the custom Confi
 |Collation|DATABASE_DEFAULT|Not validated|
 |**DataCollection Properties**|||
 |DataCollectionName|Must be identical to what is referenced by a **DataTable** property|An attempt to import a management pack, in which the collection name is already being used, causes an error to be logged to the event log.|
-|StagingName|In DataProvider template‚ÄîDefaultCache<br /><br />In DataConsumer template‚ÄîNot present|Not validated|
+|StagingName|In DataProvider templateóDefaultCache<br /><br />In DataConsumer templateóNot present|Not validated|
 |DataTables|Comma-separated value (CSV) list of tables referencing this collection||
-|Settings|In **DataProvider** template‚ÄîNot present<br /><br />In **DataConsumer** template‚ÄîIndicates type mapping|Escaped XML with following syntax:<br /><br />`<TypeName>Microsoft.Windows.Computer</TypeName>`<br /><br />`<MPName>Microsoft.Windows.Library</MPName>`<br /><br />`<MPVersion>version of MP</MPVersion>`<br /><br />`<MPToken>token for MP</MPToken>`|
+|Settings|In **DataProvider** templateóNot present<br /><br />In **DataConsumer** templateóIndicates type mapping|Escaped XML with following syntax:<br /><br />`<TypeName>Microsoft.Windows.Computer</TypeName>`<br /><br />`<MPName>Microsoft.Windows.Library</MPName>`<br /><br />`<MPVersion>version of MP</MPVersion>`<br /><br />`<MPToken>token for MP</MPToken>`|
 
 ## Sample of Custom Configuration Manager Connector Configuration Management Packs
 The following are schema definitions and Configuration Manager Connector management pack samples that import data from the Configuration Manager SCCM_Ext.vex_GS_PC_BIOS view.
@@ -523,5 +526,6 @@ In this example, the Configuration Manager Connector Configuration management pa
   </Templates>
 </ManagementPack>
 ```
+
 
 

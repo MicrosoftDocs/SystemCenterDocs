@@ -11,6 +11,9 @@ ms.topic: article
 ms.assetid: 8cc9a2b5-c265-4909-9d82-4e99346dd30f
 ---
 # How to Assign or Remove a Default Price Sheet for a Selected Cloud
+
+>Applies To: System Center 2016 Technical Preview - Service Manager
+
 After Service Manager has discovered cloud objects from the Operations Manager CI connector, you can assign an existing price sheet that applies default price values to all the resources of the cloud. This process is useful when you have many virtual machines so that you do not have to define prices for all the individual virtual machine parts. Once the default price sheet is assigned to a cloud, you can override the default values, on a per-user basis. For more information about overriding default prices, see  [How to Override a Default Price Sheet for a Specific VMM User Role](How-to-Override-a-Default-Price-Sheet-for-a-Specific-VMM-User-Role.md).
 
 ### To assign a default price sheet to a selected cloud
@@ -44,6 +47,7 @@ After Service Manager has discovered cloud objects from the Operations Manager C
 4.  In <CloudName\> form under **Default Cloud Price Sheet**, click **Remove**.
 
 5.  Click **OK** to close the <CloudName\> form.
+
 
 
 

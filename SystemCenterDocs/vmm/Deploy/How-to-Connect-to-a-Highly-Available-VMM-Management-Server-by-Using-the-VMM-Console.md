@@ -11,6 +11,9 @@ ms.topic: article
 ms.assetid: 9dcf955f-551d-4b9b-bc35-11c82e42d841
 ---
 # How to Connect to a Highly Available VMM Management Server by Using the VMM Console
+
+>Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
+
 You can use the following procedure to connect to a highly available Virtual Machine Manager (VMM) management server by using the VMM console.
 
 To use the VMM console, you must be a member of a user role in VMM.
@@ -39,5 +42,6 @@ To use the VMM console, you must be a member of a user role in VMM.
 5.  If the **Select User Role** dialog box appears, select a user role, and then click **OK**.
 
     This dialog box appears only if the current user belongs to more than one user role in VMM.
+
 
 

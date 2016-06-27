@@ -12,6 +12,9 @@ ms.assetid: 5e0d9e0d-bb13-4c6e-8d32-901e757eb9fe
 ---
 # Management Pack Assessment
 
+>Applies To: System Center 2016 Technical Preview - Operations Manager
+
+
 Operations Manager includes a new feature called Updates and Recommendations, to help you proactively identify new technologies or components (i.e. workloads) deployed in your IT infrastructure that were not monitored by Operations Manager or are not monitored using the latest version of a management pack.
 
 >[!NOTE] This feature only works with management packs released by Microsoft, it currently does not support third party management packs.  
@@ -81,4 +84,5 @@ The following procedure describes how to use the Get All MPs option to download 
 >[!NOTE]  When you click **Install**, any management packs in the **Install** list that display the **Information** or **Error** icon are not imported.
 
 8. The **Import Management Packs** page appears and shows the progress for each management pack. Each management pack is downloaded to a temporary directory, imported to Operations Manager, and then deleted from the temporary directory. If there is a problem at any stage of the import process, select the management pack in the list to view the status details. Click **Close**.
+
 

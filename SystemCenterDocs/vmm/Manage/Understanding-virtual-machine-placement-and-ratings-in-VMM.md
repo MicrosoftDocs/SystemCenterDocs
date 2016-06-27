@@ -8,6 +8,9 @@ ms.topic: article
 ms.assetid: 810f30d0-45cd-4781-aa4d-ec5cd882f3d6
 ---
 # Understanding virtual machine placement and ratings in VMM
+
+>Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
+
 When you deploy or migrate a virtual machine to a host, Virtual Machine Manager (VMM) uses virtual machine placement (also known as intelligent placement) to evaluate the suitability of available hosts. The placement algorithm analyzes performance data for the workload and the host, and then rates hosts on a scale of one to five stars to indicate the best placement choice. The VMM placement process for a number of deployment scenarios is used as summarized in the following table.
 
 |Deployment scenario|Details|
@@ -42,10 +45,10 @@ VMM evaluates all hosts within a selected host group and any hosts contained in 
 
 |Rating|Formula|
 |----------|-----------|
-|CPU|[ 1 â€“ ( CPU Utilization / (100 â€“ CPU Reserve)) ] x CPU Weight|
-|Memory (RAM)|[ 1 â€“ ( Memory Used / (Total Memory â€“ Memory Reserve)) ] x Memory Weight|
-|Disk I/O capacity|[ 1 â€“ ( Disk IOPS / Maximum Disk IOPS ] x Disk Weight|
-|Network|[ 1 â€“ ( Network Utilization / (100 â€“ Network Reserve)) ] x Network Weight|
+|CPU|[ 1 – ( CPU Utilization / (100 – CPU Reserve)) ] x CPU Weight|
+|Memory (RAM)|[ 1 – ( Memory Used / (Total Memory – Memory Reserve)) ] x Memory Weight|
+|Disk I/O capacity|[ 1 – ( Disk IOPS / Maximum Disk IOPS ] x Disk Weight|
+|Network|[ 1 – ( Network Utilization / (100 – Network Reserve)) ] x Network Weight|
 
 A host is rated only when a virtual machine needs to be placed. The information gathered about a host is compared to the information about the resources required by the virtual machine, and a rating is assigned to the host. During automatic placement, VMM attempts to use the host assigned the highest rating. During manual placement the host rating is shown so that you can select the appropriate host. You can select a host in VMM even if not all hosts have been rated. The selected host must have a positive number of stars.
 
@@ -89,6 +92,7 @@ A host can receive a non-zero rating only if it meets the following criteria:
 -   Highly available virtual machines must be placed on clustered hosts. VMM assigns zero stars to hosts that are not clustered but manual placement is not blocked. If you migrate a highly-available virtual machine to a non-clustered host, the virtual machine will no longer be highly available after the migration.
 
 -   VMM blocks migration of Hyper-V hosts to hosts running different virtualization software. Migration of a virtual machine with specific features not allowed by the virtualization software that is running on a host will be blocked. For example, Hyper-V hosts do not allow booting up from a SCSI hard disk.
+
 
 
 

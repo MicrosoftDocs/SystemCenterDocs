@@ -8,6 +8,9 @@ ms.topic: article
 ms.assetid: 72d2c7b2-334f-485d-a384-f776fcd3eff7
 ---
 # How to configure update baselines in VMM
+
+>Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
+
 After you add a Windows Server Update Services (WSUS) server to Virtual Machine Manager (VMM), you can prepare to manage updates for the VMM fabric by configuring update baselines. An update baseline contains a set of required updates that is then scoped to an assignment such as a host group, a stand-alone host, a host cluster, a VMM management server, or an infrastructure server. Update baselines can be assigned to host groups and to individual computers based on their role in VMM. Update baselines that are assigned to a host group are applied to all stand-alone hosts and host clusters in the host group, as well as the stand-alone hosts and host clusters in child host groups.
 
 During a compliance scan, computers that are assigned to a baseline are graded for compliance with their assigned baselines. After a computer is found noncompliant, an administrator brings the computer into compliance through update remediation.
@@ -119,5 +122,6 @@ To verify that the update baseline was created successfully, on the **Library** 
 [How to scan for update compliance in VMM](How-to-scan-for-update-compliance-in-VMM.md)
 [Performing update remediation in VMM](Performing-update-remediation-in-VMM.md)
 [Managing fabric resources with VMM](Managing-fabric-resources-with-VMM.md)
+
 
 

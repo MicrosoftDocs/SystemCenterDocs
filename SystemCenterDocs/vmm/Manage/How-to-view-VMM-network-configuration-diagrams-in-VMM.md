@@ -11,6 +11,9 @@ ms.topic: article
 ms.assetid: 1aa1248d-4a73-4b55-b03d-278ff3820343
 ---
 # How to view VMM network configuration diagrams in VMM
+
+>Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
+
 With Virtual Machine Manager (VMM) in System Center 2016 Technical Preview, you can view diagrams that show the relationships among networking objects, such as logical networks and VM networks, that you have configured. You can view a diagram of the networking objects on a particular host system or the networking objects on a cloud. A diagram provides a graphical view of network configurations, which supplements the text-based views that are available in the properties sheet for the host or the cloud.
 
 ### To view VMM network configuration diagrams
@@ -50,5 +53,6 @@ With Virtual Machine Manager (VMM) in System Center 2016 Technical Preview, you 
 ## See Also
 [Managing network resources with VMM](Managing-network-resources-with-VMM.md)
 [Managing fabric resources with VMM](Managing-fabric-resources-with-VMM.md)
+
 
 

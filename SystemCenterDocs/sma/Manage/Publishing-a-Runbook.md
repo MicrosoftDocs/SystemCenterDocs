@@ -11,6 +11,9 @@ ms.topic: article
 ms.assetid: e2224465-5050-456e-99ec-d47772d33352
 ---
 # Publishing a Runbook
+
+>Applies To: Windows Azure Pack for Windows Server
+
 Each runbook in Service Management Automation has a Draft and a Published version. Only the Published version is available to be run, and only the Draft version can be edited. The Published version is unaffected by any changes to the Draft version. When the Draft version should be made available, then you publish it which overwrites the Published version with the Draft version.
 
 ## To Publish a Runbook Using the management portal
@@ -38,7 +41,7 @@ $port = 9090
 $runbookPath = 'c:\runbooks\Sample-TestRunbook.ps1'
 $runbookName = 'Test-Runbook'
 
-Publish-SmaRunbook â€“WebServiceEndpoint $webServer â€“Port $port â€“Name $runbookName
+Publish-SmaRunbook –WebServiceEndpoint $webServer –Port $port –Name $runbookName
 ```
 
 ## To Publish a Runbook Using Windows PowerShell ISE
@@ -59,5 +62,6 @@ Windows PowerShell Integrated Scripting Environment (ISE) is an application that
 [Authoring Automation Runbooks](Authoring-Automation-Runbooks.md)
 [Creating or Importing a Runbook](Creating-or-Importing-a-Runbook.md)
 [Editing a Runbook](Editing-a-Runbook.md)
+
 
 

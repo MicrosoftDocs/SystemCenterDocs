@@ -11,6 +11,9 @@ ms.topic: article
 ms.assetid: edaf90db-563d-4fd3-b6ef-55ea5abc7835
 ---
 # Specifying a Service Account for VMM
+
+>Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
+
 During the installation of a VMM management server, on the **Configure service account and distributed key management** page, you will need to configure the System Center Virtual Machine Manager service to use either the Local System account or a domain account.
 
 Consider the following before you configure the account that is used by the Virtual Machine Manager service:
@@ -26,5 +29,6 @@ Consider the following before you configure the account that is used by the Virt
 -   If you are using a disjointed namespace, you must use a domain account. For more information about disjointed namespaces, see [Naming conventions in Active Directory for computers, domains, sites, and OUs](http://support.microsoft.com/kb/909264).
 
 -   If you are installing a highly available VMM management server, you must use a domain account.
+
 
 

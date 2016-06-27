@@ -11,6 +11,9 @@ ms.topic: article
 ms.assetid: d039eac3-e5cd-4f11-ac6c-bb856bafcc92
 ---
 # Importing Data from Active Directory Domain Services
+
+>Applies To: System Center 2016 Technical Preview - Service Manager
+
 This section provides an overview of using a connector to import data from Active Directory Domain Services (AD DS) into Service Manager. This section also describes how to create, synchronize, and enable or disable an Active Directory connector.
 
 ## Importing Data from Active Directory Domain Services Topics
@@ -34,5 +37,6 @@ This section provides an overview of using a connector to import data from Activ
 -   [How to Import Data from Other Domains](How-to-Import-Data-from-Other-Domains.md)
 
     Describes how to import data from domains other than the domain in which Service Manager resides.
+
 
 

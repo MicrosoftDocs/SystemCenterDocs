@@ -11,6 +11,9 @@ ms.topic: article
 ms.assetid: d0b304e6-34d8-4316-a132-6cc6aec764d1
 ---
 # How to add an existing Scale-Out File Server to storage in VMM
+
+>Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
+
 This topic describes how to add an existing Windows-based Scale-Out File Server to storage in Virtual Machine Manager (VMM). For information about how to use VMM to create the Scale-Out File Server and add it at the same time, see the links at the end of this topic.
 
 When you add a file server, VMM automatically discovers all the shares that are currently present on the server.  For information about the steps to take after adding the Scale-Out File Server, see [Overview: configuring storage using Scale-Out File Servers in VMM](Overview--configuring-storage-using-Scale-Out-File-Servers-in-VMM.md).
@@ -51,5 +54,6 @@ You will need a Run As account with administrator permissions on the Scale-Out F
 [Managing Scale-Out File Servers with VMM](Managing-Scale-Out-File-Servers-with-VMM.md)
 [Managing storage resources and capacity with VMM](Managing-storage-resources-and-capacity-with-VMM.md)
 [Managing fabric resources with VMM](Managing-fabric-resources-with-VMM.md)
+
 
 

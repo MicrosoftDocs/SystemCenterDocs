@@ -11,6 +11,9 @@ ms.topic: article
 ms.assetid: a107d437-1f41-43c4-a2a1-254251cc6adb
 ---
 # How to Extend the Service Offering Categories
+
+>Applies To: System Center 2016 Technical Preview - Service Manager
+
 By default, Service Manager includes only the General service offering category. However, your organization will likely need additional categories to help organize service offerings that are provided to end users through the service catalog. You can use the following procedure to add additional categories to the service catalog.
 
 ### To extend the service offering categories
@@ -30,5 +33,6 @@ By default, Service Manager includes only the General service offering category.
     -   **Communication Services**
 
 5.  Click **OK** to close the **List Properties** dialog box.
+
 
 

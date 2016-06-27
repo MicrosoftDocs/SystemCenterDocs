@@ -11,6 +11,9 @@ ms.topic: article
 ms.assetid: bb877f14-01d6-4f3c-80b6-4c3468ee1dba
 ---
 # Configuring Agents
+
+>Applies To: System Center 2016 Technical Preview - Operations Manager
+
 In System Center Operations Manager, when you install an agent on a computer, an Operations Manager Agent application is added to Control Panel. You can use the application to change the account that the agent will use when performing actions requested by the management server, to remove a management group from an agent configuration, and to configure the Active Directory integration setting for the agent. To perform these tasks, you must have local Administrator permissions on the computer.
 
 > [!NOTE]
@@ -95,5 +98,6 @@ You can use the following procedure to change the Active Directory integration s
 [Upgrading and Uninstalling Agents on UNIX and Linux Computers](Upgrading-and-Uninstalling-Agents-on-UNIX-and-Linux-Computers.md)
 [Manually Uninstalling Agents from UNIX and Linux Computers](Manually-Uninstalling-Agents-from-UNIX-and-Linux-Computers.md)
 [Uninstall Agent from Windows-based Computers](Uninstall-Agent-from-Windows-based-Computers.md)
+
 
 

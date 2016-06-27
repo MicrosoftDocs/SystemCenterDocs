@@ -8,6 +8,9 @@ ms.topic: article
 ms.assetid: 7ea7a41f-a294-43a8-a768-f11180ebebd6
 ---
 # How to create a hardware profile
+
+>Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
+
 You can use the following procedure to create a hardware profile in Virtual Machine Manager (VMM). A hardware profile specifies the hardware settings that you want the virtual machine to use when the virtual machine is created and deployed.
 
 ### To create a hardware profile
@@ -48,5 +51,6 @@ You can use the following procedure to create a hardware profile in Virtual Mach
 [Creating profiles and templates in VMM](Creating-profiles-and-templates-in-VMM.md)
 [Managing the VMM library and its resources](Managing-the-VMM-library-and-its-resources.md)
 [Managing fabric resources with VMM](Managing-fabric-resources-with-VMM.md)
+
 
 

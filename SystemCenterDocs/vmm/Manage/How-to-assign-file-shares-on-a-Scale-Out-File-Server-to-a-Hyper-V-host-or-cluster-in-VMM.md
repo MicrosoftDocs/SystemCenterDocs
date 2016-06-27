@@ -11,6 +11,9 @@ ms.topic: article
 ms.assetid: bf1a333d-0772-49c4-8cac-171bcfb79a72
 ---
 # How to assign file shares on a Scale-Out File Server to a Hyper-V host or cluster in VMM
+
+>Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
+
 On a Scale-Out File Server in Virtual Machine Manager (VMM), after file shares have been created, assign them to a Hyper-V host or host cluster. This configures the necessary permissions. For information about steps to take before and after assigning file shares to hosts and host clusters, see [Overview: configuring storage using Scale-Out File Servers in VMM](Overview--configuring-storage-using-Scale-Out-File-Servers-in-VMM.md).
 
 This topic contains two procedures:
@@ -95,5 +98,6 @@ Use this procedure for working with a stand-alone Hyper-V host. If you are worki
 [How to create a Run As account in VMM](How-to-create-a-Run-As-account-in-VMM.md)
 [Overview: configuring storage using Scale-Out File Servers in VMM](Overview--configuring-storage-using-Scale-Out-File-Servers-in-VMM.md)
 [Configuring storage using Scale-Out File Servers in VMM](Configuring-storage-using-Scale-Out-File-Servers-in-VMM.md)
+
 
 

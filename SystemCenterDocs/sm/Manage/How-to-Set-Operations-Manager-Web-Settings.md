@@ -11,6 +11,9 @@ ms.topic: article
 ms.assetid: faa28b76-7132-4962-9f59-95df2bd07aac
 ---
 # How to Set Operations Manager Web Settings
+
+>Applies To: System Center 2016 Technical Preview - Service Manager
+
 Use the following procedures to set the web settings of System Center Operations Manager in Service Manager and validate the settings.
 
 ### To set Operations Manager web settings
@@ -30,5 +33,6 @@ Use the following procedures to set the web settings of System Center Operations
 ### To validate Operations Manager web settings
 
 -   Make sure that you can access the web console server by entering **http://<servername\>:51908** into your browser, where <servername\> is the name of the computer hosting the web console server.
+
 
 

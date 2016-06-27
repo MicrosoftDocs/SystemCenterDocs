@@ -8,6 +8,9 @@ ms.topic: article
 ms.assetid: f1ed9144-fcac-401b-bee8-179a12e76fac
 ---
 # How to create and remove update exemptions for resources in VMM
+
+>Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
+
 The procedures in this topic explain how to create an update exemption that prevents an update from being installed on a server managed by Virtual Machine Manager (VMM), and how to remove the exemption so that the update can be installed in the next update remediation.
 
 When an administrator creates an update exemption for a managed computer, the computer remains accountable to an assigned baseline while it is exempted from a particular update in the baseline.
@@ -67,5 +70,6 @@ After you remove an update exemption from a resource, you should scan the resour
 ## See Also
 [Managing fabric updates in VMM](Managing-fabric-updates-in-VMM.md)
 [Managing fabric resources with VMM](Managing-fabric-resources-with-VMM.md)
+
 
 

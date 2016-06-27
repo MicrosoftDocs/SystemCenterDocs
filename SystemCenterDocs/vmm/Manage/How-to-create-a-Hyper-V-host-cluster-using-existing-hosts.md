@@ -12,6 +12,9 @@ ms.assetid: 1e15b87e-f46d-4285-bc6e-eace2d078a95
 ---
 # How to create a Hyper-V host cluster using existing hosts
 
+>Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
+
+
 
 You can create a Hyper-v host cluster in the VMM fabric using the VMM console.  
 
@@ -48,6 +51,7 @@ Here's what VMM does after you create the cluster:
 5.  Creates the cluster with quorum settings, configures any cluster static IP settings that you specified, and enables Cluster Shared Volumes (CSV)
 
 6.  For each logical unit that is designated as a CSV, assigns the logical unit as a CSV on the cluster
+
 
 
 

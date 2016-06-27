@@ -11,6 +11,9 @@ ms.topic: article
 ms.assetid: a52f6f49-795a-43d1-a6d6-d86140c7d9d6
 ---
 # How to Subscribe to Notifications
+
+>Applies To: System Center 2016 Technical Preview - Service Manager
+
 After you create a notification template, and after you have enabled at least one notification channel, you can use the following procedure to subscribe to notifications by using the Notification Subscription Wizard. Then, notifications will be sent when an object is created or updated or periodically when other criteria that you specify are met.
 
 The scenarios in this topic center on the Create E-Mail Notification Subscription Wizard. The condition that you choose to notify will dynamically change the wizard pages that are available.
@@ -123,5 +126,6 @@ In the first procedure, you set up a subscription so that a messaging analyst is
 -   For information about how to use Windows PowerShell to update subscription properties in Service Manager, see [Update-SCSMSubscription](http://go.microsoft.com/fwlink/p/?LinkID=225388).
 
 -   For information about how to use Windows PowerShell to remove a subscription from Service Manager, see [Remove-SCSMSubscription](http://go.microsoft.com/fwlink/p/?LinkID=225370).
+
 
 

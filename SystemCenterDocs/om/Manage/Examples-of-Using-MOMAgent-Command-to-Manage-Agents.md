@@ -11,6 +11,9 @@ ms.topic: article
 ms.assetid: f7fb8119-565a-4796-a639-5051a9c52a75
 ---
 # Examples of Using MOMAgent Command to Manage Agents
+
+>Applies To: System Center 2016 Technical Preview - Operations Manager
+
 The following examples show different ways in which you can use the MOMAgent command. You can use this command to perform new installations of agents, upgrade agents from previous releases of Operations Manager, or change the configuration of an agent (such as the management group or management server associated with the agent).
 
 ### Agent installation using a specific Action Account
@@ -75,5 +78,6 @@ msiexec /x path\Directory\MOMAgent.msi /qn %temp%\MOMAgentUpgrade.log
 [Upgrading and Uninstalling Agents on UNIX and Linux Computers](Upgrading-and-Uninstalling-Agents-on-UNIX-and-Linux-Computers.md)
 [Manually Uninstalling Agents from UNIX and Linux Computers](Manually-Uninstalling-Agents-from-UNIX-and-Linux-Computers.md)
 [Uninstall Agent from Windows-based Computers](Uninstall-Agent-from-Windows-based-Computers.md)
+
 
 

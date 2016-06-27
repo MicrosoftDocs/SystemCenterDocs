@@ -11,6 +11,9 @@ ms.topic: article
 ms.assetid: 7a309623-f597-4fb5-8bfa-728b50dfb334
 ---
 # How to remove a node from a Hyper-V host cluster in VMM
+
+>Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
+
 This topic contains procedures for removing one or more nodes from a host cluster that is managed by Virtual Machine Manager (VMM). At the start of the procedure, the cluster must have at least two nodes.
 
 With a host cluster, the host that you remove becomes a stand-alone host managed in VMM.
@@ -39,5 +42,6 @@ With a host cluster, the host that you remove becomes a stand-alone host managed
 [Managing Hyper-V hosts and host clusters with VMM](Managing-Hyper-V-hosts-and-host-clusters-with-VMM.md)
 [Managing hosts and host clusters with VMM](Managing-hosts-and-host-clusters-with-VMM.md)
 [Managing fabric resources with VMM](Managing-fabric-resources-with-VMM.md)
+
 
 

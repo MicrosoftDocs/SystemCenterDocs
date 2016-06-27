@@ -11,6 +11,9 @@ ms.topic: article
 ms.assetid: 4bb2487c-5a91-44d2-9a85-f4112aff40ac
 ---
 # Configure System Center 2016 - Service Manager CEIP Settings
+
+>Applies To: System Center 2016 Technical Preview - Service Manager
+
 During setup in Service Manager, on the **Help improve System Center** page, you have the option to participate in the Customer Experience Improvement Program (CEIP). For a Service Manager management server, you can use the first following procedure to let Service Manager participate in the program or remove Service Manager from this program. For either a data warehouse management server or Service Manager management server, you use the second following procedure to modify the registry to join or leave the Customer Experience Improvement Program.
 
 ### To configure Service Manager CEIP settings using the Service Manager console
@@ -36,5 +39,6 @@ During setup in Service Manager, on the **Help improve System Center** page, you
     **CEIPEnable**
 
 4.  Set the value to 1 to participate in the CEIP or set the value to 0 to leave the CEIP.
+
 
 

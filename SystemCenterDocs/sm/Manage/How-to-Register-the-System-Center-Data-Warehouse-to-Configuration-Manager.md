@@ -11,6 +11,9 @@ ms.topic: article
 ms.assetid: 1b53c170-36ff-4d31-b6a2-2095177cd71c
 ---
 # How to Register the System Center Data Warehouse to Configuration Manager
+
+>Applies To: System Center 2016 Technical Preview - Service Manager
+
 You can use the following steps in Service Manager to register Configuration Manager with the System Center Data Warehouse and then validate the registration.
 
 ### To register Configuration Manager with the data warehouse
@@ -49,5 +52,6 @@ You can use the following steps in Service Manager to register Configuration Man
 ### To validate the Configuration Manager registration process
 
 -   In the **Data Sources** view, the new data source appears in the list of data sources, with the data source type of **Configuration Manager**. You might have to refresh your view to see the new data source.
+
 
 

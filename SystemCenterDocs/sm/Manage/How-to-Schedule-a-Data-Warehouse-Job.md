@@ -11,12 +11,15 @@ ms.topic: article
 ms.assetid: 8f33a637-c203-4146-b1ae-5fb63b349b94
 ---
 # How to Schedule a Data Warehouse Job
+
+>Applies To: System Center 2016 Technical Preview - Service Manager
+
 You can use the following procedure to schedule a data warehouse job in Service Manager.
 
-You could use this procedure in a scenario where a schedule for the data warehouse jobs has been defined in Service Manager. You want to change the schedule for the data warehouse jobs to define standard maintenance windows for the Service Manager database and for the data warehouse. Use the **Set-SCDWJobSchedule** cmdlet to schedule the data warehouse jobs. The **Set-SCDWJobSchedule â€“ScheduleType Weekly** cmdlet and parameter combination allows jobs to run only on the days you specify. For example, the following commands define a daily or weekly schedule:
+You could use this procedure in a scenario where a schedule for the data warehouse jobs has been defined in Service Manager. You want to change the schedule for the data warehouse jobs to define standard maintenance windows for the Service Manager database and for the data warehouse. Use the **Set-SCDWJobSchedule** cmdlet to schedule the data warehouse jobs. The **Set-SCDWJobSchedule –ScheduleType Weekly** cmdlet and parameter combination allows jobs to run only on the days you specify. For example, the following commands define a daily or weekly schedule:
 
 ```
-Set-SCDWJobSchedule -JobName Transform.Common â€“ScheduleType Daily -DailyFrequency  01:00:00 -DailyStart 06:00
+Set-SCDWJobSchedule -JobName Transform.Common –ScheduleType Daily -DailyFrequency  01:00:00 -DailyStart 06:00
 
 ```
 
@@ -36,7 +39,7 @@ In the following procedure, you configure a schedule for the Transform job to ru
 2.  At the Windows PowerShell prompt, type the following command, and then press ENTER.
 
     ```
-    Set-SCDWJobSchedule -JobName Transform.Common -ScheduleType Daily â€“DailyFrequency 00:45:00 â€“DailyStart 02:00
+    Set-SCDWJobSchedule -JobName Transform.Common -ScheduleType Daily –DailyFrequency 00:45:00 –DailyStart 02:00
     ```
 
 ### To validate a data warehouse job schedule
@@ -48,5 +51,6 @@ In the following procedure, you configure a schedule for the Transform job to ru
     ```
     Get-SCDWJobSchedule
     ```
+
 
 

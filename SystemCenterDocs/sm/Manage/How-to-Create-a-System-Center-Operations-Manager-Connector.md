@@ -11,6 +11,9 @@ ms.topic: article
 ms.assetid: f435d4b2-e965-4ae6-8f99-c9f00b956937
 ---
 # How to Create a System Center Operations Manager Connector
+
+>Applies To: System Center 2016 Technical Preview - Service Manager
+
 In Service Manager, there are two types of connectors for System Center Operations Manager. You use the first type of connector, the alert connector, to automatically generate incidents that are based on Operations Manager alerts. You use the second type of connector, the configuration item (CI) connector, to import discovered objects from Operations Manager as configuration items into the Service Manager database. You can use the following procedures to create both connectors, validate them, and confirm their creation.
 
 > [!NOTE]
@@ -44,7 +47,7 @@ There are two phases for creating the Alert connector. The first part involves c
 
     6.  On the **Server Details** page, click **Test Connection**. If you receive the following confirmation message, click **OK**, and then click **Next**:
 
-        ‚ÄúThe connection to the server was successful.‚Äù
+        ìThe connection to the server was successful.î
 
     7.  On the **Alert Routing Rules** page, click **Add**.
 
@@ -100,7 +103,7 @@ There are two phases for creating the Alert connector. The first part involves c
 
     4.  On the **Server Details** page, click **Test Connection**. If you receive the following confirmation message, click **OK**, and then click **Next**:
 
-        ‚ÄúThe connection to the server was successful.‚Äù
+        ìThe connection to the server was successful.î
 
     5.  On the **MP Selection** page, click **Select all**, or select the management packs that define the configuration items you want to import, and then click **Next**.
 
@@ -123,5 +126,6 @@ There are two phases for creating the Alert connector. The first part involves c
 -   For information about how to use Windows PowerShell to create a new Operations Manager CI connector in Service Manager, see [New-SCOMConfigurationItemConnector](http://go.microsoft.com/fwlink/p/?LinkID=225352).
 
 -   For information about how to use Windows PowerShell to retrieve connectors that are defined in Service Manager and to view their status, see [Get-SCSMConnector](http://go.microsoft.com/fwlink/p/?LinkId=225320).
+
 
 

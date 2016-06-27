@@ -11,6 +11,9 @@ ms.topic: article
 ms.assetid: 706e433d-c641-4dc3-8be5-fe582ef9f4bc
 ---
 # Using SQL Server 2014 AlwaysOn availability groups with Service Manager
+
+>Applies To: System Center 2016 Technical Preview - Service Manager
+
 The information in this topic provides tasks that you need to perform in order for Service Manager to work effectively when using availability groups. It also emphasizes specific SQL Server 2014 AlwaysOn functionality that Service Manager 2016 supports.
 
 However, this information is not intended to provide detailed instructions on how to configure a SQL Server 2014 AlwaysOn Availability Group. Additionally, Service Manager does not support setting the MultiSubnetFailover parameter. This parameter is not used in Service Manager connection strings.
@@ -21,9 +24,9 @@ However, this information is not intended to provide detailed instructions on ho
 
 SQL 2014 Server AlwaysOn supports the following Service Manager databases:
 
-- Service Manager CMDB
-- Service Manager Data Warehouse (all 3 databases)
-- OM and CM DataMart
+- ??Service Manager CMDB
+- ??Service Manager Data Warehouse (all 3 databases)
+- ??OM and CM DataMart
 
 ## New management group installation
 
@@ -56,4 +59,5 @@ Use the following series of tasks when using an existing management group with a
     3. In Step 7, *Configure the registry on all the management servers*, change the registry key `HKEY\_LOCAL\_MACHINE\Software\Microsoft\System Center2010\Common\Database` and give `DatabaseServerName` as <AGL Name,AGL Port number>
 
 To summarize, you are changing the computer name hosting the Service Manager database to <AGL Name,AGL Port number> for SQL Server AlwaysOn support.
+
 

@@ -8,6 +8,9 @@ ms.topic: article
 ms.assetid: a3633a09-a9ec-42ce-9774-185679502839
 ---
 # How to manage Virtual Fibre Channel zones and zonesets with VMM
+
+>Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
+
 Zones are used to connect a Fibre Channel array to a host computer or virtual machine (VM). Specifically, the storage array target ports are mapped to the HBA ports on the host or to the virtual HBA (vHBA) ports for the VM. The HBA and vHBA ports are referred to as initiator ports. The zoning process is also known as onboarding.
 
 You can create zones for a host, a VM, or both. For Hyper-V failover clusters, a zone is needed for each host computer in the cluster.
@@ -105,5 +108,6 @@ Use the following procedures to view the zonesets associated with a fabric, edit
 [Managing Virtual Fibre Channel fabrics with VMM](Managing-Virtual-Fibre-Channel-fabrics-with-VMM.md)
 [Managing storage resources and capacity with VMM](Managing-storage-resources-and-capacity-with-VMM.md)
 [Managing fabric resources with VMM](Managing-fabric-resources-with-VMM.md)
+
 
 

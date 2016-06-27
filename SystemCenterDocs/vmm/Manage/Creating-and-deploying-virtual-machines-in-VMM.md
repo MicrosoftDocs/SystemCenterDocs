@@ -8,6 +8,9 @@ ms.topic: article
 ms.assetid: b09284a9-a66c-415a-ab43-ee5c4af16583
 ---
 # Creating and deploying virtual machines in VMM
+
+>Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
+
 The following topics describe how to create and deploy virtual machines in Virtual Machine Manager (VMM):
 
 -   [Overview: creating and deploying virtual machines in VMM](Overview--creating-and-deploying-virtual-machines-in-VMM.md)
@@ -32,6 +35,7 @@ The following topics describe how to create and deploy virtual machines in Virtu
 -   [How to deploy a virtual machine stored in the VMM library](How-to-deploy-a-virtual-machine-stored-in-the-VMM-library.md)
 
 -   [How to view and modify properties of a deployed virtual machine in VMM](How-to-view-and-modify-properties-of-a-deployed-virtual-machine-in-VMM.md)
+
 
 
 

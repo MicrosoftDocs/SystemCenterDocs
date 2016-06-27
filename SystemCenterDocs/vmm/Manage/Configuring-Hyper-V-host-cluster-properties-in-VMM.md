@@ -11,6 +11,9 @@ ms.topic: article
 ms.assetid: 2215b794-d6ac-4c47-b490-21bfc66470da
 ---
 # Configuring Hyper-V host cluster properties in VMM
+
+>Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
+
 After you add a Hyper-V host cluster to Virtual Machine Manager (VMM), you can view and configure the host cluster properties that are described in the following table. (For information about configuring individual hosts, see the links at the end of this topic.)
 
 |Tab|Settings|
@@ -25,5 +28,6 @@ After you add a Hyper-V host cluster to Virtual Machine Manager (VMM), you can v
 [Modifying Hyper-V host clusters in VMM](Modifying-Hyper-V-host-clusters-in-VMM.md)
 [Configuring Hyper-V host properties in VMM](Configuring-Hyper-V-host-properties-in-VMM.md)
 [Managing Hyper-V hosts and host clusters with VMM](Managing-Hyper-V-hosts-and-host-clusters-with-VMM.md)
+
 
 

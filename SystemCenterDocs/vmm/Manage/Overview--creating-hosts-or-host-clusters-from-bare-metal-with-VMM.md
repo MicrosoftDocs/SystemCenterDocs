@@ -11,6 +11,9 @@ ms.topic: article
 ms.assetid: e7c94f0d-67f1-4c79-8bb0-b9b7fe72c236
 ---
 # Overview: creating hosts or host clusters from bare metal with VMM
+
+>Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
+
 The procedures in this section describe how to use Virtual Machine Manager (VMM) to discover physical computers (bare-metal computers) on the network, automatically install one of the operating systems listed in this topic, and provision the computers into managed Hyper-V hosts or host clusters.
 
 ## Video overview of host provisioning
@@ -71,7 +74,7 @@ The following sequences describes the workflow and deployment process for provis
 
 2.  During the deployment process (host or host cluster), the VMM management server restarts the physical computers.
 
-    The management servers restarts the computers by issuing ‚ÄúPower Off‚Äù and ‚ÄúPower On‚Äù commands to the Baseboard Management Controller (BMC) using out-of-band management. When the physical computers restart, the PXE server responds to the boot requests from the physical computers.
+    The management servers restarts the computers by issuing ìPower Offî and ìPower Onî commands to the Baseboard Management Controller (BMC) using out-of-band management. When the physical computers restart, the PXE server responds to the boot requests from the physical computers.
 
 3.  The physical computers boot from a customized Windows Preinstallation Environment (Windows PE) image on the Pre-boot execution environment (PXE) server.
 
@@ -117,5 +120,6 @@ The following table summarizes the example names that could be used in this scen
 [Managing Hyper-V hosts and host clusters with VMM](Managing-Hyper-V-hosts-and-host-clusters-with-VMM.md)
 [Managing hosts and host clusters with VMM](Managing-hosts-and-host-clusters-with-VMM.md)
 [Managing fabric resources with VMM](Managing-fabric-resources-with-VMM.md)
+
 
 

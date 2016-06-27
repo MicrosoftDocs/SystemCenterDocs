@@ -11,6 +11,9 @@ ms.topic: article
 ms.assetid: 25392668-5bc2-42ea-b6ea-293a191b57fa
 ---
 # VMM networking reference: creating an uplink port profile in VMM
+
+>Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
+
 When you configure a logical switch, you can also create an uplink port profile. However, you can create uplink port profiles outside of the Create Logical Switch Wizard, using the settings listed in this topic.
 
 > [!IMPORTANT]
@@ -76,5 +79,6 @@ When you configure a logical switch, you can also create an uplink port profile.
 [Configuring logical networks, VM networks, and logical switches in VMM](Configuring-logical-networks,-VM-networks,-and-logical-switches-in-VMM.md)
 [VMM networking reference: illustrations, settings, and optional procedures](VMM-networking-reference--illustrations,-settings,-and-optional-procedures.md)
 [Managing network resources with VMM](Managing-network-resources-with-VMM.md)
+
 
 

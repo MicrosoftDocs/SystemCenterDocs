@@ -11,6 +11,9 @@ ms.topic: article
 ms.assetid: b1468921-5bd4-4287-aa26-7f24084a54ac
 ---
 # How to Create an Active Directory Connector_2
+
+>Applies To: System Center 2016 Technical Preview - Service Manager
+
 You can use the following procedures in Service Manager to create,  validate, and confirm the status of an Active Directory connector to import objects from Active Directory Domain Services (AD DS).
 
 ### To create an Active Directory connector and to import objects from AD DS
@@ -54,7 +57,7 @@ You can use the following procedures in Service Manager to create,  validate, an
 
     10. On the **Completion** page, make sure that you receive the following confirmation message:
 
-        ‚ÄúActive Directory connector successfully created.‚Äù
+        ìActive Directory connector successfully created.î
 
         Then, click **Close**.
 
@@ -76,5 +79,6 @@ You can use the following procedures in Service Manager to create,  validate, an
 -   View the columns in the **Connector** pane; the columns contain information about the start time, the finish time, the status, and the percentage of imported configuration items.
 
 ![](../../media/pssymbol.png)You can use a Windows PowerShell command to create a new Service Manager Active Directory connector. For information about how to use Windows PowerShell to create a new Service Manager Active Directory connector, see [New-SCADConnector](http://go.microsoft.com/fwlink/?LinkId=225349).
+
 
 

@@ -11,6 +11,9 @@ ms.topic: article
 ms.assetid: 1238b5b8-98fc-4c2b-bdb5-253e4e1b3baa
 ---
 # Configuring Distributed Key Management in VMM
+
+>Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
+
 During the installation of a Virtual Machine Manager (VMM) management server, you must decide whether to store the keys to encrypted data on the local computer or configure distributed key management. On the **Configure service account and distributed key management** page of Setup, you can select to use distributed key management to store encryption keys in Active Directory Domain Services (AD DS) instead of storing the encryption keys on the computer on which the VMM management server is installed.
 
 By default, VMM encrypts some data in the VMM database by using the Data Protection Application Programming Interface (DPAPI). For example, VMM encrypts Run As account credentials and passwords in guest operating system profiles. VMM also encrypts product key information in virtual hard disk properties for virtual machine role scenarios and configuration. The encryption of this data is tied to the specific computer on which VMM is installed and the service account that VMM uses. Therefore, if you move your VMM installation to another computer, VMM will not retain the encrypted data. In that case, you must enter this data manually to fix the VMM objects.
@@ -41,5 +44,6 @@ The following are requirements and considerations for using distributed key mana
 -   On the **Configure service account and distributed key management** page, you must type the location of the container in AD DS, for example:
 
     **CN=VMMDKM,DC=corp,DC=contoso,DC=com**
+
 
 

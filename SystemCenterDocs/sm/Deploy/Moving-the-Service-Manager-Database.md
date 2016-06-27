@@ -11,6 +11,9 @@ ms.topic: article
 ms.assetid: 0c83c9a4-720f-4327-98b9-16dca71a13b2
 ---
 # Moving the Service Manager Database
+
+>Applies To: System Center 2016 Technical Preview - Service Manager
+
 You must use the following high-level steps to move the Service Manager database.
 
 > [!NOTE]
@@ -93,5 +96,6 @@ You must use the following high-level steps to move the Service Manager database
 
     GO
     ```
+
 
 

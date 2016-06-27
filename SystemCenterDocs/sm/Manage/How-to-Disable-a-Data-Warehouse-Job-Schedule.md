@@ -11,6 +11,9 @@ ms.topic: article
 ms.assetid: fff90c14-a2bd-4f92-95a5-b708203d2f06
 ---
 # How to Disable a Data Warehouse Job Schedule
+
+>Applies To: System Center 2016 Technical Preview - Service Manager
+
 You can use the following procedure to disable the schedule for the extract, transform, and load (ETL) jobs; however, you can use this procedure to disable the schedule for any data warehouse job. In this release of Service Manager, you can disable the schedules only by using Windows PowerShell cmdlets.
 
 
@@ -21,21 +24,22 @@ You can use the following procedure to disable the schedule for the extract, tra
 2.  At the Windows PowerShell prompt, type the following commands, and press ENTER after each command:
 
     ```
-    Disable-SCDWJobSchedule â€“JobName Extract_<data warehouse management group name>
+    Disable-SCDWJobSchedule –JobName Extract_<data warehouse management group name>
     ```
 
     ```
-    Disable-SCDWJobSchedule â€“JobName Extract_<Service Manager management group name>
+    Disable-SCDWJobSchedule –JobName Extract_<Service Manager management group name>
     ```
 
     ```
-    Disable-SCDWJobSchedule â€“JobName Transform.Common
+    Disable-SCDWJobSchedule –JobName Transform.Common
     ```
 
     ```
-    Disable-SCDWJobSchedule â€“JobName Load.Common
+    Disable-SCDWJobSchedule –JobName Load.Common
     ```
 
 3.  Type **exit**, and then press ENTER.
+
 
 

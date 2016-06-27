@@ -11,6 +11,9 @@ ms.topic: article
 ms.assetid: 8715ed07-5eea-41cb-b5a8-4134b047b91b
 ---
 # How to Create a Service
+
+>Applies To: System Center 2016 Technical Preview - Service Manager
+
 You can use the following procedures to create a service in Service Manager. You should create and define business services that are critical to your enterprise. When you create a service, you create service configuration items, you define their business data, and you define relationships to other configuration items.
 
 In the first procedure, you manually create a service from configuration items that are already present in Service Manager. This is a simple example and requires little other than a few existing configuration items.
@@ -42,7 +45,7 @@ Generally, you should construct service maps that are 3-5 levels deep. Component
 
 6.  In the **Priority** list, select **Medium**. In the **Status** list, select **In Service**.
 
-7.  Next to the **Service owner** box, click the ellipsis button (**â€¦**). Select the user who owns the service.
+7.  Next to the **Service owner** box, click the ellipsis button (**…**). Select the user who owns the service.
 
 8.  Next to the **Service contacts** box, click **Add** to select and add users who are contacts for the service.
 
@@ -79,7 +82,7 @@ Generally, you should construct service maps that are 3-5 levels deep. Component
 
 4.  In the **Tasks** pane, under the title of the distributed application, click **Edit**.
 
-5.  In the **Service Maps â€“ <DistributedApplicationName\>** dialog box, click the **Service Components** tab to view the items defined in the Operations Manager distributed application. Then, expand the **Service Components** tree three levels.
+5.  In the **Service Maps – <DistributedApplicationName\>** dialog box, click the **Service Components** tab to view the items defined in the Operations Manager distributed application. Then, expand the **Service Components** tree three levels.
 
 6.  Select any configuration item, and then click **Open** to view or edit its properties.
 
@@ -94,5 +97,6 @@ Generally, you should construct service maps that are 3-5 levels deep. Component
 4.  In the form that appears, click the **Service Dependents** tab. Services that use the new service are listed. For example, **IT Messaging Service** appears in the list.
 
 5.  Click **OK**.
+
 
 

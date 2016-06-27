@@ -8,6 +8,9 @@ ms.topic: article
 ms.assetid: ce536f0a-0614-4220-9081-53f4ecec1a3b
 ---
 # Using Reporting in VMM
+
+>Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
+
 After you connect Virtual Machine Manager (VMM) with System Center Operations Manager, you can create and view reports relating to VMM managed components, including virtual machine hosts, virtual machines, and VMM-related servers (for example, library servers.)
 
 > [!NOTE]
@@ -45,5 +48,6 @@ You can also design your own reports.
 ## See Also
 [Integrating VMM and System Center Operations Manager](Integrating-VMM-and-System-Center-Operations-Manager.md)
 [Monitoring and reporting for VMM resources](Monitoring-and-reporting-for-VMM-resources.md)
+
 
 

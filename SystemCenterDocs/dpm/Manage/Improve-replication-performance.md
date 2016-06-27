@@ -12,7 +12,10 @@ ms.assetid:  dc7b7b49-dcbb-4e44-9ea7-31374c5773ff
 ---
 
 # Improve replication performance
-There are a number of steps you can take to optimize the performance of System Center 2012 â€“ Data Protection Manager (DPM) data replication and synchronization, including network throttling, data compression, staggering synchronization, and optimizing express backups.
+
+>Applies To: System Center 2016 Technical Preview - Data Protection Manager
+
+There are a number of steps you can take to optimize the performance of System Center 2012 – Data Protection Manager (DPM) data replication and synchronization, including network throttling, data compression, staggering synchronization, and optimizing express backups.
 
 ## Network throttling
 Network bandwidth usage throttling is configured at backed up machine level and you  can specify different network bandwidth usage throttling rates for work hours, non-work hours, and weekends, and you define the times for each of those categories. Enable throttling as follows:
@@ -33,7 +36,7 @@ If the DPM bandwidth usage limit, either by itself or in combination with the li
 For example, if a DPM computer with a 1-gigabit-per-second (Gbps) network connection has a Group Policy reservable bandwidth limit of 20 percent, 200 Mbps of bandwidth is reserved for all programs that use the Packet Scheduler. If DPM bandwidth usage is then set to a maximum of 150 Mbps while Internet Information Services (IIS) bandwidth usage is set to a maximum of 100 Mbps, the combined bandwidth usage limits of DPM and IIS exceed the Group Policy reservable bandwidth limit, and the DPM limit might not be applied. To resolve this issue, reduce the DPM setting for network bandwidth usage throttling.
 
 ## Enable data compression
-On-the-wire compression is configured at the protection-group level for backup to tape. Compressing data reduces the space needed on the tape and increases the number of backup jobs that can be stored on the same tape. Compression doesnâ€™t significantly increase the tme required to complete the backup job. Encryption increases data security, and also doesnâ€™t significantly increase the time required for the backup job. Encryption requires a valid certificate on the DPM server. Configure compression as follows:
+On-the-wire compression is configured at the protection-group level for backup to tape. Compressing data reduces the space needed on the tape and increases the number of backup jobs that can be stored on the same tape. Compression doesn’t significantly increase the tme required to complete the backup job. Encryption increases data security, and also doesn’t significantly increase the time required for the backup job. Encryption requires a valid certificate on the DPM server. Configure compression as follows:
 
 1.  Open  DPM Administrator console > **Protection** view.
 
@@ -54,5 +57,6 @@ To provide quick recovery of application data, DPM must create an express full b
 
 2.  Click **Optimize performance** and on the **Express Full Backu**p tab, select the available times for the express full backups and click Add.
     Select the days of the week for the express full backups.
+
 
 

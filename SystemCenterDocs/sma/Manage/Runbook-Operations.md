@@ -11,6 +11,9 @@ ms.topic: article
 ms.assetid: c8ccceea-3bc2-4487-b174-4f0edbd51fa2
 ---
 # Runbook Operations
+
+>Applies To: Windows Azure Pack for Windows Server
+
 The following topics provide details on different operations related to runbooks in Service Management Automation in Windows Azure Pack.
 
 -   [Starting a Runbook](Starting-a-Runbook.md)
@@ -31,5 +34,6 @@ The following topics provide details on different operations related to runbooks
 
 ## See Also
 [Service Management Automation](../Service-Management-Automation.md)
+
 
 

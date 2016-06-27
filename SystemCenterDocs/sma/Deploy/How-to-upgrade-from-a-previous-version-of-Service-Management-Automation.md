@@ -8,6 +8,9 @@ ms.topic: article
 ms.assetid: c849610a-81ea-474d-a77f-bc15694e65f0
 ---
 # How to upgrade from a previous version of Service Management Automation
+
+>Applies To: 
+
 This article describes how to upgrade your existing Service Management Automation 2016 (SMA).
 
 ## Prerequisites
@@ -26,4 +29,5 @@ There is no in place upgrade for SMA servers, so you must uninstall the existing
 3. Install the SMA runbook workers using the instructions at [How to install the Service Management Automation runbook worker](How-to-install-the-Service-Management-Automation-runbook-worker.md).
 4. Install the SMA web service using the instructions at [How to install the Service Management Automation web service](How-to-install-the-Service-Management-Automation-web-service.md).
 5. Remove SMA servers from maintenance mode.
+
 

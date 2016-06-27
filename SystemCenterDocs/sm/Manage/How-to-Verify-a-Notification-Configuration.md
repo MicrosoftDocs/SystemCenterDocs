@@ -11,6 +11,9 @@ ms.topic: article
 ms.assetid: 9395bb54-3aab-48e3-9b9f-8b874d213fe3
 ---
 # How to Verify a Notification Configuration
+
+>Applies To: System Center 2016 Technical Preview - Service Manager
+
 You can use the following procedure to verify that you have correctly configured notifications. Generate the type of change that activates the notification subscription that was previously created. When you do this, the subscription generates and then sends a notification. Receipt of the notification verifies success. For example, create a test incident that generates an email notification. The notification informs the recipient that an incident was opened.
 
 If you are verifying a recurring notification subscription, you must wait for the time interval that you set previously to elapse until the notification is sent. When the notification is received, the configuration of the notification is verified.
@@ -28,5 +31,6 @@ If you are verifying a recurring notification subscription, you must wait for th
 5.  In the **Classification Category** list, select **E-mail Problems**, and then click **OK**.
 
 6.  Verify that an email notification that contains the information you entered in the template is received. The email title should contain the incident ID number.
+
 
 

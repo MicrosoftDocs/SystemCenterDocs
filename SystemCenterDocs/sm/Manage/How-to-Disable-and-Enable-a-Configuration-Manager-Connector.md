@@ -11,6 +11,9 @@ ms.topic: article
 ms.assetid: bf2d8feb-76ce-40b8-a3c6-41d6aac284ea
 ---
 # How to Disable and Enable a Configuration Manager Connector
+
+>Applies To: System Center 2016 Technical Preview - Service Manager
+
 You can use the following procedures to disable or enable a System Center Configuration Manager connector and validate the status of the change.
 
 ### To disable a Configuration Manager connector
@@ -51,5 +54,6 @@ You can use the following procedures to disable or enable a System Center Config
 -   For information about how to use Windows PowerShell to retrieve connectors that are defined in Service Manager and view their status, see [Get-SCSMConnector](http://go.microsoft.com/fwlink/p/?LinkId=225320).
 
 -   For information about how to use Windows PowerShell to update the properties of a Service Manager connector, see [Update-SCSMConnector](http://go.microsoft.com/fwlink/p/?LinkID=225382).
+
 
 

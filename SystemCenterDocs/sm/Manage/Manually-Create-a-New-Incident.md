@@ -11,6 +11,9 @@ ms.topic: article
 ms.assetid: 4f5d5399-1014-4587-b10a-773725cd03d4
 ---
 # Manually Create a New Incident
+
+>Applies To: System Center 2016 Technical Preview - Service Manager
+
 In System Center 2016 Technical Preview - Service Manager, incidents are automatically created from email requests by users. However, you can use the following procedures to manually create a new incident in the Service Manager console and then validate it. For example, you might want to manually create a new incident for a person who is experiencing an email-related problem. You can link other affected items, such as various computers, to indicate that the issue affects more than one computer.
 
 ### To create a new incident from a configuration item view
@@ -58,3 +61,4 @@ In System Center 2016 Technical Preview - Service Manager, incidents are automat
 2.  In the **Work Items** pane, expand **Incident Management**, and then click **All Incidents**. New incidents appear in the **All Incidents** view.
 
 ## See Also
+

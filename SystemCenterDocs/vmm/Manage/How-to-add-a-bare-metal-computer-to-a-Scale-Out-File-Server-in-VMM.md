@@ -8,6 +8,9 @@ ms.topic: article
 ms.assetid: 1ddee956-c5e0-4b74-9796-b38b28c503e5
 ---
 # How to add a bare-metal computer to a Scale-Out File Server in VMM
+
+>Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
+
 You can use the following procedure to add one or more bare-metal computers to a host cluster or Scale-Out File Server cluster in Virtual Machine Manager (VMM).
 
 ### To add a bare-metal computer to a Scale-Out File Server in VMM
@@ -111,5 +114,6 @@ If you added a node to a cluster configured with Storage Spaces Direct, you also
 [Managing storage resources and capacity with VMM](Managing-storage-resources-and-capacity-with-VMM.md)
 [Managing infrastructure resources with VMM](Managing-infrastructure-resources-with-VMM.md)
 [Managing fabric resources with VMM](Managing-fabric-resources-with-VMM.md)
+
 
 

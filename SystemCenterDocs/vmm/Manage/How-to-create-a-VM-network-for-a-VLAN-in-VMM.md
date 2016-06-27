@@ -11,6 +11,9 @@ ms.topic: article
 ms.assetid: dba9273e-008e-4f21-a3cf-52f9b1530f60
 ---
 # How to create a VM network for a VLAN in VMM
+
+>Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
+
 You can use familiar virtual local area network (VLAN) technology for network isolation, and manage your configuration in Virtual Machine Manager (VMM) by creating VM networks for your VLANs. To plan your VM networks, see [Plan VM networks for a VLAN-based configuration](Overview--plan-VM-networks-in-VMM.md#BKMK_VLAN). To see how this procedure fits into an overall workflow, see [Implementing the configuration](Configuring-logical-networks,-VM-networks,-and-logical-switches-in-VMM.md#BKMK_implementing) in "Configuring logical networks, VM networks, and logical switches in VMM."
 
 > [!NOTE]
@@ -65,5 +68,6 @@ After a virtual machine has been deployed in VMM, you can view the IP address or
 [How to create a VM network for network virtualization and add an IP address pool in VMM](How-to-create-a-VM-network-for-network-virtualization-and-add-an-IP-address-pool-in-VMM.md)
 [Configuring logical networks, VM networks, and logical switches in VMM](Configuring-logical-networks,-VM-networks,-and-logical-switches-in-VMM.md)
 [Managing network resources with VMM](Managing-network-resources-with-VMM.md)
+
 
 

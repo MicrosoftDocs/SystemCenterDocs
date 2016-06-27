@@ -11,6 +11,9 @@ ms.topic: article
 ms.assetid: 978a72d8-a446-42e5-b2bb-53a838623ee0
 ---
 # Credentials
+
+>Applies To: Windows Azure Pack for Windows Server, System Center 2012 R2 Orchestrator
+
 An Automation Credential is either a username and password that can be used with Windows PowerShell commands or a certificate that is uploaded to the server.  The properties for a credential are stored securely in the Automation database and can be accessed in the runbook with either the **Get-AutomationPSCredential** or **Get-AutomationCertificate** activity.
 
 ## Windows PowerShell Cmdlets
@@ -34,7 +37,7 @@ The activities in the following table are used to access credentials in a runboo
 |Get-AutomationPSCredential|Gets a username/password to use in a runbook.|
 
 > [!NOTE]
-> You should avoid using variables in the â€“Name parameter of **Get-AutomationPSCredential** and **Get-AutomationCertificate** since this can complicate discovering dependencies between runbooks and Automation variables.
+> You should avoid using variables in the –Name parameter of **Get-AutomationPSCredential** and **Get-AutomationCertificate** since this can complicate discovering dependencies between runbooks and Automation variables.
 
 ## Creating a new credential
 
@@ -104,7 +107,7 @@ $certName = 'MyCertificate'
 $path = 'c:\certs\MyCertificate.pfx'
 $certPwd = ConvertTo-SecureString -String 'P@$$w0rd' -AsPlainText -Force
 
-Set-SmaCertificate -WebServiceEndpoint $webServer -port $port -Name $certName â€“Path $certPath â€“Password $certPwd
+Set-SmaCertificate -WebServiceEndpoint $webServer -port $port -Name $certName –Path $certPath –Password $certPwd
 ```
 
 ## Using a PowerShell Credential in a Runbook
@@ -125,5 +128,6 @@ You retrieve a PowerShell Credential in a runbook with the **Get-AutomationPSCre
 [Service Management Automation](../Service-Management-Automation.md)
 [Authoring Automation Runbooks](Authoring-Automation-Runbooks.md)
 [Global Assets](Global-Assets.md)
+
 
 

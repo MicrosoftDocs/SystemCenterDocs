@@ -12,9 +12,12 @@ ms.assetid: 9ed90e0a-6462-4c57-9ecb-770c14582b14
 ---
 # Upgrading to System Center 2016 - Operations Manager
 
-This section of the Deployment Guide provides information about how to upgrade to System Center 2016 â€“ Operations Manager from System Center Operations Manager 2012 R2. 
+>Applies To: System Center 2016 Technical Preview - Operations Manager
 
-> [!NOTE] This is the only supported upgrade path to System Center 2016 â€“ Operations Manager. If you are using Operations Manager 2012 Service Pack 1 (SP1), you must first upgrade to System Center Operations Manager 2012 R2.
+
+This section of the Deployment Guide provides information about how to upgrade to System Center 2016 – Operations Manager from System Center Operations Manager 2012 R2. 
+
+> [!NOTE] This is the only supported upgrade path to System Center 2016 – Operations Manager. If you are using Operations Manager 2012 Service Pack 1 (SP1), you must first upgrade to System Center Operations Manager 2012 R2.
 
 It is assumed in this guide that you are performing an upgrade to System Center 2012 R2 Operations Manager. For information about installing Operations Manager on a computer where no previous version of Operations Manager exists, see Deploying System Center 2016 - Operations Manager.
 
@@ -89,5 +92,6 @@ The following upgrade path supports customers in an Operations Manager scenario 
    a. Push-Install option
 
    b. Manual / Command-line option
+
 
 

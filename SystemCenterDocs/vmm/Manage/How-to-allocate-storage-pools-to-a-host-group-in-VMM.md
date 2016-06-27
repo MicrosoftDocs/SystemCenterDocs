@@ -8,6 +8,9 @@ ms.topic: article
 ms.assetid: 109cc677-3ae5-4a89-b8bb-12fa9d5f2f13
 ---
 # How to allocate storage pools to a host group in VMM
+
+>Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
+
 You can use the following procedure to allocate one or more storage pools to a host group in Virtual Machine Manager (VMM). After you allocate a storage pool to a host group, you can do either of the following:
 
 -   Create logical units from servers that are running Hyper-V in the host group that can access the storage array where the storage pool resides.
@@ -49,5 +52,6 @@ You can use the following procedure to allocate one or more storage pools to a h
 [Configuring block storage in VMM](Configuring-block-storage-in-VMM.md)
 [Managing storage resources and capacity with VMM](Managing-storage-resources-and-capacity-with-VMM.md)
 [Managing fabric resources with VMM](Managing-fabric-resources-with-VMM.md)
+
 
 

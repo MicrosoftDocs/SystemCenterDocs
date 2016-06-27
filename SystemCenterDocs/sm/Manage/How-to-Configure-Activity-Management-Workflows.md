@@ -11,6 +11,9 @@ ms.topic: article
 ms.assetid: 2d7b2743-e25d-4a96-9c2d-35406c5ec279
 ---
 # How to Configure Activity Management Workflows
+
+>Applies To: System Center 2016 Technical Preview - Service Manager
+
 Use the following procedures to automatically assign all unassigned manual activities to a named user and then validate the creation of workflow.
 
 Before you can complete the steps in this procedure, you have to create the following templates:
@@ -72,5 +75,6 @@ The new workflow you are about to create applies the **Set <named user\> as the 
 1.  In the **Administration** pane, expand **Administration**, expand **Workflows**, and then click **Status**.
 
 2.  In the **Status** pane, verify that the new workflow template titled **Assign Unassigned Activities to the <named user\>** is listed.
+
 
 

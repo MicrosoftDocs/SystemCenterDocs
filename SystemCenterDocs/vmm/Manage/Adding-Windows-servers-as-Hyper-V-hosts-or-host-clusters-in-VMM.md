@@ -11,6 +11,9 @@ ms.topic: article
 ms.assetid: 6b6a008d-0139-47af-8804-ed0ff75e5e88
 ---
 # Adding Windows servers as Hyper-V hosts or host clusters in VMM
+
+>Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
+
 The procedures in this section describe how to add an existing Windows Server computer or a Windows Server failover cluster as one or more managed Hyper-V hosts in Virtual Machine Manager (VMM). For information about other ways to add servers or clusters, see [Creating a host cluster in VMM from existing Windows servers](Creating-a-host-cluster-in-VMM-from-existing-Windows-servers.md) and [Deploying Hyper-V hosts or host clusters from bare metal with VMM](Deploying-Hyper-V-hosts-or-host-clusters-from-bare-metal-with-VMM.md).
 
 |Procedure|Description|
@@ -40,5 +43,6 @@ The following table summarizes the example names that could be used in this scen
 [Managing Hyper-V hosts and host clusters with VMM](Managing-Hyper-V-hosts-and-host-clusters-with-VMM.md)
 [Managing fabric resources with VMM](Managing-fabric-resources-with-VMM.md)
 [Managing hosts and host clusters with VMM](Managing-hosts-and-host-clusters-with-VMM.md)
+
 
 

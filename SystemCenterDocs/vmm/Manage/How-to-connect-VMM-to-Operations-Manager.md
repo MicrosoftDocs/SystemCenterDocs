@@ -8,6 +8,9 @@ ms.topic: article
 ms.assetid: 43c1b9f1-a8cf-4075-81df-2e78d64c3cfb
 ---
 # How to connect VMM to Operations Manager
+
+>Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
+
 You can connect Virtual Machine Manager (VMM) to Operations Manager so that they work in an integrated way. To connect VMM to Operations Manager, you must choose a supported version of Operations Manager, as described in [Preparing your environment for System Center 2016 - Virtual Machine Manager](../Deploy/Preparing-your-environment-for-System-Center-2016---Virtual-Machine-Manager.md).
 
 You must also configure the Operations Manager server to work with VMM.
@@ -48,7 +51,7 @@ Before you connect VMM to Operations Manager, perform the following actions:
 
     3.  Double-click a host in the list, click the **Security** tab, and then ensure that **Allow this agent to act as a proxy and discover managed objects on other computers** has been selected. Repeat this step for each of the hosts.
 
-6.  In Operations Manager, import the necessary management packs, as described in [How to Import an Operations Manager Management Pack](http://technet.microsoft.com/library/hh212691.aspx). You can find management packs, sometimes called ‚Äúmonitoring packs,‚Äù by searching the [Microsoft Download Center](http://www.microsoft.com/downloads/default.aspx). The necessary management packs are as follows:
+6.  In Operations Manager, import the necessary management packs, as described in [How to Import an Operations Manager Management Pack](http://technet.microsoft.com/library/hh212691.aspx). You can find management packs, sometimes called ìmonitoring packs,î by searching the [Microsoft Download Center](http://www.microsoft.com/downloads/default.aspx). The necessary management packs are as follows:
 
     -   Windows Server Internet Information Services 2003
 
@@ -172,5 +175,6 @@ If you want to reconnect VMM to the Operations Manager server, see [To set up in
 ## See Also
 [Integrating VMM and System Center Operations Manager](Integrating-VMM-and-System-Center-Operations-Manager.md)
 [Monitoring and reporting for VMM resources](Monitoring-and-reporting-for-VMM-resources.md)
+
 
 

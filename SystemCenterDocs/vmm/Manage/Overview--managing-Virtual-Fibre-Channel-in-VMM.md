@@ -8,6 +8,9 @@ ms.topic: article
 ms.assetid: 81189655-4e01-4a55-8d7d-be8dd62e3d8b
 ---
 # Overview: managing Virtual Fibre Channel in VMM
+
+>Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
+
 This topic provides background information to help you understand Virtual Fibre Channel in Virtual Machine Manager (VMM).
 
 Virtual Fibre Channel enables Hyper-V virtual machines (VMs) on host computers to have direct access to Fibre Channel storage area network (SAN) array resources. In this way, you can virtualize applications and workloads that require direct access to SAN logical unit numbers (LUNs). Using Virtual Fibre Channel, VM failover clusters can also access Fibre Channel SAN arrays.
@@ -37,7 +40,7 @@ The following terms represent the most important elements of a Virtual Fibre Cha
 
 **NPIV**. N_Port ID Virtualization (NPIV) is a standard used to create and map multiple virtual Fibre Channel (vHBA) ports to a single physical Fibre Channel N_port.
 
-**vHBA**. The virtualized HBA. Multiple vHBAs can be mapped to a single HBA. The vHBA uses NPIV to address a VMâ€™s WWN within a host HBA.
+**vHBA**. The virtualized HBA. Multiple vHBAs can be mapped to a single HBA. The vHBA uses NPIV to address a VM’s WWN within a host HBA.
 
 **Virtual SAN**. In the context of VMM, a virtual SAN (vSAN) defines a group of physical Fibre Channel ports that are connected to a physical SAN array. Not to be confused with the vSAN product by VMware.
 
@@ -101,5 +104,6 @@ Complete the following steps to integrate Virtual Fibre Channel with your VMM en
 [Hyper-V Virtual Fibre Channel Troubleshooting Guide](http://social.technet.microsoft.com/wiki/contents/articles/18698.hyper-v-virtual-fibre-channel-troubleshooting-guide.aspx)
 [Managing storage resources and capacity with VMM](Managing-storage-resources-and-capacity-with-VMM.md)
 [Managing fabric resources with VMM](Managing-fabric-resources-with-VMM.md)
+
 
 

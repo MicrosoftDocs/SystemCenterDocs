@@ -11,6 +11,9 @@ ms.topic: article
 ms.assetid: 7dd194e2-6ad7-4cea-9221-3eb3f028aa26
 ---
 # How to Install a VMM Management Server
+
+>Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
+
 You can use the following procedure to install a Virtual Machine Manager (VMM) management server. For similar topics, see [Installing VMM from a Command Prompt](Installing-VMM-from-a-Command-Prompt.md) and [Installing a Highly Available VMM Management Server](Installing-a-Highly-Available-VMM-Management-Server.md).
 
 Before you begin the installation of the VMM management server, review the system requirements. As part of this, ensure that you have a computer that is running a supported version of Microsoft SQL Server software. Setup will not automatically install an Express edition of SQL Server. For information, see:
@@ -148,5 +151,6 @@ During Setup, VMM enables the following firewall rules. These rules remain in ef
 5.  Repeat the previous two steps for every secondary SQL Server node in the cluster.
 
 6.  If this is a high-availability VMM setup, continue to install other high-availability VMM nodes.
+
 
 

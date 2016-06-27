@@ -11,6 +11,9 @@ ms.topic: article
 ms.assetid: 7d92b95a-0db7-43df-95ce-2732f54df3c1
 ---
 # How to Synchronize a Configuration Manager Connector
+
+>Applies To: System Center 2016 Technical Preview - Service Manager
+
 To ensure that the Service Manager database is up to date, the System Center Configuration Manager connector synchronizes with Configuration Manager every day after the initial synchronization. However, you can use the following procedures to synchronize the connector manually and validate that the connector synchronized.
 
 ### To manually synchronize a Configuration Manager connector
@@ -31,5 +34,6 @@ To ensure that the Service Manager database is up to date, the System Center Con
 1.  In the Service Manager console, click **Configuration Items**.
 
 2.  In the **Configuration Items** pane, expand **Computers**, and then click **All Windows Computers**. Verify that any new computers in Configuration Manager appear in the middle pane.
+
 
 

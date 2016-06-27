@@ -8,6 +8,9 @@ ms.topic: article
 ms.assetid: 4e867fdc-a1a1-4766-b34f-3e2910725088
 ---
 # How to integrate fabric updates with Configuration Manager
+
+>Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
+
 Virtual Machine Manager (VMM) supports using a WSUS server that is part of a Configuration Manager environment. This will also enable you to use the reporting capabilities of Configuration Manager to provide compliance information.
 
 If you use an existing WSUS server from a Configuration Manager environment, changes to configuration settings for the WSUS server (for example, update classifications, languages, and proxy settings) should only be made from Configuration Manager. The VMM administrator can view the configuration settings from the VMM console, but cannot make changes.
@@ -65,5 +68,6 @@ For more information about configuring update management, see [Managing fabric u
 [Managing fabric updates in VMM](Managing-fabric-updates-in-VMM.md)
 [Managing fabric resources with VMM](Managing-fabric-resources-with-VMM.md)
 [Managing fabric resources with VMM](Managing-fabric-resources-with-VMM.md)
+
 
 

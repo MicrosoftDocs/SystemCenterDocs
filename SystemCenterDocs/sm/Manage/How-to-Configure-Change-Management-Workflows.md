@@ -11,6 +11,9 @@ ms.topic: article
 ms.assetid: 8a9d5a24-c13c-4db2-a3b4-6b728a20e3c6
 ---
 # How to Configure Change Management Workflows
+
+>Applies To: System Center 2016 Technical Preview - Service Manager
+
 Use the following procedures to set the priority of all standard change requests and then validate the change. For example, you can set the priority of all standard change requests to low. In this procedure, you create a new workflow to automate the process.
 
 Before you can complete the steps in this procedure, you have to create the following templates:
@@ -72,5 +75,6 @@ Before you can complete the steps in this procedure, you have to create the foll
 4.  Optionally, you can create a new change request by using the **Standard Change Request** template to verify that the priority of new requests is set to Low.
 
 5.  Notification email is sent to the user who created the change request.
+
 
 

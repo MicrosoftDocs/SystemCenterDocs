@@ -11,11 +11,14 @@ ms.topic: article
 ms.assetid: 92bfb0ba-aec3-484f-bbd3-627c00a79ebe
 ---
 # Planning for Performance and Scalability in Service Manager
+
+>Applies To: System Center 2016 Technical Preview - Service Manager
+
 This section describes general performance and scalability planning guidance for System Center 2016 Technical Preview - Service Manager. While Service Manager is built to meet a performance standard on minimum recommended hardware, the hardware requirements for your specific scenario may be higher or lower than the generalized guidelines presented here. This section also describes considerations for Service Manager software.
 
 Service Manager is a three-tiered application, consisting of a database, a data access module, and a console:
 
--   Every Service Manager deployment topologyâ€”from the largest to smallestâ€”includes all three tiers, whether physically or virtually.
+-   Every Service Manager deployment topology—from the largest to smallest—includes all three tiers, whether physically or virtually.
 
 -   The smallest deployment topology that is supported requires two servers, either physical servers or virtual servers. The largest deployment topology contains more than four servers.
 
@@ -41,5 +44,6 @@ Specifically, the sizing tool:
 -   [Service Manager Performance](Service-Manager-Performance.md)
 
     Contains general guidelines to consider when you are planning for Service Manager software performance.
+
 
 

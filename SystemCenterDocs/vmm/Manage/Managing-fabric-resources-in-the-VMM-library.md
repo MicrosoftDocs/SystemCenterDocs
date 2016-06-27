@@ -8,6 +8,9 @@ ms.topic: article
 ms.assetid: 5fd39488-3da3-460e-b39a-b15866c42752
 ---
 # Managing fabric resources in the VMM library
+
+>Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
+
 Insert introduction here.
 
 ## Section Heading
@@ -15,5 +18,6 @@ Insert section body here.
 
 ### Subsection Heading
 Insert subsection body here.
+
 
 

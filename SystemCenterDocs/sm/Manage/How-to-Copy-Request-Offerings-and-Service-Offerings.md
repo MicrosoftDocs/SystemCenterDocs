@@ -11,6 +11,9 @@ ms.topic: article
 ms.assetid: ee6ee7cf-23ea-4241-a58f-b6bfba8d2534
 ---
 # How to Copy Request Offerings and Service Offerings
+
+>Applies To: System Center 2016 Technical Preview - Service Manager
+
 After you create a request offering or a service offering, you can copy the offering so that you can easily modify the copied offering.
 
 You can use the following procedures to copy a request offering and a service offering. Keep in mind that if you copy a published catalog item, the published status of the copy is set to Draft.
@@ -44,5 +47,6 @@ You can use the following procedures to copy a request offering and a service of
 5.  Click **OK** to close the dialog box and create the copy.
 
 6.  The copied item appears in the list, with a prefix of **Copy of**. For example, your copy might have the name **Copy of Access Services**.
+
 
 

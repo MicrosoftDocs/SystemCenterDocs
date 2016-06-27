@@ -11,6 +11,9 @@ ms.topic: article
 ms.assetid: c30e2c5e-2381-448b-a9ec-314c76a65ae5
 ---
 # How to Disable and Enable an Active Directory Connector
+
+>Applies To: System Center 2016 Technical Preview - Service Manager
+
 You can use the following procedure to disable or enable an Active Directory connector in Service Manager and validate its change in status.
 
 ### To disable an Active Directory connector
@@ -48,5 +51,6 @@ You can use the following procedure to disable or enable an Active Directory con
 -   For information about how to use Windows PowerShell to retrieve connectors that are defined in Service Manager and view their status, see [Get-SCSMConnector](http://go.microsoft.com/fwlink/p/?LinkID=225320).
 
 -   For information about how to use Windows PowerShell to update properties of a Service Manager connector, see [Update-SCSMConnector](http://go.microsoft.com/fwlink/p/?LinkID=225382).
+
 
 

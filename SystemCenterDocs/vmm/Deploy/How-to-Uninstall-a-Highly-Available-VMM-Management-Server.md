@@ -11,6 +11,9 @@ ms.topic: article
 ms.assetid: d664710d-7e8e-4f83-a4b2-2979197aa099
 ---
 # How to Uninstall a Highly Available VMM Management Server
+
+>Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
+
 You can use the following procedures to uninstall a highly available Virtual Machine Manager (VMM) management server. To uninstall high availability completely, you will need to uninstall highly available VMM management server from each node in the cluster.
 
 Before uninstalling VMM, ensure that the VMM console and the VMM command shell are closed. If you are uninstalling an additional node of a highly available VMM management server, use Failover Cluster Manager to ensure that the node is not currently the owner of the highly available service. If the node is the current owner, move the service to another node in the cluster.
@@ -80,5 +83,6 @@ Membership in the local Administrators group, or equivalent, on the computer tha
 
 > [!NOTE]
 > If there is a problem with uninstallation completing successfully, consult the log files in the **%SYSTEMDRIVE%\ProgramData\VMMLogs** folder. **ProgramData** is a hidden folder.
+
 
 

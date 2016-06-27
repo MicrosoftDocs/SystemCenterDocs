@@ -11,6 +11,9 @@ ms.topic: article
 ms.assetid: dca84147-4a4f-406d-a299-e40ab109a335
 ---
 # Prerequisites: creating hosts or host clusters from bare metal with VMM
+
+>Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
+
 This topic lists the prerequisites for the process of provisioning Hyper-V hosts or  host clusters from bare metal using Virtual Machine Manager (VMM):
 
 -   [Physical computer and related requirements](Prerequisites--creating-hosts-or-host-clusters-from-bare-metal-with-VMM.md#BKMK_computer)
@@ -20,7 +23,7 @@ This topic lists the prerequisites for the process of provisioning Hyper-V hosts
 -   [Profile requirements (for the physical computer profile)](Prerequisites--creating-hosts-or-host-clusters-from-bare-metal-with-VMM.md#BKMK_profile)
 
 ## <a name="BKMK_computer"></a>Physical computer and related requirements
-The computers to which you deploy hosts or clusters can be ‚Äúbare-metal computers‚Äù (no operating system installed), or computers with an installed operating system that will be overwritten during the process.
+The computers to which you deploy hosts or clusters can be ìbare-metal computersî (no operating system installed), or computers with an installed operating system that will be overwritten during the process.
 
 -   **BMC**: Each physical computer must have a baseboard management controller (BMC) installed and configured for out-of-band management by VMM.
 
@@ -115,5 +118,6 @@ Before you create a physical computer profile, also review the following require
 [Managing hosts and host clusters with VMM](Managing-hosts-and-host-clusters-with-VMM.md)
 [Managing infrastructure resources with VMM](Managing-infrastructure-resources-with-VMM.md)
 [Managing fabric resources with VMM](Managing-fabric-resources-with-VMM.md)
+
 
 

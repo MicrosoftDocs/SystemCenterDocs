@@ -11,6 +11,9 @@ ms.topic: article
 ms.assetid: dbc92290-e10b-4a9b-9794-3dc4bc71ca25
 ---
 # How to Install a Highly Available VMM Management Server
+
+>Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
+
 You can use the following procedure to install a highly available VMM management server on the first node of a cluster. To install on the other nodes of the cluster, see [How to Install a VMM Management Server on an Additional Node of a Cluster](How-to-Install-a-VMM-Management-Server-on-an-Additional-Node-of-a-Cluster.md).
 
 Before you begin the installation of the VMM management server, review the system requirements. As part of this, ensure that you have a computer that is running a supported version of Microsoft SQL Server software. Setup will not automatically install an Express edition of SQL Server. For information on system requirements, including supported versions of SQL Server, see the following:
@@ -121,5 +124,6 @@ Membership in the local **Administrators** group, or equivalent, on the computer
 
 > [!NOTE]
 > If there is a problem with setup completing successfully, consult the log files in the **%SYSTEMDRIVE%\ProgramData\VMMLogs** folder. **ProgramData** is a hidden folder.
+
 
 

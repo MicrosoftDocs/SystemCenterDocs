@@ -11,6 +11,9 @@ ms.topic: article
 ms.assetid: ee7b443a-5105-4303-97d3-8018a7e74af4
 ---
 # Install Agent Using the MOMAgent.msi Setup Wizard
+
+>Applies To: System Center 2016 Technical Preview - Operations Manager
+
 Use the following procedure to deploy the System Center Operations Manager agent on computers running Windows by using the MOMAgent.msi setup wizard. For a list of the supported operating system versions, see [Supported Configurations](http://go.microsoft.com/fwlink/p/?LinkID=223642).
 
 Before you use the Setup Wizard, ensure the following conditions are met:
@@ -56,7 +59,7 @@ Before you use the Setup Wizard, ensure the following conditions are met:
 
 8.  On the **Agent Action Account** page, leave it set to the default of **Local System**, or select **Domain or Local Computer Account**; type the **User Account**, **Password**, and **Domain or local computer**; and then click **Next**.
 
-9. On the **Microsoft Update** page, select **Use Microsoft Update when I check for updates (recommended)** or **I donâ€™t want to use Microsoft Update**, and then click **Next**.
+9. On the **Microsoft Update** page, select **Use Microsoft Update when I check for updates (recommended)** or **I don’t want to use Microsoft Update**, and then click **Next**.
 
 10. On the **Ready to Install** page, review the settings and then click **Install** to display the **Installing System Center Operations Manager Agent** page.
 
@@ -76,5 +79,6 @@ Before you use the Setup Wizard, ensure the following conditions are met:
 [Upgrading and Uninstalling Agents on UNIX and Linux Computers](Upgrading-and-Uninstalling-Agents-on-UNIX-and-Linux-Computers.md)
 [Manually Uninstalling Agents from UNIX and Linux Computers](Manually-Uninstalling-Agents-from-UNIX-and-Linux-Computers.md)
 [Uninstall Agent from Windows-based Computers](Uninstall-Agent-from-Windows-based-Computers.md)
+
 
 

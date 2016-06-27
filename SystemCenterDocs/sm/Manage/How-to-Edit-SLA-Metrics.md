@@ -11,6 +11,9 @@ ms.topic: article
 ms.assetid: cb53cbe5-d514-40b2-83d4-0a209916a811
 ---
 # How to Edit SLA Metrics
+
+>Applies To: System Center 2016 Technical Preview - Service Manager
+
 In Service Manager, you edit a service level agreement (SLA) metric to update the title, start date, and end date. After you edit a metric, you associate it with a service level objective. If the metric is already associated with a service level objective, it appears in the **Related SLA(s)** area.
 
 > [!NOTE]
@@ -35,5 +38,6 @@ In Service Manager, you edit a service level agreement (SLA) metric to update th
     -   **End date**
 
 5.  Click **OK** to close the **Create/Edit Metric** dialog box.
+
 
 

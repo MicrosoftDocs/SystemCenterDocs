@@ -11,6 +11,9 @@ ms.topic: article
 ms.assetid: 96394295-bf03-4089-83d2-f039110f0b82
 ---
 # Managing Hyper-V hosts and host clusters with VMM
+
+>Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
+
 This section describes how to use Virtual Machine Manager (VMM) to add, provision, and manage Hyper-V hosts and host clusters. It includes the following sections and topics:
 
 -   [Adding Windows servers as Hyper-V hosts or host clusters in VMM](Adding-Windows-servers-as-Hyper-V-hosts-or-host-clusters-in-VMM.md)
@@ -30,5 +33,6 @@ This section describes how to use Virtual Machine Manager (VMM) to add, provisio
 [How to create a Run As account in VMM](How-to-create-a-Run-As-account-in-VMM.md)
 [Managing VMware ESX hosts and vCenter servers with VMM](Managing-VMware-ESX-hosts-and-vCenter-servers-with-VMM.md)
 [Managing fabric resources with VMM](Managing-fabric-resources-with-VMM.md)
+
 
 

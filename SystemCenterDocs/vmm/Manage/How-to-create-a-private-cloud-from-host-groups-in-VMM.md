@@ -8,6 +8,9 @@ ms.topic: article
 ms.assetid: f34d577d-8e99-4fee-98ab-055d747c3745
 ---
 # How to create a private cloud from host groups in VMM
+
+>Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
+
 You can use this procedure to create a private cloud from resources in one or more host groups in Virtual Machine Manager (VMM). You can create a private cloud from host groups that contain a single type of host, or from host groups that contain a mix of Hyper-V and VMware ESX hosts.
 
 > [!NOTE]
@@ -126,5 +129,6 @@ Before you create a private cloud, make sure that the following prerequisites ar
 14. To verify that the private cloud library was created, open the **Library** workspace, and then expand **Cloud Libraries**. A private cloud library is listed that matches the private cloud name. If you expand the private cloud library, depending on what you configured, the read-only library shares are listed together with a **Stored Virtual Machines and Services** node.
 
 After you create a private cloud, you can assign the private cloud to one or more user roles. To assign the private cloud to an existing user role, or to assign the private cloud and create a user role at the same time, in the **VMs and Services** workspace, click the private cloud that you want to assign. Then, on the **Home** tab, in the **Cloud** group, click **Assign Cloud** to open the **Assign Cloud** dialog box. If you select an existing user role, you can modify the properties of the user role. If you select **Create a user role and assign this cloud**, the Create User Role Wizard opens.
+
 
 

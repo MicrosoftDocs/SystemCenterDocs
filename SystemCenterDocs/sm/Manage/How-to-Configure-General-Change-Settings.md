@@ -11,6 +11,9 @@ ms.topic: article
 ms.assetid: 3de3a691-b2d7-4133-ad4a-e20a9f0f1475
 ---
 # How to Configure General Change Settings
+
+>Applies To: System Center 2016 Technical Preview - Service Manager
+
 Use the following procedures to configure settings to specify change request prefixes and to define change request file attachment limits and then validate the settings.
 
 > [!NOTE]
@@ -41,5 +44,6 @@ Use the following procedures to configure settings to specify change request pre
 1.  To validate changes to the prefix code, create a new a change request, and verify that the change request IDs have the prefix that you specified.
 
 2.  To validate changes to the attachment settings, open a change request, and attempt to add a file attachment that violates the settings that you specified.
+
 
 

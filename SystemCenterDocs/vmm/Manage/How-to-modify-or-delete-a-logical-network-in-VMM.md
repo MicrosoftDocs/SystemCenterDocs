@@ -11,6 +11,9 @@ ms.topic: article
 ms.assetid: 2705c237-8576-44bb-9871-f5ba644d854e
 ---
 # How to modify or delete a logical network in VMM
+
+>Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
+
 You can use the following procedures to modify or delete a logical network in Virtual Machine Manager (VMM). For example, you may want to add or remove an associated network site, or modify an IP address pool.
 
 **Account requirements** To complete this procedure, you must be a member of the Administrator or the Delegated Administrator user role.
@@ -63,5 +66,6 @@ You can use the following procedures to modify or delete a logical network in Vi
 [Modifying logical networks and VM networks in VMM](Modifying-logical-networks-and-VM-networks-in-VMM.md)
 [Configuring logical networks, VM networks, and logical switches in VMM](Configuring-logical-networks,-VM-networks,-and-logical-switches-in-VMM.md)
 [Managing network resources with VMM](Managing-network-resources-with-VMM.md)
+
 
 

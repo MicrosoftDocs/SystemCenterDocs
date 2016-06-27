@@ -8,6 +8,9 @@ ms.topic: article
 ms.assetid: 3e099462-8a49-4d5a-b8c0-ecc5c48cd840
 ---
 # How to configure Dynamic Optimization and Power Optimization in VMM
+
+>Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
+
 Use the following procedures to enable Dynamic Optimization and Power Optimization for a host group in Virtual Machine Manager (VMM) and to configure resource Power Optimization usage on a host group.
 
 -   [To turn on Dynamic Optimization and Power Optimization for a host group](#BKMK_OnHG).
@@ -64,5 +67,6 @@ For more information about Dynamic Optimization and Power Optimization, see [Con
 [Managing host groups in VMM](Managing-host-groups-in-VMM.md)
 [Managing hosts and host clusters with VMM](Managing-hosts-and-host-clusters-with-VMM.md)
 [Managing fabric resources with VMM](Managing-fabric-resources-with-VMM.md)
+
 
 

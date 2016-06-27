@@ -8,6 +8,9 @@ ms.topic: article
 ms.assetid: 4b4f0d28-a723-4197-a825-ec2766787e15
 ---
 # How to create a virtual machine template
+
+>Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
+
 You can use the following procedure to create a virtual machine template in Virtual Machine Manager (VMM). Virtual machine templates help you create new virtual machines and configure tiers in a service template. 
 
 You can create a virtual machine template based on an existing virtual machine template or based on an existing virtual hard disk that is stored in a library. Alternatively, you can create a virtual machine template based on an existing virtual machine that is deployed on a host. This option requires that the existing machine has been stopped.
@@ -58,12 +61,12 @@ Before you create a virtual machine template, note the following:
 
     -   **Generation**: If you selected **Generation 1** or **Generation 2** in the previous step, the hardware profiles and hardware options that are available are those of the generation that you selected. For more information, see [Understanding generation 1 and generation 2 virtual machines in VMM](Understanding-generation-1-and-generation-2-virtual-machines-in-VMM.md).
 
-    -   **Network‚Äîstatic IP**: If you configure a network adapter to use static IP addresses, you must also set the media access control (MAC) address to static.
+    -   **Networkóstatic IP**: If you configure a network adapter to use static IP addresses, you must also set the media access control (MAC) address to static.
 
     -   **Storage classifications**: If you want the virtual hard disks that are created from this template to be placed on storage resources in one of your storage classifications (for example, you might have created storage classifications called **Gold**, **Silver**, and **Bronze**), at the bottom of the pane for a virtual hard disk, select the classification. 
     -   **Priority (on a host cluster)**: If the virtual machine will be on a host cluster, you can use VMM to configure virtual machine priority for the virtual machine. 
     -   **Guest clustering**: You can use VMM to create virtual machines that will work together as a guest cluster. 
-7.  On the **Configure Operating System** page, open the  **Guest OS profile** list and either select a guest operating system profile, or select the type of operating system for which you want to create customized settings‚ÄîWindows, Linux, or none. Your selection from the list determines the settings that are displayed on the wizard page. Your selection also determines whether additional wizard pages are displayed.
+7.  On the **Configure Operating System** page, open the  **Guest OS profile** list and either select a guest operating system profile, or select the type of operating system for which you want to create customized settingsóWindows, Linux, or none. Your selection from the list determines the settings that are displayed on the wizard page. Your selection also determines whether additional wizard pages are displayed.
 
     Configure the guest operating system settings, and then click **Next**.
 
@@ -77,7 +80,7 @@ Before you create a virtual machine template, note the following:
 
     -   The **Roles and Features** settings apply only for Windows, and only if you use the virtual machine template in a service template. Also, to support these settings, the virtual machine cannot use a guest operating system earlier than Windows Server 2008 R2.
 
-    -   The **RunOnce commands** apply only to Linux-based virtual machine templates. These commands run in the specified order during deployment after the operating system has been configured. If shell conventions, such as pipes, are used, we recommend wrapping each command with an explicit invocation of the shell, for example, `/bin/sh ‚Äìc ‚Äú<your command>‚Äù`. In this example, double quotes in the command must be escaped.
+    -   The **RunOnce commands** apply only to Linux-based virtual machine templates. These commands run in the specified order during deployment after the operating system has been configured. If shell conventions, such as pipes, are used, we recommend wrapping each command with an explicit invocation of the shell, for example, `/bin/sh ñc ì<your command>î`. In this example, double quotes in the command must be escaped.
 
     -   Under **Root Credentials**, **Public SSH key** is a Linux-specific option. This option sets the content of a specified public Secure Shell (SSH) key as an authorized key for authentication of the root user. Enter the name of a public key file that is stored in the VMM library and has the extension .sshkey.
 
@@ -126,5 +129,6 @@ Before you create a virtual machine template, note the following:
 9. On the **Select Path** page, click **Browse**, click a library share and optional folder path, click **OK**, and then click **Next**.
 
 10. On the **Summary** page, confirm the settings, and then click **Create**.
+
 
 

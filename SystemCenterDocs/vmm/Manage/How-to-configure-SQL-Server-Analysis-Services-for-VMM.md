@@ -8,6 +8,9 @@ ms.topic: article
 ms.assetid: 3af9228e-96a3-4eea-a97c-0c5bfa95d937
 ---
 # How to configure SQL Server Analysis Services for VMM
+
+>Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
+
 You can integrate Virtual Machine Manager (VMM) with SQL Server Analysis Service (SSAS) in order to provide forecasting reports. Be sure that SQL Server Analysis Services are installed on the Operations Manager Reporting server.
 
 Before you enable SSAS, you need to connect to an Operations Manager management server, as described in [How to connect VMM to Operations Manager](How-to-connect-VMM-to-Operations-Manager.md).
@@ -43,5 +46,6 @@ Before you enable SSAS, you need to connect to an Operations Manager management 
 ## See Also
 [Integrating VMM and System Center Operations Manager](Integrating-VMM-and-System-Center-Operations-Manager.md)
 [Monitoring and reporting for VMM resources](Monitoring-and-reporting-for-VMM-resources.md)
+
 
 

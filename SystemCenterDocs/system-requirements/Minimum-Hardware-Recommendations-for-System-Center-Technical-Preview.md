@@ -9,6 +9,9 @@ ms.topic: get-started-article
 ms.assetid: 0cb670c2-7b8c-4901-858c-f0644187d45f
 ---
 # Minimum Hardware Recommendations for System Center Technical Preview
+
+>Applies To: System Center Technical Preview
+
 Use this information to evaluate if your hardware environment is ready to support the installation of or upgrade to System Center 2016 Technical Preview. Use this information to evaluate hardware requirements (processor, RAM, and free hard drive space). Both minimum (min) and recommended (rec) values are provided. Use the information here whether you are deploying one or multiple components.
 
 |System Center 2012 R2 servers|Processor (min)|Processor (rec)|RAM (min)|RAM (rec)|Hard drive space (min)|Hard drive space (rec)|
@@ -30,5 +33,6 @@ Use this information to evaluate if your hardware environment is ready to suppor
 |**VMM** Console|2 Cores Pentium 4, 1 GHz CPU|2-Core 2 GHz CPU|4 GB|4 GB|10 GB|10 GB|
 |**VMM** Database|8 Cores Pentium 4, 2.8 GHz|16 Cores 2.66 GHz CPU|8 GB|16 GB|50 GB|200 GB|
 |**VMM** Library Server|4 Cores Pentium 4 2.8 GHz|4-Core 2.66 GHz CPU|2 GB|4 GB|Varies based on the number and size of the stored files.|Varies based on the number and size of the stored files.|
+
 
 

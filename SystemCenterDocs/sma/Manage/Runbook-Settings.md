@@ -11,6 +11,9 @@ ms.topic: article
 ms.assetid: 55d44d60-9ddf-45d5-b0db-b67e3941e134
 ---
 # Runbook Settings
+
+>Applies To: Windows Azure Pack for Windows Server
+
 Each runbook in Service Management Automation has multiple settings that help it to be identified and to change its logging behavior. Each of these settings is described below followed by procedures on how to modify them.
 
 ## Settings
@@ -47,7 +50,7 @@ $webServer = 'https://MyServer'
 $port = 9090
 $runbookName = "Sample-TestRunbook"
 
-Set-SmaRunbookConfiguration â€“WebServiceEndpoint $webServer â€“Port $port â€“Name $runbookName â€“Description "Sample runbook" â€“LogVerbose $true
+Set-SmaRunbookConfiguration –WebServiceEndpoint $webServer –Port $port –Name $runbookName –Description "Sample runbook" –LogVerbose $true
 
 ```
 
@@ -55,5 +58,6 @@ Set-SmaRunbookConfiguration â€“WebServiceEndpoint $webServer â€“Port $port â€“Na
 [Service Management Automation](../Service-Management-Automation.md)
 [Runbook Operations (old) \[SMA\]](assetId:///230817bd-e503-4beb-9ec3-8c1f028e9b48)
 [How to purge the Service Management Automation database](How-to-purge-the-Service-Management-Automation-database.md)
+
 
 

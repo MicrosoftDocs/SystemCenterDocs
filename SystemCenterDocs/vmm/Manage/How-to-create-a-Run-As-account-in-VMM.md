@@ -11,6 +11,9 @@ ms.topic: article
 ms.assetid: 4a49124d-521e-4859-9891-ec8dc18abb38
 ---
 # How to create a Run As account in VMM
+
+>Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
+
 InVirtual Machine Manager (VMM), the credentials that a user enters for any process can be provided by a Run As account. A Run As account is a container for a set of stored credentials.
 
 **Account requirements** Administrators and delegated administrators can create Run As accounts.
@@ -33,5 +36,6 @@ InVirtual Machine Manager (VMM), the credentials that a user enters for any proc
 
 ## See Also
 [Managing Hyper-V hosts and host clusters with VMM](Managing-Hyper-V-hosts-and-host-clusters-with-VMM.md)
+
 
 

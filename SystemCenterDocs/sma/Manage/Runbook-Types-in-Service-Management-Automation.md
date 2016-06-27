@@ -8,6 +8,9 @@ ms.topic: article
 ms.assetid: 757a0f53-b84a-404b-85fb-bfe1c065c599
 ---
 # Runbook Types in Service Management Automation
+
+>Applies To: 
+
 Service Management Automation (SMA) supports two types of runbooks that are  briefly described in the following table.  The sections below provide further information about each type including considerations on when to use each.
 
 
@@ -67,6 +70,7 @@ You should take into account the following additional considerations when determ
 
 - You can't convert runbooks from one type to another.
 - There are limitations using runbooks of different types as a child runbook.  See [Child runbooks in Service Management Automation](Child-Runbooks-in-Service-Management-Automation.md) for more information.
+
 
 
 

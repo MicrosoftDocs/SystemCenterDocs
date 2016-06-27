@@ -8,6 +8,9 @@ ms.topic: article
 ms.assetid: cd103a0c-a62c-4fb8-8707-97569e4a9ab5
 ---
 # How to view and remove orphaned resources in VMM
+
+>Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
+
 You can use the following procedure to view and remove orphaned resources in the Virtual Machine Manager (VMM) library. When you remove a library share from VMM management, and there are templates that reference resources that were located on the library share, a representation of the library resource appears in the VMM library as an orphaned resource.
 
 To remove orphaned resources, you must modify the templates that reference the orphaned resources to use valid library resources in the VMM library. If you re-add the library share, VMM does not automatically re-associate the template with the physical library resource. Therefore, you must still complete the procedures in this topic to correct template issues and to remove any orphaned resources.
@@ -51,5 +54,6 @@ To remove orphaned resources, you must modify the templates that reference the o
 [Configuring the VMM library](Configuring-the-VMM-library.md)
 [Managing the VMM library and its resources](Managing-the-VMM-library-and-its-resources.md)
 [Managing fabric resources with VMM](Managing-fabric-resources-with-VMM.md)
+
 
 

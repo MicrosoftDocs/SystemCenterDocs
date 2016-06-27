@@ -11,6 +11,9 @@ ms.topic: article
 ms.assetid: 34ead8d2-f244-4d8a-95f2-e985b7c69976
 ---
 # How to Uninstall VMM
+
+>Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
+
 You can use the following procedures to uninstall a VMM management server or the VMM console.
 
 Before uninstalling VMM, ensure that the VMM console and the VMM command shell are closed.
@@ -80,5 +83,6 @@ The following firewall rules, which were enabled during VMM Setup, remain in eff
     After you click **Uninstall**, the **Uninstalling features** page appears and uninstallation progress is displayed.
 
 7.  After the VMM console is uninstalled, on the **The selected features were removed successfully** page, click **Close**.
+
 
 

@@ -11,6 +11,9 @@ ms.topic: article
 ms.assetid: 9715f228-3a9c-4158-a764-e3b23ee45c67
 ---
 # How to Import an Operations Manager Management Pack
+
+>Applies To: System Center 2016 Technical Preview - Operations Manager
+
 There are numerous management packs available for System Center Operations Manager. You have several options for importing management packs:
 
 -   [Import a management pack from the catalog](#BKMK_importcat) on the [Microsoft Pinpoint Site](http://go.microsoft.com/fwlink/?LinkId=82105) by using the Operations console.
@@ -58,7 +61,7 @@ You should always review the management pack guide before you import a managemen
     In the list of management packs, you can select a product, or expand the product name to select a specific version, or expand the product version to select a specific management pack file. For example, you can select **SQL Server** for all SQL Server management packs, or you can expand **SQL Server** and select **SQL Server 2005** for all SQL Server 2005 management packs, or you can expand **SQL Server 2005** and select **SQL Server Core Library Management Pack**.
 
     > [!NOTE]
-    > When a management pack is labeled â€œ(Online Catalog Only)â€, you cannot import the management pack directly from the catalog. You must download the .msi and import from disk.
+    > When a management pack is labeled “(Online Catalog Only)”, you cannot import the management pack directly from the catalog. You must download the .msi and import from disk.
 
 6.  On the **Select Management Packs** page, the management packs that you selected for import are listed. An icon next to each management pack in the list indicates the status of the selection, as follows:
 
@@ -150,5 +153,6 @@ You should always review the management pack guide before you import a managemen
 
     > [!NOTE]
     > Before you can import the management pack in Operations Manager, you must run the .msi file to extract the files.
+
 
 

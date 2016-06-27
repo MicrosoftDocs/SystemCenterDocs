@@ -8,6 +8,9 @@ ms.topic: article
 ms.assetid: 4660c9cf-9d5d-4dbf-bdab-73035f7d023b
 ---
 # How to create a private cloud from a VMware resource pool in VMM
+
+>Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
+
 You can use this procedure to create a private cloud from a VMware resource pool in Virtual Machine Manager (VMM).
 
 **Account requirements** You must perform this procedure as a member of the Administrator user role or as a member of the Delegated Administrator user role where the administrative scope includes the host group where the ESX host or host cluster that contains the VMware resource pool resides.
@@ -15,7 +18,7 @@ You can use this procedure to create a private cloud from a VMware resource pool
 ## Prerequisites
 Before you create a private cloud from a VMware resource pool, make sure that the following prerequisites are met:
 
--   Configure the fabric by using the procedures in [Managing fabric resources with VMM](Managing-fabric-resources-with-VMM.md). The fabric resource examples in this procedure use examples from the â€œPreparing the Fabric in VMMâ€ section.
+-   Configure the fabric by using the procedures in [Managing fabric resources with VMM](Managing-fabric-resources-with-VMM.md). The fabric resource examples in this procedure use examples from the “Preparing the Fabric in VMM” section.
 
     > [!NOTE]
     > You cannot discover and manage storage for VMware ESX hosts through VMM.
@@ -114,6 +117,7 @@ Before you create a private cloud from a VMware resource pool, make sure that th
 14. To verify that the private cloud library was created, open the **Library** workspace, and then expand **Cloud Libraries**. A private cloud library is listed that matches the private cloud name. If you expand the private cloud library, depending on what you configured, the read-only library shares are listed together with a **Stored Virtual Machines and Services** node.
 
 After you create a private cloud, you can assign the private cloud to one or more user roles. To assign the private cloud to an existing user role, or to assign the private cloud and create a user role at the same time, in the **VMs and Services** workspace, click the private cloud that you want to assign. Then, on the **Home** tab, in the **Cloud** group, click **Assign Cloud** to open the **Assign Cloud** dialog box. If you select an existing user role, you can modify the properties of the user role. If you select **Create a user role and assign this cloud**, the Create User Role Wizard opens.
+
 
 
 

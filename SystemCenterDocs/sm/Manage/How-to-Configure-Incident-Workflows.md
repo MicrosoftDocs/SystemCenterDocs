@@ -11,7 +11,10 @@ ms.topic: article
 ms.assetid: bf7c1bd2-c986-4979-b7c6-b6ccf300a632
 ---
 # How to Configure Incident Workflows
-You can use the following procedure to create and configure a workflow rule that will change the support tier to **Tier 2** whenever the **Urgency** property of an incident that is related to printing problems is changed to **High**. This procedure assumes that you already created an incident template to change the support tier to **Tier 2**, and it assumes that you already created the priority calculation table. For more information, see [How to Set Incident Priority](How-to-Set-Incident-Priority.md) and â€œTo create a new printer-related incident templateâ€ in [How to Create Incident Templates](How-to-Create-Incident-Templates.md).
+
+>Applies To: System Center 2016 Technical Preview - Service Manager
+
+You can use the following procedure to create and configure a workflow rule that will change the support tier to **Tier 2** whenever the **Urgency** property of an incident that is related to printing problems is changed to **High**. This procedure assumes that you already created an incident template to change the support tier to **Tier 2**, and it assumes that you already created the priority calculation table. For more information, see [How to Set Incident Priority](How-to-Set-Incident-Priority.md) and “To create a new printer-related incident template” in [How to Create Incident Templates](How-to-Create-Incident-Templates.md).
 
 ### To configure an incident workflow
 
@@ -64,5 +67,6 @@ You can use the following procedure to create and configure a workflow rule that
 -   For information about how to use Windows PowerShell to update workflow properties, see [Update-SCSMWorkflow cmdlet](http://go.microsoft.com/fwlink/p/?LinkID=225392).
 
 -   For information about how to use Windows PowerShell to remove a workflow from Service Manager, see [Remove-SCSMWorkflow](http://go.microsoft.com/fwlink/p/?LinkID=225372).
+
 
 

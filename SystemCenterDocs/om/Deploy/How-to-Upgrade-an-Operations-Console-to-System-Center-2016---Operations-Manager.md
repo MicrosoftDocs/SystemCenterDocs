@@ -11,6 +11,9 @@ ms.topic: article
 ms.assetid: 98117114-70f8-49ad-a424-8be5561b822e
 ---
 # How to Upgrade an Operations Console to System Center 2016 - Operations Manager
+
+>Applies To: System Center 2016 Technical Preview - Operations Manager
+
 This procedure upgrades a stand-alone Operations console to System Center 2016 Technical Preview - Operations Manager. Perform this procedure locally on the computer that has a stand-alone Operations console installed. You do not have to perform this procedure to upgrade Operations consoles that are installed locally on a management server.
 
 Before you begin the upgrade process, make sure that your server meets the minimum supported configurations. For more information, see [System Requirements: System Center 2016 - Operations Manager](../../system-requirements/System-Requirements-for-System-Center-Technical-Preview.md).
@@ -57,5 +60,6 @@ Before you begin the upgrade process, make sure that your server meets the minim
 3.  Browse to the **HKey_Local_Machine\Software\Microsoft\Microsoft Operations Manager\3.0\Setup** key. If the value of the **UIVersion** entry is 7.2.11469.0, the Operations console was upgraded successfully.
 
 After you have upgraded all of the stand-alone operations consoles in your management group, you can upgrade the agents.  See [How to Upgrade an Agent to System Center 2016 -   Operations Manager](How-to-Upgrade-an-Agent-to-System-Center-2016---Operations-Manager.md) for more information.
+
 
 

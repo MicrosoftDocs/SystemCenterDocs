@@ -12,6 +12,9 @@ ms.topic: article
 ms.assetid: 2684494b-1779-4df8-9f11-db46a0d96542
 ---
 # Configure Hyper-V extended port ACLs with System Center VMM 2016 Technical Preview
+
+>Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
+
 ## Summary
 Using System Center Virtual Machine Manager 2016 Technical Preview, you can centrally confgiure and manage Hyper-V port access control lists (ACLs) in your Software Defined Networking (SDN) fabric. These ACLs can be configured for both a Network Controller managed fabric and a non-Network Controller managed fabric.
 ## Introduction
@@ -25,7 +28,7 @@ Global Settings describe a port ACL that is applied to all virtual machine virtu
 
 You can use the VMM PowerShell interface to do the following:
 * Define port ACLs and ACL rules
-The rules are applied to virtual switch ports on Hyper-V servers as "extended port ACLs‚Äù (``VMNetworkAdapterExtendedAcl``) in Hyper-V terminology. This means that they can apply only to hosts running Windows Server 2012 R2 or later.
+The rules are applied to virtual switch ports on Hyper-V servers as "extended port ACLsî (``VMNetworkAdapterExtendedAcl``) in Hyper-V terminology. This means that they can apply only to hosts running Windows Server 2012 R2 or later.
 
   VMM will not create the "legacy" Hyper-V port ACLs (``VMNetworkAdapterAcl``). Therefore, you cannot apply port ACLs to hosts running Windows Server 2012 or earlier.
   
@@ -53,10 +56,10 @@ Each port ACL consists of a collection of port ACL rules. Each rule contains dif
 * DestinationPortRange
 * Protocol: TCP/UDP/Any
    IP-level protocols are not supported in port ACLs that are defined by VMM. They are still supported natively by Hyper-V.
-* Priority: 1 ‚Äì 65535 (lowest number has highest priority). 
+* Priority: 1 ñ 65535 (lowest number has highest priority). 
   This priority is relative to the layer in which it is applied. More information about how ACL rules are applied based on priority and the object to which     the ACL is attached follows.
 
-If you are configuring Port ACLs for a network controller managed fabric, you must specify a priority equal to or greater than 100. The network controller currently doesn‚Äôt support a priority below 100.
+If you are configuring Port ACLs for a network controller managed fabric, you must specify a priority equal to or greater than 100. The network controller currently doesnít support a priority below 100.
 #### New PowerShell cmdlets
 * ``New-SCPortACLrule -PortACL <PortACL> -Name <string> [-Description <string>] -Type <Inbound | Outbound> -Action <Allow | Deny> -Priority <uint16> -Protocol <Tcp | Udp | Any> [-SourceAddressPrefix <string: IPAddress | IPSubnet>] [-SourcePortRange <string:X|X-Y|Any>] [-DestinationAddressPrefix <string: IPAddress | IPSubnet>] [-DestinationPortRange <string:X|X-Y|Any>]``
 * ``Get-SCPortACLrule``
@@ -76,4 +79,5 @@ VMM does not support the following:
 * Create port ACL rules that include IP-level protocols (other than TCP or UDP).
 * Apply port ACLs to logical networks, network sites (logical network definitions), subnet vLANs, and other VMM networking primitives that are not listed earlier.
  
+
 

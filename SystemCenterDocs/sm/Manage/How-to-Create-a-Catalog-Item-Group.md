@@ -11,6 +11,9 @@ ms.topic: article
 ms.assetid: 6c11d1e8-d320-4760-a462-0e31e8124492
 ---
 # How to Create a Catalog Item Group
+
+>Applies To: System Center 2016 Technical Preview - Service Manager
+
 Catalog item groups are lists of catalog items that are used to secure the service catalog and provide access to users, based on membership in a corresponding Service Manager user role. In the following procedure, you create a simple catalog item group. After you create the group, use an existing user role, or create a new user role, to provide access to catalog items that have been associated with the group.
 
 ### To create a catalog item group
@@ -44,6 +47,7 @@ Catalog item groups are lists of catalog items that are used to secure the servi
 9. On the **Summary** page, review the information, and then click **Create**.
 
 10. On the **Completion** page, click **Close**.
+
 
 
 

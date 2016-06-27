@@ -8,6 +8,9 @@ ms.topic: article
 ms.assetid: 45266dad-a5cc-4872-8176-37a6f8dbfb2f
 ---
 # How to create storage classifications in VMM
+
+>Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
+
 You can use the following procedure to create storage classifications in Virtual Machine Manager (VMM). Storage classifications enable you to assign user-defined storage classifications to discovered storage pools, typically by quality of service (QoS). For example, you could assign a classification of GOLD to storage pools that have the highest performance and availability.
 
 **Account requirements** To complete this procedure, you must be a member of the Administrator user role or a member of the Delegated Administrator user role.
@@ -35,5 +38,6 @@ You can use the following procedure to create storage classifications in Virtual
 [Overview: storage classifications in VMM](Overview--storage-classifications-in-VMM.md)
 [Managing storage resources and capacity with VMM](Managing-storage-resources-and-capacity-with-VMM.md)
 [Managing fabric resources with VMM](Managing-fabric-resources-with-VMM.md)
+
 
 

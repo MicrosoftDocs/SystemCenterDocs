@@ -11,6 +11,9 @@ ms.topic: article
 ms.assetid: 2bf69867-ff73-48e0-b8b5-83b3b104b046
 ---
 # Upgrading and Uninstalling Agents on UNIX and Linux Computers
+
+>Applies To: System Center 2016 Technical Preview - Operations Manager
+
 This topic describes how to upgrade and uninstall agents on UNIX and Linux computers, using the **UNIX/Linux Agent Upgrade Wizard** and the **UNIX/Linux Agent Uninstall Wizard**. These wizards are similar in how you select the target computers and provide credentials. Both wizards require privileged credentials on the UNIX or Linux computers to complete their tasks, for more information see [Accessing UNIX and Linux Computers in Operations Manager](https://technet.microsoft.com/library/hh212886%28v=sc.12%29.aspx).
 
 ## Upgrading Agents
@@ -77,5 +80,6 @@ You can uninstall an agent from the targeted computer by using the **UNIX/Linux 
 [Install Agent Using the Command Line](Install-Agent-Using-the-Command-Line.md)
 [Manually Uninstalling Agents from UNIX and Linux Computers](Manually-Uninstalling-Agents-from-UNIX-and-Linux-Computers.md)
 [Uninstall Agent from Windows-based Computers](Uninstall-Agent-from-Windows-based-Computers.md)
+
 
 

@@ -11,6 +11,9 @@ ms.topic: article
 ms.assetid: a8f84795-11fd-4c62-8f50-0929cedd3b20
 ---
 # Configuring Service Level Management in System Center 2016 - Service Manager
+
+>Applies To: System Center 2016 Technical Preview - Service Manager
+
 This section provides an overview of how to configure service level management in Service Manager. This section also contains procedures that cover service level management configuration scenarios.
 
 Service level management is the process that you use to measure incident and service request timeliness. In Service Manager, you create a service level item that consist of queues that correspond to each service level, plus time metrics to measure and warn for. Separately, you can also send notifications to users that occur before and after service level breach. In the Service Manager console, you manage this process in the Administration workspace using the following nodes:
@@ -37,5 +40,6 @@ The Completion Time metric is used to measure the maximum length of time that se
 
 ## Service Level Objectives
 The Service Level Objectives node is used to create relationships between a queue and a service level. It is also used to define the relationship between a calendar item and a time metric. Separately, you can also send notifications to users that occur before and after service level breach. For more information about sending notifications, see [How to Send SLA Notification Information to the Assigned-To User](How-to-Send-SLA-Notification-Information-to-the-Assigned-To-User.md).
+
 
 

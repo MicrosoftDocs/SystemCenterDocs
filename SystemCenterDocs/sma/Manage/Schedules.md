@@ -11,6 +11,9 @@ ms.topic: article
 ms.assetid: 0092bd39-187d-42ea-b126-02ef516e21e4
 ---
 # Schedules
+
+>Applies To: Windows Azure Pack for Windows Server, System Center 2012 R2 Orchestrator
+
 Automation Schedules are used to schedule runbooks to run automatically.  This could be either a single date and time for the runbook to run once.  Or it could be a recurring schedule to start the runbook multiple times.  Schedules are typically not accessed from runbooks.
 
 ## Windows PowerShell Cmdlets
@@ -58,7 +61,7 @@ $port = 9090
 $scheduleName = 'My Daily Schedule'
 $startTime = (Get-Date).Date.AddHours(12)
 $expiryTime = $startTime.AddYears(1)
-Set-SmaSchedule â€“WebServiceEndpoint $web â€“Port $port â€“Name $scheduleName â€“ScheduleType OneTimeSchedule â€“StartTime $startTime â€“ExpiryTime $expiryTime â€“DayInterval 1
+Set-SmaSchedule –WebServiceEndpoint $web –Port $port –Name $scheduleName –ScheduleType OneTimeSchedule –StartTime $startTime –ExpiryTime $expiryTime –DayInterval 1
 ```
 
 ## See Also
@@ -66,5 +69,6 @@ Set-SmaSchedule â€“WebServiceEndpoint $web â€“Port $port â€“Name $scheduleName â
 [Authoring Automation Runbooks](Authoring-Automation-Runbooks.md)
 [Global Assets](Global-Assets.md)
 [Scheduling a Runbook](Scheduling-a-Runbook.md)
+
 
 

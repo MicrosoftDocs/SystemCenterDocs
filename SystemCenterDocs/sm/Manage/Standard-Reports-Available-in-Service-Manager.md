@@ -11,6 +11,9 @@ ms.topic: article
 ms.assetid: 147b3945-13f8-40fd-851a-5df9e79b08a9
 ---
 # Standard Reports Available in Service Manager
+
+>Applies To: System Center 2016 Technical Preview - Service Manager
+
 The following reports are available in System Center 2016 Technical Preview - Service Manager.
 
 |Report area|Report name|Description|
@@ -42,5 +45,6 @@ The following reports are available in System Center 2016 Technical Preview - Se
 
 ## See Also
 [Using and Managing Standard Reports](Using-and-Managing-Standard-Reports.md)
+
 
 

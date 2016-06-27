@@ -11,6 +11,9 @@ ms.topic: article
 ms.assetid: aad9a045-1f25-4297-aab1-fba7c502d7b5
 ---
 # VMM networking reference: IP address pool requirements for multicasting or broadcasting
+
+>Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
+
 If you are using network virtualization on your VM networks, you can support an application that requires multicasting or broadcasting on the VM networks. To do this, you must create an IP address pool that supports multicasting, and you must follow several other configuration requirements. (For information about what it means to use network virtualization on a VM network, see [Prerequisites for gateways in VMM](Prerequisites-for-gateways-in-VMM.md).) The requirements for using multicasting or broadcasting on a VM network are as follows:
 
 -   The logical network that you create must have network virtualization enabled.
@@ -23,7 +26,7 @@ If you are using network virtualization on your VM networks, you can support an 
 
     Note that after you finish creating the VM network, you cannot view this protocol setting in the VMM management console. Instead, run the Windows PowerShell cmdlet [Get-SCVMNetwork](http://technet.microsoft.com/library/jj613172.aspx) to view the setting. Use the following syntax, where `<VMNetworkName>` is the name of your VM network:
 
-    `Get-SCVMNetwork â€“Name <VMNetworkName> | Format-List Name, IsolationType, *PoolType`
+    `Get-SCVMNetwork –Name <VMNetworkName> | Format-List Name, IsolationType, *PoolType`
 
     In the display, a protocol (IPv4 or IPv6) is listed for the pool type:
 
@@ -40,5 +43,6 @@ When these configuration steps are complete, multicast and broadcast packets on 
 [How to create a logical network and IP address pools in VMM](How-to-create-a-logical-network-and-IP-address-pools-in-VMM.md)
 [VMM networking reference: illustrations, settings, and optional procedures](VMM-networking-reference--illustrations,-settings,-and-optional-procedures.md)
 [Managing network resources with VMM](Managing-network-resources-with-VMM.md)
+
 
 

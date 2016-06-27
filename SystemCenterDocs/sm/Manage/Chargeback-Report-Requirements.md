@@ -11,6 +11,9 @@ ms.topic: article
 ms.assetid: 8519feda-ccf2-4cf5-ad09-311a025faa0b
 ---
 # Chargeback Report Requirements
+
+>Applies To: System Center 2016 Technical Preview - Service Manager
+
 The following information describes the steps you need to consider before installing Service Manager and chargeback reports.
 
 1.  Review the deployment information at [Deploying System Center 2016 - Service Manager](../Deploy/Deploying-System-Center-2016---Service-Manager.md) before you install Service Manager.
@@ -19,6 +22,7 @@ The following information describes the steps you need to consider before instal
 
 3.  Install Service Manager.
 
-After you have reviewed and met requirements for chargeback reports, youâ€™re ready to install chargeback files, as described in detail in the [How to Install Chargeback Reports](How-to-Install-Chargeback-Reports.md) topic.
+After you have reviewed and met requirements for chargeback reports, you’re ready to install chargeback files, as described in detail in the [How to Install Chargeback Reports](How-to-Install-Chargeback-Reports.md) topic.
+
 
 

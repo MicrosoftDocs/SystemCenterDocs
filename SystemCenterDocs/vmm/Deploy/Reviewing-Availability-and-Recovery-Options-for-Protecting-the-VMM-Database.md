@@ -11,12 +11,15 @@ ms.topic: article
 ms.assetid: 71326238-bb75-4f83-a83b-29996ca136f0
 ---
 # Reviewing Availability and Recovery Options for Protecting the VMM Database
-When you are choosing among options for protecting the VMM database, whether in the context of availability or the context of disaster recovery, it is a good idea to review what can happen if the VMM database must be put â€œback in timeâ€ because of a failure situation. This can be necessary with some backup and recovery options and some availability options. For example, using SQL Server Availability Groups in asynchronous-commit availability mode can require that you perform a failover that puts the database â€œback in time.â€
 
-## Database failover or recovery situations that might require restoring â€œback in timeâ€
-As with any database, if a hardware failure or other problem occurs, recent changes to the VMM database might be lost. Depending on the availability and recovery options in place, the VMM database might have to be failed over, or restored from backup, when the only version of the VMM database that remains available is slightly out of date. This is sometimes called going â€œback in timeâ€ for a database.
+>Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
 
-Database administrators study availability and recovery options with careful thought for how the database can be restoredâ€”meaning how closely it can be brought back to a precise moment in time, if a failure occurs. This topic does not attempt to describe all the pros and cons of various choices for availability or recovery, but two situations are worth calling out for the VMM database:
+When you are choosing among options for protecting the VMM database, whether in the context of availability or the context of disaster recovery, it is a good idea to review what can happen if the VMM database must be put “back in time” because of a failure situation. This can be necessary with some backup and recovery options and some availability options. For example, using SQL Server Availability Groups in asynchronous-commit availability mode can require that you perform a failover that puts the database “back in time.”
+
+## Database failover or recovery situations that might require restoring “back in time”
+As with any database, if a hardware failure or other problem occurs, recent changes to the VMM database might be lost. Depending on the availability and recovery options in place, the VMM database might have to be failed over, or restored from backup, when the only version of the VMM database that remains available is slightly out of date. This is sometimes called going “back in time” for a database.
+
+Database administrators study availability and recovery options with careful thought for how the database can be restored—meaning how closely it can be brought back to a precise moment in time, if a failure occurs. This topic does not attempt to describe all the pros and cons of various choices for availability or recovery, but two situations are worth calling out for the VMM database:
 
 -   If SQL Server AlwaysOn Availability Groups are used with asynchronous commit mode, a forced failover might be necessary. Asynchronous commit mode means that any secondary replica of the database might lag behind the primary replica at any point. At the moment of a forced failover, if it is necessary to fail over to a secondary replica that has lagged behind, this will take the VMM database back in time. Asynchronous commit mode is described in more detail in the following topics:
 
@@ -41,5 +44,6 @@ When choosing among availability and recovery options for protecting the VMM dat
 
 ## See Also
 [Preparing your environment for System Center 2016 - Virtual Machine Manager](Preparing-your-environment-for-System-Center-2016---Virtual-Machine-Manager.md)
+
 
 

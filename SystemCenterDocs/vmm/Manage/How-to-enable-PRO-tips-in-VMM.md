@@ -8,6 +8,9 @@ ms.topic: article
 ms.assetid: 99bb953e-941d-4f75-9199-77599c4a396b
 ---
 # How to enable PRO tips in VMM
+
+>Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
+
 Virtual Machine Manager (VMM) supports Performance and Resource Optimization (PRO). To implement PRO, you need to establish a connection with a management server in the management group, as detailed in [How to connect VMM to Operations Manager](How-to-connect-VMM-to-Operations-Manager.md), and then enable PRO.
 
 VMM includes default PRO monitors for dynamic memory to monitor virtual machine dynamic memory allocation issues and maximum virtual machine memory aggregations on Hyper-V hosts. For more information, see [Configuring dynamic optimization and power optimization in VMM](Configuring-dynamic-optimization-and-power-optimization-in-VMM.md) and the VMM Management Pack documentation.
@@ -34,5 +37,6 @@ If you have an Operations Manager agent installed on the VMM management server, 
 ## See Also
 [Integrating VMM and System Center Operations Manager](Integrating-VMM-and-System-Center-Operations-Manager.md)
 [Monitoring and reporting for VMM resources](Monitoring-and-reporting-for-VMM-resources.md)
+
 
 

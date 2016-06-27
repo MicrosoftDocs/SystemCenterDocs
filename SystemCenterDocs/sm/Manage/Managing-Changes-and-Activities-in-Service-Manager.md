@@ -11,6 +11,9 @@ ms.topic: article
 ms.assetid: 6b57cd04-dbf2-4c1b-be42-f28a5ce6e0cc
 ---
 # Managing Changes and Activities in Service Manager
+
+>Applies To: System Center 2016 Technical Preview - Service Manager
+
 Information Technology (IT) departments must manage changes to their IT environment and the risk associated with such changes. The change management features in System Center 2016 Technical Preview - Service Manager help you manage change by providing repeatable, predictable, and measured processes to implement change.
 
 The following tasks are organized according to common change management scenarios and they describe how to use the change and activity management features in Service Manager.
@@ -48,5 +51,6 @@ The following tasks are organized according to common change management scenario
     -   Close a change request
 
     -   Send automated activity and change request notifications
+
 
 

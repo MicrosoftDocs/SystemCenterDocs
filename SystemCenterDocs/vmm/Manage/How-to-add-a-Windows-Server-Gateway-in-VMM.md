@@ -11,6 +11,9 @@ ms.topic: article
 ms.assetid: 26b83ffb-bb6a-4153-915c-5730fd122a2a
 ---
 # How to add a Windows Server Gateway in VMM
+
+>Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
+
 In Virtual Machine Manager (VMM) in System Center 2016 Technical Preview, you can connect a VM network to other networks by using a gateway.
 
 > [!IMPORTANT]
@@ -57,7 +60,7 @@ Review the Quick Start Guide, especially the network requirements and the gatewa
 
     -   The network virtualization logical network should be created as a connected network.
 
-    -   Configure IP address pools on each of the logical networks, unless you want to use DHCP on the "Infrastructure" (management) network‚Äîif so, omit the IP address pool for that network.
+    -   Configure IP address pools on each of the logical networks, unless you want to use DHCP on the "Infrastructure" (management) networkóif so, omit the IP address pool for that network.
 
     The following table outlines the logical networks and the specific requirements for each logical network:
 
@@ -69,7 +72,7 @@ Review the Quick Start Guide, especially the network requirements and the gatewa
 
     After you have finished creating the logical networks, network sites, and IP address pools, review the following:
 
-    -   If you added an IP address pool on the "Infrastructure" (management) network, determine whether the "Infrastructure" network and the ‚ÄúExternal‚Äù (front end) network route to the same network at any point. If they do,  for each IP address pool, right-click the pool and then click **Properties**. On the **Gateway** tab, review the value in the **Metric** column. Ensure that the **Metric** for the "Infrastructure" network is set to a higher value than the **Metric** for the ‚ÄúExternal‚Äù network.
+    -   If you added an IP address pool on the "Infrastructure" (management) network, determine whether the "Infrastructure" network and the ìExternalî (front end) network route to the same network at any point. If they do,  for each IP address pool, right-click the pool and then click **Properties**. On the **Gateway** tab, review the value in the **Metric** column. Ensure that the **Metric** for the "Infrastructure" network is set to a higher value than the **Metric** for the ìExternalî network.
 
     -   If you added an IP address pool on the "Infrastructure" (management) network, right-click the pool and then click **Properties**. On the **IP address range** tab, under **IP addresses to be reserved for other uses**, specify an IP address that is within the range of addresses in the IP address pool. Record this IP address. You will use it later when you deploy the gateway.
 
@@ -259,5 +262,6 @@ When you are ready to configure the VM network that uses the newly added gateway
 [Windows Server Gateway Hardware and Configuration Requirements](http://technet.microsoft.com/library/dn423897.aspx)
 [Managing network resources with VMM](Managing-network-resources-with-VMM.md)
 [How to create a VM network for a VLAN in VMM](How-to-create-a-VM-network-for-a-VLAN-in-VMM.md)
+
 
 

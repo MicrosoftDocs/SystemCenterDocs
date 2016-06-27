@@ -11,6 +11,9 @@ ms.topic: article
 ms.assetid: 38118405-3578-4e36-b5ec-e1cc5326e161
 ---
 # Appendix A - List of User Role Profiles in System Center 2016 - Service Manager
+
+>Applies To: System Center 2016 Technical Preview - Service Manager
+
 This appendix provides detailed information about the scope and properties of user role profiles in Service Manager.
 
 ## EndUser
@@ -179,5 +182,6 @@ The permissions for the implied CI Primary User profile are granted through the 
 |Create|None|None|None|
 |Update|None|None|None|
 |Delete|None|None|None|
+
 
 

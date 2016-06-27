@@ -11,6 +11,9 @@ ms.topic: article
 ms.assetid: 90b57d6b-bbeb-4949-867c-0a4fdd1faf8a
 ---
 # Preparing the fabric scenario in VMM
+
+>Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
+
 The example scenario that is used in this section illustrates one way to configure the fabric with Virtual Machine Manager (VMM), including sample host groups, library shares, networking resources, and storage resources. Because some of these examples depend on your existing hardware and physical infrastructure, consider the examples as guidelines. 
 
 The following table summarizes a set of sample **RESOURCES** that you could create to try out a sample infrastructure.
@@ -51,7 +54,7 @@ The following table summarizes a set of sample **RESOURCES** that you could crea
     |Name|Subnet|Management|
     |--------|----------|--------------|
     |**Management - Seattle**|**10.0.0.0/24**|**7**|
-    |**Management â€“ New York**|**172.16.0.0/24**|**12**|
+    |**Management – New York**|**172.16.0.0/24**|**12**|
 
     IP address pool:
 
@@ -61,7 +64,7 @@ The following table summarizes a set of sample **RESOURCES** that you could crea
     |Description|**IP addresses for host management - Seattle**|
     |Begin IP address|**10.0.0.10**|
     |End IP address|**10.0.0.99**|
-    |Reserved range for virtual IP addresses associated with load balancers:|**10.0.0.25 â€“ 10.0.0.35**|
+    |Reserved range for virtual IP addresses associated with load balancers:|**10.0.0.25 – 10.0.0.35**|
     |Default gateway|**10.0.0.1**|
     |DNS server|**10.0.0.2**|
     |WINS server|**10.0.0.3**|
@@ -90,4 +93,5 @@ The following table summarizes a set of sample **RESOURCES** that you could crea
     |**GOLD**|**Storage pool based on solid-state drives (SSDs) that delivers high performance for I/O intensive applications**|
     |**SILVER**|**Fibre Channel Serial Attached SCSI (SAS) storage (RAID 5)**|
     |**BRONZE**|**iSCSI Serial ATA (SATA) storage (RAID 5)**|
+
 

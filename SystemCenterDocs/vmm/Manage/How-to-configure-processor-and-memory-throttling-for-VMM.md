@@ -8,6 +8,9 @@ ms.topic: article
 ms.assetid: 9dce4d4a-949f-4e5f-a56e-715dfc2fd535
 ---
 # How to configure processor and memory throttling for VMM
+
+>Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
+
 Virtual Machine Manager (VMM) provides processor throttling (CPU) and memory throttling capabilities. You can set the throttling values when you configure a virtual machine by using the Create Virtual Machine Wizard, on the property sheet of an existing virtual machine, or on a virtual machine template. This topic describes how to configure processor and memory throttling, and memory weight.
 
 For more information about processor and memory throttling, see [Configuring resource throttling for VMM](Configuring-resource-throttling-for-VMM.md).
@@ -18,13 +21,13 @@ For more information about processor and memory throttling, see [Configuring res
 
 2.  Select a priority value for the virtual machine. These values specify how the CPU resources are balanced between virtual machine, and correspond to the relative weight value in Hyper-V:
 
-    -   Highâ€”Relative weight value of 200
+    -   High—Relative weight value of 200
 
-    -   Normalâ€”Relative weight value of 100
+    -   Normal—Relative weight value of 100
 
-    -   Lowâ€”Relative weight value of 50
+    -   Low—Relative weight value of 50
 
-    -   Customâ€”Relative weight values that are supported are between 1 and 10000
+    -   Custom—Relative weight values that are supported are between 1 and 10000
 
 3.  In **Reserve CPU cycles (%)**, specify the percentage of the CPU resources on one logical processor that should be reserved for a virtual machine. This is useful when a virtual machine runs applications that are particularly CPU-intensive, and you want to ensure a minimal level of CPU resources. A zero setting indicates that no specific CPU percentage is reserved.
 
@@ -51,4 +54,5 @@ For more information about processor and memory throttling, see [Configuring res
 1.  In the **Advanced** section of the virtual machine or of the virtual machine template properties, click **Memory Weight**.
 
 2.  Configure the priority that is used to allocate memory to a virtual machine when memory resources are in high usage. If you specify a low priority, the virtual machine might not be available to start when the memory resources are not sufficient.
+
 

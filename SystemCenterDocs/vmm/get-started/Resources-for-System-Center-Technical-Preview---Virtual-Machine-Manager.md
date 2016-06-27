@@ -11,6 +11,9 @@ ms.topic: get-started-article
 ms.assetid: 7e1c809e-34c5-46ea-b056-7376befd6b63
 ---
 # Resources for System Center Technical Preview - Virtual Machine Manager
+
+>Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
+
 The following resources are available for Virtual Machine Manager (VMM) in System Center 2016 Technical Preview.
 
 ## Evaluation software for VMM in System Center 2016 Technical Preview
@@ -33,5 +36,6 @@ The following documentation is available for VMM:
 To ask a question about or to discuss VMM, go to [System Center Virtual Machine Manager Forums](http://social.technet.microsoft.com/Forums/systemcenter/home?category=virtualmachinemanager).
 
 For blog posts from the VMM engineering team, see [System Center: Virtual Machine Manager Engineering Blog](http://blogs.technet.com/b/scvmm/).
+
 
 

@@ -11,6 +11,9 @@ ms.topic: article
 ms.assetid: d3c739a6-8f74-4a67-a76c-0f67321064d2
 ---
 # Configuring a Firewall for Operations Manager
+
+>Applies To: System Center 2016 Technical Preview - Operations Manager
+
 This section describes how to configure your environment to place  a Report data warehouse behind a firewall.
 
 ## Enabling communications across a firewall
@@ -68,5 +71,6 @@ The following table shows Operations Manager feature interaction across a firewa
 |Operations console (reports)|80 --->|SQL Reporting Services|No|The Operations console uses Port 80 to connect to the SQL Reporting Services web site.|
 |Reporting server|1433 --->|Reporting data warehouse|Yes||
 |management server (Audit Collection Services collector)|1433 --->|Audit Collection Services database|Yes||
+
 
 

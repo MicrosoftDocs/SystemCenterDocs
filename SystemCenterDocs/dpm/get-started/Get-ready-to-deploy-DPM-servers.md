@@ -12,13 +12,16 @@ ms.assetid:  517ce276-b811-4a06-ade3-ff71303ccf5b
 ---
 
 # Get ready to deploy DPM servers
+
+>Applies To: System Center 2016 Technical Preview - Data Protection Manager
+
 There are a few planning steps to consider before you begin to deploy your DPM servers:
 
--   [Plan for DPM server deployment](#BKMK_Server)â€”Figure out how many DPM servers you'll need and where to place them.
+-   [Plan for DPM server deployment](#BKMK_Server)—Figure out how many DPM servers you'll need and where to place them.
 
--   [Plan firewall settings](#BKMK_Firewall)â€”Get information about firewall, port and protocol settings on the DPM server, protected machines, and a remote SQL Server if you're setting one up.
+-   [Plan firewall settings](#BKMK_Firewall)—Get information about firewall, port and protocol settings on the DPM server, protected machines, and a remote SQL Server if you're setting one up.
 
--   [Grant user permissions](#BKMK_Users)â€”Specify who can interact with DPM.
+-   [Grant user permissions](#BKMK_Users)—Specify who can interact with DPM.
 
 ## <a name="BKMK_Server"></a>Plan for DPM server deployment
 Firstly determine how many servers you'll need:
@@ -31,7 +34,7 @@ Firstly determine how many servers you'll need:
 
 -   DPM has a snapshot limit of 9,000 disk-based snapshots on a single server, including those retained when you stop protection of a data source. The snapshot limit applies to express full backups and file recovery points, but not to incremental synchronizations. Note that the limit applies regardless of storage pool size.
 
--   For DPM server capacity planning you can use the [DPM storage calculators](http://www.microsoft.com/en-us/download/details.aspx?displaylang=en&id=24375). These calculators are Excel sheets and are workload specific. They provide guidance about the number of DPM servers required, processor core, RAM, and virtual memory recommendations, and required storage capacity. Because these calculators are workload-specific youâ€™ll need to combine the recommended settings and consider them together with the system requirements, and your specific business topology and requirements, including data source and storage locations, compliance and SLA requirements, and disaster recovery needs. Note that the calculators were released for DPM 2010 but remain relevant for later DPM versions.
+-   For DPM server capacity planning you can use the [DPM storage calculators](http://www.microsoft.com/en-us/download/details.aspx?displaylang=en&id=24375). These calculators are Excel sheets and are workload specific. They provide guidance about the number of DPM servers required, processor core, RAM, and virtual memory recommendations, and required storage capacity. Because these calculators are workload-specific you’ll need to combine the recommended settings and consider them together with the system requirements, and your specific business topology and requirements, including data source and storage locations, compliance and SLA requirements, and disaster recovery needs. Note that the calculators were released for DPM 2010 but remain relevant for later DPM versions.
 
 Then figure out how to locate the servers:
 
@@ -43,9 +46,9 @@ Then figure out how to locate the servers:
 
 -   Another consideration for the location of your DPM servers is the need to manage tapes and tape libraries manually, such as adding new tapes to the library or removing tapes for offsite archive.
 
--   A DPM server can protect resources within a domain, or across domains within a forest that has a two-way trust relationship with the domain that the DPM server is located in. If there isn't a two-way trust across domains, you need a separate DPM server for each domain. A DPM server can protect data across forests if thereâ€™s a forest-level two-way trust between the forests.
+-   A DPM server can protect resources within a domain, or across domains within a forest that has a two-way trust relationship with the domain that the DPM server is located in. If there isn't a two-way trust across domains, you need a separate DPM server for each domain. A DPM server can protect data across forests if there’s a forest-level two-way trust between the forests.
 
--   Consider the network bandwidth between the DPM server and the protected computers. If you are protecting data over a WAN thereâ€™s a minimum network bandwidth requirement of 512 Kbps. Note that DPM supports teamed NICs that provide increased bandwidth by combining bandwidth available for each network adapter, and failover if an adapter fails.
+-   Consider the network bandwidth between the DPM server and the protected computers. If you are protecting data over a WAN there’s a minimum network bandwidth requirement of 512 Kbps. Note that DPM supports teamed NICs that provide increased bandwidth by combining bandwidth available for each network adapter, and failover if an adapter fails.
 
 ## <a name="BKMK_Firewall"></a>Plan firewall settings and user permissions
 
@@ -85,5 +88,6 @@ Before you begin a DPM deployment, verify that appropriate users have been grant
 |Install recovery point client software on protected machine|Admin account on machine|
 |Access previous versions of protected data from protected machine|User account with access to protected share|
 |Recover SharePoint data|SharePoint farm admin that's also an admin on the front-end Web server on which the protection agent is installed.|
+
 
 
