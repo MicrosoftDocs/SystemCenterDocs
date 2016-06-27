@@ -8,6 +8,9 @@ ms.topic: article
 ms.assetid: a64b46b0-5ce6-435a-8de6-70a86c2b0ff5
 ---
 # How to manage vSANs and vHBAs with VMM
+
+>Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
+
 A virtual storage area network (vSAN) is a named group of physical Fibre Channel Host Bus Adapter (HBA) ports on a host computer that a VM connects to in order to access Fibre Channel storage devices. One or more vSANs can be created for each host computer. Each vSAN can only contain HBAs that are from the same fabric.
 
 Virtual Host Bus Adapters (vHBAs) represent the virtualization of Fibre Channel HBAs, and are used by VMs to connect with vSANs. Each vHBA has a World Wide Node Name (WWNN), which is different than the host HBA WWNN.
@@ -106,5 +109,6 @@ Use the following procedures to manage vSANs with Virtual Machine Manager (VMM):
 [Managing Virtual Fibre Channel fabrics with VMM](Managing-Virtual-Fibre-Channel-fabrics-with-VMM.md)
 [Managing storage resources and capacity with VMM](Managing-storage-resources-and-capacity-with-VMM.md)
 [Managing fabric resources with VMM](Managing-fabric-resources-with-VMM.md)
+
 
 

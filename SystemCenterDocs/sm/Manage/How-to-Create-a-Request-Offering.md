@@ -11,6 +11,9 @@ ms.topic: article
 ms.assetid: 1137cb8c-abcb-4929-bf4b-f3a41db1bf2e
 ---
 # How to Create a Request Offering
+
+>Applies To: System Center 2016 Technical Preview - Service Manager
+
 Request offerings are catalog items that describe the item, assistance, or action that is available to end users in the service catalog. Request offerings are normally placed in logical groups of service offerings. Both service offerings and their request offerings are available to Self-Service Portal users when the status of the offerings is set to Published and if end users have been assigned a corresponding Service Manager user role. Only users who have been assigned a user role associated with a catalog group that contains catalog items can use the Self-Service Portal to access the service catalog.
 
 You can use the following procedure to create a request offering.
@@ -73,7 +76,7 @@ You can use the following procedure to create a request offering.
 
 8.  On the **Map Prompts** page, associate prompts with various fields of a service request or its activities, depending on the complexity of the form and the extension of the class that you have made. Complete the following steps to associate the justification to the review activity:
 
-    1.  Select **Approval for the user requesting membership to the Active Directory group â€“ (Review Activity)**.
+    1.  Select **Approval for the user requesting membership to the Active Directory group – (Review Activity)**.
 
     2.  Next to **Description**, select the box under **Prompt Output**, and then in the list, select **3. Enter your justification: String**.
 
@@ -86,5 +89,6 @@ You can use the following procedure to create a request offering.
 11. On the **Summary** page, review the information, and then click **Create**.
 
 12. On the **Completion** page, click **Close**.
+
 
 

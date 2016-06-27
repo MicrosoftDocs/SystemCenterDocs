@@ -11,6 +11,9 @@ ms.topic: article
 ms.assetid: 85ce5254-2a03-4e37-8e8c-072b263c7e51
 ---
 # How to Specify a User Role for Catalog Items
+
+>Applies To: System Center 2016 Technical Preview - Service Manager
+
 User roles provide access to catalog groups that contain catalog items. Both service offerings and their request offerings are available to Self-Service Portal users, when the status of the offerings is set to Published and if end users have been assigned a corresponding Service Manager user role. Only users who have been assigned a user role associated with a catalog group that contains catalog items can use the Self-Service Portal to access the service catalog. You can use the following procedure to create a user role and associate catalog items and users with the role.
 
 ### To create a user role and associate it with catalog items and users
@@ -50,5 +53,6 @@ User roles provide access to catalog groups that contain catalog items. Both ser
 12. On the **Summary** page, review the information, and then click **Create**.
 
 13. On the **Completion** page, click **Close**.
+
 
 

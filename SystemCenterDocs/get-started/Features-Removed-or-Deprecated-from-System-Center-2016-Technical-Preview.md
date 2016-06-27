@@ -9,6 +9,9 @@ ms.topic: get-started-article
 ms.assetid: b6f468e0-fa52-41f3-8b2d-9e07ede377c9
 ---
 # Features Removed or Deprecated from System Center 2016 Technical Preview
+
+>Applies To: System Center Technical Preview
+
 The features and capabilities  listed below  are not included in the System Center Technical Preview. Applications, code, or usage that depends  on these features will not function in this release unless you employ an alternate method. This list is subject to change in subsequent releases and may not include every removed feature or capability.
 
 ## App Controller
@@ -47,5 +50,6 @@ You will not be able to either create or import a service templates with a Serve
 **Status in System Center 2016 Technical Preview:** Removed
 
 **Replacement:** Integrate your Windows Azure Pack installation with a third-party billing and utilization system.
+
 
 

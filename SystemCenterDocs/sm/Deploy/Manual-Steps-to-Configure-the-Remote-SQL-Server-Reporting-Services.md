@@ -11,6 +11,9 @@ ms.topic: article
 ms.assetid: 21737383-4edf-4d52-a3ed-185496367070
 ---
 # Manual Steps to Configure the Remote SQL Server Reporting Services
+
+>Applies To: System Center 2016 Technical Preview - Service Manager
+
 During deployment of the Service Manager data warehouse management server, you can specify the server to which Microsoft SQL Server Reporting Services (SSRS) will be deployed. During setup, the computer that is hosting the data warehouse management server is selected by default. If you specify a different computer to host SSRS, you are prompted to follow this procedure to prepare the server. Preparing the remote computer to host SSRS involves the following steps, which are covered in detail in this section:
 
 -   Copy Microsoft.EnterpriseManagement.Reporting.Code.dll from the Service Manager installation media to the computer that is hosting SSRS.
@@ -98,5 +101,6 @@ If you used the default instance of SQL Server, use Windows Explorer to drag Mic
     ```
 
 5.  Save the changes and close the XML editor.
+
 
 

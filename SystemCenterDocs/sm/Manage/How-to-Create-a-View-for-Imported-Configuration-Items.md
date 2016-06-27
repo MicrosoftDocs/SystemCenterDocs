@@ -11,6 +11,9 @@ ms.topic: article
 ms.assetid: 9507e47e-16d7-4621-a724-39aea32d847c
 ---
 # How to Create a View for Imported Configuration Items
+
+>Applies To: System Center 2016 Technical Preview - Service Manager
+
 You can use the following procedures in Service Manager to create a view for imported Microsoft SQL Server database configuration items and then view the items in a dynamically generated form.
 
 You can view and edit items that were imported from a System Center Operations Manager configuration item (CI) connector. However, Service Manager does not have system-defined views or forms for some items. For example, Service Manager does not have a defined view for SQL Server databases, so you must manually create a view to see these configuration items. Although Service Manager does not have a predefined form for SQL Server databases or for many other objects that you might have imported, you can still view any configuration item in a dynamically generated form (if you created a view for those items).
@@ -54,5 +57,6 @@ Before you use these procedures, make sure that you import the SQL Server manage
 5.  If you have made any changes to the item, click **OK**; otherwise, click **Cancel** to close the form.
 
 ![](../../media/pssymbol.png)You can use Windows PowerShell commands to display views that are defined in Service Manager. For more information, see [Get-SCSMView](http://go.microsoft.com/fwlink/p/?LinkID=225344).
+
 
 

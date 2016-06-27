@@ -11,6 +11,9 @@ ms.topic: article
 ms.assetid: f0569325-0e89-4633-8b6b-b900afbfda54
 ---
 # Install Agent Using the Command Line
+
+>Applies To: System Center 2016 Technical Preview - Operations Manager
+
 You can use MOMAgent.msi to deploy System Center Operations Manager agents from the command line. Deploying agents from the command line is also referred to as a manual install.
 
 Before you begin deployment, ensure the following conditions have been met:
@@ -54,8 +57,8 @@ Use the following procedure to deploy an agent. For examples of ways in which yo
     |MANAGEMENT_SERVER_DNS=*MSname*|Specifies the fully qualified domain name for the management server. To use a gateway server, enter the gateway server FQDN as **MANAGEMENT_SERVER_DNS**.|
     |MANAGEMENT_SERVER_AD_NAME=*ADname*|Use this parameter if the computer's DNS and Active Directory names differ to set to the fully qualified Active Directory Domain Services name.|
     |SECURE_PORT=*PortNumber*|Sets the health service port number.|
-    |ENABLE_ERROR_REPORTING={0&#124;1}|Optional parameter. Use this parameter with ‚Äú1‚Äù to opt in to error report forwarding to Microsoft. If you do not include this parameter, the agent installation defaults to ‚Äú0‚Äù, which opts out of error report forwarding.|
-    |QUEUE_ERROR_REPORTS={0&#124;1}|Optional parameter. Use this parameter with ‚Äú1‚Äù to queue error reports or with ‚Äú0‚Äù to send reports immediately. If you do not include this parameter, the agent installation defaults to ‚Äú0‚Äù.|
+    |ENABLE_ERROR_REPORTING={0&#124;1}|Optional parameter. Use this parameter with ì1î to opt in to error report forwarding to Microsoft. If you do not include this parameter, the agent installation defaults to ì0î, which opts out of error report forwarding.|
+    |QUEUE_ERROR_REPORTS={0&#124;1}|Optional parameter. Use this parameter with ì1î to queue error reports or with ì0î to send reports immediately. If you do not include this parameter, the agent installation defaults to ì0î.|
     |INSTALLDIR=*path*|Optional parameter. Use this parameter if you want to install the agent to a folder other than the default installation path. Note that \Agent will be appended to this value.|
     |ACTIONS_USE_COMPUTER_ACCOUNT={0&#124;1}|Indicates whether to use a specified user account (0) or the Local System account (1).|
     |ACTIONSUSER=*UserName*|Sets the Agent Action account to *UserName*. This parameter is required if you specified ACTIONS_USE_COMPUTER_ACCOUNT=0.|
@@ -78,5 +81,6 @@ Use the following procedure to deploy an agent. For examples of ways in which yo
 [Upgrading and Uninstalling Agents on UNIX and Linux Computers](Upgrading-and-Uninstalling-Agents-on-UNIX-and-Linux-Computers.md)
 [Manually Uninstalling Agents from UNIX and Linux Computers](Manually-Uninstalling-Agents-from-UNIX-and-Linux-Computers.md)
 [Uninstall Agent from Windows-based Computers](Uninstall-Agent-from-Windows-based-Computers.md)
+
 
 

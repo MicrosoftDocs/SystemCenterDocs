@@ -11,6 +11,9 @@ ms.topic: article
 ms.assetid: b8d8f830-a235-409e-a31c-be40f215a5ad
 ---
 # Service Manager Parts
+
+>Applies To: System Center 2016 Technical Preview - Service Manager
+
 There are six major parts of a System Center 2016 Technical Preview - Service Manager installation, as described in the following table.
 
 ###
@@ -26,5 +29,6 @@ There are six major parts of a System Center 2016 Technical Preview - Service Ma
 
 > [!IMPORTANT]
 > All computers that host any part of System Center 2016 Technical Preview - Service Manager must be domain joined.
+
 
 

@@ -11,6 +11,9 @@ ms.topic: article
 ms.assetid: 90112384-4418-4345-8926-fe770f9d8208
 ---
 # How to Publish and Unpublish a Price Sheet
+
+>Applies To: System Center 2016 Technical Preview - Service Manager
+
 You must have created a price sheet and saved it before you can publish it. After you publish a price sheet, you can assign private cloud objects to the price sheet. For more information about publishing a price sheet, see [How to Create or Modify a Price Sheet](How-to-Create-or-Modify-a-Price-Sheet.md).
 
 > [!NOTE]
@@ -35,5 +38,6 @@ You must have created a price sheet and saved it before you can publish it. Afte
 3.  In the list of price sheets, select the price sheet with Published status that you want to unpublish.
 
 4.  In the **Tasks** pane click **Unpublish**.
+
 
 

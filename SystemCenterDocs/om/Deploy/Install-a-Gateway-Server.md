@@ -11,6 +11,9 @@ ms.topic: article
 ms.assetid: adf8eada-1428-4827-b1f5-cf0ff86aa6c2
 ---
 # Install a Gateway Server
+
+>Applies To: System Center 2016 Technical Preview - Operations Manager
+
 Gateway servers are used to enable agent-management of computers that are outside the Kerberos trust boundary of management groups, such as in a domain that is not trusted. The gateway server acts as a concentration point for agent-to-management server communication. Agents in domains that are not trusted communicate with the gateway server and the gateway server communicates with one or more management servers. Because communication between the gateway server and the management servers occurs over only one port (TCP 5723), that port is the only one that has to be opened on any intervening firewalls to enable management of multiple agent-managed computers. Multiple gateway servers can be placed in a single domain so that the agents can failover from one to the other if they lose communication with one of the gateway servers. Similarly, a single gateway server can be configured to failover between management servers so that no single point of failure exists in the communication chain.
 
 Because the gateway server resides in a domain that is not trusted by the domain that the management group is in, certificates must be used to establish each computer's identity, agent, gateway server, and management server. This arrangement satisfies the requirement of Operations Manager for mutual authentication.
@@ -154,9 +157,10 @@ The following example can be used to configure gateway server failover to multip
 ### Code
 
 ```
-$GatewayServer = Get-SCOMGatewayManagementServer â€“Name â€œComputerName.Contoso.comâ€
-$FailoverServer = Get-SCOMManagementServer â€“Name â€œManagementServer.Contoso.comâ€,â€ManagementServer2.Contoso.comâ€
+$GatewayServer = Get-SCOMGatewayManagementServer –Name “ComputerName.Contoso.com”
+$FailoverServer = Get-SCOMManagementServer –Name “ManagementServer.Contoso.com”,”ManagementServer2.Contoso.com”
 Set-SCOMParentManagementServer -GatewayServer $GatewayServer -FailoverServer $FailoverServer
 ```
+
 
 

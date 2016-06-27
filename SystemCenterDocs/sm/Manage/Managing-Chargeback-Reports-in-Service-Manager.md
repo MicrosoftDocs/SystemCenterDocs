@@ -11,6 +11,9 @@ ms.topic: article
 ms.assetid: 52ce9a2c-f29e-4db6-913a-9aa6b5fab36a
 ---
 # Managing Chargeback Reports in Service Manager
+
+>Applies To: System Center 2016 Technical Preview - Service Manager
+
 This section provides an overview of how to view chargeback reports and how to configure the sample reports in Service Manager. Before you can use the reports, they must be installed and configured for your installation of Service Manager.  You can use the information below to help you instal, and configure chargeback reports .
 
 ## View and Use Chargeback Reports
@@ -38,11 +41,11 @@ You must have Excel, or a viewer capable of opening Excel data files, installed 
 ## Configure Sample Chargeback Reports
 You can use the following procedure to configure the sample Microsoft Excel chargeback report (ChargebackReport.xlsx) that is included with Service Manager. This sample report is designed for you to modify for use in your organization. You can update the report any way you like. The sample report contains the following tabs:
 
--   Dashboard â€“ This tab shows a chart of the top 3 cost centers, clouds, VMM user roles, price sheets, spending trend, and overall spending for the period that you select.
+-   Dashboard – This tab shows a chart of the top 3 cost centers, clouds, VMM user roles, price sheets, spending trend, and overall spending for the period that you select.
 
--   Chargeback Daily Details â€“ This tab shows a comprehensive list of daily costs detailing virtual machine cloud level and other costs assigned to price sheets for the year and month you select. It also includes a graph showing the top 3 clouds within cost centers.
+-   Chargeback Daily Details – This tab shows a comprehensive list of daily costs detailing virtual machine cloud level and other costs assigned to price sheets for the year and month you select. It also includes a graph showing the top 3 clouds within cost centers.
 
--   Chargeback Monthly Details â€“ This tab shows a comprehensive list of costs assigned to price sheets for the year and month you select.
+-   Chargeback Monthly Details – This tab shows a comprehensive list of costs assigned to price sheets for the year and month you select.
 
 > [!NOTE]
 > The first time you open the file in with Excel, you must configure the workbook data connection so that it can retrieve information from OLAP data cubes in the Service Manager data warehouse management server.
@@ -56,5 +59,6 @@ You can use the following procedure to configure the sample Microsoft Excel char
 3.  In the **Workbook Connections** dialog box, for each connection, view its **Properties** and replace <LocalHost> with the server name of your Service Manager data warehouse management server. If your data warehouse analysis database name is not DWASDataBase, then replace the database name with the one that you use.
 
 4.  Optionally, you can save the workbook to a shared folder or other shared location, such as the analysis library.
+
 
 

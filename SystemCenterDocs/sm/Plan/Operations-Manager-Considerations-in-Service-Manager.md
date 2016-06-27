@@ -11,6 +11,9 @@ ms.topic: article
 ms.assetid: 0eb44190-b525-410a-a105-47355f2fccdd
 ---
 # Operations Manager Considerations in Service Manager
+
+>Applies To: System Center 2016 Technical Preview - Service Manager
+
 This topic contains information to be aware of when you are combining Operations Manager and Service Manager.
 
 ## Management Group Names Must be Unique
@@ -26,5 +29,6 @@ For more information about the SQL Server collation setting that might impact in
 
 > [!NOTE]
 > If you have databases with collations that do not match, then you cannot use the Operations Manager to Service Manager data warehouse connector which imports alerts from the OperationsManager database  in Operations Manager to the Service Manager DWStagingAndConfig database.
+
 
 

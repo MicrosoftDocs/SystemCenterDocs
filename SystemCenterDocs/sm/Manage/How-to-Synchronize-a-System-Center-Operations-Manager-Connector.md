@@ -11,6 +11,9 @@ ms.topic: article
 ms.assetid: 2696dbca-8160-471e-8b10-e678a25329cc
 ---
 # How to Synchronize a System Center Operations Manager Connector
+
+>Applies To: System Center 2016 Technical Preview - Service Manager
+
 When you create a System Center Operations Manager alert connector for Service Manager, it polls Operations Manager every 30 seconds. When you create an Operations Manager configuration item (CI) connector, it synchronizes data from Operations Manager every day at the time you specified in the configured schedule. However, you can use the following procedure to manually synchronize either type of connector.
 
 > [!NOTE]
@@ -33,5 +36,6 @@ When you create a System Center Operations Manager alert connector for Service M
 1.  In the Service Manager console, click **Configuration Items**.
 
 2.  In the **Configuration Items** pane, expand **Computers**, and then click **All Windows Computers**. Verify that any new computers that were discovered in Operations Manager appear in the **All Windows Computers** pane.
+
 
 

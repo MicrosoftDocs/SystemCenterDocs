@@ -8,6 +8,9 @@ ms.topic: article
 ms.assetid: 11d8b9d6-54ce-4bd1-8e27-73a5ae228321
 ---
 # Performing update remediation in VMM
+
+>Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
+
 The procedures in this section describe the operation of bringing a managed computer into compliance with an update baseline, also known as *update remediation*. In Virtual Machine Manager (VMM), you can choose to remediate all update baselines that are assigned to a computer, all noncompliant updates in a single update baseline, or a single update.
 
 **Account requirements** To perform update remediation, you must be an administrator or a delegated administrator in VMM. Delegated administrators can only remediate updates for computers that are within the scope of their user role.
@@ -27,5 +30,6 @@ Follow these procedures to perform updates on stand-alone Hyper-V hosts, host cl
 ## See Also
 [Managing fabric updates in VMM](Managing-fabric-updates-in-VMM.md)
 [Managing fabric resources with VMM](Managing-fabric-resources-with-VMM.md)
+
 
 

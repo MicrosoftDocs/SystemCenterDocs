@@ -11,6 +11,9 @@ ms.topic: article
 ms.assetid: ac53c27a-94b7-4ceb-9162-3fc82d933840
 ---
 # How to Install Chargeback Reports
+
+>Applies To: System Center 2016 Technical Preview - Service Manager
+
 Chargeback reports in Service Manager consist of various files such as management pack files, Windows PowerShell scripts to import the management pack files, and a Microsoft Excel sample report. The first of the following procedures imports Service Manager management pack files and the second procedure imports management pack files on the Operations Manager management server.
 
 All files that comprise chargeback reports are located in the Service Manager installation folder in the Chargeback subfolder. For example, if you installed Service Manager in C:\Program Files, then all chargeback report files will be located in C:\Program Files\Microsoft System Center 2016\Service Manager\Chargeback
@@ -41,7 +44,7 @@ After you have installed chargeback report files on the Operations Manager and S
 4.  If you have not already set execution policy to remotesigned, then type the following command, and then press ENTER:
 
     ```
-    Set-ExecutionPolicy â€“force RemoteSigned
+    Set-ExecutionPolicy –force RemoteSigned
     ```
 
 5.  Type the following command, and then press ENTER to run the PowerShell script that imports chargeback management packs and that add chargeback functionality to Operations Mananger:
@@ -65,7 +68,7 @@ After you have installed chargeback report files on the Operations Manager and S
 3.  If you have not already set execution policy to remotesigned, then type the following command, and then press ENTER:
 
     ```
-    Set-ExecutionPolicy â€“force RemoteSigned
+    Set-ExecutionPolicy –force RemoteSigned
     ```
 
 4.  Navigate to the Chargeback folder. For example, type **cd chargeback**.
@@ -83,5 +86,6 @@ After you have installed chargeback report files on the Operations Manager and S
 8.  In the list of data warehouse jobs, select **MPSyncJob** and then in the Task list, click **Resume**.
 
 9. Configure the Operations Manager CI connector and ensure that Service Manager has discovered the virtual machine information from Operations Manager.
+
 
 

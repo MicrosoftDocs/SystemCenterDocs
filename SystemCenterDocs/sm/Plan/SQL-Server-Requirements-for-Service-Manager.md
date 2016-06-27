@@ -11,7 +11,10 @@ ms.topic: article
 ms.assetid: 26697203-df1e-4232-b9be-7c9976a362b8
 ---
 # SQL Server Requirements for Service Manager
-MicrosoftÂ® SQL ServerÂ® hosts the databases that System Center 2016 Technical Preview - Service Manager creates. In addition, System Center 2016 Technical Preview - Service Manager requires SQL Server Analysis Services (SSAS) to work with Microsoft Online Analytical Processing (OLAP) cubes. SQL Server Reporting Services (SSRS) is required to support System Center 2016 Technical Preview - Service Managerreporting.
+
+>Applies To: System Center 2016 Technical Preview - Service Manager
+
+Microsoft® SQL Server® hosts the databases that System Center 2016 Technical Preview - Service Manager creates. In addition, System Center 2016 Technical Preview - Service Manager requires SQL Server Analysis Services (SSAS) to work with Microsoft Online Analytical Processing (OLAP) cubes. SQL Server Reporting Services (SSRS) is required to support System Center 2016 Technical Preview - Service Managerreporting.
 
 All SQL Server requirements are listed at [SQL Server](http://go.microsoft.com/fwlink/?LinkId=268329) and SQL Server editions are listed at [Operating System and Database Edition Support](http://go.microsoft.com/fwlink/?LinkId=268324).
 
@@ -89,5 +92,6 @@ When considering SQL Server AlwaysOn Availability Groups for the Service Manager
 For more information about installing Service Manager with AlwaysOn availability groups on [TechNet](http://blogs.technet.com/b/babulalghule/archive/2013/02/17/how-to-install-service-manager-2012-sp1-with-a-sql-2012-alwayson-availability-groups.aspx).
 
 For more information about AlwaysOn Availability Groups, see [AlwaysOn Availability Groups (SQL Server)](http://msdn.microsoft.com/library/hh510230.aspx).
+
 
 

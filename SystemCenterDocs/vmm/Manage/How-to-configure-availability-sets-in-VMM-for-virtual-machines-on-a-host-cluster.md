@@ -8,6 +8,9 @@ ms.topic: article
 ms.assetid: 4ed5fceb-d013-4376-a8ae-694c659f3e07
 ---
 # How to configure availability sets in VMM for virtual machines on a host cluster
+
+>Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
+
 If you deploy virtual machines on a host cluster, you can use Virtual Machine Manager (VMM) to configure availability sets for the virtual machines. When you place virtual machines in an availability set, VMM will attempt to keep those virtual machines on separate hosts and avoid placing them together on the same host whenever possible. This helps to improve continuity of service.
 
 You can also configure availability sets in a service template, to specify how virtual machines that are created with that template should be placed on hosts. 
@@ -39,6 +42,7 @@ For information about other settings related to availability of virtual machines
 7.  In the properties sheet, click **OK**.
 
 8.  To verify the setting for a deployed virtual machine, in the listing for the virtual machine, view the name under **Availability Set Name**.
+
 
 
 

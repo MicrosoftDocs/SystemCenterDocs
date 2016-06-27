@@ -8,6 +8,9 @@ ms.topic: article
 ms.assetid: 46ee87d0-2823-4a82-a4b1-c67af1fb607f
 ---
 # How to place a host in maintenance mode in VMM
+
+>Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
+
 In Virtual Machine Manager (VMM), you can start maintenance mode for a virtual machine host whenever you need to perform maintenance tasks on the physical host, such as applying security updates or replacing hardware on the physical host computer. You can place Hyper-V hosts and VMware ESX hosts that are managed by VMM into maintenance mode.
 
 When you start maintenance mode on a host, you can do one of the following:
@@ -76,5 +79,6 @@ When a host is in maintenance mode, the following restrictions are placed on the
 [Maintaining resources with VMM](Maintaining-resources-with-VMM.md)
 [Managing fabric updates in VMM](Managing-fabric-updates-in-VMM.md)
 [Managing fabric resources with VMM](Managing-fabric-resources-with-VMM.md)
+
 
 

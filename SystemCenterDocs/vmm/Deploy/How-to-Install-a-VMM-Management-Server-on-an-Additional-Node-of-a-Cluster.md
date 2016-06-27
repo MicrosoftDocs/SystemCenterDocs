@@ -11,6 +11,9 @@ ms.topic: article
 ms.assetid: 3961bdac-8b4c-42f9-a2ce-57025adce7f7
 ---
 # How to Install a VMM Management Server on an Additional Node of a Cluster
+
+>Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
+
 You can use the following procedure to install a highly available Virtual Machine Manager (VMM) management server on an additional node of a failover cluster. For installing on the first node of a cluster, see [How to Install a Highly Available VMM Management Server](How-to-Install-a-Highly-Available-VMM-Management-Server.md).
 
 > [!NOTE]
@@ -71,5 +74,6 @@ Membership in the local **Administrators** group, or equivalent, on the computer
     To open the VMM console, ensure that the **Open the VMM console when this wizard closes** check box is selected.
 
     For information about connecting to a highly available VMM management server by using the VMM console, see [How to Connect to a Highly Available VMM Management Server by Using the VMM Console](How-to-Connect-to-a-Highly-Available-VMM-Management-Server-by-Using-the-VMM-Console.md).
+
 
 

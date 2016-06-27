@@ -11,6 +11,9 @@ ms.topic: article
 ms.assetid: 1ebced0b-1a2c-46ec-97f3-542b47891873
 ---
 # How to Set Resolution Time
+
+>Applies To: System Center 2016 Technical Preview - Service Manager
+
 Use the following procedure to set a resolution time based on incident priority in Service Manager.
 
 ### To set resolution time
@@ -32,5 +35,6 @@ Use the following procedure to set a resolution time based on incident priority 
 ### To validate resolution time
 
 -   When you create a new incident or edit an existing one, the resulting resolution times for an incident matches the values that are defined in the preceding procedures.
+
 
 

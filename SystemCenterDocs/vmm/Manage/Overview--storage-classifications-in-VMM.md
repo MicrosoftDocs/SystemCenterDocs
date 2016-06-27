@@ -11,6 +11,9 @@ ms.topic: article
 ms.assetid: edad40e9-bf3b-4766-bea2-1d844dc065ea
 ---
 # Overview: storage classifications in VMM
+
+>Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
+
 Applies To:  System Center 2016 Technical Preview - Virtual Machine Manager
 
 In Virtual Machine Manager (VMM), to simplify the assignment of storage to users and virtual machines, you create storage classifications that fit your environment. You can do this when running a wizard such as the New Storage Pool Wizard, on the page that asks you to assign a classification to the object you're creating. Or you can create the storage classification as a separate action: in the **Fabric** workspace, click **Create Storage Classification**.
@@ -34,5 +37,6 @@ Later, you can use these classifications to provide the classified storage to a 
 [Configuring storage using Scale-Out File Servers in VMM](Configuring-storage-using-Scale-Out-File-Servers-in-VMM.md)
 [Managing storage resources and capacity with VMM](Managing-storage-resources-and-capacity-with-VMM.md)
 [Managing fabric resources with VMM](Managing-fabric-resources-with-VMM.md)
+
 
 

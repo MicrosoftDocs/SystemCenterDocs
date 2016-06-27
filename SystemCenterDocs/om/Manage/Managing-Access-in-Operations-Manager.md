@@ -12,6 +12,9 @@ ms.assetid: 984d119a-0019-4b86-9bfc-dd50930f425d
 ---
 # Managing Access in Operations Manager
 
+>Applies To: System Center 2016 Technical Preview - Operations Manager
+
+
 ## Managing Access in Operations Manager topics
 
 -   [Accessing UNIX and Linux Computers in Operations Manager](https://technet.microsoft.com/library/hh212886%28v=sc.12%29.aspx)
@@ -25,5 +28,6 @@ ms.assetid: 984d119a-0019-4b86-9bfc-dd50930f425d
 -   [Operations Manager Accounts](https://technet.microsoft.com/library/hh212808%28v=sc.16%29.aspx)
 
     This section describes the accounts that Operations Manager uses.
+
 
 

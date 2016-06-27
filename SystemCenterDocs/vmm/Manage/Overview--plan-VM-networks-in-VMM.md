@@ -11,6 +11,9 @@ ms.topic: article
 ms.assetid: 9319e518-2b01-4462-bb05-bbddfed6e00d
 ---
 # Overview: plan VM networks in VMM
+
+>Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
+
 In Virtual Machine Manager (VMM), after you complete the planning described in [Overview: plan logical networks, network sites, and IP address pools in VMM](Overview--plan-logical-networks,-network-sites,-and-IP-address-pools-in-VMM.md), you can plan your VM networks. Use this table for more information:
 
 |Purpose of VM network|Description|
@@ -49,6 +52,7 @@ Use the following guidelines to plan for VM networks that use network virtualiza
     Optionally, you can also select **Create a VM network with the same name to allow virtual machines to access this logical network directly**. Even after one such VM network is created, you can create additional VM networks that are isolated from other VM networks.
 
 -   On top of that logical network, plan for multiple VM networks on which you will select **Isolate using Hyper-V network virtualization**.
+
 
 
 

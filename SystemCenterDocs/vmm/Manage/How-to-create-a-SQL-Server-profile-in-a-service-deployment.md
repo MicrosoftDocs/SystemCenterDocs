@@ -8,6 +8,9 @@ ms.topic: article
 ms.assetid: 75f2f67b-4b39-4005-adc1-bbc66cd5e926
 ---
 # How to create a SQL Server profile in a service deployment
+
+>Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
+
 You can use the following procedure to create a SQL Server profile in Virtual Machine Manager (VMM). The SQL Server profile provides instructions for installing an instance of Microsoft SQL Server on a virtual machine.
 
 > [!IMPORTANT]
@@ -48,4 +51,5 @@ You can use the following procedure to create a SQL Server profile in Virtual Ma
 6.  To verify that the profile was created, in the **Library** pane, expand **Profiles**, and then click **SQL Server Profiles**.
 
     The SQL Server profile appears in the **Profiles** pane.
+
 

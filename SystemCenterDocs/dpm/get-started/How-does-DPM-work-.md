@@ -9,6 +9,10 @@ ms.topic: article
 ms.assetid: 1490e423-de29-41b3-bee3-cc46140ea55d
 ---
 # How does DPM work?
+
+>Applies To: System Center 2016 Technical Preview - Data Protection Manager
+
 Get an overview of DPM.
+
 
 

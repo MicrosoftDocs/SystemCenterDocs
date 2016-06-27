@@ -8,6 +8,9 @@ ms.topic: article
 ms.assetid: d9ccb8f6-f778-4ac9-8215-aac941608267
 ---
 # Configuring iSCSI Target Server and the SMI-S Provider in VMM
+
+>Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
+
 As of Windows Server 2012, Microsoft iSCSI Target Server is a server role that enables the server to function as a storage device. This topic provides information about the SMI-S provider for the Microsoft iSCSI Target Server. This is the provider that Virtual Machine Manager (VMM) uses for managing an iSCSI Target Server.
 
 Depending on the version of software you are using, you might need to install this provider software on an iSCSI Target Server before you can begin managing that server with VMM. Use the following list to evaluate your own environment:
@@ -62,11 +65,11 @@ In a failover cluster for iSCSI Target Server, you must register the storage dev
 
 ### Object mappings
 
-1.  MaskingSet maps to the iSCSI Target objectâ€”By default, the friendly name of a MaskingSet object uses the prefix string "SPC:" + 16-bit random. We recommend using a friendly name when you create the MaskingSet object. VMM uses either the host name or cluster name as the friendly name. The SMI-S provider uses the friendly name, which also becomes the **Description** property of the WT_Host object for iSCSI Target Server.
+1.  MaskingSet maps to the iSCSI Target object—By default, the friendly name of a MaskingSet object uses the prefix string "SPC:" + 16-bit random. We recommend using a friendly name when you create the MaskingSet object. VMM uses either the host name or cluster name as the friendly name. The SMI-S provider uses the friendly name, which also becomes the **Description** property of the WT_Host object for iSCSI Target Server.
 
 2.  StorageVolume maps to WT_Disk, the virtual hard disk (VHD).  When a user creates an iSCSI disk by using VMM, the SMI-S provider uses the friendly name as the VHD name. If the Virtual Disk already exists during SMI-S discovery, the provider uses its description as the friendly name. If the VHD already exists but does not have a description string, that is, the description string is empty or NULL, then the VHD friendly name uses the prefix string "VirtualDiskIndex:" + WTD as the integer of the index.
 
-3.  ConcretePool maps to WT_Volumeâ€”The friendly name that is displayed for the SMI-S provider is: "iSCSITarget: SubsystemName" + first mount point string. For example, if the mount point string is "C:", then its name is "iSCSITarget: SubsystemName: C:". There is a single root pool and its name is fixed as "MS iSCSITarget Primordial".
+3.  ConcretePool maps to WT_Volume—The friendly name that is displayed for the SMI-S provider is: "iSCSITarget: SubsystemName" + first mount point string. For example, if the mount point string is "C:", then its name is "iSCSITarget: SubsystemName: C:". There is a single root pool and its name is fixed as "MS iSCSITarget Primordial".
 
 ## In this section
 For information about using iSCSI Target Server with VMM, see the following topics:
@@ -78,5 +81,6 @@ For information about using iSCSI Target Server with VMM, see the following topi
 ## See Also
 [Managing storage resources and capacity with VMM](Managing-storage-resources-and-capacity-with-VMM.md)
 [Managing fabric resources with VMM](Managing-fabric-resources-with-VMM.md)
+
 
 

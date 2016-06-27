@@ -8,6 +8,9 @@ ms.topic: article
 ms.assetid: 31a0cf55-1141-4db6-9e78-ec51b1279259
 ---
 # How to create a SAN copy-capable template from a new virtual machine
+
+>Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
+
 You can use the procedures in this topic to create a SAN copy-capable template from a new virtual machine in Virtual Machine Manager (VMM). In these procedures, you create a new virtual machine on a logical unit that is assigned to a Hyper-V host, and then create a SAN-copy capable template from the virtual machine on the library server. When you create the template, the logical unit is automatically unregistered from the host and registered to the library server.
 
 ## Prerequisites
@@ -17,11 +20,11 @@ Before you begin these procedures, make sure that the following prerequisites ar
 
 -   You must create a logical unit from the managed storage pool that you want to use for rapid provisioning, and assign it to the host where you want to create the new virtual machine. You must also format the logical unit with NTFS, and assign a drive letter. You can use any of the following methods:
 
-    -   Create and assign the logical unit through the VMM console from the Storage tab in the managed Hyper-V hostâ€™s properties. When you assign the logical unit, you can format and assign a drive letter to the logical unit at the same time. For information about how to create and assign a logical unit to a host through VMM, see [How to configure storage on a Hyper-V host in VMM](How-to-configure-storage-on-a-Hyper-V-host-in-VMM.md).
+    -   Create and assign the logical unit through the VMM console from the Storage tab in the managed Hyper-V host’s properties. When you assign the logical unit, you can format and assign a drive letter to the logical unit at the same time. For information about how to create and assign a logical unit to a host through VMM, see [How to configure storage on a Hyper-V host in VMM](How-to-configure-storage-on-a-Hyper-V-host-in-VMM.md).
 
     -   Create a logical unit from the Storage node in the Fabric workspace. Then, allocate the logical unit to a host group, and assign the logical unit to the host from the managed Hyper-V host. When you assign the logical unit, you can format and assign a drive letter to the logical unit at the same time. For information about how to create a logical unit from the Storage node, see [How to provision storage logical units in VMM](How-to-provision-storage-logical-units-in-VMM.md).
 
-    -   Use your storage array vendorâ€™s management tools to create and assign the logical unit. You can use Disk Management (Diskmgmt.msc) to format the logical unit and assign a drive letter after the logical unit is assigned to the host.
+    -   Use your storage array vendor’s management tools to create and assign the logical unit. You can use Disk Management (Diskmgmt.msc) to format the logical unit and assign a drive letter after the logical unit is assigned to the host.
 
     > [!NOTE]
     > In the example scenario, drive L: is used to represent the drive letter that is assigned to the logical unit.
@@ -38,7 +41,7 @@ Before you begin these procedures, make sure that the following prerequisites ar
 
 3.  On the **Select Source** page, click **Create the new virtual machine with a blank virtual hard disk**, and then click **Next**.
 
-4.  On the **Identity** page, enter the virtual machine nameâ€”for example, the name **Rapid Provision Base VM WS12**â€”and an optional description. In the **Generation** box, select **Generation 1** or **Generation 2**. (For more information, see [Understanding generation 1 and generation 2 virtual machines in VMM](Understanding-generation-1-and-generation-2-virtual-machines-in-VMM.md).) Then click **Next**.
+4.  On the **Identity** page, enter the virtual machine name—for example, the name **Rapid Provision Base VM WS12**—and an optional description. In the **Generation** box, select **Generation 1** or **Generation 2**. (For more information, see [Understanding generation 1 and generation 2 virtual machines in VMM](Understanding-generation-1-and-generation-2-virtual-machines-in-VMM.md).) Then click **Next**.
 
 5.  On the **Configure Hardware** page, configure the desired hardware settings for the virtual machine, and then click **Next**.
 
@@ -123,4 +126,5 @@ Before you begin these procedures, make sure that the following prerequisites ar
 
     > [!TIP]
     > To add the SAN Copy Capable column to the Templates pane, right-click the column header, and then click **SAN Copy Capable**.
+
 

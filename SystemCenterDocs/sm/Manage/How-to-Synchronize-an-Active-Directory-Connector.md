@@ -11,6 +11,9 @@ ms.topic: article
 ms.assetid: d4938b79-f8ff-4c8f-85da-beebb9d44fb2
 ---
 # How to Synchronize an Active Directory Connector
+
+>Applies To: System Center 2016 Technical Preview - Service Manager
+
 To ensure that the Service Manager database is up to date, the Active Directory connector synchronizes with Active Directory Domain Services (AD DS) every hour after the initial synchronization. However, you can use the following procedure to manually synchronize the connector and validate that it is synchronized.
 
 ### To manually synchronize an Active Directory connector
@@ -37,5 +40,6 @@ To ensure that the Service Manager database is up to date, the Active Directory 
 4.  In the Service Manager console, click **Configuration Items**.
 
 5.  In the **Configuration Items** pane, click **Users**. Verify that any new users and groups in AD DS appear in the middle pane.
+
 
 

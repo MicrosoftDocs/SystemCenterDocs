@@ -8,6 +8,9 @@ ms.topic: article
 ms.assetid: 977826e7-4a33-4dba-8666-6b66bc751280
 ---
 # How to create and assign a servicing window in VMM
+
+>Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
+
 Servicing windows provide a method for scheduling servicing outside Virtual Machine Manager (VMM). In VMM, you can associate a servicing window with individual hosts, virtual machines, or services. Before using other applications to schedule maintenance tasks, you can use Windows PowerShell scripts or custom applications to query the object and determines if it is currently in a servicing window. Servicing windows do not interfere with the regular use and functionality of VMM.
 
 ### To create a servicing window
@@ -68,5 +71,6 @@ Use the following procedure to add a servicing window to a host. You can perform
 [Managing fabric updates in VMM](Managing-fabric-updates-in-VMM.md)
 [Maintaining resources with VMM](Maintaining-resources-with-VMM.md)
 [Managing fabric resources with VMM](Managing-fabric-resources-with-VMM.md)
+
 
 

@@ -11,6 +11,9 @@ ms.topic: article
 ms.assetid: 0a3df7b4-885e-4e80-b6b7-960ba5c5a774
 ---
 # Deploying System Center 2016 - Operations Manager
+
+>Applies To: System Center 2016 Technical Preview - Operations Manager
+
 All System Center 2016 Technical Preview - Operations Manager individual management group deployments will either be an "all-in-one" installation, where all features are loaded on a single server, or a distributed installation. Installations can then be combined together to form an overall Operations Manager infrastructure that consists of multiple management groups. These management groups can then relate to each other as your business needs dictate.
 
 This section of the Deployment Guide describes an individual management group deployment, where you have one management group, but the features of Operations Manager are either installed on a single server or distributed over several servers.
@@ -74,5 +77,6 @@ You can accept the default values for or set:
 > If TCP/IP is disabled on a remote server that is hosting the SQL Server database, Setup will not be able to connect to the SQL Server database. To resolve this issue, enable TCP/IP on the remote server.
 
 Ensure that SQL Server Reporting Services has been correctly installed and configured. For more information about how to install and configure SQL Server 2012 Reporting Services, see [SQL Server Installation (SQL Server 2008 R2)](http://go.microsoft.com/fwlink/p/?LinkId=146943).
+
 
 

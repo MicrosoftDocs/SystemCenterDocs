@@ -11,6 +11,9 @@ ms.topic: article
 ms.assetid: fce15bac-7039-4e65-a707-de7cbed0697a
 ---
 # How to Edit a Calendar Item
+
+>Applies To: System Center 2016 Technical Preview - Service Manager
+
 You edit a calendar item in Service Manager to update work days, work hours, and holidays. After you edit a calendar item, you will use it as part of a service level objective, where it is measured against a time metric. If the calendar is already associated with a service level objective, it appears in the **Related SLA(s)** area.
 
 > [!NOTE]
@@ -35,5 +38,6 @@ You edit a calendar item in Service Manager to update work days, work hours, and
     -   **Holidays**
 
 5.  Click **OK** to close the **Create/Edit Calendar** dialog box.
+
 
 

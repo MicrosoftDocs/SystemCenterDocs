@@ -8,6 +8,9 @@ ms.topic: article
 ms.assetid: 44b64f8d-5590-4e04-a469-905c39ca771a
 ---
 # How to discover and classify Virtual Fibre Channel Fabrics with VMM
+
+>Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
+
 You can discover and add Virtual Fibre Channel storage fabrics to manage in Virtual Machine Manager (VMM) for System Center 2016 Technical Preview. You can also assign classifications to the added fabrics.
 
 Before you begin, verify the following prerequisites:
@@ -62,5 +65,6 @@ Before you begin, verify the following prerequisites:
 [Managing Virtual Fibre Channel fabrics with VMM](Managing-Virtual-Fibre-Channel-fabrics-with-VMM.md)
 [Managing storage resources and capacity with VMM](Managing-storage-resources-and-capacity-with-VMM.md)
 [Managing fabric resources with VMM](Managing-fabric-resources-with-VMM.md)
+
 
 

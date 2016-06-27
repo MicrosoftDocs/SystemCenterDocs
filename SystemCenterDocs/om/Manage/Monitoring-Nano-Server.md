@@ -11,7 +11,10 @@ ms.topic: article
 ms.assetid: 3b1e34e3-7a86-42f3-acc6-363fc00b0e62
 ---
 # Monitoring Nano Server
-Windows Server 2016 Technical Preview Nano Server is a new installation option introduced in Windows ServerÂ® Technical Preview. Nano Server is optimized for private cloud and datacenter operations. With System Center 2016 Technical Preview - Operations Manager you can now monitor Nano Server by installing the Operations Manager agent.
+
+>Applies To: System Center 2016 Technical Preview - Operations Manager
+
+Windows Server 2016 Technical Preview Nano Server is a new installation option introduced in Windows Server® Technical Preview. Nano Server is optimized for private cloud and datacenter operations. With System Center 2016 Technical Preview - Operations Manager you can now monitor Nano Server by installing the Operations Manager agent.
 
 ## Nano Server monitoring capabilities
 With the release of Nano Server you can  monitor the basic operations of the Server by using the Windows Server Operating System Management Pack. You can also monitor a Nano Server running the following workloads:
@@ -135,5 +138,6 @@ Use the following procedure to install the agent with a PowerShell script.
 
     > [!NOTE]
     > You can  validate that the Operations Manager agent has been removed by checking that the uninstalllog.txt file in the \NanoAgent\NanoServer folder does not contain any errors and that  you see the message "Successfully un-installed the agent from Nano Server" in the log file.
+
 
 

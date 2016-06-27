@@ -11,11 +11,14 @@ ms.topic: article
 ms.assetid: 98626f09-e4b1-4cbb-9195-651d54e118d1
 ---
 # Back up file data with DPM
+
+>Applies To: System Center 2016 Technical Preview - Data Protection Manager
+
 You can back up file data on server and client computers.
 
 ## Before you start
 
-1.  **Deploy DPM**â€”Verify that DPM is installed and deployed correctly. If you havenâ€™t see:
+1.  **Deploy DPM**—Verify that DPM is installed and deployed correctly. If you haven’t see:
 
     -   System requirements for DPM
 
@@ -25,9 +28,9 @@ You can back up file data on server and client computers.
 
     -   [Get DPM installed](../get-started/Get-DPM-installed.md)
 
-2.  **Set up storage**â€”You can store backed up data on disk, on tape, and in the cloud with Azure. Read more in [Prepare data storage](../get-started/Prepare-data-storage.md).
+2.  **Set up storage**—You can store backed up data on disk, on tape, and in the cloud with Azure. Read more in [Prepare data storage](../get-started/Prepare-data-storage.md).
 
-3.  **Set up the DPM protection agent**â€”You'll need to install the DPM protection agent on every machine you want to back up. Read [Deploy the DPM protection agent](Deploy-the-DPM-protection-agent.md).
+3.  **Set up the DPM protection agent**—You'll need to install the DPM protection agent on every machine you want to back up. Read [Deploy the DPM protection agent](Deploy-the-DPM-protection-agent.md).
 
 ## Back up file data
 After you have your DPM infrastructure set up you can enable protection machines that have file data you want to back up.
@@ -44,11 +47,11 @@ After you have your DPM infrastructure set up you can enable protection machines
 
 6.  If you want to store data on tape for long-term storage in **Specify long-term goals** indicate how long you want to keep tape data (1-99 years). In Frequency of backup specify how often backups to tape should run. The frequency is based on the retention range you've specified:
 
-    -   When the retention range is 1â€“99 years, you can select backups to occur daily, weekly, bi-weekly, monthly, quarterly, half-yearly, or yearly.
+    -   When the retention range is 1–99 years, you can select backups to occur daily, weekly, bi-weekly, monthly, quarterly, half-yearly, or yearly.
 
-    -   When the retention range is 1â€“11 months, you can select backups to occur daily, weekly, bi-weekly, or monthly.
+    -   When the retention range is 1–11 months, you can select backups to occur daily, weekly, bi-weekly, or monthly.
 
-    -   When the retention range is 1â€“4 weeks, you can select backups to occur daily or weekly.
+    -   When the retention range is 1–4 weeks, you can select backups to occur daily or weekly.
 
     On a stand-alone tape drive, for a single protection group, DPM uses the same tape for daily backups until there is insufficient space on the tape. You can also colocate data from different protection groups on tape.
 
@@ -58,7 +61,7 @@ After you have your DPM infrastructure set up you can enable protection machines
 
 8.  In **Choose replica creation method** select how you want to handle the initial full data replication.  If you select to replicate over the network we recommended you choose an off-peak time. For large amounts of data or less than optimal network conditions, consider replicating the data offline using removable media.
 
-9. In **Choose consistency check options**, select how you want to automate consistency checks. You can enable a check to run only when replica data becomes inconsistent, or according to a schedule. If you donâ€™t want to configure automatic consistency checking, you can run a manual check at any time by right-clicking the protection group in the **Protection** area of the DPM console, and selecting **Perform Consistency Check**.
+9. In **Choose consistency check options**, select how you want to automate consistency checks. You can enable a check to run only when replica data becomes inconsistent, or according to a schedule. If you don’t want to configure automatic consistency checking, you can run a manual check at any time by right-clicking the protection group in the **Protection** area of the DPM console, and selecting **Perform Consistency Check**.
 
 10. If you've selected to back up to the cloud with Azure Backup, on the **Specify online protection data** page make sure the workloads you want to back up to Azure are selected.
 
@@ -115,5 +118,6 @@ If end-user recovery is enabled then users should recover data as follows:
 1.  Navigate to the protected data file. Right-click the file name > **Properties**.
 
 2.  In **Properties** > **Previous Versions** select the version that you want to recover from.
+
 
 

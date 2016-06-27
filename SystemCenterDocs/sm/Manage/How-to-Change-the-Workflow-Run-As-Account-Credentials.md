@@ -11,6 +11,9 @@ ms.topic: article
 ms.assetid: a3b4abd2-a00d-47d8-a578-c54fb32eda21
 ---
 # How to Change the Workflow Run As Account Credentials
+
+>Applies To: System Center 2016 Technical Preview - Service Manager
+
 During setup, you defined the account to be assigned to the Service Manager Workflow Run As account. If the password for that account changes, you must update the Workflow Run As account with the new password. If you want to change the account for the Service Manager Workflow Run As account, you must change both the Workflow Run As account and the Workflow User Role.
 
 Use the following procedures to define a new user account for the Workflow Run As account and to update a new password for the existing account.
@@ -51,5 +54,6 @@ Use the following procedures to define a new user account for the Workflow Run A
 4.  In the **Tasks** pane, click **Properties**.
 
 5.  In the **Workflow Account** page, in the **Password** box, type the new password for the Workflow Run As account, and then click **OK**.
+
 
 

@@ -11,6 +11,9 @@ ms.topic: article
 ms.assetid: 75b94d49-c630-4096-8130-201dc0e04aca
 ---
 # Manually Uninstalling Agents from UNIX and Linux Computers
+
+>Applies To: System Center 2016 Technical Preview - Operations Manager
+
 There are three ways to uninstall the UNIX and Linux management packs and agents.
 
 1.  Delete selected UNIX or Linux system management packs from the Operations Manager Operations Console.
@@ -31,31 +34,31 @@ After the UNIX or Linux computer has been deleted from the list of monitored com
 
 1.  Log on as the root user, and uninstall the agent by typing
 
-    **rpm â€“e scx**
+    **rpm –e scx**
 
 2.  To verify that the package is uninstalled, type
 
-    **rpm â€“q scx**
+    **rpm –q scx**
 
 ### To uninstall the agent from RPM based Universal Linux servers (Oracle and Centos)
 
 1.  Log on as the root user, and uninstall the agent by typing
 
-    **rpm â€“e scx**
+    **rpm –e scx**
 
 2.  To verify that the package is uninstalled, type
 
-    **rpm â€“q scx**
+    **rpm –q scx**
 
 ### To uninstall the agent from DEB based Universal Linux servers (Debian and Ubuntu)
 
 1.  Log on as the root user, and uninstall the agent by typing
 
-    **dpkg â€“P scx**
+    **dpkg –P scx**
 
 2.  To verify that the package is uninstalled, type
 
-    **dpkg â€“l scx**
+    **dpkg –l scx**
 
 ### To uninstall the agent from Solaris computers
 
@@ -65,7 +68,7 @@ After the UNIX or Linux computer has been deleted from the list of monitored com
 
 2.  To verify that the package is uninstalled, type
 
-    **pkginfo â€“I MSFTscx**
+    **pkginfo –I MSFTscx**
 
 ### To uninstall the agent from HP-UX
 
@@ -81,11 +84,11 @@ After the UNIX or Linux computer has been deleted from the list of monitored com
 
 1.  Log on as the root user, and uninstall the agent by typing
 
-    **installp â€“u scx**
+    **installp –u scx**
 
 2.  To verify that the package is uninstalled, type
 
-    **lslpp â€“L scx.rte**
+    **lslpp –L scx.rte**
 
 ## See Also
 [Operations Manager Agent Installation Methods](Operations-Manager-Agent-Installation-Methods.md)
@@ -101,5 +104,6 @@ After the UNIX or Linux computer has been deleted from the list of monitored com
 [Upgrading and Uninstalling Agents on UNIX and Linux Computers](Upgrading-and-Uninstalling-Agents-on-UNIX-and-Linux-Computers.md)
 [Install Agent Using the Command Line](Install-Agent-Using-the-Command-Line.md)
 [Uninstall Agent from Windows-based Computers](Uninstall-Agent-from-Windows-based-Computers.md)
+
 
 

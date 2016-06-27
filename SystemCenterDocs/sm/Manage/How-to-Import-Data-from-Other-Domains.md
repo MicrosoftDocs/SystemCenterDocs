@@ -11,6 +11,9 @@ ms.topic: article
 ms.assetid: c5a328de-e3c2-44ce-ba4c-c5447c1cb9f9
 ---
 # How to Import Data from Other Domains
+
+>Applies To: System Center 2016 Technical Preview - Service Manager
+
 You can import data from domains other than the domain in which Service Manager resides. For example, Service Manager is installed in domain A (where the fully qualified domain name [FQDN] is a.woodgrove.com), and you want to import data from domain B (where the FQDN is b.woodgrovetest.net). In this scenario, you must think about how to specify the data source path and how to specify the Run As account.
 
 In domain B, either identify an existing service account or create a new one for this purpose. This service account must be a domain account and must be able to read from Active Directory Domain Services.
@@ -31,5 +34,6 @@ Next, in Service Manager, create a new Active Directory connector in the Active 
 
     > [!NOTE]
     > If the two domains are in different forests, you must type the domain name in the **User name** box. For example, type **b.woodgrovetest.net\\<user name\>**.
+
 
 

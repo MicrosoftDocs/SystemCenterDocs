@@ -11,6 +11,9 @@ ms.topic: article
 ms.assetid: 4d0d4e7e-e1c4-413b-b5fd-2404973fe026
 ---
 # How to Create Change Request Templates
+
+>Applies To: System Center 2016 Technical Preview - Service Manager
+
 Use the following procedures to create two change request templates and then validate them. The first template is used to create change requests to modify Microsoft Exchange Server infrastructure. The second template is used to automatically change the priority of a standard change request to **Low**. For more information about how to use the second template after you create it, see [How to Configure Change Management Workflows](How-to-Configure-Change-Management-Workflows.md).
 
 Change request templates store commonly used settings and apply the information to new change requests. For example, you can create a change request template that includes a number of activities. However, activities that you want to include in a change request template must have been previously created as activity templates.
@@ -85,5 +88,6 @@ Change request templates store commonly used settings and apply the information 
 ### To validate template creation
 
 -   Verify that the new templates were created. For example, verify that **Changes to Messaging Infrastructure Template** and **Set Standard Change Requests to Low Priority** appear in the **Templates** view. You might have to press F5 to make the new change templates appear.
+
 
 

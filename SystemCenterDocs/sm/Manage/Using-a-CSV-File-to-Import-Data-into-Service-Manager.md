@@ -11,6 +11,9 @@ ms.topic: article
 ms.assetid: d968e937-59c1-4a9a-8786-8ff0bbf62db0
 ---
 # Using a CSV File to Import Data into Service Manager
+
+>Applies To: System Center 2016 Technical Preview - Service Manager
+
 This section provides an overview and procedures for importing data and configuration items into Service Manager by using comma-separated value (CSV) files.
 
 ## Using a CSV File to Import Data Topics
@@ -22,5 +25,6 @@ This section provides an overview and procedures for importing data and configur
 -   [How to Import Configuration Items from a CSV File](How-to-Import-Configuration-Items-from-a-CSV-File.md)
 
     Describes how to import data items contained in a CSV file.
+
 
 

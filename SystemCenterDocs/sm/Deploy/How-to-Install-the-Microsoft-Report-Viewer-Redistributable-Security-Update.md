@@ -11,6 +11,9 @@ ms.topic: article
 ms.assetid: 8ac05138-86a7-4a1d-bd59-b55a49d3ec0d
 ---
 # How to Install the Microsoft Report Viewer Redistributable Security Update
+
+>Applies To: System Center 2016 Technical Preview - Service Manager
+
 You can use the following procedure to install the Microsoft Report Viewer Redistributable security update for a deployment of System Center 2016 Technical Preview - Service Manager.
 
 > [!NOTE]
@@ -29,5 +32,6 @@ You can use the following procedure to install the Microsoft Report Viewer Redis
 5.  On the **License Terms** page, read the Microsoft Software License Terms, and, if applicable, click **I have read and accept the license terms**, and then click **Install**.
 
 6.  On the **Setup Complete** page, click **Finish**.
+
 
 

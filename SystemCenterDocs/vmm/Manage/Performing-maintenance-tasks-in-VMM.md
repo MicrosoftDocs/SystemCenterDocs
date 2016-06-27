@@ -8,6 +8,9 @@ ms.topic: article
 ms.assetid: 91cc4d84-7189-436b-a846-a16d8c96a76d
 ---
 # Performing maintenance tasks in VMM
+
+>Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
+
 The procedures in this section describe how to perform common maintenance tasks in Virtual Machine Manager (VMM).
 
 -   [How to create and assign a servicing window in VMM](How-to-create-and-assign-a-servicing-window-in-VMM.md)
@@ -21,5 +24,6 @@ The procedures in this section describe how to perform common maintenance tasks 
 -   [Back up and restore VMM](Back-up-and-restore-VMM.md)
 
     Describes how to backup and restore the VMM environment.
+
 
 

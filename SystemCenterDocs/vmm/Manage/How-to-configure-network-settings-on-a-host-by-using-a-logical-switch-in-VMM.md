@@ -11,6 +11,9 @@ ms.topic: article
 ms.assetid: 06b231a6-4587-4e91-887e-583c0f1e380a
 ---
 # How to configure network settings on a host by using a logical switch in VMM
+
+>Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
+
 With Virtual Machine Manager (VMM), you can configure network adapters on Hyper-V hosts by applying the settings in a logical switch to the adapters. The network adapters that you configure can be physical network adapters or virtual network adapters on the hosts.
 
 For other ways of configuring network adapters on a host, see the links at the end of this topic.
@@ -85,7 +88,7 @@ The following tips may also be useful:
 > **Network optimizations**: VMM can detect whether the operating system on your host provides the network optimizations called Virtual Machine Queue (VMQ) or TCP Chimney Offload. If VMM detects either of them, it displays a message saying **Network optimization is available**. Look for the message in the **Host Properties** dialog box, on the **Virtual Switches** tab.
 
 > [!TIP]
-> **Compliance of network settings**: If you're using logical switches, you can later check to see if the network adapter settings on a host are still in compliance with the logical switch settings. If theyâ€™re not, you can use VMM to bring them back into compliance. For more information, see [How to bring host network adapters into compliance with logical switch settings in VMM](How-to-bring-host-network-adapters-into-compliance-with-logical-switch-settings-in-VMM.md).
+> **Compliance of network settings**: If you're using logical switches, you can later check to see if the network adapter settings on a host are still in compliance with the logical switch settings. If they’re not, you can use VMM to bring them back into compliance. For more information, see [How to bring host network adapters into compliance with logical switch settings in VMM](How-to-bring-host-network-adapters-into-compliance-with-logical-switch-settings-in-VMM.md).
 
 ## See Also
 [How to configure network settings on a Hyper-V host in VMM](How-to-configure-network-settings-on-a-Hyper-V-host-in-VMM.md)
@@ -94,5 +97,6 @@ The following tips may also be useful:
 [Bare Metal Deploy through VMM PowerShell (Part 1)](http://blogs.technet.com/b/privatecloud/archive/2013/02/22/bare-metal-deploy-through-vmm-powershell-part-1.aspx)
 [Bare Metal Deploy through VMM PowerShell (Part 2)](http://blogs.technet.com/b/privatecloud/archive/2013/03/04/bare-metal-deploy-through-vmm-powershell-part-2.aspx)
 [Hyper-V Host Network Settings through VMM PowerShell (Part 3)](http://blogs.technet.com/b/privatecloud/archive/2013/05/20/hyper-v-host-network-settings-through-vmm-powershell-part-3.aspx)
+
 
 

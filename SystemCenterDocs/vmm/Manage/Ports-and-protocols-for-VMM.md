@@ -8,6 +8,9 @@ ms.topic: article
 ms.assetid: 6a33f439-9e47-443d-b36c-359986260df9
 ---
 # Ports and protocols for VMM
+
+>Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
+
 When you install the Virtual Machine Manager (VMM) management server, you can assign some of the ports that it will use for communications and file transfers between various VMM components and other devices. While it is a best security practice to change the default ports, not all of the ports can be changed through VMM. The default settings for the ports are listed in the following tables.
 
 ## VMM management server - source
@@ -64,5 +67,6 @@ The following miscellaneous ports are also used:
 
 ## See Also
 [Securing VMM resources](Securing-VMM-resources.md)
+
 
 

@@ -12,6 +12,9 @@ ms.assetid: 5cf979fe-a901-4936-a348-ae1fd3b34c7b
 ---
 # Glossary for System Center Technical Preview - Virtual Machine Manager
 
+>Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
+
+
 
 |Term|Definition|
 |--------|--------------|
@@ -46,5 +49,6 @@ ms.assetid: 5cf979fe-a901-4936-a348-ae1fd3b34c7b
 
 ## See Also
 [Getting Started with System Center Technical Preview - Virtual Machine Manager](Getting-Started-with-System-Center-Technical-Preview---Virtual-Machine-Manager.md)
+
 
 

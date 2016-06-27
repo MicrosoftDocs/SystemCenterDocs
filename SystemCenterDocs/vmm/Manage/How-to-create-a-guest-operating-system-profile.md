@@ -8,6 +8,9 @@ ms.topic: article
 ms.assetid: 9649115e-b018-4a4e-8eb5-e411733d8fae
 ---
 # How to create a guest operating system profile
+
+>Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
+
 You can use the following procedure to create a guest operating system profile in Virtual Machine Manager (VMM). A guest operating system profile specifies the operating system settings that you want the virtual machine to use when the virtual machine is created and deployed.
 
 ### To create a guest operating system profile
@@ -50,7 +53,7 @@ You can use the following procedure to create a guest operating system profile i
 
     -   **RunOnce commands**
 
-        This setting applies only to Linux-based profiles. These commands run in the specified order during deployment after the operating system has been configured. If shell conventions such as pipes are used, we recommend wrapping each command with an explicit invocation of the shell, for example, `/bin/sh ‚Äìc ‚Äú<your command>‚Äù`. In this example, double quotes in the command must be escaped.
+        This setting applies only to Linux-based profiles. These commands run in the specified order during deployment after the operating system has been configured. If shell conventions such as pipes are used, we recommend wrapping each command with an explicit invocation of the shell, for example, `/bin/sh ñc ì<your command>î`. In this example, double quotes in the command must be escaped.
 
     -   **Public SSH key**
 
@@ -66,5 +69,6 @@ You can use the following procedure to create a guest operating system profile i
 [Creating profiles and templates in VMM](Creating-profiles-and-templates-in-VMM.md)
 [Managing the VMM library and its resources](Managing-the-VMM-library-and-its-resources.md)
 [Managing fabric resources with VMM](Managing-fabric-resources-with-VMM.md)
+
 
 

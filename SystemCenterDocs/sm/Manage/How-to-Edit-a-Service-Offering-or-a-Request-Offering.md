@@ -11,6 +11,9 @@ ms.topic: article
 ms.assetid: fd49432f-f22c-4366-8cfd-16d301a6a46c
 ---
 # How to Edit a Service Offering or a Request Offering
+
+>Applies To: System Center 2016 Technical Preview - Service Manager
+
 Request offerings are catalog items that describe the item, assistance, or action that is available to end users in the service catalog. Request offerings are normally placed in logical groups of service offerings. Both service offerings and their request offerings are available to Self-Service Portal users, when the status of the offerings is set to Published and if end users have been assigned a corresponding Service Manager user role. Only users that have been assigned a user role that is associated with a catalog group that contains catalog items can use the Self-Service Portal to access the service catalog.
 
 You can use the following procedures to edit a service offering or a request offering.
@@ -67,7 +70,7 @@ You can use the following procedures to edit a service offering or a request off
 
 8.  On the **Map Prompts** page, associate prompts with various fields of a service request or its activities, depending on the complexity of the form and the extension of the class that you have made. Complete the following steps to associate a justification with the review activity:
 
-    1.  Select **Approval for the user requesting membership to the Active Directory group â€“ (Review Activity)**.
+    1.  Select **Approval for the user requesting membership to the Active Directory group – (Review Activity)**.
 
     2.  Next to **Description**, select the box under **Prompt Output**, and then in the list, select **3**. Enter your justification: .
 
@@ -120,5 +123,6 @@ You can use the following procedures to edit a service offering or a request off
 10. On the  **Publish** page in the **Offering status** list, select **Published**, and then set the **Offering owner** to yourself.
 
 11. Click **OK** to close the **Edit Service Offering** form.
+
 
 

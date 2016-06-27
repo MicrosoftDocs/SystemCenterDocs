@@ -8,7 +8,10 @@ ms.topic: article
 ms.assetid: 1723599e-af0e-4f7d-a932-9f23d493a9ff
 ---
 # Understanding generation 1 and generation 2 virtual machines in VMM
-In Virtual Machine Manager (VMM), on a host running Windows Server 2012 R2 or Windows Server Technical Preview, you can create and manage two types of virtual machines. The two types include the newer type supported in Hyper-V as of Windows Server 2012 R2, called â€œgeneration 2 virtual machines.â€ Before generation 2 virtual machines existed, virtual machines were all of one type, which are now referred to as â€œgeneration 1 virtual machines.â€ For more information, see [Generation 2 Virtual Machine Overview](http://technet.microsoft.com/library/dn282285.aspx).
+
+>Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
+
+In Virtual Machine Manager (VMM), on a host running Windows Server 2012 R2 or Windows Server Technical Preview, you can create and manage two types of virtual machines. The two types include the newer type supported in Hyper-V as of Windows Server 2012 R2, called “generation 2 virtual machines.” Before generation 2 virtual machines existed, virtual machines were all of one type, which are now referred to as “generation 1 virtual machines.” For more information, see [Generation 2 Virtual Machine Overview](http://technet.microsoft.com/library/dn282285.aspx).
 
 A virtual machine must be either a generation 1 virtual machine or a generation 2 virtual machine.  In VMM, you can use the wizards and property sheets to choose options for either a generation 1 virtual machine or a generation 2 virtual machine, but not both together.
 
@@ -34,12 +37,12 @@ Because of underlying differences between generation 1 and generation 2 virtual 
 
 -   **Customizing the startup order for generation 2 virtual machines**
 
-    To customize the first boot device for generation 2 virtual machines, you must use Windows PowerShell commands with the **FirstBootDevice** parameter. By default, the first boot device is set to a virtual hard diskâ€”either the virtual hard disk marked as **Contains the operating system for the virtual machine**, or the only virtual hard disk, if the virtual machine has only one.
+    To customize the first boot device for generation 2 virtual machines, you must use Windows PowerShell commands with the **FirstBootDevice** parameter. By default, the first boot device is set to a virtual hard disk—either the virtual hard disk marked as **Contains the operating system for the virtual machine**, or the only virtual hard disk, if the virtual machine has only one.
 
     The **FirstBootDevice** parameter is described in more detail in TechNet topics for cmdlets, such as [Set-SCVirtualMachine](http://technet.microsoft.com/library/jj654500.aspx), [Set-SCVMTemplate](http://technet.microsoft.com/library/jj654252.aspx), or [Set-SCHardwareProfile](http://technet.microsoft.com/library/jj647740.aspx). For example, you could run the following command to configure an existing virtual machine template called **Generation2template** so that the first boot device is the first network adapter. This command is based on the assumption that the network adapter supports the Pre-Boot Execution Environment (PXE):
 
     ```
-    Set-SCVMTemplate -Template "Generation2template" â€“FirstBootDevice "NIC,0"
+    Set-SCVMTemplate -Template "Generation2template" –FirstBootDevice "NIC,0"
     ```
 
 ## <a name="BKMK_Specgen"></a>Creating a virtual machine or virtual machine template and specifying the generation
@@ -60,6 +63,7 @@ When you use a VMM wizard to create a new virtual machine or virtual machine tem
 After the generation has been determined for a hardware profile, virtual machine, or virtual machine template, as you progress through a wizard, the capabilities that do not apply to that generation are either absent or they appear dimmed. For example, if you select **Generation 1** on the **Identity** page, when you advance to the **Configure Hardware** page, under **Bus Configuration**, **IDE Devices** appears. IDE devices are found only in generation 1 virtual machines. In contrast, if you select **Generation 2** on the **Identity** page, when you advance to the **Configure Hardware** page, under **Bus Configuration**, **IDE Devices** does not appear. Instead, for the **SCSI Adapters** that appear, attached devices are shown, which reflects the unique capability in generation 2 virtual machines to boot from a SCSI-attached virtual hard disk.
 
 Similarly, with a Windows PowerShell command, if you try to combine the unique capabilities of both generations into one virtual machine or virtual machine template, the command does not succeed, and an error message is displayed. Also, if you try to modify an existing virtual machine or virtual machine template by adding options from the other generation, the command does not succeed, and an error message is displayed. For more information about the unique capabilities in generation 2 virtual machines, see [Generation 2 Virtual Machine Overview](http://technet.microsoft.com/library/dn282285.aspx).
+
 
 
 

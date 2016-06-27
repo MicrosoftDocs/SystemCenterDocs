@@ -11,6 +11,9 @@ ms.topic: article
 ms.assetid: 80835c9e-8753-4919-897f-f115c4d3a535
 ---
 # How to create a physical computer profile to provision hosts or host cluster nodes from bare metal in VMM
+
+>Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
+
 In Virtual Machine Manager (VMM), you can use physical computer profiles to provision bare-metal computers into Hyper-V hosts or host cluster nodes.
 
 Before you begin this procedure, be sure to review the prerequisites for the profile in [Prerequisites: creating hosts or host clusters from bare metal with VMM](Prerequisites--creating-hosts-or-host-clusters-from-bare-metal-with-VMM.md).
@@ -77,5 +80,6 @@ Before you begin this procedure, be sure to review the prerequisites for the pro
 [Deploying Scale-Out File Servers from bare metal with VMM](Deploying-Scale-Out-File-Servers-from-bare-metal-with-VMM.md)
 [Managing infrastructure resources with VMM](Managing-infrastructure-resources-with-VMM.md)
 [Managing fabric resources with VMM](Managing-fabric-resources-with-VMM.md)
+
 
 

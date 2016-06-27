@@ -11,6 +11,9 @@ ms.topic: article
 ms.assetid: 33f8fa88-fad7-4354-bf6b-dbed1658ff0f
 ---
 # Importing Runbooks from System Center Orchestrator
+
+>Applies To: System Center 2016 Technical Preview - Service Manager
+
 Service Manager integrates with Orchestrator, providing the capability to synchronously invoke runbooks from within Service Manager through the use of workflows. This capability provides integration between Orchestrator automation capabilities with the Self-Service Portal, as well as business modeling capabilities. When this capability is combined with the Service Manager Service Catalog stack, it is possible to create an end-user-facing request offering with an Orchestrator runbook as part of the fulfillment process.
 
 Activities that make up a service request can be mapped to runbook activities, which in turn are mapped to an Orchestrator runbook. For example, the parameters that are necessary for a custom start activity to invoke a runbook in Orchestrator, such as a computer name, can go into as Service Manager as objects. You start this process by importing runbook objects into the Service Manager database using an Orchestrator connector. After you import runbooks into Service Manager, they appear in the **Library** node in the Administration workspace.
@@ -47,7 +50,7 @@ You can use the following procedures to create a connector for System Center 201
             > [!NOTE]
             > Special characters (such as the ampersand [&]) in the **User Name** box are not supported.
 
-        2.  In the **Test Connection** dialog box, make sure that the message ‚ÄúThe connection to the server was successful‚Äù appears, and then click **OK**. On the **Connection** page, click **Next**.
+        2.  In the **Test Connection** dialog box, make sure that the message ìThe connection to the server was successfulî appears, and then click **OK**. On the **Connection** page, click **Next**.
 
     5.  On the **Folder** page, select a folder, and then click **Next**.
 
@@ -55,7 +58,7 @@ You can use the following procedures to create a connector for System Center 201
 
     7.  On the **Summary** page, make sure that the settings are correct, and then click **Create**.
 
-    8.  On the **Completion** page, make sure that you receive the message ‚ÄúOrchestrator connector successfully created,‚Äù and then click **Close**.
+    8.  On the **Completion** page, make sure that you receive the message ìOrchestrator connector successfully created,î and then click **Close**.
 
 ### To validate the creation of an Orchestrator connector
 
@@ -129,5 +132,6 @@ You can use the following procedures to disable or enable an Orchestrator connec
 ### To validate the status change of an Orchestrator connector
 
 - In the middle pane, locate the connector for which you have changed status, and then verify the value in the **Enabled** column.
+
 
 

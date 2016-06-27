@@ -11,6 +11,9 @@ ms.topic: article
 ms.assetid: 98af143b-a337-440a-93e6-52f6857a74ef
 ---
 # How to Create Notification Templates
+
+>Applies To: System Center 2016 Technical Preview - Service Manager
+
 You can use the following procedures to create notification templates for many types of information records or work items that Service Manager records or keeps track of, such as incidents, change requests, activities, release records, and configuration items. After you create the notification templates, you can use a notification subscription to send email messages based on the templates. The notification template determines the type and format of the messages to send.
 
 > [!NOTE]
@@ -124,5 +127,6 @@ The following two templates are prerequisites for other procedures:
 -   For information about how to use Windows PowerShell to update properties of an Email template, see [Update-SCSMEmailtemplate](http://go.microsoft.com/fwlink/p/?LinkID=225384).
 
 -   For information about how to use Windows PowerShell to remove an Email template from Service Manager, see [Remove-SCSMEmailTemplate](http://go.microsoft.com/fwlink/p/?LinkId=246064).
+
 
 

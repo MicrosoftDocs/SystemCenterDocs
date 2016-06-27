@@ -11,6 +11,9 @@ ms.topic: article
 ms.assetid: 6008c780-2df9-4f93-8912-f5d641812c80
 ---
 # Install the Agent Using the Command Line
+
+>Applies To: System Center 2016 Technical Preview - Operations Manager
+
 You can use MOMAgent.msi to deploy System Center 2016 Technical Preview - Operations Manager agents from the command line. Deploying agents from the command line is also referred to as a manual install.
 
 Before you begin deployment, ensure the following conditions have been met:
@@ -52,8 +55,8 @@ Use the following procedure to deploy an agent.
     |MANAGEMENT_SERVER_DNS=*MSname*|Specifies the fully qualified domain name for the management server. To use a gateway server, enter the gateway server FQDN as **MANAGEMENT_SERVER_DNS**.|
     |MANAGEMENT_SERVER_AD_NAME=*ADname*|Use this parameter if the computer's DNS and Active Directory names differ to set to the fully qualified Active Directory Domain Services name.|
     |SECURE_PORT=*PortNumber*|Sets the health service port number.|
-    |ENABLE_ERROR_REPORTING={0&#124;1}|Optional parameter. Use this parameter with ‚Äú1‚Äù to opt in to error report forwarding to Microsoft. If you do not include this parameter, the agent installation defaults to ‚Äú0‚Äù, which opts out of error report forwarding.|
-    |QUEUE_ERROR_REPORTS={0&#124;1}|Optional parameter. Use this parameter with ‚Äú1‚Äù to queue error reports or with ‚Äú0‚Äù to send reports immediately. If you do not include this parameter, the agent installation defaults to ‚Äú0‚Äù.|
+    |ENABLE_ERROR_REPORTING={0&#124;1}|Optional parameter. Use this parameter with ì1î to opt in to error report forwarding to Microsoft. If you do not include this parameter, the agent installation defaults to ì0î, which opts out of error report forwarding.|
+    |QUEUE_ERROR_REPORTS={0&#124;1}|Optional parameter. Use this parameter with ì1î to queue error reports or with ì0î to send reports immediately. If you do not include this parameter, the agent installation defaults to ì0î.|
     |INSTALLDIR=*path*|Optional parameter. Use this parameter if you want to install the agent to a folder other than the default installation path. Note that \Agent will be appended to this value.|
     |ACTIONS_USE_COMPUTER_ACCOUNT={0&#124;1}|Indicates whether to use a specified user account (0) or the Local System account (1).|
     |ACTIONSUSER=*UserName*|Sets the Agent Action account to *UserName*. This parameter is required if you specified ACTIONS_USE_COMPUTER_ACCOUNT=0.|
@@ -61,5 +64,6 @@ Use the following procedure to deploy an agent.
     |ACTIONSPASSWORD= *Password*|The password for the user identified with the ACTIONSUSER parameter.|
     |NOAPM=1|Optional parameter. Installs the Operations Manager agent without .NET Application Performance Monitoring. If you are using AVIcode 5.7, NOAPM=1 leaves the AVIcode agent in place. If you are using AVIcode 5.7 and install the Operations Manager agent by using momagent.msi without NOAPM=1, the AVIcode agent will not work correctly and an alert will be generated.|
     |AcceptEndUserLicenseAgreement=1|Used to specify that you accept the End User License Agreement (EULA).|
+
 
 

@@ -11,6 +11,9 @@ ms.topic: article
 ms.assetid: 400997d9-08b8-41aa-8af7-72c462e1ea12
 ---
 # Deploying Hyper-V hosts or host clusters from bare metal with VMM
+
+>Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
+
 As an alternative to adding an existing Hyper-V server or cluster to the VMM fabric you can discover  discover physical bare-metal machines, automatically install an operating system, and provision them as Hyper-V server hosts clusters.
 
 Here's how you do this:
@@ -28,4 +31,5 @@ Here's how you do this:
 
 
  
+
 

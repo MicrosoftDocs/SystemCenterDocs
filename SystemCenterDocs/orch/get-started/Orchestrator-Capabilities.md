@@ -11,6 +11,9 @@ ms.topic: get-started-article
 ms.assetid: 19e06d19-6c3d-4bf1-880c-8aad00c8e536
 ---
 # Orchestrator Capabilities
+
+>Applies To: System Center 2016 Technical Preview - Orchestrator
+
 IT administrators perform many tasks and procedures to keep the health of their computing environment up-to-date and their business running. Tasks might include the following diverse activities, for example, new employees require that accounts and resources are configured, a business acquisition requires integrating a system from another vendor, and new hardware requires provisioning. Individual tasks and subtasks are automated, but typically, not the whole process. In addition, the administrators must maintain quality standards and system efficiency. System Center 2016 Technical Preview - Orchestrator can tie disparate tasks and procedures together by using the graphical user-interface Runbook Designer to create reliable, flexible, and efficient end-to-end solutions in the IT environment.
 
 By using Orchestrator, you can carry out the following tasks:
@@ -38,5 +41,6 @@ Just as manufacturing companies have automated common and repeatable tasks from 
 If you have a custom in-house solution, Orchestrator provides extensible integration to any system through the Orchestrator Integration Toolkit. You can create custom integrations that allow Orchestrator to connect to any environment.
 
 Orchestrator uses a Representational State Transfer (REST)-based web service that can perform processes like start and stop runbook jobs and get reporting information in Open Data protocol (OData) format. The web service lets you develop applications that can use live data from Orchestrator.
+
 
 

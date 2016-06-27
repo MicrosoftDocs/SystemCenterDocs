@@ -8,6 +8,9 @@ ms.topic: article
 ms.assetid: bb288be0-b213-4066-a0bb-dae7b439c645
 ---
 # How to add a VMM library server or VMM library share
+
+>Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
+
 You can use the following procedures to add a library server and library shares to an existing Virtual Machine Manager (VMM) installation. When you add a library server to VMM management, VMM installs the VMM agent on the new library server.
 
 > [!NOTE]
@@ -111,5 +114,6 @@ You can use the following procedures to add a library server and library shares 
 [Configuring the VMM library](Configuring-the-VMM-library.md)
 [Managing the VMM library and its resources](Managing-the-VMM-library-and-its-resources.md)
 [Managing fabric resources with VMM](Managing-fabric-resources-with-VMM.md)
+
 
 

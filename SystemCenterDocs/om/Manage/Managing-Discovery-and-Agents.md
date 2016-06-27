@@ -11,9 +11,12 @@ ms.topic: article
 ms.assetid: 66b6b089-d888-431f-845f-ee689b69ba1a
 ---
 # Managing Discovery and Agents
+
+>Applies To: System Center 2016 Technical Preview - Operations Manager
+
 System Center Operations Manager can monitor computers running Windows, UNIX, and Linux operating systems. For a list of the supported operating system versions, see [Supported Configurations](http://go.microsoft.com/fwlink/p/?LinkID=223642).
 
-To begin monitoring, computers must be discovered. For a description of the discovery process, see ‚ÄúHow Objects Are Discovered and Monitored‚Äù in [Key Concepts](../get-started/Operations-Manager-Key-Concepts.md).
+To begin monitoring, computers must be discovered. For a description of the discovery process, see ìHow Objects Are Discovered and Monitoredî in [Key Concepts](../get-started/Operations-Manager-Key-Concepts.md).
 
 Comprehensive monitoring requires that an agent be installed on the discovered computer. This section explains how to discover computers, install agents on discovered computers, and configure agents. It also provides instructions for uninstalling agents. For information about monitoring computers without installing an agent, see [Agentless Monitoring in Operations Manager](https://technet.microsoft.com/library/hh212910%28v=sc.12%29.aspx) and [Client Monitoring Using Agentless Exception Monitoring in Operations Manager](https://technet.microsoft.com/library/hh230748%28v=sc.12%29.aspx).
 
@@ -69,5 +72,6 @@ Comprehensive monitoring requires that an agent be installed on the discovered c
 -   [General Tasks in Operations Manager](https://technet.microsoft.com/library/hh212906%28v=sc.16%29.aspx)
 
 -   [Maintenance of Operations Manager](https://technet.microsoft.com/library/hh212717%28v=sc.12%29.aspx)
+
 
 

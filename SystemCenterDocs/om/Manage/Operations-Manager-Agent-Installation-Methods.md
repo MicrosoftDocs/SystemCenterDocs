@@ -11,6 +11,9 @@ ms.topic: article
 ms.assetid: fc9ac08d-1643-4573-a17b-73001d0ac97e
 ---
 # Operations Manager Agent Installation Methods
+
+>Applies To: System Center 2016 Technical Preview - Operations Manager
+
 An Operations Manager *agent* is a service that is installed on a computer. The agent collects data, compares sampled data to predefined values, creates alerts, and runs responses. A management server receives and distributes configurations to agents on monitored computers. There are several methods you can use to install an Operations Manager agent on a computer.
 
 To install the agent by using the Discovery Wizard, firewall ports must be open on the agent-managed computers.  Also, you must have an account that is a local administrator on the computer on which you want to install the agent.
@@ -36,5 +39,6 @@ When you install the agent using a manual method, updates to the agent must also
 [Install the Agent and Certificate on UNIX and Linux Computers Using the Command Line](Install-the-Agent-and-Certificate-on-UNIX-and-Linux-Computers-Using-the-Command-Line.md)
 
 [Install Agent Using the MOMAgent.msi Setup Wizard](Install-Agent-Using-the-MOMAgent.msi-Setup-Wizard.md)
+
 
 

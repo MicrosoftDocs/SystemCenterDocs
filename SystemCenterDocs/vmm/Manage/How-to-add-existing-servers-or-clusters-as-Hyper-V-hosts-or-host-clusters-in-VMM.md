@@ -11,6 +11,9 @@ ms.topic: article
 ms.assetid: c02fa3c2-fd4b-4479-abec-92d40bf00fd6
 ---
 # How to add existing servers or clusters as Hyper-V hosts or host clusters in VMM
+
+>Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
+
 You can use this procedure for servers or clusters regardless of whether the Hyper-V role is already installed on them. If the servers or clusters are in a perimeter network, do not use this procedure, but instead see [How to add Hyper-V hosts in a perimeter network in VMM](How-to-add-Hyper-V-hosts-in-a-perimeter-network-in-VMM.md). Additional links are provided at the end of this topic.
 
 > [!IMPORTANT]
@@ -26,7 +29,7 @@ You can use this procedure for servers or clusters regardless of whether the Hyp
 
     The Add Resource Wizard starts.
 
-4.  On the **Resource location** page, the option that corresponds to your serversâ€”trusted domain, untrusted domain, or disjointed namespaceâ€”and then click **Next**.
+4.  On the **Resource location** page, the option that corresponds to your servers—trusted domain, untrusted domain, or disjointed namespace—and then click **Next**.
 
 5.  On the **Credentials** page, enter the credentials for a domain account that has administrative permissions on all hosts that you want to add, and then click **Next**. (For computers in an untrusted domain, you must use a Run As account.)
 
@@ -100,5 +103,6 @@ You can use this procedure for servers or clusters regardless of whether the Hyp
 [Managing Hyper-V hosts and host clusters with VMM](Managing-Hyper-V-hosts-and-host-clusters-with-VMM.md)
 [Managing hosts and host clusters with VMM](Managing-hosts-and-host-clusters-with-VMM.md)
 [Managing fabric resources with VMM](Managing-fabric-resources-with-VMM.md)
+
 
 

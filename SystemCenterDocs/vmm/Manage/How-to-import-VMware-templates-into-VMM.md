@@ -10,6 +10,9 @@ ms.topic: article
 ms.assetid: ee39fd79-6eab-493a-98dd-09304108c1fb
 ---
 # How to import VMware templates into VMM
+
+>Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
+
 You can use the following procedure to import a VMware template to the Virtual Machine Manager (VMM) library.
 
 For you to complete this procedure, a VMware template must exist. Make sure that the server that is running vCenter Server, and that contains the template, is under VMM management. For more information, see [How to add a VMware vCenter Server to VMM](How-to-add-a-VMware-vCenter-Server-to-VMM.md).
@@ -31,5 +34,6 @@ For you to complete this procedure, a VMware template must exist. Make sure that
 
 ## See Also
 [Managing VMware ESX hosts and vCenter servers with VMM](Managing-VMware-ESX-hosts-and-vCenter-servers-with-VMM.md)
+
 
 

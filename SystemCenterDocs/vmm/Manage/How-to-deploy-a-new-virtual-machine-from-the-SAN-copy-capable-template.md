@@ -8,6 +8,9 @@ ms.topic: article
 ms.assetid: bf217c19-f448-46bb-8e5d-9b4604af236b
 ---
 # How to deploy a new virtual machine from the SAN copy-capable template
+
+>Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
+
 You can use this procedure to deploy a virtual machine from a SAN copy-capable template that you created for rapid provisioning in Virtual Machine Manager (VMM). You can use the SAN copy-capable template to deploy stand-alone virtual machines, and to deploy virtual machines as part of a service. This procedure shows how to deploy a new stand-alone virtual machine by using rapid provisioning. If you want to use the template during service creation, you can select an existing SAN clone-capable virtual machine template when you create a service.
 
 > [!IMPORTANT]
@@ -43,6 +46,7 @@ You can use this procedure to deploy a virtual machine from a SAN copy-capable t
     When you create a virtual machine from the SAN copy-capable template, a new logical unit is automatically provisioned from the same storage pool where the virtual hard disk that was used to create the SAN copy-capable template from resides. The logical unit is automatically registered and mounted on the target host.
 
 8.  To verify that the virtual machine was created, open the **VMs and Services** workspace. Expand **All Hosts** or **Clouds**, depending on where you deployed the virtual machine, and then locate and click the destination host or private cloud. In the **VMs** pane, verify that the new virtual machine appears. If you open Disk Management (Diskmgmt.msc) on the destination host, you can see the new disk that is assigned and registered to the host.
+
 
 
 

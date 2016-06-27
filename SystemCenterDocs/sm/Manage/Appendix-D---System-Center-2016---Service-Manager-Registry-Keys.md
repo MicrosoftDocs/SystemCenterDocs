@@ -12,6 +12,9 @@ ms.assetid: 392af14e-a6ba-4e54-b3a0-64621b30dad6
 ---
 # Appendix D - System Center 2016 - Service Manager Registry Keys
 
+>Applies To: System Center 2016 Technical Preview - Service Manager
+
+
 > [!CAUTION]
 > Incorrectly editing the registry can severely damage your system. Before making changes to the registry, you should back up any valued data on the computer.
 
@@ -50,5 +53,6 @@ Keys in this section are used to manage functions that are internal to Service M
 |Key|Description and values|
 |-------|--------------------------|
 |HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\System Center\2016\Common\GroupCalcPollingIntervalMilliseconds|Specifies the group change check interval in milliseconds. |
+
 
 

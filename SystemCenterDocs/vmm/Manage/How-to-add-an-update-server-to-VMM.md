@@ -8,6 +8,9 @@ ms.topic: article
 ms.assetid: 414f9079-4c8f-4433-b78d-5cec4ecf56ee
 ---
 # How to add an update server to VMM
+
+>Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
+
 In order to use Virtual Machine Manager (VMM) to manage updates, you can either install a dedicated Windows Server Update Services (WSUS) server or use an existing WSUS server running Windows Server 2012 R2 or Windows Server Technical Preview. For instructions on how to install a WSUS server, see [How to install a WSUS server for VMM](How-to-install-a-WSUS-server-for-VMM.md).
 
 To use an existing WSUS server that is deployed in a System Center Configuration Manager environment, see [How to integrate fabric updates with Configuration Manager](How-to-integrate-fabric-updates-with-Configuration-Manager.md).
@@ -50,5 +53,6 @@ After you add the update server to VMM, you can configure a proxy server for syn
 ## See Also
 [Managing fabric updates in VMM](Managing-fabric-updates-in-VMM.md)
 [Managing fabric resources with VMM](Managing-fabric-resources-with-VMM.md)
+
 
 

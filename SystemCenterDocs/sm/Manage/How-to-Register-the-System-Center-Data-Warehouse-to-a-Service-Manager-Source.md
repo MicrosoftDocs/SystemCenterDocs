@@ -11,6 +11,9 @@ ms.topic: article
 ms.assetid: 30b83b58-d257-43ae-997b-2514231f5059
 ---
 # How to Register the System Center Data Warehouse to a Service Manager Source
+
+>Applies To: System Center 2016 Technical Preview - Service Manager
+
 You can use the following procedures in Service Manager to register the System Center Data Warehouse with a Service Manager management group and then validate the registration. This makes it possible to host multiple Service Manager management groups in a single data warehouse.
 
 ### To register the data warehouse with another Service Manager management group
@@ -45,6 +48,7 @@ You can use the following procedures in Service Manager to register the System C
 ### To validate the  Service Manager registration process
 
 -   In the **Data Sources** view, the new data source appears in the list of data sources, with the data source type of **Service Manager**. You might have to refresh your view to see the new data source.
+
 
 
 

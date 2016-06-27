@@ -8,6 +8,9 @@ ms.topic: article
 ms.assetid: abc04f90-e31f-4696-9cec-56cc7895af0c
 ---
 # How to increase the capacity of a private cloud in VMM
+
+>Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
+
 You can use this procedure to increase the capacity of a private cloud in Virtual Machine Manager (VMM).
 
 > [!NOTE]
@@ -35,6 +38,7 @@ You can use this procedure to increase the capacity of a private cloud in Virtua
 4.  In the *Cloud Name* **Properties** dialog box, click the **Capacity** tab.
 
 5.  Under **Cloud capacity**, modify the desired capacity settings, and then click **OK**.
+
 
 
 

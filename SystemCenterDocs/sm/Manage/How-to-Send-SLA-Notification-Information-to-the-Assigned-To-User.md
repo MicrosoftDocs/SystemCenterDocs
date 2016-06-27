@@ -11,6 +11,9 @@ ms.topic: article
 ms.assetid: 72980e7a-58c2-44d3-8a99-db3776c8abfb
 ---
 # How to Send SLA Notification Information to the Assigned-To User
+
+>Applies To: System Center 2016 Technical Preview - Service Manager
+
 In Service Manager, you can send notifications to analysts who are responsible for incidents when each incident is within the warning period of its service level objective. Because periodic notifications require a large amount of system resources, the following example notifies the analyst once when the service level objective goes to a warning state.
 
 ### To send an SLA notification to the assigned-to user
@@ -52,5 +55,6 @@ In Service Manager, you can send notifications to analysts who are responsible f
 11. On the **Summary** page, review the information, and then click **Create**.
 
 12. On the **Completion** page, click **OK** to close the wizard.
+
 
 

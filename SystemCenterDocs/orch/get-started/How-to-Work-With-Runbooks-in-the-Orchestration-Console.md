@@ -11,6 +11,9 @@ ms.topic: article
 ms.assetid: 4c844a02-9fb0-4c32-834c-22b90459c476
 ---
 # How to Work With Runbooks in the Orchestration Console
+
+>Applies To: System Center 2012 SP1 - Orchestrator, System Center 2012 - Orchestrator, System Center 2012 R2 Orchestrator
+
 Use the following steps to run a runbook, to view the status of the jobs and instances of a runbook, and to stop a job in the Orchestration console.
 
 ### To run a runbook in the Orchestration console
@@ -59,6 +62,7 @@ Use the following steps to run a runbook, to view the status of the jobs and ins
 5.  Click **OK** to the message to confirm that you want to stop the jobs.
 
 6.  If the runbook was started successfully, you receive a confirmation message that the job was stopped. If the runbook has no running jobs, you receive a message that no job was running.
+
 
 
 

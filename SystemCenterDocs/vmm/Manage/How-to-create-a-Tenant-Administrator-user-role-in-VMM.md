@@ -8,6 +8,9 @@ ms.topic: article
 ms.assetid: 1a3b82ff-03bd-49f4-b083-d75e4902f345
 ---
 # How to create a Tenant Administrator user role in VMM
+
+>Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
+
 In Virtual Machine Manager (VMM), tenant administrators can create and manage self-service users and VM networks. Tenant administrators can create, deploy, and manage their own virtual machines and services by using theVMM console or a web portal. A tenant administrator can specify which tasks the self-service users can perform on their virtual machines and services, and can place quotas on computing resources and virtual machines.
 
 **Account requirements** Administrators and delegated administrators can create a Tenant Administrator user role.
@@ -53,6 +56,7 @@ In Virtual Machine Manager (VMM), tenant administrators can create and manage se
 13. In the **Settings** pane, expand **Security** and then click **User Roles**. Verify that the Tenant Administrator user role that you created appears in the User Roles pane.
 
 After you create a Tenant Administrator user role, you can change **Members**, **Scope**, **Networking**, **Resources**, and **Actions** in the **Properties** dialog box for the Tenant Administrator user role.
+
 
 
 

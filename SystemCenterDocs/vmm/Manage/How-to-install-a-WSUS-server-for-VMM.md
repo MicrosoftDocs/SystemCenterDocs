@@ -8,6 +8,9 @@ ms.topic: article
 ms.assetid: 5b60fc35-916b-4e54-a17f-7094877d09d9
 ---
 # How to install a WSUS server for VMM
+
+>Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
+
 To manage updates in Virtual Machine Manager (VMM), you must either set up a dedicated Windows Server Update Services (WSUS) server or use an existing WSUS server.
 
 > [!NOTE]
@@ -32,5 +35,6 @@ This topic covers either a local or remote WSUS server without Secure Sockets La
 ## See Also
 [Managing fabric updates in VMM](Managing-fabric-updates-in-VMM.md)
 [Managing fabric resources with VMM](Managing-fabric-resources-with-VMM.md)
+
 
 

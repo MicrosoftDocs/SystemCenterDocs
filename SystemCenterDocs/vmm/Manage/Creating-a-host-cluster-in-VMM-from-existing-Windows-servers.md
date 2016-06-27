@@ -11,6 +11,9 @@ ms.topic: article
 ms.assetid: aa816494-2a57-40bc-8b89-99b054713b26
 ---
 # Creating a host cluster in VMM from existing Windows servers
+
+>Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
+
 The topics in this section describe the process for creating a host cluster in Virtual Machine Manager (VMM), using existing servers running a Windows Server operating system:
 
 -   [Prerequisites: creating a host cluster in VMM from existing Windows servers](Prerequisites--creating-a-host-cluster-in-VMM-from-existing-Windows-servers.md)
@@ -47,6 +50,7 @@ The following table summarizes the example resource names that you can use:
 |Cluster name|**HyperVClus01.contoso.com**|
 |Host group where added|**New York\Tier0_NY**|
 |Logical network|**MANAGEMENT**|
+
 
 
 

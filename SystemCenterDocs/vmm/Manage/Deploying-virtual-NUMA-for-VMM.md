@@ -8,6 +8,9 @@ ms.topic: article
 ms.assetid: 59686634-a388-44cc-ac3b-bd14d7866243
 ---
 # Deploying virtual NUMA for VMM
+
+>Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
+
 With Virtual Machine Manager (VMM) you can configure, deploy, and manage the virtual Non-Uniform Memory Access (NUMA) features that were introduced in Hyper-V in Windows Server 2012.
 
 NUMA is a memory architecture that is used in multiprocessor systems, where the time that is required for a processor to access memory depends on the location of the memory relative to the processor. On a NUMA system, a processor can access the local memory (the memory that is directly attached to the processor) faster than the non-local memory (the memory that is attached to another processor). NUMA attempts to close the gap between the speed of processors and the memory that they use. To do so, NUMA provides separate memory on a per-processor basis, thus This helps to avoid the performance degradation that occurs when multiple processors try to access the same memory. Each block of dedicated memory is known as a NUMA node.
@@ -22,4 +25,5 @@ Virtual NUMA enables the deployment of larger and more mission-critical workload
 In addition, NUMA spanning can be enabled or disabled. With spanning enabled, individual virtual NUMA nodes can allocate non-local memory, and an administrator can deploy a virtual machine that has more virtual processors per virtual NUMA node than the number of processors that are available on the underlying hardware NUMA node on the Hyper-V host. NUMA spanning for a virtual machine does incur a performance cost because virtual machines access memory on non-local NUMA nodes.
 
 For information about how to configure virtual NUMA, see [How to configure virtual NUMA for VMM](How-to-configure-virtual-NUMA-for-VMM.md).
+
 

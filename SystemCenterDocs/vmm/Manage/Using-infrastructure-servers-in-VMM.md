@@ -8,6 +8,9 @@ ms.topic: article
 ms.assetid: d62a59f5-1e2a-4c8e-ab4c-1f1e68c7ef7f
 ---
 # Using infrastructure servers in VMM
+
+>Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
+
 You can add infrastructure servers to Virtual Machine Manager (VMM), that is, servers that support services such as Active Directory, DNS, DHCP, Operations Manager, Service Manager, and so on. In VMM, these servers are listed under the role of **Infrastructure**. Adding infrastructure servers can make it easier to keep them updated.
 
 > [!NOTE]
@@ -38,5 +41,6 @@ Follow these procedures to when using infrastructure servers in VMM.
 [How to remediate updates on infrastructure servers in VMM](How-to-remediate-updates-on-infrastructure-servers-in-VMM.md)
 [Managing fabric updates in VMM](Managing-fabric-updates-in-VMM.md)
 [Managing fabric resources with VMM](Managing-fabric-resources-with-VMM.md)
+
 
 

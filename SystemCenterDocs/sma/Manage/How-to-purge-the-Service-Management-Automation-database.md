@@ -11,6 +11,9 @@ ms.topic: article
 ms.assetid: 09b8fca5-e1db-4775-910d-48cb8214401b
 ---
 # How to purge the Service Management Automation database
+
+>Applies To: Windows Azure Pack for Windows Server, System Center 2012 R2 Orchestrator
+
 In Service Management Automation, database purging is automatic, but you can adjust it to your needs.
 
 To enable the automatic database purge, you must enable the SQL Server Agent (MSSQLSERVER) service for Automatic start. The service is not turned on by default, but it is frequently started by SQL Server database administrators for other tasks.
@@ -23,8 +26,9 @@ The database purge job is automatic, but it can be regulated by the Service Mana
 
 -   By default, the database purge job runs every 15 minutes, and it runs only if there are records to purge.
 
--   Records are purged only if they are older than the default duration of 30 days. This time is configurable by using the **Set-SmaAdminConfiguration** cmdlet and setting the **â€“PurgeJobsOlderThanCountDays** parameter.
+-   Records are purged only if they are older than the default duration of 30 days. This time is configurable by using the **Set-SmaAdminConfiguration** cmdlet and setting the **–PurgeJobsOlderThanCountDays** parameter.
 
 -   If the total job record count exceeds the **MaxJobRecords** parameter set by the same **Set-SmaAdminConfiguration** cmdlet, then more job records will be purged. The default value for this parameter is 120,000 records.
+
 
 

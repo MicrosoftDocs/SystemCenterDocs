@@ -11,6 +11,9 @@ ms.topic: article
 ms.assetid: b952e8ab-ce6f-4014-9e96-50cedaf415ed
 ---
 # Installing a Highly Available VMM Management Server
+
+>Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
+
 The procedures in this section describe how to do the following in Virtual Machine Manager (VMM):
 
 -   [How to Install a Highly Available VMM Management Server](How-to-Install-a-Highly-Available-VMM-Management-Server.md)
@@ -60,5 +63,6 @@ The following are some additional considerations about highly available VMM mana
 -   During a planned failover, ensure that there are no tasks actively running on the VMM management server. Any running tasks will fail during a failover. Any failed jobs will not start automatically after a failover.
 
 -   Any connections to a highly available VMM management server from the VMM console will be lost during a failover. The VMM console will be able to reconnect automatically to the highly available VMM management server after a failover.
+
 
 

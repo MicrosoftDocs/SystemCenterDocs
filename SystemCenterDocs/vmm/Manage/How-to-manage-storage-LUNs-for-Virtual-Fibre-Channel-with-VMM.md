@@ -8,6 +8,9 @@ ms.topic: article
 ms.assetid: 32532316-0282-491c-b884-6bf5fa787c7c
 ---
 # How to manage storage LUNs for Virtual Fibre Channel with VMM
+
+>Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
+
 For a host computer, VM, or computer service tier to access storage array resources, Logical Units (LUs) and associated Numbers (LUNs) must be created and then registered (unmasked) to the host, VM, or tier.
 
 Use the following procedures to create a new logical unit number (LUN) for a storage array and  register (unmask) a LUN to one or more host HBA initiator ports:
@@ -62,5 +65,6 @@ Use the following procedures to create a new logical unit number (LUN) for a sto
 [Managing Virtual Fibre Channel fabrics with VMM](Managing-Virtual-Fibre-Channel-fabrics-with-VMM.md)
 [Managing storage resources and capacity with VMM](Managing-storage-resources-and-capacity-with-VMM.md)
 [Managing fabric resources with VMM](Managing-fabric-resources-with-VMM.md)
+
 
 

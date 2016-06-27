@@ -11,6 +11,9 @@ ms.topic: article
 ms.assetid: d82d70df-2de2-4d1f-9e9d-a033af8e6b05
 ---
 # Connections
+
+>Applies To: Windows Azure Pack for Windows Server, System Center 2012 R2 Orchestrator
+
 An Automation Connection contains the information required to connect to a service or application from a runbook.  This information is defined in the module for the application and typically includes such information as the username and password and the computer to connect to.  Other information may also be required such as a certificate or a subscription Id.  The properties for a connection are stored securely in the Automation database and can be accessed in the runbook with the **Get-AutomationConnection** activity.
 
 ## Windows PowerShell Cmdlets
@@ -64,7 +67,7 @@ $webServer = 'https://MyWebServer'
 $port = 9090
 $connectionName = 'MyConnection'
 $fieldValues = @{"Username"="MyUser";"Password"="password";"ComputerName"="MyComputer"} 
-New-SmaConnection â€“WebServiceEndpoint $webServer â€“port $port â€“Name $connectionName â€“ConnectionTypeName "VirtualMachineManager" â€“ConnectionFieldValues $fieldValues
+New-SmaConnection –WebServiceEndpoint $webServer –port $port –Name $connectionName –ConnectionTypeName "VirtualMachineManager" –ConnectionFieldValues $fieldValues
 ```
 
 ## Using a connection in a runbook
@@ -87,5 +90,6 @@ InlineScript {
 [Service Management Automation](../Service-Management-Automation.md)
 [Authoring Automation Runbooks](Authoring-Automation-Runbooks.md)
 [Global Assets](Global-Assets.md)
+
 
 

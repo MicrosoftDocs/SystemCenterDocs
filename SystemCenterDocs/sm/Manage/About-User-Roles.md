@@ -11,9 +11,12 @@ ms.topic: article
 ms.assetid: 98ff2c1f-28d5-42fb-9dcf-47707e4d6620
 ---
 # About User Roles
+
+>Applies To: System Center 2016 Technical Preview - Service Manager
+
 In your organization, some employees are responsible for supporting hardware, such as portable computers and servers. Some of the employees are allowed to create and update configuration items but not delete them, whereas others are allowed to create, update, and delete configuration items.
 
-In Appendix A - List of User Role Profiles in System Center 2016 - Service Manager, the security rights that allow users to access or update information are defined in a user role profile. A user role profile is a named collection of access rights, and it usually corresponds to an employeeâ€™s business responsibilities. Each user role profile controls access to such artifacts as knowledge articles, work items (incidents, change requests), authoring, administration, and other credentials. Think of user role profiles as defining what you are allowed to do.
+In Appendix A - List of User Role Profiles in System Center 2016 - Service Manager, the security rights that allow users to access or update information are defined in a user role profile. A user role profile is a named collection of access rights, and it usually corresponds to an employee’s business responsibilities. Each user role profile controls access to such artifacts as knowledge articles, work items (incidents, change requests), authoring, administration, and other credentials. Think of user role profiles as defining what you are allowed to do.
 
 In the future, managers at your organization may decide to separate the group of employees who maintain configuration items into two groups: those who handle configuration items for desktop computers and those who handle configuration items for portable computers. They want to retain these two user role profiles, one profile that can create and edit but not delete configuration items, and another profile that can create, edit, and delete configuration items. You would define these user role profiles with different scopes, one for desktops and one for portable computers. If user role profiles define what you are allowed to do, think of scopes as defining what items you are allowed to modify. The combination of a user role profile and a scope is called a user role.
 
@@ -75,5 +78,6 @@ The user role, Report User, has one purpose in Service Manager: to find the comp
 
 ### Workflows
 Workflows might have to read and write to the Service Manager database. During Setup, you are asked to provide credentials for the Workflows user role, and this user role performs the required actions on the Service Manager database. Like the user role, Report User, the narrow purpose of the Workflow user role means there is no reason for creating other user roles.
+
 
 

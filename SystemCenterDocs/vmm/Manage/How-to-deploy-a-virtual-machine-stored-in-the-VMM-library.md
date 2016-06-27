@@ -8,6 +8,9 @@ ms.topic: article
 ms.assetid: c679edf5-58c8-4518-9716-32428bf8ca78
 ---
 # How to deploy a virtual machine stored in the VMM library
+
+>Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
+
 Use the following procedure to deploy a virtual machine that is stored in the Virtual Machine Manager (VMM) library. For information about creating a virtual machine and storing it in the library, see [Creating and deploying virtual machines in VMM](Creating-and-deploying-virtual-machines-in-VMM.md).
 
 ### To deploy a virtual machine stored in the VMM library
@@ -20,22 +23,22 @@ Use the following procedure to deploy a virtual machine that is stored in the Vi
 
     The Deploy Virtual Machine Wizard opens.
 
-4.  On the **Select Host** page, select a host on which to deploy the virtual machine. In the list of hosts, all available hosts are given a rating of 0â€“5 stars, based on their suitability to host the virtual machine. The host rating levels are recommendations. You can select any host that has the required disk space, even if the host has a zero host rating. For more information, see [Understanding virtual machine placement and ratings in VMM](Understanding-virtual-machine-placement-and-ratings-in-VMM.md).
+4.  On the **Select Host** page, select a host on which to deploy the virtual machine. In the list of hosts, all available hosts are given a rating of 0–5 stars, based on their suitability to host the virtual machine. The host rating levels are recommendations. You can select any host that has the required disk space, even if the host has a zero host rating. For more information, see [Understanding virtual machine placement and ratings in VMM](Understanding-virtual-machine-placement-and-ratings-in-VMM.md).
 
     **Network optimization** If a host has network optimization enabled, a green check mark appears in the **Network Optimization** column. Network optimization capabilities apply to Hyper-V hosts running Windows Server 2008 R2. For information about network optimization and the hardware that supports it, see the Windows Server 2008 R2 topics, [Using Virtual Machine Chimney](http://technet.microsoft.com/library/gg162677.aspx) and [Using Virtual Machine Queue](http://technet.microsoft.com/library/gg162704.aspx).
 
-    **Highly available virtual machines** To make a virtual machine a highly available virtual machine (HAVM), you can migrate the virtual machine to a host that is in a host cluster, even if the virtual machine has not been configured as highly available. The wizard also enables you to migrate a highly available virtual machine to a stand-alone host. Because of the resulting change to the virtual machineâ€™s highly available setting, either of these actions requires confirmation.
+    **Highly available virtual machines** To make a virtual machine a highly available virtual machine (HAVM), you can migrate the virtual machine to a host that is in a host cluster, even if the virtual machine has not been configured as highly available. The wizard also enables you to migrate a highly available virtual machine to a stand-alone host. Because of the resulting change to the virtual machine’s highly available setting, either of these actions requires confirmation.
 
     > [!NOTE]
     > For more information about environmental factors and settings that affect virtual machine placement in VMM, see [Understanding virtual machine placement and ratings in VMM](Understanding-virtual-machine-placement-and-ratings-in-VMM.md).
 
     -   To get additional information about the host, select the host, and view the tabs in the **Details** area.
 
-        **Details**â€”Indicates the status of the host, the operating system, and the type and status of virtualization software. Lists the virtual machines on the host.
+        **Details**—Indicates the status of the host, the operating system, and the type and status of virtualization software. Lists the virtual machines on the host.
 
-        **Rating Explanation**â€”Lists the factors that resulted in a rating, if the host received a zero rating.
+        **Rating Explanation**—Lists the factors that resulted in a rating, if the host received a zero rating.
 
-        **SAN Explanation** or **Deployment and Transfer Explanation**â€” Lists factors that make a SAN transfer unavailable.
+        **SAN Explanation** or **Deployment and Transfer Explanation**— Lists factors that make a SAN transfer unavailable.
 
         In addition, the **Deployment and Transfer Explanation** tab provides an explanation if fast file copy cannot be used. Fast file copy is based on the Windows Offloaded Data Transfers (ODX) feature, introduced in Windows Server 2012 R2. For information about ODX, see [Windows Offloaded Data Transfers Overview](http://technet.microsoft.com/library/hh831628.aspx).
 
@@ -58,6 +61,7 @@ Use the following procedure to deploy a virtual machine that is stored in the Vi
 8.  To begin deploying the virtual machine, click **Deploy**.
 
     To review the progress and results of the operation, open the **Jobs** workspace. By default, the workspace opens when the wizard closes. To view this workspace at any time, click **Jobs** on the taskbar in the results pane of the VMM console.
+
 
 
 

@@ -12,6 +12,9 @@ ms.topic: article
 ms.assetid: 98767073-f0c5-47a8-9551-f532cecb8d08
 ---
 # Deploy a Network Controller using VMM
+
+>Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
+
 ## Introduction
 
 This topic helps you evaluate the Software Defined Networking (SDN) features available with Windows Server 2016 Technical Preview 5. In particular, it focuses on using Virtual Machine Manager (VMM) 2016 Technical Preview 5 to deploy a highly available three-node [network controller](https://technet.microsoft.com/library/dn859239.aspx?f=255&MSPPError=-2147217396); a new SDN capability in [!INCLUDE[winthreshold_server_2_mdincludes/winthreshold_server_2_md.md)]. The network controller is a scalable and highly available server role that enables you to automate network infrastructure configuration instead of performing manual network device configuration.
@@ -61,7 +64,7 @@ The Management logical network models the Management network connectivity for th
 
 4.  On the **Settings** page, be sure to select **One Connected Network**, since all Management networks need to have routing and connectivity between all hosts in that network. Check the **Create a VM Network with the same name** to automatically create a VM Network for your Management network. Click **Next**.
 
-5.  In the **Network Site** panel, click **Add** to add a new network site. Select the host group for the hosts that will be managed by the network controller. Insert your management network IP subnet information. This network should already exist and be configured in your physical switch. Click **Next** when youâ€™re ready to proceed.
+5.  In the **Network Site** panel, click **Add** to add a new network site. Select the host group for the hosts that will be managed by the network controller. Insert your management network IP subnet information. This network should already exist and be configured in your physical switch. Click **Next** when you’re ready to proceed.
 
 6.  Review the **Summary** information and click **Finish** to complete.
 
@@ -107,7 +110,7 @@ The Management logical switch needs to be deployed on the network controller hos
 
     ![VMM ExtensionsImage/VMM-Extensions.png)
 
-6.  You can add a Virtual Port Profile and choose a Port Classification for Host Management on this page if you want but it is not required. Click **Next** when youâ€™re finished.
+6.  You can add a Virtual Port Profile and choose a Port Classification for Host Management on this page if you want but it is not required. Click **Next** when you’re finished.
 
 7.  Create a new Uplink Port Profile directly from the Logical Switch wizard. Click **Add** and select **New Uplink Port Profile** from the drop down menu.
 
@@ -284,7 +287,7 @@ After the network controller service is successfully deployed, the next step is 
     The ``servicename`` is the name you used when you configured and deployed the service. See step 1 under [Configure and deploy the service](#CandD).   
 8.  On the **Review Certificates** page, a connection is made to the network controller virtual machine to retrieve the certificate. Verify that the certificate shown is the one you expect. Ensure you select the **These certificates have been reviewed and can be imported to the trusted certificate storebox** check box. Click **Next**.
 
-9.  On the next screen, click **Scan Provider** to connect to your service and list the properties and their status. This is also a good test of whether or not the service was created correctly, and that youâ€™re using the right connect string to connect to it. Examine the results, and when it completes successfully click **Next**.
+9.  On the next screen, click **Scan Provider** to connect to your service and list the properties and their status. This is also a good test of whether or not the service was created correctly, and that you’re using the right connect string to connect to it. Examine the results, and when it completes successfully click **Next**.
 
 10.  Configure the Host Group in VMM that your network controller will manage. Click **Next**.
 
@@ -292,7 +295,7 @@ After the network controller service is successfully deployed, the next step is 
 
 ![VMM Network ServicesImage/VMM-Network-Services.png)
 
-If you click the properties of the network controller service, you will find the **Logical Network Affinity** section. You donâ€™t need to specify any selection on this page. This is an obsolete page that will be removed in upcoming releases. 
+If you click the properties of the network controller service, you will find the **Logical Network Affinity** section. You don’t need to specify any selection on this page. This is an obsolete page that will be removed in upcoming releases. 
 
 ![VMM NC Properties 2Image/VMM-NC-Properties-2.png)
 
@@ -310,7 +313,7 @@ The following steps help you convert the existing non-teamed deployment to a tea
 The SDN planning diagram in [Plan a Software Defined Network Infrastructure](https://technet.microsoft.com/library/mt605207.aspx) shows four network controller managed hosts. If you need to use fewer hosts, ensure you have at least three hosts in your set up and the three Network Controller Service virtual machines are spread across all the three hosts. This ensures that as you disconnect and reconnect the network controller virtual machines on each host sequentially, at all stages the Network Controller Service has majority of the virtual machines running so the REST IP movement is reliable.
 
 ### To create the SDN switch
-First, letâ€™s create a new teaming enabled logical switch using VMM that you will deploy on network controller managed hosts.
+First, let’s create a new teaming enabled logical switch using VMM that you will deploy on network controller managed hosts.
 
 1.  Right-click the logical switch in the VMM Administrator Console Fabric section and select **Create new Logical Switch**.
 2.  Type a name.
@@ -419,7 +422,7 @@ Next, you will create two VM networks and IP pools for two tenants in your SDN i
 
 Don't use the first three IP addresses of your available subnet. For example, if your available subnet is from .1 to .254, start your range at .4 or greater.
 
-Currently you canâ€™t create a VM Network with **No Isolation** for logical networks that are managed by the network controller. You must choose the **Isolate using Hyper-V Network Virtualization** isolation option when creating VM Networks associated with HNV Provider logical networks.
+Currently you can’t create a VM Network with **No Isolation** for logical networks that are managed by the network controller. You must choose the **Isolate using Hyper-V Network Virtualization** isolation option when creating VM Networks associated with HNV Provider logical networks.
 
 To create a VM network and an IP pool based on the HNV Provider logical network, follow the steps in the following Microsoft TechNet Library topic: [How to create a VM network for network virtualization and add an IP address pool in VMM](How-to-create-a-VM-network-for-network-virtualization-and-add-an-IP-address-pool-in-VMM.md)   
 
@@ -441,5 +444,6 @@ To create a virtual machine from an existing virtual hard disk, follow the steps
 After you deploy at least two virtual machines connected to your VM Network, you can ping one tenant virtual machine from the other tenant virtual machine to validate that the network controller has been deployed as a network service successfully, and that it can manage the HNV Provider network so that tenant virtual machines can ping each other.
 
 Ensure that your tenant virtual machines allow IPv4 ICMP through their firewall. By default, Windows Server blocks this.
-> You can run the following PowerShell cmdlet to allow ICMP v4 in through the firewall: ``New-NetFirewallRule â€“DisplayName â€œAllow ICMPv4-Inâ€ â€“Protocol ICMPv4``
+> You can run the following PowerShell cmdlet to allow ICMP v4 in through the firewall: ``New-NetFirewallRule –DisplayName “Allow ICMPv4-In” –Protocol ICMPv4``
+
 

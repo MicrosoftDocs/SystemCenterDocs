@@ -11,6 +11,9 @@ ms.topic: article
 ms.assetid: c75fe03c-3709-4c85-b593-fb1a2920f80e
 ---
 # Testing a Runbook
+
+>Applies To: Windows Azure Pack for Windows Server
+
 You can test the Draft version of a runbook in Service Management Automation while leaving the published version of the runbook unchanged. This allows you to verify that the runbook is working correctly before replacing the published version.
 
 When you test a runbook, the Draft runbook is executed and any actions that it performs are completed. No job history is created, but the [Output](Runbook-Output-and-Messages.md#Output) and [Warning and Error](Runbook-Output-and-Messages.md#WarningError) streams are displayed in the Test Output Pane. Messages to the [Verbose Stream](Runbook-Output-and-Messages.md#Verbose) are displayed in the Output Pane only if the [$VerbosePreference variable](Runbook-Output-and-Messages.md#PreferenceVariables) is set to **Continue**.
@@ -34,5 +37,6 @@ To test the runbook in SMA, click **Test Draft in SMA**.  A new window will be o
 [Service Management Automation](../Service-Management-Automation.md)
 [Authoring Automation Runbooks](Authoring-Automation-Runbooks.md)
 [Editing a Runbook](Editing-a-Runbook.md)
+
 
 

@@ -12,6 +12,9 @@ ms.assetid: 80c630b1-ab1e-47be-83aa-478655b3dbcb
 ---
 # How to configure network settings on a Hyper-V host in VMM
 
+>Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
+
+
 Configure network settings for Hyper-V hosts and clusters as follows:
 
 
@@ -26,12 +29,12 @@ Configure network settings for Hyper-V hosts and clusters as follows:
 1.  Open **Fabric** > **Servers** > **All Hosts** and click the host group.
 2.  click **Hosts** > the host name > **Properties** > **Hardware**.
 3.  Under **Network Adapters**, click the physical network adapter that you want to configure. If you want to use this network adapter for virtual machines, ensure that **Available for placement** is checked. If you want to use this network adapter for communication between the host and the VMM management server, ensure that **Used by management** is checked. Make sure that you have at least one network adapter available for communication between the host and the VMM management server. Make sure that **Used by management** is checked for this network adapter.
-4.  Under the physical network adapter, click **Logical network connectivity**. Notice the various kinds of information displayed, such as the list of IP subnets and VLANs that are available. If youâ€™ve added a top-of-rack (TOR) switch as a network service, port information that is provided by the switch might also be displayed.
+4.  Under the physical network adapter, click **Logical network connectivity**. Notice the various kinds of information displayed, such as the list of IP subnets and VLANs that are available. If you’ve added a top-of-rack (TOR) switch as a network service, port information that is provided by the switch might also be displayed.
 5.  Review the list of logical networks, and take note of the following:
 
     - You might have to look fairly carefully at the entries in the list, because some of them might not actually be available for this host. The list is not limited to the logical networks with network sites that include the host group of this host. Instead, the list includes all the logical networks.
     
-    - You might see some logical networks that appear to have been created automaticallyâ€”this means that you added a host to VMM and the host didnâ€™t already have logical networks assigned to its network adapters. However, automatic creation of logical networks depends on your global settings.
+    - You might see some logical networks that appear to have been created automatically—this means that you added a host to VMM and the host didn’t already have logical networks assigned to its network adapters. However, automatic creation of logical networks depends on your global settings.
 
 6.  Check the box next to each logical network that you want to assign to the physical adapter. For example, if you configured a logical network called **Management**, and that logical network is available to the host group of your host, check the box next to **Management**.
 
@@ -135,6 +138,7 @@ Regardless of any port profiles and logical switches you are using in your netwo
 
 
 
-Compliance of network settings: After you apply logical switches, you can later check to see if the network adapter settings on a host are still in compliance with the logical switch settings. If theyâ€™re not, you can use VMM to bring them back into compliance. 
+Compliance of network settings: After you apply logical switches, you can later check to see if the network adapter settings on a host are still in compliance with the logical switch settings. If they’re not, you can use VMM to bring them back into compliance. 
+
 
 

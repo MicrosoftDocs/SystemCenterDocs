@@ -8,6 +8,9 @@ ms.topic: article
 ms.assetid: a8910329-fa58-494e-a833-633936e56644
 ---
 # How to create a physical computer profile to provision Scale-Out File Server nodes from bare metal in VMM_1
+
+>Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
+
 In 
             Virtual Machine Manager (VMM), you can use physical computer profiles to provision bare-metal computers into Scale-Out File Server nodes and create a Scale-Out File Server.
 
@@ -96,5 +99,6 @@ Before you begin this procedure, be sure to review
 [Deploying Scale-Out File Servers from bare metal with VMM](Deploying-Scale-Out-File-Servers-from-bare-metal-with-VMM.md)
 [Managing infrastructure resources with VMM](Managing-infrastructure-resources-with-VMM.md)
 [Managing fabric resources with VMM](Managing-fabric-resources-with-VMM.md)
+
 
 

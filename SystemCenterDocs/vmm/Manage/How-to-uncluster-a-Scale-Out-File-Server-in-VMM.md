@@ -8,6 +8,9 @@ ms.topic: article
 ms.assetid: 14dd198f-21d6-4357-9227-37105172462a
 ---
 # How to uncluster a Scale-Out File Server in VMM
+
+>Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
+
 You can use the following procedures to uncluster or remove a Scale-Out File Server that is being managed in Virtual Machine Manager (VMM).
 
 When you remove a Scale-Out File Server, it still exists, but it's not managed by VMM. To uncluster a Scale-Out File Server, you can use the [Uninstall-SCStorageFileServer](http://technet.microsoft.com/library/dn472840.aspx) cmdlet.
@@ -27,5 +30,6 @@ When you remove a Scale-Out File Server, it still exists, but it's not managed b
 [Managing Scale-Out File Servers with VMM](Managing-Scale-Out-File-Servers-with-VMM.md)
 [Managing storage resources and capacity with VMM](Managing-storage-resources-and-capacity-with-VMM.md)
 [Managing fabric resources with VMM](Managing-fabric-resources-with-VMM.md)
+
 
 

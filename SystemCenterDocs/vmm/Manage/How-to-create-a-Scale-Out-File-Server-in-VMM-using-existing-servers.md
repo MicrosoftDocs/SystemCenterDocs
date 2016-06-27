@@ -11,6 +11,9 @@ ms.topic: article
 ms.assetid: ab69213b-ffdd-4dec-bb06-a98860eac788
 ---
 # How to create a Scale-Out File Server in VMM using existing servers
+
+>Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
+
 You can use Virtual Machine Manager (VMM) to  create a Scale-Out File Server from existing Windows servers. .
 
 > [!NOTE]
@@ -58,5 +61,6 @@ After the wizard closes, you can review the properties by right-clicking the Sca
 [Managing Scale-Out File Servers with VMM](Managing-Scale-Out-File-Servers-with-VMM.md)
 [Managing storage resources and capacity with VMM](Managing-storage-resources-and-capacity-with-VMM.md)
 [Managing fabric resources with VMM](Managing-fabric-resources-with-VMM.md)
+
 
 

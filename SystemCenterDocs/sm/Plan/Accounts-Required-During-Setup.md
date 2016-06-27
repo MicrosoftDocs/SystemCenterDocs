@@ -11,6 +11,9 @@ ms.topic: article
 ms.assetid: 2b62bf84-fede-4618-b833-3bc1357a4aea
 ---
 # Accounts Required During Setup
+
+>Applies To: System Center 2016 Technical Preview - Service Manager
+
 You will have to provide credentials for the accounts in the following table during the installation of the System Center 2016 Technical Preview - Service Manager and data warehouse management servers.
 
 > [!NOTE]
@@ -71,5 +74,6 @@ When you are creating connectors, you are asked for credentials that the connect
 |Permissions|Best practices|
 |---------------|------------------|
 |-   Must be a domain account.<br />-   Must be a member of the Users local security group on the Service Manager management server.|Domain account specifically created for this purpose that is only in the Users local security group, must be a member of the smsdbrole_extract and db_datareader on the System Center Configuration Manager database, and is in an Advanced Operator user role in Service Manager.|
+
 
 

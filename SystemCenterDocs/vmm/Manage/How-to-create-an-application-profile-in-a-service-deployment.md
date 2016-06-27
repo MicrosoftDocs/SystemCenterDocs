@@ -8,6 +8,9 @@ ms.topic: article
 ms.assetid: 6ce1f959-fb44-4f37-9f68-640f15505185
 ---
 # How to create an application profile in a service deployment
+
+>Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
+
 You can use the following procedure to create an application profile in Virtual Machine Manager (VMM). An application profile provides instructions for installing Microsoft Web Deploy applications or Microsoft SQL Server data-tier applications (DACs), and instructions for running scripts, when a virtual machine is deployed as part of a service. Application profiles are not supported for Linux operating systems because application profiles are designed for technologies that are specific to Windows operating systems.
 
 > [!IMPORTANT]
@@ -63,6 +66,7 @@ You can use the following procedure to create an application profile in Virtual 
 7.  To verify that the profile was created, in the **Library** pane, expand **Profiles**, and then click **Application Profiles**.
 
     The application profile appears in the **Profiles** pane.
+
 
 
 

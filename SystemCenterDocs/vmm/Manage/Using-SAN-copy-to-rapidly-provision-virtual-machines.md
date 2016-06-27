@@ -8,6 +8,9 @@ ms.topic: article
 ms.assetid: 3e3c0888-c3dc-4c23-aa4d-3a599f9b0682
 ---
 # Using SAN copy to rapidly provision virtual machines
+
+>Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
+
 Rapid provisioning provides a method for deploying new virtual machines to storage arrays without the requirement for copying virtual machines over the network. Virtual Machine Manager (VMM) enables you to take advantage of your storage area network (SAN) infrastructure for cloning virtual machines, and use a VM template to customize the guest operating system. You can use rapid provisioning to deploy stand-alone virtual machines and virtual machines that are deployed as part of a service.
 
 Rapid provisioning through SAN copy enables you to quickly create virtual machines from a SAN copy-capable template. You can create a SAN copy-capable template from a virtual hard disk that resides on a storage logical unit that supports SAN copy through cloning or snapshots. When you create a new virtual machine by using the SAN copy-capable template, VMM quickly creates a read-write copy of the logical unit that contains the virtual hard disk, and places the virtual machine files on the new logical unit.
@@ -28,7 +31,7 @@ You can use either of the following methods to create a SAN copy-capable templat
 1.  From a storage pool that is managed by VMM and allocated to the host group where the target host resides, create and assign a storage logical unit to the host.
 
     > [!NOTE]
-    > You can also use your storage array vendorâ€™s management tools to create and assign the logical unit.
+    > You can also use your storage array vendor’s management tools to create and assign the logical unit.
 
 2.  Create a virtual machine with a blank virtual hard disk file on the logical unit.
 
@@ -47,7 +50,7 @@ For detailed steps, see [How to create a SAN copy-capable template from a new vi
 1.  Create a logical unit from a storage pool that is managed by VMM and allocated to the host group where the library server resides. Assign the logical unit to the library server.
 
     > [!NOTE]
-    > If you want to perform this procedure entirely within VMM, you must add the library server as a managed Hyper-V host. This action enables you to assign the logical unit to the library server. If you do not want to make the library server a managed Hyper-V host, you can use your array vendorâ€™s management tools to register the logical unit to the library server.
+    > If you want to perform this procedure entirely within VMM, you must add the library server as a managed Hyper-V host. This action enables you to assign the logical unit to the library server. If you do not want to make the library server a managed Hyper-V host, you can use your array vendor’s management tools to register the logical unit to the library server.
 
 2.  On the library server, mount the logical unit to a folder path in the library share.
 
@@ -80,7 +83,7 @@ Before you begin, ensure that the following prerequisites are met:
 
     -   If you want to create a SAN-copy capable template from a new virtual machine, the host where you create the virtual machine must also be a member of this host group.
 
-    -   If you want to create a SAN-copy capable template from an existing virtual machine, and want to create and assign the logical unit from the library server, the library server must be a member of this host group. Therefore, the library server must be a Hyper-V host. (If you do not want to add the library server as a host, you can assign the logical unit out-of-band by using your storage array vendorâ€™s management tools.)
+    -   If you want to create a SAN-copy capable template from an existing virtual machine, and want to create and assign the logical unit from the library server, the library server must be a member of this host group. Therefore, the library server must be a Hyper-V host. (If you do not want to add the library server as a host, you can assign the logical unit out-of-band by using your storage array vendor’s management tools.)
 
 -   If you want to use rapid provisioning to deploy generation 2 virtual machines, you must choose a host with an operating system that supports them. Generation 2 virtual machines are supported as of Windows Server 2012 R2.
 
@@ -89,7 +92,7 @@ Before you begin, ensure that the following prerequisites are met:
 -   All Hyper-V hosts that you want to use for rapid provisioning and the library server must have access to the storage array. Also, they must use the same type of SAN connectivity. For SAN migrations to succeed, you cannot have some hosts that connect to the array through Fibre Channel and others that connect through iSCSI. Configuration varies, depending on your storage hardware.
 
     > [!NOTE]
-    > For specific configuration information, see your storage array vendorâ€™s documentation.
+    > For specific configuration information, see your storage array vendor’s documentation.
 
     Configuration typically includes the following:
 
@@ -113,6 +116,7 @@ Use the following steps to deploy a virtual machine by using rapid provisioning.
 |--------|---------------|
 |Step 1: Use either of the following instructions:<br /><br />-   [How to create a SAN copy-capable template from a new virtual machine](How-to-create-a-SAN-copy-capable-template-from-a-new-virtual-machine.md)<br />-   [How to create a SAN copy-capable template from an existing virtual machine](How-to-create-a-SAN-copy-capable-template-from-an-existing-virtual-machine.md)|Describes how to create a SAN copy-capable template from either a new or existing virtual machine. Includes scenario-specific prerequisites.|
 |Step 2: [How to deploy a new virtual machine from the SAN copy-capable template](How-to-deploy-a-new-virtual-machine-from-the-SAN-copy-capable-template.md)|Describes how to create and deploy the new virtual machine by using the SAN copy-capable template.|
+
 
 
 

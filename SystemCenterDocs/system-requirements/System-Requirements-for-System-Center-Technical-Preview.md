@@ -9,6 +9,9 @@ ms.topic: get-started-article
 ms.assetid: 38a4c1f7-e088-4ab9-b250-674dde7387fc
 ---
 # System Requirements for System Center Technical Preview
+
+>Applies To: System Center Technical Preview
+
 Use this information to evaluate if your environment is ready to support an installation of System Center 2016 Technical Preview
 
 The topics below specify minimum and recommended hardware requirements along with compatibility  for, server and client operating systems, SQL Server, Web console, PowerShell, and the .NET Framework.
@@ -30,5 +33,6 @@ The topics below specify minimum and recommended hardware requirements along wit
 -   [System Center Agents](System-Center-Agents.md)
 
 -   [.Net Version Support](Dot-Net-Version-Support.md)
+
 
 

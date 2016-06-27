@@ -9,6 +9,9 @@ ms.topic: get-started-article
 ms.assetid: cd5d13e8-71da-4e91-9bcf-f3be00a03d54
 ---
 # System Center Agents
+
+>Applies To: System Center Technical Preview
+
 This information lists both Microsoft and non-Microsoft operating systems and versions of Microsoft SQL Server software, Microsoft Exchange, or Microsoft SharePoint that each System Center 2016 Technical Preview agent supports
 
 ## Data Protection Manager Agent
@@ -63,11 +66,11 @@ This information lists both Microsoft and non-Microsoft operating systems and ve
 
 -   Windows 2008 Server R2 SP1
 
--   Windows ServerÂ® 2012
+-   Windows Server® 2012
 
--   Windows ServerÂ® 2012 R2
+-   Windows Server® 2012 R2
 
--   MicrosoftÂ® Hyper-VÂ® Server 2012 R2
+-   Microsoft® Hyper-V® Server 2012 R2
 
 -   Windows Vista SP2
 
@@ -77,13 +80,13 @@ This information lists both Microsoft and non-Microsoft operating systems and ve
 
 -   Windows 7
 
--   WindowsÂ® 8
+-   Windows® 8
 
--   WindowsÂ® 8.1
+-   Windows® 8.1
 
 -   Windows 10
 
--   Windows ServerÂ® Technical Preview
+-   Windows Server® Technical Preview
 
 ## Virtual Machine Manager Guest Agent
 
@@ -95,9 +98,9 @@ This information lists both Microsoft and non-Microsoft operating systems and ve
 
 -   Windows 2008 Server R2 SP1
 
--   Windows ServerÂ® 2012 R2
+-   Windows Server® 2012 R2
 
--   Windows ServerÂ® Technical Preview
+-   Windows Server® Technical Preview
 
 ## Virtual Machine Manager Linux Guest Agent
 
@@ -192,5 +195,6 @@ This information lists both Microsoft and non-Microsoft operating systems and ve
 -   Ubuntu Server 12.04 (x86/x64)
 
 -   Ubuntu Server 14.04 (x86/x64)
+
 
 

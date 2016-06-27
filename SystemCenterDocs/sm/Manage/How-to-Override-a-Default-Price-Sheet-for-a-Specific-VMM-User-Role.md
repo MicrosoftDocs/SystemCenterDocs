@@ -11,6 +11,9 @@ ms.topic: article
 ms.assetid: 383a9a81-7543-4350-9618-02435baaac82
 ---
 # How to Override a Default Price Sheet for a Specific VMM User Role
+
+>Applies To: System Center 2016 Technical Preview - Service Manager
+
 After Service Manager has discovered cloud objects from the Operations Manager CI connector, you can assign an existing price sheet that applies default price values to all the resources of the cloud. This process is useful when you have many virtual machines so that you do not have to define prices for all the individual virtual machine parts. Once the default price sheet is assigned to a cloud, you can override the default values, on a per-user basis. For more information about assigning a default price sheet to a cloud, see [How to Assign or Remove a Default Price Sheet for a Selected Cloud](How-to-Assign-or-Remove-a-Default-Price-Sheet-for-a-Selected-Cloud.md).
 
 ### To override a default price sheet for a specific VMM user role
@@ -31,5 +34,6 @@ After Service Manager has discovered cloud objects from the Operations Manager C
     > If a cloud previously had a price sheet assigned, then assigning a new one automatically unassigns the price sheet that was used previously.
 
 7.  Click **OK** to close the <CloudName\> form.
+
 
 

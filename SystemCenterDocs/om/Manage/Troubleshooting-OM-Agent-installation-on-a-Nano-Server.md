@@ -11,6 +11,9 @@ ms.topic: article
 ms.assetid: 5ad93e36-e6b9-44d5-bdc3-440b2ed44483
 ---
 # Troubleshooting OM Agent installation on a Nano Server
+
+>Applies To: System Center 2016 Technical Preview - Operations Manager
+
 If you encounter any difficulties with setting up the Operations Manager Agent on a Nano Server you can use the checklist below for possible solutions.
 
 ## Troubleshooting list
@@ -37,5 +40,6 @@ If you encounter any difficulties with setting up the Operations Manager Agent o
 |Unable to delete the agent directory.|Insufficient permissions to access the NanoAgent directory.|Make sure the account the script is running under has sufficient permissions to access the NanoAgent directory and run the Uninstallation script again.|
 |Unable to locate agent folder on the Nano Server.|Either the NanoAgent directory has been moved, or the account has insufficient permissions to access the NanoAgent directory.|Make sure the account the script is running under has sufficient permissions to access the NanoAgent directory and that the NanoAgent directory is present and run the Uninstallation script again.|
 |Unable to remove the agent directory. Try restarting the Nano Server and then re-running this script.|A process may be using the SCOM Agent.|Make sure there are no processes attached to the SCOM agent and run the Uninstallation script again.|
+
 
 

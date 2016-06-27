@@ -11,6 +11,9 @@ ms.topic: article
 ms.assetid: 59ac2317-06dc-4f83-b074-47a1bd4b98ac
 ---
 # Tuning Network Monitoring
+
+>Applies To: System Center 2016 Technical Preview - Operations Manager
+
 System Center Operations Manager includes the following management packs specific to network device discovery and monitoring:
 
 -   Network Management - Core Monitoring
@@ -95,5 +98,6 @@ The following monitors that generate alerts are disabled by default. Using overr
 |**ICMPv6 (Ping) Monitor**|Monitors the response of network devices to an IPv6 ping.|ICMPv6 IPv6|
 |**Collision Rate (Dot3 Ethernet)**|Monitors the packet collision rate on this device|-   Interface<br />-   Network Adapter|
 |**High Input Broadcast Rate (if MIB Dot3 Ethernet Port)**|Monitors the level of input broadcast packets on this device|-   Interface<br />-   Network Adapter|
+
 
 
