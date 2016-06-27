@@ -1,15 +1,18 @@
 ---
-title: Troubleshooting OM Agent installation on a Nano Server
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - operations-manager
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 5ad93e36-e6b9-44d5-bdc3-440b2ed44483
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  mgoedtel
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-27
+title:  Troubleshooting OM Agent installation on a Nano Server
+ms.technology:  operations-manager
+ms.assetid:  5ad93e36-e6b9-44d5-bdc3-440b2ed44483
 ---
+
+
+
 # Troubleshooting OM Agent installation on a Nano Server
 If you encounter any difficulties with setting up the Operations Manager Agent on a Nano Server you can use the checklist below for possible solutions.
 

@@ -1,15 +1,18 @@
 ---
-title: Operations Manager Agent Installation Methods
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - operations-manager
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: fc9ac08d-1643-4573-a17b-73001d0ac97e
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  mgoedtel
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-27
+title:  Operations Manager Agent Installation Methods
+ms.technology:  operations-manager
+ms.assetid:  fc9ac08d-1643-4573-a17b-73001d0ac97e
 ---
+
+
+
 # Operations Manager Agent Installation Methods
 An Operations Manager *agent* is a service that is installed on a computer. The agent collects data, compares sampled data to predefined values, creates alerts, and runs responses. A management server receives and distributes configurations to agents on monitored computers. There are several methods you can use to install an Operations Manager agent on a computer.
 

@@ -1,15 +1,18 @@
 ---
-title: Management Pack Assessment
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - operations-manager
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 5e0d9e0d-bb13-4c6e-8d32-901e757eb9fe
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  mgoedtel
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-27
+title:  Management Pack Assessment
+ms.technology:  operations-manager
+ms.assetid:  5e0d9e0d-bb13-4c6e-8d32-901e757eb9fe
 ---
+
+
+
 # Management Pack Assessment
 
 Operations Manager includes a new feature called Updates and Recommendations, to help you proactively identify new technologies or components (i.e. workloads) deployed in your IT infrastructure that were not monitored by Operations Manager or are not monitored using the latest version of a management pack.

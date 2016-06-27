@@ -1,15 +1,18 @@
 ---
-title: Install the Operations Manager Web Console
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - operations-manager
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 3f3c2824-c6eb-4ec1-8b3d-6a4c2f677b48
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  mgoedtel
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-27
+title:  Install the Operations Manager Web Console
+ms.technology:  operations-manager
+ms.assetid:  3f3c2824-c6eb-4ec1-8b3d-6a4c2f677b48
 ---
+
+
+
 # Install the Operations Manager Web Console
 You can install the web console when you install Operations Manager, or you can install it separately. You can install a stand-alone web console or install it on an existing management server that meets the prerequisites. For information about the prerequisites, see [System Requirements for System Center Technical Preview](../../system-requirements/System-Requirements-for-System-Center-Technical-Preview.md). After you install the web console, you must configure permissions inheritance to allow users to view performance and diagram views. For instructions, see [To configure permissions inheritance for the web console](#bkmk_toconfigurepermissionsinheritanceforthewebconsole).
 

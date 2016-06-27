@@ -1,15 +1,18 @@
 ---
-title: How to Upgrade a Web Console to System Center 2016 - Operations Manager
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - operations-manager
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 0415dfa5-bf13-4f0e-9105-8cc6cd36c6e2
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  mgoedtel
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-27
+title:  How to Upgrade a Web Console to System Center 2016   Operations Manager
+ms.technology:  operations-manager
+ms.assetid:  0415dfa5-bf13-4f0e-9105-8cc6cd36c6e2
 ---
+
+
+
 # How to Upgrade a Web Console to System Center 2016 - Operations Manager
 If you have a stand-alone System Center 2012 Service Pack 1 (SP1), Operations Manager web console server, you can upgrade it to System Center 2012 R2 Operations Manager.
 

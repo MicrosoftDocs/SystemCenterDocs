@@ -1,15 +1,18 @@
 ---
-title: Install a Gateway Server
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - operations-manager
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: adf8eada-1428-4827-b1f5-cf0ff86aa6c2
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  mgoedtel
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-27
+title:  Install a Gateway Server
+ms.technology:  operations-manager
+ms.assetid:  adf8eada-1428-4827-b1f5-cf0ff86aa6c2
 ---
+
+
+
 # Install a Gateway Server
 Gateway servers are used to enable agent-management of computers that are outside the Kerberos trust boundary of management groups, such as in a domain that is not trusted. The gateway server acts as a concentration point for agent-to-management server communication. Agents in domains that are not trusted communicate with the gateway server and the gateway server communicates with one or more management servers. Because communication between the gateway server and the management servers occurs over only one port (TCP 5723), that port is the only one that has to be opened on any intervening firewalls to enable management of multiple agent-managed computers. Multiple gateway servers can be placed in a single domain so that the agents can failover from one to the other if they lose communication with one of the gateway servers. Similarly, a single gateway server can be configured to failover between management servers so that no single point of failure exists in the communication chain.
 

@@ -1,15 +1,18 @@
 ---
-title: Pre-Upgrade Tasks When Upgrading to System Center 2016 - Operations Manager
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - operations-manager
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: f1c1c5cb-6c27-40ea-8753-2f03a83691ba
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  mgoedtel
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-27
+title:  Pre Upgrade Tasks When Upgrading to System Center 2016   Operations Manager
+ms.technology:  operations-manager
+ms.assetid:  f1c1c5cb-6c27-40ea-8753-2f03a83691ba
 ---
+
+
+
 # Pre-Upgrade Tasks When Upgrading to System Center 2016 - Operations Manager
 Perform the following pre-upgrade tasks in the order presented before you begin the upgrade process.
 

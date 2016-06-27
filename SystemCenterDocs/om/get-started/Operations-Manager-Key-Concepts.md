@@ -1,15 +1,18 @@
 ---
-title: Operations Manager Key Concepts
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - operations-manager
-ms.tgt_pltfrm: na
-ms.topic: get-started-article
-ms.assetid: 1b160ed6-c9f7-4533-8847-4fba7505cb46
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  mgoedtel
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-27
+title:  Operations Manager Key Concepts
+ms.technology:  operations-manager
+ms.assetid:  1b160ed6-c9f7-4533-8847-4fba7505cb46
 ---
+
+
+
 # Operations Manager Key Concepts
 Operations Manager, a component of Microsoft System Center 2016, is software that helps you monitor services, devices, and operations for many computers from a single console. This topic explains basic concepts about Operations Manager for the administrator who manages the Operations Manager infrastructure and the operator who monitors and supports the computers in your business.
 

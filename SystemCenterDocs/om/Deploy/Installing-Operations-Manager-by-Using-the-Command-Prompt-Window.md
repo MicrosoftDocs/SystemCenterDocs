@@ -1,15 +1,18 @@
 ---
-title: Installing Operations Manager by Using the Command Prompt Window
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - operations-manager
-ms.tgt_pltfrm: na
-ms.topic: get-started-article
-ms.assetid: 4c6535e3-756c-4b48-8e7c-28085ba06677
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  mgoedtel
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-27
+title:  Installing Operations Manager by Using the Command Prompt Window
+ms.technology:  operations-manager
+ms.assetid:  4c6535e3-756c-4b48-8e7c-28085ba06677
 ---
+
+
+
 # Installing Operations Manager by Using the Command Prompt Window
 You can install features of Operations Manager by using the **setup.exe** command in the Command Prompt window. Gateway and agent installations require the use of MOMGateway.msi and MOMAgent.msi. You must ensure that all servers meet the minimum supported configuration requirements for System Center 2016 Technical Preview - Operations Manager. For more information, see [System Requirements for System Center Technical Preview](../../system-requirements/System-Requirements-for-System-Center-Technical-Preview.md).
 

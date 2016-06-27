@@ -1,15 +1,18 @@
 ---
-title: Deploying System Center 2016 - Operations Manager
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - operations-manager
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 0a3df7b4-885e-4e80-b6b7-960ba5c5a774
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  mgoedtel
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-27
+title:  Deploying System Center 2016 Operations Manager
+ms.technology:  operations-manager
+ms.assetid:  0a3df7b4-885e-4e80-b6b7-960ba5c5a774
 ---
+
+
+
 # Deploying System Center 2016 - Operations Manager
 All System Center 2016 Technical Preview - Operations Manager individual management group deployments will either be an "all-in-one" installation, where all features are loaded on a single server, or a distributed installation. Installations can then be combined together to form an overall Operations Manager infrastructure that consists of multiple management groups. These management groups can then relate to each other as your business needs dictate.
 

@@ -1,15 +1,18 @@
 ---
-title: Install Agent on UNIX and Linux Using the Discovery Wizard
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - operations-manager
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: da7f3214-dd4a-449a-bdc3-7435c6378e45
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  mgoedtel
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-27
+title:  Install Agent on UNIX and Linux Using the Discovery Wizard
+ms.technology:  operations-manager
+ms.assetid:  da7f3214-dd4a-449a-bdc3-7435c6378e45
 ---
+
+
+
 # Install Agent on UNIX and Linux Using the Discovery Wizard
 Use the **Computer and Device Management Wizard** to discover and install agents on UNIX and Linux computers. For a list of the supported operating system versions, see [Supported Configurations](http://go.microsoft.com/fwlink/p/?LinkID=223642).
 

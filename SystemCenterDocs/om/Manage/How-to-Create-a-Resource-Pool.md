@@ -1,15 +1,18 @@
 ---
-title: How to Create a Resource Pool
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - operations-manager
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: de0eb016-4817-43b8-ac12-84e4017fcc3d
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  mgoedtel
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-27
+title:  How to Create a Resource Pool
+ms.technology:  operations-manager
+ms.assetid:  de0eb016-4817-43b8-ac12-84e4017fcc3d
 ---
+
+
+
 # How to Create a Resource Pool
 A Resource Pool is a collection of management servers and/or gateway servers used to distribute work amongst themselves and take over work from a failed member.  
 

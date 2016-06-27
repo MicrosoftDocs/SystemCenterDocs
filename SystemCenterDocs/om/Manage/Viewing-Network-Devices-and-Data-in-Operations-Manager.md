@@ -1,15 +1,18 @@
 ---
-title: Viewing Network Devices and Data in Operations Manager
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - operations-manager
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: f210ed66-1bed-4571-b506-868258f33329
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  mgoedtel
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-27
+title:  Viewing Network Devices and Data in Operations Manager
+ms.technology:  operations-manager
+ms.assetid:  f210ed66-1bed-4571-b506-868258f33329
 ---
+
+
+
 # Viewing Network Devices and Data in Operations Manager
 After System Center Operations Manager discovers your network devices, you can view information about the devices using the following procedures.
 

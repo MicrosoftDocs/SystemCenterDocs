@@ -1,15 +1,18 @@
 ---
-title: Configuring Agents
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - operations-manager
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: bb877f14-01d6-4f3c-80b6-4c3468ee1dba
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  mgoedtel
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-27
+title:  Configuring Agents
+ms.technology:  operations-manager
+ms.assetid:  bb877f14-01d6-4f3c-80b6-4c3468ee1dba
 ---
+
+
+
 # Configuring Agents
 In System Center Operations Manager, when you install an agent on a computer, an Operations Manager Agent application is added to Control Panel. You can use the application to change the account that the agent will use when performing actions requested by the management server, to remove a management group from an agent configuration, and to configure the Active Directory integration setting for the agent. To perform these tasks, you must have local Administrator permissions on the computer.
 

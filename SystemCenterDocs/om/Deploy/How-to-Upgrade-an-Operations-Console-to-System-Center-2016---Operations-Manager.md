@@ -1,15 +1,18 @@
 ---
-title: How to Upgrade an Operations Console to System Center 2016 - Operations Manager
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - operations-manager
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 98117114-70f8-49ad-a424-8be5561b822e
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  mgoedtel
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-27
+title:  How to Upgrade an Operations Console to System Center 2016   Operations Manager
+ms.technology:  operations-manager
+ms.assetid:  98117114-70f8-49ad-a424-8be5561b822e
 ---
+
+
+
 # How to Upgrade an Operations Console to System Center 2016 - Operations Manager
 This procedure upgrades a stand-alone Operations console to System Center 2016 Technical Preview - Operations Manager. Perform this procedure locally on the computer that has a stand-alone Operations console installed. You do not have to perform this procedure to upgrade Operations consoles that are installed locally on a management server.
 

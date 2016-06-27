@@ -1,15 +1,18 @@
 ---
-title: How to Install an Operations Manager Management Server
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - operations-manager
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 2f228f97-54fd-4126-8a05-2065aab4dc19
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  mgoedtel
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-27
+title:  How to Install an Operations Manager Management Server
+ms.technology:  operations-manager
+ms.assetid:  2f228f97-54fd-4126-8a05-2065aab4dc19
 ---
+
+
+
 # How to Install an Operations Manager Management Server
 In System Center 2016 Technical Preview - Operations Manager the first feature you install is the management server. The setup procedure creates the operational database and data warehouse database. The procedure described in this topic assumes that you have already installed a supported version of Microsoft SQL Server locally on the  management server. However, you can specify an instance of SQL Server that is installed on a separate server.
 

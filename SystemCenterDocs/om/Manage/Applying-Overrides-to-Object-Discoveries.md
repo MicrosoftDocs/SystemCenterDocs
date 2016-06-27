@@ -1,15 +1,18 @@
 ---
-title: Applying Overrides to Object Discoveries
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - operations-manager
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 727d2bf5-fd95-46a7-a654-46b299ee7136
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  mgoedtel
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-27
+title:  Applying Overrides to Object Discoveries
+ms.technology:  operations-manager
+ms.assetid:  727d2bf5-fd95-46a7-a654-46b299ee7136
 ---
+
+
+
 # Applying Overrides to Object Discoveries
 System Center Operations Manager monitors computers and devices that it has discovered, and it also discovers applications and features that it discovers on monitored computers. There may be situations where you want to limit discovery. For example, you might want only some instances of SQL Server to be discovered and monitored, or you want to remove a computer that has already been discovered.
 

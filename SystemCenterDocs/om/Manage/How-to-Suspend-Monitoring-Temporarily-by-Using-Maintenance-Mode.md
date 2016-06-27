@@ -1,15 +1,18 @@
 ---
-title: How to Suspend Monitoring Temporarily by Using Maintenance Mode
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - operations-manager
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: e929ecc9-ad1f-46f6-bb93-9e0aa02580b2
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  mgoedtel
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-27
+title:  How to Suspend Monitoring Temporarily by Using Maintenance Mode
+ms.technology:  operations-manager
+ms.assetid:  e929ecc9-ad1f-46f6-bb93-9e0aa02580b2
 ---
+
+
+
 # How to Suspend Monitoring Temporarily by Using Maintenance Mode
 Maintenance mode in Operations Manager enables you to avoid any alerts or errors that might occur when a monitored object, such as a computer, a SQL database, or distributed application, is taken offline for maintenance. Maintenance mode suspends the following features:
 

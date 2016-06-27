@@ -1,15 +1,18 @@
 ---
-title: Operations Manager Accounts
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - operations-manager
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 923cdb13-3c6f-4892-ae15-6dc55c0593d4
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  mgoedtel
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-27
+title:  Operations Manager Accounts
+ms.technology:  operations-manager
+ms.assetid:  923cdb13-3c6f-4892-ae15-6dc55c0593d4
 ---
+
+
+
 # Operations Manager Accounts
 To communicate with various parts of the monitoring infrastructure, the System Center Operations Manager management group requires two accounts: the Management Server Action Account and the System Center Configuration service and System Center Data Access Service Account. You are required to specify credentials for these accounts during installation.
 

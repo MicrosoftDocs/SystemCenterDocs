@@ -1,15 +1,18 @@
 ---
-title: System Center 2016 - Operations Manager Operations Guide
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - operations-manager
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 86de4599-3d8e-4199-a986-6171bd962f7c
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  mgoedtel
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-27
+title:  System Center 2016   Operations Manager Operations Guide
+ms.technology:  operations-manager
+ms.assetid:  86de4599-3d8e-4199-a986-6171bd962f7c
 ---
+
+
+
 # System Center 2016 - Operations Manager Operations Guide
 Operations Manager, a component of System Center 2016, enables you to monitor services, devices, and operations for many computers in a single console. Operators can gain rapid insight into the state of the IT environment and the IT services running across different systems and workloads by using numerous views that show state, health, and performance information, as well as alerts generated for availability, performance, configuration and security situations.
 

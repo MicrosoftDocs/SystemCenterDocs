@@ -1,15 +1,18 @@
 ---
-title: How to Create a new Maintenance Schedule
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - operations-manager
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: cecbf000-42f3-4c50-9edc-98600f50e1bf
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  mgoedtel
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-27
+title:  How to Create a new Maintenance Schedule
+ms.technology:  operations-manager
+ms.assetid:  cecbf000-42f3-4c50-9edc-98600f50e1bf
 ---
+
+
+
 # How to Create a new Maintenance Schedule
 Maintenance mode is a feature in Operations Manager to suspend monitoring of an object during regular software or hardware maintenance activities such as software updates or hardware replacements. When an object is placed into Maintenance Mode, all work-flows targeted against that object are suspended during that specific interval.
 

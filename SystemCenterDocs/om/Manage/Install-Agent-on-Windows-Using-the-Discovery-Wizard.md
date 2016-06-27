@@ -1,15 +1,18 @@
 ---
-title: Install Agent on Windows Using the Discovery Wizard
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - operations-manager
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: e82aa37c-e823-4162-aa29-83e4f621d201
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  mgoedtel
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-27
+title:  Install Agent on Windows Using the Discovery Wizard
+ms.technology:  operations-manager
+ms.assetid:  e82aa37c-e823-4162-aa29-83e4f621d201
 ---
+
+
+
 # Install Agent on Windows Using the Discovery Wizard
 You can use the Operations console to search your environment for manageable objects and then deploy an agent to any object that you want to monitor. The process of searching your environment is called “discovery.” One of the advantages of using discovery is that it lists *all* manageable objects, including any that you might not be aware of.
 

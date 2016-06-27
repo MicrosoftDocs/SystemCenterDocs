@@ -1,15 +1,18 @@
 ---
-title: Diagnostic and Recovery Tasks
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - operations-manager
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 90f0f96f-9b54-41e0-8ae9-e3c3a0dc6f3c
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  mgoedtel
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-27
+title:  Diagnostic and Recovery Tasks
+ms.technology:  operations-manager
+ms.assetid:  90f0f96f-9b54-41e0-8ae9-e3c3a0dc6f3c
 ---
+
+
+
 # Diagnostic and Recovery Tasks
 Monitors in System Center Operations Manager can do more than notify you of problems by sending an alert. Some monitors also provide diagnostic and recovery tasks to help investigate and resolve those problems.
 

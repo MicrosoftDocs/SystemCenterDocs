@@ -1,15 +1,18 @@
 ---
-title: How to Install the Operations Manager Reporting Server
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - operations-manager
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: d89df5c3-b0b0-44da-9b8f-7e505c305045
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  mgoedtel
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-27
+title:  How to Install the Operations Manager Reporting Server
+ms.technology:  operations-manager
+ms.assetid:  d89df5c3-b0b0-44da-9b8f-7e505c305045
 ---
+
+
+
 # How to Install the Operations Manager Reporting Server
 In this procedure, the Reporting server is installed on a stand-alone server that is hosting the SQL Server database and SQL Server Reporting Services.
 

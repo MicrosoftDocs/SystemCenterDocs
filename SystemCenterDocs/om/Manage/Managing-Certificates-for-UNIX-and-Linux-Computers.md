@@ -1,15 +1,18 @@
 ---
-title: Managing Certificates for UNIX and Linux Computers
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - operations-manager
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 41f74547-a776-414c-80d9-9b8dbb93a1e0
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  mgoedtel
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-27
+title:  Managing Certificates for UNIX and Linux Computers
+ms.technology:  operations-manager
+ms.assetid:  41f74547-a776-414c-80d9-9b8dbb93a1e0
 ---
+
+
+
 # Managing Certificates for UNIX and Linux Computers
 With System Center Operations Manager, you can deploy agents to UNIX or Linux computers. Kerberos authentication is not possible. Therefore, certificates are used between the management server and the UNIX or Linux computers. In this scenario, the certificates are self-signed by the management server. (Although it is possible to use third-party certificates, they are not needed.)
 

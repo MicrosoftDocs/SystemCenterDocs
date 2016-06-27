@@ -1,15 +1,18 @@
 ---
-title: Install Agent Using the MOMAgent.msi Setup Wizard_1
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - operations-manager
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 8b668552-daf7-4a09-8b0c-3da181e979d1
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  mgoedtel
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-27
+title:  Install Agent Using the MOMAgent.msi Setup Wizard
+ms.technology:  operations-manager
+ms.assetid:  8b668552-daf7-4a09-8b0c-3da181e979d1
 ---
+
+
+
 # Install Agent Using the MOMAgent.msi Setup Wizard_1
 Use the following procedure to deploy the System Center 2016 Technical Preview - Operations Manager agent on computers running Windows by using the MOMAgent.msi setup wizard. For a list of the supported operating system versions, see [Supported Configurations](http://go.microsoft.com/fwlink/p/?LinkID=223642).
 

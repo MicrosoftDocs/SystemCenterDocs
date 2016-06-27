@@ -1,15 +1,18 @@
 ---
-title: How to Upgrade an Agent to System Center 2016 - Operations Manager
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - operations-manager
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: c8153b24-0618-4f3c-a9b2-1dc27107470f
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  mgoedtel
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-27
+title:  How to Upgrade an Agent to System Center 2016   Operations Manager
+ms.technology:  operations-manager
+ms.assetid:  c8153b24-0618-4f3c-a9b2-1dc27107470f
 ---
+
+
+
 # How to Upgrade an Agent to System Center 2016 - Operations Manager
 Use the following procedures to upgrade to System Center 2016 Technical Preview - Operations Manager agents. You should first verify that the agents meet minimum supported configurations. For more information, see [System Requirements: System Center 2016 - Operations Manager](../../system-requirements/System-Requirements-for-System-Center-Technical-Preview.md).
 

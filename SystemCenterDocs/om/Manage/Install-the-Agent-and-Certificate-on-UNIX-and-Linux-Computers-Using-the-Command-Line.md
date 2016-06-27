@@ -1,15 +1,18 @@
 ---
-title: Install the Agent and Certificate on UNIX and Linux Computers Using the Command Line
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - operations-manager
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 9a0a10f3-b755-4a3a-b6e7-e2475dfae2f2
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  mgoedtel
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-27
+title:  Install the Agent and Certificate on UNIX and Linux Computers Using the Command Line
+ms.technology:  operations-manager
+ms.assetid:  9a0a10f3-b755-4a3a-b6e7-e2475dfae2f2
 ---
+
+
+
 # Install the Agent and Certificate on UNIX and Linux Computers Using the Command Line
 Your environment may require that you manually install the agent. Use the following procedures to manually install agents to UNIX and Linux computers for monitoring in System Center 2016 Technical Preview - Operations Manager and System Center 2016 Technical Preview, System Center 2016 Technical Preview - Operations Manager.
 

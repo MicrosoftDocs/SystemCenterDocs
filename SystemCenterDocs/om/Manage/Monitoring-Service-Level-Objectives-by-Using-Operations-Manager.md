@@ -1,15 +1,18 @@
 ---
-title: Monitoring Service Level Objectives by Using Operations Manager
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - operations-manager
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: c7f7aac4-41b4-4094-bad6-3a509ff71bba
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  mgoedtel
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-27
+title:  Monitoring Service Level Objectives by Using Operations Manager
+ms.technology:  operations-manager
+ms.assetid:  c7f7aac4-41b4-4094-bad6-3a509ff71bba
 ---
+
+
+
 # Monitoring Service Level Objectives by Using Operations Manager
 To ensure that resources, such as applications and systems, are available and performing at acceptable levels, companies set goals for their service availability and response times. System Center Operations Manager provides the capability to monitor these service goals by tracking service level objectives.
 

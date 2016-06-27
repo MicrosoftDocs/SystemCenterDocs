@@ -1,15 +1,18 @@
 ---
-title: Quick Reference to Operations Manager Tasks
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - operations-manager
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: f270994e-2b88-4e58-945f-f1c7954e0e0c
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  mgoedtel
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-27
+title:  Quick Reference to Operations Manager Tasks
+ms.technology:  operations-manager
+ms.assetid:  f270994e-2b88-4e58-945f-f1c7954e0e0c
 ---
+
+
+
 # Quick Reference to Operations Manager Tasks
 The following table gives a quick reference for where to perform common tasks and links to relevant information.
 

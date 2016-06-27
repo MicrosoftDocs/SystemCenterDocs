@@ -1,15 +1,18 @@
 ---
-title: Configuring a Firewall for Operations Manager
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - operations-manager
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: d3c739a6-8f74-4a67-a76c-0f67321064d2
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  mgoedtel
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-27
+title:  Configuring a Firewall for Operations Manager
+ms.technology:  operations-manager
+ms.assetid:  d3c739a6-8f74-4a67-a76c-0f67321064d2
 ---
+
+
+
 # Configuring a Firewall for Operations Manager
 This section describes how to configure your environment to place  a Report data warehouse behind a firewall.
 
