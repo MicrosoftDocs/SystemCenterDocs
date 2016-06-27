@@ -1,15 +1,16 @@
 ---
-title: Data Protection Manager
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - data-protection-manager
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: ee706e89-20fd-4883-82e3-75565a705751
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  markgalioto
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-27
+title:  Data Protection Manager
+ms.technology:  data-protection-manager
+ms.assetid:  ee706e89-20fd-4883-82e3-75565a705751
 ---
+
 # Data Protection Manager
 Your organization needs a BCDR strategy to make sure that resources are available during planning and unplanned outages, and are that you're able to recover to normal working conditions when things go wrong.    Your BCDR strategy revolves broadly around keeping your data safe and recoverable, and keeping your business workloads, applications, and services continuously available.   System Center Data Protection Manager (DPM) is an robust enterprise backup and recovery system that contributes to your BCDR strategy by facilitating the backup and recovery of enterprise data.
 

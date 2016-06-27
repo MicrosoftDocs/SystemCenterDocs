@@ -1,13 +1,16 @@
 ---
-title: Deploy the DPM protection agent
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 502fff45-79b5-477b-af4f-3b8a39bdde1a
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  markgalioto
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-27
+title:  Deploy the DPM protection agent
+ms.technology:  data-protection-manager
+ms.assetid:  502fff45-79b5-477b-af4f-3b8a39bdde1a
 ---
+
 # Deploy the DPM protection agent
 The DPM protection agent is software that you install on each computer that contains data you 
           want to back up with DPM. It consists of two components - the protection agent itself and an agent coordinator. 
