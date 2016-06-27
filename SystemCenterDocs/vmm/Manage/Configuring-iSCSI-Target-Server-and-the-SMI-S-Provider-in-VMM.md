@@ -51,8 +51,6 @@ In this release of the SMI-S provider, there are the following known issues:
 ### Two providers for VMM management
 In this case, as the following diagrams show, two SMI-S providers are installed on the same computer, and each provider is registered with the Storage Management service for VMM. Due to a known issue with the Storage Management service, the service only discovers one of the providers.
 
-![](../../media/ VMMiSCSI2.png)
-
 ### Two providers for different storage management
 In this case, two WMI-based SMI-S providers are installed on the same computer, but only one SMI-S provider is intended for VMM management. The other provider is a third-party SMI-S provider is intended for File Server Storage Management. Due to a known issue in the Storage Management service, both VMM and File Service Storage Management only discover one provider, which might not be the intended provider for the application.
 
