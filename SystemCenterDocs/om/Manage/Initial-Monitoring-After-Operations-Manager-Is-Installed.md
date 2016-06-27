@@ -19,10 +19,10 @@ After Operations Manager is installed, you must decide which IT service you shou
 
 ## Initial Monitoring After Operations Manager Is Installed topics
 
-- [Managing Discovery and Agents](Manage/Managing-Discovery-and-Agents.md)
+- [Managing Discovery and Agents](Managing-Discovery-and-Agents.md)
 
     This section provides the information you need for installing agents and discovering objects to be monitored by Operations Manager.
 
-- [Using Management Packs](Manage/Using-Management-Packs.md)
+- [Using Management Packs](Using-Management-Packs.md)
 
     Monitoring for applications, features, and services is enabled by importing management packs. This section from the System Center 2016 section of the TechNet library explains what management packs do, and how to import and manage them.
