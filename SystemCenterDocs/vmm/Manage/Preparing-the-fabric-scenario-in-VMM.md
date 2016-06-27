@@ -91,12 +91,3 @@ The following table summarizes a set of sample **RESOURCES** that you could crea
     |**SILVER**|**Fibre Channel Serial Attached SCSI (SAS) storage (RAID 5)**|
     |**BRONZE**|**iSCSI Serial ATA (SATA) storage (RAID 5)**|
 
-## See Also
-[Managing host groups in VMM](Managing-host-groups-in-VMM.md)
-[Configuring the VMM library](Configuring-the-VMM-library.md)
-[Managing network resources with VMM](Managing-network-resources-with-VMM.md)
-[Managing hosts and host clusters with VMM](Managing-hosts-and-host-clusters-with-VMM.md)
-[Managing storage resources and capacity with VMM](Managing-storage-resources-and-capacity-with-VMM.md)
-[Managing fabric resources in VMM](Managing-fabric-resources-in-VMM.md)
-
-
