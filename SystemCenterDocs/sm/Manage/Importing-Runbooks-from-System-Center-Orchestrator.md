@@ -50,7 +50,7 @@ You can use the following procedures to create a connector for System Center 201
             > [!NOTE]
             > Special characters (such as the ampersand [&]) in the **User Name** box are not supported.
 
-        2.  In the **Test Connection** dialog box, make sure that the message “The connection to the server was successful” appears, and then click **OK**. On the **Connection** page, click **Next**.
+        2.  In the **Test Connection** dialog box, make sure that the message *The connection to the server was successful* appears, and then click **OK**. On the **Connection** page, click **Next**.
 
     5.  On the **Folder** page, select a folder, and then click **Next**.
 
@@ -58,7 +58,7 @@ You can use the following procedures to create a connector for System Center 201
 
     7.  On the **Summary** page, make sure that the settings are correct, and then click **Create**.
 
-    8.  On the **Completion** page, make sure that you receive the message “Orchestrator connector successfully created,” and then click **Close**.
+    8.  On the **Completion** page, make sure that you receive the message *Orchestrator connector successfully created*, and then click **Close**.
 
 ### To validate the creation of an Orchestrator connector
 

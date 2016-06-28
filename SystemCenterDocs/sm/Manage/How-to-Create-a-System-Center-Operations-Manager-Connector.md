@@ -47,7 +47,7 @@ There are two phases for creating the Alert connector. The first part involves c
 
     6.  On the **Server Details** page, click **Test Connection**. If you receive the following confirmation message, click **OK**, and then click **Next**:
 
-        “The connection to the server was successful.”
+        *The connection to the server was successful.*
 
     7.  On the **Alert Routing Rules** page, click **Add**.
 
@@ -103,7 +103,7 @@ There are two phases for creating the Alert connector. The first part involves c
 
     4.  On the **Server Details** page, click **Test Connection**. If you receive the following confirmation message, click **OK**, and then click **Next**:
 
-        “The connection to the server was successful.”
+        *The connection to the server was successful.*
 
     5.  On the **MP Selection** page, click **Select all**, or select the management packs that define the configuration items you want to import, and then click **Next**.
 

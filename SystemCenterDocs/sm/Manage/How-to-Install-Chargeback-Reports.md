@@ -44,7 +44,7 @@ After you have installed chargeback report files on the Operations Manager and S
 4.  If you have not already set execution policy to remotesigned, then type the following command, and then press ENTER:
 
     ```
-    Set-ExecutionPolicy –force RemoteSigned
+    Set-ExecutionPolicy -force RemoteSigned
     ```
 
 5.  Type the following command, and then press ENTER to run the PowerShell script that imports chargeback management packs and that add chargeback functionality to Operations Mananger:
@@ -68,7 +68,7 @@ After you have installed chargeback report files on the Operations Manager and S
 3.  If you have not already set execution policy to remotesigned, then type the following command, and then press ENTER:
 
     ```
-    Set-ExecutionPolicy –force RemoteSigned
+    Set-ExecutionPolicy -force RemoteSigned
     ```
 
 4.  Navigate to the Chargeback folder. For example, type **cd chargeback**.

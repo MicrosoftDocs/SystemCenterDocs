@@ -65,7 +65,7 @@ You can use the following procedures to create a connector to import data from C
 
 11. On the **Confirmation** page, make sure that you receive the following confirmation message:
 
-    “You have successfully completed the System Center Configuration Manager Connector Wizard.”
+    **You have successfully completed the System Center Configuration Manager Connector Wizard.**
 
     Then, click **Close**.
 

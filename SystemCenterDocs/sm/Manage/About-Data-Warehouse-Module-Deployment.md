@@ -34,7 +34,7 @@ It is possible to remove management packs from the data warehouse. However, keep
     > [!NOTE]
     > Only sealed management packs are synchronized from Service Manager to the data warehouse. An exception to this is list items, also known as enumerations. Groups or queues are synchronized to the data warehouse, regardless of whether they are in a sealed or unsealed management pack.
 
-Management packs that are imported from Service Manager are Service Manager–specific and data warehouse specific. The Service Manager management packs provide awareness of what the Service Manager database is structured like, and the data warehouse management packs drive the structure and processes of the data warehouse databases.
+Management packs that are imported from Service Manager are Service Manager-specific and data warehouse specific. The Service Manager management packs provide awareness of what the Service Manager database is structured like, and the data warehouse management packs drive the structure and processes of the data warehouse databases.
 
 ## Report Deployment
 The management pack synchronization process imports management packs from Service Manager, and it defines how those management packs shape the structure, move the data, and copy reports for the data warehouse and reporting. After those management packs are synchronized between Service Manager and the data warehouse, the data is retrieved and reports are deployed for user consumption.
@@ -57,7 +57,7 @@ Sequentially, report deployment occurs in the following process:
 
 8.  Any necessary changes to extract, transform, and load (ETL) modules are made to the DWStagingandConfig database.
 
-Management packs that contain only Service Manager–specific information do not cause the deployment activities to execute. They are only be triggered for new data warehouse and reporting-specific elements.
+Management packs that contain only Service Manager-specific information do not cause the deployment activities to execute. They are only be triggered for new data warehouse and reporting-specific elements.
 
 ## Understanding the ETL Processes
 After the data warehouse schema and reports are deployed, the DWDataMart database is populated with actual data for reporting purposes. This is done by the ETL processes. These three processes each serve their own specific purpose:

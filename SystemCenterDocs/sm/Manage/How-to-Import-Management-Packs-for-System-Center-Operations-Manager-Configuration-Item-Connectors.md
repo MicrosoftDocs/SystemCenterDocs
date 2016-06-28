@@ -74,7 +74,7 @@ For the System Center Operations Manager configuration item (CI) connector to fu
 
 7.  In **Import Management Packs**, select all of the management packs, and then click **Import**.
 
-8.  When the import process is complete, the message “The management pack was imported successfully” will appear.
+8.  When the import process is complete, the message *The management pack was imported successfully* will appear.
 
 9. Click **OK**.
 

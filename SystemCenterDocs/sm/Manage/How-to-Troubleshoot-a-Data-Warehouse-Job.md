@@ -14,7 +14,7 @@ ms.assetid: 53e50bfa-c0b9-4fdd-8d96-dd4aea852eb8
 
 >Applies To: System Center 2016 Technical Preview - Service Manager
 
-In Service Manager, you may encounter problems related to data warehouse jobs. After the Data Warehouse Registration Wizard completes and after Reporting becomes available in the Service Manager console, you can start running reports. If, for example, the incident management report you run doesn’t show updated data, you can use Windows PowerShell cmdlets to troubleshoot the problem.
+In Service Manager, you may encounter problems related to data warehouse jobs. After the Data Warehouse Registration Wizard completes and after Reporting becomes available in the Service Manager console, you can start running reports. If, for example, the incident management report you run doesn't show updated data, you can use Windows PowerShell cmdlets to troubleshoot the problem.
 
 You can use the first procedure to determine whether a job failed using Windows PowerShell cmdlets, and you can evaluate any error messages that this job created.
 
@@ -30,7 +30,7 @@ The second procedure can be used to change the default transform job timeout per
     Get-SCDWJob
     ```
 
-3.  Review the output, and locate any job with “Failed ” status.
+3.  Review the output, and locate any job with **Failed** status.
 
 4.  Type the following command, and then press ENTER. In the command, specify the data warehouse job that failed as the value of the *JobName* parameter.
 

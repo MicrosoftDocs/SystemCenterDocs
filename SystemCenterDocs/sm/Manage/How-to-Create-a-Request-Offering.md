@@ -76,7 +76,7 @@ You can use the following procedure to create a request offering.
 
 8.  On the **Map Prompts** page, associate prompts with various fields of a service request or its activities, depending on the complexity of the form and the extension of the class that you have made. Complete the following steps to associate the justification to the review activity:
 
-    1.  Select **Approval for the user requesting membership to the Active Directory group – (Review Activity)**.
+    1.  Select **Approval for the user requesting membership to the Active Directory group - (Review Activity)**.
 
     2.  Next to **Description**, select the box under **Prompt Output**, and then in the list, select **3. Enter your justification: String**.
 

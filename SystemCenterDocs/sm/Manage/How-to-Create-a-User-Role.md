@@ -35,7 +35,7 @@ Use the following procedures to create a user role and assign users to that role
     4.  On the following pages, all the classes, queues, groups, tasks, views, and form templates that are available for the specified user role from the specified management packs, are displayed. You can select specific items on these pages to further limit the set of data that access is assigned to.
 
         > [!IMPORTANT]
-        > The groups and the queues lists are not filtered—all groups and queues from all management packs are listed. If you select the **Select all queues** item on the **Queues** page, on the **Groups** page, **Select all Groups** is selected automatically. In addition, by default, no groups have been created. You have to create a group if you want to limit scope by group.
+        > The groups and the queues lists are not filtered--all groups and queues from all management packs are listed. If you select the **Select all queues** item on the **Queues** page, on the **Groups** page, **Select all Groups** is selected automatically. In addition, by default, no groups have been created. You have to create a group if you want to limit scope by group.
 
     5.  On the **Users** page, click **Add**, and use the **Select Users or Groups** dialog box to select users and user groups from Active Directory Domain Services (AD DS) for this user role, and then click **Next**.
 

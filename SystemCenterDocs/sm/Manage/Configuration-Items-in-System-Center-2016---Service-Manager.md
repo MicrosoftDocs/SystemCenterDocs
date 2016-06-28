@@ -20,7 +20,7 @@ A service is a special kind of configuration item that includes both technical a
 
 You can use connectors to import a large number of configuration items from Active Directory Domain Services (AD DS), Configuration Manager, and Operations Manager, or you can manually create single CIs. You can also use the Operations Manager CI connector to import distributed applications in Operations Manager as a service. 
 > [!NOTE]
-> When you open a view to display a large number of items—typically, more than 5,000—the view can take a few minutes to display complete results.
+> When you open a view to display a large number of items - typically, more than 5,000 - the view can take a few minutes to display complete results.
 
 
 

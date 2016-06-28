@@ -25,7 +25,7 @@ The Event Viewer task that you create will display logs from the computer that i
 
 ## How to Create a Task
 
-Use the following procedures in Service Manager to create a task—for example, a task that you can use to open Event Viewer and view logs on a computer—and then validate the new task. Event Viewer displays the logs from the remote computer that is listed as a Configuration Item in the incident.
+Use the following procedures in Service Manager to create a task--for example, a task that you can use to open Event Viewer and view logs on a computer--and then validate the new task. Event Viewer displays the logs from the remote computer that is listed as a Configuration Item in the incident.
 
 ### To create a task
 
@@ -44,7 +44,7 @@ Use the following procedures in Service Manager to create a task—for example, a 
         > [!NOTE]
         > In this release, if you edit and change any of the properties of a task, you have to close and reopen the console before you can view the task.
 
-    2.  Next to the **Target class** area, click the ellipsis button (**…**).
+    2.  Next to the **Target class** area, click the ellipsis button (**...**).
 
     3.  In the **Choose Class** dialog box, in the **Class** list, click **Incident**, and then click **OK**.
 

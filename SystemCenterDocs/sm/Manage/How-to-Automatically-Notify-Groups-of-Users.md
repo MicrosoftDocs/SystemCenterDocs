@@ -54,7 +54,7 @@ Setting up one of these for each support group will ensure that all your groups 
 
 3.  Click **Add**, and then click **Next** on the **Before you Begin** page.
 
-4.  Give the workflow a name, such as “Incident Created – Email Stakeholders”.
+4.  Give the workflow a name, such as *Incident Created Email Stakeholders*.
 
 5.  Leave the default of **When an incident is created** in the **Check for Events** drop-down list.
 

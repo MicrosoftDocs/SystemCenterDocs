@@ -18,7 +18,7 @@ You can use the following procedures to disable or enable a System Center Operat
 
 For example, after you configure an Operations Manager connector, if you must perform maintenance operations on the Service Manager database, you can temporarily disable the connector and suspend the data import. You can resume the data import by re-enabling the connector.
 
-For more information about how to delete a product connector from System Center Operations Manager, see [Removing an Old Product Connector](http://go.microsoft.com/fwlink/?LinkId=188974) on Kevin Holman’s System Center blog.
+For more information about how to delete a product connector from System Center Operations Manager, see [Removing an Old Product Connector](http://go.microsoft.com/fwlink/?LinkId=188974) on Kevin Holman's System Center blog.
 
 ### To disable an Operations Manager connector
 

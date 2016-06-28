@@ -14,7 +14,7 @@ ms.assetid: 8deef26a-3835-4cd8-98e0-7bffeb6ea7eb
 
 >Applies To: System Center 2016 Technical Preview - Service Manager
 
-Price sheets in Service Manager allow you to define price policies on existing private cloud objects that are discovered from the Operations Manager CI connector. You can associate one or more private clouds to a price sheet. After association, price information contained in the price sheet is shown in OLAP cubes and in a sample Excel report. You can use the OLAP cube data to create your own customized reports using various reporting solutions such as SQL Server Reporting Services, SQL Server Analysis Services tools, and Microsoft Excel. Additionally, you can modify the sample Excel report for your organization’s needs.
+Price sheets in Service Manager allow you to define price policies on existing private cloud objects that are discovered from the Operations Manager CI connector. You can associate one or more private clouds to a price sheet. After association, price information contained in the price sheet is shown in OLAP cubes and in a sample Excel report. You can use the OLAP cube data to create your own customized reports using various reporting solutions such as SQL Server Reporting Services, SQL Server Analysis Services tools, and Microsoft Excel. Additionally, you can modify the sample Excel report for your organization's needs.
 
 Although you can create multiple price sheets without publishing them, you must publish a price sheet before you can associate cloud objects to the price sheet.
 

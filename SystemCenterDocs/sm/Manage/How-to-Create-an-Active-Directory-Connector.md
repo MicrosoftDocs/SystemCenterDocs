@@ -57,7 +57,7 @@ You can use the following procedures in Service Manager to create,  validate, an
 
     10. On the **Completion** page, make sure that you receive the following confirmation message:
 
-        “Active Directory connector successfully created.”
+        *Active Directory connector successfully created.*
 
         Then, click **Close**.
 

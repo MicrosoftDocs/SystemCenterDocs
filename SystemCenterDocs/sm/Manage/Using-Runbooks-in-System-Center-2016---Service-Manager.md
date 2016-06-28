@@ -65,7 +65,7 @@ As an example, you can implement a new request offering using an Orchestrator ru
 
 9. Ensure that **Is Ready for Automation** is selected.
 
-10. Select the **Runbook** tab, and then under **Parameter Mapping**, note that the parameters from the runbook are mapped to generic properties—for example, Parameter1, Parameter2, and so on—of the runbook activity class. The **Type** column specifies whether the parameters are inputs or outputs. You can also type default values for each parameter using **Edit Mapping**.
+10. Select the **Runbook** tab, and then under **Parameter Mapping**, note that the parameters from the runbook are mapped to generic properties. For example, Parameter1, Parameter2, and so on of the runbook activity class. The **Type** column specifies whether the parameters are inputs or outputs. You can also type default values for each parameter using **Edit Mapping**.
 
 11. For any parameter, click **Edit Mapping**.
 

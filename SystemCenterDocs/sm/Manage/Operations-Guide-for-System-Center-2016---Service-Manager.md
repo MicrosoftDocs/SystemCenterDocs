@@ -14,7 +14,7 @@ ms.assetid: 5f004858-4f24-4b37-b7e2-70870ef66695
 
 >Applies To: System Center 2016 Technical Preview - Service Manager
 
-The Operations Guide for Microsoft System Center 2016 Technical Preview - Service Manager provides information about using the Service Manager console for day-to-day tasks that you perform to manage service desk functions for your organization’s computer infrastructure. This guide provides detailed procedures for the following tasks:
+The Operations Guide for Microsoft System Center 2016 Technical Preview - Service Manager provides information about using the Service Manager console for day-to-day tasks that you perform to manage service desk functions for your organization's computer infrastructure. This guide provides detailed procedures for the following tasks:
 
 ## Operations Guide Topics
 

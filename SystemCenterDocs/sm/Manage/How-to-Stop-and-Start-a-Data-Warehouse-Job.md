@@ -38,19 +38,19 @@ You can stop and start data warehouse jobs that are running in Service Manager. 
 2.  At the Windows PowerShell prompt, type the following commands, and then press ENTER after each command:
 
     ```
-    Stop-SCDWJob–JobName Extract_<data warehouse management group name>
+    Stop-SCDWJob-JobName Extract_<data warehouse management group name>
     ```
 
     ```
-    Stop-SCDWJob –JobName Extract_<Service Manager management group name>
+    Stop-SCDWJob -JobName Extract_<Service Manager management group name>
     ```
 
     ```
-    Stop-SCDWJob –JobName Transform.Common
+    Stop-SCDWJob -JobName Transform.Common
     ```
 
     ```
-    Stop-SCDWJob –JobName Load.Common
+    Stop-SCDWJob -JobName Load.Common
     ```
 
 3.  Type **exit**, and then press ENTER.
@@ -62,19 +62,19 @@ You can stop and start data warehouse jobs that are running in Service Manager. 
 2.  At the Windows PowerShell prompt, type the following commands, and then press ENTER after each command:
 
     ```
-    Start-SCDWJob –JobName Extract_<data warehouse management group name>
+    Start-SCDWJob -JobName Extract_<data warehouse management group name>
     ```
 
     ```
-    Start-SCDWJob –JobName Extract_<Service Manager management group name>
+    Start-SCDWJob -JobName Extract_<Service Manager management group name>
     ```
 
     ```
-    Start-SCDWJob –JobName Transform.Common
+    Start-SCDWJob -JobName Transform.Common
     ```
 
     ```
-    Start-SCDWJob –JobName Load.Common
+    Start-SCDWJob -JobName Load.Common
     ```
 
 3.  Type **exit**, and then press ENTER.
