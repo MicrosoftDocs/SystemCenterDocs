@@ -1,20 +1,21 @@
 ---
-title: How to Configure Incident Workflows
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - service-manager
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: bf7c1bd2-c986-4979-b7c6-b6ccf300a632
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  bandersmsft
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  How to Configure Incident Workflows
+ms.technology:  service-manager
+ms.assetid:  bf7c1bd2-c986-4979-b7c6-b6ccf300a632
 ---
+
 # How to Configure Incident Workflows
 
 >Applies To: System Center 2016 Technical Preview - Service Manager
 
-You can use the following procedure to create and configure a workflow rule that will change the support tier to **Tier 2** whenever the **Urgency** property of an incident that is related to printing problems is changed to **High**. This procedure assumes that you already created an incident template to change the support tier to **Tier 2**, and it assumes that you already created the priority calculation table. For more information, see [How to Set Incident Priority](How-to-Set-Incident-Priority.md) and “To create a new printer-related incident template” in [How to Create Incident Templates](How-to-Create-Incident-Templates.md).
+You can use the following procedure to create and configure a workflow rule that will change the support tier to **Tier 2** whenever the **Urgency** property of an incident that is related to printing problems is changed to **High**. This procedure assumes that you already created an incident template to change the support tier to **Tier 2**, and it assumes that you already created the priority calculation table. For more information, see [How to Set Incident Priority](How-to-Set-Incident-Priority.md) and ï¿½To create a new printer-related incident templateï¿½ in [How to Create Incident Templates](How-to-Create-Incident-Templates.md).
 
 ### To configure an incident workflow
 

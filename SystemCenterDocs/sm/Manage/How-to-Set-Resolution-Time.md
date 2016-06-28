@@ -1,15 +1,16 @@
 ---
-title: How to Set Resolution Time
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - service-manager
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 1ebced0b-1a2c-46ec-97f3-542b47891873
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  bandersmsft
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  How to Set Resolution Time
+ms.technology:  service-manager
+ms.assetid:  1ebced0b-1a2c-46ec-97f3-542b47891873
 ---
+
 # How to Set Resolution Time
 
 >Applies To: System Center 2016 Technical Preview - Service Manager

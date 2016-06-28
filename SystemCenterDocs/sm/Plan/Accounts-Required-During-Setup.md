@@ -1,15 +1,16 @@
 ---
-title: Accounts Required During Setup
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - service-manager
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 2b62bf84-fede-4618-b833-3bc1357a4aea
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  bandersmsft
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  Accounts Required During Setup
+ms.technology:  service-manager
+ms.assetid:  2b62bf84-fede-4618-b833-3bc1357a4aea
 ---
+
 # Accounts Required During Setup
 
 >Applies To: System Center 2016 Technical Preview - Service Manager

@@ -1,22 +1,23 @@
 ---
-title: Getting Started with Service Manager Cmdlets for Windows PowerShell
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - service-manager
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 961b1998-10b7-4f01-92b7-3b1daf5de732
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  bandersmsft
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  Getting Started with Service Manager Cmdlets for Windows PowerShell
+ms.technology:  service-manager
+ms.assetid:  961b1998-10b7-4f01-92b7-3b1daf5de732
 ---
+
 # Getting Started with Service Manager Cmdlets for Windows PowerShell
 
 >Applies To: System Center 2016 Technical Preview - Service Manager
 
 Windows PowerShell is a Windows command-line shell that includes an interactive prompt and a scripting environment. Windows PowerShell uses cmdlets to manipulate the Windows PowerShell objects. Service Manager includes many cmdlets that you can use to perform various Service Manager-related tasks without using the Service Manager console. For example, you can use the **Import-SCSMManagementPack** cmdlet to import a management pack.
 
-The Service Manager cmdlets are delivered in two modules that are listed below. In Service Manager, these cmdlet modules are not installed in the typical path that is listed in the $env:PSModulePath variable. Therefore, if you run the `Get-Module –List` cmdlet, the Service Manager modules are not listed.
+The Service Manager cmdlets are delivered in two modules that are listed below. In Service Manager, these cmdlet modules are not installed in the typical path that is listed in the $env:PSModulePath variable. Therefore, if you run the `Get-Module ï¿½List` cmdlet, the Service Manager modules are not listed.
 
 -   Administrator cmdlets: The System.Center.Service.Manager module which contains the cmdlets that are needed for common administrative tasks.
 
@@ -57,14 +58,14 @@ The administrator cmdlet module is automatically pre-imported in this session.
 3.  To list the cmdlets that are included in the data warehouse module, in the Service Manager Windows PowerShell session, type the following, and then press ENTER:
 
     ```
-    Get-Command –module Microsoft.EnterpriseManagement.Warehouse.Cmdlets
+    Get-Command ï¿½module Microsoft.EnterpriseManagement.Warehouse.Cmdlets
     ```
 
 ### To get Help for a cmdlet
 
 1.  Open a Service Manager Windows PowerShell session.
 
-2.  You can now access the on-the-box Help, or you can use the **–online** parameter to access the most up-to-date online Help:
+2.  You can now access the on-the-box Help, or you can use the **ï¿½online** parameter to access the most up-to-date online Help:
 
     -   On-the-box Help: Type the following command. Replace <*cmdlet-name*> with the name of the cmdlet that you want to get help for, for example, **Import-SCSMManagementPack**:
 
@@ -78,7 +79,7 @@ The administrator cmdlet module is automatically pre-imported in this session.
         Get-help <cmdlet-name> -online
         ```
 
-        This command uses the **–online** parameter to access the latest online Help for a cmdlet. It opens a web browser and displays the online Help that is available for <*cmdlet-name*>.
+        This command uses the **ï¿½online** parameter to access the latest online Help for a cmdlet. It opens a web browser and displays the online Help that is available for <*cmdlet-name*>.
 
 
 

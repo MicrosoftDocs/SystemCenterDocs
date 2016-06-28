@@ -1,15 +1,16 @@
 ---
-title: Managing Incidents and Problems in Service Manager
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - service-manager
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 83ebd70e-6671-4211-af5a-5a0c1ad123e4
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  bandersmsft
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  Managing Incidents and Problems in Service Manager
+ms.technology:  service-manager
+ms.assetid:  83ebd70e-6671-4211-af5a-5a0c1ad123e4
 ---
+
 # Managing Incidents and Problems in Service Manager
 
 >Applies To: System Center 2016 Technical Preview - Service Manager

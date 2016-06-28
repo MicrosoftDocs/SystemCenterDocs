@@ -1,15 +1,16 @@
 ---
-title: User Interface Customization in System Center 2016 - Service Manager
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - service-manager
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: bd4ce7ab-9e8f-4f83-a04a-f4385c2ac6b0
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  bandersmsft
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  User Interface Customization in System Center 2016   Service Manager
+ms.technology:  service-manager
+ms.assetid:  bd4ce7ab-9e8f-4f83-a04a-f4385c2ac6b0
 ---
+
 # User Interface Customization in System Center 2016 - Service Manager
 
 >Applies To: System Center 2016 Technical Preview - Service Manager
@@ -30,9 +31,9 @@ The **Failed Service Requests** view in Service Manager is in a sealed managemen
 
 4.  In the **Select management pack** dialog box, accept the default management pack, **Service Manager Service Request Configuration Library**, and then click **OK**.
 
-5.  Right-click **Failed Service Requests – Copy**, and then click **Edit View**.
+5.  Right-click **Failed Service Requests ï¿½ Copy**, and then click **Edit View**.
 
-6.  In the Edit Failed Service Requests – Copy Wizard, in **Name**, type a new name for this view. For example, type **New Failed Service Requests**, and then click **OK**.
+6.  In the Edit Failed Service Requests ï¿½ Copy Wizard, in **Name**, type a new name for this view. For example, type **New Failed Service Requests**, and then click **OK**.
 
 7.  Right-click **Failed Service Requests**, and then click **Hide View**.
 

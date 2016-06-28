@@ -1,15 +1,16 @@
 ---
-title: Using Runbooks in System Center 2016 - Service Manager
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - service-manager
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: a0863ac5-05d9-46b3-8e18-1f76e50ee07d
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  bandersmsft
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  Using Runbooks in System Center 2016   Service Manager
+ms.technology:  service-manager
+ms.assetid:  a0863ac5-05d9-46b3-8e18-1f76e50ee07d
 ---
+
 # Using Runbooks in System Center 2016 - Service Manager
 
 >Applies To: System Center 2016 Technical Preview - Service Manager
@@ -65,7 +66,7 @@ As an example, you can implement a new request offering using an Orchestrator ru
 
 9. Ensure that **Is Ready for Automation** is selected.
 
-10. Select the **Runbook** tab, and then under **Parameter Mapping**, note that the parameters from the runbook are mapped to generic properties—for example, Parameter1, Parameter2, and so on—of the runbook activity class. The **Type** column specifies whether the parameters are inputs or outputs. You can also type default values for each parameter using **Edit Mapping**.
+10. Select the **Runbook** tab, and then under **Parameter Mapping**, note that the parameters from the runbook are mapped to generic propertiesï¿½for example, Parameter1, Parameter2, and so onï¿½of the runbook activity class. The **Type** column specifies whether the parameters are inputs or outputs. You can also type default values for each parameter using **Edit Mapping**.
 
 11. For any parameter, click **Edit Mapping**.
 

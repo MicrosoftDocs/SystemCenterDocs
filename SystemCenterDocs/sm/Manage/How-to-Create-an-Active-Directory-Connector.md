@@ -1,15 +1,16 @@
 ---
-title: How to Create an Active Directory Connector_2
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - service-manager
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: b1468921-5bd4-4287-aa26-7f24084a54ac
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  bandersmsft
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  How to Create an Active Directory Connector
+ms.technology:  service-manager
+ms.assetid:  b1468921-5bd4-4287-aa26-7f24084a54ac
 ---
+
 # How to Create an Active Directory Connector_2
 
 >Applies To: System Center 2016 Technical Preview - Service Manager
@@ -57,7 +58,7 @@ You can use the following procedures in Service Manager to create,  validate, an
 
     10. On the **Completion** page, make sure that you receive the following confirmation message:
 
-        “Active Directory connector successfully created.”
+        ï¿½Active Directory connector successfully created.ï¿½
 
         Then, click **Close**.
 

@@ -1,15 +1,16 @@
 ---
-title: How to Install the Microsoft Report Viewer Redistributable Security Update
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - service-manager
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 8ac05138-86a7-4a1d-bd59-b55a49d3ec0d
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  bandersmsft
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  How to Install the Microsoft Report Viewer Redistributable Security Update
+ms.technology:  service-manager
+ms.assetid:  8ac05138-86a7-4a1d-bd59-b55a49d3ec0d
 ---
+
 # How to Install the Microsoft Report Viewer Redistributable Security Update
 
 >Applies To: System Center 2016 Technical Preview - Service Manager

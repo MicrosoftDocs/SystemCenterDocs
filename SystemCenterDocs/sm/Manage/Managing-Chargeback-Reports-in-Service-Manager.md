@@ -1,15 +1,16 @@
 ---
-title: Managing Chargeback Reports in Service Manager
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - service-manager
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 52ce9a2c-f29e-4db6-913a-9aa6b5fab36a
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  bandersmsft
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  Managing Chargeback Reports in Service Manager
+ms.technology:  service-manager
+ms.assetid:  52ce9a2c-f29e-4db6-913a-9aa6b5fab36a
 ---
+
 # Managing Chargeback Reports in Service Manager
 
 >Applies To: System Center 2016 Technical Preview - Service Manager
@@ -41,11 +42,11 @@ You must have Excel, or a viewer capable of opening Excel data files, installed 
 ## Configure Sample Chargeback Reports
 You can use the following procedure to configure the sample Microsoft Excel chargeback report (ChargebackReport.xlsx) that is included with Service Manager. This sample report is designed for you to modify for use in your organization. You can update the report any way you like. The sample report contains the following tabs:
 
--   Dashboard – This tab shows a chart of the top 3 cost centers, clouds, VMM user roles, price sheets, spending trend, and overall spending for the period that you select.
+-   Dashboard ï¿½ This tab shows a chart of the top 3 cost centers, clouds, VMM user roles, price sheets, spending trend, and overall spending for the period that you select.
 
--   Chargeback Daily Details – This tab shows a comprehensive list of daily costs detailing virtual machine cloud level and other costs assigned to price sheets for the year and month you select. It also includes a graph showing the top 3 clouds within cost centers.
+-   Chargeback Daily Details ï¿½ This tab shows a comprehensive list of daily costs detailing virtual machine cloud level and other costs assigned to price sheets for the year and month you select. It also includes a graph showing the top 3 clouds within cost centers.
 
--   Chargeback Monthly Details – This tab shows a comprehensive list of costs assigned to price sheets for the year and month you select.
+-   Chargeback Monthly Details ï¿½ This tab shows a comprehensive list of costs assigned to price sheets for the year and month you select.
 
 > [!NOTE]
 > The first time you open the file in with Excel, you must configure the workbook data connection so that it can retrieve information from OLAP data cubes in the Service Manager data warehouse management server.

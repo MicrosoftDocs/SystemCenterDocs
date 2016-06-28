@@ -1,15 +1,16 @@
 ---
-title: Service Manager Performance
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - service-manager
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: be5f9803-a341-4865-adf2-daf06e55485e
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  bandersmsft
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  Service Manager Performance
+ms.technology:  service-manager
+ms.assetid:  be5f9803-a341-4865-adf2-daf06e55485e
 ---
+
 # Service Manager Performance
 
 >Applies To: System Center 2016 Technical Preview - Service Manager
@@ -23,7 +24,7 @@ Performance for System Center 2016 Technical Preview - Service Manager server ro
 -   Workflow completion time. This is the length of time it takes for workflows to automatically apply some kind of action.
 
 ## Connector Performance
-Connector initial synchronization can take a significant amount of time, for example, 8 to 12 hours for a large initial synchronization with System Center Configuration Manager. As a connector synchronizes initially, you can expect performance to suffer for all Service Manager server roles and processes during this time. This occurs because of the way that data is inserted sequentially into the Service Manager database, which is a Microsoft SQL Server database. Although you cannot hasten the connector’s initial synchronization process, you can plan for the initial synchronization and ensure that the synchronization process completes well before Service Manager is put into production.
+Connector initial synchronization can take a significant amount of time, for example, 8 to 12 hours for a large initial synchronization with System Center Configuration Manager. As a connector synchronizes initially, you can expect performance to suffer for all Service Manager server roles and processes during this time. This occurs because of the way that data is inserted sequentially into the Service Manager database, which is a Microsoft SQL Server database. Although you cannot hasten the connectorï¿½s initial synchronization process, you can plan for the initial synchronization and ensure that the synchronization process completes well before Service Manager is put into production.
 
 When the initial synchronization is complete, Service Manager continues synchronizing the differences, which does not have a measurable impact on performance.
 
@@ -36,7 +37,7 @@ Workflow performance considerations include the following:
 
 -   In addition, when you create new workflows, such as a new notification subscription, additional load is placed on the system. As the number of new workflows that you create increases, the time it takes for each workflow to run also increases.
 
-When the system is under a heavy load—if, for example, a large number of new incidents are being created and each incident generates many workflows—performance might be negatively affected.
+When the system is under a heavy loadï¿½if, for example, a large number of new incidents are being created and each incident generates many workflowsï¿½performance might be negatively affected.
 
 Workflow performance in System Center 2016 Technical Preview - Service Manager has improved from System Center 2016 Technical Preview - Service Manager because the new ManagmentHostKeepAlive management pack has increased workflow processing responsiveness so that almost all workflows process within one minute.
 
@@ -63,7 +64,7 @@ Solution 1: You can manually specify how often Service Manager checks for group 
     > [!NOTE]
     > For System Center 2016 Technical Preview - Service Manager, the System Center Management service was renamed to Microsoft Monitoring Agent.
 
-Solution 2: You can use a Windows PowerShell script to add objects of a type, such as “Users”, to a user role. Essentially, an analyst who is logged on in this role can access all objects that have a type equal to “User”. If you use this method, you eliminate the need for a very large group (“All Users”) and the expensive check that Service Manager performs to determine this group membership. On the Service Manager management server, you can run the following Windows PowerShell script to add the “user” type to a role “RoleName”. You will have to modify this example script for your environment.
+Solution 2: You can use a Windows PowerShell script to add objects of a type, such as ï¿½Usersï¿½, to a user role. Essentially, an analyst who is logged on in this role can access all objects that have a type equal to ï¿½Userï¿½. If you use this method, you eliminate the need for a very large group (ï¿½All Usersï¿½) and the expensive check that Service Manager performs to determine this group membership. On the Service Manager management server, you can run the following Windows PowerShell script to add the ï¿½userï¿½ type to a role ï¿½RoleNameï¿½. You will have to modify this example script for your environment.
 
 #### To run a Windows PowerShell script to add objects to a user role
 
@@ -86,7 +87,7 @@ $a = [reflection.assembly]::LoadWithPartialName("Microsoft.EnterpriseManagement.
 $m = new-object Microsoft.EnterpriseManagement.EnterpriseManagementGroup $Server 
 
 # Get Type object
-#   Note:  If you need to get a list of all available classes related to (for example) “User”,   use this command:
+#   Note:  If you need to get a list of all available classes related to (for example) ï¿½Userï¿½,   use this command:
 #               $m.EntityTypes.GetClasses() | ?{ $_.Name -like '*user*'} | %{ $_.Name}
 #
 $type = $m.EntityTypes.GetClasses() | ?{ $_.DisplayName -eq $TypeToAdd}
@@ -106,7 +107,7 @@ if ( $role.scope.objects.Contains($type.Id) ) {
 ```
 
 ## View Performance
-When you create views, plan on using “typical” classes in the system whenever possible. Most object classes—for example, Incident Management—have two types: “typical” and “advanced”. The typical object type contains simple references to a small subset of data that is related to an item. The advanced type contains many complex references to data that are related to an item. Typical types are simple projections; advanced types are complex projections. Most advanced object types are used to populate different fields in forms that you would not normally want to see displayed in a view. Whenever you create a view based on an advanced object type and when you open the view, Service Manager queries the database and a large amount of data is read. However, very little of the retrieved data is actually displayed or used.
+When you create views, plan on using ï¿½typicalï¿½ classes in the system whenever possible. Most object classesï¿½for example, Incident Managementï¿½have two types: ï¿½typicalï¿½ and ï¿½advancedï¿½. The typical object type contains simple references to a small subset of data that is related to an item. The advanced type contains many complex references to data that are related to an item. Typical types are simple projections; advanced types are complex projections. Most advanced object types are used to populate different fields in forms that you would not normally want to see displayed in a view. Whenever you create a view based on an advanced object type and when you open the view, Service Manager queries the database and a large amount of data is read. However, very little of the retrieved data is actually displayed or used.
 
 If you encounter performance problems with the views that you have defined when you use advanced object types in views, switch to using typical types. Or alternatively, you can create your own projection types that contain only the data you need to base a view upon. For more information, see the [Creating Views That Use Related Property Criteria (Type Projections) : Software Views Example blog post](http://go.microsoft.com/fwlink/p/?LinkID=184819) blog entry on the SCSM Engineering Team Blog.
 
@@ -146,7 +147,7 @@ Performance of the data warehouse server is affected by the number of Service Ma
 ## Self-Service Portal Performance
 The Self-Service Portal is designed for easy access to incident and service request filing. It is not designed to handle thousands of users simultaneously.
 
-Performance testing for the Self-Service Portal was focused on typical “Monday morning” scenarios—specifically, to ensure that on Monday morning hundreds of users can log in within a span of 5 to 10 minutes and open incidents with acceptable (less than 4-to-5 second) response times. This goal was achieved with the minimum hardware recommended in this document.
+Performance testing for the Self-Service Portal was focused on typical ï¿½Monday morningï¿½ scenariosï¿½specifically, to ensure that on Monday morning hundreds of users can log in within a span of 5 to 10 minutes and open incidents with acceptable (less than 4-to-5 second) response times. This goal was achieved with the minimum hardware recommended in this document.
 
 ## Service-Level Objective Performance
 There is no specific number of service-level objectives that Service Manager supports. For example, if an organization typically has few incidents, it can support more service-level objectives than it might otherwise be capable of. However, a larger incident volume might necessitate either fewer service-level objectives or a scale-out of additional hardware and software, as appropriate. We recommend that you create no more than five service-level objectives for a typical 50,000-computer Service Manager configuration. You could possibly create more service-level objectives. However, because conditions vary greatly from organization to organization, Microsoft cannot provide a concrete recommendation for the number of service-level objectives that you should not exceed. If your deployment configuration suffers from poor performance as a result of the number of service-level objectives, we recommend that you scale out using the next-larger deployment scenario, as described in the [Supported Configurations for Service Manager](Supported-Configurations-for-Service-Manager.md) section of this guide.

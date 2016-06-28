@@ -1,15 +1,16 @@
 ---
-title: How to Subscribe to Notifications
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - service-manager
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: a52f6f49-795a-43d1-a6d6-d86140c7d9d6
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  bandersmsft
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  How to Subscribe to Notifications
+ms.technology:  service-manager
+ms.assetid:  a52f6f49-795a-43d1-a6d6-d86140c7d9d6
 ---
+
 # How to Subscribe to Notifications
 
 >Applies To: System Center 2016 Technical Preview - Service Manager

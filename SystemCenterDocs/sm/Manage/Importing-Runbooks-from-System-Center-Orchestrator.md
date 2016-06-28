@@ -1,15 +1,16 @@
 ---
-title: Importing Runbooks from System Center Orchestrator
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - service-manager
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 33f8fa88-fad7-4354-bf6b-dbed1658ff0f
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  bandersmsft
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  Importing Runbooks from System Center Orchestrator
+ms.technology:  service-manager
+ms.assetid:  33f8fa88-fad7-4354-bf6b-dbed1658ff0f
 ---
+
 # Importing Runbooks from System Center Orchestrator
 
 >Applies To: System Center 2016 Technical Preview - Service Manager
@@ -50,7 +51,7 @@ You can use the following procedures to create a connector for System Center 201
             > [!NOTE]
             > Special characters (such as the ampersand [&]) in the **User Name** box are not supported.
 
-        2.  In the **Test Connection** dialog box, make sure that the message “The connection to the server was successful” appears, and then click **OK**. On the **Connection** page, click **Next**.
+        2.  In the **Test Connection** dialog box, make sure that the message ï¿½The connection to the server was successfulï¿½ appears, and then click **OK**. On the **Connection** page, click **Next**.
 
     5.  On the **Folder** page, select a folder, and then click **Next**.
 
@@ -58,7 +59,7 @@ You can use the following procedures to create a connector for System Center 201
 
     7.  On the **Summary** page, make sure that the settings are correct, and then click **Create**.
 
-    8.  On the **Completion** page, make sure that you receive the message “Orchestrator connector successfully created,” and then click **Close**.
+    8.  On the **Completion** page, make sure that you receive the message ï¿½Orchestrator connector successfully created,ï¿½ and then click **Close**.
 
 ### To validate the creation of an Orchestrator connector
 

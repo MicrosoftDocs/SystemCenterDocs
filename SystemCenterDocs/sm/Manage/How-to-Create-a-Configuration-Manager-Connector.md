@@ -1,15 +1,16 @@
 ---
-title: How to Create a Configuration Manager Connector_1
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - service-manager
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 70db0991-63d5-464a-978b-45e8783ec539
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  bandersmsft
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  How to Create a Configuration Manager Connector
+ms.technology:  service-manager
+ms.assetid:  70db0991-63d5-464a-978b-45e8783ec539
 ---
+
 # How to Create a Configuration Manager Connector_1
 
 >Applies To: System Center 2016 Technical Preview - Service Manager
@@ -65,7 +66,7 @@ You can use the following procedures to create a connector to import data from C
 
 11. On the **Confirmation** page, make sure that you receive the following confirmation message:
 
-    “You have successfully completed the System Center Configuration Manager Connector Wizard.”
+    ï¿½You have successfully completed the System Center Configuration Manager Connector Wizard.ï¿½
 
     Then, click **Close**.
 

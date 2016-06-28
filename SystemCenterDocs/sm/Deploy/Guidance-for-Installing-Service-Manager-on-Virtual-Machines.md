@@ -1,20 +1,21 @@
 ---
-title: Guidance for Installing Service Manager on Virtual Machines
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - service-manager
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 866fa7d8-0803-40d3-ae63-765f4850159e
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  bandersmsft
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  Guidance for Installing Service Manager on Virtual Machines
+ms.technology:  service-manager
+ms.assetid:  866fa7d8-0803-40d3-ae63-765f4850159e
 ---
+
 # Guidance for Installing Service Manager on Virtual Machines
 
 >Applies To: System Center 2016 Technical Preview - Service Manager
 
-This topic provides guidance that you have to consider when you install System Center 2016 Technical Preview - Service Manager in a Hyper-V virtual environment. If you are installing Microsoft SQL Server into an environment without Hyper-V, consult your vendor’s documentation for guidance regarding the use of SQL Server.
+This topic provides guidance that you have to consider when you install System Center 2016 Technical Preview - Service Manager in a Hyper-V virtual environment. If you are installing Microsoft SQL Server into an environment without Hyper-V, consult your vendorï¿½s documentation for guidance regarding the use of SQL Server.
 
 ## Deploying SQL Server in a Virtual Environment
 Before you deploy SQL Server in a Hyper-V environment, see [Running SQL Server 2008 in a Hyper-V Environment](http://go.microsoft.com/fwlink/p/?LinkID=144622). Keep the following in mind when you prepare a virtual environment for SQL Server:

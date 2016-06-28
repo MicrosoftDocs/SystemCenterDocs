@@ -1,15 +1,16 @@
 ---
-title: Planning for Performance and Scalability in Service Manager
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - service-manager
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 92bfb0ba-aec3-484f-bbd3-627c00a79ebe
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  bandersmsft
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  Planning for Performance and Scalability in Service Manager
+ms.technology:  service-manager
+ms.assetid:  92bfb0ba-aec3-484f-bbd3-627c00a79ebe
 ---
+
 # Planning for Performance and Scalability in Service Manager
 
 >Applies To: System Center 2016 Technical Preview - Service Manager
@@ -18,7 +19,7 @@ This section describes general performance and scalability planning guidance for
 
 Service Manager is a three-tiered application, consisting of a database, a data access module, and a console:
 
--   Every Service Manager deployment topology—from the largest to smallest—includes all three tiers, whether physically or virtually.
+-   Every Service Manager deployment topologyï¿½from the largest to smallestï¿½includes all three tiers, whether physically or virtually.
 
 -   The smallest deployment topology that is supported requires two servers, either physical servers or virtual servers. The largest deployment topology contains more than four servers.
 

@@ -1,15 +1,16 @@
 ---
-title: About Importing Data from Active Directory Domain Services
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - service-manager
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: b1d1485f-7c42-4572-8725-56685f51e0e0
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  bandersmsft
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  About Importing Data from Active Directory Domain Services
+ms.technology:  service-manager
+ms.assetid:  b1d1485f-7c42-4572-8725-56685f51e0e0
 ---
+
 # About Importing Data from Active Directory Domain Services
 
 >Applies To: System Center 2016 Technical Preview - Service Manager

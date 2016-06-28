@@ -1,20 +1,21 @@
 ---
-title: Contact a User from an Incident Form
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - service-manager
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 8e104877-97b2-4453-ae63-b57aa1564c4b
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  bandersmsft
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  Contact a User from an Incident Form
+ms.technology:  service-manager
+ms.assetid:  8e104877-97b2-4453-ae63-b57aa1564c4b
 ---
+
 # Contact a User from an Incident Form
 
 >Applies To: System Center 2016 Technical Preview - Service Manager
 
-In Service Manager, you can contact a user by email or by instant message when an incident form is open. The presence indicator is shown in the form next to the affected user’s name, and it displays their current status, if known.
+In Service Manager, you can contact a user by email or by instant message when an incident form is open. The presence indicator is shown in the form next to the affected userï¿½s name, and it displays their current status, if known.
 
 Both the computer  running the Service Manager console and the user you want to contact must have either  Lync 2013 or Skype for Business in Microsoft Office 2013 or Office 2016 installed.
 
@@ -24,7 +25,7 @@ Both the computer  running the Service Manager console and the user you want to 
 
 2.  Click **Send Mail**.
 
-3.  Your email client program opens and adds the user’s name to the **To** box. Compose the e-mail message, and then send it.
+3.  Your email client program opens and adds the userï¿½s name to the **To** box. Compose the e-mail message, and then send it.
 
 #### To contact a user by instant message
 

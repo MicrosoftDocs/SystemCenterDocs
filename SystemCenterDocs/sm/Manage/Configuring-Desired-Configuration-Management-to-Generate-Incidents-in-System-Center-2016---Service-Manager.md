@@ -1,15 +1,16 @@
 ---
-title: Configuring Desired Configuration Management to Generate Incidents in System Center 2016 - Service Manager
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology:
-  - service-manager
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 27337337-38a7-476f-974a-6ffa16027bf1
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  bandersmsft
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  Configuring Desired Configuration Management to Generate Incidents in System Center 2016   Service Manager
+ms.technology:  service-manager
+ms.assetid:  27337337-38a7-476f-974a-6ffa16027bf1
 ---
+
 # Configuring Desired Configuration Management to Generate Incidents in System Center 2016 - Service Manager
 
 >Applies To: System Center 2016 Technical Preview - Service Manager
@@ -26,9 +27,9 @@ Use the following procedure to configure incident management to automatically ge
 
 In Service Manager, you can import configuration baselines from System Center Configuration Manager by using a Configuration Manager connector. Then, you can configure Service Manager to create incidents for each Service Manager configuration item that is reported as noncompliant against the defined values.
 
-You can use the following procedures to configure incident management to automatically generate desired configuration management–based incidents and validate that the desired configuration management is configured.
+You can use the following procedures to configure incident management to automatically generate desired configuration managementï¿½based incidents and validate that the desired configuration management is configured.
 
-## To configure incident management to automatically generate desired configuration management–based incidents
+## To configure incident management to automatically generate desired configuration managementï¿½based incidents
 
 1.  In the Service Manager console, click **Administration**.
 
@@ -57,11 +58,11 @@ You can use the following procedures to configure incident management to automat
 
     7.  On the **Completion** page, make sure that you receive the following confirmation message, and then click **Close**:
 
-        “Desired Configuration Management Workflow Created Successfully”
+        ï¿½Desired Configuration Management Workflow Created Successfullyï¿½
 
 ### To validate that desired configuration management is configured
 
-1.  Import an out-of-compliance Service Manager configuration item that would match one of the desired configuration management rules. Then, locate the desired configuration management–based incident in Service Manager.
+1.  Import an out-of-compliance Service Manager configuration item that would match one of the desired configuration management rules. Then, locate the desired configuration managementï¿½based incident in Service Manager.
 
 2.  In the Service Manager console, click **Work Items**
 

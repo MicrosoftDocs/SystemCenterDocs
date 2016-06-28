@@ -1,15 +1,16 @@
 ---
-title: Effects of Deleting a Connector on Configuration Items
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - service-manager
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: fca58d2f-d6f4-470b-9f5d-dffb327c8e1a
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  bandersmsft
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  Effects of Deleting a Connector on Configuration Items
+ms.technology:  service-manager
+ms.assetid:  fca58d2f-d6f4-470b-9f5d-dffb327c8e1a
 ---
+
 # Effects of Deleting a Connector on Configuration Items
 
 >Applies To: System Center 2016 Technical Preview - Service Manager

@@ -1,15 +1,16 @@
 ---
-title: Managing Problems
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - service-manager
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 283fd1c6-5ed2-4098-ba0c-7f2b51de85df
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  bandersmsft
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  Managing Problems
+ms.technology:  service-manager
+ms.assetid:  283fd1c6-5ed2-4098-ba0c-7f2b51de85df
 ---
+
 # Managing Problems
 
 >Applies To: System Center 2016 Technical Preview - Service Manager

@@ -1,15 +1,16 @@
 ---
-title: What's New in Service Manager
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology:
-  - service-manager
-ms.tgt_pltfrm: na
-ms.topic: get-started-article
-ms.assetid: 3eeb3265-88e0-47ed-b761-07f4e0634959
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  bandersmsft
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  what s new in service manager
+ms.technology:  service-manager
+ms.assetid:  3eeb3265-88e0-47ed-b761-07f4e0634959
 ---
+
 # What's New in Service Manager
 System Center 2016 Technical Preview - Service Manager is updated for System Center 2016 Technical Preview 5.
 
@@ -380,3 +381,4 @@ As always, we recommend that you perform typical or routine tasks in the test en
 **Significant performance improvements**.  Service Manager's Active Directory and System Center Configuration Manager connectors performance was improved. In internal testing at Microsoft, sync time improved by about 50% for the SCCM connector and about 35% for the AD connector. You can read more about performance improvements at the [Service Manager blog](http://blogs.technet.com/b/servicemanager/archive/2015/03/19/sccm-lfx-connector-performance-improvements.aspx).
 
 **Configurable Active Directory connector sync schedules**. Now you can better plan the load placed on your workflow server by scheduling AD connector sync cycles outside of work hours.
+
