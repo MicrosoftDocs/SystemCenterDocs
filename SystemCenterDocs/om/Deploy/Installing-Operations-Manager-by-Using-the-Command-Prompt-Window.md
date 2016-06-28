@@ -14,6 +14,9 @@ ms.assetid:  4c6535e3-756c-4b48-8e7c-28085ba06677
 
 
 # Installing Operations Manager by Using the Command Prompt Window
+
+>Applies To: System Center 2016 Technical Preview - Operations Manager
+
 You can install features of Operations Manager by using the **setup.exe** command in the Command Prompt window. Gateway and agent installations require the use of MOMGateway.msi and MOMAgent.msi. You must ensure that all servers meet the minimum supported configuration requirements for System Center 2016 Technical Preview - Operations Manager. For more information, see [System Requirements for System Center Technical Preview](../../system-requirements/System-Requirements-for-System-Center-Technical-Preview.md).
 
 ## Command-line Parameters
@@ -26,7 +29,7 @@ The following table lists the command-line parameters for installing features of
 |-------------|---------|
 |/silent|Does not display the installation wizard.|
 |/install|Runs an installation. Use **/components** to indicate specific features to install.|
-|/InstallPath|Runs an installation specifying an alternative location, to Change the default path for install to another drive.  For example: `/InstallPath: ‚ÄúD:\Program Files\System Center Operations Manager 2012‚Äù` to change from the default location of drive C.|
+|/InstallPath|Runs an installation specifying an alternative location, to Change the default path for install to another drive.  For example: `/InstallPath: ìD:\Program Files\System Center Operations Manager 2012î` to change from the default location of drive C.|
 |/components|OMServer: install a management server.<br /><br />OMConsole: install an Operations console.<br /><br />OMWebConsole: install a web console.<br /><br />OMReporting: install a Reporting server.|
 |/ManagementGroupName:|The name of the management group|
 |/ManagementServicePort:|Change the Management Server port on install|
@@ -55,5 +58,6 @@ The following table lists the command-line parameters for installing features of
 |/SRSInstance|The reporting server and instance (<server\instance>).<br /><br />Used for Reporting Server installations.|
 |/SendODRReports:|0: Do not opt in to sending operational data reports.<br /><br />1: opt in to sending operational data reports.<br /><br />Used for Reporting Server Installations.|
 |/uninstall|Uninstalls Operations Manager. Use **/components** to indicate specific features to uninstall. If **/components** is not specified, it will uninstall all features of Operations Manager on the server.|
+
 
 

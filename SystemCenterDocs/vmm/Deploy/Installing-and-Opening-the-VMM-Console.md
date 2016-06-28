@@ -11,6 +11,9 @@ ms.topic: article
 ms.assetid: b8fdb01e-d5d2-4d7c-9d57-bf34f3df1b46
 ---
 # Installing and Opening the VMM Console
+
+>Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
+
 The procedures in this section describe how to install the VMM console and then use it to connect to a VMM management server.
 
 > [!IMPORTANT]
@@ -28,5 +31,6 @@ Follow these steps to install the VMM console and then use the VMM console to co
 |--------|---------------|
 |Step 1: [How to Install the VMM Console](How-to-Install-the-VMM-Console.md)|Describes how to install the VMM console.|
 |Step 2: [How to Connect to a VMM Management Server by Using the VMM Console](How-to-Connect-to-a-VMM-Management-Server-by-Using-the-VMM-Console.md)|Describes how to use the VMM console to connect to a VMM management server.|
+
 
 

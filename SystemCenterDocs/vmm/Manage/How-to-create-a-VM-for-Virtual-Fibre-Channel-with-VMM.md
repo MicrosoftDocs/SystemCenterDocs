@@ -8,6 +8,9 @@ ms.topic: article
 ms.assetid: b573cc26-2df8-4e9d-97df-406fdab6aa54
 ---
 # How to create a VM for Virtual Fibre Channel with VMM
+
+>Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
+
 The following is the high-level process for creating a virtual machine that can access Virtual Fibre Channel storage resources.
 
 Virtual Host Bus Adapters (vHBAs), which represent the virtualization of Fibre Channel HBAs, are used by VMs to connect with vSANs. In order for vHBAs to connect to vSANs, they first must be added to the hardware profile of a VM template.
@@ -24,5 +27,6 @@ Virtual Host Bus Adapters (vHBAs), which represent the virtualization of Fibre C
 [Managing Virtual Fibre Channel fabrics with VMM](Managing-Virtual-Fibre-Channel-fabrics-with-VMM.md)
 [Managing storage resources and capacity with VMM](Managing-storage-resources-and-capacity-with-VMM.md)
 [Managing fabric resources with VMM](Managing-fabric-resources-with-VMM.md)
+
 
 

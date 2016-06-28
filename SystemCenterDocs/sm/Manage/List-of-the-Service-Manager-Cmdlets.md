@@ -11,6 +11,9 @@ ms.topic: article
 ms.assetid: 98804667-754e-417a-ac2e-6ae4d47e65d2
 ---
 # List of the Service Manager Cmdlets
+
+>Applies To: System Center 2016 Technical Preview - Service Manager
+
 About Managing the Data Warehouse supports the following Windows PowerShell cmdlets, which are implemented in two modules: the administrator module and the data warehouse module.
 
 ## Administrator Cmdlets in the System.Center.Service.Manager Module
@@ -90,7 +93,7 @@ About Managing the Data Warehouse supports the following Windows PowerShell cmdl
 |Reset-SCSMAllowList|Resets the Allow list of classes that is used by the Operations Manager CI Connector in Service Manager to the default Allow list.|
 |Restore-SCSMDeletedItem|Restores items that were previously deleted in Service Manager.|
 |Set-SCSMChannel|Sets the properties of the email notification channel in Service Manager.|
-|Set-SCSMManagementGroupConnection|Sets the specified connection as the active connection. The active connection is the connection that is implicitly used when you run a **Get-** cmdlet without specifying **â€“ComputerName** and **â€“Credential** or **â€“SCSession** parameters. Only one connection can be active at any time, and by default the active connection is the last connection that was created by using the **New-SCManagementGroupConnection** cmdlet.|
+|Set-SCSMManagementGroupConnection|Sets the specified connection as the active connection. The active connection is the connection that is implicitly used when you run a **Get-** cmdlet without specifying **–ComputerName** and **–Credential** or **–SCSession** parameters. Only one connection can be active at any time, and by default the active connection is the last connection that was created by using the **New-SCManagementGroupConnection** cmdlet.|
 |Set-SCSMPortalCMConfiguration|Sets the configuration information for the Service Manager Self-Service Portal.|
 |Set-SCSMPortalContactConfiguration|Configures the settings of information technology (IT) contacts for the end-user of the Service Manager Self-Service Portal.|
 |Start-SCSMConnector|Starts a Service Manager connector.|
@@ -136,5 +139,6 @@ About Managing the Data Warehouse supports the following Windows PowerShell cmdl
 |Start-SCDWJob|Starts a Data Warehouse job.|
 |Unregister-SCDWManagememtPack||
 |Unregister-SCDWSource||
+
 
 

@@ -11,6 +11,9 @@ ms.topic: article
 ms.assetid: c43bfb32-0c1a-4e8e-8f10-373e68fc11a4
 ---
 # Importing Data from System Center Virtual Machine Manager
+
+>Applies To: System Center 2016 Technical Preview - Service Manager
+
 You can import objects, such as VM templates, service templates, and storage classifications that are created in Virtual Machine Manager (VMM) into the Service Manager database by creating a Virtual Machine Manager connector. After you import these objects into the Service Manager database, you can use these objects, for example, when you create Request Offerings.
 
 If, in your environment, your VMM server pushes discovery data to an Operations Manager server, you will want to create an Operations Manager CI connector. You must make sure that the VMM management pack, Microsoft.SystemCenter.VirtualMachineManager.2016.Discovery, is synchronized with the Service Manager management server. You can create the Operations Manager CI connector either before or after creating the Virtual Machine Manager connector.
@@ -46,7 +49,7 @@ Use the following procedures to create a System Center Virtual Machine Manager c
 
     5.  On the **Summary** page, make sure that the settings are correct, and then click **Create**.
 
-    6.  On the **Completion** page, make sure that you receive a ‚ÄúVirtual Machine Manager connector successfully created‚Äù message, and then click **Close**.
+    6.  On the **Completion** page, make sure that you receive a ìVirtual Machine Manager connector successfully createdî message, and then click **Close**.
 
 ### To validate the creation of a System Center Virtual Machine Manager connector
 
@@ -144,5 +147,6 @@ You can use the following procedures to disable or enable a Virtual Machine Mana
 ### To validate the status change of a virtual Machine Manager connector
 
 1.  In the middle pane, locate the connector for which you have changed status, and then verify the value in the **Enabled** column.
+
 
 

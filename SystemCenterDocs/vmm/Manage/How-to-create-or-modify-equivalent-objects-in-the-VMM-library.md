@@ -8,6 +8,9 @@ ms.topic: article
 ms.assetid: 772a9c9d-a084-40cc-bfbd-2e20af00f5c9
 ---
 # How to create or modify equivalent objects in the VMM library
+
+>Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
+
 You can use the following procedures to mark file-based library resources (also known as physical resources) as equivalent objects in Virtual Machine Manager (VMM), and to modify equivalent objects. For example, if you have a Windows Server 2012 R2-based virtual hard disk (.vhd) file that is stored in library shares that are located in two sites, such as Seattle and New York, you can mark the .vhd files as equivalent objects. Then, when you create a template for a new virtual machine, and you specify a .vhd that has equivalent objects, VMM can use any instance of the equivalent object instead of being site-specific. This enables you to use a single template across multiple sites.
 
 > [!IMPORTANT]
@@ -80,5 +83,6 @@ To mark objects as equivalent, the objects must have the same family name, relea
 [Configuring the VMM library](Configuring-the-VMM-library.md)
 [Managing the VMM library and its resources](Managing-the-VMM-library-and-its-resources.md)
 [Managing fabric resources with VMM](Managing-fabric-resources-with-VMM.md)
+
 
 

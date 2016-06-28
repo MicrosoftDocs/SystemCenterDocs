@@ -11,6 +11,9 @@ ms.topic: get-started-article
 ms.assetid: cefc0b34-d77a-4f17-8f69-68b4282beea7
 ---
 # Architecture of Service Management Automation
+
+>Applies To: System Center Technical Preview
+
 The following diagram illustrates each of the Service Management Automation features and the communication between them.
 
 ![](../../media/SMAArchitecture.jpg)
@@ -22,5 +25,6 @@ The following diagram illustrates each of the Service Management Automation feat
 -   Runbook workers run the runbooks, and they can be used for load balancing.
 
 -   The management portal in Windows Azure Pack is where you author, debug, and start and stop runbooks.
+
 
 

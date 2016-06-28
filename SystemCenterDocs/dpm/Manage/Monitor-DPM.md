@@ -12,6 +12,9 @@ ms.assetid:  99901174-76d4-4eb7-a72b-3ec300f1fa0b
 ---
 
 # Monitor DPM
+
+>Applies To: System Center 2016 Technical Preview - Data Protection Manager
+
 You can monitor a single DPM server from the DPM Administrator console, multiple DPM servers from the Central Console, or monitor DPM activity with Operations Manager.
 
 ## Monitor with the DPM console
@@ -48,11 +51,11 @@ From the dashboard you can download the Backup agent for installation on a serve
 ## Monitor DPM in Operations Manager
 You can use monitor and report on the health and status of DPM servers using System Center Operations Manager Management Packs for DPM. DPM provides the following management packs:
 
--   **Reporting management pack** (Microsoft.SystemCenter.DataProtectionManager.2012.Reporting.mp)â€”Collects and displays reporting data from all DPM servers, and exposes a set of Operations Manager warehouse views for DPM. You can query these views to generate custom reports.
+-   **Reporting management pack** (Microsoft.SystemCenter.DataProtectionManager.2012.Reporting.mp)—Collects and displays reporting data from all DPM servers, and exposes a set of Operations Manager warehouse views for DPM. You can query these views to generate custom reports.
 
 -   **Discovery and monitoring management pack** (Microsoft.SystemCenter.DataProtectionManager.2012.Discovery.mp)
 
--   **Library management pack**â€”(Microsoft.SystemCenter.DataProtectionManager.2012.Library)
+-   **Library management pack**—(Microsoft.SystemCenter.DataProtectionManager.2012.Library)
 
 Using these packs you can:
 
@@ -71,7 +74,7 @@ Using these packs you can:
 
 -   To install the Management Packs the DPM server must be running at least DPM 2012 R2 with Update Rollup 5.
 
--   If youâ€™re running a previous version of the Discover and Library Management Packs obtained from the DPM installation media you should remove them from the DPM server and install the new versions from the download page.
+-   If you’re running a previous version of the Discover and Library Management Packs obtained from the DPM installation media you should remove them from the DPM server and install the new versions from the download page.
 
 -   You can only run one language version of the Management Pack at one time. If you want to use the pack in a different language uninstall the pack in the existing language and then install it with the new language.
 
@@ -101,14 +104,14 @@ Remember to remove any previous versions of the Library or Discover Management P
 2.  Follow the instructions in the Import Management Packs wizard. You can get more information about running this wizard in [How to Import an Operations Manager Management Pack](https://technet.microsoft.com/en-us/library/hh212691.aspx).
 
 #### Set up Central Console
-Youâ€™ll need to install the DPM Central Console on the Operations Manager server. This console is used to manage multiple DPM servers in Operations Manager.
+You’ll need to install the DPM Central Console on the Operations Manager server. This console is used to manage multiple DPM servers in Operations Manager.
 I
 
 1.  n the **Setup** screen of Operations Manager, select the following:
 
     -   Select **Install Central Console Server and Client side Components** if you want to monitor DPM servers with the Management Pack and you want to use the Central Console to manage settings and configuration on the DPM servers.
 
-    -   Select **Install Central Console Server side Components** if you only want to monitor DPM servers with the Management Pack, but donâ€™t want to use Central Console to manage settings and configuration on the DPM servers.
+    -   Select **Install Central Console Server side Components** if you only want to monitor DPM servers with the Management Pack, but don’t want to use Central Console to manage settings and configuration on the DPM servers.
 
 2.  DPM adds firewall exceptions for port 6075 for the console. You should also open ports for SQL Server.exe and SQL browser.exe
 
@@ -124,5 +127,6 @@ I
 
 #### Tweaking Management Pack settings
 After you import the Management Packs they discover and monitor data without requiring any additional configuration. You can optionally tweak settings like monitors and rules for your environment. For example if you find that performance-measuring rules that are enable degrade server performance with slow WAN links, you can disable them. For instructions, see [How to enable or disable a rule or monitor](https://technet.microsoft.com/en-us/library/hh212818.aspx).
+
 
 

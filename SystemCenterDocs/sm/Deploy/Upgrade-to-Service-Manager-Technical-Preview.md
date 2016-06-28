@@ -11,6 +11,9 @@ ms.topic: article
 ms.assetid: 415e758e-dea9-48c7-b68d-0216c85dfaf1
 ---
 # Upgrade to Service Manager Technical Preview
+
+>Applies To: System Center 2016 Technical Preview - Service Manager
+
 Depending on your current version of Service Manager, use the following information to help you upgrade your Self Service Portal in Service Manager 2016 Technical Preview 5.
 
 ## Recommendations for Upgrading to Service Manager 2016 Technical Preview 5
@@ -65,3 +68,4 @@ Use the following step to upgrade your Self Service portal and Service Manger ma
 
 ## Upgrading the Self Service Portal from Service Manager 2016 TP5 Self Service portal (stand alone or with a management server)
   - You can upgrade the Self Service portal directly from Service Manager 2012 R2 to Service Manager 2016.
+

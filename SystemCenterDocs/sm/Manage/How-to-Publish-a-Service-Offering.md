@@ -11,6 +11,9 @@ ms.topic: article
 ms.assetid: bcede83b-0c4c-4dbd-b943-d62bbcb1242e
 ---
 # How to Publish a Service Offering
+
+>Applies To: System Center 2016 Technical Preview - Service Manager
+
 You can publish draft service offerings by using the Publish task or by using a change request. When you publish a service offering by using the Publish task, the service offing must contain at least one published request offering before it appears in the Self-Service Portal. If you want to have an approval process added before publishing, you can associate the service offering with a change request. If you use a change request, you can also send email notifications as the approval process occurs.
 
 You can use the following procedures to publish a draft service offering and then use a change request to publish it.
@@ -38,5 +41,6 @@ You can use the following procedures to publish a draft service offering and the
 6.  Click the **Activities** tab, and notice that there is a review activity and an automated activity associated with the change request. Later, when the review activity is approved, the automated activity will set the publish status to Published.
 
 7.  Click **OK** to save the change request.
+
 
 

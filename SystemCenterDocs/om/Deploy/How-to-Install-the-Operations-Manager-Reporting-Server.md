@@ -14,6 +14,9 @@ ms.assetid:  d89df5c3-b0b0-44da-9b8f-7e505c305045
 
 
 # How to Install the Operations Manager Reporting Server
+
+>Applies To: System Center 2016 Technical Preview - Operations Manager
+
 In this procedure, the Reporting server is installed on a stand-alone server that is hosting the SQL Server database and SQL Server Reporting Services.
 
 > [!WARNING]
@@ -127,5 +130,6 @@ Ensure that SQL Server Reporting Services has been correctly installed and confi
 
 ## See Also
 [Distributed Deployment of Operations Manager](Distributed-Deployment-of-Operations-Manager.md)
+
 
 

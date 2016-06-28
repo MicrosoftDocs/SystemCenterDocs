@@ -12,6 +12,9 @@ ms.topic: article
 ms.assetid: 2f57fc14-4b23-41e9-87dc-51a0b998b321
 ---
 # Deploy a Software Load Balancer using VMM
+
+>Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
+
 ## Introduction
 
 This topic helps you evaluate the Software Defined Networking (SDN) features in [!INCLUDE[winthreshold_server_2_mdToken/winthreshold_server_2_md.md)] 5 and Virtual Machine Manager Technology Preview 5. In particular, this topic is focused on deploying and configuring Microsoft Software Load Balancer (SLB) using VMM Technical Preview 5.
@@ -28,7 +31,7 @@ Before you get into the details of the SLB deployment, make sure you have perfor
 
   For more information about network controller deployment using VMM, see [Deploy a Network Controller using VMM](Deploy-a-Network-Controller-using-VMM.md).
 
-  If you havenâ€™t yet deployed a network controller, please see the previous topic and come back to this section when complete.
+  If you haven’t yet deployed a network controller, please see the previous topic and come back to this section when complete.
 
 * Prepare an SSL Certificate
 
@@ -51,7 +54,7 @@ All the Software Load Balancer virtual machines must have [!INCLUDE[winthreshold
 
 In addition to the Management and HNV Provider logical networks that you already have configured during network controller deployment, you need the Transit (sometimes called Front End), Private VIP and Public VIP networks to deploy the SLB. Refer to the [Plan a Software Defined Network Infrastructure](https://technet.microsoft.com/library/mt605207.aspx) topic for more information about these networks.
                                                                                                                                     
-Normally you would use the Transit network for BGP peering. But because of a limitation in [!INCLUDE[winthreshold_server_2_mdToken/winthreshold_server_2_md.md)] 5, the SLB actually uses the Management network for BGP peering. However, this doesnâ€™t impact how you deploy the SLB.  
+Normally you would use the Transit network for BGP peering. But because of a limitation in [!INCLUDE[winthreshold_server_2_mdToken/winthreshold_server_2_md.md)] 5, the SLB actually uses the Management network for BGP peering. However, this doesn’t impact how you deploy the SLB.  
 
 Active Directory and DNS must be available and reachable from these networks. You must have Domain Administrator credentials and the ability to create DNS entries in the domain.
 
@@ -112,7 +115,7 @@ You will create a Private VIP logical network in order to assign private VIP add
 5.  Review the **Summary** information and complete the logical network wizard
 
 
->[!IMPORTANT] At this point you canâ€™t create a VIP Pool because the SLB is not deployed yet. But you can choose the last VIP from the Private VIP logical network subnet you just configured and use it later to assign to the SLB Manager VIP. Ensure this assigned VIP address is part of the Private VIP Pool you will create later.
+>[!IMPORTANT] At this point you can’t create a VIP Pool because the SLB is not deployed yet. But you can choose the last VIP from the Private VIP logical network subnet you just configured and use it later to assign to the SLB Manager VIP. Ensure this assigned VIP address is part of the Private VIP Pool you will create later.
 
 ## Deployment
 
@@ -314,7 +317,7 @@ Click **OK** to complete the SLB/MUX service instance configuration.
 
 Check the **Jobs** window to verify that the Update Fabric Role with required configuration and Associate service instance with fabric role jobs have completed successfully.
 
-To complete the BGP peering operation you need to configure BGP to peer with your SLB/MUX instance on the router. If you use a hardware router, you need to consult your vendorâ€™s documentation regarding how to setup BGP peering for that device. You also need to know the IP address of the SLB/MUX instance that you deployed earlier. To do this, you can either log on to the SLB MUX virtual machine and run ``ipconfig /all`` from the command prompt, or you can get the IP address from the VMM console.
+To complete the BGP peering operation you need to configure BGP to peer with your SLB/MUX instance on the router. If you use a hardware router, you need to consult your vendor’s documentation regarding how to setup BGP peering for that device. You also need to know the IP address of the SLB/MUX instance that you deployed earlier. To do this, you can either log on to the SLB MUX virtual machine and run ``ipconfig /all`` from the command prompt, or you can get the IP address from the VMM console.
 
 After peering is completed for the SLB/MUX, you need to advertise all the VIP address pools that will be used by the SLB/MUX to the SLB Manager role using Windows PowerShell cmdlets. This also applies for the Public VIP address pool you may create later to configure an IPSec connection type after you deployed and on-boarded a gateway.
 
@@ -371,7 +374,7 @@ Use the following procedure to create a VIP template.
 
 8.  On the **Specify Protocol Options** screen, select the protocol you want to create a VIP mapping for. The HTTP and HTTPS options are commonly used, but for a simple example you can select the **Custom** option and chose **TCP** in the **Protocol Name** field. If TCP does not appear as an option in the drop-down menu, you can type it manually. This is a known issue in Technical Preview 5. Click **Next**.
 
-9.  You can optionally select **enable persistence** if you wish to have the load balancer make the connection from the client â€œstickyâ€. Click **Next**.
+9.  You can optionally select **enable persistence** if you wish to have the load balancer make the connection from the client “sticky”. Click **Next**.
 
 10.  For the **Load Balancing method**, select **Round Robin** from the drop down list. Click **Next**.
 
@@ -456,7 +459,7 @@ The following sample PowerShell script creates a VIP for two virtual machines. I
 
 
 ### Configuring inbound and outbound NAT rules
-To complete the BGP peering process, you need to configure a BGP to peer with your SLB/MUX instance on the router. If you use a hardware router, you need to consult your vendorâ€™s documentation for instructions to setup BGP peering for that device. You also need to know the IP address of the SLB/MUX instance that you deployed earlier. To do this, you can log on to the SLB/MUX virtual machine and run ipconfig.
+To complete the BGP peering process, you need to configure a BGP to peer with your SLB/MUX instance on the router. If you use a hardware router, you need to consult your vendor’s documentation for instructions to setup BGP peering for that device. You also need to know the IP address of the SLB/MUX instance that you deployed earlier. To do this, you can log on to the SLB/MUX virtual machine and run ipconfig.
 
 After you deploy and on-board the Software Load Balancer as a Network Service using VMM, you can use the VMM user interface to configure both inbound and outbound NAT rules.
 
@@ -485,4 +488,5 @@ The existing NAT connections will not be visible when you close the network conn
 >To see the existing NAT connections, you can use the following PowerShell cmdlet:
 ``Get-SCNATConnection``
     
+
 

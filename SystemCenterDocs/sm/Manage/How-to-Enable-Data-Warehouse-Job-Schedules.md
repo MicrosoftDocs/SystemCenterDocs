@@ -11,6 +11,9 @@ ms.topic: article
 ms.assetid: f87dfbc3-d82b-428f-8dc4-e6a8129fd79f
 ---
 # How to Enable Data Warehouse Job Schedules
+
+>Applies To: System Center 2016 Technical Preview - Service Manager
+
 Use the following procedure to enable the schedule for the ETL jobs as needed; you can use this procedure to enable the schedule for any of the data warehouse jobs. By default, the schedules for the extract, transform, and load (ETL) jobs are enabled. In this release of Service Manger, you can enable the schedules only by using Windows PowerShell.
 
 ### To enable a schedule for a data warehouse job by using a Windows PowerShell cmdlet
@@ -20,21 +23,22 @@ Use the following procedure to enable the schedule for the ETL jobs as needed; y
 2.  At the Windows PowerShell prompt, type the following commands, and then press ENTER after each command:
 
     ```
-    Enable-SCDWJobSchedule â€“JobName Extract_<data warehouse management group name>
+    Enable-SCDWJobSchedule –JobName Extract_<data warehouse management group name>
     ```
 
     ```
-    Enable-SCDWJobSchedule â€“JobName Extract_<Service Manager management group name>
+    Enable-SCDWJobSchedule –JobName Extract_<Service Manager management group name>
     ```
 
     ```
-    Enable-SCDWJobSchedule â€“JobName Transform.Common
+    Enable-SCDWJobSchedule –JobName Transform.Common
     ```
 
     ```
-    Enable-SCDWJobSchedule â€“JobName Load.Common
+    Enable-SCDWJobSchedule –JobName Load.Common
     ```
 
 3.  Type **exit**, and then press ENTER.
+
 
 

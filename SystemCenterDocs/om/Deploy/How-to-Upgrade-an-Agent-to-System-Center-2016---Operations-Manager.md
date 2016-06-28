@@ -14,6 +14,9 @@ ms.assetid:  c8153b24-0618-4f3c-a9b2-1dc27107470f
 
 
 # How to Upgrade an Agent to System Center 2016 - Operations Manager
+
+>Applies To: System Center 2016 Technical Preview - Operations Manager
+
 Use the following procedures to upgrade to System Center 2016 Technical Preview - Operations Manager agents. You should first verify that the agents meet minimum supported configurations. For more information, see [System Requirements: System Center 2016 - Operations Manager](../../system-requirements/System-Requirements-for-System-Center-Technical-Preview.md).
 
 > [!NOTE]
@@ -119,7 +122,7 @@ Manually-installed agents are agents that were installed manually, either by usi
 
     -   HP-UX: `swinstall -s <full path to depot> <package name>`
 
-    -   Aix: `/usr/sbin/install â€“X â€“F â€“d <package file> scx.rte/`
+    -   Aix: `/usr/sbin/install –X –F –d <package file> scx.rte/`
 
     -   Solaris:
 
@@ -137,5 +140,6 @@ Manually-installed agents are agents that were installed manually, either by usi
 
     > [!NOTE]
     > It can take up to one hour for the console to show the updated version of the agent.
+
 
 

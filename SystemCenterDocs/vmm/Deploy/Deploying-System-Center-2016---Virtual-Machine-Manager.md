@@ -11,6 +11,9 @@ ms.topic: article
 ms.assetid: 83c3f1df-6eb7-43c0-b9e0-cd5621872474
 ---
 # Deploying System Center 2016 - Virtual Machine Manager
+
+>Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
+
 The following topics provide information to help you deploy and configure Virtual Machine Manager (VMM):
 
 -   [Specifying a Service Account for VMM](Specifying-a-Service-Account-for-VMM.md)
@@ -33,6 +36,7 @@ Before you begin the deployment of VMM:
 
 -   Read the [Release Notes for System Center 2016 TP5](../../get-started/Release-Notes-for-System-Center-Technical-Preview-5.md).
 -   Review the [System Requirements for System Center 2016 TP5](../../system-requirements/System-Requirements-for-System-Center-Technical-Preview.md) and [Preparing your environment for System Center 2016 - Virtual Machine Manager](Preparing-your-environment-for-System-Center-2016---Virtual-Machine-Manager.md).
+
 
 
 

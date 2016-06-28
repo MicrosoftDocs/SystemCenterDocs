@@ -8,6 +8,9 @@ ms.topic: article
 ms.assetid: f98a78c4-eea8-4b65-af06-5494bc77be48
 ---
 # How to remediate updates on a stand-alone Hyper-V host in VMM
+
+>Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
+
 Use the following procedure to remediate updates for stand-alone Hyper-V hosts that are managed by Virtual Machine Manager (VMM). You can also orchestrate updates of a managed Hyper-V host cluster in VMM. For information, see [How to perform rolling updates on a Hyper-V host cluster in VMM](How-to-perform-rolling-updates-on-a-Hyper-V-host-cluster-in-VMM.md).
 
 > [!NOTE]
@@ -46,5 +49,6 @@ Use the following procedure to remediate updates for stand-alone Hyper-V hosts t
 [Performing update remediation in VMM](Performing-update-remediation-in-VMM.md)
 [Managing fabric updates in VMM](Managing-fabric-updates-in-VMM.md)
 [Managing fabric resources with VMM](Managing-fabric-resources-with-VMM.md)
+
 
 

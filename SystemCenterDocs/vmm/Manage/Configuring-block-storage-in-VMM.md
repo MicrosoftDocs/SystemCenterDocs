@@ -8,6 +8,9 @@ ms.topic: article
 ms.assetid: b47fcec1-a310-43e7-9d37-19ee4913d097
 ---
 # Configuring block storage in VMM
+
+>Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
+
 Use the procedures in this section to configure block storage resources (for example, storage on iSCSI arrays).
 
 -   [Overview: configuring block storage VMM](Overview--configuring-block-storage-VMM.md)
@@ -31,5 +34,6 @@ Use the procedures in this section to configure block storage resources (for exa
 [Configuring iSCSI Target Server and the SMI-S Provider in VMM](Configuring-iSCSI-Target-Server-and-the-SMI-S-Provider-in-VMM.md)
 [Managing storage resources and capacity with VMM](Managing-storage-resources-and-capacity-with-VMM.md)
 [Managing fabric resources with VMM](Managing-fabric-resources-with-VMM.md)
+
 
 

@@ -11,6 +11,9 @@ ms.topic: article
 ms.assetid: 189f12a2-ee3b-49c1-ba78-7aa6d829da10
 ---
 # How to create VIP templates for hardware load balancers in VMM
+
+>Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
+
 You can use the following procedure to create a virtual IP (VIP) template for a hardware load balancer in Virtual Machine Manager (VMM). A VIP template contains load balancer-related configuration settings for a specific type of network traffic. For example, you can create a template that specifies the load-balancing behavior for HTTPS traffic on a specific load balancer by manufacturer and model. These templates represent the best practices from a load-balancer configuration standpoint.
 
 > [!NOTE]
@@ -102,5 +105,6 @@ When users create a service, they can select a VIP template to use when they wan
 [Configuring load balancing in VMM](Configuring-load-balancing-in-VMM.md)
 [Managing network resources with VMM](Managing-network-resources-with-VMM.md)
 [How to add hardware load balancers in VMM](How-to-add-hardware-load-balancers-in-VMM.md)
+
 
 

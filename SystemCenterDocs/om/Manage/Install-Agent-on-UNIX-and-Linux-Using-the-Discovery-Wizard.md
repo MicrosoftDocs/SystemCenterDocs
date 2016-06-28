@@ -14,6 +14,9 @@ ms.assetid:  da7f3214-dd4a-449a-bdc3-7435c6378e45
 
 
 # Install Agent on UNIX and Linux Using the Discovery Wizard
+
+>Applies To: System Center 2016 Technical Preview - Operations Manager
+
 Use the **Computer and Device Management Wizard** to discover and install agents on UNIX and Linux computers. For a list of the supported operating system versions, see [Supported Configurations](http://go.microsoft.com/fwlink/p/?LinkID=223642).
 
 Before you run the wizard, gather the following information:
@@ -38,7 +41,7 @@ Before you run the wizard, gather the following information:
 
     1.  Click **Add** to define a discovery scope. In the **Discovery Criteria** dialog box, do the following:
 
-        1.  For the **Discovery scope**, click the ellipsis button **‚Ä¶** to specify the host name, IP address, or range of IP addresses of the UNIX- or Linux-based computers to be discovered.
+        1.  For the **Discovery scope**, click the ellipsis button **Ö** to specify the host name, IP address, or range of IP addresses of the UNIX- or Linux-based computers to be discovered.
 
         2.  For the **Discovery type** select **Discover all computers** or **Discover only computers with the UNIX/Linux agent installed**.
 
@@ -47,7 +50,7 @@ Before you run the wizard, gather the following information:
             > [!IMPORTANT]
             > Discovering only computers with the agent installed requires that the agent is currently installed and configured with a signed certificate.
 
-        3.  To specify the credentials for installing an agent, click **Set credentials**. For detailed instructions, see ‚ÄúCredentials for Installing Agents‚Äù in [Setting Credentials for Accessing UNIX and Linux Computers](https://technet.microsoft.com/library/hh287150%28v=sc.12%29.aspx).
+        3.  To specify the credentials for installing an agent, click **Set credentials**. For detailed instructions, see ìCredentials for Installing Agentsî in [Setting Credentials for Accessing UNIX and Linux Computers](https://technet.microsoft.com/library/hh287150%28v=sc.12%29.aspx).
 
         4.  Click **Save**.
 
@@ -80,5 +83,6 @@ You must have, at a minimum, a UNIX/Linux Action Account profile configured with
 [Upgrading and Uninstalling Agents on UNIX and Linux Computers](Upgrading-and-Uninstalling-Agents-on-UNIX-and-Linux-Computers.md)
 [Manually Uninstalling Agents from UNIX and Linux Computers](Manually-Uninstalling-Agents-from-UNIX-and-Linux-Computers.md)
 [Uninstall Agent from Windows-based Computers](Uninstall-Agent-from-Windows-based-Computers.md)
+
 
 

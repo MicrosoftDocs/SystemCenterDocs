@@ -14,9 +14,12 @@ ms.assetid:  de0eb016-4817-43b8-ac12-84e4017fcc3d
 
 
 # How to Create a Resource Pool
+
+>Applies To: System Center 2016 Technical Preview - Operations Manager
+
 A Resource Pool is a collection of management servers and/or gateway servers used to distribute work amongst themselves and take over work from a failed member.  
 
-Resource pools apply a logic similar to clustering ‚Äúmajority node set‚Äù, where (*\<number of nodes as members of the pool>*/2) + 1. At a minimum, there must be three members in the resource pool to maintain quorum - two must be management servers, and the third is an observer (commonly referred to as the witness in clustering terminology).  The Operations Manager database by default is the observer and given a vote, even if you have an even number of members in the pool, in order to allow quorum to be reached.  
+Resource pools apply a logic similar to clustering ìmajority node setî, where (*\<number of nodes as members of the pool>*/2) + 1. At a minimum, there must be three members in the resource pool to maintain quorum - two must be management servers, and the third is an observer (commonly referred to as the witness in clustering terminology).  The Operations Manager database by default is the observer and given a vote, even if you have an even number of members in the pool, in order to allow quorum to be reached.  
 
 You can use resource pools for:
 
@@ -33,7 +36,7 @@ When Operations Manager is installed, three resource pools are created: All Mana
 > [!NOTE]
 > The membership of the All Management Servers Resource Pool is read-only.  To change its membership  from automatic to manual, run the following PowerShell code in the Operations Manager Command Shell:
 > 
-> ```Get-SCOMResourcePool ‚ÄìDisplayName ‚ÄúAll Management Servers Resource Pool‚Äù | Set-SCOMResourcePool ‚ÄìEnableAutomaticMembership 0```
+> ```Get-SCOMResourcePool ñDisplayName ìAll Management Servers Resource Poolî | Set-SCOMResourcePool ñEnableAutomaticMembership 0```
 
 In certain architectures and design considerations, such as those incorporating geographically dispersed contingency operations, automatic assignment to the All Management Servers Resource Pool may not be desired.  In these situations, it is recommended to change the membership assignment from automatic to manual.  As such, management servers must be added to the All Management Servers Resource Pool through manual assignment.  With the introduction of resource pools it is recommended that all management servers be connected by a low latency network (less than 10 ms). Management servers should not be deployed across multiple data centers or in a hybrid-cloud environment like Microsoft Azure.
 
@@ -125,7 +128,7 @@ To configure high availability, each management server in the resource pool must
 
 3.  Run the following command, specifying a file name of your choosing such as **Server3.cert**:
 
-    `scxcertconfig.exe ‚Äì export <filename>`
+    `scxcertconfig.exe ñ export <filename>`
 
 4.  Copy the exported file to a shared directory that is accessible by all the management servers in the resource pool.
 
@@ -137,7 +140,7 @@ To configure high availability, each management server in the resource pool must
 
 8.  Run the following command for each exported certificate file (except for the file that was exported by the current management server):
 
-    `scxcertconfig.exe ‚Äìimport <filename>`
+    `scxcertconfig.exe ñimport <filename>`
 
     > [!NOTE]
     > If you attempt to import the certificate file that was exported by that same management server, the process will fail with an error message that the object or property already exists.
@@ -147,5 +150,6 @@ To configure high availability, each management server in the resource pool must
 10. Delete the certificate files from the shared directory. Although the file contains only the public key of the certificate, you should still treat it as a security-sensitive file.
 
 Perform this procedure whenever you add a new management server to the resource pool so that high availability is maintained.
+
 
 

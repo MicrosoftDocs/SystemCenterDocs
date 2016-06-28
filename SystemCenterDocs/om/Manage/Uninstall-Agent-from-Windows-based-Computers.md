@@ -14,6 +14,9 @@ ms.assetid:  fcdb6644-66e0-4a50-a4e0-5f23e2c3b152
 
 
 # Uninstall Agent from Windows-based Computers
+
+>Applies To: System Center 2016 Technical Preview - Operations Manager
+
 Use one of the following procedures to uninstall an System Center Operations Manager agent from an agent-managed computer.
 
 ## <a name="bkmk_TouninstalltheagentbyusingtheOperationsconsole"></a>To uninstall the agent by using the Operations console
@@ -89,5 +92,6 @@ Use one of the following procedures to uninstall an System Center Operations Man
 [Upgrading and Uninstalling Agents on UNIX and Linux Computers](Upgrading-and-Uninstalling-Agents-on-UNIX-and-Linux-Computers.md)
 [Manually Uninstalling Agents from UNIX and Linux Computers](Manually-Uninstalling-Agents-from-UNIX-and-Linux-Computers.md)
 [Install Agent Using the Command Line](Install-Agent-Using-the-Command-Line.md)
+
 
 

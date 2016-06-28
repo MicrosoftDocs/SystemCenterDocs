@@ -11,7 +11,10 @@ ms.topic: article
 ms.assetid: 5f004858-4f24-4b37-b7e2-70870ef66695
 ---
 # Operations Guide for System Center 2016 - Service Manager
-The Operations Guide for Microsoft System Center 2016 Technical Preview - Service Manager provides information about using the Service Manager console for day-to-day tasks that you perform to manage service desk functions for your organizationâ€™s computer infrastructure. This guide provides detailed procedures for the following tasks:
+
+>Applies To: System Center 2016 Technical Preview - Service Manager
+
+The Operations Guide for Microsoft System Center 2016 Technical Preview - Service Manager provides information about using the Service Manager console for day-to-day tasks that you perform to manage service desk functions for your organization’s computer infrastructure. This guide provides detailed procedures for the following tasks:
 
 ## Operations Guide Topics
 
@@ -38,5 +41,6 @@ The Operations Guide for Microsoft System Center 2016 Technical Preview - Servic
 -   [Using Data Warehouse Reporting and Analytics in Service Manager](Using-Data-Warehouse-Reporting-and-Analytics-in-Service-Manager.md)
 
     Describes how standard reports and OLAP data cubes are used to view data and trends across your Service Manager environment.
+
 
 

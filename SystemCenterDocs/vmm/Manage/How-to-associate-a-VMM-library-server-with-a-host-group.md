@@ -8,6 +8,9 @@ ms.topic: article
 ms.assetid: 61ab9fda-681f-4c65-ae39-a04f45b1287a
 ---
 # How to associate a VMM library server with a host group
+
+>Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
+
 You can use the following procedure to associate a library server with a host group in Virtual Machine Manager (VMM). During placement, VMM uses this association as an input to help determine which resource to use when a resource with equivalent objects is defined in a profile or template.
 
 **Account requirements** You must be a member of the Administrator user role or a member of the Delegated Administrator user role where the management scope includes the library server that you want to configure.
@@ -35,5 +38,6 @@ You can use the following procedure to associate a library server with a host gr
 [Configuring the VMM library](Configuring-the-VMM-library.md)
 [Managing the VMM library and its resources](Managing-the-VMM-library-and-its-resources.md)
 [Managing fabric resources with VMM](Managing-fabric-resources-with-VMM.md)
+
 
 

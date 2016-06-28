@@ -11,6 +11,9 @@ ms.topic: article
 ms.assetid: 84b45ef1-bb8a-48f8-a2d7-5a93157ffc78
 ---
 # Installing VMM from a Command Prompt
+
+>Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
+
 <?xml version="1.0" encoding="utf-8"?>
 <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://ddue.schemas.microsoft.com/authoring/2003/5 http://dduestorage.blob.core.windows.net/ddueschema/developer.xsd">
   <introduction>
@@ -305,7 +308,7 @@ ms.assetid: 84b45ef1-bb8a-48f8-a2d7-5a93157ffc78
                   <para>TopContainerName</para>
                 </TD>
                 <TD>
-                  <para>Container for Distributed Key Management (DKM); for example, ‚ÄúCN=DKM,DC=contoso,DC=com‚Äù. </para>
+                  <para>Container for Distributed Key Management (DKM); for example, ìCN=DKM,DC=contoso,DC=comî. </para>
                   <para>For more information about DKM, see <link xlink:href="1238b5b8-98fc-4c2b-bdb5-253e4e1b3baa">Configuring Distributed Key Management in VMM</link>.</para>
                 </TD>
                 <TD>
@@ -657,4 +660,5 @@ ms.assetid: 84b45ef1-bb8a-48f8-a2d7-5a93157ffc78
     <link xlink:href="1b4c3f5f-4ade-44c2-8866-f7b37168607d">Installing System Center vNext Virtual Machine Manager</link>
   </relatedTopics>
 </developerConceptualDocument>
+
 

@@ -14,6 +14,9 @@ ms.assetid:  43c2d0c7-453a-4010-b991-f984855fe95a
 
 
 # Single-Server Deployment of Operations Manager
+
+>Applies To: System Center 2016 Technical Preview - Operations Manager
+
 The single-server management group scenario combines all the management group roles that can coexist onto a single server running as a member server in an Active Directory domain. This instance can be on dedicated hardware or on a virtual computer. You can deploy the Operations console to computers other than the single server, and access the web console  with a browser.
 
 You deploy Operations Manager in a single-server management group when you want to use it for evaluation, testing, and management pack development, usually in non-production or preproduction environments.
@@ -87,8 +90,9 @@ In this configuration, you need to make sure that network ports are opened for c
 
 -   Management server to UNIX\Linux computer for special discovery and troubleshooting: TCP 22
 
-For a complete listing of ports used, the direction of the communication, and if the ports can be configured, see [Supported Configurations for System Center 2012 â€“ Operations Manager](http://go.microsoft.com/fwlink/p/?LinkID=219650).
+For a complete listing of ports used, the direction of the communication, and if the ports can be configured, see [Supported Configurations for System Center 2012 – Operations Manager](http://go.microsoft.com/fwlink/p/?LinkID=219650).
 
 To deploy Operations Manager in a single-server management group, see [Walkthrough: Installing Operations Manager on a Single Server](../get-started/Walkthrough--Installing-Operations-Manager-on-a-Single-Server.md).
+
 
 

@@ -12,6 +12,9 @@ ms.topic: article
 ms.assetid: 150b922a-d9fb-4b36-b964-e1738f054eb3
 ---
 # Deploy a RAS Gateway using VMM
+
+>Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
+
 ## Introduction
 
 This topic helps you evaluate the Software Defined Networking (SDN) features in [!INCLUDE[winthreshold_server_2_mdToken/winthreshold_server_2_md.md)] 5 and Virtual Machine Manager 2016 Technology Preview 5. In particular, this topic is focused on scenarios that incorporate a RAS Gateway with the Virtual Machine Manager (VMM).
@@ -31,11 +34,11 @@ Before you get into the details of RAS Gateway deployment, ensure you have perfo
 
 * Deploy Software Load Balancer 
 
-  Although itâ€™s not required to deploy a Software Load Balancer (SLB) before you deploy a RAS Gateway, for the purpose of simplicity and preview validation, it is recommended that you deploy and on-board an SLB before proceeding further in this topic. With an SLB along with a RAS Gateway in your environment you can use and validate an IPSec connection type.
+  Although it’s not required to deploy a Software Load Balancer (SLB) before you deploy a RAS Gateway, for the purpose of simplicity and preview validation, it is recommended that you deploy and on-board an SLB before proceeding further in this topic. With an SLB along with a RAS Gateway in your environment you can use and validate an IPSec connection type.
 
   For more information about SLB deployment, see [Deploy a Software Load Balancer using VMM ](Deploy-a-Software-Load-Balancer-using-VMM.md).
 
-  If you havenâ€™t deployed an SLB yet, please refer to the SLB deployment topic and come back to this section  when done.
+  If you haven’t deployed an SLB yet, please refer to the SLB deployment topic and come back to this section  when done.
 
 ## Setup
 
@@ -192,7 +195,7 @@ Now that the gateway service is deployed, you can configure its properties and a
 
 9.  In **Public IPv4 pool**, select the Public IP Pool you configured during the SLB deployment.
 
-10. **Public IPv4 address**, provide an IP address from the previous pool, and ensure you donâ€™t select the initial 3 IP addressed from the range.
+10. **Public IPv4 address**, provide an IP address from the previous pool, and ensure you don’t select the initial 3 IP addressed from the range.
 
 11. Configure the Gateway Capacity in **Gateway Capacity** field.
 
@@ -242,7 +245,7 @@ A S2S IPSec connection allows you to securely access remote virtual machines and
 10. Select the **Authentication** tab.
 11. Choose your preferred authentication method for the connection. 
 
-If you choose the authentication using â€˜Run As Accountâ€™, then you need to create a user account with the username of your choice and the IPSec key as the password for the account. Browse and select this account as your Run As Account.
+If you choose the authentication using ‘Run As Account’, then you need to create a user account with the username of your choice and the IPSec key as the password for the account. Browse and select this account as your Run As Account.
 12. Select the **Routes** tab.
 13. Type all the remote subnets that you need to connect to.
 
@@ -341,5 +344,6 @@ To configure an L3 connection, use the following sample PowerShell script. You m
         Add-SCNetworkRoute -IPSubnet $route -RunAsynchronously -VPNConnection $vpnConnection 
             -VMNetworkGateway $VmNetworkGateway
     }
+
 
 

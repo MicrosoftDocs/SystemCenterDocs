@@ -11,6 +11,9 @@ ms.topic: article
 ms.assetid: 25937b4f-40bc-4765-9322-5b3a0fd1ff8d
 ---
 # Windows PowerShell Workflow Concepts
+
+>Applies To: Windows Azure Pack for Windows Server, System Center 2012 R2 Orchestrator
+
 One [type of runbook](Runbook-Types-in-Service-Management-Automation.md) for Service Management Automation is based on Windows PowerShell Workflows. This section provides a brief overview of critical features of workflows that are common to Automation runbooks. Complete details on workflows are available in [Getting Started with Windows PowerShell Workflow](http://go.microsoft.com/fwlink/?LinkID=324602).
 
 The runbook structure is identical between runbooks for Service Management Automation and for [Microsoft Azure Automation](http://aka.ms/runbookauthor/azure) although the two will typically work with different resources.
@@ -156,7 +159,7 @@ $cred = New-Object -TypeName System.Management.Automation.PSCredential -Argument
 InlineScript
 {
   <Commands>
-} ‚ÄìPSComputer $con.ComputerName ‚ÄìPSCredential $cred
+} ñPSComputer $con.ComputerName ñPSCredential $cred
 ```
 
 While **InlineScript** activities may be critical in certain runbooks, they should only be used when necessary for the following reasons:
@@ -171,13 +174,13 @@ If you do need to use an **InlineScript**, you should minimize its scope. For ex
 
 -   You can [checkpoint](#BK_Checkpoints) the workflow after each iteration. If the job is suspended or interrupted and resumed, the loop will be able to resume.
 
--   You can use **ForEach ‚ÄìParallel** to handle collection items concurrently.
+-   You can use **ForEach ñParallel** to handle collection items concurrently.
 
 Keep the following recommendations in mind if you do use an **InlineScript** in your runbook:
 
 -   You can pass values into the script though with the **$Using** scope modifier. For example, a variable called $abc that has been set outside of the InlineScript would become $using:abc inside an **InlineScript**.
 
--   To return output from an **InlineScript**, assign the output to a variable and output any data to be returned to the output stream. The following example assigns the string ‚Äúhi‚Äù to a variable called $output.
+-   To return output from an **InlineScript**, assign the output to a variable and output any data to be returned to the output stream. The following example assigns the string ìhiî to a variable called $output.
 
     ```
     $output = InlineScript { Write-Output "hi" }
@@ -190,5 +193,6 @@ For further details on using **InlineScript**, see [Running Windows PowerShell C
 ## See Also
 [Runbook Execution in Service Management Automation](../get-started/Runbook-Execution-in-Service-Management-Automation.md)
 [Authoring Automation Runbooks](Authoring-Automation-Runbooks.md)
+
 
 

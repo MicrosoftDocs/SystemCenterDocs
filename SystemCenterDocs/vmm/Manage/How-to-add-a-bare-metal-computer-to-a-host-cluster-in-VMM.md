@@ -11,6 +11,9 @@ ms.topic: article
 ms.assetid: 94c20d10-4e0d-4b68-8812-c7e134fbd62d
 ---
 # How to add a bare-metal computer to a host cluster in VMM
+
+>Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
+
 This article describes how to add a bare metal computer to a Hyper-V cluster.
 
 
@@ -43,4 +46,5 @@ If you created the cluster from bare metal, you can use the same physical comput
 14. On a host cluster, you can perform cluster validation at any time. To do this, click the cluster and then on the ribbon, click **Validate Cluster**. Cluster validation begins immediately.
 
   
+
 

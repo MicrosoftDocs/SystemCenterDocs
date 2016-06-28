@@ -11,6 +11,9 @@ ms.topic: article
 ms.assetid: 04c4c092-e4e4-4e09-bfed-b3f83bb7ae43
 ---
 # How to Change the User Credentials for the Operational Database Account
+
+>Applies To: System Center 2016 Technical Preview - Service Manager
+
 If the user account for the Operational Database Account in Service Manager changes, you must make the following changes:
 
 1.  Add the new account to the Service Manager Administrators user role for both the Service Manager and data warehouse management servers
@@ -117,7 +120,7 @@ Use the following procedures to make these changes in Service Manager.
 
 4.  Right-click **Logins**, and then click **New Login**.
 
-5.  In the **Login â€“ New** dialog box, in the **Select a page** pane, click **General**, and then click **Search**.
+5.  In the **Login – New** dialog box, in the **Select a page** pane, click **General**, and then click **Search**.
 
 6.  In the **Select User or Group** dialog box, complete these steps:
 
@@ -135,7 +138,7 @@ Use the following procedures to make these changes in Service Manager.
 
 3.  In the **Application Pools** pane, right-click **SM_AppPool**, and then click **Advanced Settings**.
 
-4.  In the **Advanced Settings** dialog box, in the **Process Model** area, click **Identity**, and then click the ellipsis (**â€¦**) button.
+4.  In the **Advanced Settings** dialog box, in the **Process Model** area, click **Identity**, and then click the ellipsis (**…**) button.
 
 5.  In the **Application Pool Identity** dialog box, select **Custom account**, and then click **Set**.
 
@@ -158,5 +161,6 @@ Use the following procedures to make these changes in Service Manager.
 4.  In the **Tasks** pane, click **Properties**.
 
 5.  In the **Operational Database Account** page, in the **User name**, **Password**, and **Domain** boxes, type the new credentials for the Operational Database Account, and then click **OK**.
+
 
 

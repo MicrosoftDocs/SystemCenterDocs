@@ -14,6 +14,9 @@ ms.assetid:  923cdb13-3c6f-4892-ae15-6dc55c0593d4
 
 
 # Operations Manager Accounts
+
+>Applies To: System Center 2016 Technical Preview - Operations Manager
+
 To communicate with various parts of the monitoring infrastructure, the System Center Operations Manager management group requires two accounts: the Management Server Action Account and the System Center Configuration service and System Center Data Access Service Account. You are required to specify credentials for these accounts during installation.
 
 If you install Reporting, you need to specify credentials for two additional accounts: the Data Warehouse Write account and the Data Reader account.
@@ -40,13 +43,13 @@ The action account can be managed through the Default action account located in 
 ### Using a Low-Privileged Account
 When you install Operations Manager, you have the option of specifying either a domain account or using Local System. The more secure approach is to specify a domain account which allows you to select a user with the least amount of privileges necessary for your environment.
 
-You can use a low-privileged account for the agentâ€™s action account. On computers running Windows Server 2003 and Windows Vista, the account must have the following minimum privileges:
+You can use a low-privileged account for the agent’s action account. On computers running Windows Server 2003 and Windows Vista, the account must have the following minimum privileges:
 
 -   Member of the local Users group
 
 -   Member of the local Performance Monitor Users group
 
--   â€œAllow log on locallyâ€ permission (SetInteractiveLogonRight)
+-   “Allow log on locally” permission (SetInteractiveLogonRight)
 
 > [!IMPORTANT]
 > The minimum privileges described above are the lowest privileges that Operations Manager supports for the Action account. Other Run As accounts can have lower privileges. The actual privileges required for the Action account and the Run As accounts will depend upon which management packs are running on the computer and how they are configured. For more information about which specific privileges are required, see the appropriate management pack guide.
@@ -83,5 +86,6 @@ This is the action account which is used for creating and sending notifications.
 [Control Access by Using the Health Service Lockdown Tool in Operations Manager](https://technet.microsoft.com/library/hh212737%28v=sc.12%29.aspx)
 [Accessing UNIX and Linux Computers in Operations Manager](https://technet.microsoft.com/library/hh212886%28v=sc.12%29.aspx)
 [Managing Run As Accounts and Profiles](https://technet.microsoft.com/library/hh212714%28v=sc.12%29.aspx)
+
 
 

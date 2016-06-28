@@ -14,6 +14,9 @@ ms.assetid:  97d62062-dda1-4841-aa7c-a7d6a5c7210f
 
 
 # How to Upgrade an ACS Collector to System Center 2016 - Operations Manager
+
+>Applies To: System Center 2016 Technical Preview - Operations Manager
+
 Perform this procedure to upgrade the Audit Collection Services (ACS) Collector to System Center 2012 R2 Operations Manager locally on the ACS Collector. During this procedure, the ACS database is also upgraded without any additional steps.
 
 > [!WARNING]
@@ -48,5 +51,6 @@ Before you begin the upgrade process, make sure that your server meets the minim
     > If a **SQL Server Login** dialog box appears and the database authentication is set to **Windows Authentication**, select the correct database, and then verify that the **Use Trusted Connection** check box is selected. Otherwise, clear it, enter the SQL Server login name and password, and then click **OK**.
 
 10. When the upgrade is finished, click **Finish**.
+
 
 

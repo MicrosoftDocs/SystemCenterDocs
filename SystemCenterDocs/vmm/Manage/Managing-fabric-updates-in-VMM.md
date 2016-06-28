@@ -8,6 +8,9 @@ ms.topic: article
 ms.assetid: b327b3ad-b820-4852-8144-c4d326a66dc4
 ---
 # Managing fabric updates in VMM
+
+>Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
+
 The procedures in this scenario explain how to set up update management in Virtual Machine Manager (VMM) and how to perform updates on servers that are managed by VMM.
 
 For information about Windows Server Update Service (WSUS) requirements, see [Preparing your environment for System Center 2016 - Virtual Machine Manager](../Deploy/Preparing-your-environment-for-System-Center-2016---Virtual-Machine-Manager.md).
@@ -47,5 +50,6 @@ Follow these procedures to install a WSUS update server, add the update server t
 
 ## See Also
 [Managing fabric resources with VMM](Managing-fabric-resources-with-VMM.md)
+
 
 

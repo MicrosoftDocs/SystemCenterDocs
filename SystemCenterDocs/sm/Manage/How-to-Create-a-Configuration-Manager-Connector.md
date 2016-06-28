@@ -11,6 +11,9 @@ ms.topic: article
 ms.assetid: 70db0991-63d5-464a-978b-45e8783ec539
 ---
 # How to Create a Configuration Manager Connector_1
+
+>Applies To: System Center 2016 Technical Preview - Service Manager
+
 You can use the following procedures to create a connector to import data from Configuration Manager into System Center 2016 Technical Preview - Service Manager and confirm the status of the connector.
 
 > [!IMPORTANT]
@@ -62,7 +65,7 @@ You can use the following procedures to create a connector to import data from C
 
 11. On the **Confirmation** page, make sure that you receive the following confirmation message:
 
-    ‚ÄúYou have successfully completed the System Center Configuration Manager Connector Wizard.‚Äù
+    ìYou have successfully completed the System Center Configuration Manager Connector Wizard.î
 
     Then, click **Close**.
 
@@ -82,5 +85,6 @@ You can use the following procedures to create a connector to import data from C
 -   View the columns in the **Connector** pane; the columns contain information about the start time, the finish time, the status, and the percentage of completion.
 
 ![](../../media/pssymbol.png)You can use a Windows PowerShell command to create a new Configuration Manager 2007 connector. For information about how to use Windows PowerShell to create a new Configuration Manager 2007 connector in Service Manager, see [New-SCCMConnector](http://go.microsoft.com/fwlink/p/?LinkId=225350).
+
 
 

@@ -8,6 +8,9 @@ ms.topic: article
 ms.assetid: 2b37e839-f245-4e51-83ec-e2c11864a10b
 ---
 # How to create and deploy a virtual machine from a template
+
+>Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
+
 Use the following procedure to create a virtual machine from a virtual machine template in Virtual Machine Manager (VMM). You can use a virtual machine template to create new stand-alone virtual machines or to create tiers in a service template. 
 
 Note the following:
@@ -70,15 +73,15 @@ Use the following procedure to create a virtual machine from a template.
 
 1.  On the **Select Cloud** page, select the private cloud on which you want to place the virtual machine.  If you are connected as an administrator, you can select the host on which the virtual machine should be deployed in the private cloud. The cloud suggestions are based on a 0-5 star rating. For more information, see [Understanding virtual machine placement and ratings in VMM](Understanding-virtual-machine-placement-and-ratings-in-VMM.md). Verify the settings and modify them if required:
 
-    -   **Expected utilization**â€”For a virtual machine that is created from a blank hard disk, the expected utilization is based on standard defaults. For a virtual machine that is created from an existing virtual machine, the default settings are based on past performance of the existing virtual machine. VMM updates host suggestions and ratings in response to modifications that are made to the expected virtual machine utilization.
+    -   **Expected utilization**—For a virtual machine that is created from a blank hard disk, the expected utilization is based on standard defaults. For a virtual machine that is created from an existing virtual machine, the default settings are based on past performance of the existing virtual machine. VMM updates host suggestions and ratings in response to modifications that are made to the expected virtual machine utilization.
 
-    -   **Make this VM highly available**â€”With this option selected, only hosts that are located in a cluster are available for selection.
+    -   **Make this VM highly available**—With this option selected, only hosts that are located in a cluster are available for selection.
 
-    -   **Details**â€”Indicates the status of the host, the operating system, and the type and status of virtualization software.
+    -   **Details**—Indicates the status of the host, the operating system, and the type and status of virtualization software.
 
-    -   **Rating Explanation**â€”Provides an explanation if a host received a zero rating.
+    -   **Rating Explanation**—Provides an explanation if a host received a zero rating.
 
-    -   **SAN Explanation** or **Deployment and Transfer Explanation**â€”Lists any factors that make a storage area network (SAN) transfer unavailable. VMM does not recognize a virtual machine that is stored on a SAN as available for deployment using SAN transfer if the virtual machine was stored directly in the VMM library when it was created, or was added to the library during a library refresh. To avoid this issue, deploy the virtual machine to a host by using a LAN transfer, and then store the virtual machine in the same VMM library, library share, and logical unit number (LUN).
+    -   **SAN Explanation** or **Deployment and Transfer Explanation**—Lists any factors that make a storage area network (SAN) transfer unavailable. VMM does not recognize a virtual machine that is stored on a SAN as available for deployment using SAN transfer if the virtual machine was stored directly in the VMM library when it was created, or was added to the library during a library refresh. To avoid this issue, deploy the virtual machine to a host by using a LAN transfer, and then store the virtual machine in the same VMM library, library share, and logical unit number (LUN).
 
         In addition, the **Deployment and Transfer Explanation** tab provides an explanation if fast file copy cannot be used. Fast file copy is based on the Windows Offloaded Data Transfers (ODX) feature, introduced in Windows Server 2012 R2. For information about ODX, see [Windows Offloaded Data Transfers Overview](http://technet.microsoft.com/library/hh831628.aspx).
 
@@ -95,15 +98,15 @@ Use the following procedure to deploy the virtual machine on a host.
 
 1.  On the **Select Host** page, view the ratings, click the host on which you want to deploy the virtual machine, and then click **Next**. The host suggestions are based on a 0-5 star rating. For more information, see [Understanding virtual machine placement and ratings in VMM](Understanding-virtual-machine-placement-and-ratings-in-VMM.md). Note the following settings:
 
-    1.  **Expected utilization**â€”For a virtual machine that is created from a blank hard disk, the expected utilization is based on standard defaults. For a virtual machine that is created from an existing virtual machine, the default settings are based on past performance of the existing virtual machine. VMM updates the host suggestions and ratings in response to modifications that are made to the expected virtual machine utilization.
+    1.  **Expected utilization**—For a virtual machine that is created from a blank hard disk, the expected utilization is based on standard defaults. For a virtual machine that is created from an existing virtual machine, the default settings are based on past performance of the existing virtual machine. VMM updates the host suggestions and ratings in response to modifications that are made to the expected virtual machine utilization.
 
-    2.  **Make this VM highly available**â€”With this option selected, only hosts that are located in a cluster are available for selection.
+    2.  **Make this VM highly available**—With this option selected, only hosts that are located in a cluster are available for selection.
 
-    3.  **Details**â€”Indicates the status of the host, the operating system, and the type and status of virtualization software.
+    3.  **Details**—Indicates the status of the host, the operating system, and the type and status of virtualization software.
 
-    4.  **Rating Explanation**â€”Provides an explanation if a host received a zero rating.
+    4.  **Rating Explanation**—Provides an explanation if a host received a zero rating.
 
-    5.  **SAN Explanation** or  **Deployment and Transfer Explanation**â€”Lists any factors that make a SAN transfer unavailable. VMM does not recognize a virtual machine that is stored on a SAN as available for deployment using SAN transfer if the virtual machine was stored directly in the VMM library when it was created, or if it was added to the VMM library during a library refresh. To avoid this issue, deploy the virtual machine to a host by using a LAN transfer, and then store the virtual machine in the same VMM library, library share, and logical unit number (LUN).
+    5.  **SAN Explanation** or  **Deployment and Transfer Explanation**—Lists any factors that make a SAN transfer unavailable. VMM does not recognize a virtual machine that is stored on a SAN as available for deployment using SAN transfer if the virtual machine was stored directly in the VMM library when it was created, or if it was added to the VMM library during a library refresh. To avoid this issue, deploy the virtual machine to a host by using a LAN transfer, and then store the virtual machine in the same VMM library, library share, and logical unit number (LUN).
 
         In addition, the **Deployment and Transfer Explanation** tab provides an explanation if fast file copy cannot be used. Fast file copy is based on the Windows Offloaded Data Transfers (ODX) feature, introduced in Windows Server 2012 R2. For information about ODX, see [Windows Offloaded Data Transfers Overview](http://technet.microsoft.com/library/hh831628.aspx).
 
@@ -137,6 +140,7 @@ Use the following procedure to deploy the virtual machine on a host.
 3.  On the **Summary** page, confirm the settings, and then click **Create**.
 
     To confirm that the virtual machine was created, in the **Library** workspace, in the **Library** pane, expand **Library Servers**, expand the library server where you stored the virtual machine, and then click **Stored Virtual Machines and Services**. The stored virtual machine appears in the **Physical Library Objects** pane.
+
 
 
 

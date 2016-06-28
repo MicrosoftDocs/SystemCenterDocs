@@ -11,6 +11,9 @@ ms.topic: article
 ms.assetid: 220b9d62-cd3a-4e30-a465-cdd70ca736bc
 ---
 # How to Set Parent Incident Options
+
+>Applies To: System Center 2016 Technical Preview - Service Manager
+
 Use the following procedure to set default options for parent and child incidents in Service Manager. The default options determine whether child incidents automatically resolve, whether child incidents automatically activate, and whether child incident status automatically updates.
 
 When choosing to automatically resolve child incidents or automatically reactivate child incidents when its parent is resolved or when its parent is reactivated, you can prompt the resolving analyst for their decision. When prompted, an analyst can choose a resolution category or activation status. Otherwise, when incidents are automatically resolved or activated, the analyst is not prompted and the changes are effectively immediately using the parent incident settings.
@@ -72,5 +75,6 @@ When choosing to automatically resolve child incidents or automatically reactiva
     -   If you do not want to automatically update child incident status, set **Status of active child incidents when linked to parent** to **Do not change the status of child incidents**.
 
 6.  Click **OK**.
+
 
 

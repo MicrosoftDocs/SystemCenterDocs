@@ -11,6 +11,9 @@ ms.topic: article
 ms.assetid: a0863ac5-05d9-46b3-8e18-1f76e50ee07d
 ---
 # Using Runbooks in System Center 2016 - Service Manager
+
+>Applies To: System Center 2016 Technical Preview - Service Manager
+
 Runbooks in Service Manger are used to automate procedures. The following sections provide details about the purpose and use of runbooks.
 
 ## About Runbooks in Service Manager
@@ -62,7 +65,7 @@ As an example, you can implement a new request offering using an Orchestrator ru
 
 9. Ensure that **Is Ready for Automation** is selected.
 
-10. Select the **Runbook** tab, and then under **Parameter Mapping**, note that the parameters from the runbook are mapped to generic propertiesâ€”for example, Parameter1, Parameter2, and so onâ€”of the runbook activity class. The **Type** column specifies whether the parameters are inputs or outputs. You can also type default values for each parameter using **Edit Mapping**.
+10. Select the **Runbook** tab, and then under **Parameter Mapping**, note that the parameters from the runbook are mapped to generic properties—for example, Parameter1, Parameter2, and so on—of the runbook activity class. The **Type** column specifies whether the parameters are inputs or outputs. You can also type default values for each parameter using **Edit Mapping**.
 
 11. For any parameter, click **Edit Mapping**.
 
@@ -86,5 +89,6 @@ When you view the runbook, you can perform basic actions with the runbook, such 
 3.  In the **Runbooks** view, select a runbook.
 
 4.  In the **Tasks** pane under **<RunbookName\>**, click **View Runbooks** to open the runbook in Internet Explorer.
+
 
 

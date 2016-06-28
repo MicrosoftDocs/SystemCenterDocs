@@ -11,6 +11,9 @@ ms.topic: article
 ms.assetid: a6daafc4-bc8d-4cd5-bd14-5f5b55da90a2
 ---
 # Editing a Runbook
+
+>Applies To: Windows Azure Pack for Windows Server
+
 Each runbook in Service Management Automation has two versions, Draft and Published. You edit the Draft version of the workflow and then publish it so it can be executed. The Published version cannot be edited.
 
 ## <a name="Portal"></a>To Edit a Runbook with the Management Portal
@@ -99,7 +102,7 @@ $port = 9090
 $runbookName = "Test-Runbook"
 $scriptPath = "c:\runbooks\Test-Runbook.ps1"
 
-$runbookDefinition = Get-SMARunbookDefinition â€“WebServiceEndpoint $webServer â€“Port $port -Name $runbookName -Type Draft
+$runbookDefinition = Get-SMARunbookDefinition –WebServiceEndpoint $webServer –Port $port -Name $runbookName -Type Draft
 $runbookContent = $runbookDefinition.Content
 
 Out-File -InputObject $runbookContent -FilePath $scriptPath
@@ -114,8 +117,8 @@ $port = 9090
 $runbookName = "Test-Runbook"
 $scriptPath = "c:\runbooks\Test-Runbook.ps1"
 
-Edit-SmaRunbook â€“WebServiceEndpoint $webServer â€“Port $port -Name $runbookName -Path $scriptPath -Overwrite
-Publish-SmaRunbook â€“WebServiceEndpoint $webServer â€“Port $port â€“Name $runbookName â€“Path $scriptPath
+Edit-SmaRunbook –WebServiceEndpoint $webServer –Port $port -Name $runbookName -Path $scriptPath -Overwrite
+Publish-SmaRunbook –WebServiceEndpoint $webServer –Port $port –Name $runbookName –Path $scriptPath
 ```
 
 ## <a name="ISE"></a>To Edit an Automation Runbook Using Windows PowerShell ISE
@@ -143,5 +146,6 @@ Windows PowerShell Integrated Scripting Environment (ISE) is an application that
 [Creating or Importing a Runbook](Creating-or-Importing-a-Runbook.md)
 [Service Management Automation](../Service-Management-Automation.md)
 [Authoring Automation Runbooks](Authoring-Automation-Runbooks.md)
+
 
 

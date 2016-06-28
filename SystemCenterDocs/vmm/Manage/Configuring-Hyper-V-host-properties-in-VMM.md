@@ -11,6 +11,9 @@ ms.topic: article
 ms.assetid: d1fd2d69-d9c6-4e40-9ffe-bd3723a2f5ac
 ---
 # Configuring Hyper-V host properties in VMM
+
+>Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
+
 After you've added Hyper-V hosts and servers in the VMM fabric there are a number of properties you can configure for standalone hosts and clusters. 
 
 ## Properties for Hyper-V hosts
@@ -37,5 +40,6 @@ After you've added Hyper-V hosts and servers in the VMM fabric there are a numbe
 |**Available Storage**|Shows available storage, that is, storage logical units that are assigned to the host cluster but are not Cluster Shared Volumes (CSV).<br /><br />You can also do the following:<br /><br />-   Add and remove storage logical units that are managed by VMM.<br />-   Convert available storage to shared storage (CSV).|
 |**Shared Volumes**|Shows the shared volumes (CSVs) that are allocated to the host cluster. You can also do the following:<br /><br />-   Add and remove CSVs that are managed by VMM.<br />-   Convert CSVs to available (non-CSV) storage.|
 |**Custom Properties**|Custom properties that you manage.|
+
 
 

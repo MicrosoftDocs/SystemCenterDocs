@@ -11,6 +11,9 @@ ms.topic: article
 ms.assetid: 58447117-dead-41bc-afc9-15fc82482dca
 ---
 # Set or change the Service Management Automation endpoint
+
+>Applies To: Windows Azure Pack for Windows Server
+
 The **QuickStart** tab for Automation in Windows Azure Pack for Windows Server provides a link that enables you to set up or change the Service Management Automation endpoint. If the Service Management Automation endpoint is not yet registered, click **Register the Service Management Automation endpoint** to configure it. To change the Service Management Automation endpoint settings after an endpoint has been set up, click **Current Service Management Automation endpoint**.
 
 The Service Management Automation endpoint requires the following information:
@@ -22,5 +25,6 @@ The Service Management Automation endpoint requires the following information:
 -   The access password for the user account.
 
 For more detailed guidance to understand, create, test, and publish runbooks, see [Authoring Automation Runbooks](Authoring-Automation-Runbooks.md).
+
 
 

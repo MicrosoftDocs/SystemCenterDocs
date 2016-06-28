@@ -8,6 +8,9 @@ ms.topic: article
 ms.assetid: eb9a9e46-9a99-45f0-9c57-9aa97704b2d1
 ---
 # How to add users to the Administrator user role in VMM
+
+>Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
+
 The Administrator user role is created when you install Virtual Machine Manager (VMM). The user who performs the VMM installation and all domain users in the Local Administrators group are added to the Administrator user role.
 
 Use this procedure to add users to the Administrator user role in VMM or remove users from the user role.
@@ -32,5 +35,6 @@ Use this procedure to add users to the Administrator user role in VMM or remove 
 ## See Also
 [Creating user roles in VMM](Creating-user-roles-in-VMM.md)
 [Securing VMM resources](Securing-VMM-resources.md)
+
 
 

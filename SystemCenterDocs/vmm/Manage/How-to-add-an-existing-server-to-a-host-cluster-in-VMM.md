@@ -11,6 +11,9 @@ ms.topic: article
 ms.assetid: 6ea976dc-f64c-4a78-858f-f18e33eb3acf
 ---
 # How to add an existing server to a host cluster in VMM
+
+>Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
+
 Use these procedures to add  nodes to host clusters that Virtual Machine Manager (VMM) manages:
 
 -   [Bring a node under management by VMM if you already used Failover Cluster Manager to add the node](How-to-add-an-existing-server-to-a-host-cluster-in-VMM.md#BKMK_fcm)
@@ -63,5 +66,6 @@ If you want to add a bare-metal computer as a new node, see [How to add a bare-m
 [Deploying Hyper-V hosts or host clusters from bare metal with VMM](Deploying-Hyper-V-hosts-or-host-clusters-from-bare-metal-with-VMM.md)
 [Managing Hyper-V hosts and host clusters with VMM](Managing-Hyper-V-hosts-and-host-clusters-with-VMM.md)
 [Managing fabric resources with VMM](Managing-fabric-resources-with-VMM.md)
+
 
 

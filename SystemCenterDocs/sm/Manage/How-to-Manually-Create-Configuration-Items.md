@@ -11,6 +11,9 @@ ms.topic: article
 ms.assetid: 24089a9b-eaa2-42f7-b600-2d0e6a2149ec
 ---
 # How to Manually Create Configuration Items
+
+>Applies To: System Center 2016 Technical Preview - Service Manager
+
 You might have to create a configuration item to add computers that do not exist in Active Directory Domain Services (AD DS) and that are not managed by Configuration Manager to the Service Manager database.
 
 Additionally, you might have to manually create a new user configuration item to be used in the **Affected User** box in incidents created by Operations Manager.
@@ -60,5 +63,6 @@ You can use the following procedures to manually create two computer configurati
 -   Verify that the computer you added appears in the **Computers** pane.
 
 -   Verify that the user you added appears in the **Users** pane.
+
 
 

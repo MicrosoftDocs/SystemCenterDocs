@@ -11,6 +11,9 @@ ms.topic: article
 ms.assetid: af23bd77-699a-48b7-91e2-fc1273c5edd2
 ---
 # How to Edit a Service Level Objective
+
+>Applies To: System Center 2016 Technical Preview - Service Manager
+
 In Service Manager, you can edit a service level objective to modify relationships between a queue and a service level, a calendar item and a time metric, and actions that occur before or after service level breaches. Afterward, when you view incidents or service requests and they approach their warning time, you will see a notification bar stating that the item is about to breach. You can also create periodic notifications if you want analysts to receive email for incidents or service requests that might breach their service level objective.
 
 The service level objective that you edit is linked to a queue. If you want to modify the association of queue to a service level objective, the service level objective must target the same type of work item as the queue, based on its class; otherwise, the queue will not be available when you modify the service level objective.
@@ -32,5 +35,6 @@ The service level objective that you edit is linked to a queue. If you want to m
     -   **Service Level Criteria**
 
 5.  Click **OK** to close the **Edit SLO** dialog box.
+
 
 

@@ -11,6 +11,9 @@ ms.topic: article
 ms.assetid: 855110b9-cd11-4e06-8139-b21518456215
 ---
 # Managing the Data Warehouse in System Center 2016 - Service Manager
+
+>Applies To: System Center 2016 Technical Preview - Service Manager
+
 This section provides an overview of key concepts for managing the data warehouse in Service Manager. This section also contains procedures that you can use to manage the data warehouse.
 
 ## Managing the Data Warehouse Topics
@@ -54,6 +57,7 @@ This section provides an overview of key concepts for managing the data warehous
 -   [How to Troubleshoot a Data Warehouse Job](How-to-Troubleshoot-a-Data-Warehouse-Job.md)
 
     Describes how to troubleshoot data warehouse jobs.
+
 
 
 

@@ -8,6 +8,9 @@ ms.topic: article
 ms.assetid: 9ec7ba8b-21d1-4ff3-a5cf-52e899ca0bd6
 ---
 # How to remediate updates on infrastructure servers in VMM
+
+>Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
+
 Use the following procedure to remediate updates for infrastructure servers that have been added to the configuration in Virtual Machine Manager (VMM). Infrastructure servers support services such as Active Directory, DNS, DHCP, Operations Manager, Service Manager, and so on.
 
 > [!NOTE]
@@ -47,5 +50,6 @@ Use the following procedure to remediate updates for infrastructure servers that
 [How to configure update baselines in VMM](How-to-configure-update-baselines-in-VMM.md)
 [Managing fabric updates in VMM](Managing-fabric-updates-in-VMM.md)
 [Managing fabric resources with VMM](Managing-fabric-resources-with-VMM.md)
+
 
 

@@ -14,6 +14,9 @@ ms.assetid:  49145c22-91aa-44d1-aeed-94db11072ce1
 
 
 # How to Upgrade a Gateway Server to System Center 2016 - Operations Manager
+
+>Applies To: System Center 2016 Technical Preview - Operations Manager
+
 After you upgrade the management servers in your management group, you upgrade any gateway servers.  The procedure to upgrade a gateway server to System Center 2016 Technical Preview - Operations Manager is performed locally on the gateway server. You can then verify whether the upgrade is successful. Before you begin the upgrade process, make sure that your gateway server meets the minimum supported configurations. For more information, see [System Requirements: System Center 2016 - Operations Manager](../../system-requirements/System-Requirements-for-System-Center-Technical-Preview.md)
 
 ### To upgrade a gateway server
@@ -54,5 +57,6 @@ After you upgrade the management servers in your management group, you upgrade a
 3.  In the **Management Servers** pane, verify that the value listed in the **Version** column is 7.2.11469.0.
 
 After you have upgraded all of the gateways in your management group, you can upgrade the stand-alone operations consoles. See [How to Upgrade an Operations Console to System Center 2016 - Operations Manager](How-to-Upgrade-an-Operations-Console-to-System-Center-2016---Operations-Manager.md) for more information.
+
 
 

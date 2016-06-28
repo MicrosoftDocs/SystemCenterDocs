@@ -11,6 +11,9 @@ ms.topic: article
 ms.assetid: 0d548b0a-e1b4-4b9b-9597-4056a832f1da
 ---
 # Combine Incidents into Parent-Child Groups
+
+>Applies To: System Center 2016 Technical Preview - Service Manager
+
 Incidents in Service Manager are usually short-lived while help desk analysts investigate and then restore operations. Often, incidents are related and it is useful to group incidents together. You can create a parent incident to group other existing incidents together, which can help provide visibility into them and their relationship to one another.
 
 A  Service Manager administrator can define automatic incident resolution settings so that when a parent incident is resolved, all its child incidents resolve automatically, do not resolve automatically, or to let the analyst decide whether to resolve or not. Similarly, an administrator can also define automatic incident reactivation settings so that when a parent incident is reactivated, all its child incidents reactivate automatically, do not reactivate automatically, or to let the analyst decide whether to reactivate the child incidents. Both processes can help you verify that all child incidents are resolved or activated together as a group.
@@ -32,5 +35,6 @@ A  Service Manager administrator can define automatic incident resolution settin
 7.  Open a parent incident from a child incident
 
 8.  Create a new child incident and link it to a related parent incident
+
 
 

@@ -14,6 +14,9 @@ ms.assetid:  ba2a2815-10bf-4904-ae1c-1e572e2b5fa5
 
 
 # Process Manual Agent Installations
+
+>Applies To: System Center 2016 Technical Preview - Operations Manager
+
 Manual installation of an agent refers to the process of running MOMAgent.msi locally on a computer that is to host a System Center Operations Manager agent. When it is installed, the agent attempts to join the specified management group by contacting a specified management server. You can use security settings at both the management group and the management server level to configure how requests from manually installed agents are processed.
 
 The following three options are available to process manually installed agents.
@@ -98,5 +101,6 @@ The following procedures show you how to configure settings for manual agent ins
 [Upgrading and Uninstalling Agents on UNIX and Linux Computers](Upgrading-and-Uninstalling-Agents-on-UNIX-and-Linux-Computers.md)
 [Manually Uninstalling Agents from UNIX and Linux Computers](Manually-Uninstalling-Agents-from-UNIX-and-Linux-Computers.md)
 [Uninstall Agent from Windows-based Computers](Uninstall-Agent-from-Windows-based-Computers.md)
+
 
 

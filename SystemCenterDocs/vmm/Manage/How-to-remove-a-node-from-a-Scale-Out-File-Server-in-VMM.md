@@ -8,6 +8,9 @@ ms.topic: article
 ms.assetid: 87ba7da6-b80d-431b-90e6-c11b25c84bcb
 ---
 # How to remove a node from a Scale-Out File Server in VMM
+
+>Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
+
 This topic contains procedures for removing one or more nodes from a Scale-Out File Server that is managed by Virtual Machine Manager (VMM). At the start of the procedure, the Scale-Out File Server must have at least two nodes.
 
 ### To remove a node from a Scale-Out File Server
@@ -30,5 +33,6 @@ This topic contains procedures for removing one or more nodes from a Scale-Out F
 [Managing Scale-Out File Servers with VMM](Managing-Scale-Out-File-Servers-with-VMM.md)
 [Managing storage resources and capacity with VMM](Managing-storage-resources-and-capacity-with-VMM.md)
 [Managing fabric resources with VMM](Managing-fabric-resources-with-VMM.md)
+
 
 

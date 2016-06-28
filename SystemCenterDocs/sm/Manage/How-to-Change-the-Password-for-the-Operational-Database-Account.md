@@ -12,6 +12,9 @@ ms.assetid: 4cc6e765-1cfd-4e0a-aac6-2b5fd3b671b5
 ---
 # How to Change the Password for the Operational Database Account
 
+>Applies To: System Center 2016 Technical Preview - Service Manager
+
+
 ### To change the log-on password for the Service Manager Data Access and Service Manager Management Configuration services
 
 1.  On the Windows desktop, click **Start**, and then click **Run**.
@@ -33,5 +36,6 @@ ms.assetid: 4cc6e765-1cfd-4e0a-aac6-2b5fd3b671b5
 9. Type the new password in the **Password** and **Confirm Password** text boxes, and then click **OK**.
 
 10. Restart the System Center Management Configuration service.
+
 
 

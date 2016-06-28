@@ -11,6 +11,9 @@ ms.topic: article
 ms.assetid: 22d6d616-e0b3-47b2-a8d8-f235091bf1d5
 ---
 # Managing Configuration Items
+
+>Applies To: System Center 2016 Technical Preview - Service Manager
+
 You might want to associate a work item to apply a Microsoft Exchange Server service pack update to the service that represents the computers that are affected by the email incident. To accomplish this, you can update the service configuration item and then add the respective work item as a related item.
 
 You can use the following procedures to add information, such as related work items or files, to configuration items in Service Manager. The procedures in this topic describe only how to add items, but you can follow similar steps to view or remove items.
@@ -58,5 +61,6 @@ Similarly, work items such as incidents, problems, and change requests are often
     3.  In this release, do not attempt to open an attached file before you submit the form.
 
 5.  Click **OK** to save the form.
+
 
 

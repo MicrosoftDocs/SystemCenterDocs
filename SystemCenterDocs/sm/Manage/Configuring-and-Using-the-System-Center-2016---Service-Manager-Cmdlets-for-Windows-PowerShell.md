@@ -11,6 +11,9 @@ ms.topic: article
 ms.assetid: f032839d-a148-4dd9-9309-a51a047f197a
 ---
 # Configuring and Using the System Center 2016 - Service Manager Cmdlets for Windows PowerShell
+
+>Applies To: System Center 2016 Technical Preview - Service Manager
+
 This section provides an introduction to the Service Manager cmdlets for the Windows PowerShell command-line interface.
 
 Before you can run any command in the Windows PowerShell command-line interface in Service Manager, you must set execution policy to RemoteSigned. Before you can run data warehouse cmdlets, you must manually import the data warehouse cmdlets module.
@@ -31,5 +34,6 @@ The Service Manager cmdlets are implemented in the following two modules:
 -   [List of the Service Manager Cmdlets](List-of-the-Service-Manager-Cmdlets.md)
 
     Provides a list of Service Manager cmdlet modules.
+
 
 

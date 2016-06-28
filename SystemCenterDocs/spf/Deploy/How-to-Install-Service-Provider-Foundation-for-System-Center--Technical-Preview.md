@@ -11,6 +11,9 @@ ms.topic: get-started-article
 ms.assetid: ce22e119-71d2-4a0c-a9a0-99b886ce392f
 ---
 # How to Install Service Provider Foundation for System Center  Technical Preview
+
+>Applies To: System Center Technical Preview
+
 You can install Service Provider Foundation on a single server or on multiple servers, with at least one server that has Microsoft SQL Server installed to contain the Service Provider Foundation database.
 
 A side-by-side installation of different Service Provider Foundation versions that are on the same server is not supported.
@@ -25,7 +28,7 @@ Before you install Service Provider Foundation, do the following:
 
 -   Close any open programs, and make sure that the computer does not have a restart pending.
 
-If there is a problem with the installation completing successfully, refer to the log files, named ‚ÄúMicrosoft Service Provider*.log‚Äù, in the %SYSTEMDRIVE%\\%TEMP%  folder.
+If there is a problem with the installation completing successfully, refer to the log files, named ìMicrosoft Service Provider*.logî, in the %SYSTEMDRIVE%\\%TEMP%  folder.
 
 ### To install Service Provider Foundation
 
@@ -89,8 +92,9 @@ If there is a problem with the installation completing successfully, refer to th
 
     After you click **Install**, the installation progress indicator appears.
 
-14. Click **Close** when the message ‚ÄúSetup is complete‚Äù appears.
+14. Click **Close** when the message ìSetup is completeî appears.
 
 Repeat this procedure for each installation, such as for a web farm.
+
 
 

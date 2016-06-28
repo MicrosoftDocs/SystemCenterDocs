@@ -11,6 +11,9 @@ ms.topic: article
 ms.assetid: fba0077d-5ddb-4bf1-bceb-a6211c91294c
 ---
 # How to Configure Your Infrastructure for Email Incident Support with Exchange Server
+
+>Applies To: System Center 2016 Technical Preview - Service Manager
+
 Use the following procedures to configure your Microsoft Exchange Server infrastructure to support the creation of incidents through email.
 
 ### To install and configure the SMTP server
@@ -231,5 +234,6 @@ In the following procedures, you configure Exchange Server for use with Service 
     > The file should be removed automatically. This indicates that the Exchange server is using it.
 
 9. Using the user credentials for the **To** recipient that you typed previously, open Outlook and confirm that the email was received.
+
 
 

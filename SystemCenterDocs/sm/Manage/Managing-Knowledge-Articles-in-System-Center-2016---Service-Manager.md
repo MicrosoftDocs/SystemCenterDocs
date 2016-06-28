@@ -11,6 +11,9 @@ ms.topic: article
 ms.assetid: 50edf3f3-fa1d-4134-8383-dfc6be73ddf0
 ---
 # Managing Knowledge Articles in System Center 2016 - Service Manager
+
+>Applies To: System Center 2016 Technical Preview - Service Manager
+
 Knowledge articles in Service Manager can help service desk analysts and end users understand and solve problems. Because any employee can search for and view knowledge articles, create knowledge articles so that end users can help themselves resolve IT problems before new work items are opened. Service desk analysts also have to link work items to knowledge articles.
 
 Use the procedures in this section to create and search for knowledge articles.
@@ -109,5 +112,6 @@ The **Knowledge Search** form displays the knowledge articles that match the sea
 7.  Click **OK** to close the informational message.
 
 8.  In the **Knowledge Search** form, click **Close**.
+
 
 

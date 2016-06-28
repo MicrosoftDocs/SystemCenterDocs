@@ -11,6 +11,9 @@ ms.topic: article
 ms.assetid: 83ebd70e-6671-4211-af5a-5a0c1ad123e4
 ---
 # Managing Incidents and Problems in Service Manager
+
+>Applies To: System Center 2016 Technical Preview - Service Manager
+
 System Center 2016 Technical Preview - Service Manager helps your organization manage incidents and problems by implementing and automating help desk ticketing processes so that these processes comply with the best practices that are described in the Microsoft Operations Framework (MOF) and in the Information Technology Infrastructure Library (ITIL). For more information about MOF 4.0, see [Microsoft Operations Framework](http://go.microsoft.com/fwlink/p/?LinkID=116391).
 
 If you need to add or extend the functionality of Service Manager to implement custom processes for handling incidents and problems, you can use standard Microsoft development tools and the Service Manager SDK.
@@ -30,5 +33,6 @@ At first, the difference between affected items and related items in problem and
 -   [Combine Incidents into Parent-Child Groups](Combine-Incidents-into-Parent-Child-Groups.md)
 
 -   Manage problems by creating and editing problem records, resolve problems and related incidents automatically, and link incidents or change requests to a problem record.
+
 
 

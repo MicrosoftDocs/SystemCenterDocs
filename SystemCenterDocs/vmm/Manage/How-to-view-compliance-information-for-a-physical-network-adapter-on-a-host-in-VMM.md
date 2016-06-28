@@ -11,6 +11,9 @@ ms.topic: article
 ms.assetid: 4bc6b71e-39d5-4053-972a-61675154bd2c
 ---
 # How to view compliance information for a physical network adapter on a host in VMM
+
+>Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
+
 Compliance information lets you see whether the settings on physical network adapters on a host are consistent with the configuration in Virtual Machine Manager (VMM). For example, you can see whether all the IP subnets and VLANs that are included in a network site in a logical network are assigned to a physical network adapter.
 
 If you want more detail about compliance information for logical switches, see [How to bring host network adapters into compliance with logical switch settings in VMM](How-to-bring-host-network-adapters-into-compliance-with-logical-switch-settings-in-VMM.md) instead.
@@ -47,5 +50,6 @@ If you want more detail about compliance information for logical switches, see [
 [Managing hosts and host clusters with VMM](Managing-hosts-and-host-clusters-with-VMM.md)
 [Managing network resources with VMM](Managing-network-resources-with-VMM.md)
 [Managing fabric resources with VMM](Managing-fabric-resources-with-VMM.md)
+
 
 

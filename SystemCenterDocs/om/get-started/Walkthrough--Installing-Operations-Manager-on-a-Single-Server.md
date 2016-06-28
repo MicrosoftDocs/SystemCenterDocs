@@ -14,6 +14,9 @@ ms.assetid:  76eb99bf-9aca-49d1-b5e7-63909fd21b13
 
 
 # Walkthrough: Installing Operations Manager on a Single Server
+
+>Applies To: System Center 2016 Technical Preview - Operations Manager
+
 This walkthrough guides you through an installation of System Center 2016 Technical Preview - Operations Manager on a single server. The features installed include the following:
 
 -   Management server
@@ -88,7 +91,7 @@ You must ensure that your server meets the minimum supported configurations for 
     > [!IMPORTANT]
     > You might receive a message about having the wrong version of SQL Server, or you might encounter a problem with the SQL Server Windows Management Instrumentation (WMI) provider. To resolve this problem, open a Command Prompt window, select **Run as administrator**, and then run the following command. In the command, replace the *<path\>*  placeholder with the location of SQL Server:
     > 
-    > **mofcomp.exe â€œ\<path>\Microsoft SQL Server\100\Shared\sqlmgmproviderxpsp2up.mofâ€**
+    > **mofcomp.exe “\<path>\Microsoft SQL Server\100\Shared\sqlmgmproviderxpsp2up.mof”**
 
     > [!NOTE]
     > The SQL Server model database size must not be greater than 100 MB. If it is, you might encounter an error in Setup regarding the inability to create a database on SQL due to user permissions. To resolve the issue, you must reduce the size of the model database.
@@ -102,7 +105,7 @@ You must ensure that your server meets the minimum supported configurations for 
     > [!IMPORTANT]
     > You might receive a message about having the wrong version of SQL Server, or you might encounter a problem with the SQL Server Windows Management Instrumentation (WMI) provider. To resolve this problem, open a Command Prompt window, select **Run as administrator**, and then run the following command. In the command, replace the *<path\>* placeholder with the location of SQL Server:
     > 
-    > **mofcomp.exe â€œ\<path>\Microsoft SQL Server\100\Shared\sqlmgmproviderxpsp2up.mofâ€.**
+    > **mofcomp.exe “\<path>\Microsoft SQL Server\100\Shared\sqlmgmproviderxpsp2up.mof”.**
 
     > [!NOTE]
     > These paths do not change if you connect to a different instance of SQL Server.
@@ -207,5 +210,6 @@ You must ensure that your server meets the minimum supported configurations for 
 
 ## Next Steps
 Now that you have installed System Center 2016 Technical Preview - Operations Manager, you can deploy agents and start monitoring your applications, servers, and network devices. For more information, see [Managing Discovery and Agents](http://go.microsoft.com/fwlink/p/?LinkID=207756) and [Operations Manager 2016 Monitoring Scenarios](http://go.microsoft.com/fwlink/p/?LinkID=218372).
+
 
 

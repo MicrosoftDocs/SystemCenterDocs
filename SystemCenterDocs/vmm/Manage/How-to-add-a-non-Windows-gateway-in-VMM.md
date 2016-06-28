@@ -11,6 +11,9 @@ ms.topic: article
 ms.assetid: 6fcb27a4-2141-4cd6-856d-173b6490856c
 ---
 # How to add a non-Windows gateway in VMM
+
+>Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
+
 You can connect a VM network to other networks by using a gateway in Virtual Machine Manager (VMM).
 
 > [!IMPORTANT]
@@ -21,7 +24,7 @@ After you add the gateway, you can configure a VM network to use the gateway. Yo
 ## Prerequisites
 If you want to add a gateway to your configuration in VMM, you must first perform the following tasks:
 
-1.  Obtain provider software from the manufacturer of the gateway device, install the provider on the VMM management server, and then restart the System Center Virtual Machine Manager service. If you have installed a high-availability VMM management server on a cluster, be sure to install the provider on all nodes of the cluster. For more information about installing the provider, refer to the manufacturerâ€™s documentation.
+1.  Obtain provider software from the manufacturer of the gateway device, install the provider on the VMM management server, and then restart the System Center Virtual Machine Manager service. If you have installed a high-availability VMM management server on a cluster, be sure to install the provider on all nodes of the cluster. For more information about installing the provider, refer to the manufacturer’s documentation.
 
 2.  Make sure that you know the manufacturer and model of your gateway, the name of an account that has permission to configure the gateway, the connection string that the gateway will use, and the host groups for which the gateway should be available. If certificates are required for the gateway, for example, if the gateway is in an untrusted domain, make sure you know how to view the thumbprint information for those certificates.
 
@@ -61,7 +64,7 @@ If you want to add a gateway to your configuration in VMM, you must first perfor
 9. On the **Connection String** page, in the **Connection string** box, type the connection string for the gateway to use, and then click **Next**.
 
     > [!IMPORTANT]
-    > The syntax of the connection string is defined by the manufacturer of the gateway. For more information about the required syntax, refer to the manufacturerâ€™s documentation.
+    > The syntax of the connection string is defined by the manufacturer of the gateway. For more information about the required syntax, refer to the manufacturer’s documentation.
 
 10. On the **Certificates** page, if certificates are listed, verify that the thumbprints of those certificates match the thumbprints of the certificates that are installed on the gateway. Then select the check box to confirm that the certificates can be imported to the trusted certificate store. Click **Next**.
 
@@ -86,5 +89,6 @@ When you are ready to configure the VM network that uses the newly added gateway
 [Configuring gateways in VMM](Configuring-gateways-in-VMM.md)
 [How to create a VM network for a VLAN in VMM](How-to-create-a-VM-network-for-a-VLAN-in-VMM.md)
 [Managing network resources with VMM](Managing-network-resources-with-VMM.md)
+
 
 

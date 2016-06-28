@@ -8,6 +8,9 @@ ms.topic: article
 ms.assetid: 8b2e920b-23fc-4261-a3a6-702bbde7780a
 ---
 # How to upgrade a Scale-Out File Server to Windows Server Technical Preview
+
+>Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
+
 Use the following procedure to upgrade a VMM-managed  Windows Server 2012 R2 Scale-Out File Server to Windows Server Technical Preview. Before you begin, be sure to review the prerequisites listed in [Upgrading Windows Server 2012 R2 host clusters to Windows Server 2016 Technical Preview in VMM](Upgrading-Windows-Server-2012-R2-host-clusters-to-Windows-Server-2016-Technical-Preview-in-VMM.md).
 
 ### To upgrade a Windows Server 2012 R2 Scale-Out File Server to Windows Server Technical Preview
@@ -72,5 +75,6 @@ Use the following procedure to upgrade a VMM-managed  Windows Server 2012 R2 Sca
 [Managing Scale-Out File Servers with VMM](Managing-Scale-Out-File-Servers-with-VMM.md)
 [Managing storage resources and capacity with VMM](Managing-storage-resources-and-capacity-with-VMM.md)
 [Managing fabric resources with VMM](Managing-fabric-resources-with-VMM.md)
+
 
 

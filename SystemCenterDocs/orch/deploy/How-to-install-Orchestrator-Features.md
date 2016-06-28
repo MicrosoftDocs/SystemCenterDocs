@@ -11,6 +11,9 @@ ms.topic: article
 ms.assetid: cd0b7e89-7bd2-482a-b840-f3f119e6f9ea
 ---
 # How to install Orchestrator Features
+
+>Applies To: System Center 2016 Technical Preview - Orchestrator
+
 Use the following steps to install an System Center 2016 Technical Preview - Orchestrator management server.
 
 ### To install an Orchestrator management server
@@ -228,5 +231,6 @@ Use the following steps to install an System Center 2016 Technical Preview - Orc
 3.  Select **Turn on network discovery**, and then click **Save changes**.
 
     If you are prompted for an administrator password or confirmation, type the password or provide confirmation.
+
 
 

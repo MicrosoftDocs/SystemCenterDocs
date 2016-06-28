@@ -8,6 +8,9 @@ ms.topic: article
 ms.assetid: 6805c8cf-d768-4680-9990-2b8c895f31ec
 ---
 # Adding an Azure subscription in VMM
+
+>Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
+
 Withthe Add Azure Subscription feature, administrators of Virtual Machine Manager (VMM) can add Microsoft Azure subscriptions to VMM and perform basic actions on Azure instances in those subscriptions. For each Azure subscription you add, you can use a console to see all role instances in all Deployment Groups in that subscription.
 
 ## What you can do with this feature
@@ -87,13 +90,13 @@ Before you try to add a subscription, it's a good idea to check a few things, su
 
 4.  Upload your certificate to Windows Azure:
 
-    1.  In the Azure Portal, in **Settings** > **Management Certificates**, click the **Upload** button. Youâ€™ll be prompted for your .cer file (certificate file).
+    1.  In the Azure Portal, in **Settings** > **Management Certificates**, click the **Upload** button. You’ll be prompted for your .cer file (certificate file).
 
         For instructions on importing and exporting certificates and private keys, see [To import a certificate](http://social.technet.microsoft.com/wiki/contents/articles/2167.how-to-use-the-certificates-console.aspx#To_import_certificates) and [To export a certificate](http://social.technet.microsoft.com/wiki/contents/articles/2167.how-to-use-the-certificates-console.aspx#To_export_certificates) in "How to Use the Certificates Console."
 
     2.  Confirm that the uploaded certificate appears in the list of Management Certificates. Make note of the certificate thumbprint, as you will need this later when you run the **Add Azure Subscription Wizard**.
 
-5.  Import the Management Certificate to the Certificate Store on the computer youâ€™ll be running the VMM console on.
+5.  Import the Management Certificate to the Certificate Store on the computer you’ll be running the VMM console on.
 
     Make sure you import the certificate to the **Current User \ Personal** certificate store on the local computer.
 
@@ -145,5 +148,6 @@ When an individual virtual machine is selected from the list, a set of VM action
 ## See Also
 [Creating and deploying virtual machines in VMM](Creating-and-deploying-virtual-machines-in-VMM.md)
 [Creating Virtual Machine Role Templates by using VMM and Windows Azure Pack](Creating-Virtual-Machine-Role-Templates-by-using-VMM-and-Windows-Azure-Pack.md)
+
 
 

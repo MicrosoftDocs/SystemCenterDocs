@@ -8,6 +8,9 @@ ms.topic: article
 ms.assetid: ad4b7faa-26fb-4f3f-849e-e563162956cf
 ---
 # Overview: creating Scale-Out File Servers from bare metal in VMM
+
+>Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
+
 The procedures in this section describe how to use Virtual Machine Manager (VMM) to discover physical computers (bare-metal computers) on the network, automatically install one of the operating systems listed in this topic, and provision the computers into managed Scale-Out File Servers.
 
 ## <a name="BKMK_workflow"></a>Workflow and deployment process
@@ -67,7 +70,7 @@ The following sequences describes the workflow and deployment process for provis
 
 2.  During the deployment process, the VMM management server restarts the physical computers.
 
-    The management servers restarts the computers by issuing ‚ÄúPower Off‚Äù and ‚ÄúPower On‚Äù commands to the Baseboard Management Controller (BMC) using out-of-band management. When the physical computers restart, the PXE server responds to the boot requests from the physical computers.
+    The management servers restarts the computers by issuing ìPower Offî and ìPower Onî commands to the Baseboard Management Controller (BMC) using out-of-band management. When the physical computers restart, the PXE server responds to the boot requests from the physical computers.
 
 3.  The physical computers boot from a customized Windows Preinstallation Environment (Windows PE) image on the Pre-boot execution environment (PXE) server.
 
@@ -120,5 +123,6 @@ The following table summarizes the example names that could be used in this scen
 [Managing Scale-Out File Servers with VMM](Managing-Scale-Out-File-Servers-with-VMM.md)
 [Managing storage resources and capacity with VMM](Managing-storage-resources-and-capacity-with-VMM.md)
 [Managing fabric resources with VMM](Managing-fabric-resources-with-VMM.md)
+
 
 

@@ -11,6 +11,9 @@ ms.topic: article
 ms.assetid: 418b1158-9d53-4be5-a885-87b9878ce277
 ---
 # How to create a file share on a Scale-Out File Server in VMM
+
+>Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
+
 On a Scale-Out File Server in Virtual Machine Manager (VMM), you can create a new file share from an existing storage pool or from a Cluster Shared Volume (CSV). VMM performs the necessary steps to create the file share, for example (if necessary) creating the storage space, initializing and formatting the disk, and creating the CSV. To see how this procedure fits into an overall workflow, see [Overview: configuring storage using Scale-Out File Servers in VMM](Overview--configuring-storage-using-Scale-Out-File-Servers-in-VMM.md).
 
 Before you begin this procedure, it might be helpful to review mirror spaces, specifically two-way mirror spaces and three-way mirror spaces, which are described in [What are the best uses of simple, mirror, and parity spaces?](http://social.technet.microsoft.com/wiki/contents/articles/11382.storage-spaces-frequently-asked-questions-faq.aspx#What_are_the_best_uses_of_simple_mirror_and_parity_spaces) in "Storage Spaces Frequently Asked Questions (FAQ)."
@@ -42,5 +45,6 @@ For details about what VMM does when creating the file share, see [Stage 4: Crea
 [How to add an existing Scale-Out File Server to storage in VMM](How-to-add-an-existing-Scale-Out-File-Server-to-storage-in-VMM.md)
 [Creating a host cluster in VMM from existing Windows servers](Creating-a-host-cluster-in-VMM-from-existing-Windows-servers.md)
 [Deploying Hyper-V hosts or host clusters from bare metal with VMM](Deploying-Hyper-V-hosts-or-host-clusters-from-bare-metal-with-VMM.md)
+
 
 

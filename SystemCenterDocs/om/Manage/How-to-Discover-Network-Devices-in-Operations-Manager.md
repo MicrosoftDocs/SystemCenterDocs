@@ -14,6 +14,9 @@ ms.assetid:  b23cc152-e396-4499-bf7c-cf208bf3741f
 
 
 # How to Discover Network Devices in Operations Manager
+
+>Applies To: System Center 2016 Technical Preview - Operations Manager
+
 System Center Operations Manager performs network discovery by running discovery rules that you create. Each time the rule runs, it will attempt to find new devices within its definition or changes to devices that were previously discovered.
 
 > [!NOTE]
@@ -160,7 +163,7 @@ You must ensure the following firewall configuration before creating the network
         Click **OK**. This returns you to the **Devices** page.
 
     10. > [!NOTE]
-        > The **Advanced Discovery Settings** button on the **Devices** page opens a dialog box that contains a number of settings that you can use to configure discovery of network devices, such as number of retry attempts. If you know you are going to discover more than 1500 devices, you must change the **Maximum number of devices to discover** in **Advanced Discovery Settings**. For more information on the available settings, see ‚ÄúNetwork Device Discovery Settings‚Äù in the [Network Device Discovery Settings](https://technet.microsoft.com/library/hh230715.aspx).
+        > The **Advanced Discovery Settings** button on the **Devices** page opens a dialog box that contains a number of settings that you can use to configure discovery of network devices, such as number of retry attempts. If you know you are going to discover more than 1500 devices, you must change the **Maximum number of devices to discover** in **Advanced Discovery Settings**. For more information on the available settings, see ìNetwork Device Discovery Settingsî in the [Network Device Discovery Settings](https://technet.microsoft.com/library/hh230715.aspx).
 
     11. Add other SNMP v3 devices and Run As accounts as necessary, and then click **Next**.
 
@@ -177,7 +180,7 @@ You must ensure the following firewall configuration before creating the network
         -   **172.23.135.\*** (include any IP address in 172.23.135/255.255.255.0)
 
         > [!NOTE]
-        > For more information on formatting an IP address range, see ‚ÄúNetwork Device Discovery Settings‚Äù in the [Operations Manager 2012 Operations Guide](http://go.microsoft.com/fwlink/p/?LinkID=207751).
+        > For more information on formatting an IP address range, see ìNetwork Device Discovery Settingsî in the [Operations Manager 2012 Operations Guide](http://go.microsoft.com/fwlink/p/?LinkID=207751).
 
     2.  On the **Exclude Filters** page, leave the default setting to not exclude any of the discovered devices. If you want to filter an IP address from being discovered, click **Add** and specify an IP address. Click **Next** when complete.
 
@@ -191,7 +194,7 @@ You must ensure the following firewall configuration before creating the network
 
 11. Review your settings on the **Summary** page, and then click **Finish** when you are ready to proceed.
 
-12. You will see a Warning popup that reads  "The following accounts need to be distributed to the health service *management server name* in order for the discovery to work: *DiscoveryName\Run As Account*. Would you like Operations Manager to distribute the accounts? Yes: Distribute the accounts and create the discovery. No: Do not distribute the accounts and do not create the discovery.‚Äù  Click **Yes**.
+12. You will see a Warning popup that reads  "The following accounts need to be distributed to the health service *management server name* in order for the discovery to work: *DiscoveryName\Run As Account*. Would you like Operations Manager to distribute the accounts? Yes: Distribute the accounts and create the discovery. No: Do not distribute the accounts and do not create the discovery.î  Click **Yes**.
 
 13. The wizard completes and you see the message **The network discovery rule was successfully created**. Ensure **Run the network discovery rule after the wizard is closed** is selected if you want the rule to run immediately, and then click **Close**. The network devices discovery rule is created. If you did not select **Run the network discovery rule after the wizard is closed**, the discovery rule will run on the scheduled day and time.
 
@@ -237,5 +240,6 @@ If a network device discovery rule fails, the device or devices will be listed i
 4.  On the **Discovery Method** page, click the type of discovery you want the rule to use.
 
 5.  Follow the instructions for creating a discovery rule to complete the remaining wizard pages, and then click **Save**.
+
 
 

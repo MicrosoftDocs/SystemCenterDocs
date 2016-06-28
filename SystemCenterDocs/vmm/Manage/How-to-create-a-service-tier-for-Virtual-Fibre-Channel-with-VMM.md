@@ -8,6 +8,9 @@ ms.topic: article
 ms.assetid: 0aca8bc4-197b-4882-956d-72ae89d36720
 ---
 # How to create a service tier for Virtual Fibre Channel with VMM
+
+>Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
+
 The following is the high-level process for creating a service tier to access Virtual Fibre Channel storage resources.
 
 ### To create a service tier for Virtual Fibre Channel
@@ -26,5 +29,6 @@ The following is the high-level process for creating a service tier to access Vi
 [Managing Virtual Fibre Channel fabrics with VMM](Managing-Virtual-Fibre-Channel-fabrics-with-VMM.md)
 [Managing storage resources and capacity with VMM](Managing-storage-resources-and-capacity-with-VMM.md)
 [Managing fabric resources with VMM](Managing-fabric-resources-with-VMM.md)
+
 
 

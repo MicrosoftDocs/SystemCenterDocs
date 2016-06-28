@@ -14,6 +14,9 @@ ms.assetid:  f1c1c5cb-6c27-40ea-8753-2f03a83691ba
 
 
 # Pre-Upgrade Tasks When Upgrading to System Center 2016 - Operations Manager
+
+>Applies To: System Center 2016 Technical Preview - Operations Manager
+
 Perform the following pre-upgrade tasks in the order presented before you begin the upgrade process.
 
 1. Review the Operations Manager Event Logs
@@ -153,4 +156,5 @@ The default decimal value of DWORD type is 15360 (15 MB) and the recommended val
 
 Once you have completed the upgrade of the management group, you can reset it back to the default value.  
    
+
 

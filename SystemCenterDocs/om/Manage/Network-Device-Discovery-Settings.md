@@ -14,6 +14,9 @@ ms.assetid:  f7229aef-0a5c-40de-9219-c1df83fd3aa9
 
 
 # Network Device Discovery Settings
+
+>Applies To: System Center 2016 Technical Preview - Operations Manager
+
 System Center Operations Manager offers a number of settings that you can use to configure discovery of network devices. The following table explains the available settings and how to configure them in the Network Devices Discovery Wizard.
 
 |Setting|Location|Notes|
@@ -30,12 +33,12 @@ System Center Operations Manager offers a number of settings that you can use to
 |**IP address range**|**Include Filters** page, **Add** button, when configuring a recursive discovery rule|Use this field to limit the recursive discovery to IP addresses that meet the specified criteria. This field uses a wildcard format.<br /><br />For example, if you enter **192.168.1.\***, the discovery rule discovers devices that use any IP address between 192.168.1.1 and 192.168.1.255.<br /><br />If you enter **192.168.1.<1-140>**, the discovery rule discovers devices that use any IP address between 192.168.1 and 192.168.140.<br /><br />For more options, see [IP Address Range for Network Device Filtering](assetId:///a817c0cc-fc9a-4945-82c9-13dd439dd3b0).|
 |**Included device types**|**Include Filters** page, **Add** button, when configuring a recursive discovery rule|Any devices that you select are included in the recursive discovery. Clear the selection for any type of device that you do not want discovered.|
 |**Include only network devices with the following system attributes (OIDs) - Name**|**Include Filters** page, **Add** button, when configuring a recursive discovery rule|If you enter a value here, only devices with a matching name are discovered. This field allows a wildcard format. For more options, see [IP Address Range for Network Device Filtering](assetId:///a817c0cc-fc9a-4945-82c9-13dd439dd3b0).|
-|**Include only network devices with the following system attributes (OIDs) ‚Äì Object ID (OID)**|**Include Filters** page, **Add** button, when configuring a recursive discovery rule|If you enter a value here, only devices with a matching OID are discovered. This field allows a wildcard format. For more options, see [IP Address Range for Network Device Filtering](assetId:///a817c0cc-fc9a-4945-82c9-13dd439dd3b0).|
-|**Include only network devices with the following system attributes (OIDs) ‚Äì Description**|**Include Filters** page, **Add** button, when configuring a recursive discovery rule|If you enter a value here, only devices with a matching description are discovered. This field allows a wildcard format. For more options, see [IP Address Range for Network Device Filtering](assetId:///a817c0cc-fc9a-4945-82c9-13dd439dd3b0).|
+|**Include only network devices with the following system attributes (OIDs) ñ Object ID (OID)**|**Include Filters** page, **Add** button, when configuring a recursive discovery rule|If you enter a value here, only devices with a matching OID are discovered. This field allows a wildcard format. For more options, see [IP Address Range for Network Device Filtering](assetId:///a817c0cc-fc9a-4945-82c9-13dd439dd3b0).|
+|**Include only network devices with the following system attributes (OIDs) ñ Description**|**Include Filters** page, **Add** button, when configuring a recursive discovery rule|If you enter a value here, only devices with a matching description are discovered. This field allows a wildcard format. For more options, see [IP Address Range for Network Device Filtering](assetId:///a817c0cc-fc9a-4945-82c9-13dd439dd3b0).|
 |**IP Address or Host Name**|**Exclude Filters** page, **Add** button, when configuring a recursive discovery rule|Enter either a fully qualified domain name (FQDN), an IPv4 address, or an IPv6 address to exclude from discovery. You can add multiple IP address individually.|
 
 ## <a name="bkmk_wildcardmatchingforipaddressrange"></a>Wildcard Matching for IP Address Range
-Wildcard pattern matching is done from left to right, one character or basic wildcard pattern at a time. The pattern and the incoming string must match exactly, so for example, the pattern *abc* does not match the string *abcd*. Compound patterns consist of basic patterns separated by an ampersand (&) or a tilde (~). If the first character of a compound pattern is an ampersand or tilde, it is interpreted as if there were an asterisk at the beginning. For example, the pattern ~*[0-9] matches any string that does not contain a digit. A trailing ampersand can only match an empty string, and a trailing tilde indicates ‚Äúexcept for an empty string.‚Äù
+Wildcard pattern matching is done from left to right, one character or basic wildcard pattern at a time. The pattern and the incoming string must match exactly, so for example, the pattern *abc* does not match the string *abcd*. Compound patterns consist of basic patterns separated by an ampersand (&) or a tilde (~). If the first character of a compound pattern is an ampersand or tilde, it is interpreted as if there were an asterisk at the beginning. For example, the pattern ~*[0-9] matches any string that does not contain a digit. A trailing ampersand can only match an empty string, and a trailing tilde indicates ìexcept for an empty string.î
 
 Spaces are significant characters, and are subject to matching.
 
@@ -72,7 +75,7 @@ To differentiate between VLANs, you can configure a tag for a virtual local area
 
 3.  Save vlan-tag-settings.conf.
 
-The following is an example of the configuration of a VLAN tag ‚ÄúLDSwitch‚Äù to be used for all switches that have a description that starts with ‚ÄúCisco‚Äù:
+The following is an example of the configuration of a VLAN tag ìLDSwitchî to be used for all switches that have a description that starts with ìCiscoî:
 
 ```
 config LanceSwitch
@@ -81,5 +84,6 @@ match Description Cisco*
 settings VLAN_Provisioning_Setting
 param Tag LDSwitch
 ```
+
 
 

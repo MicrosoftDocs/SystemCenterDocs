@@ -11,6 +11,9 @@ ms.topic: article
 ms.assetid: f6e881e6-9365-4d27-8221-89229a96c22d
 ---
 # How to Set File Attachment Limits
+
+>Applies To: System Center 2016 Technical Preview - Service Manager
+
 Use the following procedure to limit the number and size of files that can be attached to an incident in Service Manager. In this example, set the maximum number of files to 5 and the maximum file size to 500 kilobytes (KB).
 
 ### To set file attachment limits
@@ -32,5 +35,6 @@ Use the following procedure to limit the number and size of files that can be at
 ### To validate file attachment limits
 
 -   When you create a new incident or edit an existing one, no more than five files can be attached, and each file can be no larger than 500 KB.
+
 
 

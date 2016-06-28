@@ -11,6 +11,9 @@ ms.topic: article
 ms.assetid: 45c93144-4ae6-41e1-874e-4216c5f4a2de
 ---
 # Overview: configuring storage using Scale-Out File Servers in VMM
+
+>Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
+
 This overview describes the process for using Virtual Machine Manager (VMM) to configure storage based on Scale-Out File Server clusters. This process is similar whether your Scale-Out File Server cluster uses shared storage or the newer option, Storage Spaces Direct. Storage Spaces direct uses local storage, as described in[Storage Spaces Direct in Windows Server Technical Preview](https://technet.microsoft.com/library/mt126109.aspx). For Storage Spaces Direct, the cluster nodes must run Windows Server Technical Preview.
 
 If you don't want overview information, and instead want a list of step-by-step procedures, see [Configuring storage using Scale-Out File Servers in VMM](Configuring-storage-using-Scale-Out-File-Servers-in-VMM.md).
@@ -103,7 +106,7 @@ File shares created in a storage pool inherit the pool's classification, but you
 ## <a name="BKMK_templates"></a>Stage 6: Make classified storage available to users of templates or private clouds
 **What you do**: When you create private clouds or virtual machine templates, you can specify the classification of the storage that will be assigned when virtual machines are created from the templates, or within the private clouds. (This is after you've created storage classifications that match your environment, as described in [Stage 2: Create storage classifications](Overview--configuring-storage-using-Scale-Out-File-Servers-in-VMM.md#BKMK_classifications), earlier in this topic).
 
-**How VMM responds**: VMM makes note of the storage classification that you specified in a virtual machine template, or in a private cloud, and will respond by creating virtual hard disks on the set of storage that you intended. Users will not need to know the structure of the storage that underlies the classificationsâ€”for example, they don't need to know a share name or a mount point.
+**How VMM responds**: VMM makes note of the storage classification that you specified in a virtual machine template, or in a private cloud, and will respond by creating virtual hard disks on the set of storage that you intended. Users will not need to know the structure of the storage that underlies the classifications—for example, they don't need to know a share name or a mount point.
 
 ## <a name="BKMK_vhds"></a>Stage 7: Understand how VMM evaluates placement options
 **What users do**: Users request that VMM deploy one or more virtual machines, for example, by using a virtual machine template.
@@ -136,5 +139,6 @@ With Storage Spaces Direct, when you add the node, VMM discovers any disks assoc
 [Deploying Hyper-V hosts or host clusters from bare metal with VMM](Deploying-Hyper-V-hosts-or-host-clusters-from-bare-metal-with-VMM.md)
 [Configuring storage using Scale-Out File Servers in VMM](Configuring-storage-using-Scale-Out-File-Servers-in-VMM.md)
 [How to set a disk witness for a Scale-Out File Server quorum in VMM](How-to-set-a-disk-witness-for-a-Scale-Out-File-Server-quorum-in-VMM.md)
+
 
 

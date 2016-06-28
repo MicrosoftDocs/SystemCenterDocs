@@ -11,9 +11,12 @@ ms.topic: article
 ms.assetid: e934fc89-0578-4994-b63b-c2582b63eef5
 ---
 # How to add driver files to the VMM library
+
+>Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
+
 You can use the following procedures to add driver files to the library in Virtual Machine Manager (VMM), and to assign tags to the drivers. After you add driver files to the VMM library, when you configure a physical computer profile, you can specify the driver files. Then VMM can install the specified drivers when it installs the operating system on a physical computer.
 
-In the physical computer profile, you can select to filter the drivers by tags, or you can select to filter drivers with matching Plug and Play (PnP) IDs on the physical computer. If you select to filter the drivers by tags, VMM determines the drivers to apply by matching the tags that you assign to the drivers in the library to the tags that you assign in the profile. If you select to filter drivers with matching PnP IDs, you do not have to complete the â€œTo assign custom tags to the driver filesâ€ procedure in this topic.
+In the physical computer profile, you can select to filter the drivers by tags, or you can select to filter drivers with matching Plug and Play (PnP) IDs on the physical computer. If you select to filter the drivers by tags, VMM determines the drivers to apply by matching the tags that you assign to the drivers in the library to the tags that you assign in the profile. If you select to filter drivers with matching PnP IDs, you do not have to complete the “To assign custom tags to the driver files” procedure in this topic.
 
 > [!NOTE]
 > These procedures are optional.
@@ -63,5 +66,6 @@ In the physical computer profile, you can select to filter the drivers by tags, 
 [Managing infrastructure resources with VMM](Managing-infrastructure-resources-with-VMM.md)
 [Managing the VMM library and its resources](Managing-the-VMM-library-and-its-resources.md)
 [Managing fabric resources with VMM](Managing-fabric-resources-with-VMM.md)
+
 
 

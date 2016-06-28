@@ -8,6 +8,9 @@ ms.topic: article
 ms.assetid: 18c46061-a045-4849-8d4e-86e8946053c7
 ---
 # Prerequisites: configuring block storage in VMM
+
+>Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
+
 Before you configure storage in Virtual Machine Manager (VMM), review the following prerequisites:
 
 -   The storage that you configure in VMM must be used by Hyper-V hosts or host clusters.
@@ -23,7 +26,7 @@ Before you configure storage in Virtual Machine Manager (VMM), review the follow
 -   Review the choice between configuring one storage group per cluster or one storage group per node.
 
     > [!NOTE]
-    > In VMM, a "storage group" binds together host initiators, target ports, and logical units. A storage group contains the hostâ€™s initiator IDs (one or more), in the form of either iSCSI Qualified Name (IQN) or World Wide Name (WWN). A storage group also contains one or more target ports and one or more logical units. Logical units are exposed to the host initiators through the target ports.
+    > In VMM, a "storage group" binds together host initiators, target ports, and logical units. A storage group contains the host’s initiator IDs (one or more), in the form of either iSCSI Qualified Name (IQN) or World Wide Name (WWN). A storage group also contains one or more target ports and one or more logical units. Logical units are exposed to the host initiators through the target ports.
 
     When VMM manages the assignment of logical units, by default, it creates one storage group or masking set per host. The host can be either a stand-alone host or a host cluster node. However, for some storage arrays, it is preferable to use one storage group for the entire cluster, where host initiators for all cluster nodes are contained in a single storage group. To support this configuration, you must set the `CreateStorageGroupsPerCluster` property to `$true` by using the   [Set-SCStorageArray](http://technet.microsoft.com/library/jj613218.aspx) cmdlet.
 
@@ -31,5 +34,6 @@ Before you configure storage in Virtual Machine Manager (VMM), review the follow
 [Configuring block storage in VMM](Configuring-block-storage-in-VMM.md)
 [Managing storage resources and capacity with VMM](Managing-storage-resources-and-capacity-with-VMM.md)
 [Managing fabric resources with VMM](Managing-fabric-resources-with-VMM.md)
+
 
 

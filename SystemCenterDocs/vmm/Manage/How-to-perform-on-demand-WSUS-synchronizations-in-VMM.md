@@ -8,6 +8,9 @@ ms.topic: article
 ms.assetid: b305e444-db77-4de3-bad0-a70870ad88cb
 ---
 # How to perform on-demand WSUS synchronizations in VMM
+
+>Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
+
 Use this procedure to perform on-demand update synchronization for a Windows Server Update Services (WSUS) server in Virtual Machine Manager (VMM). To get updates, the WSUS server contacts Microsoft Update. WSUS determines if any new updates have been made available since the last synchronization. WSUS then downloads the new metadata. Then VMM imports the changes into the VMM update catalog.
 
 When the update server is added to VMM, an initial synchronization is performed. VMM does not perform automatic synchronizations after that. You should perform on-demand synchronizations on a schedule that meets your organization's needs. Typically an organization synchronizes updates at least every 15-30 days, in accordance with Microsoft security and update release cycles.
@@ -30,5 +33,6 @@ After the synchronization is completed, you can view all new updates in the **Li
 [Managing fabric updates in VMM](Managing-fabric-updates-in-VMM.md)
 [Managing fabric resources with VMM](Managing-fabric-resources-with-VMM.md)
 [Managing fabric resources with VMM](Managing-fabric-resources-with-VMM.md)
+
 
 

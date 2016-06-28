@@ -14,6 +14,9 @@ ms.assetid:  1b160ed6-c9f7-4533-8847-4fba7505cb46
 
 
 # Operations Manager Key Concepts
+
+>Applies To: System Center 2016 Technical Preview - Operations Manager
+
 Operations Manager, a component of Microsoft System Center 2016, is software that helps you monitor services, devices, and operations for many computers from a single console. This topic explains basic concepts about Operations Manager for the administrator who manages the Operations Manager infrastructure and the operator who monitors and supports the computers in your business.
 
 ## What Operations Manager Does
@@ -48,7 +51,7 @@ For information about installing management group features, see [Operations Mana
 ### Management Servers
 The role of the management server is to administer the management group configuration, administer and communicate with agents, and communicate with the databases in the management group.
 
-The management group can contain multiple management servers to provide additional capacity and continuous availability. When two or more management servers are added to a management group, the management servers become part of a *resource pool* and work is spread across the members of the pool. When a member of the resource pool fails, other members in the resource pool will pick up that memberâ€™s workload. When a new management server is added, the new management server automatically picks up some of the work from existing members in the resource pool. All members in the resource pool will manage a distinct set of remote objects; at any given time, two members in the same pool will not manage the same object at the same time.
+The management group can contain multiple management servers to provide additional capacity and continuous availability. When two or more management servers are added to a management group, the management servers become part of a *resource pool* and work is spread across the members of the pool. When a member of the resource pool fails, other members in the resource pool will pick up that member’s workload. When a new management server is added, the new management server automatically picks up some of the work from existing members in the resource pool. All members in the resource pool will manage a distinct set of remote objects; at any given time, two members in the same pool will not manage the same object at the same time.
 
 A specialized type of management server is the *gateway server*. A gateway server enables the monitoring of computers in untrusted domains. For more information, see [Monitoring Across Untrusted Boundaries](http://go.microsoft.com/fwlink/p/?LinkID=226224).
 
@@ -131,8 +134,9 @@ For each agent, Operations Manager runs a *health service watcher*, which monito
 
 -   To learn how to use Operations Manager after the management group is set up, see [System Center 2016 Technical Preview - Operations Manager Operations Guide](../Manage/System-Center-2016---Operations-Manager-Operations-Guide.md)
 
--   To learn how to create a management pack, see [Authorâ€™s Guide for Operations Manager for System Center 2012](http://go.microsoft.com/fwlink/p/?LinkID=212377)
+-   To learn how to create a management pack, see [Author’s Guide for Operations Manager for System Center 2012](http://go.microsoft.com/fwlink/p/?LinkID=212377)
 
 -   [Operations Manager Community](http://go.microsoft.com/fwlink/p/?LinkID=221328)
+
 
 

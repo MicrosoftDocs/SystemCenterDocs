@@ -8,6 +8,9 @@ ms.topic: article
 ms.assetid: 27d1eac7-6467-4dc1-b9f5-77a3d09ce3d0
 ---
 # How to remove storage logical units in VMM
+
+>Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
+
 Use the following procedure to delete a logical unit that is under Virtual Machine Manager (VMM) management.
 
 ## Prerequisites
@@ -40,5 +43,6 @@ Ensure that the logical unit that you want to delete is not currently assigned t
 [Configuring block storage in VMM](Configuring-block-storage-in-VMM.md)
 [Managing storage resources and capacity with VMM](Managing-storage-resources-and-capacity-with-VMM.md)
 [Managing fabric resources with VMM](Managing-fabric-resources-with-VMM.md)
+
 
 

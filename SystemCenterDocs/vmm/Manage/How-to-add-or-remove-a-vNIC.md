@@ -11,6 +11,9 @@ ms.topic: article
 ms.assetid: d0e34a1c-5fd8-425f-a028-194f658b6ebb
 ---
 # How to add or remove a vNIC
+
+>Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
+
 You can now add and remove virtual network adapters from running virtual machines(VMs). This feature helps in eliminating workload downtime due to reconfiguration.
 
 Note: This functionality is enabled through PowerShell only and is not exposed through the VMM Console. This enhancement applies to Generation 2 virtual machines running on Windows Server Technical Preview hosts. 
@@ -31,4 +34,5 @@ PS C:\> $Adapter = Get-SCVirtualNetworkAdapter -VM $VM
 PS C:\> Remove-SCVirtualNetworkAdapter -VirtualNetworkAdapter $Adapter
 ```
 **Note:** The second PowerShell sample above assumes that there is only one vNIC on the virtual machine.
+
 

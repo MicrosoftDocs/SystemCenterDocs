@@ -11,7 +11,10 @@ ms.topic: article
 ms.assetid: 7aa3ae77-88e7-4ff8-bb63-814286b7089f
 ---
 # Databases Created by Service Manager
-Before starting the installation of System Center 2016 Technical Preview - Service Manager, you may want to meet with your SQL Server administration team and discuss the impact that Service Manager will have on your computers running SQL Serverâ€”specifically, the databases that will be created. The databases that are created by a deployment of Service Manager are listed in the following table.
+
+>Applies To: System Center 2016 Technical Preview - Service Manager
+
+Before starting the installation of System Center 2016 Technical Preview - Service Manager, you may want to meet with your SQL Server administration team and discuss the impact that Service Manager will have on your computers running SQL Server—specifically, the databases that will be created. The databases that are created by a deployment of Service Manager are listed in the following table.
 
 |Service Manager parts|Database name|Contents|
 |---------------------------------------------------------|-----------------|------------|
@@ -20,5 +23,6 @@ Before starting the installation of System Center 2016 Technical Preview - Servi
 
 > [!IMPORTANT]
 > For this release, Service Manager does not support case-sensitive instance names. Setup will display a warning if you attempt to install Service Manager on a case-sensitive instance of Microsoft SQL Server.
+
 
 

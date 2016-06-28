@@ -11,6 +11,9 @@ ms.topic: article
 ms.assetid: 168132bf-9c34-4bb7-ab00-d7b07b28598c
 ---
 # How to create a VM network for network virtualization and add an IP address pool in VMM
+
+>Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
+
 In Virtual Machine Manager (VMM), to support multiple tenants (also called clients or customers) with their own networks, isolated from the networks of others, use VM networks configured for Hyper-V network virtualization. For more information, see [Plan VM networks for Hyper-V network virtualization](Overview--plan-VM-networks-in-VMM.md#BKMK_hnv) in "Overview: plan VM networks in VMM." To see how this procedure fits into an overall workflow, see [Implementing the configuration](Configuring-logical-networks,-VM-networks,-and-logical-switches-in-VMM.md#BKMK_implementing) in "Configuring logical networks, VM networks, and logical switches in VMM."
 
 After creating the VM network, create one or more IP address pools on it, regardless of whether you will use static IP addresses or DHCP on the VM network. If you choose DHCP, VMM will respond to a DHCP request with an address from an IP address pool.
@@ -140,9 +143,9 @@ In a VM network for network virtualization, create at least one IP address pool.
 > 
 > `$ippool=Get-SCStaticIPAddressPool -Name <StaticIPAddressPool>`
 > 
-> `Get-SCIPAddress ‚ÄìStaticIPAddressPool $ippool | Format-Table ‚Äìproperty Address,AssignedToType,State`
+> `Get-SCIPAddress ñStaticIPAddressPool $ippool | Format-Table ñproperty Address,AssignedToType,State`
 
-From time to time, you might need to release IP addresses that are in the pool but that are marked by VMM as ‚Äúinactive.‚Äù Releasing them makes them available for reassignment. For more information, see [How to release inactive IP addresses for VM networks in VMM](How-to-release-inactive-IP-addresses-for-VM-networks-in-VMM.md).
+From time to time, you might need to release IP addresses that are in the pool but that are marked by VMM as ìinactive.î Releasing them makes them available for reassignment. For more information, see [How to release inactive IP addresses for VM networks in VMM](How-to-release-inactive-IP-addresses-for-VM-networks-in-VMM.md).
 
 After a virtual machine has been deployed in VMM, you can view the IP address or addresses assigned to that virtual machine. To do this, right-click the listing for the virtual machine, click **Properties**, click the **Hardware Configuration** tab, click the network adapter, and in the results pane, click the **Connection details** button.
 
@@ -158,5 +161,6 @@ After a virtual machine has been deployed in VMM, you can view the IP address or
 [Overview: plan VM networks in VMM](Overview--plan-VM-networks-in-VMM.md)
 [Configuring logical networks, VM networks, and logical switches in VMM](Configuring-logical-networks,-VM-networks,-and-logical-switches-in-VMM.md)
 [Managing network resources with VMM](Managing-network-resources-with-VMM.md)
+
 
 

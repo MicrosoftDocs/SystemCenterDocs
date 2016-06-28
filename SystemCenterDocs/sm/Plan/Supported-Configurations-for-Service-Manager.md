@@ -11,6 +11,9 @@ ms.topic: article
 ms.assetid: ec7184bf-732a-4a91-92ee-3a845e99e743
 ---
 # Supported Configurations for Service Manager
+
+>Applies To: System Center 2016 Technical Preview - Service Manager
+
 This section includes information about the hardware and software requirements for System Center 2016 Technical Preview - Service Manager. System Center 2016 Technical Preview - Service Manager has been tested up to the workload described in this topic, based on the recommended hardware requirements in this guide. This environment contains one System Center 2016 Technical Preview - Service Manager management server supporting 80 to 100 concurrent Service Manager consoles. High-performance storage using 15,000-RPM SCSI drives is used on the database servers.
 
 The hardware and software requirements described in the[System Requirements for System Center Technical Preview](../../system-requirements/System-Requirements-for-System-Center-Technical-Preview.md) section are based on the following system environment and conditions:
@@ -24,5 +27,6 @@ The hardware and software requirements described in the[System Requirements for 
 -   1,000 change requests a week with three months of retention, for a total of 12,000 change requests in the System Center 2016 Technical Preview - Service Manager database for the 20,000-computer configuration, and 2.5 times that for the 50,000-computer configuration.
 
 Using a slow storage subsystem or insufficient memory can reduce System Center 2016 Technical Preview - Service Manager performance significantly.
+
 
 

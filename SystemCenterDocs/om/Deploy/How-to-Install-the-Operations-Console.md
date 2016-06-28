@@ -14,6 +14,9 @@ ms.assetid:  f88980f5-521f-41cc-98db-997db0019c0f
 
 
 # How to Install the Operations Console
+
+>Applies To: System Center 2016 Technical Preview - Operations Manager
+
 After you install System Center 2016 Technical Preview - Operations Manager, you can install the Operations console on other servers and computers. For example, you might want to view monitoring data from your desktop computer. Before you install an Operations Manager Operations console, you must install [Microsoft .NET Framework 3.5 SP1 hotfix](http://go.microsoft.com/fwlink/p/?LinkID=194637).
 
 You must ensure that the computer that will host the Operations console meets the minimum system requirements. For more information, see [System Requirements for System Center Technical Preview](../../system-requirements/System-Requirements-for-System-Center-Technical-Preview.md)
@@ -62,5 +65,6 @@ You must ensure that the computer that will host the Operations console meets th
 
 ## See Also
 [Distributed Deployment of Operations Manager](Distributed-Deployment-of-Operations-Manager.md)
+
 
 

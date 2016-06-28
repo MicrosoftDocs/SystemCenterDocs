@@ -11,7 +11,10 @@ ms.topic: article
 ms.assetid: bd5d1337-fd15-4c00-a07e-a2e02286cd8d
 ---
 # Overview: plan logical switches and port profiles in VMM
-In Virtual Machine Manager (VMM), you can use logical switches (and the port profiles inside them) to help you configure switch settings consistently across multiple hosts. A logical switch is like a template for a virtual switchâ€”it acts as a container for the switch settings and capabilities that you want to use. Instead of configuring switch settings individually for each network adapter, you can specify settings and capabilities in a logical switch, and then use the logical switch to apply those settings consistently across network adapters on multiple hosts.
+
+>Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
+
+In Virtual Machine Manager (VMM), you can use logical switches (and the port profiles inside them) to help you configure switch settings consistently across multiple hosts. A logical switch is like a template for a virtual switch—it acts as a container for the switch settings and capabilities that you want to use. Instead of configuring switch settings individually for each network adapter, you can specify settings and capabilities in a logical switch, and then use the logical switch to apply those settings consistently across network adapters on multiple hosts.
 
 For a series of videos that illustrate the process of creating and  using a logical switch in System Center 2012 R2, which is similar  to (though not the same as) the process for System Center 2016 Technical Preview, see [Virtual Machine Manager Network Object Fundamentals](https://technet.microsoft.com/library/mt156974.aspx).
 
@@ -26,7 +29,7 @@ To plan your logical switch, go through the sections that apply to your requirem
 |[Optional: review options for configuring bandwidth](Overview--plan-logical-switches-and-port-profiles-in-VMM.md#BKMK_bandwidth)|Helps you review bandwidth settings you might configure in your logical switch|
 
 ## <a name="BKMK_illustration"></a>Review how a logical switch acts as a container for network settings
-The following illustration shows how a logical switch acts as a template or container for switch settings or capabilities that you want to use. At the top of the illustration, in the host group â€œTest systems,â€ there is a single test system on which the administrator has configured switch and port settings individually. Lower in the illustration, there are multiple hosts in host groups, to which a logical switch has been applied. The logical switch helps ensure that switch and port settings are applied consistently across the host systems.
+The following illustration shows how a logical switch acts as a template or container for switch settings or capabilities that you want to use. At the top of the illustration, in the host group “Test systems,” there is a single test system on which the administrator has configured switch and port settings individually. Lower in the illustration, there are multiple hosts in host groups, to which a logical switch has been applied. The logical switch helps ensure that switch and port settings are applied consistently across the host systems.
 
 
 > [!NOTE]
@@ -62,7 +65,7 @@ As you plan for logical switches, it's helpful to review the following aspects o
 
 -   **Switch extensions and providers**: Switch extensions are software that you can install on the VMM management server and then include in a logical switch. Switch extensions allow you to monitor network traffic, use Quality of Service (QoS) to control how network bandwidth is used, enhance the level of security, or otherwise expand the capabilities of a switch.
 
-    If you're using switch extensions (which usually require provider software), determine whether they are Microsoft softwareâ€”for example, included in Windows Server Technical Preview. If they're not, before creating a logical switch, be sure the vendor's provider software is installed on the VMM management server. If you have installed a high-availability VMM management server on a cluster, be sure to install the provider on all nodes of the cluster. For more information, refer to documentation from the vendor. After you install the provider, restart the System Center Virtual Machine Manager service.
+    If you're using switch extensions (which usually require provider software), determine whether they are Microsoft software—for example, included in Windows Server Technical Preview. If they're not, before creating a logical switch, be sure the vendor's provider software is installed on the VMM management server. If you have installed a high-availability VMM management server on a cluster, be sure to install the provider on all nodes of the cluster. For more information, refer to documentation from the vendor. After you install the provider, restart the System Center Virtual Machine Manager service.
 
     After these steps are completed, and you are proceeding through the **Create Logical Switch Wizard**, your extension will be displayed in a list in the wizard, and you'll be able to select it. In VMM, four types of switch extensions are supported:
 
@@ -127,6 +130,7 @@ You can control how bandwidth is used on network adapters by setting the minimum
 |**Weight**|Minimum bandwidth is a weighted value ranging from 1 to 100.|
 |**Absolute**|Minimum bandwidth is bits per second.|
 |**None**|Minimum bandwidth is disabled on the switch. Users cannot configure minimum bandwidth on any network adapter connected to the switch.|
+
 
 
 

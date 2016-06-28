@@ -11,6 +11,9 @@ ms.topic: article
 ms.assetid: b90e0e52-a56a-4a75-b0de-4ba85b48ffde
 ---
 # How to upgrade a Hyper-V host cluster to Windows Server 2016 Technical Preview
+
+>Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
+
 Use the following procedure to upgrade a VMM-managed  Windows Server 2012 R2 cluster to Windows Server Technical Preview. Before you begin, be sure to review the prerequisites listed in [Upgrading Windows Server 2012 R2 host clusters to Windows Server 2016 Technical Preview in VMM](Upgrading-Windows-Server-2012-R2-host-clusters-to-Windows-Server-2016-Technical-Preview-in-VMM.md).
 
 ### To upgrade a Windows Server 2012 R2 host cluster to Windows Server Technical Preview
@@ -55,7 +58,7 @@ Use the following procedure to upgrade a VMM-managed  Windows Server 2012 R2 clu
 
         2.  If you click the button, in the **Network Adapter IP Configuration** box, you can specify the following:
 
-            -   **MAC address(host clusters onlyâ€”management NIC)**: If this is the management NIC for a host cluster, and you want to configure it as a virtual network adapter, type a MAC address.
+            -   **MAC address(host clusters only—management NIC)**: If this is the management NIC for a host cluster, and you want to configure it as a virtual network adapter, type a MAC address.
 
                 > [!NOTE]
                 > This is not the MAC address of the BMC. It is the MAC address of the management NIC, which VMM uses to communicate with the VMM management server.
@@ -85,5 +88,6 @@ Use the following procedure to upgrade a VMM-managed  Windows Server 2012 R2 clu
 [Managing Hyper-V hosts and host clusters with VMM](Managing-Hyper-V-hosts-and-host-clusters-with-VMM.md)
 [Managing hosts and host clusters with VMM](Managing-hosts-and-host-clusters-with-VMM.md)
 [Managing fabric resources with VMM](Managing-fabric-resources-with-VMM.md)
+
 
 

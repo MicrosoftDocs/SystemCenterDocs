@@ -11,6 +11,9 @@ ms.topic: get-started-article
 ms.assetid: 805406cb-4ab8-4a51-a855-d2498524f333
 ---
 # Getting Started
+
+>Applies To: System Center 2016 Technical Preview - Operations Manager
+
 You should read the topics in this section if you are new to Operations Manager or are looking for the new capabilities added in the System Center 2016 Technical Preview.
 
 ## Getting Started topics
@@ -21,5 +24,6 @@ You should read the topics in this section if you are new to Operations Manager 
 [Walkthrough: Installing Operations Manager on a Single Server](../om/get-started/Walkthrough--Installing-Operations-Manager-on-a-Single-Server.md)
 
 [Installing Operations Manager by Using the Command Prompt Window](../om/deploy/Installing-Operations-Manager-by-Using-the-Command-Prompt-Window.md)
+
 
 

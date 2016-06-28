@@ -8,6 +8,9 @@ ms.topic: article
 ms.assetid: 15f08a49-f67e-45b0-87a4-08d82c18a92f
 ---
 # Configuring dynamic optimization and power optimization in VMM
+
+>Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
+
 The procedures in this section explain how to configure Dynamic Optimization and Power Optimization in Virtual Machine Manager (VMM), and how to run Dynamic Optimization on demand for a host cluster.
 
 VMM can perform load balancing within host clusters that support live migration. Dynamic Optimization migrates virtual machines within a cluster according to settings you enter.
@@ -85,5 +88,6 @@ Use the procedures in this section to perform the following tasks.
 [Managing host groups in VMM](Managing-host-groups-in-VMM.md)
 [Managing hosts and host clusters with VMM](Managing-hosts-and-host-clusters-with-VMM.md)
 [Managing fabric resources with VMM](Managing-fabric-resources-with-VMM.md)
+
 
 

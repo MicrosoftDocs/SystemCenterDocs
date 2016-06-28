@@ -11,6 +11,9 @@ ms.topic: article
 ms.assetid: 00ad011f-f02c-484b-8eda-7d1d14d9f09a
 ---
 # Automation Runbooks
+
+>Applies To: System Center Technical Preview
+
 Runbooks in Service Management Automation automate management tasks in Windows Azure Pack for Windows Server and orchestrate processes across different systems and services. The topics below provide information for working with runbooks and authoring new runbooks.
 
 -   [Runbook Operations](Runbook-Operations.md)
@@ -32,5 +35,6 @@ Runbooks in Service Management Automation automate management tasks in Windows A
 ## See Also
 [Service Management Automation](../Service-Management-Automation.md)
 [Service Management Automation Developer's Guide](http://go.microsoft.com/fwlink/?LinkId=398741)
+
 
 

@@ -10,6 +10,9 @@ ms.topic: article
 ms.assetid: b6c8942f-84f6-4ebf-9d5a-be30d3b92892
 ---
 # How to add a VMware vCenter server to VMM
+
+>Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
+
 You can use the following procedure to add a VMware vCenter Server to Virtual Machine Manager (VMM). You must add the vCenter Server before you can add VMware ESX hosts.
 
 ## Prerequisites
@@ -72,5 +75,6 @@ Before you begin this procedure, make sure that the following prerequisites are 
 [How to add VMware ESX hosts to VMM](How-to-add-VMware-ESX-hosts-to-VMM.md)
 [Managing hosts and host clusters with VMM](Managing-hosts-and-host-clusters-with-VMM.md)
 [Managing fabric resources with VMM](Managing-fabric-resources-with-VMM.md)
+
 
 

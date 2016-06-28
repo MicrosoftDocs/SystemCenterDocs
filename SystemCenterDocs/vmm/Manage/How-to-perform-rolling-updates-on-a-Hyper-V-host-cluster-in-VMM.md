@@ -8,6 +8,9 @@ ms.topic: article
 ms.assetid: d15222b4-ba51-417b-addf-cca88d43663a
 ---
 # How to perform rolling updates on a Hyper-V host cluster in VMM
+
+>Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
+
 Use the following procedure to orchestrate rolling updates of a Hyper-V host cluster that is managed by Virtual Machine Manager (VMM). VMM rolls through the host cluster, remediating one cluster node at a time. If a cluster node is compliant, VMM bypasses that node.
 
 Before VMM begins remediating a host in a cluster, it places the host in maintenance mode. You have the option of migrating all virtual machines to other hosts in the cluster. If you do not select this option, VMM saves state and does not migrate virtual machines.
@@ -55,5 +58,6 @@ After the remediation completes successfully, and no reboot is pending for any m
 
 ## See Also
 [Performing update remediation in VMM](Performing-update-remediation-in-VMM.md)
+
 
 

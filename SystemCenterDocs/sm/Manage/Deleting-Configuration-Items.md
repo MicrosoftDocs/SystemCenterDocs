@@ -11,6 +11,9 @@ ms.topic: article
 ms.assetid: 8c69ac89-eb91-4a06-87f9-8e0c34120255
 ---
 # Deleting Configuration Items
+
+>Applies To: System Center 2016 Technical Preview - Service Manager
+
 Deleting configuration items is a two-step process, and only members of the Advanced Operators, Authors, and Administrators user roles can initiate the Delete process in Service Manager. The first step does not delete configuration items directly. Instead, this process changes the property values of a configuration item so that the item will only be displayed in a **Deleted Items** view. The state of the configuration item is changed from Active to Pending Delete. A Service Manager administrator can later log on and permanently delete the configuration item from the Service Manager database.
 
 ## How to Initiate the Deletion of a Configuration Item
@@ -89,3 +92,4 @@ After members of the Advanced Operators, Authors, or Administrators user roles h
 -   For information about how to use Windows PowerShell to permanently remove an instance of a configuration item object, see [Remove-SCSMClassInstance](http://go.microsoft.com/fwlink/p/?LinkID=225414).
 
 -   For information about how to use Windows PowerShell to restore items that were previously marked for deletion in Service Manager, see [Restore-SCSMDeleteItem](http://go.microsoft.com/fwlink/p/?LinkID=225374).
+

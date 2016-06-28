@@ -11,6 +11,9 @@ ms.topic: article
 ms.assetid: 86b13898-ecdf-430a-90b7-67c66fc956c0
 ---
 # How to Create a Service Offering
+
+>Applies To: System Center 2016 Technical Preview - Service Manager
+
 Service offerings are logical groups of request offerings. Both service offerings and their request offerings are available to Self-Service Portal users, when their status is set to Published and if end users have been assigned a corresponding Service Manager user role. Only users who have been assigned a user role that is associated with a catalog group that contains catalog items can use the Self-Service Portal to access the service catalog.
 
 ### To create a service offering
@@ -62,5 +65,6 @@ Service offerings are logical groups of request offerings. Both service offering
 11. On the **Summary** page, review the information, and then click **Create**.
 
 12. On the **Completion** page, click **Close**.
+
 
 

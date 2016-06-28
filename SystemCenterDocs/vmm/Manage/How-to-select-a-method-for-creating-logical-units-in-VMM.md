@@ -8,6 +8,9 @@ ms.topic: article
 ms.assetid: 7926fd47-a33a-46fa-8adb-a797d52f0d20
 ---
 # How to select a method for creating logical units in VMM
+
+>Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
+
 You can use the following procedure to configure the preferred capacity allocation method for a managed storage array in Virtual Machine Manager (VMM). This setting defines how new logical units are allocated when you rapid provision virtual machines by using storage area network (SAN) copy technology. You can either create logical units by using the snapshot capability or by using the cloning capability.
 
 > [!NOTE]
@@ -35,5 +38,6 @@ You can use the following procedure to configure the preferred capacity allocati
 [Configuring block storage in VMM](Configuring-block-storage-in-VMM.md)
 [Managing storage resources and capacity with VMM](Managing-storage-resources-and-capacity-with-VMM.md)
 [Managing fabric resources with VMM](Managing-fabric-resources-with-VMM.md)
+
 
 

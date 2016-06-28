@@ -8,6 +8,9 @@ ms.topic: article
 ms.assetid: b14ecfc3-41ae-4fe8-a9d9-bbc9d440d159
 ---
 # Modifying Scale-Out File Servers in VMM
+
+>Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
+
 Use these procedures to modify a Scale-Out File Server that is under VMM management.
 
 This section contains the following topics:
@@ -22,5 +25,6 @@ This section contains the following topics:
 [Managing Scale-Out File Servers with VMM](Managing-Scale-Out-File-Servers-with-VMM.md)
 [Managing storage resources and capacity with VMM](Managing-storage-resources-and-capacity-with-VMM.md)
 [Managing fabric resources with VMM](Managing-fabric-resources-with-VMM.md)
+
 
 

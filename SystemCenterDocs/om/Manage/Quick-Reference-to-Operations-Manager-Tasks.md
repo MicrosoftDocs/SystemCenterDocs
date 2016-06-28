@@ -14,6 +14,9 @@ ms.assetid:  f270994e-2b88-4e58-945f-f1c7954e0e0c
 
 
 # Quick Reference to Operations Manager Tasks
+
+>Applies To: System Center 2016 Technical Preview - Operations Manager
+
 The following table gives a quick reference for where to perform common tasks and links to relevant information.
 
 |To perform this task|Do this|
@@ -37,5 +40,6 @@ The following table gives a quick reference for where to perform common tasks an
 
 ## See Also
 [Operations Guide for System Center 2016 - Operations Manager](System-Center-2016---Operations-Manager-Operations-Guide.md)
+
 
 

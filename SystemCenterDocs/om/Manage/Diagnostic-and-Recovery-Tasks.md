@@ -14,6 +14,9 @@ ms.assetid:  90f0f96f-9b54-41e0-8ae9-e3c3a0dc6f3c
 
 
 # Diagnostic and Recovery Tasks
+
+>Applies To: System Center 2016 Technical Preview - Operations Manager
+
 Monitors in System Center Operations Manager can do more than notify you of problems by sending an alert. Some monitors also provide diagnostic and recovery tasks to help investigate and resolve those problems.
 
 A task is a script or other executable code that runs either on the computer running the Operations console or on the server, client, or device that is being managed. Tasks can potentially perform any kind of activity, including restarting a failed application and deleting files.
@@ -42,6 +45,7 @@ You can see the tasks available for a monitor on the **Diagnostic and Recovery**
 
 ![Diagnostic and Recovery Example](../../media/om-diagnostic-recovery.png)
 
-On this tab, you can also add tasks or edit tasks that you have added previously. For more information on how to add diagnostic and recovery tasks, see [Diagnostics and Recoveries](http://go.microsoft.com/fwlink/?LinkId=230462) in the Authorâ€™s Guide. Tasks that are configured by a sealed management pack can only be modified by using overrides. For more information, see [How to enable recovery and diagnostic tasks](https://technet.microsoft.com/library/hh212768.aspx) in the Operations Manager 2012 documentation.
+On this tab, you can also add tasks or edit tasks that you have added previously. For more information on how to add diagnostic and recovery tasks, see [Diagnostics and Recoveries](http://go.microsoft.com/fwlink/?LinkId=230462) in the Author’s Guide. Tasks that are configured by a sealed management pack can only be modified by using overrides. For more information, see [How to enable recovery and diagnostic tasks](https://technet.microsoft.com/library/hh212768.aspx) in the Operations Manager 2012 documentation.
+
 
 

@@ -11,6 +11,9 @@ ms.topic: article
 ms.assetid: 3c42925f-74f3-4c18-934e-8d1cd2edaa3b
 ---
 # Using Management Packs in System Center 2016 - Service Manager
+
+>Applies To: System Center 2016 Technical Preview - Service Manager
+
 There are two types of management packs: sealed management packs and unsealed management packs. A sealed management pack cannot be modified, but an unsealed management pack can be modified.
 
 Unsealed management packs are used to extend System Center 2016 Technical Preview - Service Manager with the information that you must have to implement all or part of a service management process. You can use unsealed management packs to store the custom objects that you create. For example, you can store the objects you create during your testing or evaluation process in an unsealed management pack. Then, you can export that unsealed management pack to a file and then import the file to another environment, such as a production environment. You can also import the same management pack into multiple environments to ensure configuration consistency across Service Manager deployments, and to increase efficiency.
@@ -146,4 +149,5 @@ Instead you must manually create a data source for Operations Manager. For more 
     ```
 
  
+
 

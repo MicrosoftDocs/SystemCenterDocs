@@ -14,6 +14,9 @@ ms.assetid:  3f3c2824-c6eb-4ec1-8b3d-6a4c2f677b48
 
 
 # Install the Operations Manager Web Console
+
+>Applies To: System Center 2016 Technical Preview - Operations Manager
+
 You can install the web console when you install Operations Manager, or you can install it separately. You can install a stand-alone web console or install it on an existing management server that meets the prerequisites. For information about the prerequisites, see [System Requirements for System Center Technical Preview](../../system-requirements/System-Requirements-for-System-Center-Technical-Preview.md). After you install the web console, you must configure permissions inheritance to allow users to view performance and diagram views. For instructions, see [To configure permissions inheritance for the web console](#bkmk_toconfigurepermissionsinheritanceforthewebconsole).
 
 > [!IMPORTANT]
@@ -160,7 +163,7 @@ The local and remote parameters are as follows:
 
 3.  On the **Permissions** tab, click **Change Permissions**.
 
-4.  Select the **Include inheritable permissions from this objectâ€™s parent** checkbox.
+4.  Select the **Include inheritable permissions from this object’s parent** checkbox.
 
 5.  In **Permission entries**, click **Administrators**, and then click **Remove**. Repeat for the **SYSTEM** entry, and then click **OK**.
 
@@ -170,5 +173,6 @@ All information and content at http://blogs.technet.com/b/momteam/archive/2008/0
 
 ## See Also
 [Distributed Deployment of Operations Manager](Distributed-Deployment-of-Operations-Manager.md)
+
 
 

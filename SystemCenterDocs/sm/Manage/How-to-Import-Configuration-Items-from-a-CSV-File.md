@@ -11,6 +11,9 @@ ms.topic: article
 ms.assetid: b4d69a52-baed-4c59-8052-6b012ce25632
 ---
 # How to Import Configuration Items from a CSV File
+
+>Applies To: System Center 2016 Technical Preview - Service Manager
+
 Before you can import data from a comma-separated value (CSV) file, you have to create two files: a data file and a format file. For more information about how to create these files, see [About Importing Data From Comma-Separated Files into Service Manager](About-Importing-Data-from-Comma-Separated-Files-into-Service-Manager.md). You can use the following procedure to import the Newcomputers.csv file by using the Newcomputers.xml format file.
 
 ### To import configuration items from a CSV file
@@ -40,5 +43,6 @@ Before you can import data from a comma-separated value (CSV) file, you have to 
 2.  In the **Configuration Items** pane, expand **Configuration Items**, expand **Computers**, and then click **All Windows Computers**.
 
 3.  In the **All Windows Computers** pane, verify that the computers in the CSV file are listed.
+
 
 

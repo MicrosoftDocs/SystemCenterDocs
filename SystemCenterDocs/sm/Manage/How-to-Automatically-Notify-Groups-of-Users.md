@@ -11,6 +11,9 @@ ms.topic: article
 ms.assetid: df903459-18ba-40e7-8896-ad71e4d1a7af
 ---
 # How to Automatically Notify Groups of Users
+
+>Applies To: System Center 2016 Technical Preview - Service Manager
+
 In some scenarios, you may want to use a group rather than an individual user in Service Manager as a work item stakeholder. For example, you might want to assign an incident to a team of people, such as an initial response team that routes incidents, and then notify everyone in the initial response team that an incident has been assigned to their team.
 
 Messaging-enabled universal security groups in Microsoft Exchange Server are the key to this task. This topic describes how to accomplish this using the Exchange Server Exchange Management console for incidents. You can use the following procedures to create a messaging-enabled universal security group, create a workflow to notify stakeholders when an incident is created, and then test for success.
@@ -51,7 +54,7 @@ Setting up one of these for each support group will ensure that all your groups 
 
 3.  Click **Add**, and then click **Next** on the **Before you Begin** page.
 
-4.  Give the workflow a name, such as ‚ÄúIncident Created ‚Äì Email Stakeholders‚Äù.
+4.  Give the workflow a name, such as ìIncident Created ñ Email Stakeholdersî.
 
 5.  Leave the default of **When an incident is created** in the **Check for Events** drop-down list.
 
@@ -68,5 +71,6 @@ Setting up one of these for each support group will ensure that all your groups 
 ### To test the workflow and mail the enabled universal security group
 
 - Create an incident and assign it to the messaging-enabled universal security group that you created earlier.
+
 
 

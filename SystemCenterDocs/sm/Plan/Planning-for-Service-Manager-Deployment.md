@@ -11,11 +11,14 @@ ms.topic: article
 ms.assetid: 6e0bf098-9149-4194-bbc4-3b6eaf5f5e8e
 ---
 # Planning for Service Manager Deployment
+
+>Applies To: System Center 2016 Technical Preview - Service Manager
+
 For System Center 2016 Technical Preview - Service Manager, several deployment options are available, and three options are presented in this guide.
 
 The first deployment option uses one physical computer and one virtual computer. The physical computer hosts the System Center 2016 Technical Preview - Service Manager management server, the System Center 2016 Technical Preview - Service Manager database, and the data warehouse databases, and it also hosts the virtual server. The virtual computer hosts the data warehouse management server. This deployment is used primarily for lightweight or first-impression evaluation of System Center 2016 Technical Preview - Service Manager. No scalability or performance estimates are available for this scenario.
 
-A second deployment option requires the use of two computers. The first computer hosts the System Center 2016 Technical Preview - Service Manager management server and the System Center 2016 Technical Preview - Service Manager database. The second computer hosts the data warehouse management server and the data warehouse databases. If you do not need reporting services, you canâ€”at an absolute minimumâ€”install  System Center 2016 Technical Preview - Service Manager on one computer that hosts both the Service Manager management server and the Service Manager database.
+A second deployment option requires the use of two computers. The first computer hosts the System Center 2016 Technical Preview - Service Manager management server and the System Center 2016 Technical Preview - Service Manager database. The second computer hosts the data warehouse management server and the data warehouse databases. If you do not need reporting services, you can—at an absolute minimum—install  System Center 2016 Technical Preview - Service Manager on one computer that hosts both the Service Manager management server and the Service Manager database.
 
 A third deployment option maximizes performance and scalability by using four computers. Two computers host the management servers, and the remaining two computers host the databases. The computers hosting the databases are the only two computers in this scenario that require the installation of Microsoft SQL Server 2008.
 
@@ -61,5 +64,6 @@ In your enterprise, you might create multiple System Center 2016 Technical Previ
 -   [Accounts Required During Setup](Accounts-Required-During-Setup.md)
 
     Describes the accounts thta you will need in order to setup System Center 2016 Technical Preview - Service Manager
+
 
 

@@ -8,6 +8,9 @@ ms.topic: article
 ms.assetid: 91c5dd2a-550b-4884-9d3a-b935c428ead7
 ---
 # How to configure an iSCSI Target Server with Windows PowerShell and VMM
+
+>Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
+
 You can use VMM to configure the iSCSI Target Server through Windows PowerShell. This section lists some common tasks with examples of Windows PowerShell commands that you can use for those tasks. The SMI-S provider supports all management tasks through VMM.
 
 ### To manage storage on an iSCSI Target Server
@@ -29,7 +32,7 @@ You can use VMM to configure the iSCSI Target Server through Windows PowerShell.
 
         |Command|Purpose|
         |-----------|-----------|
-        |`$array = Get-SCStorageArray -Name ‚Äú<computername>‚Äù`|Review the storage array attributes.|
+        |`$array = Get-SCStorageArray -Name ì<computername>î`|Review the storage array attributes.|
         |`$array.StoragePools`|View available storage pools.|
 
     -   **Add pools from iSCSI Target Server to VMM management:**
@@ -37,7 +40,7 @@ You can use VMM to configure the iSCSI Target Server through Windows PowerShell.
         |Command|Purpose|
         |-----------|-----------|
         |`$pool = Get-SCStoragePool -Name "MS iSCSITarget Concrete: D:"`|Get the specific storage pool to add.|
-        |`$class = New-SCStorageClassification -Name ‚Äúgold‚Äù`|Create a storage classification, if none exists.|
+        |`$class = New-SCStorageClassification -Name ìgoldî`|Create a storage classification, if none exists.|
         |`Set-SCStorageArray -AddStoragePoolToManagement $pool -StorageArray $pool.StorageArray -StorageClassification $class`|Add the storage pool to VMM.|
         |`Set-SCStoragePool -StoragePool $pool -AddVMHostGroup (Get-SCVMHostGroup -Name "All Hosts")`|Allocate the storage pool to a virtualization server group.|
 
@@ -61,5 +64,6 @@ You can use VMM to configure the iSCSI Target Server through Windows PowerShell.
 [Configuring iSCSI Target Server and the SMI-S Provider in VMM](Configuring-iSCSI-Target-Server-and-the-SMI-S-Provider-in-VMM.md)
 [Managing storage resources and capacity with VMM](Managing-storage-resources-and-capacity-with-VMM.md)
 [Managing fabric resources with VMM](Managing-fabric-resources-with-VMM.md)
+
 
 

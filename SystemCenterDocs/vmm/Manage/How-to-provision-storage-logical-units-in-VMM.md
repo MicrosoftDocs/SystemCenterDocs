@@ -8,6 +8,9 @@ ms.topic: article
 ms.assetid: 435cbfad-3cc6-465a-aee9-ca78c02d525f
 ---
 # How to provision storage logical units in VMM
+
+>Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
+
 You can use the following procedure to create logical units from storage pools that are managed by Virtual Machine Manager (VMM).
 
 > [!NOTE]
@@ -55,5 +58,6 @@ You can now assign the logical unit to a host group. For more information, see [
 [Configuring block storage in VMM](Configuring-block-storage-in-VMM.md)
 [Managing storage resources and capacity with VMM](Managing-storage-resources-and-capacity-with-VMM.md)
 [Managing fabric resources with VMM](Managing-fabric-resources-with-VMM.md)
+
 
 

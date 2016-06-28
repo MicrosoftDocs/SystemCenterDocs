@@ -14,6 +14,9 @@ ms.assetid:  cecbf000-42f3-4c50-9edc-98600f50e1bf
 
 
 # How to Create a new Maintenance Schedule
+
+>Applies To: System Center 2016 Technical Preview - Operations Manager
+
 Maintenance mode is a feature in Operations Manager to suspend monitoring of an object during regular software or hardware maintenance activities such as software updates or hardware replacements. When an object is placed into Maintenance Mode, all work-flows targeted against that object are suspended during that specific interval.
 
 ## Maintenance Schedules
@@ -34,5 +37,6 @@ You can see all the entities in your environment that are in Maintenance mode by
 5.  Add a name to the schedule on the details screen, select the category from the drop-down list, and click finish to complete creation of the schedule.
 
     You can also prevent the schedule from starting by removing the check from  the **Enable Schedule c**heck-box.
+
 
 

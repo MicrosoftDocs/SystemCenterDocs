@@ -8,6 +8,9 @@ ms.topic: article
 ms.assetid: 9ea78b8e-1bd3-455c-bdb7-3e913077ea13
 ---
 # How to run Dynamic Optimization on a host cluster in VMM
+
+>Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
+
 Use the following procedure to run Dynamic Optimization on demand on a host cluster in Virtual Machine Manager (VMM). Through Dynamic Optimization, VMM can balance load among hosts by migrating virtual machines within a host cluster. VMM only performs Dynamic Optimization on host clusters that support live migration. On demand Dynamic Optimization does not require that Dynamic Optimization be configured on the parent host group.
 
 For more information about Dynamic Optimization, see [Configuring dynamic optimization and power optimization in VMM](Configuring-dynamic-optimization-and-power-optimization-in-VMM.md).
@@ -31,5 +34,6 @@ For more information about Dynamic Optimization, see [Configuring dynamic optimi
 [How to configure Dynamic Optimization and Power Optimization in VMM](How-to-configure-Dynamic-Optimization-and-Power-Optimization-in-VMM.md)
 [Managing hosts and host clusters with VMM](Managing-hosts-and-host-clusters-with-VMM.md)
 [Managing fabric resources with VMM](Managing-fabric-resources-with-VMM.md)
+
 
 

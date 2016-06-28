@@ -14,7 +14,10 @@ ms.assetid:  46b4d047-51ef-441c-8e21-f9d3087228f6
 
 
 # Install the Agent Using the Discovery Wizard
-You can use the Operations console to search your environment for manageable objects and then deploy an agent to any object that you want to monitor. The process of searching your environment is called â€œdiscovery.â€ One of the advantages of using discovery is that it lists *all* manageable objects, including any that you might not be aware of.
+
+>Applies To: System Center 2016 Technical Preview - Operations Manager
+
+You can use the Operations console to search your environment for manageable objects and then deploy an agent to any object that you want to monitor. The process of searching your environment is called “discovery.” One of the advantages of using discovery is that it lists *all* manageable objects, including any that you might not be aware of.
 
 The Discovery Wizard does not show computers that the management group is already monitoring. If you are doing a phased rollout of your management group, you can run the wizard to add new computers to the group. Also, after your initial deployment, you can use the Discovery Wizard to add newly installed computers to be managed.
 
@@ -134,7 +137,7 @@ You can use the Discovery Wizard to install an agent to  Windows, UNIX or Linux 
 
     1.  Click **Add** to define a discovery scope. In the **Discovery Criteria** dialog box, do the following:
 
-        1.  For the **Discovery scope**, click the ellipsis button **â€¦** to specify the host name, IP address, or range of IP addresses of the UNIX- or Linux-based computers to be discovered.
+        1.  For the **Discovery scope**, click the ellipsis button **…** to specify the host name, IP address, or range of IP addresses of the UNIX- or Linux-based computers to be discovered.
 
         2.  For the **Discovery type** select **Discover all computers** or **Discover only computers with the UNIX/Linux agent installed**.
 
@@ -164,5 +167,6 @@ You must have, at a minimum, a UNIX/Linux Action Account profile configured with
 
 > [!NOTE]
 > Solaris Zones are supported on Solaris 10 or newer versions. In monitoring a computer with Zones, each Zone is treated like a separate computer. You must install the agent on each computer that you want to monitor. Install the agent on the global zone first, because sparse zones share files with the global zone. If you try to install on a sparse zone first, the installation fails. For more information about troubleshooting, see [Operating System Issues](http://go.microsoft.com/fwlink/?LinkId=318149).
+
 
 

@@ -11,6 +11,9 @@ ms.topic: article
 ms.assetid: 222692ab-765c-44bd-8d50-0c0596d26a94
 ---
 # System requirements for Service Management Automation
+
+>Applies To: Windows Azure Pack for Windows Server, System Center 2012 R2 Orchestrator
+
 This topic describes the minimum hardware and software configurations that are required for a full installation of Service Management Automation.
 
 ## Hardware requirements
@@ -42,11 +45,11 @@ Before installing the web service, use the following procedure to install .NET F
 
 4.  Expand **.NET Framework 4.5 Features**.
 
-5.  Select **.NET Framework 4.5** if it isnâ€™t already selected.
+5.  Select **.NET Framework 4.5** if it isn’t already selected.
 
 6.  Expand **WCF Services**.
 
-7.  Select **HTTP Activation** if it isnâ€™t already selected.
+7.  Select **HTTP Activation** if it isn’t already selected.
 
 8.  Click **Next**, and follow the prompts to finish the installation.
 
@@ -71,5 +74,6 @@ The following certificates are required for each component.
 |Runbook worker|None|
 |Automation web service|A certificate that can be used for Secure Sockets Layer (SSL) encryption over HTTPS. The installation program for Service Management Automation can be used to generate a self-signed certificate.|
 |Windows PowerShell module|None|
+
 
 

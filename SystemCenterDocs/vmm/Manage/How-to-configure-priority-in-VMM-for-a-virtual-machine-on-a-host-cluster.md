@@ -8,6 +8,9 @@ ms.topic: article
 ms.assetid: a5fa6cd1-8249-4d87-b2c1-d14aa003176b
 ---
 # How to configure priority in VMM for a virtual machine on a host cluster
+
+>Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
+
 If you deploy or are planning to deploy virtual machines on a host cluster, you can use Virtual Machine Manager (VMM) to configure priority settings for the virtual machines. With these settings, the cluster starts or places high-priority virtual machines before medium-priority or low-priority virtual machines. This ensures that the high-priority virtual machines are allocated memory and other resources first, for better performance. Also, after a node failure, if the high-priority virtual machines do not have the necessary memory and other resources to start, the lower priority virtual machines will be taken offline to free up the necessary resources for the high-priority machines. Virtual machines that are preempted are later restarted in priority order.
 
 You can also configure the virtual machine priority setting in a virtual machine template, so that any virtual machines that are created with that template will have the specified virtual machine priority. For virtual machines that have been deployed on a host cluster, you can also configure these settings by using Failover Cluster Manager.
@@ -37,5 +40,6 @@ For information about other settings related to availability of virtual machines
 5.  Click **OK** or complete the wizard.
 
 6.  To verify the setting, reopen the properties sheet.
+
 
 

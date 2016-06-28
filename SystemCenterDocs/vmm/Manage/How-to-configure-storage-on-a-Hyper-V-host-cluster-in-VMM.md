@@ -11,6 +11,9 @@ ms.topic: article
 ms.assetid: 5f5ba36d-4fc3-4852-8dbc-9ef05b20a8c0
 ---
 # How to configure storage on a Hyper-V host cluster in VMM
+
+>Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
+
 You can use the following procedure to configure storage on a managed Hyper-V host cluster in Virtual Machine Manager (VMM). The storage must already be provisioned before you can configure it for the cluster.
 
 **Account requirements** To complete this procedure, you must be a member of the Administrator user role or a member of the Delegated Administrator user role where the management scope includes the host group where the Hyper-V host cluster is located.
@@ -45,5 +48,6 @@ You can use the following procedure to configure storage on a managed Hyper-V ho
 ## See Also
 [Modifying Hyper-V host clusters in VMM](Modifying-Hyper-V-host-clusters-in-VMM.md)
 [Managing Hyper-V hosts and host clusters with VMM](Managing-Hyper-V-hosts-and-host-clusters-with-VMM.md)
+
 
 

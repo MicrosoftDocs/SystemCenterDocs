@@ -11,6 +11,9 @@ ms.topic: article
 ms.assetid: a2f96b5b-22fe-4e1a-b832-1ed2a22e2d13
 ---
 # How to Import Management Packs for System Center Operations Manager Configuration Item Connectors
+
+>Applies To: System Center 2016 Technical Preview - Service Manager
+
 For the System Center Operations Manager configuration item (CI) connector to function correctly, you have to import a set of management packs into Service Manager. The management packs and the Windows PowerShell script that you need to import the management packs are in the Service Manager installation folder. The default installation folder is \Program Files\Microsoft System Center\Service Manager 2016\Operations Manager Management Packs and System Center 2016 - Operations Manager Management Packs. Use the following procedures to import the management packs into Service Manager.
 
 ### To import Operations Manager management packs for an Operations Manager CI connector
@@ -71,8 +74,9 @@ For the System Center Operations Manager configuration item (CI) connector to fu
 
 7.  In **Import Management Packs**, select all of the management packs, and then click **Import**.
 
-8.  When the import process is complete, the message ‚ÄúThe management pack was imported successfully‚Äù will appear.
+8.  When the import process is complete, the message ìThe management pack was imported successfullyî will appear.
 
 9. Click **OK**.
+
 
 

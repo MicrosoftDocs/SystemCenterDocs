@@ -11,6 +11,9 @@ ms.topic: article
 ms.assetid: 56f31a2e-68ec-49f0-b0e6-628c832897dc
 ---
 # How to Install the VMM Console
+
+>Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
+
 You can use the following procedure to install a VMM console.
 
 To complete this procedure, you need, at a minimum, membership in the local Administrators group (or equivalent) on the computer that you are configuring.
@@ -59,5 +62,6 @@ To complete this procedure, you need, at a minimum, membership in the local Admi
 
 > [!NOTE]
 > If setup does not finish successfully, consult the log files in the **%SYSTEMDRIVE%\ProgramData\VMMLogs** folder. **ProgramData** is a hidden folder.
+
 
 

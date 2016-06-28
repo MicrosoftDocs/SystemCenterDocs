@@ -10,6 +10,9 @@ ms.topic: article
 ms.assetid: a88e021c-e21f-4947-a98f-fb3ec68bbb59
 ---
 # How to add VMware ESX hosts to VMM
+
+>Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
+
 You can use the following procedure to add a VMware ESX or ESXi host or host cluster to Virtual Machine Manager (VMM).
 
 ## Prerequisites
@@ -91,5 +94,6 @@ Repeat this step for each host that has a status of **OK (Limited)**.
 [How to add a VMware vCenter Server to VMM](How-to-add-a-VMware-vCenter-Server-to-VMM.md)
 [Managing hosts and host clusters with VMM](Managing-hosts-and-host-clusters-with-VMM.md)
 [Managing fabric resources with VMM](Managing-fabric-resources-with-VMM.md)
+
 
 

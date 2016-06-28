@@ -14,6 +14,9 @@ ms.assetid:  deb38f1e-f045-4ca1-8844-4ff38f06e7c3
 
 
 # How to Upgrade a Single-Server Management Group to System Center 2016 - Operations Manager
+
+>Applies To: System Center 2016 Technical Preview - Operations Manager
+
 When you upgrade a single-server management group to System Center 2016 Technical Preview - Operations Manager, all features that are installed on the server are upgraded. Before you begin the upgrade process, make sure that your server meets the minimum supported configurations. For more information, see [System Requirements for System Center 2016](../../system-requirements/System-Requirements-for-System-Center-Technical-Preview.md).
 
 ### To upgrade a single-server management group
@@ -41,7 +44,7 @@ When you upgrade a single-server management group to System Center 2016 Technica
     > [!IMPORTANT]
     > If you receive a message about using the wrong version of SQL Server, or experience      a problem with the SQL Server Windows Management Instrumentation (WMI) provider,        you can resolve this. Open a Command Prompt window by using the **Run as administrator** option. Then run the following command, replace the *\<path>* placeholder with the location of Microsoft SQL Server:
         >
-        > **mofcomp.exe â€œ\<path>\Microsoft SQL Server\100\Shared\sqlmgmproviderxpsp2up.mofâ€**
+        > **mofcomp.exe “\<path>\Microsoft SQL Server\100\Shared\sqlmgmproviderxpsp2up.mof”**
 
 8.  When the **Ready to Upgrade** page appears, review the upgrade summary, and then click **Upgrade**.
 
@@ -97,5 +100,6 @@ When you upgrade a single-server management group to System Center 2016 Technica
 1. In the Operations console, select the Administration workspace.
 
 2. In Device Management select Management Servers. In the results pane, you should see the management server that you just installed with a green check mark in the Health State column.
+
 
 

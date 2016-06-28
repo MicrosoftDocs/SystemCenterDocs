@@ -14,6 +14,9 @@ ms.assetid:  9a0a10f3-b755-4a3a-b6e7-e2475dfae2f2
 
 
 # Install the Agent and Certificate on UNIX and Linux Computers Using the Command Line
+
+>Applies To: System Center 2016 Technical Preview - Operations Manager
+
 Your environment may require that you manually install the agent. Use the following procedures to manually install agents to UNIX and Linux computers for monitoring in System Center 2016 Technical Preview - Operations Manager and System Center 2016 Technical Preview, System Center 2016 Technical Preview - Operations Manager.
 
 #### To install the agent on Red Hat Enterprise Linux and SUSE Linux Enterprise Server
@@ -82,7 +85,7 @@ Your environment may require that you manually install the agent. Use the follow
 
 4.  To verify that the package is installed, type:
 
-    `pkginfo â€“l MSFTscx`
+    `pkginfo –l MSFTscx`
 
 5.  To verify that the Microsoft SCX CIM Server is running, type:
 
@@ -96,11 +99,11 @@ Your environment may require that you manually install the agent. Use the follow
 
 2.  To unzip the package, type:
 
-    `gzip â€“d scx-<version>-<os>-<arch>.gz`
+    `gzip –d scx-<version>-<os>-<arch>.gz`
 
 3.  To install the package, type:
 
-    `swinstall â€“s /path/scx-<version>-<os>-<arch> scx`
+    `swinstall –s /path/scx-<version>-<os>-<arch> scx`
 
 4.  To verify that the package is installed, type:
 
@@ -108,7 +111,7 @@ Your environment may require that you manually install the agent. Use the follow
 
 5.  To verify that the Microsoft SCX CIM Server is running, type:
 
-    `ps â€“ef|grep scx`
+    `ps –ef|grep scx`
 
     Look for the following process in the list:
 
@@ -122,7 +125,7 @@ Your environment may require that you manually install the agent. Use the follow
 
 2.  To unzip the package, type:
 
-    `gzip â€“d scx-<version>-<os>-<arch>.gz`
+    `gzip –d scx-<version>-<os>-<arch>.gz`
 
 3.  To install the package, type:
 
@@ -134,7 +137,7 @@ Your environment may require that you manually install the agent. Use the follow
 
 5.  To verify that the Microsoft SCX CIM Server is running, type:
 
-    `ps â€“ef|grep omi`
+    `ps –ef|grep omi`
 
     Look for the following process in the list:
 
@@ -164,9 +167,10 @@ You must have already manually installed an agent before you start this procedur
 
 6.  Securely copy or transfer the `scx_new.pem` file into the `/etc/opt/microsoft/scx/ssl` folder on the computer that is hosting the UNIX or Linux operating system. This replaces the `original scx-host-<hostname>.pem` file.
 
-7.  Restart the agent by typing `scxadmin â€“restart`.
+7.  Restart the agent by typing `scxadmin –restart`.
 
 ## <a name="bkmk_DiscoveringSystemsafterManualDeployment"></a>Discovering Computers after Manual Deployment
 After you have manually deployed agents to UNIX and Linux computers, they still need to be discovered by Operations Manager by using the Discovery Wizard. For the **Discovery type**, select **Discover only computers with the UNIX/Linux agent installed**. For more information see [Install the Agent Using the Discovery Wizard](Install-the-Agent-Using-the-Discovery-Wizard.md).
+
 
 

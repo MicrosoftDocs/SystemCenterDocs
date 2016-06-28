@@ -9,6 +9,9 @@ ms.topic: article
 ms.assetid: fd77880c-3a53-4c7d-980f-ef392909bff9
 ---
 # How to configure storage on a Hyper-V host in VMM
+
+>Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
+
 You can use the following procedures to configure storage on a Hyper-V host that is already under management in Virtual Machine Manager (VMM). These procedures all use Hyper-V host properties to configure the storage for a specific host:
 
 -   [Creating a logical unit and assigning it to a host](How-to-configure-storage-on-a-Hyper-V-host-in-VMM.md#BKMK_create_assign)
@@ -190,5 +193,6 @@ You can use the following procedures to configure storage on a Hyper-V host that
 [Managing Hyper-V hosts and host clusters with VMM](Managing-Hyper-V-hosts-and-host-clusters-with-VMM.md)
 [Managing hosts and host clusters with VMM](Managing-hosts-and-host-clusters-with-VMM.md)
 [Managing fabric resources with VMM](Managing-fabric-resources-with-VMM.md)
+
 
 

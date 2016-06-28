@@ -11,6 +11,9 @@ ms.topic: article
 ms.assetid: b6044e0c-0caa-459c-9489-c379a154136b
 ---
 # How to install the Service Management Automation web service
+
+>Applies To: Windows Azure Pack for Windows Server, System Center 2012 R2 Orchestrator
+
 The Service Management Automation service endpoint enables you to automate IT administration and business processes by using Windows PowerShell workflow-based runbooks in Windows Azure Pack for Windows Server.
 
 Use the following information to install and configure the Automation web service in Windows Azure Pack. The Service Management Automation PowerShell module is a required prerequisite of the Service Management Automation web service, so you must install the Service Management Automation PowerShell module before you deploy the Service Management Automation web service.
@@ -73,5 +76,6 @@ Install the web service on any machine that can communicate with Windows Azure P
 13. Review the installation summary, and then click **Install**.
 
     After the installation is complete, install a runbook worker as described in [How to install the Service Management Automation runbook worker](How-to-install-the-Service-Management-Automation-runbook-worker.md).
+
 
 

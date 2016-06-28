@@ -11,6 +11,9 @@ ms.topic: article
 ms.assetid: 8b67ae1f-e1e7-4e2e-8bf5-99f831f035b0
 ---
 # About Managing the Data Warehouse
+
+>Applies To: System Center 2016 Technical Preview - Service Manager
+
 In Service Manager, there are seven data warehouse jobs that run at various times to maintain the data warehouse, as listed in the following table.
 
 |Data warehouse job|Description|
@@ -26,7 +29,7 @@ In Service Manager, there are seven data warehouse jobs that run at various time
 
 In order to manage the data warehouse, which is primarily used by reporting, you must perform maintenance tasks on these jobs. For example, you can view their status, pause and resume, set a schedule, enable and disable schedules, and troubleshoot data warehouse jobs. You can perform all of these maintenance tasks by using Windows PowerShell cmdlets. In addition, you can perform some of these tasks through the Service Manager console.
 
-During deployment, you registered the Service Manager management group as discussed in ‚ÄúRegister Service Manager Management Group‚Äù in the Service Manager Deployment Guide. As a result of that action, management pack deployment started and MPSyncJob started. You should not start or resume any data warehouse jobs until MPSyncJob has finished, as shown in the **Data Warehouse Jobs** pane in the Service Manager console.
+During deployment, you registered the Service Manager management group as discussed in ìRegister Service Manager Management Groupî in the Service Manager Deployment Guide. As a result of that action, management pack deployment started and MPSyncJob started. You should not start or resume any data warehouse jobs until MPSyncJob has finished, as shown in the **Data Warehouse Jobs** pane in the Service Manager console.
 
 
 ## Job Schedule and Frequency
@@ -45,23 +48,24 @@ In this release of Service Manager, grooming functions are handled as a workflow
 ## Windows PowerShell Cmdlets
 The Service Manager Windows PowerShell module contains cmdlets that are used in this scenario to manage data warehouse functions on the server that hosts the data warehouse. You must run all Windows PowerShell cmdlets as an administrator. To view the Windows PowerShell Help, type the **get-help** command, followed by the name of the cmdlet for which you want help. For example, type `get-help Set-SCDWJobSchedule`. The following cmdlets are used in this scenario:
 
--   **Get-SCDWJobSchedule** ‚ÄîDisplays the schedule for a data warehouse job.
+-   **Get-SCDWJobSchedule** óDisplays the schedule for a data warehouse job.
 
--   **Get-SCDWJob**‚ÄîDisplays status for all recurring Service Manager data warehouse jobs.
+-   **Get-SCDWJob**óDisplays status for all recurring Service Manager data warehouse jobs.
 
--   **Get-SCDWMgmtGroup**‚ÄîShows details for a management group that is registered with the data warehouse.
+-   **Get-SCDWMgmtGroup**óShows details for a management group that is registered with the data warehouse.
 
--   **Remove-SCDWMgmtGroup**‚ÄîRemoves a management group from the data warehouse.
+-   **Remove-SCDWMgmtGroup**óRemoves a management group from the data warehouse.
 
--   **Set-SCDWJobSchedule**‚ÄîSets the schedule for data warehouse jobs.
+-   **Set-SCDWJobSchedule**óSets the schedule for data warehouse jobs.
 
--   **Enable-SCDWJobSchedule**‚ÄîEnables a data warehouse job schedule.
+-   **Enable-SCDWJobSchedule**óEnables a data warehouse job schedule.
 
--   **Disable-SCDWJobSchedule**‚ÄîDisables a data warehouse job schedule. Job schedules are disabled by default.
+-   **Disable-SCDWJobSchedule**óDisables a data warehouse job schedule. Job schedules are disabled by default.
 
 
 
 ## Getting Started with Data Warehouse Jobs
 When you register with the Service Manager data warehouse, the MPSyncJob starts running. This job can take several hours to complete its initial run. When this job is complete, you can see two extract jobs listed in the Data Warehouse Jobs pane. One extract job is listed as **Extract_<data warehouse management group name\>**, and the other extract job is listed as **Extract_<Service Manager management group name\>**. When both of these extract jobs appear, you know that the initial run of the MPSyncJob is complete and that you can now proceed with the subsequent maintenance tasks.
+
 
 

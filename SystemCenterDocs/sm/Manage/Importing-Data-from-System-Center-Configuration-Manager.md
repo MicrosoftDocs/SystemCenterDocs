@@ -11,6 +11,9 @@ ms.topic: article
 ms.assetid: abaf3337-f620-4220-bbbb-13007dc72754
 ---
 # Importing Data from System Center Configuration Manager
+
+>Applies To: System Center 2016 Technical Preview - Service Manager
+
 This section describes how to create, configure, disable, and enable a Configuration Manager connector, and how to customize the Configuration Manager extended SMS_def.mof file for collecting hardware information. You use the connector to import data from System Center Configuration Manager into Service Manager.
 
 The connector for Configuration Manager recognizes User-device Affinity and Mobile Devices and synchronizes them in the Service Manager database.
@@ -36,5 +39,6 @@ The connector for Configuration Manager recognizes User-device Affinity and Mobi
 -   [How to Configure a Configuration Manager Connector for an Extended SMS_def.mof File](How-to-Configure-a-Configuration-Manager-Connector-for-an-Extended-SMS_def.mof-File.md)
 
     Describes how to customize the default Configuration Manager SMS_def.mof file to extend the hardware information that is collected.
+
 
 

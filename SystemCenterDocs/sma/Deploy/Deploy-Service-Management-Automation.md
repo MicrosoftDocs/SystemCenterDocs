@@ -11,6 +11,9 @@ ms.topic: article
 ms.assetid: 23bd8d24-8588-4701-9f69-bc023dcf3d7d
 ---
 # Deploy Service Management Automation
+
+>Applies To: System Center Technical Preview
+
 Service Management Automation is a workflow management solution for Windows Azure Pack for Windows Server. It enables you to automate the creation, monitoring, and deployment of resources in your environment. This document describes Service Management Automation deployment.
 
 ## Deployment topics
@@ -46,5 +49,6 @@ Service Management Automation is a workflow management solution for Windows Azur
 -   [How to uninstall Service Management Automation](How-to-uninstall-Service-Management-Automation.md)
 
     Provides step-by-step instructions to install for uninstalling Service Management Automation.
+
 
 

@@ -11,6 +11,9 @@ ms.topic: article
 ms.assetid: 635140a5-f4d7-4d6a-9a11-308982023c68
 ---
 # Troubleshooting System Center Data Warehouse Errors
+
+>Applies To: System Center 2016 Technical Preview - Service Manager
+
 This section describes steps you can take to troubleshoot System Center data warehouse errors in Service Manager.
 
 ## Using the  Operations Manager event log on the Data Warehouse server to troubleshoot errors
@@ -44,7 +47,7 @@ The Windows PowerShell cmdlets in the following table provide detailed informati
 |-----------|---------------|
 |Get-SCDWMgmtGroup|This command tells you which sources are currently registered with the data warehouse. You should expect to see at least two different DataSourceName values.|
 |Get-SCDWJob|This command lists the data warehouse job status of the current batch. Using the command, you can check whether the jobs are enabled or not, which jobs are running, and when they started.<br /><br />When the MPSync or DWMaintenance jobs start, they disable all of the ETL jobs. You will see the **Is Enabled** column set to **False** for each of the ETL jobs. This means that even if the ETL job status shows it is running, it actually is not running. When the MPSync or DWMaintenance job completes, the ETL jobs are automatically enabled and resume processing.<br /><br />Jobs normally have the **Not Started** status, unless the previous batch has completed. If you prefer, you can use the **Get-SCDWJob** command to view the last few batches of a specific job.|
-|Get-SCDWJob â€“JobName <Specific job name\> -NumberOfBatches <number\>|Use this command to see the latest job, specified by <Specific job name\>, completed, when it started, and when it ended. You can calculate how long it ran and what the next batch ID and status is. The job batch ID is always incremental.|
+|Get-SCDWJob –JobName <Specific job name\> -NumberOfBatches <number\>|Use this command to see the latest job, specified by <Specific job name\>, completed, when it started, and when it ended. You can calculate how long it ran and what the next batch ID and status is. The job batch ID is always incremental.|
 |Get-SCDWJobModule|This command provides detailed information about the specific modules within the job. This is very useful when you see job failures and you want to find out what caused the failure.|
 
 ## Troubleshooting Common Data Warehouse Issues
@@ -172,7 +175,7 @@ To troubleshoot this problem, complete the following steps:
 
 3.  If the MPSync and DWMaintenance ETL jobs are all enabled and running but their individual batch ID has not changed for a long time, or if you use the **Get-SCDWJobModule** cmdlet for specific jobs and you do not see that any module is actually running, check the event log and see if there are any error messages. Sometimes the error message might be many days old and you might need to review many days-worth of events.
 
-4.  Check if the three servicesâ€”System Center Data Access Service, Microsoft Monitoring Agent, and System Center Management Configurationâ€”on the data warehouse management server are actually running. On the data warehouse management server, click **Start**, click **Run**, and then type **Services.msc**. In **Services** verify that the following services are running: System Center Data Access Service, Microsoft Monitoring Agent, and System Center Management Configuration.
+4.  Check if the three services—System Center Data Access Service, Microsoft Monitoring Agent, and System Center Management Configuration—on the data warehouse management server are actually running. On the data warehouse management server, click **Start**, click **Run**, and then type **Services.msc**. In **Services** verify that the following services are running: System Center Data Access Service, Microsoft Monitoring Agent, and System Center Management Configuration.
 
     If any of the services are not running, restart all three services. In addition, if all services are actually running, events from the Event Source Data Warehouse and OpsMgr SDK Service are sent to the Operations Manager event log. You can use this information as another source to verify whether all the services are running. If you do not see events from the Event Source Data Warehouse and OpsMgr SDK Service for a long time, you should restart all three services.
 
@@ -270,6 +273,7 @@ To troubleshoot this problem, check if the password for each Run As account has 
 It is easy to update the password if it is expired. However it is more difficult to update the system if you change the Run As account. We do not recommend that you modify Run As accounts.
 
 If the job failure is not related to the password, make sure that the Run As account for the failed job can be used to connect to the target database. For example, ensure that the Extract job Run As account can be used to connect to the Service Manager database. If not, make sure that the Structured Query Language (SQL) service that is hosting the database is running.
+
 
 
 

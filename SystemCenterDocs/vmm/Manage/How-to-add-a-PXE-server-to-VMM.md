@@ -11,6 +11,9 @@ ms.topic: article
 ms.assetid: a0f97147-d9b7-43b3-ad1a-9a5b2c138ab5
 ---
 # How to add a PXE server to VMM
+
+>Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
+
 You can use the following procedure to add a pre-boot execution environment (PXE) server to Virtual Machine Manager (VMM). The PXE server is used to initiate operating system installations on bare-metal computers, as described in [Overview: creating hosts or host clusters from bare metal with VMM](Overview--creating-hosts-or-host-clusters-from-bare-metal-with-VMM.md) and [Overview: creating Scale-Out File Servers from bare metal in VMM](Overview--creating-Scale-Out-File-Servers-from-bare-metal-in-VMM.md).
 
 If you have an existing PXE server in your environment configured with Windows Deployment Services, you can add that server to VMM. Then you can use it for provisioning in VMM (and VMM will recognize only the resulting servers). All other requests will continue to be handled by the PXE server according to how it is configured.
@@ -81,5 +84,6 @@ For example, you could create a Run As account called **PXE Administrator**. For
 [Deploying Scale-Out File Servers from bare metal with VMM](Deploying-Scale-Out-File-Servers-from-bare-metal-with-VMM.md)
 [Managing infrastructure resources with VMM](Managing-infrastructure-resources-with-VMM.md)
 [Managing fabric resources with VMM](Managing-fabric-resources-with-VMM.md)
+
 
 

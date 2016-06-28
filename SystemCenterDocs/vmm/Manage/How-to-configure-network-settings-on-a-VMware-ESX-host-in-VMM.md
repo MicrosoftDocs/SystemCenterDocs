@@ -10,6 +10,9 @@ ms.topic: article
 ms.assetid: c391296f-7c63-4e56-9597-92d4616c4fc2
 ---
 # How to configure network settings on a VMware ESX host in VMM
+
+>Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
+
 You can use the following procedures to configure logical network settings on a VMware ESX host in Virtual Machine Manager (VMM), and to view compliance information for physical network adapters on the host.
 
 To make logical networks available to virtual machines on an external virtual network, you must associate logical networks with physical network adapters on the ESX host. Compliance information indicates whether all IP subnets and VLANs that are included in the network site that is associated with a logical network are assigned to the physical network adapter.
@@ -87,5 +90,6 @@ Before you begin these procedures, make sure that the following prerequisites ar
 [Managing network resources with VMM](Managing-network-resources-with-VMM.md)
 [Managing hosts and host clusters with VMM](Managing-hosts-and-host-clusters-with-VMM.md)
 [Managing fabric resources with VMM](Managing-fabric-resources-with-VMM.md)
+
 
 

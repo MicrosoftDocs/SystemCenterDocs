@@ -12,7 +12,8 @@ ms.assetid:  2ddbf72a-a82a-497e-afe1-672c8b253ed4
 ---
 
 # What can DPM back up?
-This matrix summarizes the workloads that System Center DPM can back up, and the relevant DPM version/deployment type.
+
+>Applies To: System Center 2016 Technical Preview - Data Protection Manager
 
 ## Protection support matrix
 

@@ -14,6 +14,9 @@ ms.assetid:  2f228f97-54fd-4126-8a05-2065aab4dc19
 
 
 # How to Install an Operations Manager Management Server
+
+>Applies To: System Center 2016 Technical Preview - Operations Manager
+
 In System Center 2016 Technical Preview - Operations Manager the first feature you install is the management server. The setup procedure creates the operational database and data warehouse database. The procedure described in this topic assumes that you have already installed a supported version of Microsoft SQL Server locally on the  management server. However, you can specify an instance of SQL Server that is installed on a separate server.
 
 You must ensure that your server meets the minimum system requirements for System Center 2016 Technical Preview - Operations Manager. For more information, see [System Requirements for System Center Technical Preview](../../system-requirements/System-Requirements-for-System-Center-Technical-Preview.md) .
@@ -70,7 +73,7 @@ You must ensure that your server meets the minimum system requirements for Syste
     > [!IMPORTANT]
     > You might receive a message about having the wrong version of SQL Server, or you might encounter a problem with the SQL Server Windows Management Instrumentation (WMI) provider. To resolve this problem, open a Command Prompt window, select **Run as administrator**, and then run the following command. In the command, replace the <path\> placeholder with the location of SQL Server.
     > 
-    > **mofcomp.exe \<path>\Microsoft SQL Server\100\Shared\sqlmgmproviderxpsp2up.mofâ€**
+    > **mofcomp.exe \<path>\Microsoft SQL Server\100\Shared\sqlmgmproviderxpsp2up.mof”**
 
     > [!NOTE]
     > The SQL Server model database size must not be greater than 100 MB. If it is, you might encounter an error in Setup regarding the inability to create a database on SQL due to user permissions. To resolve the issue, you must reduce the size of the model database.
@@ -84,7 +87,7 @@ You must ensure that your server meets the minimum system requirements for Syste
     > [!IMPORTANT]
     > You might receive a message about having the wrong version of SQL Server, or you might encounter a problem with the SQL Server Windows Management Instrumentation (WMI) provider. To resolve this problem, open a Command Prompt window, select **Run as administrator**, and then run the following command. In the command, replace the <path\> placeholder with the location of SQL Server.
     > 
-    > **mofcomp.exe â€œ\<path>\Microsoft SQL Server\100\Shared\sqlmgmproviderxpsp2up.mofâ€**
+    > **mofcomp.exe “\<path>\Microsoft SQL Server\100\Shared\sqlmgmproviderxpsp2up.mof”**
 
     > [!NOTE]
     > These paths do not change if you connect to a different instance of SQL Server.
@@ -143,5 +146,6 @@ You must ensure that your server meets the minimum system requirements for Syste
 
 ## See Also
 [Distributed Deployment of Operations Manager](Distributed-Deployment-of-Operations-Manager.md)
+
 
 

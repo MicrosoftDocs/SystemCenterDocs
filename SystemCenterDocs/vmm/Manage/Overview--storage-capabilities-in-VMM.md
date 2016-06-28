@@ -8,6 +8,9 @@ ms.topic: article
 ms.assetid: 6a186e10-14c1-4972-a42b-efe171cf0792
 ---
 # Overview: storage capabilities in VMM
+
+>Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
+
 Virtual Machine Manager (VMM) recognizes a variety of storage technologies. You can use VMM to configure storage resources to make the most efficient use of your storage technology and capacity.
 
 -   **Discover, configure, and assign storage.** You can use VMM to simplify tasks 
@@ -73,5 +76,6 @@ For an example of how VMM can work with storage providers, see [Configuring iSCS
 ## See Also
 [Managing storage resources and capacity with VMM](Managing-storage-resources-and-capacity-with-VMM.md)
 [Managing fabric resources with VMM](Managing-fabric-resources-with-VMM.md)
+
 
 

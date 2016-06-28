@@ -11,6 +11,9 @@ ms.topic: article
 ms.assetid: 89cef640-a705-4755-96b1-cedb54ff79db
 ---
 # Using and Managing Standard Reports
+
+>Applies To: System Center 2016 Technical Preview - Service Manager
+
 This section describes how to use standard reports in System Center 2016 Technical Preview - Service Manager.
 
 The simple reporting infrastructure that is included in both System Center 2016 Technical Preview - Service Manager and System Center 2016 Technical Preview - Service Manager is built on SQL Server Reporting Services (SSRS), where data is accessed from the Service Manager data warehouse. The SSRS infrastructure provides for basic reporting functionality, such as report-level security, report subscriptions, browser-based access to reports, linked reports, and customization. This reporting functionally is similar to the experience that is included with Operations Manager.
@@ -40,5 +43,6 @@ For more information about SSRS, see [SQL Server Reporting Services](http://go.m
 -   Add reports to the report catalog that were not created in Service Manager.
 
 -   Review the [Standard Reports Available in Service Manager](Standard-Reports-Available-in-Service-Manager.md)
+
 
 

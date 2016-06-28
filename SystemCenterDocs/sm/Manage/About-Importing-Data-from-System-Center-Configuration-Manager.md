@@ -11,6 +11,9 @@ ms.topic: article
 ms.assetid: 6c77a473-3189-443b-b63a-f835cbe72ec1
 ---
 # About Importing Data from System Center Configuration Manager
+
+>Applies To: System Center 2016 Technical Preview - Service Manager
+
 You can import data from the System Center Configuration Manager site database into the Service Manager database. This automatically creates and populates configuration items for the hardware and software that you want to manage in Service Manager. After you import data from System Center Configuration Manager, you can attach the respective configuration items to relevant incidents, and the information in the configuration items will be available to analysts working on the incident.
 
 By using a Configuration Manager connector, you can import configuration baselines from System Center Configuration Manager and then use these configuration baselines to automatically generate incidents for noncompliant configuration items.
@@ -49,5 +52,6 @@ You can import software configuration items with the Configuration Manager Conne
 -   SoftwareLicensingProduct
 
 If software for a particular computer does not appear in the **All Software** view in the Configuration Items workspace, you should review the Operations Manager event log on the Service Manager primary management server. You should look for events with sources of OpsMgr Connector and Lfx Service to determine if there are any errors.
+
 
 

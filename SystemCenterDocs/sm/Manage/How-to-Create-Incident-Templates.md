@@ -11,6 +11,9 @@ ms.topic: article
 ms.assetid: 5563fbd2-40ee-4b57-b3c9-22c88759a6a1
 ---
 # How to Create Incident Templates
+
+>Applies To: System Center 2016 Technical Preview - Service Manager
+
 Use the following procedures to create two incident templates in Service Manager. The first you use to create email-related incidents, and the second you use with the Incident Change workflow for printer-related problems.
 
 ### To create an email-related incident template
@@ -84,5 +87,6 @@ Use the following procedures to create two incident templates in Service Manager
 ### To validate that the new incident template was created
 
 -   Verify that the new incident templates are listed in the **Templates** pane.
+
 
 

@@ -8,6 +8,9 @@ ms.topic: article
 ms.assetid: bb256644-2149-4106-af3c-e62d25afb5c2
 ---
 # How to view infrastructure servers in VMM
+
+>Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
+
 Use the following procedures to view a list of infrastructure servers in Virtual Machine Manager (VMM) and to view the properties of those servers.
 
 ### To view a list of infrastructure servers
@@ -33,5 +36,6 @@ Use the following procedures to view a list of infrastructure servers in Virtual
 [Managing infrastructure resources with VMM](Managing-infrastructure-resources-with-VMM.md)
 [Managing fabric updates in VMM](Managing-fabric-updates-in-VMM.md)
 [Managing fabric resources with VMM](Managing-fabric-resources-with-VMM.md)
+
 
 
