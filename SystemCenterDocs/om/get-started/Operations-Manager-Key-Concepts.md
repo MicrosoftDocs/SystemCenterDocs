@@ -1,15 +1,18 @@
 ---
-title: Operations Manager Key Concepts
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - operations-manager
-ms.tgt_pltfrm: na
-ms.topic: get-started-article
-ms.assetid: 1b160ed6-c9f7-4533-8847-4fba7505cb46
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  mgoedtel
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-27
+title:  Operations Manager Key Concepts
+ms.technology:  operations-manager
+ms.assetid:  1b160ed6-c9f7-4533-8847-4fba7505cb46
 ---
+
+
+
 # Operations Manager Key Concepts
 
 >Applies To: System Center 2016 Technical Preview - Operations Manager

@@ -1,15 +1,18 @@
 ---
-title: Install Agent on Windows Using the Discovery Wizard
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - operations-manager
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: e82aa37c-e823-4162-aa29-83e4f621d201
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  mgoedtel
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-27
+title:  Install Agent on Windows Using the Discovery Wizard
+ms.technology:  operations-manager
+ms.assetid:  e82aa37c-e823-4162-aa29-83e4f621d201
 ---
+
+
+
 # Install Agent on Windows Using the Discovery Wizard
 
 >Applies To: System Center 2016 Technical Preview - Operations Manager

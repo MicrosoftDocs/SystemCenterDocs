@@ -1,15 +1,18 @@
 ---
-title: Install Agent Using the MOMAgent.msi Setup Wizard
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - operations-manager
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: ee7b443a-5105-4303-97d3-8018a7e74af4
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  mgoedtel
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-27
+title:  Install Agent Using the MOMAgent.msi Setup Wizard
+ms.technology:  operations-manager
+ms.assetid:  ee7b443a-5105-4303-97d3-8018a7e74af4
 ---
+
+
+
 # Install Agent Using the MOMAgent.msi Setup Wizard
 
 >Applies To: System Center 2016 Technical Preview - Operations Manager

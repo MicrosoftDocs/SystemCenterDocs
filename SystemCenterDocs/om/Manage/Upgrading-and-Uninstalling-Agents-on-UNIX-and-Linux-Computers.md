@@ -1,15 +1,18 @@
 ---
-title: Upgrading and Uninstalling Agents on UNIX and Linux Computers
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - operations-manager
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 2bf69867-ff73-48e0-b8b5-83b3b104b046
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  mgoedtel
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-27
+title:  Upgrading and Uninstalling Agents on UNIX and Linux Computers
+ms.technology:  operations-manager
+ms.assetid:  2bf69867-ff73-48e0-b8b5-83b3b104b046
 ---
+
+
+
 # Upgrading and Uninstalling Agents on UNIX and Linux Computers
 
 >Applies To: System Center 2016 Technical Preview - Operations Manager

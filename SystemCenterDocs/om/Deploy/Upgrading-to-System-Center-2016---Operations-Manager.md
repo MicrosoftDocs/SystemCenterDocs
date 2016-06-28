@@ -1,15 +1,18 @@
 ---
-title: Upgrading to System Center 2016 - Operations Manager
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - operations-manager
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 9ed90e0a-6462-4c57-9ecb-770c14582b14
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  mgoedtel
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-27
+title:  Upgrading to System Center 2016   Operations Manager
+ms.technology:  operations-manager
+ms.assetid:  9ed90e0a-6462-4c57-9ecb-770c14582b14
 ---
+
+
+
 # Upgrading to System Center 2016 - Operations Manager
 
 >Applies To: System Center 2016 Technical Preview - Operations Manager

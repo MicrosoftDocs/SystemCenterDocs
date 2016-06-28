@@ -1,15 +1,18 @@
 ---
-title: Initial Monitoring After Operations Manager Is Installed
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - operations-manager
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: b738db5b-041e-46ee-801f-bfd11fc04493
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  mgoedtel
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-27
+title:  Initial Monitoring After Operations Manager Is Installed
+ms.technology:  operations-manager
+ms.assetid:  b738db5b-041e-46ee-801f-bfd11fc04493
 ---
+
+
+
 
 #Initial Monitoring After Operations Manager Is Installed
 
@@ -26,3 +29,4 @@ After Operations Manager is installed, you must decide which IT service you shou
 - [Using Management Packs](Using-Management-Packs.md)
 
     Monitoring for applications, features, and services is enabled by importing management packs. This section from the System Center 2016 section of the TechNet library explains what management packs do, and how to import and manage them.
+

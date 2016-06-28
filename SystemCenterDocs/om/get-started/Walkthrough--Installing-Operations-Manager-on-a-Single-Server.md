@@ -1,15 +1,18 @@
 ---
-title: Walkthrough: Installing Operations Manager on a Single Server
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - operations-manager
-ms.tgt_pltfrm: na
-ms.topic: get-started-article
-ms.assetid: 76eb99bf-9aca-49d1-b5e7-63909fd21b13
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  mgoedtel
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-27
+title:  Walkthrough  Installing Operations Manager on a Single Server
+ms.technology:  operations-manager
+ms.assetid:  76eb99bf-9aca-49d1-b5e7-63909fd21b13
 ---
+
+
+
 # Walkthrough: Installing Operations Manager on a Single Server
 
 >Applies To: System Center 2016 Technical Preview - Operations Manager

@@ -1,15 +1,18 @@
 ---
-title: Process Manual Agent Installations
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - operations-manager
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: ba2a2815-10bf-4904-ae1c-1e572e2b5fa5
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  mgoedtel
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-27
+title:  Process Manual Agent Installations
+ms.technology:  operations-manager
+ms.assetid:  ba2a2815-10bf-4904-ae1c-1e572e2b5fa5
 ---
+
+
+
 # Process Manual Agent Installations
 
 >Applies To: System Center 2016 Technical Preview - Operations Manager

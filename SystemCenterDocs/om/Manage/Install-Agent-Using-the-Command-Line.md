@@ -1,15 +1,18 @@
 ---
-title: Install Agent Using the Command Line
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - operations-manager
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: f0569325-0e89-4633-8b6b-b900afbfda54
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  mgoedtel
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-27
+title:  Install Agent Using the Command Line
+ms.technology:  operations-manager
+ms.assetid:  f0569325-0e89-4633-8b6b-b900afbfda54
 ---
+
+
+
 # Install Agent Using the Command Line
 
 >Applies To: System Center 2016 Technical Preview - Operations Manager
