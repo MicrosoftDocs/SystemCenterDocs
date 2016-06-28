@@ -4,7 +4,7 @@ ms.custom: na
 ms.prod: system-center-threshold
 ms.reviewer: na
 ms.suite: na
-ms.technology: 
+ms.technology:
   - service-manager
 ms.tgt_pltfrm: na
 ms.topic: article
@@ -38,6 +38,3 @@ This guide also describes how to find and read the Setup log if you encounter is
 -   [Moving the Service Manager Database](Moving-the-Service-Manager-Database.md)
 
 -   [Moving Data Warehouse Databases](Moving-Data-Warehouse-Databases.md)
-
-
-
