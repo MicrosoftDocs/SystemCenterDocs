@@ -1,15 +1,18 @@
 ---
-title: Managing Access in Operations Manager
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - operations-manager
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 984d119a-0019-4b86-9bfc-dd50930f425d
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  mgoedtel
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-27
+title:  Managing Access in Operations Manager
+ms.technology:  operations-manager
+ms.assetid:  984d119a-0019-4b86-9bfc-dd50930f425d
 ---
+
+
+
 # Managing Access in Operations Manager
 
 >Applies To: System Center 2016 Technical Preview - Operations Manager

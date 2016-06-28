@@ -1,15 +1,18 @@
 ---
-title: What&#39;s New in OM in Technical Preview
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - operations-manager
-ms.tgt_pltfrm: na
-ms.topic: get-started-article
-ms.assetid: 5b6096d3-55f0-4bcb-b501-42664e947cb3
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  mgoedtel
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-27
+title:  What s New in OM in Technical Preview
+ms.technology:  operations-manager
+ms.assetid:  5b6096d3-55f0-4bcb-b501-42664e947cb3
 ---
+
+
+
 # What&#39;s New in OM in Technical Preview
 The content in this section describes what's new and changed in System Center 2016 - Operations Manager Technical Preview. 
 

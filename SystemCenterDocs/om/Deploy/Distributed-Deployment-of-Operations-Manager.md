@@ -1,15 +1,18 @@
 ---
-title: Distributed Deployment of Operations Manager
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - operations-manager
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: b60c787f-aaf4-4d85-ae42-a93ce1b663ef
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  mgoedtel
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-27
+title:  Distributed Deployment of Operations Manager
+ms.technology:  operations-manager
+ms.assetid:  b60c787f-aaf4-4d85-ae42-a93ce1b663ef
 ---
+
+
+
 # Distributed Deployment of Operations Manager
 
 >Applies To: System Center 2016 Technical Preview - Operations Manager

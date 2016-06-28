@@ -1,15 +1,18 @@
 ---
-title: System Center 2016 - Operations Manager Operations Guide
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - operations-manager
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 86de4599-3d8e-4199-a986-6171bd962f7c
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  mgoedtel
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-27
+title:  System Center 2016   Operations Manager Operations Guide
+ms.technology:  operations-manager
+ms.assetid:  86de4599-3d8e-4199-a986-6171bd962f7c
 ---
+
+
+
 # System Center 2016 - Operations Manager Operations Guide
 
 >Applies To: System Center 2016 Technical Preview - Operations Manager

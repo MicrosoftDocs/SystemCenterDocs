@@ -1,15 +1,18 @@
 ---
-title: Managing Discovery and Agents
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - operations-manager
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 66b6b089-d888-431f-845f-ee689b69ba1a
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  mgoedtel
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-27
+title:  Managing Discovery and Agents
+ms.technology:  operations-manager
+ms.assetid:  66b6b089-d888-431f-845f-ee689b69ba1a
 ---
+
+
+
 # Managing Discovery and Agents
 
 >Applies To: System Center 2016 Technical Preview - Operations Manager

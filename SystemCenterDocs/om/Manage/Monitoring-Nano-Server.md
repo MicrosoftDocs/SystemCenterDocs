@@ -1,15 +1,18 @@
 ---
-title: Monitoring Nano Server
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - operations-manager
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 3b1e34e3-7a86-42f3-acc6-363fc00b0e62
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  mgoedtel
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-27
+title:  Monitoring Nano Server
+ms.technology:  operations-manager
+ms.assetid:  3b1e34e3-7a86-42f3-acc6-363fc00b0e62
 ---
+
+
+
 # Monitoring Nano Server
 
 >Applies To: System Center 2016 Technical Preview - Operations Manager

@@ -1,15 +1,18 @@
 ---
-title: How to Install the Operations Console
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - operations-manager
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: f88980f5-521f-41cc-98db-997db0019c0f
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  mgoedtel
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-27
+title:  How to Install the Operations Console
+ms.technology:  operations-manager
+ms.assetid:  f88980f5-521f-41cc-98db-997db0019c0f
 ---
+
+
+
 # How to Install the Operations Console
 
 >Applies To: System Center 2016 Technical Preview - Operations Manager
