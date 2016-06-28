@@ -1,15 +1,16 @@
 ---
-title: How to Send SLA Notification Information to the Assigned-To User
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - service-manager
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 72980e7a-58c2-44d3-8a99-db3776c8abfb
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  bandersmsft
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  How to Send SLA Notification Information to the Assigned To User
+ms.technology:  service-manager
+ms.assetid:  72980e7a-58c2-44d3-8a99-db3776c8abfb
 ---
+
 # How to Send SLA Notification Information to the Assigned-To User
 
 >Applies To: System Center 2016 Technical Preview - Service Manager

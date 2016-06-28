@@ -1,15 +1,16 @@
 ---
-title: Using Service Manager Tasks to Troubleshoot Computer Problems
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - service-manager
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 7814be87-cbc7-42fe-a5c8-5a8720e3921c
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  bandersmsft
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  Using Service Manager Tasks to Troubleshoot Computer Problems
+ms.technology:  service-manager
+ms.assetid:  7814be87-cbc7-42fe-a5c8-5a8720e3921c
 ---
+
 # Using Service Manager Tasks to Troubleshoot Computer Problems
 
 >Applies To: System Center 2016 Technical Preview - Service Manager
@@ -25,7 +26,7 @@ The Event Viewer task that you create will display logs from the computer that i
 
 ## How to Create a Task
 
-Use the following procedures in Service Manager to create a task—for example, a task that you can use to open Event Viewer and view logs on a computer—and then validate the new task. Event Viewer displays the logs from the remote computer that is listed as a Configuration Item in the incident.
+Use the following procedures in Service Manager to create a taskï¿½for example, a task that you can use to open Event Viewer and view logs on a computerï¿½and then validate the new task. Event Viewer displays the logs from the remote computer that is listed as a Configuration Item in the incident.
 
 ### To create a task
 
@@ -44,7 +45,7 @@ Use the following procedures in Service Manager to create a task—for example, a 
         > [!NOTE]
         > In this release, if you edit and change any of the properties of a task, you have to close and reopen the console before you can view the task.
 
-    2.  Next to the **Target class** area, click the ellipsis button (**…**).
+    2.  Next to the **Target class** area, click the ellipsis button (**ï¿½**).
 
     3.  In the **Choose Class** dialog box, in the **Class** list, click **Incident**, and then click **OK**.
 

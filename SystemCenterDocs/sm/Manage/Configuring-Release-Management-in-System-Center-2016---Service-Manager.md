@@ -1,15 +1,16 @@
 ---
-title: Configuring Release Management in System Center 2016 - Service Manager
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - service-manager
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 29504a71-5574-472c-b930-894d31fe2267
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  bandersmsft
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  Configuring Release Management in System Center 2016   Service Manager
+ms.technology:  service-manager
+ms.assetid:  29504a71-5574-472c-b930-894d31fe2267
 ---
+
 # Configuring Release Management in System Center 2016 - Service Manager
 
 >Applies To: System Center 2016 Technical Preview - Service Manager

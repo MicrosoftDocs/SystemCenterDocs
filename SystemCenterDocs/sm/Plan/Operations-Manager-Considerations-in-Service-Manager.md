@@ -1,15 +1,16 @@
 ---
-title: Operations Manager Considerations in Service Manager
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - service-manager
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 0eb44190-b525-410a-a105-47355f2fccdd
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  bandersmsft
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  Operations Manager Considerations in Service Manager
+ms.technology:  service-manager
+ms.assetid:  0eb44190-b525-410a-a105-47355f2fccdd
 ---
+
 # Operations Manager Considerations in Service Manager
 
 >Applies To: System Center 2016 Technical Preview - Service Manager

@@ -1,15 +1,16 @@
 ---
-title: How to Change the User Credentials for the Operational Database Account
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - service-manager
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 04c4c092-e4e4-4e09-bfed-b3f83bb7ae43
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  bandersmsft
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  How to Change the User Credentials for the Operational Database Account
+ms.technology:  service-manager
+ms.assetid:  04c4c092-e4e4-4e09-bfed-b3f83bb7ae43
 ---
+
 # How to Change the User Credentials for the Operational Database Account
 
 >Applies To: System Center 2016 Technical Preview - Service Manager
@@ -120,7 +121,7 @@ Use the following procedures to make these changes in Service Manager.
 
 4.  Right-click **Logins**, and then click **New Login**.
 
-5.  In the **Login – New** dialog box, in the **Select a page** pane, click **General**, and then click **Search**.
+5.  In the **Login ï¿½ New** dialog box, in the **Select a page** pane, click **General**, and then click **Search**.
 
 6.  In the **Select User or Group** dialog box, complete these steps:
 
@@ -138,7 +139,7 @@ Use the following procedures to make these changes in Service Manager.
 
 3.  In the **Application Pools** pane, right-click **SM_AppPool**, and then click **Advanced Settings**.
 
-4.  In the **Advanced Settings** dialog box, in the **Process Model** area, click **Identity**, and then click the ellipsis (**…**) button.
+4.  In the **Advanced Settings** dialog box, in the **Process Model** area, click **Identity**, and then click the ellipsis (**ï¿½**) button.
 
 5.  In the **Application Pool Identity** dialog box, select **Custom account**, and then click **Set**.
 

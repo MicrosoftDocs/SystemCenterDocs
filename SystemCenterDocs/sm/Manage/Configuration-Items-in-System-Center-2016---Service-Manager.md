@@ -1,15 +1,16 @@
 ---
-title: Configuration Items in System Center 2016 - Service Manager
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - service-manager
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 7e6ab64c-c752-4cee-9057-e4b4413e571d
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  bandersmsft
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  Configuration Items in System Center 2016   Service Manager
+ms.technology:  service-manager
+ms.assetid:  7e6ab64c-c752-4cee-9057-e4b4413e571d
 ---
+
 # Configuration Items in System Center 2016 - Service Manager
 
 >Applies To: System Center 2016 Technical Preview - Service Manager
@@ -20,7 +21,7 @@ A service is a special kind of configuration item that includes both technical a
 
 You can use connectors to import a large number of configuration items from Active Directory Domain Services (AD DS), Configuration Manager, and Operations Manager, or you can manually create single CIs. You can also use the Operations Manager CI connector to import distributed applications in Operations Manager as a service. 
 > [!NOTE]
-> When you open a view to display a large number of items—typically, more than 5,000—the view can take a few minutes to display complete results.
+> When you open a view to display a large number of itemsï¿½typically, more than 5,000ï¿½the view can take a few minutes to display complete results.
 
 
 

@@ -1,15 +1,16 @@
 ---
-title: How to Create a System Center Operations Manager Connector
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - service-manager
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: f435d4b2-e965-4ae6-8f99-c9f00b956937
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  bandersmsft
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  How to Create a System Center Operations Manager Connector
+ms.technology:  service-manager
+ms.assetid:  f435d4b2-e965-4ae6-8f99-c9f00b956937
 ---
+
 # How to Create a System Center Operations Manager Connector
 
 >Applies To: System Center 2016 Technical Preview - Service Manager
@@ -47,7 +48,7 @@ There are two phases for creating the Alert connector. The first part involves c
 
     6.  On the **Server Details** page, click **Test Connection**. If you receive the following confirmation message, click **OK**, and then click **Next**:
 
-        “The connection to the server was successful.”
+        ï¿½The connection to the server was successful.ï¿½
 
     7.  On the **Alert Routing Rules** page, click **Add**.
 
@@ -103,7 +104,7 @@ There are two phases for creating the Alert connector. The first part involves c
 
     4.  On the **Server Details** page, click **Test Connection**. If you receive the following confirmation message, click **OK**, and then click **Next**:
 
-        “The connection to the server was successful.”
+        ï¿½The connection to the server was successful.ï¿½
 
     5.  On the **MP Selection** page, click **Select all**, or select the management packs that define the configuration items you want to import, and then click **Next**.
 

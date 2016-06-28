@@ -1,15 +1,16 @@
 ---
-title: Using the Service Catalog in System Center 2016 - Service Manager
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - service-manager
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 37c13875-a46b-4387-b35a-5d2c8f511f56
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  bandersmsft
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  Using the Service Catalog in System Center 2016   Service Manager
+ms.technology:  service-manager
+ms.assetid:  37c13875-a46b-4387-b35a-5d2c8f511f56
 ---
+
 # Using the Service Catalog in System Center 2016 - Service Manager
 
 >Applies To: System Center 2016 Technical Preview - Service Manager

@@ -1,15 +1,16 @@
 ---
-title: How to View Workflow Success or Failure
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - service-manager
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: eb1f9f39-6d4e-4f8c-b236-c1d3bf90f5f3
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  bandersmsft
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  How to View Workflow Success or Failure
+ms.technology:  service-manager
+ms.assetid:  eb1f9f39-6d4e-4f8c-b236-c1d3bf90f5f3
 ---
+
 # How to View Workflow Success or Failure
 
 >Applies To: System Center 2016 Technical Preview - Service Manager

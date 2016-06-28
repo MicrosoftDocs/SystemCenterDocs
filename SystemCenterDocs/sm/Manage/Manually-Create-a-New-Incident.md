@@ -1,15 +1,16 @@
 ---
-title: Manually Create a New Incident
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology:
-  - service-manager
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 4f5d5399-1014-4587-b10a-773725cd03d4
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  bandersmsft
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  Manually Create a New Incident
+ms.technology:  service-manager
+ms.assetid:  4f5d5399-1014-4587-b10a-773725cd03d4
 ---
+
 # Manually Create a New Incident
 
 >Applies To: System Center 2016 Technical Preview - Service Manager

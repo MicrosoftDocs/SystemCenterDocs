@@ -1,15 +1,16 @@
 ---
-title: How to Set Parent Incident Options
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - service-manager
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 220b9d62-cd3a-4e30-a465-cdd70ca736bc
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  bandersmsft
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  How to Set Parent Incident Options
+ms.technology:  service-manager
+ms.assetid:  220b9d62-cd3a-4e30-a465-cdd70ca736bc
 ---
+
 # How to Set Parent Incident Options
 
 >Applies To: System Center 2016 Technical Preview - Service Manager

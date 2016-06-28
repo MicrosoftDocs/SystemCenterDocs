@@ -1,15 +1,16 @@
 ---
-title: How to Configure Change Management Workflows
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - service-manager
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 8a9d5a24-c13c-4db2-a3b4-6b728a20e3c6
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  bandersmsft
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  How to Configure Change Management Workflows
+ms.technology:  service-manager
+ms.assetid:  8a9d5a24-c13c-4db2-a3b4-6b728a20e3c6
 ---
+
 # How to Configure Change Management Workflows
 
 >Applies To: System Center 2016 Technical Preview - Service Manager

@@ -1,20 +1,21 @@
 ---
-title: SQL Server Requirements for Service Manager
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - service-manager
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 26697203-df1e-4232-b9be-7c9976a362b8
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  bandersmsft
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  SQL Server Requirements for Service Manager
+ms.technology:  service-manager
+ms.assetid:  26697203-df1e-4232-b9be-7c9976a362b8
 ---
+
 # SQL Server Requirements for Service Manager
 
 >Applies To: System Center 2016 Technical Preview - Service Manager
 
-Microsoft® SQL Server® hosts the databases that System Center 2016 Technical Preview - Service Manager creates. In addition, System Center 2016 Technical Preview - Service Manager requires SQL Server Analysis Services (SSAS) to work with Microsoft Online Analytical Processing (OLAP) cubes. SQL Server Reporting Services (SSRS) is required to support System Center 2016 Technical Preview - Service Managerreporting.
+Microsoftï¿½ SQL Serverï¿½ hosts the databases that System Center 2016 Technical Preview - Service Manager creates. In addition, System Center 2016 Technical Preview - Service Manager requires SQL Server Analysis Services (SSAS) to work with Microsoft Online Analytical Processing (OLAP) cubes. SQL Server Reporting Services (SSRS) is required to support System Center 2016 Technical Preview - Service Managerreporting.
 
 All SQL Server requirements are listed at [SQL Server](http://go.microsoft.com/fwlink/?LinkId=268329) and SQL Server editions are listed at [Operating System and Database Edition Support](http://go.microsoft.com/fwlink/?LinkId=268324).
 

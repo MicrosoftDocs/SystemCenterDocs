@@ -1,15 +1,16 @@
 ---
-title: How to Automatically Notify Groups of Users
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - service-manager
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: df903459-18ba-40e7-8896-ad71e4d1a7af
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  bandersmsft
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  How to Automatically Notify Groups of Users
+ms.technology:  service-manager
+ms.assetid:  df903459-18ba-40e7-8896-ad71e4d1a7af
 ---
+
 # How to Automatically Notify Groups of Users
 
 >Applies To: System Center 2016 Technical Preview - Service Manager
@@ -54,7 +55,7 @@ Setting up one of these for each support group will ensure that all your groups 
 
 3.  Click **Add**, and then click **Next** on the **Before you Begin** page.
 
-4.  Give the workflow a name, such as “Incident Created – Email Stakeholders”.
+4.  Give the workflow a name, such as ï¿½Incident Created ï¿½ Email Stakeholdersï¿½.
 
 5.  Leave the default of **When an incident is created** in the **Check for Events** drop-down list.
 

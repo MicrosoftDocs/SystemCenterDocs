@@ -1,15 +1,16 @@
 ---
-title: How to Copy Request Offerings and Service Offerings
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - service-manager
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: ee6ee7cf-23ea-4241-a58f-b6bfba8d2534
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  bandersmsft
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  How to Copy Request Offerings and Service Offerings
+ms.technology:  service-manager
+ms.assetid:  ee6ee7cf-23ea-4241-a58f-b6bfba8d2534
 ---
+
 # How to Copy Request Offerings and Service Offerings
 
 >Applies To: System Center 2016 Technical Preview - Service Manager

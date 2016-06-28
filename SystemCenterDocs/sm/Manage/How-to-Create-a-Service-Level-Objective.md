@@ -1,15 +1,16 @@
 ---
-title: How to Create a Service Level Objective
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - service-manager
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 703da8fd-217f-4cba-bb5c-56b7f06c34e1
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  bandersmsft
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  How to Create a Service Level Objective
+ms.technology:  service-manager
+ms.assetid:  703da8fd-217f-4cba-bb5c-56b7f06c34e1
 ---
+
 # How to Create a Service Level Objective
 
 >Applies To: System Center 2016 Technical Preview - Service Manager

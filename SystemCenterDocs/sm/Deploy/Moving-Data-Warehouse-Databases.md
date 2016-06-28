@@ -1,15 +1,16 @@
 ---
-title: Moving Data Warehouse Databases
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - service-manager
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 1e9a5425-b8e8-4681-9498-89538a558fc4
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  bandersmsft
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  Moving Data Warehouse Databases
+ms.technology:  service-manager
+ms.assetid:  1e9a5425-b8e8-4681-9498-89538a558fc4
 ---
+
 # Moving Data Warehouse Databases
 
 >Applies To: System Center 2016 Technical Preview - Service Manager
@@ -159,8 +160,8 @@ Use the following procedures to locate the user accounts and instances of SQL Se
     > Replace <DWServerName> with the name of your data warehouse management server.
 
     ```
-    $class\= get\-scclass –Name Microsoft.SystemCenter.ResourceAccessLayer.ASResourceStore –ComputerName <DWServerName>
-    $OLAPServer\= get\-scclassinstance –class $class –ComputerName <DWServerName>
+    $class\= get\-scclass ï¿½Name Microsoft.SystemCenter.ResourceAccessLayer.ASResourceStore ï¿½ComputerName <DWServerName>
+    $OLAPServer\= get\-scclassinstance ï¿½class $class ï¿½ComputerName <DWServerName>
     $OLAPServer.Server
     ```
 
@@ -179,9 +180,9 @@ Use the following procedures to locate the user accounts and instances of SQL Se
 
     5.  Expand the **Data Sources** folder, and then double-click **CMDataMart**.
 
-    6.  In the **Data Source Properties – CMDataMart** dialog box, note the value of **Connection String**.
+    6.  In the **Data Source Properties ï¿½ CMDataMart** dialog box, note the value of **Connection String**.
 
-    7.  Under **Security Settings**, click **Impersonation Account**, and then click the properties button (…), to open the **Impersonation Information** dialog box.
+    7.  Under **Security Settings**, click **Impersonation Account**, and then click the properties button (ï¿½), to open the **Impersonation Information** dialog box.
 
     8.  In the **Impersonation Information** dialog box, note the user name.
 
@@ -599,11 +600,11 @@ Use the following procedure to update the connection strings for the data source
 
 6.  Expand **Data Sources**, and then double-click **CMDataMart**.
 
-7.  In the **Data Source Properties – CMDataMart** dialog box, select **Connection string Provider=SQLNCLI10.1;Data Source=<servername>;Integrated Security=SSPI;Initial Catalog=CMDWDataMart**.
+7.  In the **Data Source Properties ï¿½ CMDataMart** dialog box, select **Connection string Provider=SQLNCLI10.1;Data Source=<servername>;Integrated Security=SSPI;Initial Catalog=CMDWDataMart**.
 
 8.  Replace <servername> with the name of the computer running SQL Server that hosts the CMDWDataMart database.
 
-9. You need to re-enter the impersonation account password when you’ve completed updating the Data Source server. Select the ellipsis button to the right of **ImpersonateAccount** and then add the password in the **Impersonation Information** dialog box. Click **OK** to accept the changes.
+9. You need to re-enter the impersonation account password when youï¿½ve completed updating the Data Source server. Select the ellipsis button to the right of **ImpersonateAccount** and then add the password in the **Impersonation Information** dialog box. Click **OK** to accept the changes.
 
 10. Repeat the previous steps to update the connection strings for the DWDataMart and OMDataMart data sources.
 

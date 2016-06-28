@@ -1,15 +1,16 @@
 ---
-title: Importing Data from System Center Configuration Manager
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - service-manager
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: abaf3337-f620-4220-bbbb-13007dc72754
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  bandersmsft
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  Importing Data from System Center Configuration Manager
+ms.technology:  service-manager
+ms.assetid:  abaf3337-f620-4220-bbbb-13007dc72754
 ---
+
 # Importing Data from System Center Configuration Manager
 
 >Applies To: System Center 2016 Technical Preview - Service Manager

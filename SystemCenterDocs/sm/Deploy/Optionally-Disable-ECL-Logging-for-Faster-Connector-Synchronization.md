@@ -1,15 +1,16 @@
 ---
-title: Optionally Disable ECL Logging for Faster Connector Synchronization
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology:
-  - service-manager
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 805b479a-9312-4039-be44-01dda07086d8
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  bandersmsft
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  Optionally Disable ECL Logging for Faster Connector Synchronization
+ms.technology:  service-manager
+ms.assetid:  805b479a-9312-4039-be44-01dda07086d8
 ---
+
 # Optionally Disable ECL Logging for Faster Connector Synchronization
 
 >Applies To: System Center 2016 Technical Preview - Service Manager
@@ -73,3 +74,4 @@ You can read the *ECL logging disable for SCCM and AD connector* status with the
     ```
 ### To re-enable ECL logging
 - Replace the value `1` in the previous procedure with `0` and run the command.  
+

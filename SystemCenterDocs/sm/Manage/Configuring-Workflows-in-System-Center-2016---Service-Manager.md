@@ -1,15 +1,16 @@
 ---
-title: Configuring Workflows in System Center 2016 - Service Manager
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - service-manager
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: b204c2fc-c65e-41f3-a650-e425060f61b3
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  bandersmsft
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  Configuring Workflows in System Center 2016   Service Manager
+ms.technology:  service-manager
+ms.assetid:  b204c2fc-c65e-41f3-a650-e425060f61b3
 ---
+
 # Configuring Workflows in System Center 2016 - Service Manager
 
 >Applies To: System Center 2016 Technical Preview - Service Manager

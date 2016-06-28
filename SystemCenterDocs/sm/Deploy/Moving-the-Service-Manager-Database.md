@@ -1,15 +1,16 @@
 ---
-title: Moving the Service Manager Database
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - service-manager
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 0c83c9a4-720f-4327-98b9-16dca71a13b2
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  bandersmsft
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  Moving the Service Manager Database
+ms.technology:  service-manager
+ms.assetid:  0c83c9a4-720f-4327-98b9-16dca71a13b2
 ---
+
 # Moving the Service Manager Database
 
 >Applies To: System Center 2016 Technical Preview - Service Manager

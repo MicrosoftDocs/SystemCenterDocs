@@ -1,15 +1,16 @@
 ---
-title: How to Import Configuration Items from a CSV File
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - service-manager
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: b4d69a52-baed-4c59-8052-6b012ce25632
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  bandersmsft
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  How to Import Configuration Items from a CSV File
+ms.technology:  service-manager
+ms.assetid:  b4d69a52-baed-4c59-8052-6b012ce25632
 ---
+
 # How to Import Configuration Items from a CSV File
 
 >Applies To: System Center 2016 Technical Preview - Service Manager

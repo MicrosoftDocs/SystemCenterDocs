@@ -1,15 +1,16 @@
 ---
-title: How to Change the Workflow Run As Account Credentials
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - service-manager
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: a3b4abd2-a00d-47d8-a578-c54fb32eda21
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  bandersmsft
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  How to Change the Workflow Run As Account Credentials
+ms.technology:  service-manager
+ms.assetid:  a3b4abd2-a00d-47d8-a578-c54fb32eda21
 ---
+
 # How to Change the Workflow Run As Account Credentials
 
 >Applies To: System Center 2016 Technical Preview - Service Manager

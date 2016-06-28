@@ -1,15 +1,16 @@
 ---
-title: How to Install the Service Manager Management Server (Two-Computer Scenario)
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - service-manager
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: ae34217b-d394-46d9-ab3b-96dacef2dbd4
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  bandersmsft
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  How to Install the Service Manager Management Server  Two Computer Scenario 
+ms.technology:  service-manager
+ms.assetid:  ae34217b-d394-46d9-ab3b-96dacef2dbd4
 ---
+
 # How to Install the Service Manager Management Server (Two-Computer Scenario)
 As the first step in the two-computer installation process, install the Service Manager management server, the Service Manager database, and the Service Manager console on one of the two computers.
 
