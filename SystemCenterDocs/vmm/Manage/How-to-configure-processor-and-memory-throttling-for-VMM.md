@@ -1,12 +1,16 @@
 ---
-title: How to configure processor and memory throttling for VMM
-ms.custom: na
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 9dce4d4a-949f-4e5f-a56e-715dfc2fd535
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  rayne-wiselman
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  How to configure processor and memory throttling for VMM
+ms.technology:  virtual-machine-manager
+ms.assetid:  9dce4d4a-949f-4e5f-a56e-715dfc2fd535
 ---
+
 # How to configure processor and memory throttling for VMM
 
 >Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
@@ -21,13 +25,13 @@ For more information about processor and memory throttling, see [Configuring res
 
 2.  Select a priority value for the virtual machine. These values specify how the CPU resources are balanced between virtual machine, and correspond to the relative weight value in Hyper-V:
 
-    -   High—Relative weight value of 200
+    -   Highï¿½Relative weight value of 200
 
-    -   Normal—Relative weight value of 100
+    -   Normalï¿½Relative weight value of 100
 
-    -   Low—Relative weight value of 50
+    -   Lowï¿½Relative weight value of 50
 
-    -   Custom—Relative weight values that are supported are between 1 and 10000
+    -   Customï¿½Relative weight values that are supported are between 1 and 10000
 
 3.  In **Reserve CPU cycles (%)**, specify the percentage of the CPU resources on one logical processor that should be reserved for a virtual machine. This is useful when a virtual machine runs applications that are particularly CPU-intensive, and you want to ensure a minimal level of CPU resources. A zero setting indicates that no specific CPU percentage is reserved.
 

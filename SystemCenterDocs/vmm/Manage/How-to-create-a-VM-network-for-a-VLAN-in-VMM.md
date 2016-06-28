@@ -1,15 +1,16 @@
 ---
-title: How to create a VM network for a VLAN in VMM
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - virtual-machine-manager
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: dba9273e-008e-4f21-a3cf-52f9b1530f60
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  rayne-wiselman
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  How to create a VM network for a VLAN in VMM
+ms.technology:  virtual-machine-manager
+ms.assetid:  dba9273e-008e-4f21-a3cf-52f9b1530f60
 ---
+
 # How to create a VM network for a VLAN in VMM
 
 >Applies To: System Center 2016 Technical Preview - Virtual Machine Manager

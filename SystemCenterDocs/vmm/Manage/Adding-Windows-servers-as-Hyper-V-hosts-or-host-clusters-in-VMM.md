@@ -1,15 +1,16 @@
 ---
-title: Adding Windows servers as Hyper-V hosts or host clusters in VMM
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - virtual-machine-manager
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 6b6a008d-0139-47af-8804-ed0ff75e5e88
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  rayne-wiselman
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  Adding Windows servers as Hyper V hosts or host clusters in VMM
+ms.technology:  virtual-machine-manager
+ms.assetid:  6b6a008d-0139-47af-8804-ed0ff75e5e88
 ---
+
 # Adding Windows servers as Hyper-V hosts or host clusters in VMM
 
 >Applies To: System Center 2016 Technical Preview - Virtual Machine Manager

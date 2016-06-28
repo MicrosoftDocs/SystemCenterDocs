@@ -1,12 +1,16 @@
 ---
-title: How to disable and enable Run As accounts in VMM
-ms.custom: na
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 2a631141-cf10-4200-94ed-f539098d73cd
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  rayne-wiselman
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  How to disable and enable Run As accounts in VMM
+ms.technology:  virtual-machine-manager
+ms.assetid:  2a631141-cf10-4200-94ed-f539098d73cd
 ---
+
 # How to disable and enable Run As accounts in VMM
 
 >Applies To: System Center 2016 Technical Preview - Virtual Machine Manager

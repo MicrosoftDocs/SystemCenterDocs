@@ -1,14 +1,16 @@
 ---
-title: How to configure network settings on a VMware ESX host in VMM
-ms.custom: na
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - virtual-machine-manager
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: c391296f-7c63-4e56-9597-92d4616c4fc2
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  rayne-wiselman
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  How to configure network settings on a VMware ESX host in VMM
+ms.technology:  virtual-machine-manager
+ms.assetid:  c391296f-7c63-4e56-9597-92d4616c4fc2
 ---
+
 # How to configure network settings on a VMware ESX host in VMM
 
 >Applies To: System Center 2016 Technical Preview - Virtual Machine Manager

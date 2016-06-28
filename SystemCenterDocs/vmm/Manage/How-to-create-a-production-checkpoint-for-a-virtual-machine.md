@@ -1,20 +1,21 @@
 ---
-title: How to create a production checkpoint for a virtual machine
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - virtual-machine-manager
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 2722cbea-1c98-4574-913a-d09d87bc8ece
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  rayne-wiselman
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  How to create a production checkpoint for a virtual machine
+ms.technology:  virtual-machine-manager
+ms.assetid:  2722cbea-1c98-4574-913a-d09d87bc8ece
 ---
+
 # How to create a production checkpoint for a virtual machine
 
 >Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
 
-Production checkpoints allow you to easily create “point in time” images of a virtual machine which can then be restored later. This is achieved by using backup technology inside the guest to create the checkpoint instead of using saved state technology. On a virtual machine running a Windows operating system production checkpoints are created with the Volume Snapshot Service (VSS). Linux virtual machines flush their file system buffers to create a file system consistent checkpoint. If you want to create checkpoints using saved state technology you can still choose to use standard checkpoints for your virtual machine. 
+Production checkpoints allow you to easily create ï¿½point in timeï¿½ images of a virtual machine which can then be restored later. This is achieved by using backup technology inside the guest to create the checkpoint instead of using saved state technology. On a virtual machine running a Windows operating system production checkpoints are created with the Volume Snapshot Service (VSS). Linux virtual machines flush their file system buffers to create a file system consistent checkpoint. If you want to create checkpoints using saved state technology you can still choose to use standard checkpoints for your virtual machine. 
 ## Production Checkpoints in Hyper-V 
 You can set one of the following four types of checkpoints for a virtual machine hosted by Hyper-V Server Role in Windows Server 2016:
 1. **Disabled:** when the checkpoint for the VM is disabled no checkpoint will be taken.
@@ -27,7 +28,7 @@ You can set one of the following four types of checkpoints for a virtual machine
 
 You can set the checkpoint with the following PowerShell command:
 
-  Set-SCVirtualMachine –CheckpointType (Disabled, Production, ProductionOnly, Standard)
+  Set-SCVirtualMachine ï¿½CheckpointType (Disabled, Production, ProductionOnly, Standard)
   
   The following screenshot fom the VMM Console illustrates the fields to set for creating a Production Checkpoint
   ![VMM Production Checkpoint ScreenImage/VMM-Production-Checkpoint-Screen.png)

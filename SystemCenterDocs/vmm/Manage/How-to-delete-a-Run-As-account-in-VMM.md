@@ -1,12 +1,16 @@
 ---
-title: How to delete a Run As account in VMM
-ms.custom: na
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 0097ed16-d9c3-4af4-9d14-7abd73afcbc1
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  rayne-wiselman
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  How to delete a Run As account in VMM
+ms.technology:  virtual-machine-manager
+ms.assetid:  0097ed16-d9c3-4af4-9d14-7abd73afcbc1
 ---
+
 # How to delete a Run As account in VMM
 
 >Applies To: System Center 2016 Technical Preview - Virtual Machine Manager

@@ -1,15 +1,16 @@
 ---
-title: VMM networking reference: creating an uplink port profile in VMM
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - virtual-machine-manager
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 25392668-5bc2-42ea-b6ea-293a191b57fa
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  rayne-wiselman
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  VMM networking reference  creating an uplink port profile in VMM
+ms.technology:  virtual-machine-manager
+ms.assetid:  25392668-5bc2-42ea-b6ea-293a191b57fa
 ---
+
 # VMM networking reference: creating an uplink port profile in VMM
 
 >Applies To: System Center 2016 Technical Preview - Virtual Machine Manager

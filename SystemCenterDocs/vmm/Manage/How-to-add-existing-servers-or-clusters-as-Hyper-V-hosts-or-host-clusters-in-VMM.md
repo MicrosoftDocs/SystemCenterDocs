@@ -1,15 +1,16 @@
 ---
-title: How to add existing servers or clusters as Hyper-V hosts or host clusters in VMM
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - virtual-machine-manager
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: c02fa3c2-fd4b-4479-abec-92d40bf00fd6
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  rayne-wiselman
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  How to add existing servers or clusters as Hyper V hosts or host clusters in VMM
+ms.technology:  virtual-machine-manager
+ms.assetid:  c02fa3c2-fd4b-4479-abec-92d40bf00fd6
 ---
+
 # How to add existing servers or clusters as Hyper-V hosts or host clusters in VMM
 
 >Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
@@ -29,7 +30,7 @@ You can use this procedure for servers or clusters regardless of whether the Hyp
 
     The Add Resource Wizard starts.
 
-4.  On the **Resource location** page, the option that corresponds to your servers—trusted domain, untrusted domain, or disjointed namespace—and then click **Next**.
+4.  On the **Resource location** page, the option that corresponds to your serversï¿½trusted domain, untrusted domain, or disjointed namespaceï¿½and then click **Next**.
 
 5.  On the **Credentials** page, enter the credentials for a domain account that has administrative permissions on all hosts that you want to add, and then click **Next**. (For computers in an untrusted domain, you must use a Run As account.)
 

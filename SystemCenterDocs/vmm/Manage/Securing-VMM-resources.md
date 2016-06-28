@@ -1,12 +1,16 @@
 ---
-title: Securing VMM resources
-ms.custom: na
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: ac30d975-458d-41c9-b606-de33ac36832a
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  rayne-wiselman
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  Securing VMM resources
+ms.technology:  virtual-machine-manager
+ms.assetid:  ac30d975-458d-41c9-b606-de33ac36832a
 ---
+
 # Securing VMM resources
 
 >Applies To: System Center 2016 Technical Preview - Virtual Machine Manager

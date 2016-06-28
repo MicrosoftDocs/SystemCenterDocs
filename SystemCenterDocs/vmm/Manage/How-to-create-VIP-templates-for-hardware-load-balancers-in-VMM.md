@@ -1,15 +1,16 @@
 ---
-title: How to create VIP templates for hardware load balancers in VMM
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - virtual-machine-manager
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 189f12a2-ee3b-49c1-ba78-7aa6d829da10
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  rayne-wiselman
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  How to create VIP templates for hardware load balancers in VMM
+ms.technology:  virtual-machine-manager
+ms.assetid:  189f12a2-ee3b-49c1-ba78-7aa6d829da10
 ---
+
 # How to create VIP templates for hardware load balancers in VMM
 
 >Applies To: System Center 2016 Technical Preview - Virtual Machine Manager

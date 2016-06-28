@@ -1,12 +1,16 @@
 ---
-title: How to create a private cloud from host groups in VMM
-ms.custom: na
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: f34d577d-8e99-4fee-98ab-055d747c3745
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  rayne-wiselman
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  How to create a private cloud from host groups in VMM
+ms.technology:  virtual-machine-manager
+ms.assetid:  f34d577d-8e99-4fee-98ab-055d747c3745
 ---
+
 # How to create a private cloud from host groups in VMM
 
 >Applies To: System Center 2016 Technical Preview - Virtual Machine Manager

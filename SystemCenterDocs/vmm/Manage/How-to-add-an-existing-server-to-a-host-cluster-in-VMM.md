@@ -1,15 +1,16 @@
 ---
-title: How to add an existing server to a host cluster in VMM
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - virtual-machine-manager
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 6ea976dc-f64c-4a78-858f-f18e33eb3acf
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  rayne-wiselman
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  How to add an existing server to a host cluster in VMM
+ms.technology:  virtual-machine-manager
+ms.assetid:  6ea976dc-f64c-4a78-858f-f18e33eb3acf
 ---
+
 # How to add an existing server to a host cluster in VMM
 
 >Applies To: System Center 2016 Technical Preview - Virtual Machine Manager

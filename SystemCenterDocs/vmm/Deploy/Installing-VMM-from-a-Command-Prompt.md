@@ -1,15 +1,16 @@
 ---
-title: Installing VMM from a Command Prompt
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - virtual-machine-manager
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 84b45ef1-bb8a-48f8-a2d7-5a93157ffc78
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  rayne-wiselman
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  Installing VMM from a Command Prompt
+ms.technology:  virtual-machine-manager
+ms.assetid:  84b45ef1-bb8a-48f8-a2d7-5a93157ffc78
 ---
+
 # Installing VMM from a Command Prompt
 
 >Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
@@ -308,7 +309,7 @@ ms.assetid: 84b45ef1-bb8a-48f8-a2d7-5a93157ffc78
                   <para>TopContainerName</para>
                 </TD>
                 <TD>
-                  <para>Container for Distributed Key Management (DKM); for example, “CN=DKM,DC=contoso,DC=com”. </para>
+                  <para>Container for Distributed Key Management (DKM); for example, ï¿½CN=DKM,DC=contoso,DC=comï¿½. </para>
                   <para>For more information about DKM, see <link xlink:href="1238b5b8-98fc-4c2b-bdb5-253e4e1b3baa">Configuring Distributed Key Management in VMM</link>.</para>
                 </TD>
                 <TD>

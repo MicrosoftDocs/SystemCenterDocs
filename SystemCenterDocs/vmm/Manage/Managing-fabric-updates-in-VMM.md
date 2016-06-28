@@ -1,12 +1,16 @@
 ---
-title: Managing fabric updates in VMM
-ms.custom: na
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: b327b3ad-b820-4852-8144-c4d326a66dc4
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  rayne-wiselman
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  Managing fabric updates in VMM
+ms.technology:  virtual-machine-manager
+ms.assetid:  b327b3ad-b820-4852-8144-c4d326a66dc4
 ---
+
 # Managing fabric updates in VMM
 
 >Applies To: System Center 2016 Technical Preview - Virtual Machine Manager

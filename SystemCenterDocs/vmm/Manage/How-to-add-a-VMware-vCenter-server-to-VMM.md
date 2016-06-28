@@ -1,14 +1,16 @@
 ---
-title: How to add a VMware vCenter server to VMM
-ms.custom: na
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - virtual-machine-manager
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: b6c8942f-84f6-4ebf-9d5a-be30d3b92892
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  rayne-wiselman
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  How to add a VMware vCenter server to VMM
+ms.technology:  virtual-machine-manager
+ms.assetid:  b6c8942f-84f6-4ebf-9d5a-be30d3b92892
 ---
+
 # How to add a VMware vCenter server to VMM
 
 >Applies To: System Center 2016 Technical Preview - Virtual Machine Manager

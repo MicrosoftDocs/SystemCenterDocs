@@ -1,15 +1,16 @@
 ---
-title: Configuring storage using Scale-Out File Servers in VMM
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - virtual-machine-manager
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 98fa48a6-c974-4563-be89-a1e692dff5f3
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  rayne-wiselman
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  Configuring storage using Scale Out File Servers in VMM
+ms.technology:  virtual-machine-manager
+ms.assetid:  98fa48a6-c974-4563-be89-a1e692dff5f3
 ---
+
 # Configuring storage using Scale-Out File Servers in VMM
 
 >Applies To: System Center 2016 Technical Preview - Virtual Machine Manager

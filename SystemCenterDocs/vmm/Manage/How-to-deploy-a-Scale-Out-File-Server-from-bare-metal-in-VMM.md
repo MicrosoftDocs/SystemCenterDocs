@@ -1,17 +1,21 @@
 ---
-title: How to deploy a Scale-Out File Server from bare metal in VMM
-ms.custom: na
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: a13a8ace-ccc8-4ecc-ba69-b2c9fb05c9c4
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  rayne-wiselman
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  How to deploy a Scale Out File Server from bare metal in VMM
+ms.technology:  virtual-machine-manager
+ms.assetid:  a13a8ace-ccc8-4ecc-ba69-b2c9fb05c9c4
 ---
+
 # How to deploy a Scale-Out File Server from bare metal in VMM
 
 >Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
 
-You can use Virtual Machine Manager (VMM) to deploy a Scale-Out File Server, either to “bare-metal computers” (no operating system installed), or computers with an installed operating system that will be overwritten during the process. For this deployment, VMM does the following:
+You can use Virtual Machine Manager (VMM) to deploy a Scale-Out File Server, either to ï¿½bare-metal computersï¿½ (no operating system installed), or computers with an installed operating system that will be overwritten during the process. For this deployment, VMM does the following:
 
 1.  Discovers the physical computers through out-of-band management
 

@@ -1,14 +1,16 @@
 ---
-title: How to use VMM to convert VMware virtual machines to Hyper-V (V2V)
-ms.custom: na
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - virtual-machine-manager
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 4deab84b-42c2-43c7-b528-3420925cbdcd
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  rayne-wiselman
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  How to use VMM to convert VMware virtual machines to Hyper V  V2V 
+ms.technology:  virtual-machine-manager
+ms.assetid:  4deab84b-42c2-43c7-b528-3420925cbdcd
 ---
+
 # How to use VMM to convert VMware virtual machines to Hyper-V (V2V)
 You can use the following procedure to convert a VMware virtual machine to a Hyper-V virtual machine through the virtual-to-virtual (V2V) machine conversion process in Virtual Machine Manager (VMM). The source virtual machine can be stored in the VMM library or managed by a VMware ESX host.
 

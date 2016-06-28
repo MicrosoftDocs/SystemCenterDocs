@@ -1,12 +1,16 @@
 ---
-title: How to select a method for creating logical units in VMM
-ms.custom: na
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 7926fd47-a33a-46fa-8adb-a797d52f0d20
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  rayne-wiselman
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  How to select a method for creating logical units in VMM
+ms.technology:  virtual-machine-manager
+ms.assetid:  7926fd47-a33a-46fa-8adb-a797d52f0d20
 ---
+
 # How to select a method for creating logical units in VMM
 
 >Applies To: System Center 2016 Technical Preview - Virtual Machine Manager

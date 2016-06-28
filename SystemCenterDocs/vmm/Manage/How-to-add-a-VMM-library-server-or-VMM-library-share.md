@@ -1,12 +1,16 @@
 ---
-title: How to add a VMM library server or VMM library share
-ms.custom: na
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: bb288be0-b213-4066-a0bb-dae7b439c645
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  rayne-wiselman
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  How to add a VMM library server or VMM library share
+ms.technology:  virtual-machine-manager
+ms.assetid:  bb288be0-b213-4066-a0bb-dae7b439c645
 ---
+
 # How to add a VMM library server or VMM library share
 
 >Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
