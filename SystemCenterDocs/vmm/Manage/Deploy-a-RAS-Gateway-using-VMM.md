@@ -5,7 +5,7 @@ ms.prod: system-center-threshold
 ms.reviewer: na
 ms.service: virtual-network
 ms.suite: na
-ms.technology: 
+ms.technology:
   - techgroup-networking
 ms.tgt_pltfrm: na
 ms.topic: article
@@ -26,19 +26,19 @@ A RAS Gateway is a data path element in SDN that enables Site-to-site (S2S) conn
 
 Before you get into the details of RAS Gateway deployment, ensure you have performed following steps:
 
-* Deploy Network Controller 
+* Deploy Network Controller
 
   This topic assumes you already deployed the network controller using VMM. If you have a network controller deployed, you have the basic compute and network infrastructure in place to proceed with the RAS Gateway deployment.
 
   For more information about deploying a network controller using VMM, see [Deploy a Network Controller using VMM](Deploy-a-Network-Controller-using-VMM.md).
 
-* Deploy Software Load Balancer 
+* Deploy Software Load Balancer
 
-  Although it’s not required to deploy a Software Load Balancer (SLB) before you deploy a RAS Gateway, for the purpose of simplicity and preview validation, it is recommended that you deploy and on-board an SLB before proceeding further in this topic. With an SLB along with a RAS Gateway in your environment you can use and validate an IPSec connection type.
+  Although it's not required to deploy a Software Load Balancer (SLB) before you deploy a RAS Gateway, for the purpose of simplicity and preview validation, it is recommended that you deploy and on-board an SLB before proceeding further in this topic. With an SLB along with a RAS Gateway in your environment you can use and validate an IPSec connection type.
 
   For more information about SLB deployment, see [Deploy a Software Load Balancer using VMM ](Deploy-a-Software-Load-Balancer-using-VMM.md).
 
-  If you haven’t deployed an SLB yet, please refer to the SLB deployment topic and come back to this section  when done.
+  If you haven't deployed an SLB yet, please refer to the SLB deployment topic and come back to this section  when done.
 
 ## Setup
 
@@ -88,7 +88,8 @@ The GRE VIP network is a subnet that exists solely for defining VIPs that are as
 3.  Accept the default network site and click **Next**.
 
 4.  Choose a starting and ending IP address for your range.
-    >[!IMPORTANT] Start your range on the fourth addresses of your available subnet. For example, if your available subnet is from .1 to .254, start your range at .4.
+    >[!IMPORTANT]
+    Start your range on the fourth addresses of your available subnet. For example, if your available subnet is from .1 to .254, start your range at .4.
 
 5.  In the **IP addresses reserved for load balancer VIPs** box, type the IP addresses range in the subnet. This should match the range you used for starting and ending IP addresses.
 
@@ -96,7 +97,8 @@ The GRE VIP network is a subnet that exists solely for defining VIPs that are as
 
 7.  Review the summary information and complete the wizard.
 
->[!IMPORTANT]You shouldn't advertise your GRE VIP pool to the SLBM. If you do, you may break your gateway connectivity. 
+>[!IMPORTANT]
+    You shouldn't advertise your GRE VIP pool to the SLBM. If you do, you may break your gateway connectivity.
 
 ## Deployment
 Now you can deploy a gateway using a VMM Service Template.
@@ -139,9 +141,9 @@ Use the following procedure to deploy a Gateway service instance.
 
 2.  In the Network Settings section, you must map the networks as follows.
 
-      | **Network setting** | **Value**                              |
-      |---------------------|----------------------------------------|
-      | Management Network  | Map this to your Management VM network |
+| **Network setting** | **Value**                              |
+|---------------------|----------------------------------------|
+| Management Network  | Map this to your Management VM network |
 
 3.  Click **OK**.
 
@@ -161,7 +163,8 @@ Use the following procedure to deploy a Gateway service instance.
 
 After you configure these settings, you can click **Deploy Service** to begin the service deployment job. Deployment times will vary depending on your hardware but are typically between 30 and 60 minutes.
 
->[!IMPORTANT]If you are not using a Volume Licensed VHDX or if the VHDX is not supplied the Product Key using an Answer file, then the deployment will stop at the Product Key page during SLB/MUX virtual machine(s) provisioning. You need to manually access the virtual machine(s) desktop and either skip entering the product key or enter the product key if you have it handy.
+>[!IMPORTANT]
+If you are not using a Volume Licensed VHDX or if the VHDX is not supplied the Product Key using an Answer file, then the deployment will stop at the Product Key page during SLB/MUX virtual machine(s) provisioning. You need to manually access the virtual machine(s) desktop and either skip entering the product key or enter the product key if you have it handy.
 
 If the gateway deployment fails, ensure you delete the failed instance of the service using the following steps before you retry the gateway deployment.
 
@@ -195,7 +198,7 @@ Now that the gateway service is deployed, you can configure its properties and a
 
 9.  In **Public IPv4 pool**, select the Public IP Pool you configured during the SLB deployment.
 
-10. **Public IPv4 address**, provide an IP address from the previous pool, and ensure you don’t select the initial 3 IP addressed from the range.
+10. **Public IPv4 address**, provide an IP address from the previous pool, and ensure you don't select the initial 3 IP addressed from the range.
 
 11. Configure the Gateway Capacity in **Gateway Capacity** field.
 
@@ -211,11 +214,11 @@ Now that the gateway service is deployed, you can configure its properties and a
 
 14. Click **OK**
 
-    ![VMM gateway service propertiesImage/VMM-gateway-service-properties.png)
+    ![VMM gateway service properties](../../media/VMM-gateway-service-properties.png)
 
 The Service instance that you deployed is now associated with the Gateway Manager role, and you should see the gateway virtual machine instance listed under the Gateway Manager role.
 
-### Configure and validate Gateway connection types 
+### Configure and validate Gateway connection types
 
 As a quick validation step, you can also try to access the following URL from a browser on your VMM Server:
 >
@@ -238,25 +241,25 @@ A S2S IPSec connection allows you to securely access remote virtual machines and
 5.  Click **Add** and select the **IPSec** type connection.
 6.  Type a subnet as shown in the following diagram. This subnet is used to route packets out of the VM Network. This subnet need not be pre-configured in your datacenter.
 
-    ![VMM routing subnetImage/VMM-routing-subnet.png)
+    ![VMM routing subnet](../../media/VMM-routing-subnet.png)
 7.  Type a connection name of your choice. The name used in the example screenshot is **TP5_IPSEC**.
 8.  Type the IP address of the Remote endpoint.
 9.  Optionally, you can also configure bandwidth settings on this screen.
 10. Select the **Authentication** tab.
-11. Choose your preferred authentication method for the connection. 
+11. Choose your preferred authentication method for the connection.
 
-If you choose the authentication using ‘Run As Account’, then you need to create a user account with the username of your choice and the IPSec key as the password for the account. Browse and select this account as your Run As Account.
+  If you choose the authentication using ï¿½Run As Accountï¿½, then you need to create a user account with the username of your choice and the IPSec key as the password for the account. Browse and select this account as your Run As Account.
 12. Select the **Routes** tab.
 13. Type all the remote subnets that you need to connect to.
 
-If you selected **Enable Border Gateway Protocol (BGP)** on the **Connectivity** tab then you can leave this screen blank and instead fill out your ASN, peer BGP IP and its ASN on the **Border Gateway Protocol** tab as shown below:
-    
-    ![VMM BGPImage/VMM-BGP.png)
+  If you selected **Enable Border Gateway Protocol (BGP)** on the **Connectivity** tab then you can leave this screen blank and instead fill out your ASN, peer BGP IP and its ASN on the **Border Gateway Protocol** tab as shown below:
+
+  ![VMM BGPImage](../../media/VMM-BGP.png)
 
 14. Select the **Advanced** tab. Accept  the default settings and click **OK**.
 
 To validate that your S2S IPSec connection is configured properly, try to ping the remote endpoint IP address from one of the virtual machines on your VM Network.
- 
+
 #### To validate S2S GRE connections
 
 A S2S GRE connection allows you to access remote virtual machines and services from your datacenter. Use the following steps to configure a S2S GRE connection:
@@ -269,7 +272,7 @@ A S2S GRE connection allows you to access remote virtual machines and services f
 6.  Click **Add** and then select **GRE** type connection.
 7.  Type a subnet as shown in the following diagram. This subnet is used to route packets out of the VM Network. This subnet does not need to be preconfigured in your datacenter.
 
-    ![VMM routing subnet 2Image/VMM-routing-subnet-2.png)
+    ![VMM routing subnet 2](../../media/VMM-routing-subnet-2.png)
 
 8.  Type a connection name. The name used in the example screenshot is **TP5_GRE**.
 9.  Type the IP address of the Remote endpoint.
@@ -300,7 +303,7 @@ To configure an L3 connection, use the following sample PowerShell script. You m
     # Name of the VM network to create gateway
     $VmNetworkName,
     [Parameter(Mandatory=$true)]
-    # Name of the Next Hop one connected VM network 
+    # Name of the Next Hop one connected VM network
     # used for forwarding
     $NextHopVmNetworkName,
     [Parameter(Mandatory=$true)]
@@ -341,9 +344,6 @@ To configure an L3 connection, use the following sample PowerShell script. You m
 
     foreach($route in $RoutingSubnets)
     {
-        Add-SCNetworkRoute -IPSubnet $route -RunAsynchronously -VPNConnection $vpnConnection 
+        Add-SCNetworkRoute -IPSubnet $route -RunAsynchronously -VPNConnection $vpnConnection
             -VMNetworkGateway $VmNetworkGateway
     }
-
-
-

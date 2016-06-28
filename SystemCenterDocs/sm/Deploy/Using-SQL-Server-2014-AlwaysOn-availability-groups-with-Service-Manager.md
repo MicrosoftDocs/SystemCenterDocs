@@ -4,7 +4,7 @@ ms.custom: na
 ms.prod: system-center-threshold
 ms.reviewer: na
 ms.suite: na
-ms.technology: 
+ms.technology:
   - service-manager
 ms.tgt_pltfrm: na
 ms.topic: article
@@ -18,7 +18,8 @@ The information in this topic provides tasks that you need to perform in order f
 
 However, this information is not intended to provide detailed instructions on how to configure a SQL Server 2014 AlwaysOn Availability Group. Additionally, Service Manager does not support setting the MultiSubnetFailover parameter. This parameter is not used in Service Manager connection strings.
 
->[!IMPORTANT] Service Manager does not support a topology where the reporting and analysis server database is configured as part of the AlwaysOn Availability Group.
+>[!IMPORTANT]
+Service Manager does not support a topology where the reporting and analysis server database is configured as part of the AlwaysOn Availability Group.
 
 ## SQL Server 2014 AlwaysOn supported Service Manager databases
 
@@ -54,10 +55,8 @@ Use the following series of tasks when using an existing management group with a
 2. Create an availability group listener(AGL) and choose an appropriate port number. Avoid the default port 1433. For example: AGL name = SMListener and AGL Port = 5122
 3. Open the inbound port for the SQL Server instance and AGL on each computer running SQL Server.
 4. Review the information at [Moving the Service Manager Database](Moving-the-Service-Manager-Database.md)  and follow the steps there, with the following changes:
-    1. In step 5, *To Configure Service Manager tables*, use the <AGL Name,AGL Port number> instead of the computer name hosting the Service Manager database, for example: SMListener,5122
-    2. In Step 6, use the <AGL Name,AGL Port number> to update the both DWStaging and Config database tables.
-    3. In Step 7, *Configure the registry on all the management servers*, change the registry key `HKEY\_LOCAL\_MACHINE\Software\Microsoft\System Center2010\Common\Database` and give `DatabaseServerName` as <AGL Name,AGL Port number>
+    1. In step 5, *To Configure Service Manager tables*, use the `AGL Name,AGL Port number` instead of the computer name hosting the Service Manager database, for example: SMListener,5122
+    2. In Step 6, use the `AGL Name,AGL Port number` to update the both DWStaging and Config database tables.
+    3. In Step 7, *Configure the registry on all the management servers*, change the registry key `HKEY\_LOCAL\_MACHINE\Software\Microsoft\System Center2010\Common\Database` and give `DatabaseServerName` as `AGL Name,AGL Port number`.
 
 To summarize, you are changing the computer name hosting the Service Manager database to <AGL Name,AGL Port number> for SQL Server AlwaysOn support.
-
-

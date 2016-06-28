@@ -5,7 +5,7 @@ ms.prod: system-center-threshold
 ms.reviewer: na
 ms.service: virtual-network
 ms.suite: na
-ms.technology: 
+ms.technology:
   - techgroup-networking
 ms.tgt_pltfrm: na
 ms.topic: article
@@ -25,13 +25,13 @@ After you use VMM to deploy a network controller and a SLB, you can leverage mul
 
 Before you get into the details of the SLB deployment, make sure you have performed following steps:
 
-* Deploy the network controller 
+* Deploy the network controller
 
   You must have already deployed the network controller with VMM. After the network controller is successfully deployed, you have basic compute and network infrastructure ready to proceed for SLB deployment.
 
   For more information about network controller deployment using VMM, see [Deploy a Network Controller using VMM](Deploy-a-Network-Controller-using-VMM.md).
 
-  If you haven’t yet deployed a network controller, please see the previous topic and come back to this section when complete.
+  If you haven't yet deployed a network controller, please see the previous topic and come back to this section when complete.
 
 * Prepare an SSL Certificate
 
@@ -42,7 +42,7 @@ Before you get into the details of the SLB deployment, make sure you have perfor
 ## Setup
 This section covers the setup required for deploying the Software Load Balancer.
 
-#### Topology overview 
+#### Topology overview
 
 Refer to the topology diagram in the following Microsoft TechNet Library topic: [Plan a Software Defined Network Infrastructure](https://technet.microsoft.com/library/mt605207.aspx)
 
@@ -53,8 +53,8 @@ All the Software Load Balancer virtual machines must have [!INCLUDE[winthreshold
 ### Logical networks
 
 In addition to the Management and HNV Provider logical networks that you already have configured during network controller deployment, you need the Transit (sometimes called Front End), Private VIP and Public VIP networks to deploy the SLB. Refer to the [Plan a Software Defined Network Infrastructure](https://technet.microsoft.com/library/mt605207.aspx) topic for more information about these networks.
-                                                                                                                                    
-Normally you would use the Transit network for BGP peering. But because of a limitation in [!INCLUDE[winthreshold_server_2_mdToken/winthreshold_server_2_md.md)] 5, the SLB actually uses the Management network for BGP peering. However, this doesn’t impact how you deploy the SLB.  
+
+Normally you would use the Transit network for BGP peering. But because of a limitation in [!INCLUDE[winthreshold_server_2_mdToken/winthreshold_server_2_md.md)] 5, the SLB actually uses the Management network for BGP peering. However, this doesn't impact how you deploy the SLB.  
 
 Active Directory and DNS must be available and reachable from these networks. You must have Domain Administrator credentials and the ability to create DNS entries in the domain.
 
@@ -75,16 +75,17 @@ Active Directory and DNS must be available and reachable from these networks. Yo
 
 This is the IP address pool where DIPs are assigned to the SLB/MUX virtual machines and BGP Peer virtual machine (if deployed).
 
-Create the IP pool for the Transit network following the same procedure and steps as the HNV Provider network steps in [Deploy a Network Controller using VMM](Deploy-a-Network-Controller-using-VMM.md). 
+Create the IP pool for the Transit network following the same procedure and steps as the HNV Provider network steps in [Deploy a Network Controller using VMM](Deploy-a-Network-Controller-using-VMM.md).
 
 Ensure you use the IP address range that corresponds to your Transit network IP address space.
->[!IMPORTANT] Don't include the first three IP addresses of your subnet in the IP pool you are about to create. For example, if your available subnet is from .1 to .254, start your range at .4.
+>[!IMPORTANT]
+Don't include the first three IP addresses of your subnet in the IP pool you are about to create. For example, if your available subnet is from .1 to .254, start your range at .4.
 
 After you create the Transit logical network, ensure you associate this logical network with the Management switch uplink port profile you created during the network controller deployment.
 
-![VMM MGMT Uplink PP PropertiesImage/VMM-MGMT-Uplink-PP-Properties.png)
+![VMM MGMT Uplink PP Properties](../../media/VMM-MGMT-Uplink-PP-Properties.png)
 
-##### Private VIP logical network 
+##### Private VIP logical network
 
 You need a private VIP address pool to assign a VIP to the Software Load Balancer Manager (SLBM) service.
 
@@ -115,7 +116,8 @@ You will create a Private VIP logical network in order to assign private VIP add
 5.  Review the **Summary** information and complete the logical network wizard
 
 
->[!IMPORTANT] At this point you can’t create a VIP Pool because the SLB is not deployed yet. But you can choose the last VIP from the Private VIP logical network subnet you just configured and use it later to assign to the SLB Manager VIP. Ensure this assigned VIP address is part of the Private VIP Pool you will create later.
+>[!IMPORTANT]
+At this point you can't create a VIP Pool because the SLB is not deployed yet. But you can choose the last VIP from the Private VIP logical network subnet you just configured and use it later to assign to the SLB Manager VIP. Ensure this assigned VIP address is part of the Private VIP Pool you will create later.
 
 ## Deployment
 
@@ -182,7 +184,8 @@ On the left side of the **Configure Deployment** window, there are a number of s
 
 After you configure these settings, click **Deploy Service** to begin the service deployment job. Deployment times will vary depending on your hardware but are typically between 30 and 60 minutes.
 
->[!IMPORTANT]If you are not using a Volume Licensed VHDX or if the VHDX is not supplied the Product Key using an Answer file, then the deployment will stop at the Product Key page during SLB/MUX virtual machine(s) provisioning. You need to manually access the virtual machine(s) desktop and either skip entering the product key or enter the product key if you have it handy.
+>[!IMPORTANT]
+If you are not using a Volume Licensed VHDX or if the VHDX is not supplied the Product Key using an Answer file, then the deployment will stop at the Product Key page during SLB/MUX virtual machine(s) provisioning. You need to manually access the virtual machine(s) desktop and either skip entering the product key or enter the product key if you have it handy.
 
 If the SLB/MUX deployment fails, ensure you delete the failed instance of the Service using the following steps before you retry the SLB/MUX deployment.
 
@@ -210,7 +213,7 @@ If you want to scale-in or scale-out a deployed Software Load Balancer Service i
 
 Now that the service is deployed, you can configure its properties. This involves associating the SLB service instance that you deployed with network controller, and then configuring BGP peering between the SLB/MUX instance and a ToR switch or a BGP router peer.
 
-##### Associate the SLB/MUX Instance with SLB Manager service 
+##### Associate the SLB/MUX Instance with SLB Manager service
 
 1.  Open the **Fabric** workspace.
 
@@ -224,13 +227,13 @@ Now that the service is deployed, you can configure its properties. This involve
 
 6.  Select the SLB/MUX service instance you created earlier and click **OK**.
 
-    ![VMM Add ServiceImage/VMM-Add-Service.png)
+    ![VMM Add Service](../../media/VMM-Add-Service.png)
 
 7.  Choose the appropriate Run as Account
 
 8.  For the **Management IP address**, use the last IP address from the Private VIP pool you created earlier.
 
-    ![VMM NC Properties SLBMUXImage/VMM-NC-Properties-SLBMUX.png)
+    ![VMM NC Properties SLBMUX](../../media/VMM-NC-Properties-SLBMUX.png)
 
 9.  Optionally specify the IP address ranges to be excluded from the outbound NAT.
 
@@ -252,7 +255,8 @@ As a quick validation step, you can also try to access the following URL from a 
 >
 >This URL shows a JSON file with details about the SLB/MUX virtual machines. If the SLB/MUX is not on-boarded successfully, this URL will not be accessible.
 
->[!IMPORTANT]Due to a platform limitation in TP5, you must disable the IPv6 configuration from all the SLB/MUX virtual machine vNICs. 
+>[!IMPORTANT]
+Due to a platform limitation in TP5, you must disable the IPv6 configuration from all the SLB/MUX virtual machine vNICs.
 
 Use the following steps to disable IPv6:
 
@@ -275,7 +279,8 @@ Since the SLB/MUX is now on-boarded and SLB Manager VIP is assigned, you can now
 3.  Accept the default network site and click **Next**.
 
 4.  Choose a starting and ending IP address for your range.
-    >[!IMPORTANT] Start your range on the fourth addresses of your available subnet. For example, if your available subnet is from .1 to .254, start your range at .4.  
+    >[!IMPORTANT]
+  Start your range on the fourth addresses of your available subnet. For example, if your available subnet is from .1 to .254, start your range at .4.  
 
 5.  In the **IP addresses reserved for load balancer VIPs** box, type the IP addresses range in the subnet. This should match the range you used for starting and ending IP addresses.
 
@@ -292,7 +297,8 @@ Since the SLB/MUX is now on-boarded and SLB Manager VIP is assigned, you can now
 3.  Accept the default network site and click **Next**.
 
 4.  Choose a starting and ending IP address for your range.
-    >[!IMPORTANT] Start your range on the fourth addresses of your available subnet. For example, if your available subnet is from .1 to .254, start your range at .4.
+    >[!IMPORTANT]
+  Start your range on the fourth addresses of your available subnet. For example, if your available subnet is from .1 to .254, start your range at .4.
 
 5.  In the **IP addresses reserved for load balancer VIPs** box, type the IP addresses range in the subnet. This should match the range you used for starting and ending IP addresses.
 
@@ -311,34 +317,35 @@ To publish the VIP network and addresses to networks outside of your private clo
 
 Enter your external router details in the wizard similar to what is shown below:
 
-![VMM NC Properties BGPImage/VMM-NC-Properties-BGP.png)
+![VMM NC Properties BGP](../../media/VMM-NC-Properties-BGP.png)
 
 Click **OK** to complete the SLB/MUX service instance configuration.
 
 Check the **Jobs** window to verify that the Update Fabric Role with required configuration and Associate service instance with fabric role jobs have completed successfully.
 
-To complete the BGP peering operation you need to configure BGP to peer with your SLB/MUX instance on the router. If you use a hardware router, you need to consult your vendor’s documentation regarding how to setup BGP peering for that device. You also need to know the IP address of the SLB/MUX instance that you deployed earlier. To do this, you can either log on to the SLB MUX virtual machine and run ``ipconfig /all`` from the command prompt, or you can get the IP address from the VMM console.
+To complete the BGP peering operation you need to configure BGP to peer with your SLB/MUX instance on the router. If you use a hardware router, you need to consult your vendor's documentation regarding how to setup BGP peering for that device. You also need to know the IP address of the SLB/MUX instance that you deployed earlier. To do this, you can either log on to the SLB MUX virtual machine and run ``ipconfig /all`` from the command prompt, or you can get the IP address from the VMM console.
 
 After peering is completed for the SLB/MUX, you need to advertise all the VIP address pools that will be used by the SLB/MUX to the SLB Manager role using Windows PowerShell cmdlets. This also applies for the Public VIP address pool you may create later to configure an IPSec connection type after you deployed and on-boarded a gateway.
 
-### Windows PowerShell for advertising VIP address pools to the SLB Manager                          
+### Windows PowerShell for advertising VIP address pools to the SLB Manager
+
 The following is a sample Windows PowerShell script that advertises your Private and Public VIP address pools to the SLBM. Substitute your own parameters from your datacenter.
 
     # Private VIP Logical Network
     $ipPool1 = Get-SCStaticIPAddressPool -Name "Private VIP Logical Network"
     $ipPool2 = Get-SCStaticIPAddressPool -Name "Public VIP Logical Network "
- 
+
     # Get Fabric role 'config', the GUID used is associated with SLB Manager role
     $networkService = Get-SCNetworkService -Name "TP5_NC"
     $fabricRole = Get-SCFabricRole -Type LoadBalancer -NetworkService $networkService      
 
     $natIPExemptions = @()                                                                 
-    
-    $fabricRoleConfiguration = New-SCLoadBalancerRoleConfiguration -LBManagerIPAddress 
+
+    $fabricRoleConfiguration = New-SCLoadBalancerRoleConfiguration -LBManagerIPAddress
     "20.20.20.254" -NatIPExemptions $natIPExemptions -VipPools @($ipPool1, $ipPool2)  
- 
+
     # Setting the configuration.                                                           
-    $fabricRole = Set-SCFabricRole -FabricRole $fabricRole -LoadBalancerConfiguration 
+    $fabricRole = Set-SCFabricRole -FabricRole $fabricRole -LoadBalancerConfiguration
     $fabricRoleConFiguration
 
 ### Provisioning VIPs for tenant virtual machines
@@ -349,9 +356,9 @@ Provisioning a VIP for a individual virtual machines is not a typical scenario, 
 
 ##### To provision VIPs for virtual machines
 
-To provision a VIP for two virtual machines that were deployed using a VM template, you need to: 
-1. Deploy the virtual machine instances using a VM template. 
-2. Create a VIP template in the VMM Console. 
+To provision a VIP for two virtual machines that were deployed using a VM template, you need to:
+1. Deploy the virtual machine instances using a VM template.
+2. Create a VIP template in the VMM Console.
 3. Create a VIP and assign it to the virtual machines using PowerShell.
 
 ##### Create a VIP Template
@@ -374,7 +381,7 @@ Use the following procedure to create a VIP template.
 
 8.  On the **Specify Protocol Options** screen, select the protocol you want to create a VIP mapping for. The HTTP and HTTPS options are commonly used, but for a simple example you can select the **Custom** option and chose **TCP** in the **Protocol Name** field. If TCP does not appear as an option in the drop-down menu, you can type it manually. This is a known issue in Technical Preview 5. Click **Next**.
 
-9.  You can optionally select **enable persistence** if you wish to have the load balancer make the connection from the client “sticky”. Click **Next**.
+9.  You can optionally select **enable persistence** if you wish to have the load balancer make the connection from the client ï¿½stickyï¿½. Click **Next**.
 
 10.  For the **Load Balancing method**, select **Round Robin** from the drop down list. Click **Next**.
 
@@ -386,7 +393,7 @@ Use the following procedure to create a VIP template.
 
 The following sample PowerShell script creates a VIP for two virtual machines. In the script parameters section, substitute the actual values that match your test environment for the samples used in this script. The script should be run on the VMM server, or on a computer running the VMM Console.   
 
-                                       
+
     param(
 
     [Parameter(Mandatory=$false)]
@@ -459,7 +466,8 @@ The following sample PowerShell script creates a VIP for two virtual machines. I
 
 
 ### Configuring inbound and outbound NAT rules
-To complete the BGP peering process, you need to configure a BGP to peer with your SLB/MUX instance on the router. If you use a hardware router, you need to consult your vendor’s documentation for instructions to setup BGP peering for that device. You also need to know the IP address of the SLB/MUX instance that you deployed earlier. To do this, you can log on to the SLB/MUX virtual machine and run ipconfig.
+
+To complete the BGP peering process, you need to configure a BGP to peer with your SLB/MUX instance on the router. If you use a hardware router, you need to consult your vendor's documentation for instructions to setup BGP peering for that device. You also need to know the IP address of the SLB/MUX instance that you deployed earlier. To do this, you can log on to the SLB/MUX virtual machine and run ipconfig.
 
 After you deploy and on-board the Software Load Balancer as a Network Service using VMM, you can use the VMM user interface to configure both inbound and outbound NAT rules.
 
@@ -469,7 +477,7 @@ Use the following steps to configure NAT:
 2.  Select the **VM Networks** tab and then double click the VM network you want to configure with NAT rules.
 3.  Select the **Connectivity** tab on the property wizard.
 4.  Check **Connect directly to an additional Network** and select **Network Address Translation (NAT)**.
-5.  In **Gateway Device**, type your network controller service name. 
+5.  In **Gateway Device**, type your network controller service name.
 6.  Select the **Network Address Translation** tab.
 7.  In the **IP address pool** field, choose your Public VIP pool.
 8.  Leave the IP address field empty. A VIP address will be automatically assigned to this rule. This is a Technical Preview limitation.
@@ -480,13 +488,11 @@ Use the following steps to configure NAT:
     4.  Type the destination IP address for this NAT rule.
     5.  Type the destination port.
 
-    ![VMM NATImage/VMM-NAT.png)
+    ![VMM NAT](../../media/VMM-NAT.png)
 10. Click **OK**.
 
 The existing NAT connections will not be visible when you close the network connectivity wizard and re-open it. You can, however, still add additional NAT connections through the user interface.
-> 
+
+
 >To see the existing NAT connections, you can use the following PowerShell cmdlet:
 ``Get-SCNATConnection``
-    
-
-

@@ -44,39 +44,40 @@ Perform the following pre-upgrade tasks in the order presented before you begin 
 ## Review the Operations Manager Event Logs
 
 Review the event logs for Operations Manager on the management servers to look for recurring warning or critical events. Address them and save a copy of the event logs before you perform your upgrade.
- 
+
 ## Cleanup the Database (ETL table)
 As part of upgrade to System Center 2016 - Operations Manager installation (setup) includes a script to cleanup ETL tables, grooming the database. However, in cases where there are a large number of rows (greater than 100,000) to cleanup, we recommend running the script before starting the upgrade to promote a faster upgrade and prevent possible timeout of setup. Performing this pre-upgrade task in all circumstances ensures a more efficient installation.
 
 ### To Cleanup ETL
 To cleanup the ETL table, run the following script on the SQL Server hosting the OperationsManager database:
 
-    -- (c) Copyright 2004-2006 Microsoft Corporation, All Rights Reserved         -- 
+    -- (c) Copyright 2004-2006 Microsoft Corporation, All Rights Reserved         --
     -- Proprietary and confidential to Microsoft Corporation                      --       
-    -- File:      CatchupETLGrooming.sql                                          -- 
-    -- Contents: A bug in the ETL grooming code could have left the customer      -- 
-    -- Database with a large amount of ETL rows to groom. This script will groom   -- 
-    -- The ETL entries in a loop 100K rows at a time to avoid filling up the        -- 
-    -- Transaction log                                                             -- 
-    --------------------------------------------------------------------------------- 
-    DECLARE @RowCount int = 1; 
-    DECLARE @BatchSize int = 100000; 
+    -- File:      CatchupETLGrooming.sql                                          --
+    -- Contents: A bug in the ETL grooming code could have left the customer      --
+    -- Database with a large amount of ETL rows to groom. This script will groom   --
+    -- The ETL entries in a loop 100K rows at a time to avoid filling up the        --
+    -- Transaction log                                                             --
+    ---------------------------------------------------------------------------------
+    DECLARE @RowCount int = 1;
+    DECLARE @BatchSize int = 100000;
     DECLARE @SubscriptionWatermark bigint = 0;     
-    DECLARE @LastErr int; 
-    -- Delete rows from the EntityTransactionLog. We delete the rows with TransactionLogId that aren't being 
-    -- used anymore by the EntityChangeLog table and by the RelatedEntityChangeLog table. 
-    SELECT @SubscriptionWatermark = dbo.fn_GetEntityChangeLogGroomingWatermark(); 
-    WHILE(@RowCount > 0) 
-    BEGIN 
+    DECLARE @LastErr int;
+    -- Delete rows from the EntityTransactionLog. We delete the rows with TransactionLogId that aren't being
+    -- used anymore by the EntityChangeLog table and by the RelatedEntityChangeLog table.
+    SELECT @SubscriptionWatermark = dbo.fn_GetEntityChangeLogGroomingWatermark();
+    WHILE(@RowCount > 0)
+    BEGIN
       DELETE TOP(@BatchSize) ETL  
-      FROM EntityTransactionLog ETL 
-      WHERE NOT EXISTS (SELECT 1 FROM EntityChangeLog ECL WHERE ECL.EntityTransactionLogId = ETL.EntityTransactionLogId) AND NOT EXISTS (SELECT 1 FROM RelatedEntityChangeLog RECL 
-      WHERE RECL.EntityTransactionLogId = ETL.EntityTransactionLogId) 
+      FROM EntityTransactionLog ETL
+      WHERE NOT EXISTS (SELECT 1 FROM EntityChangeLog ECL WHERE ECL.EntityTransactionLogId = ETL.EntityTransactionLogId) AND NOT EXISTS (SELECT 1 FROM RelatedEntityChangeLog RECL
+      WHERE RECL.EntityTransactionLogId = ETL.EntityTransactionLogId)
       AND ETL.EntityTransactionLogId < @SubscriptionWatermark;        
       SELECT @LastErr = @@ERROR, @RowCount = @@ROWCOUNT;            
     END    
 
->[!NOTE] Cleanup of ETL can require several hours to complete.
+>[!NOTE]
+Cleanup of ETL can require several hours to complete.
 
 ## Remove Agents from Pending Management
 
@@ -101,8 +102,11 @@ You should disable notification subscription before you upgrade the management g
 
 4. Select each subscription, and then click **Disable** in the **Actions** pane.
 
->[!NOTE] Multiselect does not work when you are disabling subscriptions.
+>[!NOTE]
+Multiselect does not work when you are disabling subscriptions.
+
 ## Disable Connectors
+
 Refer to the non-Microsoft connector documentation for any installed Connectors to determine the services used for each Connector.
 
 To stop a service for a Connector, perform the following steps:
@@ -137,7 +141,8 @@ If the database does not have 50 percent free, perform the following steps to in
 6. In the **Database Properties** dialog box, under **Select a page**, click **Files**.
 
 7. In the results pane, increase the **Initial Size** value for the **MOM_DATA** database by 50 percent.
-   >[!NOTE] This step is not required if free space already exceeds 50 percent.
+   >[!NOTE]
+  This step is not required if free space already exceeds 50 percent.
 
 8. Set the **Initial Size** value for the **MOM_LOG** transaction log to be 50 percent of the total size of the database. For example, if the operational database size is 100 GB, the log file size should be 50 GB. Then click **OK**.
 
@@ -151,10 +156,7 @@ Before upgrading the first management server in your management group, it is rec
 To ensure the agents can queue data during the upgrade, please update the following registry setting on the agents manually or automated with your configuration management or orchestration solution:
 
 HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlsSet\Services\HealthService\Parameters\Management Groups\<ManagementGroupName>\maximumQueueSizeKb
-    
+
 The default decimal value of DWORD type is 15360 (15 MB) and the recommended value to change it to is 76800 (75 MB).
 
 Once you have completed the upgrade of the management group, you can reset it back to the default value.  
-   
-
-
