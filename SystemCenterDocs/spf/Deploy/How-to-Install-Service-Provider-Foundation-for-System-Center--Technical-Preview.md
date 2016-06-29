@@ -1,15 +1,16 @@
 ---
-title: How to Install Service Provider Foundation for System Center  Technical Preview
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - service-provider-foundation
-ms.tgt_pltfrm: na
-ms.topic: get-started-article
-ms.assetid: ce22e119-71d2-4a0c-a9a0-99b886ce392f
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  rayne-wiselman
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  How to Install Service Provider Foundation for System Center  Technical Preview
+ms.technology:  service-provider-foundation
+ms.assetid:  ce22e119-71d2-4a0c-a9a0-99b886ce392f
 ---
+
 # How to Install Service Provider Foundation for System Center  Technical Preview
 
 >Applies To: System Center Technical Preview
@@ -28,7 +29,7 @@ Before you install Service Provider Foundation, do the following:
 
 -   Close any open programs, and make sure that the computer does not have a restart pending.
 
-If there is a problem with the installation completing successfully, refer to the log files, named “Microsoft Service Provider*.log”, in the %SYSTEMDRIVE%\\%TEMP%  folder.
+If there is a problem with the installation completing successfully, refer to the log files, named ï¿½Microsoft Service Provider*.logï¿½, in the %SYSTEMDRIVE%\\%TEMP%  folder.
 
 ### To install Service Provider Foundation
 
@@ -92,7 +93,7 @@ If there is a problem with the installation completing successfully, refer to th
 
     After you click **Install**, the installation progress indicator appears.
 
-14. Click **Close** when the message “Setup is complete” appears.
+14. Click **Close** when the message ï¿½Setup is completeï¿½ appears.
 
 Repeat this procedure for each installation, such as for a web farm.
 
