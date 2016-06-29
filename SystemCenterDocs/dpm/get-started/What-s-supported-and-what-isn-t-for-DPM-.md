@@ -6,12 +6,15 @@ author:  markgalioto
 ms.prod:  system-center-threshold
 keywords:  
 ms.date:  2016-06-27
-title:  What s supported and what isn t for DPM 
+title:  What s supported and what isn t for DPM
 ms.technology:  data-protection-manager
 ms.assetid:  29d977b5-56de-4bc4-ba0b-2d45d02516a4
 ---
 
 # What&#39;s supported and what isn&#39;t for DPM?
+
+>Applies To: System Center 2016 Technical Preview - Data Protection Manager
+
 This topic summarizes some of the common support information you might need when deploying and maintaining System Center 2016 Technical Preview - Data Protection Manager.
 
 -   [Installation and deployment issues](#BKMK_Install)
@@ -447,4 +450,3 @@ Workaround: We recommend that in this scenario you use host-level backup of the 
 -   DPM running as an Azure virtual machine can’t protect on-premises workloads.
 
 **Workaround**: For more information about this scenario see [Install DPM as an Azure virtual machine](./Get-DPM-installed.md#setup-prerequisites).
-
