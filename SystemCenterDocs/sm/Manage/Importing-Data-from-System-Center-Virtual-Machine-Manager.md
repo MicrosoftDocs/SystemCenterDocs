@@ -50,7 +50,7 @@ Use the following procedures to create a System Center Virtual Machine Manager c
 
     5.  On the **Summary** page, make sure that the settings are correct, and then click **Create**.
 
-    6.  On the **Completion** page, make sure that you receive a �Virtual Machine Manager connector successfully created� message, and then click **Close**.
+    6.  On the **Completion** page, make sure that you receive a *Virtual Machine Manager connector successfully created* message, and then click **Close**.
 
 ### To validate the creation of a System Center Virtual Machine Manager connector
 
@@ -148,6 +148,3 @@ You can use the following procedures to disable or enable a Virtual Machine Mana
 ### To validate the status change of a virtual Machine Manager connector
 
 1.  In the middle pane, locate the connector for which you have changed status, and then verify the value in the **Enabled** column.
-
-
-

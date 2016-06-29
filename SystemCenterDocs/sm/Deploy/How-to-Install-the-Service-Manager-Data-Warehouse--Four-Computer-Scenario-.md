@@ -12,6 +12,9 @@ ms.assetid:  ef24bc6b-17ec-4cb3-8de8-35ca0cc7d5a7
 ---
 
 # How to Install the Service Manager Data Warehouse (Four-Computer Scenario)
+
+>Applies To: System Center 2016 Technical Preview - Service Manager
+
 To start deployment of the System Center 2016 Technical Preview - Service Manager data warehouse and data warehouse databases, install the data warehouse management server on one computer (for example, computer 3), and all of the data warehouse databases on another computer (for example, computer 4).
 
 During Setup, you will be prompted to provide credentials for the following accounts:

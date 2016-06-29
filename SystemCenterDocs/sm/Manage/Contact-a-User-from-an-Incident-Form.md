@@ -15,7 +15,7 @@ ms.assetid:  8e104877-97b2-4453-ae63-b57aa1564c4b
 
 >Applies To: System Center 2016 Technical Preview - Service Manager
 
-In Service Manager, you can contact a user by email or by instant message when an incident form is open. The presence indicator is shown in the form next to the affected user�s name, and it displays their current status, if known.
+In Service Manager, you can contact a user by email or by instant message when an incident form is open. The presence indicator is shown in the form next to the affected user's name, and it displays their current status, if known.
 
 Both the computer  running the Service Manager console and the user you want to contact must have either  Lync 2013 or Skype for Business in Microsoft Office 2013 or Office 2016 installed.
 
@@ -25,7 +25,7 @@ Both the computer  running the Service Manager console and the user you want to 
 
 2.  Click **Send Mail**.
 
-3.  Your email client program opens and adds the user�s name to the **To** box. Compose the e-mail message, and then send it.
+3.  Your email client program opens and adds the user's name to the **To** box. Compose the e-mail message, and then send it.
 
 #### To contact a user by instant message
 
@@ -34,6 +34,3 @@ Both the computer  running the Service Manager console and the user you want to 
 2.  Click **Send Instant Message**.
 
 3.  Your instant message program opens. Compose the instant message, and then send it.
-
-
-

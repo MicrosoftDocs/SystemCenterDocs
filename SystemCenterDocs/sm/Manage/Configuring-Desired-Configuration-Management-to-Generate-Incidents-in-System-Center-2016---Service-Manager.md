@@ -27,9 +27,9 @@ Use the following procedure to configure incident management to automatically ge
 
 In Service Manager, you can import configuration baselines from System Center Configuration Manager by using a Configuration Manager connector. Then, you can configure Service Manager to create incidents for each Service Manager configuration item that is reported as noncompliant against the defined values.
 
-You can use the following procedures to configure incident management to automatically generate desired configuration management�based incidents and validate that the desired configuration management is configured.
+You can use the following procedures to configure incident management to automatically generate desired configuration management-based incidents and validate that the desired configuration management is configured.
 
-## To configure incident management to automatically generate desired configuration management�based incidents
+## To configure incident management to automatically generate desired configuration management-based incidents
 
 1.  In the Service Manager console, click **Administration**.
 
@@ -58,11 +58,11 @@ You can use the following procedures to configure incident management to automat
 
     7.  On the **Completion** page, make sure that you receive the following confirmation message, and then click **Close**:
 
-        �Desired Configuration Management Workflow Created Successfully�
+        `Desired Configuration Management Workflow Created Successfully`
 
 ### To validate that desired configuration management is configured
 
-1.  Import an out-of-compliance Service Manager configuration item that would match one of the desired configuration management rules. Then, locate the desired configuration management�based incident in Service Manager.
+1.  Import an out-of-compliance Service Manager configuration item that would match one of the desired configuration management rules. Then, locate the desired configuration management-based incident in Service Manager.
 
 2.  In the Service Manager console, click **Work Items**
 
@@ -83,4 +83,3 @@ You can use the following procedures to configure incident management to automat
 -   For information about how to use Windows PowerShell to update properties of a desired configuration management workflow, see [Update-SCSMDCMWorkflow](http://go.microsoft.com/fwlink/p/?LinkID=225383).
 
 -   For information about how to use Windows PowerShell to remove a desired configuration management workflow from Service Manager, see [Remove-SCSMDCMWorkflow](http://go.microsoft.com/fwlink/p/?LinkID=225365).
-

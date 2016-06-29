@@ -15,7 +15,7 @@ ms.assetid:  68d973c3-4c17-41cb-8584-9e6e25fe2962
 
 >Applies To: System Center 2016 Technical Preview - Service Manager
 
-The key to understanding release management in Service Manager is realizing how objects, such as change requests and activities, interact�facilitated by release records. Release management uses parent and child release records to help automate the process of updating the status of change requests and the status propagation between parallel activities, sequential activities, and the activities within them.
+The key to understanding release management in Service Manager is realizing how objects, such as change requests and activities, interact-facilitated by release records. Release management uses parent and child release records to help automate the process of updating the status of change requests and the status propagation between parallel activities, sequential activities, and the activities within them.
 
 Often, there are multiple parts of a project, and there is more than one change request that can be deployed at different times that can affect a project. The overall goal of change management and release management is to protect the production environment from unnecessary changes, so that every change to it must first be approved. Release management deals only with approved changes.
 
@@ -31,7 +31,7 @@ When you modify an activity, its status is not immediately updated. There is a d
 ### Parts of Release Records
 Because releases are often bundled together, you can group multiple release records together by using a parent-child relationship. Essentially, a parent release record serves as a container for multiple child release records. However, a newly created release record is not a parent release record by default. You must convert a release record to a parent release record in order to add child release records.
 
-Like change requests, release records contain activities for approval and manual actions. In addition, release records can contain parallel and sequential activities. Parallel and sequential activities are containers for other activities, and they define how constituent activities must be implemented�parallel activities can be implemented simultaneously, while other parallel activities are also in progress. Sequential activities must be completed in the order they are organized, one after another.
+Like change requests, release records contain activities for approval and manual actions. In addition, release records can contain parallel and sequential activities. Parallel and sequential activities are containers for other activities, and they define how constituent activities must be implemented--parallel activities can be implemented simultaneously, while other parallel activities are also in progress. Sequential activities must be completed in the order they are organized, one after another.
 
 ## To Manage Release Records
 
@@ -64,6 +64,3 @@ Like change requests, release records contain activities for approval and manual
 8.  Skip a failed activity, if necessary.
 
 9. Determine the status and progress for a change request that is contained in a release record.
-
-
-

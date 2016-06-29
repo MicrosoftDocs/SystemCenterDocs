@@ -17,7 +17,7 @@ ms.assetid:  a1698611-409d-4856-9fce-33432e7dfd47
 
 In Service Manager, you can assign users to a user role to define what they can do.
 
-In this example, you have to add members of an asset management team who can create and update, but not delete, configuration items to the user role. Looking at the �Configuration Items� section of [Appendix A - List of User Role Profiles in System Center 2016 - Service Manager](Appendix-A---List-of-User-Role-Profiles-in-System-Center-2016---Service-Manager.md) in this document, you see that the Advanced Operators user role profile provides what you need regarding permissions for this team. At this time, all members of the asset management team are responsible for every asset in the company; therefore, they require unlimited scope.
+In this example, you have to add members of an asset management team who can create and update, but not delete, configuration items to the user role. Looking at the Configuration Items section of [Appendix A - List of User Role Profiles in System Center 2016 - Service Manager](Appendix-A---List-of-User-Role-Profiles-in-System-Center-2016---Service-Manager.md) in this document, you see that the Advanced Operators user role profile provides what you need regarding permissions for this team. At this time, all members of the asset management team are responsible for every asset in the company; therefore, they require unlimited scope.
 
 Use the following procedures to add a user to the Service Manager Advanced Operators user role and then validate the assignment of the user to the user role.
 
@@ -42,6 +42,3 @@ Use the following procedures to add a user to the Service Manager Advanced Opera
 -   Log on to the Service Manager console as one of the users assigned to the user role. Verify that you cannot access data for which you do not have access rights, as specified in the user roles.
 
 ![](../../media/pssymbol.png)You can use a Windows PowerShell command to view users. For information about how to use Windows PowerShell to retrieve users that are defined in Service Manager, see [Get-SCSMUser](http://go.microsoft.com/fwlink/p/?LinkId=225335).
-
-
-

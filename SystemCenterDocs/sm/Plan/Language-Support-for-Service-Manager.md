@@ -21,7 +21,7 @@ Including English, System Center 2016 Technical Preview - Service Manager suppor
 
 Setting your Windows locale on a computer that hosts a Service Manager console to one of the supported languages results in Service Manager being displayed in that language. In addition to the languages that Service Manager supports, you must also consider the ability to search and sort data in the Service Manager databases. The ability to search and sort data in a specific language is defined by the collation settings in Microsoft SQL Server.
 
-The information in the following table represents the approved collations and the locale identifiers that were tested for Service Manager. In the list of collations in this table, �CI� indicates case-insensitive, and �AS� indicates accent-sensitive.
+The information in the following table represents the approved collations and the locale identifiers that were tested for Service Manager. In the list of collations in this table, `_CI_` indicates case-insensitive, and `_AS_` indicates accent-sensitive.
 
 |Windows locale|Collation|
 |------------------|-------------|
@@ -41,7 +41,7 @@ The information in the following table represents the approved collations and th
 |Italian_Standard|Latin1_General_100_CI_AS|
 |Japanese|Japanese_XJIS_100_CI_AS|
 |Korean|Korean_100_CI_AS|
-|Norwegian (Bokm�l, Norway)|Norwegian_100_CI_AS|
+|Norwegian (Bokmål, Norway)|Norwegian_100_CI_AS|
 |Polish (Poland)|Polish_100_CI_AS|
 |Portuguese (Brazil)|Latin1_General_100_CI_AS|
 |Portuguese (Portugal)|Latin1_General_100_CI_AS|
@@ -67,4 +67,3 @@ For more information, see the following links for the version of SQL Server that
 
 ### Turkish Language
 None of the Turkish collations is supported in Service Manager. The Latin1_General_100_CI_AS collation was used for testing with the Turkish language. As a result, some search and sort operations in Service Manager will be affected for some Turkish characters.
-

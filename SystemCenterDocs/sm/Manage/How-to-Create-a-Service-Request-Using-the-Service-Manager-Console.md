@@ -29,7 +29,7 @@ End users often create service requests in System Center 2016 Technical Preview 
 
 5.  Optionally, in the **Alternate Contact Method** box, enter additional contact information for the affected user.
 
-6.  In the **Title** box, type a title for the service request or update one if it has been populated by a template. For example, type **Request Membership to Active Directory Group � Joe Andreshak**.
+6.  In the **Title** box, type a title for the service request or update one if it has been populated by a template. For example, type **Request Membership to Active Directory Group - Joe Andreshak**.
 
 7.  In the **Description** box, enter a description for this service request.
 
@@ -42,7 +42,5 @@ End users often create service requests in System Center 2016 Technical Preview 
 11. Click **OK** to save and close the service request form.
 
 ## See Also
+
 [Managing Service Requests in Service Manager](Managing-Service-Requests-in-Service-Manager.md)
-
-
-

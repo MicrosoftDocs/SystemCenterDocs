@@ -25,22 +25,19 @@ You can use the following procedure to disable the schedule for the extract, tra
 2.  At the Windows PowerShell prompt, type the following commands, and press ENTER after each command:
 
     ```
-    Disable-SCDWJobSchedule �JobName Extract_<data warehouse management group name>
+    Disable-SCDWJobSchedule -JobName Extract_<data warehouse management group name>
     ```
 
     ```
-    Disable-SCDWJobSchedule �JobName Extract_<Service Manager management group name>
+    Disable-SCDWJobSchedule -JobName Extract_<Service Manager management group name>
     ```
 
     ```
-    Disable-SCDWJobSchedule �JobName Transform.Common
+    Disable-SCDWJobSchedule -JobName Transform.Common
     ```
 
     ```
-    Disable-SCDWJobSchedule �JobName Load.Common
+    Disable-SCDWJobSchedule -JobName Load.Common
     ```
 
 3.  Type **exit**, and then press ENTER.
-
-
-

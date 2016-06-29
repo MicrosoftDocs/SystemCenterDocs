@@ -39,7 +39,7 @@ The following high-level steps are required to move the Data Warehouse databases
 
 > [!IMPORTANT]
 > After you move the **DWStagingAndConfig** and **DWRepository** databases, they have to be restored on the same instance of SQL Server. Restoring them on a separate instances of SQL Server is not supported.
-> 
+>
 > The collation on the new instance of SQL Server has to match the collation of the original instances of SQL Server where the data warehouse databases were originally hosted.
 
 ## <a name="bkmk_locating"></a>Locate user accounts and instances of SQL Server
@@ -47,8 +47,7 @@ Use the following procedures to locate the user accounts and instances of SQL Se
 
 #### To identify the SQL Server database and instance names used by the data warehouse management server
 
-1.  Sign in 
-         to the data warehouse management server as a user with administrative credentials.
+1.  Sign in to the data warehouse management server as a user with administrative credentials.
 
 2.  On the Windows desktop, click **Start**, and then click **Run**.
 
@@ -160,8 +159,8 @@ Use the following procedures to locate the user accounts and instances of SQL Se
     > Replace <DWServerName> with the name of your data warehouse management server.
 
     ```
-    $class\= get\-scclass �Name Microsoft.SystemCenter.ResourceAccessLayer.ASResourceStore �ComputerName <DWServerName>
-    $OLAPServer\= get\-scclassinstance �class $class �ComputerName <DWServerName>
+    $class\= get\-scclass -Name Microsoft.SystemCenter.ResourceAccessLayer.ASResourceStore -ComputerName <DWServerName>
+    $OLAPServer\= get\-scclassinstance -class $class -ComputerName <DWServerName>
     $OLAPServer.Server
     ```
 
@@ -180,9 +179,9 @@ Use the following procedures to locate the user accounts and instances of SQL Se
 
     5.  Expand the **Data Sources** folder, and then double-click **CMDataMart**.
 
-    6.  In the **Data Source Properties � CMDataMart** dialog box, note the value of **Connection String**.
+    6.  In the **Data Source Properties - CMDataMart** dialog box, note the value of **Connection String**.
 
-    7.  Under **Security Settings**, click **Impersonation Account**, and then click the properties button (�), to open the **Impersonation Information** dialog box.
+    7.  Under **Security Settings**, click **Impersonation Account**, and then click the properties button (...), to open the **Impersonation Information** dialog box.
 
     8.  In the **Impersonation Information** dialog box, note the user name.
 
@@ -600,11 +599,11 @@ Use the following procedure to update the connection strings for the data source
 
 6.  Expand **Data Sources**, and then double-click **CMDataMart**.
 
-7.  In the **Data Source Properties � CMDataMart** dialog box, select **Connection string Provider=SQLNCLI10.1;Data Source=<servername>;Integrated Security=SSPI;Initial Catalog=CMDWDataMart**.
+7.  In the **Data Source Properties - CMDataMart** dialog box, select **Connection string Provider=SQLNCLI10.1;Data Source=<servername>;Integrated Security=SSPI;Initial Catalog=CMDWDataMart**.
 
 8.  Replace <servername> with the name of the computer running SQL Server that hosts the CMDWDataMart database.
 
-9. You need to re-enter the impersonation account password when you�ve completed updating the Data Source server. Select the ellipsis button to the right of **ImpersonateAccount** and then add the password in the **Impersonation Information** dialog box. Click **OK** to accept the changes.
+9. You need to re-enter the impersonation account password when you've completed updating the Data Source server. Select the ellipsis button to the right of **ImpersonateAccount** and then add the password in the **Impersonation Information** dialog box. Click **OK** to accept the changes.
 
 10. Repeat the previous steps to update the connection strings for the DWDataMart and OMDataMart data sources.
 
@@ -622,6 +621,3 @@ Use the following procedure to start the Service Manager services on the data wa
     2.  Microsoft Monitoring Agent
 
     3.  System Center Management Configuration
-
-
-

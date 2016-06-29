@@ -121,7 +121,7 @@ Use the following procedures to make these changes in Service Manager.
 
 4.  Right-click **Logins**, and then click **New Login**.
 
-5.  In the **Login � New** dialog box, in the **Select a page** pane, click **General**, and then click **Search**.
+5.  In the **Login - New** dialog box, in the **Select a page** pane, click **General**, and then click **Search**.
 
 6.  In the **Select User or Group** dialog box, complete these steps:
 
@@ -139,7 +139,7 @@ Use the following procedures to make these changes in Service Manager.
 
 3.  In the **Application Pools** pane, right-click **SM_AppPool**, and then click **Advanced Settings**.
 
-4.  In the **Advanced Settings** dialog box, in the **Process Model** area, click **Identity**, and then click the ellipsis (**�**) button.
+4.  In the **Advanced Settings** dialog box, in the **Process Model** area, click **Identity**, and then click the ellipsis (**...**) button.
 
 5.  In the **Application Pool Identity** dialog box, select **Custom account**, and then click **Set**.
 
@@ -162,6 +162,3 @@ Use the following procedures to make these changes in Service Manager.
 4.  In the **Tasks** pane, click **Properties**.
 
 5.  In the **Operational Database Account** page, in the **User name**, **Password**, and **Domain** boxes, type the new credentials for the Operational Database Account, and then click **OK**.
-
-
-
