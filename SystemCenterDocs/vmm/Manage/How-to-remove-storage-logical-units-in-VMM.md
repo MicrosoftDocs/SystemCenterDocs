@@ -1,12 +1,16 @@
 ---
-title: How to remove storage logical units in VMM
-ms.custom: na
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 27d1eac7-6467-4dc1-b9f5-77a3d09ce3d0
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  rayne-wiselman
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  How to remove storage logical units in VMM
+ms.technology:  virtual-machine-manager
+ms.assetid:  27d1eac7-6467-4dc1-b9f5-77a3d09ce3d0
 ---
+
 # How to remove storage logical units in VMM
 
 >Applies To: System Center 2016 Technical Preview - Virtual Machine Manager

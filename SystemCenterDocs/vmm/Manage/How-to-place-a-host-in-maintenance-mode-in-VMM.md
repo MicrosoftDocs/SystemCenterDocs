@@ -1,12 +1,16 @@
 ---
-title: How to place a host in maintenance mode in VMM
-ms.custom: na
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 46ee87d0-2823-4a82-a4b1-c67af1fb607f
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  rayne-wiselman
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  How to place a host in maintenance mode in VMM
+ms.technology:  virtual-machine-manager
+ms.assetid:  46ee87d0-2823-4a82-a4b1-c67af1fb607f
 ---
+
 # How to place a host in maintenance mode in VMM
 
 >Applies To: System Center 2016 Technical Preview - Virtual Machine Manager

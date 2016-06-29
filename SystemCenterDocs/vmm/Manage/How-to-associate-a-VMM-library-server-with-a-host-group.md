@@ -1,12 +1,16 @@
 ---
-title: How to associate a VMM library server with a host group
-ms.custom: na
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 61ab9fda-681f-4c65-ae39-a04f45b1287a
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  rayne-wiselman
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  How to associate a VMM library server with a host group
+ms.technology:  virtual-machine-manager
+ms.assetid:  61ab9fda-681f-4c65-ae39-a04f45b1287a
 ---
+
 # How to associate a VMM library server with a host group
 
 >Applies To: System Center 2016 Technical Preview - Virtual Machine Manager

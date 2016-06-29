@@ -1,12 +1,16 @@
 ---
-title: Disable support for SSL 2.0
-ms.custom: na
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 33dd388d-f131-4b38-969b-3b24f53953a2
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  rayne-wiselman
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  Disable support for SSL 2.0
+ms.technology:  virtual-machine-manager
+ms.assetid:  33dd388d-f131-4b38-969b-3b24f53953a2
 ---
+
 # Disable support for SSL 2.0
 
 >Applies To: System Center 2016 Technical Preview - Virtual Machine Manager

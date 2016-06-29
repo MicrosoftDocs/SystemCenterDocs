@@ -1,12 +1,16 @@
 ---
-title: How to create a VM for Virtual Fibre Channel with VMM
-ms.custom: na
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: b573cc26-2df8-4e9d-97df-406fdab6aa54
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  rayne-wiselman
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  How to create a VM for Virtual Fibre Channel with VMM
+ms.technology:  virtual-machine-manager
+ms.assetid:  b573cc26-2df8-4e9d-97df-406fdab6aa54
 ---
+
 # How to create a VM for Virtual Fibre Channel with VMM
 
 >Applies To: System Center 2016 Technical Preview - Virtual Machine Manager

@@ -1,15 +1,16 @@
 ---
-title: Deploying Hyper-V hosts or host clusters from bare metal with VMM
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - virtual-machine-manager
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 400997d9-08b8-41aa-8af7-72c462e1ea12
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  rayne-wiselman
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  Deploying Hyper V hosts or host clusters from bare metal with VMM
+ms.technology:  virtual-machine-manager
+ms.assetid:  400997d9-08b8-41aa-8af7-72c462e1ea12
 ---
+
 # Deploying Hyper-V hosts or host clusters from bare metal with VMM
 
 >Applies To: System Center 2016 Technical Preview - Virtual Machine Manager

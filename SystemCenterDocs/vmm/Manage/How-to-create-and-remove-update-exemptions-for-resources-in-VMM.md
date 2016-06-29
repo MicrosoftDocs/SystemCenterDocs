@@ -1,12 +1,16 @@
 ---
-title: How to create and remove update exemptions for resources in VMM
-ms.custom: na
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: f1ed9144-fcac-401b-bee8-179a12e76fac
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  rayne-wiselman
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  How to create and remove update exemptions for resources in VMM
+ms.technology:  virtual-machine-manager
+ms.assetid:  f1ed9144-fcac-401b-bee8-179a12e76fac
 ---
+
 # How to create and remove update exemptions for resources in VMM
 
 >Applies To: System Center 2016 Technical Preview - Virtual Machine Manager

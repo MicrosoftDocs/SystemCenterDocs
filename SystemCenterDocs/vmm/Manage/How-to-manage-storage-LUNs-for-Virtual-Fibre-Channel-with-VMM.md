@@ -1,12 +1,16 @@
 ---
-title: How to manage storage LUNs for Virtual Fibre Channel with VMM
-ms.custom: na
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 32532316-0282-491c-b884-6bf5fa787c7c
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  rayne-wiselman
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  How to manage storage LUNs for Virtual Fibre Channel with VMM
+ms.technology:  virtual-machine-manager
+ms.assetid:  32532316-0282-491c-b884-6bf5fa787c7c
 ---
+
 # How to manage storage LUNs for Virtual Fibre Channel with VMM
 
 >Applies To: System Center 2016 Technical Preview - Virtual Machine Manager

@@ -1,15 +1,16 @@
 ---
-title: How to convert a host&#39;s virtual switch to a logical switch in VMM
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - virtual-machine-manager
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: cabe44ea-905d-42f0-ab25-5d21a7af5875
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  rayne-wiselman
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  How to convert a host s virtual switch to a logical switch in VMM
+ms.technology:  virtual-machine-manager
+ms.assetid:  cabe44ea-905d-42f0-ab25-5d21a7af5875
 ---
+
 # How to convert a host&#39;s virtual switch to a logical switch in VMM
 If a host that you're managing with Virtual Machine Manager (VMM) has a standard virtual switch configuration, you can convert the configuration to use a logical switch.
 

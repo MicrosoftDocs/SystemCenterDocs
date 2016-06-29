@@ -1,15 +1,16 @@
 ---
-title: Preparing the fabric scenario in VMM
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - virtual-machine-manager
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 90b57d6b-bbeb-4949-867c-0a4fdd1faf8a
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  rayne-wiselman
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  Preparing the fabric scenario in VMM
+ms.technology:  virtual-machine-manager
+ms.assetid:  90b57d6b-bbeb-4949-867c-0a4fdd1faf8a
 ---
+
 # Preparing the fabric scenario in VMM
 
 >Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
@@ -54,7 +55,7 @@ The following table summarizes a set of sample **RESOURCES** that you could crea
     |Name|Subnet|Management|
     |--------|----------|--------------|
     |**Management - Seattle**|**10.0.0.0/24**|**7**|
-    |**Management – New York**|**172.16.0.0/24**|**12**|
+    |**Management ï¿½ New York**|**172.16.0.0/24**|**12**|
 
     IP address pool:
 
@@ -64,7 +65,7 @@ The following table summarizes a set of sample **RESOURCES** that you could crea
     |Description|**IP addresses for host management - Seattle**|
     |Begin IP address|**10.0.0.10**|
     |End IP address|**10.0.0.99**|
-    |Reserved range for virtual IP addresses associated with load balancers:|**10.0.0.25 – 10.0.0.35**|
+    |Reserved range for virtual IP addresses associated with load balancers:|**10.0.0.25 ï¿½ 10.0.0.35**|
     |Default gateway|**10.0.0.1**|
     |DNS server|**10.0.0.2**|
     |WINS server|**10.0.0.3**|

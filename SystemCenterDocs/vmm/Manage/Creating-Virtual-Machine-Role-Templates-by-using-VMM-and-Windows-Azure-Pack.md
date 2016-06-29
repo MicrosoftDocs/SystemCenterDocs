@@ -1,12 +1,16 @@
 ---
-title: Creating Virtual Machine Role Templates by using VMM and Windows Azure Pack
-ms.custom: na
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: e2581377-1e74-49c1-b02f-1fd245ccd478
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  rayne-wiselman
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  Creating Virtual Machine Role Templates by using VMM and Windows Azure Pack
+ms.technology:  virtual-machine-manager
+ms.assetid:  e2581377-1e74-49c1-b02f-1fd245ccd478
 ---
+
 # Creating Virtual Machine Role Templates by using VMM and Windows Azure Pack
 
 >Applies To: System Center 2016 Technical Preview - Virtual Machine Manager

@@ -1,15 +1,16 @@
 ---
-title: Resources for System Center Technical Preview - Virtual Machine Manager
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - virtual-machine-manager
-ms.tgt_pltfrm: na
-ms.topic: get-started-article
-ms.assetid: 7e1c809e-34c5-46ea-b056-7376befd6b63
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  rayne-wiselman
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  Resources for System Center Technical Preview   Virtual Machine Manager
+ms.technology:  virtual-machine-manager
+ms.assetid:  7e1c809e-34c5-46ea-b056-7376befd6b63
 ---
+
 # Resources for System Center Technical Preview - Virtual Machine Manager
 
 >Applies To: System Center 2016 Technical Preview - Virtual Machine Manager

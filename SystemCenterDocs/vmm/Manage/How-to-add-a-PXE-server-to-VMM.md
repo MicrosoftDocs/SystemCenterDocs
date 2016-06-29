@@ -1,15 +1,16 @@
 ---
-title: How to add a PXE server to VMM
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - virtual-machine-manager
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: a0f97147-d9b7-43b3-ad1a-9a5b2c138ab5
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  rayne-wiselman
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  How to add a PXE server to VMM
+ms.technology:  virtual-machine-manager
+ms.assetid:  a0f97147-d9b7-43b3-ad1a-9a5b2c138ab5
 ---
+
 # How to add a PXE server to VMM
 
 >Applies To: System Center 2016 Technical Preview - Virtual Machine Manager

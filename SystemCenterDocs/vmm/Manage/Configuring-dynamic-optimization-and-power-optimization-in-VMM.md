@@ -1,12 +1,16 @@
 ---
-title: Configuring dynamic optimization and power optimization in VMM
-ms.custom: na
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 15f08a49-f67e-45b0-87a4-08d82c18a92f
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  rayne-wiselman
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  Configuring dynamic optimization and power optimization in VMM
+ms.technology:  virtual-machine-manager
+ms.assetid:  15f08a49-f67e-45b0-87a4-08d82c18a92f
 ---
+
 # Configuring dynamic optimization and power optimization in VMM
 
 >Applies To: System Center 2016 Technical Preview - Virtual Machine Manager

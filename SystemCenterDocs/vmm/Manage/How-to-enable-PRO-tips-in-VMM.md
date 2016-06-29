@@ -1,12 +1,16 @@
 ---
-title: How to enable PRO tips in VMM
-ms.custom: na
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 99bb953e-941d-4f75-9199-77599c4a396b
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  rayne-wiselman
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  How to enable PRO tips in VMM
+ms.technology:  virtual-machine-manager
+ms.assetid:  99bb953e-941d-4f75-9199-77599c4a396b
 ---
+
 # How to enable PRO tips in VMM
 
 >Applies To: System Center 2016 Technical Preview - Virtual Machine Manager

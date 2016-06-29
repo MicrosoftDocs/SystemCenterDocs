@@ -1,12 +1,16 @@
 ---
-title: How to view and remove orphaned resources in VMM
-ms.custom: na
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: cd103a0c-a62c-4fb8-8707-97569e4a9ab5
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  rayne-wiselman
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  How to view and remove orphaned resources in VMM
+ms.technology:  virtual-machine-manager
+ms.assetid:  cd103a0c-a62c-4fb8-8707-97569e4a9ab5
 ---
+
 # How to view and remove orphaned resources in VMM
 
 >Applies To: System Center 2016 Technical Preview - Virtual Machine Manager

@@ -1,12 +1,16 @@
 ---
-title: How to install a WSUS server for VMM
-ms.custom: na
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 5b60fc35-916b-4e54-a17f-7094877d09d9
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  rayne-wiselman
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  How to install a WSUS server for VMM
+ms.technology:  virtual-machine-manager
+ms.assetid:  5b60fc35-916b-4e54-a17f-7094877d09d9
 ---
+
 # How to install a WSUS server for VMM
 
 >Applies To: System Center 2016 Technical Preview - Virtual Machine Manager

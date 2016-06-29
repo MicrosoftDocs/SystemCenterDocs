@@ -1,12 +1,16 @@
 ---
-title: How to view and modify properties of a deployed virtual machine in VMM
-ms.custom: na
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 65cfeb42-4516-42c9-8d33-1717e6cfc9a2
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  rayne-wiselman
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  How to view and modify properties of a deployed virtual machine in VMM
+ms.technology:  virtual-machine-manager
+ms.assetid:  65cfeb42-4516-42c9-8d33-1717e6cfc9a2
 ---
+
 # How to view and modify properties of a deployed virtual machine in VMM
 
 >Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
@@ -23,7 +27,7 @@ The IP addresses displayed in virtual machine properties include all addresses o
 
 3.  Under **VMs**, right-click the name of the virtual machine, and then click **Properties**.
 
-4.  In the virtual machine’s properties dialog box, click on the various tabs to view the properties of the virtual machine.
+4.  In the virtual machineï¿½s properties dialog box, click on the various tabs to view the properties of the virtual machine.
 
     For example:
 

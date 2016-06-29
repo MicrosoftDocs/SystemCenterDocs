@@ -1,12 +1,16 @@
 ---
-title: Requirements for Linux-based virtual machines
-ms.custom: na
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: c91336a5-147e-4c9b-9bbc-a0468f9ed945
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  rayne-wiselman
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  Requirements for Linux based virtual machines
+ms.technology:  virtual-machine-manager
+ms.assetid:  c91336a5-147e-4c9b-9bbc-a0468f9ed945
 ---
+
 # Requirements for Linux-based virtual machines
 
 >Applies To: System Center 2016 Technical Preview - Virtual Machine Manager

@@ -1,14 +1,16 @@
 ---
-title: How to add VMware ESX hosts to VMM
-ms.custom: na
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - virtual-machine-manager
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: a88e021c-e21f-4947-a98f-fb3ec68bbb59
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  rayne-wiselman
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  How to add VMware ESX hosts to VMM
+ms.technology:  virtual-machine-manager
+ms.assetid:  a88e021c-e21f-4947-a98f-fb3ec68bbb59
 ---
+
 # How to add VMware ESX hosts to VMM
 
 >Applies To: System Center 2016 Technical Preview - Virtual Machine Manager

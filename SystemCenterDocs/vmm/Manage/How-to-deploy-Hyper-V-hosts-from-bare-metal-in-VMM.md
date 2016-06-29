@@ -1,20 +1,21 @@
 ---
-title: How to deploy Hyper-V hosts from bare metal in VMM
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - virtual-machine-manager
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: b0ad90c3-5e6f-4a69-83dd-983ee9a9e4c6
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  rayne-wiselman
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  How to deploy Hyper V hosts from bare metal in VMM
+ms.technology:  virtual-machine-manager
+ms.assetid:  b0ad90c3-5e6f-4a69-83dd-983ee9a9e4c6
 ---
+
 # How to deploy Hyper-V hosts from bare metal in VMM
 
 >Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
 
-You can use Virtual Machine Manager (VMM) to deploy fully-managed Hyper-V hosts, either to “bare-metal computers” (no operating system installed), or computers with an installed operating system that will be overwritten during the process. For this deployment, VMM does the following:
+You can use Virtual Machine Manager (VMM) to deploy fully-managed Hyper-V hosts, either to ï¿½bare-metal computersï¿½ (no operating system installed), or computers with an installed operating system that will be overwritten during the process. For this deployment, VMM does the following:
 
 1.  Discovers the physical computer through out-of-band management
 
@@ -71,7 +72,7 @@ You can use Virtual Machine Manager (VMM) to deploy fully-managed Hyper-V hosts,
 
     2.  Select the physical computer profile.
 
-        For example, there might be a physical computer profile called **WS12R2Ent Hyper-V Hosts – DHCP**.
+        For example, there might be a physical computer profile called **WS12R2Ent Hyper-V Hosts ï¿½ DHCP**.
 
 10. On the **Deployment Customization** page, review the list of computers again, and provide information for each computer that you want to include. If you see a computer that you don't want to include, select the BMC (identified by IP address) and then click **Remove**.
 

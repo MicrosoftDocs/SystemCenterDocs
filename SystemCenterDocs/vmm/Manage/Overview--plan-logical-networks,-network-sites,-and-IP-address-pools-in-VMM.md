@@ -1,15 +1,16 @@
 ---
-title: Overview: plan logical networks, network sites, and IP address pools in VMM
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - virtual-machine-manager
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 56bcb452-b2c0-49ba-a615-62af65dfc066
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  rayne-wiselman
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  Overview  plan logical networks, network sites, and IP address pools in VMM
+ms.technology:  virtual-machine-manager
+ms.assetid:  56bcb452-b2c0-49ba-a615-62af65dfc066
 ---
+
 # Overview: plan logical networks, network sites, and IP address pools in VMM
 You can use Virtual Machine Manager (VMM) to manage your physical and virtualized network infrastructure. *Logical networks* form the foundation of your network configuration in VMM. You create and name logical networks based on the function they serve in your environment, for example, the “Management,” “Cluster,” “Storage,” or “Tenant” networks. Within each logical network, you create one or more *network sites* that specify IP subnets, virtual local area networks (VLANs), or subnet/VLAN pairs that represent your environment.
 
