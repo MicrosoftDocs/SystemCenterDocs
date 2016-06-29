@@ -1,15 +1,16 @@
 ---
-title: Scaling Service Management Automation up or down
-ms.custom: na
-ms.prod: system-center-2012
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - orchestrator
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 00e55889-02fc-49a9-9a52-f8cbdaf36255
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  bwren
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  Scaling Service Management Automation up or down
+ms.technology:  service-management-automation
+ms.assetid:  00e55889-02fc-49a9-9a52-f8cbdaf36255
 ---
+
 # Scaling Service Management Automation up or down
 
 >Applies To: Windows Azure Pack for Windows Server, System Center 2012 R2 Orchestrator

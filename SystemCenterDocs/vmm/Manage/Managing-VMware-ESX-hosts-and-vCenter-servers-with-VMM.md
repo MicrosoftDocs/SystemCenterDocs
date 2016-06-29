@@ -1,14 +1,16 @@
 ---
-title: Managing VMware ESX hosts and vCenter servers with VMM
-ms.custom: na
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - virtual-machine-manager
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: ee1ed0d8-96fb-4d0c-bbbe-8ba25a0c45eb
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  rayne-wiselman
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  Managing VMware ESX hosts and vCenter servers with VMM
+ms.technology:  virtual-machine-manager
+ms.assetid:  ee1ed0d8-96fb-4d0c-bbbe-8ba25a0c45eb
 ---
+
 # Managing VMware ESX hosts and vCenter servers with VMM
 
 >Applies To: System Center 2016 Technical Preview - Virtual Machine Manager

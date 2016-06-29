@@ -1,12 +1,16 @@
 ---
-title: Integrating VMM and System Center Operations Manager
-ms.custom: na
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: ac1948c6-41f2-4c5b-9933-b307a2e21420
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  rayne-wiselman
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  Integrating VMM and System Center Operations Manager
+ms.technology:  virtual-machine-manager
+ms.assetid:  ac1948c6-41f2-4c5b-9933-b307a2e21420
 ---
+
 # Integrating VMM and System Center Operations Manager
 
 >Applies To: System Center 2016 Technical Preview - Virtual Machine Manager

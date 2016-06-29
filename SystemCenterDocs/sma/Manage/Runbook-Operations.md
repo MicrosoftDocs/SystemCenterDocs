@@ -1,15 +1,16 @@
 ---
-title: Runbook Operations
-ms.custom: na
-ms.prod: system-center-2012
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - orchestrator
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: c8ccceea-3bc2-4487-b174-4f0edbd51fa2
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  bwren
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  Runbook Operations
+ms.technology:  service-management-automation
+ms.assetid:  c8ccceea-3bc2-4487-b174-4f0edbd51fa2
 ---
+
 # Runbook Operations
 
 >Applies To: Windows Azure Pack for Windows Server

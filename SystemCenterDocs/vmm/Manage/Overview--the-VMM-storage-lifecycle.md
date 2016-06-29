@@ -1,12 +1,16 @@
 ---
-title: Overview: the VMM storage lifecycle
-ms.custom: na
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 9b0d5224-065f-4418-87ab-88fcb809b37d
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  rayne-wiselman
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  Overview  the VMM storage lifecycle
+ms.technology:  virtual-machine-manager
+ms.assetid:  9b0d5224-065f-4418-87ab-88fcb809b37d
 ---
+
 # Overview: the VMM storage lifecycle
 
 >Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
@@ -37,7 +41,7 @@ With Virtual Machine Manager (VMM), you can simplify and automate the process of
 
 3.  **Configure the storage structure.** After VMM discovers resources, you can use VMM to configure them. For example, you can use VMM to initialize disks and format volumes. You can configure either block or file storage types: depending on the type of storage device, you can create and configure file shares or logical units.
 
-    Alternatively, you can create logical units out-of-band by using your array vendor’s management tools. 
+    Alternatively, you can create logical units out-of-band by using your array vendorï¿½s management tools. 
       If you use this method, it takes some time for VMM to discover and reflect the changes.
 
     For more information, see the following topics:

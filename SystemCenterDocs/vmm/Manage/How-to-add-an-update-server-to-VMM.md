@@ -1,12 +1,16 @@
 ---
-title: How to add an update server to VMM
-ms.custom: na
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 414f9079-4c8f-4433-b78d-5cec4ecf56ee
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  rayne-wiselman
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  How to add an update server to VMM
+ms.technology:  virtual-machine-manager
+ms.assetid:  414f9079-4c8f-4433-b78d-5cec4ecf56ee
 ---
+
 # How to add an update server to VMM
 
 >Applies To: System Center 2016 Technical Preview - Virtual Machine Manager

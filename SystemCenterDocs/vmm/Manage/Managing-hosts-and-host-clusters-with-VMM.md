@@ -1,14 +1,16 @@
 ---
-title: Managing hosts and host clusters with VMM
-ms.custom: na
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - virtual-machine-manager
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 094b82ff-3baf-4ed2-bd6d-6d53e24e3916
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  rayne-wiselman
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  Managing hosts and host clusters with VMM
+ms.technology:  virtual-machine-manager
+ms.assetid:  094b82ff-3baf-4ed2-bd6d-6d53e24e3916
 ---
+
 # Managing hosts and host clusters with VMM
 
 >Applies To: System Center 2016 Technical Preview - Virtual Machine Manager

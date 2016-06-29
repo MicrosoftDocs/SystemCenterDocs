@@ -1,15 +1,16 @@
 ---
-title: Managing network resources with VMM
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - virtual-machine-manager
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 80d9a925-0688-44bf-b1bd-60e79baa63a1
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  rayne-wiselman
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  Managing network resources with VMM
+ms.technology:  virtual-machine-manager
+ms.assetid:  80d9a925-0688-44bf-b1bd-60e79baa63a1
 ---
+
 # Managing network resources with VMM
 
 >Applies To: System Center 2016 Technical Preview - Virtual Machine Manager

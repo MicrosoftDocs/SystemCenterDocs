@@ -1,13 +1,16 @@
 ---
-title: How to configure storage on a Hyper-V host in VMM
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: fd77880c-3a53-4c7d-980f-ef392909bff9
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  rayne-wiselman
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  How to configure storage on a Hyper V host in VMM
+ms.technology:  virtual-machine-manager
+ms.assetid:  fd77880c-3a53-4c7d-980f-ef392909bff9
 ---
+
 # How to configure storage on a Hyper-V host in VMM
 
 >Applies To: System Center 2016 Technical Preview - Virtual Machine Manager

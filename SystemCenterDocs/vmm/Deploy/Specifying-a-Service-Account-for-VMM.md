@@ -1,15 +1,16 @@
 ---
-title: Specifying a Service Account for VMM
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - virtual-machine-manager
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: edaf90db-563d-4fd3-b6ef-55ea5abc7835
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  rayne-wiselman
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  Specifying a Service Account for VMM
+ms.technology:  virtual-machine-manager
+ms.assetid:  edaf90db-563d-4fd3-b6ef-55ea5abc7835
 ---
+
 # Specifying a Service Account for VMM
 
 >Applies To: System Center 2016 Technical Preview - Virtual Machine Manager

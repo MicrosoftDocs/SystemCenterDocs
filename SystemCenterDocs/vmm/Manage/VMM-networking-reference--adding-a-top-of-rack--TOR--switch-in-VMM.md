@@ -1,15 +1,16 @@
 ---
-title: VMM networking reference: adding a top-of-rack (TOR) switch in VMM
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - virtual-machine-manager
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 4b1a2528-00f0-4d42-b045-635f4ba888c1
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  rayne-wiselman
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  VMM networking reference  adding a top of rack  TOR  switch in VMM
+ms.technology:  virtual-machine-manager
+ms.assetid:  4b1a2528-00f0-4d42-b045-635f4ba888c1
 ---
+
 # VMM networking reference: adding a top-of-rack (TOR) switch in VMM
 With System Center 2016 Technical Preview, you can add a top-of-rack (TOR) switch as a resource in Virtual Machine Manager (VMM). This helps you keep the settings in the TOR switch synchronized with the settings that you see in VMM.
 

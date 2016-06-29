@@ -1,15 +1,16 @@
 ---
-title: How to purge the Service Management Automation database
-ms.custom: na
-ms.prod: system-center-2012
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - orchestrator
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 09b8fca5-e1db-4775-910d-48cb8214401b
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  bwren
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  How to purge the Service Management Automation database
+ms.technology:  service-management-automation
+ms.assetid:  09b8fca5-e1db-4775-910d-48cb8214401b
 ---
+
 # How to purge the Service Management Automation database
 
 >Applies To: Windows Azure Pack for Windows Server, System Center 2012 R2 Orchestrator
@@ -26,7 +27,7 @@ The database purge job is automatic, but it can be regulated by the Service Mana
 
 -   By default, the database purge job runs every 15 minutes, and it runs only if there are records to purge.
 
--   Records are purged only if they are older than the default duration of 30 days. This time is configurable by using the **Set-SmaAdminConfiguration** cmdlet and setting the **–PurgeJobsOlderThanCountDays** parameter.
+-   Records are purged only if they are older than the default duration of 30 days. This time is configurable by using the **Set-SmaAdminConfiguration** cmdlet and setting the **ï¿½PurgeJobsOlderThanCountDays** parameter.
 
 -   If the total job record count exceeds the **MaxJobRecords** parameter set by the same **Set-SmaAdminConfiguration** cmdlet, then more job records will be purged. The default value for this parameter is 120,000 records.
 

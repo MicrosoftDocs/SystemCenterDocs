@@ -1,15 +1,16 @@
 ---
-title: Configuring Distributed Key Management in VMM
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - virtual-machine-manager
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 1238b5b8-98fc-4c2b-bdb5-253e4e1b3baa
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  rayne-wiselman
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  Configuring Distributed Key Management in VMM
+ms.technology:  virtual-machine-manager
+ms.assetid:  1238b5b8-98fc-4c2b-bdb5-253e4e1b3baa
 ---
+
 # Configuring Distributed Key Management in VMM
 
 >Applies To: System Center 2016 Technical Preview - Virtual Machine Manager

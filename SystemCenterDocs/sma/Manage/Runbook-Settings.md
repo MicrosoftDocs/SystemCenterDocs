@@ -1,15 +1,16 @@
 ---
-title: Runbook Settings
-ms.custom: na
-ms.prod: system-center-2012
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - orchestrator
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 55d44d60-9ddf-45d5-b0db-b67e3941e134
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  bwren
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  Runbook Settings
+ms.technology:  service-management-automation
+ms.assetid:  55d44d60-9ddf-45d5-b0db-b67e3941e134
 ---
+
 # Runbook Settings
 
 >Applies To: Windows Azure Pack for Windows Server
@@ -50,7 +51,7 @@ $webServer = 'https://MyServer'
 $port = 9090
 $runbookName = "Sample-TestRunbook"
 
-Set-SmaRunbookConfiguration –WebServiceEndpoint $webServer –Port $port –Name $runbookName –Description "Sample runbook" –LogVerbose $true
+Set-SmaRunbookConfiguration ï¿½WebServiceEndpoint $webServer ï¿½Port $port ï¿½Name $runbookName ï¿½Description "Sample runbook" ï¿½LogVerbose $true
 
 ```
 

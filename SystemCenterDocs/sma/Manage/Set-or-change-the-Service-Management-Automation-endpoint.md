@@ -1,15 +1,16 @@
 ---
-title: Set or change the Service Management Automation endpoint
-ms.custom: na
-ms.prod: system-center-2012
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - orchestrator
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 58447117-dead-41bc-afc9-15fc82482dca
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  bwren
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  Set or change the Service Management Automation endpoint
+ms.technology:  service-management-automation
+ms.assetid:  58447117-dead-41bc-afc9-15fc82482dca
 ---
+
 # Set or change the Service Management Automation endpoint
 
 >Applies To: Windows Azure Pack for Windows Server

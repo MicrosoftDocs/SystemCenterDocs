@@ -1,12 +1,16 @@
 ---
-title: How to configure priority in VMM for a virtual machine on a host cluster
-ms.custom: na
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: a5fa6cd1-8249-4d87-b2c1-d14aa003176b
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  rayne-wiselman
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  How to configure priority in VMM for a virtual machine on a host cluster
+ms.technology:  virtual-machine-manager
+ms.assetid:  a5fa6cd1-8249-4d87-b2c1-d14aa003176b
 ---
+
 # How to configure priority in VMM for a virtual machine on a host cluster
 
 >Applies To: System Center 2016 Technical Preview - Virtual Machine Manager

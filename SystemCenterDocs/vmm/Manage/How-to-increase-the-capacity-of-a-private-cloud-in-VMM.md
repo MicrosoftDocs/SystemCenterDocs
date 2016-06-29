@@ -1,12 +1,16 @@
 ---
-title: How to increase the capacity of a private cloud in VMM
-ms.custom: na
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: abc04f90-e31f-4696-9cec-56cc7895af0c
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  rayne-wiselman
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  How to increase the capacity of a private cloud in VMM
+ms.technology:  virtual-machine-manager
+ms.assetid:  abc04f90-e31f-4696-9cec-56cc7895af0c
 ---
+
 # How to increase the capacity of a private cloud in VMM
 
 >Applies To: System Center 2016 Technical Preview - Virtual Machine Manager

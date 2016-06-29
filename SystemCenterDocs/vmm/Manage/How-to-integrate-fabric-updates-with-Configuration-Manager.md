@@ -1,12 +1,16 @@
 ---
-title: How to integrate fabric updates with Configuration Manager
-ms.custom: na
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 4e867fdc-a1a1-4766-b34f-3e2910725088
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  rayne-wiselman
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  How to integrate fabric updates with Configuration Manager
+ms.technology:  virtual-machine-manager
+ms.assetid:  4e867fdc-a1a1-4766-b34f-3e2910725088
 ---
+
 # How to integrate fabric updates with Configuration Manager
 
 >Applies To: System Center 2016 Technical Preview - Virtual Machine Manager

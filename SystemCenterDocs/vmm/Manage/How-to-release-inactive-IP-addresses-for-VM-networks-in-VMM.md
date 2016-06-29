@@ -1,15 +1,16 @@
 ---
-title: How to release inactive IP addresses for VM networks in VMM
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - virtual-machine-manager
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 2f172715-1a44-41a9-9560-f4a41b6c8dd1
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  rayne-wiselman
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  How to release inactive IP addresses for VM networks in VMM
+ms.technology:  virtual-machine-manager
+ms.assetid:  2f172715-1a44-41a9-9560-f4a41b6c8dd1
 ---
+
 # How to release inactive IP addresses for VM networks in VMM
 
 >Applies To: System Center 2016 Technical Preview - Virtual Machine Manager

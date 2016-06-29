@@ -1,14 +1,16 @@
 ---
-title: How to import VMware templates into VMM
-ms.custom: na
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - virtual-machine-manager
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: ee39fd79-6eab-493a-98dd-09304108c1fb
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  rayne-wiselman
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  How to import VMware templates into VMM
+ms.technology:  virtual-machine-manager
+ms.assetid:  ee39fd79-6eab-493a-98dd-09304108c1fb
 ---
+
 # How to import VMware templates into VMM
 
 >Applies To: System Center 2016 Technical Preview - Virtual Machine Manager

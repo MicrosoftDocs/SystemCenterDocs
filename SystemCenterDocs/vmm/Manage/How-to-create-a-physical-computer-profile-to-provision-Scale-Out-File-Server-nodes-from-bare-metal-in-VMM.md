@@ -1,12 +1,16 @@
 ---
-title: How to create a physical computer profile to provision Scale-Out File Server nodes from bare metal in VMM_1
-ms.custom: na
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: a8910329-fa58-494e-a833-633936e56644
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  rayne-wiselman
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  How to create a physical computer profile to provision Scale Out File Server nodes from bare metal in VMM
+ms.technology:  virtual-machine-manager
+ms.assetid:  a8910329-fa58-494e-a833-633936e56644
 ---
+
 # How to create a physical computer profile to provision Scale-Out File Server nodes from bare metal in VMM_1
 
 >Applies To: System Center 2016 Technical Preview - Virtual Machine Manager

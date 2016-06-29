@@ -1,15 +1,16 @@
 ---
-title: Service Management Automation
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - service-management-automation-(sma)
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 4398d1ea-d63c-4fc8-b7f0-4e8fc80c00cc
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  bwren
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  Service Management Automation
+ms.technology:  service-management-automation
+ms.assetid:  4398d1ea-d63c-4fc8-b7f0-4e8fc80c00cc
 ---
+
 # Service Management Automation
 
 >Applies To: System Center Technical Preview

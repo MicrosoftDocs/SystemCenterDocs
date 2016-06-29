@@ -1,12 +1,16 @@
 ---
-title: Performing update remediation in VMM
-ms.custom: na
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 11d8b9d6-54ce-4bd1-8e27-73a5ae228321
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  rayne-wiselman
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  Performing update remediation in VMM
+ms.technology:  virtual-machine-manager
+ms.assetid:  11d8b9d6-54ce-4bd1-8e27-73a5ae228321
 ---
+
 # Performing update remediation in VMM
 
 >Applies To: System Center 2016 Technical Preview - Virtual Machine Manager

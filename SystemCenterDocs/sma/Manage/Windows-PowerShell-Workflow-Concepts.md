@@ -1,15 +1,16 @@
 ---
-title: Windows PowerShell Workflow Concepts
-ms.custom: na
-ms.prod: system-center-2012
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - orchestrator
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 25937b4f-40bc-4765-9322-5b3a0fd1ff8d
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  bwren
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  Windows PowerShell Workflow Concepts
+ms.technology:  service-management-automation
+ms.assetid:  25937b4f-40bc-4765-9322-5b3a0fd1ff8d
 ---
+
 # Windows PowerShell Workflow Concepts
 
 >Applies To: Windows Azure Pack for Windows Server, System Center 2012 R2 Orchestrator
@@ -159,7 +160,7 @@ $cred = New-Object -TypeName System.Management.Automation.PSCredential -Argument
 InlineScript
 {
   <Commands>
-} –PSComputer $con.ComputerName –PSCredential $cred
+} ï¿½PSComputer $con.ComputerName ï¿½PSCredential $cred
 ```
 
 While **InlineScript** activities may be critical in certain runbooks, they should only be used when necessary for the following reasons:
@@ -174,13 +175,13 @@ If you do need to use an **InlineScript**, you should minimize its scope. For ex
 
 -   You can [checkpoint](#BK_Checkpoints) the workflow after each iteration. If the job is suspended or interrupted and resumed, the loop will be able to resume.
 
--   You can use **ForEach –Parallel** to handle collection items concurrently.
+-   You can use **ForEach ï¿½Parallel** to handle collection items concurrently.
 
 Keep the following recommendations in mind if you do use an **InlineScript** in your runbook:
 
 -   You can pass values into the script though with the **$Using** scope modifier. For example, a variable called $abc that has been set outside of the InlineScript would become $using:abc inside an **InlineScript**.
 
--   To return output from an **InlineScript**, assign the output to a variable and output any data to be returned to the output stream. The following example assigns the string “hi” to a variable called $output.
+-   To return output from an **InlineScript**, assign the output to a variable and output any data to be returned to the output stream. The following example assigns the string ï¿½hiï¿½ to a variable called $output.
 
     ```
     $output = InlineScript { Write-Output "hi" }

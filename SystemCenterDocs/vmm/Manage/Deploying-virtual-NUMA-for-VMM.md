@@ -1,12 +1,16 @@
 ---
-title: Deploying virtual NUMA for VMM
-ms.custom: na
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 59686634-a388-44cc-ac3b-bd14d7866243
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  rayne-wiselman
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  Deploying virtual NUMA for VMM
+ms.technology:  virtual-machine-manager
+ms.assetid:  59686634-a388-44cc-ac3b-bd14d7866243
 ---
+
 # Deploying virtual NUMA for VMM
 
 >Applies To: System Center 2016 Technical Preview - Virtual Machine Manager

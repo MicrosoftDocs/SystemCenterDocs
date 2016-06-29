@@ -1,15 +1,16 @@
 ---
-title: Creating or Importing a Runbook
-ms.custom: na
-ms.prod: system-center-2012
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - orchestrator
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: d14db796-a3e5-4b1d-a098-e734ceae2e0e
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  bwren
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  Creating or Importing a Runbook
+ms.technology:  service-management-automation
+ms.assetid:  d14db796-a3e5-4b1d-a098-e734ceae2e0e
 ---
+
 # Creating or Importing a Runbook
 
 >Applies To: Windows Azure Pack for Windows Server
@@ -76,8 +77,8 @@ $port = 9090
 $runbookName = "Test-Runbook"
 $scriptPath = "c:\runbooks\Test-Runbook.ps1"
 
-Import-SmaRunbook –WebServiceEndpoint $webServer –Port $port –Path $scriptPath 
-Publish-SMARunbook –WebServiceEndpoint $webServer –Port $port –Name $runbookName
+Import-SmaRunbook ï¿½WebServiceEndpoint $webServer ï¿½Port $port ï¿½Path $scriptPath 
+Publish-SMARunbook ï¿½WebServiceEndpoint $webServer ï¿½Port $port ï¿½Name $runbookName
 
 ```
 

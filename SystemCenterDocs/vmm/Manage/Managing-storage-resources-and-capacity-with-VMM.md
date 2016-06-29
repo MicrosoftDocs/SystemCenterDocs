@@ -1,14 +1,16 @@
 ---
-title: Managing storage resources and capacity with VMM
-ms.custom: na
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - virtual-machine-manager
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 2175427a-aa42-43ce-abb0-2841bc1ff1a9
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  rayne-wiselman
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  Managing storage resources and capacity with VMM
+ms.technology:  virtual-machine-manager
+ms.assetid:  2175427a-aa42-43ce-abb0-2841bc1ff1a9
 ---
+
 # Managing storage resources and capacity with VMM
 
 >Applies To: System Center 2016 Technical Preview - Virtual Machine Manager

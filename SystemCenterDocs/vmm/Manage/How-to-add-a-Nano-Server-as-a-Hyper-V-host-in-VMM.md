@@ -1,15 +1,16 @@
 ---
-title: How to add a Nano Server as a Hyper-V host in VMM
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - virtual-machine-manager
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 424a7893-2c1f-40e9-990a-4d34e0d0eeb8
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  rayne-wiselman
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  How to add a Nano Server as a Hyper V host in VMM
+ms.technology:  virtual-machine-manager
+ms.assetid:  424a7893-2c1f-40e9-990a-4d34e0d0eeb8
 ---
+
 # How to add a Nano Server as a Hyper-V host in VMM
 
 >Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
@@ -37,7 +38,7 @@ New-NanoServerImage -MediaPath <path to root of media> -BasePath .\Base -TargetP
 
 
 ```
-New-NanoServerImage -MediaPath F:\ -BasePath .\Base -TargetPath .\Nano1\NanoServer.vhd -ComputerName Nano-srv1 -OEMDrivers –Clustering –EnableRemoteManagementPort -Packages Microsoft-NanoServer-SCVMM-Package,Microsoft-NanoServer-SCVMM-Compute-Package”
+New-NanoServerImage -MediaPath F:\ -BasePath .\Base -TargetPath .\Nano1\NanoServer.vhd -ComputerName Nano-srv1 -OEMDrivers ï¿½Clustering ï¿½EnableRemoteManagementPort -Packages Microsoft-NanoServer-SCVMM-Package,Microsoft-NanoServer-SCVMM-Compute-Packageï¿½
 ```
 The example above creates a VHD from an ISO mounted as F:. When creating the VHD it uses a folder called Base in the same directory where you ran New-NanoServerImage; it places the VHD in a folder called Nano1 in the folder from where the command is run. The computer name in this example is Nano-srv1 and includes the OEM drivers installed for most common hardware. It also has the clustering feature enabled. The VHD has remote management of the Nano server enabled, even from the systems which are not in the same subnet. If the server uses UEFI to boot, you need to change the script from NanoServer.vhd to NanoServer.vhdx
 
@@ -54,7 +55,7 @@ o   Run **bcdboot d:\windows** (in this example, it's mounted under D:)
 o   Unmount the VHD.
 6.  Boot the physical computer into the Nano Server VHD.
 7.  Log on to the Recovery Console (see the "Nano Server Recovery Console" section in [this article](https://technet.microsoft.com/library/mt126167.aspx)), using the administrator and password you supplied while running the script in Step 3 and obtain the IP address of the Nano Server-based host.
-8.  Ensure that the Nano Server is joined to the same domain as the VMM Server (For joining a Nano Server-based host to a domain, see the section on “Joining Domains” in [this article](https://technet.microsoft.com/library/mt126167.aspx))
+8.  Ensure that the Nano Server is joined to the same domain as the VMM Server (For joining a Nano Server-based host to a domain, see the section on ï¿½Joining Domainsï¿½ in [this article](https://technet.microsoft.com/library/mt126167.aspx))
 9. Ensure that the VMM Service account and the Run-as-account to be used are added to the administrators group on Nano server   
 10. Once you have the Nano Server-based host ready, adding it to Virtual Machine Manager is exactly similar to adding a regular Windows server host. For more details, see [Adding Windows Servers as Hyper-V hosts in VMM](Adding-Windows-servers-as-Hyper-V-hosts-or-host-clusters-in-VMM.md).
 
@@ -71,7 +72,7 @@ New-NanoServerImage -MediaPath <path to root of media> -BasePath .\Base -TargetP
 **Example PowerShell script**
 
 ```
-New-NanoServerImage -MediaPath F:\ -BasePath .\Base -TargetPath .\Nano1\Nano.vhd -ComputerName Nano1 -GuestDrivers -Packages Microsoft-NanoServer-SCVMM-Package,Microsoft-NanoServer-SCVMM-Compute-Package”
+New-NanoServerImage -MediaPath F:\ -BasePath .\Base -TargetPath .\Nano1\Nano.vhd -ComputerName Nano1 -GuestDrivers -Packages Microsoft-NanoServer-SCVMM-Package,Microsoft-NanoServer-SCVMM-Compute-Packageï¿½
 ```
 
 This example creates a VHD from an ISO mounted as F:. When creating the VHD it will use a folder called Base in the same directory where you ran New-NanoServerImage; it will place the VHD in a folder called Nano1 in the folder from where the command is run. The computer name will be Nano1 and will virtual machine drivers installed running Hyper-V. If you want a Generation 1 virtual machine, generate a VHD image by specifying a .vhd extension for -TargetPath. For a Generation 2 virtual machine, generate a VHDX image by specifying a .vhdx extension for -TargetPath. 

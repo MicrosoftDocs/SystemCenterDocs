@@ -1,12 +1,16 @@
 ---
-title: Prerequisites: creating a Scale-Out File Server in VMM from existing servers
-ms.custom: na
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: b5244c8e-e3a7-4345-90e4-d103837500c7
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  rayne-wiselman
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  Prerequisites  creating a Scale Out File Server in VMM from existing servers
+ms.technology:  virtual-machine-manager
+ms.assetid:  b5244c8e-e3a7-4345-90e4-d103837500c7
 ---
+
 # Prerequisites: creating a Scale-Out File Server in VMM from existing servers
 
 >Applies To: System Center 2016 Technical Preview - Virtual Machine Manager

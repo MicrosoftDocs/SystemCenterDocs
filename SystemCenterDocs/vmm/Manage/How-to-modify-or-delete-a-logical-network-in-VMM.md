@@ -1,15 +1,16 @@
 ---
-title: How to modify or delete a logical network in VMM
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - virtual-machine-manager
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 2705c237-8576-44bb-9871-f5ba644d854e
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  rayne-wiselman
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  How to modify or delete a logical network in VMM
+ms.technology:  virtual-machine-manager
+ms.assetid:  2705c237-8576-44bb-9871-f5ba644d854e
 ---
+
 # How to modify or delete a logical network in VMM
 
 >Applies To: System Center 2016 Technical Preview - Virtual Machine Manager

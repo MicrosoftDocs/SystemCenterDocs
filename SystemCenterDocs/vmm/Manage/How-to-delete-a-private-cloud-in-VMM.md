@@ -1,12 +1,16 @@
 ---
-title: How to delete a private cloud in VMM
-ms.custom: na
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 129b0f58-bc3b-4ee4-bd5f-0048ba24179c
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  rayne-wiselman
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  How to delete a private cloud in VMM
+ms.technology:  virtual-machine-manager
+ms.assetid:  129b0f58-bc3b-4ee4-bd5f-0048ba24179c
 ---
+
 # How to delete a private cloud in VMM
 
 >Applies To: System Center 2016 Technical Preview - Virtual Machine Manager

@@ -1,12 +1,16 @@
 ---
-title: How to create a service tier for Virtual Fibre Channel with VMM
-ms.custom: na
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 0aca8bc4-197b-4882-956d-72ae89d36720
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  rayne-wiselman
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  How to create a service tier for Virtual Fibre Channel with VMM
+ms.technology:  virtual-machine-manager
+ms.assetid:  0aca8bc4-197b-4882-956d-72ae89d36720
 ---
+
 # How to create a service tier for Virtual Fibre Channel with VMM
 
 >Applies To: System Center 2016 Technical Preview - Virtual Machine Manager

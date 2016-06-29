@@ -1,15 +1,16 @@
 ---
-title: How to uninstall Service Management Automation
-ms.custom: na
-ms.prod: system-center-2012
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - orchestrator
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: adf42c66-20e4-450c-abfd-71bb0ff816da
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  bwren
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  How to uninstall Service Management Automation
+ms.technology:  service-management-automation
+ms.assetid:  adf42c66-20e4-450c-abfd-71bb0ff816da
 ---
+
 # How to uninstall Service Management Automation
 
 >Applies To: Windows Azure Pack for Windows Server, System Center 2012 R2 Orchestrator
