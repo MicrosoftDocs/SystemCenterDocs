@@ -1,12 +1,16 @@
 ---
-title: How to deploy a new virtual machine from the SAN copy-capable template
-ms.custom: na
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: bf217c19-f448-46bb-8e5d-9b4604af236b
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  rayne-wiselman
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  How to deploy a new virtual machine from the SAN copy capable template
+ms.technology:  virtual-machine-manager
+ms.assetid:  bf217c19-f448-46bb-8e5d-9b4604af236b
 ---
+
 # How to deploy a new virtual machine from the SAN copy-capable template
 
 >Applies To: System Center 2016 Technical Preview - Virtual Machine Manager

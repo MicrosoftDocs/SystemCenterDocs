@@ -1,12 +1,16 @@
 ---
-title: Upgrading Windows Server 2012 R2 Scale-Out File Servers to Windows Server 2016 Technical Preview in VMM
-ms.custom: na
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 9b19bb05-8657-41d4-b355-6d48c3c2d255
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  rayne-wiselman
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  Upgrading Windows Server 2012 R2 Scale Out File Servers to Windows Server 2016 Technical Preview in VMM
+ms.technology:  virtual-machine-manager
+ms.assetid:  9b19bb05-8657-41d4-b355-6d48c3c2d255
 ---
+
 # Upgrading Windows Server 2012 R2 Scale-Out File Servers to Windows Server 2016 Technical Preview in VMM
 
 >Applies To: System Center 2016 Technical Preview - Virtual Machine Manager

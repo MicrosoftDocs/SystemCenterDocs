@@ -1,15 +1,16 @@
 ---
-title: Publishing a Runbook
-ms.custom: na
-ms.prod: system-center-2012
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - orchestrator
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: e2224465-5050-456e-99ec-d47772d33352
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  bwren
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  Publishing a Runbook
+ms.technology:  service-management-automation
+ms.assetid:  e2224465-5050-456e-99ec-d47772d33352
 ---
+
 # Publishing a Runbook
 
 >Applies To: Windows Azure Pack for Windows Server
@@ -41,7 +42,7 @@ $port = 9090
 $runbookPath = 'c:\runbooks\Sample-TestRunbook.ps1'
 $runbookName = 'Test-Runbook'
 
-Publish-SmaRunbook –WebServiceEndpoint $webServer –Port $port –Name $runbookName
+Publish-SmaRunbook ï¿½WebServiceEndpoint $webServer ï¿½Port $port ï¿½Name $runbookName
 ```
 
 ## To Publish a Runbook Using Windows PowerShell ISE

@@ -1,12 +1,16 @@
 ---
-title: How to remove an infrastructure server from VMM
-ms.custom: na
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 879d8c92-7bd2-421e-9cac-785a7d90947f
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  rayne-wiselman
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  How to remove an infrastructure server from VMM
+ms.technology:  virtual-machine-manager
+ms.assetid:  879d8c92-7bd2-421e-9cac-785a7d90947f
 ---
+
 # How to remove an infrastructure server from VMM
 
 >Applies To: System Center 2016 Technical Preview - Virtual Machine Manager

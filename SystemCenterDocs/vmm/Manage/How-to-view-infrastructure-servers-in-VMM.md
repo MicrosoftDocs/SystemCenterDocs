@@ -1,12 +1,16 @@
 ---
-title: How to view infrastructure servers in VMM
-ms.custom: na
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: bb256644-2149-4106-af3c-e62d25afb5c2
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  rayne-wiselman
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  How to view infrastructure servers in VMM
+ms.technology:  virtual-machine-manager
+ms.assetid:  bb256644-2149-4106-af3c-e62d25afb5c2
 ---
+
 # How to view infrastructure servers in VMM
 
 >Applies To: System Center 2016 Technical Preview - Virtual Machine Manager

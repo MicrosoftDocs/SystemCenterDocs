@@ -1,15 +1,16 @@
 ---
-title: How to create a physical computer profile to provision hosts or host cluster nodes from bare metal in VMM
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - virtual-machine-manager
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 80835c9e-8753-4919-897f-f115c4d3a535
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  rayne-wiselman
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  How to create a physical computer profile to provision hosts or host cluster nodes from bare metal in VMM
+ms.technology:  virtual-machine-manager
+ms.assetid:  80835c9e-8753-4919-897f-f115c4d3a535
 ---
+
 # How to create a physical computer profile to provision hosts or host cluster nodes from bare metal in VMM
 
 >Applies To: System Center 2016 Technical Preview - Virtual Machine Manager

@@ -1,12 +1,16 @@
 ---
-title: How to remediate updates on a stand-alone Hyper-V host in VMM
-ms.custom: na
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: f98a78c4-eea8-4b65-af06-5494bc77be48
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  rayne-wiselman
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  How to remediate updates on a stand alone Hyper V host in VMM
+ms.technology:  virtual-machine-manager
+ms.assetid:  f98a78c4-eea8-4b65-af06-5494bc77be48
 ---
+
 # How to remediate updates on a stand-alone Hyper-V host in VMM
 
 >Applies To: System Center 2016 Technical Preview - Virtual Machine Manager

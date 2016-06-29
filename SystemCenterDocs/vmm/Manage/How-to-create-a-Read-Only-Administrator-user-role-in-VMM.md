@@ -1,19 +1,23 @@
 ---
-title: How to create a Read-Only Administrator user role in VMM
-ms.custom: na
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 8d31878b-2515-4c56-be56-85619127984c
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  rayne-wiselman
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  How to create a Read Only Administrator user role in VMM
+ms.technology:  virtual-machine-manager
+ms.assetid:  8d31878b-2515-4c56-be56-85619127984c
 ---
+
 # How to create a Read-Only Administrator user role in VMM
 
 >Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
 
 Use this procedure to create a Read-Only Administrator user role in Virtual Machine Manager (VMM).
 
-**Account requirements** Administrators and delegated administrators can create a Read-Only Administrator role. Delegated administrators can create Read-Only Administrator user roles that include a subset of the Delegated Administrator user role’s scope, library servers, and Run As accounts.
+**Account requirements** Administrators and delegated administrators can create a Read-Only Administrator role. Delegated administrators can create Read-Only Administrator user roles that include a subset of the Delegated Administrator user roleï¿½s scope, library servers, and Run As accounts.
 
 ### To create a Read-Only Administrator user role
 

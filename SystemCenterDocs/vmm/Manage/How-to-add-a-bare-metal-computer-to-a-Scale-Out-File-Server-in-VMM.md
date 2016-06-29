@@ -1,12 +1,16 @@
 ---
-title: How to add a bare-metal computer to a Scale-Out File Server in VMM
-ms.custom: na
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 1ddee956-c5e0-4b74-9796-b38b28c503e5
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  rayne-wiselman
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  How to add a bare metal computer to a Scale Out File Server in VMM
+ms.technology:  virtual-machine-manager
+ms.assetid:  1ddee956-c5e0-4b74-9796-b38b28c503e5
 ---
+
 # How to add a bare-metal computer to a Scale-Out File Server in VMM
 
 >Applies To: System Center 2016 Technical Preview - Virtual Machine Manager

@@ -1,15 +1,16 @@
 ---
-title: Establish trust between Service Management Automation and Service Provider Foundation
-ms.custom: na
-ms.prod: system-center-2012
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - orchestrator
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 1b1ce164-f5c2-4a94-bce9-9271e3666f89
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  bwren
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  Establish trust between Service Management Automation and Service Provider Foundation
+ms.technology:  service-management-automation
+ms.assetid:  1b1ce164-f5c2-4a94-bce9-9271e3666f89
 ---
+
 # Establish trust between Service Management Automation and Service Provider Foundation
 
 >Applies To: Windows Azure Pack for Windows Server, System Center 2012 R2 Orchestrator

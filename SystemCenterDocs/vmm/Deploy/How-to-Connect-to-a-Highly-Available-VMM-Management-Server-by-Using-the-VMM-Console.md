@@ -1,15 +1,16 @@
 ---
-title: How to Connect to a Highly Available VMM Management Server by Using the VMM Console
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - virtual-machine-manager
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 9dcf955f-551d-4b9b-bc35-11c82e42d841
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  rayne-wiselman
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  How to Connect to a Highly Available VMM Management Server by Using the VMM Console
+ms.technology:  virtual-machine-manager
+ms.assetid:  9dcf955f-551d-4b9b-bc35-11c82e42d841
 ---
+
 # How to Connect to a Highly Available VMM Management Server by Using the VMM Console
 
 >Applies To: System Center 2016 Technical Preview - Virtual Machine Manager

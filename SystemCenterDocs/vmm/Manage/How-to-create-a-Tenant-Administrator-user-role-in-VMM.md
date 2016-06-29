@@ -1,12 +1,16 @@
 ---
-title: How to create a Tenant Administrator user role in VMM
-ms.custom: na
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 1a3b82ff-03bd-49f4-b083-d75e4902f345
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  rayne-wiselman
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  How to create a Tenant Administrator user role in VMM
+ms.technology:  virtual-machine-manager
+ms.assetid:  1a3b82ff-03bd-49f4-b083-d75e4902f345
 ---
+
 # How to create a Tenant Administrator user role in VMM
 
 >Applies To: System Center 2016 Technical Preview - Virtual Machine Manager

@@ -1,12 +1,16 @@
 ---
-title: How to add users to the Administrator user role in VMM
-ms.custom: na
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: eb9a9e46-9a99-45f0-9c57-9aa97704b2d1
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  rayne-wiselman
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  How to add users to the Administrator user role in VMM
+ms.technology:  virtual-machine-manager
+ms.assetid:  eb9a9e46-9a99-45f0-9c57-9aa97704b2d1
 ---
+
 # How to add users to the Administrator user role in VMM
 
 >Applies To: System Center 2016 Technical Preview - Virtual Machine Manager

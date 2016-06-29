@@ -1,15 +1,16 @@
 ---
-title: Configuring load balancing in VMM
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - virtual-machine-manager
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 0add8a3b-884e-4fe3-8bac-8834ed4f8d5d
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  rayne-wiselman
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  Configuring load balancing in VMM
+ms.technology:  virtual-machine-manager
+ms.assetid:  0add8a3b-884e-4fe3-8bac-8834ed4f8d5d
 ---
+
 # Configuring load balancing in VMM
 
 >Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
@@ -47,7 +48,7 @@ The following list describes the hardware load balancer workflow to load balance
 2.  The administrator installs the load balancer configuration provider on the VMM management server.
 
     > [!NOTE]
-    > For information about supported load balancers and how to obtain configuration providers, see the “Prerequisites” section of [How to add hardware load balancers in VMM](How-to-add-hardware-load-balancers-in-VMM.md).
+    > For information about supported load balancers and how to obtain configuration providers, see the ï¿½Prerequisitesï¿½ section of [How to add hardware load balancers in VMM](How-to-add-hardware-load-balancers-in-VMM.md).
 
 3.  In the VMM console, the administrator adds the load balancer to VMM management. Through the Add Load Balancer wizard, the administrator does the following:
 
@@ -79,7 +80,7 @@ The following list describes the hardware load balancer workflow to load balance
 
     For more information, see [How to create VIP templates for hardware load balancers in VMM](How-to-create-VIP-templates-for-hardware-load-balancers-in-VMM.md).
 
-5.  A user (typically a self-service user) creates a service template. In the Service Template Designer window, they add a load balancer to a service tier, and then select which VIP template to use. When the service is deployed, VMM automatically selects a virtual IP address from the reserved range in the static IP address pool and assigns it to the load balancer. This IP address is considered the “front-end” IP address for a load-balanced service tier. VMM also assigns static IP addresses to the virtual machines that make up the service tier. These are considered “back-end” dedicated IP addresses, as they are behind the load balancer.
+5.  A user (typically a self-service user) creates a service template. In the Service Template Designer window, they add a load balancer to a service tier, and then select which VIP template to use. When the service is deployed, VMM automatically selects a virtual IP address from the reserved range in the static IP address pool and assigns it to the load balancer. This IP address is considered the ï¿½front-endï¿½ IP address for a load-balanced service tier. VMM also assigns static IP addresses to the virtual machines that make up the service tier. These are considered ï¿½back-endï¿½ dedicated IP addresses, as they are behind the load balancer.
 
 6.  After the service is deployed, the administrator verifies in the VMM console which virtual IP address is being used as the front-end IP address for the service tier. The administrator then contacts the DNS administrator to create a DNS entry for the assigned virtual IP address. For example, if the front-end Web tier of a service is load balanced, the administrator can verify which virtual IP address is used for that tier. The DNS administrator can then create an entry in DNS for the name that users will specify to connect to the Web front-end. For example, the DNS administrator could create a DNS entry for *ServiceName*.contoso.com with the corresponding virtual IP address.
 

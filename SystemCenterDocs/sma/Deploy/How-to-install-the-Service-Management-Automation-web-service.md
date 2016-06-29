@@ -1,15 +1,16 @@
 ---
-title: How to install the Service Management Automation web service
-ms.custom: na
-ms.prod: system-center-2012
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - orchestrator
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: b6044e0c-0caa-459c-9489-c379a154136b
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  bwren
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  How to install the Service Management Automation web service
+ms.technology:  service-management-automation
+ms.assetid:  b6044e0c-0caa-459c-9489-c379a154136b
 ---
+
 # How to install the Service Management Automation web service
 
 >Applies To: Windows Azure Pack for Windows Server, System Center 2012 R2 Orchestrator

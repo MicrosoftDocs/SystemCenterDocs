@@ -1,16 +1,17 @@
 ---
-title: Deploy a RAS Gateway using VMM
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.service: virtual-network
-ms.suite: na
-ms.technology:
-  - techgroup-networking
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 150b922a-d9fb-4b36-b964-e1738f054eb3
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  rayne-wiselman
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  Deploy a RAS Gateway using VMM
+ms.technology:  virtual-machine-manager
+ms.assetid:  150b922a-d9fb-4b36-b964-e1738f054eb3
+ms.service:  virtual-network
 ---
+
 # Deploy a RAS Gateway using VMM
 
 >Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
@@ -347,3 +348,4 @@ To configure an L3 connection, use the following sample PowerShell script. You m
         Add-SCNetworkRoute -IPSubnet $route -RunAsynchronously -VPNConnection $vpnConnection
             -VMNetworkGateway $VmNetworkGateway
     }
+

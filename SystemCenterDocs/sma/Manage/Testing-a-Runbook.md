@@ -1,15 +1,16 @@
 ---
-title: Testing a Runbook
-ms.custom: na
-ms.prod: system-center-2012
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - orchestrator
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: c75fe03c-3709-4c85-b593-fb1a2920f80e
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  bwren
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  Testing a Runbook
+ms.technology:  service-management-automation
+ms.assetid:  c75fe03c-3709-4c85-b593-fb1a2920f80e
 ---
+
 # Testing a Runbook
 
 >Applies To: Windows Azure Pack for Windows Server

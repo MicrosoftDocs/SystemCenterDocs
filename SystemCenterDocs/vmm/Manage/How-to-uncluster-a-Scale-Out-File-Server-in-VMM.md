@@ -1,12 +1,16 @@
 ---
-title: How to uncluster a Scale-Out File Server in VMM
-ms.custom: na
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 14dd198f-21d6-4357-9227-37105172462a
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  rayne-wiselman
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  How to uncluster a Scale Out File Server in VMM
+ms.technology:  virtual-machine-manager
+ms.assetid:  14dd198f-21d6-4357-9227-37105172462a
 ---
+
 # How to uncluster a Scale-Out File Server in VMM
 
 >Applies To: System Center 2016 Technical Preview - Virtual Machine Manager

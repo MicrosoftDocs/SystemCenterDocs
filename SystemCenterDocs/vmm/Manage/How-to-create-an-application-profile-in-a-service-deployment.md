@@ -1,12 +1,16 @@
 ---
-title: How to create an application profile in a service deployment
-ms.custom: na
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 6ce1f959-fb44-4f37-9f68-640f15505185
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  rayne-wiselman
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  How to create an application profile in a service deployment
+ms.technology:  virtual-machine-manager
+ms.assetid:  6ce1f959-fb44-4f37-9f68-640f15505185
 ---
+
 # How to create an application profile in a service deployment
 
 >Applies To: System Center 2016 Technical Preview - Virtual Machine Manager

@@ -1,12 +1,16 @@
 ---
-title: How to connect VMM to Operations Manager
-ms.custom: na
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 43c1b9f1-a8cf-4075-81df-2e78d64c3cfb
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  rayne-wiselman
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  How to connect VMM to Operations Manager
+ms.technology:  virtual-machine-manager
+ms.assetid:  43c1b9f1-a8cf-4075-81df-2e78d64c3cfb
 ---
+
 # How to connect VMM to Operations Manager
 
 >Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
@@ -51,7 +55,7 @@ Before you connect VMM to Operations Manager, perform the following actions:
 
     3.  Double-click a host in the list, click the **Security** tab, and then ensure that **Allow this agent to act as a proxy and discover managed objects on other computers** has been selected. Repeat this step for each of the hosts.
 
-6.  In Operations Manager, import the necessary management packs, as described in [How to Import an Operations Manager Management Pack](http://technet.microsoft.com/library/hh212691.aspx). You can find management packs, sometimes called “monitoring packs,” by searching the [Microsoft Download Center](http://www.microsoft.com/downloads/default.aspx). The necessary management packs are as follows:
+6.  In Operations Manager, import the necessary management packs, as described in [How to Import an Operations Manager Management Pack](http://technet.microsoft.com/library/hh212691.aspx). You can find management packs, sometimes called ï¿½monitoring packs,ï¿½ by searching the [Microsoft Download Center](http://www.microsoft.com/downloads/default.aspx). The necessary management packs are as follows:
 
     -   Windows Server Internet Information Services 2003
 

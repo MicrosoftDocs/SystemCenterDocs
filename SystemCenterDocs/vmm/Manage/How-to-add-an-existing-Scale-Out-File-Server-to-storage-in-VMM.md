@@ -1,15 +1,16 @@
 ---
-title: How to add an existing Scale-Out File Server to storage in VMM
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - virtual-machine-manager
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: d0b304e6-34d8-4316-a132-6cc6aec764d1
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  rayne-wiselman
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  How to add an existing Scale Out File Server to storage in VMM
+ms.technology:  virtual-machine-manager
+ms.assetid:  d0b304e6-34d8-4316-a132-6cc6aec764d1
 ---
+
 # How to add an existing Scale-Out File Server to storage in VMM
 
 >Applies To: System Center 2016 Technical Preview - Virtual Machine Manager

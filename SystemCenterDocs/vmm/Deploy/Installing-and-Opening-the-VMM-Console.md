@@ -1,15 +1,16 @@
 ---
-title: Installing and Opening the VMM Console
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - virtual-machine-manager
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: b8fdb01e-d5d2-4d7c-9d57-bf34f3df1b46
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  rayne-wiselman
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  Installing and Opening the VMM Console
+ms.technology:  virtual-machine-manager
+ms.assetid:  b8fdb01e-d5d2-4d7c-9d57-bf34f3df1b46
 ---
+
 # Installing and Opening the VMM Console
 
 >Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
