@@ -5,7 +5,7 @@ ms.topic:  article
 author:  mgoedtel
 ms.prod:  system-center-threshold
 keywords:  
-ms.date:  2016-06-27
+ms.date:  2016-06-29
 title:  How  to Install an Audit Collection Services  ACS  Collector and Database
 ms.technology:  operations-manager
 ms.assetid:  fb9a1175-51e8-4914-9daa-e17d6056f1aa
@@ -14,6 +14,9 @@ ms.assetid:  fb9a1175-51e8-4914-9daa-e17d6056f1aa
 
 
 # How  to Install an Audit Collection Services (ACS) Collector and Database
+
+>Applies To: System Center 2016 Technical Preview - Operations Manager
+
 Use the following procedures to install an Audit Collection Services (ACS) collector and database and to start the service for the ACS collector computer. Both procedures are performed on the computer that is designated as your ACS collector.
 
 The ACS database runs on a supported version of Microsoft SQL Server. The Audit Collection Services Collector Setup wizard creates the ACS database on an existing installation of Microsoft SQL Server. To complete the installation procedure, you must be a member of the local Administrators group on both the ACS collector and the ACS database computers as well as a database administrator on the ACS database. As a best practice for security, consider using Run As to perform this procedure.
