@@ -1,15 +1,16 @@
 ---
-title: Post-installation tasks for Service Management Automation
-ms.custom: na
-ms.prod: system-center-2012
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - orchestrator
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: a12e845d-bdec-43d8-a321-0d5e767a967f
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  bwren
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  Post installation tasks for Service Management Automation
+ms.technology:  service-management-automation
+ms.assetid:  a12e845d-bdec-43d8-a321-0d5e767a967f
 ---
+
 # Post-installation tasks for Service Management Automation
 
 >Applies To: Windows Azure Pack for Windows Server, System Center 2012 R2 Orchestrator

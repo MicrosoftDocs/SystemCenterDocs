@@ -1,15 +1,16 @@
 ---
-title: Runbook Execution in Service Management Automation
-ms.custom: na
-ms.prod: system-center-2012
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - service-management-automation-(sma)
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 93ab946a-4faf-4c9d-a625-4ea31128eda6
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  bwren
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  Runbook Execution in Service Management Automation
+ms.technology:  service-management-automation
+ms.assetid:  93ab946a-4faf-4c9d-a625-4ea31128eda6
 ---
+
 # Runbook Execution in Service Management Automation
 
 >Applies To: System Center Technical Preview

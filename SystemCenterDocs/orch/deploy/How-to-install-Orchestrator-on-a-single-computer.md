@@ -1,15 +1,16 @@
 ---
-title: How to Install Orchestrator on a Single Computer
-ms.custom: na
-ms.prod: system-center-2012
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - orchestrator
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 7c72117a-8742-4a68-90d1-00c6d9dcd012
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  bwren
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  How to install Orchestrator on a single computer
+ms.technology:  orchestrator
+ms.assetid:  7c72117a-8742-4a68-90d1-00c6d9dcd012
 ---
+
 # How to Install Orchestrator on a Single Computer
 Use the following steps to install all Orchestrator features on a single computer.
 
@@ -108,3 +109,4 @@ Use the following steps to install all Orchestrator features on a single compute
 [Install Individual Orchestrator Features](How-to-install-orchestrator-features.md)
 [Orchestrator Security Planning](assetId:///358c5344-8649-4d40-a53c-37f8e70e58f6)
 [TCP Port Requirements](assetId:///dc879c86-4855-4fd0-808d-06f64a9657ca)
+

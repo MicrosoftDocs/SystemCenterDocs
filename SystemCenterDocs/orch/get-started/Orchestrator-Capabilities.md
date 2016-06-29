@@ -1,15 +1,16 @@
 ---
-title: Orchestrator Capabilities
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - orchestrator
-ms.tgt_pltfrm: na
-ms.topic: get-started-article
-ms.assetid: 19e06d19-6c3d-4bf1-880c-8aad00c8e536
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  bwren
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  Orchestrator Capabilities
+ms.technology:  orchestrator
+ms.assetid:  19e06d19-6c3d-4bf1-880c-8aad00c8e536
 ---
+
 # Orchestrator Capabilities
 
 >Applies To: System Center 2016 Technical Preview - Orchestrator
