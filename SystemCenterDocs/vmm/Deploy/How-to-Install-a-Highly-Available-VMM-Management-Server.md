@@ -1,15 +1,16 @@
 ---
-title: How to Install a Highly Available VMM Management Server
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - virtual-machine-manager
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: dbc92290-e10b-4a9b-9794-3dc4bc71ca25
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  rayne-wiselman
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  How to Install a Highly Available VMM Management Server
+ms.technology:  virtual-machine-manager
+ms.assetid:  dbc92290-e10b-4a9b-9794-3dc4bc71ca25
 ---
+
 # How to Install a Highly Available VMM Management Server
 
 >Applies To: System Center 2016 Technical Preview - Virtual Machine Manager

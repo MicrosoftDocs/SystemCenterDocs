@@ -1,15 +1,16 @@
 ---
-title: Overview: storage classifications in VMM
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - virtual-machine-manager
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: edad40e9-bf3b-4766-bea2-1d844dc065ea
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  rayne-wiselman
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  Overview  storage classifications in VMM
+ms.technology:  virtual-machine-manager
+ms.assetid:  edad40e9-bf3b-4766-bea2-1d844dc065ea
 ---
+
 # Overview: storage classifications in VMM
 
 >Applies To: System Center 2016 Technical Preview - Virtual Machine Manager

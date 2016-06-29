@@ -1,15 +1,16 @@
 ---
-title: What&#39;s New in VMM in System Center Technical Preview
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - virtual-machine-manager
-ms.tgt_pltfrm: na
-ms.topic: get-started-article
-ms.assetid: 2cfb6b1c-1694-4473-bd66-6c0fb91fe167
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  rayne-wiselman
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  What s New in VMM in System Center Technical Preview
+ms.technology:  virtual-machine-manager
+ms.assetid:  2cfb6b1c-1694-4473-bd66-6c0fb91fe167
 ---
+
 # What&#39;s New in VMM in System Center Technical Preview
 This topic describes what's new and changed in Virtual Machine Manager (VMM) in System Center 2016 Technical Preview. The topic includes the following sections:
 

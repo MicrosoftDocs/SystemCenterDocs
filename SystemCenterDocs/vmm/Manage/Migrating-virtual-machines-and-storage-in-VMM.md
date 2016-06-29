@@ -1,12 +1,16 @@
 ---
-title: Migrating virtual machines and storage in VMM
-ms.custom: na
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: c61ccba1-d1fd-4500-a666-4b2348d1d5ed
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  rayne-wiselman
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  Migrating virtual machines and storage in VMM
+ms.technology:  virtual-machine-manager
+ms.assetid:  c61ccba1-d1fd-4500-a666-4b2348d1d5ed
 ---
+
 # Migrating virtual machines and storage in VMM
 
 >Applies To: System Center 2016 Technical Preview - Virtual Machine Manager

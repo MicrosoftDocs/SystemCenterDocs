@@ -1,15 +1,16 @@
 ---
-title: How to Install a VMM Management Server on an Additional Node of a Cluster
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - virtual-machine-manager
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 3961bdac-8b4c-42f9-a2ce-57025adce7f7
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  rayne-wiselman
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  How to Install a VMM Management Server on an Additional Node of a Cluster
+ms.technology:  virtual-machine-manager
+ms.assetid:  3961bdac-8b4c-42f9-a2ce-57025adce7f7
 ---
+
 # How to Install a VMM Management Server on an Additional Node of a Cluster
 
 >Applies To: System Center 2016 Technical Preview - Virtual Machine Manager

@@ -1,12 +1,16 @@
 ---
-title: Configuring Run As accounts in VMM
-ms.custom: na
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: aa482e44-bd66-4346-92cc-a16ec0ded0b1
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  rayne-wiselman
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  Configuring Run As accounts in VMM
+ms.technology:  virtual-machine-manager
+ms.assetid:  aa482e44-bd66-4346-92cc-a16ec0ded0b1
 ---
+
 # Configuring Run As accounts in VMM
 
 >Applies To: System Center 2016 Technical Preview - Virtual Machine Manager

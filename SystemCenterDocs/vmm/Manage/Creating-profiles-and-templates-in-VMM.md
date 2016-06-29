@@ -1,12 +1,16 @@
 ---
-title: Creating profiles and templates in VMM
-ms.custom: na
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: b97646c3-e2cb-4222-b448-41f391e0942a
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  rayne-wiselman
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  Creating profiles and templates in VMM
+ms.technology:  virtual-machine-manager
+ms.assetid:  b97646c3-e2cb-4222-b448-41f391e0942a
 ---
+
 # Creating profiles and templates in VMM
 
 >Applies To: System Center 2016 Technical Preview - Virtual Machine Manager

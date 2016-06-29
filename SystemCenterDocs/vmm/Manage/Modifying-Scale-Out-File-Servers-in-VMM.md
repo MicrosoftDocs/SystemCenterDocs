@@ -1,12 +1,16 @@
 ---
-title: Modifying Scale-Out File Servers in VMM
-ms.custom: na
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: b14ecfc3-41ae-4fe8-a9d9-bbc9d440d159
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  rayne-wiselman
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  Modifying Scale Out File Servers in VMM
+ms.technology:  virtual-machine-manager
+ms.assetid:  b14ecfc3-41ae-4fe8-a9d9-bbc9d440d159
 ---
+
 # Modifying Scale-Out File Servers in VMM
 
 >Applies To: System Center 2016 Technical Preview - Virtual Machine Manager

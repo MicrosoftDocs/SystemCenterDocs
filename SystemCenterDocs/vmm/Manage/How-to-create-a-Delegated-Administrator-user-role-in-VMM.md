@@ -1,12 +1,16 @@
 ---
-title: How to create a Delegated Administrator user role in VMM
-ms.custom: na
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 251e813d-6d69-4b6b-b25b-0a3fa0e70c60
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  rayne-wiselman
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  How to create a Delegated Administrator user role in VMM
+ms.technology:  virtual-machine-manager
+ms.assetid:  251e813d-6d69-4b6b-b25b-0a3fa0e70c60
 ---
+
 # How to create a Delegated Administrator user role in VMM
 
 >Applies To: System Center 2016 Technical Preview - Virtual Machine Manager

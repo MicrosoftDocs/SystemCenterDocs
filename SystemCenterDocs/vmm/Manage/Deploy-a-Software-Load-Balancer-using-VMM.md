@@ -1,16 +1,17 @@
 ---
-title: Deploy a Software Load Balancer using VMM
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.service: virtual-network
-ms.suite: na
-ms.technology:
-  - techgroup-networking
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 2f57fc14-4b23-41e9-87dc-51a0b998b321
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  rayne-wiselman
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  Deploy a Software Load Balancer using VMM
+ms.technology:  virtual-machine-manager
+ms.assetid:  2f57fc14-4b23-41e9-87dc-51a0b998b321
+ms.service:  virtual-network
 ---
+
 # Deploy a Software Load Balancer using VMM
 
 >Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
@@ -496,3 +497,4 @@ The existing NAT connections will not be visible when you close the network conn
 
 >To see the existing NAT connections, you can use the following PowerShell cmdlet:
 ``Get-SCNATConnection``
+

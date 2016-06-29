@@ -1,15 +1,16 @@
 ---
-title: Overview: creating hosts or host clusters from bare metal with VMM
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - virtual-machine-manager
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: e7c94f0d-67f1-4c79-8bb0-b9b7fe72c236
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  rayne-wiselman
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  Overview  creating hosts or host clusters from bare metal with VMM
+ms.technology:  virtual-machine-manager
+ms.assetid:  e7c94f0d-67f1-4c79-8bb0-b9b7fe72c236
 ---
+
 # Overview: creating hosts or host clusters from bare metal with VMM
 
 >Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
@@ -74,7 +75,7 @@ The following sequences describes the workflow and deployment process for provis
 
 2.  During the deployment process (host or host cluster), the VMM management server restarts the physical computers.
 
-    The management servers restarts the computers by issuing “Power Off” and “Power On” commands to the Baseboard Management Controller (BMC) using out-of-band management. When the physical computers restart, the PXE server responds to the boot requests from the physical computers.
+    The management servers restarts the computers by issuing ï¿½Power Offï¿½ and ï¿½Power Onï¿½ commands to the Baseboard Management Controller (BMC) using out-of-band management. When the physical computers restart, the PXE server responds to the boot requests from the physical computers.
 
 3.  The physical computers boot from a customized Windows Preinstallation Environment (Windows PE) image on the Pre-boot execution environment (PXE) server.
 

@@ -1,12 +1,16 @@
 ---
-title: Manage Memory for a VM while it is running
-ms.custom: na
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: bb68bc2f-cd43-4c40-969a-fa2cbbdc6fef
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  rayne-wiselman
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  Manage Memory for a VM while it is running
+ms.technology:  virtual-machine-manager
+ms.assetid:  bb68bc2f-cd43-4c40-969a-fa2cbbdc6fef
 ---
+
 # Manage Memory for a VM while it is running
 
 >Applies To: 

@@ -1,12 +1,16 @@
 ---
-title: How to run Dynamic Optimization on a host cluster in VMM
-ms.custom: na
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 9ea78b8e-1bd3-455c-bdb7-3e913077ea13
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  rayne-wiselman
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  How to run Dynamic Optimization on a host cluster in VMM
+ms.technology:  virtual-machine-manager
+ms.assetid:  9ea78b8e-1bd3-455c-bdb7-3e913077ea13
 ---
+
 # How to run Dynamic Optimization on a host cluster in VMM
 
 >Applies To: System Center 2016 Technical Preview - Virtual Machine Manager

@@ -1,15 +1,16 @@
 ---
-title: VMM networking reference: creating a port classification in VMM
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - virtual-machine-manager
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: fe59aa97-794a-4d64-b382-a1d7b5cd6437
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  rayne-wiselman
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  VMM networking reference  creating a port classification in VMM
+ms.technology:  virtual-machine-manager
+ms.assetid:  fe59aa97-794a-4d64-b382-a1d7b5cd6437
 ---
+
 # VMM networking reference: creating a port classification in VMM
 
 >Applies To: System Center 2016 Technical Preview - Virtual Machine Manager

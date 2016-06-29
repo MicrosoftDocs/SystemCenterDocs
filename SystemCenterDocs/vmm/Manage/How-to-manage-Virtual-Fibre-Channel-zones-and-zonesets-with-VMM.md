@@ -1,12 +1,16 @@
 ---
-title: How to manage Virtual Fibre Channel zones and zonesets with VMM
-ms.custom: na
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: a3633a09-a9ec-42ce-9774-185679502839
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  rayne-wiselman
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  How to manage Virtual Fibre Channel zones and zonesets with VMM
+ms.technology:  virtual-machine-manager
+ms.assetid:  a3633a09-a9ec-42ce-9774-185679502839
 ---
+
 # How to manage Virtual Fibre Channel zones and zonesets with VMM
 
 >Applies To: System Center 2016 Technical Preview - Virtual Machine Manager

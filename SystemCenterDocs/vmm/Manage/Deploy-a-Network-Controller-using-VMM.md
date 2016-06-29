@@ -1,16 +1,17 @@
 ---
-title: Deploy a Network Controller using VMM
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.service: virtual-network
-ms.suite: na
-ms.technology:
-  - techgroup-networking
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 98767073-f0c5-47a8-9551-f532cecb8d08
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  rayne-wiselman
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  Deploy a Network Controller using VMM
+ms.technology:  virtual-machine-manager
+ms.assetid:  98767073-f0c5-47a8-9551-f532cecb8d08
+ms.service:  virtual-network
 ---
+
 # Deploy a Network Controller using VMM
 
 >Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
@@ -452,3 +453,4 @@ After you deploy at least two virtual machines connected to your VM Network, you
 
 Ensure that your tenant virtual machines allow IPv4 ICMP through their firewall. By default, Windows Server blocks this.
 > You can run the following PowerShell cmdlet to allow ICMP v4 in through the firewall: ``New-NetFirewallRule �DisplayName �Allow ICMPv4-In� �Protocol ICMPv4``
+

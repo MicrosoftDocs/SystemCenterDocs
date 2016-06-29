@@ -1,12 +1,16 @@
 ---
-title: How to update WSUS settings in VMM
-ms.custom: na
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 8a9a055f-1f56-4b26-994e-e32fcc272312
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  rayne-wiselman
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  How to update WSUS settings in VMM
+ms.technology:  virtual-machine-manager
+ms.assetid:  8a9a055f-1f56-4b26-994e-e32fcc272312
 ---
+
 # How to update WSUS settings in VMM
 
 >Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
