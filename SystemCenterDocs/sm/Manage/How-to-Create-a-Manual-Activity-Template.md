@@ -37,11 +37,8 @@ In the following procedure, you will create a manual activity template named "Se
 
 8.  In the **Create Template** dialog box, under **Management pack**, select **Service Manager Activity Management Configuration Library**, and then click **OK**.
 
-9. In the **Manual Activity Template** form, on the **General** tab, click the ellipsis button (**�**) next to **Activity Implementer**, select a user, and then click **OK**.
+9. In the **Manual Activity Template** form, on the **General** tab, click the ellipsis button (**...**) next to **Activity Implementer**, select a user, and then click **OK**.
 
 ### To validate that the template was created
 
 -   In the **Templates** view, verify that the new template was created. You might have to press F5 to make the new manual activity template appear.
-
-
-

@@ -23,7 +23,5 @@ The following information describes the steps you need to consider before instal
 
 3.  Install Service Manager.
 
-After you have reviewed and met requirements for chargeback reports, you�re ready to install chargeback files, as described in detail in the [How to Install Chargeback Reports](How-to-Install-Chargeback-Reports.md) topic.
 
-
-
+After you have reviewed and met requirements for chargeback reports, you're ready to install chargeback files, as described in detail in the [How to Install Chargeback Reports](How-to-Install-Chargeback-Reports.md) topic.

@@ -125,21 +125,23 @@ Use the following step to complete your installation.
 The following section describe how you can customize the Self Service portal to suit your organization.
 
 ### Basic Customization
-The <appSettings> tab in the Web.config file offers some standard settings to easily customize and personalize the areas which are most often modified. Here�s a list of them.
+
+The `<appSettings>` tab in the Web.config file offers some standard settings to easily customize and personalize the areas which are most often modified. Here's a list of them.
 
 |Key|Purpose|
 |-------|-----------|
-|CompanyName|The value of this key appears as the company�s name inside the portal.|
-|CompanyLogoLocation|The value of this key is used as the image file, which is displayed as the company�s logo inside the portal.|
-|ITPhone|This key takes the value to configure the IT help desk�s phone number. This information appears at the bottom of the navigation menu.|
-|ITEmail|The value of this key is used configure the IT help desk�s email ID. This information appears at the bottom of the navigation menu.|
-|DefaultLanguage|By default, the Portal web pages are loaded as defined by the browser�s language. Then current user can manually select the language in the top-right corner of each page.<br />The value of this key defines the default failover language which is chosen by the portal, when the browser�s language is not available.|
-|GenericOffering|The value of this key accepts the name of the request offering which is mapped to the generic request button. This generic request button is used by the user, when they can�t find an appropriate request offering in the catalog.|
+|CompanyName|The value of this key appears as the company's name inside the portal.|
+|CompanyLogoLocation|The value of this key is used as the image file, which is displayed as the company's logo inside the portal.|
+|ITPhone|This key takes the value to configure the IT help desk's phone number. This information appears at the bottom of the navigation menu.|
+|ITEmail|The value of this key is used configure the IT help desk's email ID. This information appears at the bottom of the navigation menu.|
+|DefaultLanguage|By default, the Portal web pages are loaded as defined by the browser's language. Then current user can manually select the language in the top-right corner of each page.<br />The value of this key defines the default failover language which is chosen by the portal, when the browser's language is not available.|
+|GenericOffering|The value of this key accepts the name of the request offering which is mapped to the generic request button. This generic request button is used by the user, when they can't find an appropriate request offering in the catalog.|
 |SDKServerName|The value of this key defines the name of the server where the Service Manager SDK runs and it is used to interact with other Service Manager servers. By default, it has the same value that you provided in Setup.<br />You can use the fully qualified domain name or the NetBIOS name of the server running the Service Manger SDK service. We recommend that you dedicate a secondary Service Manager management server to communicate with the portal.|
 |MaxQueryResults|The value of this key defines the maximum number of results that are returned by any query form element inside your request offering forms.|
 |UserCacheTimeout|The Portal uses a caching infrastructure to provide a swift user experience. The value of this key defines the timeout, in seconds, to cache user-specific details of the signed-in user.|
 |DataCacheTimeout|The Portal uses a caching infrastructure to provide a swift user experience. The value of this key defines the timeout, in seconds, to cache generic data which can be shared among different users.|
-|EnableTelemetry|The value of this key defines your selection about participating in Microsoft�s Customer Experience Improvement Program. Your portal sends usage telemetry data to Microsoft when this key is marked as �True�. By default, it has the same value that you chose during Setup.|
+|EnableTelemetry|The value of this key defines your selection about participating in Microsoft's Customer Experience Improvement Program. Your portal sends usage telemetry data to Microsoft when this key is marked as **True**. By default, it has the same value that you chose during Setup.|
+
 
 > [!NOTE]
 > You must restart the IIS service after you make any changes to the Web.config file.
@@ -157,4 +159,3 @@ For example:
 ![](../../media/sm-sspsidebar.png)
 
 You can add or remove shortcuts from the menu, and you can customize them with details for the CSS class, keyboard hotkeys, and others.
-

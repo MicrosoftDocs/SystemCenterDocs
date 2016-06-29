@@ -46,7 +46,7 @@ Generally, you should construct service maps that are 3-5 levels deep. Component
 
 6.  In the **Priority** list, select **Medium**. In the **Status** list, select **In Service**.
 
-7.  Next to the **Service owner** box, click the ellipsis button (**�**). Select the user who owns the service.
+7.  Next to the **Service owner** box, click the ellipsis button (**...**). Select the user who owns the service.
 
 8.  Next to the **Service contacts** box, click **Add** to select and add users who are contacts for the service.
 
@@ -83,7 +83,7 @@ Generally, you should construct service maps that are 3-5 levels deep. Component
 
 4.  In the **Tasks** pane, under the title of the distributed application, click **Edit**.
 
-5.  In the **Service Maps � <DistributedApplicationName\>** dialog box, click the **Service Components** tab to view the items defined in the Operations Manager distributed application. Then, expand the **Service Components** tree three levels.
+5.  In the *Service Maps - DistributedApplicationName* dialog box, click the **Service Components** tab to view the items defined in the Operations Manager distributed application. Then, expand the **Service Components** tree three levels.
 
 6.  Select any configuration item, and then click **Open** to view or edit its properties.
 
@@ -98,6 +98,3 @@ Generally, you should construct service maps that are 3-5 levels deep. Component
 4.  In the form that appears, click the **Service Dependents** tab. Services that use the new service are listed. For example, **IT Messaging Service** appears in the list.
 
 5.  Click **OK**.
-
-
-

@@ -44,11 +44,11 @@ There are two phases for creating the Alert connector. The first part involves c
 
     4.  In the **Run As Account** dialog box, in the **Display name** box, type a name for this Run As account. In the **Account** list, select **Windows Account**.
 
-    5.  In the **User Name**, **Password**, and **Domain** fields, type the credentials for the Run As account, and then click **OK**. 
+    5.  In the **User Name**, **Password**, and **Domain** fields, type the credentials for the Run As account, and then click **OK**.
 
     6.  On the **Server Details** page, click **Test Connection**. If you receive the following confirmation message, click **OK**, and then click **Next**:
 
-        �The connection to the server was successful.�
+        *The connection to the server was successful.*
 
     7.  On the **Alert Routing Rules** page, click **Add**.
 
@@ -100,11 +100,11 @@ There are two phases for creating the Alert connector. The first part involves c
 
         -   Under **Credentials**, select the Run As account you created for the alert connector, and then go to step 4d.
 
-        -   Under **Credentials**, click **New**. In the **User name**, **Password**, and **Domain** boxes, type the credentials for the Run As account, and then click **OK**. 
+        -   Under **Credentials**, click **New**. In the **User name**, **Password**, and **Domain** boxes, type the credentials for the Run As account, and then click **OK**.
 
     4.  On the **Server Details** page, click **Test Connection**. If you receive the following confirmation message, click **OK**, and then click **Next**:
 
-        �The connection to the server was successful.�
+        *The connection to the server was successful.*
 
     5.  On the **MP Selection** page, click **Select all**, or select the management packs that define the configuration items you want to import, and then click **Next**.
 
@@ -127,6 +127,3 @@ There are two phases for creating the Alert connector. The first part involves c
 -   For information about how to use Windows PowerShell to create a new Operations Manager CI connector in Service Manager, see [New-SCOMConfigurationItemConnector](http://go.microsoft.com/fwlink/p/?LinkID=225352).
 
 -   For information about how to use Windows PowerShell to retrieve connectors that are defined in Service Manager and to view their status, see [Get-SCSMConnector](http://go.microsoft.com/fwlink/p/?LinkId=225320).
-
-
-

@@ -15,15 +15,15 @@ ms.assetid:  ee706e89-20fd-4883-82e3-75565a705751
 
 >Applies To: System Center 2016 Technical Preview - Data Protection Manager
 
-Your organization needs a BCDR strategy to make sure that resources are available during planning and unplanned outages, and are that you're able to recover to normal working conditions when things go wrong.    Your BCDR strategy revolves broadly around keeping your data safe and recoverable, and keeping your business workloads, applications, and services continuously available.   System Center Data Protection Manager (DPM) is an robust enterprise backup and recovery system that contributes to your BCDR strategy by facilitating the backup and recovery of enterprise data.
+Your organization needs a BCDR strategy to make sure that resources are available during planned and unplanned outages, and that you're able to recover to normal working conditions when things go wrong. Your BCDR strategy revolves broadly around keeping your data safe and recoverable, and keeping your business workloads, applications, and services continuously available. System Center Data Protection Manager (DPM) is an robust enterprise backup and recovery system that contributes to your BCDR strategy by facilitating the backup and recovery of enterprise data.
 
-You can deploy  DPM for:
+You can deploy DPM for:
 
 -   **Application-aware backup**: Application-aware backup of Microsoft workloads, including SQL Server, Exchange, and SharePoint.
 
 -   **File backup**: Back up of files, folders and volumes for computers running Windows server and Windows client operating systems.
 
--   **System backup**: Back of system state or full bare metal backup for physical computers running Windows server and Windows client operating systems.
+-   **System backup**: Back up system state or full bare metal backup for physical computers running Windows server and Windows client operating systems.
 
 -   **Hyper-V backup**: Back up of Hyper-V virtual machines running Windows or Linux. You can back up an entire VM, or run application-aware backups of Microsoft workloads on Hyper-V VMs running Windows.
 
@@ -45,6 +45,3 @@ When outages occur and source data is unavailable, you can easily restore data t
 
 ## Next steps
 Learn more in [How does DPM work?](get-started/How-does-DPM-work-.md)
-
-
-

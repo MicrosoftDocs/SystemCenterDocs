@@ -60,7 +60,8 @@ A custom Configuration Manager Connector Configuration management pack is simila
 The **DataProvider** section provides information, such as which data to import, that you must have when you are importing data from Configuration Manager into the staging tables of **LinkingFramework**. The **DataProvider** section includes the queries that run on the Configuration Manager site database; directives for staging table creation; custom SQL scripts; and information that is relevant for incremental synchronization, such as watermarking and batching.
 
 ### DataConsumer Section
-The **DataConsumer** section provides information about reading the data from staging tables and writing it to the **ServiceManager** database�s instances space, such as **Entities** or **Relationships**. The **DataConsumer** section includes queries that run on the staging tables; mapping to the Service Manager type system; custom SQL scripts; and information that is relevant for incremental synchronization, such as watermarking and batching.
+
+The **DataConsumer** section provides information about reading the data from staging tables and writing it to the **ServiceManager** database's instances space, such as **Entities** or **Relationships**. The **DataConsumer** section includes queries that run on the staging tables; mapping to the Service Manager type system; custom SQL scripts; and information that is relevant for incremental synchronization, such as watermarking and batching.
 
 ### Structure of the DataProvider and DataConsumer Object Templates Sections
 Basically, the **DataProvider** and the **DataConsumer** are object templates that are targeted to a projection type. The following code shows the general structure of the **DataProvider** and the **DataConsumer** sections:
@@ -88,26 +89,26 @@ The following table provides the details about each property in the custom Confi
 
 |Property|Expected value|Validation after import|
 |------------|------------------|---------------------------|
-|ID|For both **DataProvider** and **DataConsumer** templates�as indicated in the sample|Yes|
+|ID|For both **DataProvider** and **DataConsumer** templates as indicated in the sample|Yes|
 |**DataConnector Properties**|||
-|DataConnectorName|For both **DataProvider** and **DataConsumer** templates�identical to the values in the sample|Yes|
-|IsProvider|In **DataProvider** template�True<br /><br />In **DataConsumer** template�False|Yes|
+|DataConnectorName|For both **DataProvider** and **DataConsumer** templates - identical to the values in the sample|Yes|
+|IsProvider|In **DataProvider** template - True<br /><br />In **DataConsumer** template - False|Yes|
 |SolutionName|A comment. For example, it can indicate the type of the imported data.|An attempt to import a management pack in which the solution name is already being used; it causes an error that is logged to the event log.|
 |Entrypoint, EntryAssembly & WinformUIAssembly|Identical to the value in the sample||
-|InstallSQLScripts section|SQL scripts that must run after the staging tables are set up. They are usually used in the **DataConsumer** template to configure views that display data from the staging tables.<br /><br />Everything that is enclosed between the <Script\><\/Script> tags is expected to be valid SQL script. Therefore, for comments, you must use the �/*� and the �\*/� multi-line comment delimiters instead of the standard XML comment tags.|Not validated. Use custom table names to ensure that this does not cause overwriting or changing any tables except the ones that are declared in the management pack.|
-|UnInstallSQLScripts section|SQL scripts that must run after you delete the Configuration Manager Connector management pack in the Service Manager console.<br /><br />Everything that is enclosed between the <Script\><\/Script> tags is expected to be valid SQL script. Therefore, for comments, you must use the �/*� and the �\*/� multi-line comment delimiters instead of the standard XML comment tags.|Not validated. Use custom table names to ensure that this does not cause overwriting or changing any tables except the tables that are declared in the management pack.|
+|InstallSQLScripts section|SQL scripts that must run after the staging tables are set up. They are usually used in the **DataConsumer** template to configure views that display data from the staging tables.<br /><br />Everything that is enclosed between the <Script\><\/Script> tags is expected to be valid SQL script. Therefore, for comments, you must use the `/*` and the `*/` multi-line comment delimiters instead of the standard XML comment tags.|Not validated. Use custom table names to ensure that this does not cause overwriting or changing any tables except the ones that are declared in the management pack.|
+|UnInstallSQLScripts section|SQL scripts that must run after you delete the Configuration Manager Connector management pack in the Service Manager console.<br /><br />Everything that is enclosed between the <Script\><\/Script> tags is expected to be valid SQL script. Therefore, for comments, you must use the `/*` and the `*/` multi-line comment delimiters instead of the standard XML comment tags.|Not validated. Use custom table names to ensure that this does not cause overwriting or changing any tables except the tables that are declared in the management pack.|
 |DisableParallelProcessing|True||
 |**DataTable Properties**|||
 |DataName|The table from which to import data. It is used in the user interface (UI) and not used in queries.||
 |StageTableName|The name of the staging table. It must be unique.|An attempt to import a management pack, in which the table name is already being used, causes an error to be logged to the event log.|
 |WatermarkField|The name of the **rowversion** column||
-|WatermarkType|Possible values are:<br /><br />-   0�Indicates **DateTime** type<br />-   1�Indicates the **Timestamp** type<br />-   (-1)�Indicates no watermarking, in which case **WatermarkField** becomes optional|Other types of watermarking are not supported.|
+|WatermarkType|Possible values are:<br /><br />-   0-Indicates **DateTime** type<br />-   1-Indicates the **Timestamp** type<br />-   (-1)-Indicates no watermarking, in which case **WatermarkField** becomes optional|Other types of watermarking are not supported.|
 |BatchIdField|The name of the column that has good selectivity; used to separate incremental data into batches when importing to staging tables||
-|BatchIdType|Possible values are:<br /><br />-   0�Int<br />-   (-1)�No batching, in which case **BatchIdField** becomes optional|Integer column|
+|BatchIdType|Possible values are:<br /><br />-   0-Int<br />-   (-1)-No batching, in which case **BatchIdField** becomes optional|Integer column|
 |BatchIdSize|The size of the batch, if batching is used. A high number indicates that much data is being read or written at the same time. The recommended value is 500.|Integer column|
 |UseCache|True||
-|GroomType|Possible values are:<br /><br />-   1�The data in staging tables can be groomed after it is transferred to the Service Manager database.<br />-   2�The data in staging tables is groomed only after it is marked as deleted in the Configuration Manager database and has also been deleted in the Service Manager database because of the Service Manager connector synchronization.||
-|QueryString|The actual query that Configuration Manager 2007 uses to retrieve the requested data. The query must be of the form:<br /><br />`SELECT �`<br /><br />`FROM �`<br /><br />`WHERE �`<br /><br />`ORDER BY �`<br /><br />The WHERE clause can contain the �$COLLECTIONLIST� token. During synchronization, this token is replaced by the collections that are specified in the System Center Configuration Manager Connector Wizard.<br /><br />The data that is exposed by Configuration Manager SCCM_Ext.* views is supported for import. This data can be extended by using standard sms_def.mof extensions or by using noidmifs. Other tables are not supported.<br /><br />Notably, subqueries are not supported, but joins to other tables are supported.|Not validated. All queries have an Lfx_Status column with value �U� or �D,� indicating whether the row represents an Update or a Delete operation.|
+|GroomType|Possible values are:<br /><br />-   1-The data in staging tables can be groomed after it is transferred to the Service Manager database.<br />-   2-The data in staging tables is groomed only after it is marked as deleted in the Configuration Manager database and has also been deleted in the Service Manager database because of the Service Manager connector synchronization.||
+|QueryString|The actual query that Configuration Manager 2007 uses to retrieve the requested data. The query must be of the form:<br /><br />`SELECT ...`<br /><br />`FROM ...`<br /><br />`WHERE ...`<br /><br />`ORDER BY ...`<br /><br />The WHERE clause can contain the `$COLLECTIONLIST` token. During synchronization, this token is replaced by the collections that are specified in the System Center Configuration Manager Connector Wizard.<br /><br />The data that is exposed by Configuration Manager SCCM_Ext.* views is supported for import. This data can be extended by using standard sms_def.mof extensions or by using noidmifs. Other tables are not supported.<br /><br />Notably, subqueries are not supported, but joins to other tables are supported.|Not validated. All queries have an Lfx_Status column with value `U` or `D`, indicating whether the row represents an Update or a Delete operation.|
 |CollectionName|A name for a group of data tables; this name must be unique. Tables in the same collection cannot depend on each other.|An attempt to import a management pack, in which the collection name is already being used, causes an error to be logged to the event log.|
 |PrimaryKeyName|A section that declares the unique primary key name for the staging table.|An attempt to import a management pack, in which the key name is already being used, causes an error to be logged to the event log.|
 |DependOnDataTable|The name or names of **DataTable** that must be synchronized first before this one. Typically, this is used to synchronize the staging table before the system reads it in the Consumer view.<br /><br />If you are using multiple collections, dependency should be expressed only between tables in different collections.|Not validated|
@@ -117,9 +118,9 @@ The following table provides the details about each property in the custom Confi
 |Collation|DATABASE_DEFAULT|Not validated|
 |**DataCollection Properties**|||
 |DataCollectionName|Must be identical to what is referenced by a **DataTable** property|An attempt to import a management pack, in which the collection name is already being used, causes an error to be logged to the event log.|
-|StagingName|In DataProvider template�DefaultCache<br /><br />In DataConsumer template�Not present|Not validated|
+|StagingName|In DataProvider template-DefaultCache<br /><br />In DataConsumer template-Not present|Not validated|
 |DataTables|Comma-separated value (CSV) list of tables referencing this collection||
-|Settings|In **DataProvider** template�Not present<br /><br />In **DataConsumer** template�Indicates type mapping|Escaped XML with following syntax:<br /><br />`<TypeName>Microsoft.Windows.Computer</TypeName>`<br /><br />`<MPName>Microsoft.Windows.Library</MPName>`<br /><br />`<MPVersion>version of MP</MPVersion>`<br /><br />`<MPToken>token for MP</MPToken>`|
+|Settings|In **DataProvider** template-Not present<br /><br />In **DataConsumer** template-Indicates type mapping|Escaped XML with following syntax:<br /><br />`<TypeName>Microsoft.Windows.Computer</TypeName>`<br /><br />`<MPName>Microsoft.Windows.Library</MPName>`<br /><br />`<MPVersion>version of MP</MPVersion>`<br /><br />`<MPToken>token for MP</MPToken>`|
 
 ## Sample of Custom Configuration Manager Connector Configuration Management Packs
 The following are schema definitions and Configuration Manager Connector management pack samples that import data from the Configuration Manager SCCM_Ext.vex_GS_PC_BIOS view.
@@ -209,14 +210,14 @@ In this example, the Configuration Manager Connector Configuration management pa
           Microsoft.EnterpriseManagement.ServiceManager.Connector.Sms.SmsConnector
       </Property>
       <Property Path="$Context/Property[Type='LFX!System.LinkingFramework.DataConnector']/EntryAssembly$">
-          Microsoft.EnterpriseManagement.ServiceManager.Connector.Sms, 
-          Version="7.0.5000.0", 
-          Culture=neutral, 
+          Microsoft.EnterpriseManagement.ServiceManager.Connector.Sms,
+          Version="7.0.5000.0",
+          Culture=neutral,
           PublicKeyToken="31bf3856ad364e35"
       </Property>
       <Property Path="$Context/Property[Type='LFX!System.LinkingFramework.DataConnector']/WinFormUIAssembly$">
           Microsoft.EnterpriseManagement.ServiceManager.Connector.Sms.SmsConnector,   
-          Microsoft.EnterpriseManagement.ServiceManager.Connector.Sms, Version="7.0.5000.0", Culture=neutral, 
+          Microsoft.EnterpriseManagement.ServiceManager.Connector.Sms, Version="7.0.5000.0", Culture=neutral,
           PublicKeyToken="31bf3856ad364e35"
       </Property>
       <Property Path="$Context/Property[Type='LFX!System.LinkingFramework.DataConnector']/InstallSQLScripts$"></Property>
@@ -235,8 +236,8 @@ In this example, the Configuration Manager Connector Configuration management pa
         <Property Path="$Context/Property[Type='LFX!System.LinkingFramework.DataTable']/UseCache$">true</Property>
         <Property Path="$Context/Property[Type='LFX!System.LinkingFramework.DataTable']/GroomType$">2</Property>
         <Property Path="$Context/Property[Type='LFX!System.LinkingFramework.DataTable']/QueryString$"><![CDATA[
-                            SELECT S.ResourceID, 
-                                S.ChangeAction as Lfx_Status, 
+                            SELECT S.ResourceID,
+                                S.ChangeAction as Lfx_Status,
                                 S.Netbios_Name0,
                                 S.Resource_Domain_OR_Workgr0
                             FROM SCCM_Ext.vex_R_System S
@@ -286,12 +287,12 @@ In this example, the Configuration Manager Connector Configuration management pa
         <Property Path="$Context/Property[Type='LFX!System.LinkingFramework.DataTable']/UseCache$">true</Property>
         <Property Path="$Context/Property[Type='LFX!System.LinkingFramework.DataTable']/GroomType$">2</Property>
         <Property Path="$Context/Property[Type='LFX!System.LinkingFramework.DataTable']/QueryString$"><![CDATA[
-                            SELECT CS.ResourceID, 
+                            SELECT CS.ResourceID,
                                     CS.GroupKey,
-                                    CS.ChangeAction as Lfx_Status, 
+                                    CS.ChangeAction as Lfx_Status,
                                     CS.Name0,
                                     CS.Domain0
-                            FROM SCCM_Ext.vex_GS_COMPUTER_SYSTEM CS 
+                            FROM SCCM_Ext.vex_GS_COMPUTER_SYSTEM CS
                             INNER JOIN SCCM_Ext.vex_FullCollectionMembership CM
                                 ON CS.ResourceID = CM.ResourceID
                             INNER JOIN SCCM_Ext.vex_Collection C
@@ -409,14 +410,14 @@ In this example, the Configuration Manager Connector Configuration management pa
   Microsoft.EnterpriseManagement.ServiceManager.Linking.Consumer.OperationalStore.OperationalStoreConsumer
       </Property>
       <Property Path="$Context/Property[Type='LFX!System.LinkingFramework.DataConnector']/EntryAssembly$">
-  Microsoft.EnterpriseManagement.ServiceManager.Linking.Consumer.OperationalStore, 
-  Version="7.0.5000.0", 
-  Culture=neutral, 
+  Microsoft.EnterpriseManagement.ServiceManager.Linking.Consumer.OperationalStore,
+  Version="7.0.5000.0",
+  Culture=neutral,
   PublicKeyToken="31bf3856ad364e35"
       </Property>
       <Property Path="$Context/Property[Type='LFX!System.LinkingFramework.DataConnector']/InstallSQLScripts$"><![CDATA[
                         <Script>
-                             if not object_id('[LFXSTG].[v_Sample_SMS_BIOSComputer]') is null 
+                             if not object_id('[LFXSTG].[v_Sample_SMS_BIOSComputer]') is null
                                 drop view [LFXSTG].[v_Sample_SMS_BIOSComputer];
                              exec ('
                                 CREATE VIEW [LFXSTG].[v_Sample_SMS_BIOSComputer] AS
@@ -424,13 +425,13 @@ In this example, the Configuration Manager Connector Configuration management pa
                                            S.Lfx_SourceID,
                                            S.Lfx_Timestamp,
                                            S.Lfx_Status,
-                                           CS.Name0 AS ''DisplayName'', 
-                                           COALESCE(CS.Name0, S.Netbios_Name0) 
+                                           CS.Name0 AS ''DisplayName'',
+                                           COALESCE(CS.Name0, S.Netbios_Name0)
                                     + ''.'' + COALESCE(CS.Domain0, S.Resource_Domain_OR_Workgr0) AS ''PrincipalName''
                                     FROM LFXSTG.Sample_SMS_vex_R_System S
                                     INNER JOIN LFXSTG.Sample_SMS_vex_GS_COMPUTER_SYSTEM CS
                                          ON S.ResourceID = CS.ResourceID AND S.Lfx_SourceId = CS.Lfx_SourceId
-                                    WHERE S.Netbios_Name0 IS NOT NULL 
+                                    WHERE S.Netbios_Name0 IS NOT NULL
                                         AND S.Resource_Domain_OR_Workgr0 IS NOT NULL
                                 ');
                         </Script>
@@ -440,17 +441,17 @@ In this example, the Configuration Manager Connector Configuration management pa
                                 drop view [LFXSTG].[v_Sample_BIOS]
                             exec ('
                                 CREATE VIEW [LFXSTG].[v_Sample_BIOS] AS
-                                    SELECT P.Lfx_RowId AS Lfx_RowId, 
-                                        P.Lfx_SourceId, 
+                                    SELECT P.Lfx_RowId AS Lfx_RowId,
+                                        P.Lfx_SourceId,
                                         P.Lfx_Timestamp AS Lfx_Timestamp,
                                         P.Lfx_Status as Lfx_Status,
                                         P.SerialNumber0 AS ''SerialNumber'',
                                         COALESCE(CS.Name0, S.Netbios_Name0) + ''.'' + COALESCE(CS.Domain0, S.Resource_Domain_OR_Workgr0) AS ''PrincipalName''
                                     FROM [LFXSTG].Sample_SMS_vex_GS_PC_BIOS P
-                                    INNER JOIN [LFXSTG]. Sample_SMS_vex_R_System S 
+                                    INNER JOIN [LFXSTG]. Sample_SMS_vex_R_System S
                                         ON P.ResourceID=S.ResourceID AND P.Lfx_SourceId = S.Lfx_SourceId
                                     INNER JOIN [LFXSTG]. Sample_SMS_vex_GS_COMPUTER_SYSTEM CS
-                                        ON S.ResourceID=CS.ResourceID 
+                                        ON S.ResourceID=CS.ResourceID
                                            AND S.Lfx_SourceId = CS.Lfx_SourceId
                                 ')
                         </Script>
@@ -458,7 +459,7 @@ In this example, the Configuration Manager Connector Configuration management pa
         </Property>
         <Property Path="$Context/Property[Type='LFX!System.LinkingFramework.DataConnector']/UninstallSQLScripts$"><![CDATA[
                        <Script>
-                            if not object_id('[LFXSTG].[v_Sample_SMS_BIOSComputer]') is null 
+                            if not object_id('[LFXSTG].[v_Sample_SMS_BIOSComputer]') is null
                                 drop view [LFXSTG].[v_Sample_SMS_BIOSComputer];
                </Script>
 
@@ -478,7 +479,7 @@ In this example, the Configuration Manager Connector Configuration management pa
         <Property Path="$Context/Property[Type='LFX!System.LinkingFramework.DataTable']/BatchIdSize$">500</Property>
         <Property Path="$Context/Property[Type='LFX!System.LinkingFramework.DataTable']/UseCache$">false</Property>
         <Property Path="$Context/Property[Type='LFX!System.LinkingFramework.DataTable']/QueryString$"><![CDATA[
-                            SELECT * FROM [LFXSTG].v_Sample_SMS_BIOSComputer E 
+                            SELECT * FROM [LFXSTG].v_Sample_SMS_BIOSComputer E
                     ]]>
         </Property>
         <Property Path="$Context/Property[Type='LFX!System.LinkingFramework.DataTable']/CollectionName$">Sample_SMS_Computers_COLLECTION</Property>
@@ -527,6 +528,3 @@ In this example, the Configuration Manager Connector Configuration management pa
   </Templates>
 </ManagementPack>
 ```
-
-
-
