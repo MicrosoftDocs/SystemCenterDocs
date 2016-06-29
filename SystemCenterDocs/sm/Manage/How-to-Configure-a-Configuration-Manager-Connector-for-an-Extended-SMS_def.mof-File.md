@@ -1,15 +1,16 @@
 ---
-title: How to Configure a Configuration Manager Connector for an Extended SMS_def.mof File
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - service-manager
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 26a8586b-a5f5-47a9-9bf8-626ef75d48eb
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  bandersmsft
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  How to Configure a Configuration Manager Connector for an Extended SMS_def.mof File
+ms.technology:  service-manager
+ms.assetid:  26a8586b-a5f5-47a9-9bf8-626ef75d48eb
 ---
+
 # How to Configure a Configuration Manager Connector for an Extended SMS_def.mof File
 
 >Applies To: System Center 2016 Technical Preview - Service Manager
@@ -59,6 +60,7 @@ A custom Configuration Manager Connector Configuration management pack is simila
 The **DataProvider** section provides information, such as which data to import, that you must have when you are importing data from Configuration Manager into the staging tables of **LinkingFramework**. The **DataProvider** section includes the queries that run on the Configuration Manager site database; directives for staging table creation; custom SQL scripts; and information that is relevant for incremental synchronization, such as watermarking and batching.
 
 ### DataConsumer Section
+
 The **DataConsumer** section provides information about reading the data from staging tables and writing it to the **ServiceManager** database's instances space, such as **Entities** or **Relationships**. The **DataConsumer** section includes queries that run on the staging tables; mapping to the Service Manager type system; custom SQL scripts; and information that is relevant for incremental synchronization, such as watermarking and batching.
 
 ### Structure of the DataProvider and DataConsumer Object Templates Sections
@@ -208,14 +210,14 @@ In this example, the Configuration Manager Connector Configuration management pa
           Microsoft.EnterpriseManagement.ServiceManager.Connector.Sms.SmsConnector
       </Property>
       <Property Path="$Context/Property[Type='LFX!System.LinkingFramework.DataConnector']/EntryAssembly$">
-          Microsoft.EnterpriseManagement.ServiceManager.Connector.Sms, 
-          Version="7.0.5000.0", 
-          Culture=neutral, 
+          Microsoft.EnterpriseManagement.ServiceManager.Connector.Sms,
+          Version="7.0.5000.0",
+          Culture=neutral,
           PublicKeyToken="31bf3856ad364e35"
       </Property>
       <Property Path="$Context/Property[Type='LFX!System.LinkingFramework.DataConnector']/WinFormUIAssembly$">
           Microsoft.EnterpriseManagement.ServiceManager.Connector.Sms.SmsConnector,   
-          Microsoft.EnterpriseManagement.ServiceManager.Connector.Sms, Version="7.0.5000.0", Culture=neutral, 
+          Microsoft.EnterpriseManagement.ServiceManager.Connector.Sms, Version="7.0.5000.0", Culture=neutral,
           PublicKeyToken="31bf3856ad364e35"
       </Property>
       <Property Path="$Context/Property[Type='LFX!System.LinkingFramework.DataConnector']/InstallSQLScripts$"></Property>
@@ -234,8 +236,8 @@ In this example, the Configuration Manager Connector Configuration management pa
         <Property Path="$Context/Property[Type='LFX!System.LinkingFramework.DataTable']/UseCache$">true</Property>
         <Property Path="$Context/Property[Type='LFX!System.LinkingFramework.DataTable']/GroomType$">2</Property>
         <Property Path="$Context/Property[Type='LFX!System.LinkingFramework.DataTable']/QueryString$"><![CDATA[
-                            SELECT S.ResourceID, 
-                                S.ChangeAction as Lfx_Status, 
+                            SELECT S.ResourceID,
+                                S.ChangeAction as Lfx_Status,
                                 S.Netbios_Name0,
                                 S.Resource_Domain_OR_Workgr0
                             FROM SCCM_Ext.vex_R_System S
@@ -285,12 +287,12 @@ In this example, the Configuration Manager Connector Configuration management pa
         <Property Path="$Context/Property[Type='LFX!System.LinkingFramework.DataTable']/UseCache$">true</Property>
         <Property Path="$Context/Property[Type='LFX!System.LinkingFramework.DataTable']/GroomType$">2</Property>
         <Property Path="$Context/Property[Type='LFX!System.LinkingFramework.DataTable']/QueryString$"><![CDATA[
-                            SELECT CS.ResourceID, 
+                            SELECT CS.ResourceID,
                                     CS.GroupKey,
-                                    CS.ChangeAction as Lfx_Status, 
+                                    CS.ChangeAction as Lfx_Status,
                                     CS.Name0,
                                     CS.Domain0
-                            FROM SCCM_Ext.vex_GS_COMPUTER_SYSTEM CS 
+                            FROM SCCM_Ext.vex_GS_COMPUTER_SYSTEM CS
                             INNER JOIN SCCM_Ext.vex_FullCollectionMembership CM
                                 ON CS.ResourceID = CM.ResourceID
                             INNER JOIN SCCM_Ext.vex_Collection C
@@ -408,14 +410,14 @@ In this example, the Configuration Manager Connector Configuration management pa
   Microsoft.EnterpriseManagement.ServiceManager.Linking.Consumer.OperationalStore.OperationalStoreConsumer
       </Property>
       <Property Path="$Context/Property[Type='LFX!System.LinkingFramework.DataConnector']/EntryAssembly$">
-  Microsoft.EnterpriseManagement.ServiceManager.Linking.Consumer.OperationalStore, 
-  Version="7.0.5000.0", 
-  Culture=neutral, 
+  Microsoft.EnterpriseManagement.ServiceManager.Linking.Consumer.OperationalStore,
+  Version="7.0.5000.0",
+  Culture=neutral,
   PublicKeyToken="31bf3856ad364e35"
       </Property>
       <Property Path="$Context/Property[Type='LFX!System.LinkingFramework.DataConnector']/InstallSQLScripts$"><![CDATA[
                         <Script>
-                             if not object_id('[LFXSTG].[v_Sample_SMS_BIOSComputer]') is null 
+                             if not object_id('[LFXSTG].[v_Sample_SMS_BIOSComputer]') is null
                                 drop view [LFXSTG].[v_Sample_SMS_BIOSComputer];
                              exec ('
                                 CREATE VIEW [LFXSTG].[v_Sample_SMS_BIOSComputer] AS
@@ -423,13 +425,13 @@ In this example, the Configuration Manager Connector Configuration management pa
                                            S.Lfx_SourceID,
                                            S.Lfx_Timestamp,
                                            S.Lfx_Status,
-                                           CS.Name0 AS ''DisplayName'', 
-                                           COALESCE(CS.Name0, S.Netbios_Name0) 
+                                           CS.Name0 AS ''DisplayName'',
+                                           COALESCE(CS.Name0, S.Netbios_Name0)
                                     + ''.'' + COALESCE(CS.Domain0, S.Resource_Domain_OR_Workgr0) AS ''PrincipalName''
                                     FROM LFXSTG.Sample_SMS_vex_R_System S
                                     INNER JOIN LFXSTG.Sample_SMS_vex_GS_COMPUTER_SYSTEM CS
                                          ON S.ResourceID = CS.ResourceID AND S.Lfx_SourceId = CS.Lfx_SourceId
-                                    WHERE S.Netbios_Name0 IS NOT NULL 
+                                    WHERE S.Netbios_Name0 IS NOT NULL
                                         AND S.Resource_Domain_OR_Workgr0 IS NOT NULL
                                 ');
                         </Script>
@@ -439,17 +441,17 @@ In this example, the Configuration Manager Connector Configuration management pa
                                 drop view [LFXSTG].[v_Sample_BIOS]
                             exec ('
                                 CREATE VIEW [LFXSTG].[v_Sample_BIOS] AS
-                                    SELECT P.Lfx_RowId AS Lfx_RowId, 
-                                        P.Lfx_SourceId, 
+                                    SELECT P.Lfx_RowId AS Lfx_RowId,
+                                        P.Lfx_SourceId,
                                         P.Lfx_Timestamp AS Lfx_Timestamp,
                                         P.Lfx_Status as Lfx_Status,
                                         P.SerialNumber0 AS ''SerialNumber'',
                                         COALESCE(CS.Name0, S.Netbios_Name0) + ''.'' + COALESCE(CS.Domain0, S.Resource_Domain_OR_Workgr0) AS ''PrincipalName''
                                     FROM [LFXSTG].Sample_SMS_vex_GS_PC_BIOS P
-                                    INNER JOIN [LFXSTG]. Sample_SMS_vex_R_System S 
+                                    INNER JOIN [LFXSTG]. Sample_SMS_vex_R_System S
                                         ON P.ResourceID=S.ResourceID AND P.Lfx_SourceId = S.Lfx_SourceId
                                     INNER JOIN [LFXSTG]. Sample_SMS_vex_GS_COMPUTER_SYSTEM CS
-                                        ON S.ResourceID=CS.ResourceID 
+                                        ON S.ResourceID=CS.ResourceID
                                            AND S.Lfx_SourceId = CS.Lfx_SourceId
                                 ')
                         </Script>
@@ -457,7 +459,7 @@ In this example, the Configuration Manager Connector Configuration management pa
         </Property>
         <Property Path="$Context/Property[Type='LFX!System.LinkingFramework.DataConnector']/UninstallSQLScripts$"><![CDATA[
                        <Script>
-                            if not object_id('[LFXSTG].[v_Sample_SMS_BIOSComputer]') is null 
+                            if not object_id('[LFXSTG].[v_Sample_SMS_BIOSComputer]') is null
                                 drop view [LFXSTG].[v_Sample_SMS_BIOSComputer];
                </Script>
 
@@ -477,7 +479,7 @@ In this example, the Configuration Manager Connector Configuration management pa
         <Property Path="$Context/Property[Type='LFX!System.LinkingFramework.DataTable']/BatchIdSize$">500</Property>
         <Property Path="$Context/Property[Type='LFX!System.LinkingFramework.DataTable']/UseCache$">false</Property>
         <Property Path="$Context/Property[Type='LFX!System.LinkingFramework.DataTable']/QueryString$"><![CDATA[
-                            SELECT * FROM [LFXSTG].v_Sample_SMS_BIOSComputer E 
+                            SELECT * FROM [LFXSTG].v_Sample_SMS_BIOSComputer E
                     ]]>
         </Property>
         <Property Path="$Context/Property[Type='LFX!System.LinkingFramework.DataTable']/CollectionName$">Sample_SMS_Computers_COLLECTION</Property>
@@ -526,6 +528,3 @@ In this example, the Configuration Manager Connector Configuration management pa
   </Templates>
 </ManagementPack>
 ```
-
-
-

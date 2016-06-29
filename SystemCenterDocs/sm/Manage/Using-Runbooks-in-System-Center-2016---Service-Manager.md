@@ -1,15 +1,16 @@
 ---
-title: Using Runbooks in System Center 2016 - Service Manager
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - service-manager
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: a0863ac5-05d9-46b3-8e18-1f76e50ee07d
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  bandersmsft
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  Using Runbooks in System Center 2016   Service Manager
+ms.technology:  service-manager
+ms.assetid:  a0863ac5-05d9-46b3-8e18-1f76e50ee07d
 ---
+
 # Using Runbooks in System Center 2016 - Service Manager
 
 >Applies To: System Center 2016 Technical Preview - Service Manager
@@ -89,6 +90,3 @@ When you view the runbook, you can perform basic actions with the runbook, such 
 3.  In the **Runbooks** view, select a runbook.
 
 4.  In the **Tasks** pane under **<RunbookName\>**, click **View Runbooks** to open the runbook in Internet Explorer.
-
-
-

@@ -1,15 +1,16 @@
 ---
-title: How to Synchronize an Active Directory Connector
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - service-manager
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: d4938b79-f8ff-4c8f-85da-beebb9d44fb2
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  bandersmsft
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  How to Synchronize an Active Directory Connector
+ms.technology:  service-manager
+ms.assetid:  d4938b79-f8ff-4c8f-85da-beebb9d44fb2
 ---
+
 # How to Synchronize an Active Directory Connector
 
 >Applies To: System Center 2016 Technical Preview - Service Manager

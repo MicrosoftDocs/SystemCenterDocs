@@ -1,15 +1,16 @@
 ---
-title: Importing Data from System Center Virtual Machine Manager
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - service-manager
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: c43bfb32-0c1a-4e8e-8f10-373e68fc11a4
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  bandersmsft
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  Importing Data from System Center Virtual Machine Manager
+ms.technology:  service-manager
+ms.assetid:  c43bfb32-0c1a-4e8e-8f10-373e68fc11a4
 ---
+
 # Importing Data from System Center Virtual Machine Manager
 
 >Applies To: System Center 2016 Technical Preview - Service Manager
@@ -147,6 +148,3 @@ You can use the following procedures to disable or enable a Virtual Machine Mana
 ### To validate the status change of a virtual Machine Manager connector
 
 1.  In the middle pane, locate the connector for which you have changed status, and then verify the value in the **Enabled** column.
-
-
-

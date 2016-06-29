@@ -1,15 +1,16 @@
 ---
-title: How to Automatically Notify Groups of Users
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - service-manager
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: df903459-18ba-40e7-8896-ad71e4d1a7af
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  bandersmsft
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  How to Automatically Notify Groups of Users
+ms.technology:  service-manager
+ms.assetid:  df903459-18ba-40e7-8896-ad71e4d1a7af
 ---
+
 # How to Automatically Notify Groups of Users
 
 >Applies To: System Center 2016 Technical Preview - Service Manager
@@ -71,6 +72,3 @@ Setting up one of these for each support group will ensure that all your groups 
 ### To test the workflow and mail the enabled universal security group
 
 - Create an incident and assign it to the messaging-enabled universal security group that you created earlier.
-
-
-

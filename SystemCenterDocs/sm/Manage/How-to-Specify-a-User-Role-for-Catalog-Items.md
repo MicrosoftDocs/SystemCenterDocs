@@ -1,15 +1,16 @@
 ---
-title: How to Specify a User Role for Catalog Items
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - service-manager
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 85ce5254-2a03-4e37-8e8c-072b263c7e51
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  bandersmsft
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  How to Specify a User Role for Catalog Items
+ms.technology:  service-manager
+ms.assetid:  85ce5254-2a03-4e37-8e8c-072b263c7e51
 ---
+
 # How to Specify a User Role for Catalog Items
 
 >Applies To: System Center 2016 Technical Preview - Service Manager

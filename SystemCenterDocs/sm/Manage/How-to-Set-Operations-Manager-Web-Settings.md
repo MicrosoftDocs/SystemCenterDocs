@@ -1,15 +1,16 @@
 ---
-title: How to Set Operations Manager Web Settings
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - service-manager
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: faa28b76-7132-4962-9f59-95df2bd07aac
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  bandersmsft
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  How to Set Operations Manager Web Settings
+ms.technology:  service-manager
+ms.assetid:  faa28b76-7132-4962-9f59-95df2bd07aac
 ---
+
 # How to Set Operations Manager Web Settings
 
 >Applies To: System Center 2016 Technical Preview - Service Manager

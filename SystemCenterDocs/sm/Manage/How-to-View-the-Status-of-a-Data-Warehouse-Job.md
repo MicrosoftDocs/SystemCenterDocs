@@ -1,15 +1,16 @@
 ---
-title: How to View the Status of a Data Warehouse Job
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - service-manager
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: e80fa4de-39bc-4463-bb29-661575b0b1ab
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  bandersmsft
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  How to View the Status of a Data Warehouse Job
+ms.technology:  service-manager
+ms.assetid:  e80fa4de-39bc-4463-bb29-661575b0b1ab
 ---
+
 # How to View the Status of a Data Warehouse Job
 
 >Applies To: System Center 2016 Technical Preview - Service Manager

@@ -1,15 +1,16 @@
 ---
-title: Configuring Change and Activity Management in System Center 2016 - Service Manager
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - service-manager
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 399ef0ce-7ebe-4c30-8f8a-d10f475ad49d
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  bandersmsft
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  Configuring Change and Activity Management in System Center 2016   Service Manager
+ms.technology:  service-manager
+ms.assetid:  399ef0ce-7ebe-4c30-8f8a-d10f475ad49d
 ---
+
 # Configuring Change and Activity Management in System Center 2016 - Service Manager
 
 >Applies To: System Center 2016 Technical Preview - Service Manager

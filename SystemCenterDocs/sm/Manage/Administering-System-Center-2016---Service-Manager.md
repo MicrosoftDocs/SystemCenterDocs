@@ -1,15 +1,16 @@
 ---
-title: Administering System Center 2016 - Service Manager
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - service-manager
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: dba97a37-aeb4-4cc0-8423-85bb3489d1e7
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  bandersmsft
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  Administering System Center 2016   Service Manager
+ms.technology:  service-manager
+ms.assetid:  dba97a37-aeb4-4cc0-8423-85bb3489d1e7
 ---
+
 # Administering System Center 2016 - Service Manager
 
 >Applies To: System Center 2016 Technical Preview - Service Manager
@@ -133,7 +134,3 @@ Welcome to the Administrator's Guide for Microsoft System Center 2016 Technical 
 -   [Planning Guide for System Center 2016 - Service Manager](../Service-Manager.md)
 
 -   [Operations Guide for System Center 2016 - Service Manager](../Service-Manager.md)
-
-
-
-

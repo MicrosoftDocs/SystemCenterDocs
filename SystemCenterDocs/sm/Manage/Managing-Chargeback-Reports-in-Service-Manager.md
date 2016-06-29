@@ -1,15 +1,16 @@
 ---
-title: Managing Chargeback Reports in Service Manager
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - service-manager
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 52ce9a2c-f29e-4db6-913a-9aa6b5fab36a
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  bandersmsft
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  Managing Chargeback Reports in Service Manager
+ms.technology:  service-manager
+ms.assetid:  52ce9a2c-f29e-4db6-913a-9aa6b5fab36a
 ---
+
 # Managing Chargeback Reports in Service Manager
 
 >Applies To: System Center 2016 Technical Preview - Service Manager
@@ -59,6 +60,3 @@ You can use the following procedure to configure the sample Microsoft Excel char
 3.  In the **Workbook Connections** dialog box, for each connection, view its **Properties** and replace <LocalHost> with the server name of your Service Manager data warehouse management server. If your data warehouse analysis database name is not DWASDataBase, then replace the database name with the one that you use.
 
 4.  Optionally, you can save the workbook to a shared folder or other shared location, such as the analysis library.
-
-
-

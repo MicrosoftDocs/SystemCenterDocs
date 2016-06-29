@@ -1,15 +1,16 @@
 ---
-title: Managing Release Records in Service Manager
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - service-manager
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 68d973c3-4c17-41cb-8584-9e6e25fe2962
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  bandersmsft
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  Managing Release Records in Service Manager
+ms.technology:  service-manager
+ms.assetid:  68d973c3-4c17-41cb-8584-9e6e25fe2962
 ---
+
 # Managing Release Records in Service Manager
 
 >Applies To: System Center 2016 Technical Preview - Service Manager
@@ -63,6 +64,3 @@ Like change requests, release records contain activities for approval and manual
 8.  Skip a failed activity, if necessary.
 
 9. Determine the status and progress for a change request that is contained in a release record.
-
-
-

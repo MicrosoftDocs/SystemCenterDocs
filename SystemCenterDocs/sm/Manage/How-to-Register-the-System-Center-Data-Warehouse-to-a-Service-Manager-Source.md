@@ -1,15 +1,16 @@
 ---
-title: How to Register the System Center Data Warehouse to a Service Manager Source
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - service-manager
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 30b83b58-d257-43ae-997b-2514231f5059
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  bandersmsft
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  How to Register the System Center Data Warehouse to a Service Manager Source
+ms.technology:  service-manager
+ms.assetid:  30b83b58-d257-43ae-997b-2514231f5059
 ---
+
 # How to Register the System Center Data Warehouse to a Service Manager Source
 
 >Applies To: System Center 2016 Technical Preview - Service Manager

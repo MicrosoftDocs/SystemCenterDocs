@@ -1,15 +1,16 @@
 ---
-title: List of the Service Manager Cmdlets
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - service-manager
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 98804667-754e-417a-ac2e-6ae4d47e65d2
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  bandersmsft
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  List of the Service Manager Cmdlets
+ms.technology:  service-manager
+ms.assetid:  98804667-754e-417a-ac2e-6ae4d47e65d2
 ---
+
 # List of the Service Manager Cmdlets
 
 >Applies To: System Center 2016 Technical Preview - Service Manager
@@ -139,6 +140,3 @@ About Managing the Data Warehouse supports the following Windows PowerShell cmdl
 |Start-SCDWJob|Starts a Data Warehouse job.|
 |Unregister-SCDWManagememtPack||
 |Unregister-SCDWSource||
-
-
-

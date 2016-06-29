@@ -1,15 +1,16 @@
 ---
-title: How to Verify a Notification Configuration
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - service-manager
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 9395bb54-3aab-48e3-9b9f-8b874d213fe3
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  bandersmsft
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  How to Verify a Notification Configuration
+ms.technology:  service-manager
+ms.assetid:  9395bb54-3aab-48e3-9b9f-8b874d213fe3
 ---
+
 # How to Verify a Notification Configuration
 
 >Applies To: System Center 2016 Technical Preview - Service Manager

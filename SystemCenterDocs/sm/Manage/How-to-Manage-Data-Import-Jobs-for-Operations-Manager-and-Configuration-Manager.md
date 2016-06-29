@@ -1,15 +1,16 @@
 ---
-title: How to Manage Data Import Jobs for Operations Manager and Configuration Manager
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - service-manager
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 24cdcc7c-8b46-42a0-a699-d5061b01aec6
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  bandersmsft
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  How to Manage Data Import Jobs for Operations Manager and Configuration Manager
+ms.technology:  service-manager
+ms.assetid:  24cdcc7c-8b46-42a0-a699-d5061b01aec6
 ---
+
 # How to Manage Data Import Jobs for Operations Manager and Configuration Manager
 
 >Applies To: System Center 2016 Technical Preview - Service Manager

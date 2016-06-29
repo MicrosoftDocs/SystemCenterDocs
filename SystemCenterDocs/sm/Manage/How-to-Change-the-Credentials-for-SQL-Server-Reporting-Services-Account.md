@@ -1,15 +1,16 @@
 ---
-title: How to Change the Credentials for SQL Server Reporting Services Account
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - service-manager
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: c06e8cf9-b739-483d-bcf1-abab60f3ec23
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  bandersmsft
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  How to Change the Credentials for SQL Server Reporting Services Account
+ms.technology:  service-manager
+ms.assetid:  c06e8cf9-b739-483d-bcf1-abab60f3ec23
 ---
+
 # How to Change the Credentials for SQL Server Reporting Services Account
 
 >Applies To: System Center 2016 Technical Preview - Service Manager

@@ -1,15 +1,16 @@
 ---
-title: How to Enable Data Warehouse Job Schedules
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - service-manager
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: f87dfbc3-d82b-428f-8dc4-e6a8129fd79f
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  bandersmsft
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  How to Enable Data Warehouse Job Schedules
+ms.technology:  service-manager
+ms.assetid:  f87dfbc3-d82b-428f-8dc4-e6a8129fd79f
 ---
+
 # How to Enable Data Warehouse Job Schedules
 
 >Applies To: System Center 2016 Technical Preview - Service Manager
@@ -39,6 +40,3 @@ Use the following procedure to enable the schedule for the ETL jobs as needed; y
     ```
 
 3.  Type **exit**, and then press ENTER.
-
-
-

@@ -1,15 +1,16 @@
 ---
-title: Planning for Service Manager Deployment
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - service-manager
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 6e0bf098-9149-4194-bbc4-3b6eaf5f5e8e
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  bandersmsft
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  Planning for Service Manager Deployment
+ms.technology:  service-manager
+ms.assetid:  6e0bf098-9149-4194-bbc4-3b6eaf5f5e8e
 ---
+
 # Planning for Service Manager Deployment
 
 >Applies To: System Center 2016 Technical Preview - Service Manager
@@ -63,7 +64,4 @@ In your enterprise, you might create multiple System Center 2016 Technical Previ
 
 -   [Accounts Required During Setup](Accounts-Required-During-Setup.md)
 
-    Describes the accounts thta you will need in order to setup System Center 2016 Technical Preview - Service Manager
-
-
-
+    Describes the accounts that you will need in order to setup System Center 2016 Technical Preview - Service Manager

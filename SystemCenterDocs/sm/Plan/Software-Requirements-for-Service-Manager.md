@@ -1,15 +1,16 @@
 ---
-title: Software Requirements for Service Manager
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - service-manager
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: f864d8f1-7acf-4aa7-a810-50e272f7e25f
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  bandersmsft
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  Software Requirements for Service Manager
+ms.technology:  service-manager
+ms.assetid:  f864d8f1-7acf-4aa7-a810-50e272f7e25f
 ---
+
 # Software Requirements for Service Manager
 
 >Applies To: System Center 2016 Technical Preview - Service Manager
@@ -64,7 +65,7 @@ If your SQL Server installation is using the default collation (SQL_Latin1_Gener
 > [!CAUTION]
 > Support for languages other than English in System Center 2016 Technical Preview - Service Manager is not possible when you are using the collation SQL_Latin1_General_CP1_CI_AS. If later you decide to support multiple languages using a different collation, you have to reinstall SQL Server. There are no issues with using the SQL_Latin1_General_CP1_CI_AS collation with the English-only installations of System Center 2016 Technical Preview - Service Manager. SQL_Latin1_General_CP1_CI_AS is supported despite the warning message in setup. It is generally used for installations where the Service Manager databases will share a SQL Server instance with other System Center components which must be installed on SQL_Latin1_General_CP1_CI_AS.  If Service Manager will be installed on its own SQL Server instance, it is recommended to use the newer and more complete collation Latin1_General_100_CP1_CI_AS. For more information about language support, see [Language Support for Service Manager](Language-Support-for-Service-Manager.md).
 
-You can define the collation when you install SQL Server. During Setup, on the **Server Configuration** page, click the **Collation** tab, and then click **Customize** for both the **Database Engine** and **Analysis Services**entries.
+You can define the collation when you install SQL Server. During Setup, on the **Server Configuration** page, click the **Collation** tab, and then click **Customize** for both the **Database Engine** and **Analysis Services** entries.
 
 ### Microsoft SQL Server 2012
 To download trial software of the English versions of Microsoft SQL Server 2012, see the [SQL Server 2012 Trial](http://go.microsoft.com/fwlink/p/?LinkID=208018) page on the Microsoft web site.
@@ -131,6 +132,3 @@ You must have access to a Simple Mail Transfer Protocol (SMTP) server to use the
 
 ### Windows Safe Mode
 System Center 2016 Technical Preview - Service Manager does not operate and the services used by System Center 2016 Technical Preview - Service Manager do not start if Windows Server 2008 is running in safe mode. If you attempt to start the System Center 2016 Technical Preview - Service Manager services manually while in safe mode, the services fail to start and an error is written into the event log.
-
-
-

@@ -1,15 +1,16 @@
 ---
-title: Language Support for Service Manager
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology:
-  - service-manager
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 890ad168-21bb-4fc2-a669-5f9e1196cea3
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  bandersmsft
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  Language Support for Service Manager
+ms.technology:  service-manager
+ms.assetid:  890ad168-21bb-4fc2-a669-5f9e1196cea3
 ---
+
 # Language Support for Service Manager
 
 >Applies To: System Center 2016 Technical Preview - Service Manager
@@ -66,4 +67,3 @@ For more information, see the following links for the version of SQL Server that
 
 ### Turkish Language
 None of the Turkish collations is supported in Service Manager. The Latin1_General_100_CI_AS collation was used for testing with the Turkish language. As a result, some search and sort operations in Service Manager will be affected for some Turkish characters.
-

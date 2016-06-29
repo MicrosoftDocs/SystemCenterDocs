@@ -1,15 +1,16 @@
 ---
-title: How to Change the User Credentials for the Operational Database Account
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - service-manager
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 04c4c092-e4e4-4e09-bfed-b3f83bb7ae43
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  bandersmsft
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  How to Change the User Credentials for the Operational Database Account
+ms.technology:  service-manager
+ms.assetid:  04c4c092-e4e4-4e09-bfed-b3f83bb7ae43
 ---
+
 # How to Change the User Credentials for the Operational Database Account
 
 >Applies To: System Center 2016 Technical Preview - Service Manager
@@ -161,6 +162,3 @@ Use the following procedures to make these changes in Service Manager.
 4.  In the **Tasks** pane, click **Properties**.
 
 5.  In the **Operational Database Account** page, in the **User name**, **Password**, and **Domain** boxes, type the new credentials for the Operational Database Account, and then click **OK**.
-
-
-

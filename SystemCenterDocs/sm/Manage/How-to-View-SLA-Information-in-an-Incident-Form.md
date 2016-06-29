@@ -1,15 +1,16 @@
 ---
-title: How to View SLA Information in an Incident Form
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - service-manager
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: e2014c9a-bb98-445e-b5fa-194cbb3d4634
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  bandersmsft
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  How to View SLA Information in an Incident Form
+ms.technology:  service-manager
+ms.assetid:  e2014c9a-bb98-445e-b5fa-194cbb3d4634
 ---
+
 # How to View SLA Information in an Incident Form
 
 >Applies To: System Center 2016 Technical Preview - Service Manager
@@ -45,6 +46,3 @@ When an incident has already been breached, no notification bar is displayed in 
 4.  Click the **Service Level** tab, and observe the status of the incident as **Breached**.
 
 5.  Click **OK** to close the incident.
-
-
-

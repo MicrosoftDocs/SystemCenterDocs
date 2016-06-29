@@ -1,15 +1,16 @@
 ---
-title: Moving Data Warehouse Databases
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology:
-  - service-manager
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 1e9a5425-b8e8-4681-9498-89538a558fc4
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  bandersmsft
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  Moving Data Warehouse Databases
+ms.technology:  service-manager
+ms.assetid:  1e9a5425-b8e8-4681-9498-89538a558fc4
 ---
+
 # Moving Data Warehouse Databases
 
 >Applies To: System Center 2016 Technical Preview - Service Manager
@@ -46,8 +47,7 @@ Use the following procedures to locate the user accounts and instances of SQL Se
 
 #### To identify the SQL Server database and instance names used by the data warehouse management server
 
-1.  Sign in
-         to the data warehouse management server as a user with administrative credentials.
+1.  Sign in to the data warehouse management server as a user with administrative credentials.
 
 2.  On the Windows desktop, click **Start**, and then click **Run**.
 

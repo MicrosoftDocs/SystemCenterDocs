@@ -1,15 +1,16 @@
 ---
-title: How to Install the Service Manager Data Warehouse (Four-Computer Scenario)
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology:
-  - service-manager
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: ef24bc6b-17ec-4cb3-8de8-35ca0cc7d5a7
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  bandersmsft
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  How to Install the Service Manager Data Warehouse  Four Computer Scenario 
+ms.technology:  service-manager
+ms.assetid:  ef24bc6b-17ec-4cb3-8de8-35ca0cc7d5a7
 ---
+
 # How to Install the Service Manager Data Warehouse (Four-Computer Scenario)
 
 >Applies To: System Center 2016 Technical Preview - Service Manager
@@ -107,3 +108,4 @@ The data warehouse databases include the following three databases: DWStagingAnd
 19. On the **Installation summary** page, click **Install**.
 
 20. On the **Setup completed successfully** page, we recommend that you leave **Open the Encryption Backup or Restore Wizard** selected, and then click **Close**.
+

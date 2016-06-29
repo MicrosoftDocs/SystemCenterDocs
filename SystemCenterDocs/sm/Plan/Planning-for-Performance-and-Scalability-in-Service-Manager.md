@@ -1,15 +1,16 @@
 ---
-title: Planning for Performance and Scalability in Service Manager
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - service-manager
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 92bfb0ba-aec3-484f-bbd3-627c00a79ebe
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  bandersmsft
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  Planning for Performance and Scalability in Service Manager
+ms.technology:  service-manager
+ms.assetid:  92bfb0ba-aec3-484f-bbd3-627c00a79ebe
 ---
+
 # Planning for Performance and Scalability in Service Manager
 
 >Applies To: System Center 2016 Technical Preview - Service Manager
@@ -44,6 +45,3 @@ Specifically, the sizing tool:
 -   [Service Manager Performance](Service-Manager-Performance.md)
 
     Contains general guidelines to consider when you are planning for Service Manager software performance.
-
-
-

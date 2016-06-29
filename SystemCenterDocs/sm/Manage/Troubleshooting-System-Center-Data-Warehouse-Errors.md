@@ -1,15 +1,16 @@
 ---
-title: Troubleshooting System Center Data Warehouse Errors
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - service-manager
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 635140a5-f4d7-4d6a-9a11-308982023c68
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  bandersmsft
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  Troubleshooting System Center Data Warehouse Errors
+ms.technology:  service-manager
+ms.assetid:  635140a5-f4d7-4d6a-9a11-308982023c68
 ---
+
 # Troubleshooting System Center Data Warehouse Errors
 
 >Applies To: System Center 2016 Technical Preview - Service Manager
@@ -240,11 +241,11 @@ To troubleshoot this problem, complete the following steps:
 4.  If there is an error message similar to the following message, you will have to unregister the data warehouse from Service Manager, reinstall the data warehouse, and then reregister the Service Manager management server to the data warehouse management server:
 
     ```
-    Deployment Execution Infrastructure has retried the maximum number of times and is giving up on this execution step. 
-    MP Element ID:  DerivedManagementPack.SystemDerivedMp.ServiceManager.ActivityManagement.Library.Datawarehouse 
-    MP name: ServiceManager.ActivityManagement.Library.Datawarehouse 
-    MP version: 7.0.5826.0 
-    Operation: Install 
+    Deployment Execution Infrastructure has retried the maximum number of times and is giving up on this execution step.
+    MP Element ID:  DerivedManagementPack.SystemDerivedMp.ServiceManager.ActivityManagement.Library.Datawarehouse
+    MP name: ServiceManager.ActivityManagement.Library.Datawarehouse
+    MP version: 7.0.5826.0
+    Operation: Install
     Error message:  Cannot find resource with ID TransformActivityStatusResource
     ```
 
@@ -273,7 +274,3 @@ To troubleshoot this problem, check if the password for each Run As account has 
 It is easy to update the password if it is expired. However it is more difficult to update the system if you change the Run As account. We do not recommend that you modify Run As accounts.
 
 If the job failure is not related to the password, make sure that the Run As account for the failed job can be used to connect to the target database. For example, ensure that the Extract job Run As account can be used to connect to the Service Manager database. If not, make sure that the Structured Query Language (SQL) service that is hosting the database is running.
-
-
-
-

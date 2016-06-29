@@ -1,15 +1,16 @@
 ---
-title: Deploy the Self-Service Portal for Service Manager
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology:
-  - service-manager
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 18833e51-8624-463a-a2d7-cd3be75f2efb
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  bandersmsft
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  Deploy the Self Service Portal for Service Manager
+ms.technology:  service-manager
+ms.assetid:  18833e51-8624-463a-a2d7-cd3be75f2efb
 ---
+
 # Deploy the Self-Service Portal for Service Manager
 
 >Applies To: System Center 2016 Technical Preview - Service Manager
@@ -124,6 +125,7 @@ Use the following step to complete your installation.
 The following section describe how you can customize the Self Service portal to suit your organization.
 
 ### Basic Customization
+
 The `<appSettings>` tab in the Web.config file offers some standard settings to easily customize and personalize the areas which are most often modified. Here's a list of them.
 
 |Key|Purpose|
@@ -139,6 +141,7 @@ The `<appSettings>` tab in the Web.config file offers some standard settings to 
 |UserCacheTimeout|The Portal uses a caching infrastructure to provide a swift user experience. The value of this key defines the timeout, in seconds, to cache user-specific details of the signed-in user.|
 |DataCacheTimeout|The Portal uses a caching infrastructure to provide a swift user experience. The value of this key defines the timeout, in seconds, to cache generic data which can be shared among different users.|
 |EnableTelemetry|The value of this key defines your selection about participating in Microsoft's Customer Experience Improvement Program. Your portal sends usage telemetry data to Microsoft when this key is marked as **True**. By default, it has the same value that you chose during Setup.|
+
 
 > [!NOTE]
 > You must restart the IIS service after you make any changes to the Web.config file.

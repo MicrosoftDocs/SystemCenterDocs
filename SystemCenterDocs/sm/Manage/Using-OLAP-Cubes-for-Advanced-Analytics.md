@@ -1,15 +1,16 @@
 ---
-title: Using OLAP Cubes for Advanced Analytics
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - service-manager
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 72f90ad3-06a3-4fd8-8dfc-0d06bd2b5fdc
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  bandersmsft
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  Using OLAP Cubes for Advanced Analytics
+ms.technology:  service-manager
+ms.assetid:  72f90ad3-06a3-4fd8-8dfc-0d06bd2b5fdc
 ---
+
 # Using OLAP Cubes for Advanced Analytics
 
 >Applies To: System Center 2016 Technical Preview - Service Manager
@@ -47,6 +48,3 @@ When your data is in a common model, you can manipulate information and have com
     -   Create the Resolved Incidents dashboard.
 
     -   Deploy the Resolved Incidents dashboard.
-
-
-

@@ -1,15 +1,16 @@
 ---
-title: How to Disable a Data Warehouse Job Schedule
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - service-manager
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: fff90c14-a2bd-4f92-95a5-b708203d2f06
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  bandersmsft
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  How to Disable a Data Warehouse Job Schedule
+ms.technology:  service-manager
+ms.assetid:  fff90c14-a2bd-4f92-95a5-b708203d2f06
 ---
+
 # How to Disable a Data Warehouse Job Schedule
 
 >Applies To: System Center 2016 Technical Preview - Service Manager
@@ -40,6 +41,3 @@ You can use the following procedure to disable the schedule for the extract, tra
     ```
 
 3.  Type **exit**, and then press ENTER.
-
-
-

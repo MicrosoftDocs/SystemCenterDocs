@@ -1,15 +1,16 @@
 ---
-title: How to Create a View for Imported Configuration Items
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - service-manager
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 9507e47e-16d7-4621-a724-39aea32d847c
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  bandersmsft
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  How to Create a View for Imported Configuration Items
+ms.technology:  service-manager
+ms.assetid:  9507e47e-16d7-4621-a724-39aea32d847c
 ---
+
 # How to Create a View for Imported Configuration Items
 
 >Applies To: System Center 2016 Technical Preview - Service Manager

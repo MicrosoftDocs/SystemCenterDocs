@@ -1,15 +1,16 @@
 ---
-title: Managing Incidents
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - service-manager
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: d7b6d4bd-c0be-499b-bcd4-14bae92b4e5f
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  bandersmsft
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  Managing Incidents
+ms.technology:  service-manager
+ms.assetid:  d7b6d4bd-c0be-499b-bcd4-14bae92b4e5f
 ---
+
 # Managing Incidents
 
 >Applies To: System Center 2016 Technical Preview - Service Manager

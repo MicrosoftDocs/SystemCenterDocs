@@ -1,15 +1,16 @@
 ---
-title: Guidance for Installing Service Manager on Virtual Machines
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology:
-  - service-manager
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 866fa7d8-0803-40d3-ae63-765f4850159e
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  bandersmsft
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  Guidance for Installing Service Manager on Virtual Machines
+ms.technology:  service-manager
+ms.assetid:  866fa7d8-0803-40d3-ae63-765f4850159e
 ---
+
 # Guidance for Installing Service Manager on Virtual Machines
 
 >Applies To: System Center 2016 Technical Preview - Service Manager

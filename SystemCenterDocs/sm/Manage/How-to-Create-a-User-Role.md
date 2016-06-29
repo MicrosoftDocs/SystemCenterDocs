@@ -1,15 +1,16 @@
 ---
-title: How to Create a User Role
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - service-manager
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 4cd5bcfe-2647-41c3-b84e-d42ae4509ac7
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  bandersmsft
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  How to Create a User Role
+ms.technology:  service-manager
+ms.assetid:  4cd5bcfe-2647-41c3-b84e-d42ae4509ac7
 ---
+
 # How to Create a User Role
 
 >Applies To: System Center 2016 Technical Preview - Service Manager
@@ -58,6 +59,3 @@ Use the following procedures to create a user role and assign users to that role
 -   For information about how to use Windows PowerShell to set the UserRole property for a Service Manager user, see [Update-SCSMUserRole](http://go.microsoft.com/fwlink/p/?LinkId=225389).
 
 -   For information about how to use Windows PowerShell to remove a user role from Service Manager, see [Remove-SCSMUserRole](http://go.microsoft.com/fwlink/p/?LinkId=225371).
-
-
-

@@ -1,15 +1,16 @@
 ---
-title: View and Analyze an OLAP Data Cube with Excel
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - service-manager
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 3a3b43a0-d777-452a-987b-5f41f58e62d0
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  bandersmsft
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  View and Analyze an OLAP Data Cube with Excel
+ms.technology:  service-manager
+ms.assetid:  3a3b43a0-d777-452a-987b-5f41f58e62d0
 ---
+
 # View and Analyze an OLAP Data Cube with Excel
 
 >Applies To: System Center 2016 Technical Preview - Service Manager

@@ -1,15 +1,16 @@
 ---
-title: How to Create a Service Request Using the Service Manager Console
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - service-manager
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: d2081264-5175-41a4-a96c-283e2e9c23be
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  bandersmsft
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  How to Create a Service Request Using the Service Manager Console
+ms.technology:  service-manager
+ms.assetid:  d2081264-5175-41a4-a96c-283e2e9c23be
 ---
+
 # How to Create a Service Request Using the Service Manager Console
 
 >Applies To: System Center 2016 Technical Preview - Service Manager
@@ -41,7 +42,5 @@ End users often create service requests in System Center 2016 Technical Preview 
 11. Click **OK** to save and close the service request form.
 
 ## See Also
+
 [Managing Service Requests in Service Manager](Managing-Service-Requests-in-Service-Manager.md)
-
-
-

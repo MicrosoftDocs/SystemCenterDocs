@@ -1,15 +1,16 @@
 ---
-title: Getting Started with Service Manager Cmdlets for Windows PowerShell
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - service-manager
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 961b1998-10b7-4f01-92b7-3b1daf5de732
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  bandersmsft
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  Getting Started with Service Manager Cmdlets for Windows PowerShell
+ms.technology:  service-manager
+ms.assetid:  961b1998-10b7-4f01-92b7-3b1daf5de732
 ---
+
 # Getting Started with Service Manager Cmdlets for Windows PowerShell
 
 >Applies To: System Center 2016 Technical Preview - Service Manager
@@ -65,7 +66,6 @@ The administrator cmdlet module is automatically pre-imported in this session.
 1.  Open a Service Manager Windows PowerShell session.
 
 2.  You can now access the on-the-box Help, or you can use the `-online` parameter to access the most up-to-date online Help:
-
     -   On-the-box Help: Type the following command. Replace <*cmdlet-name*> with the name of the cmdlet that you want to get help for, for example, **Import-SCSMManagementPack**:
 
         ```
@@ -79,6 +79,3 @@ The administrator cmdlet module is automatically pre-imported in this session.
         ```
 
         This command uses the `-online` parameter to access the latest online Help for a cmdlet. It opens a web browser and displays the online Help that is available for <*cmdlet-name*>.
-
-
-

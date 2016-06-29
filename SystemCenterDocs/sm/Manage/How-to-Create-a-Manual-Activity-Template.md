@@ -1,15 +1,16 @@
 ---
-title: How to Create a Manual Activity Template
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - service-manager
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 09be239c-1add-4acc-ac21-a29aa080b216
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  bandersmsft
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  How to Create a Manual Activity Template
+ms.technology:  service-manager
+ms.assetid:  09be239c-1add-4acc-ac21-a29aa080b216
 ---
+
 # How to Create a Manual Activity Template
 
 >Applies To: System Center 2016 Technical Preview - Service Manager
@@ -41,6 +42,3 @@ In the following procedure, you will create a manual activity template named "Se
 ### To validate that the template was created
 
 -   In the **Templates** view, verify that the new template was created. You might have to press F5 to make the new manual activity template appear.
-
-
-

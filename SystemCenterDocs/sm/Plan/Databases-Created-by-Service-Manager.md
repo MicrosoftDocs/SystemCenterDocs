@@ -1,15 +1,16 @@
 ---
-title: Databases Created by Service Manager
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - service-manager
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 7aa3ae77-88e7-4ff8-bb63-814286b7089f
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  bandersmsft
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  Databases Created by Service Manager
+ms.technology:  service-manager
+ms.assetid:  7aa3ae77-88e7-4ff8-bb63-814286b7089f
 ---
+
 # Databases Created by Service Manager
 
 >Applies To: System Center 2016 Technical Preview - Service Manager
@@ -23,6 +24,3 @@ Before starting the installation of System Center 2016 Technical Preview - Servi
 
 > [!IMPORTANT]
 > For this release, Service Manager does not support case-sensitive instance names. Setup will display a warning if you attempt to install Service Manager on a case-sensitive instance of Microsoft SQL Server.
-
-
-

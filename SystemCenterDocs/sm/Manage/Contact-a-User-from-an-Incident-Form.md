@@ -1,15 +1,16 @@
 ---
-title: Contact a User from an Incident Form
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - service-manager
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 8e104877-97b2-4453-ae63-b57aa1564c4b
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  bandersmsft
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  Contact a User from an Incident Form
+ms.technology:  service-manager
+ms.assetid:  8e104877-97b2-4453-ae63-b57aa1564c4b
 ---
+
 # Contact a User from an Incident Form
 
 >Applies To: System Center 2016 Technical Preview - Service Manager
@@ -33,6 +34,3 @@ Both the computer  running the Service Manager console and the user you want to 
 2.  Click **Send Instant Message**.
 
 3.  Your instant message program opens. Compose the instant message, and then send it.
-
-
-

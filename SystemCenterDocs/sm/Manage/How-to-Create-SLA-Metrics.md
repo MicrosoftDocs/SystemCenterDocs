@@ -1,15 +1,16 @@
 ---
-title: How to Create SLA Metrics
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - service-manager
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 6215e448-568f-4956-8d4c-60b685ce9d3e
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  bandersmsft
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  How to Create SLA Metrics
+ms.technology:  service-manager
+ms.assetid:  6215e448-568f-4956-8d4c-60b685ce9d3e
 ---
+
 # How to Create SLA Metrics
 
 >Applies To: System Center 2016 Technical Preview - Service Manager

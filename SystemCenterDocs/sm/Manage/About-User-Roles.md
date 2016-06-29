@@ -1,15 +1,16 @@
 ---
-title: About User Roles
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - service-manager
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 98ff2c1f-28d5-42fb-9dcf-47707e4d6620
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  bandersmsft
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  About User Roles
+ms.technology:  service-manager
+ms.assetid:  98ff2c1f-28d5-42fb-9dcf-47707e4d6620
 ---
+
 # About User Roles
 
 >Applies To: System Center 2016 Technical Preview - Service Manager
@@ -78,6 +79,3 @@ The user role, Report User, has one purpose in Service Manager: to find the comp
 
 ### Workflows
 Workflows might have to read and write to the Service Manager database. During Setup, you are asked to provide credentials for the Workflows user role, and this user role performs the required actions on the Service Manager database. Like the user role, Report User, the narrow purpose of the Workflow user role means there is no reason for creating other user roles.
-
-
-

@@ -1,15 +1,16 @@
 ---
-title: How to Configure Incident Workflows
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - service-manager
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: bf7c1bd2-c986-4979-b7c6-b6ccf300a632
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  bandersmsft
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  How to Configure Incident Workflows
+ms.technology:  service-manager
+ms.assetid:  bf7c1bd2-c986-4979-b7c6-b6ccf300a632
 ---
+
 # How to Configure Incident Workflows
 
 >Applies To: System Center 2016 Technical Preview - Service Manager
@@ -67,6 +68,3 @@ You can use the following procedure to create and configure a workflow rule that
 -   For information about how to use Windows PowerShell to update workflow properties, see [Update-SCSMWorkflow cmdlet](http://go.microsoft.com/fwlink/p/?LinkID=225392).
 
 -   For information about how to use Windows PowerShell to remove a workflow from Service Manager, see [Remove-SCSMWorkflow](http://go.microsoft.com/fwlink/p/?LinkID=225372).
-
-
-

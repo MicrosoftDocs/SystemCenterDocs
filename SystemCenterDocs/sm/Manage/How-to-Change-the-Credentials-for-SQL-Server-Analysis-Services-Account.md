@@ -1,15 +1,16 @@
 ---
-title: How to Change the Credentials for SQL Server Analysis Services Account
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - service-manager
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: f8a1be01-4c9e-4e47-bd5e-d9614ec045bc
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  bandersmsft
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  How to Change the Credentials for SQL Server Analysis Services Account
+ms.technology:  service-manager
+ms.assetid:  f8a1be01-4c9e-4e47-bd5e-d9614ec045bc
 ---
+
 # How to Change the Credentials for SQL Server Analysis Services Account
 
 >Applies To: System Center 2016 Technical Preview - Service Manager
@@ -35,6 +36,3 @@ If the account that is used for the SQL Server Analysis Services account changes
 5.  In the **Impersonation Information** window, select **Use a specific Windows user name and password**, type the credentials for the new account, and then click **OK**.
 
 6.  Click **OK** to close **Data Source Properties - DWDataMart**, and then close Microsoft SQL Server Management Studio.
-
-
-

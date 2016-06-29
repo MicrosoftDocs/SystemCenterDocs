@@ -1,15 +1,16 @@
 ---
-title: How to Create a Request Offering
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - service-manager
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 1137cb8c-abcb-4929-bf4b-f3a41db1bf2e
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  bandersmsft
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  How to Create a Request Offering
+ms.technology:  service-manager
+ms.assetid:  1137cb8c-abcb-4929-bf4b-f3a41db1bf2e
 ---
+
 # How to Create a Request Offering
 
 >Applies To: System Center 2016 Technical Preview - Service Manager
@@ -89,6 +90,3 @@ You can use the following procedure to create a request offering.
 11. On the **Summary** page, review the information, and then click **Create**.
 
 12. On the **Completion** page, click **Close**.
-
-
-

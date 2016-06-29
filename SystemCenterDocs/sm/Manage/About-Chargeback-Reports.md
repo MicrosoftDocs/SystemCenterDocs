@@ -1,15 +1,16 @@
 ---
-title: About Chargeback Reports
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - service-manager
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 4d4d2c54-b812-4d83-af58-9345b43a05d5
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  bandersmsft
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  About Chargeback Reports
+ms.technology:  service-manager
+ms.assetid:  4d4d2c54-b812-4d83-af58-9345b43a05d5
 ---
+
 # About Chargeback Reports
 
 >Applies To: System Center 2016 Technical Preview - Service Manager
@@ -21,11 +22,8 @@ In traditional IT, infrastructure was largely physical, service level agreements
 In System Center, chargeback is one of the tools that help you communicate with business units about how they consume capacity. This helps you by utilize existing investments, proportionate to your customer's requests. System Center components help you manage the following processes:
 
 -   Quotas
-
 -   Leases
-
 -   Approvals
-
 -   Chargeback or showback
 
 The theme of chargeback is cloud based pricing, where each cloud has its own price, based on SLA. Most often, you'll have many clouds with various SLAs for the clouds for different business units or organizations. Chargeback uses a price sheet, or rate card, for each cloud. This means you can have one price represented in a price sheet that contains various clouds addressing one SLA, and you can have another price sheet for a different SLA.
@@ -54,7 +52,3 @@ Before you can use chargeback reports, you must create and synchronize an Operat
 -   virtual machines - this is used to collect a fixed price for virtual machines other than for virtual machine components
 
 -   clouds - used to collect cloud membership price for clouds other than virtual machine or virtual machine component costs
-
-
-
-

@@ -1,15 +1,16 @@
 ---
-title: How to Install Chargeback Reports
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - service-manager
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: ac53c27a-94b7-4ceb-9162-3fc82d933840
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  bandersmsft
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  How to Install Chargeback Reports
+ms.technology:  service-manager
+ms.assetid:  ac53c27a-94b7-4ceb-9162-3fc82d933840
 ---
+
 # How to Install Chargeback Reports
 
 >Applies To: System Center 2016 Technical Preview - Service Manager
@@ -86,6 +87,3 @@ After you have installed chargeback report files on the Operations Manager and S
 8.  In the list of data warehouse jobs, select **MPSyncJob** and then in the Task list, click **Resume**.
 
 9. Configure the Operations Manager CI connector and ensure that Service Manager has discovered the virtual machine information from Operations Manager.
-
-
-

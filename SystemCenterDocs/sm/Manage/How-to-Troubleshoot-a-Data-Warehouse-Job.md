@@ -1,15 +1,16 @@
 ---
-title: How to Troubleshoot a Data Warehouse Job
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - service-manager
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 53e50bfa-c0b9-4fdd-8d96-dd4aea852eb8
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  bandersmsft
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  How to Troubleshoot a Data Warehouse Job
+ms.technology:  service-manager
+ms.assetid:  53e50bfa-c0b9-4fdd-8d96-dd4aea852eb8
 ---
+
 # How to Troubleshoot a Data Warehouse Job
 
 >Applies To: System Center 2016 Technical Preview - Service Manager
@@ -55,7 +56,3 @@ The second procedure can be used to change the default transform job timeout per
 3.  Restart the Microsoft Monitoring Agent service.
 
 4.  You can resume the Transform.common job to see the change.
-
-
-
-

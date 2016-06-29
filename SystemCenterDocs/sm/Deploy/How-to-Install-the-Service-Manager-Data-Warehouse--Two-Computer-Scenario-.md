@@ -1,15 +1,16 @@
 ---
-title: How to Install the Service Manager Data Warehouse (Two-Computer Scenario)
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology:
-  - service-manager
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: e4ecbde0-c51b-4511-b3b4-c84bc2bcd141
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  bandersmsft
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  How to Install the Service Manager Data Warehouse  Two Computer Scenario 
+ms.technology:  service-manager
+ms.assetid:  e4ecbde0-c51b-4511-b3b4-c84bc2bcd141
 ---
+
 # How to Install the Service Manager Data Warehouse (Two-Computer Scenario)
 As the second step in the two-computer installation process for System Center 2016 Technical Preview - Service Manager, deploy the data warehouse management server and the data warehouse databases on the second computer. During Setup, you will be prompted to provide credentials for the following accounts:
 
@@ -74,3 +75,4 @@ For more information about the permissions that these accounts require, see "Acc
 -   On the **Installation summary** page, click **Install**.
 
 -   On the **Setup completed successfully** page, we recommend that you leave **Open the Encryption Backup or Restore Wizard** selected, and then click **Close**.
+

@@ -1,15 +1,16 @@
 ---
-title: How to Add a Member to a User Role
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - service-manager
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: a1698611-409d-4856-9fce-33432e7dfd47
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  bandersmsft
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  How to Add a Member to a User Role
+ms.technology:  service-manager
+ms.assetid:  a1698611-409d-4856-9fce-33432e7dfd47
 ---
+
 # How to Add a Member to a User Role
 
 >Applies To: System Center 2016 Technical Preview - Service Manager
@@ -41,6 +42,3 @@ Use the following procedures to add a user to the Service Manager Advanced Opera
 -   Log on to the Service Manager console as one of the users assigned to the user role. Verify that you cannot access data for which you do not have access rights, as specified in the user roles.
 
 ![](../../media/pssymbol.png)You can use a Windows PowerShell command to view users. For information about how to use Windows PowerShell to retrieve users that are defined in Service Manager, see [Get-SCSMUser](http://go.microsoft.com/fwlink/p/?LinkId=225335).
-
-
-

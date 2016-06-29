@@ -1,15 +1,16 @@
 ---
-title: Configuring Desired Configuration Management to Generate Incidents in System Center 2016 - Service Manager
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology:
-  - service-manager
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 27337337-38a7-476f-974a-6ffa16027bf1
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  bandersmsft
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  Configuring Desired Configuration Management to Generate Incidents in System Center 2016   Service Manager
+ms.technology:  service-manager
+ms.assetid:  27337337-38a7-476f-974a-6ffa16027bf1
 ---
+
 # Configuring Desired Configuration Management to Generate Incidents in System Center 2016 - Service Manager
 
 >Applies To: System Center 2016 Technical Preview - Service Manager
@@ -82,4 +83,3 @@ You can use the following procedures to configure incident management to automat
 -   For information about how to use Windows PowerShell to update properties of a desired configuration management workflow, see [Update-SCSMDCMWorkflow](http://go.microsoft.com/fwlink/p/?LinkID=225383).
 
 -   For information about how to use Windows PowerShell to remove a desired configuration management workflow from Service Manager, see [Remove-SCSMDCMWorkflow](http://go.microsoft.com/fwlink/p/?LinkID=225365).
-

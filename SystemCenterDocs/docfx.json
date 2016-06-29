@@ -8,24 +8,19 @@
         "exclude": [
           "**/obj/**",
           "system-center/**"
-        ],
-        "src": null,
-        "dest": null
+        ]
       }
     ],
     "resource": [
       {
         "files": [
           "**/*.png",
-          "**/*.jpg",
-          "**/*.gif"
+          "**/*.jpg"
         ],
         "exclude": [
           "**/obj/**",
           "system-center/**"
-        ],
-        "src": null,
-        "dest": null
+        ]
       }
     ],
     "overwrite": [],
@@ -33,7 +28,7 @@
     "globalMetadata": {},
     "fileMetadata": {},
     "template": [
-      "op.html"
+      null
     ],
     "dest": "system-center"
   }

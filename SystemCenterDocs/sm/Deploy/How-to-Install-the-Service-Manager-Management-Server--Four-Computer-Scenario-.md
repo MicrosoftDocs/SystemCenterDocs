@@ -1,15 +1,16 @@
 ---
-title: How to Install the Service Manager Management Server (Four-Computer Scenario)
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - service-manager
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 4f420b9b-c3ca-424c-9b35-520807ab40a7
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  bandersmsft
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  How to Install the Service Manager Management Server  Four Computer Scenario 
+ms.technology:  service-manager
+ms.assetid:  4f420b9b-c3ca-424c-9b35-520807ab40a7
 ---
+
 # How to Install the Service Manager Management Server (Four-Computer Scenario)
 The following procedure describes how to install the System Center 2016 Technical Preview - Service Manager management server, the Service Manager database, the data warehouse management server, data warehouse databases, and the Service Manager console in a four-computer topology. You start the deployment process by installing the Service Manager management server and the Service Manager console on one computer and the Service Manager database on a second computer. Before you start, make sure that Microsoft SQL Server 2008 is installed on the computer that will host the Service Manager database.
 

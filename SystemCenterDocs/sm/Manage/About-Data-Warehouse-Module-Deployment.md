@@ -1,15 +1,16 @@
 ---
-title: About Data Warehouse Module Deployment
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - service-manager
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: c7dd72b4-65f1-426b-a700-d54afe55af44
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  bandersmsft
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  About Data Warehouse Module Deployment
+ms.technology:  service-manager
+ms.assetid:  c7dd72b4-65f1-426b-a700-d54afe55af44
 ---
+
 # About Data Warehouse Module Deployment
 
 >Applies To: System Center 2016 Technical Preview - Service Manager
@@ -84,6 +85,3 @@ The transform process starts on a scheduled interval. Transform is the process t
 
 ### Load
 The load process starts on a scheduled interval. The load process queries for the data from the DWRepository database. The transformed data from DWRepository is inserted into the DWDatamart database. The DWDatamart is the database that is used for all end-user reporting needs.
-
-
-

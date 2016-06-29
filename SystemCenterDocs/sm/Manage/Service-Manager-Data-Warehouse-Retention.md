@@ -1,15 +1,16 @@
 ---
-title: Service Manager Data Warehouse Retention
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - service-manager
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: b8678e2d-8c8c-40b4-a18f-b5495ad7a4cd
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  bandersmsft
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  Service Manager Data Warehouse Retention
+ms.technology:  service-manager
+ms.assetid:  b8678e2d-8c8c-40b4-a18f-b5495ad7a4cd
 ---
+
 # Service Manager Data Warehouse Retention
 
 >Applies To: System Center 2016 Technical Preview - Service Manager
@@ -36,6 +37,3 @@ Individual fact tables inherit the global retention value when created, or you c
 #### To set the retention period for default tables or specific tables
 
 1.  Use the **Set-SCDWRetentionPeriod** PowerShell cmdlet to set the retention period for either a specific fact table within a specific data warehouse database or the default for fact tables within the database. See [Set-SCDWRetentionPeriod](https://technet.microsoft.com/en-us/library/hh541725(v=sc.20).aspx) for detailed descriptions of available parameters and example usage.
-
-
-

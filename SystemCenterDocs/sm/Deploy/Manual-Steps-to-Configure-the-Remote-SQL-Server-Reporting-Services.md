@@ -1,15 +1,16 @@
 ---
-title: Manual Steps to Configure the Remote SQL Server Reporting Services
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - service-manager
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 21737383-4edf-4d52-a3ed-185496367070
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  bandersmsft
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  Manual Steps to Configure the Remote SQL Server Reporting Services
+ms.technology:  service-manager
+ms.assetid:  21737383-4edf-4d52-a3ed-185496367070
 ---
+
 # Manual Steps to Configure the Remote SQL Server Reporting Services
 
 >Applies To: System Center 2016 Technical Preview - Service Manager

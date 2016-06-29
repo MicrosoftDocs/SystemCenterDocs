@@ -1,15 +1,16 @@
 ---
-title: Deployment Scenarios for Service Manager
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology:
-  - service-manager
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 037167a4-a9c3-49f4-9232-c76ea32a68a9
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  bandersmsft
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  Deployment Scenarios for Service Manager
+ms.technology:  service-manager
+ms.assetid:  037167a4-a9c3-49f4-9232-c76ea32a68a9
 ---
+
 # Deployment Scenarios for Service Manager
 
 >Applies To: System Center 2016 Technical Preview - Service Manager
