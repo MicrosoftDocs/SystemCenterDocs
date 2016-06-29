@@ -1,15 +1,16 @@
 ---
-title: Credentials
-ms.custom: na
-ms.prod: system-center-2012
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - orchestrator
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 978a72d8-a446-42e5-b2bb-53a838623ee0
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  bwren
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  Credentials
+ms.technology:  service-management-automation
+ms.assetid:  978a72d8-a446-42e5-b2bb-53a838623ee0
 ---
+
 # Credentials
 
 >Applies To: Windows Azure Pack for Windows Server, System Center 2012 R2 Orchestrator
@@ -37,7 +38,7 @@ The activities in the following table are used to access credentials in a runboo
 |Get-AutomationPSCredential|Gets a username/password to use in a runbook.|
 
 > [!NOTE]
-> You should avoid using variables in the –Name parameter of **Get-AutomationPSCredential** and **Get-AutomationCertificate** since this can complicate discovering dependencies between runbooks and Automation variables.
+> You should avoid using variables in the ï¿½Name parameter of **Get-AutomationPSCredential** and **Get-AutomationCertificate** since this can complicate discovering dependencies between runbooks and Automation variables.
 
 ## Creating a new credential
 
@@ -107,7 +108,7 @@ $certName = 'MyCertificate'
 $path = 'c:\certs\MyCertificate.pfx'
 $certPwd = ConvertTo-SecureString -String 'P@$$w0rd' -AsPlainText -Force
 
-Set-SmaCertificate -WebServiceEndpoint $webServer -port $port -Name $certName –Path $certPath –Password $certPwd
+Set-SmaCertificate -WebServiceEndpoint $webServer -port $port -Name $certName ï¿½Path $certPath ï¿½Password $certPwd
 ```
 
 ## Using a PowerShell Credential in a Runbook

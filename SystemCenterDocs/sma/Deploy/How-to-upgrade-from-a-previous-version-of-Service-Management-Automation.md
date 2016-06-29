@@ -1,12 +1,16 @@
 ---
-title: How to upgrade from a previous version of Service Management Automation
-ms.custom: na
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: c849610a-81ea-474d-a77f-bc15694e65f0
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  bwren
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  How to upgrade from a previous version of Service Management Automation
+ms.technology:  service-management-automation
+ms.assetid:  c849610a-81ea-474d-a77f-bc15694e65f0
 ---
+
 # How to upgrade from a previous version of Service Management Automation
 
 >Applies To:
@@ -30,3 +34,4 @@ When installing SMA with an existing database, you must install the worker serve
 3. Install the SMA runbook workers using the instructions at [How to install the Service Management Automation runbook worker](How-to-install-the-Service-Management-Automation-runbook-worker.md).
 4. Install the SMA web service using the instructions at [How to install the Service Management Automation web service](How-to-install-the-Service-Management-Automation-web-service.md).
 5. Remove SMA servers from maintenance mode.
+

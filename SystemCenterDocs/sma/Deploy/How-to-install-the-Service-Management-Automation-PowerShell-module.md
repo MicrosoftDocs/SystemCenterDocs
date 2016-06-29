@@ -1,15 +1,16 @@
 ---
-title: How to install the Service Management Automation PowerShell module
-ms.custom: na
-ms.prod: system-center-2012
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - orchestrator
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: aaa97a7e-362c-45ff-940d-7fb503703744
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  bwren
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  How to install the Service Management Automation PowerShell module
+ms.technology:  service-management-automation
+ms.assetid:  aaa97a7e-362c-45ff-940d-7fb503703744
 ---
+
 # How to install the Service Management Automation PowerShell module
 
 >Applies To: Windows Azure Pack for Windows Server, System Center 2012 R2 Orchestrator

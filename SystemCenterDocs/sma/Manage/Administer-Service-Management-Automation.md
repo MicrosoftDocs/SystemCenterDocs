@@ -1,15 +1,16 @@
 ---
-title: Administer Service Management Automation
-ms.custom: na
-ms.prod: system-center-2012
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - service-management-automation-(sma)
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 170a1635-d94f-49ab-b1f9-d6f6596f5489
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  bwren
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  Administer Service Management Automation
+ms.technology:  service-management-automation
+ms.assetid:  170a1635-d94f-49ab-b1f9-d6f6596f5489
 ---
+
 # Administer Service Management Automation
 
 >Applies To: System Center Technical Preview

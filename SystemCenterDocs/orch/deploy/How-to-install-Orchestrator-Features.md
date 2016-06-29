@@ -1,15 +1,16 @@
 ---
-title: How to install Orchestrator Features
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - orchestrator
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: cd0b7e89-7bd2-482a-b840-f3f119e6f9ea
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  bwren
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  How to install Orchestrator Features
+ms.technology:  orchestrator
+ms.assetid:  cd0b7e89-7bd2-482a-b840-f3f119e6f9ea
 ---
+
 # How to install Orchestrator Features
 
 >Applies To: System Center 2016 Technical Preview - Orchestrator

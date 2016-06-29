@@ -1,15 +1,16 @@
 ---
-title: What&#39;s new in Service Management Automation 2016
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - service-management-automation-(sma)
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 204ba9e4-a03e-4598-9489-15a0f1a2394c
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  bwren
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  What s new in Service Management Automation 2016
+ms.technology:  service-management-automation
+ms.assetid:  204ba9e4-a03e-4598-9489-15a0f1a2394c
 ---
+
 # What&#39;s new in Service Management Automation 2016
 The following new features are available in Service Management Automation (SMA) 2016.  
 

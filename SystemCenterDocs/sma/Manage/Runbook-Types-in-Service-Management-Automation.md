@@ -1,12 +1,16 @@
 ---
-title: Runbook Types in Service Management Automation
-ms.custom: na
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 757a0f53-b84a-404b-85fb-bfe1c065c599
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  bwren
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  Runbook Types in Service Management Automation
+ms.technology:  service-management-automation
+ms.assetid:  757a0f53-b84a-404b-85fb-bfe1c065c599
 ---
+
 # Runbook Types in Service Management Automation
 
 >Applies To: 

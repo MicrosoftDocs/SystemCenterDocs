@@ -1,15 +1,16 @@
 ---
-title: Orchestrator Architecture
-ms.custom: na
-ms.prod: system-center-2012
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - orchestrator
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 7e0dc83c-cf86-4ccd-b356-a2842e086755
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  bwren
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  orchestrator architecture
+ms.technology:  orchestrator
+ms.assetid:  7e0dc83c-cf86-4ccd-b356-a2842e086755
 ---
+
 # Orchestrator Architecture
 This topic provides an overview of Orchestrator including a description of the system architecture, the internals of a typical runbook workflow, and the flow of a deployed runbook.
 

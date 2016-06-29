@@ -1,15 +1,16 @@
 ---
-title: Connections
-ms.custom: na
-ms.prod: system-center-2012
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - orchestrator
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: d82d70df-2de2-4d1f-9e9d-a033af8e6b05
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  bwren
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  Connections
+ms.technology:  service-management-automation
+ms.assetid:  d82d70df-2de2-4d1f-9e9d-a033af8e6b05
 ---
+
 # Connections
 
 >Applies To: Windows Azure Pack for Windows Server, System Center 2012 R2 Orchestrator
@@ -67,7 +68,7 @@ $webServer = 'https://MyWebServer'
 $port = 9090
 $connectionName = 'MyConnection'
 $fieldValues = @{"Username"="MyUser";"Password"="password";"ComputerName"="MyComputer"} 
-New-SmaConnection –WebServiceEndpoint $webServer –port $port –Name $connectionName –ConnectionTypeName "VirtualMachineManager" –ConnectionFieldValues $fieldValues
+New-SmaConnection ï¿½WebServiceEndpoint $webServer ï¿½port $port ï¿½Name $connectionName ï¿½ConnectionTypeName "VirtualMachineManager" ï¿½ConnectionFieldValues $fieldValues
 ```
 
 ## Using a connection in a runbook
