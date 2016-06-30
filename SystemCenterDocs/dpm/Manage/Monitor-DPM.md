@@ -51,11 +51,11 @@ From the dashboard you can download the Backup agent for installation on a serve
 ## Monitor DPM in Operations Manager
 You can use monitor and report on the health and status of DPM servers using System Center Operations Manager Management Packs for DPM. DPM provides the following management packs:
 
--   **Reporting management pack** (Microsoft.SystemCenter.DataProtectionManager.2012.Reporting.mp)—Collects and displays reporting data from all DPM servers, and exposes a set of Operations Manager warehouse views for DPM. You can query these views to generate custom reports.
+-   **Reporting management pack** (Microsoft.SystemCenter.DataProtectionManager.2012.Reporting.mp) - Collects and displays reporting data from all DPM servers, and exposes a set of Operations Manager warehouse views for DPM. You can query these views to generate custom reports.
 
 -   **Discovery and monitoring management pack** (Microsoft.SystemCenter.DataProtectionManager.2012.Discovery.mp)
 
--   **Library management pack**—(Microsoft.SystemCenter.DataProtectionManager.2012.Library)
+-   **Library management pack** - (Microsoft.SystemCenter.DataProtectionManager.2012.Library)
 
 Using these packs you can:
 
@@ -122,11 +122,8 @@ I
 
 2.  In the Operations console, click **Administration**. Right-click **Management Packs** > **Import Management Packs**.
 
-3.  Select **Microsoft.SystemCenter.DataProtectionManagerReporting.MP** > **Open**. 
+3.  Select **Microsoft.SystemCenter.DataProtectionManagerReporting.MP** > **Open**.
     Follow the instructions in the Import Management Packs wizard.
 
 #### Tweaking Management Pack settings
 After you import the Management Packs they discover and monitor data without requiring any additional configuration. You can optionally tweak settings like monitors and rules for your environment. For example if you find that performance-measuring rules that are enable degrade server performance with slow WAN links, you can disable them. For instructions, see [How to enable or disable a rule or monitor](https://technet.microsoft.com/en-us/library/hh212818.aspx).
-
-
-

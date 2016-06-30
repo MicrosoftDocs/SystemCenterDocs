@@ -27,7 +27,7 @@ Here's what you'll need to do to get DPM set up:
 
 |||
 |-|-|
-|Installation prerequisites|A number of components are needed on the DPM server. These are installed automatically during setup:<br /><br />-   .NET Framework 4.0 (DPM 2012 R2); .NET Framework 3.5 with SP1 (DPM 2012). Install with Add Features in Server Manager if it doesn't install automatically.<br />-   Windows Installer 4.5 (or later). Installed as part of the operating system but can also be installed as an administrator from <root directory>DPM2012\setup\redist\WindowsInstaller\INSTMSI45.EXE.<br />-   Microsoft Visual C++ 2010  Redistributable (DPM 2012 R2); Microsoft Visual C++ 2008 Redistributable (DPM 2012). If it doesn't install automatically run from <root directory>\Redist\vcredist\vcredist2010_x64.exe or <root directory>\Redist\vcredist\ vcredist_x64.exe.<br />-   PowerShell 3.0 (included with Windows Server 2012 R2 or 2012) or PowerShell 2.0 (included with Windows Server 2008 R2)<br />-   Microsoft Application Error Reporting. If it doesn't install automatically run <root directory>DPM2012\setup\redist\dw20sharedamd64.msi. as an administrator.<br />-   Windows Single Instance Store (SIS)—If it doesn't install automatically, from an elevated command prompt on the DPM server, install the SIS limited feature (including the SIS filter driver).<br />    For windows Server 2012 or 2012 R2 type: dism /online /enable-feature:SIS-Limited.<br />    For  Windows Server 2008 R2 type: start /wait ocsetup.exe SIS-Limited /quiet /norestart. The service name (SIS-Limited) is case sensitive.|
+|Installation prerequisites|A number of components are needed on the DPM server. These are installed automatically during setup:<br /><br />-   .NET Framework 4.0 (DPM 2012 R2); .NET Framework 3.5 with SP1 (DPM 2012). Install with Add Features in Server Manager if it doesn't install automatically.<br />-   Windows Installer 4.5 (or later). Installed as part of the operating system but can also be installed as an administrator from <root directory>DPM2012\setup\redist\WindowsInstaller\INSTMSI45.EXE.<br />-   Microsoft Visual C++ 2010  Redistributable (DPM 2012 R2); Microsoft Visual C++ 2008 Redistributable (DPM 2012). If it doesn't install automatically run from <root directory>\Redist\vcredist\vcredist2010_x64.exe or <root directory>\Redist\vcredist\ vcredist_x64.exe.<br />-   PowerShell 3.0 (included with Windows Server 2012 R2 or 2012) or PowerShell 2.0 (included with Windows Server 2008 R2)<br />-   Microsoft Application Error Reporting. If it doesn't install automatically run <root directory>DPM2012\setup\redist\dw20sharedamd64.msi. as an administrator.<br />-   Windows Single Instance Store (SIS) - If it doesn't install automatically, from an elevated command prompt on the DPM server, install the SIS limited feature (including the SIS filter driver).<br />    For windows Server 2012 or 2012 R2 type: dism /online /enable-feature:SIS-Limited.<br />    For  Windows Server 2008 R2 type: start /wait ocsetup.exe SIS-Limited /quiet /norestart. The service name (SIS-Limited) is case sensitive.|
 |SQL Server prerequisites<br /><br />(For DPM Technical Preview 3 and DPM 2012 R2)|You'll need:<br /><br />-   64-bit SQL Server 2014, SQL Server 2012 with SP1 or SQL Server 2008 R2 with SP2<br />-   With System Center 2012 licenses you can install and run SQL Server Standard edition instances to support System Center 2012 products. You mustn't use these instances  for other workloads.<br />-   You can install SQL Server  on the DPM server or on a remote server.  If you install remotely the server remote instance must be in the same domain and time zone as the DPM server. You can't run SQL Server on a domain controller.<br />-   Get the local or remote SQL Server up and running before you install DPM.<br />-   SQL Server can be standalone or running in a cluster.<br />-   You can't use a SQL Server AlwaysOn deployment.<br />-   If you're deploying DPM as an Azure virtual machine you can use an Azure virtual machine running SQL Server as a remote SQL Server instance. You can't use an on-premises SQL Server when in this deploying, and using an Azure SQL Database isn't currently supported.|
 |SQL Server prerequisites (DPM 2012)|You'll need:<br /><br />-   64-bit SQL Server 2012 (only for DPM 2012 with sP1), SQL Server 2008 R2 with SP1, SQL Server 2008<br />-   SQL Server can be installed on the DPM server or on a remote server.  The computer running the remote instance must be in the same domain and time zone as the DPM server. You can't run SQL Server on a domain controller.<br />-   If you want to use a remote SQL Server get it up and running before you install DPM. If If you want to run a local SQL Server 2012 instance you'll need to set it up before DPM installation.  you want to run a local SQL Server 2008 R2 instance  you can set it up during DPM installation.<br />-   SQL Server can be standalone or running in a cluster.<br />-   You can't use a SQL Server AlwaysOn deployment.<br />-   The local version of SQL Server installed with DPM installs a number of SQL Server components that aren't needed by DPM. These won't be removed if you uninstall DPM in the future: Microsoft SQL Server Compact 3. 5 SP1,  Compact 3.5 SP1 Query Tools, SQL Server 2008 R2 Native Client, Office 2003 Web Components|
 |DPM installed as Hyper-V VM|If you're installing DPM as a Hyper-V virtual machine note that:<br /><br /><ul><li>Virtual DPM installation isn't for scaled up environments. Instead, use direct attach/SAN-based storage. Performance can suffer in scaled up (Hyper-V on CSV) environments using VHDX files compared to SAN. Therefore, for scaled up environments we don't recommend using VHDX.</li><li>There's no size limit for VHDX.<br />    Both fixed and dynamically expanding VHDX files are supported.</li><li>Both VHD and VHDX files are supported in the DPM storage pool.<br />     A virtual DPM installation is required to support adding virtual hard drives to the storage pool.</li><li>For dynamic and fixed virtual hard drives, VHD and VHDX files are supported on remote SMB shares.</li><li>From DPM 2012 R2 with Update 3 onwards you can run DPM as a Hyper-V virtual machine with support for tape drives using synthetic FC.</li><li>For high availability DPM storage, virtual hard drives should be placed on scaled-out file servers (SOFS).  SMB 3.0 is required for scaled-out file servers.</li><li>Virtual DPM installations don't support:<br /><br /><ul><li>Windows 2012 Storage Spaces or virtual hard drives built on top of storage spaces.<br />        Local or remote hosting of VHDX files on Windows 2012 storage space also isn't supported.</li><li>Enabling Disk Dedupe on volumes hosting virtual hard drives.</li><li>Windows 2012 iSCSI targets (which use virtual hard drives) as a DPM storage pool.</li><li>NTFS compression for volumes hosting VHD files used in the DPM storage pool.</li><li>Bitlocker on volumes hosting VHD files used for the storage pool.</li><li>A native 4K sector size of physical disks for VHDX files in the DPM storage pool.</li><li>Virtual hard drives hosted on Windows 2008 servers.</li></ul></li></ul>|
@@ -49,6 +49,8 @@ You'll need to set up a SQL Server database if:
 
 -   You're running an earlier version of DPM but you don't want to use the local SQL Server 2008 R2 installation that's included in DPM setup.
 
+To set up a SQL Server database:
+
 1.  Run SQL Server setup on the local server on which you'll install DPM, or on a remote server.
 
 2.  On the **Installation** tab, click **New SQL Server stand-alone installation** or **add features to an existing installation**.
@@ -56,8 +58,7 @@ You'll need to set up a SQL Server database if:
 3.  On the **Product Key** tab enter a valid license key. On the **Setup Support Rules** tab, correct any failures before proceeding.
      On the **Setup Role** tab select **SQL Server Feature Installation**
 
-4.  .
-    On the **Feature Selection** tab select **Database Engine Services**. In **Instance Features**, select **Reporting Service - Native**.
+4.  On the **Feature Selection** tab select **Database Engine Services**. In **Instance Features**, select **Reporting Service - Native**.
      On the  **Installation Rules** tab review the rules.
 
 5.  On the **Instance Configuration** tab specify the name of SQL Server instance you'll use for DPM.  Don't use an underscore or localized characters in the name. In **Disk Space Requirements** review the information.
@@ -82,15 +83,14 @@ You'll need to set up a SQL Server database if:
 
         -   Make sure TCP/IP is enabled with **default failure audit** and **enable password policy checking**.
 
-        -   Configure an incoming exception for sqlservr.exe for the DPM instance of SQL Server, to allow TCP on port 80.
-            The report server listens for HTTP requests on port 80 for HTTP requests.
-            A
+        -   To allow TCP on port 80, configure an incoming exception for sqlservr.exe for the DPM instance of SQL Server.
+            The report server listens for HTTP requests on port 80.
 
         -   Enable RPC on the remote SQL Server.
 
         -   The default instance of the database engine listens on TCP port 1443. This setting can be modified. To use the SQL Server Browser service to connect to instances that don't listen on the default 1433 port, you'll need UDP port 1434.
 
-        -   named instance of SQL Server uses Dynamic ports by default. This setting can be modified.
+        -   Named instance of SQL Server uses Dynamic ports by default. This setting can be modified.
 
         -   You can see the current port number used by the database engine in the SQL Server error log. You can view the error logs by using SQL Server Management Studio and connecting to the named instance. You can view the current log under the Management - SQL Server Logs in the entry Server is listening on ['any' <ipv4> port_number].
 
@@ -164,11 +164,11 @@ If you want to set up DPM on an RODC you'll need to do a couple of steps before 
 
 1.  Create the security groups and accounts needed for DPM. To do this click **Start** > **Administrative Tools** >**Active Directory Users and Computers** > **Domain/Builtin** and create these security groups. For each group use the default setting for Scope (Global) and Group type (Security):
 
-    -   DPMDBReaders$<*Computer Name*>; MSDPMTrustedMachines$<*Computer Name*>; 
-        DPMRADCOMTrustedMachines$<*Computer Name*>; 
-        DPMRADmTrustedMachines$<*Computer Name*>; DPMDBAdministrators$<*Computer Name*>; 
-        MSDPMTrustedUsers$<*Computer Name*>; 
-        DPMSCOM$<*Computer Name*>; 
+    -   DPMDBReaders$<*Computer Name*>; MSDPMTrustedMachines$<*Computer Name*>;
+        DPMRADCOMTrustedMachines$<*Computer Name*>;
+        DPMRADmTrustedMachines$<*Computer Name*>; DPMDBAdministrators$<*Computer Name*>;
+        MSDPMTrustedUsers$<*Computer Name*>;
+        DPMSCOM$<*Computer Name*>;
         DPMRATrustedDPMRAs$<*Computer Name*>, where <*Computer Name*> is the name of the domain controller.
 
 2.  Add the local machine account for the domain controller (<*Computer Name*>) to the MSDPMTrustedMachines$<*Computer Name*> group. Then on the primary domain controller create a domain user account with the lowest possible credentials. Assign it a strong password  that doesn't expire and add it to the local administrators group.
@@ -219,14 +219,11 @@ If you want to set up DPM on an RODC you'll need to do a couple of steps before 
         ```
         use DPMDB
         declare @refresh_jobid uniqueidentifier
-        select @refresh_jobid = ScheduleId from tbl_SCH_ScheduleDefinition where JobDefinitionId in 
-        (select JobDefinitionId from tbl_JM_TaskDefinition where TaskDefinitionId in (select distinct TaskDefinitionID from tbl_TE_TaskTrail 
+        select @refresh_jobid = ScheduleId from tbl_SCH_ScheduleDefinition where JobDefinitionId in
+        (select JobDefinitionId from tbl_JM_TaskDefinition where TaskDefinitionId in (select distinct TaskDefinitionID from tbl_TE_TaskTrail
         where VerbID = '53603503-C4C8-4D0E-8F1E-D2F3868E51E3')) and IsDeleted=0
         exec msdb.dbo.sp_update_job @job_name =@refresh_jobid, @enabled=0
         update tbl_SCH_ScheduleDefinition
         set IsDeleted=1
         where ScheduleId = @refresh_jobid
         ```
-
-
-

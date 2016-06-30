@@ -77,7 +77,7 @@ Native data protection provides:
 
 However native protection might not be enough if application errors, corruptions, or security and malware incidents occur. In these situations DPM provides a number of advantages:
 
--   Less DAGs are required—Native protection requires additional mailbox servers to host copies of active data. There's no reliance on DAGs for backup with DPM protection.
+-   Less DAGs are require - Native protection requires additional mailbox servers to host copies of active data. There's no reliance on DAGs for backup with DPM protection.
 
 -   Simpler restore - DPM provides simple and centralized data recovery from point-in-time backups.
 
@@ -87,7 +87,7 @@ However native protection might not be enough if application errors, corruptions
 
 ## Before you start
 
-1.  **Deploy DPM**—Verify that DPM is installed and deployed correctly. If you haven't see:
+1.  **Deploy DPM** - Verify that DPM is installed and deployed correctly. If you haven't see:
 
     -   System requirements for DPM
 
@@ -97,9 +97,9 @@ However native protection might not be enough if application errors, corruptions
 
     -   [Get DPM installed](../get-started/Get-DPM-installed.md)
 
-2.  Set up storage—You can store backed up data on disk, on tape, and in the cloud with Azure.  Read more in [Prepare data storage](../get-started/Prepare-data-storage.md).
+2.  Set up storage - You can store backed up data on disk, on tape, and in the cloud with Azure.  Read more in [Prepare data storage](../get-started/Prepare-data-storage.md).
 
-3.  **Set up the DPM protection agent**—The agent needs to be installed on the Exchange server.  Read [Deploy the DPM protection agent](Deploy-the-DPM-protection-agent.md).
+3.  **Set up the DPM protection agent** - The agent needs to be installed on the Exchange server.  Read [Deploy the DPM protection agent](Deploy-the-DPM-protection-agent.md).
 
 ## Configure backup
 
@@ -115,7 +115,7 @@ However native protection might not be enough if application errors, corruptions
 
 6.  In **Specify Exchange DAG Protection** select the databases you want to copy for either a full backup or copy backup from the **Database copies selected for Full Backup** or **Database copies selected for Copy Backup** list boxes. For protecting multiple copies of the same database, you can select only one copy for full backup, and then select the remaining copies for copy backup.
 
-7.  In **Select short-term goals** specify how you want to back up to short-term storage on disk.   In R**etention range** you specify how long you want to keep the data on disk. In **Synchronization frequency** you specify how often you want to run an incremental backup to disk. If you don't want to set a back up interval you can check Just before  a recovery point so that DPM will run an express full backup just before each recovery point is scheduled.
+7.  In **Select short-term goals** specify how you want to back up to short-term storage on disk.   In **Retention range** you specify how long you want to keep the data on disk. In **Synchronization frequency** you specify how often you want to run an incremental backup to disk. If you don't want to set a back up interval you can check Just before  a recovery point so that DPM will run an express full backup just before each recovery point is scheduled.
 
 8.  If you want to store data on tape for long-term storage in **Specify long-term goals** indicate how long you want to keep tape data (1-99 years). In Frequency of backup specify how often backups to tape should run. The frequency is based on the retention range you've specified:
 
@@ -291,6 +291,3 @@ After the protection group's been created the initial replication occurs and DPM
 -   In the **Select a system image backup** page, click **Select a system image**. Click **Advanced** to select recovery files from a network share. Select **Search for a system image on the network**and click **Yes**if asked if you're sure you want to connect to the network.
 
 -   Specify the network folder, select the backup, and select the date and time of the image you want to restore. Specify any additional driver and disk settings, and then click **Finish**to start the restore.
-
-
-

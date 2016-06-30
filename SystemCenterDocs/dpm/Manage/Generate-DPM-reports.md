@@ -173,17 +173,17 @@ In the DPM Administrator Console you can display both new and historical reports
 
 1.  You can request a new report with the following settings:
 
-    -   Display—You can view a report groups by protected computer or protection group.
+    -   Display - You can view a report groups by protected computer or protection group.
 
     -   You can specify or exclude a specific time period. You can set report granularity as follows:
 
-        -   Week— Seven days—from Sunday through Saturday
+        -   Week - Seven days - from Sunday through Saturday
 
-        -   Month— A full month from the first to the last day of the month
+        -   Month - A full month from the first to the last day of the month
 
-        -   Quarterly—For three months starting from January (e.g January through March.
+        -   Quarterly - For three months starting from January (e.g January through March.
 
-        -   Annual— January 1 to December 31 of a particular year.
+        -   Annual - January 1 to December 31 of a particular year.
 
 2.  You can view an available report from the **Available reports** list. When the number of historical reports saved equals the maximum number specified in the report schedule, the next report that is saved will replace the oldest copy of the report, so you can retain the maximum number of copies at all times.
 
@@ -232,7 +232,7 @@ You can send reports to subscribers via email. Reports are sent as file attachme
 3.  On the **E-mail** tab, in **Recipients** type the e-mail addresses of all the subscribers. Only add email addresses that are relevant on the designed server, and separate addresses with a comma. Then select the format.
 
 ## Generate DPM reports in Operations Manager
-Operations Manager provides an Operations console and a web console that you can use to view and work with the monitoring data for your environment. To retrieve information you can use predefined views, or search for data and objects using searching and filtering. For more information, see [Getting Information from Operations Manager](https://technet.microsoft.com/en-us/library/hh212876.aspx). 
+Operations Manager provides an Operations console and a web console that you can use to view and work with the monitoring data for your environment. To retrieve information you can use predefined views, or search for data and objects using searching and filtering. For more information, see [Getting Information from Operations Manager](https://technet.microsoft.com/en-us/library/hh212876.aspx).
 DPM provides a number of predefined views that you can use to search more simply than defining your own query or filter.
 
 DPM provides a number of predefined views that you can use to search more simply than defining your own query or filter.
@@ -364,6 +364,3 @@ DPM provides a number of predefined views that you can use to search more simply
 |LibraryName|varchar(max)|Name of the library|
 |ProtectedGroupName|varchar(max)|Name of the protection group that owns the tape|
 |MediaExpiryDate|datetime|Expiry date of the tape|
-
-
-

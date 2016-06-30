@@ -19,7 +19,7 @@ You can back up file data on server and client computers.
 
 ## Before you start
 
-1.  **Deploy DPM**—Verify that DPM is installed and deployed correctly. If you haven't see:
+1.  **Deploy DPM** - Verify that DPM is installed and deployed correctly. If you haven't see:
 
     -   System requirements for DPM
 
@@ -29,9 +29,9 @@ You can back up file data on server and client computers.
 
     -   [Get DPM installed](../get-started/Get-DPM-installed.md)
 
-2.  **Set up storage**—You can store backed up data on disk, on tape, and in the cloud with Azure. Read more in [Prepare data storage](../get-started/Prepare-data-storage.md).
+2.  **Set up storage** - You can store backed up data on disk, on tape, and in the cloud with Azure. Read more in [Prepare data storage](../get-started/Prepare-data-storage.md).
 
-3.  **Set up the DPM protection agent**—You'll need to install the DPM protection agent on every machine you want to back up. Read [Deploy the DPM protection agent](Deploy-the-DPM-protection-agent.md).
+3.  **Set up the DPM protection agent** - You'll need to install the DPM protection agent on every machine you want to back up. Read [Deploy the DPM protection agent](Deploy-the-DPM-protection-agent.md).
 
 ## Back up file data
 After you have your DPM infrastructure set up you can enable protection machines that have file data you want to back up.
@@ -54,7 +54,7 @@ After you have your DPM infrastructure set up you can enable protection machines
 
     -   When the retention range is 1-4 weeks, you can select backups to occur daily or weekly.
 
-    On a stand-alone tape drive, for a single protection group, DPM uses the same tape for daily backups until there is insufficient space on the tape. You can also colocate data from different protection groups on tape.
+    On a stand-alone tape drive, for a single protection group, DPM uses the same tape for daily backups until there is insufficient space on the tape. You can also co-locate data from different protection groups on tape.
 
     On the **Select Tape and Library Details** page specify the tape/library to use, and whether data should be compressed and encrypted on tape.
 
@@ -119,6 +119,3 @@ If end-user recovery is enabled then users should recover data as follows:
 1.  Navigate to the protected data file. Right-click the file name > **Properties**.
 
 2.  In **Properties** > **Previous Versions** select the version that you want to recover from.
-
-
-
