@@ -11,7 +11,7 @@ ms.technology:  service-manager
 ms.assetid:  70310c2d-c8f0-4e6c-a276-1284c52f096f
 ---
 
-# Glossary for System Center 2016 â€" Service Manager
+# Glossary for System Center 2016 - Service Manager
 
 >Applies To: System Center 2016 Technical Preview - Service Manager
 
