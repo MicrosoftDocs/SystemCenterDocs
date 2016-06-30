@@ -209,7 +209,7 @@ You must ensure that your server meets the minimum supported configurations for 
 3.  Close the report window.
 
 ## Next Steps
-Now that you have installed System Center 2016 Technical Preview - Operations Manager, you can deploy agents and start monitoring your applications, servers, and network devices. For more information, see [Managing Discovery and Agents](http://go.microsoft.com/fwlink/p/?LinkID=207756) and [Operations Manager 2016 Monitoring Scenarios](http://go.microsoft.com/fwlink/p/?LinkID=218372).
+Now that you have installed System Center 2016 Technical Preview - Operations Manager, you can deploy agents and start monitoring your applications, servers, and network devices. For more information, see [Managing Discovery and Agents](../Manage/Managing-Discovery-and-Agents.md) and [Operations Manager 2016 Monitoring Scenarios](../Manage/Operations-Manager-Monitoring-Scenarios.md).
 
 
 
