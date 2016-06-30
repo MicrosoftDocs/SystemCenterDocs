@@ -355,7 +355,7 @@ Use the following three procedures to prepare the data warehouse databases on th
 3.  Type the user name by using the domain\user name format for the data warehouse service account, click **Check Names**, and then click **OK**.
 
     > [!NOTE]
-    > If the Data Access Account is running as LocalSystem, use the format domain\computername$ in SQL Logins, where <computername> is the name of the management server.
+    > If the Data Access Account is running as LocalSystem, use the format domain\computername$ in SQL Logins, where *computername* is the name of the management server.
 
 4.  In the **Select a page** pane, click **User Mapping**.
 
@@ -556,7 +556,7 @@ Use the following procedure to update data sources on the reporting server to po
 
 3.  In the Reporting Services Configuration Manager list, select **Report Manager URL**.
 
-4.  On the **Report Manager URL** page, click the hyperlink that resembles **http://<Servername>:portnumber/Reports** to open the **Reports** home page in your Internet browser.
+4.  On the **Report Manager URL** page, click the hyperlink that resembles http://Servername:portnumber/Reports to open the **Reports** home page in your Internet browser.
 
 5.  On the home page, open the **System Center** folder, and then open the **Service Manager** folder.
 
