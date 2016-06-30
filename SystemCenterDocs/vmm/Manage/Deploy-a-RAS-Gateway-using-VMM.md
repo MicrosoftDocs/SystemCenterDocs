@@ -18,7 +18,7 @@ ms.service:  virtual-network
 
 ## Introduction
 
-This topic helps you evaluate the Software Defined Networking (SDN) features in [!INCLUDE[winthreshold_server_2_mdToken/winthreshold_server_2_md.md)] 5 and Virtual Machine Manager 2016 Technology Preview 5. In particular, this topic is focused on scenarios that incorporate a RAS Gateway with the Virtual Machine Manager (VMM).
+This topic helps you evaluate the Software Defined Networking (SDN) features in Windows Server Technical Preview 5 and Virtual Machine Manager 2016 Technology Preview 5. In particular, this topic is focused on scenarios that incorporate a RAS Gateway with the Virtual Machine Manager (VMM).
 
 A RAS Gateway is a data path element in SDN that enables Site-to-site (S2S) connectivity between two autonomous systems. Specifically, a RAS Gateway enables S2S connectivity between remote tenant networks and your datacenter using IPSec, Generic Routing Encapsulation (GRE) or Layer 3 Forwarding.
 
@@ -52,7 +52,7 @@ Refer to the toplogy diagram in the following Microsoft TechNet Library topic: [
 
 The diagram shows a sample 4-node setup. The setup is highly available with three network controller nodes (virtual machines), three SLB/MUX nodes, and three gateway virtual machines. It shows two tenants with one virtual network broken into two virtual subnets to simulate a web tier and a database tier. Both the infrastructure and tenant virtual machines can be redistributed across any physical host.
 
-All the gateway virtual machines must run [!INCLUDE[winthreshold_server_2_mdToken/winthreshold_server_2_md.md)] 5 with Zero Day Package.
+All the gateway virtual machines must run Windows Server Technical Preview 5 with Zero Day Package.
 
 #### Logical Networks
 
