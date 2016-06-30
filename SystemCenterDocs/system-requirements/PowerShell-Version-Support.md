@@ -18,19 +18,16 @@ Use this information to evaluate if your Windows PowerShell environment is ready
 
 |System Center Component|Windows PowerShell 2.0|Windows PowerShell 3.0|Windows PowerShell 4.0|Windows PowerShell 5.0|
 |---------------------------|--------------------------|--------------------------|-----------------------------------------------|-----------------------------------------------|
-|**DPM** Central Console|?|?|?|?|
-|**DPM** Remote Administration console|?|?|?|?|
-|**DPM** Server|?|?|?|?|
-|**Operations Manager** Management Server|||?|?|
-|**Operations Manager** Data Warehouse Server|||?|?|
-|**Operations Manager** Gateway Server|||?|?|
-|**Operations Manager** Windows Agent|?|?|?|?|
-|**Service Manager** Console|||?|?|
-|**Service Manager** Management Server|||?|?|
-|**Service Manager** Data Warehouse Management Server|||?|?|
-|**Service Provider Foundation** API Web Server|||?|?|
-|**Virtual Machine Manager** Management Server||||?|
-|**Virtual Machine Manager** Console|||?|?|
-
-
-
+|**DPM** Central Console|&#8226;|&#8226;|&#8226;|&#8226;|
+|**DPM** Remote Administration console|&#8226;|&#8226;|&#8226;|&#8226;|
+|**DPM** Server|&#8226;|&#8226;|&#8226;|&#8226;|
+|**Operations Manager** Management Server|||&#8226;|&#8226;|
+|**Operations Manager** Data Warehouse Server|||&#8226;|&#8226;|
+|**Operations Manager** Gateway Server|||&#8226;|&#8226;|
+|**Operations Manager** Windows Agent|&#8226;|&#8226;|&#8226;|&#8226;|
+|**Service Manager** Console|||&#8226;|&#8226;|
+|**Service Manager** Management Server|||&#8226;|&#8226;|
+|**Service Manager** Data Warehouse Management Server|||&#8226;|&#8226;|
+|**Service Provider Foundation** API Web Server|||&#8226;|&#8226;|
+|**Virtual Machine Manager** Management Server||||&#8226;|
+|**Virtual Machine Manager** Console|||&#8226;|&#8226;|

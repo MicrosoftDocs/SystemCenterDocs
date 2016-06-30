@@ -301,7 +301,7 @@
 ##### [Combine Incidents into Parent-Child Groups](SM/Manage/Combine-Incidents-into-Parent-Child-Groups.md)
 ##### [Managing Problems](SM/Manage/Managing-Problems.md)
 #### [Managing Changes and Activities in Service Manager](sm/Manage/Managing-Changes-and-Activities-in-Service-Manager.md)
-#### [Managing Service Requests in Service Manager](sm/ManageManaging-Service-Requests-in-Service-Manager.md)
+#### [Managing Service Requests in Service Manager](sm/Manage/Managing-Service-Requests-in-Service-Manager.md)
 ##### [How to Create a Service Request Using the Service Manager Console](SM/Manage/How-to-Create-a-Service-Request-Using-the-Service-Manager-Console.md)
 #### [Managing Release Records in Service Manager](sm/Manage/Managing-Release-Records-in-Service-Manager.md)
 #### [Managing Chargeback Reports in Service Manager](sm/Manage/Managing-Chargeback-Reports-in-Service-Manager.md)
