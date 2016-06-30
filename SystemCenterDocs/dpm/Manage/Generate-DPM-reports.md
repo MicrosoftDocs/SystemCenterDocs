@@ -33,9 +33,9 @@ DPM provides a number of different reports:
 -   **Tape management and tape utilization report**: Use the tape management report to track information about tape rotation and decommissioning, and to verify that the free media threshold hasn't been exceeded. IUse the tape utilization report to track trending of resource (disk/tape) usage over time to assist capacity planning.
 
 ### Predefined SQL reports
-DPM includes several SQL Server views to help you create custom reports. SQL views provide a simpler method that querying tables directly, by populating columns with data collected from multiple tables in the database. You don’t need -depth knowledge of the entire database or the relationship between tables and keys.
+DPM includes several SQL Server views to help you create custom reports. SQL views provide a simpler method that querying tables directly, by populating columns with data collected from multiple tables in the database. You don't need -depth knowledge of the entire database or the relationship between tables and keys.
 
-Note though that SQL views can degrade performance if used too frequently because the view runs each time it’s queries. In addition the supported views might not include all the columns you need.
+Note though that SQL views can degrade performance if used too frequently because the view runs each time it's queries. In addition the supported views might not include all the columns you need.
 
 The following table summarizes the predefined SQL views.
 
@@ -160,7 +160,7 @@ The following table summarizes the predefined SQL views.
 ### Set up reports
 
 #### Schedule reports
-Reports aren’t scheduled by default in DPM. To start creating and saving historical reports you create a report schedule. Each report type has an independent schedule A report only has a single schedule. Schedule a report as follows:
+Reports aren't scheduled by default in DPM. To start creating and saving historical reports you create a report schedule. Each report type has an independent schedule A report only has a single schedule. Schedule a report as follows:
 
 1.  In DPM Administrator Console, go to the **Reporting** view. On the display pane, select the report and click **Schedule**.
 
@@ -188,9 +188,9 @@ In the DPM Administrator Console you can display both new and historical reports
 2.  You can view an available report from the **Available reports** list. When the number of historical reports saved equals the maximum number specified in the report schedule, the next report that is saved will replace the oldest copy of the report, so you can retain the maximum number of copies at all times.
 
 ### Print reports
-Reports in DPM have been designed to print on A4 paper without horizontally splitting the information across pages. The MHTML and PDF formats are not editable, so you can’t modify the report to fit other paper sizes.
+Reports in DPM have been designed to print on A4 paper without horizontally splitting the information across pages. The MHTML and PDF formats are not editable, so you can't modify the report to fit other paper sizes.
 
-Note that if you experience any issues with reports on fitting on A4 paper try changing the dimensions of the report page width 8.27in and the height to 11.69in. There are details of how to do that on Bob Cornelissen’s [BICTT blog](http://www.bictt.com/blogs/bictt.php/2009/03/17/sql-reporting-services-render-pdf-in-a4-1).
+Note that if you experience any issues with reports on fitting on A4 paper try changing the dimensions of the report page width 8.27in and the height to 11.69in. There are details of how to do that on Bob Cornelissen's [BICTT blog](http://www.bictt.com/blogs/bictt.php/2009/03/17/sql-reporting-services-render-pdf-in-a4-1).
 
 ##### Print MHTML reports
 
@@ -220,7 +220,7 @@ Note that if you experience any issues with reports on fitting on A4 paper try c
 
 5.  In **Scale to Fit** set  **Scale** to 80%.
 
-6.  In **Sheet Options** clear **Print** if it’s selected. Then print the report.
+6.  In **Sheet Options** clear **Print** if it's selected. Then print the report.
 
 ### Send reports
 You can send reports to subscribers via email. Reports are sent as file attachments. To subscribe to reports do the following:
@@ -288,7 +288,7 @@ DPM provides a number of predefined views that you can use to search more simply
 |DiskManagementRowID|uniqueidentifier|Index key|
 |DPMServerName|varchar(max)|DPM server|
 |DiskID|uniqueidentifier|Unique ID to identify disk|
-|DiskName|varchar(max)|Name of disk returned by VDS APIs (for example “Microsoft Virtual Disk”|
+|DiskName|varchar(max)|Name of disk returned by VDS APIs (for example "Microsoft Virtual Disk"|
 |TotalSize|bigint|Total size of disk|
 |FreeSize|bigint|Free size on disk|
 |IsInStoragePool|bit|Indicates whether the disk belongs to the DPM storage pool|
@@ -333,9 +333,9 @@ DPM provides a number of predefined views that you can use to search more simply
 |ProtectionGroupID|uniqueidentifier|The ID of the protection group to which the data source belongs|
 |ProtectionGroupName|varchar(max)|The protection group to which the data source belongs|
 |CreationTime|datetime|Time that the statistic was created|
-|DiskRecoveryPointAvailable|bit|Indicates whether there’s a disk recovery point available in the SLA period|
-|TapeRecoveryPointAvailable|bit|Indicates whether there’s a tape recovery point available in the SLA period|
-|CloudRecoveryPointAvailable|bit|Indicates whether there’s a cloud recovery point available in the SLA period|
+|DiskRecoveryPointAvailable|bit|Indicates whether there's a disk recovery point available in the SLA period|
+|TapeRecoveryPointAvailable|bit|Indicates whether there's a tape recovery point available in the SLA period|
+|CloudRecoveryPointAvailable|bit|Indicates whether there's a cloud recovery point available in the SLA period|
 |SLA|int|Indicates the SLA for the protection group during this SLA period|
 
 **View Name:** vDPMTapeUtilization (Shows DPM Tape Utilization):

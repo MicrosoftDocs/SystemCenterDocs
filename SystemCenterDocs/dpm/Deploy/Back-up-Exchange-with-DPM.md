@@ -19,14 +19,14 @@ DPM provides backup and recovery for Exchange 2013. You can back up the followin
 
 -   Exchange mailbox databases under a database availability group (DAG)
 
--   In addition to backing up mail databases, to fully protect your Exchange deployment you’ll need to backup other Exchange Server roles such as the Client Access Server, or the transport service on mailbox servers. You can configure protection for volumes, system state or full bare metal recovery backup to ensure that all Exchange data and configuration settings are protected.
+-   In addition to backing up mail databases, to fully protect your Exchange deployment you'll need to backup other Exchange Server roles such as the Client Access Server, or the transport service on mailbox servers. You can configure protection for volumes, system state or full bare metal recovery backup to ensure that all Exchange data and configuration settings are protected.
 
 ## Prerequisites and limitations
 Before you deploy DPM to protection Exchange 2013 verify the deployment prerequisites:
 
 -   Review the [Release Notes for System Center Technical Preview 5](../../get-started/Release-Notes-for-System-Center-Technical-Preview-5.md) and [What's supported and what isn't for DPM?](../get-started/What-s-supported-and-what-isn-t-for-DPM-.md) to check for any Exchange issues.
 
--   Make sure the same versions of Eseutil.exe and Ese.dll are installed on both the Exchange and the DPM server. For example, if you’re using the 64-bit version of DPM, you must have the 64-bit version of eseutil.exe and ese.dll.  If you update these files on the Exchange server you’ll need to update them on the DPM server too. The .ese and .eseutil files are usually in C:\Program Files\Microsoft\Exchange Server\V15\Bin folder.
+-   Make sure the same versions of Eseutil.exe and Ese.dll are installed on both the Exchange and the DPM server. For example, if you're using the 64-bit version of DPM, you must have the 64-bit version of eseutil.exe and ese.dll.  If you update these files on the Exchange server you'll need to update them on the DPM server too. The .ese and .eseutil files are usually in C:\Program Files\Microsoft\Exchange Server\V15\Bin folder.
 
     To maintain up-to-date copies do the following:
 
@@ -34,7 +34,7 @@ Before you deploy DPM to protection Exchange 2013 verify the deployment prerequi
 
     2.  Type the fsutil command as follows to create a hard link for eseutil.exe: `fsutil hardlink create <link> <target>`
 
-        For example in a typical installation type: `fsutil hardlink create “c:\\program files\\microsoft\\dpm\\bin\\eseutil.exe” “c:\\program files\\microsoft\\Exchange\\bin\\eseutil.exe”`
+        For example in a typical installation type: `fsutil hardlink create "c:\\program files\\microsoft\\dpm\\bin\\eseutil.exe" "c:\\program files\\microsoft\\Exchange\\bin\\eseutil.exe"`
 
 -   Install the [Visual C++ Redistributable for Visual Studio 2012 Update 1](http://www.microsoft.com/download/details.aspx?id=30679).
 
@@ -77,17 +77,17 @@ Native data protection provides:
 
 However native protection might not be enough if application errors, corruptions, or security and malware incidents occur. In these situations DPM provides a number of advantages:
 
--   Less DAGs are required—Native protection requires additional mailbox servers to host copies of active data. There’s no reliance on DAGs for backup with DPM protection.
+-   Less DAGs are required—Native protection requires additional mailbox servers to host copies of active data. There's no reliance on DAGs for backup with DPM protection.
 
--   Simpler restore – DPM provides simple and centralized data recovery from point-in-time backups.
+-   Simpler restore - DPM provides simple and centralized data recovery from point-in-time backups.
 
--   Longer retention range – DPM provides longer retention times for backed up data. Native protection is limited to 14 days.
+-   Longer retention range - DPM provides longer retention times for backed up data. Native protection is limited to 14 days.
 
 -   Consistent backup of Microsoft workloads - DPM provides a centralized and simple backup and recovery process across your Microsoft workloads, including, Exchange, file servers, SQL Server, Hyper-V, and SharePoint.
 
 ## Before you start
 
-1.  **Deploy DPM**—Verify that DPM is installed and deployed correctly. If you haven’t see:
+1.  **Deploy DPM**—Verify that DPM is installed and deployed correctly. If you haven't see:
 
     -   System requirements for DPM
 
@@ -119,21 +119,21 @@ However native protection might not be enough if application errors, corruptions
 
 8.  If you want to store data on tape for long-term storage in **Specify long-term goals** indicate how long you want to keep tape data (1-99 years). In Frequency of backup specify how often backups to tape should run. The frequency is based on the retention range you've specified:
 
-    -   When the retention range is 1–99 years, you can select backups to occur daily, weekly, bi-weekly, monthly, quarterly, half-yearly, or yearly.
+    -   When the retention range is 1-99 years, you can select backups to occur daily, weekly, bi-weekly, monthly, quarterly, half-yearly, or yearly.
 
-    -   When the retention range is 1–11 months, you can select backups to occur daily, weekly, bi-weekly, or monthly.
+    -   When the retention range is 1-11 months, you can select backups to occur daily, weekly, bi-weekly, or monthly.
 
-    -   When the retention range is 1–4 weeks, you can select backups to occur daily or weekly.
+    -   When the retention range is 1-4 weeks, you can select backups to occur daily or weekly.
 
     On a stand-alone tape drive, for a single protection group, DPM uses the same tape for daily backups until there is insufficient space on the tape. You can also colocate data from different protection groups on tape.
 
     On the **Select Tape and Library Details** page specify the tape/library to use, and whether data should be compressed and encrypted on tape.
 
-9. In **Review disk allocation** page review the storage pool disk space allocated for the protection group. **Data size** shows the size of the data you want to back up, and **Disk space** shows the space that DPM recommends for the protection group. We recommend that you select **Colocate data** to back up multiple client data sources to one replica volume if you have a large number of client computers. You won’t be able to protect 1000 or more client computers with one DPM server without co-locating your data. We recommend that you do not co-locate if you have less than ten client computers in a protection group. Select **Automatically grow the volumes** to automatically increase size when more disk space is required for protecting data on the client computers.
+9. In **Review disk allocation** page review the storage pool disk space allocated for the protection group. **Data size** shows the size of the data you want to back up, and **Disk space** shows the space that DPM recommends for the protection group. We recommend that you select **Colocate data** to back up multiple client data sources to one replica volume if you have a large number of client computers. You won't be able to protect 1000 or more client computers with one DPM server without co-locating your data. We recommend that you do not co-locate if you have less than ten client computers in a protection group. Select **Automatically grow the volumes** to automatically increase size when more disk space is required for protecting data on the client computers.
 
 10. In **Choose replica creation method** select how you want to handle the initial full data replication.  If you select to replicate over the network we recommended you choose an off-peak time. For large amounts of data or less than optimal network conditions, consider replicating the data offline using removable media.
 
-11. In **Choose consistency check options**, select how you want to automate consistency checks. You can enable a check to run only when replica data becomes inconsistent, or according to a schedule. If you don’t want to configure automatic consistency checking, you can run a manual check at any time by right-clicking the protection group in the **Protection** area of the DPM console, and selecting **Perform Consistency Check**.
+11. In **Choose consistency check options**, select how you want to automate consistency checks. You can enable a check to run only when replica data becomes inconsistent, or according to a schedule. If you don't want to configure automatic consistency checking, you can run a manual check at any time by right-clicking the protection group in the **Protection** area of the DPM console, and selecting **Perform Consistency Check**.
 
 12. If you've selected to back up to the cloud with Azure Backup, on the **Specify online protection data** page make sure the workloads you want to back up to Azure are selected.
 
@@ -146,7 +146,7 @@ However native protection might not be enough if application errors, corruptions
 16. On the  **Summary** page review your settings. After you click **Create Group** initial replication of the data occurs. When it finishes the protection group status will show as **OK** on the **Status** page. Backup then takes place in line with the protection group settings.
 
 ## Monitoring
-After the protection group’s been created the initial replication occurs and DPM starts backing up and synchronizing the Exchange data. DPM monitors the initial synchronization and subsequent backups. You can monitor the Exchange data in a couple of ways:
+After the protection group's been created the initial replication occurs and DPM starts backing up and synchronizing the Exchange data. DPM monitors the initial synchronization and subsequent backups. You can monitor the Exchange data in a couple of ways:
 
 -   Using default DPM monitoring can set up notifications for proactive monitoring. by publishing alerts and configuring notifications. You can send notifications by e-mail for critical, warning, or informational alerts, and for the status of instantiated recoveries.
 
@@ -158,7 +158,7 @@ After the protection group’s been created the initial replication occurs and DPM
 
 2.  Click **SMTP Server**, type the server name, port, and email address from which notifications will be sent. The address must be valid.
 
-3.  In **Authenticated SMTP server** , type a user name and password.The user name and password must be the domain account name of the person whose “From” address is described in the previous step; otherwise, notification delivery fails.
+3.  In **Authenticated SMTP server** , type a user name and password.The user name and password must be the domain account name of the person whose "From" address is described in the previous step; otherwise, notification delivery fails.
 
 4.  To test the SMTP server settings, click **Send Test E-mail**, type the e-mail address where you want DPM to send the test message, and then click **OK**. Click **Options** > **Notifications** and select the types of alerts about which recipients want to be notified. In **Recipients** type the e-mail address for each recipient to whom you want DPM to send copies of the notifications.
 
@@ -176,21 +176,21 @@ After the protection group’s been created the initial replication occurs and DPM
 
 ### <a name="BKMK_Single"></a>Recover a single mailbox
 
-1.  On the protected Exchange server, verify whether you have an existing recovery mailbox database. If you don’t, create one using the New-MailboxDatabase cmdlet. Configure the recovery database so it can be overwritten by using the Set-MailboxDatabase cmdlet. For example:
+1.  On the protected Exchange server, verify whether you have an existing recovery mailbox database. If you don't, create one using the New-MailboxDatabase cmdlet. Configure the recovery database so it can be overwritten by using the Set-MailboxDatabase cmdlet. For example:
 
     ```
     New-MailboxDatabase -Recovery -Name RDB-CONTROL -Server E2K13-MBX1
     ```
 
     ```
-    Set-MailboxDatabase -Identity ‘RDB-CONTROL’ -AllowFileRestore $true
+    Set-MailboxDatabase -Identity 'RDB-CONTROL' -AllowFileRestore $true
     ```
 
 2.  In the DPM Administrator Console, go to the **Recovery** view and navigate to the mailbox database you want to recover (in the **All Protectd Exchange Data** node).
 
 3.  Available recovery points are indicated in bold on the calendar in the recovery points section. Click a date, select a recovery point in **Recovery time** > **Recover**.
 
-    Note that you won’t be able to select **Latest**. This isn’t available for individual mailboxes.
+    Note that you won't be able to select **Latest**. This isn't available for individual mailboxes.
 
 4.  In the Recovery Wizard review your recovery selection, and click **Next**.
 
@@ -198,7 +198,7 @@ After the protection group’s been created the initial replication occurs and DPM
 
 6.  In the **Specify Recovery Options** page do the following:
 
-    1.  **Mount the databases after they are recovered**. Clear the check box if you don’t want to mount the databases.
+    1.  **Mount the databases after they are recovered**. Clear the check box if you don't want to mount the databases.
 
     2.  **Network bandwidth usage throttling**. Click **Modify** to enable throttling.
 
@@ -213,7 +213,7 @@ After the protection group’s been created the initial replication occurs and DPM
 8.  After the recovery process has finished, the required mailbox is not quite fully restored. The mailbox database to which the mailbox belongs is only restored to the Recovery mailbox database. Restore the mailbox by running this cmdlet:
 
     ```
-    New-MailboxRestoreRequest –SourceDatabase ’RDB-CONTROL’ –SourceStoreMailbox ‘mailbox name’ –TargetMailbox <name>@contoso.com –TargetRootFolder Recovery -SkipMerging StorageProviderForSource
+    New-MailboxRestoreRequest -SourceDatabase 'RDB-CONTROL' -SourceStoreMailbox 'mailbox name' -TargetMailbox <name>@contoso.com -TargetRootFolder Recovery -SkipMerging StorageProviderForSource
     ```
 
     You must add `\-SkipMerging StorageProviderForSource` to the command; otherwise an error occurs. For a workaround, see Release Notes for Exchange 2013.
@@ -223,7 +223,7 @@ After the protection group’s been created the initial replication occurs and DPM
 9. After you finished the restore, you can dismount and delete the Recovery Mailbox database by running the following Windows PowerShell cmdlet.
 
     ```
-    Remove-MailboxDatabase -Identity ‘RDB-CONTROL’
+    Remove-MailboxDatabase -Identity 'RDB-CONTROL'
     ```
 
 ### <a name="BKMK_DB"></a>Recover an Exchange database
@@ -280,7 +280,7 @@ After the protection group’s been created the initial replication occurs and DPM
 
     4.  In **Notification** click **Send an e-mail when the recovery completes**, and specify the recipients. Separate the e-mail addresses with commas.
 
--   You can monitor the process on the **Monitoring** tab. A ‘recovery success’ alert shows when recovery finishes.
+-   You can monitor the process on the **Monitoring** tab. A 'recovery success' alert shows when recovery finishes.
 
     Open the folder where are located recovery files and rename it with a shorter name. This will make the recovery process easier. Create a share in the recovery folder.
 
@@ -288,7 +288,7 @@ After the protection group’s been created the initial replication occurs and DPM
 
     In the **Re-image your computer** wizard, you can ignore any warning about a system image not found.
 
--   In the **Select a system image backup** page, click **Select a system image**. Click **Advanced** to select recovery files from a network share. Select **Search for a system image on the network**and click **Yes**if asked if you’re sure you want to connect to the network.
+-   In the **Select a system image backup** page, click **Select a system image**. Click **Advanced** to select recovery files from a network share. Select **Search for a system image on the network**and click **Yes**if asked if you're sure you want to connect to the network.
 
 -   Specify the network folder, select the backup, and select the date and time of the image you want to restore. Specify any additional driver and disk settings, and then click **Finish**to start the restore.
 

@@ -49,7 +49,7 @@ Before you can add a host that is on a perimeter network to VMM, you must instal
     3.  Either accept the default location where the encrypted security file will be stored, or click **Change** to specify a different location to store the encrypted security file.
 
         > [!IMPORTANT]
-        > Make note of the location where you stored the security file. In the �To ensure that the Security.txt file is available to VMM� procedure, you must transfer the security file to a location that is accessible to the computer on which a VMM console is installed.
+        > Make note of the location where you stored the security file. In the "To ensure that the Security.txt file is available to VMM" procedure, you must transfer the security file to a location that is accessible to the computer on which a VMM console is installed.
 
     4.  To use a certificate to encrypt communications between the VMM management server and the host, select the **Use a CA signed certificate for encrypting communications with this host** check box. In the **Thumbprint of the certificate** box, enter the thumbprint of the certificate.
 

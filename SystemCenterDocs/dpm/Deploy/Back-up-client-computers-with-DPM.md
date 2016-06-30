@@ -48,7 +48,7 @@ You can deploy DPM to back up client computers.   Depending on the client operat
 
 ## Before you start
 
-1.  **Deploy DPM**—Verify that DPM is installed and deployed correctly. If you haven’t see:
+1.  **Deploy DPM**—Verify that DPM is installed and deployed correctly. If you haven't see:
 
     -   System requirements for DPM
 
@@ -82,7 +82,7 @@ You can deploy DPM to back up client computers.   Depending on the client operat
 
     -   On the **Specify Inclusions and Exclusions** page, specify the folders to include or exclude for protection on the selected computers. To select from a list of well-known folders, such as **Documents**, click the drop-down list. Note that:
 
-        -   When you exclude a folder, and then specify a separate inclusion rule for a subfolder, DPM doesn’t back up the subfolder. The exclusion rule overrides the inclusion rule.
+        -   When you exclude a folder, and then specify a separate inclusion rule for a subfolder, DPM doesn't back up the subfolder. The exclusion rule overrides the inclusion rule.
 
         -   When you include a folder, and then specify a separate exclude rule for a subfolder, DPM backs up the entire folder, except for the excluded subfolder.
 
@@ -100,21 +100,21 @@ You can deploy DPM to back up client computers.   Depending on the client operat
 
 6.  If you want to store data on tape for long-term storage in **Specify long-term goals** indicate how long you want to keep tape data (1-99 years). In Frequency of backup specify how often backups to tape should run. The frequency is based on the retention range you've specified:
 
-    -   When the retention range is 1–99 years, you can select backups to occur daily, weekly, bi-weekly, monthly, quarterly, half-yearly, or yearly.
+    -   When the retention range is 1-99 years, you can select backups to occur daily, weekly, bi-weekly, monthly, quarterly, half-yearly, or yearly.
 
-    -   When the retention range is 1–11 months, you can select backups to occur daily, weekly, bi-weekly, or monthly.
+    -   When the retention range is 1-11 months, you can select backups to occur daily, weekly, bi-weekly, or monthly.
 
-    -   When the retention range is 1–4 weeks, you can select backups to occur daily or weekly.
+    -   When the retention range is 1-4 weeks, you can select backups to occur daily or weekly.
 
     On a stand-alone tape drive, for a single protection group, DPM uses the same tape for daily backups until there is insufficient space on the tape. You can also colocate data from different protection groups on tape.
 
     On the **Select Tape and Library Details** page specify the tape/library to use, and whether data should be compressed and encrypted on tape.
 
-7.  In **Review disk allocation** page review the storage pool disk space allocated for the protection group. **Data size** shows the size of the data you want to back up, and **Disk space** shows the space that DPM recommends for the protection group. We recommend that you select **Colocate data** to back up multiple client data sources to one replica volume if you have a large number of client computers. You won’t be able to protect 1000 or more client computers with one DPM server without co-locating your data. We recommend that you do not co-locate if you have less than ten client computers in a protection group. Select **Automatically grow the volumes** to automatically increase size when more disk space is required for protecting data on the client computers.
+7.  In **Review disk allocation** page review the storage pool disk space allocated for the protection group. **Data size** shows the size of the data you want to back up, and **Disk space** shows the space that DPM recommends for the protection group. We recommend that you select **Colocate data** to back up multiple client data sources to one replica volume if you have a large number of client computers. You won't be able to protect 1000 or more client computers with one DPM server without co-locating your data. We recommend that you do not co-locate if you have less than ten client computers in a protection group. Select **Automatically grow the volumes** to automatically increase size when more disk space is required for protecting data on the client computers.
 
 8.  In **Choose replica creation method** select how you want to handle the initial full data replication.  If you select to replicate over the network we recommended you choose an off-peak time. For large amounts of data or less than optimal network conditions, consider replicating the data offline using removable media.
 
-9. In **Choose consistency check options**, select how you want to automate consistency checks. You can enable a check to run only when replica data becomes inconsistent, or according to a schedule. If you don’t want to configure automatic consistency checking, you can run a manual check at any time by right-clicking the protection group in the **Protection** area of the DPM console, and selecting **Perform Consistency Check**.
+9. In **Choose consistency check options**, select how you want to automate consistency checks. You can enable a check to run only when replica data becomes inconsistent, or according to a schedule. If you don't want to configure automatic consistency checking, you can run a manual check at any time by right-clicking the protection group in the **Protection** area of the DPM console, and selecting **Perform Consistency Check**.
 
 10. If you've selected to back up to the cloud with Azure Backup, on the **Specify online protection data** page make sure the workloads you want to back up to Azure are selected.
 
@@ -136,9 +136,9 @@ End-user recovery enables users to independently recover file data by retrieving
 
 -   You'll need to modify the Active Directory schema to enable end-user recovery. DPM extends the schema, creates a container (MS-ShareMapConfiguration), grants the DPM server permissions to change the container contents, and adds mappings between source and replica shares. [View](https://technet.microsoft.com/en-us/library/hh758112.aspx) a detailed list of classes and attributes added to AD by DPM.
 
--   If you enable end-user recovery you can’t specify on which file servers end-user recovery is enabled.
+-   If you enable end-user recovery you can't specify on which file servers end-user recovery is enabled.
 
--   You can’t control which Active Directory users or groups can perform end-user recovery.
+-   You can't control which Active Directory users or groups can perform end-user recovery.
 
 To configure end-user recovery here's what you'll need to do:
 

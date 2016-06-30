@@ -15,7 +15,7 @@ ms.assetid:  241fe091-0044-4664-8eaf-9b022e6874f3
 
 >Applies To: System Center 2016 Technical Preview - Data Protection Manager
 
-This section describes how to manage, maintain, and monitor DPM after you’ve completed deployment.
+This section describes how to manage, maintain, and monitor DPM after you've completed deployment.
 
 -   [Monitor DPM](Monitor-DPM.md)
 

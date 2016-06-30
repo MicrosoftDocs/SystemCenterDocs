@@ -90,7 +90,7 @@ In this configuration, you need to make sure that network ports are opened for c
 
 -   Management server to UNIX\Linux computer for special discovery and troubleshooting: TCP 22
 
-For a complete listing of ports used, the direction of the communication, and if the ports can be configured, see [Supported Configurations for System Center 2012 – Operations Manager](http://go.microsoft.com/fwlink/p/?LinkID=219650).
+For a complete listing of ports used, the direction of the communication, and if the ports can be configured, see [Supported Configurations for System Center 2012 - Operations Manager](http://go.microsoft.com/fwlink/p/?LinkID=219650).
 
 To deploy Operations Manager in a single-server management group, see [Walkthrough: Installing Operations Manager on a Single Server](../get-started/Walkthrough--Installing-Operations-Manager-on-a-Single-Server.md).
 

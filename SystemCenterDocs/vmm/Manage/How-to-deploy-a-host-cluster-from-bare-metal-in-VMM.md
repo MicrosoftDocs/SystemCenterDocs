@@ -15,7 +15,7 @@ ms.assetid:  2fe49d04-4382-468a-bf91-cdce837507b4
 
 >Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
 
-You can use Virtual Machine Manager (VMM) to deploy a host cluster, either to ï¿½bare-metal computersï¿½ (no operating system installed), or computers with an installed operating system that will be overwritten during the process. For this deployment, VMM does the following:
+You can use Virtual Machine Manager (VMM) to deploy a host cluster, either to "bare-metal computers" (no operating system installed), or computers with an installed operating system that will be overwritten during the process. For this deployment, VMM does the following:
 
 1.  Discovers the physical computers through out-of-band management
 
@@ -96,7 +96,7 @@ You can use Virtual Machine Manager (VMM) to deploy a host cluster, either to ï¿
 
         If you click the button, in the **Network Adapter IP Configuration** box, you can specify the following:
 
-        -   **MAC address(host clusters onlyï¿½management NIC)**: If this is the management NIC for a host cluster, and you want to configure it as a virtual network adapter, type a MAC address.
+        -   **MAC address(host clusters only"management NIC)**: If this is the management NIC for a host cluster, and you want to configure it as a virtual network adapter, type a MAC address.
 
             > [!NOTE]
             > This is not the MAC address of the BMC. It is the MAC address of the management NIC, which can be used to communicate with the VMM management server.

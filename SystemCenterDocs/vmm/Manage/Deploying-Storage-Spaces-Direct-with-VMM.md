@@ -15,11 +15,11 @@ ms.assetid:  bb9bff2f-25fa-4707-998a-b178e85f54f1
 
 >Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
 
-Windows Server 2016 Technical Preview introduces Storage Spaces Direct, which enables building highly available  storage systems with local storage. Then, this storage can be leveraged by VM�s running on the same cluster (hyperconverged deployment) or the storage can be exported as a File Share (disaggregated deployment).
+Windows Server 2016 Technical Preview introduces Storage Spaces Direct, which enables building highly available  storage systems with local storage. Then, this storage can be leveraged by VM"s running on the same cluster (hyperconverged deployment) or the storage can be exported as a File Share (disaggregated deployment).
 The hyper-converged deployment scenario has the Hyper-V (compute) and Storage Spaces Direct (storage) components on the same cluster. Virtual machine's files are stored on local CSVs. This allows for simultaneously scaling both Hyper-V compute clusters and the storage it is using. Once Storage Spaces Direct is configured and the CSV volumes are available, configuring and provisioning Hyper-V is the same process and uses the same tools that you would use with any other Hyper-V deployment on a failover cluster. Figure 1 illustrates the hyper-converged deployment stack. 
 ![Hyper-Converged StackImage/Hyper-Converged-Stack.png)
 
-**Figure 1: Hyper-converged deployment- � same cluster configured for Storage Spaces Direct and the hosting of virtual machines**
+**Figure 1: Hyper-converged deployment- " same cluster configured for Storage Spaces Direct and the hosting of virtual machines**
 
 In Windows Server 2016 Technical Preview 5, customers can use Virtual Machine Manager to deploy Spaces Direct, both in hyper-converged and disaggregated topologies. 
 This document provides an overview and instructions on how build a hyper-converged topology with Storage Spaces Direct using Virtual Machine Manager.
@@ -43,14 +43,14 @@ This section includes instructions to deploy Storage Spaces Direct using VMM and
 With VMM, we have integrated enabling the Storage Spaces Direct capability as part of the Create Hyper-V Cluster wizard. The first step in enabling Storage Spaces Direct is to run Create a Hyper-V cluster Wizard as shown in Figure 2.
 
  ![Enable Storage Spaces Direct screenImage/Enable-Storage-Spaces-Direct-screen.png)
-**Figure 2: Running the �Create Hyper-V Cluster Wizard�**
+**Figure 2: Running the "Create Hyper-V Cluster Wizard"**
 
 
 Next, select the **Enable Storage Spaces Direct** option on the on the **General Configuration** page (see Figure 4).
 
 ![Create storage spaces direct clusterImage/Create-storage-spaces-direct-cluster.png)
 
-**Figure 3: Selecting the �Enable Storage Spaces Direct� option**
+**Figure 3: Selecting the "Enable Storage Spaces Direct" option**
 
 The rest of the steps to create the Spaces Direct Cluster are exactly the same as creating a Hyper-V Host Cluster. For step-by-step instructions,  see [How to create a Hyper-V host cluster in VMM using existing hosts](https://technet.microsoft.com/library/mt238037.aspx)
 
@@ -120,7 +120,7 @@ As part of creating the pool, the physical disks that are part of the hosts in t
  
 The rest of the steps and options for creating a pool using a Spaces Direct cluster are the same as those found here: [How to create or modify a storage pool on a Scale-Out File Server in VMM](https://technet.microsoft.com/library/dn706196(v=sc.16).aspx)
 
-Using Windows Powershell, the pool and the storage tier is automatically created as part of the �Enable-CLusterS2D autoconfig=true� option. This is currently not supported in VMM Technical Preview 5.
+Using Windows Powershell, the pool and the storage tier is automatically created as part of the "Enable-CLusterS2D autoconfig=true" option. This is currently not supported in VMM Technical Preview 5.
 
 ### Create a Cluster Shared Volume
 
@@ -137,7 +137,7 @@ When creating the Volume, the capacity, File System type, resiliency (in terms o
 
 ### Leveraging the Spaces Direct Cluster in a hyper-converged topology
 
-Now, VM�s can be directly deployed on this cluster with their vhd(s) placed on the volumes created using the Storage Spaces Direct. The steps to create and deploy these VM�s are no different than those for creating VM�s with any other storage backing the vhd(s). The steps can be found here: [Creating and Deploying Virtual Machines in VMM](https://technet.microsoft.com/library/gg610679(v=sc.12).aspx)
+Now, VM"s can be directly deployed on this cluster with their vhd(s) placed on the volumes created using the Storage Spaces Direct. The steps to create and deploy these VM"s are no different than those for creating VM"s with any other storage backing the vhd(s). The steps can be found here: [Creating and Deploying Virtual Machines in VMM](https://technet.microsoft.com/library/gg610679(v=sc.12).aspx)
 
 ### Creating and Exporting a File Share SoFS using storage from Spaces Direct- disaggregated mode
 

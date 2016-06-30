@@ -29,7 +29,7 @@ The following table lists the command-line parameters for installing features of
 |-------------|---------|
 |/silent|Does not display the installation wizard.|
 |/install|Runs an installation. Use **/components** to indicate specific features to install.|
-|/InstallPath|Runs an installation specifying an alternative location, to Change the default path for install to another drive.  For example: `/InstallPath: “D:\Program Files\System Center Operations Manager 2012”` to change from the default location of drive C.|
+|/InstallPath|Runs an installation specifying an alternative location, to Change the default path for install to another drive.  For example: `/InstallPath: "D:\Program Files\System Center Operations Manager 2012"` to change from the default location of drive C.|
 |/components|OMServer: install a management server.<br /><br />OMConsole: install an Operations console.<br /><br />OMWebConsole: install a web console.<br /><br />OMReporting: install a Reporting server.|
 |/ManagementGroupName:|The name of the management group|
 |/ManagementServicePort:|Change the Management Server port on install|

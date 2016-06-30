@@ -44,7 +44,7 @@ You'll need to decide:
 
 There are a few common ways in which you can organize  your protection groups:
 
--   **By computer**—So that all data sources for a computer belonging to the same protection group. This provides a single point of adjustment for the computer’s performance loads. However, all data sources will then have the same backup and recovery settings.
+-   **By computer**—So that all data sources for a computer belonging to the same protection group. This provides a single point of adjustment for the computer's performance loads. However, all data sources will then have the same backup and recovery settings.
 
 -   **By workload**—So that you separate files and each application data type into different protection groups. This allows you to manage workloads as a group. However recovering a multi-application server might require multiple tapes from different protection groups.
 
@@ -119,11 +119,11 @@ Protection groups are created with the Create New Protection Group wizard with t
 
 -   **Specify long-term goals**: Indicate how long you want to keep tape data (1-99 years). In Frequency of backup specify how often backups to tape should run. The frequency is based on the retention range you've specified:
 
-    -   When the retention range is 1–99 years, you can select backups to occur daily, weekly, bi-weekly, monthly, quarterly, half-yearly, or yearly.
+    -   When the retention range is 1-99 years, you can select backups to occur daily, weekly, bi-weekly, monthly, quarterly, half-yearly, or yearly.
 
-    -   When the retention range is 1–11 months, you can select backups to occur daily, weekly, bi-weekly, or monthly.
+    -   When the retention range is 1-11 months, you can select backups to occur daily, weekly, bi-weekly, or monthly.
 
-    -   When the retention range is 1–4 weeks, you can select backups to occur daily or weekly.
+    -   When the retention range is 1-4 weeks, you can select backups to occur daily or weekly.
 
     You'll also need to specify the tape device/library you want to use, and  whether data should be compressed and encrypted on tape.
 
@@ -131,7 +131,7 @@ Protection groups are created with the Create New Protection Group wizard with t
 
 -   **Choose replica creation method**: Specify how you want to handle the initial full data replication.  If you select to replicate over the network we recommended you choose an off-peak time. For large amounts of data or less than optimal network conditions, consider replicating the data offline using removable media.
 
--   In **Choose consistency check options**:  Select how you want to automate consistency checks. You can enable a check to run only when replica data becomes inconsistent, or according to a schedule. If you don’t want to configure automatic consistency checking, you can run a manual check at any time.
+-   In **Choose consistency check options**:  Select how you want to automate consistency checks. You can enable a check to run only when replica data becomes inconsistent, or according to a schedule. If you don't want to configure automatic consistency checking, you can run a manual check at any time.
 
 -   **Specify online protection data**: If you want to back up to the cloud with Azure Backup, specify the workloads you want to back up.
 

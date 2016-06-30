@@ -24,7 +24,7 @@ To install Orchestrator at a command prompt, use Setup.exe with the command-line
 |/Key:[Product Key]|Specifies the product key. If no product key is specified, Orchestrator is installed as an evaluation edition.|
 |/ServiceUserName:[User Name]|Specifies the user account for the Orchestrator Management Service. This value is required if you are installing Management Server, Runbook Server, or web services.|
 |/ServicePassword:[Password]|Specifies the password for the user account for the Orchestrator Management Service. This value is required if you are installing Management Server, Runbook Server, or web services.|
-|/Components:[Feature 1, Feature 2,�]|Specifies the features to install. Possible values are ManagementServer, RunbookServer, RunbookDesigner, WebComponents, and All.|
+|/Components:[Feature 1, Feature 2,"]|Specifies the features to install. Possible values are ManagementServer, RunbookServer, RunbookDesigner, WebComponents, and All.|
 |/InstallDir:[Path]|Specifies the path to install Orchestrator. If no path is specified, C:\Program Files (x86)\Microsoft System Center 2012\Orchestrator is used.|
 |/DbServer:[Computer[\Instance]]|Specifies the computer name and instance of the database server. This value is required if you are installing Management Server, Runbook Server, or web services.|
 |/DbUser:[User Name]|Specifies the user account to access the database server. This value is only required for SQL Authentication. If Windows Authentication is used, no value should be specified.|

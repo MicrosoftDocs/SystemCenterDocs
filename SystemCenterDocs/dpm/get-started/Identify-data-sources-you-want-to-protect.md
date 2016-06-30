@@ -21,7 +21,7 @@ To protect data sources with DPM you'll need to do the following:
 
 -   DPM applies backup settings to all data sources in a particular protection group. You'll need to figure out how you want to gather data you want to protect into those groups. Examples include:
 
-    -   **By computer**—So that all data sources for a computer belonging to the same protection group. This provides a single point of adjustment for the computer’s performance loads. However, all data sources will then have the same backup and recovery settings.
+    -   **By computer**—So that all data sources for a computer belonging to the same protection group. This provides a single point of adjustment for the computer's performance loads. However, all data sources will then have the same backup and recovery settings.
 
     -   **By workload**—So that you separate files and each application data type into different protection groups. This allows you to manage workloads as a group. However recovering a multi-application server might require multiple tapes from different protection groups.
 

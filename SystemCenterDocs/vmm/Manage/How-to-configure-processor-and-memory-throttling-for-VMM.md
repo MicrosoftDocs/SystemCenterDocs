@@ -25,13 +25,13 @@ For more information about processor and memory throttling, see [Configuring res
 
 2.  Select a priority value for the virtual machine. These values specify how the CPU resources are balanced between virtual machine, and correspond to the relative weight value in Hyper-V:
 
-    -   High�Relative weight value of 200
+    -   High"Relative weight value of 200
 
-    -   Normal�Relative weight value of 100
+    -   Normal"Relative weight value of 100
 
-    -   Low�Relative weight value of 50
+    -   Low"Relative weight value of 50
 
-    -   Custom�Relative weight values that are supported are between 1 and 10000
+    -   Custom"Relative weight values that are supported are between 1 and 10000
 
 3.  In **Reserve CPU cycles (%)**, specify the percentage of the CPU resources on one logical processor that should be reserved for a virtual machine. This is useful when a virtual machine runs applications that are particularly CPU-intensive, and you want to ensure a minimal level of CPU resources. A zero setting indicates that no specific CPU percentage is reserved.
 

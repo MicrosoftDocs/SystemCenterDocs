@@ -32,7 +32,7 @@ Here's what you can do:
 -   Back up to tape
 
 ## <a name="GenericDataSource"></a>Registering a new data source
-You’ll need to run the Modify-RegisteredWriters command to add, remove or modify the VSS writer ID for a data source to the list that’s registered with DPM.
+You'll need to run the Modify-RegisteredWriters command to add, remove or modify the VSS writer ID for a data source to the list that's registered with DPM.
 
 **Syntax**
 

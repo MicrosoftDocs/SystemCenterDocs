@@ -249,7 +249,7 @@ A S2S IPSec connection allows you to securely access remote virtual machines and
 10. Select the **Authentication** tab.
 11. Choose your preferred authentication method for the connection.
 
-  If you choose the authentication using �Run As Account�, then you need to create a user account with the username of your choice and the IPSec key as the password for the account. Browse and select this account as your Run As Account.
+  If you choose the authentication using "Run As Account", then you need to create a user account with the username of your choice and the IPSec key as the password for the account. Browse and select this account as your Run As Account.
 12. Select the **Routes** tab.
 13. Type all the remote subnets that you need to connect to.
 

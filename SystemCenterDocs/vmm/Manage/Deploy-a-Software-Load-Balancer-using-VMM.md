@@ -382,7 +382,7 @@ Use the following procedure to create a VIP template.
 
 8.  On the **Specify Protocol Options** screen, select the protocol you want to create a VIP mapping for. The HTTP and HTTPS options are commonly used, but for a simple example you can select the **Custom** option and chose **TCP** in the **Protocol Name** field. If TCP does not appear as an option in the drop-down menu, you can type it manually. This is a known issue in Technical Preview 5. Click **Next**.
 
-9.  You can optionally select **enable persistence** if you wish to have the load balancer make the connection from the client �sticky�. Click **Next**.
+9.  You can optionally select **enable persistence** if you wish to have the load balancer make the connection from the client "sticky". Click **Next**.
 
 10.  For the **Load Balancing method**, select **Round Robin** from the drop down list. Click **Next**.
 

@@ -42,7 +42,7 @@ $port = 9090
 $runbookPath = 'c:\runbooks\Sample-TestRunbook.ps1'
 $runbookName = 'Test-Runbook'
 
-Publish-SmaRunbook �WebServiceEndpoint $webServer �Port $port �Name $runbookName
+Publish-SmaRunbook "WebServiceEndpoint $webServer "Port $port "Name $runbookName
 ```
 
 ## To Publish a Runbook Using Windows PowerShell ISE

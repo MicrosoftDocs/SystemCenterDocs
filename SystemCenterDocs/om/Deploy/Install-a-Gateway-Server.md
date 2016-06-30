@@ -160,8 +160,8 @@ The following example can be used to configure gateway server failover to multip
 ### Code
 
 ```
-$GatewayServer = Get-SCOMGatewayManagementServer –Name “ComputerName.Contoso.com”
-$FailoverServer = Get-SCOMManagementServer –Name “ManagementServer.Contoso.com”,”ManagementServer2.Contoso.com”
+$GatewayServer = Get-SCOMGatewayManagementServer -Name "ComputerName.Contoso.com"
+$FailoverServer = Get-SCOMManagementServer -Name "ManagementServer.Contoso.com","ManagementServer2.Contoso.com"
 Set-SCOMParentManagementServer -GatewayServer $GatewayServer -FailoverServer $FailoverServer
 ```
 
