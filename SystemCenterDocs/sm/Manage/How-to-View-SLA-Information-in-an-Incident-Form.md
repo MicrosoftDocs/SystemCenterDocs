@@ -45,4 +45,4 @@ When an incident has already been breached, no notification bar is displayed in 
 
 4.  Click the **Service Level** tab, and observe the status of the incident as **Breached**.
 
-5.  Click **OK** to close the incident.
+5.  Click **OK** to close the incident.  
