@@ -23,7 +23,4 @@ When you unpublish a request offering, it is removed from the Self-Service Porta
 
 2.  In the **Library** pane, expand **Service Catalog**, and then select **Published Request Offerings**.
 
-3.  In the **Published Request Offerings** list, select one or more request offerings, and in the **Tasks** pane under **<RequestOfferingName\>**, click **Unpublish**.
-
-
-
+3.  In the **Published Request Offerings** list, select one or more request offerings, and in the **Tasks** pane under *RequestOfferingName*, click **Unpublish**.
