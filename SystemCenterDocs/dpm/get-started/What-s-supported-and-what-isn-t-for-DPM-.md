@@ -42,46 +42,46 @@ This topic summarizes some of the common support information you might need when
 
 **More information**: DPM 2012 can be installed as follows:
 
--   As a standalone physical server�"DPM can’t be deployed in a physical cluster, but you can manage multiple DPM servers from a single location using Central Console in Operations Manager.
+-   As a standalone physical server"DPM can&trade;t be deployed in a physical cluster, but you can manage multiple DPM servers from a single location using Central Console in Operations Manager.
 
--   As an on-premises virtual machine�"You can deploy DPM as a Hyper-V virtual machine as a single server or virtual machine cluster. You install DPM in the same way as a physical installation. For detailed information, see the row, [DPM installed as Hyper-V VM](./Get-DPM-installed.md#Setup-prerequisites) in the Setup prerequisites table.
+-   As an on-premises virtual machine"You can deploy DPM as a Hyper-V virtual machine as a single server or virtual machine cluster. You install DPM in the same way as a physical installation. For detailed information, see the row, [DPM installed as Hyper-V VM](./Get-DPM-installed.md#Setup-prerequisites) in the Setup prerequisites table.
 
--   As an Azure virtual machine�"From DPM 2012 R2 Update 3 onwards you can install DPM as an Azure virtual machine. There are a number of restrictions in this deployment. For detailed information, see the row [DPM as an Azure virtual machine](./get-dpm-installed.md#setup-prerequisites) in the Setup prerequites table.
+-   As an Azure virtual machine"From DPM 2012 R2 Update 3 onwards you can install DPM as an Azure virtual machine. There are a number of restrictions in this deployment. For detailed information, see the row [DPM as an Azure virtual machine](./get-dpm-installed.md#setup-prerequisites) in the Setup prerequites table.
 
--   As a Windows virtual machine in VMWare�"From DPM 2012 R2 Update 5 onwards you can install DPM on a Windows virtual machine in a VMWare environment. In this configuration DPM can protect Microsoft workloads that are all running as Windows virtual machines in VMWare.
+-   As a Windows virtual machine in VMWare"From DPM 2012 R2 Update 5 onwards you can install DPM on a Windows virtual machine in a VMWare environment. In this configuration DPM can protect Microsoft workloads that are all running as Windows virtual machines in VMWare.
 
-### System Center 2012 �" DPM can’t be installed on servers running Windows Server 2012
+### System Center 2012 " DPM can&trade;t be installed on servers running Windows Server 2012
 **Issue**: Operating system not supported.
 
 **Workaround**: Install System Center 2016 Technical Preview SP1 in order to get DPM running on a server running Windows Server 2012.
 
-### System Center 2012 �" DPM with SP1 can’t be installed on servers running Windows Server 2012 R2
+### System Center 2012 " DPM with SP1 can&trade;t be installed on servers running Windows Server 2012 R2
 **Issue**: Operating system not supported.
 
 **Workaround**: You'll need to upgrade to System Center 2012  R2.
 
-### Sharing a library between different DPM versions isn’t supported
-**Issue**: Different versions of DPM (for example DPM 2012 SP1 and DPM 2012 R2) can’t function as clients sharing the same library.
+### Sharing a library between different DPM versions isn&trade;t supported
+**Issue**: Different versions of DPM (for example DPM 2012 SP1 and DPM 2012 R2) can&trade;t function as clients sharing the same library.
 
 **Workaround**: None. All DPM servers sharing a library must be running the same version of DPM.
 
-### Upgrading System Center 2010 directly to System Center Technical Previewo isn’t supported
-**Issue**: Upgrade isn’t supported.
+### Upgrading System Center 2010 directly to System Center Technical Previewo isn&trade;t supported
+**Issue**: Upgrade isn&trade;t supported.
 
-**Workaround**: You’ll need to upgrade to DPM 2012 R2 first.
+**Workaround**: You&trade;ll need to upgrade to DPM 2012 R2 first.
 
-### DPM doesn’t run on the Turkish language version of Windows 2012 operating systems
+### DPM doesn&trade;t run on the Turkish language version of Windows 2012 operating systems
 **Issue**: No language support
 
 **Workaround**: None
 
-### DPM 2010 and later versions can’t run on a server running a 32-bit operating system
+### DPM 2010 and later versions can&trade;t run on a server running a 32-bit operating system
 **Issue**: Operating system limitation.
 
 **Workaround**: Install on 64-bit only. For a full list of system requirements, see [System Requirements for DPM in System Center 2012](http://technet.microsoft.com/library/hh757829.aspx).
 
-### In-place upgrade of the operating system on a server running DPM isn’t supported
-**Issue**: In-place upgrade isn’t supported.
+### In-place upgrade of the operating system on a server running DPM isn&trade;t supported
+**Issue**: In-place upgrade isn&trade;t supported.
 
 **Workaround**: Do the following:
 
@@ -101,44 +101,44 @@ This topic summarizes some of the common support information you might need when
 
 5.  Install DPM 2012 SP1 or R2.
 
-6.  Restore the DPM database using Dpmsymc �"restore DB.
+6.  Restore the DPM database using Dpmsymc "restore DB.
 
-7.  Run DPMSync �" Sync to create new mount points.
+7.  Run DPMSync " Sync to create new mount points.
 
 8.  Run a consistency check to get data sources into a green state.
 
 ### Underscore not supported in SQL Server name
 **Issue**: If you specify a remote SQL Server that has an underscore in the name during DPM installation, the installation might fail.
 
-**Workaround**: Specify a SQL Server name that doesn’t include the underscore (“_”) character.
+**Workaround**: Specify a SQL Server name that doesn&trade;t include the underscore (_) character.
 
-### NTFS compression isn’t supported on DPM volumes
+### NTFS compression isn&trade;t supported on DPM volumes
 **Issue**: NTFS not supported.
 
 **Workaround**: None
 
-### Renaming the DPM server isn’t supported
+### Renaming the DPM server isn&trade;t supported
 **Issue**: Renaming not supported.
 
 **Workaround**: None
 
-### Moving the DPM server domain isn’t supported
-**Issue**: Moving the DPM server to a different domain after deployment isn’t supported.
+### Moving the DPM server domain isn&trade;t supported
+**Issue**: Moving the DPM server to a different domain after deployment isn&trade;t supported.
 
 **Workaround**: None
 
 ### DPM on a domain controller can only protect local data sources
 **Issue**: Deployment not supported.
 
-**Workaround**: If you want to install the DPM protection agent on other computers in order to protect them, don’t install DPM on a domain controller.
+**Workaround**: If you want to install the DPM protection agent on other computers in order to protect them, don&trade;t install DPM on a domain controller.
 
-### DPM can’t use SQL Server running on a domain controller
+### DPM can&trade;t use SQL Server running on a domain controller
 **Issue**: Database deployment not supported.
 
-**Workaround**: If you want to use a remote instance of SQL Server as your DPM database, ensure that the SQL Server instance isn’t running on a domain controller.
+**Workaround**: If you want to use a remote instance of SQL Server as your DPM database, ensure that the SQL Server instance isn&trade;t running on a domain controller.
 
 ### Moving protected servers with DPM secondary servers
-Moving protected servers between DPM servers that are under secondary protection isn’t supported. To illustrate this we have the following:
+Moving protected servers between DPM servers that are under secondary protection isn&trade;t supported. To illustrate this we have the following:
 
 -   Server1
 
@@ -174,11 +174,11 @@ The following occurs:
 
 Both of these scenarios are unsupported. You can only select one of the following options:
 
--   **Option 1**�"Use the “Switch Protection” option on DPM3 for Server1, and leave DPM3 in this mode going forward. Note that in this scenario you can’t add secondary protection for Server1 on another DPM server when you’re using switched protection mode.
+-   **Option 1**"Use the Switch Protection option on DPM3 for Server1, and leave DPM3 in this mode going forward. Note that in this scenario you can&trade;t add secondary protection for Server1 on another DPM server when you&trade;re using switched protection mode.
 
--   **Option 2**�"Rebuild DPM1 with the same name and restore the DPM database. This allows DPM to resume primary protection.
+-   **Option 2**"Rebuild DPM1 with the same name and restore the DPM database. This allows DPM to resume primary protection.
 
--   **Option 3**�"Move protection for Server1 to a new DPM server (DPM4) that DPM3 doesn’t know about.
+-   **Option 3**"Move protection for Server1 to a new DPM server (DPM4) that DPM3 doesn&trade;t know about.
 
 ## <a name="BKMK_Storage"></a>Storage issues
 
@@ -187,12 +187,12 @@ Both of these scenarios are unsupported. You can only select one of the followin
 
 **Workaround**: Install System Center 2012 R2 - DPM.
 
-### You can’t use Storage Spaces for the DPM disk storage pool
+### You can&trade;t use Storage Spaces for the DPM disk storage pool
 **Issue**: Storage Spaces unsupported.
 
 **Workaround**: None
 
-### References to old tape libraries aren’t removed from the DPM database
+### References to old tape libraries aren&trade;t removed from the DPM database
 **Issue**: Obsolete tape library are still enumerated and listed in DPM PowerShell cmdlets such as get-dpmlibrary.
 
 **Workaround**: None
@@ -200,15 +200,15 @@ Both of these scenarios are unsupported. You can only select one of the followin
 ### Virtual tape library support
 **Issue**: Are virtual tape libraries supported?
 
-**Workaround**: Virtual tape libraries configured with a virtual fibre channel adapter are only supported if you’re running Data Protection Manager 2012 R2 UR3 or later with certified hardware. For a current list of supported hardware see [Compatible Tape Libraries for System Center 2012 DPM](http://go.microsoft.com/fwlink/?LinkID=389995). To check if your tape library is supported by the virtual fibre channel adapter, please contact your tape hardware vendor and ask them to [Verify tape library compatibility](./identify-compatible-tape-libraries.md).
+**Workaround**: Virtual tape libraries configured with a virtual fibre channel adapter are only supported if you&trade;re running Data Protection Manager 2012 R2 UR3 or later with certified hardware. For a current list of supported hardware see [Compatible Tape Libraries for System Center 2012 DPM](http://go.microsoft.com/fwlink/?LinkID=389995). To check if your tape library is supported by the virtual fibre channel adapter, please contact your tape hardware vendor and ask them to [Verify tape library compatibility](./identify-compatible-tape-libraries.md).
 
-### USB or removable drives can’t be used in the DPM storage pool
+### USB or removable drives can&trade;t be used in the DPM storage pool
 **Issue**: USB and removable storage such as Firewire.
 
-**Workaround**: None. This isn’t supported due to a limitation with Windows dynamic disks.
+**Workaround**: None. This isn&trade;t supported due to a limitation with Windows dynamic disks.
 
 ### Data on CSVs
-Issue: DPM only supports the protection of Hyper-V virtual machines on Cluster Shared Volumes (CSVs). Protecting other workloads hosted on CSVs isn’t supported.
+Issue: DPM only supports the protection of Hyper-V virtual machines on Cluster Shared Volumes (CSVs). Protecting other workloads hosted on CSVs isn&trade;t supported.
 
 Workaround:::
 
@@ -226,20 +226,20 @@ Workaround:::
 
 **Workaround**: Use within support limitations.
 
-### Windows deduplication isn’t always supported on volumes hosting .VHD or .VHDX files
+### Windows deduplication isn&trade;t always supported on volumes hosting .VHD or .VHDX files
 **Issue**: Dedupe support
 
 **Workaround**: Deploy DPM as virtual machine.
 
 You can enable deduplication for DPM storage when it runs in a Hyper-V virtual machine and stored backup data to VHDs in shared folders on Windows File Servers with data deduplication enabled. For more information about this scenario read [Deduplicating DPM storage](../Deploy/Deduplicate-DPM-storage.md).
 
-### Dedup file system can’t be protected to a secondary DPM server
-**Issue**: After a dedup file system is protected by a primary DPM server, it can’t be protected to a secondary DPM server.
+### Dedup file system can&trade;t be protected to a secondary DPM server
+**Issue**: After a dedup file system is protected by a primary DPM server, it can&trade;t be protected to a secondary DPM server.
 
 **Workaround**: None.
 
 ### Item-level recovery not supported
-**Issue**: If you’re protecting virtual machines that contain deduped volumes, you can’t perform Item level recovery (ILR) from those VHD/VHDX files.
+**Issue**: If you&trade;re protecting virtual machines that contain deduped volumes, you can&trade;t perform Item level recovery (ILR) from those VHD/VHDX files.
 
 **Workaround**: Restore the .VHD/VHDX file that contains the deduped volume to a Windows 2012 R2 server that has the Data Deduplication role installed. Mount the .VHD file in disk management, and copy out the desired files.
 
@@ -260,7 +260,7 @@ You can enable deduplication for DPM storage when it runs in a Hyper-V virtual m
 
 -   Windows XP SP2 clients can be protected with DPM 2012 only.
 
-**Workaround**: Ensure you’re running the right version of DPM.
+**Workaround**: Ensure you&trade;re running the right version of DPM.
 
 ### Support for protecting computers running server operating systems with DPM 2012
 **Issue**: The following protection scenarios are supported:
@@ -275,12 +275,12 @@ You can enable deduplication for DPM storage when it runs in a Hyper-V virtual m
 
 -   Windows 2003 Server with SP2, Windows 2003 Server R2, Windows 2003 Server R2 with SP2 can be protected with DPM 2012 R2 running [Update Rollup 2](http://blogs.technet.com/b/dpm/archive/2014/06/11/details-on-protecting-windows-server-2003-computers-using-data-protection-manager-2012-r2.aspx) or later, DPM 2012 with SP1, And DPM 2012.
 
-**Workaround**: Ensure you’re running the right version of DPM.
+**Workaround**: Ensure you&trade;re running the right version of DPM.
 
-### DPM can’t protect SOFS shares
-**Issue**: DPM can’t protect shares on SOFS.
+### DPM can&trade;t protect SOFS shares
+**Issue**: DPM can&trade;t protect shares on SOFS.
 
-**Workaround**: Ensure shares you want to protect aren’t located on SOFS.
+**Workaround**: Ensure shares you want to protect aren&trade;t located on SOFS.
 
 ## <a name="BKMK_Data"></a>Data protection issues
 
@@ -290,28 +290,28 @@ You can enable deduplication for DPM storage when it runs in a Hyper-V virtual m
 **Workaround**: If you must move a protected shared folder, remove it from its protection group and then add it to protection after the move. For an encrypted volume ensure that the new file path of the protected data source uses fewer than 5120 characters.
 
 ### Change the domain of a protected resource
-**Issue**: You can’t change the domain of a protected computer and continue protection without disruption. In addition you can’t change the domain of a protected computer and associate the existing replicas and recovery points with the computer when it is re-protected.
+**Issue**: You can&trade;t change the domain of a protected computer and continue protection without disruption. In addition you can&trade;t change the domain of a protected computer and associate the existing replicas and recovery points with the computer when it is re-protected.
 
-**Workaround**: We recommend that you don’t change the domain of a protected computer. If you must change the name of a protected computer, then first remove the data sources on the computer from protection. Then protect the data source on the computer after it has a new name.
+**Workaround**: We recommend that you don&trade;t change the domain of a protected computer. If you must change the name of a protected computer, then first remove the data sources on the computer from protection. Then protect the data source on the computer after it has a new name.
 
 ### Change the time zone of a protected resource
-**Issue**: You can’t change the domain of a protected computer and continue protection without disruption. In addition you can’t change the domain of a protected computer and associate the existing replicas and recovery points with the computer when it is re-protected.
+**Issue**: You can&trade;t change the domain of a protected computer and continue protection without disruption. In addition you can&trade;t change the domain of a protected computer and associate the existing replicas and recovery points with the computer when it is re-protected.
 
-**Workaround**: We recommend that you don’t change the domain of a protected computer. If you must change the name of a protected computer, then first remove the data sources on the computer from protection. Then protect the data source on the computer after it has a new name.
+**Workaround**: We recommend that you don&trade;t change the domain of a protected computer. If you must change the name of a protected computer, then first remove the data sources on the computer from protection. Then protect the data source on the computer after it has a new name.
 
 ### Change the name of a protected resource
 **Issue**: Ensure you update the time zone correctly if you change it for a protected resource.
 
 **Workaround**: DPM automatically identifies the time zone of a protected computer during installation of the protection agent. If a protected computer is moved to a different time zone after protection is configured, ensure that you change the computer time in Control Panel. Then update the time zone in the DPM database.
 
-### Some data types aren’t supported
-**Issue**: DPM doesn’t support the following data types:
+### Some data types aren&trade;t supported
+**Issue**: DPM doesn&trade;t support the following data types:
 
 -   Hard links
 
 -   Reparse points, including DFS links and junction points
 
--   Mount point metadata�"A protection group can contain data with mount points. In this case DPM protects the mounted volume that is the target of the mount point, but it doesn’t protect the mount point metadata. When you recover data containing mount points, you’ll need to manually recreate your mount point hierarchy.
+-   Mount point metadata"A protection group can contain data with mount points. In this case DPM protects the mounted volume that is the target of the mount point, but it doesn&trade;t protect the mount point metadata. When you recover data containing mount points, you&trade;ll need to manually recreate your mount point hierarchy.
 
 -   Data in mounted volumes within mounted volumes
 
@@ -319,7 +319,7 @@ You can enable deduplication for DPM storage when it runs in a Hyper-V virtual m
 
 -   Paging files
 
--   System Volume Information folder. To protect system information for a computer you’ll need to select the computer’s system state as the protect group member.
+-   System Volume Information folder. To protect system information for a computer you&trade;ll need to select the computer&trade;s system state as the protect group member.
 
 -   Non-NTFS volumes
 
@@ -352,27 +352,27 @@ You can enable deduplication for DPM storage when it runs in a Hyper-V virtual m
 
 These workloads can be running on a single server or in a cluster configuration.
 
-**Workaround**: If you want to protect a workload that isn’t in a trusted domain, see [Prepare computers in workgroups and untrusted domains](../Deploy/Prepare-machines-in-workgroups-and-untrusted-domains-for-backup.md) for exact details of what’s supported and what authentication is required.
+**Workaround**: If you want to protect a workload that isn&trade;t in a trusted domain, see [Prepare computers in workgroups and untrusted domains](../Deploy/Prepare-machines-in-workgroups-and-untrusted-domains-for-backup.md) for exact details of what&trade;s supported and what authentication is required.
 
-### Short-term backup to tape isn’t supported
-**Issue**: DPM doesn’t support short-term backup (incremental backup) to tape for workload data (Exchange, SQL Server, SharePoint, Hyper-V). Only file data (volumes, shares, folders) can be backed up incrementally.
+### Short-term backup to tape isn&trade;t supported
+**Issue**: DPM doesn&trade;t support short-term backup (incremental backup) to tape for workload data (Exchange, SQL Server, SharePoint, Hyper-V). Only file data (volumes, shares, folders) can be backed up incrementally.
 
 **Workaround**: Use disk or a combination of disk and cloud storage (Azure Backup) for short-term backup of these workloads.
 
 ### Multiple long-term tape goals that use dataset-copy jobs fail if you only have a single tape drive
-**Issue**: DPM doesn’t support multiple long-term backup goals if you only have a single tape drive.
+**Issue**: DPM doesn&trade;t support multiple long-term backup goals if you only have a single tape drive.
 
 **Workaround**: Add a second tape drive to DPM or to the tape library.
 
-### Backing up data on UPDs (User Profile Disks) isn’t supported
-**Issue**: Data on file shares hosting UPDs (User Profile Disks) can’t be protected by DPM.
+### Backing up data on UPDs (User Profile Disks) isn&trade;t supported
+**Issue**: Data on file shares hosting UPDs (User Profile Disks) can&trade;t be protected by DPM.
 
 **Workaround**: None.
 
 ## <a name="BKMK_Exchange"></a>Exchange protection issues
 
-### Disk-to-tape backup isn’t supported for Exchange DAG
-**Issue**: DPM doesn’t support short-term or long-term disk-to-tape (D2T) backup for Exchange DAG workloads.
+### Disk-to-tape backup isn&trade;t supported for Exchange DAG
+**Issue**: DPM doesn&trade;t support short-term or long-term disk-to-tape (D2T) backup for Exchange DAG workloads.
 
 **Workaround**: Use disk-to-disk-to-tape (D2D2T) for Exchange DAG workload.
 
@@ -391,17 +391,17 @@ These workloads can be running on a single server or in a cluster configuration.
 **Workaround**: Run the correct DPM version.
 
 ### AlwaysOn support
-**Issue**: AlwaysOn was introduced in SQL Server 2012. It’s supported from DPM 2012 SP1 onwards in accordance with the [DPM protection support matrix](./What-can-DPM-back-up-.md).
+**Issue**: AlwaysOn was introduced in SQL Server 2012. It&trade;s supported from DPM 2012 SP1 onwards in accordance with the [DPM protection support matrix](./What-can-DPM-back-up-.md).
 
 **Workaround**: None.
 
-### AlwaysOn recovery to original location isn’t supported
-**Issue**: When DPM is protecting SQL Server with AlwaysOn enabled data recovery to the original location isn’t supported.
+### AlwaysOn recovery to original location isn&trade;t supported
+**Issue**: When DPM is protecting SQL Server with AlwaysOn enabled data recovery to the original location isn&trade;t supported.
 
 **Workaround**: None.
 
-### DPM can’t protect SQL Server on scale-out file servers (SOFS)
-**Issue**: DPM can’t protect SQL Server databases hosted on Windows Server 2012 SOFS.
+### DPM can&trade;t protect SQL Server on scale-out file servers (SOFS)
+**Issue**: DPM can&trade;t protect SQL Server databases hosted on Windows Server 2012 SOFS.
 
 **Workaround**: Move the SQL Server databases off the SOFS.
 
@@ -417,13 +417,13 @@ These workloads can be running on a single server or in a cluster configuration.
 
 **Workaround**: None
 
-### Backing up virtual machine data on pass-through disks isn’t supported
-Issue: DPM doesn’t support the backup of virtual machine data on pass-through disks that present volumes to the virtual machine or that use a remote VHD.
+### Backing up virtual machine data on pass-through disks isn&trade;t supported
+Issue: DPM doesn&trade;t support the backup of virtual machine data on pass-through disks that present volumes to the virtual machine or that use a remote VHD.
 
-Workaround: We recommend that in this scenario you use host-level backup of the VHD files using DPM, and install and agent on the virtual machine to back up data that isn’t visible on the host.
+Workaround: We recommend that in this scenario you use host-level backup of the VHD files using DPM, and install and agent on the virtual machine to back up data that isn&trade;t visible on the host.
 
-### Secondary DPM protection of a Hyper-V cluster isn’t supported for a scaled-out DPM server deployment
-**Issue**: When protecting a Hyper-V cluster using scaled-out DPM protection, you can’t add secondary protection for the protected Hyper-V workloads.
+### Secondary DPM protection of a Hyper-V cluster isn&trade;t supported for a scaled-out DPM server deployment
+**Issue**: When protecting a Hyper-V cluster using scaled-out DPM protection, you can&trade;t add secondary protection for the protected Hyper-V workloads.
 
 **Workaround**: None
 
@@ -443,10 +443,10 @@ Workaround: We recommend that in this scenario you use host-level backup of the 
 ### DPM as an Azure virtual machine
 **Issue**: DPM can run as an Azure virtual machine from DPM 2012 R2 Update 3 onwards. Note:
 
--   On premise DPM Server can’t protect Azure based workloads.
+-   On premise DPM Server can&trade;t protect Azure based workloads.
 
 -   DPM running on Azure as an Iaas virtual machine can protect some workloads running as Azure virtual machines. For details see the [DPM protection support matrix](./What-can-DPM-back-up-.md).
 
--   DPM running as an Azure virtual machine can’t protect on-premises workloads.
+-   DPM running as an Azure virtual machine can&trade;t protect on-premises workloads.
 
 **Workaround**: For more information about this scenario see [Install DPM as an Azure virtual machine](./Get-DPM-installed.md#setup-prerequisites).

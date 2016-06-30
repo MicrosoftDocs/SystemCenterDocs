@@ -45,7 +45,7 @@ Before you run the tool, do the following:
 
 4.  The tool runs the following tests:
 
-    -   **Test 1: Basic configuration**—Scans the system for attached devices, and identifies standalone tape drives and tape libraries. The tool provides a summary at the end of the test. For each device you'll see a Device Name, Serial Number, Vendor Name, Product Name, Firmware Revision, and SCSI properties. You should verify that the summary information is correct. If it isn't:
+    -   **Test 1: Basic configuration**-Scans the system for attached devices, and identifies standalone tape drives and tape libraries. The tool provides a summary at the end of the test. For each device you'll see a Device Name, Serial Number, Vendor Name, Product Name, Firmware Revision, and SCSI properties. You should verify that the summary information is correct. If it isn't:
 
         -   Check all devices are listed in Device Manager.
 
@@ -53,13 +53,13 @@ Before you run the tool, do the following:
 
         -   .If the drive mappings are incorrect, use the DPMDriveMapping.exe tool in the <DPM installation folder>/bin folder to correct the mappings. If you don't have DPM installed on the computer, copy the DPMLA.xml that DPMDriveMapping.exe creates to the folder to which you extracted the Tape Library Certification tool.
 
-    -   **Test 2: Mount/dismount**—This test selects a tape from the first available slot and performs a mount///dismount of the tape to and from a drive.
+    -   **Test 2: Mount/dismount**-This test selects a tape from the first available slot and performs a mount///dismount of the tape to and from a drive.
 
-    -   **Test 3: Drive cleaning**—This test performs a cleaning test using the cleaning tape. If you are using Firestreamer to a VTL where you can't remove or change tapes, use the /ST flag syntax to skip this test.
+    -   **Test 3: Drive cleaning**-This test performs a cleaning test using the cleaning tape. If you are using Firestreamer to a VTL where you can't remove or change tapes, use the /ST flag syntax to skip this test.
 
-    -   **Test 4: I/E media**—This test selects the first available tape and moves it to the I/E port and back. If your library/VTL doesn't have I/E ports, the tool will automatically skip the test.
+    -   **Test 4: I/E media**-This test selects the first available tape and moves it to the I/E port and back. If your library/VTL doesn't have I/E ports, the tool will automatically skip the test.
 
-    -   **Test 5: I/O**—This test selects the first writable tape, writes a few buffers to it, and then attempts to read what's been written. This test only checks read/write capabilities. Any specific errors in the drive should be inspected using the advanced mode.
+    -   **Test 5: I/O**-This test selects the first writable tape, writes a few buffers to it, and then attempts to read what's been written. This test only checks read/write capabilities. Any specific errors in the drive should be inspected using the advanced mode.
 
 5.  After the tool completes the test, log information will be provided in the LibraryTestTool-*Curr.errlog files which are located in the folder from which you ran the tool. If the tests complete successful you can assume your tape library should work with DPM.
 

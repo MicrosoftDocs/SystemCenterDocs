@@ -14,7 +14,7 @@ ms.assetid: 466af3dd-17e5-46b3-b33b-b21a4a65b875
 
 Use this information to evaluate if your server-side operating system environment is ready to support the installation of or upgrade to System Center 2016 Technical Preview. Use this information whether you are deploying one or multiple components.
 
-|System Center  component|Windows Server 2008|Windows Server 2008 SP2|Windows Server 2008 R2|Windows Server 2008 R2 SP1|Windows Server® 2012 Standard, Datacenter|Windows Server 2012 R2 Standard, Datacenter|Windows Server® Technical Preview(Server with Desktop Experience)|Windows Server® Technical Preview|Windows Server® Technical Preview Nano Server|
+|System Center  component|Windows Server 2008|Windows Server 2008 SP2|Windows Server 2008 R2|Windows Server 2008 R2 SP1|Windows Server 2012 Standard, Datacenter|Windows Server 2012 R2 Standard, Datacenter|Windows Server Technical Preview(Server with Desktop Experience)|Windows Server Technical Preview|Windows Server Technical Preview Nano Server|
 |----------------------------|-----------------------|---------------------------|--------------------------|------------------------------|--------------------------------------------------------------------------------|--------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------|---------------------------------------------------------------------------------------|
 |**DPM** Remote Administration console*|||?|?|?|?|?|||
 |**DPM** Server*|||?|?|?|?|?|?||
