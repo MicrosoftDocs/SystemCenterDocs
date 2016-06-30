@@ -18,9 +18,6 @@ Use this information to evaluate if your Microsoft SilverLight and Internet Expl
 
 |System Center Component|SilverLight 4|SilverLight 5|Internet Explorer 8|Internet Explorer 9|Internet Explorer 10|Internet Explorer 11|
 |---------------------------|-----------------|-----------------|-----------------------|-----------------------|------------------------|------------------------|
-|**Operations Manager** Web Console||?||||?|
-|**Orchestrator** Web Console|?|?|?|?|?|?|
-|**Service Manager Self-Service Portal** Console|?|?|?|?|?|?|
-
-
-
+|**Operations Manager** Web Console||&#8226;||||&#8226;|
+|**Orchestrator** Web Console|&#8226;|&#8226;|&#8226;|&#8226;|&#8226;|&#8226;|
+|**Service Manager Self-Service Portal** Console|&#8226;|&#8226;|&#8226;|&#8226;|&#8226;|&#8226;|
