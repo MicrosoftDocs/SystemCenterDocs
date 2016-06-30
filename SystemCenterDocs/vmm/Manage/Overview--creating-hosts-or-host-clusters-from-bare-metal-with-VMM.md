@@ -75,7 +75,7 @@ The following sequences describes the workflow and deployment process for provis
 
 2.  During the deployment process (host or host cluster), the VMM management server restarts the physical computers.
 
-    The management servers restarts the computers by issuing �Power Off� and �Power On� commands to the Baseboard Management Controller (BMC) using out-of-band management. When the physical computers restart, the PXE server responds to the boot requests from the physical computers.
+    The management servers restarts the computers by issuing "Power Off" and "Power On" commands to the Baseboard Management Controller (BMC) using out-of-band management. When the physical computers restart, the PXE server responds to the boot requests from the physical computers.
 
 3.  The physical computers boot from a customized Windows Preinstallation Environment (Windows PE) image on the Pre-boot execution environment (PXE) server.
 

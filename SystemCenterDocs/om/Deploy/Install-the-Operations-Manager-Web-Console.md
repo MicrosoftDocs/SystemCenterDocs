@@ -163,7 +163,7 @@ The local and remote parameters are as follows:
 
 3.  On the **Permissions** tab, click **Change Permissions**.
 
-4.  Select the **Include inheritable permissions from this object’s parent** checkbox.
+4.  Select the **Include inheritable permissions from this object's parent** checkbox.
 
 5.  In **Permission entries**, click **Administrators**, and then click **Remove**. Repeat for the **SYSTEM** entry, and then click **OK**.
 

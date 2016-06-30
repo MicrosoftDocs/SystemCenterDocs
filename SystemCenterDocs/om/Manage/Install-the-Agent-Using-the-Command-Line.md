@@ -58,8 +58,8 @@ Use the following procedure to deploy an agent.
     |MANAGEMENT_SERVER_DNS=*MSname*|Specifies the fully qualified domain name for the management server. To use a gateway server, enter the gateway server FQDN as **MANAGEMENT_SERVER_DNS**.|
     |MANAGEMENT_SERVER_AD_NAME=*ADname*|Use this parameter if the computer's DNS and Active Directory names differ to set to the fully qualified Active Directory Domain Services name.|
     |SECURE_PORT=*PortNumber*|Sets the health service port number.|
-    |ENABLE_ERROR_REPORTING={0&#124;1}|Optional parameter. Use this parameter with “1” to opt in to error report forwarding to Microsoft. If you do not include this parameter, the agent installation defaults to “0”, which opts out of error report forwarding.|
-    |QUEUE_ERROR_REPORTS={0&#124;1}|Optional parameter. Use this parameter with “1” to queue error reports or with “0” to send reports immediately. If you do not include this parameter, the agent installation defaults to “0”.|
+    |ENABLE_ERROR_REPORTING={0&#124;1}|Optional parameter. Use this parameter with "1" to opt in to error report forwarding to Microsoft. If you do not include this parameter, the agent installation defaults to "0", which opts out of error report forwarding.|
+    |QUEUE_ERROR_REPORTS={0&#124;1}|Optional parameter. Use this parameter with "1" to queue error reports or with "0" to send reports immediately. If you do not include this parameter, the agent installation defaults to "0".|
     |INSTALLDIR=*path*|Optional parameter. Use this parameter if you want to install the agent to a folder other than the default installation path. Note that \Agent will be appended to this value.|
     |ACTIONS_USE_COMPUTER_ACCOUNT={0&#124;1}|Indicates whether to use a specified user account (0) or the Local System account (1).|
     |ACTIONSUSER=*UserName*|Sets the Agent Action account to *UserName*. This parameter is required if you specified ACTIONS_USE_COMPUTER_ACCOUNT=0.|

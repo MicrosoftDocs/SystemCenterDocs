@@ -135,7 +135,7 @@ With VMM 2016, you can deploy the entire Software Defined Networking (SDN) stack
 
 * You can deploy and manage a multi-node Network Controller(NC) in a subnet using VMM Service Templates. After you deploy and onboard the Network Controller, you can configure Network Controller managed fabric to provide connectivity to tenant VMs and to define policies.
 * You can deploy and configure a Software Load Balancer to distribute traffic within a network managed by Network Controller. With VMM 2016 Technical Preview release, Software Load Balancer can now also be used for in bound and out bound NAT.
-* You can deploy and configure a Windows Server Gateway pool with M+N redundancy using VMM Service Templates. After onboarding Windows Server Gateway, you can connect a tenant network to a hosting provider network or to your own remote data center network using either of the three types of connections supported by Gateway â€“ S2S GRE, S2S IPSec and L3.
+* You can deploy and configure a Windows Server Gateway pool with M+N redundancy using VMM Service Templates. After onboarding Windows Server Gateway, you can connect a tenant network to a hosting provider network or to your own remote data center network using either of the three types of connections supported by Gateway â€" S2S GRE, S2S IPSec and L3.
 -   For more information, see [Deploy a Software Defined Network Infrastructure using VMM](../Manage/Deploy-a-Software-Defined-Network-infrastructure-using-VMM.md)
 
 ### **Access Control Lists (ACL) for individual ports**

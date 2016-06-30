@@ -27,7 +27,7 @@ If you are using network virtualization on your VM networks, you can support an 
 
     Note that after you finish creating the VM network, you cannot view this protocol setting in the VMM management console. Instead, run the Windows PowerShell cmdlet [Get-SCVMNetwork](http://technet.microsoft.com/library/jj613172.aspx) to view the setting. Use the following syntax, where `<VMNetworkName>` is the name of your VM network:
 
-    `Get-SCVMNetwork �Name <VMNetworkName> | Format-List Name, IsolationType, *PoolType`
+    `Get-SCVMNetwork "Name <VMNetworkName> | Format-List Name, IsolationType, *PoolType`
 
     In the display, a protocol (IPv4 or IPv6) is listed for the pool type:
 

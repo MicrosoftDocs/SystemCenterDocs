@@ -61,7 +61,7 @@ Review the Quick Start Guide, especially the network requirements and the gatewa
 
     -   The network virtualization logical network should be created as a connected network.
 
-    -   Configure IP address pools on each of the logical networks, unless you want to use DHCP on the "Infrastructure" (management) network�if so, omit the IP address pool for that network.
+    -   Configure IP address pools on each of the logical networks, unless you want to use DHCP on the "Infrastructure" (management) network"if so, omit the IP address pool for that network.
 
     The following table outlines the logical networks and the specific requirements for each logical network:
 
@@ -73,7 +73,7 @@ Review the Quick Start Guide, especially the network requirements and the gatewa
 
     After you have finished creating the logical networks, network sites, and IP address pools, review the following:
 
-    -   If you added an IP address pool on the "Infrastructure" (management) network, determine whether the "Infrastructure" network and the �External� (front end) network route to the same network at any point. If they do,  for each IP address pool, right-click the pool and then click **Properties**. On the **Gateway** tab, review the value in the **Metric** column. Ensure that the **Metric** for the "Infrastructure" network is set to a higher value than the **Metric** for the �External� network.
+    -   If you added an IP address pool on the "Infrastructure" (management) network, determine whether the "Infrastructure" network and the "External" (front end) network route to the same network at any point. If they do,  for each IP address pool, right-click the pool and then click **Properties**. On the **Gateway** tab, review the value in the **Metric** column. Ensure that the **Metric** for the "Infrastructure" network is set to a higher value than the **Metric** for the "External" network.
 
     -   If you added an IP address pool on the "Infrastructure" (management) network, right-click the pool and then click **Properties**. On the **IP address range** tab, under **IP addresses to be reserved for other uses**, specify an IP address that is within the range of addresses in the IP address pool. Record this IP address. You will use it later when you deploy the gateway.
 

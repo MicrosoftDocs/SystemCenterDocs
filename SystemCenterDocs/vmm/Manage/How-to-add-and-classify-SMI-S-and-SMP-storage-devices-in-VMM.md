@@ -15,7 +15,7 @@ ms.assetid:  96db0f54-5b56-426a-9866-9e3b0902609c
 
 >Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
 
-Use the following procedure to add remote storage devices in Virtual Machine Manager (VMM). You can add and discover external storage arrays that are managed by Storage Management Initiative � Specification (SMI-S) or Store Management Provider (SMP) providers. You can assign friendly-name classifications for the added storage. For example, you can assign a Gold classification to solid-state drive (SSD) storage and a Bronze classification to slower drives.
+Use the following procedure to add remote storage devices in Virtual Machine Manager (VMM). You can add and discover external storage arrays that are managed by Storage Management Initiative " Specification (SMI-S) or Store Management Provider (SMP) providers. You can assign friendly-name classifications for the added storage. For example, you can assign a Gold classification to solid-state drive (SSD) storage and a Bronze classification to slower drives.
 
 **Account requirements** To complete this procedure, you must be a member of the Administrator user role, or a member of the Delegated Administrator user role.
 

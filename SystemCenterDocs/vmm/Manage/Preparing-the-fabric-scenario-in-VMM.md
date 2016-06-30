@@ -55,7 +55,7 @@ The following table summarizes a set of sample **RESOURCES** that you could crea
     |Name|Subnet|Management|
     |--------|----------|--------------|
     |**Management - Seattle**|**10.0.0.0/24**|**7**|
-    |**Management � New York**|**172.16.0.0/24**|**12**|
+    |**Management " New York**|**172.16.0.0/24**|**12**|
 
     IP address pool:
 
@@ -65,7 +65,7 @@ The following table summarizes a set of sample **RESOURCES** that you could crea
     |Description|**IP addresses for host management - Seattle**|
     |Begin IP address|**10.0.0.10**|
     |End IP address|**10.0.0.99**|
-    |Reserved range for virtual IP addresses associated with load balancers:|**10.0.0.25 � 10.0.0.35**|
+    |Reserved range for virtual IP addresses associated with load balancers:|**10.0.0.25 " 10.0.0.35**|
     |Default gateway|**10.0.0.1**|
     |DNS server|**10.0.0.2**|
     |WINS server|**10.0.0.3**|

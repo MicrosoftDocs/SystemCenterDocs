@@ -30,7 +30,7 @@ You can use this procedure for servers or clusters regardless of whether the Hyp
 
     The Add Resource Wizard starts.
 
-4.  On the **Resource location** page, the option that corresponds to your servers�trusted domain, untrusted domain, or disjointed namespace�and then click **Next**.
+4.  On the **Resource location** page, the option that corresponds to your servers"trusted domain, untrusted domain, or disjointed namespace"and then click **Next**.
 
 5.  On the **Credentials** page, enter the credentials for a domain account that has administrative permissions on all hosts that you want to add, and then click **Next**. (For computers in an untrusted domain, you must use a Run As account.)
 

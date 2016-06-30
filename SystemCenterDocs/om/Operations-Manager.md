@@ -23,7 +23,7 @@ Welcome to System Center 2016 Technical Preview Operations Manager.  Operations 
 
 -   [Getting Started with System Center Technical Preview - Operations Manager](get-started/Getting-Started-with-System-Center-Technical-Preview-Operations-Manager.md)
 
-    Written for customers who are either new to Operations Manager or are looking for “What’s New” information.
+    Written for customers who are either new to Operations Manager or are looking for "What's New" information.
 
 -   [Initial Monitoring After Operations Manager Is Installed](Manage/Initial-Monitoring-After-Operations-Manager-Is-Installed.md)
 
@@ -39,7 +39,7 @@ Welcome to System Center 2016 Technical Preview Operations Manager.  Operations 
 
 ## Related Resources
 
--   [Author’s Guide for Operations Manager](http://go.microsoft.com/fwlink/?LinkID=212377)
+-   [Author's Guide for Operations Manager](http://go.microsoft.com/fwlink/?LinkID=212377)
 
 
 

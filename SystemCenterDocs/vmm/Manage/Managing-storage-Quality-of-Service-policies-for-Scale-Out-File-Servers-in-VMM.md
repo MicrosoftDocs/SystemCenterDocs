@@ -15,7 +15,7 @@ ms.assetid:  a3b257f9-4e5b-4a2f-bb0b-48ba0fe3448d
 
 >Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
 
-The �noisy neighbor� problem is a common problem in virtualized environments. When two virtual machines (VMs) share a resource, say a disk, there is always a chance that one VM�s usage of the resource exceeds that of the other. This might impact the performance of an application running on the VM, as it would not have adequate access to the resource.
+The "noisy neighbor" problem is a common problem in virtualized environments. When two virtual machines (VMs) share a resource, say a disk, there is always a chance that one VM"s usage of the resource exceeds that of the other. This might impact the performance of an application running on the VM, as it would not have adequate access to the resource.
 ## Setting Storage Quality of Service (QOS) Policies
 WS 2016 and VMM 2016 introduce the concept of Storage QoS policies to solve the "noisy neighbor" problem. These policies allow the administrator to define the number of Minimum IOPS, Maximum IOPS and Maximum Bandwidth in MB/s. Minimum IOPS is the minimum performance that is guaranteed at any given point in time, whereas Maximum IOPS and Maximum Bandwidth are the performance limits in terms of IOPS and bandwidth that are permissible. You can also set the policy type which defines whether the policy is applicable for a set of VHDs or an individual VHD.
 

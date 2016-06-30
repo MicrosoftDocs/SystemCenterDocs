@@ -41,7 +41,7 @@ With Virtual Machine Manager (VMM), you can simplify and automate the process of
 
 3.  **Configure the storage structure.** After VMM discovers resources, you can use VMM to configure them. For example, you can use VMM to initialize disks and format volumes. You can configure either block or file storage types: depending on the type of storage device, you can create and configure file shares or logical units.
 
-    Alternatively, you can create logical units out-of-band by using your array vendor�s management tools. 
+    Alternatively, you can create logical units out-of-band by using your array vendor"s management tools. 
       If you use this method, it takes some time for VMM to discover and reflect the changes.
 
     For more information, see the following topics:

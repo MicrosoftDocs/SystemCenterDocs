@@ -74,7 +74,7 @@ Using these packs you can:
 
 -   To install the Management Packs the DPM server must be running at least DPM 2012 R2 with Update Rollup 5.
 
--   If you’re running a previous version of the Discover and Library Management Packs obtained from the DPM installation media you should remove them from the DPM server and install the new versions from the download page.
+-   If you're running a previous version of the Discover and Library Management Packs obtained from the DPM installation media you should remove them from the DPM server and install the new versions from the download page.
 
 -   You can only run one language version of the Management Pack at one time. If you want to use the pack in a different language uninstall the pack in the existing language and then install it with the new language.
 
@@ -104,14 +104,14 @@ Remember to remove any previous versions of the Library or Discover Management P
 2.  Follow the instructions in the Import Management Packs wizard. You can get more information about running this wizard in [How to Import an Operations Manager Management Pack](https://technet.microsoft.com/en-us/library/hh212691.aspx).
 
 #### Set up Central Console
-You’ll need to install the DPM Central Console on the Operations Manager server. This console is used to manage multiple DPM servers in Operations Manager.
+You'll need to install the DPM Central Console on the Operations Manager server. This console is used to manage multiple DPM servers in Operations Manager.
 I
 
 1.  n the **Setup** screen of Operations Manager, select the following:
 
     -   Select **Install Central Console Server and Client side Components** if you want to monitor DPM servers with the Management Pack and you want to use the Central Console to manage settings and configuration on the DPM servers.
 
-    -   Select **Install Central Console Server side Components** if you only want to monitor DPM servers with the Management Pack, but don’t want to use Central Console to manage settings and configuration on the DPM servers.
+    -   Select **Install Central Console Server side Components** if you only want to monitor DPM servers with the Management Pack, but don't want to use Central Console to manage settings and configuration on the DPM servers.
 
 2.  DPM adds firewall exceptions for port 6075 for the console. You should also open ports for SQL Server.exe and SQL browser.exe
 

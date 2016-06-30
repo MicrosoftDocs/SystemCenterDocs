@@ -42,20 +42,20 @@ This topic summarizes some of the common support information you might need when
 
 **More information**: DPM 2012 can be installed as follows:
 
--   As a standalone physical server—DPM can’t be deployed in a physical cluster, but you can manage multiple DPM servers from a single location using Central Console in Operations Manager.
+-   As a standalone physical server�"DPM can’t be deployed in a physical cluster, but you can manage multiple DPM servers from a single location using Central Console in Operations Manager.
 
--   As an on-premises virtual machine—You can deploy DPM as a Hyper-V virtual machine as a single server or virtual machine cluster. You install DPM in the same way as a physical installation. For detailed information, see the row, [DPM installed as Hyper-V VM](./Get-DPM-installed.md#Setup-prerequisites) in the Setup prerequisites table.
+-   As an on-premises virtual machine�"You can deploy DPM as a Hyper-V virtual machine as a single server or virtual machine cluster. You install DPM in the same way as a physical installation. For detailed information, see the row, [DPM installed as Hyper-V VM](./Get-DPM-installed.md#Setup-prerequisites) in the Setup prerequisites table.
 
--   As an Azure virtual machine—From DPM 2012 R2 Update 3 onwards you can install DPM as an Azure virtual machine. There are a number of restrictions in this deployment. For detailed information, see the row [DPM as an Azure virtual machine](./get-dpm-installed.md#setup-prerequisites) in the Setup prerequites table.
+-   As an Azure virtual machine�"From DPM 2012 R2 Update 3 onwards you can install DPM as an Azure virtual machine. There are a number of restrictions in this deployment. For detailed information, see the row [DPM as an Azure virtual machine](./get-dpm-installed.md#setup-prerequisites) in the Setup prerequites table.
 
--   As a Windows virtual machine in VMWare—From DPM 2012 R2 Update 5 onwards you can install DPM on a Windows virtual machine in a VMWare environment. In this configuration DPM can protect Microsoft workloads that are all running as Windows virtual machines in VMWare.
+-   As a Windows virtual machine in VMWare�"From DPM 2012 R2 Update 5 onwards you can install DPM on a Windows virtual machine in a VMWare environment. In this configuration DPM can protect Microsoft workloads that are all running as Windows virtual machines in VMWare.
 
-### System Center 2012 – DPM can’t be installed on servers running Windows Server 2012
+### System Center 2012 �" DPM can’t be installed on servers running Windows Server 2012
 **Issue**: Operating system not supported.
 
 **Workaround**: Install System Center 2016 Technical Preview SP1 in order to get DPM running on a server running Windows Server 2012.
 
-### System Center 2012 – DPM with SP1 can’t be installed on servers running Windows Server 2012 R2
+### System Center 2012 �" DPM with SP1 can’t be installed on servers running Windows Server 2012 R2
 **Issue**: Operating system not supported.
 
 **Workaround**: You'll need to upgrade to System Center 2012  R2.
@@ -101,9 +101,9 @@ This topic summarizes some of the common support information you might need when
 
 5.  Install DPM 2012 SP1 or R2.
 
-6.  Restore the DPM database using Dpmsymc –restore DB.
+6.  Restore the DPM database using Dpmsymc �"restore DB.
 
-7.  Run DPMSync – Sync to create new mount points.
+7.  Run DPMSync �" Sync to create new mount points.
 
 8.  Run a consistency check to get data sources into a green state.
 
@@ -174,11 +174,11 @@ The following occurs:
 
 Both of these scenarios are unsupported. You can only select one of the following options:
 
--   **Option 1**—Use the “Switch Protection” option on DPM3 for Server1, and leave DPM3 in this mode going forward. Note that in this scenario you can’t add secondary protection for Server1 on another DPM server when you’re using switched protection mode.
+-   **Option 1**�"Use the “Switch Protection” option on DPM3 for Server1, and leave DPM3 in this mode going forward. Note that in this scenario you can’t add secondary protection for Server1 on another DPM server when you’re using switched protection mode.
 
--   **Option 2**—Rebuild DPM1 with the same name and restore the DPM database. This allows DPM to resume primary protection.
+-   **Option 2**�"Rebuild DPM1 with the same name and restore the DPM database. This allows DPM to resume primary protection.
 
--   **Option 3**—Move protection for Server1 to a new DPM server (DPM4) that DPM3 doesn’t know about.
+-   **Option 3**�"Move protection for Server1 to a new DPM server (DPM4) that DPM3 doesn’t know about.
 
 ## <a name="BKMK_Storage"></a>Storage issues
 
@@ -311,7 +311,7 @@ You can enable deduplication for DPM storage when it runs in a Hyper-V virtual m
 
 -   Reparse points, including DFS links and junction points
 
--   Mount point metadata—A protection group can contain data with mount points. In this case DPM protects the mounted volume that is the target of the mount point, but it doesn’t protect the mount point metadata. When you recover data containing mount points, you’ll need to manually recreate your mount point hierarchy.
+-   Mount point metadata�"A protection group can contain data with mount points. In this case DPM protects the mounted volume that is the target of the mount point, but it doesn’t protect the mount point metadata. When you recover data containing mount points, you’ll need to manually recreate your mount point hierarchy.
 
 -   Data in mounted volumes within mounted volumes
 

@@ -65,7 +65,7 @@ The Management logical network models the Management network connectivity for th
 
 4.  On the **Settings** page, be sure to select **One Connected Network**, since all Management networks need to have routing and connectivity between all hosts in that network. Check the **Create a VM Network with the same name** to automatically create a VM Network for your Management network. Click **Next**.
 
-5.  In the **Network Site** panel, click **Add** to add a new network site. Select the host group for the hosts that will be managed by the network controller. Insert your management network IP subnet information. This network should already exist and be configured in your physical switch. Click **Next** when you�re ready to proceed.
+5.  In the **Network Site** panel, click **Add** to add a new network site. Select the host group for the hosts that will be managed by the network controller. Insert your management network IP subnet information. This network should already exist and be configured in your physical switch. Click **Next** when you"re ready to proceed.
 
 6.  Review the **Summary** information and click **Finish** to complete.
 
@@ -290,7 +290,7 @@ After the network controller service is successfully deployed, the next step is 
     The ``servicename`` is the name you used when you configured and deployed the service. See step 1 under [Configure and deploy the service](#CandD).   
 8.  On the **Review Certificates** page, a connection is made to the network controller virtual machine to retrieve the certificate. Verify that the certificate shown is the one you expect. Ensure you select the **These certificates have been reviewed and can be imported to the trusted certificate storebox** check box. Click **Next**.
 
-9.  On the next screen, click **Scan Provider** to connect to your service and list the properties and their status. This is also a good test of whether or not the service was created correctly, and that you�re using the right connect string to connect to it. Examine the results, and when it completes successfully click **Next**.
+9.  On the next screen, click **Scan Provider** to connect to your service and list the properties and their status. This is also a good test of whether or not the service was created correctly, and that you"re using the right connect string to connect to it. Examine the results, and when it completes successfully click **Next**.
 
 10.  Configure the Host Group in VMM that your network controller will manage. Click **Next**.
 
@@ -298,7 +298,7 @@ After the network controller service is successfully deployed, the next step is 
 
 ![VMM Network ServicesImage/VMM-Network-Services.png)
 
-If you click the properties of the network controller service, you will find the **Logical Network Affinity** section. You don�t need to specify any selection on this page. This is an obsolete page that will be removed in upcoming releases.
+If you click the properties of the network controller service, you will find the **Logical Network Affinity** section. You don"t need to specify any selection on this page. This is an obsolete page that will be removed in upcoming releases.
 
 ![VMM NC Properties 2Image/VMM-NC-Properties-2.png)
 
@@ -452,5 +452,5 @@ To create a virtual machine from an existing virtual hard disk, follow the steps
 After you deploy at least two virtual machines connected to your VM Network, you can ping one tenant virtual machine from the other tenant virtual machine to validate that the network controller has been deployed as a network service successfully, and that it can manage the HNV Provider network so that tenant virtual machines can ping each other.
 
 Ensure that your tenant virtual machines allow IPv4 ICMP through their firewall. By default, Windows Server blocks this.
-> You can run the following PowerShell cmdlet to allow ICMP v4 in through the firewall: ``New-NetFirewallRule �DisplayName �Allow ICMPv4-In� �Protocol ICMPv4``
+> You can run the following PowerShell cmdlet to allow ICMP v4 in through the firewall: ``New-NetFirewallRule "DisplayName "Allow ICMPv4-In" "Protocol ICMPv4``
 

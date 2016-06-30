@@ -27,7 +27,7 @@ Central Console is a System Center Operations Manager console that you can deplo
 -   Service level agreement (SLA)-based alerting and alert consolidation—Alerts are generated when an SLA is broken.
     You can consolidate alerts and work on high priority items, as follows:
 
-    -   Repeated alerts—Display only one alert for repeated alerts. For example if a job is scheduled to run hourly and hasn’t run for the last ten hours, only one alert for the failed job is displayed.
+    -   Repeated alerts—Display only one alert for repeated alerts. For example if a job is scheduled to run hourly and hasn't run for the last ten hours, only one alert for the failed job is displayed.
 
     -   Same root cause—If multiple alerts have the same root cause, or if multiple backups fail for the same data source, only the alerts informing you of the failure is generated.
 

@@ -43,13 +43,13 @@ The action account can be managed through the Default action account located in 
 ### Using a Low-Privileged Account
 When you install Operations Manager, you have the option of specifying either a domain account or using Local System. The more secure approach is to specify a domain account which allows you to select a user with the least amount of privileges necessary for your environment.
 
-You can use a low-privileged account for the agent’s action account. On computers running Windows Server 2003 and Windows Vista, the account must have the following minimum privileges:
+You can use a low-privileged account for the agent's action account. On computers running Windows Server 2003 and Windows Vista, the account must have the following minimum privileges:
 
 -   Member of the local Users group
 
 -   Member of the local Performance Monitor Users group
 
--   “Allow log on locally” permission (SetInteractiveLogonRight)
+-   "Allow log on locally" permission (SetInteractiveLogonRight)
 
 > [!IMPORTANT]
 > The minimum privileges described above are the lowest privileges that Operations Manager supports for the Action account. Other Run As accounts can have lower privileges. The actual privileges required for the Action account and the Run As accounts will depend upon which management packs are running on the computer and how they are configured. For more information about which specific privileges are required, see the appropriate management pack guide.

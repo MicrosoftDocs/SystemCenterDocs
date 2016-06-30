@@ -29,7 +29,7 @@ Before you install Service Provider Foundation, do the following:
 
 -   Close any open programs, and make sure that the computer does not have a restart pending.
 
-If there is a problem with the installation completing successfully, refer to the log files, named �Microsoft Service Provider*.log�, in the %SYSTEMDRIVE%\\%TEMP%  folder.
+If there is a problem with the installation completing successfully, refer to the log files, named "Microsoft Service Provider*.log", in the %SYSTEMDRIVE%\\%TEMP%  folder.
 
 ### To install Service Provider Foundation
 
@@ -93,7 +93,7 @@ If there is a problem with the installation completing successfully, refer to th
 
     After you click **Install**, the installation progress indicator appears.
 
-14. Click **Close** when the message �Setup is complete� appears.
+14. Click **Close** when the message "Setup is complete" appears.
 
 Repeat this procedure for each installation, such as for a web farm.
 

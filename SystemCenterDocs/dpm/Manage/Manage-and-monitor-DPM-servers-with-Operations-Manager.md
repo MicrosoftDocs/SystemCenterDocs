@@ -42,7 +42,7 @@ What you need:
 
 -   To install the Management Packs the DPM server must be running at least DPM 2012 R2 with Update Rollup 5.
 
--   If you’re running a previous version of the Discover and Library Management Packs obtained from the DPM installation media you should remove them from the DPM server and install the new versions from the download page.
+-   If you're running a previous version of the Discover and Library Management Packs obtained from the DPM installation media you should remove them from the DPM server and install the new versions from the download page.
 
 -   You can only run one language version of the Management Pack at one time. If you want to use the pack in a different language uninstall the pack in the existing language and then install it with the new language.
 
