@@ -51,11 +51,11 @@ From the dashboard you can download the Backup agent for installation on a serve
 ## Monitor DPM in Operations Manager
 You can use monitor and report on the health and status of DPM servers using System Center Operations Manager Management Packs for DPM. DPM provides the following management packs:
 
--   **Reporting management pack** (Microsoft.SystemCenter.DataProtectionManager.2012.Reporting.mp)—Collects and displays reporting data from all DPM servers, and exposes a set of Operations Manager warehouse views for DPM. You can query these views to generate custom reports.
+-   **Reporting management pack** (Microsoft.SystemCenter.DataProtectionManager.2012.Reporting.mp)-Collects and displays reporting data from all DPM servers, and exposes a set of Operations Manager warehouse views for DPM. You can query these views to generate custom reports.
 
 -   **Discovery and monitoring management pack** (Microsoft.SystemCenter.DataProtectionManager.2012.Discovery.mp)
 
--   **Library management pack**—(Microsoft.SystemCenter.DataProtectionManager.2012.Library)
+-   **Library management pack**-(Microsoft.SystemCenter.DataProtectionManager.2012.Library)
 
 Using these packs you can:
 

@@ -1,4 +1,4 @@
----
+--
 description:  
 manager:  cfreemanwa
 ms.topic:  article
@@ -19,7 +19,7 @@ You can back up file data on server and client computers.
 
 ## Before you start
 
-1.  **Deploy DPM**—Verify that DPM is installed and deployed correctly. If you haven't see:
+1.  **Deploy DPM**-Verify that DPM is installed and deployed correctly. If you haven't see:
 
     -   System requirements for DPM
 
@@ -29,9 +29,9 @@ You can back up file data on server and client computers.
 
     -   [Get DPM installed](../get-started/Get-DPM-installed.md)
 
-2.  **Set up storage**—You can store backed up data on disk, on tape, and in the cloud with Azure. Read more in [Prepare data storage](../get-started/Prepare-data-storage.md).
+2.  **Set up storage**-You can store backed up data on disk, on tape, and in the cloud with Azure. Read more in [Prepare data storage](../get-started/Prepare-data-storage.md).
 
-3.  **Set up the DPM protection agent**—You'll need to install the DPM protection agent on every machine you want to back up. Read [Deploy the DPM protection agent](Deploy-the-DPM-protection-agent.md).
+3.  **Set up the DPM protection agent**-You'll need to install the DPM protection agent on every machine you want to back up. Read [Deploy the DPM protection agent](Deploy-the-DPM-protection-agent.md).
 
 ## Back up file data
 After you have your DPM infrastructure set up you can enable protection machines that have file data you want to back up.

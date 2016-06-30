@@ -37,9 +37,9 @@ In DPM you'll need to select short and long-term storage for backed up data.
 ## <a name="BKMK_Azure"></a>Prepare cloud storage (Azure Backup)
 You can back up protected DPM data to Azure using the Azure Backup service. This is useful in a couple of scenarios:
 
--   **DPM is deployed on-premises as a physical server or virtual machine**—If you deploy DPM as a physical server or as an on-premises Hyper-V virtual machine you can back up data with Azure Backup in addition to backing data up to disk and tape.
+-   **DPM is deployed on-premises as a physical server or virtual machine**-If you deploy DPM as a physical server or as an on-premises Hyper-V virtual machine you can back up data with Azure Backup in addition to backing data up to disk and tape.
 
--   **DPM is deployed as a virtual machine in Azure**—If DPM is deployed as an Azure virtual machine (possible from System Center 2012 R2 with Update 3) you can back up data to Azure disks attached to the DPM Azure virtual machine and then offload data storage with backup to Azure Backup.
+-   **DPM is deployed as a virtual machine in Azure**-If DPM is deployed as an Azure virtual machine (possible from System Center 2012 R2 with Update 3) you can back up data to Azure disks attached to the DPM Azure virtual machine and then offload data storage with backup to Azure Backup.
 
 When you set up a protection group in DPM you select disk for short-term storage and then you enable online backup to Azure.  Note that:
 
@@ -133,23 +133,23 @@ After the storage pool is set up, when you create protection groups that include
 
 #### Install and configure tape devices
 
-1.  Attach tape drive—Follow the instructions provided with the tape device to attach and install it on the DPM server.
+1.  Attach tape drive-Follow the instructions provided with the tape device to attach and install it on the DPM server.
 
-2.  Verify serial numbers—Check that the medium changer and tape drives have serial numbers. DPM uses these for identification. Installed tape devices are listed in Device Manager.
+2.  Verify serial numbers-Check that the medium changer and tape drives have serial numbers. DPM uses these for identification. Installed tape devices are listed in Device Manager.
 
-3.  Add firewall exceptions—Add firewall exceptions so that DPM can detect the tape:
+3.  Add firewall exceptions-Add firewall exceptions so that DPM can detect the tape:
     C:\Program Files\Microsoft System Center 2012\DPM\SQL\SSQL10_50.MSDPMV4RC\MSSQL\Binn\sqlservr.exe
     C:\Program Files (x86)\Microsoft SQL Server\90\Shared\sqlbrowser.exe
     C:\Program Files\Microsoft System Center 2012\DPM\DPM\bin\DPMLA.exe
 
-4.  Add firewall exceptions—Add firewall exceptions so that DPM can detect the tape:
+4.  Add firewall exceptions-Add firewall exceptions so that DPM can detect the tape:
     C:\Program Files\Microsoft System Center 2012\DPM\SQL\SSQL10_50.MSDPMV4RC\MSSQL\Binn\sqlservr.exe
     C:\Program Files (x86)\Microsoft SQL Server\90\Shared\sqlbrowser.exe
     C:\Program Files\Microsoft System Center 2012\DPM\DPM\bin\DPMLA.exe
 
-5.  Detect manually—DPM automatically detects tape devices that are physically attached to it and they're displayed in the Libraries workspace of the Management view. If a device isn't displayed, you can detect it manually with the Rescan button. This might take a few minutes. After you rescan, check that the details displayed in Device Manager and in the tape library are the same
+5.  Detect manually-DPM automatically detects tape devices that are physically attached to it and they're displayed in the Libraries workspace of the Management view. If a device isn't displayed, you can detect it manually with the Rescan button. This might take a few minutes. After you rescan, check that the details displayed in Device Manager and in the tape library are the same
 
-6.  Set up tape sharing—Set up tape sharing if you want to share a single tape library across multiple DPM server. Note that:
+6.  Set up tape sharing-Set up tape sharing if you want to share a single tape library across multiple DPM server. Note that:
 
     -   The tape library is typically a collection of tape drives that automatically mount and dismount tape media.
 

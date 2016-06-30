@@ -310,7 +310,7 @@
 ###### [Standard Reports Available in Service Manager](sm/Service-Manager.md)
 ##### [Using OLAP Cubes for Advanced Analytics](SM/Manage/Using-OLAP-Cubes-for-Advanced-Analytics.md)
 ###### [View and Analyze an OLAP Data Cube with Excel](SM/Manage/View-and-Analyze-an-OLAP-Data-Cube-with-Excel.md)
-### [Glossary for System Center 2016 â" Service Manager](sm/Service-Manager.md)
+### [Glossary for System Center 2016 â�" Service Manager](sm/Service-Manager.md)
 ## [Virtual Machine Manager](VMM/Virtual-Machine-Manager.md)
 ### [Getting Started with System Center Technical Preview - Virtual Machine Manager](vmm/Virtual-Machine-Manager.md)
 #### [What's New in VMM in System Center Technical Preview](vmm/get-started/What-s-New-in-VMM-in-System-Center-Technical-Preview.md)

@@ -17,13 +17,13 @@ ms.assetid:  e63b86d4-1f83-48ef-82bb-636b9dc745e2
 
 DPM can protect computers that are in untrusted domains or workgroups. You can authenticate these computers using a local user account (NTLM authentication), or using certificates. For both types of authentication you'll need to prepare the infrastructure before you can set up a protection group that contains the sources you want to back up.
 
-1.  **Install a certificate**—If you want to use certificate authentication install a certificate on the DPM server and on the computer you want to protect.
+1.  **Install a certificate**-If you want to use certificate authentication install a certificate on the DPM server and on the computer you want to protect.
 
-2.  **Install the agent**—Install the agent on the computer you want to protect.
+2.  **Install the agent**-Install the agent on the computer you want to protect.
 
-3.  **Recognize the DPM server**—Configure the computer to recognize the DPM server for performing backups. To do this you'll run the SetDPMServer command.
+3.  **Recognize the DPM server**-Configure the computer to recognize the DPM server for performing backups. To do this you'll run the SetDPMServer command.
 
-4.  **Attach the computer**—Lastly you'll need to attach the protected computer to the DPM server.
+4.  **Attach the computer**-Lastly you'll need to attach the protected computer to the DPM server.
 
 ## Before you start
 Before you started check the supported protection scenarios and required network settings
@@ -59,11 +59,11 @@ Before you started check the supported protection scenarios and required network
 ## Back up using  NTLM authentication
 Here's what you'll need to do:
 
-1.  Install the agent — Install the agent on the computer you want to protect.
+1.  Install the agent - Install the agent on the computer you want to protect.
 
-2.  Configure the agent — Configure the computer to recognize the DPM server for performing backups. To do this you'll run the SetDPMServer command.
+2.  Configure the agent - Configure the computer to recognize the DPM server for performing backups. To do this you'll run the SetDPMServer command.
 
-3.  Attach the computer — Lastly you'll need to attach the protected computer to the DPM server.
+3.  Attach the computer - Lastly you'll need to attach the protected computer to the DPM server.
 
 ### <a name="BKMK_Config"></a>Install and configure the agent
 
@@ -77,13 +77,13 @@ Here's what you'll need to do:
 
 3.  Specify the parameters as follows:
 
-    -   **-DpmServerName**—Specify the name of the DPM server. Use either an FQDN if the server and computer are accessible to each other using FQDNs, or a NETBIOS name.
+    -   **-DpmServerName**-Specify the name of the DPM server. Use either an FQDN if the server and computer are accessible to each other using FQDNs, or a NETBIOS name.
 
-    -   **-IsNonDomainServer**—Use to indicate that the server is in a workgroup or untrusted domain in relation to the computer you want to protect. Firewall exceptions are created for required ports.
+    -   **-IsNonDomainServer**-Use to indicate that the server is in a workgroup or untrusted domain in relation to the computer you want to protect. Firewall exceptions are created for required ports.
 
-    -   **-UserName**—Specify the name of the account you want to use for NTLM authentication. To use this option you should have the -isNonDomainServer flag specified. A local user account will be created and the DPM protection agent will be configured to use this account for authentication.
+    -   **-UserName**-Specify the name of the account you want to use for NTLM authentication. To use this option you should have the -isNonDomainServer flag specified. A local user account will be created and the DPM protection agent will be configured to use this account for authentication.
 
-    -   **-ProductionServerDnsSuffix**—Use this switch if the server has multiple DNS suffixes configured. This switch represents the DNS suffix that the server uses to connect to the computer you're protecting.
+    -   **-ProductionServerDnsSuffix**-Use this switch if the server has multiple DNS suffixes configured. This switch represents the DNS suffix that the server uses to connect to the computer you're protecting.
 
 4.  When the command completes successfully open the DPM console.
 
@@ -212,19 +212,19 @@ If you want to optionally configure the template for enrollment or autoenrollmen
         Set-DPMCredentials [-DPMServerName <String>] [-Type <AuthenticationType>] [Action <Action>] [-OutputFilePath <String>] [-Thumbprint <String>] [-AuthCAThumbprint <String>]
         ```
 
-    -   **-Type**—Indicates the type of authentication. Value: **certificate**.
+    -   **-Type**-Indicates the type of authentication. Value: **certificate**.
 
-    -   **-Action**—Specify whether you want to perform the command for the first time, or regenerate the credentials. Possible values: **regenerate** or **configure**.
+    -   **-Action**-Specify whether you want to perform the command for the first time, or regenerate the credentials. Possible values: **regenerate** or **configure**.
 
-    -   -**OutputFilePath**— Location of the output file used in Set-DPMServer on the protected computer.
+    -   -**OutputFilePath**- Location of the output file used in Set-DPMServer on the protected computer.
 
-    -   **-Thumbprint**—Copy from the Notepad file.
+    -   **-Thumbprint**-Copy from the Notepad file.
 
-    -   **-AuthCAThumbprint**—Thumbprint of the CA in the trust chain of the certificate. Optional. If not specified, Root will be used.
+    -   **-AuthCAThumbprint**-Thumbprint of the CA in the trust chain of the certificate. Optional. If not specified, Root will be used.
 
 6.  This generates a metadata file (.bin) that is required at the time of each agent install in untrusted domain. Make sure that the C:\Temp folder exists before  you run the command. Note that if the file is lost or deleted you can recreate it by running the script with the **-action regenerate** option.
 
-7.  Retrieve the .bin file and copy it to the C:\Program Files\Microsoft Data Protection Manager\DPM\bin folder on the computer you want to protect. You don't have to do this, but if you don't you'll need to specify the full path of the file for the -DPMcredential parameter when you …
+7.  Retrieve the .bin file and copy it to the C:\Program Files\Microsoft Data Protection Manager\DPM\bin folder on the computer you want to protect. You don't have to do this, but if you don't you'll need to specify the full path of the file for the -DPMcredential parameter when you 
 
 8.  Repeat these steps on every DPM server that will protect a computer in a workgroup or in an untrusted domain.
 
@@ -265,9 +265,9 @@ You attach the computer to the DPM server using the Attach-ProductionServerWithC
 Attach-ProductionServerWithCertificate.ps1 [-DPMServerName <String>] [-PSCredential <String>] [<CommonParameters>]
 ```
 
--   -DPMServerName—Name of the DPM server
+-   -DPMServerName-Name of the DPM server
 
--   PSCredential—Name of the .bin file. If you placed it in the Windows\System32 folder you can specify the file name only. Be careful to specify the .bin file created o nthe protected server. If you specify the .bin file created on the DPM server you'll remove all the protected computers that are configured for certificate-based authentication.
+-   PSCredential-Name of the .bin file. If you placed it in the Windows\System32 folder you can specify the file name only. Be careful to specify the .bin file created o nthe protected server. If you specify the .bin file created on the DPM server you'll remove all the protected computers that are configured for certificate-based authentication.
 
 After the attach process completes the protected computer should appear in the DPM console.
 

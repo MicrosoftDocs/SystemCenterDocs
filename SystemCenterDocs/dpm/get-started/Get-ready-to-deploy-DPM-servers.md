@@ -17,11 +17,11 @@ ms.assetid:  517ce276-b811-4a06-ade3-ff71303ccf5b
 
 There are a few planning steps to consider before you begin to deploy your DPM servers:
 
--   [Plan for DPM server deployment](#BKMK_Server)—Figure out how many DPM servers you'll need and where to place them.
+-   [Plan for DPM server deployment](#BKMK_Server)-Figure out how many DPM servers you'll need and where to place them.
 
--   [Plan firewall settings](#BKMK_Firewall)—Get information about firewall, port and protocol settings on the DPM server, protected machines, and a remote SQL Server if you're setting one up.
+-   [Plan firewall settings](#BKMK_Firewall)-Get information about firewall, port and protocol settings on the DPM server, protected machines, and a remote SQL Server if you're setting one up.
 
--   [Grant user permissions](#BKMK_Users)—Specify who can interact with DPM.
+-   [Grant user permissions](#BKMK_Users)-Specify who can interact with DPM.
 
 ## <a name="BKMK_Server"></a>Plan for DPM server deployment
 Firstly determine how many servers you'll need:
