@@ -22,7 +22,7 @@ To do this, you must first install the provider software (provided by the vendor
 ## Prerequisites
 If you want to add a virtual switch extension or network manager to your configuration in VMM, you must first perform the following tasks:
 
-1.  Obtain provider software from the manufacturer of the virtual switch extension or network manager, install the provider on the VMM management server, and then restart the System Center Virtual Machine Manager service. If you have installed a high-availability VMM management server on a cluster, be sure to install the provider on all nodes of the cluster. For more information about installing the provider, refer to the manufacturer�s documentation.
+1.  Obtain provider software from the manufacturer of the virtual switch extension or network manager, install the provider on the VMM management server, and then restart the System Center Virtual Machine Manager service. If you have installed a high-availability VMM management server on a cluster, be sure to install the provider on all nodes of the cluster. For more information about installing the provider, refer to the manufacturer"s documentation.
 
 2.  For your virtual switch extension or network manager, make sure that you know the manufacturer and model, the name of an account that has configuration permissions, the connection string, and the host groups to include. If certificates are used for the provider software, make sure you know how to view the thumbprint information for those certificates.
 
@@ -53,7 +53,7 @@ If you want to add a virtual switch extension or network manager to your configu
     For example, you might enter the connection string **mynetworkmanager1.contoso.com:443**.
 
     > [!IMPORTANT]
-    > The syntax of the connection string is defined by the manufacturer of the virtual switch extension or network manager. For more information about the required syntax, refer to the manufacturer�s documentation.
+    > The syntax of the connection string is defined by the manufacturer of the virtual switch extension or network manager. For more information about the required syntax, refer to the manufacturer"s documentation.
 
 10. If the **Certificates** page appears and certificates are listed, verify that the thumbprints of those certificates match the thumbprints of the certificates that are installed on the virtual switch extension or network manager. Then select the check box to confirm that the certificates can be imported to the trusted certificate store. Click **Next**.
 

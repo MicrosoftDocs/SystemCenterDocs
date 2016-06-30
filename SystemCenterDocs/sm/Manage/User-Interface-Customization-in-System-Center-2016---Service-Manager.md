@@ -31,9 +31,9 @@ The **Failed Service Requests** view in Service Manager is in a sealed managemen
 
 4.  In the **Select management pack** dialog box, accept the default management pack, **Service Manager Service Request Configuration Library**, and then click **OK**.
 
-5.  Right-click **Failed Service Requests � Copy**, and then click **Edit View**.
+5.  Right-click **Failed Service Requests - Copy**, and then click **Edit View**.
 
-6.  In the Edit Failed Service Requests � Copy Wizard, in **Name**, type a new name for this view. For example, type **New Failed Service Requests**, and then click **OK**.
+6.  In the Edit Failed Service Requests - Copy Wizard, in **Name**, type a new name for this view. For example, type **New Failed Service Requests**, and then click **OK**.
 
 7.  Right-click **Failed Service Requests**, and then click **Hide View**.
 
@@ -83,6 +83,3 @@ Templates in a sealed management pack in Service Manager cannot be changed. In t
 8.  In the **Create Template** dialog box, in the **Name** field, type a new name for this template, and then click **OK**.
 
 9. Finish the steps in the Service Request Template Wizard to customize this template for your needs, and when you are finished, click **OK**.
-
-
-

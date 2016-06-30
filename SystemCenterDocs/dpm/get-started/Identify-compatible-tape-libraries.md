@@ -18,7 +18,7 @@ ms.assetid:  4ed6e64f-21d4-4c93-9979-3f1a48317cbe
 Use the TechNet wiki to find the latest list of [compatible tape libraries for DPM](http://social.technet.microsoft.com/wiki/contents/articles/17105.compatible-tape-libraries-for-system-center-2012-dpm.aspx).
 
 ## Virtual tape library support
-Virtual tape libraries configured with a virtual fibre channel adapter are supported if you’re running Data Protection Manager 2012 R2 UR3 or later with certified hardware listed in the wiki. To check if your tape library is supported by the virtual fibre channel adapter, ask your tape hardware vendor to verify tape library compatibility.
+Virtual tape libraries configured with a virtual fibre channel adapter are supported if you're running Data Protection Manager 2012 R2 UR3 or later with certified hardware listed in the wiki. To check if your tape library is supported by the virtual fibre channel adapter, ask your tape hardware vendor to verify tape library compatibility.
 
 ## Verify tape library compatibility
 If the tape is listed in the [Windows Server Catalog](http://www.windowsservercatalog.com/) in the Hardware, Storage section, and is shown as compatible with Windows 2008 64-bit, or Windows 2008 R2 64-bit - it will probably work with DPM. Note that any driver incompatibilities with Windows 2012 would need to be addressed by the vendor.
@@ -45,21 +45,21 @@ Before you run the tool, do the following:
 
 4.  The tool runs the following tests:
 
-    -   **Test 1: Basic configuration**—Scans the system for attached devices, and identifies standalone tape drives and tape libraries. The tool provides a summary at the end of the test. For each device you’ll see a Device Name, Serial Number, Vendor Name, Product Name, Firmware Revision, and SCSI properties. You should verify that the summary information is correct. If it isn’t:
+    -   **Test 1: Basic configuration**—Scans the system for attached devices, and identifies standalone tape drives and tape libraries. The tool provides a summary at the end of the test. For each device you'll see a Device Name, Serial Number, Vendor Name, Product Name, Firmware Revision, and SCSI properties. You should verify that the summary information is correct. If it isn't:
 
         -   Check all devices are listed in Device Manager.
 
         -   Ensure that device drivers are up-to-date.
 
-        -   .If the drive mappings are incorrect, use the DPMDriveMapping.exe tool in the <DPM installation folder>/bin folder to correct the mappings. If you don’t have DPM installed on the computer, copy the DPMLA.xml that DPMDriveMapping.exe creates to the folder to which you extracted the Tape Library Certification tool.
+        -   .If the drive mappings are incorrect, use the DPMDriveMapping.exe tool in the <DPM installation folder>/bin folder to correct the mappings. If you don't have DPM installed on the computer, copy the DPMLA.xml that DPMDriveMapping.exe creates to the folder to which you extracted the Tape Library Certification tool.
 
     -   **Test 2: Mount/dismount**—This test selects a tape from the first available slot and performs a mount///dismount of the tape to and from a drive.
 
-    -   **Test 3: Drive cleaning**—This test performs a cleaning test using the cleaning tape. If you are using Firestreamer to a VTL where you can’t remove or change tapes, use the /ST flag syntax to skip this test.
+    -   **Test 3: Drive cleaning**—This test performs a cleaning test using the cleaning tape. If you are using Firestreamer to a VTL where you can't remove or change tapes, use the /ST flag syntax to skip this test.
 
-    -   **Test 4: I/E media**—This test selects the first available tape and moves it to the I/E port and back. If your library/VTL doesn’t have I/E ports, the tool will automatically skip the test.
+    -   **Test 4: I/E media**—This test selects the first available tape and moves it to the I/E port and back. If your library/VTL doesn't have I/E ports, the tool will automatically skip the test.
 
-    -   **Test 5: I/O**—This test selects the first writable tape, writes a few buffers to it, and then attempts to read what’s been written. This test only checks read/write capabilities. Any specific errors in the drive should be inspected using the advanced mode.
+    -   **Test 5: I/O**—This test selects the first writable tape, writes a few buffers to it, and then attempts to read what's been written. This test only checks read/write capabilities. Any specific errors in the drive should be inspected using the advanced mode.
 
 5.  After the tool completes the test, log information will be provided in the LibraryTestTool-*Curr.errlog files which are located in the folder from which you ran the tool. If the tests complete successful you can assume your tape library should work with DPM.
 
@@ -67,7 +67,7 @@ Before you run the tool, do the following:
 
 -   Prepare two Hyper-V hosts running DPM.
 
--   Enable live migration on both the servers. A clustered deployment isn’t required.
+-   Enable live migration on both the servers. A clustered deployment isn't required.
     3
 
 -   Run the compatibility tool on the first host server, as described in the section above, and verify that tests complete successfully.

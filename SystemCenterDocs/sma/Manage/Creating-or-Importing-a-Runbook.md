@@ -77,8 +77,8 @@ $port = 9090
 $runbookName = "Test-Runbook"
 $scriptPath = "c:\runbooks\Test-Runbook.ps1"
 
-Import-SmaRunbook �WebServiceEndpoint $webServer �Port $port �Path $scriptPath 
-Publish-SMARunbook �WebServiceEndpoint $webServer �Port $port �Name $runbookName
+Import-SmaRunbook "WebServiceEndpoint $webServer "Port $port "Path $scriptPath 
+Publish-SMARunbook "WebServiceEndpoint $webServer "Port $port "Name $runbookName
 
 ```
 

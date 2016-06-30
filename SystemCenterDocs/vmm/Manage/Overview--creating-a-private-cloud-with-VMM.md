@@ -15,19 +15,19 @@ ms.assetid:  fc4b0684-a9da-4840-b962-77eb6e1398f1
 
 >Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
 
-A private cloud is a cloud that is provisioned and managed on-premises by an organization. The private cloud is deployed by using an organization�s own hardware to leverage the advantages of the private cloud model. By using Virtual Machine Manager (VMM), an organization can manage the private cloud definition and can manage access to the private cloud and the underlying physical resources.
+A private cloud is a cloud that is provisioned and managed on-premises by an organization. The private cloud is deployed by using an organization"s own hardware to leverage the advantages of the private cloud model. By using Virtual Machine Manager (VMM), an organization can manage the private cloud definition and can manage access to the private cloud and the underlying physical resources.
 
 In VMM, a private cloud provides the following benefits:
 
--   **Self service**�Administrators can delegate management and usage of the private cloud while they retain the opaque usage model. Self-service users do not have to ask the private cloud provider for administrative changes except to request increase capacity and quotas as their requirements change.
+-   **Self service**"Administrators can delegate management and usage of the private cloud while they retain the opaque usage model. Self-service users do not have to ask the private cloud provider for administrative changes except to request increase capacity and quotas as their requirements change.
 
--   **Resource pooling**�Through the private cloud, administrators can collect and present an aggregate set of resources, such as storage and networking resources. Resource usage is limited by the capacity of the private cloud and by user role quotas.
+-   **Resource pooling**"Through the private cloud, administrators can collect and present an aggregate set of resources, such as storage and networking resources. Resource usage is limited by the capacity of the private cloud and by user role quotas.
 
--   **Opacity**�Self-service users have no knowledge of the underlying physical resources.
+-   **Opacity**"Self-service users have no knowledge of the underlying physical resources.
 
--   **Elasticity**�Administrators can add resources to a private cloud to increase the capacity.
+-   **Elasticity**"Administrators can add resources to a private cloud to increase the capacity.
 
--   **Optimization**�Usage of the underlying resources is continually optimized without affecting the overall private cloud user experience.
+-   **Optimization**"Usage of the underlying resources is continually optimized without affecting the overall private cloud user experience.
 
 You can create a private cloud from either of the following sources:
 

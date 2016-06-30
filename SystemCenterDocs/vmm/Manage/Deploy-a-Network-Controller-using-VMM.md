@@ -18,7 +18,7 @@ ms.service:  virtual-network
 
 ## Introduction
 
-This topic helps you evaluate the Software Defined Networking (SDN) features available with Windows Server 2016 Technical Preview 5. In particular, it focuses on using Virtual Machine Manager (VMM) 2016 Technical Preview 5 to deploy a highly available three-node [network controller](https://technet.microsoft.com/library/dn859239.aspx?f=255&MSPPError=-2147217396); a new SDN capability in [!INCLUDE[winthreshold_server_2_mdincludes/winthreshold_server_2_md.md)]. The network controller is a scalable and highly available server role that enables you to automate network infrastructure configuration instead of performing manual network device configuration.
+This topic helps you evaluate the Software Defined Networking (SDN) features available with Windows Server 2016 Technical Preview 5. In particular, it focuses on using Virtual Machine Manager (VMM) 2016 Technical Preview 5 to deploy a highly available three-node [network controller](https://technet.microsoft.com/library/dn859239.aspx?f=255&MSPPError=-2147217396); a new SDN capability in Windows Server Technical Preview. The network controller is a scalable and highly available server role that enables you to automate network infrastructure configuration instead of performing manual network device configuration.
 
 ## Prerequisites
 
@@ -41,7 +41,7 @@ Before proceeding to deploy the network controller, make sure that you perform t
 > [!IMPORTANT]
 > Before you begin deployment, you must plan and configure your hosts and physical network infrastructure.
 >
->You must have a dedicated Host group with [!INCLUDE[winthreshold_server_2_mdincludes/winthreshold_server_2_md.md)] 5 + ZDP installed that will be used for Network Controller deployment by VMM. Ensure that none of the infrastructure virtual machines (VMM Server, SQL, AD\DNS etc.) are deployed or migrated to any of the hosts in this Host group.
+>You must have a dedicated Host group with Windows Server Technical Preview 5 + ZDP installed that will be used for Network Controller deployment by VMM. Ensure that none of the infrastructure virtual machines (VMM Server, SQL, AD\DNS etc.) are deployed or migrated to any of the hosts in this Host group.
 >
 >For more information, see [Plan a Software Defined Network Infrastructure](https://technet.microsoft.com/library/mt605207.aspx).
 
@@ -65,7 +65,7 @@ The Management logical network models the Management network connectivity for th
 
 4.  On the **Settings** page, be sure to select **One Connected Network**, since all Management networks need to have routing and connectivity between all hosts in that network. Check the **Create a VM Network with the same name** to automatically create a VM Network for your Management network. Click **Next**.
 
-5.  In the **Network Site** panel, click **Add** to add a new network site. Select the host group for the hosts that will be managed by the network controller. Insert your management network IP subnet information. This network should already exist and be configured in your physical switch. Click **Next** when you�re ready to proceed.
+5.  In the **Network Site** panel, click **Add** to add a new network site. Select the host group for the hosts that will be managed by the network controller. Insert your management network IP subnet information. This network should already exist and be configured in your physical switch. Click **Next** when you"re ready to proceed.
 
 6.  Review the **Summary** information and click **Finish** to complete.
 
@@ -186,9 +186,9 @@ Now you can prepare to deploy the network controller service template.
 
 The service template requires one virtual hard disk that must be prepared and imported into the VMM library prior to importing the service template.
 
-With [!INCLUDE[winthreshold_server_2_mdincludes/winthreshold_server_2_md.md)] 5, VMM service templates for the network controller support multi-node deployment on both Generation 1 and Generation 2 virtual machines.This virtual hard disk must contain an operating system running [!INCLUDE[winthreshold_server_2_mdincludes/winthreshold_server_2_md.md)] 5 with the Zero Day Package and can be in either VHD or VHDX format.
+With Windows Server Technical Preview 5, VMM service templates for the network controller support multi-node deployment on both Generation 1 and Generation 2 virtual machines.This virtual hard disk must contain an operating system running Windows Server Technical Preview 5 with the Zero Day Package and can be in either VHD or VHDX format.
 
-You can download [!INCLUDE[winthreshold_server_2_mdincludes/winthreshold_server_2_md.md)] 5 + Zero Day Package in either VHD or VHDX format from the Microsoft Download Center. These are English language files. If you want to deploy a non-English environment, you can download the Language Pack of your choice.
+You can download Windows Server Technical Preview 5 + Zero Day Package in either VHD or VHDX format from the Microsoft Download Center. These are English language files. If you want to deploy a non-English environment, you can download the Language Pack of your choice.
 * [**VHD** download](http://download.microsoft.com/download/4/4/F/44F93CCF-1AAE-42E5-BDCB-924991A005DA/14300.1000.amd64fre.rs1_release_svc.160324-1723_server_serverdatacenter_en-us.vhd)
 
 * [**VHDX** download](http://download.microsoft.com/download/4/4/F/44F93CCF-1AAE-42E5-BDCB-924991A005DA/14300.1000.amd64fre.rs1_release_svc.160324-1723_server_serverdatacenter_en-us.vhdx)
@@ -227,7 +227,7 @@ The previous link also contains three custom resource folders: NCSetup.cr, Serve
 
 Use the following procedure to deploy a network controller service instance:
 
-1. Select the network controller service template and click **Configure Deployment** to begin. You will have to type a name and select a destination for the service instance. The destination must map to a Host Group that contains [!INCLUDE[winthreshold_server_2_mdincludes/winthreshold_server_2_md.md)] 5 hosts.
+1. Select the network controller service template and click **Configure Deployment** to begin. You will have to type a name and select a destination for the service instance. The destination must map to a Host Group that contains Windows Server Technical Preview 5 hosts.
 
 2.  On the left side of the Configure Deployment window, there are a number of settings that you must configure. The table below summarizes each field's values.
 
@@ -260,8 +260,8 @@ If the network controller deployment fails, ensure you delete the failed instanc
 1. Open the VMM console.
 2. Select **VMs and Services**.
 3. Click **All Hosts** and select the **Services** option as shown in the following screenshot.
-4. Delete the failed Network Controller Service instance.
-![VMM Failed InstanceImage/VMM-Failed-Instance.png)
+4. Delete the failed Network Controller Service instance.  
+  ![VMM Failed Instance](../../media/VMM-Failed-Instance.png)
 
 
 ### Add and configure network controller service to VMM
@@ -290,17 +290,17 @@ After the network controller service is successfully deployed, the next step is 
     The ``servicename`` is the name you used when you configured and deployed the service. See step 1 under [Configure and deploy the service](#CandD).   
 8.  On the **Review Certificates** page, a connection is made to the network controller virtual machine to retrieve the certificate. Verify that the certificate shown is the one you expect. Ensure you select the **These certificates have been reviewed and can be imported to the trusted certificate storebox** check box. Click **Next**.
 
-9.  On the next screen, click **Scan Provider** to connect to your service and list the properties and their status. This is also a good test of whether or not the service was created correctly, and that you�re using the right connect string to connect to it. Examine the results, and when it completes successfully click **Next**.
+9.  On the next screen, click **Scan Provider** to connect to your service and list the properties and their status. This is also a good test of whether or not the service was created correctly, and that you"re using the right connect string to connect to it. Examine the results, and when it completes successfully click **Next**.
 
 10.  Configure the Host Group in VMM that your network controller will manage. Click **Next**.
 
 11.  Click **Finish** to complete the **Add Network Service Wizard**. When the service has been added to VMM, you should see it appear in the Network Services list in the VMM Console, and it should look similar to the following:
 
-![VMM Network ServicesImage/VMM-Network-Services.png)
+![VMM Network Services](../../media/VMM-Network-Services.png)
 
-If you click the properties of the network controller service, you will find the **Logical Network Affinity** section. You don�t need to specify any selection on this page. This is an obsolete page that will be removed in upcoming releases.
+If you click the properties of the network controller service, you will find the **Logical Network Affinity** section. You don"t need to specify any selection on this page. This is an obsolete page that will be removed in upcoming releases.
 
-![VMM NC Properties 2Image/VMM-NC-Properties-2.png)
+![VMM NC Properties 2](../../media/VMM-NC-Properties-2.png)
 
 ## Deploy teamed NICs using Switched Embedded Teaming (SET)
 
@@ -341,7 +341,7 @@ After you create the teamed logical switch, use the following steps on all the h
 4.  Go to the **Network Adaptors** section and change each vNIC to **Not Connected**. Take note of the VM Networks the vNICs are connected to. Later you need to restore this setting manually.
     * If this virtual machine is a SDNAPI Primary Service virtual machine (meaning the REST IP address was assigned to this virtual machine before shutdown) ensure you wait until the REST IP is assigned to one of the other network controller virtual machines before you proceed.
 
-    ![VMM NIC PropertiesImage/VMM-NIC-Properties.png)
+      ![VMM NIC Properties](../../media/VMM-NIC-Properties.png)
 
 5.  Remove this host from the non-teamed Management logical switch.
 6.  Deploy the newly created teamed SDN logical switch on this host specifying all the member physical NICs you intend to team together.
@@ -452,5 +452,4 @@ To create a virtual machine from an existing virtual hard disk, follow the steps
 After you deploy at least two virtual machines connected to your VM Network, you can ping one tenant virtual machine from the other tenant virtual machine to validate that the network controller has been deployed as a network service successfully, and that it can manage the HNV Provider network so that tenant virtual machines can ping each other.
 
 Ensure that your tenant virtual machines allow IPv4 ICMP through their firewall. By default, Windows Server blocks this.
-> You can run the following PowerShell cmdlet to allow ICMP v4 in through the firewall: ``New-NetFirewallRule �DisplayName �Allow ICMPv4-In� �Protocol ICMPv4``
-
+> You can run the following PowerShell cmdlet to allow ICMP v4 in through the firewall: ``New-NetFirewallRule "DisplayName "Allow ICMPv4-In" "Protocol ICMPv4``

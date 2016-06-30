@@ -17,15 +17,15 @@ ms.assetid:  e5027e2b-85f5-466d-a261-044280b2d27a
 
 Virtual Machine Manager (VMM) provides live migration support between stand-alone Hyper-V hosts, or cluster hosts that have the Live Migration feature enabled. This topic describes the following migration procedures:
 
--   [Live migration of a virtual machine between two stand-alone hosts](#BKMK_Standalone)�This procedure describes how to migrate a virtual machine from one stand-alone Hyper-V host to another stand-alone Hyper-V host. Note that the virtual machine configuration files and virtual hard disk must be located on a Server Message Block (SMB) 3.0 file share.
+-   [Live migration of a virtual machine between two stand-alone hosts](#BKMK_Standalone)"This procedure describes how to migrate a virtual machine from one stand-alone Hyper-V host to another stand-alone Hyper-V host. Note that the virtual machine configuration files and virtual hard disk must be located on a Server Message Block (SMB) 3.0 file share.
 
--   [Live migration of a virtual machine between hosts in two clusters](#BKMK_Cluster)�This procedure describes how to migrate a virtual machine from a host that runs in one cluster to a host that runs in a different cluster. Note that when you run a live migration between two clusters, the virtual machine temporarily loses its high availability status. Therefore, a host failure during the migration causes the virtual machine to become unavailable. For live migration between clusters, you should use SMB 3.0 file shares as the storage location. Because the storage does not have to be migrated, the time in which high availability status cannot be guaranteed is very short.
+-   [Live migration of a virtual machine between hosts in two clusters](#BKMK_Cluster)"This procedure describes how to migrate a virtual machine from a host that runs in one cluster to a host that runs in a different cluster. Note that when you run a live migration between two clusters, the virtual machine temporarily loses its high availability status. Therefore, a host failure during the migration causes the virtual machine to become unavailable. For live migration between clusters, you should use SMB 3.0 file shares as the storage location. Because the storage does not have to be migrated, the time in which high availability status cannot be guaranteed is very short.
 
--   [Live migration of storage between two locations on a stand-alone host](#BKMK_Storage)�This procedure describes how to migrate storage only.
+-   [Live migration of storage between two locations on a stand-alone host](#BKMK_Storage)"This procedure describes how to migrate storage only.
 
--   [Concurrent live migrations](#BKMK_Concurrent)�This procedure provides an overview of how to run multiple concurrent migrations and describes how to verify that concurrent migrations run as expected.
+-   [Concurrent live migrations](#BKMK_Concurrent)"This procedure provides an overview of how to run multiple concurrent migrations and describes how to verify that concurrent migrations run as expected.
 
--   [Faster live migrations](#BKMK_Faster)�This procedure provides an overview of how to perform a faster live migration.
+-   [Faster live migrations](#BKMK_Faster)"This procedure provides an overview of how to perform a faster live migration.
 
 ## <a name="BKMK_Standalone"></a>Live migration of a virtual machine between two stand-alone hosts
 Use the following procedure to perform a live migration between two stand-alone hosts.

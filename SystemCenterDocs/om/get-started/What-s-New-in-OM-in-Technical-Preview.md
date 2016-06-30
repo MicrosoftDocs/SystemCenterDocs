@@ -20,7 +20,7 @@ The content in this section describes what's new and changed in System Center 20
 We have added a new capability to Operations Manager to assess the management packs.  Operations Manager includes a new feature called Updates and Recommendations, to help you proactively identify new technologies or components (i.e. workloads) deployed in your IT infrastructure that were not monitored by Operations Manager or are not monitored using the latest version of a management pack. For more information about Updates and Recommendations see  [Management Pack Assessment](../Manage/Management-Pack-Assessment.md).
 
 ## Alert Data Management 
-With the release of System Center 2016 Technical Preview 5 â€“ Operations Manager, you get better visibility of the alerts being generated in your management group which helps you reduce alerts that you don't consider actionable or relevant.   
+With the release of System Center 2016 Technical Preview 5 â€" Operations Manager, you get better visibility of the alerts being generated in your management group which helps you reduce alerts that you don't consider actionable or relevant.   
 
 This feature provides the following benefits:
  
@@ -40,7 +40,7 @@ This feature is available for members of the Operations Manager Administrators r
 In Technical Preview 5 release of System Center 2016 - Operations Manager, we include a tool which will allow you to create a custom management pack to monitor generic network devices (non-certified as of Operations Manager 2012 R2) and include resource utilization metrics, such as processor and memory. Or you can create extended monitoring workflows for an existing network device already monitored by your management group. This tool enables customers to generate a management pack for their network devices to get extended network monitoring. In addition to the current extended monitoring support for Network devices (Processor and Memory monitoring), this tool enables customers to add monitoring of additional device components such as fan, temperature sensor, voltage sensor and power supply.  
 
 ## Monitoring Nano Server and Workloads
-In the System Center 2016 Technical Preview 5 â€“ Operations Manager release, we have included the following changes to monitor Nano Server:
+In the System Center 2016 Technical Preview 5 â€" Operations Manager release, we have included the following changes to monitor Nano Server:
 
 -  Discover a Nano Server and push Nano-compatible agent to the server from from the console
 
@@ -51,7 +51,7 @@ In the System Center 2016 Technical Preview 5 â€“ Operations Manager release, we
 For specific instructions on how to configure System Center 2016 Technical Preview - Operations Manager to monitor Nano Server, see [Monitoring Nano Server](../Manage/Monitoring-Nano-Server.md).
 
 ## Console User Interface Performance Improvements
-With the release of System Center 2016 Technical Preview 5 â€“ Operations Manager, we have made performance improvements to alert views in the Operations console to increase responsiveness.
+With the release of System Center 2016 Technical Preview 5 â€" Operations Manager, we have made performance improvements to alert views in the Operations console to increase responsiveness.
 
 ## Scalability Improvement with Unix/Linux Agents Monitoring
 Operations Manager includes improved scalability in how many Unix/Linux agents that can be monitored per Management server.  You can now monitor up to 2X the number of Unix/Linux servers per Management server, against the previously supported scale. 

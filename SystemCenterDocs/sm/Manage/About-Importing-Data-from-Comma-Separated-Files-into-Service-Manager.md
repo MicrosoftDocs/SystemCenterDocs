@@ -26,7 +26,7 @@ Configuration items contained in a comma-separated value (.csv) file can be impo
 -   Circumvent data entry through forms when many class instances must be created at the same time.
 
 > [!NOTE]
-> Importing many complex items�for example, 5,000 computer projections�could take an hour or more. During this time, Service Manager continues to function.
+> Importing many complex items-for example, 5,000 computer projections-could take an hour or more. During this time, Service Manager continues to function.
 
 Two files are required to import a set of instances by using the Import from CSV File feature:
 
@@ -72,8 +72,8 @@ For the type of data being imported, you find that the **Microsoft.Windows.Compu
 
 ```
 <CSVImportFormat>
-   <Class Type=�Microsoft.Windows.Computer�>
-      �
+   <Class Type="Microsoft.Windows.Computer">
+      ...
    </Class>
 </CSVImportFormat>
 ```
@@ -99,6 +99,3 @@ By using these properties, you construct the following format file. The properti
 ```
 
 Save this file as **newcomputers.xml**.
-
-
-

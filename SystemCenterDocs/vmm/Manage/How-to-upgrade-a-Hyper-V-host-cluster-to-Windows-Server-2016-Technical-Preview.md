@@ -59,7 +59,7 @@ Use the following procedure to upgrade a VMM-managed  Windows Server 2012 R2 clu
 
         2.  If you click the button, in the **Network Adapter IP Configuration** box, you can specify the following:
 
-            -   **MAC address(host clusters only�management NIC)**: If this is the management NIC for a host cluster, and you want to configure it as a virtual network adapter, type a MAC address.
+            -   **MAC address(host clusters only"management NIC)**: If this is the management NIC for a host cluster, and you want to configure it as a virtual network adapter, type a MAC address.
 
                 > [!NOTE]
                 > This is not the MAC address of the BMC. It is the MAC address of the management NIC, which VMM uses to communicate with the VMM management server.

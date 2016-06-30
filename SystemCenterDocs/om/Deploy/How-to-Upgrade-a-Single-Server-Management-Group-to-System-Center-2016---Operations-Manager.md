@@ -44,7 +44,7 @@ When you upgrade a single-server management group to System Center 2016 Technica
     > [!IMPORTANT]
     > If you receive a message about using the wrong version of SQL Server, or experience      a problem with the SQL Server Windows Management Instrumentation (WMI) provider,        you can resolve this. Open a Command Prompt window by using the **Run as administrator** option. Then run the following command, replace the *\<path>* placeholder with the location of Microsoft SQL Server:
         >
-        > **mofcomp.exe “\<path>\Microsoft SQL Server\100\Shared\sqlmgmproviderxpsp2up.mof”**
+        > **mofcomp.exe "\<path>\Microsoft SQL Server\100\Shared\sqlmgmproviderxpsp2up.mof"**
 
 8.  When the **Ready to Upgrade** page appears, review the upgrade summary, and then click **Upgrade**.
 

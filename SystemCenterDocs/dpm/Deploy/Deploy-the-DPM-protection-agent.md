@@ -70,7 +70,7 @@ Configure an incoming exception for sqservr.exe for the DPM instance of SQL Serv
 
     -   In the **Domain** box, accept or type the domain name of the user account that you are using to install the protection agent on the target computer. This account may belong to the domain that the DPM server is located in or to a domain that has a two-way trust relationship with the domain that the DPM server is located in.
 
-    -   If you’re installing a protection agent on a computer across a trusted domain, enter your current domain user credentials. You can be a member of any domain that has a two-way trust relationship with the domain that the DPM server and you must be member of the local Administrators group on all selected computers on which you want to install an agent.
+    -   If you're installing a protection agent on a computer across a trusted domain, enter your current domain user credentials. You can be a member of any domain that has a two-way trust relationship with the domain that the DPM server and you must be member of the local Administrators group on all selected computers on which you want to install an agent.
 
     -   If you select a node in a cluster, DPM detects all additional nodes in the cluster and displays the **Select Cluster Nodes** page.
 
@@ -78,11 +78,11 @@ Configure an incoming exception for sqservr.exe for the DPM instance of SQL Serv
 
 6.  On the **Choose Restart Method** page, select the method to use to restart the selected computers after the protection agent is installed. The computer must be restarted before you can start protecting data. A restart is necessary to load the volume filter that DPM uses to track and transfer block-level changes between the DPM server and the protected computers.
 
-    -   If you select to restart the computers later the protection agent installation status isn’t refreshed automatically on the **Agents** tab in the **Management** task area after the computer restart, and you’ll need to click **Refresh Information**.
+    -   If you select to restart the computers later the protection agent installation status isn't refreshed automatically on the **Agents** tab in the **Management** task area after the computer restart, and you'll need to click **Refresh Information**.
 
-    -   Note that you don’t need to restart the computer if you are installing a protection agent on another DPM  server.
+    -   Note that you don't need to restart the computer if you are installing a protection agent on another DPM  server.
 
-    -   If any of the computers that you selected are nodes in a cluster, an additional **Choose Restart Method** page appears that you can use to select the method to restart the clustered computers. You’ll need to install a protection agent on all nodes in a cluster to successfully protect the clustered data. The computers must be restarted before you can start protecting data. Because of the time required to start services, it might take a few minutes after a restart before DPM  can contact the agent on the cluster.
+    -   If any of the computers that you selected are nodes in a cluster, an additional **Choose Restart Method** page appears that you can use to select the method to restart the clustered computers. You'll need to install a protection agent on all nodes in a cluster to successfully protect the clustered data. The computers must be restarted before you can start protecting data. Because of the time required to start services, it might take a few minutes after a restart before DPM  can contact the agent on the cluster.
 
     -   DPM will not automatically restart a computer that belongs to a Microsoft Cluster Server (MSCS) cluster. You must manually restart computers in an MSCS cluster.
 
@@ -125,18 +125,18 @@ Configure an incoming exception for sqservr.exe for the DPM instance of SQL Serv
 
     -   To accept the EULA manually in a silent installation use **DpmAgentInstaller_x64.exe /q <DPMServerName> /IAcceptEULA**
 
-    -   If you specify a DPM server name in the command line, it installs the protection agent, and automatically configures the security accounts, permissions, and firewall exceptions necessary for the agent to communicate with the specified DPM server. If you didn’t specify a server name, open an elevated Command Prompt on the targeted computer and do the following:
+    -   If you specify a DPM server name in the command line, it installs the protection agent, and automatically configures the security accounts, permissions, and firewall exceptions necessary for the agent to communicate with the specified DPM server. If you didn't specify a server name, open an elevated Command Prompt on the targeted computer and do the following:
 
         1.  To change the directory type: **cd /d *<system drive>*:\Program Files\Microsoft Data Protection Manager\DPM\bin**
 
-        2.  Type: **SetDpmServer.exe –dpmServerName *<DPMServerName>***. This configure security accounts, permissions, and firewall exceptions for the agent to communicate with the server.
+        2.  Type: **SetDpmServer.exe -dpmServerName *<DPMServerName>***. This configure security accounts, permissions, and firewall exceptions for the agent to communicate with the server.
 
 4.  If you added the computer to the DPM server before you installed the agent, the  server begins to create backups for the protected computer. If you installed the agent before you added the computer to the DPM server, you must attach the computer before the DPM server begins to create backups.
 
 You can also install [DPM on an RODC](https://technet.microsoft.com/en-US/library/hh758186.aspx), [using a server image](https://technet.microsoft.com/en-US/library/hh758186.aspx), or  [with Configuration Manager](https://technet.microsoft.com/en-US/library/hh758186.aspx).
 
 ## <a name="BKMK_Attach"></a>Attach the agent
-After you’ve installed the DPM agent manually you'll need to attach the agent to the DPM server.
+After you've installed the DPM agent manually you'll need to attach the agent to the DPM server.
 
 1.  In DPM Administrator Console, on the navigation bar, click **Management** > **Agents**. In the **Actions**pane, click **Install**.
 

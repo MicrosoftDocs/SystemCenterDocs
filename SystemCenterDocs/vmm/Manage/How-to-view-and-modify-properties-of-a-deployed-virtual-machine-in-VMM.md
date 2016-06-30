@@ -27,7 +27,7 @@ The IP addresses displayed in virtual machine properties include all addresses o
 
 3.  Under **VMs**, right-click the name of the virtual machine, and then click **Properties**.
 
-4.  In the virtual machine�s properties dialog box, click on the various tabs to view the properties of the virtual machine.
+4.  In the virtual machine"s properties dialog box, click on the various tabs to view the properties of the virtual machine.
 
     For example:
 

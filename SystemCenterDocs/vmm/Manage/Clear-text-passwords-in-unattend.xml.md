@@ -19,7 +19,7 @@ There is a possibility that if the installation of a VMM host fails to complete 
 
 -   Manually delete the file named unattend.xml.
 
--   During installation, use an account with only domain join privileges, not a full administrator�s account.
+-   During installation, use an account with only domain join privileges, not a full administrator"s account.
 
 
 

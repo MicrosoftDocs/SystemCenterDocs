@@ -12,7 +12,7 @@ ms.assetid:  4d44a1f8-4046-4a97-b10b-30f67fa438ea
 ---
 
 # Configuring logical networks, VM networks, and logical switches in VMM
-You can use Virtual Machine Manager (VMM) to manage your physical and virtualized network infrastructure. In VMM, the foundations of the network configuration are networksâ€”the underlying logical networks and the VM networksâ€”and switches. Switches can be configured as standard virtual switches, but this set of topics describes logical switches, which help you configure switch settings consistently across multiple hosts. To configure these network elements in VMM, use the following overviews and procedures, in the order shown.
+You can use Virtual Machine Manager (VMM) to manage your physical and virtualized network infrastructure. In VMM, the foundations of the network configuration are networksâ€"the underlying logical networks and the VM networksâ€"and switches. Switches can be configured as standard virtual switches, but this set of topics describes logical switches, which help you configure switch settings consistently across multiple hosts. To configure these network elements in VMM, use the following overviews and procedures, in the order shown.
 
 ## <a name="BKMK_planning"></a>Planning the configuration and configuring global settings
 Use the following overviews to plan your configuration:

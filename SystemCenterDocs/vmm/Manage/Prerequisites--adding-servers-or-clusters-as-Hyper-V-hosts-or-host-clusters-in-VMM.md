@@ -15,7 +15,7 @@ ms.assetid:  b52fed50-3a05-4261-9924-a858300e80de
 
 >Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
 
-Before you add existing servers or clusters as Hyper-V hosts in Virtual Machine Manager (VMM), consider the location of the existing servers or clusters, relative to the VMM management server�in the same or a trusted domain, in an untrusted domain, or in a disjointed namespace. (For existing servers in a perimeter network, see [How to add Hyper-V hosts in a perimeter network in VMM](How-to-add-Hyper-V-hosts-in-a-perimeter-network-in-VMM.md).) The prerequisites are as follows:
+Before you add existing servers or clusters as Hyper-V hosts in Virtual Machine Manager (VMM), consider the location of the existing servers or clusters, relative to the VMM management server"in the same or a trusted domain, in an untrusted domain, or in a disjointed namespace. (For existing servers in a perimeter network, see [How to add Hyper-V hosts in a perimeter network in VMM](How-to-add-Hyper-V-hosts-in-a-perimeter-network-in-VMM.md).) The prerequisites are as follows:
 
 -   [Prerequisites for the same domain or a trusted domain](Prerequisites--adding-servers-or-clusters-as-Hyper-V-hosts-or-host-clusters-in-VMM.md#BKMK_trusted)
 
@@ -63,13 +63,13 @@ For information about other methods for adding or provisioning hosts or host clu
     You can enter a user name (as *domain_name*\\*user_name*) and password, or specify a Run As account. If you use a Run As account, you can create it beforehand, or at the time that you add the servers to VMM. For example, you could create a Run As account called **Trusted Hyper-V Hosts**. For more information about Run As accounts, see [How to create a Run As account in VMM](How-to-create-a-Run-As-account-in-VMM.md).
 
 ## <a name="BKMK_untrusted"></a>Prerequisites for an untrusted domain
-When you add servers or clusters that are in an untrusted domain, when VMM installs the agent on the servers or clusters, VMM also generates a certificate. The certificate is used to help secure communications with the host. When VMM adds the host or cluster, the certificate is automatically imported into the VMM management server�s trusted certificate store.
+When you add servers or clusters that are in an untrusted domain, when VMM installs the agent on the servers or clusters, VMM also generates a certificate. The certificate is used to help secure communications with the host. When VMM adds the host or cluster, the certificate is automatically imported into the VMM management server"s trusted certificate store.
 
 Review the following prerequisites:
 
 -   The computers you want to add must be running an operating system that is supported for Hyper-V hosts, as described in the[Server Operating Systems](https://technet.microsoft.com/library/dn997307.aspx) requirements.  If a computer does not already have the Hyper-V role installed, make sure that the BIOS on the computer is configured to support Hyper-V. If the Hyper-V role is not already installed, VMM automatically installs the role when you add the server.
 
--   VMM does not support the configuration of Windows Remote Management (WinRM) Group Policy settings (Service or Client) on hosts that are in an untrusted Active Directory domain. If WinRM Group Policy settings are enabled, installation of the VMM agent�required on the hosts�might fail.
+-   VMM does not support the configuration of Windows Remote Management (WinRM) Group Policy settings (Service or Client) on hosts that are in an untrusted Active Directory domain. If WinRM Group Policy settings are enabled, installation of the VMM agent"required on the hosts"might fail.
 
     > [!NOTE]
     > The WinRM policy settings are located in the Computer Configuration\Administrative Templates\Windows Components\Windows Remote Management (WinRM) node of the Local Group Policy Editor or the Group Policy Management Console (GPMC).
@@ -79,7 +79,7 @@ Review the following prerequisites:
     For example, you could create the Run As account **Untrusted Hyper-V Hosts**. For more information about Run As accounts, see [How to create a Run As account in VMM](How-to-create-a-Run-As-account-in-VMM.md).
 
 ## <a name="BKMK_disjoint"></a>Prerequisites for a disjointed namespace
-Review these prerequisites if the server or cluster you want to add to VMM as a managed host or host cluster is in a disjointed namespace. A disjointed namespace occurs when the computer�s primary Domain Name System (DNS) suffix does not match the domain of which it is a member. For example, the namespace is disjointed when a computer that has the DNS name of HyperVHost03.contosocorp.com is in a domain that has the DNS name of contoso.com. For more information about disjointed namespaces, see [Naming conventions in Active Directory for computers, domains, sites, and OUs](http://support.microsoft.com/kb/909264).
+Review these prerequisites if the server or cluster you want to add to VMM as a managed host or host cluster is in a disjointed namespace. A disjointed namespace occurs when the computer"s primary Domain Name System (DNS) suffix does not match the domain of which it is a member. For example, the namespace is disjointed when a computer that has the DNS name of HyperVHost03.contosocorp.com is in a domain that has the DNS name of contoso.com. For more information about disjointed namespaces, see [Naming conventions in Active Directory for computers, domains, sites, and OUs](http://support.microsoft.com/kb/909264).
 
 Review the following prerequisites:
 
@@ -93,7 +93,7 @@ Review the following prerequisites:
 
     **setspn -A HOST/<FQDN> <NetBIOSName>**
 
-    For example, **setspn �A HOST/hypervhost03.contosocorp.com hypervhost03**.
+    For example, **setspn "A HOST/hypervhost03.contosocorp.com hypervhost03**.
 
     > [!TIP]
     > To view a list of registered SPNs for the host, at the command prompt, type **setspn -l <NetBIOSName>**, where *<NetBIOSName>* is the NetBIOS name of the host.

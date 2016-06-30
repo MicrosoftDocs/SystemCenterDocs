@@ -5,6 +5,9 @@ ms.prod: system-center-threshold
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
+author: cfreemanwa
+manager: cfreemanwa
+ms.technology: system-center-2016
 ms.topic: get-started-article
 ms.assetid: b8b4ec94-d6f4-4359-9a21-06178aa1de42
 ---
@@ -12,7 +15,7 @@ ms.assetid: b8b4ec94-d6f4-4359-9a21-06178aa1de42
 
 >Applies To: System Center Technical Preview
 
-Welcome to the System Center 2016 Technical Preview. We are releasing this version of System Center so you can try out new features that build on the improvements included in Windows Server® Technical Preview. This is the fourth release of System Center 2016 Technical Preview. In this documentation System Center is referred to as System Center 2016 Technical Preview unless there is a need to distinguish between this release and a previous release. Windows Server Technical Preview 5 is also referred to as Windows Server Technical Preview, unless there is a reason to specify a particular release of Technical Preview.
+Welcome to the System Center 2016 Technical Preview. We are releasing this version of System Center so you can try out new features that build on the improvements included in Windows Server - Technical Preview. This is the fourth release of System Center 2016 Technical Preview. In this documentation System Center is referred to as System Center 2016 Technical Preview unless there is a need to distinguish between this release and a previous release. Windows Server Technical Preview 5 is also referred to as Windows Server Technical Preview, unless there is a reason to specify a particular release of Technical Preview.
 
 **This information is preliminary and subject to change.**
 

@@ -62,7 +62,7 @@ Before you use the Setup Wizard, ensure the following conditions are met:
 
 8.  On the **Agent Action Account** page, leave it set to the default of **Local System**, or select **Domain or Local Computer Account**; type the **User Account**, **Password**, and **Domain or local computer**; and then click **Next**.
 
-9. On the **Microsoft Update** page, select **Use Microsoft Update when I check for updates (recommended)** or **I don’t want to use Microsoft Update**, and then click **Next**.
+9. On the **Microsoft Update** page, select **Use Microsoft Update when I check for updates (recommended)** or **I don't want to use Microsoft Update**, and then click **Next**.
 
 10. On the **Ready to Install** page, review the settings and then click **Install** to display the **Installing System Center Operations Manager Agent** page.
 

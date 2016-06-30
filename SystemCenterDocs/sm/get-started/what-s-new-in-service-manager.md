@@ -12,6 +12,9 @@ ms.assetid:  3eeb3265-88e0-47ed-b761-07f4e0634959
 ---
 
 # What's New in Service Manager
+
+>Applies To: System Center 2016 Technical Preview - Service Manager
+
 System Center 2016 Technical Preview - Service Manager is updated for System Center 2016 Technical Preview 5.
 
 For details about known issues that could affect you before you install System Center 2016 Technical Preview - Service Manager, read the [Release Notes for System Center Technical Preview](../../get-started/Release-Notes-for-System-Center-Technical-Preview-5.md).
@@ -314,7 +317,7 @@ The **My Activities** icon  is on the left side of the portal home page.
 ### Performance Enhancements
 **Optionally disable ECL logging for faster SCCM and Active Directory connector sync**
 
-The Active Directory and SCCM connectors in Service Manager can import large amounts of data into the Service Manager database. In doing so, they not only increase the size of the data table, which is where the data from the connectors are stored, but they also increase the size of the EntityChangeLog (ECL) table and history tables considerably. A large ECL table size can be a problem—in some cases, it can slow down the system significantly.
+The Active Directory and SCCM connectors in Service Manager can import large amounts of data into the Service Manager database. In doing so, they not only increase the size of the data table, which is where the data from the connectors are stored, but they also increase the size of the EntityChangeLog (ECL) table and history tables considerably. A large ECL table size can be a problem - in some cases, it can slow down the system significantly.
 
 The ECL table, and the history tables in this case, store details about when the data was brought into Service Manager and the properties that were added or updated for each data item.
 Disabling ELC logging, doesn’t affect importing data from connectors. Instead, most logging data doesn’t get written to the ECL and history tables, which can result is significant performance improvement.

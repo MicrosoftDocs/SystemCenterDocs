@@ -37,31 +37,31 @@ After the UNIX or Linux computer has been deleted from the list of monitored com
 
 1.  Log on as the root user, and uninstall the agent by typing
 
-    **rpm –e scx**
+    **rpm -e scx**
 
 2.  To verify that the package is uninstalled, type
 
-    **rpm –q scx**
+    **rpm -q scx**
 
 ### To uninstall the agent from RPM based Universal Linux servers (Oracle and Centos)
 
 1.  Log on as the root user, and uninstall the agent by typing
 
-    **rpm –e scx**
+    **rpm -e scx**
 
 2.  To verify that the package is uninstalled, type
 
-    **rpm –q scx**
+    **rpm -q scx**
 
 ### To uninstall the agent from DEB based Universal Linux servers (Debian and Ubuntu)
 
 1.  Log on as the root user, and uninstall the agent by typing
 
-    **dpkg –P scx**
+    **dpkg -P scx**
 
 2.  To verify that the package is uninstalled, type
 
-    **dpkg –l scx**
+    **dpkg -l scx**
 
 ### To uninstall the agent from Solaris computers
 
@@ -71,7 +71,7 @@ After the UNIX or Linux computer has been deleted from the list of monitored com
 
 2.  To verify that the package is uninstalled, type
 
-    **pkginfo –I MSFTscx**
+    **pkginfo -I MSFTscx**
 
 ### To uninstall the agent from HP-UX
 
@@ -87,11 +87,11 @@ After the UNIX or Linux computer has been deleted from the list of monitored com
 
 1.  Log on as the root user, and uninstall the agent by typing
 
-    **installp –u scx**
+    **installp -u scx**
 
 2.  To verify that the package is uninstalled, type
 
-    **lslpp –L scx.rte**
+    **lslpp -L scx.rte**
 
 ## See Also
 [Operations Manager Agent Installation Methods](Operations-Manager-Agent-Installation-Methods.md)

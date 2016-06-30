@@ -36,7 +36,7 @@ You can use VMM to configure the iSCSI Target Server through Windows PowerShell.
 
         |Command|Purpose|
         |-----------|-----------|
-        |`$array = Get-SCStorageArray -Name �<computername>�`|Review the storage array attributes.|
+        |`$array = Get-SCStorageArray -Name "<computername>"`|Review the storage array attributes.|
         |`$array.StoragePools`|View available storage pools.|
 
     -   **Add pools from iSCSI Target Server to VMM management:**
@@ -44,7 +44,7 @@ You can use VMM to configure the iSCSI Target Server through Windows PowerShell.
         |Command|Purpose|
         |-----------|-----------|
         |`$pool = Get-SCStoragePool -Name "MS iSCSITarget Concrete: D:"`|Get the specific storage pool to add.|
-        |`$class = New-SCStorageClassification -Name �gold�`|Create a storage classification, if none exists.|
+        |`$class = New-SCStorageClassification -Name "gold"`|Create a storage classification, if none exists.|
         |`Set-SCStorageArray -AddStoragePoolToManagement $pool -StorageArray $pool.StorageArray -StorageClassification $class`|Add the storage pool to VMM.|
         |`Set-SCStoragePool -StoragePool $pool -AddVMHostGroup (Get-SCVMHostGroup -Name "All Hosts")`|Allocate the storage pool to a virtualization server group.|
 

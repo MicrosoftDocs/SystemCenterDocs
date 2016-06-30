@@ -309,7 +309,7 @@ ms.assetid:  84b45ef1-bb8a-48f8-a2d7-5a93157ffc78
                   <para>TopContainerName</para>
                 </TD>
                 <TD>
-                  <para>Container for Distributed Key Management (DKM); for example, �CN=DKM,DC=contoso,DC=com�. </para>
+                  <para>Container for Distributed Key Management (DKM); for example, "CN=DKM,DC=contoso,DC=com". </para>
                   <para>For more information about DKM, see <link xlink:href="1238b5b8-98fc-4c2b-bdb5-253e4e1b3baa">Configuring Distributed Key Management in VMM</link>.</para>
                 </TD>
                 <TD>

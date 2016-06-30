@@ -16,14 +16,11 @@ Use this information to evaluate the client operating system requirements to sup
 
 ## Client Operating Systems
 
-|System Center client-side components|Windows® 7|Windows® 8|Windows® 8.1|Windows Server® 2008 R2 SP1|Windows Server® 2012|Windows Server® 2012 R2 Standard, Datacenter|Windows 10 Enterprise|Windows Server® Technical Preview Standard, Datacenter|
+|System Center client-side components|Windows&reg; 7|Windows&reg; 8|Windows&reg; 8.1|Windows Server&reg; 2008 R2 SP1|Windows Server&reg; 2012|Windows Server&reg; 2012 R2 Standard, Datacenter|Windows 10 Enterprise|Windows Server&reg; Technical Preview Standard, Datacenter|
 |-----------------------------------------|-------------------------------------------------------------------|-----------------------------------------------------------|-----------------------------------------------------------------|-----------------------------------------------------------------------|-----------------------------------------------------------|--------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------|
-|**DPM** Central Console|?|?|?|?|?|?|?|?|
-|**DPM** Remote Administrator|?|?|?|?|?|?|?|?|
-|**Operations Manager** Operations Console|?|?|?|?|?|?|?|?|
-|**Orchestrator** Runbook Designer||||||?|?|?|
-|**Service Manager** Console|||?|||?|?|?|
-|**VMM** Console||?|?|?|?|?|?|?|
-
-
-
+|**DPM** Central Console|&#8226;|&#8226;|&#8226;|&#8226;|&#8226;|&#8226;|&#8226;|&#8226;|
+|**DPM** Remote Administrator|&#8226;|&#8226;|&#8226;|&#8226;|&#8226;|&#8226;|&#8226;|&#8226;|
+|**Operations Manager** Operations Console|&#8226;|&#8226;|&#8226;|&#8226;|&#8226;|&#8226;|&#8226;|&#8226;|
+|**Orchestrator** Runbook Designer||||||&#8226;|&#8226;|&#8226;|
+|**Service Manager** Console|||&#8226;|||&#8226;|&#8226;|&#8226;|
+|**VMM** Console||&#8226;|&#8226;|&#8226;|&#8226;|&#8226;|&#8226;|&#8226;|

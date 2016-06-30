@@ -144,9 +144,9 @@ In a VM network for network virtualization, create at least one IP address pool.
 > 
 > `$ippool=Get-SCStaticIPAddressPool -Name <StaticIPAddressPool>`
 > 
-> `Get-SCIPAddress �StaticIPAddressPool $ippool | Format-Table �property Address,AssignedToType,State`
+> `Get-SCIPAddress "StaticIPAddressPool $ippool | Format-Table "property Address,AssignedToType,State`
 
-From time to time, you might need to release IP addresses that are in the pool but that are marked by VMM as �inactive.� Releasing them makes them available for reassignment. For more information, see [How to release inactive IP addresses for VM networks in VMM](How-to-release-inactive-IP-addresses-for-VM-networks-in-VMM.md).
+From time to time, you might need to release IP addresses that are in the pool but that are marked by VMM as "inactive." Releasing them makes them available for reassignment. For more information, see [How to release inactive IP addresses for VM networks in VMM](How-to-release-inactive-IP-addresses-for-VM-networks-in-VMM.md).
 
 After a virtual machine has been deployed in VMM, you can view the IP address or addresses assigned to that virtual machine. To do this, right-click the listing for the virtual machine, click **Properties**, click the **Hardware Configuration** tab, click the network adapter, and in the results pane, click the **Connection details** button.
 

@@ -37,7 +37,7 @@ You can create user roles in Virtual Machine Manager (VMM) to define the objects
 > [!CAUTION]
 > If you grant rights for a particular template to a user that does not have rights to the Run As account that the template is configured with, then the user can potentially extract the credentials for the Run As account from the template.
 
-You can also use the **Create User Role Wizard** to configure user roles with a set of permitted actions on a per-cloud basis in addition to the global settings. These settings apply only to the tenant administrator and the self-service user roles. With these settings, the user�s effective permitted actions for a given cloud are the combination of their global permitted actions and cloud permitted actions.
+You can also use the **Create User Role Wizard** to configure user roles with a set of permitted actions on a per-cloud basis in addition to the global settings. These settings apply only to the tenant administrator and the self-service user roles. With these settings, the user"s effective permitted actions for a given cloud are the combination of their global permitted actions and cloud permitted actions.
 
 ## See Also
 [Securing VMM resources](Securing-VMM-resources.md)

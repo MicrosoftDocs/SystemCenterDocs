@@ -66,11 +66,11 @@ This information lists both Microsoft and non-Microsoft operating systems and ve
 
 -   Windows 2008 Server R2 SP1
 
--   Windows Server® 2012
+-   Windows Server&reg; 2012
 
--   Windows Server® 2012 R2
+-   Windows Server&reg; 2012 R2
 
--   Microsoft® Hyper-V® Server 2012 R2
+-   Microsoft&reg; Hyper-V&reg; Server 2012 R2
 
 -   Windows Vista SP2
 
@@ -80,13 +80,13 @@ This information lists both Microsoft and non-Microsoft operating systems and ve
 
 -   Windows 7
 
--   Windows® 8
+-   Windows&reg; 8
 
--   Windows® 8.1
+-   Windows&reg; 8.1
 
 -   Windows 10
 
--   Windows Server® Technical Preview
+-   Windows Server&reg; Technical Preview
 
 ## Virtual Machine Manager Guest Agent
 
@@ -98,9 +98,9 @@ This information lists both Microsoft and non-Microsoft operating systems and ve
 
 -   Windows 2008 Server R2 SP1
 
--   Windows Server® 2012 R2
+-   Windows Server&reg; 2012 R2
 
--   Windows Server® Technical Preview
+-   Windows Server&reg; Technical Preview
 
 ## Virtual Machine Manager Linux Guest Agent
 
@@ -195,6 +195,3 @@ This information lists both Microsoft and non-Microsoft operating systems and ve
 -   Ubuntu Server 12.04 (x86/x64)
 
 -   Ubuntu Server 14.04 (x86/x64)
-
-
-

@@ -15,13 +15,13 @@ ms.assetid:  26697203-df1e-4232-b9be-7c9976a362b8
 
 >Applies To: System Center 2016 Technical Preview - Service Manager
 
-Microsoft� SQL Server� hosts the databases that System Center 2016 Technical Preview - Service Manager creates. In addition, System Center 2016 Technical Preview - Service Manager requires SQL Server Analysis Services (SSAS) to work with Microsoft Online Analytical Processing (OLAP) cubes. SQL Server Reporting Services (SSRS) is required to support System Center 2016 Technical Preview - Service Managerreporting.
+Microsoft SQL Server hosts the databases that System Center 2016 Technical Preview - Service Manager creates. In addition, System Center 2016 Technical Preview - Service Manager requires SQL Server Analysis Services (SSAS) to work with Microsoft Online Analytical Processing (OLAP) cubes. SQL Server Reporting Services (SSRS) is required to support System Center 2016 Technical Preview - Service Manager reporting.
 
 All SQL Server requirements are listed at [SQL Server](http://go.microsoft.com/fwlink/?LinkId=268329) and SQL Server editions are listed at [Operating System and Database Edition Support](http://go.microsoft.com/fwlink/?LinkId=268324).
 
 > [!NOTE]
 > System Center 2016 Technical Preview - Service Manager 2012 with no service pack is supported on SQL Server 2008 R2 without a service pack. System Center 2016 Technical Preview - Service Manager 2012 SP1 requires SQL Server 2008 R2 SP1 or later.
-> 
+>
 > System Center 2016 Technical Preview - Service Manager does not support setting the MultiSubnetFailover parameter. This parameter is not used in System Center 2016 Technical Preview - Service Manager connection strings.
 
 ## SQL Server 2012 Standard and Enterprise Editions
@@ -65,9 +65,10 @@ For more information comparing SQL Server editions, see [Microsoft SQL Server 20
 For information about the specific versions of SQL Server that are supported in System Center 2016 Technical Preview - Service Manager see [Software Requirements for Service Manager](Software-Requirements-for-Service-Manager.md).
 
 ## Allow Updates
+
 To either install or upgrade System Center 2016 Technical Preview - Service Manager, computers running SQL Server that host databases must be configured to allow updates. If updates are not allowed, System Center 2016 Technical Preview - Service Manager Setup will not complete and the following error message will appear at the **Create database** stage of the installation:
 
-"An error occurred while executing a customer action: _ExecuteSqlScripts. This upgrade attempt has failed before permanent modifications were made. Upgrade has successfully rolled back to the original state of the system. Once the corrections are made, you can retry upgrade for this role."
+*An error occurred while executing a customer action: _ExecuteSqlScripts. This upgrade attempt has failed before permanent modifications were made. Upgrade has successfully rolled back to the original state of the system. Once the corrections are made, you can retry upgrade for this role.*
 
 You can check the status of **allow updates** on SQL Server by executing the following stored procedure from within SQL Server Management Studio:
 
@@ -82,6 +83,7 @@ sp_configure 'allow updates',0 reconfigure with override
 ```
 
 ## AlwaysOn Availability Groups Considerations for Service Manager Databases
+
 SQL Server AlwaysOn Availability Groups functionality is supported by all versions of System Center 2016 Technical Preview - Service Manager for the default server instance. However, SQL AlwaysOn Availability Groups functionality is not supported for a named instance.
 
 When considering SQL Server AlwaysOn Availability Groups for the Service Manager database or the DWDataMart, you should determine whether availability replica should support either or both of the following active-secondary capabilities:
@@ -93,6 +95,3 @@ When considering SQL Server AlwaysOn Availability Groups for the Service Manager
 For more information about installing Service Manager with AlwaysOn availability groups on [TechNet](http://blogs.technet.com/b/babulalghule/archive/2013/02/17/how-to-install-service-manager-2012-sp1-with-a-sql-2012-alwayson-availability-groups.aspx).
 
 For more information about AlwaysOn Availability Groups, see [AlwaysOn Availability Groups (SQL Server)](http://msdn.microsoft.com/library/hh510230.aspx).
-
-
-
