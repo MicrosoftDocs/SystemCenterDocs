@@ -9,6 +9,7 @@ author: cfreemanwa
 manager: cfreemanwa
 ms.technology: system-center-2016
 ms.topic: get-started-article
+ms.date: 07-01-2016
 ms.assetid: b8b4ec94-d6f4-4359-9a21-06178aa1de42
 ---
 # System Center 2016 Technical Preview 5

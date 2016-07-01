@@ -1,15 +1,16 @@
 ---
-title: Getting Started
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - operations-manager
-ms.tgt_pltfrm: na
-ms.topic: get-started-article
-ms.assetid: 805406cb-4ab8-4a51-a855-d2498524f333
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  cfreemanwa
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-07-01
+title:  Getting Started
+ms.technology:  system-center-2016
+ms.assetid:  805406cb-4ab8-4a51-a855-d2498524f333
 ---
+
 # Getting Started
 
 >Applies To: System Center 2016 Technical Preview - Operations Manager

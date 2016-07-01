@@ -1,13 +1,16 @@
 ---
-title: Client Operating System Compatibility for System Center Technical Preview
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: get-started-article
-ms.assetid: c8e556a8-a754-4711-85de-a1cf959aabe2
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  cfreemanwa
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-07-01
+title:  Client Operating System Compatibility for System Center Technical Preview
+ms.technology:  system-center-2016
+ms.assetid:  c8e556a8-a754-4711-85de-a1cf959aabe2
 ---
+
 # Client Operating System Compatibility for System Center Technical Preview
 
 >Applies To: System Center Technical Preview
@@ -24,3 +27,4 @@ Use this information to evaluate the client operating system requirements to sup
 |**Orchestrator** Runbook Designer||||||&#8226;|&#8226;|&#8226;|
 |**Service Manager** Console|||&#8226;|||&#8226;|&#8226;|&#8226;|
 |**VMM** Console||&#8226;|&#8226;|&#8226;|&#8226;|&#8226;|&#8226;|&#8226;|
+

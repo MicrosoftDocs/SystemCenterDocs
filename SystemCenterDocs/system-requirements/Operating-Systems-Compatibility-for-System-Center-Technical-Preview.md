@@ -1,13 +1,16 @@
 ---
-title: Operating Systems Compatibility for System Center Technical Preview
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: get-started-article
-ms.assetid: 466af3dd-17e5-46b3-b33b-b21a4a65b875
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  cfreemanwa
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-07-01
+title:  Operating Systems Compatibility for System Center Technical Preview
+ms.technology:  system-center-2016
+ms.assetid:  466af3dd-17e5-46b3-b33b-b21a4a65b875
 ---
+
 # Operating Systems Compatibility for System Center Technical Preview
 
 >Applies To: System Center Technical Preview
@@ -48,3 +51,4 @@ Use this information to evaluate if your server-side operating system environmen
 
 > [!IMPORTANT]
 > You can perform  fabric operations such as patching, cluster creation, and cluster rolling upgrades, on either Windows Server 2012 R2 or Windows Server 2016 TP3 hosts managed  by System Center 2016 Technical Preview. However   live migration and workload creation are only supported on Windows Server 2016 TP3 hosts and clusters.
+
