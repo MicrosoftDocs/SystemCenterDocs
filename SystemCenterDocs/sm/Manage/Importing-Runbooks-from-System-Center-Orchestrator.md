@@ -42,7 +42,7 @@ You can use the following procedures to create a connector for System Center 201
 
     3.  On the **Connection** page, in the **Server Information** area, type the URL of the Orchestrator Web service.
 
-        1.  Type the URL of the Orchestrator Web service in the form of http://<computer\>:<port\>/Orchestrator2012/Orchestrator.svc, where <computer\> is the name of the computer hosting the web service and <port\> is the port number where the web service is installed. (The default port number is 81.)
+        1.  Type the URL of the Orchestrator Web service in the form of http://computer:port/Orchestrator2012/Orchestrator.svc, where *computer* is the name of the computer hosting the web service and *port* is the port number where the web service is installed. (The default port number is 81.)
 
     4.  On the **Connection** page, in the **Credentials** area, either select an existing account or click **New**, and then do the following:
 
@@ -55,7 +55,7 @@ You can use the following procedures to create a connector for System Center 201
 
     5.  On the **Folder** page, select a folder, and then click **Next**.
 
-    6.  On the **Web Console URL** page, type the URL for the Orchestrator web console in the form of http://<computer\>:port (the default port number is 82), and then click **Next**.
+    6.  On the **Web Console URL** page, type the URL for the Orchestrator web console in the form of http://computer:port (the default port number is 82), and then click **Next**.
 
     7.  On the **Summary** page, make sure that the settings are correct, and then click **Create**.
 

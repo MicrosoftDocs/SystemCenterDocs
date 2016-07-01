@@ -64,7 +64,7 @@ There are two phases for creating the Alert connector. The first part involves c
 
 8.  In the **Actions** pane, click **Properties**.
 
-9. In the **Alert Sync: <name of connector\>** dialog box, click **Add**.
+9. In the **Alert Sync: *name of connector*** dialog box, click **Add**.
 
 10. In the **Product Connector Subscription Wizard** dialog box, on the **General** page, in the **Subscription Name** box, type the name for this subscription. For example, type **All Alerts**, and then click **Next**.
 
@@ -74,7 +74,7 @@ There are two phases for creating the Alert connector. The first part involves c
 
 13. On the **Criteria** page, click **Create**.
 
-14. In the **Alert Sync:<name of connector\>** dialog box, click **OK**.
+14. In the **Alert Sync:*name of connector*** dialog box, click **OK**.
 
 ### To validate the creation of an Operations Manager alert connector
 

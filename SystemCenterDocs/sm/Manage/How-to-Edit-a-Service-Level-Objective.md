@@ -25,7 +25,7 @@ The service level objective that you edit is linked to a queue. If you want to m
 
 2.  In the **Administration** pane, expand **Service Level Management**, and then click **Service Level Objective**.
 
-3.  In the **Service Level Objectives** list, select an existing service level objective, and then in the **Tasks** pane, under **<ServiceLevelObjectiveName\>**, click **Properties**.
+3.  In the **Service Level Objectives** list, select an existing service level objective, and then in the **Tasks** pane, under *ServiceLevelObjectiveName*, click **Properties**.
 
 4.  In the **Edit SLO** dialog box, modify any of the following items, as needed. For more information about the elements on this page, see [How to Create a Service Level Objective](How-to-Create-a-Service-Level-Objective.md).
 
@@ -36,6 +36,3 @@ The service level objective that you edit is linked to a queue. If you want to m
     -   **Service Level Criteria**
 
 5.  Click **OK** to close the **Edit SLO** dialog box.
-
-
-
