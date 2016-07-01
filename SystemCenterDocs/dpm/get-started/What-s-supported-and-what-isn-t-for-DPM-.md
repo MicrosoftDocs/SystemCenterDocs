@@ -213,15 +213,15 @@ Both of these scenarios are unsupported. You can only select one of the followin
 
 **Workaround**: Use within support limitations.
 
-### Windows deduplication isn&trade;t always supported on volumes hosting .VHD or .VHDX files
+### Windows deduplication isn't always supported on volumes hosting .VHD or .VHDX files
 **Issue**: Dedupe support
 
 **Workaround**: Deploy DPM as virtual machine.
 
 You can enable deduplication for DPM storage when it runs in a Hyper-V virtual machine and stored backup data to VHDs in shared folders on Windows File Servers with data deduplication enabled. For more information about this scenario read [Deduplicating DPM storage](../Deploy/Deduplicate-DPM-storage.md).
 
-### Dedup file system can&trade;t be protected to a secondary DPM server
-**Issue**: After a dedup file system is protected by a primary DPM server, it can&trade;t be protected to a secondary DPM server.
+### Dedup file system can't be protected to a secondary DPM server
+**Issue**: After a dedup file system is protected by a primary DPM server, it can't be protected to a secondary DPM server.
 
 **Workaround**: None.
 
