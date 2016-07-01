@@ -1,13 +1,16 @@
 ---
-title: .Net Version Support
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: get-started-article
-ms.assetid: d5a0412c-4670-4c92-aad8-d83ebe2f9043
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  cfreemanwa
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-07-01
+title:  Dot Net Version Support
+ms.technology:  system-center-2016
+ms.assetid:  d5a0412c-4670-4c92-aad8-d83ebe2f9043
 ---
+
 # .Net Version Support
 
 >Applies To: System Center Technical Preview
@@ -18,23 +21,23 @@ Use this information to evaluate if your Microsoft .NET Framework is ready to su
 
 |System Center 2012 R2 component|.NET 3.5 SP1|.NET 4|.NET 4.5|.NET 4.5.1|.NET 4.5.2|.NET 4.6|
 |-----------------------------------|----------------|----------|------------|--------------|--------------|------------|
-|**DPM** Central Console|?|?|?|?|?|?|
-|**DPM** Remote Administrator|?|?|?||?|?|
-|**DPM** Server|?|?|?|?|?|?|
-|**Operations Manager** Management Server|||||?|?|
-|**Operations Manager** Data Warehouse Management Server|||||?|?|
-|**Operations Manager** Gateway Server|||||?|?|
-|**Operations Manager** Web Console|||||?|?|
-|**Operations Manager** Reporting Server|||||?|?|
-|**Operations Manager** Operations Console|||||?|?|
-|**Orchestrator** Management Server|?||||||
-|**Orchestrator** Runbook Server|?||||||
-|**Orchestrator** Web Service|?|?|||||
-|**Service Manager** Management Server|?||||||
-|**Service Manager** Data Warehouse Management Server|?||||||
-|**Service Manager** console|?||||||
-|**Service Manager** Self\-Service Portal \(SharePoint Server and Web Content Server||?|?||||
-|**Service Provider Foundation** API Web Server|||||?|?|
-|**Virtual Machine Manager** Console|||?|?|?|?|
-|**Virtual Machine Manager** Management Server||||||?|
+|**DPM** Central Console|&#8226;|&#8226;|&#8226;|&#8226;|&#8226;|&#8226;|
+|**DPM** Remote Administrator|&#8226;|&#8226;|&#8226;||&#8226;|&#8226;|
+|**DPM** Server|&#8226;|&#8226;|&#8226;|&#8226;|&#8226;|&#8226;|
+|**Operations Manager** Management Server|||||&#8226;|&#8226;|
+|**Operations Manager** Data Warehouse Management Server|||||&#8226;|&#8226;|
+|**Operations Manager** Gateway Server|||||&#8226;|&#8226;|
+|**Operations Manager** Web Console|||||&#8226;|&#8226;|
+|**Operations Manager** Reporting Server|||||&#8226;|&#8226;|
+|**Operations Manager** Operations Console|||||&#8226;|&#8226;|
+|**Orchestrator** Management Server|&#8226;||||||
+|**Orchestrator** Runbook Server|&#8226;||||||
+|**Orchestrator** Web Service|&#8226;|&#8226;|||||
+|**Service Manager** Management Server|&#8226;||||||
+|**Service Manager** Data Warehouse Management Server|&#8226;||||||
+|**Service Manager** console|&#8226;||||||
+|**Service Manager** Self\-Service Portal \(SharePoint Server and Web Content Server)||&#8226;|&#8226;||||
+|**Service Provider Foundation** API Web Server|||||&#8226;|&#8226;|
+|**Virtual Machine Manager** Console|||&#8226;|&#8226;|&#8226;|&#8226;|
+|**Virtual Machine Manager** Management Server||||||&#8226;|
 

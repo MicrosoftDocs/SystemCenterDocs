@@ -1,13 +1,16 @@
 ---
-title: Features Removed or Deprecated from System Center 2016 Technical Preview
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: get-started-article
-ms.assetid: b6f468e0-fa52-41f3-8b2d-9e07ede377c9
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  cfreemanwa
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-07-01
+title:  Features Removed or Deprecated from System Center 2016 Technical Preview
+ms.technology:  system-center-2016
+ms.assetid:  b6f468e0-fa52-41f3-8b2d-9e07ede377c9
 ---
+
 # Features Removed or Deprecated from System Center 2016 Technical Preview
 
 >Applies To: System Center Technical Preview

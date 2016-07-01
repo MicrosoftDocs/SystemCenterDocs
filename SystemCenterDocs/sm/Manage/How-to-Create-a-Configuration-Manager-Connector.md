@@ -11,7 +11,7 @@ ms.technology:  service-manager
 ms.assetid:  70db0991-63d5-464a-978b-45e8783ec539
 ---
 
-# How to Create a Configuration Manager Connector_1
+# How to Create a Configuration Manager Connector
 
 >Applies To: System Center 2016 Technical Preview - Service Manager
 

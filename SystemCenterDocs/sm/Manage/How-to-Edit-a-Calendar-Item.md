@@ -26,7 +26,7 @@ You edit a calendar item in Service Manager to update work days, work hours, and
 
 2.  In the **Administration** pane, expand **Service Level Management**, and then click **Calendar**.
 
-3.  In the Calendar list, select an existing calendar, and then in the **Tasks** pane, under **<CalendarName\>**, click **Properties**.
+3.  In the Calendar list, select an existing calendar, and then in the **Tasks** pane, under *CalendarName*, click **Properties**.
 
 4.  In the **Create/Edit Calendar** dialog box, modify any of the following items, as needed:
 
@@ -39,6 +39,3 @@ You edit a calendar item in Service Manager to update work days, work hours, and
     -   **Holidays**
 
 5.  Click **OK** to close the **Create/Edit Calendar** dialog box.
-
-
-

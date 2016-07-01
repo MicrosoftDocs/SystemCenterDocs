@@ -25,7 +25,7 @@ You can use the following procedures to publish a draft service offering and the
 
 2.  In the **Library** pane, expand **Service Catalog**, and then select **Draft Service Offerings**.
 
-3.  In the **Draft Service Offerings** list, select one or more service offerings, and in the **Tasks** pane under **<ServiceOfferingName\>**, click **Publish**.
+3.  In the **Draft Service Offerings** list, select one or more service offerings, and in the **Tasks** pane under *ServiceOfferingName*, click **Publish**.
 
 ### To use a change request to publish a draft service offering
 
@@ -33,15 +33,12 @@ You can use the following procedures to publish a draft service offering and the
 
 2.  In the **Library** pane, expand **Service Catalog**, and then select **Draft Service Offerings**.
 
-3.  In the **Draft Service Offerings** list, select one or more service offerings, and in the **Tasks** pane under **<ServiceOfferingName\>**, click **Create Change Request to Publish**.
+3.  In the **Draft Service Offerings** list, select one or more service offerings, and in the **Tasks** pane under *ServiceOfferingName*, click **Create Change Request to Publish**.
 
 4.  In the **Select Template** dialog box, select the **Publish Offering** change request template, and then click **OK** to open a new change request form.
 
-5.  In the **<ChangeRequestID: Publish Offerings>** form, notice that the catalog items to be published appear under **Catalog items**.
+5.  In the *ChangeRequestID: Publish Offerings* form, notice that the catalog items to be published appear under **Catalog items**.
 
 6.  Click the **Activities** tab, and notice that there is a review activity and an automated activity associated with the change request. Later, when the review activity is approved, the automated activity will set the publish status to Published.
 
 7.  Click **OK** to save the change request.
-
-
-

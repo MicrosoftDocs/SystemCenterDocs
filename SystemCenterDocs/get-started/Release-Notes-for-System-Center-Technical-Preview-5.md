@@ -1,13 +1,16 @@
 ---
-title: Release Notes for System Center Technical Preview 5
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: get-started-article
-ms.assetid: 5fad5608-4cb7-48b0-aa31-35ca5cc2d560
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  cfreemanwa
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-07-01
+title:  Release Notes for System Center Technical Preview 5
+ms.technology:  system-center-2016
+ms.assetid:  5fad5608-4cb7-48b0-aa31-35ca5cc2d560
 ---
+
 # Release Notes for System Center Technical Preview 5
 
 >Applies To: System Center Technical Preview
