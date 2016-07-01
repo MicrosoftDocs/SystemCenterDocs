@@ -119,7 +119,7 @@ This procedure installs the gateway server. The server that is to be the gateway
 
     ```
     %WinDir%\System32\msiexec.exe /i path\Directory\MOMGateway.msi /qn /l*v path\Logs\GatewayInstall.log
-    ADDLOCAL=MOMGateway 
+    ADDLOCAL=MOMGateway
     MANAGEMENT_GROUP="<ManagementGroupName>"
     IS_ROOT_HEALTH_SERVER=0
     ROOT_MANAGEMENT_SERVER_AD=<ParentMSFQDN>
@@ -160,10 +160,10 @@ The following example can be used to configure gateway server failover to multip
 ### Code
 
 ```
+
 $GatewayServer = Get-SCOMGatewayManagementServer -Name "ComputerName.Contoso.com"
 $FailoverServer = Get-SCOMManagementServer -Name "ManagementServer.Contoso.com","ManagementServer2.Contoso.com"
-Set-SCOMParentManagementServer -GatewayServer $GatewayServer -FailoverServer $FailoverServer
+Set-SCOMParentManagementServer -GatewayServer $GatewayServer
+-FailoverServer $FailoverServer
+
 ```
-
-
-
