@@ -94,7 +94,7 @@ Scenario 2 shows a scenario in which four DPM servers are chained:
 ![alternate scenario with four DPM servers chained](../../media/DPM2012_DR_ChainingS1.jpg)
 
 ### Cyclic protection
-If you don’t want to use a secondary server then two [!INCLUDE[dpm2012short](../../includes/dpm2012short_md.md)] servers can protect each other.
+If you don’t want to use a secondary server then two DPM servers can protect each other.
 
 **Scenario 3: Cyclic protection**
 
