@@ -5,7 +5,7 @@ ms.topic:  article
 author:  markgalioto
 ms.prod:  system-center-threshold
 keywords:  
-ms.date:  2016-06-27
+ms.date:  2016-06-30
 title:  Manage and monitor DPM servers with Operations Manager
 ms.technology:  data-protection-manager
 ms.assetid:  97fd6656-af44-4e5c-bef8-dc57643b0181
@@ -71,6 +71,7 @@ DPM provides the following management packs:
 -   Discovery and monitoring management pack (Microsoft.SystemCenter.DataProtectionManager.2012.Discovery.mp)
 
 -   Library management pack - (Microsoft.SystemCenter.DataProtectionManager.2012.Library)
+
 
 1.  On the Operations Manager server remove any existing DPM management packs.
 

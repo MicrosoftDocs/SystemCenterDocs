@@ -5,7 +5,7 @@ ms.topic:  article
 author:  markgalioto
 ms.prod:  system-center-threshold
 keywords:  
-ms.date:  2016-06-27
+ms.date:  2016-06-30
 title:  Set up DPM logging
 ms.technology:  data-protection-manager
 ms.assetid:  710459cd-75ec-4052-9199-c45828cbc19b

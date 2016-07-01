@@ -5,7 +5,7 @@ ms.topic:  article
 author:  markgalioto
 ms.prod:  system-center-threshold
 keywords:  
-ms.date:  2016-06-27
+ms.date:  2016-06-30
 title:  Back up and restore VMM servers
 ms.technology:  data-protection-manager
 ms.assetid:  e9ed546c-b12b-4a2c-9668-3dc23963114e
@@ -60,9 +60,9 @@ Before setting up a DPM backup for VMM using VMM Express Writer note the followi
 
 1.  Click **Protection** > **Actions** > **Create Protection Group** to open the **Create New Protection Group** wizard in the DPM console.
 
-2.  In **Select protection group** type click **Clients**. You only select clients if you want to back up data on a Windows computer running a Windows client operating system. For all other workloads select server. Learn more in [Deploy protection groups](Deploy-protection-groups.md)
+2.  In **Select protection group** type click **Clients**. You only select clients if you want to back up data on a Windows computer running a Windows client operating system. For all other workloads select server. Learn more in [Deploy protection groups](Deploy-protection-groups.md).
 
-3.  In **Select Group Members** expand the VMM machine and select **VMM Express Writer**
+3.  In **Select Group Members** expand the VMM machine and select **VMM Express Writer**.
 
 4.  In **Select data protection method**  specify how you want to handle short and long-term backup. Short-term back up is always to disk first, with the option of backing up from the disk to the Azure cloud with Azure backup (for short or long-term). As an alternative to long-term backup to the cloud you can also configure long-term back up to a standalone tape device or tape library connected to the DPM server.
 

@@ -5,7 +5,7 @@ ms.topic:  article
 author:  markgalioto
 ms.prod:  system-center-threshold
 keywords:  
-ms.date:  2016-06-27
+ms.date:  2016-06-30
 title:  Back up SQL Server with DPM
 ms.technology:  data-protection-manager
 ms.assetid:  3718b565-9640-4c3f-9d44-aa969041e0e6
@@ -69,6 +69,7 @@ DPM provides backup and recovery for SQL Server databases. In addition to backin
 
     -   DPM will honor the backup policy for availability groups that is set in SQL Server based on the backup preferences, as follows:
 
+
         -   Prefer secondary - Backups should occur on a secondary replica except when the primary replica is the only replica online. If there are multiple secondary replicas available then the node with the highest backup priority will be selected for backup. In the case that only primary replica is available then backup should occur on the primary replica.
 
         -   Secondary only - Backup shouldn't be performed on the primary replica. If the primary replica is the only one online, the backup shouldn't occur.
@@ -97,6 +98,7 @@ DPM provides backup and recovery for SQL Server databases. In addition to backin
 
 ## Before you start
 
+
 1.  **Deploy DPM** - Verify that DPM is installed and deployed correctly. If you haven't see:
 
     -   System requirements for DPM
@@ -110,6 +112,7 @@ DPM provides backup and recovery for SQL Server databases. In addition to backin
 2.  **Set up storage** - You can store backed up data on disk, on tape, and in the cloud with Azure. Read more in [Prepare data storage](../get-started/Prepare-data-storage.md).
 
 3.  **Set up the DPM protection agent** - You'll need to install the DPM protection agent on every machine you want to back up. Read [Deploy the DPM protection agent](Deploy-the-DPM-protection-agent.md).
+
 
 ## Configure backup
 

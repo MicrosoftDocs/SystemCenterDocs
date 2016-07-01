@@ -5,7 +5,7 @@ ms.topic:  article
 author:  markgalioto
 ms.prod:  system-center-threshold
 keywords:  
-ms.date:  2016-06-27
+ms.date:  2016-06-30
 title:  Identify compatible tape libraries
 ms.technology:  data-protection-manager
 ms.assetid:  4ed6e64f-21d4-4c93-9979-3f1a48317cbe
@@ -51,7 +51,7 @@ Before you run the tool, do the following:
 
         -   Ensure that device drivers are up-to-date.
 
-        -   .If the drive mappings are incorrect, use the DPMDriveMapping.exe tool in the <DPM installation folder>/bin folder to correct the mappings. If you don't have DPM installed on the computer, copy the DPMLA.xml that DPMDriveMapping.exe creates to the folder to which you extracted the Tape Library Certification tool.
+        -   If the drive mappings are incorrect, use the DPMDriveMapping.exe tool in the <DPM installation folder>/bin folder to correct the mappings. If you don't have DPM installed on the computer, copy the DPMLA.xml that DPMDriveMapping.exe creates to the folder to which you extracted the Tape Library Certification tool.
 
     -   **Test 2: Mount/dismount** - This test selects a tape from the first available slot and performs a mount///dismount of the tape to and from a drive.
 
@@ -68,14 +68,12 @@ Before you run the tool, do the following:
 -   Prepare two Hyper-V hosts running DPM.
 
 -   Enable live migration on both the servers. A clustered deployment isn't required.
-    3
 
 -   Run the compatibility tool on the first host server, as described in the section above, and verify that tests complete successfully.
 
 -   Initiate live migration to the second host server and wait for it to complete.
-    5
 
--   .After DPM is running virtually on the second host server, run the compatibility tool on that host server, as described above, and verify that tests complete successfully. If the tests pass you can assume that the tape library will work with DPM.
+-   After DPM is running virtually on the second host server, run the compatibility tool on that host server, as described above, and verify that tests complete successfully. If the tests pass you can assume that the tape library will work with DPM.
 
 ## Examples
 The tool syntax is:

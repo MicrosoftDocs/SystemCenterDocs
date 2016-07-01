@@ -5,13 +5,13 @@ ms.topic:  article
 author:  markgalioto
 ms.prod:  system-center-threshold
 keywords:  
-ms.date:  2016-06-27
-title:  What s new in DPM in System Center Technical Preview
+ms.date:  2016-06-30
+title:  What's new in DPM in System Center Technical Preview
 ms.technology:  data-protection-manager
 ms.assetid:  a5e81bf0-43a6-4099-af2e-dfb0c1aa7ed8
 ---
 
-# What&#39;s new in DPM in System Center Technical Preview
+# What's new in DPM in System Center Technical Preview
 
 >Applies To: System Center 2016 Technical Preview - Data Protection Manager
 

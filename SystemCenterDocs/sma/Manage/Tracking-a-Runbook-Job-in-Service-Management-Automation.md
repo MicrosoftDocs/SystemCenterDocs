@@ -15,17 +15,17 @@ ms.assetid:  24cd18c8-4aea-4f22-971b-756d9fa45a8e
 
 >Applies To: Windows Azure Pack for Windows Server
 
-When you start a runbook in Service Management Automation, a job is created. A job is a single execution instance of a runbook. A single runbook may have multiple jobs, each with their own set of values for the runbook"s parameters. 
+When you start a runbook in Service Management Automation, a job is created. A job is a single execution instance of a runbook. A single runbook may have multiple jobs, each with their own set of values for the runbook"s parameters.
 
 If the RunbookWorker property of the runbook is populated, then that Worker server will service the job. If the Worker server is not available, then the job will fail with an error. If the RunbookWorker property of the runbook is not populated, then SMA will randomly select an available Worker server to service the request.
 
 The following diagram shows the lifecycle of a runbook job for PowerShell Workflow runbooks.
 
-![Job Statuses - PowerShell WorkflowImage/sma-runbook-execution-workflow.png)
+![Job Statuses - PowerShell Workflow](../../media/sma-runbook-execution-workflow.png)
 
 The following diagram shows the lifecycle of a runbook job for PowerShell script runbooks.
 
-![Job Statuses - PowerShell ScriptImage/sma-runbook-execution-script.png)
+![Job Statuses - PowerShell Script](../../media/sma-runbook-execution-script.png)
 
 ## <a name="jobstatuses"></a>Job Statuses
 The following table describes the different statuses that are possible for a job.
@@ -106,6 +106,3 @@ Get-SmaJobOutput "WebServiceEndpoint $webServer "Port $port -Id $job.Id "Stream 
 [Service Management Automation](../Service-Management-Automation.md)
 [Runbook Operations](Runbook-Operations.md)
 [Starting a Runbook](Starting-a-Runbook.md)
-
-
-

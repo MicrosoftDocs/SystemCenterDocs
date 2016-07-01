@@ -5,7 +5,7 @@ ms.topic:  article
 author:  markgalioto
 ms.prod:  system-center-threshold
 keywords:  
-ms.date:  2016-06-27
+ms.date:  2016-06-30
 title:  Manage and monitor DPM
 ms.technology:  data-protection-manager
 ms.assetid:  241fe091-0044-4664-8eaf-9b022e6874f3
@@ -22,6 +22,3 @@ This section describes how to manage, maintain, and monitor DPM after you've com
 -   [Set up DPM logging](Set-up-DPM-logging.md)
 
 -   [Generate DPM reports](Generate-DPM-reports.md)
-
-
-

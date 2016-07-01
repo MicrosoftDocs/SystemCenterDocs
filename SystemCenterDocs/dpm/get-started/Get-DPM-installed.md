@@ -38,7 +38,7 @@ Table A
 
 |VM size|Max protected workloads|Avg workload size|Avg workload churn (daily)|Sample workload|
 |-----------|---------------------------|---------------------|--------------------------------|-------------------|
-|A2|20|100 GB|Net 5% chunr|SQL Server, file server|
+|A2|20|100 GB|Net 5% churn|SQL Server, file server|
 |A3|40|150 GB|Net 10% churn|SQL Server, file server|
 |A4|60|200 GB|Net 15% churn|SQL Server, file server|
 

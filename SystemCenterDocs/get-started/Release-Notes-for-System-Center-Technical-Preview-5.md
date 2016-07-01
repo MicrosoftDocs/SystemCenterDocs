@@ -299,7 +299,7 @@ If you used the default instance of SQL Server, use Windows Explorer to drag Mic
 **Workaround:** Remove the Service Manager Authoring Tool, and then retry Setup.
 
 ### Setup Does Not Install the Report Viewer Language Pack
-**Description:** Setup includes a prerequisite checker that checks for and—if necessary, installs—the Microsoft Report Viewer. However, Setup does not install the Report Viewer Language Pack, which makes the Microsoft Report Viewer compatible with Windows operating systems that are configured to use languages other than English.
+**Description:** Setup includes a prerequisite checker that checks for and - if necessary, installs - the Microsoft Report Viewer. However, Setup does not install the Report Viewer Language Pack, which makes the Microsoft Report Viewer compatible with Windows operating systems that are configured to use languages other than English.
 
 **Workaround:** If your system is configured to use a language other than English, you should manually install the Report Viewer Language Pack for that language.
 

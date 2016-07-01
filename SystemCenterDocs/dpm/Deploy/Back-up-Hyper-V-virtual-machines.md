@@ -5,7 +5,7 @@ ms.topic:  article
 author:  markgalioto
 ms.prod:  system-center-threshold
 keywords:  
-ms.date:  2016-06-27
+ms.date:  2016-06-30
 title:  Back up Hyper V virtual machines
 ms.technology:  data-protection-manager
 ms.assetid:  3a5b0841-04c8-4ffa-8375-ef12b7b459bb
@@ -194,6 +194,7 @@ Set up protection as follows:
         `select cast(PhysicalPath as XML) from tbl_IM_ProtectedObject where DataSourceId in (select datasourceid from tbl_IM_DataSource where DataSourceName like '%<VMName>%')`
 
     4.  Open the .xml file that this query returns and validate that the *VMMIdentifier* field has a value.
+
 
 **Run manual migration** - After you've completed the steps migration is enabled after the DPM Summary Manager job runs. By default, this job starts at midnight and runs every morning. If you want to run a manual migration in the meantime to check everything is working as expected, do the following:
 

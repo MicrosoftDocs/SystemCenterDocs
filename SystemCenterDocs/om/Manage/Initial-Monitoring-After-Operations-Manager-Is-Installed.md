@@ -13,8 +13,9 @@ ms.assetid:  b738db5b-041e-46ee-801f-bfd11fc04493
 
 
 
-
 #Initial Monitoring After Operations Manager Is Installed
+
+>Applies To: System Center 2016 Technical Preview - Operations Manager
 
 When Operations Manager is first installed, only the features of the Operations Manager infrastructure such as management servers, reporting servers, and databases are monitored. Monitoring of the roles and core functionality of the management group is provided by a number of management packs that are included when you create the management group, such as the System Center Core Monitoring and System Center Operations Manager Infrastructure Monitoring management packs.  
 

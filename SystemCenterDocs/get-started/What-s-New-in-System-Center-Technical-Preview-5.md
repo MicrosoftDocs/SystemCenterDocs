@@ -9,6 +9,10 @@ ms.topic: get-started-article
 ms.assetid: 4f8701a5-8d55-4ffd-afee-e6341ec6b7f4
 ---
 # What&#39;s New in System Center Technical Preview 5
+
+>Applies To: System Center 2016 Technical Preview 
+
+
 The content in this section describes what's new and changed in System Center 2016 Technical Preview. The new features and changes listed here are the ones most likely to have the greatest impact as you work with this release.
 
 > [!IMPORTANT]

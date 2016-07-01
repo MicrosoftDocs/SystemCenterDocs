@@ -5,49 +5,46 @@ ms.topic:  article
 author:  markgalioto
 ms.prod:  system-center-threshold
 keywords:  
-ms.date:  2016-06-27
+ms.date:  2016-06-30
 title:  Deduplicate DPM storage
 ms.technology:  data-protection-manager
 ms.assetid:  af49cdc3-1f63-4c10-843a-d1cd27af473a
 ---
 
 # Deduplicate DPM storage
-
->Applies To: System Center 2016 Technical Preview - Data Protection Manager
-
-Data deduplication (dedup) finds and removed duplicated data in a volume  while ensuring data remains correct and complete.   Learn more about [deduplication planning](http://go.microsoft.com/fwlink/?LinkId=522614) .
+Data deduplication \(dedup\) finds and removed duplicated data in a volume  while ensuring data remains correct and complete.   Learn more about [deduplication planning](http://go.microsoft.com/fwlink/?LinkId=522614) .
 
 -   Dedup reduces storage consumption and although the amount of redundancy for a set of data will depend on the workload and data type, typically backup data shows strong savings when dedup is used.
 
 -   Data redundancy can be further reduced with dedup when backed up data of similar types and workloads is processed together.
 
--   Dedup is designed to be installed on primary data volumes without adding additional dedicated hardware so that it doesn't impact the primary workload on the server. The default settings are nonintrusive because they allow data to age for five days before processing a particular file, and has a default minimum file size of 32 KB. The implementation is designed for low memory and CPU usage.
+-   Dedup is designed to be installed on primary data volumes without adding additional dedicated hardware so that it doesn’t impact the primary workload on the server. The default settings are nonintrusive because they allow data to age for five days before processing a particular file, and has a default minimum file size of 32 KB. The implementation is designed for low memory and CPU usage.
 
 -   Dedup can be implemented on the following workloads:
 
-    -   General file shares: Group content publication and sharing, user home folders, and Folder Redirection/Offline Files
+    -   General file shares: Group content publication and sharing, user home folders, and Folder Redirection\/Offline Files
 
     -   Software deployment shares: Software binaries, images, and updates
 
-    -   VHD libraries: Virtual hard disk (VHD) file storage for provisioning to hypervisors
+    -   VHD libraries: Virtual hard disk \(VHD\) file storage for provisioning to hypervisors
 
-    -   VDI Deployments (Windows Server 2012 R2 only): Virtual Desktop Infrastructure (VDI) deployments using Hyper-V
+    -   VDI Deployments \(Windows Server 2012 R2 only\): Virtual Desktop Infrastructure \(VDI\) deployments using Hyper\-V
 
-    -   Virtualized backup: Backup solutions (such as DPM running in a Hyper-V virtual machine) that save backup data to VHD/VHDX files on a Windows File Server.
+    -   Virtualized backup: Backup solutions \(such as DPM running in a Hyper\-V virtual machine\) that save backup data to VHD\/VHDX files on a Windows File Server.
 
 ## DPM and dedup
-Using dedup with DPM can result in large savings. The amount of space saved by dedup when optimizing DPM backup data varies depending on the type of data being backed up. For example, a backup of an encrypted database server may result in minimal savings since any duplicate data is hidden by the encryption process. However backup of a large Virtual Desktop Infrastructure (VDI) deployment can result in very large savings in the range of 70-90+% range, since there is typically a large amount of data duplication between the virtual desktop environments. In the configuration described in this topic we ran a variety of test workloads and saw savings ranging between 50% and 90%.
+Using dedup with DPM can result in large savings. The amount of space saved by dedup when optimizing DPM backup data varies depending on the type of data being backed up. For example, a backup of an encrypted database server may result in minimal savings since any duplicate data is hidden by the encryption process. However backup of a large Virtual Desktop Infrastructure \(VDI\) deployment can result in very large savings in the range of 70\-90\+% range, since there is typically a large amount of data duplication between the virtual desktop environments. In the configuration described in this topic we ran a variety of test workloads and saw savings ranging between 50% and 90%.
 
-To use dedup for DPM storage DPM should be running in a Hyper-V virtual machine and store backup data to VHDs in shared folders with data dedup enabled.
+To use dedup for DPM storage DPM should be running in a Hyper\-V virtual machine and store backup data to VHDs in shared folders with data dedup enabled.
 
 ## Recommended deployment
 To deploy DPM as a virtual machine backing up data to a dedupl volume we recommend the following deployment topology:
 
--   DPM running in a virtual machine in a Hyper-V host cluster.
+-   DPM running in a virtual machine in a Hyper\-V host cluster.
 
--   DPM storage using VHD/VHDX files stored on an SMB 3.0 share on a file server.
+-   DPM storage using VHD\/VHDX files stored on an SMB 3.0 share on a file server.
 
--   For our test example we configured the file server as a scaled-out file server (SOFS) deployed using storage volumes configured from Storage Spaces pools built using directly connected SAS drives. Note that this deployment ensures performance at scale.
+-   For our test example we configured the file server as a scaled\-out file server \(SOFS\) deployed using storage volumes configured from Storage Spaces pools built using directly connected SAS drives. Note that this deployment ensures performance at scale.
 
 Note that:
 
@@ -55,50 +52,50 @@ Note that:
 
 -   All the Windows File Server nodes on which DPM virtual hard disks reside and on which dedup will be enabled must be running Windows Server 2012 R2 with at least [Update Rollup November 2014](http://go.microsoft.com/fwlink/?LinkId=522571).
 
--   We'll provide general recommendations and instructions for the scenario deployment. Whenever hardware-specific examples are given, the hardware deployed in the Microsoft Cloud Platform System (CPS) is used for reference.
+-   We’ll provide general recommendations and instructions for the scenario deployment. Whenever hardware\-specific examples are given, the hardware deployed in the Microsoft Cloud Platform System \(CPS\) is used for reference.
 
--   This example uses remote SMB 3.0 shares to store the backup data, so primary hardware requirements center around the File Server nodes rather than the Hyper-V nodes. The following hardware configuration is used in CPS for backup and production storage. Note that the overall hardware is used for both backup and production storage, but the number of drives listed in the drive enclosures are only those used for backup.
+-   This example uses remote SMB 3.0 shares to store the backup data, so primary hardware requirements center around the File Server nodes rather than the Hyper\-V nodes. The following hardware configuration is used in CPS for backup and production storage. Note that the overall hardware is used for both backup and production storage, but the number of drives listed in the drive enclosures are only those used for backup.
 
     -   4 node Scale Out File Server cluster
 
     -   Per node configuration
 
-        -   2x Intel(R) Xeon(R) CPU E5-2650 0 @ 2.00GHz, 2001 MHz, 8 cores, 16 logical processors
+        -   2x Intel\(R\) Xeon\(R\) CPU E5\-2650 0 @ 2.00GHz, 2001 MHz, 8 cores, 16 logical processors
 
         -   128GB 1333MHz RDIMM memory
 
-        -   Storage connections: 2 ports of SAS, 1 port of 10GbE iWarp/RDMA
+        -   Storage connections: 2 ports of SAS, 1 port of 10GbE iWarp\/RDMA
 
     -   4 JBOD drive enclosures
 
-        -   18 Disks in each JBOD - 16 x 4TB HDDs + 2 x 800GB SSDs
+        -   18 Disks in each JBOD – 16 x 4TB HDDs \+ 2 x 800GB SSDs
 
-        -   Dual path to each drive - Multipath I/O load balancing policy set to failover only
+        -   Dual path to each drive \- Multipath I\/O load balancing policy set to failover only
 
-        -   SSDs configured for write back cache (WBC) and the rest for dedicated journal drives
+        -   SSDs configured for write back cache \(WBC\) and the rest for dedicated journal drives
 
 ## Set up dedup volumes
-Let's consider how big volumes should be to support the deduplicated VHDX files containing DPM data. In CPS we've created volumes of 7.2TB each. The optimum volume size depends primarily on how much and how frequently the data on the volume changes, and on the data access throughput rates of the disk storage subsystem. It's important to note that if the deduplication processing can't keep up with the rate of daily data changes (the churn) the savings rate will drop until the processing can complete. For more detailed information see [Sizing Volumes for Data Deduplication](http://go.microsoft.com/fwlink/?LinkId=522575). The following general guidelines are recommended for the dedup volumes:
+Let’s consider how big volumes should be to support the deduplicated VHDX files containing DPM data. In CPS we’ve created volumes of 7.2TB each. The optimum volume size depends primarily on how much and how frequently the data on the volume changes, and on the data access throughput rates of the disk storage subsystem. It’s important to note that if the deduplication processing can’t keep up with the rate of daily data changes \(the churn\) the savings rate will drop until the processing can complete. For more detailed information see [Sizing Volumes for Data Deduplication](http://go.microsoft.com/fwlink/?LinkId=522575). The following general guidelines are recommended for the dedup volumes:
 
--   Use Parity Storage Spaces with enclosure-awareness for resiliency and increased disk utilization.
+-   Use Parity Storage Spaces with enclosure\-awareness for resiliency and increased disk utilization.
 
 -   Format NTFS with 64 KB allocation units and large file record segments to work better with dedup use of sparse files.
 
 -   In the hardware configuration above the recommended volume size is 7.2TB volumes and volumes will be configured as follows:
 
-    -   Enclosure aware dual parity 7.2TB + 1GB Write back cache
+    -   Enclosure aware dual parity 7.2TB \+ 1GB Write back cache
 
-        -   ResiliencySettingName == Parity
+        -   ResiliencySettingName \=\= Parity
 
-        -   PhysicalDiskRedundancy == 2
+        -   PhysicalDiskRedundancy \=\= 2
 
-        -   NumberOfColumns == 7
+        -   NumberOfColumns \=\= 7
 
-        -   Interleave == 256KB (Dual parity performance at 64KB interleave is much lower than at the default 256KB interleave)
+        -   Interleave \=\= 256KB \(Dual parity performance at 64KB interleave is much lower than at the default 256KB interleave\)
 
-        -   IsEnclosureAware == $true
+        -   IsEnclosureAware \=\= $true
 
-        -   AllocationUnitSize=64KB
+        -   AllocationUnitSize\=64KB
 
         -   Large FRS
 
@@ -111,7 +108,7 @@ Let's consider how big volumes should be to support the deduplicated VHDX files 
     -   Each of these volumes must then be formatted as:
 
         ```
-        Format-Volume -Partition <volume> -FileSystem NTFS -AllocationUnitSize 64KB -UseLargeFRS -Force
+        Format-Volume -Partition <volume> -FileSystem NTFS -AllocationUnitSize 64KB –UseLargeFRS -Force
         ```
 
         In the CPS deployment, these are then configured as CSVs.
@@ -119,7 +116,7 @@ Let's consider how big volumes should be to support the deduplicated VHDX files 
     -   Within these volumes DPM will store a series of VHDX files to hold the backup data. Enable deduplication on the volume after formatting it, as follows:
 
         ```
-        Enable-DedupVolume -Volume <volume> -UsageType HyperV
+        Enable-DedupVolume –Volume <volume> -UsageType HyperV
         Set-DedupVolume -Volume <volume> -MinimumFileAgeDays 0 -OptimizePartialFiles:$false
         ```
 
@@ -129,7 +126,7 @@ Let's consider how big volumes should be to support the deduplicated VHDX files 
 
         -   Disable PartialFileOptimization: This causes dedup to optimize all sections of an open file rather scan for changed sections with a minimum age.
 
-        -   Set MinFileAgeDays parameter to 0: With PartialFileOptimization disabled, MinFileAgeDays changes its behavior so that dedup only considers files that haven't changed in that many days. Since we want dedup to begin processing the backup data in all DPM VHDX files without any delay, we need to set MinFileAgeDays to 0.
+        -   Set MinFileAgeDays parameter to 0: With PartialFileOptimization disabled, MinFileAgeDays changes its behavior so that dedup only considers files that haven’t changed in that many days. Since we want dedup to begin processing the backup data in all DPM VHDX files without any delay, we need to set MinFileAgeDays to 0.
 
 For more information on setting up deduplication see [Install and Configure Data Duplication](http://go.microsoft.com/fwlink/?LinkId=522576).
 
@@ -148,7 +145,7 @@ To avoid fragmentation issues and maintain efficiency, DPM storage is allocated 
     Import-Module "DataProtectionManager"
     Set-StorageSetting -NewDiskPolicy OnlineAll
     $dpmdisks = @()
-    $dpmdisks = Get-DPMDisk -DPMServerName $env:computername | ? {$_.CanAddToStoragePool -
+    $dpmdisks = Get-DPMDisk -DPMServerName $env:computername | ? {$_.CanAddToStoragePool –
     eq $true -and $_.IsInStoragePool -eq $false -and $_.HasData -eq $false}
     Add-DPMDisk $dpmdisks
     ```
@@ -158,21 +155,21 @@ To avoid fragmentation issues and maintain efficiency, DPM storage is allocated 
 ## Set up the Windows File Server cluster
 Dedup requires a special set of configuration options to support virtualized DPM storage due to the scale of data and size of individual files. These options are global to the cluster or the cluster node. Dedup must be enabled and the cluster settings must be individually configured on each node of the cluster.
 
-1.  **Enable dedup on Windows File Server storage**� The Deduplication role must be installed on all nodes of the Windows File Server cluster. To do this run the following PowerShell command on each node of the cluster:
+1.  **Enable dedup on Windows File Server storage**— The Deduplication role must be installed on all nodes of the Windows File Server cluster. To do this run the following PowerShell command on each node of the cluster:
 
     ```
     Install-WindowsFeature -Name FileAndStorage-Services,FS-Data-Deduplication -ComputerName <node name>
     ```
 
-2.  **Tune dedup processing for backup data files**�Run the following PowerShell command to set to start optimization without delay and not to optimize partial file writes. Note that by default Garbage Collection (GC) jobs are scheduled every week, and every fourth week the GC job runs in "deep GC" mode for a more exhaustive and time intensive search for data to remove. For the DPM workload, this "deep GC" mode does not result in any appreciative gains and reduces the amount of time in which dedup can optimize data. We therefore disable this deep mode.
+2.  **Tune dedup processing for backup data files**—Run the following PowerShell command to set to start optimization without delay and not to optimize partial file writes. Note that by default Garbage Collection \(GC\) jobs are scheduled every week, and every fourth week the GC job runs in “deep GC” mode for a more exhaustive and time intensive search for data to remove. For the DPM workload, this “deep GC” mode does not result in any appreciative gains and reduces the amount of time in which dedup can optimize data. We therefore disable this deep mode.
 
     ```
     Set-ItemProperty -Path HKLM:\Cluster\Dedup -Name DeepGCInterval -Value 0xFFFFFFFF
     ```
 
-3.  **Tune performance for large scale operations**�Run the following PowerShell script to:
+3.  **Tune performance for large scale operations**—Run the following PowerShell script to:
 
-    -   Disable additional processing and I/O when deep garbage collection runs
+    -   Disable additional processing and I\/O when deep garbage collection runs
 
     -   Reserve additional memory for hash processing
 
@@ -190,9 +187,9 @@ Dedup requires a special set of configuration options to support virtualized DPM
     -   EnablePriorityOptimization: With files approaching 1TB, fragmentation of a single file can accumulate enough fragments to approach the per file limit. Optimization processing consolidates these fragments and prevents this limit from being reached. By setting this registry key, dedup will add an additional process to deal with highly fragmented deduped files with high priority.
 
 ## Set up DPM and dedup scheduling
-Both backup and deduplication operations are I/O intensive. If they were to run at the same time, additional overhead to switch between the operations could be costly and result in less data being backed up or deduplicated on a daily basis. We recommended you configure dedicated and separate deduplication and backup windows. This helps ensure that the I/O traffic for each of these operations is efficiently distributed during daily system operation. The recommended guidelines for scheduling are:
+Both backup and deduplication operations are I\/O intensive. If they were to run at the same time, additional overhead to switch between the operations could be costly and result in less data being backed up or deduplicated on a daily basis. We recommended you configure dedicated and separate deduplication and backup windows. This helps ensure that the I\/O traffic for each of these operations is efficiently distributed during daily system operation. The recommended guidelines for scheduling are:
 
--   Split days into non-overlapping backup and dedup windows.
+-   Split days into non\-overlapping backup and dedup windows.
 
 -   Set up custom backup schedules.
 
@@ -205,9 +202,9 @@ Both backup and deduplication operations are I/O intensive. If they were to run 
 You can set up DPM schedules with the following PowerShell command:
 
 ```
-Set-DPMConsistencyCheckWindow -ProtectionGroup $mpg -StartTime $startTime -
+Set-DPMConsistencyCheckWindow -ProtectionGroup $mpg -StartTime $startTime –
 DurationInHours $duration
-Set-DPMBackupWindow -ProtectionGroup $mpg -StartTime $startTime -DurationInHours
+Set-DPMBackupWindow -ProtectionGroup $mpg -StartTime $startTime –DurationInHours
 $duration
 ```
 
@@ -242,14 +239,14 @@ Set-DedupSchedule -Name BackgroundOptimization -Enabled:$false
 }
 ```
 
-Whenever the backup window is modified it's vital that the deduplication window is modified along with it so they don't overlap. The deduplication and backup window don't have to fill up the full 24 hours of the day, but it's highly recommended that they do to allow for variations in processing time due to expected daily changed in workloads and data churn.
+Whenever the backup window is modified it’s vital that the deduplication window is modified along with it so they don’t overlap. The deduplication and backup window don’t have to fill up the full 24 hours of the day, but it’s highly recommended that they do to allow for variations in processing time due to expected daily changed in workloads and data churn.
 
 ## Implications for backup performance
-After a set of files have been deduplicated there can be a slight performance cost when accessing the files. This is due to the additional processing required to access the file format used by deduplicated files. In this scenario, the files are a set of VHDX files that see continuous usage by DPM during the backup window. The impact of having these files deduplicated means that the backup and recovery operations can be slightly slower than without deduplication. As for any backup product, DPM is a write-heavy workload with read operations being most important during restore operations. The recommendations for addressing the implications for backup performance due to deduplication are:
+After a set of files have been deduplicated there can be a slight performance cost when accessing the files. This is due to the additional processing required to access the file format used by deduplicated files. In this scenario, the files are a set of VHDX files that see continuous usage by DPM during the backup window. The impact of having these files deduplicated means that the backup and recovery operations can be slightly slower than without deduplication. As for any backup product, DPM is a write\-heavy workload with read operations being most important during restore operations. The recommendations for addressing the implications for backup performance due to deduplication are:
 
--   Read/restore operations: Effects on read operations are typically negligible and don't require any special considerations since the deduplication feature caches deduplicated chunks.
+-   Read\/restore operations: Effects on read operations are typically negligible and don’t require any special considerations since the deduplication feature caches deduplicated chunks.
 
--   Write / backup operations: Plan for an increase in backup time of approximately 5% to 10 % when defining the backup window. (This is an increase compared to the expected backup time when writing to non-deduplicated volumes.)
+-   Write \/ backup operations: Plan for an increase in backup time of approximately 5% to 10 % when defining the backup window. \(This is an increase compared to the expected backup time when writing to non\-deduplicated volumes.\)
 
 ## Monitoring
 DPM and data deduplication can be monitored to ensure that:
@@ -266,7 +263,7 @@ DPM and data deduplication can be monitored to ensure that:
 
 -   Deduplication savings rate matches assumptions made for system configuration
 
-The success of deduplication depends on the overall system hardware capabilities (including CPU processing speed, I/O bandwidth, storage capacity), correct system configuration, the average system load, and the daily amount of modified data.
+The success of deduplication depends on the overall system hardware capabilities \(including CPU processing speed, I\/O bandwidth, storage capacity\), correct system configuration, the average system load, and the daily amount of modified data.
 
 You can monitor DPM using the DPM Central Console. See [Install Central Console](http://go.microsoft.com/fwlink/?LinkId=522578).
 
@@ -291,19 +288,19 @@ Enabled SavedSpace SavingsRate Volume
 True 529.94 GB 74 % X:
 ```
 
-Get the schedule status using the Get-DedupSchedule cmdlet.
+Get the schedule status using the Get\-DedupSchedule cmdlet.
 
 ### Monitor events
 Monitoring the event log can help understand deduplication events and status.
 
 -   To view deduplication events, in **File Explorer**, navigate to **Applications and Services Logs** > **Microsoft** > **Windows** > **Deduplication**.
 
--   If the value **LastOptimizationResult = 0x00000000** appears in the Get-DedupStatus |fl Windows PowerShell results, the entire dataset was processed by the previous optimization job. If not then the system was unable to complete the deduplication processing and you might want to check your configuration settings, for example volume size.
+-   If the value **LastOptimizationResult \= 0x00000000** appears in the Get\-DedupStatus |fl Windows PowerShell results, the entire dataset was processed by the previous optimization job. If not then the system was unable to complete the deduplication processing and you might want to check your configuration settings, for example volume size.
 
 For more detailed cmdlet examples, see [Monitor and Report for Data Deduplication](http://go.microsoft.com/fwlink/?LinkId=522579).
 
 ### Monitor backup storage
-In our configuration example the 7.2 TB volumes are filled with 10 TB of "logical" data (the size of the data when it is not deduplicated) stored in 10 x 1 TB dynamic VHDX files. As these files accumulate additional backup data, they'll slowly fill up the volume. If the savings percentage resulting from deduplication is high enough, all 10 files will be able to reach their maximum logical size but still fit in the 7.2 TB volume (potentially there might even be additional space to allocate additional VHDX files for DPM servers to use). But if the size savings from deduplication aren't sufficient, the space on the volume might run out before the VHDX files reach their full logical size, and the volume will be full. To prevent volumes becoming full we recommend the following:
+In our configuration example the 7.2 TB volumes are filled with 10 TB of "logical" data \(the size of the data when it is not deduplicated\) stored in 10 x 1 TB dynamic VHDX files. As these files accumulate additional backup data, they’ll slowly fill up the volume. If the savings percentage resulting from deduplication is high enough, all 10 files will be able to reach their maximum logical size but still fit in the 7.2 TB volume \(potentially there might even be additional space to allocate additional VHDX files for DPM servers to use\). But if the size savings from deduplication aren’t sufficient, the space on the volume might run out before the VHDX files reach their full logical size, and the volume will be full. To prevent volumes becoming full we recommend the following:
 
 -   Be conservative in volume size requirements and allow for some overprovisioning of storage. It is recommended to allow for a buffer of at least 10% when planning for backup storage usage to allow for expected variation in deduplication savings and data churn.
 
@@ -311,9 +308,10 @@ In our configuration example the 7.2 TB volumes are filled with 10 TB of "logica
 
 If the volume becomes full the following symptoms result:
 
--   The DPM virtual machine will be put into a pause-critical state and no further backup jobs can be issued by that VM.
+-   The DPM virtual machine will be put into a pause\-critical state and no further backup jobs can be issued by that VM.
 
 -   All backup jobs that use the VHDX files on the full volume will fail.
+
 
 To recover from this condition and restore the system to normal operation, additional storage can be provisioned and a storage migration of the DPM virtual machine or its VHDX can be performed to free up space:
 
@@ -354,6 +352,3 @@ The combination of deduplication and DPM provides substantial space savings. Thi
 **Q:** The above sample configuration has created only 7.2TB volumes. Can I create bigger or smaller volumes?
 
 **A:** Dedup runs one thread per volume. As the volume size becomes bigger, dedup requires more time to complete its optimization. On the other hand with small volumes there is less data in which to find duplicate chunks, which can result in reduced savings. So, it is advisable to fine tune the volume size based on total churn and system hardware capabilities for optimal savings. More detailed information on determining volume sizes used with deduplication can be found in Sizing volumes for Deduplication in Windows Server. For more detailed information on determining volume sizes used with deduplication see [Sizing Volumes for Data Deduplication](http://go.microsoft.com/fwlink/?LinkId=522575).
-
-
-

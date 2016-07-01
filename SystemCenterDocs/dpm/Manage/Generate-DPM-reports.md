@@ -5,7 +5,7 @@ ms.topic:  article
 author:  markgalioto
 ms.prod:  system-center-threshold
 keywords:  
-ms.date:  2016-06-27
+ms.date:  2016-06-30
 title:  Generate DPM reports
 ms.technology:  data-protection-manager
 ms.assetid:  f9a97135-1c5b-45a9-b307-bb957fde21d8
@@ -20,7 +20,7 @@ DPM uses SQL Server Reporting Services to create reports. In the **Reporting** t
 ## DPM reports
 DPM provides a number of different reports:
 
--   **Status report**: Povides the status of all recovery points for a specified time period. It lists recovery jobs, and shows the total number of successes and failures for recovery points and recovery point creation. You can use this report to track and verify recovery point metrics.
+-   **Status report**: Provides the status of all recovery points for a specified time period. It lists recovery jobs, and shows the total number of successes and failures for recovery points and recovery point creation. You can use this report to track and verify recovery point metrics.
 
 -   **Protection report**:  Provides commonly used metrics for backup success rolled up over long periods of time. Use this report to track how backups are doing and what's been backed up successfully.
 
@@ -30,10 +30,10 @@ DPM provides a number of different reports:
     Use this report to do the following:
     Identify trends in disk usage and make decisions about modifying space allocations.
 
--   **Tape management and tape utilization report**: Use the tape management report to track information about tape rotation and decommissioning, and to verify that the free media threshold hasn't been exceeded. IUse the tape utilization report to track trending of resource (disk/tape) usage over time to assist capacity planning.
+-   **Tape management and tape utilization report**: Use the tape management report to track information about tape rotation and decommissioning, and to verify that the free media threshold hasn't been exceeded. Use the tape utilization report to track trending of resource (disk/tape) usage over time to assist capacity planning.
 
 ### Predefined SQL reports
-DPM includes several SQL Server views to help you create custom reports. SQL views provide a simpler method that querying tables directly, by populating columns with data collected from multiple tables in the database. You don't need -depth knowledge of the entire database or the relationship between tables and keys.
+DPM includes several SQL Server views to help you create custom reports. SQL views provide a simpler method that querying tables directly, by populating columns with data collected from multiple tables in the database. You don't need in-depth knowledge of the entire database or the relationship between tables and keys.
 
 Note though that SQL views can degrade performance if used too frequently because the view runs each time it's queries. In addition the supported views might not include all the columns you need.
 

@@ -5,7 +5,7 @@ ms.topic:  article
 author:  markgalioto
 ms.prod:  system-center-threshold
 keywords:  
-ms.date:  2016-06-27
+ms.date:  2016-06-30
 title:  Identify data sources you want to protect
 ms.technology:  data-protection-manager
 ms.assetid:  4774dd1a-f50a-4a75-8783-abb5d134298a
@@ -28,6 +28,7 @@ To protect data sources with DPM you'll need to do the following:
     -   **By RPO/RTO** - Gather data sources with similar Recovery Point Objectives (RPOs) and Recovery Time Objectives (RTOs). You control the RPO by setting the synchronization frequency for the protection group which determines the amount of potential data loss (in time) in the case of unexpected outages. The RTO measures the acceptable amount of time that data is unavailable and is affected by the storage methods your select for the protection group.
 
     -   **By data characteristics** - For example how often data changes, how rapidly it grows, or its storage requirements.
+
 
 ## Next steps
 [Deploy the DPM protection agent](../Deploy/Deploy-the-DPM-protection-agent.md)

@@ -5,7 +5,7 @@ ms.topic:  article
 author:  markgalioto
 ms.prod:  system-center-threshold
 keywords:  
-ms.date:  2016-06-27
+ms.date:  2016-06-30
 title:  Deploy protection groups
 ms.technology:  data-protection-manager
 ms.assetid:  2a4f4ec8-6185-4fe9-8120-e4dc3b6c9409
@@ -28,6 +28,7 @@ A DPM protection group is a collection of data sources, such as volumes, shares,
 -   **Initial replication** - How the initial replication of data should be handled, using either over the network or manually offline.
 
 -   **Consistency checks** - How replicated data should be checked for consistency
+
 
 The topics in this section provide guidelines for making the decisions involved in creating a protection group.
 
@@ -52,6 +53,7 @@ There are a few common ways in which you can organize  your protection groups:
 
 -   **By data characteristics** - For example how often data changes, how rapidly it grows, or its storage requirements.
 
+
 ## Figure out how much storage space you need
 When you create a protection group and select disk-based protection, you must allocate space on the storage pool for the replicas and recovery points for each data source that you have selected for membership in the group, and you must allocate space on protected file servers or workstations for the change journal.
 
@@ -72,6 +74,7 @@ DPM provides default space allocations for the members of the protection group. 
 -   **Retention range (RR)** - This is the number of recovery points stored; it is assumed to be 5 for purposes of the DPM default recommendation.
 
 -   **System state data source size** - The data source size is assumed to be 1 GB.
+
 
 When you create a protection group, in the **Modify Disk Allocation** dialog box, the **Data Size** column for each data source displays a **Calculate** link. For the initial disk allocation, DPM applies the default formulas to the size of the volume on which the data source is located. To apply the formula to the actual size of the selected data source, click the **Calculate** link. DPM will determine the size of the data source and recalculate the disk allocation for the recovery point and replica volumes for that data source. This operation can take several minutes to perform.
 
@@ -127,7 +130,7 @@ Protection groups are created with the Create New Protection Group wizard with t
 
     You'll also need to specify the tape device/library you want to use, and  whether data should be compressed and encrypted on tape.
 
--   **Review disk allocation**: You eview the storage pool disk space allocated for the protection group. DPM provides a recommended size. You can select to **Automatically grow the volumes** to automatically increase size when more disk space is required for backup.
+-   **Review disk allocation**: You review the storage pool disk space allocated for the protection group. DPM provides a recommended size. You can select to **Automatically grow the volumes** to automatically increase size when more disk space is required for backup.
 
 -   **Choose replica creation method**: Specify how you want to handle the initial full data replication.  If you select to replicate over the network we recommended you choose an off-peak time. For large amounts of data or less than optimal network conditions, consider replicating the data offline using removable media.
 
@@ -147,7 +150,7 @@ When you create a protection group, you must choose a method for creating the in
 ### Initial replication over the network
 DPM can create the replicas automatically over the network, or you can create the replicas manually by restoring the data from removable media such as tape. Automatic replica creation is easier, but, depending on the size of the protected data and the speed of the network, manual replica creation can be faster.
 
-To help you choose a replica creation method, the followingtable provides estimates for how long DPM takes to create a replica automatically over the network given different protected data sizes and network speeds. The estimates assume that the network is running at full speed and that other workloads are not competing for bandwidth. Times are shown in hours.
+To help you choose a replica creation method, the following table provides estimates for how long DPM takes to create a replica automatically over the network given different protected data sizes and network speeds. The estimates assume that the network is running at full speed and that other workloads are not competing for bandwidth. Times are shown in hours.
 
 **Hours to Complete Automatic Replica Creation at Different Network Speeds**
 

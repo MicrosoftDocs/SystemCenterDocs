@@ -17,7 +17,7 @@ ms.assetid:  3b1e34e3-7a86-42f3-acc6-363fc00b0e62
 
 >Applies To: System Center 2016 Technical Preview - Operations Manager
 
-Windows Server 2016 Technical Preview Nano Server is a new installation option introduced in Windows Server® Technical Preview. Nano Server is optimized for private cloud and datacenter operations. With System Center 2016 Technical Preview - Operations Manager you can now monitor Nano Server by installing the Operations Manager agent.
+Windows Server 2016 Technical Preview Nano Server is a new installation option introduced in Windows Server Technical Preview. Nano Server is optimized for private cloud and datacenter operations. With System Center 2016 Technical Preview - Operations Manager you can now monitor Nano Server by installing the Operations Manager agent.
 
 ## Nano Server monitoring capabilities
 With the release of Nano Server you can  monitor the basic operations of the Server by using the Windows Server Operating System Management Pack. You can also monitor a Nano Server running the following workloads:
