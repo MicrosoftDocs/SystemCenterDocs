@@ -1,13 +1,16 @@
 ---
-title: .Net Version Support
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: get-started-article
-ms.assetid: d5a0412c-4670-4c92-aad8-d83ebe2f9043
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  cfreemanwa
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-07-01
+title:  Dot Net Version Support
+ms.technology:  system-center-2016
+ms.assetid:  d5a0412c-4670-4c92-aad8-d83ebe2f9043
 ---
+
 # .Net Version Support
 
 >Applies To: System Center Technical Preview
@@ -37,3 +40,4 @@ Use this information to evaluate if your Microsoft .NET Framework is ready to su
 |**Service Provider Foundation** API Web Server|||||&#8226;|&#8226;|
 |**Virtual Machine Manager** Console|||&#8226;|&#8226;|&#8226;|&#8226;|
 |**Virtual Machine Manager** Management Server||||||&#8226;|
+

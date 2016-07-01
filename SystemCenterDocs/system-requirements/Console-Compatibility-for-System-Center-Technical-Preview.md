@@ -1,13 +1,16 @@
 ---
-title: Console Compatibility for System Center Technical Preview
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: get-started-article
-ms.assetid: 8c431276-ecd5-47d2-9b8c-e1936aa4e496
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  cfreemanwa
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-07-01
+title:  Console Compatibility for System Center Technical Preview
+ms.technology:  system-center-2016
+ms.assetid:  8c431276-ecd5-47d2-9b8c-e1936aa4e496
 ---
+
 # Console Compatibility for System Center Technical Preview
 
 >Applies To: System Center Technical Preview
@@ -21,3 +24,4 @@ Use this information to evaluate if your Microsoft SilverLight and Internet Expl
 |**Operations Manager** Web Console||&#8226;||||&#8226;|
 |**Orchestrator** Web Console|&#8226;|&#8226;|&#8226;|&#8226;|&#8226;|&#8226;|
 |**Service Manager Self-Service Portal** Console|&#8226;|&#8226;|&#8226;|&#8226;|&#8226;|&#8226;|
+

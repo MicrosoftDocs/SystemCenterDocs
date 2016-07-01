@@ -1,13 +1,16 @@
 ---
-title: PowerShell Version Support
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: get-started-article
-ms.assetid: 4d0bec2e-017d-4d2b-9fce-2d09567777a6
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  cfreemanwa
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-07-01
+title:  PowerShell Version Support
+ms.technology:  system-center-2016
+ms.assetid:  4d0bec2e-017d-4d2b-9fce-2d09567777a6
 ---
+
 # PowerShell Version Support
 
 >Applies To: System Center Technical Preview
@@ -31,3 +34,4 @@ Use this information to evaluate if your Windows PowerShell environment is ready
 |**Service Provider Foundation** API Web Server|||&#8226;|&#8226;|
 |**Virtual Machine Manager** Management Server||||&#8226;|
 |**Virtual Machine Manager** Console|||&#8226;|&#8226;|
+

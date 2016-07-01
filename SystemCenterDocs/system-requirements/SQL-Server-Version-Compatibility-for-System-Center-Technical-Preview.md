@@ -1,13 +1,16 @@
 ---
-title: SQL Server Version Compatibility for System Center Technical Preview
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: get-started-article
-ms.assetid: d33dc02d-2118-4116-85fa-782ea557ed1e
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  cfreemanwa
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-07-01
+title:  SQL Server Version Compatibility for System Center Technical Preview
+ms.technology:  system-center-2016
+ms.assetid:  d33dc02d-2118-4116-85fa-782ea557ed1e
 ---
+
 # SQL Server Version Compatibility for System Center Technical Preview
 
 >Applies To: System Center Technical Preview
@@ -27,3 +30,4 @@ Use this information to evaluate if your SQL Server environment is ready to supp
 |**Service Management Automation** Management Server|||||&#8226;|&#8226;|&#8226;|&#8226;|
 |**Service Provider Foundation**|||||&#8226;|&#8226;|&#8226;|&#8226;|
 |**Virtual Machine Manager** Database Server|||||&#8226;|&#8226;|&#8226;|&#8226;|
+
