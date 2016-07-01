@@ -30,7 +30,3 @@ This section also shows how to uninstall VMM.
 |[How to Install a VMM Management Server](How-to-Install-a-VMM-Management-Server.md)|Installing the VMM management server.|
 |[Installing and Opening the VMM Console](Installing-and-Opening-the-VMM-Console.md)|Installing the VMM console and using it to connect to a VMM management server.|
 |[How to Uninstall VMM](How-to-Uninstall-VMM.md)|Uninstalling.|
-|[Installing VMM from a Command Prompt](Installing-VMM-from-a-Command-Prompt.md)|Using .ini files with configurable settings to install features of VMM.|
-
-
-
