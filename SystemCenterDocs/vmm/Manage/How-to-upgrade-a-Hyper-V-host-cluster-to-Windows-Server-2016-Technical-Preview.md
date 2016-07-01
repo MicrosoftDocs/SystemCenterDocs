@@ -1,15 +1,16 @@
 ---
-title: How to upgrade a Hyper-V host cluster to Windows Server 2016 Technical Preview
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - virtual-machine-manager
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: b90e0e52-a56a-4a75-b0de-4ba85b48ffde
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  rayne-wiselman
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  How to upgrade a Hyper V host cluster to Windows Server 2016 Technical Preview
+ms.technology:  virtual-machine-manager
+ms.assetid:  b90e0e52-a56a-4a75-b0de-4ba85b48ffde
 ---
+
 # How to upgrade a Hyper-V host cluster to Windows Server 2016 Technical Preview
 
 >Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
@@ -58,7 +59,7 @@ Use the following procedure to upgrade a VMM-managed  Windows Server 2012 R2 clu
 
         2.  If you click the button, in the **Network Adapter IP Configuration** box, you can specify the following:
 
-            -   **MAC address(host clusters only—management NIC)**: If this is the management NIC for a host cluster, and you want to configure it as a virtual network adapter, type a MAC address.
+            -   **MAC address(host clusters only"management NIC)**: If this is the management NIC for a host cluster, and you want to configure it as a virtual network adapter, type a MAC address.
 
                 > [!NOTE]
                 > This is not the MAC address of the BMC. It is the MAC address of the management NIC, which VMM uses to communicate with the VMM management server.

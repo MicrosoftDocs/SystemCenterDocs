@@ -1,15 +1,16 @@
 ---
-title: Global Assets
-ms.custom: na
-ms.prod: system-center-2012
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - orchestrator
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: d3544ae9-8fc7-40ce-843c-51ce7c49df6d
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  bwren
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  Global Assets
+ms.technology:  service-management-automation
+ms.assetid:  d3544ae9-8fc7-40ce-843c-51ce7c49df6d
 ---
+
 # Global Assets
 
 >Applies To: Windows Azure Pack for Windows Server, System Center 2012 R2 Orchestrator

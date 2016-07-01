@@ -1,15 +1,16 @@
 ---
-title: About Importing Data from Comma-Separated Files into Service Manager
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - service-manager
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: db239f58-9852-4fb9-a7fd-251103a70dba
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  bandersmsft
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  About Importing Data from Comma Separated Files into Service Manager
+ms.technology:  service-manager
+ms.assetid:  db239f58-9852-4fb9-a7fd-251103a70dba
 ---
+
 # About Importing Data from Comma-Separated Files into Service Manager
 
 >Applies To: System Center 2016 Technical Preview - Service Manager
@@ -25,7 +26,7 @@ Configuration items contained in a comma-separated value (.csv) file can be impo
 -   Circumvent data entry through forms when many class instances must be created at the same time.
 
 > [!NOTE]
-> Importing many complex items—for example, 5,000 computer projections—could take an hour or more. During this time, Service Manager continues to function.
+> Importing many complex items-for example, 5,000 computer projections-could take an hour or more. During this time, Service Manager continues to function.
 
 Two files are required to import a set of instances by using the Import from CSV File feature:
 
@@ -71,8 +72,8 @@ For the type of data being imported, you find that the **Microsoft.Windows.Compu
 
 ```
 <CSVImportFormat>
-   <Class Type=”Microsoft.Windows.Computer”>
-      …
+   <Class Type="Microsoft.Windows.Computer">
+      ...
    </Class>
 </CSVImportFormat>
 ```
@@ -98,6 +99,3 @@ By using these properties, you construct the following format file. The properti
 ```
 
 Save this file as **newcomputers.xml**.
-
-
-

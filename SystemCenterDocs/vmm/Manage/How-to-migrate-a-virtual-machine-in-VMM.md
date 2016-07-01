@@ -1,25 +1,29 @@
 ---
-title: How to migrate a virtual machine in VMM
-ms.custom: na
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 4e9b5c25-679b-44d0-895f-ec3f7ca70699
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  rayne-wiselman
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  How to migrate a virtual machine in VMM
+ms.technology:  virtual-machine-manager
+ms.assetid:  4e9b5c25-679b-44d0-895f-ec3f7ca70699
 ---
+
 # How to migrate a virtual machine in VMM
 
 >Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
 
 This procedure describes how to migrate a virtual machine in Virtual Machine Manager (VMM). To perform a migration, you can use any of the following actions:
 
--   **Run the Migrate VM Wizard**—By using this wizard, you can select a destination virtual machine host for the migration, specify the path that stores the virtual machine files, attach the virtual machine to any of the virtual networks that are found on the selected host, and, if a storage area network (SAN) transfer is available, select a network transfer instead.
+-   **Run the Migrate VM Wizard**"By using this wizard, you can select a destination virtual machine host for the migration, specify the path that stores the virtual machine files, attach the virtual machine to any of the virtual networks that are found on the selected host, and, if a storage area network (SAN) transfer is available, select a network transfer instead.
 
--   **Run the Migrate Storage Wizard**— By using this wizard, you can move the files for a virtual machine to a different storage location on the same host.
+-   **Run the Migrate Storage Wizard**" By using this wizard, you can move the files for a virtual machine to a different storage location on the same host.
 
--   **Drag the virtual machine onto a host**—When you drag a virtual machine to a host, VMM uses automatic placement to place the virtual machine on the most suitable volume on the host. The placement is based on available space.
+-   **Drag the virtual machine onto a host**"When you drag a virtual machine to a host, VMM uses automatic placement to place the virtual machine on the most suitable volume on the host. The placement is based on available space.
 
--   **Drag the virtual machine onto a host group**—When you drag the virtual machine to a host group, VMM uses automatic placement to place the virtual machine on the most suitable host that is available in the host group, which is based on the virtual machine requirements and the host ratings. The virtual machine is placed on the most suitable volume on the host. The placement is based on available space. During automatic placement, the host rating process identifies the most suitable volume on each host. For more information, see [Understanding virtual machine placement and ratings in VMM](Understanding-virtual-machine-placement-and-ratings-in-VMM.md).
+-   **Drag the virtual machine onto a host group**"When you drag the virtual machine to a host group, VMM uses automatic placement to place the virtual machine on the most suitable host that is available in the host group, which is based on the virtual machine requirements and the host ratings. The virtual machine is placed on the most suitable volume on the host. The placement is based on available space. During automatic placement, the host rating process identifies the most suitable volume on each host. For more information, see [Understanding virtual machine placement and ratings in VMM](Understanding-virtual-machine-placement-and-ratings-in-VMM.md).
 
 Note the following before you begin migration:
 
@@ -52,11 +56,11 @@ Use the following procedure to migrate a virtual machine by using the Migrate VM
 
 4.  To get additional information about the host, select the host, and view the tabs in the details area:
 
-    -   **Details**—Indicates the status of the host, the operating system, and the type and status of virtualization software. Lists the virtual machines on the host.
+    -   **Details**"Indicates the status of the host, the operating system, and the type and status of virtualization software. Lists the virtual machines on the host.
 
-    -   **Rating Explanation**—Lists the factors that resulted in a 0 star rating.
+    -   **Rating Explanation**"Lists the factors that resulted in a 0 star rating.
 
-    -   **SAN Explanation** or **Deployment and Transfer Explanation**—Lists the factors that make a SAN transfer unavailable. In addition, the **Deployment and Transfer Explanation** tab provides an explanation if fast file copy cannot be used. Fast file copy is based on the Windows Offloaded Data Transfers (ODX) feature introduced in Windows Server 2012 R2. For information about ODX, see [Windows Offloaded Data Transfers Overview](http://technet.microsoft.com/library/hh831628.aspx).
+    -   **SAN Explanation** or **Deployment and Transfer Explanation**"Lists the factors that make a SAN transfer unavailable. In addition, the **Deployment and Transfer Explanation** tab provides an explanation if fast file copy cannot be used. Fast file copy is based on the Windows Offloaded Data Transfers (ODX) feature introduced in Windows Server 2012 R2. For information about ODX, see [Windows Offloaded Data Transfers Overview](http://technet.microsoft.com/library/hh831628.aspx).
 
 5.  In the **Select Path** page, accept the default path, or click **Browse** and browse to the folder in which you want to store the configuration files for the virtual machine, and then click **OK**. Note the following:
 

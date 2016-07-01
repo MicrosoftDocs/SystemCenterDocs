@@ -1,23 +1,24 @@
 ---
-title: Deploy a RAS Gateway using VMM
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.service: virtual-network
-ms.suite: na
-ms.technology:
-  - techgroup-networking
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 150b922a-d9fb-4b36-b964-e1738f054eb3
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  rayne-wiselman
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  Deploy a RAS Gateway using VMM
+ms.technology:  virtual-machine-manager
+ms.assetid:  150b922a-d9fb-4b36-b964-e1738f054eb3
+ms.service:  virtual-network
 ---
+
 # Deploy a RAS Gateway using VMM
 
 >Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
 
 ## Introduction
 
-This topic helps you evaluate the Software Defined Networking (SDN) features in [!INCLUDE[winthreshold_server_2_mdToken/winthreshold_server_2_md.md)] 5 and Virtual Machine Manager 2016 Technology Preview 5. In particular, this topic is focused on scenarios that incorporate a RAS Gateway with the Virtual Machine Manager (VMM).
+This topic helps you evaluate the Software Defined Networking (SDN) features in Windows Server Technical Preview 5 and Virtual Machine Manager 2016 Technology Preview 5. In particular, this topic is focused on scenarios that incorporate a RAS Gateway with the Virtual Machine Manager (VMM).
 
 A RAS Gateway is a data path element in SDN that enables Site-to-site (S2S) connectivity between two autonomous systems. Specifically, a RAS Gateway enables S2S connectivity between remote tenant networks and your datacenter using IPSec, Generic Routing Encapsulation (GRE) or Layer 3 Forwarding.
 
@@ -51,7 +52,7 @@ Refer to the toplogy diagram in the following Microsoft TechNet Library topic: [
 
 The diagram shows a sample 4-node setup. The setup is highly available with three network controller nodes (virtual machines), three SLB/MUX nodes, and three gateway virtual machines. It shows two tenants with one virtual network broken into two virtual subnets to simulate a web tier and a database tier. Both the infrastructure and tenant virtual machines can be redistributed across any physical host.
 
-All the gateway virtual machines must run [!INCLUDE[winthreshold_server_2_mdToken/winthreshold_server_2_md.md)] 5 with Zero Day Package.
+All the gateway virtual machines must run Windows Server Technical Preview 5 with Zero Day Package.
 
 #### Logical Networks
 
@@ -248,7 +249,7 @@ A S2S IPSec connection allows you to securely access remote virtual machines and
 10. Select the **Authentication** tab.
 11. Choose your preferred authentication method for the connection.
 
-  If you choose the authentication using �Run As Account�, then you need to create a user account with the username of your choice and the IPSec key as the password for the account. Browse and select this account as your Run As Account.
+  If you choose the authentication using "Run As Account", then you need to create a user account with the username of your choice and the IPSec key as the password for the account. Browse and select this account as your Run As Account.
 12. Select the **Routes** tab.
 13. Type all the remote subnets that you need to connect to.
 
@@ -347,3 +348,4 @@ To configure an L3 connection, use the following sample PowerShell script. You m
         Add-SCNetworkRoute -IPSubnet $route -RunAsynchronously -VPNConnection $vpnConnection
             -VMNetworkGateway $VmNetworkGateway
     }
+

@@ -1,15 +1,16 @@
 ---
-title: How to create VIP templates for Network Load Balancing (NLB) in VMM
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - virtual-machine-manager
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: b224c157-4a93-42d1-9eaa-898ef7e2a1dd
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  rayne-wiselman
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  How to create VIP templates for Network Load Balancing  NLB  in VMM
+ms.technology:  virtual-machine-manager
+ms.assetid:  b224c157-4a93-42d1-9eaa-898ef7e2a1dd
 ---
+
 # How to create VIP templates for Network Load Balancing (NLB) in VMM
 You can use the following procedure to create a virtual IP (VIP) template for Microsoft Network Load Balancing (NLB) in Virtual Machine Manager (VMM). A VIP template contains load balancer-related configuration settings for a specific type of network traffic. For example, you could create a template that specifies the load balancing behavior for HTTPS traffic on port 443.
 

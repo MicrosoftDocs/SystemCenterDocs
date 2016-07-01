@@ -1,15 +1,16 @@
 ---
-title: Authoring Automation Runbooks
-ms.custom: na
-ms.prod: system-center-2012
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - orchestrator
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: a8b7e82f-e3fc-4286-8570-8d5ded944b27
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  bwren
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  Authoring Automation Runbooks
+ms.technology:  service-management-automation
+ms.assetid:  a8b7e82f-e3fc-4286-8570-8d5ded944b27
 ---
+
 # Authoring Automation Runbooks
 
 >Applies To: Windows Azure Pack for Windows Server, System Center 2012 R2 Orchestrator
@@ -47,7 +48,7 @@ The following topics provide information on creating and working with Automation
 
 -   [Editing a Runbook](Editing-a-Runbook.md)
 
-    Details on how to edit a runbook once it’s created.
+    Details on how to edit a runbook once it"s created.
 
 -   [Publishing a Runbook](Publishing-a-Runbook.md)
 

@@ -1,15 +1,16 @@
 ---
-title: Registering Source Systems to the System Center Data Warehouse
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - service-manager
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 7f48a1c7-dc88-447d-8bde-8af76783e2d3
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  bandersmsft
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  Registering Source Systems to the System Center Data Warehouse
+ms.technology:  service-manager
+ms.assetid:  7f48a1c7-dc88-447d-8bde-8af76783e2d3
 ---
+
 # Registering Source Systems to the System Center Data Warehouse
 
 >Applies To: System Center 2016 Technical Preview - Service Manager

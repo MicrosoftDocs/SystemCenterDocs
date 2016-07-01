@@ -1,15 +1,16 @@
 ---
-title: Using and Managing Standard Reports
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - service-manager
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 89cef640-a705-4755-96b1-cedb54ff79db
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  bandersmsft
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  Using and Managing Standard Reports
+ms.technology:  service-manager
+ms.assetid:  89cef640-a705-4755-96b1-cedb54ff79db
 ---
+
 # Using and Managing Standard Reports
 
 >Applies To: System Center 2016 Technical Preview - Service Manager

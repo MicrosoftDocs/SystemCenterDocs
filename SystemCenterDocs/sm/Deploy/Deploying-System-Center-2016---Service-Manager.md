@@ -1,15 +1,16 @@
 ---
-title: Deploying System Center 2016 - Service Manager
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - service-manager
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 969dde63-c60f-4831-8e52-071cf77b104d
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  bandersmsft
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  Deploying System Center 2016   Service Manager
+ms.technology:  service-manager
+ms.assetid:  969dde63-c60f-4831-8e52-071cf77b104d
 ---
+
 # Deploying System Center 2016 - Service Manager
 
 >Applies To: System Center 2016 Technical Preview - Service Manager
@@ -38,6 +39,3 @@ This guide also describes how to find and read the Setup log if you encounter is
 -   [Moving the Service Manager Database](Moving-the-Service-Manager-Database.md)
 
 -   [Moving Data Warehouse Databases](Moving-Data-Warehouse-Databases.md)
-
-
-

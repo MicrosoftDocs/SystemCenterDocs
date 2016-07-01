@@ -1,12 +1,16 @@
 ---
-title: How to install the VMM agent for Linux
-ms.custom: na
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 3d5c6849-0224-4389-bdc5-86d0ca77a139
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  rayne-wiselman
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  How to install the VMM agent for Linux
+ms.technology:  virtual-machine-manager
+ms.assetid:  3d5c6849-0224-4389-bdc5-86d0ca77a139
 ---
+
 # How to install the VMM agent for Linux
 
 >Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
@@ -17,7 +21,7 @@ Before you can use Virtual Machine Manager (VMM) to manage a virtual machine wit
 
 1.  On the VMM management server, open a command prompt session, with administrative rights.
 
-2.  Go to the ‘c:\Program Files\Microsoft System Center 2012\Virtual Machine Manager\agents\Linux’ folder.
+2.  Go to the "c:\Program Files\Microsoft System Center 2012\Virtual Machine Manager\agents\Linux" folder.
 
 3.  Copy all the agent installation files from that folder to a new folder on the virtual machine, and then, on the virtual machine on which Linux is running as a guest operating system, open the new folder.
 

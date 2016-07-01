@@ -1,15 +1,16 @@
 ---
-title: Scheduling a Runbook
-ms.custom: na
-ms.prod: system-center-2012
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - orchestrator
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: e7929b96-7057-4b18-bcd6-9d4a9f8566da
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  bwren
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  Scheduling a Runbook
+ms.technology:  service-management-automation
+ms.assetid:  e7929b96-7057-4b18-bcd6-9d4a9f8566da
 ---
+
 # Scheduling a Runbook
 
 >Applies To: Windows Azure Pack for Windows Server
@@ -47,7 +48,7 @@ $scheduleName = 'My Daily Schedule'
 $startTime = (Get-Date).Date.AddHours(12)
 $expiryTime = $startTime.AddYears(1)
 
-Set-SmaSchedule –WebServiceEndpoint $webServer –Port $port –Name $scheduleName –ScheduleType OneTimeSchedule –StartTime $startTime –ExpiryTime $expiryTime –DayInterval 1
+Set-SmaSchedule "WebServiceEndpoint $webServer "Port $port "Name $scheduleName "ScheduleType OneTimeSchedule "StartTime $startTime "ExpiryTime $expiryTime "DayInterval 1
 ```
 
 ## <a name="Link"></a>Linking a Schedule to a Runbook
@@ -70,7 +71,7 @@ A runbook can be linked to multiple schedules, and a schedule can have multiple 
 7.  If the runbook has parameters, you will be prompted for their values.
 
 ### To link a schedule to a runbook with Windows PowerShell
-You can use the [Start-SmaRunbook](http://aka.ms/runbookauthor/startsmarunbook) with the **ScheduleName** parameter to link a schedule to a runbook. You can specify values for the runbook’s parameters with the **Parameters** parameter. See [Starting a Runbook](Starting-a-Runbook.md) for more information on specifying parameter values.
+You can use the [Start-SmaRunbook](http://aka.ms/runbookauthor/startsmarunbook) with the **ScheduleName** parameter to link a schedule to a runbook. You can specify values for the runbook"s parameters with the **Parameters** parameter. See [Starting a Runbook](Starting-a-Runbook.md) for more information on specifying parameter values.
 
 The following sample commands show how to link a schedule to a runbook.
 
@@ -80,7 +81,7 @@ $port = 9090
 $runbookName = "Test-Runbook"
 $scheduleName = "Sample-DailySchedule"
 
-Start-SmaRunbook –WebServiceEndpoint $webServer –Port $port –Name $runbookName –ScheduleName $scheduleName –Parameters $params
+Start-SmaRunbook "WebServiceEndpoint $webServer "Port $port "Name $runbookName "ScheduleName $scheduleName "Parameters $params
 
 ```
 

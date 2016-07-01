@@ -1,15 +1,16 @@
 ---
-title: Install Orchestrator
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - orchestrator
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: b5fb194b-d73b-4d75-8077-b06f578e0943
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  bwren
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  Install Orchestrator
+ms.technology:  orchestrator
+ms.assetid:  b5fb194b-d73b-4d75-8077-b06f578e0943
 ---
+
 # Install Orchestrator
 
 >Applies To: System Center 2016 Technical Preview - Orchestrator

@@ -1,12 +1,16 @@
 ---
-title: How to configure SQL Server Analysis Services for VMM
-ms.custom: na
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 3af9228e-96a3-4eea-a97c-0c5bfa95d937
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  rayne-wiselman
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  How to configure SQL Server Analysis Services for VMM
+ms.technology:  virtual-machine-manager
+ms.assetid:  3af9228e-96a3-4eea-a97c-0c5bfa95d937
 ---
+
 # How to configure SQL Server Analysis Services for VMM
 
 >Applies To: System Center 2016 Technical Preview - Virtual Machine Manager

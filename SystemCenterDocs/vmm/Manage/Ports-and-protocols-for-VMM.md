@@ -1,12 +1,16 @@
 ---
-title: Ports and protocols for VMM
-ms.custom: na
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 6a33f439-9e47-443d-b36c-359986260df9
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  rayne-wiselman
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  Ports and protocols for VMM
+ms.technology:  virtual-machine-manager
+ms.assetid:  6a33f439-9e47-443d-b36c-359986260df9
 ---
+
 # Ports and protocols for VMM
 
 >Applies To: System Center 2016 Technical Preview - Virtual Machine Manager

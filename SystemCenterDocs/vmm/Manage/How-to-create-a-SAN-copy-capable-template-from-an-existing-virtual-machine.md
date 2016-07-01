@@ -1,12 +1,16 @@
 ---
-title: How to create a SAN copy-capable template from an existing virtual machine
-ms.custom: na
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: fd02e62b-86f9-4282-a857-453c0641a2a9
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  rayne-wiselman
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  How to create a SAN copy capable template from an existing virtual machine
+ms.technology:  virtual-machine-manager
+ms.assetid:  fd02e62b-86f9-4282-a857-453c0641a2a9
 ---
+
 # How to create a SAN copy-capable template from an existing virtual machine
 
 >Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
@@ -18,7 +22,7 @@ Before you begin these procedures, make sure that the following prerequisites ar
 
 -   Your configuration must meet all the prerequisites that are defined in the [Prerequisites for rapid provisioning using SAN copy](Using-SAN-copy-to-rapidly-provision-virtual-machines.md#BKMK_prereq) section of "Rapid Provisioning of Virtual Machines Using SAN Copy Overview."
 
--   If you want to perform this procedure entirely within VMM, you must add the library server as a managed Hyper-V host. This enables you to assign the logical unit to the library server through VMM. If you do not want to make the library a managed Hyper-V host, you can use your array vendor’s management tools to assign the logical unit to the library server.
+-   If you want to perform this procedure entirely within VMM, you must add the library server as a managed Hyper-V host. This enables you to assign the logical unit to the library server through VMM. If you do not want to make the library a managed Hyper-V host, you can use your array vendor"s management tools to assign the logical unit to the library server.
 
 -   You must have an existing virtual hard disk (that was generalized by using Sysprep) that you want to use as a base image for rapid provisioning.
 
@@ -35,7 +39,7 @@ Before you begin these procedures, make sure that the following prerequisites ar
     > [!IMPORTANT]
     > When you create the logical unit, choose the option **Mount in the following empty NTFS folder**, click **Browse**, and then click the folder that you created in the Prerequisites section. Do not assign a drive letter. Also, do not ever create multiple mount points to the folder.
 
-    If the library server is not a managed Hyper-V host, use your array vendor’s management tools to create the logical unit, and to unmask the logical unit to the library server. Then, mount the logical unit to the folder path in the library share that you created in the Prerequisites section of this topic. To do this, follow these steps:
+    If the library server is not a managed Hyper-V host, use your array vendor"s management tools to create the logical unit, and to unmask the logical unit to the library server. Then, mount the logical unit to the folder path in the library share that you created in the Prerequisites section of this topic. To do this, follow these steps:
 
     1.  Open Disk Management. To do this, click **Start**, type **diskmgmt.msc** in the search box, and then press ENTER.
 

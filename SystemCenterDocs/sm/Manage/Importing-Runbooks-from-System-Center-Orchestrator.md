@@ -1,15 +1,16 @@
 ---
-title: Importing Runbooks from System Center Orchestrator
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - service-manager
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 33f8fa88-fad7-4354-bf6b-dbed1658ff0f
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  bandersmsft
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  Importing Runbooks from System Center Orchestrator
+ms.technology:  service-manager
+ms.assetid:  33f8fa88-fad7-4354-bf6b-dbed1658ff0f
 ---
+
 # Importing Runbooks from System Center Orchestrator
 
 >Applies To: System Center 2016 Technical Preview - Service Manager
@@ -41,7 +42,7 @@ You can use the following procedures to create a connector for System Center 201
 
     3.  On the **Connection** page, in the **Server Information** area, type the URL of the Orchestrator Web service.
 
-        1.  Type the URL of the Orchestrator Web service in the form of http://<computer\>:<port\>/Orchestrator2012/Orchestrator.svc, where <computer\> is the name of the computer hosting the web service and <port\> is the port number where the web service is installed. (The default port number is 81.)
+        1.  Type the URL of the Orchestrator Web service in the form of http://computer:port/Orchestrator2012/Orchestrator.svc, where *computer* is the name of the computer hosting the web service and *port* is the port number where the web service is installed. (The default port number is 81.)
 
     4.  On the **Connection** page, in the **Credentials** area, either select an existing account or click **New**, and then do the following:
 
@@ -50,15 +51,15 @@ You can use the following procedures to create a connector for System Center 201
             > [!NOTE]
             > Special characters (such as the ampersand [&]) in the **User Name** box are not supported.
 
-        2.  In the **Test Connection** dialog box, make sure that the message “The connection to the server was successful” appears, and then click **OK**. On the **Connection** page, click **Next**.
+        2.  In the **Test Connection** dialog box, make sure that the message *The connection to the server was successful* appears, and then click **OK**. On the **Connection** page, click **Next**.
 
     5.  On the **Folder** page, select a folder, and then click **Next**.
 
-    6.  On the **Web Console URL** page, type the URL for the Orchestrator web console in the form of http://<computer\>:port (the default port number is 82), and then click **Next**.
+    6.  On the **Web Console URL** page, type the URL for the Orchestrator web console in the form of http://computer:port (the default port number is 82), and then click **Next**.
 
     7.  On the **Summary** page, make sure that the settings are correct, and then click **Create**.
 
-    8.  On the **Completion** page, make sure that you receive the message “Orchestrator connector successfully created,” and then click **Close**.
+    8.  On the **Completion** page, make sure that you receive the message *Orchestrator connector successfully created*, and then click **Close**.
 
 ### To validate the creation of an Orchestrator connector
 
@@ -132,6 +133,3 @@ You can use the following procedures to disable or enable an Orchestrator connec
 ### To validate the status change of an Orchestrator connector
 
 - In the middle pane, locate the connector for which you have changed status, and then verify the value in the **Enabled** column.
-
-
-

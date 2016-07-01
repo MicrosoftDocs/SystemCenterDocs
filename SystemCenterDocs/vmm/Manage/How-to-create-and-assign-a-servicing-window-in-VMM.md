@@ -1,12 +1,16 @@
 ---
-title: How to create and assign a servicing window in VMM
-ms.custom: na
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 977826e7-4a33-4dba-8666-6b66bc751280
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  rayne-wiselman
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  How to create and assign a servicing window in VMM
+ms.technology:  virtual-machine-manager
+ms.assetid:  977826e7-4a33-4dba-8666-6b66bc751280
 ---
+
 # How to create and assign a servicing window in VMM
 
 >Applies To: System Center 2016 Technical Preview - Virtual Machine Manager

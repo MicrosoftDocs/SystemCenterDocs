@@ -1,15 +1,16 @@
 ---
-title: How to Add Request Offerings to Service Offerings
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - service-manager
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: d8a44806-ddfd-4a5d-8286-c167bb2b9595
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  bandersmsft
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  How to Add Request Offerings to Service Offerings
+ms.technology:  service-manager
+ms.assetid:  d8a44806-ddfd-4a5d-8286-c167bb2b9595
 ---
+
 # How to Add Request Offerings to Service Offerings
 
 >Applies To: System Center 2016 Technical Preview - Service Manager
@@ -22,9 +23,6 @@ Service offerings are logical groups of request offerings. For a service offerin
 
 2.  In the **Library** pane, expand **Service Catalog**, and then select **Published Request Offerings**.
 
-3.  In the **Published Request Offerings** list, select one or more request offerings, and in the **Tasks** pane under **<RequestOfferingName\>**, click **Add to Service Offering**.
+3.  In the **Published Request Offerings** list, select one or more request offerings, and in the **Tasks** pane under **RequestOfferingName**, click **Add to Service Offering**.
 
 4.  In the **Select objects** dialog box, select the service offering that you want to associate the request offering with, click **Add**, and then click **OK** to close the dialog box.
-
-
-

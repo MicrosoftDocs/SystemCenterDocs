@@ -1,15 +1,16 @@
 ---
-title: Moving the Service Manager Database
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - service-manager
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 0c83c9a4-720f-4327-98b9-16dca71a13b2
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  bandersmsft
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  Moving the Service Manager Database
+ms.technology:  service-manager
+ms.assetid:  0c83c9a4-720f-4327-98b9-16dca71a13b2
 ---
+
 # Moving the Service Manager Database
 
 >Applies To: System Center 2016 Technical Preview - Service Manager
@@ -36,7 +37,7 @@ You must use the following high-level steps to move the Service Manager database
 
     -   MT_Microsoft$Systemcenter$Datawarehouse$CMDBSource
 
-        -   In the corresponding entry with DataSourceName_GUID = <Service Manager Data Source Name>, change the field DatabaseServer_GUID with the new name of the SQLServer\Instance where the ServiceManager database has moved to.
+        -   In the corresponding entry with DataSourceName_GUID = *Service Manager Data Source Name*, change the field DatabaseServer_GUID with the new name of the SQLServer\Instance where the ServiceManager database has moved to.
 
     -   MT_Microsoft$Systemcenter$ResourceAccessLayer$SqlResourceStore
 
@@ -70,7 +71,7 @@ You must use the following high-level steps to move the Service Manager database
     SET @crlf = CHAR(13) + CHAR(10);
     SET @tab = CHAR(9);
 
-    SELECT 
+    SELECT
            'EXEC sp_addmessage ' + @crlf + @tab
             + '@msgnum = ' + CAST(m.message_id AS varchar(30))
                   + ', ' + @crlf + @tab
@@ -78,24 +79,21 @@ You must use the following high-level steps to move the Service Manager database
                   + ', ' + @crlf + @tab
           + '@msgtext = N''' + REPLACE(m.[text],'''','''''')  
                   + ''''  + ', ' + @crlf + @tab
-            + '@lang = ''' + 
-                  (SELECT TOP 1 alias 
-                   FROM master.sys.syslanguages l 
-                   WHERE l.lcid = m.language_id) 
+            + '@lang = ''' +
+                  (SELECT TOP 1 alias
+                   FROM master.sys.syslanguages l
+                   WHERE l.lcid = m.language_id)
                    + ''', ' + @crlf + @tab
-          + '@with_log = ''' + 
-                  CASE WHEN m.is_event_logged = 1 
+          + '@with_log = ''' +
+                  CASE WHEN m.is_event_logged = 1
                    THEN 'TRUE' ELSE 'FALSE' END   + ''', ' +  @crlf + @tab
                   -- Uncomment ONLY if you want to replace:
-            + '@replace = ''replace'';' 
-            + @crlf + 'GO' + @crlf + @crlf 
-    FROM 
+            + '@replace = ''replace'';'
+            + @crlf + 'GO' + @crlf + @crlf
+    FROM
             master.sys.messages m
-    WHERE 
+    WHERE
            m.message_id > 50000;
 
     GO
     ```
-
-
-

@@ -1,15 +1,16 @@
 ---
-title: Prerequisites: creating a host cluster in VMM from existing Windows servers
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - virtual-machine-manager
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: ce4332bc-814c-42de-bb89-4947c4e42d68
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  rayne-wiselman
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  Prerequisites  creating a host cluster in VMM from existing Windows servers
+ms.technology:  virtual-machine-manager
+ms.assetid:  ce4332bc-814c-42de-bb89-4947c4e42d68
 ---
+
 # Prerequisites: creating a host cluster in VMM from existing Windows servers
 
 >Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
@@ -50,12 +51,12 @@ If you are using Fibre Channel or iSCSI storage, your hosts must have access to 
 
     If you add a host to VMM management before you add the MPIO feature, you must add the MPIO feature, and then manually configure MPIO to add the discovered device hardware IDs. Or, you can install vendor-specific DSMs.
 
--   **Fibre Channel**: If you are using a Fibre Channel storage array network (SAN), each host must have a host bus adapter (HBA) installed, and zoning must be correctly configured. For more information, see your storage array vendor’s documentation.
+-   **Fibre Channel**: If you are using a Fibre Channel storage array network (SAN), each host must have a host bus adapter (HBA) installed, and zoning must be correctly configured. For more information, see your storage array vendor"s documentation.
 
 -   **iSCSI**: If you are using an iSCSI SAN, make sure that iSCSI portals have been added and that the iSCSI initiator is logged into the array. Additionally, make sure that the Microsoft iSCSI Initiator Service on each host is started and set to Automatic.
 
     > [!IMPORTANT]
-    > In VMM, a "storage group" binds together host initiators, target ports, and logical units. A storage group contains the host’s initiator IDs (one or more), in the form of either iSCSI Qualified Name (IQN) or World Wide Name (WWN). A storage group also contains one or more target ports and one or more logical units. Logical units are exposed to the host initiators through the target ports.
+    > In VMM, a "storage group" binds together host initiators, target ports, and logical units. A storage group contains the host"s initiator IDs (one or more), in the form of either iSCSI Qualified Name (IQN) or World Wide Name (WWN). A storage group also contains one or more target ports and one or more logical units. Logical units are exposed to the host initiators through the target ports.
     > 
     > By default, when VMM manages the assignment of logical units, VMM creates one storage group per host, either a stand-alone host or a host cluster node. However, for some storage arrays, it is preferable to use one storage group for the entire cluster, where host initiators for all cluster nodes are contained in a single storage group. To support this configuration, you must set the `CreateStorageGroupsPerCluster` property to `$true` by using the [Set-SCStorageArray](http://technet.microsoft.com/library/jj613218.aspx) cmdlet.
 

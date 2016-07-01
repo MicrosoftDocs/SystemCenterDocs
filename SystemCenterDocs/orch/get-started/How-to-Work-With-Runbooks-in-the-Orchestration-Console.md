@@ -1,15 +1,16 @@
 ---
-title: How to Work With Runbooks in the Orchestration Console
-ms.custom: na
-ms.prod: system-center-2012
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - orchestrator
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 4c844a02-9fb0-4c32-834c-22b90459c476
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  bwren
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  How to Work With Runbooks in the Orchestration Console
+ms.technology:  orchestrator
+ms.assetid:  4c844a02-9fb0-4c32-834c-22b90459c476
 ---
+
 # How to Work With Runbooks in the Orchestration Console
 
 >Applies To: System Center 2012 SP1 - Orchestrator, System Center 2012 - Orchestrator, System Center 2012 R2 Orchestrator

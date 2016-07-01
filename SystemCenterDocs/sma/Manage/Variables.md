@@ -1,15 +1,16 @@
 ---
-title: Variables
-ms.custom: na
-ms.prod: system-center-2012
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - orchestrator
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: e7e41871-6acf-4531-970f-92e1cb86eefb
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  bwren
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  Variables
+ms.technology:  service-management-automation
+ms.assetid:  e7e41871-6acf-4531-970f-92e1cb86eefb
 ---
+
 # Variables
 
 >Applies To: Windows Azure Pack for Windows Server, System Center 2012 R2 Orchestrator
@@ -53,7 +54,7 @@ The activities in the following table are used to access variables in a runbook.
 |Set-AutomationVariable|Sets the value for an existing variable.|
 
 > [!NOTE]
-> You should avoid using variables in the –Name parameter of Get-AutomationVariable since this can complicate discovering dependencies between runbooks and Automation variables.
+> You should avoid using variables in the "Name parameter of Get-AutomationVariable since this can complicate discovering dependencies between runbooks and Automation variables.
 
 ## Creating a New Automation variable
 
@@ -84,7 +85,7 @@ The [Set-SmaVariable](http://aka.ms/runbookauthor/cmdlet/setsmavariable) cmdlet 
 $web = 'https://MySMAServer'
 $port = 9090
 
-Set-SMAVariable –WebServiceEndpoint $web –Port $port –Name 'MyVariable' –Value 'My String'
+Set-SMAVariable "WebServiceEndpoint $web "Port $port "Name 'MyVariable' "Value 'My String'
 ```
 
 ## Using a variable in a runbook
@@ -102,7 +103,7 @@ Use the **Get-AutomationVariable** activity to use a variable in a runbook.
     for ($i = 1; $i -le $NumberOfIterations; $i++) {
        Write-Output "$i`: $SampleMessage"
     }
-    Set-AutomationVariable –Name NumberOfRunnings –Value (NumberOfRunngs += 1)
+    Set-AutomationVariable "Name NumberOfRunnings "Value (NumberOfRunngs += 1)
     ```
 
 ## See Also

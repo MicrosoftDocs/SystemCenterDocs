@@ -1,15 +1,16 @@
 ---
-title: Deploy Service Management Automation
-ms.custom: na
-ms.prod: system-center-2012
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - service-management-automation-(sma)
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 23bd8d24-8588-4701-9f69-bc023dcf3d7d
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  bwren
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  Deploy Service Management Automation
+ms.technology:  service-management-automation
+ms.assetid:  23bd8d24-8588-4701-9f69-bc023dcf3d7d
 ---
+
 # Deploy Service Management Automation
 
 >Applies To: System Center Technical Preview

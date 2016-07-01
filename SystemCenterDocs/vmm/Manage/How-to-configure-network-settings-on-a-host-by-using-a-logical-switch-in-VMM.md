@@ -1,15 +1,16 @@
 ---
-title: How to configure network settings on a host by using a logical switch in VMM
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - virtual-machine-manager
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 06b231a6-4587-4e91-887e-583c0f1e380a
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  rayne-wiselman
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  How to configure network settings on a host by using a logical switch in VMM
+ms.technology:  virtual-machine-manager
+ms.assetid:  06b231a6-4587-4e91-887e-583c0f1e380a
 ---
+
 # How to configure network settings on a host by using a logical switch in VMM
 
 >Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
@@ -88,7 +89,7 @@ The following tips may also be useful:
 > **Network optimizations**: VMM can detect whether the operating system on your host provides the network optimizations called Virtual Machine Queue (VMQ) or TCP Chimney Offload. If VMM detects either of them, it displays a message saying **Network optimization is available**. Look for the message in the **Host Properties** dialog box, on the **Virtual Switches** tab.
 
 > [!TIP]
-> **Compliance of network settings**: If you're using logical switches, you can later check to see if the network adapter settings on a host are still in compliance with the logical switch settings. If they’re not, you can use VMM to bring them back into compliance. For more information, see [How to bring host network adapters into compliance with logical switch settings in VMM](How-to-bring-host-network-adapters-into-compliance-with-logical-switch-settings-in-VMM.md).
+> **Compliance of network settings**: If you're using logical switches, you can later check to see if the network adapter settings on a host are still in compliance with the logical switch settings. If they"re not, you can use VMM to bring them back into compliance. For more information, see [How to bring host network adapters into compliance with logical switch settings in VMM](How-to-bring-host-network-adapters-into-compliance-with-logical-switch-settings-in-VMM.md).
 
 ## See Also
 [How to configure network settings on a Hyper-V host in VMM](How-to-configure-network-settings-on-a-Hyper-V-host-in-VMM.md)

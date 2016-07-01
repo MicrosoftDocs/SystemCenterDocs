@@ -1,15 +1,16 @@
 ---
-title: Architecture of Service Management Automation
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - service-management-automation-(sma)
-ms.tgt_pltfrm: na
-ms.topic: get-started-article
-ms.assetid: cefc0b34-d77a-4f17-8f69-68b4282beea7
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  bwren
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  Architecture of Service Management Automation
+ms.technology:  service-management-automation
+ms.assetid:  cefc0b34-d77a-4f17-8f69-68b4282beea7
 ---
+
 # Architecture of Service Management Automation
 
 >Applies To: System Center Technical Preview

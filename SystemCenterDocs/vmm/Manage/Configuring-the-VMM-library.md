@@ -1,12 +1,16 @@
 ---
-title: Configuring the VMM library
-ms.custom: na
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 93ff3733-9789-4b64-96df-10e74034390a
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  rayne-wiselman
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  Configuring the VMM library
+ms.technology:  virtual-machine-manager
+ms.assetid:  93ff3733-9789-4b64-96df-10e74034390a
 ---
+
 # Configuring the VMM library
 
 >Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
@@ -28,7 +32,7 @@ The VMM library can store the following types of resources:
     |ISO image files|.iso|
     |PowerShell scripts|.ps1|
     |SQL Server scripts|.sql|
-    |Web Deploy (MSDeploy) packages **Note:** These appear in the library as the “Web Application Package” type.|.zip|
+    |Web Deploy (MSDeploy) packages **Note:** These appear in the library as the "Web Application Package" type.|.zip|
     |SQL Server data-tier applications (DACs)|.dacpac|
     |Driver files|.inf **Important:** If you add driver files, we strongly recommend that you create a separate folder for each driver package, and that you do not mix resources in the driver folders. If you include other library resources such as .iso images, .vhd files or scripts with an .inf file name extension in the same folder, the library will not discover those resources. Also, realize that when you delete an .inf driver package from the library, VMM deletes the entire folder where the driver .inf file resides. For more information, see [How to add driver files to the VMM library](How-to-add-driver-files-to-the-VMM-library.md).|
     |Answer files|.inf, .xml|
@@ -36,7 +40,7 @@ The VMM library can store the following types of resources:
     |Virtual floppy disks|.vfd (Hyper-V), .flp (VMware)|
 
     > [!NOTE]
-    > Virtual hard disks, ISO images, and virtual floppy disks that are attached to a stored virtual machine, and the configuration files for stored virtual machines, are indexed in VMM but are not displayed as physical resources. The virtual machine configuration files are created by the virtualization software but are not used by VMM. VMM stores a stored virtual machine’s configuration in the VMM database. Virtual machine configuration files include .vmc, .xml, and .vmx (VMware) files.
+    > Virtual hard disks, ISO images, and virtual floppy disks that are attached to a stored virtual machine, and the configuration files for stored virtual machines, are indexed in VMM but are not displayed as physical resources. The virtual machine configuration files are created by the virtualization software but are not used by VMM. VMM stores a stored virtual machine"s configuration in the VMM database. Virtual machine configuration files include .vmc, .xml, and .vmx (VMware) files.
 
 -   **Templates and profiles**. Templates and profiles are used to standardize the creation of virtual machines and services. These configurations are stored in the VMM database but are not represented by physical configuration files. There are several types of templates and profiles in VMM, most of which are used for service creation. There are also host profiles and physical computer profiles, used for deploying a Hyper-V host from a bare-metal computer, and capability profiles, used to specify the capabilities of virtual machines on each type of supported hypervisor when virtual machines are deployed to a private cloud.
 
@@ -80,7 +84,7 @@ The VMM library can store the following types of resources:
 For information about the supported operating systems for the library server role, see[Preparing your environment for System Center 2016 - Virtual Machine Manager](../Deploy/Preparing-your-environment-for-System-Center-2016---Virtual-Machine-Manager.md).
 
 ## High availability
-To make the library server highly available, you can create highly available file shares on a clustered file server that meets the operating system requirements that are outlined in the ‘Operating System Requirements’ section above. For more information about creating failover clusters, see[Create a Failover Cluster](http://technet.microsoft.com/library/dn505754.aspx).
+To make the library server highly available, you can create highly available file shares on a clustered file server that meets the operating system requirements that are outlined in the "Operating System Requirements" section above. For more information about creating failover clusters, see[Create a Failover Cluster](http://technet.microsoft.com/library/dn505754.aspx).
 
 > [!IMPORTANT]
 > Do not create highly available file shares for the VMM library on the same cluster as a highly available VMM management server installation. VMM does not support this configuration.

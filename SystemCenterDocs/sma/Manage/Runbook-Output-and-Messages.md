@@ -1,15 +1,16 @@
 ---
-title: Runbook Output and Messages
-ms.custom: na
-ms.prod: system-center-2012
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - orchestrator
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: db18c324-ee25-4b6f-a7e6-2ea019a623d6
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  bwren
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  Runbook Output and Messages
+ms.technology:  service-management-automation
+ms.assetid:  db18c324-ee25-4b6f-a7e6-2ea019a623d6
 ---
+
 # Runbook Output and Messages
 
 >Applies To: Windows Azure Pack for Windows Server, System Center 2012 R2 Orchestrator
@@ -34,7 +35,7 @@ You can write data to the output stream using [Write-Output](http://aka.ms/runbo
 
 ```powershell
 #The following lines both write an object to the output stream.
-Write-Object –InputObject $object
+Write-Object "InputObject $object
 $object
 ```
 
@@ -104,8 +105,8 @@ Create a warning or error message using the [Write-Warning](http://aka.ms/runboo
 #The following lines create a warning message and then an error message that will suspend the runbook.
 
 $ErrorActionPreference = "Stop"
-Write-Warning –Message "This is a warning message."
-Write-Error –Message "This is an error message that will stop the runbook because of the preference variable."
+Write-Warning "Message "This is a warning message."
+Write-Error "Message "This is an error message that will stop the runbook because of the preference variable."
 ```
 
 ### <a name="Verbose"></a>Verbose Stream
@@ -120,7 +121,7 @@ Create a verbose message using the [Write-Verbose](http://aka.ms/runbookauthor/c
 ```
 #The following line creates a verbose message.
 
-Write-Verbose –Message "This is a verbose message."
+Write-Verbose "Message "This is a verbose message."
 ```
 
 ### <a name="Debug"></a>Debug Stream
@@ -164,16 +165,16 @@ The following example starts a sample runbook and then waits for it to complete.
 $webServer = 'https://MyServer'
 $port = 9090
 $runbookName = "Test-Runbook"
-$job = Start-SmaRunbook –WebServiceEndpoint $webServer –Port $port –Name $runbookName
+$job = Start-SmaRunbook "WebServiceEndpoint $webServer "Port $port "Name $runbookName
 
 $doLoop = $true
 While ($doLoop) {
-   $job = Get-SmaJob –WebServiceEndpoint $webServer –Port $port -Id $job.Id
+   $job = Get-SmaJob "WebServiceEndpoint $webServer "Port $port -Id $job.Id
    $status = $job.Status
    $doLoop = (($status -ne "Completed") -and ($status -ne "Failed") -and ($status -ne "Suspended") -and ($status -ne "Stopped") 
 }
 
-Get-SmaJobOutput –WebServiceEndpoint $webServer –Port $port -Id $job.Id –Stream Output
+Get-SmaJobOutput "WebServiceEndpoint $webServer "Port $port -Id $job.Id "Stream Output
 ```
 
 ## See Also

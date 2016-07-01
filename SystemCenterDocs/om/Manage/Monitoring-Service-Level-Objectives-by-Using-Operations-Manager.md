@@ -19,7 +19,7 @@ ms.assetid:  c7f7aac4-41b4-4094-bad6-3a509ff71bba
 
 To ensure that resources, such as applications and systems, are available and performing at acceptable levels, companies set goals for their service availability and response times. System Center Operations Manager provides the capability to monitor these service goals by tracking service level objectives.
 
-Service level objectives are measurements to ensure that you are meeting defined service level commitments. In Operations Manager, you define a service level objective – the set of monitors that you need to track (such as performance or availability) – and then run reports against that service level objective to ensure that you are meeting your goals.
+Service level objectives are measurements to ensure that you are meeting defined service level commitments. In Operations Manager, you define a service level objective - the set of monitors that you need to track (such as performance or availability) - and then run reports against that service level objective to ensure that you are meeting your goals.
 
 Using the information from these reports, you can identify any shortfalls between your service level objectives and your actual performance. This means that you are not only aware of problems, but also can track the relative business effect of these problems.
 

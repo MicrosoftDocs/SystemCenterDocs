@@ -1,12 +1,16 @@
 ---
-title: How to allocate storage pools to a host group in VMM
-ms.custom: na
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 109cc677-3ae5-4a89-b8bb-12fa9d5f2f13
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  rayne-wiselman
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  How to allocate storage pools to a host group in VMM
+ms.technology:  virtual-machine-manager
+ms.assetid:  109cc677-3ae5-4a89-b8bb-12fa9d5f2f13
 ---
+
 # How to allocate storage pools to a host group in VMM
 
 >Applies To: System Center 2016 Technical Preview - Virtual Machine Manager

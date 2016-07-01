@@ -1,15 +1,16 @@
 ---
-title: Glossary for System Center Technical Preview - Virtual Machine Manager
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - virtual-machine-manager
-ms.tgt_pltfrm: na
-ms.topic: get-started-article
-ms.assetid: 5cf979fe-a901-4936-a348-ae1fd3b34c7b
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  rayne-wiselman
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  Glossary for System Center Technical Preview   Virtual Machine Manager
+ms.technology:  virtual-machine-manager
+ms.assetid:  5cf979fe-a901-4936-a348-ae1fd3b34c7b
 ---
+
 # Glossary for System Center Technical Preview - Virtual Machine Manager
 
 >Applies To: System Center 2016 Technical Preview - Virtual Machine Manager

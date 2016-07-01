@@ -1,15 +1,16 @@
 ---
-title: How to Override a Default Price Sheet for a Specific VMM User Role
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - service-manager
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 383a9a81-7543-4350-9618-02435baaac82
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  bandersmsft
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  How to Override a Default Price Sheet for a Specific VMM User Role
+ms.technology:  service-manager
+ms.assetid:  383a9a81-7543-4350-9618-02435baaac82
 ---
+
 # How to Override a Default Price Sheet for a Specific VMM User Role
 
 >Applies To: System Center 2016 Technical Preview - Service Manager
@@ -24,7 +25,7 @@ After Service Manager has discovered cloud objects from the Operations Manager C
 
 3.  In the list of clouds, select one that you want to assign a price sheet to and then under Tasks, click **Assign Price Sheet**.
 
-4.  In <CloudName\> form under **User Role Price Sheet Overrides**, click **Add**.
+4.  In *CloudName* form under **User Role Price Sheet Overrides**, click **Add**.
 
 5.  In the **Select objects** dialog box, select a VMM user role that you want to override the default price sheet with and click **Add** and then click **OK**.
 
@@ -33,7 +34,4 @@ After Service Manager has discovered cloud objects from the Operations Manager C
     > [!NOTE]
     > If a cloud previously had a price sheet assigned, then assigning a new one automatically unassigns the price sheet that was used previously.
 
-7.  Click **OK** to close the <CloudName\> form.
-
-
-
+7.  Click **OK** to close the *CloudName* form.

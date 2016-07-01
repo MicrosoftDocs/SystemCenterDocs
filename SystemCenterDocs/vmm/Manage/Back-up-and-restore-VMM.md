@@ -1,12 +1,16 @@
 ---
-title: Back up and restore VMM
-ms.custom: na
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 2ebb4cfd-fd5e-4add-b75c-dcb932dbaa64
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  rayne-wiselman
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  Back up and restore VMM
+ms.technology:  virtual-machine-manager
+ms.assetid:  2ebb4cfd-fd5e-4add-b75c-dcb932dbaa64
 ---
+
 # Back up and restore VMM
 
 >Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
@@ -18,7 +22,7 @@ This topic describes the backup and recovery process in a Virtual Machine Manage
 
 One option for backing up and recovering VMM is Data Protection Manager (DPM). For more information, see [Data Protection Manager](http://technet.microsoft.com/library/hh758173.aspx).
 
-Data such as Remote Access Authorization (RAA) passwords and the product key can be entered when you re-install VMM. However, some encrypted data such as Virtual Machine Roles cannot be re-entered. You cannot back up and restore such data if you use the Data Protection application programming interface (DPAPI) for backing up VMM—the data will be lost if the VMM management server fails.
+Data such as Remote Access Authorization (RAA) passwords and the product key can be entered when you re-install VMM. However, some encrypted data such as Virtual Machine Roles cannot be re-entered. You cannot back up and restore such data if you use the Data Protection application programming interface (DPAPI) for backing up VMM"the data will be lost if the VMM management server fails.
 
 ## Creating and implementing a backup plan
 Two basic elements of a backup plan are a list of what needs to be backed up, and an outline of what is changed frequently (and therefore need to be backed up frequently) in your environment. The following sections in this topic can help you create and implement your backup plan:
@@ -132,7 +136,7 @@ Use the following guidelines to back up registry keys, encryption keys, and non-
 ### <a name="BKMK_b_addins"></a>Back up non-Microsoft user interface add-ins and other non-Microsoft applications
 You can use non-Microsoft user interface (UI) add-ins to extend the functionality of the VMM console. The data that is used by a UI add-in might be stored on the local server or on a remote computer, and it might be configured with a specific set of permissions. Consult the backup guidelines of your specific UI add-in.
 
-For any other non-Microsoft applications, refer to the applications’ specific backup guidelines.
+For any other non-Microsoft applications, refer to the applications" specific backup guidelines.
 
 ## Restoring the VMM environment
 The following sections describe the process for restoring the VMM environment, including data recovery and reassociating servers in your VMM environment.
@@ -246,7 +250,7 @@ Depending on your VMM configuration, you might need to do some of the following 
 If the VMM database was configured by using SQL Server AlwaysOn Availability Groups, you must complete a few tasks to ensure that the database is correctly configured with Availability Groups. 
 
 ### <a name="BKMK_post_WAP"></a>Reinstall Windows Azure Pack
-If Windows Azure Pack (WAP) was deployed in your environment to support tenants by using VMM, then you’ll have to reinstall it after you restore the VMM environment. For more information about Windows Azure Pack for Windows Server, see [Windows Azure Pack for Windows Server](http://technet.microsoft.com/library/dn296435.aspx).
+If Windows Azure Pack (WAP) was deployed in your environment to support tenants by using VMM, then you"ll have to reinstall it after you restore the VMM environment. For more information about Windows Azure Pack for Windows Server, see [Windows Azure Pack for Windows Server](http://technet.microsoft.com/library/dn296435.aspx).
 
 ### <a name="BKMK_Additional"></a>Install additional VMM consoles
 If you had to replace any servers on which VMM consoles were installed, re-install the consoles on those servers.
@@ -270,7 +274,7 @@ If Windows Azure Hyper-V Recovery Manager is implemented in the VMM environment,
 ### <a name="BKMK_post_misc"></a>Review add-ins, driver packages, and certificates
 After you restore VMM, review the following items to ensure that you have taken necessary steps for your add-ins, driver packages, and certificates:
 
--   **Non-Microsoft user interface add-ins**: To restore any non-Microsoft user interface add-ins or any other non-Microsoft party applications, consult the respective application’s restore guidelines.
+-   **Non-Microsoft user interface add-ins**: To restore any non-Microsoft user interface add-ins or any other non-Microsoft party applications, consult the respective application"s restore guidelines.
 
 -   **Driver packages**: Driver packages that were previously added to the VMM library might not be discovered correctly after a restore. They might have to be removed and be re-added. For more information, see [How to add driver files to the VMM library](How-to-add-driver-files-to-the-VMM-library.md).
 

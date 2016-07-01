@@ -1,15 +1,16 @@
 ---
-title: Schedules
-ms.custom: na
-ms.prod: system-center-2012
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - orchestrator
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 0092bd39-187d-42ea-b126-02ef516e21e4
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  bwren
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  Schedules
+ms.technology:  service-management-automation
+ms.assetid:  0092bd39-187d-42ea-b126-02ef516e21e4
 ---
+
 # Schedules
 
 >Applies To: Windows Azure Pack for Windows Server, System Center 2012 R2 Orchestrator
@@ -61,7 +62,7 @@ $port = 9090
 $scheduleName = 'My Daily Schedule'
 $startTime = (Get-Date).Date.AddHours(12)
 $expiryTime = $startTime.AddYears(1)
-Set-SmaSchedule –WebServiceEndpoint $web –Port $port –Name $scheduleName –ScheduleType OneTimeSchedule –StartTime $startTime –ExpiryTime $expiryTime –DayInterval 1
+Set-SmaSchedule "WebServiceEndpoint $web "Port $port "Name $scheduleName "ScheduleType OneTimeSchedule "StartTime $startTime "ExpiryTime $expiryTime "DayInterval 1
 ```
 
 ## See Also

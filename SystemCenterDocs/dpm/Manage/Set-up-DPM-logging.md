@@ -5,7 +5,7 @@ ms.topic:  article
 author:  markgalioto
 ms.prod:  system-center-threshold
 keywords:  
-ms.date:  2016-06-27
+ms.date:  2016-06-30
 title:  Set up DPM logging
 ms.technology:  data-protection-manager
 ms.assetid:  710459cd-75ec-4052-9199-c45828cbc19b
@@ -30,10 +30,10 @@ You can  tweak log file settings as follows:
 
 |Value name|Value type/Allowed values|Details|
 |--------------|------------------------------|-----------|
-|TraceLogLevel|DWORD<br /><br />TRACE_ERROR—Logs all errors and failures – default setting<br /><br />TRACE_DBG_ACTIVITY—Logs all activities such as start, cancel, end<br /><br />TRACE_DBG_NORMAL—Logs activities considered important<br /><br />TRACE_DBG_CRITICAL—Logs critical errors only.<br /><br />TRACE_DBG_FATAL—Logs fatal errors such as task or job failures|Specifies the logging level.<br /><br />Can be overridden per binary. A valid bitmask of allowed values is:<br /><br />enum TRACE_FLAG{<br /><br />TRACE_ERROR = 0x2,<br /><br />TRACE_DBG_ACTIVITY = 0x4,<br /><br />TRACE_DBG_       = 0x8,<br /><br />TRACE_PERF = 0x20,<br /><br />TRACE_DBG_FATAL = 0x200,<br /><br />TRACE_DBG_CRITICAL = 0x400<br />};<br /><br />You can also enable full Verbose logging but note that this affects performance. If you need this for a limited time do the following:<br /><br />1.  In the registry, at HKLM\Software\Microsoft\Microsoft Data Protection Manager add a DWORD value TraceLogLevel and set it to 0x43e.<br />2.  To apply immediately stop the DPM services for which you want to enable verbose logging and delete the old logs.<br />3.  After you reproduce the issue and finish troubleshooting, delete the registry entry you created and restart the stopped services so that non-verbose logging works again.|
+|TraceLogLevel|DWORD<br /><br />TRACE_ERROR - Logs all errors and failures - default setting<br /><br />TRACE_DBG_ACTIVITY - Logs all activities such as start, cancel, end<br /><br />TRACE_DBG_NORMAL - Logs activities considered important<br /><br />TRACE_DBG_CRITICAL - Logs critical errors only.<br /><br />TRACE_DBG_FATAL - Logs fatal errors such as task or job failures|Specifies the logging level.<br /><br />Can be overridden per binary. A valid bitmask of allowed values is:<br /><br />enum TRACE_FLAG{<br /><br />TRACE_ERROR = 0x2,<br /><br />TRACE_DBG_ACTIVITY = 0x4,<br /><br />TRACE_DBG_       = 0x8,<br /><br />TRACE_PERF = 0x20,<br /><br />TRACE_DBG_FATAL = 0x200,<br /><br />TRACE_DBG_CRITICAL = 0x400<br />};<br /><br />You can also enable full Verbose logging but note that this affects performance. If you need this for a limited time do the following:<br /><br />1.  In the registry, at HKLM\Software\Microsoft\Microsoft Data Protection Manager add a DWORD value TraceLogLevel and set it to 0x43e.<br />2.  To apply immediately stop the DPM services for which you want to enable verbose logging and delete the old logs.<br />3.  After you reproduce the issue and finish troubleshooting, delete the registry entry you created and restart the stopped services so that non-verbose logging works again.|
 |TraceLogPath|REG_SZ|Specifies the log location.<br /><br />Requires a valid NTFS volume path with 3 GB of compressed space on DPM server (no quotation marks required in the name for paths that contain spaces).<br /><br />Can be overridden per binary.|
-|<binary> TraceLogMaxSize|DWORD|Specifies the size of the log file<br /><br />5 MB by default<br /><br />A file size (total disk space consumed for this binary’s log = size * number of files to retain)|
-|<binary>TraceLogMaxNum|DWORD|Maximum number of log files to retain<br /><br />30 by default<br /><br />The current number of log files is tracked in HKLM\Software\Microsoft\Microsoft Data Protection Manager: <binary>TraceLogNextNum (DWORD). This is an internal registry key and we recommend that you don’t modify it.|
+|<binary> TraceLogMaxSize|DWORD|Specifies the size of the log file<br /><br />5 MB by default<br /><br />A file size (total disk space consumed for this binary's log = size * number of files to retain)|
+|<binary>TraceLogMaxNum|DWORD|Maximum number of log files to retain<br /><br />30 by default<br /><br />The current number of log files is tracked in HKLM\Software\Microsoft\Microsoft Data Protection Manager: <binary>TraceLogNextNum (DWORD). This is an internal registry key and we recommend that you don't modify it.|
 
 ## <a name="BKMK_Binary"></a>Binary and service mapping
 Mappings between some of the log binary names and services are summarized in the following table.
@@ -56,6 +56,3 @@ Mappings between some of the log binary names and services are summarized in the
 |WSS Cmdlet wrapper|WssCmdletsWrapper|Logs when running WSS cmdlets on SharePoint WFE. On protected client only.<br /><br />Logs at: %USERPROFILE%\AppData\Roaming\Microsoft\Microsoft System Center Data ProtectionManager 2012\|
 |SQL EUR Client|EurClient|Installed on machines where SQL EUR client is installed. Logs information about connecting to DPMserver, triggering and canceling recovery etc.<br /><br />Logs at: %USERPROFILE%\AppData\Roaming\Microsoft\Microsoft System Center Data ProtectionManager 2012\|
 |Laptop Client UI|DPMClientUI|Logs about various actions triggered from DPM client UI and failures.<br /><br />Logs at: %USERPROFILE%\AppData\Roaming\Microsoft\Microsoft System Center Data ProtectionManager 2012\|
-
-
-

@@ -5,7 +5,7 @@ ms.topic:  article
 author:  markgalioto
 ms.prod:  system-center-threshold
 keywords:  
-ms.date:  2016-06-27
+ms.date:  2016-06-30
 title:  Back up and restore VMM servers
 ms.technology:  data-protection-manager
 ms.assetid:  e9ed546c-b12b-4a2c-9668-3dc23963114e
@@ -52,7 +52,7 @@ Before setting up a DPM backup for VMM using VMM Express Writer note the followi
 
 -   Make sure that the VMM machines you want to back up  are in the DPM server domain, or in a domain with a two-way trust relationship with the DPM domain.
 
--   **Set up storage**—You can store backed up data on disk, on tape, and in the cloud with Azure. Read more in [Prepare data storage](../get-started/Prepare-data-storage.md).
+-   **Set up storage** - You can store backed up data on disk, on tape, and in the cloud with Azure. Read more in [Prepare data storage](../get-started/Prepare-data-storage.md).
 
 -   You'll need to deploy the DPM  protection agent on the VMM server.  Learn more in [Deploy the DPM protection agent](Deploy-the-DPM-protection-agent.md).
 
@@ -60,9 +60,9 @@ Before setting up a DPM backup for VMM using VMM Express Writer note the followi
 
 1.  Click **Protection** > **Actions** > **Create Protection Group** to open the **Create New Protection Group** wizard in the DPM console.
 
-2.  In **Select protection group** type click **Clients**. You only select clients if you want to back up data on a Windows computer running a Windows client operating system. For all other workloads select server. Learn more in [Deploy protection groups](Deploy-protection-groups.md)
+2.  In **Select protection group** type click **Clients**. You only select clients if you want to back up data on a Windows computer running a Windows client operating system. For all other workloads select server. Learn more in [Deploy protection groups](Deploy-protection-groups.md).
 
-3.  In **Select Group Members** expand the VMM machine and select **VMM Express Writer**
+3.  In **Select Group Members** expand the VMM machine and select **VMM Express Writer**.
 
 4.  In **Select data protection method**  specify how you want to handle short and long-term backup. Short-term back up is always to disk first, with the option of backing up from the disk to the Azure cloud with Azure backup (for short or long-term). As an alternative to long-term backup to the cloud you can also configure long-term back up to a standalone tape device or tape library connected to the DPM server.
 
@@ -70,13 +70,13 @@ Before setting up a DPM backup for VMM using VMM Express Writer note the followi
 
 6.  If you want to store data on tape for long-term storage in **Specify long-term goals** indicate how long you want to keep tape data (1-99 years). In Frequency of backup specify how often backups to tape should run. The frequency is based on the retention range you've specified:
 
-    -   When the retention range is 1–99 years, you can select backups to occur daily, weekly, bi-weekly, monthly, quarterly, half-yearly, or yearly.
+    -   When the retention range is 1-99 years, you can select backups to occur daily, weekly, bi-weekly, monthly, quarterly, half-yearly, or yearly.
 
-    -   When the retention range is 1–11 months, you can select backups to occur daily, weekly, bi-weekly, or monthly.
+    -   When the retention range is 1-11 months, you can select backups to occur daily, weekly, bi-weekly, or monthly.
 
-    -   When the retention range is 1–4 weeks, you can select backups to occur daily or weekly.
+    -   When the retention range is 1-4 weeks, you can select backups to occur daily or weekly.
 
-    On a stand-alone tape drive, for a single protection group, DPM uses the same tape for daily backups until there is insufficient space on the tape. You can also colocate data from different protection groups on tape.
+    On a stand-alone tape drive, for a single protection group, DPM uses the same tape for daily backups until there is insufficient space on the tape. You can also co-locate data from different protection groups on tape.
 
     On the **Select Tape and Library Details** page specify the tape/library to use, and whether data should be compressed and encrypted on tape.
 
@@ -84,7 +84,7 @@ Before setting up a DPM backup for VMM using VMM Express Writer note the followi
 
 8.  In **Choose replica creation method** select how you want to handle the initial full data replication.  If you select to replicate over the network we recommended you choose an off-peak time. For large amounts of data or less than optimal network conditions, consider replicating the data offline using removable media.
 
-9. In **Choose consistency check options**, select how you want to automate consistency checks. You can enable a check to run only when replica data becomes inconsistent, or according to a schedule. If you don’t want to configure automatic consistency checking, you can run a manual check at any time by right-clicking the protection group in the **Protection** area of the DPM console, and selecting **Perform Consistency Check**.
+9. In **Choose consistency check options**, select how you want to automate consistency checks. You can enable a check to run only when replica data becomes inconsistent, or according to a schedule. If you don't want to configure automatic consistency checking, you can run a manual check at any time by right-clicking the protection group in the **Protection** area of the DPM console, and selecting **Perform Consistency Check**.
 
 10. If you've selected to back up to the cloud with Azure Backup, on the **Specify online protection data** page make sure the workloads you want to back up to Azure are selected.
 
@@ -95,6 +95,3 @@ Before setting up a DPM backup for VMM using VMM Express Writer note the followi
 13. In **Choose online replication** specify how the initial full replication of data will occur. You can replicate over the network, or do an offline backup (offline seeding). Offline backup uses the Azure Import feature. [Read more](https://azure.microsoft.com/en-in/documentation/articles/backup-azure-backup-import-export/).
 
 14. On the  **Summary** page review your settings. After you click **Create Group** initial replication of the data occurs. When it finishes the protection group status will show as **OK** on the **Status** page. Backup then takes place in line with the protection group settings.
-
-
-

@@ -1,12 +1,16 @@
 ---
-title: How to configure update baselines in VMM
-ms.custom: na
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 72d2c7b2-334f-485d-a384-f776fcd3eff7
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  rayne-wiselman
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  How to configure update baselines in VMM
+ms.technology:  virtual-machine-manager
+ms.assetid:  72d2c7b2-334f-485d-a384-f776fcd3eff7
 ---
+
 # How to configure update baselines in VMM
 
 >Applies To: System Center 2016 Technical Preview - Virtual Machine Manager

@@ -1,15 +1,16 @@
 ---
-title: System requirements for Service Management Automation
-ms.custom: na
-ms.prod: system-center-2012
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - orchestrator
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 222692ab-765c-44bd-8d50-0c0596d26a94
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  bwren
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  System requirements for Service Management Automation
+ms.technology:  service-management-automation
+ms.assetid:  222692ab-765c-44bd-8d50-0c0596d26a94
 ---
+
 # System requirements for Service Management Automation
 
 >Applies To: Windows Azure Pack for Windows Server, System Center 2012 R2 Orchestrator
@@ -45,11 +46,11 @@ Before installing the web service, use the following procedure to install .NET F
 
 4.  Expand **.NET Framework 4.5 Features**.
 
-5.  Select **.NET Framework 4.5** if it isn’t already selected.
+5.  Select **.NET Framework 4.5** if it isn"t already selected.
 
 6.  Expand **WCF Services**.
 
-7.  Select **HTTP Activation** if it isn’t already selected.
+7.  Select **HTTP Activation** if it isn"t already selected.
 
 8.  Click **Next**, and follow the prompts to finish the installation.
 

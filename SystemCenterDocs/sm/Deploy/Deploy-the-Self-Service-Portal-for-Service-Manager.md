@@ -1,15 +1,16 @@
 ---
-title: Deploy the Self-Service Portal for Service Manager
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology:
-  - service-manager
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 18833e51-8624-463a-a2d7-cd3be75f2efb
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  bandersmsft
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  Deploy the Self Service Portal for Service Manager
+ms.technology:  service-manager
+ms.assetid:  18833e51-8624-463a-a2d7-cd3be75f2efb
 ---
+
 # Deploy the Self-Service Portal for Service Manager
 
 >Applies To: System Center 2016 Technical Preview - Service Manager
@@ -35,46 +36,46 @@ Select a Windows 2012 R2 server. Join the server machine to the same domain wher
 
 1.  Start the Add Roles and Features Wizard and then enable IIS.
 
-    ![](../../media/sm-ssp01.png)
+    ![select server roles](../../media/sm-ssp01.png)
 
 2.  Enable the .NET features.
 
     1.  Enable .NET 3.5
 
-        ![](../../media/sm-sspdeploy2a.png)
+        ![select features](../../media/sm-sspdeploy2a.png)
 
     2.  Enable HTTP Activation
 
-        ![](../../media/sm-sspdeploy2b.png)
+        ![select HTTP activation](../../media/sm-sspdeploy2b.png)
 
     3.  Enable ASP.NET 4.5
 
-        ![](../../media/sm-sspdeploy2c.png)
+        ![select ASP.NET 4.5](../../media/sm-sspdeploy2c.png)
 
 3.  Enable the following role services on the Web Server Role (IIS) page.
 
     1.  **Basic Authentication** and **Windows Authentication**
 
-        ![](../../media/sm-sspdeploy3a.png)
+        ![basic authentication and Windows authentication](../../media/sm-sspdeploy3a.png)
 
     2.  Add **Application Development** and under it, add **.NET Extensibility 4.5**, **ASP**, and **ASP.NET 4.5**.
 
-        ![](../../media/sm-ssp03b.png)
+        ![application development](../../media/sm-ssp03b.png)
 
 ### Install the Self Service Portal Webapp using Setup
 Use the following steps to install the Self Service Portal WebApp using Setup.
 
 1.  Run SetupWizard.exe in the Setup folder to start the Service Manager Setup Wizard. Under Install, click **Service Manager Self Service Portal**.
 
-    ![](../../media/sm-ssp05.png)
+    ![Install](../../media/sm-ssp05.png)
 
 2.  Accept the EULA.
 
-    ![](../../media/sm-ssp06.png)
+    ![EULA](../../media/sm-ssp06.png)
 
 3.  Choose your installation location.
 
-    ![](../../media/sm-ssp07.png)
+    ![installation location](../../media/sm-ssp07.png)
 
 4.  Review the System check results.
 
@@ -88,23 +89,23 @@ Use the following steps to install the Self Service Portal WebApp using Setup.
 
     -   **SSL Certificate:** (Optional) The SSL certificate to configure the website in secure mode (https://). This is the recommended setting if you are using Basic Authentication. The default is Windows  Authentication.
 
-    ![](../../media/sm-ssp09.png)
+    ![configure the Self Service Portal server](../../media/sm-ssp09.png)
 
 6.  Configure the account for the Self Service Portal. This is the account that the IIS instance will run under. This account should have the Service Manger Admin role.
 
-    ![](../../media/sm-ssp10.png)
+    ![Self Service portal account](../../media/sm-ssp10.png)
 
 7.  The Diagnostic and usage data notification information is displayed, informing you that data is sent to Microsoft by default.   You can change this setting in the Service Manager console. Click **Next**.
 
-    ![](../../media/sm-ssp11.png)
+    ![diagnostic and usage data](../../media/sm-ssp11.png)
 
 8.  Choose whether to automatically install Microsoft updates.
 
-    ![](../../media/sm-ssp12.png)
+    ![Microsoft updates](../../media/sm-ssp12.png)
 
 9. Wait for installation to complete.
 
-    ![](../../media/sm-ssp13.png)
+    ![Finished](../../media/sm-ssp13.png)
 
 ### Install the Self Service Portal Webapp using the Command Line
 You can modify the following example to install the Self Service Portal.
@@ -118,27 +119,29 @@ Use the following step to complete your installation.
 
 -   Restart IIS. You can access the Web App (http://yourwebsite:port)  in your browser. It will resemble the following image.
 
-    ![](../../media/sm-sspdeploy-complete.png)
+    ![Self Service Portal](../../media/sm-sspdeploy-complete.png)
 
 ## Customize the Self Service Portal
 The following section describe how you can customize the Self Service portal to suit your organization.
 
 ### Basic Customization
-The <appSettings> tab in the Web.config file offers some standard settings to easily customize and personalize the areas which are most often modified. Here’s a list of them.
+
+The `<appSettings>` tab in the Web.config file offers some standard settings to easily customize and personalize the areas which are most often modified. Here's a list of them.
 
 |Key|Purpose|
 |-------|-----------|
-|CompanyName|The value of this key appears as the company’s name inside the portal.|
-|CompanyLogoLocation|The value of this key is used as the image file, which is displayed as the company’s logo inside the portal.|
-|ITPhone|This key takes the value to configure the IT help desk’s phone number. This information appears at the bottom of the navigation menu.|
-|ITEmail|The value of this key is used configure the IT help desk’s email ID. This information appears at the bottom of the navigation menu.|
-|DefaultLanguage|By default, the Portal web pages are loaded as defined by the browser’s language. Then current user can manually select the language in the top-right corner of each page.<br />The value of this key defines the default failover language which is chosen by the portal, when the browser’s language is not available.|
-|GenericOffering|The value of this key accepts the name of the request offering which is mapped to the generic request button. This generic request button is used by the user, when they can’t find an appropriate request offering in the catalog.|
+|CompanyName|The value of this key appears as the company's name inside the portal.|
+|CompanyLogoLocation|The value of this key is used as the image file, which is displayed as the company's logo inside the portal.|
+|ITPhone|This key takes the value to configure the IT help desk's phone number. This information appears at the bottom of the navigation menu.|
+|ITEmail|The value of this key is used configure the IT help desk's email ID. This information appears at the bottom of the navigation menu.|
+|DefaultLanguage|By default, the Portal web pages are loaded as defined by the browser's language. Then current user can manually select the language in the top-right corner of each page.<br />The value of this key defines the default failover language which is chosen by the portal, when the browser's language is not available.|
+|GenericOffering|The value of this key accepts the name of the request offering which is mapped to the generic request button. This generic request button is used by the user, when they can't find an appropriate request offering in the catalog.|
 |SDKServerName|The value of this key defines the name of the server where the Service Manager SDK runs and it is used to interact with other Service Manager servers. By default, it has the same value that you provided in Setup.<br />You can use the fully qualified domain name or the NetBIOS name of the server running the Service Manger SDK service. We recommend that you dedicate a secondary Service Manager management server to communicate with the portal.|
 |MaxQueryResults|The value of this key defines the maximum number of results that are returned by any query form element inside your request offering forms.|
 |UserCacheTimeout|The Portal uses a caching infrastructure to provide a swift user experience. The value of this key defines the timeout, in seconds, to cache user-specific details of the signed-in user.|
 |DataCacheTimeout|The Portal uses a caching infrastructure to provide a swift user experience. The value of this key defines the timeout, in seconds, to cache generic data which can be shared among different users.|
-|EnableTelemetry|The value of this key defines your selection about participating in Microsoft’s Customer Experience Improvement Program. Your portal sends usage telemetry data to Microsoft when this key is marked as “True”. By default, it has the same value that you chose during Setup.|
+|EnableTelemetry|The value of this key defines your selection about participating in Microsoft's Customer Experience Improvement Program. Your portal sends usage telemetry data to Microsoft when this key is marked as **True**. By default, it has the same value that you chose during Setup.|
+
 
 > [!NOTE]
 > You must restart the IIS service after you make any changes to the Web.config file.
@@ -153,7 +156,6 @@ You can modify the content shown in the left navigation bar (menu) by editing th
 
 For example:
 
-![](../../media/sm-sspsidebar.png)
+![sidebar.cshtml](../../media/sm-sspsidebar.png)
 
 You can add or remove shortcuts from the menu, and you can customize them with details for the CSS class, keyboard hotkeys, and others.
-

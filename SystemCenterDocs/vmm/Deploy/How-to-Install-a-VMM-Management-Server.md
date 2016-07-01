@@ -1,20 +1,21 @@
 ---
-title: How to Install a VMM Management Server
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - virtual-machine-manager
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 7dd194e2-6ad7-4cea-9221-3eb3f028aa26
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  rayne-wiselman
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  How to Install a VMM Management Server
+ms.technology:  virtual-machine-manager
+ms.assetid:  7dd194e2-6ad7-4cea-9221-3eb3f028aa26
 ---
+
 # How to Install a VMM Management Server
 
 >Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
 
-You can use the following procedure to install a Virtual Machine Manager (VMM) management server. For similar topics, see [Installing VMM from a Command Prompt](Installing-VMM-from-a-Command-Prompt.md) and [Installing a Highly Available VMM Management Server](Installing-a-Highly-Available-VMM-Management-Server.md).
+You can use the following procedure to install a Virtual Machine Manager (VMM) management server. For similar topics, see [Installing a Highly Available VMM Management Server](Installing-a-Highly-Available-VMM-Management-Server.md).
 
 Before you begin the installation of the VMM management server, review the system requirements. As part of this, ensure that you have a computer that is running a supported version of Microsoft SQL Server software. Setup will not automatically install an Express edition of SQL Server. For information, see:
 
@@ -41,7 +42,7 @@ To complete the installation procedures, you need, at a minimum, membership in t
 
     > [!NOTE]
     > The VMM console is automatically installed when you install a VMM management server.
-    > 
+    >
     > If you are installing the VMM management server on a computer that is a member of a cluster, the wizard will ask whether you want to make the VMM management server highly available. For more information about installing a highly available VMM management server, see [Installing a Highly Available VMM Management Server](Installing-a-Highly-Available-VMM-Management-Server.md).
 
 4.  On the **Product registration information** page, provide the appropriate information, and then click **Next**. If you do not enter a product key, VMM will be installed as an evaluation version that expires in 180 days after installation.
@@ -106,7 +107,7 @@ To complete the installation procedures, you need, at a minimum, membership in t
 
     > [!NOTE]
     > The default library share that VMM creates is named MSSCVMMLibrary, and the folder is located at **%SYSTEMDRIVE%\ProgramData\Virtual Machine Manager Library Files**. **ProgramData** is a hidden folder, and you cannot remove it.
-    > 
+    >
     > After the VMM management server is installed, you can add library shares and library servers by using the VMM console or by using the VMM command shell.
 
     After you specify a library share, click **Next**.
@@ -151,6 +152,3 @@ During Setup, VMM enables the following firewall rules. These rules remain in ef
 5.  Repeat the previous two steps for every secondary SQL Server node in the cluster.
 
 6.  If this is a high-availability VMM setup, continue to install other high-availability VMM nodes.
-
-
-

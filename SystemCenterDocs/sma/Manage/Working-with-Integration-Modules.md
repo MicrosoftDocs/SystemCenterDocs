@@ -1,15 +1,16 @@
 ---
-title: Working with Integration Modules
-ms.custom: na
-ms.prod: system-center-2012
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - orchestrator
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: a99b8b42-665a-48eb-ab8e-5ebe8462c50a
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  bwren
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  Working with Integration Modules
+ms.technology:  service-management-automation
+ms.assetid:  a99b8b42-665a-48eb-ab8e-5ebe8462c50a
 ---
+
 # Working with Integration Modules
 
 >Applies To: 
@@ -35,7 +36,7 @@ The following sample commands retrieve all modules installed in Automation.
 ```powershell
 $webServer = 'https://MyWebServer'
 $port = 9090
-Get-SmaModule –WebServiceEndpoint $webServer –Port $port
+Get-SmaModule "WebServiceEndpoint $webServer "Port $port
 ```
 
 ## Importing a Module
@@ -66,7 +67,7 @@ The following sample commands show how to import a module.
 $webServer = 'https://MyWebServer'
 $port = 9090
 $modulePath = 'C:\Modules\MyModule.psm1'
-Import-SmaModule –WebServiceEndpoint $webServer –Port $port –Path $modulePath
+Import-SmaModule "WebServiceEndpoint $webServer "Port $port "Path $modulePath
 ```
 
 ## Enumerating Activities in a Module
@@ -93,7 +94,7 @@ The following sample commands show how to retrieve the activities in a particula
 $webServer = 'https://MyWebServer'
 $port = 9090
 $moduleName = 'MyModule'
-$module = Get-SmaModule –WebServiceEndpoint $webServer –Port $port –Name $moduleName
+$module = Get-SmaModule "WebServiceEndpoint $webServer "Port $port "Name $moduleName
 $module.Activities
 ```
 
@@ -104,7 +105,7 @@ The following sample commands show how to retrieve the activities in all modules
 ```powershell
 $webServer = 'https://MyWebServer'
 $port = 9090
-$modules = Get-SmaModule –WebServiceEndpoint $webServer –Port $port
+$modules = Get-SmaModule "WebServiceEndpoint $webServer "Port $port
 $modules | foreach {$_.Activities} | sort Name,ModuleName | ft Name,ModuleName,Description
 ```
 

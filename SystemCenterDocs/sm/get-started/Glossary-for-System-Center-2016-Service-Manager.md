@@ -1,17 +1,19 @@
 ---
-title: Glossary for System Center 2016 – Service Manager
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - service-manager
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 70310c2d-c8f0-4e6c-a276-1284c52f096f
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  bandersmsft
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  Glossary for System Center 2016 Service Manager
+ms.technology:  service-manager
+ms.assetid:  70310c2d-c8f0-4e6c-a276-1284c52f096f
 ---
-# Glossary for System Center 2016 – Service Manager
 
+# Glossary for System Center 2016 - Service Manager
+
+>Applies To: System Center 2016 Technical Preview - Service Manager
 
 |Term|Definition|
 |--------|--------------|
@@ -38,7 +40,7 @@ ms.assetid: 70310c2d-c8f0-4e6c-a276-1284c52f096f
 |extraction, transformation, and loading|The act of extracting data from various sources, transforming data to consistent types, and loading the transformed data for use by applications.|
 |filtered view|A view to which a set of conditions have been applied to reduce the total number of displayed objects.|
 |groom|To permanently remove data from the data warehouse.|
-|history|A record of all the changes to an object’s properties and relationships. History exists for all objects, such as configuration items and work items."|
+|history|A record of all the changes to an object&trade;s properties and relationships. History exists for all objects, such as configuration items and work items."|
 |incident|A way of tracking any event that is not part of the standard operation of a service and that causes, or may cause, an interruption to, or a reduction in, the quality of that service.|
 |knowledge|Information that can help an end-user or analyst solve a problem.|
 |list|An administrator-defined customization that enables users to classify objects such as incidents, change requests, activities, or configuration items. For example, a list might be "Location" or "Organization."|
@@ -72,7 +74,7 @@ ms.assetid: 70310c2d-c8f0-4e6c-a276-1284c52f096f
 |service request|A work item that is used to request an existing IT service that is being offered.|
 |service request fulfillment|The process for managing service requests.|
 |SLA|An industry-wide term that is detailed in the Microsoft Operations Framework (MOF) and Information Technology Infrastructure Library (ITIL). Microsoft Solutions Framework (MSF) definition: An agreement between an IT organization and the user community that defines the responsibilities of all participating parties and that binds IT management to provide a particular service of a specific agreed-on quality and quantity. An SLA limits the demands that users may place on the service to the limits that are defined by the agreement.|
-|SLA metric|A calculated time interval that Service Manager determines between the date and time fields in incidents and service requests. For example, the SLA metric “resolution time” is defined as the difference between the Incident Created Date and the Incident Resolved Date.|
+|SLA metric|A calculated time interval that Service Manager determines between the date and time fields in incidents and service requests. For example, the SLA metric resolution time is defined as the difference between the Incident Created Date and the Incident Resolved Date.|
 |SLA target|The specified duration of time in which the IT organization must respond to or resolve an incident or service request.|
 |SQL Server Analysis Services cube|(Analysis Services cube for short.) A conceptual view, consisting of descriptive categories (dimensions) and quantitative values (measures). The generic industry term is "OLAP data cube."|
 |task|An action that a user accomplishes by using the Actions pane and the context-sensitive menu that affects non-Service Manager objects.|
@@ -81,5 +83,3 @@ ms.assetid: 70310c2d-c8f0-4e6c-a276-1284c52f096f
 |user role|A method of granting permissions to specific users for groups of data. These permissions are based on a user role profile.|
 |user role profile|A set of permitted operations and classes of data that users need access to so they can perform specific job duties.|
 |workflow|A sequence of activities, actions, or tasks through which documents or items are passed as part of an automated business process.|
-
-

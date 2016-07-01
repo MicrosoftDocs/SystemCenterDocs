@@ -1,15 +1,16 @@
 ---
-title: How to assign file shares on a Scale-Out File Server to a Hyper-V host or cluster in VMM
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - virtual-machine-manager
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: bf1a333d-0772-49c4-8cac-171bcfb79a72
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  rayne-wiselman
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  How to assign file shares on a Scale Out File Server to a Hyper V host or cluster in VMM
+ms.technology:  virtual-machine-manager
+ms.assetid:  bf1a333d-0772-49c4-8cac-171bcfb79a72
 ---
+
 # How to assign file shares on a Scale-Out File Server to a Hyper-V host or cluster in VMM
 
 >Applies To: System Center 2016 Technical Preview - Virtual Machine Manager

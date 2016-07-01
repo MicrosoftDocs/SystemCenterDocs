@@ -1,15 +1,16 @@
 ---
-title: How to Change the Password for the Operational Database Account
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - service-manager
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 4cc6e765-1cfd-4e0a-aac6-2b5fd3b671b5
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  bandersmsft
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  How to Change the Password for the Operational Database Account
+ms.technology:  service-manager
+ms.assetid:  4cc6e765-1cfd-4e0a-aac6-2b5fd3b671b5
 ---
+
 # How to Change the Password for the Operational Database Account
 
 >Applies To: System Center 2016 Technical Preview - Service Manager

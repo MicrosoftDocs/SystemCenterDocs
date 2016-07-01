@@ -1,15 +1,16 @@
 ---
-title: How to create a Scale-Out File Server in VMM using existing servers
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - virtual-machine-manager
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: ab69213b-ffdd-4dec-bb06-a98860eac788
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  rayne-wiselman
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  How to create a Scale Out File Server in VMM using existing servers
+ms.technology:  virtual-machine-manager
+ms.assetid:  ab69213b-ffdd-4dec-bb06-a98860eac788
 ---
+
 # How to create a Scale-Out File Server in VMM using existing servers
 
 >Applies To: System Center 2016 Technical Preview - Virtual Machine Manager

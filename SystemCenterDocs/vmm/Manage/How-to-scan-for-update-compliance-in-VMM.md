@@ -1,12 +1,16 @@
 ---
-title: How to scan for update compliance in VMM
-ms.custom: na
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 1598fe63-91a9-42a6-8fad-837ff31f060d
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  rayne-wiselman
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  How to scan for update compliance in VMM
+ms.technology:  virtual-machine-manager
+ms.assetid:  1598fe63-91a9-42a6-8fad-837ff31f060d
 ---
+
 # How to scan for update compliance in VMM
 
 >Applies To: System Center 2016 Technical Preview - Virtual Machine Manager

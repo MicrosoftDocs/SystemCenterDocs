@@ -1,12 +1,16 @@
 ---
-title: Overview: managing Virtual Fibre Channel in VMM
-ms.custom: na
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 81189655-4e01-4a55-8d7d-be8dd62e3d8b
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  rayne-wiselman
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  Overview  managing Virtual Fibre Channel in VMM
+ms.technology:  virtual-machine-manager
+ms.assetid:  81189655-4e01-4a55-8d7d-be8dd62e3d8b
 ---
+
 # Overview: managing Virtual Fibre Channel in VMM
 
 >Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
@@ -40,7 +44,7 @@ The following terms represent the most important elements of a Virtual Fibre Cha
 
 **NPIV**. N_Port ID Virtualization (NPIV) is a standard used to create and map multiple virtual Fibre Channel (vHBA) ports to a single physical Fibre Channel N_port.
 
-**vHBA**. The virtualized HBA. Multiple vHBAs can be mapped to a single HBA. The vHBA uses NPIV to address a VM’s WWN within a host HBA.
+**vHBA**. The virtualized HBA. Multiple vHBAs can be mapped to a single HBA. The vHBA uses NPIV to address a VM"s WWN within a host HBA.
 
 **Virtual SAN**. In the context of VMM, a virtual SAN (vSAN) defines a group of physical Fibre Channel ports that are connected to a physical SAN array. Not to be confused with the vSAN product by VMware.
 

@@ -1,15 +1,16 @@
 ---
-title: How to uncluster a Hyper-V host cluster in VMM
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - virtual-machine-manager
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 40844392-4a5e-4b27-9ef1-06c4b4ccaa4f
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  rayne-wiselman
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  How to uncluster a Hyper V host cluster in VMM
+ms.technology:  virtual-machine-manager
+ms.assetid:  40844392-4a5e-4b27-9ef1-06c4b4ccaa4f
 ---
+
 # How to uncluster a Hyper-V host cluster in VMM
 
 >Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
@@ -33,7 +34,7 @@ You can use the following procedures to uncluster or remove a host cluster that 
     When the job is completed, the hosts appear as stand-alone hosts in the **Fabric** workspace.
 
     > [!NOTE]
-    > As part of the job, VMM unregisters the shared storage that is managed through VMM from the cluster nodes. If the cluster had shared storage assigned that was not managed by VMM, we recommend that you unregister the shared storage by using your storage array vendor’s management tools.
+    > As part of the job, VMM unregisters the shared storage that is managed through VMM from the cluster nodes. If the cluster had shared storage assigned that was not managed by VMM, we recommend that you unregister the shared storage by using your storage array vendor"s management tools.
 
 ## See Also
 [Modifying Hyper-V host clusters in VMM](Modifying-Hyper-V-host-clusters-in-VMM.md)

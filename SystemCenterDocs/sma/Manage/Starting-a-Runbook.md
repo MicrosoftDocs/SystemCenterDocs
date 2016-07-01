@@ -1,15 +1,16 @@
 ---
-title: Starting a Runbook
-ms.custom: na
-ms.prod: system-center-2012
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - orchestrator
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 4190285b-64f7-44a9-95f4-f8ed816b7724
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  bwren
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  Starting a Runbook
+ms.technology:  service-management-automation
+ms.assetid:  4190285b-64f7-44a9-95f4-f8ed816b7724
 ---
+
 # Starting a Runbook
 
 >Applies To: Windows Azure Pack for Windows Server
@@ -34,7 +35,7 @@ The first two methods are documented below. Calling a runbook from another runbo
 
 4.  If the runbook has parameters, you will be prompted to provide values with a text box for each parameter. Boolean and datetime parameters have special selectors instead of the standard text box. See [Runbook Parameters](Starting-a-Runbook.md#Parameters) below for further details on parameters.
 
-5.  Either select **View Job** next to the **Starting runbook** message or select the **Jobs** tab for the runbook to view the job’s status.
+5.  Either select **View Job** next to the **Starting runbook** message or select the **Jobs** tab for the runbook to view the job"s status.
 
 ## <a name="PowerShell"></a>To start a runbook with Windows PowerShell
 You can use the [Start-SmaRunbook](http://aka.ms/runbookauthor/cmdlet/startsmarunbook) to start a runbook with Windows PowerShell. The following sample code starts a runbook called Test-Runbook.
@@ -43,7 +44,7 @@ You can use the [Start-SmaRunbook](http://aka.ms/runbookauthor/cmdlet/startsmaru
 $webServer = 'https://MyServer'
 $port = 9090
 $runbookName = "Test-Runbook"
-Start-SmaRunbook –WebServiceEndpoint $webServer –Port $port –Name $runbookName
+Start-SmaRunbook "WebServiceEndpoint $webServer "Port $port "Name $runbookName
 ```
 
 Start-SmaRunbook returns a job object that you can use to track its status once the runbook is started. You can then use this job object with [Get-SmaJob](http://aka.ms/runbookauthor/cmdlet/getsmajob) to determine the status of the job and [Get-SmaJobOutput](http://aka.ms/runbookauthor/cmdlet/getsmajoboutput) to get its output. The following sample code starts a runbook called Test-Runbook, waits until it has completed, and then displays its output.
@@ -53,16 +54,16 @@ $webServer = 'https://MyServer'
 $port = 9090
 $runbookName = "Test-Runbook"
 
-$job = Start-SmaRunbook –WebServiceEndpoint $webServer –Port $port –Name $runbookName
+$job = Start-SmaRunbook "WebServiceEndpoint $webServer "Port $port "Name $runbookName
 
 $doLoop = $true
 While ($doLoop) {
-   $job = Get-SmaJob –WebServiceEndpoint $webServer –Port $port -Id $job.Id
+   $job = Get-SmaJob "WebServiceEndpoint $webServer "Port $port -Id $job.Id
    $status = $job.Status
    $doLoop = (($status -ne "Completed") -and ($status -ne "Failed") -and ($status -ne "Suspended") -and ($status -ne "Stopped") 
 }
 
-Get-SmaJobOutput –WebServiceEndpoint $webServer –Port $port -Id $job.Id –Stream Output
+Get-SmaJobOutput "WebServiceEndpoint $webServer "Port $port -Id $job.Id "Stream Output
 ```
 
 If the runbook requires parameters, then you must provide them as a [hashtable](http://aka.ms/runbookauthor/hashtables) where the key of the hashtable matches the parameter name and the value is the parameter value. The following example shows how to start a runbook with two string parameters named FirstName and LastName, an integer named RepeatCount, and a boolean parameter named Show. For additional information on parameters, see [Runbook Parameters](Starting-a-Runbook.md#Parameters) below.
@@ -73,7 +74,7 @@ $port = 9090
 $runbookName = "Test-Runbook"
 
 $params = @{"FirstName"="Joe";"LastName"="Smith";"RepeatCount"=2;"Show"=$true}
-Start-SmaRunbook –WebServiceEndpoint $webServer –Port $port –Name $runbookName –Parameters $params
+Start-SmaRunbook "WebServiceEndpoint $webServer "Port $port "Name $runbookName "Parameters $params
 ```
 ## To specify the worker server for a runbook.
 Each runbook has a property called **RunbookWorker** that is empty by default.  If this property is populated, then that Worker server will service the job. If the Worker server is not available, then the job will fail with an error. If the **RunbookWorker** property of the runbook is not populated, then SMA will randomly select an available Worker server to service the request.
@@ -86,7 +87,7 @@ $port = 9090
 $runbookName = "Test-Runbook"
 $workerServer = "srv01"
  
-Set-SmaRunbookConfiguration –WebServiceEndpoint $webServer –Port $port –Name $runbookName -RunbookWorker $workerServer
+Set-SmaRunbookConfiguration "WebServiceEndpoint $webServer "Port $port "Name $runbookName -RunbookWorker $workerServer
 ```
 
 To reset the runbook to use any available Worker server, set the **RunbookWorker** property to **$null**.

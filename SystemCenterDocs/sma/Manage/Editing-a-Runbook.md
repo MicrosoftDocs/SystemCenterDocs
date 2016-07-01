@@ -1,15 +1,16 @@
 ---
-title: Editing a Runbook
-ms.custom: na
-ms.prod: system-center-2012
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - orchestrator
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: a6daafc4-bc8d-4cd5-bd14-5f5b55da90a2
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  bwren
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  Editing a Runbook
+ms.technology:  service-management-automation
+ms.assetid:  a6daafc4-bc8d-4cd5-bd14-5f5b55da90a2
 ---
+
 # Editing a Runbook
 
 >Applies To: Windows Azure Pack for Windows Server
@@ -102,7 +103,7 @@ $port = 9090
 $runbookName = "Test-Runbook"
 $scriptPath = "c:\runbooks\Test-Runbook.ps1"
 
-$runbookDefinition = Get-SMARunbookDefinition –WebServiceEndpoint $webServer –Port $port -Name $runbookName -Type Draft
+$runbookDefinition = Get-SMARunbookDefinition "WebServiceEndpoint $webServer "Port $port -Name $runbookName -Type Draft
 $runbookContent = $runbookDefinition.Content
 
 Out-File -InputObject $runbookContent -FilePath $scriptPath
@@ -117,8 +118,8 @@ $port = 9090
 $runbookName = "Test-Runbook"
 $scriptPath = "c:\runbooks\Test-Runbook.ps1"
 
-Edit-SmaRunbook –WebServiceEndpoint $webServer –Port $port -Name $runbookName -Path $scriptPath -Overwrite
-Publish-SmaRunbook –WebServiceEndpoint $webServer –Port $port –Name $runbookName –Path $scriptPath
+Edit-SmaRunbook "WebServiceEndpoint $webServer "Port $port -Name $runbookName -Path $scriptPath -Overwrite
+Publish-SmaRunbook "WebServiceEndpoint $webServer "Port $port "Name $runbookName "Path $scriptPath
 ```
 
 ## <a name="ISE"></a>To Edit an Automation Runbook Using Windows PowerShell ISE

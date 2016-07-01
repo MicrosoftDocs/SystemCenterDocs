@@ -1,15 +1,16 @@
 ---
-title: How to Edit a Service Level Objective
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - service-manager
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: af23bd77-699a-48b7-91e2-fc1273c5edd2
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  bandersmsft
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  How to Edit a Service Level Objective
+ms.technology:  service-manager
+ms.assetid:  af23bd77-699a-48b7-91e2-fc1273c5edd2
 ---
+
 # How to Edit a Service Level Objective
 
 >Applies To: System Center 2016 Technical Preview - Service Manager
@@ -24,7 +25,7 @@ The service level objective that you edit is linked to a queue. If you want to m
 
 2.  In the **Administration** pane, expand **Service Level Management**, and then click **Service Level Objective**.
 
-3.  In the **Service Level Objectives** list, select an existing service level objective, and then in the **Tasks** pane, under **<ServiceLevelObjectiveName\>**, click **Properties**.
+3.  In the **Service Level Objectives** list, select an existing service level objective, and then in the **Tasks** pane, under *ServiceLevelObjectiveName*, click **Properties**.
 
 4.  In the **Edit SLO** dialog box, modify any of the following items, as needed. For more information about the elements on this page, see [How to Create a Service Level Objective](How-to-Create-a-Service-Level-Objective.md).
 
@@ -35,6 +36,3 @@ The service level objective that you edit is linked to a queue. If you want to m
     -   **Service Level Criteria**
 
 5.  Click **OK** to close the **Edit SLO** dialog box.
-
-
-

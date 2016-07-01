@@ -1,17 +1,21 @@
 ---
-title: How to add and classify SMI-S and SMP storage devices in VMM
-ms.custom: na
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 96db0f54-5b56-426a-9866-9e3b0902609c
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  rayne-wiselman
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  How to add and classify SMI S and SMP storage devices in VMM
+ms.technology:  virtual-machine-manager
+ms.assetid:  96db0f54-5b56-426a-9866-9e3b0902609c
 ---
+
 # How to add and classify SMI-S and SMP storage devices in VMM
 
 >Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
 
-Use the following procedure to add remote storage devices in Virtual Machine Manager (VMM). You can add and discover external storage arrays that are managed by Storage Management Initiative – Specification (SMI-S) or Store Management Provider (SMP) providers. You can assign friendly-name classifications for the added storage. For example, you can assign a Gold classification to solid-state drive (SSD) storage and a Bronze classification to slower drives.
+Use the following procedure to add remote storage devices in Virtual Machine Manager (VMM). You can add and discover external storage arrays that are managed by Storage Management Initiative " Specification (SMI-S) or Store Management Provider (SMP) providers. You can assign friendly-name classifications for the added storage. For example, you can assign a Gold classification to solid-state drive (SSD) storage and a Bronze classification to slower drives.
 
 **Account requirements** To complete this procedure, you must be a member of the Administrator user role, or a member of the Delegated Administrator user role.
 

@@ -1,15 +1,16 @@
 ---
-title: How to Disable and Enable a Configuration Manager Connector
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - service-manager
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: bf2d8feb-76ce-40b8-a3c6-41d6aac284ea
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  bandersmsft
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  How to Disable and Enable a Configuration Manager Connector
+ms.technology:  service-manager
+ms.assetid:  bf2d8feb-76ce-40b8-a3c6-41d6aac284ea
 ---
+
 # How to Disable and Enable a Configuration Manager Connector
 
 >Applies To: System Center 2016 Technical Preview - Service Manager

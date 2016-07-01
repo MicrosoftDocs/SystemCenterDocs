@@ -1,22 +1,23 @@
 ---
-title: Administering System Center 2016 - Service Manager
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - service-manager
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: dba97a37-aeb4-4cc0-8423-85bb3489d1e7
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  bandersmsft
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  Administering System Center 2016   Service Manager
+ms.technology:  service-manager
+ms.assetid:  dba97a37-aeb4-4cc0-8423-85bb3489d1e7
 ---
+
 # Administering System Center 2016 - Service Manager
 
 >Applies To: System Center 2016 Technical Preview - Service Manager
 
-Welcome to the Administrator’s Guide for Microsoft System Center 2016 Technical Preview - Service Manager. This guide describes concepts that are important to Service Manager administrators, and it includes procedures that Service Manager administrators must perform to configure Service Manager. These procedures are typically performed one time after Service Manager is deployed. The procedures in this guide help you configure Service Manager to match the policies and requirements defined by your organization.
+Welcome to the Administrator's Guide for Microsoft System Center 2016 Technical Preview - Service Manager. This guide describes concepts that are important to Service Manager administrators, and it includes procedures that Service Manager administrators must perform to configure Service Manager. These procedures are typically performed one time after Service Manager is deployed. The procedures in this guide help you configure Service Manager to match the policies and requirements defined by your organization.
 
-## Administrator’s Guide Topics
+## Administrator's Guide Topics
 
 -   [Using Management Packs in System Center 2016 - Service Manager](../Service-Manager.md)
 
@@ -128,12 +129,8 @@ Welcome to the Administrator’s Guide for Microsoft System Center 2016 Technical 
 
 ## Other Resources for This Component
 
--   TechNet Library main page for [System Center 2016 – Service Manager](../Service-Manager.md)
+-   TechNet Library main page for [System Center 2016 - Service Manager](../Service-Manager.md)
 
--   [Planning Guide for System Center 2016 – Service Manager](../Service-Manager.md)
+-   [Planning Guide for System Center 2016 - Service Manager](../Service-Manager.md)
 
--   [Operations Guide for System Center 2016 – Service Manager](../Service-Manager.md)
-
-
-
-
+-   [Operations Guide for System Center 2016 - Service Manager](../Service-Manager.md)

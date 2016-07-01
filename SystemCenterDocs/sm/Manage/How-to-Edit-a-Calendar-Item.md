@@ -1,15 +1,16 @@
 ---
-title: How to Edit a Calendar Item
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - service-manager
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: fce15bac-7039-4e65-a707-de7cbed0697a
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  bandersmsft
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  How to Edit a Calendar Item
+ms.technology:  service-manager
+ms.assetid:  fce15bac-7039-4e65-a707-de7cbed0697a
 ---
+
 # How to Edit a Calendar Item
 
 >Applies To: System Center 2016 Technical Preview - Service Manager
@@ -25,7 +26,7 @@ You edit a calendar item in Service Manager to update work days, work hours, and
 
 2.  In the **Administration** pane, expand **Service Level Management**, and then click **Calendar**.
 
-3.  In the Calendar list, select an existing calendar, and then in the **Tasks** pane, under **<CalendarName\>**, click **Properties**.
+3.  In the Calendar list, select an existing calendar, and then in the **Tasks** pane, under *CalendarName*, click **Properties**.
 
 4.  In the **Create/Edit Calendar** dialog box, modify any of the following items, as needed:
 
@@ -38,6 +39,3 @@ You edit a calendar item in Service Manager to update work days, work hours, and
     -   **Holidays**
 
 5.  Click **OK** to close the **Create/Edit Calendar** dialog box.
-
-
-

@@ -1,15 +1,16 @@
 ---
-title: VMM networking reference: illustrations, settings, and optional procedures
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - virtual-machine-manager
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 7a0878f1-5884-409c-ad4f-1ea1dfd763a4
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  rayne-wiselman
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  VMM networking reference  illustrations, settings, and optional procedures
+ms.technology:  virtual-machine-manager
+ms.assetid:  7a0878f1-5884-409c-ad4f-1ea1dfd763a4
 ---
+
 # VMM networking reference: illustrations, settings, and optional procedures
 This section addresses several specialised networking topics.  These topics may help you to adapt VMM to your specific networking environment:
 

@@ -35,7 +35,7 @@ You must ensure that your server meets the minimum system requirements for Syste
 
     > [!IMPORTANT]
     > You might receive a message that indicates that ASP.NET 4 is not registered with Internet Information Services (IIS). To resolve this problem, open a Command Prompt window, select **Run as administrator**, and then run the following command:
-    > 
+    >
     > **%WINDIR%\Microsoft.NET\Framework64\v4.0.30319\aspnet_regiis.exe -r**
 
 6.  If the Prerequisites checker does not return any warnings or errors, the **Prerequisites**, **Proceed with Setup** page appears. Click **Next**.
@@ -72,8 +72,8 @@ You must ensure that your server meets the minimum system requirements for Syste
 
     > [!IMPORTANT]
     > You might receive a message about having the wrong version of SQL Server, or you might encounter a problem with the SQL Server Windows Management Instrumentation (WMI) provider. To resolve this problem, open a Command Prompt window, select **Run as administrator**, and then run the following command. In the command, replace the <path\> placeholder with the location of SQL Server.
-    > 
-    > **mofcomp.exe \<path>\Microsoft SQL Server\100\Shared\sqlmgmproviderxpsp2up.mof”**
+    >
+    > **mofcomp.exe \<path>\Microsoft SQL Server\100\Shared\sqlmgmproviderxpsp2up.mof**
 
     > [!NOTE]
     > The SQL Server model database size must not be greater than 100 MB. If it is, you might encounter an error in Setup regarding the inability to create a database on SQL due to user permissions. To resolve the issue, you must reduce the size of the model database.
@@ -86,8 +86,8 @@ You must ensure that your server meets the minimum system requirements for Syste
 
     > [!IMPORTANT]
     > You might receive a message about having the wrong version of SQL Server, or you might encounter a problem with the SQL Server Windows Management Instrumentation (WMI) provider. To resolve this problem, open a Command Prompt window, select **Run as administrator**, and then run the following command. In the command, replace the <path\> placeholder with the location of SQL Server.
-    > 
-    > **mofcomp.exe “\<path>\Microsoft SQL Server\100\Shared\sqlmgmproviderxpsp2up.mof”**
+    >
+    > **mofcomp.exe \<path>\Microsoft SQL Server\100\Shared\sqlmgmproviderxpsp2up.mof**
 
     > [!NOTE]
     > These paths do not change if you connect to a different instance of SQL Server.
@@ -121,9 +121,9 @@ You must ensure that your server meets the minimum system requirements for Syste
 
     > [!IMPORTANT]
     > The following command assumes that you specified the Local System for the Management server action account (`/UseLocalSystemActionAccount`) and Data Access service (`/UseLocalSystemDASAccount`). To specify a domain\user name for these accounts, you must provide the following parameters instead.
-    > 
+    >
     > `/ActionAccountUser: <domain\username> /ActionAccountPassword: <password>`
-    > 
+    >
     > `/DASAccountUser: <domain\username> /DASAccountPassword: <password>`
 
     ```
@@ -146,6 +146,3 @@ You must ensure that your server meets the minimum system requirements for Syste
 
 ## See Also
 [Distributed Deployment of Operations Manager](Distributed-Deployment-of-Operations-Manager.md)
-
-
-

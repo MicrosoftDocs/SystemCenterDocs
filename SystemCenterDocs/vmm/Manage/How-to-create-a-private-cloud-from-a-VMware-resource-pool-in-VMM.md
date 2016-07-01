@@ -1,12 +1,16 @@
 ---
-title: How to create a private cloud from a VMware resource pool in VMM
-ms.custom: na
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 4660c9cf-9d5d-4dbf-bdab-73035f7d023b
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  rayne-wiselman
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  How to create a private cloud from a VMware resource pool in VMM
+ms.technology:  virtual-machine-manager
+ms.assetid:  4660c9cf-9d5d-4dbf-bdab-73035f7d023b
 ---
+
 # How to create a private cloud from a VMware resource pool in VMM
 
 >Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
@@ -18,7 +22,7 @@ You can use this procedure to create a private cloud from a VMware resource pool
 ## Prerequisites
 Before you create a private cloud from a VMware resource pool, make sure that the following prerequisites are met:
 
--   Configure the fabric by using the procedures in [Managing fabric resources with VMM](Managing-fabric-resources-with-VMM.md). The fabric resource examples in this procedure use examples from the “Preparing the Fabric in VMM” section.
+-   Configure the fabric by using the procedures in [Managing fabric resources with VMM](Managing-fabric-resources-with-VMM.md). The fabric resource examples in this procedure use examples from the "Preparing the Fabric in VMM" section.
 
     > [!NOTE]
     > You cannot discover and manage storage for VMware ESX hosts through VMM.

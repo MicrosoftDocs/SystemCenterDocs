@@ -1,15 +1,16 @@
 ---
-title: How to Create a System Center Operations Manager Connector
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - service-manager
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: f435d4b2-e965-4ae6-8f99-c9f00b956937
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  bandersmsft
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  How to Create a System Center Operations Manager Connector
+ms.technology:  service-manager
+ms.assetid:  f435d4b2-e965-4ae6-8f99-c9f00b956937
 ---
+
 # How to Create a System Center Operations Manager Connector
 
 >Applies To: System Center 2016 Technical Preview - Service Manager
@@ -43,11 +44,11 @@ There are two phases for creating the Alert connector. The first part involves c
 
     4.  In the **Run As Account** dialog box, in the **Display name** box, type a name for this Run As account. In the **Account** list, select **Windows Account**.
 
-    5.  In the **User Name**, **Password**, and **Domain** fields, type the credentials for the Run As account, and then click **OK**. 
+    5.  In the **User Name**, **Password**, and **Domain** fields, type the credentials for the Run As account, and then click **OK**.
 
     6.  On the **Server Details** page, click **Test Connection**. If you receive the following confirmation message, click **OK**, and then click **Next**:
 
-        “The connection to the server was successful.”
+        *The connection to the server was successful.*
 
     7.  On the **Alert Routing Rules** page, click **Add**.
 
@@ -63,7 +64,7 @@ There are two phases for creating the Alert connector. The first part involves c
 
 8.  In the **Actions** pane, click **Properties**.
 
-9. In the **Alert Sync: <name of connector\>** dialog box, click **Add**.
+9. In the **Alert Sync: *name of connector*** dialog box, click **Add**.
 
 10. In the **Product Connector Subscription Wizard** dialog box, on the **General** page, in the **Subscription Name** box, type the name for this subscription. For example, type **All Alerts**, and then click **Next**.
 
@@ -73,7 +74,7 @@ There are two phases for creating the Alert connector. The first part involves c
 
 13. On the **Criteria** page, click **Create**.
 
-14. In the **Alert Sync:<name of connector\>** dialog box, click **OK**.
+14. In the **Alert Sync:*name of connector*** dialog box, click **OK**.
 
 ### To validate the creation of an Operations Manager alert connector
 
@@ -99,11 +100,11 @@ There are two phases for creating the Alert connector. The first part involves c
 
         -   Under **Credentials**, select the Run As account you created for the alert connector, and then go to step 4d.
 
-        -   Under **Credentials**, click **New**. In the **User name**, **Password**, and **Domain** boxes, type the credentials for the Run As account, and then click **OK**. 
+        -   Under **Credentials**, click **New**. In the **User name**, **Password**, and **Domain** boxes, type the credentials for the Run As account, and then click **OK**.
 
     4.  On the **Server Details** page, click **Test Connection**. If you receive the following confirmation message, click **OK**, and then click **Next**:
 
-        “The connection to the server was successful.”
+        *The connection to the server was successful.*
 
     5.  On the **MP Selection** page, click **Select all**, or select the management packs that define the configuration items you want to import, and then click **Next**.
 
@@ -126,6 +127,3 @@ There are two phases for creating the Alert connector. The first part involves c
 -   For information about how to use Windows PowerShell to create a new Operations Manager CI connector in Service Manager, see [New-SCOMConfigurationItemConnector](http://go.microsoft.com/fwlink/p/?LinkID=225352).
 
 -   For information about how to use Windows PowerShell to retrieve connectors that are defined in Service Manager and to view their status, see [Get-SCSMConnector](http://go.microsoft.com/fwlink/p/?LinkId=225320).
-
-
-

@@ -1,12 +1,16 @@
 ---
-title: Configuring block storage in VMM
-ms.custom: na
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: b47fcec1-a310-43e7-9d37-19ee4913d097
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  rayne-wiselman
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  Configuring block storage in VMM
+ms.technology:  virtual-machine-manager
+ms.assetid:  b47fcec1-a310-43e7-9d37-19ee4913d097
 ---
+
 # Configuring block storage in VMM
 
 >Applies To: System Center 2016 Technical Preview - Virtual Machine Manager

@@ -1,20 +1,21 @@
 ---
-title: How to Create or Modify a Price Sheet
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - service-manager
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 8deef26a-3835-4cd8-98e0-7bffeb6ea7eb
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  bandersmsft
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  How to Create or Modify a Price Sheet
+ms.technology:  service-manager
+ms.assetid:  8deef26a-3835-4cd8-98e0-7bffeb6ea7eb
 ---
+
 # How to Create or Modify a Price Sheet
 
 >Applies To: System Center 2016 Technical Preview - Service Manager
 
-Price sheets in Service Manager allow you to define price policies on existing private cloud objects that are discovered from the Operations Manager CI connector. You can associate one or more private clouds to a price sheet. After association, price information contained in the price sheet is shown in OLAP cubes and in a sample Excel report. You can use the OLAP cube data to create your own customized reports using various reporting solutions such as SQL Server Reporting Services, SQL Server Analysis Services tools, and Microsoft Excel. Additionally, you can modify the sample Excel report for your organization’s needs.
+Price sheets in Service Manager allow you to define price policies on existing private cloud objects that are discovered from the Operations Manager CI connector. You can associate one or more private clouds to a price sheet. After association, price information contained in the price sheet is shown in OLAP cubes and in a sample Excel report. You can use the OLAP cube data to create your own customized reports using various reporting solutions such as SQL Server Reporting Services, SQL Server Analysis Services tools, and Microsoft Excel. Additionally, you can modify the sample Excel report for your organization's needs.
 
 Although you can create multiple price sheets without publishing them, you must publish a price sheet before you can associate cloud objects to the price sheet.
 
@@ -111,7 +112,3 @@ Although you can create multiple price sheets without publishing them, you must 
     4.  If you want to remove private cloud objects, in the list of **Private Cloud** objects, select one or more private cloud objects and then click **Remove**.
 
     5.  Click **OK** to close the price sheet form.
-
-
-
-

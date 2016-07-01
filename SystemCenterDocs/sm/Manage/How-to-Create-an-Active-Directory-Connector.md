@@ -1,16 +1,17 @@
 ---
-title: How to Create an Active Directory Connector_2
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - service-manager
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: b1468921-5bd4-4287-aa26-7f24084a54ac
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  bandersmsft
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  How to Create an Active Directory Connector
+ms.technology:  service-manager
+ms.assetid:  b1468921-5bd4-4287-aa26-7f24084a54ac
 ---
-# How to Create an Active Directory Connector_2
+
+# How to Create an Active Directory Connector
 
 >Applies To: System Center 2016 Technical Preview - Service Manager
 
@@ -30,7 +31,7 @@ You can use the following procedures in Service Manager to create,  validate, an
 
     2.  On the **General** page, in the **Name** box, type a name for the new connector. Make sure that the **Enable this connector** check box is selected, and then click **Next**.
 
-    3.  On the **Domain or organizational unit** page, select **Use the domain: <domain name\>**. Or, select **Let me choose the domain or OU**, and then click **Browse** to choose a domain or an organizational unit (OU) in your environment.
+    3.  On the **Domain or organizational unit** page, select **Use the domain: *domain name***. Or, select **Let me choose the domain or OU**, and then click **Browse** to choose a domain or an organizational unit (OU) in your environment.
 
     4.  In the **Credentials** area, click **New**.
 
@@ -57,7 +58,7 @@ You can use the following procedures in Service Manager to create,  validate, an
 
     10. On the **Completion** page, make sure that you receive the following confirmation message:
 
-        “Active Directory connector successfully created.”
+        *Active Directory connector successfully created.*
 
         Then, click **Close**.
 
@@ -79,6 +80,3 @@ You can use the following procedures in Service Manager to create,  validate, an
 -   View the columns in the **Connector** pane; the columns contain information about the start time, the finish time, the status, and the percentage of imported configuration items.
 
 ![](../../media/pssymbol.png)You can use a Windows PowerShell command to create a new Service Manager Active Directory connector. For information about how to use Windows PowerShell to create a new Service Manager Active Directory connector, see [New-SCADConnector](http://go.microsoft.com/fwlink/?LinkId=225349).
-
-
-

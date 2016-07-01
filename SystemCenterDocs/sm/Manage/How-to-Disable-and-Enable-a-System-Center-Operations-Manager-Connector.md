@@ -1,15 +1,16 @@
 ---
-title: How to Disable and Enable a System Center Operations Manager Connector
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - service-manager
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: b5dadc67-53a9-4b38-bdb8-eaf78e2d23aa
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  bandersmsft
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  How to Disable and Enable a System Center Operations Manager Connector
+ms.technology:  service-manager
+ms.assetid:  b5dadc67-53a9-4b38-bdb8-eaf78e2d23aa
 ---
+
 # How to Disable and Enable a System Center Operations Manager Connector
 
 >Applies To: System Center 2016 Technical Preview - Service Manager
@@ -18,7 +19,7 @@ You can use the following procedures to disable or enable a System Center Operat
 
 For example, after you configure an Operations Manager connector, if you must perform maintenance operations on the Service Manager database, you can temporarily disable the connector and suspend the data import. You can resume the data import by re-enabling the connector.
 
-For more information about how to delete a product connector from System Center Operations Manager, see [Removing an Old Product Connector](http://go.microsoft.com/fwlink/?LinkId=188974) on Kevin Holman’s System Center blog.
+For more information about how to delete a product connector from System Center Operations Manager, see [Removing an Old Product Connector](http://go.microsoft.com/fwlink/?LinkId=188974) on Kevin Holman's System Center blog.
 
 ### To disable an Operations Manager connector
 
@@ -57,6 +58,3 @@ For more information about how to delete a product connector from System Center 
 -   For information about how to use Windows PowerShell to retrieve connectors that are defined in Service Manager and view their status, see [Get-SCSMConnector](http://go.microsoft.com/fwlink/p/?LinkId=225320).
 
 -   For information about how to use Windows PowerShell to update the properties of a Service Manager connector, see [Update-SCSMConnector](http://go.microsoft.com/fwlink/p/?LinkID=225382).
-
-
-

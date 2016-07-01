@@ -1,12 +1,16 @@
 ---
-title: How to run a quick storage migration in VMM
-ms.custom: na
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: a0bdcd69-546e-435a-a2b6-8a85a8c5fb64
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  rayne-wiselman
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  How to run a quick storage migration in VMM
+ms.technology:  virtual-machine-manager
+ms.assetid:  a0bdcd69-546e-435a-a2b6-8a85a8c5fb64
 ---
+
 # How to run a quick storage migration in VMM
 
 >Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
@@ -17,11 +21,11 @@ Use the following procedure to run a quick storage migration.
 
 ### To run a quick storage migration
 
-1.  In the VMM console, open the **VM’s and Services** workspace. In the **VM’s and Services** pane, expand **All Hosts**, and then select the host on which the virtual machine is deployed.
+1.  In the VMM console, open the **VM"s and Services** workspace. In the **VM"s and Services** pane, expand **All Hosts**, and then select the host on which the virtual machine is deployed.
 
-2.  In the **VM’s** pane, right-click the virtual machine, and then click **Migrate Storage**.
+2.  In the **VM"s** pane, right-click the virtual machine, and then click **Migrate Storage**.
 
-    The Migrate Storage Wizard opens at the **Select Path** page. It displays the current locations of the virtual machine’s files. The current path to the location of the configuration files is displayed in the **Storage location for VM configuration** box, and the current path to the location of each virtual hard disk (.vhd) is displayed in the **Disks** list.
+    The Migrate Storage Wizard opens at the **Select Path** page. It displays the current locations of the virtual machine"s files. The current path to the location of the configuration files is displayed in the **Storage location for VM configuration** box, and the current path to the location of each virtual hard disk (.vhd) is displayed in the **Disks** list.
 
 3.  On the **Select Path** page, do the following:
 

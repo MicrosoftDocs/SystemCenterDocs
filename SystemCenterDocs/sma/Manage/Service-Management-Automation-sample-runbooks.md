@@ -1,15 +1,16 @@
 ---
-title: Service Management Automation sample runbooks
-ms.custom: na
-ms.prod: system-center-2012
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - orchestrator
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: c3b33c07-efe9-43de-9a31-fad1123dd7f9
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  bwren
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  Service Management Automation sample runbooks
+ms.technology:  service-management-automation
+ms.assetid:  c3b33c07-efe9-43de-9a31-fad1123dd7f9
 ---
+
 # Service Management Automation sample runbooks
 
 >Applies To: Windows Azure Pack for Windows Server, System Center 2012 R2 Orchestrator

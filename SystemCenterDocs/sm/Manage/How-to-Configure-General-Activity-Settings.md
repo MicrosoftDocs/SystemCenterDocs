@@ -1,15 +1,16 @@
 ---
-title: How to Configure General Activity Settings
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - service-manager
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 87d70344-d44d-4c54-b215-3217a217699b
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  bandersmsft
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  How to Configure General Activity Settings
+ms.technology:  service-manager
+ms.assetid:  87d70344-d44d-4c54-b215-3217a217699b
 ---
+
 # How to Configure General Activity Settings
 
 >Applies To: System Center 2016 Technical Preview - Service Manager

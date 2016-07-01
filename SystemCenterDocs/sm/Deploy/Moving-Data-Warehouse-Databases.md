@@ -1,15 +1,16 @@
 ---
-title: Moving Data Warehouse Databases
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - service-manager
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 1e9a5425-b8e8-4681-9498-89538a558fc4
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  bandersmsft
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  Moving Data Warehouse Databases
+ms.technology:  service-manager
+ms.assetid:  1e9a5425-b8e8-4681-9498-89538a558fc4
 ---
+
 # Moving Data Warehouse Databases
 
 >Applies To: System Center 2016 Technical Preview - Service Manager
@@ -38,7 +39,7 @@ The following high-level steps are required to move the Data Warehouse databases
 
 > [!IMPORTANT]
 > After you move the **DWStagingAndConfig** and **DWRepository** databases, they have to be restored on the same instance of SQL Server. Restoring them on a separate instances of SQL Server is not supported.
-> 
+>
 > The collation on the new instance of SQL Server has to match the collation of the original instances of SQL Server where the data warehouse databases were originally hosted.
 
 ## <a name="bkmk_locating"></a>Locate user accounts and instances of SQL Server
@@ -46,8 +47,7 @@ Use the following procedures to locate the user accounts and instances of SQL Se
 
 #### To identify the SQL Server database and instance names used by the data warehouse management server
 
-1.  Sign in 
-         to the data warehouse management server as a user with administrative credentials.
+1.  Sign in to the data warehouse management server as a user with administrative credentials.
 
 2.  On the Windows desktop, click **Start**, and then click **Run**.
 
@@ -125,7 +125,7 @@ Use the following procedures to locate the user accounts and instances of SQL Se
 
 4.  In **Reporting Services Configuration Manager**, click **Reporting Manager URL**.
 
-5.  On the **Reporting Manager URL** page, click the hyperlink that resembles http://<Servername>:portnumber/Reports to open it in your web browser.
+5.  On the **Reporting Manager URL** page, click the hyperlink that resembles http://Servername:portnumber/Reports to open it in your web browser.
 
 6.  Open the **System Center** folder and then open the **Service Manager** folder.
 
@@ -156,11 +156,11 @@ Use the following procedures to locate the user accounts and instances of SQL Se
 2.  In the Windows PowerShell command prompt, copy the following command, and then press ENTER.
 
     > [!NOTE]
-    > Replace <DWServerName> with the name of your data warehouse management server.
+    > Replace DWServerName with the name of your data warehouse management server.
 
     ```
-    $class\= get\-scclass –Name Microsoft.SystemCenter.ResourceAccessLayer.ASResourceStore –ComputerName <DWServerName>
-    $OLAPServer\= get\-scclassinstance –class $class –ComputerName <DWServerName>
+    $class\= get\-scclass -Name Microsoft.SystemCenter.ResourceAccessLayer.ASResourceStore -ComputerName <DWServerName>
+    $OLAPServer\= get\-scclassinstance -class $class -ComputerName <DWServerName>
     $OLAPServer.Server
     ```
 
@@ -179,9 +179,9 @@ Use the following procedures to locate the user accounts and instances of SQL Se
 
     5.  Expand the **Data Sources** folder, and then double-click **CMDataMart**.
 
-    6.  In the **Data Source Properties – CMDataMart** dialog box, note the value of **Connection String**.
+    6.  In the **Data Source Properties - CMDataMart** dialog box, note the value of **Connection String**.
 
-    7.  Under **Security Settings**, click **Impersonation Account**, and then click the properties button (…), to open the **Impersonation Information** dialog box.
+    7.  Under **Security Settings**, click **Impersonation Account**, and then click the properties button (...), to open the **Impersonation Information** dialog box.
 
     8.  In the **Impersonation Information** dialog box, note the user name.
 
@@ -355,7 +355,7 @@ Use the following three procedures to prepare the data warehouse databases on th
 3.  Type the user name by using the domain\user name format for the data warehouse service account, click **Check Names**, and then click **OK**.
 
     > [!NOTE]
-    > If the Data Access Account is running as LocalSystem, use the format <domain\computername$> in SQL Logins, where <computername> is the name of the management server.
+    > If the Data Access Account is running as LocalSystem, use the format domain\computername$ in SQL Logins, where *computername* is the name of the management server.
 
 4.  In the **Select a page** pane, click **User Mapping**.
 
@@ -505,7 +505,7 @@ Use the following three procedures to prepare the data warehouse databases on th
 
 8.  Right-click **LFX.DataSource**, and then click **Edit Top 200 Rows**.
 
-9. In the center pane, locate the **DataSourceAddress** column, and in the first row of the column, locate the entry that starts with **Data Source = <server name>; Initial Catalog = DWStagingAndConfig; Persist Security Info=False**. Replace **<server name>** with the name of the new computer running SQL Server.
+9. In the center pane, locate the **DataSourceAddress** column, and in the first row of the column, locate the entry that starts with **Data Source = server name; Initial Catalog = DWStagingAndConfig; Persist Security Info=False**. Replace **server name** with the name of the new computer running SQL Server.
 
 10. Ensure that the values you typed were saved by querying the tables specified in the previous steps.
 
@@ -556,7 +556,7 @@ Use the following procedure to update data sources on the reporting server to po
 
 3.  In the Reporting Services Configuration Manager list, select **Report Manager URL**.
 
-4.  On the **Report Manager URL** page, click the hyperlink that resembles **http://<Servername>:portnumber/Reports** to open the **Reports** home page in your Internet browser.
+4.  On the **Report Manager URL** page, click the hyperlink that resembles http://Servername:portnumber/Reports to open the **Reports** home page in your Internet browser.
 
 5.  On the home page, open the **System Center** folder, and then open the **Service Manager** folder.
 
@@ -599,11 +599,11 @@ Use the following procedure to update the connection strings for the data source
 
 6.  Expand **Data Sources**, and then double-click **CMDataMart**.
 
-7.  In the **Data Source Properties – CMDataMart** dialog box, select **Connection string Provider=SQLNCLI10.1;Data Source=<servername>;Integrated Security=SSPI;Initial Catalog=CMDWDataMart**.
+7.  In the **Data Source Properties - CMDataMart** dialog box, select **Connection string Provider=SQLNCLI10.1;Data Source=servername;Integrated Security=SSPI;Initial Catalog=CMDWDataMart**.
 
-8.  Replace <servername> with the name of the computer running SQL Server that hosts the CMDWDataMart database.
+8.  Replace servername with the name of the computer running SQL Server that hosts the CMDWDataMart database.
 
-9. You need to re-enter the impersonation account password when you’ve completed updating the Data Source server. Select the ellipsis button to the right of **ImpersonateAccount** and then add the password in the **Impersonation Information** dialog box. Click **OK** to accept the changes.
+9. You need to re-enter the impersonation account password when you've completed updating the Data Source server. Select the ellipsis button to the right of **ImpersonateAccount** and then add the password in the **Impersonation Information** dialog box. Click **OK** to accept the changes.
 
 10. Repeat the previous steps to update the connection strings for the DWDataMart and OMDataMart data sources.
 
@@ -621,6 +621,3 @@ Use the following procedure to start the Service Manager services on the data wa
     2.  Microsoft Monitoring Agent
 
     3.  System Center Management Configuration
-
-
-

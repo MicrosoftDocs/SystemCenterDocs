@@ -1,15 +1,16 @@
 ---
-title: How to Subscribe to Notifications
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - service-manager
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: a52f6f49-795a-43d1-a6d6-d86140c7d9d6
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  bandersmsft
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  How to Subscribe to Notifications
+ms.technology:  service-manager
+ms.assetid:  a52f6f49-795a-43d1-a6d6-d86140c7d9d6
 ---
+
 # How to Subscribe to Notifications
 
 >Applies To: System Center 2016 Technical Preview - Service Manager
@@ -90,7 +91,7 @@ In the first procedure, you set up a subscription so that a messaging analyst is
 
 11. In the **Criteria** area, next to **[Release Record] Status**, select **does not equal**. In the list, select **Closed**, and then click **Next**.
 
-12. On the **Recurring Notification** page under **Recurrence pattern**, select **Notify every <TimeInterval\>** and then choose an interval. For example, set the recurrence pattern to every 1 day.
+12. On the **Recurring Notification** page under **Recurrence pattern**, select **Notify every *TimeInterval*** and then choose an interval. For example, set the recurrence pattern to every 1 day.
 
 13. On the **Recurring Notification** page under **Range of recurrence**, select a range of recurrence or choose no end date. For example, select **No end date**.
 
@@ -126,6 +127,3 @@ In the first procedure, you set up a subscription so that a messaging analyst is
 -   For information about how to use Windows PowerShell to update subscription properties in Service Manager, see [Update-SCSMSubscription](http://go.microsoft.com/fwlink/p/?LinkID=225388).
 
 -   For information about how to use Windows PowerShell to remove a subscription from Service Manager, see [Remove-SCSMSubscription](http://go.microsoft.com/fwlink/p/?LinkID=225370).
-
-
-

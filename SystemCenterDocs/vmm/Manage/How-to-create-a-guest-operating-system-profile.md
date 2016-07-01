@@ -1,12 +1,16 @@
 ---
-title: How to create a guest operating system profile
-ms.custom: na
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 9649115e-b018-4a4e-8eb5-e411733d8fae
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  rayne-wiselman
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  How to create a guest operating system profile
+ms.technology:  virtual-machine-manager
+ms.assetid:  9649115e-b018-4a4e-8eb5-e411733d8fae
 ---
+
 # How to create a guest operating system profile
 
 >Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
@@ -53,7 +57,7 @@ You can use the following procedure to create a guest operating system profile i
 
     -   **RunOnce commands**
 
-        This setting applies only to Linux-based profiles. These commands run in the specified order during deployment after the operating system has been configured. If shell conventions such as pipes are used, we recommend wrapping each command with an explicit invocation of the shell, for example, `/bin/sh –c “<your command>”`. In this example, double quotes in the command must be escaped.
+        This setting applies only to Linux-based profiles. These commands run in the specified order during deployment after the operating system has been configured. If shell conventions such as pipes are used, we recommend wrapping each command with an explicit invocation of the shell, for example, `/bin/sh "c "<your command>"`. In this example, double quotes in the command must be escaped.
 
     -   **Public SSH key**
 

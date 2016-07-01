@@ -1,12 +1,16 @@
 ---
-title: Understanding virtual machine placement and ratings in VMM
-ms.custom: na
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 810f30d0-45cd-4781-aa4d-ec5cd882f3d6
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  rayne-wiselman
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  Understanding virtual machine placement and ratings in VMM
+ms.technology:  virtual-machine-manager
+ms.assetid:  810f30d0-45cd-4781-aa4d-ec5cd882f3d6
 ---
+
 # Understanding virtual machine placement and ratings in VMM
 
 >Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
@@ -45,10 +49,10 @@ VMM evaluates all hosts within a selected host group and any hosts contained in 
 
 |Rating|Formula|
 |----------|-----------|
-|CPU|[ 1 – ( CPU Utilization / (100 – CPU Reserve)) ] x CPU Weight|
-|Memory (RAM)|[ 1 – ( Memory Used / (Total Memory – Memory Reserve)) ] x Memory Weight|
-|Disk I/O capacity|[ 1 – ( Disk IOPS / Maximum Disk IOPS ] x Disk Weight|
-|Network|[ 1 – ( Network Utilization / (100 – Network Reserve)) ] x Network Weight|
+|CPU|[ 1 " ( CPU Utilization / (100 " CPU Reserve)) ] x CPU Weight|
+|Memory (RAM)|[ 1 " ( Memory Used / (Total Memory " Memory Reserve)) ] x Memory Weight|
+|Disk I/O capacity|[ 1 " ( Disk IOPS / Maximum Disk IOPS ] x Disk Weight|
+|Network|[ 1 " ( Network Utilization / (100 " Network Reserve)) ] x Network Weight|
 
 A host is rated only when a virtual machine needs to be placed. The information gathered about a host is compared to the information about the resources required by the virtual machine, and a rating is assigned to the host. During automatic placement, VMM attempts to use the host assigned the highest rating. During manual placement the host rating is shown so that you can select the appropriate host. You can select a host in VMM even if not all hosts have been rated. The selected host must have a positive number of stars.
 

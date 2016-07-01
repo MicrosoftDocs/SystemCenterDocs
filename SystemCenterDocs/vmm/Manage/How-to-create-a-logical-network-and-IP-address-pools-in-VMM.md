@@ -1,20 +1,21 @@
 ---
-title: How to create a logical network and IP address pools in VMM
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - virtual-machine-manager
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 9f7b6403-876a-4eae-9f00-5372626d51bc
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  rayne-wiselman
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  How to create a logical network and IP address pools in VMM
+ms.technology:  virtual-machine-manager
+ms.assetid:  9f7b6403-876a-4eae-9f00-5372626d51bc
 ---
+
 # How to create a logical network and IP address pools in VMM
 
 >Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
 
-Logical networks form the foundation of your network configuration in Virtual Machine Manager (VMM) in System Center 2016 Technical Preview. You create and name logical networks based on the function they serve in your environment, for example, the “Management,” “Cluster,” “Storage,” or “Tenant” networks. Within each logical network, you create one or more network sites that specify IP subnets, virtual local area networks (VLANs), or subnet/VLAN pairs that represent your environment.
+Logical networks form the foundation of your network configuration in Virtual Machine Manager (VMM) in System Center 2016 Technical Preview. You create and name logical networks based on the function they serve in your environment, for example, the "Management," "Cluster," "Storage," or "Tenant" networks. Within each logical network, you create one or more network sites that specify IP subnets, virtual local area networks (VLANs), or subnet/VLAN pairs that represent your environment.
 
 For information about planning your logical networks, see [Overview: plan logical networks, network sites, and IP address pools in VMM](Overview--plan-logical-networks,-network-sites,-and-IP-address-pools-in-VMM.md). To see how this procedure fits into an overall workflow, see [Implementing the configuration](Configuring-logical-networks,-VM-networks,-and-logical-switches-in-VMM.md#BKMK_implementing) in "Configuring logical networks, VM networks, and logical switches in VMM."
 
@@ -130,7 +131,7 @@ In a logical network, you can provide static IP addressing by creating static IP
 
     |||
     |-|-|
-    |Name:|**Management – Seattle IP pool**|
+    |Name:|**Management " Seattle IP pool**|
     |Description:|**IP addresses for management - Seattle**|
 
 7.  On the **Network Site** page, select an existing network site or create a new one. Alternatively, if you want to use multicasting or broadcasting, skip to the next numbered step.
@@ -196,9 +197,9 @@ In a logical network, you can provide static IP addressing by creating static IP
 > 
 > `$ippool=Get-SCStaticIPAddressPool -Name <StaticIPAddressPool>`
 > 
-> `Get-SCIPAddress –StaticIPAddressPool $ippool | Format-Table –property Address,AssignedToType,State`
+> `Get-SCIPAddress "StaticIPAddressPool $ippool | Format-Table "property Address,AssignedToType,State`
 
-From time to time, you might need to release IP addresses that are in the pool but that are marked by VMM as “inactive.” Releasing them makes them available for reassignment. For more information, see [How to release inactive IP or MAC addresses in VMM](How-to-release-inactive-IP-or-MAC-addresses-in-VMM.md).
+From time to time, you might need to release IP addresses that are in the pool but that are marked by VMM as "inactive." Releasing them makes them available for reassignment. For more information, see [How to release inactive IP or MAC addresses in VMM](How-to-release-inactive-IP-or-MAC-addresses-in-VMM.md).
 
 After a virtual machine has been deployed in VMM, you can view the IP address or addresses assigned to that virtual machine. To do this, right-click the listing for the virtual machine, click **Properties**, click the **Hardware Configuration** tab, click the network adapter, and in the results pane, click the **Connection details** button.
 

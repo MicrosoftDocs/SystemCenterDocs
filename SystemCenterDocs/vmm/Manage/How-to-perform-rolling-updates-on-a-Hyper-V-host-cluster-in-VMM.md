@@ -1,12 +1,16 @@
 ---
-title: How to perform rolling updates on a Hyper-V host cluster in VMM
-ms.custom: na
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: d15222b4-ba51-417b-addf-cca88d43663a
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  rayne-wiselman
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  How to perform rolling updates on a Hyper V host cluster in VMM
+ms.technology:  virtual-machine-manager
+ms.assetid:  d15222b4-ba51-417b-addf-cca88d43663a
 ---
+
 # How to perform rolling updates on a Hyper-V host cluster in VMM
 
 >Applies To: System Center 2016 Technical Preview - Virtual Machine Manager

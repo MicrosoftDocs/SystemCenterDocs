@@ -1,15 +1,16 @@
 ---
-title: Overview: configuring storage using Scale-Out File Servers in VMM
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - virtual-machine-manager
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 45c93144-4ae6-41e1-874e-4216c5f4a2de
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  rayne-wiselman
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  Overview  configuring storage using Scale Out File Servers in VMM
+ms.technology:  virtual-machine-manager
+ms.assetid:  45c93144-4ae6-41e1-874e-4216c5f4a2de
 ---
+
 # Overview: configuring storage using Scale-Out File Servers in VMM
 
 >Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
@@ -106,7 +107,7 @@ File shares created in a storage pool inherit the pool's classification, but you
 ## <a name="BKMK_templates"></a>Stage 6: Make classified storage available to users of templates or private clouds
 **What you do**: When you create private clouds or virtual machine templates, you can specify the classification of the storage that will be assigned when virtual machines are created from the templates, or within the private clouds. (This is after you've created storage classifications that match your environment, as described in [Stage 2: Create storage classifications](Overview--configuring-storage-using-Scale-Out-File-Servers-in-VMM.md#BKMK_classifications), earlier in this topic).
 
-**How VMM responds**: VMM makes note of the storage classification that you specified in a virtual machine template, or in a private cloud, and will respond by creating virtual hard disks on the set of storage that you intended. Users will not need to know the structure of the storage that underlies the classifications—for example, they don't need to know a share name or a mount point.
+**How VMM responds**: VMM makes note of the storage classification that you specified in a virtual machine template, or in a private cloud, and will respond by creating virtual hard disks on the set of storage that you intended. Users will not need to know the structure of the storage that underlies the classifications"for example, they don't need to know a share name or a mount point.
 
 ## <a name="BKMK_vhds"></a>Stage 7: Understand how VMM evaluates placement options
 **What users do**: Users request that VMM deploy one or more virtual machines, for example, by using a virtual machine template.

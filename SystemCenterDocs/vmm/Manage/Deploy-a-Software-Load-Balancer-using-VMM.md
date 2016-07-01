@@ -1,23 +1,24 @@
 ---
-title: Deploy a Software Load Balancer using VMM
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.service: virtual-network
-ms.suite: na
-ms.technology:
-  - techgroup-networking
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 2f57fc14-4b23-41e9-87dc-51a0b998b321
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  rayne-wiselman
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  Deploy a Software Load Balancer using VMM
+ms.technology:  virtual-machine-manager
+ms.assetid:  2f57fc14-4b23-41e9-87dc-51a0b998b321
+ms.service:  virtual-network
 ---
+
 # Deploy a Software Load Balancer using VMM
 
 >Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
 
 ## Introduction
 
-This topic helps you evaluate the Software Defined Networking (SDN) features in [!INCLUDE[winthreshold_server_2_mdToken/winthreshold_server_2_md.md)] 5 and Virtual Machine Manager Technology Preview 5. In particular, this topic is focused on deploying and configuring Microsoft Software Load Balancer (SLB) using VMM Technical Preview 5.
+This topic helps you evaluate the Software Defined Networking (SDN) features in Windows Server Technical Preview 5 and Virtual Machine Manager Technology Preview 5. In particular, this topic is focused on deploying and configuring Microsoft Software Load Balancer (SLB) using VMM Technical Preview 5.
 
 After you use VMM to deploy a network controller and a SLB, you can leverage multiplexing and NAT capabilities in your Software Defined Networking (SDN) infrastructure.
 
@@ -48,13 +49,13 @@ Refer to the topology diagram in the following Microsoft TechNet Library topic: 
 
 The diagram shows a sample 4-node setup. The setup is highly available with three network controller nodes (virtual machines), and three SLB/MUX nodes. It shows two tenants with one virtual networks broken into two virtual subnets to simulate a web tier and a database tier. Both the infrastructure and tenant virtual machines can be redistributed across any physical host.
 
-All the Software Load Balancer virtual machines must have [!INCLUDE[winthreshold_server_2_mdToken/winthreshold_server_2_md.md)] 5 with the Zero Day Patch as the operating system.
+All the Software Load Balancer virtual machines must have Windows Server Technical Preview 5 with the Zero Day Patch as the operating system.
 
 ### Logical networks
 
 In addition to the Management and HNV Provider logical networks that you already have configured during network controller deployment, you need the Transit (sometimes called Front End), Private VIP and Public VIP networks to deploy the SLB. Refer to the [Plan a Software Defined Network Infrastructure](https://technet.microsoft.com/library/mt605207.aspx) topic for more information about these networks.
 
-Normally you would use the Transit network for BGP peering. But because of a limitation in [!INCLUDE[winthreshold_server_2_mdToken/winthreshold_server_2_md.md)] 5, the SLB actually uses the Management network for BGP peering. However, this doesn't impact how you deploy the SLB.  
+Normally you would use the Transit network for BGP peering. But because of a limitation in Windows Server Technical Preview 5, the SLB actually uses the Management network for BGP peering. However, this doesn't impact how you deploy the SLB.  
 
 Active Directory and DNS must be available and reachable from these networks. You must have Domain Administrator credentials and the ability to create DNS entries in the domain.
 
@@ -264,8 +265,8 @@ Use the following steps to disable IPv6:
 2. When you have console access to the virtual machine, press **Windows+R**, type **NCPA.cpl** and press **Enter**.
 3. Select a vNIC on the Network Connections dialog, right-click the vNIC and select **Properties**.
 4. Uncheck the **Internet Protocol Version 6(TCP/IPv6)** checkbox if its enabled as shown in the screenshot below
-    a.  Repeat this step for all the vNICs in Network Connections.
-![VMM Network ConnectionsImage/VMM-Network-Connections.png)    
+    a.  Repeat this step for all the vNICs in Network Connections.  
+      ![VMM Network Connections](../../media/VMM-Network-Connections.png)    
 5. Repeat Steps 1-4 for all the SLB/MUX virtual machines.
 
 Since the SLB/MUX is now on-boarded and SLB Manager VIP is assigned, you can now proceed to create IP pools for the Private VIP and Public VIP logical networks you created earlier.
@@ -381,7 +382,7 @@ Use the following procedure to create a VIP template.
 
 8.  On the **Specify Protocol Options** screen, select the protocol you want to create a VIP mapping for. The HTTP and HTTPS options are commonly used, but for a simple example you can select the **Custom** option and chose **TCP** in the **Protocol Name** field. If TCP does not appear as an option in the drop-down menu, you can type it manually. This is a known issue in Technical Preview 5. Click **Next**.
 
-9.  You can optionally select **enable persistence** if you wish to have the load balancer make the connection from the client �sticky�. Click **Next**.
+9.  You can optionally select **enable persistence** if you wish to have the load balancer make the connection from the client "sticky". Click **Next**.
 
 10.  For the **Load Balancing method**, select **Round Robin** from the drop down list. Click **Next**.
 

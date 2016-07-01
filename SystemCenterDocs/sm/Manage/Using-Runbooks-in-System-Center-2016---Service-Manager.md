@@ -1,15 +1,16 @@
 ---
-title: Using Runbooks in System Center 2016 - Service Manager
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - service-manager
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: a0863ac5-05d9-46b3-8e18-1f76e50ee07d
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  bandersmsft
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  Using Runbooks in System Center 2016   Service Manager
+ms.technology:  service-manager
+ms.assetid:  a0863ac5-05d9-46b3-8e18-1f76e50ee07d
 ---
+
 # Using Runbooks in System Center 2016 - Service Manager
 
 >Applies To: System Center 2016 Technical Preview - Service Manager
@@ -53,7 +54,7 @@ As an example, you can implement a new request offering using an Orchestrator ru
 
 3.  In the **Runbooks** view, select a runbook.
 
-4.  In the **Tasks** pane, under **<RunbookName\>**, click **Create Runbook Automation Activity Template** to open the **Create Template** dialog box.
+4.  In the **Tasks** pane, under *RunbookName*, click **Create Runbook Automation Activity Template** to open the **Create Template** dialog box.
 
 5.  In the **Name** box, type a name for the template.
 
@@ -61,11 +62,11 @@ As an example, you can implement a new request offering using an Orchestrator ru
 
 7.  If necessary, select an unsealed management pack to save the template to, and then click **OK**. You will use this management pack later to retrieve the runbook automation activity template from another work item template, such as a service request template.
 
-8.  In the Runbook Activity Template: <TemplateName\> form, on the **General** tab, type information for **Title**, **Description**, **Area**, **Stage**, **Assigned To**, and **Designer**.
+8.  In the Runbook Activity Template: *TemplateName* form, on the **General** tab, type information for **Title**, **Description**, **Area**, **Stage**, **Assigned To**, and **Designer**.
 
 9. Ensure that **Is Ready for Automation** is selected.
 
-10. Select the **Runbook** tab, and then under **Parameter Mapping**, note that the parameters from the runbook are mapped to generic properties—for example, Parameter1, Parameter2, and so on—of the runbook activity class. The **Type** column specifies whether the parameters are inputs or outputs. You can also type default values for each parameter using **Edit Mapping**.
+10. Select the **Runbook** tab, and then under **Parameter Mapping**, note that the parameters from the runbook are mapped to generic properties. For example, Parameter1, Parameter2, and so on of the runbook activity class. The **Type** column specifies whether the parameters are inputs or outputs. You can also type default values for each parameter using **Edit Mapping**.
 
 11. For any parameter, click **Edit Mapping**.
 
@@ -88,7 +89,4 @@ When you view the runbook, you can perform basic actions with the runbook, such 
 
 3.  In the **Runbooks** view, select a runbook.
 
-4.  In the **Tasks** pane under **<RunbookName\>**, click **View Runbooks** to open the runbook in Internet Explorer.
-
-
-
+4.  In the **Tasks** pane under *RunbookName*, click **View Runbooks** to open the runbook in Internet Explorer.

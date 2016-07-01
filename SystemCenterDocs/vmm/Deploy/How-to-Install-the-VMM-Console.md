@@ -1,15 +1,16 @@
 ---
-title: How to Install the VMM Console
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - virtual-machine-manager
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 56f31a2e-68ec-49f0-b0e6-628c832897dc
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  rayne-wiselman
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  How to Install the VMM Console
+ms.technology:  virtual-machine-manager
+ms.assetid:  56f31a2e-68ec-49f0-b0e6-628c832897dc
 ---
+
 # How to Install the VMM Console
 
 >Applies To: System Center 2016 Technical Preview - Virtual Machine Manager

@@ -1,15 +1,16 @@
 ---
-title: How to Assign or Remove a Default Price Sheet for a Selected Cloud
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - service-manager
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 8cc9a2b5-c265-4909-9d82-4e99346dd30f
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  bandersmsft
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  How to Assign or Remove a Default Price Sheet for a Selected Cloud
+ms.technology:  service-manager
+ms.assetid:  8cc9a2b5-c265-4909-9d82-4e99346dd30f
 ---
+
 # How to Assign or Remove a Default Price Sheet for a Selected Cloud
 
 >Applies To: System Center 2016 Technical Preview - Service Manager
@@ -24,14 +25,14 @@ After Service Manager has discovered cloud objects from the Operations Manager C
 
 3.  In the list of clouds, select one that you want to assign a price sheet to and then under Tasks, click **Assign Price Sheet**.
 
-4.  In <CloudName\> form under **Default Cloud Price Sheet**, in the Action column, click **Assign Price Sheet**.
+4.  In *CloudName* form under **Default Cloud Price Sheet**, in the Action column, click **Assign Price Sheet**.
 
     > [!NOTE]
     > If a cloud previously had a price sheet assigned, then assigning a new one automatically unassigns the price sheet that was used previously.
 
 5.  In the **Select objects** dialog box, select a price sheet that you want to assign and then click **OK**.
 
-6.  Click **OK** to close the <CloudName\> form.
+6.  Click **OK** to close the *CloudName* form.
 
     > [!NOTE]
     > If a cloud does not have a price sheet assigned, all virtual machines in the cloud will have a price of zero in chargeback reports.
@@ -44,10 +45,6 @@ After Service Manager has discovered cloud objects from the Operations Manager C
 
 3.  In the list of clouds, select one that you want to remove the default price sheet from to and then under Tasks, click **Edit**.
 
-4.  In <CloudName\> form under **Default Cloud Price Sheet**, click **Remove**.
+4.  In *CloudName* form under **Default Cloud Price Sheet**, click **Remove**.
 
-5.  Click **OK** to close the <CloudName\> form.
-
-
-
-
+5.  Click **OK** to close the *CloudName* form.

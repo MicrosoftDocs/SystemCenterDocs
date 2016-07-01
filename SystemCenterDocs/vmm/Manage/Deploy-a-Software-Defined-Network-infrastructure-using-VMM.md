@@ -1,16 +1,17 @@
 ---
-title: Deploy a Software Defined Network infrastructure using VMM
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.service: virtual-network
-ms.suite: na
-ms.technology: 
-  - techgroup-networking
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 69d31a73-ec82-4771-97fa-e3a2d9e68a8f
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  rayne-wiselman
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  Deploy a Software Defined Network infrastructure using VMM
+ms.technology:  virtual-machine-manager
+ms.assetid:  69d31a73-ec82-4771-97fa-e3a2d9e68a8f
+ms.service:  virtual-network
 ---
+
 # Deploy a Software Defined Network infrastructure using VMM
 
 >Applies To: System Center 2016 Technical Preview - Virtual Machine Manager

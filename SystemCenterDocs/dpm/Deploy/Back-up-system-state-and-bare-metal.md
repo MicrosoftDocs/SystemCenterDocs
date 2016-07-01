@@ -5,7 +5,7 @@ ms.topic:  article
 author:  markgalioto
 ms.prod:  system-center-threshold
 keywords:  
-ms.date:  2016-06-27
+ms.date:  2016-06-30
 title:  Back up system state and bare metal
 ms.technology:  data-protection-manager
 ms.assetid:  7035095c-6d30-40aa-ae73-4159e305d7ea
@@ -51,11 +51,11 @@ This table summarizes what you can back up and recover. You can see detailed inf
 
 ## How system state backup works
 
-1.  When a system state back up runs DPM communicates with WSB request a backup of the server’s system state. By default DPM and WSB will use the drive with the most available free space, and information about this drive is saved in the PSDataSourceConfig.XML file. This is the drive WSB will use to do backups to.
+1.  When a system state back up runs DPM communicates with WSB request a backup of the server's system state. By default DPM and WSB will use the drive with the most available free space, and information about this drive is saved in the PSDataSourceConfig.XML file. This is the drive WSB will use to do backups to.
 
-2.  You can customize the drive that DPM uses for the system state backup. To do this on the protected server, go to C:\Program Files\Microsoft Data Protection Manager\DPM\Datasources. Open the PSDataSourceConfig.XML file for editing. Change the<FilesToProtect> value for the drive letter. Close and save the file. If there’s a protection group protecting the system state of the computer run a consistency check. In case an alert is generated click Modify protection group link in the alert, and then step through the wizard. Then run another consistency check.
+2.  You can customize the drive that DPM uses for the system state backup. To do this on the protected server, go to C:\Program Files\Microsoft Data Protection Manager\DPM\Datasources. Open the PSDataSourceConfig.XML file for editing. Change the<FilesToProtect> value for the drive letter. Close and save the file. If there's a protection group protecting the system state of the computer run a consistency check. In case an alert is generated click Modify protection group link in the alert, and then step through the wizard. Then run another consistency check.
 
-3.  Note that if the protection server is in a cluster it’s possible that a cluster drive will be selected as the drive with the most free space. It’s important to be aware of this because if that drive ownership has been switched to another node and a system state backup runs, the drive won’t be available and the backup will fail. In this situation, you’ll need to modify the PSDataSourceConfig.XML to point it to a local drive.
+3.  Note that if the protection server is in a cluster it's possible that a cluster drive will be selected as the drive with the most free space. It's important to be aware of this because if that drive ownership has been switched to another node and a system state backup runs, the drive won't be available and the backup will fail. In this situation, you'll need to modify the PSDataSourceConfig.XML to point it to a local drive.
 
 4.  WSB will then create a folder called WindowsImageBackup on the root of the. As it creates the backup, all of the data will be placed in this folder. When the backup completes the file will then be transferred over to the DPM server. Note that:
 
@@ -67,27 +67,27 @@ This table summarizes what you can back up and recover. You can see detailed inf
 
 1.  For BMR (including a system state backup) the backup job is performed directly to a share on the DPM server and not to a folder on the protected server.
 
-2.  DPM server calls WSB and shares out the replica volume for that BMR backup. In this case it doesn’t tell WSB to use the drive with the most free space, but instead to use the share created for the job.
+2.  DPM server calls WSB and shares out the replica volume for that BMR backup. In this case it doesn't tell WSB to use the drive with the most free space, but instead to use the share created for the job.
 
 3.  When the backup finishes the file is transferred to the DPM server. Logs are stored in C:\Windows\Logs\WindowsServerBackup.
 
 ## Prerequisites and limitations
 
--   BMR isn’t supported for computers running Windows Server 2003 or for computers running client operating systems.
+-   BMR isn't supported for computers running Windows Server 2003 or for computers running client operating systems.
 
--   You can’t protect BMR and system state for the same computer in different protection groups.
+-   You can't protect BMR and system state for the same computer in different protection groups.
 
--   A DPM server can’t protect itself for BMR.
+-   A DPM server can't protect itself for BMR.
 
--   Short-term protection to tape (D2T) isn’t supported for BMR. Long-term storage to tape (D2D2T) is supported.
+-   Short-term protection to tape (D2T) isn't supported for BMR. Long-term storage to tape (D2D2T) is supported.
 
 -   Windows Server Backup must be installed on the protected computer for BMR.
 
--   For BMR protection (unlike system state protection) DPM doesn’t have any space requirements on the protected computer. WSB directly transfers the backups to the DPM server. Note that the job for this doesn’t appear in the DPM Jobs view.
+-   For BMR protection (unlike system state protection) DPM doesn't have any space requirements on the protected computer. WSB directly transfers the backups to the DPM server. Note that the job for this doesn't appear in the DPM Jobs view.
 
 -   DPM reserves 30 GB of space on the replica volume for BMR. You can change this on the Disk Allocation page in the Modify Protection Group Wizard or using the Get-DatasourceDiskAllocation and Set-DatasourceDiskAllocation PowerShell cmdlets. On the recovery point volume, BMR protection requires about 6 GB for retention of five days.
-    Note that you can’t reduce the replica volume size to less than 15 GB.
-    DPM doesn’t calculate the size of BMR data source, but assumes 30 GB for all servers. Admins should change the value as per the size of BMR backups expected on their environments. The size of a BMR backup can be roughly calculated sum of used space on all critical volumes: Critical volumes = Boot Volume + System Volume + Volume hosting system state data such as AD.
+    Note that you can't reduce the replica volume size to less than 15 GB.
+    DPM doesn't calculate the size of BMR data source, but assumes 30 GB for all servers. Admins should change the value as per the size of BMR backups expected on their environments. The size of a BMR backup can be roughly calculated sum of used space on all critical volumes: Critical volumes = Boot Volume + System Volume + Volume hosting system state data such as AD.
     Process
     System state backup
 
@@ -95,10 +95,10 @@ This table summarizes what you can back up and recover. You can see detailed inf
 
     If you move from system state protection to BMR protection , BMR protection will require more space on the **replica volume**. The volume will be extended automatically. If you want to change the default space allocations you can use Modify-DiskAllocation.
 
--   If you move from BMR protection to system state protection you’ll need more space on the recovery point volume.
+-   If you move from BMR protection to system state protection you'll need more space on the recovery point volume.
     DPM might try to automatically grow the volume. If there is insufficient space in the storage pool, an error will be issued.
 
-    If you move from BMR protection to system state protection you’ll need space on the protected computer because system state protection first writes the replica to the local computer and then transfers it to the DPM server
+    If you move from BMR protection to system state protection you'll need space on the protected computer because system state protection first writes the replica to the local computer and then transfers it to the DPM server
 
 ## Before you start
 
@@ -112,16 +112,13 @@ This table summarizes what you can back up and recover. You can see detailed inf
 
     -   [Get DPM installed](../get-started/Get-DPM-installed.md)
 
-2.  **Set up storage**—You can store backed up data on disk, on tape, and in the cloud with Azure. Read more in [Prepare data storage](../get-started/Prepare-data-storage.md).
+2.  **Set up storage**-You can store backed up data on disk, on tape, and in the cloud with Azure. Read more in [Prepare data storage](../get-started/Prepare-data-storage.md).
 
-3.  **Set up the DPM protection agent**—You'll need to install the DPM protection agent on machine you want to back up. Read [Deploy the DPM protection agent](Deploy-the-DPM-protection-agent.md)
+3.  **Set up the DPM protection agent**-You'll need to install the DPM protection agent on machine you want to back up. Read [Deploy the DPM protection agent](Deploy-the-DPM-protection-agent.md)
 
 ## Back up system state and bare metal
-Set up a protection group as described in [Deploy protection groups](Deploy-protection-groups.md). Note that:
+Set up a protection group as described in [Deploy protection groups](Deploy-protection-groups.md). Note that you can't protect BMR and system state for the same machine in different groups, and that when you select BMR system state is automatically enabled.
 
--   You can't protect BMR and system state for the same machine in different groups, and that when you select BMR system state is automatically enabled.
-
--
 
 1.  Click **Protection** > **Actions** > **Create Protection Group** to open the **Create New Protection Group** wizard in the DPM console.
 
@@ -137,21 +134,21 @@ Set up a protection group as described in [Deploy protection groups](Deploy-prot
 
 6.  If you want to store data on tape for long-term storage in **Specify long-term goals** indicate how long you want to keep tape data (1-99 years). In Frequency of backup specify how often backups to tape should run. The frequency is based on the retention range you've specified:
 
-    -   When the retention range is 1–99 years, you can select backups to occur daily, weekly, bi-weekly, monthly, quarterly, half-yearly, or yearly.
+    -   When the retention range is 1-99 years, you can select backups to occur daily, weekly, bi-weekly, monthly, quarterly, half-yearly, or yearly.
 
-    -   When the retention range is 1–11 months, you can select backups to occur daily, weekly, bi-weekly, or monthly.
+    -   When the retention range is 1-11 months, you can select backups to occur daily, weekly, bi-weekly, or monthly.
 
-    -   When the retention range is 1–4 weeks, you can select backups to occur daily or weekly.
+    -   When the retention range is 1-4 weeks, you can select backups to occur daily or weekly.
 
     On a stand-alone tape drive, for a single protection group, DPM uses the same tape for daily backups until there is insufficient space on the tape. You can also colocate data from different protection groups on tape.
 
     On the **Select Tape and Library Details** page specify the tape/library to use, and whether data should be compressed and encrypted on tape.
 
-7.  In **Review disk allocation** page review the storage pool disk space allocated for the protection group. **Data size** shows the size of the data you want to back up, and **Disk space** shows the space that DPM recommends for the protection group. We recommend that you select **Colocate data** to back up multiple client data sources to one replica volume if you have a large number of client computers. You won’t be able to protect 1000 or more client computers with one DPM server without co-locating your data. We recommend that you do not co-locate if you have less than ten client computers in a protection group. Select **Automatically grow the volumes** to automatically increase size when more disk space is required for protecting data on the client computers.
+7.  In **Review disk allocation** page review the storage pool disk space allocated for the protection group. **Data size** shows the size of the data you want to back up, and **Disk space** shows the space that DPM recommends for the protection group. We recommend that you select **Colocate data** to back up multiple client data sources to one replica volume if you have a large number of client computers. You won't be able to protect 1000 or more client computers with one DPM server without co-locating your data. We recommend that you do not co-locate if you have less than ten client computers in a protection group. Select **Automatically grow the volumes** to automatically increase size when more disk space is required for protecting data on the client computers.
 
 8.  In **Choose replica creation method** select how you want to handle the initial full data replication.  If you select to replicate over the network we recommended you choose an off-peak time. For large amounts of data or less than optimal network conditions, consider replicating the data offline using removable media.
 
-9. In **Choose consistency check options**, select how you want to automate consistency checks. You can enable a check to run only when replica data becomes inconsistent, or according to a schedule. If you don’t want to configure automatic consistency checking, you can run a manual check at any time by right-clicking the protection group in the **Protection** area of the DPM console, and selecting **Perform Consistency Check**.
+9. In **Choose consistency check options**, select how you want to automate consistency checks. You can enable a check to run only when replica data becomes inconsistent, or according to a schedule. If you don't want to configure automatic consistency checking, you can run a manual check at any time by right-clicking the protection group in the **Protection** area of the DPM console, and selecting **Perform Consistency Check**.
 
 10. If you've selected to back up to the cloud with Azure Backup, on the **Specify online protection data** page make sure the workloads you want to back up to Azure are selected.
 
@@ -223,11 +220,8 @@ Run Windows Server Backup
 
 3.  In **Select Recovery Type** click **System state**. In **Select Location for System State Recovery**  click  **Original Location**
 
-4.  In **Confirmation** click **Recover**. You’ll need to restart the server after the restore.
+4.  In **Confirmation** click **Recover**. You'll need to restart the server after the restore.
 
-5.  You can also run a system state restore from the command line. To do this start Windows Server Backup on the machine you want to recover. From a command prompt type: **wbadmin get versions –backuptarget <servername\sharename>** to get the version identifier.
+5.  You can also run a system state restore from the command line. To do this start Windows Server Backup on the machine you want to recover. From a command prompt type: **wbadmin get versions -backuptarget <servername\sharename>** to get the version identifier.
 
-    Use the version identifier to start system state restore. At the command line type: **wbadmin start systemstaterecovery –version:<versionidentified> –backuptarget:<servername\sharename>** Confirm that you want to start the recovery. You can see the process in the command window. A restore log is created. You’ll need restart the server after the restore.
-
-
-
+    Use the version identifier to start system state restore. At the command line type: **wbadmin start systemstaterecovery -version:<versionidentified> -backuptarget:<servername\sharename>** Confirm that you want to start the recovery. You can see the process in the command window. A restore log is created. You'll need restart the server after the restore.

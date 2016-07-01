@@ -1,15 +1,16 @@
 ---
-title: How to add hardware load balancers in VMM
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - virtual-machine-manager
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 679cc787-b5e9-4fb1-ae6f-91ba20f15124
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  rayne-wiselman
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  How to add hardware load balancers in VMM
+ms.technology:  virtual-machine-manager
+ms.assetid:  679cc787-b5e9-4fb1-ae6f-91ba20f15124
 ---
+
 # How to add hardware load balancers in VMM
 
 >Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
@@ -30,7 +31,7 @@ Before you begin this procedure, make sure that the following prerequisites are 
 
     -   Citrix NetScaler from Citrix Systems, Inc.
 
--   You must obtain the load balancer provider from the load balancer vendor, and install the provider on the VMM management server. You can use the following links to obtain the load balancer provider from your vendor’s website:
+-   You must obtain the load balancer provider from the load balancer vendor, and install the provider on the VMM management server. You can use the following links to obtain the load balancer provider from your vendor"s website:
 
     > [!NOTE]
     > In the following list, all information and content at the listed Web addresses is provided by the owner or the users of each website. Microsoft makes no warranties, express, implied or statutory, as to the information at this website.
@@ -93,16 +94,16 @@ Before you begin this procedure, make sure that the following prerequisites are 
 
     -   When you configure front-end affinity, select the logical networks from which the load balancer can obtain its virtual IP (VIP) address. The VIP address is the IP address that is assigned to a load balancer during the deployment of a load-balanced service tier. Clients can connect to the VIP address through a registered DNS name to access the service.
 
-        During the deployment of a load-balanced service tier, VMM looks for static IP address pools with available VIP addresses on the logical network that you select for the “Client connection” object when you configure a load balancer in a service template.
+        During the deployment of a load-balanced service tier, VMM looks for static IP address pools with available VIP addresses on the logical network that you select for the "Client connection" object when you configure a load balancer in a service template.
 
-        For the load balancer to be selected during placement, when you configure the load balancer “Client connection” object, the logical network that you select must be in the list of logical networks that are selected for front-end affinity.
+        For the load balancer to be selected during placement, when you configure the load balancer "Client connection" object, the logical network that you select must be in the list of logical networks that are selected for front-end affinity.
 
         > [!IMPORTANT]
         > For front-end affinity, make sure that you select one or more logical networks where the associated network site with a reserved VIP address range is available to a host group or parent host group that is also available to the hardware load balancer.
 
     -   When you configure back-end affinity, select the logical networks to which you want to make the load balancer available for connections from the virtual machines that make up a service tier.
 
-        For the load balancer to be selected during placement, when you configure the load balancer “Server connection” object in a service template, the logical network that the NIC object is connected to must be in the list of logical networks that are selected for back-end affinity.
+        For the load balancer to be selected during placement, when you configure the load balancer "Server connection" object in a service template, the logical network that the NIC object is connected to must be in the list of logical networks that are selected for back-end affinity.
 
 10. On the **Provider** page, do the following, and then click **Next**:
 

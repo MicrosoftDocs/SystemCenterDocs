@@ -1,15 +1,16 @@
 ---
-title: How to Create Service Request Templates for New Request Offerings
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - service-manager
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 78965a33-426c-4d7c-82f2-14f23e32fdc9
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  bandersmsft
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  How to Create Service Request Templates for New Request Offerings
+ms.technology:  service-manager
+ms.assetid:  78965a33-426c-4d7c-82f2-14f23e32fdc9
 ---
+
 # How to Create Service Request Templates for New Request Offerings
 
 >Applies To: System Center 2016 Technical Preview - Service Manager

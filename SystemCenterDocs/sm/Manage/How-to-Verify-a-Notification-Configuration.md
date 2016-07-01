@@ -1,15 +1,16 @@
 ---
-title: How to Verify a Notification Configuration
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - service-manager
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 9395bb54-3aab-48e3-9b9f-8b874d213fe3
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  bandersmsft
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  How to Verify a Notification Configuration
+ms.technology:  service-manager
+ms.assetid:  9395bb54-3aab-48e3-9b9f-8b874d213fe3
 ---
+
 # How to Verify a Notification Configuration
 
 >Applies To: System Center 2016 Technical Preview - Service Manager
@@ -26,11 +27,8 @@ If you are verifying a recurring notification subscription, you must wait for th
 
 3.  In the **Tasks** pane, under **Incident Management**, click **Create Incident**.
 
-4.  In the **Incident <Number\> New** form, enter the required information in the **Affected user**, **Title**, **Classification Category**, **Impact**, and **Urgency** boxes.
+4.  In the **Incident *Number* New** form, enter the required information in the **Affected user**, **Title**, **Classification Category**, **Impact**, and **Urgency** boxes.
 
 5.  In the **Classification Category** list, select **E-mail Problems**, and then click **OK**.
 
 6.  Verify that an email notification that contains the information you entered in the template is received. The email title should contain the incident ID number.
-
-
-

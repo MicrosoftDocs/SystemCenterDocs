@@ -1,22 +1,23 @@
 ---
-title: Preparing your environment for System Center 2016 - Virtual Machine Manager
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - virtual-machine-manager
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 43a08da5-1386-4e74-917d-7beef92de154
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  rayne-wiselman
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  Preparing your environment for System Center 2016   Virtual Machine Manager
+ms.technology:  virtual-machine-manager
+ms.assetid:  43a08da5-1386-4e74-917d-7beef92de154
 ---
+
 # Preparing your environment for System Center 2016 - Virtual Machine Manager
 
 >Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
 
 Here are the system requirements and considerations to keep in mind before you deploy the System Center 2016 Technical Preview version of Virtual Machine Manager (VMM).
 
-If you’re evaluating your environment, see LINK_HERE.
+If you"re evaluating your environment, see LINK_HERE.
 
 ## VMM management server
 
@@ -35,11 +36,11 @@ If you’re evaluating your environment, see LINK_HERE.
 
 -   **Domain requirements**: The computer on which you install the VMM management server must be a member of an Active Directory domain. In your environment you might have user accounts in one forest and your VMM servers and host in another. In this environment, you must establish a two-way trust between the two cross-forest domains. One-way trusts between cross-forest domains are not supported in VMM.
 
--   **Computer name length**: The management server’s computer name cannot exceed 15 characters.
+-   **Computer name length**: The management server"s computer name cannot exceed 15 characters.
 
 -   **Library server disk space**: If you use the VMM management server also as a library server, then you must provide additional hard disk space to store objects. The space required varies, based on the number and size of the objects you store.
 
--   **Avoiding installation on a Hyper-V host**: Don’t install the VMM management server, or other System Center components other than agents, on servers running Hyper-V. You can install System Center components in virtual machines.
+-   **Avoiding installation on a Hyper-V host**: Don"t install the VMM management server, or other System Center components other than agents, on servers running Hyper-V. You can install System Center components in virtual machines.
 
 -   **Installing in a virtual machine**: Installing the VMM management server in a virtual machine can help you reduce the number of physical servers that you maintain, and simplify some management tasks. For information about memory and other requirements, see [Minimum Hardware Recommendations for System Center Technical Preview](../../system-requirements/Minimum-Hardware-Recommendations-for-System-Center-Technical-Preview.md).
 
@@ -62,7 +63,7 @@ For information about how to install the VMMconsole, see [Installing and Opening
 
 -   The instance of SQL Server that you are using must allow for case-insensitive database objects.
 
--   The SQL Server’s computer name cannot exceed 15 characters in length.
+-   The SQL Server"s computer name cannot exceed 15 characters in length.
 
 -   If the VMM management server and the SQL Server computer are not members of the same Active Directory domain, then a two-way trust must exist between the two domains.
 
@@ -138,7 +139,7 @@ You can use VMM to find physical computers on the network, automatically install
 
 -   Additional nodes in an existing cluster, either a Hyper-V host cluster or a Scale-Out File Server cluster
 
-These physical computers can be computers on which no operating system is installed, often referred to as “bare-metal" computers. Or these can be computers on which you want to overwrite an existing operating system.
+These physical computers can be computers on which no operating system is installed, often referred to as "bare-metal" computers. Or these can be computers on which you want to overwrite an existing operating system.
 
 For more information, see [How to add existing servers or clusters as Hyper-V hosts or host clusters in VMM](../Manage/How-to-add-existing-servers-or-clusters-as-Hyper-V-hosts-or-host-clusters-in-VMM.md).
 

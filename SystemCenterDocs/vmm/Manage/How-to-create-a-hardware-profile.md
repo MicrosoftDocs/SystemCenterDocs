@@ -1,12 +1,16 @@
 ---
-title: How to create a hardware profile
-ms.custom: na
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 7ea7a41f-a294-43a8-a768-f11180ebebd6
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  rayne-wiselman
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  How to create a hardware profile
+ms.technology:  virtual-machine-manager
+ms.assetid:  7ea7a41f-a294-43a8-a768-f11180ebebd6
 ---
+
 # How to create a hardware profile
 
 >Applies To: System Center 2016 Technical Preview - Virtual Machine Manager

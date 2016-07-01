@@ -1,16 +1,20 @@
 ---
-title: Using Groups, Queues, and Lists in System Center 2016 - Service Manager
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - service-manager
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 360fa976-6b9c-4521-a9d4-77250233449e
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  bandersmsft
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  Using Groups, Queues, and Lists in System Center 2016   Service Manager
+ms.technology:  service-manager
+ms.assetid:  360fa976-6b9c-4521-a9d4-77250233449e
 ---
+
 # Using Groups, Queues, and Lists in System Center 2016 - Service Manager
+
+>Applies To: System Center 2016 Technical Preview - Service Manager
+
 In Service Manager, you can use groups to manage configuration items, queues to manage work items, and lists to customize forms to classify different objects, such as incidents, change requests, activities, or configuration items. Use the overview and the procedures in the following topics to help manage these items.
 
 ## About Groups, Queues, and Lists
@@ -201,5 +205,3 @@ You can use these procedures to add a list item to an existing list and then val
 1.  Select the same list again, click **Properties** in the **Tasks** pane, and then verify that the new list item appears.
 
 2.  In the Service Manager console, create a new incident, and then locate the new list item in the **Classification Category** list. For example, expand **Printer Problems**, and then locate the **Laser Printer** and **Check-Writing Printer** list items.
-
-

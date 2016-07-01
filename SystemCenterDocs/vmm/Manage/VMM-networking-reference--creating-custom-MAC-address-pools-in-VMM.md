@@ -1,15 +1,16 @@
 ---
-title: VMM networking reference: creating custom MAC address pools in VMM
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - virtual-machine-manager
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 173187c5-4a8b-4410-9d6e-a700a1184d7b
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  rayne-wiselman
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  VMM networking reference  creating custom MAC address pools in VMM
+ms.technology:  virtual-machine-manager
+ms.assetid:  173187c5-4a8b-4410-9d6e-a700a1184d7b
 ---
+
 # VMM networking reference: creating custom MAC address pools in VMM
 
 >Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
@@ -23,8 +24,8 @@ VMM uses the following default MAC address pool ranges.
 
 |Default MAC Address Pool Name|Hypervisor Platform|Default MAC Address Pool Range|
 |---------------------------------|-----------------------|----------------------------------|
-|**Default MAC address pool**|Hyper-V|00:1D:D8:B7:1C:00 – 00:1D:D8:F4:1F:FF|
-|**Default VMware MAC address pool**|VMware ESX|00:50:56:00:00:00 – 00:50:56:3F:FF:FF|
+|**Default MAC address pool**|Hyper-V|00:1D:D8:B7:1C:00 " 00:1D:D8:F4:1F:FF|
+|**Default VMware MAC address pool**|VMware ESX|00:50:56:00:00:00 " 00:50:56:3F:FF:FF|
 
 If you create custom MAC address pools, the following restrictions apply:
 
@@ -42,12 +43,12 @@ If you create custom MAC address pools, the following restrictions apply:
 
     |Reserved For|Prefixes|
     |----------------|------------|
-    |Microsoft|00:03:FF<br /><br />00:0D:3A<br /><br />00:12:5A<br /><br />00:15:5D<br /><br />00:17:FA<br /><br />00:50:F2<br /><br />00:1D:D8 (except for the 00:1D:D8:B7:1C:00 – 00:1D:D8:F4:1F:FF range that is reserved for VMM)|
-    |VMware|00:05:69<br /><br />00:0C:29<br /><br />00:1C:14<br /><br />00:50:56 (except for the 00:50:56:00:00:00 – 00:50:56:3F:FF:FF range that is the reserved as the default VMware static range)|
+    |Microsoft|00:03:FF<br /><br />00:0D:3A<br /><br />00:12:5A<br /><br />00:15:5D<br /><br />00:17:FA<br /><br />00:50:F2<br /><br />00:1D:D8 (except for the 00:1D:D8:B7:1C:00 " 00:1D:D8:F4:1F:FF range that is reserved for VMM)|
+    |VMware|00:05:69<br /><br />00:0C:29<br /><br />00:1C:14<br /><br />00:50:56 (except for the 00:50:56:00:00:00 " 00:50:56:3F:FF:FF range that is the reserved as the default VMware static range)|
     |Citrix|00:16:3E|
 
 > [!IMPORTANT]
-> Only complete the “To delete a default MAC address pool (optional)” procedure if you do not want to use the default pools, or you want to divide a default pool into smaller pools.
+> Only complete the "To delete a default MAC address pool (optional)" procedure if you do not want to use the default pools, or you want to divide a default pool into smaller pools.
 
 ### To delete a default MAC address pool (optional)
 
@@ -118,11 +119,11 @@ If you create custom MAC address pools, the following restrictions apply:
 > [!NOTE]
 > You can use the Windows PowerShell cmdlets, [Get-SCMACAddress](http://technet.microsoft.com/library/jj613233.aspx) and [Get-SCMACAddressPool](http://technet.microsoft.com/library/jj654398.aspx), to view the states of the MAC addresses in a MAC address pool. Use the cmdlets with the following syntax, where `<MACAddressPool>` is the name of your MAC address pool:
 > 
-> `$MACpool=Get-SCMACAddressPool –Name <MACAddressPool>`
+> `$MACpool=Get-SCMACAddressPool "Name <MACAddressPool>`
 > 
-> `Get-SCMACAddress –MACAddressPool $MACpool | Format-Table –property Address,VirtualNetworkAdapter,State`
+> `Get-SCMACAddress "MACAddressPool $MACpool | Format-Table "property Address,VirtualNetworkAdapter,State`
 
-From time to time, you might need to release MAC addresses that are in the pool but that are marked by VMM as “inactive.” Releasing them makes them available for reassignment. For more information, see [How to release inactive IP or MAC addresses in VMM](How-to-release-inactive-IP-or-MAC-addresses-in-VMM.md).
+From time to time, you might need to release MAC addresses that are in the pool but that are marked by VMM as "inactive." Releasing them makes them available for reassignment. For more information, see [How to release inactive IP or MAC addresses in VMM](How-to-release-inactive-IP-or-MAC-addresses-in-VMM.md).
 
 ## See Also
 [How to release inactive IP or MAC addresses in VMM](How-to-release-inactive-IP-or-MAC-addresses-in-VMM.md)

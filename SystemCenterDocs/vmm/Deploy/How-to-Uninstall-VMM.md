@@ -1,15 +1,16 @@
 ---
-title: How to Uninstall VMM
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - virtual-machine-manager
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 34ead8d2-f244-4d8a-95f2-e985b7c69976
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  rayne-wiselman
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  How to Uninstall VMM
+ms.technology:  virtual-machine-manager
+ms.assetid:  34ead8d2-f244-4d8a-95f2-e985b7c69976
 ---
+
 # How to Uninstall VMM
 
 >Applies To: System Center 2016 Technical Preview - Virtual Machine Manager

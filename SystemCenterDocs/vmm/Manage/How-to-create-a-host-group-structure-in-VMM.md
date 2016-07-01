@@ -1,12 +1,16 @@
 ---
-title: How to create a host group structure in VMM
-ms.custom: na
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: a515169d-50f3-4b3f-add4-9dd7354e6208
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  rayne-wiselman
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  How to create a host group structure in VMM
+ms.technology:  virtual-machine-manager
+ms.assetid:  a515169d-50f3-4b3f-add4-9dd7354e6208
 ---
+
 # How to create a host group structure in VMM
 
 >Applies To: System Center 2016 Technical Preview - Virtual Machine Manager

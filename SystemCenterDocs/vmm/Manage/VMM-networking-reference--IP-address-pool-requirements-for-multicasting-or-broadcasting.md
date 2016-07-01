@@ -1,15 +1,16 @@
 ---
-title: VMM networking reference: IP address pool requirements for multicasting or broadcasting
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - virtual-machine-manager
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: aad9a045-1f25-4297-aab1-fba7c502d7b5
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  rayne-wiselman
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  VMM networking reference  IP address pool requirements for multicasting or broadcasting
+ms.technology:  virtual-machine-manager
+ms.assetid:  aad9a045-1f25-4297-aab1-fba7c502d7b5
 ---
+
 # VMM networking reference: IP address pool requirements for multicasting or broadcasting
 
 >Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
@@ -26,7 +27,7 @@ If you are using network virtualization on your VM networks, you can support an 
 
     Note that after you finish creating the VM network, you cannot view this protocol setting in the VMM management console. Instead, run the Windows PowerShell cmdlet [Get-SCVMNetwork](http://technet.microsoft.com/library/jj613172.aspx) to view the setting. Use the following syntax, where `<VMNetworkName>` is the name of your VM network:
 
-    `Get-SCVMNetwork –Name <VMNetworkName> | Format-List Name, IsolationType, *PoolType`
+    `Get-SCVMNetwork "Name <VMNetworkName> | Format-List Name, IsolationType, *PoolType`
 
     In the display, a protocol (IPv4 or IPv6) is listed for the pool type:
 

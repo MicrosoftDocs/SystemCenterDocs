@@ -1,13 +1,16 @@
 ---
-title: System Center Agents
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: get-started-article
-ms.assetid: cd5d13e8-71da-4e91-9bcf-f3be00a03d54
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  cfreemanwa
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-07-01
+title:  System Center Agents
+ms.technology:  system-center-2016
+ms.assetid:  cd5d13e8-71da-4e91-9bcf-f3be00a03d54
 ---
+
 # System Center Agents
 
 >Applies To: System Center Technical Preview
@@ -66,11 +69,11 @@ This information lists both Microsoft and non-Microsoft operating systems and ve
 
 -   Windows 2008 Server R2 SP1
 
--   Windows Server® 2012
+-   Windows Server&reg; 2012
 
--   Windows Server® 2012 R2
+-   Windows Server&reg; 2012 R2
 
--   Microsoft® Hyper-V® Server 2012 R2
+-   Microsoft&reg; Hyper-V&reg; Server 2012 R2
 
 -   Windows Vista SP2
 
@@ -80,13 +83,13 @@ This information lists both Microsoft and non-Microsoft operating systems and ve
 
 -   Windows 7
 
--   Windows® 8
+-   Windows&reg; 8
 
--   Windows® 8.1
+-   Windows&reg; 8.1
 
 -   Windows 10
 
--   Windows Server® Technical Preview
+-   Windows Server&reg; Technical Preview
 
 ## Virtual Machine Manager Guest Agent
 
@@ -98,9 +101,9 @@ This information lists both Microsoft and non-Microsoft operating systems and ve
 
 -   Windows 2008 Server R2 SP1
 
--   Windows Server® 2012 R2
+-   Windows Server&reg; 2012 R2
 
--   Windows Server® Technical Preview
+-   Windows Server&reg; Technical Preview
 
 ## Virtual Machine Manager Linux Guest Agent
 
@@ -195,6 +198,4 @@ This information lists both Microsoft and non-Microsoft operating systems and ve
 -   Ubuntu Server 12.04 (x86/x64)
 
 -   Ubuntu Server 14.04 (x86/x64)
-
-
 

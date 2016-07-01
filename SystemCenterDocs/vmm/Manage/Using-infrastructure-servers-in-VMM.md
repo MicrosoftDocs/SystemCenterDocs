@@ -1,12 +1,16 @@
 ---
-title: Using infrastructure servers in VMM
-ms.custom: na
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: d62a59f5-1e2a-4c8e-ab4c-1f1e68c7ef7f
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  rayne-wiselman
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  Using infrastructure servers in VMM
+ms.technology:  virtual-machine-manager
+ms.assetid:  d62a59f5-1e2a-4c8e-ab4c-1f1e68c7ef7f
 ---
+
 # Using infrastructure servers in VMM
 
 >Applies To: System Center 2016 Technical Preview - Virtual Machine Manager

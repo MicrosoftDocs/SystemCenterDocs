@@ -1,15 +1,16 @@
 ---
-title: Using SQL Server 2014 AlwaysOn availability groups with Service Manager
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology:
-  - service-manager
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 706e433d-c641-4dc3-8be5-fe582ef9f4bc
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  bandersmsft
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  Using SQL Server 2014 AlwaysOn availability groups with Service Manager
+ms.technology:  service-manager
+ms.assetid:  706e433d-c641-4dc3-8be5-fe582ef9f4bc
 ---
+
 # Using SQL Server 2014 AlwaysOn availability groups with Service Manager
 
 >Applies To: System Center 2016 Technical Preview - Service Manager
@@ -25,9 +26,9 @@ Service Manager does not support a topology where the reporting and analysis ser
 
 SQL 2014 Server AlwaysOn supports the following Service Manager databases:
 
-- ??Service Manager CMDB
-- ??Service Manager Data Warehouse (all 3 databases)
-- ??OM and CM DataMart
+- Service Manager CMDB
+- Service Manager Data Warehouse (all 3 databases)
+- OM and CM DataMart
 
 ## New management group installation
 
@@ -59,4 +60,4 @@ Use the following series of tasks when using an existing management group with a
     2. In Step 6, use the `AGL Name,AGL Port number` to update the both DWStaging and Config database tables.
     3. In Step 7, *Configure the registry on all the management servers*, change the registry key `HKEY\_LOCAL\_MACHINE\Software\Microsoft\System Center2010\Common\Database` and give `DatabaseServerName` as `AGL Name,AGL Port number`.
 
-To summarize, you are changing the computer name hosting the Service Manager database to <AGL Name,AGL Port number> for SQL Server AlwaysOn support.
+To summarize, you are changing the computer name hosting the Service Manager database to *AGL Name*,*AGL Port number* for SQL Server AlwaysOn support.

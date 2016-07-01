@@ -1,15 +1,16 @@
 ---
-title: How to Stop and Start a Data Warehouse Job
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - service-manager
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: ab2b063e-6094-4ec5-9ecc-48754c30438c
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  bandersmsft
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  How to Stop and Start a Data Warehouse Job
+ms.technology:  service-manager
+ms.assetid:  ab2b063e-6094-4ec5-9ecc-48754c30438c
 ---
+
 # How to Stop and Start a Data Warehouse Job
 
 >Applies To: System Center 2016 Technical Preview - Service Manager
@@ -38,19 +39,19 @@ You can stop and start data warehouse jobs that are running in Service Manager. 
 2.  At the Windows PowerShell prompt, type the following commands, and then press ENTER after each command:
 
     ```
-    Stop-SCDWJob–JobName Extract_<data warehouse management group name>
+    Stop-SCDWJob-JobName Extract_<data warehouse management group name>
     ```
 
     ```
-    Stop-SCDWJob –JobName Extract_<Service Manager management group name>
+    Stop-SCDWJob -JobName Extract_<Service Manager management group name>
     ```
 
     ```
-    Stop-SCDWJob –JobName Transform.Common
+    Stop-SCDWJob -JobName Transform.Common
     ```
 
     ```
-    Stop-SCDWJob –JobName Load.Common
+    Stop-SCDWJob -JobName Load.Common
     ```
 
 3.  Type **exit**, and then press ENTER.
@@ -62,22 +63,19 @@ You can stop and start data warehouse jobs that are running in Service Manager. 
 2.  At the Windows PowerShell prompt, type the following commands, and then press ENTER after each command:
 
     ```
-    Start-SCDWJob –JobName Extract_<data warehouse management group name>
+    Start-SCDWJob -JobName Extract_<data warehouse management group name>
     ```
 
     ```
-    Start-SCDWJob –JobName Extract_<Service Manager management group name>
+    Start-SCDWJob -JobName Extract_<Service Manager management group name>
     ```
 
     ```
-    Start-SCDWJob –JobName Transform.Common
+    Start-SCDWJob -JobName Transform.Common
     ```
 
     ```
-    Start-SCDWJob –JobName Load.Common
+    Start-SCDWJob -JobName Load.Common
     ```
 
 3.  Type **exit**, and then press ENTER.
-
-
-

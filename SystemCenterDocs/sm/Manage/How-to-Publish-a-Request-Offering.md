@@ -1,15 +1,16 @@
 ---
-title: How to Publish a Request Offering
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - service-manager
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: f0c1088f-92a8-40ba-93ec-edf6bd8b5fb3
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  bandersmsft
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  How to Publish a Request Offering
+ms.technology:  service-manager
+ms.assetid:  f0c1088f-92a8-40ba-93ec-edf6bd8b5fb3
 ---
+
 # How to Publish a Request Offering
 
 >Applies To: System Center 2016 Technical Preview - Service Manager
@@ -29,7 +30,7 @@ You can use the following procedures to publish request offerings.
 
 2.  In the **Library** pane, expand **Service Catalog**, and then select **Draft Request Offerings**.
 
-3.  In the **Draft Request Offerings** list, select one or more request offerings, and in the **Tasks** pane under **<RequestOfferingName\>**, click **Publish**.
+3.  In the **Draft Request Offerings** list, select one or more request offerings, and in the **Tasks** pane under *RequestOfferingName*, click **Publish**.
 
 ### To use a change request to publish draft request offerings
 
@@ -37,15 +38,12 @@ You can use the following procedures to publish request offerings.
 
 2.  In the **Library** pane, expand **Service Catalog**, and then select **Draft Request Offerings**.
 
-3.  In the **Draft Request Offerings** list, select one or more request offerings, and in the **Tasks** pane under **<RequestOfferingName\>**, click **Create Change Request to Publish**.
+3.  In the **Draft Request Offerings** list, select one or more request offerings, and in the **Tasks** pane under *RequestOfferingName*, click **Create Change Request to Publish**.
 
 4.  In the **Select Template** dialog box, select the **Publish Offering** change request template, and then click **OK** to open a new change request form.
 
-5.  In the **<ChangeRequestID: Publish Offerings>** form, notice that the catalog items to publish appear under **Catalog items**.
+5.  In the *ChangeRequestID: Publish Offerings* form, notice that the catalog items to publish appear under **Catalog items**.
 
 6.  Click the **Activities** tab, and notice that there is a review activity and an automated activity associated with the change request. Later, when the review activity is approved, the automated activity will set the publish status to Published.
 
 7.  Click **OK** to save the change request.
-
-
-

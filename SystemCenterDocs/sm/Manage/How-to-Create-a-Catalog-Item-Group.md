@@ -1,15 +1,16 @@
 ---
-title: How to Create a Catalog Item Group
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - service-manager
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 6c11d1e8-d320-4760-a462-0e31e8124492
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  bandersmsft
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  How to Create a Catalog Item Group
+ms.technology:  service-manager
+ms.assetid:  6c11d1e8-d320-4760-a462-0e31e8124492
 ---
+
 # How to Create a Catalog Item Group
 
 >Applies To: System Center 2016 Technical Preview - Service Manager

@@ -1,15 +1,16 @@
 ---
-title: What&#39;s New in VMM in System Center Technical Preview
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - virtual-machine-manager
-ms.tgt_pltfrm: na
-ms.topic: get-started-article
-ms.assetid: 2cfb6b1c-1694-4473-bd66-6c0fb91fe167
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  rayne-wiselman
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  What s New in VMM in System Center Technical Preview
+ms.technology:  virtual-machine-manager
+ms.assetid:  2cfb6b1c-1694-4473-bd66-6c0fb91fe167
 ---
+
 # What&#39;s New in VMM in System Center Technical Preview
 This topic describes what's new and changed in Virtual Machine Manager (VMM) in System Center 2016 Technical Preview. The topic includes the following sections:
 
@@ -95,7 +96,7 @@ For more information about adding or removing a vNIC see [How to add or remove a
 
 ### **Production checkpoints** 
 
-You can now create “production checkpoints” for VMs. These checkpoints are based on Volume Shadow Copy Service (VSS) and are application-consistent compared to the “standard checkpoints” that are based on Saved State technology and were not application-consistent.  For more information on production checkpoints see [How to create a production checkpoint for a virtual machine](../Manage/How-to-create-a-production-checkpoint-for-a-virtual-machine.md)
+You can now create production checkpoints for VMs. These checkpoints are based on Volume Shadow Copy Service (VSS) and are application-consistent compared to the standard checkpoints that are based on Saved State technology and were not application-consistent.  For more information on production checkpoints see [How to create a production checkpoint for a virtual machine](../Manage/How-to-create-a-production-checkpoint-for-a-virtual-machine.md)
 
 ### **Server App-V deprecation in VMM 2016**
 
@@ -121,7 +122,7 @@ With VMM 2016 you can protect data in a volume by synchronously replicating it t
 
 ### **Quality of Service (QoS) for storage**: 
 
-When hosts and storage are under heavy load, you might want to ensure that certain disks, virtual machines, applications, or tenants will not drop below a certain Quality of Service (QoS) for storage. VMM has been improved so it’s easier to specify QoS. 
+When hosts and storage are under heavy load, you might want to ensure that certain disks, virtual machines, applications, or tenants will not drop below a certain Quality of Service (QoS) for storage. VMM has been improved so it&trade;s easier to specify QoS. 
 - For more information, see [Managing storage Quality of Service for Scale-out file servers in VMM](../Manage/Managing-storage-Quality-of-Service-policies-for-Scale-Out-File-Servers-in-VMM.md)
 ## <a name="bkmkNetworking"></a>Networking
 
@@ -134,7 +135,7 @@ With VMM 2016, you can deploy the entire Software Defined Networking (SDN) stack
 
 * You can deploy and manage a multi-node Network Controller(NC) in a subnet using VMM Service Templates. After you deploy and onboard the Network Controller, you can configure Network Controller managed fabric to provide connectivity to tenant VMs and to define policies.
 * You can deploy and configure a Software Load Balancer to distribute traffic within a network managed by Network Controller. With VMM 2016 Technical Preview release, Software Load Balancer can now also be used for in bound and out bound NAT.
-* You can deploy and configure a Windows Server Gateway pool with M+N redundancy using VMM Service Templates. After onboarding Windows Server Gateway, you can connect a tenant network to a hosting provider network or to your own remote data center network using either of the three types of connections supported by Gateway – S2S GRE, S2S IPSec and L3.
+* You can deploy and configure a Windows Server Gateway pool with M+N redundancy using VMM Service Templates. After onboarding Windows Server Gateway, you can connect a tenant network to a hosting provider network or to your own remote data center network using either of the three types of connections supported by Gateway " S2S GRE, S2S IPSec and L3.
 -   For more information, see [Deploy a Software Defined Network Infrastructure using VMM](../Manage/Deploy-a-Software-Defined-Network-infrastructure-using-VMM.md)
 
 ### **Access Control Lists (ACL) for individual ports**
@@ -143,7 +144,7 @@ You can limit and segregate network traffic by specifying port ACLs on VM networ
 
 
 ### **Consistent naming of virtual network adapters**
-When you deploy a virtual machine, you might want to run a post-deployment script on the guest operating system to complete the configuration of the virtual network adapters. For example, you might want to configure the Transit network adapter differently from the HNV PA network adapter. Previously, this was tricky, because there wasn’t a way to easily distinguish different virtual network adapters at the time of deployment. Now, for generation 2 virtual machines deployed on Hyper-V hosts running Windows Server Technical Preview, you can name the virtual network adapter in a virtual machine template. This is similar to using Consistent Device Naming (CDN) for a physical network adapter.
+When you deploy a virtual machine, you might want to run a post-deployment script on the guest operating system to complete the configuration of the virtual network adapters. For example, you might want to configure the Transit network adapter differently from the HNV PA network adapter. Previously, this was tricky, because there wasn&trade;t a way to easily distinguish different virtual network adapters at the time of deployment. Now, for generation 2 virtual machines deployed on Hyper-V hosts running Windows Server Technical Preview, you can name the virtual network adapter in a virtual machine template. This is similar to using Consistent Device Naming (CDN) for a physical network adapter.
 
 ### **Self-service management of an SDN through Windows Azure Pack (WAP)**
 In addition to providing parity with WAP support for System Center Virtual Machine Manager 2012 R2, this release will also allow you to provide self service capability for Network Controller managed fabric. Capabilities that can be leveraged through WAP in this Technical Preview include creation and management of VM networks in Network Controller managed fabric, configuration of S2S IPSec connection, and configuring NAT options for tenant and infrastructure Virtual Machines in your data center.  
@@ -151,7 +152,7 @@ In addition to providing parity with WAP support for System Center Virtual Machi
 ### **Atomic virtual switch deployment**
 In the previous version of VMM (System Center Virtual Machine Manager 2012 R2), you could collect a variety of individual network settings into a logical switch, so that you could then apply that collection of settings consistently to hosts. In VMM in System Center 2016 Technical Preview, the interface for creating a logical switch has been streamlined to make it easier to see what your choices are and choose settings that will work together.
 
-You can also directly use Hyper-v to configure a standard virtual switch on a managed host, then use VMM to “convert” the standard virtual switch to a VMM logical switch, and later apply the logical switch to additional hosts.
+You can also directly use Hyper-v to configure a standard virtual switch on a managed host, then use VMM to convert the standard virtual switch to a VMM logical switch, and later apply the logical switch to additional hosts.
 
 Also in VMM in System Center 2016 Technical Preview, when you apply a logical switch to a particular host, either the entire operation succeeds, or in the case of failure the operation is reverted and all the settings on the hosts are left unchanged. If Logical switch deployment fails, you can review job information and diagnose reasons for failure through improved logging capability for Logical Switch deployment.
 

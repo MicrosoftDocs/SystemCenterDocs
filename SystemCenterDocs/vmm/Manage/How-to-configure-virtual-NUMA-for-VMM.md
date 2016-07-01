@@ -1,21 +1,25 @@
 ---
-title: How to configure virtual NUMA for VMM
-ms.custom: na
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 45ae8c7e-93e8-4e4a-b940-4be767e8c794
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  rayne-wiselman
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  How to configure virtual NUMA for VMM
+ms.technology:  virtual-machine-manager
+ms.assetid:  45ae8c7e-93e8-4e4a-b940-4be767e8c794
 ---
+
 # How to configure virtual NUMA for VMM
 
 >Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
 
 With Virtual Machine Manager (VMM) you can configure the virtual Non-Uniform Memory Access (NUMA) features that were introduced in Hyper-V in Windows Server 2012. For more information about these features, see [Deploying virtual NUMA for VMM](Deploying-virtual-NUMA-for-VMM.md). This topic provides the following procedures for configuring virtual NUMA:
 
-1.  [Configuring virtual NUMA settings](#BKMK_VNUMA)—When a new virtual machine is created, Hyper-V specifies the default settings for virtual NUMA. These settings are in sync with the NUMA topology of the Hyper-V host. For example, if a host has 16 cores and 64 GB divided evenly between two NUMA nodes, with two NUMA nodes per physical processor socket, then by default, a virtual machine that was created on the host will have the **Maximum processors per virtual NUMA node** property set to 8, the **Maximum virtual NUMA nodes per socket** set to 2, and the **Maximum memory per virtual NUMA node (MB)** property set to 32 GB. You can modify the default values as required.
+1.  [Configuring virtual NUMA settings](#BKMK_VNUMA)"When a new virtual machine is created, Hyper-V specifies the default settings for virtual NUMA. These settings are in sync with the NUMA topology of the Hyper-V host. For example, if a host has 16 cores and 64 GB divided evenly between two NUMA nodes, with two NUMA nodes per physical processor socket, then by default, a virtual machine that was created on the host will have the **Maximum processors per virtual NUMA node** property set to 8, the **Maximum virtual NUMA nodes per socket** set to 2, and the **Maximum memory per virtual NUMA node (MB)** property set to 32 GB. You can modify the default values as required.
 
-2.  [Configuring virtual NUMA spanning](#BKMK_NUMASPAN)—If virtual NUMA spanning is enabled, then individual virtual NUMA nodes can allocate non-local memory. If the setting is not enabled, each node uses memory from only one physical NUMA node. Note that whether spanning is enabled or not, virtual nodes can be allocated memory from the same or different underlying host NUMA nodes, based on the physical host topology. NUMA spanning is enabled by default.
+2.  [Configuring virtual NUMA spanning](#BKMK_NUMASPAN)"If virtual NUMA spanning is enabled, then individual virtual NUMA nodes can allocate non-local memory. If the setting is not enabled, each node uses memory from only one physical NUMA node. Note that whether spanning is enabled or not, virtual nodes can be allocated memory from the same or different underlying host NUMA nodes, based on the physical host topology. NUMA spanning is enabled by default.
 
 ## <a name="BKMK_VNUMA"></a>Configuring virtual NUMA settings
 Use this procedure to enable and configure virtual NUMA.

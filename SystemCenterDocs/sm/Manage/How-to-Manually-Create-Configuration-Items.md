@@ -1,15 +1,16 @@
 ---
-title: How to Manually Create Configuration Items
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - service-manager
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 24089a9b-eaa2-42f7-b600-2d0e6a2149ec
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  bandersmsft
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  How to Manually Create Configuration Items
+ms.technology:  service-manager
+ms.assetid:  24089a9b-eaa2-42f7-b600-2d0e6a2149ec
 ---
+
 # How to Manually Create Configuration Items
 
 >Applies To: System Center 2016 Technical Preview - Service Manager

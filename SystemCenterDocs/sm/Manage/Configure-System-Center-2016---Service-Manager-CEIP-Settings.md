@@ -1,15 +1,16 @@
 ---
-title: Configure System Center 2016 - Service Manager CEIP Settings
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - service-manager
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 4bb2487c-5a91-44d2-9a85-f4112aff40ac
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  bandersmsft
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  Configure System Center 2016   Service Manager CEIP Settings
+ms.technology:  service-manager
+ms.assetid:  4bb2487c-5a91-44d2-9a85-f4112aff40ac
 ---
+
 # Configure System Center 2016 - Service Manager CEIP Settings
 
 >Applies To: System Center 2016 Technical Preview - Service Manager

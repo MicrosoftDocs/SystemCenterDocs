@@ -1,15 +1,16 @@
 ---
-title: Creating a host cluster in VMM from existing Windows servers
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - virtual-machine-manager
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: aa816494-2a57-40bc-8b89-99b054713b26
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  rayne-wiselman
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  Creating a host cluster in VMM from existing Windows servers
+ms.technology:  virtual-machine-manager
+ms.assetid:  aa816494-2a57-40bc-8b89-99b054713b26
 ---
+
 # Creating a host cluster in VMM from existing Windows servers
 
 >Applies To: System Center 2016 Technical Preview - Virtual Machine Manager

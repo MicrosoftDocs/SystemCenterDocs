@@ -1,15 +1,16 @@
 ---
-title: VMM networking reference: using an IPAM Server in VMM
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - virtual-machine-manager
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: db9e24e8-7fa5-4c77-bd69-c7f8dda4e23e
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  rayne-wiselman
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  VMM networking reference  using an IPAM Server in VMM
+ms.technology:  virtual-machine-manager
+ms.assetid:  db9e24e8-7fa5-4c77-bd69-c7f8dda4e23e
 ---
+
 # VMM networking reference: using an IPAM Server in VMM
 
 >Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
@@ -17,7 +18,7 @@ ms.assetid: db9e24e8-7fa5-4c77-bd69-c7f8dda4e23e
 With Virtual Machine Manager (VMM) in System Center 2016 Technical Preview, you can add an IP Address Management (IPAM) server that runs Windows Server 2012 R2 or Windows Server Technical Preview to the resources in VMM. After you add the IPAM server, the IP address settings that are associated with logical networks and virtual machine networks (VM networks) in VMM are kept in synchrony with settings that are stored in the IPAM server.
 
 > [!NOTE]
-> After you add an IPAM server to your VMM configuration, you can use the IPAM server to configure and monitor logical networks and their associated network sites and IP address pools. You can also use the IPAM server to monitor the usage of VM networks that you have configured or changed in VMM. However, tenants must continue to use the VMM server (not IPAM) to configure VM networks that use network virtualization—in other words, to control the address space that is typically controlled by tenants rather than by VMM administrators.
+> After you add an IPAM server to your VMM configuration, you can use the IPAM server to configure and monitor logical networks and their associated network sites and IP address pools. You can also use the IPAM server to monitor the usage of VM networks that you have configured or changed in VMM. However, tenants must continue to use the VMM server (not IPAM) to configure VM networks that use network virtualization"in other words, to control the address space that is typically controlled by tenants rather than by VMM administrators.
 
 Use the following procedure to add an IPAM server to VMM in System Center 2016 Technical Preview.
 
@@ -35,7 +36,7 @@ Before you can add an IPAM server to your configuration in VMM, you must perform
 
     -   **Remote Management Users**: A built-in group that provides access to WMI resources through management protocols, such as WS-Management through the Windows Remote Management service.
 
-3.  Confirm that the IPAM server and the VMM server are being kept in time synchrony. Time synchrony depends on settings for the Windows Time Service. In most configurations, if two servers are in the same forest,  Windows Time Service keeps them in synchrony. For information about the Windows Time Service command, **W32tm**, and the **/resync** option in that command, see [W32tm](http://technet.microsoft.com/library/w32tm.aspx). If you cannot control the time synchrony of the IPAM server and the VMM server, see the instructions in the “Important configuration notes” at the end of this topic.
+3.  Confirm that the IPAM server and the VMM server are being kept in time synchrony. Time synchrony depends on settings for the Windows Time Service. In most configurations, if two servers are in the same forest,  Windows Time Service keeps them in synchrony. For information about the Windows Time Service command, **W32tm**, and the **/resync** option in that command, see [W32tm](http://technet.microsoft.com/library/w32tm.aspx). If you cannot control the time synchrony of the IPAM server and the VMM server, see the instructions in the "Important configuration notes" at the end of this topic.
 
 4.  Make sure that you know the fully qualified domain name (FQDN) of the IPAM server to use as a connection string.
 

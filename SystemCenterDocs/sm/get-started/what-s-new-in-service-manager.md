@@ -1,16 +1,20 @@
 ---
-title: What's New in Service Manager
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology:
-  - service-manager
-ms.tgt_pltfrm: na
-ms.topic: get-started-article
-ms.assetid: 3eeb3265-88e0-47ed-b761-07f4e0634959
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  bandersmsft
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  what s new in service manager
+ms.technology:  service-manager
+ms.assetid:  3eeb3265-88e0-47ed-b761-07f4e0634959
 ---
+
 # What's New in Service Manager
+
+>Applies To: System Center 2016 Technical Preview - Service Manager
+
 System Center 2016 Technical Preview - Service Manager is updated for System Center 2016 Technical Preview 5.
 
 For details about known issues that could affect you before you install System Center 2016 Technical Preview - Service Manager, read the [Release Notes for System Center Technical Preview](../../get-started/Release-Notes-for-System-Center-Technical-Preview-5.md).
@@ -313,10 +317,10 @@ The **My Activities** icon  is on the left side of the portal home page.
 ### Performance Enhancements
 **Optionally disable ECL logging for faster SCCM and Active Directory connector sync**
 
-The Active Directory and SCCM connectors in Service Manager can import large amounts of data into the Service Manager database. In doing so, they not only increase the size of the data table, which is where the data from the connectors are stored, but they also increase the size of the EntityChangeLog (ECL) table and history tables considerably. A large ECL table size can be a problem—in some cases, it can slow down the system significantly.
+The Active Directory and SCCM connectors in Service Manager can import large amounts of data into the Service Manager database. In doing so, they not only increase the size of the data table, which is where the data from the connectors are stored, but they also increase the size of the EntityChangeLog (ECL) table and history tables considerably. A large ECL table size can be a problem - in some cases, it can slow down the system significantly.
 
 The ECL table, and the history tables in this case, store details about when the data was brought into Service Manager and the properties that were added or updated for each data item.
-Disabling ELC logging, doesn’t affect importing data from connectors. Instead, most logging data doesn’t get written to the ECL and history tables, which can result is significant performance improvement.
+Disabling ELC logging, doesn&trade;t affect importing data from connectors. Instead, most logging data doesn&trade;t get written to the ECL and history tables, which can result is significant performance improvement.
 Disabled ECL logging is not automatically turned on. In other words, by default, ECL logging is enabled. However, you can easily turn on Disabled ECL logging by revising a registry key value. For more information, see [Optionally Disable ECL Logging for Faster Connector Synchronization](../Deploy/Optionally-Disable-ECL-Logging-for-Faster-Connector-Synchronization.md).
 
 **Grooming improvements for ECL logs**
@@ -357,7 +361,7 @@ Now you can configure the SQL management server, instance name and port number t
 ![](../../media/sm-sqlserver-config.png)
 
 ### Known Issues in this release
-Service Manager 2016 Technical Preview 4 is still in development and this release contains some issues that haven’t been fixed yet. Some of the known issues in this release include:
+Service Manager 2016 Technical Preview 4 is still in development and this release contains some issues that haven&trade;t been fixed yet. Some of the known issues in this release include:
 
 New Self Service Portal issues:
 
@@ -380,3 +384,4 @@ As always, we recommend that you perform typical or routine tasks in the test en
 **Significant performance improvements**.  Service Manager's Active Directory and System Center Configuration Manager connectors performance was improved. In internal testing at Microsoft, sync time improved by about 50% for the SCCM connector and about 35% for the AD connector. You can read more about performance improvements at the [Service Manager blog](http://blogs.technet.com/b/servicemanager/archive/2015/03/19/sccm-lfx-connector-performance-improvements.aspx).
 
 **Configurable Active Directory connector sync schedules**. Now you can better plan the load placed on your workflow server by scheduling AD connector sync cycles outside of work hours.
+

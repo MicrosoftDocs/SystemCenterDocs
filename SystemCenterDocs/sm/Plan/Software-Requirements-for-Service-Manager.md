@@ -1,15 +1,16 @@
 ---
-title: Software Requirements for Service Manager
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - service-manager
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: f864d8f1-7acf-4aa7-a810-50e272f7e25f
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  bandersmsft
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  Software Requirements for Service Manager
+ms.technology:  service-manager
+ms.assetid:  f864d8f1-7acf-4aa7-a810-50e272f7e25f
 ---
+
 # Software Requirements for Service Manager
 
 >Applies To: System Center 2016 Technical Preview - Service Manager
@@ -26,10 +27,10 @@ The software requirements for System Center 2016 Technical Preview - Service Man
 
 |||
 |-|-|
-|System Center 2016 Technical Preview - Service Manager management server|In addition to the [System Requirements for System Center 2012 R2](http://go.microsoft.com/fwlink/p/?LinkId=309285), the System Center 2016 Technical Preview - Service Manager management server  requires:<br /><br />-   ADO.NET Data Services Update for .NET Framework 3.5 SP1 for Windows Server 2008 R2<br />-   SQL Server 2008 R2 Native Client or SQL Server 2012 Native client<br />-   Microsoft Report Viewer Redistributable, which is available with the System Center 2016 Technical Preview - Service Manager media. For more information, see How to Install the Microsoft Report Viewer Redistributable Security Update in the [Deployment Guide for System Center 2012 – Service Manager](http://go.microsoft.com/fwlink/p/?LinkId=209670).|
+|System Center 2016 Technical Preview - Service Manager management server|In addition to the [System Requirements for System Center 2012 R2](http://go.microsoft.com/fwlink/p/?LinkId=309285), the System Center 2016 Technical Preview - Service Manager management server  requires:<br /><br />-   ADO.NET Data Services Update for .NET Framework 3.5 SP1 for Windows Server 2008 R2<br />-   SQL Server 2008 R2 Native Client or SQL Server 2012 Native client<br />-   Microsoft Report Viewer Redistributable, which is available with the System Center 2016 Technical Preview - Service Manager media. For more information, see How to Install the Microsoft Report Viewer Redistributable Security Update in the [Deployment Guide for System Center 2012 - Service Manager](http://go.microsoft.com/fwlink/p/?LinkId=209670).|
 |Data warehouse management server|In addition to the [System Requirements for System Center 2012 R2](http://go.microsoft.com/fwlink/p/?LinkId=309285), the data warehouse management server requires:<br /><br />-   SQL Server 2008 R2 Native Client or SQL Server 2012 Native client|
 |System Center 2016 Technical Preview - Service Manager or data warehouse databases|In addition to the [System Requirements for System Center 2012 R2](http://go.microsoft.com/fwlink/p/?LinkId=309285), the System Center 2016 Technical Preview - Service Manager or data warehouse databases require:<br /><br />-   SQL Server Reporting Services (SSRS)<br />-   The SQL Server and Analysis Services collation settings must be the same for the computers hosting the System Center 2016 Technical Preview - Service Manager database, data warehouse database, analysis services database, and Reporting Services database.<br />-   System Center 2016 Technical Preview - Service Manager requires SQL Server 2012 Analysis Management Objects, which are part of the SQL Server 2012 Feature Pack, regardless of the SQL Server version that you use.|
-|Service Manager console|In addition to the [System Requirements for System Center 2012 R2](http://go.microsoft.com/fwlink/p/?LinkId=309285), the Service Manager console requires:<br /><br />-   Microsoft Report Viewer Redistributable, which is available with the System Center 2016 Technical Preview - Service Manager media. For more information, see How to Install the Microsoft Report Viewer Redistributable Security Update in the [Deployment Guide for System Center 2012 – Service Manager](http://go.microsoft.com/fwlink/p/?LinkId=209670).<br />-   You must have Microsoft Excel 2007 or later installed in order view OLAP data cubes on the computer running the Service Manager console.<br />-   ADO.NET Data Services Update for .NET Framework 3.5 SP1 for Windows Server 2008 R2. *<br />-   System Center 2016 Technical Preview - Service Manager requires SQL Server 2012 Analysis Management Objects, which are part of the SQL Server 2012 Feature Pack, regardless of the SQL Server version that you use.|
+|Service Manager console|In addition to the [System Requirements for System Center 2012 R2](http://go.microsoft.com/fwlink/p/?LinkId=309285), the Service Manager console requires:<br /><br />-   Microsoft Report Viewer Redistributable, which is available with the System Center 2016 Technical Preview - Service Manager media. For more information, see How to Install the Microsoft Report Viewer Redistributable Security Update in the [Deployment Guide for System Center 2012 - Service Manager](http://go.microsoft.com/fwlink/p/?LinkId=209670).<br />-   You must have Microsoft Excel 2007 or later installed in order view OLAP data cubes on the computer running the Service Manager console.<br />-   ADO.NET Data Services Update for .NET Framework 3.5 SP1 for Windows Server 2008 R2. * <br />-   System Center 2016 Technical Preview - Service Manager requires SQL Server 2012 Analysis Management Objects, which are part of the SQL Server 2012 Feature Pack, regardless of the SQL Server version that you use.|
 |Self-Service Portal: Web Content Server|In addition to the [System Requirements for System Center 2012 R2](http://go.microsoft.com/fwlink/p/?LinkId=309285), the Self-Service Portal Web Content Server requires:<br /><br />-   Microsoft Internet Information Services (IIS) 7 with IIS 6 metabase compatibility installed.<br />-   A Secure Sockets Layer (SSL) certificate can be used on the IIS server that hosts the Self-Service Portal.<br />-   System Center 2016 Technical Preview - Service Manager requires SQL Server 2012 Analysis Management Objects, which are part of the SQL Server 2012 Feature Pack, regardless of the SQL Server version that you use.|
 |Self-Service Portal: SharePoint Web Parts|One of the following versions of Microsoft SharePoint:<br /><br />-   Microsoft SharePoint Foundation 2010<br />-   Microsoft SharePoint Server 2010<br />-   Microsoft SharePoint 2010 for Internet Sites Enterprise<br />-   If your System Center 2016 Technical Preview database uses SQL Server 2012, then you must have Service Pack 1 or later applied to your SharePoint 2010 installation.<br /><br />Software requirements for SharePoint Web Parts for the Self-Service Portal are based on Microsoft SharePoint Server 2010 specifications. For more information, see [Hardware and Software Requirements (SharePoint Server 2010)](http://go.microsoft.com/fwlink/p/?LinkID=219606).<br /><br />You must install the English language pack in non-English SharePoint installations so that the Self-Service Portal installs correctly. **Note:** Windows Server 2012 and Windows Server 2012 R2 are supported on the server hosting the SharePoint Web Parts with SharePoint 2010 SP2.SharePoint 2013 is not supported on the server hosting the SharePoint Web Parts.|
 |Excel Services in SharePoint Server 2010|Excel Services in SharePoint Server 2010 is required for hosting dashboards for advanced analytical reports. For more information about installing and configuring Excel Services, see [Configure Excel Services for a BI test environment](http://go.microsoft.com/fwlink/p/?LinkID=227285).|
@@ -45,7 +46,7 @@ To download SP1 for SQL Server 2008, see [SQL Server 2008 Service Pack 1](http:/
 
 To download the trial software for the English version of SQL Server 2008 R2, see [SQL Server 2008 R2](http://go.microsoft.com/fwlink/p/?LinkID=208018).
 
-To download Service Pack 1 for Microsoft SQL Server 2008 R2, see [Microsoft® SQL Server® 2008 R2 Service Pack 1](http://go.microsoft.com/fwlink/p/?LinkID=235126)
+To download Service Pack 1 for Microsoft SQL Server 2008 R2, see [Microsoft SQL Server 2008 R2 Service Pack 1](http://go.microsoft.com/fwlink/p/?LinkID=235126)
 
 Use the following configuration with SQL Server 2008 SP1:
 
@@ -53,7 +54,7 @@ Use the following configuration with SQL Server 2008 SP1:
 
 -   SQL Server configured to use case-insensitive databases.
 
--   Service Account configured in accordance with your organization’s requirements.
+-   Service Account configured in accordance with your organization's requirements.
 
 -   The SQL Server Reporting Services (MSSQLSERVER) service, configured and running. For more information about how to configure the MSSQLSERVER service, see [How to: Verify a Reporting Services Installation](http://go.microsoft.com/fwlink/p/?LinkID=91847).
 
@@ -64,7 +65,7 @@ If your SQL Server installation is using the default collation (SQL_Latin1_Gener
 > [!CAUTION]
 > Support for languages other than English in System Center 2016 Technical Preview - Service Manager is not possible when you are using the collation SQL_Latin1_General_CP1_CI_AS. If later you decide to support multiple languages using a different collation, you have to reinstall SQL Server. There are no issues with using the SQL_Latin1_General_CP1_CI_AS collation with the English-only installations of System Center 2016 Technical Preview - Service Manager. SQL_Latin1_General_CP1_CI_AS is supported despite the warning message in setup. It is generally used for installations where the Service Manager databases will share a SQL Server instance with other System Center components which must be installed on SQL_Latin1_General_CP1_CI_AS.  If Service Manager will be installed on its own SQL Server instance, it is recommended to use the newer and more complete collation Latin1_General_100_CP1_CI_AS. For more information about language support, see [Language Support for Service Manager](Language-Support-for-Service-Manager.md).
 
-You can define the collation when you install SQL Server. During Setup, on the **Server Configuration** page, click the **Collation** tab, and then click **Customize** for both the **Database Engine** and **Analysis Services**entries.
+You can define the collation when you install SQL Server. During Setup, on the **Server Configuration** page, click the **Collation** tab, and then click **Customize** for both the **Database Engine** and **Analysis Services** entries.
 
 ### Microsoft SQL Server 2012
 To download trial software of the English versions of Microsoft SQL Server 2012, see the [SQL Server 2012 Trial](http://go.microsoft.com/fwlink/p/?LinkID=208018) page on the Microsoft web site.
@@ -131,6 +132,3 @@ You must have access to a Simple Mail Transfer Protocol (SMTP) server to use the
 
 ### Windows Safe Mode
 System Center 2016 Technical Preview - Service Manager does not operate and the services used by System Center 2016 Technical Preview - Service Manager do not start if Windows Server 2008 is running in safe mode. If you attempt to start the System Center 2016 Technical Preview - Service Manager services manually while in safe mode, the services fail to start and an error is written into the event log.
-
-
-

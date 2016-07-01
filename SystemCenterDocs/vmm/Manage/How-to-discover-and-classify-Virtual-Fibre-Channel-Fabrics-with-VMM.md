@@ -1,12 +1,16 @@
 ---
-title: How to discover and classify Virtual Fibre Channel Fabrics with VMM
-ms.custom: na
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 44b64f8d-5590-4e04-a469-905c39ca771a
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  rayne-wiselman
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  How to discover and classify Virtual Fibre Channel Fabrics with VMM
+ms.technology:  virtual-machine-manager
+ms.assetid:  44b64f8d-5590-4e04-a469-905c39ca771a
 ---
+
 # How to discover and classify Virtual Fibre Channel Fabrics with VMM
 
 >Applies To: System Center 2016 Technical Preview - Virtual Machine Manager

@@ -1,15 +1,16 @@
 ---
-title: How to Extend the Service Offering Categories
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - service-manager
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: a107d437-1f41-43c4-a2a1-254251cc6adb
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  bandersmsft
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  How to Extend the Service Offering Categories
+ms.technology:  service-manager
+ms.assetid:  a107d437-1f41-43c4-a2a1-254251cc6adb
 ---
+
 # How to Extend the Service Offering Categories
 
 >Applies To: System Center 2016 Technical Preview - Service Manager
