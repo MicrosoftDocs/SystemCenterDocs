@@ -5,7 +5,7 @@ ms.topic:  article
 author:  markgalioto
 ms.prod:  system-center-threshold
 keywords:  
-ms.date:  2016-06-27
+ms.date:  2016-06-30
 title:  Deploy the DPM protection agent
 ms.technology:  data-protection-manager
 ms.assetid:  502fff45-79b5-477b-af4f-3b8a39bdde1a
@@ -15,22 +15,20 @@ ms.assetid:  502fff45-79b5-477b-af4f-3b8a39bdde1a
 
 >Applies To: System Center 2016 Technical Preview - Data Protection Manager
 
-The DPM protection agent is software that you install on each computer that contains data you 
-          want to back up with DPM. It consists of two components - the protection agent itself and an agent coordinator. 
-          Here's what it does:
+The DPM protection agent is software that you install on each computer that contains data you
+want to back up with DPM. It consists of two components - the protection agent itself and an agent coordinator. Here's what it does:
 
 -   Identifies data that DPM can protect and recover.
 
 -   Allows the DPM server to browse the shares, volumes, and folders on the protected computer.
 
--   Creates a change journal for each protected volume and stores the journal in a hidden file on that volume. 
-    it records any changes to protected data in the change journal, and transfers the journal from the protected computer to the 
+-   Creates a change journal for each protected volume and stores the journal in a hidden file on that volume.
+    it records any changes to protected data in the change journal, and transfers the journal from the protected computer to the
     DPM server so that DPM can synchronize the primary data with the replica.
 
 You'll set up the agent as follows:
 
--   If the computer containing data you want to back up is behind a firewall you'll need 
-         to [Set up firewall exceptions](#BKMK_Firewall).
+-   If the computer containing data you want to back up is behind a firewall you'll need to [set up firewall exceptions](#BKMK_Firewall).
 
 -   If the computer isn't behind a firewall, or you've configured firewall exceptions to allow access, you can [Install the agent from the DPM console](#BKMK_Console) .
 
@@ -39,7 +37,7 @@ You'll set up the agent as follows:
 ## <a name="BKMK_Firewall"></a>Set up firewall exceptions
 For a protection agent to communicate with the DPM server through a firewall, firewall exceptions are required.
 
-Configure an incoming exception for sqservr.exe for the DPM instance of SQL Server, to allow TCP on port 80.The report server listens for HTTP requests on port 80 for HTTP requests. The following table lists the protocols and ports required for communication between the DPM server and protected servers and clients.
+Configure an incoming exception for sqlservr.exe for the DPM instance of SQL Server, to allow TCP on port 80.The report server listens for HTTP requests on port 80. The following table lists the protocols and ports required for communication between the DPM server and protected servers and clients.
 
 |Protocol|Port|Details|
 |------------|--------|-----------|
@@ -100,7 +98,7 @@ Configure an incoming exception for sqservr.exe for the DPM instance of SQL Serv
 
 2.  On the computer that you want to protect, open an elevated Command Prompt window, and then run the following commands:
 
-    To assign a drive letter, type: 
+    To assign a drive letter, type:
     **net use *Z*: \\\\<DPMServerName>\c$**
      where *Z* is the local drive letter that you want to assign and *<DPMServerName>* is the name of the DPM server that will protect the computer.
 
@@ -151,6 +149,3 @@ After you've installed the DPM agent manually you'll need to attach the agent to
 4.  On the Enter Credentials page, type the user name and password for a domain account that is a member of the local Administrators group on all selected computers. In the **Domain** box, accept or type the domain name of the user account that you are using to install the protection agent on the target computer. This account may belong to the domain that the DPM server is located in or to a trusted domain. If you are installing a protection agent on a computer across a trusted domain, enter your current domain user credentials. You can be a member of any trusted domain, and you must be a member of the local Administrators group on all selected computers that you want to protect.
 
 5.  On the Summary page, click **Attach**.
-
-
-

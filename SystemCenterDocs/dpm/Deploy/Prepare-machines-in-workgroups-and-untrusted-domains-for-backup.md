@@ -5,7 +5,7 @@ ms.topic:  article
 author:  markgalioto
 ms.prod:  system-center-threshold
 keywords:  
-ms.date:  2016-06-27
+ms.date:  2016-06-30
 title:  Prepare machines in workgroups and untrusted domains for backup
 ms.technology:  data-protection-manager
 ms.assetid:  e63b86d4-1f83-48ef-82bb-636b9dc745e2
@@ -224,7 +224,7 @@ If you want to optionally configure the template for enrollment or autoenrollmen
 
 6.  This generates a metadata file (.bin) that is required at the time of each agent install in untrusted domain. Make sure that the C:\Temp folder exists before  you run the command. Note that if the file is lost or deleted you can recreate it by running the script with the **-action regenerate** option.
 
-7.  Retrieve the .bin file and copy it to the C:\Program Files\Microsoft Data Protection Manager\DPM\bin folder on the computer you want to protect. You don't have to do this, but if you don't you'll need to specify the full path of the file for the -DPMcredential parameter when you 
+7.  Retrieve the .bin file and copy it to the C:\Program Files\Microsoft Data Protection Manager\DPM\bin folder on the computer you want to protect. You don't have to do this, but if you don't you'll need to specify the full path of the file for the -DPMcredential parameter when you
 
 8.  Repeat these steps on every DPM server that will protect a computer in a workgroup or in an untrusted domain.
 
@@ -289,6 +289,3 @@ Regenerates a lost configuration file in the folder c:\CertMetaData\
 ```
 Set-DPMCredentials -DPMServerName dpmserver.contoso.com -Type Certificate "-OutputFilePath c:\CertMetaData\ -Action Regenerate
 ```
-
-
-

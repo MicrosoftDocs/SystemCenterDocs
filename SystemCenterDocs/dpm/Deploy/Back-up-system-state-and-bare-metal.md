@@ -5,7 +5,7 @@ ms.topic:  article
 author:  markgalioto
 ms.prod:  system-center-threshold
 keywords:  
-ms.date:  2016-06-27
+ms.date:  2016-06-30
 title:  Back up system state and bare metal
 ms.technology:  data-protection-manager
 ms.assetid:  7035095c-6d30-40aa-ae73-4159e305d7ea
@@ -117,11 +117,8 @@ This table summarizes what you can back up and recover. You can see detailed inf
 3.  **Set up the DPM protection agent**-You'll need to install the DPM protection agent on machine you want to back up. Read [Deploy the DPM protection agent](Deploy-the-DPM-protection-agent.md)
 
 ## Back up system state and bare metal
-Set up a protection group as described in [Deploy protection groups](Deploy-protection-groups.md). Note that:
+Set up a protection group as described in [Deploy protection groups](Deploy-protection-groups.md). Note that you can't protect BMR and system state for the same machine in different groups, and that when you select BMR system state is automatically enabled.
 
--   You can't protect BMR and system state for the same machine in different groups, and that when you select BMR system state is automatically enabled.
-
--
 
 1.  Click **Protection** > **Actions** > **Create Protection Group** to open the **Create New Protection Group** wizard in the DPM console.
 
@@ -228,6 +225,3 @@ Run Windows Server Backup
 5.  You can also run a system state restore from the command line. To do this start Windows Server Backup on the machine you want to recover. From a command prompt type: **wbadmin get versions -backuptarget <servername\sharename>** to get the version identifier.
 
     Use the version identifier to start system state restore. At the command line type: **wbadmin start systemstaterecovery -version:<versionidentified> -backuptarget:<servername\sharename>** Confirm that you want to start the recovery. You can see the process in the command window. A restore log is created. You'll need restart the server after the restore.
-
-
-

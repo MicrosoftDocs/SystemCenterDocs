@@ -44,7 +44,7 @@ The ACS database runs on a supported version of Microsoft SQL Server. The Audit 
 8.  In the **Database server instance name** field, type the name of the database that will be created for ACS. If you leave this field blank, the default name is used. In the **Database** name field, the default database name of **OperationsManagerAC** is automatically entered. You can select the text and type in a different name or leave the default name. Click **Next**.
 
     > [!NOTE]
-    > To display a list of SQL Server Instances, on the database computer click **Start**, point to **Programs** and open **SQL Server** (the appropriate version of SQL Server is dependent on the version of Operations Manager �" see [System Requirements for System Center 2012 �" Operations Manager](http://go.microsoft.com/fwlink/p/?LinkID=219650)), and then click **SQL Server Management Studio**. On the **Server name** list, click **Browse for more** and then expand **Database Engine**. All databases are listed as server name\database name.
+    > To display a list of SQL Server Instances, on the database computer click **Start**, point to **Programs** and open **SQL Server** (the appropriate version of SQL Server is dependent on the version of Operations Manager - see [System Requirements for System Center 2012 - Operations Manager](http://go.microsoft.com/fwlink/p/?LinkID=219650)), and then click **SQL Server Management Studio**. On the **Server name** list, click **Browse for more** and then expand **Database Engine**. All databases are listed as server name\database name.
 
 9. On the **Database Authentication** page, select one of the authentication methods. If the ACS collector and the ACS database are members of the same domain, you can select **Windows authentication**, otherwise select **SQL authentication**, and then click **Next**.
 
@@ -78,7 +78,7 @@ The ACS database runs on a supported version of Microsoft SQL Server. The Audit 
 
 5.  Open a Command Prompt window by using the **Run as Administrator** option, and then change directories to the temporary **acs** folder.
 
-6.  Run the following command. 
+6.  Run the following command.
     **UploadAuditReports “<AuditDBServer\Instance>” “<Reporting Server URL>” “<path of the copied acs folder>”**
     For example: **UploadAuditReports “myAuditDbServer\Instance1” “http://myReportServer/ReportServer$instance1” “C:\acs”**
 
@@ -94,5 +94,3 @@ The ACS database runs on a supported version of Microsoft SQL Server. The Audit 
 9. Click the **Db Audit** data source.
 
 10. In the **Connect Using** section, select **Windows Integrated Security** and click **Apply**.
-
-

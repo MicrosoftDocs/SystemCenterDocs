@@ -1,4 +1,111 @@
-ere is insufficient space on the tape. You can also colocate data from different protection groups on tape.
+---
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  markgalioto
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-30
+title:  Back up client computers with DPM
+ms.technology:  data-protection-manager
+ms.assetid:  0e12f557-0396-465d-b60f-7695b44bbd12
+---
+
+# Back up client computers with DPM
+
+>Applies To: System Center 2016 Technical Preview - Data Protection Manager
+
+You can deploy DPM to back up client computers.   Depending on the client operating system you can back up volumes, shares, folders, files, bare metal and system state, and deduped volumes.
+
+## Prerequisites and limitations
+.Before you deploy DPM to protect client computer data verify the deployment prerequisites:
+
+-   Read about the client operating systems you can support in [What can DPM back up?](../get-started/What-can-DPM-back-up-.md)
+
+-   Review the [release notes](http://technet.microsoft.com/en-us/library/jj860394.aspx) and read about any client protection issues in [What's supported and what isn't for DPM?](../get-started/What-s-supported-and-what-isn-t-for-DPM-.md)
+
+-   Make sure that client machines you want to back up  are in the DPM server domain, or in a domain with a two-way trust relationship with the DPM domain.
+
+-   To set up client machines for protection you install the DPM protection agent on them. If Windows Firewall is configured on the client computer, the agent installation will set up the firewall exceptions it needs. If you need to reset the firewall, you can reconfigure it by running SetDpmServer.exe.  If you are using a firewall other than Windows Firewall, you'll need to open the necessary ports. Learn more in [Deploy the DPM protection agent](Deploy-the-DPM-protection-agent.md).
+
+-   DPM  can back up client computers that are physically or wirelessly connected to the local area network (LAN)or back up over VPN. For VPN backup the ICMP should be enabled on the client computer.
+
+-   Each DPM server can protect up to 3000 client computers
+
+-   You can tweak the performance of client data backup as follows:
+
+    -   If client data backup is slow you can set this key to a lower value:  HKLM\Software\Microsoft\Microsoft Data Protection Manager\Agent\ClientProtection\WaitInMSPerRequestForClientRead to a lower value.
+
+    -   To scale up client performance you can tweak these registry keys:
+
+        -   Software\Microsoft\Microsoft Data Protection Manager\Configuration\DPMTaskController\MaxRunningTasksThreshold. Value: 9037ebb9-5c1b-4ab8-a446-052b13485f57
+
+        -   Software\Microsoft\Microsoft Data Protection Manager\Configuration\DPMTaskController\MaxRunningTasksThreshold. Value: 3d859d8c-d0bb-4142-8696-c0d215203e0d
+
+        -   Software\Microsoft\Microsoft Data Protection Manager\Configuration\DPMTaskController\MaxRunningTasksThreshold. Value: c4cae2f7-f068-4a37-914e-9f02991868da
+
+        -   HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Microsoft Data Protection Manager\Collocation\Client. Value: DSCollocationFactor
+
+## Before you start
+
+1.  **Deploy DPM** - Verify that DPM is installed and deployed correctly. If you haven't see:
+
+    -   System requirements for DPM
+
+    -   [What can DPM back up?](../get-started/What-can-DPM-back-up-.md)
+
+    -   [What's supported and what isn't for DPM?](../get-started/What-s-supported-and-what-isn-t-for-DPM-.md)
+
+    -   [Get DPM installed](../get-started/Get-DPM-installed.md)
+
+2.  **Set up storage** - You can store backed up data on disk, on tape, and in the cloud with Azure.
+      Read more in [Prepare data storage](../get-started/Prepare-data-storage.md).
+
+3.  **Set up the DPM protection agent** - The agent needs to be installed on client computers you want to protect.  Read [Deploy the DPM protection agent](Deploy-the-DPM-protection-agent.md).
+
+## Back up client computers
+
+1.  Click **Protection** > **Actions** > **Create Protection Group** to open the **Create New Protection Group** wizard in the DPM console.
+
+2.  In **Select protection group** type click **Clients**. You only select clients if you want to back up data on a Windows computer running a Windows client operating system. For all other workloads select server. Learn more in [Deploy protection groups](Deploy-protection-groups.md)
+
+3.  In **Select Group Members** click **Add Multiple Computers**. You can add the client computers you want to back up in a text file. In the file  you'll need to enter each computer on a new line. We recommend that you provide the FQDN target computers. For example, enter multiple computers in a .txt file as follows:
+
+    -   Comp1.abc.domain.com
+
+    -   Comp2.abc.domain.com
+
+    -   Comp3.abc.domain.com
+
+    Note that if DPM can't find the text file or any of the computers it will add them to the log file. Click **Failed to add machines**to open the log file. To add new client computers to an existing protection group you right-click the group name and select **Add client computers**.
+
+    -   On the **Specify Inclusions and Exclusions** page, specify the folders to include or exclude for protection on the selected computers. To select from a list of well-known folders, such as **Documents**, click the drop-down list. Note that:
+
+        -   When you exclude a folder, and then specify a separate inclusion rule for a subfolder, DPM doesn't back up the subfolder. The exclusion rule overrides the inclusion rule.
+
+        -   When you include a folder, and then specify a separate exclude rule for a subfolder, DPM backs up the entire folder, except for the excluded subfolder.
+
+        -   When you include a well-known folder such as **Documents**, DPM locates the **Documents** folder for all users on the computer, and then applies the rule. For example, if the user profile for computer **Comp1** contains the **Documents** folder for both User1 and User2, DPM will back up both folders.
+
+        -   In the **Folder** column you type the folder names using variables such as *programfiles*, or you can use the exact folder name. Select **Include** or **Exclude** for each entry in the **Rule** column.
+
+        -   You can select **Allow users to specify protection members** to give your end users the choice to add more folders on the computer that they want to back up. However, the files and folders you have explicitly excluded as an administrator cannot be selected by the end user.
+
+        -   Under **File type exclusions** you can specify the file types to exclude using their file extensions.
+
+4.  In **Select data protection method**  specify how you want to handle short and long-term backup. Short-term back up is always to disk first, with the option of backing up from the disk to the Azure cloud with Azure backup (for short or long-term). As an alternative to long-term backup to the cloud you can also configure long-term back up to a standalone tape device or tape library connected to the DPM server.
+
+5.  In **Select short-term goals** specify how you want to back up to short-term storage on disk.   In Retention range you specify how long you want to keep the data on disk. In **Synchronization frequency** you specify how often you want to run an incremental backup to disk. If you don't want to set a back up interval you can check Just before  a recovery point so that DPM will run an express full backup just before each recovery point is scheduled.
+
+6.  If you want to store data on tape for long-term storage in **Specify long-term goals** indicate how long you want to keep tape data (1-99 years). In Frequency of backup specify how often backups to tape should run. The frequency is based on the retention range you've specified:
+
+    -   When the retention range is 1-99 years, you can select backups to occur daily, weekly, bi-weekly, monthly, quarterly, half-yearly, or yearly.
+
+    -   When the retention range is 1-11 months, you can select backups to occur daily, weekly, bi-weekly, or monthly.
+
+    -   When the retention range is 1-4 weeks, you can select backups to occur daily or weekly.
+
+    On a stand-alone tape drive, for a single protection group, DPM uses the same tape for daily backups until there is insufficient space on the tape. You can also colocate data from different protection groups on tape.
 
     On the **Select Tape and Library Details** page specify the tape/library to use, and whether data should be compressed and encrypted on tape.
 
@@ -88,6 +195,3 @@ End users should recover data as follows:
 1.  Navigate to the protected data file. Right-click the file name > **Properties**.
 
 2.  In **Properties** > **Previous Versions** select the version that you want to recover from.
-
-
-

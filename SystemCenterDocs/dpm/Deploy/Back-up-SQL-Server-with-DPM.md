@@ -1,11 +1,11 @@
---
+---
 description:  
 manager:  cfreemanwa
 ms.topic:  article
 author:  markgalioto
 ms.prod:  system-center-threshold
 keywords:  
-ms.date:  2016-06-27
+ms.date:  2016-06-30
 title:  Back up SQL Server with DPM
 ms.technology:  data-protection-manager
 ms.assetid:  3718b565-9640-4c3f-9d44-aa969041e0e6
@@ -69,13 +69,14 @@ DPM provides backup and recovery for SQL Server databases. In addition to backin
 
     -   DPM will honor the backup policy for availability groups that is set in SQL Server based on the backup preferences, as follows:
 
-        -   Prefer secondary-Backups should occur on a secondary replica except when the primary replica is the only replica online. If there are multiple secondary replicas available then the node with the highest backup priority will be selected for backup. In the case that only primary replica is available then backup should occur on the primary replica.
 
-        -   Secondary only-Backup shouldn't be performed on the primary replica. If the primary replica is the only one online, the backup shouldn't occur.
+        -   Prefer secondary - Backups should occur on a secondary replica except when the primary replica is the only replica online. If there are multiple secondary replicas available then the node with the highest backup priority will be selected for backup. In the case that only primary replica is available then backup should occur on the primary replica.
 
-        -   Primary-Backups should always occur on the primary replica.
+        -   Secondary only - Backup shouldn't be performed on the primary replica. If the primary replica is the only one online, the backup shouldn't occur.
 
-        -   Any Replica-Backups can happen on any of the availability replicas in the availability group. The node to be backed up from will be based on the backup priorities for each of the nodes.
+        -   Primary - Backups should always occur on the primary replica.
+
+        -   Any Replica - Backups can happen on any of the availability replicas in the availability group. The node to be backed up from will be based on the backup priorities for each of the nodes.
 
     -   Note the following:
 
@@ -97,7 +98,8 @@ DPM provides backup and recovery for SQL Server databases. In addition to backin
 
 ## Before you start
 
-1.  **Deploy DPM**-Verify that DPM is installed and deployed correctly. If you haven't see:
+
+1.  **Deploy DPM** - Verify that DPM is installed and deployed correctly. If you haven't see:
 
     -   System requirements for DPM
 
@@ -107,9 +109,10 @@ DPM provides backup and recovery for SQL Server databases. In addition to backin
 
     -   [Get DPM installed](../get-started/Get-DPM-installed.md)
 
-2.  **Set up storage**-You can store backed up data on disk, on tape, and in the cloud with Azure. Read more in [Prepare data storage](../get-started/Prepare-data-storage.md).
+2.  **Set up storage** - You can store backed up data on disk, on tape, and in the cloud with Azure. Read more in [Prepare data storage](../get-started/Prepare-data-storage.md).
 
-3.  **Set up the DPM protection agent**-You'll need to install the DPM protection agent on every machine you want to back up. Read [Deploy the DPM protection agent](Deploy-the-DPM-protection-agent.md).
+3.  **Set up the DPM protection agent** - You'll need to install the DPM protection agent on every machine you want to back up. Read [Deploy the DPM protection agent](Deploy-the-DPM-protection-agent.md).
+
 
 ## Configure backup
 
@@ -257,6 +260,3 @@ Users with self-service recovery permissions should recover as follows:
 6.  If you're recovering to a database, on the **Specify Database State**  page specify whether the database should remain operational after recovery, and specify whether you want to copy SQL transaction logs.
 
 7.  On the **Specify Recovery Options** page specify whether you want to retain security settings from the source server, or apply settings from the destination server. You can also specify that an email notification should be sent when recovery finishes.
-
-
-

@@ -5,7 +5,7 @@ ms.topic:  article
 author:  markgalioto
 ms.prod:  system-center-threshold
 keywords:  
-ms.date:  2016-06-27
+ms.date:  2016-06-30
 title:  Get ready to deploy DPM servers
 ms.technology:  data-protection-manager
 ms.assetid:  517ce276-b811-4a06-ade3-ff71303ccf5b
@@ -17,11 +17,11 @@ ms.assetid:  517ce276-b811-4a06-ade3-ff71303ccf5b
 
 There are a few planning steps to consider before you begin to deploy your DPM servers:
 
--   [Plan for DPM server deployment](#BKMK_Server)-Figure out how many DPM servers you'll need and where to place them.
+-   [Plan for DPM server deployment](#BKMK_Server) - Figure out how many DPM servers you'll need and where to place them.
 
--   [Plan firewall settings](#BKMK_Firewall)-Get information about firewall, port and protocol settings on the DPM server, protected machines, and a remote SQL Server if you're setting one up.
+-   [Plan firewall settings](#BKMK_Firewall) - Get information about firewall, port and protocol settings on the DPM server, protected machines, and a remote SQL Server if you're setting one up.
 
--   [Grant user permissions](#BKMK_Users)-Specify who can interact with DPM.
+-   [Grant user permissions](#BKMK_Users) - Specify who can interact with DPM.
 
 ## <a name="BKMK_Server"></a>Plan for DPM server deployment
 Firstly determine how many servers you'll need:
@@ -88,6 +88,3 @@ Before you begin a DPM deployment, verify that appropriate users have been grant
 |Install recovery point client software on protected machine|Admin account on machine|
 |Access previous versions of protected data from protected machine|User account with access to protected share|
 |Recover SharePoint data|SharePoint farm admin that's also an admin on the front-end Web server on which the protection agent is installed.|
-
-
-

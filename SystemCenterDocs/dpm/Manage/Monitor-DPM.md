@@ -5,7 +5,7 @@ ms.topic:  article
 author:  markgalioto
 ms.prod:  system-center-threshold
 keywords:  
-ms.date:  2016-06-27
+ms.date:  2016-06-30
 title:  Monitor DPM
 ms.technology:  data-protection-manager
 ms.assetid:  99901174-76d4-4eb7-a72b-3ec300f1fa0b
@@ -20,7 +20,7 @@ You can monitor a single DPM server from the DPM Administrator console, multiple
 ## Monitor with the DPM console
 To monitor DPM in the console you should be logged on to the DPM server with a local admin account. Here's what you can monitor:
 
--   On the **Alerts** tab you can monitor errors,warnings, and general information for a protection group, for a specific protected computer, or by message severity.  You can view active and inactive alerts and set up email notifications
+-   On the **Alerts** tab you can monitor errors, warnings, and general information for a protection group, for a specific protected computer, or by message severity.  You can view active and inactive alerts and set up email notifications
 
 -   On the **Jobs** tab you can view jobs initiated by DPM for a specific protected computer or protection group. You can  follow job progress or check resources consumed by jobs.
 
@@ -51,11 +51,12 @@ From the dashboard you can download the Backup agent for installation on a serve
 ## Monitor DPM in Operations Manager
 You can use monitor and report on the health and status of DPM servers using System Center Operations Manager Management Packs for DPM. DPM provides the following management packs:
 
--   **Reporting management pack** (Microsoft.SystemCenter.DataProtectionManager.2012.Reporting.mp)-Collects and displays reporting data from all DPM servers, and exposes a set of Operations Manager warehouse views for DPM. You can query these views to generate custom reports.
+-   **Reporting management pack** (Microsoft.SystemCenter.DataProtectionManager.2012.Reporting.mp) - Collects and displays reporting data from all DPM servers, and exposes a set of Operations Manager warehouse views for DPM. You can query these views to generate custom reports.
 
 -   **Discovery and monitoring management pack** (Microsoft.SystemCenter.DataProtectionManager.2012.Discovery.mp)
 
--   **Library management pack**-(Microsoft.SystemCenter.DataProtectionManager.2012.Library)
+-   **Library management pack** - (Microsoft.SystemCenter.DataProtectionManager.2012.Library)
+
 
 Using these packs you can:
 
@@ -105,9 +106,8 @@ Remember to remove any previous versions of the Library or Discover Management P
 
 #### Set up Central Console
 You'll need to install the DPM Central Console on the Operations Manager server. This console is used to manage multiple DPM servers in Operations Manager.
-I
 
-1.  n the **Setup** screen of Operations Manager, select the following:
+1.  In the **Setup** screen of Operations Manager, select the following:
 
     -   Select **Install Central Console Server and Client side Components** if you want to monitor DPM servers with the Management Pack and you want to use the Central Console to manage settings and configuration on the DPM servers.
 
@@ -116,17 +116,15 @@ I
 2.  DPM adds firewall exceptions for port 6075 for the console. You should also open ports for SQL Server.exe and SQL browser.exe
 
 #### Import the Reporting Manager Pack
-I
+
 
 1.  Log on to the Operations Manager server with an account that is a member of the Operations Manager Administrators role.
 
 2.  In the Operations console, click **Administration**. Right-click **Management Packs** > **Import Management Packs**.
 
-3.  Select **Microsoft.SystemCenter.DataProtectionManagerReporting.MP** > **Open**. 
+3.  Select **Microsoft.SystemCenter.DataProtectionManagerReporting.MP** > **Open**.
     Follow the instructions in the Import Management Packs wizard.
 
 #### Tweaking Management Pack settings
+
 After you import the Management Packs they discover and monitor data without requiring any additional configuration. You can optionally tweak settings like monitors and rules for your environment. For example if you find that performance-measuring rules that are enable degrade server performance with slow WAN links, you can disable them. For instructions, see [How to enable or disable a rule or monitor](https://technet.microsoft.com/en-us/library/hh212818.aspx).
-
-
-
