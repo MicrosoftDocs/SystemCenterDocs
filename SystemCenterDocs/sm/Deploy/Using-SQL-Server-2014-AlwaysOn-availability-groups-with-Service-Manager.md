@@ -26,9 +26,9 @@ Service Manager does not support a topology where the reporting and analysis ser
 
 SQL 2014 Server AlwaysOn supports the following Service Manager databases:
 
-- ??Service Manager CMDB
-- ??Service Manager Data Warehouse (all 3 databases)
-- ??OM and CM DataMart
+- Service Manager CMDB
+- Service Manager Data Warehouse (all 3 databases)
+- OM and CM DataMart
 
 ## New management group installation
 
