@@ -5,7 +5,7 @@ ms.topic:  article
 author:  markgalioto
 ms.prod:  system-center-threshold
 keywords:  
-ms.date:  2016-06-27
+ms.date:  2016-06-30
 title:  Prepare machines in workgroups and untrusted domains for backup
 ms.technology:  data-protection-manager
 ms.assetid:  e63b86d4-1f83-48ef-82bb-636b9dc745e2
@@ -17,13 +17,13 @@ ms.assetid:  e63b86d4-1f83-48ef-82bb-636b9dc745e2
 
 DPM can protect computers that are in untrusted domains or workgroups. You can authenticate these computers using a local user account (NTLM authentication), or using certificates. For both types of authentication you'll need to prepare the infrastructure before you can set up a protection group that contains the sources you want to back up.
 
-1.  **Install a certificate**—If you want to use certificate authentication install a certificate on the DPM server and on the computer you want to protect.
+1.  **Install a certificate**-If you want to use certificate authentication install a certificate on the DPM server and on the computer you want to protect.
 
-2.  **Install the agent**—Install the agent on the computer you want to protect.
+2.  **Install the agent**-Install the agent on the computer you want to protect.
 
-3.  **Recognize the DPM server**—Configure the computer to recognize the DPM server for performing backups. To do this you’ll run the SetDPMServer command.
+3.  **Recognize the DPM server**-Configure the computer to recognize the DPM server for performing backups. To do this you'll run the SetDPMServer command.
 
-4.  **Attach the computer**—Lastly you’ll need to attach the protected computer to the DPM server.
+4.  **Attach the computer**-Lastly you'll need to attach the protected computer to the DPM server.
 
 ## Before you start
 Before you started check the supported protection scenarios and required network settings
@@ -54,16 +54,16 @@ Before you started check the supported protection scenarios and required network
 |Certificate requirements||
 |Agent installation|Agent installed on protected computer|
 |Perimeter network|Perimeter network protection not supported.|
-|IPSEC|Ensure IPSEC doesn’t block communications.|
+|IPSEC|Ensure IPSEC doesn't block communications.|
 
 ## Back up using  NTLM authentication
 Here's what you'll need to do:
 
-1.  Install the agent — Install the agent on the computer you want to protect.
+1.  Install the agent - Install the agent on the computer you want to protect.
 
-2.  Configure the agent — Configure the computer to recognize the DPM server for performing backups. To do this you’ll run the SetDPMServer command.
+2.  Configure the agent - Configure the computer to recognize the DPM server for performing backups. To do this you'll run the SetDPMServer command.
 
-3.  Attach the computer — Lastly you’ll need to attach the protected computer to the DPM server.
+3.  Attach the computer - Lastly you'll need to attach the protected computer to the DPM server.
 
 ### <a name="BKMK_Config"></a>Install and configure the agent
 
@@ -77,13 +77,13 @@ Here's what you'll need to do:
 
 3.  Specify the parameters as follows:
 
-    -   **-DpmServerName**—Specify the name of the DPM server. Use either an FQDN if the server and computer are accessible to each other using FQDNs, or a NETBIOS name.
+    -   **-DpmServerName**-Specify the name of the DPM server. Use either an FQDN if the server and computer are accessible to each other using FQDNs, or a NETBIOS name.
 
-    -   **-IsNonDomainServer**—Use to indicate that the server is in a workgroup or untrusted domain in relation to the computer you want to protect. Firewall exceptions are created for required ports.
+    -   **-IsNonDomainServer**-Use to indicate that the server is in a workgroup or untrusted domain in relation to the computer you want to protect. Firewall exceptions are created for required ports.
 
-    -   **-UserName**—Specify the name of the account you want to use for NTLM authentication. To use this option you should have the –isNonDomainServer flag specified. A local user account will be created and the DPM protection agent will be configured to use this account for authentication.
+    -   **-UserName**-Specify the name of the account you want to use for NTLM authentication. To use this option you should have the -isNonDomainServer flag specified. A local user account will be created and the DPM protection agent will be configured to use this account for authentication.
 
-    -   **-ProductionServerDnsSuffix**—Use this switch if the server has multiple DNS suffixes configured. This switch represents the DNS suffix that the server uses to connect to the computer you’re protecting.
+    -   **-ProductionServerDnsSuffix**-Use this switch if the server has multiple DNS suffixes configured. This switch represents the DNS suffix that the server uses to connect to the computer you're protecting.
 
 4.  When the command completes successfully open the DPM console.
 
@@ -94,11 +94,11 @@ If at any point you want to update the password for the NTLM credentials, run th
 SetDpmServer.exe -dpmServerName <serverName> -isNonDomainServer -updatePassword
 ```
 
-You’ll need to use the same naming convention (FQDN or NETBIOS) that you did when you configured protection. On the DPM server you’ll need to run the Update –NonDomainServerInfo PowerShell cmdlet. Then you’ll need to refresh the agent information for the protected computer.
+You'll need to use the same naming convention (FQDN or NETBIOS) that you did when you configured protection. On the DPM server you'll need to run the Update -NonDomainServerInfo PowerShell cmdlet. Then you'll need to refresh the agent information for the protected computer.
 
-NetBIOS example: Protected computer: `SetDpmServer.exe -dpmServerName Server01 -isNonDomainServer –UpdatePassword` DPM server: `Update-NonDomainServerInfo –PSName Finance01 –dpmServerName Server01`
+NetBIOS example: Protected computer: `SetDpmServer.exe -dpmServerName Server01 -isNonDomainServer -UpdatePassword` DPM server: `Update-NonDomainServerInfo -PSName Finance01 -dpmServerName Server01`
 
-FQDN example: Protected computer: `SetDpmServer.exe -dpmServerName Server01.corp.contoso.com -isNonDomainServer -UpdatePassword` DPM server: `Update-NonDomainServerInfo –PSName  Finance01.worlwideimporters.com –dpmServerName Server01.contoso.com`
+FQDN example: Protected computer: `SetDpmServer.exe -dpmServerName Server01.corp.contoso.com -isNonDomainServer -UpdatePassword` DPM server: `Update-NonDomainServerInfo -PSName  Finance01.worlwideimporters.com -dpmServerName Server01.contoso.com`
 
 ### <a name="BKMK_Attach"></a>Attach the computer
 
@@ -119,7 +119,7 @@ Example to configure a workgroup computer after the agent is installed:
 
 1.  On the computer, run `SetDpmServer.exe -DpmServerName Server01 -isNonDomainServer -UserName mark`.
 
-2.  On the DPM server, run `Attach-NonDomainServer.ps1 –DpmServername Server01 -PSName Finance01 -Username mark`.
+2.  On the DPM server, run `Attach-NonDomainServer.ps1 -DpmServername Server01 -PSName Finance01 -Username mark`.
 
 Because the workgroup computers are typically accessible only by using NetBIOS name, the value for DPMServerName must be the NetBIOS name.
 
@@ -152,9 +152,9 @@ Here's how to set up protection with certificate authentication.
 
     -   The certificate should have associated private key
 
-    -   DPM doesn’t support certificates with CNG Keys
+    -   DPM doesn't support certificates with CNG Keys
 
-    -   DPM doesn’t support self-signed certificates.
+    -   DPM doesn't support self-signed certificates.
 
 -   Each computer you want to protect (including virtual machines) must have its own certificate.
 
@@ -181,7 +181,7 @@ You can optionally set up a DPM template for web enrollment. If you do want to d
 
 4.  In the **Request Handling** tab, make sure **Allow private key to be exported** is enabled.
 
-5.  After you’ve created the template make it available for use. Open the Certificate Authority snap-in. Right-click **Certificate Templates**, select **New**, and choose **Certificate Template to Issue**. In **Enable Certificate Template** select the template and click OK. Now the template will be available when you obtain a certificate.
+5.  After you've created the template make it available for use. Open the Certificate Authority snap-in. Right-click **Certificate Templates**, select **New**, and choose **Certificate Template to Issue**. In **Enable Certificate Template** select the template and click OK. Now the template will be available when you obtain a certificate.
 
 #### Enable enrollment or autoenrollment
 If you want to optionally configure the template for enrollment or autoenrollment, click the Subject Name tab in the template properties. When you configure enrollment the template can be selected in the MMC. If you configure autoenrollment the certificate is automatically assigned to all computers in the domain.
@@ -190,7 +190,7 @@ If you want to optionally configure the template for enrollment or autoenrollmen
 
 -   For autoenrollment, go to the **Security** tab and assign the **Autoenroll** permission to authenticated users. With this setting enabled the certificate will be automatically assigned to all computers in the domain.
 
--   If you’ve configured enrollment you’ll be able to request a new certificate in the MMC, based on the template. To do this, on the protected computer, in **Certificates (Local Computer)** > **Personal**, right-click **Certificates**. Select **All Tasks** > **Request New Certificate**. In the **Select Certificate Enrollment Policy** page of the wizard select **Active Directory Enrollment Policy**. In **Request Certificates** you’ll see the template. Expand **Details** and click **Properties**. Select the **General** tab and provide a friendly name. After you apply the settings you should receive a message that the certificate was installed successfully.
+-   If you've configured enrollment you'll be able to request a new certificate in the MMC, based on the template. To do this, on the protected computer, in **Certificates (Local Computer)** > **Personal**, right-click **Certificates**. Select **All Tasks** > **Request New Certificate**. In the **Select Certificate Enrollment Policy** page of the wizard select **Active Directory Enrollment Policy**. In **Request Certificates** you'll see the template. Expand **Details** and click **Properties**. Select the **General** tab and provide a friendly name. After you apply the settings you should receive a message that the certificate was installed successfully.
 
 ### <a name="BKMK_CertDPM"></a>Configure a certificate on the DPM server
 
@@ -209,22 +209,22 @@ If you want to optionally configure the template for enrollment or autoenrollmen
     2.  Run **Set-DPMCredentials** to configure the DPM server:
 
         ```
-        Set-DPMCredentials [–DPMServerName <String>] [–Type <AuthenticationType>] [Action <Action>] [–OutputFilePath <String>] [–Thumbprint <String>] [–AuthCAThumbprint <String>]
+        Set-DPMCredentials [-DPMServerName <String>] [-Type <AuthenticationType>] [Action <Action>] [-OutputFilePath <String>] [-Thumbprint <String>] [-AuthCAThumbprint <String>]
         ```
 
-    -   **-Type**—Indicates the type of authentication. Value: **certificate**.
+    -   **-Type**-Indicates the type of authentication. Value: **certificate**.
 
-    -   **-Action**—Specify whether you want to perform the command for the first time, or regenerate the credentials. Possible values: **regenerate** or **configure**.
+    -   **-Action**-Specify whether you want to perform the command for the first time, or regenerate the credentials. Possible values: **regenerate** or **configure**.
 
-    -   -**OutputFilePath**— Location of the output file used in Set-DPMServer on the protected computer.
+    -   -**OutputFilePath**- Location of the output file used in Set-DPMServer on the protected computer.
 
-    -   **–Thumbprint**—Copy from the Notepad file.
+    -   **-Thumbprint**-Copy from the Notepad file.
 
-    -   **-AuthCAThumbprint**—Thumbprint of the CA in the trust chain of the certificate. Optional. If not specified, Root will be used.
+    -   **-AuthCAThumbprint**-Thumbprint of the CA in the trust chain of the certificate. Optional. If not specified, Root will be used.
 
-6.  This generates a metadata file (.bin) that is required at the time of each agent install in untrusted domain. Make sure that the C:\Temp folder exists before  you run the command. Note that if the file is lost or deleted you can recreate it by running the script with the **–action regenerate** option.
+6.  This generates a metadata file (.bin) that is required at the time of each agent install in untrusted domain. Make sure that the C:\Temp folder exists before  you run the command. Note that if the file is lost or deleted you can recreate it by running the script with the **-action regenerate** option.
 
-7.  Retrieve the .bin file and copy it to the C:\Program Files\Microsoft Data Protection Manager\DPM\bin folder on the computer you want to protect. You don’t have to do this, but if you don’t you’ll need to specify the full path of the file for the –DPMcredential parameter when you …
+7.  Retrieve the .bin file and copy it to the C:\Program Files\Microsoft Data Protection Manager\DPM\bin folder on the computer you want to protect. You don't have to do this, but if you don't you'll need to specify the full path of the file for the -DPMcredential parameter when you
 
 8.  Repeat these steps on every DPM server that will protect a computer in a workgroup or in an untrusted domain.
 
@@ -249,7 +249,7 @@ If you want to optionally configure the template for enrollment or autoenrollmen
     2.  Navigate to the C:\Program files\Microsoft Data Protection anager\DPM\bin folder. And run **setdpmserver** as follows:
 
         ```
-        setdpmserver –dpmCredential CertificateConfiguration_DPM01.contoso.com.bin –OutputFilePath c:\Temp -Thumbprint <ClientThumbprintWithNoSpaces
+        setdpmserver -dpmCredential CertificateConfiguration_DPM01.contoso.com.bin -OutputFilePath c:\Temp -Thumbprint <ClientThumbprintWithNoSpaces
         ```
 
         Where ClientThumbprintWithNoSpaces is copied from the Notepad file.
@@ -265,9 +265,9 @@ You attach the computer to the DPM server using the Attach-ProductionServerWithC
 Attach-ProductionServerWithCertificate.ps1 [-DPMServerName <String>] [-PSCredential <String>] [<CommonParameters>]
 ```
 
--   -DPMServerName—Name of the DPM server
+-   -DPMServerName-Name of the DPM server
 
--   PSCredential—Name of the .bin file. If you placed it in the Windows\System32 folder you can specify the file name only. Be careful to specify the .bin file created o nthe protected server. If you specify the .bin file created on the DPM server you’ll remove all the protected computers that are configured for certificate-based authentication.
+-   PSCredential-Name of the .bin file. If you placed it in the Windows\System32 folder you can specify the file name only. Be careful to specify the .bin file created o nthe protected server. If you specify the .bin file created on the DPM server you'll remove all the protected computers that are configured for certificate-based authentication.
 
 After the attach process completes the protected computer should appear in the DPM console.
 
@@ -277,18 +277,15 @@ After the attach process completes the protected computer should appear in the D
 Generates a file in `c:\\CertMetaData\\` with name `CertificateConfiguration\_<DPM SERVER FQDN>.bin`
 
 ```
-Set-DPMCredentials -DPMServerName dpmserver.contoso.com -Type Certificate -Action Configure -OutputFilePath c:\CertMetaData\ –Thumbprint “cf822d9ba1c801ef40d4b31de0cfcb200a8a2496”
+Set-DPMCredentials -DPMServerName dpmserver.contoso.com -Type Certificate -Action Configure -OutputFilePath c:\CertMetaData\ -Thumbprint "cf822d9ba1c801ef40d4b31de0cfcb200a8a2496"
 ```
 
-Where dpmserver.contoso.com is the name of the DPM server and “cf822d9ba1c801ef40d4b31de0cfcb200a8a2496” is the thumbprint of the DPM server certificate.
+Where dpmserver.contoso.com is the name of the DPM server and "cf822d9ba1c801ef40d4b31de0cfcb200a8a2496" is the thumbprint of the DPM server certificate.
 
 **Example 2**
 
 Regenerates a lost configuration file in the folder c:\CertMetaData\
 
 ```
-Set-DPMCredentials -DPMServerName dpmserver.contoso.com -Type Certificate “-OutputFilePath c:\CertMetaData\ -Action Regenerate
+Set-DPMCredentials -DPMServerName dpmserver.contoso.com -Type Certificate "-OutputFilePath c:\CertMetaData\ -Action Regenerate
 ```
-
-
-

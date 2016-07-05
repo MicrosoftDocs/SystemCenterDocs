@@ -17,7 +17,7 @@ ms.assetid:  46b4d047-51ef-441c-8e21-f9d3087228f6
 
 >Applies To: System Center 2016 Technical Preview - Operations Manager
 
-You can use the Operations console to search your environment for manageable objects and then deploy an agent to any object that you want to monitor. The process of searching your environment is called “discovery.” One of the advantages of using discovery is that it lists *all* manageable objects, including any that you might not be aware of.
+You can use the Operations console to search your environment for manageable objects and then deploy an agent to any object that you want to monitor. The process of searching your environment is called "discovery." One of the advantages of using discovery is that it lists *all* manageable objects, including any that you might not be aware of.
 
 The Discovery Wizard does not show computers that the management group is already monitoring. If you are doing a phased rollout of your management group, you can run the wizard to add new computers to the group. Also, after your initial deployment, you can use the Discovery Wizard to add newly installed computers to be managed.
 

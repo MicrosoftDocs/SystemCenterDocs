@@ -5,7 +5,7 @@ ms.topic:  article
 author:  markgalioto
 ms.prod:  system-center-threshold
 keywords:  
-ms.date:  2016-06-27
+ms.date:  2016-06-30
 title:  Back up SQL Server with DPM
 ms.technology:  data-protection-manager
 ms.assetid:  3718b565-9640-4c3f-9d44-aa969041e0e6
@@ -41,7 +41,7 @@ DPM provides backup and recovery for SQL Server databases. In addition to backin
 
 -   DPM is an affordable option. It's a good fit for a small SQL Server footprint and can scale for organizations that have a larger SQL Server footprint.
 
--   DPM has a Self-Service Recovery Tool (SSRT) that extends database administrators’ options for self-service recovery of SQL databases.
+-   DPM has a Self-Service Recovery Tool (SSRT) that extends database administrators' options for self-service recovery of SQL databases.
 
 -   If you're upgrading to SQL Server 2014  DPM will continue to back up already protected databases after the SQL Server upgrade. You should avoid backup jobs during the SQL Server upgrade.
 
@@ -69,13 +69,14 @@ DPM provides backup and recovery for SQL Server databases. In addition to backin
 
     -   DPM will honor the backup policy for availability groups that is set in SQL Server based on the backup preferences, as follows:
 
-        -   Prefer secondary—Backups should occur on a secondary replica except when the primary replica is the only replica online. If there are multiple secondary replicas available then the node with the highest backup priority will be selected for backup. In the case that only primary replica is available then backup should occur on the primary replica.
 
-        -   Secondary only—Backup shouldn’t be performed on the primary replica. If the primary replica is the only one online, the backup shouldn’t occur.
+        -   Prefer secondary - Backups should occur on a secondary replica except when the primary replica is the only replica online. If there are multiple secondary replicas available then the node with the highest backup priority will be selected for backup. In the case that only primary replica is available then backup should occur on the primary replica.
 
-        -   Primary—Backups should always occur on the primary replica.
+        -   Secondary only - Backup shouldn't be performed on the primary replica. If the primary replica is the only one online, the backup shouldn't occur.
 
-        -   Any Replica—Backups can happen on any of the availability replicas in the availability group. The node to be backed up from will be based on the backup priorities for each of the nodes.
+        -   Primary - Backups should always occur on the primary replica.
+
+        -   Any Replica - Backups can happen on any of the availability replicas in the availability group. The node to be backed up from will be based on the backup priorities for each of the nodes.
 
     -   Note the following:
 
@@ -97,7 +98,8 @@ DPM provides backup and recovery for SQL Server databases. In addition to backin
 
 ## Before you start
 
-1.  **Deploy DPM**—Verify that DPM is installed and deployed correctly. If you haven’t see:
+
+1.  **Deploy DPM** - Verify that DPM is installed and deployed correctly. If you haven't see:
 
     -   System requirements for DPM
 
@@ -107,9 +109,10 @@ DPM provides backup and recovery for SQL Server databases. In addition to backin
 
     -   [Get DPM installed](../get-started/Get-DPM-installed.md)
 
-2.  **Set up storage**—You can store backed up data on disk, on tape, and in the cloud with Azure. Read more in [Prepare data storage](../get-started/Prepare-data-storage.md).
+2.  **Set up storage** - You can store backed up data on disk, on tape, and in the cloud with Azure. Read more in [Prepare data storage](../get-started/Prepare-data-storage.md).
 
-3.  **Set up the DPM protection agent**—You'll need to install the DPM protection agent on every machine you want to back up. Read [Deploy the DPM protection agent](Deploy-the-DPM-protection-agent.md).
+3.  **Set up the DPM protection agent** - You'll need to install the DPM protection agent on every machine you want to back up. Read [Deploy the DPM protection agent](Deploy-the-DPM-protection-agent.md).
+
 
 ## Configure backup
 
@@ -132,11 +135,11 @@ DPM provides backup and recovery for SQL Server databases. In addition to backin
 
 6.  If you want to store data on tape for long-term storage in **Specify long-term goals** indicate how long you want to keep tape data (1-99 years). In Frequency of backup specify how often backups to tape should run. The frequency is based on the retention range you've specified:
 
-    -   When the retention range is 1–99 years, you can select backups to occur daily, weekly, bi-weekly, monthly, quarterly, half-yearly, or yearly.
+    -   When the retention range is 1-99 years, you can select backups to occur daily, weekly, bi-weekly, monthly, quarterly, half-yearly, or yearly.
 
-    -   When the retention range is 1–11 months, you can select backups to occur daily, weekly, bi-weekly, or monthly.
+    -   When the retention range is 1-11 months, you can select backups to occur daily, weekly, bi-weekly, or monthly.
 
-    -   When the retention range is 1–4 weeks, you can select backups to occur daily or weekly.
+    -   When the retention range is 1-4 weeks, you can select backups to occur daily or weekly.
 
     On a stand-alone tape drive, for a single protection group, DPM uses the same tape for daily backups until there is insufficient space on the tape. You can also colocate data from different protection groups on tape.
 
@@ -146,7 +149,7 @@ DPM provides backup and recovery for SQL Server databases. In addition to backin
 
 8.  In **Choose replica creation method** select how you want to handle the initial full data replication.  If you select to replicate over the network we recommended you choose an off-peak time. For large amounts of data or less than optimal network conditions, consider replicating the data offline using removable media.
 
-9. In **Choose consistency check options**, select how you want to automate consistency checks. You can enable a check to run only when replica data becomes inconsistent, or according to a schedule. If you don’t want to configure automatic consistency checking, you can run a manual check at any time by right-clicking the protection group in the **Protection** area of the DPM console, and selecting **Perform Consistency Check**.
+9. In **Choose consistency check options**, select how you want to automate consistency checks. You can enable a check to run only when replica data becomes inconsistent, or according to a schedule. If you don't want to configure automatic consistency checking, you can run a manual check at any time by right-clicking the protection group in the **Protection** area of the DPM console, and selecting **Perform Consistency Check**.
 
 10. If you've selected to back up to the cloud with Azure Backup, on the **Specify online protection data** page make sure the workloads you want to back up to Azure are selected.
 
@@ -159,7 +162,7 @@ DPM provides backup and recovery for SQL Server databases. In addition to backin
 14. On the  **Summary** page review your settings. After you click **Create Group** initial replication of the data occurs. When it finishes the protection group status will show as **OK** on the **Status** page. Backup then takes place in line with the protection group settings.
 
 ## Monitoring
-After the protection group’s been created the initial replication occurs and DPM starts backing up and synchronizing SQL Server data. DPM monitors the initial synchronization and subsequent backups.  You can monitor the SQL Server data in a couple of ways:
+After the protection group's been created the initial replication occurs and DPM starts backing up and synchronizing SQL Server data. DPM monitors the initial synchronization and subsequent backups.  You can monitor the SQL Server data in a couple of ways:
 
 -   Using default DPM monitoring can set up notifications for proactive monitoring. by publishing alerts and configuring notifications. You can send notifications by e-mail for critical, warning, or informational alerts, and for the status of instantiated recoveries.
 
@@ -171,7 +174,7 @@ After the protection group’s been created the initial replication occurs and DPM
 
 2.  Click **SMTP Server**, type the server name, port, and email address from which notifications will be sent. The address must be valid.
 
-3.  In **Authenticated SMTP server** , type a user name and password. The user name and password must be the domain account name of the person whose “From” address is described in the previous step; otherwise, notification delivery fails.
+3.  In **Authenticated SMTP server** , type a user name and password. The user name and password must be the domain account name of the person whose "From" address is described in the previous step; otherwise, notification delivery fails.
 
 4.  To test the SMTP server settings, click **Send Test E-mail**, type the e-mail address where you want DPM to send the test message, and then click **OK**. Click **Options** > **Notifications** and select the types of alerts about which recipients want to be notified. In **Recipients** type the e-mail address for each recipient to whom you want DPM to send copies of the notifications.
 
@@ -214,7 +217,7 @@ You can recover SharePoint data as follows:
 
 -   Copy the database to tape
 
-Note that you can’t recover a system database to a different instance of SQL Server.
+Note that you can't recover a system database to a different instance of SQL Server.
 
 Recover a database from the DPM console as follows:
 
@@ -228,11 +231,11 @@ Recover a database from the DPM console as follows:
 
     -   Select where you want to recover the database. If you select **Recover to any SQL instance** enter the recovery path. You can specify a new name for the recovered database. Note that this option isn't available with the setting **Latest recovery point**.
 
-    -   You can’t recover a newer version SQL Server database to an older version SQL Server instance.
+    -   You can't recover a newer version SQL Server database to an older version SQL Server instance.
 
-    -   If you select **Copy to a network folder** and the recovery point that you selected wasn’t created from an express full backup, you’ll be presented with new recovery point choices.
+    -   If you select **Copy to a network folder** and the recovery point that you selected wasn't created from an express full backup, you'll be presented with new recovery point choices.
 
-    -   If you select **Copy to tape** and the recovery point that you selected wasn’t created from an express full backup, you’ll be presented with new recovery point choices. For the tape option you’ll select the tape library you want to use for recovery.
+    -   If you select **Copy to tape** and the recovery point that you selected wasn't created from an express full backup, you'll be presented with new recovery point choices. For the tape option you'll select the tape library you want to use for recovery.
 
 5.  If you selected a recovery point other than  **Latest,** on the Specify Database State page, select **Leave database operational**.
 
@@ -257,6 +260,3 @@ Users with self-service recovery permissions should recover as follows:
 6.  If you're recovering to a database, on the **Specify Database State**  page specify whether the database should remain operational after recovery, and specify whether you want to copy SQL transaction logs.
 
 7.  On the **Specify Recovery Options** page specify whether you want to retain security settings from the source server, or apply settings from the destination server. You can also specify that an email notification should be sent when recovery finishes.
-
-
-

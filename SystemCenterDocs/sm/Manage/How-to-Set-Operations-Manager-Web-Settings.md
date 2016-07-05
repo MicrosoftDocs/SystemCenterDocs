@@ -29,11 +29,8 @@ Use the following procedures to set the web settings of System Center Operations
 
 5.  In the **Incident Settings** dialog box, click **Operations Manager Web Settings**.
 
-6.  In the **Web Console URL** box, type the URL of the Operations Manager 2007 web console server, and then click **OK**. For example, type **http://<servername\>:51908**, where <servername\> is the name of the computer hosting the web console server.
+6.  In the **Web Console URL** box, type the URL of the Operations Manager 2007 web console server, and then click **OK**. For example, type **http://servername:51908**, where *servername* is the name of the computer hosting the web console server.
 
 ### To validate Operations Manager web settings
 
--   Make sure that you can access the web console server by entering **http://<servername\>:51908** into your browser, where <servername\> is the name of the computer hosting the web console server.
-
-
-
+-   Make sure that you can access the web console server by entering **http://servername:51908** into your browser, where *servername* is the name of the computer hosting the web console server.

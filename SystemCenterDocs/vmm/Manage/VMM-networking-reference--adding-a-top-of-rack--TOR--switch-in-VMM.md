@@ -23,13 +23,13 @@ If you want to add a TOR switch to your configuration in VMM, you must first per
 
     If you have installed a high availability VMM management server on a cluster, ensure that the provider is installed on all nodes of the cluster.
 
-    For more information about installing provider software, refer to the manufacturer’s documentation.
+    For more information about installing provider software, refer to the manufacturer&trade;s documentation.
 
 2.  For your TOR switch, make sure that you know the manufacturer and model, the name of an account that has configuration permissions, the connection string, and the host groups to include. If certificates are used for the provider software, make sure you know how to view the thumbprint information for those certificates.
 
 #### To add a top-of-rack (TOR) switch in VMM
 
-1.  If you installed provider software as part of fulfilling the “Prerequisites” that are listed before this procedure, confirm that the provider is listed in VMM. To do this, open the **Settings** workspace, and in the **Settings** pane, click **Configuration Providers**. In the **Configuration Providers** pane, review the list of installed provider software.
+1.  If you installed provider software as part of fulfilling the Prerequisites that are listed before this procedure, confirm that the provider is listed in VMM. To do this, open the **Settings** workspace, and in the **Settings** pane, click **Configuration Providers**. In the **Configuration Providers** pane, review the list of installed provider software.
 
 2.  Open the **Fabric** workspace.
 
@@ -62,7 +62,7 @@ If you want to add a TOR switch to your configuration in VMM, you must first per
     **https://TORswitch1.contoso.com:5986**
 
     > [!IMPORTANT]
-    > If you are not using the provider software that is included in VMM, when you enter the connection string, use the syntax that is defined by the manufacturer of your TOR switch. For more information about the required syntax, refer to the manufacturer’s documentation.
+    > If you are not using the provider software that is included in VMM, when you enter the connection string, use the syntax that is defined by the manufacturer of your TOR switch. For more information about the required syntax, refer to the manufacturer&trade;s documentation.
 
 10. On the **Certificates** page, if certificates are listed, verify that the thumbprints of those certificates match the thumbprints of the certificates that are installed on the TOR switch. Then select the box to confirm that the certificates can be imported to the trusted certificate store. Click **Next**.
 

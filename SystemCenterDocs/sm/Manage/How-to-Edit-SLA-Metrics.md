@@ -26,7 +26,7 @@ In Service Manager, you edit a service level agreement (SLA) metric to update th
 
 2.  In the **Administration** pane, expand **Service Level Management**, and then click **Metric**.
 
-3.  In the **Metric** list, select an existing metric, and then in the **Tasks** pane, under **<MetricName\>**, click **Properties**.
+3.  In the **Metric** list, select an existing metric, and then in the **Tasks** pane, under *MetricName*, click **Properties**.
 
 4.  In the **Create/Edit Metric** dialog box, modify any of the following items, as needed:
 
@@ -39,6 +39,3 @@ In Service Manager, you edit a service level agreement (SLA) metric to update th
     -   **End date**
 
 5.  Click **OK** to close the **Create/Edit Metric** dialog box.
-
-
-

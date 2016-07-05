@@ -36,7 +36,7 @@ The following sample commands retrieve all modules installed in Automation.
 ```powershell
 $webServer = 'https://MyWebServer'
 $port = 9090
-Get-SmaModule �WebServiceEndpoint $webServer �Port $port
+Get-SmaModule "WebServiceEndpoint $webServer "Port $port
 ```
 
 ## Importing a Module
@@ -67,7 +67,7 @@ The following sample commands show how to import a module.
 $webServer = 'https://MyWebServer'
 $port = 9090
 $modulePath = 'C:\Modules\MyModule.psm1'
-Import-SmaModule �WebServiceEndpoint $webServer �Port $port �Path $modulePath
+Import-SmaModule "WebServiceEndpoint $webServer "Port $port "Path $modulePath
 ```
 
 ## Enumerating Activities in a Module
@@ -94,7 +94,7 @@ The following sample commands show how to retrieve the activities in a particula
 $webServer = 'https://MyWebServer'
 $port = 9090
 $moduleName = 'MyModule'
-$module = Get-SmaModule �WebServiceEndpoint $webServer �Port $port �Name $moduleName
+$module = Get-SmaModule "WebServiceEndpoint $webServer "Port $port "Name $moduleName
 $module.Activities
 ```
 
@@ -105,7 +105,7 @@ The following sample commands show how to retrieve the activities in all modules
 ```powershell
 $webServer = 'https://MyWebServer'
 $port = 9090
-$modules = Get-SmaModule �WebServiceEndpoint $webServer �Port $port
+$modules = Get-SmaModule "WebServiceEndpoint $webServer "Port $port
 $modules | foreach {$_.Activities} | sort Name,ModuleName | ft Name,ModuleName,Description
 ```
 

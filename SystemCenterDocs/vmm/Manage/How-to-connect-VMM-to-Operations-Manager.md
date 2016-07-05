@@ -55,7 +55,7 @@ Before you connect VMM to Operations Manager, perform the following actions:
 
     3.  Double-click a host in the list, click the **Security** tab, and then ensure that **Allow this agent to act as a proxy and discover managed objects on other computers** has been selected. Repeat this step for each of the hosts.
 
-6.  In Operations Manager, import the necessary management packs, as described in [How to Import an Operations Manager Management Pack](http://technet.microsoft.com/library/hh212691.aspx). You can find management packs, sometimes called �monitoring packs,� by searching the [Microsoft Download Center](http://www.microsoft.com/downloads/default.aspx). The necessary management packs are as follows:
+6.  In Operations Manager, import the necessary management packs, as described in [How to Import an Operations Manager Management Pack](http://technet.microsoft.com/library/hh212691.aspx). You can find management packs, sometimes called "monitoring packs," by searching the [Microsoft Download Center](http://www.microsoft.com/downloads/default.aspx). The necessary management packs are as follows:
 
     -   Windows Server Internet Information Services 2003
 

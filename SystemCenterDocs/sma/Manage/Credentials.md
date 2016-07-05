@@ -38,7 +38,7 @@ The activities in the following table are used to access credentials in a runboo
 |Get-AutomationPSCredential|Gets a username/password to use in a runbook.|
 
 > [!NOTE]
-> You should avoid using variables in the �Name parameter of **Get-AutomationPSCredential** and **Get-AutomationCertificate** since this can complicate discovering dependencies between runbooks and Automation variables.
+> You should avoid using variables in the "Name parameter of **Get-AutomationPSCredential** and **Get-AutomationCertificate** since this can complicate discovering dependencies between runbooks and Automation variables.
 
 ## Creating a new credential
 
@@ -108,7 +108,7 @@ $certName = 'MyCertificate'
 $path = 'c:\certs\MyCertificate.pfx'
 $certPwd = ConvertTo-SecureString -String 'P@$$w0rd' -AsPlainText -Force
 
-Set-SmaCertificate -WebServiceEndpoint $webServer -port $port -Name $certName �Path $certPath �Password $certPwd
+Set-SmaCertificate -WebServiceEndpoint $webServer -port $port -Name $certName "Path $certPath "Password $certPwd
 ```
 
 ## Using a PowerShell Credential in a Runbook

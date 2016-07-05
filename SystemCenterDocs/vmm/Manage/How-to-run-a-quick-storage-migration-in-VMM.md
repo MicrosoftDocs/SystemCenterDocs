@@ -21,11 +21,11 @@ Use the following procedure to run a quick storage migration.
 
 ### To run a quick storage migration
 
-1.  In the VMM console, open the **VM�s and Services** workspace. In the **VM�s and Services** pane, expand **All Hosts**, and then select the host on which the virtual machine is deployed.
+1.  In the VMM console, open the **VM"s and Services** workspace. In the **VM"s and Services** pane, expand **All Hosts**, and then select the host on which the virtual machine is deployed.
 
-2.  In the **VM�s** pane, right-click the virtual machine, and then click **Migrate Storage**.
+2.  In the **VM"s** pane, right-click the virtual machine, and then click **Migrate Storage**.
 
-    The Migrate Storage Wizard opens at the **Select Path** page. It displays the current locations of the virtual machine�s files. The current path to the location of the configuration files is displayed in the **Storage location for VM configuration** box, and the current path to the location of each virtual hard disk (.vhd) is displayed in the **Disks** list.
+    The Migrate Storage Wizard opens at the **Select Path** page. It displays the current locations of the virtual machine"s files. The current path to the location of the configuration files is displayed in the **Storage location for VM configuration** box, and the current path to the location of each virtual hard disk (.vhd) is displayed in the **Disks** list.
 
 3.  On the **Select Path** page, do the following:
 

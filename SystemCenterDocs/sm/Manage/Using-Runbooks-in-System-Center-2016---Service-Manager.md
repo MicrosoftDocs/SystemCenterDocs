@@ -54,7 +54,7 @@ As an example, you can implement a new request offering using an Orchestrator ru
 
 3.  In the **Runbooks** view, select a runbook.
 
-4.  In the **Tasks** pane, under **<RunbookName\>**, click **Create Runbook Automation Activity Template** to open the **Create Template** dialog box.
+4.  In the **Tasks** pane, under *RunbookName*, click **Create Runbook Automation Activity Template** to open the **Create Template** dialog box.
 
 5.  In the **Name** box, type a name for the template.
 
@@ -62,7 +62,7 @@ As an example, you can implement a new request offering using an Orchestrator ru
 
 7.  If necessary, select an unsealed management pack to save the template to, and then click **OK**. You will use this management pack later to retrieve the runbook automation activity template from another work item template, such as a service request template.
 
-8.  In the Runbook Activity Template: <TemplateName\> form, on the **General** tab, type information for **Title**, **Description**, **Area**, **Stage**, **Assigned To**, and **Designer**.
+8.  In the Runbook Activity Template: *TemplateName* form, on the **General** tab, type information for **Title**, **Description**, **Area**, **Stage**, **Assigned To**, and **Designer**.
 
 9. Ensure that **Is Ready for Automation** is selected.
 
@@ -89,4 +89,4 @@ When you view the runbook, you can perform basic actions with the runbook, such 
 
 3.  In the **Runbooks** view, select a runbook.
 
-4.  In the **Tasks** pane under **<RunbookName\>**, click **View Runbooks** to open the runbook in Internet Explorer.
+4.  In the **Tasks** pane under *RunbookName*, click **View Runbooks** to open the runbook in Internet Explorer.

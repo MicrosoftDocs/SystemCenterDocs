@@ -24,7 +24,7 @@ This topic lists the prerequisites for the process of provisioning Hyper-V hosts
 -   [Profile requirements (for the physical computer profile)](Prerequisites--creating-hosts-or-host-clusters-from-bare-metal-with-VMM.md#BKMK_profile)
 
 ## <a name="BKMK_computer"></a>Physical computer and related requirements
-The computers to which you deploy hosts or clusters can be �bare-metal computers� (no operating system installed), or computers with an installed operating system that will be overwritten during the process.
+The computers to which you deploy hosts or clusters can be "bare-metal computers" (no operating system installed), or computers with an installed operating system that will be overwritten during the process.
 
 -   **BMC**: Each physical computer must have a baseboard management controller (BMC) installed and configured for out-of-band management by VMM.
 
