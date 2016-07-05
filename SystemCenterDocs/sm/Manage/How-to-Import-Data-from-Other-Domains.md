@@ -27,14 +27,11 @@ Next, in Service Manager, create a new Active Directory connector in the Active 
 
     -   If the two domains are in the same forest, in the **Server Information** area, select **Let me choose the domain or OU**, and then click **Browse** to select the domain and organizational unit (OU).
 
-    -   If the two domains are in different forests, in the **Server Information** area, select **Let me choose the domain or OU**, and then type the domain and OU in the box. For example, type **LDAP://b.woodgrovetest.net/OU=<OU Name\>,DC=b,DC=woodgrovetest,DC=net**.
+    -   If the two domains are in different forests, in the **Server Information** area, select **Let me choose the domain or OU**, and then type the domain and OU in the box. For example, type **LDAP://b.woodgrovetest.net/OU=*OU Name*,DC=b,DC=woodgrovetest,DC=net**.
 
 2.  In the **Credentials** area, click **New**.
 
 3.  In the **Run As Account** dialog box, in the **User name**, **Password**, and **Domain** boxes, type the credentials for the service account from the b.woodgrovetest.net domain.
 
     > [!NOTE]
-    > If the two domains are in different forests, you must type the domain name in the **User name** box. For example, type **b.woodgrovetest.net\\<user name\>**.
-
-
-
+    > If the two domains are in different forests, you must type the domain name in the **User name** box. For example, type `b.woodgrovetest.net\UserName`.

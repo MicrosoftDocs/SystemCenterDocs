@@ -96,7 +96,7 @@ Windows Server 2012 enhances the existing Windows ACL model to support Dynamic A
 
 -   Allow Read and Write access if User.Project any_of Resource.Project
 
-System Center 2012 Service Pack 1 (SP1) contributes to the fulfilling these scenarios by providing enterprise-wide visibility into the use of the Dynamic Access Control, leveraging Operations Manager’s Audit Collection Services to collect events from the relevant machines (file servers, domain controllers) and providing reporting to enable auditors and compliance officers to report on the use of Dynamic Access Control – for example, audit changes in policies, object access (success and failure), and “what-if” assessment of what would happen if a certain policy were applied.
+System Center 2012 Service Pack 1 (SP1) contributes to the fulfilling these scenarios by providing enterprise-wide visibility into the use of the Dynamic Access Control, leveraging Operations Manager's Audit Collection Services to collect events from the relevant machines (file servers, domain controllers) and providing reporting to enable auditors and compliance officers to report on the use of Dynamic Access Control - for example, audit changes in policies, object access (success and failure), and "what-if" assessment of what would happen if a certain policy were applied.
 
 **Configuration for Dynamic Access Control**
 

@@ -17,7 +17,7 @@ ms.assetid:  490faacf-b798-40ea-bb6e-106e6ad7ebaf
 
 Service Management Automation is a set of tools that is integrated as the Service Management Automation extension in Windows Azure Pack for Windows Server. IT pros and IT developers can use Service Management Automation to construct, run, and manage runbooks to integrate, orchestrate, and automate IT business processes. Service Management Automation runbooks run on the Windows PowerShell workflow engine.
 
-## What�s in Service Management Automation?
+## What"s in Service Management Automation?
 Service Management Automation uses the following three underlying components that are connected to Windows Azure Pack through the Service Management Automation service endpoint:
 
 **Web service**

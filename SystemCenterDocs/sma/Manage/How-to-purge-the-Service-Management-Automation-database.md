@@ -27,7 +27,7 @@ The database purge job is automatic, but it can be regulated by the Service Mana
 
 -   By default, the database purge job runs every 15 minutes, and it runs only if there are records to purge.
 
--   Records are purged only if they are older than the default duration of 30 days. This time is configurable by using the **Set-SmaAdminConfiguration** cmdlet and setting the **�PurgeJobsOlderThanCountDays** parameter.
+-   Records are purged only if they are older than the default duration of 30 days. This time is configurable by using the **Set-SmaAdminConfiguration** cmdlet and setting the **"PurgeJobsOlderThanCountDays** parameter.
 
 -   If the total job record count exceeds the **MaxJobRecords** parameter set by the same **Set-SmaAdminConfiguration** cmdlet, then more job records will be purged. The default value for this parameter is 120,000 records.
 

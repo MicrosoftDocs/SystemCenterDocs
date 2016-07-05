@@ -21,7 +21,7 @@ Before you can use Virtual Machine Manager (VMM) to manage a virtual machine wit
 
 1.  On the VMM management server, open a command prompt session, with administrative rights.
 
-2.  Go to the �c:\Program Files\Microsoft System Center 2012\Virtual Machine Manager\agents\Linux� folder.
+2.  Go to the "c:\Program Files\Microsoft System Center 2012\Virtual Machine Manager\agents\Linux" folder.
 
 3.  Copy all the agent installation files from that folder to a new folder on the virtual machine, and then, on the virtual machine on which Linux is running as a guest operating system, open the new folder.
 

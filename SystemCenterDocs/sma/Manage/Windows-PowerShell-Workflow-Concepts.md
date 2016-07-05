@@ -160,7 +160,7 @@ $cred = New-Object -TypeName System.Management.Automation.PSCredential -Argument
 InlineScript
 {
   <Commands>
-} �PSComputer $con.ComputerName �PSCredential $cred
+} "PSComputer $con.ComputerName "PSCredential $cred
 ```
 
 While **InlineScript** activities may be critical in certain runbooks, they should only be used when necessary for the following reasons:
@@ -175,13 +175,13 @@ If you do need to use an **InlineScript**, you should minimize its scope. For ex
 
 -   You can [checkpoint](#BK_Checkpoints) the workflow after each iteration. If the job is suspended or interrupted and resumed, the loop will be able to resume.
 
--   You can use **ForEach �Parallel** to handle collection items concurrently.
+-   You can use **ForEach "Parallel** to handle collection items concurrently.
 
 Keep the following recommendations in mind if you do use an **InlineScript** in your runbook:
 
 -   You can pass values into the script though with the **$Using** scope modifier. For example, a variable called $abc that has been set outside of the InlineScript would become $using:abc inside an **InlineScript**.
 
--   To return output from an **InlineScript**, assign the output to a variable and output any data to be returned to the output stream. The following example assigns the string �hi� to a variable called $output.
+-   To return output from an **InlineScript**, assign the output to a variable and output any data to be returned to the output stream. The following example assigns the string "hi" to a variable called $output.
 
     ```
     $output = InlineScript { Write-Output "hi" }

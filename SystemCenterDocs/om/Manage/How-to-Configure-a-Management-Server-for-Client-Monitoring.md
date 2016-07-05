@@ -15,6 +15,8 @@ ms.assetid:  78b3896d-2333-4900-82e1-202b834d0f77
 
 # How to Configure a Management Server for Client Monitoring
 
+>Applies To: System Center 2016 Technical Preview - Operations Manager
+
 Use the following procedures to configure a management server for the server component of the Client Monitoring feature of System Center Operations Manager.
 
 > [!IMPORTANT]

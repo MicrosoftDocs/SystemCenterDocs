@@ -25,7 +25,7 @@ End users often create service requests in System Center 2016 Technical Preview 
 
 3.  Under **Templates** in the **Select Template** dialog box, select a template, and then click **OK** to open a new service request and apply the template. For example, select **Request Membership to Group**.
 
-4.  In the **<SR<ID>: ServiceRequestName>** form in the **Affected user** box, select the user who submitted the service request. For example, select **Joe Andreshak**.
+4.  In the **SR ID: ServiceRequestName** form in the **Affected user** box, select the user who submitted the service request. For example, select **Joe Andreshak**.
 
 5.  Optionally, in the **Alternate Contact Method** box, enter additional contact information for the affected user.
 

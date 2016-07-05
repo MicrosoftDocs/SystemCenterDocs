@@ -27,7 +27,7 @@ You can use the following procedures to delete a service offering or a request o
 
 3.  In the **All Service Offerings** list, select the service offering that you want to delete.
 
-4.  In the **Tasks** list under **<ServiceOfferingName\>**, click **Delete**.
+4.  In the **Tasks** list under *ServiceOfferingName*, click **Delete**.
 
 5.  In the **Delete Item** dialog box, click **Yes**.
 
@@ -39,9 +39,6 @@ You can use the following procedures to delete a service offering or a request o
 
 3.  In the **All Request Offerings** list, select the request offering that you want to delete.
 
-4.  In the **Tasks** list under **<RequestOfferingName\>**, click **Delete**.
+4.  In the **Tasks** list under *RequestOfferingName*, click **Delete**.
 
 5.  In the **Delete Item** dialog box, click **Yes**.
-
-
-

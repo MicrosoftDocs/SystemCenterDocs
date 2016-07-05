@@ -62,7 +62,7 @@ $port = 9090
 $scheduleName = 'My Daily Schedule'
 $startTime = (Get-Date).Date.AddHours(12)
 $expiryTime = $startTime.AddYears(1)
-Set-SmaSchedule �WebServiceEndpoint $web �Port $port �Name $scheduleName �ScheduleType OneTimeSchedule �StartTime $startTime �ExpiryTime $expiryTime �DayInterval 1
+Set-SmaSchedule "WebServiceEndpoint $web "Port $port "Name $scheduleName "ScheduleType OneTimeSchedule "StartTime $startTime "ExpiryTime $expiryTime "DayInterval 1
 ```
 
 ## See Also

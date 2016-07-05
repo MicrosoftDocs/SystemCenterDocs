@@ -98,7 +98,7 @@ The **UNIX/Linux Agent Upgrade Wizard** and the **UNIX/Linux Agent Uninstall Wiz
 
 -   **Specify credentials**
 
-    Select this option to specify Secure Shell (SSH) credentials by using a user name and password or a user name and a key. You can optionally provide a passphrase with a key. If the credentials are not for a privileged account, you can have them elevated to a privileged account on the target computered by using the UNIX su or sudo elevation programs. The ‘su’ elevation requires a password. If you use sudo elevation, you are prompted for a user name and password for agent verification by using an unprivileged account.
+    Select this option to specify Secure Shell (SSH) credentials by using a user name and password or a user name and a key. You can optionally provide a passphrase with a key. If the credentials are not for a privileged account, you can have them elevated to a privileged account on the target computered by using the UNIX su or sudo elevation programs. The 'su' elevation requires a password. If you use sudo elevation, you are prompted for a user name and password for agent verification by using an unprivileged account.
 
 
 

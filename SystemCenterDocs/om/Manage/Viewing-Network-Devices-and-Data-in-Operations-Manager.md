@@ -127,7 +127,7 @@ An interface is a physical entity with which network connections are made, such 
 6.  In the **Health of Interfaces on this Node** section, click an interface, and then in the **Tasks** pane, select **Network Interface Dashboard**.
 
 ## <a name="bkmk_networkvicinitydashboard"></a>Network Vicinity Dashboard
-Use the Network Vicinity Dashboard to view a diagram of a node and all nodes and agent computers that are connected to that node. The Network Vicinity Dashboard view displays one “hop”, or level of connection. However, you can configure the view to display up to five levels of connection. The diagram displays the health of the nodes and the health of the connections between nodes.
+Use the Network Vicinity Dashboard to view a diagram of a node and all nodes and agent computers that are connected to that node. The Network Vicinity Dashboard view displays one "hop", or level of connection. However, you can configure the view to display up to five levels of connection. The diagram displays the health of the nodes and the health of the connections between nodes.
 
 The vicinity view shows the relation between network devices and the Windows computers and other network devices that are connected to them. This logic is performed by relating the network adapter on the agent computer with the network device that it is connected to. Because of this, the network adapter must be discovered before this association can occur. You can view the discovered network adapters by either creating a new view or using the **Discovered Inventory** view to list instances of the **Computer Network Adapter** class.
 
@@ -135,7 +135,7 @@ The vicinity view shows the relation between network devices and the Windows com
 > Because devices that use OSI layer 1, such as hubs, do not have MAC addresses, layer 1 devices will not be connected to computers in the Network Vicinity Dashboard. The vicinity view will only show connections between layer 1 devices and layer 2 or 3 devices.
 
 > [!NOTE]
-> Network adapters using NIC teaming will not be identified as “teamed” in the Network Vicinity Dashboard.
+> Network adapters using NIC teaming will not be identified as "teamed" in the Network Vicinity Dashboard.
 
 > [!NOTE]
 > Virtual machines are associated with the same network device as their host. This version of Operations Manager does not show a relationship between the two computers.

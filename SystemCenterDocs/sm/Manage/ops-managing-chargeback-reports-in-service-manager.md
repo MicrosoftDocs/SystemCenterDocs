@@ -57,6 +57,6 @@ You can use the following procedure to configure the sample Microsoft Excel char
 
 2.  Open the ChargebackReport.xlsx file, click the **Data** tab, and then click **Connections**.
 
-3.  In the **Workbook Connections** dialog box, for each connection, view its **Properties** and replace <LocalHost> with the server name of your Service Manager data warehouse management server. If your data warehouse analysis database name is not DWASDataBase, then replace the database name with the one that you use.
+3.  In the **Workbook Connections** dialog box, for each connection, view its **Properties** and replace *LocalHost* with the server name of your Service Manager data warehouse management server. If your data warehouse analysis database name is not DWASDataBase, then replace the database name with the one that you use.
 
 4.  Optionally, you can save the workbook to a shared folder or other shared location, such as the analysis library.

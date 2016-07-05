@@ -122,7 +122,7 @@ Manually-installed agents are agents that were installed manually, either by usi
 
     -   HP-UX: `swinstall -s <full path to depot> <package name>`
 
-    -   Aix: `/usr/sbin/install –X –F –d <package file> scx.rte/`
+    -   Aix: `/usr/sbin/install -X -F -d <package file> scx.rte/`
 
     -   Solaris:
 

@@ -75,11 +75,11 @@ Use the following procedures to configure your Microsoft Exchange Server infrast
 
     4.  Click **OK**, and then click **OK** again to close the **Advanced Delivery** window.
 
-10. Close IIS Manager, open Windows Explorer, and navigate to <SystemDrive\>:\Inetpub\Mailroot.
+10. Close IIS Manager, open Windows Explorer, and navigate to *SystemDrive*:\Inetpub\Mailroot.
 
 11. Create two child folders. Name the first folder **Badmail**, and name the second folder **Drop**.
 
-12. Right-click the <SystemDrive\>:\Inetpub\Mailroot folder, and then click **Share**.
+12. Right-click the *SystemDrive*:\Inetpub\Mailroot folder, and then click **Share**.
 
 13. For sharing permissions, select the domain user that you specified for the Service Manager account, click **Contributor**, click **Share**, and then click **Done**.
 
@@ -95,9 +95,9 @@ Use the following procedures to configure your Microsoft Exchange Server infrast
 
 4.  Scroll to **Incoming E-mail**.
 
-5.  In **The SMTP Service drop folder location**, type the path, share, and folder for the Drop folder. In this example, type **\\\\<computer_name>\mailroot\Drop**, where **<computer_name>** is the name of the computer that is hosting the SMTP Server service, **Mailroot** is the share name, and **Drop** is the subfolder name.
+5.  In **The SMTP Service drop folder location**, type the path, share, and folder for the Drop folder. In this example, type *computer_name\mailroot\Drop*, where *computer_name* is the name of the computer that is hosting the SMTP Server service, **Mailroot** is the share name, and **Drop** is the subfolder name.
 
-6.  In **SMTP Service bad folder location**, type the path, share, and folder to the Badmail folder. In this example, type **\\\\<computer_name>\Mailroot\Badmail** where **<computer_name>** is the name of the computer that is hosting the SMTP Server service, **Mailroot** is the share name, and **Badmail** is the subfolder name.
+6.  In **SMTP Service bad folder location**, type the path, share, and folder to the Badmail folder. In this example, type *computer_name\Mailroot\Badmail** where *computer_name* is the name of the computer that is hosting the SMTP Server service, **Mailroot** is the share name, and **Badmail** is the subfolder name.
 
 7.  In **Maximum number of e-mails to process at a time**, type a number for the emails that you want Service Manager to process during an email processing cycle.
 
@@ -229,12 +229,9 @@ In the following procedures, you configure Exchange Server for use with Service 
 
 7.  Copy the file to a location where you can use it in the future for testing.
 
-8.  Copy the file into the <SystemDrive\>:\inetpub\mailroot\Pickup folder.
+8.  Copy the file into the *SystemDrive*:\inetpub\mailroot\Pickup folder.
 
     > [!NOTE]
     > The file should be removed automatically. This indicates that the Exchange server is using it.
 
 9. Using the user credentials for the **To** recipient that you typed previously, open Outlook and confirm that the email was received.
-
-
-

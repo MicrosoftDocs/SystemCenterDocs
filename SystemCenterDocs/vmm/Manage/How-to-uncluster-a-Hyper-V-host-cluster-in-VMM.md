@@ -34,7 +34,7 @@ You can use the following procedures to uncluster or remove a host cluster that 
     When the job is completed, the hosts appear as stand-alone hosts in the **Fabric** workspace.
 
     > [!NOTE]
-    > As part of the job, VMM unregisters the shared storage that is managed through VMM from the cluster nodes. If the cluster had shared storage assigned that was not managed by VMM, we recommend that you unregister the shared storage by using your storage array vendor�s management tools.
+    > As part of the job, VMM unregisters the shared storage that is managed through VMM from the cluster nodes. If the cluster had shared storage assigned that was not managed by VMM, we recommend that you unregister the shared storage by using your storage array vendor"s management tools.
 
 ## See Also
 [Modifying Hyper-V host clusters in VMM](Modifying-Hyper-V-host-clusters-in-VMM.md)

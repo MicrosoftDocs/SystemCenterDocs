@@ -93,7 +93,7 @@ Generally, you should construct service maps that are 3-5 levels deep. Component
 
 2.  In the **Configuration Items** pane, expand **Configuration Items**, expand **Business Services**, and then click **All Business Services**.
 
-3.  Select the **<DistributedApplicationName\>**. In the **Tasks** pane, under **<DistributedApplicationName\>**, click **Edit**.
+3.  Select the **DistributedApplicationName**. In the **Tasks** pane, under **DistributedApplicationName**, click **Edit**.
 
 4.  In the form that appears, click the **Service Dependents** tab. Services that use the new service are listed. For example, **IT Messaging Service** appears in the list.
 

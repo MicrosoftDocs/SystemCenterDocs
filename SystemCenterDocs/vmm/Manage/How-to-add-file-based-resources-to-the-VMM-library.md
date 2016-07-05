@@ -20,7 +20,7 @@ You can use the following procedure to add file-based resources (such as virtual
 > [!NOTE]
 > One hour is the smallest value that you can configure for the library refresh interval. To change the library refresh interval, open the **Library** workspace, and then on the **Home** tab, click **Library Settings**.
 
-For information about the types of file-based resources that the VMM library automatically indexes and adds as physical resources, see the table under the �File-based resources� bullet in [Configuring the VMM library](Configuring-the-VMM-library.md).
+For information about the types of file-based resources that the VMM library automatically indexes and adds as physical resources, see the table under the "File-based resources" bullet in [Configuring the VMM library](Configuring-the-VMM-library.md).
 
 
 **Account requirements** To add resources to a library share outside VMM or by using the **Explore** option in the Library workspace, a user must have appropriate share and file system permissions assigned outside VMM. This applies to administrators, delegated administrators and to self-service users (for private cloud library shares). 

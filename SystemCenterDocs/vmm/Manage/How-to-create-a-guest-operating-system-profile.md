@@ -57,7 +57,7 @@ You can use the following procedure to create a guest operating system profile i
 
     -   **RunOnce commands**
 
-        This setting applies only to Linux-based profiles. These commands run in the specified order during deployment after the operating system has been configured. If shell conventions such as pipes are used, we recommend wrapping each command with an explicit invocation of the shell, for example, `/bin/sh �c �<your command>�`. In this example, double quotes in the command must be escaped.
+        This setting applies only to Linux-based profiles. These commands run in the specified order during deployment after the operating system has been configured. If shell conventions such as pipes are used, we recommend wrapping each command with an explicit invocation of the shell, for example, `/bin/sh "c "<your command>"`. In this example, double quotes in the command must be escaped.
 
     -   **Public SSH key**
 

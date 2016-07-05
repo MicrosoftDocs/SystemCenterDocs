@@ -68,7 +68,7 @@ $webServer = 'https://MyWebServer'
 $port = 9090
 $connectionName = 'MyConnection'
 $fieldValues = @{"Username"="MyUser";"Password"="password";"ComputerName"="MyComputer"} 
-New-SmaConnection �WebServiceEndpoint $webServer �port $port �Name $connectionName �ConnectionTypeName "VirtualMachineManager" �ConnectionFieldValues $fieldValues
+New-SmaConnection "WebServiceEndpoint $webServer "port $port "Name $connectionName "ConnectionTypeName "VirtualMachineManager" "ConnectionFieldValues $fieldValues
 ```
 
 ## Using a connection in a runbook

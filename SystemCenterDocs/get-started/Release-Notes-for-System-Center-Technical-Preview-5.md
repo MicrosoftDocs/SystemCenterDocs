@@ -1,13 +1,16 @@
 ---
-title: Release Notes for System Center Technical Preview 5
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: get-started-article
-ms.assetid: 5fad5608-4cb7-48b0-aa31-35ca5cc2d560
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  cfreemanwa
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-07-01
+title:  Release Notes for System Center Technical Preview 5
+ms.technology:  system-center-2016
+ms.assetid:  5fad5608-4cb7-48b0-aa31-35ca5cc2d560
 ---
+
 # Release Notes for System Center Technical Preview 5
 
 >Applies To: System Center Technical Preview
@@ -78,7 +81,7 @@ ms.assetid: 5fad5608-4cb7-48b0-aa31-35ca5cc2d560
 **Workaround:** It is possible to use PowerShell to edit the recovery point volume size. Use the following command to edit the size:
 
 ```
-Edit-DPMDiskAllocation –Datasource <Datasource object> -ShadowCopySize <new size>
+Edit-DPMDiskAllocation -Datasource <Datasource object> -ShadowCopySize <new size>
 ```
 
 
@@ -148,8 +151,8 @@ System Center Operations Manager management server is not affected.
 5. Select the certificate with Digest Algorithm as sha256 and click on Details.
 6. In the Digital Signature Details dialog box, Click on View Certificate.
 7. In the dialog box which appears next, click on Install Certificate. 
-8. In the Certificate Import Wizard, Set store location as – Local Machine. Click Next.
-9. Select the option - “Place all certificates in the following store” Browse to Trusted Publishers. 
+8. In the Certificate Import Wizard, Set store location as - Local Machine. Click Next.
+9. Select the option - "Place all certificates in the following store" Browse to Trusted Publishers. 
 10. Click Next and then Finish.
 11. Refresh the Browser
 ## System Center 2016 Technical Preview - Orchestrator and Service Management Automation Release Notes
@@ -299,7 +302,7 @@ If you used the default instance of SQL Server, use Windows Explorer to drag Mic
 **Workaround:** Remove the Service Manager Authoring Tool, and then retry Setup.
 
 ### Setup Does Not Install the Report Viewer Language Pack
-**Description:** Setup includes a prerequisite checker that checks for and—if necessary, installs—the Microsoft Report Viewer. However, Setup does not install the Report Viewer Language Pack, which makes the Microsoft Report Viewer compatible with Windows operating systems that are configured to use languages other than English.
+**Description:** Setup includes a prerequisite checker that checks for and - if necessary, installs - the Microsoft Report Viewer. However, Setup does not install the Report Viewer Language Pack, which makes the Microsoft Report Viewer compatible with Windows operating systems that are configured to use languages other than English.
 
 **Workaround:** If your system is configured to use a language other than English, you should manually install the Report Viewer Language Pack for that language.
 
@@ -395,7 +398,7 @@ If you used the default instance of SQL Server, use Windows Explorer to drag Mic
 ### Service Manager AD group expansion feature of the Active Directory connector works best with SQL Server 2012 Cardinality Estimation
 **Description:**If you use the AD Group expansion capability of the Active Directory Connector, you may experience slow performance if your SQL Server database is SQL Server 2014.
 
-**Workaround:** Switch the Cardinality Estimator (CE) for the SQL Server to use the SQL Server 2012 version. See the following article for more information on changing the Cardinality Estimator: [New functionality in SQL Server 2014 – Part 2 – New Cardinality Estimation](http://blogs.msdn.com/b/saponsqlserver/archive/2014/01/16/new-functionality-in-sql-server-2014-part-2-new-cardinality-estimation.aspx).
+**Workaround:** Switch the Cardinality Estimator (CE) for the SQL Server to use the SQL Server 2012 version. See the following article for more information on changing the Cardinality Estimator: [New functionality in SQL Server 2014 - Part 2 - New Cardinality Estimation](http://blogs.msdn.com/b/saponsqlserver/archive/2014/01/16/new-functionality-in-sql-server-2014-part-2-new-cardinality-estimation.aspx).
 
 ## System Center 2016 Technical Preview - Virtual Machine Manager Release Notes
 ### The following release notes apply to System Center 2016 Technical Preview - Virtual Machine Manager.
@@ -450,7 +453,7 @@ netsh advfirewall firewall add rule name="VMM" dir=in action=allow localport=<po
 
 **Description:** Bare metal deployment of Nano Server-based hosts, compute & storage clusters using VMM will fail.
 
-**Workaround:** Install Nano Server on bare computers out of band and add it to VMM’s management
+**Workaround:** Install Nano Server on bare computers out of band and add it to VMM's management
 
 ### WinRM error blocks setting the static IP on the backend NIC of the SLB MUX VM
 
@@ -460,13 +463,13 @@ netsh advfirewall firewall add rule name="VMM" dir=in action=allow localport=<po
 
 ### Teamed Software Defined Network Switch deployment fails on Nano hosts
 
-**Description:** You can’t deploy a teamed switch on Nano hosts using VMM 2016 TP5.
+**Description:** You can't deploy a teamed switch on Nano hosts using VMM 2016 TP5.
 
 **Workaround:** Deploy an SDN switch on any single physical NIC adaptor of the host.
 
 ### Inconsistent Network Address Translation user interface 
 
-**Description:** The existing NAT connections will not be visible when you close the network connectivity wizard and reopen it. Additionally, UI doesn’t allow you to choose the IP Address from the pool for creating NAT connection.
+**Description:** The existing NAT connections will not be visible when you close the network connectivity wizard and reopen it. Additionally, UI doesn't allow you to choose the IP Address from the pool for creating NAT connection.
 
 **Workaround:** User can still add the NAT connections through UI. To see the existing NAT connections, user can leverage Powershell cmdlets
 Get-SCNATConnection 
@@ -483,9 +486,9 @@ Get-SCNATConnection
 
 **Workaround:** Use IPV4 configuration with VMM 2016 TP5. 
 
-### User needs to disable “Register this connection’s address in DNS” option for Frontend and Backend IPs Software Load Balancer MUX VMs
+### User needs to disable "Register this connection's address in DNS" option for Frontend and Backend IPs Software Load Balancer MUX VMs
 
-**Description:** For Front End and Back End IPs assigned to Software Load Balancer MUX Virtual Machines you need to uncheck the option for ‘Register this connection’s address in DNS’. Having this option checked may cause issues with the connectivity over these IP addresses. 
+**Description:** For Front End and Back End IPs assigned to Software Load Balancer MUX Virtual Machines you need to uncheck the option for 'Register this connection's address in DNS'. Having this option checked may cause issues with the connectivity over these IP addresses. 
 
 **Workaround:** No workaround
 
