@@ -48,7 +48,7 @@ The following topics provide information on creating and working with Automation
 
 -   [Editing a Runbook](Editing-a-Runbook.md)
 
-    Details on how to edit a runbook once it�s created.
+    Details on how to edit a runbook once it"s created.
 
 -   [Publishing a Runbook](Publishing-a-Runbook.md)
 

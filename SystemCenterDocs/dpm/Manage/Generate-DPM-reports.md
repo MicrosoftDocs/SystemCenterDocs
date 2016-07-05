@@ -5,7 +5,7 @@ ms.topic:  article
 author:  markgalioto
 ms.prod:  system-center-threshold
 keywords:  
-ms.date:  2016-06-27
+ms.date:  2016-06-30
 title:  Generate DPM reports
 ms.technology:  data-protection-manager
 ms.assetid:  f9a97135-1c5b-45a9-b307-bb957fde21d8
@@ -20,7 +20,7 @@ DPM uses SQL Server Reporting Services to create reports. In the **Reporting** t
 ## DPM reports
 DPM provides a number of different reports:
 
--   **Status report**: Povides the status of all recovery points for a specified time period. It lists recovery jobs, and shows the total number of successes and failures for recovery points and recovery point creation. You can use this report to track and verify recovery point metrics.
+-   **Status report**: Provides the status of all recovery points for a specified time period. It lists recovery jobs, and shows the total number of successes and failures for recovery points and recovery point creation. You can use this report to track and verify recovery point metrics.
 
 -   **Protection report**:  Provides commonly used metrics for backup success rolled up over long periods of time. Use this report to track how backups are doing and what's been backed up successfully.
 
@@ -30,12 +30,12 @@ DPM provides a number of different reports:
     Use this report to do the following:
     Identify trends in disk usage and make decisions about modifying space allocations.
 
--   **Tape management and tape utilization report**: Use the tape management report to track information about tape rotation and decommissioning, and to verify that the free media threshold hasn't been exceeded. IUse the tape utilization report to track trending of resource (disk/tape) usage over time to assist capacity planning.
+-   **Tape management and tape utilization report**: Use the tape management report to track information about tape rotation and decommissioning, and to verify that the free media threshold hasn't been exceeded. Use the tape utilization report to track trending of resource (disk/tape) usage over time to assist capacity planning.
 
 ### Predefined SQL reports
-DPM includes several SQL Server views to help you create custom reports. SQL views provide a simpler method that querying tables directly, by populating columns with data collected from multiple tables in the database. You don’t need -depth knowledge of the entire database or the relationship between tables and keys.
+DPM includes several SQL Server views to help you create custom reports. SQL views provide a simpler method that querying tables directly, by populating columns with data collected from multiple tables in the database. You don't need in-depth knowledge of the entire database or the relationship between tables and keys.
 
-Note though that SQL views can degrade performance if used too frequently because the view runs each time it’s queries. In addition the supported views might not include all the columns you need.
+Note though that SQL views can degrade performance if used too frequently because the view runs each time it's queries. In addition the supported views might not include all the columns you need.
 
 The following table summarizes the predefined SQL views.
 
@@ -160,7 +160,7 @@ The following table summarizes the predefined SQL views.
 ### Set up reports
 
 #### Schedule reports
-Reports aren’t scheduled by default in DPM. To start creating and saving historical reports you create a report schedule. Each report type has an independent schedule A report only has a single schedule. Schedule a report as follows:
+Reports aren't scheduled by default in DPM. To start creating and saving historical reports you create a report schedule. Each report type has an independent schedule A report only has a single schedule. Schedule a report as follows:
 
 1.  In DPM Administrator Console, go to the **Reporting** view. On the display pane, select the report and click **Schedule**.
 
@@ -173,24 +173,24 @@ In the DPM Administrator Console you can display both new and historical reports
 
 1.  You can request a new report with the following settings:
 
-    -   Display—You can view a report groups by protected computer or protection group.
+    -   Display - You can view a report groups by protected computer or protection group.
 
     -   You can specify or exclude a specific time period. You can set report granularity as follows:
 
-        -   Week— Seven days—from Sunday through Saturday
+        -   Week - Seven days - from Sunday through Saturday
 
-        -   Month— A full month from the first to the last day of the month
+        -   Month - A full month from the first to the last day of the month
 
-        -   Quarterly—For three months starting from January (e.g January through March.
+        -   Quarterly - For three months starting from January (e.g January through March.
 
-        -   Annual— January 1 to December 31 of a particular year.
+        -   Annual - January 1 to December 31 of a particular year.
 
 2.  You can view an available report from the **Available reports** list. When the number of historical reports saved equals the maximum number specified in the report schedule, the next report that is saved will replace the oldest copy of the report, so you can retain the maximum number of copies at all times.
 
 ### Print reports
-Reports in DPM have been designed to print on A4 paper without horizontally splitting the information across pages. The MHTML and PDF formats are not editable, so you can’t modify the report to fit other paper sizes.
+Reports in DPM have been designed to print on A4 paper without horizontally splitting the information across pages. The MHTML and PDF formats are not editable, so you can't modify the report to fit other paper sizes.
 
-Note that if you experience any issues with reports on fitting on A4 paper try changing the dimensions of the report page width 8.27in and the height to 11.69in. There are details of how to do that on Bob Cornelissen’s [BICTT blog](http://www.bictt.com/blogs/bictt.php/2009/03/17/sql-reporting-services-render-pdf-in-a4-1).
+Note that if you experience any issues with reports on fitting on A4 paper try changing the dimensions of the report page width 8.27in and the height to 11.69in. There are details of how to do that on Bob Cornelissen's [BICTT blog](http://www.bictt.com/blogs/bictt.php/2009/03/17/sql-reporting-services-render-pdf-in-a4-1).
 
 ##### Print MHTML reports
 
@@ -220,7 +220,7 @@ Note that if you experience any issues with reports on fitting on A4 paper try c
 
 5.  In **Scale to Fit** set  **Scale** to 80%.
 
-6.  In **Sheet Options** clear **Print** if it’s selected. Then print the report.
+6.  In **Sheet Options** clear **Print** if it's selected. Then print the report.
 
 ### Send reports
 You can send reports to subscribers via email. Reports are sent as file attachments. To subscribe to reports do the following:
@@ -232,7 +232,7 @@ You can send reports to subscribers via email. Reports are sent as file attachme
 3.  On the **E-mail** tab, in **Recipients** type the e-mail addresses of all the subscribers. Only add email addresses that are relevant on the designed server, and separate addresses with a comma. Then select the format.
 
 ## Generate DPM reports in Operations Manager
-Operations Manager provides an Operations console and a web console that you can use to view and work with the monitoring data for your environment. To retrieve information you can use predefined views, or search for data and objects using searching and filtering. For more information, see [Getting Information from Operations Manager](https://technet.microsoft.com/en-us/library/hh212876.aspx). 
+Operations Manager provides an Operations console and a web console that you can use to view and work with the monitoring data for your environment. To retrieve information you can use predefined views, or search for data and objects using searching and filtering. For more information, see [Getting Information from Operations Manager](https://technet.microsoft.com/en-us/library/hh212876.aspx).
 DPM provides a number of predefined views that you can use to search more simply than defining your own query or filter.
 
 DPM provides a number of predefined views that you can use to search more simply than defining your own query or filter.
@@ -288,7 +288,7 @@ DPM provides a number of predefined views that you can use to search more simply
 |DiskManagementRowID|uniqueidentifier|Index key|
 |DPMServerName|varchar(max)|DPM server|
 |DiskID|uniqueidentifier|Unique ID to identify disk|
-|DiskName|varchar(max)|Name of disk returned by VDS APIs (for example “Microsoft Virtual Disk”|
+|DiskName|varchar(max)|Name of disk returned by VDS APIs (for example "Microsoft Virtual Disk"|
 |TotalSize|bigint|Total size of disk|
 |FreeSize|bigint|Free size on disk|
 |IsInStoragePool|bit|Indicates whether the disk belongs to the DPM storage pool|
@@ -333,9 +333,9 @@ DPM provides a number of predefined views that you can use to search more simply
 |ProtectionGroupID|uniqueidentifier|The ID of the protection group to which the data source belongs|
 |ProtectionGroupName|varchar(max)|The protection group to which the data source belongs|
 |CreationTime|datetime|Time that the statistic was created|
-|DiskRecoveryPointAvailable|bit|Indicates whether there’s a disk recovery point available in the SLA period|
-|TapeRecoveryPointAvailable|bit|Indicates whether there’s a tape recovery point available in the SLA period|
-|CloudRecoveryPointAvailable|bit|Indicates whether there’s a cloud recovery point available in the SLA period|
+|DiskRecoveryPointAvailable|bit|Indicates whether there's a disk recovery point available in the SLA period|
+|TapeRecoveryPointAvailable|bit|Indicates whether there's a tape recovery point available in the SLA period|
+|CloudRecoveryPointAvailable|bit|Indicates whether there's a cloud recovery point available in the SLA period|
 |SLA|int|Indicates the SLA for the protection group during this SLA period|
 
 **View Name:** vDPMTapeUtilization (Shows DPM Tape Utilization):
@@ -364,6 +364,3 @@ DPM provides a number of predefined views that you can use to search more simply
 |LibraryName|varchar(max)|Name of the library|
 |ProtectedGroupName|varchar(max)|Name of the protection group that owns the tape|
 |MediaExpiryDate|datetime|Expiry date of the tape|
-
-
-

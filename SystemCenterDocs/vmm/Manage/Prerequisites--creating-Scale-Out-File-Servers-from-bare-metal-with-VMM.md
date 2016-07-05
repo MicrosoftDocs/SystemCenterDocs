@@ -24,7 +24,7 @@ This topic lists the prerequisites for the process of provisioning Scale-Out Fil
 -   [Profile requirements (for the physical computer profile)](#BKMK_profile)
 
 ## <a name="BKMK_computer"></a>Physical computer and related requirements
-The computers to which you deploy Scale-Out File Servers can be �bare-metal computers� (no operating system installed), or computers with an installed operating system that will be overwritten during the process.
+The computers to which you deploy Scale-Out File Servers can be "bare-metal computers" (no operating system installed), or computers with an installed operating system that will be overwritten during the process.
 
 -   **BMC**: Each physical computer must have a baseboard management controller (BMC) installed and configured for out-of-band management by VMM.
 

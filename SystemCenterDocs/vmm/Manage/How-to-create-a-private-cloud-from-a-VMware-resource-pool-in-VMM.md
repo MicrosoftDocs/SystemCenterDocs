@@ -22,7 +22,7 @@ You can use this procedure to create a private cloud from a VMware resource pool
 ## Prerequisites
 Before you create a private cloud from a VMware resource pool, make sure that the following prerequisites are met:
 
--   Configure the fabric by using the procedures in [Managing fabric resources with VMM](Managing-fabric-resources-with-VMM.md). The fabric resource examples in this procedure use examples from the �Preparing the Fabric in VMM� section.
+-   Configure the fabric by using the procedures in [Managing fabric resources with VMM](Managing-fabric-resources-with-VMM.md). The fabric resource examples in this procedure use examples from the "Preparing the Fabric in VMM" section.
 
     > [!NOTE]
     > You cannot discover and manage storage for VMware ESX hosts through VMM.

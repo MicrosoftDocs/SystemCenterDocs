@@ -66,7 +66,7 @@ The administrator cmdlet module is automatically pre-imported in this session.
 1.  Open a Service Manager Windows PowerShell session.
 
 2.  You can now access the on-the-box Help, or you can use the `-online` parameter to access the most up-to-date online Help:
-    -   On-the-box Help: Type the following command. Replace <*cmdlet-name*> with the name of the cmdlet that you want to get help for, for example, **Import-SCSMManagementPack**:
+    -   On-the-box Help: Type the following command. Replace *cmdlet-name* with the name of the cmdlet that you want to get help for, for example, **Import-SCSMManagementPack**:
 
         ```
         Get-help <cmdlet-name> -detailed
@@ -78,4 +78,4 @@ The administrator cmdlet module is automatically pre-imported in this session.
         Get-help <cmdlet-name> -online
         ```
 
-        This command uses the `-online` parameter to access the latest online Help for a cmdlet. It opens a web browser and displays the online Help that is available for <*cmdlet-name*>.
+        This command uses the `-online` parameter to access the latest online Help for a cmdlet. It opens a web browser and displays the online Help that is available for *cmdlet-name*.

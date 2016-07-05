@@ -5,7 +5,7 @@ ms.topic:  article
 author:  markgalioto
 ms.prod:  system-center-threshold
 keywords:  
-ms.date:  2016-06-27
+ms.date:  2016-06-30
 title:  Prepare to back up a generic data source
 ms.technology:  data-protection-manager
 ms.assetid:  8ad00a50-108a-4212-ad43-c12a8f8f5587
@@ -32,7 +32,7 @@ Here's what you can do:
 -   Back up to tape
 
 ## <a name="GenericDataSource"></a>Registering a new data source
-You’ll need to run the Modify-RegisteredWriters command to add, remove or modify the VSS writer ID for a data source to the list that’s registered with DPM.
+You'll need to run the Modify-RegisteredWriters command to add, remove or modify the VSS writer ID for a data source to the list that's registered with DPM.
 
 **Syntax**
 
@@ -64,6 +64,3 @@ The Modify-RegisteredWriters command adds the two new writer IDs to the list of 
 The Modify-RegisteredWriters command removes the specified writer ID from the list of registered writers on DPM server dpm1.contoso.com.
 
 `Modify-RegisteredWriters -DpmServerName dpm1.contoso.com -Remove -Writers 46eef637-28ca-4223-8bb6-2e87bd945179`
-
-
-

@@ -1,13 +1,16 @@
 ---
-title: System Requirements for System Center Technical Preview
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: get-started-article
-ms.assetid: 38a4c1f7-e088-4ab9-b250-674dde7387fc
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  cfreemanwa
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-07-01
+title:  System Requirements for System Center Technical Preview
+ms.technology:  system-center-2016
+ms.assetid:  38a4c1f7-e088-4ab9-b250-674dde7387fc
 ---
+
 # System Requirements for System Center Technical Preview
 
 >Applies To: System Center Technical Preview

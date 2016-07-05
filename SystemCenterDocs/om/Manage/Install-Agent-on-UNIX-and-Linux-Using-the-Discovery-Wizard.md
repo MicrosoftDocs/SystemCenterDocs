@@ -50,7 +50,7 @@ Before you run the wizard, gather the following information:
             > [!IMPORTANT]
             > Discovering only computers with the agent installed requires that the agent is currently installed and configured with a signed certificate.
 
-        3.  To specify the credentials for installing an agent, click **Set credentials**. For detailed instructions, see “Credentials for Installing Agents” in [Setting Credentials for Accessing UNIX and Linux Computers](https://technet.microsoft.com/library/hh287150%28v=sc.12%29.aspx).
+        3.  To specify the credentials for installing an agent, click **Set credentials**. For detailed instructions, see "Credentials for Installing Agents" in [Setting Credentials for Accessing UNIX and Linux Computers](https://technet.microsoft.com/library/hh287150%28v=sc.12%29.aspx).
 
         4.  Click **Save**.
 

@@ -5,13 +5,13 @@ ms.topic:  article
 author:  markgalioto
 ms.prod:  system-center-threshold
 keywords:  
-ms.date:  2016-06-27
-title:  What s new in DPM in System Center Technical Preview
+ms.date:  2016-06-30
+title:  What's new in DPM in System Center Technical Preview
 ms.technology:  data-protection-manager
 ms.assetid:  a5e81bf0-43a6-4099-af2e-dfb0c1aa7ed8
 ---
 
-# What&#39;s new in DPM in System Center Technical Preview
+# What's new in DPM in System Center Technical Preview
 
 >Applies To: System Center 2016 Technical Preview - Data Protection Manager
 
@@ -19,7 +19,7 @@ ms.assetid:  a5e81bf0-43a6-4099-af2e-dfb0c1aa7ed8
 Here's what's new in Data Protection Manager (DPM) in System Center Technical Preview 5. Before you begin, check the [Release Notes for System Center Technical Preview 5](../../get-started/Release-Notes-for-System-Center-Technical-Preview-5.md) for last minute issues.
 
 ## Protect data sources in mixed-mode clusters
-Windows Server Technical Preview introduced [rolling upgrade support for clusters](https://technet.microsoft.com/library/dn850430.aspx), which means that in a cluster you can deploy servers running both Windows Server 2012 R2 and Windows Server Technical Preview. DPM can protect data sources in these mixed clusters, and will protect them seamlessly and without interruption during a cluster upgrade. Note that DPM doesn't support backup and recovery of data from Windows Nano Server.
+Windows Server Technical Preview introduced [rolling upgrade support for clusters](https://technet.microsoft.com/en-us/windows-server-docs/storage/what-s-new-in-file-and-storage-services-in-windows-server-2016-technical-preview#a-name-bkmk-dedup5-a-support-for-cluster-rolling-upgrades), which means that in a cluster you can deploy servers running both Windows Server 2012 R2 and Windows Server Technical Preview. DPM can protect data sources in these mixed clusters, and will protect them seamlessly and without interruption during a cluster upgrade. Note that DPM doesn't support backup and recovery of data from Windows Nano Server.
 
 ## Resilient change tracking (RCT)
 Hyper-V backup has been enhanced with resilient change tracking (RCT). RCT is a new form of built-in change tracking for Hyper-V virtual hard disks. RCT provides better resiliency than the change tracking provided by VSS snapshot-based backups.  DPM now uses RCT for incremental backup. It identifies VHD changes for virtual machines, and transfers only those blocks that are indicated by the change tracker. [Read more](http://www.aidanfinn.com/?p=17505) about RCT on Aidan Finn's blog.
@@ -27,7 +27,7 @@ Hyper-V backup has been enhanced with resilient change tracking (RCT). RCT is a 
 ## Storage Spaces Direct
 Storage Spaces Direct (S2D) leverages the Storage Spaces feature that was introduced in Windows Server 2012 R2, without the need for shared storage, which allows you to deploy highly available (HA) storage systems using local storage. Storage Spaces Direct leverages the local disks on hosts to provide a shared pool of clustered storage that can be used as primary storage for Hyper-V virtual machine files, or for secondary storage for Hyper-V Replica virtual machines files.
  The primary use case for Storage Spaces Direct is private cloud storage, either on-prem for enterprises, or in hosted private clouds for service providers.
- Get an [overview](https://channel9.msdn.com/Events/Ignite/2015/BRK3474).
+ Get an [overview](https://technet.microsoft.com/en-us/windows-server-docs/storage/storage-spaces/storage-spaces-direct-in-windows-server-2016-technical-preview).
 
 DPM protects Hyper-V virtual machines that use  Storage Spaces Direct. Most configurations are supported, including the backup of virtual machines using the S2D hyper-converged scenario with the Hyper-V (compute) and Storage Spaces Direct (storage) components on the same cluster, and the backup of virtual machines using the S2D disaggregated scenario which separates out  Hyper-V servers (compute) into a separate cluster from the Storage Spaces Direct servers (storage). In this configuration virtual machines are configured to store their files on the Scale-Out File Server which is accessed through the network using the SMB3 protocol. In all cases virtual machine backup and recovery is seamless with no change in user experience. Note that backing up and restoring virtual machines running on a Windows Nano Server isn't supported.
 

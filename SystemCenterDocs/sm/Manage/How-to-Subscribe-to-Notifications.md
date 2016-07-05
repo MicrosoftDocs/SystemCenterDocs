@@ -91,7 +91,7 @@ In the first procedure, you set up a subscription so that a messaging analyst is
 
 11. In the **Criteria** area, next to **[Release Record] Status**, select **does not equal**. In the list, select **Closed**, and then click **Next**.
 
-12. On the **Recurring Notification** page under **Recurrence pattern**, select **Notify every <TimeInterval\>** and then choose an interval. For example, set the recurrence pattern to every 1 day.
+12. On the **Recurring Notification** page under **Recurrence pattern**, select **Notify every *TimeInterval*** and then choose an interval. For example, set the recurrence pattern to every 1 day.
 
 13. On the **Recurring Notification** page under **Range of recurrence**, select a range of recurrence or choose no end date. For example, select **No end date**.
 
@@ -127,6 +127,3 @@ In the first procedure, you set up a subscription so that a messaging analyst is
 -   For information about how to use Windows PowerShell to update subscription properties in Service Manager, see [Update-SCSMSubscription](http://go.microsoft.com/fwlink/p/?LinkID=225388).
 
 -   For information about how to use Windows PowerShell to remove a subscription from Service Manager, see [Remove-SCSMSubscription](http://go.microsoft.com/fwlink/p/?LinkID=225370).
-
-
-

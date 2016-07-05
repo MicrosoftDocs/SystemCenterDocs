@@ -25,6 +25,6 @@ In Service Manager, you can reactivate resolved incidents that have an associate
 
 3.  In the **All Incidents** list, locate a resolved incident that you want to reactivate, and select it.
 
-4.  In the **Tasks** list, under **<IncidentID - IncidentTitle>**, click **Change Incident Status**, and then select **Activate**.
+4.  In the **Tasks** list, under **&lt;IncidentID - IncidentTitle&gt;**, click **Change Incident Status**, and then select **Activate**.
 
 5.  In the **Activate** box, type a comment describing why you are activating the incident, and then click **OK**.

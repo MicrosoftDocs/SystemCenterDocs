@@ -51,7 +51,7 @@ $webServer = 'https://MyServer'
 $port = 9090
 $runbookName = "Sample-TestRunbook"
 
-Set-SmaRunbookConfiguration �WebServiceEndpoint $webServer �Port $port �Name $runbookName �Description "Sample runbook" �LogVerbose $true
+Set-SmaRunbookConfiguration "WebServiceEndpoint $webServer "Port $port "Name $runbookName "Description "Sample runbook" "LogVerbose $true
 
 ```
 

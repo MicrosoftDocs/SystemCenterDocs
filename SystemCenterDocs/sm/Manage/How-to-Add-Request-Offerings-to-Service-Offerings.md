@@ -23,9 +23,6 @@ Service offerings are logical groups of request offerings. For a service offerin
 
 2.  In the **Library** pane, expand **Service Catalog**, and then select **Published Request Offerings**.
 
-3.  In the **Published Request Offerings** list, select one or more request offerings, and in the **Tasks** pane under **<RequestOfferingName\>**, click **Add to Service Offering**.
+3.  In the **Published Request Offerings** list, select one or more request offerings, and in the **Tasks** pane under **RequestOfferingName**, click **Add to Service Offering**.
 
 4.  In the **Select objects** dialog box, select the service offering that you want to associate the request offering with, click **Add**, and then click **OK** to close the dialog box.
-
-
-

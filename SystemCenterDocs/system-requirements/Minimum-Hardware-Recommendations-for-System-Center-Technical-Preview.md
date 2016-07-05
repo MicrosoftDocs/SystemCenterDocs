@@ -1,13 +1,16 @@
 ---
-title: Minimum Hardware Recommendations for System Center Technical Preview
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: get-started-article
-ms.assetid: 0cb670c2-7b8c-4901-858c-f0644187d45f
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  cfreemanwa
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-07-01
+title:  Minimum Hardware Recommendations for System Center Technical Preview
+ms.technology:  system-center-2016
+ms.assetid:  0cb670c2-7b8c-4901-858c-f0644187d45f
 ---
+
 # Minimum Hardware Recommendations for System Center Technical Preview
 
 >Applies To: System Center Technical Preview

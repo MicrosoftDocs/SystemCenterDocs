@@ -15,17 +15,17 @@ ms.assetid:  24cd18c8-4aea-4f22-971b-756d9fa45a8e
 
 >Applies To: Windows Azure Pack for Windows Server
 
-When you start a runbook in Service Management Automation, a job is created. A job is a single execution instance of a runbook. A single runbook may have multiple jobs, each with their own set of values for the runbook�s parameters. 
+When you start a runbook in Service Management Automation, a job is created. A job is a single execution instance of a runbook. A single runbook may have multiple jobs, each with their own set of values for the runbook"s parameters.
 
 If the RunbookWorker property of the runbook is populated, then that Worker server will service the job. If the Worker server is not available, then the job will fail with an error. If the RunbookWorker property of the runbook is not populated, then SMA will randomly select an available Worker server to service the request.
 
 The following diagram shows the lifecycle of a runbook job for PowerShell Workflow runbooks.
 
-![Job Statuses - PowerShell WorkflowImage/sma-runbook-execution-workflow.png)
+![Job Statuses - PowerShell Workflow](../../media/sma-runbook-execution-workflow.png)
 
 The following diagram shows the lifecycle of a runbook job for PowerShell script runbooks.
 
-![Job Statuses - PowerShell ScriptImage/sma-runbook-execution-script.png)
+![Job Statuses - PowerShell Script](../../media/sma-runbook-execution-script.png)
 
 ## <a name="jobstatuses"></a>Job Statuses
 The following table describes the different statuses that are possible for a job.
@@ -87,7 +87,7 @@ You can use the following steps to view the jobs for a runbook.
 6.  From the **History** tab, click **View Source** at the bottom of the screen to the source for the job.
 
 ## <a name="PowerShell"></a>Retrieving Job Status using Windows PowerShell
-You can use the [Get-SmaJob](http://aka.ms/runbookauthor/cmdlet/getsmajob) to retrieve the jobs created for a runbook and the details of a particular job. If you start a runbook with Windows PowerShell using [Start-SmaRunbook](http://aka.ms/runbookauthor/cmdlet/startsmarunbook), then it will return the resulting job. Use [Get-SmaJobOutput](http://aka.ms/runbookauthor/cmdlet/getsmajoboutput) to get a job�s output.
+You can use the [Get-SmaJob](http://aka.ms/runbookauthor/cmdlet/getsmajob) to retrieve the jobs created for a runbook and the details of a particular job. If you start a runbook with Windows PowerShell using [Start-SmaRunbook](http://aka.ms/runbookauthor/cmdlet/startsmarunbook), then it will return the resulting job. Use [Get-SmaJobOutput](http://aka.ms/runbookauthor/cmdlet/getsmajoboutput) to get a job"s output.
 
 The following sample commands retrieves the last job for a sample runbook and displays its status, the values provide for the runbook parameters, and the output from the job.
 
@@ -96,16 +96,13 @@ $webServer = 'https://MyServer'
 $port = 9090
 $runbookName = "Test-Runbook"
 
-$job = (Get-SmaJob �WebServiceEndpoint $webServer �Port $port �RunbookName $runbookName | sort LastModifiedDate �desc)[0]
+$job = (Get-SmaJob "WebServiceEndpoint $webServer "Port $port "RunbookName $runbookName | sort LastModifiedDate "desc)[0]
 $job.Status
 $job.JobParameters
-Get-SmaJobOutput �WebServiceEndpoint $webServer �Port $port -Id $job.Id �Stream Output
+Get-SmaJobOutput "WebServiceEndpoint $webServer "Port $port -Id $job.Id "Stream Output
 ```
 
 ## See Also
 [Service Management Automation](../Service-Management-Automation.md)
 [Runbook Operations](Runbook-Operations.md)
 [Starting a Runbook](Starting-a-Runbook.md)
-
-
-

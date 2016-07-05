@@ -44,7 +44,7 @@ The following terms represent the most important elements of a Virtual Fibre Cha
 
 **NPIV**. N_Port ID Virtualization (NPIV) is a standard used to create and map multiple virtual Fibre Channel (vHBA) ports to a single physical Fibre Channel N_port.
 
-**vHBA**. The virtualized HBA. Multiple vHBAs can be mapped to a single HBA. The vHBA uses NPIV to address a VM�s WWN within a host HBA.
+**vHBA**. The virtualized HBA. Multiple vHBAs can be mapped to a single HBA. The vHBA uses NPIV to address a VM"s WWN within a host HBA.
 
 **Virtual SAN**. In the context of VMM, a virtual SAN (vSAN) defines a group of physical Fibre Channel ports that are connected to a physical SAN array. Not to be confused with the vSAN product by VMware.
 

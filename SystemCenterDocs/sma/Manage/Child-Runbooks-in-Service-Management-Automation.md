@@ -20,9 +20,9 @@ It is a best practice in Service Management Automation to write reusable, modula
 ## <a name="InlineExecution"></a>Invoking a Child Runbook Using Inline Execution
 To invoke a runbook inline from another runbook, you use the name of the runbook and provide values for its parameters exactly like you would use an activity or cmdlet.  All runbooks in the same Service Management Automation environment are available to all others to be used in this manner. The parent runbook will wait for the child runbook to complete before moving to the next line, and any output is returned directly to the parent.
 
-When you invoke a runbook inline, it runs in the same job as the parent runbook. There will be no indication in the job history of the child runbook that it ran. Any exceptions and any stream output from the child runbook will be associated with the parent. This results in fewer jobs and makes them easier to track and to troubleshoot since any exceptions thrown by the child runbook and any of its stream output are associated with the parent runbook�s job.
+When you invoke a runbook inline, it runs in the same job as the parent runbook. There will be no indication in the job history of the child runbook that it ran. Any exceptions and any stream output from the child runbook will be associated with the parent. This results in fewer jobs and makes them easier to track and to troubleshoot since any exceptions thrown by the child runbook and any of its stream output are associated with the parent runbook"s job.
 
-When a runbook is published, any child runbooks that it calls must already have a published version. This is because Automation builds an association with any child runbooks when a runbook is compiled. If they aren�t, the parent runbook will appear to publish properly, it but will generate an exception when it�s started. If this happens, you can republish the parent runbook in order to properly reference the child runbooks. You do not need to republish the parent runbook if any of the child runbooks are changed because the association will have already been created.
+When a runbook is published, any child runbooks that it calls must already have a published version. This is because Automation builds an association with any child runbooks when a runbook is compiled. If they aren"t, the parent runbook will appear to publish properly, it but will generate an exception when it"s started. If this happens, you can republish the parent runbook in order to properly reference the child runbooks. You do not need to republish the parent runbook if any of the child runbooks are changed because the association will have already been created.
 
 The parameters of a child runbook called inline can be any data type including complex objects, and there is no [JSON serialization](Starting-a-Runbook.md#Parameters) as there is when you start the runbook using the Management Portal or with the [Start-SmaRunbook](http://aka.ms/runbookauthor/cmdlet/startsmarunbook) cmdlet.
 
@@ -37,14 +37,14 @@ When you call a PowerShell Workflow child runbook using inline execution, you ju
 The following example invokes a test child runbook that accepts three parameters, a complex object, an integer, and a boolean. The output of the child runbook is assigned to a variable.  In this case, the child runbook is a PowerShell Workflow runbook
 
 ```powershell
-$vm = Get-VM �Name "MyVM" �ComputerName "MyServer"
-$output = Test-ChildRunbook �VM $vm �RepeatCount 2 �Restart $true
+$vm = Get-VM "Name "MyVM" "ComputerName "MyServer"
+$output = Test-ChildRunbook "VM $vm "RepeatCount 2 "Restart $true
 ```
 
 Following is the same example using a PowerShell script runbook as the child.
 ```powershell
-$vm = Get-VM �Name "MyVM" �ComputerName "MyServer"
-$output = .\Test-ChildRunbook.ps1 �VM $vm �RepeatCount 2 �Restart $true
+$vm = Get-VM "Name "MyVM" "ComputerName "MyServer"
+$output = .\Test-ChildRunbook.ps1 "VM $vm "RepeatCount 2 "Restart $true
 ```
 
 ## <a name="cmdlet"></a>Starting a Child Runbook Using Cmdlet
@@ -62,16 +62,16 @@ $port = 9090
 $runbookName = "Test-Runbook"
 $params = @{"VMName"="MyVM";"RepeatCount"=2;"Restart"=$true} 
 
-$job = Start-SmaRunbook �WebServiceEndpoint $webServer �Port $port �Name $runbookName �Parameters $params
+$job = Start-SmaRunbook "WebServiceEndpoint $webServer "Port $port "Name $runbookName "Parameters $params
 
 $doLoop = $true
 While ($doLoop) {
-   $job = Get-SmaJob �WebServiceEndpoint $webServer �Port $port -Id $job.Id
+   $job = Get-SmaJob "WebServiceEndpoint $webServer "Port $port -Id $job.Id
    $status = $job.Status
    $doLoop = (($status -ne "Completed") -and ($status -ne "Failed") -and ($status -ne "Suspended") -and ($status -ne "Stopped") 
 }
 
-Get-SmaJobOutput �WebServiceEndpoint $webServer �Port $port -Id $job.Id �Stream Output
+Get-SmaJobOutput "WebServiceEndpoint $webServer "Port $port -Id $job.Id "Stream Output
 ```
 
 ## Comparison of Methods for Calling a Child Runbook
