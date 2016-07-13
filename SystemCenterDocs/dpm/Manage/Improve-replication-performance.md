@@ -5,7 +5,7 @@ ms.topic:  article
 author:  markgalioto
 ms.prod:  system-center-threshold
 keywords:  
-ms.date:  2016-06-30
+ms.date:  2016-07-12
 title:  Improve replication performance
 ms.technology:  data-protection-manager
 ms.assetid:  dc7b7b49-dcbb-4e44-9ea7-31374c5773ff
