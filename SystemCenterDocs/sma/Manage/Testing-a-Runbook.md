@@ -27,7 +27,7 @@ To test a runbook, [open the Draft version of the runbook in the Management Port
 You can stop or suspend the runbook while it is being tested with the buttons underneath the Output Pane. When you suspend the runbook, it completes the current activity before being suspended. Once the runbook is suspended, you can stop it or restart it.
 
 ## To Test a Runbook Using Windows PowerShell ISE
-The [PowerShell ISE add-on](https://www.powershellgallery.com/packages/AzureAutomationAuthoringToolkit/0.2.3.3) provides cmdlets that emulate the standard activities such as Get-SMACredential and Set-SMAVariable, so you can test the runbook on the local computer just as you would any other script.   
+The [PowerShell ISE add-on](https://www.powershellgallery.com/packages/SMAAuthoringToolkit) provides cmdlets that emulate the standard activities such as Get-SMACredential and Set-SMAVariable, so you can test the runbook on the local computer just as you would any other script.   
 
 Global assets and their values are downloaded from the automation group to use for local testing.  You can inspect or change these values on the **Assets** tab.  Encrypted values are displayed in orange, and their values are not downloaded.  If you want to use these assets in local testing, then you must set their value locally.
 
@@ -38,6 +38,3 @@ To test the runbook in SMA, click **Test Draft in SMA**.  A new window will be o
 [Service Management Automation](../Service-Management-Automation.md)
 [Authoring Automation Runbooks](Authoring-Automation-Runbooks.md)
 [Editing a Runbook](Editing-a-Runbook.md)
-
-
-
