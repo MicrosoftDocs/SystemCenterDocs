@@ -5,7 +5,7 @@ ms.topic:  article
 author:  markgalioto
 ms.prod:  system-center-threshold
 keywords:  
-ms.date:  2016-06-30
+ms.date:  2016-07-14
 title:  Get ready to deploy DPM servers
 ms.technology:  data-protection-manager
 ms.assetid:  517ce276-b811-4a06-ade3-ff71303ccf5b
