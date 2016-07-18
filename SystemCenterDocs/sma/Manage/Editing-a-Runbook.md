@@ -123,7 +123,7 @@ Publish-SmaRunbook "WebServiceEndpoint $webServer "Port $port "Name $runbookName
 ```
 
 ## <a name="ISE"></a>To Edit an Automation Runbook Using Windows PowerShell ISE
-Windows PowerShell Integrated Scripting Environment (ISE) is an application that allows you to run commands and write, test, and debug scripts.  The [SMA PowerShell ISE Add-on](https://www.powershellgallery.com/packages/AzureAutomationAuthoringToolkit/0.2.3.3) allows you to use this tool to write and test Automation runbooks.
+Windows PowerShell Integrated Scripting Environment (ISE) is an application that allows you to run commands and write, test, and debug scripts.  The [SMA PowerShell ISE Add-on](https://www.powershellgallery.com/packages/SMAAuthoringToolkit) allows you to use this tool to write and test Automation runbooks.
 
 1. Open Windows PowerShell ISE.
 
@@ -147,6 +147,3 @@ Windows PowerShell Integrated Scripting Environment (ISE) is an application that
 [Creating or Importing a Runbook](Creating-or-Importing-a-Runbook.md)
 [Service Management Automation](../Service-Management-Automation.md)
 [Authoring Automation Runbooks](Authoring-Automation-Runbooks.md)
-
-
-
