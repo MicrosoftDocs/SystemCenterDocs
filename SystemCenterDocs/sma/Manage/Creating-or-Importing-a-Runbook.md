@@ -31,7 +31,7 @@ You can create a new runbook in Service Management Automation using the Manageme
 4.  Your new runbook will appear on the **Runbooks** tab.
 
 ### <a name="ISE"></a>To create a new Automation runbook with Windows PowerShell ISE
-Windows PowerShell Integrated Scripting Environment (ISE) is an application that allows you to run commands and write, test, and debug scripts.  The [SMA PowerShell ISE Add-on](https://www.powershellgallery.com/packages/AzureAutomationAuthoringToolkit/0.2.3.3) allows you to use this tool to write and test Automation runbooks.
+Windows PowerShell Integrated Scripting Environment (ISE) is an application that allows you to run commands and write, test, and debug scripts.  The [SMA PowerShell ISE Add-on](https://www.powershellgallery.com/packages/SMAAuthoringToolkit) allows you to use this tool to write and test Automation runbooks.
 
 1. Open Windows PowerShell ISE.
 
@@ -77,7 +77,7 @@ $port = 9090
 $runbookName = "Test-Runbook"
 $scriptPath = "c:\runbooks\Test-Runbook.ps1"
 
-Import-SmaRunbook "WebServiceEndpoint $webServer "Port $port "Path $scriptPath 
+Import-SmaRunbook "WebServiceEndpoint $webServer "Port $port "Path $scriptPath
 Publish-SMARunbook "WebServiceEndpoint $webServer "Port $port "Name $runbookName
 
 ```
@@ -86,6 +86,3 @@ Publish-SMARunbook "WebServiceEndpoint $webServer "Port $port "Name $runbookName
 [Service Management Automation](../Service-Management-Automation.md)
 [Runbook Authoring](Authoring-Automation-Runbooks.md)
 [Editing a Runbook](Editing-a-Runbook.md)
-
-
-
