@@ -6,33 +6,33 @@ author:  cfreemanwa
 ms.prod:  system-center-threshold
 keywords:  
 ms.date:  2016-07-01
-title:  Release Notes for System Center Technical Preview 5
+title:  Release Notes for System Center 2016
 ms.technology:  system-center-2016
 ms.assetid:  5fad5608-4cb7-48b0-aa31-35ca5cc2d560
 ---
 
-# Release Notes for System Center Technical Preview 5
+# Release Notes for System Center 2016
 
->Applies To: System Center Technical Preview
+>Applies To: System Center 2016
 
-### The following set of notes lists known issues and steps to mitigate the issue. These notes only apply to System Center 2016 Technical Preview.
+### The following set of notes lists known issues and steps to mitigate the issue. These notes only apply to System Center 2016.
 
 
-## System Center 2016 Technical Preview - Data Protection Manager Release Notes
-### The following release notes apply to System Center 2016 Technical Preview - Data Protection Manager.
+## System Center 2016 - Data Protection Manager Release Notes
+### The following release notes apply to System Center 2016 - Data Protection Manager.
 
 ### SQL Server Setup error
-**Description:** When you specify a SQL Server while setting up System Center 2016 Technical Preview - Data Protection Manager you may encounter an error.
+**Description:** When you specify a SQL Server while setting up System Center 2016 - Data Protection Manager you may encounter an error.
 
 **Work around:** Specify the Fully Qualified Domain Name (FQDN) for the computer hosting SQL Server.
 
 ### VM backup from a remote file share
-**Description:** If you attempt to use System Center 2016 Technical Preview - Data Protection Manager to backup a virtual machine stored on a remote file share you will receive an error.
+**Description:** If you attempt to use System Center 2016 - Data Protection Manager to backup a virtual machine stored on a remote file share you will receive an error.
 
 **Work around:** Add all Hyper-V compute nodes to the Backup Operators group on the Scale-out File Server (SOFS) nodes. To do this run  the following command on the SOFS nodes:  `net localgroup "Backup Operators" domainname\hypervmachinename$ /add`
 
-### System Center 2016 Technical Preview - Data Protection ManagerTP4 supports protecting workloads on Windows Server 2008 R2 SP1 and above
-**Description:**Installing the DPM agent on Windows Server 2008 or Windows Server 2008 R2 is not supported in this release of System Center 2016 Technical Preview - Data Protection Manager.
+### System Center 2016 - Data Protection ManagerTP4 supports protecting workloads on Windows Server 2008 R2 SP1 and above
+**Description:**Installing the DPM agent on Windows Server 2008 or Windows Server 2008 R2 is not supported by System Center 2016 - Data Protection Manager.
 
 **Workaround:** Install SP1 on the Windows Server 2008 R2 server, and install Windows Management Framework 4.0.
 
@@ -46,8 +46,8 @@ ms.assetid:  5fad5608-4cb7-48b0-aa31-35ca5cc2d560
 
 **Workaround:** Retrieve the list of alternate recovery locations via PowerShell.
 
-### DPM will not protect Windows Server 2016 Technical Preview Nano Server
-**Description:** You can't use DPM to back up Windows Server 2016 Technical Preview Nano Server.
+### DPM will not protect Windows Server 2016 Nano Server
+**Description:** You can't use DPM to back up Windows Server 2016 Nano Server.
 
 ### Online recovery of SQL master database fails, after upgrading DPM to TP5 
 **Description:** If your DPM installation's SQL server master database is protected (i.e, backed up) to Azure, and you upgrade to System Center DPM 2016 and then attempt to restore using an online recovery point, the recovery job will fail. 
@@ -85,13 +85,13 @@ Edit-DPMDiskAllocation -Datasource <Datasource object> -ShadowCopySize <new size
 ```
 
 
-## System Center 2016 Technical Preview - Operations Manager Release Notes
-### The following release notes apply to System Center 2016 Technical Preview - Operations Manager.
+## System Center 2016 - Operations Manager Release Notes
+### The following release notes apply to System Center 2016 - Operations Manager.
 
 ### Operations Manager Console will stop responding if you attempt to resolve a dependency while  importing a Management Pack
 **Description:**When you click **Import Management Packs** from the Administration section of the Operations Manager console, the console will display the **Resolve** button if the Management Pack is dependent on another Management Pack. If you click  Resolve you will see the **Dependency Warning**. If you click the **Resolve** button in the warning the Operations Manager console will stop responding.
 
-**Workaround:** Install the Update forSystem Center 2016 Technical Preview - Operations Manager. See the Knowledge Base article [3117586](https://support.microsoft.com/en-us/kb/3117586) for specific instructions.
+**Workaround:** Install the Update forSystem Center 2016 - Operations Manager. See the Knowledge Base article [3117586](https://support.microsoft.com/en-us/kb/3117586) for specific instructions.
 
 ### Client-side monitoring (CSM) alerts might stop flowing from the System Center Operations Manager management server host
 **Description:**The update sequence of System Center Operation Manager management server may cause an issue with the client-side monitoring alerts collection from the management server host. System Center Operations Manager agents are not affected.
@@ -110,8 +110,8 @@ System Center Operations Manager management server is not affected.
 
 **Workaround:**Restart the "Microsoft Monitoring Agent" service on the System Center Operations Manager agent host that is experiencing the issue.
 
-### Application performance monitoring (APM) for Windows services is not supported in System Center Technical Preview 4 Operations Manager on hosts where Application Insights Status Monitor is installed.
-**Description:**Application performance monitoring (APM) workflow fails to process monitoring configuration for .NET Windows services on the hosts if Application Insights Status Monitor and the System Center Technical Preview 4 Operations Manager agent are both installed.
+### Application performance monitoring (APM) for Windows services is not supported in System Center - Operations Manager on hosts where Application Insights Status Monitor is installed.
+**Description:**Application performance monitoring (APM) workflow fails to process monitoring configuration for .NET Windows services on the hosts if Application Insights Status Monitor and the System Center - Operations Manager agent are both installed.
 
 **Workaround:** Uninstall Application Insights Status Monitor.
 
@@ -155,8 +155,8 @@ System Center Operations Manager management server is not affected.
 9. Select the option - "Place all certificates in the following store" Browse to Trusted Publishers. 
 10. Click Next and then Finish.
 11. Refresh the Browser
-## System Center 2016 Technical Preview - Orchestrator and Service Management Automation Release Notes
-### The following release notes apply to System Center 2016 Technical Preview - Orchestrator and Service Management Automation .
+## System Center 2016 - Orchestrator and Service Management Automation Release Notes
+### The following release notes apply to System Center 2016 - Orchestrator and Service Management Automation .
 
 ### Sending telemetry data for SMA and SPF to Microsoft can only be turned off via PowerShell
 **Description:**The default  telemetry data setting is to send data to Microsoft. Since Service Management Automation and Service Provider Foundationdo not provide a user interface, you can only change this setting for Service Management Automation or Service Provider Foundation with a  PowerShell cmdlet.
@@ -175,19 +175,19 @@ System Center Operations Manager management server is not affected.
 **Workaround:** Use Orchestrator 2012 Integration packs for evaluation purposes. 
 
 
-## System Center 2016 Technical Preview - Service Manager Release Notes
-### The following release notes apply to System Center 2016 Technical Preview - Service Manager.
+## System Center 2016 - Service Manager Release Notes
+### The following release notes apply to System Center 2016 - Service Manager.
 
 ### The Create Exchange Connector Wizard Might Crash
 **Description:** When you run the Create Exchange Connector wizard, the wizard crashes when you click **Test Connection**.
  
-**Workaround:** To work around this issue in Technical Preview 5, avoid clicking **Test Connection** when you run the wizard. Instead, click **Next**, which internally tests the connection and does not crash the wizard. 
+**Workaround:** To work around this issue, avoid clicking **Test Connection** when you run the wizard. Instead, click **Next**, which internally tests the connection and does not crash the wizard. 
 
 If the crash has already occurred, you can restart the wizard and use this workaround.
 
-### Operations Manager CI Connectors Created with Technical Preview 5 do not Sync Properly
-**Description:** In Service Manager 2016 Technical Preview 5, if you use the Operations Manager CI connector connected to Operations Manager 2016 TP5, then the following issues occur:
-1.  Newly created OM CI connectors will not sync properly. However, Operations Manager CI connectors created with previous Technical Previews continue to work properly.
+### Operations Manager CI Connectors do not Sync Properly
+**Description:** In Service Manager 2016, if you use the Operations Manager CI connector connected to Operations Manager 2016 TP5, then the following issues occur:
+1.  Newly created OM CI connectors will not sync properly. However, Operations Manager CI connectors created with previous releases continue to work properly.
 2.  Newly created Distributed Applications and Business Services with Operations Manager do not import.
 
 **Workaround:** See [https://www.microsoft.com/download/details.aspx?id=51955](https://www.microsoft.com/download/details.aspx?id=51955) to work around this problem. 
@@ -400,8 +400,8 @@ If you used the default instance of SQL Server, use Windows Explorer to drag Mic
 
 **Workaround:** Switch the Cardinality Estimator (CE) for the SQL Server to use the SQL Server 2012 version. See the following article for more information on changing the Cardinality Estimator: [New functionality in SQL Server 2014 - Part 2 - New Cardinality Estimation](http://blogs.msdn.com/b/saponsqlserver/archive/2014/01/16/new-functionality-in-sql-server-2014-part-2-new-cardinality-estimation.aspx).
 
-## System Center 2016 Technical Preview - Virtual Machine Manager Release Notes
-### The following release notes apply to System Center 2016 Technical Preview - Virtual Machine Manager.
+## System Center 2016 - Virtual Machine Manager Release Notes
+### The following release notes apply to System Center 2016 - Virtual Machine Manager.
 
 ### Upgrading a cluster's functional level does not refresh the platform information for a File Server
 **Description:** If you upgrade the functional level for a cluster that includes a file server the new platform information will not be automatically updated in the VMM database.
@@ -498,10 +498,6 @@ Get-SCNATConnection
 
 **Workaround:** Instead of creating a template from a Gen 1 VM, you can create a VM template from scratch.
 
-### Install Cumulative Update for Windows Server Technical Preview 5 and System Center 2016 TP5
-
-**Description:** Microsoft has published patches to address late-breaking issues in the TP5 release of Windows Server Technical Preview and the TP5 release of System Center 2016. You should apply these patches.
-See [Knowledge Base article 3157663](https://support.microsoft.com/en-us/kb/3157663) for download information for the Windows Server Cumulative update and [Knowledge Base article 3158141](https://support.microsoft.com/en-us/kb/3158141) for download information for the VMM Cumulative update.
 
 ### Adding a host to VMM with Storage Spaces Direct enabled will result in a warning  
 **Description:**When hosts are added to a cluster with storage spaces direct enabled, a warning "Multipath I/O is not enabled for known storage arrays on host <\hostname>" is generated. 
