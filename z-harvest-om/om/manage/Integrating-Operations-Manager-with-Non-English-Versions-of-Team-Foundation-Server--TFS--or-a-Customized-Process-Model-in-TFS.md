@@ -37,14 +37,14 @@ If you are using a non\-English version of TFS or want to customize a pre\-defin
   
 2.  Make sure you have imported the Alert Attachment management pack. For more information, see [How to Configure File Attachments for Operations Manager Alerts in System Center 2012 R2](../../om/manage/How-to-Configure-File-Attachments-for-Operations-Manager-Alerts-in-System-Center-2012-R2.md)  
   
-3.  Follow the [How to Configure Integration with TFS in System Center 2012 R2](http://go.microsoft.com/fwlink/?LinkId=391721), but don’t automatically import the Work Item Type Operational Issue.  
+3.  Follow the [How to Configure Integration with TFS in System Center 2012 R2](http://go.microsoft.com/fwlink/?LinkId=391721), but don't automatically import the Work Item Type Operational Issue.  
   
-4.  After completing the TFS Work Item Synchronization configuration wizard, click **Create**. On the **Import Operational Issue Work Item Type Definition** page, click **Cancel**. You don’t need to supply a password. Then on the **TFS Work Item Synchronization** page, click **Save** to save the integration settings without automatically importing the Operational Issue Work Item Type Definition.  
+4.  After completing the TFS Work Item Synchronization configuration wizard, click **Create**. On the **Import Operational Issue Work Item Type Definition** page, click **Cancel**. You don't need to supply a password. Then on the **TFS Work Item Synchronization** page, click **Save** to save the integration settings without automatically importing the Operational Issue Work Item Type Definition.  
   
-5.  Your configuration is saved, but you can’t use it yet. You will receive an alert from the TFS Work Item Synchronization Management Pack indicating that synchronization is in an unhealthy state. This alert will disappear after you provide a valid WITD and configure the required overrides.  
+5.  Your configuration is saved, but you can't use it yet. You will receive an alert from the TFS Work Item Synchronization Management Pack indicating that synchronization is in an unhealthy state. This alert will disappear after you provide a valid WITD and configure the required overrides.  
   
 ## Synchronizing with a WITD other than the Operational Issue Work Item Type Definition  
-By default, synchronization happens using Operational Issue \(as spelled in English\) WITD, but if you want to synchronize with a different WITD or if you’d like to customize or change the WITD default name, such as spelling Operational Issue WITD in a language other than English, you need to customize the Operational Issue Work Item Type template which is on the Operations Manager installation media and then manually import it to each of the team projects used in synchronization. For more information, see [How to Manually Import an Operational Issue WITD to TFS in System Center 2012 R2](http://go.microsoft.com/fwlink/?LinkId=391717). For information about customization, see [Customizing Work Item Types](http://go.microsoft.com/fwlink/?LinkId=391715).  
+By default, synchronization happens using Operational Issue \(as spelled in English\) WITD, but if you want to synchronize with a different WITD or if you'd like to customize or change the WITD default name, such as spelling Operational Issue WITD in a language other than English, you need to customize the Operational Issue Work Item Type template which is on the Operations Manager installation media and then manually import it to each of the team projects used in synchronization. For more information, see [How to Manually Import an Operational Issue WITD to TFS in System Center 2012 R2](http://go.microsoft.com/fwlink/?LinkId=391717). For information about customization, see [Customizing Work Item Types](http://go.microsoft.com/fwlink/?LinkId=391715).  
   
 **How much can I customize?**  
   
@@ -82,25 +82,25 @@ Customizing a WITD is an advanced operation and requires a good understanding ma
     -   For TFS 2013, the file name is **OperationalIssue\_11.xml**.  
   
     > [!TIP]  
-    > You might want to change the filename to match your  WITD name. It’s also a good idea to make extra copies of the file in case you make a mistake during this complex process and need to revert your changes.  
+    > You might want to change the filename to match your  WITD name. It's also a good idea to make extra copies of the file in case you make a mistake during this complex process and need to revert your changes.  
   
     > [!NOTE]  
     > You can also choose to start from your own WITD in which case you will need to manually merge it with the Operational Issue WITD included in Operations Manager. This is a more complex procedure, but gives you the flexibility to reuse logic from an existing WITD.  
   
 2.  Open a local copy of the file in an xml editor and find these xml nodes:  
   
-    1.  Under WITD node <WORKITEMTYPE name\=”Operational Issue”> \- replace “Operational Issue” with the name of your work item.  
+    1.  Under WITD node <WORKITEMTYPE name\="Operational Issue"> \- replace "Operational Issue" with the name of your work item.  
   
         For example, replace <WORKITEMTYPE name\="**Operational Issue**"> with <WORKITEMTYPE name\="**操作问题**">.  
   
-    2.  In WITD\/ WORKITEMTYPE\/FIELDS specify desired “name” value for each field used in synchronization \(they are listed below in the overrides table\).  
+    2.  In WITD\/ WORKITEMTYPE\/FIELDS specify desired "name" value for each field used in synchronization \(they are listed below in the overrides table\).  
   
         For example, replace <FIELD name\="**Assigned To**" refname\="System.AssignedTo" type\="String" syncnamechanges\="true" reportable\="dimension"> with <FIELD name\="**关闭日期**" refname\="Microsoft.VSTS.Common.ClosedDate" type\="DateTime" reportable\="dimension">.  
   
         > [!IMPORTANT]  
         > The field names must match other WITDs in your process model for the same refname.  
   
-    3.  Under WITD\/WORKITEMTYPE\/FIELDS\/FIELD where refname\=”Microsoft.VSTS.Common.Severity”, modify allowed values to match your own desired severity codes.  
+    3.  Under WITD\/WORKITEMTYPE\/FIELDS\/FIELD where refname\="Microsoft.VSTS.Common.Severity", modify allowed values to match your own desired severity codes.  
   
         For example, replace <FIELD name\="Severity" refname\="Microsoft.VSTS.Common.Severity" type\="String" reportable\="dimension">    <ALLOWEDVALUES expanditems\="true">          <LISTITEM value\="**1 \- Critical**" \/>          <LISTITEM value\="**2 \- High**" \/>          <LISTITEM value\="**3 \- Medium**" \/>          <LISTITEM value\="**4 \- Low**" \/>        <\/ALLOWEDVALUES>     <\/FIELD> with this: <FIELD name\="严重级别" refname\="Microsoft.VSTS.Common.Severity" type\="String" reportable\="dimension">        <ALLOWEDVALUES expanditems\="true">          <LISTITEM value\="**1 \- 严重**" \/>          <LISTITEM value\="**2 \- 高**" \/>          <LISTITEM value\="**3 \- 中**" \/>          <LISTITEM value\="**4 \- 低**" \/>        <\/ALLOWEDVALUES>  
   
@@ -108,7 +108,7 @@ Customizing a WITD is an advanced operation and requires a good understanding ma
   
         For example, change <STATE value\="**Closed**"> to <STATE value\="**已关闭**">.  
   
-    5.  Under WITD\/TRANSITIONS, modify each Transition from “state” to transition to “state”, where states need to match the security codes you chose in step c.  
+    5.  Under WITD\/TRANSITIONS, modify each Transition from "state" to transition to "state", where states need to match the security codes you chose in step c.  
   
         For example, change <TRANSITION from\="**Accepted**" to\="**Closed**"> to <TRANSITION from\="**已批准**" to\="**已关闭**">.  
   
@@ -121,7 +121,7 @@ Customizing a WITD is an advanced operation and requires a good understanding ma
 6.  Manually import the WITD that you created into TFS for each project that you want to use with synchronization.  
   
 ## Configuring Operations Manager to use your customized WITD in synchronization with TFS  
-Now that you’ve changed your process model, you need to change the corresponding overrides for rules in Operations Manager so that Operations Manager and TFS synchronization can correctly recognize your customized WITD.  
+Now that you've changed your process model, you need to change the corresponding overrides for rules in Operations Manager so that Operations Manager and TFS synchronization can correctly recognize your customized WITD.  
   
 ### Rules and overrides that must be changed in Operations Manager to match your customized WITD  
   

@@ -47,7 +47,7 @@ Use the following procedure to create an Analytic Grid report named Incidents by
   
 7.  To configure the hierarchy member selection, in the **Rows** drop zone, click the down arrow to the right of the **AssignedToUserDim** hierarchy to open the **Select Members** dialog box.  
   
-8.  In the **Select Members** dialog box, right\-click **All members** member, point to **Autoselect Members**, click **Select “User Name”**, and then click **OK**.  
+8.  In the **Select Members** dialog box, right\-click **All members** member, point to **Autoselect Members**, click **Select "User Name"**, and then click **OK**.  
   
 9. In the **Details** pane, expand **Measures**, and then drag the **IncidentDimCount** and **Incidents Resolved Count** measures into the **Columns** drop zone.  
   

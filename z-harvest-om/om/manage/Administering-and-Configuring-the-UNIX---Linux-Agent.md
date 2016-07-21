@@ -13,7 +13,7 @@ author:mgoedtel
 manager:cfreemanwa
 ---
 # Administering and Configuring the UNIX - Linux Agent
-This topic describes options to administer and configure the UNIX\/Linux agent for System Center – [!INCLUDE[omblue_2](../../om/manage/includes/omblue_2_md.md)].  
+This topic describes options to administer and configure the UNIX\/Linux agent for System Center - [!INCLUDE[omblue_2](../../om/manage/includes/omblue_2_md.md)].  
   
 ## Agent Directories  
   
@@ -80,7 +80,7 @@ cd /opt/microsoft/scx/bin/tools/
   
 ```  
 cd /opt/microsoft/scx/bin/tools/  
-./scxadmin –log-set all intermediate  
+./scxadmin -log-set all intermediate  
 ```  
   
 ## scxsslconfig  
@@ -120,7 +120,7 @@ cd /opt/microsoft/scx/bin/tools/
 ```  
 cd /opt/microsoft/scx/bin/tools/  
 . setup.sh  
-/opt/microsoft/scx/bin/tools/scxsslconfig -f –h myserver –d contoso.com  
+/opt/microsoft/scx/bin/tools/scxsslconfig -f -h myserver -d contoso.com  
 ```  
   
 ## Additional Configuration Topics  
@@ -128,8 +128,8 @@ cd /opt/microsoft/scx/bin/tools/
 ### SSL Ciphers  
 If required, the SSL cipher list used by the UNIX\/Linux agent can be customized. For more information about this configuration, see the [Configuring SSL Ciphers](http://technet.microsoft.com/library/hh528918.aspx) topic.  
   
-### Universal Linux – Operating System Name\/Version  
-The Universal Linux Agent, which supports Linux operating systems such as CentOS, Debian GNU\/Linux, Oracle Linux, and Ubuntu Server, parses release files to determine the host’s operating system name and version. If required, these properties can be customized. To customize the operating system properties presented to [!INCLUDE[omblue_2](../../om/manage/includes/omblue_2_md.md)] for a Universal Linux Agent host, use the following procedure:  
+### Universal Linux - Operating System Name\/Version  
+The Universal Linux Agent, which supports Linux operating systems such as CentOS, Debian GNU\/Linux, Oracle Linux, and Ubuntu Server, parses release files to determine the host's operating system name and version. If required, these properties can be customized. To customize the operating system properties presented to [!INCLUDE[omblue_2](../../om/manage/includes/omblue_2_md.md)] for a Universal Linux Agent host, use the following procedure:  
   
 Create the file `disablereleasefileupdates` in the directory: `/etc/opt/microsoft/scx/conf/`.  
   

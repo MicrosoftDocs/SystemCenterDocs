@@ -41,7 +41,7 @@ Use the following procedures to configure the key performance indicators \(KPIs\
   
 3.  To configure the thresholds for the Target metric, select the **Target** metric.  
   
-4.  In the **Thresholds** section, modify the value for **Threshold 2** to **50%**, and the value for **Threshold 1** to **25%**.  
+4.  In the **Thresholds** section, modify the value for **Threshold&nbsp;2** to **50%**, and the value for **Threshold&nbsp;1** to **25%**.  
   
 5.  In the Thresholds section, modify the value for **Best** to **100%**.  
   

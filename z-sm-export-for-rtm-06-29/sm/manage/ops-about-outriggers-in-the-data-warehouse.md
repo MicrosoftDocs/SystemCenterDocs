@@ -41,7 +41,7 @@ An outrigger in the data warehouse in System Center 2012 - Service Manager is es
 |-------------------------------|  
 |Windows XP|  
 |Windows Vista|  
-|Windows 7|  
+|Windows&nbsp;7|  
   
  An outrigger is useful in two ways:  
   
@@ -74,7 +74,7 @@ An outrigger in the data warehouse in System Center 2012 - Service Manager is es
 </Outrigger>  
 ```  
   
- As described previously, you—the management pack author—can define an outrigger on one or more class properties. Each class property is modeled by a corresponding attribute in the outrigger. The following is an example of enumeration\-based outrigger visualization. In this example, Activity Status is based on ActivityStatusEnum:  
+ As described previously, you-the management pack author-can define an outrigger on one or more class properties. Each class property is modeled by a corresponding attribute in the outrigger. The following is an example of enumeration\-based outrigger visualization. In this example, Activity Status is based on ActivityStatusEnum:  
   
 ```  
 <EnumerationTypes>   
@@ -90,7 +90,7 @@ An outrigger in the data warehouse in System Center 2012 - Service Manager is es
 </EnumerationTypes>  
 ```  
   
- Each of the values is included in the outrigger’s set of discrete values. The following table lists the column ID and ActivityStatusValue from the ActivityStatus outrigger, which contains all the enumeration values from ActivityStatusEnum.  
+ Each of the values is included in the outrigger's set of discrete values. The following table lists the column ID and ActivityStatusValue from the ActivityStatus outrigger, which contains all the enumeration values from ActivityStatusEnum.  
   
 |ID|ActivityStatusValue|  
 |--------|-------------------------|  

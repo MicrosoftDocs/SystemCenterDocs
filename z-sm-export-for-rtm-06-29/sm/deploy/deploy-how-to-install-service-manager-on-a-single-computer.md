@@ -39,7 +39,7 @@ To install System Center 2012 - Service Manager on a single computer, you instal
   
 -   Workflow account  
   
- For more information about the permissions that these accounts require, see "Accounts Required During Setup" in the [Planning Guide for System Center 2012 – Service Manager](http://go.microsoft.com/fwlink/p/?LinkID=209672). Before you start, make sure that Microsoft SQL Server 2008 is installed on the computer.  
+ For more information about the permissions that these accounts require, see "Accounts Required During Setup" in the [Planning Guide for System Center 2012 - Service Manager](http://go.microsoft.com/fwlink/p/?LinkID=209672). Before you start, make sure that Microsoft SQL&nbsp;Server&nbsp;2008 is installed on the computer.  
   
 ### To install the Service Manager management server, database, and console  
   
@@ -57,10 +57,10 @@ To install System Center 2012 - Service Manager on a single computer, you instal
   
      If the prerequisite checker determines that the Microsoft Report Viewer Redistributable has not been installed, click **Install Microsoft Report Viewer Redistributable**. After the Microsoft Report Viewer Redistributable 2008 \(KB971119\) Setup Wizard completes, click **Check prerequisites again**.  
   
-7.  On the **Configure the Service Manager database** page, Service Manager checks the current computer to see if an instance of SQL Server exists. By default, if an instance is found, Service Manager creates a new database in the existing instance. If an instance is displayed, click **Next**.  
+7.  On the **Configure the Service Manager database** page, Service Manager checks the current computer to see if an instance of SQL&nbsp;Server exists. By default, if an instance is found, Service Manager creates a new database in the existing instance. If an instance is displayed, click **Next**.  
   
     > [!IMPORTANT]  
-    >  A warning message appears if you are using the default collation \(SQL\_Latin1\_General\_CP1\_CI\_AS\). Support for multiple languages in Service Manager is not possible when you are using the default collation. If later you decide to support multiple languages using a different collation, you have to reinstall SQL Server. See “Microsoft SQL Server 2008 with SP1” in the [Planning Guide for System Center 2012 – Service Manager](http://go.microsoft.com/fwlink/p/?LinkID=209672).  
+    >  A warning message appears if you are using the default collation \(SQL\_Latin1\_General\_CP1\_CI\_AS\). Support for multiple languages in Service Manager is not possible when you are using the default collation. If later you decide to support multiple languages using a different collation, you have to reinstall SQL&nbsp;Server. See "Microsoft SQL&nbsp;Server&nbsp;2008 with SP1" in the [Planning Guide for System Center 2012 - Service Manager](http://go.microsoft.com/fwlink/p/?LinkID=209672).  
   
 8.  On the **Configure the Service Manager management group** page, complete these steps:  
   
@@ -71,9 +71,9 @@ To install System Center 2012 - Service Manager on a single computer, you instal
   
     2.  Click **Browse**, enter the user account or group to which you want to give Service Manager administrative credentials, and then click **Next**.  
   
-9. On the **Configure the account for Service Manager services** page, click **Domain account**; specify the user name, password, and domain for the account; and then click **Test Credentials**. After you receive a “The credentials were accepted” message, click **Next**.  
+9. On the **Configure the account for Service Manager services** page, click **Domain account**; specify the user name, password, and domain for the account; and then click **Test Credentials**. After you receive a "The credentials were accepted" message, click **Next**.  
   
-10. On the **Configure the Service Manager workflow account** page, click **Domain account**; specify the user name, password, and domain for the account; and then click **Test Credentials**. After you receive a “The credentials were accepted” message, click **Next**.  
+10. On the **Configure the Service Manager workflow account** page, click **Domain account**; specify the user name, password, and domain for the account; and then click **Test Credentials**. After you receive a "The credentials were accepted" message, click **Next**.  
   
 11. On the **Help improve System Center Service Manager** page, indicate your preference for participation in the Customer Experience Improvement Program. As an option, click **Tell me more about the program**, and then click **Next**.  
   
@@ -100,9 +100,9 @@ To install System Center 2012 - Service Manager on a single computer, you instal
 7.  On the **Configure data warehouse databases** page, in the **Database server** box, type the computer name of the physical computer that will host the data warehouse databases, and then press the TAB key. When **Default** is displayed in the **SQL Server instance** box, click **Next**.  
   
     > [!IMPORTANT]  
-    >  A warning message appears if you are using the default collation \(SQL\_Latin1\_General\_CP1\_CI\_AS\). Support for multiple languages in Service Manager is not possible when you are using the default collation. If later you decide to support multiple languages using a different collation, you have to reinstall SQL Server. For more information, see “Microsoft SQL Server 2008 with SP1” in the [Planning Guide for System Center 2012 – Service Manager](http://go.microsoft.com/fwlink/p/?LinkID=209672).  
+    >  A warning message appears if you are using the default collation \(SQL\_Latin1\_General\_CP1\_CI\_AS\). Support for multiple languages in Service Manager is not possible when you are using the default collation. If later you decide to support multiple languages using a different collation, you have to reinstall SQL Server. For more information, see "Microsoft SQL&nbsp;Server&nbsp;2008 with SP1" in the [Planning Guide for System Center 2012 - Service Manager](http://go.microsoft.com/fwlink/p/?LinkID=209672).  
   
-8.  On the **Configure additional data warehouse datamarts** page, Service Manager will check the current computer to see if an instance of SQL Server exists. By default, if an instance is found, Service Manager creates a new database in the existing instance. If an instance appears, click **Next**.  
+8.  On the **Configure additional data warehouse datamarts** page, Service Manager will check the current computer to see if an instance of SQL&nbsp;Server exists. By default, if an instance is found, Service Manager creates a new database in the existing instance. If an instance appears, click **Next**.  
   
 9. On the **Configure the data warehouse management group** page, complete these steps:  
   
@@ -118,13 +118,13 @@ To install System Center 2012 - Service Manager on a single computer, you instal
     > [!NOTE]  
     >  The URL that you are presented with might not be in the form of a fully qualified domain name \(FQDN\). If the URL as presented cannot be resolved in your environment, configure SQL Server Reporting URLs so that the FQDN is listed in the **Web service URL** field. For more information, see [How to: Configure a URL \(Reporting Services Configuration\)](http://go.microsoft.com/fwlink/p/?LinkId=230712).  
   
-11. On the **Configure the account for Service Manager services** page, select a domain account; click **Domain account**; specify the user name, password, and domain for the account; and then click **Test Credentials**. After you receive a “The credentials were accepted” message, click **Next**.  
+11. On the **Configure the account for Service Manager services** page, select a domain account; click **Domain account**; specify the user name, password, and domain for the account; and then click **Test Credentials**. After you receive a "The credentials were accepted" message, click **Next**.  
   
-12. On the **Configure the reporting account** page, specify the user name, password, and domain for the account, and then click **Test Credentials**. After you receive a “The credentials were accepted” message, click **Next**.  
+12. On the **Configure the reporting account** page, specify the user name, password, and domain for the account, and then click **Test Credentials**. After you receive a "The credentials were accepted" message, click **Next**.  
   
 13. On the **Configure Analysis Service for OLAP cubes** page, click **Next**.  
   
-14. On the **Configure Analysis Services credential** page, select a domain account; click **Domain account**; specify the user name, password, and domain for the account; and then click **Test Credentials**. After you receive a “The credentials were accepted” message, click **Next**.  
+14. On the **Configure Analysis Services credential** page, select a domain account; click **Domain account**; specify the user name, password, and domain for the account; and then click **Test Credentials**. After you receive a "The credentials were accepted" message, click **Next**.  
   
     > [!NOTE]  
     >  The account that you specify here must have administrator rights on the computer that hosts SSRS.  

@@ -57,10 +57,10 @@ As the first step in the two\-computer installation process, install the Service
   
      If the prerequisite checker determines that the Microsoft Report Viewer Redistributable has not been installed, click **Install Microsoft Report Viewer Redistributable**. After the Microsoft Report Viewer Redistributable 2008 \(KB971119\) Setup Wizard completes, click **Check prerequisites again**.  
   
-7.  On the **Configure the Service Manager database** page, Service Manager will check the current computer to see if an instance of SQL Server exists. By default, if an instance is found, Service Manager creates a new database in the existing instance. If an instance appears, click **Next**.  
+7.  On the **Configure the Service Manager database** page, Service Manager will check the current computer to see if an instance of SQL&nbsp;Server exists. By default, if an instance is found, Service Manager creates a new database in the existing instance. If an instance appears, click **Next**.  
   
     > [!IMPORTANT]  
-    >  A warning message appears if you are using the default collation \(SQL\_Latin1\_General\_CP1\_CI\_AS\). Support for multiple languages in Service Manager is not possible when you are using the default collation. If later you decide to support multiple languages using a different collation, you have to reinstall SQL Server. See "Microsoft SQL Server 2008 with SP1" in the [Planning Guide for System Center 2012 \- Service Manager](http://go.microsoft.com/fwlink/?LinkId=209672).  
+    >  A warning message appears if you are using the default collation \(SQL\_Latin1\_General\_CP1\_CI\_AS\). Support for multiple languages in Service Manager is not possible when you are using the default collation. If later you decide to support multiple languages using a different collation, you have to reinstall SQL&nbsp;Server. See "Microsoft SQL&nbsp;Server&nbsp;2008 with SP1" in the [Planning Guide for System Center 2012 \- Service Manager](http://go.microsoft.com/fwlink/?LinkId=209672).  
   
 8.  On the **Configure the Service Manager management group** page, complete these steps:  
   
@@ -71,9 +71,9 @@ As the first step in the two\-computer installation process, install the Service
   
     2.  Click **Browse**, enter the user account or group to which you want to give Service Manager administrative rights, and then click **Next**.  
   
-9. On the **Configure the account for Service Manager services** page, click **Domain account**; specify the user name, password, and domain for the account; and then click **Test Credentials**. After you receive a “The credentials were accepted” message, click **Next**.  
+9. On the **Configure the account for Service Manager services** page, click **Domain account**; specify the user name, password, and domain for the account; and then click **Test Credentials**. After you receive a "The credentials were accepted" message, click **Next**.  
   
-10. On the **Configure the Service Manager workflow account** page, click **Domain account**; specify the user name, password, and domain for the account; and then click **Test Credentials**. After you receive a “The credentials were accepted” message, click **Next**.  
+10. On the **Configure the Service Manager workflow account** page, click **Domain account**; specify the user name, password, and domain for the account; and then click **Test Credentials**. After you receive a "The credentials were accepted" message, click **Next**.  
   
 11. On the **Help improve System Center Service Manager** page, indicate your preference for participation in the Customer Experience Improvement Program. As an option, click **Tell me more about the program**, and then click **Next**.  
   

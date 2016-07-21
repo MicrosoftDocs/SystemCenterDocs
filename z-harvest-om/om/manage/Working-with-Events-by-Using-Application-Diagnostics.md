@@ -19,7 +19,7 @@ Working with alerts is a standard part of working with [!INCLUDE[om12long](../..
 > Deep troubleshooting of alerts from Application Performance Monitoring often requires access to the application source code and might require input from developers. You can install the Team Foundation Server Work Item Synchronization Management Pack and forward alerts to Team Foundation Server used by the development team. The Team Foundation Server Work Item Synchronization Management Pack tracks and synchronizes changes made to Team Foundation Server work items and changes made to associated Operations Manager alerts.  
   
 ## Investigating .NET Application Alerts  
-Decreasing the time it takes to determine, assign, and resolve issues is the central goal of application monitoring in [!INCLUDE[om12short](../../om/manage/includes/om12short_md.md)]. When you receive an alert, you need to know what caused it—the system hosting the application or the code, be able to show the data to back up that conclusion, and clearly see who should fix the problem. To know if it is a system issue, you need to know the state of your system at the time of the event. To know where the root problem occurred, you need to know the chain of calls that occurred. To further investigate you need to compare similar events and related events that happened at the same time. Together, the event details, performance counters, and distributed chains will help you triage who should look at this problem first. If it is a system error you can adjust the available resources or configuration of the host system and address the issue at the host level. If it is an application failure, the problem will need to go to the application team along with the line of code where the failure occurred. Here are some strategies for using the views, filters, and settings in Application Diagnostics to help you get to the root cause, find a resolution, and better know who needs to be involved to fix the problem.  
+Decreasing the time it takes to determine, assign, and resolve issues is the central goal of application monitoring in [!INCLUDE[om12short](../../om/manage/includes/om12short_md.md)]. When you receive an alert, you need to know what caused it-the system hosting the application or the code, be able to show the data to back up that conclusion, and clearly see who should fix the problem. To know if it is a system issue, you need to know the state of your system at the time of the event. To know where the root problem occurred, you need to know the chain of calls that occurred. To further investigate you need to compare similar events and related events that happened at the same time. Together, the event details, performance counters, and distributed chains will help you triage who should look at this problem first. If it is a system error you can adjust the available resources or configuration of the host system and address the issue at the host level. If it is an application failure, the problem will need to go to the application team along with the line of code where the failure occurred. Here are some strategies for using the views, filters, and settings in Application Diagnostics to help you get to the root cause, find a resolution, and better know who needs to be involved to fix the problem.  
   
 #### To open Application Diagnostics from an alert  
   
@@ -61,7 +61,7 @@ Use the following procedures to investigate your alert. IT Pros will most likely
   
     -   **Slowest Nodes** This is a list of the slowest nodes in the Execution Tree View and the most likely cause of the performance issues in the application.  
   
-    -   **Stack** This is the call stack, or order in which things happened. The Execution Tree View allows you to expand nodes to investigate the calls. Click the **Resource Group View** radio button to display an overview of where time was spent. This answers which tier the problem is in—where is it occurring?  
+    -   **Stack** This is the call stack, or order in which things happened. The Execution Tree View allows you to expand nodes to investigate the calls. Click the **Resource Group View** radio button to display an overview of where time was spent. This answers which tier the problem is in-where is it occurring?  
   
     -   **Collection Notes** This displays any notes about the event.  
   
@@ -78,7 +78,7 @@ Use the following procedures to investigate your alert. IT Pros will most likely
   
 #### To find the root problem by using Distributed chains  
   
-1.  Click the **Distributed chains** tab to view the order of calls—the chain of events of which the event is part. This helps you understand how the event you are investigating was impacted by other events from the application or related applications.  
+1.  Click the **Distributed chains** tab to view the order of calls-the chain of events of which the event is part. This helps you understand how the event you are investigating was impacted by other events from the application or related applications.  
   
 2.  In the Distributed chains view, click one of the calls, or links, in the chain. If there are multiple events for the same object, the Chaining Wizard will open. This wizard allows you to select possible events to correlate into a chain of events. To begin the Wizard, click **Next**.  
   
@@ -105,7 +105,7 @@ Use the following procedures to investigate your alert. IT Pros will most likely
   
     -   **Filtering by Failed function** groups the similar events by the same function is throwing the exception. This could mean that there is a problem with the entry point.  
   
-    Keep in mind that these are all similar events—related by definition—and these filters give you a better idea of exactly how they are related. So, using the Similar Events filters, you might find that most of your total events have the same problem as the event you are viewing, that it is a performance problem, that they belong to an exception class you configured, and that half of the similar events had the same failed function. Action: The function goes to the developer who needs to update the function code.  
+    Keep in mind that these are all similar events-related by definition-and these filters give you a better idea of exactly how they are related. So, using the Similar Events filters, you might find that most of your total events have the same problem as the event you are viewing, that it is a performance problem, that they belong to an exception class you configured, and that half of the similar events had the same failed function. Action: The function goes to the developer who needs to update the function code.  
   
 #### To troubleshoot by viewing related events  
   

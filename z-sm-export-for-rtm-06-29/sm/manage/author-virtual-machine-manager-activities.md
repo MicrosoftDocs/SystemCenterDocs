@@ -29,7 +29,7 @@ ms.assetid: 9c2a45e9-c323-4c06-8198-e63168fde03c
 
 ---
 # Virtual Machine Manager Activities
-Use virtual machine management activities in System Center 2012 - Service Manager to build workflows that allow for creating and updating virtual machines. The virtual machine management activities support System Center Virtual Machine Manager \(VMM\) 2008 2.0.  
+Use virtual machine management activities in System Center 2012 - Service Manager to build workflows that allow for creating and updating virtual machines. The virtual machine management activities support System Center Virtual Machine Manager \(VMM\)&nbsp;2008&nbsp;2.0.  
   
  The System Center 2016 - Service Manager Authoring Tool provides the following five default virtual machine management activities in the **VMM Activities** group in the **Activities Toolbox** pane.  
   

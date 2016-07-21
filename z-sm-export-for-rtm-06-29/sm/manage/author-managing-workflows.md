@@ -51,7 +51,7 @@ Use the procedures in this section to create or delete workflows in the System C
   
 -   [How to Edit a Workflow's Details](../../../sm/manage/author/How-to-Edit-a-Workflow-s-Details.md)  
   
-     Describes how to edit a workflow’s details.  
+     Describes how to edit a workflow's details.  
   
 -   [How to Delete a Workflow](../../../sm/manage/author/How-to-Delete-a-Workflow.md)  
   

@@ -19,13 +19,13 @@ Administrators for [!INCLUDE[om12long](../../om/manage/includes/om12long_md.md)]
   
 1.  Open the Operations console and click **Monitoring**.  
   
-2.  For an agent\-managed computer, navigate to the Operations Manager\\Agent Details\\Agent Health State view.  For a management server, navigate to Operations Manager\\Management Server\\Management Servers State view.  
+2.  For an agent\-managed computer, navigate to the Operations Manager\\Agent Details\\Agent Health State view.&nbsp; For a management server, navigate to Operations Manager\\Management Server\\Management Servers State view.  
   
 3.  Click the agent you want to see rules and monitors for.  
   
 4.  In the **Tasks** pane, select the task **Show Running Rules and Monitors for this Health Service**.  
   
-5.  The **Run Task – Show Running Rules and Monitors for this Health Service** dialog box appears. Click **Run**.  
+5.  The **Run Task - Show Running Rules and Monitors for this Health Service** dialog box appears. Click **Run**.  
   
 6.  The Task Status dialog box appears. When the task is completed, you can click **Copy Text** or **Copy HTML** and paste the task output in the appropriate tool for further review.  
   

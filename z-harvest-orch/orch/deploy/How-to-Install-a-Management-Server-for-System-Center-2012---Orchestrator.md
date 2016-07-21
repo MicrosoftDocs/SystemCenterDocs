@@ -45,7 +45,7 @@ Use the following steps to install an [!INCLUDE[orchlong](../../orch/deploy/incl
   
     If a prerequisite is not met, a page displays information about the prerequisite that has not been met and how to resolve the issue. Use the following steps to resolve the failed prerequisite check:  
   
-    1.  Review the items that did not pass the prerequisite check. For some requirements, such as Microsoft .NET Framework 4, you can use the link provided in the Setup Wizard to install the missing requirement. The Setup Wizard can install or configure other prerequisites, such as the Internet Information Services \(IIS\) role.  
+    1.  Review the items that did not pass the prerequisite check. For some requirements, such as Microsoft .NET&nbsp;Framework&nbsp;4, you can use the link provided in the Setup Wizard to install the missing requirement. The Setup Wizard can install or configure other prerequisites, such as the Internet Information Services \(IIS\) role.  
   
         > [!WARNING]  
         > If you enable prerequisites during setup, such as Microsoft .NET Framework 4, your computer can require a restart. If you restart your computer, you must run setup again from the beginning.  

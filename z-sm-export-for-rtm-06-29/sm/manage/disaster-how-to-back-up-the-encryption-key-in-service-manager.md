@@ -52,4 +52,4 @@ Your disaster recovery strategy for System Center 2012 - Service Manager depends
     > [!IMPORTANT]  
     >  Recovery of the password is not possible if the password is lost or forgotten.  
   
-8.  After you see the message “Secure Storage Backup Complete,” click **Finish**.
+8.  After you see the message "Secure Storage Backup Complete," click **Finish**.

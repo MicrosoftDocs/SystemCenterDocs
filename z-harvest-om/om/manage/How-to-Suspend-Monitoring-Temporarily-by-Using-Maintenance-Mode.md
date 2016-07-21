@@ -79,7 +79,7 @@ Use the following procedure to place one or more monitored objects into maintena
 6.  In the **Windows Computers** pane, the maintenance mode icon disappears from the **Maintenance Mode** column for the computer you selected.  
   
     > [!NOTE]  
-    > Because [!INCLUDE[om12short](../../om/manage/includes/om12short_md.md)] polls maintenance mode settings only once every 5 minutes, there can be a delay in an object's scheduled removal from maintenance mode.  
+    > Because [!INCLUDE[om12short](../../om/manage/includes/om12short_md.md)] polls maintenance mode settings only once every&nbsp;5 minutes, there can be a delay in an object's scheduled removal from maintenance mode.  
   
 ## See Also  
 [General Tasks in Operations Manager_1](../Topic/General%20Tasks%20in%20Operations%20Manager_1.md)  

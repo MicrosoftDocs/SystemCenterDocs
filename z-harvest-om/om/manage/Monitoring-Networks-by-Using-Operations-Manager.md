@@ -67,7 +67,7 @@ Network discovery and monitoring requires the following management packs, which 
   
 -   Microsoft.Windows.Client.NetworkDiscovery  
   
-There are additional management packs that are required to relate network devices to each other and to the agent computers they are connected to. Network monitoring requires discovery of the network adapter for each agent computer, which is performed by the management pack for the agent computer’s operating system. Verify that the management packs from the following list are installed for each of the operating systems in your environment.  
+There are additional management packs that are required to relate network devices to each other and to the agent computers they are connected to. Network monitoring requires discovery of the network adapter for each agent computer, which is performed by the management pack for the agent computer's operating system. Verify that the management packs from the following list are installed for each of the operating systems in your environment.  
   
 -   [Windows Server 2003 Operating System](http://go.microsoft.com/fwlink/p/?LinkId=219547)  
   
@@ -84,26 +84,26 @@ When you create a discovery rule, you designate a management server or gateway s
   
 Discovery rules run on a schedule that you can specify, and you can also run a rule on demand. Each time the discovery rule runs, it attempts to find new devices within its definition or changes to devices that were previously discovered. A discovery rule can perform *explicit discovery* or *recursive discovery*.  
   
--   *Explicit discovery* – An explicit discovery rule will only attempt to discover those devices that you explicitly specify in the wizard by IP address or FQDN. It will only monitor those devices that it can successfully access. The rule will attempt to access the device by using ICMP, SNMP, or both depending on the configuration of the rule.  
+-   *Explicit discovery* - An explicit discovery rule will only attempt to discover those devices that you explicitly specify in the wizard by IP address or FQDN. It will only monitor those devices that it can successfully access. The rule will attempt to access the device by using ICMP, SNMP, or both depending on the configuration of the rule.  
   
--   *Recursive discovery* – A recursive discovery rule will attempt to discover those devices that you explicitly specify in the wizard by IP address, as well as other network devices that are connected to the specified SNMP v1 or v2 device and that the specified SNMP v1 or v2 device knows about through the device’s Address Routing Protocol \(ARP\) table, its IP address table, or the topology Management Information Block \(MIB\).  
+-   *Recursive discovery* - A recursive discovery rule will attempt to discover those devices that you explicitly specify in the wizard by IP address, as well as other network devices that are connected to the specified SNMP v1 or v2 device and that the specified SNMP v1 or v2 device knows about through the device's Address Routing Protocol \(ARP\) table, its IP address table, or the topology Management Information Block \(MIB\).  
   
-    If you use recursive discovery, you can elect to discover all the other network devices that the specified SNMP v1 or v2 device knows about or only network devices that are connected to the specified SNMP v1 or v2 device that are in a specified IP address range. You can also filter recursive discovery by using such properties as the device type, name, and object identifier \(OID\).  
+    If you use recursive discovery, you can elect to discover all the other network devices that the specified SNMP&nbsp;v1 or&nbsp;v2 device knows about or only network devices that are connected to the specified SNMP v1 or v2 device that are in a specified IP address range. You can also filter recursive discovery by using such properties as the device type, name, and object identifier \(OID\).  
   
     > [!NOTE]  
     > Operations Manager can identify connected devices in a recursive discovery that use an IPv6 address; however, the initial device that is discovered must use an IPv4 address.  
   
 A discovery rule can perform only explicit or recursive discovery, but cannot perform a combination of discovery types. You can change the discovery type of a rule after the rule is created. If you know all of the network devices that you want discovered, you should use explicit discovery. Recursive discovery can discover devices that you have no business need to monitor and as a result, can increase the administrative workload of monitoring your network.  
   
-A discovery rule can discover any combination of SNMP v1, v2, and v3 devices. SNMP v3 devices can only be discovered by explicit discovery or by being specified in a recursive discovery rule. If you specify an SNMP v3 device in a recursive discovery rule, the SNMP v3 device will be discovered but devices connected to it will not be discovered. If you specify an SNMP v1 or v2 device in a recursive discovery rule, only SNMP v1 and v2 devices connected to it will be included in the recursive discovery.  
+A discovery rule can discover any combination of SNMP v1, v2, and v3 devices. SNMP v3 devices can only be discovered by explicit discovery or by being specified in a recursive discovery rule. If you specify an SNMP&nbsp;v3 device in a recursive discovery rule, the SNMP&nbsp;v3 device will be discovered but devices connected to it will not be discovered. If you specify an SNMP&nbsp;v1 or v2 device in a recursive discovery rule, only SNMP v1 and v2 devices connected to it will be included in the recursive discovery.  
   
 SNMP trap rules are not supported for SNMP v3 devices.  
   
 > [!NOTE]  
 > Windows computers running SNMP are filtered out of discovery results if:  
 >   
-> -   The device type is “Host” and the vendor is “Microsoft”  
-> -   The sysDescription field contains “Microsoft”  
+> -   The device type is "Host" and the vendor is "Microsoft"  
+> -   The sysDescription field contains "Microsoft"  
 > -   The sysOid starts with .1.3.6.1.4.1.311.1.1.3.1  
 > -   The sysOid contains 1.3.6.1.4.1.199.1.1.3.11  
   
@@ -111,7 +111,7 @@ In the discovery rule configuration, you specify whether Operations Manager will
   
 Credentials are also needed to communicate with the device. You associate each discovery rule with Run As accounts that supply the community string \(for SNMP v1 and v2 devices\) or access credentials \(SNMP v3\) to [!INCLUDE[om12short](../../om/manage/includes/om12short_md.md)]. For more information, see [Run As Accounts for Network Monitoring in Operations Manager](../../om/manage/Run-As-Accounts-for-Network-Monitoring-in-Operations-Manager.md).  
   
-After [!INCLUDE[om12short](../../om/manage/includes/om12short_md.md)] successfully accesses a specified network device, if you selected recursive discovery, it attempts to discover other network devices that the specified device knows about through the device’s ARP table, its IP address table, or the topology MIB files.  
+After [!INCLUDE[om12short](../../om/manage/includes/om12short_md.md)] successfully accesses a specified network device, if you selected recursive discovery, it attempts to discover other network devices that the specified device knows about through the device's ARP table, its IP address table, or the topology MIB files.  
   
 Network device discovery consists of the following phases, which are displayed in the status of the discovery task:  
   

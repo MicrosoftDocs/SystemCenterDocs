@@ -13,7 +13,7 @@ author:mgoedtel
 manager:cfreemanwa
 ---
 # Operations Guide for System Center 2012 - Operations Manager
-Operations Manager, a component of System Center 2012, enables you to monitor services, devices, and operations for many computers in a single console. Operators can gain rapid insight into the state of the IT environment and the IT services running across different systems and workloads by using numerous views that show state, health, and performance information, as well as alerts generated for availability, performance, configuration and security situations.  
+Operations Manager, a component of System Center&nbsp;2012, enables you to monitor services, devices, and operations for many computers in a single console. Operators can gain rapid insight into the state of the IT environment and the IT services running across different systems and workloads by using numerous views that show state, health, and performance information, as well as alerts generated for availability, performance, configuration and security situations.  
   
 The Operations Guide is a comprehensive resource that can be used to understand and use Operations Manager. The Operations Guide covers administrative, monitoring, reporting, and operating tasks typically performed by an administrator or operator. It follows the Operations Manager Deployment Guide in order of use during an Operations Manager implementation project, but does not assume that the administrator or operator participated in the installation of the Operations Manager infrastructure.  
   
@@ -21,7 +21,7 @@ The Operations Guide is a comprehensive resource that can be used to understand 
   
 If you are new to Operations Manager, you should read [Key Concepts](http://go.microsoft.com/fwlink/p/?LinkID=224022) to understand what a management group is and how Operations Manager works.  
   
-If you are familiar with Operations Manager 2007, you should read [What’s New in System Center 2012 \- Operations Manager](http://go.microsoft.com/fwlink/p/?LinkId=223462) to review the differences between Operations Manager 2007 and Operations Manager for System Center 2012.  
+If you are familiar with Operations Manager&nbsp;2007, you should read [What's New in System Center 2012 \- Operations Manager](http://go.microsoft.com/fwlink/p/?LinkId=223462) to review the differences between Operations Manager&nbsp;2007 and Operations Manager for System Center&nbsp;2012.  
   
 ## In the Operations Guide  
   
@@ -57,7 +57,7 @@ If you are familiar with Operations Manager 2007, you should read [What’s New
   
 -   [TechNet Library main page for System Center 2012 \- Operations Manager](http://go.microsoft.com/fwlink/p/?LinkId=223634)  
   
--   [What’s New in System Center 2012 \- Operations Manager](http://go.microsoft.com/fwlink/p/?LinkId=223462)  
+-   [What's New in System Center 2012 \- Operations Manager](http://go.microsoft.com/fwlink/p/?LinkId=223462)  
   
 -   [System Center 2012 \- Operations Manager Release Notes](http://go.microsoft.com/fwlink/p/?LinkID=221147)  
   

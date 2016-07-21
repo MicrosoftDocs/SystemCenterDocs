@@ -39,7 +39,7 @@ Consider the following points as you design your runbook:
   
 4.  Limit the number of activities per runbook \- Too many activities in a single runbook make it difficult to administer and troubleshoot. Consider splitting a runbook into several subtasks and create child runbooks for each of those subtasks. You can invoke the child runbooks from a parent runbook. You can reuse these child runbooks in other workflows.  
   
-5.  Runbook logs \- By default, logging options are disabled for runbooks. When you enable logging, the data significantly increases the size of your database. As an alternative, you can log to an external system or file.  
+5.  Runbook logs \- By default, logging options are disabled for runbooks. When you enable&nbsp;logging, the data significantly increases the size of your database. As an alternative, you can log to an external system or file.  
   
 ## See Also  
 [Design and Build Runbooks](../../orch/manage/Design-and-Build-Runbooks.md)  

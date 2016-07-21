@@ -57,7 +57,7 @@ Notifications generate messages or run commands automatically when an alert is r
 In **Notifications** in the Administration workspace, you can create channels, subscribers, subscriptions, and modify the channels, subscribers, and subscriptions that you create. For more information, see [Subscribing to Alert Notifications](../../om/manage/Subscribing-to-Alert-Notifications.md).  
   
 ## <a name="BKMK_productconnectors"></a>Product Connectors  
-Product connectors are used to synchronize Operations Manager data with other management systems such as those that monitor non\-Windows computers or create trouble\-tickets. Product connectors can integrate a deployment of Operations Manager into another management platform or connect other management systems into a full Operations Manager management solution. Any product connectors that you integrate with Operations Manager will be displayed in this section of the Administration workspace.  
+Product connectors are used to synchronize Operations Manager data with other management systems such as those that monitor non\-Windows computers or create trouble\-tickets. Product connectors can integrate a deployment of Operations Manager&nbsp;into another management platform or connect other management systems into a full Operations Manager management solution. Any product connectors that you integrate with Operations Manager will be displayed in this section of the Administration workspace.  
   
 When you install Operations Manager, two internal product connectors are installed. These are used by Operations Manager.  
   

@@ -13,11 +13,11 @@ author:mgoedtel
 manager:cfreemanwa
 ---
 # Install the Visio Services Data Provider
-The Visio Services Data Provider for [!INCLUDE[om12long](../../om/manage/includes/om12long_md.md)] leverages SharePoint 2010’s Visio Services to enable Visio diagrams to show live health state from [!INCLUDE[om12short](../../om/manage/includes/om12short_md.md)] in SharePoint.  
+The Visio Services Data Provider for [!INCLUDE[om12long](../../om/manage/includes/om12long_md.md)] leverages SharePoint 2010's Visio Services to enable Visio diagrams to show live health state from [!INCLUDE[om12short](../../om/manage/includes/om12short_md.md)] in SharePoint.  
   
 The Visio Services Data Provider for [!INCLUDE[om12long](../../om/manage/includes/om12long_md.md)] has the following prerequisites:  
   
--   System Center 2012 – Operations Manager, Operations or Authoring console  
+-   System Center 2012 - Operations Manager, Operations or Authoring console  
   
 -   SharePoint 2010 Enterprise  
   
@@ -52,7 +52,7 @@ The Visio Services Data Provider for [!INCLUDE[om12long](../../om/manage/include
   
     The `InstallOpsMgrDataModule` cmdlet installs the deployment package to the solution store for the server farm and then deploys the data module to each of the SharePoint servers in the server farm.  
   
-6.  After the cmdlet has completed, you can verify that the package was successfully deployed by running the `get-spsolution` cmdlet. You should see “True” in the Deployed column next to the opsmgrdatamodule.wsp entry.  
+6.  After the cmdlet has completed, you can verify that the package was successfully deployed by running the `get-spsolution` cmdlet. You should see "True" in the Deployed column next to the opsmgrdatamodule.wsp entry.  
   
 7.  Start SharePoint Central Administration to verify that the data provider is listed as a Trusted Data Provider for Visio Services.  
   

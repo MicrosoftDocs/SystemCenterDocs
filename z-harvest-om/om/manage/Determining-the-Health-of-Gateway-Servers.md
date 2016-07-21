@@ -26,7 +26,7 @@ Gateway servers relay monitoring data from agents to collection management serve
 ## Viewing Agents by Gateway  
 Use the following procedure to view the primary management server for an agent.  
   
-#### How to view an agent’s primary management server  
+#### How to view an agent's primary management server  
   
 1.  Open the Operations console, and then click **Administration**.  
   

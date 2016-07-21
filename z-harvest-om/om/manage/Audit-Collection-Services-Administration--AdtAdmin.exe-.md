@@ -46,8 +46,8 @@ Each AdtAdmin parameter has from a few to several subparameters. The subparamete
 |\/Forwarder:Name|Specifies an ACS forwarder by its computer name.|  
 |\/ForwarderID:ForwarderIDNumber|Specifies an ACS forwarder by its identification number. An identification number is assigned to an ACS forwarder when it first connects to the ACS collector.|  
 |\/ForwarderSID:SID|Specifies an ACS forwarder by its computer security identification number \(SID\).|  
-|\/Group:GroupName|Specifies a group of ACS forwarders by the group’s name.|  
-|\/GroupID: IdentificationNumber|Specifies a group of ACS forwarders by the group’s identification number. An identification number is assigned to a group when it is first created.|  
+|\/Group:GroupName|Specifies a group of ACS forwarders by the group's name.|  
+|\/GroupID: IdentificationNumber|Specifies a group of ACS forwarders by the group's identification number. An identification number is assigned to a group when it is first created.|  
 |\/Value:ValueNumber|Specifies an ACS forwarder or ACS group by its assigned connection value. The ACS collector prioritizes connections from ACS forwarders using connection values that range from \-1 through 99. A \-1 value means the forwarder is part of an ACS group and that the group's value is used to determine the forwarder's priority. A 0 value means the ACS collector ignores data from that ACS forwarder or group. If event saturation is detected, a collector disconnects forwarders or a group of forwarders with lower values before disconnecting forwarders with higher values.|  
   
 ## See Also  

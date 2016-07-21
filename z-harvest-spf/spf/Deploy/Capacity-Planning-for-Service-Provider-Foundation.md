@@ -27,7 +27,7 @@ The following server scenarios each pertain to the recommendations listed in the
   
 -   [!INCLUDE[conceroshort](../../om/manage/includes/conceroshort_md.md)] with or without SQL Server  
   
-|5,000 or Fewer Virtual Machines|5,000 – 12,000 Virtual Machines|12,000 – 25,000 Virtual Machines|  
+|5,000 or Fewer Virtual Machines|5,000 - 12,000 Virtual Machines|12,000 - 25,000 Virtual Machines|  
 |-----------------------------------|-----------------------------------|------------------------------------|  
 |4 processor cores, 8 GB RAM|8 processor cores, 8 GB RAM.<br /><br />4 processor cores, 8 GB RAM is sufficient for computers running [!INCLUDE[conceroshort](../../om/manage/includes/conceroshort_md.md)] with or without SQL Server.|16 processor cores, 8 GB RAM recommended only for computers running [!INCLUDE[vmm12short](../../spf/Deploy/includes/vmm12short_md.md)] with or without SQL Server.|  
   

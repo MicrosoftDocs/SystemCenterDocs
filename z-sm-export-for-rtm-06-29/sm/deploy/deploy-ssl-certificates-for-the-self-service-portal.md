@@ -35,26 +35,26 @@ We strongly recommend using Secure Sockets Layer \(SSL\) certificates with the S
 
  The following sections expand on the steps you can take to solve SSL\-related problems that you might encounter with the Self-Service Portal.  
 
-## Certificate “Issued to” Name  
- The address that you type into the browser to connect to the SharePoint website and the address of the web content server that was defined in the SharePoint website *must each match the “Issued to” name on their associated certificate or certificates*. When you connect to the SharePoint website, if the address that you type in the browser does not match the “Issued to” name on the certificate, you will see a Certificate Warning and the background in the browser's address line will be red. If the web content server address that was configured in the SharePoint website does not match the “Issued to” name on the certificate, the center frame in the browser will be blank, as shown in the following illustration.  
+## Certificate "Issued to" Name  
+ The address that you type into the browser to connect to the SharePoint website and the address of the web content server that was defined in the SharePoint website *must each match the "Issued to" name on their associated certificate or certificates*. When you connect to the SharePoint website, if the address that you type in the browser does not match the "Issued to" name on the certificate, you will see a Certificate Warning and the background in the browser's address line will be red. If the web content server address that was configured in the SharePoint website does not match the "Issued to" name on the certificate, the center frame in the browser will be blank, as shown in the following illustration.  
 
  ![Blank content from web content server](../media/deploy-blankcontentfromwcs.png)  
 
 ### Name Mismatch on the SharePoint Website  
- If the address that you type in the browser when you connect to the SharePoint website does not match the “Issued to” address in the certificate, you have the following options:  
+ If the address that you type in the browser when you connect to the SharePoint website does not match the "Issued to" address in the certificate, you have the following options:  
 
 -   Continue past the warning and continue  
 
--   Change the name in the address line in the browser to match the “Issued to” name on the certificate  
+-   Change the name in the address line in the browser to match the "Issued to" name on the certificate  
 
--   Obtain a new certificate where the “Issued to” name matches the address that you want to enter in the browser  
+-   Obtain a new certificate where the "Issued to" name matches the address that you want to enter in the browser  
 
 ### Name Mismatch for the Web Content Server  
- If the address for the web content server that is configured on the SharePoint website does not match the “Issued to” address in the certificate on the web content server, the center frame in the Self-Service Portal will be blank. In this case, you have the following options:  
+ If the address for the web content server that is configured on the SharePoint website does not match the "Issued to" address in the certificate on the web content server, the center frame in the Self-Service Portal will be blank. In this case, you have the following options:  
 
 -   Obtain a new certificate for the web content server that matches the URL that is configured on the SharePoint website  
 
--   Configure the address for the web content server that is stored on the SharePoint website to match the “Issued to” name on the certificate that is used for the web content server  
+-   Configure the address for the web content server that is stored on the SharePoint website to match the "Issued to" name on the certificate that is used for the web content server  
 
 ## Certificate Must Be Trusted  
  Make sure that the Certification Authority \(CA\) that issued your certificates is listed in the Trusted Root Certification Authority store for the clients accessing the site. For information about determining whether a certificate is trusted, see [How to Examine Properties of a Certificate](../../../sm/deploy/deploy-guide/How-to-Examine-Properties-of-a-Certificate.md).  
@@ -63,7 +63,7 @@ We strongly recommend using Secure Sockets Layer \(SSL\) certificates with the S
 
 -   [How to Examine Properties of a Certificate](../../../sm/deploy/deploy-guide/How-to-Examine-Properties-of-a-Certificate.md)  
 
-     Describes how to learn what the “Issue to” name is for a certificate, determine whether the certificate is trusted, and determine the certificate thumbprint.  
+     Describes how to learn what the "Issue to" name is for a certificate, determine whether the certificate is trusted, and determine the certificate thumbprint.  
 
 -   [How to Reconfigure the Web Content Server URL](../../../sm/deploy/deploy-guide/How-to-Reconfigure-the-Web-Content-Server-URL.md)  
 

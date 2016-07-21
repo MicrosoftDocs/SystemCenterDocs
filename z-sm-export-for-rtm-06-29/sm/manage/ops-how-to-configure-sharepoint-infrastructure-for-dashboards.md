@@ -29,7 +29,7 @@ ms.assetid: b1a98298-29f0-4e58-9809-9ba8368bc77c
 
 ---
 # How to Configure SharePoint Infrastructure for Dashboards
-Before you can create and deploy dashboards for use on the Self-Service Portal in System Center 2012 - Service Manager, you must configure Microsoft SharePoint 2010 and then install Dashboard Designer.  
+Before you can create and deploy dashboards for use on the Self-Service Portal in System Center 2012 - Service Manager, you must configure Microsoft SharePoint&nbsp;2010 and then install Dashboard Designer.  
   
 ### To configure SharePoint infrastructure for dashboards  
   
@@ -45,7 +45,7 @@ Before you can create and deploy dashboards for use on the Self-Service Portal i
   
 6.  Next, configure the PerformancePoint Unattended Service Account by opening the SharePoint Central Administration page. Then, under **Application Management**, click **Manage service applications**. Click **PerformancePoint Service Application**, and then click **PerformancePoint Service Application Settings**. Type your credentials in the **Secure Store and Unattended Service Account** area, and then click **OK**.  
   
-7.  If an error message appears that says “The Unattended Service Account cannot be set for the service application,” you can resolve this problem by doing the following:  
+7.  If an error message appears that says "The Unattended Service Account cannot be set for the service application," you can resolve this problem by doing the following:  
   
     1.  Navigate to the **SharePoint 2012 Central Administration** page, and then under **Application Management**, click **Manage service applications**.  
   
@@ -55,16 +55,16 @@ Before you can create and deploy dashboards for use on the Self-Service Portal i
   
 8.  On the new Business Intelligence Center site page that you created, move your mouse over the **Monitor Key Performance** area of the page, and then click **Start using PerformancePoint Services**.  
   
-9. If an error message appears that says “An error occurred during the processing of \<FolderPath\>\/\<PageName\>.aspx. Code blocks are not allowed in this file,” you can resolve this problem by inserting the following information into the Web.config file between the PageParserPaths tags of your SharePoint site:  
+9. If an error message appears that says "An error occurred during the processing of \<FolderPath\>\/\<PageName\>.aspx. Code blocks are not allowed in this file," you can resolve this problem by inserting the following information into the Web.config file between the PageParserPaths tags of your SharePoint site:  
   
     ```  
     <PageParserPaths>  
-    <PageParserPath VirtualPath=”<FolderPath>/<PageName>.aspx” CompilationMode=”Always” AllowServerSideScript=”true”/>  
+    <PageParserPath VirtualPath="<FolderPath>/<PageName>.aspx" CompilationMode="Always" AllowServerSideScript="true"/>  
     </PageParserPaths>  
   
     ```  
   
-10. On the new page, **click Run Dashboard Designer**, and then in the **Application Run – Security Warning** dialog box, click **Run** to install PerformancePoint Dashboard Designer. Later, you can start Dashboard Designer from the **Start** menu.  
+10. On the new page, **click Run Dashboard Designer**, and then in the **Application Run - Security Warning** dialog box, click **Run** to install PerformancePoint Dashboard Designer. Later, you can start Dashboard Designer from the **Start** menu.  
   
 ## See Also  
  [Creating and Deploying Dashboards](../../../sm/manage/operate/Creating-and-Deploying-Dashboards.md)

@@ -32,7 +32,7 @@ All Linux operating systems and versions supported both by [!INCLUDE[omblue_1](.
   
 For more information about supported Linux operating systems, see the following:  
   
--   [System Center 2012 R2 – Operations Manager supported Linux operating systems](http://go.microsoft.com/fwlink/?LinkID=325541)  
+-   [System Center 2012 R2 - Operations Manager supported Linux operating systems](http://go.microsoft.com/fwlink/?LinkID=325541)  
   
 -   [Windows Azure supported Linux operating systems](http://go.microsoft.com/fwlink/?LinkID=325542)  
   
@@ -184,7 +184,7 @@ Linux virtual machines created from Gallery images do not have swap space config
   
 2.  Expand **Management Pack Objects** and click **Monitors**.  
   
-3.  Search for the string: “Available Megabytes Swap” in the top search bar.  
+3.  Search for the string: "Available Megabytes Swap" in the top search bar.  
   
     There will be one monitor with the name: **Operating System Available Megabytes Swap Space** for each Linux operating system and version. For each of these that apply to the Linux virtual machines hosted in Windows Azure, right\-click the monitor, and then select **Overrides \-> Override the Monitor \-> For a Group**.  
   
@@ -201,7 +201,7 @@ The SUSE Linux Enterprise Server management packs include a default monitor for 
   
 2.  Expand **Management Pack Objects** and click **Monitors**.  
   
-3.  Search for the string: “Process Acpi” in the top search bar.  
+3.  Search for the string: "Process Acpi" in the top search bar.  
   
     There will be one monitor with the name: **Process Acpi Service Health** for each SUSE Linux Enterprise Server version. For each of these that apply to the Linux virtual machines hosted in Windows Azure, right click the monitor, and then select **Overrides \-> Override the Monitor \-> For a Group**.  
   
@@ -221,7 +221,7 @@ The SUSE Linux Enterprise Server management packs include a default monitor for 
   
 -   [Troubleshooting UNIX\/Linux Agent Discovery in System Center 2012 \- Operations Manager](http://go.microsoft.com/fwlink/?LinkID=325548)  
   
--   [Configuring sudo Elevation for UNIX and Linux Monitoring with System Center 2012 – Operations Manager](http://go.microsoft.com/fwlink/?LinkID=325549)  
+-   [Configuring sudo Elevation for UNIX and Linux Monitoring with System Center 2012 - Operations Manager](http://go.microsoft.com/fwlink/?LinkID=325549)  
   
 -   [Introduction to Linux on Windows Azure](http://go.microsoft.com/fwlink/?LinkID=325550)  
   

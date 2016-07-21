@@ -36,22 +36,22 @@ Before you set up the Authoring Tool in System Center 2012 - Service Manager, en
   
 ## Operating System Requirements  
   
--   Windows Vista \(any edition\) with the latest service pack  
+-   Windows&nbsp;Vista \(any edition\) with the latest service pack  
   
--   Windows 7  
+-   Windows&nbsp;7  
   
--   Windows Server 2008 with the latest service pack  
+-   Windows Server&nbsp;2008 with the latest service pack  
   
--   Windows Server 2008 R2  
+-   Windows Server&nbsp;2008&nbsp;R2  
   
 ## Additional Requirements  
   
--   [Microsoft .NET Framework 3.5](http://go.microsoft.com/fwlink/p/?LinkId=162791), which you can download from the Microsoft Download Center.  
+-   [Microsoft .NET Framework&nbsp;3.5](http://go.microsoft.com/fwlink/p/?LinkId=162791), which you can download from the Microsoft Download Center.  
   
--   Microsoft Visual Studio 2008 Shell, which must be in the same language as the display language of the operating system. You can install Visual Studio 2008 Shell from the **Prerequisites** page in the Service Manager Authoring Tool Setup Wizard.  
+-   Microsoft Visual Studio&nbsp;2008 Shell, which must be in the same language as the display language of the operating system. You can install Visual&nbsp;Studio&nbsp;2008 Shell from the **Prerequisites** page in the Service Manager Authoring Tool Setup Wizard.  
   
     > [!NOTE]  
-    >  During Authoring Tool Setup, if an error appears stating that Microsoft Visual Studio Shell 2008 is not installed and you’ve verified that it is installed, then the Visual Studio 2008 Shell Isolated Mode Redistributable Package might not be installed completely. To install it, navigate to \<SystemDrive\>\\VS 2008 Shell Redist\\Isolated Mode\\ and run VS\_Shell\_isolated.enu.exe.  
+    >  During Authoring Tool Setup, if an error appears stating that Microsoft Visual Studio Shell 2008 is not installed and you've verified that it is installed, then the Visual Studio 2008 Shell Isolated Mode Redistributable Package might not be installed completely. To install it, navigate to \<SystemDrive\>\\VS 2008 Shell Redist\\Isolated Mode\\ and run VS\_Shell\_isolated.enu.exe.  
   
 ## See Also  
- [Overview of the Authoring Tool for System Center 2012 – Service Manager](../Topic/Overview%20of%20the%20Authoring%20Tool%20for%20System%20Center%202012%20%E2%80%93%20Service%20Manager.md)
+ [Overview of the Authoring Tool for System Center 2012 - Service Manager](../Topic/Overview%20of%20the%20Authoring%20Tool%20for%20System%20Center%202012%20%E2%80%93%20Service%20Manager.md)

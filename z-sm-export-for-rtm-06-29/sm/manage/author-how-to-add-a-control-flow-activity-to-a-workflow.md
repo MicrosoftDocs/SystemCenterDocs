@@ -29,7 +29,7 @@ ms.assetid: a554c4af-4d94-400d-82a6-d9ca08ecb6d6
 
 ---
 # How to Add a Control Flow Activity to a Workflow
-Use control flow activities to provide structure—branches, loops, or timer delays—for your workflow. The System Center 2016 - Service Manager Authoring Tool provides four built\-in control flow activities:  
+Use control flow activities to provide structure-branches, loops, or timer delays-for your workflow. The System Center 2016 - Service Manager Authoring Tool provides four built\-in control flow activities:  
   
 -   **[Delay Activity](../../../sm/manage/author/Delay-Activity.md)** : Introduces a delay between activities in a workflow.  
   
@@ -39,7 +39,7 @@ Use control flow activities to provide structure—branches, loops, or timer del
   
 -   **[Parallel Activity](../../../sm/manage/author/Parallel-Activity.md)** : Forks the sequence of activities into two simultaneous sequences of activities.  
   
- To use a **Delay** activity, just drag the **Delay** activity into the workflow, and then set the activity’s **TimeoutDuration** property to the delay interval you want to use. To use an **IfElse** or **Parallel** activity, drag the activity into the workflow, and then drop regular activities into the **IfElse** or **Parallel** activity.  
+ To use a **Delay** activity, just drag the **Delay** activity into the workflow, and then set the activity's **TimeoutDuration** property to the delay interval you want to use. To use an **IfElse** or **Parallel** activity, drag the activity into the workflow, and then drop regular activities into the **IfElse** or **Parallel** activity.  
   
  Using a **For Each Loop** activity resembles using an **IfElse** or **Parallel** activity; however, you might want to set additional properties for the activities in the **For Each Loop**. Use the following procedure to add a **For Each Loop** to a workflow.  
   

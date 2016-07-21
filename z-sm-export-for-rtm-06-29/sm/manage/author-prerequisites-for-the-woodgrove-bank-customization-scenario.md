@@ -35,9 +35,9 @@ The Woodgrove Bank customization scenario has the following prerequisites:
   
 -   The System Center 2016 - Service Manager Authoring Tool must be installed in your environment.  
   
--   The Workflow Account in Service Manager must be a member of the Domain Administrators group because this scenario involves creating a workflow that adds a computer to a group in Active Directory Domain Services \(AD DS\). You specify the Workflow Account in the Service Manager Server Setup Wizard.  
+-   The Workflow Account in Service Manager must be a member of the Domain Administrators group because this scenario involves creating a workflow that adds a computer to a group in Active&nbsp;Directory Domain Services \(AD&nbsp;DS\). You specify the Workflow Account in the Service Manager Server Setup Wizard.  
   
- The Authoring Tool’s installation folder includes a **Samples** subfolder that contains the following files, which are required for the Woodgrove Bank customization scenario.  
+ The Authoring Tool's installation folder includes a **Samples** subfolder that contains the following files, which are required for the Woodgrove Bank customization scenario.  
   
 |File|Description|  
 |----------|-----------------|  

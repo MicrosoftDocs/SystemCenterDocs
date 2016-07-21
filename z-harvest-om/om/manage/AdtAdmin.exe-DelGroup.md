@@ -15,7 +15,7 @@ manager:cfreemanwa
 # AdtAdmin.exe DelGroup
 The *\/DelGroup* parameter deletes a group from an ACS collector by using its name or group identification number. When a group is deleted, the forwarders that belong to the group are not deleted. Any forwarders assigned to a group when it is deleted are added to or still belong to the default top\-level groups.  
   
-No output is generated from this command. You can use the *\/ListGroups* parameter to verify that the group was created and also to determine a group’s assigned identification number.  
+No output is generated from this command. You can use the *\/ListGroups* parameter to verify that the group was created and also to determine a group's assigned identification number.  
   
 ## Syntax  
 `AdtAdmin.exe /DelGroup [/Collector:<CollectorName>] {[/Group:<GroupName>] | [/GroupID:<IdentificationNumber>]}`  
@@ -23,8 +23,8 @@ No output is generated from this command. You can use the *\/ListGroups* paramet
 |Subparameter|Description|  
 |----------------|---------------|  
 |\/Collector:CollectorName|Specifies the ACS collector on which the group was created. If this subparameter is omitted, the local ACS collector is assumed.|  
-|\/Group:GroupName|Specifies an ACS group to delete by the group’s name.|  
-|\/GroupID:IdentificationNumber|Specifies an ACS group to delete by the group’s identification number. An identification number is assigned to a group when it is first created.|  
+|\/Group:GroupName|Specifies an ACS group to delete by the group's name.|  
+|\/GroupID:IdentificationNumber|Specifies an ACS group to delete by the group's identification number. An identification number is assigned to a group when it is first created.|  
   
 ## Example  
 Use the following example to delete an ACS group that has the name "Accounting Computers":  

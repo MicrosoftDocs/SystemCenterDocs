@@ -1,5 +1,5 @@
 ---
-title: Overview of the Authoring Tool for System Center 2012 – Service Manager
+title: Overview of the Authoring Tool for System Center 2012 - Service Manager
 ms.custom: na
 ms.prod: system-center-2012
 ms.reviewer: na
@@ -28,7 +28,7 @@ ms.assetid: 0e44c62f-148a-440b-aaf0-e6a36b8d901d
 
 
 ---
-# Overview of the Authoring Tool for System Center 2012 – Service Manager
+# Overview of the Authoring Tool for System Center 2012 - Service Manager
 The Authoring Tool is a tool in System Center 2012 - Service Manager that you can use to open an existing management pack so that you can view, customize, and extend it. Using the Authoring Tool, you can do the following:  
   
 -   Extend and customize the Service Manager class model  

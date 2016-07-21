@@ -33,7 +33,7 @@ In this step of the Woodgrove Bank customization scenario, Ken creates the workf
   
 -   **When should the workflow run?** The workflow should start when the applicable change request is approved.  
   
--   **What does the workflow need to do?** The workflow needs to add a computer to a group in Active Directory Domain Services \(AD DS\), and then change the status of the automated activity to "Complete."  
+-   **What does the workflow need to do?** The workflow needs to add a computer to a group in Active Directory Domain Services \(AD&nbsp;DS\), and then change the status of the automated activity to "Complete."  
   
 -   **What information does the workflow need?** The change request provides information about the specific computer and group to use. Properties of the workflow activities can retrieve the change request information from the Service Manager activity that is associated with the change request.  
   
@@ -100,7 +100,7 @@ In this step of the Woodgrove Bank customization scenario, Ken creates the workf
   
 4.  In the authoring pane, click the **Set Activity Status to Completed** activity.  
   
-5.  Click **Activity ID**, and click the ellipsis button \(**…**\) that appears next to the property. On the left side of the dialog box, click **Use a class property**, and then, in the property list, click **ID \(Internal\)**. Click **OK**.  
+5.  Click **Activity ID**, and click the ellipsis button \(**...**\) that appears next to the property. On the left side of the dialog box, click **Use a class property**, and then, in the property list, click **ID \(Internal\)**. Click **OK**.  
   
 6.  In the **Management Pack Explorer**, right\-click the management pack, and then click **Save**.  
   

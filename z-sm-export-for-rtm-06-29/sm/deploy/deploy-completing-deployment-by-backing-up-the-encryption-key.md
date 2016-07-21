@@ -54,7 +54,7 @@ When you deployed your System Center 2012 - Service Manager management server an
     > [!NOTE]  
     >  Recovery of the password is not possible if it is lost or forgotten.  
   
-8.  After you receive the message “Secure Storage Backup Complete,” click **Finish**.  
+8.  After you receive the message "Secure Storage Backup Complete," click **Finish**.  
   
 ### To restore the encryption key  
   

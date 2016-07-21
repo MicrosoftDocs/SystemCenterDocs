@@ -164,7 +164,7 @@ The ability to define customized management pack elements was used to model the 
 |IntermediateMeasureGroup|Yes|String|The intermediate measure group to create the many\-to\-many relationship|  
   
 ## KPI  
- Organizations and businesses can use key performance indicators \(KPIs\) to quickly estimate the health of an enterprise by measuring its progress toward a predefined goal. Each KPI has a target value and an actual value. The target value is a quantitative goal that is critical to the success of the organization. Large amounts of data are filtered to one discrete value that can be used to monitor performance and progress towards goals and benchmarks. Some examples of KPIs are a college having a goal that 90% of their students graduate within four years or a basketball team with a goal of causing the opposing team to shoot less than 50 percent for a game. You can use a scorecard to show a group of KPIs, providing in one instantaneous snapshot the overall health of a business. The following is an example KPI:  
+ Organizations and businesses can use key performance indicators \(KPIs\) to quickly estimate the health of an enterprise by measuring its progress toward a predefined goal. Each KPI has a target value and an actual value. The target value is a quantitative goal that is critical to the success of the organization. Large amounts of data are filtered to one discrete value that can be used to monitor performance and progress towards goals and benchmarks. Some examples of KPIs are a college having a goal that 90% of their students graduate within four years or a basketball team with a goal of causing the opposing team to shoot less than 50&nbsp;percent for a game. You can use a scorecard to show a group of KPIs, providing in one instantaneous snapshot the overall health of a business. The following is an example KPI:  
   
 ```  
 <KPI ID="IncidentResolutiuonKpi" >  
@@ -185,11 +185,11 @@ The ability to define customized management pack elements was used to model the 
 |ID|Yes|String|Name of the KPI|  
 |Caption|Yes|String|Description of the KPI|  
 |Value|Yes|String|MDX script defining the numeric value of the KPI|  
-|Goal|Yes|String|​The target value of the KPI|  
-|Green Threshold|Yes|String \(between 0.1 and 1\)|​Any number that is above or below this threshold, depending on the direction, is marked as green in the status symbol.|  
-|​Yellow Threshold|Yes|String \(between 0.1 and 1\)|Any number that is above or below the threshold, depending on the direction, but does not meet the green threshold is marked as yellow in the status symbol. A number that does not meet the yellow threshold is marked as red in the status symbol.|  
-|​Direction|Yes|​\(Up, Down\)|​If the direction is up, any numbers above the green or yellow threshold are marked with the corresponding symbol. Similarly for down, numbers below the green or yellow thresholds are marked with the corresponding symbol.|  
-|​Status Graphic|Yes|​\(Shapes, TrafficLight, RoadSigns, Gauge, ReversedGauge, Thermometer, Cylinder, Faces, VarianceArrow\)|​The symbol that will represent the KPI.|  
+|Goal|Yes|String|&#x2715The target value of the KPI|  
+|Green Threshold|Yes|String \(between 0.1 and 1\)|&#x2715Any number that is above or below this threshold, depending on the direction, is marked as green in the status symbol.|  
+|&#x2715Yellow Threshold|Yes|String \(between 0.1 and 1\)|Any number that is above or below the threshold, depending on the direction, but does not meet the green threshold is marked as yellow in the status symbol. A number that does not meet the yellow threshold is marked as red in the status symbol.|  
+|&#x2715Direction|Yes|&#x2715\(Up, Down\)|&#x2715If the direction is up, any numbers above the green or yellow threshold are marked with the corresponding symbol. Similarly for down, numbers below the green or yellow thresholds are marked with the corresponding symbol.|  
+|&#x2715Status Graphic|Yes|&#x2715\(Shapes, TrafficLight, RoadSigns, Gauge, ReversedGauge, Thermometer, Cylinder, Faces, VarianceArrow\)|&#x2715The symbol that will represent the KPI.|  
   
 ## Action  
  Actions are events that you can trigger on an OLAP cube when you are accessing data in the cube. Only drill\-through actions are supported by Service Manager. The following is an example of an action:  
@@ -213,7 +213,7 @@ The ability to define customized management pack elements was used to model the 
 |ID|Yes|String|Name of the drill\-through action|  
 |MeasureGroupName|Yes|String|Targeted measure group of the action|  
 |ActionType|Yes|\(DrillThrough\)|Type of action. Only drill\-through actions are supported by Service Manager.|  
-|CubeDimension|Yes|String|​The cube dimension that is the target of the action, which must be a slicer on the Measure Group|  
+|CubeDimension|Yes|String|&#x2715The cube dimension that is the target of the action, which must be a slicer on the Measure Group|  
 |PropertyName|Yes|String|Attribute of the dimension that is displayed when the drill\-through action is executed|  
   
 ## CubeExtension  

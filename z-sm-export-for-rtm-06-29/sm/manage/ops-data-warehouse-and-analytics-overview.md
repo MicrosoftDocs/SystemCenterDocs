@@ -37,7 +37,7 @@ The data warehouse in System Center 2012 - Service Manager provides three primar
   
 3.  Provide data for reports  
   
- The data warehouse that ships with Service Manager is actually its own management group. It has essentially all the System Center common platform pieces that are present in other System Center components, such as System CenterÂ 2012 - Operations Manager. These components are built on the common platform, which in turn consists of the following:  
+ The data warehouse that ships with Service Manager is actually its own management group. It has essentially all the System Center common platform pieces that are present in other System Center components, such as System CenterÂ&nbsp;2012 - Operations Manager. These components are built on the common platform, which in turn consists of the following:  
   
 -   A model\-based database for storing configuration information about the data warehouse and for staging the data after it has been extracted from the Service Manager database. In the data warehouse management group, this instance of the mode\-based database is named DWStagingAndConfig.  
   
@@ -54,9 +54,9 @@ The data warehouse in System Center 2012 - Service Manager provides three primar
   
  In addition to its base that is built on the System Center common platform, the Service Manager data warehouse has two other databases:  
   
--   DWRepository—where the transformed data is stored and optimized for reporting purposes.  
+-   DWRepository-where the transformed data is stored and optimized for reporting purposes.  
   
--   DWDataMart—where the transformed data is loaded and where, ultimately, reports query from.  
+-   DWDataMart-where the transformed data is loaded and where, ultimately, reports query from.  
   
  The data warehouse was designed to:  
   
@@ -69,7 +69,7 @@ The data warehouse in System Center 2012 - Service Manager provides three primar
  The data warehouse in System Center 2012 - Service Manager was designed and built with the intention of being a platform component that enables System Center users to collocate data from all System Center products to gain comprehensive insight across their information technology \(IT\) investments.  
   
 ## The Difference between OLTP and OLAP \(Performing vs. Analyzing Transactions\)  
- Online transaction processing \(OLTP\) systems are designed for fast writes against small units of work—for example, for the fast creation of a single incident. In contrast, online analytical processing \(OLAP\) data warehouses are designed to facilitate fast analysis across large sets of data—for example, quickly determining service level agreement \(SLA\) adherence across all incidents created in the last year.  
+ Online transaction processing \(OLTP\) systems are designed for fast writes against small units of work-for example, for the fast creation of a single incident. In contrast, online analytical processing \(OLAP\) data warehouses are designed to facilitate fast analysis across large sets of data-for example, quickly determining service level agreement \(SLA\) adherence across all incidents created in the last year.  
   
 ## Data Warehouse and Analytics Elements  
  The data warehouse and analytics elements of System Center 2012 - Service Manager consist of the System Center common model, data warehouse databases, OLAP cubes, management pack orchestration processes, and the Service Manager software development kit \(SDK\). The following sections describe each of these elements in further detail.  
@@ -82,11 +82,11 @@ The data warehouse in System Center 2012 - Service Manager provides three primar
 ## Service Manager Data Warehouse Databases  
  The data warehouse in Service Manager comprises the following databases:  
   
--   DWStagingAndConfig—where data is extracted from source systems, such as Service Manager and Operations Manager, is initially stored.  
+-   DWStagingAndConfig-where data is extracted from source systems, such as Service Manager and Operations Manager, is initially stored.  
   
--   DWRepository—where extracted source data is transformed into the reporting optimized structure.  
+-   DWRepository-where extracted source data is transformed into the reporting optimized structure.  
   
--   DWDataMart—where published data is stored and gets consumed by the reports. This is also where data is stored for an extended period of time to facilitate historical reporting and analysis.  
+-   DWDataMart-where published data is stored and gets consumed by the reports. This is also where data is stored for an extended period of time to facilitate historical reporting and analysis.  
   
 ## OLAP Cubes  
  As mentioned previously, an OLAP cube is used for online analytical processing, and it is a data structure that provides fast analysis of data. You can think of it as helping manipulate and analyze data from multiple perspectives. The cube data structure can help overcome some limitations of relational databases.  

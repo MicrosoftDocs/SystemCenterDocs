@@ -18,7 +18,7 @@ Use the following procedures to configure a management server for the server com
 > [!IMPORTANT]  
 > If you plan to configure the management server to forward error reports to Microsoft and receive links to available solutions for those errors or participate in the Customer Experience Improvement Program \(CEIP\), you must first configure the management server's proxy settings if it uses a proxy server to access the Internet.  
   
-The Operations Manager Client Monitoring Configuration Wizard is used to configure the server component of Client Monitoring on an Operations Manager management server. To configure the server component of Client Monitoring on multiple management servers, run the wizard once for each management server. An example of when you might configure multiple management servers for Client Monitoring is if the connection between specific clients and management servers is less expensive.  
+The Operations Manager&nbsp;Client Monitoring Configuration Wizard is used to configure the server component of Client Monitoring on an Operations Manager&nbsp;management server. To configure the server component of Client Monitoring on multiple management servers, run the wizard once for each management server. An example of when you might configure multiple management servers for Client Monitoring is if the connection between specific clients and management servers is less expensive.  
   
 > [!IMPORTANT]  
 > The management server and error reporting clients must be in the same or fully trusted domains.  
@@ -61,7 +61,7 @@ The Operations Manager Client Monitoring Configuration Wizard is used to config
   
     2.  Select **Collect application errors from Windows Vista or later computers** if you are managing Windows Vista or later operating systems with Operations Manager. Type a **Port** number, or leave the default 51906. Leave **Use Secure Socket Layer protocol** selected if you have installed a certificate on your management server, leave **Use Windows Authentication** selected if you want the client computers to authenticate with the management server; otherwise, clear the options.  
   
-    3.  Type the **Organization Name**, using no more than 22 characters, and then click **Next**. The Organization Name can display on computers experiencing errors that are running Windows Server 2003 and earlier operating systems.  
+    3.  Type the **Organization Name**, using no more than 22 characters, and then click **Next**. The Organization Name can display on computers experiencing errors that are running Windows Server&nbsp;2003 and earlier operating systems.  
   
 4.  On the **Error Forwarding** page, do one of the following:  
   

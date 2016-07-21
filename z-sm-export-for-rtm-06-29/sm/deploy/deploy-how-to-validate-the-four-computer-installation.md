@@ -35,7 +35,7 @@ The procedures in this topic describe how to validate the four\-computer install
   
 #### To validate a Service Manager management server installation  
   
-1.  On the computer hosting the Service Manager management server, verify that a Program Files\\Microsoft System Center 2012\\Service Manager folder exists.  
+1.  On the computer hosting the Service Manager management server, verify that a Program Files\\Microsoft System Center&nbsp;2012\\Service Manager folder exists.  
   
 2.  Run **services.msc**, and then verify that the following services are installed, that they have the status of **Started**, and that the startup type is **Automatic**:  
   
@@ -58,13 +58,13 @@ The procedures in this topic describe how to validate the four\-computer install
   
 #### To validate the Service Manager database  
   
-1.  On the computer hosting the Service Manager database, click **Start**, click **All Programs**, click **Microsoft SQL Server 2008**, and then click **SQL Server Management Studio**.  
+1.  On the computer hosting the Service Manager database, click **Start**, click **All Programs**, click **Microsoft SQL Server&nbsp;2008**, and then click **SQL Server Management Studio**.  
   
 2.  In the **Connect to Server** dialog box, select the following:  
   
     1.  In the **Server Type** list, select **Database Engine**.  
   
-    2.  In the **Server Name** list, select the server name for your Service Manager database. For example, select **Computer 2**.  
+    2.  In the **Server Name** list, select the server name for your Service Manager database. For example, select **Computer&nbsp;2**.  
   
     3.  In the **Authentication** list, select **Windows Authentication**, and then click **Connect**.  
   
@@ -91,13 +91,13 @@ The procedures in this topic describe how to validate the four\-computer install
   
 #### To validate data warehouse databases  
   
-1.  On the computer hosting the data warehouse management databases, click **Start**, click **All Programs**, click **Microsoft SQL Server 2008**, and then click **SQL Server Management Studio**.  
+1.  On the computer hosting the data warehouse management databases, click **Start**, click **All Programs**, click **Microsoft SQL&nbsp;Server&nbsp;2008**, and then click **SQL&nbsp;Server Management Studio**.  
   
 2.  In the **Connect to Server** dialog box, select the following:  
   
     1.  In the **Server Type** list, select **Database Engine**.  
   
-    2.  In the **Server Name** list, select the server and instance for your Service Manager data warehouse database. For example, select **Computer 4**.  
+    2.  In the **Server Name** list, select the server and instance for your Service Manager data warehouse database. For example, select **Computer&nbsp;4**.  
   
     3.  In the **Authentication** list, select **Windows Authentication**, and then click **Connect**.  
   
@@ -105,13 +105,13 @@ The procedures in this topic describe how to validate the four\-computer install
   
 4.  Verify that the **DWStagingAndConfig** and **DWRepository** databases are listed.  
   
-5.  On the computer hosting SQL Server Reporting Services \(SSRS\), click **Start**, click **All Programs**, click **Microsoft SQL Server 2008**, and then click **SQL Server Management Studio**.  
+5.  On the computer hosting SQL&nbsp;Server Reporting Services \(SSRS\), click **Start**, click **All Programs**, click **Microsoft SQL&nbsp;Server&nbsp;2008**, and then click **SQL&nbsp;Server Management Studio**.  
   
 6.  In the **Connect to Server** dialog box, select the following:  
   
     1.  In the **Server Type** list, select **Database Engine**.  
   
-    2.  In the **Server Name** list, select the server and instance for your Service Manager data warehouse database. For example, select **Computer 4**.  
+    2.  In the **Server Name** list, select the server and instance for your Service Manager data warehouse database. For example, select **Computer&nbsp;4**.  
   
     3.  In the **Authentication** list, select **Windows Authentication**, and then click **Connect**.  
   
@@ -127,4 +127,4 @@ The procedures in this topic describe how to validate the four\-computer install
   
 12. Verify that the **DWASDataBase** database is listed.  
   
-13. Exit Microsoft SQL Server Management Studio.
+13. Exit Microsoft SQL&nbsp;Server Management Studio.

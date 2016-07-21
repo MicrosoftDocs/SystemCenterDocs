@@ -37,9 +37,9 @@ Use this procedure in the System Center 2016 - Service Manager Authoring Tool to
   
 1.  In the authoring pane, click the activity you want. The **Details** pane becomes active and displays the properties for this activity. For example, click the **Add AD DS Computer to Group** activity or the **Set Activity Status to Completed** activity.  
   
-2.  In the **Details** pane, click the property you want to set, and then click the ellipsis \(**…**\) button that appears next to the property.  
+2.  In the **Details** pane, click the property you want to set, and then click the ellipsis \(**...**\) button that appears next to the property.  
   
-     For example, for the **Add AD DS Computer to Group** activity, click **Group Name**, and then click the ellipsis \(**…**\) button.  
+     For example, for the **Add AD DS Computer to Group** activity, click **Group Name**, and then click the ellipsis \(**...**\) button.  
   
 3.  On the left side of the **Define input for the activity addADDSComputerToGroup1** dialog box, click **Use a class property**. Selecting this option produces a list of the properties that are available in the trigger class.  
   
@@ -47,11 +47,11 @@ Use this procedure in the System Center 2016 - Service Manager Authoring Tool to
   
      For example, for the **Add AD DS Computer to Group** activity, do the following:  
   
-    1.  In the **Details** pane for the **Add AD DS Computer to Group** activity, click **Group Name**, click the ellipsis \(**…**\) button, click **Use a class property**, click **GroupName**, and then click **OK**.  
+    1.  In the **Details** pane for the **Add AD DS Computer to Group** activity, click **Group Name**, click the ellipsis \(**...**\) button, click **Use a class property**, click **GroupName**, and then click **OK**.  
   
-    2.  In the **Details** pane, click **Computer Name**, click the ellipsis \(**…**\) button, click **Use a class property**, click **ComputerName**, and then click **OK**.  
+    2.  In the **Details** pane, click **Computer Name**, click the ellipsis \(**...**\) button, click **Use a class property**, click **ComputerName**, and then click **OK**.  
   
-     For the **Set Activity Status to Completed** activity, click **Activity ID**, and then click the ellipsis \(**…**\) button that appears next to the property. In the **Define input for the activity setActivityStatusToCompleted1** dialog box, click **Use a class property**, and then in the property list, click **ID \(Internal\)**. Click **OK**.  
+     For the **Set Activity Status to Completed** activity, click **Activity ID**, and then click the ellipsis \(**...**\) button that appears next to the property. In the **Define input for the activity setActivityStatusToCompleted1** dialog box, click **Use a class property**, and then in the property list, click **ID \(Internal\)**. Click **OK**.  
   
 ## See Also  
  [Step 3: Create the WF Workflow](../Topic/Step%203:%20Create%20the%20WF%20Workflow.md)   

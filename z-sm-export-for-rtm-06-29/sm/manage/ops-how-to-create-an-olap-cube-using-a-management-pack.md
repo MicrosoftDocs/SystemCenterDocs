@@ -33,7 +33,7 @@ A System Center online analytical processing \(OLAP\) cube is defined as a colle
 
  All elements other than MeasureGroups are optional.  
 
- When you define an OLAP cube using the schema above and you import the management pack, the System Center 2012 - Service Manager data warehouse deploys the cube using SQL Server Analysis Management Objects \(AMO\), and it creates the required infrastructure to maintain it. For example, you can create a simple OLAP cube based on *ComputerHostsOperatingSystemFact*. The following illustration is the dimensional view of the fact in the warehouse.  
+ When you define an OLAP cube using the schema above and you import the management pack, the System Center 2012 - Service Manager data warehouse deploys the cube using SQL&nbsp;Server Analysis Management Objects \(AMO\), and it creates the required infrastructure to maintain it. For example, you can create a simple OLAP cube based on *ComputerHostsOperatingSystemFact*. The following illustration is the dimensional view of the fact in the warehouse.  
 
  ![Diagram of dimensional view](../media/ops-comptuerhostsoperatingsystemfact.png)  
 

@@ -29,7 +29,7 @@ ms.assetid: 5e98cc12-263e-440e-b641-1fdd435d4f45
 
 ---
 # Reports Sample Scenario: How to Include Dashboards and Reports in Custom Views
-One of the benefits of the System Center 2012 - Service Manager dependency on Microsoft SharePoint, and of including the new Microsoft Online Analytical Processing \(OLAP\) cubes in the Service Manager box, is that it is very easy to create SharePoint dashboards using PerformancePoint Services in Microsoft SharePoint Server 2010 or Microsoft Excel. You can then create a custom view in Service Manager to display these dashboards.  
+One of the benefits of the System Center 2012 - Service Manager dependency on Microsoft SharePoint, and of including the new Microsoft Online Analytical Processing \(OLAP\) cubes in the Service Manager box, is that it is very easy to create SharePoint dashboards using PerformancePoint Services in Microsoft SharePoint&nbsp;Server&nbsp;2010 or Microsoft Excel. You can then create a custom view in Service Manager to display these dashboards.  
   
  Use the following procedures to create a custom view to display a SharePoint dashboard from your environment in the Service Manager console. Complete all of the following three procedures, in the order that they appear.  
   
@@ -42,7 +42,7 @@ One of the benefits of the System Center 2012 - Service Manager dependency on Mi
 3.  In the Windows PowerShell window, type the following, and then press Enter:  
   
     ```  
-    New-SCManagementPack –DisplayName Dashboards  
+    New-SCManagementPack -DisplayName Dashboards  
     ```  
   
 4.  In the Service Manager console, click **Work Items**. In the **Work Items** pane, right\-click **Incident Management**, and then click **Create Folder**.  
@@ -52,15 +52,15 @@ One of the benefits of the System Center 2012 - Service Manager dependency on Mi
 6.  In the Windows PowerShell, type the following two commands:  
   
     ```  
-    Get-SCManagementPack –DisplayName Dashboards | Export-SCManagementPack –Path C:\DashBoards  
+    Get-SCManagementPack -DisplayName Dashboards | Export-SCManagementPack -Path C:\DashBoards  
     ```  
   
     ```  
   
-    Get-SCManagementPack –DisplayName Dashboards | Remove-SCManagementPack  
+    Get-SCManagementPack -DisplayName Dashboards | Remove-SCManagementPack  
     ```  
   
-### To edit the dashboard management pack in Visual Studio  
+### To edit the dashboard management pack in Visual&nbsp;Studio  
   
 1.  Start Microsoft Visual Studio.  
   
@@ -179,7 +179,7 @@ One of the benefits of the System Center 2012 - Service Manager dependency on Mi
     ```  
   
     > [!NOTE]  
-    >  Replace the URL in the [Source](assetId:///Source) attribute with a URL to a dashboard in your environment. This URL should display content that the user’s browser can access on the Intranet or on the Internet.  
+    >  Replace the URL in the [Source](assetId:///Source) attribute with a URL to a dashboard in your environment. This URL should display content that the user's browser can access on the Intranet or on the Internet.  
   
      Save the updated file.  
   
@@ -204,7 +204,7 @@ One of the benefits of the System Center 2012 - Service Manager dependency on Mi
 9. Update `DisplayString` with the `ID` from the previous step. Locate the following code:  
   
     ```  
-    <DisplayString ElementID="Folder.<ID>”  
+    <DisplayString ElementID="Folder.<ID>"  
   
     ```  
   
@@ -258,13 +258,13 @@ One of the benefits of the System Center 2012 - Service Manager dependency on Mi
 1.  In the Service Manager Windows PowerShell session, run the following command to validate the IncidentDashboards management pack:  
   
     ```  
-    Test-SCManagementPack –FullName C:\DashBoards\IncidentDashboards.xml  
+    Test-SCManagementPack -FullName C:\DashBoards\IncidentDashboards.xml  
     ```  
   
 2.  If the validation is successful, import the management pack by running the following command:  
   
     ```  
-    Import-SCManagementPack –FullName C:\DashBoards\IncidentDashboards.xml  
+    Import-SCManagementPack -FullName C:\DashBoards\IncidentDashboards.xml  
   
     ```  
   

@@ -29,15 +29,15 @@ ms.assetid: 56b7f6c9-7960-4a6c-b933-0fe8ca0475d6
 
 ---
 # Troubleshooting a Data Warehouse Job
-In System Center 2012 - Service Manager, after the Data Warehouse Registration Wizard is complete and after Reporting becomes available in the Service Manager console, you can start running reports. If you encounter a problem with reports \(for example, the incident management report you run does not show the current data\), you can use Windows PowerShell cmdlets to troubleshoot the problem. For example, you can use the following procedure to determine whether a transform job failed, and you can evaluate any error messages that the transform job created.  
+In System Center 2012 - Service Manager, after the Data Warehouse Registration Wizard is complete and after Reporting becomes available in the Service Manager console, you can start running reports. If you encounter a problem with reports \(for example, the incident management report you run does not show the current data\), you can use Windows&nbsp;PowerShell cmdlets to troubleshoot the problem. For example, you can use the following procedure to determine whether a transform job failed, and you can evaluate any error messages that the transform job created.  
   
-### To troubleshoot data warehouse jobs by using Windows PowerShell cmdlets  
+### To troubleshoot data warehouse jobs by using Windows&nbsp;PowerShell cmdlets  
   
 1.  On the computer that hosts the data warehouse management server, click **Start**, click **All Programs**, click **Accessories**, and then click **Windows PowerShell**.  
   
 2.  Right\-click **Windows PowerShell**, and then click **Run as administrator**.  
   
-3.  At the Windows PowerShell command prompt, type the following command, and then press ENTER:  
+3.  At the Windows&nbsp;PowerShell command prompt, type the following command, and then press ENTER:  
   
     ```  
     Import-Module .\Microsoft.EnterpriseManagement.Warehouse.Cmdlets.psd1  

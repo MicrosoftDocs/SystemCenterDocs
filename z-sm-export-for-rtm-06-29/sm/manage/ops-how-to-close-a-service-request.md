@@ -37,7 +37,7 @@ In System Center 2012 - Service Manager, after all the review activities are app
   
 2.  In the **Work Items** pane, expand **Work Items**, expand **Service Request Fulfillment**, and then click **Completed Service Requests**.  
   
-3.  Select a completed service request. For example, select **Request Membership to Active Directory Group – Joe Andreshak**.  
+3.  Select a completed service request. For example, select **Request Membership to Active Directory Group - Joe Andreshak**.  
   
 4.  In the **Tasks** pane, click **Close**.  
   

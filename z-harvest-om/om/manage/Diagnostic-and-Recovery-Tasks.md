@@ -41,7 +41,7 @@ You can see the tasks available for a monitor on the **Diagnostic and Recovery**
   
 ![](9c63e7e1-3af2-4c9a-8f33-eedba1d0501a)  
   
-On this tab, you can also add tasks or edit tasks that you have added previously. For more information on how to add diagnostic and recovery tasks, see [Diagnostics and Recoveries](http://go.microsoft.com/fwlink/?LinkId=230462) in the Author’s Guide. Tasks that are configured by a sealed management pack can only be modified by using overrides. For more information, see [How to Enable Recovery and Diagnostic Tasks](../../om/manage/How-to-Enable-Recovery-and-Diagnostic-Tasks.md).  
+On this tab, you can also add tasks or edit tasks that you have added previously. For more information on how to add diagnostic and recovery tasks, see [Diagnostics and Recoveries](http://go.microsoft.com/fwlink/?LinkId=230462) in the Author's Guide. Tasks that are configured by a sealed management pack can only be modified by using overrides. For more information, see [How to Enable Recovery and Diagnostic Tasks](../../om/manage/How-to-Enable-Recovery-and-Diagnostic-Tasks.md).  
   
 ## See Also  
 [How Heartbeats Work in Operations Manager](../../om/manage/How-Heartbeats-Work-in-Operations-Manager.md)  

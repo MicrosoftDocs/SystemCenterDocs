@@ -110,9 +110,9 @@ The state view in [!INCLUDE[om12short](../../om/manage/includes/om12short_md.md)
   
 2.  In the **Properties** dialog box of the event view, type a name and a description for the view. \(The description is optional.\)  
   
-3.  On the **Criteria** tab, click the ellipses \(**…**\) next to the **Show data related to** box. The **Select a Target Type** dialog box displays a list of the object types available in your management group. Click to select the object type of the objects that you want to view, and then click **OK**. For more information, see [Guidance for Scoping and Targeting Views](../../om/manage/Guidance-for-Scoping-and-Targeting-Views.md).  
+3.  On the **Criteria** tab, click the ellipses \(**...**\) next to the **Show data related to** box. The **Select a Target Type** dialog box displays a list of the object types available in your management group. Click to select the object type of the objects that you want to view, and then click **OK**. For more information, see [Guidance for Scoping and Targeting Views](../../om/manage/Guidance-for-Scoping-and-Targeting-Views.md).  
   
-    The object type you select is listed in the **Show data related to** box. If you want to narrow the focus of the view, you can also click the ellipses \(**…**\) next to **Show data contained in a specific group**. Click a group to filter the objects shown in your view, and then click **OK**.  
+    The object type you select is listed in the **Show data related to** box. If you want to narrow the focus of the view, you can also click the ellipses \(**...**\) next to **Show data contained in a specific group**. Click a group to filter the objects shown in your view, and then click **OK**.  
   
     > [!NOTE]  
     > If you do not see the object type that you want, click **View all targets** and then type a word or phrase in **Find** to filter the displayed list.  
@@ -185,9 +185,9 @@ The task status view in [!INCLUDE[om12short](../../om/manage/includes/om12short_
   
 3.  In the **Properties** dialog box of the task status view, type a name and a description for the view. \(The description is optional.\)  
   
-4.  On the **Criteria** tab, click the ellipses \(**…**\) next to the **Show data related to** box. The **Select a Target Type** dialog box displays a list of the object types available in your management group. Click to select the object type that most specifically describes the objects that you want to view, and then click **OK**. For more information, see [Guidance for Scoping and Targeting Views](../../om/manage/Guidance-for-Scoping-and-Targeting-Views.md).  
+4.  On the **Criteria** tab, click the ellipses \(**...**\) next to the **Show data related to** box. The **Select a Target Type** dialog box displays a list of the object types available in your management group. Click to select the object type that most specifically describes the objects that you want to view, and then click **OK**. For more information, see [Guidance for Scoping and Targeting Views](../../om/manage/Guidance-for-Scoping-and-Targeting-Views.md).  
   
-    The object type you select is listed in the **Show data related to** box. If you want to narrow the focus of the view, you can also click the ellipses \(**…**\) next to **Show data contained in a specific group**. Click a group to filter the objects shown in your view, and then click **OK**.  
+    The object type you select is listed in the **Show data related to** box. If you want to narrow the focus of the view, you can also click the ellipses \(**...**\) next to **Show data contained in a specific group**. Click a group to filter the objects shown in your view, and then click **OK**.  
   
     > [!NOTE]  
     > If you do not see the object type that you want, click **View all targets** and then type a word or phrase in **Find** to filter the displayed list.  

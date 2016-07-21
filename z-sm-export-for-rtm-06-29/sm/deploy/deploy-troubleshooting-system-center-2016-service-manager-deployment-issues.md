@@ -32,7 +32,7 @@ ms.assetid: 4aee1627-a7c4-4299-847a-a5bfb87a4133
 <?xml version="1.0" encoding="utf-8"?>
 <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://ddue.schemas.microsoft.com/authoring/2003/5 http://clixdevr3.blob.core.windows.net/ddueschema/developer.xsd">
   <introduction>
-    <para>An installation log file is captured during the installation of <token>smlong12</token>. After <token>smshort</token> is running, various events are captured in the Windows Event Log. In addition, there are some Windows PowerShell commands that you can use to help troubleshoot data warehouse jobs. For more information, see "Troubleshoot Data Warehouse Jobs" in the <externalLink><linkText>Administrator's Guide for System Center 2012 – Service Manager</linkText><linkUri>http://go.microsoft.com/fwlink/p/?LinkID=209669</linkUri></externalLink>.</para>
+    <para>An installation log file is captured during the installation of <token>smlong12</token>. After <token>smshort</token> is running, various events are captured in the Windows Event Log. In addition, there are some Windows&nbsp;PowerShell commands that you can use to help troubleshoot data warehouse jobs. For more information, see "Troubleshoot Data Warehouse Jobs" in the <externalLink><linkText>Administrator's Guide for System Center 2012 - Service Manager</linkText><linkUri>http://go.microsoft.com/fwlink/p/?LinkID=209669</linkUri></externalLink>.</para>
   </introduction>
   <section>
     <title>Installation Log Files</title>
@@ -53,10 +53,10 @@ ms.assetid: 4aee1627-a7c4-4299-847a-a5bfb87a4133
       <?Comment j: 226610 2012-03-13T22:34:00Z  Id='2?>Create Database error<?CommentEnd Id='2'
     ?></title>
     <content>
-      <para>During setup, when you were configuring Service Manager or data warehouse databases, you were given the opportunity to specify how much disk space to allocate for each database. The default setting is 2,000 megabytes (MB) (2 gigabytes (GB)). In addition to the disk space that is required for the database,  <token>smshort</token> sets aside additional space for file groups and log files. The additional space that is required for the file groups and log files can be equal to the space that is required for the database. </para>
+      <para>During setup, when you were configuring Service Manager or data warehouse databases, you were given the opportunity to specify how much disk space to allocate for each database. The default setting is 2,000 megabytes (MB) (2&nbsp;gigabytes (GB)). In addition to the disk space that is required for the database,  <token>smshort</token> sets aside additional space for file groups and log files. The additional space that is required for the file groups and log files can be equal to the space that is required for the database. </para>
       <para>If there is insufficient disk space available, a message appears, indicating that an error occurred during execution of a custom action: _CreateDatabase. The installation stops before permanent changes are made. If you examine the <token>smshort</token> setup log, you find the following string:</para>
       <code>Additional Error Description : MODIFY FILE encountered operating system error 112(There is not enough space on the disk.) while attempting to expand the physical file</code>
-      <para>You have to either increase the amount of free disk space that is available or reduce the amount of space that <token>smshort</token> allocates for the database, and then attempt the installation again. If you are installing <token>smshort</token> in a nonproduction environment, you can specify as little as 500 MB for the database.</para>
+      <para>You have to either increase the amount of free disk space that is available or reduce the amount of space that <token>smshort</token> allocates for the database, and then attempt the installation again. If you are installing <token>smshort</token> in a nonproduction environment, you can specify as little as 500&nbsp;MB for the database.</para>
     </content>
   </section>
   <section>

@@ -13,7 +13,7 @@ author:mgoedtel
 manager:cfreemanwa
 ---
 # The Fabric Monitoring Diagram View: Displaying Health States of Cloud Environments
-The Fabric Monitoring Diagram view gives you a diagram of the entire infrastructure and shows the health state of each part of the fabric. The Diagram view helps you answer questions, such as “What is the health of my entire fabric?” Improvements to the diagram ensure that health rolls up and that the relevant fabric components are part of the Diagram View.  
+The Fabric Monitoring Diagram view gives you a diagram of the entire infrastructure and shows the health state of each part of the fabric. The Diagram view helps you answer questions, such as "What is the health of my entire fabric?" Improvements to the diagram ensure that health rolls up and that the relevant fabric components are part of the Diagram View.  
   
 ## Using Diagram View to Locate and Investigate Problems  
   

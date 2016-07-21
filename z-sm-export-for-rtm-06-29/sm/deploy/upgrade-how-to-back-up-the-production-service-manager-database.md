@@ -29,7 +29,7 @@ ms.assetid: 4ebe6cb4-0352-4c71-b2a9-0a235c0102d5
 
 ---
 # How to Back Up the Production Service Manager Database
-Use the following procedure to back up the production Service Manager database in Microsoft SQL Server 2008 R2.  
+Use the following procedure to back up the production Service Manager database in Microsoft&nbsp;SQL&nbsp;Server&nbsp;2008&nbsp;R2.  
   
 ### To back up the Service Manager database  
   

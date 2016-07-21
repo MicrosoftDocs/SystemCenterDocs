@@ -29,13 +29,13 @@ ms.assetid: 5e932318-795f-4b75-bafb-e279fb2682dc
 
 ---
 # Add AD DS Computer to a Group Activity
-This activity adds a computer to a security group in Active Directory Domain Services \(AD DS\) in System Center 2012 - Service Manager. The computer and the group must belong to the same domain, and all containers in the domain are searched.  
+This activity adds a computer to a security group in Active Directory Domain Services \(AD&nbsp;DS\) in System Center 2012 - Service Manager. The computer and the group must belong to the same domain, and all containers in the domain are searched.  
   
 ## Design Time Prerequisites  
  None.  
   
 ## Run Time Prerequisites  
- When you use this activity, make sure that the Service Manager Workflow account has sufficient permissions to modify security groups in AD DS.  
+ When you use this activity, make sure that the Service Manager Workflow account has sufficient permissions to modify security groups in AD&nbsp;DS.  
   
 ## Properties  
  The **Add AD DS Computer to Group** activity uses the input properties that are described in the following table.  

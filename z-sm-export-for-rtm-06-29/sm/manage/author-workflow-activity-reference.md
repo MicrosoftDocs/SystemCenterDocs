@@ -29,7 +29,7 @@ ms.assetid: 08966e4d-19ef-47d8-a415-776409b51a32
 
 ---
 # Workflow Activity Reference
-This section provides guidance for information technology \(IT\) developers so that they can create custom Windows Workflow Foundation \(WF\) activities that IT pros can use to build WF workflows that are specific to their IT processes. Custom WF activities extend the Activity Library—the activities that are distributed with the System Center 2016 - Service Manager Authoring Tool. The Workflow Activity Reference section of this document provides details of the default WF activities in the Activity Library. This information is intended to help developers \(or IT pros acting as developers\) create custom WF activities, as needed.  
+This section provides guidance for information technology \(IT\) developers so that they can create custom Windows Workflow Foundation \(WF\) activities that IT pros can use to build WF workflows that are specific to their IT processes. Custom WF activities extend the Activity Library-the activities that are distributed with the System Center 2016 - Service Manager Authoring Tool. The Workflow Activity Reference section of this document provides details of the default WF activities in the Activity Library. This information is intended to help developers \(or IT pros acting as developers\) create custom WF activities, as needed.  
   
  For information about how to use WF activities and WF workflows with Service Manager, see [Automating IT Processes with Workflows &#91;SM2012\_AuthoringGuideObsolete&#93;](assetId:///5eb7fc26-d704-4426-9c99-d969584b9e9a).  
   
@@ -37,11 +37,11 @@ This section provides guidance for information technology \(IT\) developers so t
   
 -   [Active Directory Activities](../../../sm/manage/author/Active-Directory-Activities.md)  
   
-     Describes Active Directory Domain Services \(AD DS\) activities to make Active Directory functions part of your workflow.  
+     Describes Active Directory Domain Services \(AD&nbsp;DS\) activities to make Active&nbsp;Directory functions part of your workflow.  
   
 -   [Control Flow Activities](../../../sm/manage/author/Control-Flow-Activities.md)  
   
-     Describes control flow activities to provide structure—branches, loops, or timer delays—for your workflow.  
+     Describes control flow activities to provide structure-branches, loops, or timer delays-for your workflow.  
   
 -   [Virtual Machine Manager Activities](../../../sm/manage/author/Virtual-Machine-Manager-Activities.md)  
   
@@ -61,4 +61,4 @@ This section provides guidance for information technology \(IT\) developers so t
   
 -   [Sample Activity \- Setting an Activity's Status to Completed](../../../sm/manage/author/Sample-Activity---Setting-an-Activity-s-Status-to-Completed.md)  
   
-     Provides a sample activity that sets an activity’s status to Completed.
+     Provides a sample activity that sets an activity's status to Completed.

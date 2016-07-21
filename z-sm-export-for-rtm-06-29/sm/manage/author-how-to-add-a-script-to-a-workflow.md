@@ -45,7 +45,7 @@ The Activity Library includes specialized activities that incorporate Windows Po
   
 3.  Set the script activity properties:  
   
-    1.  In the **Details** pane, click any of the properties in the **Activity Inputs** category, and then click the ellipses \(**…**\) button that appears next to the property.  
+    1.  In the **Details** pane, click any of the properties in the **Activity Inputs** category, and then click the ellipses \(**...**\) button that appears next to the property.  
   
     2.  In the **Configure a Script Activity** dialog box, click **Import Script**. In the **Import** dialog box, select the script file that you want to use, and then click **Open**.  
   
@@ -57,9 +57,9 @@ The Activity Library includes specialized activities that incorporate Windows Po
         > [!NOTE]  
         >  For VBScript script and command script activity, there is no **Name** column.  
   
-    4.  To set a value for the parameter, in the **Value** column, type a constant value. If appropriate for the parameter, type switch characters such as ‘\/t’, which is typical for command scripts.  
+    4.  To set a value for the parameter, in the **Value** column, type a constant value. If appropriate for the parameter, type switch characters such as '\/t', which is typical for command scripts.  
   
-    5.  To bind the parameter to another property so that the parameter obtains its value from that property, click the corresponding ellipses \(**…**\) button. In the **Bind ‘Parameter’ to Activity Property** dialog box, select the property that you want to use.  
+    5.  To bind the parameter to another property so that the parameter obtains its value from that property, click the corresponding ellipses \(**...**\) button. In the **Bind 'Parameter' to Activity Property** dialog box, select the property that you want to use.  
   
     6.  If you are working with a script that requires Windows PowerShell snap\-ins in order to run, in the **Windows PowerShell snap\-ins** box, type the names of the snap\-ins, separated by semicolons.  
   

@@ -41,7 +41,7 @@ A **Text Box** control is used in the System Center 2016 - Service Manager Autho
   
 3.  Set a text string by doing either of the following:  
   
-    -   In the **Details** pane, select the **Binding Path** property. Click the ellipsis \(**…**\) icon, and then in the **Binding Path** dialog box, select the class property that you want the **Text Box** control to bind to.  
+    -   In the **Details** pane, select the **Binding Path** property. Click the ellipsis \(**...**\) icon, and then in the **Binding Path** dialog box, select the class property that you want the **Text Box** control to bind to.  
   
     -   Select the **Text** property. Select the default **Text Box** string value and replace it. Note that the new string value that you entered now appears on the form.  
   

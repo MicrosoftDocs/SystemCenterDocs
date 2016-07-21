@@ -37,7 +37,7 @@ You can use the following procedures to resume a change request that was put on 
   
 2.  In the **Work Items** pane, expand **Work Items**, expand **Change Management**, and then click **Change Requests: On Hold**.  
   
-3.  Select a change request. For example, select **Apply Exchange Server 2010 Service Pack 1**.  
+3.  Select a change request. For example, select **Apply Exchange Server&nbsp;2010 Service Pack&nbsp;1**.  
   
 4.  In the **Tasks** pane, click **Resume**.  
   

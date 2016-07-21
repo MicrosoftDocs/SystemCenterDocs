@@ -74,9 +74,9 @@ To solve this problem, an administrator can add the user back to OrchestratorSys
 ## HTTP errors when starting the Orchestration console  
 If you get HTTP errors when starting the Orchestration console, try the following mitigations:  
   
--   **HTTP error 404.3 – Not Found**: Ensure that both .NET Framework 4.5 and Windows Communication Foundation \(WCF\) HTTP Activation are installed. You can find the instructions in [Single\-Computer Requirements for System Center 2012 R2 Orchestrator](assetId:///8960870a-e5e4-4674-baa1-94a55fee089c).  
+-   **HTTP error 404.3 - Not Found**: Ensure that both .NET Framework 4.5 and Windows Communication Foundation \(WCF\) HTTP Activation are installed. You can find the instructions in [Single\-Computer Requirements for System Center 2012 R2 Orchestrator](assetId:///8960870a-e5e4-4674-baa1-94a55fee089c).  
   
--   **HTTP error 404.17 – Not Found**: Ensure that Windows Communication Foundation \(WCF\) HTTP Activation is installed. You can find the instructions in [Single\-Computer Requirements for System Center 2012 R2 Orchestrator](assetId:///8960870a-e5e4-4674-baa1-94a55fee089c).  
+-   **HTTP error 404.17 - Not Found**: Ensure that Windows Communication Foundation \(WCF\) HTTP Activation is installed. You can find the instructions in [Single\-Computer Requirements for System Center 2012 R2 Orchestrator](assetId:///8960870a-e5e4-4674-baa1-94a55fee089c).  
   
 ## Other resources for this product  
   

@@ -64,8 +64,8 @@ This topic provides an overview of the disaster recovery processes for each of t
 3.  Install a data warehouse management server. For more information, see "Service Manager for System Center 2012 Deployment Scenarios" in the [Deployment Guide for Service Manager for System Center 2012](http://go.microsoft.com/fwlink/p/?LinkID=209670).  
   
 ## Service Manager Databases  
- Recovery procedures are the same for both the Service Manager database and the data warehouse database. You use a computer with the same name, and then you restore the Microsoft SQL Server databases using the same instance as the original. Recovery of a Service Manager database and a data warehouse database involves the following procedures:  
+ Recovery procedures are the same for both the Service Manager database and the data warehouse database. You use a computer with the same name, and then you restore the Microsoft SQL&nbsp;Server databases using the same instance as the original. Recovery of a Service Manager database and a data warehouse database involves the following procedures:  
   
-1.  Start with a new computer with the same computer name and with the same SQL Server instance as the computer that failed.  
+1.  Start with a new computer with the same computer name and with the same SQL&nbsp;Server instance as the computer that failed.  
   
-2.  Restore the SQL Server database or databases using the same instance name as the original. For more information, see [Database Recovery in Service Manager](../../../sm/manage/disaster/Database-Recovery-in-Service-Manager.md) in this guide.
+2.  Restore the SQL&nbsp;Server database or databases using the same instance name as the original. For more information, see [Database Recovery in Service Manager](../../../sm/manage/disaster/Database-Recovery-in-Service-Manager.md) in this guide.

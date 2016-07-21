@@ -61,12 +61,12 @@ robots: noindex,nofollow
       </step>
       <step>
         <content>
-          <para>In the <ui>Grant Permissions</ui> box, in the <ui>Users/Groups</ui> box, type the Active Directory name for the users or user groups to whom you want to grant access.</para>
+          <para>In the <ui>Grant Permissions</ui> box, in the <ui>Users/Groups</ui> box, type the Active&nbsp;Directory name for the users or user groups to whom you want to grant access.</para>
         </content>
       </step>
       <step>
         <content>
-          <para>In the <ui>Grant Permissions</ui> area, click <ui>Read – Can view pages and list items and download documents</ui>, and then click <ui>OK</ui>.</para>
+          <para>In the <ui>Grant Permissions</ui> area, click <ui>Read - Can view pages and list items and download documents</ui>, and then click <ui>OK</ui>.</para>
         </content>
       </step>
       <step>

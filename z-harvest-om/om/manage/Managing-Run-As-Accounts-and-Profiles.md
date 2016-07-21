@@ -21,11 +21,11 @@ When a workflow requires rights and privileges that the default action account c
   
 In the image, three workflows use the same Run As profile. The Run As profile has three associated Run As accounts. In this example, each workflow that uses the Run As profile will run on Computer A using the credentials for Run As account 1, on Computer B and C using the credentials for Run As account 2, and on Computer D using the credentials for Run As account 3.  
   
-Run As profiles are defined in management packs by the management pack author. A Run As profile is used wherever its parent management pack is active. For example, the SQL Server 2005 management pack contains the SQL Run As profile, so the SQL Run As profile would be active on all servers running SQL Server 2005 that are monitored by the SQL Server 2005 management pack. The Run As profile is an association of one or more Run As accounts and the managed objects that the Run As accounts should be applied to.  
+Run As profiles are defined in management packs by the management pack author. A Run As profile is used wherever its parent management pack is active. For example, the SQL Server&nbsp;2005 management pack contains the SQL Run As profile, so the SQL Run As profile would be active on all servers running SQL Server&nbsp;2005 that are monitored by the SQL Server&nbsp;2005 management pack. The Run As profile is an association of one or more Run As accounts and the managed objects that the Run As accounts should be applied to.  
   
 In some cases, the Run As profile is imported into Operations Manager when the management pack that contains it is imported. In other cases, you may need to create it manually. In all cases, Run As profiles must be manually associated with a Run As account.  
   
-A Run As account contains a single set of credentials which are stored in the Operations Manager operational database. Each Run As account has a security classification \(more secure or less secure\) that controls how the credentials are distributed for use. If you elect more secure credential distribution, you must configure the mapping of which computers the credentials are distributed to.  
+A Run As account contains a single set of credentials which are stored in the Operations Manager&nbsp;operational database. Each Run As account has a security classification \(more secure or less secure\) that controls how the credentials are distributed for use. If you elect more secure credential distribution, you must configure the mapping of which computers the credentials are distributed to.  
   
 ## Managing Run As Accounts and Profiles topics  
   

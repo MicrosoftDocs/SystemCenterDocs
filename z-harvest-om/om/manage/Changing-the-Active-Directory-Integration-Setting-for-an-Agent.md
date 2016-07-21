@@ -17,7 +17,7 @@ You can use the following procedure to change the Active Directory integration s
   
 ### To change the Active Directory integration setting for an agent  
   
-1.  On the agent\-managed computer, in Control Panel, double\-click Operations Manager Agent. \(In the category view of Control Panel in Windows Server 2008, Operations Manager Agent is in the **System and Security** category.\)  
+1.  On the agent\-managed computer, in Control Panel, double\-click Operations Manager Agent. \(In the category view of Control Panel in Windows Server&nbsp;2008, Operations Manager Agent is in the **System and Security** category.\)  
   
 2.  On the **Management Group** tab, clear or select **Automatically update management group assignments from AD DS**. If you select this option, on agent startup, the agent will query Active Directory for a list of management groups to which it has been assigned. Those management groups, if any, will be added to the list. If you clear this option, all management groups assigned to the agent in Active Directory will be removed from the list.  
   

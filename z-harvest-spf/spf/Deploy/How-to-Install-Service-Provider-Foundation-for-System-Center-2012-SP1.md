@@ -13,7 +13,7 @@ author:bwren
 manager:cfreemanwa
 ---
 # How to Install Service Provider Foundation for System Center 2012 SP1
-You can install [!INCLUDE[spfshort](../../spf/Deploy/includes/spfshort_md.md)] on a single server or on multiple servers, with at least one server that has Microsoft SQL Server installed to contain the [!INCLUDE[spfshort](../../spf/Deploy/includes/spfshort_md.md)] database.  
+You can install [!INCLUDE[spfshort](../../spf/Deploy/includes/spfshort_md.md)] on a single server or on multiple servers, with at least one server that has Microsoft SQL&nbsp;Server installed to contain the [!INCLUDE[spfshort](../../spf/Deploy/includes/spfshort_md.md)] database.  
   
 The Setup wizard configures an instance of [!INCLUDE[spfshort](../../spf/Deploy/includes/spfshort_md.md)], along with the web services that you select for that computer. However, at this time, only the [!INCLUDE[vmm12long](../../spf/Deploy/includes/vmm12long_md.md)] web service is available for deployment. Installation of [!INCLUDE[spfshort](../../spf/Deploy/includes/spfshort_md.md)] onto a virtual machine is supported.  
   
@@ -25,7 +25,7 @@ Before you install [!INCLUDE[spfshort](../../spf/Deploy/includes/spfshort_md.md)
   
 -   Close any open programs, and make sure that the computer does not have a restart pending.  
   
-If there is a problem with the installation completing successfully, refer to the log files, named “Microsoft Service Provider\*.log”, in the %SYSTEMDRIVE%\\%TEMP%  folder.  
+If there is a problem with the installation completing successfully, refer to the log files, named "Microsoft Service Provider\*.log", in the %SYSTEMDRIVE%\\%TEMP%  folder.  
   
 You can also run a silent, unattended, installation. For more information, see [Setup Command-Line Options for Service Provider Foundation](../../spf/Deploy/Setup-Command-Line-Options-for-Service-Provider-Foundation.md).  
   
@@ -48,7 +48,7 @@ You can also run a silent, unattended, installation. For more information, see [
   
     When all of the prerequisites are met, click **Next**.  
   
-7.  On the **Configure the database server** page, in the **server** text box, enter the name of the server that hosts SQL Server, or accept the default localhost. For the **Named SQL instance**, enter the correct port or check the dynamic port checkbox. See [Configuring Service Provider Foundation](http://blogs.msdn.com/b/nick_meader/archive/2014/08/22/configuring-service-provider-foundation.aspx) to learn how to find the port for a named SQL instance. In **Port Number**, type the port number that accesses the database, or accept the default of 1433, and then click **Next**.  
+7.  On the **Configure the database server** page, in the **server** text box, enter the name of the server that hosts SQL&nbsp;Server, or accept the default localhost. For the **Named SQL instance**, enter the correct port or check the dynamic port checkbox. See [Configuring Service Provider Foundation](http://blogs.msdn.com/b/nick_meader/archive/2014/08/22/configuring-service-provider-foundation.aspx) to learn how to find the port for a named SQL instance. In **Port Number**, type the port number that accesses the database, or accept the default of 1433, and then click **Next**.  
   
     > [!NOTE]  
     > If there is an error in a named instance value, the default SQL Server instance is used.  
@@ -94,7 +94,7 @@ You can also run a silent, unattended, installation. For more information, see [
   
     After you click **Install**, the installation progress indicator appears.  
   
-14. Click **Close** when the message “Setup is complete” appears.  
+14. Click **Close** when the message "Setup is complete" appears.  
   
 Repeat this procedure for each installation, such as for a web farm.  
   

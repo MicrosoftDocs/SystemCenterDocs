@@ -36,7 +36,7 @@ To create a command notification channel, you need the following information:
   
 4.  Type a unique name for this command channel in the **Notification command channel name** box and a brief description in the **Description** box. Click **Next**.  
   
-5.  Type the path to the executable file that you want to run in the **Full path to command file**  box. For example, “%systemroot%\\cmd.exe” or “c:\\winnt\\system32\\cscript.exe”. Type any parameters that you want to run with this command in **Command line parameters** box. Type the  directory for this command in the **Startup folder for the command line** box.  
+5.  Type the path to the executable file that you want to run in the **Full path to command file**  box. For example, "%systemroot%\\cmd.exe" or "c:\\winnt\\system32\\cscript.exe". Type any parameters that you want to run with this command in **Command line parameters** box. Type the  directory for this command in the **Startup folder for the command line** box.  
   
 6.  Click **Finish**, and then click **Close**.  
   

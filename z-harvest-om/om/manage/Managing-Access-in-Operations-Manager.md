@@ -30,7 +30,7 @@ manager:cfreemanwa
   
 -   [How to Manage the Report Server Unattended Execution Account in Operations Manager](../../om/manage/How-to-Manage-the-Report-Server-Unattended-Execution-Account-in-Operations-Manager.md)  
   
-    The Operations Manager Report Server unattended execution account is used to query data from the Reporting Data Warehouse and is configured through Microsoft SQL Server 2008. This procedure explains how to manage this account.  
+    The Operations Manager Report Server unattended execution account is used to query data from the Reporting Data Warehouse and is configured through Microsoft SQL Server&nbsp;2008. This procedure explains how to manage this account.  
   
 -   [Control Access by Using the Health Service Lockdown Tool in Operations Manager](../../om/manage/Control-Access-by-Using-the-Health-Service-Lockdown-Tool-in-Operations-Manager.md)  
   
@@ -42,7 +42,7 @@ manager:cfreemanwa
   
 -   [Managing Run As Accounts and Profiles](../../om/manage/Managing-Run-As-Accounts-and-Profiles.md)  
   
-    Operations Manager workflows, such as rules, tasks, monitors, and discoveries, require credentials to run on a targeted agent or computer. These credentials are configured by using Run As profiles and Run As accounts. This section explains how to create, configure, and manage Run As profiles and accounts.  
+    Operations&nbsp;Manager&nbsp;workflows, such as rules, tasks, monitors, and discoveries, require credentials to run on a targeted agent or computer. These credentials are configured by using Run As profiles and Run As accounts. This section explains how to create, configure, and manage Run As profiles and accounts.  
   
 ## Other resources for this component  
   

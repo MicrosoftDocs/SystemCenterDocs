@@ -15,7 +15,7 @@ ms.assetid: 2bd42085-92ac-4df4-8807-6600aaa31dcf
 
 Welcome to the System Center 2016 - Service Manager Planning Guide. This guide helps you understand the hardware and software requirements as well as software roles you need to prepare for Service Manager before your deploy it in your company or organization. Also in this guide are general guidelines that can help you plan for the better hardware and software performance and scalability.  
 
- After you’ve read the planning information in this guide, you should read the [Deployment Guide for System Center 2016 – Service Manager](../deploy/upgrade-upgrading-system-center-2012-service-manager-to-system-center-2016.md) to fully understand the steps needed to deploy Service Manager and get it configured for use.  
+ After you've read the planning information in this guide, you should read the [Deployment Guide for System Center 2016 - Service Manager](../deploy/upgrade-upgrading-system-center-2012-service-manager-to-system-center-2016.md) to fully understand the steps needed to deploy Service Manager and get it configured for use.  
 
 ## Planning Guide Topics  
 
@@ -25,7 +25,7 @@ Welcome to the System Center 2016 - Service Manager Planning Guide. This guide h
 
 -   [Preparing for System Center 2016 - Service Manager Deployment](plan-preparing-for-system-center-2016-service-manager-deployment.md)  
 
-     Describes how to prepare a computer to host Service Manager. For example, the topics in this section describe how to uninstall a previous version of Service Manager and how to make sure that SQL Server Reporting Services \(SSRS\) is installed. They also describe the account considerations for you to consider.  
+     Describes how to prepare a computer to host Service Manager. For example, the topics in this section describe how to uninstall a previous version of Service Manager and how to make sure that SQL&nbsp;Server Reporting Services \(SSRS\) is installed. They also describe the account considerations for you to consider.  
 
 -   [Planning for Performance and Scalability in System Center 2016 - Service Manager](plan-planning-for-performance-and-scalability-in-system-center-2016-service-manager.md)  
 

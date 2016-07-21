@@ -39,7 +39,7 @@ A **Single Instance Picker** control in the System Center 2016 - Service Manager
   
 2.  Drag the **Single Instance Picker** icon from the **Form Customization Toolbox** pane to the form. Click the **Single Instance Picker** control on the form.  
   
-3.  In the **Details** pane, select the **Binding Path** property, and then click the ellipsis \(**…**\) icon. In the **Binding Path** dialog box, select the related class whose instances will populate the control’s instances list on the form.  
+3.  In the **Details** pane, select the **Binding Path** property, and then click the ellipsis \(**...**\) icon. In the **Binding Path** dialog box, select the related class whose instances will populate the control's instances list on the form.  
   
 4.  Click any other property, such as **Width** or **Height**, in the **Details** pane to customize other properties of the **Single Instance Picker** control.  
   

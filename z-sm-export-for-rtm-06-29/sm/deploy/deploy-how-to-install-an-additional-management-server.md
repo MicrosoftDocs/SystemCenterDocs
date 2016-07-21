@@ -56,7 +56,7 @@ The following procedure shows how to install an additional management server in 
   
 9. On the **Configure the Service Manager management group** page, verify that the management group name and management group administrators boxes have been populated. Click **Next**.  
   
-10. On the **Configure the account for Service Manager services** page, click **Domain account**; specify the user name, password, and domain for the account; and then click **Test Credentials**. After you receive a “The credentials were accepted” message, click **Next**. For example, enter the account information for the domain user SM\_Acct, and then click **Next**.  
+10. On the **Configure the account for Service Manager services** page, click **Domain account**; specify the user name, password, and domain for the account; and then click **Test Credentials**. After you receive a "The credentials were accepted" message, click **Next**. For example, enter the account information for the domain user SM\_Acct, and then click **Next**.  
   
 11. On the **Help improve System Center Service Manager** page, indicate your preference for participation in the Customer Experience Improvement Program. As an option, click **Tell me more about the program**, and then click **Next**.  
   

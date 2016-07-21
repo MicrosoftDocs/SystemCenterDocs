@@ -72,7 +72,7 @@ You can specify special formats of variables to provide dynamic information to y
   
 **NOW\(\)**: When the variable is resolved, it is set to the current date and time. You can pass arguments to this function to return specific portions of the date or time. For example, NOW\(hour\) returns the current hour. The following are the valid arguments for the NOW\(\) function: day, dayofweek, dayofyear, month, year, hour, minute, second, millisecond.  
   
-**%ENVVAR%**: This variable returns the value of the environment variable between the percent \(%\) symbols. The environment variable is based on the runbook server computer where the runbook is running, and it is not case\-sensitive. All system variables can be resolved. Any user variables are resolved in the context of the service account on the runbook server. If the environment variable does not exist, the text specified within the variable is returned as\-is \(that is, if you type %ENVVAR% and no environment variable named ENVVAR exists, the text ‘%ENVVAR%’ is returned\).  
+**%ENVVAR%**: This variable returns the value of the environment variable between the percent \(%\) symbols. The environment variable is based on the runbook server computer where the runbook is running, and it is not case\-sensitive. All system variables can be resolved. Any user variables are resolved in the context of the service account on the runbook server. If the environment variable does not exist, the text specified within the variable is returned as\-is \(that is, if you type %ENVVAR% and no environment variable named ENVVAR exists, the text '%ENVVAR%' is returned\).  
   
 ## See Also  
 [Data Manipulation](../../orch/manage/Data-Manipulation.md)  

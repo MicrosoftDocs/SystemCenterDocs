@@ -31,7 +31,7 @@ ms.assetid: 6438afdd-c997-4b64-9961-2abc0cac9e9b
 # Directly Authoring a Management Pack File to Manage Projectors
 Management packs are used to direct and extend the functionality of System Center 2012 - Service Manager. This topic uses projectors as an example for describing the various sections of a management pack and for defining the various objects that are needed for managing projectors in an organization.  
   
- This topic includes a complete management pack sample with the necessary extensions to manage projectors in an organization. Also, it describes how to import a management pack using a Windows PowerShell cmdlet.  
+ This topic includes a complete management pack sample with the necessary extensions to manage projectors in an organization. Also, it describes how to import a management pack using a Windows&nbsp;PowerShell cmdlet.  
   
  This topic describes the following sections of a management pack:  
   
@@ -88,9 +88,9 @@ Management packs are used to direct and extend the functionality of System Cente
 ```  
   
 > [!IMPORTANT]  
->  In the **References** section, do not use nonalphanumeric values, such as a ‘.’, in the Alias for a reference.  
+>  In the **References** section, do not use nonalphanumeric values, such as a '.', in the Alias for a reference.  
   
-## TypeDefinitions Section—Creating a Class  
+## TypeDefinitions Section-Creating a Class  
  The next section of a management pack contains type definitions. The **TypeDefinitions** section of a management pack contains definitions for classes, enumerations, and relationships that are used by the management pack.  
   
  The following example shows a class that contains information about projectors:  
@@ -248,7 +248,7 @@ Management packs are used to direct and extend the functionality of System Cente
   
  **Binding Text Controls**  
   
- To bind text boxes to class properties in a management pack, add a **Binding Path** tag to the text box control’s **Text** property, for example:  
+ To bind text boxes to class properties in a management pack, add a **Binding Path** tag to the text box control's **Text** property, for example:  
   
 ```  
 {Binding Path=SerialNumber, Mode=TwoWay}  
@@ -493,7 +493,7 @@ Microsoft.EnterpriseManagement.UI.SdkDataAccess.DataAdapters.EnterpriseManagemen
   
 ```  
   
- You can create additional **LanguagePack** elements, as necessary, for each additional language you require. The correct display string appears to the user based on the user’s locale.  
+ You can create additional **LanguagePack** elements, as necessary, for each additional language you require. The correct display string appears to the user based on the user's locale.  
   
  **Resources**  
   
@@ -554,40 +554,40 @@ IsExtensionType="true"
   
 ```  
 <ManagementPack xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" ContentReadable="true" SchemaVersion="1.1">  
-   <Manifest>  
-     <Identity>  
-      <ID>ServiceManager.Extension</ID>  
-      <Version>1.0.0.0</Version>  
-     </Identity>  
-    <Name>ServiceManagerExtension</Name>  
-     <References>  
-       <Reference Alias="System">  
-        <ID>System.Library</ID>  
-        <Version>1.0.2780.0</Version>  
-        <PublicKeyToken>31bf3856ad364e35</PublicKeyToken>  
-      </Reference>  
-      <Reference Alias="Incident">  
-        <ID>System.WorkItem.Incident.Library</ID>  
-        <Version>1.0.2780.0</Version>  
-        <PublicKeyToken>31bf3856ad364e35</PublicKeyToken>  
-      </Reference>  
-    </References>  
-  </Manifest>  
-   <TypeDefinitions>  
-     <EntityTypes>  
-       <ClassTypes>  
-         <ClassType ID="IncidentManagmentPack.Extension" Accessibility="Public" Base="Incident!System.WorkItem.Incident" Hosted="false" Extension="true">  
-          <Property ID="TimeOnIncident" Type="int" Key="false" />  
-        </ClassType>  
-      </ClassTypes>  
-    </EntityTypes>  
-  </TypeDefinitions>  
+&nbsp;&nbsp; <Manifest>  
+&nbsp;&nbsp;&nbsp;&nbsp; <Identity>  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <ID>ServiceManager.Extension</ID>  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <Version>1.0.0.0</Version>  
+&nbsp;&nbsp;&nbsp;&nbsp; </Identity>  
+&nbsp;&nbsp;&nbsp; <Name>ServiceManagerExtension</Name>  
+&nbsp;&nbsp;&nbsp;&nbsp; <References>  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <Reference Alias="System">  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <ID>System.Library</ID>  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <Version>1.0.2780.0</Version>  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <PublicKeyToken>31bf3856ad364e35</PublicKeyToken>  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </Reference>  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <Reference Alias="Incident">  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <ID>System.WorkItem.Incident.Library</ID>  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <Version>1.0.2780.0</Version>  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <PublicKeyToken>31bf3856ad364e35</PublicKeyToken>  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </Reference>  
+&nbsp;&nbsp;&nbsp; </References>  
+&nbsp; </Manifest>  
+&nbsp;&nbsp; <TypeDefinitions>  
+&nbsp;&nbsp;&nbsp;&nbsp; <EntityTypes>  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <ClassTypes>  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <ClassType ID="IncidentManagmentPack.Extension" Accessibility="Public" Base="Incident!System.WorkItem.Incident" Hosted="false" Extension="true">  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <Property ID="TimeOnIncident" Type="int" Key="false" />  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </ClassType>  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </ClassTypes>  
+&nbsp;&nbsp;&nbsp; </EntityTypes>  
+&nbsp; </TypeDefinitions>  
 </ManagementPack>  
   
 ```  
   
-## Importing a Management Pack by Using a Windows PowerShell Cmdlet  
- You can use the Windows PowerShell [Import\-SCSMManagementPack](http://go.microsoft.com/fwlink/p/?LinkID=225396) cmdlet to import a Service Manager management pack, for example:  
+## Importing a Management Pack by Using a Windows&nbsp;PowerShell Cmdlet  
+ You can use the Windows&nbsp;PowerShell [Import\-SCSMManagementPack](http://go.microsoft.com/fwlink/p/?LinkID=225396) cmdlet to import a Service Manager management pack, for example:  
   
 ```  
 Import-SCSMManagementPack MyServiceManager.ManagementPack.xml  

@@ -29,7 +29,7 @@ The topics in this section can help you integrate [!INCLUDE[omblue_1](../../om/m
   
 -   [How to Synchronize Alerts with TFS in System Center 2012 R2](../../om/manage/How-to-Synchronize-Alerts-with-TFS-in-System-Center-2012-R2.md)  
   
-    TFS lets you configure engineering process templates. [!INCLUDE[omblue_2](../../om/manage/includes/omblue_2_md.md)] integration with TFS introduces a new "Operational Issue" work item type definition that can be embedded into any of your organization’s engineering processes.  
+    TFS lets you configure engineering process templates. [!INCLUDE[omblue_2](../../om/manage/includes/omblue_2_md.md)] integration with TFS introduces a new "Operational Issue" work item type definition that can be embedded into any of your organization's engineering processes.  
   
 -   [How to Configure Integration with IntelliTrace Historical Profiling in System Center 2012 R2](../../om/manage/How-to-Configure-Integration-with-IntelliTrace-Historical-Profiling-in-System-Center-2012-R2.md)  
   

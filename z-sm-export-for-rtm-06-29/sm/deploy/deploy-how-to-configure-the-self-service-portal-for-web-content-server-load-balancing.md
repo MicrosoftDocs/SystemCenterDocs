@@ -41,7 +41,7 @@ When a user starts a browser and connects to the Self-Service Portal in System C
   
 3.  Right\-click the Web.config file, and open it with the editor of your choice, for example, Notepad.  
   
-4.  Scroll to the bottom of the Web.config file, locate the \<appSettings\> area, and then locate the \<add key\=…\> line.  
+4.  Scroll to the bottom of the Web.config file, locate the \<appSettings\> area, and then locate the \<add key\=...\> line.  
   
 5.  Edit the URL in the value\= section to match the new URL that you want to use for the web content server load\-balancing node.  
   
@@ -55,7 +55,7 @@ When a user starts a browser and connects to the Self-Service Portal in System C
   
 3.  Right\-click the Web.config file, and then open it with the editor of your choice, for example, Notepad.  
   
-4.  Scroll to the bottom of the Web.config file, locate the \<appSettings\> area, and then locate the \<add key\=…\> line.  
+4.  Scroll to the bottom of the Web.config file, locate the \<appSettings\> area, and then locate the \<add key\=...\> line.  
   
 5.  Edit the URL in the value\= section to match the new URL that you want to use for the web.config load\-balancing node.  
   

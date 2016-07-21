@@ -43,7 +43,7 @@ You can use the following procedures to troubleshoot an incident in System Cente
   
 4.  In the dialog box that opens, click the **Service Components** tab.  
   
-     Note that the list of service components includes configuration items. For example, the list might include computers running Microsoft Exchange Server. When a service component is marked with an icon, the icon indicates that an incident is associated with the service component.  
+     Note that the list of service components includes configuration items. For example, the list might include computers running Microsoft Exchange&nbsp;Server. When a service component is marked with an icon, the icon indicates that an incident is associated with the service component.  
   
 5.  Select a configuration item that has a related work item. For example, select the **Exchange01.woodgrove.com** server.  
   

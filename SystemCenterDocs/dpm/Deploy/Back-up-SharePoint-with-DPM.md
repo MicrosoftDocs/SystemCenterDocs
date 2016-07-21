@@ -24,11 +24,11 @@ You can deploy DPM to protect SharePoint farms, external SQL Server databases, a
 
 -   For a list of supported SharePoint versions and the DPM versions required to back them up see [What can DPM back up?](../get-started/What-can-DPM-back-up-.md)
 
--   By default when you protect SharePoint all content databases \(and the SharePoint\_Config and SharePoint\_AdminContent\* databases\) will be protected. If you want to add customizations such as search indexes, templates or application service databases, or the user profile service you’ll need to configure these for protection separately. Be sure that you enable protection for all folders that include these types of features or customization files.
+-   By default when you protect SharePoint all content databases \(and the SharePoint\_Config and SharePoint\_AdminContent\* databases\) will be protected. If you want to add customizations such as search indexes, templates or application service databases, or the user profile service you'll need to configure these for protection separately. Be sure that you enable protection for all folders that include these types of features or customization files.
 
 -   SharePoint databases using AlwaysOn can be protected from DPM 2012 R2 with Update 5 onwards.
 
--   You can’t protect SharePoint databases as a SQL Server data source. You can recover individual databases from a farm backup.
+-   You can't protect SharePoint databases as a SQL Server data source. You can recover individual databases from a farm backup.
 
 -   Remember that for DPM runs as Local System and to backup SQL Server databases it needs sysadmin privileges on that account for the SQL server. On the SQL Server you want to back up set  NT AUTHORITY\\SYSTEM to sysadmin.
 
@@ -36,13 +36,13 @@ You can deploy DPM to protect SharePoint farms, external SQL Server databases, a
 
 -   In the SharePoint farm, if you have SQL Server databases that are configured with SQL Server aliases, install the SQL Server client components on the front\-end Web server that DPM will protect.
 
--   Protecting application store items isn’t supported with SharePoint 2013.
+-   Protecting application store items isn't supported with SharePoint 2013.
 
--   DPM doesn’t support protecting remote FILESTREAM. The FILESTREAM should be part of the database.
+-   DPM doesn't support protecting remote FILESTREAM. The FILESTREAM should be part of the database.
 
 ## Before you start
 
-1.  **Deploy DPM** - Verify that DPM is installed and deployed correctly. If you haven’t see:
+1.  **Deploy DPM** - Verify that DPM is installed and deployed correctly. If you haven't see:
 
     -   System requirements for DPM
 
@@ -54,7 +54,7 @@ You can deploy DPM to protect SharePoint farms, external SQL Server databases, a
 
 2.  **Set up storage** - You can store backed up data on disk, on tape, and in the cloud with Azure. Read more in [Prepare data storage](../get-started/Prepare-data-storage.md).
 
-3.  **Set up the DPM protection agent** - You'll need to install the DPM protection agent on every server in the SharePoint farm, including SQL Servers.  The only exception is that you only install it on a single Web Front End \(WFE\) server. For example if you have a single farm with two WFE servers, an index server and a two\-node SQL Server cluster you’d install the agent on the index server, both nodes in the SQL Server cluster, and one of the WFE servers.  Because WFE servers don't host content DPM only needs the agent on one of them to serve as the entry point for protection. Read [Deploy the DPM protection agent](Deploy-the-DPM-protection-agent.md).
+3.  **Set up the DPM protection agent** - You'll need to install the DPM protection agent on every server in the SharePoint farm, including SQL Servers.  The only exception is that you only install it on a single Web Front End \(WFE\) server. For example if you have a single farm with two WFE servers, an index server and a two\-node SQL Server cluster you'd install the agent on the index server, both nodes in the SQL Server cluster, and one of the WFE servers.  Because WFE servers don't host content DPM only needs the agent on one of them to serve as the entry point for protection. Read [Deploy the DPM protection agent](Deploy-the-DPM-protection-agent.md).
 
     If the SharePoint SQL Server database is remote you'll need to configure the DPM agent on it. If it's clustered then install the agent on all cluster nodes.
 
@@ -74,14 +74,14 @@ To back up SharePoint farm you configure protection for SharePoint by using Conf
 
         -   **SetTempPath** sets the environment variable TEMP and TMP to the specified path. Item level recovery fails if a large site collection, site, list or item is being recovered and there is insufficient space in the farm admin Temporary folder. This option allows you to change the folder path of the temporary files to a volume that has sufficient space to store the site collection or site being recovered.
 
-    -   Enter the farm administrator credentials. This account should be a member of the local Administrator group on the WFE server. If the farm administrator isn’t a local admin grant the following permissions on the WFE server:
+    -   Enter the farm administrator credentials. This account should be a member of the local Administrator group on the WFE server. If the farm administrator isn't a local admin grant the following permissions on the WFE server:
 
         -   Grant the WSS\_Admin\_WPG group full control to the DPM folder \(%Program Files%\\Microsoft Data Protection Manager\\DPM\).
-            ◾A
+            -A
 
         -   Grant the WSS\_Admin\_WPG group read access to the DPM Registry key \(HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Microsoft\\Microsoft Data Protection Manager\).
 
-        Ater running ConfigureSharePoint.exe  you’ll need to rerun it if there’s a change in the SharePoint farm administrator credentials.
+        Ater running ConfigureSharePoint.exe  you'll need to rerun it if there's a change in the SharePoint farm administrator credentials.
 
 2.  To create a protection group, click **Protection** > **Actions** > **Create Protection Group** to open the **Create New Protection Group** wizard in the DPM console.
 

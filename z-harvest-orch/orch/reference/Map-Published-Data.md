@@ -62,7 +62,7 @@ The following examples describe how to use the Map Published Data activity.
   
     4.  Click **Add**, then **OK**.  
   
--   Convert output of one system to be compatible with another system’s formatting  
+-   Convert output of one system to be compatible with another system's formatting  
   
     You use two software programs that express severity levels with the following methods:  
   

@@ -34,21 +34,21 @@ The steps of the Woodgrove Bank customization scenario are as follows. Details a
 ## Step 1: Open the Woodgrove.AutomatedActivity.AddComputerToADGroupMP Management Pack  
  Ken has to create a class that represents the new custom activity, and a matching form to use to access that new class. He starts by opening the **Woodgrove.AutomatedActivity.AddComputerToADGroupMP** management pack that contains the definitions for the following class and form:  
   
--   The **Automated Activity: Add Computer To AD Group** custom class that represents the new automatic activity. This activity adds a new computer to a specified group in Active Directory Domain Services \(AD DS\).  
+-   The **Automated Activity: Add Computer To AD Group** custom class that represents the new automatic activity. This activity adds a new computer to a specified group in Active&nbsp;Directory Domain Services \(AD&nbsp;DS\).  
   
--   The form that represents the **Automated Activity: Add Computer To AD Group** class. Ken can use this form to enter information about the computer that is being added and the Active Directory group to which the computer should be added.  
+-   The form that represents the **Automated Activity: Add Computer To AD Group** class. Ken can use this form to enter information about the computer that is being added and the Active&nbsp;Directory group to which the computer should be added.  
   
  Instead of creating these necessary objects, you can import a pre\-defined management pack as part of the Woodgrove Bank customization scenario.  
   
  For more information about how to open the management pack, see [Step 1: Open the Woodgrove.AutomatedActivity.AddComputerToADGroupMP Management Pack](../Topic/Step%201:%20Open%20the%20Woodgrove.AutomatedActivity.AddComputerToADGroupMP%20Management%20Pack.md).  
   
 ## Step 2: Customize the Default Change Request Form  
- Often, customers want to adapt default forms to their organizations’ preferences. In this scenario, Ken adds an image that represents the company logo to the default change request form and then rearranges the layout of the fields on the form.  
+ Often, customers want to adapt default forms to their organizations' preferences. In this scenario, Ken adds an image that represents the company logo to the default change request form and then rearranges the layout of the fields on the form.  
   
  For more information about how to customize the default change request form, see [Step 2: Customize the Default Change Request Form](../Topic/Step%202:%20Customize%20the%20Default%20Change%20Request%20Form.md).  
   
 ## Step 3: Create the WF Workflow  
- Ken creates the **AddComputerToADGroupRule** workflow that automatically adds the specified computer to the specified Active Directory group after the compliance change request is approved.  
+ Ken creates the **AddComputerToADGroupRule** workflow that automatically adds the specified computer to the specified Active&nbsp;Directory group after the compliance change request is approved.  
   
  For more information about how to create the workflow rule and the Windows Workflow Foundation \(WF\) Workflow, see [Step 3: Create the WF Workflow](../Topic/Step%203:%20Create%20the%20WF%20Workflow.md).  
   
@@ -88,7 +88,7 @@ The steps of the Woodgrove Bank customization scenario are as follows. Details a
  For more information about how to create a notification template and subscription \(optional\), see [Step 10: Create a Notification Template and Subscription \(Optional\)](../Topic/Step%2010:%20Create%20a%20Notification%20Template%20and%20Subscription%20\(Optional\).md).  
   
 ## Step 11: Use the New Compliance Change Request Process  
- To test the new process, Ken creates a new compliance change request to add the **ADComputer1** computer to the **GP\_AUTHAPPS** group. Next, he submits and approves the new change request. Finally, Ken verifies in AD DS that the new computer has been added to the appropriate Active Directory group.  
+ To test the new process, Ken creates a new compliance change request to add the **ADComputer1** computer to the **GP\_AUTHAPPS** group. Next, he submits and approves the new change request. Finally, Ken verifies in AD&nbsp;DS that the new computer has been added to the appropriate Active Directory group.  
   
  For more information about how to use the new compliance change request process, see [Step 11: Use the New Compliance Change Request Process](../Topic/Step%2011:%20Use%20the%20New%20Compliance%20Change%20Request%20Process.md).  
   

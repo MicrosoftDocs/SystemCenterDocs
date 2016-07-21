@@ -21,7 +21,7 @@ Use the following steps to generate a Service Level Tracking Summary report.
   
 ### To generate a Service Level Tracking Summary report  
   
-1.  Open the Operations console with an account that is a member of the Operations Manager Administrators user role.  
+1.  Open the Operations console with an account that is a member of the Operations Manager&nbsp;Administrators user role.  
   
 2.  In the Reporting workspace, click **Microsoft Service Level Report Library**.  
   

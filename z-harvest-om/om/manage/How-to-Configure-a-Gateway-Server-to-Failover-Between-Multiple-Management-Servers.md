@@ -19,17 +19,17 @@ Use the Get\-ManagementServer\-GatewayManagementServer cmdlet in the Operations 
   
 1.  Log on to the gateway server with an account that is a member of the Administrators role for the management group.  
   
-2.  Click **Start**, click **All Programs**, click **Microsoft System Center 2012**, click **Operations Manager**, and then click **Operations Manager Shell**.  
+2.  Click **Start**, click **All Programs**, click **Microsoft System Center&nbsp;2012**, click **Operations Manager**, and then click **Operations Manager Shell**.  
   
 3.  In Operations Manager Shell, run the following command:  
   
     ```  
-    $primaryMS = Get-SCOMManagementServer –Name “<name of primary server>”  
-    $failoverMS = Get-SCOMManagementServer –Name “<name of 1st failover>”,”<name of 2nd failover>”,…,”<name of nth failover>”  
-    $gatewayMS = Get-SCOMGatewayManagementServer –Name “<name of gateway>”  
+    $primaryMS = Get-SCOMManagementServer -Name "<name of primary server>"  
+    $failoverMS = Get-SCOMManagementServer -Name "<name of 1st failover>","<name of 2nd failover>",...,"<name of nth failover>"  
+    $gatewayMS = Get-SCOMGatewayManagementServer -Name "<name of gateway>"  
   
-    Set-SCOMParentManagementServer –Gateway $gatewayMS –PrimaryServer $primaryMS  
-    Set-SCOMParentManagementServer –Gateway $gatewayMS –FailoverServer $failoverMS  
+    Set-SCOMParentManagementServer -Gateway $gatewayMS -PrimaryServer $primaryMS  
+    Set-SCOMParentManagementServer -Gateway $gatewayMS -FailoverServer $failoverMS  
   
     ```  
   

@@ -29,7 +29,7 @@ ms.assetid: a21c98a9-c10a-41db-8d8c-9eac164c2517
 
 ---
 # After Upgrading to System Center 2012 SP1 - Service Manager
-This topic describes how to restart the Data Access service if it fails to start after an upgrade to System Center 2012 - Service Manager SP1. After the upgrade, you will also have to start the Service Manager workflows and restart the data warehouse jobs. This topic also describes how to stop and then start SQL Server Reporting Services \(SSRS\) after an upgrade.  
+This topic describes how to restart the Data Access service if it fails to start after an upgrade to System Center 2012 - Service Manager SP1. After the upgrade, you will also have to start the Service Manager workflows and restart the data warehouse jobs. This topic also describes how to stop and then start SQL&nbsp;Server Reporting Services \(SSRS\) after an upgrade.  
   
 ## Restart the Data Access Service and Workflows on the Data Warehouse Management Server  
  If necessary, use the following procedures to restart the service and workflows.  
@@ -51,7 +51,7 @@ This topic describes how to restart the Data Access service if it fails to start
 3.  In the **Services** window, in the **Services \(Local\)** pane, right\-click **System Center Management**, and then click **Start**.  
   
 ## Restart Data Warehouse Jobs  
- After you upgrade the data warehouse management server, you might need to restart the data warehouse \(extraction, transformation, and load \(ETL\)\) jobs. You can use the following procedure to restart the data warehouse jobs. In this procedure, you enable data warehouse job schedules by using Windows PowerShell cmdlets.  
+ After you upgrade the data warehouse management server, you might need to restart the data warehouse \(extraction, transformation, and load \(ETL\)\) jobs. You can use the following procedure to restart the data warehouse jobs. In this procedure, you enable data warehouse job schedules by using Windows&nbsp;PowerShell cmdlets.  
   
 #### To restart data warehouse jobs  
   
@@ -75,34 +75,34 @@ This topic describes how to restart the Data Access service if it fails to start
     ```  
   
     ```  
-    Enable-SCDWJobSchedule –JobName Extract_<data warehouse management group name>  
+    Enable-SCDWJobSchedule -JobName Extract_<data warehouse management group name>  
     ```  
   
     ```  
-    Enable-SCDWJobSchedule –JobName Extract_<Service Manager management group name>  
+    Enable-SCDWJobSchedule -JobName Extract_<Service Manager management group name>  
     ```  
   
     ```  
-    Enable-SCDWJobSchedule –JobName Transform.Common  
+    Enable-SCDWJobSchedule -JobName Transform.Common  
     ```  
   
     ```  
-    Enable-SCDWJobSchedule –JobName Load.Common  
+    Enable-SCDWJobSchedule -JobName Load.Common  
     ```  
   
     ```  
-    Enable-SCDWJobSchedule –JobName DWMaintenance  
+    Enable-SCDWJobSchedule -JobName DWMaintenance  
     ```  
   
     ```  
-    Enable-SCDWJobSchedule –JobName MPSyncJob  
+    Enable-SCDWJobSchedule -JobName MPSyncJob  
     ```  
   
     ```  
-    Start-SCDWJob –JobName MPSyncJob  
+    Start-SCDWJob -JobName MPSyncJob  
     ```  
   
-     The last command, **Start\-SCDWJob – JobName MPSyncJob**, will enable the ETL jobs to run.  
+     The last command, **Start\-SCDWJob - JobName MPSyncJob**, will enable the ETL jobs to run.  
   
 ## Stop and Then Start SSRS  
  After you perform an upgrade to System Center 2012 - Service Manager SP1, use the following procedure to stop and then start SSRS.  

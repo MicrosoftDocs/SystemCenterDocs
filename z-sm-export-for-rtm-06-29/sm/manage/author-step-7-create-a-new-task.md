@@ -31,7 +31,7 @@ ms.assetid: 648500e3-5142-45a8-ae33-c07daff2347a
 # Step 7: Create a New Task
 When Ken works with a compliance change request, he needs to easily access the Active Directory Users and Computers administrative tool.  
   
- In this step of the Woodgrove Bank customization scenario, to make it easy to access the tool, Ken creates a new task, **Start Active Directory Users and Computers**. He saves this task to the **Woodgrove Automated Activity – Add Computer To Group** management pack. He can later use the new task to start the tool.  
+ In this step of the Woodgrove Bank customization scenario, to make it easy to access the tool, Ken creates a new task, **Start Active Directory Users and Computers**. He saves this task to the **Woodgrove Automated Activity - Add Computer To Group** management pack. He can later use the new task to start the tool.  
   
  The following procedure provides only the high\-level steps for creating a new task in the Service Manager console. For the complete procedure for creating a new task, see [How to Create a Task](http://go.microsoft.com/fwlink/p/?LinkId=231882).  
   

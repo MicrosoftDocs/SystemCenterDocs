@@ -16,13 +16,13 @@ manager:cfreemanwa
 Despite the great deal of variance in their design and visual complexity, runbooks are essentially very simple. Runbooks all essentially do three things: Run activities, manage published data, and branch.  
   
 ## Orchestrator Feature Functions  
-Additionally, runbook activities can be thought of as having two distinct types of code: Platform code and domain code. The term *domain code* is used to identify code called within a runbook activity typically not associated with the Orchestrator product itself. For example, the **Invoke Web Service** standard activity would contain Orchestrator platform code \(the “plumbing” of the activity\) as well as domain code unique to invoking a web service. The platform code will be unique but similar for most activities, since it is built from a common framework. However, there will potentially be great variation in domain code for different activities.  
+Additionally, runbook activities can be thought of as having two distinct types of code: Platform code and domain code. The term *domain code* is used to identify code called within a runbook activity typically not associated with the Orchestrator product itself. For example, the **Invoke Web Service** standard activity would contain Orchestrator platform code \(the "plumbing" of the activity\) as well as domain code unique to invoking a web service. The platform code will be unique but similar for most activities, since it is built from a common framework. However, there will potentially be great variation in domain code for different activities.  
   
 Essentially, Orchestrator runbooks are designed to pass data between discrete elements of domain code.  
   
 While technically not mandatory, every activity generally consumes published data created by prior runbook activities. What a given activity does with published data it subscribes to is entirely up to the domain code.  
   
-All runbook activities create published data, which is referred to as *Common Published Data*. Domain code will generally create published data, generally referred to as *Activity Specific Published Data*. This data will be as unique to a given activity as the domain code itself. Also, it’s not required that domain code produce published data.  
+All runbook activities create published data, which is referred to as *Common Published Data*. Domain code will generally create published data, generally referred to as *Activity Specific Published Data*. This data will be as unique to a given activity as the domain code itself. Also, it's not required that domain code produce published data.  
   
 The data produced by a given activity can contain data elements that are single or multi\-valued. For example, every activity produces a single record of single\-value data referred to as common published data. Domain code can produce multiple records of multi\-value data.  
   

@@ -29,7 +29,7 @@ ms.assetid: 3a0d866d-40b8-4f40-a175-3c5b563bbf83
 
 ---
 # Indexing Non-English Knowledge Articles
-If you have existing knowledge articles or are planning to create knowledge articles in any language other than English, use the following procedure to resolve an indexing issue in Microsoft SQL Server 2008 with Service Pack 1 \(SP1\). This issue deals with non\-English characters that are used in only the Analyst Content and the Internal Content fields in a knowledge article. You must perform this procedure on the computer that hosts the System Center 2012 - Service Manager database. You have two tasks to perform. The first is to edit the registry, and the second is to run a series of SQL Server query commands on the Service Manager database.  
+If you have existing knowledge articles or are planning to create knowledge articles in any language other than English, use the following procedure to resolve an indexing issue in Microsoft SQL&nbsp;Server&nbsp;2008 with Service Pack&nbsp;1 \(SP1\). This issue deals with non\-English characters that are used in only the Analyst Content and the Internal Content fields in a knowledge article. You must perform this procedure on the computer that hosts the System Center 2012 - Service Manager database. You have two tasks to perform. The first is to edit the registry, and the second is to run a series of SQL&nbsp;Server query commands on the Service Manager database.  
   
 > [!CAUTION]  
 >  Incorrectly editing the registry might severely damage your system; therefore, before making changes to the registry, back up any valued data on the computer.  
@@ -77,7 +77,7 @@ If you have existing knowledge articles or are planning to create knowledge arti
   
 ### To run the SQL Server commands  
   
-1.  On the computer hosting the Service Manager database, on the Windows desktop, click **Start**, click **All Programs**, click **Microsoft SQL Server 2008**, and then click **SQL Server Management Studio**.  
+1.  On the computer hosting the Service Manager database, on the Windows desktop, click **Start**, click **All Programs**, click **Microsoft SQL&nbsp;Server&nbsp;2008**, and then click **SQL Server Management Studio**.  
   
 2.  In the **Connect to Server** dialog box, perform the following:  
   
@@ -103,11 +103,11 @@ If you have existing knowledge articles or are planning to create knowledge arti
   
     ```  
   
-6.  In the **Messages** tab, verify that the message “Command\(s\) completed successfully” appears.  
+6.  In the **Messages** tab, verify that the message "Command\(s\) completed successfully" appears.  
   
 ### To verify changing the .rtf filter  
   
-1.  On the computer hosting the Service Manager database, on the Windows desktop, click **Start**, click **All Programs**, click **Microsoft SQL Server 2008**, and then click **SQL Server Management Studio**.  
+1.  On the computer hosting the Service Manager database, on the Windows desktop, click **Start**, click **All Programs**, click **Microsoft SQL Server&nbsp;2008**, and then click **SQL Server Management Studio**.  
   
 2.  In the **Connect to Server** dialog box, perform the following:  
   

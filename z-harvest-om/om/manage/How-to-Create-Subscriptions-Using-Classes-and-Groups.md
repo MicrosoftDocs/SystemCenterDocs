@@ -30,7 +30,7 @@ You can use classes and groups to configure the subscription. Two of the conditi
 You can select multiple groups or classes when you set the value for either condition.  
   
 > [!NOTE]  
-> Operations Manager does not support using “not equal to” or “not a member of” for notification subscriptions.  
+> Operations Manager does not support using "not equal to" or "not a member of" for notification subscriptions.  
   
 ## Groups  
 Groups are logical collections of objects, such as Windows\-based computers, hard disks, or instances of Microsoft SQL Server. Some groups are created by Operations Manager, such as the Operations Manager Agent Managed Computer Group and the All Windows Computers group. You can create groups to meet your specific monitoring needs, such as all Windows computers in a specific organizational unit \(OU\). For more information on creating groups, see [How to Create Groups in Operations Manager](../../om/manage/How-to-Create-Groups-in-Operations-Manager.md).  

@@ -49,7 +49,7 @@ Before you begin, gather the following information:
 7.  Type the **Return Address** that should appear on email notifications, and then in the **Retry interval** list, select the number of minutes to wait before trying to resend a notification to the primary SMTP server. Click **Next**.  
   
     > [!NOTE]  
-    > If you have only one SMTP server and it’s unavailable, the Retry interval has no effect. The Retry interval is used when you have a secondary server and mail sending to the primary server fails. When this happens, Operations Manager switches to the secondary server and checks the Retry interval time. If the Retry interval time has passed, Operations Manager tries to use the primary server.  
+    > If you have only one SMTP server and it's unavailable, the Retry interval has no effect. The Retry interval is used when you have a secondary server and mail sending to the primary server fails. When this happens, Operations Manager switches to the secondary server and checks the Retry interval time. If the Retry interval time has passed, Operations Manager tries to use the primary server.  
   
 8.  In the **Default e\-mail notification format** area, specify the **E\-mail subject** and **E\-mail message** text or leave the default selections, select the **Importance** level that you want the emails sent with, and then specify the **Encoding** type. You can click the right arrow next to the **E\-mail subject** and **E\-mail message** boxes for a full list of available variables. For more information, see [How to Customize Message Content for Notifications](../../om/manage/How-to-Customize-Message-Content-for-Notifications.md).  
   

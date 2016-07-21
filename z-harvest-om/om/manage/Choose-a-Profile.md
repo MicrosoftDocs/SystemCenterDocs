@@ -20,7 +20,7 @@ Before you start the Create User Role Wizard, select one profile that applies to
 > [!IMPORTANT]  
 > Adding a machine account to a user role member allows all services on that computer to have software development kit \(SDK\) access. It is recommended that you do not add a machine account to any user role.  
   
-In Operations Manager, operations—such as resolving alerts, running tasks, overriding monitors, creating user roles, viewing alerts, viewing events, and so on—have been grouped into profiles, with each profile representing a particular job function as shown in the following table. For a list of specific operations associated with each profile, see [Operations Associated with User Role Profiles](../../om/manage/Operations-Associated-with-User-Role-Profiles.md).  
+In Operations Manager, operations-such as resolving alerts, running tasks, overriding monitors, creating user roles, viewing alerts, viewing events, and so on-have been grouped into profiles, with each profile representing a particular job function as shown in the following table. For a list of specific operations associated with each profile, see [Operations Associated with User Role Profiles](../../om/manage/Operations-Associated-with-User-Role-Profiles.md).  
   
 > [!NOTE]  
 > A scope defines the entity groups, object types, tasks, or views that a profile is restricted to. Not all scopes apply to all profiles.  

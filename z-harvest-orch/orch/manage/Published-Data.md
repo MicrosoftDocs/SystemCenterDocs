@@ -46,7 +46,7 @@ Use the following procedures to add Published Data to an activity, to change the
   
 #### To subscribe to Published Data of an earlier  activity in the workflow  
   
-1.  Right\-click an activity from your runbook to select **Properties**, and then click the **Details** tab to open the activity’s properties dialog box.  
+1.  Right\-click an activity from your runbook to select **Properties**, and then click the **Details** tab to open the activity's properties dialog box.  
   
 2.  To open a menu, in the text box, right\-click to  select **Subscribe**, and then click **Published Data** to open the **Published Data** dialog box.  
   
@@ -89,7 +89,7 @@ The following table describes the Published Data items common to all activities.
 |Activity type|The default name of the activity. It does not change from the default even if you rename the activity in the workspace, and it can be useful in identifying an activity in runbooks where activity names and display icons have been changed.|  
 |Error summary text|A summary of the error information that the activity returns.|  
 |Runbook name|The name of the runbook.|  
-|Runbook Process ID|The process ID of the runbook module’s executable program that is running on the runbook server.<br /><br />The job process contains the logic for the activity. It is started when the runbook server starts the runbook, and it is stopped when the runbook is stopped. Each runbook runs in its own job process executable program.|  
+|Runbook Process ID|The process ID of the runbook module's executable program that is running on the runbook server.<br /><br />The job process contains the logic for the activity. It is started when the runbook server starts the runbook, and it is stopped when the runbook is stopped. Each runbook runs in its own job process executable program.|  
 |Server name|The name of the runbook server where the runbook is running.|  
 |Activity duration|The total time that the activity was running.|  
 |Activity end time|The time when the activity finished.|  

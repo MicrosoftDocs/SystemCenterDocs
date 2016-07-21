@@ -29,18 +29,18 @@ ms.assetid: 91a72f45-07ff-41cd-80aa-7acde988f08f
 
 ---
 # Deployment Scenarios for System Center 2012 - Service Manager
-System Center 2012 - Service Manager provides for many deployment scenarios. However, remember that you cannot deploy a Service Manager management server and a data warehouse management server on the same computer. In fact, Setup prevents you from installing both on a single server. The reason has to do with Service Manager architecture of the data warehouse, overall performance, and usage of the Operations Manager health service. The data warehouse was designed for quick data retrieval and hosting both the Service Manager management server and the data warehouse management server on a single server will negatively impact performance for both. Additionally, a single server doesn’t scale out as Service Manager usage and data storage grow.  
+System Center 2012 - Service Manager provides for many deployment scenarios. However, remember that you cannot deploy a Service Manager management server and a data warehouse management server on the same computer. In fact, Setup prevents you from installing both on a single server. The reason has to do with Service Manager architecture of the data warehouse, overall performance, and usage of the Operations Manager health service. The data warehouse was designed for quick data retrieval and hosting both the Service Manager management server and the data warehouse management server on a single server will negatively impact performance for both. Additionally, a single server doesn't scale out as Service Manager usage and data storage grow.  
   
- You will also specify the server that hosts SQL Server Reporting Services \(SSRS\). Do not attempt to use the same SSRS instance for both Operations Manager and Service Manager.  
+ You will also specify the server that hosts SQL&nbsp;Server Reporting Services \(SSRS\). Do not attempt to use the same SSRS instance for both Operations Manager and Service Manager.  
   
  This deployment guide describes the following three deployment scenarios: installing Service Manager on one computer, installing Service Manager on two computers, and installing Service Manager on four computers.  
   
 > [!NOTE]  
->  The collation settings for Microsoft SQL Server must be the same for the computers that host the Service Manager database, the computers that host the data warehouse databases, and the computers that host the Reporting Services database. If you intend to import data from Operations Manager, then the database collations must match between Service Manager and Operations Manager.  
+>  The collation settings for Microsoft SQL&nbsp;Server must be the same for the computers that host the Service Manager database, the computers that host the data warehouse databases, and the computers that host the Reporting Services database. If you intend to import data from Operations Manager, then the database collations must match between Service Manager and Operations Manager.  
   
  While we do not recommend it \(for performance reasons\), if you want to host the Service Manager management server and the Self-Service Portal on the same computer, you must deploy the Service Manager management server before you deploy the Self-Service Portal.  
   
- Performing an upgrade from previous versions of Service Manager to Service Manager Community Technology Preview 1 \(CTP1\) is not supported. Furthermore, for this release, Service Manager setup installs files in predefined folders that might already exist if you have a previous version of Service Manager installed.  
+ Performing an upgrade from previous versions of Service Manager to Service Manager Community Technology Preview&nbsp;1 \(CTP1\) is not supported. Furthermore, for this release, Service Manager setup installs files in predefined folders that might already exist if you have a previous version of Service Manager installed.  
   
  The user installing Service Manager has access to the Service Connection Point \(SCP\) object of Service Manager in the Active Directory. This SCP stores the information about the service. Client applications, such as Service Manager, can connect to services using the SCP. For more information about service connection points, see [Publishing Services in Active Directory](http://technet.microsoft.com/library/cc961733.aspx).  
   
@@ -64,7 +64,7 @@ System Center 2012 - Service Manager provides for many deployment scenarios. How
   
 -   [Manual Steps to Prepare Upgraded SQL Server](../../../sm/deploy/deploy-guide/Manual-Steps-to-Prepare-Upgraded-SQL-Server.md)  
   
-     Describes how to manually configure an upgraded version of SQL Server 2012 to enable SQL Server Reporting Services.  
+     Describes how to manually configure an upgraded version of SQL&nbsp;Server&nbsp;2012 to enable SQL Server Reporting Services.  
   
 -   [How to Create and Deploy Server Images of Service Manager](../../../sm/deploy/deploy-guide/How-to-Create-and-Deploy-Server-Images-of-Service-Manager.md)  
   
@@ -72,10 +72,10 @@ System Center 2012 - Service Manager provides for many deployment scenarios. How
   
 ## Other Resources for This Component  
   
--   TechNet Library main page for [System Center 2012 – Service Manager](http://go.microsoft.com/fwlink/p/?LinkId=220655)  
+-   TechNet Library main page for [System Center 2012 - Service Manager](http://go.microsoft.com/fwlink/p/?LinkId=220655)  
   
--   [Operations Guide for System Center 2012 – Service Manager](http://go.microsoft.com/fwlink/p/?LinkId=220656)  
+-   [Operations Guide for System Center 2012 - Service Manager](http://go.microsoft.com/fwlink/p/?LinkId=220656)  
   
--   [Administrator's Guide for System Center 2012 – Service Manager](http://go.microsoft.com/fwlink/p/?LinkId=209669)  
+-   [Administrator's Guide for System Center 2012 - Service Manager](http://go.microsoft.com/fwlink/p/?LinkId=209669)  
   
--   [Planning Guide for System Center 2012 – Service Manager](http://go.microsoft.com/fwlink/p/?LinkId=209672)
+-   [Planning Guide for System Center 2012 - Service Manager](http://go.microsoft.com/fwlink/p/?LinkId=209672)

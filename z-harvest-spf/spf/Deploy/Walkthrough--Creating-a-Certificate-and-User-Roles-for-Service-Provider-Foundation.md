@@ -71,7 +71,7 @@ The procedures in this section show how to export public and private keys from c
   
     If the Yes option is disabled, that is because the **makecert** command to create the certificate did not include the *\-pe* option.  
   
-4.  On the **Export File Format** page, select the **Personal Information Exchange – PKCS \#12 \(.PFX\)** option, check the **Include all certificates in the certification path if possible** check box and then click **Next**.  
+4.  On the **Export File Format** page, select the **Personal Information Exchange - PKCS \#12 \(.PFX\)** option, check the **Include all certificates in the certification path if possible** check box and then click **Next**.  
   
 5.  On the **Security** page, select the **Password:** option, provide and confirm a password, and then click **Next**.  
   
@@ -106,7 +106,7 @@ You can also create user roles by using the Admin OData protocol service that us
 2.  Enter the following command to create the tenant. This command assumes that the `$key` variable contains the public key as obtained from the [To obtain the public key in Windows PowerShell](../Topic/Walkthrough:%20Creating%20a%20Certificate%20and%20User%20Roles%20for%20Service%20Provider%20Foundation.md#BMK_ObtainKey) procedure.  
   
     ```  
-    PS C:\> $tenant = New-SCSPFTenant -Name "contoso.cloudspace.com" -IssuerName "contoso.cloudspace.com" –Key $key  
+    PS C:\> $tenant = New-SCSPFTenant -Name "contoso.cloudspace.com" -IssuerName "contoso.cloudspace.com" -Key $key  
     ```  
   
 3.  Verify that the public key for the tenant was imported successfully by running the following command and viewing the results:  

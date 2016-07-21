@@ -13,7 +13,7 @@ author:mgoedtel
 manager:cfreemanwa
 ---
 # Monitoring the Health of the Management Group
-[!INCLUDE[om12long](../../om/manage/includes/om12long_md.md)] introduces a new dashboard view that provides a comprehensive picture of the health of your management group. The dashboard tries to answer the question, “do I need to do anything?”  
+[!INCLUDE[om12long](../../om/manage/includes/om12long_md.md)] introduces a new dashboard view that provides a comprehensive picture of the health of your management group. The dashboard tries to answer the question, "do I need to do anything?"  
   
 The **Management Group Health** view allows you to see at a glance the health state of all management group functions, such as resource pools, and the management group infrastructure, such as management servers. It also shows you recent agent health state including gray agents, agent configuration for agents pending management, and agent versions.  
   
@@ -69,9 +69,9 @@ You can open Health Explorer, alert view, diagram view, event view, performance 
 **Agent Health State** displays a graph of health states for all agents over the past 7 days.  
   
 > [!NOTE]  
-> The screenshot for **Agent Health State** displays 9 hour’s worth of data. As additional data is collected, the scale will compress to show a maximum of 7 day’s worth of data.  
+> The screenshot for **Agent Health State** displays 9 hour's worth of data. As additional data is collected, the scale will compress to show a maximum of 7 day's worth of data.  
   
-The graph captures all possible agent states, including “unavailable”, or “gray”, agents. It is possible to unselect health states, if you only want to focus on certain health states.  
+The graph captures all possible agent states, including "unavailable", or "gray", agents. It is possible to unselect health states, if you only want to focus on certain health states.  
   
 ## Agent Configuration  
 ![Agents pending approval or installation failed](../../om/manage/media/OM12MgtGpHealth_AgentConfig.gif "OM12MgtGpHealth_AgentConfig")  

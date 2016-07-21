@@ -15,7 +15,7 @@ manager:cfreemanwa
 # Install the Visio 2010 Add-in
 The Visio 2010 Add\-in for [!INCLUDE[om12long](../../om/manage/includes/om12long_md.md)] has the following prerequisites:  
   
--   System Center 2012 – Operations Manager Operations or Authoring console.  
+-   System Center 2012 - Operations Manager Operations or Authoring console.  
   
     You can download the Authoring console from the [Microsoft Download Center](http://go.microsoft.com/fwlink/?LinkID=136356) \(http:\/\/go.microsoft.com\/fwlink\/?LinkID\=136356\).  
   

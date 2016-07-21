@@ -63,7 +63,7 @@ In System Center 2012 - Service Manager, release record templates for parallel a
   
 9. When you have added all the activities you want, click **OK** to save the parallel activity template and close it. The parallel activity template then appears in **Templates** list.  
   
-10. Repeat this procedure for a sequential activity, replacing instances of “parallel activity” with “sequential activity.”  
+10. Repeat this procedure for a sequential activity, replacing instances of "parallel activity" with "sequential activity."  
   
 ## See Also  
  [Managing Release Records in System Center 2012 \- Service Manager](../../../sm/manage/operate/Managing-Release-Records-in-System-Center-2012---Service-Manager.md)

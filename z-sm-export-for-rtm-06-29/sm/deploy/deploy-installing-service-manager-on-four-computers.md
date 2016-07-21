@@ -19,7 +19,7 @@ When you are ready to move System Center 2012 - Service Manager into a productio
 
  ![Four&#45;computer installation of Service Manager 2012](../media/deploy-four_computer_install.png)  
 
- In this deployment scenario, you install Microsoft SQL Server only on the computers that hosts databases \(computers 2 and 4\). You install SQL Server Reporting Services \(SSRS\) and SQL Server Analysis Services \(SSAS\) on the computer that hosts the data warehouse databases \(computer 4\).  
+ In this deployment scenario, you install Microsoft SQL&nbsp;Server only on the computers that hosts databases \(computers 2 and 4\). You install SQL&nbsp;Server Reporting Services \(SSRS\) and SQL&nbsp;Server Analysis Services \(SSAS\) on the computer that hosts the data warehouse databases \(computer 4\).  
 
 ## Installing Service Manager on four computers  
 
@@ -36,4 +36,4 @@ When you are ready to move System Center 2012 - Service Manager into a productio
      Describes how to validate the installation of Service Manager and the configuration of SSRS.  
 
 > [!IMPORTANT]  
->  For this release, Service Manager does not support case\-sensitive instance names. Setup will display a warning if you attempt to install Service Manager on a case\-sensitive instance of Microsoft SQL Server.
+>  For this release, Service Manager does not support case\-sensitive instance names. Setup will display a warning if you attempt to install Service Manager on a case\-sensitive instance of Microsoft SQL&nbsp;Server.
