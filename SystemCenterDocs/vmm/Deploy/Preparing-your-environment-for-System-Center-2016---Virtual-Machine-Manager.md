@@ -186,11 +186,7 @@ For more information about update management in VMM, see [Managing fabric update
 ## Monitoring and reporting
 VMM can monitor the health and performance of virtual machines and their hosts. To do so, VMM integrates with Operations Manager and enables Performance and Resource Optimization (PRO). VMM also provides the capability to use the reporting functionality of Operations Manager.
 
-VMM in System Center 2016 Technical Preview supports the following versions of Operations Manager:
-
--   Operations Manager in System Center 2016 Technical Preview
-
--   Operations Manager in System Center 2012 R2
+VMM in System Center 2016 Technical Preview only supports integration with System Center 2016 Technical Preview - Operations Manager.
 
 Requirements:
 
