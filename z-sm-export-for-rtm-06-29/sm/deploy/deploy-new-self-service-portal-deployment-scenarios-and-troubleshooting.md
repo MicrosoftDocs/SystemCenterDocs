@@ -21,12 +21,12 @@ The new Self Service Portal is an ASP.NET MVC Razor\-based HTML5 Web app. During
 
 1.  A users type the URL of the Web app in their browser to access the Self Service Portal.  
 
-2.  ASP.NET creates a new instance for the user and tries to content to SDK Service, provided during installation, in the user’s context.  
+2.  ASP.NET creates a new instance for the user and tries to content to SDK Service, provided during installation, in the user's context.  
 
 3.  The SDK Service reads and writes data to the Service Manager database.  
 
 > [!IMPORTANT]  
->  **If you are installing the new Portal on the same server as old SharePoint Portal**: This release of the Self\-Service Portal is not compatible with—nor is upgrade possible from—the old Self\-Service Portal in System Center Service Manager 2010 or in System Center Service Manager 2010 Service Pack 1 \(SP1\) or Service Manager 2012 R2. You must uninstall older versions of the Self\-Service Portal before you deploy the new Self\-Service Portal in System Center 2012 – Service Manager.  
+>  **If you are installing the new Portal on the same server as old SharePoint Portal**: This release of the Self\-Service Portal is not compatible with-nor is upgrade possible from-the old Self\-Service Portal in System Center Service Manager 2010 or in System Center Service Manager 2010 Service Pack 1 \(SP1\) or Service Manager 2012 R2. You must uninstall older versions of the Self\-Service Portal before you deploy the new Self\-Service Portal in System Center 2012 - Service Manager.  
 
 ## Preparing for Deployment  
  Review the following section to help you prepare for deployment.  
@@ -62,7 +62,7 @@ The new Self Service Portal is an ASP.NET MVC Razor\-based HTML5 Web app. During
  See the [Deploy the New Self\-Service Portal](https://technet.microsoft.com/library/mt622142.aspx) topic for detailed steps about how to deploy the new Self Service Portal. The following sections summarize key deployment considerations.  
 
 ### Installing the Portal as the Default Website  
- If you want to install new Self Service Portal on port 80, you must first move the default website in IIS to a different port—for example, port 8080—and then move Self Service Portal to port 80.  
+ If you want to install new Self Service Portal on port 80, you must first move the default website in IIS to a different port-for example, port 8080-and then move Self Service Portal to port 80.  
 
 ### Using SSL  
  [SSL](http://www.iis.net/learn/manage/configuring-security/how-to-set-up-ssl-on-iis) is recommend to ensure secure communication, especially when using basic authentication when a  username and password are transferred across network in plain text.  
@@ -82,12 +82,12 @@ The new Self Service Portal is an ASP.NET MVC Razor\-based HTML5 Web app. During
 
  ![sm&#45;ssp&#45;scenario&#45;03](../media/deploy-sm-ssp-scenario-03.png)  
 
- In this configuration, the new Self Service Portal and the secondary Service Manager server are installed on different servers and a [double\-hop](http://weblogs.asp.net/owscott/iis-windows-authentication-and-the-double-hop-issue) is required to create a connection to the SDK Service from the Web app. Windows Authentication can’t be used in this case and the Portal needs to be configured to use [Basic Authentication](http://www.iis.net/configreference/system.webserver/security/authentication/basicauthentication). Because Basic Authentication is inherently insecure, using SSL is recommended to avoid any deployment security issues, like accessing resources beyond firewalls and proxy servers.  
+ In this configuration, the new Self Service Portal and the secondary Service Manager server are installed on different servers and a [double\-hop](http://weblogs.asp.net/owscott/iis-windows-authentication-and-the-double-hop-issue) is required to create a connection to the SDK Service from the Web app. Windows Authentication can't be used in this case and the Portal needs to be configured to use [Basic Authentication](http://www.iis.net/configreference/system.webserver/security/authentication/basicauthentication). Because Basic Authentication is inherently insecure, using SSL is recommended to avoid any deployment security issues, like accessing resources beyond firewalls and proxy servers.  
 
- Using SSL with network delays between the Portal and the SDK Service, makes this topology slower compared to a single\-server deployment. However, this configuration can help deployment scenarios where a double\-hop can’t be avoided.  
+ Using SSL with network delays between the Portal and the SDK Service, makes this topology slower compared to a single\-server deployment. However, this configuration can help deployment scenarios where a double\-hop can't be avoided.  
 
 ###  <a name="farm"></a> Deploying a Web Farm  
- One of the key benefits of the new Self Service Portal is that the Web app does not have any local data storage, apart from the it’s caching. It reads and writes directly to the Service Manager database. This makes it easier to deploy multiple instances of the Web server, in parallel.  For large deployments, greater than 1,000 users accessing portal in parallel, you can deploy the new Self Service Portal as a [Web Farm](https://technet.microsoft.com/en-us/library/jj129543.aspx) similar to the following configuration.  
+ One of the key benefits of the new Self Service Portal is that the Web app does not have any local data storage, apart from the it's caching. It reads and writes directly to the Service Manager database. This makes it easier to deploy multiple instances of the Web server, in parallel.  For large deployments, greater than 1,000 users accessing portal in parallel, you can deploy the new Self Service Portal as a [Web Farm](https://technet.microsoft.com/en-us/library/jj129543.aspx) similar to the following configuration.  
 
  ![sm&#45;ssp&#45;scenario&#45;04](../media/deploy-sm-ssp-scenario-04.png)  
 
@@ -97,7 +97,7 @@ The new Self Service Portal is an ASP.NET MVC Razor\-based HTML5 Web app. During
  The following troubleshooting sections can help you resolve common issues.  
 
 ### Unable to Install the New Self Service Portal After Uninstalling the Old Portal  
- You’ll need to clean the registry of the previous installation for the installation to work. Use the following steps.  
+ You'll need to clean the registry of the previous installation for the installation to work. Use the following steps.  
 
 1.  Open Register Editor to search for the **SMPortalWebContentServer** key and delete all the instances you find. You can also delete the parent property if only the portal is found.  
 
@@ -153,7 +153,7 @@ The new Self Service Portal is an ASP.NET MVC Razor\-based HTML5 Web app. During
  ![sm&#45;ssp&#45;scenario&#45;11](../media/deploy-sm-ssp-scenario-11.png)  
 
 #### Basic Authentication  
- For a double\-hop scenario, Windows Authentication won’t work so it must be disabled. Basic Authentication needs to be enabled and configured.  
+ For a double\-hop scenario, Windows Authentication won't work so it must be disabled. Basic Authentication needs to be enabled and configured.  
 
  ![sm&#45;ssp&#45;scenario&#45;12](../media/deploy-sm-ssp-scenario-12.png)  
 
@@ -164,9 +164,9 @@ The new Self Service Portal is an ASP.NET MVC Razor\-based HTML5 Web app. During
 
 ```  
 <system.web>  
-   …..  
+   .....  
    <trace enabled="true"/>  
-   …  
+   ...  
 </system.web>  
 
 ```  
@@ -184,7 +184,7 @@ The new Self Service Portal is an ASP.NET MVC Razor\-based HTML5 Web app. During
 
 ```  
 
- Because the Web App runs in the logged\-on user’s content, ensure you to provide write permissions to all users in the log folder. For example, c:\\logs in the example above.  
+ Because the Web App runs in the logged\-on user's content, ensure you to provide write permissions to all users in the log folder. For example, c:\\logs in the example above.  
 
 ### Debugging IIS  
  IIS supports efficient logging to help you debug IIS issues. For more information, see  [IIS Logging Overview](https://msdn.microsoft.com/en-us/library/ms525410\(v=vs.90\).aspx).  
@@ -213,10 +213,10 @@ The new Self Service Portal is an ASP.NET MVC Razor\-based HTML5 Web app. During
 
  The pop\-up above appears for the App Insights JavaScript SDK, which is integrated in the Self Service Portal to gather telemetry data. You can disable sending telemetry data by changing the value of the EnableTelemetry configuration parameter, which will remove the pop\-up.  For more information, see [Deploy the New Self\-Service Portal](../Topic/Deploy%20the%20New%20Self-Service%20Portal.md) in the Basic Customization section.  
 
-### You can access Portal on the computer that hosts IIS, but you can’t access it from a remote computer  
- This issue may occur if Portal and SDK Service are located on different computers \(Stand\-Alone Self Service Portal Deployment\). This causes a double hop scenario when you try to access the portal from a remote computer. Therefore, the default portal configuration that is described under “Windows Authentication” won’t work. To resolve this issue, use the “Basic Authentication” configuration instead.  
+### You can access Portal on the computer that hosts IIS, but you can't access it from a remote computer  
+ This issue may occur if Portal and SDK Service are located on different computers \(Stand\-Alone Self Service Portal Deployment\). This causes a double hop scenario when you try to access the portal from a remote computer. Therefore, the default portal configuration that is described under "Windows Authentication" won't work. To resolve this issue, use the "Basic Authentication" configuration instead.  
 
-### You can’t see some Service Offerings or published Service Offerings on Portal  
+### You can't see some Service Offerings or published Service Offerings on Portal  
  This is because Service Offerings are displayed only if they that meet one of the following conditions:  
 
 -   The Service Offering matches the browser language or language selected through Portal Language selector matches.  
@@ -269,9 +269,9 @@ The new Self Service Portal is an ASP.NET MVC Razor\-based HTML5 Web app. During
 
 -   tr\-TR : Türkçe  
 
--   zh\-CHS : 中文（简体\)  
+-   zh\-CHS : 中文(简体\)  
 
--   zh\-TW : 中文（简体\)  
+-   zh\-TW : 中文(简体\)  
 
 -   zh\-HK : 中文 \(香港特別行政區\)  
 
@@ -287,7 +287,7 @@ The new Self Service Portal is an ASP.NET MVC Razor\-based HTML5 Web app. During
 
 -   Views\\Shared\\\_Layout.cshtml  
 
-### You want to show the status of certain work items as “Active” on Portal
+### You want to show the status of certain work items as "Active" on Portal
 
  Here is sample code to show status enum "ServiceRequestStatusEnum.OnHold" and "IncidentStatusEnum.Active.Pending" as active:  
 
@@ -319,7 +319,7 @@ The new Self Service Portal is an ASP.NET MVC Razor\-based HTML5 Web app. During
 ```  
 
 @{  
-…………  
+............  
 
     if (changeStatusButtonText != null)  
     {  

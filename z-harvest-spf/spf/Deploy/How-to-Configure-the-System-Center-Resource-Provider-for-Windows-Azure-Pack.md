@@ -147,7 +147,7 @@ For more information about registering [!INCLUDE[spfshort](../../spf/Deploy/incl
     resource provider object with the \-*Force* parameter so that the System Center resource provider is overwritten with the updated values. Type:  
   
     ```  
-    PS C:\>Add-ResourceProvider –ResourceProvider $rp –Force  
+    PS C:\>Add-ResourceProvider -ResourceProvider $rp -Force  
     ```  
   
 ## See Also  

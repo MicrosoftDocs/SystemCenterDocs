@@ -50,7 +50,7 @@ Use the following procedure to prepare the Service Manager database in the lab e
 5.  In the center pane, type the following commands, and then click **Execute**.  
   
     ```  
-    sp_configure 'clr enabled', 1  
+    sp_configure&nbsp;'clr enabled',&nbsp;1  
     go  
     reconfigure  
     go  
@@ -80,7 +80,7 @@ Use the following procedure to prepare the Service Manager database in the lab e
   
 2.  Right\-click **Logins**, and then click **New Login**  
   
-3.  Perform the following procedures in the **Login – New** wizard:  
+3.  Perform the following procedures in the **Login - New** wizard:  
   
     1.  Click **Search**.  
   
@@ -145,9 +145,9 @@ Use the following procedure to prepare the Service Manager database in the lab e
   
 13. In all of the rows in this column, type the name of the computer hosting the Service Manager management server in the lab environment.  
   
-14. Right\-click **\[dbo\].\[MT\_Microsoft$SystemCenter$ResourceAccessLayer$CmdbResourceStore\]**, and then click **Edit Top 200 Rows**.  
+14. Right\-click&nbsp;**\[dbo\].\[MT\_Microsoft$SystemCenter$ResourceAccessLayer$CmdbResourceStore\]**, and then click&nbsp;**Edit Top 200 Rows**.  
   
-15. In all rows update the column **Server\_48B308F9\_CF0E\_0F74\_83E1\_0AEB1B58E2FA**, type the name of the SQL computer hosting the Service Manager database in the lab environment  
+15. In all rows update the column&nbsp;**Server\_48B308F9\_CF0E\_0F74\_83E1\_0AEB1B58E2FA**, type the name of the SQL computer hosting the Service Manager database in the lab environment  
   
 16. In the toolbar, click **New Query**.  
   

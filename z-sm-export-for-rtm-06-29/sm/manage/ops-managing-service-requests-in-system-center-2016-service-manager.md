@@ -31,7 +31,7 @@ ms.assetid: 9a0583e5-0eaa-42d0-a704-2301ca3af342
 # Managing Service Requests in System Center 2012 - Service Manager
 Service requests are requests for existing, preauthorized services and features that System Center 2012 - Service Manager can manage as a type of work item. Service requests help you deliver a service request fulfillment solution to align your business and information technology \(IT\) strategy and ensure that IT services provide business value. Service requests are tightly coupled with the service catalog, and together they help add value to your IT organization by clearly managing service requests. This can help lead to a better understanding of the supply and demand for services and a more efficient and transparent customer service provided by your IT organization.  
   
- Service request functionality in Service Manager is based on Microsoft Operations Framework \(MOF\) 4.0 and Information Technology Infrastructure Library \(ITIL\) V3 processes in order to align with industry standards. While not all functionality was completed with strict adherence to those standards, the following items are included in service request fulfillment in Service Manager:  
+ Service request functionality in Service Manager is based on Microsoft Operations Framework \(MOF\)&nbsp;4.0 and Information Technology Infrastructure Library \(ITIL\)&nbsp;V3 processes in order to align with industry standards. While not all functionality was completed with strict adherence to those standards, the following items are included in service request fulfillment in Service Manager:  
   
 -   Processes to record, track, and process service requests  
   

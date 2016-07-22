@@ -57,10 +57,10 @@ You should always review the management pack guide before you import a managemen
   
 5.  In the list of management packs, select the management pack that you want to import, click **Select**, and then click **Add**.  
   
-    In the list of management packs, you can select a product, or expand the product name to select a specific version, or expand the product version to select a specific management pack file. For example, you can select **SQL Server** for all SQL Server management packs, or you can expand **SQL Server** and select **SQL Server 2005** for all SQL Server 2005 management packs, or you can expand **SQL Server 2005** and select **SQL Server Core Library Management Pack**.  
+    In the list of management packs, you can select a product, or expand the product name to select a specific version, or expand the product version to select a specific management pack file. For example, you can select **SQL Server** for all SQL Server management packs, or you can expand **SQL Server** and select **SQL Server&nbsp;2005** for all SQL Server&nbsp;2005 management packs, or you can expand **SQL Server&nbsp;2005** and select **SQL Server Core Library Management Pack**.  
   
     > [!NOTE]  
-    > When a management pack is labeled “\(Online Catalog Only\)”, you cannot import the management pack directly from the catalog. You must download the .msi and import from disk.  
+    > When a management pack is labeled "\(Online Catalog Only\)", you cannot import the management pack directly from the catalog. You must download the .msi and import from disk.  
   
 6.  On the **Select Management Packs** page, the management packs that you selected for import are listed. An icon next to each management pack in the list indicates the status of the selection, as follows:  
   
@@ -126,7 +126,7 @@ You should always review the management pack guide before you import a managemen
   
 5.  In the list of management packs, select the management pack that you want to import, click **Select**, and then click **Add**.  
   
-    In the list of management packs, you can select a product, or expand the product name to select a specific version, or expand the product version to select a specific management pack file. For example, you can select **SQL Server** for all SQL Server management packs, or you can expand **SQL Server** and select **SQL Server 2005** for all SQL Server 2005 management packs, or you can expand **SQL Server 2005** and select **SQL Server Core Library Management Pack**.  
+    In the list of management packs, you can select a product, or expand the product name to select a specific version, or expand the product version to select a specific management pack file. For example, you can select **SQL Server** for all SQL Server management packs, or you can expand **SQL Server** and select **SQL Server&nbsp;2005** for all SQL Server&nbsp;2005 management packs, or you can expand **SQL Server&nbsp;2005** and select **SQL Server Core Library Management Pack**.  
   
 6.  The selected management packs are displayed in the **Download** list. In the **Download management packs to this folder** field, enter the path where the management packs should be saved, and then click **Download**.  
   

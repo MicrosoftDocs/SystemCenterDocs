@@ -13,7 +13,7 @@ author:mgoedtel
 manager:cfreemanwa
 ---
 # How to Enable Recovery and Diagnostic Tasks
-Monitors in Operations Manager for System Center 2012 can do more than notify you of problems by sending an alert. Some monitors also provide diagnostic and recovery tasks to help investigate and resolve those problems.  
+Monitors in Operations Manager for System Center&nbsp;2012 can do more than notify you of problems by sending an alert. Some monitors also provide diagnostic and recovery tasks to help investigate and resolve those problems.  
   
 A task is a script or other executable code that runs either on the computer running the Operations console or on the server, client, or device that is being managed. Tasks can potentially perform any kind of activity, including restarting a failed application and deleting files.  
   

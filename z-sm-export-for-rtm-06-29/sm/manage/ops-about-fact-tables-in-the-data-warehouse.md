@@ -33,7 +33,7 @@ This topic describes how to define relationship facts in the data warehouse in S
   
 -   Which work items are currently assigned to the user John Smith so that you can determine their status?  
   
--   What is the list of all the computers in the domain that currently have Windows 7 installed so that you can update them to Windows 7 Service Pack 1 \(SP1\)?  
+-   What is the list of all the computers in the domain that currently have Windows&nbsp;7 installed so that you can update them to Windows&nbsp;7 Service Pack&nbsp;1 \(SP1\)?  
   
 -   What are all the review activities that list Samantha Smith as a reviewer so that they can be reassigned because she is on vacation?  
   

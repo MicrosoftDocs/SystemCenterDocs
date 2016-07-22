@@ -13,7 +13,7 @@ author:mgoedtel
 manager:cfreemanwa
 ---
 # AdtAdmin.exe Disconnect
-The *\/Disconnect* parameter disconnects a specified ACS forwarder or group of forwarders from the ACS collector. No output is generated from the *\/Disconnect* parameter. To check an ACS forwarder’s status after using the *\/Disconnect* parameter, use the*\/Connected* subparameter of the *\/Stats* parameter.  
+The *\/Disconnect* parameter disconnects a specified ACS forwarder or group of forwarders from the ACS collector. No output is generated from the *\/Disconnect* parameter. To check an ACS forwarder's status after using the *\/Disconnect* parameter, use the*\/Connected* subparameter of the *\/Stats* parameter.  
   
 ## Syntax  
 `AdtAdmin.exe /Disconnect [/Collector:<CollectorName>] {/Forwarder:<Name> | /ForwarderSid:<SID> | /Group:<GroupName> | /GroupID:<IdentificationNumber> | /Value:<ValueNumber>}`  
@@ -26,9 +26,9 @@ The *\/Disconnect* parameter disconnects a specified ACS forwarder or group of f
   
 -   \/ForwarderSID:SID \- Specifies an ACS forwarder by its computer security identification number.  
   
--   \/Group:GroupName \- Specifies a group of ACS forwarders by the group’s name.  
+-   \/Group:GroupName \- Specifies a group of ACS forwarders by the group's name.  
   
--   \/GroupID: IdentificationNumber \- Specifies a group of ACS forwarders by the group’s identification number. An identification number is assigned to a group when it is first created.  
+-   \/GroupID: IdentificationNumber \- Specifies a group of ACS forwarders by the group's identification number. An identification number is assigned to a group when it is first created.  
   
 -   \/Value:ValueNumber \- Specifies an ACS forwarder or ACS group by its assigned connection value. The ACS collector prioritizes connections from ACS forwarders using connection values. Connection values range from \-1 through 99. A value of \-1 means the forwarder is part of an ACS group and that the group's value is used to determine the forwarder's priority. A value of 0 means the ACS collector ignores data from that ACS forwarder or group. If event saturation is detected, a collector will disconnect forwarders or a group of forwarders with lower values before disconnecting forwarders with higher values.  
   

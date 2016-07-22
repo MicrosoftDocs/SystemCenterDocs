@@ -28,7 +28,7 @@ The **Scope**, **Search**, **Find**, and **Time** tools apply a temporary filter
 |Time|Use to limit the data displayed to only that data \(such as alerts\) that has been generated within a defined time frame.|[How to Change the Time Criteria](../../om/manage/Finding-Data-and-Objects-in-the-Operations-Manager-Consoles.md#bkmk_howtochangethetimecriteria)|  
   
 ## <a name="bkmk_howtochangescope"></a>How to Change Scope  
-Changing the scope of the monitoring view enables you to view only those objects that meet a certain criteria, such as management servers. For example, if you want to view only those computers in your environment that are running Windows XP, you can apply a scope that uses “Windows XP” as the criteria; no other computers are displayed.  
+Changing the scope of the monitoring view enables you to view only those objects that meet a certain criteria, such as management servers. For example, if you want to view only those computers in your environment that are running Windows XP, you can apply a scope that uses "Windows XP" as the criteria; no other computers are displayed.  
   
 #### To change the scope of the monitoring view  
   

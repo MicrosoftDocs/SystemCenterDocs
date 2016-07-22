@@ -29,7 +29,7 @@ ms.assetid: 47355db0-4d3f-42a1-81df-4721e6fce723
 
 ---
 # How to Export Standard Report Data
-You can use the following procedure in System Center 2012 - Service Manager to export a report into several different types of files so that you can use the data from the reports in different tools. For example, you can export the report data into a comma\-separated value \(CSV\) file and then import it into Microsoft Office Excel.  
+You can use the following procedure in System Center 2012 - Service Manager to export a report into several different types of files so that you can use the data from the reports in different tools. For example, you can export the report data into a comma\-separated value \(CSV\) file and then import it into Microsoft&nbsp;Office&nbsp;Excel.  
   
 ### To open the report and then export the report data  
   

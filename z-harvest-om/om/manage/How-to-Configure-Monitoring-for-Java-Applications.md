@@ -94,7 +94,7 @@ Getting started with monitoring Java applications requires these four general st
   
 2.  To see monitors, in Health Explorer, right\-click an application, click **Open**, and then click **Performance View**. Some monitors some are disabled.  
   
-3.  To override monitors, in Health Explorer, right\-click a monitor and click **Monitor properties**. On the monitor’s **Properties page**, click **Overrides** tab, click **Override** and then select the rule you want to override. On the **Override Properties page** you can enable\/disable monitors and change the monitor threshold settings.  
+3.  To override monitors, in Health Explorer, right\-click a monitor and click **Monitor properties**. On the monitor's **Properties page**, click **Overrides** tab, click **Override** and then select the rule you want to override. On the **Override Properties page** you can enable\/disable monitors and change the monitor threshold settings.  
   
 ### To view events using Application Diagnostics  
   

@@ -21,7 +21,7 @@ The following table lists the parameters available when a new virtual machine is
 |Parameter|Data Type|  
 |-------------|-------------|  
 |StampId \(required\)|Guid|  
-|Name \(StampID name – required\)|String|  
+|Name \(StampID name - required\)|String|  
 |CloudId \(required\)|Guid|  
 |VMTemplateId|Guid|  
 |HardwareProfileId|Guid|  

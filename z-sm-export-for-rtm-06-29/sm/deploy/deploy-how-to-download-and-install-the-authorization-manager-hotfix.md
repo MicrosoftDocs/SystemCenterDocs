@@ -29,9 +29,9 @@ ms.assetid: 593012d5-9cfa-4911-a2f4-a26de28e8df4
 
 ---
 # How to Download and Install the Authorization Manager Hotfix
-The Authorization Manager hotfix is included with Windows Server 2008 R2 with Service Pack 1 \(SP1\). Therefore, if you are using Windows Server 2008 R2 with SP1, you can disregard this topic.  
+The Authorization Manager hotfix is included with Windows&nbsp;Server&nbsp;2008&nbsp;R2 with Service Pack&nbsp;1 \(SP1\). Therefore, if you are using Windows&nbsp;Server&nbsp;2008&nbsp;R2 with SP1, you can disregard this topic.  
   
- You can obtain the Authorization Manager hotfix \(KB975332\) by connecting to a website and requesting an email containing download instructions. This hotfix is available for both 32\-bit and 64\-bit operating systems and for both the Windows Server 2008 with SP1 operating system and the Windows Server 2008 R2 operating system. The type of files that you are allowed to download is determined when you connect to the website to request an email. Therefore, you should connect to the website from the computer that hosts the Service Manager parts. Use the following steps to download and install the Authorization Manager hotfix.  
+ You can obtain the Authorization Manager hotfix \(KB975332\) by connecting to a website and requesting an email containing download instructions. This hotfix is available for both 32\-bit and 64\-bit operating systems and for both the Windows&nbsp;Server&nbsp;2008 with SP1 operating system and the Windows&nbsp;Server&nbsp;2008&nbsp;R2 operating system. The type of files that you are allowed to download is determined when you connect to the website to request an email. Therefore, you should connect to the website from the computer that hosts the Service Manager parts. Use the following steps to download and install the Authorization Manager hotfix.  
   
  Install this hotfix on computers that host the following Service Manager parts:  
   
@@ -56,8 +56,8 @@ The Authorization Manager hotfix is included with Windows Server 2008 R2 with
   
     |Operating System|Web Page Link|  
     |----------------------|-------------------|  
-    |Windows Server 2008 with SP1|Windows Vista|  
-    |Windows Server 2008 R2|Windows 7\/Windows Server 2008 R2|  
+    |Windows Server&nbsp;2008 with SP1|Windows Vista|  
+    |Windows Server 2008 R2|Windows&nbsp;7\/Windows Server 2008 R2|  
   
 5.  On the **Hotfix Request** page, enter your email address, type the characters in the CAPTCHA image, and then click **Request hotfix**.  
   

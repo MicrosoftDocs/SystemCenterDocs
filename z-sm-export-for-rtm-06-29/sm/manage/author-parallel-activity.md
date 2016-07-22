@@ -29,7 +29,7 @@ ms.assetid: 3a239b15-88d9-4298-b45a-475d7728077b
 
 ---
 # Parallel Activity
-This activity forks the sequence of activities into two simultaneous sequences of activities. The **Parallel** activity is a Visual Studio activity. For more information about the **ParallelActivity** class, see [ParallelActivity Class](http://go.microsoft.com/fwlink/p/?LinkID=186258) in the .NET Framework Class Library.  
+This activity forks the sequence of activities into two simultaneous sequences of activities. The **Parallel** activity is a Visual Studio activity. For more information about the **ParallelActivity** class, see [ParallelActivity Class](http://go.microsoft.com/fwlink/p/?LinkID=186258) in the .NET&nbsp;Framework Class Library.  
   
 ## Design Time Prerequisites  
  None.  

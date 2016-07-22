@@ -39,7 +39,7 @@ Use the following procedure to register the newly installed data warehouse serve
   
 3.  In the **Administration** pane, expand **Administration**.  
   
-4.  In the **Administration** view, in the **Register with Service Manager’s Data Warehouse** area, click **Register with Service Manager Data Warehouse**.  
+4.  In the **Administration** view, in the **Register with Service Manager's Data Warehouse** area, click **Register with Service Manager Data Warehouse**.  
   
 5.  In the Data Warehouse Registration wizard, on the **Before You Begin** page, click **Next**.  
   

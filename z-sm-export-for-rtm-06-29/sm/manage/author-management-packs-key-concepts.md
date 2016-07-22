@@ -45,7 +45,7 @@ Before you work with management packs in System Center 2012 - Service Manager, y
 ## Model Management Pack  
  A model management pack is a management pack that contains definitions for basic objects, such as classes, combination classes, and relationship types.  
   
- Building model management packs makes it possible for other customizations—typically, customizations that are related to presentation, such as templates, views, and tasks—to be stored in separate management packs that depend on the model extensions. In addition, model management packs are easily transferred into the data warehouse for archiving and reporting purposes.  
+ Building model management packs makes it possible for other customizations-typically, customizations that are related to presentation, such as templates, views, and tasks-to be stored in separate management packs that depend on the model extensions. In addition, model management packs are easily transferred into the data warehouse for archiving and reporting purposes.  
   
 ## Dependencies, Resources, and Bundling of Management Packs  
  A management pack can depend on another management pack that is sealed. For example, a custom template in one management pack can depend on a list that is defined in another management pack. The management pack that contains the base definitions \(such as the list\), on which other definitions depend, must be sealed. A management pack can also require resources, such as a form or an image, that are stored separately.  
@@ -59,7 +59,7 @@ Before you work with management packs in System Center 2012 - Service Manager, y
 ## Management Pack Customization  
  You might have to customize and extend the default, preimported management packs so that information technology \(IT\) professionals and other users in your organization can extend existing solutions and customize them to meet your business and customer needs. To customize features in Service Manager, you can add new objects or modify the objects that are related to that feature.  
   
- A customization to an object is a modification that applies to the base definition of the object. For customizations to be able to be applied to a base definition, the base definition must be stored in a sealed management pack. And because it is not possible to save customizations in the sealed management pack that contains the object’s base definition, you always have to use or create another unsealed management pack to store customizations.  
+ A customization to an object is a modification that applies to the base definition of the object. For customizations to be able to be applied to a base definition, the base definition must be stored in a sealed management pack. And because it is not possible to save customizations in the sealed management pack that contains the object's base definition, you always have to use or create another unsealed management pack to store customizations.  
   
  Typically, when you customize objects from a default, preimported management packs, you work with two management packs. The first management pack is the sealed management pack that contains the base definitions of objects, and the second management pack, which is initially unsealed, contains the customizations to the base object. In this case, the management pack with the customization depends on the management pack that contains the base definition of the object.  
   

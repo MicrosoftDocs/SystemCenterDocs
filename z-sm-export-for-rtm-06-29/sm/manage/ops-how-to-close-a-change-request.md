@@ -32,7 +32,7 @@ ms.assetid: 36dc09ae-117f-4fa2-bb0e-641685b3601b
 In System Center 2012 - Service Manager, you can use the following procedures to permanently close a successful change request or a failed change request and then validate the closure of the change request. You cannot reopen a closed change request.  
   
 > [!NOTE]  
->  If an end user cancels a software request before the software is deployed to the end user’s computer, the associated change request might reflect the **In Progress** status indefinitely. If this occurs, cancel the request and then close it.  
+>  If an end user cancels a software request before the software is deployed to the end user's computer, the associated change request might reflect the **In Progress** status indefinitely. If this occurs, cancel the request and then close it.  
   
 ### To close a successful change request  
   

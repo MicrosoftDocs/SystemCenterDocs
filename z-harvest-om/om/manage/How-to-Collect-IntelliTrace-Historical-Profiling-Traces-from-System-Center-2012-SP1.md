@@ -15,7 +15,7 @@ manager:cfreemanwa
 # How to Collect IntelliTrace Historical Profiling Traces from System Center 2012 SP1
 [!INCLUDE[sc2012sp1notetopic](../../om/manage/includes/sc2012sp1notetopic_md.md)]  
   
-In [!INCLUDE[sc2012sp1_long](../../om/manage/includes/sc2012sp1_long_md.md)], you can use [!INCLUDE[om12short](../../om/manage/includes/om12short_md.md)] to capture historical snapshots \(traces\) directly from the [!INCLUDE[om12short](../../om/manage/includes/om12short_md.md)] console and to receive IntelliTrace snapshots from .NET Application Performance Monitoring \(APM\) exception events. These snapshots can help developers investigate problems. They provide visibility to application execution history without needing to access the servers where the problems occurred. Developers can use Microsoft Visual Studio 2012 Ultimate to open collected snapshots. For information about IntelliTrace for developers, see [Debug Your App by Recording Code Execution with IntelliTrace](http://go.microsoft.com/fwlink/?LinkId=275118)  
+In [!INCLUDE[sc2012sp1_long](../../om/manage/includes/sc2012sp1_long_md.md)], you can use [!INCLUDE[om12short](../../om/manage/includes/om12short_md.md)] to capture historical snapshots \(traces\) directly from the [!INCLUDE[om12short](../../om/manage/includes/om12short_md.md)] console and to receive IntelliTrace snapshots from .NET Application Performance Monitoring \(APM\) exception events. These snapshots can help developers investigate problems. They provide visibility to application execution history without needing to access the servers where the problems occurred. Developers can use Microsoft Visual Studio&nbsp;2012 Ultimate to open collected snapshots. For information about IntelliTrace for developers, see [Debug Your App by Recording Code Execution with IntelliTrace](http://go.microsoft.com/fwlink/?LinkId=275118)  
   
 Snapshots can be accessed from a network file share or from Team Foundation Server \(TFS\) work item attachments if TFS synchronization is enabled. For more information, see [How to Configure Integration with IntelliTrace Historical Profiling in System Center 2012 SP1](../../om/manage/How-to-Configure-Integration-with-IntelliTrace-Historical-Profiling-in-System-Center-2012-SP1.md).  
   
@@ -32,7 +32,7 @@ Snapshots can be accessed from a network file share or from Team Foundation Serv
   
 3.  In the **Tasks** pane, expand **IntelliTrace Tasks**, and then click **Start IntelliTrace Collection**.  
   
-4.  On the **Run Task – Start IntelliTrace** page, in the **Run the task on these targets** section, select the servers from which you want to collect snapshots. The list shows all servers on which the application is configured for monitoring by the APM template in the environment where the alert occurred.  
+4.  On the **Run Task - Start IntelliTrace** page, in the **Run the task on these targets** section, select the servers from which you want to collect snapshots. The list shows all servers on which the application is configured for monitoring by the APM template in the environment where the alert occurred.  
   
 5.  In the **Task credentials section**, select **Use the predefined Run As Account** if the Default Action Account has administrative privileges on the application Internet Information Services \(IIS\) pool. Otherwise, select **Other** to specify credentials that have administrative privileges for this IIS pool.  
   
@@ -47,7 +47,7 @@ Snapshots can be accessed from a network file share or from Team Foundation Serv
   
 9. Select the same alert on which you started IntelliTrace. In the **Tasks** pane, click **Collect IntelliTrace Snapshot**.  
   
-10. On the **Run Task – Collect IntelliTrace Snapshot** page, select the same servers and same **Task credentials** that you previously selected when you started IntelliTrace collection.  
+10. On the **Run Task - Collect IntelliTrace Snapshot** page, select the same servers and same **Task credentials** that you previously selected when you started IntelliTrace collection.  
   
 11. Click **Run**, wait for the task to be completed successfully, and then click **Close**. The task output indicates whether any problems occurred while running the IntelliTrace collector tasks.  
   
@@ -68,13 +68,13 @@ Snapshots can be accessed from a network file share or from Team Foundation Serv
   
 2.  In the [!INCLUDE[om12short](../../om/manage/includes/om12short_md.md)] console, click **Monitoring**, expand **Application Monitoring**, and then expand **.NET Monitoring**.  
   
-3.  If your application is running on Windows Server 2008 R2, click **IIS 7.0 ASP .NET Web Application Inventory**. If your application is running on Windows Server 2012, click **IIS 8.0 ASP .NET Web Application Inventory**.  
+3.  If your application is running on Windows Server&nbsp;2008&nbsp;R2, click **IIS 7.0 ASP .NET Web Application Inventory**. If your application is running on Windows&nbsp;Server&nbsp;2012, click **IIS 8.0 ASP .NET Web Application Inventory**.  
   
 4.  Select the application pool on which you want to run IntelliTrace profiling.  
   
 5.  In the **Tasks** pane, expand **IntelliTrace Tasks**, and then click **Start IntelliTrace Collection**.  
   
-6.  On the **Run Task – Start IntelliTrace** page, in the **Run the task on these targets** section, select the application pool in which you want to collect snapshots.  
+6.  On the **Run Task - Start IntelliTrace** page, in the **Run the task on these targets** section, select the application pool in which you want to collect snapshots.  
   
 7.  In the **Task credentials section**, select **Use the predefined Run As Account** if the Default Action Account has administrative privileges on the application IIS pool. Otherwise, select **Other** to specify alternative credentials that have administrative privileges for this IIS pool.  
   
@@ -89,7 +89,7 @@ Snapshots can be accessed from a network file share or from Team Foundation Serv
   
 11. Select the same application pool on which you started IntelliTrace. In the **Tasks** pane, click **Collect IntelliTrace Snapshot**.  
   
-12. On the **Run Task – Collect IntelliTrace Snapshot** page, select the same target and same **Task credentials** that you previously selected when you started IntelliTrace collection.  
+12. On the **Run Task - Collect IntelliTrace Snapshot** page, select the same target and same **Task credentials** that you previously selected when you started IntelliTrace collection.  
   
 13. Click **Run**, wait for the task to be completed successfully, and then click **Close**. The task output indicates whether any problems occurred while running the IntelliTrace collector tasks.  
   

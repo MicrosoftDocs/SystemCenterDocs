@@ -22,7 +22,7 @@ On a Solaris 10\-based server that is configured to use zones, Operations Manage
   
 In Operations Manager, the behavior of a Solaris 10\-based server that is deployed in a virtual machine might differ slightly from the behavior of a Solaris 10\-based server that is deployed on a physical computer. Each network adapter that exists in a virtual machine appears to the Solaris 10\-based server as a separate physical resource. If uniquely defined network adapters are attached to each zone that is configured on the Solaris\-based server, Operations Manager collects data for each network adapter.  
   
-## Agent Providers Might Fail If the Solaris Computer’s File Descriptor Limit is Reached by the Process  
+## Agent Providers Might Fail If the Solaris Computer's File Descriptor Limit is Reached by the Process  
 On a monitored Solaris computer with a large number of monitored objects \(such as file systems or processors\), you may observe unreliable behavior of the Solaris agent. Symptoms can include file systems, disks, or other objects not being discovered.  This can be caused by the agent process running out of available File Descriptors \(FD\).  
   
 To determine if an issue is the result of File Descriptor limits, inspect the agent log file: \/var\/opt\/microsoft\/scx\/log\/scx.log. If any error messages in the log contain the text: errno \= 24 \(Too many open files\), a FD limit issue should be suspected.  
@@ -40,13 +40,13 @@ To resolve this issue, perform the following steps:
         ;;  
     ```  
   
-    Modify this section to include a ulimit –n 1024 command, prior to the $DAEMON $OPTIONS –d line, where “1024” is the new process limit for File Descriptors.  
+    Modify this section to include a ulimit -n 1024 command, prior to the $DAEMON $OPTIONS -d line, where "1024" is the new process limit for File Descriptors.  
   
     ```  
     start)  
         # Start daemon  
         echo "Starting $DESC"  
-        ulimit –n 1024  
+        ulimit -n 1024  
         $DAEMON $OPTIONS -d  
         exit $?  
         ;;  

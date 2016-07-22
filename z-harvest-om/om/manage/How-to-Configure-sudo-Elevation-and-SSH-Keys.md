@@ -89,7 +89,7 @@ The following procedures create an SSH key for the `opsuser` account that was cr
   
 2.  Generate the key by using the Digital Signature Algorithm \(DSA\) algorithm:  
   
-    `ssh-keygen –t dsa`  
+    `ssh-keygen -t dsa`  
   
     Note the optional passphrase if you provided it.  
   
@@ -121,7 +121,7 @@ You can now copy the private SSH key to the Windows\-based computer, as describe
   
 #### To copy the private SSH key to the Windows\-based computer and save in OpenSSH format  
   
-1.  Use a tool, such as WinSCP, to transfer the private key file \(`id_dsa` – with no extension\) from the UNIX or Linux computer to a directory on your Windows\-based computer.  
+1.  Use a tool, such as WinSCP, to transfer the private key file \(`id_dsa` - with no extension\) from the UNIX or Linux computer to a directory on your Windows\-based computer.  
   
 2.  Run PuTTYgen.  
   

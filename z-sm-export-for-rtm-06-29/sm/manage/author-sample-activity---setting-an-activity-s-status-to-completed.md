@@ -29,7 +29,7 @@ ms.assetid: 1e31bc91-020f-47e7-bd2b-d40ddc2fb7ca
 
 ---
 # Sample Activity - Setting an Activity&#39;s Status to Completed
-The following is a sample activity in System Center 2012 - Service Manager that sets an activity’s status to complete.  
+The following is a sample activity in System Center 2012 - Service Manager that sets an activity's status to complete.  
   
 ```  
 using System;  

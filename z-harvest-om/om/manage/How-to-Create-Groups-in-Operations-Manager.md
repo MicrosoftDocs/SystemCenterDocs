@@ -23,7 +23,7 @@ In the Operations console, you can only create instance groups. The difference b
   
 To create a group based on a hosting relationship, such as all computers that are running SQL Server, you must use the Authoring console or work directly in the XML of a management pack.  
   
-The most common objects you will place in your groups are **Windows Computer** objects.  The most common way to dynamically assign computers to the groups is by using a *property* of the **Windows Computer** class. For example, **Organizational Unit** is a property of the **Windows Computer** class, so you can create a group that makes all computers in a specific organizational unit members of the same group. The following image shows the properties of an object in the **Windows Computer** class, which you can view in the details pane of the **Monitoring** workspace by selecting the **Windows Computers** state view.  
+The most common objects you will place in your groups are **Windows Computer** objects.&nbsp; The most common way to dynamically assign computers to the groups is by using a *property* of the **Windows Computer** class. For example, **Organizational Unit** is a property of the **Windows Computer** class, so you can create a group that makes all computers in a specific organizational unit members of the same group. The following image shows the properties of an object in the **Windows Computer** class, which you can view in the details pane of the **Monitoring** workspace by selecting the **Windows Computers** state view.  
   
 ![Properties of a Windows computer object](../../om/manage/media/WindowsComputerProperties.gif "WindowsComputerProperties")  
   

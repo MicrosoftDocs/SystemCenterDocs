@@ -49,7 +49,7 @@ The following examples show how to use the *ExecuteCommand* and *ExecuteShellCom
   
 -   To pass the command arguments to a shell process that uses the user's default shell:  
   
-    `<p:ExecuteShellCommand_INPUT xmlns:p="http://schemas.microsoft.com/wbem/wscim/1/cim-schema/2/SCX_OperatingSystem"> <p:Command> uptime |  awk '{print $10}' |awk -F"," '{print $1}' </p:Command> <p:timeout>10</p:timeout> </p:ExecuteShellCommand_INPUT>`  
+    `<p:ExecuteShellCommand_INPUT xmlns:p="http://schemas.microsoft.com/wbem/wscim/1/cim-schema/2/SCX_OperatingSystem"> <p:Command> uptime |&nbsp; awk '{print $10}' |awk -F"," '{print $1}' </p:Command> <p:timeout>10</p:timeout> </p:ExecuteShellCommand_INPUT>`  
   
 ## See Also  
 [Using Templates for Additional Monitoring of UNIX and Linux](../../om/manage/Using-Templates-for-Additional-Monitoring-of-UNIX-and-Linux.md)  

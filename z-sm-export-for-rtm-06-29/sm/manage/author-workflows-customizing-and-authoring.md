@@ -29,7 +29,7 @@ ms.assetid: 6aa35c62-a4c3-4ece-b7a1-78b38e3592b4
 
 ---
 # Workflows: Customizing and Authoring
-Using System Center 2012 - Service Manager, you can automate many administrative processes that previously required manual tasks. The feature that makes this automation possible is the Windows Workflow Foundation \(WF\) workflow. A WF workflow comprises workflow activities, which are also referred to as *WF activities* to differentiate them from other Service Manager activity types. Each workflow activity performs a function, such as joining a user or a computer to a group in Active Directory Domain Services \(AD DS\), creating a Service Manager incident, or running a script. You can assemble WF activities into a workflow that performs a set of tasks, and you can specify the conditions under which the workflow runs.  
+Using System Center 2012 - Service Manager, you can automate many administrative processes that previously required manual tasks. The feature that makes this automation possible is the Windows Workflow Foundation \(WF\) workflow. A WF workflow comprises workflow activities, which are also referred to as *WF activities* to differentiate them from other Service Manager activity types. Each workflow activity performs a function, such as joining a user or a computer to a group in Active Directory Domain Services \(AD&nbsp;DS\), creating a Service Manager incident, or running a script. You can assemble WF activities into a workflow that performs a set of tasks, and you can specify the conditions under which the workflow runs.  
   
 ## Workflows Topics  
   

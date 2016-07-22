@@ -32,7 +32,7 @@ ms.assetid: cb8118ec-94ac-404a-be0d-bc34b8996cfa
 In System Center 2012 - Service Manager, you can use the following procedures to change the urgency of an incident, edit an unassigned incident from Operations Manager, link a knowledge article to an incident, and validate the changes. Users create simplified incidents using the Self-Service Portal, based on the Incident portal template. Because user\-created incidents are simplified, analysts often need to revise new incidents with additional information. Additionally, there is no functional difference between incidents created with the Self-Service Portal, using either the **Need help with a problem** or **Need repair or fix** options.  
   
 > [!NOTE]  
->  Incidents are automatically created by System Center 2012 - Service Manager when the Operations Manager Alert connector is enabled. You can edit the new incidents that are generated when an Operations Manager alert is raised and then assign the incidents to analysts. For more information, see “Importing Data and Alerts from Operations Manager 2007” in [System Center Service Manager 2012 Administrator's Guide](http://go.microsoft.com/fwlink/p/?LinkID=209669).  
+>  Incidents are automatically created by System Center 2012 - Service Manager when the Operations Manager Alert connector is enabled. You can edit the new incidents that are generated when an Operations Manager alert is raised and then assign the incidents to analysts. For more information, see "Importing Data and Alerts from Operations Manager 2007" in [System Center Service Manager 2012 Administrator's Guide](http://go.microsoft.com/fwlink/p/?LinkID=209669).  
   
 ### To change the urgency of an incident  
   

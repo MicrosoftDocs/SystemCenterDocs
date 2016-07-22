@@ -76,7 +76,7 @@ System Center 2012 - Service Manager contains predefined views that you can use 
         </DisplayString>  
         ```  
   
-    2.  Replace the column title inside the **\<Name\>\<\/Name\>** tags and inside the **\<Description\>\<\/Description\>** tags with the custom column title. For example, replace **Category** with **My Organization’s Category**.  
+    2.  Replace the column title inside the **\<Name\>\<\/Name\>** tags and inside the **\<Description\>\<\/Description\>** tags with the custom column title. For example, replace **Category** with **My Organization's Category**.  
   
 4.  Save the custom management pack.  
   

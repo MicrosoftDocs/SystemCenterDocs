@@ -31,7 +31,7 @@ ms.assetid: aee0c089-e64e-4d2b-8313-a30a0efc5659
 # Authoring for System Center 2012 - Service Manager
 The Authoring Guide for System Center 2012 - Service Manager describes the use, authoring, and customization of management packs, which enable customizations in Service Manager.  
   
-## Administrator’s Guide Topics  
+## Administrator's Guide Topics  
   
 -   [Introduction to the Service Manager Authoring Guide](../../../sm/manage/author/Introduction-to-the-Service-Manager-Authoring-Guide.md)  
   
@@ -73,7 +73,7 @@ The Authoring Guide for System Center 2012 - Service Manager describes the use, 
   
 -   [How to create a custom report and display it in the console](http://go.microsoft.com/fwlink/p/?LinkId=232999)  
   
--   [The System Center Platform in Service Manager Part 6: The Data Warehouse – Try It\!](http://go.microsoft.com/fwlink/p/?LinkId=233000)  
+-   [The System Center Platform in Service Manager Part 6: The Data Warehouse - Try It\!](http://go.microsoft.com/fwlink/p/?LinkId=233000)  
   
 -   [A Deep Dive on Creating Outriggers and Dimensions in the Data Warehouse](http://go.microsoft.com/fwlink/p/?LinkId=233001)  
   
@@ -83,7 +83,7 @@ The Authoring Guide for System Center 2012 - Service Manager describes the use, 
   
 ## Other Resources for This Component  
   
--   TechNet Library main page for [System Center 2012 – Service Manager](http://go.microsoft.com/fwlink/p/?LinkId=220655)  
+-   TechNet Library main page for [System Center 2012 - Service Manager](http://go.microsoft.com/fwlink/p/?LinkId=220655)  
   
 ## Downloadable Documentation  
  You can download a [copy of this technical documentation from the Microsoft Download Center](http://go.microsoft.com/fwlink/?LinkId=246620). Always use the TechNet library for the most up\-to\-date information.

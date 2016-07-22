@@ -17,7 +17,7 @@ Depending on your auditing needs, you might have several hundred to thousands of
   
 This procedure should be run after the ACS collector and database are installed and can only be run against computers that already have the Operations Manager agent installed. In addition, the user account that runs this task must belong to the local Administrators group on each agent computer.  
   
-### To enable audit collection on Operations Manager agents  
+### To enable audit collection on Operations Manager&nbsp;agents  
   
 1.  Log on to the computer with an account that is a member of the Operations Manager Administrators role. This account must also have the rights of a local administrator on each agent computer that you want to enable as an ACS forwarder.  
   
@@ -34,7 +34,7 @@ This procedure should be run after the ACS collector and database are installed 
 7.  In the **Override the task parameters with the new values** section, click the *CollectorServer* parameter; in the **New Value** column, type the FQDN of the ACS collector; and then click **Override**.  
   
     > [!NOTE]  
-    > If you are enabling ACS on a gateway or management server and you do not specify the *CollectorServer* parameter, the task will fail with a “Type Mismatch Error.” To avoid this, provide a value for the override.  
+    > If you are enabling ACS on a gateway or management server and you do not specify the *CollectorServer* parameter, the task will fail with a "Type Mismatch Error." To avoid this, provide a value for the override.  
   
 8.  In the **Task credentials** section, click **Other**. In the **User Name** box, type the name of a user account that belongs to the local Administrators group on the agent computers. In the **Password** box, type the password for this user account. Click to expand the **Domain** list to view the available domains, and then click the domain of the user account.  
   

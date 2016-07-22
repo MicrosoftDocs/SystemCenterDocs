@@ -74,8 +74,8 @@ The variable bindings are listed in the following table.
 |Trap Enterprise ID|1.3.6.1.4.1.4217.100.100|  
 |Generic ID|\(6\)|  
 |Specific ID|\(1\)|  
-|[!INCLUDE[orchshort](../../om/manage/includes/orchshort_md.md)] Event Information IDs|[!INCLUDE[orchshort](../../om/manage/includes/orchshort_md.md)] Event Type – 1<br /><br />[!INCLUDE[orchshort](../../om/manage/includes/orchshort_md.md)] Event Summary – 2<br /><br />[!INCLUDE[orchshort](../../om/manage/includes/orchshort_md.md)] Event Details – 3|  
-|Example|[!INCLUDE[orchshort](../../om/manage/includes/orchshort_md.md)] Event Type – 1.3.6.1.4.1.4217.100.100.1<br /><br />[!INCLUDE[orchshort](../../om/manage/includes/orchshort_md.md)] Event Summary – 1.3.6.1.4.1.4217.100.100.2<br /><br />[!INCLUDE[orchshort](../../om/manage/includes/orchshort_md.md)] Event Details – 1.3.6.1.4.1.4217.100.100.3|  
+|[!INCLUDE[orchshort](../../om/manage/includes/orchshort_md.md)] Event Information IDs|[!INCLUDE[orchshort](../../om/manage/includes/orchshort_md.md)] Event Type - 1<br /><br />[!INCLUDE[orchshort](../../om/manage/includes/orchshort_md.md)] Event Summary - 2<br /><br />[!INCLUDE[orchshort](../../om/manage/includes/orchshort_md.md)] Event Details - 3|  
+|Example|[!INCLUDE[orchshort](../../om/manage/includes/orchshort_md.md)] Event Type - 1.3.6.1.4.1.4217.100.100.1<br /><br />[!INCLUDE[orchshort](../../om/manage/includes/orchshort_md.md)] Event Summary - 1.3.6.1.4.1.4217.100.100.2<br /><br />[!INCLUDE[orchshort](../../om/manage/includes/orchshort_md.md)] Event Details - 1.3.6.1.4.1.4217.100.100.3|  
   
 ## See Also  
 [Orchestrator Logs](../../orch/manage/Orchestrator-Logs.md)  

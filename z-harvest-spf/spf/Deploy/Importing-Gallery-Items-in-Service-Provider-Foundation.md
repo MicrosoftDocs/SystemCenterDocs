@@ -49,7 +49,7 @@ PS C:\> $fs.Close()
 PS C:\> $binwriter.Close()  
 PS C:\>  
 PS C:\> # Import the package that was just saved, using the PackageFilePath parameter.  
-PS C:\> Import-ScSpfVmRoleGalleryItem –PackageFilePath "C:\@tmp\gal.bin"  
+PS C:\> Import-ScSpfVmRoleGalleryItem -PackageFilePath "C:\@tmp\gal.bin"  
   
 ```  
   

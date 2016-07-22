@@ -13,7 +13,7 @@ author:mgoedtel
 manager:cfreemanwa
 ---
 # Getting Started with the Fabric Health Dashboard
-The Fabric Health Dashboard shows a detailed overview of the health of your private clouds and the fabric that services them. The dashboard helps you answer questions like “What is the health of my clouds and the fabric serving those clouds?” You can see the overall cloud health, health across host, storage, and network components, active alerts related to that cloud, and drill down into other dashboards for views to help you resolve problems. Essentially, you can quickly see the fabric health of the components you care about and determine whether you have an urgent issue that needs fixing.  
+The Fabric Health Dashboard shows a detailed overview of the health of your private clouds and the fabric that services them. The dashboard helps you answer questions like "What is the health of my clouds and the fabric serving those clouds?" You can see the overall cloud health, health across host, storage, and network components, active alerts related to that cloud, and drill down into other dashboards for views to help you resolve problems. Essentially, you can quickly see the fabric health of the components you care about and determine whether you have an urgent issue that needs fixing.  
   
 ## About the Fabric Health Dashboard  
   

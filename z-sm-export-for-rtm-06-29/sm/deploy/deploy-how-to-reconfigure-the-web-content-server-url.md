@@ -13,7 +13,7 @@ ms.assetid: b6ace08c-c28e-4a25-becd-b54d9d4e9508
 
 # How to Reconfigure the Web Content Server URL
 
-When you use certificates with the Self-Service Portal in System Center 2012 - Service Manager, you can use this procedure to change the web content server URL. For example, you may have installed the web content server only to find that the URL you used for the web content server results in a certificate warning. While resolving the certificate warning issue—for example, for a name mismatch—you may find that you are going to use a different URL to connect to the web content server. In this case, you must open a web.config file on both the SharePoint website server and web content server and update the URL.  
+When you use certificates with the Self-Service Portal in System Center 2012 - Service Manager, you can use this procedure to change the web content server URL. For example, you may have installed the web content server only to find that the URL you used for the web content server results in a certificate warning. While resolving the certificate warning issue-for example, for a name mismatch-you may find that you are going to use a different URL to connect to the web content server. In this case, you must open a web.config file on both the SharePoint website server and web content server and update the URL.  
 
  In this example, the computer is in Woodgrove National Bank, and the fully qualified domain name \(FQDN\) for the computer is portal.woodgrove.com. When the web content server was installed, Secure Sockets Layer \(SSL\) and port 444 were used. \(Port 443 was saved for the SharePoint website.\) Now, the web.config file is edited using the URL https:\/\/portal.woodgrove.com:444\/ContentHost\/ClientBin\/, as shown in the following illustration. \(This image is of the web.config file on a SharePoint website server.\)  
 
@@ -27,7 +27,7 @@ When you use certificates with the Self-Service Portal in System Center 2012 - S
 
 3.  Right\-click the web.config file, and open it with the editor of your choice, for example, Notepad.  
 
-4.  Scroll to the bottom of the web.config file, locate the \<appSettings\> area, and then locate the \<add key\=…\> line.  
+4.  Scroll to the bottom of the web.config file, locate the \<appSettings\> area, and then locate the \<add key\=...\> line.  
 
 5.  Edit the URL in the value\= section to match the new URL that you want to use for the web content server.  
   
@@ -41,7 +41,7 @@ When you use certificates with the Self-Service Portal in System Center 2012 - S
 
 3.  Right\-click the file web.config, and then open it with the editor of your choice, for example, Notepad.  
 
-4.  Scroll to the bottom of the web.config file, locate the \<appSettings\> area, and then locate the \<add key\=…\> line.  
+4.  Scroll to the bottom of the web.config file, locate the \<appSettings\> area, and then locate the \<add key\=...\> line.  
 
 5.  Edit the URL in the value\= section to match the new URL that you want to use for the web content server.  
 

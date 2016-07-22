@@ -33,7 +33,7 @@ You must use the same supported language collations if you intend to import data
 
 You can use any supported database collation of any System Center component with any supported collation of Service Manager.  
 
-## Operations Manager Compatibility  
+## Operations Manager&nbsp;Compatibility  
 
 This section describes the compatibility between Operations Manager and Service Manager.  
 
@@ -41,13 +41,13 @@ This section describes the compatibility between Operations Manager and Service 
 
  System Center Operations Manager 2016 is supported by Service Manager and Service Manager for connectors and agents. However, other System Center Operations Manager versions are not supported for data source registration. Only corresponding System Center versions are supported when you register a data source in the Data Warehouse workspace.  
 
-System Center 2016 - Service Manager includes a System Center 2016 - Operations Manager agent and it is automatically installed when you deploy Service Manager. After Service Manager Setup completes, you must manually configure the agent to communicate with the Operations Manager management server.  
+System Center 2016 - Service Manager includes a System Center&nbsp;2016 - Operations Manager agent and it is automatically installed when you deploy Service Manager. After Service Manager Setup completes, you must manually configure the agent to communicate with the Operations Manager management server.  
 
 To validate that the Operations Manager Agent was installed, open **Control Panel** and verify that the Operations Manager Agent is present.
 
 ### Operations Manager Agents with the Self-Service Portal and Service Manager console  
 
-If you want to monitor a server that will host Self\-Service Portal components or the Service Manager console that does not already host other Service Manager roles, then you should deploy the Operations Manager agent to the server before you install the Self\-Service portal or the Service Manager console. After you’ve installed either, you should give special consideration to removing the portal or Self Service console. If an Operations Manager agent is installed on the server that hosts the portal or console and you remove the either, then the Operations Manager agent is also removed.  
+If you want to monitor a server that will host Self\-Service Portal components or the Service Manager console that does not already host other Service Manager roles, then you should deploy the Operations Manager agent to the server before you install the Self\-Service portal or the Service Manager console. After you've installed either, you should give special consideration to removing the portal or Self Service console. If an Operations Manager agent is installed on the server that hosts the portal or console and you remove the either, then the Operations Manager agent is also removed.  
 
 If you have already installed the portal or console to a server that does not host other Service Manager roles, and you want to deploy an Operations Manager agent to it, then the agent deployment will fail. However, you can prevent agent deployment failure by using the following procedure to back up, remove, and restore the Service Manager product registry key.  
 

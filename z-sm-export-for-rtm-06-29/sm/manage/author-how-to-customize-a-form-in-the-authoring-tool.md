@@ -29,7 +29,7 @@ ms.assetid: 07f4da17-8077-4fdb-8ed1-2972126e7da0
 
 ---
 # How to Customize a Form in the Authoring Tool
-You can use the System Center 2016 - Service Manager Authoring Tool to customize some properties of a form. For example, you can change the layout of the form’s fields, and you can add an icon to the form.  
+You can use the System Center 2016 - Service Manager Authoring Tool to customize some properties of a form. For example, you can change the layout of the form's fields, and you can add an icon to the form.  
   
  To customize a form, you open the management pack file that contains the original form definition. After you complete the customizations, you save the changes to a management pack file. If the original form is defined in an unsealed management pack, you save your customizations to that management pack. If the original form is defined in a sealed management pack, you must save your customizations to an unsealed management pack that is already open in the Authoring Tool or to an unsealed management pack that you create.  
   

@@ -39,7 +39,7 @@ Use this procedure to add an activity to a workflow from the **Activities Toolbo
   
 2.  In the **Activities Toolbox** pane, locate the appropriate activity group.  
   
-3.  Drag the activity you want to the authoring pane, and then drop it between the workflow Start and End icons or between two existing activities. The sequence of activities that is displayed in the authoring pane—from the top down—represents the order in which the activities will run. To run activities in a loop or if\-else structure, drag the structure activity \(such as [For Each Loop](../../../sm/manage/author/For-Each-Loop-Activity.md)\) onto the authoring pane first, and then drop the activities into the structure activity.  
+3.  Drag the activity you want to the authoring pane, and then drop it between the workflow Start and End icons or between two existing activities. The sequence of activities that is displayed in the authoring pane-from the top down-represents the order in which the activities will run. To run activities in a loop or if\-else structure, drag the structure activity \(such as [For Each Loop](../../../sm/manage/author/For-Each-Loop-Activity.md)\) onto the authoring pane first, and then drop the activities into the structure activity.  
   
      For example, drag **Add AD DS Computer to Group** from the **Active Directory Activities** group to the authoring pane, and then drop it between the workflow Start and End icons. Then, drag **Set Activity Status to Completed** and drop it between the previous activity and the End icon.  
   

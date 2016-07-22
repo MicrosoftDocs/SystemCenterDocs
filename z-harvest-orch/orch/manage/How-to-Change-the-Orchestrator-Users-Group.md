@@ -18,14 +18,14 @@ You might want to change the [!INCLUDE[orchshort](../../om/manage/includes/orchs
 ## PermissionsConfig tool  
 You can change the Orchestrator Users group by using the PermissionsConfig tool, which is located on the management server in **<InstallDir>\\Management Server**. The syntax of this tool is as follows:  
   
-**PermissionsConfig–OrchestratorUsersGroup***GroupName***–OrchestratorUser***UserName***\-remote**  
+**PermissionsConfig-OrchestratorUsersGroup***GroupName***-OrchestratorUser***UserName***\-remote**  
   
 Note that the PermissionsConfig tool does not send results to standard output. To view the results of the command, check the **%errorlevel%** in the [!INCLUDE[orchshort](../../om/manage/includes/orchshort_md.md)] log file that is located at **C:\\Users\\SCXSVC\\AppData\\Local\\SCO\\LOGS**. The results are 1 for failure, 0 for success.  
   
 You can get an explanation of the parameters for the PermissionsConfig tool by typing the following command:  
   
 ```  
-PermissionsConfig –help  
+PermissionsConfig -help  
 ```  
   
 The following table explains the parameters.  
@@ -39,7 +39,7 @@ The following table explains the parameters.
 For example, to change the [!INCLUDE[orchshort](../../om/manage/includes/orchshort_md.md)] users group to a group that is named [!INCLUDE[orchshort](../../om/manage/includes/orchshort_md.md)] Users in a domain that is named Contoso, use the following command:  
   
 ```  
-PermissionsConfig –OrchestratorUsersGroup "Contoso\Orchestrator Users" -remote  
+PermissionsConfig -OrchestratorUsersGroup "Contoso\Orchestrator Users" -remote  
 ```  
   
 > [!IMPORTANT]  

@@ -29,13 +29,13 @@ ms.assetid: 3c88c0d5-42ee-444a-a22b-a4d7c4df6636
 
 ---
 # Add AD DS User to Group Activity
-This activity adds a user to a security group in Active Directory Domain Services \(AD DS\) in System Center 2012 - Service Manager. The user and the group must belong to the same domain, and all the containers in the domain are searched.  
+This activity adds a user to a security group in Active Directory Domain Services \(AD&nbsp;DS\) in System Center 2012 - Service Manager. The user and the group must belong to the same domain, and all the containers in the domain are searched.  
   
 ## Design Time Prerequisites  
  None.  
   
 ## Run Time Prerequisites  
- When you use this activity, make sure that the Service Manager Workflow account has sufficient permissions to modify security groups in AD DS.  
+ When you use this activity, make sure that the Service Manager Workflow account has sufficient permissions to modify security groups in AD&nbsp;DS.  
   
 ## Properties  
  The **Add AD DS User to Group** activity uses the input properties that are listed in the following table.  

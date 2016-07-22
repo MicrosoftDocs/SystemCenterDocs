@@ -77,7 +77,7 @@ The following procedure describes the steps to create a pivot table containing a
 > [!NOTE]  
 > For this example, the orchestration database must contain results from at least one runbook for PowerPivot to import a table.  
   
-#### To create a connection to the data feed  
+#### To create a connection to the data&nbsp;feed  
   
 1.  Open Excel.  
   

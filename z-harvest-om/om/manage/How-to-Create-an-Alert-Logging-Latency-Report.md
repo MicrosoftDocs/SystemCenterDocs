@@ -18,7 +18,7 @@ The following procedure is an example of how you create an alert logging latency
 This information is useful when considering service level agreements \(SLA\). You might not want to commit to an SLA of 2 minutes if alerts take longer than that to get written into the Operations Manager database.  
   
 > [!NOTE]  
-> Operations Manager Reporting must be installed before you can run an alert logging latency report.  
+> Operations Manager&nbsp;Reporting must be installed before you can run an alert logging latency report.  
   
 ### To create an alert logging latency report  
   

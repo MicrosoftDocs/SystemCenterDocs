@@ -34,7 +34,7 @@ When you upgrade a server that runs [!INCLUDE[orchblue_1](../../orch/deploy/incl
 ### Upgrading the integration pack for another System Center 2012 R2 component  
 The only [!INCLUDE[sc2012r2_1](../../om/manage/includes/sc2012r2_1_md.md)] component for which an updated integration pack is being released for [!INCLUDE[sc2012r2_1](../../om/manage/includes/sc2012r2_1_md.md)] is [!INCLUDE[vmmblue_2](../../om/manage/includes/vmmblue_2_md.md)].  
   
-For more detailed instructions for upgrading [!INCLUDE[sc2012r2_1](../../om/manage/includes/sc2012r2_1_md.md)] components, see the guide “Upgrade Sequencing for System Center 2012 R2” that is included in the SC2012R2Upgrade.zip file that you downloaded from the Microsoft Connect website. For each component you will perform the following steps.  
+For more detailed instructions for upgrading [!INCLUDE[sc2012r2_1](../../om/manage/includes/sc2012r2_1_md.md)] components, see the guide "Upgrade Sequencing for System Center 2012 R2" that is included in the SC2012R2Upgrade.zip file that you downloaded from the Microsoft Connect website. For each component you will perform the following steps.  
   
 1.  Uninstall and unregister the integration pack for the component according to the [How to Uninstall and Unregister an Integration Pack](../../orch/deploy/How-to-Uninstall-and-Unregister-an-Integration-Pack.md).  
   

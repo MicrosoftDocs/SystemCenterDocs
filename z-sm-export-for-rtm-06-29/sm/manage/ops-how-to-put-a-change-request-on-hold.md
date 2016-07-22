@@ -37,7 +37,7 @@ You can use the following procedures to put a change request on hold in System C
   
 2.  In the **Work Items** pane, expand **Work Items**, expand **Change Management**, and then click **Change Requests: Manual Activity In Progress**.  
   
-3.  Select a change request to put on hold. For example, select **Apply Exchange Server 2010 Service Pack 1**.  
+3.  Select a change request to put on hold. For example, select **Apply Exchange Server&nbsp;2010 Service Pack&nbsp;1**.  
   
 4.  In the **Tasks** pane, click **Put On Hold**.  
   

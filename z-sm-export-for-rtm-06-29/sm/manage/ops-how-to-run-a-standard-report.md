@@ -32,7 +32,7 @@ ms.assetid: 15cb747b-19e4-41fe-81e2-31418579457f
 You can use the following procedure to run a report in System Center 2012 - Service Manager. In this procedure, you run an incident management report to determine how many incidents were resolved in the previous week.  
   
 > [!NOTE]  
->  Before you can run a report, the extract, transform, and load \(ETL\) process must be complete. For more information about the ETL process and about how to schedule it to run, see [How to Enable Data Warehouse Jobs Schedules](http://go.microsoft.com/fwlink/p/?LinkId=229825) in the [Administrator’s Guide for System Center 2012 \- Service Manager](http://go.microsoft.com/fwlink/p/?LinkId=209669).  
+>  Before you can run a report, the extract, transform, and load \(ETL\) process must be complete. For more information about the ETL process and about how to schedule it to run, see [How to Enable Data Warehouse Jobs Schedules](http://go.microsoft.com/fwlink/p/?LinkId=229825) in the [Administrator's Guide for System Center&nbsp;2012 \- Service Manager](http://go.microsoft.com/fwlink/p/?LinkId=209669).  
 >   
 >  The Service Manager data warehouse does not create dimensions for classes or relationships in unsealed management packs. If you are using an unsealed management pack, you will not see any data from that management pack in your reports. Because of this, the best practice is to model all classes and relationships in sealed management packs.  
 >   

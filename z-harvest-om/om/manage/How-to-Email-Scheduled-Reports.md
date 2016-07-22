@@ -17,9 +17,9 @@ Before you can schedule a report for email delivery, you must configure the emai
   
 The example in this procedure uses an availability report that you have already created and saved as a favorite. For more information about creating an availability report, see [How to Create an Availability Report](../../om/manage/How-to-Create-an-Availability-Report.md). For more information about saving a report as a favorite, see [How to Save a Report](../../om/manage/How-to-Save-a-Report.md).  
   
-### To configure email settings in the SQL Server Report Server  
+### To configure email settings in the SQL Server&nbsp;Report Server  
   
-1.  On the Windows desktop, click **Start**, point to **Programs**, point to **Microsoft SQL Server 2008**, point to **Configuration Tools**, and then click **Reporting Services Configuration**.  
+1.  On the Windows desktop, click **Start**, point to **Programs**, point to **Microsoft SQL Server&nbsp;2008**, point to **Configuration Tools**, and then click **Reporting Services Configuration**.  
   
 2.  In **Reporting Services Configuration Manager**, in the **Report Server Installation Instance Selection** dialog box, click **Connect**.  
   

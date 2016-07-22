@@ -17,7 +17,7 @@ This section describes general performance and scalability planning guidance for
 
  Service Manager is a three\-tiered application, consisting of a database, a data access module, and a console:  
 
--   Every Service Manager deployment topology—from the largest to smallest—includes all three tiers, whether physically or virtually.  
+-   Every Service Manager deployment topology-from the largest to smallest-includes all three tiers, whether physically or virtually.  
 -   The smallest deployment topology that is supported requires two servers, either physical servers or virtual servers. The largest deployment topology contains more than four servers.  
 -   The servers host the Service Manager console and Service Manager database on the management server. The data warehouse management server hosts the Service Manager data warehouse.  
 

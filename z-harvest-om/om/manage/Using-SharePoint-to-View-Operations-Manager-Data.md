@@ -43,7 +43,7 @@ The following are the prerequisites for deploying the Operations Manager web par
 -   The SharePoint farm must be running SharePoint 2013, SharePoint Server 2010 Standard, SharePoint Server 2010 Enterprise, or SharePoint Foundation 2010.  
   
     > [!NOTE]  
-    > If the SharePoint farm is running SharePoint Foundation 2010, you can only deploy the web part in the same domain as the web console and you cannot use shared credentials.  
+    > If the SharePoint farm is running SharePoint Foundation&nbsp;2010, you can only deploy the web part in the same domain as the web console and you cannot use shared credentials.  
   
 -   You must have SharePoint administrator permissions for the SharePoint farm; specifically, you must have permissions to perform the following tasks:  
   
@@ -62,17 +62,17 @@ Using the install\-OperationsManager\-DashboardViewer.ps1 script, you can deploy
   
 #### To deploy the Operations Manager web part  
   
-1.  Copy the install\-OperationsManager\-DashboardViewer.ps1 file and the Microsoft.Enterprisemanagement.Sharepointintegration.wsp file from the Operations Manager installation folder under Setup\\amd64\\SharePoint to a location that the SharePoint 2010 Management Shell can access.  
+1.  Copy the install\-OperationsManager\-DashboardViewer.ps1 file and the Microsoft.Enterprisemanagement.Sharepointintegration.wsp file from the Operations Manager installation folder under Setup\\amd64\\SharePoint to a location that the SharePoint&nbsp;2010 Management Shell can access.  
   
-2.  Open the SharePoint 2010 Management Shell and navigate to the directory where you saved the install\-OperationsManager\-DashboardViewer.ps1 file.  
+2.  Open the SharePoint&nbsp;2010 Management Shell and navigate to the directory where you saved the install\-OperationsManager\-DashboardViewer.ps1 file.  
   
-3.  In the SharePoint 2010 Management Shell, type the following command, and then press **Enter**.  
+3.  In the SharePoint&nbsp;2010 Management Shell, type the following command, and then press **Enter**.  
   
-    **.\\install\-OperationsManager\-DashboardViewer.ps1 –solutionPath***<directory for Microsoft.EnterpriseManagement.SharePointIntegration.wsp>***\-url***<optional, for installing to a specific portal address or website>*  
+    **.\\install\-OperationsManager\-DashboardViewer.ps1 -solutionPath***<directory for Microsoft.EnterpriseManagement.SharePointIntegration.wsp>***\-url***<optional, for installing to a specific portal address or website>*  
   
-    Here is an example that deploys the web part to a specific portal address. In this example you are copying the files to “C:\\Program Files\\System Center Operations Manager 2012\\”.  
+    Here is an example that deploys the web part to a specific portal address. In this example you are copying the files to "C:\\Program Files\\System Center Operations Manager 2012\\".  
   
-    **.\\install\-OperationsManager\-DashboardViewer.ps1 “C:\\Program Files\\System Center Operations Manager 2012\\” http:\/\/localhost:4096**  
+    **.\\install\-OperationsManager\-DashboardViewer.ps1 "C:\\Program Files\\System Center Operations Manager 2012\\" http:\/\/localhost:4096**  
   
     If an error occurs when you run the script, you must disable the RemoteSigned default code\-signing execution policy for the SharePoint 2010 Management Shell. To allow the install\-OperationsManager\-DashboardViewer.ps1 script to run, type the following command, and then press **enter**:  
   
@@ -151,7 +151,7 @@ The following procedure creates a SharePoint page with the Operations Manager Da
 11. Click **Save & Close**.  
   
 > [!NOTE]  
-> After you correctly set up a dashboard web part in SharePoint, you might receive an error message saying “ticket has expired”. This is because there is a very narrow time\-out for an override ticket \(by default, 5 seconds\). If the time on the server running SharePoint and the Web console server differ by more than this value, the connection fails. This is a likely situation if the computers are in different domains and are using a different time source. You can increase the time\-out on the SharePoint Server in the web console list, but this would make the server more vulnerable to attack. The best solution is to synchronize the time between the server running SharePoint and the web console server.  
+> After you correctly set up a dashboard web part in SharePoint, you might receive an error message saying "ticket has expired". This is because there is a very narrow time\-out for an override ticket \(by default, 5 seconds\). If the time on the server running SharePoint and the Web console server differ by more than this value, the connection fails. This is a likely situation if the computers are in different domains and are using a different time source. You can increase the time\-out on the SharePoint Server in the web console list, but this would make the server more vulnerable to attack. The best solution is to synchronize the time between the server running SharePoint and the web console server.  
   
 ## <a name="bkmk_howtoconfigurethewebparttousesharedcredentials"></a>How to Configure the Web Part to Use Shared Credentials  
 To configure the Operations Manager Dashboard Viewer web part so that those who are not Operations Manager users can view it, perform the following procedures. In the first procedure, you configure credentials by creating a Target Application ID in SharePoint. Next, you configure the web part environment.  
@@ -220,7 +220,7 @@ Repeat this procedure for each Operations Manager environment.
   
     **\-title***the name of the dashboard view*  
   
-    **\-webconsoleUNC** “*path to the web.config file, not including filename*”  
+    **\-webconsoleUNC** "*path to the web.config file, not including filename*"  
   
     > [!NOTE]  
     > The web.config file is found under Program Files\\System Center 2012\\Operations Manager\\WebConsole\\WebHost on the computer running the web console.  
@@ -254,7 +254,7 @@ Adding new environments to the Web Part enables you to display dashboards from m
   
     **\-title***the name of the dashboard view*  
   
-    **\-webconsoleUNC** “*path to the web.config file, not including filename*”  
+    **\-webconsoleUNC** "*path to the web.config file, not including filename*"  
   
     > [!NOTE]  
     > The web.config file is found under Program Files\\System Center 2012\\Operations Manager\\WebConsole\\WebHost on the computer running the web console.  
@@ -262,21 +262,21 @@ Adding new environments to the Web Part enables you to display dashboards from m
     **\-targetApplicationID***the Target Application ID*  
   
 ## <a name="bkmk_howtouninstalltheoperationsmanagerwebpart"></a>How to Uninstall the Operations Manager Web Part  
-As with deploying the Operations Manager Web Part, you can uninstall the Web Part from all sites and web applications in the farm or from a specific site or web application. The Web Part can be uninstalled by using a script or retracted by using the SharePoint 2010 Central Administration site.  
+As with deploying the Operations Manager Web Part, you can uninstall the Web Part from all sites and web applications in the farm or from a specific site or web application. The Web Part can be uninstalled by using a script or retracted by using the SharePoint&nbsp;2010 Central Administration site.  
   
 #### To uninstall the Web Part by using a Script  
   
-1.  Copy the install\-OperationsManager\-DashboardViewer.ps1 file to a location that the SharePoint 2010 Management Shell can access.  
+1.  Copy the install\-OperationsManager\-DashboardViewer.ps1 file to a location that the SharePoint&nbsp;2010 Management Shell can access.  
   
-2.  Open the SharePoint 2010 Management Shell and navigate to the directory where you saved the install\-OperationsManager\-DashboardViewer.ps1 file.  
+2.  Open the SharePoint&nbsp;2010 Management Shell and navigate to the directory where you saved the install\-OperationsManager\-DashboardViewer.ps1 file.  
   
-3.  In the SharePoint 2010 Management Shell, type the following command, and then press **Enter**.  
+3.  In the SharePoint&nbsp;2010 Management Shell, type the following command, and then press **Enter**.  
   
-    **.\\uninstall\-OperationsManager\-DashboardViewer.ps1 –solutionPath***<directory for Microsoft.EnterpriseManagement.SharePointIntegration.wsp>***\-url***<optional, for uninstalling from a specific portal address or website>*  
+    **.\\uninstall\-OperationsManager\-DashboardViewer.ps1 -solutionPath***<directory for Microsoft.EnterpriseManagement.SharePointIntegration.wsp>***\-url***<optional, for uninstalling from a specific portal address or website>*  
   
     Example that uninstalls the Web Part from a specific portal address:  
   
-    **.\\uninstall\-OperationsManager\-DashboardViewer.ps1 “C:\\Program Files\\System Center Operations Manager 2012\\” http:\/\/localhost:4096**  
+    **.\\uninstall\-OperationsManager\-DashboardViewer.ps1 "C:\\Program Files\\System Center Operations Manager 2012\\" http:\/\/localhost:4096**  
   
     If an error occurs when you run the script, you must disable the RemoteSigned default code\-signing execution policy for the SharePoint 2010 Management Shell. To allow the install\-OperationsManager\-DashboardViewer.ps1 script to run, type this command, and then press **enter**:  
   

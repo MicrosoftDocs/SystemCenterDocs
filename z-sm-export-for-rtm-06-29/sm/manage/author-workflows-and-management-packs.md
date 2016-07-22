@@ -29,7 +29,7 @@ System Center 2012 - Service Manager runs a Windows Workflow Foundation \(WF\) w
  ![Management Pack and Workflow Files](../media/author-mpandworkflowcomponents_production.png)  
 
 ## Trigger Conditions for Workflows  
- A workflow’s data source module defines the workflow trigger condition. A workflow can have one of two types of trigger condition:  
+ A workflow's data source module defines the workflow trigger condition. A workflow can have one of two types of trigger condition:  
 
 -   **Timer.** This option \(also referred to as a *schedule*\) triggers the workflow on designated days of the week or at another specified interval.  
 

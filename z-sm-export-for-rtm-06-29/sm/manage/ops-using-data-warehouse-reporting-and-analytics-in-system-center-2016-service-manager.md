@@ -31,7 +31,7 @@ ms.assetid: 90c721f6-6b0e-4c35-ac85-3fb2e4134ecc
 # Using Data Warehouse Reporting and Analytics in System Center 2012 - Service Manager
 Service Manager reports enable you to collect and view data and trends from across the business environment. For example, you can generate a report that shows the number of incidents that occur in a specific time frame. You can then use that information to calculate the cost of each incident \(in hours\) and also to identify any trends and take preventative measures to reduce the cost and occurrence of incidences.  
   
- Standard reports are viewable for all Service Manager console users in the Reporting workspace. If users can view work items and have permission to the SystemCenter and ServiceManager folders on the SQL Server Reporting Services \(SSRS\) server, they can also view reports in work item task lists. Any user can export report data from a report they view. Exported reports are saved in a variety of file formats.  
+ Standard reports are viewable for all Service Manager console users in the Reporting workspace. If users can view work items and have permission to the SystemCenter and ServiceManager folders on the SQL&nbsp;Server Reporting Services \(SSRS\) server, they can also view reports in work item task lists. Any user can export report data from a report they view. Exported reports are saved in a variety of file formats.  
   
  The following tasks are addressed in this guide.  
   
@@ -55,10 +55,10 @@ Service Manager reports enable you to collect and view data and trends from acro
   
 ## Other Resources for This Component  
   
--   TechNet Library main page for [System Center 2012 – Service Manager](http://go.microsoft.com/fwlink/p/?LinkId=220655)  
+-   TechNet Library main page for [System Center 2012 - Service Manager](http://go.microsoft.com/fwlink/p/?LinkId=220655)  
   
--   [Operations Guide for System Center 2012 – Service Manager](http://go.microsoft.com/fwlink/p/?LinkId=220656)  
+-   [Operations Guide for System Center 2012 - Service Manager](http://go.microsoft.com/fwlink/p/?LinkId=220656)  
   
--   [Administrator's Guide for System Center 2012 – Service Manager](http://go.microsoft.com/fwlink/p/?LinkId=209669)  
+-   [Administrator's Guide for System Center 2012 - Service Manager](http://go.microsoft.com/fwlink/p/?LinkId=209669)  
   
--   [Planning Guide for System Center 2012 – Service Manager](http://go.microsoft.com/fwlink/p/?LinkId=209672)
+-   [Planning Guide for System Center 2012 - Service Manager](http://go.microsoft.com/fwlink/p/?LinkId=209672)

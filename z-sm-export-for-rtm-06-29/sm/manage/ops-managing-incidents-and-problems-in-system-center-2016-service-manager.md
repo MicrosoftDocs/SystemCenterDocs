@@ -29,7 +29,7 @@ ms.assetid: 7904413b-ace2-4e65-b609-d0804d99c764
 
 ---
 # Managing Incidents and Problems in System Center 2012 - Service Manager
-System Center 2012 - Service Manager helps your organization manage incidents and problems by implementing and automating help desk ticketing processes so that these processes comply with the best practices that are described in the Microsoft Operations Framework \(MOF\) and in the Information Technology Infrastructure Library \(ITIL\). For more information about MOF 4.0, see [Microsoft Operations Framework](http://go.microsoft.com/fwlink/p/?LinkID=116391).  
+System Center 2012 - Service Manager helps your organization manage incidents and problems by implementing and automating help desk ticketing processes so that these processes comply with the best practices that are described in the Microsoft Operations Framework \(MOF\) and in the Information Technology Infrastructure Library \(ITIL\). For more information about MOF&nbsp;4.0, see [Microsoft Operations Framework](http://go.microsoft.com/fwlink/p/?LinkID=116391).  
   
  If you need to add or extend the functionality of Service Manager to implement custom processes for handling incidents and problems, you can use standard Microsoft development tools and the Service Manager SDK.  
   
@@ -57,10 +57,10 @@ System Center 2012 - Service Manager helps your organization manage incidents an
   
 ## Other Resources for This Component  
   
--   TechNet Library main page for [System Center 2012 – Service Manager](http://go.microsoft.com/fwlink/p/?LinkId=220655)  
+-   TechNet Library main page for [System Center 2012 - Service Manager](http://go.microsoft.com/fwlink/p/?LinkId=220655)  
   
--   [Operations Guide for System Center 2012 – Service Manager](http://go.microsoft.com/fwlink/p/?LinkId=220656)  
+-   [Operations Guide for System Center 2012 - Service Manager](http://go.microsoft.com/fwlink/p/?LinkId=220656)  
   
--   [Administrator's Guide for System Center 2012 – Service Manager](http://go.microsoft.com/fwlink/p/?LinkId=209669)  
+-   [Administrator's Guide for System Center 2012 - Service Manager](http://go.microsoft.com/fwlink/p/?LinkId=209669)  
   
--   [Planning Guide for System Center 2012 – Service Manager](http://go.microsoft.com/fwlink/p/?LinkId=209672)
+-   [Planning Guide for System Center 2012 - Service Manager](http://go.microsoft.com/fwlink/p/?LinkId=209672)

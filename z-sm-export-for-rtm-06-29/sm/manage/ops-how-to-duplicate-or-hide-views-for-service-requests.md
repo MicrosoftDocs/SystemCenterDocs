@@ -39,13 +39,13 @@ You can use the following procedures to duplicate or hide a service request view
   
 3.  In the **Select management pack** dialog box, select a management pack to add the new view information to or create a new one, and then click **OK**.  
   
-4.  Optionally, you can use the **Edit View** task to edit the new view, titled **\<View Name – Copy\>**, to change the view name or other criteria of the view.  
+4.  Optionally, you can use the **Edit View** task to edit the new view, titled **\<View Name - Copy\>**, to change the view name or other criteria of the view.  
   
-5.  In the **Work Items** pane, locate the new duplicate view that was created. For example, click **Assigned To Me – Copy**.  
+5.  In the **Work Items** pane, locate the new duplicate view that was created. For example, click **Assigned To Me - Copy**.  
   
 6.  In the **Tasks** pane, click **Edit View**.  
   
-7.  In the **Edit Assigned To Me –Copy** dialog box, click **Criteria**.  
+7.  In the **Edit Assigned To Me -Copy** dialog box, click **Criteria**.  
   
 8.  In the **Criteria** area, next to **Assigned To User ID**, in the text box after **equals**, type **\[me\]**, and then click **OK**.  
   

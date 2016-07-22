@@ -52,7 +52,7 @@ The shape in the diagram now includes a state indicator in the upper\-right corn
   
     For example, if you want to add the management server for a geographic location to a map, select the management server.  
   
-5.  Drag the object to the diagram or image and drop it onto the shape. This establishes the link between the shape and that managed object’s record.  
+5.  Drag the object to the diagram or image and drop it onto the shape. This establishes the link between the shape and that managed object's record.  
   
 ### To automatically link multiple Visio shapes to Operations Manager managed computers and network devices  
   

@@ -42,10 +42,10 @@ This guide will show you how to upgrade from System Center 2012 - Service Manage
 > 6.  Virtual Machine Manager  
 > 7.  App Controller  
   
- You can only upgrade to System Center 2012 Service Pack 1 from System Center 2012 – Service Manager \(version 7.5.1561.0.0\)  
+ You can only upgrade to System Center 2012 Service Pack 1 from System&nbsp;Center&nbsp;2012&nbsp;-&nbsp;Service&nbsp;Manager \(version 7.5.1561.0.0\)  
   
 > [!IMPORTANT]  
->  It is assumed in this guide that you are performing an *upgrade* to System Center 2012 Service Pack 1. For information about installing System Center 2012 - Service Manager on a computer where no previous version of Service Manager exists, see the [Deploying  System Center 2012 – Service Manager](http://go.microsoft.com/fwlink/p/?LinkId=209670).  
+>  It is assumed in this guide that you are performing an *upgrade* to System Center 2012 Service Pack 1. For information about installing System Center 2012 - Service Manager on a computer where no previous version of Service Manager exists, see the [Deploying  System&nbsp;Center&nbsp;2012 - Service&nbsp;Manager](http://go.microsoft.com/fwlink/p/?LinkId=209670).  
   
 ## Upgrade topics  
   

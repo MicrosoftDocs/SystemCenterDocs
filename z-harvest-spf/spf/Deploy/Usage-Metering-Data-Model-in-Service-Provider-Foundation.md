@@ -60,25 +60,25 @@ The virtual machine usage metrics in the following tables are aggregated using a
   
 A record of usage data consists of the following parts:  
   
--   EventID – A new unique Event ID \(watermark\) that is associated with the last record time in returning a batch of usage records to the collector.  
+-   EventID - A new unique Event ID \(watermark\) that is associated with the last record time in returning a batch of usage records to the collector.  
   
--   Resource Id – The measurement of the usage activity.  
+-   Resource Id - The measurement of the usage activity.  
   
--   StartTime, EndTime – The start and end times of the hour in which the data was aggregated.  
+-   StartTime, EndTime - The start and end times of the hour in which the data was aggregated.  
   
--   ServiceType – Either "Cloud" or "VirtualMacine".  
+-   ServiceType - Either "Cloud" or "VirtualMacine".  
   
--   SubscriptionID – The subscription ID of the tenant.  
+-   SubscriptionID - The subscription ID of the tenant.  
   
--   Properties – These are information fields that define the following:  
+-   Properties - These are information fields that define the following:  
   
-    -   Subscriber – Subscriber ID.  
+    -   Subscriber - Subscriber ID.  
   
-    -   Metered Service – Either "VM Utilization" or "Cloud Utilization"  
+    -   Metered Service - Either "VM Utilization" or "Cloud Utilization"  
   
-    -   VMName – ID of the virtual machine  
+    -   VMName - ID of the virtual machine  
   
-    -   VNIC – ID of the virtual network adapter.  
+    -   VNIC - ID of the virtual network adapter.  
   
 The following lists the metrics for the four areas of usage metering: memory, CPU, disk, and network. Each table lists the applicable resource IDs that define the metrics of usage data, and includes an example of a record for each type of usage measurement.  
   

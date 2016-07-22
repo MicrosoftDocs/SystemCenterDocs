@@ -34,7 +34,7 @@ Install process:
   
 Uninstall process:  
   
-1.  Remove Microsoft System Center 2012 Orchestrator – Best Practices Analyzer \(BPA\) from the Programs and Features panel within Windows Control Panel.  
+1.  Remove Microsoft System Center 2012 Orchestrator - Best Practices Analyzer \(BPA\) from the Programs and Features panel within Windows Control Panel.  
   
 ## Usage  
   
@@ -43,7 +43,7 @@ Uninstall process:
     > [!NOTE]  
     > To learn how to run the Microsoft Baseline Configuration Analyzer scans from PowerShell cmdlets, please see the MBCA 2.1 help file.  
   
-2.  Select System Center 2012 – Orchestrator BPA from the product dropdown within the MBCA 2.1 user interface.  
+2.  Select System Center 2012 - Orchestrator BPA from the product dropdown within the MBCA 2.1 user interface.  
   
 3.  Click Start Scan.  
   

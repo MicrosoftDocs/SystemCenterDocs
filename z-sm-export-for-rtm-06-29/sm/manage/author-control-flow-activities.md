@@ -29,7 +29,7 @@ ms.assetid: f85248d5-306f-4e9d-aa35-1cc5675cf9cd
 
 ---
 # Control Flow Activities
-Use control flow activities to provide structure—branches, loops, or timer delays—for your workflow in System Center 2012 - Service Manager.  
+Use control flow activities to provide structure-branches, loops, or timer delays-for your workflow in System Center 2012 - Service Manager.  
   
  The Authoring Tool provides four default control flow activities in the **Control Flow** group in the **Activities Toolbox** pane.  
   

@@ -149,11 +149,11 @@ The following limitations apply:
 -   Plan the use of multiple requests carefully. Before you change the maximum number of simultaneous runbook requests, consider the tasks performed by the runbook. Verify that each runbook instance can finish successfully. For example, if your runbook creates a folder, copies files into it, and then deletes the folder when it is finished, one instance of the runbook might delete the folder before other instances are finished with it. In this case, you should keep the maximum number of simultaneous requests for this runbook a value of 1 to avoid conflicts.  
   
 ## Returned Data  
-Returned Data defines the data that a runbook returns when it finishes.  Each Returned Data definition can contain either a single or multiple parameter values. To populate the data definitions, end the workflow with a Return Data activity that contains the return values.  
+Returned Data defines the data that a runbook returns when it finishes.&nbsp; Each Returned Data definition can contain either a single or multiple parameter values. To populate the data definitions, end the workflow with a Return Data activity that contains the return values.  
   
 You access the Returned Data values through Published Data in one of several ways.  
   
--   Invoke the runbook from another runbook by using the Invoke Runbook activity. The parent runbook can access the child runbook’s Returned Data as Published Data from the Invoke Runbook activity.  
+-   Invoke the runbook from another runbook by using the Invoke Runbook activity. The parent runbook can access the child runbook's Returned Data as Published Data from the Invoke Runbook activity.  
   
 -   View the Published Data from the Runbook Designer or Orchestration console.  
   

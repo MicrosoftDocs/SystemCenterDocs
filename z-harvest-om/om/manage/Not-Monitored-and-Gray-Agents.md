@@ -17,13 +17,13 @@ In [!INCLUDE[om12long](../../om/manage/includes/om12long_md.md)], you may see di
   
 ![State view showing "not monitored"](../../om/manage/media/OM12NotMonitored.gif "OM12NotMonitored")  
   
-The state view in the previous illustration contrasts two “unknown” states.  
+The state view in the previous illustration contrasts two "unknown" states.  
   
 -   The agent is shown as healthy, but the indicator is gray.  
   
 -   The operating system is shown as not monitored.  
   
-![Grayed-out healthy icon](../../om/manage/media/Healthygrayicon.gif "Healthygrayicon") The gray icon indicates that the health service watcher on the management server that is watching the health service on the monitored computer is not receiving heartbeats from the agent anymore. The health service watcher had received heartbeats previously and the state was reported as healthy. This also means that the management servers are no longer receiving any information from the agent.  
+![Grayed-out healthy icon](../../om/manage/media/Healthygrayicon.gif "Healthygrayicon") The gray icon indicates that the health service watcher on the management server that is watching the health service on the monitored computer is not receiving heartbeats from the agent anymore.&nbsp;The health service watcher had received heartbeats previously and the state was reported as healthy.&nbsp;This also means that the management servers are no longer receiving any information from the agent.  
   
 ![White button indicates unknown status](../../om/manage/media/Unknownicon.gif "Unknownicon") The not monitored icon indicates that there are no monitors for the object. In the previous illustration, the view tells you that there are no monitors for the operating system on this computer. In this case, this is because the management packs for the Windows Server operating systems have not been imported in this management group.  
   
@@ -56,7 +56,7 @@ The **Show Gray Agent Connectivity Data** task will help you identify why an age
   
 4.  In the **Tasks** pane, select the task **Show Gray Agent Connectivity Data**.  
   
-5.  The **Run Task – Show Gray Agent Connectivity Data** dialog box appears. Click **Run**.  
+5.  The **Run Task - Show Gray Agent Connectivity Data** dialog box appears. Click **Run**.  
   
 6.  The Task Status dialog box appears. When the task is completed, you can click **Copy Text** or **Copy HTML** and paste the task output in the appropriate tool for further review.  
   
@@ -74,7 +74,7 @@ The **Show Gray Agent Connectivity Data** task will help you identify why an age
   
     -   The management server that the agent reports to.  
   
-For information on troubleshooting, see the Knowledge Base article [Troubleshooting gray agent state](http://go.microsoft.com/fwlink/p/?LinkID=200488). Although the article was written for Operations Manager 2007, the troubleshooting steps will also be helpful for [!INCLUDE[om12long](../../om/manage/includes/om12long_md.md)].  
+For information on troubleshooting, see the Knowledge Base article [Troubleshooting gray agent state](http://go.microsoft.com/fwlink/p/?LinkID=200488). Although the article was written for Operations Manager&nbsp;2007, the troubleshooting steps will also be helpful for [!INCLUDE[om12long](../../om/manage/includes/om12long_md.md)].  
   
 ## What to do for a not monitored state  
 When an object shows as not monitored, check whether the appropriate management pack for monitoring the object is imported. Ensure that the appropriate monitors are enabled.  

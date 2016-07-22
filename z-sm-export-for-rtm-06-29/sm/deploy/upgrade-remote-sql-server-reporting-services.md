@@ -29,7 +29,7 @@ ms.assetid: d41be74c-5773-4152-8155-d455f7947144
 
 ---
 # Remote SQL Server Reporting Services
-When you installed System Center 2012 - Service Manager, you may have specified a different computer to host Microsoft SQL Server Reporting Services \(SSRS\) than the computer that hosted the data warehouse management server. If, in your environment, SSRS is remote from the data warehouse management server, you must use the following procedures to prepare the computer that hosts SSRS for the upgrade:  
+When you installed System Center 2012 - Service Manager, you may have specified a different computer to host Microsoft SQL&nbsp;Server Reporting Services \(SSRS\) than the computer that hosted the data warehouse management server. If, in your environment, SSRS is remote from the data warehouse management server, you must use the following procedures to prepare the computer that hosts SSRS for the upgrade:  
   
 -   Copy Microsoft.EnterpriseManagement.Reporting.Code.dll from the Service Manager installation media to the computer that is hosting SSRS.  
   

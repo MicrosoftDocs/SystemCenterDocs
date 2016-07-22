@@ -69,10 +69,10 @@ ms.assetid: 41d83462-5e56-4eb3-8eb8-b67d34060c86
           <para>The data warehouse database that you specified exists.</para>
         </listItem>
         <listItem>
-          <para>The computer running SQL Server that you specified is not running SQL Server 2008 Service Pack 1 (SP1), SQL Server 2008 Service Pack 2 (SP2). SQL Server 2008 R2.</para>
+          <para>The computer running SQL&nbsp;Server that you specified is not running SQL&nbsp;Server&nbsp;2008 Service Pack&nbsp;1 (SP1), SQL&nbsp;Server&nbsp;2008 Service Pack&nbsp;2 (SP2). SQL&nbsp;Server&nbsp;2008 R2.</para>
         </listItem>
         <listItem>
-          <para>The hard disk drive that you specified for a database has at least 1 GB of free space.</para>
+          <para>The hard disk drive that you specified for a database has at least 1&nbsp;GB of free space.</para>
         </listItem>
         <listItem>
           <para>The System Center Data Access service can log on with the set of credentials that you supplied.</para>
@@ -93,22 +93,22 @@ ms.assetid: 41d83462-5e56-4eb3-8eb8-b67d34060c86
   <section>
     <title>Failure Occurs in an Unpredictable Manner Before Permanent Changes Are Made to the Management Server</title>
     <content>
-      <para>During an installation or upgrade of <token>smlong12</token> SP1, an error may occur. If the error occurs before any permanent changes are made to the <token>smshort</token> management server or data warehouse management server—for example, before changes are made to the<?Comment jhb: Does this reference to the SQL database belong in the section about failures after changes are made in the database (two sections down)? 2012-08-06T13:17:00Z  Id='0?> Structured Query Language (SQL) database <?CommentEnd Id='0'
-    ?>or before management packs are imported—the error message that appears includes a <ui>Retry</ui> button. In these situations, you can correct the issue and then retry the installation or upgrade.</para>
+      <para>During an installation or upgrade of <token>smlong12</token> SP1, an error may occur. If the error occurs before any permanent changes are made to the <token>smshort</token> management server or data warehouse management server-for example, before changes are made to the<?Comment jhb: Does this reference to the SQL database belong in the section about failures after changes are made in the database (two sections down)? 2012-08-06T13:17:00Z  Id='0?> Structured Query Language (SQL) database <?CommentEnd Id='0'
+    ?>or before management packs are imported-the error message that appears includes a <ui>Retry</ui> button. In these situations, you can correct the issue and then retry the installation or upgrade.</para>
     </content>
   </section>
   <section>
     <title>Failure Occurs in an Unpredictable Manner After Permanent Changes Are Made to the Management Server</title>
     <content>
-      <para>If an error occurs after permanent changes are made to the <token>smshort</token> management server or data warehouse management server—for example, after changes are made to the SQL database or after management packs are imported—the error message that appears does not include a <ui>Retry</ui> button. In this situation, you must reinstall the original version of the affected management server. </para>
-      <para>In any case, you need the backup of the encryption key. For the <token>smshort</token> management server, the encryption key is available only if you made a backup before you started the upgrade. For more information, see "Back Up the Encryption Key in Service Manager" in the <externalLink><linkText>Disaster Recovery Guide for System Center 2012 – Service Manager</linkText><linkUri>http://go.microsoft.com/fwlink/p/?LinkID=209671</linkUri></externalLink>.</para>
+      <para>If an error occurs after permanent changes are made to the <token>smshort</token> management server or data warehouse management server-for example, after changes are made to the SQL database or after management packs are imported-the error message that appears does not include a <ui>Retry</ui> button. In this situation, you must reinstall the original version of the affected management server. </para>
+      <para>In any case, you need the backup of the encryption key. For the <token>smshort</token> management server, the encryption key is available only if you made a backup before you started the upgrade. For more information, see "Back Up the Encryption Key in Service Manager" in the <externalLink><linkText>Disaster Recovery Guide for System Center 2012 - Service Manager</linkText><linkUri>http://go.microsoft.com/fwlink/p/?LinkID=209671</linkUri></externalLink>.</para>
     </content>
   </section>
   <section>
     <title>Failure Occurs in an Unpredictable Manner After Permanent Changes Are Made to a Database</title>
     <content>
-      <para>If an error occurs after permanent changes have been made—for example, after management packs are imported or any other time data is written into a database—the error message that appears does not include a <ui>Retry</ui> button. </para>
-      <para>At this point your only option is to click <ui>Close</ui> and begin a disaster recovery process to restore your databases. This recovery is possible only if you backed up your databases before you started the upgrade process. For more information, see "Backing Up Service Manager Databases" in the <externalLink><linkText>Disaster Recovery Guide for System Center 2012 – Service Manager</linkText><linkUri>http://go.microsoft.com/fwlink/p/?LinkID=209671</linkUri></externalLink>.</para>
+      <para>If an error occurs after permanent changes have been made-for example, after management packs are imported or any other time data is written into a database-the error message that appears does not include a <ui>Retry</ui> button. </para>
+      <para>At this point your only option is to click <ui>Close</ui> and begin a disaster recovery process to restore your databases. This recovery is possible only if you backed up your databases before you started the upgrade process. For more information, see "Backing Up Service Manager&nbsp;Databases" in the <externalLink><linkText>Disaster Recovery Guide for System Center 2012 - Service Manager</linkText><linkUri>http://go.microsoft.com/fwlink/p/?LinkID=209671</linkUri></externalLink>.</para>
     </content>
   </section>
   <section>
@@ -128,7 +128,7 @@ Keywords:      Classic
 User:          N/A
 Description:
 A timeout was reached (30000 milliseconds) while waiting for the System Center Management Configuration service to connect.</code>
-      <para>This problem occurs because a .NET Framework 2.0 managed assembly that has an Authenticode signature takes longer than usual to load. The signature is always verified when the .NET Framework 2.0 managed assembly that has an Authenticode signature is loaded. In addition, the .NET Framework 2.0 managed assembly may take longer than usual to load because of various other settings. For example, the .NET Framework 2.0 managed assembly may take longer than usual to load because of the network configuration. </para>
+      <para>This problem occurs because a .NET&nbsp;Framework&nbsp;2.0 managed assembly that has an Authenticode signature takes longer than usual to load. The signature is always verified when the .NET&nbsp;Framework&nbsp;2.0 managed assembly that has an Authenticode signature is loaded. In addition, the .NET&nbsp;Framework&nbsp;2.0 managed assembly may take longer than usual to load because of various other settings. For example, the .NET&nbsp;Framework&nbsp;2.0 managed assembly may take longer than usual to load because of the network configuration. </para>
       <para>For additional information about the cause of this problem, see <externalLink><linkText>Knowledgebase Article 936707</linkText><linkUri>http://go.microsoft.com/fwlink/p/?LinkId=207190</linkUri></externalLink> in the Microsoft Knowledge Base.</para>
       <para>For information about possible workaround procedures, see <link xlink:href="9beebcb4-ebe5-4c31-98cd-168d1704f5b6">How to Workaround Configuration Service Startup Issues</link></para>
     </content>

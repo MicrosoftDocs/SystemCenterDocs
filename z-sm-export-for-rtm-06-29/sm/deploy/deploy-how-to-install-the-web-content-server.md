@@ -120,7 +120,7 @@ robots: noindex,nofollow
           <para>On the <ui>Configure account for the Service Manager self-service portal</ui> page, click <ui>Domain account</ui>.</para>
           <alert class="note">
             <?Comment j: 223038 2011-08-26T13:41:00Z  Id='6?>
-            <para>Make sure that the credentials you enter here are for the sdk_users users role on the SQL Server that is hosting the <token>smshort</token> database.<?CommentEnd Id='6'
+            <para>Make sure that the credentials you enter here are for the sdk_users users role on the SQL&nbsp;Server that is hosting the <token>smshort</token> database.<?CommentEnd Id='6'
     ?></para>
           </alert>
         </content>
@@ -133,7 +133,7 @@ robots: noindex,nofollow
       </step>
       <step>
         <content>
-          <para>Click <ui>Test Credentials</ui>. After you verify that you received a “The credentials were accepted message,” click <ui>Next</ui>.</para>
+          <para>Click <ui>Test Credentials</ui>. After you verify that you received a "The credentials were accepted message," click <ui>Next</ui>.</para>
         </content>
       </step>
       <step>

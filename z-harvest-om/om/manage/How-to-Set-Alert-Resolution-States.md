@@ -17,7 +17,7 @@ In [!INCLUDE[om12long](../../om/manage/includes/om12long_md.md)], there are two 
   
 When an alert is generated, its resolution state is **New**. Operators can change the resolution state for a new alert to Closed or to a custom resolution state that an administrator has created for the management group.  
   
-Custom alert resolution states can used any descriptor you want, such as “Assigned to support” or “Requires investigation”. The default resolution states cannot be changed or deleted.  
+Custom alert resolution states can used any descriptor you want, such as "Assigned to support" or "Requires investigation". The default resolution states cannot be changed or deleted.  
   
 Each resolution state is assigned an ID, a number which uniquely identifies that resolution state. The ID for **New** is 0 and the ID for **Closed** is 255. You can assign custom resolution states any value between 1 and 254.  
   
@@ -41,7 +41,7 @@ Each resolution state is assigned an ID, a number which uniquely identifies that
   
 5.  In **Add Alert Resolution State**, type a name for the resolution state and select a value in the **Unique ID** box, and then click **OK**.  
   
-6.  In **Global Management Group Settings – Alerts**, click **OK**.  
+6.  In **Global Management Group Settings - Alerts**, click **OK**.  
   
 ## See Also  
 [How Heartbeats Work in Operations Manager](../../om/manage/How-Heartbeats-Work-in-Operations-Manager.md)  

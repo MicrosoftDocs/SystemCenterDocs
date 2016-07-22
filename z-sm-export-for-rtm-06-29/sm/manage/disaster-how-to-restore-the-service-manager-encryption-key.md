@@ -40,7 +40,7 @@ You can use the following procedure to restore the encryption keys before you ru
 3.  Right\-click **SecureStorageBackup.exe** then click **Run as administrator** to start the Encryption Key Backup or Restore Wizard.  
   
     > [!NOTE]  
-    >  In this release, the wizard contains references to “Operations Manager.” This issue will be resolved in a future release.  
+    >  In this release, the wizard contains references to "Operations Manager." This issue will be resolved in a future release.  
   
 4.  On the **Introduction** page, click **Next**.  
   
@@ -50,4 +50,4 @@ You can use the following procedure to restore the encryption keys before you ru
   
 7.  On the **Provide a Password** page, type the password that you used to back up the encryption key in the **Password** box. In the **Confirm Password** box, reenter the same password, and then click **Next**.  
   
-8.  After you receive the message, “Secure Storage Key Restore Complete,” click **Finish**.
+8.  After you receive the message, "Secure Storage Key Restore Complete," click **Finish**.

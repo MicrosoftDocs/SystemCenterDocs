@@ -19,10 +19,10 @@ You can automate runbooks using Service Management Automation provided that you 
   
 ```powershell  
 PS C:\> # This command sets a runbook to be invoked when the Create event for a new virtual machine is raised.  
-PS C:\> Set-SCSPFEventRegistration –ResourceName "VMM.VirtualMachine" – ActionName "Create" –RunbookName "Invoke-SampleCmdlet"  
+PS C:\> Set-SCSPFEventRegistration -ResourceName "VMM.VirtualMachine" - ActionName "Create" -RunbookName "Invoke-SampleCmdlet"  
 PS C:\>   
 PS C:\> # This command gets an event with the Action parameter and stores it in the $event_backup variable.  
-PS C:\> $event_backup = Get-SCSPFEventRegistration –Action "Backup"  
+PS C:\> $event_backup = Get-SCSPFEventRegistration -Action "Backup"  
   
 ```  
   

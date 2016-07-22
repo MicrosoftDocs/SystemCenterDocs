@@ -54,7 +54,7 @@ You can use the following procedures in System Center 2012 - Service Manager to 
   
     watermarkbatchid = 0  
   
-    where cubename = ’ComputerCube’  
+    where cubename = 'ComputerCube'  
     ```  
   
 ## See Also  

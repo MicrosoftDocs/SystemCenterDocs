@@ -37,7 +37,7 @@ If System Center 2012 - Service Manager is configured with a Simple Mail Transfe
   
 1.  In the Service Manager console, create a new notification email template. In the **Administration** pane, click **Notifications**, and then click **Templates**. In the **Tasks** pane, select **Create E\-mail Template**, and then complete the Create E\-Mail Notification Template Wizard.  
   
-2.  On the **General** page, specify the **Name** to be **AppLocker Policy Notification Template**, and specify the **Class** as **Automated Activity: Add Computer to AD Group**. Specify **Management pack** to be **Woodgrove Automated Activity – Add Computer To Group**.  
+2.  On the **General** page, specify the **Name** to be **AppLocker Policy Notification Template**, and specify the **Class** as **Automated Activity: Add Computer to AD Group**. Specify **Management pack** to be **Woodgrove Automated Activity - Add Computer To Group**.  
   
 3.  On the **Template Design** page, in the **Subject** box, type **Computer**, and then click **Insert**. In the **Property Picker** dialog box, select **ComputerName**. Add the following text to the **Subject** box: **was added to the AppLocker Policy Group**. Add any text in the **MessageBody** box, and save the template.  
   
@@ -49,7 +49,7 @@ If System Center 2012 - Service Manager is configured with a Simple Mail Transfe
   
 7.  Specify **Notification condition** to be **When an object of the selected type is updated**.  
   
-8.  Specify **Management pack** to be **Woodgrove Automated Activity – Add Computer To Group**.  
+8.  Specify **Management pack** to be **Woodgrove Automated Activity - Add Computer To Group**.  
   
 9. On the **Additional Criteria** page, add criteria in which **Status** equals **Completed**.  
   

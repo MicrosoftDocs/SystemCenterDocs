@@ -17,7 +17,7 @@ You can define a service level objective \(SLO\) to establish the availability a
   
 ### To define a service level objective for an application  
   
-1.  Open the Operations console with an account that is a member of the Operations Manager Administrators user role.  
+1.  Open the Operations console with an account that is a member of the Operations Manager&nbsp;Administrators user role.  
   
 2.  Click **Authoring**.  
   

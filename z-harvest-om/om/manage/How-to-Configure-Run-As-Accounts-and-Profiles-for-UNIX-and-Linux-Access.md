@@ -38,7 +38,7 @@ To run this wizard, you must have the following credentials information:
   
 -   Username and password for privileged access to the UNIX or Linux computer.  If you prefer not to provide credentials for a privileged account, you can use unprivileged credentials and have the credentials on the UNIX or Linux computer elevated.  
   
-    You can choose between su or sudo elevation. If the account is to be elevated using ‘su’, you will need the ‘su’ password.  
+    You can choose between su or sudo elevation. If the account is to be elevated using 'su', you will need the 'su' password.  
   
 #### To create a Run As Account  
   

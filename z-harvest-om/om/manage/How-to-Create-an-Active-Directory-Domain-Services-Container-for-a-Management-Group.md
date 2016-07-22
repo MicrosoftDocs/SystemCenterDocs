@@ -13,7 +13,7 @@ author:mgoedtel
 manager:cfreemanwa
 ---
 # How to Create an Active Directory Domain Services Container for a Management Group
-You can use the following command\-line syntax and procedure to create an Active Directory Domain Service \(AD DS\) container for a [!INCLUDE[om12long](../../om/manage/includes/om12long_md.md)] management group. MOMADAdmin.exe is provided for this purpose and is installed with the Operations Manager management server. MOMADAdmin.exe must be run by an administrator of the specified domain. It can be run on a computer running Microsoft Windows 2000 SP4, Windows XP SP2, and Windows Server 2003 with Microsoft .NET Framework 2.0 installed.  
+You can use the following command\-line syntax and procedure to create an Active Directory Domain Service \(AD DS\) container for a [!INCLUDE[om12long](../../om/manage/includes/om12long_md.md)] management group. MOMADAdmin.exe is provided for this purpose and is installed with the Operations Manager&nbsp;management server. MOMADAdmin.exe must be run by an administrator of the specified domain. It can be run on a computer running Microsoft Windows&nbsp;2000&nbsp;SP4, Windows&nbsp;XP&nbsp;SP2, and Windows Server&nbsp;2003 with Microsoft .NET Framework&nbsp;2.0 installed.  
   
 **Command line syntax:**  
   
@@ -43,7 +43,7 @@ You can use the following command\-line syntax and procedure to create an Active
     6.  Click **OK** to close **User Role Properties**.  
   
     > [!NOTE]  
-    > We recommend one security group, which might contain several groups, be used for the Operations Manager Administrators role. That way, groups and members of groups can be added and removed from groups without a domain administrator needing to perform manual steps to assign them Read and Delete Child permissions to the Management Group container.  
+    > We recommend one security group, which might contain several groups, be used for the Operations Manager&nbsp;Administrators role. That way, groups and members of groups can be added and removed from groups without a domain administrator needing to perform manual steps to assign them Read and Delete Child permissions to the Management Group container.  
   
 **RunAsAccount**: This is the domain account which will be used by the management server to read, write, and delete objects in AD. Use the format domain\\username.  
   

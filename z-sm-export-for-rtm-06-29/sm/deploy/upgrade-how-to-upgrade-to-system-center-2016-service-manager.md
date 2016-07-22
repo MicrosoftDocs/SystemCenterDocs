@@ -51,12 +51,12 @@ You can use the following procedures to upgrade your Service Manager environment
   
 6.  On the **System check results** page, ensure that the prerequisite check passed or at least passed with warnings, and then click **Next**.  
   
-7.  On the **Configure Analysis Service for OLAP cubes** page, in the **Database server** box, type the computer name of the server that will host the SQL Server Analysis Services \(SSAS\) database, and then press the Tab key. When **Default** appears in the **SQL Server instance** box, click **Next**.  
+7.  On the **Configure Analysis Service for OLAP cubes** page, in the **Database server** box, type the computer name of the server that will host the SQL&nbsp;Server Analysis Services \(SSAS\) database, and then press the Tab key. When **Default** appears in the **SQL Server instance** box, click **Next**.  
   
     > [!IMPORTANT]  
-    >  If you are installing SSAS on a computer other than the computer that hosts the data warehouse management server and there is a firewall in your environment, you must make sure that the proper firewall ports are opened. For more information, see “Port Assignments for System Center 2012 \- Service Manager” in the [Planning Guide for System Center 2012 \- Service Manager](http://go.microsoft.com/fwlink/p/?LinkId=209672).  
+    >  If you are installing SSAS on a computer other than the computer that hosts the data warehouse management server and there is a firewall in your environment, you must make sure that the proper firewall ports are opened. For more information, see "Port Assignments for System Center 2012 \- Service Manager" in the [Planning Guide for System Center 2012 \- Service Manager](http://go.microsoft.com/fwlink/p/?LinkId=209672).  
   
-8.  On the **Configure Analysis Services credential** page, specify the user name, password, and domain for the account, and then click **Test Credentials**. After you receive a message saying “The credentials were accepted,” click **Next**.  
+8.  On the **Configure Analysis Services credential** page, specify the user name, password, and domain for the account, and then click **Test Credentials**. After you receive a message saying "The credentials were accepted," click **Next**.  
   
 9. On the **Help improve System Center** page, indicate your preference for participation in the Customer Experience Improvement Program and in Error Reporting. As an option, click **Tell me more about the program**, and then click **Next**.  
   

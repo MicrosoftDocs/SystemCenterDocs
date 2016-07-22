@@ -39,7 +39,7 @@ A **Date Picker** control in the System Center 2016 - Service Manager Authoring 
   
 2.  Drag the **Date Picker** icon from the **Form Customization Toolbox** pane to the form. Click the **Date Picker** control on the form.  
   
-3.  In the **Details** pane, select the **Binding Path** property. Click the ellipsis \(**…**\) icon, and then in the **Binding Path** dialog box, select the class property that you want the **Date Picker** control to bind to.  
+3.  In the **Details** pane, select the **Binding Path** property. Click the ellipsis \(**...**\) icon, and then in the **Binding Path** dialog box, select the class property that you want the **Date Picker** control to bind to.  
   
 4.  Click any property, such as **Date Format**, in the **Details** pane to customize the properties of the **Date Picker** control.  
   

@@ -47,11 +47,11 @@ In System Center 2012 - Service Manager, you can use the following procedures to
   
 6.  In the **Description** box, type a description of the dependent activity. For example, type **Verify that the service pack is deployed, tested, and verified successful**.  
   
-7.  Under **Owner**, click the ellipsis button \(…\).  
+7.  Under **Owner**, click the ellipsis button \(...\).  
   
 8.  In the **Select User** dialog box, select the name of the person who has overall responsibility for the dependent activity, and then click **OK**.  
   
-9. Under **Assigned To**, click the ellipsis button \(…\).  
+9. Under **Assigned To**, click the ellipsis button \(...\).  
   
 10. In the **Select User** dialog box, select the name of the person who will perform the dependent activity, and then click **OK**. For example, select **Aaron Lee**.  
   

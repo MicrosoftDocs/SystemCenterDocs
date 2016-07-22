@@ -35,7 +35,7 @@ System Center 2012 - Service Manager is available as both a retail edition and a
   
  The following table describes the interactions between the various editions of Service Manager.  
   
-|If you started with …|And then rerun Setup to install …|Will the new installation time out?|  
+|If you started with&nbsp;...|And then rerun Setup to install&nbsp;...|Will the new installation time out?|  
 |---------------------------|---------------------------------------|-----------------------------------------|  
 |Evaluation Edition|Retail Edition|Yes|  
 |Evaluation Edition|Select Edition|Yes|  

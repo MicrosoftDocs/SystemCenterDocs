@@ -41,7 +41,7 @@ In System Center 2012 - Service Manager, the help desk analyst  XE "Release Mana
   
 4.  In the **Resolve** dialog box, select a **Resolution Category**, and then in the **Comments** box, type a description of the steps that you have taken to resolve the incident.  
   
-5.  If you want child incidents to resolve automatically and the option is available, ensure that the **Resolve child incidents when resolving this parent incident** option is selected, and then click **OK** to resolve the incident—and child incidents, if selected, and then close the **Resolve** dialog box.  
+5.  If you want child incidents to resolve automatically and the option is available, ensure that the **Resolve child incidents when resolving this parent incident** option is selected, and then click **OK** to resolve the incident-and child incidents, if selected, and then close the **Resolve** dialog box.  
   
 ## See Also  
  [Combining Incidents into Parent\-Child Groups](../../../sm/manage/operate/Combining-Incidents-into-Parent-Child-Groups.md)
