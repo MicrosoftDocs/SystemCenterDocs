@@ -23,7 +23,7 @@ You can use the following steps in System Center 2012 - Service Manager to use t
 
 3.  In the **Administration** pane, expand **Administration**.  
 
-4.  In the **Administration** view, in the **Register with Service Manager’s Data Warehouse** area, click **Register with Service Manager Data Warehouse**.  
+4.  In the **Administration** view, in the **Register with Service Manager's Data Warehouse** area, click **Register with Service Manager Data Warehouse**.  
 
 5.  In the Data Warehouse Registration wizard, on the **Before You Begin** page, click **Next**.  
 
@@ -42,4 +42,4 @@ You can use the following steps in System Center 2012 - Service Manager to use t
 
 11. In a few minutes, after you close the Data Warehouse Registration Wizard, the **Data Warehouse** button will be added to the Service Manager console. In the Service Manager console, click the arrow at the lower right corner of the Service Manager console buttons, and then click **Show More Buttons**.  
 
- ![Windows PowerShell](../media/pssymbol.png) You can use a Windows PowerShell command to complete this task. For information about how to use Windows PowerShell to register Service Manager management groups with the data warehouse, see [Add\-SCDWMgmtGroup](http://go.microsoft.com/fwlink/p/?LinkId=203096).
+ ![Windows PowerShell](../media/pssymbol.png) You can use a Windows&nbsp;PowerShell command to complete this task. For information about how to use Windows&nbsp;PowerShell to register Service Manager management groups with the data warehouse, see [Add\-SCDWMgmtGroup](http://go.microsoft.com/fwlink/p/?LinkId=203096).

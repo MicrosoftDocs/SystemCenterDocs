@@ -41,7 +41,7 @@ Before you run the wizard, gather the following information:
 
     1.  Click **Add** to define a discovery scope. In the **Discovery Criteria** dialog box, do the following:
 
-        1.  For the **Discovery scope**, click the ellipsis button **…** to specify the host name, IP address, or range of IP addresses of the UNIX- or Linux-based computers to be discovered.
+        1.  For the **Discovery scope**, click the ellipsis button **** to specify the host name, IP address, or range of IP addresses of the UNIX- or Linux-based computers to be discovered.
 
         2.  For the **Discovery type** select **Discover all computers** or **Discover only computers with the UNIX/Linux agent installed**.
 

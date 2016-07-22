@@ -15,7 +15,7 @@ manager:cfreemanwa
 # What&#39;s New in System Center 2012 R2 Orchestrator
 The following new features are available in [!INCLUDE[orchblue_1](../../orch/deploy/includes/orchblue_1_md.md)]. To upgrade to [!INCLUDE[orchblue_1](../../orch/deploy/includes/orchblue_1_md.md)], see [Upgrading System Center 2012 SP1 Orchestrator to System Center 2012 R2](../../orch/deploy/Upgrading-System-Center-2012-SP1-Orchestrator-to-System-Center-2012-R2.md).  
   
-## What’s New  
+## What's New  
 The following new features are added in this release:  
   
 -   You can install the [!INCLUDE[sma_2](../../orch/getstarted/includes/sma_2_md.md)] web service and up to three runbook workers from [!INCLUDE[orchblue_1](../../orch/deploy/includes/orchblue_1_md.md)] Setup program. These can be used as part of the [!INCLUDE[katal_1](../../orch/getstarted/includes/katal_1_md.md)] configuration or to enable you to run runbooks and perform other automation tasks using Windows PowerShell cmdlets. For evaluation purposes, you should install a single runbook worker on the same computer as the web service.  

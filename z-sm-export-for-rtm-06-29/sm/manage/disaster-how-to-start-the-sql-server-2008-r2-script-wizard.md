@@ -29,7 +29,7 @@ ms.assetid: 661a47c3-d228-4af0-806d-9f67a5a2f443
 
 ---
 # How to Start the SQL Server 2008 R2 Script Wizard
-You can use the following procedure as part of your disaster recovery preparation steps for System Center 2012 - Service Manager to generate a script to capture SQL Server logon permissions and object\-level permissions. You perform this procedure on the computer that hosts SQL Server Reporting Services \(SSRS\) and on the computers that host the following Service Manager and data warehouse databases:  
+You can use the following procedure as part of your disaster recovery preparation steps for System Center 2012 - Service Manager to generate a script to capture SQL&nbsp;Server logon permissions and object\-level permissions. You perform this procedure on the computer that hosts SQL&nbsp;Server Reporting Services \(SSRS\) and on the computers that host the following Service Manager and data warehouse databases:  
   
 -   DWDataMart  
   
@@ -41,11 +41,11 @@ You can use the following procedure as part of your disaster recovery preparatio
   
 -   ReportServer  
   
-### To start the SQL Server Script Wizard  
+### To start the SQL&nbsp;Server Script Wizard  
   
 1.  Using an account with Administrator privileges, log on to the computer that hosts the Service Manager or data warehouse database.  
   
-2.  On the Windows desktop, click **Start**, point to **Programs**, point to **Microsoft SQL Server 2008 R2**, and then click **SQL Server Management Studio**.  
+2.  On the Windows desktop, click **Start**, point to **Programs**, point to **Microsoft&nbsp;SQL&nbsp;Server&nbsp;2008&nbsp;R2**, and then click **SQL&nbsp;Server Management Studio**.  
   
 3.  In the **Connect to Server** dialog box, do the following:  
   

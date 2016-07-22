@@ -13,11 +13,11 @@ author:mgoedtel
 manager:cfreemanwa
 ---
 # How to Troubleshoot Reports that Return No Data
-When running a Performance Report or Configuration Data Report, data might not be displayed. Use the following procedures to evaluate if any data has been collected for the report and how to find the proper parameters to use for the report. For this example, it is assumed that the Windows Server 2003 Operating System Management Pack has been imported.  
+When running a Performance Report or Configuration Data Report, data might not be displayed. Use the following procedures to evaluate if any data has been collected for the report and how to find the proper parameters to use for the report. For this example, it is assumed that the Windows Server&nbsp;2003 Operating System Management Pack has been imported.  
   
 Ensure that all appropriate overrides in a particular management pack have been enabled. For example, the Windows Server Operating System Management Pack does not discover physical disk partitions, only logical disk partitions.  
   
-If you want to monitor physical disk drives, you can do so by enabling the Object Discovery feature for the Windows Server 2003 physical disk or Windows 2000 Server physical disk objects. Additionally, the Microsoft Windows Server 2003 Operating System Management Pack can monitor individual instances of processors or all instances of processors together. By default, the health of the processors will be monitored as a total of all instances. If you want to monitor individual processor instances, you can do so by enabling the Object Discoveries for Windows Server 2003 Processor objects. See the appropriate management pack guide for more information about any override that you might need to enable. The two examples listed are from the Windows Server Operating System Management Pack.  
+If you want to monitor physical disk drives, you can do so by enabling the Object Discovery feature for the Windows Server&nbsp;2003 physical disk or Windows&nbsp;2000 Server physical disk objects. Additionally, the Microsoft Windows Server&nbsp;2003 Operating System Management Pack can monitor individual instances of processors or all instances of processors together. By default, the health of the processors will be monitored as a total of all instances. If you want to monitor individual processor instances, you can do so by enabling the Object Discoveries for Windows Server&nbsp;2003 Processor objects. See the appropriate management pack guide for more information about any override that you might need to enable. The two examples listed are from the Windows Server Operating System Management Pack.  
   
 After any applicable overrides have been enabled, you would use the following two procedures. In the first procedure, you will troubleshoot an instance when no data is displayed in a performance data report by using My Workspace to see if the required data has been collected in the Operations Manager database.  
   
@@ -25,13 +25,13 @@ In the second procedure, you will troubleshoot an instance when no data is displ
   
 ### To troubleshoot no data in a performance report  
   
-1.  Log on to the computer with an account that is a member of the Operations Manager Administrators role for the Operations Manager management group.  
+1.  Log on to the computer with an account that is a member of the Operations Manager Administrators role for the Operations Manager&nbsp;management group.  
   
 2.  In the Operations console, click **Reporting**.  
   
 3.  In the Reporting workspace, expand **Reporting**, and then click **Windows Server 2003 Operating System**.  
   
-4.  In the Windows Server 2003 Operating System Reports pane, click **Disk Performance Analysis**.  
+4.  In the Windows Server&nbsp;2003 Operating System Reports pane, click **Disk Performance Analysis**.  
   
 5.  In the Report Details pane, a list of the performance counters available in this report is displayed. Keep in mind one of the counters, for example, **LogicalDisk\\Disk Bytes\/sec\\\_Total**.  
   
@@ -65,7 +65,7 @@ In the second procedure, you will troubleshoot an instance when no data is displ
   
 ### To troubleshoot no data in a configuration data report  
   
-1.  Log on to the computer with an account that is a member of the Operations Manager Administrators role for the Operations Manager management group.  
+1.  Log on to the computer with an account that is a member of the Operations Manager Administrators role for the Operations Manager&nbsp;management group.  
   
 2.  In the Operations console, click **My Workspace**.  
   
@@ -73,7 +73,7 @@ In the second procedure, you will troubleshoot an instance when no data is displ
   
 4.  In the **Properties** dialog box, in the **Name** field, type a name for this view \(for this example use **Test1**\).  
   
-5.  On the **Criteria** tab, click the ellipses \(**…**\) next to the **Show data related to** box.  
+5.  On the **Criteria** tab, click the ellipses \(**...**\) next to the **Show data related to** box.  
   
 6.  In the **Select a Target Type** dialog box, click **View all Targets**.  
   

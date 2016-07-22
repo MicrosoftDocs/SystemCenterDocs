@@ -29,13 +29,13 @@ ms.assetid: 8d0f6ff4-b4b6-4edb-af2a-8d9a2fa19563
 
 ---
 # How to Configure Sample Chargeback Reports
-You can use the following procedure to configure the sample Microsoft Excel chargeback report \(ChargebackReport.xlsx\) that is included with System Center 2012 - Service Manager Service Pack 1. This sample report is designed for you to modify for use in your organization. You can update the report any way you like. The sample report contains the following tabs:  
+You can use the following procedure to configure the sample Microsoft Excel chargeback report \(ChargebackReport.xlsx\) that is included with System Center 2012 - Service Manager Service Pack&nbsp;1. This sample report is designed for you to modify for use in your organization. You can update the report any way you like. The sample report contains the following tabs:  
   
--   Dashboard – This tab shows a chart of the top 3 cost centers, clouds, VMM user roles, price sheets, spending trend, and overall spending for the period that you select.  
+-   Dashboard - This tab shows a chart of the top 3 cost centers, clouds, VMM user roles, price sheets, spending trend, and overall spending for the period that you select.  
   
--   Chargeback Daily Details – This tab shows a comprehensive list of daily costs detailing virtual machine cloud level and other costs assigned to price sheets for the year and month you select. It also includes a graph showing the top 3 clouds within cost centers.  
+-   Chargeback Daily Details - This tab shows a comprehensive list of daily costs detailing virtual machine cloud level and other costs assigned to price sheets for the year and month you select. It also includes a graph showing the top 3 clouds within cost centers.  
   
--   Chargeback Monthly Details – This tab shows a comprehensive list of costs assigned to price sheets for the year and month you select.  
+-   Chargeback Monthly Details - This tab shows a comprehensive list of costs assigned to price sheets for the year and month you select.  
   
 > [!NOTE]  
 >  The first time you open the file in with Excel, you must configure the workbook data connection so that it can retrieve information from OLAP data cubes in the Service Manager data warehouse management server.  

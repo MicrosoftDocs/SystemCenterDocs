@@ -39,7 +39,7 @@ To use a workflow to automate a process in the System Center 2016 - Service Mana
   
 -   [Adding or Removing Workflow Activities](../../../sm/manage/author/Adding-or-Removing-Workflow-Activities.md)  
   
-     Describes how to add activities; remove, copy, and paste activities; and configure specialized activities to import Windows PowerShell scripts into a workflow.  
+     Describes how to add activities; remove, copy, and paste activities; and configure specialized activities to import Windows&nbsp;PowerShell scripts into a workflow.  
   
 -   [Configuring the Way Activities Manage and Pass Information](../../../sm/manage/author/Configuring-the-Way-Activities-Manage-and-Pass-Information.md)  
   

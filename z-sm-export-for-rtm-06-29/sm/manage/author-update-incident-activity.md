@@ -42,17 +42,17 @@ This activity in System Center 2012 - Service Manager saves property changes to 
   
 |Display name|Internal name|Type|Required|Description|  
 |------------------|-------------------|----------|--------------|-----------------|  
-|Action Log Comment|ActionLogComment|String|No|Specifies a comment to include in the Incident object’s action log.|  
+|Action Log Comment|ActionLogComment|String|No|Specifies a comment to include in the Incident object's action log.|  
 |Affected User Domain|AffectedUserDomain|String|No|Specifies the name of the Domain Name System \(DNS\) domain of the primary user who is affected by the incident.|  
 |Affected User Name|AffectedUserName|String|No|Specifies the user name of the primary user who is affected by the incident.|  
-|Category|Category|Integer|No|Specifies the type of incident, such as "Networking" or "Printing." The value is the ID of **enum**. \(Category –**enum** data type\)|  
+|Category|Category|Integer|No|Specifies the type of incident, such as "Networking" or "Printing." The value is the ID of **enum**. \(Category -**enum** data type\)|  
 |Continue On Error|ContinueOnError|Boolean|No. \(The default setting is true.\)|Determines whether the workflow should continue running if the activity fails.|  
 |Impact|Impact|Integer|No|Specifies the impact of the incident on the affected user or users. The value is the ID of **enum**. \(Impact \-**enum** data type\)|  
-|Source|Source|Integer|No|Specifies the source of information about the incident, such as "Phone" or "E\-mail." The value is the ID of **enum**. \(Source –**enum** data type\)|  
+|Source|Source|Integer|No|Specifies the source of information about the incident, such as "Phone" or "E\-mail." The value is the ID of **enum**. \(Source -**enum** data type\)|  
 |Service Manager Incident|SMIncident|System.Workitem.Incident|No|The constructed incident class instance to be updated.|  
-|Status|Status|Integer|No|Specifies the status of the incident that generated the activity. The value is the ID of **enum**. \(Status –**enum** data type\)|  
+|Status|Status|Integer|No|Specifies the status of the incident that generated the activity. The value is the ID of **enum**. \(Status -**enum** data type\)|  
 |Summary|Summary|String|No|Specifies the summary text that describes the incident.|  
-|Urgency|Urgency|Integer|No|Specifies the urgency of resolving the incident. The value is the ID of **enum**. \(Urgency –**enum** data type field\)|  
+|Urgency|Urgency|Integer|No|Specifies the urgency of resolving the incident. The value is the ID of **enum**. \(Urgency -**enum** data type field\)|  
   
  The **Update Incident** activity generates the output that is described in the following table.  
   

@@ -65,11 +65,11 @@ In System Center 2012 - Service Manager, the change manager reviews the status a
   
             -   Change request ID  
   
-            -   Keywords from the linked change request’s title  
+            -   Keywords from the linked change request's title  
   
-            -   Change activity’s ID  
+            -   Change activity's ID  
   
-            -   Keywords from the dependent activity’s title  
+            -   Keywords from the dependent activity's title  
   
         -   Filtering:  
   

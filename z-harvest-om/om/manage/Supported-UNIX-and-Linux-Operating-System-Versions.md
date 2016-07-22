@@ -15,7 +15,7 @@ manager:cfreemanwa
 # Supported UNIX and Linux Operating System Versions
 The following tables describe the required UNIX and Linux operating systems and package dependencies.  
   
-## IBM AIX 5L 5.3  
+## IBM AIX&nbsp;5L&nbsp;5.3  
   
 |Required Package|Description|Minimum Version|  
 |--------------------|---------------|-------------------|  
@@ -58,7 +58,7 @@ The following tables describe the required UNIX and Linux operating systems and 
 |HPUXBaseAux.openssl|OpenSSL Libraries; Secure Network Communications Protocol|A.00.09.071.003|  
 |PAM|Pluggable Authentication Modules|On HP\-UX, PAM is part of the core operating system components. There are no other dependencies.|  
   
-## HP\-UX 11i v3 PA\-RISC  
+## HP\-UX&nbsp;11i&nbsp;v3 PA\-RISC  
   
 |Required Package|Description|Minimum Version|  
 |--------------------|---------------|-------------------|  
@@ -67,7 +67,7 @@ The following tables describe the required UNIX and Linux operating systems and 
 |openssl\/Openssl.openssl|OpenSSL Libraries; Secure Network Communications Protocol|A.00.09.08d.002|  
 |PAM|Pluggable Authentication Modules|On HP\-UX, PAM is part of the core operating system components. There are no other dependencies.|  
   
-## HP\-UX 11i v3 IA64  
+## HP\-UX&nbsp;11i&nbsp;v3&nbsp;IA64  
   
 |Required Package|Description|Minimum Version|  
 |--------------------|---------------|-------------------|  
@@ -77,7 +77,7 @@ The following tables describe the required UNIX and Linux operating systems and 
 |SysMgmtMin.openssl|OpenSSL Libraries; Secure Network Communications Protocol|A.00.09.08d.002|  
 |PAM|Pluggable Authentication Modules|On HP\-UX, PAM is part of the core operating system components. There are no other dependencies.|  
   
-## Red Hat Enterprise Linux ES Release 4  
+## Red Hat Enterprise Linux&nbsp;ES Release 4  
   
 |Required Package|Description|Minimum Version|  
 |--------------------|---------------|-------------------|  
@@ -169,7 +169,7 @@ The following tables describe the required UNIX and Linux operating systems and 
 ## Solaris UTF\-8 Support  
 The Operations Manager agent requires Solaris UTF\-8 code set conversion support under some circumstances. Consult the Solaris documentation for details on installing UTF\-8 code set conversion support. The Operations Manager agent functions without UTF\-8 support on Solaris, but unrecognized characters are translated to question mark \(?\) characters.  
   
-## SUSE Linux Enterprise Server 9 \(i586\)  
+## SUSE Linux Enterprise Server&nbsp;9&nbsp;\(i586\)  
   
 |Required Package|Description|Minimum Version|  
 |--------------------|---------------|-------------------|  
@@ -179,7 +179,7 @@ The Operations Manager agent requires Solaris UTF\-8 code set conversion support
 |Openssl|OpenSSL Libraries; Secure Network Communications Protocol|0.9.7d\-15.35|  
 |PAM|Pluggable Authentication Modules|0.77\-221\-11|  
   
-## SUSE Linux Enterprise Server 10 SP1 \(i586\)  
+## SUSE Linux Enterprise Server&nbsp;10&nbsp;SP1 \(i586\)  
   
 |Required Package|Description|Minimum Version|  
 |--------------------|---------------|-------------------|  
@@ -187,7 +187,7 @@ The Operations Manager agent requires Solaris UTF\-8 code set conversion support
 |OpenSSL|OpenSSL Libraries; Secure Network Communications Protocol|0.9.8a\-18.15|  
 |PAM|Pluggable Authentication Modules|0.99.6.3\-28.8|  
   
-## SUSE Linux Enterprise Server 11 \(i586\)  
+## SUSE Linux Enterprise Server&nbsp;11 \(i586\)  
   
 |Required Package|Description|Minimum Version|  
 |--------------------|---------------|-------------------|  

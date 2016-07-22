@@ -16,7 +16,7 @@ manager:cfreemanwa
 An alerts report summarizes alerts that have occurred on a managed entity. The following procedure is an example of how you create an alerts report for a managed computer. The procedure presented here is applicable to creating other types of alerts reports. In this example procedure, you generate a report for the previous 24\-hour period.  
   
 > [!NOTE]  
-> Operations Manager Reporting must be installed before you can run an alerts report.  
+> Operations Manager&nbsp;Reporting must be installed before you can run an alerts report.  
   
 ### To create an alerts report  
   

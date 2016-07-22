@@ -31,7 +31,7 @@ Agentless\-managed computers are managed as if there is an agent installed on th
   
 5.  On the **Auto or Advanced?** page, do the following:  
   
-    1.  Select either **Automatic computer discovery** or **Advanced discovery**. Automatic computer discovery scans for Windows\-based computers in the domain. Advanced discovery allows you to specify criteria for the computers that the wizard will return, such as computer names starting with NY. If you select **Automatic computer discovery**, click **Next**, and then go to step 7. If you select **Advanced discovery**, continue with the following steps.  
+    1.  Select either **Automatic computer discovery** or **Advanced discovery**. Automatic computer discovery scans for Windows\-based computers in the domain. Advanced discovery allows you to specify criteria for the computers that the wizard will return, such as computer names starting with NY. If you select **Automatic computer discovery**, click **Next**, and then go to step&nbsp;7. If you select **Advanced discovery**, continue with the following steps.  
   
     2.  In the **Computer and Device Classes** list, select **Servers and Clients**, **Servers Only**, or **Clients Only**.  
   

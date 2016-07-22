@@ -31,7 +31,7 @@ ms.assetid: 85107d34-7b5f-4775-9730-b947cd2438f8
 # Forms: General Guidelines and Best Practices
 You can extend features of System Center 2012 - Service Manager by adding or modifying forms. This topic describes some best practice recommendations for creating and using Service Manager forms, using various tools and scripting form definitions directly.  
   
- This topic is primarily targeted at partners and customers who are experienced in building their own custom forms by using Windows Presentation Foundation \(WPF\) and Microsoft Visual Studio Team System or Microsoft Expression Blend.  
+ This topic is primarily targeted at partners and customers who are experienced in building their own custom forms by using Windows Presentation Foundation \(WPF\) and Microsoft Visual&nbsp;Studio Team System or Microsoft Expression Blend.  
   
  The general guidelines for authoring a new form are as follows.  
   
@@ -110,7 +110,7 @@ You can extend features of System Center 2012 - Service Manager by adding or mod
  The main purpose of a form is to visualize a single object from the Service Manager database. This object is called a **target instance**, which is always specified by the **DataContext** property of a form \(which is inherited from the **FrameworkElement** class\).  
   
 > [!IMPORTANT]  
->  Do not modify the form’s **DataContext** property. The forms hosting environment uses this property to identify the form target instance.  
+>  Do not modify the form's **DataContext** property. The forms hosting environment uses this property to identify the form target instance.  
   
  In the Service Manager data model, a target instance is represented as a **BindableDataItem** object. This class aggregates the underlying software development kit \(SDK\) object, and it exposes its properties through an indexer, which takes a property name as a parameter.  
   
@@ -131,7 +131,7 @@ You can extend features of System Center 2012 - Service Manager by adding or mod
 ### Use Service Manager Forms Infrastructure Validation Rules, Value Convertors, and Error Templates  
  We recommend that you use forms infrastructure validation rules in forms to designate data input that is not valid. The WPF binding infrastructure supports validation for control properties that are bound to a data source with either one\-way or two\-way bindings. The binding object has a **ValidationRules** collection that can contain any number of **ValidationRule** objects. Whenever data is pushed from the control to the data source, the **ValidationRule** objects are called to validate the value.  
   
- The forms infrastructure library contains a number of validation rules that handle the most common cases. The forms infrastructure takes advantage of the validation rules to determine whether the form contents can be submitted for storing. For example, a form’s **Submit** button can be disabled if there is a control that has a validation error on the form.  
+ The forms infrastructure library contains a number of validation rules that handle the most common cases. The forms infrastructure takes advantage of the validation rules to determine whether the form contents can be submitted for storing. For example, a form's **Submit** button can be disabled if there is a control that has a validation error on the form.  
   
  We recommend that you use the custom error template that is provided with the forms infrastructure library. If a control has a validation error, it appears by default with a red border around it. The WPF makes it possible to define a custom error indicator through the **Validation.ErrorTemplate** property, which can be set on any control. The Service Manager forms infrastructure library contains a custom error template, which displays an error icon instead of the WPF red border. In addition, when a mouse points to the error icon, a tooltip pops up with an error message. The error message should indicate the reason why the data in the control failed validation.  
   

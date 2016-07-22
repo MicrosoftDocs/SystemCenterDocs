@@ -21,7 +21,7 @@ Businesses using [!INCLUDE[om12long](../../om/manage/includes/om12long_md.md)] i
   
 -   To upgrade the management server in management group A, you must remove the management group B agent first.  
   
--   After the agent is installed, ensure that you do not configure the agent to also report to management group A \(“multihome” the agent\).  
+-   After the agent is installed, ensure that you do not configure the agent to also report to management group A \("multihome" the agent\).  
   
 -   Ensure that the Run As accounts for the Default Action Account and Privileged Monitoring Account profiles for the management server in management group B are using credentials that can remotely authenticate and that have sufficient permissions on the management servers in management group A.  
   

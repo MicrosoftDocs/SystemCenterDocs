@@ -19,9 +19,9 @@ The activity properties provide ways to transfer data. For the Woodgrove Bank cu
 
  You can use the following steps to configure properties to pass the values:  
 
--   [How to Set an Activity Property to a Constant Value](../../../sm/manage/author/How-to-Set-an-Activity-Property-to-a-Constant-Value.md)—Sets the **Active Directory Server** property of the **Add AD DS Computer To Group** activity to a constant value.  
+-   [How to Set an Activity Property to a Constant Value](../../../sm/manage/author/How-to-Set-an-Activity-Property-to-a-Constant-Value.md)-Sets the **Active Directory Server** property of the **Add AD DS Computer To Group** activity to a constant value.  
 
--   [How to Set an Activity Property to Use a Value from the Trigger Class](../../../sm/manage/author/How-to-Set-an-Activity-Property-to-Use-a-Value-from-the-Trigger-Class.md)—Associates the **ComputerName** and **GroupName** properties defined previously with the **Computer name** and **Group name** properties of the **Add AD DS Computer To Group** activity.  
+-   [How to Set an Activity Property to Use a Value from the Trigger Class](../../../sm/manage/author/How-to-Set-an-Activity-Property-to-Use-a-Value-from-the-Trigger-Class.md)-Associates the **ComputerName** and **GroupName** properties defined previously with the **Computer name** and **Group name** properties of the **Add AD DS Computer To Group** activity.  
 
  For larger, more complex workflows, you have an additional option. To pass values from one activity to another, complete the steps in [How to Set an Activity Property to Use a Value from Another Activity](../../../sm/manage/author/How-to-Set-an-Activity-Property-to-Use-a-Value-from-Another-Activity.md).  
 

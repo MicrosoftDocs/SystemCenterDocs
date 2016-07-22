@@ -33,7 +33,7 @@ You can use the following procedures to validate the two\-computer installation 
   
 ### To validate the Service Manager management server installation  
   
--   On the first computer, verify that the Program Files\\Microsoft System Center\\Service Manager 2012 folder exists.  
+-   On the first computer, verify that the Program Files\\Microsoft System Center\\Service Manager&nbsp;2012 folder exists.  
   
 -   Run **services.msc**, and then verify that the following services are installed, that they have a status of **Started**, and that the startup type is **Automatic**:  
   
@@ -59,7 +59,7 @@ You can use the following procedures to validate the two\-computer installation 
   
 ### To validate the Service Manager database  
   
-1.  On the first computer, click **Start**, click **All Programs**, click **Microsoft SQL Server 2008**, and then click **SQL Server Management Studio**.  
+1.  On the first computer, click **Start**, click **All Programs**, click **Microsoft SQL&nbsp;Server&nbsp;2008**, and then click **SQL Server Management Studio**.  
   
 2.  In the **Connect to Server** dialog box, complete these steps:  
   
@@ -75,7 +75,7 @@ You can use the following procedures to validate the two\-computer installation 
   
 ### To validate the data warehouse installation  
   
-1.  On the second computer, click **Start**, click **All Programs**, click **Microsoft SQL Server 2008**, and then click **SQL Server Management Studio**.  
+1.  On the second computer, click **Start**, click **All Programs**, click **Microsoft SQL&nbsp;Server&nbsp;2008**, and then click **SQL&nbsp;Server Management Studio**.  
   
 2.  In the **Connect to Server** dialog box, complete these steps:  
   

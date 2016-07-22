@@ -37,10 +37,10 @@ In this of the Woodgrove Bank customization scenario, Ken needs to bundle the ma
   
 2.  Copy the folder that contains the files to the Service Manager management server.  
   
-3.  Bundle the files using the Windows PowerShell cmdlet [New\-SCSMManagementPackBundle](http://go.microsoft.com/fwlink/p/?LinkID=225397). For example:  
+3.  Bundle the files using the Windows&nbsp;PowerShell cmdlet [New\-SCSMManagementPackBundle](http://go.microsoft.com/fwlink/p/?LinkID=225397). For example:  
   
     ```  
-    New-SCSMManagementPackBundle –Name AddComputerToGroup.mpb -ManagementPack Woodgrove.AutomatedActivity.AddComputerToGroupMP.xml   
+    New-SCSMManagementPackBundle -Name AddComputerToGroup.mpb -ManagementPack Woodgrove.AutomatedActivity.AddComputerToGroupMP.xml   
     ```  
   
 ### To import the management pack into Service Manager  

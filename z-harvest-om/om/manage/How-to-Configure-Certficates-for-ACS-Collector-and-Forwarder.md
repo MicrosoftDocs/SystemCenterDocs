@@ -34,7 +34,7 @@ Before you configure certificates, ensure that the following actions have been c
 The following is a high\-level overview of the steps that need to be performed to use certificates with ACS.  
   
 > [!IMPORTANT]  
-> Certificates used on various components in Operations Manager \(for example, ACS Collector, ACS Forwarder, agent, gateway server, or management server\) must be issued by the same CA.  
+> Certificates used on various components in Operations Manager&nbsp;\(for example, ACS Collector, ACS Forwarder, agent, gateway server, or management server\) must be issued by the same CA.  
   
 On the computer hosting the ACS Collector:  
   
@@ -94,7 +94,7 @@ On the computer hosting the ACS Forwarder:
   
 11. In the **Security Identity Mapping** dialog box, click **OK**.  
   
-12. Repeat steps 4–11 for each computer you have added.  
+12. Repeat steps 4-11 for each computer you have added.  
   
 After you complete these procedures, you need to enable the ACS Forwarders. For more information, see [How to Enable Audit Collection Services &#40;ACS&#41; Forwarders](../../om/manage/How-to-Enable-Audit-Collection-Services--ACS--Forwarders.md).  
   

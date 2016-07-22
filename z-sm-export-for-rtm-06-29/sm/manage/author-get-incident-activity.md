@@ -44,11 +44,11 @@ This activity retrieves one or more  incidents in System Center 2012 - Service M
 |------------------|-------------------|----------|--------------|--------------|  
 |Affected User Domain|AffectedUserDomain|String|No|Specifies the name of the Domain Name System \(DNS\) domain of the primary user who is affected by the incident.|  
 |Affected User Name|AffectedUserName|String|No|Specifies the user name of the primary user who is affected by the incident.|  
-|Category|Category|Integer|No|Specifies the type of incident, such as "Networking" or "Printing." The value is the ID of **enum**. \(Category –**enum** data field\)|  
+|Category|Category|Integer|No|Specifies the type of incident, such as "Networking" or "Printing." The value is the ID of **enum**. \(Category -**enum** data field\)|  
 |Continue On Error|ContinueOnError|Boolean|No. \(The default is true.\)|Determines whether the workflow should continue running if the activity fails.|  
 |Incident ID|IncidentID|String|No|Specifies the unique identifier that is generated for the incident object.|  
 |Search Type|SearchType|Integer?|No|Specifies the title of the search type that is used with the activity.|  
-|Status|Status|Integer|No|Specifies the status of incident. The value is the ID of **enum**. \(Status –**enum** data field\)|  
+|Status|Status|Integer|No|Specifies the status of incident. The value is the ID of **enum**. \(Status -**enum** data field\)|  
 |Summary Text|SummaryText|String|No|Specifies the summary text that describes the incident.|  
   
  The **Get Incident** activity generates the output that is described in the following table.  

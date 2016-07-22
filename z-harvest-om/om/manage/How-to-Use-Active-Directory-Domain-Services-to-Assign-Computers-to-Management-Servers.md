@@ -13,16 +13,16 @@ author:mgoedtel
 manager:cfreemanwa
 ---
 # How to Use Active Directory Domain Services to Assign Computers to Management Servers
-The Operations Manager Agent Assignment and Failover Wizard creates an agent assignment rule that uses Active Directory Domain Services \(AD DS\) to assign computers to a management group and assign the computers' primary management server and secondary management servers. Use the following procedures to start and use the wizard.  
+The Operations Manager&nbsp;Agent Assignment and Failover Wizard creates an agent assignment rule that uses Active Directory Domain Services \(AD DS\) to assign computers to a management group and assign the computers' primary management server and secondary management servers. Use the following procedures to start and use the wizard.  
   
 > [!IMPORTANT]  
 > The Active Directory Domain Services container for the management group must be created prior to running the Agent Assignment and Failover Wizard.  
   
 The Agent Assignment and Failover Wizard does not deploy the agent. You must deploy the agent to the computers using MOMAgent.msi.  
   
-Changing the agent assignment rule can result in computers no longer being assigned to, and therefore monitored by, the management group. The state of these computers will change to critical, because the computers no longer send heartbeats to the management group. These computers can be deleted from the management group and, if the computer is not assigned to other management groups, the Operations Manager agent can be uninstalled.  
+Changing the agent assignment rule can result in computers no longer being assigned to, and therefore monitored by, the management group. The state of these computers will change to critical, because the computers no longer send heartbeats to the management group. These computers can be deleted from the management group and, if the computer is not assigned to other management groups, the Operations Manager&nbsp;agent can be uninstalled.  
   
-### To start the Operations Manager Agent Assignment and Failover Wizard  
+### To start the Operations Manager&nbsp;Agent Assignment and Failover Wizard  
   
 1.  Log on to the computer with an account that is a member of the Operations Manager Administrators role.  
   
@@ -37,7 +37,7 @@ Changing the agent assignment rule can result in computers no longer being assig
   
 5.  In the **Management Server Properties** dialog box, click the **Auto Agent Assignment** tab, and then click **Add** to start the Agent Assignment and Failover Wizard.  
   
-### To use the Operations Manager Agent Assignment and Failover Wizard to assign computers to a management group  
+### To use the Operations Manager&nbsp;Agent Assignment and Failover Wizard to assign computers to a management group  
   
 1.  In the **Agent Assignment and Failover Wizard**, on the **Introduction** page, click **Next**.  
   
@@ -54,7 +54,7 @@ Changing the agent assignment rule can result in computers no longer being assig
         > [!IMPORTANT]  
         > The management server and the computers that you want to manage must be in two\-way trusted domains.  
   
-    -   Set **Select Run As Profile** to the Run As profile associated with the Run As account provided when MOMADAdmin.exe was run for the domain. The default account used to perform agent assignment is the default action account specified during Setup, also referred to as the **Active Directory Based Agent Assignment Account**. This account represents credentials used when connecting to the specified domain’s Active Directory and modifying Active Directory objects, and should match the account specified when running MOMAdmin.exe. If this was not the account used to run MOMADAdmin.exe, select **Use a different account to perform agent assignment in the specified domain,** and then select or create the account from the **Select Run As Profile** drop\-down list. The **Active Directory Based Agent Assignment Account** profile must be configured to use an Operations Manager administrator account which is distributed to all servers in the AD Agent Assignment resource pool.  
+    -   Set **Select Run As Profile** to the Run As profile associated with the Run As account provided when MOMADAdmin.exe was run for the domain. The default account used to perform agent assignment is the default action account specified during Setup, also referred to as the **Active Directory Based Agent Assignment Account**. This account represents credentials used when connecting to the specified domain's Active Directory and modifying Active Directory objects, and should match the account specified when running MOMAdmin.exe. If this was not the account used to run MOMADAdmin.exe, select **Use a different account to perform agent assignment in the specified domain,** and then select or create the account from the **Select Run As Profile** drop\-down list. The **Active Directory Based Agent Assignment Account** profile must be configured to use an Operations Manager administrator account which is distributed to all servers in the AD Agent Assignment resource pool.  
   
         > [!NOTE]  
         > For more information about Run As profiles and Run As accounts, see [Managing Run As Accounts and Profiles](../../om/manage/Managing-Run-As-Accounts-and-Profiles.md).  

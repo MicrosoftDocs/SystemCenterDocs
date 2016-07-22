@@ -249,7 +249,7 @@ ms.assetid: 1c0ac60c-1a0c-4601-9e74-4c6de496ce36
       </step>
       <step>
         <content>
-          <para>On the <ui>Completing the Wizard</ui> page, type <userInput>List of Projectors</userInput> in the <ui>Report name</ui> box, and then <?Comment ak: You can add other elements to the report in the “Design” view. Extra credit for: Adding parameters to the report by right-clicking on the “Parameters” folder in the “Report Data” pane to the left of the report. Adding charts to the report. This can be done by moving the report fields and title box down in the report field, right clicking on the report field and choosing &gt; Insert &gt; Chart. 2009-12-28T13:17:00Z  Id='8?>click<?CommentEnd Id='8'
+          <para>On the <ui>Completing the Wizard</ui> page, type <userInput>List of Projectors</userInput> in the <ui>Report name</ui> box, and then <?Comment ak: You can add other elements to the report in the "Design" view. Extra credit for: Adding parameters to the report by right-clicking on the "Parameters" folder in the "Report Data" pane to the left of the report. Adding charts to the report. This can be done by moving the report fields and title box down in the report field, right clicking on the report field and choosing &gt; Insert &gt; Chart. 2009-12-28T13:17:00Z  Id='8?>click<?CommentEnd Id='8'
     ?> <ui>Finish</ui>.</para>
         </content>
       </step>

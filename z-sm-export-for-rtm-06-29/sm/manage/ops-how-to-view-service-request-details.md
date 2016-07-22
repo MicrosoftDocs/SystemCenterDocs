@@ -35,7 +35,7 @@ You can use the following procedure to view the details of a service request in 
   
 1.  In the Service Manager console, expand **Work Items**, expand **Service Request Fulfillment**, and then select a subnode, such as **Assigned To Me**.  
   
-2.  In the list, select a service request to view, and then in the **Tasks** pane under **\<Service Request ID – Service Request Name\>**, click **Edit**. For example, select **Request Membership to Active Directory Group**.  
+2.  In the list, select a service request to view, and then in the **Tasks** pane under **\<Service Request ID - Service Request Name\>**, click **Edit**. For example, select **Request Membership to Active Directory Group**.  
   
 3.  Review information in service request form, and then click **OK** to close the form.  
   

@@ -33,9 +33,9 @@ If you defined a new custom class to extend System Center 2012 - Service Manager
   
 -   Start from a base class.  
   
--   Load a custom Windows Presentation Foundation \(WPF\) form that was initially developed by the Microsoft Visual Studio development system, and continue to customize that form in the Authoring Tool.  
+-   Load a custom Windows Presentation Foundation \(WPF\) form that was initially developed by the Microsoft Visual&nbsp;Studio development system, and continue to customize that form in the Authoring Tool.  
   
- The Authoring Tool includes form controls, such as the **Check Box**, **Date Picker**, **Tab Control**, and **Tab Item**, that you can add to the form. You can access these controls from the **Form Customizations Toolbox**. Typically, you bind the form controls to specific properties of the form’s base class. Therefore, using either method you must first select a base class for the form to be associated with. For more information about the controls that you can add to a form, see previous topics in this section, such as [How to Add a Check Box Control to a Form in the Authoring Tool](../../../sm/manage/author/How-to-Add-a-Check-Box-Control-to-a-Form-in-the-Authoring-Tool.md), and [How to Add a Tab Control and Tab Item Controls to a Form in the Authoring Tool](../../../sm/manage/author/How-to-Add-a-Tab-Control-and-Tab-Item-Controls-to-a-Form-in-the-Authoring-Tool.md).  
+ The Authoring Tool includes form controls, such as the **Check Box**, **Date Picker**, **Tab Control**, and **Tab Item**, that you can add to the form. You can access these controls from the **Form Customizations Toolbox**. Typically, you bind the form controls to specific properties of the form's base class. Therefore, using either method you must first select a base class for the form to be associated with. For more information about the controls that you can add to a form, see previous topics in this section, such as [How to Add a Check Box Control to a Form in the Authoring Tool](../../../sm/manage/author/How-to-Add-a-Check-Box-Control-to-a-Form-in-the-Authoring-Tool.md), and [How to Add a Tab Control and Tab Item Controls to a Form in the Authoring Tool](../../../sm/manage/author/How-to-Add-a-Tab-Control-and-Tab-Item-Controls-to-a-Form-in-the-Authoring-Tool.md).  
   
  The following sections describe how to create a new form in the Authoring Tool.  
   
@@ -62,7 +62,7 @@ If you defined a new custom class to extend System Center 2012 - Service Manager
 6.  Save the management pack that contains the form that you created.  
   
 ## Creating a New Form That Is Based on a Custom WPF Form  
- Sometimes a simple form is not sufficient, and you must use advanced features, such as custom logic, in the form. In this case, you can develop a custom WPF form by using a tool other than the Authoring Tool, using instead Visual Studio. Then, instead of authoring a form from base class, you load that WPF form’s assembly file into the Authoring Tool and use that as a starting point for further customizations to the form. The form customizations that you make in the Authoring Tool are stored in a management pack file.  
+ Sometimes a simple form is not sufficient, and you must use advanced features, such as custom logic, in the form. In this case, you can develop a custom WPF form by using a tool other than the Authoring Tool, using instead Visual Studio. Then, instead of authoring a form from base class, you load that WPF form's assembly file into the Authoring Tool and use that as a starting point for further customizations to the form. The form customizations that you make in the Authoring Tool are stored in a management pack file.  
   
  Later, to use the customized form in Service Manager, after you complete all customizations, you must bundle the original form assembly file with the management pack that contains the customizations that you made in the Authoring Tool. For more information about bundling a management pack and creating a .mpb file, see [How to Bundle Management Packs and Resource Files](../../../sm/manage/author/How-to-Bundle-Management-Packs-and-Resource-Files.md).  
   
@@ -82,7 +82,7 @@ If you defined a new custom class to extend System Center 2012 - Service Manager
   
 6.  Save the management pack that contains the customizations of the form.  
   
-7.  Bundle the form’s original assembly file, the management pack that contains the form customizations that you made in the Authoring Tool, and any other resource files that you need, to create an .mpb file.  
+7.  Bundle the form's original assembly file, the management pack that contains the form customizations that you made in the Authoring Tool, and any other resource files that you need, to create an .mpb file.  
   
 ## See Also  
  [Forms: Customizing and Authoring](../Topic/Forms:%20Customizing%20and%20Authoring.md)

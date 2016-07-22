@@ -29,7 +29,7 @@ ms.assetid: 09ee5ec3-4d9f-4b5f-b4c4-4a63f52cf794
 
 ---
 # Step 11: Use the New Compliance Change Request Process
-In this final step of the Woodgrove Bank customization scenario for System Center 2012 - Service Manager, Ken tests the new change request process and uses all its related customized objects. Ken creates a compliance change request to add the new ADComputer1 computer to the GP\_AUTHAPPS group in Active Directory Domain Services \(AD DS\). Ken follows the process in the Service Manager console as it changes status while progressing from the first activity to the next.  
+In this final step of the Woodgrove Bank customization scenario for System Center 2012 - Service Manager, Ken tests the new change request process and uses all its related customized objects. Ken creates a compliance change request to add the new ADComputer1 computer to the GP\_AUTHAPPS group in Active&nbsp;Directory Domain Services \(AD&nbsp;DS\). Ken follows the process in the Service Manager console as it changes status while progressing from the first activity to the next.  
   
 ### To create a compliance change request  
   
@@ -53,11 +53,11 @@ In this final step of the Woodgrove Bank customization scenario for System Cente
   
      To check the status of the **AddComputerToADGroupWF** workflow, select **Administration**. In the **Administration** pane, expand **Workflows**, and then select **Status**. In the **Status** pane, click **AddComputerToADGroupWF**.  
   
-10. Use the **Start AD Users and Computers** task to start the Active Directory Users and Computers tool, and notice that the **GP\_AUTHAPPS** Active Directory group now contains the new **ADComputer1** computer. At this point, any policies that are configured to be applied to computers in this Active Directory group apply to the computer that was added.  
+10. Use the **Start AD Users and Computers** task to start the Active Directory Users and Computers tool, and notice that the **GP\_AUTHAPPS** Active&nbsp;Directory group now contains the new **ADComputer1** computer. At this point, any policies that are configured to be applied to computers in this Active&nbsp;Directory group apply to the computer that was added.  
   
      Notice that the status of the automated activity has now also changed to **Completed**, due to the last step in the **AddComputerToADGroupWF** workflow.  
   
-11. Start Microsoft Outlook and locate the email notification that was sent to the process manager about the new computer that was added to the Active Directory group.  
+11. Start Microsoft Outlook and locate the email notification that was sent to the process manager about the new computer that was added to the Active&nbsp;Directory group.  
   
 ## See Also  
  [Sample Scenario: The Woodgrove Bank Customization](../Topic/Sample%20Scenario:%20The%20Woodgrove%20Bank%20Customization.md)

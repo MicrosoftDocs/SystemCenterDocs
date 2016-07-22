@@ -144,7 +144,7 @@ Hardware configuration for the Service Manager database server:
 
 Hardware configuration for the Service Manager data warehouse database server:  
 
--   8\-core 2.66 GHz CPU  
+-   8\-core 2.66&nbsp;GHz CPU  
 -   8 GB RAM  
 -   4 RAID 1\+0 disk drives for data  
 -   2 RAID 1 disk drives for logs  

@@ -41,7 +41,7 @@ A **Check Box** control in System Center 2016 - Service Manager Authoring Tool p
   
 3.  In the **Details** pane, select the **Content** property and set its value to text that will be displayed on the check box.  
   
-4.  In the **Details** pane, select the **Binding Path** property, and then click the ellipsis \(**…**\) icon. In the **Binding Path** dialog box, expand the classes, and then select a **Boolean** property for the control to bind to. Note that the **Content** property is automatically set to the display name of the property that the control is bound to.  
+4.  In the **Details** pane, select the **Binding Path** property, and then click the ellipsis \(**...**\) icon. In the **Binding Path** dialog box, expand the classes, and then select a **Boolean** property for the control to bind to. Note that the **Content** property is automatically set to the display name of the property that the control is bound to.  
   
 5.  Click any other property, such as **Font Family**, in the **Details** pane to customize the properties of the **Check Box** control.  
   

@@ -47,7 +47,7 @@ Use the following procedure to create and assemble the Resolved Incidents Dashbo
   
 7.  On the **Edit** ribbon tab, click **Create Connection**.  
   
-8.  In the **Connection** dialog box, in the **Get Values From** list, select **Left Column – \(1\) Resolved Incidents Scorecard**.  
+8.  In the **Connection** dialog box, in the **Get Values From** list, select **Left Column - \(1\) Resolved Incidents Scorecard**.  
   
 9. Click the **Values** tab, and in **Connect To**, select the **Incident Classification IncidentClassificationValue** hierarchy.  
   

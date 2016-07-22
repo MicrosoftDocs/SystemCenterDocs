@@ -199,7 +199,7 @@
 # [How to Remove an Activity from a Workflow](sm/manage/author/How-to-Remove-an-Activity-from-a-Workflow.md)
 # [How to Copy a Workflow](sm/manage/author/How-to-Copy-a-Workflow.md)
 # [How to Edit Details of a Class in the Authoring Tool](sm/manage/author/How-to-Edit-Details-of-a-Class-in-the-Authoring-Tool.md)
-# [Overview of the Authoring Tool for System Center 2012 – Service Manager](sm/manage/author/Overview-of-the-Authoring-Tool-for-System-Center-2012-–-Service-Manager.md)
+# [Overview of the Authoring Tool for System Center 2012 - Service Manager](sm/manage/author/Overview-of-the-Authoring-Tool-for-System-Center-2012---Service-Manager.md)
 # [Creating Workflows for IT Processes](sm/manage/author/Creating-Workflows-for-IT-Processes.md)
 # [SM2012_AuthoringGuide.copy](sm/manage/author/SM2012_AuthoringGuide.copy.md)
 # [Upgrading Management Packs to Work with the Authoring Tool in System Center 2012 - Service Manager](sm/manage/author/Upgrading-Management-Packs-to-Work-with-the-Authoring-Tool-in-System-Center-2012---Service-Manager.md)

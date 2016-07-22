@@ -51,7 +51,7 @@ To configure high availability, each management server in the resource pool must
   
 3.  Run the following command, specifying a file name of your choosing such as **Server3.cert**:  
   
-    `scxcertconfig.exe – export <filename>`  
+    `scxcertconfig.exe - export <filename>`  
   
 4.  Copy the exported file to a shared directory that is accessible by all the management servers in the resource pool.  
   
@@ -63,7 +63,7 @@ To configure high availability, each management server in the resource pool must
   
 8.  Run the following command for each exported certificate file \(except for the file that was exported by the current management server\):  
   
-    `scxcertconfig.exe –import <filename>`  
+    `scxcertconfig.exe -import <filename>`  
   
     > [!NOTE]  
     > If you attempt to import the certificate file that was exported by that same management server, the process will fail with an error message that the object or property already exists.  

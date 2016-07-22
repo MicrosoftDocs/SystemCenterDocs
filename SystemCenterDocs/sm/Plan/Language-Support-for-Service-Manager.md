@@ -41,7 +41,7 @@ The information in the following table represents the approved collations and th
 |Italian_Standard|Latin1_General_100_CI_AS|
 |Japanese|Japanese_XJIS_100_CI_AS|
 |Korean|Korean_100_CI_AS|
-|Norwegian (Bokmål, Norway)|Norwegian_100_CI_AS|
+|Norwegian (Bokml, Norway)|Norwegian_100_CI_AS|
 |Polish (Poland)|Polish_100_CI_AS|
 |Portuguese (Brazil)|Latin1_General_100_CI_AS|
 |Portuguese (Portugal)|Latin1_General_100_CI_AS|

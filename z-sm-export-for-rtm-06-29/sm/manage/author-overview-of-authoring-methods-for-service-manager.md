@@ -58,7 +58,7 @@ There are three methods that you can use to customize System Center 2012 - Servi
  You can also use the Authoring Tool to create advanced customizations that require testing and verification before implementation. The Authoring Tool does not require advanced user skills or advanced knowledge of the internal architecture of Service Manager.  
   
 ## Directly Modifying and Authoring Management Pack Files  
- For extensive or complex customizations and for customizations that require coding \(such as extending the data in the Service Manager database, customizing forms, or modifying the default behavior of a feature’s workflow\), you have to edit the .xml file of the corresponding management pack directly. Working directly with management pack files requires in\-depth knowledge in several areas, such as the System Center Common Schema and the structure of management packs. Also, manual editing is prone to errors.  
+ For extensive or complex customizations and for customizations that require coding \(such as extending the data in the Service Manager database, customizing forms, or modifying the default behavior of a feature's workflow\), you have to edit the .xml file of the corresponding management pack directly. Working directly with management pack files requires in\-depth knowledge in several areas, such as the System Center Common Schema and the structure of management packs. Also, manual editing is prone to errors.  
   
 ## See Also  
  [Introduction to the Service Manager Authoring Guide](../../../sm/manage/author/Introduction-to-the-Service-Manager-Authoring-Guide.md)

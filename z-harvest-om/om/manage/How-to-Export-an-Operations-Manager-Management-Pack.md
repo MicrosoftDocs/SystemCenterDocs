@@ -30,7 +30,7 @@ Exporting a management pack allows customizations to a sealed management pack to
   
 5.  In the **Browse For Folder** dialog box, expand the path for the location to save the file, and then click **OK**.  
   
-    The management pack is saved as an Operations Manager XML management pack file and is ready for importing into another management group.  
+    The management pack is saved as an Operations Manager&nbsp;XML management pack file and is ready for importing into another management group.  
   
 ## See Also  
 [Creating a Management Pack for Overrides](../../om/manage/Creating-a-Management-Pack-for-Overrides.md)  

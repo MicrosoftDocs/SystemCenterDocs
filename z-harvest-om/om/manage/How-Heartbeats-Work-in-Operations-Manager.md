@@ -13,7 +13,7 @@ author:mgoedtel
 manager:cfreemanwa
 ---
 # How Heartbeats Work in Operations Manager
-[!INCLUDE[om12long](../../om/manage/includes/om12long_md.md)] uses *heartbeats* to monitor communication channels between an agent and the agent’s primary management server. A heartbeat is a packet of data sent from the agent to the management server on a regular basis, by default every 60 seconds, using port 5723 \(UDP\).  
+[!INCLUDE[om12long](../../om/manage/includes/om12long_md.md)] uses *heartbeats* to monitor communication channels between an agent and the agent's primary management server. A heartbeat is a packet of data sent from the agent to the management server on a regular basis, by default every 60 seconds, using port 5723 \(UDP\).  
   
 When an agent fails to send a heartbeat 4 times, a **Health Service Heartbeat Failure** alert is generated and the management server attempts to contact the computer by using ping. If the computer does not respond to the ping, a **Failed to Connect to Computer** alert is generated. The following illustration shows this process.  
   

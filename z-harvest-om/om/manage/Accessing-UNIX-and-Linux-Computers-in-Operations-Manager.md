@@ -53,7 +53,7 @@ In [!INCLUDE[om12short](../../om/manage/includes/om12short_md.md)], the system a
   
 -   [Administering and Configuring the UNIX - Linux Agent](../../om/manage/Administering-and-Configuring-the-UNIX---Linux-Agent.md)  
   
-    Describes options to administer and configure the UNIX\/Linux agent for System Center – [!INCLUDE[omblue_2](../../om/manage/includes/omblue_2_md.md)].  
+    Describes options to administer and configure the UNIX\/Linux agent for System Center - [!INCLUDE[omblue_2](../../om/manage/includes/omblue_2_md.md)].  
   
 ## Other Resources for this Feature  
   

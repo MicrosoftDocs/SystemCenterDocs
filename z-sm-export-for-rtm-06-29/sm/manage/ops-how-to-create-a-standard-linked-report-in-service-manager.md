@@ -31,7 +31,7 @@ ms.assetid: e91869e2-981b-4f62-866e-ac51e495cf05
 # How to Create a Standard Linked Report in Service Manager
 You can use the following procedure in System Center 2012 - Service Manager to create a linked report.  
   
- A linked report is a shortcut to a report—it is similar to a program shortcut on your desktop. A linked report is derived from publicly defined reports from any management pack. A linked report retains some of the original report's properties, such as the report layout. Other properties of the linked report, such as parameters and subscriptions, can be different from the original report.  
+ A linked report is a shortcut to a report-it is similar to a program shortcut on your desktop. A linked report is derived from publicly defined reports from any management pack. A linked report retains some of the original report's properties, such as the report layout. Other properties of the linked report, such as parameters and subscriptions, can be different from the original report.  
   
 ### To create a linked report  
   

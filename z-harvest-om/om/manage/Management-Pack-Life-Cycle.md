@@ -13,14 +13,14 @@ author:mgoedtel
 manager:cfreemanwa
 ---
 # Management Pack Life Cycle
-[!INCLUDE[om12long](../../om/manage/includes/om12long_md.md)] uses management packs to extend monitoring functionality. Ideally, a management pack tells you everything you want to know about the application or technology that you are monitoring and nothing that you do not want to know. Management packs are designed to provide a useful monitoring experience for most environments, however you will want to test, tune, and tailor each management pack to provide optimal results for your organization’s needs.  
+[!INCLUDE[om12long](../../om/manage/includes/om12long_md.md)] uses management packs to extend monitoring functionality. Ideally, a management pack tells you everything you want to know about the application or technology that you are monitoring and nothing that you do not want to know. Management packs are designed to provide a useful monitoring experience for most environments, however you will want to test, tune, and tailor each management pack to provide optimal results for your organization's needs.  
   
 The management pack life cycle, described in the following table, is the recommended approach to using management packs. The sections following the table provide details for each stage.  
   
 |Stage|Description|  
 |---------|---------------|  
 |Review and evaluate management packs in a pre\-production environment|Before you deploy a management pack in your production environment, you should familiarize yourself with the contents of the management pack and guide, and import the management pack in a pre\-production or test environment. You can also view the management pack in a virtual machine environment.|  
-|Tune the management pack settings and save in a customized management pack|Use overrides to tune the settings of a management pack—such as monitors, rules, object discoveries, and attributes—to better meet your organization’s needs. You should save overrides to a management pack that you create.|  
+|Tune the management pack settings and save in a customized management pack|Use overrides to tune the settings of a management pack-such as monitors, rules, object discoveries, and attributes-to better meet your organization's needs. You should save overrides to a management pack that you create.|  
 |Deploy management packs into a production environment|Export the management pack with overrides that is associated with the management pack that you are going to deploy, and import management packs in your production environment.|  
 |Maintain management pack|After deployment, a management pack might need additional tuning, such as in following circumstances:<br /><br />-   Environmental changes, such as new hardware or new operating system<br />-   Adding a new application to the production environment<br />-   Upgrading a version of an application<br />-   When a new or updated version of the management pack is available<br />-   Policy changes, which result in more or less monitoring based on business needs|  
   
@@ -36,7 +36,7 @@ When you have a new management pack, you should import it to a *pre\-production*
   
 To accurately measure the data that a management pack gathers, you need to expose the agent to the demands of your production environment. The hardware of the management server in the pre\-production environment should reflect the hardware that is in use in your production environment. Your pre\-production management group should have the same management packs imported to the management server as the production management group. To test interoperability, your pre\-production environment should also include the same types of server roles that are in your production environment, just on a smaller scale.  
   
-You can assign an Operations Manager agent to more than one management group, which is called *multihoming*. If you multihome a representative subset of agents in your production environment and your pre\-production environment, the pre\-production environment should give you much of the information you need to correctly tune the management pack. For more information on multihoming agents, see [Configuring Agents](../Topic/Configuring%20Agents.md).  
+You can assign an Operations Manager&nbsp;agent to more than one management group, which is called *multihoming*. If you multihome a representative subset of agents in your production environment and your pre\-production environment, the pre\-production environment should give you much of the information you need to correctly tune the management pack. For more information on multihoming agents, see [Configuring Agents](../Topic/Configuring%20Agents.md).  
   
 ## <a name="bkmk_tuneandcustomize"></a>Tune and Customize  
 You can use overrides to refine the settings of a monitoring object in Operations Manager, including monitors, rules, object discoveries, and attributes. You should create a management pack in which to save customizations that you make.  

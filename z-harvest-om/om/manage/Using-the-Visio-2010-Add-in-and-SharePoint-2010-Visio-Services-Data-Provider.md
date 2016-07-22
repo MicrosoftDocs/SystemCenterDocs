@@ -25,7 +25,7 @@ The Visio 2010 Add\-in and SharePoint 2010 Visio Services Data Provider have the
   
 -   You can automatically link entire existing Visio documents to the computer and to network devices managed by [!INCLUDE[om12short](../../om/manage/includes/om12short_md.md)] by matching computer names or IP addresses.  
   
--   Health states can be automatically refreshed in Visio documents. You can use this option along with Visio’s full\-screen view to create dashboard views suitable for use as a summary display in a data center control room.  
+-   Health states can be automatically refreshed in Visio documents. You can use this option along with Visio's full\-screen view to create dashboard views suitable for use as a summary display in a data center control room.  
   
 -   Predefined data graphics enable you to switch from [!INCLUDE[om12short](../../om/manage/includes/om12short_md.md)] health icons to the shape color for health state.  
   

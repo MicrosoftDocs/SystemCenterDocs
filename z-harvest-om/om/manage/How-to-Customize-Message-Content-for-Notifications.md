@@ -43,7 +43,7 @@ You can change the format on the **Format** page of the channel type wizard when
     $Data\[Default\='Not Present'\]\/Context\/DataItem\/Severity$  
   
     > [!NOTE]  
-    > When a default value for a parameter is included, such as \[Default\=’Not Present’\] in the preceding example, it indicates the text to provide when the alert does not contain data for that parameter.  
+    > When a default value for a parameter is included, such as \[Default\='Not Present'\] in the preceding example, it indicates the text to provide when the alert does not contain data for that parameter.  
   
 6.  When you are done, click **Finish**. All notification messages that use the same channel will be formatted the same way.  
   

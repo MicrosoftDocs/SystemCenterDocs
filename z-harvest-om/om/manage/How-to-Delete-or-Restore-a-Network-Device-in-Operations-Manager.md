@@ -20,7 +20,7 @@ To delete a device that is the starting point for recursive discovery, you must 
 > [!NOTE]  
 > You can identify the discovery rule associated with a discovered network device by right\-clicking the device in **Network Devices** or **Network Devices Pending Management** and then clicking **Discovery Rule Properties**.  
   
-If you delete a device that was discovered by a recursive discovery rule, it will be added to the exclude list of the rule. If you want to have that device discovered and monitored again, you must remove the device from the **Exclude Filters** page of the rule’s properties and run the discovery again.  
+If you delete a device that was discovered by a recursive discovery rule, it will be added to the exclude list of the rule. If you want to have that device discovered and monitored again, you must remove the device from the **Exclude Filters** page of the rule's properties and run the discovery again.  
   
 ### To delete a network device discovered by explicit discovery  
   

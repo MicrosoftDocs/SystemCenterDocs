@@ -26,4 +26,4 @@ translation.priority.ht:
   - zh-hk
   - zh-tw
 ---
-System Center 2012 – Virtual Machine Manager \(VMM\)
+System&nbsp;Center&nbsp;2012&nbsp;- Virtual&nbsp;Machine&nbsp;Manager&nbsp;\(VMM\)

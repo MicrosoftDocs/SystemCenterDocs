@@ -22,7 +22,7 @@ The certificate should conform to the following recommendations:
   
 -   A self\-signed certificate should be used only for testing purposes.  
   
--   The fully qualified domain name \(FQDN\) should be specified for the certification path instead of ”localhost”.  
+-   The fully qualified domain name \(FQDN\) should be specified for the certification path instead of "localhost".  
   
 -   A self\-signed certificate should be placed in the personal or webhosting store.  
   

@@ -17,13 +17,13 @@ In order for Visio Services to refresh the diagrams that are published and conne
   
 The easiest way to configure this is to make the account that Visio Services is running as a Read\-Only Operator on the management server.  
   
-If you need to determine the account that is configured for Visio Services, use SharePoint’s Central Administration:  
+If you need to determine the account that is configured for Visio Services, use SharePoint's Central Administration:  
   
 1.  Open the Central Administration site.  
   
 2.  In the **Security** section, click **Configure Service Accounts**.  
   
-3.  In the list of Service Accounts, select Service Application Pool – SharePoint Web Services Default.  
+3.  In the list of Service Accounts, select Service Application Pool - SharePoint Web Services Default.  
   
     The account is listed in the **Select an account for this component** field.  
   
@@ -35,7 +35,7 @@ If you need to determine the account that is configured for Visio Services, use 
   
 3.  In the User Roles pane, right\-click **Read\-Only Operator**, and then click **Properties**.  
   
-4.  In the **Operations Manager Read\-Only Operators – User Role Properties** dialog box, on the **General Properties** page, click **Add**.  
+4.  In the **Operations Manager Read\-Only Operators - User Role Properties** dialog box, on the **General Properties** page, click **Add**.  
   
 5.  On the **Select User or Groups** page, enter the account that is configured for Service Application Pool, and then click **OK**.  
   

@@ -23,7 +23,7 @@ You need the following permissions when you are installing a Service Manager man
 -   Local administrator on the computer that you run Setup on  
 -   Local administrator on the computer that will host the Service Manager database if it is on a remote computer  
 -   Logged\-on user must be a domain account  
--   The Sysadmin SQL Server role on the SQL Server instance where the Service Manager database is being created  
+-   The Sysadmin SQL&nbsp;Server role on the SQL&nbsp;Server instance where the Service Manager database is being created  
 
 
 ## Service Manager Console
@@ -39,8 +39,8 @@ You need the following permissions when you are installing the data warehouse ma
 -   Local administrator on the computer that you run Setup on  
 -   Local administrator on the computer that will host the data warehouse database if it is on a remote computer  
 -   Logged\-in user must be a domain account  
--   The Content Manager role in SQL Server Reporting Services \(SSRS\) at the site level \(root\)  
--   The Sysadmin SQL Server role on the SQL Server instance where the data warehouse database is being created  
+-   The Content Manager role in SQL&nbsp;Server Reporting Services \(SSRS\) at the site level \(root\)  
+-   The Sysadmin SQL&nbsp;Server role on the SQL&nbsp;Server instance where the data warehouse database is being created  
 
 ## SQL Server Reporting Services
 
@@ -52,7 +52,7 @@ You need the following permissions when you are installing SSRS:
 
 You need the following permissions when you are registering Service Manager with the data warehouse:  
 
--   The Sysadmin or security admin SQL Server role on the instance that is hosting the Service Manager database  
--   The Sysadmin or security admin SQL Server role on the instance that is hosting the data warehouse database  
+-   The Sysadmin or security admin SQL&nbsp;Server role on the instance that is hosting the Service Manager database  
+-   The Sysadmin or security admin SQL&nbsp;Server role on the instance that is hosting the data warehouse database  
 -   Membership in the Service Manager Administrators user role on the Service Manager management server  
 -   Membership in the Service Manager Administrators user role on the data warehouse management server

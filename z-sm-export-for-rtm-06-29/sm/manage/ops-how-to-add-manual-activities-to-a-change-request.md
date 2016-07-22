@@ -48,7 +48,7 @@ In System Center 2012 - Service Manager, you can use the following procedures to
   
 6.  In the **Description** box, type a description of the manual activity. For example, type **Verify that the server is still under warranty before approval**.  
   
-7.  Under **Activity Implementer**, click the ellipsis button \(…\).  
+7.  Under **Activity Implementer**, click the ellipsis button \(...\).  
   
 8.  In the **Select User** dialog box, select the name of the person who will perform the manual activity, and then click **OK**. For example, select **Aaron Lee**.  
   

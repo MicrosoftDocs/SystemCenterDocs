@@ -94,7 +94,7 @@ The **UNIX\/Linux Agent Upgrade Wizard** and the **UNIX\/Linux Agent Uninstall W
   
 -   **Specify credentials**  
   
-    Select this option to specify Secure Shell \(SSH\) credentials by using a user name and password or a user name and a key. You can optionally provide a passphrase with a key. If the credentials are not for a privileged account, you can have them elevated to a privileged account on the target computered by using the UNIX su or sudo elevation programs. The ‘su’ elevation requires a password. If you use sudo elevation, you are prompted for a user name and password for agent verification by using an unprivileged account.  
+    Select this option to specify Secure Shell \(SSH\) credentials by using a user name and password or a user name and a key. You can optionally provide a passphrase with a key. If the credentials are not for a privileged account, you can have them elevated to a privileged account on the target computered by using the UNIX su or sudo elevation programs. The 'su' elevation requires a password. If you use sudo elevation, you are prompted for a user name and password for agent verification by using an unprivileged account.  
   
 For more information about upgrading and uninstalling, see [Upgrading and Uninstalling Agents on UNIX and Linux Computers](../Topic/Upgrading%20and%20Uninstalling%20Agents%20on%20UNIX%20and%20Linux%20Computers.md).  
   

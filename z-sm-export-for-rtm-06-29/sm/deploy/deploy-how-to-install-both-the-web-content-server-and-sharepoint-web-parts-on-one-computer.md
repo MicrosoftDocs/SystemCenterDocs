@@ -131,7 +131,7 @@ robots: noindex,nofollow
       </step>
       <step>
         <content>
-          <para>Click <ui>Test Credentials</ui>. After you verify that you received a “The credentials were accepted” message, click <ui>Next</ui>.</para>
+          <para>Click <ui>Test Credentials</ui>. After you verify that you received a "The credentials were accepted" message, click <ui>Next</ui>.</para>
         </content>
       </step>
       <step>
@@ -154,7 +154,7 @@ robots: noindex,nofollow
               <para>In the <ui>Database server</ui> text box, type the name of the computer that hosts the SharePoint database, and then press TAB. For example, select the default entry for the computer on which you are installing the SharePoint website.</para>
             </listItem>
             <listItem>
-              <para>In the <ui>SQL Server instance</ui> list, select the instance name for the SharePoint database. (<ui>Default</ui> is the default SQL Server instance.)</para>
+              <para>In the <ui>SQL Server instance</ui> list, select the instance name for the SharePoint database. (<ui>Default</ui> is the default SQL&nbsp;Server instance.)</para>
             </listItem>
             <listItem>
               <para>In the <ui>Database name</ui> text box, accept the default database name, or type a new name</para>
@@ -167,7 +167,7 @@ robots: noindex,nofollow
       </step>
       <step>
         <content>
-          <para>On the <ui>Configure the account for Service Manager SharePoint application pool</ui> page, type a domain user and password, and then click <ui>Test Credentials</ui>. After you verify that you received a “The credentials were accepted” message, click <ui>Next</ui>.</para>
+          <para>On the <ui>Configure the account for Service Manager SharePoint application pool</ui> page, type a domain user and password, and then click <ui>Test Credentials</ui>. After you verify that you received a "The credentials were accepted" message, click <ui>Next</ui>.</para>
         </content>
       </step>
       <step>

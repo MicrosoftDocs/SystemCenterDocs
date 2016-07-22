@@ -56,8 +56,8 @@ Also see the blog post [Configuring SPF and Windows Azure Pack for IaaS usage an
     For example:  
   
     ```powershell  
-    PS C:\> $omdwserver = New-SCSPFServer –Name "omdw.contoso.com" –ServerType OMDW  
-    PS C:\>$setting = New-SCSPFSetting –Name mysetting –SettingType DatabaseConnectionString –Value "Server=myomdwserver\myomdwinstance;Database=OperationsManagerDW;Trusted_Connection=True;Connect Timeout=300" –Server $omdwserver  
+    PS C:\> $omdwserver = New-SCSPFServer -Name "omdw.contoso.com" -ServerType OMDW  
+    PS C:\>$setting = New-SCSPFSetting -Name mysetting -SettingType DatabaseConnectionString -Value&nbsp;"Server=myomdwserver\myomdwinstance;Database=OperationsManagerDW;Trusted_Connection=True;Connect Timeout=300" -Server $omdwserver  
   
     ```  
   
@@ -66,7 +66,7 @@ The recommended connection timeout is 300 seconds, or 5 minutes. This value is a
 Use the Get\-SCSPFSetting cmdlet to make changes to a particular setting. For example, the following code associates the setting with a different server, that is stored in the `$newSvr` variable.  
   
 ```powershell  
-PS C:\>$myset = Get-SCSPFSetting –Name "mySetting"  
+PS C:\>$myset = Get-SCSPFSetting -Name "mySetting"  
 PS C:\>$myset.Server = $newSvr  
   
 ```  
@@ -102,7 +102,7 @@ If Windows Update is controlled by your System Administrator, the update might n
   
 1.  Go to [Microsoft Update Catalog](http://catalog.update.microsoft.com/v7/site/Search.aspx?q=2785476) \(http:\/\/catalog.update.microsoft.com\/v7\/site\/Search.aspx?q\=2785476\).  
   
-    The **Update for System Center 2012 SP1 Orchestrator – SPF \(KB2785476\)** should be the only item in the search results.  
+    The **Update for System Center 2012 SP1 Orchestrator - SPF \(KB2785476\)** should be the only item in the search results.  
   
 2.  Click **Add**, and then click **view basket**.  
   

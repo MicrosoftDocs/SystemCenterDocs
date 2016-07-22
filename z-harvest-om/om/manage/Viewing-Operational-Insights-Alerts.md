@@ -62,5 +62,5 @@ To close an alert, click **Close Alert** in the Operational Insights Tasks list.
 To ignore an alert, click the specific alert in the results pane, and then click **Ignore Alert**. You can manage alerts, including those that you have ignored, by clicking **Manage Alert Rules**. For more information about ignoring Operational Insights alerts, see [Ignore an Alert](http://go.microsoft.com/fwlink/?LinkID=245622) in the Operational Insights online help system.  
   
 ## View configuration information  
-In addition to viewing alerts from Operational Insights, you can also view the configuration information that Operational Insights collects about the computers listed as “Operational Insights Managed.” To view configuration information, from the Operational Insights page on the Monitoring workspace, click **View Configuration** in the Operational Insights Tasks list.  
+In addition to viewing alerts from Operational Insights, you can also view the configuration information that Operational Insights collects about the computers listed as "Operational Insights Managed." To view configuration information, from the Operational Insights page on the Monitoring workspace, click **View Configuration** in the Operational Insights Tasks list.  
   

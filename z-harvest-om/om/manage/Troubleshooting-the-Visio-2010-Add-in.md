@@ -29,8 +29,8 @@ Use the following steps to enable trace logging for the server data module insta
     ```  
     <configuration>  
        <appSettings>  
-          <add key=”EnableLog” value=”True” />  
-          <add key=”LogPath” value=\\server\directory” />  
+          <add key="EnableLog" value="True" />  
+          <add key="LogPath" value=\\server\directory" />  
        <appSettings>  
     </configuration>  
     ```  
@@ -41,7 +41,7 @@ Use the following steps to enable trace logging for the server data module insta
   
 The next time a diagram is refreshed, the configuration file is checked and log files are written to the location you specific.  
   
-Each refresh option is recorded in a separate log file. The name of the file reflects the user who attempted the refresh and the date and time the refresh was attempted \(for example, “jdoe\_3\_25\_2010\_12\-23\-37\_PM.log”\). The log file contains the following:  
+Each refresh option is recorded in a separate log file. The name of the file reflects the user who attempted the refresh and the date and time the refresh was attempted \(for example, "jdoe\_3\_25\_2010\_12\-23\-37\_PM.log"\). The log file contains the following:  
   
 -   The name of the user that requested the refresh  
   
@@ -108,7 +108,7 @@ Some stencils in Visio are not defined with a wrapping group. To resolve this pr
 ### You see security warnings when you open a diagram  
 When you open a document that you previously linked to [!INCLUDE[om12short](../../om/manage/includes/om12short_md.md)], you receive multiple security warnings.  
   
-This problem occurs because the status of the document components is set to refresh automatically. To suppress the warnings, select **Don’t show this message again**.  
+This problem occurs because the status of the document components is set to refresh automatically. To suppress the warnings, select **Don't show this message again**.  
   
 ### You cannot re\-install the Visio Add\-in  
 If you delete the [!INCLUDE[om12short](../../om/manage/includes/om12short_md.md)] Add\-in by using the Visio Trust Center, you cannot add it again later.  

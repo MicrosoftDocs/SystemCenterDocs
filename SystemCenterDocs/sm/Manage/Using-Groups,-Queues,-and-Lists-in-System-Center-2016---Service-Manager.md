@@ -22,7 +22,7 @@ In Service Manager, you can use groups to manage configuration items, queues to 
 The **Library** pane in Service Manager contains items, such as groups, queues, and lists. You can use groups to manage configuration items, and you can use queues to manage work items. You can use lists to customize forms.
 
 ### Using Groups to Manage Configuration Items
-In Service Manager, groups contain objects. Typically, these objects are configuration items. Groups can include collections of objects of the same class or of different classes. For example, say that you decide to create the **Exchange Servers** group. You have several methods to do this. You can create a static group, a dynamic group, or a combination of static and dynamic groups. A static group is defined by specific objects, such as “Exchange1” and “Exchange2”. A dynamic group is defined by inclusion rules. Inclusion rules are based on comparing a formula to the actual property value of a configuration item. The following table shows samples of inclusion rules.
+In Service Manager, groups contain objects. Typically, these objects are configuration items. Groups can include collections of objects of the same class or of different classes. For example, say that you decide to create the **Exchange Servers** group. You have several methods to do this. You can create a static group, a dynamic group, or a combination of static and dynamic groups. A static group is defined by specific objects, such as "Exchange1" and "Exchange2". A dynamic group is defined by inclusion rules. Inclusion rules are based on comparing a formula to the actual property value of a configuration item. The following table shows samples of inclusion rules.
 
 |Class.Property|Operator|Value|
 |------------------|------------|---------|
@@ -98,7 +98,7 @@ Use the following procedures to create a new group (such as the **Exchange Serve
 
 11. On the **Included Members** page, click **Next**.
 
-12. Optionally, on the **Dynamic members** page, click the ellipsis (…) button to specify a type, such as **Windows Computer**, to build the dynamic members. Choose any property you want to build your criteria. For example, after you specify the **Windows Computer** type, select the **Principal Name** property, and then click **Add**. In the related text box, enter **woodgrove** so that all the computers whose principal name contains this text are included, and then click **Next**.
+12. Optionally, on the **Dynamic members** page, click the ellipsis (...) button to specify a type, such as **Windows Computer**, to build the dynamic members. Choose any property you want to build your criteria. For example, after you specify the **Windows Computer** type, select the **Principal Name** property, and then click **Add**. In the related text box, enter **woodgrove** so that all the computers whose principal name contains this text are included, and then click **Next**.
 
 13. Optionally, on the **Subgroups** page, click **Add**, and then select the specific groups that you want as subgroups of this group. If any group that you want to select as a subgroup is from an unsealed management pack, that subgroup must be from the same management pack as the group that you are creating. Click **OK**, and then click **Next**.
 
@@ -140,7 +140,7 @@ You can use the following procedure to create a queue.
 
     2.  On the **General** page, type a name in the **Queue name** box. For example, type **Exchange Send Problems Queue**.
 
-    3.  Next to the **Work item type** box, click the ellipsis button (**…**). In the **Select a Class** dialog box, select a class, such as **Incident**, and then click **OK**.
+    3.  Next to the **Work item type** box, click the ellipsis button (**...**). In the **Select a Class** dialog box, select a class, such as **Incident**, and then click **OK**.
 
     4.  In the **Management pack** list, select the unsealed management pack in which you want to store the new queue definition. For example, select **Service Manager Incident Management Configuration Library**. Then, click **Next**.
 

@@ -62,27 +62,27 @@ This is a sample Orchestrator.xml to be used for deploying Orchestrator with sys
 ```  
 <?xml version="1.0" encoding="utf-8"?>  
 <unattend xmlns="urn:schemas-microsoft-com:unattend">  
-    <settings pass="oobeSystem">  
-        <component name="Microsoft-Windows-Shell-Setup" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" versionScope="nonSxS" xmlns:wcm="http://schemas.microsoft.com/WMIConfig/2002/State" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">  
-            <AutoLogon>  
-                <Password>  
-                    <Value>password</Value>  
-                    <PlainText>true</PlainText>  
-                </Password>  
-                <LogonCount>1</LogonCount>  
-                <Enabled>true</Enabled>  
-                <Username>Administrator</Username>  
-            </AutoLogon>  
-            <FirstLogonCommands>  
-                <SynchronousCommand wcm:action="add">  
-                    <CommandLine>cmd /c %systemdrive%\sco\install.bat</CommandLine>  
-                    <Order>1</Order>  
-                    <RequiresUserInput>false</RequiresUserInput>  
-                </SynchronousCommand>  
-            </FirstLogonCommands>  
-        </component>  
-    </settings>  
-    <cpi:offlineImage cpi:source="wim:c:/windowsenterprise/extracted/sources/install.wim#Windows Server 2008 R2 SERVERENTERPRISE" xmlns:cpi="urn:schemas-microsoft-com:cpi" />  
+&nbsp;&nbsp;&nbsp; <settings pass="oobeSystem">  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <component name="Microsoft-Windows-Shell-Setup" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" versionScope="nonSxS" xmlns:wcm="http://schemas.microsoft.com/WMIConfig/2002/State" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <AutoLogon>  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <Password>  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <Value>password</Value>  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <PlainText>true</PlainText>  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </Password>  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <LogonCount>1</LogonCount>  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <Enabled>true</Enabled>  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <Username>Administrator</Username>  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;</AutoLogon>  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <FirstLogonCommands>  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <SynchronousCommand wcm:action="add">  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <CommandLine>cmd /c %systemdrive%\sco\install.bat</CommandLine>  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <Order>1</Order>  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <RequiresUserInput>false</RequiresUserInput>  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </SynchronousCommand>  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </FirstLogonCommands>  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </component>  
+&nbsp;&nbsp;&nbsp; </settings>  
+&nbsp;&nbsp;&nbsp; <cpi:offlineImage cpi:source="wim:c:/windowsenterprise/extracted/sources/install.wim#Windows Server 2008 R2 SERVERENTERPRISE" xmlns:cpi="urn:schemas-microsoft-com:cpi" />  
 </unattend>  
   
 ```  

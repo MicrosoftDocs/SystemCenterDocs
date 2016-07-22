@@ -38,7 +38,7 @@ This activity in System Center 2012 - Service Manager retrieves a list of one or
   
 -   The Virtual Machine Manager console and Service Manager must both be installed on the same server.  
   
--   Ensure that the Service Manager Workflow account has sufficient permissions to modify security groups in Active Directory Domain Services \(AD DS\).  
+-   Ensure that the Service Manager Workflow account has sufficient permissions to modify security groups in Active&nbsp;Directory Domain Services \(AD&nbsp;DS\).  
   
 ## Properties  
  The **Get VM** activity uses the input properties in the following table.  

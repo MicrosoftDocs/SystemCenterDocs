@@ -41,7 +41,7 @@ The table in this topic lists the properties of System Center 2012 - Service Man
 |Binding|Binding Mode|WPF|Binding\/Mode||  
 ||Binding Path|Service Manager and WPF|Binding\/Path|Binds the control to the property that the control displays. The control dynamically displays the property that it is bound to, updating the value as it changes. The type of the control and the type of the displayed property must match; for example, the type of the **Binding Path** property of a **Date Picker** control must be **Date**.|  
 ||Binds directly to source|WPF|Binding\/BindsDirectlyToSource||  
-|Date|Date Format|Service Manager|N\/A|The format in which the control displays the date, such as “Full date and time”, and “Short”.|  
+|Date|Date Format|Service Manager|N\/A|The format in which the control displays the date, such as "Full date and time", and "Short".|  
 |Drawing|Source Path|Service Manager|N\/A|A path to the image file in an **Image** control.|  
 ||Stretch|WPF|Image\/Stretch||  
 ||Stretch Direction|WPF|Viewbox\/StretchDirection||  

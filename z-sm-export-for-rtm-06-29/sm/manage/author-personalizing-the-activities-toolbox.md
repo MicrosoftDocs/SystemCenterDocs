@@ -29,7 +29,7 @@ ms.assetid: 97fa965d-851d-4d46-9774-a21eeef476cb
 
 ---
 # Personalizing the Activities Toolbox
-Use the procedures in this section to personalize the **Activities Toolbox** pane in the System Center 2016 - Service Manager Authoring Tool. Each user can personalize the **Activities Toolbox** differently; the Authoring Tool stores this information as part of each user’s profile.  
+Use the procedures in this section to personalize the **Activities Toolbox** pane in the System Center 2016 - Service Manager Authoring Tool. Each user can personalize the **Activities Toolbox** differently; the Authoring Tool stores this information as part of each user's profile.  
   
 > [!IMPORTANT]  
 >  You can only modify personalized activity groups. You cannot modify the default activity groups.  

@@ -86,28 +86,28 @@ You must use the following high\-level steps to move the Service Manager databas
     SET @tab = CHAR(9);  
   
     SELECT   
-           'EXEC sp_addmessage ' + @crlf + @tab  
-            + '@msgnum = ' + CAST(m.message_id AS varchar(30))  
-                  + ', ' + @crlf + @tab  
-          + '@severity = ' + CAST(m.severity AS varchar(3))    
-                  + ', ' + @crlf + @tab  
-          + '@msgtext = N''' + REPLACE(m.[text],'''','''''')    
-                  + ''''  + ', ' + @crlf + @tab  
-            + '@lang = ''' +   
-                  (SELECT TOP 1 alias   
-                   FROM master.sys.syslanguages l   
-                   WHERE l.lcid = m.language_id)   
-                   + ''', ' + @crlf + @tab  
-          + '@with_log = ''' +   
-                  CASE WHEN m.is_event_logged = 1   
-                   THEN 'TRUE' ELSE 'FALSE' END   + ''', ' +  @crlf + @tab  
-                  -- Uncomment ONLY if you want to replace:  
-            + '@replace = ''replace'';'   
-            + @crlf + 'GO' + @crlf + @crlf   
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 'EXEC sp_addmessage ' + @crlf + @tab  
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; + '@msgnum = ' + CAST(m.message_id AS varchar(30))  
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; + ', ' + @crlf + @tab  
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; + '@severity = ' + CAST(m.severity AS varchar(3))&nbsp;   
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+ ', ' + @crlf + @tab  
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; + '@msgtext = N''' + REPLACE(m.[text],'''','''''')&nbsp;   
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+ ''''&nbsp; + ', ' + @crlf + @tab  
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; + '@lang = ''' +   
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (SELECT TOP 1 alias   
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;FROM master.sys.syslanguages l   
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;WHERE l.lcid = m.language_id)   
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+ ''', ' + @crlf + @tab  
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; + '@with_log = ''' +   
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; CASE WHEN m.is_event_logged = 1   
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;THEN 'TRUE' ELSE 'FALSE' END&nbsp;&nbsp; + ''', ' +&nbsp; @crlf + @tab  
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -- Uncomment ONLY if you want to replace:  
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; + '@replace = ''replace'';'   
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+ @crlf + 'GO' + @crlf + @crlf   
     FROM   
-            master.sys.messages m  
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;master.sys.messages m  
     WHERE   
-           m.message_id > 50000;  
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;m.message_id > 50000;  
   
     GO  
   

@@ -13,9 +13,9 @@ author:mgoedtel
 manager:cfreemanwa
 ---
 # Manage UNIX and Linux Log Files
-The Operations Manager Agents for UNIX and Linux do not limit the size of the agent log files.  In order to control the maximum size of the log files, implement a process to manage the log files.  For example, the standard utility logrotate is available on many UNIX and Linux operating systems. The logrotate utility can be configured to control the log files used by the Operations Manager Agents for UNIX or Linux. After rotating or modifying the log files of the agent, the agent must be signaled that logs have rotated in order to resume logging.  The scxadmin command can be used with the –log\-rotate parameter with the following syntax:  
+The Operations Manager Agents for UNIX and Linux do not limit the size of the agent log files.  In order to control the maximum size of the log files, implement a process to manage the log files.  For example, the standard utility logrotate is available on many UNIX and Linux operating systems. The logrotate utility can be configured to control the log files used by the Operations Manager Agents for UNIX or Linux. After rotating or modifying the log files of the agent, the agent must be signaled that logs have rotated in order to resume logging.  The scxadmin command can be used with the -log\-rotate parameter with the following syntax:  
   
-`scxadmin –log-rotate all`  
+`scxadmin -log-rotate all`  
   
 ## Example Logrotate configuration file  
 The following example demonstrates a configuration file to rotate the scx.log files as well as omiserver.log with the logrotate utility of Linux. Typically, logrotate will run as a scheduled job \(with crond\) and act on configuration files found in \/etc\/logrotate.d.  To test and use this configuration file, modify the configuration to be appropriate for your environment, and link or save the file in \/etc\/logrotate.d.  

@@ -43,7 +43,7 @@ The **List Picker** control in the System Center 2016 - Service Manager Authorin
   
 2.  Drag the **List Picker** icon from the **Form Customization Toolbox** pane to the form. Click the **List Picker** control on the form.  
   
-3.  In the **Details** pane, select the **List type** property, and then click the ellipsis \(**…**\) icon. In the **Select a list** dialog box, select the list of items that will populate the **List Picker** control that you are creating. Select a list from the **Available lists** list.  
+3.  In the **Details** pane, select the **List type** property, and then click the ellipsis \(**...**\) icon. In the **Select a list** dialog box, select the list of items that will populate the **List Picker** control that you are creating. Select a list from the **Available lists** list.  
   
      Click **OK**.  
   

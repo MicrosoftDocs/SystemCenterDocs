@@ -13,7 +13,7 @@ author:bwren
 manager:cfreemanwa
 ---
 # Setup Command-Line Options for Service Provider Foundation
-You can use command\-line options with the [!INCLUDE[spflong](../../spf/Deploy/includes/spflong_md.md)] setup to perform an unattended installation by using the **–Silent** option. All options that you want to specify must be in a response file \(text file\) whose path is specified after the **–Silent** option, except for **–Silent –Uninstall** which performs an unattended uninstallation. The options can be delineated by either one line for each option, or a single space separating each option.  
+You can use command\-line options with the [!INCLUDE[spflong](../../spf/Deploy/includes/spflong_md.md)] setup to perform an unattended installation by using the **-Silent** option. All options that you want to specify must be in a response file \(text file\) whose path is specified after the **-Silent** option, except for **-Silent -Uninstall** which performs an unattended uninstallation. The options can be delineated by either one line for each option, or a single space separating each option.  
   
 This topic requires that you have located the **setup.exe** file for [!INCLUDE[spfshort](../../spf/Deploy/includes/spfshort_md.md)] in the installation media for [!INCLUDE[orchshort](../../om/manage/includes/orchshort_md.md)].  
   
@@ -88,7 +88,7 @@ The following table describes the command\-line options:
   
 |Option|Description|  
 |----------|---------------|  
-|**\-Silent**|Performs an unattended installation.<br /><br />You must include the name of response file after the **–Silent** option that contains the other options. The options can be delineated by either one line for each option, or a single space separating each option.<br /><br />The following options are required to be specified in the response file:<br /><br />-   **SendCEIPReports**<br />-   **UseMicrosoftUpdate**<br />-   **SpecifyCertificate**<br />-   **CertificateSerialNumber** \(but only if SpecifyCertificate is true\)|  
+|**\-Silent**|Performs an unattended installation.<br /><br />You must include the name of response file after the **-Silent** option that contains the other options. The options can be delineated by either one line for each option, or a single space separating each option.<br /><br />The following options are required to be specified in the response file:<br /><br />-   **SendCEIPReports**<br />-   **UseMicrosoftUpdate**<br />-   **SpecifyCertificate**<br />-   **CertificateSerialNumber** \(but only if SpecifyCertificate is true\)|  
 |**\-Silent\-Uninstall**|Performs an unattended uninstallation.|  
 |**\-SendCEIPReports**|Send anonymous reports to the Customer Experience Improvement Program.|  
 |**\-UseMicrosoftUpdate**|Use Microsoft Update to check for updates.|  

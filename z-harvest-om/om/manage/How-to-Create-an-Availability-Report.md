@@ -16,23 +16,23 @@ manager:cfreemanwa
 The following procedure is an example of how you create an availability report for a managed computer. The procedure presented here is applicable to creating other types of availability reports. In this example procedure, you generate a report for the entire week.  
   
 > [!NOTE]  
-> Operations Manager Reporting must be installed before you can run an Availability report.  
+> Operations Manager&nbsp;Reporting must be installed before you can run an Availability report.  
   
 The availability report provides the following information about the selected computers:  
   
--   **Down** – computer state is critical \(red\)  
+-   **Down** - computer state is critical \(red\)  
   
--   **Up** – computer state is healthy \(green\)  
+-   **Up** - computer state is healthy \(green\)  
   
--   **Yellow** – computer state is warning \(yellow\)  
+-   **Yellow** - computer state is warning \(yellow\)  
   
--   **Unmonitored** – computer or monitor did not exist during reporting period  
+-   **Unmonitored** - computer or monitor did not exist during reporting period  
   
--   **Monitor disabled** – monitor has been disabled, such as by using an override  
+-   **Monitor disabled** - monitor has been disabled, such as by using an override  
   
--   **Monitoring unavailable** – the System Center Management Health service monitoring the computer is unavailable  
+-   **Monitoring unavailable** - the System Center Management Health service monitoring the computer is unavailable  
   
--   **Planned\/unplanned maintenance** – computer is in maintenance mode; overrides all other states  
+-   **Planned\/unplanned maintenance** - computer is in maintenance mode; overrides all other states  
   
 ### To create an availability report  
   

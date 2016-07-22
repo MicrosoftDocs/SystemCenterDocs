@@ -13,7 +13,7 @@ author:mgoedtel
 manager:cfreemanwa
 ---
 # Identifying the Computer Experiencing a Problem
-This topic helps you answer questions such as “I see an alert that says logical disk defragmentation is high. Where is it high?”  
+This topic helps you answer questions such as "I see an alert that says logical disk defragmentation is high. Where is it high?"  
   
 ### To identify the computer experiencing a problem  
   

@@ -37,7 +37,7 @@ The procedures in this section describe how to manage incidents by using System 
   
 -   Using the E\-mail Incident template to create new incidents.  
   
--   Reviewing automatically created incidents, such as those incidents that are automatically created from System Center Operations Manager 2007 using the Operations Manager Alert connector.  
+-   Reviewing automatically created incidents, such as those incidents that are automatically created from System Center Operations Manager&nbsp;2007 using the Operations Manager Alert connector.  
   
 -   Reviewing and updating incidents that are created by end users who have sent requests by email.  
   

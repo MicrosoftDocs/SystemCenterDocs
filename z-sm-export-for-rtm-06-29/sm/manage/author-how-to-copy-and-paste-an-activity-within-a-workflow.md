@@ -29,7 +29,7 @@ ms.assetid: 2da4196a-225a-4fc3-ad1d-49197f487d59
 
 ---
 # How to Copy and Paste an Activity Within a Workflow
-If your workflow uses multiple activities of the same type \(such as multiple Add AD DS Computer To Group activities\), you can use copy and paste functionality in the System Center 2016 - Service Manager Authoring Tool to quickly duplicate activities. To duplicate the values of the activity’s properties with the activity, set values for the properties, and then copy and paste the activity.  
+If your workflow uses multiple activities of the same type \(such as multiple Add AD DS Computer To Group activities\), you can use copy and paste functionality in the System Center 2016 - Service Manager Authoring Tool to quickly duplicate activities. To duplicate the values of the activity's properties with the activity, set values for the properties, and then copy and paste the activity.  
   
 ### To copy and paste an activity  
   

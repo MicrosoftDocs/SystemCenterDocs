@@ -23,7 +23,7 @@ Because service for the ACS forwarder is part of the Operations Manager agent, y
   
 ### To remove an ACS collector  
   
-1.  Insert the Operations Manager CD in the management server that you selected to be the ACS collector.  
+1.  Insert the Operations Manager&nbsp;CD in the management server that you selected to be the ACS collector.  
   
 2.  On the root of the CD, double\-click **SetupOM.exe**. In the **Install** section, click **Audit collection services**. The Audit Collection Services Collector Setup wizard starts.  
   

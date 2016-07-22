@@ -23,4 +23,4 @@ translation.priority.ht:
   - zh-hk
   - zh-tw
 ---
-System Center 2012 – Data Protection Manager \(DPM\)
+System&nbsp;Center&nbsp;2012&nbsp;-&nbsp;Data&nbsp;Protection&nbsp;Manager \(DPM\)

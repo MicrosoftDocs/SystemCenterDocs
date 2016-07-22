@@ -16,7 +16,7 @@ manager:cfreemanwa
 This topic describes the differences between classes and groups in [!INCLUDE[om12long](../../om/manage/includes/om12long_md.md)], and how workflows, such as rules and monitors, apply to each. The following sections define classes and groups, and provide examples for applying overrides with the available override options.  
   
 ## Classes  
-In [!INCLUDE[om12short](../../om/manage/includes/om12short_md.md)], a *class* is a definition of an item that can be discovered and managed. A class can represent a computer, a database, a service, a disk, an application, or any other kind of object that requires monitoring. Monitors, rules, discoveries, overrides, and tasks can apply to a class. For example, **Windows Server 2003 Logical Disk** is a class that defines logical disks on a computer that is running the Windows Server 2003 operating system. A monitor that applies to the **Windows Server 2003 Logical Disk** class will be applied only to objects that meet that class definition.  
+In [!INCLUDE[om12short](../../om/manage/includes/om12short_md.md)], a *class* is a definition of an item that can be discovered and managed. A class can represent a computer, a database, a service, a disk, an application, or any other kind of object that requires monitoring. Monitors, rules, discoveries, overrides, and tasks can apply to a class. For example, **Windows Server&nbsp;2003 Logical Disk** is a class that defines logical disks on a computer that is running the Windows Server&nbsp;2003 operating system. A monitor that applies to the **Windows Server&nbsp;2003 Logical Disk** class will be applied only to objects that meet that class definition.  
   
 > [!NOTE]  
 > In the Operations console, the term *target* is used instead of *class*.  

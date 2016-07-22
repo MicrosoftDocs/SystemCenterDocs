@@ -104,7 +104,7 @@ The **Copy File** activity is now configured to copy files from the source folde
   
 4.  In the **Name** column, select **Name and path of the file**, and then click **OK**.  
   
-5.  Click the ellipse \(**…**\) button to the right of the **File encoding** box, and then select **auto**.  
+5.  Click the ellipse \(**...**\) button to the right of the **File encoding** box, and then select **auto**.  
   
 6.  In the **Line numbers** box, type **1\-END**, and then click **OK**.  
   
@@ -124,7 +124,7 @@ The Read Line activity is now configured.
   
 5.  On the **Details** tab in the **File** box, type **C:\\Copy\\Masterlog.txt**.  
   
-6.  Click the ellipse \(**…**\) button to the right of the **File encoding** box, and then select **auto**.  
+6.  Click the ellipse \(**...**\) button to the right of the **File encoding** box, and then select **auto**.  
   
 7.  Right\-click the **Text** box to select **Subscribe**, and then click **Published Data** to open the **Published Data** dialog box.  
   
@@ -146,7 +146,7 @@ The **Append File** activity is now configured to append files to the **Masterlo
   
 5.  Right\-click the **Junction** activity to select **Properties**.  
   
-6.  Click the ellipse \(**…**\) button next to the **Return data from** box, and then select **Copy File**. Click **OK**. This action configures the activity to return the same Published Data as the **Copy File** activity.  
+6.  Click the ellipse \(**...**\) button next to the **Return data from** box, and then select **Copy File**. Click **OK**. This action configures the activity to return the same Published Data as the **Copy File** activity.  
   
 7.  Click **Finish**.  
   
