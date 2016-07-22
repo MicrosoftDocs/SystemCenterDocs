@@ -5,7 +5,7 @@ ms.topic:  article
 author:  bwren
 ms.prod:  system-center-threshold
 keywords:  
-ms.date:  2016-06-28
+ms.date:  2016-07-21
 title:  orchestrator architecture
 ms.technology:  orchestrator
 ms.assetid:  7e0dc83c-cf86-4ccd-b356-a2842e086755
@@ -63,6 +63,3 @@ When a runbook server processes a job, it creates an *instance* of the runbook b
 
 ## Permissions
 Access to Orchestrator is provided by adding user accounts to a security group that is created during installation. This group can either be a domain group or a local group on the management server. Users of this group have full access to the Runbook Designer to create and modify runbooks and the Deployment Manager to deploy new Runbook Designers and runbook servers. Operators who have to start and stop runbooks but not create them can be granted this permission to individual runbooks and then use the Orchestration console.
-
-
-
