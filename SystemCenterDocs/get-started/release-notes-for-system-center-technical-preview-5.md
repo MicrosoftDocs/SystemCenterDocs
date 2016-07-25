@@ -6,20 +6,19 @@ author:  cfreemanwa
 ms.prod:  system-center-threshold
 keywords:  
 ms.date:  2016-07-01
-title:  Release Notes for System Center 2016
-ms.technology:  system-center-2016
+title:  Release Notes for System Center Technical Preview 5
 ms.assetid:  5fad5608-4cb7-48b0-aa31-35ca5cc2d560
 ---
 
-# Release Notes for System Center 2016
+# Release Notes for System Center Technical Preview 5
 
->Applies To: System Center 2016
+>Applies To: System Center 2016 Technical Preview 5
 
 ### The following set of notes lists known issues and steps to mitigate the issue. These notes only apply to System Center 2016.
 
 
-## System Center 2016 - Data Protection Manager Release Notes
-### The following release notes apply to System Center 2016 - Data Protection Manager.
+## System Center Technical Preview - Data Protection Manager Release Notes
+### The following release notes apply to System Center Technical Preview - Data Protection Manager.
 
 ### SQL Server Setup error
 **Description:** When you specify a SQL Server while setting up System Center 2016 - Data Protection Manager you may encounter an error.
@@ -49,8 +48,8 @@ ms.assetid:  5fad5608-4cb7-48b0-aa31-35ca5cc2d560
 ### DPM will not protect Windows Server 2016 Nano Server
 **Description:** You can't use DPM to back up Windows Server 2016 Nano Server.
 
-### Online recovery of SQL master database fails, after upgrading DPM to TP5 
-**Description:** If your DPM installation's SQL server master database is protected (i.e, backed up) to Azure, and you upgrade to System Center DPM 2016 and then attempt to restore using an online recovery point, the recovery job will fail. 
+### Online recovery of SQL master database fails, after upgrading DPM to TP5
+**Description:** If your DPM installation's SQL server master database is protected (i.e, backed up) to Azure, and you upgrade to System Center DPM 2016 and then attempt to restore using an online recovery point, the recovery job will fail.
 
 **Workaround:** To recover the master SQL database, you will need to recover the database as files using SQL Server.
 
@@ -65,15 +64,15 @@ ms.assetid:  5fad5608-4cb7-48b0-aa31-35ca5cc2d560
 
 **Workaround:** You can ignore this message. The recovery points are correct and work for restoration.
 
-### DPM notification message, "SQL is remote and agent needs to be installed." 
-**Description:** When protecting a SQL database with DPM, you may receive an error message that SQL is remote and the agent needs to be installed. 
+### DPM notification message, "SQL is remote and agent needs to be installed."
+**Description:** When protecting a SQL database with DPM, you may receive an error message that SQL is remote and the agent needs to be installed.
 
 **Workaround:** You can ignore this message. There is no action to take. The backup jobs will work correctly.
 
 ### Recovery point fails when Hyper-V VM is in a Saved or Paused state
 **Description:** If DPM attempts to take a recovery point snapshot when the Hyper-V VM is in a paused or saved state, the recovery point fails.
 
-**Workaound:** To avoid this problem, don't put the VM in a paused or saved state when it is being backed up. This issue only happens when online backup is enabled. Online back can be turned off by unchecking the **Backup (volume shadow copy)** in the VM settings -> Integration Services. Please note - this means backup is not going to be app consistent. 
+**Workaound:** To avoid this problem, don't put the VM in a paused or saved state when it is being backed up. This issue only happens when online backup is enabled. Online back can be turned off by unchecking the **Backup (volume shadow copy)** in the VM settings -> Integration Services. Please note - this means backup is not going to be app consistent.
 
 ### Recovery point volume size cannot be modified with UI
 **Description:** The Recovery point volume size cannot be modified with the UI. The field **Modify disk allocation for protected datasource** is disabled and cannot be be enabled.
@@ -85,8 +84,8 @@ Edit-DPMDiskAllocation -Datasource <Datasource object> -ShadowCopySize <new size
 ```
 
 
-## System Center 2016 - Operations Manager Release Notes
-### The following release notes apply to System Center 2016 - Operations Manager.
+## System Center Technical Preview - Operations Manager Release Notes
+### The following release notes apply to System Center Technical Preview - Operations Manager.
 
 ### Operations Manager Console will stop responding if you attempt to resolve a dependency while  importing a Management Pack
 **Description:**When you click **Import Management Packs** from the Administration section of the Operations Manager console, the console will display the **Resolve** button if the Management Pack is dependent on another Management Pack. If you click  Resolve you will see the **Dependency Warning**. If you click the **Resolve** button in the warning the Operations Manager console will stop responding.
@@ -150,13 +149,13 @@ System Center Operations Manager management server is not affected.
 4. Open the file properties of exe (right-click) and open the Digital Signatures tab.
 5. Select the certificate with Digest Algorithm as sha256 and click on Details.
 6. In the Digital Signature Details dialog box, Click on View Certificate.
-7. In the dialog box which appears next, click on Install Certificate. 
+7. In the dialog box which appears next, click on Install Certificate.
 8. In the Certificate Import Wizard, Set store location as - Local Machine. Click Next.
-9. Select the option - "Place all certificates in the following store" Browse to Trusted Publishers. 
+9. Select the option - "Place all certificates in the following store" Browse to Trusted Publishers.
 10. Click Next and then Finish.
 11. Refresh the Browser
-## System Center 2016 - Orchestrator and Service Management Automation Release Notes
-### The following release notes apply to System Center 2016 - Orchestrator and Service Management Automation .
+## System Center Technical Preview - Orchestrator and Service Management Automation Release Notes
+### The following release notes apply to System Center Technical Preview - Orchestrator and Service Management Automation .
 
 ### Sending telemetry data for SMA and SPF to Microsoft can only be turned off via PowerShell
 **Description:**The default  telemetry data setting is to send data to Microsoft. Since Service Management Automation and Service Provider Foundationdo not provide a user interface, you can only change this setting for Service Management Automation or Service Provider Foundation with a  PowerShell cmdlet.
@@ -172,16 +171,16 @@ System Center Operations Manager management server is not affected.
 
 **Description:** Orchestrator 2016 Integration packs have not been published.
 
-**Workaround:** Use Orchestrator 2012 Integration packs for evaluation purposes. 
+**Workaround:** Use Orchestrator 2012 Integration packs for evaluation purposes.
 
 
-## System Center 2016 - Service Manager Release Notes
-### The following release notes apply to System Center 2016 - Service Manager.
+## System Center Technical Preview - Service Manager Release Notes
+### The following release notes apply to System Center Technical Preview - Service Manager.
 
 ### The Create Exchange Connector Wizard Might Crash
 **Description:** When you run the Create Exchange Connector wizard, the wizard crashes when you click **Test Connection**.
- 
-**Workaround:** To work around this issue, avoid clicking **Test Connection** when you run the wizard. Instead, click **Next**, which internally tests the connection and does not crash the wizard. 
+
+**Workaround:** To work around this issue, avoid clicking **Test Connection** when you run the wizard. Instead, click **Next**, which internally tests the connection and does not crash the wizard.
 
 If the crash has already occurred, you can restart the wizard and use this workaround.
 
@@ -190,7 +189,7 @@ If the crash has already occurred, you can restart the wizard and use this worka
 1.  Newly created OM CI connectors will not sync properly. However, Operations Manager CI connectors created with previous releases continue to work properly.
 2.  Newly created Distributed Applications and Business Services with Operations Manager do not import.
 
-**Workaround:** See [https://www.microsoft.com/download/details.aspx?id=51955](https://www.microsoft.com/download/details.aspx?id=51955) to work around this problem. 
+**Workaround:** See [https://www.microsoft.com/download/details.aspx?id=51955](https://www.microsoft.com/download/details.aspx?id=51955) to work around this problem.
 
 ### Service Manager Setup Stops When Upgrading the Self Service Portal on a Management Server
 **Description:** This problem occurs when you try to conduct an in-place upgrade of the Service Manager 2012 R2 Self Service portal (for both the Silverlight and HTML versions) to the Self Service portal in Service Manager 2016 TP5, when the Self Service portal and Management Server are installed on the same server.
@@ -231,33 +230,33 @@ If you used the default instance of SQL Server, use Windows Explorer to drag Mic
 3.  Scroll through the rssrvpolicy.config file and locate th code segments. The following code shows an example of a segment.
 
     ```
-    
+
        class="UnionCodeGroup"
        version="1"
        PermissionSetName="FullTrust">
-       <IMembershipCondition 
+       <IMembershipCondition
           class="UrlMembershipCondition"
           version="1"
           Url="$CodeGen$/*"
        />
-   
+
     ```
 
 4.  Add the following segment in its entirety in the same section as the other segments.
 
     ```
-    
-       class="UnionCodeGroup" 
-       version="1" 
-       PermissionSetName="FullTrust" 
-       Name="Microsoft System Center Service Manager Reporting Code Assembly" 
-       Description="Grants the SCSM Reporting Code assembly full trust permission."> 
-       <IMembershipCondition 
+
+       class="UnionCodeGroup"
+       version="1"
+       PermissionSetName="FullTrust"
+       Name="Microsoft System Center Service Manager Reporting Code Assembly"
+       Description="Grants the SCSM Reporting Code assembly full trust permission.">
+       <IMembershipCondition
           class="StrongNameMembershipCondition"   
           version="1"
-          PublicKeyBlob="0024000004800000940000000602000000240000525341310004000001000100B5FC90E7027F67871E773A8FDE8938C81DD402BA65B9201D60593E96C492651E889CC13F1415EBB53FAC1131AE0BD333C5EE6021672D9718EA31A8AEBD0DA0072F25D87DBA6FC90FFD598ED4DA35E44C398C454307E8E33B8426143DAEC9F596836F97C8F74750E5975C64E2189F45DEF46B2A2B1247ADC3652BF5C308055DA9" 
+          PublicKeyBlob="0024000004800000940000000602000000240000525341310004000001000100B5FC90E7027F67871E773A8FDE8938C81DD402BA65B9201D60593E96C492651E889CC13F1415EBB53FAC1131AE0BD333C5EE6021672D9718EA31A8AEBD0DA0072F25D87DBA6FC90FFD598ED4DA35E44C398C454307E8E33B8426143DAEC9F596836F97C8F74750E5975C64E2189F45DEF46B2A2B1247ADC3652BF5C308055DA9"
     />
-  
+
     ```
 
 5.  Save the changes and close the XML editor.
@@ -400,8 +399,8 @@ If you used the default instance of SQL Server, use Windows Explorer to drag Mic
 
 **Workaround:** Switch the Cardinality Estimator (CE) for the SQL Server to use the SQL Server 2012 version. See the following article for more information on changing the Cardinality Estimator: [New functionality in SQL Server 2014 - Part 2 - New Cardinality Estimation](http://blogs.msdn.com/b/saponsqlserver/archive/2014/01/16/new-functionality-in-sql-server-2014-part-2-new-cardinality-estimation.aspx).
 
-## System Center 2016 - Virtual Machine Manager Release Notes
-### The following release notes apply to System Center 2016 - Virtual Machine Manager.
+## System Center Technical Preview - Virtual Machine Manager Release Notes
+### The following release notes apply to System Center Technical Preview - Virtual Machine Manager.
 
 ### Upgrading a cluster's functional level does not refresh the platform information for a File Server
 **Description:** If you upgrade the functional level for a cluster that includes a file server the new platform information will not be automatically updated in the VMM database.
@@ -445,7 +444,7 @@ While the Host Guardian Service URLs were being set on the host, the following e
 
 **Description:** Storing a VM in VMM Library will fail with the error below if you change the default port for BITS 443 while configuring the VMM Server running on a Nano Server installation.
 Error 2940 VMM is unable to complete the requested file transfer. The connection to the HTTP Server \<name> could not be established.
-    
+
 **Workaround:** Manually add the new port number to the Windows Firewall exceptions list of the Nano host using the below command:
 netsh advfirewall firewall add rule name="VMM" dir=in action=allow localport=<port no.> protocol=TCP
 
@@ -467,28 +466,28 @@ netsh advfirewall firewall add rule name="VMM" dir=in action=allow localport=<po
 
 **Workaround:** Deploy an SDN switch on any single physical NIC adaptor of the host.
 
-### Inconsistent Network Address Translation user interface 
+### Inconsistent Network Address Translation user interface
 
 **Description:** The existing NAT connections will not be visible when you close the network connectivity wizard and reopen it. Additionally, UI doesn't allow you to choose the IP Address from the pool for creating NAT connection.
 
 **Workaround:** User can still add the NAT connections through UI. To see the existing NAT connections, user can leverage Powershell cmdlets
-Get-SCNATConnection 
+Get-SCNATConnection
 
 ### vNIC connected to Network Controller managed network must be restarted on IP Address change
 
 **Description:** If there is a change in assigned IP address on any of the vNICs that are connected to a Network Controller managed VM Network, you need to manually restart the associated vNIC(s).
 
-**Workaround:** No workaround 
+**Workaround:** No workaround
 
-### IPV6 configuration is not supported for Network Controller managed infrastructure 
+### IPV6 configuration is not supported for Network Controller managed infrastructure
 
 **Description:** IPV6 configurations are not supported with System Center 2016 TP5 - VMM.
 
-**Workaround:** Use IPV4 configuration with VMM 2016 TP5. 
+**Workaround:** Use IPV4 configuration with VMM 2016 TP5.
 
 ### User needs to disable "Register this connection's address in DNS" option for Frontend and Backend IPs Software Load Balancer MUX VMs
 
-**Description:** For Front End and Back End IPs assigned to Software Load Balancer MUX Virtual Machines you need to uncheck the option for 'Register this connection's address in DNS'. Having this option checked may cause issues with the connectivity over these IP addresses. 
+**Description:** For Front End and Back End IPs assigned to Software Load Balancer MUX Virtual Machines you need to uncheck the option for 'Register this connection's address in DNS'. Having this option checked may cause issues with the connectivity over these IP addresses.
 
 **Workaround:** No workaround
 
@@ -500,7 +499,7 @@ Get-SCNATConnection
 
 
 ### Adding a host to VMM with Storage Spaces Direct enabled will result in a warning  
-**Description:**When hosts are added to a cluster with storage spaces direct enabled, a warning "Multipath I/O is not enabled for known storage arrays on host <\hostname>" is generated. 
+**Description:**When hosts are added to a cluster with storage spaces direct enabled, a warning "Multipath I/O is not enabled for known storage arrays on host <\hostname>" is generated.
 
 
 **Workaround:** None, you can ignore the warning.
@@ -510,5 +509,3 @@ user-interface
 **Description:** If you are creating a storage tier in the Storage Spaces Direct user interface, you will be limited to tiers using Hard Disk Drive (HDD) storage.
 
 **Workaround:** You can create tiered volumes with SSD storage via PowerShell.
-
-
