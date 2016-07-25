@@ -19,7 +19,7 @@ The [!INCLUDE[om12long](../../om/manage/includes/om12long_md.md)] Operations con
   
 ### To connect an Operations console to a management server  
   
-1.  Click **Start**, click **All Programs**, click **System Center Operations Manager 2012**, and click **Operations Console** to open the Operations console.  
+1.  Click **Start**, click **All Programs**, click **System Center Operations Manager&nbsp;2012**, and click **Operations Console** to open the Operations console.  
   
 2.  In the **Connect To Server** dialog box, type in the server name or select a server from the list. \(In the image above, the console has not yet connected to any management group. If the console has previously connected to any management servers, the servers will be listed in **Recent Connections**.\)  
   

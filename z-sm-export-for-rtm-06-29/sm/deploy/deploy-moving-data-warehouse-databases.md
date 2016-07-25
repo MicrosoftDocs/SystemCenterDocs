@@ -173,8 +173,8 @@ The following high\-level steps are required to move the Data Warehouse database
     >  Replace \<DWServerName\> with the name of your data warehouse management server.  
   
     ```  
-    $class= get-scclass –Name Microsoft.SystemCenter.ResourceAccessLayer.ASResourceStore –ComputerName <DWServerName>  
-    $OLAPServer= get-scclassinstance –class $class –ComputerName <DWServerName>  
+    $class= get-scclass -Name Microsoft.SystemCenter.ResourceAccessLayer.ASResourceStore -ComputerName <DWServerName>  
+    $OLAPServer= get-scclassinstance -class $class -ComputerName <DWServerName>  
     $OLAPServer.Server  
     ```  
   
@@ -193,9 +193,9 @@ The following high\-level steps are required to move the Data Warehouse database
   
     5.  Expand the **Data Sources** folder, and then double\-click **CMDataMart**.  
   
-    6.  In the **Data Source Properties – CMDataMart** dialog box, note the value of **Connection String**.  
+    6.  In the **Data Source Properties - CMDataMart** dialog box, note the value of **Connection String**.  
   
-    7.  Under **Security Settings**, click **Impersonation Account**, and then click the properties button \(…\), to open the **Impersonation Information** dialog box.  
+    7.  Under **Security Settings**, click **Impersonation Account**, and then click the properties button \(...\), to open the **Impersonation Information** dialog box.  
   
     8.  In the **Impersonation Information** dialog box, note the user name.  
   
@@ -339,7 +339,7 @@ The following high\-level steps are required to move the Data Warehouse database
 5.  In the center pane, copy the following command, and then click **Execute**.  
   
     ```  
-    sp_configure 'clr enabled', 1  
+    sp_configure&nbsp;'clr enabled',&nbsp;1  
     go  
     reconfigure  
     go  
@@ -616,11 +616,11 @@ The following high\-level steps are required to move the Data Warehouse database
   
 6.  Expand **Data Sources**, and then double\-click **CMDataMart**.  
   
-7.  In the **Data Source Properties – CMDataMart** dialog box, select **Connection string Provider\=SQLNCLI10.1;Data Source\=\<servername\>;Integrated Security\=SSPI;Initial Catalog\=CMDWDataMart**.  
+7.  In the **Data Source Properties - CMDataMart** dialog box, select **Connection string Provider\=SQLNCLI10.1;Data Source\=\<servername\>;Integrated Security\=SSPI;Initial Catalog\=CMDWDataMart**.  
   
 8.  Replace \<servername\> with the name of the computer running SQL Server that hosts the CMDWDataMart database.  
   
-9. You need to re\-enter the impersonation account password when you’ve completed updating the Data Source server. Select the ellipsis button to the right of **ImpersonateAccount** and then add the password in the **Impersonation Information** dialog box. Click **OK** to accept the changes.  
+9. You need to re\-enter the impersonation account password when you've completed updating the Data Source server. Select the ellipsis button to the right of **ImpersonateAccount** and then add the password in the **Impersonation Information** dialog box. Click **OK** to accept the changes.  
   
 10. Repeat the previous steps to update the connection strings for the DWDataMart and OMDataMart data sources.  
   

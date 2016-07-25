@@ -19,7 +19,7 @@ When you have a new Java application that you are learning about, you use Java A
 Following this strategy for monitoring a new Java application will help you get to know how the application behaves within your system and for your customer.  
   
 ### Start Monitoring with a Simple Monitored System and Short\-Term Settings  
-First, keep the configuration simple: monitor one application on one server. Second, when you first configure Java Application Performance Monitoring to monitor a new application, plan to keep the settings you implement long enough for you to understand some trends. A day’s worth of data should provide you with insight into the performance and usage patterns of the application.  
+First, keep the configuration simple: monitor one application on one server. Second, when you first configure Java Application Performance Monitoring to monitor a new application, plan to keep the settings you implement long enough for you to understand some trends. A day's worth of data should provide you with insight into the performance and usage patterns of the application.  
   
 ### Establish Baseline Performance Using Default Settings and Some Specific Settings  
 For the most part, you will want to keep default settings. The default settings ensure that you will see any large issues with the application and keep the impact on the monitored application at a minimum.  
@@ -32,7 +32,7 @@ To begin monitoring, here are some settings you might want to adjust as noted he
   
 -   Examine all exceptions. You need to know what kinds of exceptions are being thrown. Using known exception handlers limits the exceptions you will receive.  
   
-This can result in a lot of data—more than you would want for long\-term monitoring—but at first, this amount of data will be helpful as you will see trends, such as the kinds of paths customers are taking through the system and what normal performance looks like.  
+This can result in a lot of data-more than you would want for long\-term monitoring-but at first, this amount of data will be helpful as you will see trends, such as the kinds of paths customers are taking through the system and what normal performance looks like.  
   
 With the data collection complete, use the Application Advisor reports, such as Application Performance Analysis, to see how the monitored applications are looking. Using the report you will see what the average duration is for the heaviest \(longest running\) calls through the system as well as the maximum amount of time spent processing requests. This allows you to set customized smart thresholds based on real application performance. You will also see which functions are running faster than others, and you can create specific web page, web method, and function transactions for the critical methods so that you can ensure they are responding under a tighter SLA than the application as a whole. For more information on viewing reports, see how to scope and run an Application Advisor report in [Prioritizing Alerts by Using Application Advisor](../../om/manage/Prioritizing-Alerts-by-Using-Application-Advisor.md).  
   
@@ -41,7 +41,7 @@ Once you have established a baseline performance measure, begin to adjust the se
   
 -   Remove the custom settings and set thresholds based on the data collected.  
   
--   Add exception handlers for any application level “catch all” handlers that keep exceptions from going outside the application.  
+-   Add exception handlers for any application level "catch all" handlers that keep exceptions from going outside the application.  
   
 -   Add specialized transactions to monitor the performance of common methods that should be held to a stronger SLA than the application as a whole.  
   

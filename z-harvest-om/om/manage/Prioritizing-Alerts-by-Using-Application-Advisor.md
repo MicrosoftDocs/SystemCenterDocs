@@ -13,7 +13,7 @@ author:mgoedtel
 manager:cfreemanwa
 ---
 # Prioritizing Alerts by Using Application Advisor
-Application Advisor works with .NET Application Performance Monitoring in [!INCLUDE[om12long](../../om/manage/includes/om12long_md.md)] and helps you prioritize and manage which alerts to address. It identifies which applications are causing the most alerts within an environment. These are the applications you should investigate first because they are causing the most service level agreement \(SLA\) violations. Use Application Advisor as a first step in alert management and as a view into the overall health of an application. Essentially, Application Advisor helps you “follow the noise” and find out where the most events are occurring. Application failure and analysis reports let you view those individual applications in fine detail. Summary reports give you key information at a glance, such as the top\-five alerts to resolve.  
+Application Advisor works with .NET Application Performance Monitoring in [!INCLUDE[om12long](../../om/manage/includes/om12long_md.md)] and helps you prioritize and manage which alerts to address. It identifies which applications are causing the most alerts within an environment. These are the applications you should investigate first because they are causing the most service level agreement \(SLA\) violations. Use Application Advisor as a first step in alert management and as a view into the overall health of an application. Essentially, Application Advisor helps you "follow the noise" and find out where the most events are occurring. Application failure and analysis reports let you view those individual applications in fine detail. Summary reports give you key information at a glance, such as the top\-five alerts to resolve.  
   
 ### To scope and run an Application Advisor report  
   
@@ -23,7 +23,7 @@ Application Advisor works with .NET Application Performance Monitoring in [!INCL
   
     -   The Application Diagnostics console address is: http\(s\):\/\/<web host>\/AppDiagnostics  
   
-    To make access easy, add all three console URLs to your web browser’s favorites list.  
+    To make access easy, add all three console URLs to your web browser's favorites list.  
   
     To open Application Advisor, paste the Application Advisor URL into your browser. Application Advisor opens in the web browser window. Different application monitoring reports display in the context of the application features and services you configured when you created application groups to monitor.  
   
@@ -62,9 +62,9 @@ Application Advisor works with .NET Application Performance Monitoring in [!INCL
 9. Click **Apply** to save this report configuration and run the report.  
   
 ## Example: To Prioritize Alerts by Using the Problems Distribution Analysis Report  
-A first step in working with application monitoring alerts is to try to see which ones you should address first to have the greatest impact on the applications in your environment. This is the role of Application Advisor—to identify the applications causing the most alerts and to see the types of alerts being raised. This introduces a proactive approach to managing application health because you are smartly addressing the most problematic areas of your applications and not merely reacting to alerts as they arrive.  
+A first step in working with application monitoring alerts is to try to see which ones you should address first to have the greatest impact on the applications in your environment. This is the role of Application Advisor-to identify the applications causing the most alerts and to see the types of alerts being raised. This introduces a proactive approach to managing application health because you are smartly addressing the most problematic areas of your applications and not merely reacting to alerts as they arrive.  
   
-To show how Application Advisor prioritizes alerts, this walkthrough uses a report that is helpful when first investigating application issues: the Problems Distribution Analysis report. This report shows the distribution of application failure, performance, connectivity, and security problems across all monitored applications—and highlights the applications that are the most problematic. For the applications that contributed to the majority of problems, this report provides more details by showing application components and external dependencies that are the root cause of those problems.  
+To show how Application Advisor prioritizes alerts, this walkthrough uses a report that is helpful when first investigating application issues: the Problems Distribution Analysis report. This report shows the distribution of application failure, performance, connectivity, and security problems across all monitored applications-and highlights the applications that are the most problematic. For the applications that contributed to the majority of problems, this report provides more details by showing application components and external dependencies that are the root cause of those problems.  
   
 #### To interpret key elements of the Problems Distribution Analysis Report  
   

@@ -29,7 +29,7 @@ ms.assetid: 59124728-3fea-4acf-b17d-839ebefbf092
 
 ---
 # About Cube Partitioning
-Each measure group in a cube is divided into partitions, where a partition defines a portion of the fact data that is loaded into a measure group. SQL Server Analysis Services \(SSAS\) on SQL Server 2008 R2 Standard Edition allows only one partition per measure group, while multiple partitions are allowed in the Enterprise Edition. Partitions are completely transparent to the end user, but they have an important impact on performance and scalability. For example, partitions can be processed separately and in parallel. They can have different aggregation designs, although this was not implemented in System Center 2012 - Service Manager. You can reprocess a partition without affecting all the other partitions in a measure group. Also, SSAS automatically scans only the partitions that contain the necessary data for a query, which can vastly improve query performance.  
+Each measure group in a cube is divided into partitions, where a partition defines a portion of the fact data that is loaded into a measure group. SQL Server Analysis Services \(SSAS\) on SQL&nbsp;Server 2008 R2 Standard Edition allows only one partition per measure group, while multiple partitions are allowed in the Enterprise Edition. Partitions are completely transparent to the end user, but they have an important impact on performance and scalability. For example, partitions can be processed separately and in parallel. They can have different aggregation designs, although this was not implemented in System Center 2012 - Service Manager. You can reprocess a partition without affecting all the other partitions in a measure group. Also, SSAS automatically scans only the partitions that contain the necessary data for a query, which can vastly improve query performance.  
   
  Cube partitioning is performed on every data warehouse maintenance job run, which is hourly by default. The specific process module that runs is named ManageCubePartitions. It always runs after the CreateMartPartitions step. This dependency data is stored in the infra.moduletriggercondition table.  
   
@@ -57,7 +57,7 @@ Each measure group in a cube is divided into partitions, where a partition defin
   
  Remember the following about cube processing:  
   
--   Only measure groups that are targeted at facts contain multiple partitions in SQL Server 2008 R2 Standard Edition. By default, all measure groups and dimensions contain only one partition. Therefore, the partition does not have any boundary conditions.  
+-   Only measure groups that are targeted at facts contain multiple partitions in SQL&nbsp;Server 2008 R2 Standard Edition. By default, all measure groups and dimensions contain only one partition. Therefore, the partition does not have any boundary conditions.  
   
 -   The partition boundaries are defined by a query binding that is based on datekeys that match up to the datekeys for the corresponding fact partition in the etl.TablePartition table.  
   

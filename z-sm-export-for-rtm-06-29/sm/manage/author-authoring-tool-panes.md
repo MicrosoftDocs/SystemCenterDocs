@@ -59,4 +59,4 @@ In the System Center 2016 - Service Manager Authoring Tool, you can open a manag
  The **Activities Toolbox** pane displays activities that you can use as building blocks when you author workflows.  
   
 ## See Also  
- [Overview of the Authoring Tool for System Center 2012 – Service Manager](../Topic/Overview%20of%20the%20Authoring%20Tool%20for%20System%20Center%202012%20%E2%80%93%20Service%20Manager.md)
+ [Overview of the Authoring Tool for System Center 2012 - Service Manager](../Topic/Overview%20of%20the%20Authoring%20Tool%20for%20System%20Center%202012%20%E2%80%93%20Service%20Manager.md)

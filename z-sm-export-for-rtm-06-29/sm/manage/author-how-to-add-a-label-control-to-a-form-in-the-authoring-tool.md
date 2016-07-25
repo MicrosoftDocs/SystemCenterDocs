@@ -39,7 +39,7 @@ A **Label** control is used in the System Center 2016 - Service Manager Authorin
   
 2.  Drag the **Label** icon from the **Form Customization Toolbox** pane to the form. Click the **Label** control on the form.  
   
-3.  In the **Details** pane, select the **Binding Path** property. Click the ellipsis \(**…**\) icon, and then in the **Binding Path** dialog box, select the class property that you want the **Label** control to bind to.  
+3.  In the **Details** pane, select the **Binding Path** property. Click the ellipsis \(**...**\) icon, and then in the **Binding Path** dialog box, select the class property that you want the **Label** control to bind to.  
   
      Alternatively, if you want the **Label** control to display a static string, select the **Content** property and type a string to replace the default Label\_1 string. It will be displayed on the form.  
   

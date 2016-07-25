@@ -33,10 +33,10 @@ You can use PerformancePoint Dashboard Designer in System Center 2012 - Service 
   
  You can use Dashboard Designer to define multiple filters for a dashboard, such as filters that are defined over time, by geography, or against different KPI destinations. When you publish dashboards to a SharePoint site, end users can navigate them by using page filters and drill\-up and drill\-down functionality. You can also use Dashboard Designer to create views and elements, such as scorecard elements, KPIs, data sources, indicators, and reports for use in dashboards.  
   
- This section is an example showing how you can create a PerformancePoint Services dashboard using the Analysis Services ServiceManager WorkItems Cube. This involves creating a data source for the cube and then creating a scorecard that and creating a resolved incidents KPI. Then, you can create an example single\-page dashboard using a filter, a scorecard, and a report. Finally, you complete the example by exploring the deployed dashboard and its interactive features. You must have Microsoft SharePoint Designer 2010 installed to complete the examples in the following topics.  
+ This section is an example showing how you can create a PerformancePoint Services dashboard using the Analysis Services ServiceManager WorkItems Cube. This involves creating a data source for the cube and then creating a scorecard that and creating a resolved incidents KPI. Then, you can create an example single\-page dashboard using a filter, a scorecard, and a report. Finally, you complete the example by exploring the deployed dashboard and its interactive features. You must have Microsoft SharePoint&nbsp;Designer&nbsp;2010 installed to complete the examples in the following topics.  
   
 > [!IMPORTANT]  
->  You must have the Enterprise edition of SharePoint Designer 2010 to create SharePoint PerformancePoint dashboards. For more information about upgrading to the Enterprise edition, see [Upgrade from a SharePoint Server 2010 Standard CAL to an Enterprise CAL](http://technet.microsoft.com/library/cc261946.aspx).  
+>  You must have the Enterprise edition of SharePoint&nbsp;Designer&nbsp;2010 to create SharePoint PerformancePoint dashboards. For more information about upgrading to the Enterprise edition, see [Upgrade from a SharePoint Server 2010 Standard CAL to an Enterprise CAL](http://technet.microsoft.com/library/cc261946.aspx).  
   
  For more information about PerformancePoint Dashboard Designer, see [PerformancePoint Dashboard Designer](http://technet.microsoft.com/library/bb821195\(office.12\).aspx).  
   
@@ -72,10 +72,10 @@ You can use PerformancePoint Dashboard Designer in System Center 2012 - Service 
   
 ## Other Resources for This Component  
   
--   TechNet Library main page for [System Center 2012 – Service Manager](http://go.microsoft.com/fwlink/p/?LinkId=220655)  
+-   TechNet Library main page for [System Center 2012 - Service Manager](http://go.microsoft.com/fwlink/p/?LinkId=220655)  
   
--   [Operations Guide for System Center 2012 – Service Manager](http://go.microsoft.com/fwlink/p/?LinkId=220656)  
+-   [Operations Guide for System Center 2012 - Service Manager](http://go.microsoft.com/fwlink/p/?LinkId=220656)  
   
--   [Administrator's Guide for System Center 2012 – Service Manager](http://go.microsoft.com/fwlink/p/?LinkId=209669)  
+-   [Administrator's Guide for System Center 2012 - Service Manager](http://go.microsoft.com/fwlink/p/?LinkId=209669)  
   
--   [Planning Guide for System Center 2012 – Service Manager](http://go.microsoft.com/fwlink/p/?LinkId=209672)
+-   [Planning Guide for System Center 2012 - Service Manager](http://go.microsoft.com/fwlink/p/?LinkId=209672)

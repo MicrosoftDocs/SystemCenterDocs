@@ -31,7 +31,7 @@ ms.assetid: 8a74ac01-c003-4e0f-8f91-3db3d4fd3aba
 # How to Reactivate a Resolved Parent Incident
 In System Center 2012 - Service Manager, the help desk analyst  XE "Release Manager" can reactivate a parent incident, and then Service Manager will automatically activate all its child incidents, if the Service Manager administrator has configured Incident settings accordingly. This method of reactivating incidents can help the analyst quickly activate many child incidents. Use the following procedure to reactivate a parent incident.  
   
- Depending on parent incident settings in the Administration workspace, behavior of automatic child incident resolution and reactivation varies. For more information about automatic incident resolution, see [How to Set Parent Incident Options](http://go.microsoft.com/fwlink/p/?LinkId=229704) in the Administrator’s Guide for System Center 2012 - Service Manager.  
+ Depending on parent incident settings in the Administration workspace, behavior of automatic child incident resolution and reactivation varies. For more information about automatic incident resolution, see [How to Set Parent Incident Options](http://go.microsoft.com/fwlink/p/?LinkId=229704) in the Administrator's Guide for System Center 2012 - Service Manager.  
   
 ### To reactivate a parent incident  
   

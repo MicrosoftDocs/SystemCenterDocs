@@ -33,9 +33,9 @@ This section includes information about the hardware and software requirements f
   
  The hardware and software requirements described in this section are based on the following system environment and conditions:  
   
--   Up to 20,000 users, with up to 40 to 50 IT analysts providing concurrent support. Up to 50,000 users and up to 80 to 100 IT analysts can be supported if 32 gigabytes \(GB\) of memory is installed on the servers running Microsoft SQL Server.  
+-   Up to 20,000 users, with up to 40 to 50 IT analysts providing concurrent support. Up to 50,000 users and up to 80 to 100 IT analysts can be supported if 32 gigabytes \(GB\) of memory is installed on the servers running Microsoft SQL&nbsp;Server.  
   
--   Up to 20,000 supported computers, assuming up to 10 to 12 configuration items \(installed software, software updates, and hardware components\) per computer. Up to 50,000 computers can be supported if 32 GB of memory is installed on the servers running SQL Server.  
+-   Up to 20,000 supported computers, assuming up to 10 to 12 configuration items \(installed software, software updates, and hardware components\) per computer. Up to 50,000 computers can be supported if 32&nbsp;GB of memory is installed on the servers running SQL&nbsp;Server.  
   
 -   5,000 incidents per week with three months of retention, for a total of 60,000 incidents in the Service Manager database for the 20,000\-computer configuration, and 2.5 times that for the 50,000\-computer configuration.  
   
@@ -55,12 +55,12 @@ This section includes information about the hardware and software requirements f
   
 ## Other Resources for This Component  
   
--   TechNet Library main page for [System Center 2012 – Service Manager](http://go.microsoft.com/fwlink/p/?LinkId=220655)  
+-   TechNet Library main page for [System Center 2012 - Service Manager](http://go.microsoft.com/fwlink/p/?LinkId=220655)  
   
--   [Planning Guide for System Center 2012 – Service Manager](http://go.microsoft.com/fwlink/p/?LinkId=209672)  
+-   [Planning Guide for System Center 2012 - Service Manager](http://go.microsoft.com/fwlink/p/?LinkId=209672)  
   
--   [Deployment Guide for System Center 2012 – Service Manager](http://go.microsoft.com/fwlink/p/?LinkId=209670)  
+-   [Deployment Guide for System Center 2012 - Service Manager](http://go.microsoft.com/fwlink/p/?LinkId=209670)  
   
--   [Administrator’s Guide for System Center 2012 – Service Manager](http://go.microsoft.com/fwlink/p/?LinkId=209669)  
+-   [Administrator's Guide for System Center 2012 - Service Manager](http://go.microsoft.com/fwlink/p/?LinkId=209669)  
   
--   [Operations Guide for System Center 2012 – Service Manager](http://go.microsoft.com/fwlink/p/?LinkId=220656)
+-   [Operations Guide for System Center 2012 - Service Manager](http://go.microsoft.com/fwlink/p/?LinkId=220656)

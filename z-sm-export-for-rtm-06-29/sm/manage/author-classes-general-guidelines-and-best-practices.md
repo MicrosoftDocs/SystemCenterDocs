@@ -85,7 +85,7 @@ Use the following guidelines and best practices when you are customizing classes
 -   Extend each of the relevant concrete classes that derive from the abstract class.  
   
 ## Improve Simple Search for Work Item Classes  
- When you define a custom class that is derived from the “**System.WorkItem**” class, we recommend that you store the **DisplayName** property of that class in the following format: **WorkItem.ID\<SPACE\>WorkItem.Title**.  
+ When you define a custom class that is derived from the "**System.WorkItem**" class, we recommend that you store the **DisplayName** property of that class in the following format: **WorkItem.ID\<SPACE\>WorkItem.Title**.  
   
  This improves simple search. Simple search searches only the **DisplayName** property, and by explicitly including the **Title** property value and the **ID** property value in the **DisplayName** property value, the results of simple search are improved. This is because the user can search either by a word in the title or by ID.  
   

@@ -101,7 +101,7 @@ Use the following command\-line procedures to deploy the web content server and 
     ```  
   
 ## Deploying the Web Content Server and the SharePoint Website on the Same Computer  
- Use the following command\-line procedure to deploy both Self-Service Portal elements—the web content server and the SharePoint website—on the same computer.  
+ Use the following command\-line procedure to deploy both Self-Service Portal elements-the web content server and the SharePoint website-on the same computer.  
   
 #### Deploy the web content server and the SharePoint website on the same computer  
   

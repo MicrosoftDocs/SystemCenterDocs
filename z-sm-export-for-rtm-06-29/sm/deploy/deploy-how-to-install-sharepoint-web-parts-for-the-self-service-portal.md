@@ -35,7 +35,7 @@ robots: noindex,nofollow
 <developerHowToDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://ddue.schemas.microsoft.com/authoring/2003/5 http://clixdevr3.blob.core.windows.net/ddueschema/developer.xsd">
   <introduction>
     <para>The home page for the <token>smssp</token> in <token>smlong12</token> is on the SharePoint Web Parts server. We recommend that you use Secure Sockets Layer (SSL) and install the SharePoint Web Parts using port 443.</para>
-    <para>When you installed Internet Information Services (IIS), the default website was configured to use port 80. If you want to install the SharePoint Web Parts on port 80, you must first move the default website in IIS to a different port—for example, port 8080—and then install the SharePoint Web Parts on port 80.</para>
+    <para>When you installed Internet Information Services (IIS), the default website was configured to use port 80. If you want to install the SharePoint Web Parts on port 80, you must first move the default website in IIS to a different port-for example, port 8080-and then install the SharePoint Web Parts on port 80.</para>
     <para>You can use this information to share Excel workbooks using SharePoint. For an example, see <externalLink><linkText>Configure Excel Services for a BI test environment</linkText><linkUri>http://go.microsoft.com/fwlink/p/?LinkId=232429</linkUri></externalLink>.</para>
     <para>Use the following procedure to install the SharePoint Web Parts server.</para>
   </introduction>
@@ -96,7 +96,7 @@ robots: noindex,nofollow
       </step>
       <step>
         <content>
-          <para>On the <ui>Configure the account for the Service Manager SharePoint app pool</ui> page, type a domain user and password, and then click <ui>Test Credentials</ui>. After you verify that you received a “The credentials were accepted” message, click <ui>Next</ui>.</para>
+          <para>On the <ui>Configure the account for the Service Manager SharePoint app pool</ui> page, type a domain user and password, and then click <ui>Test Credentials</ui>. After you verify that you received a "The credentials were accepted" message, click <ui>Next</ui>.</para>
         </content>
       </step>
       <step>

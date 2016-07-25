@@ -31,7 +31,7 @@ ms.assetid: 4c083343-c3b2-47a6-8cd9-ca5fc0a99a05
 # Using and Managing Standard Reports
 This section describes how to use standard reports in System Center 2012 - Service Manager.  
   
- The simple reporting infrastructure that is included in both System Center Service ManagerÂ 2010 and System Center 2012 - Service Manager is built on SQL Server Reporting Services \(SSRS\), where data is accessed from the Service Manager data warehouse. The SSRS infrastructure provides for basic reporting functionality, such as report\-level security, report subscriptions, browser\-based access to reports, linked reports, and customization. This reporting functionally is similar to the experience that is included with System Center Operations Manager 2007 R2.  
+ The simple reporting infrastructure that is included in both System Center Service ManagerÂ&nbsp;2010 and System Center 2012 - Service Manager is built on SQL&nbsp;Server Reporting Services \(SSRS\), where data is accessed from the Service Manager data warehouse. The SSRS infrastructure provides for basic reporting functionality, such as report\-level security, report subscriptions, browser\-based access to reports, linked reports, and customization. This reporting functionally is similar to the experience that is included with System Center Operations Manager&nbsp;2007&nbsp;R2.  
   
  The Reporting workspace contains the catalog of reports that users can run on demand. Reports are viewable for all Service Manager console users. If users can view work items and have permission to the SystemCenter and ServiceManager folders on the SSRS server, they can also view reports in work item task lists. Like in Operations Manager, you can run a report in context. For example, you can select a computer in a view in the console and then run the Computer Details report about that computer. Any user can export report data from a report they view. Exported reports are saved in a variety of file formats.  
   
@@ -81,10 +81,10 @@ This section describes how to use standard reports in System Center 2012 - Servi
   
 ## Other Resources for This Component  
   
--   TechNet Library main page for [System Center 2012 – Service Manager](http://go.microsoft.com/fwlink/p/?LinkId=220655)  
+-   TechNet Library main page for [System Center 2012 - Service Manager](http://go.microsoft.com/fwlink/p/?LinkId=220655)  
   
--   [Operations Guide for System Center 2012 – Service Manager](http://go.microsoft.com/fwlink/p/?LinkId=220656)  
+-   [Operations Guide for System Center 2012 - Service Manager](http://go.microsoft.com/fwlink/p/?LinkId=220656)  
   
--   [Administrator's Guide for System Center 2012 – Service Manager](http://go.microsoft.com/fwlink/p/?LinkId=209669)  
+-   [Administrator's Guide for System Center 2012 - Service Manager](http://go.microsoft.com/fwlink/p/?LinkId=209669)  
   
--   [Planning Guide for System Center 2012 – Service Manager](http://go.microsoft.com/fwlink/p/?LinkId=209672)
+-   [Planning Guide for System Center 2012 - Service Manager](http://go.microsoft.com/fwlink/p/?LinkId=209672)

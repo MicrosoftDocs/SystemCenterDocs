@@ -13,7 +13,7 @@ author:mgoedtel
 manager:cfreemanwa
 ---
 # Getting Information from Operations Manager
-Operations Manager, a component of System Center 2012, collects an immense amount of information about your environment, such as events, performance data, health states, and availability. To use Operations Manager effectively, you need to know how to get the information that is important to you.  
+Operations Manager, a component of System Center&nbsp;2012, collects an immense amount of information about your environment, such as events, performance data, health states, and availability. To use Operations Manager effectively, you need to know how to get the information that is important to you.  
   
 > [!NOTE]  
 > Querying the Operational database directly is not supported because doing so can adversely impact performance and table structure can change at any time.  
@@ -46,7 +46,7 @@ Operations Manager, a component of System Center 2012, collects an immense amou
   
 -   [Not Monitored and Gray Agents](../../om/manage/Not-Monitored-and-Gray-Agents.md)  
   
-    This topic explains what is going on when you see agents in a “gray” state or labeled as “not monitored”.  
+    This topic explains what is going on when you see agents in a "gray" state or labeled as "not monitored".  
   
 -   [How to View All Rules and Monitors Running on an Agent-Managed Computer](../../om/manage/How-to-View-All-Rules-and-Monitors-Running-on-an-Agent-Managed-Computer.md)  
   

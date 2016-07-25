@@ -48,7 +48,7 @@ To specify a date\/time format, you must enter the codes that represent each par
 |MMMM|The name of the month spelled in full. This format is supported only for output time. **Note:** This format is only supported for the output format.|  
 |d|Day as a number from 1 to 31. If the day number is a single\-digit number, it is displayed without a leading zero.|  
 |dd|Day in two digits. If the day number is a single\-digit number, it is displayed with a leading zero.|  
-|ddd|The abbreviated name of the day of the week in three letters. For example, Saturday is abbreviated as “Sat”.|  
+|ddd|The abbreviated name of the day of the week in three letters. For example, Saturday is abbreviated as "Sat".|  
 |dddd|The full name of the day of the week. For example, Saturday is displayed in full. **Note:** This format is only supported for the output format.|  
 |h|Hour as a number from 1 to 12 when using the 12\-hour clock. If the hour number is a single\-digit number, it is displayed without a leading zero.|  
 |hh|Hour in two digits using the 12\-hour clock. If the hour number is a single\-digit number, it is displayed with a leading zero.|  

@@ -46,7 +46,7 @@ This activity controls the sequence of activities within a workflow based on a B
  None.  
   
 ## Remarks  
- For more information about the **IfElse**activity, see [IfElseActivity Class](http://go.microsoft.com/fwlink/p/?LinkID=164775) in the .NET Framework 4 Class Library.  
+ For more information about the **IfElse**activity, see [IfElseActivity Class](http://go.microsoft.com/fwlink/p/?LinkID=164775) in the .NET&nbsp;Framework&nbsp;4 Class Library.  
   
 ## Example  
  None.  

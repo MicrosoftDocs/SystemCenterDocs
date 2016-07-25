@@ -69,7 +69,7 @@ You can use the following procedures to validate the single\-computer installati
   
 ### To validate the Service Manager database  
   
-1.  On the physical computer, click **Start**, click **All Programs**, click **Microsoft SQL Server 2008**, and then click **SQL Server Management Studio**.  
+1.  On the physical computer, click **Start**, click **All Programs**, click **Microsoft SQL Server&nbsp;2008**, and then click **SQL Server Management Studio**.  
   
 2.  In the **Connect to Server** dialog box, follow these steps:  
   
@@ -87,7 +87,7 @@ You can use the following procedures to validate the single\-computer installati
   
 ### To validate the data warehouse installation  
   
-1.  On the physical computer that hosts the data warehouse databases, click **Start**, click **All Programs**, click **Microsoft SQL Server 2008**, and then click **SQL Server Management Studio**.  
+1.  On the physical computer that hosts the data warehouse databases, click **Start**, click **All Programs**, click **Microsoft SQL&nbsp;Server&nbsp;2008**, and then click **SQL&nbsp;Server Management Studio**.  
   
 2.  In the **Connect to Server** dialog box, complete these steps:  
   
@@ -107,4 +107,4 @@ You can use the following procedures to validate the single\-computer installati
   
 8.  Verify that the **DWASDataBase** database is listed.  
   
-9. Exit Microsoft SQL Server Management Studio.
+9. Exit Microsoft SQL&nbsp;Server Management Studio.

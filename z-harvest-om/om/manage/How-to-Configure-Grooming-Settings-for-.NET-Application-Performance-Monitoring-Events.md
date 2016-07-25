@@ -41,7 +41,7 @@ In Application Diagnostics you can select how many APM events you want in the Op
   
 3.  Change the **Event data options** to define how you want to groom the database, and then click **OK**.  
   
-## Using Application Advisor to configure grooming settings for “Deleted” or “By Design” APM events in Data Warehouse  
+## Using Application Advisor to configure grooming settings for "Deleted" or "By Design" APM events in Data Warehouse  
 In Application Advisor you can choose the how long you want to keep APM events that have a Deleted or By Design status in Data Warehouse.  
   
 ![Application Advisor Operations Database page](../../om/manage/media/AppMonitoring_Grooming.gif "AppMonitoring_Grooming")  
@@ -67,7 +67,7 @@ The Data Transfer rule lets you override time\-based grooming for the Data Wareh
 > [!WARNING]  
 > Disabling this rule or overriding any other setting will have an adverse negative impact on the overall health, functionality, and consistency of the APM feature, the Data Warehouse, and Application Advisor reports, among other things.  
   
-The Operations Manager APM Data Transfer Rule is targeted to the Operations Manager APM Data Transfer Service object and has two overrides for those settings: for events and for counters. The setting for Events applies to events that had not been previously marked as “Deleted” or “By Design”, for which grooming is controlled by Advisor, as described in the previous paragraph. If events have been left in status “New”, then they will be retained in the Data Warehouse for as many days as this setting indicates.  
+The Operations Manager APM Data Transfer Rule is targeted to the Operations Manager APM Data Transfer Service object and has two overrides for those settings: for events and for counters. The setting for Events applies to events that had not been previously marked as "Deleted" or "By Design", for which grooming is controlled by Advisor, as described in the previous paragraph. If events have been left in status "New", then they will be retained in the Data Warehouse for as many days as this setting indicates.  
   
 The Performance Counter setting is intended for hourly performance aggregations, which potentially can take a lot of space. There is no configurable setting for daily performance aggregations. The default for this is 182. Typically, daily aggregations consume a lot less disk space.  
   

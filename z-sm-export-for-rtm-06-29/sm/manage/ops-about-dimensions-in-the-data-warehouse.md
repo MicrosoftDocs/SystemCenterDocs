@@ -17,9 +17,9 @@ A dimension in the Service Manager data warehouse in System Center 2012 - Servic
 
  Suppose that a user wants a report in Service Manager to display some information about the attributes for the computers in a particular domain. For example, the user may want to know the IP address, number of logical processors, and Domain Name System \(DNS\) name for each computer. Using dimensions, the user can bring the data over from Service Manager to the data warehouse where reports can query and display this data for each computer.  
 
- In the Service Manager data warehouse, a dimension always targets a single class. The dimension attributes then map to the target class’s properties. In this example, to get the information about the attributes from a computer, there is a computer dimension that is targeted at the Microsoft.Windows.Computers class.  
+ In the Service Manager data warehouse, a dimension always targets a single class. The dimension attributes then map to the target class's properties. In this example, to get the information about the attributes from a computer, there is a computer dimension that is targeted at the Microsoft.Windows.Computers class.  
 
- In certain cases that are described in further detail in this topic, a dimension may also map to the properties of a target class’s base and derived classes. Therefore, while a dimension may be roughly analogous to a management pack class, it can also contain properties that are within that management pack class’s hierarchy.  
+ In certain cases that are described in further detail in this topic, a dimension may also map to the properties of a target class's base and derived classes. Therefore, while a dimension may be roughly analogous to a management pack class, it can also contain properties that are within that management pack class's hierarchy.  
 
  You can see an example of how a dimension is used in the Activity Distribution report. In the report, under **Select affected configuration item \(optional\)**, when you click **Add**, the **Select dimension objects** box opens and you can search for dimension instances in the ConfigItemDim dimension. You can filter on the **Display Name** property. When you select **All Windows Computers** as the dimension object, the report header is updated with the selected filter value. When you run the report, only activities that affect the selected configuration item, **All Windows Computers**, are displayed.  
 
@@ -54,17 +54,17 @@ A dimension in the Service Manager data warehouse in System Center 2012 - Servic
 |Attribute|Description|  
 |---------------|-----------------|  
 |ID|A unique identifier for the dimension element. This is also the table name of the dimension in the data warehouse and datamart.|  
-|Accessibility|This element should always be set to “Public”.|  
+|Accessibility|This element should always be set to "Public".|  
 |Target|The management pack class name that the dimension is targeting.|  
 |InferredDimension|This value is always to true.|  
 |HierarchySupport|The hierarchy of classes that help define the properties that will be included in the dimension. There are three possible values:<br /><br /> 1.  Exact<br />2.  IncludeExtendedClassProperties<br />3.  IncludeDerivedClassProperties<br /><br /> For details of these values, see the next sections of this topic.|  
-|Extends|Optional boolean flag to indicate whether the dimension is a base dimension or is extending another dimension. After a dimension has been defined, you can use the Service Manager data warehouse to “extend” the dimension and add more attributes at a later point in time.<br /><br /> If the Extends flag is set to true, HierarchySupport must be set to Exact and all the extension attributes must be listed. By default, this flag is set to false.|  
+|Extends|Optional boolean flag to indicate whether the dimension is a base dimension or is extending another dimension. After a dimension has been defined, you can use the Service Manager data warehouse to "extend" the dimension and add more attributes at a later point in time.<br /><br /> If the Extends flag is set to true, HierarchySupport must be set to Exact and all the extension attributes must be listed. By default, this flag is set to false.|  
 |Reconcile|Optional boolean flag that indicates whether two instances, which are otherwise identical and only differ with regard to which source the data originated from, should be consolidated into one single row of data. By default, this flag is set to false.<br /><br /> Dimensions that are related to configuration items should have this flag set to true, and dimensions that are related to work items have this flag set to false.|  
 
  The HierarchySupport attribute determines which classes are processed and the specific attributes that are included in the dimension. Details for each possible value are described in the following sections.  
 
 ## Exact  
- When the HierarchySupport attribute is Exact, you must manually define each attribute that should be included in the dimension using the \<InclusionAttribute\> tag. These attributes can be either from the target class or any of the target class’s base and derived classes. Each inclusion attribute corresponds to one class property. The following table describes each of the attributes in the \<InclusionAttribute\> tag.  
+ When the HierarchySupport attribute is Exact, you must manually define each attribute that should be included in the dimension using the \<InclusionAttribute\> tag. These attributes can be either from the target class or any of the target class's base and derived classes. Each inclusion attribute corresponds to one class property. The following table describes each of the attributes in the \<InclusionAttribute\> tag.  
 
 |Attribute|Description|  
 |---------------|-----------------|  

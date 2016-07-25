@@ -34,7 +34,7 @@ robots: noindex,nofollow
 <?xml version="1.0" encoding="utf-8"?>
 <developerHowToDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://ddue.schemas.microsoft.com/authoring/2003/5 http://clixdevr3.blob.core.windows.net/ddueschema/developer.xsd">
   <introduction>
-    <para>When you installed Internet Information Services (IIS), the default website was configured to use port 80. The SharePoint Web Parts is the home page for the <token>smssp</token>. If you want to install the SharePoint Web Parts on port 80, you must first move the default website in IIS to a different port—for example, port 8080—and then install the SharePoint Web Parts on port 80.</para>
+    <para>When you installed Internet Information Services (IIS), the default website was configured to use port 80. The SharePoint Web Parts is the home page for the <token>smssp</token>. If you want to install the SharePoint Web Parts on port 80, you must first move the default website in IIS to a different port-for example, port 8080-and then install the SharePoint Web Parts on port 80.</para>
     <para>Use the following procedure to move the IIS default website to port 8080 so that you can install the SharePoint website on port 80.</para>
   </introduction>
   <procedure>

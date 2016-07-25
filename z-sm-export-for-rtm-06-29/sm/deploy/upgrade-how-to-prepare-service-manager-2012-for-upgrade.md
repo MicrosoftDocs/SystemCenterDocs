@@ -50,7 +50,7 @@ This topic describes how to prepare your System Center 2012 - Service Manager en
 2.  Type the following commands, and then press ENTER after each command:  
   
     ```  
-    Set-ExecutionPolicy –force RemoteSigned  
+    Set-ExecutionPolicy -force RemoteSigned  
     ```  
   
     ```  
@@ -63,41 +63,41 @@ This topic describes how to prepare your System Center 2012 - Service Manager en
     Get-SCDWJob  
     ```  
   
-3.  A list of the data warehouse jobs appears. Use this list in the next procedure, "To disable data warehouse job schedules by using Windows PowerShell cmdlets.”  
+3.  A list of the data warehouse jobs appears. Use this list in the next procedure, "To disable data warehouse job schedules by using Windows PowerShell cmdlets."  
   
 ### To disable data warehouse job schedules by using Windows PowerShell cmdlets  
   
 1.  Type the following commands, and then press ENTER after each command:  
   
     ```  
-    Disable-SCDWJobSchedule –JobName Extract_<data warehouse management group name>  
+    Disable-SCDWJobSchedule -JobName Extract_<data warehouse management group name>  
     ```  
   
     ```  
-    Disable-SCDWJobSchedule –JobName Extract_<Service Manager management group name>  
+    Disable-SCDWJobSchedule -JobName Extract_<Service Manager management group name>  
     ```  
   
     ```  
-    Disable-SCDWJobSchedule –JobName Transform.Common  
+    Disable-SCDWJobSchedule -JobName Transform.Common  
     ```  
   
     ```  
-    Disable-SCDWJobSchedule –JobName Load.Common  
+    Disable-SCDWJobSchedule -JobName Load.Common  
     ```  
   
     ```  
-    Disable-SCDWJobSchedule –JobName DWMaintenance  
+    Disable-SCDWJobSchedule -JobName DWMaintenance  
     ```  
   
     ```  
-    Disable-SCDWJobSchedule –JobName MPSyncJob  
+    Disable-SCDWJobSchedule -JobName MPSyncJob  
     ```  
   
     ```  
-    Start-SCDWJob –JobName MPSyncJob  
+    Start-SCDWJob -JobName MPSyncJob  
     ```  
   
-     The last command to start the **MPSyncJob** will enable the extraction, transformation, and load \(ETL\) jobs to run to completion. After that, because all the schedules have been disabled, the jobs will stop. To close the Windows PowerShell window, type **exit**.  
+     The last command to start the **MPSyncJob** will enable the extraction, transformation, and load \(ETL\) jobs to run to completion. After that, because all the schedules have been disabled, the jobs will stop. To close the Windows&nbsp;PowerShell window, type **exit**.  
   
 ### To confirm that the data warehouse jobs have stopped running  
   
@@ -114,46 +114,46 @@ This topic describes how to prepare your System Center 2012 - Service Manager en
     ```  
     ;WITH FactName  
     AS (  
-           select w.WarehouseEntityName from etl.WarehouseEntity w  
-           join etl.WarehouseEntityType t on w.WarehouseEntityTypeId = t.WarehouseEntityTypeId  
-           where t.WarehouseEntityTypeName = 'Fact'  
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; select w.WarehouseEntityName from etl.WarehouseEntity w  
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; join etl.WarehouseEntityType t on w.WarehouseEntityTypeId = t.WarehouseEntityTypeId  
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; where t.WarehouseEntityTypeName = 'Fact'  
     ),FactList  
     AS (  
-        SELECT  PartitionName, p.WarehouseEntityName,  
-                RANK() OVER ( PARTITION BY p.WarehouseEntityName ORDER BY PartitionName ASC ) AS RK  
-        FROM    etl.TablePartition p  
-           join FactName f on p.WarehouseEntityName = f.WarehouseEntityName  
+    &nbsp;&nbsp;&nbsp; SELECT&nbsp; PartitionName, p.WarehouseEntityName,  
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; RANK() OVER ( PARTITION BY p.WarehouseEntityName ORDER BY PartitionName ASC ) AS RK  
+    &nbsp;&nbsp;&nbsp; FROM&nbsp;&nbsp;&nbsp; etl.TablePartition p  
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; join FactName f on p.WarehouseEntityName = f.WarehouseEntityName  
     )  
     , FactPKList  
     AS (  
-        SELECT  f.WarehouseEntityName, a.TABLE_NAME, a.COLUMN_NAME, b.CONSTRAINT_NAME, f.RK,  
-                CASE WHEN b.CONSTRAINT_NAME = 'PK_' + f.WarehouseEntityName THEN 1 ELSE 0 END AS DefaultConstraints  
-        FROM    FactList f  
-        JOIN    INFORMATION_SCHEMA.KEY_COLUMN_USAGE a ON f.PartitionName = a.TABLE_NAME  
-        JOIN    INFORMATION_SCHEMA.TABLE_CONSTRAINTS b ON a.CONSTRAINT_NAME = b.CONSTRAINT_NAME AND b.CONSTRAINT_TYPE = 'Primary key'  
+    &nbsp;&nbsp;&nbsp; SELECT&nbsp; f.WarehouseEntityName, a.TABLE_NAME, a.COLUMN_NAME, b.CONSTRAINT_NAME, f.RK,  
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; CASE WHEN b.CONSTRAINT_NAME = 'PK_' + f.WarehouseEntityName THEN 1 ELSE 0 END AS DefaultConstraints  
+    &nbsp;&nbsp;&nbsp; FROM&nbsp;&nbsp;&nbsp; FactList f  
+    &nbsp;&nbsp;&nbsp; JOIN&nbsp;&nbsp;&nbsp; INFORMATION_SCHEMA.KEY_COLUMN_USAGE a ON f.PartitionName = a.TABLE_NAME  
+    &nbsp;&nbsp;&nbsp; JOIN&nbsp;&nbsp;&nbsp; INFORMATION_SCHEMA.TABLE_CONSTRAINTS b ON a.CONSTRAINT_NAME = b.CONSTRAINT_NAME AND b.CONSTRAINT_TYPE = 'Primary key'  
     )  
     , FactWithoutDefaultConstraints  
     AS (  
-        SELECT  a.*  
-        FROM    FactPKList a  
-        LEFT JOIN FactPKList b ON b.WarehouseEntityName = a.WarehouseEntityName AND b.DefaultConstraints = 1  
-        WHERE   b.WarehouseEntityName IS NULL AND a.RK = 1  
+    &nbsp;&nbsp;&nbsp; SELECT&nbsp; a.*  
+    &nbsp;&nbsp;&nbsp; FROM&nbsp;&nbsp;&nbsp; FactPKList a  
+    &nbsp;&nbsp;&nbsp; LEFT JOIN FactPKList b ON b.WarehouseEntityName = a.WarehouseEntityName AND b.DefaultConstraints = 1  
+    &nbsp;&nbsp;&nbsp; WHERE&nbsp;&nbsp; b.WarehouseEntityName IS NULL AND a.RK = 1  
     )  
     , FactPKListStr  
     AS (  
-        SELECT  DISTINCT f1.WarehouseEntityName, f1.TABLE_NAME, f1.CONSTRAINT_NAME, F.COLUMN_NAME AS PKList  
-        FROM    FactWithoutDefaultConstraints f1  
-        CROSS APPLY (  
-                        SELECT  '[' + COLUMN_NAME + '],'  
-                        FROM    FactWithoutDefaultConstraints f2  
-                        WHERE   f2.TABLE_NAME = f1.TABLE_NAME  
-                        ORDER BY COLUMN_NAME  
-                    FOR  
-                       XML PATH('')  
-                    ) AS F (COLUMN_NAME)  
+    &nbsp;&nbsp;&nbsp; SELECT&nbsp; DISTINCT f1.WarehouseEntityName, f1.TABLE_NAME, f1.CONSTRAINT_NAME, F.COLUMN_NAME AS PKList  
+    &nbsp;&nbsp;&nbsp; FROM&nbsp;&nbsp;&nbsp; FactWithoutDefaultConstraints f1  
+    &nbsp;&nbsp;&nbsp; CROSS APPLY (  
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; SELECT&nbsp; '[' + COLUMN_NAME + '],'  
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; FROM&nbsp;&nbsp;&nbsp; FactWithoutDefaultConstraints f2  
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; WHERE&nbsp;&nbsp; f2.TABLE_NAME = f1.TABLE_NAME  
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ORDER BY COLUMN_NAME  
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; FOR  
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; XML PATH('')  
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ) AS F (COLUMN_NAME)  
     )  
-    SELECT  'ALTER TABLE [dbo].[' + f.TABLE_NAME + '] DROP CONSTRAINT [' + f.CONSTRAINT_NAME + ']' + CHAR(13) + CHAR(10) +  
-            'ALTER TABLE [dbo].[' + f.TABLE_NAME + '] ADD CONSTRAINT [PK_' + f.WarehouseEntityName + '] PRIMARY KEY NONCLUSTERED (' + SUBSTRING(f.PKList, 1, LEN(f.PKList) -1) + ')' + CHAR(13) + CHAR(10)  
-    FROM    FactPKListStr f  
+    SELECT&nbsp; 'ALTER TABLE [dbo].[' + f.TABLE_NAME + '] DROP CONSTRAINT [' + f.CONSTRAINT_NAME + ']' + CHAR(13) + CHAR(10) +  
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 'ALTER TABLE [dbo].[' + f.TABLE_NAME + '] ADD CONSTRAINT [PK_' + f.WarehouseEntityName + '] PRIMARY KEY NONCLUSTERED (' + SUBSTRING(f.PKList, 1, LEN(f.PKList) -1) + ')' + CHAR(13) + CHAR(10)  
+    FROM&nbsp;&nbsp;&nbsp; FactPKListStr f  
   
     ```

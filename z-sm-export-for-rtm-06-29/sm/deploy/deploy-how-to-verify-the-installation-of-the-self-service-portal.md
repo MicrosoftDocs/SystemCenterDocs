@@ -60,7 +60,7 @@ robots: noindex,nofollow
       </step>
       <step>
         <content>
-          <para>The default home page for the <token>smssp</token> should appear as shown <?Comment jhb: I don’t know if we have control over this. But a message appears in this UI that uses the expression “canned requests”. “Canned” is jargon, with a negative connotation. “Pre-prepared” or “prepared in advance” might be better alternatives.Can we get this UI text modified? 2011-10-18T11:35:00Z  Id='1?>in the following illustration.<?CommentEnd Id='1'
+          <para>The default home page for the <token>smssp</token> should appear as shown <?Comment jhb: I don't know if we have control over this. But a message appears in this UI that uses the expression "canned requests". "Canned" is jargon, with a negative connotation. "Pre-prepared" or "prepared in advance" might be better alternatives.Can we get this UI text modified? 2011-10-18T11:35:00Z  Id='1?>in the following illustration.<?CommentEnd Id='1'
     ?></para>
           <mediaLink>
             <image xlink:href="1de60bb6-1cc5-467d-8377-db70b4cd6006" />

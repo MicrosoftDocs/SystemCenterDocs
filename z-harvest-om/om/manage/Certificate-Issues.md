@@ -19,14 +19,14 @@ This topic describes resolutions to certificate issues for monitoring UNIX or Li
 During the installation of UNIX\/Linux agents, you might see the following error.  
   
 ```  
-Event Type:        Error  
-Event Source:    Cross Platform Modules  
-Event Category:                None  
-Event ID:              256  
-Date:                     4/1/2009  
-Time:                     4:02:27 PM  
-User:                     N/A  
-Computer:          COMPUTER1  
+Event Type:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Error  
+Event Source:&nbsp;&nbsp;&nbsp; Cross Platform Modules  
+Event Category:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; None  
+Event ID:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 256  
+Date:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 4/1/2009  
+Time:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 4:02:27 PM  
+User:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; N/A  
+Computer:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; COMPUTER1  
 Description:  
 Unexpected ScxCertLibException: Can't decode from base64  
 ; input data is:  
@@ -44,7 +44,7 @@ If you see this error, do the following:
 3.  Make sure that the credentials specified in the Discovery Wizard have the required privileges for discovery. For more information see [Required Capabilities for UNIX and Linux Accounts](../../om/manage/Required-Capabilities-for-UNIX-and-Linux-Accounts.md).  
   
 ## Certificate Name and Host Name do not Match  
-The common name \(CN\) that is used in the certificate must match the fully qualified domain name \(FQDN\) that is resolved by Operations Manager.  If the CN does not match, you will see the following error when you run the Discovery Wizard:  
+The common name \(CN\) that is used in the certificate must match the fully qualified domain name \(FQDN\) that is resolved by Operations Manager.&nbsp; If the CN does not match, you will see the following error when you run the Discovery Wizard:  
   
 ```  
 The SSL certificate contains a common name (CN) that does not match the hostname  
@@ -86,9 +86,9 @@ If the certificate was created with an incorrect name, you can change the host n
 /opt/microsoft/scx/bin/tools/scxsslconfig -f -v  
 ```  
   
-The **–f** option forces the files in \/etc\/opt\/microsoft\/scx\/ssl to be overwritten.  
+The **-f** option forces the files in \/etc\/opt\/microsoft\/scx\/ssl to be overwritten.  
   
-You can also change the hostname and domain name on the certificate by using the **–h** and **–d** switches, as in the following example:  
+You can also change the hostname and domain name on the certificate by using the **-h** and **-d** switches, as in the following example:  
   
 ```  
 /opt/microsoft/scx/bin/tools/scxsslconfig -f -h <hostname> -d <domain.name>  
@@ -104,12 +104,12 @@ Restart the agent by running the following command:
   
 **To add an entry to the hosts file:**  
   
-If the FQDN is not in Reverse DNS, you can add an entry to the hosts file located on the management server to provide name resolution. The hosts file is located in the \\Windows\\System32\\Drivers\\etc folder.  An entry in the hosts file is a combination of the IP address and the FQDN.  
+If the FQDN is not in Reverse DNS, you can add an entry to the hosts file located on the management server to provide name resolution. The hosts file is located in the \\Windows\\System32\\Drivers\\etc folder.&nbsp; An entry in the hosts file is a combination of the IP address and the FQDN.  
   
-For example, to add an entry for the host named “newhostname.newdomain.name” with an IP address of 192.168.1.1, add the following to the end of the hosts file:  
+For example, to add an entry for the host named "newhostname.newdomain.name" with an IP address of 192.168.1.1, add the following to the end of the hosts file:  
   
 ```  
-192.168.1.1     newhostname.newdomain.name  
+192.168.1.1&nbsp;&nbsp;&nbsp;&nbsp; newhostname.newdomain.name  
 ```  
   
 ## See Also  

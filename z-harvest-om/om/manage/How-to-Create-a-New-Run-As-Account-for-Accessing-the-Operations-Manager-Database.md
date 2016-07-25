@@ -76,7 +76,7 @@ Use the following procedure to create a new Run As account that can access the o
   
 3.  In the **Object Explorer** pane, expand **Databases**, expand **Operations Manager**, expand **Security**, right\-click **Users**, and then click **New User**.  
   
-4.  In the **Database User \- New** dialog box, type a name for this new user in the **User name** text box, and then click the ellipses \(**…**\) next to the **Login name** option.  
+4.  In the **Database User \- New** dialog box, type a name for this new user in the **User name** text box, and then click the ellipses \(**...**\) next to the **Login name** option.  
   
 5.  In the **Select Login** dialog box, click **Browse**.  
   

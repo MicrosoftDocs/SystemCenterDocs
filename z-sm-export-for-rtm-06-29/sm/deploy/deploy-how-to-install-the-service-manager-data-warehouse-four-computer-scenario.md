@@ -43,13 +43,13 @@ To start deployment of the System Center 2012 - Service Manager data warehouse a
   
  For more information about the permissions that these accounts require, see "Accounts Required During Setup" in the [Planning Guide for Service Manager for System Center 2012](http://go.microsoft.com/fwlink/p/?LinkID=209672).  
   
- The data warehouse databases include the following three databases: DWStagingAndConfig, DWRepository, and DWDataMart. The first two databases, DWStagingAndConfig and DWRepository, must reside on the same instance of Microsoft SQL Server. The DWDataMart database can reside on a separate instance of SQL Server. The optional OMDWDataMart and CMDWDataMart databases can reside together or separately on their own instances of Microsoft SQL Server.  
+ The data warehouse databases include the following three databases: DWStagingAndConfig, DWRepository, and DWDataMart. The first two databases, DWStagingAndConfig and DWRepository, must reside on the same instance of Microsoft SQL&nbsp;Server. The DWDataMart database can reside on a separate instance of SQL&nbsp;Server. The optional OMDWDataMart and CMDWDataMart databases can reside together or separately on their own instances of Microsoft SQL Server.  
   
 ### To install a data warehouse management server  
   
-1.  Because, in this scenario, the computer that hosts SQL Server Reporting Services \(SSRS\) is not the same computer that hosts the data warehouse management server, you have to prepare the computer that will remotely host SSRS for Service Manager. See [Manual Steps to Configure the Remote SQL Server Reporting Services](../../../sm/deploy/deploy-guide/Manual-Steps-to-Configure-the-Remote-SQL-Server-Reporting-Services.md) before continuing with this procedure.  
+1.  Because, in this scenario, the computer that hosts SQL&nbsp;Server Reporting Services \(SSRS\) is not the same computer that hosts the data warehouse management server, you have to prepare the computer that will remotely host SSRS for Service Manager. See [Manual Steps to Configure the Remote SQL Server Reporting Services](../../../sm/deploy/deploy-guide/Manual-Steps-to-Configure-the-Remote-SQL-Server-Reporting-Services.md) before continuing with this procedure.  
   
-2.  Log on to the computer that will host the data warehouse management server by using an account that has administrator rights. For example, run Setup on Computer 3.  
+2.  Log on to the computer that will host the data warehouse management server by using an account that has administrator rights. For example, run Setup on Computer&nbsp;3.  
   
 3.  On the System Center Service Manager installation media, double\-click the **Setup.exe** file.  
   
@@ -64,7 +64,7 @@ To start deployment of the System Center 2012 - Service Manager data warehouse a
 8.  On the **Configure the data warehouse databases** page, click **Staging and Configuration**. In the **Database server** box, type the computer name of the computer that will host the two data warehouse databases. For example, type **Computer 4**, and then press the TAB key. Verify that **Default** appears in the **SQL Server instance** box.  
   
     > [!IMPORTANT]  
-    >  A warning message appears if you are using the default collation \(SQL\_Latin1\_General\_CP1\_CI\_AS\). Support for multiple languages in Service Manager is not possible when you are using the default collation. If later you decide to support multiple languages using a different collation, you have to reinstall SQL Server. See “Microsoft SQL Server 2008 with SP1” in the [Planning Guide for System Center 2012 – Service Manager](http://go.microsoft.com/fwlink/p/?LinkID=209672).  
+    >  A warning message appears if you are using the default collation \(SQL\_Latin1\_General\_CP1\_CI\_AS\). Support for multiple languages in Service Manager is not possible when you are using the default collation. If later you decide to support multiple languages using a different collation, you have to reinstall SQL&nbsp;Server. See "Microsoft SQL&nbsp;Server&nbsp;2008 with SP1" in the [Planning Guide for System Center 2012 - Service Manager](http://go.microsoft.com/fwlink/p/?LinkID=209672).  
   
 9. In the list of the three databases, select **Data Mart**. In the **Database server** box, type the computer name of the server that will host the Data Mart database. For example, type **Computer 4**, and then press the TAB key. When **Default** appears in the **SQL Server instance** box, click **Next**.  
   
@@ -97,7 +97,7 @@ To start deployment of the System Center 2012 - Service Manager data warehouse a
   
     2.  Verify that **Default** is displayed in the **Report server instance** box.  
   
-    3.  Because you followed the procedure “Manual Steps to Configure the Remote SQL Server Reporting Services” in the [Deployment Guide for System Center 2012 – Service Manager](http://go.microsoft.com/fwlink/p/?LinkID=209670) \(http:\/\/go.microsoft.com\/fwlink\/p\/?LinkID\=209670\), select the **I have taken the manual steps to configure the remote SQL Server Reporting Services as described in the Service Manager Deployment Guide** check box, and then click **Next**.  
+    3.  Because you followed the procedure "Manual Steps to Configure the Remote SQL Server Reporting Services" in the [Deployment Guide for System Center 2012 - Service Manager](http://go.microsoft.com/fwlink/p/?LinkID=209670) \(http:\/\/go.microsoft.com\/fwlink\/p\/?LinkID\=209670\), select the **I have taken the manual steps to configure the remote SQL Server Reporting Services as described in the Service Manager Deployment Guide** check box, and then click **Next**.  
   
 13. On the **Configure the account for Service Manager services** page, click **Domain account**, specify the user name, password, and domain for the account, and then click **Test Credentials**. After you receive a **The credentials were accepted** message, click **Next**.  
   
@@ -108,7 +108,7 @@ To start deployment of the System Center 2012 - Service Manager data warehouse a
 15. On the **Configure Analysis Service for OLAP cubes** page, in the **Database server** box, type the computer name of the server that will host the Analysis Services database, and then press the TAB key. When **Default** appears in the **SQL Server instance** box, click **Next**. For example, type **Computer 4** in the **Database server** box.  
   
     > [!WARNING]  
-    >  If you are installing SQL Server Analysis Services on a computer other than the computer hosting the data warehouse management server and there is a firewall in your environment, you must make sure that the proper firewall ports are opened. For more information, see the topic Port Assignments for Service Manager 2012 in the [Planning Guide for System Center 2012 – Service Manager](http://go.microsoft.com/fwlink/p/?LinkId=209672).  
+    >  If you are installing SQL Server Analysis Services on a computer other than the computer hosting the data warehouse management server and there is a firewall in your environment, you must make sure that the proper firewall ports are opened. For more information, see the topic Port Assignments for Service Manager 2012 in the [Planning Guide for System Center 2012 - Service Manager](http://go.microsoft.com/fwlink/p/?LinkId=209672).  
   
 16. On the **Configure Analysis Services credential** page, select a domain account, click **Domain account**, specify the user name, password, and domain for the account, and then click **Test Credentials**. After you receive a **The credentials were accepted** message, click **Next**.  
   

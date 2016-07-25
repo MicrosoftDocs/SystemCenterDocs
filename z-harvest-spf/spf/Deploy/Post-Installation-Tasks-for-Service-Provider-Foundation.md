@@ -30,7 +30,7 @@ As the administrator for a hosting provider, there are a few key tasks that you 
     These Windows PowerShell cmdlets are suited for performing administrative tasks efficiently. For more information see [Service Provider Foundation cmdlet Reference](http://technet.microsoft.com/library/jj612525(v=sc.20).aspx). For the most current help in the console, run the following command.  
   
     ```powershell  
-    PS C:\> update-help –module spfadmin  
+    PS C:\> update-help -module spfadmin  
     ```  
   
 -   Program applications that consume [!INCLUDE[spfshort](../../spf/Deploy/includes/spfshort_md.md)] web services  
@@ -48,7 +48,7 @@ A basic, general procedure for populating the SCSPF database using cmdlets is as
 PS C:\> # Create a server.  
 PS C:\> $server = New-SCSPFServer -Name "server23G.contoso.com" -ServerType VMM  
 PS C:\> # Create a stamp. A stamp is a logical container for a tenant's association with one or more servers.  
-PS C:\> $stamp = New-SCSPFStamp –Name "StampA" –Servers $server  
+PS C:\> $stamp = New-SCSPFStamp -Name "StampA" -Servers $server  
 PS C:\> # Create a tenant. A tenant is your paying customer or business unit.  
 PS C:\> $tenant = New-SCSPFTenant -Name "jonathan@treyresearch.net"  
 PS C:\> # Associate the stamp to the tenant. You can set the stamp to the tenant and also to a different server if needed.  

@@ -26,49 +26,49 @@ This topic shows an example of using a Security Assertion Markup Language \(SAML
 <Issuer>ADatum</Issuer>  
 <ds:Signature xmlns:ds="http://www.w3.org/2000/09/xmldsig#">  
 <ds:SignedInfo>  
-  <ds:CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" />   
-  <ds:SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256" />   
+&nbsp; <ds:CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" />   
+&nbsp;&nbsp;<ds:SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256" />   
 <ds:Reference URI="#_de9f29bd-52ca-4237-95c1-eb53f70fe8e5">  
 <ds:Transforms>  
-  <ds:Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" />   
-  <ds:Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" />   
-  </ds:Transforms>  
-  <ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256" />   
-  <ds:DigestValue>+6OWUn1dFIUJQ6FQ25zgmZvg8zPzfcjnj4ujUvgfmEQ=</ds:DigestValue>   
-  </ds:Reference>  
-  </ds:SignedInfo>  
-  <ds:SignatureValue>O85ytS9fcAhOk/0K25SndyBUbNLrx6J+tv+Uht+HZZ4CzsqjVBU1FpkXjDG03HqZ7xEu3+rMnsyxefDq6Xftw1E926QsG/oPM/afWfbR5dLucjsVaNzXCXzZu+jBmp5KkAv/vv1Es67KnPMr/RDeCVFy9eyxJka6dd8h8RTlatg=</ds:SignatureValue>   
+&nbsp; <ds:Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" />   
+&nbsp;&nbsp;<ds:Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" />   
+&nbsp;&nbsp;</ds:Transforms>  
+&nbsp; <ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256" />   
+&nbsp;&nbsp;<ds:DigestValue>+6OWUn1dFIUJQ6FQ25zgmZvg8zPzfcjnj4ujUvgfmEQ=</ds:DigestValue>   
+&nbsp;&nbsp;</ds:Reference>  
+&nbsp; </ds:SignedInfo>  
+&nbsp; <ds:SignatureValue>O85ytS9fcAhOk/0K25SndyBUbNLrx6J+tv+Uht+HZZ4CzsqjVBU1FpkXjDG03HqZ7xEu3+rMnsyxefDq6Xftw1E926QsG/oPM/afWfbR5dLucjsVaNzXCXzZu+jBmp5KkAv/vv1Es67KnPMr/RDeCVFy9eyxJka6dd8h8RTlatg=</ds:SignatureValue>   
 <KeyInfo xmlns="http://www.w3.org/2000/09/xmldsig#">  
 <X509Data>  
-  <X509Certificate>MIICGjCCAYOgAwIBAgIQeJe5qR+4T6VJNZYtWjhErzANBgkqhkiG9w0BAQQFADAgMR4wHAYDVQQDExVBQ1MyQ2xpZW50Q2VydGlmaWNhdGUwHhcNMTExMDEwMDcwMDAwWhcNNDExMjMxMDcwMDAwWjAgMR4wHAYDVQQDExVBQ1MyQ2xpZW50Q2VydGlmaWNhdGUwgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBAKjtrnJ+bduREosQ9+SH1ocI13wlxStLi8y5heGPo5UBcuf0hYRq4PvjwEY2twebP6iwxjwGqhu224UDUfPWMhQBOh+NFnv9GHAh+W4jFJxvTCcyXTkZRFqgAYRjMvyxzNeHVqn4AJ/ddKGf1fMVCuKhPYteHy2yNacXujucPP6/AgMBAAGjVTBTMFEGA1UdAQRKMEiAEFD3/7uhGcI2nSHZqB0bN66hIjAgMR4wHAYDVQQDExVBQ1MyQ2xpZW50Q2VydGlmaWNhdGWCEHiXuakfuE+lSTWWLVo4RK8wDQYJKoZIhvcNAQEEBQADgYEAkgxktVU5e8TVoigsDRm4qyw6gM/kie3e6dFM0T1BFoQV0PW9W9yKPiP72eTi+331tLFnwDxz5RJLABctAO71plwtREd0k3E0Jsju+Web+u8YcCD43aViQXgXRrY5ghDGwpFRcaNa1PnYY5nk3DYfyZZdz1L+fb30VDiugdf7dBI=</X509Certificate>   
-  </X509Data>  
-  </KeyInfo>  
-  </ds:Signature>  
+&nbsp; <X509Certificate>MIICGjCCAYOgAwIBAgIQeJe5qR+4T6VJNZYtWjhErzANBgkqhkiG9w0BAQQFADAgMR4wHAYDVQQDExVBQ1MyQ2xpZW50Q2VydGlmaWNhdGUwHhcNMTExMDEwMDcwMDAwWhcNNDExMjMxMDcwMDAwWjAgMR4wHAYDVQQDExVBQ1MyQ2xpZW50Q2VydGlmaWNhdGUwgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBAKjtrnJ+bduREosQ9+SH1ocI13wlxStLi8y5heGPo5UBcuf0hYRq4PvjwEY2twebP6iwxjwGqhu224UDUfPWMhQBOh+NFnv9GHAh+W4jFJxvTCcyXTkZRFqgAYRjMvyxzNeHVqn4AJ/ddKGf1fMVCuKhPYteHy2yNacXujucPP6/AgMBAAGjVTBTMFEGA1UdAQRKMEiAEFD3/7uhGcI2nSHZqB0bN66hIjAgMR4wHAYDVQQDExVBQ1MyQ2xpZW50Q2VydGlmaWNhdGWCEHiXuakfuE+lSTWWLVo4RK8wDQYJKoZIhvcNAQEEBQADgYEAkgxktVU5e8TVoigsDRm4qyw6gM/kie3e6dFM0T1BFoQV0PW9W9yKPiP72eTi+331tLFnwDxz5RJLABctAO71plwtREd0k3E0Jsju+Web+u8YcCD43aViQXgXRrY5ghDGwpFRcaNa1PnYY5nk3DYfyZZdz1L+fb30VDiugdf7dBI=</X509Certificate>   
+&nbsp;&nbsp;</X509Data>  
+&nbsp; </KeyInfo>  
+&nbsp; </ds:Signature>  
 <Subject>  
-  <NameID>ADatum</NameID>   
-  <SubjectConfirmation Method="urn:oasis:names:tc:SAML:2.0:cm:bearer" />   
-  </Subject>  
+&nbsp; <NameID>ADatum</NameID>   
+&nbsp;&nbsp;<SubjectConfirmation Method="urn:oasis:names:tc:SAML:2.0:cm:bearer" />   
+&nbsp;&nbsp;</Subject>  
 <Conditions NotBefore="2012-11-06T00:45:31.905Z" NotOnOrAfter="9999-12-31T23:59:59.999Z">  
 <AudienceRestriction>  
-  <Audience>https://accesscontrol.adatum.com</Audience>   
-  </AudienceRestriction>  
-  </Conditions>  
+&nbsp; <Audience>https://accesscontrol.adatum.com</Audience>   
+&nbsp;&nbsp;</AudienceRestriction>  
+&nbsp; </Conditions>  
 <AttributeStatement>  
 <Attribute Name="http://schemas.microsoft.com/spf/2012/03/claims/tenantname">  
-  <AttributeValue>Fabrikam</AttributeValue>   
-  </Attribute>  
-  </AttributeStatement>  
+&nbsp; <AttributeValue>Fabrikam</AttributeValue>   
+&nbsp;&nbsp;</Attribute>  
+&nbsp; </AttributeStatement>  
 <AttributeStatement>  
 <Attribute Name="http://schemas.microsoft.com/ws/2008/06/identity/claims/role">  
-  <AttributeValue>SSU</AttributeValue>   
-  </Attribute>  
-  </AttributeStatement>  
+&nbsp; <AttributeValue>SSU</AttributeValue>   
+&nbsp;&nbsp;</Attribute>  
+&nbsp; </AttributeStatement>  
 <AttributeStatement>  
 <Attribute Name="http://schemas.xmlsoap.org/ws/2005/05/identity/claims/upn">  
-  <AttributeValue>accesscontrol@adaum.com</AttributeValue>   
-  </Attribute>  
-  </AttributeStatement>  
-  </Assertion>  
+&nbsp; <AttributeValue>accesscontrol@adaum.com</AttributeValue>   
+&nbsp;&nbsp;</Attribute>  
+&nbsp; </AttributeStatement>  
+&nbsp; </Assertion>  
   
 ```  
   

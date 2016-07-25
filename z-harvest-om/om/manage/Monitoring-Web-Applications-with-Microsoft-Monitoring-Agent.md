@@ -31,12 +31,12 @@ You can download Microsoft Monitoring Agent for stand\-alone use or for use with
   
 1.  Start Windows PowerShell as an administrator. Your account must be a member of the Local Administrators group to perform this task, or you must run Windows PowerShell as a user who belongs to the Local Administrators group.  
   
-2.  If you are using Windows PowerShell 2.0, you must manually import the monitoring module Microsoft.MonitoringAgent.PowerShell.dll from the Microsoft Monitoring Agent installation location. By default, the module is located at C:\\Program Files\\Microsoft Monitoring Agent\\Agent\\PowerShell\\Microsoft.MonitoringAgent.PowerShell\\. For example, to import the module, at the Windows PowerShell command prompt, type `import-module "C:\Program Files\Microsoft Monitoring Agent\Agent\PowerShell\Microsoft.MonitoringAgent.PowerShell\Microsoft.MonitoringAgent.PowerShell.dll".`  
+2.  If you are using Windows PowerShell&nbsp;2.0, you must manually import the monitoring module Microsoft.MonitoringAgent.PowerShell.dll from the Microsoft Monitoring Agent installation location. By default, the module is located at C:\\Program Files\\Microsoft Monitoring Agent\\Agent\\PowerShell\\Microsoft.MonitoringAgent.PowerShell\\. For example, to import the module, at the Windows PowerShell command prompt, type `import-module "C:\Program Files\Microsoft Monitoring Agent\Agent\PowerShell\Microsoft.MonitoringAgent.PowerShell\Microsoft.MonitoringAgent.PowerShell.dll".`  
   
     > [!IMPORTANT]  
-    > If you are using Windows PowerShell 2.0 and close Windows PowerShell, you must repeat this step to use any Windows PowerShell commands in Microsoft Monitoring Agent.  
+    > If you are using Windows PowerShell&nbsp;2.0 and close Windows PowerShell, you must repeat this step to use any Windows PowerShell commands in Microsoft Monitoring Agent.  
   
-    If you are using Windows PowerShell 3.0, the module will already be imported and you do not need to import it manually as described in this step.  
+    If you are using Windows PowerShell&nbsp;3.0, the module will already be imported and you do not need to import it manually as described in this step.  
   
 3.  At the Windows PowerShell command prompt, type `Start-WebApplicationMonitoring` and then specify the web application name, the monitoring mode, and the output location. For example, type `Start-WebApplicationMonitoring Fabrikam/FabrikanFiber.Web Monitor c:\outputlogs`.  
   
@@ -44,7 +44,7 @@ You can download Microsoft Monitoring Agent for stand\-alone use or for use with
   
     -   To limit the amount of space that is allocated for traces, use the *MaximumFileSizeInMegabytes* parameter and allocate enough space.  
   
-    -   The monitoring mode can be Trace, Monitor, or Custom. These monitoring modes use a *collection plan*, which determines how an application is monitored \(such as custom namespaces to monitor, all or only critical exceptions, and application\-specific exception handlers\). When you use Trace, you can use Microsoft Monitoring Agent in the same way that you might have used an IntelliTrace collector, and you can use collection plans in the form of the IntelliTrace collector that was part of Microsoft Visual Studio 2010 and Visual Studio 2012 and is available in Visual Studio 2013. The Monitor option uses the default monitoring collection plan that is preconfigured with Microsoft Monitoring Agent. The default collection plan is located in the same folder as the monitoring module. You can use this default collection plan by using the Monitor option, or you can copy it to a different file and customize it and use it with the Custom monitoring mode.  
+    -   The monitoring mode can be Trace, Monitor, or Custom. These monitoring modes use a *collection plan*, which determines how an application is monitored \(such as custom namespaces to monitor, all or only critical exceptions, and application\-specific exception handlers\). When you use Trace, you can use Microsoft Monitoring Agent in the same way that you might have used an IntelliTrace collector, and you can use collection plans in the form of the IntelliTrace collector that was part of Microsoft Visual Studio&nbsp;2010 and Visual Studio&nbsp;2012 and is available in Visual Studio&nbsp;2013. The Monitor option uses the default monitoring collection plan that is preconfigured with Microsoft Monitoring Agent. The default collection plan is located in the same folder as the monitoring module. You can use this default collection plan by using the Monitor option, or you can copy it to a different file and customize it and use it with the Custom monitoring mode.  
   
     > [!WARNING]  
     > Starting and stopping monitoring might restart or recycle your application IIS pool.  

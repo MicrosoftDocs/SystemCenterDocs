@@ -16,7 +16,7 @@ manager:cfreemanwa
 [!INCLUDE[om12long](../../om/manage/includes/om12long_md.md)] can monitor Microsoft Windows\-based computers on which an agent is not installed by using an agent on another computer to act as a proxy. This is called agentless management.  
   
 > [!NOTE]  
-> Not all management packs support agentless management, so make sure agentless management will serve your needs before using it. For example, the Active Directory and Microsoft Exchange Server 2003 management packs do not support agentless management.  
+> Not all management packs support agentless management, so make sure agentless management will serve your needs before using it. For example, the Active Directory and Microsoft Exchange Server&nbsp;2003 management packs do not support agentless management.  
   
 When you set up agentless monitoring of a computer, you select a proxy for each agentless\-managed computer. Being configured as a proxy agent allows an agent to submit data on behalf of another source. A management group can serve as a proxy, but this takes up system resources. A best practice is using an agent\-managed computer as a proxy agent.  
   

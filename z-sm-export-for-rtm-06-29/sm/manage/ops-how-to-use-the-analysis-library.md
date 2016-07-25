@@ -37,7 +37,7 @@ You can use the following procedure in System Center 2012 - Service Manager to v
   
 2.  Select the Excel workbook that you want to open, and then in the **Tasks** list, click **Open Excel File**.  
   
-3.  In the Excel workbook, you can refresh the data from the data warehouse. For example, if you are using Microsoft Excel 2010, you can click the **Data** tab and then click **Refresh All** to update the workbook.  
+3.  In the Excel workbook, you can refresh the data from the data warehouse. For example, if you are using Microsoft Excel&nbsp;2010, you can click the **Data** tab and then click **Refresh All** to update the workbook.  
   
 ## See Also  
  [Using OLAP Cubes for Advanced Analytics](../../../sm/manage/operate/Using-OLAP-Cubes-for-Advanced-Analytics.md)

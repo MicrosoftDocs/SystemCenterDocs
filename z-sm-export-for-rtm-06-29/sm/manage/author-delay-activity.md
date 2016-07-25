@@ -29,7 +29,7 @@ ms.assetid: 18da38ac-7045-4554-982f-e05a1763e8cb
 
 ---
 # Delay Activity
-This activity introduces a delay between activities in a workflow in System Center 2012 - Service Manager. The **Delay** activity is derived from the Microsoft .NET Framework **DelayActivity** class.  
+This activity introduces a delay between activities in a workflow in System Center 2012 - Service Manager. The **Delay** activity is derived from the Microsoft .NET&nbsp;Framework **DelayActivity** class.  
   
 ## Design Time Prerequisites  
  None.  
@@ -51,7 +51,7 @@ This activity introduces a delay between activities in a workflow in System Cent
  None.  
   
 ## Remarks  
- For more information about this activity, see [DelayActivity Class](http://go.microsoft.com/fwlink/p/?LinkID=186252) in the .NET Framework Class Library.  
+ For more information about this activity, see [DelayActivity Class](http://go.microsoft.com/fwlink/p/?LinkID=186252) in the .NET&nbsp;Framework Class Library.  
   
 ## Example  
  None.  

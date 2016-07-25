@@ -29,11 +29,11 @@ ms.assetid: c04e33d3-ceb3-497d-b4da-cffd7402c02a
 
 ---
 # How to Add Permissions for Standard Reports
-By default, all System Center 2012 - Service Manager users have access to reports through the Reporting workspace. However, before users who do not have administrator permissions can view the Reporting workspace, you must add permissions through SQL Server Reporting Services \(SSRS\).  
+By default, all System Center 2012 - Service Manager users have access to reports through the Reporting workspace. However, before users who do not have administrator permissions can view the Reporting workspace, you must add permissions through SQL&nbsp;Server Reporting Services \(SSRS\).  
   
  You can grant access at the root level, which enables a user to view the Reporting workspace and all the reports in Service Manager. You can also grant restricted access to specific report folders, such as the Incident report folder, or to individual reports.  
   
- The following procedure describes how to grant SSRS access for all the Service Manager reports to an Active Directory group \(woodgrove\\SCSMReportAccess\).  
+ The following procedure describes how to grant SSRS access for all the Service Manager reports to an Active&nbsp;Directory group \(woodgrove\\SCSMReportAccess\).  
   
 ### To add SSRS permissions  
   
@@ -51,7 +51,7 @@ By default, all System Center 2012 - Service Manager users have access to report
   
 6.  Click **New Role Assignment**.  
   
-7.  Type the name of the Active Directory group or user in the **Group or user name** box. For example, type **woodgrove\\SCSMReportAccess**.  
+7.  Type the name of the Active&nbsp;Directory group or user in the **Group or user name** box. For example, type **woodgrove\\SCSMReportAccess**.  
   
 8.  Set the roles for the group or user. Select the **Browser** check box to grant access to run reports.  
   

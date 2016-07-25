@@ -15,7 +15,7 @@ manager:cfreemanwa
 # What&#39;s New in Orchestrator in System Center 2012 Service Pack 1
 The following are the new features for [!INCLUDE[orchshort](../../om/manage/includes/orchshort_md.md)] in [!INCLUDE[sc2012sp1_long](../../om/manage/includes/sc2012sp1_long_md.md)].  
   
-## What’s New  
+## What's New  
 In [!INCLUDE[sc2012sp1_long](../../om/manage/includes/sc2012sp1_long_md.md)], [!INCLUDE[orchshort](../../om/manage/includes/orchshort_md.md)] has the following new and updated integration Packs \(IPs\).  
   
 ### New in [!INCLUDE[sc2012sp1_short](../../om/manage/includes/sc2012sp1_short_md.md)]  

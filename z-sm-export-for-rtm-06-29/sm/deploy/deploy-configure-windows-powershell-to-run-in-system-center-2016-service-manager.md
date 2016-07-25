@@ -29,11 +29,11 @@ ms.assetid: 9b785d6a-2011-4fd9-987b-46e5eb164896
 
 ---
 # Configure Windows PowerShell to Run in System Center 2012 - Service Manager
-Before you can run commands in the Windows PowerShell command\-line interface in System Center 2012 - Service Manager, you must set execution policy to RemoteSigned and import the data warehouse cmdlet module.  
+Before you can run commands in the Windows&nbsp;PowerShell command\-line interface in System Center 2012 - Service Manager, you must set execution policy to RemoteSigned and import the data warehouse cmdlet module.  
   
  The Service Manager cmdlets are implemented in the following two modules:  
   
--   **System.Center.Service.Manager**. This module is imported automatically every time a Service Manager Windows PowerShell session is opened.  
+-   **System.Center.Service.Manager**. This module is imported automatically every time a Service Manager Windows&nbsp;PowerShell session is opened.  
   
 -   **Microsoft.EnterpriseManagement.Warehouse.Cmdlets**. This module must be imported manually.  
   
@@ -51,7 +51,7 @@ Before you can run commands in the Windows PowerShell command\-line interface i
 4.  Restart the System Center Management service on the Service Manager management server.  
   
 ```  
-<?xml version="1.0"?><configuration>  <configSections>    <section name="uri" type="System.Configuration.UriSection, System, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />  </configSections>  <uri>    <iriParsing enabled="true" />  </uri>    <runtime>    <assemblyBinding xmlns="urn:schemas-microsoft-com:asm.v1">      <dependentAssembly>        <assemblyIdentity name="Microsoft.Mom.Modules.DataTypes" publicKeyToken="31bf3856ad364e35" />        <publisherPolicy apply="no" />        <bindingRedirect oldVersion="6.0.4900.0" newVersion="7.0.5000.0" />      </dependentAssembly>      <dependentAssembly>        <assemblyIdentity name="Microsoft.EnterpriseManagement.HealthService.Modules.WorkflowFoundation" publicKeyToken="31bf3856ad364e35" />        <publisherPolicy apply="no" />        <bindingRedirect oldVersion="6.0.4900.0" newVersion="7.0.5000.0" />      </dependentAssembly>    
+<?xml version="1.0"?><configuration>&nbsp; <configSections>&nbsp;&nbsp;&nbsp; <section name="uri" type="System.Configuration.UriSection, System, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />&nbsp; </configSections>&nbsp; <uri>&nbsp;&nbsp;&nbsp; <iriParsing enabled="true" />&nbsp; </uri>&nbsp; &nbsp;&nbsp;<runtime>&nbsp;&nbsp;&nbsp; <assemblyBinding xmlns="urn:schemas-microsoft-com:asm.v1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <dependentAssembly>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <assemblyIdentity name="Microsoft.Mom.Modules.DataTypes" publicKeyToken="31bf3856ad364e35" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <publisherPolicy apply="no" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <bindingRedirect oldVersion="6.0.4900.0" newVersion="7.0.5000.0" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </dependentAssembly>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <dependentAssembly>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <assemblyIdentity name="Microsoft.EnterpriseManagement.HealthService.Modules.WorkflowFoundation" publicKeyToken="31bf3856ad364e35" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <publisherPolicy apply="no" />&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<bindingRedirect oldVersion="6.0.4900.0" newVersion="7.0.5000.0" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </dependentAssembly>&nbsp;&nbsp;  
 <dependentAssembly>  
   
 <assemblyIdentity name="Microsoft.EnterpriseManagement.Modules.PowerShell" publicKeyToken="31bf3856ad364e35" />  
@@ -59,7 +59,7 @@ Before you can run commands in the Windows PowerShell command\-line interface i
 <bindingRedirect oldVersion="6.0.4900.0" newVersion="7.0.5000.0" />  
   
 </dependentAssembly>  
-       <publisherPolicy apply="yes" />      <probing privatePath="" />    </assemblyBinding>    <gcConcurrent enabled="true" />  </runtime></configuration>  
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <publisherPolicy apply="yes" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <probing privatePath="" />&nbsp;&nbsp;&nbsp; </assemblyBinding>&nbsp;&nbsp;&nbsp; <gcConcurrent enabled="true" />&nbsp; </runtime></configuration>  
 ```  
   
 ## In This Section  
@@ -67,4 +67,4 @@ Before you can run commands in the Windows PowerShell command\-line interface i
  Describes how to set execution policy to RemoteSigned.  
   
  [How to Import the Data Warehouse Cmdlet Module](../Topic/How%20to%20Import%20the%20Data%20Warehouse%20Cmdlet%20Module.md)  
- Describes how to manually import the data warehouse Windows PowerShell cmdlets.
+ Describes how to manually import the data warehouse Windows&nbsp;PowerShell cmdlets.

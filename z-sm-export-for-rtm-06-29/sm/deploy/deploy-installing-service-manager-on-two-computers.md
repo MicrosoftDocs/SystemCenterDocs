@@ -13,14 +13,14 @@ ms.assetid: 95b4f9e4-e6f3-4d04-9b11-aeba6bea22ec
 
 # Installing Service Manager on Two Computers
 
-If you want to evaluate System Center 2012 - Service Manager and its reporting capabilities in a lab environment, we recommend that you install the Service Manager management server and data warehouse management server on two computers. The first computer hosts the Service Manager management server and the Service Manager database. The second computer hosts the data warehouse management server and the data warehouse databases. This deployment topology is shown in figure 2.  
+If you want to evaluate System Center 2012 - Service Manager and its reporting capabilities in a lab environment, we recommend that you install the Service Manager management server and data warehouse management server on two computers. The first computer hosts the Service Manager management server and the Service Manager database. The second computer hosts the data warehouse management server and the data warehouse databases. This deployment topology is shown in figure&nbsp;2.  
 
  **Figure 2: An installation on two physical computers**  
 
  ![Two&#45;computer installation for Service Manager 2012](../media/deploy-service_manager_deployment_simple.png)  
 
 > [!IMPORTANT]  
->  For this release, Service Manager does not support case\-sensitive instance names. Setup will display a warning if you attempt to install Service Manager on a case\-sensitive instance of Microsoft SQL Server.  
+>  For this release, Service Manager does not support case\-sensitive instance names. Setup will display a warning if you attempt to install Service Manager on a case\-sensitive instance of Microsoft SQL&nbsp;Server.  
 
 ## Installing Service Manager on two computers  
 

@@ -26,7 +26,7 @@ The *\/UpdGroup* parameter renames an existing group. Groups are used in ACS to 
 |**\/Name:***NewName*|Specifies the new name for the ACS group.|  
   
 > [!NOTE]  
-> A group’s identification number can be obtained using the AdtAdmin *\/ListGroups* command.  
+> A group's identification number can be obtained using the AdtAdmin *\/ListGroups* command.  
   
 ## Example  
 Use the following example to rename the Accounting Computers ACS group to "Desktop Computers":  

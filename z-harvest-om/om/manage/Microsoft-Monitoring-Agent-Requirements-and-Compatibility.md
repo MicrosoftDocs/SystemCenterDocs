@@ -59,11 +59,11 @@ By using APM with System Center Operations Manager, you can monitor web applicat
 ### <a name="bkmk_APMwithMonitor"></a>APM with Stand\-Alone Monitoring using IntelliTrace log as an output  
 By using APM with stand\-alone monitoring using IntelliTrace logs as an output, you can monitor web applications written with .NET Framework.  
   
--   Windows Server 2012 R2, Windows Server 2012, Windows Server 2008 R2, Windows Server 2008  
+-   Windows Server&nbsp;2012&nbsp;R2, Windows Server&nbsp;2012, Windows Server&nbsp;2008&nbsp;R2, Windows Server&nbsp;2008  
   
 -   Windows 8.1, Windows 8, Windows 7  
   
--   IIS 8.5, IIS 8, IIS 7.5, or IIS 7  
+-   IIS&nbsp;8.5, IIS&nbsp;8, IIS&nbsp;7.5, or IIS&nbsp;7  
   
 -   .NET Framework 2.0 and above  
   
@@ -77,9 +77,9 @@ By using APM with stand\-alone monitoring using IntelliTrace logs as an output, 
   
 -   System Center 2012 R2 Operations Manager  
   
--   System Center 2012 Service Pack 1 \(SP1\) – Operations Manager. If you want to use Application Performance Monitoring \(APM\), you must be running System Center 2012 SP1 UR 4 or later.  
+-   System Center 2012 Service Pack 1 \(SP1\) - Operations Manager. If you want to use Application Performance Monitoring \(APM\), you must be running System Center 2012&nbsp;SP1 UR 4 or later.  
   
--   System Center 2012 – Operations Manager. If you want to use APM, you must upgrade to System Center 2012 SP1 UR 4 or later.  
+-   System Center 2012 - Operations Manager. If you want to use APM, you must upgrade to System Center 2012&nbsp;SP1 UR 4 or later.  
   
 -   System Center Operations Manager 2007 R2. APM is not available in this version of Operations Manager.  
   

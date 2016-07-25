@@ -29,19 +29,19 @@ ms.assetid: ddd02198-d3ec-4408-a41a-dfc31d6741d5
 
 ---
 # How to Back Up Unsealed Management Packs
-You can use the Windows PowerShell command\-line interface to identify and copy your unsealed management packs to a folder on your hard disk drive. After you copy them, save these management packs so that—as part of your disaster recovery plan for System Center 2012 - Service Manager—you can later import these management packs.  
+You can use the Windows&nbsp;PowerShell command\-line interface to identify and copy your unsealed management packs to a folder on your hard disk drive. After you copy them, save these management packs so that-as part of your disaster recovery plan for System Center 2012 - Service Manager-you can later import these management packs.  
   
 ### To back up unsealed management packs  
   
 1.  On the computer that hosts the Service Manager management server, create a folder on the hard disk drive where you will store the backup copy of the management packs. For example, create the folder C:\\mpbackup.  
   
-2.  On the Windows desktop, click **Start**, point to **Programs**, point to **Windows PowerShell 1.0**, right\-click **Windows PowerShell**, and then click **Run as administrator**.  
+2.  On the Windows desktop, click **Start**, point to **Programs**, point to **Windows&nbsp;PowerShell&nbsp;1.0**, right\-click **Windows&nbsp;PowerShell**, and then click **Run as administrator**.  
   
 3.  In the Service Manager console, click **Administration**.  
   
 4.  In the **Tasks** pane, click **Start PowerShell Session**  
   
-5.  At the Windows PowerShell command prompt, type the following command:  
+5.  At the Windows&nbsp;PowerShell command prompt, type the following command:  
   
     ```  
     Get-SCSMManagementPack | where {$_.Sealed -eq $false}|Export-SCSMManagementPack -Path c:\mpbackup  

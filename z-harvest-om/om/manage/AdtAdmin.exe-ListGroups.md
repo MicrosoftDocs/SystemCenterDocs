@@ -21,8 +21,8 @@ The output of the *\/ListGroups* parameter is a comma\-separated list of groups 
 |Subparameter|Definition|  
 |----------------|--------------|  
 |\/Collector:CollectorName|Specifies an ACS collector whose groups you want to list. If this subparameter is omitted, the local ACS collector is assumed.|  
-|\/Group:GroupName|Specifies a group of ACS forwarders by the group’s name.|  
-|\/GroupID: IdentificationNumber|Specifies a group of ACS forwarders by the group’s identification number. An identification number is assigned to a group when it is first created.|  
+|\/Group:GroupName|Specifies a group of ACS forwarders by the group's name.|  
+|\/GroupID: IdentificationNumber|Specifies a group of ACS forwarders by the group's identification number. An identification number is assigned to a group when it is first created.|  
 |\/Value:ValueNumber|Specifies an ACS forwarder or ACS group by its assigned connection value. The ACS collector prioritizes connections from ACS forwarders using connection values. Connection values range from \-1 through 99. A value of \-1 means the forwarder is part of an ACS group and that the group's value is used to determine the forwarder's priority. A value of 0 means the ACS collector ignores data from that ACS forwarder or group. If event saturation is detected, a collector will disconnect forwarders or a group of forwarders with lower values before disconnecting forwarders with higher values.|  
   
 ## Example  

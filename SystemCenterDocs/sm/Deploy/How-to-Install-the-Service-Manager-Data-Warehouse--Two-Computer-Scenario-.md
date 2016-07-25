@@ -39,7 +39,7 @@ For more information about the permissions that these accounts require, see "Acc
 -   On the **Configure data warehouse databases** page, Service Manager checks the computer you are using to see if it can host the data warehouse databases. For this configuration, confirm that the database server is the computer on which you are installing the data warehouse management server, and then click **Next**.
 
     > [!IMPORTANT]
-    > A warning message appears if you are using the default collation (SQL_Latin1_General_CP1_CI_AS). Support for multiple languages in Service Manager is not possible when you are using the default collation. If later you decide to support multiple languages using a different collation, you have to re-install SQL Server. See “Microsoft SQL Server 2008 with SP1” in the [Planning Guide for System Center 2012 - Service Manager](http://go.microsoft.com/fwlink/p/?LinkID=209672).
+    > A warning message appears if you are using the default collation (SQL_Latin1_General_CP1_CI_AS). Support for multiple languages in Service Manager is not possible when you are using the default collation. If later you decide to support multiple languages using a different collation, you have to re-install SQL Server. See "Microsoft SQL Server 2008 with SP1" in the [Planning Guide for System Center 2012 - Service Manager](http://go.microsoft.com/fwlink/p/?LinkID=209672).
 
 -   On the **Configure additional data warehouse datamarts** page, Service Manager checks the current computer to see if an instance of SQL Server exists. By default, if an instance is found, Service Manager creates a new database in the existing instance. If an instance appears, click **Next**.
 
@@ -57,13 +57,13 @@ For more information about the permissions that these accounts require, see "Acc
     > [!NOTE]
     > The URL that you are presented with might not be in the form of a fully qualified domain name (FQDN). If the URL as presented cannot be resolved in your environment, configure SQL Server Reporting URLs so that the FQDN is listed in the **Web service URL** field. For more information see [How to: Configure a URL (Reporting Services Configuration)](http://go.microsoft.com/fwlink/p/?LinkId=230712).
 
--   On the **Configure the account for Service Manager services** page, click **Domain account**; specify the user name, password, and domain for the account; and then click **Test Credentials**. After you receive a “The credentials were accepted” message, click **Next**.
+-   On the **Configure the account for Service Manager services** page, click **Domain account**; specify the user name, password, and domain for the account; and then click **Test Credentials**. After you receive a "The credentials were accepted" message, click **Next**.
 
--   On the **Configure the reporting account** page, specify the user name, password, and domain for the account, and then click **Test Credentials**. After you receive a “The credentials were accepted” message, click **Next**.
+-   On the **Configure the reporting account** page, specify the user name, password, and domain for the account, and then click **Test Credentials**. After you receive a "The credentials were accepted" message, click **Next**.
 
 -   On the **Configure Analysis Service for OLAP cubes** page, click **Next**.
 
--   On the **Configure Analysis Services credential** page, select a domain account; click **Domain account** specify the user name, password, and domain for the account; and then click **Test Credentials**. After you receive a “The credentials were accepted” message, click **Next**.
+-   On the **Configure Analysis Services credential** page, select a domain account; click **Domain account** specify the user name, password, and domain for the account; and then click **Test Credentials**. After you receive a "The credentials were accepted" message, click **Next**.
 
     > [!NOTE]
     > The account that you specify here must have administrator rights on the computer hosting SSRS.

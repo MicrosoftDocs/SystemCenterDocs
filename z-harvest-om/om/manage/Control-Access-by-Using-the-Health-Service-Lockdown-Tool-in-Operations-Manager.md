@@ -46,7 +46,7 @@ When evaluating allowed and denied listings, know that denies takes priority ove
   
 3.  In the **Run** dialog box, type **cmd** and then click **OK**.  
   
-4.  At the command prompt, type <drive\_letter>: \(where <drive\_letter> is the drive where the Operations Manager installation media is located\) and then press ENTER.  
+4.  At the command prompt, type <drive\_letter>: \(where <drive\_letter> is the drive where the Operations Manager&nbsp;installation media is located\) and then press ENTER.  
   
 5.  Type **cd\\Program Files\\System Center Operations Manager 2012\\Server** and then press ENTER.  
   
@@ -60,9 +60,9 @@ When evaluating allowed and denied listings, know that denies takes priority ove
   
 3.  In the **Run** dialog box, type **cmd** and then click **OK**.  
   
-4.  At the command prompt, type <drive\_letter>: \(where <drive\_letter> is the drive where the Operations Manager installation media is located\) and then press **ENTER**.  
+4.  At the command prompt, type <drive\_letter>: \(where <drive\_letter> is the drive where the Operations Manager&nbsp;installation media is located\) and then press **ENTER**.  
   
-5.  Type **cd\\Program Files\\System Center Operations Manager 2012** and then press ENTER.  
+5.  Type **cd\\Program Files\\System Center Operations Manager&nbsp;2012** and then press ENTER.  
   
 6.  Type **HSLockdown \[Management Group Name\] \/A <Action Account>** and then press ENTER.  
   

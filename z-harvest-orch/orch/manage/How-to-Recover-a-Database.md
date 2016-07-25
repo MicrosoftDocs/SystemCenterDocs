@@ -29,8 +29,8 @@ The database key is essentially paired with the service master key on the databa
 1.  Back up the Microsoft SQL Server service master key using the procedure for [backing up the service master key for Microsoft SQL Server 2012](http://go.microsoft.com/fwlink/?LinkId=249148). This is a one\-time operation. Note "password" is the password that will be used to protect the service master key in the file that is created. If the password is lost, the service master key cannot be recovered from the file.  
   
     ```  
-    BACKUP SERVICE MASTER KEY TO FILE = ‘path_to_file’  
-                ENCRYPTION BY PASSWORD = ‘password’  
+    BACKUP SERVICE MASTER KEY TO FILE = 'path_to_file'  
+                ENCRYPTION BY PASSWORD = 'password'  
     ```  
   
 2.  Back up the entire Orchestrator database. The backup may be performed when the system is running, but it is best to perform the backup when all runbook authors have checked in any pending changes to their runbooks. Pending changes are cached on the Runbook Designer and are not backed up with a database backup.  
@@ -42,8 +42,8 @@ The database key is essentially paired with the service master key on the databa
 2.  If you are restoring to a different database server with a different service master key, or you are restoring to the same database from which the backup was taken but the service master key has changed, the service master key must be restored to match the one used during the database backup. Use the procedure for [restoring the service master key for Microsoft SQL Server 2012](http://go.microsoft.com/fwlink/?LinkId=249149) \(http:\/\/go.microsoft.com\/fwlink\/?LinkId\=249149\).  
   
     ```  
-    BACKUP SERVICE MASTER KEY TO FILE = ‘c:\temp_backups\keys\service_master_key’   
-             ENCRYPTION BY PASSWORD = ‘3dH85Hhk003GHk2597jheij4’  
+    BACKUP SERVICE MASTER KEY TO FILE = 'c:\temp_backups\keys\service_master_key'   
+             ENCRYPTION BY PASSWORD = '3dH85Hhk003GHk2597jheij4'  
     ```  
   
     > [!NOTE]  

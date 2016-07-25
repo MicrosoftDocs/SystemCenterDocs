@@ -35,7 +35,7 @@ In System Center 2012 - Service Manager, service requests are often created by e
   
 1.  In the Service Manager console, expand **Work Items**, expand **Service Request Fulfillment**, and then select a subnode, such as **Assigned To Me**.  
   
-2.  In the list, select a service request to edit, and then in the **Tasks** pane under **\<Service Request ID – Service Request Name\>**, click **Edit**. For example, select **Request Membership to Active Directory Group**.  
+2.  In the list, select a service request to edit, and then in the **Tasks** pane under **\<Service Request ID - Service Request Name\>**, click **Edit**. For example, select **Request Membership to Active Directory Group**.  
   
 3.  In the **\<SR\<ID\>: ServiceRequestName\>** form in the **Affected user** box, select the user who submitted the service request. For example, select **Joe Andreshak**.  
   

@@ -82,9 +82,9 @@ When you first ran Setup for System Center 2012 - Service Manager, you installed
   
 6.  On the toolbar, click **Execute**.  
   
-7.  At the bottom of the **SQLQuery1.sql** pane \(the center pane\), confirm that the “Query executed successfully” message appears.  
+7.  At the bottom of the **SQLQuery1.sql** pane \(the center pane\), confirm that the "Query executed successfully" message appears.  
   
-8.  Exit Microsoft SQL Server Management Studio.  
+8.  Exit Microsoft SQL&nbsp;Server Management Studio.  
   
 ### To restart the services on the secondary management server  
   

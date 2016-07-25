@@ -16,7 +16,7 @@ manager:cfreemanwa
 After a report has been created, you can export the report into one of several formats.  
   
 > [!NOTE]  
-> Operations Manager Reporting must be installed before you can run a report.  
+> Operations Manager&nbsp;Reporting must be installed before you can run a report.  
   
 If you want to manage and distribute reports securely, you can export reports to Microsoft Windows SharePoint Services, which offers digital rights management. Consult your network security administrator.  
   

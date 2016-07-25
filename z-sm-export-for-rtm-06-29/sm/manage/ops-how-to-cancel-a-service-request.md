@@ -37,7 +37,7 @@ Occasionally, you might need to cancel a service request in System Center 2012 -
   
 2.  In the **Work Items** pane, expand **Work Items**, expand **Service Request Fulfillment**, and then click **All Open Service Requests** or some other service request view.  
   
-3.  Select the service request that you want to cancel. For example, select **Request Membership to Active Directory Group – Joe Andreshak**.  
+3.  Select the service request that you want to cancel. For example, select **Request Membership to Active Directory Group - Joe Andreshak**.  
   
 4.  In the **Tasks** pane, click **Cancel**.  
   

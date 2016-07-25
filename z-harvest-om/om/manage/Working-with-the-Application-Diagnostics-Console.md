@@ -16,7 +16,7 @@ manager:cfreemanwa
 The Application Diagnostics console is an event management system for .NET Application Performance Monitoring in [!INCLUDE[om12long](../../om/manage/includes/om12long_md.md)]. You can use Application Diagnostics console to monitor deployed .NET applications for slowdowns, faults, and failures, and immediately pinpoint the source of the problem.  
   
 ## The Application Diagnostics Console  
-The Application Diagnostics console is the place to look at the individual performance and reliability events that are being raised within your environment. You can look at all of the events, or group them into “problem groups” in which events coming from the same sources are grouped together to highlight the problems with the monitored applications. Use Application Diagnostics to look at events and the transaction chains related to those events to understand how the performance and reliability issues are impacting your applications. The Application Advisor console provides analytics and telemetry of the data presented in Application Diagnostics. Through the Application Advisor console you gain insights into which events are causing the most problems. For more information about Application Advisor, see [Prioritizing Alerts by Using Application Advisor](../../om/manage/Prioritizing-Alerts-by-Using-Application-Advisor.md)  
+The Application Diagnostics console is the place to look at the individual performance and reliability events that are being raised within your environment. You can look at all of the events, or group them into "problem groups" in which events coming from the same sources are grouped together to highlight the problems with the monitored applications. Use Application Diagnostics to look at events and the transaction chains related to those events to understand how the performance and reliability issues are impacting your applications. The Application Advisor console provides analytics and telemetry of the data presented in Application Diagnostics. Through the Application Advisor console you gain insights into which events are causing the most problems. For more information about Application Advisor, see [Prioritizing Alerts by Using Application Advisor](../../om/manage/Prioritizing-Alerts-by-Using-Application-Advisor.md)  
   
 #### To open the Application Diagnostics console  
   
@@ -26,7 +26,7 @@ The Application Diagnostics console is the place to look at the individual perfo
   
     -   The Application Advisor console address is: http\(s\):\/\/<web host>\/AppAdvisor  
   
-    To make access to the consoles easy, add all three console URLs to your web browser’s favorites list.  
+    To make access to the consoles easy, add all three console URLs to your web browser's favorites list.  
   
     To open Application Diagnostics, paste the Application Diagnostics URL into your browser. Application Diagnostics opens in the web browser window.  
   
@@ -101,7 +101,7 @@ Filtering by application errors and exception class quickly shows you which kind
 5.  To begin investigating the issue and open Event properties, click an **Exception Class** entry. For information about working with events, see [Working with Events by Using Application Diagnostics](../../om/manage/Working-with-Events-by-Using-Application-Diagnostics.md)  
   
 ## Example: Grouping Application Errors by Failed Function  
-Filtering by application errors and failed function quickly shows you which functions are failing most often. The functions that are failing the most are the ones you should investigate first to have the highest impact on your application’s reliability.  
+Filtering by application errors and failed function quickly shows you which functions are failing most often. The functions that are failing the most are the ones you should investigate first to have the highest impact on your application's reliability.  
   
 ![Filter by application errors and failed function](../../om/manage/media/AppMonitoring_AppDiagnosticsFilter2AppErrorsbyFailedFunction.gif "AppMonitoring_AppDiagnosticsFilter2AppErrorsbyFailedFunction")  
   
@@ -116,7 +116,7 @@ Filtering by application errors and failed function quickly shows you which func
 4.  To begin investigating the issue and open Event properties, click a **Failed Function** entry. For information about working with events, see [Working with Events by Using Application Diagnostics](../../om/manage/Working-with-Events-by-Using-Application-Diagnostics.md)  
   
 ## Example: Grouping Performance Events by Heaviest Resource  
-Filtering by application errors and exception class quickly shows you which performance events are triggered by the same resource call. The performance events that are most often triggered by the same resource call are the ones you should investigate first to have the highest impact on you application’s performance.  
+Filtering by application errors and exception class quickly shows you which performance events are triggered by the same resource call. The performance events that are most often triggered by the same resource call are the ones you should investigate first to have the highest impact on you application's performance.  
   
 ![Filter by performance and heaviest resource](../../om/manage/media/AppMonitoring_AppDiagnosticsFilter3PerfbyHeaviestResource.gif "AppMonitoring_AppDiagnosticsFilter3PerfbyHeaviestResource")  
   

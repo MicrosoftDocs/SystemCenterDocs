@@ -130,7 +130,7 @@ When you add a new criteria to the link, it will default to the completion statu
   
 -   failed  
   
-Each time you create a new link, it creates a default criteria specifying that the activity’s completion status must return **success**. If you want the next activity to run regardless of whether the first activity successfully finished, you should delete or change criteria.  
+Each time you create a new link, it creates a default criteria specifying that the activity's completion status must return **success**. If you want the next activity to run regardless of whether the first activity successfully finished, you should delete or change criteria.  
   
 ### Binary Values  
 Some properties return a value of **true** or **false**. You can set a criteria of equals or does not equal, and the value prompts you for the two possible values.  
@@ -153,7 +153,7 @@ Certain published data properties return text that you can compare to an expecte
 > Text values are not case\-sensitive.  
   
 > [!IMPORTANT]  
-> The regular expression criteria have a slightly different behavior than other regular expressions when using the ^ character specifying the starting position in the text and the $ character specifying the ending position in the text. You must specify a wildcard in addition to these operators. For example, with the string “This is some sample text”, **text$** returns a false, but **.\*text$** returns true. Similarly, **^This** returns false, but **^This.\*** returns **true**.  
+> The regular expression criteria have a slightly different behavior than other regular expressions when using the ^ character specifying the starting position in the text and the $ character specifying the ending position in the text. You must specify a wildcard in addition to these operators. For example, with the string "This is some sample text", **text$** returns a false, but **.\*text$** returns true. Similarly, **^This** returns false, but **^This.\*** returns **true**.  
   
 ### Numeric Values  
 Certain published data properties return numeric data that you can compare to an expected value. The following table shows the different criteria that can be used.  

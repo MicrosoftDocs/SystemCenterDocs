@@ -39,7 +39,7 @@ The **User Picker** control is a System Center 2012 - Service Manager custom con
   
 2.  Drag the **User Picker** icon from the **Form Customization Toolbox** pane to the form. Click the **User Picker** control on the form.  
   
-3.  In the **Details** pane, select the **Binding Path** property, and then click the ellipsis \(**…**\) icon. In the **Binding Path** dialog box, select the related user class that represents the user instances that you want this control to bind to. On the deployed form, the user can use this control to view and pick one of the user instances of the specified related user class.  
+3.  In the **Details** pane, select the **Binding Path** property, and then click the ellipsis \(**...**\) icon. In the **Binding Path** dialog box, select the related user class that represents the user instances that you want this control to bind to. On the deployed form, the user can use this control to view and pick one of the user instances of the specified related user class.  
   
 4.  Click any property in the **Details** pane to customize the properties of the **User Picker** control.  
   

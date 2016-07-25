@@ -22,17 +22,17 @@ If you have deployed multiple gateway servers in a domain that does not have a t
   
 1.  Log on to the computer with an account that is a member of the Administrators group.  
   
-2.  Click **Start**, click **All Programs**, click **Microsoft System Center 2012**, click **Operations Manager**, and then click **Operations Manager Shell**.  
+2.  Click **Start**, click **All Programs**, click **Microsoft System Center&nbsp;2012**, click **Operations Manager**, and then click **Operations Manager Shell**.  
   
 3.  In Operations Manager Shell, run the following command:  
   
     ```  
-    $primaryMS = Get-SCOMManagementServer –Name “<name of primary server>”  
-    $failoverMS = Get-SCOMManagementServer –Name “<name of 1st failover>”,”<name of 2nd failover>”,…,”<name of nth failover>”  
-    $agent = Get-SCOMAgent –Name “<name of agent>”  
+    $primaryMS = Get-SCOMManagementServer -Name "<name of primary server>"  
+    $failoverMS = Get-SCOMManagementServer -Name "<name of 1st failover>","<name of 2nd failover>",...,"<name of nth failover>"  
+    $agent = Get-SCOMAgent -Name "<name of agent>"  
   
-    Set-SCOMParentManagementServer –Agent $agent –PrimaryServer $primaryMS  
-    Set-SCOMParentManagementServer –Agent $agent –FailoverServer $failoverMS  
+    Set-SCOMParentManagementServer -Agent $agent -PrimaryServer $primaryMS  
+    Set-SCOMParentManagementServer -Agent $agent -FailoverServer $failoverMS  
   
     ```  
   

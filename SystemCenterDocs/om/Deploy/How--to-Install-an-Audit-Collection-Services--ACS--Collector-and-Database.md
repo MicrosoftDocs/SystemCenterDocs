@@ -79,8 +79,8 @@ The ACS database runs on a supported version of Microsoft SQL Server. The Audit 
 5.  Open a Command Prompt window by using the **Run as Administrator** option, and then change directories to the temporary **acs** folder.
 
 6.  Run the following command.
-    **UploadAuditReports “<AuditDBServer\Instance>” “<Reporting Server URL>” “<path of the copied acs folder>”**
-    For example: **UploadAuditReports “myAuditDbServer\Instance1” “http://myReportServer/ReportServer$instance1” “C:\acs”**
+    **UploadAuditReports "<AuditDBServer\Instance>" "<Reporting Server URL>" "<path of the copied acs folder>"**
+    For example: **UploadAuditReports "myAuditDbServer\Instance1" "http://myReportServer/ReportServer$instance1" "C:\acs"**
 
     This example creates a new data source called **Db Audit**, uploads the reporting models **Audit.smdl** and **Audit5.smdl**, and uploads all reports in the **acs\reports** directory.
 

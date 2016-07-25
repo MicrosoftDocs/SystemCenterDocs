@@ -31,7 +31,7 @@ ms.assetid: 1b92ccc7-868c-476d-8742-6bbf19ab60b3
 # The Activity Library
 The Activity Library in System Center 2016 - Service Manager Authoring Tool provides a number of workflow activities for building basic Windows Workflow Foundation \(WF\) workflows. Each activity performs a discrete function, such as establishing a loop structure within the workflow, running a script, or creating a Service Manager incident. The Activity Library includes the following types of activities:  
   
--   **[DeleteActive Directory Activities &#91;SM2012\_AuthoringGuide&#93;](assetId:///45cd915d-cd2d-47fc-b01f-ef78749552bf).** Activities that perform Active Directory functions, such as adding users or computers to groups.  
+-   **[DeleteActive Directory Activities &#91;SM2012\_AuthoringGuide&#93;](assetId:///45cd915d-cd2d-47fc-b01f-ef78749552bf).** Activities that perform Active&nbsp;Directory functions, such as adding users or computers to groups.  
   
 -   **[Delete Control Flow Activities &#91;SM2012\_AuthoringGuide&#93;](assetId:///7643bc64-8f70-4215-8cad-e2e7901cbfad).** Activities that provide structure for the workflow, such as loops and if\-else branches.  
   
@@ -45,8 +45,8 @@ The Activity Library in System Center 2016 - Service Manager Authoring Tool prov
   
 |Active Directory activity|Description|  
 |-------------------------------|-----------------|  
-|Add AD DS Computer To Group|Use this activity to add a computer to a security group in Active Directory Domain Services \(AD DS\).<br /><br /> When you use this activity, make sure that the Service Manager Workflow account has sufficient permissions to modify security groups in AD DS.|  
-|Add AD DS User To Group|Use this activity to add a user to a security group in AD DS.<br /><br /> When you use this activity, make sure that the Service Manager Workflow account has sufficient permissions to modify security groups in AD DS.|  
+|Add AD DS Computer To Group|Use this activity to add a computer to a security group in Active Directory Domain Services \(AD&nbsp;DS\).<br /><br /> When you use this activity, make sure that the Service Manager Workflow account has sufficient permissions to modify security groups in AD&nbsp;DS.|  
+|Add AD DS User To Group|Use this activity to add a user to a security group in AD&nbsp;DS.<br /><br /> When you use this activity, make sure that the Service Manager Workflow account has sufficient permissions to modify security groups in AD&nbsp;DS.|  
   
 |Control Flow activity|Description|  
 |---------------------------|-----------------|  

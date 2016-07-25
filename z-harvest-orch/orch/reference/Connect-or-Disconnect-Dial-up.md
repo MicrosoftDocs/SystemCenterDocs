@@ -22,7 +22,7 @@ Use the following information to configure the Connect\/Disconnect Dial\-up acti
   
 |Settings|Configuration Instructions|  
 |------------|------------------------------|  
-|**Dial\-up or VPN entry**|Type the name of the entry as entered in the address book, or click the ellipsis **\(…\)** button and select the entry from the Remote Access Phone Book.|  
+|**Dial\-up or VPN entry**|Type the name of the entry as entered in the address book, or click the ellipsis **\(...\)** button and select the entry from the Remote Access Phone Book.|  
 |**Connect\/Disconnect**|Select whether to connect to or disconnect from the dial\-up connection or VPN|  
 |**Attempts**|Enter the number of times the activity should attempt to connect to the remote network before quitting.|  
 |**Delay**|Enter the amount of time, in seconds, that the activity should wait between retry attempts.|  

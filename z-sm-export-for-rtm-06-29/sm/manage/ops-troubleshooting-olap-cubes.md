@@ -32,7 +32,7 @@ ms.assetid: dfabe723-15b7-40e0-923a-66819be1e93c
 The following sections describe common problems that you might need to troubleshoot online analytical processing \(OLAP\) data cubes in the System Center 2012 - Service Manager data warehouse.  
   
 ## Processing Failures  
- Although safeguards exist in the DWRepository database to ensure data integrity, they cannot completely prevent the possibility of a processing error. The most common processing error is a DimensionKeyNotFound exception. Because SQL Server Analysis Server \(SSAS\) dimensions are processed every 60 minutes by default, it is possible that, while processing the fact’s measure group, the dimension keys do not yet exist. In this case, by default the processing logic reprocesses the SSAS dimensions using a ProcessUpdate task and then reprocesses the fact up to two times to resolve the key errors.  
+ Although safeguards exist in the DWRepository database to ensure data integrity, they cannot completely prevent the possibility of a processing error. The most common processing error is a DimensionKeyNotFound exception. Because SQL&nbsp;Server Analysis Server \(SSAS\) dimensions are processed every 60 minutes by default, it is possible that, while processing the fact's measure group, the dimension keys do not yet exist. In this case, by default the processing logic reprocesses the SSAS dimensions using a ProcessUpdate task and then reprocesses the fact up to two times to resolve the key errors.  
   
  There are some uncommon situations in which the reprocessing might fail. The following are possible causes of this failure:  
   
@@ -50,7 +50,7 @@ The following sections describe common problems that you might need to troublesh
   
  In this situation, remember that the same database dimension can have multiple roles in the multidimensional model. We call these dimensions role\-playing dimensions. For example, the time dimension can be used multiple times in an OLAP cube that describes flight information. The different role\-playing dimensions in this case could be *Departure Time* and *Arrival Time*, where both target the *Time* dimension.  
   
- In a *WorkItems Assigned To User* example, the given role\-playing name of the user dimension is actually *AssignedToUser*. If the user filtered by this particular dimension instead of “UserDim”, they would return the correct information.  
+ In a *WorkItems Assigned To User* example, the given role\-playing name of the user dimension is actually *AssignedToUser*. If the user filtered by this particular dimension instead of "UserDim", they would return the correct information.  
   
  BIDS has a useful feature called a Dimension Usage tab that shows the relationships between dimensions and OLAP cubes so that you can determine which dimensions you can use to slice and dice the OLAP cube. Furthermore, in the *WorkItems Assigned To User* example, *UserDim* has no relationship to the *WorkItemAssignedToUser* measure group, while *UserDim\(AssignedToUser\)* does have a relationship to the measure group where the join attribute is UserDimKey. In this case, you can see the role\-playing name is highlighted within the parentheses of the Dimension Usage tab.  
   
@@ -67,7 +67,7 @@ C:\Windows\system32>netsh advfirewall firewall add rule name="Analysis Services"
 ## OLAP Cube Processing Stops  
  There can be many causes for OLAP cube processing to stop. You must first ensure that the server has enough RAM, especially in situations in which the data warehouse and the SSAS server are hosted on the same server, so that there is enough memory to run data warehouse extraction, transformation, and load \(ETL\) and cube processing jobs concurrently. A few potential solutions are listed here:  
   
-1.  There are known deadlock problems in Microsoft SQL Server 2008 Analysis Services. The workaround is to increase the number of threads in the processing thread pool before the processing stops. If the system is already stopped, the workaround is to restart both the System Center Management service and the Analysis Services service and then reset the cube processing workitem to a status of 3, which means not started, so that the Service Manager workflow engine can restart it.  
+1.  There are known deadlock problems in Microsoft SQL&nbsp;Server&nbsp;2008 Analysis Services. The workaround is to increase the number of threads in the processing thread pool before the processing stops. If the system is already stopped, the workaround is to restart both the System Center Management service and the Analysis Services service and then reset the cube processing workitem to a status of 3, which means not started, so that the Service Manager workflow engine can restart it.  
   
     > [!NOTE]  
     >  For System Center 2012 R2 Service Manager, the System Center Management service was renamed to Microsoft Monitoring Agent.  
@@ -75,7 +75,7 @@ C:\Windows\system32>netsh advfirewall firewall add rule name="Analysis Services"
      To determine the relevant cube processing workitem, you can run the following queries on the DWStagingAndConfig database. Note that these queries are shown individually; however, you can easily join them together in one query:  
   
     ```  
-    select processId from infra.process where processname like ‘Process.{CubeName}’  
+    select processId from infra.process where processname like 'Process.{CubeName}'  
     select batchid from infra.batch where processId = {ProcessId from previous query}  
     select * from infra.workitem(nolock) where BatchId = {BatchId from previous query}  
     update infra.workitem set statusid = 3 where workitemId = {workitemId from previous query)  
@@ -85,7 +85,7 @@ C:\Windows\system32>netsh advfirewall firewall add rule name="Analysis Services"
 2.  Check the CoordinatorExecutionMode property on the SSAS service, and ensue that it is set properly. You can read more about this problem on the [SQL Server forums](http://go.microsoft.com/fwlink/p/?LinkId=403946).  
   
 ## The DWMaintenance Task Stops on the ManageCubePartitions\/ManageCubeTranslations Step  
- In this situation, the most common cause is a nonresponsive SSAS server. The workaround is the same for the first step in the previous section, “OLAP Cube Processing Stops.” To determine the relevant cube processing workitem, you can run the following queries on the DWStagingAndConfig database. Note that these queries are shown individually; however, you can easily join them together in one query:  
+ In this situation, the most common cause is a nonresponsive SSAS server. The workaround is the same for the first step in the previous section, "OLAP Cube Processing Stops." To determine the relevant cube processing workitem, you can run the following queries on the DWStagingAndConfig database. Note that these queries are shown individually; however, you can easily join them together in one query:  
   
 ```  
 select processid from infra.process where processname = 'DWMaintenance'  

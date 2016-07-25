@@ -40,11 +40,11 @@ Back up the SQL Server 2008 R2 service master key using the following procedure 
 Create a batch script with the following command:  
   
 ```  
-Sqlcmd –Q "BACKUP SERVICE MASTER KEY TO FILE ='C:\BACKUP\MASTER_KEY.BAK' ENCRYPTION BY PASSWORD = 'password'"  
+Sqlcmd -Q "BACKUP SERVICE MASTER KEY TO FILE ='C:\BACKUP\MASTER_KEY.BAK' ENCRYPTION BY PASSWORD = 'password'"  
   
 ```  
   
-Where ‘password’ is the password that will be used to protect the service master key in the file that is created. If the password is lost, the service master key cannot be recovered from the file.  
+Where 'password' is the password that will be used to protect the service master key in the file that is created. If the password is lost, the service master key cannot be recovered from the file.  
   
 ## <a name="SCO_Migrate2"></a>Back up the Orchestrator database in environment A  
 Back up the entire Orchestrator database.  You can perform the backup when the system is running; however it is best to perform the backup when all runbook authors have checked in any pending changes to their runbooks. Pending changes are cached on the Runbook Designer and are not backed up with a database backup.  
@@ -62,7 +62,7 @@ Back up the entire Orchestrator database.  You can perform the backup when the s
 5.  Create a batch file with this script. Your batch file will be similar to the following:  
   
     ```  
-    Sqlcmd –Q "BACKUP DATABASE Orchestrator TO DISK=N'C:\BACKUP\OrchestratorDB.bak'"  
+    Sqlcmd -Q "BACKUP DATABASE Orchestrator TO DISK=N'C:\BACKUP\OrchestratorDB.bak'"  
     ```  
   
 ## <a name="SCO_Migrate3"></a>Deploy SQL Server 2008 R2 in environment B  
@@ -74,7 +74,7 @@ Restore the Microsoft SQL Sevver 2008 R2 service master key by using the procedu
 Create a batch script with the following command:  
   
 ```  
-Sqlcmd –Q "RESTORE SERVICE MASTER KEY FROM FILE = 'C:\BACKUP\MASTER_KEY.BAK' DECRYPTION BY PASSWORD = 'password';"  
+Sqlcmd -Q "RESTORE SERVICE MASTER KEY FROM FILE = 'C:\BACKUP\MASTER_KEY.BAK' DECRYPTION BY PASSWORD = 'password';"  
   
 ```  
   
@@ -94,14 +94,14 @@ Use the following steps to create a batch script to run on the new SQL Server co
 5.  Create a batch file with this script. Your batch file will be similar to the following:  
   
     ```  
-    Sqlcmd –Q "RESTORE DATABASE [Orchestrator] FROM  DISK = N'C:\BACKUP\OrchestratorDB.bak'WITH  FILE = 1,  NOUNLOAD,  STATS = 10"  
+    Sqlcmd -Q "RESTORE DATABASE [Orchestrator] FROM  DISK = N'C:\BACKUP\OrchestratorDB.bak'WITH  FILE = 1,  NOUNLOAD,  STATS = 10"  
   
     ```  
   
 ## <a name="SCO_Migrate6"></a>Deploy Orchestrator components in environment B  
 Deploy Orchestrator components \(management server, Web features, runbook servers, and Runbook Designers\) using the silent install commands of Orchestrator setup. See [Install with the Orchestrator Command Line Install Tool](../../orch/deploy/Install-with-the-Orchestrator-Command-Line-Install-Tool.md) for more information on deploying Orchestrator through the command line.  
   
-The following example installs all of Orchestrator on a computer with SQL Server 2008 R2 and .NET Framework 4:  
+The following example installs all of Orchestrator on a computer with SQL Server 2008 R2 and .NET Framework&nbsp;4:  
   
 ```  
 %systemdrive%\sco\setup\setup.exe /Silent /ServiceUserName:%computername%\administrator /ServicePassword:password /Components:All /DbServer:%computername%  /DbPort:1433 /DbNameNew:OrchestratorSysPrep /WebConsolePort:82 /WebServicePort:81 /OrchestratorRemote /UseMicrosoftUpdate:1 /SendCEIPReports:1 /EnableErrorReporting:always  
@@ -112,26 +112,26 @@ The following example installs all of Orchestrator on a computer with SQL Server
 **Backup SQL Server master service key sample**  
   
 ```  
-Sqlcmd –Q "BACKUP SERVICE MASTER KEY TO FILE ='C:\BACKUP\MASTER_KEY.BAK' ENCRYPTION BY PASSWORD = 'password'"  
+Sqlcmd -Q "BACKUP SERVICE MASTER KEY TO FILE ='C:\BACKUP\MASTER_KEY.BAK' ENCRYPTION BY PASSWORD = 'password'"  
   
 ```  
   
 **Backup Orchestrator database sample**  
   
 ```  
-Sqlcmd –Q "BACKUP DATABASE Orchestrator TO DISK=N'C:\BACKUP\OrchestratorDB.bak'"  
+Sqlcmd -Q "BACKUP DATABASE Orchestrator TO DISK=N'C:\BACKUP\OrchestratorDB.bak'"  
 ```  
   
 **Restore SQL Server master service key sample**  
   
 ```  
-Sqlcmd –Q "RESTORE SERVICE MASTER KEY FROM FILE = 'c:\temp_backups\keys\service_master_key' DECRYPTION BY PASSWORD = 'password'"  
+Sqlcmd -Q "RESTORE SERVICE MASTER KEY FROM FILE = 'c:\temp_backups\keys\service_master_key' DECRYPTION BY PASSWORD = 'password'"  
 ```  
   
 **Restore Orchestrator database sample**  
   
 ```  
-Sqlcmd –Q "RESTORE DATABASE [Orchestrator] FROM  DISK = N'C:\BACKUP\OrchestratorDB.bak'WITH  FILE = 1,  NOUNLOAD,  STATS = 10"  
+Sqlcmd -Q "RESTORE DATABASE [Orchestrator] FROM  DISK = N'C:\BACKUP\OrchestratorDB.bak'WITH  FILE = 1,  NOUNLOAD,  STATS = 10"  
 ```  
   
 **Install Orchestrator from batch file sample**  

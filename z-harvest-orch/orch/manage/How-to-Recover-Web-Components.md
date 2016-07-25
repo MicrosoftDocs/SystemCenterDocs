@@ -30,7 +30,7 @@ To do this, you will need to complete the following actions:
   
 3.  Open IIS Manager and navigate to the Orchestrator2012 virtual application.  
   
-4.  Open up Connection Strings and then modify OrchestratorContext. Locate the segment that starts with “provider\=System.Data.SqlClient;provider connection string” and then modify the Data Source and Initial Catalog attributes according to your new SQL Server and Database Catalog name respectively, then click OK.  
+4.  Open up Connection Strings and then modify OrchestratorContext. Locate the segment that starts with "provider\=System.Data.SqlClient;provider connection string" and then modify the Data Source and Initial Catalog attributes according to your new SQL Server and Database Catalog name respectively, then click OK.  
   
 5.  If you want to re\-encrypt the connection strings, you can execute the following command at the command prompt:  
   

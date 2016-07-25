@@ -83,7 +83,7 @@ System Center 2012 - Service Manager includes an updated version of the System C
 <ClassType ID="XBox" Accessibility="Public" Base="System!System.ConfigItem" Hosted="true">  
    <Property ID="Id" Type="int" Key="true" />  
    <Property ID="Name" Type="string" />  
-   <Property ID=“State" Type="enum" EnumType=“XBoxState" />  
+   <Property ID="State" Type="enum" EnumType="XBoxState" />  
 </ClassType>  
   
 ```  
@@ -110,7 +110,7 @@ System Center 2012 - Service Manager includes an updated version of the System C
 ```  
   
 ## Combination Classes  
- Combination classes represent an aggregation of multiple related types in the management pack, similar to views that are defined in a Microsoft SQL Server database that can return data from multiple tables. Combination classes store and retrieve all the aggregated data in one operation to the database, and they can make it easier to define user interfaces for a management pack.  
+ Combination classes represent an aggregation of multiple related types in the management pack, similar to views that are defined in a Microsoft SQL&nbsp;Server database that can return data from multiple tables. Combination classes store and retrieve all the aggregated data in one operation to the database, and they can make it easier to define user interfaces for a management pack.  
   
  In the following example, a projection is defined for an incident management view. This projection combines several different components that are related to an incident into one unit that can be used more easily for forms and for database operations.  
   
@@ -167,7 +167,7 @@ Path="$Target/Path[Relationship='SMCore!System.WorkItemCreatedForUser']$"/>
 ```  
   
 ## Console Tasks  
- Console tasks are extended in the common schema. Previously, console tasks were simple pointers to an application directory and executable file name. Console tasks are now implemented as handler code in a Microsoft .NET Framework assembly. The handler code references the assembly that houses the code, the handler name, and a list of named values that can be passed as arguments to the handler.  
+ Console tasks are extended in the common schema. Previously, console tasks were simple pointers to an application directory and executable file name. Console tasks are now implemented as handler code in a Microsoft .NET&nbsp;Framework assembly. The handler code references the assembly that houses the code, the handler name, and a list of named values that can be passed as arguments to the handler.  
   
  In the following example, the **Some.Handler.Name** handler is defined in the **MyLibrary.Resources.Assembly** assembly. A list of handler parameters and their values is also defined.  
   
@@ -218,7 +218,7 @@ Path="$Target/Path[Relationship='SMCore!System.WorkItemCreatedForUser']$"/>
 ```  
   
     <Forms>  
-   <Form ID="LobbyForm" Target="Projection" Assembly="FormAssembly“ TypeName="MyFormClass">  
+   <Form ID="LobbyForm" Target="Projection" Assembly="FormAssembly" TypeName="MyFormClass">  
    <Configuration>  
       <ShowXboxes>yes</ShowXboxes>  
    </Configuration>  

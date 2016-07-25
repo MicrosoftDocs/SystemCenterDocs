@@ -29,9 +29,9 @@ ms.assetid: dd99e994-e34d-469e-aea0-5c3547eeab66
 
 ---
 # Forms: Customizing and Authoring
-A form is a window that makes it possible for users to interact with objects from the database. Users can use a form to view and edit the properties of objects. Each form is tied to a specific class, and it displays information only for instances of the targeted class. A form contains fields. Typically, each field is bound to a specific property of the form’s targeted class. The incident form, for example, is tied to the incident object. Therefore, the incident form displays information about incident objects in the database.  
+A form is a window that makes it possible for users to interact with objects from the database. Users can use a form to view and edit the properties of objects. Each form is tied to a specific class, and it displays information only for instances of the targeted class. A form contains fields. Typically, each field is bound to a specific property of the form's targeted class. The incident form, for example, is tied to the incident object. Therefore, the incident form displays information about incident objects in the database.  
   
- A System Center 2012 - Service Manager form consists of the Windows Presentation Foundation \(WPF\) form implementation in a Microsoft .NET Framework assembly and a form definition in a Service Manager management pack. The form definition specifies the class that the form represents, along with the other properties of the form.  
+ A System Center 2012 - Service Manager form consists of the Windows Presentation Foundation \(WPF\) form implementation in a Microsoft .NET&nbsp;Framework assembly and a form definition in a Service Manager management pack. The form definition specifies the class that the form represents, along with the other properties of the form.  
   
 ## Forms Topics  
   
@@ -105,4 +105,4 @@ A form is a window that makes it possible for users to interact with objects fro
   
 -   [Properties of Form Controls](../../../sm/manage/author/Properties-of-Form-Controls.md)  
   
-     Provides information about the WPF\-based and the Service Manager–based properties of form controls.
+     Provides information about the WPF\-based and the Service Manager-based properties of form controls.

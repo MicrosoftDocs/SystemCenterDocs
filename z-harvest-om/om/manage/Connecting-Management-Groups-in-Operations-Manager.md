@@ -16,7 +16,7 @@ manager:cfreemanwa
 Connecting management groups in [!INCLUDE[om12long](../../om/manage/includes/om12long_md.md)] enables the ability to view and interact with data from multiple management groups in a single Operations console. The management group in which the consolidated view is available is called the local management group, and those that contribute their data to the consolidated view are called the connected management groups. They relate to each other in a hierarchical fashion, with connected groups in the bottom tier and the local group in the top tier. The connected groups are in a peer\-to\-peer relationship with each other. Each connected group has no visibility or interaction with the other connected groups; the visibility is strictly from the local group into the connected group.  
   
 > [!NOTE]  
-> Operations Manager does not support communication of data between peer management groups. Only the local to connected hierarchy configuration is supported. Multiple tiers, where a management group would be both a local group and a connected group, are not supported.  
+> Operations Manager&nbsp;does not support communication of data between peer management groups. Only the local to connected hierarchy configuration is supported. Multiple tiers, where a management group would be both a local group and a connected group, are not supported.  
   
 When you connect management groups, you are not deploying any new servers; rather, you are allowing the local management group to have access to the alerts and discovery information that is in a connected management group. In this way, you can view and interact with all the alerts and other monitoring data from multiple management groups in a single Operations console. In addition, you can run tasks on the monitored computers of the connected management groups.  
   
@@ -27,9 +27,9 @@ Connecting management groups offers these additional services:
 -   Consolidated monitoring across trust boundaries  
   
 > [!IMPORTANT]  
-> Both management groups must be running the same build of Operations Manager. For example, both management groups must be running System Center 2012 – Operations Manager.  
+> Both management groups must be running the same build of Operations Manager. For example, both management groups must be running System Center&nbsp;2012&nbsp;-&nbsp;Operations Manager.  
   
-In addition to all of the communications channels used in the multiple server, single management group configuration, connected management groups require communication between the management servers of the local group and the management servers of the connected group over TCP 5723 and 5724. For a complete list of ports used by Operations Manager, see [Operations Manager Supported Configurations](http://go.microsoft.com/fwlink/p/?LinkID=219650).  
+In addition to all of the communications channels used in the multiple server, single management group configuration, connected management groups require communication between the management servers of the local group and the management servers of the connected group over TCP 5723 and 5724. For a complete list of ports used by Operations Manager, see [Operations Manager&nbsp;Supported Configurations](http://go.microsoft.com/fwlink/p/?LinkID=219650).  
   
 Connected management groups support all Operations Manager user roles and makes use of the Operations Manager Connector Framework to enable bidirectional communication between the connected groups and local groups.  
   
@@ -39,7 +39,7 @@ In this procedure, you create a connection between two management groups. These 
   
 1.  To connect management groups, you must provide the fully qualified domain name \(FQDN\) of the root management server \(RMS\) of the connected management group. The management server of the local management group must be able to resolve this FQDN. If the two management groups do not use the same Domain Name System \(DNS\) service, you must create a secondary DNS zone in the DNS service that the local management group uses. This secondary DNS zone transfers the DNS information from the primary DNS zone of the connected management group. The transferred information is essentially a copy of the DNS information that is available to the management server of the local management group.  
   
-2.  Add the System Center Data Access service and System Center Management Configuration service account of the connected management groups to the Operations Manager Administrator role for the connected management group, or add it to the domain\-based Operations Manager Administrator security group in the connected management group’s domain, which has already been added to the Operations Manager Administrator role.  
+2.  Add the System Center Data Access service and System Center Management Configuration service account of the connected management groups to the Operations Manager Administrator role for the connected management group, or add it to the domain\-based Operations Manager Administrator security group in the connected management group's domain, which has already been added to the Operations Manager Administrator role.  
   
 3.  Collect the System Center Data Access service and System Center Management Configuration service account credentials from the connected management groups. These credentials are needed when you add the connected management group in the local management group.  
   
@@ -59,7 +59,7 @@ In this procedure, you create a connection between two management groups. These 
   
     2.  Type the fully qualified domain name \(FQDN\) of a **Management Server** in the desired management group to be connected.  
   
-    3.  Specify the account that will be used for the initial connection to the connected management group, either by leaving **Use SDK service account** selected or selecting **Other user account** and typing in the **User name**, **Password**, and **Domain**. The account must be a member of the Operations Manager Administrators role for the connected management group.  
+    3.  Specify the account that will be used for the initial connection to the connected management group, either by leaving **Use SDK service account** selected or selecting **Other user account** and typing in the **User name**, **Password**, and **Domain**. The account must be a member of the Operations Manager&nbsp;Administrators role for the connected management group.  
   
 5.  Click **Add**.  
   

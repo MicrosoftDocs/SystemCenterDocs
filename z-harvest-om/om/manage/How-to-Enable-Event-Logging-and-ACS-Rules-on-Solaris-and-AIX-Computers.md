@@ -51,9 +51,9 @@ You now must enable the ACS rules.
     > [!NOTE]  
     > Use the TAB key to separate log components from the log file names. Spaces do not work.  
   
-2.  Enter the following command to refresh the computer’s configuration:  
+2.  Enter the following command to refresh the computer's configuration:  
   
-    `# refresh –s syslogd`  
+    `# refresh -s syslogd`  
   
 You now must enable the ACS rules.  
   
