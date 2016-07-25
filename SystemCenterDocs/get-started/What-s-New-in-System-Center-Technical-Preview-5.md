@@ -5,7 +5,7 @@ ms.topic:  article
 author:  cfreemanwa
 ms.prod:  system-center-threshold
 keywords:  
-ms.date:  2016-07-01
+ms.date:  2016-07-25
 title:  What s New in System Center Technical Preview 5
 ms.technology:  system-center-2016
 ms.assetid:  4f8701a5-8d55-4ffd-afee-e6341ec6b7f4
