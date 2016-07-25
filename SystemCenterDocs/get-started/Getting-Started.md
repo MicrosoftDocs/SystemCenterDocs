@@ -5,7 +5,7 @@ ms.topic:  article
 author:  cfreemanwa
 ms.prod:  system-center-threshold
 keywords:  
-ms.date:  2016-07-01
+ms.date:  2016-07-25
 title:  Getting Started
 ms.technology:  system-center-2016
 ms.assetid:  805406cb-4ab8-4a51-a855-d2498524f333
