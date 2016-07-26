@@ -14,7 +14,7 @@ ms.assetid:  5fad5608-4cb7-48b0-aa31-35ca5cc2d560
 
 >Applies To: System Center 2016 Technical Preview 5
 
-### The following set of notes lists known issues and steps to mitigate the issue. These notes only apply to System Center 2016.
+### The following set of notes lists known issues and steps to mitigate the issue. These notes only apply to System Center 2016 Technical Preview 5.
 
 
 ## System Center Technical Preview - Data Protection Manager Release Notes
