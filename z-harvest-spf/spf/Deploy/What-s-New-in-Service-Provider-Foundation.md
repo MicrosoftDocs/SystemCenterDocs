@@ -13,7 +13,7 @@ author:bwren
 manager:cfreemanwa
 ---
 # What&#39;s New in Service Provider Foundation
-This topic summarizes the main new features and capabilities in [!INCLUDE[spflong](../../spf/Deploy/includes/spflong_md.md)], after its first release with [!INCLUDE[orchshort](../../om/manage/includes/orchshort_md.md)] in [!INCLUDE[spfshort](../../spf/Deploy/includes/spfshort_md.md)][!INCLUDE[sc2012sp1_short](../../om/manage/includes/sc2012sp1_short_md.md)]. The current version is [!INCLUDE[spfshort](../../spf/Deploy/includes/spfshort_md.md)][!INCLUDE[sc2012r2_1](../../om/manage/includes/sc2012r2_1_md.md)].  
+This topic summarizes the main new features and capabilities in Service Provider Foundation, after its first release with [!INCLUDE[orchshort](../../om/manage/includes/orchshort_md.md)] in Service Provider Foundation[!INCLUDE[sc2012sp1_short](../../om/manage/includes/sc2012sp1_short_md.md)]. The current version is Service Provider Foundation[!INCLUDE[sc2012r2_1](../../om/manage/includes/sc2012r2_1_md.md)].  
   
 ## New server and stamp capabilities  
 The following table lists the server types that are now available for the `Server` object, and you can add one or more of them to a `Stamp` object using the Windows PowerShell cmdlets or the Administration web service.  
@@ -34,13 +34,13 @@ For more information. see [Post-Installation Tasks for Service Provider Foundati
 Gallery items are virtual machine roles that hosting service providers can use to provide offerings to their tenants. For more information, see [Importing Gallery Items in Service Provider Foundation](../../spf/Deploy/Importing-Gallery-Items-in-Service-Provider-Foundation.md).  
   
 ## Automation support  
-You can configure the Service Management Automation web service to use [!INCLUDE[spfshort](../../spf/Deploy/includes/spfshort_md.md)]. For more information, see "Connecting to the Service Management Automation web service" in [Manage Web Services and Connections in Service Provider Foundation](../../spf/Deploy/Manage-Web-Services-and-Connections-in-Service-Provider-Foundation.md) and [How to Automate a Runbook from Service Provider Foundation](../../spf/Deploy/How-to-Automate-a-Runbook-from-Service-Provider-Foundation.md).  
+You can configure the Service Management Automation web service to use Service Provider Foundation. For more information, see "Connecting to the Service Management Automation web service" in [Manage Web Services and Connections in Service Provider Foundation](../../spf/Deploy/Manage-Web-Services-and-Connections-in-Service-Provider-Foundation.md) and [How to Automate a Runbook from Service Provider Foundation](../../spf/Deploy/How-to-Automate-a-Runbook-from-Service-Provider-Foundation.md).  
   
 ## The Usage web service  
-[!INCLUDE[spfshort](../../spf/Deploy/includes/spfshort_md.md)] now provides the Usage web service for portals and billing providers to monitor tenant usage data. For more information, see the "Usage web service" section in [Manage Web Services and Connections in Service Provider Foundation](../../spf/Deploy/Manage-Web-Services-and-Connections-in-Service-Provider-Foundation.md) and [Usage Metering in Service Provider Foundation](../../spf/Deploy/Usage-Metering-in-Service-Provider-Foundation.md).  
+Service Provider Foundation now provides the Usage web service for portals and billing providers to monitor tenant usage data. For more information, see the "Usage web service" section in [Manage Web Services and Connections in Service Provider Foundation](../../spf/Deploy/Manage-Web-Services-and-Connections-in-Service-Provider-Foundation.md) and [Usage Metering in Service Provider Foundation](../../spf/Deploy/Usage-Metering-in-Service-Provider-Foundation.md).  
   
 ## Developer resources  
-See the [Service Provider Foundation Developer's Guide](http://go.microsoft.com/fwlink/p/?LinkID=263700) for API reference topics and guidance for programming using the [!INCLUDE[spfshort](../../spf/Deploy/includes/spfshort_md.md)] web services, including the following:  
+See the [Service Provider Foundation Developer's Guide](http://go.microsoft.com/fwlink/p/?LinkID=263700) for API reference topics and guidance for programming using the Service Provider Foundation web services, including the following:  
   
 -   [Windows Azure Pack Virtual Machine Roles Tenant API](http://msdn.microsoft.com/library/dn502556.aspx)  
   
@@ -49,11 +49,11 @@ See the [Service Provider Foundation Developer's Guide](http://go.microsoft.com/
 -   [Tenants and Users](http://msdn.microsoft.com/library/dn458381.aspx)  
   
 ## Other changes  
-The following features and enhancements were made to [!INCLUDE[spfshort](../../spf/Deploy/includes/spfshort_md.md)]:  
+The following features and enhancements were made to Service Provider Foundation:  
   
 -   HTTP is no longer supported; all web requests must use HTTPS to ensure greater security with the secure sockets layer \(SSL\).  
   
--   When you install [!INCLUDE[spfshort](../../spf/Deploy/includes/spfshort_md.md)], you now have the option to automatically generate a self\-signed certificate for use in a non\-production environment. For more information, see [How to Install Service Provider Foundation for System Center 2012 R2](../../spf/Deploy/How-to-Install-Service-Provider-Foundation-for-System-Center-2012-R2.md).  
+-   When you install Service Provider Foundation, you now have the option to automatically generate a self\-signed certificate for use in a non\-production environment. For more information, see [How to Install Service Provider Foundation for System Center 2012 R2](../../spf/Deploy/How-to-Install-Service-Provider-Foundation-for-System-Center-2012-R2.md).  
   
 -   For more efficient administration, some configurations that were in Web.config files are now stored in the SPFDB database.  
   

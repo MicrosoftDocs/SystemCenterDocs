@@ -13,19 +13,19 @@ author:bwren
 manager:cfreemanwa
 ---
 # How to Uninstall Service Provider Foundation
-When you uninstall [!INCLUDE[spflong](../../spf/Deploy/includes/spflong_md.md)], you remove all [!INCLUDE[spfshort](../../spf/Deploy/includes/spfshort_md.md)] features, including all web services that are associated with [!INCLUDE[spfshort](../../spf/Deploy/includes/spfshort_md.md)].  
+When you uninstall Service Provider Foundation, you remove all Service Provider Foundation features, including all web services that are associated with Service Provider Foundation.  
   
 You can also run a silent, unattended, uninstallation. For more information, see [Setup Command-Line Options for Service Provider Foundation](../../spf/Deploy/Setup-Command-Line-Options-for-Service-Provider-Foundation.md).  
   
 You must use a domain user account with administrative privileges on the computers on which you want to uninstall Service Provider Foundation.  
   
-If there is a problem with the uninstallation, consult the log files in the **%SYSTEMDRIVE%\\%TEMP%\\** folder in which you want to uninstall [!INCLUDE[spfshort](../../spf/Deploy/includes/spfshort_md.md)].  
+If there is a problem with the uninstallation, consult the log files in the **%SYSTEMDRIVE%\\%TEMP%\\** folder in which you want to uninstall Service Provider Foundation.  
   
-When you uninstall [!INCLUDE[spfshort](../../spf/Deploy/includes/spfshort_md.md)], you can keep or remove the Service Provider Foundation database.  
+When you uninstall Service Provider Foundation, you can keep or remove the Service Provider Foundation database.  
   
-### To uninstall [!INCLUDE[spfshort](../../spf/Deploy/includes/spfshort_md.md)] and all associated web services  
+### To uninstall Service Provider Foundation and all associated web services  
   
-1.  On the computer on which [!INCLUDE[spfshort](../../spf/Deploy/includes/spfshort_md.md)] is installed, click **Start**, and then click **Control Panel**.  
+1.  On the computer on which Service Provider Foundation is installed, click **Start**, and then click **Control Panel**.  
   
 2.  In **Programs**, click **Uninstall a program**.  
   
@@ -35,11 +35,11 @@ When you uninstall [!INCLUDE[spfshort](../../spf/Deploy/includes/spfshort_md.md)
   
     -   Click **Previous** to change any selections.  
   
-    -   Click **Uninstall** to uninstall [!INCLUDE[spfshort](../../spf/Deploy/includes/spfshort_md.md)].  
+    -   Click **Uninstall** to uninstall Service Provider Foundation.  
   
     After you click **Uninstall**, the **Uninstalling web services** page appears and an uninstallation progress indicator appears.  
   
-5.  After [!INCLUDE[spfshort](../../spf/Deploy/includes/spfshort_md.md)] is uninstalled, on **The selected components were removed successfully** page, click **Close**.  
+5.  After Service Provider Foundation is uninstalled, on **The selected components were removed successfully** page, click **Close**.  
   
 ## See Also  
 [How to Install Service Provider Foundation for System Center 2012 R2](../../spf/Deploy/How-to-Install-Service-Provider-Foundation-for-System-Center-2012-R2.md)  
