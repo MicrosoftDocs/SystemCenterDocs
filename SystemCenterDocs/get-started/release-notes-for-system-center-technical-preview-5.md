@@ -488,3 +488,31 @@ Get-SCNATConnection
 **Description:** If you are creating a storage tier in the Storage Spaces Direct user interface, you will be limited to tiers using Hard Disk Drive (HDD) storage.
 
 **Workaround:** You can create tiered volumes with SSD storage via PowerShell.
+
+### Deploying Scale out File Server on a Storage Spaces Direct configuration through SCVVM RTM fails
+**Description:** If you deploy Scale out File Server (SoFS) on a Storage Spaces Direct configuration, the following error occurs:
+Error 25305: "Unable to execute the task because of error: Unable to cast object of type 'System.String' to type 'System.IO.FileInfo' " 
+
+**Workaround:** Deploy the Scale Out File Server using VMM PowerShell with [-SkipClusterValidation] or deploy the same out of band and bring it under VMM management.
+
+### VM deployment on Scale Out File Server using fast file copy completes with warning
+**Description:** If you deploy a VM on a Scale Out File Server using fast file copy, the action completes successfully with the following warning:
+"VMM could not transfer the file <source location> to <destination location> using fast file copy. The VMM agent on <host> returned an error.
+The user name or password is incorrect (0x8007052E)
+
+**Workaround:** None
+
+### In VMM UI, cluster validation is always performed during creation of a hyperconverged Storage Spaces Direct enabled cluster
+**Description:**  If you create a hyperconverged Storage Spaces Direct enabled cluster using VMM UI, cluster validation is always performed.
+
+**Workaround:**  To skip cluster validation when creating a cluster, use VMM PowerShell to create the cluster with the -skipClusterValidation option.
+
+### When adding a node to a cluster using VMM, cluster validation is always performed even when the skip cluster validation option is specified
+**Description:** If you add a node to an existing hyperconverged cluster using Storage Spaces Direct technology using VMM, cluster validation is always performed.
+
+**Workaround:** To skip cluster validation when adding a node to the cluster, use Windows PowerShell to add the node with the appropriate skip cluster validation option.
+
+### When managing Storage Replica using VMM, a critical exception is generated when the read storage provider operation is performed after storage replication is enabled or a failover is performed.
+**Description:** If you perform the read storage provider operation after enabling storage replication OR performing failover, the job will fail with critical exception ‘dictionary key cannot be null’  for the recovery site provider.
+
+**Workaround:** Restart the storage cluster for recovery site provider from failover cluster manager, wait for some time as cluster service may take time to update the objects even after restart. Then, retry the read storage provider operation.
