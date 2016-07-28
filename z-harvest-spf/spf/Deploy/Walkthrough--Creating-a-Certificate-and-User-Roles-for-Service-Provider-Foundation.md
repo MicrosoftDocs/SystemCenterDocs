@@ -13,7 +13,7 @@ author:bwren
 manager:cfreemanwa
 ---
 # Walkthrough: Creating a Certificate and User Roles for Service Provider Foundation
-This walkthrough shows how to administer important tasks for managing both certificates and user roles in [!INCLUDE[spflong](../../spf/Deploy/includes/spflong_md.md)]. To start, we show how to generate a self\-signed certificate if you are not already working with an issuer's signed certificate. Next, we show how to obtain the certificate's public key, and how to use that key to create the tenant in [!INCLUDE[spfshort](../../spf/Deploy/includes/spfshort_md.md)] and user roles in [!INCLUDE[vmm12long](../../spf/Deploy/includes/vmm12long_md.md)].  
+This walkthrough shows how to administer important tasks for managing both certificates and user roles in Service Provider Foundation. To start, we show how to generate a self\-signed certificate if you are not already working with an issuer's signed certificate. Next, we show how to obtain the certificate's public key, and how to use that key to create the tenant in Service Provider Foundation and user roles in --- translation.priority.ht:    - ar-sa   - cs-cz   - da-dk   - de-de   - el-gr   - es-es   - fi-fi   - fr-fr   - he-il   - hu-hu   - it-it   - ja-jp   - ko-kr   - nb-no   - nl-nl   - pl-pl   - pt-br   - pt-pt   - ro-ro   - ru-ru   - sv-se   - tr-tr   - zh-cn   - zh-hk   - zh-tw --- System&nbsp;Center&nbsp;2012&nbsp;- Virtual&nbsp;Machine&nbsp;Manager&nbsp;\(VMM\).  
   
 This walkthrough is organized into the following sections and procedures. The procedures are designed to be performed sequentially, although they contain the information that you need to run them individually as needed. These procedures are tasks for  the hoster administrator to perform.  
   
@@ -45,7 +45,7 @@ The following procedure describes how to create a certificate for a tenant by us
 2.  In the **certmgr** window, click **Certificates \- Current User**, open the **Personal** folder, and then open the **Certificates** folder to view the certificate that you just generated.  
   
 ## <a name="BMK_Keys"></a>Obtain and export keys  
-The procedures in this section show how to export public and private keys from certificate files. You associate a public key with a tenant in [!INCLUDE[spfshort](../../spf/Deploy/includes/spfshort_md.md)] to later validate claims made, or made on behalf of, a tenant. This section includes a procedure that shows how to obtain the public key directly in your PowerShell session.  
+The procedures in this section show how to export public and private keys from certificate files. You associate a public key with a tenant in Service Provider Foundation to later validate claims made, or made on behalf of, a tenant. This section includes a procedure that shows how to obtain the public key directly in your PowerShell session.  
   
 ### <a name="BMK_ExportPublic"></a>To export the public key  
   
@@ -95,7 +95,7 @@ The procedures in this section show how to export public and private keys from c
     The next procedure uses the `$key` variable that you just created.  
   
 ## <a name="BMK_Role"></a>Create the tenant and its user roles  
-[!INCLUDE[spfshort](../../spf/Deploy/includes/spfshort_md.md)] does not create user roles or define their scope \(such as clouds\), resources, or actions. Instead, the New\-SCSPFTenantUserRole cmdlet creates an association for a tenant with a user role name. When that association is created, it also generates an ID that can be used for the corresponding ID for creating the role in [!INCLUDE[vmm12med](../../spf/Deploy/includes/vmm12med_md.md)].  
+Service Provider Foundation does not create user roles or define their scope \(such as clouds\), resources, or actions. Instead, the New\-SCSPFTenantUserRole cmdlet creates an association for a tenant with a user role name. When that association is created, it also generates an ID that can be used for the corresponding ID for creating the role in --- translation.priority.ht:    - cs-cz   - da-dk   - de-de   - el-gr   - es-es   - fi-fi   - fr-fr   - hu-hu   - it-it   - ja-jp   - ko-kr   - nb-no   - nl-nl   - pl-pl   - pt-br   - pt-pt   - ru-ru   - sv-se   - tr-tr   - zh-cn   - zh-hk   - zh-tw --- System&nbsp;Center&nbsp;2012&nbsp;- Virtual&nbsp;Machine&nbsp;Manager.  
   
 You can also create user roles by using the Admin OData protocol service that uses the [Service Provider Foundation Developer's Guide](http://go.microsoft.com/fwlink/p/?LinkID=263700).  
   
@@ -139,9 +139,9 @@ You can also create user roles by using the Admin OData protocol service that us
     ```  
   
     > [!CAUTION]  
-    > Note that if the user role was previously created by using the [!INCLUDE[vmm12short](../../spf/Deploy/includes/vmm12short_md.md)] Administration Console, its permissions would be overwritten by those specified by the **New\-SCSUserRole** cmdlet.  
+    > Note that if the user role was previously created by using the --- translation.priority.ht:    - ar-sa   - cs-cz   - da-dk   - de-de   - el-gr   - es-es   - fi-fi   - fr-fr   - he-il   - hu-hu   - it-it   - ja-jp   - ko-kr   - nb-no   - nl-nl   - pl-pl   - pt-br   - pt-pt   - ro-ro   - ru-ru   - sv-se   - tr-tr   - zh-cn   - zh-hk   - zh-tw --- VMM Administration Console, its permissions would be overwritten by those specified by the **New\-SCSUserRole** cmdlet.  
   
-4.  Verify that the user role was created by verifying that it is listed in the **User Roles** in **Settings** workspace in the [!INCLUDE[vmm12short](../../spf/Deploy/includes/vmm12short_md.md)] Administration Console.  
+4.  Verify that the user role was created by verifying that it is listed in the **User Roles** in **Settings** workspace in the --- translation.priority.ht:    - ar-sa   - cs-cz   - da-dk   - de-de   - el-gr   - es-es   - fi-fi   - fr-fr   - he-il   - hu-hu   - it-it   - ja-jp   - ko-kr   - nb-no   - nl-nl   - pl-pl   - pt-br   - pt-pt   - ro-ro   - ru-ru   - sv-se   - tr-tr   - zh-cn   - zh-hk   - zh-tw --- VMM Administration Console.  
   
 5.  Define the following for the role by selecting the role and clicking **Properties** on the toolbar:  
   
@@ -157,20 +157,20 @@ You can also create user roles by using the Admin OData protocol service that us
   
 ### <a name="BMK_CreateSSU"></a>To create a tenant self\-service user role  
   
-1.  Enter the following command to create a self\-service user in [!INCLUDE[spfshort](../../spf/Deploy/includes/spfshort_md.md)] for the tenant you created in the [To create a tenant with the certificate's public key](../Topic/Walkthrough:%20Creating%20a%20Certificate%20and%20User%20Roles%20for%20Service%20Provider%20Foundation.md#BMK_CreateTenant) procedure.  
+1.  Enter the following command to create a self\-service user in Service Provider Foundation for the tenant you created in the [To create a tenant with the certificate's public key](../Topic/Walkthrough:%20Creating%20a%20Certificate%20and%20User%20Roles%20for%20Service%20Provider%20Foundation.md#BMK_CreateTenant) procedure.  
   
     ```  
     PS C:\> $TenantSSU = New-SCSPFTenantUserRole -Name ContosoCloudSpaceSSU -Tenant $tenant   
     ```  
   
-2.  Create the corresponding tenant user role in [!INCLUDE[vmm12short](../../spf/Deploy/includes/vmm12short_md.md)] by entering the following command:  
+2.  Create the corresponding tenant user role in --- translation.priority.ht:    - ar-sa   - cs-cz   - da-dk   - de-de   - el-gr   - es-es   - fi-fi   - fr-fr   - he-il   - hu-hu   - it-it   - ja-jp   - ko-kr   - nb-no   - nl-nl   - pl-pl   - pt-br   - pt-pt   - ro-ro   - ru-ru   - sv-se   - tr-tr   - zh-cn   - zh-hk   - zh-tw --- VMM by entering the following command:  
   
     ```  
     PS C:\> $vmmSSU = New-SCUserRole -Name ContosoCloudSpaceVMMSSU -UserRoleProfile SelfServiceUser -ParentUserRole $TARole -ID $TenantSSU.ID  
   
     ```  
   
-3.  Verify that the user role was created by verifying that it is listed in the **User Roles** in **Settings** workspace in the [!INCLUDE[vmm12short](../../spf/Deploy/includes/vmm12short_md.md)] Administration Console. Notice that the parent of the role is the tenant administrator.  
+3.  Verify that the user role was created by verifying that it is listed in the **User Roles** in **Settings** workspace in the --- translation.priority.ht:    - ar-sa   - cs-cz   - da-dk   - de-de   - el-gr   - es-es   - fi-fi   - fr-fr   - he-il   - hu-hu   - it-it   - ja-jp   - ko-kr   - nb-no   - nl-nl   - pl-pl   - pt-br   - pt-pt   - ro-ro   - ru-ru   - sv-se   - tr-tr   - zh-cn   - zh-hk   - zh-tw --- VMM Administration Console. Notice that the parent of the role is the tenant administrator.  
   
 Repeat this procedure as needed for the tenant.  
   

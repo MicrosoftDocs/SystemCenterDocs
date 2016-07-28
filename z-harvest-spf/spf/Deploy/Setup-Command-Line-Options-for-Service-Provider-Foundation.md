@@ -13,9 +13,9 @@ author:bwren
 manager:cfreemanwa
 ---
 # Setup Command-Line Options for Service Provider Foundation
-You can use command\-line options with the [!INCLUDE[spflong](../../spf/Deploy/includes/spflong_md.md)] setup to perform an unattended installation by using the **-Silent** option. All options that you want to specify must be in a response file \(text file\) whose path is specified after the **-Silent** option, except for **-Silent -Uninstall** which performs an unattended uninstallation. The options can be delineated by either one line for each option, or a single space separating each option.  
+You can use command\-line options with the Service Provider Foundation setup to perform an unattended installation by using the **-Silent** option. All options that you want to specify must be in a response file \(text file\) whose path is specified after the **-Silent** option, except for **-Silent -Uninstall** which performs an unattended uninstallation. The options can be delineated by either one line for each option, or a single space separating each option.  
   
-This topic requires that you have located the **setup.exe** file for [!INCLUDE[spfshort](../../spf/Deploy/includes/spfshort_md.md)] in the installation media for [!INCLUDE[orchshort](../../om/manage/includes/orchshort_md.md)].  
+This topic requires that you have located the **setup.exe** file for Service Provider Foundation in the installation media for [!INCLUDE[orchshort](../../om/manage/includes/orchshort_md.md)].  
   
 ## Setup Command\-Line Options  
 The **\-Silent** option must be specified followed by the name of the response file, or followed by the **\-Uninstall** option:  
@@ -94,7 +94,7 @@ The following table describes the command\-line options:
 |**\-UseMicrosoftUpdate**|Use Microsoft Update to check for updates.|  
 |**\-SpecifyCertificate**|Specify true to use an existing certificate or false to automatically generate a self\-signed certificate. If you specify true, you must also specify a value for the **CertificateSerialNumber** option.|  
 |**\-CertificateSerialNumber**|The serial number of the certificate used by IIS for HTTPS authentication. Must not contain any spaces. You can omit this option if you specified the  **SpecifyCertificate** option as false.|  
-|\[**\-DatabaseServer** <*ServerName*>\]|The name of the server that contains the [!INCLUDE[spfshort](../../spf/Deploy/includes/spfshort_md.md)] database. Use localhost if the database is on the same computer on which you are installing [!INCLUDE[spfshort](../../spf/Deploy/includes/spfshort_md.md)].|  
+|\[**\-DatabaseServer** <*ServerName*>\]|The name of the server that contains the Service Provider Foundation database. Use localhost if the database is on the same computer on which you are installing Service Provider Foundation.|  
 |\[**\-CertificationStore**\]|The store location of the certificate.|  
 |\[**\-InstallFolder** <*InstallFolder*>\]|The path to the directory to install the product. The path must not contain any spaces.|  
 |\[**\-WebSitePortNumber** <*PortNumber*>\]|The port number for the web service.|  

@@ -13,15 +13,15 @@ author:bwren
 manager:cfreemanwa
 ---
 # How to Install Service Provider Foundation for System Center 2012 SP1
-You can install [!INCLUDE[spfshort](../../spf/Deploy/includes/spfshort_md.md)] on a single server or on multiple servers, with at least one server that has Microsoft SQL&nbsp;Server installed to contain the [!INCLUDE[spfshort](../../spf/Deploy/includes/spfshort_md.md)] database.  
+You can install Service Provider Foundation on a single server or on multiple servers, with at least one server that has Microsoft SQL&nbsp;Server installed to contain the Service Provider Foundation database.  
   
-The Setup wizard configures an instance of [!INCLUDE[spfshort](../../spf/Deploy/includes/spfshort_md.md)], along with the web services that you select for that computer. However, at this time, only the [!INCLUDE[vmm12long](../../spf/Deploy/includes/vmm12long_md.md)] web service is available for deployment. Installation of [!INCLUDE[spfshort](../../spf/Deploy/includes/spfshort_md.md)] onto a virtual machine is supported.  
+The Setup wizard configures an instance of Service Provider Foundation, along with the web services that you select for that computer. However, at this time, only the --- translation.priority.ht:    - ar-sa   - cs-cz   - da-dk   - de-de   - el-gr   - es-es   - fi-fi   - fr-fr   - he-il   - hu-hu   - it-it   - ja-jp   - ko-kr   - nb-no   - nl-nl   - pl-pl   - pt-br   - pt-pt   - ro-ro   - ru-ru   - sv-se   - tr-tr   - zh-cn   - zh-hk   - zh-tw --- System&nbsp;Center&nbsp;2012&nbsp;- Virtual&nbsp;Machine&nbsp;Manager&nbsp;\(VMM\) web service is available for deployment. Installation of Service Provider Foundation onto a virtual machine is supported.  
   
-Before you install [!INCLUDE[spfshort](../../spf/Deploy/includes/spfshort_md.md)], do the following:  
+Before you install Service Provider Foundation, do the following:  
   
 -   Make sure that each computer has sufficient RAM and hard disk space for all the web services that you intend to install. Also, be sure to have the prerequisite software installed. For more information, see [System Requirements for Service Provider Foundation for System Center 2012 SP1](../../spf/Deploy/System-Requirements-for-Service-Provider-Foundation-for-System-Center-2012-SP1.md).  
   
--   Make sure that you have a domain user account with administrative privileges on the computers on which you want to install [!INCLUDE[spfshort](../../spf/Deploy/includes/spfshort_md.md)].  
+-   Make sure that you have a domain user account with administrative privileges on the computers on which you want to install Service Provider Foundation.  
   
 -   Close any open programs, and make sure that the computer does not have a restart pending.  
   
@@ -29,9 +29,9 @@ If there is a problem with the installation completing successfully, refer to th
   
 You can also run a silent, unattended, installation. For more information, see [Setup Command-Line Options for Service Provider Foundation](../../spf/Deploy/Setup-Command-Line-Options-for-Service-Provider-Foundation.md).  
   
-### To install [!INCLUDE[spfshort](../../spf/Deploy/includes/spfshort_md.md)]  
+### To install Service Provider Foundation  
   
-1.  On the server where you want to install [!INCLUDE[spfshort](../../spf/Deploy/includes/spfshort_md.md)], double\-click **SetupOrchestrator.exe** on the installation media to start the [!INCLUDE[orchlong](../../orch/deploy/includes/orchlong_md.md)] Setup Wizard.  
+1.  On the server where you want to install Service Provider Foundation, double\-click **SetupOrchestrator.exe** on the installation media to start the [!INCLUDE[orchlong](../../orch/deploy/includes/orchlong_md.md)] Setup Wizard.  
   
     > [!NOTE]  
     > We recommend that you run setup as Administrator. Doing so allows Customer Experience and Microsoft Update choices to be retained later in the setup.  
@@ -56,9 +56,9 @@ You can also run a silent, unattended, installation. For more information, see [
 8.  On the **Specify a location for the SPF files** page, accept or change the location for the web service files by using the **Change Folder** button. Optionally, change **Website name**. In the **Port Number** section, enter the Internet Information Services \(IIS\) port number that you want to use, or accept the default of 8090.  
   
     > [!NOTE]  
-    > If you want to change the IIS port that you assign during the installation of [!INCLUDE[spfshort](../../spf/Deploy/includes/spfshort_md.md)], you must uninstall or reinstall [!INCLUDE[spfshort](../../spf/Deploy/includes/spfshort_md.md)].  
+    > If you want to change the IIS port that you assign during the installation of Service Provider Foundation, you must uninstall or reinstall Service Provider Foundation.  
   
-    The certificate store and name refers to the certificate that was used to configure the site bindings for the [!INCLUDE[spfshort](../../spf/Deploy/includes/spfshort_md.md)] website in **Internet Services Information \(IIS\) Manager**. The currently selected certificate may or may not be the most applicable certificate for your environment. For more information, see [How to Create an SSL Certificate for Testing Service Provider Foundation](../../spf/Deploy/How-to-Create-an-SSL-Certificate-for-Testing-Service-Provider-Foundation.md).  
+    The certificate store and name refers to the certificate that was used to configure the site bindings for the Service Provider Foundation website in **Internet Services Information \(IIS\) Manager**. The currently selected certificate may or may not be the most applicable certificate for your environment. For more information, see [How to Create an SSL Certificate for Testing Service Provider Foundation](../../spf/Deploy/How-to-Create-an-SSL-Certificate-for-Testing-Service-Provider-Foundation.md).  
   
     Click **Next**.  
   
@@ -74,7 +74,7 @@ You can also run a silent, unattended, installation. For more information, see [
   
         We recommend that you do not use **Network Service** but instead use a **Service Account** using domain credentials.  
   
-        If you select **Network Service**, the account must be a [!INCLUDE[vmmblue_1](../../om/manage/includes/vmmblue_1_md.md)] administrator, or it must have enough permission to perform the [!INCLUDE[spfshort](../../spf/Deploy/includes/spfshort_md.md)] requests.  
+        If you select **Network Service**, the account must be a [!INCLUDE[vmmblue_1](../../om/manage/includes/vmmblue_1_md.md)] administrator, or it must have enough permission to perform the Service Provider Foundation requests.  
   
     Click **Next**.  
   
@@ -90,7 +90,7 @@ You can also run a silent, unattended, installation. For more information, see [
   
     -   Click **Previous** to change any selections.  
   
-    -   Click **Install** to install [!INCLUDE[spfshort](../../spf/Deploy/includes/spfshort_md.md)].  
+    -   Click **Install** to install Service Provider Foundation.  
   
     After you click **Install**, the installation progress indicator appears.  
   
@@ -100,25 +100,25 @@ Repeat this procedure for each installation, such as for a web farm.
   
 ### To upgrade from previous installations  
   
-1.  Stop all web services and portal applications using [!INCLUDE[spfshort](../../spf/Deploy/includes/spfshort_md.md)].  
+1.  Stop all web services and portal applications using Service Provider Foundation.  
   
-2.  Uninstall [!INCLUDE[spfshort](../../spf/Deploy/includes/spfshort_md.md)] using **Control Panel**. For more information, see [How to Uninstall Service Provider Foundation](../../spf/Deploy/How-to-Uninstall-Service-Provider-Foundation.md).  
+2.  Uninstall Service Provider Foundation using **Control Panel**. For more information, see [How to Uninstall Service Provider Foundation](../../spf/Deploy/How-to-Uninstall-Service-Provider-Foundation.md).  
   
-    The [!INCLUDE[spfshort](../../spf/Deploy/includes/spfshort_md.md)] database remains in place, including any extensions and application programming interface \(API\) resources that were added.  
+    The Service Provider Foundation database remains in place, including any extensions and application programming interface \(API\) resources that were added.  
   
     Repeat this step for each installation, such as for a web farm.  
   
-3.  Install the new version of [!INCLUDE[spfshort](../../spf/Deploy/includes/spfshort_md.md)].  
+3.  Install the new version of Service Provider Foundation.  
   
-    On the **Configure the database server** page, specify the name of name of the server that has the [!INCLUDE[spfshort](../../spf/Deploy/includes/spfshort_md.md)] database.  
+    On the **Configure the database server** page, specify the name of name of the server that has the Service Provider Foundation database.  
   
     Make any other changes that may be required for the installation, such as on the **Configure the Admin web service** page.  
   
     Repeat this step for each installation, such as for a web farm.  
   
-### To enable the use of [!INCLUDE[spfshort](../../spf/Deploy/includes/spfshort_md.md)] with a portal applications  
+### To enable the use of Service Provider Foundation with a portal applications  
   
--   See [Configuring Portals for Service Provider Foundation](../../spf/Deploy/Configuring-Portals-for-Service-Provider-Foundation.md) for instructions on configuring [!INCLUDE[spfshort](../../spf/Deploy/includes/spfshort_md.md)] with [!INCLUDE[katal_long](../../spf/Deploy/includes/katal_long_md.md)] and [!INCLUDE[conceroshort](../../om/manage/includes/conceroshort_md.md)].  
+-   See [Configuring Portals for Service Provider Foundation](../../spf/Deploy/Configuring-Portals-for-Service-Provider-Foundation.md) for instructions on configuring Service Provider Foundation with --- translation.priority.ht:    - cs-cz   - da-dk   - de-de   - el-gr   - es-es   - fi-fi   - fr-fr   - hu-hu   - it-it   - ja-jp   - ko-kr   - nb-no   - nl-nl   - pl-pl   - pt-br   - pt-pt   - ru-ru   - sv-se   - tr-tr   - zh-cn   - zh-tw --- Windows Azure Pack for Windows Server and API and [!INCLUDE[conceroshort](../../om/manage/includes/conceroshort_md.md)].  
   
 ## See Also  
 [Setup Command-Line Options for Service Provider Foundation](../../spf/Deploy/Setup-Command-Line-Options-for-Service-Provider-Foundation.md)  

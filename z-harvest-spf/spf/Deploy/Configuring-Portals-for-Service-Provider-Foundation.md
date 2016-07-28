@@ -13,20 +13,20 @@ author:bwren
 manager:cfreemanwa
 ---
 # Configuring Portals for Service Provider Foundation
-This topic describes how to configure [!INCLUDE[spfshort](../../spf/Deploy/includes/spfshort_md.md)] with the following portal applications:  
+This topic describes how to configure Service Provider Foundation with the following portal applications:  
   
 -   [!INCLUDE[katal_1](../../orch/getstarted/includes/katal_1_md.md)]  
   
 -   [!INCLUDE[conceroshort](../../om/manage/includes/conceroshort_md.md)]  
   
-All portal and client applications use the [!INCLUDE[spfshort](../../spf/Deploy/includes/spfshort_md.md)] services to deliver IaaS. For more information, see [Manage Web Services and Connections in Service Provider Foundation](../../spf/Deploy/Manage-Web-Services-and-Connections-in-Service-Provider-Foundation.md).  
+All portal and client applications use the Service Provider Foundation services to deliver IaaS. For more information, see [Manage Web Services and Connections in Service Provider Foundation](../../spf/Deploy/Manage-Web-Services-and-Connections-in-Service-Provider-Foundation.md).  
   
 ## Configuring [!INCLUDE[katal_1](../../orch/getstarted/includes/katal_1_md.md)]  
-[!INCLUDE[spflong](../../spf/Deploy/includes/spflong_md.md)] provides services and connectivity for delivering IaaS for [!INCLUDE[katal_2](../../spf/Deploy/includes/katal_2_md.md)].  
+Service Provider Foundation provides services and connectivity for delivering IaaS for Windows Azure Pack.  
   
-### <a name="SMP_Procedure"></a>To register [!INCLUDE[spfshort](../../spf/Deploy/includes/spfshort_md.md)] in [!INCLUDE[katal_2](../../spf/Deploy/includes/katal_2_md.md)]  
+### <a name="SMP_Procedure"></a>To register Service Provider Foundation in Windows Azure Pack  
   
-1.  On the sever that has [!INCLUDE[spfshort](../../spf/Deploy/includes/spfshort_md.md)] installed, make a note of the credential used for the Admin, VMM, Usage, and Provider Application Pool identity in Internet Information Services \(IIS\). You will need this credential for registering the endpoint in [!INCLUDE[katal_2](../../spf/Deploy/includes/katal_2_md.md)].  
+1.  On the sever that has Service Provider Foundation installed, make a note of the credential used for the Admin, VMM, Usage, and Provider Application Pool identity in Internet Information Services \(IIS\). You will need this credential for registering the endpoint in Windows Azure Pack.  
   
 2.  Continue with the procedure in [Register the Service Provider Foundation Endpoint for Virtual Machine Clouds](assetId:///197ac7a4-6ca2-46a4-855d-327979b68ea5) in the [!INCLUDE[katal_1](../../orch/getstarted/includes/katal_1_md.md)] documentation.  
   
@@ -65,11 +65,11 @@ If a tenant was not created, you can follow the procedures for creating a tenant
   
     -   **Service location:**  
   
-        This is the [!INCLUDE[spfshort](../../spf/Deploy/includes/spfshort_md.md)] OData protocol URI for the VMM service, as shown the following example. The URI ends with tenant's ID:  
+        This is the Service Provider Foundation OData protocol URI for the VMM service, as shown the following example. The URI ends with tenant's ID:  
   
         `https://contoso.muchspace.com:8090/SC2012R2/vmm/Microsoft.Management.Odata.svc/4ce5713a-50a1-434b-b47a-87caad75ba72`  
   
-        If you are using [!INCLUDE[spfshort](../../spf/Deploy/includes/spfshort_md.md)][!INCLUDE[sc2012sp1_short](../../om/manage/includes/sc2012sp1_short_md.md)], remove the 'R2' from SC2012R2.  
+        If you are using Service Provider Foundation[!INCLUDE[sc2012sp1_short](../../om/manage/includes/sc2012sp1_short_md.md)], remove the 'R2' from SC2012R2.  
   
     -   **Certificate file:**  
   
