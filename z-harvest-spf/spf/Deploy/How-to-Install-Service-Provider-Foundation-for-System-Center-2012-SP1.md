@@ -31,7 +31,7 @@ You can also run a silent, unattended, installation. For more information, see [
   
 ### To install Service Provider Foundation  
   
-1.  On the server where you want to install Service Provider Foundation, double\-click **SetupOrchestrator.exe** on the installation media to start the [!INCLUDE[orchlong](../../orch/deploy/includes/orchlong_md.md)] Setup Wizard.  
+1.  On the server where you want to install Service Provider Foundation, double\-click **SetupOrchestrator.exe** on the installation media to start the System Center 2012 Orchestrator  Setup Wizard.  
   
     > [!NOTE]  
     > We recommend that you run setup as Administrator. Doing so allows Customer Experience and Microsoft Update choices to be retained later in the setup.  
@@ -74,7 +74,7 @@ You can also run a silent, unattended, installation. For more information, see [
   
         We recommend that you do not use **Network Service** but instead use a **Service Account** using domain credentials.  
   
-        If you select **Network Service**, the account must be a [!INCLUDE[vmmblue_1](../../om/manage/includes/vmmblue_1_md.md)] administrator, or it must have enough permission to perform the Service Provider Foundation requests.  
+        If you select **Network Service**, the account must be System Center 2012 Virtual Machine Manager administrator, or it must have enough permission to perform the Service Provider Foundation requests.  
   
     Click **Next**.  
   
@@ -118,7 +118,7 @@ Repeat this procedure for each installation, such as for a web farm.
   
 ### To enable the use of Service Provider Foundation with a portal applications  
   
--   See [Configuring Portals for Service Provider Foundation](../../spf/Deploy/Configuring-Portals-for-Service-Provider-Foundation.md) for instructions on configuring Service Provider Foundation with --- translation.priority.ht:    - cs-cz   - da-dk   - de-de   - el-gr   - es-es   - fi-fi   - fr-fr   - hu-hu   - it-it   - ja-jp   - ko-kr   - nb-no   - nl-nl   - pl-pl   - pt-br   - pt-pt   - ru-ru   - sv-se   - tr-tr   - zh-cn   - zh-tw --- Windows Azure Pack for Windows Server and API and [!INCLUDE[conceroshort](../../om/manage/includes/conceroshort_md.md)].  
+-   See [Configuring Portals for Service Provider Foundation](../../spf/Deploy/Configuring-Portals-for-Service-Provider-Foundation.md) for instructions on configuring Service Provider Foundation with --- translation.priority.ht:    - cs-cz   - da-dk   - de-de   - el-gr   - es-es   - fi-fi   - fr-fr   - hu-hu   - it-it   - ja-jp   - ko-kr   - nb-no   - nl-nl   - pl-pl   - pt-br   - pt-pt   - ru-ru   - sv-se   - tr-tr   - zh-cn   - zh-tw --- Windows Azure Pack for Windows Server and API and App Controller .  
   
 ## See Also  
 [Setup Command-Line Options for Service Provider Foundation](../../spf/Deploy/Setup-Command-Line-Options-for-Service-Provider-Foundation.md)  

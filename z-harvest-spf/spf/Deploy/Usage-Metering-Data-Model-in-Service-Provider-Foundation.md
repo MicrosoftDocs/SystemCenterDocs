@@ -16,7 +16,7 @@ manager:cfreemanwa
 This topic describes how Service Provider Foundation provides usage metering data to portals and clients that connect to its usage metering endpoint.  
   
 > [!NOTE]  
-> For updated information about usage metering and [!INCLUDE[katal_1](../../orch/getstarted/includes/katal_1_md.md)], see the TechNet wiki article [How to Integrate Your Billing System with the Usage Metering System](http://blogs.technet.com/b/systemcenter/archive/2013/08/01/how-to-integrate-your-billing-system-with-the-usage-metering-system.aspx).  
+> For updated information about usage metering andWindows Azure Pack for Windows Server , see the TechNet wiki article [How to Integrate Your Billing System with the Usage Metering System](http://blogs.technet.com/b/systemcenter/archive/2013/08/01/how-to-integrate-your-billing-system-with-the-usage-metering-system.aspx).  
   
 ## Overview of usage metering  
 Usage metering consists of the following technologies and resources that participate as components of the usage metering system:  
@@ -39,7 +39,7 @@ Usage metering consists of the following technologies and resources that partici
   
 Note that Service Provider Foundation is not listed because it is not required to implement usage metering. Rather, the role of Service Provider Foundation is to collect metrics from all the data warehouses and aggregate them for billing and analysis purposes.  
   
-Service Provider Foundation provides usage metering data to any client, such as [!INCLUDE[katal_1](../../orch/getstarted/includes/katal_1_md.md)], that wants to collect it. IaaS metrics in [!INCLUDE[katal_1](../../orch/getstarted/includes/katal_1_md.md)] are provided by VM Clouds resource provider. This data comprises all the usage metering metrics for all the virtual machines that a tenant uses, provided that those virtual machines are being monitored by [!INCLUDE[om12long](../../om/manage/includes/om12long_md.md)] and that the data is being stored in Operations Manager Data Warehouses monitored by an Operations Manager management server.  
+Service Provider Foundation provides usage metering data to any client, such asWindows Azure Pack for Windows Server , that wants to collect it. IaaS metrics inWindows Azure Pack for Windows Server  are provided by VM Clouds resource provider. This data comprises all the usage metering metrics for all the virtual machines that a tenant uses, provided that those virtual machines are being monitored by System Center 2012 Operations Manager  and that the data is being stored in Operations Manager Data Warehouses monitored by an Operations Manager management server.  
   
 ## Submitting queries  
 To obtain usage metering data with a URL that contains a JSON query, as shown the following example:  
