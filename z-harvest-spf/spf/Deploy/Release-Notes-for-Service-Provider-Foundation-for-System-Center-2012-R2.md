@@ -13,16 +13,16 @@ author:bwren
 manager:cfreemanwa
 ---
 # Release Notes for Service Provider Foundation for System Center 2012 R2
-These release notes apply to [!INCLUDE[spflong](../../spf/Deploy/includes/spflong_md.md)], a component of [!INCLUDE[orchlong](../../orch/deploy/includes/orchlong_md.md)]. They contain up\-to\-date information about known issues that you might experience.  
+These release notes apply to Service Provider Foundation, a component of [!INCLUDE[orchlong](../../orch/deploy/includes/orchlong_md.md)]. They contain up\-to\-date information about known issues that you might experience.  
   
-For release notes that pertain to the [!INCLUDE[spfshort](../../spf/Deploy/includes/spfshort_md.md)] software development guide, see the [Release Notes for Service Provider Foundation Developer's Guide](http://go.microsoft.com/fwlink/p/?LinkID=263702).  
+For release notes that pertain to the Service Provider Foundation software development guide, see the [Release Notes for Service Provider Foundation Developer's Guide](http://go.microsoft.com/fwlink/p/?LinkID=263702).  
   
 ## Known Issues  
   
 ## Installations with VMM 2012 SP1 causes problems  
-**Description:** Although you can complete the installation of [!INCLUDE[spfshort](../../spf/Deploy/includes/spfshort_md.md)] 2012 R2 on a server with [!INCLUDE[vmm12sp1_long](../../spf/Deploy/includes/vmm12sp1_long_md.md)] 2012 SP1, they will not function together correctly.  
+**Description:** Although you can complete the installation of Service Provider Foundation 2012 R2 on a server with --- translation.priority.ht:    - cs-cz   - da-dk   - de-de   - el-gr   - es-es   - fi-fi   - fr-fr   - hu-hu   - it-it   - ja-jp   - ko-kr   - nb-no   - nl-nl   - pl-pl   - pt-br   - pt-pt   - ru-ru   - sv-se   - tr-tr   - zh-cn   - zh-hk   - zh-tw --- Virtual Machine Manager \(VMM\) 2012 SP1, they will not function together correctly.  
   
-**Workaround:** None. You must uninstall [!INCLUDE[vmm12sp1_long](../../spf/Deploy/includes/vmm12sp1_long_md.md)] 2012 SP1, then install VMM 2012 R2, and then install [!INCLUDE[spfshort](../../spf/Deploy/includes/spfshort_md.md)] 2012 R2.  
+**Workaround:** None. You must uninstall --- translation.priority.ht:    - cs-cz   - da-dk   - de-de   - el-gr   - es-es   - fi-fi   - fr-fr   - hu-hu   - it-it   - ja-jp   - ko-kr   - nb-no   - nl-nl   - pl-pl   - pt-br   - pt-pt   - ru-ru   - sv-se   - tr-tr   - zh-cn   - zh-hk   - zh-tw --- Virtual Machine Manager \(VMM\) 2012 SP1, then install VMM 2012 R2, and then install Service Provider Foundation 2012 R2.  
   
 ## SPF server names must be in FQDN format  
 **Description:** Specifying a NetBIOS name for a Service Provider Foundation \(SPF\) server will not work. Instead, SPF names must be in fully qualified domain name \(FQDN\) format. SPF is a feature in Orchestrator.  
@@ -35,12 +35,12 @@ For release notes that pertain to the [!INCLUDE[spfshort](../../spf/Deploy/inclu
 **Workaround:** When updating a Run As account with a new Domain, User Name or Password, all values must be entered at the same time.  
   
 ## Installation fails on a computer with only IPv6 enabled  
-**Description:** Installation of [!INCLUDE[spfshort](../../spf/Deploy/includes/spfshort_md.md)] fails on a computer that has only IPv6 enabled for the network adapters.  
+**Description:** Installation of Service Provider Foundation fails on a computer that has only IPv6 enabled for the network adapters.  
   
 **Workaround:** Enable IPv4.  
   
 ## You cannot move a virtual machine across clouds  
-**Description:**[!INCLUDE[spfshort](../../spf/Deploy/includes/spfshort_md.md)] cannot accommodate moving a virtual machine from one cloud to another.  
+**Description:**Service Provider Foundation cannot accommodate moving a virtual machine from one cloud to another.  
   
 **Workaround:** None. This is a known limitation.  
   
@@ -55,7 +55,7 @@ For release notes that pertain to the [!INCLUDE[spfshort](../../spf/Deploy/inclu
 **Workaround:** Retry the operation.  
   
 ## Creation of a user role fails occasionally  
-**Description:** In attempting to create a new user role on a second [!INCLUDE[vmm12sp1_long](../../spf/Deploy/includes/vmm12sp1_long_md.md)] server, the administrator user role might be unable to create a new user role, because the attempt is treated as an accidental impersonation.  
+**Description:** In attempting to create a new user role on a second --- translation.priority.ht:    - cs-cz   - da-dk   - de-de   - el-gr   - es-es   - fi-fi   - fr-fr   - hu-hu   - it-it   - ja-jp   - ko-kr   - nb-no   - nl-nl   - pl-pl   - pt-br   - pt-pt   - ru-ru   - sv-se   - tr-tr   - zh-cn   - zh-hk   - zh-tw --- Virtual Machine Manager \(VMM\) server, the administrator user role might be unable to create a new user role, because the attempt is treated as an accidental impersonation.  
   
 **Workaround:** Recycle the VMM application pool.  
   
@@ -76,9 +76,9 @@ PS C:\> $userroles | foreach {New-SCSPFTenantUserRole -Tenant $tenant2 -Name $_.
 ```  
   
 ## Passwords with double quotes in a silent installation  
-**Description:** If you perform a silent installation of [!INCLUDE[spfshort](../../spf/Deploy/includes/spfshort_md.md)] using passwords that contain double quotes that are not correctly escaped, they can cause the application pools credentials to use the Network Service instead of the expected Service Account.  
+**Description:** If you perform a silent installation of Service Provider Foundation using passwords that contain double quotes that are not correctly escaped, they can cause the application pools credentials to use the Network Service instead of the expected Service Account.  
   
-**Workaround:** In Internet Information Services \(IIS\), verify the application pool identity credential is set correctly for each of the [!INCLUDE[spfshort](../../spf/Deploy/includes/spfshort_md.md)] web services. For more information about silent installs, see [Setup Command-Line Options for Service Provider Foundation](../../spf/Deploy/Setup-Command-Line-Options-for-Service-Provider-Foundation.md).  
+**Workaround:** In Internet Information Services \(IIS\), verify the application pool identity credential is set correctly for each of the Service Provider Foundation web services. For more information about silent installs, see [Setup Command-Line Options for Service Provider Foundation](../../spf/Deploy/Setup-Command-Line-Options-for-Service-Provider-Foundation.md).  
   
 ## See Also  
 [Deploying Service Provider Foundation](../../spf/Deploy/Deploying-Service-Provider-Foundation.md)  

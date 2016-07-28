@@ -13,23 +13,23 @@ author:bwren
 manager:cfreemanwa
 ---
 # Manage Web Services and Connections in Service Provider Foundation
-The [!INCLUDE[spflong](../../spf/Deploy/includes/spflong_md.md)] setup wizard configures web services based on the provided credentials. This topic provides information about verifying and setting credentials in Computer Management, Internet Information Services \(IIS\), and other technologies if changes are required.  
+The Service Provider Foundation setup wizard configures web services based on the provided credentials. This topic provides information about verifying and setting credentials in Computer Management, Internet Information Services \(IIS\), and other technologies if changes are required.  
   
-Note that the example URLs in this topic use port 8090, the default port, for [!INCLUDE[spfshort](../../spf/Deploy/includes/spfshort_md.md)] web services. This port may be different if another port was specified for the [!INCLUDE[spfshort](../../spf/Deploy/includes/spfshort_md.md)] installation.  
+Note that the example URLs in this topic use port 8090, the default port, for Service Provider Foundation web services. This port may be different if another port was specified for the Service Provider Foundation installation.  
   
-## [!INCLUDE[spfshort](../../spf/Deploy/includes/spfshort_md.md)] web services  
-As a hosting service provider you can use [!INCLUDE[spfshort](../../spf/Deploy/includes/spfshort_md.md)] web services to provide portal applications to your tenants. Administrators can use the [!INCLUDE[spfshort](../../spf/Deploy/includes/spfshort_md.md)]Windows PowerShell cmdlets to perform essential tasks. For information about how to program applications that access the [!INCLUDE[spfshort](../../spf/Deploy/includes/spfshort_md.md)] web services, see the [Service Provider Foundation Developer's Guide](http://go.microsoft.com/fwlink/p/?LinkID=263700).  
+## Service Provider Foundation web services  
+As a hosting service provider you can use Service Provider Foundation web services to provide portal applications to your tenants. Administrators can use the Service Provider FoundationWindows PowerShell cmdlets to perform essential tasks. For information about how to program applications that access the Service Provider Foundation web services, see the [Service Provider Foundation Developer's Guide](http://go.microsoft.com/fwlink/p/?LinkID=263700).  
   
-Each web service has two locations to set credentials on the server that has [!INCLUDE[spfshort](../../spf/Deploy/includes/spfshort_md.md)] installed: the application domain pool in IIS and the respective group in Computer Management. These groups \(SPF\_Admin, SPF\_VMM, SPF\_Usage, and SPF\_Provider\) must contain a local credential \(not a domain credential\) that is also a member of the Administrators group. That credential can be the Administrator user itself, but we recommend creating another local user.  
+Each web service has two locations to set credentials on the server that has Service Provider Foundation installed: the application domain pool in IIS and the respective group in Computer Management. These groups \(SPF\_Admin, SPF\_VMM, SPF\_Usage, and SPF\_Provider\) must contain a local credential \(not a domain credential\) that is also a member of the Administrators group. That credential can be the Administrator user itself, but we recommend creating another local user.  
   
 ### <a name="SPF_Admin"></a>Admin web service  
 Hosting service providers use the Admin web service to create and manage tenants, user roles, servers, stamps, and other administrative objects. You can access the Admin web service by using the following URLs:  
   
--   For [!INCLUDE[spfshort](../../spf/Deploy/includes/spfshort_md.md)][!INCLUDE[sc2012sp1_short](../../om/manage/includes/sc2012sp1_short_md.md)], use:  
+-   For Service Provider Foundation[!INCLUDE[sc2012sp1_short](../../om/manage/includes/sc2012sp1_short_md.md)], use:  
   
     `http://server:8090/SC2012/Admin/Microsoft.Management.Odata.svc`  
   
--   For [!INCLUDE[spfshort](../../spf/Deploy/includes/spfshort_md.md)][!INCLUDE[sc2012r2_1](../../om/manage/includes/sc2012r2_1_md.md)], use:  
+-   For Service Provider Foundation[!INCLUDE[sc2012r2_1](../../om/manage/includes/sc2012r2_1_md.md)], use:  
   
     `https://server:8090/SC2012R2/Admin/Microsoft.Management.Odata.svc`  
   
@@ -42,21 +42,21 @@ Hosting service providers use the Admin web service to create and manage tenants
 ### <a name="SPF_VMM"></a>VMM web service  
 The VMM web service invokes [!INCLUDE[vmmblue_1](../../om/manage/includes/vmmblue_1_md.md)] to perform requested operations, such as creating virtual machines, virtual networks, user role definitions, and other fabric for the cloud. This service coordinates the changes among the participants and provides the following dynamic capabilities:  
   
--   Portal applications and other clients detect changes that [!INCLUDE[spfshort](../../spf/Deploy/includes/spfshort_md.md)] and [!INCLUDE[vmmblue_2](../../om/manage/includes/vmmblue_2_md.md)] made.  
+-   Portal applications and other clients detect changes that Service Provider Foundation and [!INCLUDE[vmmblue_2](../../om/manage/includes/vmmblue_2_md.md)] made.  
   
--   [!INCLUDE[vmmblue_2](../../om/manage/includes/vmmblue_2_md.md)] shows changes that portal applications, other clients, and [!INCLUDE[spfshort](../../spf/Deploy/includes/spfshort_md.md)] made.  
+-   [!INCLUDE[vmmblue_2](../../om/manage/includes/vmmblue_2_md.md)] shows changes that portal applications, other clients, and Service Provider Foundation made.  
   
--   [!INCLUDE[spfshort](../../spf/Deploy/includes/spfshort_md.md)] reflects all changes that the participants made.  
+-   Service Provider Foundation reflects all changes that the participants made.  
   
 You can use the [T:Microsoft.SystemCenter.Foundation.Cmdlet.New-SCSPFServer](assetId:///T:Microsoft.SystemCenter.Foundation.Cmdlet.New-SCSPFServer) PowerShell cmdlet to register an instance of [!INCLUDE[vmmblue_2](../../om/manage/includes/vmmblue_2_md.md)].  
   
 You can access the VMM web service by using the following URLs:  
   
--   For [!INCLUDE[spfshort](../../spf/Deploy/includes/spfshort_md.md)][!INCLUDE[sc2012sp1_short](../../om/manage/includes/sc2012sp1_short_md.md)], use:  
+-   For Service Provider Foundation[!INCLUDE[sc2012sp1_short](../../om/manage/includes/sc2012sp1_short_md.md)], use:  
   
     `http://server:8090/SC2012/VMM/Microsoft.Management.Odata.svc`  
   
--   For [!INCLUDE[spfshort](../../spf/Deploy/includes/spfshort_md.md)][!INCLUDE[sc2012r2_1](../../om/manage/includes/sc2012r2_1_md.md)], use:  
+-   For Service Provider Foundation[!INCLUDE[sc2012r2_1](../../om/manage/includes/sc2012r2_1_md.md)], use:  
   
     `https://server:8090/SC2012R2/VMM/Microsoft.Management.Odata.svc`  
   
@@ -70,11 +70,11 @@ You can access the VMM web service by using the following URLs:
 ### <a name="SPF_Usage"></a>Usage web service  
   
 > [!IMPORTANT]  
-> [!INCLUDE[spfshort](../../spf/Deploy/includes/spfshort_md.md)] provides the Usage web service to be used only by [!INCLUDE[katal_1](../../orch/getstarted/includes/katal_1_md.md)] or by third party billing providers. The Usage web service endpoint should not be accessed for other purposes to prevent data loss due to unnecessary or erroneous queries.  
+> Service Provider Foundation provides the Usage web service to be used only by [!INCLUDE[katal_1](../../orch/getstarted/includes/katal_1_md.md)] or by third party billing providers. The Usage web service endpoint should not be accessed for other purposes to prevent data loss due to unnecessary or erroneous queries.  
   
 The Usage web service uses registrations of instances of [!INCLUDE[om12long](../../om/manage/includes/om12long_md.md)] data warehouses \(that [!INCLUDE[vmmblue_2](../../om/manage/includes/vmmblue_2_md.md)] hosts\) for collecting metrics on tenant virtual machine usage and other fabric usage. Usage data is collected for processes such as billing chargeback features.  
   
-You can use Windows PowerShell cmdlets to register [!INCLUDE[om12short](../../om/manage/includes/om12short_md.md)] data warehouse connection settings in the [!INCLUDE[spfshort](../../spf/Deploy/includes/spfshort_md.md)] database. This registration enables [!INCLUDE[spfshort](../../spf/Deploy/includes/spfshort_md.md)] to aggregate usage data from the data warehouses. For more information about configuring these registrations, see [Configure Usage Metering in Service Provider Foundation](../../spf/Deploy/Configure-Usage-Metering-in-Service-Provider-Foundation.md).  
+You can use Windows PowerShell cmdlets to register [!INCLUDE[om12short](../../om/manage/includes/om12short_md.md)] data warehouse connection settings in the Service Provider Foundation database. This registration enables Service Provider Foundation to aggregate usage data from the data warehouses. For more information about configuring these registrations, see [Configure Usage Metering in Service Provider Foundation](../../spf/Deploy/Configure-Usage-Metering-in-Service-Provider-Foundation.md).  
   
 The Usage web service returns utilization data that pertains to every subscription across services.  
   
@@ -83,7 +83,7 @@ The Usage web service returns utilization data that pertains to every subscripti
 |Usage application pool identity in IIS|Must also be a member of the Administrators group and the SPF\_Usage group.|  
 |Administrators group in Computer Management|Must include the credential for the Usage application pool identity.|  
 |SPF\_Usage group in Computer Management|Must include a local user who is also a member of the Administrators group and the credential for the Usage application pool identity.|  
-|Database user dbo in the OpertionsManagerDW Microsoft SQL Server database on the server that is running [!INCLUDE[om12short](../../om/manage/includes/om12short_md.md)]|The credentials of the user who installs [!INCLUDE[om12short](../../om/manage/includes/om12short_md.md)] are automatically used for the login credentials for the dbo SQL Server security object. These same credentials should be used for all [!INCLUDE[spfshort](../../spf/Deploy/includes/spfshort_md.md)] application pool identities.|  
+|Database user dbo in the OpertionsManagerDW Microsoft SQL Server database on the server that is running [!INCLUDE[om12short](../../om/manage/includes/om12short_md.md)]|The credentials of the user who installs [!INCLUDE[om12short](../../om/manage/includes/om12short_md.md)] are automatically used for the login credentials for the dbo SQL Server security object. These same credentials should be used for all Service Provider Foundation application pool identities.|  
 |Database properties for the OpertionsManagerDW SQL Server database \(right\-click\) on the server that is running [!INCLUDE[om12short](../../om/manage/includes/om12short_md.md)]|The OpsMgrReader database role must be included on the **Permissions** page.|  
   
 ### <a name="SPF_Provider"></a>Provider web service  
@@ -96,16 +96,16 @@ Resource providers for delivering infrastructure as a service \(IaaS\) use the P
 |SPF\_Provider group in Computer Management|Must include a local user who is also a member of the Administrators group and the credential for the Provider application pool identity|  
   
 ## <a name="SPF_SMA"></a>Connecting to the Service Management Automation web service  
-You can configure events in [!INCLUDE[spfshort](../../spf/Deploy/includes/spfshort_md.md)] that the [Service Management Automation](../Topic/Service%20Management%20Automation.md) web service will use. For you to complete this configuration, the [!INCLUDE[sma_1](../../spf/Deploy/includes/sma_1_md.md)] web service must have credentials to access the required [!INCLUDE[spfshort](../../spf/Deploy/includes/spfshort_md.md)] web services.  
+You can configure events in Service Provider Foundation that the [Service Management Automation](../Topic/Service%20Management%20Automation.md) web service will use. For you to complete this configuration, the --- translation.priority.ht:    - de-de   - es-es   - fr-fr   - it-it   - ja-jp   - ko-kr   - pt-br   - ru-ru   - zh-cn   - zh-tw --- Service Management Automation web service must have credentials to access the required Service Provider Foundation web services.  
   
 In addition, you can use Windows PowerShell cmdlets to automate runbooks. For more information, see [How to Automate a Runbook from Service Provider Foundation](../../spf/Deploy/How-to-Automate-a-Runbook-from-Service-Provider-Foundation.md).  
   
 |Credential setting|Requirement|  
 |----------------------|---------------|  
-|One or all of the [!INCLUDE[spfshort](../../spf/Deploy/includes/spfshort_md.md)] application pool identities as required for automation|Must also be a member of the Administrators group for the server that has [!INCLUDE[sma_1](../../spf/Deploy/includes/sma_1_md.md)] installed|  
+|One or all of the Service Provider Foundation application pool identities as required for automation|Must also be a member of the Administrators group for the server that has --- translation.priority.ht:    - de-de   - es-es   - fr-fr   - it-it   - ja-jp   - ko-kr   - pt-br   - ru-ru   - zh-cn   - zh-tw --- Service Management Automation installed|  
   
-## [!INCLUDE[spfshort](../../spf/Deploy/includes/spfshort_md.md)] database credentials  
-The credentials of the user who installs [!INCLUDE[spfshort](../../spf/Deploy/includes/spfshort_md.md)] are used for the login credentials for the dbo SQL Server security object for the [!INCLUDE[spfshort](../../spf/Deploy/includes/spfshort_md.md)] database. Use the T:Microsoft.SystemCenter.Foundation.Cmdlet.Get\-SCSPFConnectionString and T:Microsoft.SystemCenter.Foundation.Cmdlet.Set\-SCSPFConnectionString cmdlets to manage the connections to the [!INCLUDE[spfshort](../../spf/Deploy/includes/spfshort_md.md)] database.  
+## Service Provider Foundation database credentials  
+The credentials of the user who installs Service Provider Foundation are used for the login credentials for the dbo SQL Server security object for the Service Provider Foundation database. Use the T:Microsoft.SystemCenter.Foundation.Cmdlet.Get\-SCSPFConnectionString and T:Microsoft.SystemCenter.Foundation.Cmdlet.Set\-SCSPFConnectionString cmdlets to manage the connections to the Service Provider Foundation database.  
   
 ## See Also  
 [Administering Service Provider Foundation](../../spf/Deploy/Administering-Service-Provider-Foundation.md)  

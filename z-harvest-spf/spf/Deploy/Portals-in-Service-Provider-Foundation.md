@@ -13,9 +13,9 @@ author:bwren
 manager:cfreemanwa
 ---
 # Portals in Service Provider Foundation
-[!INCLUDE[spflong](../../spf/Deploy/includes/spflong_md.md)] provides services for multiple tenants who receive IaaS through portal applications, and uniquely identifies each tenant and isolates them from one another. Portals communicate with the [!INCLUDE[spfshort](../../spf/Deploy/includes/spfshort_md.md)] Admin and [!INCLUDE[vmm12short](../../spf/Deploy/includes/vmm12short_md.md)] services through REST APIs as described in the [Service Provider Foundation Developer's Guide](http://go.microsoft.com/fwlink/p/?LinkID=263700).  
+Service Provider Foundation provides services for multiple tenants who receive IaaS through portal applications, and uniquely identifies each tenant and isolates them from one another. Portals communicate with the Service Provider Foundation Admin and --- translation.priority.ht:    - ar-sa   - cs-cz   - da-dk   - de-de   - el-gr   - es-es   - fi-fi   - fr-fr   - he-il   - hu-hu   - it-it   - ja-jp   - ko-kr   - nb-no   - nl-nl   - pl-pl   - pt-br   - pt-pt   - ro-ro   - ru-ru   - sv-se   - tr-tr   - zh-cn   - zh-hk   - zh-tw --- VMM services through REST APIs as described in the [Service Provider Foundation Developer's Guide](http://go.microsoft.com/fwlink/p/?LinkID=263700).  
   
-The following illustration shows how portal applications and Windows PowerShell interact with [!INCLUDE[spfshort](../../spf/Deploy/includes/spfshort_md.md)].  
+The following illustration shows how portal applications and Windows PowerShell interact with Service Provider Foundation.  
   
 ![Shows portals to Service Provider Foundation](../../spf/Deploy/media/Orch2012SP1_SPF_Portals.gif "Orch2012SP1_SPF_Portals")  
   
@@ -31,7 +31,7 @@ The following illustration shows how portal applications and Windows PowerShell 
   
 -   [How to Configure the System Center Resource Provider for Windows Azure Pack](../../spf/Deploy/How-to-Configure-the-System-Center-Resource-Provider-for-Windows-Azure-Pack.md)  
   
-    Describes how to use Windows PowerShell cmdlets to change the endpoints for [!INCLUDE[katal_2](../../spf/Deploy/includes/katal_2_md.md)] in case a different installation of [!INCLUDE[spfshort](../../spf/Deploy/includes/spfshort_md.md)] is required.  
+    Describes how to use Windows PowerShell cmdlets to change the endpoints for Windows Azure Pack in case a different installation of Service Provider Foundation is required.  
   
 ## Other resources for this component  
   
