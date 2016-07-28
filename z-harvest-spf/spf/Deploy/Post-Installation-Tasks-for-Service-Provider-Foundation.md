@@ -13,19 +13,19 @@ author:bwren
 manager:cfreemanwa
 ---
 # Post-Installation Tasks for Service Provider Foundation
-After installing, review [Manage Web Services and Connections in Service Provider Foundation](../../spf/Deploy/Manage-Web-Services-and-Connections-in-Service-Provider-Foundation.md) for important information about web services, credentials, and connections for using [!INCLUDE[spflong](../../spf/Deploy/includes/spflong_md.md)].  
+After installing, review [Manage Web Services and Connections in Service Provider Foundation](../../spf/Deploy/Manage-Web-Services-and-Connections-in-Service-Provider-Foundation.md) for important information about web services, credentials, and connections for using Service Provider Foundation.  
   
-As the administrator for a hosting provider, there are a few key tasks that you need to perform after you install [!INCLUDE[spflong](../../spf/Deploy/includes/spflong_md.md)]. You need to populate the [!INCLUDE[spfshort](../../spf/Deploy/includes/spfshort_md.md)] database sufficiently to start managing tenants. There are three ways to get started:  
+As the administrator for a hosting provider, there are a few key tasks that you need to perform after you install Service Provider Foundation. You need to populate the Service Provider Foundation database sufficiently to start managing tenants. There are three ways to get started:  
   
 -   Portal applications  
   
-    If you installed [!INCLUDE[spfshort](../../spf/Deploy/includes/spfshort_md.md)] to use with [!INCLUDE[katal_1](../../orch/getstarted/includes/katal_1_md.md)], you can register the [!INCLUDE[spfshort](../../spf/Deploy/includes/spfshort_md.md)] web service endpoint and start provisioning virtual machine clouds and create plans for tenants. For more information, see [Register the Service Provider Foundation Endpoint for Virtual Machine Clouds](assetId:///197ac7a4-6ca2-46a4-855d-327979b68ea5).  
+    If you installed Service Provider Foundation to use with [!INCLUDE[katal_1](../../orch/getstarted/includes/katal_1_md.md)], you can register the Service Provider Foundation web service endpoint and start provisioning virtual machine clouds and create plans for tenants. For more information, see [Register the Service Provider Foundation Endpoint for Virtual Machine Clouds](assetId:///197ac7a4-6ca2-46a4-855d-327979b68ea5).  
   
-    If you installed [!INCLUDE[spfshort](../../spf/Deploy/includes/spfshort_md.md)] to use with [!INCLUDE[conceroshort](../../om/manage/includes/conceroshort_md.md)], you can connect to hosting provider. For more information, see [How to Connect to a Hosting Provider in System Center 2012 SP1](assetId:///5f2729ef-9647-4f5f-bb39-27ea8fc3f0e6).  
+    If you installed Service Provider Foundation to use with [!INCLUDE[conceroshort](../../om/manage/includes/conceroshort_md.md)], you can connect to hosting provider. For more information, see [How to Connect to a Hosting Provider in System Center 2012 SP1](assetId:///5f2729ef-9647-4f5f-bb39-27ea8fc3f0e6).  
   
     For detailed information about using portals, see [Portals in Service Provider Foundation](../../spf/Deploy/Portals-in-Service-Provider-Foundation.md).  
   
--   [!INCLUDE[spfshort](../../spf/Deploy/includes/spfshort_md.md)] Cmdlets  
+-   Service Provider Foundation Cmdlets  
   
     These Windows PowerShell cmdlets are suited for performing administrative tasks efficiently. For more information see [Service Provider Foundation cmdlet Reference](http://technet.microsoft.com/library/jj612525(v=sc.20).aspx). For the most current help in the console, run the following command.  
   
@@ -33,14 +33,14 @@ As the administrator for a hosting provider, there are a few key tasks that you 
     PS C:\> update-help -module spfadmin  
     ```  
   
--   Program applications that consume [!INCLUDE[spfshort](../../spf/Deploy/includes/spfshort_md.md)] web services  
+-   Program applications that consume Service Provider Foundation web services  
   
     See the [Service Provider Foundation Developer's Guide](http://go.microsoft.com/fwlink/p/?LinkID=263700).  
   
 ## Populating the database  
   
 > [!NOTE]  
-> If you installed [!INCLUDE[spfshort](../../spf/Deploy/includes/spfshort_md.md)] to use with [!INCLUDE[katal_1](../../orch/getstarted/includes/katal_1_md.md)], all virtual machines and clouds defined in [!INCLUDE[vmmblue_1](../../om/manage/includes/vmmblue_1_md.md)] will automatically appear on the **VM Clouds** tab on the [!INCLUDE[katal_adminportal_1](../../spf/Deploy/includes/katal_adminportal_1_md.md)]. There is no need to use Windows PowerShell to define them.  
+> If you installed Service Provider Foundation to use with [!INCLUDE[katal_1](../../orch/getstarted/includes/katal_1_md.md)], all virtual machines and clouds defined in [!INCLUDE[vmmblue_1](../../om/manage/includes/vmmblue_1_md.md)] will automatically appear on the **VM Clouds** tab on the --- translation.priority.ht:    - cs-cz   - da-dk   - de-de   - el-gr   - es-es   - fi-fi   - fr-fr   - hu-hu   - it-it   - ja-jp   - ko-kr   - nb-no   - nl-nl   - pl-pl   - pt-br   - pt-pt   - ru-ru   - sv-se   - tr-tr   - zh-cn   - zh-tw --- management portal for administrators. There is no need to use Windows PowerShell to define them.  
   
 A basic, general procedure for populating the SCSPF database using cmdlets is as follows:  
   

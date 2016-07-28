@@ -13,7 +13,7 @@ author:bwren
 manager:cfreemanwa
 ---
 # Extensibility in Service Provider Foundation
-This section describes extensibility capabilities in [!INCLUDE[spflong](../../spf/Deploy/includes/spflong_md.md)].  
+This section describes extensibility capabilities in Service Provider Foundation.  
   
 ## Extensibility topics  
   

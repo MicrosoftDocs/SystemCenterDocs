@@ -13,17 +13,17 @@ author:bwren
 manager:cfreemanwa
 ---
 # Service Provider Foundation
-[!INCLUDE[spflong](../../spf/Deploy/includes/spflong_md.md)] is provided with [!INCLUDE[orchlong](../../orch/deploy/includes/orchlong_md.md)], a component of [!INCLUDE[scr2](../../spf/Deploy/includes/scr2_md.md)] \(and [!INCLUDE[sc2012sp1_short](../../om/manage/includes/sc2012sp1_short_md.md)]\). [!INCLUDE[spfshort](../../spf/Deploy/includes/spfshort_md.md)] exposes an extensible OData web service that interacts with [!INCLUDE[vmm12sp1_long](../../spf/Deploy/includes/vmm12sp1_long_md.md)]. This enables service providers and hosters to design and implement multi\-tenant self\-service portals that integrate IaaS capabilities available on [!INCLUDE[scr2](../../spf/Deploy/includes/scr2_md.md)].  
+Service Provider Foundation is provided with [!INCLUDE[orchlong](../../orch/deploy/includes/orchlong_md.md)], a component of --- translation.priority.ht:    - cs-cz   - da-dk   - de-de   - el-gr   - es-es   - fi-fi   - fr-fr   - hu-hu   - it-it   - ja-jp   - ko-kr   - nb-no   - nl-nl   - pl-pl   - pt-br   - pt-pt   - ru-ru   - sv-se   - tr-tr   - zh-cn   - zh-tw --- System Center 2012 R2 \(and [!INCLUDE[sc2012sp1_short](../../om/manage/includes/sc2012sp1_short_md.md)]\). Service Provider Foundation exposes an extensible OData web service that interacts with --- translation.priority.ht:    - cs-cz   - da-dk   - de-de   - el-gr   - es-es   - fi-fi   - fr-fr   - hu-hu   - it-it   - ja-jp   - ko-kr   - nb-no   - nl-nl   - pl-pl   - pt-br   - pt-pt   - ru-ru   - sv-se   - tr-tr   - zh-cn   - zh-hk   - zh-tw --- Virtual Machine Manager \(VMM\). This enables service providers and hosters to design and implement multi\-tenant self\-service portals that integrate IaaS capabilities available on --- translation.priority.ht:    - cs-cz   - da-dk   - de-de   - el-gr   - es-es   - fi-fi   - fr-fr   - hu-hu   - it-it   - ja-jp   - ko-kr   - nb-no   - nl-nl   - pl-pl   - pt-br   - pt-pt   - ru-ru   - sv-se   - tr-tr   - zh-cn   - zh-tw --- System Center 2012 R2.  
   
-The topics in this section pertain to both [!INCLUDE[scr2](../../spf/Deploy/includes/scr2_md.md)] and [!INCLUDE[sc2012sp1_short](../../om/manage/includes/sc2012sp1_short_md.md)] unless otherwise indicated.  
+The topics in this section pertain to both --- translation.priority.ht:    - cs-cz   - da-dk   - de-de   - el-gr   - es-es   - fi-fi   - fr-fr   - hu-hu   - it-it   - ja-jp   - ko-kr   - nb-no   - nl-nl   - pl-pl   - pt-br   - pt-pt   - ru-ru   - sv-se   - tr-tr   - zh-cn   - zh-tw --- System Center 2012 R2 and [!INCLUDE[sc2012sp1_short](../../om/manage/includes/sc2012sp1_short_md.md)] unless otherwise indicated.  
   
-For information about how to program client applications for [!INCLUDE[spfshort](../../spf/Deploy/includes/spfshort_md.md)], see the [Service Provider Foundation Developer's Guide](http://go.microsoft.com/fwlink/p/?LinkID=263700).  
+For information about how to program client applications for Service Provider Foundation, see the [Service Provider Foundation Developer's Guide](http://go.microsoft.com/fwlink/p/?LinkID=263700).  
   
 ## Service Provider Foundation topics  
   
 -   [Architecture Overview of Service Provider Foundation](../../spf/Deploy/Architecture-Overview-of-Service-Provider-Foundation.md)  
   
-    Provides a high\-level overview of [!INCLUDE[spfshort](../../spf/Deploy/includes/spfshort_md.md)].  
+    Provides a high\-level overview of Service Provider Foundation.  
   
 -   [What's New in Service Provider Foundation](../../spf/Deploy/What-s-New-in-Service-Provider-Foundation.md)  
   
@@ -35,9 +35,9 @@ For information about how to program client applications for [!INCLUDE[spfshort]
   
 -   [Administering Service Provider Foundation](../../spf/Deploy/Administering-Service-Provider-Foundation.md)  
   
-    Describes how to use the capabilities and features of [!INCLUDE[spfshort](../../spf/Deploy/includes/spfshort_md.md)].  
+    Describes how to use the capabilities and features of Service Provider Foundation.  
   
 -   [Cmdlets in System Center 2012 \- Service Provider Foundation](http://go.microsoft.com/fwlink/p/?LinkId=263677)  
   
-    Provides a reference for [!INCLUDE[spfshort](../../spf/Deploy/includes/spfshort_md.md)] Windows PowerShell cmdlets.  
+    Provides a reference for Service Provider Foundation Windows PowerShell cmdlets.  
   

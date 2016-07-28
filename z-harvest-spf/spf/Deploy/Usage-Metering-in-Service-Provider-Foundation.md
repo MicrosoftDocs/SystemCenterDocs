@@ -13,7 +13,7 @@ author:bwren
 manager:cfreemanwa
 ---
 # Usage Metering in Service Provider Foundation
-As a hoster, [!INCLUDE[spfshort](../../spf/Deploy/includes/spfshort_md.md)] provides usage metering that enables you to:  
+As a hoster, Service Provider Foundation provides usage metering that enables you to:  
   
 -   Obtain metrics for tenant usage consumption for virtual machines, CPU, memory, network, and disk.  
   
@@ -22,16 +22,16 @@ As a hoster, [!INCLUDE[spfshort](../../spf/Deploy/includes/spfshort_md.md)] prov
 -   Bill tenants for their usage according their plans.  
   
 > [!IMPORTANT]  
-> [!INCLUDE[spfshort](../../spf/Deploy/includes/spfshort_md.md)] provides the Usage web service to be used only by [!INCLUDE[katal_1](../../orch/getstarted/includes/katal_1_md.md)] or by third party billing providers. The Usage web service endpoint should not be accessed for other purposes to prevent data loss due to unnecessary or erroneous queries.  
+> Service Provider Foundation provides the Usage web service to be used only by [!INCLUDE[katal_1](../../orch/getstarted/includes/katal_1_md.md)] or by third party billing providers. The Usage web service endpoint should not be accessed for other purposes to prevent data loss due to unnecessary or erroneous queries.  
   
 > [!TIP]  
-> For information on integrating usage with a generic billing system using the [!INCLUDE[katal_long](../../spf/Deploy/includes/katal_long_md.md)], see the Usage Extensibility.docx Microsoft Word document that is available in the download of "Web Sites, Virtual Machines, Service Management Portal, and Service Management API Samples \- Feb 2013" from the [Microsoft Download Center](http://go.microsoft.com/?linkid=9830030).  
+> For information on integrating usage with a generic billing system using the --- translation.priority.ht:    - cs-cz   - da-dk   - de-de   - el-gr   - es-es   - fi-fi   - fr-fr   - hu-hu   - it-it   - ja-jp   - ko-kr   - nb-no   - nl-nl   - pl-pl   - pt-br   - pt-pt   - ru-ru   - sv-se   - tr-tr   - zh-cn   - zh-tw --- Windows Azure Pack for Windows Server and API, see the Usage Extensibility.docx Microsoft Word document that is available in the download of "Web Sites, Virtual Machines, Service Management Portal, and Service Management API Samples \- Feb 2013" from the [Microsoft Download Center](http://go.microsoft.com/?linkid=9830030).  
   
 ## Usage Metering topics  
   
 -   [Configure Usage Metering in Service Provider Foundation](../../spf/Deploy/Configure-Usage-Metering-in-Service-Provider-Foundation.md)  
   
-    Describes how to install the Windows Update component required to implement usage metering in [!INCLUDE[spfshort](../../spf/Deploy/includes/spfshort_md.md)], and perform other essential configurations.  
+    Describes how to install the Windows Update component required to implement usage metering in Service Provider Foundation, and perform other essential configurations.  
   
 -   [Usage Metering Data Model in Service Provider Foundation](../../spf/Deploy/Usage-Metering-Data-Model-in-Service-Provider-Foundation.md)  
   
