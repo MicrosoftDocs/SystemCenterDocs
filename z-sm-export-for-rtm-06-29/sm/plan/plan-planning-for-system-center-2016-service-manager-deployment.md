@@ -4,8 +4,7 @@ ms.custom: na
 ms.prod: system-center-2016
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-  - service-manager
+ms.technology: service-manager
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 86f6f99e-9605-4d6b-9a7a-abb19910f91b
@@ -19,13 +18,13 @@ For System Center 2016 - Service Manager, several deployment options are availab
 
  A second deployment option requires the use of two computers. The first computer hosts the Service Manager management server and the Service Manager database. The second computer hosts the data warehouse management server and the data warehouse databases. If you do not need reporting services, you can-at an absolute minimum-install  Service Manager on one computer that hosts both the Service Manager management server and the Service Manager database.  
 
- A third deployment option maximizes performance and scalability by using four computers. Two computers host the management servers, and the remaining two computers host the databases. The computers hosting the databases are the only two computers in this scenario that require the installation of Microsoft SQL&nbsp;Server.  
+ A third deployment option maximizes performance and scalability by using four computers. Two computers host the management servers, and the remaining two computers host the databases. The computers hosting the databases are the only two computers in this scenario that require the installation of Microsoft SQL Server.  
 
- You might decide that, for the evaluation phase, you will choose the option to install Service Manager on two computers. After installing Service Manager in the lab, you can import data from Active&nbsp;Directory Domain Services \(AD&nbsp;DS\) and System Center Configuration Manager, and then you can import data and alerts from Operations&nbsp;Manager. You would then configure User Roles within Service Manager and, if necessary, manually add users that were not imported from AD&nbsp;DS. The following illustration represents an overview of this installation and initial configuration.  
+ You might decide that, for the evaluation phase, you will choose the option to install Service Manager on two computers. After installing Service Manager in the lab, you can import data from Active Directory Domain Services \(AD DS\) and System Center Configuration Manager, and then you can import data and alerts from Operations Manager. You would then configure User Roles within Service Manager and, if necessary, manually add users that were not imported from AD DS. The following illustration represents an overview of this installation and initial configuration.  
 
  ![Installation topology at Woodgrove Bank](../media/plan-installation_topology.png)  
 
- You can limit the number of SQL&nbsp;Server licenses that you need by placing all of the Service Manager databases on the same computer, as shown in the following illustration.  
+ You can limit the number of SQL Server licenses that you need by placing all of the Service Manager databases on the same computer, as shown in the following illustration.  
 
  ![Single SQL Server in a Two&#45;Computer Installation](../media/plan-installation_topology_single_sql_server.png)  
 
