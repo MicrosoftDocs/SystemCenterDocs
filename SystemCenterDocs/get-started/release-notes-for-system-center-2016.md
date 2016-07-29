@@ -6,19 +6,19 @@ author:  cfreemanwa
 ms.prod:  system-center-threshold
 keywords:  
 ms.date:  2016-07-01
-title:  Release Notes for System Center Technical Preview 5
+title:  Release Notes for System Center 2016
 ms.assetid:  5fad5608-4cb7-48b0-aa31-35ca5cc2d560
 ---
 
-# Release Notes for System Center Technical Preview 5
+# Release Notes for System Center 2016
 
->Applies To: System Center 2016 Technical Preview 5
+>Applies To: System Center 2016
 
-### The following set of notes lists known issues and steps to mitigate the issue. These notes only apply to System Center 2016 Technical Preview 5.
+### The following set of notes lists known issues and steps to mitigate the issue. These notes only apply to System Center 2016.
 
 
-## System Center Technical Preview - Data Protection Manager Release Notes
-### The following release notes apply to System Center Technical Preview - Data Protection Manager.
+## System Center 2016 - Data Protection Manager Release Notes
+### The following release notes apply to System Center 2016 - Data Protection Manager.
 
 ### SQL Server Setup error
 **Description:** When you specify a SQL Server while setting up System Center 2016 - Data Protection Manager you may encounter an error.
@@ -83,9 +83,8 @@ ms.assetid:  5fad5608-4cb7-48b0-aa31-35ca5cc2d560
 Edit-DPMDiskAllocation -Datasource <Datasource object> -ShadowCopySize <new size>
 ```
 
-
-## System Center Technical Preview - Operations Manager Release Notes
-### The following release notes apply to System Center Technical Preview - Operations Manager.
+## System Center 2016 - Operations Manager Release Notes
+### The following release notes apply to System Center 2016 - Operations Manager.
 
 ### Operations Manager Console will stop responding if you attempt to resolve a dependency while  importing a Management Pack
 **Description:**When you click **Import Management Packs** from the Administration section of the Operations Manager console, the console will display the **Resolve** button if the Management Pack is dependent on another Management Pack. If you click  Resolve you will see the **Dependency Warning**. If you click the **Resolve** button in the warning the Operations Manager console will stop responding.
@@ -174,8 +173,8 @@ System Center Operations Manager management server is not affected.
 **Workaround:** Use Orchestrator 2012 Integration packs for evaluation purposes.
 
 
-## System Center Technical Preview - Service Manager Release Notes
-### The following release notes apply to System Center Technical Preview - Service Manager.
+## System Center 2016 - Service Manager Release Notes
+### The following release notes apply to System Center 2016 - Service Manager.
 
 ### The Create Exchange Connector Wizard Might Crash
 **Description:** When you run the Create Exchange Connector wizard, the wizard crashes when you click **Test Connection**.

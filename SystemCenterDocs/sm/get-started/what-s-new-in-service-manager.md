@@ -17,7 +17,7 @@ ms.assetid:  3eeb3265-88e0-47ed-b761-07f4e0634959
 
 System Center 2016 Technical Preview - Service Manager is updated for System Center 2016 Technical Preview 5.
 
-For details about known issues that could affect you before you install System Center 2016 Technical Preview - Service Manager, read the [Release Notes for System Center Technical Preview](../../get-started/Release-Notes-for-System-Center-Technical-Preview-5.md).
+For details about known issues that could affect you before you install System Center 2016 Technical Preview - Service Manager, read the [Release Notes for System Center 2016](../../get-started/Release-Notes-for-System-Center-2016.md).
 
 ## Improvements in technical preview 5
 
@@ -384,4 +384,3 @@ As always, we recommend that you perform typical or routine tasks in the test en
 **Significant performance improvements**.  Service Manager's Active Directory and System Center Configuration Manager connectors performance was improved. In internal testing at Microsoft, sync time improved by about 50% for the SCCM connector and about 35% for the AD connector. You can read more about performance improvements at the [Service Manager blog](http://blogs.technet.com/b/servicemanager/archive/2015/03/19/sccm-lfx-connector-performance-improvements.aspx).
 
 **Configurable Active Directory connector sync schedules**. Now you can better plan the load placed on your workflow server by scheduling AD connector sync cycles outside of work hours.
-
