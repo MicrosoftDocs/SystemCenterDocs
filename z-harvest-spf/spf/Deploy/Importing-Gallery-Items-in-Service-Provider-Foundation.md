@@ -4,7 +4,7 @@ ms.custom: na
 ms.prod: system-center-threshold
 ms.reviewer: na
 ms.suite: na
-ms.technology: 
+ms.technology:
   - orchestrator
 ms.tgt_pltfrm: na
 ms.topic: article
@@ -13,16 +13,16 @@ author:bwren
 manager:cfreemanwa
 ---
 # Importing Gallery Items in Service Provider Foundation
-This topic pertains to using the **VM Clouds** gallery in [!INCLUDE[katal_1](../../orch/getstarted/includes/katal_1_md.md)]. Gallery items are virtual machine roles that serve as standard and reusable artifacts that hosting service providers can use to provide offerings to their tenants. In Windows Azure Pack, you can add a gallery item to a plan that is subscribed to by tenants. Virtual machine roles represent a scalable tier of virtual machines that can be provisioned by a tenant using a single process. Examples of workloads that can be created by virtual machine roles could include a single virtual machine, an Active Directory Domain Controller, a SQL Server cluster, or Internet Information Services \(IIS\) web farm.  
-  
+This topic pertains to using the **VM Clouds** gallery inWindows Azure Pack for Windows Server . Gallery items are virtual machine roles that serve as standard and reusable artifacts that hosting service providers can use to provide offerings to their tenants. In Windows Azure Pack, you can add a gallery item to a plan that is subscribed to by tenants. Virtual machine roles represent a scalable tier of virtual machines that can be provisioned by a tenant using a single process. Examples of workloads that can be created by virtual machine roles could include a single virtual machine, an Active Directory Domain Controller, a SQL Server cluster, or Internet Information Services \(IIS\) web farm.  
+
 For information about obtaining gallery resources, see the [Downloading and Installing Windows Azure Pack Gallery Resource](http://social.technet.microsoft.com/wiki/contents/articles/20194.downloading-and-installing-windows-azure-pack-gallery-resource.aspx). For information about creating virtual machine roles, see the [System Center 2012 R2 Virtual Machine Role Authoring Guide](http://social.technet.microsoft.com/wiki/contents/articles/18272.system-center-2012-r2-virtual-machine-role-authoring-guide.aspx).  
-  
-Service Provider Foundation allows you to import gallery items into [!INCLUDE[vmmblue_2](../../om/manage/includes/vmmblue_2_md.md)] from downloaded resource packages. In addition, the gallery items are tracked in the SPFDB database. By doing so, the gallery items will be immediately available for viewing in --- translation.priority.ht:    - cs-cz   - da-dk   - de-de   - el-gr   - es-es   - fi-fi   - fr-fr   - hu-hu   - it-it   - ja-jp   - ko-kr   - nb-no   - nl-nl   - pl-pl   - pt-br   - pt-pt   - ru-ru   - sv-se   - tr-tr   - zh-cn   - zh-tw --- management portal for administrators in Windows Azure Pack.  
-  
+
+Service Provider Foundation allows you to import gallery items into System Center 2012 Virtual Machine Manager from downloaded resource packages. In addition, the gallery items are tracked in the SPFDB database. By doing so, the gallery items will be immediately available for viewing in --- translation.priority.ht:    - cs-cz   - da-dk   - de-de   - el-gr   - es-es   - fi-fi   - fr-fr   - hu-hu   - it-it   - ja-jp   - ko-kr   - nb-no   - nl-nl   - pl-pl   - pt-br   - pt-pt   - ru-ru   - sv-se   - tr-tr   - zh-cn   - zh-tw --- management portal for administrators in Windows Azure Pack.  
+
 You can also use Service Provider Foundation Admin web service or cmdlets to get a gallery package, item, or the icon for an item. This allows portal developers to create UI elements and functionality that offer tenants a compelling experience in selecting gallery items.  
-  
+
 The following example shows how to use Windows PowerShell to import a gallery item from a package and use its contents, and then remove it.  
-  
+
 ```powershell  
 PS C:\> # The first command gets the path to the resource package and stores it in the $Path variable.   
 PS C:\> # The second command gets a System.IO.FileStream object of the package.   
@@ -50,26 +50,25 @@ PS C:\> $binwriter.Close()
 PS C:\>  
 PS C:\> # Import the package that was just saved, using the PackageFilePath parameter.  
 PS C:\> Import-ScSpfVmRoleGalleryItem -PackageFilePath "C:\@tmp\gal.bin"  
-  
+
 ```  
-  
+
 Service Provider Foundation provides the following cmdlets for the gallery:  
-  
+
 -   Get\-SCSPFVMRoleGalleryItem  
-  
+
 -   Get\-SCSPFVMRoleGalleryItemIcon  
-  
+
 -   Get\-SCSPFVMRoleGalleryItemPackage  
-  
+
 -   Import\-SCSpfVMRoleGalleryItem  
-  
+
 -   Remove\-SCSPFVMRoleGalleryItem  
-  
+
 -   Set\-SCSPFVMRoleGalleryItem  
-  
+
 ## See Also  
 [Portals in Service Provider Foundation](../../spf/Deploy/Portals-in-Service-Provider-Foundation.md)  
 [Get Started with Virtual Machine Roles: Walkthrough Guide](http://technet.microsoft.com/library/dn296459.aspx)  
 [System Center 2012 R2 Virtual Machine Role Authoring Guide \- Resource Definition Package](http://social.technet.microsoft.com/wiki/contents/articles/18273.system-center-2012-r2-virtual-machine-role-authoring-guide-resource-definition-package.aspx)  
 [Using gallery items in Virtual Machine Clouds](assetId:///1a511f2f-c355-430f-a884-2dab52bcfc9c)  
-  

@@ -31,7 +31,7 @@ This section describes planning and deploying Service Provider Foundation.
   
 -   [How to Create an SSL Certificate for Testing Service Provider Foundation](../../spf/Deploy/How-to-Create-an-SSL-Certificate-for-Testing-Service-Provider-Foundation.md)  
   
-    Describes how to create a testing certificate for installing Service Provider Foundation[!INCLUDE[sc2012sp1_short](../../om/manage/includes/sc2012sp1_short_md.md)]. You can skip this topic if you are installing the current version.  
+    Describes how to create a testing certificate for installing Service Provider FoundationSystem Center 2012 SP1 . You can skip this topic if you are installing the current version.  
   
 -   [How to Install Service Provider Foundation for System Center 2012 SP1](../../spf/Deploy/How-to-Install-Service-Provider-Foundation-for-System-Center-2012-SP1.md)  
   
@@ -59,11 +59,11 @@ This section describes planning and deploying Service Provider Foundation.
   
 -   [Release Notes for Service Provider Foundation for System Center 2012 SP1](../../spf/Deploy/Release-Notes-for-Service-Provider-Foundation-for-System-Center-2012-SP1.md)  
   
-    Provides the release notes for Service Provider Foundation[!INCLUDE[sc2012sp1_short](../../om/manage/includes/sc2012sp1_short_md.md)].  
+    Provides the release notes for Service Provider FoundationSystem Center 2012 SP1 .  
   
 -   [Release Notes for Service Provider Foundation for System Center 2012 R2](../../spf/Deploy/Release-Notes-for-Service-Provider-Foundation-for-System-Center-2012-R2.md)  
   
-    Provides the release notes for Service Provider Foundation[!INCLUDE[sc2012r2_1](../../om/manage/includes/sc2012r2_1_md.md)]  
+    Provides the release notes for Service Provider FoundationSystem Center 2012 R2  
   
 ## See Also  
 [Architecture Overview of Service Provider Foundation](../../spf/Deploy/Architecture-Overview-of-Service-Provider-Foundation.md)  
