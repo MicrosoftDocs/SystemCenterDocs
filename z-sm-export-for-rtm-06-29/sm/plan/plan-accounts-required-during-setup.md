@@ -4,8 +4,7 @@ ms.custom: na
 ms.prod: system-center-2016
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-  - service-manager
+ms.technology: service-manager
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 54ebd290-b024-4b24-89dd-7c9d482737e3
@@ -16,7 +15,7 @@ ms.assetid: 54ebd290-b024-4b24-89dd-7c9d482737e3
 You will have to provide credentials for the accounts in the following table during the installation of the System Center 2016 - Service Manager and data warehouse management servers.  
 
 > [!NOTE]  
->  The user accounts and group accounts that are required for the installation of Service Manager must reside in the Users organizational unit \(OU\) in Active&nbsp;Directory Domain Services \(AD&nbsp;DS\).  
+The user accounts and group accounts that are required for the installation of Service Manager must reside in the Users organizational unit \(OU\) in Active Directory Domain Services \(AD DS\).  
 
 ## Accounts That You Provide During the Installation of a Service Manager Management Server  
 
@@ -28,9 +27,9 @@ You will have to provide credentials for the accounts in the following table dur
 
 ### Security Best Practices for Accounts
 
- When you are assigning Active&nbsp;Directory accounts for use with Service Manager Run As Accounts, it is a best practice to use service accounts. We strongly recommend against using Active&nbsp;Directory user accounts that are associated with individual people.  
+ When you are assigning Active Directory accounts for use with Service Manager Run As Accounts, it is a best practice to use service accounts. We strongly recommend against using Active Directory user accounts that are associated with individual people.  
 
- For more information about security best practices, download a copy of the Windows&nbsp;Server&nbsp;Security Guide, which is now part of the [Windows Server Security Compliance Management Toolkit](http://go.microsoft.com/fwlink/p/?LinkID=167160) and [The Services and Service Accounts Security Planning Guide](http://go.microsoft.com/fwlink/?LinkID=58270).  
+ For more information about security best practices, download a copy of the Windows Server Security Guide, which is now part of the [Windows Server Security Compliance Management Toolkit](http://go.microsoft.com/fwlink/p/?LinkID=167160) and [The Services and Service Accounts Security Planning Guide](http://go.microsoft.com/fwlink/?LinkID=58270).  
 
 ## Accounts That You Provide During the Installation of the Data Warehouse Management Server  
 
@@ -38,7 +37,7 @@ You will have to provide credentials for the accounts in the following table dur
 |-------------|-----------------|---------------------------------------------|  
 |Management group administrators|-   Must be a domain user or group.|-   Added to the data warehouse administrators user role.|  
 |Service Manager services account|-   Must be a domain user or group.<br />-   Must be member of local administrators on the data warehouse management server.<br />-   Must be the same account that you used for the Service Manager management server services account.|-   Becomes the data warehouse system Run As account.<br />-   Assigned to the ServiceManager SDK Service account.<br />-   Assigned to ServiceManager Config account.<br />-   Becomes a member of the sdk\_users and configsvc\_users database roles for the DWDataMart database.<br />-   Becomes a member of the db\_datareader database role for the DWRepository database.<br />-   Becomes a member of the configsvc\_users database role for the Service Manager database.|  
-|Reporting account|-   Must be a domain account.|-   Used by SQL&nbsp;Server Reporting Services \(SSRS\) to access the DWDataMart database to get data for reporting.<br />-   Becomes a member of the db\_datareader database role for the DWDataMart database.<br />-   Becomes a member of the reportuser database role for the DWDatamart database.|  
+|Reporting account|-   Must be a domain account.|-   Used by SQL Server Reporting Services \(SSRS\) to access the DWDataMart database to get data for reporting.<br />-   Becomes a member of the db\_datareader database role for the DWDataMart database.<br />-   Becomes a member of the reportuser database role for the DWDatamart database.|  
 |Analysis Services account|-   Must be a domain account.|-   Used to communicate with datamarts.<br />-   Account is added as an administrator role in the Analysis Services server database \(DWASDataBase\) for database processing and cube reading.|  
 
 ## Registering the Service Manager Management Group with the Data Warehouse Management Group
@@ -52,25 +51,25 @@ You will have to provide credentials for the accounts in the following table dur
 
  When you are creating connectors, you are asked for credentials that the connector will use to perform its function. The following table outlines the permissions that this account will need, and it describes best practices for high security.  
 
-### Operations Manager&nbsp;Alert Connector  
+### Operations Manager Alert Connector  
 
 |Permissions|Best practices|  
 |-----------------|--------------------|  
-|-   Must be a domain account.<br />-   Must be a member of the Users local security group on the Service Manager management server.<br />-   Must be an Operations Manager&nbsp;Administrator.|Domain account specifically created for this purpose that is only in the Users local security group and in an Administrator user role in Operations Manager and in an Advanced Operator user role in Service Manager.|  
+|-   Must be a domain account.<br />-   Must be a member of the Users local security group on the Service Manager management server.<br />-   Must be an Operations Manager Administrator.|Domain account specifically created for this purpose that is only in the Users local security group and in an Administrator user role in Operations Manager and in an Advanced Operator user role in Service Manager.|  
 
-### Operations Manager&nbsp;CI Connector  
+### Operations Manager CI Connector  
 
 |Permissions|Best practices|  
 |-----------------|--------------------|  
-|-   Must be a domain account.<br />-   Must be a member of the Users local security group on the management server.<br />-   Must be an Operations Manager&nbsp;Operator.|Domain account specifically created for this purpose that is only in the Users local security group and in an Operator user role in Operations Manager and in an Advanced Operator user role in Service Manager.|  
+|-   Must be a domain account.<br />-   Must be a member of the Users local security group on the management server.<br />-   Must be an Operations Manager Operator.|Domain account specifically created for this purpose that is only in the Users local security group and in an Operator user role in Operations Manager and in an Advanced Operator user role in Service Manager.|  
 
 ### Active Directory Connector  
 
 |Permissions|Best practices|  
 |-----------------|--------------------|  
-|-   Must be a domain account.<br />-   Must be a member of the Users local security group on the Service Manager management server.<br />-   Must have permissions to bind to the domain controller that the connector will read data from.<br />-   Needs generic read rights on the objects that are being synchronized into the Service Manager database from AD&nbsp;DS.|Domain account specifically created for this purpose that is only in the Users local security group and in an Advanced Operator user role in Service Manager and has read\-only permissions in AD&nbsp;DS.|  
+|-   Must be a domain account.<br />-   Must be a member of the Users local security group on the Service Manager management server.<br />-   Must have permissions to bind to the domain controller that the connector will read data from.<br />-   Needs generic read rights on the objects that are being synchronized into the Service Manager database from AD DS.|Domain account specifically created for this purpose that is only in the Users local security group and in an Advanced Operator user role in Service Manager and has read\-only permissions in AD DS.|  
 
-### Configuration Manager&nbsp;Connector  
+### Configuration Manager Connector  
 
 |Permissions|Best practices|  
 |-----------------|--------------------|  

@@ -4,8 +4,7 @@ ms.custom: na
 ms.prod: system-center-2016
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-  - service-manager
+ms.technology: service-manager
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 106d6924-e7a9-4291-a79f-1c5175599528
@@ -19,12 +18,12 @@ As part of your security infrastructure, you may want to keep track of port numb
 
 |Service Manager piece A|Port number and direction|Service Manager piece B|  
 |-----------------------------------|-------------------------------|-----------------------------------|  
-|Service Manager console|5724&nbsp;\-\-\-\>|Service Manager management server\*|  
-|Service Manager console|5724&nbsp;\-\-\-\>|Data warehouse management server|  
+|Service Manager console|5724 \-\-\-\>|Service Manager management server\*|  
+|Service Manager console|5724 \-\-\-\>|Data warehouse management server|  
 |Service Manager management server|1433 \-\-\-\>|Remote Service Manager database|  
 |Service Manager management server|5724 \-\-\-\>|Data warehouse server|  
 |Service Manager management server|5724 \-\-\-\>|Operations Manager Alert and CI connectors|  
-|Service Manager management server|389 \-\-\-\>|Active&nbsp;Directory Connector|  
+|Service Manager management server|389 \-\-\-\>|Active Directory Connector|  
 |Service Manager management server|1433 \-\-\-\>|Configuration Manager Connector|  
 |Data warehouse management server|1433 \-\-\-\>|Remote data warehouse database server|  
 |Data warehouse management server|1433 \-\-\-\>|Remote Service Manager database server|  
