@@ -399,8 +399,8 @@ If you used the default instance of SQL Server, use Windows Explorer to drag Mic
 
 **Workaround:** Switch the Cardinality Estimator (CE) for the SQL Server to use the SQL Server 2012 version. See the following article for more information on changing the Cardinality Estimator: [New functionality in SQL Server 2014 - Part 2 - New Cardinality Estimation](http://blogs.msdn.com/b/saponsqlserver/archive/2014/01/16/new-functionality-in-sql-server-2014-part-2-new-cardinality-estimation.aspx).
 
-## System Center Technical Preview - Virtual Machine Manager Release Notes
-### The following release notes apply to System Center Technical Preview - Virtual Machine Manager.
+## System Center 2016 - Virtual Machine Manager Release Notes
+### The following release notes apply to System Center 2016 - Virtual Machine Manager.
 
 ### Upgrading a cluster's functional level does not refresh the platform information for a File Server
 **Description:** If you upgrade the functional level for a cluster that includes a file server the new platform information will not be automatically updated in the VMM database.
@@ -413,7 +413,7 @@ If you used the default instance of SQL Server, use Windows Explorer to drag Mic
 **Workaround:**Select OK, close the error dialog box, and retry adding the cluster.
 
 ### Creating a tiered file share in a Storage Spaces Direct configuration will fail
-**Description:**If you attempt to create tiers of storage (one tier for solid state drives and another for hard disk drives) that are managed by VMM using Storage Spaces Direct, you will receive an error.
+**Description:** If you attempt to create tiers of storage (one tier for solid state drives and another for hard disk drives) that are managed by VMM using Storage Spaces Direct, you will receive an error.
 
 **Workaround:** Set the Write Cache Size Default to 0 using the command
 Set-StoragePool pool1 -WriteCacheSizeDefault 0
@@ -423,25 +423,15 @@ Set-StoragePool pool1 -WriteCacheSizeDefault 0
 
 **Workaround:** Perform a network migration instead of a SAN migration.
 
-### You can not create a shielded VM if the Guarded Host and the VMM management server are in separate domains that do not have a two-way trust relationship.
+### Shielding a VM may result in an error
 
-**Description:** For the TP5 release of Windows Server 2016 and System Center 2016 the Guarded Host and the VMM Management Server must either be in the same domain, or in domains with a two-way trust relationship.
-**Workaround:**  None
+**Description:** If you shield an existing non-shielded VM or if you create a shielded VM from a non-shielded template, the job might fail with the error: *Error (1730) The selected action could not be completed because the virtual machine is not in a state in which the action is valid.*
 
-### Removing the Host Guardian Service from a host will produce an error even though the job succeeds.
+The failure happens at the last step of the job in which the VM is shutdown after the shielding is completed, the VM gets shielded properly and is usable.
 
-**Description:** If you remove the Host Guardian Service by modifying the Host properties for a host managed by VMM, you will receive error (20593)
-While the Host Guardian Service URLs were being set on the host, the following error was received: Object reference not set to an instance of an object.
-
-**Workaround:** Make sure the host is responding, and try the operation again.  
-
-### Shielding a VM by setting its properties to either shielded or encrypted may result in an error.
-
-**Description:** If you shield an existing non-shielded VM by changing its properties to be either shielded or encrypted supported, or if you create a shielded VM from a non-shielded template, the job might fail with the error: Error (1730) The selected action could not be completed because the virtual machine is not in a state in which the action is valid. The failure happens at the last step of the job in which the VM is shutdown after the shielding is completed, the VM gets shielded properly and is usable.
 **Workaround:** Repair and ignore the job.
 
 ### Storing a VM in the VMM Library fails if change the default port for BITS(443) while configuring the VMM Server running on Nano Server.
-
 **Description:** Storing a VM in VMM Library will fail with the error below if you change the default port for BITS 443 while configuring the VMM Server running on a Nano Server installation.
 Error 2940 VMM is unable to complete the requested file transfer. The connection to the HTTP Server \<name> could not be established.
 
@@ -449,63 +439,80 @@ Error 2940 VMM is unable to complete the requested file transfer. The connection
 netsh advfirewall firewall add rule name="VMM" dir=in action=allow localport=<port no.> protocol=TCP
 
 ### Bare Metal Deployment of Nano Server-based hosts & clusters fails
-
 **Description:** Bare metal deployment of Nano Server-based hosts, compute & storage clusters using VMM will fail.
 
 **Workaround:** Install Nano Server on bare computers out of band and add it to VMM's management
 
 ### WinRM error blocks setting the static IP on the backend NIC of the SLB MUX VM
-
 **Description:** If you try to assign a static IP address to one or more of Software Load Balancer MUX Virtual Machines during the SLB deployment, a WinRM error blocks the operation.
 
 **Workaround:** Re-try the operation.
 
 ### Teamed Software Defined Network Switch deployment fails on Nano hosts
-
 **Description:** You can't deploy a teamed switch on Nano hosts using VMM 2016 TP5.
 
 **Workaround:** Deploy an SDN switch on any single physical NIC adaptor of the host.
 
 ### Inconsistent Network Address Translation user interface
-
 **Description:** The existing NAT connections will not be visible when you close the network connectivity wizard and reopen it. Additionally, UI doesn't allow you to choose the IP Address from the pool for creating NAT connection.
 
 **Workaround:** User can still add the NAT connections through UI. To see the existing NAT connections, user can leverage Powershell cmdlets
 Get-SCNATConnection
 
 ### vNIC connected to Network Controller managed network must be restarted on IP Address change
-
 **Description:** If there is a change in assigned IP address on any of the vNICs that are connected to a Network Controller managed VM Network, you need to manually restart the associated vNIC(s).
 
 **Workaround:** No workaround
 
 ### IPV6 configuration is not supported for Network Controller managed infrastructure
-
 **Description:** IPV6 configurations are not supported with System Center 2016 TP5 - VMM.
 
 **Workaround:** Use IPV4 configuration with VMM 2016 TP5.
 
 ### User needs to disable "Register this connection's address in DNS" option for Frontend and Backend IPs Software Load Balancer MUX VMs
-
 **Description:** For Front End and Back End IPs assigned to Software Load Balancer MUX Virtual Machines you need to uncheck the option for 'Register this connection's address in DNS'. Having this option checked may cause issues with the connectivity over these IP addresses.
 
 **Workaround:** No workaround
 
 ### Creating a template from a Generation 1 virtual machine on a Nano Server-based host will fail
-
 **Description:** This is not a supported scenario for System Center 2016 TP5 - VMM.
 
 **Workaround:** Instead of creating a template from a Gen 1 VM, you can create a VM template from scratch.
 
-
 ### Adding a host to VMM with Storage Spaces Direct enabled will result in a warning  
 **Description:**When hosts are added to a cluster with storage spaces direct enabled, a warning "Multipath I/O is not enabled for known storage arrays on host <\hostname>" is generated.
 
-
 **Workaround:** None, you can ignore the warning.
 
-### In Storage Spaces Direct, the Create Volume UI does not support creation of tiered volume with Solid-state drive (SSD)
-user-interface
+### In Storage Spaces Direct, the Create Volume UI does not support creation of tiered volume with Solid-state drive (SSD) user-interface
 **Description:** If you are creating a storage tier in the Storage Spaces Direct user interface, you will be limited to tiers using Hard Disk Drive (HDD) storage.
 
 **Workaround:** You can create tiered volumes with SSD storage via PowerShell.
+
+### Deploying Scale out File Server on a Storage Spaces Direct configuration through SCVVM RTM fails
+**Description:** If you deploy Scale out File Server (SoFS) on a Storage Spaces Direct configuration, the following error occurs:
+Error 25305: "Unable to execute the task because of error: Unable to cast object of type 'System.String' to type 'System.IO.FileInfo' " 
+
+**Workaround:** Deploy the Scale Out File Server using VMM PowerShell with [-SkipClusterValidation] or deploy the same out of band and bring it under VMM management.
+
+### VM deployment on Scale Out File Server using fast file copy completes with warning
+**Description:** If you deploy a VM on a Scale Out File Server using fast file copy, the action completes successfully with the following warning:
+"VMM could not transfer the file <source location> to <destination location> using fast file copy. The VMM agent on <host> returned an error.
+The user name or password is incorrect (0x8007052E)
+
+**Workaround:** None
+
+### In VMM UI, cluster validation is always performed during creation of a hyperconverged Storage Spaces Direct enabled cluster
+**Description:**  If you create a hyperconverged Storage Spaces Direct enabled cluster using VMM UI, cluster validation is always performed.
+
+**Workaround:**  To skip cluster validation when creating a cluster, use VMM PowerShell to create the cluster with the -skipClusterValidation option.
+
+### When adding a node to a cluster using VMM, cluster validation is always performed even when the skip cluster validation option is specified
+**Description:** If you add a node to an existing hyperconverged cluster using Storage Spaces Direct technology using VMM, cluster validation is always performed.
+
+**Workaround:** To skip cluster validation when adding a node to the cluster, use Windows PowerShell to add the node with the appropriate skip cluster validation option.
+
+### When managing Storage Replica using VMM, a critical exception is generated when the read storage provider operation is performed after storage replication is enabled or a failover is performed.
+**Description:** If you perform the read storage provider operation after enabling storage replication OR performing failover, the job will fail with critical exception ‘dictionary key cannot be null’  for the recovery site provider.
+
+**Workaround:** Restart the storage cluster for recovery site provider from failover cluster manager, wait for some time as cluster service may take time to update the objects even after restart. Then, retry the read storage provider operation.

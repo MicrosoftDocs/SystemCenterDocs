@@ -15,7 +15,7 @@ manager:cfreemanwa
 # Setup Command-Line Options for Service Provider Foundation
 You can use command\-line options with the Service Provider Foundation setup to perform an unattended installation by using the **-Silent** option. All options that you want to specify must be in a response file \(text file\) whose path is specified after the **-Silent** option, except for **-Silent -Uninstall** which performs an unattended uninstallation. The options can be delineated by either one line for each option, or a single space separating each option.  
   
-This topic requires that you have located the **setup.exe** file for Service Provider Foundation in the installation media for [!INCLUDE[orchshort](../../om/manage/includes/orchshort_md.md)].  
+This topic requires that you have located the **setup.exe** file for Service Provider Foundation in the installation media for Orchestrator  .  
   
 ## Setup Command\-Line Options  
 The **\-Silent** option must be specified followed by the name of the response file, or followed by the **\-Uninstall** option:  
