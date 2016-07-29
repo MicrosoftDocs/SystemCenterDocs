@@ -13,7 +13,7 @@ author:bwren
 manager:cfreemanwa
 ---
 # Parameters for Runbooks Invoked from Service Provider Foundation
-This topic describes the parameters that Service Provider Foundation automatically provides to a runbook that it invokes in [!INCLUDE[orchlong](../../orch/deploy/includes/orchlong_md.md)], as described in [How to Automate a Runbook from Service Provider Foundation](../../spf/Deploy/How-to-Automate-a-Runbook-from-Service-Provider-Foundation.md). A runbook is not required to process all the parameters it receives, and will simply ignore the parameters which have no purpose in the runbook.  
+This topic describes the parameters that Service Provider Foundation automatically provides to a runbook that it invokes in System Center 2012 Orchestrator , as described in [How to Automate a Runbook from Service Provider Foundation](../../spf/Deploy/How-to-Automate-a-Runbook-from-Service-Provider-Foundation.md). A runbook is not required to process all the parameters it receives, and will simply ignore the parameters which have no purpose in the runbook.  
   
 ## Parameters for a new virtual machine  
 The following table lists the parameters available when a new virtual machine is created. All parameters are optional unless indicated as required.  

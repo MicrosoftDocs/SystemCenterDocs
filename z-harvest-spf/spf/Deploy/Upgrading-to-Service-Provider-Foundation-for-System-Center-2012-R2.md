@@ -13,14 +13,14 @@ author:bwren
 manager:cfreemanwa
 ---
 # Upgrading to Service Provider Foundation for System Center 2012 R2
-[!INCLUDE[sc2012r2_1](../../om/manage/includes/sc2012r2_1_md.md)]Service Provider Foundation is supported only on the Windows ServerÂ® 2012 R2 operating system. Before upgrading, review [System Requirements for Service Provider Foundation 2012 R2](http://go.microsoft.com/fwlink/p/?LinkId=310174). Use the following procedure to upgrade a single or multiple installations of Service Provider Foundation.  
+System Center 2012 R2Service Provider Foundation is supported only on the Windows ServerÂ® 2012 R2 operating system. Before upgrading, review [System Requirements for Service Provider Foundation 2012 R2](http://go.microsoft.com/fwlink/p/?LinkId=310174). Use the following procedure to upgrade a single or multiple installations of Service Provider Foundation.  
   
 ## Recommended upgrade procedure  
-Because upgrading requires a newer operating system, you will need to uninstall  [!INCLUDE[sc2012sp1_long](../../om/manage/includes/sc2012sp1_long_md.md)]Service Provider Foundation, upgrade the operating system and other prerequisites, and then install [!INCLUDE[sc2012r2_1](../../om/manage/includes/sc2012r2_1_md.md)]Service Provider Foundation.  
+Because upgrading requires a newer operating system, you will need to uninstall  System Center 2012 SP1Service Provider Foundation, upgrade the operating system and other prerequisites, and then install System Center 2012 R2Service Provider Foundation.  
   
 The following procedure describes preserving important configuration information.  
   
-#### To upgrade to [!INCLUDE[sc2012r2_1](../../om/manage/includes/sc2012r2_1_md.md)]Service Provider Foundation  
+#### To upgrade to System Center 2012 R2Service Provider Foundation  
   
 1.  If you implemented usage metering or any other fabric management, we recommend you copy a web.config file to preserve important Operations Manager Data Warehouse \(OMDW\) settings; otherwise, skip this step.  
   
@@ -28,9 +28,9 @@ The following procedure describes preserving important configuration information
   
     **C:\\inetpub\\SPF\\Usage\\web.config**  
   
-    [!INCLUDE[sc2012r2_1](../../om/manage/includes/sc2012r2_1_md.md)]Service Provider Foundation stores OMDW connection strings in the  Service Provider Foundation database. They were previously stored in web.config files in IIS. You must add these settings to the database after installation, as described in [Configure Usage Metering in Service Provider Foundation](../../spf/Deploy/Configure-Usage-Metering-in-Service-Provider-Foundation.md).  
+    System Center 2012 R2Service Provider Foundation stores OMDW connection strings in the  Service Provider Foundation database. They were previously stored in web.config files in IIS. You must add these settings to the database after installation, as described in [Configure Usage Metering in Service Provider Foundation](../../spf/Deploy/Configure-Usage-Metering-in-Service-Provider-Foundation.md).  
   
-2.  Uninstall Service Provider Foundation[!INCLUDE[sc2012sp1_short](../../om/manage/includes/sc2012sp1_short_md.md)] and the [!INCLUDE[vmm12sp1_med](../../om/manage/includes/vmm12sp1_med_md.md)] Console.  
+2.  Uninstall Service Provider FoundationSystem Center 2012 SP1  and the Virtual Machine Manager  Console.  
   
     From **Control Panel**, in **Programs**, click **Uninstall a program**. Then under **Name**, right\-click **System Center 2012 Service Pack 1 Service Provider Foundation**, and then click **Uninstall**. Do the same for **Microsoft 2012 System Center Virtual Machine Manager Console**.  
   
@@ -38,7 +38,7 @@ The following procedure describes preserving important configuration information
   
 3.  Upgrade the operating system to Windows Server 2012 R2.  
   
-4.  Install [!INCLUDE[vmmblue_1](../../om/manage/includes/vmmblue_1_md.md)] Console for minimal requirements. However, you will need access to a full [!INCLUDE[vmmblue_2](../../om/manage/includes/vmmblue_2_md.md)] server to provide services to create fabric and provide services to tenants.  
+4.  Install Virtual Machine Manager  Console for minimal requirements. However, you will need access to a full System Center 2012 Virtual Machine Manager server to provide services to create fabric and provide services to tenants.  
   
 5.  Install Service Provider FoundationService Provider Foundation.  
   

@@ -15,7 +15,7 @@ manager:cfreemanwa
 # Example SAML Assertion for Authentication in Service Provider Foundation
   
 > [!CAUTION]  
-> This topic is outdated. In a [!INCLUDE[katal_1](../../orch/getstarted/includes/katal_1_md.md)] environment, authentication is provided by the REST API. For more information, see [Windows Azure Pack Authentication Overview](http://msdn.microsoft.com/library/dn479300.aspx).  
+> This topic is outdated. In aWindows Azure Pack for Windows Server  environment, authentication is provided by the REST API. For more information, see [Windows Azure Pack Authentication Overview](http://msdn.microsoft.com/library/dn479300.aspx).  
   
 This topic shows an example of using a Security Assertion Markup Language \(SAML\) 2.0 assertion for providing authentication and token information to access tenant resources. In this scenario, this assertion would be provided by a client portal application to Service Provider Foundation to authenticate access to tenant resources by a self\-service\-user \(SSU\).  
   
