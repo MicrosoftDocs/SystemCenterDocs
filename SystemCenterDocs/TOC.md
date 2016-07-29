@@ -1,6 +1,6 @@
 # [System Center 2016 Technical Preview 5](System-Center-2016-Technical-Preview-5.md)
 ## [What's New in System Center Technical Preview 5](get-started/What-s-New-in-System-Center-Technical-Preview-5.md)
-## [Release Notes for System Center 2016 Technical Preview 5](get-started/Release-Notes-for-System-Center-Technical-Preview-5.md)
+## [Release Notes for System Center 2016 ](get-started/Release-Notes-for-System-Center-2016.md)
 ## [Features Removed or Deprecated from System Center 2016 Technical Preview](get-started/Features-Removed-or-Deprecated-from-System-Center-2016-Technical-Preview.md)
 ## [System Requirements for System Center Technical Preview](system-requirements/System-Requirements-for-System-Center-Technical-Preview.md)
 ### [Minimum Hardware Recommendations for System Center Technical Preview](system-requirements/Minimum-Hardware-Recommendations-for-System-Center-Technical-Preview.md)
