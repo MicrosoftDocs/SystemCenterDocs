@@ -33,7 +33,7 @@ SQL Server 2012 is available in Standard, Enterprise, and Business Intelligence 
 
 -  **Measure Group Partitions**: In the Enterprise and Business Intelligence editions, measure groups are partitioned on a monthly basis, instead of as one large partition. This reduces the amount of time it takes to process the partition.
 
--  **PowerPivot**: In the Enterprise and Business Intelligence editions, you can use Microsoft SQL Server PowerPiviot for SharePoint.
+-  **PowerPivot**: In the Enterprise and Business Intelligence editions, you can use Microsoft SQL Server PowerPivot for SharePoint.
 
 You must make your decision to use either the Standard, Enterprise, or Business Intelligence editions of SQL Server 2012 before you install System Center 2016 - Service Manager. It is possible to use a combination of editions for the System Center 2016 - Service Manager database and use a different edition for the data warehouse databases.
 
@@ -53,7 +53,7 @@ SQL Server 2008 R2 is available in both Standard and Enterprise editions. System
 
 -  **Measure Group Partitions**: In the Enterprise edition, measure groups are partitioned on a monthly basis, instead of as one large partition. This reduces the amount of time it takes to process the partition.
 
--  **PowerPivot**: In the Enterprise edition, you can use Microsoft SQL Server PowerPiviot for SharePoint.
+-  **PowerPivot**: In the Enterprise edition, you can use Microsoft SQL Server PowerPivot for SharePoint.
 
 You must make your decision to use either the Standard or Enterprise editions of SQL Server 2008 before you install System Center 2016 - Service Manager. It is possible to use SQL Server 2008 Standard for the System Center 2016 - Service Manager database and use SQL Server 2008 Enterprise for the data warehouse databases.
 
