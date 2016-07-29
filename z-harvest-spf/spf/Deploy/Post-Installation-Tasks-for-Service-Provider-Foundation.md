@@ -19,9 +19,9 @@ As the administrator for a hosting provider, there are a few key tasks that you 
   
 -   Portal applications  
   
-    If you installed Service Provider Foundation to use with [!INCLUDE[katal_1](../../orch/getstarted/includes/katal_1_md.md)], you can register the Service Provider Foundation web service endpoint and start provisioning virtual machine clouds and create plans for tenants. For more information, see [Register the Service Provider Foundation Endpoint for Virtual Machine Clouds](assetId:///197ac7a4-6ca2-46a4-855d-327979b68ea5).  
+    If you installed Service Provider Foundation to use withWindows Azure Pack for Windows Server , you can register the Service Provider Foundation web service endpoint and start provisioning virtual machine clouds and create plans for tenants. For more information, see [Register the Service Provider Foundation Endpoint for Virtual Machine Clouds](assetId:///197ac7a4-6ca2-46a4-855d-327979b68ea5).  
   
-    If you installed Service Provider Foundation to use with [!INCLUDE[conceroshort](../../om/manage/includes/conceroshort_md.md)], you can connect to hosting provider. For more information, see [How to Connect to a Hosting Provider in System Center 2012 SP1](assetId:///5f2729ef-9647-4f5f-bb39-27ea8fc3f0e6).  
+    If you installed Service Provider Foundation to use with App Controller , you can connect to hosting provider. For more information, see [How to Connect to a Hosting Provider in System Center 2012 SP1](assetId:///5f2729ef-9647-4f5f-bb39-27ea8fc3f0e6).  
   
     For detailed information about using portals, see [Portals in Service Provider Foundation](../../spf/Deploy/Portals-in-Service-Provider-Foundation.md).  
   
@@ -40,7 +40,7 @@ As the administrator for a hosting provider, there are a few key tasks that you 
 ## Populating the database  
   
 > [!NOTE]  
-> If you installed Service Provider Foundation to use with [!INCLUDE[katal_1](../../orch/getstarted/includes/katal_1_md.md)], all virtual machines and clouds defined in [!INCLUDE[vmmblue_1](../../om/manage/includes/vmmblue_1_md.md)] will automatically appear on the **VM Clouds** tab on the --- translation.priority.ht:    - cs-cz   - da-dk   - de-de   - el-gr   - es-es   - fi-fi   - fr-fr   - hu-hu   - it-it   - ja-jp   - ko-kr   - nb-no   - nl-nl   - pl-pl   - pt-br   - pt-pt   - ru-ru   - sv-se   - tr-tr   - zh-cn   - zh-tw --- management portal for administrators. There is no need to use Windows PowerShell to define them.  
+> If you installed Service Provider Foundation to use withWindows Azure Pack for Windows Server , all virtual machines and clouds defined in Virtual Machine Manager  will automatically appear on the **VM Clouds** tab on the --- translation.priority.ht:    - cs-cz   - da-dk   - de-de   - el-gr   - es-es   - fi-fi   - fr-fr   - hu-hu   - it-it   - ja-jp   - ko-kr   - nb-no   - nl-nl   - pl-pl   - pt-br   - pt-pt   - ru-ru   - sv-se   - tr-tr   - zh-cn   - zh-tw --- management portal for administrators. There is no need to use Windows PowerShell to define them.  
   
 A basic, general procedure for populating the SCSPF database using cmdlets is as follows:  
   

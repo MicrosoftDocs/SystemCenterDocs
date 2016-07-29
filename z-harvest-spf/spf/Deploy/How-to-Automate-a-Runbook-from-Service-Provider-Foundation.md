@@ -13,7 +13,7 @@ author:bwren
 manager:cfreemanwa
 ---
 # How to Automate a Runbook from Service Provider Foundation
-Starting with Service Provider Foundation[!INCLUDE[sc2012r2_1](../../om/manage/includes/sc2012r2_1_md.md)] you can configure --- translation.priority.ht:    - de-de   - es-es   - fr-fr   - it-it   - ja-jp   - ko-kr   - pt-br   - ru-ru   - zh-cn   - zh-tw --- Service Management Automation to use Service Provider Foundation. For more information see the "Connect to the SMA web service" section of [Manage Web Services and Connections in Service Provider Foundation](../../spf/Deploy/Manage-Web-Services-and-Connections-in-Service-Provider-Foundation.md). You can also invoke runbooks with the older invoke runbook scenario.  
+Starting with Service Provider FoundationSystem Center 2012 R2 you can configure --- translation.priority.ht:    - de-de   - es-es   - fr-fr   - it-it   - ja-jp   - ko-kr   - pt-br   - ru-ru   - zh-cn   - zh-tw --- Service Management Automation to use Service Provider Foundation. For more information see the "Connect to the SMA web service" section of [Manage Web Services and Connections in Service Provider Foundation](../../spf/Deploy/Manage-Web-Services-and-Connections-in-Service-Provider-Foundation.md). You can also invoke runbooks with the older invoke runbook scenario.  
   
 You can automate runbooks using Service Management Automation provided that you have configured the --- translation.priority.ht:    - de-de   - es-es   - fr-fr   - it-it   - ja-jp   - ko-kr   - pt-br   - ru-ru   - zh-cn   - zh-tw --- Service Management Automation to use Service Provider Foundation by using the Set\-SCSPFEventRegisration and Get\-SCSPFEventRegistation cmdlets, as shown in the following example.  
   
@@ -29,7 +29,7 @@ PS C:\> $event_backup = Get-SCSPFEventRegistration -Action "Backup"
 The remainder of this topic describes the older scenario.  
   
 ## Invoking runbooks \(not automation\)  
-You can set a runbook in [!INCLUDE[orchlong](../../orch/deploy/includes/orchlong_md.md)] to be run whenever a new virtual machine or new service is created by remote calls to Service Provider Foundation with the [Virtual Machine Manager Service](http://go.microsoft.com/fwlink/?LinkId=298612). You can set the runbook to be invoked by using the Windows PowerShell T:Microsoft.SystemCenter.Foundation.Cmdlet.Set\-SCSPFExtensibleEventHandler  cmdlet. Service Provider Foundation raises internal events to invoke the runbook and the runbook will continue to be invoked continuously as long as the extensible event handler is enabled.  
+You can set a runbook in System Center 2012 Orchestrator  to be run whenever a new virtual machine or new service is created by remote calls to Service Provider Foundation with the [Virtual Machine Manager Service](http://go.microsoft.com/fwlink/?LinkId=298612). You can set the runbook to be invoked by using the Windows PowerShell T:Microsoft.SystemCenter.Foundation.Cmdlet.Set\-SCSPFExtensibleEventHandler  cmdlet. Service Provider Foundation raises internal events to invoke the runbook and the runbook will continue to be invoked continuously as long as the extensible event handler is enabled.  
   
 Service Provider Foundation will not invoke the runbook if the virtual machine or service was created by other means such as by using Windows PowerShell cmdlets or by using the console in --- translation.priority.ht:    - ar-sa   - cs-cz   - da-dk   - de-de   - el-gr   - es-es   - fi-fi   - fr-fr   - he-il   - hu-hu   - it-it   - ja-jp   - ko-kr   - nb-no   - nl-nl   - pl-pl   - pt-br   - pt-pt   - ro-ro   - ru-ru   - sv-se   - tr-tr   - zh-cn   - zh-hk   - zh-tw --- System&nbsp;Center&nbsp;2012&nbsp;- Virtual&nbsp;Machine&nbsp;Manager&nbsp;\(VMM\).  
   
@@ -37,7 +37,7 @@ To support the infrastructure for invoking a runbook, Service Provider Foundatio
   
 Make sure you have the following information and settings applied before you call the T:Microsoft.SystemCenter.Foundation.Cmdlet.Set\-SCSPFExtensibleEventHandler cmdlet:  
   
--   The URI to the [!INCLUDE[orchshort](../../om/manage/includes/orchshort_md.md)] web service.  
+-   The URI to the Orchestrator   web service.  
   
 -   The identity settings for the Service Provider Foundation Application Pools in **Internet Information Services \(IIS\) Manager** must be included in the Orchestrator Users Group. For information about determining the credentials that were applied for Service Provider Foundation, see the "Verify Local user credentials for portal access" section in [Verify local user credentials for portal access](../../spf/Deploy/Configuring-Portals-for-Service-Provider-Foundation.md#LocalCreds). For information about adding credentials the Orchestrator Users Group, see [How to Change the Orchestrator Users Group](../../orch/manage/How-to-Change-the-Orchestrator-Users-Group.md).  
   
@@ -50,7 +50,7 @@ See [Parameters for Runbooks Invoked from Service Provider Foundation](../../spf
     |Parameter|Value|  
     |-------------|---------|  
     |EventName|Specify either "VirtualMachineCreated" or "ServiceCreated".|  
-    |OrchestratorUri|The URI to the [!INCLUDE[orchshort](../../om/manage/includes/orchshort_md.md)] web service.|  
+    |OrchestratorUri|The URI to the Orchestrator   web service.|  
     |RunbookPath|The local path to the runbook.|  
     |Enable|Specify to enable the runbook.<br /><br />To disable the runbook from being invoked, omit this parameter.|  
   

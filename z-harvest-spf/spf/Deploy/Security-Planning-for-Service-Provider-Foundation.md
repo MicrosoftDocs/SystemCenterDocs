@@ -18,7 +18,7 @@ This topic provides an overview of Service Provider Foundation security features
 ## Security features  
 Service Provider Foundation provides a tightly coordinated implementation of Windows and Internet Information Services \(IIS\) security features. Note that credentials in a domain in the Active Directory must be used.  
   
-Service Provider Foundation relies on IIS to authenticate users. Starting with [!INCLUDE[sc2012r2_1](../../om/manage/includes/sc2012r2_1_md.md)], Service Provider Foundation accepts only the Secure Sockets Layer \(SSL\) requests protocol from its provider endpoints using the default port of 8090. Only HTTPS requests are accepted. Typically, the request should have the security context of the user who is logged on to the make the request.  
+Service Provider Foundation relies on IIS to authenticate users. Starting with System Center 2012 R2, Service Provider Foundation accepts only the Secure Sockets Layer \(SSL\) requests protocol from its provider endpoints using the default port of 8090. Only HTTPS requests are accepted. Typically, the request should have the security context of the user who is logged on to the make the request.  
   
 When the setup wizard installs a web service, it creates a local security group on the computer that runs the web service. You can specify users or groups that have access to each web service. The wizard assigns those users or groups to a local security group. Service Provider Foundation checks that the user who sends the request belongs to the appropriate local security group.  
   

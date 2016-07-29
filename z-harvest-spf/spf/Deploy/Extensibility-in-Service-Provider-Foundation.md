@@ -19,7 +19,7 @@ This section describes extensibility capabilities in Service Provider Foundation
   
 -   [How to Automate a Runbook from Service Provider Foundation](../../spf/Deploy/How-to-Automate-a-Runbook-from-Service-Provider-Foundation.md)  
   
-    Describes how to set an extensible event handler so that Runbook is invoked in [!INCLUDE[orchlong](../../orch/deploy/includes/orchlong_md.md)] whenever a new virtual machine or service is created.  
+    Describes how to set an extensible event handler so that Runbook is invoked in System Center 2012 Orchestrator  whenever a new virtual machine or service is created.  
   
 -   [Parameters for Runbooks Invoked from Service Provider Foundation](../../spf/Deploy/Parameters-for-Runbooks-Invoked-from-Service-Provider-Foundation.md)  
   

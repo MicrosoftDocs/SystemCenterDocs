@@ -25,11 +25,11 @@ The following server scenarios each pertain to the recommendations listed in the
   
 -   Service Provider Foundation with or without SQL Server  
   
--   [!INCLUDE[conceroshort](../../om/manage/includes/conceroshort_md.md)] with or without SQL Server  
+-   App Controller  with or without SQL Server  
   
 |5,000 or Fewer Virtual Machines|5,000 - 12,000 Virtual Machines|12,000 - 25,000 Virtual Machines|  
 |-----------------------------------|-----------------------------------|------------------------------------|  
-|4 processor cores, 8 GB RAM|8 processor cores, 8 GB RAM.<br /><br />4 processor cores, 8 GB RAM is sufficient for computers running [!INCLUDE[conceroshort](../../om/manage/includes/conceroshort_md.md)] with or without SQL Server.|16 processor cores, 8 GB RAM recommended only for computers running --- translation.priority.ht:    - ar-sa   - cs-cz   - da-dk   - de-de   - el-gr   - es-es   - fi-fi   - fr-fr   - he-il   - hu-hu   - it-it   - ja-jp   - ko-kr   - nb-no   - nl-nl   - pl-pl   - pt-br   - pt-pt   - ro-ro   - ru-ru   - sv-se   - tr-tr   - zh-cn   - zh-hk   - zh-tw --- VMM with or without SQL Server.|  
+|4 processor cores, 8 GB RAM|8 processor cores, 8 GB RAM.<br /><br />4 processor cores, 8 GB RAM is sufficient for computers running App Controller  with or without SQL Server.|16 processor cores, 8 GB RAM recommended only for computers running --- translation.priority.ht:    - ar-sa   - cs-cz   - da-dk   - de-de   - el-gr   - es-es   - fi-fi   - fr-fr   - he-il   - hu-hu   - it-it   - ja-jp   - ko-kr   - nb-no   - nl-nl   - pl-pl   - pt-br   - pt-pt   - ro-ro   - ru-ru   - sv-se   - tr-tr   - zh-cn   - zh-hk   - zh-tw --- VMM with or without SQL Server.|  
   
 ## Web service settings  
 By default, Service Provider Foundation supports up to 1000 concurrent requests for its web services. We recommend this be a lower number in a production environment. You can change this configuration by specifying the value for the **MaxRequestsPerTimeSlot** key in the **C:\\inetpub\\SPF\\web.config** file.  
