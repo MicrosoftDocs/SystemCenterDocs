@@ -13,7 +13,7 @@ author:bwren
 manager:cfreemanwa
 ---
 # What&#39;s New in Service Provider Foundation
-This topic summarizes the main new features and capabilities in Service Provider Foundation, after its first release with [!INCLUDE[orchshort](../../om/manage/includes/orchshort_md.md)] in Service Provider Foundation[!INCLUDE[sc2012sp1_short](../../om/manage/includes/sc2012sp1_short_md.md)]. The current version is Service Provider Foundation[!INCLUDE[sc2012r2_1](../../om/manage/includes/sc2012r2_1_md.md)].  
+This topic summarizes the main new features and capabilities in Service Provider Foundation, after its first release with Orchestrator   in Service Provider FoundationSystem Center 2012 SP1 . The current version is Service Provider FoundationSystem Center 2012 R2.  
   
 ## New server and stamp capabilities  
 The following table lists the server types that are now available for the `Server` object, and you can add one or more of them to a `Stamp` object using the Windows PowerShell cmdlets or the Administration web service.  

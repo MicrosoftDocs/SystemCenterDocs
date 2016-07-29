@@ -125,7 +125,7 @@ You can also create user roles by using the Admin OData protocol service that us
     PS C:\> Set-Executionpolicy remotesigned  
     ```  
   
-2.  Enter the following command to import the [!INCLUDE[vmm12sp1_med](../../om/manage/includes/vmm12sp1_med_md.md)] module:  
+2.  Enter the following command to import the Virtual Machine Manager  module:  
   
     ```  
     PS C:\> Import-Module virtualmachinemanager  

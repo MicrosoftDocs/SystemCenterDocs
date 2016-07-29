@@ -13,7 +13,7 @@ author:bwren
 manager:cfreemanwa
 ---
 # Release Notes for Service Provider Foundation for System Center 2012 SP1
-These release notes apply to Service Provider Foundation, a component of [!INCLUDE[orchlong](../../orch/deploy/includes/orchlong_md.md)]. They contain up\-to\-date information about known issues that you might experience.  
+These release notes apply to Service Provider Foundation, a component of System Center 2012 Orchestrator . They contain up\-to\-date information about known issues that you might experience.  
   
 ## Known Issues  
   

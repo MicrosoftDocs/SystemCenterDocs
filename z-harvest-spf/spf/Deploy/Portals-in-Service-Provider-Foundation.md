@@ -23,7 +23,7 @@ The following illustration shows how portal applications and Windows PowerShell 
   
 -   [Configuring Portals for Service Provider Foundation](../../spf/Deploy/Configuring-Portals-for-Service-Provider-Foundation.md)  
   
-    Describes the configurations required for [!INCLUDE[conceroshort](../../om/manage/includes/conceroshort_md.md)] and [!INCLUDE[katal_1](../../orch/getstarted/includes/katal_1_md.md)].  
+    Describes the configurations required for App Controller  andWindows Azure Pack for Windows Server .  
   
 -   [Importing Gallery Items in Service Provider Foundation](../../spf/Deploy/Importing-Gallery-Items-in-Service-Provider-Foundation.md)  
   
