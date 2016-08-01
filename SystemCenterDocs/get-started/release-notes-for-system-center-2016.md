@@ -430,9 +430,9 @@ The failure happens at the last step of the job in which the VM is shutdown afte
 
 **Workaround:** Repair and ignore the job.
 
-### Storing a VM in the VMM Library fails if change the default port for BITS(443) while configuring the VMM Server running on Nano Server.
-**Description:** Storing a VM in VMM Library will fail with the error below if you change the default port for BITS 443 while configuring the VMM Server running on a Nano Server installation.
-Error 2940 VMM is unable to complete the requested file transfer. The connection to the HTTP Server \<name> could not be established.
+### Storing a VM in VMM Library fails if you change the default port for BITS(443) while configuring the VMM Server
+**Description:** Storing a VM in VMM Library will fail with the error below if you change the default port for BITS (443) while configuring the VMM Server.
+*Error (2940) VMM is unable to complete the requested file transfer. The connection to the HTTP Server \<name> could not be established.*
 
 **Workaround:** Manually add the new port number to the Windows Firewall exceptions list of the Nano host using the below command:
 netsh advfirewall firewall add rule name="VMM" dir=in action=allow localport=<port no.> protocol=TCP
@@ -440,7 +440,7 @@ netsh advfirewall firewall add rule name="VMM" dir=in action=allow localport=<po
 ### Bare Metal Deployment of Nano Server-based Compute & Storage clusters may fail
 **Description:** Bare metal deployment of Nano Server-based Compute & Storage clusters using VMM may fail.
 
-**Workaround:** Skipping the cluster validation while deployment typically works, if it does not work for you, do bare metal deployment of Nano Server-based individual hosts and then create a cluster out of the hosts. 
+**Workaround:** Skipping the cluster validation while deployment typically works, if it does not work for you, do bare metal deployment of Nano Server-based individual hosts and then create a cluster out of the hosts.
 
 ### Service deployments from Service templates will fail if you include "Desktop Experience" & other GUI related features in your service template
 **Description:** Deploying a Service template that has "Desktop Experience" & other GUI related features included will fail as these options are no longer supported in Windows Server.
@@ -448,14 +448,24 @@ netsh advfirewall firewall add rule name="VMM" dir=in action=allow localport=<po
 **Workaround:** There is no workaround, do not include these features in your service template.
 
 ### Deployment of Service and servicing of a service on Server Core hosts will fail
-**Description:** If you try to deploy a service or service a service on Server Core hosts, it will fail.
+**Description:** If you try to deploy a service or service a service on a Server Core host, it will fail.
 
-**Workaround:** There is no workaround.
+**Workaround:** Use a VHD that has Guest Integration Services enabled to workaround the issue.
 
-### Bare metal deployment of hosts may fail after VMM is upgraded from VMM 2012 R2 to VMM 2016
-**Description:** When you try to do bare metal deployment of hosts after a VMM upgrade, VMM may pull the wrong SPN to update the Windows Deployment Services (WDS) identity registry key. The registry setting for HKLM\SYSTEM\CCS\SERVICES\WDSSERVER\PROVIDER\WDSPXE\PROVIDES\VMMOSDPROVIDER is set to 'HOST/VIRT-VMM-1' instead of 'SCVMM/VIRT-VMM-1'.
+### VMM throws an error when you start a VM configured for Start Ordering
+**Description:** Windows Server 2016 has a new functionality called VM Start Ordering which can be used to define the order in which dependent VMs will get started. This functionality is not exposed through VMM today. However, if you have configured VM start ordering outside of VMM, VMM does honor the order in which the VMs will start. It however throws the below false positive error which should be ignored *Error (12711)
+VMM cannot complete the WMI operation on the server <servername> because of an error: [MSCluster_ResourceGroup.Name=<name>] The group or resource is not in the correct state to perform the requested operation.
+The group or resource is not in the correct state to perform the requested operation (0x139F)
 
-**Workaround:** Manually change the registry entry for HKLM\SYSTEM\CCS\SERVICES\WDSSERVER\PROVIDER\WDSPXE\PROVIDES\VMMOSDPROVIDER to 'SCVMM/VIRT-VMM-1' and then try bare metal deployment of hosts.
+Recommended Action
+Resolve the issue and then try the operation again.*
+
+**Workaround:** Ignore the error as the VMs will start in the correct order.
+
+### Bare metal deployment of hosts may fail after VMM in an HAVMM setup is upgraded from VMM 2012 R2 to VMM 2016
+**Description:** In a Highly Available (HA) VMM environment, after a VMM upgrade, VMM may incorrectly update the Windows Deployment Services (WDS) registry key, HKLM\SYSTEM\CCS\SERVICES\WDSSERVER\PROVIDER\WDSPXE\PROVIDES\VMMOSDPROVIDER, to 'HOST/VIRT-VMM-1' instead of 'SCVMM/VIRT-VMM-1'. This will lead to failure of bare metal deployment of hosts & clusters.
+
+**Workaround:** Manually change the registry entry for HKLM\SYSTEM\CCS\SERVICES\WDSSERVER\PROVIDER\WDSPXE\PROVIDES\VMMOSDPROVIDER to 'SCVMM/VIRT-VMM-1' and then try bare metal deployment of hosts & clusters.
 
 ### WinRM error blocks setting the static IP on the backend NIC of the SLB MUX VM
 **Description:** If you try to assign a static IP address to one or more of Software Load Balancer MUX Virtual Machines during the SLB deployment, a WinRM error blocks the operation.
