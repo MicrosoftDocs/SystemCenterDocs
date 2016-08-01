@@ -4,8 +4,7 @@ ms.custom: na
 ms.prod: system-center-2016
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-  - service-manager
+ms.technology: service-manager
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: ee5b265f-1ffa-416d-a038-db9d06efc942
@@ -33,7 +32,7 @@ You must use the same supported language collations if you intend to import data
 
 You can use any supported database collation of any System Center component with any supported collation of Service Manager.  
 
-## Operations Manager&nbsp;Compatibility  
+## Operations Manager Compatibility  
 
 This section describes the compatibility between Operations Manager and Service Manager.  
 
@@ -41,7 +40,7 @@ This section describes the compatibility between Operations Manager and Service 
 
  System Center Operations Manager 2016 is supported by Service Manager and Service Manager for connectors and agents. However, other System Center Operations Manager versions are not supported for data source registration. Only corresponding System Center versions are supported when you register a data source in the Data Warehouse workspace.  
 
-System Center 2016 - Service Manager includes a System Center&nbsp;2016 - Operations Manager agent and it is automatically installed when you deploy Service Manager. After Service Manager Setup completes, you must manually configure the agent to communicate with the Operations Manager management server.  
+System Center 2016 - Service Manager includes a System Center 2016 - Operations Manager agent and it is automatically installed when you deploy Service Manager. After Service Manager Setup completes, you must manually configure the agent to communicate with the Operations Manager management server.  
 
 To validate that the Operations Manager Agent was installed, open **Control Panel** and verify that the Operations Manager Agent is present.
 

@@ -4,8 +4,7 @@ ms.custom: na
 ms.prod: system-center-2016
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-  - service-manager
+ms.technology: service-manager
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: e9a7de24-e680-4a93-9d81-e8d3bf41a7ce
@@ -144,7 +143,7 @@ Hardware configuration for the Service Manager database server:
 
 Hardware configuration for the Service Manager data warehouse database server:  
 
--   8\-core 2.66&nbsp;GHz CPU  
+-   8\-core 2.66 GHz CPU  
 -   8 GB RAM  
 -   4 RAID 1\+0 disk drives for data  
 -   2 RAID 1 disk drives for logs  

@@ -4,8 +4,7 @@ ms.custom: na
 ms.prod: system-center-2016
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-  - service-manager
+ms.technology: service-manager
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 5e89257d-9ec5-411f-b1a4-0b856917ab9d
