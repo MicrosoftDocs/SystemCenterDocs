@@ -5,7 +5,7 @@ ms.topic:  article
 author:  bwren
 ms.prod:  system-center-threshold
 keywords:  
-ms.date:  2016-06-28
+ms.date:  2016-07-31
 title:  Service Management Automation sample runbooks
 ms.technology:  service-management-automation
 ms.assetid:  c3b33c07-efe9-43de-9a31-fad1123dd7f9
@@ -13,7 +13,7 @@ ms.assetid:  c3b33c07-efe9-43de-9a31-fad1123dd7f9
 
 # Service Management Automation sample runbooks
 
->Applies To: Windows Azure Pack for Windows Server, System Center 2012 R2 Orchestrator
+>Applies To: Windows Azure Pack for Windows Server, System Center 2016 Orchestrator
 
 The following runbooks ship with Service Management Automation as sample runbooks to illustrate techniques and best practices. They are available to be used in the Automation extension in Windows Azure Pack for Windows Server.
 
@@ -46,6 +46,3 @@ The following runbooks ship with Service Management Automation as sample runbook
 |Sample-Using-SuspendWorkflow|Demonstrates how to force a runbook to suspend. This could be useful if a manual step is required before a runbook should continue, such as receiving sign-off approval from a specific person. Once the manual step is completed, the suspended runbook would be resumed manually to continue the runbook.|
 |Sample-Using-Variables|Demonstrates the capability of Service Management Automation to use variables.|
 |Sample-Using-VMCloud-Automation|Demonstrates a useful scenario for triggering a runbook at the start of a Service Provider Foundation event.|
-
-
-

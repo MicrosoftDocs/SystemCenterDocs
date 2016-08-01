@@ -13,7 +13,7 @@ ms.assetid:  3586c160-4e4d-4a08-9e30-13cdd49e8a01
 
 # How to install the Service Management Automation runbook worker
 
->Applies To: Windows Azure Pack for Windows Server, System Center 2012 R2 Orchestrator, System Center 2016 Orchestrator
+>Applies To: Windows Azure Pack for Windows Server, System Center 2016 Orchestrator
 
 Service Management Automation enables you to automate IT administration and business processes by using Windows PowerShell based runbooks in Windows Azure Pack for Windows Server.
 

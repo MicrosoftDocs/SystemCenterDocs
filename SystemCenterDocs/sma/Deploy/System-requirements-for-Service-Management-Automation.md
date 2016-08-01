@@ -13,7 +13,7 @@ ms.assetid:  222692ab-765c-44bd-8d50-0c0596d26a94
 
 # System requirements for Service Management Automation
 
->Applies To: Windows Azure Pack for Windows Server, System Center 2012 R2 Orchestrator, System Center 2016 Orchestrator
+>Applies To: Windows Azure Pack for Windows Server, System Center 2016 Orchestrator
 
 This topic describes the minimum hardware and software configurations that are required for a full installation of Service Management Automation.
 

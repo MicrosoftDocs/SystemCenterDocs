@@ -13,7 +13,7 @@ ms.assetid:  9849ebcc-519a-4dd5-86c1-e947121c2a6d
 
 # Install Service Management Automation from a Command Prompt window
 
->Applies To: Windows Azure Pack for Windows Server, System Center 2012 R2 Orchestrator, System Center 2016 Orchestrator
+>Applies To: Windows Azure Pack for Windows Server, System Center 2016 Orchestrator
 
 You can install the features of Service Management Automation by using commands in the Command Prompt window to guide the Windows Installer program for an unattended install.
 

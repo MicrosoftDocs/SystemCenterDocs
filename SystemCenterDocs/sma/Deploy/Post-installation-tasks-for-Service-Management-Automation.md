@@ -13,7 +13,7 @@ ms.assetid:  a12e845d-bdec-43d8-a321-0d5e767a967f
 
 # Post-installation tasks for Service Management Automation
 
->Applies To: Windows Azure Pack for Windows Server, System Center 2012 R2 Orchestrator, System Center 2016 Orchestrator
+>Applies To: Windows Azure Pack for Windows Server, System Center 2016 Orchestrator
 
 After you install Service Management Automation, perform the following best practices.
 

@@ -13,7 +13,7 @@ ms.assetid:  aaa97a7e-362c-45ff-940d-7fb503703744
 
 # How to install the Service Management Automation PowerShell module
 
->Applies To: Windows Azure Pack for Windows Server, System Center 2012 R2 Orchestrator, System Center 2016 Orchestrator
+>Applies To: Windows Azure Pack for Windows Server, System Center 2016 Orchestrator
 
 Service Management Automation enables you to automate IT administration and business processes by using Windows PowerShell based runbooks in Windows Azure Pack for Windows Server.
 

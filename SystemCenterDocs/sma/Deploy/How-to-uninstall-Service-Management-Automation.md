@@ -13,7 +13,7 @@ ms.assetid:  adf42c66-20e4-450c-abfd-71bb0ff816da
 
 # How to uninstall Service Management Automation
 
->Applies To: Windows Azure Pack for Windows Server, System Center 2012 R2 Orchestrator, System Center 2016 Orchestrator
+>Applies To: Windows Azure Pack for Windows Server, System Center 2016 Orchestrator
 
 You can use the following procedures to uninstall a Service Management Automation web console, runbook worker, or PowerShell module. Before uninstalling an Automation runbook worker, ensure that you have stopped the Runbook Worker service (rbsvc) on the computer where the runbook worker is installed. For instructions on how to avoid any data loss when removing a runbook worker, including Windows PowerShell cmdlets and scripting help for this operation, see the [overview of runbook worker deployments](http://go.microsoft.com/fwlink/?LinkId=301478).
 

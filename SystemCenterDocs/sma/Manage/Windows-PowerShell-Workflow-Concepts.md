@@ -5,7 +5,7 @@ ms.topic:  article
 author:  bwren
 ms.prod:  system-center-threshold
 keywords:  
-ms.date:  2016-06-28
+ms.date:  2016-07-31
 title:  Windows PowerShell Workflow Concepts
 ms.technology:  service-management-automation
 ms.assetid:  25937b4f-40bc-4765-9322-5b3a0fd1ff8d
@@ -13,7 +13,7 @@ ms.assetid:  25937b4f-40bc-4765-9322-5b3a0fd1ff8d
 
 # Windows PowerShell Workflow Concepts
 
->Applies To: Windows Azure Pack for Windows Server, System Center 2012 R2 Orchestrator
+>Applies To: Windows Azure Pack for Windows Server, System Center 2016 Orchestrator
 
 One [type of runbook](Runbook-Types-in-Service-Management-Automation.md) for Service Management Automation is based on Windows PowerShell Workflows. This section provides a brief overview of critical features of workflows that are common to Automation runbooks. Complete details on workflows are available in [Getting Started with Windows PowerShell Workflow](http://go.microsoft.com/fwlink/?LinkID=324602).
 
@@ -102,7 +102,7 @@ Parallel
   <Activity1>
   <Activity2>
 
-  Sequence 
+  Sequence
   {
    <Activity3>
    <Activity4>
@@ -194,6 +194,3 @@ For further details on using **InlineScript**, see [Running Windows PowerShell C
 ## See Also
 [Runbook Execution in Service Management Automation](../get-started/Runbook-Execution-in-Service-Management-Automation.md)
 [Authoring Automation Runbooks](Authoring-Automation-Runbooks.md)
-
-
-
