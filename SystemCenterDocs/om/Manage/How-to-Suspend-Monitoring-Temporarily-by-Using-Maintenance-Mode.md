@@ -15,7 +15,7 @@ ms.assetid:  e929ecc9-ad1f-46f6-bb93-9e0aa02580b2
 
 # How to Suspend Monitoring Temporarily by Using Maintenance Mode
 
->Applies To: System Center 2016 Technical Preview - Operations Manager
+>Applies To: System Center 2016 - Operations Manager
 
 Maintenance mode in Operations Manager enables you to avoid any alerts or errors that might occur when a monitored object, such as a computer, a SQL database, or distributed application, is taken offline for maintenance. Maintenance mode suspends the following features:
 
@@ -61,9 +61,7 @@ Important Information about configuring and working with the Maintenance Schedul
 >
 >   For more information about setting the SDK action account see [Account Information for Operations Manager](https://technet.microsoft.com/library/hh457003.aspx)
 
-For example, an Exchange mailbox role running on a Windows server will have an Exchange Server service pack applied. This software update maintenance is expected to take 60 minutes to complete. During this time, the Mailbox database running on this server will not be available.
-
-In this case, we can put the Exchange Mailbox role and contained components into Maintenance Mode instead of putting the entire computer into Maintenance Mode. This way we can continue to monitor the other components running on the server, including the Windows operating system, while maintenance is performed specifically to the Exchange Server application.  
+To support the scenario of initiating maintenance mode directly from the agent-managed computer, Operations Manager now supports allowing a server administrator to set the machine in maintenance mode directly from the computer itself, without needing to perform this from the Operations console.  This can be performed with the new PowerShell cmdlet **Start-SCOMAgentMainteannceMode**.  
 
 The following section describes how to work with the different options for the on-demand maintenance mode feature.
 
@@ -122,6 +120,64 @@ The following section describes how to work with the different options for the o
 
     > [!NOTE]
     > Because Operations Manager polls maintenance mode settings only once every 5 minutes, there can be a delay in an object's scheduled removal from maintenance mode.
+
+
+### Enable from Target System
+
+Maintenance mode can be enabled directly from the monitored Windows and UNIX or Linux computer by a server administrator using the PowerShell cmdlet **Start-SCOMAgentMainteannceMode**.  When the administrator from an agent-managed system runs the PowerShell cmdlet, the command creates an entry in the registry which stores arguments for Maintenance Mode, such as duration, reason, comment and information like time of invocation of cmdlet. The comment field contains user information, specifically who has invoked maintenance mode. A rule that targets the agent, runs every 1 minute and 30 seconds to read this registry entry on the agent with a VBScript **ReadMaintenanceModeRegEntry.vbs**, and then marks this entry as invalid so at next invocation it will not pick this entry. The write action, which is part of the rule and targets the management server, takes this record and sets maintenance mode for the agent based on the record read from the registry.  The frequency the rule runs can be overridden to a custom interval.  
+
+**Start-SCOMAgentMaintenanceMode** has the following syntax:
+
+    `Start-SCOMAgentMaintenanceMode -Duration <Double (in minutes)> [-Reason <string>] [-Comments <string>]`
+
+>[!NOTE]The minimum duration value accepted is five (5) minutes.
+
+
+The following reasons are accepted by the cmdlet:  
+
+- PlannedOther
+- UnplannedOther
+- PlannedHardwareMaintenance
+- UnplannedHardwareMaintenance
+- PlannedHardwareInstallation
+- UnplannedHardwareInstallation
+- PlannedOperatingSystemReconfiguration
+- UnplannedOperatingSystemReconfiguration
+- PlannedApplicationMaintenance
+- UnplannedApplicationMaintenance
+- ApplicationInstallation
+- ApplicationUnresponsive
+- ApplicationUnstable
+- SecurityIssue
+- LossOfNetworkConnectivity  
+
+#### Examples:
+
+1. To enable for an interval of five (5) minutes and with a major reason of **Planned** and minor reason **Other** type:
+
+    `Start-SCOMAgentMaintenanceMode -Duration 5 –Reason PlannedOther` 
+
+2. To enable for an interval of ten (10) minutes with no reason, type:
+
+    `Start-SCOMAgentMaintenanceMode -Duration 10`
+
+Perform the following steps to initiate maintenance mode from the target Windows computer.
+
+1. Log onto the computer.
+
+2. On computers running Windows Server 2012 and higher, to run Windows PowerShell as an administrator from the **Start** screen, right-click the **Windows PowerShell** tile, and in the app bar, click **Run as administrator**.  
+
+3. Change directory to the following path **C:\Program Files\Microsoft Monitoring Agent\Agent** by typing `cd C:\Program Files\Microsoft Monitoring Agent\Agent`.
+
+4. Import the module MaintenanceMode.dll by typing `Import-module MaintenanceMode.dll`.   
+
+5. Type **Start-SCOMAgentMaintenanceMode** and use the parameters to configure the maintenance mode request. 
+
+>[!NOTE]  To confirm that Maintenance Mode request is successful you can look in the Operations Manager Event Log for an Event ID 2222 followed by one or more events with Event ID 1215. If Event ID 2222 is present but ID 1215 is missing, this indicates the maintenance mode request was missed. You will need to re-raise the request.  
+
+>In order to re-raise the request you will need to remove the record in the registry for maintenance mode using following command and then re-run the ***Start-SCOMAgentMaintenanceMode** cmdlet:
+>`Set-ItemProperty -Path "HKLM:\software\Microsoft\Microsoft Operations Manager\3.0\MaintenanceMode" -Name record -Value "" `  
+
 
 ## Scheduling Maintenance Mode
 
