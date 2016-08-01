@@ -10,6 +10,7 @@ ms.tgt_pltfrm: na
 ms.topic: get-started-article
 ms.assetid: 5b6096d3-55f0-4bcb-b501-42664e947cb3
 ---
+
 # What's New in Operations Manager
 
 The content in this section describes what's new and changed in System Center 2016 - Operations Manager. 
@@ -52,7 +53,7 @@ In System Center 2016 - Operations Manager, we include a tool which will allow y
 
 In the System Center 2016 – Operations Manager release, we have included support to monitor Nano Server:
 
--  Discover a Nano Server and push Nano-compatible agent to the server from from the console
+-  Discover a Nano Server and push Nano-compatible agent to the server from the console
 
 -  Monitor Internet Information Services (IIS) and Domain Name System (DNS) roles
 

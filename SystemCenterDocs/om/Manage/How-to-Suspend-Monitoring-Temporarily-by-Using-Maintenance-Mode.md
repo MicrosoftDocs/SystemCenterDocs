@@ -13,7 +13,7 @@ ms.assetid:  e929ecc9-ad1f-46f6-bb93-9e0aa02580b2
 
 
 
-# How to Suspend Monitoring Temporarily by Using Maintenance Mode
+# How to suspend monitoring temporarily by using maintenance mode
 
 >Applies To: System Center 2016 - Operations Manager
 
@@ -33,7 +33,7 @@ For example, an Exchange mailbox role running on a Windows server will have an E
 
 In this case, we can put the Exchange Mailbox role and contained components into Maintenance Mode instead of putting the entire computer into Maintenance Mode. This way we can continue to monitor the other components running on the server, including the Windows operating system, while maintenance is performed specifically to the Exchange Server application.
 
-You can either select one or more monitoring objects and place them into maintenance mode on-demand , or you can define schedules aligned with your service or maintenance windows, and automatically place them into maintenance mode in the future according to the schedule you choose.  With the new scheduling feature, you can:
+You can either select one or more monitoring objects and place them into maintenance mode on-demand, or you can define schedules aligned with your service or maintenance windows, and automatically place them into maintenance mode in the future according to the schedule you choose.  With the new scheduling feature, you can:
 
 - Schedule maintenance mode at a future time daily, weekly, or monthly.
 
@@ -61,7 +61,7 @@ Important Information about configuring and working with the Maintenance Schedul
 >
 >   For more information about setting the SDK action account see [Account Information for Operations Manager](https://technet.microsoft.com/library/hh457003.aspx)
 
-To support the scenario of initiating maintenance mode directly from the agent-managed computer, Operations Manager now supports allowing a server administrator to set the machine in maintenance mode directly from the computer itself, without needing to perform this from the Operations console.  This can be performed with the new PowerShell cmdlet **Start-SCOMAgentMainteannceMode**.  
+To support the scenario of initiating maintenance mode directly from the agent-managed computer, Operations Manager now supports allowing a server administrator to set the machine in maintenance mode directly from the computer itself, without needing to perform this from the Operations console.  This can be performed with the new PowerShell cmdlet **Start-SCOMAgentMaintenanceMode**.  
 
 The following section describes how to work with the different options for the on-demand maintenance mode feature.
 
@@ -124,7 +124,7 @@ The following section describes how to work with the different options for the o
 
 ### Enable from Target System
 
-Maintenance mode can be enabled directly from the monitored Windows and UNIX or Linux computer by a server administrator using the PowerShell cmdlet **Start-SCOMAgentMainteannceMode**.  When the administrator from an agent-managed system runs the PowerShell cmdlet, the command creates an entry in the registry which stores arguments for Maintenance Mode, such as duration, reason, comment and information like time of invocation of cmdlet. The comment field contains user information, specifically who has invoked maintenance mode. A rule that targets the agent, runs every 1 minute and 30 seconds to read this registry entry on the agent with a VBScript **ReadMaintenanceModeRegEntry.vbs**, and then marks this entry as invalid so at next invocation it will not pick this entry. The write action, which is part of the rule and targets the management server, takes this record and sets maintenance mode for the agent based on the record read from the registry.  The frequency the rule runs can be overridden to a custom interval.  
+Maintenance mode can be enabled directly from the monitored Windows and UNIX or Linux computer by a server administrator using the PowerShell cmdlet **Start-SCOMAgentMaintenanceMode**.  When the administrator from an agent-managed system runs the PowerShell cmdlet, the command creates an entry in the registry which stores arguments for Maintenance Mode, such as duration, reason, comment and information like time of invocation of cmdlet. The comment field contains user information, specifically who has invoked maintenance mode. A rule that targets the agent, runs every 1 minute and 30 seconds to read this registry entry on the agent with a VBScript **ReadMaintenanceModeRegEntry.vbs**, and then marks this entry as invalid so at next invocation it will not pick this entry. The write action, which is part of the rule and targets the management server, takes this record and sets maintenance mode for the agent based on the record read from the registry.  The frequency the rule runs can be overridden to a custom interval.  
 
 **Start-SCOMAgentMaintenanceMode** has the following syntax:
 
@@ -184,6 +184,7 @@ Perform the following steps to initiate maintenance mode from the target Windows
 The following section describes how to work with the different options available for the maintenance mode scheduling feature.
 
 ### Create Maintenance Schedule
+
 The following procedures describes how to create a maintenance schedule for selected monitored objects for a future date.  
 
 1. Log on to the computer with an account that is a member of the Operations Manager Administrators role.
@@ -192,18 +193,18 @@ The following procedures describes how to create a maintenance schedule for sele
 
 3. In the **Administration** workspace, expand **Device Management**, and then click **Maintenance Schedules**.
 
- 4. From the **Tasks** pane click **Create Maintenance Schedule**.
+4. From the **Tasks** pane click **Create Maintenance Schedule**.
 
- 5. In the **Create Maintenance Schedule** wizard, on the **Object Selection** page, click **Add/Remove objects...** and the **Create Group Wizard - Object Selection** dialog box appears.
+5. In the **Create Maintenance Schedule** wizard, on the **Object Selection** page, click **Add/Remove objects...** and the **Create Group Wizard - Object Selection** dialog box appears.
 
 6. In the **Create Group Wizard - Object Selection** dialog box, perform the following:
    - In the **Search for list**, the default item **Computer** is selected. Alternatively, you can select **Computer Group** or a specific class such as **SQL Server 2012 DB Engine** from the drop-down list.     
    - Optionally, in the **Filter by part of the name** box, type all or part of the object name, and then click **Search**.
   - In the **Available items** box, select the desired objects, click **Add**, and then click **OK**.
 
-6. On the **Object Selection** page,click **Next**.
+7. On the **Object Selection** page,click **Next**.
 
-7. In the **Create Maintenance Schedule** wizard, on the **Schedule** page, you can specify the following for your maintenance schedule:
+8. In the **Create Maintenance Schedule** wizard, on the **Schedule** page, you can specify the following for your maintenance schedule:
 
    - Choose the frequency as to how often you would like it to run.  If you select the option **Once**, the task will only run one time based on the start date and time selected.
    - Under **Duration** select the **Start Time** and for **End Time**, select the **number of minutes** or select and enter the **Specific end time**.  
@@ -211,15 +212,15 @@ The following procedures describes how to create a maintenance schedule for sele
 
      >[!NOTE]
     The minimum value for Number of minutes is 5. The maximum value is 1,051,200 (2 years).   
-8. Click **Next** once you have completed configuring the schedule options.
+9. Click **Next** once you have completed configuring the schedule options.
 
-9. In the **Create Maintenance Schedule** wizard, on the **Details** page, specify the following:
+10. In the **Create Maintenance Schedule** wizard, on the **Details** page, specify the following:
 
    - Create a name for the schedule in the **Schedule Name** box.
    - Select **Planned** if this is a planned event; otherwise, leave it cleared.
    - In the **Category** list, click the appropriate maintenance category.
    - Select **Enable Schedule** if you want to enable the schedule now, or clear it if you plan on enabling the schedule later.
 
-10. Click **Finish** to save your changes.  
+11. Click **Finish** to save your changes.  
 
 The new schedule will appear in the list of maintenance schedules and you can edit, disable, or delete a maintenance schedule from the list.  This can be accomplished by selecting the schedule from the list and choosing the corresponding option from the **Tasks** pane.    
