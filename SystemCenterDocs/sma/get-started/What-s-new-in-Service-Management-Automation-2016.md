@@ -5,7 +5,7 @@ ms.topic:  article
 author:  bwren
 ms.prod:  system-center-threshold
 keywords:  
-ms.date:  2016-06-28
+ms.date:  2016-07-28
 title:  What s new in Service Management Automation 2016
 ms.technology:  service-management-automation
 ms.assetid:  204ba9e4-a03e-4598-9489-15a0f1a2394c
@@ -25,4 +25,3 @@ By default, SMA randomly picks a Runbook worker to service a job when a Runbook 
 
 **Support for PowerShell 5.0**
 Service Management Automation 2016 now supports Windows Management Framework 5.0.
-
