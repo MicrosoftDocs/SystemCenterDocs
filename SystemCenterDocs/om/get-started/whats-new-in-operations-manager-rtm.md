@@ -81,7 +81,7 @@ Operations Manager now uses by default, the new Async Windows Management Infrast
 
 2. Create registry key **UseMIAPI** under **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Microsoft Operations Manager\3.0\Setup**.
 
-If you need to restore the original configuration of WSMAN Sync APIs, you can delete the UseMAPI registry key. 
+If you need to restore the original configuration of WSMAN Sync APIs, you can delete the UseMIAPI registry key. 
 
 ## Schedule Maintenance from Agent-Managed System
 
