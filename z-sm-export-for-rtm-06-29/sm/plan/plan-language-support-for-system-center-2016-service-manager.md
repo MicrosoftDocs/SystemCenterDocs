@@ -4,8 +4,7 @@ ms.custom: na
 ms.prod: system-center-2016
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-  - service-manager
+ms.technology: service-manager
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 19b6c8b8-324b-43b3-afb6-06648a82df50
@@ -17,7 +16,7 @@ It is assumed in this guide that you are installing System Center 2016 - Service
 
  Including English, System Center 2016 - Service Manager supports a total of 21 languages. There are some search-related issues with six languages: Czech, Danish, Finnish, Greek, Polish, and Turkish. For more information about these issues, see the section "Search Issues" in this topic.  
 
- Setting your Windows locale on a computer that hosts a Service Manager console to one of the supported languages results in Service Manager being displayed in that language. In addition to the languages that Service Manager supports, you must also consider the ability to search and sort data in the Service Manager databases. The ability to search and sort data in a specific language is defined by the collation settings in Microsoft SQL&nbsp;Server. For more information about SQL&nbsp;Server collations, see the section "Microsoft SQL&nbsp;Server" in [Supported Configurations for System Center 2016 - Service Manager](../plan/plan-supported-configurations-for-system-center-2016-service-manager.md) in this guide.  
+ Setting your Windows locale on a computer that hosts a Service Manager console to one of the supported languages results in Service Manager being displayed in that language. In addition to the languages that Service Manager supports, you must also consider the ability to search and sort data in the Service Manager databases. The ability to search and sort data in a specific language is defined by the collation settings in Microsoft SQL Server. For more information about SQL Server collations, see the section "Microsoft SQL Server" in [Supported Configurations for System Center 2016 - Service Manager](../plan/plan-supported-configurations-for-system-center-2016-service-manager.md) in this guide.  
 
  The information in the following table represents the approved collations and the locale identifiers that were tested for Service Manager. In the list of collations in this table, "CI" indicates case-insensitive, and "AS" indicates accent-sensitive.  
 
@@ -54,17 +53,17 @@ This section describes search issues, sort issues, and word\-break issues with s
 
 ### Greek, Czech, and Finnish Languages  
 
-For these languages, full\-text search is not supported in SQL&nbsp;Server&nbsp;2008. Therefore, sorting and searching activities in these languages do not function correctly.  
+For these languages, full\-text search is not supported in SQL Server 2008. Therefore, sorting and searching activities in these languages do not function correctly.  
 
 ### Danish, Polish, and Turkish Languages  
 
-Full-text search does not function in SQL&nbsp;Server&nbsp;2008 or SQL&nbsp;Server&nbsp;2008&nbsp;R2 for these languages. You can load a licensed third-party word breaker that enables full-text search to function correctly. If you have Service Manager consoles using the Danish, Polish, or Turkish languages, regardless of the language collation that you have selected for your SQL&nbsp;Server installation, you have to install a third-party word breaker.  
+Full-text search does not function in SQL Server 2008 or SQL Server 2008 R2 for these languages. You can load a licensed third-party word breaker that enables full-text search to function correctly. If you have Service Manager consoles using the Danish, Polish, or Turkish languages, regardless of the language collation that you have selected for your SQL Server installation, you have to install a third-party word breaker.  
 
- For more information, see the following links for the version of SQL&nbsp;Server that you are using:  
+ For more information, see the following links for the version of SQL Server that you are using:  
 
--   [SQL&nbsp;Server&nbsp;2008](http://go.microsoft.com/fwlink/?LinkId=205800)  
+-   [SQL Server 2008](http://go.microsoft.com/fwlink/?LinkId=205800)  
 
--   [SQL&nbsp;Server&nbsp;2008&nbsp;R2](http://go.microsoft.com/fwlink/p/?LinkID=205557)  
+-   [SQL Server 2008 R2](http://go.microsoft.com/fwlink/p/?LinkID=205557)  
 
 ### Turkish Language  
 

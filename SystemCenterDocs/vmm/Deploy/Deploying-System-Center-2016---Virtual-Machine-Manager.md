@@ -35,10 +35,5 @@ The following topics provide information to help you deploy and configure Virtua
 
 Before you begin the deployment of VMM:
 
--   Read the [Release Notes for System Center 2016 TP5](../../get-started/Release-Notes-for-System-Center-Technical-Preview-5.md).
+-   Read the [Release Notes for System Center 2016](../../get-started/Release-Notes-for-System-Center-2016.md).
 -   Review the [System Requirements for System Center 2016 TP5](../../system-requirements/System-Requirements-for-System-Center-Technical-Preview.md) and [Preparing your environment for System Center 2016 - Virtual Machine Manager](Preparing-your-environment-for-System-Center-2016---Virtual-Machine-Manager.md).
-
-
-
-
-
