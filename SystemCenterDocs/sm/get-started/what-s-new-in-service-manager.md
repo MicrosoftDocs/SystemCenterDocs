@@ -17,7 +17,7 @@ ms.assetid:  3eeb3265-88e0-47ed-b761-07f4e0634959
 
 System Center 2016 Technical Preview - Service Manager is updated for System Center 2016 Technical Preview 5.
 
-For details about known issues that could affect you before you install System Center 2016 Technical Preview - Service Manager, read the [Release Notes for System Center 2016](../../get-started/Release-Notes-for-System-Center-2016.md).
+For details about known issues that could affect you before you install System Center 2016 Technical Preview - Service Manager, read the [Release Notes for System Center Technical Preview 5](../../get-started/Release-Notes-for-System-Center-Technical-Preview-5.md).
 
 ## Improvements in technical preview 5
 

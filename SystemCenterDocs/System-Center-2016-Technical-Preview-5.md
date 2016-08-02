@@ -38,7 +38,7 @@ You can download these components from the [TechNet Evaluation Center](http://ww
 
 -   [What's New in System Center Technical Preview](get-started/What-s-New-in-System-Center-Technical-Preview-5.md)
 
--   [Release Notes for System Center 2016 ](get-started/Release-Notes-for-System-Center-2016.md) 
+-   [Release Notes for System Center 2016 Technical Preview 5 ](get-started/Release-Notes-for-System-Center-Technical-Preview-5.md)
 
 -   [Features Removed or Deprecated from System Center 2016 Technical Preview](get-started/Features-Removed-or-Deprecated-from-System-Center-2016-Technical-Preview.md)
 
