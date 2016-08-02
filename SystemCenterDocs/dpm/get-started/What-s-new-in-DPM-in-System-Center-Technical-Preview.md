@@ -16,7 +16,7 @@ ms.assetid:  a5e81bf0-43a6-4099-af2e-dfb0c1aa7ed8
 >Applies To: System Center 2016 Technical Preview - Data Protection Manager
 
 
-Here's what's new in Data Protection Manager (DPM) in System Center Technical Preview 5. Before you begin, check the [Release Notes for System Center 2016](../../get-started/Release-Notes-for-System-Center-2016.md) for last minute issues.
+Here's what's new in Data Protection Manager (DPM) in System Center Technical Preview 5. Before you begin, check the [Release Notes for System Center Technical Preview 5](../../get-started/Release-Notes-for-System-Center-Technical-Preview-5.md) for last minute issues.
 
 ## Protect data sources in mixed-mode clusters
 Windows Server Technical Preview introduced [rolling upgrade support for clusters](https://technet.microsoft.com/en-us/windows-server-docs/storage/what-s-new-in-file-and-storage-services-in-windows-server-2016-technical-preview#a-name-bkmk-dedup5-a-support-for-cluster-rolling-upgrades), which means that in a cluster you can deploy servers running both Windows Server 2012 R2 and Windows Server Technical Preview. DPM can protect data sources in these mixed clusters, and will protect them seamlessly and without interruption during a cluster upgrade. Note that DPM doesn't support backup and recovery of data from Windows Nano Server.
