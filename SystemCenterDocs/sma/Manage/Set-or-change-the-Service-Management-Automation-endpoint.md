@@ -5,7 +5,7 @@ ms.topic:  article
 author:  bwren
 ms.prod:  system-center-threshold
 keywords:  
-ms.date:  2016-06-28
+ms.date:  2016-07-31
 title:  Set or change the Service Management Automation endpoint
 ms.technology:  service-management-automation
 ms.assetid:  58447117-dead-41bc-afc9-15fc82482dca
@@ -26,6 +26,3 @@ The Service Management Automation endpoint requires the following information:
 -   The access password for the user account.
 
 For more detailed guidance to understand, create, test, and publish runbooks, see [Authoring Automation Runbooks](Authoring-Automation-Runbooks.md).
-
-
-

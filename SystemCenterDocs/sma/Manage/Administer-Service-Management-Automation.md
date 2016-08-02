@@ -13,7 +13,7 @@ ms.assetid:  170a1635-d94f-49ab-b1f9-d6f6596f5489
 
 # Administer Service Management Automation
 
->Applies To: System Center Technical Preview
+>Applies To: System Center 2016
 
 Service Management Automation must be administered separately from Windows Azure Pack for Windows Server. These topics describe how to administer Service Management Automation.
 
@@ -34,6 +34,3 @@ Service Management Automation must be administered separately from Windows Azure
 -   [Automation Runbooks](Automation-Runbooks.md)
 
     Describes the default runbooks that ship with Service Management Automation and how to add additional runbooks.
-
-
-
