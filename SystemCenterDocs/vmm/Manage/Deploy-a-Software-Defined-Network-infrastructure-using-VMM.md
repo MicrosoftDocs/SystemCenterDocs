@@ -18,7 +18,9 @@ ms.service:  virtual-network
 
 System Center Virtual Machine Manager (VMM) can be used to deploy a Software Defined Network (SDN) infrastructure. The SDN infrastructure includes a network controller, a software load balancer, and a RAS gateway.
 
-Use the following guides to deploy each one of these technologies in your SDN infrastructure:
+If you do not already have VMM deployed on your network, you will need to deploy it first. For more information, see [Deploying System Center 2016 - Virtual Machine Manager](..\Deploy\Deploying-System-Center-2016---Virtual-Machine-Manager.md).
+
+Use the following guides to deploy your SDN infrastructure:
 
 * [Deploy a Network Controller using VMM](Deploy-a-Network-Controller-using-VMM.md)
 * [Deploy a Software Load Balancer using VMM](Deploy-a-Software-Load-Balancer-using-VMM.md)

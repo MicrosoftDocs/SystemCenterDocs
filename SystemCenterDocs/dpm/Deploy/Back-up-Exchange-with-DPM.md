@@ -24,7 +24,7 @@ DPM provides backup and recovery for Exchange 2013. You can back up the followin
 ## Prerequisites and limitations
 Before you deploy DPM to protection Exchange 2013 verify the deployment prerequisites:
 
--   Review the [Release Notes for System Center 2016](../../get-started/Release-Notes-for-System-Center-2016.md) and [What's supported and what isn't for DPM?](../get-started/What-s-supported-and-what-isn-t-for-DPM-.md) to check for any Exchange issues.
+-   Review the [Release Notes for System Center Technical Preview 5](../../get-started/Release-Notes-for-System-Center-Technical-Preview-5.md) and [What's supported and what isn't for DPM?](../get-started/What-s-supported-and-what-isn-t-for-DPM-.md) to check for any Exchange issues.
 
 -   Make sure the same versions of Eseutil.exe and Ese.dll are installed on both the Exchange and the DPM server. For example, if you're using the 64-bit version of DPM, you must have the 64-bit version of eseutil.exe and ese.dll.  If you update these files on the Exchange server you'll need to update them on the DPM server too. The .ese and .eseutil files are usually in C:\Program Files\Microsoft\Exchange Server\V15\Bin folder.
 
