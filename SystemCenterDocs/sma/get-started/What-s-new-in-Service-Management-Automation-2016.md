@@ -26,8 +26,8 @@ By default, SMA randomly picks a Runbook worker to service a job when a Runbook 
 **Support for PowerShell 5.0**
 Service Management Automation 2016 now supports Windows Management Framework 5.0.
 
-## What&#39;s new since Technical Preview 5
-### PowerShell ISE Add-on v1.1
+## What's new since Technical Preview 5
+**PowerShell ISE Add-on v1.1**
 - You can now designate runbook worker for runbooks from ISE
 - New columns added for designated runbook and runbook type<br>
 
