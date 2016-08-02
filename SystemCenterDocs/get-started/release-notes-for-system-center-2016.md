@@ -153,6 +153,7 @@ System Center Operations Manager management server is not affected.
 9. Select the option - "Place all certificates in the following store" Browse to Trusted Publishers.
 10. Click Next and then Finish.
 11. Refresh the Browser
+
 ## System Center Technical Preview - Orchestrator and Service Management Automation Release Notes
 ### The following release notes apply to System Center Technical Preview - Orchestrator and Service Management Automation .
 
@@ -194,8 +195,6 @@ If the crash has already occurred, you can restart the wizard and use this worka
 **Description:** This problem occurs when you try to conduct an in-place upgrade of the Service Manager 2012 R2 Self Service portal (for both the Silverlight and HTML versions) to the Self Service portal in Service Manager 2016 TP5, when the Self Service portal and Management Server are installed on the same server.
 
 **Workaround:** See [Upgrade to Service Manager Technical Preview](../sm/deploy/Upgrade-to-Service-Manager-Technical-Preview.md) for information about deploying the Self Service portal.
-
-
 
 ### Manual steps to configure remote SQL Server 2014 Reporting Services
 **Description:** During deployment of the Service Manager data warehouse management server, you can specify the server to which Microsoft SQL Server Reporting Services (SSRS) will be deployed. During setup, the computer that is hosting the data warehouse management server is selected by default. If you specify a different computer to host SSRS, you are prompted to follow a procedure in the Deployment Guide to prepare the server. However, if you use SQL Server 2014, you should instead use the following information to prepare the remote computer to host SSRS.
@@ -409,7 +408,7 @@ If you used the default instance of SQL Server, use Windows Explorer to drag Mic
 ### Adding a cluster the VMM Administrative console may result in an error
 **Description:** When you add a cluster as a resource in the VMM Administrative console you may receive an error stating "There were no computers discovered based on your inputs".
 
-**Workaround:**Select OK, close the error dialog box, and retry adding the cluster.
+**Workaround:** Select OK, close the error dialog box, and retry adding the cluster.
 
 ### Creating a tiered file share in a Storage Spaces Direct configuration will fail
 **Description:** If you attempt to create tiers of storage (one tier for solid state drives and another for hard disk drives) that are managed by VMM using Storage Spaces Direct, you will receive an error.
@@ -447,10 +446,10 @@ netsh advfirewall firewall add rule name="VMM" dir=in action=allow localport=<po
 
 **Workaround:** There is no workaround, do not include these features in your service template.
 
-### Deployment of Service and servicing of a service on Server Core hosts will fail
-**Description:** If you try to deploy a service or service a service on a Server Core host, it will fail.
+### Deployment of Service and servicing of a service on Server Core or Nano Server-based hosts will fail if the host has Guest Integration Services disabled
+**Description:** If you try to deploy a service or service a service on a Server Core/Nano Server host that has Guest Integration Services disabled, it will fail.
 
-**Workaround:** Use a VHD that has Guest Integration Services enabled to workaround the issue.
+**Workaround:** For the host (Server Core/Nano Server), use a VHD that has Guest Integration Services enabled to workaround the issue.
 
 ### VMM throws an error when you start a VM configured for Start Ordering
 **Description:** Windows Server 2016 has a new functionality called VM Start Ordering which can be used to define the order in which dependent VMs will get started. This functionality is not exposed through VMM today. However, if you have configured VM start ordering outside of VMM, VMM does honor the order in which the VMs will start. It however throws the below false positive error which should be ignored *Error (12711)
@@ -466,6 +465,11 @@ Resolve the issue and then try the operation again.*
 **Description:** In a Highly Available (HA) VMM environment, after a VMM upgrade, VMM may incorrectly update the Windows Deployment Services (WDS) registry key, HKLM\SYSTEM\CCS\SERVICES\WDSSERVER\PROVIDER\WDSPXE\PROVIDES\VMMOSDPROVIDER, to 'HOST/VIRT-VMM-1' instead of 'SCVMM/VIRT-VMM-1'. This will lead to failure of bare metal deployment of hosts & clusters.
 
 **Workaround:** Manually change the registry entry for HKLM\SYSTEM\CCS\SERVICES\WDSSERVER\PROVIDER\WDSPXE\PROVIDES\VMMOSDPROVIDER to 'SCVMM/VIRT-VMM-1' and then try bare metal deployment of hosts & clusters.
+
+### Trying to import a Console add-in as a non-administrator to VMM will fail
+**Description:** If you are not an administrator and you try to import a console add-in to VMM, the console will crash. This is because the console add-in is stored at location “C:\Program Files\” which only administrators have access to.
+
+**Workaround:** Store the console add-in at a location where the user has write access, for example “C:\user\<username>\”, and then try importing the add-in.
 
 ### WinRM error blocks setting the static IP on the backend NIC of the SLB MUX VM
 **Description:** If you try to assign a static IP address to one or more of Software Load Balancer MUX Virtual Machines during the SLB deployment, a WinRM error blocks the operation.
