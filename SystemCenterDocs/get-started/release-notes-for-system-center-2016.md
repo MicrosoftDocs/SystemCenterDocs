@@ -490,7 +490,7 @@ Get-SCNATConnection
 ### vNIC connected to Network Controller managed network must be restarted on IP Address change
 **Description:** If there is a change in assigned IP address on any of the vNICs that are connected to a Network Controller managed VM Network, you need to manually restart the associated vNIC(s).
 
-**Workaround:** No workaround
+**Workaround:** No workaround.
 
 ### IPV6 configuration is not supported for Network Controller managed infrastructure
 **Description:** IPV6 configurations are not supported with System Center 2016 TP5 - VMM.
