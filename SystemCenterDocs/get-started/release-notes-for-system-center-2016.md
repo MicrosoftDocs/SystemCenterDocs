@@ -451,6 +451,11 @@ netsh advfirewall firewall add rule name="VMM" dir=in action=allow localport=<po
 
 **Workaround:** For the host (Server Core/Nano Server), use a VHD that has Guest Integration Services enabled to workaround the issue.
 
+### Attempting to join a Nano Server VM to a domain during deploying the VM will fail, the VM gets deployed but does not join the domain
+**Description:** While deploying a Nano Server VM, if you try to join the VM to a domain by specifying the domain join information on the OS Configuration page of the VM deployment Wizard, VMM will deploy the VM but will not join it to the specified domain.
+
+**Workaround:** After the VM is deployed, create an offline domain join blob and run the djoin cmdlet to join the VM to the domain
+
 ### VMM throws an error when you start a VM configured for Start Ordering
 **Description:** Windows Server 2016 has a new functionality called VM Start Ordering which can be used to define the order in which dependent VMs will get started. This functionality is not exposed through VMM today. However, if you have configured VM start ordering outside of VMM, VMM does honor the order in which the VMs will start. It however throws the below false positive error which should be ignored *Error (12711)
 VMM cannot complete the WMI operation on the server <servername> because of an error: [MSCluster_ResourceGroup.Name=<name>] The group or resource is not in the correct state to perform the requested operation.
