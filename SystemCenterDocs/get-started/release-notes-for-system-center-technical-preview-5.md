@@ -367,9 +367,9 @@ If you used the default instance of SQL Server, use Windows Explorer to drag Mic
 
 **Workaround:** Load a licensed non-Microsoft word breaker that enables full-text search to function. For more information, see the following links for the version of SQL Server that you are using:
 
--   [SQL Server 2014](http://msdn.microsoft.com/library/ms142509(v=sql.120)
+-   [SQL Server 2014](http://msdn.microsoft.com/library/ms142509(v=sql.120))
 
--   [SQL Server 2012](http://msdn.microsoft.com/library/ms142509(v=sql.110)
+-   [SQL Server 2012](http://msdn.microsoft.com/library/ms142509(v=sql.110))
 
 -   [SQL Server 2008 R2](http://go.microsoft.com/fwlink/?LinkId=205557)
 
