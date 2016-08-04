@@ -142,7 +142,7 @@ With VMM 2016, you can deploy the entire Software Defined Networking (SDN) stack
 
 You can limit and segregate network traffic by specifying port ACLs on VM networks, Virtual Subnets, network interfaces, or an entire VMM stamp through the Network Controller using VMM PowerShell cmdlets. 
 
-For more information, see [Configure Hyper-V extended port ACLs with System Center VMM 2016 Technical Preview](https://technet.microsoft.com/en-us/library/mt721313%28v=sc.16%29.aspx).
+For more information, see [Configure Hyper-V extended port ACLs with System Center VMM 2016 Technical Preview](https://technet.microsoft.com/library/mt721313%28v=sc.16%29.aspx).
 
 ### **Consistent naming of virtual network adapters**
 When you deploy a virtual machine, you might want to run a post-deployment script on the guest operating system to complete the configuration of the virtual network adapters. For example, you might want to configure the Transit network adapter differently from the HNV PA network adapter. Previously, this was tricky, because there wasn&trade;t a way to easily distinguish different virtual network adapters at the time of deployment. Now, for generation 2 virtual machines deployed on Hyper-V hosts running Windows Server Technical Preview, you can name the virtual network adapter in a virtual machine template. This is similar to using Consistent Device Naming (CDN) for a physical network adapter.
