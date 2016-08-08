@@ -15,9 +15,10 @@ ms.assetid: 5b6096d3-55f0-4bcb-b501-42664e947cb3
 
 The content in this section describes what's new and changed in System Center 2016 - Operations Manager. 
 
-## Send E-mail Notifications Using Office 365
+## Send E-mail notifications with external authentication
 
-Operations Manager now supports using an Office 365 account to send e-mail notifications from Office 365 hosted e-mail.  
+Operations Manager now supports sending notifications from an e-mail server, either within the organization or external and configuring a Run As account to authenticate with that external messaging system.
+
 
 ## Non-Silverlight Web Console
 
