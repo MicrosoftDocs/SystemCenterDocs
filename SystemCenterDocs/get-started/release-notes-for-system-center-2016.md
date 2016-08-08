@@ -154,7 +154,7 @@ System Center Operations Manager management server is not affected.
 10. Click Next and then Finish.
 11. Refresh the Browser
 
-## System Center Technical Preview - Orchestrator and Service Management Automation Release Notes
+## System Center 2016 - Orchestrator and Service Management Automation Release Notes
 ### The following release notes apply to System Center Technical Preview - Orchestrator and Service Management Automation .
 
 ### Sending telemetry data for SMA and SPF to Microsoft can only be turned off via PowerShell
@@ -394,6 +394,11 @@ If you used the default instance of SQL Server, use Windows Explorer to drag Mic
 
 ### Sorting Knowledge Articles by Date Does Not Work
 **Description:** When you try to sort knowledge articles by date, sorting does not work.
+
+**Workaround:** None.
+
+### Do not change Active Directory group expansion selection after upgrade until the connector has run at least one time.
+**Description:** When upgrading from System Center e2012 R2 - Service Manager to System Center 2016 - Service Manager, do not change the AD group expansion selection value in any AD connector (if it is OFF, let it remain OFF, if it is ON , let it remain ON), until the connector has run at least one time after the upgrade.
 
 **Workaround:** None.
 
