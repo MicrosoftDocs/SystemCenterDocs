@@ -154,7 +154,7 @@ System Center Operations Manager management server is not affected.
 10. Click Next and then Finish.
 11. Refresh the Browser
 
-## System Center Technical Preview - Orchestrator and Service Management Automation Release Notes
+## System Center 2016 - Orchestrator and Service Management Automation Release Notes
 ### The following release notes apply to System Center Technical Preview - Orchestrator and Service Management Automation .
 
 ### Sending telemetry data for SMA and SPF to Microsoft can only be turned off via PowerShell
@@ -176,6 +176,11 @@ System Center Operations Manager management server is not affected.
 
 ## System Center 2016 - Service Manager Release Notes
 ### The following release notes apply to System Center 2016 - Service Manager.
+
+### Service Manager might perform slowly with SQL Server 2014 Cardinality Estimation
+**Description:** If your Service Manager database is running on SQL Server 2014 with the cardinality estimator set to the SQL Server 2014 version you may experience slow performance.
+
+**Workaround:** Switch the Cardinality Estimator (CE) for the SQL Server to use the SQL Server 2012 version. See the following article for more information on changing the Cardinality Estimator: [New functionality in SQL Server 2014 - Part 2 - New Cardinality Estimation](https://blogs.msdn.microsoft.com/saponsqlserver/2014/01/16/new-functionality-in-sql-server-2014-part-2-new-cardinality-estimation/).
 
 ### The Create Exchange Connector Wizard Might Crash
 **Description:** When you run the Create Exchange Connector wizard, the wizard crashes when you click **Test Connection**.
@@ -392,10 +397,10 @@ If you used the default instance of SQL Server, use Windows Explorer to drag Mic
 
 **Workaround:** None.
 
-### Service Manager AD group expansion feature of the Active Directory connector works best with SQL Server 2012 Cardinality Estimation
-**Description:**If you use the AD Group expansion capability of the Active Directory Connector, you may experience slow performance if your SQL Server database is SQL Server 2014.
+### Do not change Active Directory group expansion selection after upgrade until the connector has run at least one time.
+**Description:** When upgrading from System Center e2012 R2 - Service Manager to System Center 2016 - Service Manager, do not change the AD group expansion selection value in any AD connector (if it is OFF, let it remain OFF, if it is ON , let it remain ON), until the connector has run at least one time after the upgrade.
 
-**Workaround:** Switch the Cardinality Estimator (CE) for the SQL Server to use the SQL Server 2012 version. See the following article for more information on changing the Cardinality Estimator: [New functionality in SQL Server 2014 - Part 2 - New Cardinality Estimation](http://blogs.msdn.com/b/saponsqlserver/archive/2014/01/16/new-functionality-in-sql-server-2014-part-2-new-cardinality-estimation.aspx).
+**Workaround:** None.
 
 ## System Center 2016 - Virtual Machine Manager Release Notes
 ### The following release notes apply to System Center 2016 - Virtual Machine Manager.
