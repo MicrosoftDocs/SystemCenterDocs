@@ -4,7 +4,7 @@
 ## [Features Removed or Deprecated from System Center 2016 Technical Preview](get-started/Features-Removed-or-Deprecated-from-System-Center-2016-Technical-Preview.md)
 ## [System Requirements for System Center Technical Preview](system-requirements/System-Requirements-for-System-Center-Technical-Preview.md)
 ### [Minimum Hardware Recommendations for System Center Technical Preview](system-requirements/Minimum-Hardware-Recommendations-for-System-Center-Technical-Preview.md)
-### [Operating Systems Compatibility for System Center Technical Preview](system-requirements/Operating-Systems-Compatibility-for-System-Center-Technical-Preview.md)
+### [Operating Systems Compatibility for System Center 2016](system-requirements/Operating-Systems-Compatibility-for-System-Center-2016.md)
 ### [Client Operating System Compatibility for System Center Technical Preview](system-requirements/Client-Operating-System-Compatibility-for-System-Center-Technical-Preview.md)
 ### [SQL Server Version Compatibility for System Center Technical Preview](system-requirements/SQL-Server-Version-Compatibility-for-System-Center-Technical-Preview.md)
 ### [Console Compatibility for System Center Technical Preview](system-requirements/Console-Compatibility-for-System-Center-Technical-Preview.md)
