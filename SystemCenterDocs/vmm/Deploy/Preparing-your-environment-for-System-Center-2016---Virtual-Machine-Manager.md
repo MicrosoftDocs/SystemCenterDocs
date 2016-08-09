@@ -106,11 +106,11 @@ For more information about library servers in VMM, see [Configuring the VMM libr
 Virtual Machine Manager (VMM) supports Microsoft Hyper-V and VMware ESX as virtual machine hosts.
 
 ### Hyper-V hosts
-System Center 2016 Technical Preview - Virtual Machine Manager can manage a variety of Hyper-V hosts. For the complete list of Windows Server Hyper-V hosts see [Operating Systems Compatibility for System Center Technical Preview](../../system-requirements/Operating-Systems-Compatibility-for-System-Center-Technical-Preview.md).
+System Center 2016 Technical Preview - Virtual Machine Manager can manage a variety of Hyper-V hosts. For the complete list of Windows Server Hyper-V hosts see [Operating Systems Compatibility for System Center 2016](../../system-requirements/Operating-Systems-Compatibility-for-System-Center-2016.md).
 
 > [!NOTE]
 > The following list describes some features that require hosts that run Windows Server Technical Preview:
-> 
+>
 > -   If you want to use the new networking features in Windows Server Technical Preview and System Center 2016 Technical Preview, the hosts must run Windows Server Technical Preview (another choice for the hosts is Microsoft Hyper-V Server Technical Preview).
 > -   If you want to use the new storage features in Windows Server Technical Preview and System Center 2016 Technical Preview, the hosts and any file servers (such as Scale-Out File Server clusters) must run Windows Server Technical Preview (another choice for the hosts is Microsoft Hyper-V Server Technical Preview).
 
@@ -197,6 +197,3 @@ Requirements:
 -   The version of the Operations Manager agent should be supported by the respective version of Operations Manager.
 
 For more information, see [Configuring Operations Manager Integration with VMM](https://technet.microsoft.com/library/hh427287.aspx).
-
-
-
