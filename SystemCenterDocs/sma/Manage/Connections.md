@@ -5,7 +5,7 @@ ms.topic:  article
 author:  bwren
 ms.prod:  system-center-threshold
 keywords:  
-ms.date:  2016-06-28
+ms.date:  2016-07-31
 title:  Connections
 ms.technology:  service-management-automation
 ms.assetid:  d82d70df-2de2-4d1f-9e9d-a033af8e6b05
@@ -13,7 +13,7 @@ ms.assetid:  d82d70df-2de2-4d1f-9e9d-a033af8e6b05
 
 # Connections
 
->Applies To: Windows Azure Pack for Windows Server, System Center 2012 R2 Orchestrator
+>Applies To: Windows Azure Pack for Windows Server, System Center 2016 Orchestrator
 
 An Automation Connection contains the information required to connect to a service or application from a runbook.  This information is defined in the module for the application and typically includes such information as the username and password and the computer to connect to.  Other information may also be required such as a certificate or a subscription Id.  The properties for a connection are stored securely in the Automation database and can be accessed in the runbook with the **Get-AutomationConnection** activity.
 
@@ -67,7 +67,7 @@ For more information about hash tables, see [about_Hash_Tables](http://go.micros
 $webServer = 'https://MyWebServer'
 $port = 9090
 $connectionName = 'MyConnection'
-$fieldValues = @{"Username"="MyUser";"Password"="password";"ComputerName"="MyComputer"} 
+$fieldValues = @{"Username"="MyUser";"Password"="password";"ComputerName"="MyComputer"}
 New-SmaConnection "WebServiceEndpoint $webServer "port $port "Name $connectionName "ConnectionTypeName "VirtualMachineManager" "ConnectionFieldValues $fieldValues
 ```
 
@@ -91,6 +91,3 @@ InlineScript {
 [Service Management Automation](../Service-Management-Automation.md)
 [Authoring Automation Runbooks](Authoring-Automation-Runbooks.md)
 [Global Assets](Global-Assets.md)
-
-
-

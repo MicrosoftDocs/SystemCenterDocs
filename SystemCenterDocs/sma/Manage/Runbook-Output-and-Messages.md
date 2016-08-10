@@ -5,7 +5,7 @@ ms.topic:  article
 author:  bwren
 ms.prod:  system-center-threshold
 keywords:  
-ms.date:  2016-06-28
+ms.date:  2016-07-31
 title:  Runbook Output and Messages
 ms.technology:  service-management-automation
 ms.assetid:  db18c324-ee25-4b6f-a7e6-2ea019a623d6
@@ -13,7 +13,7 @@ ms.assetid:  db18c324-ee25-4b6f-a7e6-2ea019a623d6
 
 # Runbook Output and Messages
 
->Applies To: Windows Azure Pack for Windows Server, System Center 2012 R2 Orchestrator
+>Applies To: Windows Azure Pack for Windows Server, System Center 2016 Orchestrator
 
 Most Automation runbooks will have some form of output such as an error message to the user or a complex object intended to be consumed by another workflow. Windows PowerShell provides [multiple streams](http://aka.ms/runbookauthor/streams) to send output from a workflow. Service Management Automation works with each of these streams differently, and you should follow best practices for how to use each when you are creating a runbook.
 
@@ -171,7 +171,7 @@ $doLoop = $true
 While ($doLoop) {
    $job = Get-SmaJob "WebServiceEndpoint $webServer "Port $port -Id $job.Id
    $status = $job.Status
-   $doLoop = (($status -ne "Completed") -and ($status -ne "Failed") -and ($status -ne "Suspended") -and ($status -ne "Stopped") 
+   $doLoop = (($status -ne "Completed") -and ($status -ne "Failed") -and ($status -ne "Suspended") -and ($status -ne "Stopped")
 }
 
 Get-SmaJobOutput "WebServiceEndpoint $webServer "Port $port -Id $job.Id "Stream Output
@@ -180,6 +180,3 @@ Get-SmaJobOutput "WebServiceEndpoint $webServer "Port $port -Id $job.Id "Stream 
 ## See Also
 [Automation Runbooks](Automation-Runbooks.md)
 [Authoring Automation Runbooks](Authoring-Automation-Runbooks.md)
-
-
-

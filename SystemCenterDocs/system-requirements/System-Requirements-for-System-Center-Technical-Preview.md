@@ -23,7 +23,7 @@ The topics below specify minimum and recommended hardware requirements along wit
 
 -   [Minimum Hardware Recommendations for System Center Technical Preview](Minimum-Hardware-Recommendations-for-System-Center-Technical-Preview.md)
 
--   [Operating Systems Compatibility for System Center Technical Preview](Operating-Systems-Compatibility-for-System-Center-Technical-Preview.md)s
+-   [Operating Systems Compatibility for System Center 2016 Preview](Operating-Systems-Compatibility-for-System-Center-2016.md)s
 
 -   [Client Operating System Compatibility for System Center Technical Preview](Client-Operating-System-Compatibility-for-System-Center-Technical-Preview.md)
 
@@ -36,6 +36,3 @@ The topics below specify minimum and recommended hardware requirements along wit
 -   [System Center Agents](System-Center-Agents.md)
 
 -   [.Net Version Support](Dot-Net-Version-Support.md)
-
-
-

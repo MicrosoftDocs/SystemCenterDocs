@@ -6,18 +6,18 @@ author:  cfreemanwa
 ms.prod:  system-center-threshold
 keywords:  
 ms.date:  2016-07-01
-title:  Operating Systems Compatibility for System Center Technical Preview
+title:  Operating Systems Compatibility for System Center 2016
 ms.technology:  system-center-2016
 ms.assetid:  466af3dd-17e5-46b3-b33b-b21a4a65b875
 ---
 
-# Operating Systems Compatibility for System Center Technical Preview
+# Operating Systems Compatibility for System Center 2016
 
 >Applies To: System Center Technical Preview
 
 Use this information to evaluate if your server-side operating system environment is ready to support the installation of or upgrade to System Center 2016 Technical Preview. Use this information whether you are deploying one or multiple components.
 
-|System Center  component|Windows Server 2008|Windows Server 2008 SP2|Windows Server 2008 R2|Windows Server 2008 R2 SP1|Windows Server 2012 Standard, Datacenter|Windows Server 2012 R2 Standard, Datacenter|Windows Server Technical Preview(Server with Desktop Experience)|Windows Server Technical Preview|Windows Server Technical Preview Nano Server|
+|System Center  component|Windows Server 2008|Windows Server 2008 SP2|Windows Server 2008 R2|Windows Server 2008 R2 SP1|Windows Server 2012 Standard, Datacenter|Windows Server 2012 R2 Standard, Datacenter|Windows Server 2016(Server with Desktop Experience)|Windows Server 2016|Windows Server 2016 Nano Server|
 |----------------------------|-----------------------|---------------------------|--------------------------|------------------------------|--------------------------------------------------------------------------------|--------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------|---------------------------------------------------------------------------------------|
 |**DPM** Remote Administration console*|||&#8226;|&#8226;|&#8226;|&#8226;|&#8226;|||
 |**DPM** Server*|||&#8226;|&#8226;|&#8226;|&#8226;|&#8226;|&#8226;||
