@@ -5,7 +5,7 @@ ms.topic:  article
 author:  bwren
 ms.prod:  system-center-threshold
 keywords:  
-ms.date:  2016-07-31
+ms.date:  2016-06-28
 title:  Authoring Automation Runbooks
 ms.technology:  service-management-automation
 ms.assetid:  a8b7e82f-e3fc-4286-8570-8d5ded944b27
@@ -13,9 +13,9 @@ ms.assetid:  a8b7e82f-e3fc-4286-8570-8d5ded944b27
 
 # Authoring Automation Runbooks
 
->Applies To: Windows Azure Pack for Windows Server, System Center 2016 Orchestrator
+>Applies To: Windows Azure Pack for Windows Server, System Center 2012 R2 Orchestrator
 
-Runbooks in Service Management Automation and Microsoft Azure Automation are Windows PowerShell workflows or PowerShell scripts. They provide the ability to automate administrative processes for managing and deploying cloud servers or any other function that a Windows PowerShell script can perform.
+Runbooks in Service Management Automation and Microsoft Azure Automation are Windows PowerShell workflows. They provide the ability to automate administrative processes for managing and deploying cloud servers or any other function that a Windows PowerShell script can perform.
 
 There is no difference in the runbooks between the two systems, and the same runbook can run on either with identical functionality. When the term *Automation* is used in this guide, it refers to both Service Management Automation and Microsoft Azure Automation.
 
@@ -38,7 +38,7 @@ The following topics provide information on creating and working with Automation
 
     Describes the different types of runbooks supported by Service Management Automation.
 
--   [Windows PowerShell Workflow Concepts](Windows-PowerShell-Workflow-Concepts.md)
+-   Windows PowerShell Workflow Concepts
 
     Describes the concepts of Windows PowerShell Workflows as they relate to runbooks.
 
@@ -77,3 +77,6 @@ The following topics provide information on creating and working with Automation
 ## See Also
 [Service Management Automation](../Service-Management-Automation.md)
 [Runbook Operations](Runbook-Operations.md)
+
+
+

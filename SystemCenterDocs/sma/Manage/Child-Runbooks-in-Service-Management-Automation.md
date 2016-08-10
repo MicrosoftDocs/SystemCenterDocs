@@ -5,7 +5,7 @@ ms.topic:  article
 author:  bwren
 ms.prod:  system-center-threshold
 keywords:  
-ms.date:  2016-07-31
+ms.date:  2016-06-28
 title:  Child Runbooks in Service Management Automation
 ms.technology:  service-management-automation
 ms.assetid:  4ccce671-6f5e-405c-a007-05f2e43f7124
@@ -13,7 +13,7 @@ ms.assetid:  4ccce671-6f5e-405c-a007-05f2e43f7124
 
 # Child Runbooks in Service Management Automation
 
->Applies To: Windows Azure Pack for Windows Server, System Center 2016 Orchestrator
+>Applies To: Windows Azure Pack for Windows Server, System Center 2012 R2 Orchestrator
 
 It is a best practice in Service Management Automation to write reusable, modular runbooks with a discrete function that can be used by other runbooks. A parent runbook will often call one or more child runbooks to perform required functionality. There are two ways to call a child runbook, and each has distinct differences that you should understand so that you can determine which will be best for your different scenarios.
 
@@ -30,7 +30,7 @@ The parameters of a child runbook called inline can be any data type including c
 
 A runbook can only use another runbook of the same [type](Runbook-Types-in-Service-Management-Automation.md) as a child runbook using inline execution.  This means that a [PowerShell Workflow runbook](Runbook-Types-in-Service-Management-Automation.md)  cannot use a [PowerShell runbook](Runbook-Types-in-Service-Management-Automation.md) as a child using inline execution, and a PowerShell runbook cannot use a PowerShell Workflow runbook.
 
-When you call a PowerShell Workflow child runbook using inline execution, you just use the name of the runbook.  When you call a PowerShell child runbook, you must preceded its name with *.\\* to specify that the script is located in the local directory.
+When you call a PowerShell Workflow child runbook using inline execution, you just use the name of the runbook.  When you call a PowerShell child runbook, you must preceded its name with *.\\* to specify that the script is located in the local directory. 
 
 ### Example
 
@@ -60,7 +60,7 @@ The following example starts a child runbook with parameters and then waits for 
 $webServer = 'https://MyServer'
 $port = 9090
 $runbookName = "Test-Runbook"
-$params = @{"VMName"="MyVM";"RepeatCount"=2;"Restart"=$true}
+$params = @{"VMName"="MyVM";"RepeatCount"=2;"Restart"=$true} 
 
 $job = Start-SmaRunbook "WebServiceEndpoint $webServer "Port $port "Name $runbookName "Parameters $params
 
@@ -68,7 +68,7 @@ $doLoop = $true
 While ($doLoop) {
    $job = Get-SmaJob "WebServiceEndpoint $webServer "Port $port -Id $job.Id
    $status = $job.Status
-   $doLoop = (($status -ne "Completed") -and ($status -ne "Failed") -and ($status -ne "Suspended") -and ($status -ne "Stopped")
+   $doLoop = (($status -ne "Completed") -and ($status -ne "Failed") -and ($status -ne "Suspended") -and ($status -ne "Stopped") 
 }
 
 Get-SmaJobOutput "WebServiceEndpoint $webServer "Port $port -Id $job.Id "Stream Output
@@ -90,3 +90,6 @@ The following table summarizes the differences between the two methods for calli
 [Authoring Automation Runbooks](Authoring-Automation-Runbooks.md)
 [Automation Runbooks](Automation-Runbooks.md)
 [Runbook types](Runbook-Types-in-Service-Management-Automation.md)
+
+
+

@@ -5,7 +5,7 @@ ms.topic:  article
 author:  bwren
 ms.prod:  system-center-threshold
 keywords:  
-ms.date:  2016-07-31
+ms.date:  2016-06-28
 title:  Credentials
 ms.technology:  service-management-automation
 ms.assetid:  978a72d8-a446-42e5-b2bb-53a838623ee0
@@ -13,7 +13,7 @@ ms.assetid:  978a72d8-a446-42e5-b2bb-53a838623ee0
 
 # Credentials
 
->Applies To: Windows Azure Pack for Windows Server, System Center 2016 Orchestrator
+>Applies To: Windows Azure Pack for Windows Server, System Center 2012 R2 Orchestrator
 
 An Automation Credential is either a username and password that can be used with Windows PowerShell commands or a certificate that is uploaded to the server.  The properties for a credential are stored securely in the Automation database and can be accessed in the runbook with either the **Get-AutomationPSCredential** or **Get-AutomationCertificate** activity.
 
@@ -129,3 +129,6 @@ You retrieve a PowerShell Credential in a runbook with the **Get-AutomationPSCre
 [Service Management Automation](../Service-Management-Automation.md)
 [Authoring Automation Runbooks](Authoring-Automation-Runbooks.md)
 [Global Assets](Global-Assets.md)
+
+
+

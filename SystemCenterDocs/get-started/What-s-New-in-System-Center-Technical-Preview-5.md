@@ -6,18 +6,20 @@ author:  cfreemanwa
 ms.prod:  system-center-threshold
 keywords:  
 ms.date:  2016-07-25
-title:  What s New in System Center 2016
+title:  What s New in System Center Technical Preview 5
 ms.technology:  system-center-2016
 ms.assetid:  4f8701a5-8d55-4ffd-afee-e6341ec6b7f4
 ---
 
-# What&#39;s New in System Center 2016
+# What&#39;s New in System Center Technical Preview 5
 
->Applies To: System Center 2016 Technical Preview
+>Applies To: System Center 2016 Technical Preview 
 
 
-The content in this section describes what's new and changed in System Center 2016. The new features and changes listed here are the ones most likely to have the greatest impact as you work with this release.
+The content in this section describes what's new and changed in System Center 2016 Technical Preview. The new features and changes listed here are the ones most likely to have the greatest impact as you work with this release.
 
+> [!IMPORTANT]
+> You should not use this preview release  in production environments.
 
 ## What's New topics
 [What's new in DPM in System Center Technical Preview](../dpm/get-started/What-s-new-in-DPM-in-System-Center-Technical-Preview.md)
@@ -29,3 +31,4 @@ The content in this section describes what's new and changed in System Center 20
 [What's New in SMA in System Center Technical Preview](../sma/get-started/What-s-new-in-Service-Management-Automation-2016.md)
 
 [What's New in VMM in System Center Technical Preview](../vmm/get-started/What-s-New-in-VMM-in-System-Center-Technical-Preview.md)
+

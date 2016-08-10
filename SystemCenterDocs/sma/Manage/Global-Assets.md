@@ -5,7 +5,7 @@ ms.topic:  article
 author:  bwren
 ms.prod:  system-center-threshold
 keywords:  
-ms.date:  2016-07-31
+ms.date:  2016-06-28
 title:  Global Assets
 ms.technology:  service-management-automation
 ms.assetid:  d3544ae9-8fc7-40ce-843c-51ce7c49df6d
@@ -13,7 +13,7 @@ ms.assetid:  d3544ae9-8fc7-40ce-843c-51ce7c49df6d
 
 # Global Assets
 
->Applies To: Windows Azure Pack for Windows Server, System Center 2016 Orchestrator
+>Applies To: Windows Azure Pack for Windows Server, System Center 2012 R2 Orchestrator
 
 Global Assets are available to all runbooks in an Automation environment.  You create and configure them using either the Automation workspace in the management portal or with the appropriate cmdlets in Windows PowerShell. From a runbook, you can retrieve and set values for global assets with activities in the **RunbookConstructs** module. The Windows PowerShell cmdlets are available to use in runbooks in Service Management Automation, but the activities are recommended as they are more efficient because they do not have to work through the Automation web service.
 
@@ -38,3 +38,6 @@ The following topics provide details on the different global assets, how to crea
 ## See Also
 [Service Management Automation](../Service-Management-Automation.md)
 [Authoring Automation Runbooks](Authoring-Automation-Runbooks.md)
+
+
+
