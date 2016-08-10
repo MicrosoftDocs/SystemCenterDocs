@@ -235,12 +235,8 @@ If the crash has already occurred, you can restart the wizard and use this worka
 
 **Workaround:** See [Upgrade to Service Manager Technical Preview](../sm/deploy/Upgrade-to-Service-Manager-Technical-Preview.md) for information about deploying the Self Service portal.
 
-<<<<<<< HEAD:SystemCenterDocs/get-started/release-notes-for-system-center-2016.md
-### Manual steps to configure remote SQL Server 2014 Reporting Services
-=======
 #### Manual steps to configure remote SQL Server 2014 Reporting Services
 
->>>>>>> e1a4d4dbaffab791e42bdff84a5d437f3c398f49:SystemCenterDocs/get-started/release-notes-for-system-center-technical-preview-5.md
 **Description:** During deployment of the Service Manager data warehouse management server, you can specify the server to which Microsoft SQL Server Reporting Services (SSRS) will be deployed. During setup, the computer that is hosting the data warehouse management server is selected by default. If you specify a different computer to host SSRS, you are prompted to follow a procedure in the Deployment Guide to prepare the server. However, if you use SQL Server 2014, you should instead use the following information to prepare the remote computer to host SSRS.
 
 -   Copy Microsoft.EnterpriseManagement.Reporting.Code.dll from the Service Manager installation media to the computer that is hosting SSRS.
@@ -470,11 +466,8 @@ The following release notes apply to System Center Technical Preview - Virtual M
 **Description:** When you add a cluster as a resource in the VMM Administrative console you may receive an error stating "There were no computers discovered based on your inputs".
 
 **Workaround:** Select OK, close the error dialog box, and retry adding the cluster.
-<<<<<<< HEAD:SystemCenterDocs/get-started/release-notes-for-system-center-2016.md
-=======
 
 #### Creating a tiered file share in a Storage Spaces Direct configuration will fail
->>>>>>> e1a4d4dbaffab791e42bdff84a5d437f3c398f49:SystemCenterDocs/get-started/release-notes-for-system-center-technical-preview-5.md
 
 **Description:** If you attempt to create tiers of storage (one tier for solid state drives and another for hard disk drives) that are managed by VMM using Storage Spaces Direct, you will receive an error.
 
@@ -506,22 +499,10 @@ While the Host Guardian Service URLs were being set on the host, the following e
 
 **Workaround:** Repair and ignore the job.
 
-<<<<<<< HEAD:SystemCenterDocs/get-started/release-notes-for-system-center-2016.md
-### Deployment of Service and servicing of a service on Server Core or Nano Server-based hosts will fail if the host has Guest Integration Services disabled
-**Description:** If you try to deploy a service or service a service on a Server Core/Nano Server host that has Guest Integration Services disabled, it will fail.
-
-**Workaround:** For the host (Server Core/Nano Server), use a VHD that has Guest Integration Services enabled to workaround the issue.
-
-### Attempting to join a Nano Server VM to a domain during deploying the VM will fail, the VM gets deployed but does not join the domain
-**Description:** While deploying a Nano Server VM, if you try to join the VM to a domain by specifying the domain join information on the OS Configuration page of the VM deployment Wizard, VMM will deploy the VM but will not join it to the specified domain.
-
-**Workaround:** After the VM is deployed, create an offline domain join blob and run the djoin cmdlet to join the VM to the domain
-=======
 #### Storing a VM in the VMM Library fails if change the default port for BITS (443) while configuring the VMM Server running on Nano Server.
 
 **Description:** Storing a VM in VMM Library will fail with the error below if you change the default port for BITS 443 while configuring the VMM Server running on a Nano Server installation.
 Error 2940 VMM is unable to complete the requested file transfer. The connection to the HTTP Server \<name> could not be established.
->>>>>>> e1a4d4dbaffab791e42bdff84a5d437f3c398f49:SystemCenterDocs/get-started/release-notes-for-system-center-technical-preview-5.md
 
 **Workaround:** Manually add the new port number to the Windows Firewall exceptions list of the Nano host using the below command:
 netsh advfirewall firewall add rule name="VMM" dir=in action=allow localport=<port no.> protocol=TCP
@@ -534,15 +515,6 @@ netsh advfirewall firewall add rule name="VMM" dir=in action=allow localport=<po
 
 #### WinRM error blocks setting the static IP on the backend NIC of the SLB MUX VM
 
-<<<<<<< HEAD:SystemCenterDocs/get-started/release-notes-for-system-center-2016.md
-### Trying to import a Console add-in as a non-administrator to VMM will fail
-**Description:** If you are not an administrator and you try to import a console add-in to VMM, the console will crash. This is because the console add-in is stored at location “C:\Program Files\” which only administrators have access to.
-
-**Workaround:** Store the console add-in at a location where the user has write access, for example “C:\user\<username>\”, and then try importing the add-in.
-
-### WinRM error blocks setting the static IP on the backend NIC of the SLB MUX VM
-=======
->>>>>>> e1a4d4dbaffab791e42bdff84a5d437f3c398f49:SystemCenterDocs/get-started/release-notes-for-system-center-technical-preview-5.md
 **Description:** If you try to assign a static IP address to one or more of Software Load Balancer MUX Virtual Machines during the SLB deployment, a WinRM error blocks the operation.
 
 **Workaround:** Re-try the operation.
@@ -564,7 +536,7 @@ Get-SCNATConnection
 
 **Description:** If there is a change in assigned IP address on any of the vNICs that are connected to a Network Controller managed VM Network, you need to manually restart the associated vNIC(s).
 
-**Workaround:** No workaround.
+**Workaround:** No workaround
 
 #### IPV6 configuration is not supported for Network Controller managed infrastructure
 
