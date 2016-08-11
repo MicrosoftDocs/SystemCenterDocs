@@ -513,42 +513,44 @@ netsh advfirewall firewall add rule name="VMM" dir=in action=allow localport=<po
 
 **Workaround:** Install Nano Server on bare computers out of band and add it to VMM's management
 
-#### WinRM error blocks setting the static IP on the backend NIC of the SLB MUX VM
-
+### WinRM error blocks setting the static IP on the backend NIC of the SLB MUX VM
 **Description:** If you try to assign a static IP address to one or more of Software Load Balancer MUX Virtual Machines during the SLB deployment, a WinRM error blocks the operation.
 
 **Workaround:** Re-try the operation.
 
-#### Teamed Software Defined Network Switch deployment fails on Nano hosts
 
-**Description:** You can't deploy a teamed switch on Nano hosts using VMM 2016 TP5.
-
-**Workaround:** Deploy an SDN switch on any single physical NIC adaptor of the host.
-
-#### Inconsistent Network Address Translation user interface
-
-**Description:** The existing NAT connections will not be visible when you close the network connectivity wizard and reopen it. Additionally, UI doesn't allow you to choose the IP Address from the pool for creating NAT connection.
-
-**Workaround:** User can still add the NAT connections through UI. To see the existing NAT connections, user can leverage PowerShell cmdlets
-Get-SCNATConnection
-
-#### vNIC connected to Network Controller managed network must be restarted on IP Address change
-
+### vNIC connected to Network Controller managed network must be restarted on IP Address change
 **Description:** If there is a change in assigned IP address on any of the vNICs that are connected to a Network Controller managed VM Network, you need to manually restart the associated vNIC(s).
 
 **Workaround:** No workaround
 
-#### IPV6 configuration is not supported for Network Controller managed infrastructure
-
+### IPV6 configuration is not supported for Network Controller managed infrastructure
 **Description:** IPV6 configurations are not supported with System Center 2016 TP5 - VMM.
 
 **Workaround:** Use IPV4 configuration with VMM 2016 TP5.
 
-#### User needs to disable "Register this connection's address in DNS" option for Frontend and Backend IPs Software Load Balancer MUX VMs
-
+### User needs to disable "Register this connection's address in DNS" option for Frontend IPs Software Load Balancer MUX VMs
 **Description:** For Front End and Back End IPs assigned to Software Load Balancer MUX Virtual Machines you need to uncheck the option for 'Register this connection's address in DNS'. Having this option checked may cause issues with the connectivity over these IP addresses.
 
 **Workaround:** No workaround
+
+### Users Can't migrate Virtual Machines connected to one connected SDN networks.
+**Description:** With VMM 2016 RTM, Users can't migrate Virtual Machines that are connected to one connected SDN networks. This is applicable in the scenarios - for live migration within the cluster and move VM operation across clusters
+**Workaround:** No Workaround.
+
+### Users are unable to delete NAT connection from UI in an NC managed Network.
+**Description:**  ID you enabled NAT connection in an NC managed Network, then disabled the NAT checkbox, you will observe that NAT connections will persist in the UI even after disabling NAT connection.
+**Workaround:** This issue will not appear in the Powershell query.
+
+###  SCVMM identifies a Nano SET switch as Internal
+**Description:** If you configured SET on Nano Servers outside of VMM and then on boarded the Nano set up into VMM< SCVMM will the see the team as 'Internal' even though you initially specified teaming type as 'External'
+**Workaround:** No workaround, the switch, although identified as Internal, continues to provide connectivity as earlier. This is merely a UI bug.
+
+### LACP team non-functional for Logical Switch after Upgrade
+**Description:** During Rolling Upgrades, if you have one or more Logical Switches with LACP team port profile, these switches will fail LACP based negotiations post Upgrade
+**Workaround:** Remove and re-add one or more member NIC adaptors manually to workaround this issue
+
+
 
 #### Creating a template from a Generation 1 virtual machine on a Nano Server-based host will fail
 
