@@ -486,6 +486,8 @@ Set-StoragePool pool1 -WriteCacheSizeDefault 0
 
 **Workaround:**  None
 
+Note: This issue has been fixed in [Cumulative Update 2 for VMM 2016 Technical Preview 5](https://support.microsoft.com/en-us/kb/3160164).
+
 #### Removing the Host Guardian Service from a host will produce an error even though the job succeeds.
 
 **Description:** If you remove the Host Guardian Service by modifying the Host properties for a host managed by VMM, you will receive error (20593)
@@ -499,10 +501,10 @@ While the Host Guardian Service URLs were being set on the host, the following e
 
 **Workaround:** Repair and ignore the job.
 
-#### Storing a VM in the VMM Library fails if change the default port for BITS (443) while configuring the VMM Server running on Nano Server.
+#### Storing a VM in VMM Library fails if you change the default port for BITS(443) while configuring the VMM Server.
 
-**Description:** Storing a VM in VMM Library will fail with the error below if you change the default port for BITS 443 while configuring the VMM Server running on a Nano Server installation.
-Error 2940 VMM is unable to complete the requested file transfer. The connection to the HTTP Server \<name> could not be established.
+**Description:** Storing a VM in VMM Library will fail with the error below if you change the default port for BITS 443 while configuring the VMM Server.
+*Error 2940 VMM is unable to complete the requested file transfer. The connection to the HTTP Server \<name> could not be established.*
 
 **Workaround:** Manually add the new port number to the Windows Firewall exceptions list of the Nano host using the below command:
 netsh advfirewall firewall add rule name="VMM" dir=in action=allow localport=<port no.> protocol=TCP
@@ -512,6 +514,45 @@ netsh advfirewall firewall add rule name="VMM" dir=in action=allow localport=<po
 **Description:** Bare metal deployment of Nano Server-based hosts, compute & storage clusters using VMM will fail.
 
 **Workaround:** Install Nano Server on bare computers out of band and add it to VMM's management
+
+Note: Issues with bare metal deployment of Nano Server-based hosts are fixed in [Cumulative Update 2 for VMM 2016 Technical Preview 5](https://support.microsoft.com/en-us/kb/3160164). Bare metal deployment of clusters though is not supported in CU2 and may fail during Cluster Validation. To workaround the issue, skip cluster validation or create individual nodes using bare metal deployment and then create a cluster out of these nodes.
+
+#### Service deployments from Service templates will fail if you include "Desktop Experience" & other GUI related features in your service template
+
+**Description:** Deploying a Service template that has "Desktop Experience" & other GUI related features included will fail as these options are no longer supported in Windows Server.
+
+**Workaround:** There is no workaround, do not include these features in your service template.
+
+#### Deployment of Service and servicing of a service on Server Core or Nano Server-based hosts will fail if the host has Guest Integration Services disabled
+
+**Description:** If you try to deploy a service or service a service on a Server Core/Nano Server host that has Guest Integration Services disabled, it will fail.
+
+**Workaround:** For the host (Server Core/Nano Server), use a VHD that has Guest Integration Services enabled to workaround the issue.
+
+#### Attempting to join a Nano Server VM to a domain during deploying the VM will fail, the VM gets deployed but does not join the domain
+
+**Description:** While deploying a Nano Server VM, if you try to join the VM to a domain by specifying the domain join information on the OS Configuration page of the VM deployment Wizard, VMM will deploy the VM but will not join it to the specified domain.
+
+**Workaround:** After the VM is deployed, create an offline domain join blob and run the djoin cmdlet to join the VM to the domain.
+
+#### VMM throws an error when you start a VM configured for Start Ordering
+
+**Description:** Windows Server 2016 has a new functionality called VM Start Ordering which can be used to define the order in which dependent VMs will get started. This functionality is not exposed through VMM today. However, if you have configured VM start ordering outside of VMM, VMM does honor the order in which the VMs will start. It however throws the below false positive error which should be ignored *Error (12711) VMM cannot complete the WMI operation on the server because of an error: [MSCluster_ResourceGroup.Name=] The group or resource is not in the correct state to perform the requested operation. The group or resource is not in the correct state to perform the requested operation (0x139F)
+Recommended Action Resolve the issue and then try the operation again.*
+
+**Workaround:** Ignore the error as the VMs will start in the correct order.
+
+#### Bare metal deployment of hosts may fail after VMM in an HAVMM setup is upgraded from VMM 2012 R2 to VMM 2016
+
+**Description:** In a Highly Available (HA) VMM environment, after a VMM upgrade, VMM may incorrectly update the Windows Deployment Services (WDS) registry key, HKLM\SYSTEM\CCS\SERVICES\WDSSERVER\PROVIDER\WDSPXE\PROVIDES\VMMOSDPROVIDER, to 'HOST/VIRT-VMM-1' instead of 'SCVMM/VIRT-VMM-1'. This will lead to failure of bare metal deployment of hosts & clusters.
+
+**Workaround:** Manually change the registry entry for HKLM\SYSTEM\CCS\SERVICES\WDSSERVER\PROVIDER\WDSPXE\PROVIDES\VMMOSDPROVIDER to 'SCVMM/VIRT-VMM-1' and then try bare metal deployment of hosts & clusters.
+
+#### Trying to import a Console add-in as a non-administrator to VMM will fail
+
+**Description:** If you are not an administrator and you try to import a console add-in to VMM, the console will crash. This is because the console add-in is stored at location â€œC:\Program Files\â€ which only administrators have access to.
+
+**Workaround:** Store the console add-in at a location where the user has write access, for example "C:\<username>\<new_folder>", and then try importing the add-in.
 
 #### WinRM error blocks setting the static IP on the backend NIC of the SLB MUX VM
 
