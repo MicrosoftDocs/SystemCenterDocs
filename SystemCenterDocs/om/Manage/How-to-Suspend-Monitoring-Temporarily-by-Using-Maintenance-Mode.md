@@ -1,12 +1,13 @@
 ---
+title:  How to Suspend Monitoring Temporarily by Using Maintenance Mode
 description:  
 manager:  cfreemanwa
+authors: mgoedtel
 ms.topic:  article
-author:  mgoedtel
+ms.author:  magoedte
 ms.prod:  system-center-threshold
 keywords:  
-ms.date:  2016-06-27
-title:  How to Suspend Monitoring Temporarily by Using Maintenance Mode
+ms.date:  2016-08-11
 ms.technology:  operations-manager
 ms.assetid:  e929ecc9-ad1f-46f6-bb93-9e0aa02580b2
 ---
@@ -203,7 +204,7 @@ The following procedures describes how to create a maintenance schedule for sele
    - Optionally, in the **Filter by part of the name** box, type all or part of the object name, and then click **Search**.
   - In the **Available items** box, select the desired objects, click **Add**, and then click **OK**.
 
-7. On the **Object Selection** page,click **Next**.
+7. On the **Object Selection** page, click **Next**.
 
 8. In the **Create Maintenance Schedule** wizard, on the **Schedule** page, you can specify the following for your maintenance schedule:
 

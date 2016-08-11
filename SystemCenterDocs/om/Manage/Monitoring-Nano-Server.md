@@ -1,5 +1,6 @@
 ---
 title: Monitoring Nano Server
+authors: mgoedtel
 ms.custom: na
 ms.prod: system-center-threshold
 ms.reviewer: na
@@ -8,6 +9,8 @@ ms.technology:
   - operations-manager
 ms.tgt_pltfrm: na
 ms.topic: article
+ms.author: magoedte
+ms.date:  2016-08-11
 ms.assetid: 3b1e34e3-7a86-42f3-acc6-363fc00b0e62
 ---
 
@@ -122,11 +125,11 @@ Use the following procedure to install the agent with a PowerShell script.
 
 ##### Uninstall the Operations Manager agent on Nano Server
 
-1.  Open a PowerShell window as an administrator on the Nano Server.
+1.  Open a PowerShell command window as an administrator on the Nano Server.
 
 2.  Change to the \NanoAgent\NanoServer folder.
 
-3.  Run the following command:
+3.  Run the following script:
 
     ```
     .\UnInstallNanoServerScomAgentOnline.ps1 -ManagementServerFQDN <<Management Server Name FQDN>> -ManagementGroupName <<Management Group Name>> -NanoServerFQDN <<Nano Server FQDN from which the agent needs to be uninstalled>> -RemoveFromManagementServer <<set to $true to remove the agent from management server>>
@@ -149,7 +152,7 @@ The Operations Manager agent for Nano Server can be updated by either of the two
 
 2. Download and install updates
  
-    Updates to the monitoring agent for Nano Server are available for download along with the KB articles as an individual software packages. Users can install these downloaded updates on the agent-managed Nano Server using the provided Powershell script. Run the following command:
+    Updates to the monitoring agent for Nano Server are available for download along with the KB articles as an individual software packages. Users can install these downloaded updates on the agent-managed Nano Server using the provided PowerShell script. Run the following command:
 
         .\UpdateNanoServerScomAgentOnline.ps1 -NanoServerFQDN <<Nano Server FQDN on which the agent update needs to be installed>> -BinaryFolder <<Folder path to the update cab already expanded, OR folder path to one\more Nano-agent update cab(s)>> -IsCabExpanded <<$true if Binary folder is to an expanded cab, $false if it is for a packed cab file(s)>> -RemoveBackup <<$true to remove the previous binaries from the agent machine>>
 

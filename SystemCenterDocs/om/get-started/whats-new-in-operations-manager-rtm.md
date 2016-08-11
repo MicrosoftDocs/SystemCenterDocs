@@ -1,5 +1,6 @@
 ---
 title: What's New in Operations Manager
+authors: mgoedtel
 ms.custom: na
 ms.prod: system-center-threshold
 ms.reviewer: na
@@ -7,7 +8,9 @@ ms.suite: na
 ms.technology: 
   - operations-manager
 ms.tgt_pltfrm: na
-ms.topic: get-started-article
+ms.topic: article
+ms.date:  2016-08-11
+ms.author: magoedte
 ms.assetid: 5b6096d3-55f0-4bcb-b501-42664e947cb3
 ---
 

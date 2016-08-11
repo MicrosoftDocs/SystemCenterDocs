@@ -1,5 +1,6 @@
 ---
 title: How to Enable an Email Notification Channel
+authors: mgoedtel
 ms.custom: na
 ms.prod: system-center-threshold
 ms.reviewer: na
@@ -9,7 +10,6 @@ ms.technology:
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: eb68582d-fe83-4d79-9017-55673f7f65b9
-author:mgoedtel
 manager:cfreemanwa
 ---
 
@@ -67,7 +67,7 @@ Before you begin, gather the following information:
   
 Next task: [How to Create and Configure the Notification Action Account](/How-to-Create-and-Configure-the-Notification-Action-Account.md)  
   
-## See Also  
+## Next steps 
 [How to Enable an Instant Message Notification Channel](How-to-Enable-an-Instant-Message-Notification-Channel.md)  
 [How to Enable a Text Message &#40;SMS&#41; Notification Channel](How-to-Enable-a-Text-Message-SMS-Notification-Channel.md)  
 [How to Enable a Command Notification Channel](How-to-Enable-a-Command-Notification-Channel.md)  
