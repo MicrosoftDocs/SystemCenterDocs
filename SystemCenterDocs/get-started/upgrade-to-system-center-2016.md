@@ -27,7 +27,7 @@ You will follow  the same general steps for upgrading to System Center 2016 from
 4. Install the new version of the component with the "Upgrade database" option if appropriate.
 
 > [!IMPORTANT]
-> Make sure you are upgrading to a supported platform by reviewing the [System Requirements topics](./system-requirements/system-requirements-for-system-center-2016.md).
+> Make sure you are upgrading to a supported platform by reviewing the [System Requirements topics](../system-requirements/system-requirements-for-system-center-technical-preview.md).
 
 ## Supported upgrade paths
 Microsoft supports the following upgrade paths.
@@ -156,7 +156,7 @@ Use the following step to upgrade your Self Service portal and Service Manger ma
 
 ## VMM Upgrade Notes
 
-- For all upgrades to VMM 2016 you can either continue with the current version of SQL Server, or, you can upgrade to the supported version of SQL Server. Review [SQL Server Requirements](SQL-server-version-compatibility-for-system-center-technical-preview.md) for the list of supported versions of SQL Server.
+- For all upgrades to VMM 2016 you can either continue with the current version of SQL Server, or, you can upgrade to the supported version of SQL Server. Review [SQL Server Requirements](../system-requirements/SQL-server-version-compatibility-for-system-center-technical-preview.md) for the list of supported versions of SQL Server.
 - You can upgrade both host and guest VMM agents from the VMM console.
 
 ### Upgrading a highly available VMM environment.
