@@ -110,7 +110,7 @@ The following steps outline the process for upgrading a distributed management g
 
     In other words, if it is off, let it remain off and if it is on, let it remain on until the connector runs for the first time. See the screenshot below. This applies only to the first time that the Active Directory connector runs after you upgrade. You can change your preferences for Active Directory group expansion workflow after the first time that the Active Directory connector sync completes.
 
-    ![Active Directory Connector wizard](../../media/sm-adconnector01.png)
+    ![Active Directory Connector wizard](../media/sm-adconnector01.png)
 
 
 
