@@ -1,5 +1,5 @@
 ---
-description: Release Notes for System Center 2016 
+description: Release Notes for System Center 2016
 manager:  cfreemanwa
 ms.topic:  article
 author:  cfreemanwa
@@ -87,9 +87,9 @@ Edit-DPMDiskAllocation -Datasource <Datasource object> -ShadowCopySize <new size
 **The following release notes apply to System Center 2016 - Operations Manager.**
 
 #### Operations Manager Console will stop responding if you attempt to resolve a dependency while  importing a Management Pack
-**Description:**When you click **Import Management Packs** from the Administration section of the Operations Manager console, the console will display the **Resolve** button if the Management Pack is dependent on another Management Pack. If you click  Resolve you will see the **Dependency Warning**. If you click the **Resolve** button in the warning the Operations Manager console will stop responding.
+**Description:** When you click **Import Management Packs** from the Administration section of the Operations Manager console, the console will display the **Resolve** button if the Management Pack is dependent on another Management Pack. If you click  Resolve you will see the **Dependency Warning**. If you click the **Resolve** button in the warning the Operations Manager console will stop responding.
 
-**Workaround:** Install the Update forSystem Center 2016 - Operations Manager. See the Knowledge Base article [3117586](https://support.microsoft.com/en-us/kb/3117586) for specific instructions.
+**Workaround:** Install the Update for System Center 2016 - Operations Manager. See the Knowledge Base article [3117586](https://support.microsoft.com/en-us/kb/3117586) for specific instructions.
 
 #### Client-side monitoring (CSM) alerts might stop flowing from the System Center Operations Manager management server host
 **Description:**The update sequence of System Center Operation Manager management server may cause an issue with the client-side monitoring alerts collection from the management server host. System Center Operations Manager agents are not affected.
@@ -158,12 +158,12 @@ System Center Operations Manager management server is not affected.
 **The following release notes apply to System Center Technical Preview - Orchestrator and Service Management Automation .**
 
 #### Sending telemetry data for SMA and SPF to Microsoft can only be turned off via PowerShell
-**Description:** The default  telemetry data setting is to send data to Microsoft. Since Service Management Automation and Service Provider Foundationdo not provide a user interface, you can only change this setting for Service Management Automation or Service Provider Foundation with a  PowerShell cmdlet.
+**Description:** The default  telemetry data setting is to send data to Microsoft. Since Service Management Automation and Service Provider Foundation do not provide a user interface, you can only change this setting for Service Management Automation or Service Provider Foundation with a  PowerShell cmdlet.
 
 **Work around:** See  [Knowledge Base article 3096505](http://go.microsoft.com/fwlink/?LinkID=708446&clcid=0x409) for detailed instructions on how to stop sending telemetry data to Microsoft for Service Management Automation or Service Provider Foundation.
 
 #### Orchestrator Web Console is not compatible with the Microsoft Edge web browser
-**Description:** You can not open the Orchestrator web console with the Microsoft Edge web browser.
+**Description:** You cannot open the Orchestrator web console with the Microsoft Edge web browser.
 
 **Work around:** Open the Orchestrator web console with Internet Explorer.
 
@@ -283,11 +283,11 @@ If you used the default instance of SQL Server, use Windows Explorer to drag Mic
 5.  Save the changes and close the XML editor.
 
 #### Self-Service Portal is not compatible with the Microsoft Edge web browser
-**Description:** You can not open the Self-Service Portal with the Microsoft Edge web browser.
+**Description:** You cannot open the Self-Service Portal with the Microsoft Edge web browser.
 
 **Workaround:** Use Internet Explorer to open Self-Service Portal.
 
-#### Service Manager console Installed on a VMM Server Causes VMM Connector Failure
+#### Service Manager console installed on a VMM Server causes VMM connector failure
 **Description:** If the Service Manager console is installed on the same server as VMM, then you cannot use that Service Manager console to create a VMM connector to that VMM server.
 
 **Workaround:** None, however you can use a different Service Manager console to create the VMM connector.
