@@ -38,7 +38,7 @@ You can change the format on the **Format** page of the channel type wizard when
   
 4.  Click the button to the right of the box to display the information you can add to the subject or message for notifications, as shown in the following illustration.  
   
-    ![Options for notification messages](../media/NotificationFormatOptions.png)  
+    ![Options for notification messages](../media/om2016-notification-format-options.png)  
   
 5.  Click any item in that list to add the corresponding variable to the notification message. For example, if you click **Alert Severity**, the following variable will be added to the box:  
   
