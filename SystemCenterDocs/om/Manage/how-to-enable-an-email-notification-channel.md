@@ -30,7 +30,8 @@ Before you begin, gather the following information:
        -  Windows Integrated
        -  External Email Authentication  
   
-   > [!NOTE] Operations Manager supports configuration of any external email account to send the notifications through External Email Authentication.  You now have the flexibility in terms of which email account is to be used for sending out the notification emails.  
+   > [!NOTE]
+   > Operations Manager supports configuration of any external email account to send the notifications through External Email Authentication.  You now have the flexibility in terms of which email account is to be used for sending out the notification emails.  
 
 
 -   Return email address. This address is used for all email notifications on this channel and will receive any replies to notifications.  
@@ -39,7 +40,7 @@ Before you begin, gather the following information:
   
 -   Email subject and body text that you want subscribers to receive. For more information, see [How to Customize Message Content for Notifications](How-to-Customize-Message-Content-for-Notifications.md).  
   
-### To enable an email notification channel  
+## To enable an email notification channel  
   
 1.  Log on to the computer with a user account that is a member of the Operations Manager Administrators role.  
   
