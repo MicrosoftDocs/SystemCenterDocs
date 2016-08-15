@@ -298,16 +298,16 @@ System Center Operations Manager management server is not affected.
 If the crash has already occurred, you can restart the wizard and use this workaround.
 
 #### Operations Manager CI Connectors do not Sync Properly
-**Description:** In Service Manager 2016, if you use the Operations Manager CI connector connected to Operations Manager 2016 TP5, then the following issues occur:
+**Description:** In Service Manager 2016, if you use the Operations Manager CI connector connected to Operations Manager 2016, then the following issues occur:
 1.  Newly created OM CI connectors will not sync properly. However, Operations Manager CI connectors created with previous releases continue to work properly.
 2.  Newly created Distributed Applications and Business Services with Operations Manager do not import.
 
 **Workaround:** See [https://www.microsoft.com/download/details.aspx?id=51955](https://www.microsoft.com/download/details.aspx?id=51955) to work around this problem.
 
 #### Service Manager Setup Stops When Upgrading the Self Service Portal on a Management Server
-**Description:** This problem occurs when you try to conduct an in-place upgrade of the Service Manager 2012 R2 Self Service portal (for both the Silverlight and HTML versions) to the Self Service portal in Service Manager 2016 TP5, when the Self Service portal and Management Server are installed on the same server.
+**Description:** This problem occurs when you try to conduct an in-place upgrade of the Service Manager 2012 R2 Self Service portal (for both the Silverlight and HTML versions) to the Self Service portal in Service Manager 2016, when the Self Service portal and Management Server are installed on the same server.
 
-**Workaround:** See [Upgrade to Service Manager Technical Preview](../sm/deploy/Upgrade-to-Service-Manager-Technical-Preview.md) for information about deploying the Self Service portal.
+**Workaround:** See [Upgrade to Service Manager](../sm/deploy/Upgrade-to-Service-Manager-Technical-Preview.md) for information about deploying the Self Service portal.
 
 #### Manual steps to configure remote SQL Server 2014 Reporting Services
 **Description:** During deployment of the Service Manager data warehouse management server, you can specify the server to which Microsoft SQL Server Reporting Services (SSRS) will be deployed. During setup, the computer that is hosting the data warehouse management server is selected by default. If you specify a different computer to host SSRS, you are prompted to follow a procedure in the Deployment Guide to prepare the server. However, if you use SQL Server 2014, you should instead use the following information to prepare the remote computer to host SSRS.
@@ -334,7 +334,7 @@ If you used the default instance of SQL Server, use Windows Explorer to drag Mic
 
 1.  On the computer that will be hosting SSRS, locate the file rssrvpolicy.config in the following folder:
 
-    1.  For SQL Server 20014, locate \Program Files\Microsoft SQL Server\MSRS12.MSSQLSERVER\Reporting Services\ReportServer.
+    - For SQL Server 20014, locate \Program Files\Microsoft SQL Server\MSRS12.MSSQLSERVER\Reporting Services\ReportServer.
 
 2.  Using an XML editor of your choice (such as Notepad), open the rssrvpolicy.config file.
 
@@ -436,9 +436,9 @@ If you used the default instance of SQL Server, use Windows Explorer to drag Mic
 
 **Workaround:** Load a licensed non-Microsoft word breaker that enables full-text search to function. For more information, see the following links for the version of SQL Server that you are using:
 
--   [SQL Server 2014](http://msdn.microsoft.com/library/ms142509(v=sql.120).aspx)
+-   [SQL Server 2014](http://msdn.microsoft.com/library/ms142509%28v=sql.120%29.aspx)
 
--   [SQL Server 2012](http://msdn.microsoft.com/library/ms142509(v=sql.110).aspx)
+-   [SQL Server 2012](http://msdn.microsoft.com/library/ms142509%28v=sql.110%29.aspx)
 
 -   [SQL Server 2008 R2](http://go.microsoft.com/fwlink/?LinkId=205557)
 
@@ -475,7 +475,7 @@ If you used the default instance of SQL Server, use Windows Explorer to drag Mic
 
 3.  Navigate up to the parent LOCAL folder.
 
-4.  Open \Microsoft\System Center Service Manager 2010\<ServerName>\<VersionNumber>, and then delete the contents of the folder.
+4.  Open \Microsoft\System Center Service Manager 2016\ServerName\VersionNumber, and then delete the contents of the folder.
 
 5.  Open the Service Manager console. The wizard text should appear in the language that you selected previously.
 
@@ -506,7 +506,7 @@ If you used the default instance of SQL Server, use Windows Explorer to drag Mic
 **Workaround:** None.
 
 #### Do not change Active Directory group expansion selection after upgrade until the connector has run at least one time.
-**Description:** When upgrading from System Center e2012 R2 - Service Manager to System Center 2016 - Service Manager, do not change the AD group expansion selection value in any AD connector (if it is OFF, let it remain OFF, if it is ON , let it remain ON), until the connector has run at least one time after the upgrade.
+**Description:** When upgrading from System Center 2012 R2 - Service Manager to System Center 2016 - Service Manager, do not change the AD group expansion selection value in any AD connector (if it is OFF, let it remain OFF, if it is ON, let it remain ON), until the connector has run at least one time after the upgrade.
 
 **Workaround:** None.
 
