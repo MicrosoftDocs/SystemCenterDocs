@@ -3,22 +3,23 @@ description:
 manager:  cfreemanwa
 ms.topic:  article
 author:  cfreemanwa
-ms.prod:  system-center-threshold
+ms.prod:  system-center-2016
 keywords:  
 ms.date:  2016-07-01
-title:  Release Notes for System Center RTM
+title:  Release Notes for System Center 2016 RTM
 ms.assetid:  5fad5608-4cb7-48b0-aa31-35ca5cc2d560
 ---
 
-# Release Notes for System Center RTM
+# Release Notes for System Center 2016 RTM
 
 >Applies To: System Center 2016 RTM
 
-### The following set of notes lists known issues and steps to mitigate the issue. These notes only apply to System Center 2016 RTM.
+The following set of notes lists known issues and steps to mitigate the issue. These notes only apply to System Center 2016 RTM.
 
 
-## System Center RTM - Data Protection Manager Release Notes
-### The following release notes apply to System Center RTM - Data Protection Manager.
+## System Center 2016 RTM - Data Protection Manager Release Notes
+
+### The following release notes apply to System Center 2016 RTM - Data Protection Manager.
 
 ### SQL Server Setup error
 
@@ -95,8 +96,8 @@ Edit-DPMDiskAllocation -Datasource <Datasource object> -ShadowCopySize <new size
 ```
 
 
-## System Center RTM - Operations Manager Release Notes
-### The following release notes apply to System Center RTM - Operations Manager.
+## System Center 2016 RTM - Operations Manager Release Notes
+### The following release notes apply to System Center 2016 RTM - Operations Manager.
 
 ### SharePoint integration with Operations Manager has to be recreated
 **Description:** While using SharePoint to view Operations Manager data, the existing Web Console Dashboard URLs provided will not work and these Web parts have to be recreated will the below steps..
@@ -206,21 +207,264 @@ System Center Operations Manager management server is not affected.
 
 **Workaround:** The UNIX and Linux agent installation script creates the symbolic link /etc/opt/Microsoft/scx/conf/sudodir to the folder expected to contain sudo. The agent uses this symbolic link to access sudo. The installation script automatically creates the symbolic link, so no action is needed for standard UNIX and Linux configurations. However if sudo is installed in a non-standard location, you should change the symbolic link to point to the folder where sudo is installed. If you change the symbolic link, its value is maintained for uninstall, re-installation, and upgrade operations with the agent.
 
-## System Center RTM - Orchestrator and Service Management Automation Release Notes
-### The following release notes apply to System Center RTM - Orchestrator and Service Management Automation .
+## System Center 2016 RTM - Orchestrator and Service Management Automation Release Notes
+### The following release notes apply to System Center 2016 RTM - Orchestrator and Service Management Automation .
 
 ### TBD
 **Description:** TBD.
 
 **Work around:** TBD
 
-## System Center RTM - Service Manager Release Notes
-### The following release notes apply to System Center RTM - Service Manager.
+## System Center 2016 RTM - Service Manager Release Notes
 
-### TBD
-**Description:** TBD.
+The following release notes apply to System Center 2016 RTM - Service Manager.
 
-**Workaround:** TBD.
+### Initial Active Directory Connector Sync After Upgrading to System Center 2016 RTM - Service Manager
+
+- When upgrading from Service Manager 2012 R2 to Service Manager 2016, you should not enable or disable the Active Directory group expansion for any of the Active Directory connectors.
+
+    In other words, if it is off, let it remain off and if it is on, let it remain on until the connector runs for the first time. This applies only to the first time that the Active Directory connector runs after you upgrade. You can change your preferences for Active Directory group expansion workflow after the first time that the Active Directory connector sync completes.
+
+### The Create Exchange Connector Wizard Might Crash
+
+**Description:** When you run the Create Exchange Connector wizard, the wizard crashes when you click **Test Connection**.
+
+**Workaround:** To work around this issue, avoid clicking **Test Connection** when you run the wizard. Instead, click **Next**, which internally tests the connection and does not crash the wizard.
+
+If the crash has already occurred, you can restart the wizard and use this workaround.
+
+### Operations Manager CI Connectors do not Sync Properly
+
+**Description:** In Service Manager 2016, if you use the Operations Manager CI connector connected to Operations Manager 2016 TP5, then the following issues occur:
+
+1.  Newly created OM CI connectors will not sync properly. However, Operations Manager CI connectors created with previous releases continue to work properly.
+
+2.  Newly created Distributed Applications and Business Services with Operations Manager do not import.
+
+**Workaround:** See [https://www.microsoft.com/download/details.aspx?id=51955](https://www.microsoft.com/download/details.aspx?id=51955) to work around this problem.
+
+### Service Manager Setup Stops When Upgrading the Self Service Portal on a Management Server
+
+**Description:** This problem occurs when you try to conduct an in-place upgrade of the Service Manager 2012 R2 Self Service portal (for both the Silverlight and HTML versions) to the Self Service portal in Service Manager 2016 TP5, when the Self Service portal and Management Server are installed on the same server.
+
+**Workaround:** See [Upgrade to Service Manager](../sm/deploy/Upgrade-to-Service-Manager-Technical-Preview.md) for information about deploying the Self Service portal.
+
+### Manual steps to configure remote SQL Server 2014 Reporting Services
+
+**Description:** During deployment of the Service Manager data warehouse management server, you can specify the server to which Microsoft SQL Server Reporting Services (SSRS) will be deployed. During setup, the computer that is hosting the data warehouse management server is selected by default. If you specify a different computer to host SSRS, you are prompted to follow a procedure in the Deployment Guide to prepare the server. However, if you use SQL Server 2014, you should instead use the following information to prepare the remote computer to host SSRS.
+
+-   Copy Microsoft.EnterpriseManagement.Reporting.Code.dll from the Service Manager installation media to the computer that is hosting SSRS.
+
+-   Add a code segment to the rssrvpolicy configuration file on the computer that is hosting SSRS.
+
+-   Add an Extension tag to the existing Data segment in the rsreportserver configuration file on the same computer.
+
+If you used the default instance of SQL Server, use Windows Explorer to drag Microsoft.EnterpriseManagement.Reporting.Code.dll (which is located in the Prerequisites folder on your Service Manager installation media) to the folder \Program Files\Microsoft SQL Server\MSRS12.MSSQLSERVER\Reporting Services\ReportServer\Bin on the computer that is hosting SSRS. If you did not use the default instance of SQL Server, the path of the required folder is \Program Files\Microsoft SQL Server\MSRS12.<INSTANCE_NAME>\Reporting Services\ReportServer\Bin. In the following procedure, the default instance name is used.
+
+#### To copy the Microsoft.EnterpriseManagement.Reporting.Code.dll file
+
+1.  On the computer that will host the remote SSRS, open an instance of Windows Explorer.
+
+2.  For SQL Server 2014, locate the folder \Program Files\Microsoft SQL Server\MSRS12.MSSQLSERVER\Reporting Services\ReportServer\Bin.
+
+3.  Start a second instance of Windows Explorer, locate the drive that contains the Service Manager installation media, and then open the Prerequisites folder.
+
+4.  In the Prerequisites folder, click **Microsoft.EnterpriseManagement.Reporting.Code.dll**, and drag it to the folder that you located previously.
+
+#### To add a code segment to the rssrvpolicy.config file
+
+1.  On the computer that will be hosting SSRS, locate the file rssrvpolicy.config in the following folder:
+
+    1.  For SQL Server 20014, locate \Program Files\Microsoft SQL Server\MSRS12.MSSQLSERVER\Reporting Services\ReportServer.
+
+2.  Using an XML editor of your choice (such as Notepad), open the rssrvpolicy.config file.
+
+3.  Scroll through the rssrvpolicy.config file and locate the code segments. The following code shows an example of a segment.
+
+    ```
+       class="UnionCodeGroup"
+       version="1"
+       PermissionSetName="FullTrust">
+       <IMembershipCondition
+          class="UrlMembershipCondition"
+          version="1"
+          Url="$CodeGen$/*"
+       />
+    ```
+
+4.  Add the following segment in its entirety in the same section as the other segments.
+
+    ```
+       class="UnionCodeGroup"
+       version="1"
+       PermissionSetName="FullTrust"
+       Name="Microsoft System Center Service Manager Reporting Code Assembly"
+       Description="Grants the SCSM Reporting Code assembly full trust permission.">
+       <IMembershipCondition
+          class="StrongNameMembershipCondition"   
+          version="1"
+          PublicKeyBlob="0024000004800000940000000602000000240000525341310004000001000100B5FC90E7027F67871E773A8FDE8938C81DD402BA65B9201D60593E96C492651E889CC13F1415EBB53FAC1131AE0BD333C5EE6021672D9718EA31A8AEBD0DA0072F25D87DBA6FC90FFD598ED4DA35E44C398C454307E8E33B8426143DAEC9F596836F97C8F74750E5975C64E2189F45DEF46B2A2B1247ADC3652BF5C308055DA9"
+    />
+    ```
+
+5.  Save the changes and close the XML editor.
+
+#### To add an Extension tag to the Data segment in the rsreportserver.conf file
+
+1.  On the computer hosting SSRS, locate the file rsreportserver.config in the following folder:
+
+    -   For SQL Server 2014, locate \Program Files\Microsoft SQL Server\MSRS12.MSSQLSERVER\Reporting Services\ReportServer.
+
+2.  Using an XML editor of your choice (such as Notepad), open the rsreportserver.config file.
+
+3.  Scroll through the rsreportserver.config file and locate the code segment. There is only one code segment in this file.
+
+4.  Add the following **Extension** tag to the code segment where all the other **Extension** tags are:
+
+    ```
+    <Extension Name="SCDWMultiMartDataProcessor" Type="Microsoft.EnterpriseManagement.Reporting.MultiMartConnection, Microsoft.EnterpriseManagement.Reporting.Code" />
+    ```
+
+5.  Save the changes and close the XML editor.
+
+### Self-Service Portal is not compatible with the Microsoft Edge web browser
+
+**Description:** You cannot open the Self-Service Portal with the Microsoft Edge web browser.
+
+**Workaround:** Use Internet Explorer to open Self-Service Portal.
+
+### Service Manager console installed on a VMM Server causes VMM connector failure
+
+**Description:** If the Service Manager console is installed on the same server as VMM, then you cannot use that Service Manager console to create a VMM connector to that VMM server.
+
+**Workaround:** None, however you can use a different Service Manager console to create the VMM connector.
+
+
+### Data Warehouse Setup Might Fail if the Database or Log Path Includes a Single Quotation Mark Character
+
+**Description:** During Setup, if you specify a database or log path that includes a single quotation mark character ('), Setup might fail.
+
+**Workaround:** None. The path that you specify cannot include a single quotation mark character.
+
+### Setup Might Fail if the Service Manager Authoring Tool Has Been Installed
+
+**Description:** Setup might fail if you have previously installed any version of the Service Manager Authoring Tool.
+
+**Workaround:** Remove the Service Manager Authoring Tool, and then retry Setup.
+
+### Setup Does Not Install the Report Viewer Language Pack
+
+**Description:** Setup includes a prerequisite checker that checks for and - if necessary, installs - the Microsoft Report Viewer. However, Setup does not install the Report Viewer Language Pack, which makes the Microsoft Report Viewer compatible with Windows operating systems that are configured to use languages other than English.
+
+**Workaround:** If your system is configured to use a language other than English, you should manually install the Report Viewer Language Pack for that language.
+
+### Service Manager Setup Fails if a SQL Server Instance Contains a $ Character
+
+**Description:** If you attempt to install Service Manager using a named Structured Query Language (SQL) instance that contains a dollar sign ($) character, Setup fails.
+
+**Workaround:** Use a SQL instance that does not contain the $ character in its name.
+
+### Orchestrator Connector Account Password Cannot Contain $ Characters
+**Description:** If the Orchestrator connector account password contains a $ character, the sync job completes, however runbooks are not updated in the Service Manager database.
+
+**Workaround:** If your Orchestrator connector account password contains a $ character, change the password to one that does not include the $ character.
+
+### Information Linked from Setup Might Not Display Localized Content
+
+**Description:** Information that is linked from Setup to the Setup log and to technical documentation might not display localized content. Setup logs in Service Manager are available in English only. Technical documentation is available in a variety of localized languages. Where available, localized technical documentation is displayed on TechNet; however, not all languages are available.
+
+**Workaround:** None.
+
+### Full Text Search Does Not Work for Some Turkish Language Characters
+
+**Description:** Full text search in the Self-Service Portal works only if you have a licensed non-Microsoft word breaker installed. However, full text search does not work for some characters of the Turkish language even if you have a licensed non-Microsoft Turkish word breaker installed.
+
+**Workaround:** Load a licensed non-Microsoft word breaker that enables full-text search to function. For more information, see the following links for the version of SQL Server that you are using:
+
+-   [SQL Server 2014](http://msdn.microsoft.com/library/ms142509(v=sql.120))
+
+-   [SQL Server 2012](http://msdn.microsoft.com/library/ms142509(v=sql.110))
+
+-   [SQL Server 2008 R2](http://go.microsoft.com/fwlink/?LinkId=205557)
+
+-   [SQL Server 2008](http://go.microsoft.com/fwlink/?LinkId=205800)
+
+### Unassigned Virtual Machines Appear in Reporting Information
+
+**Description:** All virtual machines appear in Microsoft Online Analytical Processing (OLAP) cube data and the sample Microsoft Excel report, regardless of whether a virtual machine is assigned to a cloud. Reporting information is designed to show unassigned virtual machines as rows without price sheet data.
+
+**Workaround:** None.
+
+### Virtual Machine Component Aggregation Is Misleading
+
+**Description:** The SystemCenterVmmCloudChargebackCube OLAP cube contains aggregated values for virtual machine components. However, values for the components should not be expressed in the cube using any manner other than a daily count.
+
+**Workaround:** None. However, you should ignore any aggregated time values for virtual machine components other than daily values.
+
+### Reassigned Virtual Machine Values Might Be Erroneously Calculated
+
+**Description:** When you remove and then reassign a virtual machine from one cloud object to another, erroneous calculated values might appear for both clouds where the virtual machine was assigned. This condition might occur only for the same date when values for the virtual machine are not removed from the cloud that the virtual machine was initially assigned to. Data for the next day is accurate.
+
+**Workaround:** None.
+
+### Values in Price Sheets Are Effective Starting on the Next Day
+
+**Description:** When you type a value in a price sheet, the value becomes effective on the following day. For example, if you modify a calculated price today, the updated price will not immediately appear in OLAP cube data or the sample chargeback Excel report. Instead, the old price continues to appear in OLAP cube data and the sample chargeback Excel report. This behavior is expected; you can use it to update prices throughout your business day without the prices going into effect until the next business day.
+
+**Workaround:** None.
+
+### After the Display Language Is Changed, the Wizard Text Might Display an Incorrect Language
+
+**Description:** After you change the display language using the **Language** menu in the Service Manager console, wizard text might be displayed in your previously selected language.
+
+**Workaround:** If this problem affects you, do the following:
+
+1.  Close the Service Manager console.
+
+2.  On the **Start** menu, click **Run**, type **%temp%**, and then click **OK**.
+
+3.  Navigate up to the parent LOCAL folder.
+
+4.  Open \Microsoft\System Center Service Manager 2010\<ServerName>\<VersionNumber>, and then delete the contents of the folder.
+
+5.  Open the Service Manager console. The wizard text should appear in the language that you selected previously.
+
+### Errors Might Occur When You Modify or Delete Service Request Template Items
+
+**Description:** When you create a service request using a request offering template and you modify or delete activities that are contained in the template, various errors might occur that prevent you from saving the service request.
+
+**Workaround:** When you create service requests, avoid modifying or deleting activities that are contained in a request offering template. If necessary, you can create a new request offering template with only the activities that are necessary and configured properly for your intended use.
+
+### Double-Byte Characters Might Not Display Correctly if a Knowledge Article Is Created from a TXT File
+
+**Description:** If you create a knowledge article using a TXT file that contains double-byte characters, the characters might not display correctly.
+
+**Workaround:** If this problem affects you, do not use TXT files to create knowledge articles. Instead, use RTF files.
+
+### Configuring the Reporting Server Might Take a Long Time
+
+**Description:** When you install the data warehouse, validation of the default web server URL might take as long as 25 seconds to complete.
+
+**Workaround:** None.
+
+### Double-Byte Characters Are Sent Incorrectly to Search Provider
+
+**Description:** When you perform a knowledge search and you type double-byte characters in the **Search Provider** box, they are not sent correctly to the search website. Instead, erroneous characters are sent.
+
+**Workaround:** None.
+
+### Sorting Knowledge Articles by Date Does Not Work
+
+**Description:** When you try to sort knowledge articles by date, sorting does not work.
+
+**Workaround:** None.
+
+### Service Manager AD group expansion feature of the Active Directory connector works best with SQL Server 2012 Cardinality Estimation
+
+**Description:** If you use the AD Group expansion capability of the Active Directory Connector, you may experience slow performance if your SQL Server database is SQL Server 2014.
+
+**Workaround:** Switch the Cardinality Estimator (CE) for the SQL Server to use the SQL Server 2012 version. See the following article for more information on changing the Cardinality Estimator: [New functionality in SQL Server 2014 - Part 2 - New Cardinality Estimation](http://blogs.msdn.com/b/saponsqlserver/archive/2014/01/16/new-functionality-in-sql-server-2014-part-2-new-cardinality-estimation.aspx).
+
 
 
 ## System Center 2016 - Virtual Machine Manager Release Notes
