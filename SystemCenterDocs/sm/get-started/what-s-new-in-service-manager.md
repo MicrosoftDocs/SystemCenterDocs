@@ -17,7 +17,7 @@ ms.assetid:  3eeb3265-88e0-47ed-b761-07f4e0634959
 
 System Center 2016 - Service Manager is updated for the release to manufacturing (RTM) version.
 
-For details about known issues that could affect you before you install System Center 2016 - Service Manager, read the [Release Notes for System Center ](../../get-started/release-notes-for-system-center-RTM).
+For details about known issues that could affect you before you install System Center 2016 - Service Manager, read the [Release Notes for System Center ](../../get-started/release-notes-for-system-center-rtm.md).
 
 ## Improvements in this release
 
