@@ -44,7 +44,7 @@ When Operations Manager reporting functionality is installed, the management gro
 
 These core components of a management group can exist on a single server, or they can be distributed across multiple servers, as shown in the following image.
 
-![Basic Management Group](../../media/om-basic-management-group.png)
+![Basic Management Group](../media/om2016-simple-mg-config.png)
 
 For information about installing management group features, see [Operations Manager 2012 Deployment Guide](http://go.microsoft.com/fwlink/p/?LinkID=213291).
 
