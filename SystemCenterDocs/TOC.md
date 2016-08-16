@@ -47,7 +47,7 @@
 #### [Manage multiple DPM servers with Central Console](DPM/Manage/Manage-multiple-DPM-servers-with-Central-Console.md)
 ## [Operations Manager](OM/Operations-Manager.md)
 ### [Getting Started](get-started/Getting-Started.md)
-#### [What's New in OM in Technical Preview](om/get-started/whats-new-in-operations-manager-rtm.md)
+#### [What's New in Operations Manager](om/get-started/whats-new-in-operations-manager-rtm.md)
 #### [Operations Manager Key Concepts](om/get-started/Operations-Manager-Key-Concepts.md)
 #### [Walkthrough: Installing Operations Manager on a Single Server](om/get-started/Walkthrough--Installing-Operations-Manager-on-a-Single-Server.md)
 #### [Installing Operations Manager by Using the Command Prompt Window](OM/Deploy/Installing-Operations-Manager-by-Using-the-Command-Prompt-Window.md)
