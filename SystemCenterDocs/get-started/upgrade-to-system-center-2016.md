@@ -165,11 +165,11 @@ The following procedures describe the steps to take if you are upgrading a  VMM 
 
 1.	Backup and retain the VMM database
 2.	Uninstall VMM 2012 R2 from the highly available passive node.
-3.	Upgrade to Windows Server 2016 and to a supported version of SQL Server on the active node
-4.	Failover to the passive node.
-5.	Upgrade to Windows Server 2016 and to a supported version of SQL Server on the passive node
-6.	Upgrade to the Windows 10 version of the ADK
-7.	[Optional] Install the appropriate SQL Command line utilities
-8.	Install System Center 2016 – Virtual Machine Manager
+3.	Upgrade to Windows Server 2016 and to a supported version of SQL Server on the passive node.
+4.	Upgrade to the Windows 10 version of the ADK.
+5.  Install System Center 2016 – Virtual Machine Manager in the highly available environment and when prompted, upgrade the database.
+6.  Failover to the passive node.
+7.  Repeat steps 2 - 5 for the other nodes in your HAVMM environment.
+8.	[Optional] Install the appropriate SQL Command line utilities.
 
 Note: If the VMMM database is hosted on a SQL Server running in the "Always on" mode, and the VMM database is in the availability group, you must remove it from the availability group before upgrading the SQL Server to a later version.
