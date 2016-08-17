@@ -27,8 +27,6 @@ You can deploy DPM for:
 
 -   **Hyper-V backup**: Back up of Hyper-V virtual machines running Windows or Linux. You can back up an entire VM, or run application-aware backups of Microsoft workloads on Hyper-V VMs running Windows.
 
--   **VMware backup:** Back up of VMware virtual machines when DPM is deployed on a VMware VM running Windows.
-
 -   Get a full list in [What can DPM back up?](get-started/What-can-DPM-back-up-.md)
 
 DPM stores back up data as follows:
