@@ -16,9 +16,9 @@ manager:cfreemanwa
 # Deploying Service Provider Foundation (SPF)
 Deploying SPF is a multi-step process. The first step is to plan for the deployment by reading and following the guidance provided in the following topics:
 
--  [Capacity Planning for Service Provider Foundation](..spf/plan/Capacity-Planning-for-Service-Provider-Foundation.md)
--  [Recommended Administrator Capabilities for SPF](..spf/plan/recommended-adminstrator-capabilities-in-service-provider-foundation.md)
--  [Security Planning for SPF](..spf/plan/security-planning-for-service-provider-foundation.md)
+-  [Capacity Planning for Service Provider Foundation](./plan/Capacity-Planning-for-Service-Provider-Foundation.md)
+-  [Recommended Administrator Capabilities for SPF](./plan/recommended-adminstrator-capabilities-in-service-provider-foundation.md)
+-  [Security Planning for SPF](./plan/security-planning-for-service-provider-foundation.md)
 
 After you have your deployment plan in place, make sure your environment has the necessary software SPF depends on setup. The following topics describe how to prepare your environment:
 
@@ -89,17 +89,4 @@ Once you have your environment setup, you are ready to install SPF. Here are the
 
 14. Click **Close** when the message "Setup is complete" appears.
 
-Repeat this procedure for each installation, such as for a web farm.
-
-If you plan to setup SPF from the command-line you can also use the following options.
-
--   [Setup Command-Line Options for Service Provider Foundation](../../spf/Deploy/Setup-Command-Line-Options-for-Service-Provider-Foundation.md)  
-
-
-
-
-## See Also  
-[Architecture Overview of Service Provider Foundation](../spf/Deploy/Architecture-Overview-of-Service-Provider-Foundation.md)  
-[Administering Service Provider Foundation](../spf/Deploy/Administering-Service-Provider-Foundation.md)  
-[Cmdlets in System Center 2012 \- Service Provider Foundation](http://go.microsoft.com/fwlink/p/?LinkId=263677)  
-[Service Provider Foundation Developer's Guide](http://go.microsoft.com/fwlink/p/?LinkID=263700)  
+Repeat this procedure for each installation, such as for a web farm.  
