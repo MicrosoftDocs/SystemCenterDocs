@@ -5,7 +5,7 @@ ms.topic:  article
 author:  bwren
 ms.prod:  system-center-threshold
 keywords:  
-ms.date:  2016-06-28
+ms.date:  2016-08-18
 title:  Runbook Types in Service Management Automation
 ms.technology:  service-management-automation
 ms.assetid:  757a0f53-b84a-404b-85fb-bfe1c065c599
@@ -13,7 +13,7 @@ ms.assetid:  757a0f53-b84a-404b-85fb-bfe1c065c599
 
 # Runbook Types in Service Management Automation
 
->Applies To: 
+>Applies To: System Center 2016
 
 Service Management Automation (SMA) supports two types of runbooks that are  briefly described in the following table.  The sections below provide further information about each type including considerations on when to use each.
 
@@ -50,7 +50,7 @@ PowerShell runbooks are based on Windows PowerShell.  You directly edit the code
 
 ### Advantages
 
-- Implement all complex logic with PowerShell code without the additional complexities of PowerShell Workflow. 
+- Implement all complex logic with PowerShell code without the additional complexities of PowerShell Workflow.
 - Runbook starts faster than PowerShell Workflow runbooks since it doesn't need to be compiled before running.
 
 ### Limitations
@@ -65,7 +65,7 @@ Following are current known issues with PowerShell runbooks.
 
 - PowerShell runbooks cannot cannot retrieve an unencrypted [variable asset](Variables.md) with a null value.
 - PowerShell runbooks cannot retrieve a [variable asset](Variables.md) with *~* in the name.
-- Get-Process in a loop in a PowerShell runbook may crash after about 80 iterations. 
+- Get-Process in a loop in a PowerShell runbook may crash after about 80 iterations.
 - A PowerShell runbook may fail if it attempts to write a very large amount of data to the output stream at once.   You can typically work around this issue by outputting just the information you need when working with large objects.  For example, instead of outputting something like *Get-Process*, you can output just the required fields with *Get-Process | Select ProcessName, CPU*.
 
 ## Considerations
@@ -74,7 +74,3 @@ You should take into account the following additional considerations when determ
 
 - You can't convert runbooks from one type to another.
 - There are limitations using runbooks of different types as a child runbook.  See [Child runbooks in Service Management Automation](Child-Runbooks-in-Service-Management-Automation.md) for more information.
-
-
-
-

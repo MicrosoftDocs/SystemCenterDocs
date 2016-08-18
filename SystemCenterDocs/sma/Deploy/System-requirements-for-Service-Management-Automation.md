@@ -5,7 +5,7 @@ ms.topic:  article
 author:  bwren
 ms.prod:  system-center-threshold
 keywords:  
-ms.date:  2016-06-28
+ms.date:  2016-08-18
 title:  System requirements for Service Management Automation
 ms.technology:  service-management-automation
 ms.assetid:  222692ab-765c-44bd-8d50-0c0596d26a94
@@ -13,7 +13,7 @@ ms.assetid:  222692ab-765c-44bd-8d50-0c0596d26a94
 
 # System requirements for Service Management Automation
 
->Applies To: Windows Azure Pack for Windows Server, System Center 2012 R2 Orchestrator
+>Applies To: Windows Azure Pack for Windows Server, System Center 2016
 
 This topic describes the minimum hardware and software configurations that are required for a full installation of Service Management Automation.
 
@@ -75,6 +75,3 @@ The following certificates are required for each component.
 |Runbook worker|None|
 |Automation web service|A certificate that can be used for Secure Sockets Layer (SSL) encryption over HTTPS. The installation program for Service Management Automation can be used to generate a self-signed certificate.|
 |Windows PowerShell module|None|
-
-
-

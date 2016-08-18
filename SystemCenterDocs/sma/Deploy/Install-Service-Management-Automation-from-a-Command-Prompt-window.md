@@ -5,7 +5,7 @@ ms.topic:  article
 author:  bwren
 ms.prod:  system-center-threshold
 keywords:  
-ms.date:  2016-06-28
+ms.date:  2016-08-18
 title:  Install Service Management Automation from a Command Prompt window
 ms.technology:  service-management-automation
 ms.assetid:  9849ebcc-519a-4dd5-86c1-e947121c2a6d
@@ -13,7 +13,7 @@ ms.assetid:  9849ebcc-519a-4dd5-86c1-e947121c2a6d
 
 # Install Service Management Automation from a Command Prompt window
 
->Applies To: Windows Azure Pack for Windows Server, System Center 2012 R2 Orchestrator
+>Applies To: Windows Azure Pack for Windows Server, System Center 2016
 
 You can install the features of Service Management Automation by using commands in the Command Prompt window to guide the Windows Installer program for an unattended install.
 
@@ -59,7 +59,7 @@ The following variables can be specified at a command prompt to override default
 |IIS web service|SPECIFYCERTIFICATE|"Yes" or "No" (the default value is "No"). A certificate is automatically created if you specify "No." If you select "Yes," also provide CERTIFICATESERIAL.|
 |IIS web service|CERTIFICATESERIAL|Serial number of an existing certificate in concatenated hexadecimal format and with no spaces between digits, for example: "45C324C02318F48D4A9C4FC832B2CDCC"|
 |Event tracing (ETW)|ETWMANIFEST|"Yes" or "No" (the default value is "Yes")|
-|Software Quality Metrics (SQM) for Customer Experience Improvement Program (CEIP) reporting|SENDCEIPREPORTS|"Yes" or "No" (the default value is "No")|
+|**Usage and Diagnostics Data sent to Microsoft**|SENDTELEMETRYREPORTS|"Yes" or "No" (the default value is "Yes")|
 |Automatic Microsoft Update|MSUPDATE|"Yes" (opt-in) or "No" (no change; this is the default value)|
 |Product key|PRODUCTKEY|String|
 
@@ -88,7 +88,7 @@ The following variables can be specified at a command prompt to override default
 |SQL Server database|SQLDATABASE|String (the default database name value is SMA)|
 |File install location|INSTALLFOLDER|String (the default value is C:\Program Files\Microsoft System Center 2012 R2\Service Management Automation)|
 |Event tracing (ETW)|ETWMANIFEST|"Yes" or "No" (the default value is "Yes")|
-|Software Quality Metrics (SQM) for Customer Experience Improvement Program (CEIP) reporting|SENDCEIPREPORTS|"Yes" or "No" (the default value is "No")|
+|**Usage and Diagnostics Data sent to Microsoft**|SENDTELEMETRYREPORTS|"Yes" or "No" (the default value is "Yes")|
 |Automatic Microsoft Update|MSUPDATE|"Yes" (opt-in) or "No" (no change; this is the default value)|
 |Product key|PRODUCTKEY|String|
 
@@ -100,15 +100,12 @@ msiexec.exe /i WorkerInstaller.msi /L*v C:\Andreas\WorkerInstaller.log CREATEDAT
 
 > [!NOTE]
 > If you install additional runbook workers, you must run the Windows PowerShell cmdlet **New-SmaRunbookWorkerDeployment** to properly configure the runbook worker.
-> 
+>
 > 1.  Stop the Runbook server service (RunbookService.exe) on each computer on which a runbook worker is installed.
 > 2.  Run the following Windows PowerShell command:
-> 
+>
 >     **New-SmaRunbookWorkerDeployment -<ComputerName\> "<WebServiceEndpoint\>**
 > 3.  Restart the Runbook server service on each computer on which a runbook worker is installed.
 
 ## See also
 [Deploy Service Management Automation](Deploy-Service-Management-Automation.md)
-
-
-

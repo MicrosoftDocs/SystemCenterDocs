@@ -5,7 +5,7 @@ ms.topic:  article
 author:  bwren
 ms.prod:  system-center-threshold
 keywords:  
-ms.date:  2016-06-28
+ms.date:  2016-08-18
 title:  Publishing a Runbook
 ms.technology:  service-management-automation
 ms.assetid:  e2224465-5050-456e-99ec-d47772d33352

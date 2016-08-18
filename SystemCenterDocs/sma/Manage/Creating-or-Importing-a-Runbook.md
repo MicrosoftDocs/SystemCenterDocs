@@ -5,7 +5,7 @@ ms.topic:  article
 author:  bwren
 ms.prod:  system-center-threshold
 keywords:  
-ms.date:  2016-06-28
+ms.date:  2016-08-18
 title:  Creating or Importing a Runbook
 ms.technology:  service-management-automation
 ms.assetid:  d14db796-a3e5-4b1d-a098-e734ceae2e0e

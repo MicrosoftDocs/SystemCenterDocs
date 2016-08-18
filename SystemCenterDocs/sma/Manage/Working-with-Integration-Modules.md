@@ -5,7 +5,7 @@ ms.topic:  article
 author:  bwren
 ms.prod:  system-center-threshold
 keywords:  
-ms.date:  2016-06-28
+ms.date:  2016-08-18
 title:  Working with Integration Modules
 ms.technology:  service-management-automation
 ms.assetid:  a99b8b42-665a-48eb-ab8e-5ebe8462c50a
@@ -13,7 +13,7 @@ ms.assetid:  a99b8b42-665a-48eb-ab8e-5ebe8462c50a
 
 # Working with Integration Modules
 
->Applies To: 
+>Applies To: System Center 2016
 
 The steps for creating and working with Automation runbooks are different depending on whether you using a management portal or Windows PowerShell. The basic steps for various common operations using both methods are provided in the following sections.
 
@@ -31,7 +31,7 @@ The steps for creating and working with Automation runbooks are different depend
 
 ### To Get a List of Installed Modules in Service Management Automation using Windows PowerShell
 
-The following sample commands retrieve all modules installed in Automation. 
+The following sample commands retrieve all modules installed in Automation.
 
 ```powershell
 $webServer = 'https://MyWebServer'
@@ -100,7 +100,7 @@ $module.Activities
 
 ### To Get a List of Activities in All Modules in Service Management Automation using Windows PowerShell
 
-The following sample commands show how to retrieve the activities in all modules installed in Automation. 
+The following sample commands show how to retrieve the activities in all modules installed in Automation.
 
 ```powershell
 $webServer = 'https://MyWebServer'
@@ -113,5 +113,3 @@ $modules | foreach {$_.Activities} | sort Name,ModuleName | ft Name,ModuleName,D
 [Service Management Automation](../Service-Management-Automation.md)
 [Runbook Operations](Runbook-Operations.md)
 [Building an Integration Module](Building-an-Integration-Module.md)
-
-

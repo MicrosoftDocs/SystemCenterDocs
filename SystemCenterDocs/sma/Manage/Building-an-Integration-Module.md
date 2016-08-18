@@ -5,7 +5,7 @@ ms.topic:  article
 author:  bwren
 ms.prod:  system-center-threshold
 keywords:  
-ms.date:  2016-06-28
+ms.date:  2016-08-18
 title:  Building an Integration Module
 ms.technology:  service-management-automation
 ms.assetid:  4503784f-c267-4c81-a423-659adaa1df5a
@@ -13,7 +13,7 @@ ms.assetid:  4503784f-c267-4c81-a423-659adaa1df5a
 
 # Building an Integration Module
 
->Applies To: Windows Azure Pack for Windows Server, System Center 2012 R2 Orchestrator
+>Applies To: Windows Azure Pack for Windows Server, System Center 2016
 
 An [Integration Module](Windows-PowerShell-Workflow-Concepts.md#GK_Modules) is a package that contains a [Windows PowerShell Module](http://go.microsoft.com/fwlink/?LinkID=325518). For information on writing a Windows PowerShell Module, see [Writing a Windows PowerShell Module](http://go.microsoft.com/fwlink/?LinkID=325523). An Integration Module can contain any of the valid Module Types specified in [Windows PowerShell Modules](http://go.microsoft.com/fwlink/?LinkID=325518). This includes Script Modules (.psm1), Binary Modules (.dll), and Manifest Modules (.psd1).
 
@@ -22,7 +22,7 @@ The Integration Module package is a compressed file with the same name as the mo
 If the module should contain a [Connection](Connections.md) type, it must also contain a file with the name <ModuleName\>-Automation.json that specifies the connection type properties. This is a json file with the following format.
 
 ```powershell
-{ 
+{
    "ConnectionFields": [
    {
       "IsEncrypted":  false,
@@ -56,6 +56,3 @@ If the module should contain a [Connection](Connections.md) type, it must also c
 [Service Management Automation](../Service-Management-Automation.md)
 [Authoring Automation Runbooks](Authoring-Automation-Runbooks.md)
 [Working with Integration Modules](Working-with-Integration-Modules.md)
-
-
-
