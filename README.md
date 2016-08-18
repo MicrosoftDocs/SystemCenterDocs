@@ -4,8 +4,10 @@ You've found the GitHub repository that houses the source for System Center tech
 
 This repository also contains guidance to help you contribute to our technical documentation.  For a list of the articles in the contributors' guide, see [the index]().
 
+> [!NOTE]
+> Where possible, System Center documentation adheres to Azure documentation guidance. Some of the links below lead to Azure content because the guidance is the same.
+
 ## Contribute to System Center documentation
-Where possible, System Center documentation adheres to Azure documentation guidance. Some of the links below lead to Azure content because the guidance is the same.
 
 Thank you for your interest in System Center documentation!
 
