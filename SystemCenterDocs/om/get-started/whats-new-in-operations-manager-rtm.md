@@ -36,7 +36,8 @@ This feature provides the following value:
 - Operations Manager Web console can be accessed from multiple web browsers like Edge, Chrome and Firefox
 - Performant experience 
 
->[!NOTE] Dashboard views are still dependent on Silverlight, which can be accessed through Internet Explorer with Silverlight plug in.  
+> [!NOTE] 
+> Dashboard views are still dependent on Silverlight, which can be accessed through Internet Explorer with Silverlight plug in.  
       
 
 ## Access Schedule Maintenance Mode from Monitoring Pane and maintenance mode from client side
