@@ -9,7 +9,7 @@ ms.technology:
   - operations-manager
 ms.tgt_pltfrm: na
 ms.topic: article
-ms.date:  2016-08-11
+ms.date:  2016-08-18
 ms.author: magoedte
 ms.assetid: 5b6096d3-55f0-4bcb-b501-42664e947cb3
 ---
@@ -18,18 +18,38 @@ ms.assetid: 5b6096d3-55f0-4bcb-b501-42664e947cb3
 
 The content in this section describes what's new and changed in System Center 2016 - Operations Manager. 
 
+## Improve Desktop Console Performance
+
+With the release of System Center 2016 - Operations Manager, we have made performance improvements to state and diagram views in the Operations console to improve load performance  (these improvements are in addition to the alert view optimization's made in Technical Preview 5).
+ 
+
 ## Send E-mail notifications with external authentication
 
 Operations Manager now supports sending notifications from an e-mail server, either within the organization or external and configuring a Run As account to authenticate with that external messaging system.
 
 
-## Non-Silverlight Web Console
+## Non Silverlight Web Console (except Dashboard Views)
 
-We have removed the dependency on Microsoft Silverlight and now deliver an HTML5-based Web console to improve performance, scalability, and compatibility with other popular web browsers. To maintain your investment in custom dashboards built with the widgets, the Operations Manager 2012 R2 Web console will need to co-exist in your management group so that you may continue using those dashboards.       
+With the release of System Center 2016 - Operations Manager, we have removed the Silverlight dependency from all the Web console views except Dashboard views. 
+This feature provides the following value:
+- No more Silverlight prerequisite to access Operations Manager Web console
+- Operations Manager Web console can be accessed from multiple web browsers like Edge, Chrome and Firefox
+- Performant experience 
+
+>[!NOTE] Dashboard views are still dependent on Silverlight, which can be accessed through Internet Explorer with Silverlight plug in.  
+      
+
+## Access Schedule Maintenance Mode from Monitoring Pane and maintenance mode from client side
+
+Schedule Maintenance mode is a feature released in Technical Preview 3 of System Center 2016 - Operations Manager to suspend monitoring of an object during regular software or hardware maintenance activities, such as software updates or hardware replacements. Entities can be put to maintenance in older versions of Operations Manager, but they cannot be put into maintenance mode at a future time. The newly created Maintenance Mode Scheduling wizard gives the ability to choose different types of entities to put into maintenance and to schedule maintenance at a future time. 
+
+With the release of System Center 2016 - Operations Manager, Operators can access the “Maintenance Schedules” feature from the monitoring pane without the dependency on administrators to schedule maintenance at a future time. We now supports allowing a server administrator to set the agent-managed computer in maintenance mode directly from the computer itself, without needing to perform this from the Operations console.  This can be performed with the new PowerShell cmdlet **Start-SCOMAgentMainteannceMode**.  
+
 
 ## Management Pack Updates and Recommendations
 
 We have added a new capability to Operations Manager to assess the management packs.  Operations Manager includes a new feature called Updates and Recommendations, to help you proactively identify new technologies or components (i.e. workloads) deployed in your IT infrastructure that were not monitored by Operations Manager or are not monitored using the latest version of a management pack. For more information about Updates and Recommendations see  [Management Pack Assessment](../manage/Management-Pack-Assessment.md).
+
 
 ## Alert Data Management 
 
@@ -49,9 +69,11 @@ This feature provides the following benefits:
 
 This feature is available for members of the Operations Manager Administrators role from the Tune Management Packs screen in the Operations console.  
 
+
 ## Extensible Network Monitoring
 
 In System Center 2016 - Operations Manager, we include a tool which will allow you to create a custom management pack to monitor generic network devices (non-certified as of Operations Manager 2012 R2) and include resource utilization metrics, such as processor and memory. Or you can create extended monitoring workflows for an existing network device already monitored by your management group. This tool enables customers to generate a management pack for their network devices to get extended network monitoring. In addition to the current extended monitoring support for Network devices (Processor and Memory monitoring), this tool enables customers to add monitoring of additional device components such as fan, temperature sensor, voltage sensor and power supply.  
+
 
 ## Monitoring Nano Server and Workloads
 
@@ -71,9 +93,6 @@ In the System Center 2016 – Operations Manager release, we have included suppo
     
 For specific instructions on how to configure System Center 2016 - Operations Manager to monitor Nano Server, see [Monitoring Nano Server](../manage/Monitoring-Nano-Server.md).
 
-## Console User Interface Performance Improvements
-
-With System Center 2016 – Operations Manager, we have made performance improvements to alert views in the Operations console to increase responsiveness.
 
 ## Scalability Improvement with Unix/Linux Agents Monitoring
 
@@ -87,23 +106,6 @@ Operations Manager now uses by default, the new Async Windows Management Infrast
 
 If you need to restore the original configuration of WSMAN Sync APIs, you can delete the UseMIAPI registry key. 
 
-## Schedule Maintenance from Agent-Managed System
-
-Schedule Maintenance mode in System Center 2016 - Operations Manager allows you to suspend monitoring of an object during regular software or hardware maintenance activities, such as software updates or hardware replacements. 
-
-Entities can be put to maintenance in older versions of Operations Manager, but they cannot be put into maintenance mode at a future time. The newly created Maintenance Mode Scheduling wizard gives the ability to choose different types of entities to put into maintenance and to schedule maintenance at a future time. 
-
-The “Maintenance Schedules” feature offers the following advantages over the “Maintenance Mode” Task.
-
--   Ability to schedule maintenance mode at a future time and through a variety of scheduling options.
-
--   Ability to choose different classes of entities and groups to put to maintenance as a part of a single schedule.
-
--   Ability to view all the maintenance mode schedules from a single screen.
-
--   Ability to schedule multiple jobs for the same monitored entity.
-
-To support the scenario of initiating maintenance mode directly from the agent-managed computer, Operations Manager now supports allowing a server administrator to set the machine in maintenance mode directly from the computer itself, without needing to perform this from the Operations console.  This can be performed with the new PowerShell cmdlet **Start-SCOMAgentMainteannceMode**.  
 
 ## Extend Operations Manager with Operations Management Suite
 
@@ -116,6 +118,7 @@ With Microsoft Operations Management Suite you can extend your management capabi
 -   Capacity Planning
 
 For more information please review the Microsoft Operations Management Suite [Operations Management Suite](https://technet.microsoft.com/library/mt484091.aspx) documentation.
+
 
 ## Partner Program in Administration Pane
 
