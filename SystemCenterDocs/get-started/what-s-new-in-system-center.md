@@ -19,7 +19,7 @@ The content in this section describes what's new and changed in System Center 20
 
 
 ## What's New topics
-[What's new in DPM in System Center Technical Preview](../dpm/get-started/What-s-new-in-DPM-in-System-Center-Technical-Preview.md)
+[What's new in DPM in System Center Technical Preview](../dpm/get-started/What-s-new-in-DPM-in-System-Center-2016.md)
 
 [What's New in OM in Technical Preview](../om/get-started/What-s-New-in-OM-in-Technical-Preview.md)
 
