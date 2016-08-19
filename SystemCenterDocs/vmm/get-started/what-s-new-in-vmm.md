@@ -17,7 +17,7 @@ This topic describes what's new and changed in Virtual Machine Manager (VMM) in 
 
 >Applies to System Center 2016
 
-#### [Compute](#compute)
+#### [Compute](#what-s-new-in-VMM-for-compute)
 
 - Full lifecycle management of newly introduced Nano Server-based hosts and virtual machines (VMs)
 
@@ -31,7 +31,7 @@ This topic describes what's new and changed in Virtual Machine Manager (VMM) in 
 
 - Take application-consistent checkpoints, called production checkpoints, of VMs
 
-#### [Storage](#storage)
+#### [Storage](#what-s-new-in-VMM-for-storage)
 
 - Deploy and manage storage clusters with Storage Spaces Direct (S2D) in dis-aggregated or hyper-converged topology
 
@@ -39,7 +39,7 @@ This topic describes what's new and changed in Virtual Machine Manager (VMM) in 
 
 - Set quality of service (QoS) for VM storage to avoid noisy neighbor problem
 
-#### [Networking](#networking)
+#### [Networking](#what-s-new-in-VMM-for-software-defined-networking)
 
 - Template-based deployment for Software Defined Networking (SDN) components such as the Network Controller, Gateway, and Software Load Balancer
 
@@ -51,14 +51,14 @@ This topic describes what's new and changed in Virtual Machine Manager (VMM) in 
 
 - Reliable and atomic Logical Switch deployment across hosts
 
-#### [Security](#security)
+#### [Security](#what-s-new-in-VMM-for-security)
 
 - Full lifecycle management of newly introduced guarded hosts and shielded VMs
 
 - Convert a non-shielded VM to a shielded VM
 
 
-## Compute
+## What's new in VMM for compute
 
 The following Compute enhancements are available in VMM 2016 Technical Preview:
 
@@ -105,7 +105,7 @@ You can now create production checkpoints for VMs. These checkpoints are based o
 
 Server App-V application in Service Templates is now deprecated in VMM 2016 and you no longer would be able to create a new template or deploy a new service with the Server App-V package. However if you are on VMM 2012 R2 with a service with Server App-V application and are upgrading to VMM 2016, the existing service deployment will continue to work in VMM 2016. This is to ensure that your existing service deployments are not broken post upgrade. Note that post upgrade from VMM 2012 R2 to VMM 2016, you cannot scale out the tier with Server App-V application, however scaling out of other tiers is possible.
 
-## Storage
+## What's new in VMM for storage
 
 The following storage enhancements are available in VMM in System Center 2016 Technical Preview:
 
@@ -133,7 +133,7 @@ When hosts and storage are under heavy load, you might want to ensure that certa
 
 The following networking enhancements are available in VMM in System Center 2016 Technical Preview:
 
-#### Software Defined Networking
+## What's new in VMM for Software Defined Networking
 
 With VMM 2016, you can deploy the entire Software Defined Networking (SDN) stack using VMM Service Templates. Leveraging the powerful VMM Service Templates provides you with the capability to deploy and onboard SDN stack  through a UI driven and streamlined experience. Following sections cover more details about the SDN artifacts you can deploy using VMM:
 
@@ -167,7 +167,7 @@ You can also directly use Hyper-v to configure a standard virtual switch on a ma
 
 Also in VMM in System Center 2016 Technical Preview, when you apply a logical switch to a particular host, either the entire operation succeeds, or in the case of failure the operation is reverted and all the settings on the hosts are left unchanged. If Logical switch deployment fails, you can review job information and diagnose reasons for failure through improved logging capability for Logical Switch deployment.
 
-## Security
+## What's new in VMM for Security
 
 You can now configure guarded hosts and shielded VMs to help provide protection against malicious host administrators and malware. You can use VMM to manage guarded hosts and shielded VMs in the following ways:
 
