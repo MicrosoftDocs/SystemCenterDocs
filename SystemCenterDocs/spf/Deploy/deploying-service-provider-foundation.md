@@ -14,11 +14,9 @@ author:bwren
 manager:cfreemanwa
 ---
 # Deploying Service Provider Foundation (SPF)
-Deploying SPF is a multi-step process. The first step is to plan for the deployment by reading and following the guidance provided in the following topics:
+Deploying SPF is a multi-step process. The first step is to plan for the deployment by reading and following the guidance provided in the following topic:
 
--  [Capacity Planning for Service Provider Foundation](../plan/Capacity-Planning-for-Service-Provider-Foundation.md)
--  [Recommended Administrator Capabilities for SPF](../plan/recommended-adminstrator-capabilities-in-service-provider-foundation.md)
--  [Security Planning for SPF](../plan/security-planning-for-service-provider-foundation.md)
+-  [Security Planning for SPF](../plan/security-planning-for-service-provider-foundation.m
 
 After you have your deployment plan in place, make sure your environment has the necessary software SPF depends on setup. The following topics describe how to prepare your environment:
 
