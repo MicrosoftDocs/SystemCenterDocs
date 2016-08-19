@@ -39,7 +39,7 @@ This topic describes what's new and changed in Virtual Machine Manager (VMM) in 
 
 - Set quality of service (QoS) for VM storage to avoid noisy neighbor problem
 
-#### [Networking](#what-s-new-in-VMM-for-software-defined-networking)
+#### [Networking](#what-s-new-in-VMM-for-networking)
 
 - Template-based deployment for Software Defined Networking (SDN) components such as the Network Controller, Gateway, and Software Load Balancer
 
@@ -60,7 +60,7 @@ This topic describes what's new and changed in Virtual Machine Manager (VMM) in 
 
 ## What's new in VMM for compute
 
-The following Compute enhancements are available in VMM 2016 Technical Preview:
+The following Compute enhancements are available in VMM 2016
 
 #### Nano Server
 
@@ -107,7 +107,7 @@ Server App-V application in Service Templates is now deprecated in VMM 2016 and 
 
 ## What's new in VMM for storage
 
-The following storage enhancements are available in VMM in System Center 2016 Technical Preview:
+The following storage enhancements are available in VMM in System Center 2016
 
 #### Storage Spaces Direct
 
@@ -128,12 +128,12 @@ With VMM 2016 you can protect data in a volume by synchronously replicating it t
 When hosts and storage are under heavy load, you might want to ensure that certain disks, virtual machines, applications, or tenants will not drop below a certain Quality of Service (QoS) for storage. VMM has been improved so it's easier to specify QoS.
 
 - For more information, see [Managing storage Quality of Service for Scale-out file servers in VMM](../Manage/Managing-storage-Quality-of-Service-policies-for-Scale-Out-File-Servers-in-VMM.md)
-## <a name="bkmkNetworking"></a>Networking
 
+## What's new in VMM for networking
 
-The following networking enhancements are available in VMM in System Center 2016 Technical Preview:
+The following networking enhancements are available in VMM in System Center 2016
 
-## What's new in VMM for Software Defined Networking
+#### Software Defined Networking
 
 With VMM 2016, you can deploy the entire Software Defined Networking (SDN) stack using VMM Service Templates. Leveraging the powerful VMM Service Templates provides you with the capability to deploy and onboard SDN stack  through a UI driven and streamlined experience. Following sections cover more details about the SDN artifacts you can deploy using VMM:
 
