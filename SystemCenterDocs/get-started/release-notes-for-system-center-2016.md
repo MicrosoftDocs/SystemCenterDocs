@@ -433,10 +433,6 @@ If you used the default instance of SQL Server, use Windows Explorer to drag Mic
 
 5.  Save the changes and close the XML editor.
 
-#### Self-Service Portal is not compatible with the Microsoft Edge web browser
-**Description:** You cannot open the Self-Service Portal with the Microsoft Edge web browser.
-
-**Workaround:** Use Internet Explorer to open Self-Service Portal.
 
 #### Service Manager console installed on a VMM Server causes VMM connector failure
 **Description:** If the Service Manager console is installed on the same server as VMM, then you cannot use that Service Manager console to create a VMM connector to that VMM server.
@@ -474,53 +470,6 @@ If you used the default instance of SQL Server, use Windows Explorer to drag Mic
 
 **Workaround:** None.
 
-#### Full Text Search Does Not Work for Some Turkish Language Characters
-**Description:** Full text search in the Self-Service Portal works only if you have a licensed non-Microsoft word breaker installed. However, full text search does not work for some characters of the Turkish language even if you have a licensed non-Microsoft Turkish word breaker installed.
-
-**Workaround:** Load a licensed non-Microsoft word breaker that enables full-text search to function. For more information, see the following links for the version of SQL Server that you are using:
-
--   [SQL Server 2014](http://msdn.microsoft.com/library/ms142509%28v=sql.120%29.aspx)
-
--   [SQL Server 2012](http://msdn.microsoft.com/library/ms142509%28v=sql.110%29.aspx)
-
--   [SQL Server 2008 R2](http://go.microsoft.com/fwlink/?LinkId=205557)
-
--   [SQL Server 2008](http://go.microsoft.com/fwlink/?LinkId=205800)
-
-#### Unassigned Virtual Machines Appear in Reporting Information
-**Description:** All virtual machines appear in Microsoft Online Analytical Processing (OLAP) cube data and the sample Microsoft Excel report, regardless of whether a virtual machine is assigned to a cloud. Reporting information is designed to show unassigned virtual machines as rows without price sheet data.
-
-**Workaround:** None.
-
-#### Virtual Machine Component Aggregation Is Misleading
-**Description:** The SystemCenterVmmCloudChargebackCube OLAP cube contains aggregated values for virtual machine components. However, values for the components should not be expressed in the cube using any manner other than a daily count.
-
-**Workaround:** None. However, you should ignore any aggregated time values for virtual machine components other than daily values.
-
-#### Reassigned Virtual Machine Values Might Be Erroneously Calculated
-**Description:** When you remove and then reassign a virtual machine from one cloud object to another, erroneous calculated values might appear for both clouds where the virtual machine was assigned. This condition might occur only for the same date when values for the virtual machine are not removed from the cloud that the virtual machine was initially assigned to. Data for the next day is accurate.
-
-**Workaround:** None.
-
-#### Values in Price Sheets Are Effective Starting on the Next Day
-**Description:** When you type a value in a price sheet, the value becomes effective on the following day. For example, if you modify a calculated price today, the updated price will not immediately appear in OLAP cube data or the sample chargeback Excel report. Instead, the old price continues to appear in OLAP cube data and the sample chargeback Excel report. This behavior is expected; you can use it to update prices throughout your business day without the prices going into effect until the next business day.
-
-**Workaround:** None.
-
-#### After the Display Language Is Changed, the Wizard Text Might Display an Incorrect Language
-**Description:** After you change the display language using the **Language** menu in the Service Manager console, wizard text might be displayed in your previously selected language.
-
-**Workaround:** If this problem affects you, do the following:
-
-1.  Close the Service Manager console.
-
-2.  On the **Start** menu, click **Run**, type **%temp%**, and then click **OK**.
-
-3.  Navigate up to the parent LOCAL folder.
-
-4.  Open \Microsoft\System Center Service Manager 2016\ServerName\VersionNumber, and then delete the contents of the folder.
-
-5.  Open the Service Manager console. The wizard text should appear in the language that you selected previously.
 
 #### Errors Might Occur When You Modify or Delete Service Request Template Items
 **Description:** When you create a service request using a request offering template and you modify or delete activities that are contained in the template, various errors might occur that prevent you from saving the service request.
@@ -538,10 +487,6 @@ If you used the default instance of SQL Server, use Windows Explorer to drag Mic
 
 **Workaround:** None.
 
-#### Double-Byte Characters Are Sent Incorrectly to Search Provider
-**Description:** When you perform a knowledge search and you type double-byte characters in the **Search Provider** box, they are not sent correctly to the search website. Instead, erroneous characters are sent.
-
-**Workaround:** None.
 
 #### Sorting Knowledge Articles by Date Does Not Work
 **Description:** When you try to sort knowledge articles by date, sorting does not work.
