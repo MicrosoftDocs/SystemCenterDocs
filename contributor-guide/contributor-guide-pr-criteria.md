@@ -13,6 +13,7 @@ The updates in the pull request must comply with the following criteria to be me
 |Repo integrity|	Pull request contains no obvious content regressions.|
 |Repo integrity|	Pull request does not include an embedded repo or any unusual, extraneous files.|
 |Repo integrity	|Pull request contains fewer than 100 changed files unless the PR intentionally is updating a release branch from master. (Really, a PR should contain far fewer than that, but after 100 changed files, GitHub doesn’t display the diffs).|
+|Repo integrity|	Pull request does not get merged by the person who created the pull request.|
 |Naming	|File names for new files follow the [file naming guidelines](file-names-and-locations.md).|
 |Naming	|New folders introduced into the repo follow the [folder naming guidelines](file-names-and-locations.md#folder-names-in-the-repo).|
 |Content	|The article is a technical document, and therefore in the correct content channel. See the [what goes where guidance](content-channel-guidance.md).|
