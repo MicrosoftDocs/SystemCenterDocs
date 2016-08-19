@@ -161,11 +161,11 @@ In addition to providing parity with WAP support for System Center Virtual Machi
 
 #### Atomic virtual switch deployment
 
-In the previous version of VMM (System Center Virtual Machine Manager 2012 R2), you could collect a variety of individual network settings into a logical switch, so that you could then apply that collection of settings consistently to hosts. In VMM in System Center 2016 Technical Preview, the interface for creating a logical switch has been streamlined to make it easier to see what your choices are and choose settings that will work together.
+In the previous version of VMM (System Center Virtual Machine Manager 2012 R2), you could collect a variety of individual network settings into a logical switch, so that you could then apply that collection of settings consistently to hosts. In VMM in System Center 2016, the interface for creating a logical switch has been streamlined to make it easier to see what your choices are and choose settings that will work together.
 
 You can also directly use Hyper-v to configure a standard virtual switch on a managed host, then use VMM to convert the standard virtual switch to a VMM logical switch, and later apply the logical switch to additional hosts.
 
-Also in VMM in System Center 2016 Technical Preview, when you apply a logical switch to a particular host, either the entire operation succeeds, or in the case of failure the operation is reverted and all the settings on the hosts are left unchanged. If Logical switch deployment fails, you can review job information and diagnose reasons for failure through improved logging capability for Logical Switch deployment.
+Also in VMM in System Center 2016, when you apply a logical switch to a particular host, either the entire operation succeeds, or in the case of failure the operation is reverted and all the settings on the hosts are left unchanged. If Logical switch deployment fails, you can review job information and diagnose reasons for failure through improved logging capability for Logical Switch deployment.
 
 ## New in VMM for Security
 
