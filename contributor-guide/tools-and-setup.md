@@ -75,7 +75,7 @@ If you see a page like this, it means your GitHub account and Microsoft alias ar
 
 ### Link your account
 
-1. 1.	Click either the red link icon next to your picture at the top of the page or **Link account**.
+1. Click either the red link icon next to your picture at the top of the page or **Link account**.
 
     ![link account](./media/tools-and-setup/image2.png)
 
@@ -135,9 +135,7 @@ If you use Atom, you'll need to set a few things up.
 
 2. Copy the Personal Access Token that you got from [https://github.com/settings/tokens](https://github.com/settings/tokens). You can accept the default permissions for the token.  Save the Personal Access Token in a text file for later reuse.
 
-3. Next, copy the repository to your computer with your credentials embedded in the command string.  To do this, open Git Bash and run it as an administrator. At the command prompt, enter the following command.  This command creates a systemcenterdocs-pr) directory on your computer.  If you're using the default location, it will be at c:\users<your Windows user name>\SystemCenterDocs-pr.
-
-Private repo:
+3. Next, copy the repository to your computer with your credentials embedded in the command string.  To do this, open Git Bash and run it as an administrator. At the command prompt, enter the following command.  This command creates a systemcenterdocs-pr directory on your computer.  If you're using the default location, it will be at c:\users<your Windows user name>\SystemCenterDocs-pr.
 
         git clone https://[your GitHub user name]:[token]@github.com/<your GitHub user name>/systemcenterdocs-pr.git
 
@@ -180,7 +178,7 @@ To ensure you are listed correctly as a contributor, you need to configure your 
 ##Next steps
 
 - Understand the type of content that belongs in the technical content repo, and know what does not belong. See the [content channel guidance](./content-channel-guidance.md)!
-- Follow [these steps to create or modify an article and then submit it for publishing](./git-commands-for-master.md).
+- Follow [these steps to create or modify an article and then submit it for publishing](https://github.com/Azure/azure-content-pr/blob/master/contributor-guide/git-commands-for-master.md).
 - Use [this checklist to verify your pull request will meet the quality criteria](./contributor-guide-pr-criteria.md) for merging.
 
 
