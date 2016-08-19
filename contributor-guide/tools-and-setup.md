@@ -15,7 +15,7 @@ ms.service="contributor-guide"
   ms.date="08/19/2016"
   ms.author="jimpark;tysonn" />
 
-#Install and set up tools for authoring in GitHub
+# Install and set up tools for authoring in GitHub
 
 Follow the steps in this article to set up tools for contributing to the System Center technical documentation.
 
@@ -24,11 +24,10 @@ If you're unfamiliar with Git, you might want to review some Git terminology: [h
 ## Contents
 
 - [Create a GitHub account and set up your profile](#create-a-github-account-and-set-up-your-profile)
-- [Sign up for Disqus](#sign-up-for-disqus)
-- [Determine whether you really need to follow the rest of these steps](#determine-whether-you-really-need-to-follow-the-rest-of-these-steps)
-- [Permissions in GitHub](#permissions-in-github)
-- [Install Git for Windows](#install-git-for-windows)
-- [Enable two-factor authentication](#enable-two-factor-authentication)
+- [Enable multifactor authentication for your Github Account](#enable-multifactor-authentication-for-your-github-account)
+- [Link your GitHub account to your Microsoft identity](#link-your-github-account-to-your-microsoft-identity)
+- [Authorize the OPS build system to access your GitHub account](#authorize-the-ops-build-system-to-access-your-github-account)
+- [Install and configure git tools](#install-and-configure-git-tools)
 - [Install a markdown editor](#install-a-markdown-editor)
 - [Configure Atom](#configure-atom)
 - [Fork the repository and copy it to your computer](#fork-the-repository-and-copy-it-to-your-computer)
@@ -66,20 +65,6 @@ A few notes about this:
     - Click the icon in the upper left corner of the command line window>Edit>Paste.
     - Right-click the icon in the upper left corner of the window and click Properties>Options>QuickEdit Mode. This configures the command line so you can paste by right-clicking in the command line window.
 
-### All other changes
-The GitHub UI does support creation of new files and dragging and dropping images. However, when you work in the UI, managing branches can be confusing so we typically recommend you install the tools and learn the commands for creating and managing articles. If you want to use the UI, see:
-
-- [Creating files on Github](https://github.com/blog/1327-creating-files-on-github)
-- [Upload files to your repositories](https://github.com/blog/2105-upload-files-to-your-repositories)
-
-For the following sorts of work, we strongly recommend you install and learn to use the tools:
-
- - Making major changes to an article
- - Creating and publishing a new article
- - Adding new images or updating images
- - Updating an article over a period of days without publishing changes each of those days
- - Creating content for a release that has to go out on a certain day at a certain time
-
 ## Link your GitHub account to your Microsoft identity
 
 Go to [https://opensourcehub.microsoft.com/](https://opensourcehub.microsoft.com/)
@@ -114,7 +99,7 @@ Note that developers and teams have a responsibility to make sure any open sourc
 
 Do this by going to [https://op-portal-prod.azurewebsites.net/#/login](https://op-portal-prod.azurewebsites.net/#/login) and signing in with your GitHub credentials.
 
-## Install Git for Windows
+## Install and configure git tools
 
 Install Git for Windows from [http://git-scm.com/download/win](http://git-scm.com/download/win). This download installs the Git version control system, and it installs Git Bash, the command-line app that you will use to interact with your local Git repository.
 
@@ -140,7 +125,7 @@ We author content using simple "markdown" notation in the files, rather than com
 
 If you use Atom, you'll need to set a few things up.
 
-- Atom defaults to using 2 spaces for tabs, but Markdown expects 4 spaces. If you leave it at the default of two, your article will look great in local preview, but not when it’s imported into Azure. So, configure Atom to use 4 spaces - you can find this setting under File>Settings>Editor Settings>Tab Length.
+- Atom defaults to using 2 spaces for tabs, but Markdown expects 4 spaces. If you leave it at the default of two, your article will look great in local preview, but not when it’s imported into OPS. So, configure Atom to use 4 spaces - you can find this setting under File>Settings>Editor Settings>Tab Length.
 - You will probably also want to turn on Soft Wrap in this section too, which does the same as "word wrap" in Notepad.
 - To turn on the markdown preview, click Packages>Markdown Preview>Toggle Preview. You can use Ctrl-Shift-M to toggle the preview HTML view.
 
@@ -150,7 +135,7 @@ If you use Atom, you'll need to set a few things up.
 
 2. Copy the Personal Access Token that you got from [https://github.com/settings/tokens](https://github.com/settings/tokens). You can accept the default permissions for the token.  Save the Personal Access Token in a text file for later reuse.
 
-3. Next, copy the repository to your computer with your credentials embedded in the command string.  To do this, open Git Bash and run it as an administrator. At the command prompt, enter the following command.  This command creates a azure-content(-pr) drectory on your computer.  If you're using the default location, it will be at c:\users<your Windows user name>\azure-content(-pr).
+3. Next, copy the repository to your computer with your credentials embedded in the command string.  To do this, open Git Bash and run it as an administrator. At the command prompt, enter the following command.  This command creates a systemcenterdocs-pr) directory on your computer.  If you're using the default location, it will be at c:\users<your Windows user name>\SystemCenterDocs-pr.
 
 Private repo:
 
@@ -165,7 +150,7 @@ For example, this clone command could look something like this:
 Create a reference to the root repository by entering these commands. This sets up connections to the repository in GitHub so that you can get the latest changes onto your local machine and push your changes back to GitHub. This command also configures your token locally so that you don't have to enter your name and password each time you try to access the upstream repo and your fork on GitHub.
 
         cd systemcenterdocs-pr
-        git remote add upstream https://[your GitHub user name]:[token]@github.com/Azure/systemcenterdocs-pr.git
+        git remote add upstream https://[your GitHub user name]:[token]@github.com/Microsoft/systemcenterdocs-pr.git
         git fetch upstream
 
 This usually takes a while. After you do this, you won't have to fork again or enter your credentials again. You would only have to copy the forks to a local computer again if you set the tools up on another computer.
@@ -174,7 +159,7 @@ This usually takes a while. After you do this, you won't have to fork again or e
 
 To ensure you are listed correctly as a contributor, you need to configure your user name and email locally in Git.
 
-1. Start Git Bash, and switch into azure-content or azure-content-pr:
+1. Start Git Bash, and switch into systemcenterdocs-pr:
 
    ````
    cd systemcenterdocs-pr
