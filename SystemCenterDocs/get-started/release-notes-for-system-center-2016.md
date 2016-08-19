@@ -42,8 +42,8 @@ On the Secondary DPM Server: The job completed successfully with the following w
 net stop msdpm
 ```
 
-Then delete the file in the the folder:
-<DPM install path>\DPM\Config\VolumeManagerState_<DPMServerName>
+Then delete the file in the folder:
+*DPM_install_path*\DPM\Config\VolumeManagerState_*DPMServerName*
 
 
 #### Consistency Checks on Upgrade of Primary and Secondary DPM Servers to DPM 2016
@@ -60,13 +60,14 @@ Then delete the file in the the folder:
 **Description:** If you protect a Hyper-V VM with an ISO in the DVD drive, backups may fail with the following messages:
 
 During initial replication: <br/>
-```
-DPM failed to communicate with [DPMServerName] because of a communication error with the protection agent. (ID 53 Details: Not implemented (0x80000001))<br/>
-```
+`
+DPM failed to communicate with [DPMServerName] because of a communication error with the protection agent. (ID 53 Details: Not implemented (0x80000001))
+`
+
 During subsequent backups: <br/>
-```
+`
 An unexpected error occurred while the job was running. (ID 104 Details: Internal error code: 0x80990E54)
-```
+`
 
 **Workaround:** Eject the ISO and trigger the backup process again.
 
@@ -111,9 +112,10 @@ $dpm.Proxy.ResizeReplica($ds1.DatasourceId, $ds1.ReplicaSize * 2)
 
 #### DPMSync fails after deletion or corruption of Modern DPM Storage Folders
 **Description:** If the Modern DPM Storage folders are deleted or corrupted, running DPMSync.exe with **ReallocateReplica** fails with the following error:
-```
+
+`
 The storage involving the current operation could not be read from or written to.
-```
+`
 
 **Workaround:** There is no workaround.
 
@@ -136,27 +138,10 @@ The storage involving the current operation could not be read from or written to
 3.	In Web Part, under categories select “Media and Content” and under that select “Page Viewer” and click add.
 4.	Edit the Web Part and select Web Page and enter the URL of the SCOM Web Console dashboard.
 5.	Append “&disabletree=true” at the end of the dashboard URL for disabling the tree view getting displayed on the SharePoint page
-6.	Configure the appearance, layout, and Advance attribute of the SharePoint page.Application performance monitoring (APM) for Windows services is not supported in System Center - Operations Manager on hosts where Application Insights Status Monitor is installed
-**Description:** Application performance monitoring (APM) workflow fails to process monitoring configuration for .NET Windows services on the hosts if Application Insights Status Monitor and the System Center - Operations Manager agent are both installed.
+6.	Configure the appearance, layout, and Advance attribute of the SharePoint page.
 
 
-#### Application performance monitoring (APM) for Windows services is not supported in System Center - Operations Manager on hosts where Application Insights Status Monitor is installed
-**Description:** Application performance monitoring (APM) workflow fails to process monitoring configuration for .NET Windows services on the hosts if Application Insights Status Monitor and the System Center - Operations Manager agent are both installed.
-
-**Workaround:** Uninstall Application Insights Status Monitor.
-
-#### Namespace values for performance tracking will be ignored
-**Description:** Setting the Namespace value for performance tracking when tracking a custom namespace in .NET Applications Performance Monitoring (APM) will be ignored.
-
-**Workaround:** Set both the exception tracking and performance tracking settings to include the same custom namespaces.
-
-#### Using sudo elevation with Solaris operating systems requires a configuration change if the sudo executable is not in an expected path
-**Description:** If you want to use sudo elevation on a computer running Solaris, and the sudo executable is not in an expected path, you need to create a link to the correct path. Operations Manager will look for the sudo executable in the path /opt/sfw/bin, and then in the path /usr/bin. If sudo is not installed in one of these paths, a link is required.
-
-**Workaround:** The UNIX and Linux agent installation script creates the symbolic link /etc/opt/Microsoft/scx/conf/sudodir to the folder expected to contain sudo. The agent uses this symbolic link to access sudo. The installation script automatically creates the symbolic link, so no action is needed for standard UNIX and Linux configurations. However if sudo is installed in a non-standard location, you should change the symbolic link to point to the folder where sudo is installed. If you change the symbolic link, its value is maintained for uninstall, re-installation, and upgrade operations with the agent.
-
-
-#### In Web Console, Windows Computer Tasks are sometimes not displayed
+#### In Web Console, Windows Computer Tasks is not displayed sometimes
 **Description:** In Web Console, when you go to Windows computers view and select a computer, the tasks pane may not display Windows computer tasks.
 Likelihood of occurrence: Medium
 
@@ -167,7 +152,7 @@ Description:  In Web Console, when you go to State View and select an entity in 
 
 **Workaround:** None.
 
-#### In Web Console, functionality in My Workspace tab does not work
+#### In Web Console, functionality in My Workspace tab does not work .
 **Description:** In Web Console, none of the links/views in My Workspace tab work.
 
 **Workaround:** None.
@@ -237,6 +222,89 @@ System Center Operations Manager management server is not affected.
 
 **Workaround:** Restart the "Microsoft Monitoring Agent" service on the System Center Operations Manager agent host that is experiencing the issue.
 
+#### Application performance monitoring (APM) for Windows services is not supported in System Center - Operations Manager on hosts where Application Insights Status Monitor is installed.
+**Description:** Application performance monitoring (APM) workflow fails to process monitoring configuration for .NET Windows services on the hosts if Application Insights Status Monitor and the System Center - Operations Manager agent are both installed.
+
+**Workaround:** Uninstall Application Insights Status Monitor.
+
+#### Namespace values for performance tracking will be ignored
+**Description:** Setting the Namespace value for performance tracking when tracking a custom namespace in .NET Applications Performance Monitoring (APM) will be ignored.
+
+**Workaround:** Set both the exception tracking and performance tracking settings to include the same custom namespaces.
+
+#### Using sudo elevation with Solaris operating systems requires a configuration change if sudo executable is not in an expected path
+**Description:** If you want to use sudo elevation on a computer running Solaris, and the sudo executable is not in an expected path, you need to create a link to the correct path. Operations Manager will look for the sudo executable in the path /opt/sfw/bin, and then in the path /usr/bin. If sudo is not installed in one of these paths, a link is required.
+
+**Workaround:** The UNIX and Linux agent installation script creates the symbolic link /etc/opt/Microsoft/scx/conf/sudodir to the folder expected to contain sudo. The agent uses this symbolic link to access sudo. The installation script automatically creates the symbolic link, so no action is needed for standard UNIX and Linux configurations. However if sudo is installed in a non-standard location, you should change the symbolic link to point to the folder where sudo is installed. If you change the symbolic link, its value is maintained for uninstall, re-installation, and upgrade operations with the agent.
+
+#### Operations Manager Console will stop responding if you attempt to resolve a dependency while  importing a Management Pack
+**Description:** When you click **Import Management Packs** from the Administration section of the Operations Manager console, the console will display the **Resolve** button if the Management Pack is dependent on another Management Pack. If you click  Resolve you will see the **Dependency Warning**. If you click the **Resolve** button in the warning the Operations Manager console will stop responding.
+
+**Workaround:** Install the Update for System Center 2016 - Operations Manager. See the Knowledge Base article [3117586](https://support.microsoft.com/en-us/kb/3117586) for specific instructions.
+
+#### Client-side monitoring (CSM) alerts might stop flowing from the System Center Operations Manager management server host
+**Description:**The update sequence of System Center Operation Manager management server may cause an issue with the client-side monitoring alerts collection from the management server host. System Center Operations Manager agents are not affected.
+Likelihood of occurrence: Medium
+
+**Workaround:** Restart the "Microsoft Monitoring Agent" service on System Center Operations Manager management server host.
+
+#### Application performance monitoring (APM) events, client-side monitoring (CSM) events, and application performance monitoring (APM) alerts might stop flowing from the System Center Operations Manager agent hosts
+Description:  The update sequence of System Center Operations Manager agent may cause an issue with the following:
+
+-   Client-side monitoring (CSM) events and alerts collected on the host.
+
+-   Application Performance Monitoring (APM) events and alerts collected on the host.
+
+System Center Operations Manager management server is not affected.
+
+**Workaround:** Restart the "Microsoft Monitoring Agent" service on the System Center Operations Manager agent host that is experiencing the issue.
+
+#### Application performance monitoring (APM) for Windows services is not supported in System Center - Operations Manager on hosts where Application Insights Status Monitor is installed.
+**Description:** Application performance monitoring (APM) workflow fails to process monitoring configuration for .NET Windows services on the hosts if Application Insights Status Monitor and the System Center - Operations Manager agent are both installed.
+
+**Workaround:** Uninstall Application Insights Status Monitor.
+
+#### Telemetry data may be erroneously sent when the "Usage and Connectivity Data" setting is set to "False"
+**Description:**If two operators have Operations Manager consoles open and one sets the Usage and Connectivity Data setting to "Do not send data" data may continue to flow to Microsoft until the second user closes and reopens their instance of the Operations manager console.
+
+**Workaround:** Restart all Operations Manager console sessions after making changes to the Usage and Connectivity setting.
+
+**Description:**When a new component such as a management server or gateway server are added to an existing SCOM environment, usage information about the setup process is sent to Microsoft even though the Usage and Connectivity Data setting is set to "Do not send data". After the component is added, no further usage data will be sent to Microsoft from the component.
+
+**Workaround:** None
+
+#### Using sudo elevation with Solaris operating systems requires a configuration change if sudo executable is not in an expected path
+**Description:** If you want to use sudo elevation on a computer running Solaris, and the sudo executable is not in an expected path, you need to create a link to the correct path. Operations Manager will look for the sudo executable in the path /opt/sfw/bin, and then in the path /usr/bin. If sudo is not installed in one of these paths, a link is required.
+
+**Workaround:** The UNIX and Linux agent installation script creates the symbolic link /etc/opt/Microsoft/scx/conf/sudodir to the folder expected to contain sudo. The agent uses this symbolic link to access sudo. The installation script automatically creates the symbolic link, so no action is needed for standard UNIX and Linux configurations. However if sudo is installed in a non-standard location, you should change the symbolic link to point to the folder where sudo is installed. If you change the symbolic link, its value is maintained for uninstall, re-installation, and upgrade operations with the agent.
+
+#### Namespace values for performance tracking will be ignored
+**Description:** Setting the Namespace value for performance tracking when tracking a custom namespace in .NET Applications Performance Monitoring (APM) will be ignored.
+
+**Workaround:** Set both the exception tracking and performance tracking settings to include the same custom namespaces.
+
+#### Operations Manager web console is not compatible with Microsoft Edge web browser
+**Description:** When you open the Operations Manager web console from the Windows 10Start Menu the console will open in the Microsoft Edge web browser. This will result in an error.
+
+**Work around:** Open the Operations Manager web console with Internet Explorer. Internet Explorer is available from  Windows Accessories sub-menu.
+
+#### Launching the Operations Manager Web Console may result in a blank screen
+**Description:** When you first open the Operations Manager web console you may encounter a blank screen.
+
+**Work around:** To resolve the issue:
+
+1. Click on "Configure" button.
+2. When prompted to Run or Save SilverlightClientConfiguration.exe, click Save.
+3. Run SilverlightClientConfiguration.exe.
+4. Open the file properties of exe (right-click) and open the Digital Signatures tab.
+5. Select the certificate with Digest Algorithm as sha256 and click on Details.
+6. In the Digital Signature Details dialog box, Click on View Certificate.
+7. In the dialog box which appears next, click on Install Certificate.
+8. In the Certificate Import Wizard, Set store location as - Local Machine. Click Next.
+9. Select the option - "Place all certificates in the following store" Browse to Trusted Publishers.
+10. Click Next and then Finish.
+11. Refresh the Browser
+
 ## System Center 2016 - Orchestrator and Service Management Automation Release Notes
 **The following release notes apply to System Center Technical Preview - Orchestrator and Service Management Automation .**
 
@@ -264,6 +332,25 @@ System Center Operations Manager management server is not affected.
 **Description:** If your Service Manager database is running on SQL Server 2014 with the cardinality estimator set to the SQL Server 2014 version you may experience slow performance.
 
 **Workaround:** Switch the Cardinality Estimator (CE) for the SQL Server to use the SQL Server 2012 version. See the following article for more information on changing the Cardinality Estimator: [New functionality in SQL Server 2014 - Part 2 - New Cardinality Estimation](https://blogs.msdn.microsoft.com/saponsqlserver/2014/01/16/new-functionality-in-sql-server-2014-part-2-new-cardinality-estimation/).
+
+#### The Create Exchange Connector Wizard Might Crash
+**Description:** When you run the Create Exchange Connector wizard, the wizard crashes when you click **Test Connection**.
+
+**Workaround:** To work around this issue, avoid clicking **Test Connection** when you run the wizard. Instead, click **Next**, which internally tests the connection and does not crash the wizard.
+
+If the crash has already occurred, you can restart the wizard and use this workaround.
+
+#### Operations Manager CI Connectors do not Sync Properly
+**Description:** In Service Manager 2016, if you use the Operations Manager CI connector connected to Operations Manager 2016, then the following issues occur:
+1.  Newly created OM CI connectors will not sync properly. However, Operations Manager CI connectors created with previous releases continue to work properly.
+2.  Newly created Distributed Applications and Business Services with Operations Manager do not import.
+
+**Workaround:** See [https://www.microsoft.com/download/details.aspx?id=51955](https://www.microsoft.com/download/details.aspx?id=51955) to work around this problem.
+
+#### Service Manager Setup Stops When Upgrading the Self Service Portal on a Management Server
+**Description:** This problem occurs when you try to conduct an in-place upgrade of the Service Manager 2012 R2 Self Service portal (for both the Silverlight and HTML versions) to the Self Service portal in Service Manager 2016, when the Self Service portal and Management Server are installed on the same server.
+
+**Workaround:** See [Upgrade to Service Manager](../sm/deploy/Upgrade-to-Service-Manager-Technical-Preview.md) for information about deploying the Self Service portal.
 
 #### Manual steps to configure remote SQL Server 2014 Reporting Services
 **Description:** During deployment of the Service Manager data warehouse management server, you can specify the server to which Microsoft SQL Server Reporting Services (SSRS) will be deployed. During setup, the computer that is hosting the data warehouse management server is selected by default. If you specify a different computer to host SSRS, you are prompted to follow a procedure in the Deployment Guide to prepare the server. However, if you use SQL Server 2014, you should instead use the following information to prepare the remote computer to host SSRS.
@@ -346,6 +433,10 @@ If you used the default instance of SQL Server, use Windows Explorer to drag Mic
 
 5.  Save the changes and close the XML editor.
 
+#### Self-Service Portal is not compatible with the Microsoft Edge web browser
+**Description:** You cannot open the Self-Service Portal with the Microsoft Edge web browser.
+
+**Workaround:** Use Internet Explorer to open Self-Service Portal.
 
 #### Service Manager console installed on a VMM Server causes VMM connector failure
 **Description:** If the Service Manager console is installed on the same server as VMM, then you cannot use that Service Manager console to create a VMM connector to that VMM server.
@@ -383,6 +474,53 @@ If you used the default instance of SQL Server, use Windows Explorer to drag Mic
 
 **Workaround:** None.
 
+#### Full Text Search Does Not Work for Some Turkish Language Characters
+**Description:** Full text search in the Self-Service Portal works only if you have a licensed non-Microsoft word breaker installed. However, full text search does not work for some characters of the Turkish language even if you have a licensed non-Microsoft Turkish word breaker installed.
+
+**Workaround:** Load a licensed non-Microsoft word breaker that enables full-text search to function. For more information, see the following links for the version of SQL Server that you are using:
+
+-   [SQL Server 2014](http://msdn.microsoft.com/library/ms142509%28v=sql.120%29.aspx)
+
+-   [SQL Server 2012](http://msdn.microsoft.com/library/ms142509%28v=sql.110%29.aspx)
+
+-   [SQL Server 2008 R2](http://go.microsoft.com/fwlink/?LinkId=205557)
+
+-   [SQL Server 2008](http://go.microsoft.com/fwlink/?LinkId=205800)
+
+#### Unassigned Virtual Machines Appear in Reporting Information
+**Description:** All virtual machines appear in Microsoft Online Analytical Processing (OLAP) cube data and the sample Microsoft Excel report, regardless of whether a virtual machine is assigned to a cloud. Reporting information is designed to show unassigned virtual machines as rows without price sheet data.
+
+**Workaround:** None.
+
+#### Virtual Machine Component Aggregation Is Misleading
+**Description:** The SystemCenterVmmCloudChargebackCube OLAP cube contains aggregated values for virtual machine components. However, values for the components should not be expressed in the cube using any manner other than a daily count.
+
+**Workaround:** None. However, you should ignore any aggregated time values for virtual machine components other than daily values.
+
+#### Reassigned Virtual Machine Values Might Be Erroneously Calculated
+**Description:** When you remove and then reassign a virtual machine from one cloud object to another, erroneous calculated values might appear for both clouds where the virtual machine was assigned. This condition might occur only for the same date when values for the virtual machine are not removed from the cloud that the virtual machine was initially assigned to. Data for the next day is accurate.
+
+**Workaround:** None.
+
+#### Values in Price Sheets Are Effective Starting on the Next Day
+**Description:** When you type a value in a price sheet, the value becomes effective on the following day. For example, if you modify a calculated price today, the updated price will not immediately appear in OLAP cube data or the sample chargeback Excel report. Instead, the old price continues to appear in OLAP cube data and the sample chargeback Excel report. This behavior is expected; you can use it to update prices throughout your business day without the prices going into effect until the next business day.
+
+**Workaround:** None.
+
+#### After the Display Language Is Changed, the Wizard Text Might Display an Incorrect Language
+**Description:** After you change the display language using the **Language** menu in the Service Manager console, wizard text might be displayed in your previously selected language.
+
+**Workaround:** If this problem affects you, do the following:
+
+1.  Close the Service Manager console.
+
+2.  On the **Start** menu, click **Run**, type **%temp%**, and then click **OK**.
+
+3.  Navigate up to the parent LOCAL folder.
+
+4.  Open \Microsoft\System Center Service Manager 2016\ServerName\VersionNumber, and then delete the contents of the folder.
+
+5.  Open the Service Manager console. The wizard text should appear in the language that you selected previously.
 
 #### Errors Might Occur When You Modify or Delete Service Request Template Items
 **Description:** When you create a service request using a request offering template and you modify or delete activities that are contained in the template, various errors might occur that prevent you from saving the service request.
@@ -397,6 +535,11 @@ If you used the default instance of SQL Server, use Windows Explorer to drag Mic
 
 #### Configuring the Reporting Server Might Take a Long Time
 **Description:** When you install the data warehouse, validation of the default web server URL might take as long as 25 seconds to complete.
+
+**Workaround:** None.
+
+#### Double-Byte Characters Are Sent Incorrectly to Search Provider
+**Description:** When you perform a knowledge search and you type double-byte characters in the **Search Provider** box, they are not sent correctly to the search website. Instead, erroneous characters are sent.
 
 **Workaround:** None.
 
