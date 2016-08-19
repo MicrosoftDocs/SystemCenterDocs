@@ -1,6 +1,6 @@
-<properties pageTitle="Git commands for creating a new article or updating an existing article" description="Steps for working with the System Center technical content GitHub repositories." metaKeywords="" services="" solutions="" documentationCenter="" authors="tysonn" videoId="" scriptId="" manager="carolz" />
+<properties pageTitle="Git commands for creating a new article or updating an existing article" description="Steps for working with the System Center technical content GitHub repositories." metaKeywords="" services="" solutions="" documentationCenter="" authors="Jim-Parker" videoId="" scriptId="" manager="carolz" />
 
-<tags ms.service="contributor-guide" ms.devlang="" ms.topic="article" ms.tgt_pltfrm="" ms.workload="" ms.date="01/16/2015" ms.author="tysonn" />
+<tags ms.service="contributor-guide" ms.devlang="" ms.topic="article" ms.tgt_pltfrm="" ms.workload="" ms.date="01/16/2015" ms.author="jimpark; tysonn" />
 
 # Git commands for creating a new article or updating an existing article
 

@@ -178,7 +178,7 @@ To ensure you are listed correctly as a contributor, you need to configure your 
 ##Next steps
 
 - Understand the type of content that belongs in the technical content repo, and know what does not belong. See the [content channel guidance](./content-channel-guidance.md)!
-- Follow [these steps to create or modify an article and then submit it for publishing](https://github.com/Azure/azure-content-pr/blob/master/contributor-guide/git-commands-for-master.md).
+- Follow [these steps to create or modify an article and then submit it for publishing](git-commands-for-master).
 - Use [this checklist to verify your pull request will meet the quality criteria](./contributor-guide-pr-criteria.md) for merging.
 
 
