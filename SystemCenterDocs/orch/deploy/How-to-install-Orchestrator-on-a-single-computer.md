@@ -5,7 +5,7 @@ ms.topic:  article
 author:  bwren
 ms.prod:  system-center-threshold
 keywords:  
-ms.date:  2016-06-28
+ms.date:  2016-08-18
 title:  How to install Orchestrator on a single computer
 ms.technology:  orchestrator
 ms.assetid:  7c72117a-8742-4a68-90d1-00c6d9dcd012
@@ -16,7 +16,7 @@ Use the following steps to install all Orchestrator features on a single compute
 
 ### To install Orchestrator on a single computer
 
-1.  To start the Orechestrator Setup Wizard on the server where you want to install Orechestator, double\-click **SetupOrchestrator.exe**.
+1.  To start the Orchestrator Setup Wizard on the server where you want to install Orchestrator, double\-click **SetupOrchestrator.exe**.
 
     > [!IMPORTANT]
     > Before you begin setup, close any open programs and ensure that there are no pending restarts on the computer. For example, if you have installed a server role by using Orchestator or have applied a security update, you might have to restart the computer, and then log on to the computer with the same user account to finish the installation of the server role or the security update.
@@ -34,7 +34,9 @@ Use the following steps to install all Orchestrator features on a single compute
     > [!NOTE]
     > For this evaluation release, a product key is not required.
 
-4.  On the **Please read this license agreement** page, review and accept the Microsoft Software License Terms, and then click **Next**.
+4.  On the **Please read this License Terms** page, review and accept the Microsoft Software License Terms, and then click **Next**.
+
+5. On the **Diagnostic and Usage data** page, review the Diagnostic and Usage data notice, and then click **Next**.
 
 5.  On the **Select features to install** page, verify that all features are selected, and then click **Next**.
 
@@ -66,7 +68,7 @@ Use the following steps to install all Orchestrator features on a single compute
 
 10. On the **Configure the database** page, select an existing database or specify the name of a new database, and then click **Next**.
 
-11. On the **Configure Orchestrator management group** page, accept the default configuration or enter the name of the user group to manage Orchestrator permissions, and then click **Next**.
+11. On the **Configure Orchestrator users group** page, accept the default configuration or enter the name of the user group to manage Orchestrator permissions, and then click **Next**.
 
     > [!NOTE]
     > For more information about the Orchestrator users group, see [Orchestrator Users Group](assetId:///cfb5afed-1928-4c1a-ac5b-52feff15a54a).
@@ -76,14 +78,14 @@ Use the following steps to install all Orchestrator features on a single compute
     > [!NOTE]
     > For more information about the TCP ports, see [TCP Port Requirements](assetId:///dc879c86-4855-4fd0-808d-06f64a9657ca).
 
-13. On the **Select the installation location** page, verify the installation location for Orchestrator, and then click **Next**.
+13. On the **Select the installation location** page, verify the installation location for Orchestrator and change it if you want to, and then click **Next**.
 
 14. On the **Microsoft Update** page, optionally indicate whether you want to use the Microsoft Update services to check for updates, and then click **Next**.
 
     > [!NOTE]
     > If you have previously accepted Microsoft Update on this computer, this page is skipped.
 
-15. On the **Help improve Microsoft System Center Orchestrator** page, optionally indicate whether you want to participate in the **Customer Experience Improvement Program** or **Error Reporting**, and then click **Next**.
+15. On the **Help improve Microsoft System Center Orchestrator** page, optionally indicate whether you want to participate in **Error Reporting**, and then click **Next**.
 
 16. Review the **Installation summary** page, and then click **Install**.
 
@@ -109,4 +111,3 @@ Use the following steps to install all Orchestrator features on a single compute
 [Install Individual Orchestrator Features](How-to-install-orchestrator-features.md)
 [Orchestrator Security Planning](assetId:///358c5344-8649-4d40-a53c-37f8e70e58f6)
 [TCP Port Requirements](assetId:///dc879c86-4855-4fd0-808d-06f64a9657ca)
-

@@ -5,15 +5,15 @@ ms.topic:  article
 author:  bwren
 ms.prod:  system-center-threshold
 keywords:  
-ms.date:  2016-06-28
+ms.date:  2016-08-18
 title:  How to install System Center Technical Preview   Orchestrator from the command prompt
 ms.technology:  orchestrator
 ms.assetid:  7de1f456-5312-40fc-bd14-9f322f951634
 ---
 
-# How to install System Center Technical Preview - Orchestrator from the command prompt
+# How to install System Center 2016 - Orchestrator from the command prompt
 
->Applies To: System Center 2016 Technical Preview - Orchestrator
+>Applies To: System Center 2016 - Orchestrator
 
 To install Orchestrator at a command prompt, use Setup.exe with the command-line options in the following table.
 
@@ -36,17 +36,14 @@ To install Orchestrator at a command prompt, use Setup.exe with the command-line
 |/OrchestratorUsersGroup:[Group SID]|Specifies the SID of the domain or local group that will be granted access to Management server. If no value is specified, the default local group is used.|
 |/OrchestratorRemote|Specifies that remote access should be granted to the Runbook Designer.|
 |/UseMicrosoftUpdate:[0&#124;1]|Specifies whether to opt in for Microsoft Update. A value of 1 will opt in. A value of 0 does not change the current opt in status of the computer.|
-|/SendCEIPReports:[0&#124;1]|Specifies that Orchestrator should send CEIP (Customer Experience Improvement Program) reports to Microsoft. A value of 1 opts in. A value of 0 does not change the current opt-in status of the computer.|
+|/SendTelemetryReports:[0&#124;1]|Specifies Orchestrator to send Diagnostics and Usage data to Microsoft. 0 to opt-out from sending Telemetry. **Telemetry is on by default.**|
 |/EnableErrorReporting:[value]|Specifies that Orchestrator should send program error reports to Microsoft. Possible values are always, queued, and never.|
 
 For example, you could use the following command to install all of the Orchestrator components using Windows Authentication.
 
 ```
-.\Setup.exe /Silent /ServiceUserName:<UserName> /ServicePassword:<password> /Components:All /DbServer:<DBServerName> /DbNameNew:Orchestrator /WebServicePort:81 /WebConsolePort:82 /UseMicrosoftUpdate:1 /SendCEIPReports:1 /EnableErrorReporting:always
+.\Setup.exe /Silent /ServiceUserName:<UserName> /ServicePassword:<password> /Components:All /DbServer:<DBServerName> /DbNameNew:Orchestrator /WebServicePort:81 /WebConsolePort:82 /UseMicrosoftUpdate:1 /SendTelemetryReports:1 /EnableErrorReporting:always
 ```
 
 ## See Also
 [How to install Orchestrator Features](How-to-install-Orchestrator-Features.md)
-
-
-
