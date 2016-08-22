@@ -23,7 +23,11 @@ For information about how to install System Center 2016 - Orchestrator at the co
 
 -   [How to install Orchestrator Features](How-to-install-Orchestrator-Features.md)
 
-    Provides detailed information about how to install each System Center 2016 Technical Preview - Orchestrator feature.
+    Provides detailed information about how to install each System Center 2016 - Orchestrator feature.
+
+-   [How to install Orchestrator on a single computer](How-to-install-Orchestrator-from-the-command-prompt.md)
+
+    Provides detailed information about how to install all features of System Center 2016 - Orchestrator on a single computer.
 
 -   [How to install System Center 2016 - Orchestrator from the command prompt](How-to-install-Orchestrator-from-the-command-prompt.md)
 
