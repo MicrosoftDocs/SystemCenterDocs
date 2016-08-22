@@ -29,7 +29,7 @@ You might decide that, for the evaluation phase, you will choose the option to i
 
 You can limit the number of SQL Server licenses that you need by placing all of the System Center 2016 Technical Preview - Service Manager databases on the same computer, as shown in the following illustration.
 
-![](../../media/SM_Installation_Topology_Single_SQL.jpg)
+![](../../media/SM_Installation_Topology_Single_SQL.png)
 
 You continue the deployment process by creating several templates; configuring initial parameters; creating queues, lists, and groups; and then creating a management pack to save these custom objects.
 

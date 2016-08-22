@@ -264,14 +264,14 @@ You can see **Announcements** in the portal in the upper right corner.
 
 When you click **Announcements**, the list is displayed.
 
-![](../../media/sm-sspannounce02.jpg)
+![](../../media/sm-sspannounce02.png)
 
 -   Active announcements appear collapsed on the portal home page.
 
 #### Service Catalog in the Self Service Portal
 You can see the **Service Catalog** in the portal in the upper left corner.
 
-![](../../media/sm-sspcatalog01.jpg)
+![](../../media/sm-sspcatalog01.png)
 
 -   The Service Catalog on the home page presents all the request offerings, grouped by their respective service offerings (sorted in alphabetical order), accessible to the logged in user.
 
@@ -284,7 +284,7 @@ You can see the **Service Catalog** in the portal in the upper left corner.
 #### Help Articles in the Self Service Portal
 The **Help Articles** icon is on the left side of the portal home page.
 
-![](../../media/sm-ssphelp01.jpg)
+![](../../media/sm-ssphelp01.png)
 
 -   When a user clicks the **Help Articles** tab on the navigation bar, the list of all help articles that are marked as a favorite and the most popular help articles are displayed.
 
@@ -303,14 +303,14 @@ The **Help Articles** icon is on the left side of the portal home page.
 #### My Requests in the Self Service Portal
 The **My Requests** icon  is on the left side of the portal home page.
 
-![](../../media/sm-ssprequests01.jpg)
+![](../../media/sm-ssprequests01.png)
 
 -   **My Requests** displays all the incidents and service requests where the signed-in user is the affected user.
 
 #### My Activities in the Self Service Portal
 The **My Activities** icon  is on the left side of the portal home page.
 
-![](../../media/sm-sspactivities01.jpg)
+![](../../media/sm-sspactivities01.png)
 
 -   **My Activities** shows all the manual and review activities which have the signed-in user as the activity implementer or if the user is in the reviewer list.
 
