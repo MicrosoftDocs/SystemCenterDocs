@@ -5,7 +5,7 @@ ms.topic:  article
 author:  bwren
 ms.prod:  system-center-threshold
 keywords:  
-ms.date:  2016-06-28
+ms.date:  2016-08-18
 title:  Variables
 ms.technology:  service-management-automation
 ms.assetid:  e7e41871-6acf-4531-970f-92e1cb86eefb
@@ -13,7 +13,7 @@ ms.assetid:  e7e41871-6acf-4531-970f-92e1cb86eefb
 
 # Variables
 
->Applies To: Windows Azure Pack for Windows Server, System Center 2012 R2 Orchestrator
+>Applies To: Windows Azure Pack for Windows Server, System Center 2016
 
 Automation variables are values that are available to all runbooks.  They can be created, modified, and retrieved from the management portal, Windows PowerShell, or from within a runbook. Automation variables are useful for the following scenarios:
 
@@ -110,6 +110,3 @@ Use the **Get-AutomationVariable** activity to use a variable in a runbook.
 [Service Management Automation](../Service-Management-Automation.md)
 [Authoring Automation Runbooks](Authoring-Automation-Runbooks.md)
 [Global Assets](Global-Assets.md)
-
-
-

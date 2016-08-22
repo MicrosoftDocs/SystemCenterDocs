@@ -5,7 +5,7 @@ ms.topic:  article
 author:  bwren
 ms.prod:  system-center-threshold
 keywords:  
-ms.date:  2016-06-28
+ms.date:  2016-08-18
 title:  Establish trust between Service Management Automation and Service Provider Foundation
 ms.technology:  service-management-automation
 ms.assetid:  1b1ce164-f5c2-4a94-bce9-9271e3666f89
@@ -13,7 +13,7 @@ ms.assetid:  1b1ce164-f5c2-4a94-bce9-9271e3666f89
 
 # Establish trust between Service Management Automation and Service Provider Foundation
 
->Applies To: Windows Azure Pack for Windows Server, System Center 2012 R2 Orchestrator
+>Applies To: Windows Azure Pack for Windows Server, System Center 2016
 
 For Service Provider Foundation to successfully call the Service Management Automation web service, the Service Management Automation web service certificate must be trusted by the server on which Service Provider Foundation is installed. This topic applies whether you are using a self-signed certificate or a certification authority certificate for your Service Management Automation web service.
 
@@ -42,6 +42,3 @@ For Service Provider Foundation to successfully call the Service Management Auto
 Service Provider Foundation should now be able to successfully call the Service Management Automation web service.
 
 For detailed guidance to understand, create, test, and publish runbooks, see [Authoring Automation Runbooks](Authoring-Automation-Runbooks.md).
-
-
-

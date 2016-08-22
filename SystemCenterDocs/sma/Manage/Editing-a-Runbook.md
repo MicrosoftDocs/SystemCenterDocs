@@ -5,7 +5,7 @@ ms.topic:  article
 author:  bwren
 ms.prod:  system-center-threshold
 keywords:  
-ms.date:  2016-06-28
+ms.date:  2016-08-18
 title:  Editing a Runbook
 ms.technology:  service-management-automation
 ms.assetid:  a6daafc4-bc8d-4cd5-bd14-5f5b55da90a2

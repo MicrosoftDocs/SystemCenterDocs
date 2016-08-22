@@ -5,7 +5,7 @@ ms.topic:  article
 author:  bwren
 ms.prod:  system-center-threshold
 keywords:  
-ms.date:  2016-06-28
+ms.date:  2016-08-18
 title:  Runbook Operations
 ms.technology:  service-management-automation
 ms.assetid:  c8ccceea-3bc2-4487-b174-4f0edbd51fa2
@@ -35,6 +35,3 @@ The following topics provide details on different operations related to runbooks
 
 ## See Also
 [Service Management Automation](../Service-Management-Automation.md)
-
-
-
