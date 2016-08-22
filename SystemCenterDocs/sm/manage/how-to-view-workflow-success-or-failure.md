@@ -33,7 +33,7 @@ Use the following procedure to view the success or failure instances of the work
 
     The status of each workflow is displayed in the **Status** column.
 
-![](../../media/pssymbol.png)You can use a Windows PowerShell command to complete this task. For information about how to use Windows PowerShell to retrieve the status of workflows in Service Manager, see [Get-SCSMWorkflowStatus](http://go.microsoft.com/fwlink/p/?LinkID=225347).
+![](../media/pssymbol.png)You can use a Windows PowerShell command to complete this task. For information about how to use Windows PowerShell to retrieve the status of workflows in Service Manager, see [Get-SCSMWorkflowStatus](http://go.microsoft.com/fwlink/p/?LinkID=225347).
 
 
 

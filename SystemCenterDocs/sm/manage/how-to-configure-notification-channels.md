@@ -52,7 +52,7 @@ You can use the following procedures to configure notification channels and vali
 
 3.  Verify that the configuration you entered is correct.
 
-![](../../media/pssymbol.png)You can use a Windows PowerShell command to complete these tasks, as follows:
+![](../media/pssymbol.png)You can use a Windows PowerShell command to complete these tasks, as follows:
 
 -   For information about how to use Windows PowerShell to set the properties of an email notification channel in Service Manager, see [Set-SCSMChannel](http://go.microsoft.com/fwlink/p/?LinkId=225375).
 
