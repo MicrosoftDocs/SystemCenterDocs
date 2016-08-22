@@ -2,7 +2,7 @@
 
 You've found the GitHub repository that houses the source for System Center technical documentation that is published to  [TechNet](https://technet.microsoft.com/system-center-docs/).
 
-This repository also contains guidance to help you contribute to our technical documentation.  For a list of the articles in the contributors' guide, see [the index]().
+This repository also contains guidance to help you contribute to our technical documentation.  For a list of the articles in the contributors' guide, see [the index](./contributor-guide/contributor-guide-index.md).
 
 > [!NOTE]
 > Where possible, System Center documentation adheres to Azure documentation guidance. Some of the links below lead to Azure content because the guidance is the same.
@@ -51,4 +51,4 @@ Article metadata enables certain functionalities on the technet.microsoft.com we
 
 ## More resources
 
-See the [index of our contributor's guide]() for all our guidance topics.
+See the [index of our contributor's guide](./contributor-guide/contributor-guide-index.md) for all our guidance topics.

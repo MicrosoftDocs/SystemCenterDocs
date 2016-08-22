@@ -2,12 +2,12 @@
 
 <tags ms.service="contributor-guide" ms.devlang="" ms.topic="article" ms.tgt_pltfrm="" ms.workload="" ms.date="12/19/2014" ms.author="jimpark; tysonn" />
 
-#System Center technical content contributors' guide index
+# System Center technical content contributors' guide index
 
 > [!Note]
 > Where possible, System Center documentation adheres to Azure documentation guidance. Some of the links below lead to Azure content because the guidance is the same.
 
-##General guidance
+## General guidance
 
 - [Contribute to System Center documentation]()
 
@@ -15,13 +15,11 @@
 
 - [Style and voice](style-and-voice.md)
 
-##Authoring articles: tools, processes, guidance
+## Authoring articles: tools, processes, guidance
 
-- [Tools and setup for authoring in GitHub]()
+- [Tools and setup for authoring in GitHub](tools-and-setup.md)
 
 - [Git commands for creating a new article or updating an existing article](git-commands-for-master.md)
-
-<!-- [Git commands for staging an article on the internal preview site](./git-commands-for-sandbox.md)-->
 
 - [File names and locations for Azure technical articles](file-names-and-locations.md)
 
@@ -33,7 +31,7 @@
 
 - [Quality criteria for pull request review]()
 
-##Authoring articles: markdown
+## Authoring articles: markdown
 
 - [Markdown basics](https://help.github.com/articles/markdown-basics/)
 
