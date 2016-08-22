@@ -91,7 +91,7 @@ Service Manger can more easily handle a large inflow of 45 work items per minute
 
 With the Service Manager 2016 TP5 update, Service Manager cubes contain new date dimensions which will help you to create rich reports and slice data based on Year, Quarter, Month, Day etc.
 
-![date dimensions](../../media/sm-date-dimensions.png)
+![date dimensions](../media/sm-date-dimensions.png)
 
 The following new dimensions have been added to Service Manager data warehouse  cubes:
 
@@ -144,7 +144,7 @@ Cube Name: Service Manager Service Catalog library cube
 
 All these dimensions have the following attributes, which you can use for slicing your data:
 
-![dimensions list](../../media/sm-dimensions-list.png)
+![dimensions list](../media/sm-dimensions-list.png)
 
 #### To add date dimensions for other date fields in custom cubes
 
@@ -260,18 +260,18 @@ For more information and installing and customizing the portal, see [Deploy the 
 #### Announcements in the Self Service Portal
 You can see **Announcements** in the portal in the upper right corner.
 
-![](../../media/sm-sspannounce01.png)
+![](../media/sm-sspannounce01.png)
 
 When you click **Announcements**, the list is displayed.
 
-![](../../media/sm-sspannounce02.png)
+![](../media/sm-sspannounce02.png)
 
 -   Active announcements appear collapsed on the portal home page.
 
 #### Service Catalog in the Self Service Portal
 You can see the **Service Catalog** in the portal in the upper left corner.
 
-![](../../media/sm-sspcatalog01.png)
+![](../media/sm-sspcatalog01.png)
 
 -   The Service Catalog on the home page presents all the request offerings, grouped by their respective service offerings (sorted in alphabetical order), accessible to the logged in user.
 
@@ -284,7 +284,7 @@ You can see the **Service Catalog** in the portal in the upper left corner.
 #### Help Articles in the Self Service Portal
 The **Help Articles** icon is on the left side of the portal home page.
 
-![](../../media/sm-ssphelp01.png)
+![](../media/sm-ssphelp01.png)
 
 -   When a user clicks the **Help Articles** tab on the navigation bar, the list of all help articles that are marked as a favorite and the most popular help articles are displayed.
 
@@ -303,14 +303,14 @@ The **Help Articles** icon is on the left side of the portal home page.
 #### My Requests in the Self Service Portal
 The **My Requests** icon  is on the left side of the portal home page.
 
-![](../../media/sm-ssprequests01.png)
+![](../media/sm-ssprequests01.png)
 
 -   **My Requests** displays all the incidents and service requests where the signed-in user is the affected user.
 
 #### My Activities in the Self Service Portal
 The **My Activities** icon  is on the left side of the portal home page.
 
-![](../../media/sm-sspactivities01.png)
+![](../media/sm-sspactivities01.png)
 
 -   **My Activities** shows all the manual and review activities which have the signed-in user as the activity implementer or if the user is in the reviewer list.
 
@@ -358,7 +358,7 @@ The Setup wizard allows you to easily install Service Manager in complex configu
 
 Now you can configure the SQL management server, instance name and port number together.
 
-![](../../media/sm-sqlserver-config.png)
+![](../media/sm-sqlserver-config.png)
 
 ### Known Issues in this release
 Service Manager 2016 Technical Preview 4 is still in development and this release contains some issues that haven&trade;t been fixed yet. Some of the known issues in this release include:

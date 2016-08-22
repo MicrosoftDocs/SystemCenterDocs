@@ -25,11 +25,11 @@ A third deployment option maximizes performance and scalability by using four co
 
 You might decide that, for the evaluation phase, you will choose the option to install System Center 2016 Technical Preview - Service Manager on two computers. After installing System Center 2016 Technical Preview - Service Manager in the lab, you can import data from Active Directory Domain Services (AD DS) and System Center Configuration Manager, and then you can import data and alerts from Operations Manager. You would then configure User Roles within System Center 2016 Technical Preview - Service Manager and, if necessary, manually add users that were not imported from AD DS. The following illustration represents an overview of this installation and initial configuration.
 
-![](../../media/SM_Installation_Topology.png)
+![](../media/SM_Installation_Topology.png)
 
 You can limit the number of SQL Server licenses that you need by placing all of the System Center 2016 Technical Preview - Service Manager databases on the same computer, as shown in the following illustration.
 
-![](../../media/SM_Installation_Topology_Single_SQL.png)
+![](../media/SM_Installation_Topology_Single_SQL.png)
 
 You continue the deployment process by creating several templates; configuring initial parameters; creating queues, lists, and groups; and then creating a management pack to save these custom objects.
 
