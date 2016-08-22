@@ -57,7 +57,7 @@ Before you use these procedures, make sure that you import the SQL Server manage
 
 5.  If you have made any changes to the item, click **OK**; otherwise, click **Cancel** to close the form.
 
-![](../../media/pssymbol.png)You can use Windows PowerShell commands to display views that are defined in Service Manager. For more information, see [Get-SCSMView](http://go.microsoft.com/fwlink/p/?LinkID=225344).
+![](../media/pssymbol.png)You can use Windows PowerShell commands to display views that are defined in Service Manager. For more information, see [Get-SCSMView](http://go.microsoft.com/fwlink/p/?LinkID=225344).
 
 
 

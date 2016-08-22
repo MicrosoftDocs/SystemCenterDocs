@@ -51,7 +51,7 @@ For more information about how to delete a product connector from System Center 
 
 2.  In the **Connectors** pane, locate the connector for which you have changed the status, and verify the value in the **Enabled** column.
 
-![](../../media/pssymbol.png)You can use Windows PowerShell commands to complete these tasks and other related tasks, as follows:
+![](../media/pssymbol.png)You can use Windows PowerShell commands to complete these tasks and other related tasks, as follows:
 
 -   For information about how to use Windows PowerShell to start a Service Manager connector, see [Start-SCSMConnector](http://go.microsoft.com/fwlink/p/?LinkId=225378).
 
