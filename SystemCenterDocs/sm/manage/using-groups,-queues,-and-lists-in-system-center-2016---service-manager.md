@@ -116,7 +116,7 @@ Use the following procedures to create a new group (such as the **Exchange Serve
 
     In the **Tasks** pane, under the name of the group, click **View Group Members** to make sure that the Exchange servers appear in the **Group Members** window.
 
-![](../../media/pssymbol.png)You can use a Windows PowerShell command to retrieve groups from Operations Manager and from Service Manager. For more information, see [Get-SCSMGroup](http://go.microsoft.com/fwlink/p/?LinkID=225402).
+![](../media/pssymbol.png)You can use a Windows PowerShell command to retrieve groups from Operations Manager and from Service Manager. For more information, see [Get-SCSMGroup](http://go.microsoft.com/fwlink/p/?LinkID=225402).
 
 
 
@@ -158,7 +158,7 @@ You can use the following procedure to create a queue.
 
 2.  In the **Tasks** pane, click **Properties**, and then verify that the queue appears as you defined it.
 
-![](../../media/pssymbol.png)You can use a Windows PowerShell command to complete this task. For information about how to use Windows PowerShell to retrieve queues that are defined in Service Manager, see [Get-SCSMQueue](http://go.microsoft.com/fwlink/p/?LinkId=225331).
+![](../media/pssymbol.png)You can use a Windows PowerShell command to complete this task. For information about how to use Windows PowerShell to retrieve queues that are defined in Service Manager, see [Get-SCSMQueue](http://go.microsoft.com/fwlink/p/?LinkId=225331).
 
 
 

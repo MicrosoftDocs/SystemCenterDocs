@@ -50,7 +50,7 @@ Use the following procedures to create a user role and assign users to that role
 
 2.  Log on to the Service Manager console as one of the users assigned to the user role. Verify that you cannot access data for which you do not have access rights, as specified in the user role.
 
-![](../../media/pssymbol.png)You can use Windows PowerShell commands to complete these and other related tasks, as follows:
+![](../media/pssymbol.png)You can use Windows PowerShell commands to complete these and other related tasks, as follows:
 
 -   For information about how to use Windows PowerShell to create a new user role in Service Manager, see [New-SCSMUserRole](http://go.microsoft.com/fwlink/p/?LinkId=225360).
 

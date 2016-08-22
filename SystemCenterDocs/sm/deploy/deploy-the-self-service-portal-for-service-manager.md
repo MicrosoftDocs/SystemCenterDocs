@@ -36,46 +36,46 @@ Select a Windows 2012 R2 server. Join the server machine to the same domain wher
 
 1.  Start the Add Roles and Features Wizard and then enable IIS.
 
-    ![select server roles](../../media/sm-ssp01.png)
+    ![select server roles](../media/sm-ssp01.png)
 
 2.  Enable the .NET features.
 
     1.  Enable .NET 3.5
 
-        ![select features](../../media/sm-sspdeploy2a.png)
+        ![select features](../media/sm-sspdeploy2a.png)
 
     2.  Enable HTTP Activation
 
-        ![select HTTP activation](../../media/sm-sspdeploy2b.png)
+        ![select HTTP activation](../media/sm-sspdeploy2b.png)
 
     3.  Enable ASP.NET 4.5
 
-        ![select ASP.NET 4.5](../../media/sm-sspdeploy2c.png)
+        ![select ASP.NET 4.5](../media/sm-sspdeploy2c.png)
 
 3.  Enable the following role services on the Web Server Role (IIS) page.
 
     1.  **Basic Authentication** and **Windows Authentication**
 
-        ![basic authentication and Windows authentication](../../media/sm-sspdeploy3a.png)
+        ![basic authentication and Windows authentication](../media/sm-sspdeploy3a.png)
 
     2.  Add **Application Development** and under it, add **.NET Extensibility 4.5**, **ASP**, and **ASP.NET 4.5**.
 
-        ![application development](../../media/sm-ssp03b.png)
+        ![application development](../media/sm-ssp03b.png)
 
 ### Install the Self Service Portal Webapp using Setup
 Use the following steps to install the Self Service Portal WebApp using Setup.
 
 1.  Run SetupWizard.exe in the Setup folder to start the Service Manager Setup Wizard. Under Install, click **Service Manager Self Service Portal**.
 
-    ![Install](../../media/sm-ssp05.png)
+    ![Install](../media/sm-ssp05.png)
 
 2.  Accept the EULA.
 
-    ![EULA](../../media/sm-ssp06.png)
+    ![EULA](../media/sm-ssp06.png)
 
 3.  Choose your installation location.
 
-    ![installation location](../../media/sm-ssp07.png)
+    ![installation location](../media/sm-ssp07.png)
 
 4.  Review the System check results.
 
@@ -89,23 +89,23 @@ Use the following steps to install the Self Service Portal WebApp using Setup.
 
     -   **SSL Certificate:** (Optional) The SSL certificate to configure the website in secure mode (https://). This is the recommended setting if you are using Basic Authentication. The default is Windows  Authentication.
 
-    ![configure the Self Service Portal server](../../media/sm-ssp09.png)
+    ![configure the Self Service Portal server](../media/sm-ssp09.png)
 
 6.  Configure the account for the Self Service Portal. This is the account that the IIS instance will run under. This account should have the Service Manger Admin role.
 
-    ![Self Service portal account](../../media/sm-ssp10.png)
+    ![Self Service portal account](../media/sm-ssp10.png)
 
 7.  The Diagnostic and usage data notification information is displayed, informing you that data is sent to Microsoft by default.   You can change this setting in the Service Manager console. Click **Next**.
 
-    ![diagnostic and usage data](../../media/sm-ssp11.png)
+    ![diagnostic and usage data](../media/sm-ssp11.png)
 
 8.  Choose whether to automatically install Microsoft updates.
 
-    ![Microsoft updates](../../media/sm-ssp12.png)
+    ![Microsoft updates](../media/sm-ssp12.png)
 
 9. Wait for installation to complete.
 
-    ![Finished](../../media/sm-ssp13.png)
+    ![Finished](../media/sm-ssp13.png)
 
 ### Install the Self Service Portal Webapp using the Command Line
 You can modify the following example to install the Self Service Portal.
@@ -119,7 +119,7 @@ Use the following step to complete your installation.
 
 -   Restart IIS. You can access the Web App (http://yourwebsite:port)  in your browser. It will resemble the following image.
 
-    ![Self Service Portal](../../media/sm-sspdeploy-complete.png)
+    ![Self Service Portal](../media/sm-sspdeploy-complete.png)
 
 ## Customize the Self Service Portal
 The following section describe how you can customize the Self Service portal to suit your organization.
@@ -156,6 +156,6 @@ You can modify the content shown in the left navigation bar (menu) by editing th
 
 For example:
 
-![sidebar.cshtml](../../media/sm-sspsidebar.png)
+![sidebar.cshtml](../media/sm-sspsidebar.png)
 
 You can add or remove shortcuts from the menu, and you can customize them with details for the CSS class, keyboard hotkeys, and others.

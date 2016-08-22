@@ -118,7 +118,7 @@ There are two phases for creating the Alert connector. The first part involves c
 
 -   View the columns in the **Connector** pane; the columns contain information about the start time, the finish time, the status, and the percentage of import completion.
 
-![](../../media/pssymbol.png)You can use a Windows PowerShell command to complete these tasks, as follows:
+![](../media/pssymbol.png)You can use a Windows PowerShell command to complete these tasks, as follows:
 
 -   For information about how to use Windows PowerShell to create a new Operations Manager alert connector in Service Manager, see [New-SCOMAlertConnector](http://go.microsoft.com/fwlink/p/?LinkID=225351).
 
