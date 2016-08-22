@@ -27,20 +27,20 @@ ms.assetid:  5fad5608-4cb7-48b0-aa31-35ca5cc2d560
 **Workaround**: Deploy DPM 2016 RTM on a version of SQL Server higher than 2008, or use the DPM 2016 Setup wizard to install SQL Server.
 
 #### Hyper-V VMs are protected twice on VM upgrade
-**Description**: If you upgrade your Hyper-V VM from Windows Server 2012 R2 to Windows Server 2016 to enable Resilient Change Tracking (RCT), some of the VMs may be protected twice.
+**Description**: If you upgrade your Hyper-V VM from Windows Server 2012 R2 to Windows Server 2016 to enable Resilient Change Tracking (RCT), a new VM representing the upgraded VM may appear in the **Create Protection Group Wizard**. The 2016 version of the VM may appear in addition to the 2012 R2 version of the VM.
 
-**Workaround**: Before upgrading the VM, stop protection of the VM (but do not delete the data). Then after upgrading the VM, start protection again.
+**Workaround**: Do not stop protection on the VMs that have not been upgraded. After upgrading the VM, create a new protection group and protect the VMs. This protects the VMs via Resilient Change Tracking (RCT). After upgrading the VMs, stop protection on the 2012 R2 version of the VMs.
 
-#### Agent installation fails on Windows Server 2012, Windows Server 2012 R2
-**Description**: If you are trying to protect Windows Server 2012, or Windows Server 2012 R2, agent installation may fail.
+#### Agent installation fails on Windows Server 2008, Windows Server 2008 R2
+**Description**: If you are trying to protect Windows Server 2008, or Windows Server 2008 R2, agent installation may fail.
 
 **Workaround**: Upgrade the Windows Management Framework (WMF) on the production server to 4.0. Download the WMF from [https://www.microsoft.com/en-in/download/details.aspx?id=40855](https://www.microsoft.com/en-in/download/details.aspx?id=40855). Install WMF and then install the agent.
 
-#### Restoring a previous version of an upgraded Hyper-V VM may cause future recovery points to fail.
+#### Restoring a previous version of an upgraded Hyper-V VM causes future recovery points to fail.
 
-**Description**: If you protect a Hyper-V VM of version 2012 R2, upgrade it to 2016 version, and recover a 2012 R2 copy at the original location, further backups may fail.
+**Description**: If you protect a 2012 R2 version of a Hyper-V VM, then upgrade the VM to the 2016 version, and then stop protecting the VM with retain data, and then protect the VM again. If you recover a 2012 R2 copy at the original location, further backups may fail.
 
-**Workaround**: To prevent future backups from failing, after creating a 2012 R2 recovery point for a 2016 VM, change the version of the recovery point to 2016 before the next scheduled backup.
+**Workaround**: To prevent future backups from failing, after creating a 2012 R2 recovery point for a 2016 VM, change the version of the recovery point to 2016 and run consistency check before the next scheduled backup.
 
 
 

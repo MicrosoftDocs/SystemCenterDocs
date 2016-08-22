@@ -5,7 +5,7 @@ ms.topic:  article
 author:  markgalioto
 ms.prod:  system-center-threshold
 keywords:  
-ms.date:  2016-08-18
+ms.date:  2016-08-22
 title:  What's new in DPM in System Center 2016
 ms.technology:  data-protection-manager
 ms.assetid:  a5e81bf0-43a6-4099-af2e-dfb0c1aa7ed8
@@ -75,7 +75,7 @@ With Windows Server 2016, Hyper-V virtual hard disks already have built-in chang
 ### Enabling RCT VM Backup
 
 Hyper-V VMs deployed on Windows Server 2016 and protected using DPM 2016 have Resilient Change Tracking (RCT) by default.
-To upgrade older VMs to enable RCT:
+To upgrade older (previous versions of upgraded...) VMs to enable RCT:
 1. Upgrade the Hyper-V host to Windows Server 2016.
 2. To prepare the VM for RCT:
   - Migrate the VM to Windows 2016
@@ -83,12 +83,10 @@ To upgrade older VMs to enable RCT:
   ```
   Update-VMVersion <vmname>
   ```
-3. In the DPM 2016 Administrator Console, from the **Protection** menu, select your VM.
-4. Stop protection on the VM, but select **Retain data**.
-5. Modify the protection group, select the same VM and configure protection.
-    DPM now protects the VM using RCT.
+3. In the DPM 2016 Administrator Console, from the **Protection** menu, select your VM and create a new protection group.
+4. Stop protection on the 2012 R2 VM.
 
-This also allows for the backup of RCT-enabled VMs deployed in various configurations. The following sections describe the supported scenarios:
+This backs up RCT-enabled VMs deployed in various configurations. The following sections describe the supported scenarios:
 
 ### Meet Backup SLA during Cluster Operating System Rolling Upgrade
 
@@ -127,37 +125,37 @@ DPM recognizes and protects Hyper-V VMs deployed on any S2D configuration, deliv
 
 DPM 2016 can back up VMs deployed on ReFS-based SOFS clusters.
 
-To protect VMs on SOFS clusters:
+To protect VMs on SOFS clusters, add the following machine accounts to the backup operator groups and share permissions.
 
-1. Add the following machine accounts to the backup operator groups and share permissions:
-
-  - Host cluster name and cluster nodes in case of a HA VM.
-  - Hyper-v host in case of a non-HA VM.
+  - If protecting a HA VM, use host cluster name and cluster nodes.
+  - If the VM is not a HA VM, use the Hyper-v host.
   - DPM server
 
-2.	Add machine accounts to backup operator groups for all SOFS nodes:
-    1.  Open Local Users and Groups (lusrmgr.msc)
-    2.	Go to Groups
-    3. Right-click **Backup Operators** and select **Properties**.
-    4. Click Add and add the machine name/cluster name (Select Computers as the “Object Types”)
-    5. Restart the node
+Add the machine accounts to the backup operator groups. Run the following steps for each node in the SOFS cluster:
 
-3.	Give permissions to the share
-  1.  Go to a machine where SOFS/SMB share is hosted
-  2. Go to server manager -> File and Storage Services -> Shares
-  3.	Right click the share with vm storage, and click properties
-  4.	Go to permissions tab on the left
-  5. Click customize permissions
-  6. Go to "Permissions" tab
-  7. Click "Add**
-  8. Click "Select a Principal"
-  9. Click "Object Types"
-  10. Check the "Computers" object type and click OK
-  11 Enter the name of Hyper-V node/cluster name to which permission is to be given
-  12. Click "Check Names" and click OK
-  13. Check "Full Control" in the "Permission Entry for Share" dialog and click OK
-  14. Now go to "Share" tab in "Advanced Security Settings for Share" dialog
-  15. Repeat steps 7-12
-  16. Click apply.
+1. Open the command line, run **lusrmgr.msc** to open Local Users and Groups.
+2. In the Local Users and Groups dialog, click **Groups**.
+3. In the list of groups, right-click **Backup Operators** and select **Properties**.
+4. In the **Backup Operations Properties** dialog, click **Add**
+5. In the **Select Users, Computers, Services Accounts, or Groups** dialog, click **Object Types** and select **Computers** for the type of object you want to find.
+6. Enter the name of the server or cluster.
+7. Restart the node.
 
-    This prepares the VMs on SOFS shares for back up.
+
+Give permissions to the share
+
+1. On a server where the SOFS/SMB share is hosted, open **Server Manager** > **File and Storage Services** > **Shares**.
+3. Right click the share with vm storage, and click **Properties**.
+4. In the **Properties** dialog, on the left navigation menu, click **Permissions**.
+5. Click **Customize permissions** to open the Advanced Security Settings dialog.
+6. On the **Permissions** tab, click **Add**.
+7. Click **Select a Principal**.
+8. In the **Select User, Computer, Services Account, or Group** dialog, click **Object Types**.
+9. In the **Object Types** dialog, select **Computers**, and click **OK**.
+10. In the **Select User, Computer, Service Account, or Group** dialog, enter the name of the Hyper-V node or cluster name you want to have permission.
+11. Click **Check Names** to resolve the name, and click **OK**.
+12. In the **Permission Entry for Share** dialog, select **Full Control**,  and click **OK**.
+13. In the **Advanced Security Settings for Share** dialog, click the **Share** tab and repeat steps 6-11 for the **Share** tab instead of the **Permissions** tab.
+14. When you are finished adding permissions for the servers, click **Apply**.
+
+    This prepares the VMs on SOFS shares for the backup process.
