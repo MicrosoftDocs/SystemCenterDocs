@@ -5,7 +5,7 @@ ms.topic:  article
 author:  cfreemanwa
 ms.prod:  system-center-threshold
 keywords:
-ms.date:  2016-08-17
+ms.date:  2016-08-21
 title:  Release Notes for System Center 2016
 ms.assetid:  5fad5608-4cb7-48b0-aa31-35ca5cc2d560
 ---
@@ -19,6 +19,30 @@ ms.assetid:  5fad5608-4cb7-48b0-aa31-35ca5cc2d560
 
 ## System Center 2016 - Data Protection Manager Release Notes
 **The following release notes apply to System Center 2016 - Data Protection Manager.**
+
+
+#### Silent Installation of System Center DPM with SQL Server 2008
+**Description**: You cannot silently install DPM 2016 RTM on SQL Server 2008.
+
+**Workaround**: Deploy DPM 2016 RTM on a version of SQL Server higher than 2008, or use the DPM 2016 Setup wizard to install SQL Server.
+
+#### Hyper-V VMs are protected twice on VM upgrade
+**Description**: If you upgrade your Hyper-V VM from Windows Server 2012 R2 to Windows Server 2016 to enable Resilient Change Tracking (RCT), some of the VMs may be protected twice.
+
+**Workaround**: Before upgrading the VM, stop protection of the VM (but do not delete the data). Then after upgrading the VM, start protection again.
+
+#### Agent installation fails on Windows Server 2012, Windows Server 2012 R2
+**Description**: If you are trying to protect Windows Server 2012, or Windows Server 2012 R2, agent installation may fail.
+
+**Workaround**: Upgrade the Windows Management Framework (WMF) on the production server to 4.0. Download the WMF from [https://www.microsoft.com/en-in/download/details.aspx?id=40855](https://www.microsoft.com/en-in/download/details.aspx?id=40855). Install WMF and then install the agent.
+
+#### Restoring a previous version of an upgraded Hyper-V VM may cause future recovery points to fail.
+
+**Description**: If you protect a Hyper-V VM of version 2012 R2, upgrade it to 2016 version, and recover a 2012 R2 copy at the original location, further backups may fail.
+
+**Workaround**: To prevent future backups from failing, after creating a 2012 R2 recovery point for a 2016 VM, change the version of the recovery point to 2016 before the next scheduled backup.
+
+
 
 #### Adding DPM Volumes without Drive Letters
 **Description:** If you try to add a volume without access path/drive letter as valid volumes to storage, DPM does not add them, throwing an error.
