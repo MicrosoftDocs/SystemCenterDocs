@@ -25,7 +25,7 @@ The updates in the pull request must comply with the following criteria to be me
 |Site/design functionality|	If H2 headings are present, the article contains at least two H2 headings. Using one H2 heading creates a single-item article TOC. H2 headings must be used before H3 headings to ensure a TOC is created.|
 |Markdown| HTML: Source content does not contain HTML at the block level – minor inline HTML is permitted – such as superscript, subscript, special characters, and other minor things that you can’t do with markdown. HTML tables are allowed ONLY if the table contains bulleted or numbered lists, but that is usually an indication the content needs to be simplified so the source can be coded in markdown.|
 |Markdown	|Custom markdown elements are used where appropriate. Ex: Notes are coded using the !NOTE extension, not as plain text.|
-|SEO	|The H1 title contains sufficient information to describe the content of the article, to differentiate it from other Azure articles, and to map to likely customer keywords. For example "Overview" as the H1 title is a fail.|
+|SEO	|The H1 title contains sufficient information to describe the content of the article, to differentiate it from other System Center articles, and to map to likely customer keywords. For example "Overview" as the H1 title is a fail.|
 |Images	|Animated GIFs are not accepted into the repo.|
 |Images | Images have clear resolution, are free of misspelled words, and contain no private information |
 |Staging| The article preview must be clean on GitHub. It cannot contain any obvious formatting issues: <br><br>- A numbered or bulleted list that appears as a paragraph <br> - Code in a code block appearing partly in the code block and partly outside it <br>- Numbered steps numbered incorrectly due to faulty indentation|
@@ -40,5 +40,5 @@ For these items, pull request reviewers provide feedback and instructions for th
 |Images|Images use the correct callout style and color, and screenshots use the correct border and placeholder style. [See the image guidance](https://github.com/Azure/azure-content/blob/master/contributor-guide/create-images-markdown.md).|
 |Images|Images include alt text. [See the image guidance](https://github.com/Azure/azure-content/blob/master/contributor-guide/create-images-markdown.md).|
 |Site/design functionality|The H2 headings, when rendered in the on-page TOC, should ideally wrap to no more than 2 lines. Longer headings make the article TOC harder to scan.|
-|Style conventions|All titles and headings are sentence case, per Azure style.|
+|Style conventions|All titles and headings are sentence case.|
 |Process|When you delete or rename an article, make sure you follow the process. Pull request reviewers should add the following comment and link in a comment:<br><br>*Please verify you followed the process in the contributors’ guide for deleting articles: <https://github.com/Azure/azure-content/blob/master/contributor-guide/retire-or-rename-an-article.md> .*|
