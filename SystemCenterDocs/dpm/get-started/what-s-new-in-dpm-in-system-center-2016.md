@@ -139,9 +139,11 @@ Add the machine accounts to the backup operator groups. Run the following steps 
 4. In the **Backup Operations Properties** dialog, click **Add**
 5. In the **Select Users, Computers, Services Accounts, or Groups** dialog, click **Object Types** and select **Computers** for the type of object you want to find.
 6. Enter the name of the server or cluster.
-5. Restart the node.
+7. Restart the node.
+
 
 Give permissions to the share
+
 1. On a server where the SOFS/SMB share is hosted, open **Server Manager** > **File and Storage Services** > **Shares**.
 3. Right click the share with vm storage, and click **Properties**.
 4. In the **Properties** dialog, on the left navigation menu, click **Permissions**.
