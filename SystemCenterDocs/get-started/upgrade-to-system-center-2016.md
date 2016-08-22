@@ -442,11 +442,13 @@ The following steps outline the process for upgrading a distributed management g
 ### Orchestrator Upgrade Notes
 
 Before you upgrade:
+
 1. Ensure that there are no pending restarts on the computer.
 2. Perform a full back up  of Orchestrator database. For information about backing up the Orchestrator database, see the <a href ="https://technet.microsoft.com/en-us/library/hh852622(v=sc.12).aspx">How to Back up Orchestrator </a> topic.
 3. Upgrade the hardware, operating system, and other software if necessary to meet the requirements of Orchestrator in System Center 2016.
 
 Upgrading:
+
 1. Stop all Orchestrator runbooks.
 2. Uninstall the Orchestrator management server, any runbook servers, the Web Service, and the Runbook Designer.
 3. Install the Orchestrator management server in System Center 2016, as described [here](../orch/deploy/Install-Orchestrator.md).
@@ -458,10 +460,12 @@ Upgrading:
 ## SMA Upgrade Notes
 
 Before you upgrade:
+
 1. Perform a full backup of the SMA database as a precaution. This is a standard SQL Server database, and you can standard tools and processes for [backing up SQL Server](http://go.microsoft.com/fwlink/p/?LinkId=216936).
 2. Upgrade the hardware, operating system, and other software if necessary to meet the requirements of Service Management Automation in System Center 2016.
 
 Upgrade:
+
 1. If SMA servers are being monitored by Operations Manager, put them in maintenance mode to prevent false alerts.
 2. Uninstall the SMA web service and SMA runbook workers using the instructions at <a href="https://technet.microsoft.com/en-us/library/dn469636(v=sc.12).aspx">How to uninstall Service Management Automation</a> for details.
 3. Install the SMA runbook workers using the instructions at [How to install the Service Management Automation runbook worker](../sma/Deploy/How-to-install-the-Service-Management-Automation-runbook-worker.md).
