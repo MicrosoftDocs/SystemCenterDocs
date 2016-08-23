@@ -9,11 +9,11 @@
 
 ## General guidance
 
-- [Contribute to System Center documentation]()
+- [Contribute to System Center documentation](README.md)
 
-- [Content channel guidance](content-channel-guidance.md)
+- [Content channel guidance](https://github.com/Azure/azure-content-pr/blob/master/contributor-guide/content-channel-guidance.md)
 
-- [Style and voice](style-and-voice.md)
+- [Style and voice](https://github.com/Azure/azure-content-pr/blob/master/contributor-guide/style-and-voice.md)
 
 ## Authoring articles: tools, processes, guidance
 
@@ -23,13 +23,13 @@
 
 - [File names and locations for Azure technical articles](file-names-and-locations.md)
 
-- [Linking guidelines](create-links-markdown.md/)
+- [Linking guidelines](https://github.com/Azure/azure-content-pr/blob/master/contributor-guide/create-links-markdown.md)
 
-- [Retire or rename an article](retire-or-rename-an-article.md)
+- [Retire or rename an article](https://github.com/Azure/azure-content-pr/blob/master/contributor-guide/retire-or-rename-an-article.md)
 
 - [How to undo almost anything with Git (GitHub blog)](https://github.com/blog/2019-how-to-undo-almost-anything-with-git)
 
-- [Quality criteria for pull request review]()
+- [Quality criteria for pull request review](contributor-guide-pr-criteria.md)
 
 ## Authoring articles: markdown
 
@@ -39,8 +39,8 @@
 
 - [GitHub-flavored markdown](https://help.github.com/articles/github-flavored-markdown/)
 
-- [Create tables in markdown](create-tables-markdown.md)
+- [Create tables in markdown](https://github.com/Azure/azure-content-pr/blob/master/contributor-guide/create-tables-markdown.md)
 
-- [Create images in markdown](create-images-markdown.md)
+- [Create images in markdown](https://github.com/Azure/azure-content-pr/blob/master/contributor-guide/create-images-markdown.md)
 
 - [Metadata for System Center technical articles](https://ppe.msdn.microsoft.com/en-us/ce-csi-docs/ops/ops-onboarding/managing-content/content-meta-data?branch=master)
