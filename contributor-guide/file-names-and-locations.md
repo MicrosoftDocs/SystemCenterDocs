@@ -4,10 +4,6 @@
 
 #File names and locations for System Center technical articles
 
-In our technical content repository, we use a single folder (the **articles** folder) for all articles. There's no folder hierarchy - all articles live in the flat file structure. If you create folders with articles in them, your articles can't be published.
-
-Instead of using a file structure as an organizing principle, we use a strict file naming convention that clearly identifies topics and that contributes towards discoverability on the web.
-
 Here's what you need to know:
 
 + [Rules]
