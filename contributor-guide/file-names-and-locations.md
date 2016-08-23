@@ -52,10 +52,18 @@ Windows operating systems are case insensitive, so if you need to change a file 
 
 Use the following command to rename a file:
 ```
-  git mv <articles/service-folder/current-file-name.md> <articles/service-folder/new-file-name>
+  git mv <SystemCenterDocs/component-folder/subfolder/current-file-name.md> <SystemCenterDocs/component-folder/subfolder/new-file-name>
 ```
 
 ###Contributors' Guide Links
 
 - [Overview article](./../README.md)
 - [Index of guidance articles](./contributor-guide-index.md)
+
+
+<!--Anchors-->
+[Rules]: #rules
+[Pattern]: #pattern
+[Standard examples]: #standard-examples
+[Marketplace content]: #marketplace-content
+[File name approval]: #file-name-approval
