@@ -1,4 +1,3 @@
-
 ---
 title: What is VMM?
 description: This article provides an overview of System Center VMM and what it can do for your business
@@ -10,8 +9,7 @@ ms.prod:  system-center-threshold
 ms.technology:  virtual-machine-manager
 ---
 
-
-# What is VMM?
+# What is Virtual Machine Manager?
 
 >Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
 
