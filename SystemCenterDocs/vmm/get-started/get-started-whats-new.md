@@ -5,18 +5,25 @@ ms.topic:  article
 author:  rayne-wiselman
 ms.prod:  system-center-threshold
 keywords:  
-ms.date:  2016-06-28
-title:  What s New in VMM in System Center Technical Preview
+ms.date:  2016-08-23
+title:  What's new in VMM in System Center Technical Preview
 ms.technology:  virtual-machine-manager
 ms.assetid:  2cfb6b1c-1694-4473-bd66-6c0fb91fe167
 ---
 
-# What&#39;s New in VMM in System Center Technical Preview
-This topic describes what's new and changed in Virtual Machine Manager (VMM) in System Center 2016 Technical Preview. The topic includes the following sections:
+# What's new in VMM in System Center Technical Preview
+This article describes what's new and changed in Virtual Machine Manager (VMM) in System Center 2016 Technical Preview. The topic includes the following sections:
 
-### [Compute](#bkmkVirtualization)
+## Evaluation software for VMM in System Center 2016 Technical Preview
 
-* Full lifecycle management of newly introduced Nano Server-based hosts and virtual machines (VMs)
+|Name|Description|Location|
+|--------|---------------|------------|
+|Evaluation VHD for VMM in System Center 2016 Technical Preview | Provides a downloadable pre-configured virtual hard disk (VHD) to create a virtual machine that runs an evaluation version of VMM in System Center 2016 Technical Preview.<br/><br/> Intended for evaluation and deployment planning purposes only.| [Microsoft Technet Evaluation Center](https://www.microsoft.com/en-us/evalcenter/evaluate-system-center-technical-preview)|
+
+
+## [Compute](#bkmkVirtualization)
+
+* Full lifecycle management of new Nano Server-based hosts and virtual machines (VMs)
 
 -   Rolling Upgrade of a Windows Server 2012 R2 host cluster to Windows Server 2016 with no downtime for the hosted workloads
 
@@ -60,7 +67,7 @@ The following Compute enhancements are available in VMM 2016 Technical Preview:
 
 ### **Nano Server**
 
-You can now use VMM and perform full lifecycle management of Nano Server-based hosts and virtual machines and leverage the benefits that Nano Server comes with. 
+You can now use VMM and perform full lifecycle management of Nano Server-based hosts and virtual machines and leverage the benefits that Nano Server comes with.
 
 * **Preparing a Nano Server-based host for VMM management**
 The very first step in getting started with the lifecycle management of Nano Server is to prepare a Nano Server-based host for VMM. For details, see [How to add a Nano Server as a Hyper-V host in VMM](../Manage/How-to-add-a-Nano-Server-as-a-Hyper-V-host-in-VMM.md)
@@ -72,7 +79,7 @@ You can now add and manage existing Nano Server-based standalone hosts, compute 
 You can now configure bare metal machines as Nano Server-based hosts, compute clusters, and storage clusters (both dis-aggregated and hyper-converged). For details regarding bare-metal deployment see [Bare-metal deployment of Hyper-V hosts, host clusters, or Scale-Out File Servers in VMM](https://technet.microsoft.com/library/mt238025.aspx)
 
 
-### **Cluster Rolling Upgrade** 
+### **Cluster Rolling Upgrade**
 
 You can now upgrade compute or storage clusters from Windows Server 2012 R2 to Windows Server 2016 Technical Preview with no downtime for the host's workloads. VMM orchestrates the entire workflow of draining the node, evicting it, reinstalling the OS, and adding it back to the cluster.
 
@@ -94,7 +101,7 @@ With VMM 2016, you can now directly add a bare-metal computer to an existing Hyp
 You can now increase/decrease static memory and add/remove virtual network adapter for a running VM. For more details about how to increase or decrease static memory including sample PowerShell scripts, see [Manage Memory for a VM while it is running](../Manage/Manage-Memory-for-a-VM-while-it-is-running.md)
 For more information about adding or removing a vNIC see [How to add or remove a vNIC for a running VM](../Manage/How-to-add-or-remove-a-vNIC.md)
 
-### **Production checkpoints** 
+### **Production checkpoints**
 
 You can now create production checkpoints for VMs. These checkpoints are based on Volume Shadow Copy Service (VSS) and are application-consistent compared to the standard checkpoints that are based on Saved State technology and were not application-consistent.  For more information on production checkpoints see [How to create a production checkpoint for a virtual machine](../Manage/How-to-create-a-production-checkpoint-for-a-virtual-machine.md)
 
@@ -106,23 +113,23 @@ Server App-V application in Service Templates is now deprecated in VMM 2016 and 
 
 The following storage enhancements are available in VMM in System Center 2016 Technical Preview:
 
-### **Storage Spaces Direct**: 
+### **Storage Spaces Direct**:
 
 Windows Server 2016 Technical Preview introduces Storage Spaces Direct which enables you to build highly available storage system that fit your specific needs, regardless of the exact configuration of your available storage systems. You can use VMM to create a Scale-Out File Server running Windows Server Technical Preview and configure it with Storage Spaces Direct. Then you can create storage pools and file shares on the Scale-Out File Server.
 
 -   For more information, see [Deploying Storage Spaces Direct with VMM](../Manage/Deploying-Storage-Spaces-Direct-with-VMM.md)
 -   For information about Storage Spaces Direct, see [Storage Spaces Direct in Windows Server Technical Preview](https://technet.microsoft.com/library/mt126109.aspx)
 
-### **Storage Replica** 
+### **Storage Replica**
 
 With VMM 2016 you can protect data in a volume by synchronously replicating it to another volume. These two volumes are called the Primary and Recovery volumes. You can deploy the Primary and Secondary volumes either to a single cluster, to two different clusters, or to two stand-alone servers. With VMM 2016 you can use PowerShell to setup Storage Replica between two volumes that are part of a single cluster. Once Storage Replica is setup you can use PowerShell to failover from the Primary Volume to the Recovery Volume.
 
 -   For more information, see [Deploying Storage Replica in VMM](../Manage/Deploying-Storage-Replica-in-VMM.md)
 -   For more information about Storage Replica, see [Storage Replica OVerview](https://technet.microsoft.com/library/mt126183.aspx)
 
-### **Quality of Service (QoS) for storage**: 
+### **Quality of Service (QoS) for storage**:
 
-When hosts and storage are under heavy load, you might want to ensure that certain disks, virtual machines, applications, or tenants will not drop below a certain Quality of Service (QoS) for storage. VMM has been improved so it&trade;s easier to specify QoS. 
+When hosts and storage are under heavy load, you might want to ensure that certain disks, virtual machines, applications, or tenants will not drop below a certain Quality of Service (QoS) for storage. VMM has been improved so it&trade;s easier to specify QoS.
 - For more information, see [Managing storage Quality of Service for Scale-out file servers in VMM](../Manage/Managing-storage-Quality-of-Service-policies-for-Scale-Out-File-Servers-in-VMM.md)
 ## <a name="bkmkNetworking"></a>Networking
 
@@ -140,7 +147,7 @@ With VMM 2016, you can deploy the entire Software Defined Networking (SDN) stack
 
 ### **Access Control Lists (ACL) for individual ports**
 
-You can limit and segregate network traffic by specifying port ACLs on VM networks, Virtual Subnets, network interfaces, or an entire VMM stamp through the Network Controller using VMM PowerShell cmdlets. 
+You can limit and segregate network traffic by specifying port ACLs on VM networks, Virtual Subnets, network interfaces, or an entire VMM stamp through the Network Controller using VMM PowerShell cmdlets.
 
 For more information, see [Configure Hyper-V extended port ACLs with System Center VMM 2016 Technical Preview](https://technet.microsoft.com/library/mt721313%28v=sc.16%29.aspx).
 
@@ -172,7 +179,3 @@ You can now configure guarded hosts and shielded VMs to help provide protection 
 -   Convert existing un-shielded VMs to shielded VMs.
 
 For more information and step-by-step instructions for deploying guarded hosts and managing shielded VMs with VMM see [Shielded VMs and Guarded Fabric Deployment Guide for Windows Server 2016 TP5](https://gallery.technet.microsoft.com/Shielded-VMs-and-Guarded-98d2b045)
-
-
-
-
