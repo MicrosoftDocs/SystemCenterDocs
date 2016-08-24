@@ -9,7 +9,7 @@
 
 ## General guidance
 
-- [Contribute to System Center documentation](README.md)
+- [Contribute to System Center documentation](../README.md)
 
 - [Content channel guidance](https://github.com/Azure/azure-content-pr/blob/master/contributor-guide/content-channel-guidance.md)
 
