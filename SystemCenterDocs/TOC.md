@@ -407,7 +407,7 @@
 ###### [How to allocate storage pools to a host group in VMM](VMM/Manage/How-to-allocate-storage-pools-to-a-host-group-in-VMM.md)
 ###### [How to remove storage logical units in VMM](VMM/Manage/How-to-remove-storage-logical-units-in-VMM.md)
 ##### [Deploying Storage Spaces Direct with VMM](VMM/Manage/Deploying-Storage-Spaces-Direct-with-VMM.md)
-##### [Deploying Storage Replica in VMM](VMM/Manage/Deploying-Storage-Replica-in-VMM.md)
+##### [Deploy Storage Replica in VMM](VMM/Manage/manage-storage-replica.md)
 #### [Managing network resources with VMM](VMM/Manage/Managing-network-resources-with-VMM.md)
 ##### [Configuring logical networks, VM networks, and logical switches in VMM](VMM/Manage/Configuring-logical-networks,-VM-networks,-and-logical-switches-in-VMM.md)
 ###### [Overview: plan logical networks, network sites, and IP address pools in VMM](VMM/Manage/Overview--plan-logical-networks,-network-sites,-and-IP-address-pools-in-VMM.md)
