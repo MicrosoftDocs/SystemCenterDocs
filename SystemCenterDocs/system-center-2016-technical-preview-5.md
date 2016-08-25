@@ -54,4 +54,4 @@ You can download these components from the [TechNet Evaluation Center](http://ww
 
 -   [Service Manager](sm/Service-Manager.md)
 
--   [Virtual Machine Manager](vmm/Virtual-Machine-Manager.md)
+-   [Virtual Machine Manager](vmm/vmm.md)
