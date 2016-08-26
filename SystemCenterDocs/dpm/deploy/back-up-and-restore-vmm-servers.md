@@ -5,7 +5,7 @@ ms.topic:  article
 author:  markgalioto
 ms.prod:  system-center-threshold
 keywords:  
-ms.date:  2016-06-30
+ms.date:  2016-08-26
 title:  Back up and restore VMM servers
 ms.technology:  data-protection-manager
 ms.assetid:  e9ed546c-b12b-4a2c-9668-3dc23963114e
