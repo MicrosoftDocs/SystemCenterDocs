@@ -28,7 +28,7 @@ The following documentation is available for VMM:
 
 |Name|Description|Location|
 |--------|---------------|------------|
-|VMM technical documentation|Provides content about VMM for the following areas:<br /><br />-   Getting Started<br />-   Deploying<br />-   Administering<br />-   Configuring Security|[Virtual Machine Manager](../Virtual-Machine-Manager.md) in the TechNet Library|
+|VMM technical documentation|Provides content about VMM for the following areas:<br /><br />-   Getting Started<br />-   Deploying<br />-   Administering<br />-   Configuring Security|[Virtual Machine Manager](../vmm.md) in the TechNet Library|
 |VMM troubleshooting content|Provides information about troubleshooting VMM.|Articles in the [Microsoft Support Knowledge Base](http://support.microsoft.com)<br /><br />[System Center Virtual Machine Manager Forums](http://social.technet.microsoft.com/Forums/systemcenter/home?category=virtualmachinemanager) on the Microsoft website|
 |VMM cmdlet references|Provides the VMM cmdlet help topics.|[Cmdlet Reference for Virtual Machine Manager](http://technet.microsoft.com/library/jj654428.aspx)|
 |Release Notes for System Center 2016 Technical Preview|Provides information about issues and workarounds for VMM|[Release Notes for System Center Technical Preview 5](../../get-started/Release-Notes-for-System-Center-Technical-Preview-5.md)

@@ -27,4 +27,4 @@ The content in this section describes what's new and changed in System Center 20
 
 [What's New in SMA in System Center Technical Preview](../sma/get-started/What-s-new-in-Service-Management-Automation-2016.md)
 
-[What's New in VMM in System Center Technical Preview](../vmm/get-started/What-s-New-in-VMM-in-System-Center-Technical-Preview.md)
+[What's New in VMM in System Center Technical Preview](../vmm/get-started/what-s-new-in-vmm-in-system-center-technical-preview.md)
