@@ -5,7 +5,7 @@ ms.topic:  article
 author:  cfreemanwa
 ms.prod:  system-center-threshold
 keywords:  
-ms.date:  2016-07-25
+ms.date:  2016-08-23
 title:  What s New in System Center Technical Preview 5
 ms.technology:  system-center-2016
 ms.assetid:  4f8701a5-8d55-4ffd-afee-e6341ec6b7f4
@@ -16,7 +16,7 @@ ms.assetid:  4f8701a5-8d55-4ffd-afee-e6341ec6b7f4
 >Applies To: System Center 2016 Technical Preview
 
 
-The content in this section describes what's new and changed in System Center 2016 Technical Preview. The new features and changes listed here are the ones most likely to have the greatest impact as you work with this release.
+This section describes what's new and changed in System Center 2016 Technical Preview. The new features and changes listed here are the ones most likely to have the greatest impact as you work with this release.
 
 > [!IMPORTANT]
 > You should not use this preview release  in production environments.
