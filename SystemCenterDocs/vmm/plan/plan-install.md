@@ -1,7 +1,7 @@
 ---
 title: Plan VMM installation
 description: This article provides planning information for setting up VMM
-author:  raynew
+author:  rayne-wiselman
 manager:  cfreemanwa
 ms.date:  2016-08-29
 ms.topic:  article
@@ -53,7 +53,7 @@ Here's what you'll need before you begin the installation.
 		- On the Configure service account and distributed key management page, you must type the location of the container in AD DS, for example: CN=VMMDKM,DC=corp,DC=contoso,DC=com
 
 
-- **Clustering**: For high availability, the VMM management server can be installed on a failover cluster. [Read more](../plan/vmm-plan-ha-deployment.md) about deploying for high availability
+- **Clustering**: For high availability, the VMM management server can be installed on a failover cluster. [Read more](../plan/plan-ha-deployment.md) about deploying for high availability
 
 - **Domain**: The computer on which you install the VMM management server must be a member of an Active Directory domain. In your environment you might have user accounts in one forest and your VMM servers and host in another. In this environment, you must establish a two-way trust between the two cross-forest domains. One-way trusts between cross-forest domains are not supported in VMM.
 
