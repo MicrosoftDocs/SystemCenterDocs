@@ -1,7 +1,7 @@
 ---
 title: Plan a highly available VMM deployment
 description: This article provides planning information for deploying VMM and its components in high availability mode
-author:  raynew
+author:  rayne0-wiselman
 manager:  cfreemanwa
 ms.date:  2016-08-29
 ms.topic:  article
@@ -43,7 +43,7 @@ You shouldn't install SQL Server on the VMM cluster.
 - If you plan to deploy VMM services that use SQL Server data-tier applications, install the related command-line utilities on the cluster nodes. The command line utility is available in the [SQL Server 2012 feature pack](http://go.microsoft.com/fwlink/p/?LinkId=253555).
 - Each node must be joined to a domain, and computer name shouldn't exceed 15 characters.
 - Don't install on a Hyper-V host. You can install VMM on a VM.
-- Before you start you'll need to set up the VMM service account and distributed key management. [Learn more](../plan/vmm-plan-install.md)
+- Before you start you'll need to set up the VMM service account and distributed key management. [Learn more](../plan/plan-install.md)
 
 
 
@@ -64,4 +64,4 @@ You can create highly-available library servers to ensure that file-based resour
 - If you want to deploy a distributed VMM library in different datacenters you'll need to set up a scheduled copy between the two library shares. No replication is available.
 
 
-C
+
