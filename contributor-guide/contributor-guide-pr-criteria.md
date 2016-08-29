@@ -8,7 +8,7 @@ The updates in the pull request must comply with the following criteria to be me
 
 | Category | Quality review item |
 |----------|---------------------|
-|Prerequisites|	The pull request cannot validation errors or warnings.|
+|Prerequisites|	The pull request cannot have validation errors or warnings.|
 |Prerequisites| The pull request cannot be blocked by a merge conflict.|
 |Repo integrity|	Pull request contains no obvious content regressions.|
 |Repo integrity|	Pull request does not include an embedded repo or any unusual, extraneous files.|
