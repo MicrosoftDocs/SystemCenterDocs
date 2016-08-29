@@ -18,7 +18,7 @@ ms.technology:  virtual-machine-manager
 There are a number of planning steps you should take before you start deploying VMM. These steps help ensure that deployment processes go smoothly by making sure prerequisites are in place for installing and deploying VMM.
 
 -  [Plan a VMM installation](plan-install.md)
--  [Plan a VMM high availability deployment](plan-ha.md) VMM can add, provision, and manage Hyper-V and VMware virtualization hosts and clusters.
+-  [Plan a VMM high availability deployment](plan-ha-deployment.md) VMM can add, provision, and manage Hyper-V and VMware virtualization hosts and clusters.
 -  [Plan the VMM fabric](plan-fabric.md)
 -  [Plan the compute fabric](plan-compute.md)
 -  [Plan the networking fabric](plan-network.md)
