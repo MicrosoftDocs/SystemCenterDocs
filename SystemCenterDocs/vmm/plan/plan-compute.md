@@ -1,7 +1,7 @@
 ---
 title: Plan the VMM compute fabric
 description: This article provides planning steps for setting up and provisioning the VMM compute fabric
-author:  raynew
+author:  rayne-wiselman
 manager:  cfreemanwa
 ms.date:  2016-08-29
 ms.topic:  article
