@@ -1,7 +1,7 @@
 ---
 title: Plan a highly available VMM deployment
 description: This article provides planning information for deploying VMM and its components in high availability mode
-author:  rayne0-wiselman
+author:  rayne-wiselman
 manager:  cfreemanwa
 ms.date:  2016-08-29
 ms.topic:  article
