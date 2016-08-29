@@ -1,7 +1,7 @@
 ---
 title: Plan the VMM fabric
 description: This article provides planning information for the VMM fabric
-author:  raynew
+author:  rayne-wiselman
 manager:  cfreemanwa
 ms.date:  2016-08-29
 ms.topic:  article
