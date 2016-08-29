@@ -101,9 +101,9 @@ The computer on which you install the VMM console must be a member of an Active 
 
     - Use of AlwaysOn Availability Groups in Microsoft SQL Server is supported, but it's important to review the differences between the two availability modes, synchronous-commit and asynchronous-commit. [Learn more](http://msdn.microsoft.com/library/ff877884.aspx#AvailabilityModes).
 
-        - With asynchronous-commit mode, the replica of the database can be out of date for a period of time after each commit. This can make it appear as if the database were back in time which might cause loss of customer data, inadvertent disclosure of information, or possibly elevation of privilege. [Learn more](Reviewing-Availability-and-Recovery-Options-for-Protecting-the-VMM-Database.md).
+        - With asynchronous-commit mode, the replica of the database can be out of date for a period of time after each commit. This can make it appear as if the database were back in time which might cause loss of customer data, inadvertent disclosure of information, or possibly elevation of privilege. 
 
-        - You can use synchronous-commit mode as a configuration for remote-site availability scenarios. [Learn more](http://technet.microsoft.com/library/ff877884.aspx) and [Getting Started with AlwaysOn Availability Groups (SQL Server)](http://technet.microsoft.com/library/gg509118.aspx).
+        - You can use synchronous-commit mode as a configuration for remote-site availability scenarios. 
 
 - The SQL Server service must use an account that has permission to access Active Directory Domain Services (AD DS). For example, you can specify the Local System Account, or a domain user account. Do not specify a local user account.
 
