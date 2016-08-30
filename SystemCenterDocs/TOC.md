@@ -72,6 +72,7 @@
 ##### [How to Upgrade a Web Console to System Center 2016 - Operations Manager](om/Deploy/How-to-Upgrade-a-Web-Console-to-System-Center-2016---Operations-Manager.md)
 ##### [How to Upgrade Reporting to System Center 2016 - Operations Manager](om/Deploy/How-to-Upgrade-Reporting-to-System-Center-2016---Operations-Manager.md)
 ### [Manage](OM/Manage/System-Center-2016---Operations-Manager-Operations-Guide.md)
+#### [Quick Reference to Operations Manager Tasks](OM/Manage/Quick-Reference-to-Operations-Manager-Tasks.md)
 ##### [Managing Discovery and Agents](OM/Manage/Managing-Discovery-and-Agents.md)
 ###### [Operations Manager Agent Installation Methods](OM/Manage/Operations-Manager-Agent-Installation-Methods.md)
 ###### [Install Agent on Windows Using the Discovery Wizard](OM/Manage/Install-Agent-on-Windows-Using-the-Discovery-Wizard.md)
