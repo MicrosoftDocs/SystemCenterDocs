@@ -181,7 +181,7 @@ In the physical computer profile, you can select to filter the drivers by tags, 
 
 ## Relocate the VMM library
 
-- If you upgraded to a high availability VMM management server, we recommend that you relocate your VMM library to a high availability file server. [Learn more](vmm-plan-ha-deployment)
+- If you upgraded to a high availability VMM management server, we recommend that you relocate your VMM library to a high availability file server. 
 - After you create a new VMM library, you will want to move the resources from the previous VMM library to the new VMM library.
 - To preserve the custom fields and properties of saved virtual machines in the previous VMM library, deploy the saved virtual machines to a host and then save the virtual machines to the new VMM library.
 -  Note that operating system and hardware profiles cannot be moved. You need to re-create these profiles.
