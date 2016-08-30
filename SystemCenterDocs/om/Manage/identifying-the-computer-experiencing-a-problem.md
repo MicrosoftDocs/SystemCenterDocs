@@ -1,0 +1,47 @@
+---
+title: Identifying the Computer Experiencing a Problem
+authors:mgoedtel
+manager:cfreemanwa
+ms.custom: na
+ms.prod: system-center-threshold
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - operations-manager
+ms.tgt_pltfrm: na
+ms.topic: article
+ms.date: 2016-08-24
+ms.assetid: 058aed83-3e31-487f-98fb-aca98c50ddbc
+---
+
+# Identifying the Computer Experiencing a Problem
+
+This topic helps you answer questions such as "I see an alert that says logical disk defragmentation is high. Where is it high?"  
+  
+### To identify the computer experiencing a problem  
+  
+1.  Click the alert.  
+  
+    ![Select alert in Results pane](../media/om2016-alerts-review.png)  
+  
+2.  Look in the **Details** section for the **Path**.  
+  
+    ![See Path in alert details](../media/om2016-alert-path.png)  
+  
+    Notice that this alert also includes the affected computer in the **Description**.  
+  
+3.  Click **Windows Computers** to view the state of the computer.  
+  
+    ![Windows Computers monitoring view](../media/om2016-stateview-windowscomputers.png)  
+  
+4.  Right\-click the computer, point to **Open**, and click **Health Explorer**:  
+  
+    ![Open Health Explorer](../media/om2016-healthexplorer-windowscomputer.png)  
+  
+In this illustration, you see that the logical disk fragmentation levels for C: and D: on this computer are in a warning state. Notice that the state rolls up to the **Performance** state for each disk, then to **Hardware Performance** for the computer, then to **Performance** for the computer, and finally to **Entity Health** for the computer.  
+  
+## Next steps
+  
+[How Heartbeats Work in Operations Manager](How-Heartbeats-Work.md)  
+[Resolving Heartbeat Alerts](Resolving-Heartbeat-Alerts.md)  
+
