@@ -1,4 +1,3 @@
-
 ---
 title: Plan the VMM networking fabric
 description: This article provides information about preparing the VMM network fabric
