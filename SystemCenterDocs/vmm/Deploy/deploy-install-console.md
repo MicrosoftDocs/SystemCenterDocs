@@ -17,7 +17,7 @@ This article describes how to install the VMM console on a remote computer and c
 
 The remote console can be installed on:
 
-- Client operating systems running Windows 8 or later.
+- Client operating systems running Windows 8 or later
 - Server operating systems running Windows Server 2008 R2 with SP1 or later
 
 You need to be a local admin on the computer on which you're installing the console.
@@ -25,7 +25,7 @@ You need to be a local admin on the computer on which you're installing the cons
 
 ## Run setup
 
-1.  Review the planning instructions. Then right-click setup.exe for VMM > **Run as administrator**.
+1.  Review the planning instructions. Then, right-click setup.exe for VMM > **Run as administrator**.
 2.  On the main setup page, click **Install** and on the **Select features to install** page, select the **VMM console** check box, and then click **Next**.On the **Please read this notice page**, click **I agree with the terms of this notice**, and then click **Next**.
 3.  Review the information on the **Customer Experience Improvement Program** page, and then click **Next**. On the **Microsoft Update** page, select whether you want to use Microsoft Update, and then click **Next**. This page won't appear if updates are already installed.
 4.  On the **Installation location** page, type an installation path for the VMM program files or use the default path, and then click **Next**. Setup checks that the computer meets the console installation requirements.
