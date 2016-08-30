@@ -15,7 +15,7 @@ ms.technology:  virtual-machine-manager
 
 >Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
 
-There are a number of planning steps you should take before you start deploying VMM. These steps help ensure that deployment processes go smoothly by making sure prerequisites are in place for installing and deploying VMM.
+There are a number of planning steps you should take before you start deploying System Center 2016 - Virtual Machine Manager (VMM). These steps help  deployment processes go smoothly by making sure prerequisites are in place for installing and deploying VMM.
 
 -  [Plan a VMM installation](plan-install.md)
 -  [Plan a VMM high availability deployment](plan-ha-deployment.md) VMM can add, provision, and manage Hyper-V and VMware virtualization hosts and clusters.
