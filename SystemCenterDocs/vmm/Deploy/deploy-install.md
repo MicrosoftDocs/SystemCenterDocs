@@ -13,6 +13,8 @@ ms.technology:  virtual-machine-manager
 
 >Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
 
+Use this article to install the System Center 2016 - Virtual Machine Manager (VMM) management server.
+
 ## Before you begin
 
 - Review the [system requirements](../../system-requirements/System-Requirements-for-System-Center-Technical-Preview.md)
@@ -105,8 +107,7 @@ Parameter | Details
 /SqlDBAdminDomain <domainName> | Specifies the domain name for the administrator account for the SQL Server database. Use this parameter if the current user does not have administrative rights to SQL Server.
 /SqlDBAdminName <userName> | Specifies the user name for the administrator account for the SQL Server database. Use this parameter if the current user does not have administrative rights to SQL Server.
 /SqlDBAdminPassword <password> | Specifies the password for the administrator account for the SQL Server database. Use this parameter if the current user does not have administrative rights to SQL Server.
-/IACCEPTSCEULA | Notes acceptance of the Microsoft Software License Terms. This is a mandatory parameter.<br/><br/> For example, to use a VMServer.ini file that is stored in C:\Temp with a SQL Server administrator account of contoso\SQLAdmin01 and a VMM service account of contoso\VMMadmin14, use the following command:
-setup.exe /server /i /f C:\Temp\VMServer.ini /SqlDBAdminDomain contoso /SqlDBAdminName SQLAdmin01 /SqlDBAdminPassword password123 /VmmServiceDomain contoso /VmmServiceUserName VMMadmin14 /VmmServiceUserPassword password456 /IACCEPTSCEULA
+/IACCEPTSCEULA | Notes acceptance of the Microsoft Software License Terms. This is a mandatory parameter.<br/><br/> For example, to use a VMServer.ini file that is stored in C:\Temp with a SQL Server administrator account of contoso\SQLAdmin01 and a VMM service account of contoso\VMMadmin14, use the following command: **setup.exe /server /i /f C:\Temp\VMServer.ini /SqlDBAdminDomain contoso /SqlDBAdminName SQLAdmin01 /SqlDBAdminPassword password123 /VmmServiceDomain contoso /VmmServiceUserName VMMadmin14 /VmmServiceUserPassword password456 /IACCEPTSCEULA**
 
 ## Uninstall VMM or the VMM console
 
