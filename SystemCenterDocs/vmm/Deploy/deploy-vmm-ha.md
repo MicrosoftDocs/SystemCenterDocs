@@ -13,11 +13,7 @@ ms.technology:  virtual-machine-manager
 
 >Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
 
-For resilience and scalability you can deploy System Center 2016 - Virtual Machine Manager (VMM) in high availability mode, as follows:
-
-- [Deploy the VMM management server in a failover cluster](deploy-vmm-server-ha.md)
-- [Make library server file shares highly available](deploy-library-ha.md)
-- [Deploy the SQL Server VMM database as highly available](deploy-sql-ha.md)
+For resilience and scalability you can deploy System Center 2016 - Virtual Machine Manager (VMM) in high availability mode.
 
 ## Before you start
 
@@ -30,3 +26,11 @@ You'll need to prepare for a  high availability deployment
 	- If you plan to deploy VMM services that use SQL Server data-tier applications, install the related command-line utilities on your VMM management server. The command line utility is available in the [SQL Server 2012 feature pack](http://go.microsoft.com/fwlink/p/?LinkId=253555).
 	- Each computer must be joined to a domain, and computer name shouldn't exceed 15 characters.
 - Don't install on a Hyper-V host. You can install VMM on a VM.
+
+
+## Deploy components
+
+- [Deploy the VMM management server in a failover cluster](deploy-vmm-server-ha.md)
+- [Make library server file shares highly available](deploy-library-ha.md)
+- [Deploy the SQL Server VMM database as highly available](deploy-sql-ha.md)
+
