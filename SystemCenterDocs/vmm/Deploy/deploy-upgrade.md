@@ -13,6 +13,8 @@ ms.technology:  virtual-machine-manager
 
 >Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
 
+This article describes prerequisites for System Center 2016 - Virtual Machine Manager (VMM) upgrade. It includes upgrade steps, and describes tasks you should complete after the upgrade finishes.
+
 
 ## Before you begin
 
@@ -178,8 +180,6 @@ In the physical computer profile, you can select to filter the drivers by tags, 
 
 
 ## Relocate the VMM library
-
-
 
 - If you upgraded to a high availability VMM management server, we recommend that you relocate your VMM library to a high availability file server. [Learn more](vmm-plan-ha-deployment)
 - After you create a new VMM library, you will want to move the resources from the previous VMM library to the new VMM library.
