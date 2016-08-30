@@ -13,11 +13,13 @@ ms.technology:  virtual-machine-manager
 
 >Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
 
-This article describes how to plan your VMM compute fabric. The VMM compute fabric consists of the VMM library, virtualization hosts, host groups, and other infrastructure servers.
+This article describes how to plan your System Cemter 2016 - Virtual Machine Manager (VMM) compute fabric. The VMM compute fabric consists of the VMM library, virtualization hosts, host groups, and other infrastructure servers.
 
 ## Plan the VMM library
 
-- Verify system requirements for the VMM library before you install VMM.
+Note the following:
+
+- You should verify system requirements for the VMM library before you install VMM.
 - VMM deploys the default library share on the VMM server. After setup is complete you can't remove or relocate the default library share so consider it's location before you install VMM.
 - If you're using a SAN the library server should have the same SAN as the hosts that use the library. This ensures that the library server and the hosts can access the same LUNs on the SAN for faster file transfers.
 - If you connect to a library from virtualization hosts across a LAN the library server should be as close as possible to the hosts.
