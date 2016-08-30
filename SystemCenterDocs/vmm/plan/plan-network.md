@@ -15,7 +15,7 @@ ms.technology:  virtual-machine-manager
 
 >Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
 
-This article describes how to plan your networking fabric in VMM.
+This article describes how to plan your networking fabric in System Center 2016 - Virtual Machine Manager (VMM).
 
 ## Networking components
 
@@ -46,27 +46,27 @@ Here's what you'll need to plan:
 
 Here's what you'll need to do:
 
-1. Identify baseline logical networks: Identify a set of initial logical networks that mirror the physical networks in your
-2. environment.
-3. Identify additional logical networks for specific requirements: Define logical networks with  specific purpose or perform a particular function within your environment. One of the benefits of logical networks is that you can separate computer and network services with different business purposes without needing to change your physical infrastructure.
-4. Determine isolation requirements: Identify which logical networks need to be isolated and how that isolation will be enforced, either through physical separation, VLAN/PVLAN, or network virtualization. Remember that you need isolation if the logical network is going to be used by multiple tenants. If you have a single tenant or customer isolation is optional. In turn, if you don't need isolation you'll only need a single VM network that maps to the logical network.
-5. Determine the network sites, VLANs, PVLANs, and IP pools that need to be defined for each logical network you have identified.
-6. Figure out which logical network will associate with which virtualization hosts.
+1. Identify baseline logical networks: Identify a set of initial logical networks that mirror the physical networks in your environment.
+2. Identify additional logical networks for specific requirements: Define logical networks with  specific purpose or perform a particular function within your environment. One of the benefits of logical networks is that you can separate computer and network services with different business purposes without needing to change your physical infrastructure.
+3. Determine isolation requirements: Identify which logical networks need to be isolated and how that isolation will be enforced, either through physical separation, VLAN/PVLAN, or network virtualization. Remember that you need isolation if the logical network is going to be used by multiple tenants. If you have a single tenant or customer isolation is optional. In turn, if you don't need isolation you'll only need a single VM network that maps to the logical network.
+4. Determine the network sites, VLANs, PVLANs, and IP pools that need to be defined for each logical network you have identified.
+5. Figure out which logical network will associate with which virtualization hosts.
 
 ## Plan logical networks, network sites, and IP address pools
 Use the following table to plan for the logical networks, VM networks, and IP address pools you will need to support a virtualized infrastructure.
 
 |Item to review or determine|Description and (as needed) links within this topic|
 |-------------------------------|---------------------------------------------------------|
-|1. Logical networks already created by default by VMM|When you add a Hyper-V host to VMM, logical networks may be created by default, based on DNS suffixes. |
-|2. How many logical networks you need, and the purpose of each|Plan to create logical networks to represent the network topology for your hosts. For example, if you need a management network, a network used for cluster heartbeats, and a network used by virtual machines, create a logical network for each.|
-|3. Categories that your logical networks fall into|Review the purposes of your logical networks, and categorize them:<br /><br />-   **No isolation**: For example, a cluster-heartbeat network for a host cluster.<br />-   **VLAN**: Isolation provided by your VLANs.<br />-   **Virtualized**: Provides a foundation for Hyper-V network virtualization.<br />-   **External**: Managed through a network manager (vendor network-management console or virtual switch extension manager) outside of VM. <br/><br/>-   **IPAM**: Managed through an IP Address Management (IPAM) server. |
-|4. How many network sites are needed in each logical network|One common way to plan network sites is around host groups and host locations. For example, for a "Seattle" host group and a "New York" host group, if you had a MANAGEMENT logical network, you might create two network sites, called **MANAGEMENT - Seattle** and **MANAGEMENT - New York**. |
-|5. Which VLANs and/or IP subnets are needed in each network site|The VLANs and IP subnets you assign should match your topology. |
-|6. Which logical networks (or specifically, which network sites) will need IP address pools|Determine which logical networks will use static IP addressing or load balancing, and which logical networks will be the foundation for network virtualization. For these logical networks, plan for IP address pools. |
+| Logical networks already created by default by VMM|When you add a Hyper-V host to VMM, logical networks may be created by default, based on DNS suffixes. |
+| How many logical networks you need, and the purpose of each|Plan to create logical networks to represent the network topology for your hosts. For example, if you need a management network, a network used for cluster heartbeats, and a network used by virtual machines, create a logical network for each.|
+| Categories that your logical networks fall into|Review the purposes of your logical networks, and categorize them:<br /><br />-   **No isolation**: For example, a cluster-heartbeat network for a host cluster.<br />-   **VLAN**: Isolation provided by your VLANs.<br />-   **Virtualized**: Provides a foundation for Hyper-V network virtualization.<br />-   **External**: Managed through a network manager (vendor network-management console or virtual switch extension manager) outside of VM. <br/><br/>-   **IPAM**: Managed through an IP Address Management (IPAM) server. |
+| How many network sites are needed in each logical network|One common way to plan network sites is around host groups and host locations. For example, for a "Seattle" host group and a "New York" host group, if you had a MANAGEMENT logical network, you might create two network sites, called **MANAGEMENT - Seattle** and **MANAGEMENT - New York**. |
+| Which VLANs and/or IP subnets are needed in each network site|The VLANs and IP subnets you assign should match your topology. |
+| Which logical networks (or specifically, which network sites) will need IP address pools|Determine which logical networks will use static IP addressing or load balancing, and which logical networks will be the foundation for network virtualization. For these logical networks, plan for IP address pools. |
 
 ## Logical networks created by default
-In VMM, in the **Fabric** workspace, under **Networking** > **Logical networks**, you might see logical networks created by VMM by default. VMM creates these networks to ensure that when you add a host, you have at least one logical network for deploying virtual machines and services. No network sites are created automatically. 
+
+In the VMM console, **Fabric** >**Networking** > **Logical networks**, you might see logical networks created by VMM by default. VMM creates these networks to ensure that when you add a host, you have at least one logical network for deploying virtual machines and services. No network sites are created automatically. 
 
 To illustrate how these settings work, suppose that you have not changed the settings, and you add a Hyper-V host to VMM management. In this case, VMM automatically creates logical networks that match the first DNS suffix label of the connection-specific DNS suffix on each host network adapter. On the logical network,VMM also creates a VM network that is configured with “no isolation.” For example, if the DNS suffix for the host network adapter was corp.contoso.com, VMM would create a logical network named “corp,” and on it, a VM network named “corp” that is configured with no isolation.
 
