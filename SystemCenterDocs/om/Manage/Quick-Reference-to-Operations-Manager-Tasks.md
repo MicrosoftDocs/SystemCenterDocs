@@ -1,14 +1,13 @@
 ---
 title:  Quick Reference to Operations Manager Tasks
 description:  
-manager:  cfreemanwa
-ms.topic:  article
-author:  mgoedtel
-ms.prod:  system-center-threshold
-keywords:  
-ms.date:  2016-08-24
-ms.technology:  operations-manager
-ms.assetid:  f270994e-2b88-4e58-945f-f1c7954e0e0c
+author: mgoedtel
+manager: cfreemanwa
+ms.date: 2016-08-29
+ms.custom: na
+ms.prod: system-center-threshold
+ms.technology: operations-manager
+ms.topic: article
 ---
 
 
@@ -39,7 +38,7 @@ The following table gives a quick reference for where to perform common tasks an
 
 ## Next steps
 
-[Operations Guide for System Center 2016 - Operations Manager](System-Center-2016-Operations-Manager-Operations-Guide.md)
+[Operations Guide for System Center 2016 - Operations Manager](System-Center-2016--Operations-Manager-Operations-Guide.md)
 
 
 

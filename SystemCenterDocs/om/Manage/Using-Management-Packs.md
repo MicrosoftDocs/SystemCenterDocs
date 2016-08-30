@@ -1,14 +1,13 @@
 ---
 title:  Using Management Packs
 description:  
-manager:  cfreemanwa
-ms.topic:  article
-author:  mgoedtel
-ms.prod:  system-center-threshold
-keywords:  
-ms.date:  2016-08-24
-ms.technology:  operations-manager
-ms.assetid:  def60c40-34d4-4077-b76e-9d71d903b0e2
+author: mgoedtel
+manager: cfreemanwa
+ms.date: 2016-08-29
+ms.custom: na
+ms.prod: system-center-threshold
+ms.technology: operations-manager
+ms.topic: article
 ---
 
 
@@ -38,7 +37,7 @@ Management packs might also contain tasks, diagnostics, and recovery tools and g
 
 -   [Operations Manager](assetId:///d88087e5-b517-428e-bde9-8df9fe9366a6)
 
--   [System Center 2016 - Operations Manager Operations Guide](System-Center-2016-Operations-Manager-Operations-Guide.md)
+-   [System Center 2016 - Operations Manager Operations Guide](System-Center-2016--Operations-Manager-Operations-Guide.md)
 
 
 

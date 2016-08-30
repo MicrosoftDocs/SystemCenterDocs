@@ -30,13 +30,5 @@ A user role is the combination of a profile and scope as shown in as shown in th
   
 -   [Operations Associated with User Role Profiles](Operations-Associated-with-User-Role-Profiles.md)  
   
-## Next steps
 
-[Managing Access in Operations Manager](../../om/manage/Managing-Access-in-Operations-Manager.md)  
-[Operations Manager Accounts](../Topic/Operations%20Manager%20Accounts.md)  
-[How to Create a New Action Account in Operations Manager](../../om/manage/How-to-Create-a-New-Action-Account-in-Operations-Manager.md)  
-[How to Manage the Report Server Unattended Execution Account in Operations Manager](../../om/manage/How-to-Manage-the-Report-Server-Unattended-Execution-Account-in-Operations-Manager.md)  
-[Control Access by Using the Health Service Lockdown Tool in Operations Manager](../../om/manage/Control-Access-by-Using-the-Health-Service-Lockdown-Tool-in-Operations-Manager.md)  
-[Accessing UNIX and Linux Computers in Operations Manager](../../om/manage/Accessing-UNIX-and-Linux-Computers-in-Operations-Manager.md)  
-[Managing Run As Accounts and Profiles](../../om/manage/Managing-Run-As-Accounts-and-Profiles.md)  
   
