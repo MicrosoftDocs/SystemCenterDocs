@@ -24,7 +24,7 @@ Read the planning steps for a highly available VMM deployment.
 
 This procedure presumes you're setting up a single failover cluster with two or more file servers.
 
-1.Click **Server Manager** > **Manage** > **Add Roles and Features**.
+1. Click **Server Manager** > **Manage** > **Add Roles and Features**.
 2. In **Select installation type** click **Role-based or feature-based installation**.
 3. In **Select destination server** click the server you want to configure for failover clustering. On Select features click **Failover Clustering**. Click **Add Feature** to install the failover cluster management tools.
 4. In **Confirm installation selections** click **Install**. A server restart isn't needed.
