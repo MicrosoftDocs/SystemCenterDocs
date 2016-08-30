@@ -16,12 +16,12 @@ ms.technology:  virtual-machine-manager
 
 The System Center 2016 0 Virtual Machine Manager (VMM) fabric is an abstracted collection of resources that can be discovered, identified, and managed.  
 
--   **Compute**: Resources in the compute (server) group include infrastructure services such as  pre-boot execution environment (PXE) servers to handle bare-metal deployment of Hyper-V host servers, update servers (WSUS), and virtualization hosts and clusters (Hyper-V, VMware, Citrix)
--   **Network**: Network resources including VMM networks, load balancers, and gateways.
--   **Storage**: Storage resources including storage arrays, file servers, and storage pools.
+-   **Compute**: Resources in the compute fabric include virtualization servers (Hyper-V and VMware), VMs, and infrastructure services such as  pre-boot execution environment (PXE) servers to handle bare-metal deployment of Hyper-V host servers, and update servers.
+-   **Network**: The network fabric includes VMM networks, load balancers, and gateways.
+-   **Storage**: The storage fabric includes storage arrays, file servers, and storage pools.
 
 
-This article describes planning steps you should perform before you set up the VMM fabric components.
+This article summarizes planning steps you should perform before you set up components in VMM fabric.
 
 ## Plan the compute fabric
 
