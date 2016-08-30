@@ -15,17 +15,17 @@ In System Center 2016 - Operations Manager, groups are logical collections of ob
   
 Some of the purposes for using groups are:  
   
--   To scope overrides to a specific subset of computers. For more information, see [Using Classes and Groups for Overrides in Operations Manager](Using-Classes-and-Groups-for-Overrides-in-Operations-Manager.md).  
+-   To scope overrides to a specific subset of computers. 
   
--   To scope alert notifications or product connector subscriptions for a specific set of computers. [How to Create Subscriptions Using Classes and Groups](How-to-Create-Subscriptions-Using-Classes-and-Groups.md)  
+-   To scope alert notifications or product connector subscriptions for a specific set of computers.   
   
 -   To scope user consoles, so the user role only sees the servers they are responsible for.  
   
 -   To scope a set of computers that need to go into a scheduled maintenance mode.  
   
--   To scope application views only to computers that host a given application. For more information, see [Guidance for Scoping and Targeting Views](Guidance-for-Scoping-and-Targeting-Views.md).  
+-   To scope application views only to computers that host a given application. 
   
--   To create a rollup health state view of an otherwise unrelated set of computers. For more information, see [Guidance for Scoping and Targeting Views](Guidance-for-Scoping-and-Targeting-Views.md).  
+-   To create a rollup health state view of an otherwise unrelated set of computers. 
   
 -   To create a set of computers for a report.  
   
@@ -42,10 +42,7 @@ Using the Operations console, you can only create instance groups. To create a c
 ## Creating and Managing Groups topics  
   
 -   [How to Create Groups in Operations Manager](How-to-Create-Groups-in-Operations-Manager.md)  
-  
--   [How to View Group Members, State, and Diagram](How-to-View-Group-Members-State-and-Diagram.md)  
-  
-  
+   
 ## Next steps
  
 [How to Suspend Monitoring Temporarily by Using Maintenance Mode](How-to-Suspend-Monitoring-Temporarily-by-Using-Maintenance-Mode.md)  
