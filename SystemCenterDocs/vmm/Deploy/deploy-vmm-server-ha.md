@@ -22,7 +22,7 @@ This article describes the steps for deploying a highly available System Center 
 
 ## Set up the failover cluster
 
-1.Click **Server Manager** > **Manage** > **Add Roles and Features**.
+1. Click **Server Manager** > **Manage** > **Add Roles and Features**.
 2. In **Select installation type** click **Role-based or feature-based installation**.
 3. In **Select destination server** click the server you want to configure for failover clustering. On Select features click **Failover Clustering**. Click **Add Feature** to install the failover cluster management tools.
 4. In **Confirm installation selections** click **Install**. A server restart isn't needed.
@@ -51,5 +51,5 @@ This article describes the steps for deploying a highly available System Center 
 11. Finish installing VMM. You can't specify a library share right now. In a highly available deployment you create the library share after installation is complete.
 
 ## Install VMM on the second cluster node
-1. Run setup and confirm that you want **to add this server as a node** to the highly available deployment.
+1. Run setup and confirm that you want to **add this server as a node** to the highly available deployment.
 2. During the wizard you'll need to specify the service account password. You don't need to specify other information.
