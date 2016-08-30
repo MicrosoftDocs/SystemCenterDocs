@@ -13,7 +13,10 @@ ms.technology:  virtual-machine-manager
 
 >Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
 
-## Prepare for VMM management server installation
+
+Before installing System Center 2016 - Virtual Machine Manager (VMM) review the prerequisites described in this article.
+
+## VMM management server
 
 - **Windows ADK software**: You'll need to install the Windows Assessment and Deployment (ADK) for Windows 10 kit on the VMM management server. A link to Windows ADK for Windows 10 is available from setup, or you can download it from the [Microsoft Download Center](https://msdn.microsoft.com/windows/hardware/dn913721.aspx). When you install Windows ADK, select the **Deployment Tools** and **Windows Preinstallation Environment** features.
 
@@ -49,7 +52,7 @@ ms.technology:  virtual-machine-manager
 		- On the Configure service account and distributed key management page, you must type the location of the container in AD DS, for example: CN=VMMDKM,DC=corp,DC=contoso,DC=com
 
 
-- **Clustering**: For high availability, the VMM management server can be installed on a failover cluster. [Read more](../plan/vmm-plan-ha-deployment.md) about deploying for high availability
+- **Clustering**: For high availability, the VMM management server can be installed on a failover cluster.
 
 - **Domain**: The computer on which you install the VMM management server must be a member of an Active Directory domain. In your environment you might have user accounts in one forest and your VMM servers and host in another. In this environment, you must establish a two-way trust between the two cross-forest domains. One-way trusts between cross-forest domains are not supported in VMM.
 
