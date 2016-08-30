@@ -1,21 +1,19 @@
 ---
 title: How to Assign Members to User Roles
+author: mgoedtel
+manager: cfreemanwa
+ms.date: 2016-08-29
 ms.custom: na
 ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - operations-manager
-ms.tgt_pltfrm: na
+ms.technology: operations-manager
 ms.topic: article
-ms.assetid: 3227d809-5f3f-4e64-8356-8029c2e5b6f7
-author:mgoedtel
-manager:cfreemanwa
 ---
+
 # How to Assign Members to User Roles
-[!INCLUDE[om12long](../../om/manage/includes/om12long_md.md)] provides eight standard user roles that are created during setup. You can assign groups and individuals to these built\-in user roles to provide them with the ability to perform certain tasks and to access certain information.  
+
+System Center 2016 - Operations Manager provides eight standard user roles that are created during setup. You can assign groups and individuals to these built\-in user roles to provide them with the ability to perform certain tasks and to access certain information.  
   
-The following table describes the built\-in user roles, which have global scope for the management group. To limit the scope for a user, create a new user role. For more information, see [Implementing User Roles](../../om/manage/Implementing-User-Roles.md).  
+The following table describes the built\-in user roles, which have global scope for the management group. To limit the scope for a user, create a new user role. For more information, see [Implementing User Roles](Implementing-User-Roles.md).  
   
 > [!IMPORTANT]  
 > When you add a group to the Operations Manager Administrators user role, you must restart the management server for the change to take effect.  
@@ -45,9 +43,5 @@ The following table describes the built\-in user roles, which have global scope 
   
 6.  Click **OK** to close the properties for the user role.  
   
-## See Also  
-[Implementing User Roles](../../om/manage/Implementing-User-Roles.md)  
-[Choose a Profile](../../om/manage/Choose-a-Profile.md)  
-[Define a Scope Using Operations Manager Groups](../../om/manage/Define-a-Scope-Using-Operations-Manager-Groups.md)  
-[Assign Tasks and Views](../../om/manage/Assign-Tasks-and-Views.md)  
+
   
