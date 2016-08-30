@@ -1,22 +1,18 @@
 ---
 title: How to View All Rules and Monitors Running on an Agent-Managed Computer
+author: mgoedtel
+manager: cfreemanwa
+ms.date: 2016-08-29
 ms.custom: na
 ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - operations-manager
-ms.tgt_pltfrm: na
+ms.technology: operations-manager
 ms.topic: article
-ms.assetid: 52d7d9a1-3296-4959-b5b7-2dac836c6752
-author :mgoedtel
-manager:cfreemanwa
 ---
 # How to View All Rules and Monitors Running on an Agent-Managed Computer
 
 Administrators for System Center 2016 - Operations Manager sometimes want to know which rules and monitors are running on a computer. This is simple to do with the **Show Running Rules and Monitors for this Health Service** task.  
   
-### To view all rules and monitors running on a computer  
+## To view all rules and monitors running on a computer  
   
 1.  Open the Operations console and click **Monitoring**.  
   
@@ -30,7 +26,5 @@ Administrators for System Center 2016 - Operations Manager sometimes want to kno
   
 6.  The Task Status dialog box appears. When the task is completed, you can click **Copy Text** or **Copy HTML** and paste the task output in the appropriate tool for further review.  
   
-## Next steps
 
-[How Heartbeats Work in Operations Manager](How-Heartbeats-Work.md)  
   

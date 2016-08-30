@@ -1,16 +1,12 @@
 ---
 title: Managing Alerts
+author: mgoedtel
+manager: cfreemanwa
+ms.date: 2016-08-29
 ms.custom: na
 ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - operations-manager
-ms.tgt_pltfrm: na
+ms.technology: operations-manager
 ms.topic: article
-ms.assetid: ea33c329-3933-4598-b846-5a549859b0d5
-author:mgoedtel
-manager:cfreemanwa
 ---
 
 # Managing Alerts

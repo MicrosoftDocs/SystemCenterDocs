@@ -1,16 +1,12 @@
 ---
 title: Examining Properties of Alerts, Rules, and Monitors
+author: mgoedtel
+manager: cfreemanwa
+ms.date: 2016-08-29
 ms.custom: na
 ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - operations-manager
-ms.tgt_pltfrm: na
+ms.technology: operations-manager
 ms.topic: article
-ms.assetid: 51b60a9a-0bfb-4bea-b89f-9f1797fc5a09
-author:mgoedtel
-manager:cfreemanwa
 ---
 
 # Examining Properties of Alerts, Rules, and Monitors
@@ -51,5 +47,4 @@ The properties pages for alerts, rules, and monitors offer useful information an
 |Company Knowledge|Administrators can add knowledge to rules, monitors, and alerts to expand the troubleshooting information in the product knowledge to provide company\-specific information for operators.|  
 |Overrides|Administrators can apply overrides to the monitor on the overrides tab. Click **View summary** to view all overrides applied to the monitor.|  
   
-## Next steps  
-[How Heartbeats Work in Operations Manager](How-Heartbeats-Work.md)  
+

@@ -1,16 +1,12 @@
 ---
 title: How to Reset Health
+author: mgoedtel
+manager: cfreemanwa
+ms.date: 2016-08-29
 ms.custom: na
 ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - operations-manager
-ms.tgt_pltfrm: na
+ms.technology: operations-manager
 ms.topic: article
-ms.assetid: 9c36ccb4-0957-4879-9627-7603afcd7df0
-author:mgoedtel
-manager:cfreemanwa
 ---
 
 # How to Reset Health
@@ -35,5 +31,3 @@ Some monitors can set state to critical \(red\), warning \(yellow\), and healthy
   
 4.  Return to the Monitoring workspace, right\-click the alert, point to **Set Resolution State**, and click **Closed**.  
   
-## See Also  
-[How Heartbeats Work in Operations Manager](How-Heartbeats-Work.md)  

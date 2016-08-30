@@ -1,17 +1,12 @@
 ---
 title: Identifying the Computer Experiencing a Problem
-authors:mgoedtel
-manager:cfreemanwa
+author: mgoedtel
+manager: cfreemanwa
+ms.date: 2016-08-29
 ms.custom: na
 ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - operations-manager
-ms.tgt_pltfrm: na
+ms.technology: operations-manager
 ms.topic: article
-ms.date: 2016-08-24
-ms.assetid: 058aed83-3e31-487f-98fb-aca98c50ddbc
 ---
 
 # Identifying the Computer Experiencing a Problem
@@ -42,6 +37,5 @@ In this illustration, you see that the logical disk fragmentation levels for C: 
   
 ## Next steps
   
-[How Heartbeats Work in Operations Manager](How-Heartbeats-Work.md)  
 [Resolving Heartbeat Alerts](Resolving-Heartbeat-Alerts.md)  
 
