@@ -13,7 +13,7 @@ ms.technology:  virtual-machine-manager
 
 >Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
 
-This article helps you to plan all the elements required for a successful VMM installation.
+This article helps you to plan all the elements required for a successful System Center 2016 - Virtual Machine Manager (VMM) installation.
 
 ## Prepare for VMM management server installation
 
