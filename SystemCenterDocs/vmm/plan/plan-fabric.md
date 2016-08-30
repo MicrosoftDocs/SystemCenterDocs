@@ -14,7 +14,7 @@ ms.technology:  virtual-machine-manager
 
 >Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
 
-The VMM fabric is an abstracted collection of resources that can be discovered, identified, and managed.  There are three main resource groups in the fabric - compute (server), network, and storage.
+The System Center 2016 0 Virtual Machine Manager (VMM) fabric is an abstracted collection of resources that can be discovered, identified, and managed.  There are three main resource groups in the fabric - compute (server), network, and storage.
 
 -   **Compute**: Resources in the compute (server) group include infrastructure services such as  pre-boot execution environment (PXE) servers to handle bare-metal deployment of Hyper-V host servers, update servers (WSUS), and virtualization hosts and clusters (Hyper-V, VMware, Citrix)
 -   **Network**: Network resources including VMM networks, load balancers, and gateways.
@@ -25,14 +25,14 @@ This article describes planning steps you should perform before you set up the V
 
 ## Plan the compute fabric
 
-The compute fabric consists of all the servers and computers that will be managed in the VMM fabric. It includes the VMM library, virtualization hosts and VMs, and infrastructure servers, including update servers, IPAM servers, and PXE servers used for bare metal deployment.
+In the compute fabric you set up all the servers and computers that will be managed in the VMM fabric. It includes the VMM library, virtualization hosts and VMs, and infrastructure servers, including update servers, IPAM servers, and PXE servers used for bare metal deployment.
 
 [Learn more](plan-compute.md) about planning the compute fabric.
 
 
 ## Plan the networking fabric
 
-Here's what you'll typically do to set up networking in the VMM fabric:
+In the networking fabric you:
 
 1. **Set up logical networks and IP addressing**: Create logical networks that maps to your physical networks. You can create network sites that map to network sites in your physical network. For example IP subnets, VLNS, or subnet/VLAN pairs. Then if you're not using DHCP you create IP address pools for the network sites that exist within your physical networks.
 2. **Create VM networks**: Create VM networks that map to network sites that exist within your physical networks.
@@ -44,7 +44,7 @@ Here's what you'll typically do to set up networking in the VMM fabric:
 
 ## Plan the storage fabric
 
-VMM supports block and file-based storage. In the VMM storage fabric can discover, configure, and assign storage. You can use storage as a factor in VM placement, so that when a user deploys a VM, VMM checks the VM template or cloud settings for an assigned storage classification. When VMM rates potential VM hosts, it prioritizes hosts that have available storage with the appropriate classification. VMM also identifies the most efficient process for transferring a VM VHD file from the library to an appropriate storage resource, based on the technologies that the storage type uses. For example if a SAN supports Windows Offloaded Data Transfers (ODX) then VMM will use ODX for the transfer.
+VMM supports block and file-based storage. In the VMM storage fabric you discover, configure, and assign storage. You can use storage as a factor in VM placement, so that when a user deploys a VM, VMM checks the VM template or cloud settings for an assigned storage classification. When VMM rates potential VM hosts, it prioritizes hosts that have available storage with the appropriate classification. VMM also identifies the most efficient process for transferring a VM VHD file from the library to an appropriate storage resource, based on the technologies that the storage type uses. For example if a SAN supports Windows Offloaded Data Transfers (ODX) then VMM will use ODX for the transfer.
 
 When planning the storage fabric consider the following:
 
