@@ -14,7 +14,7 @@ ms.technology:  virtual-machine-manager
 >Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
 
 
-This article helps you to plan a highly available VMM deployment.
+This article helps you to plan a highly available System Center 2016 - Virtual Machine Manager (VMM) deployment.
 
 For resilience and scalability you can deploy VMM in high availability mode, as follows:
 
