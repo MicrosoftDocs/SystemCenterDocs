@@ -13,7 +13,7 @@ ms.technology:  virtual-machine-manager
 
 >Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
 
-This article describes how to plan your System Cemter 2016 - Virtual Machine Manager (VMM) compute fabric. The VMM compute fabric consists of the VMM library, virtualization hosts, host groups, and other infrastructure servers.
+This article describes how to plan your System Center 2016 - Virtual Machine Manager (VMM) compute fabric. The VMM compute fabric consists of the VMM library, virtualization hosts, host groups, and other infrastructure servers.
 
 ## Plan the VMM library
 
