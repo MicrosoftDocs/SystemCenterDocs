@@ -1,14 +1,13 @@
 ---
 title:  Managing Discovery and Agents
 description:  
-manager:  cfreemanwa
-ms.topic:  article
-author:  mgoedtel
-ms.prod:  system-center-threshold
-keywords:  
-ms.date:  2016-08-24
-ms.technology:  operations-manager
-ms.assetid:  66b6b089-d888-431f-845f-ee689b69ba1a
+author: mgoedtel
+manager: cfreemanwa
+ms.date: 2016-08-29
+ms.custom: na
+ms.prod: system-center-threshold
+ms.technology: operations-manager
+ms.topic: article
 ---
 
 
@@ -61,7 +60,7 @@ Comprehensive monitoring requires that an agent be installed on the discovered c
 
 -   [TechNet Library main page for Operations Manager](http://go.microsoft.com/fwlink/p/?LinkId=223634)
 
--   [Operations Guide for System Center 2016 - Operations Manager](System-Center-2016-Operations-Manager-Operations-Guide.md)
+-   [Operations Guide for System Center 2016 - Operations Manager](System-Center-2016---Operations-Manager-Operations-Guide.md)
 
 -   [How to Discover Network Devices in Operations Manager](How-to-Discover-Network-Devices-in-Operations-Manager.md)
 
