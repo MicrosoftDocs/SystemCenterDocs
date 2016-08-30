@@ -5,7 +5,7 @@ ms.topic:  article
 author:  cfreemanwa
 ms.prod:  system-center-threshold
 keywords:
-ms.date:  2016-08-21
+ms.date:  2016-08-30
 title:  Release Notes for System Center 2016
 ms.assetid:  5fad5608-4cb7-48b0-aa31-35ca5cc2d560
 ---
@@ -18,7 +18,8 @@ ms.assetid:  5fad5608-4cb7-48b0-aa31-35ca5cc2d560
 
 
 ## System Center 2016 - Data Protection Manager Release Notes
-**The following release notes apply to System Center 2016 - Data Protection Manager.**
+
+The following release notes apply to System Center 2016 - Data Protection Manager.
 
 
 #### Silent Installation of System Center DPM with SQL Server 2008
@@ -29,7 +30,7 @@ ms.assetid:  5fad5608-4cb7-48b0-aa31-35ca5cc2d560
 #### Hyper-V VMs are protected twice on VM upgrade
 **Description**: If you upgrade your Hyper-V VM from Windows Server 2012 R2 to Windows Server 2016 to enable Resilient Change Tracking (RCT), a new VM representing the upgraded VM may appear in the **Create Protection Group Wizard**. The 2016 version of the VM may appear in addition to the 2012 R2 version of the VM.
 
-**Workaround**: Do not stop protection on the VMs that have not been upgraded. After upgrading the VM, create a new protection group and protect the VMs. This protects the VMs via Resilient Change Tracking (RCT). After upgrading the VMs, stop protection on the 2012 R2 version of the VMs.
+**Workaround**: For the VMs that have not been upgraded, stop protection with **Retain Data**. After upgrading the VM, create a new protection group, Then, refresh the data sources and protect the VMs. This protects the VMs using Resilient Change Tracking (RCT).
 
 #### Agent installation fails on Windows Server 2008, Windows Server 2008 R2
 **Description**: If you are trying to protect Windows Server 2008, or Windows Server 2008 R2, agent installation may fail.
@@ -38,10 +39,9 @@ ms.assetid:  5fad5608-4cb7-48b0-aa31-35ca5cc2d560
 
 #### Restoring a previous version of an upgraded Hyper-V VM causes future recovery points to fail.
 
-**Description**: If you protect a 2012 R2 version of a Hyper-V VM, then upgrade the VM to the 2016 version, and then stop protecting the VM with retain data, and then protect the VM again. If you recover a 2012 R2 copy at the original location, further backups may fail.
+**Description**: If you upgrade a protected 2012 R2 Hyper-V VM to the 2016 version, then stop protecting the VM (but retain data), and then re-enable protection if you then recover a 2012 R2 copy at the original location, further backups may fail.
 
 **Workaround**: To prevent future backups from failing, after creating a 2012 R2 recovery point for a 2016 VM, change the version of the recovery point to 2016 and run consistency check before the next scheduled backup.
-
 
 
 #### Adding DPM Volumes without Drive Letters
@@ -71,9 +71,9 @@ Then delete the file in the folder:
 
 
 #### Consistency Checks on Upgrade of Primary and Secondary DPM Servers to DPM 2016
-**Description:** After upgrading a primary and secondary DPM server from System Center Data Protection Manager 2012 R2 to System Center Data Protection Manager 2016, consistency check jobs fail on the secondary DPM.
+**Description:** After upgrading a primary and secondary DPM server from Data Protection Manager 2012 R2 to System Center Data Protection Manager 2016, consistency check jobs fail on the secondary DPM.
 
-**Workaround:** During the process of creating or modifying a Protection Group on the secondary DPM server, on the **Select Group Members** screen, select the Primary DPM Server and click **Refresh**. After this consistency check jobs will succeed.
+**Workaround:** During the process of creating or modifying a Protection Group on the secondary DPM server, on the **Select Group Members** screen, select the Primary DPM Server and click **Refresh**. After this, consistency check jobs will succeed.
 
 #### Searching for Files or Folders during the Recovery process doesn't return expected results
 **Description:** If you **Search** for a file, folder, or volume in the recovery pane under **Files and Folders**, you may not get the relevant results.

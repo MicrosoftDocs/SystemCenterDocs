@@ -15,16 +15,8 @@ ms.assetid:  4f8701a5-8d55-4ffd-afee-e6341ec6b7f4
 
 >Applies To: System Center 2016
 
-
 If you are already running System Center 2012 R2 you can upgrade your environment to System Center 2016 by following the procedures and guidance in this article. Microsoft only supports upgrading from System Center 2012 R2 from one of the supported update rollup installations listed in the supported upgrade paths sections.
 
-
-## Common steps
-You will follow  the same general steps for upgrading to System Center 2016 from System Center 2012 R2 for all System Center components. The general steps are:
-1. Uninstall the 2012 R2 version of the component with "retain database" option if appropriate.
-2. Upgrade the operating system to a version supported with System Center 2016.
-3. Install any other software required by the component (see list below).
-4. Install the new version of the component with the "Upgrade database" option if appropriate.
 
 > [!IMPORTANT]
 > Make sure you are upgrading to a supported platform by reviewing the [System Requirements topics](../system-requirements/system-requirements-for-system-center-technical-preview.md).
@@ -49,7 +41,8 @@ The following sections provide detailed considerations for each component.
 
 You can install DPM 2016 on Windows Server 2012 R2 with Update Rollup 10, or on Windows Server 2016. However, before you upgrade or install DPM 2016, please read the [Installation prerequisites](../dpm/get-started/get-dpm-installed.md#BKMK_Prereq).
 
-#### Upgrade path for DPM 2016
+
+### Upgrade path for DPM 2016
 If you are going to upgrade from a previous version of DPM to DPM 2016, make sure your installation has the necessary updates:
 
 - Upgrade DPM 2012 R2 to DPM 2012 R2 Update Rollup 10. You can obtain the Update Rollups from Windows Update.
@@ -59,25 +52,39 @@ If you are going to upgrade from a previous version of DPM to DPM 2016, make sur
 - Upgrade DPM Remote Administrator on all production servers.
 - Backups will continue without rebooting your production server.
 
-To install DPM, double-click Setup.exe to open the System Center 2016 Wizard. Under Install, click on Data Protection Manager. This will start the Setup. Please go through and agree to the license terms and conditions.
 
-Some DPM 2016 features, such as Modern Storage, require the Windows Server 2016 RTM build. It is possible to upgrade DPM 2016 from DPM 2012 R2, running on Windows Server 2012 R2. However, customers receiving DPM 2016 will want the latest features, so Microsoft recommends installing DPM 2016 on a new installation of Windows Server 2016 RTM. For instructions on installing DPM, see the article, [Installing DPM 2016](../dpm/get-started/get-dpm-installed.md).
+### Upgrade steps for DPM
 
-### Adding Storage for MDS
+1. To install DPM, double-click Setup.exe to open the System Center 2016 Wizard.
+2. Under Install, click Data Protection Manager. This starts Setup. Agree to the license terms and conditions and follow the setup wizard.
 
-To store backups efficiently, DPM 2016 uses Volumes. However, disks can also be used to continue storing backups like DPM 2012 R2.
+Some DPM 2016 features, such as Modern Storage (MDS), require the Windows Server 2016 RTM build. It is possible to upgrade DPM 2016 from DPM 2012 R2, running on Windows Server 2012 R2. However, customers receiving DPM 2016 will want the latest features, so Microsoft recommends installing DPM 2016 on a new installation of Windows Server 2016 RTM. For instructions on installing DPM, see the article, [Installing DPM 2016](../dpm/get-started/get-dpm-installed.md).
+
+### Adding Storage for Modern Storage (MDS)
+
+To store backups efficiently, DPM 2016 uses Volumes. Disks can also be used to continue storing backups like DPM 2012 R2.
 
 #### Add Volumes and Disks
-To use the new benefits of DPM 2016 like storage savings and faster backups, volumes should be used for storing backups. Here is how it can be done.
+If you run DPM 2016 on Windows Server, you can use volumes to store backup data. Volumes provide storage savings and faster backups. You can give the volume a friendly name, and you can change the name. You apply the friendly name while adding the volume, or later by clicking the **Friendly Name** column of the desired volume. You can also use PowerShell to add or change friendly names for volumes.
 
-Disks can be added to DPM only of there are Protection Groups with Legacy Storage, and can be used only for those Protection Groups. If the DPM server does not have sources with legacy protection, the disk screen will not appear.
-Disks can be added in a similar manner by clicking on the “Add disks” link on the upper-right hand corner of the pop-up after Step 3. However, they cannot be given a Friendly Name.
-As discussed, the volumes can be given a friendly name, which can be changed. This can be done while adding the volume, or later by clicking on the “Friendly Name” column of the desired volume. Friendly Names can be added/changed through PowerShell as well.
+To add a volume in the administrator console:
+
+1. In the DPM Administrator console, select the **Management** feature > **Disk Storage** > **Add**.
+
+2. In the **Add Disk Storage** dialog, select an available volume > click **Add** > type a friendly name for the volume ** > click **OK**.
+
+      ![Add volume](../media/dpm-2016-add-volume.png)
+
+If you want to add a disk, it must belong to a protection group with legacy storage. Those disks can only be used for those protection groups. If the DPM server doesn't have sources with legacy protection, the disk won't appear.
+See the topic, [Adding disks to increase legacy storage](upgrade-to-system-center-2016.md#adding-disks-to-increase-legacy-storage), for more information on adding disks. You can't give disks a friendly name.
+
 
 #### Assign Workloads to Volumes
 
 DPM 2016 allows the user to specify which kinds of workloads should be assigned to which volumes. For example, expensive volumes that support high IOPS can be configured to store only the workloads that require frequent, high-volume backups like SQL with Transaction Logs.
-To update the properties of a volume in the storage pool on a DPM server, use the PowerShell commandlet, Update-DPMDiskStorage.
+To update the properties of a volume in the storage pool on a DPM server, use the PowerShell cmdlet, Update-DPMDiskStorage.
+
+**Update-DPMDiskStorage**
 
 **Syntax**
 
@@ -87,10 +94,8 @@ To update the properties of a volume in the storage pool on a DPM server, use th
 Update-DPMDiskStorage [-Volume] <Volume> [[-FriendlyName] <String> ] [[-DatasourceType] <VolumeTag[]> ] [-Confirm] [-WhatIf] [ <CommonParameters>]
 ```
 
+The changes made through PowerShell are reflected in the UI.
 
-The changes made through PowerShell are reflected in the UI.  
-ENABLE CLOUD PROTECTION
-Backups to Azure can be enabled by registering the server to a subscription on Azure Portal, downloading the vault credentials and Azure Backup Agent and setting it up. Here are the steps for the same.
 
 ### Protecting Data Sources
 To begin protecting data sources, create a Protection Group. The following procedure highlights changes or additions to the **New Protection Group** wizard.
@@ -389,6 +394,15 @@ PS C:\> Dismount-DPMRecoveryPoint -Datasource $datasource[0]
 First command uses the Get-DPMDatasource cmdlet to get the Data sources on the DPM server named TestingServer. It stores them in the $datasource variable.
 Second command dismounts the replica VHD for this data source.
 
+#### Enable Cloud Protection
+
+You can back up a DPM server to Azure. The high level steps are:
+- create an Azure subscription,
+- register the server with the Azure Backup service,
+- download vault credentials and the Azure Backup Agent,
+- configure the server's vault credentials and backup policy,
+
+For more information on backing up DPM to the cloud, see the article, [Preparing to backup workloads to Azure with DPM] (https://azure.microsoft.com/en-us/documentation/articles/backup-azure-dpm-introduction/).
 
 ### OM Upgrade
 [!NOTE]
@@ -414,7 +428,7 @@ There are several options for upgrade:
 
 3. If you want to maintain your Operations Manager 2012 R2 environment you can install System Center 2016 - Operations Manager in parallel and upgrade your agents and multi-home between both management groups.
 
-### High Level Overview of System Center 2016 Operations Manager Upgrade Steps for a Distributed Management Group
+#### High Level Overview of System Center 2016 Operations Manager Upgrade Steps for a Distributed Management Group
 
 The following steps outline the process for upgrading a distributed management group:
 
@@ -457,7 +471,7 @@ Upgrading:
 6. If needed, install the Orchestrator Web Service in System Center 2016.
 
 
-## SMA Upgrade Notes
+### SMA Upgrade Notes
 
 Before you upgrade:
 
@@ -522,16 +536,23 @@ Use the following step to upgrade your Self Service portal and Service Manger ma
 #### Upgrading the Self Service Portal from Service Manager 2016 TP5 Self Service portal (stand alone or with a management server)
   - You can upgrade the Self Service portal directly from Service Manager 2012 R2 to Service Manager 2016.
 
-## SPF Upgrade Notes
+### SPF Upgrade Notes
 
 - If you have integrated SPF with Windows Azure Pack, your version of Windows Azure Pack must be running Update Rollup 10 or later. Also, both System Center 2012 R2 - VMM and SPF must be running Update Rollup 9 or later.
 
-## VMM Upgrade Notes
+### VMM Upgrade Notes
+
+### Steps for installing VMM
+You will follow  the same general steps for upgrading to System Center 2016 from System Center 2012 R2 for all System Center components. The general steps are:
+1. Uninstall the 2012 R2 version of the component with "retain database" option if appropriate.
+2. Upgrade the operating system to a version supported with System Center 2016.
+3. Install any other software required by the component (see list below).
+4. Install the new version of the component with the "Upgrade database" option if appropriate.
 
 - For all upgrades to VMM 2016 you can either continue with the current version of SQL Server, or, you can upgrade to the supported version of SQL Server. Review [SQL Server Requirements](../system-requirements/SQL-server-version-compatibility-for-system-center-technical-preview.md) for the list of supported versions of SQL Server.
 - You can upgrade both host and guest VMM agents from the VMM console.
 
-### Upgrading a highly available VMM environment.
+#### Upgrading a highly available VMM environment.
 
 The following procedures describe the steps to take if you are upgrading a  VMM management server deployed on a highly available cluster.
 
