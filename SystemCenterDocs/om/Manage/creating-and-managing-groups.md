@@ -39,7 +39,7 @@ Computer groups only contain computers. Instance groups can contain all object t
   
 Using the Operations console, you can only create instance groups. To create a computer group, you must use the Authoring console or work directly in the XML of a management pack.  
   
-## Creating and Managing Groups topics  
+## Creating and managing groups topics  
   
 -   [How to Create Groups in Operations Manager](How-to-Create-Groups-in-Operations-Manager.md)  
    

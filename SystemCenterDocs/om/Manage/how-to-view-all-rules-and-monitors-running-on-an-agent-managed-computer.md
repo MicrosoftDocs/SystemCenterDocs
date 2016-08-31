@@ -8,6 +8,7 @@ ms.prod: system-center-threshold
 ms.technology: operations-manager
 ms.topic: article
 ---
+
 # How to View All Rules and Monitors Running on an Agent-Managed Computer
 
 Administrators for System Center 2016 - Operations Manager sometimes want to know which rules and monitors are running on a computer. This is simple to do with the **Show Running Rules and Monitors for this Health Service** task.  

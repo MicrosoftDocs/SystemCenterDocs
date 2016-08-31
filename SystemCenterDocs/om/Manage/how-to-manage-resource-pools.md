@@ -38,7 +38,7 @@ A Resource Pool is a collection of management servers and/or gateway servers use
 
 11. When the wizard completes, click **Close**.
 
-## Modifying Resource Pool membership
+## Modifying resource pool membership
 
 When you view the resource pools in the **Administration** workspace, you will see that resource pools that you create have a manual membership type and resource pools created when Operations Manager was installed have an automatic membership type, as shown in the following image.
 
@@ -73,7 +73,7 @@ By default, all management servers are members of the resource pools created whe
 8.  On the **Summary** page, click **Save**.
 
 
-## Configure Certificates for UNIX/Linux dedicated resource pools 
+## Configure certificates for UNIX/Linux dedicated resource pools 
 
 An additional task must be performed in order to configure management servers that are members of a resource pool dedicated for managing UNIX and Linux computers. Operations Manager uses certificates to authenticate access to the computers it is managing. When the Discovery Wizard deploys an agent, it retrieves the certificate from the agent, signs the certificate, deploys the certificate back to the agent, and then restarts the agent.
 

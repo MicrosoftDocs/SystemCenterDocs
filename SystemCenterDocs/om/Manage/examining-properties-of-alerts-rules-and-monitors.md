@@ -13,7 +13,7 @@ ms.topic: article
 
 The properties pages for alerts, rules, and monitors offer useful information and actions that you can take. The following tables explain what you can learn from properties for alerts, rules, and monitors and include tips on using the properties tabs.  
   
-## Properties for Alerts  
+## Properties for alerts  
   
 |Tab|Description|  
 |-------|---------------|  
@@ -24,7 +24,7 @@ The properties pages for alerts, rules, and monitors offer useful information an
 |Alert Context|Some alerts may display an alert context. The specific information provided in the alert context depends on the specific alert.|  
 |Custom Fields|Administrators can add information to any of the nine custom fields in an alert when an alert has been generated. The information added only applies to this unique alert. The custom fields can be searched on by using advanced search.|  
   
-## Properties for Rules  
+## Properties for rules  
   
 |Tab|Description|  
 |-------|---------------|  
@@ -34,7 +34,7 @@ The properties pages for alerts, rules, and monitors offer useful information an
 |Company Knowledge|Administrators can add knowledge to rules, monitors, and alerts to expand the troubleshooting information in the product knowledge to provide company\-specific information for operators.|  
 |Overrides|Administrators can apply overrides to the monitor on the overrides tab. Click **View summary** to view all overrides applied to the monitor.|  
   
-## Properties for Monitors  
+## Properties for monitors  
   
 |Tab|Description|  
 |-------|---------------|  

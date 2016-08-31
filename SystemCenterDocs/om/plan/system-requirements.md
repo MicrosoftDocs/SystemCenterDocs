@@ -7,7 +7,7 @@ ms.custom: na
 ms.prod: system-center-threshold
 ms.technology: operations-manager
 ms.topic: article
----
+---  
 
 # System Requirements: System Center 2016 - Operations Manager
 
@@ -80,10 +80,9 @@ The following versions of Windows operating system are supported for the Microso
 
 Windows Server 2016, Windows Server 2016 Nano Server, Windows 10, Windows 8 Enterprise, Windows 8 Pro, Windows Embedded POSReady 2009, Windows Embedded Standard 7 Service Pack 1, Windows Server 2003 Service Pack 2, Windows Server 2008 R2, Windows Server 2008 Service Pack 2, Windows Server 2012, Windows XP Professional 64-Bit Edition (Itanium) , Windows XP Service Pack 2, Windows XP Service Pack 3.
 
-File system: %SYSTEMDRIVE% must be formatted with the NTFS file system.
-Processor Architectures: x64, x86
-Windows PowerShell version: Windows PowerShell version 2.0, or Windows PowerShell version 3.0.
-Microsoft .NET Framework 3.5 or later
+- File system: %SYSTEMDRIVE% must be formatted with the NTFS file system.
+- Windows PowerShell version: Windows PowerShell version 2.0, or Windows PowerShell version 3.0.
+- Microsoft .NET Framework 3.5 or later
   
 > [!NOTE] 
 > Windows PowerShell is required for local collection of IntelliTrace logs, and to run System Center Operations Manager management packs that use PowerShell scripts.
@@ -112,6 +111,7 @@ Microsoft .NET Framework 3.5 or later
 
 - Operating System: See [Server Operating System requirements](#server-operating-system- requirements)
 - Internet Information Services:  IIS 7.5 and later versions, with the IIS Management Console and the following role services installed:
+
     - Static Content 
     - Default Document 
     - Directory Browsing 
@@ -124,7 +124,7 @@ Microsoft .NET Framework 3.5 or later
     - IIS 6 Metabase Compatibility
     - ASP.NET (both the 2.0 and 4.0 versions of ASP.NET are required.) 
     - Windows Authentication 
-
+ <br>
 - Selected website for web console: Requires a configured http or https binding.
 - The System Center 2012 R2 Operations Manager SharePoint Dashboard Viewer Web Part is supported on SharePoint 2010 and SharePoint 2013. However, it is not supported on Office 365 SharePoint.
 - NET Framework 4 or .NET Framework 4.5 is required. 
@@ -142,8 +142,10 @@ Microsoft .NET Framework 3.5 or later
 - Microsoft SQL Server: See [SQL Server Requirements](planning-sqlserver-design.md#sql-server-requirements).
 - Remote Registry Service: Must be enabled and started.
 - Microsoft SQL Server Reporting Services: See [SQL Server Requirements](planning-sqlserver-design.md#sql-server-requirements). 
+
     > [!NOTE] 
-    > System Center 2016 – Operations Manager supports SQL Server Reporting Services in native mode only; do not use SharePoint integrated mode.
+    > System Center 2016 – Operations Manager supports SQL Server Reporting Services in native mode only; do not use SharePoint integrated mode.  
+
 - NET Framework 4 or .NET Framework 4.5 is required. 
 
 ## Virtualization
@@ -162,7 +164,7 @@ The following table lists the scenarios in which coexistence between Operations 
 
 | Version | Management Group Coexistence |
 |:--- |:---|
-|  Operations Manager 2012 R2 | 
+|  Operations Manager 2012 R2 | Yes
 
 ## In-place upgrade 
 

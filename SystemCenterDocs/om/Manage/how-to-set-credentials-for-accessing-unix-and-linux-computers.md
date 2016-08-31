@@ -235,6 +235,7 @@ The following procedures begin in the **UNIX\/Linux Agent Upgrade Wizard** on th
 5.  Click **OK** to return to the **Credentials** page and continue with the wizard.  
   
 ## Credentials for uninstalling an agent  
+
 The following procedures begin in the  **UNIX\/Linux Agent Uninstall Wizard**, on the **Credentials** page, when you select **Provide Uninstall Credentials**. For more information, see, [Upgrading and Uninstalling Agents on UNIX and Linux Computers](upgrading-and-uninstalling-agents-on-unix-and-linux-computers.md).  
   
 #### To set a privileged credential by using an SSH key  

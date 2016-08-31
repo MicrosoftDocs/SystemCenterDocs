@@ -79,7 +79,7 @@ You can now configure sudo elevation and create an SSH key for `opsuser`, as des
   
 You can use the `opsuser` account by using the password and sudo elevation for specifying credentials in Operations Manager wizards and for configuring Run As accounts.  
   
-## Create an SSH Key for authentication  
+## Create an SSH key for authentication  
 
 The following procedures create an SSH key for the `opsuser` account that was created in the previous examples.  
   

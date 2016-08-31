@@ -18,7 +18,7 @@ This section shows how to investigate a Health Service Heartbeat Failure alert a
   
 If you want to walk through these procedures, you can cause this alert by disabling the System Center Management service on a test system.  
   
-### To cause a Health Service Heartbeat Failure alert for testing  
+### To cause a Health Service heartbeat failure alert for testing  
   
 1.  On a computer with an agent installed, open Control Panel.  
   
@@ -31,10 +31,11 @@ If you want to walk through these procedures, you can cause this alert by disabl
     > [!NOTE]  
     > Use this same procedure and select **Start** in step 4 when you are done testing.  
   
-## How to Investigate Agent Heartbeat Issues  
+## How to investigate agent heartbeat issues  
+
 The **Monitoring** workspace displays active alerts. Looking at an alert provides information and tools to investigate with.  
   
-#### To investigate an active alert  
+### To investigate an active alert  
   
 1.  Open the Operations console.  
   
@@ -47,11 +48,11 @@ The **Monitoring** workspace displays active alerts. Looking at an alert provide
   
 4.  Click the alert to highlight it and read the information in the **Alert Details** area. The **Alert Details** area provides information about the alert, including a description and knowledge about the cause and resolution.  
   
-## How to Troubleshoot Agent Heartbeat Issues  
+## How to troubleshoot agent heartbeat issues  
 
 Use the tasks in the **Tasks** pane to diagnose the cause of the alert. Different alerts have different tasks. For a Health Service Heartbeat Failure alert, the tasks deal with pinging the system and verifying or restarting the service.  
   
-#### To use the action tasks in troubleshooting  
+### To use the action tasks in troubleshooting  
   
 1.  In the **Tasks** pane, under **Health Service Watcher Tasks**, click **Ping Computer**. The task opens a dialog box to display its progress.  
   
@@ -77,4 +78,4 @@ A sudden increase in the number of alerts is called an alert storm. An alert sto
   
 ## Next steps
 
-[How Heartbeats Work in Operations Manager](How-Heartbeats-Work.md)  
+- Before changing the number of missed heartbeats allowed. first review [How Heartbeats Work in Operations Manager](How-Heartbeats-Work.md)  

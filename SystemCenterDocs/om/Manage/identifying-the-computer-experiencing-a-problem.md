@@ -13,7 +13,7 @@ ms.topic: article
 
 This topic helps you answer questions such as "I see an alert that says logical disk defragmentation is high. Where is it high?"  
   
-### To identify the computer experiencing a problem  
+## To identify the computer experiencing a problem  
   
 1.  Click the alert.  
   
