@@ -115,7 +115,7 @@
 ##### [Operations Manager Accounts](OM/Manage/Operations-Manager-Accounts.md)
 ###### [Credentials for Accessing Unix and Linux Computers](OM/Manage/Credentials-for-Accessing-Unix-and-Linux-Computers.md)
 ##### [Operations Manager Accounts](OM/Manage/Operations-Manager-Accounts.md)
-## [Orchestrator](orch/get-started/Orchestrator.md)
+## [Orchestrator](orch/Orchestrator.md)
 ### [How to Work With Runbooks in the Orchestration Console](orch/get-started/How-to-Work-With-Runbooks-in-the-Orchestration-Console.md)
 ### [Orchestrator Capabilities](orch/get-started/Orchestrator-Capabilities.md)
 ### [Orchestrator Architecture](orch/get-started/Orchestrator-Architecture.md)
