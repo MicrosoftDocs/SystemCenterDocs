@@ -22,7 +22,7 @@ On a monitored Windows computer, the Operations Manager agent is listed as the M
 
 The Microsoft Monitoring Agent service also runs on management servers. On a management server, the service runs monitoring workflows and manages credentials. To run workflows, the service initiates MonitoringHost.exe processes using specified credentials. These processes monitor and collect event log data, performance counter data, Windows Management Instrumentation (WMI) data, and run actions such as scripts.
 
-### Communication Between Agents and Management Servers
+### Communication between agents and management servers
 
 The Operations Manager agent sends alert and discovery data to its assigned primary management server, which writes the data to the operational database. The agent also sends events, performance, and state data to the primary management server for that agent, which writes the data to the operational and data warehouse databases simultaneously.
 
@@ -99,7 +99,7 @@ Discovery of a Windows system requires that the TCP 135 (RPC), RPC range, and TC
 http://go.microsoft.com/fwlink/?LinkId=86322 <verify if we need to continue calling this out>
 - Microsoft Core XML Services (MSXML) 6 on the Operations Manager product installation media in the \msxml sub directory. Push agent installation will install MSXML 6 on the target device if it is not already installed. <verify if we need to continue calling this out>
 
-### Agent deployment to UNIX and Linux systems
+### Agent deployment to UNIX and Linux system
 
 In System Center 2016 – Operations Manager, the management server uses two protocols to communicate with the UNIX or Linux computer:
 
@@ -125,7 +125,6 @@ To assign computers to management groups by using AD DS:
 
 > [!NOTE] 
 > An agent that determines it is installed on a domain controller will not query Active  Directory for configuration information.  This is for security reasons.  Active Directory Integration is disabled by default on domain controllers because the agent runs under the Local System account.  The Local System account on a domain controller has Domain Administrator rights; therefore, it will detect all Management Server Service Connection Points that are registered in Active Directory, regardless of the domain controller’s security group membership.  As a result, the agent will try to connect to all management servers in all management groups.  The results can be unpredictable, thus presenting a security risk.
-
 
 Agent assignment is done by using a Service Connection Point (SCP), which is an Active Directory object for publishing information that client applications can use to bind to a service. The SCP will contain connection information to the management server, including the server’s FQDN and port number. Operations Manager agents can automatically discover management servers by querying for SCPs.
 
