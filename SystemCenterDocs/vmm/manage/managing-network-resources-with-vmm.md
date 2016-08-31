@@ -1,0 +1,34 @@
+---
+description:  
+manager:  cfreemanwa
+ms.topic:  article
+author:  rayne-wiselman
+ms.prod:  system-center-threshold
+keywords:  
+ms.date:  2016-06-28
+title:  Managing network resources with VMM
+ms.technology:  virtual-machine-manager
+ms.assetid:  80d9a925-0688-44bf-b1bd-60e79baa63a1
+---
+
+# Managing network resources with VMM
+
+>Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
+
+This section describes how to use Virtual Machine Manager (VMM) to configure networks for virtual machines. It includes the following sections and topics:
+
+-   [Configuring logical networks, VM networks, and logical switches in VMM](Configuring-logical-networks,-VM-networks,-and-logical-switches-in-VMM.md)
+
+-   [Configuring gateways in VMM](Configuring-gateways-in-VMM.md)
+
+-   [Configuring load balancing in VMM](Configuring-load-balancing-in-VMM.md)
+
+-   [How to view VMM network configuration diagrams in VMM](How-to-view-VMM-network-configuration-diagrams-in-VMM.md)
+
+-   [VMM networking reference: illustrations, settings, and optional procedures](VMM-networking-reference--illustrations,-settings,-and-optional-procedures.md)
+
+## See Also
+[Managing fabric resources with VMM](Managing-fabric-resources-with-VMM.md)
+
+
+
