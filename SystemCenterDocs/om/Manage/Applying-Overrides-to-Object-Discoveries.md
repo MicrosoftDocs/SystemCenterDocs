@@ -15,7 +15,7 @@ ms.topic: article
 
 System Center Operations Manager monitors computers and devices that it has discovered, and it also discovers applications and features that it discovers on monitored computers. There may be situations where you want to limit discovery. For example, you might want only some instances of SQL Server to be discovered and monitored, or you want to remove a computer that has already been discovered.
 
-The precise steps to limit or restrict discovery depend on the object, application, or feature that you want to exclude from discovery. However, the general procedure is the same: identify the discovery that you want to limit and create an override to disable the discovery. For information on how to create an override, see [How to Override a Rule or Monitor](how-to-override-a-rule-or-monitor.md).
+The precise steps to limit or restrict discovery depend on the object, application, or feature that you want to exclude from discovery. However, the general procedure is the same: identify the discovery that you want to limit and create an override to disable the discovery. 
 
 The override to disable the discovery can apply to:
 
@@ -33,21 +33,7 @@ For example, you want to disable discovery of logical disks on management server
 
 After an object has been already discovered, if you want to delete the object and not let it be discovered again, disable the discovery for that object and then run the **Remove-SCOMDisabledClassInstance** cmdlet in Operations Manager Shell. For help with this cmdlet, open Operations Manager Shell, and then type **Get-Help Remove-SCOMDisabledClassInstance**.
 
-## Next steps
 
-[Operations Manager Agent Installation Methods](Operations-Manager-Agent-Installation-Methods.md)
-[Install Agent on Windows Using the Discovery Wizard](Install-Agent-on-Windows-Using-the-Discovery-Wizard.md)
-[Install Agent on UNIX and Linux Using the Discovery Wizard](Install-Agent-on-UNIX-and-Linux-Using-the-Discovery-Wizard.md)
-[Install Agent Using the MOMAgent.msi Setup Wizard](Install-Agent-Using-the-MOMAgent-Setup-Wizard.md)
-[Install Agent and Certificate on UNIX and Linux Computers Using the Command Line](Install-Agent-and-Certificate-on-UNIX-and-Linux-Computers-Using-the-Command-Line.md)
-[Managing Certificates for UNIX and Linux Computers](Managing-Certificates-for-UNIX-and-Linux-Computers.md)
-[Process Manual Agent Installations](Process-Manual-Agent-Installations.md)
-[Install Agent Using the Command Line](Install-Agent-Using-the-Command-Line.md)
-[Configuring Agents](Configuring-Agents.md)
-[Examples of Using MOMAgent Command to Manage Agents](Examples-of-Using-MOMAgent-Command-to-Manage-Agents.md)
-[Upgrading and Uninstalling Agents on UNIX and Linux Computers](Upgrading-and-Uninstalling-Agents-on-UNIX-and-Linux-Computers.md)
-[Manually Uninstalling Agents from UNIX and Linux Computers](Manually-Uninstalling-Agents-from-UNIX-and-Linux-Computers.md)
-[Uninstall Agent from Windows-based Computers](Uninstall-Agent-from-Windows-based-Computers.md)
 
 
 
