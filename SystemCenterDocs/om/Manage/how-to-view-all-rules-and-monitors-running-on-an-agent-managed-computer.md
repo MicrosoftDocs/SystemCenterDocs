@@ -27,4 +27,6 @@ Administrators for System Center 2016 - Operations Manager sometimes want to kno
 6.  The Task Status dialog box appears. When the task is completed, you can click **Copy Text** or **Copy HTML** and paste the task output in the appropriate tool for further review.  
   
 
-  
+## Next steps
+
+- If you have an agent-managed computer generating an alert that doesn't immediately help you understand what the cause behind it was, review [Identifying the Computer Experiencing a Problem](identifying-the-computer-experiencing-a-problem.md) for further recommendations.    

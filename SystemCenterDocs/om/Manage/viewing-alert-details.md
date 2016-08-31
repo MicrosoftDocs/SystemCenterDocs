@@ -1,27 +1,21 @@
 ---
 title: Viewing Alert Details
+author: mgoedtel
+manager: cfreemanwa
+ms.date: 2016-08-29
 ms.custom: na
 ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - operations-manager
-ms.tgt_pltfrm: na
+ms.technology: operations-manager
 ms.topic: article
-ms.assetid: f79c5f48-ea55-4fe1-9097-364933d30f1c
-author:mgoedtel
-manager:cfreemanwa
 ---
 
 # Viewing Alert Details
 
 Alerts in System Center 2016 - Operations Manager include information to help you investigate and resolve the issues that caused the alerts.  
   
-To view the details for an alert, in the **Monitoring** workspace, click **Active Alerts**, and then click an alert in the results pane.  
+To view the details for an alert, in the **Monitoring** workspace, click **Active Alerts**, and then click an alert in the results pane.<br> ![Details for a selected alert](../media/om2016-view-alert-details.png)  
   
-![Details for a selected alert](../media/om2016-alertdetails.png)  
-  
-**Tips**  
+## Tips
   
 -   Locate and investigate monitors in the **Warning** and **Error** states in the Health Explorer of the computer that was the source of the alert. \(To open Health Explorer, right\-click the alert, point to **Open**, and click **Health Explorer**.\) If there are unhealthy monitors, they may correlate with the alert you are researching. Check out the **Context** pane of the **State Change Events** tab for possible additional clues to the root cause.  
   
@@ -31,6 +25,6 @@ To view the details for an alert, in the **Monitoring** workspace, click **Activ
   
 ## Next steps
 
-[How Heartbeats Work in Operations Manager](How-Heartbeats-Work.md)  
-[Resolving Heartbeat Alerts](Resolving-Heartbeat-Alerts.md)  
+- Before changing the number of missed heartbeats allowed. first review [How Heartbeats Work in Operations Manager](How-Heartbeats-Work.md)  
+
 

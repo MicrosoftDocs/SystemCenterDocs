@@ -10,7 +10,6 @@ ms.technology: operations-manager
 ms.topic: article
 ---
 
-
 # Install Agent Using the MOMAgent.msi Setup Wizard
 
 >Applies To: System Center 2016 - Operations Manager
@@ -68,19 +67,17 @@ Before you use the Setup Wizard, ensure the following conditions are met:
 
 ## Next steps
 
-[Operations Manager Agent Installation Methods](Operations-Manager-Agent-Installation-Methods.md)
-[Install Agent on Windows Using the Discovery Wizard](Install-Agent-on-Windows-Using-the-Discovery-Wizard.md)
-[Install Agent on UNIX and Linux Using the Discovery Wizard](Install-Agent-on-UNIX-and-Linux-Using-the-Discovery-Wizard.md)
-[Install Agent Using the Command Line](Install-Agent-Using-the-Command-Line.md)
-[Install Agent and Certificate on UNIX and Linux Computers Using the Command Line](Install-Agent-and-Certificate-on-UNIX-and-Linux-Computers-Using-the-Command-Line.md)
-[Managing Certificates for UNIX and Linux Computers](Managing-Certificates-for-UNIX-and-Linux-Computers.md)
-[Process Manual Agent Installations](Process-Manual-Agent-Installations.md)
-[Applying Overrides to Object Discoveries](Applying-Overrides-to-Object-Discoveries.md)
-[Configuring Agents](Configuring-Agents.md)
-[Examples of Using MOMAgent Command to Manage Agents](Examples-of-Using-MOMAgent-Command-to-Manage-Agents.md)
-[Upgrading and Uninstalling Agents on UNIX and Linux Computers](Upgrading-and-Uninstalling-Agents-on-UNIX-and-Linux-Computers.md)
-[Manually Uninstalling Agents from UNIX and Linux Computers](Manually-Uninstalling-Agents-from-UNIX-and-Linux-Computers.md)
-[Uninstall Agent from Windows-based Computers](Uninstall-Agent-from-Windows-based-Computers.md)
+- There are different methods to deploying the agent in Operations Manager, review [Operations Manager Agent Installation Methods](Operations-Manager-Agent-Installation-Methods.md)
+- To deploy the Windows agent from the Operations console, review [Install Agent on Windows Using the Discovery Wizard](Install-Agent-on-Windows-Using-the-Discovery-Wizard.md)
+- To deploy the UNIX and Linux agent from the Operations console, review [Install Agent on UNIX and Linux Using the Discovery Wizard](Install-Agent-on-UNIX-and-Linux-Using-the-Discovery-Wizard.md)
+- Before you manually install the Windows agent, you should first review the [Examples of Using MOMAgent Command to Manage Agents](Examples-of-Using-MOMAgent-Command-to-Manage-Agents.md)
+- If you would like to manually install the Windows agent from the command line or automate the deployment using a script or other automation solution, review [Install Agent Using the Command Line](Install-Agent-Using-the-Command-Line.md)
+- If you would like to manually install the UNIX or Linux agent from the command line or automate the deployment using a script or other automation solution, review [Install Agent and Certificate on UNIX and Linux Computers Using the Command Line](Install-Agent-and-Certificate-on-UNIX-and-Linux-Computers-Using-the-Command-Line.md)
+- After manually installing the Operations Manager agent on Windows or UNIX and Linux computers, you need to [Process Manual Agent Installations](Process-Manual-Agent-Installations.md)
+- To understand how to manage the configuration settings of a Windows agent and options available, review [Configuring Agents](Configuring-Agents.md)
+- After you deploy the UNIX and Linux agent, managing the upgrades when new versions are released and how to uninstall are described in [Upgrading and Uninstalling Agents on UNIX and Linux Computers](Upgrading-and-Uninstalling-Agents-on-UNIX-and-Linux-Computers.md)
+- Review [Manually Uninstalling Agents from UNIX and Linux Computers](Manually-Uninstalling-Agents-from-UNIX-and-Linux-Computers.md) to understand what steps need to be performed to properly uninstall the agent from your UNIX and Linux computers.  
+- Review [Uninstall Agent from Windows-based Computers](Uninstall-Agent-from-Windows-based-Computers.md) to understand what options and steps need to be performed to properly uninstalling the agent from your Windows computers.  
 
 
 

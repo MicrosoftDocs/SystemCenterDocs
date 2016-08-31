@@ -43,10 +43,7 @@ Using the Operations console, you can only create instance groups. To create a c
   
 -   [How to Create Groups in Operations Manager](How-to-Create-Groups-in-Operations-Manager.md)  
    
-## Next steps
- 
-[How to Suspend Monitoring Temporarily by Using Maintenance Mode](How-to-Suspend-Monitoring-Temporarily-by-Using-Maintenance-Mode.md)  
-[How to Create a Resource Pool](How-to-Create-a-Resource-Pool.md)  
+
 
 
   
