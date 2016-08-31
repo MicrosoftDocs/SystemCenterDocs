@@ -17,11 +17,11 @@ This topic helps you answer questions such as "I see an alert that says logical 
   
 1.  Click the alert.  
   
-    ![Select alert in Results pane](../media/om2016-alerts-review.png)  
+    ![Select alert in Results pane](../media/om2016-view-active-alerts.png)  
   
 2.  Look in the **Details** section for the **Path**.  
   
-    ![See Path in alert details](../media/om2016-alert-path.png)  
+    ![See Path in alert details](../media/om2016-view-alert-details.png)  
   
     Notice that this alert also includes the affected computer in the **Description**.  
   
@@ -37,5 +37,5 @@ In this illustration, you see that the logical disk fragmentation levels for C: 
   
 ## Next steps
   
-[Resolving Heartbeat Alerts](Resolving-Heartbeat-Alerts.md)  
+- To help you investigate and resolve the issues that caused the alerts, review [Viewing Alert Details](viewing-alert-details.md)
 
