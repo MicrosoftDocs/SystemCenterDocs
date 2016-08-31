@@ -50,7 +50,7 @@ You can download these components from the [TechNet Evaluation Center](http://ww
 
 -   [Operations Manager](om/Operations-Manager.md)
 
--   [Orchestrator](orch/get-started/Orchestrator.md)
+-   [Orchestrator](orch/Orchestrator.md)
 
 -   [Service Manager](sm/Service-Manager.md)
 

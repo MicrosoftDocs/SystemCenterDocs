@@ -20,10 +20,10 @@ Welcome to System Center 2016 - Orchestrator. Orchestrator is a workflow managem
 The following topics provide information to help you get started with System Center 2016 - Orchestrator.
 
 ## Getting started with Orchestrator
-[Orchestrator Capabilities](Orchestrator-Capabilities.md)
+[Orchestrator Capabilities](get-started/Orchestrator-Capabilities.md)
 
 You can  read this topics to get an overview if you are new to Orchestrator.
 
-[Install Orchestrator](../Deploy/Install-Orchestrator.md)
+[Install Orchestrator](Deploy/Install-Orchestrator.md)
 
 Topics in this section describe how to setup Orchestrator.
