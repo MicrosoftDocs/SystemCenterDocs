@@ -1,23 +1,21 @@
 ---
-description:  
-manager:  cfreemanwa
-ms.topic:  article
-author:  mgoedtel
-ms.prod:  system-center-threshold
-keywords:  
-ms.date:  2016-06-27
 title:  Managing Discovery and Agents
-ms.technology:  operations-manager
-ms.assetid:  66b6b089-d888-431f-845f-ee689b69ba1a
+description:  
+author: mgoedtel
+manager: cfreemanwa
+ms.date: 2016-08-29
+ms.custom: na
+ms.prod: system-center-threshold
+ms.technology: operations-manager
+ms.topic: article
 ---
-
 
 
 # Managing Discovery and Agents
 
->Applies To: System Center 2016 Technical Preview - Operations Manager
+>Applies To: System Center 2016 - Operations Manager
 
-System Center Operations Manager can monitor computers running Windows, UNIX, and Linux operating systems. For a list of the supported operating system versions, see [Supported Configurations](http://go.microsoft.com/fwlink/p/?LinkID=223642).
+System Center Operations Manager can monitor computers running Windows, UNIX, and Linux operating systems. For a list of the supported operating system versions, see [Supported Configurations](../plan/system-requirements.md).
 
 To begin monitoring, computers must be discovered. For a description of the discovery process, see "How Objects Are Discovered and Monitored" in [Key Concepts](../get-started/Operations-Manager-Key-Concepts.md).
 
@@ -34,7 +32,7 @@ Comprehensive monitoring requires that an agent be installed on the discovered c
 
 -   [Install Agent on UNIX and Linux Using the Discovery Wizard](Install-Agent-on-UNIX-and-Linux-Using-the-Discovery-Wizard.md)
 
--   [Install Agent Using the MOMAgent.msi Setup Wizard](Install-Agent-Using-the-MOMAgent.msi-Setup-Wizard.md)
+-   [Install Agent Using the MOMAgent.msi Setup Wizard](Install-Agent-Using-the-MOMAgent-Setup-Wizard.md)
 
 -   [Install Agent Using the Command Line](Install-Agent-Using-the-Command-Line.md)
 

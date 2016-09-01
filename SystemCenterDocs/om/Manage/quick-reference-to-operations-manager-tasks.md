@@ -1,34 +1,32 @@
 ---
-description:  
-manager:  cfreemanwa
-ms.topic:  article
-author:  mgoedtel
-ms.prod:  system-center-threshold
-keywords:  
-ms.date:  2016-06-27
 title:  Quick Reference to Operations Manager Tasks
-ms.technology:  operations-manager
-ms.assetid:  f270994e-2b88-4e58-945f-f1c7954e0e0c
+description:  
+author: mgoedtel
+manager: cfreemanwa
+ms.date: 2016-08-29
+ms.custom: na
+ms.prod: system-center-threshold
+ms.technology: operations-manager
+ms.topic: article
 ---
-
 
 
 # Quick Reference to Operations Manager Tasks
 
->Applies To: System Center 2016 Technical Preview - Operations Manager
+>Applies To: System Center 2016 - Operations Manager
 
 The following table gives a quick reference for where to perform common tasks and links to relevant information.
 
 |To perform this task|Do this|
 |------------------------|-----------|
-|Check for problems in a management group|-   Check the **Management Group Health** view in the Operations Manager folder in the **Monitoring** workspace<br />-   See the **State and Alerts** summary on the Monitoring Overview page<br />-   Check **Active Alerts** in the **Monitoring** workspace<br />-   Check **Task Status** in the **Monitoring** workspace|
+|Check for problems in a management group|-  Check the **Management Group Health** view in the Operations Manager folder in the **Monitoring** workspace<br> - See the **State and Alerts** summary on the Monitoring Overview page  Check **Active Alerts** in the **Monitoring** workspace<br> - Check **Task Status** in the **Monitoring** workspace|
 |Start monitoring a computer|On the Administration Overview page, click **Configure computers and devices to manage**. For more information, see [Managing Discovery and Agents](Managing-Discovery-and-Agents.md).|
-|Create or modify a resource pool|In the **Administration** workspace, click **Resource Pools**. For more information, see [How to Create a Resource Pool](How-to-Create-a-Resource-Pool.md) and [Managing Resource Pools for UNIX and Linux Computers](https://technet.microsoft.com/library/hh287152%28v=sc.12%29.aspx).|
-|-   Create a group<br />-   View available groups<br />-   View group members<br />-   View state of a group<br />-   View diagram of a group<br />-   Modify a group|Click **Groups** in the **Authoring** workspace<br /><br />For instructions, see [Creating and Managing Groups](https://technet.microsoft.com/library/hh212842%28v=sc.12%29.aspx)|
+|Create or modify a resource pool|In the **Administration** workspace, click **Resource Pools**. For more information, see [How to Create a Resource Pool](How-to-Manage-Resource-Pools.md#to-create-a-resource-pool) and [Managing Resource Pools for UNIX and Linux Computers](How-to-Manage-Resource-Pools.md#configure-certificates-for-unix/linux-dedicated-resource-pools).|
+|-   Create a group<br>-   View available groups<br>-   View group members<br>-   View state of a group<br>-   View diagram of a group<br>-   Modify a group|Click **Groups** in the **Authoring** workspace<br><br>For instructions, see [Creating and Managing Groups](creating-and-managing-groups.md)|
 |Create a view|In the **Monitoring** workspace or **My Workspace**, at the bottom of the navigation pane, click **New View**. For more information, see [Using Views in Operations Manager](https://technet.microsoft.com/library/hh212694.aspx).|
 |Customize the settings of a view for your own use|In the **Monitoring** workspace, right-click a view in the navigation pane, and then click **Personalize view**. For more information, see [How to Personalize a View in Operations Manager](https://technet.microsoft.com/library/hh270022%28v=sc.12%29.aspx).|
-|Change the interval for heartbeats.|In the **Administration** workspace, click **Settings**, and then under **Agent**, click **Heartbeat**. For more information, see [How Heartbeats Work in Operations Manager](https://technet.microsoft.com/library/hh212798%28v=sc.12%29.aspx).|
-|Change the number of missed heartbeats allowed|In the **Administration** workspace, click **Settings**, and then under **Server**, click **Heartbeat**. For more information, see [How Heartbeats Work in Operations Manager](https://technet.microsoft.com/library/hh212798%28v=sc.12%29.aspx).|
+|Change the interval for heartbeats.|In the **Administration** workspace, click **Settings**, and then under **Agent**, click **Heartbeat**. For more information, see [How Heartbeats Work in Operations Manager](how-heartbeats-work.md).|
+|Change the number of missed heartbeats allowed|In the **Administration** workspace, click **Settings**, and then under **Server**, click **Heartbeat**. For more information, see [How Heartbeats Work in Operations Manager](how-heartbeats-work.md).|
 |Change a setting for a rule, monitor, or alert.|Make changes to rules, monitors, or alerts by creating an override. Select a rule, monitor, or alert, and then access the overrides options by right-clicking, or clicking **Overrides** on the toolbar, or clicking **Overrides** in the Tasks pane. For more information, see [Tuning Monitoring by Using Targeting and Overrides](https://technet.microsoft.com/library/hh230704%28v=sc.12%29.aspx) and [Creating a Management Pack for Overrides](https://technet.microsoft.com/library/hh212841%28v=sc.12%29.aspx).|
 |Change how frequently records are removed from the operational database.|In the **Administration** workspace, click **Settings**, right-click **Database Grooming**, and then click **Properties**. For more information, see [How to Configure Grooming Settings for the Operations Manager Database](https://technet.microsoft.com/library/hh230753%28v=sc.12%29.aspx).|
 |Give a user permissions to view Operations Manager information or perform tasks.|In the **Administration** workspace, click **User Roles**, and then right-click a specific role and click **Properties**. For more information, see [Implementing User Roles](https://technet.microsoft.com/library/hh230728%28v=sc.12%29.aspx) and [How to Assign Members to User Roles](https://technet.microsoft.com/library/hh528917%28v=sc.12%29.aspx).|
@@ -38,7 +36,8 @@ The following table gives a quick reference for where to perform common tasks an
 |Stop monitoring a computer temporarily.|In the **Monitoring** workspace, click **Windows Computers**, right-click the computer you want to stop monitoring, and click **Maintenance Mode**. For more information, see [How to Suspend Monitoring Temporarily by Using Maintenance Mode](How-to-Suspend-Monitoring-Temporarily-by-Using-Maintenance-Mode.md).|
 |||
 
-## See Also
+## Next steps
+
 [Operations Guide for System Center 2016 - Operations Manager](System-Center-2016---Operations-Manager-Operations-Guide.md)
 
 
