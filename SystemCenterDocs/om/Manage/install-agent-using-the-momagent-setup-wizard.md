@@ -72,7 +72,7 @@ Before you use the Setup Wizard, ensure the following conditions are met:
 - If you would like to manually install the Windows agent from the command line or automate the deployment using a script or other automation solution, review [Install Agent Using the Command Line](Install-Agent-Using-the-Command-Line.md)
 - After manually installing the Operations Manager agent on Windows or UNIX and Linux computers, you need to [Process Manual Agent Installations](Process-Manual-Agent-Installations.md)
 - To understand how to manage the configuration settings of a Windows agent and options available, review [Configuring Agents](Configuring-Agents.md)
-- Review [Uninstall Agent from Windows-based Computers](Uninstall-Agent-from-Windows-based-Computers.md) to understand what options and steps need to be performed to properly uninstalling the agent from your Windows computers.  
+- Review [Uninstall Agent from Windows-based Computers](Uninstall-Agent-from-Windows-based-Computers.md) to understand what options and steps need to be performed to properly uninstall  the agent from your Windows computers.  
 
 
 
