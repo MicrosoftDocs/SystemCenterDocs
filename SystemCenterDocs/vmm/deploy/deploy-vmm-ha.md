@@ -3,7 +3,7 @@ title: Deploy VMM for high availability
 description: This article describes how to deploy VMM in high availability mode.
 author:  rayne-wiselman
 manager:  cfreemanwa
-ms.date:  2016-08-30
+ms.date:  2016-09-01
 ms.topic:  article
 ms.prod:  system-center-threshold
 ms.technology:  virtual-machine-manager
@@ -28,9 +28,8 @@ You'll need to prepare for a  high availability deployment
 - Don't install on a Hyper-V host. You can install VMM on a VM.
 
 
-## Deploy components
+## Deploy high availability components
 
 - [Deploy the VMM management server in a failover cluster](deploy-vmm-server-ha.md)
 - [Make library server file shares highly available](deploy-library-ha.md)
 - [Deploy the SQL Server VMM database as highly available](deploy-sql-ha.md)
-

@@ -3,7 +3,7 @@ title: Install VMM
 description: This article provides installation instructions for VMM
 author:  rayne-wiselman
 manager:  cfreemanwa
-ms.date:  2016-08-30
+ms.date:  2016-09-01
 ms.topic:  article
 ms.prod:  system-center-threshold
 ms.technology:  virtual-machine-manager
@@ -15,7 +15,7 @@ ms.technology:  virtual-machine-manager
 
 Use this article to install the System Center 2016 - Virtual Machine Manager (VMM) management server.
 
-## Before you begin
+## Before you start
 
 - Review the [system requirements](../../system-requirements/System-Requirements-for-System-Center-Technical-Preview.md)
 - Make sure you've followed in the planning instructions.
@@ -27,7 +27,7 @@ Use this article to install the System Center 2016 - Virtual Machine Manager (VM
 1. Close any open programs and ensure that no restarts are pending on the computer.
 2. To start the Virtual Machine Manager Setup wizard, on your installation media, right-click **setup.exe**, and then click **Run as administrator**.
 3. In the main setup page, click **Install**. If you have not installed the Microsoft .NET Framework, VMM will prompt you to install it now.
-4. On the **Select features to install** page, select the **VMM management server** check box, and then click **Next**. The VMM console will be automatically installed. If you're installing on a cluster node you'll be asked if you want to make the management server highly available. 
+4. On the **Select features to install** page, select the **VMM management server** check box, and then click **Next**. The VMM console will be automatically installed. If you're installing on a cluster node you'll be asked if you want to make the management server highly available.
 5. On the **Product registration information** page, provide the appropriate information, and then click **Next**. If you do not enter a product key, VMM will be installed as an evaluation version that expires in 180 days after installation.
 6. On the **Please read this license agreement** page, review the license agreement, select the **I have read, understood, and agree with the terms of the license agreement** check box, and then click **Next**.
 7. On the **Usage and Connectivity Data** page, select either option, and then click **Next**.
