@@ -16,7 +16,7 @@ This article describes the steps for deploying a highly available System Center 
 
 ### Before you start
 
-- Read the planning steps for a highly available deployment.
+- Read the [planning steps](../plan/plan-ha-deployment.md) for a highly available deployment.
 - This procedure presumes you're setting up a single failover cluster with two or more file servers.
 
 

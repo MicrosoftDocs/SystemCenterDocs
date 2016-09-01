@@ -3,7 +3,7 @@ title: Upgrade to VMM in System Center Technical Preview
 description: This article helps you to upgrade your existing VMM deployment to System Center Technical Preview
 author:  rayne-wiselman
 manager:  cfreemanwa
-ms.date:  2016-08-30
+ms.date:  2016-09-01
 ms.topic:  article
 ms.prod:  system-center-threshold
 ms.technology:  virtual-machine-manager
@@ -13,10 +13,10 @@ ms.technology:  virtual-machine-manager
 
 >Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
 
-This article describes prerequisites for System Center 2016 - Virtual Machine Manager (VMM) upgrade. It includes upgrade steps, and describes tasks you should complete after the upgrade finishes.
+This article describes prerequisites for upgrading to System Center 2016 - Virtual Machine Manager (VMM). It includes upgrade steps, and describes tasks you should complete after the upgrade finishes.
 
 
-## Before you begin
+## Before you start
 
 - Complete all jobs that are currently running in VMM. You can use the console to view the jobs’ status. All job history is deleted during the upgrade.
 - Close any connections to the VMM management server, including the VMM console and the VMM command shell. Close any other programs that are running on the VMM management server.
@@ -181,7 +181,7 @@ In the physical computer profile, you can select to filter the drivers by tags, 
 
 ## Relocate the VMM library
 
-- If you upgraded to a high availability VMM management server, we recommend that you relocate your VMM library to a high availability file server. 
+- If you upgraded to a high availability VMM management server, we recommend that you relocate your VMM library to a high availability file server.
 - After you create a new VMM library, you will want to move the resources from the previous VMM library to the new VMM library.
 - To preserve the custom fields and properties of saved virtual machines in the previous VMM library, deploy the saved virtual machines to a host and then save the virtual machines to the new VMM library.
 -  Note that operating system and hardware profiles cannot be moved. You need to re-create these profiles.

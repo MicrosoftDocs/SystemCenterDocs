@@ -3,7 +3,7 @@ title: Deploy the VMM library for high availability
 description: This article describes how to set up the VMM library in a highly available deployment
 author:  rayne-wiselman
 manager:  cfreemanwa
-ms.date:  2016-08-30
+ms.date:  2016-09-01
 ms.topic:  article
 ms.prod:  system-center-threshold
 ms.technology:  virtual-machine-manager
@@ -16,7 +16,7 @@ This article describes the steps for deploying a highly available System Center 
 
 ## Before you start
 
-Read the planning steps for a highly available VMM deployment.
+Read the [planning steps](../plan/plan-ha-deployment.md) for a highly available VMM deployment.
 
 
 
