@@ -5,7 +5,7 @@ ms.topic:  article
 author:  bwren
 ms.prod:  system-center-threshold
 keywords:  
-ms.date:  2016-08-18
+ms.date:  2016-09-01
 title:  How to install Orchestrator Features
 ms.technology:  orchestrator
 ms.assetid:  cd0b7e89-7bd2-482a-b840-f3f119e6f9ea
