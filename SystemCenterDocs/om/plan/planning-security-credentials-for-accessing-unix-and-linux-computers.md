@@ -16,6 +16,18 @@ ms.topic:  article
 
 This topic describes the credentials required to install, maintain, upgrade, and uninstall agents on a UNIX or Linux computer.
 
+In Operations Manager, the management server uses two protocols to communicate with the UNIX or Linux computer:
+
+- Secure Shell (SSH) and Secure Shell File Transfer Protocol (SFTP)
+    - Used for installing, upgrading, and removing agents.
+
+-  Web Services for Management (WS-Management)
+    - Used for all monitoring operations and include the discovery of agents that were already installed.
+
+The protocol that is used depends on the action or information that is requested on the management server. All actions, such as agent maintenance, monitors, rules, tasks, and recoveries, are configured to use predefined profiles according to their requirement for an unprivileged or privileged account. 
+
+In Operations Manager, the system administrator is no longer is required to provide the root password of the UNIX or Linux computer to the management server. Now by elevation, an unprivileged account can assume the identity of a privileged account on the UNIX or Linux computer. The elevation process is performed by the UNIX su (superuser) and sudo programs that use the credentials that the management server supplies. For privileged agent maintenance operations that use SSH (such as discovery, deployment, upgrades, uninstallation, and agent recovery), support for su, sudo elevation, and support for SSH key authentication (with or without passphrase) is provided. For privileged WS-Management operations (such as viewing secure log files), support for sudo elevation (without password) is added. 
+
 ## Credentials for installing agents
 
 Operations Manager uses the Secure Shell (SSH) protocol to install an agent and Web Services for Management (WS-Management) to discover previously installed agents. Installation requires a privileged account on the UNIX or Linux computer. There are two ways to provide credentials to the targeted computer, as obtained by the **Computer and Device Management Wizard**:
@@ -38,7 +50,7 @@ The installation is not completed until the agent is verified. Agent verificatio
 
 Alternatively, you can install the agent, including its certificate, manually on the UNIX or Linux computer and then discover that computer. This method is the most secure way to install agents. For more information, see [Install the Agent and Certificate on UNIX and Linux Computers Using the Command Line](../manage/Install-the-Agent-and-Certificate-on-UNIX-and-Linux-Computers-Using-the-Command-Line.md).
 
-### Credentials for monitoring operations and performing agent maintenance
+## Credentials for monitoring operations and performing agent maintenance
 
 Operations Manager contains three predefined profiles to use in monitoring UNIX and Linux computers and performing agent maintenance:
 
@@ -72,9 +84,9 @@ These Run As account types can be configured for different levels of access acco
 
 |Profiles|Run As account type|Allowable Access Levels|
 |------------|-----------------------|---------------------------|
-|UNIX/Linux action account|Monitoring account|-   Unprivileged<br />-   Privileged<br />-   Unprivileged, elevated to privileged|
-|UNIX/Linux privileged account|Monitoring account|-   Privileged<br />-   Unprivileged, elevated to privileged|
-|UNIX/Linux maintenance account|Agent maintenance account|-   Privileged<br />-   Unprivileged, elevated to privileged|
+|UNIX/Linux action account|Monitoring account|-   Unprivileged<br>-   Privileged<br>-   Unprivileged, elevated to privileged|
+|UNIX/Linux privileged account|Monitoring account|-   Privileged<br>-   Unprivileged, elevated to privileged|
+|UNIX/Linux maintenance account|Agent maintenance account|-   Privileged<br>-   Unprivileged, elevated to privileged|
 
 Note that there are three profiles, but only two Run As Account types.
 
@@ -86,7 +98,8 @@ When you specify a Monitoring Run As Account Type, you must specify a user name 
 
 After you created the Run As accounts, you must edit the UNIX and Linux profiles to associate them with the Run As accounts you created.  For detailed instructions, see [How to Configure Run As Accounts and Profiles for UNIX and Linux Access](https://technet.microsoft.com/library/hh212926.aspx)
 
-### Credentials for upgrading and uninstalling agents
+## Credentials for upgrading and uninstalling agents
+
 The **UNIX/Linux Agent Upgrade Wizard** and the **UNIX/Linux Agent Uninstall Wizard** provide credentials to their targeted computers. The wizards first prompt you to select the targeted computers to upgrade or uninstall, followed by options on how to provide the credentials to the targeted computer:
 
 -   **Use existing associated Run As Accounts**
