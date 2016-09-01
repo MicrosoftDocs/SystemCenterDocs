@@ -1,17 +1,12 @@
 ---
 title: How Heartbeats Work in Operations Manager
-author:mgoedtel
-manager:cfreemanwa
+author: mgoedtel
+manager: cfreemanwa
+ms.date: 2016-08-29
 ms.custom: na
 ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology: 
-  - operations-manager
-ms.tgt_pltfrm: na
+ms.technology: operations-manager
 ms.topic: article
-ms.date: 2016-08-24
-ms.assetid: 86d48b3b-7498-4d62-b554-2dd0346cd371
 ---
 
 # How Heartbeats Work in Operations Manager
