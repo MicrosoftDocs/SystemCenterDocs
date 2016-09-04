@@ -18,8 +18,8 @@ Use this article to manage Hyper-V host clusters in the System Center 2016 - Vir
 
 ### Configure cluster properties
 
-1. In **Fabric** right-click the cluster > **Properties**.
-2. Configure settings as described in the table.
+1. In **Fabric**, right-click the cluster > **Properties**.
+2. Configure the settings summarized in the table.
 
 **Tab** | **Settings**
 --- |---
@@ -31,12 +31,12 @@ Use this article to manage Hyper-V host clusters in the System Center 2016 - Vir
 
 ## Add a node to the cluster
 
-1. If you already used Failover Cluster Manager to add the node then in **Fabric** > **Servers ** > **All Hosts**, right-click the host with a **Pending** status, and click **Add to Host Cluster**.
-2. If you didn't add the node with the Failover Cluster Manager you can add hosts that are already managed by VMM. In **Fabric** > **Servers ** > **All Hosts**, right-click the cluster > **Add Cluster Node**. In the Add Nodes Wizard > Resource Type select the RunAs account that will be used to add the nodes. Make sure **Existing servers running a Windows Server operating system** is selected. In **Select Hosts** select the Hyper-V host server that you want to add. Finish the wizard and verify the settings.
+1. If you already used Failover Cluster Manager to add the node, then in **Fabric** > **Servers** > **All Hosts**, right-click the host with a **Pending** status, and click **Add to Host Cluster**.
+2. If you didn't add the node with the Failover Cluster Manager, you can add hosts that are already managed by VMM. In **Fabric** > **Servers ** > **All Hosts**, right-click the cluster > **Add Cluster Node**. In the Add Nodes Wizard > **Resource Type**, select the RunAs account that will be used to add the nodes. Make sure **Existing servers running a Windows Server operating system** is selected. In **Select Hosts** select the Hyper-V host server that you want to add. Finish the wizard and verify the settings.
 
 ## Remove a node from the cluster
 
-1. Click **Fabric** > **Servers ** > **All Hosts**.
+1. Click **Fabric** > **Servers** > **All Hosts**.
 2. Locate the cluster node you want to remove and view the status in the **Hosts** pane.
 3. If the node isn't in maintenance mode click Start Maintenance Mode. Click **Move all virtual machines to other hosts in the cluster** and verify the status.
 4. Right-click the host > **Remove Cluster Node** > **Yes**. During the job to remove the node any shared storage is unregistered from the node. If you manage storage outside VMM then you should unregister the storage from the node.
@@ -45,7 +45,7 @@ Use this article to manage Hyper-V host clusters in the System Center 2016 - Vir
 
 Remove a host cluster as follows:
 
-1. Click **Fabric** > **Servers ** > **All Hosts**.
+1. Click **Fabric** > **Servers** > **All Hosts**.
 2. Make sure the cluster isn't supporting any highly-available VMs or clustered services/apps.
 3. Right-click the host cluster > **Uncluster**. Click **Yes** to continue.
-4. During the job to remove the cluster any shared storage is unregistered from the cluster nodes. If you manage storage outside VMM then you should unregister the storage.
+4. During the job to remove the cluster any shared storage is unregistered from the cluster nodes. If you manage storage outside VMM, then you should unregister the storage.
