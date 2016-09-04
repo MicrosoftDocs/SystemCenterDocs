@@ -13,7 +13,7 @@ ms.technology:  virtual-machine-manager
 
 >Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
 
-This article describes how to set up static IP address pool for logical and VM networks in the System Center 2016 - Virtual Machine Manager (VMM) networking fabric.
+This article describes how to set up static IP address pools for logical and VM networks in the System Center 2016 - Virtual Machine Manager (VMM) networking fabric.
 
 
 ## Before you start
@@ -33,10 +33,10 @@ When you set up the logical network you'll need to configure a static IP address
 
 	- For an existing site select the site and IP subnet from which to create the pool.
 	- For a new stie specify the site name, IP subnet to assign to the site, and VLAN information if relevant. Select the host groups that can access this site and the logical network.
-4. If you're using network virtualiztion you can use the pool to support multicasting or broadcasting. To do this click **Create a multicast IP address pool** and select the IP subnet you want to use. To use multicasting or broadcasting note that:
+4. If you're using network virtualization you can use the pool to support multicasting or broadcasting. To do this click **Create a multicast IP address pool** and select the IP subnet you want to use. To use multicasting or broadcasting note that:
 
 	- The logical network must have network virtualization enabled.
-	- The IP protocol setting for the VM network must match the IP protocol settings for the underlying logical network. You can't view the protocol setting in the VMM console after you've created it. You'll need to run Ge**t-SCVMMNEtwork -Name <VM network name> | Format -List Name, Isolation Type, PoolType to see it.
+	- The IP protocol setting for the VM network must match the IP protocol settings for the underlying logical network. You can't view the protocol setting in the VMM console after you've created it. You'll need to run **Get-SCVMMNEtwork -Name <VM network name> | Format -List Name, Isolation Type, PoolType** to see it.
 	- After you've configured this feature multicast and broadcast packets on the VM network will use the IP addresses from the multicast IP address pool. Each subnet in the VM network will consue one IP address from the multicast pool.
 
 5. In **IP address range** enter the start and end address for the pool. They must be contained within the subnet. In **VIPs and reserved IP addresses** specify IP address range you want to reserve for VIPs. VIPS are used during deployment of a service in a load-balanced service tier. VMM automatically assigns a VIP to the load balancer from the reserved VIP address range.
@@ -64,7 +64,7 @@ You can release inactive addresses. When you do VMM returns the address to the s
 - A host that was assigned a static IP address through the bare-metal deployment process is removed from VMM management. When you remove the host, any IP and MAC addresses that were statically assigned to virtual machines on the host are also marked as inactive.
 - A virtual machine goes into a missing state because it was removed outside VMM.
 
-1. To release IP addresses:
+1. Release  the IP addresses:
 
 	- To release addresses in a pool in a logical network click **Logical Networks and IP Pools** expand the logical network and click the IP address pool.
 	- To release addresses in a pool in a VM network click **Logical Networks and IP Pools** expand the VM network and click the IP address pool.
