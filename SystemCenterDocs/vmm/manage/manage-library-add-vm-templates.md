@@ -1,4 +1,3 @@
-
 ---
 title: Add VM templates to the VMM library
 description: This article provides guidance for adding VM templates to the library in the VMM compute fabric
@@ -40,11 +39,11 @@ There are two methods for creating a VM template:
 
 ### Create a VM template based on an existing VHD or VM template in the library
 
-1. Click **Library ** > **Create** > **Create VM Template**.
-2. In **Create VM Template Wizard** > **Select Source** click **Use an existing VM template or virtual hard disk stored in the library**. Select the disk or template in **Select VM Template Source**.
-3. In **Identity** type in a template name and description.
-4. In **Configure Hardware** specify the hardware settings. You can select to use an existing hardware profile. Note that the profile and hardware options will depend on which you're configuring gen 1 or gen 2 VMs. [Read more](manage-library-add-profiles.md#create-a-hardware-profile) about hardware settings.
-5. In **Configure Operating System** specify the machine settings. You can use a guest OS profile or configure specific settings. [Read more](manage-library-add-profiles.md#create-a-guest-os-profile).
+1. Click **Library* > **Create** > **Create VM Template**.
+2. In  the Create VM Template Wizard, select **Source** > **Use an existing VM template or virtual hard disk stored in the library**. Select the disk or template in **Select VM Template Source**.
+3. In **Identity**, type in a template name and description.
+4. In **Configure Hardware**, specify the hardware settings. You can select to use an existing hardware profile. Note that the profile and hardware options will depend on which you're configuring gen 1 or gen 2 VMs. [Read more](manage-library-add-profiles.md#create-a-hardware-profile) about hardware settings.
+5. In **Configure Operating System**, specify the machine settings. You can use a guest OS profile or configure specific settings. [Read more](manage-library-add-profiles.md#create-a-guest-os-profile).
 6. In **Configure Applications**, set up app settings. This isn't relevant if you're using the VM template to deploy VMs that aren't part of a service. [Read more](manage-library-add-profiles.md#create-an-application-profile) about app settings. If you're configuring SQL Server set in up in **Configure SQL Server**. [Read more](manage-library-add-profiles.md#create-a-sql-server-profile).
 7. In **Summary** review the settings and click **View Script** if you want to see the script that will be used to create the template. Then click **Create**. In **Jobs** you can track the template being created. Wait for the **Completed** status.
 8. When you create a VM you'll be able to create it based on the template you've just created.
@@ -52,11 +51,11 @@ There are two methods for creating a VM template:
 
 ### Create a VM template based on a VM deployed on a host
 
-1. Click **Library ** > **Create** > **Create VM Template**.
-2. In **Create VM Template Wizard** > **Select Source** click **From an existing virtual machine that is deployed on a host**. Select the VM in **Select VM Template Source**.
-3. In **Identity** type in a template name and description. Note that the template will destroy the source VM and data on it could be lost. Clone it if it's important to you.
-4. In **Configure Hardware** click **Next**.
-5. In **Configure Operating System** specify the guest operating system settings. You can use a guest OS profile or configure specific settings. [Read more](manage-library-add-profiles.md#create-a-guest-os-profile).
-6. In **Select Library Server** click the library server for the VM you're using for the template and in **Select Path** specify the share/folder.
-7. In **Summary** review the settings and click **Create**. In **Jobs** you can track the template being created. Wait for the **Completed** status.
+1. Click **Library** > **Create** > **Create VM Template**.
+2. In  the Create VM Template Wizard > select **Source** > **From an existing virtual machine that is deployed on a host**. Select the VM in **Select VM Template Source**.
+3. In **Identity**, type in a template name and description. Note that the template will destroy the source VM and data on it could be lost. Clone it if it's important to you.
+4. In **Configure Hardware**, click **Next**.
+5. In **Configure Operating System**, specify the guest operating system settings. You can use a guest OS profile or configure specific settings. [Read more](manage-library-add-profiles.md#create-a-guest-os-profile).
+6. In **Select Library Server**, click the library server for the VM you're using for the template and in **Select Path** specify the share/folder.
+7. In **Summary**, review the settings and click **Create**. In **Jobs** you can track the template being created. Wait for the **Completed** status.
 8. Now when you create a VM you'll be able to create it based on the template you've just created.
