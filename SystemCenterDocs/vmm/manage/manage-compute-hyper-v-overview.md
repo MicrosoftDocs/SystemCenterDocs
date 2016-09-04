@@ -1,0 +1,28 @@
+---
+title: Set up Hyper-V hosts and clusters in the VMM compute fabric
+description: This article provides about managing your Hyper-V environment in the VMM fabric
+author:  rayne-wiselman
+manager:  cfreemanwa
+ms.date:  2016-09-04
+ms.topic:  article
+ms.prod:  system-center-threshold
+ms.technology:  virtual-machine-manager
+---
+
+# Set up Hyper-V hosts and clusters in the VMM compute fabric
+
+>Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
+
+Read this article to learn about how you can add and provision Hyper-V hosts and clusters in the System Center 2016 - Virtual Machine Manager (VMM) compute fabric.
+
+## Overview
+
+You can manage medium, large, and enterprise-scale Hyper-V deployments in the VMM fabric. VMM provides a number of features that allow you to manage and scale growing numbers of Hyper-V servers more easily than in Hyper-V Manager.
+
+In the VMM fabric you can:
+
+- [Perform rolling upgrades](manage-compute-rolling-upgrade-hyper-v.md) of Hyper-V clusters in the VMM fabric.
+- [Add existing Windows servers and clusters](manage-compute-add-existing-servers.md) with or without the Hyper-V role to the VMM fabric.
+- [Add a Nano server](manage-compute-add-nano-hyper-v.md) as a Hyper-V host or cluster in the VMM fabric.
+- [Create a Hyper-V cluster](manage-compute-create-cluster-from-standalone.md) from existing standalone Hyper-V hosts in the VMM fabric.
+- [Provision a Hyper-V host or cluster from bare metal](manage-compute-bare-metal-hyper-v.md) in the VMM fabric.
