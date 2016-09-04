@@ -25,8 +25,8 @@ You can apply network settings to a Hyper-V host or cluster using a couple of me
 
 ## Before you start
 
-- If you want to configure network settings manually ensure you've set up logical networks before you begin. In addition make sure that the network sites within your logical networks are configured to use the host group of the host you want to assign them to. Check this in **Fabric** > **Servers** > **All Hosts** and click the host group. In **Hosts**, click the host > **Properties**.
-- If you want to use a logical switch you'll need to create the logical switch and port profiles.
+- If you want to configure network settings manually ensure you've set up logical networks before you begin. In addition make sure that the network sites within your logical networks are configured to use the host group of the host you want to assign them to. Check this in **Fabric** > **Servers** > **All Hosts**, and click the host group. In **Hosts**, click the host > **Properties**.
+- If you want to use a logical switch you need to create the logical switch and port profiles.
 
 
 ## Manually configure network settings
@@ -35,8 +35,8 @@ To do this you assign a logical network to a physical network adapter, and then 
 
 ### Assign logical networks to a physical network adapter on a host
 
-1.  Open **Fabric** > **Servers** > **All Hosts** and click the host group.
-2.  click **Hosts** > the host name > **Properties** > **Hardware**.
+1.  Open **Fabric** > **Servers** > **All Hosts**, and click the host group.
+2.  Click **Hosts** > the host name > **Properties** > **Hardware**.
 3.  Under **Network Adapters**, click the physical network adapter that you want to configure. If you want to use this network adapter for virtual machines, ensure that **Available for placement** is checked. If you want to use this network adapter for communication between the host and the VMM management server, ensure that **Used by management** is checked. Make sure that you have at least one network adapter available for communication between the host and the VMM management server. Make sure that **Used by management** is checked for this network adapter.
 4.  Under the physical network adapter, click **Logical network connectivity**. Notice the various kinds of information displayed, such as the list of IP subnets and VLANs that are available. If you’ve added a top-of-rack (TOR) switch as a network service, port information that is provided by the switch might also be displayed.
 5.  Review the list of logical networks, and take note of the following:
@@ -57,11 +57,11 @@ Control the types of connectivity available to virtual machines by using **Exter
 3.  In **Name** , enter a name, or accept the default.
 4.  In the **Network binding** list, click the network type. You can configure the following types:
 
-    |||
-    |-|-|
-    |**External** | Allows virtual machines to communicate with each other and with externally located servers, and optionally with the host operating system. You might use this setting to allow virtual machines to access a perimeter network and not expose the host operating system. An **External** network is bound to a physical network adapter.|
-    |**Internal** | Allows communication between virtual machines on the same host and between the virtual machines and the host. This setting is often used to build a test environment where virtual machines are connected to the host operating system, but not connected to external networks. An **Internal** network is not bound to a physical network adapter.|
-    |**Private** | Allows communication between virtual machines on the same host but not with the host or with external networks. This setting is often used to isolate virtual machines from network traffic in the host operating system and in the external networks. A **Private** network does not have a virtual network adapter in the host operating system, and is not bound to a physical network adapter.|
+    **Network type** | **Details**
+    --- |---
+    **External** | Allows virtual machines to communicate with each other and with externally located servers, and optionally with the host operating system. You might use this setting to allow virtual machines to access a perimeter network and not expose the host operating system. An **External** network is bound to a physical network adapter.
+    **Internal** | Allows communication between virtual machines on the same host and between the virtual machines and the host. This setting is often used to build a test environment where virtual machines are connected to the host operating system, but not connected to external networks. An **Internal** network is not bound to a physical network adapter.
+    **Private** | Allows communication between virtual machines on the same host but not with the host or with external networks. This setting is often used to isolate virtual machines from network traffic in the host operating system and in the external networks. A **Private** network does not have a virtual network adapter in the host operating system, and is not bound to a physical network adapter.
 
 5.  If you click **External**, do the following:
 
@@ -80,8 +80,8 @@ To do this you'll need to configure the logical switch and port profiles you'll 
 
 ## Set up a logical switch
 
-1. Open the **Fabric** > **Home **> **Show** > **Fabric Resources** > **Networking** > **Logical Switches**.
-2. In the Create Logical Switch Wizard > **Getting Started** page, review the information.
+1. Open the **Fabric** > **Home** > **Show** > **Fabric Resources** > **Networking** > **Logical Switches**.
+2. In Create Logical Switch Wizard > **Getting Started**, review the information.
 3. In **General**, enter a name and optional description for the logical switch. If you want to enable single root I/O virtualization (SR-IOV), select the Enable single root I/O virtualization (SR-IOV) check box. SR-IOV enables virtual machines to bypass the switch and directly address the physical network adapter. To fully enable SR-IOV make sure that:
 
     - You have SR-IOV support in the host hardware and firmware, the physical network adapter, and drivers in the management operating system and in the guest operating system.
@@ -111,18 +111,18 @@ Before you add a top-of-rack switch:
 - For your TOR switch, make sure that you know the manufacturer and model, the name of an account that has configuration permissions, the connection string, and the host groups to include. If certificates are used for the provider software, make sure you know how to view the thumbprint information for those certificates.
 
 
-1. Open **Fabric** > **Home** > **Show** > **Fabric Resources** > **Networking** > **Network Services**. Network services include gateways, virtual switch extensions, network managers, and TOR switches.
-2. In the Add Network Service Wizard > Name page, specify a name and optional description.
-3. On the Manufacturer and Model page, make selections as follows:
+1. Open **Fabric** > **Fabric Resources** > **Networking** > **Network Services**. Network services include gateways, virtual switch extensions, network managers, and TOR switches.
+2. In Add Network Service Wizard > **Name**, specify a name and optional description.
+3. In **Manufacturer and Model**, make selections as follows:
 
     - To use the provider software that is included in VMM, in the **Manufacturer **list, click **Microsoft**, and in the **Model** list, click **Microsoft Network Switch Profile Switch**.
     - To use provider software that is provided by the switch vendor, click the appropriate **Manufacturer** and ** Model** for your switch.
-4. On the **Credentials** page, either click Browse and then on the Select a Run As Account dialog box, select an account, or click **Create Run As Account** and create a new account.
-5.  On the **Connection String** page, type the connection string that is used by the TOR switch. For example, you might enter the following connection string: https://TORswitch1.contoso.com:5986. If you are not using the provider software that is included in VMM, when you enter the connection string, use the syntax that is defined by the manufacturer of your TOR switch.
-6. On the **Certificates** page, if certificates are listed, verify that the thumbprints of those certificates match the thumbprints of the certificates that are installed on the TOR switch. Then select the box to confirm that the certificates can be imported to the trusted certificate store. If no certificates are listed, the connection string that was provided probably does not require a certificate, and you can continue to the next page of the wizard. However, if no certificates are listed but your TOR switch requires them, confirm that the certificates were installed correctly on your device.
-7. On the **Provider** page, in the **Configuration provider** list, select an available provider, and then click Test to run basic validation against the TOR switch by using the selected provider. If tests indicate that the provider software works as expected, click Next.
-8. On the **Host Group** page, select one or more host groups to which the TOR switch will be available.
-9. On the **Summary** page, review and confirm the settings, and then click **Finish**.
+4. In **Credentials** , either click Browse and then on the Select a Run As Account dialog box, select an account, or click **Create Run As Account** and create a new account.
+5.  In **Connection String**, type the connection string that is used by the TOR switch. For example, you might enter the following connection string: https://TORswitch1.contoso.com:5986. If you are not using the provider software that is included in VMM, when you enter the connection string, use the syntax that is defined by the manufacturer of your TOR switch.
+6. In **Certificates**, if certificates are listed, verify that the thumbprints of those certificates match the thumbprints of the certificates that are installed on the TOR switch. Then select the box to confirm that the certificates can be imported to the trusted certificate store. If no certificates are listed, the connection string that was provided probably does not require a certificate, and you can continue to the next page of the wizard. However, if no certificates are listed but your TOR switch requires them, confirm that the certificates were installed correctly on your device.
+7. In **Provider** > **Configuration provider** list, select an available provider, and then click Test to run basic validation against the TOR switch by using the selected provider. If tests indicate that the provider software works as expected, click Next.
+8. In **Host Group**, select one or more host groups to which the TOR switch will be available.
+9. In **Summary**, review and confirm the settings, and then click **Finish**.
 
 ## Specify what the network adapter is used for
 
