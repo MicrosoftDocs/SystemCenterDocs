@@ -20,7 +20,7 @@ Read this article to learn how to manage the System Center 2016 - Virtual Machin
 
 ## Refresh the library
 
-By default VMM refreshes library shares one every hour.
+By default VMM refreshes library shares once every hour.
 
 - You can change the default refresh settings in **General** > **Library Settings** > **Settings** > **Modify**, from to 366 hours (14 days). You can also disable automatic library refreshes.
 - To manually refresh select **Library** > library server or share > **Refresh share**.
@@ -71,10 +71,10 @@ When you remove a library share from VMM management, and there are templates tha
 To remove orphaned resources, you'll need to modify the templates that reference the orphaned resources to use valid library resources in the VMM library. If you add the library share again, VMM doesn't automatically reassociate the template with the physical library resource. You'll need to do these steps to correct template issues and to remove any orphaned resources.
 
 1. Click **Library** > **Orphaned Resources**.
-2. You won't be able to delete an orphaned resource until templates that reference it are updated to valid references. To view the templates right-click the orphaned resource > **Properties**. To update the template click it, in in **Properties** locate the resource that's missing, and click **Remove**.
+2. You won't be able to delete an orphaned resource until templates that reference it are updated to valid references. To view the templates right-click the orphaned resource > **Properties**. To update the template click it and then in the **Properties** dialog, locate the resource that's missing > **Remove**.
 3. Add a new resource that's valid.
-4. When you've completed these steps for all templates, closed the **Properties **dialog. To verify there aren't any dependences right-click the orphaned resource > **Properties **> **Dependencies**. Then right-click the orphaned resource > **Delete**.
+4. When you've completed these steps for all templates, closed the **Properties** dialog. To verify there aren't any dependences right-click the orphaned resource > **Properties** > **Dependencies**. Then right-click the orphaned resource > **Delete**.
 
 ## Next steps
 
-After you've set the library up start setting up [virtualization hosts](manage-compute-host-groups.md) in the VMM fabric.
+After you've set the library up, start setting up [virtualization hosts](manage-compute-host-groups.md) in the VMM fabric.
