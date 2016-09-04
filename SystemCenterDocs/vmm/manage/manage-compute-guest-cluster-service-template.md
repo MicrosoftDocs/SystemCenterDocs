@@ -56,28 +56,30 @@ Create a VM template that includes settings for a shared VHDX file. The VHDX fil
 
 1. In the VMM library, verify that you have a virtual hard disk that contains the operating system (created using SysPrep) you want to use for VM in the guest cluster. It mustn't be blank.
 2. Create a VM template.
-3. In the **Create VM Template Wizard** > **Select Source**, select Use an existing VM template or virtual hard disk stored in the library > **Browse**.
-4. In **Select VM Template Source** click the virtual hard disk you want to use.
-5. In **Configure Hardware** specify a hardware profile or hardware settings. To configure the guest cluster to use a shared VHDX in **Bus Configuration** click **SCSI adapter 0** and then next to **New** click **Disk**. The new disk appears as a listing under the SCSI adapter. Select the disk and select **Share the disk across the service tier**. Clear **Contains the operating system for the virtual machine**. Click **Browse** and select the VHDX file that you want VMM to deploy to shared storage and click **OK**. Repeat for each additional node in the cluster. Add the same disk each time but ensure that the SCSI channel is unique for each node.
-6. In **Network Adapters** select the adapter and select **Enable guest specified IP addresses**. This enables the nodes (VMs) in the cluster to specify IP addresses for the cluster itself and for applications that you configure to run in the cluster.
-7. In **Advanced **> **Availability** select **Make this virtual machine highly available**. With this setting enable the VM is created as a clustered instance on the host cluster so that if one host fails the VM will fail over to another host in the cluster.
-8. In **Advanced** > **Availability** click **Manage availability sets** > **Create**. The availability set you create will be used by all the nodes in the guest cluster. This means that VMM will attempt to keep the VMs on separate hosts, so that if one host fails VMs on a different host can provide services.
-9. In **Configure Operating System** open the **Guest OS profile** list and select a guest operating system profile or **Create new Windows operating system customization settings**. Your selection determines whether additional wizard pages are displayed.
+3. In the **Create VM Template Wizard** > **Select Source**, select **Use an existing VM template or virtual hard disk stored in the library** > **Browse**.
+4. In **Select VM Template Source**, click the virtual hard disk you want to use.
+5. In **Configure Hardware**, specify a hardware profile or hardware settings.
+6. To configure the guest cluster to use a shared VHDX, in **Bus Configuration** click **SCSI adapter 0**, and then next to **New** click **Disk**. The new disk appears as a listing under the SCSI adapter. Select the disk and select **Share the disk across the service tier**.
+7. Clear **Contains the operating system for the virtual machine**. Click **Browse**, and select the VHDX file that you want VMM to deploy to shared storage and click **OK**. Repeat for each additional node in the cluster. Add the same disk each time but ensure that the SCSI channel is unique for each node.
+6. In **Network Adapters** select the adapter, and select **Enable guest specified IP addresses**. This enables the nodes (VMs) in the cluster to specify IP addresses for the cluster itself and for applications that you configure to run in the cluster.
+7. In **Advanced **> **Availability**, select **Make this virtual machine highly available**. With this setting enable the VM is created as a clustered instance on the host cluster so that if one host fails the VM will fail over to another host in the cluster.
+8. Click **Manage availability sets** > **Create**. The availability set you create will be used by all the nodes in the guest cluster. This means that VMM will attempt to keep the VMs on separate hosts, so that if one host fails VMs on a different host can provide services.
+9. In **Configure Operating System**, open the **Guest OS profile** list and select a guest operating system profile or **Create new Windows operating system customization settings**. Your selection determines whether additional wizard pages are displayed.
 
-	- Under **Identity Information** > **Computer name** you can provide a pattern to generate computer names. For example, if you enter server####, the computer names that are created are server0001, server0002, and so on. The use of a pattern ensures that when you add additional virtual machines to a service, the computer names that are generated are related and identifiable. If you use this method to specify the computer name, you cannot use it in combination with a name prompt parameter (@<name>@). You can use one method or the other, but not both.
-	- Under **Networking** you can specify Active Directory settings by using the FQDN or by using at signs (@) before and after the domain name, for example, @Domain@. By using the at signs (@) in this way, the necessary information can be entered when the virtual machine is deployed as part of a service. You don't need a trust relationship between the domain in which the service is deployed and the VMM management server domain.
+	- Under **Identity Information** > **Computer name**, you can provide a pattern to generate computer names. For example, if you enter server####, the computer names that are created are server0001, server0002, and so on. The use of a pattern ensures that when you add additional virtual machines to a service, the computer names that are generated are related and identifiable. If you use this method to specify the computer name, you cannot use it in combination with a name prompt parameter (@<name>@). You can use one method or the other, but not both.
+	- Under **Networking**, you can specify Active Directory settings by using the FQDN or by using at signs (@) before and after the domain name, for example, @Domain@. By using the at signs (@) in this way, the necessary information can be entered when the virtual machine is deployed as part of a service. You don't need a trust relationship between the domain in which the service is deployed and the VMM management server domain.
 
 10. Finish the wizard to create the VM template.
 
 
 ## Include the VM template in a service template
 
-1. [Create a service template](manage-library-add-service-templates.md) and add the VM template to the appropriate template tier.
+1. [Create a service template](manage-library-add-service-templates.md), and add the VM template to the appropriate template tier.
 2. After you save and validate the template right-click the tier object in the service template designer and click **Properties**.
-3. In **Application Configuration** add the application profile you created. When the service is deployed the scripts in the application profile will run. Save and validate the service template.
+3. In **Application Configuration**, add the application profile you created. When the service is deployed the scripts in the application profile will run. Save and validate the service template.
 3. Right-click the service template again > **Properties**.
-4. In **General** select **This machine tier can be scaled out** and specify a value greater than 1 for **Default instance count** and **Maximum instance count**. Maximum should be set to less or equal to the number of SCSI channels you configured in the VM template. The default count should be less than the maximum.
-5. In **Number of upgrade domains** specify the same value as that in **Maximum instance count**. For example, if you specify a default count or 3 and a maximum count of 3 the guest cluster will have three nodes. The number of upgrade domains should also be set to 3 so that updates are performed in three stages, one node (VM) at a time. This leaves at least two VMs in the guest cluster running during planned maintenance.
+4. In **General**, select **This machine tier can be scaled out** and specify a value greater than 1 for **Default instance count** and **Maximum instance count**. Maximum should be set to less or equal to the number of SCSI channels you configured in the VM template. The default count should be less than the maximum.
+5. In **Number of upgrade domains**, specify the same value as that in **Maximum instance count**. For example, if you specify a default count or 3 and a maximum count of 3 the guest cluster will have three nodes. The number of upgrade domains should also be set to 3 so that updates are performed in three stages, one node (VM) at a time. This leaves at least two VMs in the guest cluster running during planned maintenance.
 6. Save and validate the service template.
 
 
