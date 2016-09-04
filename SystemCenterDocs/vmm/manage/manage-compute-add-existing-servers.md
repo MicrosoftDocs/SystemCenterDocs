@@ -35,10 +35,10 @@ The prerequisites for adding an existing Hyper-V host server or cluster depend o
 ## Add servers
 
 1. In the VMM console open **Fabric** > **Servers**.
-2. On the **Home** tab > **Add group** click **Add Resources** > **Hyper-V hosts and Clusters**.
-3. In the **Add Resource Wizard** > **Resource location** select where the server you want to add is located.
+2. Click **Add group** > **Add Resources** > **Hyper-V hosts and Clusters**.
+3. In the **Add Resource Wizard** > **Resource location**, select where the server you want to add is located.
 	- If you're adding a host in a perimeter network select **Windows Server computer in a perimeter network**.
-4. In **Credentials** specify credentials for a domain account that has administrative permissions on all hosts that you want to add. (For computers in an untrusted domain, you must use a RunAs account.)
+4. In **Credentials**, specify credentials for a domain account that has administrative permissions on all hosts that you want to add. (For computers in an untrusted domain, you must use a RunAs account.)
 5. In **Discovery scope** specify:
 
 	- **Same domain or domains with two-way trust**:
@@ -47,7 +47,7 @@ The prerequisites for adding an existing Hyper-V host server or cluster depend o
 	- **Untrusted domain**: Discovery page dooesn't appear
 	- **Disjointed namespace**: Enter the hos FQDN and select **Skip AD verification**.
 
-6. In **Target resources** specify the computers you want to add. Repeat for all hosts. If discovery succeeds the host will be listed under **Computer name**. Add as follows:
+6. In **Target resources**, specify the computers you want to add. Repeat for all hosts. If discovery succeeds the host will be listed under **Computer name**. Add as follows:
 
 	- **Trusted domain or disjointed namespace**: Select the check box next to each computer that you want to add, and then click Next. If you specified a cluster name or cluster node in the previous step, select the check box next to the cluster name. (The cluster name is listed together with the associated cluster nodes.)
 	- **Untrusted domain**: Enter the FQDN or IP address of the server or cluster that you want to add, and then click Add. For a cluster, you can enter an FQDN or IP address of the cluster or of one of the cluster nodes.
