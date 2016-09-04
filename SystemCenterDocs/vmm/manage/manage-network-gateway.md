@@ -39,7 +39,6 @@ You can set up your gateway in a number of ways depending on your requirements:
 - **Provider software**: If you want to use a non-Windows gateway device you'll need the provider and an account with permissions to configure the gateway. You install the provider on the VMM server. If certificates are required (for example if the gateway is in an untrusted domain) you'll need to be able to view thumbprint information for those certificates.
 - **Windows Server gateway**: If you want to configure a gateway runnning Windows Server you can use a predefined template available from the Microsoft Download Center. The template supports System Center 2012 R2 or later versions.
 - **Logical networks**: You need logical networks (you'll need more than one if you want the gateway to connect from VM networks in one logical network to VM networks in another).
-- You'll need provider software for the gateway.
 - **Remote VPN settings**: If you want to connect the gateway to a remote VPN server you'll need:
     - The remote server IP address and information about on-premises subnets or the BGP address if relevant.
     - You'll need to identify how you'll authenticate with the remote VPN server. If it uses a preshared key you can authenticate with a Run As account and specify the shared key as the password. Or you can authenticate with a certificate.  The certificate can be either a certificate that the remote VPN server selects automatically or a certificate that you have obtained and placed on your network.
