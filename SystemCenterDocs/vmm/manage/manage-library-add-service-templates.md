@@ -34,12 +34,12 @@ You can create service templates if you have VMM admin or delegated admin permis
 
 ## Create a service template
 
-1. Click **Library ** > **Create** > **Create Service Template**.
+1. Click **Library** > **Create** > **Create Service Template**.
 2. In **New Service Template**  > **Name**, specify a template name. In **Release** indicate the template version.
 3. To configure a tier using the predefined templates click in the designer workload and select a preconfigured tier pattern (blank, 1, 2, or 3 tiers). Click **Save and Validate** to save the template. After its created you can click on a template object to modify its name, release version or users/roles that can access it.
 4. When the tier appears in the workspace drag a VM template to it. The properties of the VM template are applied to the tier. Note that this doesn't establish a link between the tier and the template. Changing the template properties does not modify the tier properties.
 
-	NOTE: You can also click **Add Machine Tier** to add a tier manually. This opens the **Create Machine Tier Template Wizard**. In **Select Source** select a source for the tier. You can use an exact copy of an existing VM template, or to customize an existing VM template. Click **Browse** to select the template or hard disk. In **Additional Properties** you'll configure the tier properties described in the next step.
+	NOTE: You can also click **Add Machine Tier** to add a tier manually. This opens the Create Machine Tier Template Wizard. In **Select Source** select a source for the tier. You can use an exact copy of an existing VM template, or to customize an existing VM template. Click **Browse** to select the template or hard disk. In **Additional Properties**, you'll configure the tier properties described in the next step.
 
 5. You can click on a tier to access its properties in the details pane of the designer.  Click **View All Properties** to modify all the properties in a single view. Here's what you can modify when you select to view all:
 
