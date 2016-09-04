@@ -17,11 +17,15 @@ This article describes how to create VM networks based on System Center 2016 - V
 
 ## Overview
 
-In a virtualized network environment we want to abstract virtual machines from the underlying logical network. To do this we use VM networks - abstract objects that act as an interface to logical networks. A logical network can have one or more associated VM networks. If a logical network isn't isolated then a single VM network with be associated with it. If a logical network is isolated then multiple VM networks can be associated with it. These multiple VM networks allow us to use networks for different purposes. For example as a provider you might want to host workload for multiple tenants on a single logical network, using a separate VM network for each tenant. The type of VM network you set up depends on the isolation settings for the logical network.
+In a virtualized network environment, we want to abstract virtual machines from the underlying logical network. VM networks help you to do this. VM networks are abstract objects that act as an interface to logical networks.
 
-- **Network virtualization**: If the logical network is isolated using network virtualization you can create multiple VM networks for a logical network. Within a VM network tenants can use any IP addresses they want for their VMs regardless of the IP addresses used on other VM networks. Tenants can also configure some network settings.
-- **VLAN**: If the logical network is isolated using VLAN or PVLAN you'll create on VM network for each network site and VLAN in the logical network.
-- **No isolation**: If the logical network is configured without isolation you'll create a single VM network linked to a logical network.
+- A logical network can have one or more associated VM networks.
+- If a logical network isn't isolated, then a single VM network with be associated with it.
+- If a logical network is isolated, then multiple VM networks can be associated with it. These multiple VM networks allow us to use networks for different purposes. For example as a provider you might want to host workload for multiple tenants on a single logical network, using a separate VM network for each tenant. The type of VM network you set up depends on the isolation settings for the logical network:
+
+	- **Network virtualization**: If the logical network is isolated using network virtualization you can create multiple VM networks for a logical network. Within a VM network tenants can use any IP addresses they want for their VMs regardless of the IP addresses used on other VM networks. Tenants can also configure some network settings.
+	- **VLAN**: If the logical network is isolated using VLAN or PVLAN you'll create on VM network for each network site and VLAN in the logical network.
+	- **No isolation**: If the logical network is configured without isolation you'll create a single VM network linked to a logical network.
 
 
 ## Before you start
@@ -33,10 +37,10 @@ In a virtualized network environment we want to abstract virtual machines from t
 ## Create a VM network (network virtualization)
 
 1. Click **VMs and Services** > **Home** > **Show **> **VM Networks** > **Home** > **Create** > **Create VM Network**.
-2. In **Create VM Network Wizard** > **Name** type in a name and description and select a logical network on which to base the VM network.
-3. In **Isolation** select Isolate using **Hyper-V network virtualization** and verify the IP address protocols.
-4. In **VM Subnets** click **Add** and specify subnets for the VM network using CIDR notation. You can add multiple subnets.
-5. In Connectivity if you see the message No network service that specifies a gateway has been added to VMM click Next. Otherwise set gateway (network service) options:
+2. In **Create VM Network Wizard** > **Name**, type in a name and description and select a logical network on which to base the VM network.
+3. In **Isolation**, select **Isolate using Hyper-V network virtualization**, and verify the IP address protocols.
+4. In **VM Subnets** click **Add**, and specify subnets for the VM network using CIDR notation. You can add multiple subnets.
+5. In **Connectivity**, if you see the message **No network service**, it specifies a gateway has been added to VMM and you can click **Next**. If you don't see the message, specify the gateway (network service) options:
 
 	- **No connectivity**: Leave all check boxes cleared if the virtual machines on this VM network will communicate only with other virtual machines on this VM network. You can also leave clear if you plan to configure the gateway later.
 	- **Connect to another network through a VPN tunnel**: Select this option if the virtual machines on this VM network will communicate with other networks over VPN. If the device will use the Border Gateway Protocol, enable this protocol. Select the VPN gateway device that you want to us. Confirm the settings. If the **VPN Connections** or Border Gateway Protocol pages appear, complete the settings based on information from the VPN admin.  page appears. If you selected the check box for Border Gateway Protocol, the Border Gateway Protocol page also appears.
