@@ -18,7 +18,7 @@ Read this article to allocate provisioned storage to Hyper-V hosts and clusters 
 
 ## Before you start
 
-**Storage type **| **Prerequisite** | **Details**
+**Storage type** | **Prerequisite** | **Details**
 --- | --- | ---
 **Fibre channel or iSCSI** |  Storage array access | **Multipath I/O**: The Multipath I/O (MPIO) feature must be added on each host that will access the Fibre Channel or iSCSI storage array. You can add the MPIO feature through Server Manager. If MPIO is already enabled before you add the host, VMM will automatically enable it for supported storage arrays using Microsoft DSM. If you have vendor specific DSMs these will be used. If you add a host before you add MPIO, after adding MPIO you'll manually configure it to add the discover device hardware IDs.<br/><br/> **Fibre Channel**: If you are using a Fibre Channel storage array network (SAN), each host must have a host bus adapter (HBA) installed, and zoning must be correctly configured.<br/><br/> **iSCSI**: If you are using an iSCSI SAN, make sure that iSCSI portals have been added and that the iSCSI initiator is logged into the array. Additionally, make sure that the Microsoft iSCSI Initiator Service on each host is started and set to Automatic.<br/><br/> **Storage group**: In VMM a storage group binds together host initiators, target ports, and logical units. A storage group contains one or more host initiator IDs (IQN or WWN) (WWN). A storage group also contains one or more target ports and one or more logical units. Logical units are exposed to the host initiators through the target ports.<br/><br/> By default, when VMM manages the assignment of logical units, VMM creates one storage group per host, either a stand-alone host or a host cluster node. However, for some storage arrays, it is preferable to use one storage group for the entire cluster, where host initiators for all cluster nodes are contained in a single storage group. To support this configuration, you must set the CreateStorageGroupsPerCluster property to $true by using the Set-SCStorageArray cmdlet.
 **Shared storage managed by VMM** | Discovery and classification | To use shared storage that is under VMM management, storage must already be discovered and classified in the Fabric workspace of the VMM console. Then, either storage pools, logical units (or file shares), or both must be allocated to the host group or the parent host group chosen for your set of hosts.<br/><br/> If you allocate storage pools to host groups, you can wait until after the host cluster is created to create logical units (within the storage pools) on the cluster. For more information, see How to configure storage on a Hyper-V host cluster in VMM.
@@ -32,7 +32,7 @@ You create logical units and assign them to the Hyper-V host or cluster. To comp
 
 ### Create a logical unit
 
-1. In **Fabric** > **Servers** > **All Hosts** **Hosts** pane, right-click the host that you want to configure > **Properties**.
+1. In **Fabric** > **Servers** > **All Hosts**, right-click the host that you want to configure > **Properties**.
 2. On the toolbar, next to **Disk**, click **Add**. Next to **Logical unit** click **Create Logical Unit**.
 3. In Create Logical Unit > **Storage pool** choose the pool from which the create the logical unit. Specify a name (alpanumeric only), a description and the unit size.
 4. Verify that the unit is selected in **Logical unit** and in **Format new disk** area, if you want to format the disk, select **Format this volume as NTFS volume with the following settings**. Specify the format volume settings. Note that if you select **Force format even if a file system is found** all existing data on the volume will be overwritten.
@@ -43,7 +43,7 @@ You create logical units and assign them to the Hyper-V host or cluster. To comp
 ### Assign the logical unit to a host
 
 
-1.  In **Fabric** > **Servers** > **All Hosts** **Hosts**, right-click the host that you want to configure > **Properties**.
+1.  In **Fabric** > **Servers** > **All Hosts**, right-click the host that you want to configure > **Properties**.
 
 2.  To assign an existing logical unit to the host, on the toolbar, next to **Disk**, click **Add**. Select the logical unit you want to assign. Configure the format and mount point options, and then click **OK** to assign the logical unit to the host. Note that if the logical unit has existing data, and you do not use the **Force Format** option, the VMM job to assign the logical unit will complete with a warning. VMM assigns the logical unit to the host. You can format the disk later.
 
@@ -77,4 +77,4 @@ In **Host Cluster Name** >  **Properties** click a tab:
     Convert CSVs to available storage | Make sure that there are no virtual machines on the cluster that have their associated .vhd or .vhdx files located on the storage that you want to convert. **Caution:**     If you convert shared to available storage, and the storage is being used by virtual machines, serious data loss can result.<br/><br/>  Convert volumes one at a time. After conversion, confirm that the logical unit appears on the **Available Storage** tab.
     Remove available storage or CSVs | If there are virtual machines on the cluster that currently use the storage for their associated .vhd or .vhdx files, the **Remove** option is disabled.
 
-3.  When you are ready to commit the changes, click **OK**.
+3.  When you're ready to commit the changes, click **OK**.
