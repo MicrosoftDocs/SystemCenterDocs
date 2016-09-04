@@ -53,9 +53,9 @@ The prerequisites for adding an existing Hyper-V host server or cluster depend o
 	- **Untrusted domain**: Enter the FQDN or IP address of the server or cluster that you want to add, and then click Add. For a cluster, you can enter an FQDN or IP address of the cluster or of one of the cluster nodes.
 	- **Perimeter network/workgroup**: Enter the NETBIOS name or IP address of the host in the perimeter network. Enter the encryption key you created when you installed the agent on the host, and in Security file path enter the path to the SecurityFile.txt file.
 
-7. In **Host settings** > **Host group** list, click the host group to which you want to assign the host or host cluster. If the host is already associated with a different VMM management server, select  **Reassociate this host with this VMM environment**. If the host was associated with a different VMM management server, it will stop working on that server.
+7. In the **Host settings** > **Host group** list, click the host group to which you want to assign the host or host cluster. If the host is already associated with a different VMM management server, select  **Reassociate this host with this VMM environment**. If the host was associated with a different VMM management server, it will stop working on that server.
 
-	- For a standalone host, in **Add the following path*, enter a path on the host for storing files for virtual machines that are deployed on the host, and then click **Add**. Repeat to add more than one path. If the path doesn't exist it's created automatically. If you leave the box empty, the default is %SystemDrive%\ProgramData\Microsoft\Windows\Hyper-V. As a  best practice don't add default paths that are on the same drive as the operating system files.
+	- For a standalone host, in **Add the following path**, enter a path on the host for storing files for virtual machines that are deployed on the host, and then click **Add**. Repeat to add more than one path. If the path doesn't exist it's created automatically. If you leave the box empty, the default is %SystemDrive%\ProgramData\Microsoft\Windows\Hyper-V. As a  best practice don't add default paths that are on the same drive as the operating system files.
 	- For a cluster don't specify default virtual machine paths. VMM automatically manages the paths that are available for virtual machines, based on the shared storage that is available to the host cluster
 
 9. On the **Summary** page, confirm the settings, and then click **Finish**. The **Jobs** dialog box appears to show the job status. Wait for a Completed status. Verify that the host or cluster was added in the host group > host or cluster name. The status should be **OK**.
@@ -63,7 +63,7 @@ The prerequisites for adding an existing Hyper-V host server or cluster depend o
 
 ## Configure properties for Hyper-V hosts
 
-fter you've added Hyper-V hosts and servers in the VMM fabric there are a number of properties you can configure for standalone hosts and clusters.
+After you've added Hyper-V hosts and servers in the VMM fabric there are a number of properties you can configure for standalone hosts and clusters.
 
 **Tab** | **Settings**
 --- | ---
