@@ -10,11 +10,11 @@ ms.technology:  virtual-machine-manager
 ---
 
 
-# Set up Update servers in the VMM compute fabric
+# Set up update servers in the VMM compute fabric
 
 >Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
 
-Read this article to set up Update servers in the System Center 2016 - Virtual Machine Manager (VMM) fabric. The article includes prerequisites, instructions for adding a WSUS server to the fabric, explains how to set update baselines and how to run a scan. You can also create update exemptions.
+Read this article to set up update servers in the System Center 2016 - Virtual Machine Manager (VMM) fabric. The article includes prerequisites, instructions for adding a WSUS server to the fabric, explains how to set update baselines and how to run a scan. You can also create update exemptions.
 
 ## Overview
 
@@ -41,11 +41,11 @@ You can deploy update servers in the VMM fabric to manage compliance and remedia
 ## Add a WSUS server to the VMM fabric
 
 1. Ensure that the server is running the WSUS role.
-2. Click **Fabric **> **Home** > **Add** > **Add Resources** > **Update Server**.
-3. In **Add Windows Server Update Services Server** specify the name, port, and credentials of the WSUS server. The account needs admin rights on the server. Use an existing Run As account or create a new one. Specify whether you want to use SSL for connections.
-4. The WSUS server will be added to the fabric followed by initial synchronization of the updates catalog. This could take a while. Monitor status in the **Add Update Server** and **Synchronize Update Server** jobs.
-5. After the server is added you can update its properties to configure a proxy server for synchronization. In **Fabric** > **Servers** > **Update Server** > **Properties** click the **Proxy Server** tab. Configure WSUS to use a proxy server when configuring updates, or update the port for an existing proxy server.
-6. In addition you can click **Update Classification** to select the update classification that you want to synchronize, click **Product** to select the products that want to include when synchronizing, and **Language** to select the supported synchronization languages.
+2. Click **Fabric** > **Home** > **Add** > **Add Resources** > **Update Server**.
+3. In **Add Windows Server Update Services Server**, specify the name, port, and credentials of the WSUS server. The account needs admin rights on the server. Use an existing Run As account or create a new one. Specify whether you want to use SSL for connections.
+4. The WSUS server will be added to the fabric, followed by initial synchronization of the updates catalog. This could take a while. Monitor status in the **Add Update Server** and **Synchronize Update Server** jobs.
+5. After the server is added, you can update its properties to configure a proxy server for synchronization. In **Fabric** > **Servers** > **Update Server** > **Properties**, click the **Proxy Server** tab. Configure WSUS to use a proxy server when configuring updates, or update the port for an existing proxy server.
+6. In addition, you can click **Update Classification** to select the update classification that you want to synchronize, click **Product** to select the products that want to include when synchronizing, and **Language** to select the supported synchronization languages.
 
 After you've added the server you can update the WSUS settings and perform manual synchronization in **Servers** > WSUS server name > **Update Server**.
 
@@ -76,18 +76,18 @@ After you've added the WSUS server to the fabric you can configure update baseli
 ### Assign servers to a build-in baseline
 
 1. Click **Library** > **Update Catalog and Baselines** > **Update Baselines**.
-2. In **Baselines** click the baseline you want to use.
-3. Click **Home** > **Properties** > **Updates** for the baseline. In **Updates **add or remove baselines as required. To ensure all security updates are remediated don't remove anything.
-4. Click **Assignment Scope** and select the host groups, clusters, standalone servers, and infrastructure servers to add to the baseline. Or click **All Hosts** to add all.
+2. In **Baselines**, click the baseline you want to use.
+3. Click **Home** > **Properties** > **Updates** for the baseline. In **Updates**, add or remove baselines as required. To ensure all security updates are remediated don't remove anything.
+4. Click **Assignment Scope**, and select the host groups, clusters, standalone servers, and infrastructure servers to add to the baseline. Or click **All Hosts** to add all.
 
 ### Assign servers to a custom baseline
 
 1. Click **Library** > **Update Catalog and Baselines** > **Update Baselines**.
 2. Click **Home** > **Create** > **Baseline** for the baseline.
-3. In **Update Baseline Wizard** > **General** specify a name and description.
-4. In **Update **add the updates you want to include.
-5. In **Assignment Scope** expand **Host Groups** and **Infrastructure**. Select the groups and servers you want to add.
-6. In **Summary** click **Finish ** and accept the **Microsoft License Terms** if required for installation of any of the updates. Verify the baseline in **Library** > **Update Catalog and Baselines** > **Baselines**.
+3. In **Update Baseline Wizard** > **General**, specify a name and description.
+4. In **Update**, add the updates you want to include.
+5. In **Assignment Scope**, expand **Host Groups** and **Infrastructure**. Select the groups and servers you want to add.
+6. In **Summary**, click **Finish ** and accept the **Microsoft License Terms** if required for installation of any of the updates. Verify the baseline in **Library** > **Update Catalog and Baselines** > **Baselines**.
 
 ## Scan for update compliance
 
@@ -105,8 +105,8 @@ To check compliance:
 
 1. Click **Fabric** > **Servers**
 2. In **Home** > **Show** click **Compliance**.
-3. Since you haven't yet scanned computers the compliance status will show as **Unknown** with an operational status **Pending Compliance Scan**.
-4. Select the computers you want to check and click **Scan**.
+3. Since you haven't yet scanned computers the compliance status will show as **Unknown**, with an operational status **Pending Compliance Scan**.
+4. Select the computers you want to check, and click **Scan**.
 5. While the scan is in progress status will be Unknown. After it's finished compliance status for each update will be **Compliant**, **Non-Compliant**, or **Error**.
 
 
@@ -115,10 +115,10 @@ To check compliance:
 
 You can create update exemptions for specific machines. For example if an update has caused the machine to be in an unhealthy state, you could uninstall the update out-of-band and then exempt the machine from the update until the issue is resolved. When the compliance scan next runs the machine will show as **Non Compliant**.
 
-1. Click **Fabric** > **Home** > **Show** > **Compliance**. Then on the **Fabric** node click **Servers** and navigate to the server you want to exempt.
+1. Click **Fabric** > **Home** > **Show** > **Compliance**. Then on the **Fabric** node, click **Servers** and navigate to the server you want to exempt.
 2. In the result pane expand the update baselines for the machine and click the update to select it.
 3. Click **Compliance** > **Compliance Properties**.
-4. In **Compliance Properties** select the update > **Create**.
-5. In **Create Exemption** add notes about the reason and the expected exemption data. Change the update status to **Exempt**.
+4. In **Compliance Properties**, select the update > **Create**.
+5. In **Create Exemption**, add notes about the reason and the expected exemption data. Change the update status to **Exempt**.
 6. After you've resolved the issue and you want to cancel the exemption so that the machine is compliant again, in **Compliance Properties** select the exemption > **Delete** > **Yes**.
-7. To return the server to a compliant state select the non-compliant server and click **Remediate** on the **Compliance** tab.
+7. To return the server to a compliant state, select the non-compliant server and click **Remediate** on the **Compliance** tab.
