@@ -36,7 +36,7 @@ In a virtualized network environment, we want to abstract virtual machines from 
 
 ## Create a VM network (network virtualization)
 
-1. Click **VMs and Services** > **Home** > **Show **> **VM Networks** > **Home** > **Create** > **Create VM Network**.
+1. Click **VMs and Services** > **VM Networks** > **Home** > **Create** > **Create VM Network**.
 2. In **Create VM Network Wizard** > **Name**, type in a name and description and select a logical network on which to base the VM network.
 3. In **Isolation**, select **Isolate using Hyper-V network virtualization**, and verify the IP address protocols.
 4. In **VM Subnets** click **Add**, and specify subnets for the VM network using CIDR notation. You can add multiple subnets.
@@ -52,7 +52,7 @@ In a virtualized network environment, we want to abstract virtual machines from 
 
 ## Create a VM network (VLAN/PVLAN)
 
-1. Click **VMs and Services** > **Home** > **Show **> **VM Networks** > **Home** > **Create** > **Create VM Network**.
+1. Click **VMs and Services** > **VM Networks** > **Home** > **Create** > **Create VM Network**.
 2. In **Create VM Network Wizard** > **Name** type in a name and description and select a logical network on which to base the VM network.
 3. In **Isolation Options**:
 
@@ -64,7 +64,7 @@ In a virtualized network environment, we want to abstract virtual machines from 
 
 ## Create a VM network (no isolation)
 
-1. Click **VMs and Services** > **Home** > **Show **> **VM Networks** > **Home** > **Create** > **Create VM Network**.
+1. Click **VMs and Services** > **VM Networks** > **Home** > **Create** > **Create VM Network**.
 2. In **Create VM Network Wizard** > **Name** type in a name and description and select a logical network on which to base the VM network.
 3. In **VM Networks and IP Pools** check for a VM network with the same name as the logical network you want to give direct access to. If one exists it probably indicates that the VM network was created automatically when you created the logical network. You can check whether the VM network provides direct access by clicking its properties. If **Name** and **Access** are the only tabs it provides direct access.
 4. If  there's no existing VM network click **Home** > **Create** > **Create VM Network**.
