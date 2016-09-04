@@ -24,7 +24,7 @@ A VMM profile contains settings that are used when you create a new virtual mach
 The VMM library can include these profiles.
 
 **Profile** | **Details** | **Used for VM templates** | **Used for service templates**
---- | ---
+--- | --- | --- | ---
 **Hardware profile** | Defines hardware configuration settings, such as CPU, memory, network adapters, a video adapter, a DVD drive, and the VM priority when resources are allocated on a VM host. | Yes | No
 **Guest operating system profile** | Defines operating system configuration settings that will be applied to a VM, including the type of operating system, the computer name, administrator password, domain name, product key, time zone, answer file, and RunOnce file. | Yes | No
 **Application profile** | Provides instructions for installing an application. VMM supports multiple mechanisms for application deployment. Two of these mechanisms are for specific application packaging technologies: data\-tier applications \(DAC\) and WebDeploy (MSDeploy). A third mechanism enables you to install any application by running a script. You can use scripts that are created for Windows Installer \(MSI\), Setup.exe installation programs, Windows PowerShell Desired State Configuration (DSC), Puppet software, and Chef software. | No | Yes
