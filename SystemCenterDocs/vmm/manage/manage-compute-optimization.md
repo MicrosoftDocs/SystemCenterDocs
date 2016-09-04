@@ -48,10 +48,9 @@ Read this article to learn about enabling dynamic optimization and power optimiz
 For hosts with BMC that supports IMPI 1.5/2.0, DCMI 1.0 or SMASH 1.0 overe WS-Management you can figure BMC settings as follows:
 
 1. Create a Run As account with permissions to access the BMC on a host.
-2. Click **Fabric** > **Servers** > **All Hosts **> host > **Properties** > **Hardware** > **Advanced** > **BMC Setting**.
+2. Click **Fabric** > **Servers** > **All Hosts** > host > **Properties** > **Hardware** > **Advanced** > **BMC Setting**.
 3. To enable VMM management, select **This physical machine is configured for OOB management**.
-In the **This computer supports the specified OOB power management configuration provider** list, click the supported management protocol.
-Type in the IP address of the BMC, and accept the default port offered by VMM. Select the Run As account and click **OK**.
+4. In **This computer supports the specified OOB power management configuration provider**, click the supported management protocol. Type in the IP address of the BMC, and accept the default port offered by VMM. Select the Run As account and click **OK**.
 
 
 
@@ -79,7 +78,7 @@ Type in the IP address of the BMC, and accept the default port offered by VMM. S
 
 1.  In the **Fabric** navigate to the host group and open its properties.
 2.  Click **Dynamic Optimization** > **Specify dynamic optimization settings** > **Settings**.
-3.  In **Customize Power Optimization Schedule**, change the settings for any of these resources: CPU, memory, disk input\/output \(I\/O\), or network I\/O.
+3.  In **Customize Power Optimization Schedule**, change the settings for any of these resources: CPU, memory, disk I/O , or network I/O.
 4.  Under **Schedule**, select the hours when you want power optimization to be performed. Click a box to turn power optimization on or off for that hour. VMM applies the schedule according to the host time zone.
 
 ## Run dynamic optimization on-demand in a host cluster
