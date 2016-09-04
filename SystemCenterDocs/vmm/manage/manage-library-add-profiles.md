@@ -21,8 +21,6 @@ Use this article to learn about System Center 2016 - Virtual Machine Manager (VM
 
 A VMM profile contains settings that are used when you create a new virtual machine or virtual machine template. Profiles make deployment easier by helping you to quickly create VMs with consistent settings. Profiles can be used to restrict the settings that are available to self-service users who create new VMs.
 
-The VMM library can include these profiles.
-
 **Profile** | **Details** | **Used for VM templates** | **Used for service templates**
 --- | --- | --- | ---
 **Hardware profile** | Defines hardware configuration settings, such as CPU, memory, network adapters, a video adapter, a DVD drive, and the VM priority when resources are allocated on a VM host. | Yes | No
@@ -47,11 +45,11 @@ The VMM library can include these profiles.
 ## Create a guest OS profile
 
 1. In the VMM console click > **Library** > **Create** > **Guest OS Profiles**.
-2. In **New Guest OS Profile** > **General** type in a profile name. In **Guest OS Profile** you can specify the OS settings.
-3. In **General Settings** > **Operating System** specify the operating system that will be allocated to the VM. In **Identity Information** specify the actual machine name of the VM. You'll probably want a unique name so you can specify a wildcard to generate a new name for each VM. You can also use characters ### to set an increasing numeric value. For example if you type in ContosoVM-## it will generate machines call ContosoVM-01, ContosoVM-02 etc. In Admin Password specify local admin permissions require a password. you can use the predefined Run As account. In **Product Key** type in the key for the OS installation. If you add an answer file under **Scripts** you can select the **Product key provided by answer file** settings. In **Time Zone** specify the time location for the VM.
+2. In **New Guest OS Profile** > **General**, type in a profile name. In **Guest OS Profile** you specify the OS settings.
+3. In **General Settings** > **Operating System**, specify the operating system that will be allocated to the VM. In **Identity Information**, specify the actual machine name of the VM. You'll probably want a unique name so you can specify a wildcard to generate a new name for each VM. You can also use characters ### to set an increasing numeric value. For example, if you type in ContosoVM-## it will generate machines call ContosoVM-01, ContosoVM-02 etc. In **Admin Password** specify local admin permissions require a password. you can use the predefined Run As account. In **Product Key** type in the key for the OS installation. If you add an answer file under **Scripts**, you can select the **Product key provided by answer file** settings. In **Time Zone** specify the time location for the VM.
 4. In **Roles and Features** specify what should be installed on the VM. Note that this setting is only used for the profile is used in a VM template which is then used in a service template.
 5. In **Networking** specify domain settings for the VM and credentials to use for joining the domain.
-6. In ****Scripts specify any scripts you want to use for the VM. Scripts must be located on the library share. For example an installation answer file. The **GUIRunOnce** option allows you to run a script the first time a user logs onto the VM.
+6. In **Scripts**, specify any scripts you want to use for the VM. Scripts must be located on the library share. For example an installation answer file. The **GUIRunOnce** option allows you to run a script the first time a user logs onto the VM.
 7. After you've created the guest OS profile you can right-click it to configure additional properties. In **Dependencies** you see any dependencies for the profile. For example Run As accounts. In **Access** you see the roles or users who have permissions to use this profile.
 8. After you've created the hardware profile you can use it when you configure a virtual machine template or create a VM.
 
@@ -80,11 +78,11 @@ The VMM library can include these profiles.
 
 The exact settings for a capability profile will depend on the profile in use. As an example let's configure the Hyper-V capability profile to specify high availability for resources used in a private VMM cloud.
 
-1. In the VMM console click > **Library** > **Create** > **Capability Profiles**.
-2. In **Create Capability Profile** > **General** type in a profile name. In **Capabilities** you can specify the profile settings.
-3. In **Capabilities** >** Fabric Compatibility** select **Hyper-V virtualization host**. You could also elect to set up a custom capability profile.
+1. In the VMM console, click > **Library** > **Create** > **Capability Profiles**.
+2. In **Create Capability Profile** > **General**, type in a profile name. In **Capabilities** you specify the profile settings.
+3. In **Capabilities** > **Fabric Compatibility** select **Hyper-V virtualization host**. You could also elect to set up a custom capability profile.
 4. Set up the hardware configuration settings for the profile. The settings are similar to those used in a [hardware profile](#create-a-hardware-profile). However, in capability profiles these settings represent limits rather than exact values.
-5. In **Advanced** > **Availability** select **Highly available VM mode **> **Use default** > **Required**.
+5. In **Advanced** > **Availability**, select **Highly available VM mode** > **Use default** > **Required**.
 6. Complete the wizard. After you've created the profile you can select and enable it in V**Ms and Services** > cloud name > **Properties** > **Capability Profiles**.
 7. Remember that other profiles and templates used for VMs in the cloud will need to match the capability profile requirements and the high availability setting.  
 
