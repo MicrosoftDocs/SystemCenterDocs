@@ -55,11 +55,11 @@ VMM enables you to deploy and manage virtual machines and services across multip
 ## Add a v-Center server
 
 1. Click **Fabric** > **Servers** > **vCenter servers** > **Add** > **Add Resources** > **VMware vCenter Server**.
-2. In **Add VMware vCenter Server** specify the name (FQDN, NetBIOS, or IP address) of the vCenter server. Add the port needed to connect to the vCenter server (443 by default).
-3. In **Run As account** click the Run As account with admin permissions for the vCenter server. Click **Create Run As Account** if you don't have one.
-4. In **Security** select or clear **Communicate with VMware ESX hosts in secure mode**. We recommend you keep the setting checked. If selected you'll need a certificate and public key for each vSphere host managed by the vCenter server.
+2. In **Add VMware vCenter Server**, specify the name (FQDN, NetBIOS, or IP address) of the vCenter server. Add the port needed to connect to the vCenter server (443 by default).
+3. In **Run As account**, click the Run As account with admin permissions for the vCenter server. Click **Create Run As Account** if you don't have one.
+4. In **Security**, select or clear **Communicate with VMware ESX hosts in secure mode**. We recommend you keep the setting checked. If selected you'll need a certificate and public key for each vSphere host managed by the vCenter server.
 5. If you're using a self-signed certificate to communicate with the vCenter server and you haven't manually copied it to the Trusted People certificate store the **Import Certificate** dialog will appear. Click **Import** to add the certificate to the store.
-6. In **Jobs** wait until the job has a Completed status and then check that the server appears in **Fabric** > ****Servers > **vCenter Server** with a **Responding** status.
+6. In **Jobs** wait until the job has a Completed status and then check that the server appears in **Fabric** > **Servers** > **vCenter Server** with a **Responding** status.
 
 
 ## Add an ESX/ESXi host
@@ -82,8 +82,8 @@ By default when you added vSphere hosts to VMM, VMM automatically created logica
 Associate the logical network with the physical network adapter (for an external virtual network) as follows:
 
 1. Click **Fabric** > **Servers** > **All Hosts** > vSphere host > **Host** > **Properties** > **Hardware**.
-2. In **Network Adapters** select the physical network adapter on the host. In L**ogical network connectivity** select the logical networks you want to associate with the adapter. Note that only logical networks available to the host group are available.
-3. Click **Advanced** > **Advanced Network Adapter Properties** to see IP subnets and VLANs available for a logical network. By default for a logical network the subnets and VLANs are scope to the host group or inherited via a parent host group. If none appears it indicates that no network site existing for the logical network. If **Unassigned** is available click it to view VLANS to which the physical adapter is connected, but that aren't included in a network site.
+2. In **Network Adapters** select the physical network adapter on the host. In **Logical network connectivity**, select the logical networks you want to associate with the adapter. Note that only logical networks available to the host group are available.
+3. Click **Advanced** > **Advanced Network Adapter Properties** to see IP subnets and VLANs available for a logical network. By default for a logical network the subnets and VLANs are scope to the host group or inherited via a parent host group. If none appears it indicates that no network site existing for the logical network. If **Unassigned** is available, click it to view VLANS to which the physical adapter is connected, but that aren't included in a network site.
 4. View virtual network settings in the host properties > **Virtual Networks**. View compliance information in **Fabric** > **Networking** > **Logical Networks** > **Hosts** > **Logical Network Information for Hosts** > **Compliance**. **Fully compliant** indicates that all subnets and VLAN that are in the network site are assigned to the network adapter.
 
 
@@ -92,7 +92,7 @@ Associate the logical network with the physical network adapter (for an external
 You can import VMware templates from the vCenter server to the VMM library. VMM copies only the metadata associated with the template and not the .vmdk file. This means that VMM is dependent on the vCenter server to use the template.
 
 1. Click **Library **> **Home **> **Import** > **Import VMware template**.
-2. In **Import VMware Templates** select each template you want to import and click OK.
+2. In **Import VMware Templates**, select each template you want to import and click OK.
 3. Verify the templates in **Library** > **Templates** > **VM Templates**.
 
 ## Convert VMware VMs to Hyper-V (V2V)
@@ -101,11 +101,13 @@ There are currently a couple of methods for converting VMWare VMs to Hyper-V:
 
 - **Convert Virtual Machine Wizard**: In the VMM console you can use this wizard. This method has a number of limitations:
 - Supported for vSphere 4.1 onwards.
+- 
 	- You can't convert VMware workstations
 	- You can't convert VMs with virtual hard disks connected to an IDE bus
 	- Online conversions aren't supported. You need to power off the VMware VMs.
 	- Anti-virus apps must be supported.
 	- VMware tools must be uninstalled from the guest operating system of the VM.
+	
 - [Microsoft Virtual Machine Converter](https://technet.microsoft.com/library/dn873998.aspx): This standalone tool converts VMware VMs to Hyper-V hosts or Azure VMs. It also converts physical machines and disks to Hyper-V hosts. IMPORTANT: This tool is in the process of retirement. It won't be available after June 3, 2017. [Learn more](https://blogs.technet.microsoft.com/scvmm/2016/06/04/important-update-regarding-microsoft-virtual-machine-converter-mvmc/)
 - Azure Site Recovery currently doesn't have to ability for a direct VMware to Hyper-V conversion. [Read more](https://feedback.azure.com/forums/256299-site-recovery/suggestions/10050060-asr-to-support-vmware-to-hyper-v-protection-migrat) about up-voting this solution.
 
@@ -113,9 +115,10 @@ There are currently a couple of methods for converting VMWare VMs to Hyper-V:
 ## Convert using the wizard
 
 1. Click **VMs and Services** > **Home** > **Create** > **Create Virtual Machines** > **Convert Virtual Machine**.
-2. In **Convert Virtual Machine Wizard** > **Select Source** click **Browse** and inS**Select Virtual Machine Source** select the VMware VMs you want to convert.
-3. In **Specify Virtual Machine Identity** modify the machine name and description as required.
-4. In **Virtual Machine Configuration** specify the number of processor and memory settings.
-5. In **Select Host** select a Hyper-V host for placement. In **Select Path** configure the storage location on the host for the VM files. The default VM paths are listed.
-6. In **Select Networks** select the logical network, virtual network, and the VLAN as applicable. The list matches whatever is configured on the physical adapters of the host.
-7. In **Add Properties** configure settings. In **Summary** review the settings and select **Start the virtual machine after deploying it** if required. Then click **Create** to start the conversion. Verify the VM was converted in **VMs and Services** > **Home** > **Show** > **VMs**.
+2. In **Convert Virtual Machine Wizard** > **Select Source** click **Browse**. In **Select Virtual Machine Source**, select the VMware VMs you want to convert.
+3. In **Specify Virtual Machine Identity**, modify the machine name and description as required.
+4. In **Virtual Machine Configuration**, specify the number of processor and memory settings.
+5. In **Select Host**, select a Hyper-V host for placement. In **Select Path** configure the storage location on the host for the VM files. The default VM paths are listed.
+6. In **Select Networks**, select the logical network, virtual network, and the VLAN as applicable. The list matches whatever is configured on the physical adapters of the host.
+7. In **Add Properties** configure settings.
+8. In **Summary**, review the settings and select **Start the virtual machine after deploying it** if required. Then click **Create** to start the conversion. Verify the VM was converted in **VMs and Services** > **Home** > **Show** > **VMs**.
