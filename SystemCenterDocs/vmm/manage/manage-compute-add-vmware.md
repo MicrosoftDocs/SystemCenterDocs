@@ -71,7 +71,7 @@ VMM enables you to deploy and manage virtual machines and services across multip
 3. In **Computer Name** select the hosts or clusters you want to add, or **Select All**.
 4. In **Host Settings** click the host group to which you want to assign the host or cluster. You don't need to add VM placement paths.
 5. In **Summary** verify the settings and click **Finish**. Wait until the Jobs dialog shows a **Completed** status.
-6. Click **Fabric** > **Servers **> **All Hosts** and in the host group check the status of each host or cluster. Either **OK** or **OK (limited)**.
+6. Click **Fabric** > **Servers** > **All Hosts** and in the host group check the status of each host or cluster. Either **OK** or **OK (limited)**.
 7. If it's limited it means you've enabled the setting **Communicate with VMware ESX hosts in secure mode** but haven't yet imported a certificate from each vSphere host. To modify the security setting right-click the vCenter server > **Properties** > **Security**.
 5. To import the certificate click each relevant host name > **Properties** > **Management** > **Retrieve** > **OK**. The host status should be **OK** after the import.
 
@@ -101,7 +101,7 @@ There are currently a couple of methods for converting VMWare VMs to Hyper-V:
 
 - **Convert Virtual Machine Wizard**: In the VMM console you can use this wizard. This method has a number of limitations:
 - Supported for vSphere 4.1 onwards.
-- 
+
 	- You can't convert VMware workstations
 	- You can't convert VMs with virtual hard disks connected to an IDE bus
 	- Online conversions aren't supported. You need to power off the VMware VMs.
