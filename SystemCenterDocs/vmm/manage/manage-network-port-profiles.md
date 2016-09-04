@@ -86,5 +86,5 @@ After creating a port profile you can create a port classification.
 
 ## Create port classifications for virtual network adapter port profiles
 
-1. Click **Fabric** > **Home** > **Show **> **Fabric Resources**. Click **Fabric** tab > **Networking** > **Port Classifications** > **Home** > **Create** > **Port Classification**.
+1. Click **Fabric** > **Home** > **Show** > **Fabric Resources**. Click the **Fabric** tab > **Networking** > **Port Classifications** > **Home** > **Create** > **Port Classification**.
 2. In **Create Port Classification Wizard** > **Name** specify a classification name.
