@@ -32,7 +32,7 @@ Use this article to manage Hyper-V host clusters in the System Center 2016 - Vir
 ## Add a node to the cluster
 
 1. If you already used Failover Cluster Manager to add the node, then in **Fabric** > **Servers** > **All Hosts**, right-click the host with a **Pending** status, and click **Add to Host Cluster**.
-2. If you didn't add the node with the Failover Cluster Manager, you can add hosts that are already managed by VMM. In **Fabric** > **Servers ** > **All Hosts**, right-click the cluster > **Add Cluster Node**. In the Add Nodes Wizard > **Resource Type**, select the RunAs account that will be used to add the nodes. Make sure **Existing servers running a Windows Server operating system** is selected. In **Select Hosts** select the Hyper-V host server that you want to add. Finish the wizard and verify the settings.
+2. If you didn't add the node with the Failover Cluster Manager, you can add hosts that are already managed by VMM. In **Fabric** > **Servers** > **All Hosts**, right-click the cluster > **Add Cluster Node**. In the Add Nodes Wizard > **Resource Type**, select the RunAs account that will be used to add the nodes. Make sure **Existing servers running a Windows Server operating system** is selected. In **Select Hosts** select the Hyper-V host server that you want to add. Finish the wizard and verify the settings.
 
 ## Remove a node from the cluster
 
