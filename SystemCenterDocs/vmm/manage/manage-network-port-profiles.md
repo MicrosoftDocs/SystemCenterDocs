@@ -64,7 +64,7 @@ After you create an uplink port profile, the next step is to add it to a logical
 
 1. Click **Fabric** > **Home** > **Show **> **Fabric Resources**. Click **Fabric** tab > **Networking** > **Port Profiles** > **Home** > **Create** > **Hyper-V Port Profile**.
 2. In **Create Hyper-V Port Profile Wizard** > **General** type in a name, description and select **Uplink Port Profile**.
-3. In **Offload Setting **specify a setting for offloading traffic
+3. In **Offload Setting**, specify a setting for offloading traffic:
 
 	- **Enable virtual machine queue (VMQ)**: Packets destined for a virtual network adapter are delivered directly to a queue for that adapter, and they do not have to be copied from the management operating system to the virtual machine. The physical network adapter must support VMQ.
 	- **Enable IPsec task offloading**: Some or all of the IPsec computational work is shifted from the computer’s CPU to a dedicated processor on the network adapter. The physical network adapter and the guest operating system must support it.
@@ -86,5 +86,5 @@ After creating a port profile you can create a port classification.
 
 ## Create port classifications for virtual network adapter port profiles
 
-. Click **Fabric** > **Home** > **Show **> **Fabric Resources**. Click **Fabric** tab > **Networking** > **Port Classifications** > **Home** > **Create** > **Port Classification**.
+1. Click **Fabric** > **Home** > **Show **> **Fabric Resources**. Click **Fabric** tab > **Networking** > **Port Classifications** > **Home** > **Create** > **Port Classification**.
 2. In **Create Port Classification Wizard** > **Name** specify a classification name.
