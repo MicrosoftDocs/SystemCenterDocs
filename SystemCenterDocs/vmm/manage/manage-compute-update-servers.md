@@ -56,9 +56,9 @@ If you want to add an existing WSUS server from a Configuration Manager environm
 
 1. Create a collection in Configuration Manager and add any servers that you'd like to add to the VMM fabric.
 2. Exclude this collection from any software update deployments delivered by Configuration Manager. This ensures that VMM controls update management for the servers. You'll still be able to view compliance information for the collection in Configuration Manager reports.
-3. If you want to include VMM compliance information in Configuration Manager create an update group in Configuration Manager that contains all of the updates for which you want to measure compliance for the machines that will be in the VMM fabric. This  update group is only for reporting. Don't deploy it to the machines managed by VMM.
-4. Now add the WSUS server as [described above](#add-a-wsus-server-to-the-vmm-fabric).
-5. After adding the server select **Update Server** > **Properties** > **General** > **Allow Update Server configuration changes**.
+3. If you want to include VMM compliance information in Configuration Manager, create an update group in Configuration Manager that contains all of the updates for which you want to measure compliance for the machines that will be in the VMM fabric. This  update group is only for reporting. Don't deploy it to the machines managed by VMM.
+4. Now add the WSUS server as described above.
+5. After adding the server, select **Update Server** > **Properties** > **General** > **Allow Update Server configuration changes**.
 
 ## Create and assign update baselines
 
@@ -87,7 +87,7 @@ After you've added the WSUS server to the fabric you can configure update baseli
 3. In **Update Baseline Wizard** > **General**, specify a name and description.
 4. In **Update**, add the updates you want to include.
 5. In **Assignment Scope**, expand **Host Groups** and **Infrastructure**. Select the groups and servers you want to add.
-6. In **Summary**, click **Finish ** and accept the **Microsoft License Terms** if required for installation of any of the updates. Verify the baseline in **Library** > **Update Catalog and Baselines** > **Baselines**.
+6. In **Summary**, click **Finish**, and accept the **Microsoft License Terms** if needed to install any of the updates. Verify the baseline in **Library** > **Update Catalog and Baselines** > **Baselines**.
 
 ## Scan for update compliance
 
