@@ -1,6 +1,6 @@
 ---
 title: Supported Storage Arrays
-description: This article provides information about preparing the VMM supported storage arrays
+description: This article provides information about preparing the System Center 2016 VMM supported storage arrays
 author:  RiyazP07
 manager:  cfreemanwa
 ms.date:  2016-08-29
@@ -10,11 +10,11 @@ ms.technology:  virtual-machine-manager
 ---
 
 
-# Suppported Storage Arrays
+# Supported storage arrays in VMM
 
 >Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
 
-This article list all storage arrays have validated against  System Center 2016 - Virtual Machine Manager (VMM).
+This article lists the storage arrays that have been tested and are supported in System Center 2016 - Virtual Machine Manager (VMM).
 
 ## Storage Arrays
 
