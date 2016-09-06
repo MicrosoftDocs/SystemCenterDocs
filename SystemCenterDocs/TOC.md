@@ -122,7 +122,7 @@
 ### [Install Orchestrator](orch/deploy/Install-Orchestrator.md)
 #### [How to Install Orchestrator on a Single Computer](orch/Deploy/How-to-Install-Orchestrator-on-a-Single-Computer.md)
 #### [How to install Orchestrator Features](Orch/Deploy/How-to-install-Orchestrator-Features.md)
-#### [How to install System Center Technical Preview - Orchestrator from the command prompt](Orch/Deploy/How-to-install-System-Center-Technical-Preview---Orchestrator-from-the-command-prompt.md)
+#### [How to install System Center Technical Preview - Orchestrator from the command prompt](orch/deploy/how-to-install-orchestrator-from-the-command-prompt.md)
 ## [Service Manager](SM/Service-Manager.md)
 ### [What's New in Service Manager](sm/get-started/what-s-new-in-service-manager.md)
 ### [Planning for System Center 2016 - Service Manager](sm/Plan/Planning-for-System-Center-2016---Service-Manager.md)
