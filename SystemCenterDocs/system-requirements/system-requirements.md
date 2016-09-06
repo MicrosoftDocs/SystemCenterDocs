@@ -20,11 +20,11 @@ Use this information to evaluate if your environment is ready to support an inst
 
 The topics below specify minimum and recommended hardware requirements along with compatibility  for, server and client operating systems, SQL Server, Web console, PowerShell, and the .NET Framework.
 
-## System Requirements topics
+## System requirements topics
 
 -   [Minimum Hardware Recommendations](Minimum-Hardware-Recommendations-for-System-Center-Technical-Preview.md)
 
--   [Operating Systems Compatibility](Operating-Systems-Compatibility-for-System-Center-Technical-Preview.md)s
+-   [Operating Systems Compatibility](Operating-Systems-Compatibility-for-System-Center-Technical-Preview.md)
 
 -   [Client Operating System Compatibility](Client-Operating-System-Compatibility-for-System-Center-Technical-Preview.md)
 
