@@ -1,8 +1,9 @@
 ---
 description:  
-manager:  cfreemanwa
+manager:  cfreeman
 ms.topic:  article
 author:  cfreemanwa
+ms.author: cfreeman
 ms.prod:  system-center-threshold
 keywords:  
 ms.date:  2016-07-01
@@ -13,9 +14,9 @@ ms.assetid:  d5a0412c-4670-4c92-aad8-d83ebe2f9043
 
 # .Net Version Support
 
->Applies To: System Center Technical Preview
+>Applies To: System Center 2016
 
-Use this information to evaluate if your Microsoft .NET Framework is ready to support the installation of or upgrade to System Center 2016 Technical Preview. Use this information whether you are deploying one or multiple components.
+Use this information to evaluate if your Microsoft .NET Framework is ready to support the installation of or upgrade to System Center 2016. 
 
 ## .Net compatibility
 
@@ -40,4 +41,3 @@ Use this information to evaluate if your Microsoft .NET Framework is ready to su
 |**Service Provider Foundation** API Web Server|||||&#8226;|&#8226;|
 |**Virtual Machine Manager** Console|||&#8226;|&#8226;|&#8226;|&#8226;|
 |**Virtual Machine Manager** Management Server||||||&#8226;|
-
