@@ -20,7 +20,7 @@ This article list all storage arrays have validated against  System Center 2016 
 
 Virtualized workloads in System Center VMM require storage resources to meet capacity and performance requirements. VMM recognizes local and remote storage, and supports the use of block-level storage devices that expose logical unit numbers (LUNs) using fibre channel, iSCSCI, and SAS connections, and the use of network shares for storage.
 
-For more information about storage configuration see [Configuring Storage in VMM Overview](overview--configuring-block-storage-vmm.md)
+For more information about storage configuration see [Configuring Storage in VMM Overview](../manage/overview--configuring-block-storage-vmm.md)
 
 The following table summarizes storage array support for VMM in System Center 2016. Also, for information on the SMI-S conformance of the arrays please refer to SMI-S Conformance Testing Program [SMI-S CTP](http://www.snia.org/ctp/)
 
