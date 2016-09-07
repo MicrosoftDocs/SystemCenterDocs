@@ -1,5 +1,5 @@
 ---
-title: Add a Nano Server as a Hyper-V host in VMM
+title: Add a Nano server as a Hyper-V host in VMM
 description: This article describes how to add a Nano server to the VMM fabric as a Hyper-V host or VM
 author:  rayne-wiselman
 manager:  cfreemanwa
@@ -9,19 +9,19 @@ ms.prod:  system-center-threshold
 ms.technology:  virtual-machine-manager
 ---
 
-# Add a Nano Server as a Hyper-V host or VM in VMM
+# Add a Nano server as a Hyper-V host or VM in VMM
 
 >Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
 
 You can use System Center 2016 - Virtual Machine Manager (VMM) to manage hosts and virtual machines running Nano server.
 
-## Prepare a Nano Server virtual hard disk
+## Prepare a Nano server virtual hard disk
 
-To get started with the deployment of a Nano Server-based host or virtual machines in VMM you need to create a Nano Server VHD from the Windows Server Technical Preview ISO. The VHD should include the VMM packages:
+To get started with the deployment of a Nano Server-based host or virtual machines in VMM you need to create a Nano server VHD from the Windows Server Technical Preview ISO. The VHD should include the VMM packages:
 
 - Adding the VMM package, **Microsoft-NanoServer-SCVMM-Package** ensures that the VMM agent is part of the VHD.
 - Adding the VMM compute package, **Microsoft-NanoServer-SCVMM-Compute-Package** ensures that the VHD has the Hyper-V role and you can manage the physical server using VMM. (If you install this package, do not use the -Compute option for the Hyper-V role)
-- For the File Server Role, use **Microsoft-NanoServer-Storage-Package** along with **Microsoft-NanoServer-SCVMM-Package**.
+- For the File Server role, use **Microsoft-NanoServer-Storage-Package** along with **Microsoft-NanoServer-SCVMM-Package**.
 - For hyper-converged mode, use **Microsoft-NanoServer-Storage-Package** along with **Microsoft-NanoServer-SCVMM-Package** & **Microsoft-NanoServer-SCVMM-Compute-Package**.
 
 ### Create a virtual hard disk for a physical machine
@@ -44,7 +44,7 @@ To get started with the deployment of a Nano Server-based host or virtual machin
     - Unmount the VHD.
 
 7.  Boot the physical computer into the Nano Server VHD.
-8.  Log on to the Nano Server Recovery Console using the administrator and password you supplied while running the script and obtain the IP address of the Nano server-based host. [Learn more](https://technet.microsoft.com/library/mt126167.aspx).
+8.  Log on to the Nano server Recovery Console using the administrator and password you supplied while running the script and obtain the IP address of the Nano server-based host. [Learn more](https://technet.microsoft.com/library/mt126167.aspx).
 8.  Ensure that the Nano server is joined to the same domain as the VMM server. [Learn more](https://technet.microsoft.com/library/mt126167.aspx).
 9. Ensure that the VMM service account and the Run As account are added to the administrators group on the Nano server.
 
@@ -52,7 +52,7 @@ To get started with the deployment of a Nano Server-based host or virtual machin
 
 We recommend offline installation of the VMM packages (when creating the VHD) but if you do need to install them online when the Nano server is running, do the following:
 
-1.  Copy the **Packages** folder from the installation media locally to the running Nano Server (for example, to C:\packages).
+1.  Copy the **Packages** folder from the installation media locally to the running Nano server (for example, to C:\packages).
 2.  Use remote Powershell to login to the Nano server. Add the VMM packages using the below commands.
 3. To install Microsoft-NanoServer-SCVMM-Package:
 
@@ -66,7 +66,7 @@ We recommend offline installation of the VMM packages (when creating the VHD) bu
 
 5. Check that the VMM packages and the associated language packs are installed correctly by running the following command: **dism /online /get-packages**.
 6. You should see "Package Identity : Microsoft-NanoServer-SCVMM-Feature-Package~31bf3856ad364e35~amd64~~ 10.0.14300.1003" listed twice, once for Release Type : Language Pack and once for Release Type : Feature Pack. Same applies for the Microsoft-NanoServer-SCVMM-Compute-Package.
-7. Restart the Nano Server-based host.
+7. Restart the Nano server-based host.
 
 
 
