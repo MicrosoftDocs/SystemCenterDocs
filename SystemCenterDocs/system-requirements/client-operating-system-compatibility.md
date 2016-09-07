@@ -1,5 +1,5 @@
 ---
-description:  
+description:  List of the client operating systems supported for System Center 2016 client components. 
 manager:  cfreeman
 ms.topic:  article
 author:  cfreemanwa
