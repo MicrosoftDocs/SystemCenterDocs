@@ -16,7 +16,6 @@ ms.technology:  virtual-machine-manager
 
 Read this article to set up update servers in the System Center 2016 - Virtual Machine Manager (VMM) fabric. The article includes prerequisites, instructions for adding a WSUS server to the fabric, explains how to set update baselines and how to run a scan. You can also create update exemptions.
 
-## Overview
 
 You can deploy update servers in the VMM fabric to manage compliance and remediation for virtualization hosts, library servers, the VMM management server, PXE servers, the WSUS server itself, and any infrastructure servers running Windows Server 2012 R2 or later.
 
