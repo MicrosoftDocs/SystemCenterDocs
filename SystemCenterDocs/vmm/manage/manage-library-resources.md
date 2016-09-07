@@ -75,6 +75,3 @@ To remove orphaned resources, you'll need to modify the templates that reference
 3. Add a new resource that's valid.
 4. When you've completed these steps for all templates, closed the **Properties** dialog. To verify there aren't any dependences right-click the orphaned resource > **Properties** > **Dependencies**. Then right-click the orphaned resource > **Delete**.
 
-## Next steps
-
-After you've set the library up, start setting up [virtualization hosts](manage-compute-host-groups.md) in the VMM fabric.
