@@ -149,7 +149,7 @@ InlineScript
 
 The most common use for **InlineScript** in a runbook is to run a block of code on another computer. This is required when cmdlets in your runbook are not installed in Automation or if the action only has permissions to be performed locally on the target computer. This is illustrated in the following diagram.
 
-![](../../media/SMAAuth_InlineScript.gif)
+![](../media/smaauth_inlinescript.png)
 
 In order to run the code block on another computer, the **PSComputer** and **PSCredential** parameters are used with the **InlineScript** activity. A global resource such as a [Credential](Credentials.md) or [Connection](Connections.md) is typically used in a runbook to provide values for these parameters. The following sample code runs a set of commands on a computer represented by a connection called MyConnection.
 
