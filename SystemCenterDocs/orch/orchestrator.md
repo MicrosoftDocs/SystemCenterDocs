@@ -5,7 +5,7 @@ ms.topic:  article
 author:  bwren
 ms.prod:  system-center-threshold
 keywords:  
-ms.date:  2016-06-28
+ms.date:  2016-08-18
 title:  Orchestrator
 ms.technology:  orchestrator
 ms.assetid:  e8e3cf0f-0982-4603-8a3f-18803acae43a
@@ -13,11 +13,11 @@ ms.assetid:  e8e3cf0f-0982-4603-8a3f-18803acae43a
 
 # Orchestrator
 
->Applies To: System Center 2016 Technical Preview - Orchestrator
+>Applies To: System Center 2016 - Orchestrator
 
-Welcome to System Center 2016 Technical Preview - Orchestrator. Orchestrator is a workflow management solution for the data center. It lets you automate the creation, monitoring, and deployment of resources in your environment. This topic is intended solely to point you to information on various System Center 2016 Technical Preview - Orchestrator features.
+Welcome to System Center 2016 - Orchestrator. Orchestrator is a workflow management solution for the data center. It lets you automate the creation, monitoring, and deployment of resources in your environment. This topic is intended solely to point you to information on various System Center 2016 - Orchestrator features.
 
-The following topics provide information to help you get started with System Center 2016 Technical Preview - Orchestrator.
+The following topics provide information to help you get started with System Center 2016 - Orchestrator.
 
 ## Getting started with Orchestrator
 [Orchestrator Capabilities](get-started/Orchestrator-Capabilities.md)

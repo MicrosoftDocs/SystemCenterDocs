@@ -5,7 +5,7 @@ ms.topic:  article
 author:  bwren
 ms.prod:  system-center-threshold
 keywords:  
-ms.date:  2016-06-28
+ms.date:  2016-08-18
 title:  What s new in Service Management Automation 2016
 ms.technology:  service-management-automation
 ms.assetid:  204ba9e4-a03e-4598-9489-15a0f1a2394c
@@ -26,3 +26,12 @@ By default, SMA randomly picks a Runbook worker to service a job when a Runbook 
 **Support for PowerShell 5.0**
 Service Management Automation 2016 now supports Windows Management Framework 5.0.
 
+## What's new since Technical Preview 5
+**PowerShell ISE Add-on v1.1**
+- You can now designate runbook worker for runbooks from ISE
+- New columns added for designated runbook and runbook type<br>
+
+The following bugs have been fixed since Technical Preview 5
+- Error messages thrown by Start/Stop buttons in Test Job window are inappropriate
+-	The past draft job shown in Test Job window is not the latest job
+- Unicode characters in a runbook get replaced on downloading the runbook
