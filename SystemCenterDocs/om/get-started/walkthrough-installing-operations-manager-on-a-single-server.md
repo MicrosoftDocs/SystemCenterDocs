@@ -1,23 +1,19 @@
 ---
-description:  
-manager:  cfreemanwa
-ms.topic:  article
-author:  mgoedtel
-ms.prod:  system-center-threshold
-keywords:  
-ms.date:  2016-06-27
-title:  Walkthrough  Installing Operations Manager on a Single Server
-ms.technology:  operations-manager
-ms.assetid:  76eb99bf-9aca-49d1-b5e7-63909fd21b13
+title: Walkthrough: Installing Operations Manager on a Single Server
+author: mgoedtel
+manager: cfreemanwa
+ms.date: 2016-08-29
+ms.custom: na
+ms.prod: system-center-threshold
+ms.technology: operations-manager
+ms.topic: article
 ---
-
-
 
 # Walkthrough: Installing Operations Manager on a Single Server
 
->Applies To: System Center 2016 Technical Preview - Operations Manager
+>Applies To: System Center 2016 - Operations Manager
 
-This walkthrough guides you through an installation of System Center 2016 Technical Preview - Operations Manager on a single server. The features installed include the following:
+This walkthrough guides you through an installation of System Center 2016 - Operations Manager on a single server. The features installed include the following:
 
 -   Management server
 
@@ -28,11 +24,12 @@ This walkthrough guides you through an installation of System Center 2016 Techni
 -   Reporting server
 
 ## Prerequisites
-You must ensure that your server meets the minimum supported configurations for System Center 2016 Technical Preview - Operations Manager. For more information, see [System Requirements for System Center Technical Preview](../../system-requirements/System-Requirements-for-System-Center-Technical-Preview.md).
+
+You must ensure that your server meets the minimum supported configurations for System Center 2016 - Operations Manager. For more information, see [System Requirements for System Center 2016 - Operations Manager](../plan/system-requirements.md).
 
 **Required SQL Server Components**
 
--   Database Engine Services - Full-Text and Semantic Extractions for Search (as called in SQL Server 2012)
+-   Database Engine Services - Full-Text and Semantic Extractions for Search (as called in SQL Server 2012 and later)
 
 -   Reporting Services - Native
 
@@ -40,7 +37,7 @@ You must ensure that your server meets the minimum supported configurations for 
 
 1.  Log on to the server by using an account that has local administrative credentials.
 
-2.  On the System Center 2016 Technical Preview - Operations Manager installation media, run **Setup.exe**, and then click **Install**.
+2.  On the System Center 2016 - Operations Manager installation media, run **Setup.exe**, and then click **Install**.
 
 3.  On the **Getting Started**, **Select features to install** page select the **Management server**, **Operations console**, **Web console**, and **Reporting server** features. To read more about each feature and its requirements, click **Expand all**, or expand the buttons next to each feature. Then click **Next**.
 
@@ -91,7 +88,7 @@ You must ensure that your server meets the minimum supported configurations for 
     > [!IMPORTANT]
     > You might receive a message about having the wrong version of SQL Server, or you might encounter a problem with the SQL Server Windows Management Instrumentation (WMI) provider. To resolve this problem, open a Command Prompt window, select **Run as administrator**, and then run the following command. In the command, replace the *<path\>*  placeholder with the location of SQL Server:
     > 
-    > **mofcomp.exe "\<path>\Microsoft SQL Server\100\Shared\sqlmgmproviderxpsp2up.mof"**
+    > **mofcomp.exe “\<path>\Microsoft SQL Server\100\Shared\sqlmgmproviderxpsp2up.mof”**
 
     > [!NOTE]
     > The SQL Server model database size must not be greater than 100 MB. If it is, you might encounter an error in Setup regarding the inability to create a database on SQL due to user permissions. To resolve the issue, you must reduce the size of the model database.
@@ -105,12 +102,12 @@ You must ensure that your server meets the minimum supported configurations for 
     > [!IMPORTANT]
     > You might receive a message about having the wrong version of SQL Server, or you might encounter a problem with the SQL Server Windows Management Instrumentation (WMI) provider. To resolve this problem, open a Command Prompt window, select **Run as administrator**, and then run the following command. In the command, replace the *<path\>* placeholder with the location of SQL Server:
     > 
-    > **mofcomp.exe "\<path>\Microsoft SQL Server\100\Shared\sqlmgmproviderxpsp2up.mof".**
+    > **mofcomp.exe “\<path>\Microsoft SQL Server\100\Shared\sqlmgmproviderxpsp2up.mof”.**
 
     > [!NOTE]
     > These paths do not change if you connect to a different instance of SQL Server.
 
-15. On the **Configuration**, **SQL Server instance for reporting services** page, select the SQL Server database instance from the drop-down list. This drop-down list contains the SQL Server database instance name that was created when you installed SQL Server 2012 or 2012 SP1, SQL Server 2014 or 2014 SP1, or SQL Server 2016 RC1 and should be the name of the server on which you are installing System Center 2016 Technical Preview - Operations Manager. Click **Next**.
+15. On the **Configuration**, **SQL Server instance for reporting services** page, select the SQL Server database instance from the drop-down list. This drop-down list contains the SQL Server database instance name that was created when you installed SQL Server 2014 Service Pack 2 or SQL Server 2016 and should be the name of the server on which you are installing System Center 2016 Technical Preview - Operations Manager. Click **Next**.
 
 16. On the **Configuration**, **Specify a web site for use with the Web console** page, select **Default Web Site** or the name of an existing website. Select the option **Enable SSL** only if the website has been configured to use SSL, and then click **Next**.
 
@@ -128,16 +125,16 @@ You must ensure that your server meets the minimum supported configurations for 
 
 22. When Setup is finished, the **Setup is complete** page appears. Click **Close** and the Operations console will open.
 
-### To install the System Center 2016 - Operations Manager single server management group configuration by using the Command Prompt window
+### To install the System Center 2016 - Operations Manager single server management group configuration from the Command Prompt 
 
 1.  Log on to the server by using an account that has local administrative credentials.
 
-2.  Open the Command Prompt window by using the **Run as Administrator** option.
+2.  Open the Command Prompt by using the **Run as Administrator** option.
 
     > [!NOTE]
     > Setup.exe requires administrator privileges because the Setup process requires access to system processes that can only be used by a local administrator.
 
-3.  Change the path to where the System Center 2016 Technical Preview - Operations Manager setup.exe file is located, and run the following command.
+3.  Change the path to where the System Center 2016 - Operations Manager setup.exe file is located, and run the following command.
 
     > [!IMPORTANT]
     > Use the `/WebConsoleUseSSL` parameter only if your website has Secure Sockets Layer (SSL) activated.
@@ -174,9 +171,9 @@ You must ensure that your server meets the minimum supported configurations for 
     /UseMicrosoftUpdate: [0|1]
     ```
 
-## Verifying the Installation
+## Verifying the installation
 
-#### To confirm the health of the Management server
+#### To confirm the health of the management server
 
 1.  In the Operations console, select the **Administration** workspace.
 
@@ -208,8 +205,9 @@ You must ensure that your server meets the minimum supported configurations for 
 
 3.  Close the report window.
 
-## Next Steps
-Now that you have installed System Center 2016 Technical Preview - Operations Manager, you can deploy agents and start monitoring your applications, servers, and network devices. For more information, see [Managing Discovery and Agents](../Manage/Managing-Discovery-and-Agents.md) and [Operations Manager 2016 Monitoring Scenarios](../Manage/Operations-Manager-Monitoring-Scenarios.md).
+## Next steps
+
+Now that you have installed System Center 2016 - Operations Manager, you can deploy agents and start monitoring your applications, servers, and network devices. For more information, see [Managing Discovery and Agents](../manage/managing-discovery-and-agents.md) and [Operations Manager 2016 Monitoring Scenarios](http://go.microsoft.com/fwlink/p/?LinkID=218372).
 
 
 
