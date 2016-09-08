@@ -21,7 +21,7 @@ You should read the topics in this section if you are new to Operations Manager 
 
 [Operations Manager Key Concepts](../om/get-started/Operations-Manager-Key-Concepts.md)
 
-[Walkthrough: Installing Operations Manager on a Single Server](../om/get-started/Walkthrough--Installing-Operations-Manager-on-a-Single-Server.md)
+[Walkthrough: Installing Operations Manager on a Single Server](../om/get-started/Walkthrough-Installing-Operations-Manager-on-a-Single-Server.md)
 
 [Installing Operations Manager by Using the Command Prompt Window](../om/deploy/Installing-Operations-Manager-by-Using-the-Command-Prompt-Window.md)
 
