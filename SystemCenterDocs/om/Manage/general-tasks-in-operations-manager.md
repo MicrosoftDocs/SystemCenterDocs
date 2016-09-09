@@ -30,7 +30,7 @@ ms.assetid:  0e932fe9-73ee-46fc-a187-395869d1a510
 
 -   [Operations Manager](../Operations-Manager.md)  
 
--   [System Center 2016 - Operations Manager Operations Guide](../Manage/System-Center-2016---Operations-Manager-Operations-Guide.md)  
+-   [System Center 2016 - Operations Manager Operations Guide](../Manage/System-Center-2016-Operations-Manager-Operations-Guide.md)  
 
 -   [Operations Manager Monitoring Scenarios](Operations-Manager-Monitoring-Scenarios.md)  
 

@@ -1,16 +1,16 @@
-description:
-manager:  cfreemanwa
-ms.topic:  article
-author:  cfreemanwa
-ms.prod:  system-center-threshold
-keywords:
-ms.date:  2016-07-25
-title:  What s New in System Center
-ms.technology:  system-center-2016
-ms.assetid:  4f8701a5-8d55-4ffd-afee-e6341ec6b7f4
+---
+title:  What's New in System Center
+description:  
+author: mgoedtel
+manager: cfreemanwa
+ms.date: 2016-09-07
+ms.custom: na
+ms.prod: system-center-threshold
+ms.technology: operations-manager
+ms.topic: article
 ---
 
-# What&#39;s New in System Center
+# What's New in System Center
 
 >Applies To: System Center 2016
 
@@ -21,7 +21,7 @@ The content in this section describes what's new and changed in System Center 20
 ## What's New topics
 [What's new in DPM in System Center Technical Preview](../dpm/get-started/What-s-new-in-DPM-in-System-Center-2016.md)
 
-[What's New in OM in Technical Preview](../om/get-started/What-s-New-in-OM-in-Technical-Preview.md)
+[What's New in Operations Manager](../om/get-started/Whats-New-in-Operations-Manager.md)
 
 [What's New in Service Manager for Technical Preview](../sm/get-started/what-s-new-in-service-manager.md)
 
