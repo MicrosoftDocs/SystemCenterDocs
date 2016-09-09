@@ -14,6 +14,8 @@ Welcome to Microsoft System Center 2016 - Operations Manager.  The following top
 
 # Getting started topics
 
+>Applies To: System Center 2016 - Operations Manager
+
 To learn what's new in System Center 2016 - Operations Manager, first review [What's New in Operations Manager 2016](Whats-New-in-operations-manager.md)
 
 Understand the minimum [System Requirements for Operations Mangaer](../plan/system-requirements.md) for each Operations Manager component and any other considerations that apply.  
