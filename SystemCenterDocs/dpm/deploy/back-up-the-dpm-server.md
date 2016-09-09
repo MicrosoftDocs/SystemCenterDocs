@@ -5,7 +5,7 @@ ms.topic:  article
 author:  markgalioto
 ms.prod:  system-center-threshold
 keywords:  
-ms.date:  2016-06-30
+ms.date:  2016-09-09
 title:  Back up the DPM server
 ms.technology:  data-protection-manager
 ms.assetid:  e5a31d08-e483-4dda-abd3-1b562656b24f
@@ -75,7 +75,7 @@ Scenario 1 shows a scenario in which four DPM servers are chained:
 |DS3 \(secondary\)|DS1, DS2|DS4|
 |DS4 \(secondary\)|DS3|\-|
 
-![Scenario with four DPM servers chained](../../Media/DPM2012_DRDeployment_Chaining.jpg)
+![Scenario with four DPM servers chained](../media/dpm2012_drdeployment_chaining.png)
 
 #### Chaining example 2
 **Scenario 2: Chained protection**
@@ -91,7 +91,7 @@ Scenario 2 shows a scenario in which four DPM servers are chained:
 |DS3 \(secondary\)|DS2|DS4|
 |DS4|DS3|\-|
 
-![alternate scenario with four DPM servers chained](../../media/DPM2012_DR_ChainingS1.jpg)
+![alternate scenario with four DPM servers chained](../media/dpm2012_dr_chainings1.png)
 
 ### Cyclic protection
 If you don't want to use a secondary server then two DPM servers can protect each other.
@@ -108,7 +108,7 @@ Scenario 3 shows a scenario using cyclic protection
 |DS3 \(primary\)|PS4|DS2|
 |DS3 \(secondary\)|DS2|DS2|
 
-![example of cyclic protection scenario](../../Media/DPM2012_DRDeployment_Cyclic.jpg)
+![example of cyclic protection scenario](../media/dpm2012_drdeployment_cyclic.png)
 
 ### Configure chaining
 Set up chaining as follows:
