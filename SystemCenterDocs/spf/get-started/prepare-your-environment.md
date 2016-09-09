@@ -4,7 +4,7 @@ ms.custom: na
 ms.prod: system-center-threshold
 ms.reviewer: na
 ms.suite: na
-ms.technology: 
+ms.technology:
   - orchestrator
 ms.tgt_pltfrm: na
 ms.topic: article
@@ -14,18 +14,18 @@ manager:cfreemanwa
 ---
 # Prepare Your Environment for Service Provider Foundation
 The following tables describe the prerequisites for installing Service Provider Foundation for System Center 2016.  
-  
+
 For information on capacity planning for database storage, memory, and core processors, see [Capacity Planning for Service Provider Foundation](../Plan/Capacity-Planning-for-Service-Provider-Foundation.md).  
-  
+
 ### Required hardware and settings  
-  
+
 |Hardware|Minimum required and recommended values, per web service|  
 |------------|------------------------------------------------------------|  
 |RAM|2&nbsp;gigabytes \(GB\) minimum, 4&nbsp;GB preferred.|  
 |Available hard disk space|1&nbsp;GB minimum, 3&nbsp;GB preferred.|  
-  
+
 ### Required operating system and software  
-  
+
 |Software|Action required|  
 |------------|-------------------|  
 |Operating system \- Windows Server 2012|Install on the server.|  
@@ -40,10 +40,8 @@ For information on capacity planning for database storage, memory, and core proc
 |Windows PowerShell 3.0|None. Installed with Windows Server 2012.|  
 |Microsoft .NET Framework&nbsp;3.5. This feature includes:<br /><br />-   ASP.NET 3.5<br />-   Common Language Runtime&nbsp;2.0|None. Installed with Windows Server 2012.|  
 |.NET Framework&nbsp;4.5. This feature includes:<br /><br />-   ASP.NET 4.5<br />-   WCF services HTTP Activation<br />-   Common Language Runtime&nbsp;4.5|None. Installed with Windows Server 2012.|  
-  
+
 ## See Also  
-[Capacity Planning for Service Provider Foundation](../Plan/Capacity-Planning-for-Service-Provider-Foundation.md)  
+[Capacity Planning for Service Provider Foundation](../Plan/Capacity-Planning.md)  
 [Deploying Service Provider Foundation](../Deploy/Deploying-Service-Provider-Foundation.md)  
-[Administering Service Provider Foundation](../Manage/Administering-Service-Provider-Foundation.md)  
-[Architecture Overview of Service Provider Foundation](../Get-Started/Architecture-Overview-of-Service-Provider-Foundation.md)  
-  
+[Architecture Overview of Service Provider Foundation](../Get-Started/Architecture-Overview.md)  
