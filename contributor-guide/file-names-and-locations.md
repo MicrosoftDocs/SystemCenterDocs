@@ -4,45 +4,34 @@
 
 #File names and locations for System Center technical articles
 
-Here's what you need to know:
-
-+ [Rules]
-+ [Pattern]
-+ [Standard examples]
-+ [Marketplace content]
-+ [File name approval]
+Here's what you need to know.
 
 ##Rules
 
 - Files names can contain ONLY lowercase letters, numbers, and hyphens.
-- No spaces or punctuation characters. Use the hyphens to separate words and numbers in the file name.
+- No spaces or punctuation characters. Use the a single hyphen to separate words and numbers in the file name.
 - No more than 80 characters - this is a publishing system limit
 - Use action verbs that are specific, such as develop, buy, build, troubleshoot. No -ing words.
 - No small words - don't include a, and, the, in, or, etc.
 - All files must be in markdown and use the .md file extension.
 - Spell the words out; avoid unapproved or unnecessary acronyms in file names
+- Do not include "system-center" in the filename.
+- Do not include version numbers/indicators in the filename.
 
 Acronyms and initialisms in file names - specific guidelines:
 
 - Follow existing Microsoft guidance for acceptable System Center component name abbreviations
-- Do not allow rm or arm as acronyms anywhere in a file name
 - Other industry-standard abbreviations are acceptable as necessary in file names.
-
-##Pattern
-
-Here's the general pattern:
-
- **component-platform-language-content-product-version.md**
-
-Use the parts of the pattern that apply, and review the list of articles in the repository to get an idea of existing names. Names that don't start with a dev platform or a component name are probably suspect and slipped through.
 
 ##File name approval
 
-It's the job of our group of pull request reviewers to review file names when a new file is submitted to the repository for the first time. Pull request reviewers should review the file name and provide feedback via the pull request comment stream if changes are needed. The file name needs to be corrected before the pull request is accepted. Contributors can easily push the update to the pending pull request.
+It's the job of the pull request reviewer to review file names when a new file is submitted to the repository for the first time. Pull request reviewers should review the file name and provide feedback via the pull request comment stream if changes are needed. The file name needs to be corrected before the pull request is accepted. Contributors can easily push the update to the pending pull request.
 
 ##Folder names in the repo
 
-Folders should be created only for component (plus deploy, get-started, and manager subfolders). Use only letters and hyphens, and use all lowercase letters. Obtain approval from the repository admin before you create a new folder that is not for a released service.
+Folders should be created only for the component, plus plan, deploy, get-started, manager, and media subfolders. Use only letters and hyphens, and use all lowercase letters. Obtain approval from the repository admin before you create a new folder that is not for a released service.
+
+Media folders exist under the component level folder.
 
 ##Changing case in file names
 
@@ -59,11 +48,3 @@ Use the following command to rename a file:
 
 - [Overview article](./../README.md)
 - [Index of guidance articles](./contributor-guide-index.md)
-
-
-<!--Anchors-->
-[Rules]: #rules
-[Pattern]: #pattern
-[Standard examples]: #standard-examples
-[Marketplace content]: #marketplace-content
-[File name approval]: #file-name-approval
