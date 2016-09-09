@@ -9,12 +9,11 @@ ms.technology: operations-manager
 ms.topic: article
 ---
 
-Welcome to Microsoft System Center 2016 - Operations Manager.  The following topics provide information to help you get started learning about Operations Manager in order to develop an effective architecture design plan that supports your requirements, a deployment strategy to successfully perform an installation of Operations Manager in your environment, and finally operational guidance so you can successfully use, manage and maintain your deployment.  
-
-
 # Getting started topics
 
 >Applies To: System Center 2016 - Operations Manager
+
+Welcome to Microsoft System Center 2016 - Operations Manager.  The following topics provide information to help you get started learning about Operations Manager in order to develop an effective architecture design plan that supports your requirements, a deployment strategy to successfully perform an installation of Operations Manager in your environment, and finally operational guidance so you can successfully use, manage and maintain your deployment. 
 
 To learn what's new in System Center 2016 - Operations Manager, first review [What's New in Operations Manager 2016](Whats-New-in-operations-manager.md)
 
