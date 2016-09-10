@@ -19,7 +19,7 @@ This topic describes how to configure Service Provider Foundation with the follo
 
 -   App Controller   
 
-All portal and client applications use the Service Provider Foundation services to deliver IaaS. For more information, see [Manage Web Services and Connections in Service Provider Foundation](../Manage/Manage-Web-Services-and-Connections-in-Service-Provider-Foundation.md).  
+All portal and client applications use the Service Provider Foundation services to deliver IaaS. For more information, see [Manage Web Services and Connections in Service Provider Foundation](../Manage/Manage-Web-Services-and-Connections.md).  
 
 ## Configuring Windows Azure Pack for Windows Server   
 Service Provider Foundation provides services and connectivity for delivering IaaS for Windows Azure Pack.  
@@ -71,7 +71,7 @@ If a tenant was not created, you can follow the procedures for creating a tenant
 
     -   **Certificate file:**  
 
-        This is the location that you specified for the exported certificate (typically with a .pfx extension). For information about how to export the private key from a certificate for this step, see the [Walkthrough: Creating a Certificate and User Roles for Service Provider Foundation](../Manage/Walkthrough--Creating-a-Certificate-and-User-Roles-for-Service-Provider-Foundation.md).  
+        This is the location that you specified for the exported certificate (typically with a .pfx extension). For information about how to export the private key from a certificate for this step, see the [Walkthrough: Creating a Certificate and User Roles for Service Provider Foundation](../Manage/Walkthrough-Creating-a-Certificate-and-User-Roles.md).  
 
     -   **Password:**  
 

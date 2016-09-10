@@ -10,7 +10,8 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 95bdbd33-82f5-4474-8472-f5b9dd9524ea
 author:bwren
-manager:cfreemanwa
+ms.author: raynew
+manager:cfreeman
 ---
 # How to Configure the System Center Resource Provider for Windows Azure Pack
 
@@ -152,5 +153,4 @@ For more information about registering Service Provider Foundation in Windows Az
 
 ## See Also  
 [Configuring Portals for Service Provider Foundation](../Deploy/Configuring-Portals-for-Service-Provider-Foundation.md)  
-[Portals in Service Provider Foundation](../Get-Started/Portals-in-Service-Provider-Foundation.md)  
-[Administering Service Provider Foundation](../Manage/Administering-Service-Provider-Foundation.md)  
+[Portals in Service Provider Foundation](../Get-Started/Portals-in-Service-Provider-Foundation.md)    
