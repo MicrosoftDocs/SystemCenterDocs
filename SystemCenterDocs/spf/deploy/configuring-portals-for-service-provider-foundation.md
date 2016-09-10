@@ -16,7 +16,7 @@ manager:cfreemanwa
 This topic describes how to configure Service Provider Foundation with the following portal applications:  
 
 -  Windows Azure Pack for Windows Server   
-  
+
 -   App Controller   
 
 All portal and client applications use the Service Provider Foundation services to deliver IaaS. For more information, see [Manage Web Services and Connections in Service Provider Foundation](../Manage/Manage-Web-Services-and-Connections-in-Service-Provider-Foundation.md).  
@@ -31,7 +31,7 @@ Service Provider Foundation provides services and connectivity for delivering Ia
 2.  Continue with the procedure in [Register the Service Provider Foundation Endpoint for Virtual Machine Clouds](https://technet.microsoft.com/en-us/library/dn457792.aspx) in the Windows Azure Pack for Windows Server documentation.  
 
 ## Configuring App Controller   
-If a tenant was not created, you can follow the procedures for creating a tenant that are described in [Walkthrough: Creating a Certificate and User Roles for Service Provider Foundation](../Manage/Walkthrough--Creating-a-Certificate-and-User-Roles-for-Service-Provider-Foundation.md).  
+If a tenant was not created, you can follow the procedures for creating a tenant that are described in [Walkthrough: Creating a Certificate and User Roles for Service Provider Foundation](../Manage/Walkthrough-Creating-a-Certificate-and-User-Roles.md).  
 
 #### To connect to App Controller as a Tenant  
 
@@ -81,4 +81,3 @@ For more information about how to connect a hosting provider to App Controller, 
 
 ## See Also  
 [Portals in Service Provider Foundation](../Get-Started/Portals-in-Service-Provider-Foundation.md)  
-[Administering Service Provider Foundation](../Manage/Administering-Service-Provider-Foundation.md)  
