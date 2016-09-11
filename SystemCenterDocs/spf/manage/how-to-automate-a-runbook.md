@@ -1,5 +1,6 @@
 ---
 title: How to Automate a Runbook from Service Provider Foundation
+description: This topic describes how you can integrate Service Manager Automation and Service Provider Foundation.
 ms.custom: na
 ms.prod: system-center-threshold
 ms.reviewer: na
@@ -14,7 +15,9 @@ ms.author: raynew
 manager:cfreeman
 ---
 # How to Automate a Runbook from Service Provider Foundation
-Starting with Service Provider Foundation System Center 2016 you can configure Service Management Automation to use Service Provider Foundation. For more information see the "Connect to the SMA web service" section of [Manage Web Services and Connections in Service Provider Foundation](../Manage/Manage-Web-Services-and-Connections.md). You can also invoke runbooks with the older invoke runbook scenario.  
+>Apples To: System Center 2016
+
+You can use Service Provider Foundation and Service Management Automation together to provide automated solutions for your tenants. For more information see the "Connect to the SMA web service" section of [Manage Web Services and Connections in Service Provider Foundation](../Manage/Manage-Web-Services-and-Connections.md). You can also invoke runbooks with the older invoke runbook scenario that was included with System Center 2012.  
 
 You can automate runbooks using Service Management Automation provided that you have configured the Service Management Automation to use Service Provider Foundation by using the Set\-SCSPFEventRegisration and Get\-SCSPFEventRegistation cmdlets, as shown in the following example.  
 
@@ -30,7 +33,7 @@ PS C:\> $event_backup = Get-SCSPFEventRegistration -Action "Backup"
 The remainder of this topic describes the older scenario.  
 
 ## Invoking runbooks \(not automation\)  
-You can set a runbook in System Center 2016 Orchestrator  to be run whenever a new virtual machine or new service is created by remote calls to Service Provider Foundation with the [Virtual Machine Manager Service](http://go.microsoft.com/fwlink/?LinkId=298612). You can set the runbook to be invoked by using the Windows PowerShell T:Microsoft.SystemCenter.Foundation.Cmdlet.Set\-SCSPFExtensibleEventHandler  cmdlet. Service Provider Foundation raises internal events to invoke the runbook and the runbook will continue to be invoked continuously as long as the extensible event handler is enabled.  
+You can set a runbook in System Center 2016 Orchestrator or System Center 2012 Orchestrator to be run whenever a new virtual machine or new service is created by remote calls to Service Provider Foundation with the [Virtual Machine Manager Service](http://go.microsoft.com/fwlink/?LinkId=298612). You can set the runbook to be invoked by using the Windows PowerShell T:Microsoft.SystemCenter.Foundation.Cmdlet.Set\-SCSPFExtensibleEventHandler  cmdlet. Service Provider Foundation raises internal events to invoke the runbook and the runbook will continue to be invoked continuously as long as the extensible event handler is enabled.  
 
 Service Provider Foundation will not invoke the runbook if the virtual machine or service was created by other means such as by using Windows PowerShell cmdlets or by using the console in System Center 2016 - Virtual Machine Manager (VMM).  
 
@@ -72,9 +75,7 @@ To determine what the extensible event handler is set to, call the T:Microsoft.S
     ```  
 
 ## See Also  
-[Manage Web Services and Connections in Service Provider Foundation](../Manage/Manage-Web-Services-and-Connections-in-Service-Provider-Foundation.md)  
-[Parameters for Runbooks Invoked from Service Provider Foundation](../Manage/Parameters-for-Runbooks-Invoked-from-Service-Provider-Foundation.md)  
-[Extensibility in Service Provider Foundation](../Manage/Extend-Service-Provider-Foundation.md)  
-[Administering Service Provider Foundation](../Manage/Administering-Service-Provider-Foundation.md)  
+[Manage Web Services and Connections in Service Provider Foundation](../Manage/Manage-Web-Services-and-Connections.md)  
+[Parameters for Runbooks Invoked from Service Provider Foundation](../Manage/Parameters-for-Runbooks.md)     
 [Cmdlets in System Center 2016 \- Service Provider Foundation](http://go.microsoft.com/fwlink/p/?LinkId=263677)  
 [How to Configure the Orchestrator Web Service to use HTTPS](http://technet.microsoft.com/en-us/library/hh529160.aspx)  

@@ -5,14 +5,17 @@ ms.prod: system-center-threshold
 ms.reviewer: na
 ms.suite: na
 ms.technology:
-  - orchestrator
+  - service-provider-foundation
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: a8bc784f-c9c7-4601-bf2c-4a6264db7ed1
 author:bwren
-manager:cfreemanwa
+ms.author: raynew
+manager:cfreeman
 ---
 # How to Create an SSL Certificate for Testing Service Provider Foundation
+>Apples To: System Center 2016
+
 Service Provider Foundation requires that a Secure Sockets Layer \(SSL\) server certificate be configured for its website bindings. The Service Provider Foundation website is the endpoint for the Admin service and the Virtual Machine Manager \(VMM\) service that use Representational State Transfer \(REST\) and Open Data Protocol \(OData\) technology to communicate with clients and portal applications.  
 
 > [NOTE]  

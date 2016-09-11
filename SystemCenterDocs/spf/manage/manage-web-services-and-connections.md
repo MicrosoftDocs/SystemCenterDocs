@@ -5,14 +5,17 @@ ms.prod: system-center-threshold
 ms.reviewer: na
 ms.suite: na
 ms.technology:
-  - orchestrator
+  - service-provider-foundation
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 975d9b1d-d2d5-404c-8e54-961d64ad2ab4
 author:bwren
-manager:cfreemanwa
+manager:cfreeman
+ms.author: raynew
 ---
 # Manage Web Services and Connections in Service Provider Foundation
+>Apples To: System Center 2016
+
 The Service Provider Foundation setup wizard configures web services based on the provided credentials. This topic provides information about verifying and setting credentials in Computer Management, Internet Information Services \(IIS\), and other technologies if changes are required.  
 
 Note that the example URLs in this topic use port 8090, the default port, for Service Provider Foundation web services. This port may be different if another port was specified for the Service Provider Foundation installation.  
@@ -92,5 +95,3 @@ In addition, you can use Windows PowerShell cmdlets to automate runbooks. For mo
 
 ## Service Provider Foundation database credentials  
 The credentials of the user who installs Service Provider Foundation are used for the login credentials for the dbo SQL Server security object for the Service Provider Foundation database. Use the T:Microsoft.SystemCenter.Foundation.Cmdlet.Get\-SCSPFConnectionString and T:Microsoft.SystemCenter.Foundation.Cmdlet.Set\-SCSPFConnectionString cmdlets to manage the connections to the Service Provider Foundation database.  
-
-  

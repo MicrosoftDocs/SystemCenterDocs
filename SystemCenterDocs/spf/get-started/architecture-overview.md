@@ -1,11 +1,12 @@
 ---
 title: Architecture Overview of Service Provider Foundation
+description: This article provides a broad overview of Service Provider Foundation
 ms.custom: na
 ms.prod: system-center-threshold
 ms.reviewer: na
 ms.suite: na
 ms.technology:
-  - orchestrator
+  - service-provider-foundation
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 0cce9ea6-adf3-422d-94c0-2bf15b0c1d95
@@ -18,7 +19,7 @@ ms.author: cfreeman
 
 Service providers can use Service Provider Foundation technology to offer infrastructure as a service \(IaaS\) to their clients. If a service provider has a front\-end portal for clients to interact with, Service Provider Foundation makes it possible for the clients to access the resources on their hosting provider's system without making changes to the portal.  
 
-## Overview  
+## Overview Diagram
 The following illustration provides a high\-level view of how Service Provider Foundation operates.  
 
 ![Overview of Service Provider Foundation](../media/SPFOverview.png "SPFOverview")  

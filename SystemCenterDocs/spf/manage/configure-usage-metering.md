@@ -13,6 +13,8 @@ author:bwren
 manager:cfreemanwa
 ---
 # Configure Usage Metering in Service Provider Foundation
+>Apples To: System Center 2016
+
 This topic describes how to configure Service Provider Foundation to aggregate usage statistics for queries by the Service Provider Foundation Usage web service. For more information, see the "Usage web service" section in [Usage web service](../Manage/Manage-Web-Services-and-Connections.md#SPF_Usage).  
 
 Connection settings are stored in the Service Provider Foundation database.  

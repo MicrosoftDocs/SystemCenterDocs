@@ -1,5 +1,6 @@
 ---
 title: Portals in Service Provider Foundation
+description: This article describes the portals that interact with Service Provider Foundation
 ms.custom: na
 ms.prod: system-center-threshold
 ms.reviewer: na
@@ -14,6 +15,8 @@ ms.author: raynew
 manager:cfreeman
 ---
 # Portals in Service Provider Foundation
+>Apples To: System Center 2016
+
 Service Provider Foundation provides services for multiple tenants who receive IaaS through portal applications, and uniquely identifies each tenant and isolates them from one another. Portals communicate with the Service Provider Foundation Admin and VMM services through REST APIs as described in the [Service Provider Foundation Developer's Guide](http://go.microsoft.com/fwlink/p/?LinkID=263700).  
 
 The following illustration shows how portal applications and Windows PowerShell interact with Service Provider Foundation.  

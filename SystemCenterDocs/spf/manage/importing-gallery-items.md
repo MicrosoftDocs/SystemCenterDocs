@@ -1,19 +1,23 @@
 ---
 title: Importing Gallery Items in Service Provider Foundation
+description: This topic describes how to add items to the gallery you offer to tenants through your portal if you are pulling items from a VM Cloud in Virtual Machine Manager.  
 ms.custom: na
 ms.prod: system-center-threshold
 ms.reviewer: na
 ms.suite: na
 ms.technology:
-  - orchestrator
+  - service-provider-foundation
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 4acda26b-e58f-4b48-9cce-4286743bf72c
 author:bwren
-manager:cfreemanwa
+manager:cfreeman
+ms.author: raynew
 ---
 # Importing Gallery Items in Service Provider Foundation
-This topic pertains to using the **VM Clouds** gallery inWindows Azure Pack for Windows Server . Gallery items are virtual machine roles that serve as standard and reusable artifacts that hosting service providers can use to provide offerings to their tenants. In Windows Azure Pack, you can add a gallery item to a plan that is subscribed to by tenants. Virtual machine roles represent a scalable tier of virtual machines that can be provisioned by a tenant using a single process. Examples of workloads that can be created by virtual machine roles could include a single virtual machine, an Active Directory Domain Controller, a SQL Server cluster, or Internet Information Services \(IIS\) web farm.  
+>Apples To: System Center 2016
+
+This topic pertains to using the **VM Clouds** gallery in Windows Azure Pack for Windows Server. Gallery items are virtual machine roles that serve as standard and reusable artifacts that hosting service providers can use to provide offerings to their tenants. In Windows Azure Pack, you can add a gallery item to a plan that is subscribed to by tenants. Virtual machine roles represent a scalable tier of virtual machines that can be provisioned by a tenant using a single process. Examples of workloads that can be created by virtual machine roles could include a single virtual machine, an Active Directory Domain Controller, a SQL Server cluster, or Internet Information Services \(IIS\) web farm.  
 
 For information about obtaining gallery resources, see the [Downloading and Installing Windows Azure Pack Gallery Resource](http://social.technet.microsoft.com/wiki/contents/articles/20194.downloading-and-installing-windows-azure-pack-gallery-resource.aspx).  
 

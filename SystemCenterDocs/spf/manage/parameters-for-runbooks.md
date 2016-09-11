@@ -1,5 +1,6 @@
 ---
 title: Parameters for Runbooks Invoked from Service Provider Foundation
+description: This topic provides a list of parameters you can use when invoking runbooks from Service Provider Foundation.
 ms.custom: na
 ms.prod: system-center-threshold
 ms.reviewer: na
@@ -14,6 +15,8 @@ manager:cfreeman
 ms.author: raynew
 ---
 # Parameters for Runbooks Invoked from Service Provider Foundation
+>Apples To: System Center 2016
+
 This topic describes the parameters that Service Provider Foundation automatically provides to a runbook that it invokes in System Center 2016 Orchestrator, as described in [How to Automate a Runbook from Service Provider Foundation](../Manage/How-to-Automate-a-Runbook.md). A runbook is not required to process all the parameters it receives, and will simply ignore the parameters which have no purpose in the runbook.  
 
 ## Parameters for a new virtual machine  

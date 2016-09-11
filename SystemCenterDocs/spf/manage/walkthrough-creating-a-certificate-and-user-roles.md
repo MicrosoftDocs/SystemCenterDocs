@@ -1,5 +1,6 @@
 ---
 title: Walkthrough: Creating a Certificate and User Roles for Service Provider Foundation
+description: This topic describes all the steps you need to take to create a security certificate and add it to your portal for user authentication.
 ms.custom: na
 ms.prod: system-center-threshold
 ms.reviewer: na
@@ -14,6 +15,8 @@ ms.author: raynew
 manager:cfreeman
 ---
 # Walkthrough: Creating a Certificate and User Roles for Service Provider Foundation
+>Apples To: System Center 2016
+
 This walkthrough shows how to administer important tasks for managing both certificates and user roles in Service Provider Foundation. To start, we show how to generate a self\-signed certificate if you are not already working with an issuer's signed certificate. Next, we show how to obtain the certificate's public key, and how to use that key to create the tenant in Service Provider Foundation and user roles in System Center 2016 - Virtual Machine Manager \(VMM\).  
 
 This walkthrough is organized into the following sections and procedures. The procedures are designed to be performed sequentially, although they contain the information that you need to run them individually as needed. These procedures are tasks for the hoster administrator to perform.  
