@@ -13,11 +13,9 @@ ms.technology:  virtual-machine-manager
 
 >Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
 
-Cluster rolling upgrade in a new feature in Windows Server 2016. It enables you to upgrade the operating system of cluster nodes in a scale-out file server (SOFS) cluster, from Windows Server 2012 R2 to Windows Server 2016 without stopping workloads running on the nodes. [Read more](https://technet.microsoft.com/library/dn850430.aspx) about rolling upgrade requirements and architecture.
+Cluster rolling upgrade in a new feature in Windows Server 2016. It enables you to upgrade the operating system of cluster nodes in a scale-out file server (SOFS) cluster, or Hyper-V cluster, from Windows Server 2012 R2 to Windows Server 2016 without stopping workloads running on the nodes. [Read more](https://technet.microsoft.com/library/dn850430.aspx) about rolling upgrade requirements and architecture.
 
-## Cluster rolling upgrade in VMM
-
-System Center 2016 - Virtual Machine Manager (VMM) supports using the rolling upgrade feature to upgrade Hyper-V clusters in the VMM fabric. You can upgrade an entire cluster, or specific cluster nodes. Here's what the upgrade does:
+This article describes how to perform a cluster rolling upgrade of SOFS managed in the System Center 2016 - Virtual Machine Manager (VMM) fabric. Here's what the upgrade does:
 
 - **Creates a template**: Creates a template of the node configuration by combining the appropriate physical computer profile with the node configuration settings detailed in the upgrade wizard.
 - **Migrates workloads**: Migrates workloads off the node so workload operations aren't interrupted.
@@ -31,7 +29,7 @@ System Center 2016 - Virtual Machine Manager (VMM) supports using the rolling up
 
 - The cluster must be managed by VMM.
 - The cluster must be running Windows Server 2012 R2.
-- The cluster must meet the [requirements](manage-compute-bare-metal-file-server.md#before-you-start) for bare metal deployment. The only exception is that the physical computer profile doesn't need to include network or disk configuration details. During the upgrade VMM records the node's network and disk configuration and uses that information instead of the computer profile.
+- The cluster must meet the [requirements](manage-sofs-bare-metal.md#before-you-start) for bare metal deployment. The only exception is that the physical computer profile doesn't need to include network or disk configuration details. During the upgrade VMM records the node's network and disk configuration and uses that information instead of the computer profile.
 - You can upgrade nodes that weren't originally provisioned using bare metal as long as those nodes meet bare metal requirements such as BMC. You'll need to provide this information in the upgrade wizard.
 - The VMM library needs a virtual hard disk configured with Windows Server 2016.
 
