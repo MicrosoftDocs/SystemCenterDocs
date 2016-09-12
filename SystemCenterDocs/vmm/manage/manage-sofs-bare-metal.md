@@ -62,7 +62,7 @@ Here's what you need for the deployment:
 3. **Add driver files**: Add driver files to the VMM library if you want to use custom drivers.
 4. **Create profile**: Create a profile for the physical computers.
 4. **Create the cluster**: Run the Create Clustered File Server Wizard to discover the physical computers, configure the cluster, and start the cluster deployment. The physical computers boot from a customized Windows PE image on the PXE server. The Failover Cluster and File Server roles are enable. After the cluster is created the Scale-Out File Server role is enabled. The computer is then restarted.
-5. After you've provisioned the node you can create a new cluster, or add it to an existing one.
+5. **Add nodes to SOFS cluster**: After you've provisioned the nodes you can create a new cluster with them, or add them to an existing one.
 
 
 
@@ -136,7 +136,7 @@ Run the wizard:
 
 	- **DHCP**: If your physical computer profile uses DHCP click an BMC IP address and type in a computer name. Decide whether to skip the AD check. If you do the check deployment will continue if the computer account exists. Click the entry for each BMC IP address.
 	- **Static**: If the profile uses static IP addresses for each BMC IP addre. ss type in a MAC address of the computer's network adapter that's used to communicate with VMM. Click the logical network you want to use. The default logical network is the one indicated in the profile. Click the IP subnet you want to use. The subnet list is scope to what's defined for the logical network in the associated network sites. You should select the IP subnet that corresponds to the physical location in which you're deploying the server and the network to which the adapter is connected. you can automatically assign an IP address or assign a specific address.
-8. **In** Summary confirm the settings and click **Finish**. To confirm the cluster was added click **Fabric** > **Storage** > **File Servers**.
+8. In **Summary**, confirm the settings and click **Finish**. To confirm the cluster was added, click **Fabric** > **Storage** > **File Servers**.
 
 ## Next steps
 
