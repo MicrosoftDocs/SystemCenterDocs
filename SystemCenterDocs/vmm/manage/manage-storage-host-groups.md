@@ -12,7 +12,7 @@ ms.technology:  virtual-machine-manager
 
 >Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
 
-After block storage has been discovered and classified in the System Center 2016 - Virtual Machine Manager (VMM) fabric, you can allocate it to host groups.  You can assign an entire storage pool to a host group, or a specific logical unit (LUN).
+After block storage has been discovered and classified in the System Center 2016 - Virtual Machine Manager (VMM) fabric, you can allocate it to host groups.  You can allocate an entire storage pool, or a specific logical unit (LUN).
 
 - **Allocate storage pools**: You can optionally allocate storage pools to host groups. If you do you can:
 	- Create and assign LUNs directly from Hyper-V hosts in the host group.
@@ -41,4 +41,5 @@ After block storage has been discovered and classified in the System Center 2016
 
 1.  Click **Fabric** > **Storage** > **Allocate Capacity** > **Allocate Storage Capacity** and click the host group.
 2.  Click **Allocate Logical Units**, select a unit > **Add**.
-3.  After LUNs are allocated to host groups you can assign them to Hyper-V hosts and clusters.
+
+After LUNs are allocated to host groups you can assign them to Hyper-V hosts and clusters.
