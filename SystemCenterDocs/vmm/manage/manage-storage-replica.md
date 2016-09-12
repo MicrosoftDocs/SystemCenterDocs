@@ -1,29 +1,29 @@
----
-description:  
-manager:  cfreemanwa
-ms.topic:  article
+--
+title: Manage Storage Replica in VMM
+description: This article describes how to set up Storage Replica in the VMM fabric
 author:  rayne-wiselman
+manager:  cfreemanwa
+ms.date:  2016-09-11
+ms.topic:  article
 ms.prod:  system-center-threshold
-keywords:  
-ms.date:  2016-08-23
-title:  Deploy Storage Replica in VMM
 ms.technology:  virtual-machine-manager
-ms.assetid:  c552683c-799d-420b-b73b-4bd964c8102f
 ---
 
-# Deploy Storage Replica in VMM
+# Manage Storage Replica in VMM
 
 >Applies To:
 
-Read this article to learn about using Storage Replica in VMM running on System Center 2016 Technical Preview. The article provides an overview of Storage Replica and its benefits, and describes how to set up Storage Replica using PowerShell to replicate storage in the VMM fabric.
+Read this article to learn about using Storage Replica in System Center 2016 - Virtual Machine Manager (VMM).  
 
-## Overview
+
 Storage Replica is a new feature in Windows Server 2016 Technical Preview that enables storage-agnostic, block-level, synchronous replication between clusters or servers for disaster preparedness and recovery, as well as stretching of a failover cluster across sites for high availability. Synchronous replication enables mirroring of data in physical sites with crash-consistent volumes, ensuring zero data loss at the file system level. Asynchronous replication allows site extension beyond metropolitan ranges with the possibility of data loss.
 
 [Learn more](https://aka.ms/storagereplica) and review the [FAQ](https://technet.microsoft.com/library/mt126107.aspx).
 
+The article provides an overview of Storage Replica and its benefits, and describes how to set up Storage Replica using PowerShell to replicate storage in the VMM fabric.
 
-## Storage Replica in Virtual Machine Manager
+
+## Storage Replica in VMM
 
 In System Center 2016 Technical Preview you can use Storage Replica to replicate Hyper-V cluster data or file data. Using Storage Replica in VMM provides a number a business advantages:
 
@@ -31,7 +31,7 @@ In System Center 2016 Technical Preview you can use Storage Replica to replicate
 - Synchronous replication minimizes downtime and data loss. It provides a RPO of 0 (zero data loss). RTO (data unavailability) only occurs during the time in which a primary site fails and a secondary site starts.
 - Source and destination storage hardware doesn't need to be identical.
 
-## Prerequisites
+## Before you start
 
 * VMM must be running on System Center 2016 Datacenter Edition.
 * Hyper-V must be running on Windows Server 2016 Datacenter, Server Core, or Nano.
