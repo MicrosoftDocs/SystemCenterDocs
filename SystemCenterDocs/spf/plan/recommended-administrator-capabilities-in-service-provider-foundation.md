@@ -1,19 +1,23 @@
 ---
 title: Recommended Administrator Capabilities in Service Provider Foundation
+description: This topic describes the various roles required to support Service Provider Foundation.
 ms.custom: na
 ms.prod: system-center-threshold
 ms.reviewer: na
 ms.suite: na
 ms.technology:
-  - orchestrator
+  - service-provider-foundation
 ms.tgt_pltfrm: na
 ms.date: 8-18-2016
 ms.topic: article
 ms.assetid: 1ca67a42-81f9-4df4-ba33-9b5d3fb60098
 author:bwren
-manager:cfreemanwa
+manager:cfreeman
+ms.author: raynew
 ---
 # Recommended Administrator Capabilities in Service Provider Foundation
+>Apples To: System Center 2016
+
 This topic provides guidelines for administrator capabilities and roles for administering Service Provider Foundation.  
 
 ## Roles for database administrators  
