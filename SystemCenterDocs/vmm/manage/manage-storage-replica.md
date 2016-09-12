@@ -23,7 +23,7 @@ The article provides explains how Storage Replica integrates with System Center 
 
 ## Storage Replica in VMM
 
-In System Center 2016 Technical Preview you can use Storage Replica to replicate Hyper-V cluster data or file data. Using Storage Replica in VMM provides a number a business advantages:
+In System Center 2016 Technical Preview, you can use Storage Replica to replicate Hyper-V cluster data or file data. Using Storage Replica in VMM provides a number a business advantages:
 
 - Eliminates the cost and complexity associated with synchronous replication solutions such as SAN.
 - Synchronous replication minimizes downtime and data loss. It provides a RPO of 0 (zero data loss). RTO (data unavailability) only occurs during the time in which a primary site fails and a secondary site starts.
