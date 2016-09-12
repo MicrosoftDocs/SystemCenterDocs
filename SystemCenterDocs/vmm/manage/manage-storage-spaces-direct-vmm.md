@@ -18,7 +18,7 @@ Windows Server 2016 introduces Storage Spaces Direct, which enables building hig
 - **Hyper-converged deployment**: Storage in leveraged by VMs running on the same cluster
 - **Disaggregated deployment**: Storage can be exported as a file share
 
-In System Center 2016 - Virtual Machine Manager (VMM) you can deploy Storage Spaces direct in both a hyper-converged or disaggregated topology. This article shows you have to build a  hyper-converged deployment in System Center 2016 - Virtual Machine Manager (VMM).
+In System Center 2016 - Virtual Machine Manager (VMM) you can deploy Storage Spaces direct in both a hyper-converged or disaggregated topology. 
 
 ## Hyper-converged deployment
 
@@ -106,23 +106,22 @@ You need to create a pool, virtual disks, and CSVs in the Storage Spaces Direct 
 ### Create a pool
 
  1. Click **Fabric** > **Storage** > **Arrays**, right-click the Storage Spaces Direct cluster > **Manage Pool**.
- 2. Select the physical disks in the cluster. As part of creating the pool, the physical disks that are part of the hosts in the Spaces Direct cluster are selected (see Figure 8).
+ 2. Select the physical disks in the cluster. As part of creating the pool, the physical disks that are part of the hosts in the Spaces Direct cluster are selected.
+ 
+   ![Select disks](../vmm/media/storage-spaces-disks.png)
 
-3. ![Select disks](../vmm/media/storage-spaces-disks.png)
-
-4. Complete the rest of the wizard as described in this [article](manage-sofs.md#create-storage-pools).
-5. Using Windows Powershell, the pool and the storage tier is automatically created with the "Enable-CLusterS2D autoconfig=true" option. This is notsupported in VMM Technical Preview 5.
+ 3. Complete the rest of the wizard as described in this [article](manage-sofs.md#create-storage-pools).
+ 4.  Using Windows Powershell, the pool and the storage tier is automatically created with the "Enable-CLusterS2D autoconfig=true" option. This is not supported in VMM Technical Preview 5.
 
 ### Create a CSV
 
 1. Right-click the cluster > **Properties** > **Shared Volumes**. The virtual disk is created automatically.
 
-![Storage type](../vmm/media/storage-spaces-virtual-disk.png)
+   ![Volume settings](../vmm/media/storage-spaces-volume-settings.png)
 
 2. In the Create Volume Wizard > Capacity you can specify the volume size, file system, resiliency, and storage tiering options.
 
-![Volume settings](../vmm/media/storage-spaces-volume-settings.png)
-
+    ![Storage type](../vmm/media/storage-spaces-virtual-disk.png)
 
 ## Deploy a hyper-converged topology
 
