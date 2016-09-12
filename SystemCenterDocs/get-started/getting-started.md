@@ -1,8 +1,9 @@
 ---
 description:  
-manager:  cfreemanwa
+manager:  cfreeman
 ms.topic:  article
 author:  cfreemanwa
+ms.author: cfreeman
 ms.prod:  system-center-threshold
 keywords:  
 ms.date:  2016-07-25
@@ -13,7 +14,7 @@ ms.assetid:  805406cb-4ab8-4a51-a855-d2498524f333
 
 # Getting Started
 
->Applies To: System Center 2016 Technical Preview - Operations Manager
+>Applies To: System Center 2016 Technical Preview
 
 You should read the topics in this section if you are new to Operations Manager or are looking for the new capabilities added in the System Center 2016 Technical Preview.
 
@@ -25,6 +26,3 @@ You should read the topics in this section if you are new to Operations Manager 
 [Walkthrough: Installing Operations Manager on a Single Server](../om/get-started/Walkthrough--Installing-Operations-Manager-on-a-Single-Server.md)
 
 [Installing Operations Manager by Using the Command Prompt Window](../om/deploy/Installing-Operations-Manager-by-Using-the-Command-Prompt-Window.md)
-
-
-
