@@ -1,4 +1,4 @@
---
+---
 title: Manage Storage Replica in VMM
 description: This article describes how to set up Storage Replica in the VMM fabric
 author:  rayne-wiselman
