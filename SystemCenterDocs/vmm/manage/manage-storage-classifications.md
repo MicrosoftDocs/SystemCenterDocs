@@ -3,7 +3,7 @@ title: Set up storage classifications in the VMM fabric
 description: This article describes how to set up storage classifications in the VMM fabric
 author:  rayne-wiselman
 manager:  cfreemanwa
-ms.date:  2016-08-31
+ms.date:  2016-09-11
 ms.topic:  article
 ms.prod:  system-center-threshold
 ms.technology:  virtual-machine-manager
@@ -12,9 +12,9 @@ ms.technology:  virtual-machine-manager
 
 >Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
 
-Storage classifications abstract storage devices in the System Center 2016 - Virtual Machine Manager (VMM) fabric. You group together storage devices with similar characteristics, usually by performance and availability. You can then assign classifications rather than specific storage devices to hosts and clusters. The host and cluster can then use any available storage within the assigned classification.
+Use storage classifications to abstract storage devices in the System Center 2016 - Virtual Machine Manager (VMM) fabric. You classify storage devices with similar characteristics, and assign these classifications, rather than specific storage devices, to hosts and clusters. The host and cluster can then use any available storage n the classification.
 
-For example you could create:
+Classifications are often based on storage types or performance characteristics. For example, you could create:
 
     **Name** | **Description** |
     --- | ---
@@ -25,4 +25,4 @@ For example you could create:
 To create classifications:
 
 1.  Click **Fabric** > **Storage**, right-click **Classification and Pools** > **Create Classification**.
-2.  In **New Classification** enter a name and description > **Add**.
+2.  In **New Classification**, enter a name and description > **Add**.
