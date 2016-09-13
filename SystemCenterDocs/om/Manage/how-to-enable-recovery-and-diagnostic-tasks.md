@@ -22,7 +22,7 @@ Monitors can have two kinds of tasks associated with them: diagnostic tasks that
   
 Some monitors have diagnostic or recovery tasks that are disabled by default. You can enable any of these tasks that you want the monitor to run. For example, in the following image, you see that some recovery tasks for the **Health Service Heartbeat Failure** monitor are not configured to run automatically.  
   
-![Recovery Task Disabled Example](om2016-recovery-tasks-example.png)  
+![Recovery Task Disabled Example](../media/om2016-recovery-tasks-example.png)  
   
 ## To enable a diagnostic or recovery task  
   
@@ -32,17 +32,17 @@ Some monitors have diagnostic or recovery tasks that are disabled by default. Yo
   
 3.  On the **Diagnostic and Recovery** tab, in the **Configure diagnostic tasks** or **Configure recovery tasks** section, ensure the desired task is selected and then click **Edit**.  
   
-4.  On the **Overrides** tab, click **Override**. You can choose to override this monitor for objects of a specific type or for all objects within a group. After you choose which group or object type to override, the **Override Properties** dialog box opens. For more information about applying an override, see [Using Classes and Groups for Overrides in Operations Manager](../../om/manage/Using-Classes-and-Groups-for-Overrides-in-Operations-Manager.md).  
+4.  On the **Overrides** tab, click **Override**. You can choose to override this monitor for objects of a specific type or for all objects within a group. After you choose which group or object type to override, the **Override Properties** dialog box opens. For more information about applying an override, see [Using Classes and Groups for Overrides in Operations Manager](Using-Classes-and-Groups-for-Overrides.md).  
   
 5.  In the **Override\-controlled parameters** section, click **Enabled** and set the override value to **True**.  
   
-6.  Either select a management pack from the **Select destination management pack** list or create a new unsealed management pack by clicking **New**. For more information about selecting a destination management pack, see [Creating a Management Pack for Overrides](../../om/manage/Creating-a-Management-Pack-for-Overrides.md).  
+6.  Either select a management pack from the **Select destination management pack** list or create a new unsealed management pack by clicking **New**. For more information about selecting a destination management pack, see [Creating a Management Pack for Overrides](how-to-create-a-management-pack-for-overrides.md).  
   
 7.  Click **OK**. Close the open properties windows.  
   
 ## Next steps
 
-- To understand the differences between classes and groups in Operations Manage and how workflows apply to each, review [Using Classes and Groups for Overrides in Operations Manager](Using-Classes-and-Groups-for-Overrides-in-Operations-Manager.md)  
+- To understand the differences between classes and groups in Operations Manage and how workflows apply to each, review [Using Classes and Groups for Overrides in Operations Manager](Using-Classes-and-Groups-for-Overrides.md)  
 
 - To learn how to create a custom writeable management pack to store your overrides, see [How to Create a Management Pack for Overrides](how-to-create-a-management-pack-for-overrides.md)
 

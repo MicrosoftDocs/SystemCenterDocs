@@ -48,7 +48,7 @@ For more information about using overrides, see [Tuning Monitoring by Using Targ
   
 ## Deploy  
 
-When you are satisfied with the performance and results of the management pack in the pre\-production environment, you can deploy the management pack and its customizations in the production environment. The management pack in which you saved the customizations must be exported so that you can import it to other computers. For more information, see [How to Export an Operations Manager Management Pack](How-to-Export-an-Operations-Manager-Management-Pack.md). The management pack that contains the overrides that you set is dependent on the original management pack and can be imported only to management groups that have the original management pack installed.  
+When you are satisfied with the performance and results of the management pack in the pre\-production environment, you can deploy the management pack and its customizations in the production environment. The management pack in which you saved the customizations must be exported so that you can import it to other computers. For more information, see [How to Import, Export, and Remove Management Packs](how-to-import-remove-export-management-packs.md). The management pack that contains the overrides that you set is dependent on the original management pack and can be imported only to management groups that have the original management pack installed.  
   
 ## Maintain  
 
@@ -88,8 +88,8 @@ The following are some best practices to follow when managing Operations Manager
   
 ## Next steps
 
-- To learn how to create a custom writeable management pack to store your overrides, see [How to Create a Management Pack for Overrides](How-to-Create-a-Management-Pack-for-Overrides.md)  
+- To learn how to create a custom writeable management pack to store your overrides, see [How to Create a Management Pack for Overrides](How-to-Create-a-Management-Pack-for-Overrides.md).  
 
-- To understand what an Operations Manager management pack is and how it helps you proactively monitor your services and applications, see [What Is in an Operations Manager Management Pack?](What-Is-in-an-Operations-Manager-Management-Pack.md)  
+- To understand what an Operations Manager management pack is and how it helps you proactively monitor your services and applications, see [What is in an Operations Manager Management Pack](What-Is-in-an-Operations-Manager-Management-Pack.md).  
  
-- See [How to Import, Export, and Remove an Operations Manager Management Pack](how-to-administer-management-packs.md) to perform common administrative tasks with management packs in your management group.
+- See [How to Import, Export, and Remove an Operations Manager Management Pack](how-to-import-remove-export-management-packs.md) to perform common administrative tasks with management packs in your management group.
