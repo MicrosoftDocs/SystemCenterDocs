@@ -79,9 +79,8 @@ Create a template from an existing VM.
 1. Create a logical unit in the VMM storage fabric, from the managed storage pool you want to use for rapid provisioning.
 2. Format the logical unit, and mount it to the folder path you created.
 3. Assign the logical unit to the library server. If the library server is a managed Hyper-V host, you can create and assign the logical unit from the library server. You can also format the disk with NTFS and mount the logical unit to the folder path in the library share at the same time.
-
-        - When you create the logical unit, select the option **Mount in the following empty NTFS folder** > **Browse**, and then click the folder that you created.
-        - Do not assign a drive letter. Also, do not ever create multiple mount points to the folder.
+    - When you create the logical unit, select the option **Mount in the following empty NTFS folder** > **Browse**, and then click the folder that you created.
+    - Do not assign a drive letter. Also, do not ever create multiple mount points to the folder.
 
 4. If the library server isn't a managed Hyper-V host, use your array vendor’s management tools to create the logical unit, and to unmask the logical unit to the library server. Then do the following:
     - Don't assign a drive letter.
