@@ -6,12 +6,12 @@ ms.prod: system-center-threshold
 ms.reviewer: na
 ms.suite: na
 ms.technology:
-  - orchestrator
+  - service-provider-foundation
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 6c3c412d-34be-4311-8d8a-1f74f2bfba8f
-author:bwren
-manager:cfreeman
+author: bwren
+manager: cfreeman
 ms.author: raynew
 ---
 # Parameters for Runbooks Invoked from Service Provider Foundation

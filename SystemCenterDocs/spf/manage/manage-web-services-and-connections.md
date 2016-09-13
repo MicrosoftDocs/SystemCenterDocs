@@ -9,8 +9,8 @@ ms.technology:
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 975d9b1d-d2d5-404c-8e54-961d64ad2ab4
-author:bwren
-manager:cfreeman
+author: bwren
+manager: cfreeman
 ms.author: raynew
 ---
 # Manage Web Services and Connections in Service Provider Foundation

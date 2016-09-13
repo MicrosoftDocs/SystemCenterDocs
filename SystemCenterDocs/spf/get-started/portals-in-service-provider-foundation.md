@@ -6,13 +6,13 @@ ms.prod: system-center-threshold
 ms.reviewer: na
 ms.suite: na
 ms.technology:
-  - orchestrator
+  - service-provider-foundation
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 6d69f4df-9b24-4214-9714-2c838c5cd5f8
-author:bwren
+author: bwren
 ms.author: raynew
-manager:cfreeman
+manager: cfreeman
 ---
 # Portals in Service Provider Foundation
 >Apples To: System Center 2016
@@ -21,7 +21,7 @@ Service Provider Foundation provides services for multiple tenants who receive I
 
 The following illustration shows how portal applications and Windows PowerShell interact with Service Provider Foundation.  
 
-![Shows portals to Service Provider Foundation](../media/Orch2016_SPF_Portals.png "Orch2016_SPF_Portals")  
+![Shows portals to Service Provider Foundation](../media/orch2016_spf_portals.png)  
 
 ## Portal topics  
 

@@ -10,10 +10,11 @@ ms.technology:
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 4acda26b-e58f-4b48-9cce-4286743bf72c
-author:bwren
-manager:cfreeman
+author: bwren
+manager: cfreeman
 ms.author: raynew
 ---
+
 # Importing Gallery Items in Service Provider Foundation
 >Apples To: System Center 2016
 
