@@ -21,7 +21,7 @@ Service Provider Foundation provides services for multiple tenants who receive I
 
 The following illustration shows how portal applications and Windows PowerShell interact with Service Provider Foundation.  
 
-![Shows portals to Service Provider Foundation](../media/Orch2016_SPF_Portals.png "Orch2016_SPF_Portals")  
+![Shows portals to Service Provider Foundation](../media/orch2016_spf_portals.png)  
 
 ## Portal topics  
 
