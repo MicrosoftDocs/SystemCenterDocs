@@ -11,6 +11,8 @@ ms.topic: article
 
 # How to Set Credentials for Accessing UNIX and Linux Computers
 
+>Applies To: System Center 2016 - Operations Manager
+
 This topic contains procedures for how to set credentials in wizards for the following tasks, as set by wizards in System Center 2016 - Operations Manager:  
   
 -  Credentials for Installing Agents  
@@ -24,7 +26,7 @@ These wizards define credentials to be authenticated on the UNIX or Linux comput
 
 The following procedure begins in **Computer and Device Management Wizard**, on the **Discovery Criteria** page, when you click the **Set Credentials** button. For more information, see [Install Agent on UNIX and Linux Using the Discovery Wizard](install-agent-on-unix-and-linux-using-the-discovery-wizard.md).  
   
-#### To set a user \(unprivileged\) account for discovery of an installed agent with a signed certificate.  
+### To set a user \(unprivileged\) account for discovery of an installed agent with a signed certificate.  
   
 1.  On the **Credential Settings**page, click the **Default Credentials** tab, and then click the **Password** option.  
   
@@ -38,7 +40,7 @@ The following procedure begins in **Computer and Device Management Wizard**, on 
 
 The following procedures begin in the **Computer and Device Management Wizard**, on the **Discovery Criteria** page, when you click the **Set Credentials** button.  
   
-#### To set a privileged credential by using an SSH key  
+### To set a privileged credential by using an SSH key  
   
 1.  On the **Credential Settings**page, click the **Default Credentials** tab, and then click the **SSH key** option.  
   
@@ -52,7 +54,7 @@ The following procedures begin in the **Computer and Device Management Wizard**,
   
 6.  Click **OK** to return to the **Discovery Criteria** page and continue with the wizard.  
   
-#### To set a unprivileged credential with elevation by using an SSH key  
+### To set a unprivileged credential with elevation by using an SSH key  
   
 1.  On the **Credential Settings**page, click the **Default Credentials** tab, and then click the **SSH key** option.  
   
@@ -70,7 +72,7 @@ The following procedures begin in the **Computer and Device Management Wizard**,
   
 6.  Click **OK** to return to the **Discovery Criteria** page and continue with the wizard.  
   
-#### To set a privileged credential by using a password  
+### To set a privileged credential by using a password  
   
 1.  On the **Credential Settings** page, click the **Default Credentials** tab, and then click the **Password** option.  
   
@@ -82,7 +84,7 @@ The following procedures begin in the **Computer and Device Management Wizard**,
   
 4.  Click **OK** to return to the **Discovery Criteria** page and continue with the wizard.  
   
-#### To set an unprivileged credential with elevation by using a password  
+### To set an unprivileged credential with elevation by using a password  
   
 1.  On the **Credential Settings** page, click the **Default Credentials** tab, and then click the **Password** option.  
   
@@ -102,7 +104,7 @@ The following procedures begin in the **Computer and Device Management Wizard**,
 
 The following procedures begin in the **Create UNIX\/Linux Run As Account Wizard** when you select the type for a **Run As Account** \(**Monitoring Account** or **Agent Maintenance Account**\), a name and password and provided a description. For more information, see [How to Configure Run As Accounts and Profiles for UNIX and Linux Access](how-to-configure-run-as-accounts-and-profiles-for-unix-and-linux-access.md).  
   
-#### To set a privileged credential for a monitoring account  
+### To set a privileged credential for a monitoring account  
   
 1.  On the **Account Credentials** page, type a user name, a password, and the password confirmation.  
   
@@ -110,7 +112,7 @@ The following procedures begin in the **Create UNIX\/Linux Run As Account Wizard
   
 3.  Click **Next** to continue with the wizard.  
   
-#### To set an unprivileged credential with elevation for a monitoring account  
+### To set an unprivileged credential with elevation for a monitoring account  
   
 1.  On the **Account Credentials** page, type a user name, a password, and the password confirmation.  
   
@@ -118,7 +120,7 @@ The following procedures begin in the **Create UNIX\/Linux Run As Account Wizard
   
 3.  Click **Next** to continue with the wizard.  
   
-#### To set a privileged credential by using an SSH key for an agent maintenance account  
+### To set a privileged credential by using an SSH key for an agent maintenance account  
   
 1.  On the **Account Credentials** page, click the **SSH key** option.  
   
@@ -130,7 +132,7 @@ The following procedures begin in the **Create UNIX\/Linux Run As Account Wizard
   
 5.  Click **Next** to continue with the wizard.  
   
-#### To set an unprivileged credential by using an SSH key with elevation for an agent maintenance account  
+### To set an unprivileged credential by using an SSH key with elevation for an agent maintenance account  
   
 1.  On the **Account Credentials** page, click the **SSH key** option.  
   
@@ -146,7 +148,7 @@ The following procedures begin in the **Create UNIX\/Linux Run As Account Wizard
   
 6.  Click **Next** to continue with the wizard.  
   
-#### To set a privileged credential by using a password for an agent maintenance account  
+### To set a privileged credential by using a password for an agent maintenance account  
   
 1.  On the **Account Credentials** page, click the **Password** option.  
   
@@ -156,7 +158,7 @@ The following procedures begin in the **Create UNIX\/Linux Run As Account Wizard
   
 4.  Click **Next** to continue with the wizard.  
   
-#### To set a privileged credential by using a password with elevation for an agent maintenance account  
+### To set a privileged credential by using a password with elevation for an agent maintenance account  
   
 1.  On the **Account Credentials** page, click the **Password** option.  
   
@@ -174,7 +176,7 @@ The following procedures begin in the **Create UNIX\/Linux Run As Account Wizard
 
 The following procedures begin in the **UNIX\/Linux Agent Upgrade Wizard** on the **Credentials** page, when you select **Provide Upgrade Credentials**. For more information, see [Upgrading and Uninstalling Agents on UNIX and Linux Computers](upgrading-and-uninstalling-agents-on-unix-and-linux-computers.md).  
   
-#### To set a privileged credential by using an SSH key  
+### To set a privileged credential by using an SSH key  
   
 1.  On the **Credential Settings** page, click the **SSH key** option.  
   
@@ -188,7 +190,7 @@ The following procedures begin in the **UNIX\/Linux Agent Upgrade Wizard** on th
   
 6.  Click **OK** to return to the **Credentials** page and continue with the wizard.  
   
-#### To set a unprivileged credential with elevation by using an SSH key  
+### To set a unprivileged credential with elevation by using an SSH key  
   
 1.  On the **Credential Settings** page, click the **SSH key** option.  
   
@@ -206,7 +208,7 @@ The following procedures begin in the **UNIX\/Linux Agent Upgrade Wizard** on th
   
 6.  Click **OK** to return to the **Credentials** page and continue with the wizard.  
   
-#### To set a privileged credential by using a password  
+### To set a privileged credential by using a password  
   
 1.  On the **Credential Settings** page, click the **Password** option.  
   
@@ -218,7 +220,7 @@ The following procedures begin in the **UNIX\/Linux Agent Upgrade Wizard** on th
   
 4.  Click **OK** to return to the **Credentials** page and continue with the wizard.  
   
-#### To set an unprivileged credential with elevation by using a password  
+### To set an unprivileged credential with elevation by using a password  
   
 1.  On the **Credential Settings** page, click the **Password** option.  
   
@@ -238,7 +240,7 @@ The following procedures begin in the **UNIX\/Linux Agent Upgrade Wizard** on th
 
 The following procedures begin in the  **UNIX\/Linux Agent Uninstall Wizard**, on the **Credentials** page, when you select **Provide Uninstall Credentials**. For more information, see, [Upgrading and Uninstalling Agents on UNIX and Linux Computers](upgrading-and-uninstalling-agents-on-unix-and-linux-computers.md).  
   
-#### To set a privileged credential by using an SSH key  
+### To set a privileged credential by using an SSH key  
   
 1.  On the **Credential Settings** page, click the **SSH key** option.  
   
@@ -250,7 +252,7 @@ The following procedures begin in the  **UNIX\/Linux Agent Uninstall Wizard**, o
   
 5.  Click **OK** to return to the **Credentials** page and continue with the wizard.  
   
-#### To set a unprivileged credential with elevation by using an SSH key  
+### To set a unprivileged credential with elevation by using an SSH key  
   
 1.  On the **Credential Settings** page, click the **SSH key** option.  
   
@@ -266,7 +268,7 @@ The following procedures begin in the  **UNIX\/Linux Agent Uninstall Wizard**, o
   
 6.  Click **OK** to return to the **Credentials** page and continue with the wizard.  
   
-#### To set a privileged credential by using a password  
+### To set a privileged credential by using a password  
   
 1.  On the **Credential Settings** page, click the **Password** option.  
   
@@ -278,7 +280,7 @@ The following procedures begin in the  **UNIX\/Linux Agent Uninstall Wizard**, o
   
 4.  Click **OK** to return to the **Credentials** page and continue with the wizard.  
   
-#### To set an unprivileged credential with elevation by using a password  
+### To set an unprivileged credential with elevation by using a password  
   
 1.  On the **Credential Settings** page, click the **Password** option.  
   

@@ -1,23 +1,19 @@
 ---
-description:  
-manager:  cfreemanwa
-ms.topic:  article
-author:  mgoedtel
-ms.prod:  system-center-threshold
-keywords:  
-ms.date:  2016-06-27
-title:  Configuring Agents
-ms.technology:  operations-manager
-ms.assetid:  bb877f14-01d6-4f3c-80b6-4c3468ee1dba
+title: Configuring Agents
+author: mgoedtel
+manager: cfreemanwa
+ms.date: 2016-08-29
+ms.custom: na
+ms.prod: system-center-threshold
+ms.technology: operations-manager
+ms.topic: article
 ---
-
-
 
 # Configuring Agents
 
->Applies To: System Center 2016 Technical Preview - Operations Manager
+>Applies To: System Center 2016 - Operations Manager
 
-In System Center Operations Manager, when you install an agent on a computer, an Operations Manager Agent application is added to Control Panel. You can use the application to change the account that the agent will use when performing actions requested by the management server, to remove a management group from an agent configuration, and to configure the Active Directory integration setting for the agent. To perform these tasks, you must have local Administrator permissions on the computer.
+In System Center 2016 - Operations Manager, when you install an agent on a computer, an Operations Manager Agent application is added to Control Panel. You can use the application to change the account that the agent will use when performing actions requested by the management server, to remove a management group from an agent configuration, and to configure the Active Directory integration setting for the agent. To perform these tasks, you must have local Administrator permissions on the computer.
 
 > [!NOTE]
 > If you want to automate the process of adding or removing management groups from an agent, you can use the Agent API that allows you to write scripts that can automate the agent configuration process. For more information, see [Using the Operations Manager Agent Configuration Library](http://go.microsoft.com/fwlink/p/?LinkID=229163).
@@ -25,15 +21,8 @@ In System Center Operations Manager, when you install an agent on a computer, an
 > [!NOTE]
 > When you save changes in the Operations Manager Agent application, the Health service will be stopped and restarted.
 
--   [Configuring an Agent to Report to Multiple Management Groups](Configuring-Agents.md#bkmk_configuringanagenttoreporttomultiplemanagementgorups)
+## Configuring an agent to report to multiple management groups
 
--   [Changing the Account Configuration for an Agent](Configuring-Agents.md#bkmk_ChangingtheAccountConfigurationforanAgent)
-
--   [Removing a Management Group from an Agent](Configuring-Agents.md#bkmk_RemovingaManagementGroupfromanAgent)
-
--   [Changing the Active Directory Integration Setting for an Agent](Configuring-Agents.md#bkmk_ChangingtheActiveDirectoryIntegrationSettingforanAgent)
-
-## <a name="bkmk_configuringanagenttoreporttomultiplemanagementgorups"></a>Configuring an Agent to Report to Multiple Management Groups
 Use the following procedure to make an Operations Manager agent a member of multiple management groups, also referred to as *multihoming*. For example, an agent can be configured to report Active Directory data to the Networking Management Group and Exchange data to the Messaging Management Group. An agent can be a member of up to four management groups.
 
 You do not need to use the same deployment method for all of the management groups.
@@ -41,7 +30,7 @@ You do not need to use the same deployment method for all of the management grou
 > [!NOTE]
 > It might take one day or longer for the discovered instances of the agent to be made part of the new management group. They will be added after the next discovery interval.
 
-#### To make an Operations Manager agent a member of multiple management groups
+### To make an Operations Manager agent a member of multiple management groups
 
 -   Do one of the following:
 
@@ -49,12 +38,13 @@ You do not need to use the same deployment method for all of the management grou
 
     -   Run the Discovery Wizard from the Operations Manager Operations console that is connected to the new management group, select the desired computers, and deploy the agent to them. For more information, see [Install Agent on Windows Using the Discovery Wizard](Install-Agent-on-Windows-Using-the-Discovery-Wizard.md). (The menu item in the Operations console named Discovery Wizard opens the Computer and Device Management Wizard.)
 
-    -   Run the MOMAgent.msi on the desired computers, and modify the installation by adding a new management group. For more information, see [Install Agent Using the MOMAgent.msi Setup Wizard](Install-Agent-Using-the-MOMAgent.msi-Setup-Wizard.md).
+    -   Run the MOMAgent.msi Windows Installer package on the desired computers, and modify the installation by adding a new management group. For more information, see [Install Windows Agent Manually Using MOMAgent.msi](install-windows-agent-manually-using-momagent.md).
 
-## <a name="bkmk_ChangingtheAccountConfigurationforanAgent"></a>Changing the Account Configuration for an Agent
+## Changing the account configuration for an agent
+
 You can use the following procedure to change the account that the agent will use when performing actions requested by the management server.
 
-#### To change the account configuration for an agent
+### To change the account configuration for an agent
 
 1.  On the agent-managed computer, in Control Panel, double-click Operations Manager Agent. (In the category view of Control Panel in Windows Server 2008, Operations Manager Agent is in the **System and Security** category.)
 
@@ -62,10 +52,11 @@ You can use the following procedure to change the account that the agent will us
 
 3.  In the **Agent Action Account** section, edit the account information and then click **OK**.
 
-## <a name="bkmk_RemovingaManagementGroupfromanAgent"></a>Removing a Management Group from an Agent
+## Removing a management group from an agent
+
 You can use the following procedure to remove a management group from the agent configuration.
 
-#### To remove a management group from an agent
+### To remove a management group from an agent
 
 1.  On the agent-managed computer, in Control Panel, double-click Operations Manager Agent. (In the category view of Control Panel in Windows Server 2008, Operations Manager Agent is in the **System and Security** category.)
 
@@ -76,10 +67,11 @@ You can use the following procedure to remove a management group from the agent 
     > [!NOTE]
     > You can remove all management groups while leaving the agent installed. This is useful in situations such as when you want to prepare a computer for imaging and want an image with the agent installed but without assignment to a specific management group.
 
-## <a name="bkmk_ChangingtheActiveDirectoryIntegrationSettingforanAgent"></a>Changing the Active Directory Integration Setting for an Agent
+## Changing the Active Directory integration setting for an agent
+
 You can use the following procedure to change the Active Directory integration setting for an agent.
 
-#### To change the Active Directory integration setting for an agent
+### To change the Active Directory integration setting for an agent
 
 1.  On the agent-managed computer, in Control Panel, double-click Operations Manager Agent. (In the category view of Control Panel in Windows Server 2008, Operations Manager Agent is in the **System and Security** category.)
 
@@ -87,20 +79,10 @@ You can use the following procedure to change the Active Directory integration s
 
 3.  Click **OK**.
 
-## See Also
-[Operations Manager Agent Installation Methods](Operations-Manager-Agent-Installation-Methods.md)
-[Install Agent on Windows Using the Discovery Wizard](Install-Agent-on-Windows-Using-the-Discovery-Wizard.md)
-[Install Agent on UNIX and Linux Using the Discovery Wizard](Install-Agent-on-UNIX-and-Linux-Using-the-Discovery-Wizard.md)
-[Install Agent Using the MOMAgent.msi Setup Wizard](Install-Agent-Using-the-MOMAgent.msi-Setup-Wizard.md)
-[Install Agent and Certificate on UNIX and Linux Computers Using the Command Line](Install-Agent-and-Certificate-on-UNIX-and-Linux-Computers-Using-the-Command-Line.md)
-[Managing Certificates for UNIX and Linux Computers](Managing-Certificates-for-UNIX-and-Linux-Computers.md)
-[Process Manual Agent Installations](Process-Manual-Agent-Installations.md)
-[Applying Overrides to Object Discoveries](Applying-Overrides-to-Object-Discoveries.md)
-[Install Agent Using the Command Line](Install-Agent-Using-the-Command-Line.md)
-[Examples of Using MOMAgent Command to Manage Agents](Examples-of-Using-MOMAgent-Command-to-Manage-Agents.md)
-[Upgrading and Uninstalling Agents on UNIX and Linux Computers](Upgrading-and-Uninstalling-Agents-on-UNIX-and-Linux-Computers.md)
-[Manually Uninstalling Agents from UNIX and Linux Computers](Manually-Uninstalling-Agents-from-UNIX-and-Linux-Computers.md)
-[Uninstall Agent from Windows-based Computers](Uninstall-Agent-from-Windows-based-Computers.md)
+## Next steps
 
+- To deploy the Windows agent from the Operations console using the Discovery Wizard, review [Install Agent on Windows Using the Discovery Wizard](Install-Agent-on-Windows-Using-the-Discovery-Wizard.md)
+- If you would like to manually install the Windows agent from the command line or automate the deployment using a script or other automation solution, review [Install Windows Agent Manually Using MOMAgent.msi](install-windows-agent-manually-using-momagent.md)
+- Review [Uninstall Agent from Windows-based Computers](Uninstall-Agent-from-Windows-based-Computers.md) to understand what options and steps need to be performed to properly uninstall the agent from your Windows computers. 
 
 
