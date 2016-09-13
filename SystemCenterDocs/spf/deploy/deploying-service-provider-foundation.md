@@ -5,13 +5,13 @@ ms.prod: system-center-threshold
 ms.reviewer: na
 ms.suite: na
 ms.technology:
-  - orchestrator
+  - service-provider-foundation
 ms.tgt_pltfrm: na
 ms.date: 8-18-2016
 ms.topic: article
 ms.assetid: 7c2b9a00-8522-4f67-9853-2a4639442b0d
-author:bwren
-manager:cfreemanwa
+author: bwren
+manager: cfreeman
 ---
 # Deploying Service Provider Foundation (SPF)
 Deploying SPF is a multi-step process. The first step is to plan for the deployment by reading and following the guidance provided in the following topic:

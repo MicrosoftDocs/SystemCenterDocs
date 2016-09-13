@@ -6,13 +6,13 @@ ms.prod: system-center-threshold
 ms.reviewer: na
 ms.suite: na
 ms.technology:
-  - orchestrator
+  - service-provider-foundation
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 1b47867e-a3b3-47dc-89b1-5ded85242d16
-author:bwren
+author: bwren
 ms.author: raynew
-manager:cfreeman
+manager: cfreeman
 ---
 # How to Automate a Runbook from Service Provider Foundation
 >Apples To: System Center 2016

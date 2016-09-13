@@ -9,9 +9,9 @@ ms.technology:
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: a8bc784f-c9c7-4601-bf2c-4a6264db7ed1
-author:bwren
+author: bwren
 ms.author: raynew
-manager:cfreeman
+manager: cfreeman
 ---
 # How to Create an SSL Certificate for Testing Service Provider Foundation
 >Apples To: System Center 2016

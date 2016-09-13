@@ -5,13 +5,13 @@ ms.prod: system-center-threshold
 ms.reviewer: na
 ms.suite: na
 ms.technology:
-  - orchestrator
+  - service-provider-foundation
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 95bdbd33-82f5-4474-8472-f5b9dd9524ea
-author:bwren
+author: bwren
 ms.author: raynew
-manager:cfreeman
+manager: cfreeman
 ---
 # How to Configure the System Center Resource Provider for Windows Azure Pack
 

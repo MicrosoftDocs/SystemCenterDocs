@@ -5,12 +5,13 @@ ms.prod: system-center-threshold
 ms.reviewer: na
 ms.suite: na
 ms.technology:
-  - orchestrator
+  - service-provider-foundation
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 4c766289-4f3c-4990-be7e-4181f99438ee
-author:bwren
-manager:cfreemanwa
+author: bwren
+ms.author: raynew
+manager: cfreeman
 ---
 # Configuring Portals for Service Provider Foundation
 This topic describes how to configure Service Provider Foundation with the following portal applications:  

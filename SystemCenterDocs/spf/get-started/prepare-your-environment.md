@@ -6,13 +6,13 @@ ms.prod: system-center-threshold
 ms.reviewer: na
 ms.suite: na
 ms.technology:
-  - orchestrator
+  - service-provider-foundation
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 7329a502-7fd0-4f4f-bebe-cc558589c086
-author:bwren
+author: bwren
 ms.author: raynew
-manager:cfreeman
+manager: cfreeman
 ---
 # Prepare Your Environment for Service Provider Foundation
 >Apples To: System Center 2016

@@ -5,12 +5,12 @@ ms.prod: system-center-threshold
 ms.reviewer: na
 ms.suite: na
 ms.technology:
-  - orchestrator
+  - service-provider-foundation
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 64dc6b07-c226-4104-b18d-11ef2f3d4e12
-author:bwren
-manager:cfreemanwa
+author: bwren
+manager: cfreeman
 ---
 # Configure Usage Metering in Service Provider Foundation
 >Apples To: System Center 2016

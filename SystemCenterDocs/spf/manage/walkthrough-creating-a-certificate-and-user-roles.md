@@ -6,13 +6,13 @@ ms.prod: system-center-threshold
 ms.reviewer: na
 ms.suite: na
 ms.technology:
-  - orchestrator
+  - service-provider-foundation
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 1b546c86-2458-4449-87ee-e48b6be4228a
-author:bwren
+author: bwren
 ms.author: raynew
-manager:cfreeman
+manager: cfreeman
 ---
 # Walkthrough: Creating a Certificate and User Roles for Service Provider Foundation
 >Apples To: System Center 2016
