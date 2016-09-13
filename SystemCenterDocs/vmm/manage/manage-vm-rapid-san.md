@@ -43,7 +43,7 @@ When VMM deploys a virtual machine by using rapid provisioning through SAN copy,
 - You should get specific configuration information from the storage vendor, but configuration typically requires:
     - The Multipath I/O (MPIO) feature must be added on each host that will access the Fibre Channel or iSCSI storage array. You can add the MPIO feature through Server Manager.
         - If the MPIO feature is already enabled before you add a host to VMM management, VMM will automatically enable MPIO for supported storage arrays by using the Microsoft provided Device Specific Module (DSM). If you already installed vendor-specific DSMs for supported storage arrays, and then add the host to VMM management, the vendor-specific MPIO settings will be used to communicate with those arrays.
-        - If you add a host to VMM before you add the MPIO feature, you must manually configure MPIO to add the discovered device hardware IDs. Or, you can install vendor-specific DSMs.
+        - If you add a host to VMM before you add the MPIO feature, you must manually configure MPIO to add the discovered device hardware IDs. Alternatively you can install vendor-specific DSMs.
         - If you are using a Fibre Channel storage area network (SAN), each host that will access the storage array must have a host bus adapter (HBA) installed. Additionally, ensure that the hosts are zoned accordingly so that they can access the storage array.
         - If you use an iSCSI SAN, ensure that iSCSI portals have been added and that the iSCSI initiator is logged into the array.  Additionally, ensure that the Microsoft iSCSI Initiator Service on each host is started and set to Automatic. For information about how to create an iSCSI session on a host through VMM, see How to Configure Storage on a Hyper-V Host in VMM.
 
@@ -93,8 +93,8 @@ Create a template from an existing VM.
 
 ## Create a SAN-copy capable template
 
-1. Click **Library ** > **Create** > **Create VM Template**.
-2. In **Create VM Template Wizard** > **Select Source** click **From an existing virtual machine that is deployed on a host** > **Browse**. Select the VM on the logical unit. Click **Yes** on the warning message.
+1. Click **Library** > **Create** > **Create VM Template**.
+2. In **Create VM Template Wizard** > **Select Source**, click **From an existing virtual machine that is deployed on a host** > **Browse**. Select the VM on the logical unit. Click **Yes** on the warning message.
 3. In **Identity** type in a template name and description.
 4. In **Configure Hardware** click **Next**. The classification that appears matches what you assigned to the storage pool from which you created the logical unit.
 5. In **Configure Operating System**, click **Next**.
