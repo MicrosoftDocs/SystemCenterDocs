@@ -1,6 +1,6 @@
 ---
-title: Configure VM performance settings in the VMM compute fabric
-description: This article describes how to configure settings for VMs in the VMM fabric
+title: Configure virtual machine performance settings in the VMM compute fabric
+description: This article describes how to configure settings that affect performance and high availability for VMs in the VMM fabric
 author:  rayne-wiselman
 manager:  cfreemanwa
 ms.date:  2016-09-13
@@ -10,7 +10,7 @@ ms.technology:  virtual-machine-manager
 ---
 
 
-# Configure VM performance settings in the VMM compute fabric
+# Configure virtual machine performance settings in the VMM compute fabric
 
 >Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
 
@@ -23,9 +23,9 @@ Settings include availability options, resource throttling, and virtual NUMA.
 
 You can configure a number of setting that help keep virtual machines  in a cluster available
 
-**Virtual machine priority**: You can configure priority settings for VMs deployed in a host cluster. Based on VM priority, the host cluster starts or places high-priority virtual machines before medium-priority or low-priority virtual machines. This ensures that the high-priority virtual machines are allocated memory and other resources first, for better performance. Also, after a node failure, if the high-priority virtual machines do not have the necessary memory and other resources to start, the lower priority virtual machines will be taken offline to free up resources for the high-priority virtual machines. Virtual machines that are preempted are restarted later in priority order.
-**Preferred and possible owners of virtual machines**: These settings influence the placement of virtual machines on the nodes of the host cluster. By default, there are no preferred owners (there is no preference), and the possible owners include all server nodes on the cluster.
-**Availability sets**: When you place multiple virtual machines in an availability set, VMM will attempt to keep those virtual machines on separate hosts and avoid placing them together on the same host whenever possible. This helps to improve continuity of service.
+- **Virtual machine priority**: You can configure priority settings for VMs deployed in a host cluster. Based on VM priority, the host cluster starts or places high-priority virtual machines before medium-priority or low-priority virtual machines. This ensures that the high-priority virtual machines are allocated memory and other resources first, for better performance. Also, after a node failure, if the high-priority virtual machines do not have the necessary memory and other resources to start, the lower priority virtual machines will be taken offline to free up resources for the high-priority virtual machines. Virtual machines that are preempted are restarted later in priority order.
+- **Preferred and possible owners of virtual machines**: These settings influence the placement of virtual machines on the nodes of the host cluster. By default, there are no preferred owners (there is no preference), and the possible owners include all server nodes on the cluster.
+- **Availability sets**: When you place multiple virtual machines in an availability set, VMM will attempt to keep those virtual machines on separate hosts and avoid placing them together on the same host whenever possible. This helps to improve continuity of service.
 
 ### Configure priority
 
