@@ -15,18 +15,18 @@ ms.technology:  virtual-machine-manager
 >Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
 
 
-This article provides an overview of managing virtual machines in the System Center 2016 - Virtual Machine Manager (VMM) compute fabric, and provides links to articles that describe different ways to provision and manage virtual machines.
+This article provides an overview of managing virtual machines in the System Center 2016 - Virtual Machine Manager (VMM) compute fabric. It provides information about features offered during provisioning, and includes links to articles that describe different ways to provision and manage virtual machines.
 
 ## Provision VMs
 
 VMs can be provisioned using a number of methods:
 
-- **Create a VMs from a blank virtual hard disk**: You create a VM and install an operating system from an .iso image, removable media, or from a network boot with a PXE server.
-- **Create a VM from an existing virtual hard disk**: You create a VM from a virtual hard disk in the VMM library. We recommend a VHD that's been generalized with Sysprep.
-- **Clone a VM from an existing VM**: Clone an existing VM in the VMM library to create a new one. We recommend you clone a VM that's been generalized with Sysprep.
-- **Create a VM from a template**: Create VMs with consistent settings configured in a VM template. VM templates are XML objects stored in the VMM library. They can be used to control and restrict VM settings available to self-service users. Template settings include the guest operating system profile, a hardware profile, and one or more VHDs that can be used to create a new VM.
+- [Create VMs from a blank virtual hard disk](manage-vm-vhd-blank.md): You create a VM and install an operating system from an .iso image, removable media, or from a network boot with a PXE server.
+- [Create a VM from an existing virtual hard disk](manage-vm-vhd-existing.md): You create a VM from a virtual hard disk in the VMM library. We recommend a VHD that's been generalized with Sysprep.
+- [Clone a VM from an existing VM](manage-vm-clone.md): Clone an existing VM in the VMM library to create a new one. We recommend you clone a VM that's been generalized with Sysprep.
+- [Create a VM from a template](manage-vm-template.md): Create VMs with consistent settings configured in a VM template. VM templates are XML objects stored in the VMM library. They can be used to control and restrict VM settings available to self-service users. Template settings include the guest operating system profile, a hardware profile, and one or more VHDs that can be used to create a new VM.
 - **Create a VM in a service deployment**: In VMM you can create services that are logical grouping of VMs that are configured and deployed as s single entity. A single tier service includes a single VM. Multi-tier services have multiple VMs.
-- **Rapidly provision a VM using storage area network (SAN) copy**: Deploy a VM using SAN copy abilities such as snapshot and clone. You can rapidly provision standalone VMs, or VMs that are provisioned in a service.
+- [Rapidly provision a VM using storage area network (SAN) copy](manage-vm-rapid-san.md): Deploy a VM using SAN copy abilities such as snapshot and clone. You can rapidly provision standalone VMs, or VMs that are provisioned in a service.
 
 ## VM placement
 
@@ -34,11 +34,12 @@ When you deploy or migrate a VM, VMM uses intelligent VM placement to evaluate a
 
 - The placement algorithm analyzes performance data for the workload and the host, and then rates hosts on a scale of one to five stars to indicate the best placement choice.
 - Placement includes a preferred and possible owners feature that allows to specify which hosts are preferred and possible if failover of VMs occurs.
-- Placement considers storage classifications. Clouds can be scope to limit VM placement to specific storage classifications only.
+- Placement considers storage classifications. Clouds can be scope to limit VM placement to specific storage classifications only
+- Placement options can be selected as follows:
 
-**Create a new VM**: The placement process offers a suggestion for the host. If a self-service user creates a VM, the host is automatically assigned by VMM, based on the highest rating.
-**Migrate a VM**: During migration VMM provides host ratings to help you select a host.
-**Convert a VM to Hyper-V**: The conversion wizard provides rating for hosts so that you can select the best one.
+	- **Create a new VM**: The placement process offers a suggestion for the host. If a self-service user creates a VM, the host is automatically assigned by VMM, based on the highest rating.
+	**Migrate a VM**: During migration VMM provides host ratings to help you select a host.
+	**Convert a VM to Hyper-V**: The conversion wizard provides rating for hosts so that you can select the best one.
 
 ### Host ratings
 
@@ -92,8 +93,6 @@ In VMM you can create generation 1 and generation 2 VMs.
 - Generation 1 and 2 VMs don't handle boot order in the same way.
     - You can customize the start order for generation 1 VMs in the VMM console, in the hardware settings when you create a VM. You can also customize using the BootOrder PowerShell parameter.
     - To customize the start order for generation 1 VMs you need to use PowerShell, using the FirstBootDevice parameter when you create a VM. For example, to set the first boot device as the network adapter type: **Set-SCVMTemplate -Template "Generation2template" –FirstBootDevice "NIC,0"**
-
-
 
 
 ## VM provisioning optimization
