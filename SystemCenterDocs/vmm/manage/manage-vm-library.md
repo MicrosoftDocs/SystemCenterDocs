@@ -1,5 +1,5 @@
 ---
-title: Deploy a VM from the VMM library
+title: Deploy a virtual machine from the VMM library
 description: This article describes how to create VMs in the VMM fabric from the VMM library
 author:  rayne-wiselman
 manager:  cfreemanwa
@@ -10,7 +10,7 @@ ms.technology:  virtual-machine-manager
 ---
 
 
-# Deploy a VM from the VMM library
+# Deploy a virtual machine from the VMM library
 
 >Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
 
