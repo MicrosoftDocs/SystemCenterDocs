@@ -1,5 +1,5 @@
 ---
-title: Walkthrough: Creating a Certificate and User Roles for Service Provider Foundation
+title: Walkthrough - Creating a Certificate and User Roles for Service Provider Foundation
 description: This topic describes all the steps you need to take to create a security certificate and add it to your portal for user authentication.
 ms.custom: na
 ms.prod: system-center-threshold
@@ -11,8 +11,8 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 1b546c86-2458-4449-87ee-e48b6be4228a
 author: bwren
-ms.author: raynew
 manager: cfreeman
+ms.author: raynew
 ---
 
 # Walkthrough: Creating a Certificate and User Roles for Service Provider Foundation
