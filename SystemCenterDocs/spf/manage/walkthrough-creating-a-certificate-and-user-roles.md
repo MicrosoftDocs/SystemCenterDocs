@@ -14,7 +14,9 @@ author: bwren
 ms.author: raynew
 manager: cfreeman
 ---
+
 # Walkthrough: Creating a Certificate and User Roles for Service Provider Foundation
+
 >Apples To: System Center 2016
 
 This walkthrough shows how to administer important tasks for managing both certificates and user roles in Service Provider Foundation. To start, we show how to generate a self\-signed certificate if you are not already working with an issuer's signed certificate. Next, we show how to obtain the certificate's public key, and how to use that key to create the tenant in Service Provider Foundation and user roles in System Center 2016 - Virtual Machine Manager \(VMM\).  
