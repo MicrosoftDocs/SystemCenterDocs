@@ -47,7 +47,7 @@ By default, LIS is included with some distributions of Linux. If LIS is not incl
     ./install scvmmguestagent.1.0.0.544.x86.tar
     ```
 
-When the agent installs on the VM the following files nad folders will be created on the VHD:
+When the agent installs on the VM the following files and folders will be created on the VHD:
 
 - A default installation folder (/opt/microsoft/scvmmguestagent), and an installation log file (scvmm-install.log)
 - A default log files folder - /var/opt/microsoft/scvmmagent/log
