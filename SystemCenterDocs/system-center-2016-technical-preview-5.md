@@ -6,7 +6,7 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 author: cfreemanwa
-ms.author cfreeman
+ms.author: cfreeman
 manager: cfreeman
 ms.technology: system-center-2016
 ms.topic: get-started-article
