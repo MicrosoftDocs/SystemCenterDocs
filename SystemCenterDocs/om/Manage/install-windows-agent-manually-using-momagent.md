@@ -91,8 +91,8 @@ MOMAgent.msi can be found in the Operations Manager installation media and in th
 
     where:
 
-    |||
-    |-|-|
+    |Parameter | Value|
+    |-------------|-------------|
     |USE_SETTINGS_FROM_AD={0&#124;1}|Indicates whether the management group settings properties will be set on the command line. Use 0 if you want to set the properties at the command line. Use 1 to use the management group settings from Active Directory.|
     |USE_MANUALLY_SPECIFIED_SETTINGS=={0&#124;1}|If USE_SETTINGS_FROM_AD=1, then USE_MANUALLY_SPECIFIED_SETTINGS must equal 0.|
     |MANAGEMENT_GROUP=*MGname*|Specifies the management group that will manage the computer.|
