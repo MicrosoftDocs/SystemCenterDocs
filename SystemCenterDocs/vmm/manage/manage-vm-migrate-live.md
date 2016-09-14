@@ -14,7 +14,7 @@ ms.technology:  virtual-machine-manager
 >Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
 
 
-This article describes how to run a live migration in the System Center 2016 - Virtual Machine Manager (VMM) fabric. VMM provides live migration support between standalone Hyper-V hosts, or cluster hosts that have the live migration enabled. [Learn more](manage-vm-migrate-overview.md#live-migration).
+This article describes how to run a live migration of virtual machines, or virtual machine storage, in the System Center 2016 - Virtual Machine Manager (VMM). VMM provides live migration support between standalone Hyper-V hosts, or between cluster hosts that have live migration enabled. [Learn more](manage-vm-migrate-overview.md#live-migration).
 
 
 ## Migrate a VM between two standalone hosts
