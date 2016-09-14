@@ -2,7 +2,7 @@
 title:  Planning Security Credentials for Accessing Unix and Linux Computers
 author: mgoedtel
 manager: cfreemanwa
-ms.date: 2016-08-29
+ms.date: 2016-09-14
 ms.custom: na
 ms.prod: system-center-threshold
 ms.technology: operations-manager
@@ -48,7 +48,7 @@ The installation is not completed until the agent is verified. Agent verificatio
 
 -   Ran the wizard with the **Discovery Type** set to **Discover only computers with the UNIX/Linux agent installed**.
 
-Alternatively, you can install the agent, including its certificate, manually on the UNIX or Linux computer and then discover that computer. This method is the most secure way to install agents. For more information, see [Install the Agent and Certificate on UNIX and Linux Computers Using the Command Line](../manage/Install-the-Agent-and-Certificate-on-UNIX-and-Linux-Computers-Using-the-Command-Line.md).
+Alternatively, you can install the agent, including its certificate, manually on the UNIX or Linux computer and then discover that computer. This method is the most secure way to install agents. For more information, see [Install the Agent and Certificate on UNIX and Linux Computers Using the Command Line](../manage/install-agent-and-certificate-on-unix-and-linux-computers-using-the-command-line.md).
 
 ## Credentials for monitoring operations and performing agent maintenance
 
@@ -96,7 +96,7 @@ When you specify a Monitoring Run As Account Type, you must specify a user name 
 
 -   Specify a user name and a key. You can include an optional passphrase.
 
-After you created the Run As accounts, you must edit the UNIX and Linux profiles to associate them with the Run As accounts you created.  For detailed instructions, see [How to Configure Run As Accounts and Profiles for UNIX and Linux Access](how-to-configure-run-as-accounts-and-profiles-for-unix-and-linux-access.md)
+After you created the Run As accounts, you must edit the UNIX and Linux profiles to associate them with the Run As accounts you created.  For detailed instructions, see [How to Configure Run As Accounts and Profiles for UNIX and Linux Access](../manage/how-to-configure-run-as-accounts-and-profiles-for-unix-and-linux-access.md)
 
 ## Credentials for upgrading and uninstalling agents
 

@@ -2,7 +2,7 @@
 title: Install Agent on UNIX and Linux Using the Discovery Wizard
 author: mgoedtel
 manager: cfreemanwa
-ms.date: 2016-08-29
+ms.date: 2016-09-14
 ms.custom: na
 ms.prod: system-center-threshold
 ms.technology: operations-manager
@@ -19,7 +19,7 @@ Before you run the wizard, gather the following information:
 
 -   The host name, IP address, or range of IP addresses of the UNIX or Linux computers that you want to discover.
 
--   At a minimum, you will need a low-privileged account established on the UNIX or Linux computer to discover it. To install an agent, you will need privileged access. For more information, see [Planning Security Credentials for UNIX and Linux Computers](../plan/planning-security-for-accessing-unix-and-linux-computers.md).
+-   At a minimum, you will need a low-privileged account established on the UNIX or Linux computer to discover it. To install an agent, you will need privileged access. For more information, see [Planning Security Credentials for UNIX and Linux Computers](../plan/planning-security-credentials-for-accessing-unix-and-linux-computers.md).
 
 -   If defined, the name of the resource pool created to monitor UNIX or Linux computers. Resource pools can contain management servers or gateways for monitoring UNIX or Linux computers. For more information, see [Resource Pool Design Considerations](../plan/planning-resource-pool-design.md).
 
