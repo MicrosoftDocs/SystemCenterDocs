@@ -375,7 +375,7 @@
 ###### [Perform a rolling upgrade on SOFS](vmm/manage/manage-sofs-rolling-upgrade.md)
 ###### [Add an existing SOFS to the VMM fabric](vmm/manage/manage-sofs-add-existing.md)
 ###### [Create an SOFS cluster from standalone servers](vmm/manage/manage-sofs-standalone-server.md)
-###### [Provision SOFS from bare-metal computers](vmm/manage/manage-sosf-bare-metal.md)
+###### [Provision SOFS from bare-metal computers](vmm/manage/manage-sofs-bare-metal.md)
 ###### [Manage SOFS settings](vmm/manage/manage-sofs.md)
 ##### [Set up Storage Spaces Direct](vmm/manage/manage-storage-spaces-direct-vmm.md)
 ##### [Set up Storage Replica in VMM](vmm/manage/manage-storage-replica.md)
