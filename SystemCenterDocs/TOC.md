@@ -105,7 +105,6 @@
 ##### [How to Configure a Management Server for Client Monitoring](OM/Manage/How-to-Configure-a-Management-Server-for-Client-Monitoring.md)
 ##### [Collecting Security Events Using Audit Collection Services in Operations Manager](om/Manage/Collecting-Security-Events-Using-Audit-Collection-Services-in-Operations-Manager.md)
 ##### [Monitoring Nano Server](OM/Manage/Monitoring-Nano-Server.md)
-###### [Troubleshooting OM Agent installation on a Nano Server](OM/Manage/Troubleshooting-OM-Agent-installation-on-a-Nano-Server.md)
 ###### [How to Discover Network Devices in Operations Manager](om/Manage/How-to-Discover-Network-Devices-in-Operations-Manager.md)
 ###### [Network Device Discovery Settings](OM/Manage/Network-Device-Discovery-Settings.md)
 ###### [Tuning Network Monitoring](OM/Manage/Tuning-Network-Monitoring.md)

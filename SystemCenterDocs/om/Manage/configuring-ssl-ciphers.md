@@ -11,6 +11,8 @@ ms.topic: article
 
 # Configuring SSL Ciphers
 
+>Applies To: System Center 2016 - Operations Manager
+
 System Center 2016 - Operations Manager correctly manages UNIX and Linux computers without changes to the default Secure Sockets Layer \(SSL\) cipher configuration. For most organizations, the default configuration is acceptable, but you should check your organization's security policies to determine whether changes are required.  
   
 ## Using the SSL cipher configuration  
