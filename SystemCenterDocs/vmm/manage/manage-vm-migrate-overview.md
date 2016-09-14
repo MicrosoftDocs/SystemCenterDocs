@@ -55,15 +55,15 @@ VMM inspects and validates the configuration settings of a destination host befo
 **Source** | **Destination: Standalone** | **Destination: Cluster**
 --- | --- | ---
 Standalone | Supported  |Supported|
-Cluster | Supported | Supported. Source and destination can be in the same or different clusters.|
+Cluster | Supported | Supported<br/><br/> Source and destination can be in the same or different clusters.|
 
 ### Live storage migration support matrix
 
 **Source** | **Destination: Local disk (standalone)** | **Destination: SMB 3.0 share (standalone/cluster)** | **Destination: CSV (cluster)**
 --- | --- | --- | ---
-Local disk | Supported | Supported. The virtual machine will be promoted to high availability. | Not supported.
+Local disk | Supported | Supported.<br/><br/> The virtual machine will be promoted to high availability. | Not supported.
 SMB 3.0 share |Supported. In a cluster the VM will be demoted, and won't be highly available after migration. | Supported | Supported
-Cluster | |In a cluster the VM will be demoted, and won't be highly available after migration. | Supported. The SMB share must be available from the destination cluster node. | Supported. CSV must be available from the destination cluster node.
+Cluster | Supported<br/><br/> In a cluster the VM will be demoted, and won't be highly available after migration. | Supported<br/><br/> The SMB share must be available from the destination cluster node. | Supported</br><br/> The CSV must be available from the destination cluster node.
 
 ### Live migration limitations
 
