@@ -96,7 +96,7 @@ When you specify a Monitoring Run As Account Type, you must specify a user name 
 
 -   Specify a user name and a key. You can include an optional passphrase.
 
-After you created the Run As accounts, you must edit the UNIX and Linux profiles to associate them with the Run As accounts you created.  For detailed instructions, see [How to Configure Run As Accounts and Profiles for UNIX and Linux Access](https://technet.microsoft.com/library/hh212926.aspx)
+After you created the Run As accounts, you must edit the UNIX and Linux profiles to associate them with the Run As accounts you created.  For detailed instructions, see [How to Configure Run As Accounts and Profiles for UNIX and Linux Access](how-to-configure-run-as-accounts-and-profiles-for-unix-and-linux-access.md)
 
 ## Credentials for upgrading and uninstalling agents
 

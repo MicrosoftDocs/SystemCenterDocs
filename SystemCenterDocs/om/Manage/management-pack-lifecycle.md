@@ -43,8 +43,67 @@ You can assign an Operations Manager agent to more than one management group, wh
 ## Tune and customize  
 
 You can use overrides to refine the settings of a monitoring object in Operations Manager, including monitors, rules, object discoveries, and attributes. You should create a management pack in which to save customizations that you make.  
+
+To effectively tune the monitoring configuration of your IT services, which may involve one or more management packs depending on the complexity of that service, you should involve the service owner or subject matter experts, a representative from the service desk, a representative from the operations team members who monitor the alerts and events and take action when something requires attention, and the engineering team responsible for the Operations Manager infrastructure. Depending on the service that is monitored by the management pack(s), you might also include representation from the networking and security teams.  Those responsible for the Operations Manager infrastructure might not have the knowledge and experience with the service to effectively tune the management pack(s) without expert input.  
+
+Start by reviewing the most common alerts in an effort to improve monitoring accuracy by focusing on high-volume alerts.  Identify the following and prioritize based on impact:
+
+- Number and percentage of alerts caused by existing/known problems
+- Number and percentage of repeated or duplicate alerts.  May indicate additional tuning is necessary or there is a potential issue to investigate further.
+- Number and percentage of alerts indicating performance or availability issues
+- Ratio of alerts to tickets generated
+- Alerts whose resolution state has been set to a state indicating the workflow is generating a high volume of alerts and is determined through investigation to be faulty by operations or tier-2 support
+
+Leverage the following reports to determine if additional tuning is required:
+
+- Most Common Alerts Report
+- Alerts Report
+- Data Volume by Management Pack
+ 
+The following reports are important to validate we are efficiently monitoring the service in its entirety, and there isn’t:
+
+- Configuration churn due to discovery rules running too frequently or there is a property/attribute being collected that changes frequently 
+- Performance data being collected too frequently or doesn’t need to be collected because the organization will not use it in a report, view, or dashboard
+- Event data being collected which adds no value and is only enabled for troubleshooting (short period of time)
+- Health State flip flopping due to misconfiguration, bug, or other symptom
+- Alert rule with high repeat count
+
+
+At a minimum, each workflow should be evaluated according to the following criteria:  
+
+- Measurable and identifiable occurrence.  Anything not aligning with that category is disabled.
+- When the alert occurs, do we know how to resolve it?
+- Exceptions (warnings) that provide a proactive notice of potential service impact are exposed to the NOC/Service Desk, besides any Incident (error) that indicates disruption of service. 
+- Is discovery running too frequent?
+- Do we need to collect this performance data?  Is it useful?
+- Is the alert understandable, relevant, and up to date?
+- Should the monitor auto-resolve if the symptom/problem corrects itself?
+ 
   
-For more information about using overrides, see [Tuning Monitoring by Using Targeting and Overrides](Tuning-Monitoring-by-Using-Targeting-and-Overrides.md). For more information about creating management packs in which to save customizations, see [Best Practices for Change Control](#best-practices-for-change-control).  
+### What to Tune  
+  
+-   Discovery frequency  
+  
+-   Monitor thresholds  
+  
+-   Targets  
+  
+-   Intervals for script-based rules/monitors and performance collection rules  
+  
+-   Parameters  
+  
+### Tips  
+  
+-   Review any new alerts reported for servers monitored with the new management pack. You can use the Alerts and Most Common Alerts reports to help you discover your most common alerts. When you first install a management pack, it tends to discover a multitude of previously unknown issues. Monitor the alerts to determine potential areas of concern  
+  
+-   Override the monitor or rule as applicable for all objects of a particular class, a group, or a specific object.  
+  
+-   Disable the monitor or rule if the issue is not severe enough to warrant an alert and you do not need to be made aware of the specific situation being monitored.  
+  
+-   Change the threshold of the monitor that is generating the alert if you want the underlying condition to be monitored, but the alert is being generated before the condition is actually a problem for your particular environment.  
+  
+-   When you set overrides for a management pack, save them to a management pack that is named ManagementPack\_Override, where ManagementPack is the name of the sealed management pack to which the overrides apply. 
+  
   
 ## Deploy  
 

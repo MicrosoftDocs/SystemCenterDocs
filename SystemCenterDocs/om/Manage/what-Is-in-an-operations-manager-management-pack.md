@@ -81,7 +81,7 @@ Object discoveries are used to find the specific objects on a network that need 
 
 A management pack can include one or more Run As profiles. Run As profiles and Run As accounts are used to select users with the privileges needed for running rules, tasks, and monitors.  
   
-Management pack authors can create a Run As profile and associate the profile with one or more rules, monitors, tasks, or discoveries. The named Run As profile is imported along with the management pack into Operations Manager&nbsp;. The Operations Manager&nbsp;administrator then creates a named Run As account and specifies users and groups. The administrator adds the Run As account to the Run As profile and specifies the target computers that the account should run on. The Run As account provides the credentials for running the rules, monitors, tasks, and discoveries that are associated with the Run As profile to which the Run As account belongs.  
+Management pack authors can create a Run As profile and associate the profile with one or more rules, monitors, tasks, or discoveries. The named Run As profile is imported along with the management pack into Operations Manager. The Operations Manager&nbsp;administrator then creates a named Run As account and specifies users and groups. The administrator adds the Run As account to the Run As profile and specifies the target computers that the account should run on. The Run As account provides the credentials for running the rules, monitors, tasks, and discoveries that are associated with the Run As profile to which the Run As account belongs.  
   
 ## Sealed and unsealed management packs 
  
