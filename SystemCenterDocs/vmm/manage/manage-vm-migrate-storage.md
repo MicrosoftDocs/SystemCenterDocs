@@ -17,6 +17,8 @@ This article describes how to migrate storage in the VMM fabric
 
 Storage migration enables you to move VM files from one storage location to another, on the same VM host. If the virtual machine is running, you can perform a quick storage migration, which results in little or no service outage for users of the virtual machine. If the virtual machine has more than one virtual hard disk, you can specify a separate location for each virtual hard disk (.vhd or .vhdx) file.
 
+[Read this article](manage-vm-migrate-live.md#migrate-storage-between-two-locations-on-a-standalone-host) if you want to run a live migration of VM storage between two locations on a standalone host.
+
 Run the migration as follows:
 
 1.  In **VM"s and Services**, click **All Hosts**, and then select the host on which the virtual machine is deployed.
