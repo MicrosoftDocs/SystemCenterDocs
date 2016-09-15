@@ -19,7 +19,7 @@ This article describes how to set up self-service in System Center 2016 - Virtua
 
 VMM offers a number of options for self-service users:
 
-- **VMs/services**: Users can deploy their virtual machines and services to private clouds. A private clouds can be assigned to multiple self-service user roles. Role-level quotas for each self-service user role with the private cloud in scope are used to allocate cloud compute and storage capacity. Member-level quotas set individual limits for members of the self-service user role.
+- **Virtual machines/Services**: Users can deploy their virtual machines and services to private clouds. A private clouds can be assigned to multiple self-service user roles. Role-level quotas for each self-service user role with the private cloud in scope are used to allocate cloud compute and storage capacity. Member-level quotas set individual limits for members of the self-service user role.
 - **Virtual hard disks**: Users can deploy VMs from VHDs as well as templates.
 - **Templates/Profiles**: Users can create their own templates and profiles. The **Author** action for a self-service user role providing these authoring rights to create hardware profiles, guest operating system profiles, app profiles, SQL Server profiles, VM templates, and service templates. Note that these resources can be created by a user with the self-service role, and shared with other members of the self-service user role.
 
@@ -82,7 +82,6 @@ Self-service users with the required permissions can access the VMM library. Use
 
 All of these procedures must be performed by a VMM administrator. Delegated administrators can add library shares on library servers that are in the scope of their user role, can configure read-only library shares on private clouds that they created, and can configure user data paths on self-service user roles that they created. Only members of the local Administrators group can grant access permissions on their user data paths.
 
-## Assign resources
 
 ## Create read-only library shares
 
