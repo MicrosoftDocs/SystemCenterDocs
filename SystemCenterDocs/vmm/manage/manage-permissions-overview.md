@@ -29,7 +29,7 @@ Administrator role | Members of this role can perform all administrative actions
 Fabric Administrator (Delegated Administrator) | Members of this role can perform all administrative tasks within their assigned host groups, clouds, and library servers. | Delegated Administrators cannot modify VMM settings, add or remove members of the Administrators user role, or add WSUS servers.
 Read-Only Administrator | Members of this role can view properties, status, and job status of objects within their assigned host groups, clouds, and library servers, but they cannot modify the objects. | The read-only administrator can also view Run As accounts that administrators or delegated administrators have specified for that read-only administrator user role.
 Tenant Administrator | Members of this role can manage self-service users and VM networks. | Tenant administrators can create, deploy, and manage their own virtual machines and services by using the VMM console or a web portal.<br/><br/> Tenant administrators can also specify which tasks the self-service users can perform on their virtual machines and services.<br/><br/> Tenant administrators can place quotas on computing resources and virtual machines.
-Application Administrator (Self-Service User): Members of this role can create, deploy, and manage their own virtual machines and services. | They can manage VMM using the VMM console.
+Application Administrator (Self-Service User) | Members of this role can create, deploy, and manage their own virtual machines and services. | They can manage VMM using the VMM console.
 
 
 ## Run As accounts
@@ -50,5 +50,5 @@ Note that:
 
 ## Next steps
 
-- [Set up user roles](manage-permissions-user-roles.md).
-- [Set up run as accounts](manage-permissions-runas.md).
+- [Set up user roles](manage-permissions-user-roles.md)
+- [Set up run as accounts](manage-permissions-runas.md)
