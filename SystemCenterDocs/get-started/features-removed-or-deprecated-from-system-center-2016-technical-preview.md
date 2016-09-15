@@ -1,8 +1,9 @@
 ---
 description:  
-manager:  cfreemanwa
+manager:  cfreeman
 ms.topic:  article
 author:  cfreemanwa
+ms.author: cfreeman
 ms.prod:  system-center-threshold
 keywords:  
 ms.date:  2016-07-01
@@ -53,6 +54,3 @@ You will not be able to either create or import a service templates with a Serve
 **Status in System Center 2016 Technical Preview:** Removed
 
 **Replacement:** Integrate your Windows Azure Pack installation with a third-party billing and utilization system.
-
-
-
