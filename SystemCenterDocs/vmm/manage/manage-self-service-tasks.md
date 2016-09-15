@@ -59,6 +59,8 @@ We recommend you use the method described in this procedure to import and export
 - You can export resources from your user role data path, or private cloud library.
 - To import and export your self-service user role needs Author permissions.
 
+Import resources as follows:
+
 1. Click **Library** > **Import** > **Import Physical Resource**.
 2. Click **Add custom resource** to import a folder with the .CR extension and its contents. Alternatively, you can select a folder without a .CR extension that contains one or more files of a supported file type.
 
