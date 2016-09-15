@@ -3,21 +3,34 @@ description:
 manager:  cfreemanwa
 ms.topic:  article
 author:  bandersmsft
-ms.prod:  system-center-threshold
+ms.prod:  system-center-2016
 keywords:  
-ms.date:  2016-06-28
-title:  what s new in service manager
+ms.date:  2016-08-19
+title:  What's new in Service Manager
 ms.technology:  service-manager
 ms.assetid:  3eeb3265-88e0-47ed-b761-07f4e0634959
 ---
 
 # What's New in Service Manager
 
->Applies To: System Center 2016 Technical Preview - Service Manager
+>Applies To: System Center 2016 - Service Manager
 
-System Center 2016 Technical Preview - Service Manager is updated for System Center 2016 Technical Preview 5.
+System Center 2016 - Service Manager is updated for the release to manufacturing (RTM) version.
 
-For details about known issues that could affect you before you install System Center 2016 Technical Preview - Service Manager, read the [Release Notes for System Center Technical Preview 5](../../get-started/Release-Notes-for-System-Center-Technical-Preview-5.md).
+For details about known issues that could affect you before you install System Center 2016 - Service Manager, read the [Release Notes for System Center ](../../get-started/release-notes.md).
+
+## Improvements in this release
+
+All Service Manager 2016 releases are cumulative. This version contains all the updates shipped previously in Technical Previews, along with following **new** additions:
+
+### Open activity in progress
+
+A new console task *Open Activity in Progress*, was added for service requests and change requests. This console task’s link is enabled when a work item moves to the *in progress* state. Clicking the this task’s link opens the current in-progress activity. For work items that don’t have any in-progress activity, the localized message *No Activity with In Progress state is found for the workitem.* is displayed. In previous versions of Service Manager, you had to open the work item, navigate to the **Activities** tab, and then click the *In progress* activity. Now you can do the same thing with a single click.
+
+### Spell check
+
+Spell check is now enabled for work item forms. It is enabled for 17 out of the 21 supported languages. However, four southeast Asian languages do not support it. To use this feature, install your desired language pack and set the keyboard IME for your desired language. You can enable or disable spell check by navigating to **View** > **spell check**. Spell check is dynamic, so switching it on or off is shown on the currently-opened forms. Spell check is enabled by default.
+
 
 ## Improvements in technical preview 5
 

@@ -5,7 +5,7 @@ ms.topic:  article
 author:  bwren
 ms.prod:  system-center-threshold
 keywords:  
-ms.date:  2016-06-28
+ms.date:  2016-08-18
 title:  Service Management Automation
 ms.technology:  service-management-automation
 ms.assetid:  4398d1ea-d63c-4fc8-b7f0-4e8fc80c00cc
@@ -13,7 +13,7 @@ ms.assetid:  4398d1ea-d63c-4fc8-b7f0-4e8fc80c00cc
 
 # Service Management Automation
 
->Applies To: System Center Technical Preview
+>Applies To: System Center 2016
 
 
 ## Overview
@@ -41,6 +41,3 @@ The following table compares Orchestrator to the other Microsoft automation tool
 -   [Deploy Service Management Automation](Deploy/Deploy-Service-Management-Automation.md)
 
     Provides a brief overview of the steps to deploy Service Management Automation.
-
-
-

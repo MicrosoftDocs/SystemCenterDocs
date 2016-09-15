@@ -1,8 +1,9 @@
 ---
-description:  
-manager:  cfreemanwa
+description:  Summarizes the supported versions of .Net for System Center 2016 components.
+manager:  cfreeman
 ms.topic:  article
 author:  cfreemanwa
+ms.author: cfreeman
 ms.prod:  system-center-threshold
 keywords:  
 ms.date:  2016-07-01
@@ -13,13 +14,13 @@ ms.assetid:  d5a0412c-4670-4c92-aad8-d83ebe2f9043
 
 # .Net Version Support
 
->Applies To: System Center Technical Preview
+>Applies To: System Center 2016
 
-Use this information to evaluate if your Microsoft .NET Framework is ready to support the installation of or upgrade to System Center 2016 Technical Preview. Use this information whether you are deploying one or multiple components.
+Use this information to evaluate if your Microsoft .NET Framework is ready to support the installation of or upgrade to System Center 2016. 
 
 ## .Net compatibility
 
-|System Center 2012 R2 component|.NET 3.5 SP1|.NET 4|.NET 4.5|.NET 4.5.1|.NET 4.5.2|.NET 4.6|
+|System Center 2016 component|.NET 3.5 SP1|.NET 4|.NET 4.5|.NET 4.5.1|.NET 4.5.2|.NET 4.6|
 |-----------------------------------|----------------|----------|------------|--------------|--------------|------------|
 |**DPM** Central Console|&#8226;|&#8226;|&#8226;|&#8226;|&#8226;|&#8226;|
 |**DPM** Remote Administrator|&#8226;|&#8226;|&#8226;||&#8226;|&#8226;|
@@ -40,4 +41,3 @@ Use this information to evaluate if your Microsoft .NET Framework is ready to su
 |**Service Provider Foundation** API Web Server|||||&#8226;|&#8226;|
 |**Virtual Machine Manager** Console|||&#8226;|&#8226;|&#8226;|&#8226;|
 |**Virtual Machine Manager** Management Server||||||&#8226;|
-
