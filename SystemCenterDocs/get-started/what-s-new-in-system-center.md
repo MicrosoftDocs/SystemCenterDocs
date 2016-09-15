@@ -1,5 +1,5 @@
 ---
-title:  What's New in System Center
+title:  What's new in System Center
 description:  
 author: mgoedtel
 manager: cfreemanwa
