@@ -20,7 +20,7 @@ This article describes how to set up System Center 2016 - Virtual Machine Manage
 ## Before you start
 
 - [Learn more](manage-permissions-overview.md#role-based-security) about user roles.
-- Ensure you have the right permissions to create the role or add users to it.
+- Ensure you have the right permissions to create the role, or to add users to it.
 
     - **Administrator role**: Administrators can add and remove users
     - **Delegate Administrator role**: Administrators can create the role. Delegated Administrators can create Delegated Administrator roles that include a subset of their scope, library servers, and Run As accounts.
