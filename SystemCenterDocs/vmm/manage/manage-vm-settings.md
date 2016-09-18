@@ -1,6 +1,6 @@
 ---
-title: Configure virtual machine performance settings in the VMM compute fabric
-description: This article describes how to configure settings that affect performance and high availability for VMs in the VMM fabric
+title: Configure virtual machine settings in the VMM compute fabric
+description: This article describes how to configure settings for VMs in the VMM fabric
 author:  rayne-wiselman
 manager:  cfreemanwa
 ms.date:  2016-09-13
@@ -10,22 +10,115 @@ ms.technology:  virtual-machine-manager
 ---
 
 
-# Configure virtual machine performance settings in the VMM compute fabric
+# Configure virtual machine settings in the VMM compute fabric
 
 >Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
 
 
 This article describes how to configure performance and availability settings for VMs in the System Center 2016 - Virtual Machine Manager (VMM) fabric.
 
-Settings include availability options, resource throttling, and virtual NUMA.
+Settings include changing VM properties, and setting up performance options such as availability options, resource throttling, and virtual NUMA.
+
+## Add a virtual adapter to a VM
+
+You can now add and remove virtual network adapters (vNIC) from running virtual machines. This feature helps in eliminating workload downtime due to reconfiguration. Note that:
+
+- You'll need to configure this in PowerShell. It can't be configured in the VMM console.
+- This feature is only available for Generation 2 VMs
+
+Here's a sample cmdlet for setting this up:
+
+### Example 1
+
+The PowerShell command adds a vNIC to a running VM.
+
+- The first command gets the virtual machine object named VM01, and then stores the object in the $VM variable.
+- The second command creates a virtual network adapter on VM01.
+
+```
+PS C:\> $VM = Get-SCVirtualMachine -Name "VM01"
+PS C:\> New-SCVirtualNetworkAdapter -VM $VM -Synthetic
+```
+
+### Example 2
+
+The following PowerShell commands will remove a vNIC from a running VM. It assumes there's only one vNIC on the VM.
+
+- The first command gets the virtual machine object named VM02, and then stores the object in the $VM variable.
+- The second command gets the virtual network adapter object on VM02, and then stores the object in the $Adapter variable.
+- The last command removes the virtual network adapter object stored in $Adapter from VM02.
+
+```
+PS C:\> $VM = Get-SCVirtualMachine -Name "VM02"
+PS C:\> $Adapter = Get-SCVirtualNetworkAdapter -VM $VM
+PS C:\> Remove-SCVirtualNetworkAdapter -VirtualNetworkAdapter $Adapter
+```
+
+## Manage static memory on a running VM
+
+You can modify the memory configuration of a running VM that uses static memory. This feature helps in eliminating workload downtime due to reconfiguration. You can increase or decrease the memory allocation, or switch the virtual machine to dynamic memory. Note that users can already modify dynamic memory for a running VM from VMM and this feature is about modifying the static memory.
+
+Using the following PowerShell examples to modify the static memory setting.
+
+### Example 1
+
+ Change the static memory for a running virtual machine.
+
+ - The first command gets the virtual machine object named VM01, and then stores the object in the $VM variable.
+ - The second command changes the memory allocated to VM01 to 1024 MB.
+
+```
+PS C:\> $VM = Get-SCVirtualMachine -Name "VM01"
+PS C:\> Set-SCVirtualMachine -VM $VM -MemoryMB 1024
+```
+
+
+### Example 2
+
+Enable dynamic memory for a running virtual machine.
+
+- The first command gets the virtual machine object named VM02, and then stores the object in the $VM variable.
+- The second command enables dynamic memory, sets the startup memory to 1024 MB, and sets the maximum memory to 2048 MB.
+
+```
+PS C:\> $VM = Get-SCVirtualMachine -Name "VM02"
+PS C:\> Set-SCVirtualMachine -VM $VM -DynamicMemoryEnabled $True -MemoryMB 1024 -DynamicMemoryMaximumMB 2048
+```
+
+## Add a servicing window to a VM
+
+You can set up a servicing window for a VM or service so that you can maintain it outside the VMM console. You [set up the window](manage-compute-host-service.md#set-up-a-servicing-window), and then assign it to the VM properties.
+
+
+## Create a production checkpoint for a VM
+
+Production checkpoints allow you to easily create "point in time" images of a VM which can then be restored later.
+
+- Productions checkpoints are achieved using backup technology inside the guest to create the checkpoint, instead of using saved state technology.
+- On a virtual machine running a Windows operating system production checkpoints are created with the Volume Snapshot Service (VSS).
+- Linux virtual machines flush their file system buffers to create a file system consistent checkpoint.
+- If you want to create checkpoints using saved state technology you can still choose to use standard checkpoints for your virtual machine.
+- You can set one of these checkpoint settings for a VM:
+
+    - **Disabled**: No checkpoint take
+    - **Production**: Production checkpoints are application consistent snapshots of a virtual machine. Hyper-V leverages the guest VSS provider to create an image of the virtual machine where all of its applications are in a consistent state. The production snapshot does not support the auto-recovery phase during creation. Applying a production checkpoint requires the restored virtual machine to boot from an off-line state just like with a restored backup. This is always more suitable for production environments.
+    - **ProductionOnly**: This option is the same as Production with one key difference: With ProductionOnly, if a production checkpoint fails then no checkpoint will be taken. This is different from Production where if a production checkpoint fails, a standard checkpoint will be taken instead.
+    - **Standard**:  All of the memory state of running applications gets stored so that when you apply the checkpoint the application reverts to the previous state. For many applications this would not be suitable for a production environment. Therefore this type of checkpoint is typically more suitable for development and test environments for some applications.
+
+Set the checkpoint with the following PowerShell command: **Set-SCVirtualMachine "CheckpointType (Disabled, Production, ProductionOnly, Standard)**
+
+
+
+
+
 
 ## Configure availability options for clustered VMs
 
 You can configure a number of setting that help keep virtual machines  in a cluster available
 
-- **Virtual machine priority**: You can configure priority settings for VMs deployed in a host cluster. Based on VM priority, the host cluster starts or places high-priority virtual machines before medium-priority or low-priority virtual machines. This ensures that the high-priority virtual machines are allocated memory and other resources first, for better performance. Also, after a node failure, if the high-priority virtual machines do not have the necessary memory and other resources to start, the lower priority virtual machines will be taken offline to free up resources for the high-priority virtual machines. Virtual machines that are preempted are restarted later in priority order.
-- **Preferred and possible owners of virtual machines**: These settings influence the placement of virtual machines on the nodes of the host cluster. By default, there are no preferred owners (there is no preference), and the possible owners include all server nodes on the cluster.
-- **Availability sets**: When you place multiple virtual machines in an availability set, VMM will attempt to keep those virtual machines on separate hosts and avoid placing them together on the same host whenever possible. This helps to improve continuity of service.
+**Virtual machine priority**: You can configure priority settings for VMs deployed in a host cluster. Based on VM priority, the host cluster starts or places high-priority virtual machines before medium-priority or low-priority virtual machines. This ensures that the high-priority virtual machines are allocated memory and other resources first, for better performance. Also, after a node failure, if the high-priority virtual machines do not have the necessary memory and other resources to start, the lower priority virtual machines will be taken offline to free up resources for the high-priority virtual machines. Virtual machines that are preempted are restarted later in priority order.
+**Preferred and possible owners of virtual machines**: These settings influence the placement of virtual machines on the nodes of the host cluster. By default, there are no preferred owners (there is no preference), and the possible owners include all server nodes on the cluster.
+**Availability sets**: When you place multiple virtual machines in an availability set, VMM will attempt to keep those virtual machines on separate hosts and avoid placing them together on the same host whenever possible. This helps to improve continuity of service.
 
 ### Configure priority
 
@@ -127,4 +220,4 @@ Set up virtual NUMA for VMs as follows:
 2.  In **Maximum processors per virtual NUMA node**, specify the maximum number of virtual processors that belong to the same virtual machine and that can be used concurrently on a virtual NUMA node. Configure this setting to ensure maximum bandwidth. different NUMA virtual machines to use different NUMA nodes. The minimum limit is 1 and the maximum is 32.
 3.  In **Maximum memory per virtual NUMA node (MB)**, specify the maximum amount of memory (MB) that can be allocated to a single virtual NUMA node. The minimum limit is 8 MB and the maximum is 256 GB.
 4.  In **Maximum virtual NUMA nodes per socket**, specify the maximum number of virtual NUMA nodes that are allowed on a single socket. The minimum number is 1 and the maximum is 64.
-5. To enable spanning, click **Allow virtual machine to span hardware NUMA nodes**. 
+5. To enable spanning, click **Allow virtual machine to span hardware NUMA nodes**.
