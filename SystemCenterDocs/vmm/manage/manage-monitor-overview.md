@@ -45,7 +45,7 @@ You can monitor VMM health and status in Operations Manager by installing the VM
 **VMM Host Dashboard** | Monitors the health of virtualization hosts discovered in the VMM fabric.<br/><br/> It shows information about the host properties, status, VMs, alerts, and performance.
 **Fabric Health Dashboard** | Monitors the health of VMM private clouds<br/><br/> For each cloud the dashboard monitors the state of host groups, the compute properties of the cloud (CPU, network adapters etc), storage information such as pools, file share, LUNs, and network monitoring.<br/><br/> A fabric monitoring dashboard diagram view shows the status for each piece of the fabric.<br/><br/> The dashboard can be scoped to physical or virtual resources, or to a particular cloud tenant.
 
-[Learn more](vmm-monitor-ops-mgr.md) about integrating VMM with Operations Manager.
+[Learn more](manage-monitor-ops-mgr.md) about integrating VMM with Operations Manager.
 
 
 ## Report with Operations Manager
