@@ -17,15 +17,16 @@ ms.technology:  virtual-machine-manager
 
 Read this article to learn about service Hyper-V hosts and virtual machines in the VMM fabric.
 
-You can:
+You can service hosts and VMs by:
 
-- **Set up servicing windows**: Servicing windows provide a method for scheduling servicing outside VMM. You can associate a servicing window with individual hosts, virtual machines, or services. Before using other applications to schedule maintenance tasks, you can use Windows PowerShell scripts or custom applications to query the object and determines if it is currently in a servicing window. Servicing windows do not interfere with the regular use and functionality of VMM.
-- **Place a host in maintenance mode**: You can start maintenance mode for a virtual machine host whenever you need to perform maintenance tasks on the physical host, such as applying security updates or replacing hardware on the physical host computer. You can place Hyper-V hosts and VMware ESX hosts in the VMM fabric into maintenance mode.
-	- When a host is in maintenance mode, the following restrictions are placed on the host:
+- **Setting up servicing windows**: Servicing windows provide a method for scheduling servicing outside VMM. You can associate a servicing window with individual hosts, virtual machines, or services. Before using other applications to schedule maintenance tasks, you can use Windows PowerShell scripts or custom applications to query the object and determines if it is currently in a servicing window. Servicing windows do not interfere with the regular use and functionality of VMM.
+- **Placing hosts in maintenance mode**: You can start maintenance mode for a virtual machine host whenever you need to perform maintenance tasks on the physical host, such as applying security updates or replacing hardware on the physical host computer. You can place Hyper-V hosts and VMware ESX hosts in the VMM fabric into maintenance mode. Note that:
+
+	- When a host is in maintenance mode, the following restrictions apply:
 		- VMs can't be created on the host.
 		- VMs can't be moved to the host.
 		- The host has a zero rating and can't be selected for placement.
-		The host is excluded from dynamic optimization.
+		- The host is excluded from dynamic optimization.
 
 	- For ESX hosts, if the VMware Distributed Resources Scheduler is not configured, all virtual machines on the host must be either manually shut down or moved to another host to successfully start maintenance mode on an ESX host.
 	- If you're monitoring with Operations Manager and you have maintenance mode enabled for monitoring, the Operations Manager agent suppresses alerts, notifications, rules, monitors, automatic responses, state changes, and new alerts for hosts that are placed in maintenance mode.
@@ -33,7 +34,7 @@ You can:
 ## Set up a servicing window
 
 1. In the VMM console, click **Settings** > **Create** > **Create Servicing Window**.
-2. In New Servicing Window, specify a name and optional description for the window.
+2. In **New Servicing Window**, specify a name and optional description for the window.
 3. In **Category**, enter or select the category of servicing window.
 4. In **Start time**, enter the date, time of day, and time zone for the maintenance window.
 5. In **Duration**, specify the number of hours or minutes in the servicing window.
