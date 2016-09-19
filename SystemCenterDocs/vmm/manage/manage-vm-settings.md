@@ -105,7 +105,7 @@ Production checkpoints allow you to easily create "point in time" images of a VM
     - **ProductionOnly**: This option is the same as Production with one key difference: With ProductionOnly, if a production checkpoint fails then no checkpoint will be taken. This is different from Production where if a production checkpoint fails, a standard checkpoint will be taken instead.
     - **Standard**:  All of the memory state of running applications gets stored so that when you apply the checkpoint the application reverts to the previous state. For many applications this would not be suitable for a production environment. Therefore this type of checkpoint is typically more suitable for development and test environments for some applications.
 
-Set the checkpoint with the following PowerShell command: **Set-SCVirtualMachine "CheckpointType (Disabled, Production, ProductionOnly, Standard)**
+Set the checkpoint with the following PowerShell command: **Set-SCVirtualMachine CheckpointType (Disabled, Production, ProductionOnly, Standard)**
 
 
 
