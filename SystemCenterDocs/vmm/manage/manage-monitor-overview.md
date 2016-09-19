@@ -29,7 +29,7 @@ A VMM job is created for any action that changes the status of a managed object.
 - Each VMM job is independent, and doesn't depend on the status of another job. For example, if you're running jobs to add multiple host servers, the  failure to add one host does not affect the remaining jobs.
 When a job completes, an audit record is saved that lists the changes that the job made to the VMM object. You can view the audit record in **Jobs** > **Details** > **Change Tracking**.
 - Jobs are started automatically when you perform tasks in the VMM console, or using PowerShell. You can cancel some running jobs, but others, including adding hosts, and system jobs, can't be cancelled after they've started running.
-- You can generally restart failed jobs. note that:
+- You can generally restart failed jobs, but note that:
     - If multiple jobs place a VM into a failed state, only the most recent job can be restarted.
     - For jobs that run for a long time, such as virtual machine migration, intermediate results are stored periodically while the job is running, and the Restart action attempts to resume the job from the last known state. All other jobs start from the beginning.
 
@@ -62,11 +62,11 @@ After you've connected VMM to Operations Manager you can view and create reports
 **SAN Usage Forecasting** | Predicts SAN usage based on history.
 **Virtual Machine Allocation** | Provides information about allocation of virtual machines.
 **Virtual Machine Utilization** | Provides information about resource utilization by virtual machines, including average usage and total or maximum values for virtual machine processors, memory, and disk space.
-**Virtualization Candidates** | Helps identify physical computers that are good candidates for conversion to virtual machines.<b/><br/> You can use this report to identify little-used servers and display average values for a set of commonly requested performance counters for CPU, memory, and disk usage, along with hardware configurations, including processor speed, number of processors, and total RAM.<br/><br/> You can limit the report to computers that meet specified CPU and RAM requirements, and you can sort the results by selected columns in the report.
+**Virtualization Candidates** | Helps identify physical computers that are good candidates for conversion to virtual machines.<br/><br/> You can use this report to identify little-used servers and display average values for a set of commonly requested performance counters for CPU, memory, and disk usage, along with hardware configurations, including processor speed, number of processors, and total RAM.<br/><br/> You can limit the report to computers that meet specified CPU and RAM requirements, and you can sort the results by selected columns in the report.
 
 ## View reports
 
-You can view reports in the Reporting workspace in System Center Operations Manager, or by using a web browser and entering this address: **http[s]://<OpsMgrReportServer>[:<port>]/<reports>**, where:
+You can view reports in the Reporting workspace in System Center Operations Manager, or by using a web browser and entering this address: http[s]://<OpsMgrReportServer>[:<port>]/<reports>, where:
 
 - <OpsMgrReportServer> is the reporting server
 - <port> is 80 for HTTP and 443 for HTTPS
