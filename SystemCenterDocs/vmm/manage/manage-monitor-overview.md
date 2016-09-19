@@ -2,7 +2,7 @@
 title: Monitor VMM
 description: This article describes how to monitor VMM
 manager:  cfreemanwa
-ms.date:  2016-09-18
+ms.date:  2016-09-19
 ms.topic:  article
 ms.prod:  system-center-threshold
 ms.technology:  virtual-machine-manager
