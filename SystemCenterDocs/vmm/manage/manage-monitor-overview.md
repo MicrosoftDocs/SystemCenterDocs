@@ -66,8 +66,8 @@ After you've connected VMM to Operations Manager you can view and create reports
 
 ## View reports
 
-You can view reports in the Reporting workspace in System Center Operations Manager, or by using a web browser and entering this address: http://<OpsMgrReportServer>[:<port>]/<reports>. You can optionally specify "https" instead of http.
+You can view reports in the Reporting workspace in System Center Operations Manager, or by using a web browser and entering this address: http://ReportingServerName:port/reports. You can optionally specify "https" instead of http.
 
-- <OpsMgrReportServer> is the reporting server
-- <port> is 80 for HTTP and 443 for HTTPS
-- <reports> is the reporting server virtual directory, by default, reports
+- Reporting server name is the name of the Operations Manager reporting server.
+- port is 80 for HTTP and 443 for HTTPS
+- reports is the reporting server virtual directory, by default: **reports**
