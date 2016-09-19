@@ -7,7 +7,7 @@ ms.date:  2016-09-13
 ms.topic:  article
 ms.prod:  system-center-threshold
 ms.technology:  virtual-machine-manager
----
+---t
 
 
 # Configure virtual machine settings in the VMM compute fabric
@@ -100,7 +100,7 @@ Production checkpoints allow you to easily create "point in time" images of a VM
 - If you want to create checkpoints using saved state technology you can still choose to use standard checkpoints for your virtual machine.
 - You can set one of these checkpoint settings for a VM:
 
-    - **Disabled**: No checkpoint take
+    - **Disabled**: No checkpoint taken.
     - **Production**: Production checkpoints are application consistent snapshots of a virtual machine. Hyper-V leverages the guest VSS provider to create an image of the virtual machine where all of its applications are in a consistent state. The production snapshot does not support the auto-recovery phase during creation. Applying a production checkpoint requires the restored virtual machine to boot from an off-line state just like with a restored backup. This is always more suitable for production environments.
     - **ProductionOnly**: This option is the same as Production with one key difference: With ProductionOnly, if a production checkpoint fails then no checkpoint will be taken. This is different from Production where if a production checkpoint fails, a standard checkpoint will be taken instead.
     - **Standard**:  All of the memory state of running applications gets stored so that when you apply the checkpoint the application reverts to the previous state. For many applications this would not be suitable for a production environment. Therefore this type of checkpoint is typically more suitable for development and test environments for some applications.
@@ -186,13 +186,13 @@ VMM includes resource throttling features such as processor (CPU) and memory thr
 1. In the virtual machine > **Properties** > **Advanced**, click **CPU Priority**.
 2. Select a priority value for the virtual machine. These values specify how the CPU resources are balanced between virtual machine, and correspond to the relative weight value in Hyper-V:
 
-    - High—Relative weight value of 200
-    Normal—Relative weight value of 100
-    Low—Relative weight value of 50
-    Custom—Relative weight values that are supported are between 1 and 10000
+ - High—Relative weight value of 200
+ - Normal—Relative weight value of 100
+ - Low—Relative weight value of 50
+ - Custom—Relative weight values that are supported are between 1 and 10000
 
 3. In **Reserve CPU cycles (%)**, specify the percentage of the CPU resources on one logical processor that should be reserved for a virtual machine. This is useful when a virtual machine runs applications that are particularly CPU-intensive, and you want to ensure a minimal level of CPU resources. A zero setting indicates that no specific CPU percentage is reserved.
-In **Limit CPU cycles (%)**, specify the maximum percentage of the CPU resources on one logical processor that the virtual machine should consume. The virtual machine will not be allocated more than this percentage.
+4. In **Limit CPU cycles (%)**, specify the maximum percentage of the CPU resources on one logical processor that the virtual machine should consume. The virtual machine will not be allocated more than this percentage.
 
 ### Configure memory throttling
 
@@ -200,10 +200,10 @@ In **Limit CPU cycles (%)**, specify the maximum percentage of the CPU resources
 2. Select **Static** to specify that a fixed amount of memory should be assigned to a virtual machine.
 3. Select **Dynamic** to specify the dynamic memory settings for a virtual machine, as follows:
 
-    - In **Startup memory**, specify the amount of memory that is allocated to the virtual machine when it starts up. The memory value should be set at least to the minimum amount of memory that is required for the virtual machine operating system and applications to run.
-    In **Minimum memory**, specify an amount of memory that allows an idle virtual machine to scale back the memory consumption below the startup memory requirement. This makes more memory available for use by other virtual machines.
-    In **Maximum memory**, specify the maximum amount of memory that is allocated to a virtual machine. The default setting is 1 TB.
-    In **Memory buffer percentage**, specify the amount of available memory that will be assigned to a virtual machine if the need arises. The percentage should be based on the amount of memory that is actually needed by the applications and services that run on the virtual machine. The memory buffer percentage should be calculated as follows: Amount of memory buffer = memory that is needed by the virtual machine/ (memory buffer value/100). For example, if the memory that is committed to the virtual machine is 1000 MB and the buffer is 20%, then an additional buffer of 20% (200 MB) will be allocated for a total of 1200 MB of physical memory allocated to the virtual machine.
+ - In **Startup memory**, specify the amount of memory that is allocated to the virtual machine when it starts up. The memory value should be set at least to the minimum amount of memory that is required for the virtual machine operating system and applications to run.
+ - In **Minimum memory**, specify an amount of memory that allows an idle virtual machine to scale back the memory consumption below the startup memory requirement. This makes more memory available for use by other virtual machines.
+ - In **Maximum memory**, specify the maximum amount of memory that is allocated to a virtual machine. The default setting is 1 TB.
+ - In **Memory buffer percentage**, specify the amount of available memory that will be assigned to a virtual machine if the need arises. The percentage should be based on the amount of memory that is actually needed by the applications and services that run on the virtual machine. The memory buffer percentage should be calculated as follows: Amount of memory buffer = memory that is needed by the virtual machine/ (memory buffer value/100). For example, if the memory that is committed to the virtual machine is 1000 MB and the buffer is 20%, then an additional buffer of 20% (200 MB) will be allocated for a total of 1200 MB of physical memory allocated to the virtual machine.
 
 ## Configure virtual NUMA
 
