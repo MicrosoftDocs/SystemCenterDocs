@@ -72,7 +72,7 @@ Run the wizard to connect the VMM server to the Operations Manager server, and i
 
 2.  In **Introduction**, click **Next**.
 3.  In **Connection to Operations Manager**, specify the Operations Manager server name, and select an account to use to connect to it. You can use the VMM server service account or specify a Run As account. This account must be a member of the Operations Manager Administrator role.
-4.  Select **Enable Performance and Resource Optimization (PRO)**, if desired.
+4.  Select **Enable Performance and Resource Optimization (PRO)** if required.
 5.  Select **Enable maintenance mode integration with Operations Manager**, if desired. Then click **Next**.
 
     When hosts are placed in maintenance mode using the VMM management server, Operations Manager places them in maintenance mode as well. In this mode, the Operations Manager agent suppresses alerts, notifications, rules, monitors, automatic responses, state changes, and new alerts.
@@ -95,4 +95,4 @@ You can monitor VMM processes and state in any of the VMM dashboards that appear
 
 ## Next steps
 
-- Run VMM reports(monitor-overview.md#report-with-operations-manager) in Operations Manager
+- [Run VMM reports](manage-monitor-overview.md#report-with-operations-manager) in Operations Manager
