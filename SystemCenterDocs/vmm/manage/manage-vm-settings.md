@@ -3,11 +3,11 @@ title: Configure virtual machine settings in the VMM compute fabric
 description: This article describes how to configure settings for VMs in the VMM fabric
 author:  rayne-wiselman
 manager:  cfreemanwa
-ms.date:  2016-09-13
+ms.date:  2016-09-19
 ms.topic:  article
 ms.prod:  system-center-threshold
 ms.technology:  virtual-machine-manager
----t
+---
 
 
 # Configure virtual machine settings in the VMM compute fabric
@@ -114,7 +114,7 @@ Set the checkpoint with the following PowerShell command: **Set-SCVirtualMachine
 
 ## Configure availability options for clustered VMs
 
-You can configure a number of setting that help keep virtual machines  in a cluster available
+You can configure a number of setting that help high availability and resilience for virtual machines in a cluster:
 
 - **Virtual machine priority**: You can configure priority settings for VMs deployed in a host cluster. Based on VM priority, the host cluster starts or places high-priority virtual machines before medium-priority or low-priority virtual machines. This ensures that the high-priority virtual machines are allocated memory and other resources first, for better performance. Also, after a node failure, if the high-priority virtual machines do not have the necessary memory and other resources to start, the lower priority virtual machines will be taken offline to free up resources for the high-priority virtual machines. Virtual machines that are preempted are restarted later in priority order.
 - **Preferred and possible owners of virtual machines**: These settings influence the placement of virtual machines on the nodes of the host cluster. By default, there are no preferred owners (there is no preference), and the possible owners include all server nodes on the cluster.
