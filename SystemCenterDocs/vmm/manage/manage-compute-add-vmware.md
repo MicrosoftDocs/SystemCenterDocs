@@ -15,15 +15,15 @@ ms.technology:  virtual-machine-manager
 
 >Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
 
-Read this article to learn about managing VMware servers and VMs in the System Center 2016 - Virtual Machine Manager (VMM) fabric. You add vCenter and ESX/ESXi hosts to the fabric, associate adapters on hosts with logical networks, and import templates from VMware if required. You'll also learn about current options for converting VMware VMs to Hyper-V (V2V).
-
-## Overview
+Read this article to learn about managing VMware servers and VMs in the System Center 2016 - Virtual Machine Manager (VMM) fabric.
 
 VMM enables you to deploy and manage virtual machines and services across multiple hypervisor platforms, including VMware vSphere hosts and vCenter servers.
 
+- You can add vCenter and vSphere hosts to the VMM fabric.
 - VMM integrates directly with VMware vCenter Server. Through the VMM console, you can manage the day-to-day operations of VMware vSphere hosts and clusters, such as the discovery and management of hosts.
-- VMM provides the ability to create, manage, store, place and deploy virtual machines on vSphere hosts.
-- More advanced management should continue on the vCenter Server, for example configuring port groups,  standard and distributed virtual switches (or “vSwitches”), vMotion and Storage vMotion.
+- VMM provides the ability to create, manage, store, place and deploy virtual machines on vSphere hosts. You can import VMware templates.
+- You can associate host adapters with VMM logical networks. More advanced management takes place on the vCenter Server, for example configuring port groups, standard and distributed virtual switches (or “vSwitches”), vMotion and Storage vMotion.
+- You can convert VMware VMs to Hyper-V.
 
 
 ## Before you start
@@ -59,20 +59,20 @@ VMM enables you to deploy and manage virtual machines and services across multip
 3. In **Run As account** click the Run As account with admin permissions for the vCenter server. Click **Create Run As Account** if you don't have one.
 4. In **Security** select or clear **Communicate with VMware ESX hosts in secure mode**. We recommend you keep the setting checked. If selected you'll need a certificate and public key for each vSphere host managed by the vCenter server.
 5. If you're using a self-signed certificate to communicate with the vCenter server and you haven't manually copied it to the Trusted People certificate store the **Import Certificate** dialog will appear. Click **Import** to add the certificate to the store.
-6. In **Jobs** wait until the job has a Completed status and then check that the server appears in **Fabric** > ****Servers > **vCenter Server** with a **Responding** status.
+6. In **Jobs**, wait until the job has a Completed status and then check that the server appears in **Fabric** > **Servers** > **vCenter Server** with a **Responding** status.
 
 
 ## Add an ESX/ESXi host
 
-1. Ensure that the vCenter server is managed by VMM before you start. When you added the vCenter server vSphere hosts for the server are discovered automatically.
+1. Ensure that the vCenter server is managed by VMM before you start. When you add the vCenter server, vSphere hosts for the server are discovered automatically.
 2. Click **Fabric** > **Add Resources** > **VMware ESX Hosts and Clusters**.
-2. In the **Add Resource Wizard** > **Credentials** click the Run As account that has admin permissions on the vSphere hosts you want to add. Create a Run As account if you don't have one
+2. In the **Add Resource Wizard** > **Credentials**, click the Run As account that has admin permissions on the vSphere hosts you want to add. Create a Run As account if you don't have one
 3. In **Target Resources** click the vCenter server. If the hosts are clustered they'll be listed together with the cluster nodes.
-3. In **Computer Name** select the hosts or clusters you want to add, or **Select All**.
-4. In **Host Settings** click the host group to which you want to assign the host or cluster. You don't need to add VM placement paths.
-5. In **Summary** verify the settings and click **Finish**. Wait until the Jobs dialog shows a **Completed** status.
+3. In **Computer Name**, select the hosts or clusters you want to add, or **Select All**.
+4. In **Host Settings**, click the host group to which you want to assign the host or cluster. You don't need to add VM placement paths.
+5. In **Summary**, verify the settings and click **Finish**. Wait until the Jobs dialog shows a **Completed** status.
 6. Click **Fabric** > **Servers **> **All Hosts** and in the host group check the status of each host or cluster. Either **OK** or **OK (limited)**.
-7. If it's limited it means you've enabled the setting **Communicate with VMware ESX hosts in secure mode** but haven't yet imported a certificate from each vSphere host. To modify the security setting right-click the vCenter server > **Properties** > **Security**.
+7. If the status is limited it means you've enabled the setting **Communicate with VMware ESX hosts in secure mode** but haven't yet imported a certificate from each vSphere host. To modify the security setting right-click the vCenter server > **Properties** > **Security**.
 5. To import the certificate click each relevant host name > **Properties** > **Management** > **Retrieve** > **OK**. The host status should be **OK** after the import.
 
 ## Associate host adapters with logical networks
@@ -82,17 +82,17 @@ By default when you added vSphere hosts to VMM, VMM automatically created logica
 Associate the logical network with the physical network adapter (for an external virtual network) as follows:
 
 1. Click **Fabric** > **Servers** > **All Hosts** > vSphere host > **Host** > **Properties** > **Hardware**.
-2. In **Network Adapters** select the physical network adapter on the host. In L**ogical network connectivity** select the logical networks you want to associate with the adapter. Note that only logical networks available to the host group are available.
+2. In **Network Adapters**, select the physical network adapter on the host. In **Logical network connectivity**, select the logical networks you want to associate with the adapter. Note that only logical networks available to the host group are available.
 3. Click **Advanced** > **Advanced Network Adapter Properties** to see IP subnets and VLANs available for a logical network. By default for a logical network the subnets and VLANs are scope to the host group or inherited via a parent host group. If none appears it indicates that no network site existing for the logical network. If **Unassigned** is available click it to view VLANS to which the physical adapter is connected, but that aren't included in a network site.
-4. View virtual network settings in the host properties > **Virtual Networks**. View compliance information in **Fabric** > **Networking** > **Logical Networks** > **Hosts** > **Logical Network Information for Hosts** > **Compliance**. **Fully compliant** indicates that all subnets and VLAN that are in the network site are assigned to the network adapter.
+4. View virtual network settings in the host properties > **Virtual Networks**. View compliance information in **Fabric** > **Networking** > **Logical Networks** > **Hosts** > **Logical Network Information for Hosts** > **Compliance**. A status of **Fully compliant** indicates that all subnets and VLAN that are in the network site are assigned to the network adapter.
 
 
 ## Import templates from vCenter
 
 You can import VMware templates from the vCenter server to the VMM library. VMM copies only the metadata associated with the template and not the .vmdk file. This means that VMM is dependent on the vCenter server to use the template.
 
-1. Click **Library **> **Home **> **Import** > **Import VMware template**.
-2. In **Import VMware Templates** select each template you want to import and click OK.
+1. Click **Library** > **Home** > **Import** > **Import VMware template**.
+2. In **Import VMware Templates**, select each template you want to import and click OK.
 3. Verify the templates in **Library** > **Templates** > **VM Templates**.
 
 ## Set up a servicing window for a VMware host
