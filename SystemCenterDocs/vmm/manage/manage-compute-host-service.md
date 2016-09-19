@@ -46,7 +46,7 @@ You can service hosts and VMs by:
 ## Put hosts in maintenance mode
 
 1. In the VMM console, click **Fabric**  > **Fabric Resources** > **Servers** > **All Hosts**.
-2. Select the host that you want to place in maintenance mode, and in the **Host** group click **Start Maintenance Mode**. You can select to:
+2. Select the host to place in maintenance mode, and in the **Host** group click **Start Maintenance Mode**. You can select to:
 
 	- You can select **Move all virtual machines to other hosts in the cluster** if you want to move all highly available VMs to other hosts in the cluster (the host must be in a cluster that's capable of live migration)
 	- Otherwise, select **Place all running virtual machines into a saved state**. Note that list causes a loss of service for users currently using the VM.
