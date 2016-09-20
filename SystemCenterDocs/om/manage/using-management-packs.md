@@ -39,7 +39,4 @@ Management packs might also contain tasks, diagnostics, and recovery tools and g
 
 -   [Operations Manager](assetId:///d88087e5-b517-428e-bde9-8df9fe9366a6)
 
--   [System Center 2016 - Operations Manager Operations Guide](System-Center-2016---Operations-Manager-Operations-Guide.md)
-
-
-
+-   [System Center 2016 - Operations Manager Operations Guide](System-Center-2016-Operations-Manager-Operations-Guide.md)

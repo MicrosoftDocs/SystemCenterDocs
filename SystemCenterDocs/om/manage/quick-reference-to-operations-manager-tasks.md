@@ -39,7 +39,4 @@ The following table gives a quick reference for where to perform common tasks an
 |||
 
 ## See Also
-[Operations Guide for System Center 2016 - Operations Manager](System-Center-2016---Operations-Manager-Operations-Guide.md)
-
-
-
+[Operations Guide for System Center 2016 - Operations Manager](System-Center-2016-Operations-Manager-Operations-Guide.md)

@@ -132,11 +132,8 @@ For each agent, Operations Manager runs a *health service watcher*, which monito
 
 -   To learn how to install Operations Manager and deploy a management group, see [Deploying System Center 2016 Technical Preview - Operations Manager](../Operations-Manager.md)
 
--   To learn how to use Operations Manager after the management group is set up, see [System Center 2016 Technical Preview - Operations Manager Operations Guide](../Manage/System-Center-2016---Operations-Manager-Operations-Guide.md)
+-   To learn how to use Operations Manager after the management group is set up, see [System Center 2016 Technical Preview - Operations Manager Operations Guide](../Manage/System-Center-2016-Operations-Manager-Operations-Guide.md)
 
 -   To learn how to create a management pack, see [Author's Guide for Operations Manager for System Center 2012](http://go.microsoft.com/fwlink/p/?LinkID=212377)
 
 -   [Operations Manager Community](http://go.microsoft.com/fwlink/p/?LinkID=221328)
-
-
-
