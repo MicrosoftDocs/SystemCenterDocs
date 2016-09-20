@@ -62,7 +62,7 @@ Comprehensive monitoring requires that an agent be installed on the discovered c
 
 -   [TechNet Library main page for Operations Manager](http://go.microsoft.com/fwlink/p/?LinkId=223634)
 
--   [Operations Guide for System Center 2016 - Operations Manager](System-Center-2016---Operations-Manager-Operations-Guide.md)
+-   [Operations Guide for System Center 2016 - Operations Manager](System-Center-2016-Operations-Manager-Operations-Guide.md)
 
 -   [How to Discover Network Devices in Operations Manager](How-to-Discover-Network-Devices-in-Operations-Manager.md)
 
@@ -75,6 +75,3 @@ Comprehensive monitoring requires that an agent be installed on the discovered c
 -   [General Tasks in Operations Manager](https://technet.microsoft.com/library/hh212906%28v=sc.16%29.aspx)
 
 -   [Maintenance of Operations Manager](https://technet.microsoft.com/library/hh212717%28v=sc.12%29.aspx)
-
-
-
