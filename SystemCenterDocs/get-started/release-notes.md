@@ -530,7 +530,7 @@ If you used the default instance of SQL Server, use Windows Explorer to drag Mic
 
 **Workaround:** After upgrading the cluster's functional level, refresh the storage provider for the File Server. This will refresh the platform information.
 
-#### Adding a cluster the VMM Administrative console may result in an error
+#### Adding a cluster via the VMM Administrative console may result in an error
 **Description:** When you add a cluster as a resource in the VMM Administrative console you may receive an error stating "There were no computers discovered based on your inputs".
 
 **Workaround:** Select OK, close the error dialog box, and retry adding the cluster.
@@ -554,6 +554,10 @@ The failure happens at the last step of the job in which the VM is shutdown afte
 
 **Workaround:** Repair and ignore the job.
 
+#### VMM does not immediately reflect changes to security properties
+**Description:** Changing the secure boot properties of a Gen 2 VM or disabling/enabling vTPM for a shielded VM, outside of VMM, does not immediately reflect in VMM.
+**Workaround:** Manually refresh the VM in VMM to ensure the changes done outside of VMM are reflected.
+
 #### Storing a VM in VMM Library fails if you change the default port for BITS(443) while configuring the VMM Server
 **Description:** Storing a VM in VMM Library will fail with the error below if you change the default port for BITS (443) while configuring the VMM Server.
 *Error (2940) VMM is unable to complete the requested file transfer. The connection to the HTTP Server \<name> could not be established.*
@@ -561,25 +565,29 @@ The failure happens at the last step of the job in which the VM is shutdown afte
 **Workaround:** Manually add the new port number to the Windows Firewall exceptions list of the Nano host using the below command:
 netsh advfirewall firewall add rule name="VMM" dir=in action=allow localport=<port no.> protocol=TCP
 
-#### Bare Metal Deployment of Nano Server-based Compute & Storage clusters may fail
-**Description:** Bare metal deployment of Nano Server-based Compute & Storage clusters using VMM may fail.
+#### VMM does not support creation of VM Templates from a Nano Server-based VM.
+**Description:** When you try to create a VM template from a Nano Server-based VM, you will receive the below error:
+*Error (2903)
+VMM could not locate the specified file/folder '' on the '<server name>' server. This file/folder might be required as part of another object.
+The system cannot find the file specified (0x80070002)
 
-**Workaround:** Skipping the cluster validation while deployment typically works, if it does not work for you, do bare metal deployment of Nano Server-based individual hosts and then create a cluster out of the hosts.
+Recommended Action
+Ensure that you have specified a valid path parameter, and that all necessary files/folders are present. Try the operation again.*
+**Workaround:** Create a VM template from scratch using a Nano Server VHD.
 
 #### Service deployments from Service templates will fail if you include "Desktop Experience" & other GUI related features in your service template
 **Description:** Deploying a Service template that has "Desktop Experience" & other GUI related features included will fail as these options are no longer supported in Windows Server.
 
 **Workaround:** There is no workaround, do not include these features in your service template.
 
-#### Deployment of Service and servicing of a service on Server Core or Nano Server-based hosts will fail if the host has Guest Integration Services disabled
-**Description:** If you try to deploy a service or service a service on a Server Core/Nano Server host that has Guest Integration Services disabled, it will fail.
+#### Servicing a service post an upgrade from VMM 2012 R2 to VMM 2016 will not update the VMM guest agents
+**Description:** When you upgrade your VMM environment from 2012 R2 to 2016 with existing service deployments and then service those services, VMM 2016 guest agents will not get updated on the VMs that were part of the service deployment. There is no functionality impact due to this.
+**Workaround:** Manually install the VMM 2016 guest agent.
 
-**Workaround:** For the host (Server Core/Nano Server), use a VHD that has Guest Integration Services enabled to workaround the issue.
-
-#### Attempting to join a Nano Server VM to a domain during deploying the VM will fail, the VM gets deployed but does not join the domain
+#### Attempt to join a Nano Server-based VM to a domain while deploying the VM will fail, the VM will get deployed but will not join the domain
 **Description:** While deploying a Nano Server VM, if you try to join the VM to a domain by specifying the domain join information on the OS Configuration page of the VM deployment Wizard, VMM will deploy the VM but will not join it to the specified domain.
 
-**Workaround:** After the VM is deployed, create an offline domain join blob and run the djoin cmdlet to join the VM to the domain
+**Workaround:** After the VM is deployed, manually join the VM to the domain. For more details on how to do this, see the 'Joining Nano Server to a domain' section in the [Getting Started with Nano Server guide](https://technet.microsoft.com/en-us/windows-server-docs/compute/nano-server/getting-started-with-nano-server).
 
 #### VMM throws an error when you start a VM configured for Start Ordering
 **Description:** Windows Server 2016 has a new functionality called VM Start Ordering which can be used to define the order in which dependent VMs will get started. This functionality is not exposed through VMM today. However, if you have configured VM start ordering outside of VMM, VMM does honor the order in which the VMs will start. It however throws the below false positive error which should be ignored *Error (12711)
