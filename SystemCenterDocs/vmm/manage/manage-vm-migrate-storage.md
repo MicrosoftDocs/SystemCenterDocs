@@ -2,8 +2,9 @@
 title: Migrate storage in the VMM fabric
 description: This article describes how to migrate storage in the VMM fabric
 author:  rayne-wiselman
+ms-author: raynew
 manager:  cfreemanwa
-ms.date:  2016-09-14
+ms.date:  2016-09-22
 ms.topic:  article
 ms.prod:  system-center-threshold
 ms.technology:  virtual-machine-manager
@@ -11,7 +12,8 @@ ms.technology:  virtual-machine-manager
 
 
 # Migrate storage in the VMM fabric
->Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
+
+>Applies To: System Center 2016 - Virtual Machine Manager
 
 This article describes how to migrate storage in the VMM fabric
 

@@ -2,8 +2,9 @@
 title: Provision a scale-out file server (SOFS) cluster from bare metal computers
 description: This article provides about provisioning an SOFS in the VMM fabric
 author:  rayne-wiselman
+ms.author: raynew
 manager:  cfreemanwa
-ms.date:  2016-09-11
+ms.date:  2016-09-22
 ms.topic:  article
 ms.prod:  system-center-threshold
 ms.technology:  virtual-machine-manager
@@ -11,7 +12,7 @@ ms.technology:  virtual-machine-manager
 
 # Provision a scale-out file server (SOFS) cluster from bare metal computers in the VMM fabric
 
->Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
+>Applies To: System Center 2016 - Virtual Machine Manager
 
 In addition to adding existing file servers to an SOFS cluster in the System Center 2016 - Virtual Machine Manager (VMM)  fabric, VMM can discover provision bare-metal machines as SOFS cluster nodes. This article includes the steps for setting up a bare metal SOFS cluster in VMM.
 
@@ -20,13 +21,13 @@ In addition to adding existing file servers to an SOFS cluster in the System Cen
 Here's what you need for the deployment:
 
 - **Physical computers** to deploy as SOFS cluster nodes. These computers must meet the prerequisites described in the table below. They can be running on operating system, or an operating system that will be overwritten during the deployment process.
-- **Virtual hard disk** with an appropriate operatng system, located on a VMM library share. When you create the virtual hard disk, you can create a virtual machine, install the guest operating system, and then use Sysprep with the /generalize and the /oobe options.<br/><br/> The operating system on the virtual hard disk that you deploy on the cluster nodes must support the boot from virtual hard disk (VHD) option.
-- **PXE server** configured with Windows Deployment Services is needed for bare metal deplyoment.
+- **Virtual hard disk** with an appropriate operating system, located on a VMM library share. When you create the virtual hard disk, you can create a virtual machine, install the guest operating system, and then use Sysprep with the /generalize and the /oobe options.<br/><br/> The operating system on the virtual hard disk that you deploy on the cluster nodes must support the boot from virtual hard disk (VHD) option.
+- **PXE server** configured with Windows Deployment Services is needed for bare metal deployment.
 
 ### Physical computer requirements
 
 **Prerequisite** | **Details**
---- | --- 
+--- | ---
 **BMC** | Each physical computer must have a baseboard management controller (BMC) installed that enables out-of-band management by VMM.<br/><br/> Through a BMC, you can access the computer remotely, independent of the operating system, and control system functions such as the ability to turn the computer off or on.<br/><br/> The BMCs must use one of the supported out-of-band management protocols, and the management protocol must be enabled in the BMC settings.<br/><br/> Supported protocols: Intelligent Platform Management Interface (IPMI) versions 1.5 or 2.0; Data Center Management Interface (DCMI) version 1.0; System Management Architecture for Server Hardware (SMASH) version 1.0 over WS-Management (WS-Man); custom protocols such as Integrated Lights-Out (iLO)<br/><br/> The BMCs should use the latest version of firmware for the BMC model.<br/><br/> The BMCs must be configured with logon credentials and must use either static IP addressing or DHCP. If you use DHCP, we recommend that you configure DHCP to assign a constant IP address to each BMC, for example by using DHCP reservations.<br/><br/> The VMM management server must be able to access the network segment on which the BMCs are configured.
 **Operating system** | Physical computers must be running Windows Server 2012 R2 or later.
 **Accounts** | You'll need two RunAs accounts.<br/><br/> A Run As account for joining computers to the domain, and an account for access to the BMC on each computer.
@@ -35,7 +36,7 @@ Here's what you need for the deployment:
 ### PFX server requirements
 
 **Prerequisite** | **Details**
---- | --- 
+--- | ---
 **Deployment requirements** | You must have a PXE server configured with Windows Deployment Services.<br/><br/> If you have an existing PXE server in your environment configured with Windows Deployment Services, you can add that server to VMM. Then you can use it for provisioning in VMM (and VMM will recognize only the resulting servers). All other requests will continue to be handled by the PXE server according to how it is configured.<br/><br/> If you don't have an existing PXE server, you can deploy the Windows Deployment Services role on a server running a supported operating system (Windows Server 2008 R2 or later).
 **Location** | The PXE server must be in the same subnet as the physical computers that you want to provision.
 **Windows Deployment Services installation** | When you install Windows Deployment Services you should install both the Deployment server and Transport server options. You don't need to add images.<br/><br/> During host deployment, VMM uses a virtual hard disk that you've created and stored in the library.<br/><br/> You don't need to configure settings on the PXE response tab. VMM provides its own PXE provider.
@@ -45,7 +46,7 @@ Here's what you need for the deployment:
 ### Virtual disk and template requirements
 
 **Prerequisite** | **Details**
---- | --- 
+--- | ---
 **Virtual hard disk** | Make sure you have a generalized virtual hard disk in a VMM library share. It should be running Windows Server 2012 R2 or later.<br/><br/> We recommend that for production servers, you use a fixed disk (.vhd or .vhdx file format) to increase performance and to help protect user data.<br/><br/> Make sure you have a generalized virtual hard disk in a VMM library share. It should be running Windows Server 2012 R2 or later.
 **Dynamic disk** | When you create a physical computer profile, VMM converts a dynamic disk to a fixed disk.
 **Custom drivers** | If you plan to assign custom drivers to a physical computer profile, you add them to a VMM library share in one or more folders with a .CR (custom resources) extension. VMM recognizes them as custom resources.
@@ -83,7 +84,7 @@ Prepare each computer to support virtualization, as follows:
 2. In **Computer name** specify the PXE server name.
 3. Add the credentials for an account that has local administrator permissions on the PXE server. You can specify an existing Run As account, or create a new account. Manually enter user credentials in the format domain_name\user_name. Then click **Add**.
 4. In **Jobs**, verify that the job status is **Completed**, and close the dialog box. The job sets up the new PXE server, installs the VMM agent on the PXE server, imports a new Windows Preinstallation Environment (Windows PE) image, and adds the machine account to VMM for the PXE server.
-5. Verify that the PXE server is added in **Fabric** > **Servers** > **PXE Servers** > **Home** > **Show** > **Fabric Resources** > **PXE Servers**. The agent status should be **Responding**.
+5. Verify that the PXE server is added in **Fabric** > **Servers** > **PXE Servers**. The agent status should be **Responding**.
 
 ## Add custom resources to the library
 
@@ -137,9 +138,3 @@ Run the wizard:
 	- **DHCP**: If your physical computer profile uses DHCP click an BMC IP address and type in a computer name. Decide whether to skip the AD check. If you do the check deployment will continue if the computer account exists. Click the entry for each BMC IP address.
 	- **Static**: If the profile uses static IP addresses for each BMC IP addre. ss type in a MAC address of the computer's network adapter that's used to communicate with VMM. Click the logical network you want to use. The default logical network is the one indicated in the profile. Click the IP subnet you want to use. The subnet list is scope to what's defined for the logical network in the associated network sites. You should select the IP subnet that corresponds to the physical location in which you're deploying the server and the network to which the adapter is connected. you can automatically assign an IP address or assign a specific address.
 8. In **Summary**, confirm the settings and click **Finish**. To confirm the cluster was added, click **Fabric** > **Storage** > **File Servers**.
-
-## Next steps
-
-You can add a bare metal computer to an existing host cluster. If you created the cluster from bare metal you can use the same elements, including the physical computer profile and PXE server.
-
-To add a computer to an existing host cluster follow the instructions in [Provision a Scale-Out File Server cluster from bare metal](#provision-a-scale-out-file-server-cluster-from-bare-metal) but add a cluster instead of creating one (**Fabric** > **Servers **> **All hosts** > host-cluster-name > **Add Cluster node**).
