@@ -2,7 +2,7 @@
 title: Add a network virtualization gateway to the VMM fabric
 description: This article provides about adding a gateway to the VMM fabric
 author:  rayne-wiselman
-ms-author: raynew
+ms.author: raynew
 manager:  cfreemanwa
 ms.date:  2016-09-22
 ms.topic:  article
