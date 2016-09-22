@@ -2,8 +2,9 @@
 title: Install VMM
 description: This article provides installation instructions for VMM
 author:  rayne-wiselman
+ms-author: raynew
 manager:  cfreemanwa
-ms.date:  2016-09-01
+ms.date:  2016-09-22
 ms.topic:  article
 ms.prod:  system-center-threshold
 ms.technology:  virtual-machine-manager
@@ -11,7 +12,7 @@ ms.technology:  virtual-machine-manager
 
 # Install VMM
 
->Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
+>Applies To: System Center 2016 - Virtual Machine Manager
 
 Use this article to install the System Center 2016 - Virtual Machine Manager (VMM) management server.
 
@@ -33,7 +34,7 @@ Use this article to install the System Center 2016 - Virtual Machine Manager (VM
 7. On the **Usage and Connectivity Data** page, select either option, and then click **Next**.
 8. If the **Microsoft Update** page appears, select whether you want to use Microsoft Update, and then click **Next**. If you've already chosen to use Microsoft Update on this computer the page won't appear.
 9. On the **Installation location** page, use the default path or type a different installation path for the VMM program files, and then click **Next**. The setup program checks the computer on which you are installing the VMM management server to ensure that the computer meets the appropriate hardware and software requirements. If the computer does not meet a prerequisite, a page that contains information about the prerequisite and how to resolve the issue appears.
-10. On the **Database configuration** page,  if you;re using a remote SQL instance specify the name of the computer that is running SQL Server. If you are installing the VMM management server on the same computer that is running SQL Server, then in the **Server name** box, either type the name of the computer (for example, **vmmserver01**) or type **localhost**. If the SQL Server is in a cluster, type the cluster name.
+10. On the **Database configuration** page,  if you're using a remote SQL instance specify the name of the computer that is running SQL Server. If you are installing the VMM management server on the same computer that is running SQL Server, then in the **Server name** box, either type the name of the computer (for example, **vmmserver01**) or type **localhost**. If the SQL Server is in a cluster, type the cluster name.
 11. Don't specify a **Port** value if you don't have a remote instance of SQL Server, or if you have a remote SQL Server that uses the default port (1443).
 12. Specify the SQL Server instance name and whether to use an existing or new database. You'll need an account with permissions to connect to the instance.
 13. On the **Configure service account and distributed key management** page, specify the account that the VMM service will use. You can't change the identity of the VMM service account after installation.

@@ -1,17 +1,18 @@
 ---
-title: Upgrade to VMM in System Center Technical Preview
-description: This article helps you to upgrade your existing VMM deployment to System Center Technical Preview
+title: Upgrade to System Center 2016 - VMM
+description: This article helps you to upgrade your existing VMM deployment to System Center 2016 - VMM
 author:  rayne-wiselman
+ms-author: raynew
 manager:  cfreemanwa
-ms.date:  2016-09-01
+ms.date:  2016-09-22
 ms.topic:  article
 ms.prod:  system-center-threshold
 ms.technology:  virtual-machine-manager
 ---
 
-# Upgrade to VMM in System Center Technical Preview
+# Upgrade to System Center 2016 - VMM
 
->Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
+>Applies To: System Center 2016 - Virtual Machine Manager
 
 This article describes prerequisites for upgrading to System Center 2016 - Virtual Machine Manager (VMM). It includes upgrade steps, and describes tasks you should complete after the upgrade finishes.
 
@@ -23,8 +24,8 @@ This article describes prerequisites for upgrading to System Center 2016 - Virtu
 - Ensure that there are no pending restarts on the computers on which the VMM roles are installed. For example, if you have installed a server role by using Server Manager or have applied a security update, you may need to restart the computer. After you have restarted the computer, sign in to the computer with the same user account to finish the installation of the server role or the security update.
 - If you've deployed VMM with Azure Site Recovery make sure the latest version of the Microsoft Azure Site Recovery Provider is installed on the VMM management server. After the upgrade, you'll need to reinstall the Provider.
 - Perform a full backup of the VMM database.
-- Ensure that the server meets all requirements for VMM in System Center Technical Preview.
-- If needed, upgrade SQL Server to a supported version. If the version you're using is supported in System Center Technical Preview you don't need to upgrade.
+- Ensure that the server meets all requirements for VMM.
+- If needed, upgrade SQL Server to a supported version.
 - Install Windows 8.1 Assessment and Deployment Kit (Windows ADK).
 - If the current database is configured with AlwaysOn Availability Groups, complete the following tasks:
 	- If the VMM database is included in the availability group, remove it. You can use the Microsoft SQL Management Studio tool to perform this task.
@@ -69,7 +70,7 @@ During Setup, VMM enables the following firewall rules. These rules remain in ef
 Here's what you'll need to do:
 
 1. Uninstall VMM from the cluster nodes that you want to upgrade, while choosing to retain the database.
-2. We strongly recommend that you upgrade the operating system to Windows Server Technical Preview on the VMM management server.
+2. We strongly recommend that you upgrade the operating system to Windows Server 2016 on the VMM management server.
 
 	- If you choose to not upgrade Windows, delete the high availability VMM resource group from the failover cluster.
 	- If you choose to upgrade Windows:
