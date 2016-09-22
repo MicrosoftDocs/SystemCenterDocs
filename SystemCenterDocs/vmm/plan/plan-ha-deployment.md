@@ -66,4 +66,4 @@ You can create highly-available library servers to ensure that file-based resour
 
 ## Next steps
 
-[Set up a highly available VMM deployment](..deploy/deploy-vmm-ha.md)
+[Set up a highly available VMM deployment](../deploy/deploy-vmm-ha.md)
