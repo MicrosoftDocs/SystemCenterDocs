@@ -2,7 +2,7 @@
 title: Install the VMM console
 description: This article provides installation instructions for the VMM console
 author:  rayne-wiselman
-ms-author: raynew
+ms.author: raynew
 manager:  cfreemanwa
 ms.date:  2016-09-22
 ms.topic:  article
