@@ -73,6 +73,3 @@ Comprehensive monitoring requires that an agent be installed on the discovered c
 -   [General Tasks in Operations Manager](https://technet.microsoft.com/library/hh212906%28v=sc.16%29.aspx)
 
 -   [Maintenance of Operations Manager](https://technet.microsoft.com/library/hh212717%28v=sc.12%29.aspx)
-
-
-
