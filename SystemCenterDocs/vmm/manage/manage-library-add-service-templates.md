@@ -2,8 +2,9 @@
 title: Add service templates to the VMM library
 description: This article provides guidance for adding service templates to the library in the VMM compute fabric
 author:  rayne-wiselman
+ms.author: raynew
 manager:  cfreemanwa
-ms.date:  2016-09-04
+ms.date:  2016-09-22
 ms.topic:  article
 ms.prod:  system-center-threshold
 ms.technology:  virtual-machine-manager
@@ -12,11 +13,9 @@ ms.technology:  virtual-machine-manager
 
 # Add service templates to the VMM library
 
->Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
+>Applies To: System Center 2016 - Virtual Machine Manager
 
 Read this article to learn about setting up service templates in the System Center 2016 - Virtual Machine Manager (VMM) library.
-
-## Overview
 
 Service templates group VMs together to provide an app. They contain information about a service, including the VMs that are deployed as part of the service, the applications installed on VMs, and the network settings that should be used. You can add VM templates, network settings, applications, and storage to a service template.
 
