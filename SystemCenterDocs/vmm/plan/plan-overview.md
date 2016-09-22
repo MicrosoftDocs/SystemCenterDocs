@@ -2,7 +2,7 @@
 title: Plan VMM deployment
 description: This article provides links to planning System Center VMM 2016 deployment
 author:  rayne-wiselman
-ms-author: raynew
+ms.author: raynew
 manager:  cfreemanwa
 ms.date:  2016-09-22
 ms.topic:  article
