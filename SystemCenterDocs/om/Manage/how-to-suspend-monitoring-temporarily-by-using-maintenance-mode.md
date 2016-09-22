@@ -1,15 +1,13 @@
 ---
 title:  How to Suspend Monitoring Temporarily by Using Maintenance Mode
 description:  
-manager:  cfreemanwa
-authors: mgoedtel
-ms.topic:  article
-ms.author:  magoedte
-ms.prod:  system-center-threshold
-keywords:  
-ms.date:  2016-08-11
-ms.technology:  operations-manager
-ms.assetid:  e929ecc9-ad1f-46f6-bb93-9e0aa02580b2
+author: mgoedtel
+manager: cfreemanwa
+ms.date: 2016-09-20
+ms.custom: na
+ms.prod: system-center-threshold
+ms.technology: operations-manager
+ms.topic: article
 ---
 
 
@@ -32,6 +30,10 @@ Maintenance mode in Operations Manager enables you to avoid any alerts or errors
 For example, an Exchange mailbox role running on a Windows server will have an Exchange Server service pack applied. This software update maintenance is expected to take 60 minutes to complete. During this time, the Mailbox database running on this server will not be available.
 
 In this case, we can put the Exchange Mailbox role and contained components into Maintenance Mode instead of putting the entire computer into Maintenance Mode. This way we can continue to monitor the other components running on the server, including the Windows operating system, while maintenance is performed specifically to the Exchange Server application.
+
+> [!NOTE]
+> Placing a Nano Server into maintenance mode is not supported in this release.  
+
 
 You can either select one or more monitoring objects and place them into maintenance mode on-demand, or you can define schedules aligned with your service or maintenance windows, and automatically place them into maintenance mode in the future according to the schedule you choose.  With the new scheduling feature, you can:
 
@@ -59,7 +61,7 @@ Important Information about configuring and working with the Maintenance Schedul
 >   - SQLAgentReaderRole
 >   - SQLAgentOperatorRole
 >
-
+>   For more information about setting the SDK action account see [Account Information for Operations Manager](../plan/planning-security-accounts.md#system-center-configuration-service- and-system-center-data-access-service-account)
 
 To support the scenario of initiating maintenance mode directly from the agent-managed computer, Operations Manager now supports allowing a server administrator to set the machine in maintenance mode directly from the computer itself, without needing to perform this from the Operations console.  This can be performed with the new PowerShell cmdlet **Start-SCOMAgentMaintenanceMode**.  
 
