@@ -2,8 +2,9 @@
 title: Set up dynamic and power optimization in the VMM compute fabric
 description: This article describes how to configure dynamic optimization and power optimization in the VMM fabric
 author:  rayne-wiselman
+ms.author: raynew
 manager:  cfreemanwa
-ms.date:  2016-09-04
+ms.date:  2016-09-22
 ms.topic:  article
 ms.prod:  system-center-threshold
 ms.technology:  virtual-machine-manager
@@ -11,7 +12,7 @@ ms.technology:  virtual-machine-manager
 
 # Set up dynamic and power optimization in the VMM compute fabric
 
->Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
+>Applies To: System Center 2016 - Virtual Machine Manager
 
 Read this article to learn about enabling dynamic optimization and power optimization for VMs in the System Center 2016 - Virtual Machine Manager (VMM) compute fabric. The article includes a feature overview, instructions for setting up BMC for power optimization, and describes how to enable and run these features.
 
@@ -62,7 +63,7 @@ For hosts with BMC that supports IMPI 1.5/2.0, DCMI 1.0 or SMASH 1.0 overe WS-Ma
 5.  In **Aggressiveness**, select **High**, **Medium**, or **Low**.
 
     Aggressiveness determines the amount of imbalance in virtual machine load on the hosts that is required in order to initiate a migration during Dynamic Optimization. When you configure frequency and aggressiveness for dynamic optimization, you should try to balance the resource cost of additional migrations against the advantages of balancing load among hosts in a host cluster. Initially, you might accept the default value of **Medium**. After you observe the effects of dynamic optimization in your environment, you can increase the aggressiveness.
-    
+
     To help conserve energy by having VMM turn off hosts when they are not needed and turn them on again when they are needed, configure power optimization for the host group. Power optimization is only available when virtual machines are being migrated automatically to balance load.
 
 6.  To periodically run dynamic optimization on qualifying host clusters in the host group, enter the following settings:
