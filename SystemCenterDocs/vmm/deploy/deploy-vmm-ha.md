@@ -2,7 +2,7 @@
 title: Deploy VMM for high availability
 description: This article describes how to deploy VMM in high availability mode.
 author:  rayne-wiselman
-ms-author: raynew
+ms.author: raynew
 manager:  cfreemanwa
 ms.date:  2016-09-22
 ms.topic:  article
