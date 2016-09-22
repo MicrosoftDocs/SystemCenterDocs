@@ -131,4 +131,4 @@ The library server is where VMM stores items such as virtual machine templates, 
 
 ## Next steps
 
-[Install VMM](..deploy/deploy-install.md)
+[Install VMM](../deploy/deploy-install.md)
