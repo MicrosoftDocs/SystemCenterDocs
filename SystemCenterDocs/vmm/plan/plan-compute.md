@@ -31,7 +31,7 @@ Note the following:
 VMM supports Hyper-V and VMware virtualization hosts. When you're adding, provisioning, and managing hosts in the VMM fabric consider these points:
 
 - The topology of Hyper-V hosts. VMM can work with Hyper-V hosts that are located in the same domain as the VMM server, in a domain with a two-way trust, or in a domain without a two-way trust. VMM can also work with Hyper-V hosts that are in a perimeter network, or a in disjointed namespace.
-- The topology of VMware hosts. VMM can work with VMware hosts located anywhere in your environment.
+- The topology of VMware hosts. VMM works with VMware hosts located anywhere in your environment.
 - The number and type of guest operating systems running on the host.
 - The system configuration of the VMs running on the host.
 - The types of apps running on the guest operating systems.
