@@ -1,6 +1,8 @@
 ---
 title: Work with VMM as a self-service user
 description: This article describes how to work with VMM as a self-service user
+author:  rayne-wiselman
+ms.author: raynew
 manager:  cfreemanwa
 ms.date:  2016-09-15
 ms.topic:  article
@@ -11,7 +13,7 @@ ms.technology:  virtual-machine-manager
 
 # Work with VMM as a self-service user
 
->Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
+>Applies To: System Center 2016 - Virtual Machine Manager
 
 
 This article describes how to work with System Center 2016 - Virtual Machine Manager (VMM) as a self-service user.

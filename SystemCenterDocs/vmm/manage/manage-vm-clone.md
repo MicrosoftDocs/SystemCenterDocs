@@ -2,8 +2,9 @@
 title: Clone VMs from another VM in the VMM fabric
 description: This article describes how to clone VMs in the VMM fabric from another VM
 author:  rayne-wiselman
+ms.author: raynew
 manager:  cfreemanwa
-ms.date:  2016-09-13
+ms.date:  2016-09-22
 ms.topic:  article
 ms.prod:  system-center-threshold
 ms.technology:  virtual-machine-manager
@@ -12,9 +13,9 @@ ms.technology:  virtual-machine-manager
 
 # Clone VMs from another VM in the VMM fabric
 
->Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
+>Applies To: System Center 2016 - Virtual Machine Manager
 
-This article describes how to create and deploy virtual machines in the System Center Virtual Machine Manager (VMM) fabric from an existing VM.
+This article describes how to create and deploy virtual machines by cloning existing VMs in the System Center 2016 - Virtual Machine Manager (VMM) fabric.
 
 
 ## Before you start

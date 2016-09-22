@@ -2,8 +2,9 @@
 title: Configure virtual machine settings in the VMM compute fabric
 description: This article describes how to configure settings for VMs in the VMM fabric
 author:  rayne-wiselman
+ms.author: raynew
 manager:  cfreemanwa
-ms.date:  2016-09-19
+ms.date:  2016-09-22
 ms.topic:  article
 ms.prod:  system-center-threshold
 ms.technology:  virtual-machine-manager
@@ -12,7 +13,7 @@ ms.technology:  virtual-machine-manager
 
 # Configure virtual machine settings in the VMM compute fabric
 
->Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
+>Applies To: System Center 2016 - Virtual Machine Manager
 
 
 This article describes how to configure performance and availability settings for VMs in the System Center 2016 - Virtual Machine Manager (VMM) fabric.
