@@ -2,7 +2,7 @@
 title: Deploy the VMM library for high availability
 description: This article describes how to set up the VMM library in a highly available deployment
 author:  rayne-wiselman
-ms-author: raynew
+ms.author: raynew
 manager:  cfreemanwa
 ms.date:  2016-09-22
 ms.topic:  article
