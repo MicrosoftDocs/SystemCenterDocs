@@ -2,8 +2,9 @@
 title: Add storage to Hyper-V hosts and clusters
 description: This article provides about managing your Hyper-V environment in the VMM fabric
 author:  rayne-wiselman
+ms.author: raynew
 manager:  cfreemanwa
-ms.date:  2016-09-04
+ms.date:  2016-09-22
 ms.topic:  article
 ms.prod:  system-center-threshold
 ms.technology:  virtual-machine-manager
@@ -12,7 +13,7 @@ ms.technology:  virtual-machine-manager
 
 # Add storage to Hyper-V hosts and clusters
 
->Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
+>Applies To: System Center 2016 - Virtual Machine Manager
 
 Read this article to allocate provisioned storage to Hyper-V hosts and clusters in the System Center 2016 - Virtual Machine Manager (VMM) fabric.
 
@@ -34,10 +35,10 @@ You create logical units and assign them to the Hyper-V host or cluster. To comp
 
 1. In **Fabric** > **Servers** > **All Hosts**, right-click the host that you want to configure > **Properties**.
 2. On the toolbar, next to **Disk**, click **Add**. Next to **Logical unit** click **Create Logical Unit**.
-3. In Create Logical Unit > **Storage pool** choose the pool from which the create the logical unit. Specify a name (alpanumeric only), a description and the unit size.
+3. In Create Logical Unit > **Storage pool** choose the pool from which the create the logical unit. Specify a name (alphanumeric only), a description and the unit size.
 4. Verify that the unit is selected in **Logical unit** and in **Format new disk** area, if you want to format the disk, select **Format this volume as NTFS volume with the following settings**. Specify the format volume settings. Note that if you select **Force format even if a file system is found** all existing data on the volume will be overwritten.
 5. VMM registers the storage logical unit to the host and mounts the storage disk. To view the associated job information, open the **Jobs** workspace.
-6. To verify that the logical unit was assigned, view the information on the **Storage** tab in the *Host Name* **Properties** dialog box. The newly assigned logical unit appears under **Disk**. Click the new disk to view the disk details. If the **Array** field is populated in the disk details, this indicates that the storage array is under VMM management.
+6. To verify that the logical unit was assigned, view the information on the **Storage** tab in the **Host Name** > **Properties** dialog box. The newly assigned logical unit appears under **Disk**. Click the new disk to view the disk details. If the **Array** field is populated in the disk details, this indicates that the storage array is under VMM management.
 7. To configure additional disk settings open Disk Management on the host. To open Disk Management, click **Start**, type **diskmgmt.msc** in the search box, and then press ENTER. The new disk appears in the list of disks as a basic disk. If you chose to format the disk, the disk is already formatted and online. You can right-click the disk to see the available options, such as **Format** and **Change Drive Letter and Paths**.
 
 ### Assign the logical unit to a host

@@ -2,6 +2,7 @@
 title: Manage Hyper-V hosts and clusters in the VMM compute fabric
 description: This article provides about managing your Hyper-V environment in the VMM fabric
 author:  rayne-wiselman
+ms.author: raynew
 manager:  cfreemanwa
 ms.date:  2016-09-04
 ms.topic:  article
