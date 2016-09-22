@@ -32,9 +32,9 @@ You can now upgrade Hyper-V and scale-out file server (SOFS) clusters in the VMM
 
 There's a streamlined workflow for creating Hyper-V and SOFS clusters:
 
-* **Bare metal deployment of Hyper-V host clusters**: Deploying a Hyper-V host cluster from bare metal machines is now a single step. [Learn more](..manage/manage/manage-compute-bare-metal-hyper-v.md)
+* **Bare metal deployment of Hyper-V host clusters**: Deploying a Hyper-V host cluster from bare metal machines is now a single step. [Learn more](../manage/manage/manage-compute-bare-metal-hyper-v.md)
 
-* **Adding a bare-metal node to an existing Hyper-V host cluster or an SOFS Cluster**: You can now directly add a bare-metal computer to an existing [Hyper-V](..manage/manage/manage-compute-bare-metal-hyper-v.md) or [SOFS](..manage/manage-sofs-bare-metal.md) cluster.
+* **Adding a bare-metal node to an existing Hyper-V host cluster or an SOFS Cluster**: You can now directly add a bare-metal computer to an existing [Hyper-V](../manage/manage/manage-compute-bare-metal-hyper-v.md) or [SOFS](../manage/manage-sofs-bare-metal.md) cluster.
 
 ### New operations for running VMs
 
@@ -52,12 +52,12 @@ The Server App-V application in service templates is no longer available in VMM 
 
 ### Deploy and manage storage clusters with Storage Spaces Direct (S2D)
 
-[Storage Spaces Direct in Windows Server 2016](https://technet.microsoft.com/library/mt126109.aspx)) enables you to build highly available storage systems on Windows Server. You can use VMM to create a Scale-Out File Server running Windows Server 2016, and configure it with Storage Spaces Direct. After it's configure you can create storage pools and file shares on it. [Learn more](..manage/manage-storage-spaces-direct-vmm.md).
+[Storage Spaces Direct in Windows Server 2016](https://technet.microsoft.com/library/mt126109.aspx)) enables you to build highly available storage systems on Windows Server. You can use VMM to create a Scale-Out File Server running Windows Server 2016, and configure it with Storage Spaces Direct. After it's configure you can create storage pools and file shares on it. [Learn more](../manage/manage-storage-spaces-direct-vmm.md).
 
 
 ### Storage Replica
 
-In VMM 2016 you can use Windows Storage Replica to protect data in a volume by synchronously replicating it between primary and secondary (recovery) volumes. You can deploy the primary and secondary volumes to a single cluster, to two different clusters, or to two standalone servers. You use PowerShell to set up Storage Replica and run failover. [Learn more](..manage/manage-storage-replica.md)
+In VMM 2016 you can use Windows Storage Replica to protect data in a volume by synchronously replicating it between primary and secondary (recovery) volumes. You can deploy the primary and secondary volumes to a single cluster, to two different clusters, or to two standalone servers. You use PowerShell to set up Storage Replica and run failover. [Learn more](../manage/manage-storage-replica.md)
 
 ### Storage Quality of Service (QoS)
 
