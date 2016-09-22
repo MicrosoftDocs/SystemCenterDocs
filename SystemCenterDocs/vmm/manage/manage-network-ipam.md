@@ -2,7 +2,7 @@
 title: Set up an IPAM server in the VMM fabric
 description: This article describes how to manage MAC address pools in the VMM fabric
 author:  rayne-wiselman
-ms-author: raynew
+ms.author: raynew
 manager:  cfreemanwa
 ms.date:  2016-09-22
 ms.topic:  article
