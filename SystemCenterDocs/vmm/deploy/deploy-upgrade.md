@@ -2,7 +2,7 @@
 title: Upgrade to System Center 2016 - VMM
 description: This article helps you to upgrade your existing VMM deployment to System Center 2016 - VMM
 author:  rayne-wiselman
-ms-author: raynew
+ms.author: raynew
 manager:  cfreemanwa
 ms.date:  2016-09-22
 ms.topic:  article
