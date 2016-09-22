@@ -2,7 +2,7 @@
 title: Deploy System Center 2016 - Virtual Machine Manager
 description: This article provides links to deployment steps for System Center VMM 2016
 author:  rayne-wiselman
-ms-author: raynew
+ms.author: raynew
 manager:  cfreemanwa
 ms.date:  2016-09-22
 ms.topic:  article
