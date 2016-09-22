@@ -2,7 +2,7 @@
 title: Plan the VMM networking fabric
 description: This article provides information about preparing the VMM network fabric
 author:  rayne-wiselman
-ms-author: raynew
+ms.author: raynew
 manager:  cfreemanwa
 ms.date:  2016-09-22
 ms.topic:  article
