@@ -2,7 +2,7 @@
 title: Integrate load balancing with VMM service templates
 description: This article provides guidance for setting up load balancing for VMM service tiers
 author:  rayne-wiselman
-ms-author: raynew
+ms.author: raynew
 manager:  cfreemanwa
 ms.date:  2016-09-22
 ms.topic:  article
