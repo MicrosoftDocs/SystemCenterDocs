@@ -2,8 +2,9 @@
 title: Plan a highly available VMM deployment
 description: This article provides planning information for deploying VMM and its components in high availability mode
 author:  rayne-wiselman
+ms-author: raynew
 manager:  cfreemanwa
-ms.date:  2016-08-29
+ms.date:  2016-09-22
 ms.topic:  article
 ms.prod:  system-center-threshold
 ms.technology:  virtual-machine-manager
@@ -11,7 +12,7 @@ ms.technology:  virtual-machine-manager
 
 # Plan a highly available VMM deployment
 
->Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
+>Applies To: System Center 2016 - Virtual Machine Manager
 
 
 This article helps you to plan a highly available System Center 2016 - Virtual Machine Manager (VMM) deployment.
@@ -63,5 +64,6 @@ You can create highly-available library servers to ensure that file-based resour
 - If you want to add clustered storage when you create the cluster make sure all computers can access the storage.
 - If you want to deploy a distributed VMM library in different datacenters you'll need to set up a scheduled copy between the two library shares. No replication is available.
 
+## Next steps
 
-
+[Set up a highly available VMM deployment](..deploy/deploy-vmm-ha.md)
