@@ -2,8 +2,9 @@
 title: Create logical switches
 description: This article describes how to create logical switches in the VMM fabric
 author:  rayne-wiselman
+ms-author: raynew
 manager:  cfreemanwa
-ms.date:  2016-09-04
+ms.date:  2016-09-22
 ms.topic:  article
 ms.prod:  system-center-threshold
 ms.technology:  virtual-machine-manager
@@ -11,7 +12,7 @@ ms.technology:  virtual-machine-manager
 
 # Create logical switches
 
->Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
+>Applies To: System Center 2016 - Virtual Machine Manager
 
 This article describes how to create logical switches in the System Center 2016 - Virtual Machine Manager (VMM) fabric, and to set up virtual switch extensions if you need them.
 
@@ -43,18 +44,24 @@ You can set up a virtual switch extension manager (network manager) if you want 
 ## Set up a logical switch
 
 1. Make sure you have at least one uplink port profile before you begin.
-2. Click **Fabric** > **Home** > **Show **> **Fabric Resources**. Click **Fabric** tab > **Networking** > **Logical Switches** > **Create Logical Switch**.
-3. In **Create Logical Switch Wizard** > **Getting Started** review the information.
-4. In **General** specify a name and description and enable SR-IOV if you need to. SR-IOV enables virtual machines to bypass the switch and directly address the physical network adapter. If you want to enable:
+2. Click **Fabric** tab > **Networking** > **Logical Switches** > **Create Logical Switch**.
+3. In **Create Logical Switch Wizard** > **Getting Started**, review the information.
+4. In **General**, specify a name and optional description.
+5. In **Uplink Mode**, select:
+	- **No Uplink Team** if you're not using teaming.
+	- **Embedded Team** if you want to deploy the switch with SET-based teaming
+	- **Team** if you want to use NIC teaming
+6. In **Settings**, select the minimum bandwidth mode. If you've deployed Microsoft network controller, you can specify that it should manage the switch. If you enable this setting you won't be able to add extensions to the switch.
+7. Enable SR-IOV if you need to. SR-IOV enables virtual machines to bypass the switch and directly address the physical network adapter. If you want to enable:
 
 	- Make sure that you have SR-IOV support in the host hardware and firmware, the physical network adapter, and drivers in the management operating system and in the guest operating system.
 	- Create a native port profile for virtual network adapters that is also SR-IOV enabled.
 	- When you configure networking settings on the host (in the host property called Virtual switches), attach the native port profile for virtual network adapters to the virtual switch by using a port classification. You can use the SR-IOV port classification that is provided in VMM, or create your own port classification.
 4. In **Extensions**, if you're using virtual switch extensions select them and arrange the order. extensions process network traffic through the switch in the order you specify. Note that only one forwarding extension can be enabled.
-5. In **Uplink** add an uplink port profile. If you want to configure teaming by applying the logical switch to multiple adapters select **Uplink mode** > **Team**.
-
-	- If you select **Team**, when you apply this logical switch with an uplink port profile, you will also apply two settings that are specified in the uplink port profile: the load-balancing algorithm and teaming mode settings.
-	- When you add an uplink port profile, it is placed in a list of profiles that are available through that logical switch. However, when you apply the logical switch to a network adapter in a host, the uplink port profile is applied to that network adapter only if you select it from the list of available profiles.
-
-6. In **Virtual Port** add one or more port classifications and virtual network adapter port profiles. You can also create a port classification and set a default classification.
+5. In **Virtual Port** add one or more port classifications and virtual network adapter port profiles. You can also create a port classification and set a default classification.
+6. In **Uplink** add an uplink port profile, or [create a new one](manage-network-port-profiles.md). When you add an uplink port profile, it is placed in a list of profiles that are available through that logical switch. However, when you apply the logical switch to a network adapter in a host, the uplink port profile is applied to that network adapter only if you select it from the list of available profiles.
 7. In **Summary** review the settings and click **Finish**. Verify the switch appears in **Logical Switches**.
+
+## Next steps
+
+[Apply network settings](manage-compute-add-networking-hyper-v.md) on a host with a logical switch.

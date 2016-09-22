@@ -2,20 +2,20 @@
 title: Set up MAC address pools in the VMM fabric
 description: This article describes how to manage MAC address pools in the VMM fabric
 author:  rayne-wiselman
+ms-author: raynew
 manager:  cfreemanwa
-ms.date:  2016-09-04
+ms.date:  2016-09-22
 ms.topic:  article
 ms.prod:  system-center-threshold
 ms.technology:  virtual-machine-manager
 ---
----
+
 # Set up MAC address pools in the VMM fabric
 
->Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
+>Applies To: System Center 2016 - Virtual Machine Manager
 
 This article provides information about System Center 2016 - Virtual Machine Manager (VMM) default MAC addresses and how to create and manage a custom MAC address pool.
 
-## Overview
 
 VMM uses static MAC address pools to automatically generate and assign MAC address to VMs.  This article describes default MAC address pools in the VMM fabric and explains how to create custom pools.
 

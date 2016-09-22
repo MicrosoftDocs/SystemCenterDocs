@@ -2,8 +2,9 @@
 title: Set up logical networks in the VMM fabric
 description: This article describes how to set up logical networks in the VMM fabric
 author:  rayne-wiselman
+ms-author: raynew
 manager:  cfreemanwa
-ms.date:  2016-09-04
+ms.date:  2016-09-22
 ms.topic:  article
 ms.prod:  system-center-threshold
 ms.technology:  virtual-machine-manager
@@ -11,7 +12,7 @@ ms.technology:  virtual-machine-manager
 
 # Set up logical networks in the VMM fabric
 
->Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
+>Applies To: System Center 2016  - Virtual Machine Manager
 
 Read this article to learn how to create System Center 2016 - Virtual Machine Manager (VMM) logical networks.
 
@@ -67,6 +68,7 @@ If you don't want VMM to create logical and VM networks automatically you can di
 	- If you want to have multiple VM networks associated with the logical network and isolate them using network virtualization click **One connected network** > **Allow new VM networks created on this logical network to use network virtualization**.
 	- If you want to have multiple VM networks associated with the logical network and isolate them using a VLAN/PVLAN select **VLAN-based independent networks** or **Private VLAN (PVLAN) networks**.
 	- If you don't want to isolate networks in the logical network, click **One connected network** > **Create a VM network with the same name to allow virtual machines to access this logical network directly**. With this setting you'll have a single VM network associated with your logical network.
+	- If you've deployed a Microsoft network Controller in the VMM fabric you can select to have the logical network managed by the network controller.
 
 4. In **Network Site** add network sites to the logical network. If you don't need to create network sites click **Next**.
 

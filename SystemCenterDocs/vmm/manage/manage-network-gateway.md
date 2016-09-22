@@ -1,17 +1,18 @@
 ---
-title: Add a gateway to the VMM fabric
+title: Add a network virtualization gateway to the VMM fabric
 description: This article provides about adding a gateway to the VMM fabric
 author:  rayne-wiselman
+ms-author: raynew
 manager:  cfreemanwa
-ms.date:  2016-09-04
+ms.date:  2016-09-22
 ms.topic:  article
 ms.prod:  system-center-threshold
 ms.technology:  virtual-machine-manager
 ---
 
-# Add a gateway to the VMM fabric
+# Add a network virtualization gateway to the VMM fabric
 
->Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
+>Applies To: System Center 2016 - Virtual Machine Manager
 
 Read this article to learn about setting up network virtualization gateways in the System Center 2016 - Virtual Machine Manager (VMM) networking fabric.
 
@@ -37,7 +38,7 @@ You can set up your gateway in a number of ways depending on your requirements:
 ## Prerequisites
 
 - **Provider software**: If you want to use a non-Windows gateway device you'll need the provider and an account with permissions to configure the gateway. You install the provider on the VMM server. If certificates are required (for example if the gateway is in an untrusted domain) you'll need to be able to view thumbprint information for those certificates.
-- **Windows Server gateway**: If you want to configure a gateway runnning Windows Server you can use a predefined template available from the Microsoft Download Center. The template supports System Center 2012 R2 or later versions.
+- **Windows Server gateway**: If you want to configure a gateway running Windows Server you can use a predefined template available from the Microsoft Download Center. The template supports System Center 2012 R2 or later versions.
 - **Logical networks**: You need logical networks (you'll need more than one if you want the gateway to connect from VM networks in one logical network to VM networks in another).
 - **Remote VPN settings**: If you want to connect the gateway to a remote VPN server you'll need:
     - The remote server IP address and information about on-premises subnets or the BGP address if relevant.
@@ -67,7 +68,7 @@ You'll need to install the provider software on the VMM management server and ad
 8. In **Certificates** if listed, verify the thumbprints of the certificates match those installed on the gateway. Select to confirm that the certificates can be imported. If none are listed the gateway probably doesn't need certificate authentication. If they're needed make sure they're installed correctly on the gateway.
 9. In **Provider** select an available provider and click Test to run basic validation test against the gateway.
 10. In **Host Group** select one or more host groups to which the gateway will be available.
-11. In Summary review the settings and click Finish.
+11. In **Summary**, review the settings and click Finish.
 12. After the gateway is added find its listing in **Network Services** and right-click it > **Properties** > **Connectivity**.
 13. Select **Enable front end connection** and select the gateway network adapter and network site that provides connectivity outside the enterprise datacenter or hosting provider. Select **Enable back end connection** and select a gateway network adapter and network site in a logical network within the enterprise. The network must have network virtualization enabled and the network site must have a static IP address.
 14. When you create a VM network you can assign the gateway to it, and select the required connectivity options.

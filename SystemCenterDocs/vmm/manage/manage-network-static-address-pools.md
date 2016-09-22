@@ -2,8 +2,9 @@
 title: Set up static IP address pools in the VMM fabric
 description: This article describes how to set up IP address pools in the VMM fabric
 author:  rayne-wiselman
+ms-author: raynew
 manager:  cfreemanwa
-ms.date:  2016-09-04
+ms.date:  2016-09-22
 ms.topic:  article
 ms.prod:  system-center-threshold
 ms.technology:  virtual-machine-manager
@@ -11,12 +12,10 @@ ms.technology:  virtual-machine-manager
 
 # Set up static IP address pools in the VMM fabric
 
->Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
+>Applies To: System Center 2016 - Virtual Machine Manager
 
 This article describes how to set up static IP address pools for logical and VM networks in the System Center 2016 - Virtual Machine Manager (VMM) networking fabric.
 
-
-## Before you start
 
 When you set up the logical network you'll need to configure a static IP address pool if you're not using DHCP. In some circumstances you'll need to create IP address pools on the logical network only, and in others you'll need to create the pool on both the logical and VM networks:
 
@@ -37,7 +36,7 @@ When you set up the logical network you'll need to configure a static IP address
 
 	- The logical network must have network virtualization enabled.
 	- The IP protocol setting for the VM network must match the IP protocol settings for the underlying logical network. You can't view the protocol setting in the VMM console after you've created it. You'll need to run **Get-SCVMMNEtwork -Name <VM network name> | Format -List Name, Isolation Type, PoolType** to see it.
-	- After you've configured this feature multicast and broadcast packets on the VM network will use the IP addresses from the multicast IP address pool. Each subnet in the VM network will consue one IP address from the multicast pool.
+	- After you've configured this feature multicast and broadcast packets on the VM network will use the IP addresses from the multicast IP address pool. Each subnet in the VM network will consume one IP address from the multicast pool.
 
 5. In **IP address range** enter the start and end address for the pool. They must be contained within the subnet. In **VIPs and reserved IP addresses** specify IP address range you want to reserve for VIPs. VIPS are used during deployment of a service in a load-balanced service tier. VMM automatically assigns a VIP to the load balancer from the reserved VIP address range.
 6. In **Gateway** click **Insert** if you want to specify one or more default gateways and the metric. The default gateway address must be in the same subnet range as the IP address pool but doesn't need to be part of the pool.
