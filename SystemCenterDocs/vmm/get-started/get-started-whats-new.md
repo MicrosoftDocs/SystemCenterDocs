@@ -2,7 +2,7 @@
 title: What's new in VMM in System Center 2016
 description: This article describes what's new in VMM 2016
 author:  rayne-wiselman
-ms-author: raynew
+ms.author: raynew
 manager:  cfreemanwa
 ms.date:  2016-09-22
 ms.topic:  article
