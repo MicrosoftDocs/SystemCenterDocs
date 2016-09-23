@@ -1,23 +1,21 @@
 ---
+title:  How to Upgrade an Agent to System Center 2016 - Operations Manager
 description:  
-manager:  cfreemanwa
-ms.topic:  article
-author:  mgoedtel
-ms.prod:  system-center-threshold
-keywords:  
-ms.date:  2016-06-27
-title:  How to Upgrade an Agent to System Center 2016   Operations Manager
-ms.technology:  operations-manager
-ms.assetid:  c8153b24-0618-4f3c-a9b2-1dc27107470f
+author: mgoedtel
+manager: cfreemanwa
+ms.date: 2016-08-29
+ms.custom: na
+ms.prod: system-center-threshold
+ms.technology: operations-manager
+ms.topic: article
 ---
-
 
 
 # How to Upgrade an Agent to System Center 2016 - Operations Manager
 
->Applies To: System Center 2016 Technical Preview - Operations Manager
+>Applies To: System Center 2016 - Operations Manager
 
-Use the following procedures to upgrade to System Center 2016 Technical Preview - Operations Manager agents. You should first verify that the agents meet minimum supported configurations. For more information, see [System Requirements: System Center 2016 - Operations Manager](../../system-requirements/System-Requirements-for-System-Center-Technical-Preview.md).
+Use the following procedures to upgrade to System Center 2016 - Operations Manager agents. You should first verify that the agents meet minimum supported configurations. For more information, see [System Requirements: System Center 2016 - Operations Manager](../plan/system-requirements.md).
 
 > [!NOTE]
 > If before upgrade an agent was installed using the push install method, after upgrade the server the agent will be put into a pending update state and can be upgraded through the Console. Otherwise the agent should be upgraded manually.
@@ -29,7 +27,7 @@ When you upgrade an agent, the Operations Manager installer service runs and is 
 
 If you are upgrading agents that are deployed to a computer that has other System Center 2012 R2 Operations Manager features installed, you must do the following:
 
--   If the agent is installed on a computer that has System Center 2012 R2 Operations Manager Operations console or web console installed, you must first uninstall the consoles before you upgrade the agents. You can do this by uninstalling System Center 2012 R2 Operations Managerin Programs and Features. You can reinstall these consoles after upgrade is completed.
+-   If the agent is installed on a computer that has System Center 2012 R2 Operations Manager Operations console or Web console installed, you must first uninstall the consoles before you upgrade the agents. You can do this by uninstalling System Center 2012 R2 Operations Manager in Programs and Features. You can reinstall these consoles after upgrade is completed.
 
 > [!NOTE]
 > If UAC is enabled, you must run the agent upgrade from an elevated command prompt.
@@ -37,7 +35,8 @@ If you are upgrading agents that are deployed to a computer that has other Syste
 > [!NOTE]
 > Information about upgraded agents might not appear in the Operations console for up to 60 minutes after performing the upgrade.
 
-## Upgrading Push-Installed Agents
+## Upgrading push-installed agents
+
 Push-installed agents are agents that were installed by using the **Computer and Device Management Wizard**. Use the following procedures to upgrade these agents.
 
 #### To upgrade push-installed Windows agents by using the Operations console
@@ -60,8 +59,9 @@ Push-installed agents are agents that were installed by using the **Computer and
 
 6.  When the upgrade is completed, click **Close**.
 
-## Upgrading Manually Installed Agents
-Manually-installed agents are agents that were installed manually, either by using the Command Prompt window, or by using the MOMAgent.msi Setup Wizard. Use the following procedure to upgrade these agents.
+## Upgrading manually installed agents
+
+Manually-installed agents are agents that were installed manually, either from the Command Prompt, or by using the MOMAgent.msi Setup Wizard. Use the following procedure to upgrade these agents.
 
 #### To upgrade a manually installed Windows agent by using the Setup Wizard
 
@@ -75,7 +75,7 @@ Manually-installed agents are agents that were installed manually, either by usi
 
 5.  When the **Completing the Microsoft Monitoring Agent Setup Wizard** page appears, click **Finish**.
 
-#### To upgrade a manually installed Windows agent by using the Command Prompt window
+#### To upgrade a manually installed Windows agent from the Command Prompt
 
 1.  Log on to the computer that hosts the agent with an Operations Manager Administrators role account for your Operations Manager management group.
 
@@ -89,7 +89,7 @@ Manually-installed agents are agents that were installed manually, either by usi
 
     ```
 
-## Verifying Windows Agent Upgrade
+## Verifying Windows agent upgrade
 
 #### To verify the Windows agent upgrade
 
@@ -97,12 +97,12 @@ Manually-installed agents are agents that were installed manually, either by usi
 
 2.  Under **Device Management**, click **Agent Managed**.
 
-3.  In the Agent Managed pane, verify that the value listed in the Version column is 8.0.10734.0.
+3.  In the Agent Managed pane, verify that the value listed in the Version column is 8.0.10918.0.
 
     > [!NOTE]
     > It can take up to one hour for the console to show the updated version of the agent.
 
-## Upgrading UNIX and Linux Agents
+## Upgrading UNIX and Linux agents
 
 #### To upgrade UNIX and Linux agents
 
@@ -136,7 +136,7 @@ Manually-installed agents are agents that were installed manually, either by usi
 
 2.  Under **Device Management**, click **UNIX/Linux Computers**.
 
-3.  Verify that the value listed in the Agent **Version** column is 1.54.0-xxx, where x is any positive integer.
+3.  Verify that the value listed in the Agent **Version** column is 1.6.2-336, where x is any positive integer.
 
     > [!NOTE]
     > It can take up to one hour for the console to show the updated version of the agent.

@@ -1,25 +1,23 @@
 ---
+title:  How to Upgrade Reporting to System Center 2016 - Operations Manager
 description:  
-manager:  cfreemanwa
-ms.topic:  article
-author:  mgoedtel
-ms.prod:  system-center-threshold
-keywords:  
-ms.date:  2016-06-27
-title:  How to Upgrade Reporting to System Center 2016   Operations Manager
-ms.technology:  operations-manager
-ms.assetid:  d4acce38-b84d-42af-8a41-b9464126cbc9
+mauthor: mgoedtel
+manager: cfreemanwa
+ms.date: 2016-08-29
+ms.custom: na
+ms.prod: system-center-threshold
+ms.technology: operations-manager
+ms.topic: article
 ---
-
 
 
 # How to Upgrade Reporting to System Center 2016 - Operations Manager
 
->Applies To: System Center 2016 Technical Preview - Operations Manager
+>Applies To: System Center 2016 - Operations Manager
 
-Use this procedure to upgrade a stand-alone Reporting server to System Center 2016 Technical Preview - Operations Manager. You should not run upgrade on the Reporting server until after you have upgraded the management servers, gateways, Operation consoles, and agents.
+Use this procedure to upgrade a stand-alone Reporting server to System Center 2016 - Operations Manager. You should not run upgrade on the Reporting server until after you have upgraded the management servers, gateways, Operation consoles, and agents.
 
-Before you begin the upgrade process, make sure that your server meets the minimum supported configurations. For more information, see [System Requirements: System Center 2016 - Operations Manager](../../system-requirements/System-Requirements-for-System-Center-Technical-Preview.md).
+Before you begin the upgrade process, make sure that your server meets the minimum supported configurations. For more information, see [System Requirements for System Center 2016 - Operations Manager](../plan/system-requirements.md).
 
 ### To upgrade the Reporting server
 
@@ -39,11 +37,11 @@ Before you begin the upgrade process, make sure that your server meets the minim
 
 8.  When upgrade is finished, the **Upgrade complete** page appears. Click **Close**.
 
-### To upgrade the Reporting server by using the command prompt
+### To upgrade the Reporting server from the Command Prompt
 
 1.  Log on to the computer that hosts the Reporting server with an account that is a member of the Operations Manager Administrators role for your Operations Manager management group.
 
-2.  Open a Command Prompt window by using the **Run as Administrator** option.
+2.  Open an elevated Command Prompt by using the **Run as Administrator** option.
 
 3.  Change the path to where the Operations Manager Setup.exe file is located, and run the following command:
 

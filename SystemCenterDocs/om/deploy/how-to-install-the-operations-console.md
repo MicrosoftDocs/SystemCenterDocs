@@ -1,25 +1,22 @@
 ---
-description:  
-manager:  cfreemanwa
-ms.topic:  article
-author:  mgoedtel
-ms.prod:  system-center-threshold
-keywords:  
-ms.date:  2016-06-27
 title:  How to Install the Operations Console
-ms.technology:  operations-manager
-ms.assetid:  f88980f5-521f-41cc-98db-997db0019c0f
+description:  
+author: mgoedtel
+manager: cfreemanwa
+ms.date: 2016-08-29
+ms.custom: na
+ms.prod: system-center-threshold
+ms.technology: operations-manager
+ms.topic: article
 ---
 
+# How to Install the Operations console
 
+>Applies To: System Center 2016 - Operations Manager
 
-# How to Install the Operations Console
+After you install System Center 2016 - Operations Manager, you can install the Operations console on other servers and computers. For example, you might want to view monitoring data from your desktop computer.
 
->Applies To: System Center 2016 Technical Preview - Operations Manager
-
-After you install System Center 2016 Technical Preview - Operations Manager, you can install the Operations console on other servers and computers. For example, you might want to view monitoring data from your desktop computer.
-
-You must ensure that the computer that will host the Operations console meets the minimum system requirements. For more information, see [System Requirements for System Center Technical Preview](../../system-requirements/System-Requirements-for-System-Center-Technical-Preview.md)
+You must ensure that the computer that will host the Operations console meets the minimum system requirements. For more information, see [System Requirements for System Center 2016 - Operations Manager](../plan/system-requirements.md)
 
 #### To install the Operations console
 
@@ -46,12 +43,12 @@ You must ensure that the computer that will host the Operations console meets th
 11. In the Operations console, on the **Connect to Server** page, type the name of the first management server that you installed in the management group in the **Server name** box, and then click **Connect**.
 
 > [!IMPORTANT]
-> If you are going to edit company knowledge on this computer, you also have to install the [Microsoft Visual Studio 2005 Tools for Office Second Edition Runtime](http://go.microsoft.com/fwlink/p/?LinkId=74969).
+> If you are going to edit company knowledge on this computer, you also have to install the [Microsoft Visual Studio 2010 Tools for Office Second Edition Runtime](https://www.microsoft.com/en-us/download/details.aspx?id=48217).
 
 > [!IMPORTANT]
 > Company knowledge cannot be edited with the x64 version of Microsoft Word 2010. You must install the x86 version of Microsoft Office 2010 or an earlier version to edit knowledge.
 
-### To install the Operations console by using the Command Prompt window
+### To install the Operations console from the Command Prompt 
 
 1.  Log on to the server by using an account that has local administrative credentials.
 
@@ -63,5 +60,6 @@ You must ensure that the computer that will host the Operations console meets th
     setup.exe /silent /install /components:OMConsole /EnableErrorReporting:[Never|Queued|Always]/SendCEIPReports:[0|1] /UseMicrosoftUpdate: [0|1]
     ```
 
-## See Also
+## Next steps
+
 [Distributed Deployment of Operations Manager](Distributed-Deployment-of-Operations-Manager.md)

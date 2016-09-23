@@ -1,23 +1,21 @@
 ---
-description:  
-manager:  cfreemanwa
-ms.topic:  article
-author:  mgoedtel
-ms.prod:  system-center-threshold
-keywords:  
-ms.date:  2016-06-27
 title:  How to Upgrade a Single Server Management Group to System Center 2016 - Operations Manager
-ms.technology:  operations-manager
-ms.assetid:  deb38f1e-f045-4ca1-8844-4ff38f06e7c3
+description:  
+author: mgoedtel
+manager: cfreemanwa
+ms.date: 2016-08-29
+ms.custom: na
+ms.prod: system-center-threshold
+ms.technology: operations-manager
+ms.topic: article
 ---
-
 
 
 # How to Upgrade a Single-Server Management Group to System Center 2016 - Operations Manager
 
->Applies To: System Center 2016 Technical Preview - Operations Manager
+>Applies To: System Center 2016 - Operations Manager
 
-When you upgrade a single-server management group to System Center 2016 Technical Preview - Operations Manager, all features that are installed on the server are upgraded. Before you begin the upgrade process, make sure that your server meets the minimum supported configurations. For more information, see [System Requirements for System Center 2016](../../system-requirements/System-Requirements-for-System-Center-Technical-Preview.md).
+When you upgrade a single-server management group to System Center 2016 - Operations Manager, all features that are installed on the server are upgraded. Before you begin the upgrade process, make sure that your server meets the minimum supported configurations. For more information, see [System Requirements for System Center 2016 - Operations Manager](../plan/system-requirements.md).
 
 ### To upgrade a single-server management group
 
@@ -48,11 +46,11 @@ When you upgrade a single-server management group to System Center 2016 Technica
 
 8.  When the **Ready to Upgrade** page appears, review the upgrade summary, and then click **Upgrade**.
 
-### To upgrade a single-server management group by using the Command Prompt window
+### To upgrade a single-server management group from the Command Prompt 
 
 1.  Log on to the server with an account that is a member of the Operations Manager Administrators role for your Operations Manager management group, a member of the SQL Server sysadmin fixed server role, and a local administrator on the computer.
 
-2.  Open a Command Prompt window by using the **Run as Administrator** option.
+2.  Open an elevated Command Prompt by using the **Run as Administrator** option.
 
 3.  Change the path to where the Operations Manager Setup.exe file is located.
 
@@ -92,11 +90,11 @@ When you upgrade a single-server management group to System Center 2016 Technica
 
     After you have upgraded your single-server management group, you can upgrade the agents.
 
-## Verifying the Upgrade
+## Verifying the upgrade
 
 ### To confirm the health of the management server
 
 
 1. In the Operations console, select the Administration workspace.
 
-2. In Device Management select Management Servers. In the results pane, you should see the management server that you just installed with a green check mark in the Health State column.
+2. Under Device Management select Management Servers. In the results pane, you should see the management server that you just installed with a green check mark in the Health State column.

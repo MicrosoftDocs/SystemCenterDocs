@@ -1,23 +1,21 @@
 ---
+title:  Install the Operations Manager Web console
 description:  
-manager:  cfreemanwa
-ms.topic:  article
-author:  mgoedtel
-ms.prod:  system-center-threshold
-keywords:  
-ms.date:  2016-06-27
-title:  Install the Operations Manager Web Console
-ms.technology:  operations-manager
-ms.assetid:  3f3c2824-c6eb-4ec1-8b3d-6a4c2f677b48
+author: mgoedtel
+manager: cfreemanwa
+ms.date: 2016-08-29
+ms.custom: na
+ms.prod: system-center-threshold
+ms.technology: operations-manager
+ms.topic: article
 ---
 
 
+# Install the Operations Manager Web console
 
-# Install the Operations Manager Web Console
+>Applies To: System Center 2016 - Operations Manager
 
->Applies To: System Center 2016 Technical Preview - Operations Manager
-
-You can install the web console when you install Operations Manager, or you can install it separately. You can install a stand-alone web console or install it on an existing management server that meets the prerequisites. For information about the prerequisites, see [System Requirements for System Center Technical Preview](../../system-requirements/System-Requirements-for-System-Center-Technical-Preview.md). After you install the web console, you must configure permissions inheritance to allow users to view performance and diagram views. For instructions, see [To configure permissions inheritance for the web console](#bkmk_toconfigurepermissionsinheritanceforthewebconsole).
+You can install the web console when you install Operations Manager, or you can install it separately. You can install a stand-alone web console or install it on an existing management server that meets the prerequisites. For information about the prerequisites, see [System Requirements for System Center 2016 - Operations Manager](../plan/system-requirements.md). After you install the web console, you must configure permissions inheritance to allow users to view performance and diagram views. For instructions, see [To configure permissions inheritance for the web console](#To-configure-permissions-inheritance-for-the-Web-console).
 
 > [!IMPORTANT]
 > If you install a stand-alone web console on a server, you will not be able to add the management server feature to this server. If you want to install the management server and web console on the same server, you must either install both features simultaneously, or install the management server before you install the web console.
@@ -56,7 +54,7 @@ The local and remote parameters are as follows:
 > [!NOTE]
 > If you run **Repair** on the web console after installation, the settings that were selected during installation will be restored. Any changes that you manually make to the web console configuration after the installation will be reset.
 
-### To install a stand-alone web console
+### To install a stand-alone Web console
 
 1.  Log on to the computer that will host the web console with an account that has local administrative credentials.
 
@@ -90,13 +88,15 @@ The local and remote parameters are as follows:
     > [!NOTE]
     > If you install the management server on a server using a domain account for System Center Configuration service and System Center Data Access service, and then install the web console on a different server and select Mixed Authentication, you may need to register Service Principle Names and configure constraint delegations, as described in [Running the Web Console Server on a standalone server using Windows Authentication](http://blogs.technet.com/b/momteam/archive/2008/01/31/running-the-web-console-server-on-a-standalone-server-using-windows-authentication.aspx).
 
-10. If Microsoft Update is not enabled on the computer, the **Configuration**, **Microsoft Update** page appears. Select your options, and then click **Next**.
+10. On the **Diagnostic and Usage Data** page, please review data collection terms and then click **Next** to continue.  
 
-11. Review your selections on the **Configuration**, **Installation Summary** page, and then click **Install**. Setup continues.
+11. If Microsoft Update is not enabled on the computer, the **Configuration**, **Microsoft Update** page appears. Select your options, and then click **Next**.
 
-12. When Setup is finished, the **Setup is complete** page appears. Click **Close**.
+12. Review your selections on the **Configuration**, **Installation Summary** page, and then click **Install**. Setup continues.
 
-### To install the web console on an existing management server
+13. When Setup is finished, the **Setup is complete** page appears. Click **Close**.
+
+### To install the Web console on an existing Management server
 
 1.  Log on to the computer that is hosting a management server with an account that has local administrative credentials.
 
@@ -131,7 +131,7 @@ The local and remote parameters are as follows:
 > [!IMPORTANT]
 > The Default website must have an http or https binding configured.
 
-### To install a web console by using the Command Prompt window
+### To install a Web console by using the Command Prompt window
 
 1.  Log on to the computer with an account that has local administrative credentials.
 
@@ -155,7 +155,7 @@ The local and remote parameters are as follows:
     /UseMicrosoftUpdate: [0|1]
     ```
 
-## <a name="bkmk_toconfigurepermissionsinheritanceforthewebconsole"></a>To configure permissions inheritance for the web console
+## To configure permissions inheritance for the Web console
 
 1.  In Windows Explorer, navigate to the MonitoringView folder in the installation directory for the web console (by default, C:\Program Files\System Center 2016\Operations Manager\WebConsole\MonitoringView), right-click the TempImages folder, and click **Properties**.
 
@@ -171,7 +171,8 @@ The local and remote parameters are as follows:
 
 All information and content at http://blogs.technet.com/b/momteam/archive/2008/01/31/running-the-web-console-server-on-a-standalone-server-using-windows-authentication.aspx is provided by the owner or the users of the website. Microsoft makes no warranties, express, implied or statutory, as to the information at this website.
 
-## See Also
+## Next steps
+
 [Distributed Deployment of Operations Manager](Distributed-Deployment-of-Operations-Manager.md)
 
 
