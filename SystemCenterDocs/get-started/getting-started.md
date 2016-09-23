@@ -1,6 +1,4 @@
 ---
-<<<<<<< HEAD
-=======
 description:  
 manager:  cfreeman
 ms.topic:  article
@@ -8,17 +6,7 @@ author:  cfreemanwa
 ms.author: cfreeman
 ms.prod:  system-center-threshold
 keywords:  
-ms.date:  2016-07-25
->>>>>>> e25089d496ca54df0ed4e8817313a301eca29e52
-title:  Getting Started
-description:  
-author: mgoedtel
-manager: cfreemanwa
-ms.date: 2016-09-08
-ms.custom: na
-ms.prod: system-center-threshold
-ms.technology: operations-manager
-ms.topic: article
+ms.date:  09-23-2016
 ---
 
 # Getting Started
