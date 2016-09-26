@@ -2,8 +2,9 @@
 title: Manage virtual machines in the VMM fabric
 description: This article describes how to manage VMs in the VMM compute fabric
 author:  rayne-wiselman
+ms.author: raynew
 manager:  cfreemanwa
-ms.date:  2016-09-13
+ms.date:  2016-09-22
 ms.topic:  article
 ms.prod:  system-center-threshold
 ms.technology:  virtual-machine-manager
@@ -12,7 +13,7 @@ ms.technology:  virtual-machine-manager
 
 # Manage virtual machines in the VMM fabric
 
->Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
+>Applies To: System Center 2016 - Virtual Machine Manager
 
 
 This article provides an overview of managing virtual machines in the System Center 2016 - Virtual Machine Manager (VMM) compute fabric. It provides information about features offered during provisioning, and includes links to articles that describe different ways to provision and manage virtual machines.
