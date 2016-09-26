@@ -17,8 +17,10 @@ ms.technology:  virtual-machine-manager
 Read this article to learn about enabling dynamic optimization and power optimization for VMs in the System Center 2016 - Virtual Machine Manager (VMM) compute fabric. The article includes a feature overview, instructions for setting up BMC for power optimization, and describes how to enable and run these features.
 
 
-- **Dynamic optimization**: Using dynamic optimization VMM migrates VMs within a host cluster to improve load balancing among hosts and to correct placement issues for VMs.
-- **Power optimization**: Power optimization is a feature of dynamic optimization that saves energy by turning off hosts that aren't need to meet resource requirements within a cluster, and turns them back on when they're needed
+- **Dynamic optimization**: Using dynamic optimization VMM performs live migration of VMs within a host cluster, usings the settings you specify, to improve load balancing among hosts and to correct placement issues for VMs.
+- **Power optimization**: Power optimization is a feature of dynamic optimization that saves energy by turning off hosts that aren't need to meet resource requirements within a cluster, and turns them back on when they're needed.
+
+VMM supports dynamic optimization and power optimization on Hyper-V host clusters, and on VMware host clusters in the VMM fabric that support live migration.
 
 ## Before you start
 
@@ -26,10 +28,15 @@ Read this article to learn about enabling dynamic optimization and power optimiz
 ### Dynamic optimization
 
 - Dynamic optimization and power optimization can be configured on host clusters that support live migration.
-- Dynamic optimization can be configured on a host group, to migrate virtual machines within host clusters with a specified frequency and aggressiveness. Aggressiveness determines the amount of load imbalance that is required to initiate a migration during Dynamic Optimization. By default, virtual machines are migrated every 10 minutes with medium aggressiveness. When configuring frequency and aggressiveness for dynamic optimization, an administrator should factor in the resource cost of additional migrations against the advantages of balancing load among hosts in a host cluster. By default, a host group inherits Dynamic Optimization settings from its parent host group.
+- Dynamic optimization can be configured on a host group, to migrate virtual machines within host clusters with a specified frequency and aggressiveness. Aggressiveness determines the amount of load imbalance that is required to initiate a migration during dynamic optimization.
+- By default, virtual machines are migrated every 10 minutes with medium aggressiveness. When configuring frequency and aggressiveness for dynamic optimization, an administrator should factor in the resource cost of additional migrations against the advantages of balancing load among hosts in a host cluster. By default, a host group inherits Dynamic Optimization settings from its parent host group.
 - If you set up dynamic optimization on a host group without a cluster it will have no effect.
 - Dynamic optimization can be set up for clusters with two or more nodes. If a host group contains stand-alone hosts or host clusters that do not support live migration, dynamic optimization isn't performed on those hosts. Any hosts that are in maintenance mode also are excluded from dynamic optimization. In addition, VMM only migrates highly available virtual machines that use shared storage. If a host cluster contains virtual machines that are not highly available, those virtual machines are not migrated during Dynamic Optimization.
 - On-demand dynamic optimization also is available for individual host clusters by using the Optimize Hosts action in the VMs and Services workspace. It can be performed without configuring dynamic optimization on host groups. After dynamic optimization is requested for a host cluster, VMM lists the virtual machines that will be migrated, for the administrator's approval.
+
+#### Node fairness
+
+Node fairness is a new fdature in Windows Server 2016. It identifies cluster nodes with light loads, and distributes VMs to those node to balance load. This is similar to VMM's dynamic optimization. To avoid potential performance issues, dynamic optimization and node fairness shouldn't work together. To ensure this doesn't happen VMM disables node faireness in all clusters in a host group for which dynamic optimization is set to automatic. If you enable node fairness outside the VMM console, VMM will turn it off the next time that dynamic optimization refreshes. If you do want to use node faireness, disable dynamic optimization, and then manually enable node fairness.
 
 ### Power optimization
 
