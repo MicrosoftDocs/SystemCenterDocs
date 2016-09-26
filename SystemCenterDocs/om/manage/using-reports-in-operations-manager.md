@@ -2,7 +2,7 @@
 title: Using Reports in Operations Manager
 author: mgoedtel
 manager: cfreemanwa
-ms.date: 2016-09-19
+ms.date: 2016-09-26
 ms.custom: na
 ms.prod: system-center-threshold
 ms.technology: operations-manager
@@ -25,7 +25,7 @@ Dashboards were introduced in System Center 2012 - Operations Manager to allow 
   
 -   [How to Run, Save, and Export a Report](how-to-run-save-export-reports.md)  
   
--   [How to Schedule and Managed Scheduled Reports](how-to-configure-schedule-reports.md)  
+-   [How to Schedule and Managed Scheduled Reports](how-to-configure-modify-report-schedules.md)  
   
 -   [How to Troubleshoot Reports that Return No Data](https://support.microsoft.com/kb/2573329)  
   
