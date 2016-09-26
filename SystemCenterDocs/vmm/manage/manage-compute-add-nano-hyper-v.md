@@ -22,7 +22,6 @@ VMM support full lifecycle management of Nano Server-based VMs, including shield
 
 - You can't create a VM template using a Nano Server VM in the VMM fabric. As a workaround, create a VM template from scratch using a Nano Server virtual hard disk.
 - There are some known issues when joining a Nano Server VM to a domain. If you try to join the VM to a domain by specifying customization details in a VM template, the domain information is ignored by VMM. The VM is deployed, but doesn't join the domain. As a workload, deploy the VM and then join it to a domain. [Learn more](https://technet.microsoft.com/windows-server-docs/compute/nano-server/getting-started-with-nano-server).
-- 
 
 ## Prepare a Nano server virtual hard disk
 
