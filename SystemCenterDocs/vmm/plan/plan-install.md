@@ -2,8 +2,9 @@
 title: Plan VMM installation
 description: This article provides planning information for setting up VMM
 author:  rayne-wiselman
+ms.author: raynew
 manager:  cfreemanwa
-ms.date:  2016-08-29
+ms.date:  2016-09-22
 ms.topic:  article
 ms.prod:  system-center-threshold
 ms.technology:  virtual-machine-manager
@@ -11,7 +12,7 @@ ms.technology:  virtual-machine-manager
 
 # Plan VMM installation
 
->Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
+>Applies To: System Center 2016 - Virtual Machine Manager
 
 This article helps you to plan all the elements required for a successful System Center 2016 - Virtual Machine Manager (VMM) installation.
 
@@ -101,9 +102,9 @@ The computer on which you install the VMM console must be a member of an Active 
 
     - Use of AlwaysOn Availability Groups in Microsoft SQL Server is supported, but it's important to review the differences between the two availability modes, synchronous-commit and asynchronous-commit. [Learn more](http://msdn.microsoft.com/library/ff877884.aspx#AvailabilityModes).
 
-        - With asynchronous-commit mode, the replica of the database can be out of date for a period of time after each commit. This can make it appear as if the database were back in time which might cause loss of customer data, inadvertent disclosure of information, or possibly elevation of privilege. 
+        - With asynchronous-commit mode, the replica of the database can be out of date for a period of time after each commit. This can make it appear as if the database were back in time which might cause loss of customer data, inadvertent disclosure of information, or possibly elevation of privilege.
 
-        - You can use synchronous-commit mode as a configuration for remote-site availability scenarios. 
+        - You can use synchronous-commit mode as a configuration for remote-site availability scenarios.
 
 - The SQL Server service must use an account that has permission to access Active Directory Domain Services (AD DS). For example, you can specify the Local System Account, or a domain user account. Do not specify a local user account.
 
@@ -122,8 +123,12 @@ The computer on which you install the VMM console must be a member of an Active 
 
 The library server is where VMM stores items such as virtual machine templates, virtual hard disks, virtual floppy disks, ISO images, scripts, and stored virtual machines. The optimal hardware requirements that are specified for a VMM library server vary, depending on the quantity and size of these files. You will need to check CPU usage, and other system state variables to determine what works best in your environment.
 
--   To store virtual hard disks in the .vhdx file format, the VMM library server must run Windows Server 2012, Windows Server 2012 R2, or Windows Server Technical Preview.
+-   To store virtual hard disks in the .vhdx file format, the VMM library server must run Windows Server 2012, Windows Server 2012 R2, or Windows Server 2016
 
 - VMM does not provide a method for replicating physical files in the VMM library or a method for transferring metadata for objects that are stored in the VMM database. Instead, if necessary, you need to replicate physical files outside of VMM, and you need to transfer metadata by using scripts or other means.
 
 - VMM does not support file servers that are configured with the case-sensitive option for Windows Services for UNIX, because the Network File System (NFS) case control is set to **Ignore**.
+
+## Next steps
+
+[Install VMM](../deploy/deploy-install.md)
