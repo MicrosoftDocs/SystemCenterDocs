@@ -2,15 +2,17 @@
 title: Set up a Microsoft iSCSI Target Server in the VMM storage fabric
 description: This article describes how to deploy a Microsoft iSCSI Target Server in the VMM storage fabric
 author:  rayne-wiselman
+ms.author: raynew
 manager:  cfreemanwa
-ms.date:  2016-09-07
+ms.date:  2016-09-22
 ms.topic:  article
 ms.prod:  system-center-threshold
 ms.technology:  virtual-machine-manager
 ---
+
 # Set up a Microsoft iSCSI Target Server in the VMM storage fabric
 
->Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
+>Applies To: System Center 2016 - Virtual Machine Manager
 
 Microsoft iSCSI Target Server is a server role that enables a Windows server machine to function as a storage device.
 

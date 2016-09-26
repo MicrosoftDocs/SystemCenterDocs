@@ -2,8 +2,9 @@
 title: Manage Storage Spaces Direct in VMM
 description: This article describes how to set up Storage Spaces Direct in the VMM fabric
 author:  rayne-wiselman
+ms.author: rayne2
 manager:  cfreemanwa
-ms.date:  2016-09-11
+ms.date:  2016-09-22
 ms.topic:  article
 ms.prod:  system-center-threshold
 ms.technology:  virtual-machine-manager
@@ -11,14 +12,14 @@ ms.technology:  virtual-machine-manager
 
 # Manage Storage Spaces Direct in VMM
 
->Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
+>Applies To: System Center 2016 - Virtual Machine Manager
 
 Windows Server 2016 introduces Storage Spaces Direct, which enables building highly available storage systems with local storage. This storage can be used as follows:
 
 - **Hyper-converged deployment**: Storage in leveraged by VMs running on the same cluster
 - **Disaggregated deployment**: Storage can be exported as a file share
 
-In System Center 2016 - Virtual Machine Manager (VMM) you can deploy Storage Spaces direct in both a hyper-converged or disaggregated topology. 
+In System Center 2016 - Virtual Machine Manager (VMM) you can deploy Storage Spaces direct in both a hyper-converged or disaggregated topology.
 
 ## Hyper-converged deployment
 
@@ -75,10 +76,10 @@ As part of creating this cluster, VMM performs the following steps:
 1.  On each host:
     1. Installs the File Server role.
     2. Installs the Failover Clustering feature.
-    3. Enables Storage Replica and Data Deduplication.
-2.  Performs Cluster Configuration validation.
+    3. Enables Storage Replica and data deduplication.
+2.  Validates the cluster configuration.
 3.  Creates the cluster.
-4.  Enables Storage Spaces Direct and creates an array with the same name as the one provided in the wizard.
+4.  Enables Storage Spaces Direct, and creates an array with the same name as the one provided in the wizard.
 
 ## Manage an existing Storage Spaces Direct cluster in VMM
 
@@ -107,11 +108,11 @@ You need to create a pool, virtual disks, and CSVs in the Storage Spaces Direct 
 
  1. Click **Fabric** > **Storage** > **Arrays**, right-click the Storage Spaces Direct cluster > **Manage Pool**.
  2. Select the physical disks in the cluster. As part of creating the pool, the physical disks that are part of the hosts in the Spaces Direct cluster are selected.
- 
+
    ![Select disks](../media/storage-spaces-disks.png)
 
  3. Complete the rest of the wizard as described in this [article](manage-sofs.md#create-storage-pools).
- 4.  Using Windows Powershell, the pool and the storage tier is automatically created with the "Enable-CLusterS2D autoconfig=true" option. This is not supported in VMM Technical Preview 5.
+ 4.  Using Windows Powershell, the pool and the storage tier is automatically created with the "Enable-CLusterS2D autoconfig=true" option. T
 
 ### Create a CSV
 
@@ -130,4 +131,4 @@ In a hyper-converged topology VMs can be directly deployed on the cluster. Their
 
 ## Deploy a disaggregated topology
 
-[Learn more](manage-sofs-overview.md) about adding nodes to an SOFS. Note that when you add a node with Storage Spaces Direct enabled, VMM discovers any disks associated with the node. Then, when you modify a storage pool and select the new disks to add, VMM makes those disks available to the hosts and VMs that use the share supported by that pool.
+[Learn more](manage-sofs-overview.md) about adding nodes to an SOFS. When you add a node with Storage Spaces Direct enabled, VMM discovers any disks associated with the node. Then, when you modify a storage pool and select the new disks to add, VMM makes those disks available to the hosts and VMs that use the share supported by that pool.

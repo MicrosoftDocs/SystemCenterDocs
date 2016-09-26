@@ -1,8 +1,10 @@
 ---
 title: Set up file storage in the VMM fabric
 description: This article describes how to set up file storage in the VMM fabric
+author:  rayne-wiselman
+ms.author: raynew
 manager:  cfreemanwa
-ms.date:  2016-09-12
+ms.date:  2016-09-22
 ms.topic:  article
 ms.prod:  system-center-threshold
 ms.technology:  virtual-machine-manager
@@ -11,7 +13,7 @@ ms.technology:  virtual-machine-manager
 
 # Set up file storage in the VMM fabric
 
->Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
+>Applies To: System Center 2016 - Virtual Machine Manager
 
 You can manage file storage that supports SMB 3.0 in the System Center 2016 - Virtual Machine Manager (VMM) storage fabric. This includes  Windows file servers, scale-out file servers (SOFS), network-attached storage (NAS) devices from third-parties such as EMC, and NetApp.
 
