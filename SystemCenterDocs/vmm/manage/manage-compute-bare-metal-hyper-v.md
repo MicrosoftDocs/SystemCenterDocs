@@ -2,8 +2,9 @@
 title: Provision a Hyper-V host or cluster from bare metal computers
 description: This article explains how to provision Hyper-V hosts or clusters from bare metal computers in the VMM fabric
 author:  rayne-wiselman
+ms-author: rayne-wiselman
 manager:  cfreemanwa
-ms.date:  2016-09-04
+ms.date:  2016-09-22
 ms.topic:  article
 ms.prod:  system-center-threshold
 ms.technology:  virtual-machine-manager
@@ -11,7 +12,7 @@ ms.technology:  virtual-machine-manager
 
 # Provision a Hyper-V host or cluster from bare metal computers
 
->Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
+>Applies To: System Center 2016 - Virtual Machine Manager
 
 Use this article if you want to provision a Hyper-V host or cluster from bare metal computers with nothing installed on them, in the System Center 2016 - Virtual Machine Manager (VMM) fabric.
 
@@ -153,10 +154,3 @@ When you deploy a Hyper-V cluster from bare metal VMM does the following:
 9. When you have filled in needed information for all the computers you want to provision, click Next.
 10. In **Summary** confirm the settings, and then click **Finish** to deploy the new Hyper-V hosts and bring them under VMM management. Depending on your settings, the Jobs dialog box might appear. Make sure that all steps in the job have a status of Completed, and then close the dialog box.
 16. To confirm that the host was added click **Fabric** > **Servers** > **All Hosts** > and locate and click the new host cluster. In the **Hosts** pane, in the **Host Status** column, verify that each node in the cluster is OK.
-
-
-## Add a bare metal computer as a node to an existing cluster
-
-You can add a bare metal computer to an existing host cluster. If you created the cluster from bare metal you can use the same elements, including the physical computer profile and PXE server.
-
-To add a computer to an existing host cluster, follow the instructions in [Provision a Hyper-V cluster from bare metal](#provision-a-hyper-v-cluster-from-bare-metal), but add a cluster instead of creating one. 

@@ -2,8 +2,9 @@
 title: Add a Nano server as a Hyper-V host in VMM
 description: This article describes how to add a Nano server to the VMM fabric as a Hyper-V host or VM
 author:  rayne-wiselman
+ms.author: raynew
 manager:  cfreemanwa
-ms.date:  2016-09-04
+ms.date:  2016-09-22
 ms.topic:  article
 ms.prod:  system-center-threshold
 ms.technology:  virtual-machine-manager
@@ -11,13 +12,20 @@ ms.technology:  virtual-machine-manager
 
 # Add a Nano server as a Hyper-V host or VM in VMM
 
->Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
+>Applies To: System Center 2016 - Virtual Machine Manager
 
 You can use System Center 2016 - Virtual Machine Manager (VMM) to manage hosts and virtual machines running Nano server.
 
+## Before you start
+
+VMM support full lifecycle management of Nano Server-based VMs, including shielded VMs. However, note the following:
+
+- You can't create a VM template using a Nano Server VM in the VMM fabric. As a workaround, create a VM template from scratch using a Nano Server virtual hard disk.
+- There are some known issues when joining a Nano Server VM to a domain. If you try to join the VM to a domain by specifying customization details in a VM template, the domain information is ignored by VMM. The VM is deployed, but doesn't join the domain. As a workload, deploy the VM and then join it to a domain. [Learn more](https://technet.microsoft.com/windows-server-docs/compute/nano-server/getting-started-with-nano-server).
+
 ## Prepare a Nano server virtual hard disk
 
-To get started with the deployment of a Nano Server-based host or virtual machines in VMM you need to create a Nano server VHD from the Windows Server Technical Preview ISO. The VHD should include the VMM packages:
+To get started with the deployment of a Nano Server-based host or virtual machines in VMM you need to create a Nano server VHD from the Windows Server VHD. The VHD should include the VMM packages:
 
 - Adding the VMM package, **Microsoft-NanoServer-SCVMM-Package** ensures that the VMM agent is part of the VHD.
 - Adding the VMM compute package, **Microsoft-NanoServer-SCVMM-Compute-Package** ensures that the VHD has the Hyper-V role and you can manage the physical server using VMM. (If you install this package, do not use the -Compute option for the Hyper-V role)
@@ -26,7 +34,7 @@ To get started with the deployment of a Nano Server-based host or virtual machin
 
 ### Create a virtual hard disk for a physical machine
 
-1. Copy NanoServerImageGenerator.psm1 and Convert-WindowsImage.ps1 from the \NanoServer folder in the Windows Server Technical Preview ISO to a folder on your hard drive.
+1. Copy NanoServerImageGenerator.psm1 and Convert-WindowsImage.ps1 from the \NanoServer folder in the Windows Server ISO to a folder on your hard drive.
 2. Start Windows PowerShell as an administrator, change directory to the folder where you've placed these scripts and then import the NanoServerImageGenerator script by running: **Import-Module NanoServerImageGenerator.psm1 -Verbose**.
 3. Create a VHD that includes the VMM packages by running the following command which will prompt you for an administrator password for the new VHD: **New-NanoServerImage -MediaPath <path to root of media> -BasePath .\Base -TargetPath .\NanoServerVM\NanoServerVM.vhdx -ComputerName <computername> -OEMDrivers -Packages Microsoft-NanoServer-SCVMM-Package,Microsoft-NanoServer-SCVMM-Compute-Package**
 4. For example: **New-NanoServerImage -MediaPath F:\ -BasePath .\Base -TargetPath .\Nano1\NanoServer.vhd -ComputerName Nano-srv1 -OEMDrivers –Clustering –EnableRemoteManagementPort -Packages Microsoft-NanoServer-SCVMM-Package,Microsoft-NanoServer-SCVMM-Compute-Package**.
@@ -78,7 +86,7 @@ After the Nano server host is ready, add it to VMM in the same way that you [add
 
 If you're going to create Nano server-based VMs, you need to add few VM-specific packages to the VHD. Create the VHD for a VM as follows:
 
-1.  Copy NanoServerImageGenerator.psm1 and Convert-WindowsImage.ps1 from the \NanoServer folder in the Windows Server Technical Preview ISO to a folder on your hard drive.
+1.  Copy NanoServerImageGenerator.psm1 and Convert-WindowsImage.ps1 from the \NanoServer folder in VMM to a folder on your hard drive.
 2.  Start Windows PowerShell as an administrator, and navigate to the folder where you've placed these scripts. Import the NanoServerImageGenerator script with **Import-Module NanoServerImageGenerator.psm1 -Verbose**.
 3.  Create a VHD that includes the SCVMM packages by running the following command. You'll be prompted for an administrator password for the new VHD: **New-NanoServerImage -MediaPath <path to root of media> -BasePath .\Base -TargetPath .\NanoServerVM\NanoServerVM.vhdx -ComputerName <computername> -GuestDrivers -Packages Microsoft-NanoServer-SCVMM-Package,Microsoft-NanoServer-SCVMM-Compute-Package**
 4. For example: **New-NanoServerImage -MediaPath F:\ -BasePath .\Base -TargetPath .\Nano1\Nano.vhd -ComputerName Nano1 -GuestDrivers -Packages Microsoft-NanoServer-SCVMM-Package,Microsoft-NanoServer-SCVMM-Compute-Package**. This example creates a VHD from an ISO mounted as F:. When creating the VHD it will use a folder called Base in the same directory where you ran New-NanoServerImage; it will place the VHD in a folder called Nano1 in the folder from where the command is run. The computer name will be Nano1 and will virtual machine drivers installed running Hyper-V. If you want a Generation 1 virtual machine, generate a VHD image by specifying a .vhd extension for -TargetPath. For a Generation 2 virtual machine, generate a VHDX image by specifying a .vhdx extension for -TargetPath.
