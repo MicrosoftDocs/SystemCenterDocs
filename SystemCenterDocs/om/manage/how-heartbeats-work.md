@@ -2,7 +2,7 @@
 title: How Heartbeats Work in Operations Manager
 author: mgoedtel
 manager: cfreemanwa
-ms.date: 2016-08-29
+ms.date: 2016-09-25
 ms.custom: na
 ms.prod: system-center-threshold
 ms.technology: operations-manager
@@ -30,6 +30,6 @@ You can also override the global heartbeat interval for individual agents and th
   
 ## Next steps  
 
-To learn more about how to investigate an agent heartbeat failure and ways to resolve them, review [Resolving Heartbeat Alerts](resolving-heartbeat-alerts.md)  
+- To learn more about how to investigate an agent heartbeat failure and ways to resolve them, review [Resolving Heartbeat Alerts](resolving-heartbeat-alerts.md)  
 
   

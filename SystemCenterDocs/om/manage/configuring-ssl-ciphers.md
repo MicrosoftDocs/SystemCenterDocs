@@ -2,7 +2,7 @@
 title: Configuring SSL Ciphers
 author: mgoedtel
 manager: cfreemanwa
-ms.date: 2016-08-29
+ms.date: 2016-09-23
 ms.custom: na
 ms.prod: system-center-threshold
 ms.technology: operations-manager
@@ -13,11 +13,11 @@ ms.topic: article
 
 >Applies To: System Center 2016 - Operations Manager
 
-System Center 2016 - Operations Manager correctly manages UNIX and Linux computers without changes to the default Secure Sockets Layer \(SSL\) cipher configuration. For most organizations, the default configuration is acceptable, but you should check your organization's security policies to determine whether changes are required.  
+System Center 2016 - Operations Manager correctly manages UNIX and Linux computers without changes to the default Secure Sockets Layer (SSL) cipher configuration. For most organizations, the default configuration is acceptable, but you should check your organization's security policies to determine whether changes are required.  
   
 ## Using the SSL cipher configuration  
 
-The Operations Manager UNIX and Linux agent communicates with the Operations Manager management server by accepting requests on port 1270 and supplying information in response to those requests. Requests are made by using the WS\-Management protocol that is running on an SSL connection.  
+The Operations Manager UNIX and Linux agent communicates with the Operations Manager management server by accepting requests on port 1270 and supplying information in response to those requests. Requests are made by using the WS-Management protocol that is running on an SSL connection.  
   
 When the SSL connection is first established for each request, the standard SSL protocol negotiates the encryption algorithm, known as a cipher for the connection to use. For Operations Manager, the management server always negotiates to use a high strength cipher so that strong encryption is used on the network connection between the management server and the UNIX or Linux computer.  
   
@@ -29,7 +29,7 @@ If the default SSL cipher configuration contradicts your organization's security
   
 ### Setting the sslCipherSuite configuration option for System Center 2016 
 
-The SSL ciphers for port 1270 are controlled by setting the **sslciphersuite** option in the OMI configuration file, **omiserver.conf**. The **omiserver.conf** file is located in the directory \/etc\/opt\/microsoft\/scx\/conf\/.  
+The SSL ciphers for port 1270 are controlled by setting the **sslciphersuite** option in the OMI configuration file, **omiserver.conf**. The **omiserver.conf** file is located in the directory /etc/opt/microsof/scx/conf/.  
   
 The format for the sslciphersuite option in this file is:  
   
@@ -41,7 +41,7 @@ where <cipher spec> specifies the ciphers that are allowed, disallowed, and the 
   
 The format for <cipher spec> is the same as the format for the **sslCipherSuite** option in the Apache HTTP Server version 2.0. For detailed information, see [SSLCipherSuite Directive](http://go.microsoft.com/fwlink/?LinkId=318052) in the Apache documentation. All information on this site is provided by the owner or the users of the website. Microsoft makes no warranties, express, implied or statutory, as to the information at this website.  
   
-After setting the **sslCipherSuite** configuration option, you must restart the UNIX and Linux agent for the change to take effect. To restart the UNIX and Linux agent, run the following command, which is located in the **\/etc\/opt\/microsoft\/scx\/bin\/tools** directory.  
+After setting the **sslCipherSuite** configuration option, you must restart the UNIX and Linux agent for the change to take effect. To restart the UNIX and Linux agent, run the following command, which is located in the **/etc/opt/microsoft/scx/bin/tools** directory.  
   
 ```  
 . setup.sh  
@@ -51,7 +51,9 @@ scxadmin -restart
 ## Next steps
 
 - To understand how to authenticate and monitor your UNIX and Linux computers, review [Credentials You Must Have to Access UNIX and Linux Computers](../plan/planning-security-credentials-for-accessing-unix-and-linux-computers.md)
+
 - To configure Operations Manager to authenticate with your UNIX and Linux computers, please see [How to Set Credentials for Accessing UNIX and Linux Computers](How-to-Set-Credentials-for-Accessing-UNIX-and-Linux-Computers.md)  
+
 - To understand how to elevate an unprivileged account for effective monitoring of UNIX and Linux computers, review [How to Configure sudo Elevation and SSH Keys](How-to-Configure-sudo-Elevation-and-SSH-Keys.md)  
 
   
