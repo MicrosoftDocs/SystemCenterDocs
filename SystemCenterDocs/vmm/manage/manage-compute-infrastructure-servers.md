@@ -1,6 +1,6 @@
 ---
 title: Set up infrastructure servers in the VMM compute fabric
-description: This article describes how to set up infrastructure servers in the VMM fabric
+description: This article describes how to manage infrastructure servers in the VMM fabric
 author:  rayne-wiselman
 ms.author: raynew
 manager:  cfreemanwa
