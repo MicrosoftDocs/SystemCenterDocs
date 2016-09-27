@@ -444,4 +444,7 @@
 ##### [Child Runbooks in Service Management Automation](sma/Manage/Child-Runbooks-in-Service-Management-Automation.md)
 ##### [Building an Integration Module](SMA/Manage/Building-an-Integration-Module.md)
 ## [Service Provider Foundation](SPF/Service-Provider-Foundation.md)
+### [Architecture Overview](spf/get-started/architecture-overview.md)
+### [Portals in SPF](spf/get-started/portals-in-service-provider-foundation.md)
+### [Prepare your environment](spf/get-started/prepare-your-environment.md)
 ### [How to Install Service Provider Foundation for System Center Technical Preview](SPF/Deploy/How-to-Install-Service-Provider-Foundation-for-System-Center-Technical-Preview.md)
