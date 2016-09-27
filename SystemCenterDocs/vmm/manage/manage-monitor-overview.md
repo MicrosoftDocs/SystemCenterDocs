@@ -1,6 +1,8 @@
 ---
 title: Monitor VMM
 description: This article describes how to monitor VMM
+author:  rayne-wiselman
+ms.author: raynew
 manager:  cfreemanwa
 ms.date:  2016-09-19
 ms.topic:  article
@@ -10,7 +12,7 @@ ms.technology:  virtual-machine-manager
 
 # Monitor VMM
 
->Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
+>Applies To: System Center 2016 - Virtual Machine Manager
 
 You configure monitoring and reporting in System Center 2016 - Virtual Machine Manager (VMM) as follows:
 
