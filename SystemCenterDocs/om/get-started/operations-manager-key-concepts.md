@@ -1,8 +1,9 @@
 ---
 title: Operations Manager Key Concepts
+description:
 author: mgoedtel
 manager: cfreemanwa
-ms.date: 2016-09-23
+ms.date: 2016-09-27
 ms.custom: na
 ms.prod: system-center-threshold
 ms.technology: operations-manager
@@ -109,9 +110,9 @@ The following image is a simplified illustration of how objects are discovered a
 
 4.  The agent requests configuration data, and then the management server sends the agent configuration data from installed management packs that includes classes to be discovered. For example, if the Windows Server operating system management packs are installed, the management server will send the agent the operating system classes.
 
-5.  The agent compares the configuration data to the computer, identifies any objects that it discovers, and returns the information to the management server. For example, the agent will return to the management server that an instance of Windows Server 2008 R2 operating system is on the computer.
+5.  The agent compares the configuration data to the computer, identifies any objects that it discovers, and returns the information to the management server. For example, the agent will return to the management server that an instance of Windows Server 2016 operating system is on the computer.
 
-6.  The management server sends the agent all monitoring logic from installed management packs that applies to the discovered objects. For example, the agent will receive all monitoring logic that applies to Windows Server 2008 R2.
+6.  The management server sends the agent all monitoring logic from installed management packs that applies to the discovered objects. For example, the agent will receive all monitoring logic that applies to Windows Server 2016.
 
 7.  The agent applies the monitoring logic, such as rules and monitors, runs workflows, and returns data to the management server.
 
@@ -132,11 +133,11 @@ For each agent, Operations Manager runs a *health service watcher*, which monito
 
 ### Other resources for Operations Manager
 
--   [TechNet Library main page for System Center - Operations Manager](../Operations-Manager.md)
+-   [TechNet Library main page for System Center - Operations Manager](../welcome-to-operations-manager.md)
 
 -   To learn how to install Operations Manager and deploy a management group, see [Deploying System Center 2016 - Operations Manager](../deploy/deploying-system-center-2016-operations-manager.md)
 
--   To learn how to use Operations Manager after the management group is set up, see [System Center 2016 - Operations Manager Operations Guide](../Manage/System-Center-2016-Operations-Manager-Operations-Guide.md)
+-   To learn how to use Operations Manager after the management group is set up, see [System Center 2016 - Operations Manager Operations Guide](../Manage/Operations-Manager-Operations-Guide.md)
 
 -   To learn how to create a management pack, see [Author’s Guide for Operations Manager for System Center 2012](http://go.microsoft.com/fwlink/p/?LinkID=212377)
 
