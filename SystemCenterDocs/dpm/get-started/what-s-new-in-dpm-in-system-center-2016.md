@@ -5,7 +5,7 @@ ms.topic:  article
 author:  markgalioto
 ms.prod:  system-center-threshold
 keywords:  
-ms.date:  2016-08-30
+ms.date:  2016-09-26
 title:  What's new in DPM in System Center 2016
 ms.technology:  data-protection-manager
 ms.assetid:  a5e81bf0-43a6-4099-af2e-dfb0c1aa7ed8
@@ -16,34 +16,34 @@ ms.assetid:  a5e81bf0-43a6-4099-af2e-dfb0c1aa7ed8
 >Applies To: System Center 2016 - Data Protection Manager
 
 
-Before you begin, check the [Release Notes for System Center 2016](../../get-started/Release-Notes-for-System-Center-Technical-Preview-5.md) for last minute issues. System Center DPM 2016 adds improvements in three key areas: storage efficiency, performance, and security. Modern DPM Storage (MDS) achieves 30-40% improvements in storage space requirement. The flexible storage feature, which allows selection of volumes for backing up certain workloads, makes storage and performance more efficient. Performance is also improved since there is a 70% reduction in I/O requirements, resulting in much faster backups. With support for Shielded VMs, DPM promises secure and seamless backups, and recovery of critical VMs. DPM 2016 adds support for protecting Hyper-V VMs deployed on SMBv3-compliant, 3rd Party NAS devices.
+Before you begin, check the [Release Notes for System Center 2016](../../get-started/Release-Notes-for-System-Center-Technical-Preview-5.md) for last minute issues. System Center DPM 2016 adds improvements in three key areas: storage efficiency, performance, and security. Modern DPM Storage (MDS) which takes advantage of storage improvements in Windows Server 2016, improves storage space savings 30-40%. In addition to space savings, you can create storage and performance efficiency by using MDS to back up certain workloads to specific volumes. DPM performance improves due to the 70% reduction in I/O requirements, resulting in much faster backups. DPM 2016 protects shielded VMs and Hyper-V VMs deployed on third-party NAS devices that support the SMB3 protocol.
 
 ## New DPM 2016 features overview
 
 The following features are either new to DPM, or are improved for DPM 2016.
 
 ### Modern DPM Storage
-DPM 2016 achieves dramatic storage and performance improvements by storing incremental backups using ReFS block-cloning technology.  As a result, the storage consumed by backups grows and shrinks with the production data source, and there is no more over-allocation of storage.
+By using Resilient File System (ReFS) block-cloning technology to store incremental backups, DPM 2016 dramatically improves storage utilization and performance. The storage consumed by backups grows and shrinks with the production data source, and there is no over-allocation of storage.
 
 ### Resilient change tracking (RCT)
-Hyper-V backup has been enhanced with resilient change tracking (RCT). DPM relies on Hyper-V's native change tracking, which removes the need for time-consuming consistency checks. RCT provides better resiliency than the change tracking provided by VSS snapshot-based backups. DPM also uses RCT for incremental backup. It identifies VHD changes for virtual machines, and transfers only those blocks that are indicated by the change tracker.
+DPM uses the native change tracking in Hyper-V, which removes the need for time-consuming consistency checks. RCT provides better resiliency than the change tracking provided by VSS snapshot-based backups. DPM also uses RCT for incremental backup. It identifies VHD changes for virtual machines, and transfers only those blocks that are indicated by the change tracker.
 
 ### Protect data sources in mixed-mode clusters
-Windows Server 2016 comes with the cluster OS rolling update, where a cluster can be upgraded to Windows Server 2016 without bringing it down. DPM 2016 will continue to backup VMs during the upgrade, maintaining the backup SLA.
+Windows Server 2016 comes with the cluster OS rolling update, where a cluster can be upgraded to Windows Server 2016 without bringing it down. DPM 2016 continues to protect VMs during the upgrade, maintaining the backup service level agreement (SLA).
 
 ### Secure VM Backups
-Shielded VMs and Guarded Fabric in Windows 2016 provide the ability to secure VMs from compromised hosts.  DPM 2016 backups maintain the security provided by shielded VMs, which protects enterprise resources, and help recover those VMs securely and seamlessly.
+Shielded VMs and Guarded Fabric in Windows Server 2016 provide the ability to secure VMs on compromised hosts.  DPM 2016 backups maintain the security provided by shielded VMs, which protects enterprise resources, and help recover those VMs securely and seamlessly.
 
 ### Storage Spaces Direct
-Storage Spaces Direct (S2D) leverages the Storage Spaces feature that was introduced in Windows Server 2012 R2, without the need for shared storage, which allows you to deploy highly available (HA) storage systems using local storage. S2D leverages the local disks on hosts to provide a shared pool of clustered storage that can be used as primary storage for Hyper-V virtual machine files, or for secondary storage for Hyper-V Replica virtual machines files.
-The primary use case for S2D is private cloud storage, either on-premises for enterprises, or in hosted, private clouds for service providers.
-For more information about Storage Spaces Direct, see the article on [Storage Spaces Direct in Windows Server 2016](https://technet.microsoft.com/en-us/windows-server-docs/storage/storage-spaces/storage-spaces-direct-windows-server-2016).
+Storage Spaces Direct leverages the Storage Spaces feature introduced in Windows Server 2012 R2 which allows you to deploy highly available (HA) storage systems using local storage. Storage Spaces Direct leverages the local disks on hosts to provide a shared pool of clustered storage that can be used as primary storage for Hyper-V virtual machine files, or for secondary storage for Hyper-V Replica virtual machines files.
+The primary use case for Storage Spaces Direct is private cloud storage, either on-premises for enterprises, or in hosted private clouds for service providers.
+For more information about Storage Spaces Direct, see the article on [Storage Spaces Direct in Windows Server 2016](https://technet.microsoft.com/en-us/windows-server-docs/storage/storage-spaces/storage-spaces-direct-overview).
 
-DPM protects Hyper-V VMs that use Storage Spaces Direct. Most configurations are supported, including the backup of VMs using the S2D hyper-converged scenario with the Hyper-V (compute) and Storage Spaces Direct (storage) components on the same cluster, and the backup of virtual machines using the S2D disaggregated scenario which separates out  Hyper-V servers (compute) into a separate cluster from the Storage Spaces Direct servers (storage). In this configuration virtual machines are configured to store their files on the Scale-Out File Server (SOFS) which is accessed through the network using the SMB3 protocol. In all cases virtual machine backup and recovery is seamless with no change in user experience. Note that backing up and restoring virtual machines running on a Windows Nano Server isn't supported.
+DPM protects Hyper-V VMs that use Storage Spaces Direct. Most configurations are supported, including the backup of VMs using the [Storage Spaces Direct hyper-converged scenario](https://technet.microsoft.com/windows-server-docs/storage/storage-spaces/hyper-converged-solution-using-storage-spaces-direct) with the Hyper-V (compute) and Storage Spaces Direct (storage) components on the same cluster, and the backup of virtual machines using the Storage Spaces Direct disaggregated scenario which separates out  Hyper-V servers (compute) into a separate cluster from the Storage Spaces Direct servers (storage). In this configuration virtual machines are configured to store their files on the Scale-Out File Server (SOFS) which is accessed through the network using the SMB3 protocol. In all cases virtual machine backup and recovery is seamless with no change in user experience. Note that backing up and restoring virtual machines running on a Windows Nano Server isn't supported.
 
 
 ### Hyper-V with ReFS SOFS Cluster
-DPM 2016 can now back-up Hyper-V VMs deployed on ReFS-based SOFS Clusters. Backup and recovery of both RCT-based VMs, and non-RCT VMs is supported.
+DPM 2016 can back up Hyper-V VMs deployed on ReFS-based SOFS clusters. Backup and recovery of both RCT-based VMs, and non-RCT VMs is supported.
 
 ### DPM 2016 upgrades do not require rebooting the production server
 When you upgrade to DPM 2016, you are not required to reboot the production server. To avoid rebooting the production server, upgrade to DPM 2016 and upgrade the DPM agent on the production servers. Backups will continue and you can reboot the production server when you want.
@@ -53,10 +53,10 @@ When you upgrade to DPM 2016, you are not required to reboot the production serv
 Modern DPM Storage is a feature that provides several benefits including:
 
 ### Improved storage savings
-Modern DPM Storage (MDS) achieves 30-40% storage savings using technologies such as ReFS. Using ReFS volumes and storing backups on VHDXs means that there are no LDM Limits or storage over-allocations. Hence, DPM storage consumption is flexible now, and grows and shrinks based on production data source’s storage changes.
+Modern DPM Storage (MDS) achieves 30-40% storage savings using technologies such as ReFS. Using ReFS volumes and storing backups on VHDXs means there are no Local Disk Manager (LDM) limits or storage over-allocations. DPM storage consumption is flexible - it grows and shrinks based on the production data source’s storage changes.
 
 ### Faster backups
-DPM 2016 uses Block cloning to store backups on Resilient File System (ReFS) volumes. Block cloning uses Allocate-on-write, as opposed to copy-on-write which is used by VolSnap in DPM 2012 R2. This change leads to more efficient utilization of IOPS, making backups nearly 70% faster than before.
+DPM 2016 uses block cloning to store backups on Resilient File System (ReFS) volumes. Instead of using copy-on-write to store backups - which was used in DPM 2012 R2, DPM 2016's block cloning uses allocate-on-write. This change improves IOPS efficiency making backups nearly 70% faster.
 
 ### Choose the volumes for your data source to increase storage efficiency
 All storage is not the same. DPM’s flexible storage feature saves costs by providing the flexibility to choose appropriate storage for a given data source. This means that DPM can use the expensive, high-performance disks for backing up workloads which require high IOPS, such as SQL or SharePoint. Low performant storage can be used for other workloads with reduced IOPS loads.
