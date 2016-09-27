@@ -3,7 +3,7 @@ description: This topic provides links to the Service Provider Foundation articl
 manager:  cfreeman
 ms.topic:  article
 author:  rayne-wiselman
-ms.author: rayne-wiselman
+ms.author: raynew
 ms.prod:  system-center-threshold
 keywords:  
 ms.date:  2016-06-28
