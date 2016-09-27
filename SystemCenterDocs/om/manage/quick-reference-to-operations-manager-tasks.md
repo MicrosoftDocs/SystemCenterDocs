@@ -3,7 +3,7 @@ title:  Quick Reference to Operations Manager Tasks
 description:  
 author: mgoedtel
 manager: cfreemanwa
-ms.date: 2016-09-20
+ms.date: 2016-09-27
 ms.custom: na
 ms.prod: system-center-threshold
 ms.technology: operations-manager
@@ -38,7 +38,7 @@ The following table gives a quick reference for where to perform common tasks an
 
 ## Next steps
 
-- To learn more about what to manage, how to manage, or how to support an Operations Manager management group, see the [Operations Guide for System Center 2016 - Operations Manager](System-Center-2016-Operations-Manager-Operations-Guide.md)
+- To learn more about what to manage, how to manage, or how to support an Operations Manager management group, see the [Operations Guide for System Center 2016 - Operations Manager](Operations-Manager-Operations-Guide.md)
 
 
 
