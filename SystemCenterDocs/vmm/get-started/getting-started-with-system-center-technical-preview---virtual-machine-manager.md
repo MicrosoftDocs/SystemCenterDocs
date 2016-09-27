@@ -1,27 +1,17 @@
 ---
-description:  
-manager:  cfreemanwa
-ms.topic:  article
+title: Getting Started with System Center - Virtual Machine Manager
+description: This article provides an overview of System Center VMM and what it can do for your business
 author:  rayne-wiselman
+ms.author: raynew
+redirect_url: get-started-whats-new
+manager:  cfreemanwa
+ms.date:  2016-09-27
+ms.topic:  article
 ms.prod:  system-center-threshold
-keywords:  
-ms.date:  2016-06-28
-title:  Getting Started with System Center Technical Preview   Virtual Machine Manager
 ms.technology:  virtual-machine-manager
 ms.assetid:  0c3275b4-2809-49a1-8aac-d2ef2edf7cce
 ---
 
-# Getting Started with System Center Technical Preview - Virtual Machine Manager
+# Getting Started with System Center - Virtual Machine Manager
 
->Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
-
-The following topics provide information to help you get started with learning about Virtual Machine Manager (VMM).
-
--   [What's New in VMM in System Center Technical Preview](What-s-New-in-VMM-in-System-Center-Technical-Preview.md)
-
--   [Resources for System Center Technical Preview - Virtual Machine Manager](Resources-for-System-Center-Technical-Preview---Virtual-Machine-Manager.md)
-
--   [Glossary for System Center Technical Preview - Virtual Machine Manager](Glossary-for-System-Center-Technical-Preview---Virtual-Machine-Manager.md)
-
-
-
+>Applies To: System Center 2016 - Virtual Machine Manager
