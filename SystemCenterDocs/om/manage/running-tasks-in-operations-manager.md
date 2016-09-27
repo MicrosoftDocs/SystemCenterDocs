@@ -3,7 +3,7 @@ title: Running Tasks in Operations Manager
 description:
 author: mgoedtel
 manager: cfreemanwa
-ms.date: 2016-09-20
+ms.date: 2016-09-27
 ms.custom: na
 ms.prod: system-center-threshold
 ms.technology: operations-manager
@@ -23,7 +23,7 @@ Click an alert or object to see tasks for that alert or object. Click a task to 
   
 ![Example of tasks](../media/om2016-tasks-pane.png)  
   
-In the example above, if you click the first task (**Check Health Service Startup Configuration Diagnostic Task**), you see a **Run Task** dialog box:  
+In the example above, if you click the task **Display Local Users**, you see a **Run Task** dialog box:  
   
 ![Example of a run tasks dialog box](../media/om2016-task-run-properties.png)  
   
@@ -33,7 +33,7 @@ Generally, you should accept the defaults and click **Run**. You will then see a
   
 ![Example of a task status window](../media/om2016-task-results.png)  
   
-In this instance, the task completed successfully. **Task Output** provides you with instructions on troubleshooting the issue.  
+In this instance, the task completed successfully. **Task Output** provides you with the results of the task, in this case it will return all of the user accounts defined on the server.
   
 ## Next steps
 
