@@ -2,14 +2,17 @@
 title: Deploy the VMM library for high availability
 description: This article describes how to set up the VMM library in a highly available deployment
 author:  rayne-wiselman
+ms.author: raynew
 manager:  cfreemanwa
-ms.date:  2016-09-01
+ms.date:  2016-09-22
 ms.topic:  article
 ms.prod:  system-center-threshold
 ms.technology:  virtual-machine-manager
 ---
 
 # Deploy a highly available VMM library
+
+>Applies To: System Center 2016 - Virtual Machine Manager
 
 This article describes the steps for deploying a highly available System Center 2016 - Virtual Machine Manager (VMM) library. You set up a Windows failover cluster running the File Server role. Then you create file shares on the cluster and assign them as VMM library shares.
 

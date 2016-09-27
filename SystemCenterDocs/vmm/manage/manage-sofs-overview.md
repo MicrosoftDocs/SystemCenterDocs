@@ -2,8 +2,9 @@
 title: Manage SOFS in the VMM fabric
 description: This article describes how to manage SOFS in the VMM fabric
 author:  rayne-wiselman
+ms.author: raynew
 manager:  cfreemanwa
-ms.date:  2016-09-12
+ms.date:  2016-09-22
 ms.topic:  article
 ms.prod:  system-center-threshold
 ms.technology:  virtual-machine-manager
@@ -11,7 +12,7 @@ ms.technology:  virtual-machine-manager
 
 # Manage scale-out file server (SOFS) in the VMM fabric
 
->Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
+>Applies To: System Center 2016 - Virtual Machine Manager
 
 Scale-out file server (SOFS) is a file server deployed as an active/active cluster based on SMB 3.0. Using an SOFS cluster provides supplies apps with the bandwidth of all nodes in the cluster. All nodes in the cluster accept SMB requests, providing continuous availability and transparent failover if a node goes down.
 

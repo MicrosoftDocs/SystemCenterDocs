@@ -2,8 +2,9 @@
 title: Provision a scale-out file server (SOFS) from standalone file servers in the VMM fabric
 description: This article describes how to provision an SOFS in the VMM fabric
 author:  rayne-wiselman
+ms.author: raynew
 manager:  cfreemanwa
-ms.date:  2016-09-11
+ms.date:  2016-09-22
 ms.topic:  article
 ms.prod:  system-center-threshold
 ms.technology:  virtual-machine-manager
@@ -11,7 +12,7 @@ ms.technology:  virtual-machine-manager
 
 # Provision a scale-out file server (SOFS) from standalone file servers in the VMM fabric
 
->Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
+>Applies To: System Center 2016 - Virtual Machine Manager
 
 Use the instructions in this article if you want to use System Center 2016 - Virtual Machine Manager (VMM) to create a scale-out-file server (SOFS) from standalone file servers that are managed in the VMM fabric.
 
@@ -22,4 +23,4 @@ Use the instructions in this article if you want to use System Center 2016 - Vir
 4.  In **Cluster Nodes**, define a list of computers to add to the cluster.
 5.  On the **Summary** page, confirm the settings and then click **Finish**.
 
-You can monitor the cluster status on the **Jobs** page. After the job finishes check the cluster in **Fabric** > **Storage** > **File servers**. 
+You can monitor the cluster status on the **Jobs** page. After the job finishes check the cluster in **Fabric** > **Storage** > **File servers**.

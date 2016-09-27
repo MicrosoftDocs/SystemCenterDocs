@@ -2,8 +2,9 @@
 title: Add VM templates to the VMM library
 description: This article provides guidance for adding VM templates to the library in the VMM compute fabric
 author:  rayne-wiselman
+ms.author: raynew
 manager:  cfreemanwa
-ms.date:  2016-09-04
+ms.date:  2016-09-22
 ms.topic:  article
 ms.prod:  system-center-threshold
 ms.technology:  virtual-machine-manager
@@ -11,16 +12,15 @@ ms.technology:  virtual-machine-manager
 
 # Add VM templates to the VMM library
 
->Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
+>Applies To: System Center 2016 - Virtual Machine Manager
 
 Read this article to learn about VM templates and how to manage them in the System Center 2016 - Virtual Machine Manager (VMM) library.
 
-## Overview
 
 Templates help you to create VMs with consistent settings. VMM provides two types of templates:
 
 - VM templates are database objects that are stored in the VMM library. They're used to quickly set up VMs.
-- Service templates define how a service is configured. They include information about the VMs that are deployed as part of the service, which applications to install on VMs, and the network settings that should be used. Service templates usually contain VM templates.
+- [Service templates](manage-library-add-service-templates.md) define how a service is configured. They include information about the VMs that are deployed as part of the service, which applications to install on VMs, and the network settings that should be used. Service templates usually contain VM templates.
 
 There are two methods for creating a VM template:
 - From an existing virtual hard disk or VM template in the VMM library.
@@ -59,4 +59,8 @@ There are two methods for creating a VM template:
 6. In **Select Library Server**, click the library server for the VM you're using for the template and in **Select Path** specify the share/folder.
 7. In **Summary**, review the settings and click **Create**. In **Jobs** you can track the template being created. Wait for the **Completed** status.
 
-When you create a VM you'll be able to create it based on the template you've just created.
+You can create VMs based on the template you've just created.
+
+## Next steps
+
+You can [create VMs based on the template](manage-vm-template.md) you've just created.

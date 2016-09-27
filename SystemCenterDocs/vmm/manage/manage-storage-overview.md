@@ -2,6 +2,7 @@
 title: Set up the VMM storage fabric
 description: This article describes how to set up the VMM storage fabric
 author:  rayne-wiselman
+ms.author: raynew
 manager:  cfreemanwa
 ms.date:  2016-08-31
 ms.topic:  article
@@ -11,7 +12,7 @@ ms.technology:  virtual-machine-manager
 
 # Set up the VMM storage fabric
 
->Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
+>Applies To: System Center 2016 - Virtual Machine Manager
 
 
 You can use System Center 2016 - Virtual Machine Manager (VMM) to manage your physical and virtualized infrastructure. As part of that management VMM can manage storage that you assign to virtual hosts and clusters, and VMs.
@@ -46,8 +47,8 @@ VMM can manage file storage that supports the SMB 3.0 protocol. SMB is supported
 - **Windows file server**:  You can add a remote file server as a storage device or you can scale file-based storage Scale-Out File Server (SOFS).
 - **Scaled-out file server (SOFS)**: SOFS provides a file server cluster in which storage is shared between the cluster nodes. Storage for SOFS could be a SAN (SAS, iSCSI, Fibre Channel) or could integrate with Storage Spaces Direct.
 - **Storage Spaces Direct (S2D)**: S2D is the next evolution of Microsoft Storage Spaces, which virtualizes storage by grouping disks into storage pools and creating virtual disks (storage spaces) from the pool capacity. In S2D you can build highly available storage using local storage. This removes the need for remote SAN storage devices and enables use the storage devices that weren't previously available, such as SATA SSD or NVMe flash. [Learn more](https://technet.microsoft.com/library/mt126109.aspx).
-- **Storage replication**: VMM supports Windows Storage Replica for protecting data in a primary storage volume that replicating it to a secondary volume. [Learn more](https://technet.microsoft.com/library/mt126183.aspx).
-- **Storage resources**: You can control access to shared storage on an SOFS or VM by setting storage quality-of-service (QoS) policies. These policies set maximum and minimum bandwidth for storage resources. [Learn more](https://technet.microsoft.com/library/mt126108.aspx)
+- **Storage replication**: VMM supports Windows Storage Replica for protecting data in a primary storage volume that replicating it to a secondary volume. [Learn more](manage-storage-replica.md).
+- **Storage resources**: You can control access to shared storage on an SOFS or VM by setting storage quality-of-service (QoS) policies. These policies set maximum and minimum bandwidth for storage resources.
 
 ## Set up file storage
 

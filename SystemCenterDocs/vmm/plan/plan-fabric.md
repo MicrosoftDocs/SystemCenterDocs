@@ -2,8 +2,9 @@
 title: Plan the VMM fabric
 description: This article provides planning information for the VMM fabric
 author:  rayne-wiselman
+ms.author: raynew
 manager:  cfreemanwa
-ms.date:  2016-08-29
+ms.date:  2016-09-22
 ms.topic:  article
 ms.prod:  system-center-threshold
 ms.technology:  virtual-machine-manager
@@ -12,9 +13,9 @@ ms.technology:  virtual-machine-manager
 
 # Plan the VMM fabric
 
->Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
+>Applies To: System Center 2016 - Virtual Machine Manager
 
-The System Center 2016 0 Virtual Machine Manager (VMM) fabric is an abstracted collection of resources that can be discovered, identified, and managed.  
+The System Center 2016 - Virtual Machine Manager (VMM) fabric is an abstracted collection of resources that can be discovered, identified, and managed.  
 
 -   **Compute**: Resources in the compute fabric include virtualization servers (Hyper-V and VMware), VMs, and infrastructure services such as  pre-boot execution environment (PXE) servers to handle bare-metal deployment of Hyper-V host servers, and update servers.
 -   **Network**: The network fabric includes VMM networks, load balancers, and gateways.
@@ -58,3 +59,9 @@ When planning the storage fabric consider the following:
     -   Bldg2Silver: A set of SSDs and HDDs that you will make available to users in building 2.
 
 -   You can map storage classifications to block storage and file shares.
+
+## Next steps
+
+- [Manage Hyper-V hosts and clusters](../manage/manage-compute-hyper-v-overview.md)
+- [Manage the networking fabric](../manage/manage-network-overview.md)
+- [Manage the storage fabric](../manage/manage-storage-overview.md)

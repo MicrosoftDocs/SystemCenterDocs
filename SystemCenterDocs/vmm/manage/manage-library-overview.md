@@ -2,8 +2,9 @@
 title: Set up the library in the VMM compute fabric
 description: This article provides guidance for setting up the library in the VMM compute fabric
 author:  rayne-wiselman
+ms.author: raynew
 manager:  cfreemanwa
-ms.date:  2016-09-04
+ms.date:  2016-09-22
 ms.topic:  article
 ms.prod:  system-center-threshold
 ms.technology:  virtual-machine-manager
@@ -11,11 +12,10 @@ ms.technology:  virtual-machine-manager
 
 # Set up the library in the VMM compute fabric
 
->Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
+>Applies To: System Center 2016 - Virtual Machine Manager
 
 Read this article to understand the System Center 2016 - Virtual Machine Manager (VMM) library and how you interact with it.
 
-## Overview
 
 The VMM library is a file share that includes a catalog of resources that are used to deploy virtual machines and services in the VMM fabric. The library stores:
 
