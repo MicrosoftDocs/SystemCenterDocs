@@ -575,10 +575,27 @@ Recommended Action
 Ensure that you have specified a valid path parameter, and that all necessary files/folders are present. Try the operation again.*
 **Workaround:** Create a VM template from scratch using a Nano Server VHD.
 
-#### Service deployments from Service templates will fail if you include "Desktop Experience" & other GUI related features in your service template
-**Description:** Deploying a Service template that has "Desktop Experience" & other GUI related features included will fail as these options are no longer supported in Windows Server.
+#### VMM requires manual steps to be performed to add a Nano Server-based host in an Untrusted domain to VMM
+**Description:** When you try to add a Nano Server-based host in an untrusted domain to VMM, it fails.
+**Workaround:** Execute the below steps on the Nano Server-based host and then try to add it as an Untrsuted host to VMM:
+1.  Enable WINRM over Https on Nano Server-based host:
+      New-Item -Path WSMan:\LocalHost\Listener -Transport HTTPS -Address * -CertificateThumbPrint $cert.Thumbprint –Force
+2.  Create Firewall exception on Nano Server-based host to allow WINRM over https:
+      New-NetFirewallRule -DisplayName 'Windows Remote Management (HTTPS-In)' -Name 'Windows Remote Management (HTTPS-In)' -Profile Any -LocalPort 5986 -Protocol TCP
 
-**Workaround:** There is no workaround, do not include these features in your service template.
+#### VMM does not support addition of Nano Server-based Perimeter hosts
+**Description:** When you try to add a Nano Server-based Perimeter host to VMM using the "Add Resource" Wizard, addition of the perimeter host will fail.
+**Workaround:**  Execute the below steps on the host and instead of adding the host as a Perimeter host, add it as a host in an Untrusted domain (Second option in the Add Hyper-V Hosts & Clusters wizard)
+1.  Enable WINRM over Https on Nano Server-based host:
+      New-Item -Path WSMan:\LocalHost\Listener -Transport HTTPS -Address * -CertificateThumbPrint $cert.Thumbprint –Force
+2.  Create Firewall exception on Nano Server-based host to allow WINRM over https:
+      New-NetFirewallRule -DisplayName 'Windows Remote Management (HTTPS-In)' -Name 'Windows Remote Management (HTTPS-In)' -Profile Any -LocalPort 5986 -Protocol TCP
+
+
+#### Service deployments from Service templates will fail if you include "Desktop Experience" or other GUI related features in your service template that do not apply to Nano Server/Core based guest OS.
+**Description:** When selecting Roles & Features for a Service Template, the Guest OS Profile (i.e. Windows Server 2016) doesn't differentiate between Core, Nano Server and Desktop. Selecting Roles/Features that do not apply to Core/Nano Server-based Guest OS, will result in failure during deployment.
+
+**Workaround:** There is no workaround, do not include these roles & features in your service template.
 
 #### Servicing a service post an upgrade from VMM 2012 R2 to VMM 2016 will not update the VMM guest agents
 **Description:** When you upgrade your VMM environment from 2012 R2 to 2016 with existing service deployments and then service those services, VMM 2016 guest agents will not get updated on the VMs that were part of the service deployment. There is no functionality impact due to this.
