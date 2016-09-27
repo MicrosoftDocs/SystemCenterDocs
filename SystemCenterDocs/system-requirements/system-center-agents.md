@@ -5,7 +5,7 @@ ms.topic:  article
 author:  cfreemanwa
 ms.prod:  system-center-threshold
 keywords:  
-ms.date:  2016-07-01
+ms.date:  2016-09-27
 title:  System Center Agents
 ms.technology:  system-center-2016
 ms.assetid:  cd5d13e8-71da-4e91-9bcf-f3be00a03d54
@@ -198,4 +198,3 @@ This information lists both Microsoft and non-Microsoft operating systems and ve
 -   Ubuntu Server 12.04 (x86/x64)
 
 -   Ubuntu Server 14.04 (x86/x64)
-
