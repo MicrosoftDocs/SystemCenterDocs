@@ -1,5 +1,5 @@
 ---
-title: System Requirements: System Center 2016 - Operations Manager
+title: System Requirements for System Center 2016 - Operations Manager
 description:
 author: mgoedtel
 manager: cfreemanwa
@@ -8,9 +8,10 @@ ms.custom: na
 ms.prod: system-center-threshold
 ms.technology: operations-manager
 ms.topic: article
----  
+---
 
-# System Requirements: System Center 2016 - Operations Manager
+
+# System Requirements for System Center 2016 - Operations Manager
 
 >Applies To: System Center 2016 - Operations Manager
 
