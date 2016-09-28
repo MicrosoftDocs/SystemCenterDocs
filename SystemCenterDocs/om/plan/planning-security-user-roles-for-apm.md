@@ -32,6 +32,13 @@ Legend:
 |Access Application Advisor|Yes|No|No|Yes|No|No|Yes|Yes|
 
 
+| -                                     | Administrator | Author | Advanced Operator | Application Monitoring Operator | Operator | Read-Only Operator | Report Operator | Report Security Administrator |
+|---------------------------------------|---------------|--------|-------------------|---------------------------------|----------|--------------------|-----------------|-------------------------------|
+| Run APM Wizard or change APM settings | Yes           | No     | No                | No                              | No       | No                 | No              | No                            |
+| Access Application Diagnostics        | Yes           | No     | No                | Yes                             | No       | No                 | No              | No                            |
+| Access Application Advisor            | Yes           | No     | No                | Yes                             | No       | No                 | Yes             | Yes                           |
+
+
 > [!NOTE]  
 > The Application Monitoring Operator role and Report Operator role are both required to access Application Advisor.  
   
