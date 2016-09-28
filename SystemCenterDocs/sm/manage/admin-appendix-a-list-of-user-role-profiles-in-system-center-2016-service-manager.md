@@ -21,7 +21,7 @@ This appendix provides detailed information about the scope and properties of us
 
 The table below shows the tabs and order that they appear in the console.
 
-| **User roles** | **Tab order in Console** |
+| User roles | Tab order in Console |
 | --- | --- |
 | activity implementer | 1. Work Items <br> 2. Configurations |
 | advanced operator | 1. Library <br> 2. Work Items <br> 3. Configurations |
@@ -35,32 +35,32 @@ The table below shows the tabs and order that they appear in the console.
 
 | action | allowed roles |
 | --- | --- |
-| **Read Knowledge Articles** | activity implementer, advanced operator, author, change initiator, change manager, end user, incident resolver, problem analyst, read only operator, release manager, service request analyst, workflow |
-| **Edit Knowledge Articles** | advanced operator, author |
-| **Create  Knowledge Articles** | advanced operator, author |
-| **Delete Knowledge Article** | advanced operator, author |
-| ** create Change Requests and Activities** | advanced operator, author, change initiator, change manager, workflow |
-| ** create Incident  and Activities** | advanced operator, author, incident resolver, workflow |
-| ** create Problem records** | advanced operator, author, problem analyst, workflow |
-| ** create Release records** | advanced operator, author, release manager, workflow |
-| **create  Service Requests and Activities** | advanced operator, author, service request analyst, workflow |
-| ** edit Change Requests** | advanced operator, author, change manager, workflow |
-| ** edit Incidents** | advanced operator, author, incident resolver, workflow |
-| **edit problem records** | advanced operator, author, problem analyst, workflow |
-| **edit Release records** | advanced operator, author, release manager, workflow |
-| **edit Service Requests** | advanced operator, author, service request analyst, workflow |
-| **update status for Change Requests** | advanced operator, author, change manager, workflow |
-| **update status for Incidents** | advanced operator, author, incident resolver, workflow |
-| **update status for Service Requests** | advanced operator, author, service request analyst, workflow |
-| **update status for Manual Activity** | advanced operator, author, change manager, incident resolver, release manager, service request analyst, workflow |
-| **update status for  Review Activity** | advanced operator, author, change manager, incident resolver, release manager, service request analyst, workflow |
-| **Create CIs** | advanced operator, author, workflow |
-| **Update CIs** | advanced operator, author, workflow |
-| **Delete CIs** | advanced operator, author, workflow |
-| **create user preference** | advanced operator, author, workflow |
-| **update user preference** | advanced operator, author, release manager, service request analyst, workflow |
-| **create work item log** | advanced operator, author, author, change initiator, change manager, incident resolver, problem analyst, release manager, service request analyst, workflow |
-| **Update work item log** | advanced operator, author, author, change initiator, change manager, incident resolver, problem analyst, release manager, service request analyst, workflow |
+| read knowledge articles | activity implementer, advanced operator, author, change initiator, change manager, end user, incident resolver, problem analyst, read only operator, release manager, service request analyst, workflow |
+| edit knowledge articles | advanced operator, author |
+| create knowledge articles | advanced operator, author |
+| delete knowledge article | advanced operator, author |
+| create change requests and activities | advanced operator, author, change initiator, change manager, workflow |
+| create incident and activities | advanced operator, author, incident resolver, workflow |
+| create problem records | advanced operator, author, problem analyst, workflow |
+| create release records | advanced operator, author, release manager, workflow |
+| create service requests and activities | advanced operator, author, service request analyst, workflow |
+| edit change requests | advanced operator, author, change manager, workflow |
+| edit incidents | advanced operator, author, incident resolver, workflow |
+| edit problem records | advanced operator, author, problem analyst, workflow |
+| edit release records | advanced operator, author, release manager, workflow |
+| edit service requests | advanced operator, author, service request analyst, workflow |
+| update status for change requests | advanced operator, author, change manager, workflow |
+| update status for incidents | advanced operator, author, incident resolver, workflow |
+| update status for service requests | advanced operator, author, service request analyst, workflow |
+| update status for manual activity | advanced operator, author, change manager, incident resolver, release manager, service request analyst, workflow |
+| update status for review activity | advanced operator, author, change manager, incident resolver, release manager, service request analyst, workflow |
+| create CIs | advanced operator, author, workflow |
+| update CIs | advanced operator, author, workflow |
+| delete CIs | advanced operator, author, workflow |
+| create user preference | advanced operator, author, workflow |
+| update user preference | advanced operator, author, release manager, service request analyst, workflow |
+| create work item log | advanced operator, author, author, change initiator, change manager, incident resolver, problem analyst, release manager, service request analyst, workflow |
+| update work item log | advanced operator, author, author, change initiator, change manager, incident resolver, problem analyst, release manager, service request analyst, workflow |
 
 ## Default user role relationships in Service Manager
 

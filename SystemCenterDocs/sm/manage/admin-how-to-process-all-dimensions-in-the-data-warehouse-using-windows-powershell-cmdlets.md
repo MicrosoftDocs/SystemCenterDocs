@@ -21,23 +21,21 @@ Before you can use Service Manager cmdlets, you need to configure the Service Ma
 
 ### To process all dimensions using cmdlets
 
-1.  Copy and paste the following code snippets at the prompt in a Service Manager Shell:
+- Copy and paste the following code snippets at the prompt in a Service Manager Shell:
 
-    1.  ```
-        [System.Reflection.Assembly]::LoadWithPartialName("Microsoft.AnalysisServices") > $NULL
-        ```
+    ```
+    [System.Reflection.Assembly]::LoadWithPartialName("Microsoft.AnalysisServices") > $NULL
+    ```
 
-    2.  ```
-        $Server = New-Object Microsoft.AnalysisServices.Server
-        $Server.Connect("<FullyQualifiedServerName>")
-        $Databases = $Server.Databases
-        $DWASDB = $Databases["DWASDataBase"]
-        $Dimensions = New-Object Microsoft.AnalysisServices.Dimension
-        $Dimensions = $DWASDB.Dimensions
+    ```
+    $Server = New-Object Microsoft.AnalysisServices.Server
+    $Server.Connect("<FullyQualifiedServerName>")
+    $Databases = $Server.Databases
+    $DWASDB = $Databases["DWASDataBase"]
+    $Dimensions = New-Object Microsoft.AnalysisServices.Dimension
+    $Dimensions = $DWASDB.Dimensions
+    ```
 
-        ```
-
-    3.  ```
-        foreach ($Dimension in $Dimensions){$Dimension.Process("ProcessFull")}
-
-        ```
+    ```
+    foreach ($Dimension in $Dimensions){$Dimension.Process("ProcessFull")}
+    ```
