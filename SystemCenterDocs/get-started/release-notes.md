@@ -552,7 +552,7 @@ Set-StoragePool pool1 -WriteCacheSizeDefault 0
 
 The failure happens at the last step of the job in which the VM is shutdown after the shielding is completed, the VM gets shielded properly and is usable.
 
-**Workaround:** Repair and ignore the job.
+**Workaround:** Repair the VM with ignore option.
 
 #### VMM does not immediately reflect changes to security properties
 **Description:** Changing the secure boot properties of a Gen 2 VM or disabling/enabling vTPM for a shielded VM, outside of VMM, does not immediately reflect in VMM.
