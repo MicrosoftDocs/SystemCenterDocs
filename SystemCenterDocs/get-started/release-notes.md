@@ -352,29 +352,20 @@ System Center Operations Manager management server is not affected.
 ## System Center 2016 - Service Manager Release Notes
 **The following release notes apply to System Center 2016 - Service Manager.**
 
-#### Service Manager might perform slowly with SQL Server 2014 Cardinality Estimation
+#### SQL Server 2014 Cardinality Estimation might affect the performance of Service Manager 2016
 **Description:** If your Service Manager database is running on SQL Server 2014 with the cardinality estimator set to the SQL Server 2014 version you may experience slow performance.
 
 **Workaround:** Switch the Cardinality Estimator (CE) for the SQL Server to use the SQL Server 2012 version. See the following article for more information on changing the Cardinality Estimator: [New functionality in SQL Server 2014 - Part 2 - New Cardinality Estimation](https://blogs.msdn.microsoft.com/saponsqlserver/2014/01/16/new-functionality-in-sql-server-2014-part-2-new-cardinality-estimation/).
 
-#### The Create Exchange Connector Wizard Might Crash
-**Description:** When you run the Create Exchange Connector wizard, the wizard crashes when you click **Test Connection**.
+#### Microsoft Visual C++ 2012 Redistributable is a pre-requisite for installing Service Manager 2016 Authoring Tool
+**Description:** Microsoft Visual C++ 2012 redistributable should be installed before deploying Service Manager 2016 Authoring Tool.
 
-**Workaround:** To work around this issue, avoid clicking **Test Connection** when you run the wizard. Instead, click **Next**, which internally tests the connection and does not crash the wizard.
+**Workaround:** None
 
-If the crash has already occurred, you can restart the wizard and use this workaround.
+#### Browsing domain in AD connector wizard raises error
+**Description:** Error is raised on clicking “Browse” while choosing Domain or OU in AD connector wizard of Service Manager 2016 console.
 
-#### Operations Manager CI Connectors do not Sync Properly
-**Description:** In Service Manager 2016, if you use the Operations Manager CI connector connected to Operations Manager 2016, then the following issues occur:
-1.  Newly created OM CI connectors will not sync properly. However, Operations Manager CI connectors created with previous releases continue to work properly.
-2.  Newly created Distributed Applications and Business Services with Operations Manager do not import.
-
-**Workaround:** See [https://www.microsoft.com/download/details.aspx?id=51955](https://www.microsoft.com/download/details.aspx?id=51955) to work around this problem.
-
-#### Service Manager Setup Stops When Upgrading the Self Service Portal on a Management Server
-**Description:** This problem occurs when you try to conduct an in-place upgrade of the Service Manager 2012 R2 Self Service portal (for both the Silverlight and HTML versions) to the Self Service portal in Service Manager 2016, when the Self Service portal and Management Server are installed on the same server.
-
-**Workaround:** See [Upgrade to Service Manager](../sm/deploy/Upgrade-to-Service-Manager-Technical-Preview.md) for information about deploying the Self Service portal.
+**Workaround:** Install Microsoft Visual C++ 2012 Redistributable on the affected machine.
 
 #### Manual steps to configure remote SQL Server 2014 Reporting Services
 **Description:** During deployment of the Service Manager data warehouse management server, you can specify the server to which Microsoft SQL Server Reporting Services (SSRS) will be deployed. During setup, the computer that is hosting the data warehouse management server is selected by default. If you specify a different computer to host SSRS, you are prompted to follow a procedure in the Deployment Guide to prepare the server. However, if you use SQL Server 2014, you should instead use the following information to prepare the remote computer to host SSRS.
@@ -500,17 +491,16 @@ If you used the default instance of SQL Server, use Windows Explorer to drag Mic
 
 **Workaround:** When you create service requests, avoid modifying or deleting activities that are contained in a request offering template. If necessary, you can create a new request offering template with only the activities that are necessary and configured properly for your intended use.
 
-#### Double-Byte Characters Might Not Display Correctly if a Knowledge Article Is Created from a TXT File
-**Description:** If you create a knowledge article using a TXT file that contains double-byte characters, the characters might not display correctly.
-
-**Workaround:** If this problem affects you, do not use TXT files to create knowledge articles. Instead, use RTF files.
-
 
 #### Configuring the Reporting Server Might Take a Long Time
 **Description:** When you install the data warehouse, validation of the default web server URL might take as long as 25 seconds to complete.
 
 **Workaround:** None.
 
+#### Double-Byte Characters Are Sent Incorrectly to Search Provider
+**Description:** When you perform a knowledge search and you type double-byte characters in the Search Provider box, they are not sent correctly to the search website. Instead, erroneous characters are sent.
+
+**Workaround:** None.
 
 #### Sorting Knowledge Articles by Date Does Not Work
 **Description:** When you try to sort knowledge articles by date, sorting does not work.
