@@ -162,7 +162,7 @@
 ##### [Importing Data from System Center Configuration Manager](sm/manage/admin-importing-data-from-system-center-configuration-manager.md)
 ###### [About Importing Data from System Center Configuration Manager](sm/manage/admin-about-importing-data-from-system-center-configuration-manager.md)
 ###### [How to Create a Configuration Manager Connector](sm/manage/admin-how-to-create-a-configuration-manager-connector.md)
-###### [How to Disable and Enable a Configuration Manager Connector](sm/admin/admin-how-to-disable-and-enable-a-configuration-manager-connector.md)
+###### [How to Disable and Enable a Configuration Manager Connector](sm/manage/admin-how-to-disable-and-enable-a-configuration-manager-connector.md)
 ###### [How to Synchronize a Configuration Manager Connector](sm/manage/admin-how-to-synchronize-a-configuration-manager-connector.md)
 ###### [How to Configure a Configuration Manager Connector for an Extended SMS_def.mof File](sm/manage/admin-how-to-configure-a-configuration-manager-connector-for-an-extended-sms-def.mof-file.md)
 ##### [Importing Runbooks from System Center Orchestrator](sm/manage/admin-importing-runbooks-from-system-center-orchestrator.md)
