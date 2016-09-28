@@ -1,5 +1,5 @@
 ---
-title: Authentication and Data Encryption for Windows Computers
+title: Authentication and Data Encryption in Operations Manager
 description:
 description:  
 author: mgoedtel
@@ -11,7 +11,7 @@ ms.technology: operations-manager
 ms.topic: article
 ---
 
-# Authentication and Data Encryption for Windows Computers
+# Authentication and Data Encryption in Operations Manager
 
 >Applies To: System Center 2016 - Operations Manager
 
