@@ -108,7 +108,7 @@ In System Center 2016 – Operations Manager, the management server uses two pro
 
 - Secure Shell (SSH) for installing, upgrading, and removing agents.
 - Web Services for Management (WS-Management) for all monitoring operations and include the discovery of agents that were already installed.
-- 
+
 The protocol that is used depends on the action or information that is requested on the management server.  All actions, such as agent maintenance, monitors, rules, tasks, and recoveries, are configured to use predefined profiles according to their requirement for an unprivileged or privileged account.
 
 > [!NOTE] 

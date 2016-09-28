@@ -41,7 +41,7 @@ To configure SQL Server Reporting Services Native mode for SSL encryption before
 
 ## FIPS Compliance
 
-System Center 2016 –   A FIPS compliant algorithm is included on your installation media. After you install these two roles, you need to manually edit several configuration files to enable this algorithm on the IIS web server hosting the Web console, and the SQL Server report server.
+After you install these two roles, you need to manually edit several configuration files to enable this algorithm on the IIS web server hosting the Web console, and the SQL Server report server.
 
 Enabling FIPS compliance for System Center 2016 - Operations Manager requires that the underlying infrastructure used (Server OS, Active Directory etc.), also be FIPS compliant.  
 
@@ -51,7 +51,7 @@ The following is a summarized list of steps required to configure FIPS for your 
 -	Edit several instances of the **machine.config** file. 
 -	Edit the **WebHost\web.config** file. 
 -	Edit the **MonitoringView\web.config** file. 
--	
+
 You will need the Global Assembly Cache Tool, gacutil.exe. This utility is part of the Windows .NET Framework SDK, which is a installation component included in the Windows Software Development Kit.  For more information, see [Gacutil.exe (Global Assembly Cache Tool)](https://msdn.microsoft.com/library/ex0ss12c.aspx).
 
 The following is a summarized list of steps required to configure FIPS for your Reporting server:
