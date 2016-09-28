@@ -5,7 +5,7 @@ ms.topic:  article
 author:  cfreemanwa
 ms.prod:  system-center-threshold
 keywords:  
-ms.date:  2016-07-01
+ms.date:  2016-09-28
 title:  Dot Net Version Support
 ms.technology:  system-center-2016
 ms.assetid:  d5a0412c-4670-4c92-aad8-d83ebe2f9043
@@ -40,4 +40,3 @@ Use this information to evaluate if your Microsoft .NET Framework is ready to su
 |**Service Provider Foundation** API Web Server|||||&#8226;|&#8226;|
 |**Virtual Machine Manager** Console|||&#8226;|&#8226;|&#8226;|&#8226;|
 |**Virtual Machine Manager** Management Server||||||&#8226;|
-
