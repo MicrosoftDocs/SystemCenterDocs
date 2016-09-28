@@ -129,7 +129,7 @@
 ##### [Service Manager Parts](sm/plan/plan-system-center-2016-service-manager-parts.md)
 ##### [SQL Server Requirements for Service Manager](sm/plan/plan-sql-server-requirements-for-system-center-2016-service-manager.md)
 ##### [Service Manager Editions](sm/plan/plan-system-center-2016-service-manager-editions.md)
-#### [Supported Configurations for Service Manager](sm/plan/plan-supported-configurations-for-system-center-2016-service-manager.md)
+##### [Supported Configurations for Service Manager](sm/plan/plan-supported-configurations-for-system-center-2016-service-manager.md)
 ###### [Hardware Requirements for Service Manager](sm/plan/plan-hardware-requirements-for-system-center-2016-service-manager.md)
 ###### [Software Requirements for Service Manager](sm/plan/plan-software-requirements-for-system-center-2016-service-manager.md)
 ##### [Operations Manager Considerations in Service Manager](sm/plan/plan-operations-manager-considerations-in-system-center-2016-service-manager.md)
