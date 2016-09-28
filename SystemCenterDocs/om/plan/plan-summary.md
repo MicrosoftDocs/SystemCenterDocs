@@ -1,8 +1,9 @@
 ---
 title: Operations Manager Planning Guide
+description:
 author: mgoedtel
 manager: cfreemanwa
-ms.date: 2016-08-29
+ms.date: 2016-10-12
 ms.custom: na
 ms.prod: system-center-threshold
 ms.technology: operations-manager
@@ -10,6 +11,8 @@ ms.topic: article
 ---
 
 # Operations Manager Planning Guide
+
+>Applies To: System Center 2016 - Operations Manager
 
 By deploying System Center 2016 - Operations Manager in your environment, you can provide your organization with a monitoring service that ensures IT and business service owners are able to effectively monitor and report on the availability and performance metrics of their services across on-premises, service provider, and cloud environments.  After you identify the deployment tasks and current environment for your organization, you can create the Operations Manager deployment strategy that meets your organization’s service operations needs.  
 

@@ -1,8 +1,9 @@
 ---
 title: Active Directory and DNS Planning
+description:
 author: mgoedtel
 manager: cfreemanwa
-ms.date: 2016-08-29
+ms.date: 2016-10-12
 ms.custom: na
 ms.prod: system-center-threshold
 ms.technology: operations-manager
@@ -10,6 +11,8 @@ ms.topic: article
 ---
 
 # Active Directory and DNS Planning
+
+>Applies To: System Center 2016 - Operations Manager
 
 This section addresses Active Directory Domain Services (AD DS) and Domain Name System (DNS) requirements that you need to be aware of when planning your System Center 2012 – Operations Manager design.
 

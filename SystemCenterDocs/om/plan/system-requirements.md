@@ -1,8 +1,9 @@
 ---
 title: System Requirements: System Center 2016 - Operations Manager
+description:
 author: mgoedtel
 manager: cfreemanwa
-ms.date: 2016-08-29
+ms.date: 2016-10-12
 ms.custom: na
 ms.prod: system-center-threshold
 ms.technology: operations-manager
@@ -10,6 +11,8 @@ ms.topic: article
 ---  
 
 # System Requirements: System Center 2016 - Operations Manager
+
+>Applies To: System Center 2016 - Operations Manager
 
 The topic describes general performance and scalability guidance for System Center 2016 - Operations Manager and recommends hardware configurations for a variety of workloads. Because System Center 2016 – Operations Manager is built to be flexible and scalable, the hardware requirements for specific scenarios may differ from the guidelines that are presented here.  A discussion of the factors that affect the performance of each Operations Manager component is presented so that they can be adapted to specific requirements.
 

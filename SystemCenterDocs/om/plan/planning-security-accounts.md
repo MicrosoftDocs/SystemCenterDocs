@@ -1,8 +1,9 @@
 ---
 title: Service, User and Security Accounts
+description:
 author: mgoedtel
 manager: cfreemanwa
-ms.date: 2016-08-29
+ms.date: 2016-10-12
 ms.custom: na
 ms.prod: system-center-threshold
 ms.technology: operations-manager
@@ -10,6 +11,8 @@ ms.topic: article
 ---
 
 # Service, User and Security Accounts
+
+>Applies To: System Center 2016 - Operations Manager
 
 During the setup and operation of Operations Manager, you will be asked to provide credentials for several accounts. The beginning of this section provides information about each of those accounts, including the SDK and Config Service, Agent Installation, Data Warehouse Write, and Data Reader accounts.
 

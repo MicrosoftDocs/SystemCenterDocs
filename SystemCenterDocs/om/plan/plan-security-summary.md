@@ -1,8 +1,9 @@
 ---
 title: Security Design
+description:
 author: mgoedtel
 manager: cfreemanwa
-ms.date: 2016-08-29
+ms.date: 2016-10-12
 ms.custom: na
 ms.prod: system-center-threshold
 ms.technology: operations-manager
@@ -10,6 +11,8 @@ ms.topic: article
 ---
 
 # Security Design
+
+>Applies To: System Center 2016 - Operations Manager
 
 This section provides you with security-related information as it pertains to the planning of security accounts, roles and privileges required for your deployment of System Center 2016 - Operations Manager.
 
