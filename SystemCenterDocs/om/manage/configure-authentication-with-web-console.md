@@ -3,7 +3,7 @@ title: Configure Authentication with the Web console
 description:  
 author: mgoedtel
 manager: cfreemanwa
-ms.date: 2016-09-12
+ms.date: 2016-09-22
 ms.custom: na
 ms.prod: system-center-threshold
 ms.technology: operations-manager
@@ -121,4 +121,4 @@ Repeat the preceding step on the following files:
 
 ## Next steps
 
-- To configure FIPS compliance for the Reporting server. see [Configure Authentication for Reporting server](configure-authentication-with-reporting-server.md) 
+- To configure FIPS compliance for the Reporting server, see [Configure Authentication for Reporting server](configure-authentication-with-reporting-server.md) 

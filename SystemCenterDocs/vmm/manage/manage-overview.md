@@ -2,8 +2,9 @@
 title: Manage VMM
 description: This article provides an overview of working with VMM after you've finished installation.
 author:  rayne-wiselman
+ms.author: raynew
 manager:  cfreemanwa
-ms.date:  2016-09-14
+ms.date:  2016-09-22
 ms.topic:  article
 ms.prod:  system-center-threshold
 ms.technology:  virtual-machine-manager
@@ -12,7 +13,7 @@ ms.technology:  virtual-machine-manager
 
 # Manage VMM
 
->Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
+>Applies To: System Center 2016 - Virtual Machine Manager
 
 After you've finished installing System Center 2016 - Virtual Machine Manager (VMM) you can start setting up your management infrastructure.
 
@@ -33,7 +34,7 @@ Here's what you do:
  - **Manage network virtualization gateways**: If you're using isolated VM networks, the VMs in that network can only connect to machines in the same subnet. If you want to connect further you set up network virtualization gateways. [Learn more](manage-network-gateway.md).
  - **Manage port profiles**: You set up uplink port profiles that define load balancing and teaming, and apply them to physical network adapters. You configure virtual network adapter port profiles with capabilities such as bandwidth limitations and priority, and apply them to virtual network adapters. [Get started](manage-network-port-profiles.md).
  - **Manage logical switches**: Logical switches bring together network settings that can be applied to network adapters, so that you have consistent adapter settings across multiple hosts. You set up virtual switch extensions, port profiles, and port classifications, and define them in a logical switch. [Get started](manage-network-logical-switches.md).
- - **Manage SDN**: You can define a Software Defined Network (SDN) infrastructure in the VMM networking fabric. As part of the infrastructure you set up a Network Controller, Software Load Balancer, and RAS Gateway. 
+ - **Manage SDN**: You can define a Software Defined Network (SDN) infrastructure in the VMM networking fabric. As part of the infrastructure you set up a Network Controller, Software Load Balancer, and RAS Gateway.
 
 ## Manage the VMM storage fabric
 

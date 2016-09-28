@@ -49,7 +49,7 @@ You can download these components from the [TechNet Evaluation Center](http://ww
 
 -   [Data Protection Manager](dpm/Data-Protection-Manager.md)
 
--   [Operations Manager](om/Operations-Manager.md)
+-   [Operations Manager](om/welcome-to-operations-manager.md)
 
 -   [Orchestrator](orch/Orchestrator.md)
 

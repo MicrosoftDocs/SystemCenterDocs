@@ -2,7 +2,7 @@
 title: How to Set Credentials for Accessing UNIX and Linux Computers
 author: mgoedtel
 manager: cfreemanwa
-ms.date: 2016-08-29
+ms.date: 2016-09-22
 ms.custom: na
 ms.prod: system-center-threshold
 ms.technology: operations-manager
@@ -299,6 +299,8 @@ The following procedures begin in the  **UNIX\/Linux Agent Uninstall Wizard**, o
 ## Next steps 
 
 - To understand how to authenticate and monitor your UNIX and Linux computers, review [Credentials You Must Have to Access UNIX and Linux Computers](../plan/planning-security-credentials-for-accessing-unix-and-linux-computers.md)  
+
 - To understand how to elevate an unprivileged account for effective monitoring of UNIX and Linux computers, review [How to Configure sudo Elevation and SSH Keys](How-to-Configure-sudo-Elevation-and-SSH-Keys.md)  
+
 - Review the [Configuring SSL Ciphers](Configuring-SSL-Ciphers.md) if you need to reconfigure Operations Manager to use a different cipher.   
   

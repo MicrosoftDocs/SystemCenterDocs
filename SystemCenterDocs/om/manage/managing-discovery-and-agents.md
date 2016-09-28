@@ -3,7 +3,7 @@ title:  Managing Discovery and Agents
 description:  
 author: mgoedtel
 manager: cfreemanwa
-ms.date: 2016-08-29
+ms.date: 2016-09-27
 ms.custom: na
 ms.prod: system-center-threshold
 ms.technology: operations-manager
@@ -26,50 +26,46 @@ Comprehensive monitoring requires that an agent be installed on the discovered c
 
 ## Managing Discovery and Agents topics
 
--   [Operations Manager Agent Installation Methods](Operations-Manager-Agent-Installation-Methods.md)
+-   [Discover and install agent on Windows](install-agent-on-windows-using-the-discovery-wizard.md)
 
--   [Install Agent on Windows Using the Discovery Wizard](Install-Agent-on-Windows-Using-the-Discovery-Wizard.md)
+    This section provides the information you need for discovering and installing the Windows agents to be monitored by Operations Manager.
 
--   [Install Agent on UNIX and Linux Using the Discovery Wizard](Install-Agent-on-UNIX-and-Linux-Using-the-Discovery-Wizard.md)
+-   [Discover and install agent on UNIX and Linux](install-agent-on-unix-and-linux-using-the-discovery-wizard.md)
 
--   [Install Agent Using the MOMAgent.msi Setup Wizard](Install-Agent-Using-the-MOMAgent-Setup-Wizard.md)
+    This section provides the information you need for discovering and installing the UNIX and Linux agents to be monitored by Operations Manager.
 
--   [Install Agent Using the Command Line](Install-Agent-Using-the-Command-Line.md)
+-   [Install Windows agent manually with MOMAgent.msi](install-windows-agent-manually-using-momagent.md)
+
+     This section provides the information you need for manually installing the Windows agent and approve them to be monitored by Operations Manager using the MOMAgent.msi Windows Installer package.
+
+-   [Install agent on Nano Server](install-agent-on-nano-server.md)
+
+    This section provides the information you need for installing the Nano Server agent to be monitored by Operations Manager.
 
 -   [Install Agent and Certificate on UNIX and Linux Computers Using the Command Line](Install-Agent-and-Certificate-on-UNIX-and-Linux-Computers-Using-the-Command-Line.md)
 
--   [Managing Certificates for UNIX and Linux Computers](Managing-Certificates-for-UNIX-and-Linux-Computers.md)
+    This section provides the information you need for manually installing the UNIX and Linux agent and configuring the self-signed certificates required to be monitored by Operations Manager.
 
--   [Process Manual Agent Installations](Process-Manual-Agent-Installations.md)
+-   [Process manual agent installations](process-manual-agent-installations.md)
+
+    This section describes how to configure settings for manual agent installations in your Operations Manager management group.
 
 -   [Applying Overrides to Object Discoveries](Applying-Overrides-to-Object-Discoveries.md)
 
--   [Configuring Agents](Configuring-Agents.md)
-
--   [Examples of Using MOMAgent Command to Manage Agents](Examples-of-Using-MOMAgent-Command-to-Manage-Agents.md)
+    This section provides the information you need to understand how to limit or restrict discovery for monitored objects in your management group.
 
 -   [Upgrading and Uninstalling Agents on UNIX and Linux Computers](Upgrading-and-Uninstalling-Agents-on-UNIX-and-Linux-Computers.md)
 
--   [Upgrading Agents on UNIX and Linux Computers Using the Command Line](assetId:///01289314-df12-4e68-b3ae-a9a2767cbaa0)
+    This section describes how to upgrade and uninstall agents on UNIX and Linux computers either from the Operations console.  
 
 -   [Manually Uninstalling Agents from UNIX and Linux Computers](Manually-Uninstalling-Agents-from-UNIX-and-Linux-Computers.md)
 
+    This section describes the ways to uninstall the UNIX and Linux management packs and agents from UNIX and Linux computers.
+
 -   [Uninstall Agent from Windows-based Computers](Uninstall-Agent-from-Windows-based-Computers.md)
 
-## Other resources for this component
+    This section describes the ways to uninstall the Windows agent from Windows computers.
 
--   [TechNet Library main page for Operations Manager](http://go.microsoft.com/fwlink/p/?LinkId=223634)
 
--   [Operations Guide for System Center 2016 - Operations Manager](System-Center-2016-Operations-Manager-Operations-Guide.md)
 
--   [How to Discover Network Devices in Operations Manager](How-to-Discover-Network-Devices-in-Operations-Manager.md)
 
--   [Managing Access in Operations Manager](Managing-Access-in-Operations-Manager.md)
-
--   [Operations Manager Monitoring Scenarios](Operations-Manager-Monitoring-Scenarios.md)
-
--   [Getting Information from Operations Manager](https://technet.microsoft.com/library/hh212876%28v=sc.12%29.aspx)
-
--   [General Tasks in Operations Manager](https://technet.microsoft.com/library/hh212906%28v=sc.16%29.aspx)
-
--   [Maintenance of Operations Manager](https://technet.microsoft.com/library/hh212717%28v=sc.12%29.aspx)

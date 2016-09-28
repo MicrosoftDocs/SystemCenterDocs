@@ -3,7 +3,7 @@ title:  Install Agent on Nano Server
 description:  
 author: mgoedtel
 manager: cfreemanwa
-ms.date: 2016-09-14
+ms.date: 2016-09-20
 ms.custom: na
 ms.prod: system-center-threshold
 ms.technology: operations-manager
@@ -63,6 +63,8 @@ There are several limitations in this release of the Nano Server agent. The foll
 -   Monitoring specific url's on a Nano Server.
 
 -   Collecting data from the Application Log of a Nano Server.
+
+-   Putting a Nano Server into maintenance mode.
 
 
 ## Manually install the Operations Manager agent on a Nano server
