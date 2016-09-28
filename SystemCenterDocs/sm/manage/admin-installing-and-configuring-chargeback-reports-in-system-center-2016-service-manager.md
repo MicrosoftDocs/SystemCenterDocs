@@ -41,7 +41,7 @@ Service Manager comes with a sample report, but its reporting infrastructure is 
 It's important to let customers know that IT resources are limited in their capacity. You can use chargeback or showback reports to show resource utilization and the associated costs to influence consumption behaviors.
 
 ### Operations Manager Requirements
-Before you can use chargeback reports, you must create and synchronize an Operations Manager CI connector so that Operations Manager discovers virtual machine resources from Virtual Machine Manager. Earlier versions of Virtual Machine Manager are not supported with Chargeback. During this process, you must synchronize the VMM.2016.Discovery management pack. For more information about creating and synchronizing an Operations Manager CI connector, see [How to Create a System Center Operations Manager Connector](admin-importing-data-and-alerts-from-system-center-operations-manager). The following object properties are imported into Service Manager using the connector:
+Before you can use chargeback reports, you must create and synchronize an Operations Manager CI connector so that Operations Manager discovers virtual machine resources from Virtual Machine Manager. Earlier versions of Virtual Machine Manager are not supported with Chargeback. During this process, you must synchronize the VMM.2016.Discovery management pack. For more information about creating and synchronizing an Operations Manager CI connector, see [How to Create a System Center Operations Manager Connector](admin-importing-data-and-alerts-from-system-center-operations-manager.md). The following object properties are imported into Service Manager using the connector:
 
 -   virtual machine CPU count
 
