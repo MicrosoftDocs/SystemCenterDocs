@@ -48,7 +48,7 @@ See [Sample Orchestrator.xml file](../deploy/use-sysprep-to-deploy-orchestrator.
 
 2.  Copy the file to %systemdrive%\\windows\\system32\\sysprep.  
 
-3.  Create the Orchestrator batch file that will install the Orchestrator components on this computer. An example of this file is available in [Sample Orchestrator.xml file](../deploy/use-sysprep-to-deploy-orchestrator.md#SCO_sysprep4). this is referred to in the orchestrator.xml file. see [install with the orchestrator command line install tool](../deploy/how-to-install-system-center---orchestrator-from-the-command-prompt.md) for the available command line options that can be used to install Orchestrator.  
+3.  Create the Orchestrator batch file that will install the Orchestrator components on this computer. An example of this file is available in [Sample Orchestrator.xml file](../deploy/use-sysprep-to-deploy-orchestrator.md#SCO_sysprep4). this is referred to in the orchestrator.xml file. see [install with the orchestrator command line install tool](../deploy/how-to-install-orchestrator-from-the-command-prompt.md) for the available command line options that can be used to install Orchestrator.  
 
 4.  Run the following command:  
 
@@ -92,7 +92,7 @@ This is a sample Orchestrator.xml to be used for deploying Orchestrator with sys
 
 ```  
 
-This is a sample install.bat file that is referenced in the Orchestrator.xml unattend file for the FirstLogonCommand. Create this batch file in the %systemdrive%\\sco directory along with the Orchestrator setup files. This file can be customized by using the command line install tool. For more information, see [Install with the Orchestrator Command Line Install Tool](../deploy/how-to-install-system-center---orchestrator-from-the-command-prompt.md).  
+This is a sample install.bat file that is referenced in the Orchestrator.xml unattend file for the FirstLogonCommand. Create this batch file in the %systemdrive%\\sco directory along with the Orchestrator setup files. This file can be customized by using the command line install tool. For more information, see [Install with the Orchestrator Command Line Install Tool](../deploy/how-to-install-orchestrator-from-the-command-prompt.md).  
 
 ```  
 %systemdrive%\sco\setup\setup.exe /Silent /ServiceUserName:%computername%\administrator /ServicePassword:password /Components:All /DbServer:%computername%  /DbPort:1433 /DbNameNew:OrchestratorSysPrep /WebConsolePort:82 /WebServicePort:81 /OrchestratorRemote /UseMicrosoftUpdate:1 /SendCEIPReports:1 /EnableErrorReporting:always  

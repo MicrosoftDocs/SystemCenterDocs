@@ -20,7 +20,7 @@ manager: cfreeman
 
 This sample shows you how to create a simple monitor runbook that monitors a folder for new text files. When a file is detected, the runbook sends an event log message, and then starts another runbook.  
 
-![Monitor Folder](../manage/media/Orch2016_Sample_MonitorFolder.jpg "Orch2016_Sample_MonitorFolder")  
+![Monitor Folder](../media/Orch2016_Sample_MonitorFolder.png "Orch2016_Sample_MonitorFolder")  
 
 ## Create and test a monitor runbook  
 The procedures to create, configure, and test a sample runbook that monitors a folder are described below.  

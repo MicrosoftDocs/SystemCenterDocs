@@ -177,7 +177,7 @@ The **Junction** activity is configured to coordinate the workflow so that no fu
 
 The **Append and Copy Workflow** runbook is now completed. It should look similar to the following illustration.  
 
-![Sample Runbook 1](../manage/media/SampleRunbook1.jpg "SampleRunbook1")  
+![Sample Runbook 1](../media/SampleRunbook1.png "SampleRunbook1")  
 
 ## Testing the runbook  
 You can test the runbook by using the Runbook Tester. This tool lets you run the entire runbook and inspect the completion status and output of each activity. The Runbook Tester runs the activities, so you must first create the folders specified for the runbook.  

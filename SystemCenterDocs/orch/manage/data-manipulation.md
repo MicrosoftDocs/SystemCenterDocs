@@ -30,7 +30,7 @@ With System Center 2016 - Orchestrator, you can manipulate string data from text
 
 -   [Regular Expressions](../manage/regular-expressions.md)  
 
--   [Schedules_1](../get-started/schedules_1.md)  
+-   [Schedules_1](../get-started/schedules.md)  
 
 ## Other resources for this product  
 
