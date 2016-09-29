@@ -57,8 +57,6 @@ ReplicaSizeInGBForSystemProtectionWithBMR (DWORD)
 
 **Workaround:** If you are protecting DPM DB, please ensure that you enable protection for new DPM DB. Protection for the old DPM DB can be removed once DPM upgrade is validated.
 
-
-
 #### Hyper-V RCT - recover as files for D-T backup fails 
 **Description:** Recovery of Hyper-V RCT VMs as files created directly on tape (D-T) fails. D-D-T backups will not exhibit this issue.
 
