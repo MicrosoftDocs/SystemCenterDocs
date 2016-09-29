@@ -4,6 +4,7 @@ manager:  cfreeman
 ms.topic:  article
 author:  rayne-wiselman
 ms.author: raynew
+redirect_url: manage-storage-overview
 ms.prod:  system-center-threshold
 keywords:  
 ms.date:  2016-10-12
