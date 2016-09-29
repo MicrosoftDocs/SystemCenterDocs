@@ -10,8 +10,9 @@ ms.tgt_pltfrm: na
 ms.date: 8-18-2016
 ms.topic: article
 ms.assetid: 7c2b9a00-8522-4f67-9853-2a4639442b0d
-author: bwren
+author: rayne-wiselman
 manager: cfreeman
+ms.author: raynew
 ---
 # Deploying Service Provider Foundation (SPF)
 Deploying SPF is a multi-step process. The first step is to plan for the deployment by reading and following the guidance provided in the following topic:
@@ -23,7 +24,13 @@ After you have your deployment plan in place, make sure your environment has the
 -  [Preparing your environment for System Center 2012 R2 Service Provider Foundation]
 -  [How to Create an SSL Certificate for Testing Service Provider Foundation]
 
-Once you have your environment setup, you are ready to install SPF. Here are the installation steps:
+> [!NOTE]
+> - Side-by-side installation of different Service Provider Foundation versions that are on the same server is not supported.
+> - Installation of Service Provider Foundation on a virtual machine is supported.
+
+Once you have your environment setup, you are ready to install SPF.
+
+## Installation Steps
 
 1.  On the server where you want to install Service Provider Foundation, double-click **SetupOrchestrator.exe** on the installation media to start the System Center 2016 - Orchestrator Setup Wizard.
 
@@ -88,3 +95,7 @@ Once you have your environment setup, you are ready to install SPF. Here are the
 14. Click **Close** when the message "Setup is complete" appears.
 
 Repeat this procedure for each installation, such as for a web farm.  
+
+## Next Steps
+
+[Configure Portals](\configuring-portals-for-service-provider-foundation.md)
