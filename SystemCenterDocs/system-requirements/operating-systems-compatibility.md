@@ -36,9 +36,9 @@ Use this information to evaluate if your server-side operating system environmen
 |**Service Management Automation**Runbook Worker|||||||&#8226;|&#8226;||
 |**Service Management Automation**PowerShell Module|||||||&#8226;|&#8226;||
 |**Service Manager** Management Server||||||&#8226;|&#8226;|||
-|**Service Manager**<br /><br />Data Warehouse Management Server||||||&#8226;|&#8226;|||
+|**Service Manager** Data Warehouse Management Server||||||&#8226;|&#8226;|||
 |**Service Manager** Database or Data Warehouse Database||||||&#8226;|&#8226;|||
-|**Service Manager** Self-Service Portal (SharePoint Server and Web Content Server)||||||&#8226;|&#8226;|||
+|**Service Manager** Self-Service Portal||||||&#8226;|&#8226;|||
 |**Service Provider Foundation**|||||||&#8226;|&#8226;||
 |**Virtual Machine Manager** Management Server|||||||&#8226;|||
 |**Virtual Machine Manager** Virtual Machine Hosts||||||&#8226;|&#8226;||&#8226;|

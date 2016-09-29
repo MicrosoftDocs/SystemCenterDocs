@@ -1,5 +1,5 @@
 ---
-description:  List of the client operating systems supported for System Center 2016 client components. 
+description:  List of the client operating systems supported for System Center 2016 client components.
 manager:  cfreeman
 ms.topic:  article
 author:  cfreemanwa
@@ -20,7 +20,7 @@ Use this information to evaluate the client operating system requirements to sup
 
 ## Client Operating Systems
 
-|System Center client-side components|Windows&reg; 7|Windows&reg; 8|Windows&reg; 8.1|Windows Server&reg; 2008 R2 SP1|Windows Server&reg; 2012|Windows Server&reg; 2012 R2 Standard, Datacenter|Windows 10 Enterprise|Windows Server&reg; Standard, Datacenter|
+|System Center client-side components|Windows&reg; 7|Windows&reg; 8|Windows&reg; 8.1|Windows Server&reg; 2008 R2 SP1|Windows Server&reg; 2012|Windows Server&reg; 2012 R2 Standard, Datacenter|Windows 10 Enterprise|Windows Server&reg; 2016 Standard, Datacenter|
 |-----------------------------------------|-------------------------------------------------------------------|-----------------------------------------------------------|-----------------------------------------------------------------|-----------------------------------------------------------------------|-----------------------------------------------------------|--------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------|
 |**DPM** Central Console|&#8226;|&#8226;|&#8226;|&#8226;|&#8226;|&#8226;|&#8226;|&#8226;|
 |**DPM** Remote Administrator|&#8226;|&#8226;|&#8226;|&#8226;|&#8226;|&#8226;|&#8226;|&#8226;|

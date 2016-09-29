@@ -22,15 +22,15 @@ The topics below specify minimum and recommended hardware requirements along wit
 
 ## System requirements topics
 
--   [Minimum Hardware Recommendations](Minimum-Hardware-Recommendations-for-System-Center-Technical-Preview.md)
+-   [Minimum Hardware Recommendations](Minimum-Hardware-Recommendations.md)
 
--   [Operating Systems Compatibility](Operating-Systems-Compatibility-for-System-Center-Technical-Preview.md)
+-   [Operating Systems Compatibility](Operating-Systems-Compatibility.md)
 
--   [Client Operating System Compatibility](Client-Operating-System-Compatibility-for-System-Center-Technical-Preview.md)
+-   [Client Operating System Compatibility](Client-Operating-System-Compatibility.md)
 
--   [SQL Server Version Compatibility](SQL-Server-Version-Compatibility-for-System-Center-Technical-Preview.md)
+-   [SQL Server Version Compatibility](SQL-Server-Version-Compatibility.md)
 
--   [Console Compatibility](Console-Compatibility-for-System-Center-Technical-Preview.md)
+-   [Console Compatibility](Console-Compatibility.md)
 
 -   [PowerShell Version Support](PowerShell-Version-Support.md)
 

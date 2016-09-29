@@ -16,7 +16,7 @@ ms.assetid:  0cb670c2-7b8c-4901-858c-f0644187d45f
 
 >Applies To: System Center 2016
 
-Use this information to evaluate if your hardware environment is ready to support the installation of or upgrade to System Center 2016 Technical Preview. Use this information to evaluate hardware requirements (processor, RAM, and free hard drive space). Both minimum (min) and recommended (rec) values are provided. Use the information here whether you are deploying one or multiple components.
+Use this information to evaluate if your hardware environment is ready to support the installation of or upgrade to System Center 2016. Use this information to evaluate hardware requirements (processor, RAM, and free hard drive space). Both minimum (min) and recommended (rec) values are provided. Use the information here whether you are deploying one or multiple components.
 
 |System Center 2012 R2 servers|Processor (min)|Processor (rec)|RAM (min)|RAM (rec)|Hard drive space (min)|Hard drive space (rec)|
 |---------------------------------|---------------------|---------------------|---------------|---------------|----------------------------|----------------------------|
@@ -31,7 +31,8 @@ Use this information to evaluate if your hardware environment is ready to suppor
 |**Service Manager** Data Warehouse Management Server|4-Core 2.66 GHz CPU|4-Core 2.66 GHz CPU|8 GB|16 GB|10 GB|10 GB|
 |**Service Manager** Data Warehouse Databases|8-Core 2.66 GHz CPU|8-Core 2.66 GHz CPU|8 GB|32 GB|400 GB|400 GB|
 |**Service Manager** Console|2-Core 2 GHz CPU|2-Core 2 GHz CPU|4 GB|4 GB|10 GB|10 GB|
-|**Service Manager** Self-Service Portal: Web Content Server with SharePoint Web Parts|8-Core 2.66 GHz CPU|8-Core 2.66 GHz CPU|16 GB|32 GB|80 GB|80 GB|
+|**Service Manager** Self-Service Portal (standalone)|4-Core 2.66 GHz CPU|8-Core 2.66 GHz CPU|8 GB|16 GB|80 GB|80 GB|
+|**Service Manager** Self-Service Portal + Secondary Management Server (Recommended)|8-Core 2.66 GHz CPU|8-Core 2.66 GHz CPU|16 GB|32 GB|80 GB|80 GB|
 |**Service Provider Foundation**|2.1 GHz, dual-core CPU or faster|2.1 GHz, dual-core CPU or faster|8 GB|16 GB|10 GB|10 GB|
 |**VMM** Management Server|8 Cores Pentium 4, 2 GHz (x64)|16-Core 2.66 GHz CPU|4 GB|16 GB|4 GB|10 GB|
 |**VMM** Console|2 Cores Pentium 4, 1 GHz CPU|2-Core 2 GHz CPU|4 GB|4 GB|10 GB|10 GB|
