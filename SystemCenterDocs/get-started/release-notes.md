@@ -160,7 +160,7 @@ The storage involving the current operation could not be read from or written to
 1.	Create a new page on SharePoint in which you want to display the Dashboard.
 2.	Open the page and click edit and insert a new Web Part.
 3.	In Web Part, under categories select “Media and Content” and under that select “Page Viewer” and click add.
-4.	Edit the Web Part and select Web Page and enter the URL of the SCOM Web Console dashboard.
+4.	Edit the Web Part and select Web Page and enter the URL of the Operations Manager Web console dashboard.
 5.	Append “&disabletree=true” at the end of the dashboard URL for disabling the tree view getting displayed on the SharePoint page
 6.	Configure the appearance, layout, and Advance attribute of the SharePoint page.
 
@@ -293,7 +293,7 @@ System Center Operations Manager management server is not affected.
 
 **Workaround:** Restart all Operations Manager console sessions after making changes to the Usage and Connectivity setting.
 
-**Description:**When a new component such as a management server or gateway server are added to an existing SCOM environment, usage information about the setup process is sent to Microsoft even though the Usage and Connectivity Data setting is set to "Do not send data". After the component is added, no further usage data will be sent to Microsoft from the component.
+**Description:**When a new component such as a management server or gateway server are added to an existing Operations Manager environment, usage information about the setup process is sent to Microsoft even though the Usage and Connectivity Data setting is set to "Do not send data". After the component is added, no further usage data will be sent to Microsoft from the component.
 
 **Workaround:** None
 
@@ -308,7 +308,7 @@ System Center Operations Manager management server is not affected.
 **Workaround:** Set both the exception tracking and performance tracking settings to include the same custom namespaces.
 
 #### Operations Manager web console is not compatible with Microsoft Edge web browser
-**Description:** When you open the Operations Manager web console from the Windows 10Start Menu the console will open in the Microsoft Edge web browser. This will result in an error.
+**Description:** When you open the Operations Manager web console from the Windows 10 Start Menu the console will open in the Microsoft Edge web browser. This will result in an error.
 
 **Work around:** Open the Operations Manager web console with Internet Explorer. Internet Explorer is available from  Windows Accessories sub-menu.
 
