@@ -651,12 +651,6 @@ Get-SCNATConnection
 
 **Workaround:** No workaround
 
-#### Creating a tiered file share in a Storage Spaces Direct configuration will fail
-**Description:** If you attempt to create tiers of storage (one tier for solid state drives and another for hard disk drives) that are managed by VMM using Storage Spaces Direct, you will receive an error.
-
-**Workaround:** Set the Write Cache Size Default to 0 using the command
-Set-StoragePool pool1 -WriteCacheSizeDefault 0
-
 #### SAN migration fails for Nano host
 **Description:** If you attempt to do a SAN migration between two stand-alone Nano Server hosts, you will receive an error.
 
