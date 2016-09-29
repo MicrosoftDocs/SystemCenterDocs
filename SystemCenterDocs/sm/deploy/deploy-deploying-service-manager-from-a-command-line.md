@@ -55,8 +55,8 @@ Setup.exe
 
  For additional information about command\-line parameters, type **setup.exe /?**. The parameters in the following table are optional.  
 
-|||  
-|-|-|  
+|command|notes|  
+|---|---|  
 |**/ProductKey**|If this parameter is omitted, Service Manager is installed as an evaluation edition with an evaluation period of 180 days.|  
 |**/Installpath**|If this parameter is omitted, Service Manager is installed in the default folder and path:<br /><br /> \[drive name\]:\\Program Files\\Microsoft System Center\\Service Manager 2016.|  
 |**/ServiceRunUnderAccount**|If this parameter is omitted, the local system account is used.|  
