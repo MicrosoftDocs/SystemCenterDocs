@@ -626,6 +626,12 @@ Resolve the issue and then try the operation again.*
 
 **Workaround:** Manually change the registry entry for HKLM\SYSTEM\CCS\SERVICES\WDSSERVER\PROVIDER\WDSPXE\PROVIDES\VMMOSDPROVIDER to 'SCVMM/VIRT-VMM-1' and then try bare metal deployment of hosts & clusters.
 
+#### Cluster Rolling Upgrade in VMM does not live migrate VMs that are not Highly Available
+
+**Description:** When you try to do a rolling upgrade of your Windows Server 2012 R2 cluster to Windows Server 2016 using VMM, it does not live migrate the virtual machines which are not high-available and moves them to saved state. 
+
+**Workaround:** Before kicking off cluster rolling upgrade, either make all the VMs in the cluster highly available or manually live migrate the non highly available VMs to nodes which are not getting upgraded as part of Cluster Rolling Upgrade
+
 #### Trying to import a Console add-in as a non-administrator to VMM will fail
 **Description:** If you are not an administrator and you try to import a console add-in to VMM, the console will crash. This is because the console add-in is stored at location “C:\Program Files\” which only administrators have access to.
 
