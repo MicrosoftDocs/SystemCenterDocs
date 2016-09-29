@@ -36,11 +36,7 @@ The functions that you can perform in the Orchestration console is a subset of t
 
 -   [Overview of Orchestration Console](../get-started/overview-of-orchestration-console.md)  
 
-    Describes the basic features of the Orchestration console.  
-
--   [Orchestration Console Browser Requirements](../get-started/orchestration-console-browser-requirements.md)  
-
-    Describes the minimum browser requirements for using the Orchestration console.  
+    Describes the basic features of the Orchestration console.    
 
 -   [How to Start the Orchestration Console](../manage/how-to-start-the-orchestration-console.md)  
 
