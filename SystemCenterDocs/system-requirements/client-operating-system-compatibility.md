@@ -1,5 +1,5 @@
 ---
-description:  List of the client operating systems supported for System Center 2016 client components. 
+description:  List of the client operating systems supported for System Center 2016 client components.
 manager:  cfreeman
 ms.topic:  article
 author:  cfreemanwa
@@ -26,5 +26,6 @@ Use this information to evaluate the client operating system requirements to sup
 |**DPM** Remote Administrator|&#8226;|&#8226;|&#8226;|&#8226;|&#8226;|&#8226;|&#8226;|&#8226;|
 |**Operations Manager** Operations Console|&#8226;|&#8226;|&#8226;|&#8226;|&#8226;|&#8226;|&#8226;|&#8226;|
 |**Orchestrator** Runbook Designer||||||&#8226;|&#8226;|&#8226;|
+|**Service Management Automation** PowerShell ISE Add-on||&#8226;|&#8226;|&#8226;|&#8226;|&#8226;|&#8226;|&#8226;|
 |**Service Manager** Console|||&#8226;|||&#8226;|&#8226;|&#8226;|
 |**VMM** Console||&#8226;|&#8226;|&#8226;|&#8226;|&#8226;|&#8226;|&#8226;|
