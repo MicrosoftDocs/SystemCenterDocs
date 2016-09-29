@@ -3,7 +3,7 @@ title: What's New in Operations Manager
 description:  
 author: mgoedtel
 manager: cfreemanwa
-ms.date: 2016-09-07
+ms.date: 2016-10-12
 ms.custom: na
 ms.prod: system-center-threshold
 ms.technology: operations-manager
@@ -123,3 +123,25 @@ For more information please review the Microsoft Operations Management Suite [Op
 
 Customers can view certified System Center Operations Manager partner solutions directly from the console. Customers can obtain a view of the partner solutions and visit the partner websites to download and install the solutions.  
 
+## What’s new in System Center 2016 Operations Manager UNIX/Linux monitoring
+
+- New Management Packs and providers for Apache HTTP Server and MySQL/MariaDB database server monitoring. 
+
+- The Operations Manager agents for UNIX and Linux include Open Management Infrastructure (OMI) version 1.1.0. OMI is now packaged separately (in a package named omi) from the Operations Manager agent providers (in a package named scx). 
+
+- Shell command and script rules and monitors are multi-threaded in the agent and will run in parallel.
+
+-	New UNIX/Linux Script templates have been added for:
+  -	Two-state monitors
+  - Three-state monitors
+  - Agent tasks
+  - Performance-collecting rules
+  - Alert-generating rules
+
+These templates allow you to copy and paste a monitoring script into a template for simple integration with Operations Manager monitoring. The script can be shell, perl, Python, Ruby, or any other script language with a corresponding interpreter specified by the script’s shebang.
+
+- Recovery and diagnostic task templates are now available to create recovery and diagnostic tasks with shell commands and scripts
+
+- Default credentials can now be used when discovery UNIX and Linux computers with the Discovery Wizard or PowerShell
+
+- Discovery of logical disks (file systems) for UNIX and Linux agents can be filtered by file system name or type. Discovery rule overrides can be used to exclude file systems that you do not wish to monitor. 
