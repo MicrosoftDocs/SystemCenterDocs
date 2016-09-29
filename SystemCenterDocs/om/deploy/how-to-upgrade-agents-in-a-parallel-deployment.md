@@ -3,7 +3,7 @@ title:  How to Upgrade Agents in a Parallel Deployment
 description:  
 author: mgoedtel
 manager: cfreemanwa
-ms.date: 2016-08-29
+ms.date: 2016-10-12
 ms.custom: na
 ms.prod: system-center-threshold
 ms.technology: operations-manager
@@ -30,5 +30,9 @@ If you want to maintain your System Center 2012 R2 Operations Manager environmen
 
 Once you have completed all the post-upgrade steps and are comfortable with the state of your new Operations Manager 2016 management group, you can reconfigure the agents to remove assignment from the Operations Manager 2012 R2 management group.  This can be accomplished by uninstalling the agent from the Operations console in the Operations Manager 2012 R2 management group, which won't uninstall the agent but will only remove the configuration.  You can also follow the guidance in the Operations Manager SDK to programatically [remove the management group configuration](https://msdn.microsoft.com/library/hh329017.aspx) from the agent.  
 
+## Next steps
 
+- See [Distributed Deployment of Operations Manager](Distributed-Deployment-of-Operations-Manager.md) to understand the sequence and steps for installing the Operations Manager server roles across multiple servers in your management group.  
+
+- Review information in the [Managing Discovery and Agents](../manage/managing-discovery-and-agents.md) section to understand the options and steps for installing agents and discovering objects to be monitored by Operations Manager.
 

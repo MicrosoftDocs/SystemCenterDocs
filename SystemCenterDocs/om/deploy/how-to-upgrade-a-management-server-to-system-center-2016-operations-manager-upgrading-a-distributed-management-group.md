@@ -3,7 +3,7 @@ title:  How to Upgrade a Management Server to System Center 2016 - Operations Ma
 description:  
 author: mgoedtel
 manager: cfreemanwa
-ms.date: 2016-08-29
+ms.date: 2016-10-12
 ms.custom: na
 ms.prod: system-center-threshold
 ms.technology: operations-manager
@@ -74,4 +74,8 @@ When you upgrade a distributed management group to System Center 2016 - Operatio
 After you have upgraded all of the management servers in your management group, you should upgrade gateway servers, and then upgrade any stand-alone Operations consoles.
 
 
+## Next steps
 
+- To understand the post-upgrade tasks you should perform to complete the upgrade to your management group, see [Post-Upgrade Tasks When Upgrading to System Center 2016 - Operations Manager](post-upgrade-tasks-when-upgrading-to-system-center-2016-operations-manager.md).
+
+- See [Distributed Deployment of Operations Manager](Distributed-Deployment-of-Operations-Manager.md) to understand the sequence and steps for installing the Operations Manager server roles across multiple servers in your management group.  

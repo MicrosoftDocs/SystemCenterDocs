@@ -3,7 +3,7 @@ title:  How to Upgrade a Single Server Management Group to System Center 2016 - 
 description:  
 author: mgoedtel
 manager: cfreemanwa
-ms.date: 2016-08-29
+ms.date: 2016-10-12
 ms.custom: na
 ms.prod: system-center-threshold
 ms.technology: operations-manager
@@ -98,3 +98,7 @@ When you upgrade a single-server management group to System Center 2016 - Operat
 1. In the Operations console, select the Administration workspace.
 
 2. Under Device Management select Management Servers. In the results pane, you should see the management server that you just installed with a green check mark in the Health State column.
+
+## Next steps
+
+- To understand the post-upgrade tasks you should perform to complete the upgrade to your management group, see [Post-Upgrade Tasks When Upgrading to System Center 2016 - Operations Manager](post-upgrade-tasks-when-upgrading-to-system-center-2016-operations-manager.md).

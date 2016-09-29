@@ -3,7 +3,7 @@ title:  Install the Operations Manager Web console
 description:  
 author: mgoedtel
 manager: cfreemanwa
-ms.date: 2016-08-29
+ms.date: 2016-10-12
 ms.custom: na
 ms.prod: system-center-threshold
 ms.technology: operations-manager
@@ -34,10 +34,10 @@ When you install the web console, the following three components are installed:
 If you plan to use network load balancing with Application Diagnostics console and Application Advisor console, be sure to use sticky sessions. This ensures that the same instance of the console is used for the entire session. For more information about network load balancing, see [Network Load Balancing](http://go.microsoft.com/fwlink/p/?linkID=158320). For more information about sessions, see [Support for Sessions](http://go.microsoft.com/fwlink/p/?linkID=251693).
 
 > [!NOTE]
-> Network Load Balancer is not supported for the Operations Manager web console or Reporting server.
+> A Network Load Balancer is not supported for the Operations Manager web console server.
 
 > [!IMPORTANT]
-> The web console operates with sensitive data, such as clear text user credentials, server names, IP addresses, and so on. If these are exposed on the network, they can represent a significant security risk. If Internet Information Services (IIS) does not have Secure Sockets Layer (SSL) configured, you are advised to configure it manually. For more information about security see [Web Console Security](https://technet.microsoft.com/library/hh467899.aspx)
+> The web console operates with sensitive data, such as clear text user credentials, server names, IP addresses, and so on. If these are exposed on the network, they can represent a significant security risk. If Internet Information Services (IIS) does not have Secure Sockets Layer (SSL) configured, you are advised to configure it manually. For more information about security see [Data Encryption for Web console and Reporting server Connections](../plan/planning-data-encryption-for-web-console-reporting-server-connections.md)
 
 If the web console does not have sufficient access to the operational database or the data warehouse database, you will receive a warning during the web console configuration step. You can proceed with Setup, but the web console will not be configured correctly for .NET Application monitoring. To resolve this issue, you can have your database administrator run the following SQL Server statement on both the operational database and data warehouse database:
 
@@ -173,7 +173,4 @@ All information and content at http://blogs.technet.com/b/momteam/archive/2008/0
 
 ## Next steps
 
-[Distributed Deployment of Operations Manager](Distributed-Deployment-of-Operations-Manager.md)
-
-
-
+- See [Distributed Deployment of Operations Manager](Distributed-Deployment-of-Operations-Manager.md) to understand the sequence and steps for installing the Operations Manager server roles across multiple servers in your management group.  

@@ -3,7 +3,7 @@ title:  Post-Upgrade Tasks When Upgrading to System Center 2016 - Operations Man
 description:  
 author: mgoedtel
 manager: cfreemanwa
-ms.date: 2016-08-29
+ms.date: 2016-10-12
 ms.custom: na
 ms.prod: system-center-threshold
 ms.technology: operations-manager
@@ -67,3 +67,6 @@ Sort alerts by the last-modified column to review the new alerts.
 - Monitor CPU and memory utilization, and disk I/O on your database servers to ensure that they are functioning normally.
 - If the Reporting feature is installed, click Reporting, and then run a generic performance report to ensure that Reporting is functioning correctly.
 
+## Next steps
+
+- See [Distributed Deployment of Operations Manager](Distributed-Deployment-of-Operations-Manager.md) to understand the sequence and steps for installing the Operations Manager server roles across multiple servers in your management group.  

@@ -56,7 +56,7 @@
 #### [Distributed deployment of Operations Manager](om/Deploy/distributed-deployment-of-operations-manager.md)
 ##### [How to install an Operations Manager management server](OM/Deploy/How-to-Install-an-Operations-Manager-Management-Server.md)
 ##### [How to install the Operations console](OM/Deploy/How-to-Install-the-Operations-Console.md)
-##### [How to install the Operations Manager Web console](OM/Deploy/Install-the-Operations-Manager-Web-Console.md)
+##### [How to install the Operations Manager Web console](OM/Deploy/How-to-Install-the-Operations-Manager-Web-Console.md)
 ##### [How  to install an Audit Collection Services (ACS) Collector and database](OM/Deploy/How-to-Install-an-Audit-Collection-Services-ACS-Collector-and-Database.md)
 ##### [How to install the Operations Manager Reporting server](OM/Deploy/How-to-Install-the-Operations-Manager-Reporting-Server.md)
 ##### [How to install a gateway server](OM/Deploy/How-to-Install-a-Gateway-Server.md)

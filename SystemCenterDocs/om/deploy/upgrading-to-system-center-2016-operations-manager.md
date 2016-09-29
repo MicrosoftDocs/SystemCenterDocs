@@ -2,7 +2,7 @@
 title:  Upgrading to System Center 2016 - Operations Manager
 author: mgoedtel
 manager: cfreemanwa
-ms.date: 2016-08-29
+ms.date: 2016-10-12
 ms.custom: na
 ms.prod: system-center-threshold
 ms.technology: operations-manager
@@ -49,7 +49,7 @@ There are several options for upgrade:
 
 The following steps outline the process for upgrading a distributed management group:
 
-1. Accomplish Pre-Upgrade Tasks
+1. Accomplish [Pre-Upgrade Tasks](pre-upgrade-tasks-when-upgrading-to-system-center-2016-operations-manager.md)
 
 2. Upgrade the initial management server and then additional management servers (each management server must be upgraded)
 
@@ -65,9 +65,9 @@ The following steps outline the process for upgrading a distributed management g
 
 8. Upgrade Reporting Server
 
-9. Perform Post-Upgrade Tasks
+9. Perform [Post-Upgrade Tasks](post-upgrade-tasks-when-upgrading-to-system-center-2016-operations-manager.md)
 
-\*Steps 4 through 8 can be performed in parallel after all Management Servers have been upgrade.
+\*Steps 4 through 8 can be performed in parallel after all management servers have been upgraded.
 
 
 ### High level overview System Center 2016 Operations Manager - upgrading 2012 R2 Agents to 2016 and running two environments
@@ -83,3 +83,9 @@ The following upgrade path supports customers in an Operations Manager scenario 
    a. Push-Install option
 
    b. Manual / Command-line option
+
+## Next steps
+
+- To understand the pre-upgrade tasks you should perform to complete the upgrade to your management group, see [Pre-Upgrade Tasks When Upgrading to System Center 2016 - Operations Manager](pre-upgrade-tasks-when-upgrading-to-system-center-2016-operations-manager.md).
+
+- To understand the post-upgrade tasks you should perform to complete the upgrade to your management group, see [Post-Upgrade Tasks When Upgrading to System Center 2016 - Operations Manager](post-upgrade-tasks-when-upgrading-to-system-center-2016-operations-manager.md).

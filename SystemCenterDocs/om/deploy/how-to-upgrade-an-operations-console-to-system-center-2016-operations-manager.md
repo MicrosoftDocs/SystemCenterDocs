@@ -3,7 +3,7 @@ title: How to Upgrade an Operations Console to System Center 2016 - Operations M
 description:  
 author: mgoedtel
 manager: cfreemanwa
-ms.date: 2016-08-29
+ms.date: 2016-10-12
 ms.custom: na
 ms.prod: system-center-threshold
 ms.technology: operations-manager
@@ -60,7 +60,12 @@ Before you begin the upgrade process, make sure that your server meets the minim
 
 3.  Browse to the **HKey_Local_Machine\Software\Microsoft\Microsoft Operations Manager\3.0\Setup** key. If the value of the **UIVersion** entry is 7.2.11719.0, the Operations console was upgraded successfully.
 
-After you have upgraded all of the stand-alone operations consoles in your management group, you can upgrade the agents.  See [How to Upgrade an Agent to System Center 2016 - Operations Manager](How-to-Upgrade-an-Agent-to-System-Center-2016-Operations-Manager.md) for more information.
 
+## Next steps
 
+- After you have upgraded all of the stand-alone operations consoles in your management group, you can upgrade the agents.  See [How to Upgrade an Agent to System Center 2016 - Operations Manager](How-to-Upgrade-an-Agent-to-System-Center-2016-Operations-Manager.md) for more information.
+
+- To understand the post-upgrade tasks you should perform to complete the upgrade to your management group, see [Post-Upgrade Tasks When Upgrading to System Center 2016 - Operations Manager](post-upgrade-tasks-when-upgrading-to-system-center-2016-operations-manager.md).
+
+- See [Distributed Deployment of Operations Manager](Distributed-Deployment-of-Operations-Manager.md) to understand the sequence and steps for installing the Operations Manager server roles across multiple servers in your management group.  
 

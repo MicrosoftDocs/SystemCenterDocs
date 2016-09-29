@@ -3,7 +3,7 @@ title: Install Agent Using the MOMAgent.msi Setup Wizard
 description:  
 author: mgoedtel
 manager: cfreemanwa
-ms.date: 2016-08-29
+ms.date: 2016-10-12
 ms.custom: na
 ms.prod: system-center-threshold
 ms.technology: operations-manager
@@ -67,4 +67,12 @@ Before you use the Setup Wizard, ensure the following conditions are met:
 11. When the **Completing the Operations Manager Agent Setup Wizard** page appears, click **Finish**.
 
 
+## Next steps
 
+- See [Distributed Deployment of Operations Manager](Distributed-Deployment-of-Operations-Manager.md) to understand the sequence and steps for installing the Operations Manager server roles across multiple servers in your management group.  
+
+- Review information in the [Managing Discovery and Agents](../manage/managing-discovery-and-agents.md) section to understand the options and steps for installing agents and discovering objects to be monitored by Operations Manager.
+
+- To deploy the Windows agent from the Operations console using the Discovery Wizard, review [Install Agent on Windows Using the Discovery Wizard](../manage/Install-Agent-on-Windows-Using-the-Discovery-Wizard.md).
+
+- To understand how to manage the configuration settings of a Windows agent and options available, review [Configuring Agents](../manage/Configuring-Agents.md).

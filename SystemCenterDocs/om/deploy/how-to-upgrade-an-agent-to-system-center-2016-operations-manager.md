@@ -3,7 +3,7 @@ title:  How to Upgrade an Agent to System Center 2016 - Operations Manager
 description:  
 author: mgoedtel
 manager: cfreemanwa
-ms.date: 2016-08-29
+ms.date: 2016-10-12
 ms.custom: na
 ms.prod: system-center-threshold
 ms.technology: operations-manager
@@ -142,4 +142,10 @@ Manually-installed agents are agents that were installed manually, either from t
     > It can take up to one hour for the console to show the updated version of the agent.
 
 
+## Next steps
 
+- To understand the post-upgrade tasks you should perform to complete the upgrade to your management group, see [Post-Upgrade Tasks When Upgrading to System Center 2016 - Operations Manager](post-upgrade-tasks-when-upgrading-to-system-center-2016-operations-manager.md).
+
+- See [Distributed Deployment of Operations Manager](Distributed-Deployment-of-Operations-Manager.md) to understand the sequence and steps for installing the Operations Manager server roles across multiple servers in your management group.  
+
+- Review information in the [Managing Discovery and Agents](../manage/managing-discovery-and-agents.md) section to understand the options and steps for installing agents and discovering objects to be monitored by Operations Manager.

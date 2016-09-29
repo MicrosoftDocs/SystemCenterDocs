@@ -3,7 +3,7 @@ title:  Installing Operations Manager From the Command Prompt
 description:  
 author: mgoedtel
 manager: cfreemanwa
-ms.date: 2016-09-12
+ms.date: 2016-10-12
 ms.custom: na
 ms.prod: system-center-threshold
 ms.technology: operations-manager
@@ -57,5 +57,7 @@ The following table lists the command-line parameters for installing features of
 |/SendODRReports:|0: Do not opt in to sending operational data reports.<br><br>1: opt in to sending operational data reports.<br><br>Used for Reporting Server Installations.|
 |/uninstall|Uninstalls Operations Manager. Use **/components** to indicate specific features to uninstall. If **/components** is not specified, it will uninstall all features of Operations Manager on the server.|
 
+## Next steps
 
+- See [Distributed Deployment of Operations Manager](Distributed-Deployment-of-Operations-Manager.md) to understand the sequence and steps for installing each one of the features across multiple servers in your management group.  
 
