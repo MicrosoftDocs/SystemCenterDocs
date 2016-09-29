@@ -135,7 +135,6 @@
 #### [Using runbooks](orch/get-started/using-runbooks.md)
 #### [Using the orchestrator console](orch/get-started/using-the-console.md)
 #### [Database sizing and performance](orch/plan/database-sizing-and-performance.md)
-#### [Feature Performance Considerations](orch/plan/feature-peformance-considerations.md)
 ### [Install Orchestrator](orch/deploy/Install-Orchestrator.md)
 #### [Deploy and start runbooks](orch/deploy/deploy-and-start-runbooks.md)
 #### [Deploying runbooks](orch/deploy/deploying-runbooks.md)
