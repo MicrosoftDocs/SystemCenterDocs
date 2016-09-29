@@ -1,11 +1,12 @@
 ---
 description:  
-manager:  cfreemanwa
+manager:  cfreeman
 ms.topic:  article
 author:  rayne-wiselman
+ms.author: raynew
 ms.prod:  system-center-threshold
 keywords:  
-ms.date:  2016-06-28
+ms.date:  2016-10-12
 title:  Deploy a RAS Gateway using VMM
 ms.technology:  virtual-machine-manager
 ms.assetid:  150b922a-d9fb-4b36-b964-e1738f054eb3
@@ -14,7 +15,7 @@ ms.service:  virtual-network
 
 # Deploy a RAS Gateway using VMM
 
->Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
+>Applies To: System Center 2016 - Virtual Machine Manager
 
 ## Introduction
 
@@ -241,7 +242,7 @@ A S2S IPSec connection allows you to securely access remote virtual machines and
 6.  Type a subnet as shown in the following diagram. This subnet is used to route packets out of the VM Network. This subnet need not be pre-configured in your datacenter.
 
     ![VMM routing subnet](../../media/VMM-routing-subnet.png)
-7.  Type a connection name of your choice. The name used in the example screenshot is **TP5_IPSEC**.
+7.  Type a connection name of your choice.
 8.  Type the IP address of the Remote endpoint.
 9.  Optionally, you can also configure bandwidth settings on this screen.
 10. Select the **Authentication** tab.
@@ -273,7 +274,7 @@ A S2S GRE connection allows you to access remote virtual machines and services f
 
     ![VMM routing subnet 2](../../media/VMM-routing-subnet-2.png)
 
-8.  Type a connection name. The name used in the example screenshot is **TP5_GRE**.
+8.  Type a connection name. 
 9.  Type the IP address of the Remote endpoint.
 10. Type the GRE key.
 11. Optionally, you can complete the other fields on this screen but these values are not required to set up a S2S GRE connection.
