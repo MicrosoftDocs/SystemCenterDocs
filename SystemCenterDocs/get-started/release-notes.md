@@ -693,5 +693,6 @@ The user name or password is incorrect (0x8007052E)
 **Description:** After you onboard a out-of-band S2D SOFS into VMM, the SOFS properties like Volume, physical disk and tiers are not available in VMM.
 
 **Workaround:** Refresh the Storage provider
+
 1.	Open the VMM console.
 2.	Click Fabric Resources > Providers. Right-click the provider > Refresh.
