@@ -3,7 +3,7 @@ title: How to Create a New Action Account in Operations Manager
 description:  
 author: mgoedtel
 manager: cfreemanwa
-ms.date: 2016-09-20
+ms.date: 2016-10-12
 ms.custom: na
 ms.prod: system-center-threshold
 ms.technology: operations-manager
@@ -11,6 +11,8 @@ ms.topic: article
 ---
 
 # How to Create a New Action Account in Operations Manager
+
+>Applies To: System Center 2016 - Operations Manager
 
 Use the following procedure to create a new management server action account. The new action account will not, by default, have access to Operations Manager database unless access is inherited in the credentials you assign to the action account. If not, a new account for accessing the Operations Manager database will need to be created.  
   

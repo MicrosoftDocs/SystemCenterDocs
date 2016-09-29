@@ -1,8 +1,9 @@
 ---
 title: Initial Monitoring After Operations Manager Is Installed
+description:
 author: mgoedtel
 manager: cfreemanwa
-ms.date: 2016-09-19
+ms.date: 2016-10-12
 ms.custom: na
 ms.prod: system-center-threshold
 ms.technology: operations-manager
@@ -25,8 +26,5 @@ After Operations Manager is installed, you must decide which IT service you shou
 
 - [Using Management Packs](Using-Management-Packs.md)
 
-    Monitoring for applications, features, and services is enabled by importing management packs. This section from the System Center 2016 section of the TechNet library explains what management packs do, and how to import and manage them.
+    Monitoring for applications, features, and services is enabled by importing management packs. This section explains what management packs do, and how to import and manage them.
 
-- [Managing Access in Operations Manager](managing-access-in-operations-manager.md)
-
-    This section provides information to help you plan for security-related tasks in Operations Manager such as securely monitor systems, devices, and applications, as well as configuring permissions to perform administration and view operational data.   

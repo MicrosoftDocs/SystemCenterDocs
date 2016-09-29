@@ -3,7 +3,7 @@ title: Using Operations Manager Shell
 description: 
 author: mgoedtel
 manager: cfreemanwa
-ms.date: 2016-09-26
+ms.date: 2016-10-12
 ms.custom: na
 ms.prod: system-center-threshold
 ms.technology: operations-manager
@@ -13,7 +13,6 @@ ms.topic: article
 # Using Operations Manager Shell
 
 >Applies To: System Center 2016 - Operations Manager
-
 
 In System Center 2016 - Operations Manager, the Operations Manager Shell is installed with the Operations Manager console; it provides a command-line environment and task-based scripting technology that you can use to automate many Operations Manager administrative tasks.  
   

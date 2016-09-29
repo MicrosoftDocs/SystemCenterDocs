@@ -1,21 +1,18 @@
 ---
-description:  
-manager:  cfreemanwa
-ms.topic:  article
-author:  mgoedtel
-ms.prod:  system-center-threshold
-keywords:  
-ms.date:  2016-06-27
-title:  Process Manual Agent Installations
-ms.technology:  operations-manager
-ms.assetid:  ba2a2815-10bf-4904-ae1c-1e572e2b5fa5
+title: Process Manual Agent Installations
+description:
+author: mgoedtel
+manager: cfreemanwa
+ms.date: 2016-10-12
+ms.custom: na
+ms.prod: system-center-threshold
+ms.technology: operations-manager
+ms.topic: article
 ---
-
-
 
 # Process Manual Agent Installations
 
->Applies To: System Center 2016 Technical Preview - Operations Manager
+>Applies To: System Center 2016 - Operations Manager
 
 Manual installation of an agent refers to the process of running MOMAgent.msi locally on a computer that is to host a System Center Operations Manager agent. When it is installed, the agent attempts to join the specified management group by contacting a specified management server. You can use security settings at both the management group and the management server level to configure how requests from manually installed agents are processed.
 
@@ -32,7 +29,7 @@ The following three options are available to process manually installed agents.
 
 The following procedures show you how to configure settings for manual agent installations.
 
-### To configure manual agent installation settings for a management group
+## To configure manual agent installation settings for a management group
 
 1.  Log on to the Operations console with an account that is a member of the Operations Manager Administrators role.
 
@@ -50,7 +47,7 @@ The following procedures show you how to configure settings for manual agent ins
 
     -   Optionally, select **Auto-approve new manually installed agents**.
 
-### To override the manual agent installation setting for a single management server
+## To override the manual agent installation setting for a single management server
 
 1.  Log on to the Operations console with an account that is a member of the Operations Manager Administrators role.
 
@@ -72,7 +69,7 @@ The following procedures show you how to configure settings for manual agent ins
 
 7.  Click **OK**.
 
-### To approve a pending agent installation when automatic approval is not configured
+## To approve a pending agent installation when automatic approval is not configured
 
 1.  In the Operations console, click **Administration**.
 
@@ -87,20 +84,17 @@ The following procedures show you how to configure settings for manual agent ins
     > [!NOTE]
     > Rejected agents remain in  **Pending Management**  until the agent is uninstalled for the management group.
 
-## See Also
-[Operations Manager Agent Installation Methods](Operations-Manager-Agent-Installation-Methods.md)
-[Install Agent on Windows Using the Discovery Wizard](Install-Agent-on-Windows-Using-the-Discovery-Wizard.md)
-[Install Agent on UNIX and Linux Using the Discovery Wizard](Install-Agent-on-UNIX-and-Linux-Using-the-Discovery-Wizard.md)
-[Install Agent Using the MOMAgent.msi Setup Wizard](Install-Agent-Using-the-MOMAgent.msi-Setup-Wizard.md)
-[Install Agent and Certificate on UNIX and Linux Computers Using the Command Line](Install-Agent-and-Certificate-on-UNIX-and-Linux-Computers-Using-the-Command-Line.md)
-[Managing Certificates for UNIX and Linux Computers](Managing-Certificates-for-UNIX-and-Linux-Computers.md)
-[Install Agent Using the Command Line](Install-Agent-Using-the-Command-Line.md)
-[Applying Overrides to Object Discoveries](Applying-Overrides-to-Object-Discoveries.md)
-[Configuring Agents](Configuring-Agents.md)
-[Examples of Using MOMAgent Command to Manage Agents](Examples-of-Using-MOMAgent-Command-to-Manage-Agents.md)
-[Upgrading and Uninstalling Agents on UNIX and Linux Computers](Upgrading-and-Uninstalling-Agents-on-UNIX-and-Linux-Computers.md)
-[Manually Uninstalling Agents from UNIX and Linux Computers](Manually-Uninstalling-Agents-from-UNIX-and-Linux-Computers.md)
-[Uninstall Agent from Windows-based Computers](Uninstall-Agent-from-Windows-based-Computers.md)
+## Next steps
 
+- To deploy the Windows agent from the Operations console using the Discovery Wizard, review [Install Agent on Windows Using the Discovery Wizard](Install-Agent-on-Windows-Using-the-Discovery-Wizard.md).
 
+- If you would like to manually install the Windows agent from the command line or automate the deployment using a script or other automation solution, review [Install Windows Agent Manually Using MOMAgent.msi](install-windows-agent-manually-using-momagent.md).
+
+- After manually installing the Operations Manager agent on Windows or UNIX and Linux computers, you need to [Process Manual Agent Installations](Process-Manual-Agent-Installations.md).
+
+- To understand how to manage the configuration settings of a Windows agent and options available, review [Configuring Agents](Configuring-Agents.md).
+
+- Review [Uninstall Agent from Windows-based Computers](Uninstall-Agent-from-Windows-based-Computers.md) to understand what options and steps need to be performed to properly uninstall  the agent from your Windows computers.  
+
+- If you would like to install the Nano Server agent from the command line or automate the deployment using a script or other automation solution, review [Install Agent on Nano Server](Install-Agent-on-Nano-Server.md)
 

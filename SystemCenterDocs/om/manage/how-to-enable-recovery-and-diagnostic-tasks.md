@@ -3,7 +3,7 @@ title: How to Enable Recovery and Diagnostic Tasks
 description:  
 author: mgoedtel
 manager: cfreemanwa
-ms.date: 2016-09-07
+ms.date: 2016-10-12
 ms.custom: na
 ms.prod: system-center-threshold
 ms.technology: operations-manager

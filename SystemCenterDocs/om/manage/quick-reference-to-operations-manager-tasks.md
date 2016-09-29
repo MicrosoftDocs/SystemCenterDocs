@@ -3,7 +3,7 @@ title:  Quick Reference to Operations Manager Tasks
 description:  
 author: mgoedtel
 manager: cfreemanwa
-ms.date: 2016-09-27
+ms.date: 2016-10-12
 ms.custom: na
 ms.prod: system-center-threshold
 ms.technology: operations-manager
