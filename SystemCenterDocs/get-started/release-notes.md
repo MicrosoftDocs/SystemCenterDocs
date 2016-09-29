@@ -25,7 +25,7 @@ The following release notes apply to System Center 2016 - Data Protection Manage
 #### Silent Installation of System Center DPM with SQL Server 2008
 **Description**: You cannot silently install DPM 2016 RTM on SQL Server 2008.
 
-**Workaround**: Deploy DPM 2016 RTM on a version of SQL Server higher than 2008, or use the DPM 2016 Setup wizard to install SQL Server.
+**Workaround**: Deploy DPM 2016 RTM on a version of SQL Server higher than 2008, or use the DPM 2016 Setup UI.
 
 #### Hyper-V VMs are protected twice on VM upgrade
 **Description**: If you upgrade your Hyper-V VM from Windows Server 2012 R2 to Windows Server 2016 to enable Resilient Change Tracking (RCT), a new VM representing the upgraded VM may appear in the **Create Protection Group Wizard**. The 2016 version of the VM may appear in addition to the 2012 R2 version of the VM.
@@ -39,114 +39,30 @@ The following release notes apply to System Center 2016 - Data Protection Manage
 
 #### Restoring a previous version of an upgraded Hyper-V VM causes future recovery points to fail.
 
-**Description**: If you upgrade a protected 2012 R2 Hyper-V VM to the 2016 version, then stop protecting the VM (but retain data), and then re-enable protection if you then recover a 2012 R2 copy at the original location, further backups may fail.
+**Description**: If you upgrade a protected 2012 R2 Hyper-V VM to the 2016 version, then stop protecting the VM (but retain data), and then re-enable protection, if you then recover a 2012 R2 copy at the original location, further backups may fail.
 
-**Workaround**: To prevent future backups from failing, after creating a 2012 R2 recovery point for a 2016 VM, change the version of the recovery point to 2016 and run consistency check before the next scheduled backup.
+**Workaround**: After recovery change the VM Version to 2016 followed by a Consistency Check.
 
-
-#### Adding DPM Volumes without Drive Letters
-**Description:** If you try to add a volume without access path/drive letter as valid volumes to storage, DPM does not add them, throwing an error.
-
-**Work around:** Assign drive letters to the volumes that are being added to DPM Storage.
-
-#### Rescan of large-scale storage configurations
-**Description:** For large-scale storage configurations, if you use the Disks Storage, Rescan feature to detect new volumes, the DPM UI may appear to "hang" while it is re-scanning.
-
-**Work around:** Wait for the scan to complete. If required, you can open another instance of the Administrator Console while the first instance completes rescanning for new volumes.
-
-#### Secondary Protection of SQL DB with high Synchronization Frequency
-**Description:** If a SQL Database is protected by a primary and secondary DPM server with a high synchronization frequency (for example, primary = 15 mins, secondary = 1 hour), the backup jobs may fail with the following warning: <br/>
-On the Primary DPM Server: The job completed successfully with the following warning: The storage involving the current operation could not be read from or written to. (ID 40003) <br/>
-On the Secondary DPM Server: The job completed successfully with the following warning: The synchronization job failed due to an internal error. (ID 117)
-
-
-**Workaround:** When no job is running on the primary DPM server, stop the msdpm service by running the following command from the command line with Admistrator privileges:
-
-```
-net stop msdpm
-```
-
-Then delete the file in the folder:
-*DPM_install_path*\DPM\Config\VolumeManagerState_*DPMServerName*
-
-
-#### Consistency Checks on Upgrade of Primary and Secondary DPM Servers to DPM 2016
-**Description:** After upgrading a primary and secondary DPM server from Data Protection Manager 2012 R2 to System Center Data Protection Manager 2016, consistency check jobs fail on the secondary DPM.
-
-**Workaround:** During the process of creating or modifying a Protection Group on the secondary DPM server, on the **Select Group Members** screen, select the Primary DPM Server and click **Refresh**. After this, consistency check jobs will succeed.
-
-#### Searching for Files or Folders during the Recovery process doesn't return expected results
-**Description:** If you **Search** for a file, folder, or volume in the recovery pane under **Files and Folders**, you may not get the relevant results.
-
-**Workaround:** Use the **Browse** feature instead of **Search** to find the file, folder, or volume.
-
-#### Protecting Hyper-V VMs with an ISO in DVD Drive
-**Description:** If you protect a Hyper-V VM with an ISO in the DVD drive, backups may fail with the following messages:
-
-During initial replication: <br/>
-`
-DPM failed to communicate with [DPMServerName] because of a communication error with the protection agent. (ID 53 Details: Not implemented (0x80000001))
-`
-
-During subsequent backups: <br/>
-`
-An unexpected error occurred while the job was running. (ID 104 Details: Internal error code: 0x80990E54)
-`
-
-**Workaround:** Eject the ISO and trigger the backup process again.
-
-#### Deleting Storage Volumes with backups
-**Description:** If the backups of a data source are stored on a volume, and the volume is deleted, the Protection Group goes into an error state.
-
-**Workaround:** To fix the error state, use Delete Data to stop protection on the affected data sources, then protect the data source again.
-
-#### Concurrent Incremental and Tape Backups
-**Description:** If you create a policy that triggers synchronization and tape backup jobs at the same time on the same data source, tape backup jobs may fail sometimes.
-
-**Workaround:** If the tape backup jobs fail, retry the tape backup. To avoid this scenario, configure the backup policy so that incremental and tape backups don’t conflict.
 
 #### Bare Metal Recovery protection failures
 
 **Description:** If you configure Bare Metal Recovery (BMR) protection, the BMR protection job may fail with the message that the replica size is not sufficiently large.
 
-**Workaround:** Use PowerShell to increase the replica size:
-```
-$dpm = Connect-DPMServer -DpmServerName <name of DPM>
-$pg = Get-DPMProtectionGroup -DpmServerName <name of DPM>
-$ds = Get-DPMDatasource -ProtectionGroup $pg[0] # choose the right PG here
-$ds1 = $ds[0] # choose the right DS here
-$dpm.Proxy.ResizeReplica($ds1.DatasourceId, $ds1.ReplicaSize * 2)
-```
-
+**Workaround:** Change the default replica size for BMR datasources using the following registry key: 
+Registry Path : HKLM\Software\Microsoft\Microsoft Data Protection Manager\Configuration
+ReplicaSizeInGBForSystemProtectionWithBMR (DWORD)
 
 #### Re-protecting DPM DB after Upgrade to DPM 2016
 **Description:** When you upgrade from System Center DPM 2012 R2 to System Center Data Protection Manager 2016, the DPM database name can change in some scenarios.
 
-**Workaround:** To prevent a potentially renamed database from impacting protection, if you are protecting the DPM 2012 R2 database, be sure to enable protection for the DPM 2016 database. Once you have upgraded DPM and have validated protection works correctly, you can remove protection for the DPM 2012 R2 database.
+**Workaround:** If you are protecting DPM DB, please ensure that you enable protection for new DPM DB. Protection for the old DPM DB can be removed once DPM upgrade is validated.
 
-#### Recovering a database of DPM Servers after upgrading to 2016 from Azure
-**Description:** If your DPM installation's SQL server master database is backed up to Azure, and you upgrade to System Center DPM 2016, and then attempt to restore using an online recovery point, the recovery job will fail.
 
-**Workaround:** To recover the master SQL database, you must use SQL Server to recover the database as files.
 
-#### Incorrect Space Usage Reported
-**Description:** Incorrect Space Usage Reported
+#### Hyper-V RCT - recover as files for D-T backup fails 
+**Description:** Recovery of Hyper-V RCT VMs as files created directly on tape (D-T) fails. D-D-T backups will not exhibit this issue.
 
-**Workaround:** There is no workaround for this. Overall space usage can found from the filesystem directly.
-
-#### DPMSync fails after deletion or corruption of Modern DPM Storage Folders
-**Description:** If the Modern DPM Storage folders are deleted or corrupted, running DPMSync.exe with **ReallocateReplica** fails with the following error:
-
-`
-The storage involving the current operation could not be read from or written to.
-`
-
-**Workaround:** There is no workaround.
-
-#### Excluded Hyper-V VHDs continue to be protected
-**Description:** While protecting Hyper-V VMs, the excluded VHDs continue to be protected.
-
-**Workaround:** None.
+**Workaround:** Do Alternate Location Recovery as a VM, and then transfer those files to the desired location. 
 
 
 
@@ -341,6 +257,13 @@ System Center Operations Manager management server is not affected.
 **Description:** You cannot open the Orchestrator web console with the Microsoft Edge web browser.
 
 **Work around:** Open the Orchestrator web console with Internet Explorer.
+
+#### Orchestrator 2016 does not have associated Integration packs available.
+
+**Description:** Orchestrator 2016 Integration packs have not been published.
+
+**Workaround:** Use Orchestrator 2012 R2 Integration packs for evaluation purposes.
+
 
 ## System Center 2016 - Service Manager Release Notes
 **The following release notes apply to System Center 2016 - Service Manager.**
