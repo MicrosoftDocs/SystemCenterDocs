@@ -3,7 +3,7 @@ title:  Distributed Deployment of Operations Manager
 description:  
 author: mgoedtel
 manager: cfreemanwa
-ms.date: 2016-08-29
+ms.date: 2016-10-12
 ms.custom: na
 ms.prod: system-center-threshold
 ms.technology: operations-manager
@@ -63,17 +63,17 @@ This configuration supports all Operations Manager server roles:
 
 This section of the Deployment Guide contains the following topics:
 
--   [How to Install an Operations Manager Management Server](How-to-Install-an-Operations-Manager-Management-Server.md)
+-   [How to install an Operations Manager management server](How-to-Install-an-Operations-Manager-Management-Server.md)
 
--   [How to Install the Operations Console](How-to-Install-the-Operations-Console.md)
+-   [How to install the Operations console](How-to-Install-the-Operations-Console.md)
 
--   [Install the Operations Manager Web Console](Install-the-Operations-Manager-Web-Console.md)
+-   [How to install the Operations Manager Web console](How-to-Install-the-Operations-Manager-Web-Console.md)
 
--   [How  to Install an Audit Collection Services &#40;ACS&#41; Collector and Database](How-to-Install-an-Audit-Collection-Services-ACS-Collector-and-Database.md)
+-   [How to install an Audit Collection Services (ACS) collector and database](How-to-Install-an-Audit-Collection-Services-ACS-Collector-and-Database.md)
 
--   [How to Install the Operations Manager Reporting Server](How-to-Install-the-Operations-Manager-Reporting-Server.md)
+-   [How to install the Operations Manager Reporting server](How-to-Install-the-Operations-Manager-Reporting-Server.md)
 
--   [How to Deploy a Gateway Server](How-to-Install-A-Gateway-Server.md)
+-   [How to deploy a gateway server](How-to-Install-A-Gateway-Server.md)
 
 
 

@@ -3,7 +3,7 @@ title:  How  to Install an Audit Collection Services ACS  Collector and Database
 description:  
 author: mgoedtel
 manager: cfreemanwa
-ms.date: 2016-08-29
+ms.date: 2016-10-12
 ms.custom: na
 ms.prod: system-center-threshold
 ms.technology: operations-manager
@@ -91,3 +91,7 @@ The ACS database runs on a supported version of Microsoft SQL Server. The Audit 
 9. Click the **Db Audit** data source.
 
 10. In the **Connect Using** section, select **Windows Integrated Security** and click **Apply**.
+
+## Next steps
+
+- See [Distributed Deployment of Operations Manager](Distributed-Deployment-of-Operations-Manager.md) to understand the sequence and steps for installing the Operations Manager server roles across multiple servers in your management group.  

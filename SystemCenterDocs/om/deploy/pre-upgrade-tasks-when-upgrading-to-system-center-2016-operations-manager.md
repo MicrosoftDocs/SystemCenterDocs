@@ -1,9 +1,9 @@
 ---
-title:  Pre Upgrade Tasks When Upgrading to System Center 2016 - Operations Manager
+title:  Pre-Upgrade Tasks When Upgrading to System Center 2016 - Operations Manager
 description:  
 author: mgoedtel
 manager: cfreemanwa
-ms.date: 2016-08-29
+ms.date: 2016-10-12
 ms.custom: na
 ms.prod: system-center-threshold
 ms.technology: operations-manager

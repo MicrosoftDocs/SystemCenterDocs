@@ -3,7 +3,7 @@ title:  Install a Gateway Server
 description:  
 author: mgoedtel
 manager: cfreemanwa
-ms.date: 2016-09-09
+ms.date: 2016-10-12
 ms.custom: na
 ms.prod: system-center-threshold
 ms.technology: operations-manager
@@ -183,3 +183,7 @@ It is sometimes necessary to chain multiple gateways together in order to monito
 2. Open a command prompt, and navigate to the Operations Manager installation directory or, and then run the following: ```Microsoft.EnterpriseManagement.gatewayApprovalTool.exe /ManagementServerName=<managementserverFQDN> /GatewayName=<GatewayFQDN> /Action=Create```
 3. Install the gateway server on a new server. 
 4. Configure the certificates between gateways in the same way that you would configure certificates between a gateway and a management server. The Health Service can only load and use a single certificate. Therefore, the same certificate is used by the parent and child of the gateway in the chain. 
+
+## Next steps
+
+- See [Distributed Deployment of Operations Manager](Distributed-Deployment-of-Operations-Manager.md) to understand the sequence and steps for installing the Operations Manager server roles across multiple servers in your management group.   

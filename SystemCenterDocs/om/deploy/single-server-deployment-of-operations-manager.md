@@ -3,7 +3,7 @@ title:  Single Server Deployment of Operations Manager
 description:  
 author: mgoedtel
 manager: cfreemanwa
-ms.date: 2016-09-07
+ms.date: 2016-10-12
 ms.custom: na
 ms.prod: system-center-threshold
 ms.technology: operations-manager
@@ -97,7 +97,9 @@ In this configuration, you need to make sure that network ports are opened for c
 
 For a complete listing of ports used, the direction of the communication, and if the ports can be configured, see [Configuring a Firewall for Operations Manager](../plan/planning-security-configuring-a-firewall.md).
 
-To deploy Operations Manager in a single-server management group, see [Walkthrough: Installing Operations Manager on a Single Server](../get-started/Walkthrough-Installing-Operations-Manager-on-a-Single-Server.md).
+## Next steps
+
+- To deploy Operations Manager in a single-server management group, see [Walkthrough: Installing Operations Manager on a Single Server](../get-started/Walkthrough-Installing-Operations-Manager-on-a-Single-Server.md).
 
 
 

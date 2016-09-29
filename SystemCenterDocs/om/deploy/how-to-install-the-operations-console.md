@@ -3,7 +3,7 @@ title:  How to Install the Operations Console
 description:  
 author: mgoedtel
 manager: cfreemanwa
-ms.date: 2016-08-29
+ms.date: 2016-10-12
 ms.custom: na
 ms.prod: system-center-threshold
 ms.technology: operations-manager
@@ -62,4 +62,4 @@ You must ensure that the computer that will host the Operations console meets th
 
 ## Next steps
 
-[Distributed Deployment of Operations Manager](Distributed-Deployment-of-Operations-Manager.md)
+- See [Distributed Deployment of Operations Manager](Distributed-Deployment-of-Operations-Manager.md) to understand the sequence and steps for installing the Operations Manager server roles across multiple servers in your management group.  

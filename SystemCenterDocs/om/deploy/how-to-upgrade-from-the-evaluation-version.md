@@ -3,7 +3,7 @@ title:  How to Upgrade from the Evaluation Version of Operations Manager
 description:  
 author: mgoedtel
 manager: cfreemanwa
-ms.date: 2016-09-14
+ms.date: 2016-10-12
 ms.custom: na
 ms.prod: system-center-threshold
 ms.technology: operations-manager
