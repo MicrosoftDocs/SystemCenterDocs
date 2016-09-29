@@ -1,11 +1,12 @@
 ---
 description:  
-manager:  cfreemanwa
+manager:  cfreeman
 ms.topic:  article
 author:  rayne-wiselman
+ms.author: raynew
 ms.prod:  system-center-threshold
 keywords:  
-ms.date:  2016-06-28
+ms.date:  2016-10-12
 title:  Deploy a Software Load Balancer using VMM
 ms.technology:  virtual-machine-manager
 ms.assetid:  2f57fc14-4b23-41e9-87dc-51a0b998b321
@@ -14,11 +15,9 @@ ms.service:  virtual-network
 
 # Deploy a Software Load Balancer using VMM
 
->Applies To: System Center 2016 RTM - Virtual Machine Manager
+>Applies To: System Center 2016 - Virtual Machine Manager
 
-## Introduction
-
-This topic helps you evaluate the Software Defined Networking (SDN) features in Windows Server RTM and Virtual Machine Manager Technology Preview 5. In particular, this topic is focused on deploying and configuring Microsoft Software Load Balancer (SLB) using VMM RTM.
+This topic helps you evaluate the Software Defined Networking (SDN) Software Load Balancer (SLB) in Windows Server and Virtual Machine Manager (VMM).
 
 After you use VMM to deploy a network controller and a SLB, you can leverage multiplexing and NAT capabilities in your Software Defined Networking (SDN) infrastructure.
 
@@ -49,7 +48,7 @@ Refer to the topology diagram in the following Microsoft TechNet Library topic: 
 
 The diagram shows a sample 4-node setup. The setup is highly available with three network controller nodes (virtual machines), and three SLB/MUX nodes. It shows two tenants with one virtual networks broken into two virtual subnets to simulate a web tier and a database tier. Both the infrastructure and tenant virtual machines can be redistributed across any physical host.
 
-All the Software Load Balancer virtual machines must have Windows Server RTM with the Zero Day Patch as the operating system.
+
 
 ### Logical networks
 
@@ -341,15 +340,13 @@ Use the following procedure to create a VIP template.
 
 7.  On the **Specify a Template Type** screen, click **Specific**, and select **Microsoft** for the **Manufacturer** and for the **Model**, select **Microsoft network controller**. Click **Next**.
 
-8.  On the **Specify Protocol Options** screen, select the protocol you want to create a VIP mapping for. The HTTP and HTTPS options are commonly used, but for a simple example you can select the **Custom** option and chose **TCP** in the **Protocol Name** field. If TCP does not appear as an option in the drop-down menu, you can type it manually. This is a known issue in RTM. Click **Next**.
+8.  On the **Specify Protocol Options** screen, select the protocol you want to create a VIP mapping for. The HTTP and HTTPS options are commonly used, but for a simple example you can select the **Custom** option and chose **TCP** in the **Protocol Name** field. If TCP does not appear as an option in the drop-down menu, you can type it manually.  Click **Next**.
 
 9.  You can optionally select **enable persistence** if you wish to have the load balancer make the connection from the client "sticky". Click **Next**.
 
 10.  For the **Load Balancing method**, select **Round Robin** from the drop down list. Click **Next**.
 
-11. **Health Monitors** are not implemented in RTM, so click **Next** to move past this screen.
-
-12. Confirm your settings and then click **Finish** when you are ready to create the VIP Template.
+11. Confirm your settings and then click **Finish** when you are ready to create the VIP Template.
 
 ##### Create the VIP using PowerShell
 
@@ -442,8 +439,7 @@ Use the following steps to configure NAT:
 5.  In **Gateway Device**, type your network controller service name.
 6.  Select the **Network Address Translation** tab.
 7.  In the **IP address pool** field, choose your Public VIP pool.
-8.  Leave the IP address field empty. A VIP address will be automatically assigned to this rule. This is a RTM limitation.
-9.  In **NAT rules** click **Add** and type the following values:
+8.  In **NAT rules** click **Add** and type the following values:
     1.  The name of the NAT rule.
     2.  The protocol to use.
     3.  The value for the incoming port.

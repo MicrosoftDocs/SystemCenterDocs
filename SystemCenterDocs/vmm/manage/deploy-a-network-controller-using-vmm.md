@@ -1,11 +1,12 @@
 ---
 description:  
-manager:  cfreemanwa
+manager:  cfreeman
 ms.topic:  article
 author:  rayne-wiselman
+ms-author: raynew
 ms.prod:  system-center-threshold
 keywords:  
-ms.date:  2016-06-28
+ms.date:  2016-10-12
 title:  Deploy a Network Controller using VMM
 ms.technology:  virtual-machine-manager
 ms.assetid:  98767073-f0c5-47a8-9551-f532cecb8d08
@@ -16,7 +17,6 @@ ms.service:  virtual-network
 
 >Applies To: System Center 2016 RTM - Virtual Machine Manager
 
-## Introduction
 
 This topic helps you evaluate the Software Defined Networking (SDN) features available with Windows Server 2016 RTM. In particular, it focuses on using Virtual Machine Manager (VMM) 2016 RTM to deploy a highly available [network controller](https://technet.microsoft.com/library/dn859239.aspx?f=255&MSPPError=-2147217396); a new SDN capability in Windows Server. The network controller is a scalable and highly available server role that enables you to automate network infrastructure configuration instead of performing manual network device configuration.
 
@@ -145,7 +145,7 @@ There are two methods you can use to generate an SSL certificate:
 
 #### Use a self-signed certificate
 
-The following example creates a new self-signed certificate, and should be run on the VMM 2016 TP5 Server:
+The following example creates a new self-signed certificate, and should be run on the VMM server:
 
 * For multi node network controller deployment
 
@@ -199,7 +199,7 @@ The product key for these virtual hard disks is 6XBNX-4JQGW-QX6QG-74P76-72V67.
 
 This section describes how to import a network controller service template into your VMM library. Before importing a network controller service template, download the template and related resources to your computer from the  [Microsoft SDN GitHub repository](https://github.com/Microsoft/SDN/tree/master/VMM/Templates/NC). You will find four service templates at the repository. While production service templates deploy a three node network controller, standalone service templates deploy a single node network controller.  Use the Network Controller Production Generation 1 VM Service Template for this deployment.
 
-For TP5, the Network Controller Service template scale-in and scale-out is not supported.
+
 
 The previous link also contains three custom resource folders: NCSetup.cr, ServerCertificate.cr, and TrustedRootCertificate.cr folders. Ensure you import these resources into the VMM Library and refresh the library before proceeding further.
 
