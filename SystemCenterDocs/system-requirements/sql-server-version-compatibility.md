@@ -28,6 +28,6 @@ Use this information to evaluate if your SQL Server environment is ready to supp
 |**Operations Manager** Reporting Server|||||&#8226;|&#8226;|&#8226;|&#8226;|
 |**Orchestrator** Management Server|||||&#8226;|&#8226;|&#8226;|&#8226;|
 |**Service Manager** Database or Data Warehouse Database|||||&#8226;|&#8226;|&#8226;|&#8226;|
-|**Service Management Automation** Management Server|||||&#8226;|&#8226;|&#8226;|&#8226;|
+|**Service Management Automation** Web Service|||||&#8226;|&#8226;|&#8226;|&#8226;|
 |**Service Provider Foundation**|||||&#8226;|&#8226;|&#8226;|&#8226;|
 |**Virtual Machine Manager** Database Server|||||&#8226;|&#8226;|&#8226;|&#8226;|

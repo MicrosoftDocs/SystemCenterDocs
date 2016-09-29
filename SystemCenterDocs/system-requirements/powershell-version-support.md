@@ -28,10 +28,12 @@ Use this information to evaluate if your Windows PowerShell environment is ready
 |**Operations Manager** Data Warehouse Server|||&#8226;|&#8226;|
 |**Operations Manager** Gateway Server|||&#8226;|&#8226;|
 |**Operations Manager** Windows Agent|&#8226;|&#8226;|&#8226;|&#8226;|
+|**Service Management Automation** PowerShell Module|||&#8226;|&#8226;|
+|**Service Management Automation** PowerShell ISE Add-on||&#8226;|&#8226;|&#8226;|
+|**Service Management Automation** Runbook Worker|||&#8226;|&#8226;|
 |**Service Manager** Console|||&#8226;|&#8226;|
 |**Service Manager** Management Server|||&#8226;|&#8226;|
 |**Service Manager** Data Warehouse Management Server|||&#8226;|&#8226;|
 |**Service Provider Foundation** API Web Server|||&#8226;|&#8226;|
 |**Virtual Machine Manager** Management Server||||&#8226;|
 |**Virtual Machine Manager** Console|||&#8226;|&#8226;|
-

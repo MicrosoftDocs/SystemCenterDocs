@@ -24,4 +24,3 @@ Use this information to evaluate if your Microsoft SilverLight and Internet Expl
 |**Operations Manager** Web Console||&#8226;||||&#8226;|
 |**Orchestrator** Web Console|&#8226;|&#8226;|&#8226;|&#8226;|&#8226;|&#8226;|
 |**Service Manager Self-Service Portal** Console|&#8226;|&#8226;|&#8226;|&#8226;|&#8226;|&#8226;|
-
