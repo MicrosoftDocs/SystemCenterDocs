@@ -525,17 +525,6 @@ If you used the default instance of SQL Server, use Windows Explorer to drag Mic
 
 **Workaround:** Select OK, close the error dialog box, and retry adding the cluster.
 
-#### Creating a tiered file share in a Storage Spaces Direct configuration will fail
-**Description:** If you attempt to create tiers of storage (one tier for solid state drives and another for hard disk drives) that are managed by VMM using Storage Spaces Direct, you will receive an error.
-
-**Workaround:** Set the Write Cache Size Default to 0 using the command
-Set-StoragePool pool1 -WriteCacheSizeDefault 0
-
-#### SAN migration fails for Nano host
-**Description:** If you attempt to do a SAN migration between two stand-alone Nano Server hosts, you will receive an error.
-
-**Workaround:** Perform a network migration instead of a SAN migration.
-
 #### Shielding a VM may result in an error
 
 **Description:** If you shield an existing non-shielded VM or if you create a shielded VM from a non-shielded template, the job might fail with the error: *Error (1730) The selected action could not be completed because the virtual machine is not in a state in which the action is valid.*
@@ -668,15 +657,15 @@ Get-SCNATConnection
 
 **Workaround:** No workaround
 
+#### SAN migration fails for Nano host
+**Description:** If you attempt to do a SAN migration between two stand-alone Nano Server hosts, you will receive an error.
+
+**Workaround:** Perform a network migration instead of a SAN migration.
+
 #### Adding a host to VMM with Storage Spaces Direct enabled will result in a warning
 **Description:**When hosts are added to a cluster with storage spaces direct enabled, a warning "Multipath I/O is not enabled for known storage arrays on host <\hostname>" is generated.
 
 **Workaround:** None, you can ignore the warning.
-
-#### In Storage Spaces Direct, the Create Volume UI does not support creation of tiered volume with Solid-state drive (SSD) user-interface
-**Description:** If you are creating a storage tier in the Storage Spaces Direct user interface, you will be limited to tiers using Hard Disk Drive (HDD) storage.
-
-**Workaround:** You can create tiered volumes with SSD storage via PowerShell.
 
 #### Deploying Scale out File Server on a Storage Spaces Direct configuration through SCVVM RTM fails
 **Description:** If you deploy Scale out File Server (SoFS) on a Storage Spaces Direct configuration, the following error occurs:
@@ -691,17 +680,25 @@ The user name or password is incorrect (0x8007052E)
 
 **Workaround:** None
 
-#### In VMM UI, cluster validation is always performed during creation of a hyperconverged Storage Spaces Direct enabled cluster
-**Description:**  If you create a hyperconverged Storage Spaces Direct enabled cluster using VMM UI, cluster validation is always performed.
+#### When adding a node to a cluster or creating a hyperconverged cluster using VMM, cluster validation is always performed even when the skip cluster validation option is specified
+**Description:** If you add a node to an existing hyperconverged cluster or create a new cluster using Storage Spaces Direct technology using VMM, cluster validation is always performed.
 
-**Workaround:**  To skip cluster validation when creating a cluster, use VMM PowerShell to create the cluster with the -skipClusterValidation option.
+**Workaround:** To skip cluster validation when adding a node to the cluster or creating a hyperconverged cluster, use VMM PowerShell to add the node with the appropriate skip cluster validation option.
 
-#### When adding a node to a cluster using VMM, cluster validation is always performed even when the skip cluster validation option is specified
-**Description:** If you add a node to an existing hyperconverged cluster using Storage Spaces Direct technology using VMM, cluster validation is always performed.
+####  Classification change on Cluster Shared Volume (CSV) in Hyperconverged cluster does not reflect on all the storage nodes in the cluster
+**Description:** If you change the classification on the  CSV, only the classification of the owner node gets updated. other nodes still has older classification, assigned
 
-**Workaround:** To skip cluster validation when adding a node to the cluster, use Windows PowerShell to add the node with the appropriate skip cluster validation option.
+**Workaround:** user has to go to remaining node and update the classification.
 
-#### When managing Storage Replica using VMM, a critical exception is generated when the read storage provider operation is performed after storage replication is enabled or a failover is performed.
-**Description:** If you perform the read storage provider operation after enabling storage replication OR performing failover, the job will fail with critical exception ‘dictionary key cannot be null’  for the recovery site provider.
+####  Creating tiered file share on SOFS completes with error Error (26668): Error code: 43020 [SM_RC_DEDUP_NOT_AVAILABLE] even if dedup option is not selected
+**Description:** if you create a tiered fileshare on SOFS, on the successful completion of VMM job, job throws an error 43020 [SM_RC_DEDUP_NOT_AVAILABLE] even if dedup option is not selected
 
-**Workaround:** Restart the storage cluster for recovery site provider from failover cluster manager, wait for some time as cluster service may take time to update the objects even after restart. Then, retry the read storage provider operation.
+**Workaround:** you can ignore this error.
+
+####  VMM does not show existing volume, physical disk & tiers,   for an out-of-band Storage Spaces Direct (S2D) Scale Out File Server (SOFS).
+**Description:** After you onboard a out-of-band S2D SOFS into VMM, the SOFS properties like Volume, physical disk and tiers are not available in VMM.
+
+**Workaround:** Refresh the Storage provider
+
+1.	Open the VMM console.
+2.	Click Fabric Resources > Providers. Right-click the provider > Refresh.
