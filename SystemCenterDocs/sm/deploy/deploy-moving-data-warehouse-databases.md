@@ -20,26 +20,16 @@ ms.assetid: 85180b6f-afda-4940-a9f3-3473ad84f30b
 
 The following high\-level steps are required to move the Data Warehouse databases. Each step in this list links to an associated procedure later in this document.  
 
-1.  [Locate user accounts and instances of SQL Server](#locate-user-accounts-and-instances-of-sql-server)  
-
-2.  [Stop Service Manager services](#stop-service-manager-services)  
-
-3.  [Back up the data warehouse databases](#back-up-the-data-warehouse-databases)  
-
-4.  [Take the data warehouse databases offline](#take-the-data-warehouse-databases-offline)  
-
-5.  [Restore the data warehouse databases on the new computer running SQL Server](#restore-the-data-warehouse-databases-on-the-new-computer-running-sql-server)  
-
-6.  [Prepare the data warehouse databases on the new database server](#prepare-the-data-warehouse-databases-on-the-new-database-server)  
-
-7.  [Update data warehouse management Server with the new database server name](update-data-warehouse-management-server-with-the-new-database-server-name)  
-
-8.  [Update the data sources on the reporting server](#update-the-data-sources-on-the-reporting-server)  
-
-9. [Update the data sources for the Analysis Services](#update-the-data-sources-for-the-analysis-services)  
-
-10. [Start Service Manager Services on the data warehouse management server](#start-service-manager-services-on-the-data-warehouse-management-server)  
-
+1. Locate user accounts and instances of SQL Server
+2. Stop Service Manager services
+3. Back up the data warehouse databases
+4. Take the data warehouse databases offline
+5. Restore the data warehouse databases on the new computer running SQL Server
+6. Prepare the data warehouse databases on the new database server
+7. Update data warehouse management Server with the new database server name
+8. Update the data sources on the reporting server
+9. Update the data sources for the Analysis Services
+10. Start Service Manager Services on the data warehouse management server
 > [!IMPORTANT]  
 >  After you move the **DWStagingAndConfig** and **DWRepository** databases, they have to be restored on the same instance of SQL Server. Restoring them on a separate instances of SQL Server is not supported.  
 >   

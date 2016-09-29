@@ -47,7 +47,7 @@ The new Self Service Portal is an ASP.NET MVC Razor\-based HTML5 Web app. During
 |Self\-Service Portal  \+ Secondary Service Manager \(Recommended\*\)|8\-Core 2.66 GHz CPU|8\-Core 2.66 GHz CPU|16 GB|32 GB|80 GB|80 GB|  
 |Self\-Service Portal \(Standalone\)|4\-Core 2.66 GHz CPU|8\-Core 2.66 GHz CPU|8 GB|16 GB|80 GB|80 GB|  
 
- \*The requirements above provide access to 500 users in parallel within an acceptable response time, which includes average read operations with less than 3 seconds and write operations with less than 5 seconds, considering an 80:20 read\-to\-write ratio. For larger deployments, see the  [Deploying a Web Farm](#farm) section below.  
+ \*The requirements above provide access to 500 users in parallel within an acceptable response time, which includes average read operations with less than 3 seconds and write operations with less than 5 seconds, considering an 80:20 read\-to\-write ratio. For larger deployments, see the *Deploying a Web Farm* section below.  
 
 ### Software Requirements  
  Windows Server 2012 R2  
@@ -91,7 +91,7 @@ The new Self Service Portal is an ASP.NET MVC Razor\-based HTML5 Web app. During
 
  Using SSL with network delays between the Portal and the SDK Service, makes this topology slower compared to a single\-server deployment. However, this configuration can help deployment scenarios where a double\-hop can't be avoided.  
 
-###  <a name="farm"></a> Deploying a Web Farm  
+###  Deploying a Web Farm
  One of the key benefits of the new Self Service Portal is that the Web app does not have any local data storage, apart from the it's caching. It reads and writes directly to the Service Manager database. This makes it easier to deploy multiple instances of the Web server, in parallel.  For large deployments, greater than 1,000 users accessing portal in parallel, you can deploy the new Self Service Portal as a [Web Farm](https://technet.microsoft.com/en-us/library/jj129543.aspx) similar to the following configuration.  
 
  ![sm&#45;ssp&#45;scenario&#45;04](../media/deploy-sm-ssp-scenario-04.png)  
@@ -198,7 +198,7 @@ The new Self Service Portal is an ASP.NET MVC Razor\-based HTML5 Web app. During
  Use the following sections to help you troubleshoot deployment issues that might affect you.  
 
 ### Definition Changes \(Announcements\/Request Offerings\/Service Offerings\/Knowledge Articles\) are not Shown  
- The new Self Service Portal uses a caching mechanism to store static data to provide fast response times. The cache timeout is set to 30 minutes by default, which is configurable. For more information, see [Deploy the New Self\-Service Portal](../Topic/Deploy%20the%20New%20Self-Service%20Portal.md) in the Basic Customization section. Any changes to definitions of announcements, request offerings, service offerings, and knowledge articles are not shown until the cache is cleared.  
+ The new Self Service Portal uses a caching mechanism to store static data to provide fast response times. The cache timeout is set to 30 minutes by default, which is configurable. For more information, see [Deploy the New Self\-Service Portal](deploy-deploy-the-self-service-portal-for-service-manager.md) in the Basic Customization section. Any changes to definitions of announcements, request offerings, service offerings, and knowledge articles are not shown until the cache is cleared.  
 
  Memory caching used is based on .NET Framework [MemoryCache](https://msdn.microsoft.com/en-us/library/system.runtime.caching.memorycache\(v=vs.110\).aspx). Cached content remains in memory until the IIS Worker process is terminated. Restarting IIS does not help, because IIS does not remove an old process and then start a new one. Instead, it reuses an existing one. To enforce fresh reading and to remove cache data, identify the IIS Worker process that is associated with the instance and select **End task** before you restart IIS.  
 
@@ -216,7 +216,7 @@ The new Self Service Portal is an ASP.NET MVC Razor\-based HTML5 Web app. During
 
  ![pop&#45;up in Internet Explorer](../media/deploy-sm-ssp-pop-up.png)  
 
- The pop\-up above appears for the App Insights JavaScript SDK, which is integrated in the Self Service Portal to gather telemetry data. You can disable sending telemetry data by changing the value of the EnableTelemetry configuration parameter, which will remove the pop\-up.  For more information, see [Deploy the New Self\-Service Portal](../Topic/Deploy%20the%20New%20Self-Service%20Portal.md) in the Basic Customization section.  
+ The pop\-up above appears for the App Insights JavaScript SDK, which is integrated in the Self Service Portal to gather telemetry data. You can disable sending telemetry data by changing the value of the EnableTelemetry configuration parameter, which will remove the pop\-up.  For more information, see [Deploy the New Self\-Service Portal](deploy-deploy-the-self-service-portal-for-service-manager.md) in the Basic Customization section.  
 
 ### You can access Portal on the computer that hosts IIS, but you can't access it from a remote computer  
  This issue may occur if Portal and SDK Service are located on different computers \(Stand\-Alone Self Service Portal Deployment\). This causes a double hop scenario when you try to access the portal from a remote computer. Therefore, the default portal configuration that is described under "Windows Authentication" won't work. To resolve this issue, use the "Basic Authentication" configuration instead.  
