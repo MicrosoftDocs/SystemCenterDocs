@@ -5,7 +5,7 @@ ms.topic:  article
 author:  rayne-wiselman
 ms.author: raynew
 ms.prod:  system-center-threshold
-redirect_url: /plan/plan-install
+redirect_url: ../plan/plan-install
 keywords:  
 ms.date:  2016-10-12
 title:  How to Connect to a VMM Management Server by Using the VMM Console
