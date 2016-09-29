@@ -95,7 +95,7 @@ This topic describes how to restart the Data Access service if it fails to start
 
 ## Stop and Then Start SSRS  
  After you perform an upgrade to System Center 2016 - Service Manager, use the following procedure to stop and then start SSRS.  
-  s
+
 #### To stop and then start SSRS  
 
 1.  On the computer that hosts SSRS, on the Windows desktop, click **Start**, and then click **Run**.  

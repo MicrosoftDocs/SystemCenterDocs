@@ -37,7 +37,7 @@ Use the following procedure to install a new data warehouse server in the lab en
 7.  On the **Configure data warehouse databases** page, Service Manager checks the computer you are using to see if it can host the data warehouse databases. For this configuration, confirm that the database server is the computer on which you are installing the data warehouse management server, and then click **Next**.  
 
     > [!WARNING]  
-    >  A warning message appears if you are using the default collation \(SQL\_Latin1\_General\_CP1\_CI\_AS\). Support for multiple languages in Service Manager is not possible when you are using the default collation. If later you decide to support multiple languages using a different collation, you have to re\-install SQL Server. See "Microsoft SQL Server 2008 with SP1" in the [Planning for System Center - Service Manager](http://go.microsoft.com/fwlink/?LinkId=232700).  
+    >  A warning message appears if you are using the default collation \(SQL\_Latin1\_General\_CP1\_CI\_AS\). Support for multiple languages in Service Manager is not possible when you are using the default collation. If later you decide to support multiple languages using a different collation, you have to re\-install SQL Server.  
 
 8.  On the **Configure the data warehouse management group** page, follow these steps:  
 

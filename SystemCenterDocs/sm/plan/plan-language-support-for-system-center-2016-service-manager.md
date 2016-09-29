@@ -15,7 +15,7 @@ ms.assetid: 19b6c8b8-324b-43b3-afb6-06648a82df50
 
 # Language Support for System Center 2016 - Service Manager
 
-It is assumed in this guide that you are installing System Center 2016 - Service Manager on a computer where no previous version of Service Manager is installed. For information about upgrading Service Manager, see the [Upgrade Guide for Service Manager 2016 - System Center](../deploy/upgrade-upgrading-system-center-2012-service-manager-to-system-center-2016).  
+It is assumed in this guide that you are installing System Center 2016 - Service Manager on a computer where no previous version of Service Manager is installed. For information about upgrading Service Manager, see the [Upgrade Guide for Service Manager 2016 - System Center](../deploy/upgrade-upgrading-system-center-2012-service-manager-to-system-center-2016.md).  
 
  Including English, System Center 2016 - Service Manager supports a total of 21 languages. There are some search-related issues with six languages: Czech, Danish, Finnish, Greek, Polish, and Turkish. For more information about these issues, see the section "Search Issues" in this topic.  
 
