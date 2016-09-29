@@ -55,10 +55,8 @@ The Authorization Manager hotfix is included with Windows&nbsp;Server&nbsp;2008&
 
 4.  On the **Hotfix Request** page, select the appropriate link based on your operating system, as shown in the following table.  
 
-    |Operating System|Web Page Link|  
-    |----------------------|-------------------|  
-    |Windows Server&nbsp;2008 with SP1|Windows Vista|  
-    |Windows Server 2008 R2|Windows&nbsp;7\/Windows Server 2008 R2|  
+    - Windows Server&nbsp;2008 with SP1 - Windows Vista  
+    - Windows Server 2008 R2 - Windows 7 - Windows Server 2008 R2  
 
 5.  On the **Hotfix Request** page, enter your email address, type the characters in the CAPTCHA image, and then click **Request hotfix**.  
 

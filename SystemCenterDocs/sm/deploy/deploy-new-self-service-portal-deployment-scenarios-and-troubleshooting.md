@@ -41,9 +41,10 @@ The new Self Service Portal is an ASP.NET MVC Razor\-based HTML5 Web app. During
 
 ### Hardware Requirements  
 
-||||||||  
-|-|-|-|-|-|-|-|  
-|System Center 2012 R2 servers|Processor \(min\)|Processor \(rec\)|RAM \(min\)|RAM \(rec\)|Hard drive space \(min\)|Hard drive space \(rec\)|  
+
+
+|Service Manager servers|Processor \(min\)|Processor \(rec\)|RAM \(min\)|RAM \(rec\)|Hard drive space \(min\)|Hard drive space \(rec\)|  
+|---|---|---|---|---|---|---|
 |Self\-Service Portal  \+ Secondary Service Manager \(Recommended\*\)|8\-Core 2.66 GHz CPU|8\-Core 2.66 GHz CPU|16 GB|32 GB|80 GB|80 GB|  
 |Self\-Service Portal \(Standalone\)|4\-Core 2.66 GHz CPU|8\-Core 2.66 GHz CPU|8 GB|16 GB|80 GB|80 GB|  
 
