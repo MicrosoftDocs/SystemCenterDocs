@@ -1,24 +1,25 @@
 ---
 description:  
-manager:  cfreemanwa
+manager:  cfreeman
 ms.topic:  article
 author:  rayne-wiselman
+ms.author: raynew
 ms.prod:  system-center-threshold
 keywords:  
-ms.date:  2016-06-28
+ms.date:  2016-10-12
 title:  Adding an Azure subscription in VMM
 ms.technology:  virtual-machine-manager
 ms.assetid:  6805c8cf-d768-4680-9990-2b8c895f31ec
 ---
 
-# Adding an Azure subscription in VMM
+# Add an Azure subscription in VMM
 
->Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
+>Applies To: System Center 2016 - Virtual Machine Manager
 
-Withthe Add Azure Subscription feature, administrators of Virtual Machine Manager (VMM) can add Microsoft Azure subscriptions to VMM and perform basic actions on Azure instances in those subscriptions. For each Azure subscription you add, you can use a console to see all role instances in all Deployment Groups in that subscription.
+With the Add Azure Subscription feature, administrators of Virtual Machine Manager (VMM) can add Microsoft Azure subscriptions to VMM and perform basic actions on Azure instances in those subscriptions. For each Azure subscription you add, you can use a console to see all role instances in all Deployment Groups in that subscription.
 
 ## What you can do with this feature
-If you already manage your on-premise virtual machines in VMM, you can use this feature to perform some very basic actions on Azure instances without leaving the VMM console. You can:
+If you already manage your on-premises virtual machines in VMM, you can use this feature to perform some very basic actions on Azure instances without leaving the VMM console. You can:
 
 -   Add and Remove one or more Azure subscriptions by using the VMM console.
 
@@ -49,7 +50,7 @@ You cannot:
 
 -   Deploy instances to Azure
 
--   Migrate on-premise virtual machines to Azure
+-   Migrate on-premises virtual machines to Azure
 
 -   Manage Azure Storage
 
@@ -152,6 +153,3 @@ When an individual virtual machine is selected from the list, a set of VM action
 ## See Also
 [Creating and deploying virtual machines in VMM](Creating-and-deploying-virtual-machines-in-VMM.md)
 [Creating Virtual Machine Role Templates by using VMM and Windows Azure Pack](Creating-Virtual-Machine-Role-Templates-by-using-VMM-and-Windows-Azure-Pack.md)
-
-
-
