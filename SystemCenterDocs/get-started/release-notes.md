@@ -352,29 +352,20 @@ System Center Operations Manager management server is not affected.
 ## System Center 2016 - Service Manager Release Notes
 **The following release notes apply to System Center 2016 - Service Manager.**
 
-#### Service Manager might perform slowly with SQL Server 2014 Cardinality Estimation
+#### SQL Server 2014 Cardinality Estimation might affect the performance of Service Manager 2016
 **Description:** If your Service Manager database is running on SQL Server 2014 with the cardinality estimator set to the SQL Server 2014 version you may experience slow performance.
 
 **Workaround:** Switch the Cardinality Estimator (CE) for the SQL Server to use the SQL Server 2012 version. See the following article for more information on changing the Cardinality Estimator: [New functionality in SQL Server 2014 - Part 2 - New Cardinality Estimation](https://blogs.msdn.microsoft.com/saponsqlserver/2014/01/16/new-functionality-in-sql-server-2014-part-2-new-cardinality-estimation/).
 
-#### The Create Exchange Connector Wizard Might Crash
-**Description:** When you run the Create Exchange Connector wizard, the wizard crashes when you click **Test Connection**.
+#### Microsoft Visual C++ 2012 Redistributable is a pre-requisite for installing Service Manager 2016 Authoring Tool
+**Description:** Microsoft Visual C++ 2012 redistributable should be installed before deploying Service Manager 2016 Authoring Tool.
 
-**Workaround:** To work around this issue, avoid clicking **Test Connection** when you run the wizard. Instead, click **Next**, which internally tests the connection and does not crash the wizard.
+**Workaround:** None
 
-If the crash has already occurred, you can restart the wizard and use this workaround.
+#### Browsing domain in AD connector wizard raises error
+**Description:** Error is raised on clicking “Browse” while choosing Domain or OU in AD connector wizard of Service Manager 2016 console.
 
-#### Operations Manager CI Connectors do not Sync Properly
-**Description:** In Service Manager 2016, if you use the Operations Manager CI connector connected to Operations Manager 2016, then the following issues occur:
-1.  Newly created OM CI connectors will not sync properly. However, Operations Manager CI connectors created with previous releases continue to work properly.
-2.  Newly created Distributed Applications and Business Services with Operations Manager do not import.
-
-**Workaround:** See [https://www.microsoft.com/download/details.aspx?id=51955](https://www.microsoft.com/download/details.aspx?id=51955) to work around this problem.
-
-#### Service Manager Setup Stops When Upgrading the Self Service Portal on a Management Server
-**Description:** This problem occurs when you try to conduct an in-place upgrade of the Service Manager 2012 R2 Self Service portal (for both the Silverlight and HTML versions) to the Self Service portal in Service Manager 2016, when the Self Service portal and Management Server are installed on the same server.
-
-**Workaround:** See [Upgrade to Service Manager](../sm/deploy/Upgrade-to-Service-Manager-Technical-Preview.md) for information about deploying the Self Service portal.
+**Workaround:** Install Microsoft Visual C++ 2012 Redistributable on the affected machine.
 
 #### Manual steps to configure remote SQL Server 2014 Reporting Services
 **Description:** During deployment of the Service Manager data warehouse management server, you can specify the server to which Microsoft SQL Server Reporting Services (SSRS) will be deployed. During setup, the computer that is hosting the data warehouse management server is selected by default. If you specify a different computer to host SSRS, you are prompted to follow a procedure in the Deployment Guide to prepare the server. However, if you use SQL Server 2014, you should instead use the following information to prepare the remote computer to host SSRS.
@@ -500,17 +491,16 @@ If you used the default instance of SQL Server, use Windows Explorer to drag Mic
 
 **Workaround:** When you create service requests, avoid modifying or deleting activities that are contained in a request offering template. If necessary, you can create a new request offering template with only the activities that are necessary and configured properly for your intended use.
 
-#### Double-Byte Characters Might Not Display Correctly if a Knowledge Article Is Created from a TXT File
-**Description:** If you create a knowledge article using a TXT file that contains double-byte characters, the characters might not display correctly.
-
-**Workaround:** If this problem affects you, do not use TXT files to create knowledge articles. Instead, use RTF files.
-
 
 #### Configuring the Reporting Server Might Take a Long Time
 **Description:** When you install the data warehouse, validation of the default web server URL might take as long as 25 seconds to complete.
 
 **Workaround:** None.
 
+#### Double-Byte Characters Are Sent Incorrectly to Search Provider
+**Description:** When you perform a knowledge search and you type double-byte characters in the Search Provider box, they are not sent correctly to the search website. Instead, erroneous characters are sent.
+
+**Workaround:** None.
 
 #### Sorting Knowledge Articles by Date Does Not Work
 **Description:** When you try to sort knowledge articles by date, sorting does not work.
@@ -555,7 +545,9 @@ The failure happens at the last step of the job in which the VM is shutdown afte
 **Workaround:** Repair and ignore the job.
 
 #### VMM does not immediately reflect changes to security properties
+
 **Description:** Changing the secure boot properties of a Gen 2 VM or disabling/enabling vTPM for a shielded VM, outside of VMM, does not immediately reflect in VMM.
+
 **Workaround:** Manually refresh the VM in VMM to ensure the changes done outside of VMM are reflected.
 
 #### Storing a VM in VMM Library fails if you change the default port for BITS(443) while configuring the VMM Server
@@ -573,15 +565,45 @@ The system cannot find the file specified (0x80070002)
 
 Recommended Action
 Ensure that you have specified a valid path parameter, and that all necessary files/folders are present. Try the operation again.*
+
 **Workaround:** Create a VM template from scratch using a Nano Server VHD.
 
-#### Service deployments from Service templates will fail if you include "Desktop Experience" & other GUI related features in your service template
-**Description:** Deploying a Service template that has "Desktop Experience" & other GUI related features included will fail as these options are no longer supported in Windows Server.
+#### VMM requires manual steps to be performed to add a Nano Server-based host in an Untrusted domain to VMM
+**Description:** When you try to add a Nano Server-based host in an untrusted domain to VMM, it fails.
 
-**Workaround:** There is no workaround, do not include these features in your service template.
+**Workaround:** Execute the below steps on the Nano Server-based host and then try to add it as an Untrsuted host to VMM:
+
+1.  Enable WINRM over Https on Nano Server-based host:
+
+      New-Item -Path WSMan:\LocalHost\Listener -Transport HTTPS -Address * -CertificateThumbPrint $cert.Thumbprint –Force
+
+2.  Create Firewall exception on Nano Server-based host to allow WINRM over https:
+
+      New-NetFirewallRule -DisplayName 'Windows Remote Management (HTTPS-In)' -Name 'Windows Remote Management (HTTPS-In)' -Profile Any -LocalPort 5986 -Protocol TCP
+
+#### VMM does not support addition of Nano Server-based Perimeter hosts
+
+**Description:** When you try to add a Nano Server-based Perimeter host to VMM using the "Add Resource" Wizard, addition of the perimeter host will fail.
+
+**Workaround:**  Execute the below steps on the host and instead of adding the host as a Perimeter host, add it as a host in an Untrusted domain (Second option in the Add Hyper-V Hosts & Clusters wizard)
+
+1.  Enable WINRM over Https on Nano Server-based host:
+
+      New-Item -Path WSMan:\LocalHost\Listener -Transport HTTPS -Address * -CertificateThumbPrint $cert.Thumbprint –Force
+
+2.  Create Firewall exception on Nano Server-based host to allow WINRM over https:
+
+      New-NetFirewallRule -DisplayName 'Windows Remote Management (HTTPS-In)' -Name 'Windows Remote Management (HTTPS-In)' -Profile Any -LocalPort 5986 -Protocol TCP
+
+
+#### Service deployments from Service templates will fail if you include "Desktop Experience" or other GUI related features in your service template that do not apply to Nano Server/Core based guest OS.
+**Description:** When selecting Roles & Features for a Service Template, the Guest OS Profile (i.e. Windows Server 2016) doesn't differentiate between Core, Nano Server and Desktop. Selecting Roles/Features that do not apply to Core/Nano Server-based Guest OS, will result in failure during deployment.
+
+**Workaround:** There is no workaround, do not include these roles & features in your service template.
 
 #### Servicing a service post an upgrade from VMM 2012 R2 to VMM 2016 will not update the VMM guest agents
 **Description:** When you upgrade your VMM environment from 2012 R2 to 2016 with existing service deployments and then service those services, VMM 2016 guest agents will not get updated on the VMs that were part of the service deployment. There is no functionality impact due to this.
+
 **Workaround:** Manually install the VMM 2016 guest agent.
 
 #### Attempt to join a Nano Server-based VM to a domain while deploying the VM will fail, the VM will get deployed but will not join the domain

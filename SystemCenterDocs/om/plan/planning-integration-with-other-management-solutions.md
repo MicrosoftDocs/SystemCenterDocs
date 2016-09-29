@@ -1,8 +1,9 @@
 ---
 title: Design Integration with other Enterprise Management Products
+description:
 author: mgoedtel
 manager: cfreemanwa
-ms.date: 2016-08-29
+ms.date: 2016-10-12
 ms.custom: na
 ms.prod: system-center-threshold
 ms.technology: operations-manager
@@ -10,6 +11,8 @@ ms.topic: article
 ---
 
 # Integration with other enterprise management products
+
+>Applies To: System Center 2016 - Operations Manager
 
 Many customers have one or more monitoring platforms, where one provides consolidated operational data across business infrastructure, data centers, complex networks and IT domains in the enterprise to correlate and forward to service management solution for incident recording and escalation, as well as analyze and visualize the data presented through different types of dashboards.  System Center 2016 - Operations Manager is included in that service operations framework to forward alert or alert and performance data, or is the primary monitoring platform that is extended to meet the business needs.  
 

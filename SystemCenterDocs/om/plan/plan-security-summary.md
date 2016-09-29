@@ -1,8 +1,9 @@
 ---
 title: Security Design
+description:
 author: mgoedtel
 manager: cfreemanwa
-ms.date: 2016-08-29
+ms.date: 2016-10-12
 ms.custom: na
 ms.prod: system-center-threshold
 ms.technology: operations-manager
@@ -10,6 +11,8 @@ ms.topic: article
 ---
 
 # Security Design
+
+>Applies To: System Center 2016 - Operations Manager
 
 This section provides you with security-related information as it pertains to the planning of security accounts, roles and privileges required for your deployment of System Center 2016 - Operations Manager.
 
@@ -26,3 +29,5 @@ The [Firewall Configuration for Operations Manager](planning-security-configurin
 [Planning Security Credentials for Accessing UNIX and Linux Computers](planning-security-credentials-for-accessing-unix-and-linux-computers.md) describes the security considerations for monitoring UNIX and Linux computers with Operations Manager.
 
 If you are planning on monitoring your .NET web-based applications with Operations Manager Application Performance Monitoring to detect performance or faults, read [User Roles for Application Performance Monitoring](planning-security-user-roles-for-apm.md).
+
+The [Planning Security Authentication and Data Encryption in Operations Manager](planning-security-authentication-data-encryption-in-operations-manager.md) describes how authentication is performed and identifies connection channels where the data is encrypted between all of the server roles and agents in a management group.
