@@ -49,9 +49,9 @@ You can use the following procedures in Service Manager to create a change reque
 
 8.  In the **Select Template** dialog box, click a template, and then click **OK**. For example, click **Changes to messaging infrastructure template**.  
 
-9. In the **Title** box, type a name for the change request. For example, type **Apply Exchange Server 2010 Service Pack 1**. Notice that various values in the form are populated with information from the change request template.  
+9. In the **Title** box, type a name for the change request. For example, type **Apply Exchange Server Service Pack**. Notice that various values in the form are populated with information from the change request template.  
 
-10. In the **Description** and **Reason** fields, type a description and the reason for the change request. For example, type **Apply Exchange Server 2010 Service Pack 1 to these servers** in the **Description** field, and type **The service pack fixes the problem that these servers have** in the **Reason** field.  
+10. In the **Description** and **Reason** fields, type a description and the reason for the change request. For example, type **Apply Exchange Server Service Pack to these servers** in the **Description** field, and type **The service pack fixes the problem that these servers have** in the **Reason** field.  
 
 11. In the **Assigned To** field, enter the name of the person to whom you want to assign the change request. For example, type **Aaron Lee**.  
 
@@ -149,7 +149,7 @@ You can use the following procedures to add a dependent activity to an existing 
 
 4.  Click the **Activities** tab, and then click **Add**. In the **Select Template** dialog box, click **Default Dependent Activity**, and then click **OK**.  
 
-5.  In the **Title** box, type a name that describes the dependent activity. For example, type **Exchange Server 2010 SP1 \- Deploy, Test, and Verify** .  
+5.  In the **Title** box, type a name that describes the dependent activity. For example, type **Exchange Server Update - Deploy, Test, and Verify** .  
 
 6.  In the **Description** box, type a description of the dependent activity. For example, type **Verify that the service pack is deployed, tested, and verified successful**.  
 

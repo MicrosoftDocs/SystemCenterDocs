@@ -174,11 +174,11 @@ The ability to define customized management pack elements was used to model the 
 |ID|Yes|String|Name of the KPI|  
 |Caption|Yes|String|Description of the KPI|  
 |Value|Yes|String|MDX script defining the numeric value of the KPI|  
-|Goal|Yes|String|&#x2715The target value of the KPI|  
-|Green Threshold|Yes|String \(between 0.1 and 1\)|&#x2715Any number that is above or below this threshold, depending on the direction, is marked as green in the status symbol.|  
-|&#x2715Yellow Threshold|Yes|String \(between 0.1 and 1\)|Any number that is above or below the threshold, depending on the direction, but does not meet the green threshold is marked as yellow in the status symbol. A number that does not meet the yellow threshold is marked as red in the status symbol.|  
-|&#x2715Direction|Yes|&#x2715\(Up, Down\)|&#x2715If the direction is up, any numbers above the green or yellow threshold are marked with the corresponding symbol. Similarly for down, numbers below the green or yellow thresholds are marked with the corresponding symbol.|  
-|&#x2715Status Graphic|Yes|&#x2715\(Shapes, TrafficLight, RoadSigns, Gauge, ReversedGauge, Thermometer, Cylinder, Faces, VarianceArrow\)|&#x2715The symbol that will represent the KPI.|  
+|Goal|Yes|String|The target value of the KPI|  
+|Green Threshold|Yes|String \(between 0.1 and 1\)|Any number that is above or below this threshold, depending on the direction, is marked as green in the status symbol.|  
+|Yellow Threshold|Yes|String \(between 0.1 and 1\)|Any number that is above or below the threshold, depending on the direction, but does not meet the green threshold is marked as yellow in the status symbol. A number that does not meet the yellow threshold is marked as red in the status symbol.|  
+|Direction|Yes|\(Up, Down\)|If the direction is up, any numbers above the green or yellow threshold are marked with the corresponding symbol. Similarly for down, numbers below the green or yellow thresholds are marked with the corresponding symbol.|  
+|Status Graphic|Yes|\(Shapes, TrafficLight, RoadSigns, Gauge, ReversedGauge, Thermometer, Cylinder, Faces, VarianceArrow\)|The symbol that will represent the KPI.|  
 
 ## Action  
  Actions are events that you can trigger on an OLAP cube when you are accessing data in the cube. Only drill\-through actions are supported by Service Manager. The following is an example of an action:  
@@ -202,7 +202,7 @@ The ability to define customized management pack elements was used to model the 
 |ID|Yes|String|Name of the drill\-through action|  
 |MeasureGroupName|Yes|String|Targeted measure group of the action|  
 |ActionType|Yes|\(DrillThrough\)|Type of action. Only drill\-through actions are supported by Service Manager.|  
-|CubeDimension|Yes|String|&#x2715The cube dimension that is the target of the action, which must be a slicer on the Measure Group|  
+|CubeDimension|Yes|String|The cube dimension that is the target of the action, which must be a slicer on the Measure Group|  
 |PropertyName|Yes|String|Attribute of the dimension that is displayed when the drill\-through action is executed|  
 
 ## CubeExtension  

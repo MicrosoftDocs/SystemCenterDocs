@@ -33,7 +33,7 @@ You can use the following procedures to edit a change request and then validate 
 
 2.  In the **Work Items** pane, expand **Change Management**, and then click **All Change Requests**.  
 
-3.  Double\-click a change request. For example, double\-click **Apply Exchange Server 2010 Service Pack 1**.  
+3.  Double\-click a change request. For example, double\-click **Apply Exchange Server Service Pack**.  
 
 4.  Make the change that you want. For example, if you want to change the priority to high, select **High** in the **Priority** list. Or, type new text in the **Description** box.  
 
