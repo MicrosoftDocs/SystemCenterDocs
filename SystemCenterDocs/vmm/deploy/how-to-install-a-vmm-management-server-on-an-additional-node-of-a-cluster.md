@@ -4,7 +4,7 @@ manager:  cfreeman
 ms.topic:  article
 author:  rayne-wiselman
 ms.author: rayne
-redirect_url: /plan/plan-install
+redirect_url: ../plan/plan-install
 ms.prod:  system-center-threshold
 keywords:  
 ms.date:  2016-10-12
