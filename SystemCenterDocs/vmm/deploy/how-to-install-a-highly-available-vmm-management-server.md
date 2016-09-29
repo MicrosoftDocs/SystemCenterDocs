@@ -4,7 +4,7 @@ manager:  cfreeman
 ms.topic:  article
 author:  rayne-wiselman
 ms.author: raynew
-redirect_url: /plan/plan-ha-deployment
+redirect_url: ../plan/plan-ha-deployment
 ms.prod:  system-center-threshold
 keywords:  
 ms.date:  2016-10-12
