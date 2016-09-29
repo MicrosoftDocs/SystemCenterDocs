@@ -13,9 +13,9 @@ ms.assetid:  969dde63-c60f-4831-8e52-071cf77b104d
 
 # Deploying System Center 2016 - Service Manager
 
->Applies To: System Center 2016 Technical Preview - Service Manager
+>Applies To: System Center 2016 - Service Manager
 
-This guide helps you deploy System Center 2016 Technical Preview - Service Manager in one of several different scenarios. The scenarios range from a simple, two-computer scenario to a four-computer scenario that is designed to support production-type environments. In addition, this guide shows you how to register a Service Manager management group with the Service Manager data warehouse so that you can generate reports. You have the option of deploying the Self-Service Portal so you can provide access to Service Manager through a web browser. To improve performance and provide for redundancy, you can deploy additional secondary Service Manager management servers.
+This guide helps you deploy System Center 2016 - Service Manager in one of several different scenarios. The scenarios range from a simple, two-computer scenario to a four-computer scenario that is designed to support production-type environments. In addition, this guide shows you how to register a Service Manager management group with the Service Manager data warehouse so that you can generate reports. You have the option of deploying the Self-Service Portal so you can provide access to Service Manager through a web browser. To improve performance and provide for redundancy, you can deploy additional secondary Service Manager management servers.
 
 > [!NOTE]
 > It is assumed in this guide that you are installing Service Manager on a computer where no previous version of Service Manager is installed.

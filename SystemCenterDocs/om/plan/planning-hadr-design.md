@@ -1,8 +1,9 @@
 ---
 title: Designing for High Availability and Disaster Recovery
+description:
 author: mgoedtel
 manager: cfreemanwa
-ms.date: 2016-08-29
+ms.date: 2016-10-12
 ms.custom: na
 ms.prod: system-center-threshold
 ms.technology: operations-manager
@@ -10,6 +11,8 @@ ms.topic: article
 ---
 
 # High Availability and Disaster Recovery
+
+>Applies To: System Center 2016 - Operations Manager
 
 Various System Center 2016 – Operations Manager servers and features can potentially fail, impacting Operations Manager functionality.  The amount of data and functionality lost during a failure is different in each failure scenario. It depends on the role of the failing feature, the length of time it takes to recover the failing feature. 
 
