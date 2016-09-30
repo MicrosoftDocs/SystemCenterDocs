@@ -281,6 +281,11 @@ System Center Operations Manager management server is not affected.
 
 **Workaround:** Install Microsoft Visual C++ 2012 Redistributable on the affected machine.
 
+#### Creating a new Software type configuration item throws the error - "The form could not be submitted for the following reasons: Property Is Virtual Application must be set"
+**Description:** The property “Is Virtual Application" in create Software configuration item form is mandatory, but the asterix (\*) symbol is not shown for this property. Hence on clicking "Ok" or "Apply" button without setting this field throws an error and makes the form unusable.
+
+**Workaround:** Reopen the create Software configuration item form, and fill all the details including the field "Is Virtual Application", before clicking on "Ok" or "Apply" button.
+
 #### Manual steps to configure remote SQL Server 2014 Reporting Services
 **Description:** During deployment of the Service Manager data warehouse management server, you can specify the server to which Microsoft SQL Server Reporting Services (SSRS) will be deployed. During setup, the computer that is hosting the data warehouse management server is selected by default. If you specify a different computer to host SSRS, you are prompted to follow a procedure in the Deployment Guide to prepare the server. However, if you use SQL Server 2014, you should instead use the following information to prepare the remote computer to host SSRS.
 

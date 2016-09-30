@@ -16,7 +16,7 @@ ms.assetid:  d5a0412c-4670-4c92-aad8-d83ebe2f9043
 
 >Applies To: System Center 2016
 
-Use this information to evaluate if your Microsoft .NET Framework is ready to support the installation of or upgrade to System Center 2016. 
+Use this information to evaluate if your Microsoft .NET Framework is ready to support the installation of or upgrade to System Center 2016.
 
 ## .Net compatibility
 
@@ -34,10 +34,10 @@ Use this information to evaluate if your Microsoft .NET Framework is ready to su
 |**Orchestrator** Management Server|&#8226;||||||
 |**Orchestrator** Runbook Server|&#8226;||||||
 |**Orchestrator** Web Service|&#8226;|&#8226;|||||
-|**Service Manager** Management Server|&#8226;||||||
-|**Service Manager** Data Warehouse Management Server|&#8226;||||||
-|**Service Manager** console|&#8226;||||||
-|**Service Manager** Self\-Service Portal \(SharePoint Server and Web Content Server)||&#8226;|&#8226;||||
+|**Service Manager** Management Server|&#8226;| | |&#8226;| | |
+|**Service Manager** Data Warehouse Management Server|&#8226;| | |&#8226;| | |
+|**Service Manager** console|&#8226;| | |&#8226;| | |
+|**Service Manager** Self\-Service Portal|&#8226;| | |&#8226;| | |
 |**Service Provider Foundation** API Web Server|||||&#8226;|&#8226;|
 |**Virtual Machine Manager** Console|||&#8226;|&#8226;|&#8226;|&#8226;|
 |**Virtual Machine Manager** Management Server||||||&#8226;|
