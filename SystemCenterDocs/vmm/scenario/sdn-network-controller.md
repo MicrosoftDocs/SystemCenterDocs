@@ -260,8 +260,7 @@ Select **Microsoft** for the manufacturer and for model select **Microsoft netwo
 7. Configure the host group that your network controller will manage.
 8. Click **Finish** to complete the wizard. When the service has been added to VMM, you should see it appear in the **Network Services** list in the VMM Console, and it should look similar to the following:
 
-![network controller service](../media/sdn-network-controller1.png)
-
+    ![network controller service](../media/sdn-network-controller1.png)
 
 ## Validate the deployment
 
