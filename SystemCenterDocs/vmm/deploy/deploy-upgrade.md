@@ -4,7 +4,7 @@ description: This article helps you to upgrade your existing VMM deployment to S
 author:  rayne-wiselman
 ms.author: raynew
 manager:  cfreemanwa
-ms.date:  2016-09-22
+ms.date:  2016-10-12
 ms.topic:  article
 ms.prod:  system-center-threshold
 ms.technology:  virtual-machine-manager
@@ -24,45 +24,44 @@ This article describes prerequisites for upgrading to System Center 2016 - Virtu
 - Ensure that there are no pending restarts on the computers on which the VMM roles are installed. For example, if you have installed a server role by using Server Manager or have applied a security update, you may need to restart the computer. After you have restarted the computer, sign in to the computer with the same user account to finish the installation of the server role or the security update.
 - If you've deployed VMM with Azure Site Recovery make sure the latest version of the Microsoft Azure Site Recovery Provider is installed on the VMM management server. After the upgrade, you'll need to reinstall the Provider.
 - Perform a full backup of the VMM database.
-- Ensure that the server meets all requirements for VMM.
+- Ensure that the server meets all requirements for VMM, and that prerequisites are in place [Learn more](../plan/plan-install.md)
 - If needed, upgrade SQL Server to a supported version.
-- Install Windows 8.1 Assessment and Deployment Kit (Windows ADK).
-- If the current database is configured with AlwaysOn Availability Groups, complete the following tasks:
-	- If the VMM database is included in the availability group, remove it. You can use the Microsoft SQL Management Studio tool to perform this task.
-	- Initiate a failover to the computer that is running SQL Server and on which the VMM database is installed.
+- If the current database is configured with AlwaysOn availability groups::
+	- If the VMM database is included in the availability group, remove it in SQL Server Management Studio.
+	- Initiate a failover to the computer that is running SQL Server, and on which the VMM database is installed.
+- Make sure your VMM server running System Center 2012 R2 is running update rollup 9 or later.
+- If you're running Operations Manager with VMM, disconnect the connection between VMM and Operations Manager before you begin the upgrade. Enable the connection again after both VMM and Operations Manager are running on System Center 2016.
+-
 
 ## Upgrade a standalone VMM server
 
-1. Before you begin make sure you have at least local admin permissions on the computer on w which you're running the upgrade.
-2. On the current VMM server start setup.
-3. In the main setup page, click **Install**.
-4. On the **Select features to install** page, select the **VMM management server** and then click **Next**. The VMM console will be automatically installed.
-5. On the **Product registration information** page, provide the appropriate information, and then click **Next**. If you do not enter a product key, VMM will be installed as an evaluation version that expires 180 days after installation.
-6. On the **Please read this license agreement** page, review the license agreement, select the **I have read, understood, and agree with the terms of the license agreement** check box, and then click **Next**.
-7. On the **Usage and Connectivity Data** page, select either option, and then click **Next**.
-8. If the **Microsoft Update** page appears, select whether you want to use Microsoft Update, and then click **Next**. If you've already chosen to use Microsoft Update on this computer the page won't appear.
-9. On the **Installation location** page, use the default path or type a different installation path for the VMM program files, and then click **Next**. The computer you're upgrading is checked to ensure prerequisites are in place. If the computer does not meet a prerequisite, a page that contains information about the prerequisite and how to resolve the issue appears.
-10. On the **Database configuration** page:
+1. Uninstall VMM and select to retain the database. Make sure you remove both the VMM management server and the console.
+2. On the current VMM server, upgrade the operating system to Windows Server 2016.
+3. start setup to install VMM 2016. In the main setup page, click **Install**.
+4. In **Select features to install**, select **VMM management server** >  **Next**. The VMM console is automatically installed.
+5. In **Product registration information**, provide the appropriate information > **Next**. If you don't enter a product key, VMM will be installed as an evaluation version that expires 180 days after installation.
+6. In **Please read this license agreement** page, review the license agreement, select the **I have read, understood, and agree with the terms of the license agreement** > **Next**.
+7. In **Usage and Connectivity Data** page, select either option > **Next**.
+8. If **Microsoft Update** appears, select whether you want to use Microsoft Update >  **Next**.
+9. In **Installation location**, use the default path or type a different installation path for the VMM program files, and then click **Next**. The computer you're upgrading is checked to ensure it complies with prerequisites.
+10. In **Database configuration**:
 
-	- If you're using a remote SQL instance specify the name of the computer that is running SQL Server.
-	- If you are installing the VMM management server on the same computer that is running SQL Server, then in the **Server name** box, either type the name of the computer (for example, **vmmserver01**) or type **localhost**. If the SQL Server is in a cluster, type the cluster name.
+	- If you're using a remote SQL Server instance, specify the name of the remote SQL Server computer.
+	- If SQL Server will run on the VMM server, type the VMM server name, or type **localhost**. If the SQL Server is in a cluster, type the cluster name.
 	- Don't specify a **Port** value if you're using local SQL Server, or if your remote SQL Server uses the default port (1443).
-	- Select **Existing Database** and select the database you backed up from your previous installation. Provide credentials with permissions to access the database. When you're prompted to upgrade the database click **Yes**.
-13. On the **Configure service account and distributed key management** page, specify the account that the VMM service will use. You can't change the identity of the VMM service account after installation.
-14. Under **Distributed Key Management**, select whether to store encryption keys in Active Directory. Choose settings careful for the service account and distributed key management. Depending on what you choose encrypted data such as passwords in templates might not be available after the upgrade and you'll need to enter them manually.
-15. On the **Port configuration** page, use the default port number for each feature or provide a unique port number that is appropriate in your environment. You cannot change the ports that you assign during the installation of a VMM management server unless you uninstall and then reinstall the VMM management server. Also, do not configure any feature to use port 5986, because that port number is preassigned.
-16. On the **Library configuration** page, select whether to create a new library share or to use an existing library share on the computer. The default library share that VMM creates is named MSSCVMMLibrary, and the folder is located at **%SYSTEMDRIVE%\ProgramData\Virtual Machine Manager Library Files**. **ProgramData** is a hidden folder, and you cannot remove it. After the VMM management server is installed, you can add library shares and library servers by using the VMM console or by using the VMM command shell.
-17. In **Upgrade compatibility report** page, review settings and click **Next** to proceed with upgrade.
-18. In **Installation Summary** review settings and click **Install** to upgrade the server. **Installing features** page appears and displays the installation progress.
-18. On the **Setup completed successfully** page, click **Close** to finish the installation. To open the VMM console, you can ensure that **Open the VMM console when this wizard closes** is checked, or you can click the **Virtual Machine Manager Console** icon on the desktop.
+	- Select **Existing Database** and select the database you backed up from your previous installation. Provide credentials with permissions to access the database. Click **Yes** to upgrade.
+13. In **Configure service account and distributed key management**, specify the account that the VMM service will use. You can't change the identity of the VMM service account after installation.
+14. Under **Distributed Key Management**, select whether to store encryption keys in Active Directory. Choose settings carefully for the service account and distributed key management. Depending on what you choose encrypted data such as passwords in templates might not be available after the upgrade and you'll need to enter them manually.
+15. In **Port configuration**, use the default port number for each feature or provide a unique port number that is appropriate in your environment. To change the ports that you assign during the VMM installation, you need to uninstall and reinstall the VMM server.  Don't configure port 5986, because it's preassigned.
+16. In **Library configuration**, select whether to create a new library share or to use an existing library share on the computer. The default library share that VMM creates is named MSSCVMMLibrary, and the folder is located at **%SYSTEMDRIVE%\ProgramData\Virtual Machine Manager Library Files**. **ProgramData** is a hidden folder, and you cannot remove it. After the VMM management server is installed, you can add library shares and library servers.
+17. In **Upgrade compatibility report**, review settings > **Next**.
+18. In **Installation Summary**, review settings and click **Install** to upgrade the server. **Installing features** page appears and displays the installation progress.
+18. In  **Setup completed successfully** page, click **Close** to finish the installation. If there's an issue with setup, check the **%SYSTEMDRIVE%\ProgramData\VMMLogs** folder. **ProgramData** is a hidden folder.
 
 During Setup, VMM enables the following firewall rules. These rules remain in effect even if you later uninstall VMM.
 
 - Windows Remote Management
 - Windows Standards-Based Storage Management
-
-> [!NOTE]
-> If Setup does not finish successfully, consult the log files in the **%SYSTEMDRIVE%\ProgramData\VMMLogs** folder. **ProgramData** is a hidden folder.
 
 
 ## Upgrade a high availability deployment
@@ -80,27 +79,27 @@ Here's what you'll need to do:
 		- Recreate the cluster by using its previous name.
 3. Now run VMM setup on each cluster node.
 4. In the main setup page, click **Install**.
-4. On the **Select features to install** page, select the **VMM management server** and then click **Next**. The VMM console will be automatically installed.
-5. On the **Product registration information** page, provide the appropriate information, and then click **Next**. If you do not enter a product key, VMM will be installed as an evaluation version that expires 180 days after installation.
-6. On the **Please read this license agreement** page, review the license agreement, select the **I have read, understood, and agree with the terms of the license agreement** check box, and then click **Next**.
-7. On the **Usage and Connectivity Data** page, select either option, and then click **Next**.
-8. If the **Microsoft Update** page appears, select whether you want to use Microsoft Update, and then click **Next**. If you've already chosen to use Microsoft Update on this computer the page won't appear.
-9. On the **Installation location** page, use the default path or type a different installation path for the VMM program files, and then click **Next**. The computer you're upgrading is checked to ensure prerequisites are in place. If the computer does not meet a prerequisite, a page that contains information about the prerequisite and how to resolve the issue appears.
-10. On the **Database configuration** page:
+4. In **Select features to install**, select the **VMM management server** and then click **Next**. The VMM console will be automatically installed.
+5. In **Product registration information**, provide the appropriate information, and then click **Next**. If you do not enter a product key, VMM will be installed as an evaluation version that expires 180 days after installation.
+6. In **Please read this license agreement**, review the license agreement, select the **I have read, understood, and agree with the terms of the license agreement** check box, and then click **Next**.
+7. In **Usage and Connectivity Data**, select either option, and then click **Next**.
+8. If **Microsoft Update** appears, select whether you want to use Microsoft Update > **Next**. If you've already chosen to use Microsoft Update on this computer the page won't appear.
+9. In **Installation location**, use the default path or type a different installation path for the VMM program files, and then click **Next**. The computer you're upgrading is checked to ensure prerequisites are in place. If the computer does not meet a prerequisite, a page that contains information about the prerequisite and how to resolve the issue appears.
+10. In **Database configuration**:
 
-	- If you're using a remote SQL instance specify the name of the computer that is running SQL Server.
-	- If you are installing the VMM management server on the same computer that is running SQL Server, then in the **Server name** box, either type the name of the computer (for example, **vmmserver01**) or type **localhost**. If the SQL Server is in a cluster, type the cluster name.
+	- If you're using a remote SQL instance specify the SQL Server computer name.
+	- If SQL Server runs on the VMM server, type the name of the VMM server, or type **localhost**. If the SQL Server is in a cluster, type the cluster name.
 	- Don't specify a **Port** value if you're using local SQL Server, or if your remote SQL Server uses the default port (1443).
 	- Select **Existing Database** and select the database you backed up from your previous installation. Provide credentials with permissions to access the database. When you're prompted to upgrade the database click **Yes**.
-13. On the Cluster configuration page type a name for the VMM high availability deployment. Don't use the cluster name or the name of the computer on which you're installing VMM. This name is used when you connect to VMM using the VMM console.
+13. In **Cluster configuration** page type a name for the VMM high availability deployment. Don't use the cluster name or the name of the computer on which you're installing VMM. This name is used when you connect to VMM using the VMM console.
 14. If you are using static IPv4 addresses, specify the IP address to assign to the clustered service name. The clustered service name and its assigned IP address will be registered in DNS. If you are using IPv6 addresses or DHCP, you don't need to do this.
-14. On the **Configure service account and distributed key management** page, specify the account that the VMM service will use. You can't change the identity of the VMM service account after installation.
+14. In **Configure service account and distributed key management**, specify the account that the VMM service will use. You can't change the identity of the VMM service account after installation.
 14. Under **Distributed Key Management**, select whether to store encryption keys in Active Directory. Choose settings careful for the service account and distributed key management. Depending on what you choose encrypted data such as passwords in templates might not be available after the upgrade and you'll need to enter them manually.
-15. On the **Port configuration** page, use the default port number for each feature or provide a unique port number that is appropriate in your environment. You cannot change the ports that you assign during the installation of a VMM management server unless you uninstall and then reinstall the VMM management server. Also, do not configure any feature to use port 5986, because that port number is preassigned.
-16. On the **Library configuration** page, select whether to create a new library share or to use an existing library share on the computer. The default library share that VMM creates is named MSSCVMMLibrary, and the folder is located at **%SYSTEMDRIVE%\ProgramData\Virtual Machine Manager Library Files**. **ProgramData** is a hidden folder, and you cannot remove it. After the VMM management server is installed, you can add library shares and library servers by using the VMM console or by using the VMM command shell.
-17. In **Upgrade compatibility report** page, review settings and click **Next** to proceed with upgrade.
-18. In **Installation Summary** review settings and click **Install** to upgrade the server. **Installing features** page appears and displays the installation progress.
-18. On the **Setup completed successfully** page, click **Close** to finish the installation. To open the VMM console, you can ensure that **Open the VMM console when this wizard closes** is checked, or you can click the **Virtual Machine Manager Console** icon on the desktop.
+15. In **Port configuration**, use the default port number for each feature or provide a unique port number that is appropriate in your environment. You cannot change the ports that you assign during the installation of a VMM management server unless you uninstall and then reinstall the VMM management server. Also, do not configure any feature to use port 5986, because that port number is preassigned.
+16. In **Library configuration**, select whether to create a new library share or to use an existing library share on the computer. The default library share that VMM creates is named MSSCVMMLibrary, and the folder is located at **%SYSTEMDRIVE%\ProgramData\Virtual Machine Manager Library Files**. **ProgramData** is a hidden folder, and you cannot remove it. After the VMM management server is installed, you can add library shares and library servers by using the VMM console or by using the VMM command shell.
+17. In **Upgrade compatibility report**, review settings > **Next** to proceed with upgrade.
+18. In **Installation Summary**, review settings and click **Install** to upgrade the server. **Installing features** page appears and displays the installation progress.
+18. In **Setup completed successfully**, click **Close** to finish the installation. To open the VMM console, you can ensure that **Open the VMM console when this wizard closes** is checked, or you can click the **Virtual Machine Manager Console** icon on the desktop.
 
 ## Post-upgrade tasks
 
@@ -134,13 +133,13 @@ After the upgrade, you need to update the VMM agents on your Hyper-V hosts and i
 
 If you upgraded a database that was configured with AlwaysOn Availability Groups, you need to complete a few tasks to ensure that the upgraded database is properly configured with AlwaysOn Availability Groups.
 
-
-
 1. Add the VMM database to the availability group. You can use Microsoft SQL Server Management Studio to perform this task.
 2. On the secondary node computer in the cluster that is running SQL Server, create new sign-in account. Configure the sign-in name so that it is identical to the VMM service account name. Include user mapping to the VMM database, and configure the database owner credentials.
 3. Initiate a failover to the secondary node computer that is running SQL Server, and verify that you can restart the VMM service (scvmmservice).
 4. Repeat the last two steps for every secondary node in the cluster that is running SQL Server.
 5. If this is a high availability VMM setup, continue to install other high availability VMM nodes.
+
+
 
 
 
