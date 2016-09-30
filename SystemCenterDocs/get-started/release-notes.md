@@ -48,7 +48,7 @@ The following release notes apply to System Center 2016 - Data Protection Manage
 
 **Description:** If you configure Bare Metal Recovery (BMR) protection, the BMR protection job may fail with the message that the replica size is not sufficiently large.
 
-**Workaround:** Change the default replica size for BMR datasources using the following registry key: 
+**Workaround:** Change the default replica size for BMR datasources using the following registry key:
 Registry Path : HKLM\Software\Microsoft\Microsoft Data Protection Manager\Configuration
 ReplicaSizeInGBForSystemProtectionWithBMR (DWORD)
 
@@ -57,10 +57,10 @@ ReplicaSizeInGBForSystemProtectionWithBMR (DWORD)
 
 **Workaround:** If you are protecting DPM DB, please ensure that you enable protection for new DPM DB. Protection for the old DPM DB can be removed once DPM upgrade is validated.
 
-#### Hyper-V RCT - recover as files for D-T backup fails 
+#### Hyper-V RCT - recover as files for D-T backup fails
 **Description:** Recovery of Hyper-V RCT VMs as files created directly on tape (D-T) fails. D-D-T backups will not exhibit this issue.
 
-**Workaround:** Do Alternate Location Recovery as a VM, and then transfer those files to the desired location. 
+**Workaround:** Do Alternate Location Recovery as a VM, and then transfer those files to the desired location.
 
 
 
@@ -531,7 +531,7 @@ Resolve the issue and then try the operation again.*
 
 #### Cluster Rolling Upgrade in VMM does not live migrate VMs that are not Highly Available
 
-**Description:** When you try to do a rolling upgrade of your Windows Server 2012 R2 cluster to Windows Server 2016 using VMM, it does not live migrate the virtual machines which are not high-available and moves them to saved state. 
+**Description:** When you try to do a rolling upgrade of your Windows Server 2012 R2 cluster to Windows Server 2016 using VMM, it does not live migrate the virtual machines which are not high-available and moves them to saved state.
 
 **Workaround:** Before kicking off cluster rolling upgrade, either make all the VMs in the cluster highly available or manually live migrate the non highly available VMs to nodes which are not getting upgraded as part of Cluster Rolling Upgrade
 
@@ -581,12 +581,6 @@ Get-SCNATConnection
 
 **Workaround:** None, you can ignore the warning.
 
-#### Deploying Scale out File Server on a Storage Spaces Direct configuration through SCVVM RTM fails
-**Description:** If you deploy Scale out File Server (SoFS) on a Storage Spaces Direct configuration, the following error occurs:
-Error 25305: "Unable to execute the task because of error: Unable to cast object of type 'System.String' to type 'System.IO.FileInfo' " 
-
-**Workaround:** Deploy the Scale Out File Server using VMM PowerShell with [-SkipClusterValidation] or deploy the same out of band and bring it under VMM management.
-
 #### VM deployment on Scale Out File Server using fast file copy completes with warning
 **Description:** If you deploy a VM on a Scale Out File Server using fast file copy, the action completes successfully with the following warning:
 "VMM could not transfer the file <source location> to <destination location> using fast file copy. The VMM agent on <host> returned an error.
@@ -609,10 +603,11 @@ The user name or password is incorrect (0x8007052E)
 
 **Workaround:** you can ignore this error.
 
-####  VMM does not show existing volume, physical disk & tiers,   for an out-of-band Storage Spaces Direct (S2D) Scale Out File Server (SOFS).
-**Description:** After you onboard a out-of-band S2D SOFS into VMM, the SOFS properties like Volume, physical disk and tiers are not available in VMM.
+####  VMM does not show storage provider and existing volume, physical disk & tiers, for an out-of-band Hyperconverged Cluster (HC) and Storage Spaces Direct (S2D) Scale Out File Server (SOFS).
+**Description:** After you onboard an out-of-band HC or S2D SOFS into VMM, the Storage Provider is not added and SOFS properties like Volume, physical disk and tiers are not available in VMM.
 
-**Workaround:** Refresh the Storage provider
-
+**Workaround:** Add and Refresh the storage provider
 1.	Open the VMM console.
-2.	Click Fabric Resources > Providers. Right-click the provider > Refresh.
+2.	Click Fabric Resources > Storage > Providers.
+		a. Right-click the provider > Add Storage Devices wizard
+		b. Right-click the provider > Rescan
