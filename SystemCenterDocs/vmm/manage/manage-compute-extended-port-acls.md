@@ -50,7 +50,7 @@ Each port ACL consists of a collection of port ACL rules. Each rule contains dif
 * Name
 * Description
 * Type
-  Inbound/Outbound (the direction in which the ACL will be applied)
+  Inbound/Outbound (the direction in which the ACL is applied)
 * Action
   Allow/Deny (the action of the ACL, either to allow the traffic or to block the traffic)
 * SourceAddressPrefix
