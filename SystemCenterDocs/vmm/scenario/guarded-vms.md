@@ -56,7 +56,7 @@ You can enable shielding for a VM currently running on a host in the VMM fabric 
 3.	In **Select Source**, click **Use an existing virtual machine, VM template, or virtual hard disk** > **Browse**.
 4.	You can either select the template disk, or the shielded VM template.
 5.	In **Select Shielding Data File**, click **Browse** > **Import Shielding Data** > **Browse**. Select a shielding data file you create. Click **Import** > **OK** > **Next**.
-6.	Follow [these instructions](manage-vm-template.md) to complete the wizard, and to deploy the VM on a host/cloud.
+6.	Follow [these instructions](../manage/manage-vm-template.md) to complete the wizard, and to deploy the VM on a host/cloud.
 
 When you complete the wizard, VMM creates a new shielded VM from the disk or template:
 
