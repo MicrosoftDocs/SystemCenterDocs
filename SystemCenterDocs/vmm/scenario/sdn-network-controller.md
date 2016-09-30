@@ -133,7 +133,7 @@ You need to deploy a logical switch on the management logical network. The switc
 
 ### Deploy the logical switch
 
- You'll need to deploy the management logical switch on all hosts. [Learn more](manage-networking-hyper-v.md)
+ You'll need to deploy the management logical switch on all hosts. [Learn more](../manage/manage-networking-hyper-v.md)
 
 
 ## Set up certificates
@@ -266,7 +266,7 @@ Select **Microsoft** for the manufacturer and for model select **Microsoft netwo
 
 You can validate the network controller deployment. To do this you'll create a network controller managed **HNV provider** network (the backend network)  and configure two tenant VM networks on top of it. You'll also test connectivity between two tenant VMs deployed on different hosts to ensure the network controller is deployed correctly.
 
-As a quick validation step, you can also try to access the URL **https://<RESTIP-or-FQDN>/networking/v1/servers**. For example: https://10.184.108.56/networking/v1/servers. This URL shows a JSON file with details about the server objects managed by the network controller. If the network controller hasn't onboarded successfully, this URL won't be accessible.
+As a quick validation step, you can also try to access the URL https://<RESTIP-or-FQDN>/networking/v1/servers. For example: https://10.184.108.56/networking/v1/servers. This URL shows a JSON file with details about the server objects managed by the network controller. If the network controller hasn't onboarded successfully, this URL won't be accessible.
 
 ### Create the HNV provider network for tenant VM connectivity
 
@@ -311,4 +311,4 @@ Now you can create tenant virtual machines connected to the tenant virtual netwo
 
 ## Next steps
 
-[Create a software load balancer](manage-sdn-slb.md)
+[Create a software load balancer](sdn-slb.md)
