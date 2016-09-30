@@ -116,9 +116,7 @@ This example uses the generation 2 template.
   - **SelfSignedConfiguration**. Required. If you're using a self-signed certificate, set this value to **True**. If you are using a certificate that has been assigned by an Enterprise CA or external Root CA, set this value to **False**.
 
 6. Click **Deploy Service** to begin the service deployment job. Deployment times will vary depending on your hardware but are typically between 30 and 60 minutes. If gateway deployment fails, delete the failed service instance in **All Hosts** > **Services**.
-
-
-> [!IMPORTANT] If you aren't using a Volume Licensed VHDX (or the product key isn't supplied using an Answer file) then deployment will stop at the **Product Key** page during VM provisioning. You need to manually access the VM desktop, and either enter the key, or skip it.
+7. If you aren't using a Volume Licensed VHDX (or the product key isn't supplied using an Answer file) then deployment will stop at the **Product Key** page during VM provisioning. You need to manually access the VM desktop, and either enter the key, or skip it.
 
 If you want to scale-in or scale-out a deployed SLB instance, read more in this [blog](https://blogs.technet.microsoft.com/scvmm/2011/05/18/scvmm-2012-an-explanation-of-scale-in-and-scale-out-for-a-service/).
 
