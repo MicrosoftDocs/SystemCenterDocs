@@ -55,7 +55,7 @@ Make sure you have the following:
 
 If you have an unguarded host in the VMM fabric, and you want to enable it as guarded, here's what you need to do:
 
-1.	If you’re using TPM-attestation and code integrity policies, place the host in [maintenance mode](manage-compute-host-service.md#put-hosts-in-maintenance-mode)
+1.	If you’re using TPM-attestation and code integrity policies, place the host in [maintenance mode](../manage/manage-compute-host-service.md#put-hosts-in-maintenance-mode)
 2.	In the VMM console, click **Settings** > **Host Guardian Service Settings**.
 3.	Configure the global HSG settings, including the attestation server URL and key protection server URL. Specify a path on which code integrity policies are located (if relevant), and download the shielding helper VHD.
 
@@ -78,8 +78,8 @@ VMM checks that the host passes attestation when you add it, and every time that
 ## Add or provision a new guarded host
 
 1.	Add the host:
-    a.	If you want to add an existing guarded host to the fabric, make sure it can attest properly, before you [add it to the fabric]( manage-compute-add-existing-servers.md).
-    b.	If you want provision a Windows Server (with or without the Hyper-V role) as a guarded Hyper-V host, [add it to the fabric](manage-compute-add-existing-servers.md)
+    a.	If you want to add an existing guarded host to the fabric, make sure it can attest properly, before you [add it to the fabric]( ../manage/manage-compute-add-existing-servers.md).
+    b.	If you want provision a Windows Server (with or without the Hyper-V role) as a guarded Hyper-V host, [add it to the fabric](../manage/manage-compute-add-existing-servers.md)
     c.	If you want to provision a Hyper-V host from a bare-metal computer, [follow these prerequisites and instructions](manage-compute-bare-metal-hyper-v.md). Note that you can deploy the host as guarded when you provision it (Add Resource Wizard > **OS Settings** > **Configure as guarded host**.
 2.	In the VMM console, click **Settings** > **Host Guardian Service Settings**.
 3.	Configure the global HSG settings, including the attestation server URL and key protection server URL. Specify a path on which code integrity policies are located (if relevant), and download the [shielding helper VHD](https://technet.microsoft.com/windows-server-docs/security/guarded-fabric-vm-shielding-helper-vhd).
