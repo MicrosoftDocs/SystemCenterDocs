@@ -32,7 +32,7 @@ It is assumed in this guide that you are performing an upgrade to System Center 
    > 1. Configuration Manager
    > 2. Data Protection Manager
    > 3. Orchestrator
-   > 4. Configuration Manager
+   > 4. Operations Manager
    > 5. Virtual Machine Manager
 
 Before you upgrade to System Center 2016 - Operations Manager, you must first determine whether all servers in your Operations Manager management group meet the minimum supported configurations. For more information, see [System Requirements: System Center 2016 - Operations Manager](../plan/system-requirements.md).
