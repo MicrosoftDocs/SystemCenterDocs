@@ -1,5 +1,5 @@
 ---
-title: Scenario: Deploy guarded hosts and shielded virtual machines in VMM
+title: Scenario-Deploy guarded hosts and shielded virtual machines in VMM
 description: Describes how to set up guarded hosts and provision shielded VMs in the VMM fabric
 author:  rayne-wiselman
 ms.author: raynew
