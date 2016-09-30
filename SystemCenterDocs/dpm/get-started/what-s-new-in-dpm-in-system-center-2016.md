@@ -1,5 +1,5 @@
 ---
-description:  
+description: Descriptions of the new features in DPM 2016, including Modern DPM storage and improvements to Hyper-V protection.  
 manager:  cfreemanwa
 ms.topic:  article
 author:  markgalioto
@@ -78,9 +78,10 @@ To upgrade older VMs to enable RCT:
 2. In Hyper-V Manager, select **Action** > **Upgrade Configuration Version**. If this option isn't available for the virtual machine, then it's already at the highest configuration version supported by the Hyper-V host. For additional information about checking or upgrading the virtual machine configuration version, see the article, [upgrading virtual machine version to Windows Server 2016](https://technet.microsoft.com/windows-server-docs/compute/hyper-v/deploy/upgrade-virtual-machine-version-in-hyper-v-on-windows-or-windows-server.md).
 
     If you want to use Windows PowerShell to upgrade the virtual machine configuration, run the following command where vmname is the name of the virtual machine.
-```
-Update-VMVersion <vmname>
-```
+
+    ```
+    Update-VMVersion <vmname>
+    ```
 
 3. On the DPM 2016 server:
   - Stop protection of the VM and select **Retain Data**.

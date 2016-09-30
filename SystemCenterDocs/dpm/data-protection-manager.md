@@ -1,5 +1,5 @@
 ---
-description:  
+description: DPM overview article that explains the workloads and types of data you can protect with DPM.  
 manager:  cfreemanwa
 ms.topic:  article
 author:  markgalioto
