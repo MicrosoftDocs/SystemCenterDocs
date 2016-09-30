@@ -60,8 +60,9 @@ To set up SDN in the VMM fabric you need the following:
     **NcSetup.cr** | Custom resource file | Library resource contains scripts used to set up the network controller
     **ServerCertificate.cr** | Custom resource file | Library resource containing the private key for the network controller (.pfx)
     **TrustedRootCertificate.cr** | Custom resource file | Library resource containing the certificate public key (.cer), imported as the trusted root certificate to validate the SSL certificate
-    **EdgeDeployment.cr** | Template |
-2
+    **EdgeDeployment.cr** | Template | Used for installing SLB MUX roles and gateway roles (for example, VPN)
+    
+2. Import the templates into the VMM library.
 
 
 ## Set up Active Directory groups
@@ -172,10 +173,10 @@ Example:
 
   1. Open the **Certificates** snap-in (certlm.msc) and locate the certificate in Personal/Certificates.
   2. Select the certificate > **All Tasks** > **Export**. Select to export the private key. Assign a password to protect it. You'll need this password later.
-  2. When exporting, choose **Personal Information Exchange - PKCS #12 (.PFX)** and accept the default to **Include all certificates in the certification path if possible**.
-  3. In addition, export the certificate in .CER format.
-  4. Copy the .PFX to the ServerCertificate.cr folder.
-  5. Copy the .CER file to the NCCertificate.cr folder.
+  3. When exporting, choose **Personal Information Exchange - PKCS #12 (.PFX)** and accept the default to **Include all certificates in the certification path if possible**.
+  4. In addition, export the certificate in .CER format.
+  5. Copy the .PFX to the ServerCertificate.cr folder.
+  6. Copy the .CER file to the NCCertificate.cr folder.
 
 
 
