@@ -34,10 +34,10 @@ Use this information to evaluate if your Microsoft .NET Framework is ready to su
 |**Orchestrator** Management Server|&#8226;||||||
 |**Orchestrator** Runbook Server|&#8226;||||||
 |**Orchestrator** Web Service|&#8226;|&#8226;|||||
-|**Service Manager** Management Server|&#8226;||||||
-|**Service Manager** Data Warehouse Management Server|&#8226;||||||
-|**Service Manager** console|&#8226;||||||
-|**Service Manager** Self\-Service Portal||&#8226;|&#8226;||||
+|**Service Manager** Management Server|&#8226;| | |&#8226;| | |
+|**Service Manager** Data Warehouse Management Server|&#8226;| | |&#8226;| | |
+|**Service Manager** console|&#8226;| | |&#8226;| | |
+|**Service Manager** Self\-Service Portal|&#8226;| | |&#8226;| | |
 |**Service Provider Foundation** API Web Server|||||&#8226;|&#8226;|
 |**Virtual Machine Manager** Console|||&#8226;|&#8226;|&#8226;|&#8226;|
 |**Virtual Machine Manager** Management Server||||||&#8226;|
