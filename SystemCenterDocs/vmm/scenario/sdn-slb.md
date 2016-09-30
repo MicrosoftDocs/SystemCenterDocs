@@ -126,14 +126,14 @@ Now deploy an SLB/MUX service instance.
 3. The **Deploy Service** dialog appears after mapping is complete. It is normal for the virtual machine instances to be initially red. Click **Refresh Preview** to automatically find suitable hosts for the virtual machine.
 4. On the left side of the **Configure Deployment** window, there are a number of settings that you must configure. The table below summarizes each field:
 
-**Setting** | **Requirement** | **Description**
---- |--- |---
-**Transit network** | Required | Your transit VM network
-**LocalAdmin** | Required | Select a Run As account in your environment which will be used as the local Administrator on the virtual machines. The user name should be .\Administrator   
-**Management network** | Required | Choose the management VM network that you created for host management.
-**MgmtDomainAccount** | Required | Select a Run As account with permissions to add the SLB/MUX virtual machines to the Active Directory domain associated with the network controller. This can be the same account you used in MgmtDomainAccount while deploying the network controller.
-**MgmtDomainFQDN** | Required | FQDN for the Active directory domain that the SLB/MUX virtual machines will join.
-**SelfSignedConfiguration** | Required | Specify **True** if the certificate you are using is self-signed
+    **Setting** | **Requirement** | **Description**
+    --- |--- |---
+    **Transit network** | Required | Your transit VM network
+    **LocalAdmin** | Required | Select a Run As account in your environment which will be used as the local Administrator on the virtual    machines. The user name should be .\Administrator   
+    **Management network** | Required | Choose the management VM network that you created for host management.
+    **MgmtDomainAccount** | Required | Select a Run As account with permissions to add the SLB/MUX virtual machines to the Active           Directory domain associated with the network controller. This can be the same account you used in MgmtDomainAccount while deploying     the network controller.
+    **MgmtDomainFQDN** | Required | FQDN for the Active directory domain that the SLB/MUX virtual machines will join.
+    **SelfSignedConfiguration** | Required | Specify **True** if the certificate you are using is self-signed
 
 5. After you configure these settings, click **Deploy Service** to begin the service deployment job. Deployment times will vary depending on your hardware but are typically between 30 and 60 minutes.
 6. If you are not using a Volume Licensed VHDX or if the VHDX is not supplied the Product Key using an Answer file, then the deployment will stop at the Product Key page during SLB/MUX virtual machine(s) provisioning. You need to manually access the VM desktop and either skip entering the product key or enter the product key if you have it handy.
