@@ -2,18 +2,20 @@
 title: Getting Started
 author: mgoedtel
 manager: cfreemanwa
-ms.date: 2016-09-07
+ms.date: 2016-10-12
 ms.custom: na
 ms.prod: system-center-threshold
 ms.technology: operations-manager
 ms.topic: article
 ---
 
-# Getting started topics
+# Getting Started 
 
 >Applies To: System Center 2016 - Operations Manager
 
-Welcome to Microsoft System Center 2016 - Operations Manager.  The following topics provide information to help you get started learning about Operations Manager in order to develop an effective architecture design plan that supports your requirements, a deployment strategy to successfully perform an installation of Operations Manager in your environment, and finally operational guidance so you can successfully use, manage and maintain your deployment. 
+Welcome to Microsoft System Center 2016 - Operations Manager.  The following topics provide information to help you get started learning about Operations Manager in order to develop an effective architecture design plan that supports your requirements, a deployment strategy to successfully perform an installation of Operations Manager in your environment, and finally operational guidance so you can successfully use, manage and maintain your deployment.  
+
+## Getting started topics
 
 To learn what's new in System Center 2016 - Operations Manager, first review [What's New in Operations Manager 2016](Whats-New-in-operations-manager.md)
 
@@ -23,7 +25,7 @@ Before deploying Operations Manager, you first start by understanding the [Plann
 
 Install Operations Manager in a simple or distributed configuration in your environment by following the [Deploying System Center 2016 - Operations Manager](../deploy/deploying-system-center-2016-operations-manager.md) deployment guide.
 
-
+After installing Operations Manager, review the [Operations Manager Operations Guide](../manage/operations-manager-operations-guide.md) to learn how to effectively use, integrate with your existing ITSM processes, and support Operations Manager in your environment.  
 
 
 
