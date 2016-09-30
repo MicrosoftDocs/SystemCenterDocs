@@ -29,6 +29,7 @@ It is assumed in this guide that you are performing an upgrade to System Center 
 > If you are upgrading two or more System Center components, you must follow the procedures that are documented in Upgrade Sequencing for System Center 2012 R2.
 >  
 > The order in which you perform component upgrades is important. Failure to follow the correct upgrade sequence might result in component failure for which no recovery options exist. The affected System Center components are:
+> 
    > 1. Configuration Manager
    > 2. Data Protection Manager
    > 3. Orchestrator
@@ -80,9 +81,9 @@ The following upgrade path supports customers in an Operations Manager scenario 
 
 3. Upgrade the System Center 2012 R2 Operations Manager Agents to 2016.
 
-   a. Push-Install option
+    a. Push-Install option
 
-   b. Manual / Command-line option
+    b. Manual / Command-line option
 
 ## Next steps
 
