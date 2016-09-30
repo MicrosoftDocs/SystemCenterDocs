@@ -258,10 +258,8 @@ Select **Microsoft** for the manufacturer and for model select **Microsoft netwo
 5. In **Review Certificates** a connection is made to the network controller virtual machine to retrieve the certificate. Verify that the certificate shown is the one you expect. Ensure you select **These certificates have been reviewed and can be imported to the trusted certificate storebox**.
 6. On the next screen, click **Scan Provider** to connect to your service and list the properties and their status. This is also a good test of whether or not the service was created correctly, and that you’re using the right connect string to connect to it. Examine the results, and when it completes successfully click **Next**.
 7. Configure the host group that your network controller will manage.
-8. Click **Finish** to complete the wizard. When the service has been added to VMM, you should see it appear in the **Network Services** list in the VMM Console, and it should look similar to the following:
+8. Click **Finish** to complete the wizard. When the service has been added to VMM, it will appear in the **Network Services** list in the VMM console.
     
-    ![network controller service](../media/sdn-network-controller1.png)
- 
 ## Validate the deployment
 
 You can validate the network controller deployment. To do this you'll create a network controller managed **HNV provider** network (the backend network)  and configure two tenant VM networks on top of it. You'll also test connectivity between two tenant VMs deployed on different hosts to ensure the network controller is deployed correctly.
