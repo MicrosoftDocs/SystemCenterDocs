@@ -2,7 +2,7 @@
 title: Install Agent on UNIX and Linux Using the Discovery Wizard
 author: mgoedtel
 manager: cfreemanwa
-ms.date: 2016-09-14
+ms.date: 2016-10-12
 ms.custom: na
 ms.prod: system-center-threshold
 ms.technology: operations-manager
@@ -41,12 +41,14 @@ Before you run the wizard, gather the following information:
 
         b.  For the **Discovery type** select **Discover all computers** or **Discover only computers with the UNIX/Linux agent installed**.
 
-            If you choose to discover only computers with the agent installed, the only credential that you will need to provide is for the agent verification. This can be a low-privileged account on the UNIX or Linux computer.
+           If you choose to discover only computers with the agent installed, the only credential that you will need to provide is for the agent verification. This can be a low-privileged account on the UNIX or Linux computer.
 
-            > [!IMPORTANT]
-            > Discovering only computers with the agent installed requires that the agent is currently installed and configured with a signed certificate.
+           > [!IMPORTANT]
+           > Discovering only computers with the agent installed requires that the agent is currently installed and configured with a signed certificate.
 
         c.  To specify the credentials for installing an agent, click **Set credentials**. For detailed instructions, see “Credentials for Installing Agents” in [Setting Credentials for Accessing UNIX and Linux Computers](how-to-set-credentials-for-accessing-unix-and-linux-computers.md).
+
+        Alternatively, to use default credentials, check the box **Use Run As Credentials**. If this option is selected, a default Run As account must be defined in the **UNIX/Linux Action Account** and **UNIX/Linux Agent Maintenance Account** Run As profiles. The default account is one that is associated with **All Managed Objects**.
 
         d.  Click **Save**.
 
@@ -69,10 +71,9 @@ You must have, at a minimum, a UNIX/Linux Action Account profile configured with
 
 - For more information on how to install the agent and understand the steps for signing the agent certificate, see [Install Agent and Certificate on UNIX and Linux Computers Using the Command Line](Install-Agent-and-Certificate-on-UNIX-and-Linux-Computers-Using-the-Command-Line.md)
 
-- To learn how to configure object discovery rules and disable discovery of a specific object, see [Applying Overrides to Object Discoveries](Applying-Overrides-to-Object-Discoveries.md)
-[Managing Certificates for UNIX and Linux Computers](Managing-Certificates-for-UNIX-and-Linux-Computers.md)
+- To learn how to configure object discovery rules and disable discovery of a specific object, see [Applying Overrides to Object Discoveries](Applying-Overrides-to-Object-Discoveries.md).
 
-- To understand how to perform agent maintenance on UNIX and Linux computers, see [Upgrading and Uninstalling Agents on UNIX and Linux Computers](Upgrading-and-Uninstalling-Agents-on-UNIX-and-Linux-Computers.md)
+- To understand how to perform agent maintenance on UNIX and Linux computers, see [Upgrading and Uninstalling Agents on UNIX and Linux Computers](Upgrading-and-Uninstalling-Agents-on-UNIX-and-Linux-Computers.md).
 
 - Review [Manually Uninstalling Agents from UNIX and Linux Computers](Manually-Uninstalling-Agents-from-UNIX-and-Linux-Computers.md) to understand what options and steps need to be performed to properly uninstall the agent from your UNIX and Linux computers.
 

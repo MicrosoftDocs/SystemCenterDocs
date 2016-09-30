@@ -2,7 +2,7 @@
 title:  Management Pack Assessment
 author: mgoedtel
 manager: cfreemanwa
-ms.date: 2016-08-29
+ms.date: 2016-10-12
 ms.custom: na
 ms.prod: system-center-threshold
 ms.technology: operations-manager
@@ -12,7 +12,6 @@ ms.topic: article
 # Management Pack Assessment
 
 >Applies To: System Center 2016 - Operations Manager
-
 
 Operations Manager includes a new feature called Updates and Recommendations, to help you proactively identify new technologies or components (i.e. workloads) deployed in your IT infrastructure that were not monitored by Operations Manager or are not monitored using the latest version of a management pack.
 

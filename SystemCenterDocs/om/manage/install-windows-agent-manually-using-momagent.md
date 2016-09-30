@@ -3,7 +3,7 @@ title:  Install Windows Agent Manually Using MOMAgent.msi
 description:  
 author: mgoedtel
 manager: cfreemanwa
-ms.date: 2016-08-29
+ms.date: 2016-10-12
 ms.custom: na
 ms.prod: system-center-threshold
 ms.technology: operations-manager
@@ -57,8 +57,8 @@ MOMAgent.msi can be found in the Operations Manager installation media and in th
 
     a. Type the name of the management group in the **Management Group Name** field and the (which server?) server name in the **Management Server** field.
 
-        > [!NOTE]
-        > To use a gateway server, enter the gateway server name in the **Management Server** text box.
+       > [!NOTE]
+       > To use a gateway server, enter the gateway server name in the **Management Server** text box.
 
     b. Type a value for **Management Server Port**, or leave the default of 5723.
 
@@ -170,10 +170,14 @@ msiexec /x path\Directory\MOMAgent.msi /qn %temp%\MOMAgentUpgrade.log
 
 ## Next steps
 
-- To deploy the Windows agent from the Operations console using the Discovery Wizard, review [Install Agent on Windows Using the Discovery Wizard](Install-Agent-on-Windows-Using-the-Discovery-Wizard.md)
-- If you would like to install the Nano Server agent using the Discovery Wizard, from the command line or automate the deployment using a script or other automation solution, review [Install Agent on Nano Server](Install-Agent-on-Nano-Server.md)
-- After manually installing the Operations Manager agent on Windows or UNIX and Linux computers, you need to [Process Manual Agent Installations](Process-Manual-Agent-Installations.md)
-- To understand how to manage the configuration settings of a Windows agent and options available, review [Configuring Agents](Configuring-Agents.md)
+- To deploy the Windows agent from the Operations console using the Discovery Wizard, review [Install Agent on Windows Using the Discovery Wizard](Install-Agent-on-Windows-Using-the-Discovery-Wizard.md).
+
+- If you would like to install the Nano Server agent using the Discovery Wizard, from the command line or automate the deployment using a script or other automation solution, review [Install Agent on Nano Server](Install-Agent-on-Nano-Server.md).
+
+- After manually installing the Operations Manager agent on Windows or UNIX and Linux computers, you need to [Process Manual Agent Installations](Process-Manual-Agent-Installations.md).
+
+- To understand how to manage the configuration settings of a Windows agent and options available, review [Configuring Agents](Configuring-Agents.md).
+
 - Review [Uninstall Agent from Windows-based Computers](Uninstall-Agent-from-Windows-based-Computers.md) to understand what options and steps need to be performed to properly uninstall  the agent from your Windows computers.  
 
 

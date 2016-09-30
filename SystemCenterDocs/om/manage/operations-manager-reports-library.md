@@ -2,7 +2,7 @@
 title: Operations Manager Reports Library
 author: mgoedtel
 manager: cfreemanwa
-ms.date: 2016-09-23
+ms.date: 2016-10-12
 ms.custom: na
 ms.prod: system-center-threshold
 ms.technology: operations-manager
@@ -10,6 +10,8 @@ ms.topic: article
 ---
 
 # Operations Manager Reports Library
+
+>Applies To: System Center 2016 - Operations Manager
 
 System Center 2016 - Operations Manager provides the reports described in the following tables. For more information on a report, in the **Reporting** workspace, click the report and view the **Report Details**. For information on reports that are provided by other management packs, see the respective management pack guides.  
   

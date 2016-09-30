@@ -3,7 +3,7 @@ title: Administering and Configuring the UNIX - Linux Agent
 description:
 author: mgoedtel
 manager: cfreemanwa
-ms.date: 2016-09-22
+ms.date: 2016-10-12
 ms.custom: na
 ms.prod: system-center-threshold
 ms.technology: operations-manager
@@ -15,12 +15,19 @@ ms.topic: article
 This topic describes options to administer and configure the UNIX/Linux agent for System Center 2016 - Operations Manager.  
   
 ## Agent Directories  
-  
--   The UNIX\/Linux agent installs to the directory: `/opt/microsoft/scx/`  
-  
--   The UNIX\/Linux agent maintains log files in the directory: `/var/opt/microsoft/scx/log/`  
-  
--   Agent configuration files, including certificates, are stored in the directory: `/etc/opt/microsoft/scx/`  
+
+-  Open Management Infrastructure (OMI) is installed to the directory: `/opt/omi`
+
+-  The UNIX/Linux agent installs to the directory: `/opt/microsoft/scx/`
+
+-  The UNIX/Linux agent maintains log files in the directory: `/var/opt/microsoft/scx/log/`
+
+-  OMI maintains log files in the directory: `/var/opt/omi/log/`
+
+-  Agent configuration files, including certificates, are stored in the directory: `/etc/opt/microsoft/scx/`
+
+-  OMI configuration files are stored in the directory: `/etc/opt/omi`
+
   
 ## Agent administration tools  
 
@@ -28,21 +35,15 @@ In this section, tools to administer and configure the UNIX\/Linux agent are des
   
 ### Running the agent administration tools  
 
-The tools for configuring the UNIX\/Linux Agent are located in the directory:  
+The tools for configuring the UNIX/Linux Agent are located in the directory:  
   
 ```  
 /opt/microsoft/scx/bin/tools  
-```  
-  
-Prior to running the tools, the file `/opt/microsoft/scx/bin/tools/setup.sh` must be sourced. This can be done with the following command:  
-  
-```  
-. /opt/microsoft/scx/bin/tools/setup.sh  
-```  
+```    
   
 ## Scxadmin  
 
-The **scxadmin** tool is used to control the state of the UNIX\/Linux agent \(start, stop, or restart\) as well as control logging performed by the agent.  The usage of the tool can be displayed with the following command: `scxadmin -?`  
+The **scxadmin** tool is used to control the state of the UNIX/Linux agent (start, stop, or restart) as well as control logging performed by the agent.  The usage of the tool can be displayed with the following command: `scxadmin -?`  
   
 ```  
   
@@ -75,15 +76,15 @@ scxadmin {-log-reset|-log-remove} provider [{FILE:<path>|STDOUT}]
 **Restarting the agent:**  
   
 ```  
-cd /opt/microsoft/scx/bin/tools/  
-./scxadmin -restart  
+cd /opt/microsoft/scx/bin/tools/
+./scxadmin –log-set all intermediate
 ```  
   
 **Increase all logging to the Intermediate level:**  
   
 ```  
-cd /opt/microsoft/scx/bin/tools/  
-./scxadmin -log-set all intermediate  
+cd /opt/microsoft/scx/bin/tools/
+./scxadmin –log-set all intermediate 
 ```  
   
 ## scxsslconfig  
@@ -134,6 +135,10 @@ cd /opt/microsoft/scx/bin/tools/
  
 If required, the SSL cipher list used by the UNIX/Linux agent can be customized. For more information about this configuration, see the [Configuring SSL Ciphers](configuring-ssl-ciphers.md) topic.  
   
+### Specifying an alternate temporary path for scripts
+
+If you create a UNIX/Linux Script rule or monitor in a custom management pack, the script contents will be written to a file in /tmp on the agent computer before being run. You may wish to specify an alternate directory for script execution. To specify an alternate directory, overwrite the symbolic link at: `/etc/opt/microsoft/scx/conf/tmpdir` to point to another directory. The destination of this symbolic link must be writeable by the user account defined in the UNIX/Linux Action Account and/or UNIX/Linux Privileged Account RunAs Profiles. 
+
 ### Universal Linux - Operating System Name/Version  
 
 The Universal Linux Agent, which supports Linux operating systems such as CentOS, Debian GNU\/Linux, Oracle Linux, and Ubuntu Server, parses release files to determine the host's operating system name and version. If required, these properties can be customized. To customize the operating system properties presented to Operations Manager for a Universal Linux Agent host, use the following procedure:  

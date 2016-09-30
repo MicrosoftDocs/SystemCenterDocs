@@ -3,7 +3,7 @@ title:  System Center 2016   Operations Manager Operations Guide
 description:  
 author: mgoedtel
 manager: cfreemanwa
-ms.date: 2016-09-26
+ms.date: 2016-10-12
 ms.custom: na
 ms.prod: system-center-threshold
 ms.technology: operations-manager

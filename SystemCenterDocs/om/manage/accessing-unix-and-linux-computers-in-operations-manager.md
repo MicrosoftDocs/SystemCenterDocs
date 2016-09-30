@@ -3,7 +3,7 @@ title: Accessing UNIX and Linux Computers in Operations Manager
 description:
 author: mgoedtel
 manager: cfreemanwa
-ms.date: 2016-09-22
+ms.date: 2016-10-12
 ms.custom: na
 ms.prod: system-center-threshold
 ms.technology: operations-manager
@@ -54,6 +54,6 @@ In Operations Manager, the system administrator is no longer is required to prov
   
 -   [Administering and Configuring the UNIX - Linux Agent](Administering-and-Configuring-the-UNIX-Linux-Agent.md)  
   
-    Describes options to administer and configure the UNIX\/Linux agent for System Center 2016 - Operations Manager.  
+    Describes options to administer and configure the UNIX/Linux agent for System Center 2016 - Operations Manager.  
   
 

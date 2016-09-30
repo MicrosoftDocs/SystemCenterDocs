@@ -2,7 +2,7 @@
 title: Configuring SSL Ciphers
 author: mgoedtel
 manager: cfreemanwa
-ms.date: 2016-09-23
+ms.date: 2016-10-12
 ms.custom: na
 ms.prod: system-center-threshold
 ms.technology: operations-manager
@@ -29,7 +29,7 @@ If the default SSL cipher configuration contradicts your organization's security
   
 ### Setting the sslCipherSuite configuration option for System Center 2016 
 
-The SSL ciphers for port 1270 are controlled by setting the **sslciphersuite** option in the OMI configuration file, **omiserver.conf**. The **omiserver.conf** file is located in the directory /etc/opt/microsof/scx/conf/.  
+The SSL ciphers for port 1270 are controlled by setting the **sslciphersuite** option in the OMI configuration file, **omiserver.conf**. The **omiserver.conf** file is located in the directory `/etc/opt/omi/conf/`.  
   
 The format for the sslciphersuite option in this file is:  
   
@@ -47,6 +47,24 @@ After setting the **sslCipherSuite** configuration option, you must restart the 
 . setup.sh  
 scxadmin -restart  
 ```  
+
+### Enabling or Disabling the SSLv3 Protocol
+
+Operations Manager communicates with UNIX and Linux agents over HTTPS, using either TLS or SSL encryption. The SSL handshaking process negotiates the strongest encryption that is mutually available on the agent and the management server. You may wish to prohibit SSLv3 so that an agent that cannot negotiate TLS encryption does not fall back to SSLv3. 
+
+For System Center 2016 – Operations Manager, omiserver.conf is located at: 
+`/etc/opt/omi/conf/omiserver.conf`
+
+#### To disable SSLv3
+
+Modify omiserver.conf, set the **NoSSLv3** line to be: 
+`NoSSLv3=true`
+
+#### To enable SSLv3
+
+Modify omiserver.conf, set the **NoSSLv3** line to be: 
+`NoSSLv3=false`
+
   
 ## Next steps
 

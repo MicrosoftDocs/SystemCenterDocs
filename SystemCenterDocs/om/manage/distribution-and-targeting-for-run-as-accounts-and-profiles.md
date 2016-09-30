@@ -3,7 +3,7 @@ title: Distribution and Targeting for Run As Accounts and Profiles
 description:  
 author: mgoedtel
 manager: cfreemanwa
-ms.date: 2016-09-23
+ms.date: 2016-10-12
 ms.custom: na
 ms.prod: system-center-threshold
 ms.technology: operations-manager
