@@ -1,11 +1,11 @@
 ---
-description:  
+description: This article explains the supported deployment options for DPM 2016.
 manager:  cfreemanwa
 ms.topic:  article
 author:  markgalioto
 ms.prod:  system-center-threshold
 keywords:  
-ms.date:  2016-07-14
+ms.date:  2016-10-01
 title:  What's supported and what isn't for DPM
 ms.technology:  data-protection-manager
 ms.assetid:  29d977b5-56de-4bc4-ba0b-2d45d02516a4
@@ -13,9 +13,9 @@ ms.assetid:  29d977b5-56de-4bc4-ba0b-2d45d02516a4
 
 # What's supported and what isn't for DPM?
 
->Applies To: System Center 2016 Technical Preview - Data Protection Manager
+>Applies To: System Center 2016 - Data Protection Manager
 
-This topic summarizes some of the common support information you might need when deploying and maintaining System Center 2016 Technical Preview - Data Protection Manager.
+This topic summarizes some of the common support information you might need when deploying and maintaining System Center 2016 - Data Protection Manager.
 
 
 ## <a name="BKMK_Install"></a>Installation and deployment issues
@@ -23,11 +23,11 @@ This topic summarizes some of the common support information you might need when
 ### DPM deployment options
 **Issue**: DPM can be installed in physical and virtual environments.
 
-**More information**: DPM 2012 can be installed as follows:
+**More information**: DPM 2016 can be installed as follows:
 
 -   As a standalone physical server - DPM can't be deployed in a physical cluster, but you can manage multiple DPM servers from a single location using Central Console in Operations Manager.
 
--   As an on-premises virtual machine - You can deploy DPM as a Hyper-V virtual machine as a single server or virtual machine cluster. You install DPM in the same way as a physical installation. For detailed information, see the row, [DPM installed as Hyper-V VM](./Get-DPM-installed.md#Setup-prerequisites) in the Setup prerequisites table.
+-   As an on-premises virtual machine - You can deploy DPM as a Hyper-V virtual machine as a single server or virtual machine cluster. You install DPM in the same way as a physical installation. For detailed information, see the row, [DPM installed as Hyper-V VM](./Get-DPM-installed.md#Setup-prerequisites.md) in the Setup prerequisites table.
 
 -   As an Azure virtual machine - From DPM 2012 R2 Update 3 onwards you can install DPM as an Azure virtual machine. There are a number of restrictions in this deployment. For detailed information, see the row [DPM as an Azure virtual machine](./get-dpm-installed.md#setup-prerequisites) in the Setup prerequites table.
 
