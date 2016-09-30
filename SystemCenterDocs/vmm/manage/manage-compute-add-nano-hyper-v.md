@@ -10,7 +10,7 @@ ms.prod:  system-center-threshold
 ms.technology:  virtual-machine-manager
 ---
 
-# Add a Nano server as a Hyper-V host or VM in VMM
+# Deploy & Manage Nano server-based Hyper-V hosts or VMs in VMM
 
 >Applies To: System Center 2016 - Virtual Machine Manager
 
@@ -68,6 +68,7 @@ If you forgot to add the SCVMM packages while creating the Nano Server VHD, you 
     - **Find-NanoServerPackage**
     - **Install-NanoServerPackage -Name Microsoft-NanoServer-SCVMM-Package -culture en-US -ToVhd "C:\MyNano.vhd"**
     - **Install-NanoServerPackage -Name Microsoft-NanoServer-SCVMM-Compute-Package -culture en-US -ToVhd "C:\MyNano.vhd"**
+
     Note: C:\MyNano.vhd is the location of the Nano Server based VHD.
 
 ### Install the VMM packages on a running Nano server host
@@ -80,13 +81,13 @@ We recommend offline installation of the VMM packages (when creating the VHD) bu
 
     - **dism /online /Add-package /PackagePath:C:\packages\en-US\Microsoft-NanoServer-SCVMM-Package_en-us.cab**
 
-Note: Ensure that the en-us (Microsoft-NanoServer-SCVMM-Package_en-us.cab) and neutral (Microsoft-NanoServer-SCVMM-Package.cab) .cab files are in the same directory to make sure in installs both.
+    Note: Ensure that the en-us (Microsoft-NanoServer-SCVMM-Package_en-us.cab) and neutral (Microsoft-NanoServer-SCVMM-Package.cab) .cab files are in the same directory to make sure in installs both.
 
 4. To install Microsoft-NanoServer-SCVMM-Compute-Package:
 
     - **dism /online /Add-package /PackagePath:C:\packages\en-US\Microsoft-NanoServer-SCVMM-Compute-Package_en-us.cab**
 
-Note: Ensure that the en-us (Microsoft-NanoServer-SCVMM-Compute-Package_en-us.cab) and neutral (Microsoft-NanoServer-SCVMM-Compute-Package.cab) .cab files are in the same directory to make sure in installs both.
+    Note: Ensure that the en-us (Microsoft-NanoServer-SCVMM-Compute-Package_en-us.cab) and neutral (Microsoft-NanoServer-SCVMM-Compute-Package.cab) .cab files are in the same directory to make sure in installs both.
 
 5. Check that the VMM packages and the associated language packs are installed correctly by running the following command: **dism /online /get-packages**.
 6. You should see "Package Identity : Microsoft-NanoServer-SCVMM-Feature-Package~31bf3856ad364e35~amd64~~ 10.0.14300.1003" listed twice, once for Release Type : Language Pack and once for Release Type : Feature Pack. Same applies for the Microsoft-NanoServer-SCVMM-Compute-Package.
