@@ -5,13 +5,16 @@ ms.topic:  article
 author:  markgalioto
 ms.prod:  system-center-threshold
 keywords:  
-ms.date:  2016-06-30
+ms.date:  2016-10-01
 title:  Back up SharePoint with DPM
 ms.technology:  data-protection-manager
 ms.assetid:  3769bebe-3e5a-4b51-9c01-d07e94fc8c43
 ---
 
 # Back up SharePoint with DPM
+
+>Applies To: System Center 2016 - Data Protection Manager
+
 You can deploy DPM to protect SharePoint farms, external SQL Server databases, and folders that include farm customizations.  This articles describes the steps required to back up and recover SharePoint data. In addition to this article these blog entries provide an in\-depth walkthrough and troubleshooting tips for this scenario:
 
 -   [Configure SharePoint protection in DPM](http://blogs.technet.com/b/dpm/archive/2015/04/27/how-to-configure-sharepoint-protection-in-data-protection-manager-and-troubleshoot-related-issues.aspx)

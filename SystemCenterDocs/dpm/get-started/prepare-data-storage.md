@@ -1,11 +1,11 @@
 ---
-description:  
+description: Information to help you identify your storage needs, and to prepare the storage to support a DPM 2016 deployment.  
 manager:  cfreemanwa
 ms.topic:  article
 author:  markgalioto
 ms.prod:  system-center-threshold
 keywords:  
-ms.date:  2016-06-30
+ms.date:  2016-10-01
 title:  Prepare data storage
 ms.technology:  data-protection-manager
 ms.assetid:  ebe047b4-0737-4ce5-8fe2-d5e0cfd9b852
@@ -13,7 +13,7 @@ ms.assetid:  ebe047b4-0737-4ce5-8fe2-d5e0cfd9b852
 
 # Prepare data storage
 
->Applies To: System Center 2016 Technical Preview - Data Protection Manager
+>Applies To: System Center 2016 - Data Protection Manager
 
 A major part of your DPM deployment will be figuring out how to store data backed up by DPM. Learn about:
 

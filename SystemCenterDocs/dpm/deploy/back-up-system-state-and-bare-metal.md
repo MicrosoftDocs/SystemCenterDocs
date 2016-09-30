@@ -5,7 +5,7 @@ ms.topic:  article
 author:  markgalioto
 ms.prod:  system-center-threshold
 keywords:  
-ms.date:  2016-06-30
+ms.date:  2016-10-01
 title:  Back up system state and bare metal
 ms.technology:  data-protection-manager
 ms.assetid:  7035095c-6d30-40aa-ae73-4159e305d7ea
@@ -13,7 +13,7 @@ ms.assetid:  7035095c-6d30-40aa-ae73-4159e305d7ea
 
 # Back up system state and bare metal
 
->Applies To: System Center 2016 Technical Preview - Data Protection Manager
+>Applies To: System Center 2016 - Data Protection Manager
 
 DPM can back up system state and provide bare metal recovery (BMR) protection.
 

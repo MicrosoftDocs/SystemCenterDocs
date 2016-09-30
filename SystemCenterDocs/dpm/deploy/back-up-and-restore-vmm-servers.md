@@ -5,7 +5,7 @@ ms.topic:  article
 author:  markgalioto
 ms.prod:  system-center-threshold
 keywords:  
-ms.date:  2016-08-26
+ms.date:  2016-10-01
 title:  Back up and restore VMM servers
 ms.technology:  data-protection-manager
 ms.assetid:  e9ed546c-b12b-4a2c-9668-3dc23963114e
@@ -13,7 +13,7 @@ ms.assetid:  e9ed546c-b12b-4a2c-9668-3dc23963114e
 
 # Back up and restore VMM servers
 
->Applies To: System Center 2016 Technical Preview - Data Protection Manager
+>Applies To: System Center 2016 - Data Protection Manager
 
 DPM can back up the SQL Server instances that's being used as the System Center VMM database in a couple of ways:
 

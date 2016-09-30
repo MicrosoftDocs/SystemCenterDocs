@@ -5,7 +5,7 @@ ms.topic:  article
 author:  markgalioto
 ms.prod:  system-center-threshold
 keywords:  
-ms.date:  2016-09-26
+ms.date:  2016-10-01
 title:  What's new in DPM in System Center 2016
 ms.technology:  data-protection-manager
 ms.assetid:  a5e81bf0-43a6-4099-af2e-dfb0c1aa7ed8
