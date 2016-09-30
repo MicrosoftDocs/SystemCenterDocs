@@ -1,11 +1,12 @@
 ---
-description:  
+description:  This topic provides links to System Center 2016 - Orchestrator technical documentation.
 manager:  cfreemanwa
 ms.topic:  article
-author:  bwren
+author:  cfreemanwa
 ms.prod:  system-center-threshold
 keywords:  
-ms.date:  2016-08-18
+ms.date:  2016-10-12
+ms.author: cfreeman
 title:  Orchestrator
 ms.technology:  orchestrator
 ms.assetid:  e8e3cf0f-0982-4603-8a3f-18803acae43a
@@ -20,10 +21,14 @@ Welcome to System Center 2016 - Orchestrator. Orchestrator is a workflow managem
 The following topics provide information to help you get started with System Center 2016 - Orchestrator.
 
 ## Getting started with Orchestrator
-[Orchestrator Capabilities](get-started/Orchestrator-Capabilities.md)
+[Orchestrator Capabilities](get-started/get-started-with-orchestrator.md)
 
 You can  read this topics to get an overview if you are new to Orchestrator.
 
-[Install Orchestrator](Deploy/Install-Orchestrator.md)
+[Install Orchestrator](deploy/Install-Orchestrator.md)
 
 Topics in this section describe how to setup Orchestrator.
+
+[Manage Orchestrator](/manage/administering-orchestrator.md)
+
+Topics in this section provide how to instructions for accomplishing tasks using Orchestrator.
