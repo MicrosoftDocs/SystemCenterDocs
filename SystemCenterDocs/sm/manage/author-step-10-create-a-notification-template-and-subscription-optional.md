@@ -1,5 +1,5 @@
 ---
-title: Step 10: Create a Notification Template and Subscription (Optional)
+title: Step 10 - Create a Notification Template and Subscription (Optional)
 manager: cfreeman
 ms.custom: na
 ms.prod: system-center-2016
@@ -14,7 +14,7 @@ ms.topic: article
 ms.assetid: edc8f5eb-6b39-42d0-b572-2b12164afdf9
 ---
 
-# Step 10: Create a Notification Template and Subscription (Optional)
+# Step 10 - Create a Notification Template and Subscription (Optional)
 
 >Applies To: System Center 2016 - Service Manager
 

@@ -1,5 +1,5 @@
 ---
-title: Step 9: Create a New Change Request Template
+title: Step 9 - Create a New Change Request Template
 manager: cfreeman
 ms.custom: na
 ms.prod: system-center-2016
@@ -14,7 +14,7 @@ ms.topic: article
 ms.assetid: 280de374-7d73-4dbb-95f5-1ed407a9ed88
 ---
 
-# Step 9: Create a New Change Request Template
+# Step 9 - Create a New Change Request Template
 
 >Applies To: System Center 2016 - Service Manager
 

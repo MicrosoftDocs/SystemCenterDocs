@@ -1,5 +1,5 @@
 ---
-title: Step 7: Create a New Task
+title: Step 7 - Create a New Task
 manager: cfreeman
 ms.custom: na
 ms.prod: system-center-2016
@@ -14,7 +14,7 @@ ms.topic: article
 ms.assetid: 648500e3-5142-45a8-ae33-c07daff2347a
 ---
 
-# Step 7: Create a New Task
+# Step 7 - Create a New Task
 
 >Applies To: System Center 2016 - Service Manager
 

@@ -1,5 +1,5 @@
 ---
-title: Step 11: Use the New Compliance Change Request Process
+title: Step 11 - Use the New Compliance Change Request Process
 manager: cfreeman
 ms.custom: na
 ms.prod: system-center-2016
@@ -14,7 +14,7 @@ ms.topic: article
 ms.assetid: 09ee5ec3-4d9f-4b5f-b4c4-4a63f52cf794
 ---
 
-# Step 11: Use the New Compliance Change Request Process
+# Step 11 - Use the New Compliance Change Request Process
 
 >Applies To: System Center 2016 - Service Manager
 

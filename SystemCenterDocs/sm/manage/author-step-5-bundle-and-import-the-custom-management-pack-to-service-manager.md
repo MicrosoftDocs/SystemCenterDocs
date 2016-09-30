@@ -1,5 +1,5 @@
 ---
-title: Step 5: Bundle and Import the Custom Management Pack to Service Manager
+title: Step 5 - Bundle and Import the Custom Management Pack to Service Manager
 manager: cfreeman
 ms.custom: na
 ms.prod: system-center-2016
@@ -14,7 +14,7 @@ ms.topic: article
 ms.assetid: e8388927-d818-4dbf-8351-5a1034913604
 ---
 
-# Step 5: Bundle and Import the Custom Management Pack to Service Manager
+# Step 5 - Bundle and Import the Custom Management Pack to Service Manager
 
 >Applies To: System Center 2016 - Service Manager
 

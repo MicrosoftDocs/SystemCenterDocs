@@ -1,5 +1,5 @@
 ---
-title: Forms: Customizing and Authoring
+title: Forms - Customizing and Authoring
 manager: cfreeman
 ms.custom: na
 ms.prod: system-center-2016
@@ -14,7 +14,7 @@ ms.topic: article
 ms.assetid: dd99e994-e34d-469e-aea0-5c3547eeab66
 ---
 
-# Forms: Customizing and Authoring
+# Forms - Customizing and Authoring
 
 >Applies To: System Center 2016 - Service Manager
 

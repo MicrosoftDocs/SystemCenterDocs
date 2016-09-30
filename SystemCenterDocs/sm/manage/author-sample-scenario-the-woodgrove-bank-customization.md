@@ -38,5 +38,3 @@ To provide real\-world context to the step\-by\-step procedures for the Service 
 
 ## Using the Customized Process  
  Eventually, after Ken imports the custom management pack into Service Manager and completes the creation of all the necessary custom objects, he can use the new process for compliance change requests. He creates a new compliance change request to add the ADComputer1 computer to the GP\_AUTHAPPS AD DS group. He can then monitor the process to confirm that the new computer is successfully added to the group.  
-
-## Woodgrove Bank Customization Scenario Topics  

@@ -75,7 +75,7 @@ The Activity Library in Service Manager Authoring Tool provides a number of work
 |---------------------------|-----------------|  
 |Delay|Use this activity to introduce a delay between activities in a workflow.|  
 |For Each Loop|Use this activity to repeat a certain set of activities for a defined number of iterations.|  
-|IfElse|Use this activity to control the sequence of activities within a workflow based on a Boolean \(True\/False\) condition. You can use the outcome of a previous activity \(such as a script activity\) for the condition.|  
+|IfElse|Use this activity to control the sequence of activities within a workflow based on a Boolean (True/False) condition. You can use the outcome of a previous activity \(such as a script activity\) for the condition.|  
 |Parallel|Use this activity to fork the sequence of activities into two simultaneous sequences of activities.|  
 
 |Virtual Machine Management activity|Description|  

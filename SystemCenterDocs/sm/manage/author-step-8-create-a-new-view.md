@@ -1,5 +1,5 @@
 ---
-title: Step 8: Create a New View
+title: Step 8 - Create a New View
 manager: cfreeman
 ms.custom: na
 ms.prod: system-center-2016
@@ -14,7 +14,7 @@ ms.topic: article
 ms.assetid: 67929ae2-57a4-4810-a34a-ab73d66287c5
 ---
 
-# Step 8: Create a New View
+# Step 8 - Create a New View
 
 >Applies To: System Center 2016 - Service Manager
 

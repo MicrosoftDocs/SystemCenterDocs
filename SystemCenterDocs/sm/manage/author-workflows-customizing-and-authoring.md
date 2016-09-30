@@ -1,5 +1,5 @@
 ---
-title: Workflows: Customizing and Authoring
+title: Workflows - Customizing and Authoring
 manager: cfreeman
 ms.custom: na
 ms.prod: system-center-2016
@@ -14,7 +14,7 @@ ms.topic: article
 ms.assetid: 6aa35c62-a4c3-4ece-b7a1-78b38e3592b4
 ---
 
-# Workflows: Customizing and Authoring
+# Workflows - Customizing and Authoring
 
 >Applies To: System Center 2016 - Service Manager
 

@@ -1,5 +1,5 @@
 ---
-title: Management Packs: Working with Management Packs
+title: Management Packs - Working with Management Packs
 manager: cfreeman
 ms.custom: na
 ms.prod: system-center-2016
@@ -14,7 +14,7 @@ ms.topic: article
 ms.assetid: 8cbaa369-8881-46f6-9615-e9cbab638d5c
 ---
 
-# Management Packs: Working with Management Packs
+# Management Packs - Working with Management Packs
 
 >Applies To: System Center 2016 - Service Manager
 

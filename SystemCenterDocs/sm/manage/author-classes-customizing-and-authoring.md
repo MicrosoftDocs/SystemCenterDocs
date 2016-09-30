@@ -1,5 +1,5 @@
 ---
-title: Classes: Customizing and Authoring
+title: Classes - Customizing and Authoring
 manager: cfreeman
 ms.custom: na
 ms.prod: system-center-2016
@@ -14,7 +14,7 @@ ms.topic: article
 ms.assetid: 1d7437cd-2451-417e-b415-735bdca051b8
 ---
 
-# Classes: Customizing and Authoring
+# Classes - Customizing and Authoring
 
 >Applies To: System Center 2016 - Service Manager
 

@@ -1,5 +1,5 @@
 ---
-title: Step 6: Extend the Change Area Enumeration List
+title: Step 6 - Extend the Change Area Enumeration List
 manager: cfreeman
 ms.custom: na
 ms.prod: system-center-2016
@@ -14,7 +14,7 @@ ms.topic: article
 ms.assetid: c9b9d9d5-0104-4c28-9753-23da695dcde9
 ---
 
-# Step 6: Extend the Change Area Enumeration List
+# Step 6 - Extend the Change Area Enumeration List
 
 >Applies To: System Center 2016 - Service Manager
 

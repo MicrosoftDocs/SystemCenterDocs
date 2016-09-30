@@ -1,5 +1,5 @@
 ---
-title: Step 1: Open the Woodgrove.AutomatedActivity.AddComputerToADGroupMP Management Pack
+title: Step 1 - Open the Woodgrove.AutomatedActivity.AddComputerToADGroupMP Management Pack
 manager: cfreeman
 ms.custom: na
 ms.prod: system-center-2016
@@ -14,7 +14,7 @@ ms.topic: article
 ms.assetid: 9b107f28-932b-4dce-85b6-b5b6bb083f7e
 ---
 
-# Step 1: Open the Woodgrove.AutomatedActivity.AddComputerToADGroupMP Management Pack
+# Step 1 - Open the Woodgrove.AutomatedActivity.AddComputerToADGroupMP Management Pack
 
 >Applies To: System Center 2016 - Service Manager
 

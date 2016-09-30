@@ -1,5 +1,5 @@
 ---
-title: Step 4: Move the Assembly Files to the Service Manager Console
+title: Step 4 - Move the Assembly Files to the Service Manager Console
 manager: cfreeman
 ms.custom: na
 ms.prod: system-center-2016
@@ -14,7 +14,7 @@ ms.topic: article
 ms.assetid: 96894b7a-6317-4de3-bc0c-7f06280b6a90
 ---
 
-# Step 4: Move the Assembly Files to the Service Manager Console
+# Step 4 - Move the Assembly Files to the Service Manager Console
 
 >Applies To: System Center 2016 - Service Manager
 

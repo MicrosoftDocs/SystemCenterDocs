@@ -1,5 +1,5 @@
 ---
-title: Step 3: Create the WF Workflow
+title: Step 3 - Create the WF Workflow
 manager: cfreeman
 ms.custom: na
 ms.prod: system-center-2016
@@ -14,7 +14,7 @@ ms.topic: article
 ms.assetid: e1428abc-8b07-4a4e-8dc1-5f49d3eef021
 ---
 
-# Step 3: Create the WF Workflow
+# Step 3 - Create the WF Workflow
 
 >Applies To: System Center 2016 - Service Manager
 

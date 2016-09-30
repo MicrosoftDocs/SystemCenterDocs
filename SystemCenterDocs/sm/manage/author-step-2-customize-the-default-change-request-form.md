@@ -1,5 +1,5 @@
 ---
-title: Step 2: Customize the Default Change Request Form
+title: Step 2 - Customize the Default Change Request Form
 manager: cfreeman
 ms.custom: na
 ms.prod: system-center-2016
@@ -14,7 +14,7 @@ ms.topic: article
 ms.assetid: d746f1c0-8746-426b-8422-fc25fb844ceb
 ---
 
-# Step 2: Customize the Default Change Request Form
+# Step 2 - Customize the Default Change Request Form
 
 >Applies To: System Center 2016 - Service Manager
 
