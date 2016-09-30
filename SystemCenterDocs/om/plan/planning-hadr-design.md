@@ -41,7 +41,7 @@ Understanding the impact and tolerance for downtime will help drive the decision
 The two most common disaster recovery design configurations for Operations Manager are:
 
 - Creating a duplicate management group deployed to your secondary data center that duplicates  in scale and configuration, the primary management group. 
-- Deploying additional servers in a secondary data center to support the Operational and Data Warehouse database, with management servers deployed in a cold-standby configuration as to not participate in the management group until recovery actions need to be performed.
+- Deploying additional servers in a secondary data center to support the Operational and Data Warehouse database, with management servers deployed in a cold-standby configuration, not participating in the management group until recovery actions need to be performed.
 
 Deploying a duplicate management group is an option when there is no tolerance for downtime; however, it is the most complex option.  Configuration between both needs to be consistent so that when you cut over, there is no difference in what is monitored, alerted or reported, presented, and finally escalated.  Integration with other monitoring platforms or ITSM platforms such as System Center 2016 - Service Manager, Remedy or ServiceNow will need to exist as well, and possibly configured in an active/passive state to avoid duplication of incidents, configuration items, etc.  Agents will be multihomed between both management groups, so there will be duplication of data.    
 
