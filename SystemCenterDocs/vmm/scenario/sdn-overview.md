@@ -36,6 +36,6 @@ SDN combines a number of technologies, among them:
 
 ## Next steps
 
-- [Set up a network controller](manage-sdn-network-controller.md)
-- [Set up a software load balancer](manage-sdn-slb.md)
-- [Set up a RAS gateway](manage-sdn-gateway.md)
+- [Set up a network controller](sdn-network-controller.md)
+- [Set up a software load balancer](sdn-slb.md)
+- [Set up a RAS gateway](sdn-gateway.md)
