@@ -133,7 +133,7 @@ You need to deploy a logical switch on the management logical network. The switc
 
 ### Deploy the logical switch
 
- You'll need to deploy the management logical switch on all hosts. [Learn more](../manage/manage-networking-hyper-v.md)
+ You'll need to deploy the management logical switch on all hosts. [Learn more](../manage/manage-compute-add-networking-hyper-v.md)
 
 
 ## Set up certificates
