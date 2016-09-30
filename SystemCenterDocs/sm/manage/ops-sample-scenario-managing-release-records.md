@@ -1,5 +1,5 @@
 ---
-title: Sample Scenario: Managing Release Records
+title: Sample Scenario - Managing Release Records
 manager: cfreeman
 ms.custom: na
 ms.prod: system-center-2016
@@ -14,7 +14,7 @@ ms.topic: article
 ms.assetid: 43437f6d-13f8-40f9-af74-3022d5e6914f
 ---
 
-# Sample Scenario: Managing Release Records
+# Sample Scenario - Managing Release Records
 
 >Applies To: System Center 2016 - Service Manager
 

@@ -1,5 +1,5 @@
 ---
-title: Sample Scenarios: Managing Incidents and Problems
+title: Sample Scenarios - Managing Incidents and Problems
 manager: cfreeman
 ms.custom: na
 ms.prod: system-center-2016
@@ -14,7 +14,8 @@ ms.topic: article
 ms.assetid: 094a22c8-b315-4bc6-872f-60efe5e8f961
 ---
 
-# Sample Scenarios: Managing Incidents and Problems
+
+# Sample Scenarios - Managing Incidents and Problems
 
 >Applies To: System Center 2016 - Service Manager
 
