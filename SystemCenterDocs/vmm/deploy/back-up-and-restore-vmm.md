@@ -202,18 +202,6 @@ Use the following guidelines to restore registry keys, Active Directory objects,
 ## Post-restore tasks
 Depending on your VMM configuration, you might need to do some of the following tasks after you restore your VMM environment:
 
--   [Configure AlwaysOn Availability Groups](Back-up-and-restore-VMM.md#BKMK_post_AlwaysOn)
-
--   [Reinstall Windows Azure Pack](Back-up-and-restore-VMM.md#BKMK_post_WAP)
-
--   [Install additional VMM consoles](Back-up-and-restore-VMM.md#BKMK_Additional)
-
--   [Update virtual machine templates](Back-up-and-restore-VMM.md#BKMK_Templates)
-
--   [Restore Windows Azure Hyper-V Recovery Manager](Back-up-and-restore-VMM.md#BKMK_post_RM)
-
--   [Review add-ins, driver packages, and certificates](Back-up-and-restore-VMM.md#BKMK_post_misc)
-
 ## Configure AlwaysOn Availability Groups
 
 If the VMM database was configured by using SQL Server AlwaysOn Availability Groups, you must complete a few tasks to ensure that the database is correctly configured with Availability Groups.
@@ -246,7 +234,7 @@ After you restore VMM, review the following items to ensure that you have taken 
 
 -   **Non-Microsoft user interface add-ins**: To restore any non-Microsoft user interface add-ins or any other non-Microsoft party applications, consult the respective application"s restore guidelines.
 
--   **Driver packages**: Driver packages that were previously added to the VMM library might not be discovered correctly after a restore. They might have to be removed and be re-added. For more information, see [How to add driver files to the VMM library](How-to-add-driver-files-to-the-VMM-library.md).
+-   **Driver packages**: Driver packages that were previously added to the VMM library might not be discovered correctly after a restore. They might have to be removed and be re-added.
 
 -   **Certificates**: Any VMM-related certificates on hosts must be updated with the information of the new VMM management server.
 
