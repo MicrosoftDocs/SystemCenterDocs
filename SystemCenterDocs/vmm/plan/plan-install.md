@@ -30,7 +30,7 @@ This table summarizes what you'll need for VMM 2016 installation.
 **VMM library** | Windows Server 2012 onwards | Required operating systems if you're installing the library on a remote server
 **Virtualization hosts** | Windows Server 2012 onwards | Nano is supported in Windows Server 2016
 **Guest operating system** | Windows operating systems [supported by Hyper-V](https://technet.microsoft.com/windows-server-docs/compute/hyper-v/supported-windows-guest-operating-systems-for-hyper-v-on-windows)<br/><br/> Linux (CentOS, RHEL, Debian, Oracle Linux, SUSE, Ubuntu)
-**PowerShell**: PowerShell 4.0<br/><br/> PowerShell 5.0 |
+**PowerShell** | PowerShell 4.0<br/><br/> PowerShell 5.0 | Used to set up, configure, and manage VMM.
 **.NET** | 4.5, 4.5.1, 4.5.2, 4.6 | Required for VMM console
 **.NET** | 4.5.1, 4.5.2, 4.6 | Required for VMM management server
 **Host agent** | VMM 2016 | Needed for hosts managed in the VMM compute Fabric
@@ -89,12 +89,6 @@ This table summarizes what you'll need for VMM 2016 installation.
 		2. Grant db_owner permissions for the database to the VMM service account.
 		3. In VMM setup you'll select the option to use an existing database and specify the database details and VMM service account as the database user.
 
-
-        br/><br/> The SQL Server computer name shouldn't be longer than 15 characters. and the instance should allow for case-insensitive database objects.<br/><br/> THe Server Server can be in the same domain, or in domains with a two-way trust.
-
-
-
-
 ## Library server
 
 - If you run the library server on the VMM management server, then you must provide additional hard disk space to store objects. The space required varies, based on the number and size of the objects you store.
@@ -102,9 +96,6 @@ This table summarizes what you'll need for VMM 2016 installation.
 - If you want to manage Virtual hard disks in the .vhdx file format, the VMM library server must run Windows Server 2012 or later.
 - VMM does not provide a method for replicating physical files in the VMM library or a method for transferring metadata for objects that are stored in the VMM database. Instead, if necessary, you need to replicate physical files outside of VMM, and you need to transfer metadata by using scripts or other means.
 - VMM does not support file servers that are configured with the case-sensitive option for Windows Services for UNIX, because the Network File System (NFS) case control is set to **Ignore**.
-
-
-
 
 
 ## Account and domain requirements
@@ -121,27 +112,14 @@ When you install VMM you need to configure the VMM service  to use either the Lo
 
 ## Distributed key management
 
- When you install VMM you need to decide where to store the keys to encrypted data on the local computer or configure distributed key management.
+By default, VMM encrypts some data in the VMM database by using the Data Protection Application Programming Interface (DPAPI). For example, Run As account credentials, passwords in guest operating system profiles, and product key information in virtual hard disks properties. Data encryption is tied to the specific computer on which VMM is installed, and the service account that VMM uses. If you move your VMM installation to another computer, VMM won't retain the encrypted data, and you'll need to enter it manually.
 
-	- By default, VMM encrypts some data in the VMM database by using the Data Protection Application Programming Interface (DPAPI). For example, VMM encrypts Run As account credentials and passwords in guest operating system profiles. VMM also encrypts product key information in virtual hard disk properties for virtual machine role scenarios and configuration. The encryption of this data is tied to the specific computer on which VMM is installed and the service account that VMM uses. Therefore, if you move your VMM installation to another computer, VMM will not retain the encrypted data. In that case, you must enter this data manually to fix the VMM objects.
-	- Distributed key management, however, stores the encryption keys in AD DS. Therefore, if you must move your VMM installation to another computer, VMM will retain the encrypted data because the other computer will have access to the encryption keys in AD DS.
-	- Note that for VMs, if the encrypted data isn't retained you won't be able to enter it manually, so you will not be able to manage the VMs.
-	- If you want to enable distributed key management, coordinate with your Active Directory admin. Note that:
+To ensure that VMM retains encrypted data across moves, you can use distributed key management to store encryption keys in Active Directory. If you move your VMM installation, VMM retains the encrypted data because the new VMM computer has access to the encryption keys in Active Directory. To set up distributed key management you should coordinate with your Active Directory administrator. Note that:
 
-		- You must create a container in AD DS before you install VMM. You can create the container by using Active Directory Service Interfaces Editor (ADSI Edit). To install ADSI Edit, in Server Manager add the feature AD DS Tools under Remote Server Administration Tools. After installation, ADSI Edit is listed on the Tools menu in Server Manager.
-		- You must create the container in the same domain as the user account with which you are installing VMM. Also, if you specify a domain account that the VMM service will use, that account must also be in the same domain.
-		- For example, if the installation account and the service account are both in the corp.contoso.com domain, you must create the container in that domain. So, if you want to create a container that is named VMMDKM, you specify the container location as CN=VMMDKM,DC=corp,DC=contoso,DC=com.
-		- After the AD DS administrator has created the container, the account with which you are installing VMM must have Full Control permissions to the container in AD DS. Also, the permissions must apply to this object and all descendant objects of the container.
-		- If you are installing a highly available VMM management server, you must use distributed key management to store encryption keys in AD DS.
-		- Distributed key management is required in this scenario because when the Virtual Machine Manager service fails over to another node in the cluster, the Virtual Machine Manager service still needs access to the encryption keys in order to access data in the VMM database. This access is possible only if the encryption keys are stored in a central location like AD DS.
-		- For future upgrades that involve virtual machine roles, we recommend that you use distributed key management during setup. This will help ensure that virtual machine roles are properly upgraded, and that you can manage them after the upgrade.
-		- On the Configure service account and distributed key management page, you must type the location of the container in AD DS, for example: CN=VMMDKM,DC=corp,DC=contoso,DC=com
-
-
-
-
-
-
+- You must create a container in AD DS before you install VMM. You can create the container by using ADSI Edit (installed from **Server Manager** > **Remote Server Administration Tools**.
+- You create the container in the same domain as the user account with which you are installing VMM. If you specify that the VMM service uses a domain account, that account must be in the same domain. For example, if the installation account and the service account are both in the corp.contoso.com domain, you must create the container in that domain. So, if you want to create a container that is named VMMDKM, you specify the container location as CN=VMMDKM,DC=corp,DC=contoso,DC=com. The account with which you're installing VMM needs Full Control permissions to the container in AD DS. The permissions must apply to this object, and to all descendant objects.
+- If you are installing a highly available VMM management server, you must use distributed key management to store encryption keys in Active Directory. You need distributed key management because if VMM fails over to a node, that node will need access to the encryption keys.
+- When you configure the service account and distributed key in setup, you must type the location of the container in AD DS, for example: CN=VMMDKM,DC=corp,DC=contoso,DC=com
 
 
 ## Next steps
