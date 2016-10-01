@@ -97,9 +97,14 @@ For more information, see [Get-SCVMMServer](http://technet.microsoft.com/library
 
 Back up all files on library shares to a shared folder on a remote file server, including files with the following extensions:
 
-|||
-|-|-|
-|-   .vhd and .vhdx<br />-   .iso<br />-   .inf<br />-   .vmx|-   .ps1<br />-   .vmc<br />-   .vsv|
+- .vhd and .vhdx
+- .iso
+- .vmx
+- .ps1
+- .vmc 
+- .vsv
+
+
 
 ## Back up VMM private clouds
 
