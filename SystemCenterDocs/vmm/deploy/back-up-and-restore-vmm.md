@@ -16,12 +16,12 @@ ms.assetid:  2ebb4cfd-fd5e-4add-b75c-dcb932dbaa64
 
 >Applies To: System Center 2016 - Virtual Machine Manager
 
-This topic describes the backup and recovery process in a Virtual Machine Manager (VMM) environment, and provides some recommendations.
+This article describes the backup and recovery process in a System Center 2016 - Virtual Machine Manager (VMM) environment, and provides some recommendations.
 
 > [!IMPORTANT]
-> Do not use checkpoints for disaster recovery. Checkpoints do not create full duplicates of the hard disk contents nor do they copy data to a separate volume. A checkpoint can serve as temporary backup before updating an operating system on a virtual machine so that you can roll back the update if the update has any adverse effects. You should use a backup application to back up and recover your data in case of catastrophic data loss.
+> Don't use checkpoints for disaster recovery. Checkpoints do not create full duplicates of the hard disk contents nor do they copy data to a separate volume. A checkpoint can serve as temporary backup before updating an operating system on a virtual machine so that you can roll back the update if the update has any adverse effects. You should use a backup application to back up and recover your data in case of catastrophic data loss.
 
-One option for backing up and recovering VMM is Data Protection Manager (DPM). For more information, see [Data Protection Manager](https://technet.microsoft.com/system-center-docs/dpm/deploy/back-up-and-restore-vmm-servers).
+One option for backing up and recovering VMM is Data Protection Manager (DPM). For more information, see [Data Protection Manager](http://technet.microsoft.com/library/hh758173.aspx).
 
 Data such as Remote Access Authorization (RAA) passwords and the product key can be entered when you re-install VMM. However, some encrypted data such as Virtual Machine Roles cannot be re-entered. You cannot back up and restore such data if you use the Data Protection application programming interface (DPAPI) for backing up VMM the data will be lost if the VMM management server fails.
 
@@ -246,7 +246,7 @@ After you restore VMM, review the following items to ensure that you have taken 
 
 -   **Non-Microsoft user interface add-ins**: To restore any non-Microsoft user interface add-ins or any other non-Microsoft party applications, consult the respective application"s restore guidelines.
 
--   **Driver packages**: Driver packages that were previously added to the VMM library might not be discovered correctly after a restore. They might have to be removed and be re-added. 
+-   **Driver packages**: Driver packages that were previously added to the VMM library might not be discovered correctly after a restore. They might have to be removed and be re-added. For more information, see [How to add driver files to the VMM library](How-to-add-driver-files-to-the-VMM-library.md).
 
 -   **Certificates**: Any VMM-related certificates on hosts must be updated with the information of the new VMM management server.
 

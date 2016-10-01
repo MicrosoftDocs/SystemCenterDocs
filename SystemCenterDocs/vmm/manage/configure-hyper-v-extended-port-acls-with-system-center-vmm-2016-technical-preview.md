@@ -8,10 +8,10 @@ redirect_url: manage-compute-extended-port-acls
 ms.prod:  system-center-threshold
 keywords:  
 ms.date:  2016-10-12
-title:  Manage Hyper-V extended port ACLs in VMM
+title:  Configure Hyper-V extended port ACLs in VMM
 ms.technology:  virtual-machine-manager
 ms.assetid:  2684494b-1779-4df8-9f11-db46a0d96542
 ms.service:  virtual-network
 ---
 
-# Manage Hyper-V extended port ACLs in VMM
+# Configure Hyper-V extended port ACLs in VMM
