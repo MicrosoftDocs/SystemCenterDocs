@@ -1,4 +1,4 @@
-# [System Center 2016](System-Center-2016.md)
+# [System Center 2016](System-Center.md)
 ## [What's New in System Center 2016](get-started/What-s-New-in-System-Center.md)
 ## [Release Notes for System Center 2016 ](get-started/Release-Notes.md)
 ## [Features Removed or Deprecated from System Center 2016](get-started/Features-Removed-or-Deprecated.md)
