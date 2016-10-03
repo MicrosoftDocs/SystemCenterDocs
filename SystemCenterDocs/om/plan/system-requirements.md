@@ -1,4 +1,5 @@
 ---
+ms.assetid: 1921b7dc-6537-4378-bdc5-de5fbd3e619a
 title: System Requirements for System Center 2016 - Operations Manager
 description:
 author: mgoedtel

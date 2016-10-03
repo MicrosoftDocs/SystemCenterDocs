@@ -1,4 +1,5 @@
 ---
+ms.assetid: ffcc04ad-91ac-40cc-bdfc-65e33de7c390
 title: Designing for High Availability and Disaster Recovery
 description:
 author: mgoedtel
@@ -24,11 +25,16 @@ The multiple server, single management group configuration can make use of SQL S
 
 The RMS Emulator can be moved to another management server as well should the management server hosting the RMS Emulator become unavailable.
 
-Web and Operations console connections can be made highly available.  This is accomplished by configuring high availability for the Data Access Services.  This can be done by installing Microsoft Network Load Balancing (NLB) or using a hardware-based load balancers, or DNS alias.  One or more management servers are added as members of the NLB pool and when opening the either console, you reference the virtual name registered in DNS, of the load-balanced management servers.  
+Operations console connections can be made highly available.  This is accomplished by configuring high availability for the Data Access Services.  This can be done by installing Microsoft Network Load Balancing (NLB) or using a hardware-based load balancers, or DNS alias.  One or more management servers are added as members of the NLB pool and when opening the either console, you reference the virtual name registered in DNS, of the load-balanced management servers.  
 
-Multiple gateway servers can be deployed across a trust boundary to provide redundant pathways for agents that lie across that trust boundary. Just as agents can fail over between a primary management server and one or more secondary management servers, they can also fail over between gateway servers. In addition, multiple gateway servers can be used to distribute the workload of managing agentless\-managed computers and managed network devices.  
+> [!NOTE]  
+> A Network Load Balancer is not supported for the Operations Manager web console server.
+
+Multiple gateway servers can be deployed across a trust boundary to provide redundant pathways for agents that lie across that trust boundary. Just as agents can fail over between a primary management server and one or more secondary management servers, they can also fail over between gateway servers. In addition, multiple gateway servers can be used to distribute the workload of managing agentless-managed computers and managed network devices.  
   
-In addition to providing redundancy through agent\-gateway failover, gateway servers can be configured to fail over between management servers in a management group if multiple management servers are available.  
+In addition to providing redundancy through agent-gateway failover, gateway servers can be configured to fail over between management servers in a management group if multiple management servers are available.  
+
+While SQL Server Reporting Services supports a scale-out deployment model that allows you to run multiple report server instances that share a single report server database, it is not supported with Operations Manager.  Operations Manager Reporting installs a custom security extension as part of the setup of the front-end components, which cannot be replicated across the web farm. 
 
 ## Disaster recovery
 

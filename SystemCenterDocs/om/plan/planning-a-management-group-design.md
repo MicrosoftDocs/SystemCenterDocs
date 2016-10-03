@@ -1,4 +1,5 @@
 ---
+ms.assetid: dabe96c0-08a5-4577-bd12-cafd7cc7a5a6
 title: Planning a Management Group Design
 description:
 author: mgoedtel

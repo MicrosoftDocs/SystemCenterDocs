@@ -1,4 +1,5 @@
 ---
+ms.assetid: 74af9f14-35b0-4b87-87ca-980d9b9031b0
 title: Active Directory and DNS Planning
 description:
 author: mgoedtel

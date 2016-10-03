@@ -1,4 +1,5 @@
 ---
+ms.assetid: 94744b26-2177-4c8d-a3ae-e3ec0f8f5b60
 title:  Planning Security Credentials for Accessing Unix and Linux Computers
 description:
 author: mgoedtel

@@ -1,4 +1,5 @@
 ---
+ms.assetid: 4be928cd-4a38-4f73-9d5f-87d438db2d4b
 title: Authentication and Data Encryption in Operations Manager
 description:
 description:  
