@@ -1,4 +1,5 @@
 ---
+ms.assetid: e305673d-88ab-4aa1-9287-31b617a9f1fc
 title:  Installing Operations Manager From the Command Prompt 
 description:  
 author: mgoedtel

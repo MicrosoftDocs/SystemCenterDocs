@@ -1,4 +1,5 @@
 ---
+ms.assetid: 212a5f25-9711-46b8-a466-775ef846dfc5
 title:  Install a Gateway Server
 description:  
 author: mgoedtel

@@ -1,4 +1,5 @@
 ---
+ms.assetid: 2f41a8e5-3ec1-4279-8c06-5e59ff27ef3d
 title:  How to Upgrade a Single Server Management Group to System Center 2016 - Operations Manager
 description:  
 author: mgoedtel

@@ -1,4 +1,5 @@
 ---
+ms.assetid: 8e15d2ef-be27-483d-ad4a-09df62ed6618
 title:  Install the Operations Manager Web console
 description:  
 author: mgoedtel
@@ -174,3 +175,5 @@ All information and content at http://blogs.technet.com/b/momteam/archive/2008/0
 ## Next steps
 
 - See [Distributed Deployment of Operations Manager](Distributed-Deployment-of-Operations-Manager.md) to understand the sequence and steps for installing the Operations Manager server roles across multiple servers in your management group.  
+
+- 

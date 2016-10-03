@@ -1,4 +1,5 @@
 ---
+ms.assetid: 2c2f0df5-befb-47f1-926b-c013fd659ec5
 title:  Single Server Deployment of Operations Manager
 description:  
 author: mgoedtel

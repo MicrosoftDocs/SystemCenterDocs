@@ -1,4 +1,5 @@
 ---
+ms.assetid: bc3c9818-6019-4af3-bcaa-990229650c0c
 title:  How to Install the Operations Manager Reporting Server
 description:  
 author: mgoedtel

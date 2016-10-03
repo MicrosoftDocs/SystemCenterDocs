@@ -1,4 +1,5 @@
 ---
+ms.assetid: aabf9661-6b4c-4495-845d-7d30de3cff93
 title:  How to Upgrade a Management Server to System Center 2016 - Operations Manager -Upgrading a Distributed Management Group
 description:  
 author: mgoedtel

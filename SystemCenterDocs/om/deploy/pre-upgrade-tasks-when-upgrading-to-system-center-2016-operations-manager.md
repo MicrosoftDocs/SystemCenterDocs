@@ -1,4 +1,5 @@
 ---
+ms.assetid: c1f1417e-c520-4b9c-9e8c-e0bff263d311
 title:  Pre-Upgrade Tasks When Upgrading to System Center 2016 - Operations Manager
 description:  
 author: mgoedtel
