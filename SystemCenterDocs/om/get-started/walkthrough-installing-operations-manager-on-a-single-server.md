@@ -1,5 +1,5 @@
 ---
-title: Walkthrough: Installing Operations Manager on a Single Server
+title: Walkthrough Installing Operations Manager on a Single Server
 description:  
 author: mgoedtel
 manager: cfreemanwa
@@ -8,9 +8,10 @@ ms.custom: na
 ms.prod: system-center-threshold
 ms.technology: operations-manager
 ms.topic: article
+ms.assetid: 1ddc69fb-fb40-4631-8b49-fb8288806004
 ---
 
-# Walkthrough: Installing Operations Manager on a Single Server
+# Walkthrough Installing Operations Manager on a Single Server
 
 >Applies To: System Center 2016 - Operations Manager
 
