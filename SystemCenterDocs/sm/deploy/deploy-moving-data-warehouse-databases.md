@@ -118,7 +118,7 @@ The following high\-level steps are required to move the Data Warehouse database
 
 4.  In **Reporting Services Configuration Manager**, click **Reporting Manager URL**.  
 
-5.  On the **Reporting Manager URL** page, click the hyperlink that resembles http://Servername:portnumber/Reports to open it in your web browser.  
+5.  On the **Reporting Manager URL** page, click the hyperlink that resembles `http://Servername:portnumber/Reports` to open it in your web browser.  
 
 6.  Open the **System Center** folder and then open the **Service Manager** folder.  
 
@@ -549,7 +549,7 @@ The following high\-level steps are required to move the Data Warehouse database
 
 3.  In the Reporting Services Configuration Manager list, select **Report Manager URL**.  
 
-4.  On the **Report Manager URL** page, click the hyperlink that resembles http://Servername/:portnumber/Reports to open the **Reports** home page in your Internet browser.  
+4.  On the **Report Manager URL** page, click the hyperlink that resembles `http://Servername/:portnumber/Reports` to open the **Reports** home page in your Internet browser.  
 
 5.  On the home page, open the **System Center** folder, and then open the **Service Manager** folder.  
 

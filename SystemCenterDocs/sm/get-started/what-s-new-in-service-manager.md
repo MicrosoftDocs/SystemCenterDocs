@@ -1,8 +1,9 @@
 ---
-description:  
-manager:  cfreemanwa
+description: Describes new features and other changes in System Center 2016 - Service Manager
+manager:  cfreeman
 ms.topic:  article
 author:  bandersmsft
+ms.author: banders
 ms.prod:  system-center-2016
 keywords:  
 ms.date:  2016-08-19
@@ -79,7 +80,7 @@ Service Manger can more easily handle a large inflow of 45 work items per minute
 | average incident creation time | 2.2 seconds | 0.5 seconds | 4 times |
 
 
-## Faster SCCM and Active Directory connector sync with disabling ECL logging 
+## Faster SCCM and Active Directory connector sync with disabling ECL logging
 
 The Active Directory and SCCM connectors in Service Manager can import large amounts of data into the Service Manager database. In doing so, they not only increase the size of the data table, which is where the data from the connectors are stored, but they also increase the size of the EntityChangeLog (ECL) table and history tables considerably. A large ECL table size can be a problem - in some cases, it can slow down the system significantly.
 

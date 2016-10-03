@@ -11,6 +11,7 @@ ms.suite: na
 ms.technology: service-manager
 ms.tgt_pltfrm: na
 ms.topic: article
+ms.assetid: 7aa3ae77-88e7-4ff8-bb63-814286b7089d
 ---
 
 # How to Edit the Registry on the Service Manager Management Server in the Lab Environment

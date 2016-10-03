@@ -77,5 +77,7 @@ You can read the *ECL logging disable for SCCM and AD connector* status with the
     ```
     Get-SCSMClassInstance (Get-SCSMClass -Name "System.GlobalSetting.ConnectorEclLogSettings") | %{$_.ConnectorEclLogDisabled = 1 ; $_}  | Update-SCSMClassinstance
     ```
+
 ### To re-enable ECL logging
+
 - Replace the value `1` in the previous procedure with `0` and run the command.  

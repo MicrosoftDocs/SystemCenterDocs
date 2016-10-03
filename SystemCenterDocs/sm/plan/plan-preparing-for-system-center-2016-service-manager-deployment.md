@@ -1,5 +1,6 @@
 ---
 title: Preparing for System Center 2016 - Service Manager Deployment
+manager: cfreeman
 ms.custom: na
 ms.prod: system-center-2016
 author: bandersmsft
@@ -14,6 +15,8 @@ ms.assetid: f5b2cb5d-96d6-4b49-a2ce-251372baf9a5
 ---
 
 # Preparing for System Center 2016 - Service Manager Deployment
+
+>Applies To: System Center 2016 - Service Manager
 
 Before you start the deployment of System Center 2016 - Service Manager, you create a group of users in Active Directory Domain Services \(AD DS\), and you create or identify a domain account that will be used during the Setup process. Make sure that the domain account is a member of the appropriate groups that are necessary for proper operation of Service Manager For more information see [Account Considerations for Running Setup](plan-account-considerations-for-running-setup.md) in this guide. Keep the following in mind when you are installing Service Manager and Operations Manager on the same server:  
 

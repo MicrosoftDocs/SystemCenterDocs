@@ -168,7 +168,7 @@ One of the benefits of using System Center - Service Manager with Microsoft Shar
     ```  
 
     > [!NOTE]  
-    >  Replace the URL in the [Source](assetId:///Source) attribute with a URL to a dashboard in your environment. This URL should display content that the user's browser can access on the Intranet or on the Internet.  
+    >  Replace the URL in the `Source` attribute with a URL to a dashboard in your environment. This URL should display content that the user's browser can access on the Intranet or on the Internet.  
 
      Save the updated file.  
 

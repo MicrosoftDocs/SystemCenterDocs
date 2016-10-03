@@ -15,6 +15,8 @@ ms.assetid: f63bb78a-9f4e-4cc5-bdcb-a180c8eeda81
 
 # Hardware Requirements for System Center 2016 - Service Manager
 
+>Applies To: System Center 2016 - Service Manager
+
 This topic describes the hardware requirements for System Center 2016 - Service Manager.  
 
 ## Hardware Requirements  

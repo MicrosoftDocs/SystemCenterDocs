@@ -1,5 +1,5 @@
 ---
-description:  
+description: Describes how you can create a new service request template without using the default generic incident request template.
 manager:  cfreeman
 ms.topic:  article
 author: bandersmsft
@@ -57,6 +57,3 @@ By default, Service Manager includes a number of service request templates that 
 18. Next to **Activity Implementer**, select a user who is responsible for the activity, and then click **OK** to close the **Manual Activity Template** form.
 
 19. Click **OK** to close the **Service Request Template** form.
-
-
-

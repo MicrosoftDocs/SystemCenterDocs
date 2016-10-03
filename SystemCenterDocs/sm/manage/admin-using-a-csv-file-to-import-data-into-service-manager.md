@@ -84,8 +84,8 @@ For the type of data being imported, you find that the **Microsoft.Windows.Compu
 
 After scanning the list of available properties of the **Microsoft.Windows.Computer** class, select the following properties for each column in the .csv file.
 
-|||
-|-|-|
+| column | property |
+|---|---|
 |Column 1|Principal Name|
 |Column 2|IPAddress|
 |Column 3|DomainDnsName|

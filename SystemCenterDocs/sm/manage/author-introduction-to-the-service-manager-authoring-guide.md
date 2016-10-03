@@ -22,7 +22,7 @@ Service Manager automates help desk functions, such as ticketing and change requ
 
  Service Manager uses management pack files that contain object definitions for the various features of the product. You can customize the behavior of Service Manager and extend it by creating and modifying management packs. This authoring guide describes the use, authoring, and customization of management packs.  
 
- The Service Manager&nbsp;2016 Software Development Kit \(SDK\) contains information that you might need when you are authoring with Service Manager. The SDK includes reference information for the class libraries and documents that the schema uses to create XML\-based management packs. To download the documentation for the System Center Service Manager&nbsp;2016 SDK, see [System Center Service Manager Software Development Kit \(SDK\) Documentation](http://go.microsoft.com/fwlink/p/?LinkID=196797).  
+ The Service Manager&nbsp;2016 Software Development Kit \(SDK\) contains information that you might need when you are authoring with Service Manager. The SDK includes reference information for the class libraries and documents that the schema uses to create XML\-based management packs. To download the documentation for the System Center Service Manager&nbsp;2016 SDK, see [System Center Service Manager Software Development Kit \(SDK\) Documentation](https://msdn.microsoft.com/library/hh965050.aspx).  
 
 ## Overview of Management Packs
 
@@ -124,7 +124,7 @@ The SCSM2016\_AuthoringTool\_RTM.exe program file contains the Service Manager A
 
 1.  Verify that the computer on which you plan to install the Authoring Tool meets the requirements.  
 
-2.  Download the [SCSM2016\_AuthoringTool\_RTM.exe](http://go.microsoft.com/fwlink/p/?LinkId=245126) program file from the Microsoft Download Center to the local computer on which you want to install the Authoring Tool. Double\-click **SCSM2016\_AuthoringTool\_RTM.exe**.  
+2.  Download the [SCSM2016\_AuthoringTool\_RTM.exe](http://www.microsoft.com/download/details.aspx?id=40896) program file from the Microsoft Download Center to the local computer on which you want to install the Authoring Tool. Double\-click **SCSM2016\_AuthoringTool\_RTM.exe**.  
 
 3.  In the **WinZip Self\-Extractor - SCSM2016\_AuthoringTool\_RTM.exe** dialog box, type a path to which to extract the files, and then click **Unzip**.  
 

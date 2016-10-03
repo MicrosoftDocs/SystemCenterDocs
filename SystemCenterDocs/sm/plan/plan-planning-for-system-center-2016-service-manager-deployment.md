@@ -15,6 +15,8 @@ ms.assetid: 86f6f99e-9605-4d6b-9a7a-abb19910f91b
 
 # Planning for System Center 2016 - Service Manager Deployment
 
+>Applies To: System Center 2016 - Service Manager
+
 For System Center 2016 - Service Manager, several deployment options are available, and three options are presented in this guide.  
 
  The first deployment option uses one physical computer and one virtual computer. The physical computer hosts the Service Manager management server, the Service Manager database, and the data warehouse databases, and it also hosts the virtual server. The virtual computer hosts the data warehouse management server. This deployment is used primarily for lightweight or first\-impression evaluation of Service Manager. No scalability or performance estimates are available for this scenario.  

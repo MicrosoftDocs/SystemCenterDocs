@@ -15,6 +15,8 @@ ms.assetid: 6c28cc61-e50c-4d3b-a26e-9410267278c6
 
 # Hardware Performance
 
+>Applies To: System Center 2016 - Service Manager
+
 An important part of System Center 2016 - Service Manager performance depends on a hardware configuration and deployment topology that is planned to handle the needs of your organization. The following sections provide general guidelines to consider when you are planning for adequate hardware performance.  
 
 ## Hardware Performance  
