@@ -19,7 +19,7 @@ ms.service:  virtual-network
 
 ## Summary
 
-Using System Center Virtual Machine Manager 2016, you can centrally configure and manage Hyper-V port access control lists (ACLs) in your Software Defined Networking (SDN) fabric. These ACLs can be configured for both a Network Controller managed fabric and a non-Network Controller managed fabric.
+In System Center Virtual Machine Manager 2016, you can centrally configure and manage Hyper-V port access control lists (ACLs) in your Software Defined Networking (SDN) fabric. These ACLs can be configured for both a Network Controller managed fabric and a non-Network Controller managed fabric.
 
 A port access control list (port ACL) is an object that is attached to various networking primitives to describe network security. The port ACL serves as a collection of access control entries or rules. An ACL can be attached to zero or more networking primitives, such as a VM network, VM subnet, virtual network adapter, or the VMM management server itself. An ACL can contain zero or more ACL rules. Each compatible VMM networking primitive (VM network, VM subnet, virtual network adapter, or VMM management server) can have either one port ACL attached or none.
 
@@ -50,7 +50,7 @@ Each port ACL consists of a collection of port ACL rules. Each rule contains dif
 * Name
 * Description
 * Type
-  Inbound/Outbound (the direction in which the ACL is applied)
+  Inbound/Outbound (the direction in which the ACL will be applied)
 * Action
   Allow/Deny (the action of the ACL, either to allow the traffic or to block the traffic)
 * SourceAddressPrefix
