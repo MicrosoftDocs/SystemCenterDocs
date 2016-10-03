@@ -88,6 +88,7 @@
 ##### [How to upgrade a Web console to System Center 2016 - Operations Manager](om/Deploy/How-to-Upgrade-a-Web-Console-to-System-Center-2016-Operations-Manager.md)
 ##### [How to upgrade reporting to System Center 2016 - Operations Manager](om/Deploy/How-to-Upgrade-Reporting-to-System-Center-2016-Operations-Manager.md)
 ##### [How to upgrade from the evaluation version of Operations Manager](om/deploy/how-to-upgrade-from-the-evaluation-version.md)
+##### [Post-upgrade tasks when upgrading to System Center 2016 - Operations Manager](om/deploy/post-upgrade-tasks-when-upgrading-to-system-center-2016-operations-manager.md)
 ### [Manage](OM/Manage/Operations-Manager-Operations-Guide.md)
 #### [Quick reference to Operations Manager tasks](OM/Manage/Quick-Reference-to-Operations-Manager-Tasks.md)
 #### [Initial monitoring after Operations Manager is installed](om/manage/initial-monitoring-after-operations-manager-is-installed.md)
