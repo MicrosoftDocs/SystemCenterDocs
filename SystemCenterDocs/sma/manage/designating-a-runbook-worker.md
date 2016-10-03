@@ -2,7 +2,7 @@
 description:  
 manager:  cfreemanwa
 ms.topic:  article
-author:  snmuvva
+author:  bwren
 ms.prod:  system-center-threshold
 keywords:  
 ms.date:  2016-10-03
