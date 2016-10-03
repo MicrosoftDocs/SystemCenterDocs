@@ -1,5 +1,4 @@
 ---
-ms.assetid: 1ddc69fb-fb40-4631-8b49-fb8288806004
 title: Walkthrough: Installing Operations Manager on a Single Server
 description:  
 author: mgoedtel
