@@ -75,11 +75,12 @@ In Windows Server 2016, Hyper-V virtual hard disks have built-in change tracking
 Hyper-V VMs deployed on Windows Server 2016 and protected using DPM 2016 have RCT by default. VMs deployed on Windows Server 2012 R2 or earlier do not support RCT. However, you can upgrade older VMs.
 To upgrade older VMs to enable RCT:
 1. Shut down the virtual machine in Hyper-V Manager.
-2. In Hyper-V Manager, select **Action** > **Upgrade Configuration Version**. If this option isn't available for the virtual machine, then it's already at the highest configuration version supported by the Hyper-V host. For additional information about checking or upgrading the virtual machine configuration version, see the article, [upgrading virtual machine version to Windows Server 2016](https://technet.microsoft.com/windows-server-docs/compute/hyper-v/deploy/upgrade-virtual-machine-version-in-hyper-v-on-windows-or-windows-server.md). If you want to use Windows PowerShell to upgrade the virtual machine configuration, run the following command where vmname is the name of the virtual machine.
+2. In Hyper-V Manager, select **Action** > **Upgrade Configuration Version**. If this option isn't available for the virtual machine, then it's already at the highest configuration version supported by the Hyper-V host. For additional information about checking or upgrading the virtual machine configuration version, see the article, [upgrading virtual machine version to Windows Server 2016](https://technet.microsoft.com/windows-server-docs/compute/hyper-v/deploy/upgrade-virtual-machine-version-in-hyper-v-on-windows-or-windows-server.md).
+If you want to use Windows PowerShell to upgrade the virtual machine configuration, run the following command where vmname is the name of the virtual machine.
 
-    ```
-    Update-VMVersion <vmname>
-    ```
+  ```
+  Update-VMVersion <vmname>
+  ```
 
 3. On the DPM 2016 server:
   - Stop protection of the VM and select **Retain Data**.
