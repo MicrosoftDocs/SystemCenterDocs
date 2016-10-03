@@ -1,4 +1,5 @@
 ---
+ms.assetid: d7f96cca-113c-4732-a3ba-e7f593350015
 title: Data Encryption for Web console and Reporting server Connections
 description:  
 author: mgoedtel

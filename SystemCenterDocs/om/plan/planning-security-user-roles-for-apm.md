@@ -1,4 +1,5 @@
 ---
+ms.assetid: aa903de4-1f46-407b-a340-8b07abdaeda7
 title: User Roles for Application Performance Monitoring
 description:
 author: mgoedtel

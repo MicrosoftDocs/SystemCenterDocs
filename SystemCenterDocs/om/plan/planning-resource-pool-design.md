@@ -1,4 +1,5 @@
 ---
+ms.assetid: f70d4861-d0ec-43df-ba9c-7acdd1238ffb
 title: Resource Pool Design Considerations
 description:
 author: mgoedtel

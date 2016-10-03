@@ -1,4 +1,5 @@
 ---
+ms.assetid: 045b2f66-b672-4cd2-9d83-9d067b83fdaf
 title:  Configuring a Firewall for Operations Manager
 description:
 author: mgoedtel

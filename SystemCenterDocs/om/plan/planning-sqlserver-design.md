@@ -1,4 +1,5 @@
 ---
+ms.assetid: 5a3a8b98-1113-45bf-9484-2c807ec3d013
 title: SQL Server Design Considerations
 description:
 author: mgoedtel

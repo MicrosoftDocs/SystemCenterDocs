@@ -1,4 +1,5 @@
 ---
+ms.assetid: accc6f3d-396c-43bc-91a6-7e723d57bfa1
 title: Security Considerations for Microsoft Azure and Office 365
 description:
 author: mgoedtel

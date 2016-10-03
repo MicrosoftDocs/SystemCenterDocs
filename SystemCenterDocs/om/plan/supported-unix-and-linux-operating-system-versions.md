@@ -1,4 +1,5 @@
 ---
+ms.assetid: 50504e6d-945f-43e6-8faf-33fe870c623d
 title: Supported UNIX and Linux Operating System Versions
 description:
 author: mgoedtel

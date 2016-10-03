@@ -1,4 +1,5 @@
 ---
+ms.assetid: 383a3286-5e1e-410b-a3b9-216af2febd97
 title: Design Integration with other Enterprise Management Products
 description:
 author: mgoedtel
