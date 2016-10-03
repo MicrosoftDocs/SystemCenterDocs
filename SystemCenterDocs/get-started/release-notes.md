@@ -256,13 +256,6 @@ System Center Operations Manager management server is not affected.
 
 **Work around:** Open the Orchestrator web console with Internet Explorer.
 
-#### Orchestrator 2016 does not have associated Integration packs available.
-
-**Description:** Orchestrator 2016 Integration packs have not been published.
-
-**Workaround:** Use Orchestrator 2012 R2 Integration packs for evaluation purposes.
-
-
 ## System Center 2016 - Service Manager Release Notes
 **The following release notes apply to System Center 2016 - Service Manager.**
 
