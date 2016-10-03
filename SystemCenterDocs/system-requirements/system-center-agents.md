@@ -143,9 +143,7 @@ This information lists both Microsoft and non-Microsoft operating systems and ve
 
 ## Operations Manager Linux/Unix Agent
 
--   HP-UX 11i V2 (PA-RISC and Itanium)
-
--   HP-UX 11i V3 (PA-RISC and Itanium)
+-   HP-UX 11i V3 (Itanium)
 
 -   Oracle Linux 5 (x86/x64)
 
@@ -153,13 +151,9 @@ This information lists both Microsoft and non-Microsoft operating systems and ve
 
 -   Oracle Linux 7 (x64)
 
--   Oracle Solaris 9 (SPARC)
-
 -   Oracle Solaris 10 (SPARC and x86)
 
 -   Oracle Solaris 11 (SPARC and x86)
-
--   Red Hat Enterprises Linux 4 (x86/x64)
 
 -   Red Hat Enterprises Linux 5 (x86/x64)
 
@@ -167,27 +161,21 @@ This information lists both Microsoft and non-Microsoft operating systems and ve
 
 -   Red Hat Enterprises Linux 7 (x64)
 
--   SUSE Linux Enterprise Server 9 (x86)
-
 -   SUSE Linux Enterprise Server 10 (x86/x64)
 
 -   SUSE Linux Enterprise Server 11 (x86/x64)
 
 -   SUSE Linux Enterprise Server 12 (x64)
 
--   IBM AIX 5.3 (POWER)
-
 -   IBM AIX 6.1 (POWER)
 
--   IBM AIX 7.1 (POWER)
+-   IBM AIX 7 (POWER)
 
 -   CentOS 5 (x86/x64)
 
 -   CentOS 6 (x86/x64)
 
 -   CentOS 7 (x64)
-
--   Debian 5 (x86/x64)
 
 -   Debian 6 (x86/x64)
 
@@ -198,3 +186,5 @@ This information lists both Microsoft and non-Microsoft operating systems and ve
 -   Ubuntu Server 12.04 (x86/x64)
 
 -   Ubuntu Server 14.04 (x86/x64)
+
+-   Ubuntu Server 16.04 (x86/x64)
