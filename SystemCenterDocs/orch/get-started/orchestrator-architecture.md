@@ -22,11 +22,11 @@ The following table lists the features in a basic deployment of Orchestrator.
 |management server|The management server is the communication layer between the Runbook Designer and the orchestration database.|
 |runbook server|A runbook server is where an instance of a runbook runs. Runbook servers communicate directly with the orchestration database. You can deploy multiple runbook servers per Orchestrator installation to increase capacity and redundancy.|
 |orchestration database|The database is a Microsoft SQL Server database that contains all of the deployed runbooks, the status of running runbooks, log files, and configuration data for Orchestrator.|
-|Runbook Designer|The Runbook Designer is the tool used to build, edit, and manage Orchestrator runbooks. For more information about the Runbook Designer, see Using Runbooks in System Center 2012 - Orchestrator.|
-|Runbook Tester|Runbook Tester is a run\-time tool used to test runbooks developed in the Runbook Designer. For more information about Runbook Tester, see How to Test a Runbook.|
-|Orchestration console|The Orchestration console lets you start or stop runbooks and view real\-time status on a web browser. For more information about using the Orchestration console, see Using the Orchestration Console in System Center 2012 - Orchestrator.|
+|Runbook Designer|The Runbook Designer is the tool used to build, edit, and manage Orchestrator runbooks. For more information about the Runbook Designer, see [Using Runbooks in System Center 2016 - Orchestrator](using-runbooks-in-system-center-2016---orchestrator.md).|
+|Runbook Tester|Runbook Tester is a run\-time tool used to test runbooks developed in the Runbook Designer. For more information about Runbook Tester, see [How to Test a Runbook](../manage/how-to-test-a-runbook.md).|
+|Orchestration console|The Orchestration console lets you start or stop runbooks and view real\-time status on a web browser. For more information about using the Orchestration console, see [Using the Orchestration Console in System Center 2016 - Orchestrator](using-the-orchestration-console-in-system-center-2016---orchestrator.md).|
 |Orchestrator web service|The Orchestrator web service is a Representational State Transfer \(REST\)\-based service that enables custom applications to connect to Orchestrator to start and stop runbooks, and retrieve information about operations by using custom applications or scripts. The Orchestration console uses this web service to interact with Orchestrator.|
-|Deployment Manager|Deployment Manager is a tool used to deploy integration packs \(IPs\), runbook servers, and Runbook Designers. For more information about this tool, see Deploying System Center 2012 - Orchestrator.|
+|Deployment Manager|Deployment Manager is a tool used to deploy integration packs \(IPs\), runbook servers, and Runbook Designers. For more information about this tool, see Deploying System Center 2016 - Orchestrator.|
 
 ## Architectural diagram
 The following diagram illustrates each of the Orchestrator features and the communication between each.
@@ -36,7 +36,7 @@ The following diagram illustrates each of the Orchestrator features and the comm
 The orchestration database is the center of the Orchestrator installation containing all runbooks, configuration settings, and logs. The management server is required as a communication layer between the Runbook Designer and the orchestration database. One or more runbook servers communicate directly with the database to retrieve runbooks to run and store information about the jobs created from the runbooks. The web service also communicates directly with the orchestration database and provides a web browser connection for the Orchestration console.
 
 ## Orchestrator Extensions
-The following table shows multiple strategies available for extending the functionality provided by a standard installation of Orchestrator. For additional information, see Deploying System Center 2012 - Orchestrator.
+The following table shows multiple strategies available for extending the functionality provided by a standard installation of Orchestrator. For additional information, see Deploying System Center 2016 - Orchestrator.
 
 |Orchestrator feature|Description|
 |-----------------------------------------------------------|---------------|
