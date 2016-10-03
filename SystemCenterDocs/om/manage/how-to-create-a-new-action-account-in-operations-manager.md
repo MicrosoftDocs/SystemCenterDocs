@@ -1,4 +1,5 @@
 ---
+ms.assetid: 24cefdb6-cc98-4153-af9a-f172d4f72bbf
 title: How to Create a New Action Account in Operations Manager
 description:  
 author: mgoedtel

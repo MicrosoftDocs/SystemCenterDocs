@@ -1,4 +1,5 @@
 ---
+ms.assetid: 838bba51-87c4-4b51-b540-66c51348cdfe
 title: Management Packs Installed with Operations Manager
 author: mgoedtel
 manager: cfreemanwa

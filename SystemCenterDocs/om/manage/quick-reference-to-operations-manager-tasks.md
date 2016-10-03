@@ -1,4 +1,5 @@
 ---
+ms.assetid: dd7742fd-dcec-4546-b0f3-59ddaf94459a
 title:  Quick Reference to Operations Manager Tasks
 description:  
 author: mgoedtel

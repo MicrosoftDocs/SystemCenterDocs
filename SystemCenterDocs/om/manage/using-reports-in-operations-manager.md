@@ -1,4 +1,5 @@
 ---
+ms.assetid: f9504dda-b4e0-401a-8ef8-e0a215d33890
 title: Using Reports in Operations Manager
 author: mgoedtel
 manager: cfreemanwa

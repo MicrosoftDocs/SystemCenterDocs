@@ -1,4 +1,5 @@
 ---
+ms.assetid: e2d68a4e-b2d5-4567-be36-454fd1dc67bb
 title: Connecting Management Groups in Operations Manager
 description: 
 author: mgoedtel

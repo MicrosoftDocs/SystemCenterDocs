@@ -1,4 +1,5 @@
 ---
+ms.assetid: d6e1034d-88be-49f0-a5d1-65da807a77f6
 title: Configure Authentication with Reporting server
 description:  
 author: mgoedtel

@@ -1,4 +1,5 @@
 ---
+ms.assetid: cf56de7b-757b-4639-89b7-d819130d02fb
 title: Configure Authentication with the Web console
 description:  
 author: mgoedtel

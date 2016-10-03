@@ -1,4 +1,5 @@
 ---
+ms.assetid: 102761c5-25f3-4fd4-8e5b-a68ea622e921
 title: How to Create a Management Pack for Overrides
 description:  
 author: mgoedtel

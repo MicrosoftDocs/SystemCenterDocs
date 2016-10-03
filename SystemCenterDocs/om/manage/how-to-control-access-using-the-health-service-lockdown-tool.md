@@ -1,4 +1,5 @@
 ---
+ms.assetid: 81cb4616-6574-471f-a939-d05198d0d65c
 title: Control Access by Using the Health Service Lockdown Tool in Operations Manager
 description:  
 author: mgoedtel

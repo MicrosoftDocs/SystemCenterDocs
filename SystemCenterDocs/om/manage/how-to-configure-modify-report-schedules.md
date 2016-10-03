@@ -1,4 +1,5 @@
 ---
+ms.assetid: 197a4330-5b2e-4ccd-bfe2-4c93e2a6714b
 title: How to Configure and Modify Report Schedules 
 author: mgoedtel
 manager: cfreemanwa

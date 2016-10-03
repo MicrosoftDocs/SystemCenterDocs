@@ -1,4 +1,5 @@
 ---
+ms.assetid: cd5cf7da-ae93-4c1f-9a67-7104a9259a9c
 title:  General Tasks in Operations Manager
 description:  
 author: mgoedtel

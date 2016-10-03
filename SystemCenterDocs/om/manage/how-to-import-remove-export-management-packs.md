@@ -1,4 +1,5 @@
 ---
+ms.assetid: 0cff3a49-a490-4dd4-aa29-f6c9214c5d92
 title: How to Import, Export, and Remove an Operations Manager Management Pack
 description:  
 author: mgoedtel

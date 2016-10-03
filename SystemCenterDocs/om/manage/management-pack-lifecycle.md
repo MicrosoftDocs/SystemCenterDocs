@@ -1,4 +1,5 @@
 ---
+ms.assetid: f408d78d-f05a-4166-a23b-50d42dbce9fe
 title: Management Pack Lifecycle
 description:  
 author: mgoedtel

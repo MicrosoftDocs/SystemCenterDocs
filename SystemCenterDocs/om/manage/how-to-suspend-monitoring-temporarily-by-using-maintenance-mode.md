@@ -1,4 +1,5 @@
 ---
+ms.assetid: c4e4d992-340a-4ab9-8c98-6640c37adda2
 title:  How to Suspend Monitoring Temporarily by Using Maintenance Mode
 description:  
 author: mgoedtel

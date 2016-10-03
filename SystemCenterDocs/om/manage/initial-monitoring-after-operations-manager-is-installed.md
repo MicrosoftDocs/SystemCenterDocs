@@ -1,4 +1,5 @@
 ---
+ms.assetid: cea9cc45-643d-43d9-9cad-58042d1c8a62
 title: Initial Monitoring After Operations Manager Is Installed
 description:
 author: mgoedtel

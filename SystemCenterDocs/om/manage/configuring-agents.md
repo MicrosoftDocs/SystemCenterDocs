@@ -1,4 +1,5 @@
 ---
+ms.assetid: 7a4739b5-81ef-4495-aa09-5545641d8274
 title: Configuring Agents
 author: mgoedtel
 manager: cfreemanwa

@@ -1,4 +1,5 @@
 ---
+ms.assetid: d8bb718e-9ecc-4839-926f-1bc0df246bf6
 title: How to Set Credentials for Accessing UNIX and Linux Computers
 author: mgoedtel
 manager: cfreemanwa

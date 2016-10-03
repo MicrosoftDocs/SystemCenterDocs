@@ -1,4 +1,5 @@
 ---
+ms.assetid: 017e8bb1-e523-4cc0-bf0c-2d1d4697db11
 title: Process Manual Agent Installations
 description:
 author: mgoedtel

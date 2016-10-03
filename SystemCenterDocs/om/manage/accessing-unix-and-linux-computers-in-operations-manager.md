@@ -1,4 +1,5 @@
 ---
+ms.assetid: e81f5d5c-0780-4a2d-8611-c15b23dc47cf
 title: Accessing UNIX and Linux Computers in Operations Manager
 description:
 author: mgoedtel

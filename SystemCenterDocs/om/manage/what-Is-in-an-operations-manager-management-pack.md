@@ -1,4 +1,5 @@
 ---
+ms.assetid: c7e03604-c2a2-4e0c-b8d4-cf0eb68c133d
 title: What is in an Operations Manager Management Pack?
 author: mgoedtel
 manager: cfreemanwa

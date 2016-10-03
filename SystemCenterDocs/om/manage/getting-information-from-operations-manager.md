@@ -1,4 +1,5 @@
 ---
+ms.assetid: 4a43f795-7e43-4c41-9ddf-720f984ed98f
 title: Getting Information from Operations Manager
 description:
 author: mgoedtel

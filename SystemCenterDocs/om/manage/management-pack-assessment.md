@@ -1,4 +1,5 @@
 ---
+ms.assetid: 7cb61f4f-d184-407e-abc1-f2334de51810
 title:  Management Pack Assessment
 author: mgoedtel
 manager: cfreemanwa

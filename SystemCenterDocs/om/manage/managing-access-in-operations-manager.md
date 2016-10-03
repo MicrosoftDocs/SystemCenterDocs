@@ -1,4 +1,5 @@
 ---
+ms.assetid: 379bdfe5-f9d7-495b-9c89-68a3ffc26202
 title:  Managing Access in Operations Manager
 description:
 author: mgoedtel
