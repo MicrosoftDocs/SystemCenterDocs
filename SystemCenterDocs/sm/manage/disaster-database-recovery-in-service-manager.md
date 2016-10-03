@@ -1,0 +1,26 @@
+---
+title: Database Recovery in Service Manager
+manager: cfreeman
+ms.custom: na
+ms.prod: system-center-2016
+author: bandersmsft
+ms.author: banders
+ms.date: 2016-10-12
+ms.reviewer: na
+ms.suite: na
+ms.technology: service-manager
+ms.tgt_pltfrm: na
+ms.topic: article
+ms.assetid: 3edfc737-9548-416c-a9ec-aa7f11af8c3c
+---
+
+# Database Recovery in Service Manager
+
+>Applies To: System Center 2016 - Service Manager
+
+To restore a database \(which includes the encryption keys\) for System Center 2016 - Service Manager, you rebuild a new computer using the same computer names and instance names as the original. Your disaster recovery strategy for the Service Manager databases should be based on general procedures for SQL&nbsp;Server disaster recovery. For more information, see [Planning for Disaster Recovery](http://go.microsoft.com/fwlink/p/?LinkID=131016). Remember that if you restore a database, you must give the new computer the same name as the original computer and use the same instance name as the original instance.  
+
+ In addition, you must use the script that you created in the [Backing Up Unsealed Management Packs in Service Manager](disaster-backing-up-unsealed-management-packs-in-service-manager.md) section in this guide. You use this script to restore permissions for the recreated database.  
+
+> [!WARNING]  
+>  Long\-term historical data is stored in the Service Manager data warehouse and the current snapshot of the system is stored in the Service Manager database. Recreating the Service Manager data warehouse databases should only be used as a measure of last resort. When possible, you should try to restore the Service Manager data warehouse databases from backups and avoid recreating those databases. If reinstalled, the newly created Service Manager data warehouse databases will be able to synchronize the current snapshot of the system from the Service Manager database-however, historical data will be lost.
