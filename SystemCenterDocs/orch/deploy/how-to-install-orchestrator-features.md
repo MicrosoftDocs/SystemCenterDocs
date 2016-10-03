@@ -241,7 +241,7 @@ Use the following steps to install an System Center 2016 - Orchestrator manageme
     > [!NOTE]
     > If the Runbook Designer is connected to another management server, the **Connect to a server** icon is disabled. Click the **Disconnect** icon before you connect to a different management server.
 
-2.  In the **System Center Orchestrator 2012 Connection** dialog box, enter the name of the server that hosts your Orchestrator management server, and then click **OK**.
+2.  In the **System Center Orchestrator 2016 Connection** dialog box, enter the name of the server that hosts your Orchestrator management server, and then click **OK**.
 
 ### To enable network discovery
 
