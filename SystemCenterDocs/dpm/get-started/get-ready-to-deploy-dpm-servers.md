@@ -1,11 +1,11 @@
 ---
-description:  
+description: Information to help you plan for, and prepare to deploy DPM 2016 in your environment.
 manager:  cfreemanwa
 ms.topic:  article
 author:  markgalioto
 ms.prod:  system-center-threshold
 keywords:  
-ms.date:  2016-07-14
+ms.date:  2016-10-01
 title:  Get ready to deploy DPM servers
 ms.technology:  data-protection-manager
 ms.assetid:  517ce276-b811-4a06-ade3-ff71303ccf5b
@@ -13,7 +13,7 @@ ms.assetid:  517ce276-b811-4a06-ade3-ff71303ccf5b
 
 # Get ready to deploy DPM servers
 
->Applies To: System Center 2016 Technical Preview - Data Protection Manager
+>Applies To: System Center 2016 - Data Protection Manager
 
 There are a few planning steps to consider before you begin to deploy your DPM servers:
 

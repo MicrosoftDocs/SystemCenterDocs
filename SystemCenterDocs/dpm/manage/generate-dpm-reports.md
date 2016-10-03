@@ -5,7 +5,7 @@ ms.topic:  article
 author:  markgalioto
 ms.prod:  system-center-threshold
 keywords:  
-ms.date:  2016-06-30
+ms.date:  2016-10-01
 title:  Generate DPM reports
 ms.technology:  data-protection-manager
 ms.assetid:  f9a97135-1c5b-45a9-b307-bb957fde21d8
@@ -13,7 +13,7 @@ ms.assetid:  f9a97135-1c5b-45a9-b307-bb957fde21d8
 
 # Generate DPM reports
 
->Applies To: System Center 2016 Technical Preview - Data Protection Manager
+>Applies To: System Center 2016 - Data Protection Manager
 
 DPM uses SQL Server Reporting Services to create reports. In the **Reporting** task area you can generate and view reports, schedule automation report generation, managing settings, and subscribe to reports. Alternatively you can generate DPM reports from Operations Manager if you're using it to monitor DPM.
 

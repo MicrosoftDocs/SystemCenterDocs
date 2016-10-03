@@ -1,11 +1,11 @@
 ---
-description:  
+description: This article is a primer for the necessary components to deploy DPM in your environment.
 manager:  cfreemanwa
 ms.topic:  article
 author:  markgalioto
 ms.prod:  system-center-threshold
 keywords:  
-ms.date:  2016-07-22
+ms.date:  2016-10-01
 title:  Data Protection Manager
 ms.technology:  data-protection-manager
 ms.assetid:  e2a65d9d-5038-4a86-a495-f4745b78d040
@@ -13,7 +13,7 @@ ms.assetid:  e2a65d9d-5038-4a86-a495-f4745b78d040
 
 # Preparing your environment for System Center 2016 Data Protection Manager
 
->Applies To: System Center 2016 Technical Preview - Data Protection Manager
+>Applies To: System Center 2016 - Data Protection Manager
 
 Keep these requirements and considerations in mind when you deploy System Center 2012 R2 Data Protection Manager (DPM).
 If you’re evaluating your environment, see [System Requirements for System Center 2016](../../system-requirements/system-requirements-for-system-center-technical-preview.md)

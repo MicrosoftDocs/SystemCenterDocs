@@ -5,7 +5,7 @@ ms.topic:  article
 author:  markgalioto
 ms.prod:  system-center-threshold
 keywords:  
-ms.date:  2016-06-30
+ms.date:  2016-10-01
 title:  Identify compatible tape libraries
 ms.technology:  data-protection-manager
 ms.assetid:  4ed6e64f-21d4-4c93-9979-3f1a48317cbe
@@ -13,7 +13,7 @@ ms.assetid:  4ed6e64f-21d4-4c93-9979-3f1a48317cbe
 
 # Identify compatible tape libraries
 
->Applies To: System Center 2016 Technical Preview - Data Protection Manager
+>Applies To: System Center 2016 - Data Protection Manager
 
 Use the TechNet wiki to find the latest list of [compatible tape libraries for DPM](http://social.technet.microsoft.com/wiki/contents/articles/17105.compatible-tape-libraries-for-system-center-2012-dpm.aspx).
 

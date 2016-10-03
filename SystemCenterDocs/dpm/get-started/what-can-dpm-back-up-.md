@@ -1,11 +1,11 @@
 ---
-description:  
+description: A complete matrix of all workloads, data types, and installations that DPM 2016 protects.  
 manager:  cfreemanwa
 ms.topic:  article
 author:  markgalioto
 ms.prod:  system-center-threshold
 keywords:  
-ms.date:  2016-06-30
+ms.date:  2016-10-01
 title:  What can DPM back up
 ms.technology:  data-protection-manager
 ms.assetid:  2ddbf72a-a82a-497e-afe1-672c8b253ed4
@@ -13,7 +13,7 @@ ms.assetid:  2ddbf72a-a82a-497e-afe1-672c8b253ed4
 
 # What can DPM back up?
 
->Applies To: System Center 2016 Technical Preview - Data Protection Manager
+>Applies To: System Center 2016 - Data Protection Manager
 
 ## Protection support matrix
 
