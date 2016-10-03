@@ -5,7 +5,7 @@ ms.topic:  article
 author:  cfreemanwa
 ms.prod:  system-center-threshold
 keywords:  
-ms.date:  2016-07-01
+ms.date:  2016-09-29
 title:  PowerShell Version Support
 ms.technology:  system-center-2016
 ms.assetid:  4d0bec2e-017d-4d2b-9fce-2d09567777a6
