@@ -84,6 +84,6 @@ Ensure that SQL Server Reporting Services has been correctly installed and confi
 
 - If you would like to manually install the Windows agent from the command line or automate the deployment using a script or other automation solution, review [Install Windows Agent Manually Using MOMAgent.msi](../manage/install-windows-agent-manually-using-momagent.md)
 
-- If you would like to install the Nano Server agent from the command line or automate the deployment using a script or other automation solution, review [../manage/Install Agent on Nano Server](../manage/install-agent-on-nano-server.md)
+- If you would like to install the Nano Server agent from the command line or automate the deployment using a script or other automation solution, review [Install Agent on Nano Server](../manage/install-agent-on-nano-server.md)
 
-- To deploy the agent to UNIX and Linux computers from the Operations console using the Discovery Wizard, review [../manage/Install Agent on UNIX and Linux Using the Discovery Wizard](../manage/install-agent-on-unix-and-linux-using-the-discovery-wizard.md)
+- To deploy the agent to UNIX and Linux computers from the Operations console using the Discovery Wizard, review [Install Agent on UNIX and Linux Using the Discovery Wizard](../manage/install-agent-on-unix-and-linux-using-the-discovery-wizard.md)

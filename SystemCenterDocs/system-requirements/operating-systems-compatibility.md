@@ -48,7 +48,7 @@ Use this information to evaluate if your server-side operating system environmen
 |**Virtual Machine Manager** Library||||||&#8226;|&#8226;|||
 
 > [!IMPORTANT]
-> You must download Windows Management Framework 4.0 if you plan to install DPM on Windows Server 2008 R2. See the [Release Notes for System Center Technical Preview 5](../get-started/Release-Notes-for-System-Center-Technical-Preview-5.md) for more information,
+> You must download Windows Management Framework 4.0 if you plan to install DPM on Windows Server 2008 R2. See the [Release Notes for System Center 2016](../get-started/release-notes.md) for more information,
 
 > [!IMPORTANT]
-> You can perform  fabric operations such as patching, cluster creation, and cluster rolling upgrades, on either Windows Server 2012 R2 or Windows Server 2016 TP3 hosts managed  by System Center 2016 Technical Preview. However   live migration and workload creation are only supported on Windows Server 2016 TP3 hosts and clusters.
+> You can perform fabric operations such as patching, cluster creation, and cluster rolling upgrades, on either Windows Server 2012 R2 or Windows Server 2016 hosts managed by System Center 2016. However, live migration and workload creation are only supported on Windows Server 2016 hosts and clusters.

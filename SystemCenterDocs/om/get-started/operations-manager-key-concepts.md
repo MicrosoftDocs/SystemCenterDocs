@@ -46,7 +46,7 @@ These core components of a management group can exist on a single server, or the
 
 ![Basic Management Group](../media/om2016-basic-management-group.png)
 
-For information about installing management group features, see [Operations Manager 2012 Deployment Guide](../deploy/deploying-system-center-2016-operations-manager.md).
+For information about installing management group features, see [Operations Manager 2016 Deployment Guide](../deploy/deploying-system-center-2016-operations-manager.md).
 
 ### Management servers
 
@@ -143,6 +143,3 @@ For each agent, Operations Manager runs a *health service watcher*, which monito
 -   To learn how to create a management pack, see [Author’s Guide for Operations Manager for System Center 2012](http://go.microsoft.com/fwlink/p/?LinkID=212377)
 
 -   [Operations Manager Community](http://go.microsoft.com/fwlink/p/?LinkID=221328)
-
-
-

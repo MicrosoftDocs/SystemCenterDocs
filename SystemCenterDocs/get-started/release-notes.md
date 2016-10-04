@@ -244,7 +244,7 @@ System Center Operations Manager management server is not affected.
 11. Refresh the Browser
 
 ## System Center 2016 - Orchestrator and Service Management Automation Release Notes
-**The following release notes apply to System Center Technical Preview - Orchestrator and Service Management Automation .**
+**The following release notes apply to System Center 2016 - Orchestrator and Service Management Automation .**
 
 #### Sending telemetry data for SMA and SPF to Microsoft can only be turned off via PowerShell
 **Description:** The default  telemetry data setting is to send data to Microsoft. Since Service Management Automation and Service Provider Foundation do not provide a user interface, you can only change this setting for Service Management Automation or Service Provider Foundation with a  PowerShell cmdlet.
