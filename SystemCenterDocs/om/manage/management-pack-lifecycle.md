@@ -153,5 +153,3 @@ The following are some best practices to follow when managing Operations Manager
 - To understand what an Operations Manager management pack is and how it helps you proactively monitor your services and applications, see [What is in an Operations Manager Management Pack](What-Is-in-an-Operations-Manager-Management-Pack.md).  
  
 - See [How to Import, Export, and Remove an Operations Manager Management Pack](how-to-import-remove-export-management-packs.md) to perform common administrative tasks with management packs in your management group.
-
--  

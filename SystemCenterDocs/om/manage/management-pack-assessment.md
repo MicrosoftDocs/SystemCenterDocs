@@ -54,12 +54,13 @@ The following procedure describes how to use the Get MP option to download a man
 
 6. On the **Select Management Packs** page, in the list of management packs will be the management packs identified in the **Import Type** column with the value of **Not installed** if missing but applicable, or **Update available** if the management pack file is not the most recent version.
 
-   The management pack language matches the default language of the currently installed management pack files.   You can choose to import in another language by clicking on the option **Languages** and in the **Select Languages** dialog box select the appropriate language and then click **OK**.  The **Select Management Packs** page will update the list of management pack files which include the selected languages.
+    The management pack language matches the default language of the currently installed management pack files.   You can choose to import in another language by clicking on the option **Languages** and in the **Select Languages** dialog box select the appropriate language and then click **OK**.  The **Select Management Packs** page will update the list of management pack files which include the selected languages.
 
 7. On the **Select Management Packs** page, the management packs that you selected for import are listed. An icon next to each management pack in the list indicates the status of the selection, as follows:
-   - A green check mark indicates that the management pack can be imported. When all management packs in the list display this icon, click **Install**.
-   - A yellow information icon indicates that the management pack is dependent on one or more management packs that are not in the **Import** list but are available in the catalog. To add the management pack dependencies to the **Import** list, click **Resolve** in the **Status** column. When the **Dependency Warning** dialog box that appears, click **Resolve**.
-   - A red error icon indicates that the management pack is dependent on one or more management packs that are not in the **Import** list and are not available in the catalog. To view the missing management packs, click **Error** in the **Status** column. To remove the management pack with the error from the **Import** list, right-click the management pack, and then click **Remove**.
+
+ - A green check mark indicates that the management pack can be imported. When all management packs in the list display this icon, click **Install**.
+ - A yellow information icon indicates that the management pack is dependent on one or more management packs that are not in the **Import** list but are available in the catalog. To add the management pack dependencies to the **Import** list, click **Resolve** in the **Status** column. When the **Dependency Warning** dialog box that appears, click **Resolve**.
+ - A red error icon indicates that the management pack is dependent on one or more management packs that are not in the **Import** list and are not available in the catalog. To view the missing management packs, click **Error** in the **Status** column. To remove the management pack with the error from the **Import** list, right-click the management pack, and then click **Remove**.
 
     >[!NOTE]
     >When you click **Install**, any management packs in the Install list that display the **Information** or **Error** icon are not imported.
