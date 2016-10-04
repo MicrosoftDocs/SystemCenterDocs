@@ -4,8 +4,7 @@ ms.custom: na
 ms.prod: system-center-threshold
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-  - orchestrator
+ms.technology: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 10b8d20a-7bf8-4af8-86fa-8b936319355b
@@ -14,6 +13,7 @@ ms.author: cfreeman
 ms.date: 2016-10-12
 manager: cfreeman
 ---
+
 # Creating and Testing a Sample Runbook
 
 > Apples To: System Center 2016 - Orchestrator

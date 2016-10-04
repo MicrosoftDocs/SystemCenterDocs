@@ -4,16 +4,16 @@ ms.custom: na
 ms.prod: system-center-threshold
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-  - orchestrator
+ms.technology: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 7dcf9d0a-db63-48ad-9fb8-525147ba62b7
-author: rayne-wiselmanms.author: cfreeman
+author: rayne-wiselman
+ms.author: cfreeman
 ms.date: 2016-10-12
-author: cfreemanwa
 manager: cfreeman
 ---
+
 # Runbook Samples
 
 > Applies To: System Center 2016 - Orchestrator

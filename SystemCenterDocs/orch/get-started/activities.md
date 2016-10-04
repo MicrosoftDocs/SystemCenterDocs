@@ -4,8 +4,7 @@ ms.custom: na
 ms.prod: system-center-threshold
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-  - orchestrator
+ms.technology: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: f4bb384b-146b-4e6b-b61e-9242189c9635
@@ -14,6 +13,7 @@ ms.date: 2016-10-12
 author: cfreemanwa
 manager: cfreeman
 ---
+
 # Activities
 
 > Applies To: System Center 2016 - Orchestrator
@@ -28,9 +28,7 @@ In System Center 2016 - Orchestrator, activities are the building blocks of runb
 
 All activities, regardless of origin or type, share common behaviors. This section describes the types of activities available in Orchestrator and their common behaviors.  
 
-## Activities  
-
-    Describes standard activities available in Orchestrator.  
+## Types of activities  
 
 -   [Monitoring Activities](../manage/monitoring-activities.md)  
 
