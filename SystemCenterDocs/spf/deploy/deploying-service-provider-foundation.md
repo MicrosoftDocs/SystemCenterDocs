@@ -19,7 +19,7 @@ ms.author: raynew
 
 Deploying SPF is a multi-step process. The first step is to plan for the deployment by reading and following the guidance provided in the following topic:
 
--  [Security Planning for SPF](../media/security-planning-for-service-provider-foundation.md)
+-  [Security Planning for SPF](../plan/security-planning-for-service-provider-foundation.md)
 
 After you have your deployment plan in place, make sure your environment has the necessary software SPF depends on setup. The following topics describe how to prepare your environment:
 
