@@ -69,6 +69,7 @@ The following procedure describes how to use the Get MP option to download a man
 
 ## Importing a Management Pack using Get All MPs
 The following procedure describes how to use the Get All MPs option to download management pack for a selected workload.  
+
 1. Log on to the computer with an account that is a member of the Operations Manager Administrators role.
 
 2. In the Operations console, click **Administration**.
