@@ -1,19 +1,17 @@
 ---
 title: Portals in Service Provider Foundation
 description: This article describes the portals that interact with Service Provider Foundation
-ms.custom: na
 ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology:
-  - service-provider-foundation
+ms.technology: service-provider-foundation
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 6d69f4df-9b24-4214-9714-2c838c5cd5f8
+ms.date:  2016-10-12
 author: rayne-wiselman
 ms.author: raynew
 manager: cfreeman
 ---
+
 # Portals in Service Provider Foundation
 >Apples To: System Center 2016
 

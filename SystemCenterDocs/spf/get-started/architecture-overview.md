@@ -1,18 +1,17 @@
 ---
-title: Architecture Overview of Service Provider Foundation
+
 description: This article provides a broad overview of Service Provider Foundation
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology:
-  - service-provider-foundation
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 0cce9ea6-adf3-422d-94c0-2bf15b0c1d95
-author: cfreemanwa
 manager: cfreeman
-ms.author: cfreeman
+ms.topic: article
+author: cfreemanwa
+ms.author: cfreemanms
+ms.prod: system-center-threshold
+ms.tgt_pltfrm: na
+ms.date:  2016-10-12
+title: Architecture Overview of Service Provider Foundation
+ms.technology: service-provider-foundation
+ms.assetid: 0cce9ea6-adf3-422d-94c0-2bf15b0c1d95
+
 ---
 # Architecture Overview of Service Provider Foundation
 >Applies To: System Center 2016
