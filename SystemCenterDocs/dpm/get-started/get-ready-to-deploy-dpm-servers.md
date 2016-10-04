@@ -26,13 +26,13 @@ There are a few planning steps to consider before you begin to deploy your DPM s
 ## <a name="BKMK_Server"></a>Plan for DPM server deployment
 Firstly determine how many servers you'll need:
 
--   DPM can protect up to 600 volumes, 300 replica volumes, and 300 recovery point volumes. To protect this maximum size, DPM needs 120 TB per DPM server, with 80 TB replica space with a maximum recovery point size of 40 TB.
+-   DPM can protect up to 600 volumes. To protect this maximum size, DPM needs 120 TB per DPM server, with 80 TB replica space with a maximum recovery point size of 40 TB.
 
 -   A single DPM server can protect up to 2000 databases (recommended disk size 80 TB).
 
 -   A single DPM server can protect up to 1000 client computers and 100 servers.
 
--   DPM has a snapshot limit of 9,000 disk-based snapshots on a single server, including those retained when you stop protection of a data source. The snapshot limit applies to express full backups and file recovery points, but not to incremental synchronizations. Note that the limit applies regardless of storage pool size.
+-   For protection groups created using DPM 2012 R2, DPM has a snapshot limit of 9,000 disk-based snapshots on a single server, including those retained when you stop protection of a data source. The snapshot limit applies to express full backups and file recovery points, but not to incremental synchronizations. Note that the limit applies regardless of storage pool size. These snapshots limits do not apply to protection groups created using DPM 2016 as DPM 2016 doesn't use disks, but uses volumes.
 
 -   For DPM server capacity planning you can use the [DPM storage calculators](http://www.microsoft.com/en-us/download/details.aspx?displaylang=en&id=24375). These calculators are Excel sheets and are workload specific. They provide guidance about the number of DPM servers required, processor core, RAM, and virtual memory recommendations, and required storage capacity. Because these calculators are workload-specific you'll need to combine the recommended settings and consider them together with the system requirements, and your specific business topology and requirements, including data source and storage locations, compliance and SLA requirements, and disaster recovery needs. Note that the calculators were released for DPM 2010 but remain relevant for later DPM versions.
 

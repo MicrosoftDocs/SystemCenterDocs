@@ -5,7 +5,7 @@ ms.topic:  article
 author:  markgalioto
 ms.prod:  system-center-threshold
 keywords:  
-ms.date:  2016-10-01
+ms.date:  2016-10-04
 title:  How does DPM work
 ms.technology:  data-protection-manager
 ms.assetid:  1490e423-de29-41b3-bee3-cc46140ea55d
@@ -51,7 +51,7 @@ If a replica becomes inconsistent with its data source, DPM generates an alert t
 
 You can schedule a daily consistency check for protection groups or initiate a consistency check manually.
 
-At regular intervals that you can configure, DPM creates a recovery point for the protection group member. A recovery point is a version of the data from which data can be recovered. For files, a recovery point consists of a shadow copy of the replica, which is created by using the Volume Shadow Copy Service (VSS) functionality of the operating system on the DPM server.
+At regular intervals that you can configure, DPM creates a recovery point for the protection group member. A recovery point is a version of the data from which data can be recovered.
 
 ### The Application Data Synchronization Process
 
