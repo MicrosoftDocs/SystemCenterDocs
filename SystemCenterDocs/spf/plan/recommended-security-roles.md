@@ -5,14 +5,13 @@ ms.custom: na
 ms.prod: system-center-threshold
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-  - service-provider-foundation
+ms.technology: service-provider-foundation
 ms.tgt_pltfrm: na
 ms.date: 10-12-2016
 ms.topic: article
 ms.assetid: 1ca67a42-81f9-4df4-ba33-9b5d3fb60098
-author:rayne-wiselman
-manager:cfreeman
+author: rayne-wiselman
+manager: cfreeman
 ms.author: raynew
 ---
 
