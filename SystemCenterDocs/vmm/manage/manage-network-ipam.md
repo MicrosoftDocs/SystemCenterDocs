@@ -22,7 +22,7 @@ An IPAM server helps you to plan, track, and manage the IP address space used in
 
 - With an IPAM server in the VMM fabric, the IP address settings that are associated with logical networks and VM networks in VMM are synchronized using settings stored on the IPAM server.
 - As an administrator you can use the IPAM server to configure and monitor logical networks and their associated network sites and IP address pools. You can also use the IPAM server to monitor the usage of VM networks that you have configured or changed in VMM.
-- Tenants must continue to use the VMM server (not IPAM) to configure VM networks that use network virtualization—in other words, to control the address space that is typically controlled by tenants rather than by VMM administrators.
+- Tenants must continue to use the VMM server (not IPAM) to configure VM networks that use network virtualization.  In other words, to control the address space that is typically controlled by tenants rather than by VMM administrators.
 
 ## Before you start
 
