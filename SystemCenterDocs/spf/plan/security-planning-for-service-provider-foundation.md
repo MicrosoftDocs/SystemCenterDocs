@@ -5,16 +5,16 @@ ms.custom: na
 ms.prod: system-center-threshold
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-  - service-provider-foundation
+ms.technology: service-provider-foundation
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: e2550115-4469-4956-863e-2994275941f5
-ms.date: 8-18-2016
-author:bwren
-manager:cfreeman
+ms.date: 10-12-2016
+author: bwren
+manager: cfreeman
 ms.author: raynew
 ---
+
 # Security Planning for Service Provider Foundation>Apples To: System Center 2016
 
 >Apples To: System Center 2016
