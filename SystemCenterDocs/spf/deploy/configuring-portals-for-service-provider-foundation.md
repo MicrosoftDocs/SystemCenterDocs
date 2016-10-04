@@ -4,16 +4,19 @@ ms.custom: na
 ms.prod: system-center-threshold
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-  - service-provider-foundation
+ms.technology: service-provider-foundation
 ms.tgt_pltfrm: na
+ms.date: 10-12-2016
 ms.topic: article
 ms.assetid: 4c766289-4f3c-4990-be7e-4181f99438ee
 author: bwren
 ms.author: raynew
 manager: cfreeman
 ---
+
 # Configuring Portals for Service Provider Foundation
+>Apples To: System Center 2016
+
 This topic describes how to configure Service Provider Foundation with the following portal applications:  
 
 -  Windows Azure Pack for Windows Server   
