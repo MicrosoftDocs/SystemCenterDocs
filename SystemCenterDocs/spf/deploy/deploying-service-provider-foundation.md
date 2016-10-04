@@ -4,20 +4,22 @@ ms.custom: na
 ms.prod: system-center-threshold
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-  - service-provider-foundation
+ms.technology: service-provider-foundation
 ms.tgt_pltfrm: na
-ms.date: 8-18-2016
+ms.date: 10-12-2016
 ms.topic: article
 ms.assetid: 7c2b9a00-8522-4f67-9853-2a4639442b0d
 author: rayne-wiselman
 manager: cfreeman
 ms.author: raynew
 ---
+
 # Deploying Service Provider Foundation (SPF)
+>Apples To: System Center 2016
+
 Deploying SPF is a multi-step process. The first step is to plan for the deployment by reading and following the guidance provided in the following topic:
 
--  [Security Planning for SPF](../plan/security-planning-for-service-provider-foundation.m
+-  [Security Planning for SPF](../media/security-planning-for-service-provider-foundation.md)
 
 After you have your deployment plan in place, make sure your environment has the necessary software SPF depends on setup. The following topics describe how to prepare your environment:
 
@@ -70,7 +72,7 @@ Once you have your environment setup, you are ready to install SPF.
 
         We recommend that you do not use **Network Service** but instead use a **Service Account** using domain credentials.
 
-        If you select **Network Service**, the account must be a System Center 2016 Technical Preview - Virtual Machine Manager administrator, or it must have enough permission to perform the Service Provider Foundation requests.
+        If you select **Network Service**, the account must be a System Center 2016 - Virtual Machine Manager administrator, or it must have enough permission to perform the Service Provider Foundation requests.
 
     Click **Next**.
 
