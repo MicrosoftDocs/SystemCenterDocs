@@ -28,10 +28,11 @@ Microsoft supports the following upgrade paths.
 |---------|----------------|
 |Data Protection Manager|System Center 2012 R2 with UR10 or later|
 |Operations Manager|System Center 2012 R2 with UR9 or later|
-|Orchestrator|System Center 2012 R2 with UR9 or later|
+|Orchestrator|System Center 2012 R2 with UR8 or later|
+|Service Management Automation| System Center 2012 R2 with UR7 or later|
 |Service Manager|System Center 2012 R2 with UR9 or later|
 |Service Provider Foundation|See the SPF section for details|
-|Virtual Machine Manager|System Center 2012 R2 with UR9 or later
+|Virtual Machine Manager|System Center 2012 R2 with UR9 or later|
 
 ## Component Specific Notes
 

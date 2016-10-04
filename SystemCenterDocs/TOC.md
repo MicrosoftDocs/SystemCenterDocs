@@ -598,6 +598,7 @@
 #### [Service Management Automation sample runbooks](SMA/Manage/Service-Management-Automation-sample-runbooks.md)
 #### [Runbook Operations](SMA/Manage/Runbook-Operations.md)
 ##### [Runbook Settings](SMA/Manage/Runbook-Settings.md)
+##### [Designating a Runbook Worker](SMA/Manage/designating-a-runbook-worker.md) 
 ##### [Starting a Runbook](SMA/Manage/Starting-a-Runbook.md)
 ##### [Scheduling a Runbook](SMA/Manage/Scheduling-a-Runbook.md)
 ##### [Tracking a Runbook Job in Service Management Automation](sma/Manage/Tracking-a-Runbook-Job-in-Service-Management-Automation.md)
