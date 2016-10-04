@@ -1,4 +1,5 @@
 ---
+ms.assetid: 50e3914b-4047-4dce-97f1-0bca1619f4a1
 title: Operations Associated with User Role Profiles
 author: mgoedtel
 manager: cfreemanwa

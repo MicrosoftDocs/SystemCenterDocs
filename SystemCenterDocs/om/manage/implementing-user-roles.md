@@ -1,4 +1,5 @@
 ---
+ms.assetid: 18a1048f-b83c-4961-ba46-a931d48b0cf3
 title: Implementing User Roles
 author: mgoedtel
 manager: cfreemanwa

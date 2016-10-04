@@ -1,4 +1,5 @@
 ---
+ms.assetid: 4220e1c6-c841-4d1b-bb71-ec324c33d217
 title:  Using Management Packs
 description:  
 author: mgoedtel

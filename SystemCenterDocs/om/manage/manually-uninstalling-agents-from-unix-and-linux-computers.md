@@ -1,4 +1,5 @@
 ---
+ms.assetid: 685eb5ff-d934-4426-8b3e-dd3e102d1c42
 title:  Manually Uninstalling Agents from UNIX and Linux Computers
 author: mgoedtel
 manager: cfreemanwa

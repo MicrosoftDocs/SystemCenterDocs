@@ -1,4 +1,5 @@
 ---
+ms.assetid: 5556c9cf-088c-422a-9a21-0612fb674e7c
 title:  Managing Discovery and Agents
 description:  
 author: mgoedtel

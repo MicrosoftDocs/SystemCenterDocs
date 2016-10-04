@@ -1,4 +1,5 @@
 ---
+ms.assetid: e68783da-5a7e-43f3-b7d1-0b82bd597d03
 title: Install Agent on Windows Using the Discovery Wizard
 description:  
 author: mgoedtel

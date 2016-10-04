@@ -1,4 +1,5 @@
 ---
+ms.assetid: 68d9b467-12db-4fec-af94-9f9fa15c5f86
 title: How to Configure sudo Elevation and SSH Keys
 description:
 author: mgoedtel

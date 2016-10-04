@@ -1,4 +1,5 @@
 ---
+ms.assetid: 954164df-4d78-45a7-868e-a7639747b761
 title: How to Enable or Disable a Rule or Monitor
 description:
 author: mgoedtel

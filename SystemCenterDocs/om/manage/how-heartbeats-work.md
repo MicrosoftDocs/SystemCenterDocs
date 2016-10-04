@@ -1,4 +1,5 @@
 ---
+ms.assetid: eebd6b5c-1cce-444d-aa46-a5076d0ebb66
 title: How Heartbeats Work in Operations Manager
 author: mgoedtel
 manager: cfreemanwa

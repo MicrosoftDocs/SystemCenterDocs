@@ -1,4 +1,5 @@
 ---
+ms.assetid: 15cffea3-2fac-4c35-b7a6-8a95634eaf18
 title: How to Create Reports in Operations Manager
 author: mgoedtel
 manager: cfreemanwa

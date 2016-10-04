@@ -1,4 +1,5 @@
 ---
+ms.assetid: 379b60d2-28f3-47d1-bf54-55409cd436ec
 title: Install Agent and Certificate on UNIX and Linux Computers Using the Command Line
 description:
 author: mgoedtel

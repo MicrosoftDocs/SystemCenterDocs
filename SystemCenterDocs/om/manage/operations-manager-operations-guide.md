@@ -1,4 +1,5 @@
 ---
+ms.assetid: 1602b91a-c5d5-442c-9444-ff0d63e038c3
 title:  System Center 2016   Operations Manager Operations Guide
 description:  
 author: mgoedtel

@@ -1,4 +1,5 @@
 ---
+ms.assetid: 315fec65-847e-4621-92ce-1cf50296b43b
 title: Using Operations Manager Shell
 description: 
 author: mgoedtel

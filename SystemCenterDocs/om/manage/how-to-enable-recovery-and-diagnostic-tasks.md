@@ -1,4 +1,5 @@
 ---
+ms.assetid: 6f8cff68-8b1f-49ab-a094-a1d5c17b2482
 title: How to Enable Recovery and Diagnostic Tasks
 description:  
 author: mgoedtel

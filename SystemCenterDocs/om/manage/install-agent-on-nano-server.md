@@ -1,4 +1,5 @@
 ---
+ms.assetid: f257a38b-38b3-4688-8c56-19317fc68d8e
 title:  Install Agent on Nano Server
 description:  
 author: mgoedtel
