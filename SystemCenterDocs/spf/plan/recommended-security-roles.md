@@ -15,6 +15,7 @@ author:rayne-wiselman
 manager:cfreeman
 ms.author: raynew
 ---
+
 # Recommended Security Roles
 
 >Apples To: System Center 2016 - Service Provider Foundation
