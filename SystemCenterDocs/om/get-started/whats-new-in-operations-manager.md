@@ -1,4 +1,5 @@
 ---
+ms.assetid: c46cb9b2-e66e-4f06-9020-2157b063df3a
 title: What's New in Operations Manager
 description:  
 author: mgoedtel

@@ -1,4 +1,5 @@
 ---
+ms.assetid: 55045642-0eba-407d-9482-33494b41a21e
 title: Operations Manager Key Concepts
 description:
 author: mgoedtel
