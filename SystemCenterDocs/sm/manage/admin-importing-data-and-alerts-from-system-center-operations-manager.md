@@ -3,6 +3,8 @@ description:
 manager:  cfreeman
 ms.topic:  article
 author: bandersmsft
+ms.author: banders
+ms.author: banders
 ms.prod:  system-center-2016
 keywords:  
 ms.date: 2016-10-12
