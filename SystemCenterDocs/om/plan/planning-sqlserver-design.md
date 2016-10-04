@@ -97,6 +97,18 @@ Based on these factors, there are several best practices to consider when sizing
 
 The Operations Manager data warehouse database is a single source of failure for the management group, so it can be made highly available using supported failover configurations such as SQL Server Always On Availability Groups or Failover Cluster Instances.  
 
+## SQL Server Always On
+
+SQL Server Always On availability groups support failover environments for a discrete set of user databases (availability databases). Each set of availability databases is hosted by an availability replica. 
+
+With System Center 2016 - Operations Manager, SQL Always On is preferred over failover clustering to provide high availability for databases. All databases except the native mode Reporting Services installation, which uses two databases to separate persistent data storage from temporary storage requirements, can be hosted in an AlwaysOn Availability Group.  
+
+To set up an availability group you'll need to deploy a Windows Server Failover Clustering (WSFC) cluster to host the availability replica, and enable Always On on the cluster nodes. You can then add the Operations Manager SQL Server database as an availability database.
+
+- [Learn more](https://msdn.microsoft.com/en-us/library/ff878487.aspx) about Always On prerequisites
+- [Learn more](https://msdn.microsoft.com/en-us/library/ff929171.aspx) about setting up a WSFC for Always On availability groups
+- [Learn more](https://msdn.microsoft.com/en-us/library/ff878265.aspx) about setting up an availability group
+
 ## Optimizing SQL Server
 
 In general, previous deployment experience with customers shows that performance issues are typically not caused by high resource utilization (i.e. processor or memory) with SQL Server itself; rather it is directly related to the configuration of the storage subsystem.  This is commonly attributed to not following recommended configuration guidance for the storage provisioned for the SQL Server database instance.     
@@ -234,7 +246,7 @@ See also [Operations Manager virtualization support](system-requirements.md#virt
 
 ### Always On and recovery model
 
-Although not strictly an optimization, an important consideration regarding AlwaysOn Availability Group is the fact that, by design, this feature require the databases to be set in the “Full” recovery model. Meaning, the transaction logs are never discarded until either a full backup is done, or only the transaction log.
+Although not strictly an optimization, an important consideration regarding Always On Availability Group is the fact that, by design, this feature require the databases to be set in the “Full” recovery model. Meaning, the transaction logs are never discarded until either a full backup is done, or only the transaction log.
 For this reason, a backup strategy is not an optional but a required part of the AlwaysOn design for Operations Manager databases. Otherwise, with time, disks containing transaction logs will fill up. 
 
 A backup strategy must take into account the details of your environment. A typical backup schedule is given in the following table.
