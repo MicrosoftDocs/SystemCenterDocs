@@ -17,7 +17,7 @@ ms.assetid:  4398d1ea-d63c-4fc8-b7f0-4e8fc80c00cc
 
 
 ## Overview
-Service Management Automation is an IT process automation solution for Windows Azure Pack for Windows Server. It enables yo u to automate the creation, monitoring, and deployment of resources in your Windows Azure Pack environment.
+Service Management Automation is an IT process automation solution for Windows Azure Pack for Windows Server. It enables you to automate the creation, monitoring, and deployment of resources in your Windows Azure Pack environment.
 
 ## Comparison to Other Automation Tools
 The following table compares Orchestrator to the other Microsoft automation tools, Service Management Automation and Microsoft Azure Automation.
