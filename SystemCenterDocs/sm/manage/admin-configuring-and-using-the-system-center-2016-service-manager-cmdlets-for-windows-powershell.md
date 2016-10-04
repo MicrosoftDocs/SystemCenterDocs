@@ -1,5 +1,5 @@
 ---
-description:  
+description: This article provides an introduction to the Service Manager cmdlets for the Windows PowerShell command-line interface and describes how to get started using them.
 manager:  cfreeman
 ms.topic:  article
 author: bandersmsft

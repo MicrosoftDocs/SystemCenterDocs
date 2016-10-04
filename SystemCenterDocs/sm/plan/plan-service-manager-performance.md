@@ -1,5 +1,6 @@
 ---
 title: Service Manager Performance
+manager: cfreeman
 ms.custom: na
 ms.prod: system-center-2016
 author: bandersmsft
@@ -14,6 +15,8 @@ ms.assetid: 82f61204-f9f3-492c-9108-ef3edb5ac622
 ---
 
 # Service Manager Performance
+
+>Applies To: System Center 2016 - Service Manager
 
 Performance for System Center 2016 - Service Manager server roles and features is affected by different factors. Generally, there are three areas where positive and negative performance is most noticeable in Service Manager:  
 

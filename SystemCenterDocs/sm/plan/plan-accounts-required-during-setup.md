@@ -15,6 +15,8 @@ ms.assetid: 54ebd290-b024-4b24-89dd-7c9d482737e3
 
 # Accounts Required During Setup
 
+>Applies To: System Center 2016 - Service Manager
+
 You will have to provide credentials for the accounts in the following table during the installation of the System Center 2016 - Service Manager and data warehouse management servers.  
 
 > [!NOTE]  
@@ -32,7 +34,7 @@ The user accounts and group accounts that are required for the installation of S
 
  When you are assigning Active Directory accounts for use with Service Manager Run As Accounts, it is a best practice to use service accounts. We strongly recommend against using Active Directory user accounts that are associated with individual people.  
 
- For more information about security best practices, download a copy of the Windows Server Security Guide, which is now part of the [Windows Server Security Compliance Management Toolkit](http://go.microsoft.com/fwlink/p/?LinkID=167160) and [The Services and Service Accounts Security Planning Guide](http://go.microsoft.com/fwlink/?LinkID=58270).  
+ For more information about security best practices, download a copy of the Windows Server Security Guide, which is now part of the [Windows Server Security Compliance Management Toolkit](http://go.microsoft.com/fwlink/p/?LinkID=167160).
 
 ## Accounts That You Provide During the Installation of the Data Warehouse Management Server  
 

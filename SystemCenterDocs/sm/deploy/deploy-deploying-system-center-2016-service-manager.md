@@ -1,5 +1,6 @@
 ---
 title: Deploying System Center - Service Manager
+description: This guide helps you deploy System Center 2016 - Service Manager in one of several different scenarios.
 ms.custom: na
 manager:  cfreeman
 ms.prod: system-center-2016

@@ -15,6 +15,8 @@ ms.assetid: 01284a71-2aaa-4d77-a1d8-b2e0ad80e197
 
 # How to Prepare Computers for Service Manager Deployment
 
+>Applies To: System Center 2016 - Service Manager
+
 Use the following procedures to prepare computers for deployment of System Center 2016 - Service Manager.  
 
 ### To prepare computers for Service Manager deployment  

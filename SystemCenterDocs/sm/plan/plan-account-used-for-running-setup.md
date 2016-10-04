@@ -13,7 +13,11 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 45dff8a2-a4d5-4314-8385-c5037870ae0f
 ---
+
 # Account Used for Running Setup
+
+>Applies To: System Center 2016 - Service Manager
+
 This topic describes the permissions that you need when you are installing a Service Manager management server and Service Manager console databases and when you are registering the Service Manager management group with the data warehouse management group in System Center 2016 - Service Manager.
 
 > [!NOTE]  

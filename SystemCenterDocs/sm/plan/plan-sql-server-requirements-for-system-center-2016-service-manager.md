@@ -58,7 +58,6 @@ SQL Server 2008 R2 is available in both Standard and Enterprise editions. System
 
 You must make your decision to use either the Standard or Enterprise editions of SQL Server 2008 before you install System Center 2016 - Service Manager. It is possible to use SQL Server 2008 Standard for the System Center 2016 - Service Manager database and use SQL Server 2008 Enterprise for the data warehouse databases.
 
-For more information comparing SQL Server editions, see [Microsoft SQL Server 2008 Enterprise and Standard Feature Compare](http://go.microsoft.com/fwlink/?LinkId=242074). (Adobe Reader is required.)
 
 > [!NOTE]
 > System Center 2016 - Service Manager was tested using both the Standard and Enterprise editions of SQL Server 2008. No other editions of SQL Server are supported.

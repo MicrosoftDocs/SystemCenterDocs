@@ -15,6 +15,8 @@ ms.assetid: ee5b265f-1ffa-416d-a038-db9d06efc942
 
 # Operations Manager Considerations in System Center 2016 - Service Manager
 
+>Applies To: System Center 2016 - Service Manager
+
 This topic contains information to be aware of when you are combining Operations Manager and Service Manager.  
 
 ## Management Group Names Must be Unique  

@@ -15,6 +15,8 @@ ms.assetid: e9a7de24-e680-4a93-9d81-e8d3bf41a7ce
 
 # Configurations for Deployment Scenarios
 
+>Applies To: System Center 2016 - Service Manager
+
 For performance and scalability planning purposes, we recommend that you plan your deployment topology for System Center 2016 - Service Manager using scenarios that we have tested. While these are not firm guidelines, Microsoft has tested deployment topologies using these scenarios and found that each configuration achieves satisfactory performance.  
 
 ## Test and Small Deployment Scenarios

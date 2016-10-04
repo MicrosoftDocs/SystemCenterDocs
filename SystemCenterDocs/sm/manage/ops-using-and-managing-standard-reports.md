@@ -48,7 +48,7 @@ By default, all System Center 2016 - Service Manager users have access to report
 
 ### To add SSRS permissions  
 
-1.  On the computer on which SRSS is installed, start Report Manager. For example, open http://ReportServerName:80/Reports.  
+1.  On the computer on which SRSS is installed, start Report Manager. For example, open `http://ReportServerName:80/Reports`.  
 
 2.  Locate the folder or report for which you want to grant access permission. For example, locate the SystemCenter and ServiceManager root folders.  
 
@@ -249,7 +249,7 @@ You can display SQL Server Reporting Services \(SSRS\) reports from any source u
 
 ### To add a custom report to the report catalog  
 
-1.  On the server that hosts SSRS, open Report Manager. For example, open http://ReportServerName:80/Reports.  
+1.  On the server that hosts SSRS, open Report Manager. For example, open `http://ReportServerName:80/Reports`.  
 
 2.  Navigate to the System Center\\ServiceManager reports folder, create a new folder, and give it a name. For example, name the folder **Financial Management**.  
 

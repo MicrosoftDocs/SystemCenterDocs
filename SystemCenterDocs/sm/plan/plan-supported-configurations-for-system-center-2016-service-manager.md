@@ -16,6 +16,8 @@ ms.assetid: 847fcf88-bee5-49e5-a783-92ed432db3a4
 
 # Supported Configurations for System Center 2016 - Service Manager
 
+>Applies To: System Center 2016 - Service Manager
+
 This section includes information about the hardware and software requirements for System Center 2016 - Service Manager. Service Manager has been tested up to the workload described in this topic, based on the recommended hardware requirements in this guide. This environment contains one Service Manager management server supporting 80 to 100 concurrent Service Manager consoles. High\-performance storage using 15,000\-RPM SCSI drives is used on the database servers.  
 
  The hardware and software requirements described in this section are based on the following system environment and conditions:  
