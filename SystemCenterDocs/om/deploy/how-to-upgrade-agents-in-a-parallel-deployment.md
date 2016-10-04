@@ -1,4 +1,5 @@
 ---
+ms.assetid: 71cf60f4-e6fb-4250-a9d3-64eff209e0cc
 title:  How to Upgrade Agents in a Parallel Deployment
 description:  
 author: mgoedtel

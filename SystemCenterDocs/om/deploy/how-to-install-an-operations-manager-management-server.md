@@ -1,4 +1,5 @@
 ---
+ms.assetid: dbd26196-14f8-4593-9e4b-5c54ac4edb45
 title:  How to Install an Operations Manager Management Server
 description:  
 author: mgoedtel

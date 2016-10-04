@@ -1,4 +1,5 @@
 ---
+ms.assetid: 89b1617f-73d3-4a5d-9a82-3ef4ab1a9fc3
 title: How to Upgrade an Operations Console to System Center 2016 - Operations Manager
 description:  
 author: mgoedtel

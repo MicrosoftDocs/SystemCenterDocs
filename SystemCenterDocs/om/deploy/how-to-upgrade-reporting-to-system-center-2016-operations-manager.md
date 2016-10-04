@@ -1,4 +1,5 @@
 ---
+ms.assetid: ae000f5e-9d67-4d0d-b093-8d103dce2047
 title:  How to Upgrade Reporting to System Center 2016 - Operations Manager
 description:  
 mauthor: mgoedtel

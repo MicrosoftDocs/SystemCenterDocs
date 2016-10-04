@@ -1,4 +1,5 @@
 ---
+ms.assetid: bb310d9d-b681-4777-aa53-3f13b7615d16
 title: Install Agent Using the MOMAgent.msi Setup Wizard
 description:  
 author: mgoedtel

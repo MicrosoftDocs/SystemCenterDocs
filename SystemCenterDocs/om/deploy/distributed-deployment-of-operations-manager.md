@@ -1,4 +1,5 @@
 ---
+ms.assetid: 2e50e81c-96f5-4a4d-8dd1-dd57470e91be
 title:  Distributed Deployment of Operations Manager
 description:  
 author: mgoedtel

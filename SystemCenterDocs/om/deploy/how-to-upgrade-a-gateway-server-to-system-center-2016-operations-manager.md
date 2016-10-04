@@ -1,4 +1,5 @@
 ---
+ms.assetid: 700dd1e3-9a40-42b9-a366-92592a6be96a
 title:  How to Upgrade a Gateway Server to System Center 2016 - Operations Manager
 description:  
 author: mgoedtel

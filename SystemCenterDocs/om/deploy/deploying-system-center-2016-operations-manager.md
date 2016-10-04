@@ -1,4 +1,5 @@
 ---
+ms.assetid: 2369cbef-5f0d-4fc2-8288-ea315aab20b6
 title:  Deploying System Center 2016 Operations Manager
 description:  
 author: mgoedtel

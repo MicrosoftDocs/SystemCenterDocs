@@ -1,4 +1,5 @@
 ---
+ms.assetid: ac2e1b48-2f24-44c1-8d06-9405b2db9c26
 title:  How to Upgrade a Web Console to System Center 2016   Operations Manager
 description:  
 author: mgoedtel
