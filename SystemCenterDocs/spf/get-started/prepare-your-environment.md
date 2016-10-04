@@ -1,15 +1,12 @@
 ---
 title: Prepare Your Environment for Service Provider Foundation
 description: This topic provides an overview of how to make sure your environment is ready to install Service Provider Foundation.
-ms.custom: na
 ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology:
-  - service-provider-foundation
+ms.technology: service-provider-foundation
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 7329a502-7fd0-4f4f-bebe-cc558589c086
+ms.date:  2016-10-12
 author: rayne-wiselman
 ms.author: raynew
 manager: cfreeman

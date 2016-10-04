@@ -1,18 +1,17 @@
 ---
-title: Architecture Overview of Service Provider Foundation
+
 description: This article provides a broad overview of Service Provider Foundation
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology:
-  - service-provider-foundation
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 0cce9ea6-adf3-422d-94c0-2bf15b0c1d95
-author: cfreemanwa
 manager: cfreeman
-ms.author: cfreeman
+ms.topic: article
+author: cfreemanwa
+ms.author: cfreemanms
+ms.prod: system-center-threshold
+ms.tgt_pltfrm: na
+ms.date:  2016-10-12
+title: Architecture Overview of Service Provider Foundation
+ms.technology: service-provider-foundation
+ms.assetid: 0cce9ea6-adf3-422d-94c0-2bf15b0c1d95
+
 ---
 # Architecture Overview of Service Provider Foundation
 >Applies To: System Center 2016
@@ -22,7 +21,7 @@ Service providers can use Service Provider Foundation technology to offer infras
 ## Overview Diagram
 The following illustration provides a high\-level view of how Service Provider Foundation operates.  
 
-![Overview of Service Provider Foundation](../media/SPFOverview.png "SPFOverview")  
+![Overview of Service Provider Foundation](../media/spfoverview.png "SPFOverview")  
 
 The tenant represents a hoster's customer, and the tenant has assets on the hoster's system. Each tenant has their own administrators, applications, scripts, and other tools.  
 
@@ -32,7 +31,7 @@ A stamp in Service Provider Foundation is a logical scale unit designed for scal
 
 Service Provider Foundation does not configure clouds; instead, it manages their resources. Virtual machines are set to clouds, for example, when they are created for VMM or when they are created by the T:Microsoft.SystemCenter.VirtualMachineManager.Cmdlets.New\-SCVirtualMachine cmdlet.  
 
-![Architecture of Service Provider Foundation](../media/SPFArchitecture.png "SPFArchitecture")  
+![Architecture of Service Provider Foundation](../media/spfarchitecture.png "SPFArchitecture")  
 
 The hoster can have a portal client, which faces the tenant, that provides access to the infrastructure that the hoster has granted. The portal uses an extensible representational state transfer \(REST\) API to communicate with the web service by using the OData protocol. The claims\-based authentication verifies the tenant's identity and associates it with the user role that the hoster assigns.  
 
