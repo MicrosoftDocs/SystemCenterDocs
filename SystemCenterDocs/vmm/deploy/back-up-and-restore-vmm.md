@@ -21,7 +21,7 @@ This article describes the backup and recovery process in a System Center 2016 -
 > [!IMPORTANT]
 > Don't use checkpoints for disaster recovery. Checkpoints do not create full duplicates of the hard disk contents nor do they copy data to a separate volume. A checkpoint can serve as temporary backup before updating an operating system on a virtual machine so that you can roll back the update if the update has any adverse effects. You should use a backup application to back up and recover your data in case of catastrophic data loss.
 
-One option for backing up and recovering VMM is Data Protection Manager (DPM). For more information, see [Data Protection Manager](http://technet.microsoft.com/library/hh758173.aspx).
+One option for backing up and recovering VMM is Data Protection Manager (DPM). For more information, see [Data Protection Manager](../../dpm/data-protection-manager.md).
 
 Data such as Remote Access Authorization (RAA) passwords and the product key can be entered when you re-install VMM. However, some encrypted data such as Virtual Machine Roles cannot be re-entered. You cannot back up and restore such data if you use the Data Protection application programming interface (DPAPI) for backing up VMM the data will be lost if the VMM management server fails.
 
@@ -108,7 +108,7 @@ Back up all files on library shares to a shared folder on a remote file server, 
 
 ## Back up VMM private clouds
 
-To orchestrate and automate the replication and failover of virtual machines located in VMM clouds, you can use Azure Site Recovery Manager. You can replicate in the following ways:
+To orchestrate and automate the replication and failover of virtual machines located in VMM clouds, you can use [Azure Site Recovery Manager](https://azure.microsoft.com/documentation/services/site-recovery/). You can replicate in the following ways:
 
 -   From one on-premises VMM site to another, using Hyper-V replication or SAN replication.
 
@@ -207,9 +207,9 @@ Use the following guidelines to restore registry keys, Active Directory objects,
 ## Post-restore tasks
 Depending on your VMM configuration, you might need to do some of the following tasks after you restore your VMM environment:
 
-## Configure AlwaysOn Availability Groups
+## Configure Always On Availability Groups
 
-If the VMM database was configured by using SQL Server AlwaysOn Availability Groups, you must complete a few tasks to ensure that the database is correctly configured with Availability Groups.
+If the VMM database was configured by using SQL Server Always On Availability Groups, you must complete a few tasks to ensure that the database is correctly configured with an availability group.
 
 ## Reinstall Windows Azure Pack
 If Windows Azure Pack (WAP) was deployed in your environment to support tenants by using VMM, then you"ll have to reinstall it after you restore the VMM environment. For more information about Windows Azure Pack for Windows Server, see [Windows Azure Pack for Windows Server](http://technet.microsoft.com/library/dn296435.aspx).

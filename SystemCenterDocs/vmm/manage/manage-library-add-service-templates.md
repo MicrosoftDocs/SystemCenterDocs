@@ -49,10 +49,9 @@ You can create service templates if you have VMM admin or delegated admin permis
 		- More than one upgrade domain to minimize service interruptions when a tier is updated. VMM will update VMs in the tier according to their upgrade domains. VMM upgrade an upgrade domain at a time. It shuts down VMs in the domain, updates them, brings them online, and moves to the next domain to reduce impact.
 		- The creation of an availability set for the tier. The availability set helps VMs in the service remain available during maintenance. VMM tries to separate VMs in the same availability set by placing them on separate hosts.
 
-
 	- In **Configure Hardware** you'll see the hardware settings for the associated VM template. You can select an alternative hardware profile, or configure hardware settings manually. [Learn more](manage-library-add-profiles.md#create-a-hardware-profile).
 	- In **Configure Operating System** you'll see the operating system settings for the associated VM template. you can select an alternative guest OS profile, or configure settings manually. [Learn more](manage-library-add-profiles.md#create-a-guest-os-profile).
-	- In **Application Configuration** or **SQL Server Configuration** you can select an application/SQL Server profile or configure settings for a new profile. Learn more about [application](manage-libraryadd-profiles.md#create-an-application-profile) and [SQL Server](manage-library-add-profiles.md#create-a-sql-server-profile) profiles.
+	- In **Application Configuration** or **SQL Server Configuration** you can select an application/SQL Server profile or configure settings for a new profile. Learn more about [application](manage-library-add-profiles.md#create-an-application-profile) and [SQL Server](manage-library-add-profiles.md#create-a-sql-server-profile) profiles.
 
 ## Add a VM network to the service template
 
