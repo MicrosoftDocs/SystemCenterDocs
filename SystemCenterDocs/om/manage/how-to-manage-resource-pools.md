@@ -51,7 +51,7 @@ By default, all management servers are members of the resource pools created whe
 
 > [!NOTE]
 > The membership of the All Management Servers Resource Pool is read-only.  To change its membership  from automatic to manual, run the following PowerShell code in the Operations Manager Command Shell:
-> 
+>
 > ```Get-SCOMResourcePool -DisplayName "All Management Servers Resource Pool" | Set-SCOMResourcePool -EnableAutomaticMembership 0```
 
 #### To remove a member from an automatic resource pool
@@ -76,7 +76,7 @@ By default, all management servers are members of the resource pools created whe
 8.  On the **Summary** page, click **Save**.
 
 
-## Configure certificates for UNIX/Linux dedicated resource pools 
+## Configure certificates for UNIX or Linux dedicated resource pools
 
 An additional task must be performed in order to configure management servers that are members of a resource pool dedicated for managing UNIX and Linux computers. Operations Manager uses certificates to authenticate access to the computers it is managing. When the Discovery Wizard deploys an agent, it retrieves the certificate from the agent, signs the certificate, deploys the certificate back to the agent, and then restarts the agent.
 
