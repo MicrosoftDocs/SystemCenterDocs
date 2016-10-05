@@ -74,9 +74,6 @@ You can uninstall an agent from the targeted computer by using the **UNIX/Linux 
 
 - To understand how to approve agents manually installed, review [Process Manual Agent Installations](Process-Manual-Agent-Installations.md).
 
-- To learn how to configure object discovery rules and disable discovery of a specific object, see [[Applying Overrides to Object Discoveries](Applying-Overrides-to-Object-Discoveries.md).
+- To learn how to configure object discovery rules and disable discovery of a specific object, see [Applying Overrides to Object Discoveries](Applying-Overrides-to-Object-Discoveries.md).
 
 - Review [Manually Uninstalling Agents from UNIX and Linux Computers](Manually-Uninstalling-Agents-from-UNIX-and-Linux-Computers.md) to understand what options and steps need to be performed to properly uninstall the agent from your UNIX and Linux computers.
-
-
-
