@@ -5,7 +5,7 @@ ms.topic:  article
 author:  markgalioto
 ms.prod:  system-center-threshold
 keywords:  
-ms.date:  2016-10-01
+ms.date:  2016-10-04
 title:  Data Protection Manager
 ms.technology:  data-protection-manager
 ms.assetid:  e2a65d9d-5038-4a86-a495-f4745b78d040
@@ -15,7 +15,7 @@ ms.assetid:  e2a65d9d-5038-4a86-a495-f4745b78d040
 
 >Applies To: System Center 2016 - Data Protection Manager
 
-Keep these requirements and considerations in mind when you deploy System Center 2012 R2 Data Protection Manager (DPM).
+Keep these requirements and considerations in mind when you deploy System Center 2016 Data Protection Manager (DPM).
 If you’re evaluating your environment, see [System Requirements for System Center 2016](../../system-requirements/system-requirements-for-system-center-technical-preview.md)
 
 ## First things first
@@ -61,7 +61,7 @@ DPM uses SQL Server as a database to store backup information for workloads, ser
 |Requirement|Details|
 |-----------|-------|
 |Hardware|See [Hardware Requirements for System Center 2016](../../system-requirements/minimum-hardware-recommendations-for-system-center-technical-preview.md)|
-|Software|Windows Server 2012 R2, Datacenter and Standard editions<br/> Windows Server 2012, Datacenter and Standard editions<br/> Windows Server 2008 R2 with SP1, Standard and Enterprise editions|
+|Software|Windows Server 2016, Datacenter and Standard editions<br/>Windows Server 2012 R2, Datacenter and Standard editions<br/> Windows Server 2012, Datacenter and Standard editions<br/> Windows Server 2008 R2 with SP1, Standard and Enterprise editions|
 |Installation prerequisites|Microsoft .NET Framework 4.0<br/> Windows Installer 4.5 or later versions<br/> Microsoft Visual C++ 2008 Redistributable<br/> Windows PowerShell 3.0<br/> Windows Single Instance Store (SIS)<br/> Microsoft Application Error Reporting<br/> Setup automatically installs these if they aren't already installed.|
 |Limitations|You can install DPM on the operation system volume or on a different volume.<br/> DPM is designed to run on a dedicated, single-purpose server. Don't install DPM on:<br/> - a server running Application Server role<br/> - An Operations Manager Management server<br/> - A server running Exchange<br/> - A server running on a cluster node<br/> DPM isn't supported on the Turkish language version of any of the supported Windows Server versions.|
 
@@ -92,7 +92,7 @@ DPM uses SQL Server as a database to store backup information for workloads, ser
 
 |Requirement|Details|
 |-----------|-------|
-|Domain|The DPM server should be in a Windows Server 2012 R2, Windows Server 2012, Windows Server 2008 R2, Windows Server 2008, or Windows Server 2003 Active Directory domain.|
+|Domain|The DPM server should be in a Windows Server 2016, Windows Server 2012 R2, Windows Server 2012, Windows Server 2008 R2, Windows Server 2008, or Windows Server 2003 Active Directory domain.|
 |Domain trust|DPM supports data protection across forests as long as you establish a forest-level, two-way trust between the separate forests.<br/> <br/>DPM can protect servers and workstations across domains within a forest that has a two-way trust relationship with the DPM server domain. If there's no two-way trust DPM can't provide protection for computers in workgroups or untrusted domains. For more information see [Back up and restore workloads in workgroups and untrusted domains]().|
 |Network configuration|If you're protecting data over a wide area network (WAN), you'll need a minimum bandwidth of 512 kilobits per second (Kbps).<br/> DPM doesn't support disjointed namespaces.|
 

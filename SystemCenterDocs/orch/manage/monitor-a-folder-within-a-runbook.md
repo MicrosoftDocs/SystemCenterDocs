@@ -4,8 +4,7 @@ ms.custom: na
 ms.prod: system-center-threshold
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-  - orchestrator
+ms.technology: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 9be981fc-6708-4d00-a42a-2a15f0addbf0
@@ -14,6 +13,7 @@ ms.author: cfreeman
 ms.date: 2016-10-12
 manager: cfreeman
 ---
+
 # Monitor a Folder within a Runbook
 
 > Apples To: System Center 2016 - Orchestrator

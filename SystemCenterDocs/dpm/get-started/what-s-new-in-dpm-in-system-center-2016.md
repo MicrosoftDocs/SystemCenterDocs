@@ -97,7 +97,7 @@ This backs up RCT-enabled VMs deployed in various configurations. The following 
 
 #### Meet backup SLA during cluster operating system rolling upgrade
 
-Cluster OS rolling upgrade is a feature of Windows Server 2016 used to upgrade the cluster nodes' operating system, from Windows Server 2012 R2 to Windows Server 2016, without stopping the Hyper-V or Scale-Out File Server (SOFS) workloads. Cluster OS rolling upgrade ensures protection is not interrupted during operating system upgrades. This sustained protection meets the backup SLA, reinforces continuity, and provides peace of mind for backup administrators.
+Cluster OS rolling upgrade is a feature of Windows Server 2016 used to upgrade the cluster nodes' operating system, from Windows Server 2012 R2 to Windows Server 2016, without stopping the Hyper-V or Scale-Out File Server (SOFS) workloads. Cluster OS rolling upgrade ensures protection is not interrupted during operating system upgrades. This sustained protection meets the backup SLA, reinforces continuity, and provides peace of mind for backup administrators. For detailed information on the cluster OS rolling upgrade process, see the article, [Cluster OS Rolling Upgrade Process](https://technet.microsoft.com/en-us/windows-server-docs/failover-clustering/cluster-operating-system-rolling-upgrade.md#cluster-os-rolling-upgrade-process).
 
 To enable uninterrupted protection, run the following steps for each node:
 
