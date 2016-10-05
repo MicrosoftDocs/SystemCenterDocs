@@ -187,10 +187,14 @@ All these dimensions have the following attributes, which you can use for slicin
           </NamedCalculation>
     ```
 
-The NamedCalculation ID should have string `__DateKey` in the end, and this field in the data warehouse should not be NULL or 0.
-2.  Seal the managment pack and import it into Service Manager.
+    The NamedCalculation ID should have string `__DateKey` in the end, and this field in the data warehouse should not be NULL or 0.
+
+2.  Seal the management pack and import it into Service Manager.
+
 3.  Run the MPSyncJob on the data warehouse and wait until the management pack is marked **Completed**.
+
 4.  Process all the cubes, or wait for automatic processing overnight.
+
 5.  Cubes are updated with new date dimensions, as defined above.
 
 
