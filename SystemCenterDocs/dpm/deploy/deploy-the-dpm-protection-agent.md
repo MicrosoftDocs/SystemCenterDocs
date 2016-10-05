@@ -61,7 +61,7 @@ Configure an incoming exception for sqlservr.exe for the DPM instance of SQL Ser
 
     -   The first time you use the wizard DPM queries Active Directory to get a list of available computers. After the first installation, DPM stores the list of computers in its database, which is updated once each day by the auto-discovery process.
 
-    -   To find a computer in another domain that has a two-way trust relationship with the domain that the DPM server is located in, you must type the fully qualified domain name of the computer that you want to protect (for example, *<Computer1>***.Domain1.contoso.com**, where *Computer1* is the name of the computer that you want to protect, and *Domain1.contosa.com* is the domain to which the target computer belongs.
+    -   To find a computer in another domain that has a two-way trust relationship with the domain that the DPM server is located in, you must type the fully qualified domain name of the computer that you want to protect (for example, *&lt;Computer1&gt;*.Domain1.contoso.com**, where *Computer1* is the name of the computer that you want to protect, and *Domain1.contoso.com* is the domain to which the target computer belongs.
 
     -   The **Advanced** button page is enabled only when there is more than one version of a protection agent available for installation on the computers. You can use this option to install a previous version of the protection agent that was installed before you upgraded DPM server to a more recent version.
 
@@ -105,7 +105,7 @@ Configure an incoming exception for sqlservr.exe for the DPM instance of SQL Ser
 
     To change the directory, do the following:
 
-    -   For a 64-bit computer type **cd /d *&lt;assigned drive letter*&gt;*:\Program Files\Microsoft DPM\DPM\ProtectionAgents\RA\3.0.*&lt;build number&gt;*.0\amd64** where *&lt;assigned drive letter&gt;* is the drive letter that you assigned in the previous step and *&lt;build number&gt;* is the latest DPM build number. For example: **cd /d X:\Program Files\Microsoft DPM\DPM\ProtectionAgents\RA\3.0.7696.0\amd64**
+    -   For a 64-bit computer type **cd /d *&lt;assigned drive letter*&gt;:\Program Files\Microsoft DPM\DPM\ProtectionAgents\RA\3.0.*&lt;build number&gt;*.0\amd64** where *&lt;assigned drive letter&gt;* is the drive letter that you assigned in the previous step and *&lt;build number&gt;* is the latest DPM build number. For example: **cd /d X:\Program Files\Microsoft DPM\DPM\ProtectionAgents\RA\3.0.7696.0\amd64**
 
     -   For a 32-bit computer type: **cd /d *&lt;assigned drive letter&gt;*:\Program Files\Microsoft DPM\DPM\ProtectionAgents\RA\3.0.*&lt;build number&gtl;*.0\i386**
          where *&lt;assigned drive letter&gt;* is the drive that you mapped in the previous step and *&lt;build number&gt;* is the latest DPM build number.
@@ -137,15 +137,15 @@ You can also install [DPM on an RODC](https://technet.microsoft.com/en-US/librar
 ## <a name="BKMK_Attach"></a>Attach the agent
 After you've installed the DPM agent manually you'll need to attach the agent to the DPM server.
 
-1.  In DPM Administrator Console, on the navigation bar, click **Management** > **Agents**. In the **Actions**pane, click **Install**.
+1.  In DPM Administrator Console, on the navigation bar, click **Management** > **Agents**. In the **Actions** pane, click **Install**.
 
-2.  On the **Select Agent Deployment Method**page, select **Attach agents** > **Computer on a trusted domain** > **Next**.  The Protection Agent Installation Wizard opens.
+2.  On the **Select Agent Deployment Method** page, select **Attach agents** > **Computer on a trusted domain** > **Next**.  The Protection Agent Installation Wizard opens.
 
-3.  On the Select Computers page, DPM displays a list of available computers in the same domain as the DPM server. Select one or more computers (50 maximum), from the **Computer name**list >**Add** > **Next**.
+3.  On the Select Computers page, DPM displays a list of available computers in the same domain as the DPM server. Select one or more computers (50 maximum), from the **Computer name** list > **Add** > **Next**.
 
     -   If this is the first time you have used the wizard, DPM queries Active Directory to get a list of potential computers. After the first installation, DPM displays the list of computers in its database, which is updated once each day by the auto-discovery process.
 
-    -   To add multiple computers by using a text file, click the **Add From File**button, and in the **Add From File**dialog box, type the location of the text file or click Browse to navigate to its location.
+    -   To add multiple computers by using a text file, click the **Add From File** button, and in the **Add From File** dialog box, type the location of the text file or click Browse to navigate to its location.
 
 4.  On the Enter Credentials page, type the user name and password for a domain account that is a member of the local Administrators group on all selected computers. In the **Domain** box, accept or type the domain name of the user account that you are using to install the protection agent on the target computer. This account may belong to the domain that the DPM server is located in or to a trusted domain. If you are installing a protection agent on a computer across a trusted domain, enter your current domain user credentials. You can be a member of any trusted domain, and you must be a member of the local Administrators group on all selected computers that you want to protect.
 

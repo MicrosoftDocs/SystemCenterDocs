@@ -154,7 +154,7 @@ Run an unattended install as follows:
 ## <a name="BKMK_DC"></a>Install DPM on a domain controller
 If you want to set up DPM on an RODC you'll need to do a couple of steps before you set up SQL Server and install DPM.
 
-1.  Create the security groups and accounts needed for DPM. To do this click **Start** > **Administrative Tools** >**Active Directory Users and Computers** > **Domain/Builtin** and create these security groups. For each group use the default setting for Scope (Global) and Group type (Security):
+1.  Create the security groups and accounts needed for DPM. To do this click **Start** > **Administrative Tools** > **Active Directory Users and Computers** > **Domain/Builtin** and create these security groups. For each group use the default setting for Scope (Global) and Group type (Security):
 
     -   DPMDBReaders$<*Computer Name*>; MSDPMTrustedMachines$<*Computer Name*>;
         DPMRADCOMTrustedMachines$<*Computer Name*>;
@@ -185,7 +185,7 @@ If you want to set up DPM on an RODC you'll need to do a couple of steps before 
     -   SQLServerFDHostUser<*Computer Name*><*Instance Name*>
 
     -   where <*Computer Name*> is the computer name of the domain controller on which SQL Server 2008 will be installed.
-         - <*Instance Nam*e> is the name of the instance of SQL Server that you plan to create on the domain controller. The instance name can be any name other than the default DPM instance name (MSDPM2010).
+         - <*Instance Name*> is the name of the instance of SQL Server that you plan to create on the domain controller. The instance name can be any name other than the default DPM instance name (MSDPM2010).
          - <*Instance ID*> by default is assigned by SQL Server Setup and indicates that the group applies to Reporting Services (MSRS) for the major version of the instance (10) of SQL Server. For this release, this value is MSRS1A0_50.
 
 5.  On the primary domain controller, add the domain user account that you created earlier (the DPMSQLSvcsAcct account) to the following groups:
