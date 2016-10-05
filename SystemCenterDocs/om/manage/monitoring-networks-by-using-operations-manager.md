@@ -19,7 +19,7 @@ System Center 2016 - Operations Manager can monitor physical network routers and
   
 Operations Manager can show you how your network is connected to the computers you are monitoring through the [Network Vicinity View](https://technet.microsoft.com/library/1a28a022-698a-4bb9-8611-7e2fa799b372) dashboard. Using Network Vicinity View, you can see how your topology is laid out, as well as the health of each network device, computer, and the connection between each.  
   
-Operations Manager can discover and monitor network devices that use the Simple Network Management Protocol (SNMP\ v1, v2c, and v3. For a complete list of supported devices, see [Network Devices Supported for Discovery by Operations Manager](../../om/manage/Network-Devices-Supported-for-Discovery-by-Operations-Manager.md).  
+Operations Manager can discover and monitor network devices that use the Simple Network Management Protocol (SNMP v1, v2c, and v3. For a complete list of supported devices, see [Network Devices Supported for Discovery by Operations Manager](Network-Devices-Supported-for-Discovery-by-Operations-Manager.md).  
 
 With System Center 2016 - Operations Manager, a Network Monitoring Management Pack generation tool is included to help you create a custom management pack to add extended monitoring support for new network devices, without the need of Microsoft device certification.  In addition to that, this tool enables you to add monitoring of additional device components such as fan, temperature sensor, voltage sensor and power supply. You can download the tool and user guide from the [Microsoft Download Center](http://download.microsoft.com/download/D/8/C/D8C9D294-2434-4E6F-89BF-76BB6BC15921/NetMonMPGeneratorTool.docx). 
   
