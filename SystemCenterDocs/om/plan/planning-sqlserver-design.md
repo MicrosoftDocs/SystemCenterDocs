@@ -3,7 +3,7 @@ ms.assetid: 5a3a8b98-1113-45bf-9484-2c807ec3d013
 title: SQL Server Design Considerations
 description:
 author: mgoedtel
-manager:  cfreemanwa
+manager:  cfreeman
 ms.date: 2016-10-12
 ms.custom: na
 ms.prod: system-center-threshold
@@ -56,11 +56,11 @@ The following table helps you identify the firewall ports required by SQL Server
 
 | Scenario | Port | Direction | Operations Manager Role | 
 |-----------|---------------|---------------|---------------|
-| SQL Server hosting Operations Manager databases | TCP 1433 \* | Inbound | management server, Web console (for Application Advisor and Application Diagnostics) | 
+| SQL Server hosting Operations Manager databases | TCP 1433 \* | Inbound | management server and Web console (for Application Advisor and Application Diagnostics) | 
 | SQL Server Browser service | UDP 1434 | Inbound | management server |
 | SQL Server Dedicated Admin Connection | TCP 1434 | Inbound | management server | 
 | SQL Server Always On Availability Group Listener | Administrator configured port | Inbound | management server
-| SQL Server Reporting Services hosting Operations Manager Reporting Server | TCP 80 (default)/443 (SSL) | management server and Operations console | 
+| SQL Server Reporting Services hosting Operations Manager Reporting Server | TCP 80 (default)/443 (SSL) | Inbound | management server and Operations console | 
 
 \* While TCP 1433 is the standard port for the default instance of the Database Engine, if you create a named instance on a standalone SQL Server or have deployed a SQL Always On Availability Group, a custom port will be defined and should be documented for reference so that you properly configure your firewalls and enter this information during setup.      
 

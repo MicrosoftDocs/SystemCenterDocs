@@ -134,6 +134,8 @@
 ###### [Required capabilities for UNIX and Linux computers](om/manage/required-capabilities-for-unix-and-linux-accounts.md)
 ###### [Configuring SSL ciphers](om/manage/configuring-ssl-ciphers.md)
 ###### [Administering and configuring the UNIX/Linux agent](om/manage/administering-and-configuring-the-unix-linux-agent.md)
+#### [Operations Manager monitoring scenarios](om/manage/operations-manager-monitoring-scenarios.md)
+##### [Monitoring networks with Operations Manager](om/manage/monitoring-networks-by-using-operations-manager.md)
 #### [General tasks in Operations Manager](om/manage/general-tasks-in-operations-manager.md)
 ##### [Managing alerts](om/manage/managing-alerts.md)
 ###### [How heartbeats work](om/manage/how-heartbeats-work.md)
