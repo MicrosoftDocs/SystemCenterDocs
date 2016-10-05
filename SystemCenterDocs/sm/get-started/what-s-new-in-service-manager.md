@@ -6,7 +6,7 @@ author:  bandersmsft
 ms.author: banders
 ms.prod:  system-center-2016
 keywords:  
-ms.date:  2016-08-19
+ms.date:  2016-10-12
 title:  What's new in Service Manager
 ms.technology:  service-manager
 ms.assetid:  3eeb3265-88e0-47ed-b761-07f4e0634959
@@ -221,7 +221,7 @@ Spell check is now enabled for work item forms. It is enabled for 17 out of the 
 A new console task *Open Activity in Progress*, was added for service requests and change requests. This console task’s link is enabled when a work item moves to the *in progress* state. Clicking the this task’s link opens the current in-progress activity. For work items that don’t have any in-progress activity, the localized message *No Activity with In Progress state is found for the workitem.* is displayed. In previous versions of Service Manager, you had to open the work item, navigate to the **Activities** tab, and then click the *In progress* activity. Now you can do the same thing with a single click.
 
 ## Support for Lync 2013 and Skype for Business
-System Center 2016 - Service Manager includes updates that supports integration with Lync 2013 and Skype for Business in Microsoft Office suite 2013 and  2016. For information about contacting a user using Lync or Skype for Business, see [Contact a User from an Incident Form](../Manage/Contact-a-User-from-an-Incident-Form.md).
+System Center 2016 - Service Manager includes updates that supports integration with Lync 2013 and Skype for Business in Microsoft Office suite 2013 and 2016. For information about contacting a user using Lync or Skype for Business, see [Contact a User from an Incident Form](../Manage/Contact-a-User-from-an-Incident-Form.md).
 
 
 ## Setup changes to support SQL AlwaysOn installation
@@ -229,9 +229,9 @@ The Setup wizard allows you to easily install Service Manager in complex configu
 
 Now you can configure the SQL management server, instance name and port number together.
 
-![](../media/sm-sqlserver-config.png)
+![configure SQL management server and port ](../media/sm-sqlserver-config.png)
 
 ## Support for .NET Framework 4.5.1
 
 ### Additional support
-As always, we recommend that you perform typical or routine tasks in the test environment where you have installed this release to help ensure that no new problems occur resulting from the update. If you find any problems, please let us know at [ServiceManager@microsoft.com](mailto:ServiceManager@microsoft.com?SM2016TP4) and title the email SM2016TP4 *subject*.
+As always, we recommend that you perform typical or routine tasks in the test environment where you have installed this release to help ensure that no new problems occur resulting from the update. If you find any problems, please let us know at [ServiceManager@microsoft.com](mailto:ServiceManager@microsoft.com?SM2016) and title the email SM2016 *subject*.
