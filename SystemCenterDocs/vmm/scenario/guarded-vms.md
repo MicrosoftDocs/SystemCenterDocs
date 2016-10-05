@@ -16,7 +16,7 @@ ms.technology:  virtual-machine-manager
 
 This article describes how to deploy shielded virtual machines in the System Center 2016 - Virtual Machine Manager (VMM) compute fabric.
 
-Guarded fabric helps guarantee the security of Hyper-V virtual machines. As a cloud service provider, or private cloud administrator, you can deploy a guarded fabric that typically consists of a server running the host guardian service (HSG), one or more guarded Hyper-V host servers, and a set of shielded VMs running on those hosts. [Learn more](https://technet.microsoft.com/windows-server-docs/security/guarded-fabric-and-shielded-vms) about guarded fabric.
+Guarded fabric helps guarantee the security of Hyper-V virtual machines. As a cloud service provider, or private cloud administrator, you can deploy a guarded fabric that typically consists of a server running the host guardian service (HGS), one or more guarded Hyper-V host servers, and a set of shielded VMs running on those hosts. [Learn more](https://technet.microsoft.com/windows-server-docs/security/guarded-fabric-and-shielded-vms) about guarded fabric.
 
 You can deploy shielded VMs in VMM in a couple of ways:
 
@@ -28,8 +28,8 @@ You can deploy shielded VMs in VMM in a couple of ways:
 
 You set up shielded VMs in the VMM fabric as follows:
 
-1. **Prepare an HSG server**: You should have an HSG server deployed. [Learn more](https://technet.microsoft.com/windows-server-docs/security/guarded-fabric-setting-up-the-host-guardian-service-hgs)
-2. **Set up VMM**: You’ll need to configure global HSG settings in VMM, and set up at least one guarded host. If guarded hosts belong to a cloud, the cloud should be enabled to support shielded VMs. [Learn more](guarded-hosts.md)
+1. **Prepare an HGS server**: You should have an HGS server deployed. [Learn more](https://technet.microsoft.com/windows-server-docs/security/guarded-fabric-setting-up-the-host-guardian-service-hgs).
+2. **Set up VMM**: You’ll need to configure global HGS settings in VMM, and set up at least one guarded host. If guarded hosts belong to a cloud, the cloud should be enabled to support shielded VMs. [Learn more](guarded-hosts.md).
 3. **Prepare shielded data files**: To use the signed template disks in the VMM library, tenants must prepare one or more shielding data files. This file contains all the secrets that a tenant needs to deploy a VM, including the unattend file used to specialize the VM, certificates, administrator account passwords. The file also specifies which guarded fabric a tenant trusts to host their VM, and information about the signed template disks. The file is encrypted and can only be read by a host in a guarded fabric trusted by the tenant. [Learn more](https://technet.microsoft.com/windows-server-docs/security/guarded-fabric-tenant-creates-shielding-data).
 4. **Set up host group**: For easy management, we recommend that shielded VMs should be placed in a dedicated VMM host group.
 5. **Verify existing VM requirements**: If you want to convert an existing VM to shielded, note the following:
