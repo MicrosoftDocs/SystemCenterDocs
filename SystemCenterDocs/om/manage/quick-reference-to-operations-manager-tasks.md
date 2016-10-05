@@ -22,7 +22,7 @@ The following table gives a quick reference for where to perform common tasks an
 |------------------------|-----------|
 |Check for problems in a management group|-  Check the **Management Group Health** view in the Operations Manager folder in the **Monitoring** workspace<br> - See the **State and Alerts** summary on the Monitoring Overview page  Check **Active Alerts** in the **Monitoring** workspace<br> - Check **Task Status** in the **Monitoring** workspace|
 |Start monitoring a computer|On the Administration Overview page, click **Configure computers and devices to manage**. For more information, see [Managing Discovery and Agents](Managing-Discovery-and-Agents.md).|
-|Create or modify a resource pool|In the **Administration** workspace, click **Resource Pools**. For more information, see [How to Create a Resource Pool](How-to-Manage-Resource-Pools.md#to-create-a-resource-pool) and [Managing Resource Pools for UNIX and Linux Computers](How-to-Manage-Resource-Pools.md#configure-certificates-for-unix/linux-dedicated-resource-pools).|
+|Create or modify a resource pool|In the **Administration** workspace, click **Resource Pools**. For more information, see [How to Create a Resource Pool](How-to-Manage-Resource-Pools.md#to-create-a-resource-pool) and [Managing Resource Pools for UNIX and Linux Computers](How-to-Manage-Resource-Pools.md#configure-certificates-for-unix-or-linux-dedicated-resource-pools).|
 |-   Create a group<br>-   View available groups<br>-   View group members<br>-   View state of a group<br>-   View diagram of a group<br>-   Modify a group|Click **Groups** in the **Authoring** workspace<br><br>For instructions, see [Creating and Managing Groups](creating-and-managing-groups.md)|
 |Create a view|In the **Monitoring** workspace or **My Workspace**, at the bottom of the navigation pane, click **New View**. For more information, see [Using Views in Operations Manager](https://technet.microsoft.com/library/hh212694.aspx).|
 |Customize the settings of a view for your own use|In the **Monitoring** workspace, right-click a view in the navigation pane, and then click **Personalize view**. For more information, see [How to Personalize a View in Operations Manager](https://technet.microsoft.com/library/hh270022%28v=sc.12%29.aspx).|
@@ -35,11 +35,7 @@ The following table gives a quick reference for where to perform common tasks an
 |Receive notifications of an alert in email, instant message, or text message.|Right-click an alert, point to **Notification subscription**, and then click **Create**. For more information, see [Subscribing to Alert Notifications](https://technet.microsoft.com/library/hh212725%28v=sc.12%29.aspx).|
 |Investigate a gray agent.|In the **Monitoring** workspace, in the **Operations Manager\Agent Details\Agent Health State** view, in the **Agent State from Health Service Watcher** section, click the gray agent, and then in the **Tasks** pane, click **Show Gray Agent Connectivity Data**. For more information, see [Not Monitored and Gray Agents](https://support.microsoft.com/help/10129/troubleshooting-gray-agent-states-in-operations-manager-2012).|
 |Stop monitoring a computer temporarily.|In the **Monitoring** workspace, click **Windows Computers**, right-click the computer you want to stop monitoring, and click **Maintenance Mode**. For more information, see [How to Suspend Monitoring Temporarily by Using Maintenance Mode](How-to-Suspend-Monitoring-Temporarily-by-Using-Maintenance-Mode.md).|
-|||
 
 ## Next steps
 
-- To learn more about what to manage, how to manage, or how to support an Operations Manager management group, see the [Operations Guide for System Center 2016 - Operations Manager](Operations-Manager-Operations-Guide.md)
-
-
-
+To learn more about what to manage, how to manage, or how to support an Operations Manager management group, see the [Operations Guide for System Center 2016 - Operations Manager](Operations-Manager-Operations-Guide.md)
