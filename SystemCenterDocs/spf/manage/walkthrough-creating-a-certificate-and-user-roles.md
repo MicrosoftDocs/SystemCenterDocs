@@ -5,14 +5,14 @@ ms.custom: na
 ms.prod: system-center-threshold
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-  - service-provider-foundation
+ms.technology: service-provider-foundation
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 1b546c86-2458-4449-87ee-e48b6be4228a
 author: bwren
 manager: cfreeman
 ms.author: raynew
+ms.date: 10/12/2016
 ---
 
 # Walkthrough: Creating a Certificate and User Roles for Service Provider Foundation

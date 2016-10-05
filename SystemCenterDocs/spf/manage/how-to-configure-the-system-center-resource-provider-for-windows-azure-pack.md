@@ -4,16 +4,18 @@ ms.custom: na
 ms.prod: system-center-threshold
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-  - service-provider-foundation
+ms.technology: service-provider-foundation
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 95bdbd33-82f5-4474-8472-f5b9dd9524ea
 author: bwren
 ms.author: raynew
 manager: cfreeman
+ms.date: 10/12/2016
 ---
+
 # How to Configure the System Center Resource Provider for Windows Azure Pack
+>Apples To: System Center 2016
 
 > [IMPORTANT]  
 > This topic should be used only for the earlier versions of Windows Azure Pack for Windows Server when the Service Provider Foundation could not be changed in the management portal for administrators. This is no longer the case. For more information, see [Register the Service Provider Foundation Endpoint for Virtual Machine Clouds](http://technet.microsoft.com/en-us/library/dn457792.aspx).  
