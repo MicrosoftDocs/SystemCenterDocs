@@ -3,6 +3,7 @@ description: Information to help you identify your storage needs, and to prepare
 manager:  cfreemanwa
 ms.topic:  article
 author:  markgalioto
+ms.author: markgal
 ms.prod:  system-center-threshold
 keywords:  
 ms.date:  2016-10-04
@@ -44,7 +45,7 @@ You can back up protected DPM data to Azure using the Azure Backup service. This
 
 When you set up a protection group in DPM you select disk for short-term storage and then you enable online backup to Azure.  Note that:
 
--   There are a number of prerequisites and limitations.[Read more](https://azure.microsoft.com/en-us/documentation/articles/backup-azure-dpm-introduction/#requirements-and-limitations).
+-   There are a number of prerequisites and limitations. [Read more](https://azure.microsoft.com/en-us/documentation/articles/backup-azure-dpm-introduction/#requirements-and-limitations).
 
 -   You'll need to set up Azure Backup before you enable backup to the cloud for a protection group in the DPM console. [Learn](https://azure.microsoft.com/en-us/documentation/articles/backup-azure-dpm-introduction/) how to set up Azure Backup with DPM.
 

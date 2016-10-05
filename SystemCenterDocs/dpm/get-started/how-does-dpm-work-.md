@@ -1,8 +1,9 @@
 ---
 description: This article provides an overview of how DPM protects the various data types, the recovery process, and protection policies.
-manager:  cfreemanwa
+manager:  cfreeman
 ms.topic:  article
 author:  markgalioto
+ms.author: markgal
 ms.prod:  system-center-threshold
 keywords:  
 ms.date:  2016-10-04
@@ -39,7 +40,8 @@ DPM stores a separate replica for each protection group member in the storage po
 - A storage group on an Exchange server or server cluster
 - A database of an instance of SQL Server or server cluster
 
->[AZURE.NOTE] DPM does not protect data stored in USB drives.
+>[!NOTE]
+> DPM does not protect data stored in USB drives.
 
 ### The File Data Synchronization Process
 

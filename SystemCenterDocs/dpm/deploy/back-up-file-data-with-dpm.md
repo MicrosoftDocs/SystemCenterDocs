@@ -3,6 +3,7 @@ description:
 manager:  cfreemanwa
 ms.topic:  article
 author:  markgalioto
+ms.author: markgal
 ms.prod:  system-center-threshold
 keywords:  
 ms.date:  2016-10-01
@@ -19,9 +20,9 @@ You can back up file data on server and client computers.
 
 ## Before you start
 
-1.  **Deploy DPM** - Verify that DPM is installed and deployed correctly. If you haven't see:
+1.  **Deploy DPM** - Verify that DPM is installed and deployed correctly. We recommend that you review the following articles:
 
-    -   System requirements for DPM
+    -   [System requirements](../../system-requirements/system-requirements.md)
 
     -   [What can DPM back up?](../get-started/What-can-DPM-back-up-.md)
 

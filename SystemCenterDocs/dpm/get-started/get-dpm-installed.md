@@ -149,7 +149,7 @@ Run an unattended install as follows:
     # ReportingMachineDomainName = <Domain to which the SQL Server computer is attached>
     ```
 
-6.  After saving the file, at an elevated command prompt on the installation server, type: **start /wait [media location]\setup.exe /i /f <path>\DPMSetup.ini /l <path>\dpmlog.txt**. [media location] indicates where you'll run setup.exe from. <path> is the location of the .ini file.
+6.  After saving the file, at an elevated command prompt on the installation server, type: `start /wait [media location]\setup.exe /i /f <path>\DPMSetup.ini /l <path>\dpmlog.txt`. [media location] indicates where you'll run setup.exe from. `<path>` is the location of the .ini file.
 
 ## <a name="BKMK_DC"></a>Install DPM on a domain controller
 If you want to set up DPM on an RODC you'll need to do a couple of steps before you set up SQL Server and install DPM.
@@ -178,15 +178,15 @@ If you want to set up DPM on an RODC you'll need to do a couple of steps before 
 
     -   SQLServerReportServerUser$<*Instance ID*><*Instance Name*>
 
-    -   ;SQLServerMSASUser$<*Computer Name*><*Instance Name*>
+    -   SQLServerMSASUser$<*Computer Name*><*Instance Name*>
 
     -   SQLServerDTSUser$<*Computer Name*>
 
     -   SQLServerFDHostUser<*Computer Name*><*Instance Name*>
 
     -   where <*Computer Name*> is the computer name of the domain controller on which SQL Server 2008 will be installed.
-         <*Instance Nam*e> is the name of the instance of SQL Server that you plan to create on the domain controller. The instance name can be any name other than the default DPM instance name (MSDPM2010).
-         <*Instance ID*> by default is assigned by SQL Server Setup and indicates that the group applies to Reporting Services (MSRS) for the major version of the instance (10) of SQL Server. For this release, this value is MSRS1A0_50.
+         - <*Instance Nam*e> is the name of the instance of SQL Server that you plan to create on the domain controller. The instance name can be any name other than the default DPM instance name (MSDPM2010).
+         - <*Instance ID*> by default is assigned by SQL Server Setup and indicates that the group applies to Reporting Services (MSRS) for the major version of the instance (10) of SQL Server. For this release, this value is MSRS1A0_50.
 
 5.  On the primary domain controller, add the domain user account that you created earlier (the DPMSQLSvcsAcct account) to the following groups:
     SQLServerReportServerUser$<*ComputerName*>$MSRS10.<*InstanceID*>
@@ -202,7 +202,7 @@ If you want to set up DPM on an RODC you'll need to do a couple of steps before 
 
 7.  Then you can install DPM:
 
-    -   On the **SQL Server Settings** page  type the name of the instance of SQL Server that you installed in procedure as localhost\\<Instance Name>, and then type the credentials for the first domain user account you created (the DPMSQLSvcsAcct account.  This account must be a member of the local Administrators group on the domain controller where the remote instance is installed. After setup is complete, you can remove the user account from the local Administrators group.
+    -   On the **SQL Server Settings** page  type the name of the instance of SQL Server that you installed in procedure as localhost\\&lt;Instance Name&gt;, and then type the credentials for the first domain user account you created (the DPMSQLSvcsAcct account).  This account must be a member of the local Administrators group on the domain controller where the remote instance is installed. After setup is complete, you can remove the user account from the local Administrators group.
 
     -   On the **Security Settings** page you'll need to enter the same password that you used when you created the DPMR$MACHINENAME user account earlier.
 

@@ -3,6 +3,7 @@ description:
 manager:  cfreemanwa
 ms.topic:  article
 author:  markgalioto
+ms.author: markgal
 ms.prod:  system-center-threshold
 keywords:  
 ms.date:  2016-10-01
@@ -24,7 +25,7 @@ DPM provides backup and recovery for Exchange 2013. You can back up the followin
 ## Prerequisites and limitations
 Before you deploy DPM to protection Exchange 2013 verify the deployment prerequisites:
 
--   Review the [Release Notes for System Center Technical Preview 5](../../get-started/Release-Notes-for-System-Center-Technical-Preview-5.md) and [What's supported and what isn't for DPM?](../get-started/What-s-supported-and-what-isn-t-for-DPM-.md) to check for any Exchange issues.
+-   Review the [Release Notes for System Center 2016](../../get-started/release-notes.md) and [What's supported and what isn't for DPM?](../get-started/What-s-supported-and-what-isn-t-for-DPM-.md) to check for any Exchange issues.
 
 -   Make sure the same versions of Eseutil.exe and Ese.dll are installed on both the Exchange and the DPM server. For example, if you're using the 64-bit version of DPM, you must have the 64-bit version of eseutil.exe and ese.dll.  If you update these files on the Exchange server you'll need to update them on the DPM server too. The .ese and .eseutil files are usually in C:\Program Files\Microsoft\Exchange Server\V15\Bin folder.
 
@@ -34,7 +35,7 @@ Before you deploy DPM to protection Exchange 2013 verify the deployment prerequi
 
     2.  Type the fsutil command as follows to create a hard link for eseutil.exe: `fsutil hardlink create <link> <target>`
 
-        For example in a typical installation type: `fsutil hardlink create "c:\\program files\\microsoft\\dpm\\bin\\eseutil.exe" "c:\\program files\\microsoft\\Exchange\\bin\\eseutil.exe"`
+        For example in a typical installation type: `fsutil hardlink create "c:\program files\microsoft\dpm\bin\eseutil.exe" "c:\program files\microsoft\Exchange\bin\eseutil.exe"`
 
 -   Install the [Visual C++ Redistributable for Visual Studio 2012 Update 1](http://www.microsoft.com/download/details.aspx?id=30679).
 
@@ -141,7 +142,7 @@ However native protection might not be enough if application errors, corruptions
 
 14. In **Specify online retention policy** you can specify how the recovery points created from the daily/weekly/monthly/yearly backups are retained in Azure.
 
-15. In **Choose online replication** specify how the initial full replication of data will occur. You can replicate over the network, or do an offline backup (offline seeding). Offline backup uses the Azure Import feature. [Read more](https://azure.microsoft.com/en-in/documentation/articles/backup-azure-backup-import-export/).
+15. In **Choose online replication** specify how the initial full replication of data will occur. You can replicate over the network, or do an offline backup (offline seeding). Offline backup uses the Azure Import feature. [Read more](https://azure.microsoft.com/documentation/articles/backup-azure-backup-import-export/).
 
 16. On the  **Summary** page review your settings. After you click **Create Group** initial replication of the data occurs. When it finishes the protection group status will show as **OK** on the **Status** page. Backup then takes place in line with the protection group settings.
 
@@ -158,7 +159,7 @@ After the protection group's been created the initial replication occurs and DPM
 
 2.  Click **SMTP Server**, type the server name, port, and email address from which notifications will be sent. The address must be valid.
 
-3.  In **Authenticated SMTP server** , type a user name and password.The user name and password must be the domain account name of the person whose "From" address is described in the previous step; otherwise, notification delivery fails.
+3.  In **Authenticated SMTP server** , type a user name and password. The user name and password must be the domain account name of the person whose "From" address is described in the previous step; otherwise, notification delivery fails.
 
 4.  To test the SMTP server settings, click **Send Test E-mail**, type the e-mail address where you want DPM to send the test message, and then click **OK**. Click **Options** > **Notifications** and select the types of alerts about which recipients want to be notified. In **Recipients** type the e-mail address for each recipient to whom you want DPM to send copies of the notifications.
 
