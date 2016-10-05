@@ -16,7 +16,7 @@ ms.technology:  virtual-machine-manager
 
 This article provides an overview of deploying Hyper-V guarded hosts and shielded virtual machines in the System Center 2016 - Virtual Machine Manager (VMM) compute fabric.
 
-Guarded fabric helps guarantee the security of Hyper-V virtual machines. As a cloud service provider, or private cloud administrator, you can deploy a guarded fabric that typically consists of a server running the host guardian service (HSG), one or more guarded Hyper-V host servers, and a set of shielded VMs running on those hosts. [Learn more](https://technet.microsoft.com/windows-server-docs/security/guarded-fabric-and-shielded-vms) about guarded fabric.
+Guarded fabric helps guarantee the security of Hyper-V virtual machines. As a cloud service provider, or private cloud administrator, you can deploy a guarded fabric that typically consists of a server running the host guardian service (HGS), one or more guarded Hyper-V host servers, and a set of shielded VMs running on those hosts. [Learn more](https://technet.microsoft.com/windows-server-docs/security/guarded-fabric-and-shielded-vms) about guarded fabric.
 
 ## Why do I need to protect VMs?
 
@@ -34,7 +34,7 @@ Virtual machines contain an operating system, applications, and dependencies in 
 
 ## Guarded fabric deployment in VMM
 
-To deploy guarded fabric, you need to make sure you have the deployment prerequisites in place, set up HSG, set up guarded hosts to work with HSG, and deploy shielded VMs.
+To deploy guarded fabric, you need to make sure you have the deployment prerequisites in place, set up HGS, set up guarded hosts to work with HGS, and deploy shielded VMs.
 
 VMM can be optionally deployed with guarded fabric to provide the following:
 
