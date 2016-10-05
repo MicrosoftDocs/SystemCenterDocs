@@ -6,7 +6,7 @@ author:  markgalioto
 ms.author: markgal
 ms.prod:  system-center-threshold
 keywords:  
-ms.date:  2016-10-04
+ms.date:  2016-10-12
 title:  Data Protection Manager
 ms.technology:  data-protection-manager
 ms.assetid:  e2a65d9d-5038-4a86-a495-f4745b78d040
@@ -101,6 +101,6 @@ DPM uses SQL Server as a database to store backup information for workloads, ser
 
 |Requirement|Details|
 |-----------|-------|
-|Central Console|Use the Central Console to administer multiple DPM servers from a single location.<br/><br/> Install it on a server running System Center 2012 Operations Manager. You'll also need to install the Operations Management agent on the DPM server. See [Install Central Console]().|
-|DPM Management Shell|Install the DPM Management Shell on a client computer to directly manage one or more DPM servers using Windows PowerShell. Install it from the DPM Setup.<br/><br/> The DPM Management Shell can be installed on computers running Windows Server 2008 R2, Windows Server 2012, Windows Server 2012 R2, Windows 7, Windows 8, Windows 8.1. The computer must be running at least .NET Framework 4.0.|
-|Remote Desktop Connection|Set up a Remote Desktop Connection to manage a single DPM server.<br/><br/> The DPM Administrator console can't be installed on a remote computer.<br/><br/> The DPM Management Shell can be installed on computers running Windows Server 2008 R2, Windows Server 2012, Windows Server 2012 R2, Windows 7, Windows 8, Windows 8.1. The computer must be running at least .NET Framework 4.0.|
+|Central Console|Use the Central Console to administer multiple DPM servers from a single location.<br/><br/> Install it on a server running System Center 2016 Operations Manager. You'll also need to install the Operations Management agent on the DPM server. See [Install Central Console]().|
+|DPM Management Shell|Install the DPM Management Shell on a client computer to directly manage one or more DPM servers using Windows PowerShell. Install it from the DPM Setup.<br/><br/> The DPM Management Shell can be installed on computers running Windows Server 2008 R2, Windows Server 2012, Windows Server 2012 R2, Windows Server 2016, Windows 7, Windows 8, Windows 8.1, and Windows 10. The computer must be running at least .NET Framework 4.0.|
+|Remote Administration Console|Set up a Remote Administration Console to manage a single DPM server.<br/><br/> The DPM Administrator console can't be installed on a remote computer.<br/><br/> The DPM Management Shell can be installed on computers running Windows Server 2008 R2, Windows Server 2012, Windows Server 2012 R2, Windows Server 2016, Windows 7, Windows 8, Windows 8.1, and Windows 10. The computer must be running at least .NET Framework 4.0.|

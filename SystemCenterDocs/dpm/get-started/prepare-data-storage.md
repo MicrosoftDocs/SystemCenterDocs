@@ -6,7 +6,7 @@ author:  markgalioto
 ms.author: markgal
 ms.prod:  system-center-threshold
 keywords:  
-ms.date:  2016-10-04
+ms.date:  2016-10-12
 title:  Prepare data storage
 ms.technology:  data-protection-manager
 ms.assetid:  ebe047b4-0737-4ce5-8fe2-d5e0cfd9b852
@@ -31,8 +31,8 @@ In DPM you'll need to select short and long-term storage for backed up data.
 
 |Storage|Short-term|Long-term|Characteristics|
 |-----------|---------------|--------------|-------------------|
-|Azure cloud|Suitable for short-term storage|Suitable for long-term storage up to 3360 days|-   Efficient and cost-effective offsite storage solution for short and long-term storage.<br />-   Azure can be used as storage for Hyper-V, SQL Server, and file server data. Azure can only be used to backup data from servers running Windows Server 2016, Windows Server 2012 R2, Windows Server 2012, or Windows Server 2008 R2 with SP1.<br />-   DPM must be running on System Center 2012 SP1 or later to use Azure Backup.|
-|Tape|Some workloads can be backed up directly to tape (D2T) for short-term storage.<br /><br />These include file data (volumes, shares, folders), system state, SQL Server, Hyper-V, and Exchange databases not configured on a DAG.|All workloads can be backed up to tape for long-term offsite storage (D2D2T)|-   Short-term backup to tape might be useful for data that doesn't change often and thus doesn't require frequent backup.<br />-   Long-term offsite tape storage is useful for data which must be kept in order to fulfil statutory obligations<br />-   When backing up to tape DPM only supports incremental backup to tape for file data (volumes, shares, folders). Backing up workload data to tape runs a full backup.<br />-   If you're using tape for both long-term and short-term protection, DPM creates copies of the latest short-term full backup in order to generate the long-term tape backup. We recommend that you schedule the short-term protection backup to run a day before the long-term backup. That way you can be sure you're using the latest short-term backup in order to create the long-term backup.<br />-   If you're using disk for short-term back up and tape for long-term, the long-term backup will be taken from the disk replica.<br />-   Data recovery from tape might be slow, and thus better suited to data with a high recovery point objective (RPO) that doesn't need to accessed and recovered within a short critical period after failure.<br />-   You can't free up or erase a tape that contains valid recovery points. You'll need to remove the sources from a protection group and expire the recovery points, or modify the protection group settings to clear tape protection. To expiry a tape you mark it as free and then unmark it and recatalog.<br />-   Tape backup and recovery might require manual intervention such as tape rotations.<br />-   Long-term storage capacity can be increased by adding more tapes.<br />-   A tape library or standalone tape drive must be physically attached to the DPM server. The tape library can be direct SCSI attached or SAN.|
+|Azure cloud|Suitable for short-term storage|Suitable for long-term storage|-   Efficient and cost-effective offsite storage solution for short and long-term storage.<br />-   Azure can be used as storage for Hyper-V, SQL Server, and file server data. Azure can only be used to backup data from servers running Windows Server 2016, Windows Server 2012 R2, Windows Server 2012, or Windows Server 2008 R2 with SP1.<br />-   DPM must be running on System Center 2012 SP1 or later to use Azure Backup.|
+|Tape|Some workloads can be backed up directly to tape (D2T) for short-term storage.<br /><br />These include file data (volumes, shares, folders), system state, SQL Server, Hyper-V, and Exchange databases not configured on a DAG.|All workloads can be backed up to tape for long-term offsite storage (D2D2T)|-   Short-term backup to tape might be useful for data that doesn't change often and thus doesn't require frequent backup.<br />-   Long-term offsite tape storage is useful for data which must be kept in order to fulfil statutory obligations<br />-   If you're using tape for both long-term and short-term protection, DPM creates copies of the latest short-term full backup in order to generate the long-term tape backup. We recommend that you schedule the short-term protection backup to run a day before the long-term backup. That way you can be sure you're using the latest short-term backup in order to create the long-term backup.<br />-   If you're using disk for short-term back up and tape for long-term, the long-term backup will be taken from the disk replica.<br />-   Data recovery from tape might be slow, and thus better suited to data with a high recovery point objective (RPO) that doesn't need to accessed and recovered within a short critical period after failure.<br />-   You can't free up or erase a tape that contains valid recovery points. You'll need to remove the sources from a protection group and expire the recovery points, or modify the protection group settings to clear tape protection. To expiry a tape you mark it as free and then unmark it and recatalog.<br />-   Tape backup and recovery might require manual intervention such as tape rotations.<br />-   Long-term storage capacity can be increased by adding more tapes.<br />-   A tape library or standalone tape drive must be physically attached to the DPM server. The tape library can be direct SCSI attached or SAN.|
 |Disk|All data backed up to DPM can be stored on disk for short-term storage (D2D)|No long term storage to disk.|-   Disks provide a quick method of data backup and recovery. It's useful for data that has a low RPO and thus needs to be recovered quickly after failure.<br />-   Disks can provide redundancy using disk technologies such as RAID.<br />-   Maximum disk retention is 448 days.<br />-   Disk backup has no impact on running workloads.|
 
 ## <a name="BKMK_Azure"></a>Prepare cloud storage (Azure Backup)
@@ -49,14 +49,6 @@ When you set up a protection group in DPM you select disk for short-term storage
 
 -   You'll need to set up Azure Backup before you enable backup to the cloud for a protection group in the DPM console. [Learn](https://azure.microsoft.com/documentation/articles/backup-azure-dpm-introduction/) how to set up Azure Backup with DPM.
 
--   When you back up a protection group to Azure you can retain data for up to 3360 days. In Azure Backup each backup is stored as a recovery point. The maximum amount of recovery points is 120 for daily synchronization, but you can create a less granular backup policy.
-
-    |Synchronize every x weeks|Maximum retention algorithm|Maximum retention (days)|
-    |-----------------------------|-------------------------------|------------------------------|
-    |1|120 x7 x 1|840|
-    |2|120 x 7 x 2|1680|
-    |3|120 x 7 x 3|2520|
-    |4|120 x 7 x 4|3360|
 
 ## <a name="BKMK_Disk"></a>Prepare disk storage
 DPM backs up data to disk for short-term storage by saving data to the DPM storage pool. The storage pool is the set of disks and volumes on which the DPM  server stores the recovery points for the protected data. Before you can store data on disk you'll need at least one disk or volume in a storage pool. You can use any of the following for the storage pool:
@@ -126,10 +118,6 @@ After the storage pool is set up, when you create protection groups that include
 -   Available free tapes are decremented as tapes are allocated to long-term or short-term backup. If no new tape is available for a long-term backup an alert is issued.
 
 -   If short-term backups are configured to use tape and the full backup option is used, each full backup job will require a new free tape.
-
--   If short-term backups are configured to use tape and the full/incremental option is used, the full backups will require a new free tape, and the incremental backups will be appended to a single separate tape.
-
-    Example: If a full backup to tape is scheduled weekly and incremental backups to tape are scheduled daily, then the first full backup will go to a new free tape and all subsequent incremental backups will be appended to another new free tape. If a full backup job fails before it completes, all subsequent incremental jobs will use the existing tape that has valid previous incremental backups.
 
 -   If you trigger two different "create recovery point (tape)" actions for two protection group members, DPM create two tape backup jobs, and two tapes will be required. If you trigger a single "create recovery point (tape)" action for two protection group members, a single tape it used. This ensures that data for selected protection group members is collocated for ad-hoc backups to the same tape.
 
