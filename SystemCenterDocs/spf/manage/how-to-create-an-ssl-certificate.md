@@ -4,15 +4,16 @@ ms.custom: na
 ms.prod: system-center-threshold
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-  - service-provider-foundation
+ms.technology: service-provider-foundation
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: a8bc784f-c9c7-4601-bf2c-4a6264db7ed1
 author: bwren
 ms.author: raynew
 manager: cfreeman
+ms.date: 10/12/2016
 ---
+
 # How to Create an SSL Certificate for Testing Service Provider Foundation
 >Apples To: System Center 2016
 

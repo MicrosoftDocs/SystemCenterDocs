@@ -5,15 +5,16 @@ ms.custom: na
 ms.prod: system-center-threshold
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-  - service-provider-foundation
+ms.technology: service-provider-foundation
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 6c3c412d-34be-4311-8d8a-1f74f2bfba8f
 author: bwren
 manager: cfreeman
 ms.author: raynew
+ms.date: 10/12/2016
 ---
+
 # Parameters for Runbooks Invoked from Service Provider Foundation
 >Apples To: System Center 2016
 

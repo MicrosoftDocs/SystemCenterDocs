@@ -5,14 +5,14 @@ ms.custom: na
 ms.prod: system-center-threshold
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-  - service-provider-foundation
+ms.technology: service-provider-foundation
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 4acda26b-e58f-4b48-9cce-4286743bf72c
 author: bwren
 manager: cfreeman
 ms.author: raynew
+ms.date: 10/12/2016
 ---
 
 # Importing Gallery Items in Service Provider Foundation

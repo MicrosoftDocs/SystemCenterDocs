@@ -12,9 +12,9 @@ ms.assetid: 975d9b1d-d2d5-404c-8e54-961d64ad2ab4
 author: rayne-wiselman
 manager: cfreeman
 ms.author: raynew
-ms.date: 2016-10-12
-
+ms.date: 10/12/2016
 ---
+
 # Manage Service Provider Foundation
 >Apples To: System Center 2016
 
