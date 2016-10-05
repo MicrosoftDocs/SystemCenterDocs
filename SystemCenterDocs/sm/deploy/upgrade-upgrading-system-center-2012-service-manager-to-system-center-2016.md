@@ -39,7 +39,7 @@ This guide will show you how to upgrade from System Center 2012 R2 - Service Man
 
 ## Recommendations for Upgrading to Service Manager 2016
 
-- Refer to [System Requirements for System Center Technical Preview](../../system-requirements/system-requirements.md)
+- Refer to [System Requirements for System Center](../../system-requirements/system-requirements.md)
 - Upgrade Service Manager 2012 R2 to Service Manger 2016 first, then upgrade your operating system to Windows Server 2016.
 - The order that you upgrade SQL Server and the server operating system should not matter.
 - For Service Manager data warehouse database restoration, the Reporting database also needs to be restored **after** you install the data warehouse.
