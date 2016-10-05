@@ -166,7 +166,7 @@ Reports aren't scheduled by default in DPM. To start creating and saving histori
 
 2.  Select **Run the <name of report> according to the schedule options**.
 
-3.  On the **Schedule** tab, select schedule options, including frequency, how to group, the time of the day to generate, the granularity. (granularity is limited by frequency so that if the frequency is weekly then so is the granularity), the time period to be included in the report data, and the number of copies to retain in history.
+3.  On the **Schedule** tab, select schedule options, including frequency, how to group, the time of the day to generate, and the granularity. Granularity is limited by frequency. So, if the frequency is weekly, then so is the granularity, the time period to be included in the report data, and the number of copies to retain in history.
 
 ### View reports
 In the DPM Administrator Console you can display both new and historical reports in Internet Explorer. You can use the Reporting Services Web toolbar at the top of report to customize, export or print it.

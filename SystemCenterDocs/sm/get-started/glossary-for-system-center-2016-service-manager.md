@@ -3,6 +3,7 @@ description:
 manager:  cfreemanwa
 ms.topic:  article
 author:  bandersmsft
+ms.author: banders
 ms.prod:  system-center-threshold
 keywords:  
 ms.date:  2016-06-28

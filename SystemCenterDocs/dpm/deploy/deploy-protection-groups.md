@@ -17,7 +17,7 @@ ms.assetid:  2a4f4ec8-6185-4fe9-8120-e4dc3b6c9409
 
 A DPM protection group is a collection of data sources, such as volumes, shares, or application workloads which have common backup and restore settings. The protection group settings specify:
 
--   **Data sources** - The servers, computers, and workloads you want to protect
+-   **Data sources** - The servers, computers, and workloads you want to protect.
 
 -   **Back-up storage** - How the protected data should be backed up in the short-term and long-term.
 
@@ -27,7 +27,7 @@ A DPM protection group is a collection of data sources, such as volumes, shares,
 
 -   **Initial replication** - How the initial replication of data should be handled, using either over the network or manually offline.
 
--   **Consistency checks** - How replicated data should be checked for consistency
+-   **Consistency checks** - How replicated data should be checked for consistency.
 
 
 The topics in this section provide guidelines for making the decisions involved in creating a protection group.
@@ -35,7 +35,7 @@ The topics in this section provide guidelines for making the decisions involved 
 ## Plan protection groups
 You'll need to decide:
 
--   How you want to group resources you want to back up into protection groups
+-   How you want to group resources you want to back up into protection groups.
 
 -   How will you store the backed up protection group data?
 

@@ -48,7 +48,7 @@ Before setting up a DPM backup for VMM using VMM Express Writer note the followi
 
 ## Before you start
 
--   Review the [release notes](http://technet.microsoft.com/en-us/library/jj860394.aspx) and read about any VMM backup issues in [What's supported and what isn't for DPM?](../get-started/What-s-supported-and-what-isn-t-for-DPM-.md)
+-   Review the [release notes](../../get-started/release-notes.md) and read about any VMM backup issues in [What's supported and what isn't for DPM?](../get-started/What-s-supported-and-what-isn-t-for-DPM-.md)
 
 -   Make sure that the VMM machines you want to back up  are in the DPM server domain, or in a domain with a two-way trust relationship with the DPM domain.
 

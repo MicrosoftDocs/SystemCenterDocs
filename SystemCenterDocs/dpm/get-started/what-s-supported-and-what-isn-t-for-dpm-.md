@@ -1,8 +1,9 @@
 ---
 description: This article explains the supported deployment options for DPM 2016.
-manager:  cfreemanwa
+manager:  cfreeman
 ms.topic:  article
 author:  markgalioto
+ms.author: markgal
 ms.prod:  system-center-threshold
 keywords:  
 ms.date:  2016-10-01
@@ -37,7 +38,7 @@ This topic summarizes some of the common support information you might need when
 
 **Issue**: Operating system not supported.
 
-**Workaround**: Install System Center 2016 Technical Preview SP1 in order to get DPM running on a server running Windows Server 2012.
+**Workaround**: Install System Center 2016 in order to get DPM running on a server running Windows Server 2012.
 
 
 ### System Center 2012 - DPM with SP1 can't be installed on servers running Windows Server 2012 R2
@@ -51,7 +52,7 @@ This topic summarizes some of the common support information you might need when
 
 **Workaround**: None. All DPM servers sharing a library must be running the same version of DPM.
 
-### Upgrading System Center 2010 directly to System Center Technical Preview isn't supported
+### Upgrading System Center 2010 directly to System Center 2016 isn't supported
 **Issue**: Upgrade isn't supported.
 
 **Workaround**: You'll need to upgrade to DPM 2012 R2 first.
