@@ -84,7 +84,7 @@ During the wizard you select the host groups for which the load balancer is avai
   - When selecting logical networks for frontend affinity the associated network site with the reserved VIP address range should be available to the host groups associated with the load balancer.
   - For backend affinity you'll select the logical networks to which you want to make the load balancer available for connections from the VMs in a service tier.
 
-7. In **Provider** click the load balancer provider. Click **Test **to check the configuration.
+7. In **Provider** click the load balancer provider. Click **Test** to check the configuration.
 8. In **Summary** verify the settings and click **Finish**. The **Job** dialog box appears. Wait for a **Completed** status and check in the **Provider** column that the provider is active.
 
 ### Set up NLB
@@ -107,6 +107,6 @@ NLB is automatically included as a load balancer in VMM. As long as you've set u
 
 When the service is deployed, VMM automatically selects a VIP from the reserved range in the static IP address pool, and assigns it to the load-balanced service tier. To enable users to connect to the service, after the service is deployed you need to determine the VIP and configure a DNS entry for it.
 
-1. After the service is deployed click **Fabric ** > **Networking** > **Load Balancers**.
+1. After the service is deployed click **Fabric** > **Networking** > **Load Balancers**.
 2. Click **Show** > **Service** > **Load Balancer Information for Services** and expand the service to see which VIP is assigned.
 3. Request that the DNS administrator manually create a DNS entry for the VIP. The entry should be the name that users will specify to connect to the service. For example servicename.contosol.com.
