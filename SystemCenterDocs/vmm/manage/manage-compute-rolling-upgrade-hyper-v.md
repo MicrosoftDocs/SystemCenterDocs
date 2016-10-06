@@ -1,10 +1,10 @@
 ---
-title: Perform a rolling upgrade of a Hyper-V host cluster to Windows Server Technical Preview
+title: Perform a rolling upgrade of a Hyper-V host cluster to Windows Server 2016 in VMM
 description: This article provides guidance on upgrading Hyper-V host clusters
 author:  rayne-wiselman
 ms.author: raynew
-manager:  cfreemanwa
-ms.date:  2016-09-22
+manager:  cfreeman
+ms.date:  2016-10-12
 ms.topic:  article
 ms.prod:  system-center-threshold
 ms.technology:  virtual-machine-manager
