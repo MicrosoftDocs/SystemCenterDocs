@@ -17,7 +17,7 @@ ms.topic: article
 Operations Manager includes a new feature called Updates and Recommendations, to help you proactively identify new technologies or components (i.e. workloads) deployed in your IT infrastructure that were not monitored by Operations Manager or are not monitored using the latest version of a management pack.
 
 >[!NOTE]
->This feature only works with management packs released by Microsoft, it currently does not support third party management packs.  
+>This feature only works with management packs released by Microsoft, it currently does not support third party management packs.  See [Supported workloads](#supported-workloads) below for the current list of workflows supported by this feature.  
 
 If there are Management Packs in the catalog that are designed to monitor those workloads, they will be displayed on the Updates and Recommendations screen. You will also find a list of any updates that are available for Management Packs that are installed in your management group.
 
@@ -92,6 +92,136 @@ The following procedure describes how to use the Get All MPs option to download 
     >When you click **Install**, any management packs in the **Install** list that display the **Information** or **Error** icon are not imported.
 
 8. The **Import Management Packs** page appears and shows the progress for each management pack. Each management pack is downloaded to a temporary directory, imported to Operations Manager, and then deleted from the temporary directory. If there is a problem at any stage of the import process, select the management pack in the list to view the status details. Click **Close**.
+
+## Supported workloads
+
+The following list includes the workloads that are supported by this feature.
+
+- BizTalk 2006
+- BizTalk 2009
+- BizTalk 2010
+- Biztalk Server 2013
+- Biztalk Server 2013R2
+- Branch Cache 2016
+- CRM 2011
+- CRM 2013
+- CRM 2015
+- Defender Technical Preview
+- Distributed Transaction Coordinator 2012 R2
+- Distributed Transaction Coordinator 2016
+- Dynamics AX 2009
+- Dynamics AX 2012
+- Dynamics AX Retail 2012 R3
+- Essentials Technical Preview
+- Exchange Server 2013
+- Host Integration Server 2010
+- Host Integration Server 2013
+- NAV 2013
+- NAV 2013 R2
+- Office SharePoint Foundation 2010
+- SharePoint 2010 Products
+- Sharepoint Foundation Server 2013
+- Sharepoint Server 2013
+- SMA 2012 R2
+- SPF 2012 R2
+- SQL Server 2005
+- SQL Server 2008
+- SQL Server 2012
+- SQL Server 2012 Analysis Services
+- SQL Server 2012 Replication
+- SQL Server 2012 Reporting Services (Native Mode)
+- SQL Server 2014
+- SQL Server 2014 Analysis Services
+- SQL Server 2014 Replication
+- SQL Server 2014 Reporting Services (Native Mode)
+- SQL Server 2016
+- SQL Server 2016 Analysis Services
+- SQL Server 2016 Replication
+- SQL Server 2016 Reporting Services (Native Mode)
+- System Center 2012 App Controller
+- System Center 2012 Configuration Manager
+- System Center 2012 Orchestrator 
+- Windows Server Backup
+- Windows Service Manager 2012
+- Windows TFS 2013
+
+### Windows Server 2008 R2 version
+
+- Active Directory Certificate Services
+- Active Directory Domain Services
+- Active Directory Federation Services
+- Active Directory Lightweight Directory Services
+- Active Directory Right Management Services
+- Branch Cache
+- DHCP
+- DNS
+- File Services
+- Hyper-V
+- IIS 2008 R2
+- Message Queueing
+- Network Load Balancing
+- Print Services
+- Remote Desktop Service
+- Routing Remote Services
+
+### Windows Server 2012 
+
+- Active Directory Certificate Services
+- Active Directory Domain Services
+- Active Directory Federation Services
+- AD Right Management Services
+- Branch Cache
+- Cluster
+- DHCP
+- DNS
+- File Services
+- Hyper-V
+- IIS
+- Message Queueing
+- Network Load Balancing
+- Print Services
+- Remote Access
+- Remote Desktop Services
+- Windows Deployment Services
+- Windows Server backup
+- Windows Update Services
+
+### Windows Server 2012 R2 
+
+- Active Directory Certificate Services
+- Active Directory Domain Services
+- Active Directory Federation Services
+- Active Directory Light Weight Directory Services
+- Active Directory Right Management Services
+- Branch Cache
+- Cluster
+- DHCP
+- DNS
+- Essentials
+- File Services
+- Hyper-V
+- NLB
+- Print Services
+- Queueing
+- Remote access
+- Remote Desktop Service
+- Web application proxy
+- Windows Deployment Services
+- Windows Update Services
+
+### Windows Server 2016
+
+- Active Directory Certificate Service
+- Active Directory Domain Services
+- Active Directory Federation Service
+- Active Directory Right Management Service
+- DHCP Server
+- DNS Server
+- Fail Over Clustering
+- File Services 
+- IIS
+- Network Load Balancing
+- Print Server
 
 ## Next steps
 
