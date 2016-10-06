@@ -59,7 +59,7 @@ If you have an unguarded host in the VMM fabric, and you want to enable it as gu
 2.	In the VMM console, click **Settings** > **Host Guardian Service Settings**.
 3.	Configure the global HGS settings, including the attestation server URL and key protection server URL. Specify a path on which code integrity policies are located (if relevant), and download the shielding helper VHD.
 
-    ![HGS settings](../media/guarded-HSG-settings.png)
+    ![HGS settings](../media/guarded-hgs-settings.png)
 
 4. In **All Hosts**, right-click the host > **Properties** > **Host Guardian Service**.
 
@@ -84,7 +84,7 @@ VMM checks that the host passes attestation when you add it, and every time that
 2.	In the VMM console, click **Settings** > **Host Guardian Service Settings**.
 3.	Configure the global HGS settings, including the attestation server URL and key protection server URL. Specify a path on which code integrity policies are located (if relevant), and download the [shielding helper VHD](https://technet.microsoft.com/windows-server-docs/security/guarded-fabric-vm-shielding-helper-vhd).
 
-    ![HGS settings](../media/guarded-HSG-settings.png)
+    ![HGS settings](../media/guarded-hgs-settings.png)
 
 4. Right-click the host > **Properties** > **Host Guardian Service**.
 
