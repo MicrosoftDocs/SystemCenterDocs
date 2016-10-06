@@ -18,7 +18,7 @@ ms.assetid: 11c62b07-e735-415a-a632-df1589b53874
 
 >Applies To: System Center 2016 - Service Manager
 
-In System Center - Service Manager, Setup might fail when you deploy either an additional Service Manager management server or an additional Self-Service Portal in an environment where a disjoint namespace exists. This problem can occur if the Setup program is unable to resolve the principal name of the computer that is hosting the Service Manager management server. For more information, see the Microsoft TechNet article [Disjoint Namespace](http://go.microsoft.com/fwlink/p/?LinkID=187367).  
+In System Center - Service Manager, Setup might fail when you deploy either an additional Service Manager management server or an additional Self-Service Portal in an environment where a disjoint namespace exists. This problem can occur if the Setup program is unable to resolve the principal name of the computer that is hosting the Service Manager management server. For more information, see the Microsoft TechNet article [Disjointed Namespace](http://go.microsoft.com/fwlink/p/?LinkID=187367).  
 
  We recommend that you complete the following procedures before installing either an additional Service Manager management server or an additional Self-Service Portal in an environment where a disjoint namespace exists. The first procedure shows you how to determine the principal name of your Service Manager management server. The second procedure guides you in editing the hosts file on the computer that hosts either the additional Service Manager management server or the additional Self-Service Portal.  
 
@@ -34,7 +34,7 @@ In System Center - Service Manager, Setup might fail when you deploy either an a
 
 5.  In the **Tasks** pane, under the name of the computer, click **Edit**.  
 
-6.  In the **Computer \- \<computer name\>** window, observe that there is an **Extensions** tab at the top of the form. The **Extensions** tab appears only when you view a Service Manager management server.  
+6.  In the **Computer - *computer name*** window, observe that there is an **Extensions** tab at the top of the form. The **Extensions** tab appears only when you view a Service Manager management server.  
 
 7.  In the **General** tab in the form, in the **Computer Identity** area, the **Principal name** box shows the principal name that you will use in the following procedure.  
 

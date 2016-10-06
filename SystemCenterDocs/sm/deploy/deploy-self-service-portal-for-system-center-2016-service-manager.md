@@ -20,9 +20,9 @@ ms.assetid: 6383ad89-6fcf-41bc-9da5-5243bb24d927
 
 The Self-Service Portal provides web\-based access to the features of System Center - Service Manager. This section describes deployment scenarios, how you can deploy the Self-Service Portal, and it includes information for configuring Secure Sockets Layer \(SSL\).  
 
-## Self\-Service Portal for System Center - Service Manager Topics  
+## Self-Service Portal for System Center - Service Manager Topics  
 
--   [Deploy the New Self\-Service Portal](deploy-deploy-the-self-service-portal-for-service-manager.md)  
+-   [Deploy the New Self-Service Portal](deploy-deploy-the-self-service-portal-for-service-manager.md)  
 
      Describes how to deploy the Self-Service Portal.  
 
