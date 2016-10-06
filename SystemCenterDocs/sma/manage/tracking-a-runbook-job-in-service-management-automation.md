@@ -1,8 +1,9 @@
 ---
 description:  
-manager:  cfreemanwa
+manager:  cfreeman
 ms.topic:  article
 author:  bwren
+ms.author: bwren
 ms.prod:  system-center-threshold
 keywords:  
 ms.date:  10/12/2016
@@ -104,5 +105,7 @@ Get-SmaJobOutput "WebServiceEndpoint $webServer "Port $port -Id $job.Id "Stream 
 
 ## See Also
 [Service Management Automation](../Service-Management-Automation.md)
+
 [Runbook Operations](Runbook-Operations.md)
+
 [Starting a Runbook](Starting-a-Runbook.md)

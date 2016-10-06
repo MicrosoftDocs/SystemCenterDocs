@@ -1,11 +1,12 @@
 ---
 description:  
-manager:  cfreemanwa
+manager:  cfreeman
 ms.topic:  article
 author:  cfreemanwa
+ms.author: cfreeman
 ms.prod:  system-center-threshold
 keywords:  
-ms.date:  2016-08-19
+ms.date:  10/12/2016
 title:  Upgrade-to-System-Center-2016
 ms.technology:  system-center-2016
 ms.assetid:  4f8701a5-8d55-4ffd-afee-e6341ec6b7f4
@@ -26,13 +27,26 @@ Microsoft supports the following upgrade paths.
 
 |Component|Previous Version|
 |---------|----------------|
-|Data Protection Manager|System Center 2012 R2 with UR10 or later|
+|Data Protection Manager|System Center 2012 R2 with UR9 or later|
 |Operations Manager|System Center 2012 R2 with UR9 or later|
 |Orchestrator|System Center 2012 R2 with UR8 or later|
 |Service Management Automation| System Center 2012 R2 with UR7 or later|
 |Service Manager|System Center 2012 R2 with UR9 or later|
 |Service Provider Foundation|See the SPF section for details|
 |Virtual Machine Manager|System Center 2012 R2 with UR9 or later|
+
+## Upgrade sequence
+
+If you are upgrading an installation of System Center 2012 R2 that includes multiple components, it is important that you upgrade the components in the following order.
+
+1. Service Management Automation
+2. Orchestrator
+3. Service Manager
+4. Data Protection Manager
+5. Operations Manager
+6. Virtual Machine Manager
+7. Service Provider Foundation
+8. Windows Azure Pack
 
 ## Component Specific Notes
 
