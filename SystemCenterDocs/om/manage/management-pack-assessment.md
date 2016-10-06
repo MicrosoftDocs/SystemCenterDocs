@@ -17,7 +17,7 @@ ms.topic: article
 Operations Manager includes a new feature called Updates and Recommendations, to help you proactively identify new technologies or components (i.e. workloads) deployed in your IT infrastructure that were not monitored by Operations Manager or are not monitored using the latest version of a management pack.
 
 >[!NOTE]
->This feature only works with management packs released by Microsoft, it currently does not support third party management packs.  See [Supported workloads](#supported-workloads) below for the current list of workflows supported with this feature.  
+>This feature only works with management packs released by Microsoft, it currently does not support third party management packs.  See [Supported workloads](#supported-workloads) below for the current list of workflows supported by this feature.  
 
 If there are Management Packs in the catalog that are designed to monitor those workloads, they will be displayed on the Updates and Recommendations screen. You will also find a list of any updates that are available for Management Packs that are installed in your management group.
 
