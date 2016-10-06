@@ -32,10 +32,6 @@ For example, an Exchange mailbox role running on a Windows server will have an E
 
 In this case, we can put the Exchange Mailbox role and contained components into Maintenance Mode instead of putting the entire computer into Maintenance Mode. This way we can continue to monitor the other components running on the server, including the Windows operating system, while maintenance is performed specifically to the Exchange Server application.
 
-> [!NOTE]
-> Placing a Nano Server into maintenance mode is not supported in this release.  
-
-
 You can either select one or more monitoring objects and place them into maintenance mode on-demand, or you can define schedules aligned with your service or maintenance windows, and automatically place them into maintenance mode in the future according to the schedule you choose.  With the new scheduling feature, you can:
 
 - Schedule maintenance mode at a future time daily, weekly, or monthly.

@@ -143,7 +143,7 @@ Perform this operation on each gateway server, management server, and computer t
 
 ##### To import computer certificates by using MOMCertImport.exe
 
-1.  Copy the MOMCertImport.exe tool from the installation media \SupportTools\\<platform> (x86 or ia64) directory to the root of the target server or to the Operations Manager installation directory if the target server is a management server.
+1.  Copy the MOMCertImport.exe tool from the installation media \SupportTools\\<platform\> (x86 or ia64) directory to the root of the target server or to the Operations Manager installation directory if the target server is a management server.
 
 2.  As an administrator, open a Command Prompt window and change the directory to the directory where MOMCertImport.exe is, and then run `momcertimport.exe /SubjectName <certificate subject name>`. This makes the certificate usable by Operations Manager.
 

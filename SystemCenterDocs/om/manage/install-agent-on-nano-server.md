@@ -24,14 +24,14 @@ With the release of Nano Server you can  monitor the basic operations of the Ser
 - Windows Failover Cluster  
 - Domain Name System (DNS) server
 - Internet Information Services (IIS)
-
+  
 You can download these management packs for Nano Server from the [Microsoft Download Center](https://www.microsoft.com/en-us/download/details.aspx?id=48256).  
 
 Monitoring a Nano Server installation is similar to monitoring any other installation of Windows Server, however, there are some key differences in how you install the agent on a Nano Server.
 
 You will need to follow the steps listed below to start monitoring a Nano Server.
 
-1.  [Deploy the Operations Manager agent from the Operations console using the Discovery Wizard](Install-Agent-on-Windows-Using-the-Discovery-Wizard.md) or [Manually install the Operations Manager agent on a Nano server](#Manually-install-the-operations-manager-agent-on-a-nano-server).
+1.  [Deploy the Operations Manager agent from the Operations console using the Discovery Wizard](Install-Agent-on-Windows-Using-the-Discovery-Wizard.md) or [Manually install the Operations Manager agent on a Nano server](#Manually-install-the-operations-manager-agent-on-a--nano-server).
 
 3.  [Validate that the Operations Manager agent has been successfully installed](#validate-that-the-operations-manager-agent-has-been-successfully-installed)
 
@@ -78,7 +78,7 @@ There are several limitations in this release of the Nano Server agent. The foll
 2.  Add the Microsoft-OneCore-ReverseForwarders package as described in the Getting Started with Nano Server topic.
 
 3.  Join the Nano Server to the same domain as the  Operations Manager Management Server.
-There are two methods available for installing the Operations Manager agent on Nano Servers, Discovery Wizard from the Operations console or PowerShell script.  The process of installing the agent using the Discovery Wizard is consistent with the steps described in the document, [Discover and install agent on Windows](Install-Agent-on-Windows-Using-the-Discovery-Wizard.md).
+There are two methods available for installing the Operations Manager agent on Nano Servers, Discovery Wizard from the Operations console or PowerShell script.  The process of installing the agent using the Discovery Wizard is consistent with the steps described in the following document [Discover and install agent on Windows](Install-Agent-on-Windows-Using-the-Discovery-Wizard.md).
 
 Use the following procedure to install the agent with a PowerShell script.   
 
@@ -124,10 +124,10 @@ If you encounter any difficulties with setting up the Operations Manager Agent o
 3.  Verify that the Status of the Microsoft Monitoring Agent Service is "Running".
 
 ## Start Monitoring your Nano Server
-
+  
 > [!NOTE]
 > The following procedure is only required for a PowerShell-based agent installation.
-
+ 
 1.  Open the **Pending Management** section of the Administration pane in the Operations Manager console.
 
 2.  Approve the Nano Server for management.
@@ -171,4 +171,5 @@ If you encounter any difficulties with removing the Operations Manager Agent on 
 
 ## Next steps
 
-- After manually installing the Operations Manager agent on Windows, Nano Server, or UNIX and Linux computers, you need to [Process Manual Agent Installations](Process-Manual-Agent-Installations.md)
+- After manually installing the Operations Manager agent on Windows and Nano Server, you need to [Process Manual Agent Installations](Process-Manual-Agent-Installations.md)
+

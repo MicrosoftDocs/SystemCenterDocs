@@ -36,10 +36,7 @@ Use the following procedure to discover computers running Windows and to deploy 
 
 3.  At the bottom of the navigation pane, click **Discovery Wizard**.
 
-    > [!NOTE]
-    > The Discovery Wizard links in the Operations console open the Computer and Device Management Wizard.
-
-4.  On the **Discovery Type** page, click **Windows computers**.
+4.  In the **Computer and Device Management Wizard**, on the **Discovery Type** page, click **Windows computers**.
 
 5.  On the **Auto or Advanced?** page, do the following:
 
@@ -59,8 +56,8 @@ Use the following procedure to discover computers running Windows and to deploy 
 
     5.  Click **Next**.
 
-    > [!NOTE]
-    > The wizard can return approximately 4000 computers if **Verify discovered computers can be contacted** is selected, and it can return 10,000 computers if this option is not selected. Automatic computer discovery verifies that discovered computers can be contacted. A computer that is already managed by the management group is not returned.
+        > [!NOTE]
+        > The wizard can return approximately 4000 computers if **Verify discovered computers can be contacted** is selected, and it can return 10,000 computers if this option is not selected. Automatic computer discovery verifies that discovered computers can be contacted. A computer that is already managed by the management group is not returned.
 
 6.  On the **Discovery Method** page, you can locate the computers that you want to manage by either scanning or browsing Active Directory Domain Services or typing the computer names.
 
@@ -72,11 +69,11 @@ Use the following procedure to discover computers running Windows and to deploy 
 
     3.  In the **Domain** list, click the domain of the computers that you want to discover.
 
-    If you want to browse Active Directory Domain Services or type the computer names, do the following:
+        If you want to browse Active Directory Domain Services or type the computer names, do the following:
 
-    -   Select **Browse for, or type-in computer names**, click **Browse**, specify the names of the computers that you want to manage, and then click **OK**.
+     -   Select **Browse for, or type-in computer names**, click **Browse**, specify the names of the computers that you want to manage, and then click **OK**.
 
-    -   In the **Browse for, or type-in computer names** box, type the computer names, separated by a semi-colon, comma, or a new line. You can use NetBIOS computer names or fully qualified domain names (FQDN).
+     -   In the **Browse for, or type-in computer names** box, type the computer names, separated by a semi-colon, comma, or a new line. You can use NetBIOS computer names or fully qualified domain names (FQDN).
 
 7.  Click **Next**, and on the **Administrator Account** page, do one of the following:
 
@@ -98,8 +95,8 @@ Use the following procedure to discover computers running Windows and to deploy 
 
     2.  In the **Management Mode** list, click **Agent** and then click **Next**.
 
-    > [!NOTE]
-    > The discovery results show virtual nodes of clusters. Do not select any virtual nodes to be managed.
+        > [!NOTE]
+        > The discovery results show virtual nodes of clusters. Do not select any virtual nodes to be managed.
 
 10. On the **Summary** page, do the following:
 

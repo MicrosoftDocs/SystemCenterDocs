@@ -36,15 +36,9 @@ For more information on how to run and save a report, see [How to Run, Save, and
   
     2.  Click the down arrow in the **Delivery method** list, and then click **Report Server File Share**.  
   
-        > [!NOTE]  
-        > If you want to manage and distribute reports securely, you could deliver reports to Microsoft Windows SharePoint Services, which offers digital rights management. Consult your network security administrator.  
-  
     3.  Type a file name for the report in the **File name** text box.  
   
-    4.  Type a file path for the report in the **Path** text box.  
-  
-        > [!NOTE]  
-        > Report scheduling supports Universal Naming Convention \(UNC\) file names and must not end in a backslash.  
+    4.  Type a file path for the report in the **Path** text box.  Report scheduling supports Universal Naming Convention \(UNC\) file names and must not end in a backslash.  
   
     5.  Click the down arrow in the **Render Format** list, and then click the file format you want for the report.  
   
@@ -96,25 +90,25 @@ The report server e-mail delivery extension is not configured by default. You mu
   
 5.  In the Subscribe to a Report Wizard, on the **Delivery Settings** page, do the following:  
   
-    -   Type a description in the **Description** text box.  
+    1. Type a description in the **Description** text box.  
   
-    -   Click the down arrow in the **Delivery method** list, and then click **Report Server E-Mail**.  
+    2. Click the down arrow in the **Delivery method** list, and then click **Report Server E-Mail**.  
   
-    -   Type an email address of the destination inbox to receive reports in the **To** text box. You can also type email addresses in the **Cc**, **Bcc**, and the **Reply To** text boxes.  
+    3. Type an email address of the destination inbox to receive reports in the **To** text box. You can also type email addresses in the **Cc**, **Bcc**, and the **Reply To** text boxes.  
   
-    -   Click the down arrow in the **Render Format** list, and then click the file format you want for the report.  
+    4. Click the down arrow in the **Render Format** list, and then click the file format you want for the report.  
   
-    -   Click the down arrow in the **Priority** list, and then select the appropriate priority.  
+    5. Click the down arrow in the **Priority** list, and then select the appropriate priority.  
   
-    -   Type a subject for the email in the **Subject** text box.  
+    6. Type a subject for the email in the **Subject** text box.  
   
-    -   Click **Next**.  
+    7. Click **Next**.  
   
 6.  On the **Subscription Schedule** page, do the following:  
   
-    -   Select one of the **Generate the report** options.  
+    1. Select one of the **Generate the report** options.  
   
-    -   Type a start date and start time for the reports to be generated in  **The Subscription is effective beginning** list. You can also enter the date when this subscription will end in **The subscription expires on** list, and then click **Next**.  
+    2. Type a start date and start time for the reports to be generated in  **The Subscription is effective beginning** list. You can also enter the date when this subscription will end in **The subscription expires on** list, and then click **Next**.  
   
 7.  On the **Parameters** page, specify a span of time for the report in the **From** and **To** lists, make any other changes you need for this report, and then click **Finish**.    
 
@@ -129,7 +123,7 @@ Use the following procedure to edit settings for scheduled reports from the **Re
   
 3.  In the **Reporting** workspace, click **Scheduled Reports**.  
   
-4.  In the **Scheduled Reports** pane, right\-click the scheduled report you want to edit, and then click **Edit Schedule**.  
+4.  In the **Scheduled Reports** pane, right-click the scheduled report you want to edit, and then click **Edit Schedule**.  
   
 5.  In the **Subscribe to a Report Wizard**, on the **Delivery Settings** page, if you select the **Windows File Share** as a **Delivery method**, you must type the password in the **Password** text box before you can make any other changes.  
   
@@ -150,7 +144,7 @@ Use the following procedure to cancel scheduled reports.
   
 3.  In the **Reporting** workspace, click **Scheduled Reports**.  
   
-4.  In the **Scheduled Reports** pane, right\-click the scheduled report you want to cancel, and then click **Cancel Schedule**.  
+4.  In the **Scheduled Reports** pane, right-click the scheduled report you want to cancel, and then click **Cancel Schedule**.  
   
 5.  In the **System Center Operations Manager** dialog box, click **OK** to confirm the deletion of your schedule or click **No** to keep your schedule.  
 
@@ -167,7 +161,7 @@ The example in this procedure uses an availability report that you have already 
   
 3.  In the **Reporting** workspace, click **Favorite Reports**.  
   
-4.  In the **Favorite Reports** pane, right\-click the availability report you saved as a favorite, and then click **Schedule**.  
+4.  In the **Favorite Reports** pane, right-click the availability report you saved as a favorite, and then click **Schedule**.  
   
 5.  In the **Subscribe to a Report Wizard**, on the **Delivery Settings** page, do the following:  
   
