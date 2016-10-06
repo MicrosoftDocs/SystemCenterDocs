@@ -36,10 +36,7 @@ Use the following procedure to discover computers running Windows and to deploy 
 
 3.  At the bottom of the navigation pane, click **Discovery Wizard**.
 
-    > [!NOTE]
-    > The Discovery Wizard links in the Operations console open the Computer and Device Management Wizard.
-
-4.  On the **Discovery Type** page, click **Windows computers**.
+4.  In the **Computer and Device Management Wizard**, on the **Discovery Type** page, click **Windows computers**.
 
 5.  On the **Auto or Advanced?** page, do the following:
 
@@ -59,8 +56,8 @@ Use the following procedure to discover computers running Windows and to deploy 
 
     5.  Click **Next**.
 
-    > [!NOTE]
-    > The wizard can return approximately 4000 computers if **Verify discovered computers can be contacted** is selected, and it can return 10,000 computers if this option is not selected. Automatic computer discovery verifies that discovered computers can be contacted. A computer that is already managed by the management group is not returned.
+        > [!NOTE]
+        > The wizard can return approximately 4000 computers if **Verify discovered computers can be contacted** is selected, and it can return 10,000 computers if this option is not selected. Automatic computer discovery verifies that discovered computers can be contacted. A computer that is already managed by the management group is not returned.
 
 6.  On the **Discovery Method** page, you can locate the computers that you want to manage by either scanning or browsing Active Directory Domain Services or typing the computer names.
 
@@ -74,15 +71,15 @@ Use the following procedure to discover computers running Windows and to deploy 
 
     If you want to browse Active Directory Domain Services or type the computer names, do the following:
 
-    -   Select **Browse for, or type-in computer names**, click **Browse**, specify the names of the computers that you want to manage, and then click **OK**.
+     1.  Select **Browse for, or type-in computer names**, click **Browse**, specify the names of the computers that you want to manage, and then click **OK**.
 
-    -   In the **Browse for, or type-in computer names** box, type the computer names, separated by a semi-colon, comma, or a new line. You can use NetBIOS computer names or fully qualified domain names (FQDN).
+     2.  In the **Browse for, or type-in computer names** box, type the computer names, separated by a semi-colon, comma, or a new line. You can use NetBIOS computer names or fully qualified domain names (FQDN).
 
 7.  Click **Next**, and on the **Administrator Account** page, do one of the following:
 
-    -   Select **Use selected Management Server Action Account** if it is not already selected.
+    1.  Select **Use selected Management Server Action Account** if it is not already selected.
 
-    -   Select **Other user account**, type the **User name** and **Password**, and then select the **Domain** from the list. If the user name is not a domain account, select **This is a local computer account, not a domain account**.
+    2.  Select **Other user account**, type the **User name** and **Password**, and then select the **Domain** from the list. If the user name is not a domain account, select **This is a local computer account, not a domain account**.
 
         > [!IMPORTANT]
         > The account must have administrative privileges on the targeted computers. If **This is a local computer account, not a domain account** is selected, the management server action account will be used to perform discovery.
@@ -98,12 +95,12 @@ Use the following procedure to discover computers running Windows and to deploy 
 
     2.  In the **Management Mode** list, click **Agent** and then click **Next**.
 
-    > [!NOTE]
-    > The discovery results show virtual nodes of clusters. Do not select any virtual nodes to be managed.
+        > [!NOTE]
+        > The discovery results show virtual nodes of clusters. Do not select any virtual nodes to be managed.
 
 10. On the **Summary** page, do the following:
 
-    1.  Leave the **Agent installation directory** set to the default of **%ProgramFiles%\System Center Operations Manager** or type an installation path.
+    1.  Leave the **Agent installation directory** set to the default of **%ProgramFiles%\Microsoft Monitoring Agent** or type an installation path.
 
         > [!IMPORTANT]
         > If a different **Agent installation directory** is specified, the root of the path must exist on the targeted computer or the agent installation fails. Subdirectories, such as **\Agent**, are created if they do not exist.

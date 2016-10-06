@@ -32,7 +32,7 @@ You have several options for importing management packs:
 > [!NOTE]
 > Using the management pack catalog service requires an Internet connection. If the computer running Operations Manager cannot be connected to the Internet, use another computer to download the management pack, and then copy the files to a shared folder that is accessible to the Operations Manager management server.
 
-The Operations Manager community maintains a list of management packs developed by Microsoft on the following web site [Microsoft Management Pack List](http://go.microsoft.com/fwlink/?LinkId=82105) contains management packs released by Microsoft. You can obtain third-party management packs directly from these companies and import them by using the procedure to import from disk. You can also search for management packs created by the community.
+The Operations Manager community maintains a list of management packs developed by Microsoft on the following web site [Microsoft Management Pack List](http://go.microsoft.com/fwlink/?LinkId=82105). You can obtain third-party management packs directly from those companies and import them by following the procedure [Import a management pack from disk](#import-a-management-pack-from-disk). 
 
 > [!NOTE]
 > Microsoft neither endorses nor provides support for third-party products. Please contact the specific provider for support issues.
@@ -154,7 +154,7 @@ You should always review the management pack guide before you import a managemen
 Exporting a management pack allows customizations to a sealed management pack to be saved to a writeable management pack. Because sealed management packs cannot be changed, the modifications made to a management pack are saved to a separate, unsealed management pack file. The unsealed management pack can then be imported into a different management group or the same management group depending on the situation. This unsealed management pack is dependent on the original sealed management pack and can be imported only to management groups that have the original sealed management pack.  
   
 > [!NOTE]  
-> Using the Operations Console, you can only export unsealed management packs. To export a sealed management pack, you must use the Export\-SCOMManagementPack cmdlet. See [Operations Manager Cmdlet Reference \[OM2012\]](https://technet.microsoft.com/library/hh545244%28v=sc.20%29.aspx) for more information.  
+> Using the Operations Console, you can only export unsealed management packs. To export a sealed management pack, you must use the Export-SCOMManagementPack cmdlet. See [Operations Manager Cmdlet Reference](https://technet.microsoft.com/library/hh545244%28v=sc.20%29.aspx) for more information.  
   
 ### To export an unsealed management pack   
   
