@@ -5,7 +5,7 @@ ms.topic:  article
 author:  bwren
 ms.prod:  system-center-threshold
 keywords:  
-ms.date:  2016-06-28
+ms.date:  10/12/2016
 title:  Tracking a Runbook Job in Service Management Automation
 ms.technology:  service-management-automation
 ms.assetid:  24cd18c8-4aea-4f22-971b-756d9fa45a8e
@@ -13,7 +13,7 @@ ms.assetid:  24cd18c8-4aea-4f22-971b-756d9fa45a8e
 
 # Tracking a Runbook Job in Service Management Automation
 
->Applies To: Windows Azure Pack for Windows Server
+>Applies To: Windows Azure Pack for Windows Server, System Center 2016 - Service Management Automation
 
 When you start a runbook in Service Management Automation, a job is created. A job is a single execution instance of a runbook. A single runbook may have multiple jobs, each with their own set of values for the runbook"s parameters.
 

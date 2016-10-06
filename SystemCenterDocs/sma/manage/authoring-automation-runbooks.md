@@ -5,7 +5,7 @@ ms.topic:  article
 author:  bwren
 ms.prod:  system-center-threshold
 keywords:  
-ms.date:  2016-08-18
+ms.date:  10/12/2016
 title:  Authoring Automation Runbooks
 ms.technology:  service-management-automation
 ms.assetid:  a8b7e82f-e3fc-4286-8570-8d5ded944b27
@@ -13,7 +13,7 @@ ms.assetid:  a8b7e82f-e3fc-4286-8570-8d5ded944b27
 
 # Authoring Automation Runbooks
 
->Applies To: Windows Azure Pack for Windows Server, System Center 2016
+>Applies To: Windows Azure Pack for Windows Server, System Center 2016 - Service Management Automation
 
 Runbooks in Service Management Automation and Microsoft Azure Automation are Windows PowerShell workflows or PowerShell scripts. They provide the ability to automate administrative processes for managing and deploying cloud servers or any other function that a Windows PowerShell script can perform.
 
@@ -76,4 +76,5 @@ The following topics provide information on creating and working with Automation
 
 ## See Also
 [Service Management Automation](../Service-Management-Automation.md)
+
 [Runbook Operations](Runbook-Operations.md)

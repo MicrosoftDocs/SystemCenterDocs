@@ -1,11 +1,12 @@
 ---
 description:  
-manager:  cfreemanwa
+manager:  cfreeman
 ms.topic:  article
 author:  bwren
+ms.author: bwren
 ms.prod:  system-center-threshold
 keywords:  
-ms.date:  2016-08-18
+ms.date:  10/12/2016
 title:  Connections
 ms.technology:  service-management-automation
 ms.assetid:  d82d70df-2de2-4d1f-9e9d-a033af8e6b05
@@ -13,7 +14,7 @@ ms.assetid:  d82d70df-2de2-4d1f-9e9d-a033af8e6b05
 
 # Connections
 
->Applies To: Windows Azure Pack for Windows Server, System Center 2016
+>Applies To: Windows Azure Pack for Windows Server, System Center 2016 - Service Management Automation
 
 An Automation Connection contains the information required to connect to a service or application from a runbook.  This information is defined in the module for the application and typically includes such information as the username and password and the computer to connect to.  Other information may also be required such as a certificate or a subscription Id.  The properties for a connection are stored securely in the Automation database and can be accessed in the runbook with the **Get-AutomationConnection** activity.
 
@@ -89,5 +90,7 @@ InlineScript {
 
 ## See Also
 [Service Management Automation](../Service-Management-Automation.md)
+
 [Authoring Automation Runbooks](Authoring-Automation-Runbooks.md)
+
 [Global Assets](Global-Assets.md)
