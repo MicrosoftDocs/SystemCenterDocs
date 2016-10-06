@@ -42,7 +42,7 @@ Before you create a custom MAC pool note that:
 ## Create a custom pool
 
 
-1. Click **Fabric** > **Networking** >** MAC Address Pools** > **Home **> **Show** > **Fabric Resources** > **Create** > **Create MAC Pool**.
+1. Click **Fabric** > **Networking** > ** MAC Address Pools** > **Home ** > **Show** > **Fabric Resources** > **Create** > **Create MAC Pool**.
 2. In **Create MAC Address Pool Wizard** > **Name and Host Group** specify a name and description. In **Host Group** select the host groups that should use the pool.
 3. In **MAC Address Range** specify the start and end addresses.
 4. In **Summary** review the settings and click **Finish**. When the job shows as **Completed** verify pool in **MAC Pools**.
@@ -51,6 +51,6 @@ Before you create a custom MAC pool note that:
 
 In some circumstances you might want to remove addresses from the MAC pool. For example if a host that was assigned an IP address during bare metal deployment is removed from VMM management, or if a VM goes into a missing state because it was removed outside VMM.
 
-1. Click **Fabric** > **Networking** >** MAC Address Pools** > **Home **> **Show** > **Fabric Resources**.
+1. Click **Fabric** > **Networking** > ** MAC Address Pools** > **Home ** > **Show** > **Fabric Resources**.
 2. In **MAC Pools** click the pool you want to modify > **Properties**.
 3. In **Inactive addresses** select the addresses you want to release.
