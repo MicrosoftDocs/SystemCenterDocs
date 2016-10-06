@@ -109,7 +109,7 @@ You must ensure that your server meets the minimum supported configurations for 
     > [!NOTE]
     > These paths do not change if you connect to a different instance of SQL Server.
 
-15. On the **Configuration**, **SQL Server instance for reporting services** page, select the SQL Server database instance from the drop-down list. This drop-down list contains the SQL Server database instance name that was created when you installed SQL Server 2014 Service Pack 2 or SQL Server 2016 and should be the name of the server on which you are installing System Center 2016 Technical Preview - Operations Manager. Click **Next**.
+15. On the **Configuration**, **SQL Server instance for reporting services** page, select the SQL Server database instance from the drop-down list. This drop-down list contains the SQL Server database instance name that was created when you installed SQL Server 2014 Service Pack 2 or SQL Server 2016 and should be the name of the server on which you are installing System Center 2016 - Operations Manager. Click **Next**.
 
 16. On the **Configuration**, **Specify a web site for use with the Web console** page, select **Default Web Site** or the name of an existing website. Select the option **Enable SSL** only if the website has been configured to use SSL, and then click **Next**.
 
