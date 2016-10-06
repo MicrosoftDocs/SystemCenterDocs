@@ -23,7 +23,7 @@ The remote console can be installed on:
 
 ## Before you start
 
-- Review the [system requirements](../../system-requirements/System-Requirements-for-System-Center-Technical-Preview.md)
+- Review the [system requirements](../../system-requirements/system-requirements.md)
 - Make sure you've followed the [planning instructions](../plan/plan-install.md).
 - Make sure you have at least local administrator permissions on the computer on which you're installing the console.
 
@@ -42,7 +42,7 @@ If you want to uninstall the console do the following:
 
 1. In the Control Panel click to uninstall a program and select Microsoft System Center 2016 Virtual Machine Manager.
 2. In **Select features to remove** click **VMM console**. On the VMM management server you can't uninstall the console without uninstalling VMM management.
-3. In **Summary** review the settings and click** Uninstall**.
+3. In **Summary** review the settings and click **Uninstall**.
 
 
 ## Install and uninstall the console from the command prompt
@@ -52,7 +52,7 @@ If you want to uninstall the console do the following:
 
 	- **/client** - specifies console installation
 	- **/i ir /x** - specify whether to install (/i) or uninstall (/x) the console.
-	- /f <filename> - specifies the ,ini file to use. Make sure this is correct. If setup doesn't find the ini file it will install with default values.
+	- /f &lt;filename&gt; - specifies the ini file to use. Make sure this is correct. If setup doesn't find the ini file it will install with default values.
 	- Don't use the /opsmgr parameter
 
 3. For example, run **setup.exe /client /i /f C:\Temp\VMClient.ini**.

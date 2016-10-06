@@ -111,7 +111,7 @@ This example uses the generation 2 template.
 4. In **Deploy Service**, it's normal for the VM instances to be initially red. Click **Refresh Preview** to automatically find suitable hosts for the virtual machine.
 5. On the left side of the **Configure Deployment** window, there are a number of settings that you must configure:
 
-  - **AdminAccount**. Required. Select a Run as account in your environment which will be used as the local admin on the gateway VMs. For example- \Administrator
+  - **AdminAccount**. Required. Select a Run as account in your environment which will be used as the local admin on the gateway VMs. For example - Administrator
   - **Management Network**. Required. Choose the Management VM network that you created for host management.
   - **SelfSignedConfiguration**. Required. If you're using a self-signed certificate, set this value to **True**. If you are using a certificate that has been assigned by an Enterprise CA or external Root CA, set this value to **False**.
 
@@ -139,11 +139,9 @@ The service instance you deployed is now associated with the Gateway Manager rol
 
 ## Validate the deployment
 
-As a quick validation step, you can also try to access the following URL from a browser on your VMM Server: **https://
+As a quick validation step, you can also try to access the following URL from a browser on your VMM Server:  `https://<restip-or-fqdn>/networking/v1/gateways</restip-or-fqdn>`
 
-<restip-or-fqdn>/networking/v1/gateways</restip-or-fqdn>**
-
-For example: <https://10.184.108.56/networking/v1/gateways>.
+For example: `https://10.184.108.56/networking/v1/gateways`.
 
 This URL shows a JSON file with details about the gateway virtual machines. If the gateway isn't onboarded successfully, this URL won't be accessible.
 
