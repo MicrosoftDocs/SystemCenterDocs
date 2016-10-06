@@ -43,7 +43,7 @@ You can either select one or more monitoring objects and place them into mainten
 - Schedule multiple jobs for the same monitored entity.
 
 > [!IMPORTANT]
-Important Information about configuring and working with the Maintenance Schedule feature:
+> Important Information about configuring and working with the Maintenance Schedule feature:
 > - You can change when a running schedule will end, but the change will only apply to the schedule that is running. If you want to edit the end time for future runs of that schedule, you must first stop the schedule and then apply your changes.
 >
 > - The time zone specified for the Windows computer hosting the Management Server role will be applied to the maintenance schedule.
