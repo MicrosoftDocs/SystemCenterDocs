@@ -109,8 +109,9 @@ You can deploy DPM to back up client computers.   Depending on the client operat
 
     On the **Select Tape and Library Details** page specify the tape/library to use, and whether data should be compressed and encrypted on tape.
 
-7.  In the **Review disk allocation** page review the storage pool disk space allocated for the protection group. **Total Data size** shows the size of the data you want to back up, and **Disk space to be provisioned on DPM** shows the space that DPM recommends for the protection group. DPM chooses the ideal backup volume, based on the settings. However, you can change the backup volume choices in the **Disk allocation details**. For the workloads, select the preferred storage in the dropdown. This will change the values in “Total Storage” and “Free Storage” in the “Available Disk Storage” pane. 
-Underprovisioned space is the amount the volume is underprovisioned by. It is the amount of storage DPM suggests you add to the volume to continue with backups smoothly in the future.
+7.  In the **Review disk allocation** page review the storage pool disk space allocated for the protection group.
+
+    **Total Data size** is the size of the data you want to back up, and **Disk space to be provisioned on DPM** is the space that DPM recommends for the protection group. DPM chooses the ideal backup volume, based on the settings. However, you can edit the backup volume choices in the **Disk allocation details**. For the workloads, select the preferred storage in the dropdown menu. Your edits change the values for **Total Storage** and **Free Storage** in the **Available Disk Storage** pane. Underprovisioned space is the amount of storage DPM suggests you add to the volume, to continue with backups smoothly in the future.
 
 8.  In **Choose replica creation method** select how you want to handle the initial full data replication.  If you select to replicate over the network we recommended you choose an off-peak time. For large amounts of data or less than optimal network conditions, consider replicating the data offline using removable media.
 

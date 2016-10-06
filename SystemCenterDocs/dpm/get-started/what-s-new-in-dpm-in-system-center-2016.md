@@ -54,7 +54,7 @@ Modern DPM Storage (MDS) achieves 30-40% storage savings using technologies such
 DPM 2016 uses block cloning to store backups on ReFS volumes. Instead of using copy-on-write to store backups (which was used by VolSnap in DPM 2012 R2), DPM 2016's block cloning uses allocate-on-write. This change improves IOPS efficiency, making backups nearly 70% faster.
 
 ### Choose the volumes for your data source to increase storage efficiency
-DPM's flexible storage feature is workload-aware, which means it can help decrease costs by providing flexible storage choices for a given data source. The flexible storage feature means DPM can use expensive, high-performance disks for backing up high-IOPS workloads, such as SQL or SharePoint. Low performant storage can be used for reduced-IOPS workloads.
+DPM's workload-aware storage feature helps decrease costs by providing flexible storage choices for a given data source. This means DPM can use expensive, high-performance disks for backing up high-IOPS workloads, such as SQL or SharePoint. Low performant storage can be used for reduced-IOPS workloads.
 
 ### Backup storage consumption in line with production data source
 Without Logical Disk Manager (LDM) limits, data sources grow and shrink as needed, without the need for manual intervention. DPM doesn't need to allocate storage to data sources beforehand, and can dynamically allow the backups to adjust as needed, thus achieving higher efficiency with less storage required.

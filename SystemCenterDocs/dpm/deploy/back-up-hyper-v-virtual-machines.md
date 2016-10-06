@@ -102,38 +102,37 @@ Hyper-V virtual machines with DPM.
 
 2.  Set up the DPM protection agent on the Hyper-V server or Hyper-V cluster nodes. If you're doing guest-level backup you'll install the agent on the VMs you want to back up at the guest-level.
 
-3.  In  the DPM Administrator console click **Protection** > **Create protection group** to open the **Create New Protection Group** wizard.
+3. In  the DPM Administrator console click **Protection** > **Create protection group** to open the **Create New Protection Group** wizard.
 
-    -   On the **Select Group Members** page, select the VMs you want to protect from the Hyper-V host servers on which they're located. We recommend you put all VMs that will have the same protection policy into the same protection group. You can enable colocation for efficient use of space. Colocation allows you to locate data from different protection groups on the same disk or tape storage so that multiple data sources have a single replica and recovery point volume.
+4. On the **Select Group Members** page, select the VMs you want to protect from the Hyper-V host servers on which they're located. We recommend you put all VMs that will have the same protection policy into the same protection group. You can enable colocation for efficient use of space. Colocation allows you to locate data from different protection groups on the same disk or tape storage so that multiple data sources have a single replica and recovery point volume.
 
-    -   On the **Select Data Protection Method** page, specify a protection group name. Select **I want short-term protection using Disk** and select **I want online protection** if you want to back up data to Azure using the Azure Backup service. If this option isn't available complete the wizard to create the group and then modify the protection group settings to select this option. You can store data in Azure for up to 3360 days.
+5. On the **Select Data Protection Method** page, specify a protection group name. Select **I want short-term protection using Disk** and select **I want online protection** if you want to back up data to Azure using the Azure Backup service. If this option isn't available complete the wizard to create the group and then modify the protection group settings to select this option. You can store data in Azure for up to 3360 days.
 
-        If you have a standalone tape or tape library connected to the DPM server you'll be able to select **I want long-term protection using tape**.
+  If you have a standalone tape or tape library connected to the DPM server you'll be able to select **I want long-term protection using tape**.
 
-    -   In **Specify Short-Term Goals** > **Retention range**, specify how long you want to retain disk data. In **Synchronization frequency** specify how often incremental backups of the data should run. Alternatively, instead of selecting an interval for incremental backups you can enable **Just before a recovery point**. With this setting enabled DPM will run an express full back just before each scheduled recovery point.
+6. In **Specify Short-Term Goals** > **Retention range**, specify how long you want to retain disk data. In **Synchronization frequency** specify how often incremental backups of the data should run. Alternatively, instead of selecting an interval for incremental backups you can enable **Just before a recovery point**. With this setting enabled DPM will run an express full back just before each scheduled recovery point.
 
-        If you're protecting application workloads, recovery points are create in accordance with Synchronization frequency if the application supports incremental backups. If it doesn't then DPM runs an express full backup instead of incremental, and creates recovery points in accordance with the express backup schedule that you can configure.
+    - If you're protecting application workloads, recovery points are create in accordance with Synchronization frequency, provided the application supports incremental backups. If it doesn't then DPM runs an express full backup, instead of an incremental backup, and creates recovery points in accordance with the express backup schedule.
 
     -   If you enable long-term storage to tape, in **Specify Long-Term Goals** > **Retention range**, specify how long you want to keep your tape data (1-99 years).
         In Frequency of backup  select the backup frequency that you want.
 
-        The backup frequency is based on the specified retention range. When the retention range is 1-99 years, you can select backups to occur daily, weekly, bi-weekly, monthly, quarterly, half-yearly, or yearly.
-        When the retention range is 1-11 months, you can select backups to occur daily, weekly, bi-weekly, or monthly.
+    - The backup frequency is based on the specified retention range. When the retention range is 1-99 years, you can select backups to occur daily, weekly, bi-weekly, monthly, quarterly, half-yearly, or yearly.
+
+    - When the retention range is 1-11 months, you can select backups to occur daily, weekly, bi-weekly, or monthly.
         When the retention range is 1-4 weeks, you can select backups to occur daily or weekly.
 
-        On a stand-alone tape drive, for a single protection group, DPM uses the same tape for daily backups until there is insufficient space on the tape. Data resources will be colocated on the tape if you enabled colocation.
+    - On a stand-alone tape drive, for a single protection group, DPM uses the same tape for daily backups until there is insufficient space on the tape. Data resources will be colocated on the tape if you enabled colocation.
 
-        If you configured long-term storage to tape, on the **Select Tape and Library Details** page, specify the tape and library that'll be used for back up of this protection group. You can also specify whether to compress or encrypt the backup data.
+    - If you configured long-term storage to tape, on the **Select Tape and Library Details** page, specify the tape and library that'll be used for back up of this protection group. You can also specify whether to compress or encrypt the backup data.
 
-    -   On the **Review Disk Allocation** page recommended disk allocations are displayed. Recommendations are based on the retention range, the type of workload and the size of the protected data.
-        Data size indicates the zize of data in protection group.
-        Disk space indicates the amount of disk space DPM recommends for allocation to the protection group.
-        If **Automatically grow** is enabled  you enable this setting, if data in the protected group outgrows the initial allocations, DPM will try to automatically increase the disk size by 25%
-         if data outgrows the initial allocations.
+7.  In the **Review disk allocation** page review the storage pool disk space allocated for the protection group.
 
-    -   On the **Choose Replica Creation Method** page, specify how the initial replication of data in the protection group will be performed. If you select to replicate over the network we recommended you choose an off-peak time. For large amounts of data or less than optimal network conditions, consider replicating the data offline using removable media.
+    **Total Data size** is the size of the data you want to back up, and **Disk space to be provisioned on DPM** is the space that DPM recommends for the protection group. DPM chooses the ideal backup volume, based on the settings. However, you can edit the backup volume choices in the **Disk allocation details**. For the workloads, select the preferred storage in the dropdown menu. Your edits change the values for **Total Storage** and **Free Storage** in the **Available Disk Storage** pane. Underprovisioned space is the amount of storage DPM suggests you add to the volume, to continue with backups smoothly in the future.
 
-    -   On the **Consistency Check Options** page, select how you want to automate consistency checks. You can enable a check to run only when replica data becomes inconsistent, or according to a schedule. If you don't want to configure automatic consistency checking, you can run a manual check at any time by right-clicking the protection group and selecting **Perform Consistency Check**.
+8. On the **Choose Replica Creation Method** page, specify how the initial replication of data in the protection group will be performed. If you select to replicate over the network we recommended you choose an off-peak time. For large amounts of data or less than optimal network conditions, consider replicating the data offline using removable media.
+
+9. On the **Consistency Check Options** page, select how you want to automate consistency checks. You can enable a check to run only when replica data becomes inconsistent, or according to a schedule. If you don't want to configure automatic consistency checking, you can run a manual check at any time by right-clicking the protection group and selecting **Perform Consistency Check**.
 
     After you create the protection group initial replication of the data occurs in line with the method you selected. After initial replication backup takes place in line with the protection group settings. If you need to recover backed up data note the following:
 

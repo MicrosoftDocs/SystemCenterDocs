@@ -5,7 +5,7 @@ ms.topic:  article
 author:  cfreemanwa
 ms.prod:  system-center-threshold
 keywords:
-ms.date:  2016-08-30
+ms.date:  2016-10-12
 title:  Release Notes for System Center 2016
 ms.assetid:  5fad5608-4cb7-48b0-aa31-35ca5cc2d560
 ---
@@ -20,6 +20,29 @@ ms.assetid:  5fad5608-4cb7-48b0-aa31-35ca5cc2d560
 ## System Center 2016 - Data Protection Manager Release Notes
 
 The following release notes apply to System Center 2016 - Data Protection Manager.
+
+
+#### Backups for Windows 10 Anniversary Update clients
+**Description**: Some backup jobs for DPM-protected Windows 10 clients may not start after updating the client with the Anniversary update.
+
+**Workaround**: On the client computer:
+1. Open the Task Scheduler app.
+
+2. In the Task Scheduler library, find and select the scheduled job, **ScheduledDPMClientBackup**.
+
+3. In the **Actions** pane, click **Export** and save the xml output as a backup copy.
+
+4. In the **Actions** pane, click **Properties**.
+
+  The properties dialog box for ScheduledDPMClientBackup opens.
+
+5. In the Properties dialog, select the **Triggers** tab, and click **Edit**.
+
+6. In the **Edit Trigger** dialog, from the **Begin the task** drop-down menu, select **At log on**.
+
+7. In **Advanced settings**, check **Repeat task every** and select **15 minutes**. Then click **OK**.
+
+8. You must reboot the computer for these changes to take effect.
 
 
 #### Silent Installation of System Center DPM with SQL Server 2008
