@@ -57,7 +57,7 @@ After you've connected VMM to Operations Manager you can view and create reports
 **Report** | **Details**
 --- | ---
 **Capacity Utilization** | Details usage for VM hosts and other objects.<br/><br/> Provides an overview of how capacity is being used in your datacenter, and helps you to make resources decisions for supporting your VMs.
-**Host Group Forecasting** | Predicts host activity based on history of disk space, memory, disk IO, network IO, and CPU usage.<br/><br/> o use the forecasting reports, SQL Server Analysis Services must be installed on the Operations Manager Reporting server.
+**Host Group Forecasting** | Predicts host activity based on history of disk space, memory, disk IO, network IO, and CPU usage.<br/><br/> To use the forecasting reports, SQL Server Analysis Services must be installed on the Operations Manager Reporting server.
 **Host Utilization** | Shows the number of virtual machines that are running on each host and average usage, along with total or maximum values for host processors, memory, and disk space.
 **Host Utilization Growth** | Shows the percentage change in resource usage and the number of virtual machines that are running on selected hosts during a specified time period.
 **Power Savings** | Shows how much power is saved through power optimization.<br/><br/> You can view total hours of processor power saved for a date range and host group, as well as detailed information for each host in a host group.
@@ -68,8 +68,8 @@ After you've connected VMM to Operations Manager you can view and create reports
 
 ## View reports
 
-You can view reports in the Reporting workspace in System Center Operations Manager, or by using a web browser and entering this address: http://ReportingServerName:port/reports. You can optionally specify "https" instead of http.
+You can view reports in the Reporting workspace in System Center Operations Manager, or by using a web browser and entering this address: `http://ReportingServerName:port/reports`. You can optionally specify "https" instead of http.
 
-- Reporting server name is the name of the Operations Manager reporting server.
-- port is 80 for HTTP and 443 for HTTPS
-- reports is the reporting server virtual directory, by default: **reports**
+- `ReportingServerName` is the name of the Operations Manager reporting server.
+- `port` is 80 for HTTP and 443 for HTTPS
+- `reports` is the reporting server virtual directory, by default: **reports**

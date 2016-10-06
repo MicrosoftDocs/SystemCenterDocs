@@ -3,10 +3,10 @@ title: Plan VMM installation
 description: This article provides planning information for setting up VMM
 author:  rayne-wiselman
 ms.author: raynew
-manager:  cfreemanwa
+manager:  cfreeman
 ms.date:  2016-10-12
 ms.topic:  article
-ms.prod:  system-center-threshold
+ms.prod:  system-center-2016
 ms.technology:  virtual-machine-manager
 ---
 
@@ -23,8 +23,8 @@ This table summarizes what you'll need for VMM 2016 installation.
 **Requirement** | **Version** | **Details**
 --- | --- | ---
 **VMM server operating system** | Windows Server 2016 | Server Core is supported
-**SQL Server** | SQL Server 2014 onwards | Enterprise edition, 64-bit is required<
-**Command line utilities for SQL Server** | [SQL Server 2014 feature pack](https://www.microsoft.com/download/details.aspx?id=42295), ]2012 feature pack](https://www.microsoft.com/download/details.aspx?id=29065) | If you want to deploy VMM services using SQL Server data-tier apps, install the related command-line utilities on the VMM management server. The version you install should match the SQL Server version. You don't have to install these to install VMM.
+**SQL Server** | SQL Server 2014 onwards | Enterprise edition, 64-bit is required
+**Command line utilities for SQL Server** | [SQL Server 2014 feature pack] | If you want to deploy VMM services using SQL Server data-tier apps, install the related command-line utilities on the VMM management server. The version you install should match the SQL Server version. You don't have to install these to install VMM.
 **Client (to run VMM console)** | Windows 8.1 onwards, Windows Server 2012 R2 onwards | To run the console the machine must be in an Active Directory domain.
 **Windows Assessment and Deployment Kit (ADK)** | Windows ADK for Windows 10 |  You can install from setup, or you can [download it](https://msdn.microsoft.com/windows/hardware/dn913721.aspx). You only need the **Deployment Tools** and **Windows Preinstallation Environment** options.
 **VMM library** | Windows Server 2012 onwards | Required operating systems if you're installing the library on a remote server
@@ -124,4 +124,4 @@ To ensure that VMM retains encrypted data across moves, you can use distributed 
 
 ## Next steps
 
-[Install VMM](../deploy/deploy-install.md)
+- [Install VMM](../deploy/deploy-install.md)

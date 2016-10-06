@@ -69,7 +69,7 @@ You can run live migration on multiple VMs so that two migrations occur at the s
 - You can view concurrent migrations in progress in Hyper-V Manager > **Actions** > **Hyper-V Settings**> **Server** >  **Live Migrations** and **Storage Migrations**. In **Jobs**, verify that the migrations occur simultaneously.
 
 
-## improve live migration speed
+## Improve live migration speed
 
 On Hyper-V hosts, you can increase live migration speed using compression, by using SMB as the transport, or both. The compression method uses algorithms that reduce the data that is transmitted over the wire. The SMB method can allow for faster data transfer.
 

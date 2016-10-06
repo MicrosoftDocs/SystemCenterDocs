@@ -3,10 +3,10 @@ title: Set up dynamic and power optimization in the VMM compute fabric
 description: This article describes how to configure dynamic optimization and power optimization in the VMM fabric
 author:  rayne-wiselman
 ms.author: raynew
-manager:  cfreemanwa
+manager:  cfreeman
 ms.date:  2016-09-22
 ms.topic:  article
-ms.prod:  system-center-threshold
+ms.prod:  system-center-2016
 ms.technology:  virtual-machine-manager
 ---
 
@@ -17,8 +17,8 @@ ms.technology:  virtual-machine-manager
 Read this article to learn about enabling dynamic optimization and power optimization for VMs in the System Center 2016 - Virtual Machine Manager (VMM) compute fabric. The article includes a feature overview, instructions for setting up BMC for power optimization, and describes how to enable and run these features.
 
 
-- **Dynamic optimization**: Using dynamic optimization VMM performs live migration of VMs within a host cluster, usings the settings you specify, to improve load balancing among hosts and to correct placement issues for VMs.
-- **Power optimization**: Power optimization is a feature of dynamic optimization that saves energy by turning off hosts that aren't need to meet resource requirements within a cluster, and turns them back on when they're needed.
+- **Dynamic optimization**: Using dynamic optimization VMM performs live migration of VMs within a host cluster, using the settings you specify, to improve load balancing among hosts and to correct placement issues for VMs.
+- **Power optimization**: Power optimization is a feature of dynamic optimization that saves energy by turning off hosts that aren't needed to meet resource requirements within a cluster, and turns them back on when they're needed.
 
 VMM supports dynamic optimization and power optimization on Hyper-V host clusters, and on VMware host clusters in the VMM fabric that support live migration.
 

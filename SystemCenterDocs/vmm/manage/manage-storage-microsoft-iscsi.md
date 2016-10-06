@@ -3,10 +3,10 @@ title: Set up a Microsoft iSCSI Target Server in the VMM storage fabric
 description: This article describes how to deploy a Microsoft iSCSI Target Server in the VMM storage fabric
 author:  rayne-wiselman
 ms.author: raynew
-manager:  cfreemanwa
+manager:  cfreeman
 ms.date:  2016-09-22
 ms.topic:  article
-ms.prod:  system-center-threshold
+ms.prod:  system-center-2016
 ms.technology:  virtual-machine-manager
 ---
 
@@ -40,40 +40,40 @@ Open PowerShell and use the cmdlets described below to manage iSCSI target serve
 
 #### Add a storage provider
 
-        |Command|Purpose|
-        |-----------|-----------|
-        |`$Cred = Get-Credential`|Obtain the iSCSI Target Server local administrative credentials that are based on user name and password.<br /><br />Note that any account that is part of the Local Administrators group is sufficient.|
-        |`$Runas = New-SCRunAsAccount -Name "iSCSIRunas" -Credential $Cred`|Create a Run As account in VMM.|
-        |`Add-SCStorageProvider -Name "Microsoft iSCSI Target Provider" -RunAsAccount $Runas -ComputerName "<computername>" -AddSmisWmiProvider`|Add the storage provider.|
+|Command|Purpose|
+|-----------|-----------|
+|`$Cred = Get-Credential`|Obtain the iSCSI Target Server local administrative credentials that are based on user name and password.<br /><br />Note that any account that is part of the Local Administrators group is sufficient.|
+|`$Runas = New-SCRunAsAccount -Name "iSCSIRunas" -Credential $Cred`|Create a Run As account in VMM.|
+|`Add-SCStorageProvider -Name "Microsoft iSCSI Target Provider" -RunAsAccount $Runas -ComputerName "<computername>" -AddSmisWmiProvider`|Add the storage provider.|
 
 #### View storage properties
 
-        |Command|Purpose|
-        |-----------|-----------|
-        |`$array = Get-SCStorageArray -Name “<computername>”`|Review the storage array attributes.|
-        |`$array.StoragePools`|View available storage pools.|
+|Command|Purpose|
+|-----------|-----------|
+|`$array = Get-SCStorageArray -Name “<computername>”`|Review the storage array attributes.|
+|`$array.StoragePools`|View available storage pools.|
 
 #### Add pools from iSCSI Target Server to VMM management
 
-        |Command|Purpose|
-        |-----------|-----------|
-        |`$pool = Get-SCStoragePool -Name "MS iSCSITarget Concrete: D:"`|Get the specific storage pool to add.|
-        |`$class = New-SCStorageClassification -Name “gold”`|Create a storage classification, if none exists.|
-        |`Set-SCStorageArray -AddStoragePoolToManagement $pool -StorageArray $pool.StorageArray -StorageClassification $class`|Add the storage pool to VMM.|
-        |`Set-SCStoragePool -StoragePool $pool -AddVMHostGroup (Get-SCVMHostGroup -Name "All Hosts")`|Allocate the storage pool to a virtualization server group.|
+|Command|Purpose|
+|-----------|-----------|
+|`$pool = Get-SCStoragePool -Name "MS iSCSITarget Concrete: D:"`|Get the specific storage pool to add.|
+|`$class = New-SCStorageClassification -Name “gold”`|Create a storage classification, if none exists.|
+|`Set-SCStorageArray -AddStoragePoolToManagement $pool -StorageArray $pool.StorageArray -StorageClassification $class`|Add the storage pool to VMM.|
+|`Set-SCStoragePool -StoragePool $pool -AddVMHostGroup (Get-SCVMHostGroup -Name "All Hosts")`|Allocate the storage pool to a virtualization server group.|
 
 #### Create a LUN
 
-        |Command|Purpose|
-        |-----------|-----------|
-        |`$LUN = New-SCStorageLogicalUnit -Name "iSCSI1" -StoragePool $pool -DiskSizeMB 1000`|Create an iSCSI logical unit number (LUN).|
-        |`Set-SCStorageLogicalUnit -StorageLogicalUnit $LUN -VMHostGroup (Get-SCVMHostGroup -Name "All Hosts")`|Allocate the LUN to the host group.|
-        |`$host = Get-SCVMhost -ComputerName <host name>`|Retrieve the properties of a host.|
-        |`Register-SCStorageLogicalUnit -StorageLogicalUnit $LUN -VMHost $host`|Assign the LUN to the host.|
+|Command|Purpose|
+|-----------|-----------|
+|`$LUN = New-SCStorageLogicalUnit -Name "iSCSI1" -StoragePool $pool -DiskSizeMB 1000`|Create an iSCSI logical unit number (LUN).|
+|`Set-SCStorageLogicalUnit -StorageLogicalUnit $LUN -VMHostGroup (Get-SCVMHostGroup -Name "All Hosts")`|Allocate the LUN to the host group.|
+|`$host = Get-SCVMhost -ComputerName <host name>`|Retrieve the properties of a host.|
+|`Register-SCStorageLogicalUnit -StorageLogicalUnit $LUN -VMHost $host`|Assign the LUN to the host.|
 
 #### Decommission resources
 
-        |Command|Purpose|
-        |-----------|-----------|
-        |`Remove-SCStorageLogicalUnit -StorageLogicalUnit $LUN`|Delete a LUN.|
-        |`Remove-SCStorageProvider -StorageProvider (Get-SCStorageProvider -Name "Microsoft iSCSI Target Provider")`|Remove a storage provider.|
+|Command|Purpose|
+|-----------|-----------|
+|`Remove-SCStorageLogicalUnit -StorageLogicalUnit $LUN`|Delete a LUN.|
+|`Remove-SCStorageProvider -StorageProvider (Get-SCStorageProvider -Name "Microsoft iSCSI Target Provider")`|Remove a storage provider.|

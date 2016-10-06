@@ -6,7 +6,7 @@ ms.author: raynew
 manager:  cfreeman
 ms.date:  2016-10-12
 ms.topic:  article
-ms.prod:  system-center-threshold
+ms.prod:  system-center-2016
 ms.technology:  virtual-machine-manager
 ---
 
@@ -107,4 +107,4 @@ Enable a cloud to support guarded hosts:
 
 ## Next steps
 
-[Deploy shielded virtual machines in the VMM fabric](guarded-vms.md)
+- [Deploy shielded virtual machines in the VMM fabric](guarded-vms.md)

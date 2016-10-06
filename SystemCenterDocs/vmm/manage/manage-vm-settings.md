@@ -28,19 +28,19 @@ You can now add and remove virtual network adapters (vNIC) from running virtual 
 - This feature is only available for Generation 2 VMs.
 - By default virtual network adapters that you add aren't connected to a virtual network. You can configure VMs assigned with the hardware profile to use one or more of the virtual network adapters after they're deployed on a host.
 
-1. In the virtual machine properties > **Hardware Configuration**, click **Network Adapters**, and select the network adapter to add. 
+1. In the virtual machine properties > **Hardware Configuration**, click **Network Adapters**, and select the network adapter to add.
 2. You can configure a number of properties for the network adapter, including:
 
-  - **Connected to**: Select what the adapter is connected to:
-   - Not connected: Select if you don't want to specify a network now.
-   - Internal network: Select if you want to connect to an isolated internal network that enables communication among VMs on the same host.  Virtual machines attached to the internal virtual network cannot communicate with the host, with any other physical computers on the host's LAN, or with the internet.
-  - External network: Select to specify that a virtual machine created by using this hardware profile will be connected to a physical network adapter on its host. Virtual machines attached to a physical network adapter can communicate with any physical or virtual computer that the host can communicate with and with any resources available on the intranet and over the Internet that the host computer can access.
- - Ethernet (MAC) address: computers, a virtual MAC address on virtual machines uniquely identifies each computer on the same subnet. Select one of the following options:
- - Dynamic. Select this option if you want to enable a dynamic MAC address for a virtual machine.
- - Static. Select this option if you want to specify a static MAC address for a virtual machine. Type a static MAC address in the field provided.
- 
- ### Add with PowerShell
- 
+    - Connected to: Select what the adapter is connected to:
+    - Not connected: Select if you don't want to specify a network now.
+    - Internal network: Select if you want to connect to an isolated internal network that enables communication among VMs on the same host.  Virtual machines attached to the internal virtual network cannot communicate with the host, with any other physical computers on the host's LAN, or with the internet.
+    - External network: Select to specify that a virtual machine created by using this hardware profile will be connected to a physical network adapter on its host. Virtual machines attached to a physical network adapter can communicate with any physical or virtual computer that the host can communicate with and with any resources available on the intranet and over the Internet that the host computer can access.
+    - Ethernet (MAC) address: computers, a virtual MAC address on virtual machines uniquely identifies each computer on the same subnet. Select one of the following options:
+    - Dynamic. Select this option if you want to enable a dynamic MAC address for a virtual machine.
+    - Static. Select this option if you want to specify a static MAC address for a virtual machine. Type a static MAC address in the field provided.
+
+### Add with PowerShell
+
  You can use PowerShell to add a virtual adapter. Here's a sample cmdlet for setting this up:
 
 #### Example 1
@@ -120,7 +120,7 @@ Production checkpoints allow you to easily create "point in time" images of a VM
     - **ProductionOnly**: This option is the same as Production with one key difference: With ProductionOnly, if a production checkpoint fails then no checkpoint will be taken. This is different from Production where if a production checkpoint fails, a standard checkpoint will be taken instead.
     - **Standard**:  All of the memory state of running applications gets stored so that when you apply the checkpoint the application reverts to the previous state. For many applications this would not be suitable for a production environment. Therefore this type of checkpoint is typically more suitable for development and test environments for some applications.
 
-Set the checkpoint with the following PowerShell command: **Set-SCVirtualMachine CheckpointType (Disabled, Production, ProductionOnly, Standard)**
+Set the checkpoint with the following PowerShell command: `Set-SCVirtualMachine CheckpointType (Disabled, Production, ProductionOnly, Standard)`
 
 
 

@@ -3,10 +3,10 @@ title: What's new in VMM in System Center 2016
 description: This article describes what's new in VMM 2016
 author:  rayne-wiselman
 ms.author: raynew
-manager:  cfreemanwa
+manager:  cfreeman
 ms.date:  2016-09-22
 ms.topic:  article
-ms.prod:  system-center-threshold
+ms.prod:  system-center-2016
 ms.technology:  virtual-machine-manager
 ---
 
@@ -21,7 +21,6 @@ This article describes what's new in System Center 2016 - Virtual Machine Manage
 ## Compute
 
 ### Full lifecycle management of Nano Server-based hosts and VMs
-(../manage/manage-compute-add-nano-hyper-v.md).
 You can provision and manage Nano Server-based hosts and virtual machines in the VMM fabric. [Learn more](../manage/manage-compute-add-nano-hyper-v.md).
 
 ### Rolling upgrade of a Windows Server 2012 R2 host clusters
@@ -52,7 +51,7 @@ The Server App-V application in service templates is no longer available in VMM 
 
 ### Deploy and manage storage clusters with Storage Spaces Direct (S2D)
 
-[Storage Spaces Direct in Windows Server 2016](https://technet.microsoft.com/library/mt126109.aspx)) enables you to build highly available storage systems on Windows Server. You can use VMM to create a Scale-Out File Server running Windows Server 2016, and configure it with Storage Spaces Direct. After it's configure you can create storage pools and file shares on it. [Learn more](../manage/manage-storage-spaces-direct-vmm.md).
+[Storage Spaces Direct in Windows Server 2016](https://technet.microsoft.com/library/mt126109.aspx) enables you to build highly available storage systems on Windows Server. You can use VMM to create a Scale-Out File Server running Windows Server 2016, and configure it with Storage Spaces Direct. After it's configure you can create storage pools and file shares on it. [Learn more](../manage/manage-storage-spaces-direct-vmm.md).
 
 
 ### Storage Replica

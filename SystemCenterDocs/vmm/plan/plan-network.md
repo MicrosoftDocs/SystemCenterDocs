@@ -6,7 +6,7 @@ ms.author: raynew
 manager:  cfreemanwa
 ms.date:  2016-09-22
 ms.topic:  article
-ms.prod:  system-center-threshold
+ms.prod:  system-center-2016
 ms.technology:  virtual-machine-manager
 ---
 
@@ -116,4 +116,4 @@ The following table provides detailed guidelines. Additional information about I
 
 ## Next steps
 
-[Set up the networking fabric](../manage/manage-network-overview.md)
+- [Set up the networking fabric](../manage/manage-network-overview.md)

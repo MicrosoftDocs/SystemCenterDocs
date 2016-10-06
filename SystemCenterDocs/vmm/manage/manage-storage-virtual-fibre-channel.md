@@ -3,10 +3,10 @@ title: Set up virtual fibre channel in the VMM storage fabric
 description: This article describes how to set up Virtual Fibre Channel in the VMM storage fabric
 author:  rayne-wiselman
 ms.author: raynew
-manager:  cfreemanwa
+manager:  cfreeman
 ms.date:  2016-09-22
 ms.topic:  article
-ms.prod:  system-center-threshold
+ms.prod:  system-center-2016
 ms.technology:  virtual-machine-manager
 ---
 # Set up a Virtual Fibre Channel in the VMM storage fabric
@@ -110,7 +110,7 @@ For a host computer, VM, or computer service tier to access storage array resour
 
 1.  Click **Fabric** > **Storage** >**Classifications and Pools**. Under **Name**, click the applicable storage device > **Create Logical Unit**.
 2.  In the **Create Logical Unit** select a storage pool, specify a name and description, and LUN size. Specify whether you want to crate a thin or fixed size LUN.
-3.  To register the LUN, in **VMs and Services** pane, right-click the applicable VM a> **Properties** > **Add** > **Add Disk**.
+3.  To register the LUN, in **VMs and Services** pane, right-click the applicable VM > **Properties** > **Add** > **Add Disk**.
 4.  In **Create Logical Unit** select a storage pool, name, and size. Click **OK** to register the LUN.
 
 ## Create and deploy a service tier

@@ -2,11 +2,11 @@
 title: Manage Storage Spaces Direct in VMM
 description: This article describes how to set up Storage Spaces Direct in the VMM fabric
 author:  rayne-wiselman
-ms.author: rayne2
-manager:  cfreemanwa
+ms.author: raynew
+manager:  cfreeman
 ms.date:  2016-09-22
 ms.topic:  article
-ms.prod:  system-center-threshold
+ms.prod:  system-center-2016
 ms.technology:  virtual-machine-manager
 ---
 
@@ -112,7 +112,7 @@ You need to create a pool, virtual disks, and CSVs in the Storage Spaces Direct 
    ![Select disks](../media/storage-spaces-disks.png)
 
  3. Complete the rest of the wizard as described in this [article](manage-sofs.md#create-storage-pools).
- 4.  Using Windows Powershell, the pool and the storage tier is automatically created with the "Enable-CLusterS2D autoconfig=true" option. T
+ 4.  Using Windows Powershell, the pool and the storage tier is automatically created with the "Enable-CLusterS2D autoconfig=true" option.
 
 ### Create a CSV
 
