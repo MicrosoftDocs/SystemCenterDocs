@@ -2,6 +2,7 @@
 ## [What's New in System Center 2016](get-started/What-s-New-in-System-Center.md)
 ## [Release Notes for System Center 2016 ](get-started/Release-Notes.md)
 ## [Features Removed or Deprecated from System Center 2016](get-started/Features-Removed-or-Deprecated.md)
+## [Upgrade to System Center 2016](/get-started/upgrade-to-system-center-2016.md)
 ## [System Requirements](system-requirements/System-Requirements.md)
 ### [Minimum Hardware Recommendations](system-requirements/Minimum-Hardware-Recommendations.md)
 ### [Operating Systems Compatibility](system-requirements/Operating-Systems-Compatibility.md)

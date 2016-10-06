@@ -31,4 +31,5 @@ In order for a runbook to perform its required actions, it must have permissions
 
 ## See Also
 [Service Management Automation](../Service-Management-Automation.md)
+
 [Checkpoints](http://aka.ms/runbookauthor/checkpoints)

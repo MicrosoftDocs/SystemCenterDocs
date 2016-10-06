@@ -1,11 +1,12 @@
 ---
 description:  
-manager:  cfreemanwa
+manager:  cfreeman
 ms.topic:  article
 author:  bwren
+ms.author: bwren
 ms.prod:  system-center-threshold
 keywords:  
-ms.date:  2016-08-18
+ms.date:  10/12/2016
 title:  Creating or Importing a Runbook
 ms.technology:  service-management-automation
 ms.assetid:  d14db796-a3e5-4b1d-a098-e734ceae2e0e
@@ -13,7 +14,7 @@ ms.assetid:  d14db796-a3e5-4b1d-a098-e734ceae2e0e
 
 # Creating or Importing a Runbook
 
->Applies To: Windows Azure Pack for Windows Server
+>Applies To: Windows Azure Pack for Windows Server, System Center 2016 - Service Management Automation
 
 You can add a runbook to Service Management Automation by either [creating one in the Management Portal](Creating-or-Importing-a-Runbook.md#CreateRunbook) or [importing an existing runbook from a file](Creating-or-Importing-a-Runbook.md#ImportRunbook). This topic provides procedures for each of these methods.
 
@@ -84,5 +85,7 @@ Publish-SMARunbook "WebServiceEndpoint $webServer "Port $port "Name $runbookName
 
 ## See Also
 [Service Management Automation](../Service-Management-Automation.md)
+
 [Runbook Authoring](Authoring-Automation-Runbooks.md)
+
 [Editing a Runbook](Editing-a-Runbook.md)

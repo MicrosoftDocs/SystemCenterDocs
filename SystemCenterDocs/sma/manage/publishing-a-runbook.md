@@ -1,11 +1,12 @@
 ---
 description:  
-manager:  cfreemanwa
+manager:  cfreeman
 ms.topic:  article
 author:  bwren
+ms.author: bwren
 ms.prod:  system-center-threshold
 keywords:  
-ms.date:  2016-08-18
+ms.date:  10/12/2016
 title:  Publishing a Runbook
 ms.technology:  service-management-automation
 ms.assetid:  e2224465-5050-456e-99ec-d47772d33352
@@ -13,7 +14,7 @@ ms.assetid:  e2224465-5050-456e-99ec-d47772d33352
 
 # Publishing a Runbook
 
->Applies To: Windows Azure Pack for Windows Server
+>Applies To: Windows Azure Pack for Windows Server, System Center 2016 - Service Management Automation
 
 Each runbook in Service Management Automation has a Draft and a Published version. Only the Published version is available to be run, and only the Draft version can be edited. The Published version is unaffected by any changes to the Draft version. When the Draft version should be made available, then you publish it which overwrites the Published version with the Draft version.
 
@@ -60,6 +61,9 @@ Windows PowerShell Integrated Scripting Environment (ISE) is an application that
 
 ## See Also
 [Service Management Automation](../Service-Management-Automation.md)
+
 [Authoring Automation Runbooks](Authoring-Automation-Runbooks.md)
+
 [Creating or Importing a Runbook](Creating-or-Importing-a-Runbook.md)
+
 [Editing a Runbook](Editing-a-Runbook.md)

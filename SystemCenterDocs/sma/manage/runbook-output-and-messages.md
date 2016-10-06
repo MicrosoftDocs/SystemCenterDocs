@@ -1,11 +1,12 @@
 ---
 description:  
-manager:  cfreemanwa
+manager:  cfreeman
 ms.topic:  article
 author:  bwren
+ms.author: bwren
 ms.prod:  system-center-threshold
 keywords:  
-ms.date:  2016-08-18
+ms.date:  10/12/2016
 title:  Runbook Output and Messages
 ms.technology:  service-management-automation
 ms.assetid:  db18c324-ee25-4b6f-a7e6-2ea019a623d6
@@ -13,7 +14,7 @@ ms.assetid:  db18c324-ee25-4b6f-a7e6-2ea019a623d6
 
 # Runbook Output and Messages
 
->Applies To: Windows Azure Pack for Windows Server, System Center 2016
+>Applies To: Windows Azure Pack for Windows Server, System Center 2016- Service Management Automation
 
 Most Automation runbooks will have some form of output such as an error message to the user or a complex object intended to be consumed by another workflow. Windows PowerShell provides [multiple streams](http://aka.ms/runbookauthor/streams) to send output from a workflow. Service Management Automation works with each of these streams differently, and you should follow best practices for how to use each when you are creating a runbook.
 
@@ -179,4 +180,5 @@ Get-SmaJobOutput "WebServiceEndpoint $webServer "Port $port -Id $job.Id "Stream 
 
 ## See Also
 [Automation Runbooks](Automation-Runbooks.md)
+
 [Authoring Automation Runbooks](Authoring-Automation-Runbooks.md)

@@ -5,7 +5,7 @@ ms.topic:  article
 author:  bwren
 ms.prod:  system-center-threshold
 keywords:  
-ms.date:  2016-08-18
+ms.date:  10/12/2016
 title:  Windows PowerShell Workflow Concepts
 ms.technology:  service-management-automation
 ms.assetid:  25937b4f-40bc-4765-9322-5b3a0fd1ff8d
@@ -13,7 +13,7 @@ ms.assetid:  25937b4f-40bc-4765-9322-5b3a0fd1ff8d
 
 # Windows PowerShell Workflow Concepts
 
->Applies To: Windows Azure Pack for Windows Server, System Center 2016
+>Applies To: Windows Azure Pack for Windows Server, System Center 2016 - Service Management Automation
 
 One [type of runbook](Runbook-Types-in-Service-Management-Automation.md) for Service Management Automation is based on Windows PowerShell Workflows. This section provides a brief overview of critical features of workflows that are common to Automation runbooks. Complete details on workflows are available in [Getting Started with Windows PowerShell Workflow](http://go.microsoft.com/fwlink/?LinkID=324602).
 
@@ -149,7 +149,7 @@ InlineScript
 
 The most common use for **InlineScript** in a runbook is to run a block of code on another computer. This is required when cmdlets in your runbook are not installed in Automation or if the action only has permissions to be performed locally on the target computer. This is illustrated in the following diagram.
 
-![](../media/smaauth_inlinescript.png)
+![Inline script diagram](../media/smaauth_inlinescript.png)
 
 In order to run the code block on another computer, the **PSComputer** and **PSCredential** parameters are used with the **InlineScript** activity. A global resource such as a [Credential](Credentials.md) or [Connection](Connections.md) is typically used in a runbook to provide values for these parameters. The following sample code runs a set of commands on a computer represented by a connection called MyConnection.
 

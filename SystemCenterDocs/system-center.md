@@ -10,7 +10,7 @@ ms.author: cfreeman
 manager: cfreeman
 ms.technology: system-center-2016
 ms.topic: get-started-article
-ms.date: 2016-10-12
+ms.date: 10/12/2016
 ms.assetid: b8b4ec94-d6f4-4359-9a21-06178aa1de42
 ---
 # System Center 2016
@@ -24,6 +24,10 @@ Microsoft System Center 2016 offers a simplified datacenter management experienc
 - Increase efficiency with automated processes and self-service [Read more here](http://download.microsoft.com/download/4/9/D/49D90092-541C-41CC-96C9-40960D899586/System_Center_2016_Automation_and_Self_Service_solution_brief_EN_US.pdf)
 
 - Reduce complexity with infrastructure provisioning [Read more here](http://download.microsoft.com/download/7/C/1/7C1236DF-22F7-4C77-8E50-7399041107E3/System_Center_2016_Infrastructure_Provisioning_solution_brief_EN_US.pdf)
+
+- Reduce costs with modern data protection and storage
+
+- Keep servers and clients up to date with configuration and security policies
 
 You can download System Center 2016 from the [TechNet Evaluation Center](http://www.microsoft.com/en-us/evalcenter/evaluate-system-center-technical-preview).
 

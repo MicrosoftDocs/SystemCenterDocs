@@ -1,11 +1,12 @@
 ---
 description:  
-manager:  cfreemanwa
+manager:  cfreeman
 ms.topic:  article
 author:  bwren
+ms.author: bwren
 ms.prod:  system-center-threshold
 keywords:  
-ms.date:  2016-08-18
+ms.date:  10/12/2016
 title:  Schedules
 ms.technology:  service-management-automation
 ms.assetid:  0092bd39-187d-42ea-b126-02ef516e21e4
@@ -13,7 +14,7 @@ ms.assetid:  0092bd39-187d-42ea-b126-02ef516e21e4
 
 # Schedules
 
->Applies To: Windows Azure Pack for Windows Server, System Center 2016
+>Applies To: Windows Azure Pack for Windows Server, System Center 2016 - Service Management Automation
 
 Automation Schedules are used to schedule runbooks to run automatically.  This could be either a single date and time for the runbook to run once.  Or it could be a recurring schedule to start the runbook multiple times.  Schedules are typically not accessed from runbooks.
 
@@ -67,6 +68,9 @@ Set-SmaSchedule "WebServiceEndpoint $web "Port $port "Name $scheduleName "Schedu
 
 ## See Also
 [Service Management Automation](../Service-Management-Automation.md)
+
 [Authoring Automation Runbooks](Authoring-Automation-Runbooks.md)
+
 [Global Assets](Global-Assets.md)
+
 [Scheduling a Runbook](Scheduling-a-Runbook.md)
