@@ -5,13 +5,16 @@ ms.topic:  article
 author:  bwren
 ms.prod:  system-center-threshold
 keywords:  
-ms.date:  2016-07-21
+ms.date:  2016-10-12
 title:  orchestrator architecture
 ms.technology:  orchestrator
 ms.assetid:  7e0dc83c-cf86-4ccd-b356-a2842e086755
 ---
 
 # Orchestrator Architecture
+
+>Applies To: System Center 2016 - Orchestrator
+
 This topic provides an overview of Orchestrator including a description of the system architecture, the internals of a typical runbook workflow, and the flow of a deployed runbook.
 
 ## Orchestrator deployment basics
