@@ -61,7 +61,7 @@ If you don't want VMM to create logical and VM networks automatically you can di
 
 ## Create logical networks manually
 
-1.  **Fabric** > **Home ** > **Show** > **Fabric Resources**. In **Fabric** expand **Networking** > **Logical Networks** > **Home** > **Create** > **Create Logical Network**.
+1.  **Fabric** > **Home** > **Show** > **Fabric Resources**. In **Fabric** expand **Networking** > **Logical Networks** > **Home** > **Create** > **Create Logical Network**.
 2.  In **Create Logical Network Wizard** > **Name** specify a name and description.
 3.  Specify how you want to isolate VM networks associated with this logical network:
 
