@@ -25,7 +25,7 @@ You can use PerformancePoint Dashboard Designer with Service Manager to create a
  This section is an example showing how you can create a PerformancePoint Services dashboard using the Analysis Services ServiceManager WorkItems Cube. This involves creating a data source for the cube and then creating a scorecard that and creating a resolved incidents KPI. Then, you can create an example single\-page dashboard using a filter, a scorecard, and a report. Finally, you complete the example by exploring the deployed dashboard and its interactive features. You must have Microsoft SharePoint&nbsp;Designer&nbsp;2010 installed to complete the examples in the following topics.  
 
 > [!IMPORTANT]  
->  You must have the Enterprise edition of SharePoint&nbsp;Designer&nbsp;2010 to create SharePoint PerformancePoint dashboards. For more information about upgrading to the Enterprise edition, see [Upgrade from a SharePoint Server 2010 Standard CAL to an Enterprise CAL](http://technet.microsoft.com/library/cc261946.aspx).  
+>  You must have the Enterprise edition of SharePoint Designer 2010 to create SharePoint PerformancePoint dashboards. For more information about upgrading to the Enterprise edition, see [Upgrade from a SharePoint Server 2010 Standard CAL to an Enterprise CAL](http://technet.microsoft.com/library/cc261946.aspx).  
 
  For more information about PerformancePoint Dashboard Designer, see [PerformancePoint Dashboard Designer](http://technet.microsoft.com/library/bb821195\(office.12\).aspx).  
 

@@ -28,13 +28,13 @@ Service Manager objects are stored in management packs. To modify an object usin
 
 If you want to customize objects that are defined in a management pack in Service Manager, you have to open the management pack file that contains these objects in the Service Manager Authoring Tool. You can use the following procedure to open a management pack file in the Authoring Tool.  
 
- The **Management Pack Explorer** pane in the Authoring Tool displays all the management packs that are open. A management pack that you open and change is designated with an asterisk \(\*\)-for example, CustomMP\*-until it is saved.  
+ The **Management Pack Explorer** pane in the Authoring Tool displays all the management packs that are open. A management pack that you open and change is designated with an asterisk \(\*\) -for example, CustomMP\* -until it is saved.  
 
  When you select a management pack file to open, the system opens the specified management pack. In addition, it opens the following management packs:  
 
 -   All the other management packs that are located in the same folder as the management pack that you are opening  
 
--   All the management packs in the Library folder in the Service Manager installation folder, for example, in the \\Program Files \(x86\)\\Microsoft System Center\\Service Manager&nbsp;2016 Authoring\\Library folder  
+-   All the management packs in the Library folder in the Service Manager installation folder, for example, in the \\Program Files \(x86\)\\Microsoft System Center\\Service Manager 2016 Authoring\\Library folder  
 
  This is important because the definitions from all open management packs co\-exist in the Authoring Tool; therefore, they cannot contradict each other.  
 
@@ -51,7 +51,7 @@ If you want to customize objects that are defined in a management pack in Servic
 
 4.  In the **Open File** dialog box, select the management pack file that you want to open, and then click **Open**. The file that you select must have an .xml or .mp file name extension. For example, select **Management Packs** as the file type, and then select the following management pack file:  
 
-     \<Authoring Tool installation drive\>\\Program Files \(x86\)\\Microsoft System Center\\Service Manager&nbsp;2016 Authoring\\Library\\ServiceManager.IncidentManagement.Library.mp  
+     \<Authoring Tool installation drive\>\\Program Files \(x86\)\\Microsoft System Center\\Service Manager 2016 Authoring\\Library\\ServiceManager.IncidentManagement.Library.mp  
 
 5.  Wait for the management pack to open, and then verify that it is displayed in the **Management Pack Explorer** pane.  
 
