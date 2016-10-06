@@ -69,17 +69,17 @@ Use the following procedure to discover computers running Windows and to deploy 
 
     3.  In the **Domain** list, click the domain of the computers that you want to discover.
 
-        If you want to browse Active Directory Domain Services or type the computer names, do the following:
+    If you want to browse Active Directory Domain Services or type the computer names, do the following:
 
-     -   Select **Browse for, or type-in computer names**, click **Browse**, specify the names of the computers that you want to manage, and then click **OK**.
+     1.  Select **Browse for, or type-in computer names**, click **Browse**, specify the names of the computers that you want to manage, and then click **OK**.
 
-     -   In the **Browse for, or type-in computer names** box, type the computer names, separated by a semi-colon, comma, or a new line. You can use NetBIOS computer names or fully qualified domain names (FQDN).
+     2.  In the **Browse for, or type-in computer names** box, type the computer names, separated by a semi-colon, comma, or a new line. You can use NetBIOS computer names or fully qualified domain names (FQDN).
 
 7.  Click **Next**, and on the **Administrator Account** page, do one of the following:
 
-    -   Select **Use selected Management Server Action Account** if it is not already selected.
+    1.  Select **Use selected Management Server Action Account** if it is not already selected.
 
-    -   Select **Other user account**, type the **User name** and **Password**, and then select the **Domain** from the list. If the user name is not a domain account, select **This is a local computer account, not a domain account**.
+    2.  Select **Other user account**, type the **User name** and **Password**, and then select the **Domain** from the list. If the user name is not a domain account, select **This is a local computer account, not a domain account**.
 
         > [!IMPORTANT]
         > The account must have administrative privileges on the targeted computers. If **This is a local computer account, not a domain account** is selected, the management server action account will be used to perform discovery.
@@ -100,7 +100,7 @@ Use the following procedure to discover computers running Windows and to deploy 
 
 10. On the **Summary** page, do the following:
 
-    1.  Leave the **Agent installation directory** set to the default of **%ProgramFiles%\System Center Operations Manager** or type an installation path.
+    1.  Leave the **Agent installation directory** set to the default of **%ProgramFiles%\Microsoft Monitoring Agent** or type an installation path.
 
         > [!IMPORTANT]
         > If a different **Agent installation directory** is specified, the root of the path must exist on the targeted computer or the agent installation fails. Subdirectories, such as **\Agent**, are created if they do not exist.

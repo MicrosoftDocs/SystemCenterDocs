@@ -111,9 +111,9 @@ The following section describes how to work with the different options for the o
 
 5.  In the **Maintenance Mode** dialog box, do the following:
 
-    -   If you selected **Selected objects and all their contained objects** when you placed the computer into maintenance mode, select **Remove contained objects** and then click **Yes**.
+    1.  If you selected **Selected objects and all their contained objects** when you placed the computer into maintenance mode, select **Remove contained objects** and then click **Yes**.
 
-    -   If you selected **Selected objects only**, clear **Remove contained objects** and then click **Yes**.
+    2.  If you selected **Selected objects only**, clear **Remove contained objects** and then click **Yes**.
 
 6.  In the **Windows Computers** pane, the maintenance mode icon disappears from the **Maintenance Mode** column for the computer you selected.
 
@@ -199,17 +199,22 @@ The following procedures describes how to create a maintenance schedule for sele
 5. In the **Create Maintenance Schedule** wizard, on the **Object Selection** page, click **Add/Remove objects...** and the **Create Group Wizard - Object Selection** dialog box appears.
 
 6. In the **Create Group Wizard - Object Selection** dialog box, perform the following:
-   - In the **Search for list**, the default item **Computer** is selected. Alternatively, you can select **Computer Group** or a specific class such as **SQL Server 2012 DB Engine** from the drop-down list.     
-   - Optionally, in the **Filter by part of the name** box, type all or part of the object name, and then click **Search**.
-  - In the **Available items** box, select the desired objects, click **Add**, and then click **OK**.
+
+    1.  In the **Search for list**, the default item **Computer** is selected. Alternatively, you can select **Computer Group** or a specific class such as **SQL Server 2012 DB Engine** from the drop-down list.  
+    
+    2.  Optionally, in the **Filter by part of the name** box, type all or part of the object name, and then click **Search**.  
+    
+    3.  In the **Available items** box, select the desired objects, click **Add**, and then click **OK**.
 
 7. On the **Object Selection** page, click **Next**.
 
 8. In the **Create Maintenance Schedule** wizard, on the **Schedule** page, you can specify the following for your maintenance schedule:
 
-   - Choose the frequency as to how often you would like it to run.  If you select the option **Once**, the task will only run one time based on the start date and time selected.
-   - Under **Duration** select the **Start Time** and for **End Time**, select the **number of minutes** or select and enter the **Specific end time**.  
-   - Under **Schedule is effective beginning**, specify when this schedule is allowed to take effect and if you require it to no longer be valid after a period of time, click the option **The schedule expires on** and select a future expiration date.  
+    1.  Choose the frequency as to how often you would like it to run.  If you select the option **Once**, the task will only run one time based on the start date and time selected.
+    
+    2.  Under **Duration** select the **Start Time** and for **End Time**, select the **number of minutes** or select and enter the **Specific end time**.  
+
+    3.  Under **Schedule is effective beginning**, specify when this schedule is allowed to take effect and if you require it to no longer be valid after a period of time, click the option **The schedule expires on** and select a future expiration date.  
 
      > [!NOTE]
      > The minimum value for Number of minutes is 5. The maximum value is 1,051,200 (2 years). 
@@ -218,10 +223,13 @@ The following procedures describes how to create a maintenance schedule for sele
 
 10. In the **Create Maintenance Schedule** wizard, on the **Details** page, specify the following:
 
-   - Create a name for the schedule in the **Schedule Name** box.
-   - Select **Planned** if this is a planned event; otherwise, leave it cleared.
-   - In the **Category** list, click the appropriate maintenance category.
-   - Select **Enable Schedule** if you want to enable the schedule now, or clear it if you plan on enabling the schedule later.
+    1.  Create a name for the schedule in the **Schedule Name** box.
+
+    2.  Select **Planned** if this is a planned event; otherwise, leave it cleared.
+
+    3.  In the **Category** list, click the appropriate maintenance category.
+
+    4.  Select **Enable Schedule** if you want to enable the schedule now, or clear it if you plan on enabling the schedule later.
 
 11. Click **Finish** to save your changes.  
 

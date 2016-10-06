@@ -31,7 +31,7 @@ For more information on how to run and save a report, see [How to Run, Save, and
 4.  In the **Favorite Reports** pane, right-click the Availability report you saved as a favorite, and then click **Schedule**.  
   
 5.  In the **Subscribe to a Report Wizard**, on the **Delivery Settings** page, do the following:  
-  
+
     1.  Type a description in the **Description** text box.  
   
     2.  Click the down arrow in the **Delivery method** list, and then click **Report Server File Share**.  
