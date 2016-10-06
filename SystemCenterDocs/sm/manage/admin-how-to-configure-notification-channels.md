@@ -19,7 +19,7 @@ ms.assetid:  edb5786f-8032-4705-8b17-8ae50f7edf17
 You can use the following procedures to configure notification channels and validate the configuration. Notification channels are the method by which notification messages are sent to users. You use the **Configure E-Mail Notification Channel** dialog box to configure and enable email notifications that Service Manager sends to a Simple Mail Transfer Protocol (SMTP) server.
 
 > [!NOTE]
-> In this release of Service Manager, only email notification is supported.
+> Only email notification is supported.
 
 ### To configure email notifications
 
@@ -58,6 +58,3 @@ You can use the following procedures to configure notification channels and vali
 -   For information about how to use Windows PowerShell to set the properties of an email notification channel in Service Manager, see [Set-SCSMChannel](http://go.microsoft.com/fwlink/p/?LinkId=225375).
 
 -   For information about how to use Windows PowerShell to retrieve the Email Notification channels that are defined in Service Manager, see [Get-SCSMChannel](http://go.microsoft.com/fwlink/p/?LinkId=225319).
-
-
-

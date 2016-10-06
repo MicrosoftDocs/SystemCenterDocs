@@ -28,7 +28,7 @@ The following two templates are prerequisites for other procedures:
 -   The New Standard Change Request Received Template.
 
 > [!NOTE]
-> In this release of Service Manager, notifications are sent only by email.
+> Notifications are sent only by email.
 
 ### To create a notification template for incidents
 

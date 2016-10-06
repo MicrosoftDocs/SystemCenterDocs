@@ -64,8 +64,8 @@ End users often create service requests in Service Manager by accessing the serv
 
 You can use the following procedures to approve a review activity and complete a manual activity for a service request in the Service Manager console. In many cases, multiple people or groups must vote to approve a single review activity before its approval is final. After approval, a service request might need a manual activity completed to verify that the service was provided to the requesting user and to close the service request.  
 
-&gt; [!NOTE]  
-&gt;  Users can only approve or reject and close the activities that are assigned to them.  
+>[!NOTE]  
+> Users can only approve or reject and close the activities that are assigned to them.  
 
 ### To approve a review activity for a service request  
 
