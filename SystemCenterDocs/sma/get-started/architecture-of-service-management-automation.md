@@ -1,11 +1,12 @@
 ---
 description:  
-manager:  cfreemanwa
+manager:  cfreeman
 ms.topic:  article
 author:  bwren
+ms.author: bwren
 ms.prod:  system-center-threshold
 keywords:  
-ms.date:  2016-08-18
+ms.date:  10/12/2016
 title:  Architecture of Service Management Automation
 ms.technology:  service-management-automation
 ms.assetid:  cefc0b34-d77a-4f17-8f69-68b4282beea7
@@ -17,7 +18,7 @@ ms.assetid:  cefc0b34-d77a-4f17-8f69-68b4282beea7
 
 The following diagram illustrates each of the Service Management Automation features and the communication between them.
 
-![](../media/smaarchitecture.png)
+![SMA Architecture diagram](../media/smaarchitecture.png)
 
 -   The Service Management Automation web service communicates with Windows Azure Pack and authenticates users.
 
