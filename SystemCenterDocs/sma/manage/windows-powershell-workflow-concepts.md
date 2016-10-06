@@ -1,8 +1,9 @@
 ---
 description:  
-manager:  cfreemanwa
+manager:  cfreeman
 ms.topic:  article
 author:  bwren
+ms.author: bwren
 ms.prod:  system-center-threshold
 keywords:  
 ms.date:  10/12/2016
@@ -193,4 +194,5 @@ For further details on using **InlineScript**, see [Running Windows PowerShell C
 
 ## See Also
 [Runbook Execution in Service Management Automation](../get-started/Runbook-Execution-in-Service-Management-Automation.md)
+
 [Authoring Automation Runbooks](Authoring-Automation-Runbooks.md)

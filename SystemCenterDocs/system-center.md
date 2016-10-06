@@ -39,6 +39,8 @@ You can download System Center 2016 from the [TechNet Evaluation Center](http://
 
 -   [Features Removed or Deprecated from System Center 2016](get-started/Features-Removed-or-Deprecated.md)
 
+-   [Upgrade to System Center 2016](get-started/upgrade-to-system-center-2016.md)
+
 -   [System Requirements for System Center 2016](system-requirements/System-Requirements.md)
 
 ## Components
