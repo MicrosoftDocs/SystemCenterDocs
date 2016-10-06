@@ -18,11 +18,11 @@ ms.assetid: 375de7ac-0fee-44d1-aca8-a4a7222df821
 
 >Applies To: System Center 2016 - Service Manager
 
-Service Manager automates help desk functions, such as ticketing and change request processes, to help organizations manage their help desks. Service Manager integrates with Active&nbsp;Directory Domain Services \(AD&nbsp;DS\), Operations Manager, and Configuration Manager to build a single, reconciled inventory of an organization's assets.  
+Service Manager automates help desk functions, such as ticketing and change request processes, to help organizations manage their help desks. Service Manager integrates with Active Directory Domain Services \(AD DS\), Operations Manager, and Configuration Manager to build a single, reconciled inventory of an organization's assets.  
 
  Service Manager uses management pack files that contain object definitions for the various features of the product. You can customize the behavior of Service Manager and extend it by creating and modifying management packs. This authoring guide describes the use, authoring, and customization of management packs.  
 
- The Service Manager&nbsp;2016 Software Development Kit \(SDK\) contains information that you might need when you are authoring with Service Manager. The SDK includes reference information for the class libraries and documents that the schema uses to create XML\-based management packs. To download the documentation for the System Center Service Manager&nbsp;2016 SDK, see [System Center Service Manager Software Development Kit \(SDK\) Documentation](https://msdn.microsoft.com/library/hh965050.aspx).  
+ The Service Manager 2016 Software Development Kit \(SDK\) contains information that you might need when you are authoring with Service Manager. The SDK includes reference information for the class libraries and documents that the schema uses to create XML\-based management packs. To download the documentation for the System Center Service Manager 2016 SDK, see [System Center Service Manager Software Development Kit \(SDK\) Documentation](https://msdn.microsoft.com/library/hh965050.aspx).  
 
 ## Overview of Management Packs
 
@@ -97,19 +97,19 @@ Before you set up the Authoring Tool in Service Manager, ensure that the server 
 
 #### Operating System Requirements  
 
--   Windows&nbsp;Vista \(any edition\) with the latest service pack  
+-   Windows Vista \(any edition\) with the latest service pack  
 
--   Windows&nbsp;7  
+-   Windows 7  
 
--   Windows Server&nbsp;2008 with the latest service pack  
+-   Windows Server 2008 with the latest service pack  
 
--   Windows Server&nbsp;2008&nbsp;R2  
+-   Windows Server 2008 R2  
 
 #### Additional Requirements  
 
--   [Microsoft .NET Framework&nbsp;3.5](http://go.microsoft.com/fwlink/p/?LinkId=162791), which you can download from the Microsoft Download Center.  
+-   [Microsoft .NET Framework 3.5](http://go.microsoft.com/fwlink/p/?LinkId=162791), which you can download from the Microsoft Download Center.  
 
--   Microsoft Visual Studio&nbsp;2008 Shell, which must be in the same language as the display language of the operating system. You can install Visual&nbsp;Studio&nbsp;2008 Shell from the **Prerequisites** page in the Service Manager Authoring Tool Setup Wizard.  
+-   Microsoft Visual Studio 2008 Shell, which must be in the same language as the display language of the operating system. You can install Visual Studio 2008 Shell from the **Prerequisites** page in the Service Manager Authoring Tool Setup Wizard.  
 
     > [!NOTE]  
     >  During Authoring Tool Setup, if an error appears stating that Microsoft Visual Studio Shell 2008 is not installed and you've verified that it is installed, then the Visual Studio 2008 Shell Isolated Mode Redistributable Package might not be installed completely. To install it, navigate to \<SystemDrive\>\\VS 2008 Shell Redist\\Isolated Mode\\ and run VS\_Shell\_isolated.enu.exe.  
@@ -134,7 +134,7 @@ The SCSM2016\_AuthoringTool\_RTM.exe program file contains the Service Manager A
 
 6.  Continue through the **Product registration** and the **Installation location** pages.  
 
-7.  On the **Prerequisites** page, if any prerequisite test fails, you must update the server to ensure that each prerequisite is met. If Microsoft Visual&nbsp;Studio&nbsp;2008 Shell is not installed, click **Install Microsoft Visual Studio Shell&nbsp;2008** to install the application.  
+7.  On the **Prerequisites** page, if any prerequisite test fails, you must update the server to ensure that each prerequisite is met. If Microsoft Visual Studio 2008 Shell is not installed, click **Install Microsoft Visual Studio Shell 2008** to install the application.  
 
      Click **Check prerequisites again**, and fix any other problems until all prerequisite tests pass.  
 
