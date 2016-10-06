@@ -6,7 +6,7 @@ author:  markgalioto
 ms.author: markgal
 ms.prod:  system-center-threshold
 keywords:  
-ms.date:  2016-10-01
+ms.date:  2016-10-12
 title:  Deploy the DPM protection agent
 ms.technology:  data-protection-manager
 ms.assetid:  502fff45-79b5-477b-af4f-3b8a39bdde1a
@@ -105,9 +105,9 @@ Configure an incoming exception for sqlservr.exe for the DPM instance of SQL Ser
 
     To change the directory, do the following:
 
-    -   For a 64-bit computer type **cd /d *&lt;assigned drive letter*&gt;:\Program Files\Microsoft DPM\DPM\ProtectionAgents\RA\3.0.*&lt;build number&gt;*.0\amd64** where *&lt;assigned drive letter&gt;* is the drive letter that you assigned in the previous step and *&lt;build number&gt;* is the latest DPM build number. For example: **cd /d X:\Program Files\Microsoft DPM\DPM\ProtectionAgents\RA\3.0.7696.0\amd64**
+    -   For a 64-bit computer type **cd /d *&lt;assigned drive letter*&gt;:\Program Files\Microsoft DPM\DPM\ProtectionAgents\RA\5.0.*&lt;build number&gt;*.0\amd64** where *&lt;assigned drive letter&gt;* is the drive letter that you assigned in the previous step and *&lt;build number&gt;* is the latest DPM build number. For example: **cd /d X:\Program Files\Microsoft DPM\DPM\ProtectionAgents\RA\3.0.7696.0\amd64**
 
-    -   For a 32-bit computer type: **cd /d *&lt;assigned drive letter&gt;*:\Program Files\Microsoft DPM\DPM\ProtectionAgents\RA\3.0.*&lt;build number&gtl;*.0\i386**
+    -   For a 32-bit computer type: **cd /d *&lt;assigned drive letter&gt;*:\Program Files\Microsoft DPM\DPM\ProtectionAgents\RA\5.0.*&lt;build number&gtl;*.0\i386**
          where *&lt;assigned drive letter&gt;* is the drive that you mapped in the previous step and *&lt;build number&gt;* is the latest DPM build number.
 
 3.  To install the protection agent open an elevated Command Prompt window, and then run one of the following commands:
@@ -132,7 +132,6 @@ Configure an incoming exception for sqlservr.exe for the DPM instance of SQL Ser
 
 4.  If you added the computer to the DPM server before you installed the agent, the  server begins to create backups for the protected computer. If you installed the agent before you added the computer to the DPM server, you must attach the computer before the DPM server begins to create backups.
 
-You can also install [DPM on an RODC](https://technet.microsoft.com/en-US/library/hh758186.aspx), [using a server image](https://technet.microsoft.com/en-US/library/hh758186.aspx), or  [with Configuration Manager](https://technet.microsoft.com/en-US/library/hh758186.aspx).
 
 ## <a name="BKMK_Attach"></a>Attach the agent
 After you've installed the DPM agent manually you'll need to attach the agent to the DPM server.
