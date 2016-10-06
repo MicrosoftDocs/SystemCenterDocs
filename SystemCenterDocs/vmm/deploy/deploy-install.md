@@ -18,7 +18,7 @@ Use this article to install the System Center 2016 - Virtual Machine Manager (VM
 
 ## Before you start
 
-- Review the [system requirements](../../system-requirements/System-Requirements-for-System-Center-Technical-Preview.md) and [planning information](../plan/plan-install.md)
+- Review the [system requirements](../../system-requirements/system-requirements.md) and [planning information](../plan/plan-install.md)
 - Make sure you have at least local admin permissions on the computer before you run setup.
 
 ## Run setup
@@ -36,7 +36,7 @@ Use this article to install the System Center 2016 - Virtual Machine Manager (VM
 11. Don't specify a **Port** value if you don't have a remote instance of SQL Server, or if you have a remote SQL Server that uses the default port (1443).
 12. Specify the SQL Server instance name and whether to use an existing or new database. You'll need an account with permissions to connect to the instance.
 13. On the **Configure service account and distributed key management** page, specify the account that the VMM service will use. You can't change the identity of the VMM service account after installation.
-14. Under **Distributed Key Management**, select whether to store encryption keys in Active Directory .
+14. Under **Distributed Key Management**, select whether to store encryption keys in Active Directory.
 15. On the **Port configuration** page, use the default port number for each feature or provide a unique port number that is appropriate in your environment. You cannot change the ports that you assign during the installation of a VMM management server unless you uninstall and then reinstall the VMM management server. Also, do not configure any feature to use port 5986, because that port number is preassigned.
 16. On the **Library configuration** page, select whether to create a new library share or to use an existing library share on the computer. The default library share that VMM creates is named MSSCVMMLibrary, and the folder is located at **%SYSTEMDRIVE%\ProgramData\Virtual Machine Manager Library Files**. **ProgramData** is a hidden folder, and you cannot remove it. After the VMM management server is installed, you can add library shares and library servers by using the VMM console or by using the VMM command shell.
 17. On the **Installation summary** page, review your selections and then click **Install**. The **Installing features** page appears and displays the installation progress.
@@ -130,7 +130,7 @@ If there is a problem with setup completing successfully, consult the log files 
 ### Uninstall VMM from the command line
 
 To uninstall VMM edit the VMSererUninstall file as described below.
-Then run setup.exe for the uninstall. For example, to uninstall using an ini file stored in C:\Temp with an account contoso.SQLAdmin01 type: s**etup.exe /server /x /f C:\Temp\VMServerUninstall.ini /SqlDBAdminDomain contoso /SqlDBAdminName SQLAdmin01 /SqlDBAdminPassword password123**
+Then run setup.exe for the uninstall. For example, to uninstall using an ini file stored in C:\Temp with an account contoso.SQLAdmin01 type: **setup.exe /server /x /f C:\Temp\VMServerUninstall.ini /SqlDBAdminDomain contoso /SqlDBAdminName SQLAdmin01 /SqlDBAdminPassword password123**
 
 
 #### VMServeRUnisntall.ini

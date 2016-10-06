@@ -61,7 +61,7 @@ To set up SDN in the VMM fabric you need the following:
     **ServerCertificate.cr** | Custom resource file | Library resource containing the private key for the network controller (.pfx)
     **TrustedRootCertificate.cr** | Custom resource file | Library resource containing the certificate public key (.cer), imported as the trusted root certificate to validate the SSL certificate
     **EdgeDeployment.cr** | Template | Used for installing SLB MUX roles and gateway roles (for example, VPN)
-    
+
 2. Import the templates into the VMM library.
 
 
@@ -259,12 +259,12 @@ Select **Microsoft** for the manufacturer and for model select **Microsoft netwo
 6. On the next screen, click **Scan Provider** to connect to your service and list the properties and their status. This is also a good test of whether or not the service was created correctly, and that you’re using the right connect string to connect to it. Examine the results, and when it completes successfully click **Next**.
 7. Configure the host group that your network controller will manage.
 8. Click **Finish** to complete the wizard. When the service has been added to VMM, it will appear in the **Network Services** list in the VMM console.
-    
+
 ## Validate the deployment
 
 You can validate the network controller deployment. To do this you'll create a network controller managed **HNV provider** network (the backend network)  and configure two tenant VM networks on top of it. You'll also test connectivity between two tenant VMs deployed on different hosts to ensure the network controller is deployed correctly.
 
-As a quick validation step, you can also try to access the URL https://<RESTIP-or-FQDN>/networking/v1/servers. For example: https://10.184.108.56/networking/v1/servers. This URL shows a JSON file with details about the server objects managed by the network controller. If the network controller hasn't onboarded successfully, this URL won't be accessible.
+As a quick validation step, you can also try to access the URL `https://<RESTIP-or-FQDN>/networking/v1/servers`. For example: https://10.184.108.56/networking/v1/servers. This URL shows a JSON file with details about the server objects managed by the network controller. If the network controller hasn't onboarded successfully, this URL won't be accessible.
 
 ### Create the HNV provider network for tenant VM connectivity
 

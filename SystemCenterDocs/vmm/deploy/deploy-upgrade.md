@@ -157,7 +157,7 @@ If you've deployed Azure Site Recovery to replicate VMs in VMM private clouds, y
 
 All virtual machine templates that were upgraded need to correctly specify the virtual hard disk that contains the operating system.
 
-1. Click **Library **> **Templates** > **VM Templates**.
+1. Click **Library** > **Templates** > **VM Templates**.
 2. Right-click the template > **Properties** > **Hardware Configuration** and check disk settings.
 
 
@@ -176,7 +176,7 @@ In the physical computer profile, you can select to filter the drivers by tags, 
 4. In the VMM console, open the Library workspace. In the **Library** > **Library Servers**, expand the library server where the share is located, right-click the share, and then click **Refresh**. After the library refreshes, the folder that you created to store the drivers appears.
 5. Now assign tags if required. In **Library**, expand the folder that you created to store the drivers in the previous procedure, and then click the folder that contains the driver package.
 6. In the **Physical Library Objects**, right-click the driver .inf file, and then click **Properties**.
-7. In the **Driver File Name Properties** > **Custom tags*,* enter custom tags separated by a semi-colon, or click **Select** to assign available tags or to create and assign new ones. If you click **Select**, and then click **New Tag**, you can change the name of the tag after you click **OK**. For example, if you added a network adapter driver file, you could create a tag that is named ServerModel NetworkAdapterModel, where ServerModel is the server model and NetworkAdapterModel is the network adapter model.
+7. In the **Driver File Name Properties** > **Custom tags**, enter custom tags separated by a semi-colon, or click **Select** to assign available tags or to create and assign new ones. If you click **Select**, and then click **New Tag**, you can change the name of the tag after you click **OK**. For example, if you added a network adapter driver file, you could create a tag that is named ServerModel NetworkAdapterModel, where ServerModel is the server model and NetworkAdapterModel is the network adapter model.
 
 
 ## Relocate the VMM library

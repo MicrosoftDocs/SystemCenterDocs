@@ -129,7 +129,7 @@ Now deploy an SLB/MUX service instance.
     **Setting** | **Requirement** | **Description**
     --- |--- |---
     **Transit network** | Required | Your transit VM network
-    **LocalAdmin** | Required | Select a Run As account in your environment which will be used as the local Administrator on the virtual    machines. The user name should be .\Administrator   
+    **LocalAdmin** | Required | Select a Run As account in your environment which will be used as the local Administrator on the virtual    machines. The user name should be Administrator   
     **Management network** | Required | Choose the management VM network that you created for host management.
     **MgmtDomainAccount** | Required | Select a Run As account with permissions to add the SLB/MUX virtual machines to the Active           Directory domain associated with the network controller. This can be the same account you used in MgmtDomainAccount while deploying     the network controller.
     **MgmtDomainFQDN** | Required | FQDN for the Active directory domain that the SLB/MUX virtual machines will join.
