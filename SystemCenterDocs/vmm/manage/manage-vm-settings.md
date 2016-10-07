@@ -3,10 +3,10 @@ title: Configure virtual machine settings in the VMM compute fabric
 description: This article describes how to configure settings for VMs in the VMM fabric
 author:  rayne-wiselman
 ms.author: raynew
-manager:  cfreemanwa
+manager:  cfreeman
 ms.date:  2016-09-22
 ms.topic:  article
-ms.prod:  system-center-threshold
+ms.prod:  system-center-2016
 ms.technology:  virtual-machine-manager
 ---
 
@@ -31,7 +31,7 @@ You can now add and remove virtual network adapters (vNIC) from running virtual 
 1. In the virtual machine properties > **Hardware Configuration**, click **Network Adapters**, and select the network adapter to add.
 2. You can configure a number of properties for the network adapter, including:
 
-    - Connected to: Select what the adapter is connected to:
+    - Connected to: Select what the adapter is connected to.
     - Not connected: Select if you don't want to specify a network now.
     - Internal network: Select if you want to connect to an isolated internal network that enables communication among VMs on the same host.  Virtual machines attached to the internal virtual network cannot communicate with the host, with any other physical computers on the host's LAN, or with the internet.
     - External network: Select to specify that a virtual machine created by using this hardware profile will be connected to a physical network adapter on its host. Virtual machines attached to a physical network adapter can communicate with any physical or virtual computer that the host can communicate with and with any resources available on the intranet and over the Internet that the host computer can access.
