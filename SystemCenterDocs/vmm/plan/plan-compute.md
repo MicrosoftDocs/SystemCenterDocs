@@ -2,8 +2,9 @@
 title: Plan the VMM compute fabric
 description: This article provides planning steps for setting up and provisioning the VMM compute fabric
 author:  rayne-wiselman
+ms.author: raynew
 manager:  cfreemanwa
-ms.date:  2016-08-29
+ms.date:  2016-09-22
 ms.topic:  article
 ms.prod:  system-center-threshold
 ms.technology:  virtual-machine-manager
@@ -11,7 +12,7 @@ ms.technology:  virtual-machine-manager
 
 # Plan the VMM compute fabric
 
->Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
+>Applies To: System Center 2016 - Virtual Machine Manager
 
 This article describes how to plan your System Center 2016 - Virtual Machine Manager (VMM) compute fabric. The VMM compute fabric consists of the VMM library, virtualization hosts, host groups, and other infrastructure servers.
 
@@ -30,7 +31,7 @@ Note the following:
 VMM supports Hyper-V and VMware virtualization hosts. When you're adding, provisioning, and managing hosts in the VMM fabric consider these points:
 
 - The topology of Hyper-V hosts. VMM can work with Hyper-V hosts that are located in the same domain as the VMM server, in a domain with a two-way trust, or in a domain without a two-way trust. VMM can also work with Hyper-V hosts that are in a perimeter network, or a in disjointed namespace.
-- The topology of VMware hosts. VMM can work with VMware hosts located anywhere in your environment.
+- The topology of VMware hosts. VMM works with VMware hosts located anywhere in your environment.
 - The number and type of guest operating systems running on the host.
 - The system configuration of the VMs running on the host.
 - The types of apps running on the guest operating systems.
@@ -61,3 +62,8 @@ Host groups are hierarchical. For example, you can create a child host groups of
 - When you change the host reserves for a parent host group, you can choose whether or not to cascade the host reserve settings to hosts in all of its child host groups. If you choose to cascade the host reserve settings, all of the host reserve settings for the parent host group overwrite all previous settings for all hosts in all of the child host groups of the parent host group.
 - If a parent host group is used for virtual machine self-service, each of its child host groups automatically inherits self-service policies from the parent host group. However, you can add a self-service policy for the same user or group to both a parent host group and its child host group. By adding policies to both parent and child, you can assign the same users different templates, set different virtual machine permissions, and assign a different virtual machine quota on a subset of hosts within the parent host group.
 - You can use a host group to isolate a host. For example, if you have a host with guest operating systems that are running mission-critical applications, you can isolate that host by placing it in its own host group. This way you can ensure that there are no self-service policies applied on the host group and that the system resources set aside for running the host's operating system are appropriate, thus maximizing the host resources available for use by the guest operating systems.
+
+## Next steps
+
+- [Learn about deploying the library in high availability mode](../deploy/deploy-library-ha.md) if required.
+- [Manage the VMM library](../manage/manage-library-overview.md)

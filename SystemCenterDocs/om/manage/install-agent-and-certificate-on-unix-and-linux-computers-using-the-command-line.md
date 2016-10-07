@@ -1,25 +1,23 @@
 ---
-description:  
-manager:  cfreemanwa
-ms.topic:  article
-author:  mgoedtel
-ms.prod:  system-center-threshold
-keywords:  
-ms.date:  2016-06-27
-title:  Install Agent and Certificate on UNIX and Linux Computers Using the Command Line
-ms.technology:  operations-manager
-ms.assetid:  372cea7b-f987-452a-b6a4-fbb6ae6fe98e
+ms.assetid: 379b60d2-28f3-47d1-bf54-55409cd436ec
+title: Install Agent and Certificate on UNIX and Linux Computers Using the Command Line
+description:
+author: mgoedtel
+manager: cfreemanwa
+ms.date: 2016-10-12
+ms.custom: na
+ms.prod: system-center-threshold
+ms.technology: operations-manager
+ms.topic: article
 ---
-
-
 
 # Install Agent and Certificate on UNIX and Linux Computers Using the Command Line
 
->Applies To: System Center 2016 Technical Preview - Operations Manager
+>Applies To: System Center 2016 - Operations Manager
 
-Your environment may require that you manually install the agent. Use the following procedures to manually install agents to UNIX and Linux computers for monitoring in System Center Operations Manager and System Center 2012 Service Pack 1 (SP1), Operations Manager.
+Your environment may require that you manually install the agent. Use the following procedures to manually install agents to UNIX and Linux computers for monitoring in System Center Operations Manager 2016 - Operations Manager.
 
-#### To install the agent on Red Hat Enterprise Linux and SUSE Linux Enterprise Server
+## To install the agent on Red Hat Enterprise Linux and SUSE Linux Enterprise Server
 
 1.  Transfer the agent (`scx-<version>-<os>-<arch>.rpm`) to the Linux server, type:
 
@@ -37,7 +35,7 @@ Your environment may require that you manually install the agent. Use the follow
 
     `service omiserver status`
 
-#### To install the agent on RPM based Universal Linux Servers (Oracle and Centos)
+## To install the agent on RPM based Universal Linux Servers (Oracle and Centos)
 
 1.  Transfer the agent (`scx-<version>-universalr-<arch>.rpm`) to the Linux server. This should be done via SCP or FTP in binary mode.
 
@@ -53,7 +51,7 @@ Your environment may require that you manually install the agent. Use the follow
 
     `scxadmin -status`
 
-#### To install the agent on DPKG-based Universal Linux Servers (Debian and Utuntu)
+## To install the agent on DPKG-based Universal Linux Servers (Debian and Utuntu)
 
 1.  Transfer the agent (`scx-<version>-universald-<arch>.rpm`) to the Linux server. This should be done via SCP or FTP in binary mode.
 
@@ -69,7 +67,7 @@ Your environment may require that you manually install the agent. Use the follow
 
     `scxadmin -status`
 
-#### To install the agent on Solaris
+## To install the agent on Solaris
 
 1.  Transfer the agent (`scx-<version>-<os>-<arch>.pkg.Z`) to the Solaris server, type:
 
@@ -85,13 +83,13 @@ Your environment may require that you manually install the agent. Use the follow
 
 4.  To verify that the package is installed, type:
 
-    `pkginfo -l MSFTscx`
+    `pkginfo –l MSFTscx`
 
 5.  To verify that the Microsoft SCX CIM Server is running, type:
 
     `svcs omiserver`
 
-#### To install the agent on HP-UX
+## To install the agent on HP-UX
 
 1.  Transfer the agent (`scx-<version>-<os>-<arch>.gz`) to the HP server:
 
@@ -99,11 +97,11 @@ Your environment may require that you manually install the agent. Use the follow
 
 2.  To unzip the package, type:
 
-    `gzip -d scx-<version>-<os>-<arch>.gz`
+    `gzip –d scx-<version>-<os>-<arch>.gz`
 
 3.  To install the package, type:
 
-    `swinstall -s /path/scx-<version>-<os>-<arch> scx`
+    `swinstall –s /path/scx-<version>-<os>-<arch> scx`
 
 4.  To verify that the package is installed, type:
 
@@ -111,13 +109,13 @@ Your environment may require that you manually install the agent. Use the follow
 
 5.  To verify that the Microsoft SCX CIM Server is running, type:
 
-    `ps -ef|grep scx`
+    `ps –ef|grep scx`
 
     Look for the following process in the list:
 
     `scxcimserver`
 
-#### To install the agent on AIX
+## To install the agent on AIX
 
 1.  Transfer the agent (`scx-<version>-<os>-<arch>.gz`) to the AIX server, type:
 
@@ -125,7 +123,7 @@ Your environment may require that you manually install the agent. Use the follow
 
 2.  To unzip the package, type:
 
-    `gzip -d scx-<version>-<os>-<arch>.gz`
+    `gzip –d scx-<version>-<os>-<arch>.gz`
 
 3.  To install the package, type:
 
@@ -137,20 +135,21 @@ Your environment may require that you manually install the agent. Use the follow
 
 5.  To verify that the Microsoft SCX CIM Server is running, type:
 
-    `ps -ef|grep omi`
+    `ps –ef|grep omi`
 
     Look for the following process in the list:
 
     omiserver
 
-## Signing Agent Certificates
+## Signing agent certificates
+
 When you manually deploy an agent, you perform the first two steps that are typically handled by the Discovery Wizard, deployment and certificate signing. Then, you use the Discovery Wizard to add the computer to the Operations Manager database.
 
 If there are existing certificates on the system, they are reused during agent installation. New certificates are not created. Certificates are not automatically deleted when you uninstall an agent. You must manually delete the certificates that are listed in the `/etc/opt/microsoft/scx/ssl` folder. To regenerate the certificates at install, you must remove this folder before agent installation.
 
 You must have already manually installed an agent before you start this procedure. You will need a root or elevated account to perform the procedure.
 
-#### To install certificates for UNIX and Linux support
+## To install certificates for UNIX and Linux support
 
 1.  On the computer that is running the UNIX or Linux operating system, locate the file `/etc/opt/microsoft/scx/ssl/scx-host-<hostname>.pem` and securely copy or transfer it to any location on the computer that is hosting Operations Manager.
 
@@ -167,25 +166,18 @@ You must have already manually installed an agent before you start this procedur
 
 6.  Securely copy or transfer the `scx_new.pem` file into the `/etc/opt/microsoft/scx/ssl` folder on the computer that is hosting the UNIX or Linux operating system. This replaces the `original scx-host-<hostname>.pem` file.
 
-7.  Restart the agent by typing `scxadmin -restart`.
+7.  Restart the agent by typing `scxadmin –restart`.
 
-## <a name="bkmk_DiscoveringSystemsafterManualDeployment"></a>Discovering Computers after Manual Deployment
+## Discovering computers after manual deployment
+
 After you have manually deployed agents to UNIX and Linux computers, they still need to be discovered by Operations Manager by using the Discovery Wizard. For the **Discovery type**, select **Discover only computers with the UNIX/Linux agent installed**. For more information see [Install Agent on UNIX and Linux Using the Discovery Wizard](Install-Agent-on-UNIX-and-Linux-Using-the-Discovery-Wizard.md).
 
-## See Also
-[Operations Manager Agent Installation Methods](Operations-Manager-Agent-Installation-Methods.md)
-[Install Agent on Windows Using the Discovery Wizard](Install-Agent-on-Windows-Using-the-Discovery-Wizard.md)
-[Install Agent on UNIX and Linux Using the Discovery Wizard](Install-Agent-on-UNIX-and-Linux-Using-the-Discovery-Wizard.md)
-[Install Agent Using the MOMAgent.msi Setup Wizard](Install-Agent-Using-the-MOMAgent.msi-Setup-Wizard.md)
-[Install Agent Using the Command Line](Install-Agent-Using-the-Command-Line.md)
-[Process Manual Agent Installations](Process-Manual-Agent-Installations.md)
-[Applying Overrides to Object Discoveries](Applying-Overrides-to-Object-Discoveries.md)
-[Configuring Agents](Configuring-Agents.md)
-[Examples of Using MOMAgent Command to Manage Agents](Examples-of-Using-MOMAgent-Command-to-Manage-Agents.md)
-[Managing Certificates for UNIX and Linux Computers](Managing-Certificates-for-UNIX-and-Linux-Computers.md)
-[Upgrading and Uninstalling Agents on UNIX and Linux Computers](Upgrading-and-Uninstalling-Agents-on-UNIX-and-Linux-Computers.md)
-[Manually Uninstalling Agents from UNIX and Linux Computers](Manually-Uninstalling-Agents-from-UNIX-and-Linux-Computers.md)
-[Uninstall Agent from Windows-based Computers](Uninstall-Agent-from-Windows-based-Computers.md)
+## Next steps
 
+- To learn how to configure object discovery rules and disable discovery of a specific object, see [Applying Overrides to Object Discoveries](Applying-Overrides-to-Object-Discoveries.md)
+
+- To understand how to perform agent maintenance on UNIX and Linux computers, see [Upgrading and Uninstalling Agents on UNIX and Linux Computers](Upgrading-and-Uninstalling-Agents-on-UNIX-and-Linux-Computers.md)
+
+- Review [Manually Uninstalling Agents from UNIX and Linux Computers](Manually-Uninstalling-Agents-from-UNIX-and-Linux-Computers.md) to understand what options and steps need to be performed to properly uninstall the agent from your UNIX and Linux computers.  
 
 

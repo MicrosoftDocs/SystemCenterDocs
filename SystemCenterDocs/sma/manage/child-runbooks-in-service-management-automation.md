@@ -1,11 +1,12 @@
 ---
 description:  
-manager:  cfreemanwa
+manager:  cfreeman
 ms.topic:  article
 author:  bwren
+ms.author: bwren
 ms.prod:  system-center-threshold
 keywords:  
-ms.date:  2016-08-18
+ms.date:  10/12/2016
 title:  Child Runbooks in Service Management Automation
 ms.technology:  service-management-automation
 ms.assetid:  4ccce671-6f5e-405c-a007-05f2e43f7124
@@ -13,7 +14,7 @@ ms.assetid:  4ccce671-6f5e-405c-a007-05f2e43f7124
 
 # Child Runbooks in Service Management Automation
 
->Applies To: Windows Azure Pack for Windows Server, System Center 2016
+>Applies To: Windows Azure Pack for Windows Server, System Center 2016 - Service Management Automation
 
 It is a best practice in Service Management Automation to write reusable, modular runbooks with a discrete function that can be used by other runbooks. A parent runbook will often call one or more child runbooks to perform required functionality. There are two ways to call a child runbook, and each has distinct differences that you should understand so that you can determine which will be best for your different scenarios.
 
@@ -87,6 +88,9 @@ The following table summarizes the differences between the two methods for calli
 
 ## See Also
 [To start a runbook with Windows PowerShell](Starting-a-Runbook.md#PowerShell)
+
 [Authoring Automation Runbooks](Authoring-Automation-Runbooks.md)
+
 [Automation Runbooks](Automation-Runbooks.md)
+
 [Runbook types](Runbook-Types-in-Service-Management-Automation.md)

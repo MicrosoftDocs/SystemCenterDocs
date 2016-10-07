@@ -2,8 +2,9 @@
 title: Manage SOFS settings in the VMM fabric
 description: This article describes how to manage SOFS settings in the VMM fabric
 author:  rayne-wiselman
+ms.author: raynew
 manager:  cfreemanwa
-ms.date:  2016-09-11
+ms.date:  2016-09-22
 ms.topic:  article
 ms.prod:  system-center-threshold
 ms.technology:  virtual-machine-manager
@@ -11,7 +12,7 @@ ms.technology:  virtual-machine-manager
 
 # Manage SOFS settings in the VMM fabric
 
->Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
+>Applies To: System Center 2016 - Virtual Machine Manager
 
 You can manage scale-out file server (SOFS) in the System Center 2016 - Virtual Machine Manager (VMM) fabric as follows:
 
@@ -26,7 +27,7 @@ You can manage scale-out file server (SOFS) in the System Center 2016 - Virtual 
 1. Click **Fabric** > **Storage** > **File Servers**. Right-click the SOFS server (not the nodes) and click **Manage Pools**.
 2. In **Manage Pools of File Server**, click **New** to create a new pool or modify an existing one.
 3. In **General**, specify a name and select a storage classification.
-4. In **Physical Disks**, select the disks you want to include in the pool. Disks will be displayed in accordance with the SOFS settings. For eample a file server with shared storge might show SAS storage disks, or a file server using Storage Spaces Direct would show local disks attached to each node.
+4. In **Physical Disks**, select the disks you want to include in the pool. Disks will be displayed in accordance with the SOFS settings. For example, a file server with shared storage might show SAS storage disks, or a file server using Storage Spaces Direct would show local disks attached to each node.
 5. In **Default Settings**, leave the default unless you need to change for a specific reason.
 
 	- Fault domain: When you select a fault domain you specify how many copies of your data will be distributed across a cluster. Note that fault domain isn't displayed for clusters configured with Storage Spaces Direct. These clusters  have a fault domain of **Node** to indicate that copies of data are stored on multiple nodes in the cluster and data is available even if a specific node isn't.

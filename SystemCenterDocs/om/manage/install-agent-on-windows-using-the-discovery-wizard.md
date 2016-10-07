@@ -1,23 +1,21 @@
 ---
+ms.assetid: e68783da-5a7e-43f3-b7d1-0b82bd597d03
+title: Install Agent on Windows Using the Discovery Wizard
 description:  
-manager:  cfreemanwa
-ms.topic:  article
-author:  mgoedtel
-ms.prod:  system-center-threshold
-keywords:  
-ms.date:  2016-06-27
-title:  Install Agent on Windows Using the Discovery Wizard
-ms.technology:  operations-manager
-ms.assetid:  e82aa37c-e823-4162-aa29-83e4f621d201
+author: mgoedtel
+manager: cfreemanwa
+ms.date: 2016-10-12
+ms.custom: na
+ms.prod: system-center-threshold
+ms.technology: operations-manager
+ms.topic: article
 ---
-
-
 
 # Install Agent on Windows Using the Discovery Wizard
 
->Applies To: System Center 2016 Technical Preview - Operations Manager
+>Applies To: System Center 2016 - Operations Manager
 
-You can use the Operations console to search your environment for manageable objects and then deploy an agent to any object that you want to monitor. The process of searching your environment is called "discovery." One of the advantages of using discovery is that it lists *all* manageable objects, including any that you might not be aware of.
+You can use the Operations console to search your environment for manageable objects and then deploy an agent to any object that you want to monitor. The process of searching your environment is called “discovery.” One of the advantages of using discovery is that it lists *all* manageable objects, including any that you might not be aware of.
 
 The Discovery Wizard does not show computers that the management group is already monitoring. If you are doing a phased rollout of your management group, you can run the wizard to add new computers to the group. Also, after your initial deployment, you can use the Discovery Wizard to add newly installed computers to be managed.
 
@@ -25,7 +23,7 @@ When agents are pushed out to computers, System Center Operations Manager sends 
 
 If the Discovery Wizard is not right for your needs (for example, if you have a set list of computers to which you want to deploy agents), you have the option of manually installing agents on systems to be managed. Agents can also be embedded in the host image of the monitored computer.
 
-Use the following procedure to discover computers running Windows and to deploy the Operations Manager agent to the discovered computers from the Operations console. For a list of the supported operating system versions, see [Supported Configurations](http://go.microsoft.com/fwlink/p/?LinkID=223642).
+Use the following procedure to discover computers running Windows and to deploy the Operations Manager agent to the discovered computers from the Operations console. For a list of the supported operating system versions, see [Microsoft Monitoring Agent Operating System requirements](../plan/system-requirements.md#microsoft-monitoring-agent-operating-system-requirements).
 
 > [!NOTE]
 > For information about port requirements for agents, see [Agent and Agentless Monitoring](http://go.microsoft.com/fwlink/p/?LinkId=230474) in the Deployment Guide.
@@ -38,10 +36,7 @@ Use the following procedure to discover computers running Windows and to deploy 
 
 3.  At the bottom of the navigation pane, click **Discovery Wizard**.
 
-    > [!NOTE]
-    > The Discovery Wizard links in the Operations console open the Computer and Device Management Wizard.
-
-4.  On the **Discovery Type** page, click **Windows computers**.
+4.  In the **Computer and Device Management Wizard**, on the **Discovery Type** page, click **Windows computers**.
 
 5.  On the **Auto or Advanced?** page, do the following:
 
@@ -61,8 +56,8 @@ Use the following procedure to discover computers running Windows and to deploy 
 
     5.  Click **Next**.
 
-    > [!NOTE]
-    > The wizard can return approximately 4000 computers if **Verify discovered computers can be contacted** is selected, and it can return 10,000 computers if this option is not selected. Automatic computer discovery verifies that discovered computers can be contacted. A computer that is already managed by the management group is not returned.
+        > [!NOTE]
+        > The wizard can return approximately 4000 computers if **Verify discovered computers can be contacted** is selected, and it can return 10,000 computers if this option is not selected. Automatic computer discovery verifies that discovered computers can be contacted. A computer that is already managed by the management group is not returned.
 
 6.  On the **Discovery Method** page, you can locate the computers that you want to manage by either scanning or browsing Active Directory Domain Services or typing the computer names.
 
@@ -76,15 +71,15 @@ Use the following procedure to discover computers running Windows and to deploy 
 
     If you want to browse Active Directory Domain Services or type the computer names, do the following:
 
-    -   Select **Browse for, or type-in computer names**, click **Browse**, specify the names of the computers that you want to manage, and then click **OK**.
+     1.  Select **Browse for, or type-in computer names**, click **Browse**, specify the names of the computers that you want to manage, and then click **OK**.
 
-    -   In the **Browse for, or type-in computer names** box, type the computer names, separated by a semi-colon, comma, or a new line. You can use NetBIOS computer names or fully qualified domain names (FQDN).
+     2.  In the **Browse for, or type-in computer names** box, type the computer names, separated by a semi-colon, comma, or a new line. You can use NetBIOS computer names or fully qualified domain names (FQDN).
 
 7.  Click **Next**, and on the **Administrator Account** page, do one of the following:
 
-    -   Select **Use selected Management Server Action Account** if it is not already selected.
+    1.  Select **Use selected Management Server Action Account** if it is not already selected.
 
-    -   Select **Other user account**, type the **User name** and **Password**, and then select the **Domain** from the list. If the user name is not a domain account, select **This is a local computer account, not a domain account**.
+    2.  Select **Other user account**, type the **User name** and **Password**, and then select the **Domain** from the list. If the user name is not a domain account, select **This is a local computer account, not a domain account**.
 
         > [!IMPORTANT]
         > The account must have administrative privileges on the targeted computers. If **This is a local computer account, not a domain account** is selected, the management server action account will be used to perform discovery.
@@ -100,12 +95,12 @@ Use the following procedure to discover computers running Windows and to deploy 
 
     2.  In the **Management Mode** list, click **Agent** and then click **Next**.
 
-    > [!NOTE]
-    > The discovery results show virtual nodes of clusters. Do not select any virtual nodes to be managed.
+        > [!NOTE]
+        > The discovery results show virtual nodes of clusters. Do not select any virtual nodes to be managed.
 
 10. On the **Summary** page, do the following:
 
-    1.  Leave the **Agent installation directory** set to the default of **%ProgramFiles%\System Center Operations Manager** or type an installation path.
+    1.  Leave the **Agent installation directory** set to the default of **%ProgramFiles%\Microsoft Monitoring Agent** or type an installation path.
 
         > [!IMPORTANT]
         > If a different **Agent installation directory** is specified, the root of the path must exist on the targeted computer or the agent installation fails. Subdirectories, such as **\Agent**, are created if they do not exist.
@@ -121,20 +116,14 @@ Use the following procedure to discover computers running Windows and to deploy 
 
 12. Click **Close**.
 
-## See Also
-[Operations Manager Agent Installation Methods](Operations-Manager-Agent-Installation-Methods.md)
-[Install Agent on UNIX and Linux Using the Discovery Wizard](Install-Agent-on-UNIX-and-Linux-Using-the-Discovery-Wizard.md)
-[Install Agent Using the MOMAgent.msi Setup Wizard](Install-Agent-Using-the-MOMAgent.msi-Setup-Wizard.md)
-[Install Agent Using the Command Line](Install-Agent-Using-the-Command-Line.md)
-[Install Agent and Certificate on UNIX and Linux Computers Using the Command Line](Install-Agent-and-Certificate-on-UNIX-and-Linux-Computers-Using-the-Command-Line.md)
-[Managing Certificates for UNIX and Linux Computers](Managing-Certificates-for-UNIX-and-Linux-Computers.md)
-[Process Manual Agent Installations](Process-Manual-Agent-Installations.md)
-[Applying Overrides to Object Discoveries](Applying-Overrides-to-Object-Discoveries.md)
-[Configuring Agents](Configuring-Agents.md)
-[Examples of Using MOMAgent Command to Manage Agents](Examples-of-Using-MOMAgent-Command-to-Manage-Agents.md)
-[Upgrading and Uninstalling Agents on UNIX and Linux Computers](Upgrading-and-Uninstalling-Agents-on-UNIX-and-Linux-Computers.md)
-[Manually Uninstalling Agents from UNIX and Linux Computers](Manually-Uninstalling-Agents-from-UNIX-and-Linux-Computers.md)
-[Uninstall Agent from Windows-based Computers](Uninstall-Agent-from-Windows-based-Computers.md)
+## Next steps
 
+- If you would like to manually install the Windows agent from the command line or automate the deployment using a script or other automation solution, review [Install Windows Agent Manually Using MOMAgent.msi](install-windows-agent-manually-using-momagent.md).
 
+- After manually installing the Operations Manager agent on Windows or UNIX and Linux computers, you need to [Process Manual Agent Installations](Process-Manual-Agent-Installations.md).
 
+- To understand how to manage the configuration settings of a Windows agent and options available, review [Configuring Agents](Configuring-Agents.md).
+
+- Review [Uninstall Agent from Windows-based Computers](Uninstall-Agent-from-Windows-based-Computers.md) to understand what options and steps need to be performed to properly uninstall  the agent from your Windows computers.  
+
+- If you would like to install the Nano Server agent from the command line or automate the deployment using a script or other automation solution, review [Install Agent on Nano Server](Install-Agent-on-Nano-Server.md)

@@ -1,77 +1,16 @@
 ---
 description:  
-manager:  cfreemanwa
+manager:  cfreeman
 ms.topic:  article
 author:  rayne-wiselman
+ms.author: raynew
+redirect_url: manage-compute-update-servers
 ms.prod:  system-center-threshold
 keywords:  
-ms.date:  2016-06-28
+ms.date:  2016-10-12
 title:  How to integrate fabric updates with Configuration Manager
 ms.technology:  virtual-machine-manager
 ms.assetid:  4e867fdc-a1a1-4766-b34f-3e2910725088
 ---
 
 # How to integrate fabric updates with Configuration Manager
-
->Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
-
-Virtual Machine Manager (VMM) supports using a WSUS server that is part of a Configuration Manager environment. This will also enable you to use the reporting capabilities of Configuration Manager to provide compliance information.
-
-If you use an existing WSUS server from a Configuration Manager environment, changes to configuration settings for the WSUS server (for example, update classifications, languages, and proxy settings) should only be made from Configuration Manager. The VMM administrator can view the configuration settings from the VMM console, but cannot make changes.
-
-> [!NOTE]
-> For VMM, the synchronization schedule is always on-demand, regardless of the setting specified in Configuration Manager.
-
-Before you perform any configuration steps for update management in VMM, you should first configure the Configuration Manager environment.
-
-The following procedure contains an overview of the steps you need to perform in Configuration Manager. For more information, see the following Configuration Manager documentation:
-
--   [Software Updates in Configuration Manager](http://technet.microsoft.com/library/gg682068.aspx)
-
--   [Reporting in Configuration Manager](http://technet.microsoft.com/library/gg699377.aspx)
-
-### To configure Configuration Manager to share a WSUS server with VMM
-
-1.  In Configuration Manager, create a collection. This collection will contain all the computers that VMM will manage.
-
-2.  To the collection, add the computers that VMM will manage. This includes all computers for which VMM will perform update management. This includes computers such as the following:
-
-    -   Virtual machine hosts
-
-    -   Library servers
-
-    -   VMM management server
-
-    -   PXE servers
-
-    -   The WSUS server
-
-3.  Exclude this collection from any software update deployments delivered by Configuration Manager to ensure that VMM controls update management of those computers.
-
-    > [!NOTE]
-    > You will still be able to view compliance information for this collection in Configuration Manager reports.
-
-4.  If you want to include VMM compliance information in Configuration Manager reports, create an update group in Configuration Manager that contains all the updates against which you want to measure compliance for the computers managed by VMM.
-
-    > [!IMPORTANT]
-    > You are creating this update group only to provide reporting capabilities. Do not deploy this update group to the computers managed by VMM.
-
-### To configure VMM to use a WSUS server shared with Configuration Manager
-
-1.  Add the WSUS server to VMM by following the steps in [How to add an update server to VMM](How-to-add-an-update-server-to-VMM.md).
-
-2.  After you have added the WSUS server to VMM, open the Fabric workspace, expand **Servers**, and click **Update Server**, and then select the update server.
-
-3.  On the **Update Server** tab, in the **Properties** group, click **Properties**.
-
-4.  On the **General** page, ensure that the **Allow Update Server configuration changes** check box is not selected, and then click **OK**.
-
-For more information about configuring update management, see [Managing fabric updates in VMM](Managing-fabric-updates-in-VMM.md).
-
-## See Also
-[Managing fabric updates in VMM](Managing-fabric-updates-in-VMM.md)
-[Managing fabric resources with VMM](Managing-fabric-resources-with-VMM.md)
-[Managing fabric resources with VMM](Managing-fabric-resources-with-VMM.md)
-
-
-

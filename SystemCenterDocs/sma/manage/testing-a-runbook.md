@@ -1,11 +1,12 @@
 ---
 description:  
-manager:  cfreemanwa
+manager:  cfreeman
 ms.topic:  article
 author:  bwren
+ms.author: bwren
 ms.prod:  system-center-threshold
 keywords:  
-ms.date:  2016-06-28
+ms.date:  10/12/2016
 title:  Testing a Runbook
 ms.technology:  service-management-automation
 ms.assetid:  c75fe03c-3709-4c85-b593-fb1a2920f80e
@@ -13,7 +14,7 @@ ms.assetid:  c75fe03c-3709-4c85-b593-fb1a2920f80e
 
 # Testing a Runbook
 
->Applies To: Windows Azure Pack for Windows Server
+>Applies To: Windows Azure Pack for Windows Server, System Center 2016 - Service Management Automation
 
 You can test the Draft version of a runbook in Service Management Automation while leaving the published version of the runbook unchanged. This allows you to verify that the runbook is working correctly before replacing the published version.
 
@@ -36,5 +37,7 @@ To test the runbook in SMA, click **Test Draft in SMA**.  A new window will be o
 
 ## See Also
 [Service Management Automation](../Service-Management-Automation.md)
+
 [Authoring Automation Runbooks](Authoring-Automation-Runbooks.md)
+
 [Editing a Runbook](Editing-a-Runbook.md)

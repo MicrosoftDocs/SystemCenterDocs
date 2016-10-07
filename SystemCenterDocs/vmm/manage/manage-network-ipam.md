@@ -2,8 +2,9 @@
 title: Set up an IPAM server in the VMM fabric
 description: This article describes how to manage MAC address pools in the VMM fabric
 author:  rayne-wiselman
+ms.author: raynew
 manager:  cfreemanwa
-ms.date:  2016-09-04
+ms.date:  2016-09-22
 ms.topic:  article
 ms.prod:  system-center-threshold
 ms.technology:  virtual-machine-manager
@@ -11,7 +12,7 @@ ms.technology:  virtual-machine-manager
 ---
 # Set up an IPAM server in the VMM fabric
 
->Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
+>Applies To: System Center 2016 - Virtual Machine Manager
 
 This article explains how to add an IP Address Management (IPAM) server to the System Center 2016 - Virtual Machine Manager (VMM) networking fabric.
 
@@ -21,7 +22,7 @@ An IPAM server helps you to plan, track, and manage the IP address space used in
 
 - With an IPAM server in the VMM fabric, the IP address settings that are associated with logical networks and VM networks in VMM are synchronized using settings stored on the IPAM server.
 - As an administrator you can use the IPAM server to configure and monitor logical networks and their associated network sites and IP address pools. You can also use the IPAM server to monitor the usage of VM networks that you have configured or changed in VMM.
-- Tenants must continue to use the VMM server (not IPAM) to configure VM networks that use network virtualization—in other words, to control the address space that is typically controlled by tenants rather than by VMM administrators.
+- Tenants must continue to use the VMM server (not IPAM) to configure VM networks that use network virtualization.  In other words, to control the address space that is typically controlled by tenants rather than by VMM administrators.
 
 ## Before you start
 

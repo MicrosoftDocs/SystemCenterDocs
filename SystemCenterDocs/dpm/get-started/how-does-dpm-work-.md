@@ -1,11 +1,12 @@
 ---
-description:  
-manager:  cfreemanwa
+description: This article provides an overview of how DPM protects the various data types, the recovery process, and protection policies.
+manager:  cfreeman
 ms.topic:  article
 author:  markgalioto
+ms.author: markgal
 ms.prod:  system-center-threshold
 keywords:  
-ms.date:  2016-09-09
+ms.date:  2016-10-04
 title:  How does DPM work
 ms.technology:  data-protection-manager
 ms.assetid:  1490e423-de29-41b3-bee3-cc46140ea55d
@@ -13,7 +14,7 @@ ms.assetid:  1490e423-de29-41b3-bee3-cc46140ea55d
 
 # How does DPM work?
 
->Applies To: System Center 2016 Technical Preview - Data Protection Manager
+>Applies To: System Center 2016 - Data Protection Manager
 
 The method Data Protection Manager (DPM) uses to protect data varies according to the type of data being protected, and the method of protection you select. This article serves as a primer for how DPM functions. It is intended to educate those new to DPM, or those who may have basic questions about *how* DPM works. This article covers Disk-Based protection processes, Tape-Based protection processes, recovery process, as well as the protection policy.
 
@@ -39,7 +40,8 @@ DPM stores a separate replica for each protection group member in the storage po
 - A storage group on an Exchange server or server cluster
 - A database of an instance of SQL Server or server cluster
 
->[AZURE.NOTE] DPM does not protect data stored in USB drives.
+>[!NOTE]
+> DPM does not protect data stored in USB drives.
 
 ### The File Data Synchronization Process
 
@@ -51,7 +53,7 @@ If a replica becomes inconsistent with its data source, DPM generates an alert t
 
 You can schedule a daily consistency check for protection groups or initiate a consistency check manually.
 
-At regular intervals that you can configure, DPM creates a recovery point for the protection group member. A recovery point is a version of the data from which data can be recovered. For files, a recovery point consists of a shadow copy of the replica, which is created by using the Volume Shadow Copy Service (VSS) functionality of the operating system on the DPM server.
+At regular intervals that you can configure, DPM creates a recovery point for the protection group member. A recovery point is a version of the data from which data can be recovered.
 
 ### The Application Data Synchronization Process
 

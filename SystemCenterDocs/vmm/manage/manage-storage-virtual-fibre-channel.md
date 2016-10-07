@@ -2,15 +2,16 @@
 title: Set up virtual fibre channel in the VMM storage fabric
 description: This article describes how to set up Virtual Fibre Channel in the VMM storage fabric
 author:  rayne-wiselman
-manager:  cfreemanwa
-ms.date:  2016-09-12
+ms.author: raynew
+manager:  cfreeman
+ms.date:  2016-10-12
 ms.topic:  article
-ms.prod:  system-center-threshold
+ms.prod:  system-center-2016
 ms.technology:  virtual-machine-manager
 ---
 # Set up a Virtual Fibre Channel in the VMM storage fabric
 
->Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
+>Applies To: System Center 2016 - Virtual Machine Manager
 
 Read this article to set up virtual fibre channel in the System Center 2016 - Virtual Machine Manager (VMM) storage fabric.
 
@@ -99,7 +100,7 @@ Set up zones as follows:
 
 1.  Click **VMs and Services** > **Services**, right-click the applicable VM, > **Properties** > **Storage**  > **Add** > **Add Fibre Channel Array**.
 2.  In **Add Fibre Channel Array** > **Properties** page > **Create New Zone** specify a zone name, select a storage array, and in **Fabric** select a switch. In **Storage array target ports**, select the applicable WWPM port or ports. In **Virtual machine initiator**, select the applicable WWPM port or ports. Then click **Create**. Click **Show aliases** to view the available zone aliases.
-3.  To activate the zoneset click **Fabric** > **Name**, select the inactive zoneset > **Activate Zoneset**.
+3.  To activate the zoneset, click **Fabric** > **Name**, select the inactive zoneset > **Activate Zoneset**.
 4.  You can view the zonesets for a fabric in **Fabric** > **Fibre Channel Fabric** > **Name**, right-click the applicable fabric >  **Properties** > **Zonesets**.
 5.  If you want to modify zoning for a storage array click **VMs and Services** > applicable host > **Properties** > **Storage** > **Fibre Channel Arrays** > **Edit** > applicable array and modify the zoning settings.
 
@@ -107,9 +108,9 @@ Set up zones as follows:
 
 For a host computer, VM, or computer service tier to access storage array resources, LUNs must be created and then registered (unmasked) to the host, VM, or tier.
 
-1.  Click **Fabric** > **Storage** >**Classifications and Pools**. Under **Name**, click the applicable storage device > **Create Logical Unit**.
+1.  Click **Fabric** > **Storage** > **Classifications and Pools**. Under **Name**, click the applicable storage device > **Create Logical Unit**.
 2.  In the **Create Logical Unit** select a storage pool, specify a name and description, and LUN size. Specify whether you want to crate a thin or fixed size LUN.
-3.  To register the LUN, in **VMs and Services** pane, right-click the applicable VM a> **Properties** > **Add** > **Add Disk**.
+3.  To register the LUN, in **VMs and Services** pane, right-click the applicable VM > **Properties** > **Add** > **Add Disk**.
 4.  In **Create Logical Unit** select a storage pool, name, and size. Click **OK** to register the LUN.
 
 ## Create and deploy a service tier

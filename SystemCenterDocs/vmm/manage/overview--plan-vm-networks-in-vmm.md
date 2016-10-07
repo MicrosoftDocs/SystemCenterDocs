@@ -1,61 +1,16 @@
 ---
 description:  
-manager:  cfreemanwa
+manager:  cfreeman
 ms.topic:  article
 author:  rayne-wiselman
+ms.author: raynew
+redirect_url: manage-network-overview
 ms.prod:  system-center-threshold
 keywords:  
-ms.date:  2016-06-28
-title:  Overview  plan VM networks in VMM
+ms.date:  2016-10-12
+title:  Overview: plan VM networks in VMM
 ms.technology:  virtual-machine-manager
 ms.assetid:  9319e518-2b01-4462-bb05-bbddfed6e00d
 ---
 
 # Overview: plan VM networks in VMM
-
->Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
-
-In Virtual Machine Manager (VMM), after you complete the planning described in [Overview: plan logical networks, network sites, and IP address pools in VMM](Overview--plan-logical-networks,-network-sites,-and-IP-address-pools-in-VMM.md), you can plan your VM networks. Use this table for more information:
-
-|Purpose of VM network|Description|
-|-------------------------|---------------|
-|**For VLANs**: see [Plan VM networks for a VLAN-based configuration](Overview--plan-VM-networks-in-VMM.md#BKMK_VLAN) in this topic|You can use familiar virtual local area network (VLAN) technology for network isolation, and manage your configuration in VMM.|
-|**For Hyper-V network virtualization**: see [Plan VM networks for Hyper-V network virtualization](Overview--plan-VM-networks-in-VMM.md#BKMK_hnv) in this topic|You can support multiple tenants (also called clients or customers) with their own networks, isolated from the networks of others, by using VM networks configured for network virtualization.|
-|**Direct access to the logical network ("no isolation")**: described in this table|A VM network can provide direct access to a logical network. No planning is needed, other than to identify the logical network to give access to. This is the type of VM network typically used for management networks (for example, the network used for managing a host).|
-
-## <a name="BKMK_VLAN"></a>Plan VM networks for a VLAN-based configuration
-You can use familiar virtual local area network (VLAN) technology for network isolation, and manage your configuration in VMM.
-
-> [!NOTE]
-> A "VLAN-based configuration" means a configuration where VLANs are used for isolation, not just for broadcast boundaries.
-
-Use the following guidelines to plan for VM networks for a VLAN-based configuration:
-
--   Plan for a logical network with VLAN and IP subnet settings as described in the [Guidelines for network sites: VLAN and IP subnet settings](Overview--plan-logical-networks,-network-sites,-and-IP-address-pools-in-VMM.md#BKMK_vlans_ip) section in "Overview: plan your logical networks, network sites, and IP address pools." For the logical network, you will use the **VLAN-based independent networks** option.
-
--   Plan for one VM network for each network site (and VLAN) in your configuration.
-
-The following illustration shows the VMM configuration for a network where VLAN 1 and VLAN 4 are used for network isolation. In VMM, the logical network uses the **VLAN-based independent networks** setting, and contains network sites with the appropriate VLAN and IP subnet settings (only one network site is visible). For each VLAN, a VM network has been created, and it receives the VLAN and IP subnet information directly from the logical network. The associated IP address pools provide for static IP addressing in the VM networks.
-
-
-## <a name="BKMK_hnv"></a>Plan VM networks for Hyper-V network virtualization
-To support multiple tenants (also called clients or customers) with their own networks, isolated from the networks of others, use VM networks configured for Hyper-V network virtualization. For more information about Hyper-V network virtualization, which was introduced in Windows Server 2012, see [Network Virtualization technical details](http://technet.microsoft.com/library/jj134174.aspx).
-
-On VM networks that use network virtualization, your tenants can use any IP addresses that they want for their virtual machines, regardless of the IP addresses that are used on other VM networks. Also, you can enable your tenants to configure some aspects of their own networks, based on limits that you specify.
-
-> [!NOTE]
-> Network virtualization is supported only on hosts that are running Windows Server Technical Preview, Windows Server 2012 R2, or Windows Server 2012. Hosts running Windows Server 2008 R2 do not support network virtualization.
-
-Use the following guidelines to plan for VM networks that use network virtualization:
-
--   Plan for a logical network with VLAN and IP subnet settings as described in the [Guidelines for network sites: VLAN and IP subnet settings](Overview--plan-logical-networks,-network-sites,-and-IP-address-pools-in-VMM.md#BKMK_vlans_ip) section in "Overview: plan your logical networks, network sites, and IP address pools." For the logical network, you will select **One connected network** and then select **Allow new VM networks created on this logical network to use network virtualization**.
-
-    Optionally, you can also select **Create a VM network with the same name to allow virtual machines to access this logical network directly**. Even after one such VM network is created, you can create additional VM networks that are isolated from other VM networks.
-
--   On top of that logical network, plan for multiple VM networks on which you will select **Isolate using Hyper-V network virtualization**.
-
-
-
-
-
-

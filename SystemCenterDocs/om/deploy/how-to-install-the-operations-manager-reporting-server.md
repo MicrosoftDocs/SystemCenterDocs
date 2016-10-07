@@ -1,30 +1,30 @@
 ---
-description:  
-manager:  cfreemanwa
-ms.topic:  article
-author:  mgoedtel
-ms.prod:  system-center-threshold
-keywords:  
-ms.date:  2016-06-27
+ms.assetid: bc3c9818-6019-4af3-bcaa-990229650c0c
 title:  How to Install the Operations Manager Reporting Server
-ms.technology:  operations-manager
-ms.assetid:  d89df5c3-b0b0-44da-9b8f-7e505c305045
+description:  
+author: mgoedtel
+manager: cfreemanwa
+ms.date: 2016-10-12
+ms.custom: na
+ms.prod: system-center-threshold
+ms.technology: operations-manager
+ms.topic: article
 ---
-
 
 
 # How to Install the Operations Manager Reporting Server
 
->Applies To: System Center 2016 Technical Preview - Operations Manager
+>Applies To: System Center 2016 - Operations Manager
 
 In this procedure, the Reporting server is installed on a stand-alone server that is hosting the SQL Server database and SQL Server Reporting Services.
 
 > [!WARNING]
 > Although SQL Server Reporting Services is installed on the stand-alone server, Operations Manager reports are not accessed on this server; instead, they are accessed in the **Reporting** workspace in the Operations console. If you want to access published reports via the web console, you must install the Operations Manager web console on the same computer as Operations Manager Reporting server.
 
-You must ensure that your server meets the minimum system requirement for Operations Manager. For more information, see [System Requirements for System Center Technical Preview](../../system-requirements/System-Requirements-for-System-Center-Technical-Preview.md).
+You must ensure that your server meets the minimum system requirement for Operations Manager. For more information, see [System Requirements for System Center 2016 - Operations Manager](../plan/system-requirements.md).
 
-## Installing Operations Manager Reporting
+## Installing Operations Manager reporting
+
 No other applications that are using SQL Server Reporting Services can be installed on this instance of SQL Server.
 
 Ensure that SQL Server Reporting Services has been correctly installed and configured. For more information about how to install and configure SQL Server Reporting Services, see [SQL Server Installation (SQL Server 2012)](http://go.microsoft.com/fwlink/p/?LinkId=146943).
@@ -38,7 +38,7 @@ Ensure that SQL Server Reporting Services has been correctly installed and confi
 
 2.  Verify the correct configuration of SQL Server Reporting Services. Click **Start**, point to **Programs**, point to the appropriate offering of Microsoft SQL Server, point to **Configuration Tools**, and then click **Reporting Services Configuration Manager**. Connect to the instance on which you installed Reporting Services.
 
-3.  In the navigation pane, select the \<servername>\SQLinstance. This displays the Report Server status in the results pane. Ensure that the **Report Server Status** is **Started**.
+3.  In the navigation pane, select the `<servername>\SQLinstance`. This displays the Report Server status in the results pane. Ensure that the **Report Server Status** is **Started**.
 
 4.  In the navigation pane, select **Scale-out Deployment**, and then ensure that the **Status** column has the value of **Joined**.
 
@@ -50,13 +50,13 @@ Ensure that SQL Server Reporting Services has been correctly installed and confi
 
 8.  In the **Name** column, find the **SQL Server Agent** service and verify that its status reads **Started** and that its **Startup Type** is **Automatic**.
 
-9. Verify that the Report Server website is functioning and available by browsing to **http://\<servername>/reportserver/_<$instance>**. You should see a page with the **\<servername>/ReportServer/_<$instance>** and the text, **Microsoft SQL Server Reporting Services Version** ##.#.####.## where the # is the version number of your SQL Server installation.
+9. Verify that the Report Server website is functioning and available by browsing to `http://\<servername>/reportserver/_<$instance>`. You should see a page with the `<servername>/ReportServer/_<$instance>` and the text, **Microsoft SQL Server Reporting Services Version** ##.#.####.## where the # is the version number of your SQL Server installation.
 
-10. Verify that the Report Manager website is configured correctly by opening **Internet Explorer** and browsing to **http://\<servername>/reports/_<$instance>**.
+10. Verify that the Report Manager website is configured correctly by opening **Internet Explorer** and browsing to `http://<servername>/reports/_<$instance>`.
 
 11. In the Report Manager website, click **New Folder** to create a new folder. Enter a name and description, and then click **OK**. Ensure that the new, created folder is visible on the Report Manager website.
 
-#### To install Operations Manager Reporting
+#### To install Operations Manager reporting
 
 1.  Log on to the computer with an account that has local administrative credentials.
 
@@ -64,7 +64,7 @@ Ensure that SQL Server Reporting Services has been correctly installed and confi
 
 3.  On the **Getting Started**, **Select features to install** page, select the **Reporting server** feature. To read more about each feature and its requirements, click **Expand all**, or expand the buttons next to each feature, and then click **Next**.
 
-4.  On the **Getting Started**, **Select installation location** page, accept the default value of **C:\Program Files\System Center 2012\Operations Manager** or type a new location or browse to one, and then click **Next**.
+4.  On the **Getting Started**, **Select installation location** page, accept the default value of **C:\Program Files\System Center 2016\Operations Manager** or type a new location or browse to one, and then click **Next**.
 
 5.  On the **Prerequisites** page, review and resolve any warnings or errors, and then click **Verify Prerequisites Again** to recheck the system.
 
@@ -84,7 +84,7 @@ Ensure that SQL Server Reporting Services has been correctly installed and confi
 
 13. When Setup is finished, the **Setup is complete** page appears. Click **Close**.
 
-#### To install Operations Manager Reporting by using the Command Prompt window
+#### To install Operations Manager reporting from the Command Prompt
 
 1.  Log on to the server by using an account that has local administrative credentials.
 
@@ -128,8 +128,9 @@ Ensure that SQL Server Reporting Services has been correctly installed and confi
 
 3.  Close the report window.
 
-## See Also
-[Distributed Deployment of Operations Manager](Distributed-Deployment-of-Operations-Manager.md)
+## Next steps
+
+- See [Distributed Deployment of Operations Manager](Distributed-Deployment-of-Operations-Manager.md) to understand the sequence and steps for installing the Operations Manager server roles across multiple servers in your management group.  
 
 
 

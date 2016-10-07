@@ -5,13 +5,16 @@ ms.topic:  article
 author:  markgalioto
 ms.prod:  system-center-threshold
 keywords:  
-ms.date:  2016-06-30
+ms.date:  2016-10-12
 title:  Back up SharePoint with DPM
 ms.technology:  data-protection-manager
 ms.assetid:  3769bebe-3e5a-4b51-9c01-d07e94fc8c43
 ---
 
 # Back up SharePoint with DPM
+
+>Applies To: System Center 2016 - Data Protection Manager
+
 You can deploy DPM to protect SharePoint farms, external SQL Server databases, and folders that include farm customizations.  This articles describes the steps required to back up and recover SharePoint data. In addition to this article these blog entries provide an in\-depth walkthrough and troubleshooting tips for this scenario:
 
 -   [Configure SharePoint protection in DPM](http://blogs.technet.com/b/dpm/archive/2015/04/27/how-to-configure-sharepoint-protection-in-data-protection-manager-and-troubleshoot-related-issues.aspx)
@@ -107,7 +110,9 @@ To back up SharePoint farm you configure protection for SharePoint by using Conf
 
     On the **Select Tape and Library Details** page specify the tape/library to use, and whether data should be compressed and encrypted on tape.
 
-8.  In **Review disk allocation** page review the storage pool disk space allocated for the protection group. **Data size** shows the size of the data you want to back up, and **Disk space** shows the space that DPM recommends for the protection group. We recommend that you select **Colocate data** to back up multiple client data sources to one replica volume if you have a large number of client computers. You won't be able to protect 1000 or more client computers with one DPM server without co-locating your data. We recommend that you do not co-locate if you have less than ten client computers in a protection group. Select **Automatically grow the volumes** to automatically increase size when more disk space is required for protecting data on the client computers.
+8.  In the **Review disk allocation** page review the storage pool disk space allocated for the protection group.
+
+    **Total Data size** is the size of the data you want to back up, and **Disk space to be provisioned on DPM** is the space that DPM recommends for the protection group. DPM chooses the ideal backup volume, based on the settings. However, you can edit the backup volume choices in the **Disk allocation details**. For the workloads, select the preferred storage in the dropdown menu. Your edits change the values for **Total Storage** and **Free Storage** in the **Available Disk Storage** pane. Underprovisioned space is the amount of storage DPM suggests you add to the volume, to continue with backups smoothly in the future.
 
 9. In **Choose replica creation method** select how you want to handle the initial full data replication.  If you select to replicate over the network we recommended you choose an off-peak time. For large amounts of data or less than optimal network conditions, consider replicating the data offline using removable media.
 

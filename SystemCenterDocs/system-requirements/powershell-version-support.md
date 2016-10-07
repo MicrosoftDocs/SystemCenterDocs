@@ -13,9 +13,9 @@ ms.assetid:  4d0bec2e-017d-4d2b-9fce-2d09567777a6
 
 # PowerShell Version Support
 
->Applies To: System Center Technical Preview
+>Applies To: System Center 2016
 
-Use this information to evaluate if your Windows PowerShell environment is ready to support the installation of or upgrade to System Center 2016 Technical Preview. Use this information here whether you are deploying one or multiple components.
+Use this information to evaluate if your Windows PowerShell environment is ready to support the installation of or upgrade to System Center 2016. Use this information here whether you are deploying one or multiple components.
 
 ## PowerShell support
 
@@ -28,6 +28,9 @@ Use this information to evaluate if your Windows PowerShell environment is ready
 |**Operations Manager** Data Warehouse Server|||&#8226;|&#8226;|
 |**Operations Manager** Gateway Server|||&#8226;|&#8226;|
 |**Operations Manager** Windows Agent|&#8226;|&#8226;|&#8226;|&#8226;|
+|**Service Management Automation** PowerShell Module|||&#8226;|&#8226;|
+|**Service Management Automation** PowerShell ISE Add-on||&#8226;|&#8226;|&#8226;|
+|**Service Management Automation** Runbook Worker|||&#8226;|&#8226;|
 |**Service Manager** Console|||&#8226;|&#8226;|
 |**Service Manager** Management Server|||&#8226;|&#8226;|
 |**Service Manager** Data Warehouse Management Server|||&#8226;|&#8226;|

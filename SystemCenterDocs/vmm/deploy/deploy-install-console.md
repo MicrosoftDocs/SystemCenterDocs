@@ -2,8 +2,9 @@
 title: Install the VMM console
 description: This article provides installation instructions for the VMM console
 author:  rayne-wiselman
+ms.author: raynew
 manager:  cfreemanwa
-ms.date:  2016-09-01
+ms.date:  2016-09-22
 ms.topic:  article
 ms.prod:  system-center-threshold
 ms.technology:  virtual-machine-manager
@@ -11,7 +12,7 @@ ms.technology:  virtual-machine-manager
 
 # Install the VMM Console
 
->Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
+>Applies To: System Center 2016 - Virtual Machine Manager
 
 This article describes how to install the VMM console on a remote computer and connect to the System Center 2016 - Virtual Machine Manager (VMM) server. If you're installing the VMM management server the console is installed on it automatically.
 
@@ -22,7 +23,7 @@ The remote console can be installed on:
 
 ## Before you start
 
-- Review the [system requirements](../../system-requirements/System-Requirements-for-System-Center-Technical-Preview.md)
+- Review the [system requirements](../../system-requirements/system-requirements.md)
 - Make sure you've followed the [planning instructions](../plan/plan-install.md).
 - Make sure you have at least local administrator permissions on the computer on which you're installing the console.
 
@@ -41,7 +42,7 @@ If you want to uninstall the console do the following:
 
 1. In the Control Panel click to uninstall a program and select Microsoft System Center 2016 Virtual Machine Manager.
 2. In **Select features to remove** click **VMM console**. On the VMM management server you can't uninstall the console without uninstalling VMM management.
-3. In **Summary** review the settings and click** Uninstall**.
+3. In **Summary** review the settings and click **Uninstall**.
 
 
 ## Install and uninstall the console from the command prompt
@@ -51,7 +52,7 @@ If you want to uninstall the console do the following:
 
 	- **/client** - specifies console installation
 	- **/i ir /x** - specify whether to install (/i) or uninstall (/x) the console.
-	- /f <filename> - specifies the ,ini file to use. Make sure this is correct. If setup doesn't find the ini file it will install with default values.
+	- /f &lt;filename&gt; - specifies the ini file to use. Make sure this is correct. If setup doesn't find the ini file it will install with default values.
 	- Don't use the /opsmgr parameter
 
 3. For example, run **setup.exe /client /i /f C:\Temp\VMClient.ini**.
@@ -62,7 +63,7 @@ If you want to uninstall the console do the following:
 
 ## Connect to a VMM management server
 
-1. On the remote machine desktop click the Virtual Manager Machine Console icon if the console isn't open.
+1. On the remote machine desktop click the VMM console icon if the console isn't open.
 2. Specify the server name and port on which the VMM server is listening (8100 by default). For example: **vmmserver01:8100**.
 3. You can use the account with which you're logged on to the remote machine or specify a different account to connect to VMM. Click **Automatically connect with these settings** if you want to connect to the same VMM server each time.
 4. Click **Connect**. **Select User Role** will appear if the credentials you're using belong to more than one VMM user role.

@@ -1,11 +1,12 @@
 ---
 description:  
-manager:  cfreemanwa
+manager:  cfreeman
 ms.topic:  article
 author:  bwren
+ms.author: bwren
 ms.prod:  system-center-threshold
 keywords:  
-ms.date:  2016-06-28
+ms.date:  10/12/2016
 title:  Scheduling a Runbook
 ms.technology:  service-management-automation
 ms.assetid:  e7929b96-7057-4b18-bcd6-9d4a9f8566da
@@ -13,7 +14,7 @@ ms.assetid:  e7929b96-7057-4b18-bcd6-9d4a9f8566da
 
 # Scheduling a Runbook
 
->Applies To: Windows Azure Pack for Windows Server
+>Applies To: Windows Azure Pack for Windows Server, System Center 2016 - Service Management Automation
 
 To schedule a runbook in Service Management Automation to start at a specified time, you link it to one or more schedules. A schedule can be configured to either run one time or recurring every specified number of days. A runbook can be linked to multiple schedules, and a schedule can have multiple runbooks linked to it.
 
@@ -87,8 +88,7 @@ Start-SmaRunbook "WebServiceEndpoint $webServer "Port $port "Name $runbookName "
 
 ## See Also
 [Service Management Automation](../Service-Management-Automation.md)
+
 [Runbook Operations](Runbook-Operations.md)
+
 [Starting a Runbook](Starting-a-Runbook.md)
-
-
-

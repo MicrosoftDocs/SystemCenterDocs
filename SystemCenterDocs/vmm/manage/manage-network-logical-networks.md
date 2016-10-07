@@ -2,8 +2,9 @@
 title: Set up logical networks in the VMM fabric
 description: This article describes how to set up logical networks in the VMM fabric
 author:  rayne-wiselman
+ms.author: raynew
 manager:  cfreemanwa
-ms.date:  2016-09-04
+ms.date:  2016-09-22
 ms.topic:  article
 ms.prod:  system-center-threshold
 ms.technology:  virtual-machine-manager
@@ -11,7 +12,7 @@ ms.technology:  virtual-machine-manager
 
 # Set up logical networks in the VMM fabric
 
->Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
+>Applies To: System Center 2016  - Virtual Machine Manager
 
 Read this article to learn how to create System Center 2016 - Virtual Machine Manager (VMM) logical networks.
 
@@ -28,9 +29,9 @@ When you provision virtualization hosts in the VMM fabric, you associate physica
 - **Automatic logical networks**: By default, VMM creates logical networks automatically. When you provision a host in the VMM fabric and there's no VMM logical network associated with a physical network adapter on that host, VMM automatically creates a logical network and associates it with an adapter. By default for the logical network VMM first DNS suffix label of the connection-specific DNS suffix. By default VMM also creates a VM network configured with **No isolation**.
 - **Manual logical networks**: When you create a logical network manually you specify:
 	- **Network type**: You specify whether the network is isolated or not, and if it is how it's isolated. Then when you create VM networks based on the logical network they'll be created with the type of network you specified.
-		- **No isolation**: This is the simplest type of network model that specifies there's just a single network within which machines can connect to each other with no need to isolate these machines from each other. VM networks in VMM provide an interface through which VMs connect to a logical network, and in a no isolation model you'll have a single VM network mapped to a logical network.
-	 	- **Isolation**: More often you'll want to isolate networks from each other. For example you might want to isolate networks that have different purposes, or you might be a provider who wants to host workloads for multiple tenants on a single logical network, with isolation for each tenant. In this case you'll have multiple VM networks mapped to a logical network. VM networks mapped to a logical network can be  isolated using VLANs/private VLANs, or network virtualization. Note that:
-	 	 	- A typical setup might be an infrastructure network with no isolation or VLAN isolation, a load balancer backend and internet facing network with PVLAN, and tenant networks with isolation using network virtualization.
+		- **No isolation**: This is the simplest type of network model that specifies there's just a single network within which machines can connect to each other with no need to isolate these machines from each other. VM networks in VMM provide an interface through which VMs connect to a logical network, and in a no isolation model you'll have a single VM network mapped to a logical network.  
+	 	- **Isolation**: More often you'll want to isolate networks from each other. For example you might want to isolate networks that have different purposes, or you might be a provider who wants to host workloads for multiple tenants on a single logical network, with isolation for each tenant. In this case you'll have multiple VM networks mapped to a logical network. VM networks mapped to a logical network can be  isolated using VLANs/private VLANs, or network virtualization. Note that:  
+	 	 	- A typical setup might be an infrastructure network with no isolation or VLAN isolation, a load balancer backend and internet facing network with PVLAN, and tenant networks with isolation using network virtualization.  
 		 	- You can only use one type of isolation on a single logical network. If you do need this you'll need multiple logical networks.
 		  	- There's a practical limit of ~2000 tenants and ~4000 VM networks for a single VMM server.
 
@@ -60,13 +61,14 @@ If you don't want VMM to create logical and VM networks automatically you can di
 
 ## Create logical networks manually
 
-1.  **Fabric** > **Home **> **Show** > **Fabric Resources**. In **Fabric** expand **Networking** > **Logical Networks** > **Home** > **Create** > **Create Logical Network**.
+1.  **Fabric** > **Home** > **Show** > **Fabric Resources**. In **Fabric** expand **Networking** > **Logical Networks** > **Home** > **Create** > **Create Logical Network**.
 2.  In **Create Logical Network Wizard** > **Name** specify a name and description.
 3.  Specify how you want to isolate VM networks associated with this logical network:
 
 	- If you want to have multiple VM networks associated with the logical network and isolate them using network virtualization click **One connected network** > **Allow new VM networks created on this logical network to use network virtualization**.
 	- If you want to have multiple VM networks associated with the logical network and isolate them using a VLAN/PVLAN select **VLAN-based independent networks** or **Private VLAN (PVLAN) networks**.
 	- If you don't want to isolate networks in the logical network, click **One connected network** > **Create a VM network with the same name to allow virtual machines to access this logical network directly**. With this setting you'll have a single VM network associated with your logical network.
+	- If you've deployed a Microsoft network Controller in the VMM fabric you can select to have the logical network managed by the network controller.
 
 4. In **Network Site** add network sites to the logical network. If you don't need to create network sites click **Next**.
 

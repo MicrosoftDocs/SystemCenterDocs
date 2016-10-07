@@ -2,8 +2,9 @@
 title: Add service templates to the VMM library
 description: This article provides guidance for adding service templates to the library in the VMM compute fabric
 author:  rayne-wiselman
+ms.author: raynew
 manager:  cfreemanwa
-ms.date:  2016-09-04
+ms.date:  2016-09-22
 ms.topic:  article
 ms.prod:  system-center-threshold
 ms.technology:  virtual-machine-manager
@@ -12,11 +13,9 @@ ms.technology:  virtual-machine-manager
 
 # Add service templates to the VMM library
 
->Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
+>Applies To: System Center 2016 - Virtual Machine Manager
 
 Read this article to learn about setting up service templates in the System Center 2016 - Virtual Machine Manager (VMM) library.
-
-## Overview
 
 Service templates group VMs together to provide an app. They contain information about a service, including the VMs that are deployed as part of the service, the applications installed on VMs, and the network settings that should be used. You can add VM templates, network settings, applications, and storage to a service template.
 
@@ -50,10 +49,9 @@ You can create service templates if you have VMM admin or delegated admin permis
 		- More than one upgrade domain to minimize service interruptions when a tier is updated. VMM will update VMs in the tier according to their upgrade domains. VMM upgrade an upgrade domain at a time. It shuts down VMs in the domain, updates them, brings them online, and moves to the next domain to reduce impact.
 		- The creation of an availability set for the tier. The availability set helps VMs in the service remain available during maintenance. VMM tries to separate VMs in the same availability set by placing them on separate hosts.
 
-
 	- In **Configure Hardware** you'll see the hardware settings for the associated VM template. You can select an alternative hardware profile, or configure hardware settings manually. [Learn more](manage-library-add-profiles.md#create-a-hardware-profile).
 	- In **Configure Operating System** you'll see the operating system settings for the associated VM template. you can select an alternative guest OS profile, or configure settings manually. [Learn more](manage-library-add-profiles.md#create-a-guest-os-profile).
-	- In **Application Configuration** or **SQL Server Configuration** you can select an application/SQL Server profile or configure settings for a new profile. Learn more about [application](manage-libraryadd-profiles.md#create-an-application-profile) and [SQL Server](manage-library-add-profiles.md#create-a-sql-server-profile) profiles.
+	- In **Application Configuration** or **SQL Server Configuration** you can select an application/SQL Server profile or configure settings for a new profile. Learn more about [application](manage-library-add-profiles.md#create-an-application-profile) and [SQL Server](manage-library-add-profiles.md#create-a-sql-server-profile) profiles.
 
 ## Add a VM network to the service template
 

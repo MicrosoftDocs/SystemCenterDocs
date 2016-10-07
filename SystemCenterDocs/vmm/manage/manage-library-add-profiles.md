@@ -2,8 +2,9 @@
 title: Add profiles to the VMM library
 description: This article provides guidance for adding profiles to the library in the VMM compute fabric
 author:  rayne-wiselman
+ms.author: raynew
 manager:  cfreemanwa
-ms.date:  2016-09-04
+ms.date:  2016-09-22
 ms.topic:  article
 ms.prod:  system-center-threshold
 ms.technology:  virtual-machine-manager
@@ -13,11 +14,10 @@ ms.technology:  virtual-machine-manager
 
 # Add profiles to the VMM library
 
->Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
+>Applies To: System Center 2016 - Virtual Machine Manager
 
 Use this article to learn about System Center 2016 - Virtual Machine Manager (VMM) profiles, and how to add them to the VMM library.
 
-## Overview
 
 A VMM profile contains settings that are used when you create a new virtual machine or virtual machine template. Profiles make deployment easier by helping you to quickly create VMs with consistent settings. Profiles can be used to restrict the settings that are available to self-service users who create new VMs.
 
@@ -38,7 +38,7 @@ A VMM profile contains settings that are used when you create a new virtual mach
 4. In **General** you can define how many virtual processors will be assigned to the VM. You can specify memory. startup and dynamic memory range. Startup specifies the memory that will be assigned to the VM during startup. After startup this memory can be reclaimed back from the VM in accordance with the minimum memory settings.
 5. In **Bus Configuration** you add and remove hardware that supports storage device.
 6. In **Network Adapters**, you specify the number of adapters the VM will have, whether they'll have a static IP address or an address allocated from a pool, the MAC address and port profile. The port profile can be used to control how bandwidth is used on the adapters.
-7. In **Advanced** you can specify high availability and performance settings. In **Availability** specify whether the VM should be highly available in deployed in a cluster. In **BIOS** select the order of virtual device and when **Num Lock** is enabled for password entry. In **CPU Priority** specify relative priority of CPU usage for the VM. If you set to High the VM will have more access to resources that those set to Low. In **Virtual NUMA** specify when the VM can use virtual NUMA. [Read more](https://technet.microsoft.com/magazine/hh750394.aspx) In **Memory Weight** specify the relative priority for memory usage that the VM will have.
+7. In **Advanced** you can specify high availability and performance settings. In **Availability** specify whether the VM should be highly available in deployed in a cluster. In **BIOS** select the order of virtual device and when **Num Lock** is enabled for password entry. In **CPU Priority** specify relative priority of CPU usage for the VM. If you set to High the VM will have more access to resources that those set to Low. In **Virtual NUMA** specify when the VM can use [virtual NUMA](manage-vm-settings.md) In **Memory Weight** specify the relative priority for memory usage that the VM will have.
 8. After you've finished creating the hardware profile, you can right-click it to configure additional properties. In **Dependencies** you see any dependencies for the profile. For example if a library-based file is required we'd see it here. In **Access** you can see the roles or users who have permissions to use this profile. In **Validation Errors** you can check for errors.
 9. After you've created the hardware profile, you can use it when you configure a virtual machine template, or create a virtual machine. You can select a complete hardware profile, or select it and then tweak settings for the individual VM or template.
 

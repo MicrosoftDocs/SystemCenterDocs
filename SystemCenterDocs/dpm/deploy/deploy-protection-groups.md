@@ -5,7 +5,7 @@ ms.topic:  article
 author:  markgalioto
 ms.prod:  system-center-threshold
 keywords:  
-ms.date:  2016-06-30
+ms.date:  2016-10-12
 title:  Deploy protection groups
 ms.technology:  data-protection-manager
 ms.assetid:  2a4f4ec8-6185-4fe9-8120-e4dc3b6c9409
@@ -13,11 +13,11 @@ ms.assetid:  2a4f4ec8-6185-4fe9-8120-e4dc3b6c9409
 
 # Deploy protection groups
 
->Applies To: System Center 2016 Technical Preview - Data Protection Manager
+>Applies To: System Center 2016 - Data Protection Manager
 
 A DPM protection group is a collection of data sources, such as volumes, shares, or application workloads which have common backup and restore settings. The protection group settings specify:
 
--   **Data sources** - The servers, computers, and workloads you want to protect
+-   **Data sources** - The servers, computers, and workloads you want to protect.
 
 -   **Back-up storage** - How the protected data should be backed up in the short-term and long-term.
 
@@ -27,7 +27,7 @@ A DPM protection group is a collection of data sources, such as volumes, shares,
 
 -   **Initial replication** - How the initial replication of data should be handled, using either over the network or manually offline.
 
--   **Consistency checks** - How replicated data should be checked for consistency
+-   **Consistency checks** - How replicated data should be checked for consistency.
 
 
 The topics in this section provide guidelines for making the decisions involved in creating a protection group.
@@ -35,7 +35,7 @@ The topics in this section provide guidelines for making the decisions involved 
 ## Plan protection groups
 You'll need to decide:
 
--   How you want to group resources you want to back up into protection groups
+-   How you want to group resources you want to back up into protection groups.
 
 -   How will you store the backed up protection group data?
 
@@ -57,23 +57,20 @@ There are a few common ways in which you can organize  your protection groups:
 ## Figure out how much storage space you need
 When you create a protection group and select disk-based protection, you must allocate space on the storage pool for the replicas and recovery points for each data source that you have selected for membership in the group, and you must allocate space on protected file servers or workstations for the change journal.
 
-To help you figure out storage capacity use the  [Storage Calculators for DPM](http://go.microsoft.com/fwlink/?LinkId=275371) There's for DPM 2010 but can be used for later versions.
+To help you figure out storage capacity use the  [Storage Calculators for DPM](http://go.microsoft.com/fwlink/?LinkId=275371) The version was created for DPM 2010 but can be used for later versions.
 
 DPM provides default space allocations for the members of the protection group. The following table shows how DPM calculates the default allocations.
 
 |Component|Default Allocation|Location|
 |-------------|----------------------|------------|
-|Replica volume|For files:<br /><br />-   (Data source size x 3) / 2<br /><br />For Exchange data:<br /><br />-   Data source size x (1 + log change) / (alert threshold - .05)<br /><br />For SQL Server data:<br /><br />-   Data source size x (1 + log change) / (alert threshold - .05)<br /><br />For Windows SharePoint Services data:<br /><br />-   Total size of all databases/ (alert threshold - .05)<br /><br />For Virtual Server data:<br /><br />-   Data source size x 1.5<br /><br />For system state:<br /><br />-   (Data source size x 3) / 2<br /><br />For Hyper-V<br /><br />-   Data source size x 1.5|DPM storage pool or custom volume|
-|Recovery point volume|For files:<br /><br />-   (Data source size x retention range in days x 2) / 100 + 1600 MB<br /><br />For Exchange data:<br /><br />-   4.0 x retention range in days x log change x data source size + 1600 MB<br /><br />For SQL Server data:<br /><br />-   2.5 x retention range in days x log change x data source size + 1600 MB<br /><br />For Windows SharePoint Services data:<br /><br />-   1.5 x retention range in days x log change x total size of all databases + 1600 MB<br /><br />For Virtual Server data:<br /><br />-   (Data source size x retention range in days x 0.02) + 1600 MB<br /><br />For system state:<br /><br />-   (Data source size x  retention range in days x 2) / 100 + 1600 MB<br /><br />For Hyper-V<br /><br />-   (Data source size * recovery range in days \* 0.1) + 1600 MB|DPM storage pool or custom volume|
-|Change journal (for file protection only)|300 MB|Protected volume on the file server or workstation|
+|DPM storage|Data source size x (1 + log change) x (1.05)<br /><br /> *For SQL Server data*:<br />-   Data source size x (1 + log change) x (1.05) + Transaction Logs<br />|DPM storage pool or custom volume|
+|DPM Database| 2 GB <br/>(may increase for SharePoint backups) |DPM Server storage |
+|Change journal (for file-protection only)|300 MB|Protected volume on the file server or workstation|
 
--   **Alert%** - Threshold for the alert associated with replica growth; typically 90%.
 
--   **Log change** - This is the change rate on the database or storage group in question. This varies widely, but for the purposes of the default recommendation in DPM, it is assumed to be 6% for Exchange and SQL Server data and 10% for Windows SharePoint Services data.
+-   **Log change** - This is the change rate on the database or storage group in question. This varies widely, but for the purposes of the default recommendation in DPM, it is assumed to be 3%.
 
--   **Retention range (RR)** - This is the number of recovery points stored; it is assumed to be 5 for purposes of the DPM default recommendation.
-
--   **System state data source size** - The data source size is assumed to be 1 GB.
+-   **Retention range (RR)** - The number of recovery points stored. The DPM default recommendation is five recovery points.
 
 
 When you create a protection group, in the **Modify Disk Allocation** dialog box, the **Data Size** column for each data source displays a **Calculate** link. For the initial disk allocation, DPM applies the default formulas to the size of the volume on which the data source is located. To apply the formula to the actual size of the selected data source, click the **Calculate** link. DPM will determine the size of the data source and recalculate the disk allocation for the recovery point and replica volumes for that data source. This operation can take several minutes to perform.

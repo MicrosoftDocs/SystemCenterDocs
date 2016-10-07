@@ -13,9 +13,9 @@ ms.assetid:  cd5d13e8-71da-4e91-9bcf-f3be00a03d54
 
 # System Center Agents
 
->Applies To: System Center Technical Preview
+>Applies To: System Center 2016
 
-This information lists both Microsoft and non-Microsoft operating systems and versions of Microsoft SQL Server software, Microsoft Exchange, or Microsoft SharePoint that each System Center 2016 Technical Preview agent supports
+This information lists both Microsoft and non-Microsoft operating systems and versions of Microsoft SQL Server software, Microsoft Exchange, or Microsoft SharePoint that each System Center 2016 agent supports.
 
 ## Data Protection Manager Agent
 
@@ -59,7 +59,7 @@ This information lists both Microsoft and non-Microsoft operating systems and ve
 
 -   Windows Server 2012 R2 with Hyper-V
 
--   Windows Server 2016 Technical Preview
+-   Windows Server 2016
 
 ## Operations Manager Windows Agent
 
@@ -89,7 +89,7 @@ This information lists both Microsoft and non-Microsoft operating systems and ve
 
 -   Windows 10
 
--   Windows Server&reg; Technical Preview
+-   Windows Server&reg; 2016
 
 ## Virtual Machine Manager Guest Agent
 
@@ -103,7 +103,7 @@ This information lists both Microsoft and non-Microsoft operating systems and ve
 
 -   Windows Server&reg; 2012 R2
 
--   Windows Server&reg; Technical Preview
+-   Windows Server&reg; 2016
 
 ## Virtual Machine Manager Linux Guest Agent
 
@@ -143,9 +143,7 @@ This information lists both Microsoft and non-Microsoft operating systems and ve
 
 ## Operations Manager Linux/Unix Agent
 
--   HP-UX 11i V2 (PA-RISC and Itanium)
-
--   HP-UX 11i V3 (PA-RISC and Itanium)
+-   HP-UX 11i V3 (Itanium)
 
 -   Oracle Linux 5 (x86/x64)
 
@@ -153,13 +151,9 @@ This information lists both Microsoft and non-Microsoft operating systems and ve
 
 -   Oracle Linux 7 (x64)
 
--   Oracle Solaris 9 (SPARC)
-
 -   Oracle Solaris 10 (SPARC and x86)
 
 -   Oracle Solaris 11 (SPARC and x86)
-
--   Red Hat Enterprises Linux 4 (x86/x64)
 
 -   Red Hat Enterprises Linux 5 (x86/x64)
 
@@ -167,27 +161,21 @@ This information lists both Microsoft and non-Microsoft operating systems and ve
 
 -   Red Hat Enterprises Linux 7 (x64)
 
--   SUSE Linux Enterprise Server 9 (x86)
-
 -   SUSE Linux Enterprise Server 10 (x86/x64)
 
 -   SUSE Linux Enterprise Server 11 (x86/x64)
 
 -   SUSE Linux Enterprise Server 12 (x64)
 
--   IBM AIX 5.3 (POWER)
-
 -   IBM AIX 6.1 (POWER)
 
--   IBM AIX 7.1 (POWER)
+-   IBM AIX 7 (POWER)
 
 -   CentOS 5 (x86/x64)
 
 -   CentOS 6 (x86/x64)
 
 -   CentOS 7 (x64)
-
--   Debian 5 (x86/x64)
 
 -   Debian 6 (x86/x64)
 
@@ -198,3 +186,5 @@ This information lists both Microsoft and non-Microsoft operating systems and ve
 -   Ubuntu Server 12.04 (x86/x64)
 
 -   Ubuntu Server 14.04 (x86/x64)
+
+-   Ubuntu Server 16.04 (x86/x64)

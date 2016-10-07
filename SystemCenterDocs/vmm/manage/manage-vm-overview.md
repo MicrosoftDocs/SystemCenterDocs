@@ -2,17 +2,18 @@
 title: Manage virtual machines in the VMM fabric
 description: This article describes how to manage VMs in the VMM compute fabric
 author:  rayne-wiselman
-manager:  cfreemanwa
-ms.date:  2016-09-13
+ms.author: raynew
+manager:  cfreeman
+ms.date:  2016-09-22
 ms.topic:  article
-ms.prod:  system-center-threshold
+ms.prod:  system-center-2016
 ms.technology:  virtual-machine-manager
 ---
 
 
 # Manage virtual machines in the VMM fabric
 
->Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
+>Applies To: System Center 2016 - Virtual Machine Manager
 
 
 This article provides an overview of managing virtual machines in the System Center 2016 - Virtual Machine Manager (VMM) compute fabric. It provides information about features offered during provisioning, and includes links to articles that describe different ways to provision and manage virtual machines.
@@ -146,14 +147,14 @@ After you've set up a vCenter server and ESX/ESXi hosts, you can provision VMwar
 There are currently a couple of methods for converting VMWare VMs to Hyper-V:
 
 - **Convert Virtual Machine Wizard**: In the VMM console you can use this wizard. This method has a number of limitations:
-- Supported for vSphere 4.1 onwards.
-	- You can't convert VMware workstations
-	- You can't convert VMs with virtual hard disks connected to an IDE bus
-	- Online conversions aren't supported. You need to power off the VMware VMs.
-	- Anti-virus apps must be supported.
-	- VMware tools must be uninstalled from the guest operating system of the VM.
+    - Supported for vSphere 4.1 onwards.
+    - You can't convert VMware workstations.
+    - You can't convert VMs with virtual hard disks connected to an IDE bus.
+    - Online conversions aren't supported. You need to power off the VMware VMs.
+    - Anti-virus apps must be supported.
+    - VMware tools must be uninstalled from the guest operating system of the VM.
 - [Microsoft Virtual Machine Converter](https://technet.microsoft.com/library/dn873998.aspx): After June 3, 2017 this tool will no longer be available. [Learn more](https://blogs.technet.microsoft.com/scvmm/2016/06/04/important-update-regarding-microsoft-virtual-machine-converter-mvmc/)
 
 ## Next steps
 
-[Deploy VMs from a blank virtual hard disk](manage-vm-vhd-blank.md)
+- [Deploy VMs from a blank virtual hard disk](manage-vm-vhd-blank.md)

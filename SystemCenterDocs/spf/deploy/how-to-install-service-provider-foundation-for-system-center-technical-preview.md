@@ -1,6 +1,6 @@
 ---
 description:  
-manager:  cfreemanwa
+manager:  cfreeman
 ms.topic:  article
 author:  rayne-wiselman
 ms.prod:  system-center-threshold
@@ -96,6 +96,3 @@ If there is a problem with the installation completing successfully, refer to th
 14. Click **Close** when the message "Setup is complete" appears.
 
 Repeat this procedure for each installation, such as for a web farm.
-
-
-

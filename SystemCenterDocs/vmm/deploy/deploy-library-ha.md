@@ -2,14 +2,17 @@
 title: Deploy the VMM library for high availability
 description: This article describes how to set up the VMM library in a highly available deployment
 author:  rayne-wiselman
+ms.author: raynew
 manager:  cfreemanwa
-ms.date:  2016-09-01
+ms.date:  2016-09-22
 ms.topic:  article
 ms.prod:  system-center-threshold
 ms.technology:  virtual-machine-manager
 ---
 
 # Deploy a highly available VMM library
+
+>Applies To: System Center 2016 - Virtual Machine Manager
 
 This article describes the steps for deploying a highly available System Center 2016 - Virtual Machine Manager (VMM) library. You set up a Windows failover cluster running the File Server role. Then you create file shares on the cluster and assign them as VMM library shares.
 
@@ -29,7 +32,7 @@ This procedure presumes you're setting up a single failover cluster with two or 
 3. In **Select destination server** click the server you want to configure for failover clustering. On Select features click **Failover Clustering**. Click **Add Feature** to install the failover cluster management tools.
 4. In **Confirm installation selections** click **Install**. A server restart isn't needed.
 5. Repeat for each server you want to add as a node in the file server cluster.
-6. After you have at least two nodes in the cluster you can run cluster validation tests (you'll need at least two nodes in the cluster. Open **Failover Cluster Manager** and under **Management** click **Validate Configuration**.
+6. After you have at least two nodes in the cluster you can run cluster validation tests (you'll need at least two nodes in the cluster). Open **Failover Cluster Manager** and under **Management** click **Validate Configuration**.
 7. In **Select Servers or a Cluster** specify the NetBIOS or FQDN of a node you're adding and click **Add**. In **Testing Options** click **Run all tests (recommended)**.
 8. In **Summary**, if the tests completed correctly click **Create the cluster now using the validated nodes**. Click **View Report** to troubleshoot any issues.
 9. In **Access Point for Administering the Cluster** specify the cluster name. For example **VMMLibrary**. When the cluster is created this name will be registered as the cluster computer object (CNO) in Active Directory. If you specify a NetBIOS name for the cluster the CNO is created in the same location where the computer objects for the cluster node reside (either the default Computers container or an OU). You can specify a different location by adding the distinguished OU name. For example CN=ClusterName, OU=Clusters,DC=Contoso.
