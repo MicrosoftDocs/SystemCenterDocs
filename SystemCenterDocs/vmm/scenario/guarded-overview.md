@@ -6,7 +6,7 @@ ms.author: raynew
 manager:  cfreeman
 ms.date:  2016-10-12
 ms.topic:  article
-ms.prod:  system-center-threshold
+ms.prod:  system-center-2016
 ms.technology:  virtual-machine-manager
 ---
 
@@ -48,4 +48,4 @@ VMM can be optionally deployed with guarded fabric to provide the following:
 
 ## Next steps
 
-[Provision guarded hosts in the VMM fabric](guarded-hosts.md)
+- [Provision guarded hosts in the VMM fabric](guarded-hosts.md)

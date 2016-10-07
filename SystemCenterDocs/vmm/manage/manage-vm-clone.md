@@ -3,10 +3,10 @@ title: Clone VMs from another VM in the VMM fabric
 description: This article describes how to clone VMs in the VMM fabric from another VM
 author:  rayne-wiselman
 ms.author: raynew
-manager:  cfreemanwa
+manager:  cfreeman
 ms.date:  2016-09-22
 ms.topic:  article
-ms.prod:  system-center-threshold
+ms.prod:  system-center-2016
 ms.technology:  virtual-machine-manager
 ---
 
@@ -29,7 +29,7 @@ This article describes how to create and deploy virtual machines by cloning exis
 
 ## Create a VM
 
-1.  Click **VMs and Services** > **Create Virtual Machine** >**Create Virtual Machine**.
+1.  Click **VMs and Services** > **Create Virtual Machine** > **Create Virtual Machine**.
 2. In **Create Virtual Machine Wizard** > **Select Source**, click **Use an existing virtual machine, VM template, or virtual hard disk** > **Browse**. Select an existing VM.
 3. In **Select Source**, click **Next**.
 4. In **Configure Hardware**, optionally configure any available settings. Then click **Next**.
@@ -78,4 +78,4 @@ This article describes how to create and deploy virtual machines by cloning exis
 
 ## Next steps
 
-[Manage the VM settings](manage-vm-settings.md)
+- [Manage the VM settings](manage-vm-settings.md)

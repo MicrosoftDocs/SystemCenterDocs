@@ -95,13 +95,13 @@ Before you try to add a subscription, it's a good idea to check a few things, su
 
 4.  Upload your certificate to Windows Azure:
 
-    1.  In the Azure Portal, in **Settings** > **Management Certificates**, click the **Upload** button. You"ll be prompted for your .cer file (certificate file).
+    1.  In the Azure Portal, in **Settings** > **Management Certificates**, click the **Upload** button. You'll be prompted for your .cer file (certificate file).
 
         For instructions on importing and exporting certificates and private keys, see [To import a certificate](http://social.technet.microsoft.com/wiki/contents/articles/2167.how-to-use-the-certificates-console.aspx#To_import_certificates) and [To export a certificate](http://social.technet.microsoft.com/wiki/contents/articles/2167.how-to-use-the-certificates-console.aspx#To_export_certificates) in "How to Use the Certificates Console."
 
     2.  Confirm that the uploaded certificate appears in the list of Management Certificates. Make note of the certificate thumbprint, as you will need this later when you run the **Add Azure Subscription Wizard**.
 
-5.  Import the Management Certificate to the Certificate Store on the computer you"ll be running the VMM console on.
+5.  Import the Management Certificate to the Certificate Store on the computer you'll be running the VMM console on.
 
     Make sure you import the certificate to the **Current User \ Personal** certificate store on the local computer.
 
@@ -110,7 +110,7 @@ Before you try to add a subscription, it's a good idea to check a few things, su
 ### <a name="BKMK_wizard"></a>Add Azure Subscription Wizard
 If you don't already have your Subscription ID and the thumbprint of the certificate, make sure you gather that information now. You can find both of these pieces of information at the **Azure Management Portal** on the **Settings** > **Management Certificates** page.
 
-**Figure 2: Service Management Certificate Details on the Azure Management Portal**
+
 
 To start the **Add Azure Subscription Wizard**, in VMM, click the Azure **Add Subscription** button. The wizard is a single page dialog box:
 
@@ -137,8 +137,6 @@ The **Azure Virtual Machines** view displays a list of the Role Instances in all
 ### Azure Virtual Machine Details Pane
 When an Azure instance is selected in the list, if you look below the list grid view, you can see the **Azure Virtual Machines** details pane. Additional useful information is displayed, such as **DNS name** and the **OS** installed on the instance.
 
-**Figure 7: Virtual machine details pane**
-
 ### Virtual Machine Actions
 When an individual virtual machine is selected from the list, a set of VM action buttons will appear in the ribbon. The following actions are available:
 
@@ -151,5 +149,6 @@ When an individual virtual machine is selected from the list, a set of VM action
 |Connect via RDP|Initiates a remote desktop session to the Host Name (DNS Name) of the instance.|
 
 ## See Also
-[Creating and deploying virtual machines in VMM](Creating-and-deploying-virtual-machines-in-VMM.md)
-[Creating Virtual Machine Role Templates by using VMM and Windows Azure Pack](Creating-Virtual-Machine-Role-Templates-by-using-VMM-and-Windows-Azure-Pack.md)
+
+- [Creating and deploying virtual machines in VMM](Creating-and-deploying-virtual-machines-in-VMM.md)
+- [Creating Virtual Machine Role Templates by using VMM and Windows Azure Pack](Creating-Virtual-Machine-Role-Templates-by-using-VMM-and-Windows-Azure-Pack.md)

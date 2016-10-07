@@ -3,10 +3,10 @@ title: Manage Storage Replica in VMM
 description: This article describes how to set up Storage Replica in the VMM fabric
 author:  rayne-wiselman
 ms.author: raynew
-manager:  cfreemanwa
+manager:  cfreeman
 ms.date:  2016-09-22
 ms.topic:  article
-ms.prod:  system-center-threshold
+ms.prod:  system-center-2016
 ms.technology:  virtual-machine-manager
 ---
 
@@ -170,4 +170,5 @@ If you want to stop replication you'll need to run this cmdlet at the source and
 
 
 ## See Also
-[Storage replica overview](https://aka.ms/storagereplica)
+
+- [Storage replica overview](https://aka.ms/storagereplica)

@@ -3,10 +3,10 @@ title: Provision a scale-out file server (SOFS) cluster from bare metal computer
 description: This article provides about provisioning an SOFS in the VMM fabric
 author:  rayne-wiselman
 ms.author: raynew
-manager:  cfreemanwa
+manager:  cfreeman
 ms.date:  2016-09-22
 ms.topic:  article
-ms.prod:  system-center-threshold
+ms.prod:  system-center-2016
 ms.technology:  virtual-machine-manager
 ---
 
@@ -99,7 +99,7 @@ In the physical computer profile, you can select to filter the drivers by tags, 
 4. In the VMM console > **Library** > **Library Servers**, expand the library server where the share is located, right-click the share, and then click **Refresh**. After the library refreshes, the folder should appear.
 5. Assign tags if required. In **Library**, expand the folder that you created to store the drivers, and click the folder that contains the driver package.
 6. In the **Physical Library Objects**, right-click the driver .inf file, and then click **Properties**.
-7. In the **Driver File Name Properties** > **Custom tags*,* enter custom tags separated by a semi-colon, or click **Select** to assign available tags or to create and assign new ones. If you click **Select**, and then click **New Tag**, you can change the name of the tag after you click **OK**. For example, if you added a network adapter driver file, you could create a tag that is named ServerModel NetworkAdapterModel, where ServerModel is the server model and NetworkAdapterModel is the network adapter model.
+7. In the **Driver File Name Properties** > **Custom tags**, enter custom tags separated by a semi-colon, or click **Select** to assign available tags or to create and assign new ones. If you click **Select**, and then click **New Tag**, you can change the name of the tag after you click **OK**. For example, if you added a network adapter driver file, you could create a tag that is named ServerModel NetworkAdapterModel, where ServerModel is the server model and NetworkAdapterModel is the network adapter model.
 
 ## Create a physical computer profile
 
@@ -108,7 +108,7 @@ Before you start, determine whether the physical computers use Extensible Firmwa
 1. Click **Library** > **Home** > **Create** > **Physical Computer Profile**.
 2. In the **New Physical Computer Profiles Wizard** > **Profile Description** type in a name and description and select **VM host**.
 3. In **OS Image** > **Virtual hard disk file** > **Browse**, click the generalized virtual hard disk that you added to the library share. By default, if the disk is dynamic VMM converts it to a fixed disk during host deployment. We recommend that for production servers you use a fixed disk to increase performance and help protect user data.
-4. In **Hardware Configuration** > **Management NIC** select the network adapter you'll use to communicate wtih VMM and whether to use DHCP or a static address. If you want to use Consistent Device Naming (CDN) for the adapter or configure logical switches and ports click **Physical Properties**. Click **Add ** to add the adapter.
+4. In **Hardware Configuration** > **Management NIC** select the network adapter you'll use to communicate wtih VMM and whether to use DHCP or a static address. If you want to use Consistent Device Naming (CDN) for the adapter or configure logical switches and ports click **Physical Properties**. Click **Add** to add the adapter.
 5. In **Disk** specify the partitioning scheme for the first disk. You can use GPT if the physical computer profile is EFI. In **Partition Information** select the volume label, whether to use all remaining free space or a specific size, and whether to designate the partition as the boot partition. You can also add a new disk or partition. During deployment VMM will copy the virtual hard disk file to the boot partition and automatically create a system partition on the same disk.
 6. In **Driver filter** filter the driver filters that will be applied to the operating system during host deployment.  You can filter by Plug and Play ID or by specific tags. If you select to filter drivers with matching tags make sure you've added driver files to the library and assigned corresponding tags.
 7. In **OS Configuration** specify the domain that the Hyper-V host or cluster should join, specify local admin credentials and identity information. Add the product key for installation, and set the time zone. In GUIDRunOnce you can specify one or more commands that will run when the user logs on to the Hyper-V host for the first time.

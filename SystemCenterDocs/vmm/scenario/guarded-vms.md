@@ -6,7 +6,7 @@ ms.author: raynew
 manager:  cfreeman
 ms.date:  2016-10-12
 ms.topic:  article
-ms.prod:  system-center-threshold
+ms.prod:  system-center-2016
 ms.technology:  virtual-machine-manager
 ---
 
@@ -68,4 +68,4 @@ When you complete the wizard, VMM creates a new shielded VM from the disk or tem
 
 ## Next steps
 
-[Manage virtual machine settings](../manage/manage-vm-settings.md)
+- [Manage virtual machine settings](../manage/manage-vm-settings.md)
