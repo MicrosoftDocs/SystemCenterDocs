@@ -5,7 +5,7 @@ ms.topic:  article
 author:  bwren
 ms.prod:  system-center-threshold
 keywords:  
-ms.date:  2016-08-18
+ms.date:  2016-10-12
 title:  Install Orchestrator
 ms.technology:  orchestrator
 ms.assetid:  b5fb194b-d73b-4d75-8077-b06f578e0943
@@ -25,7 +25,7 @@ For information about how to install System Center 2016 - Orchestrator at the co
 
     Provides detailed information about how to install each System Center 2016 - Orchestrator feature.
 
--   [How to install Orchestrator on a single computer](How-to-install-Orchestrator-from-the-command-prompt.md)
+-   [How to install Orchestrator on a single computer](How-to-install-orchestrator-on-a-single-computer.md)
 
     Provides detailed information about how to install all features of System Center 2016 - Orchestrator on a single computer.
 
