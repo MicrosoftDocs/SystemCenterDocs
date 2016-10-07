@@ -65,5 +65,5 @@ Host groups are hierarchical. For example, you can create a child host groups of
 
 ## Next steps
 
-- [Learn about](../deploy/deploy-library-ha.md) deploying the library in high availability mode if required.
+- [Learn about deploying the library in high availability mode](../deploy/deploy-library-ha.md) if required.
 - [Manage the VMM library](../manage/manage-library-overview.md)
