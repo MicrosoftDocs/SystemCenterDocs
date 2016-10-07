@@ -145,46 +145,19 @@ The following list includes the workloads that are supported by this feature.
 - Windows Service Manager 2012
 - Windows TFS 2013
 
-### Windows Server 2008 R2 version
+### Windows Server 2016
 
-- Active Directory Certificate Services
+- Active Directory Certificate Service
 - Active Directory Domain Services
-- Active Directory Federation Services
-- Active Directory Lightweight Directory Services
-- Active Directory Right Management Services
-- Branch Cache
-- DHCP
-- DNS
-- File Services
-- Hyper-V
-- IIS 2008 R2
-- Message Queueing
-- Network Load Balancing
-- Print Services
-- Remote Desktop Service
-- Routing Remote Services
-
-### Windows Server 2012 
-
-- Active Directory Certificate Services
-- Active Directory Domain Services
-- Active Directory Federation Services
-- AD Right Management Services
-- Branch Cache
-- Cluster
-- DHCP
-- DNS
-- File Services
-- Hyper-V
+- Active Directory Federation Service
+- Active Directory Right Management Service
+- DHCP Server
+- DNS Server
+- Fail Over Clustering
+- File Services 
 - IIS
-- Message Queueing
 - Network Load Balancing
-- Print Services
-- Remote Access
-- Remote Desktop Services
-- Windows Deployment Services
-- Windows Server backup
-- Windows Update Services
+- Print Server
 
 ### Windows Server 2012 R2 
 
@@ -209,19 +182,46 @@ The following list includes the workloads that are supported by this feature.
 - Windows Deployment Services
 - Windows Update Services
 
-### Windows Server 2016
+### Windows Server 2012 
 
-- Active Directory Certificate Service
+- Active Directory Certificate Services
 - Active Directory Domain Services
-- Active Directory Federation Service
-- Active Directory Right Management Service
-- DHCP Server
-- DNS Server
-- Fail Over Clustering
-- File Services 
+- Active Directory Federation Services
+- AD Right Management Services
+- Branch Cache
+- Cluster
+- DHCP
+- DNS
+- File Services
+- Hyper-V
 - IIS
+- Message Queueing
 - Network Load Balancing
-- Print Server
+- Print Services
+- Remote Access
+- Remote Desktop Services
+- Windows Deployment Services
+- Windows Server backup
+- Windows Update Services
+
+### Windows Server 2008 R2 version
+
+- Active Directory Certificate Services
+- Active Directory Domain Services
+- Active Directory Federation Services
+- Active Directory Lightweight Directory Services
+- Active Directory Right Management Services
+- Branch Cache
+- DHCP
+- DNS
+- File Services
+- Hyper-V
+- IIS 2008 R2
+- Message Queueing
+- Network Load Balancing
+- Print Services
+- Remote Desktop Service
+- Routing Remote Services
 
 ## Next steps
 
