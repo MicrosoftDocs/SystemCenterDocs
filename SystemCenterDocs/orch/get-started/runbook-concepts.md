@@ -34,7 +34,7 @@ The topics in this section provide detailed information about the attributes and
 
 ## Other resources for this product  
 
--   [Using Runbooks in System Center 2016 - Orchestrator](../get-started/using-runbooks-in-system-center-2016---orchestrator.md))  
+-   [Using Runbooks in System Center 2016 - Orchestrator](../get-started/using-runbooks-in-system-center-2016---orchestrator.md)  
 
 -   [Design and Build Runbooks](../manage/design-and-build-runbooks.md)  
 

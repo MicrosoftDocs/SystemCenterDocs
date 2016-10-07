@@ -12,6 +12,9 @@ ms.assetid:  7c72117a-8742-4a68-90d1-00c6d9dcd012
 ---
 
 # How to Install Orchestrator on a Single Computer
+
+>Applies To: System Center 2016 - Orchestrator
+
 Use the following steps to install all Orchestrator features on a single computer.
 
 ### To install Orchestrator on a single computer
@@ -95,7 +98,7 @@ Use the following steps to install all Orchestrator features on a single compute
 
 ### To install the Service Management Automation web service
 
-1.  Follow the steps that are detailed in [Web Service Installation](http://go.microsoft.com/fwlink/p/?LinkID=309098)
+1.  Follow the steps that are detailed in the [Web Service Installation](http://go.microsoft.com/fwlink/p/?LinkID=309098).
 
 ### To enable network discovery for the Runbook Designer
 
@@ -109,5 +112,7 @@ Use the following steps to install all Orchestrator features on a single compute
 
 ## See Also
 [Install Individual Orchestrator Features](How-to-install-orchestrator-features.md)
+
 [Orchestrator Security Planning](assetId:///358c5344-8649-4d40-a53c-37f8e70e58f6)
+
 [TCP Port Requirements](assetId:///dc879c86-4855-4fd0-808d-06f64a9657ca)
