@@ -35,7 +35,7 @@ Use the following steps to prepare the Windows 2008 R2 image.
 
 1.  Install Windows Server 2008 R2.  
 
-2.  Install .NET Framework 4 from [http:\/\/go.microsoft.com\/fwlink\/?LinkId\=246814](http://go.microsoft.com/fwlink/?LinkId=246814). \(This is only required for the web feature components of Orchestrator.\)  
+2.  Install .NET Framework 4 from [http://go.microsoft.com/fwlink/?LinkId=246814](http://go.microsoft.com/fwlink/?LinkId=246814). \(This is only required for the web feature components of Orchestrator.\)  
 
 ## <a name="SCO_sysprep2"></a>Create the Orchestrator answer file for sysprep  
 Before you can use the Sysprep tool to install Orchestrator on Windows Server 2008 R2, install Orchestrator as part of the Sysprep process using an answer file.  
