@@ -1,3 +1,3 @@
 ---
-redirect_url: /system-center-docs/System-Center
+redirect_url: /system-center-docs/system-center
 ---
