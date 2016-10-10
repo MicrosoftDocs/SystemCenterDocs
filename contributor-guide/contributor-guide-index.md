@@ -25,7 +25,9 @@
 
 - [Linking guidelines](https://github.com/Azure/azure-content-pr/blob/master/contributor-guide/create-links-markdown.md)
 
-- [Retire or rename an article](https://github.com/Azure/azure-content-pr/blob/master/contributor-guide/retire-or-rename-an-article.md)
+- [Retire or rename an article](https://github.com/Microsoft/WindowsServerDocs-pr/blob/master/Contributor-guide/rename-or-retire.md)
+
+    This is a WindowsServerDocs-pr based article. You will need to modify your work to incorporate SystemCenterDocs-pr as appropriate.
 
 - [How to undo almost anything with Git (GitHub blog)](https://github.com/blog/2019-how-to-undo-almost-anything-with-git)
 
