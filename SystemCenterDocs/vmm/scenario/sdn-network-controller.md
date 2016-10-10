@@ -1,13 +1,13 @@
 ---
 title: Set up an SDN network controller in the VMM fabric
-description: This article describes how to set up a Software Defined Network infrastructure in the VMM fabric
-author:  rayne-wiselman
+description: This article describes how to set up a Software Defined Network (SDN) infrastructure in the System Center VMM fabric.
+author: rayne-wiselman
 ms.author: raynew
-manager:  cfreeman
-ms.date:  2016-10-12
-ms.topic:  article
-ms.prod:  system-center-threshold
-ms.technology:  virtual-machine-manager
+manager: cfreeman
+ms.date: 10-12-2016
+ms.topic: article
+ms.prod: system-center-threshold
+ms.technology: virtual-machine-manager
 ---
 
 # Set up an SDN network controller in the VMM fabric
@@ -264,7 +264,7 @@ Select **Microsoft** for the manufacturer and for model select **Microsoft netwo
 
 You can validate the network controller deployment. To do this you'll create a network controller managed **HNV provider** network (the backend network)  and configure two tenant VM networks on top of it. You'll also test connectivity between two tenant VMs deployed on different hosts to ensure the network controller is deployed correctly.
 
-As a quick validation step, you can also try to access the URL `https://<RESTIP-or-FQDN>/networking/v1/servers`. For example: https://10.184.108.56/networking/v1/servers. This URL shows a JSON file with details about the server objects managed by the network controller. If the network controller hasn't onboarded successfully, this URL won't be accessible.
+As a quick validation step, you can also try to access the URL `https://<RESTIP-or-FQDN>/networking/v1/servers`. This URL shows a JSON file with details about the server objects managed by the network controller. If the network controller hasn't onboarded successfully, this URL won't be accessible.
 
 ### Create the HNV provider network for tenant VM connectivity
 

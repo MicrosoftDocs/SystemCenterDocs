@@ -1,16 +1,16 @@
 ---
 title: Provision guarded hosts in VMM
 description: Describes how to add and provision guarded hosts in the VMM fabric
-author:  rayne-wiselman
+author: rayne-wiselman
 ms.author: raynew
-manager:  cfreeman
-ms.date:  2016-10-12
-ms.topic:  article
-ms.prod:  system-center-2016
-ms.technology:  virtual-machine-manager
+manager: cfreeman
+ms.date: 10-12-2016
+ms.topic: article
+ms.prod: system-center-2016
+ms.technology: virtual-machine-manager
 ---
 
-# Scenario: Provision guarded hosts in VMM
+# Provision guarded hosts in VMM
 
 >Applies To: System Center 2016 - Virtual Machine Manager
 
@@ -24,6 +24,8 @@ There are a couple of ways to set up guarded Hyper-V hosts in the VMM fabric.
     - An existing guarded host
     - An existing Windows Server computer (with or without the Hyper-V role)
     - A bare-metal computer
+
+> Note that setting up guarded hosts in a production environment isn't supported right now.
 
 You set up guarded hosts in the VMM fabric as follows:
 
@@ -39,7 +41,7 @@ You set up guarded hosts in the VMM fabric as follows:
 
 Make sure you have the following:
 
-- **HGS server**: You should have the HGS server deployed. [Learn more](https://technet.microsoft.com/windows-server-docs/security/guarded-fabric-setting-up-the-host-guardian-service-hgs)
+- **HGS server**: You should have the HGS server deployed. [Learn more](https://technet.microsoft.com/windows-server-docs/security/guarded-fabric-shielded-vm/guarded-fabric-setting-up-the-host-guardian-service-hgs)
 - **Operating system**: Host computers must run Windows Server 2016 Datacenter edition
 - **Role and features**: Host servers should be running the Hyper-V role and the Host Guardian Hyper-V Support feature. Host Guardian Hyper-V Support lets the host communicate with HGS to attest to its health and request keys for shielded VMs.
 - **TPM-attestation**: If you’ve configured HGS to use TPM-attestation, Hyper-V hosts must have:
@@ -82,7 +84,7 @@ VMM checks that the host passes attestation when you add it, and every time that
     b.	If you want provision a Windows Server (with or without the Hyper-V role) as a guarded Hyper-V host, [add it to the fabric](../manage/manage-compute-add-existing-servers.md)
     c.	If you want to provision a Hyper-V host from a bare-metal computer, [follow these prerequisites and instructions](../manage/manage-compute-bare-metal-hyper-v.md). Note that you can deploy the host as guarded when you provision it (Add Resource Wizard > **OS Settings** > **Configure as guarded host**.
 2.	In the VMM console, click **Settings** > **Host Guardian Service Settings**.
-3.	Configure the global HGS settings, including the attestation server URL and key protection server URL. Specify a path on which code integrity policies are located (if relevant), and download the [shielding helper VHD](https://technet.microsoft.com/windows-server-docs/security/guarded-fabric-vm-shielding-helper-vhd).
+3.	Configure the global HGS settings, including the attestation server URL and key protection server URL. Specify a path on which code integrity policies are located (if relevant), and download the [shielding helper VHD](https://technet.microsoft.com/windows-server-docs/security/guarded-fabric-shielded-vm/guarded-fabric-vm-shielding-helper-vhd).
 
     ![HGS settings](../media/guarded-hgs-settings.png)
 
