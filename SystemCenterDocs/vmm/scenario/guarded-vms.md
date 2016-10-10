@@ -45,6 +45,7 @@ You set up shielded VMs in the VMM fabric as follows:
 ## Enable shielding for existing VM
 
 You can enable shielding for a VM currently running on a host in the VMM fabric that isn’t guarded.
+
 1.	Ensure you have all the prerequisites in place before you start.
 2.	Take the VM offline.
 3.	We recommend that you enable BitLocker on all disks attached to the VM before moving it to the guarded host.
