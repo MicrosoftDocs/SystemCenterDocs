@@ -52,30 +52,30 @@ DPM works seamlessly with the Hyper-V Volume Shadow Copy Services (VSS)  writer 
 
 -   All volumes must be NTFS
 
--   The VSS storage assigment for the volumes shouldn't be modified.
+-   The VSS storage assignment for the volumes shouldn't be modified.
 
 -   The virtual machine must be running, and if the virtual machine is in a cluster the cluster resource group should be online. A Shadow Storage assignment of a volume inside the virtual machine mustn't be explicitly set to a different volume other than itself.
 
 If these conditions aren't met DPM will perform an offline backup where the virtual machine is paused and placed in a saved state while the snapshot is taken, and then the virtual machine is resumed. This means the virtual machine is unavailable during the backup, usually a short period of less than a minute for many environments.
 
-## Backup process
-DPM performs backup with VSS as follows:
+## How the Backup process works
+DPM performs backup with VSS as follows. The steps in this description are numbered to help with clarity.
 
-1.  The DPM block-based synchronization engine makes an initial copy of the protected virtual machine and ensures that the copy of the virtual machine is complete and consistent.
+1. The DPM block-based synchronization engine makes an initial copy of the protected virtual machine and ensures that the copy of the virtual machine is complete and consistent.
 
-2.  After the initial copy is made and verified, DPM captures backups by using the Hyper-V VSS writer. The VSS writer provides a data-consistent set of disk blocks that are synchronized with the DPM server. This approach provides the benefit of a "full backup" with the DPM server while it minimizes the amount of backup data that have to be transferred across the network.
+2. After the initial copy is made and verified, DPM uses the Hyper-V VSS writer to capture backups. The VSS writer provides a data-consistent set of disk blocks that are synchronized with the DPM server. This approach provides the benefit of a "full backup" with the DPM server, while minimizing the backup data that must be transferred across the network.
 
-3.  The DPM protection agent on a server that is running Hyper-V uses the existing Hyper-V APIs to determine whether a protected virtual machine also supports VSS.
+3. The DPM protection agent on a server that is running Hyper-V, uses the existing Hyper-V APIs to determine whether a protected virtual machine also supports VSS.
 
-    -   If a virtual machine complies with the requirements for online backup and has the Hyper-V integration services component installed, then the Hyper-V VSS writer recursively forwards the VSS request through to all VSS-aware processes on the virtual machine. This operation occurs without the DPM protection agent being installed on the virtual machine. This recursive VSS request allows the Hyper-V VSS writer to ensure that disk write operations are synchronized so that a VSS snapshot is captured without the loss of data.
+    -   If a virtual machine complies with the requirements for online backup and has the Hyper-V integration services component installed, then the Hyper-V VSS writer recursively forwards the VSS request through to all VSS-aware processes on the virtual machine. This operation occurs without the DPM protection agent being installed on the virtual machine. The recursive VSS request allows the Hyper-V VSS writer to ensure that disk- write operations are synchronized so that a VSS snapshot is captured without the loss of data.
 
-        The Hyper-V integration services component invokes the Hyper-V VSS writer in Volume Shadow Copy Services (VSS) on virtual machines to ensure that their application data is in a consistent state.
+    The Hyper-V integration services component invokes the Hyper-V VSS writer in Volume Shadow Copy Services (VSS) on virtual machines to ensure that their application data is in a consistent state.
 
     -   If the virtual machine doesn't comply with online backup requirements, DPM automatically uses the Hyper-V APIs to pause the virtual machine before they capture data files.
 
-4.  After the initial baseline copy of the virtual machine synchronizes with the DPM server, all changes that are made to the virtual machine resources are captured in a new recovery point. The recovery point represents the consistent state of the virtual machine at a specific time. Recovery point captures can occur at least one time a day. When a new recovery point is created, DPM uses block-level replication in conjunction with the Hyper-V VSS writer to determine which blocks have been altered on the server that is running Hyper-V after the last recovery point was created. These data blocks are then transferred to the DPM server and are applied to the replica of the protected data.
+4. After the initial baseline copy of the virtual machine synchronizes with the DPM server, all changes that are made to the virtual machine resources are captured in a new recovery point. The recovery point represents the consistent state of the virtual machine at a specific time. Recovery point captures can occur at least one time a day. When a new recovery point is created, DPM uses block-level replication in conjunction with the Hyper-V VSS writer to determine which blocks have been altered on the server that is running Hyper-V after the last recovery point was created. These data blocks are then transferred to the DPM server and are applied to the replica of the protected data.
 
-5.  The DPM server uses VSS on the volumes that host recovery data so that multiple shadow copies are available. Each of these shadow copies provides a separate recovery. VSS recovery points are stored on the DPM server. The temporary copy that is made on the server that is running Hyper-V is only stored for the duration of the DPM synchronization.
+5.  The DPM server uses VSS on the volumes that host recovery data so that multiple shadow copies are available. Each of these shadow copies provides a separate recovery. VSS recovery points are stored on the DPM server. The temporary copy that is made on the server running Hyper-V, is only stored for the duration of the DPM synchronization.
 
 ## Backup prerequisites
 These are the prerequisites for backing up
@@ -91,20 +91,17 @@ Hyper-V virtual machines with DPM.
 
 ## Back up virtual machines
 
-1.  Set up your [DPM server](../get-started/get-ready-to-deploy-dpm-servers.md) and [your storage](../get-started/prepare-data-storage.md).
-  When setting up your storage, use these storage capacity guidelines.
-
-  |Guideline|Size/Number|
-  |Average virtual machine size|100 GB|
-  |Number of virtual machines per DPM server|800|
-  |Total size of 800 VMs|80 TB|
-  |Required space for backup storage|80 TB|
+1.  Set up your [DPM server](../get-started/get-ready-to-deploy-dpm-servers.md) and [your storage](../get-started/prepare-data-storage.md). When setting up your storage, use these storage capacity guidelines.
+    - Average virtual machine size - 100 GB
+    - Number of virtual machines per DPM server - 800
+    - Total size of 800 VMs - 80 TB
+    - Required space for backup storage - 80 TB
 
 2.  Set up the DPM protection agent on the Hyper-V server or Hyper-V cluster nodes. If you're doing guest-level backup you'll install the agent on the VMs you want to back up at the guest-level.
 
 3. In  the DPM Administrator console click **Protection** > **Create protection group** to open the **Create New Protection Group** wizard.
 
-4. On the **Select Group Members** page, select the VMs you want to protect from the Hyper-V host servers on which they're located. We recommend you put all VMs that will have the same protection policy into the same protection group. You can enable colocation for efficient use of space. Colocation allows you to locate data from different protection groups on the same disk or tape storage so that multiple data sources have a single replica and recovery point volume.
+4. On the **Select Group Members** page, select the VMs you want to protect from the Hyper-V host servers on which they're located. We recommend you put all VMs that will have the same protection policy into one protection group. To make efficient use of space, enable colocation. Colocation allows you to locate data from different protection groups on the same disk or tape storage, so that multiple data sources have a single replica and recovery point volume.
 
 5. On the **Select Data Protection Method** page, specify a protection group name. Select **I want short-term protection using Disk** and select **I want online protection** if you want to back up data to Azure using the Azure Backup service. If this option isn't available complete the wizard to create the group and then modify the protection group settings to select this option. You can store data in Azure for up to 3360 days.
 
@@ -112,7 +109,7 @@ Hyper-V virtual machines with DPM.
 
 6. In **Specify Short-Term Goals** > **Retention range**, specify how long you want to retain disk data. In **Synchronization frequency** specify how often incremental backups of the data should run. Alternatively, instead of selecting an interval for incremental backups you can enable **Just before a recovery point**. With this setting enabled DPM will run an express full back just before each scheduled recovery point.
 
-    - If you're protecting application workloads, recovery points are create in accordance with Synchronization frequency, provided the application supports incremental backups. If it doesn't then DPM runs an express full backup, instead of an incremental backup, and creates recovery points in accordance with the express backup schedule.
+    - If you're protecting application workloads, recovery points are created in accordance with Synchronization frequency, provided the application supports incremental backups. If it doesn't then DPM runs an express full backup, instead of an incremental backup, and creates recovery points in accordance with the express backup schedule.
 
     -   If you enable long-term storage to tape, in **Specify Long-Term Goals** > **Retention range**, specify how long you want to keep your tape data (1-99 years).
         In Frequency of backup  select the backup frequency that you want.
@@ -122,9 +119,9 @@ Hyper-V virtual machines with DPM.
     - When the retention range is 1-11 months, you can select backups to occur daily, weekly, bi-weekly, or monthly.
         When the retention range is 1-4 weeks, you can select backups to occur daily or weekly.
 
-    - On a stand-alone tape drive, for a single protection group, DPM uses the same tape for daily backups until there is insufficient space on the tape. Data resources will be colocated on the tape if you enabled colocation.
+    - On a stand-alone tape drive, for a single protection group, DPM uses the same tape for daily backups until there is insufficient space on the tape. If you enabled colocation, data resources are colocated on the tape.
 
-    - If you configured long-term storage to tape, on the **Select Tape and Library Details** page, specify the tape and library that'll be used for back up of this protection group. You can also specify whether to compress or encrypt the backup data.
+    - If you configured long-term storage to tape, on the **Select Tape and Library Details** page specify the tape and library that'll be used for back up of this protection group. You can also specify whether to compress or encrypt the backup data.
 
 7.  In the **Review disk allocation** page review the storage pool disk space allocated for the protection group.
 
@@ -134,107 +131,135 @@ Hyper-V virtual machines with DPM.
 
 9. On the **Consistency Check Options** page, select how you want to automate consistency checks. You can enable a check to run only when replica data becomes inconsistent, or according to a schedule. If you don't want to configure automatic consistency checking, you can run a manual check at any time by right-clicking the protection group and selecting **Perform Consistency Check**.
 
-    After you create the protection group initial replication of the data occurs in line with the method you selected. After initial replication backup takes place in line with the protection group settings. If you need to recover backed up data note the following:
+    After you create the protection group, initial replication of the data occurs in accordance with the method you selected. After initial replication, each backup takes place in line with the protection group settings. If you need to recover backed up data note the following:
 
 ## <a name="BKMK_Live"></a>Back up virtual machines configured for live migration
-When virtual machines are involved in live migration DPM can continue to protect them as long as the DPM protection agent is installed on the Hyper-V host.  The way in which DPM protects them will depend on the type of live migration involved.
+When virtual machines are involved in live migration, DPM continues to protect the virtual machines as long as the DPM protection agent is installed on the Hyper-V host. The way in which DPM protects the virtual machines depends on the type of live migration involved.
 
--   **Live migration within a cluster** - When a virtual machine is migrated within a cluster DPM detects the migration, and backs up the virtual machine from the new cluster node without any requirement for user intervention. Because the storage location hasn't changed, DPM continues with express full backups. In a scaled scenario with two DPM servers to protect the cluster, a virtual machine that is protected by DPM1 continues to be protected by DPM1, no matter where the virtual machine is migrated.
+**Live migration within a cluster** - When a virtual machine is migrated within a cluster DPM detects the migration, and backs up the virtual machine from the new cluster node without any requirement for user intervention. Because the storage location hasn't changed, DPM continues with express full backups. In a scaled scenario with two DPM servers to protect the cluster, a virtual machine that is protected by DPM1 continues to be protected by DPM1, no matter where the virtual machine is migrated.
 
--   **Live migration outside the cluster** - When a virtual machine is migrated between stand-alone servers, different clusters, or between a stand-alone server and a cluster, DPM detects the migration, and can back up the virtual machine without user intervention.
+**Live migration outside the cluster** - When a virtual machine is migrated between stand-alone servers, different clusters, or between a stand-alone server and a cluster, DPM detects the migration, and can back up the virtual machine without user intervention.
 
-But there are some requirements:
+### Requirements for maintaining protection
 
-    -   The Hyper-V hosts for the virtual machines must be located in a System Center VMM cloud on a VMM server running at least System Center 2012 with SP1.
+The following are requirements for maintaining protection during live migration:
 
-    -   The DPM protection agent must be installed on all Hyper-V hosts.
+- The Hyper-V hosts for the virtual machines must be located in a System Center VMM cloud on a VMM server running at least System Center 2012 with SP1.
 
-    -   DPM servers must be connected to the VMM server. All the Hyper-V host servers in the VMM cloud must also be connected to the DPM servers
+- The DPM protection agent must be installed on all Hyper-V hosts.
 
-        This allows DPM to communicate with the  VMM server to find out on which Hyper-V host server the virtual machine is currently running and to create a new backup from that Hyper-V server.  If a connection can't be established to the Hyper-V server the backup fails with a message that the DPM protection agent is unreachable.
+- DPM servers must be connected to the VMM server. All Hyper-V host servers in the VMM cloud must also be connected to the DPM servers. This allows DPM to communicate with the VMM server so DPM can find out on which Hyper-V host server the virtual machine is currently running, and to create a new backup from that Hyper-V server. If a connection can't be established to the Hyper-V server, the back up fails with a message that the DPM protection agent is unreachable.
 
-    -   All DPM servers, VMM servers, and Hyper-V host servers should be in the same domain.
+- All DPM servers, VMM servers, and Hyper-V host servers must be in the same domain.
 
-Note the following for  backup during live migration:
+### Details about live migration
 
--   Live migration protection doesn't support backup to tape.
+Note the following for backup during live migration:
 
--   If a live migration transfers storage, DPM performs a full consistency check of the virtual machine, and then continues with express full backups. When live migration of storage occurs, Hyper-V reorganizes the virtual hard disk (VHD) or VHDX and therefore there is a one-time spike in the size of DPM backup data.
+- Live migration protection doesn't support backup to tape.
 
--   You'll need to turn on auto-mount on the virtual machine host to enable virtual protection, and disable TCP Chimney Offload.
+- If a live migration transfers storage, DPM performs a full consistency check of the virtual machine, and then continues with express full backups. When live migration of storage occurs, Hyper-V reorganizes the virtual hard disk (VHD) or VHDX which causes a one-time spike in the size of the DPM backup data.
 
--   If you want to change the default port of 6070 used by DPM to host the DPM-VMM Helper Service change the registry. Navigate to HKLM\Software\Microsoft\Microsoft Data Protection Manager\Configuration. Create a 32-bit DWORD value: DpmVmmHelperServicePort, and write the updated port number as part of the registry key.
-    Open <Install directory>\Microsoft System Center 2012\DPM\DPM\VmmHelperService\VmmHelperServiceHost.exe.config and change the port number from 6070 to the new port. For example: <add baseAddress="net.tcp://localhost:6080/VmmHelperService/" \/>
-    Restart the DPM-VMM Helper service and restart the DPM service.
+- On the virtual machine host, turn on auto-mount to enable virtual protection, and disable TCP Chimney Offload.
 
-Set up protection as follows:
+- DPM uses port 6070 as the default port for hosting the DPM-VMM Helper Service. To change the registry:
 
--   Set up DPM and storage, and install the DPM protection agent on every Hyper-V host server or cluster node in the VMM cloud. If you're using SMB storage in a cluster, install the DPM protection able on all cluster nodes.
+    1. Navigate to **HKLM\Software\Microsoft\Microsoft Data Protection Manager\Configuration**.
+    2. Create a 32-bit DWORD value: DpmVmmHelperServicePort, and write the updated port number as part of the registry key.
+    3.  Open ```<Install directory>\Microsoft System Center 2012\DPM\DPM\VmmHelperService\VmmHelperServiceHost.exe.config```, and change the port number from 6070 to the new port. For example: ```<add baseAddress="net.tcp://localhost:6080/VmmHelperService/" />```
+    4. Restart the DPM-VMM Helper service, and restart the DPM service.
 
--   Install the VMM console as a client component on the DPM server so that DPM can communicate with the VMM server. The console should be the same version as that running on the VMM server.
+### Set up protection for live migration
 
--   Assign the  DPMMachineName$ account as a read-only administrator account on the VMM management server.
+To set up protection for live migration:
 
--   Connect all Hyper-V host servers to all DPM server with the  Set-DPMGlobalProperty PowerShell command .The cmdlet accepts multiple DPM server names.  Use the format: `Set-DPMGlobalProperty -dpmservername <dpmservername> -knownvmmservers <vmmservername>`. For more information see [Set-DPMGlobalProperty](http://technet.microsoft.com/library/hh881752.aspx).
+1. Set up the DPM server and its storage, and install the DPM protection agent on every Hyper-V host server or cluster node in the VMM cloud. If you're using SMB storage in a cluster, install the DPM protection agent on all cluster nodes.
 
--   After all virtual machines running on the Hyper-V hosts in the VMM clouds are discovered in VMM, set up a protection group and add virtual machines you want to protect.  Note that automatic consistency check should be enabled at the protection group level for protection under virtual machine mobility scenarios.
+2. Install the VMM console as a client component on the DPM server so that DPM can communicate with the VMM server. The console should be the same version as the one running on the VMM server.
 
--   After settings are configured, when a virtual machine migrates from one cluster to another, all backups continue as expected. You can verify live migration is enabled as expected as follows:
+3. Assign the DPMMachineName$ account as a read-only administrator account on the VMM management server.
 
-    1.  Check the DPM-VMM Helper Service is running. If it isn't start it.
+4. Connect all Hyper-V host servers to all DPM servers with the `Set-DPMGlobalProperty` PowerShell cmdlet. The cmdlet accepts multiple DPM server names. Use the format: `Set-DPMGlobalProperty -dpmservername <dpmservername> -knownvmmservers <vmmservername>`. For more information see [Set-DPMGlobalProperty](http://technet.microsoft.com/library/hh881752.aspx).
 
-    2.  Open Microsoft SQL Server Management Studio and connect to the instance that hosts the DPM database (DPMDB). On DPMDB run the following query: `SELECT TOP 1000 [PropertyName] ,[PropertyValue] FROM[DPMDB].[dbo].[tbl_DLS_GlobalSetting]`
+5. After all virtual machines running on the Hyper-V hosts in the VMM clouds are discovered in VMM, set up a protection group and add the virtual machines you want to protect. Note that automatic consistency checks should be enabled at the protection group level for protection under virtual machine mobility scenarios.
 
-        This query contains a property, called `KnownVMMServer`. This value should be the same as the value that you provided with the `Set-DPMGlobalProperty` cmdlet.
+6. After the settings are configured, when a virtual machine migrates from one cluster to another, all backups continue as expected. You can verify live migration is enabled as expected as follows:
 
-    3.  Run the following query to validate the *VMMIdentifier* parameter in the `PhysicalPathXML` for a particular virtual machine. Replace `VMName` with the name of the virtual machine.
+    1. Check the DPM-VMM Helper Service is running. If it isn't start it.
+
+    2. Open Microsoft SQL Server Management Studio and connect to the instance that hosts the DPM database (DPMDB). On DPMDB run the following query: `SELECT TOP 1000 [PropertyName] ,[PropertyValue] FROM[DPMDB].[dbo].[tbl_DLS_GlobalSetting]`.
+
+        This query contains a property, called `KnownVMMServer`. This value should be the same value you provided with the `Set-DPMGlobalProperty` cmdlet.
+
+    3. Run the following query to validate the *VMMIdentifier* parameter in the `PhysicalPathXML` for a particular virtual machine. Replace `VMName` with the name of the virtual machine.
 
         `select cast(PhysicalPath as XML) from tbl_IM_ProtectedObject where DataSourceId in (select datasourceid from tbl_IM_DataSource where DataSourceName like '%<VMName>%')`
 
     4.  Open the .xml file that this query returns and validate that the *VMMIdentifier* field has a value.
 
 
-**Run manual migration** - After you've completed the steps migration is enabled after the DPM Summary Manager job runs. By default, this job starts at midnight and runs every morning. If you want to run a manual migration in the meantime to check everything is working as expected, do the following:
+### Run manual migration
 
-1.  Open SQL Server Management Studio and connect to the instance that hosts DPMDB.
+After you complete the steps in the previous sections, and the DPM Summary Manager job completes, migration is enabled. By default, this job starts at midnight and runs every morning. If you want to run a manual migration, to check everything is working as expected, do the following:
 
-2.  Run the following query: `select * from tbl_SCH_ScheduleDefinition where JobDefinitionID='9B30D213-B836-4B9E-97C2-DB03C3EB39D7'`. Note that the query returns the **ScheduleID**.
+1. Open SQL Server Management Studio and connect to the instance that hosts the DPM database.
 
-3.  In SQL Server Management Studio, expand **SQL Server Agent**, and then expand **Jobs**. Right-click the **ScheduleID** that you noted, and select **Start Job at Step**.
+2. Run the following query: `select * from tbl_SCH_ScheduleDefinition where JobDefinitionID='9B30D213-B836-4B9E-97C2-DB03C3EB39D7'`. This query returns the **ScheduleID**. Note this ID as you will use it in the next step.
+
+3. In the SQL Server Management Studio, expand **SQL Server Agent**, and then expand **Jobs**. Right-click **ScheduleID** that you noted, and select **Start Job at Step**.
 
 Note that backup performance is affected when the job runs. The size and scale of your deployment determines how much time the job takes to finish.
 
+
 ## <a name="BKMK_Replica"></a>Back up replica virtual machines
-You can back up replica virtual machines on a secondary server if DPM is running Windows Server 2012 R2. This is useful for a couple of reasons:
 
--   Reduces the impact of backups on running workload - Taking a backup of a virtual machine incurs some overhead as a snapshot is created. By offloading the backup process to a secondary remote site, the running workload is no longer impacted by the backup operation. Obviously this is applicable only to deployments where the backup copy is stored on a remote site. For example, you might take daily backups and store data locally to ensure quick restore times, but take monthly or quarterly backups from replica virtual machines stored remotely for long-term retention.
+If DPM is running on Windows Server 2012 R2 or greater, then you can back up replica virtual machines on a secondary server. This is useful for several reasons:
 
--   Saves bandwidth - In a typical remote branch office/headquarters deployment you'll need an appropriate amount of bandwidth is provisioned by administrators to transfer backup data between sites. If you deploy some type of replication and failover strategy in addition to your data backup strategy, you might be sending copies of the same data over the network. By backing up the replica virtual machine data rather than the primary you'll save the overhead of sending that backed up data over the network.
+**Reduces the impact of backups on the running workload** - Taking a backup of a virtual machine incurs some overhead as a snapshot is created. By offloading the backup process to a secondary remote site, the running workload is no longer impacted by the backup operation. This is applicable only to deployments where the backup copy is stored on a remote site. For example, you might take daily backups and store data locally to ensure quick restore times, but take monthly or quarterly backups from replica virtual machines stored remotely for long-term retention.
 
--   Enables hoster backup - Customers might use a datacenter hosted by a hoster as a replica site, with no secondary datacenter of their own. In this case the hoster SLA will require consistent backup of replica virtual machines.
+**Saves bandwidth** - In a typical remote branch office/headquarters deployment you need an appropriate amount of provisioned bandwidth to transfer backup data between sites. If you create a replication and failover strategy, in addition to your data backup strategy, you can reduce the amount of redundant data sent over the network. By backing up the replica virtual machine data rather than the primary, you save the overhead of sending the backed up data over the network.
 
-A replica virtual machine is  turned off until a failover is initiated, and VSS can't guarantee an application-consistent backup for a replica virtual machine. Thus the backup of a replica virtual machine will be crash-consistent only. If crash- consistency can't be guaranteed then the backup will fail and this might occur in a number of conditions:
+**Enables hoster backup** - You can use a hosted datacenter as a replica site, with no need for a secondary datacenter. In this case the hoster SLA requires consistent backup of replica virtual machines.
 
--   The replica virtual machine isn't healthy and is in a critical state.
+A replica virtual machine is turned off until a failover is initiated, and VSS can't guarantee an application-consistent backup for a replica virtual machine. Thus the backup of a replica virtual machine will be crash-consistent only. If crash-consistency can't be guaranteed, then the backup will fail and this might occur in a number of conditions:
 
--   The replica virtual machine is resynchronizing (in the Resynchronization in Progress or Resynchronization Required state).
+- The replica virtual machine isn't healthy and is in a critical state.
 
--   Initial replication between the primary and secondary site is in progress or pending for the virtual machine.
+- The replica virtual machine is resynchronizing (in the Resynchronization in Progress or Resynchronization Required state).
 
--   .hrl logs are being applied to the replica virtual machine, or a previous action to apply the .hrl logs on the virtual disk failed, or was cancelled or interrupted.
+- Initial replication between the primary and secondary site is in progress or pending for the virtual machine.
 
--   Migration or failover of the replica virtual machine is in progress
+- .hrl logs are being applied to the replica virtual machine, or a previous action to apply the .hrl logs on the virtual disk failed, or was cancelled or interrupted.
+
+- Migration or failover of the replica virtual machine is in progress
 
 ## Recover backed up virtual machines
-You can recover backed up virtual machines. In the DPM Administrator console you select the virtual machine, and specify the point from which you want to recover the data. In the Recovery Wizard you select recovery settings:
 
-1.  Select the VMs you want to recover and on the calendar, click any date to see the recovery points available. Select the recovery point you want to use on the **Recovery time** menu. Then in **Actions** click **Recover**. Select where you want to restore the data.
+When you can recover a backed up virtual machine, you use the Recovery wizard to select the virtual machine and the specific recovery point. To open the Recovery Wizard and recover a virtual machine:
 
-    -   **Recover to original location**: When you recover to the original location the original VHD is deleted.  DPM will recover the VHD and other configuration files on the original location using Hyper-V VSS writer. At the end of the recovery process, virtual machines will still be highly available.
-        The resource group must be present for recovery. If it isn't available recover to an alternate location and then make the virtual machine highly available.
+1. In the DPM Administrator console, type the name of the VM, or expand the list of protected items and select the VM you want to recover.
 
-    -   **Recover to alternate location**: DPM supports alternate location recovery (ALR), which provides a seamless recovery of a protected Hyper-V virtual machine to a different Hyper-V host, independent of processor architecture. Hyper-V virtual machines that are recovered to a cluster node will not be highly available.
+2. In the **Recovery points for** pane, on the calendar, click any date to see the recovery points available. Then in the **Path** pane, select the recovery point you want to use in the Recovery wizard.
 
-    -   **Item-level recovery**: DPM supports item-level recovery (ILR), which allows you to do item-level recovery of files, folders, volumes, and virtual hard disks (VHDs) from a host-level backup of Hyper-V virtual machines to a network share or a volume on a DPM protected server. The DPM protection agent doesn't have to be installed inside the guest to perform item-level recovery.
+3. From the **Actions** menu, click **Recover** to open the Recovery Wizard.
 
-In **Specify Recovery Options** you can configure the recovery options for SAN, network bandwidth usage throttling if you're recovering over low bandwidth, and email notifications to specify when the restore job finishes, and complete the wiard.
+    The VM and recovery point you selected appear in the **Review Recovery Selection** screen. Click **Next**.
+
+4. On the **Select Recovery Type** screen, select where you want to restore the data and then click **Next**.
+
+    -   **Recover to original instance**: When you recover to the original instance, the original VHD is deleted. DPM recovers the VHD and other configuration files to the original location using Hyper-V VSS writer. At the end of the recovery process, virtual machines are still highly available.
+        The resource group must be present for recovery. If it isn't available, recover to an alternate location and then make the virtual machine highly available.
+
+    -   **Recover as virtual machine to any host**: DPM supports alternate location recovery (ALR), which provides a seamless recovery of a protected Hyper-V virtual machine to a different Hyper-V host, independent of processor architecture. Hyper-V virtual machines that are recovered to a cluster node will not be highly available. If you choose this option, the Recovery Wizard presents you with an additional screen for identifying the destination and destination path.
+
+    -   **Copy to a network folder**: DPM supports item-level recovery (ILR), which allows you to do item-level recovery of files, folders, volumes, and virtual hard disks (VHDs) from a host-level backup of Hyper-V virtual machines to a network share or a volume on a DPM protected server. The DPM protection agent doesn't have to be installed inside the guest to perform item-level recovery. If you choose this option, the Recovery Wizard presents you with an additional screen for identifying the destination and destination path.
+
+5. In **Specify Recovery Options** configure the recovery options and click **Next**:
+
+    - If you are recovering a VM over low bandwidth, click **Modify** to enable **Network bandwidth usage throttling**. After turning on the throttling option, you can specify the amount of bandwidth you want to make available and the time when that bandwidth is available.
+    - Select **Enable SAN based recovery using hardware snapshots** if you have configured your network.
+    - Select **Send an e-mail when the recovery completes** and then provide the email addresses, if you want email notifications sent once the recovery process completes.
+
+6. In the Summary screen, make sure all details are correct. If the details aren't correct, or you want to make a change, click **Back**. If you are satisfied with the settings, click **Recover** to start the recovery process.
+
+7. The **Recovery Status** screen provides information about the recovery job.
