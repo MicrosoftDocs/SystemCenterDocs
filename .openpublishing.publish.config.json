@@ -22,5 +22,6 @@
     ""
   ],
   "skip_source_output_uploading": false,
+  "need_preview_pull_request": true,
   "dependent_repositories": []
 }
