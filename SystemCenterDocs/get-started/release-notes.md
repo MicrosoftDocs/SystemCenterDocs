@@ -455,6 +455,19 @@ If you used the default instance of SQL Server, use Windows Explorer to drag Mic
 
 **Workaround:** After upgrading the cluster's functional level, refresh the storage provider for the File Server. This will refresh the platform information.
 
+#### Cluster Rolling Upgrade (CRU) of a Windows Server 2012 R2 host cluster to Windows Server 2016 Nano Server based host cluster will fail
+**Description:** When you try to upgrade the nodes of a Windows Server 2012 R2 cluster to Windows Server 2016 - Nano Server-based hosts using Cluster Rolling Upgrade functionality in VMM, the upgrade will fail with the below error:
+
+*Error (20406)
+VMM could not enumerate instances of class MSFT_StorageNodeToDisk on the server <servername>. Failed with error MI RESULT 7 The requested operation is not supported.
+
+Recommended Action
+Ensure the provider is running, and then try the operation again*
+
+Note that rolling upgrade from Windows Server 2012 R2 to Windows Server 2016 Full Server works fine. This issue is specific to Nano.
+
+**Workaround:** Manually upgrade the Windows Server 2012 R2 host cluster to Nano outside of VMM.
+
 #### Adding a cluster via the VMM Administrative console may result in an error
 **Description:** When you add a cluster as a resource in the VMM Administrative console you may receive an error stating "There were no computers discovered based on your inputs".
 
