@@ -286,9 +286,9 @@ You can optionally validate the network controller deployment. To do this:
 
 ### Create the HNV provider network
 
- 1.  Start the **Create Logical Network Wizard**. Type a name and optional description for this network.
-2.  In **Settings** verify that **One Connected Network** is selected, since all HNV Provider networks need to have routing and connectivity between all hosts in that network. Ensure you check **Allow new VM networks created on this logical network to use network virtualization**. In addition check **Managed by the network controller**.
-3.  In **Network Site** add the network site information for your HNV Provider network. This should include the host group, subnet, and VLAN information for the network.
+1.  Start the **Create Logical Network Wizard**. Type a name and optional description for this network.
+2. In **Settings** verify that **One Connected Network** is selected, since all HNV Provider networks need to have routing and connectivity between all hosts in that network. Ensure you check **Allow new VM networks created on this logical network to use network virtualization**. In addition check **Managed by the network controller**.
+3. In **Network Site** add the network site information for your HNV Provider network. This should include the host group, subnet, and VLAN information for the network.
 4. Review the **Summary** information and complete the wizard.
 
 ### Create the IP address pool
