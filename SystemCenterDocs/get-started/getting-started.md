@@ -3,7 +3,7 @@ title:  Getting Started
 description:  
 author: mgoedtel
 manager: cfreemanwa
-ms.date: 2016-09-23
+ms.date: 2016-09-27
 ms.custom: na
 ms.prod: system-center-threshold
 ms.technology: operations-manager
@@ -25,7 +25,7 @@ The components updated for this release are:
 - System Center 2016 Technical Preview - Operations Manager
 
 - System Center 2016 Technical Preview - Orchestrator
- 
+
 - System Center 2016 Technical Preview - Service Manager
 
 - System Center 2016 Technical Preview - Virtual Machine Manager
@@ -46,7 +46,7 @@ You can download these components from the [TechNet Evaluation Center](https://w
 
 - [Data Protection Manager](../dpm/data-protection-manager.md)
 
-- [Operations Manager](../om/operations-manager.md)
+- [Operations Manager](../om/welcome-to-operations-manager.md)
 
 - [Orchestrator](../orch/orchestrator.md)
 

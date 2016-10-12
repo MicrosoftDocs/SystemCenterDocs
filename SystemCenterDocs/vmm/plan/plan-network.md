@@ -2,17 +2,18 @@
 title: Plan the VMM networking fabric
 description: This article provides information about preparing the VMM network fabric
 author:  rayne-wiselman
+ms.author: raynew
 manager:  cfreemanwa
-ms.date:  2016-08-29
+ms.date:  2016-09-22
 ms.topic:  article
-ms.prod:  system-center-threshold
+ms.prod:  system-center-2016
 ms.technology:  virtual-machine-manager
 ---
 
 
 # Plan the VMM networking fabric
 
->Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
+>Applies To: System Center 2016 - Virtual Machine Manager
 
 This article describes how to plan your networking fabric in System Center 2016 - Virtual Machine Manager (VMM).
 
@@ -65,7 +66,7 @@ Use the following table to plan for the logical networks, VM networks, and IP ad
 
 ## Logical networks created by default
 
-In the VMM console, **Fabric** >**Networking** > **Logical networks**, you might see logical networks created by VMM by default. VMM creates these networks to ensure that when you add a host, you have at least one logical network for deploying virtual machines and services. No network sites are created automatically. 
+In the VMM console, **Fabric** >**Networking** > **Logical networks**, you might see logical networks created by VMM by default. VMM creates these networks to ensure that when you add a host, you have at least one logical network for deploying virtual machines and services. No network sites are created automatically.
 
 To illustrate how these settings work, suppose that you have not changed the settings, and you add a Hyper-V host to VMM management. In this case, VMM automatically creates logical networks that match the first DNS suffix label of the connection-specific DNS suffix on each host network adapter. On the logical network,VMM also creates a VM network that is configured with “no isolation.” For example, if the DNS suffix for the host network adapter was corp.contoso.com, VMM would create a logical network named “corp,” and on it, a VM network named “corp” that is configured with no isolation.
 
@@ -84,7 +85,7 @@ The main guideline specifying VLANs and IP subnets for network sites is to refle
 |**Load balancing**: Logical network that will include a load balancer that is managed by VMM|Create at least one network site and associate at least one IP subnet with the network site.|
 
 > [!NOTE]
-> For an external network, that is, a network managed through a vendor network-management console or virtual switch extension manager outside of VMM, you can configure settings through the vendor network-management console, and allow them to be imported from the vendor network-management database into VMM. 
+> For an external network, that is, a network managed through a vendor network-management console or virtual switch extension manager outside of VMM, you can configure settings through the vendor network-management console, and allow them to be imported from the vendor network-management database into VMM.
 
 ## Guidelines for IP address pools
 In general, create IP address pools where you will use static IP addressing or load balancing; also create IP address pools on logical networks that will be the foundation for VM networks supporting network virtualization. VMM uses IP address pools to assign IP addresses to Hyper-V hosts that you deploy through VMM, and to Windows-based virtual machines that you deploy through VMM, regardless of the type of host they are running on (Hyper-V or VMware ESX).
@@ -98,7 +99,6 @@ The following table provides detailed guidelines. Additional information about I
 |**Network virtualization**: Logical network that will be the foundation for VM networks using network virtualization|Create IP address pools on the logical network that provides the foundation for the VM networks. Later, when you create the VM networks, you will also create IP address pools on them (and see the important note after this table). If you use DHCP on the VM networks, VMM will respond to a DHCP request with an address from an IP address pool.<br /><br />The process of creating an IP address pool for a VM network is similar to the process of creating an IP address pool for a logical network.|
 |**Load balancing**: Logical network that will be the foundation for a VM network, where you will use load balancing in a "service tier" (part of a set of virtual machines deployed together as a VMM "service")|Create a static IP address pool on the VM network, and in it, define a reserved range of IP addresses. When you use VMM to deploy a load-balanced service tier that uses the VM network, VMM uses the reserved range of IP addresses to assign virtual IP (VIP) addresses to the load balancer.|
 
-Additional information about IP address pools follows.
 
 > [!IMPORTANT]
 > If you configure a virtual machine to obtain a static IP address from an IP address pool, you must also configure the virtual machine to use a static MAC address. You can either specify the MAC address manually (during the **Configure Settings** step) or have VMM automatically assign a MAC address from a MAC address pool.
@@ -113,3 +113,7 @@ Additional information about IP address pools follows.
 
 > [!NOTE]
 > After a virtual machine has been deployed in VMM, you can view the IP address or addresses assigned to that virtual machine. To do this, right-click the listing for the virtual machine, click **Properties**, click the **Hardware Configuration** tab, click the network adapter, and in the results pane, click **Connection details**.
+
+## Next steps
+
+- [Set up the networking fabric](../manage/manage-network-overview.md)

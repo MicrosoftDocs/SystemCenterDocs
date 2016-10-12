@@ -1,25 +1,23 @@
 ---
-description:  
-manager:  cfreemanwa
-ms.topic:  article
-author:  mgoedtel
-ms.prod:  system-center-threshold
-keywords:  
-ms.date:  2016-06-27
+ms.assetid: dbd26196-14f8-4593-9e4b-5c54ac4edb45
 title:  How to Install an Operations Manager Management Server
-ms.technology:  operations-manager
-ms.assetid:  2f228f97-54fd-4126-8a05-2065aab4dc19
+description:  
+author: mgoedtel
+manager: cfreemanwa
+ms.date: 2016-10-12
+ms.custom: na
+ms.prod: system-center-threshold
+ms.technology: operations-manager
+ms.topic: article
 ---
-
-
 
 # How to Install an Operations Manager Management Server
 
->Applies To: System Center 2016 Technical Preview - Operations Manager
+>Applies To: System Center 2016 - Operations Manager
 
-In System Center 2016 Technical Preview - Operations Manager the first feature you install is the management server. The setup procedure creates the operational database and data warehouse database. The procedure described in this topic assumes that you have already installed a supported version of Microsoft SQL Server locally on the  management server. However, you can specify an instance of SQL Server that is installed on a separate server.
+In System Center 2016 - Operations Manager, the first feature you install is the management server. The setup procedure creates the operational database and data warehouse database. The procedure described in this topic assumes that you have already installed a supported version of Microsoft SQL Server locally on the  management server. However, you can specify an instance of SQL Server that is installed on a separate server.
 
-You must ensure that your server meets the minimum system requirements for System Center 2016 Technical Preview - Operations Manager. For more information, see [System Requirements for System Center Technical Preview](../../system-requirements/System-Requirements-for-System-Center-Technical-Preview.md) .
+You must ensure that your server meets the minimum system requirements for System Center 2016 - Operations Manager. For more information, see [System Requirements for System Center 2016 - Operations Manager](../plan/system-requirements.md).
 
 ### To install the management server in the management group
 
@@ -108,7 +106,7 @@ You must ensure that your server meets the minimum system requirements for Syste
 
 22. In **Device Management**, select **Management Servers**. In the results pane, you should see the management server that you just installed with a green check mark in the **Health State** column.
 
-### To install the  management server in the management group by using the Command Prompt window
+### To install the  management server in the management group from the Command Prompt 
 
 1.  Log on to the server by using an account that has local administrative credentials.
 
@@ -144,5 +142,6 @@ You must ensure that your server meets the minimum system requirements for Syste
     /AcceptEndUserLicenseAgreement: [0|1]
     ```
 
-## See Also
-[Distributed Deployment of Operations Manager](Distributed-Deployment-of-Operations-Manager.md)
+## Next steps
+
+- See [Distributed Deployment of Operations Manager](Distributed-Deployment-of-Operations-Manager.md) to understand the sequence and steps for installing the Operations Manager server roles across multiple servers in your management group.  

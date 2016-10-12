@@ -2,8 +2,9 @@
 title: Add file-based resources to the VMM library
 description: This article provides guidance for adding files to the library in the VMM compute fabric
 author:  rayne-wiselman
+ms.author: raynew
 manager:  cfreemanwa
-ms.date:  2016-09-04
+ms.date:  2016-09-22
 ms.topic:  article
 ms.prod:  system-center-threshold
 ms.technology:  virtual-machine-manager
@@ -11,7 +12,7 @@ ms.technology:  virtual-machine-manager
 
 # Add file-based resources to the VMM library
 
->Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
+>Applies To: System Center 2016 - Virtual Machine Manager
 
 After you've [set up](manage-library-overview.md) the System Center 2016 - Virtual Machine Manager (VMM) library, use this article if you want to add file-based resources to the library, and mark objects in the library as equivalent.
 

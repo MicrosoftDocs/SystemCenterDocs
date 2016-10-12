@@ -5,7 +5,7 @@ ms.topic:  article
 author:  markgalioto
 ms.prod:  system-center-threshold
 keywords:  
-ms.date:  2016-08-26
+ms.date:  2016-10-01
 title:  Back up and restore VMM servers
 ms.technology:  data-protection-manager
 ms.assetid:  e9ed546c-b12b-4a2c-9668-3dc23963114e
@@ -13,7 +13,7 @@ ms.assetid:  e9ed546c-b12b-4a2c-9668-3dc23963114e
 
 # Back up and restore VMM servers
 
->Applies To: System Center 2016 Technical Preview - Data Protection Manager
+>Applies To: System Center 2016 - Data Protection Manager
 
 DPM can back up the SQL Server instances that's being used as the System Center VMM database in a couple of ways:
 
@@ -48,7 +48,7 @@ Before setting up a DPM backup for VMM using VMM Express Writer note the followi
 
 ## Before you start
 
--   Review the [release notes](http://technet.microsoft.com/en-us/library/jj860394.aspx) and read about any VMM backup issues in [What's supported and what isn't for DPM?](../get-started/What-s-supported-and-what-isn-t-for-DPM-.md)
+-   Review the [release notes](../../get-started/release-notes.md) and read about any VMM backup issues in [What's supported and what isn't for DPM?](../get-started/What-s-supported-and-what-isn-t-for-DPM-.md)
 
 -   Make sure that the VMM machines you want to back up  are in the DPM server domain, or in a domain with a two-way trust relationship with the DPM domain.
 

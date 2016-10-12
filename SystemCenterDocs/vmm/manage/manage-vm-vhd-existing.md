@@ -2,20 +2,21 @@
 title: Deploy VMs in the VMM fabric from an existing hard disk
 description: This article describes how to create and deploy VMs in the VMM fabric from an existing virtual hard disk
 author:  rayne-wiselman
-manager:  cfreemanwa
-ms.date:  2016-09-13
+ms.author: rayne
+manager:  cfreeman
+ms.date:  2016-09-22
 ms.topic:  article
-ms.prod:  system-center-threshold
+ms.prod:  system-center-2016
 ms.technology:  virtual-machine-manager
 ---
 
 
 # Deploy VMs in the VMM fabric from an existing virtual hard disk
 
->Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
+>Applies To: System Center 2016 - Virtual Machine Manager
 
 
-This article describes how to create and deploy virtual machines in the System Center Virtual Machine Manager (VMM) fabric from an existing virtual hard disk (VHD).
+This article describes how to create and deploy virtual machines in the System Center 2016 - Virtual Machine Manager (VMM) fabric from an existing virtual hard disk (VHD).
 
 
 ## Before you start
@@ -27,7 +28,7 @@ This article describes how to create and deploy virtual machines in the System C
 
 ## Create a VM
 
-1.  Click **VMs and Services** > **Create Virtual Machine** >**Create Virtual Machine**.
+1.  Click **VMs and Services** > **Create Virtual Machine** > **Create Virtual Machine**.
 2. In **Create Virtual Machine Wizard** > **Select Source**, click **Use an existing virtual machine, VM template, or virtual hard disk** > **Browse**. Select an existing VHD.
 3. In **Identity**, specify the VM name and an optional description. If the VHD you choose is in the .vhdx format, in the **Generation** box, select **Generation 1** or **Generation 2**. Then click **Next**.
 4. In **Configure Hardware**, either select the profile that you want to use from the **Hardware profile** list, or configure the hardware settings manually. The hardware setting displayed will differ depending on whether you're deploying a generation 1 or generation 2 machine. Then click **Next**.
@@ -83,4 +84,4 @@ This article describes how to create and deploy virtual machines in the System C
 
 ## Next steps
 
-[Manage the VM settings](manage-vm-settings.md)
+- [Manage the VM settings](manage-vm-settings.md)

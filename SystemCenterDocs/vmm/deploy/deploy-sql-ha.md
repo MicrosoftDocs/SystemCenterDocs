@@ -2,17 +2,18 @@
 title: Deploy SQL Server for VMM high availability
 description: This article explains how to set up SQL Server as highly available in a VMM deployment
 author:  rayne-wiselman
+ms.author: raynew
 manager:  cfreemanwa
-ms.date:  2016-09-01
+ms.date:  2016-09-22
 ms.topic:  article
 ms.prod:  system-center-threshold
 ms.technology:  virtual-machine-manager
 ---
 # Deploy SQL Server for VMM high availability
 
->Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
+>Applies To: System Center 2016 - Virtual Machine Manager
 
-This article describes the steps for deploying a highly available SQL Server database for System Center 2016 - Virtual Machine Manager (VMM). You set up a SQL Server cluster, configure the SQL Server VMM database with AlwaysOn availability groups.
+This article describes the steps for deploying a highly available SQL Server database for System Center 2016 - Virtual Machine Manager (VMM). You set up a SQL Server cluster, configure the SQL Server VMM database with Always On Availability Groups.
 
 
 
@@ -23,15 +24,15 @@ Read the [planning information](../plan/plan-ha-deployment.md) for a highly avai
 
 ## Set up availability groups
 
-[SQL Server AlwaysOn availability groups](https://msdn.microsoft.com/en-us/library/ff877884.aspx) support failover environments for a discrete set of user databases (availability databases). Each set of availability databases is hosted by an availability replica. To set up an availability group you'll need to deploy a Windows Server Failover Clustering (WSFC) cluster to host the availability replica, and enable AlwaysOn on the cluster nodes. You can then add the VMM SQL Server database as an availability database.
+[SQL Server Always On availability groups](https://msdn.microsoft.com/en-us/library/ff877884.aspx) support failover environments for a discrete set of user databases (availability databases). Each set of availability databases is hosted by an availability replica. To set up an availability group you'll need to deploy a Windows Server Failover Clustering (WSFC) cluster to host the availability replica, and enable Always On on the cluster nodes. You can then add the VMM SQL Server database as an availability database.
 
-- [Learn more](https://msdn.microsoft.com/en-us/library/ff878487.aspx) about AlwaysOn prerequisites
+- [Learn more](https://msdn.microsoft.com/en-us/library/ff878487.aspx) about Always On prerequisites
 - [Learn more](https://msdn.microsoft.com/en-us/library/ff929171.aspx) about setting up a WSFC for AlwaysOn availability groups
 - [Learn more](https://msdn.microsoft.com/en-us/library/ff878265.aspx) about setting up an availability group
 
 
 
-## Configure the VMM database with AlwaysOn Availability Groups
+## Configure the VMM database with Always On Availability Groups
 
 1. On the VMM server, stop the VMM service. For a cluster, in Failover Cluster Manager, stop the VMM role.
 2. Connect to the machine that hosts the VMM database, and in SQL Server Management Studio, right-click the VMM database > **Properties**. In **Options**, set the **Recovery model** for the database to **Full**.
@@ -50,7 +51,7 @@ Read the [planning information](../plan/plan-ha-deployment.md) for a highly avai
 
 ## Run a failover
 
-To check that AlwaysOn is working as expected for the VMM database, run a failover from the primary to secondary node in the SQL Server cluster.
+To check that Always On is working as expected for the VMM database, run a failover from the primary to secondary node in the SQL Server cluster.
 
 1.  In SQL Server Management Studio, right-click the availability group on the secondary server > **Failover**.
 2. In **Fail Over Availability Group** > **Select New Primary Replica**, select the secondary server.

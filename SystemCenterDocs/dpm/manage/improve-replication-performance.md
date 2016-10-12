@@ -5,7 +5,7 @@ ms.topic:  article
 author:  markgalioto
 ms.prod:  system-center-threshold
 keywords:  
-ms.date:  2016-07-12
+ms.date:  2016-10-01
 title:  Improve replication performance
 ms.technology:  data-protection-manager
 ms.assetid:  dc7b7b49-dcbb-4e44-9ea7-31374c5773ff
@@ -13,20 +13,23 @@ ms.assetid:  dc7b7b49-dcbb-4e44-9ea7-31374c5773ff
 
 # Improve replication performance
 
->Applies To: System Center 2016 Technical Preview - Data Protection Manager
+>Applies To: System Center 2016 - Data Protection Manager
 
 There are a number of steps you can take to optimize the performance of System Center 2012 - Data Protection Manager (DPM) data replication and synchronization, including network throttling, data compression, staggering synchronization, and optimizing express backups.
 
 ## Network throttling
 Network bandwidth usage throttling is configured at backed up machine level and you  can specify different network bandwidth usage throttling rates for work hours, non-work hours, and weekends, and you define the times for each of those categories. Enable throttling as follows:
 
--   Open DPM console > **Management** > **Agent**, select the machine on which you want to throttle bandwidth > **Throttle**.
+1. Open DPM console > **Management** > **Agent**, select the machine on which you want to throttle bandwidth > **Throttle**.
 
--   Click **Throttle** >  **Enable network bandwidth usage**.
-    Select **Throttle Settings** and **Work Schedule** for the machine and click **OK**.
-    System_CAPS_noteNote
-    You can configure network bandwidth usage throttling separately for work hours and nonwork hours, and you can define the work hours for the protected computer.
-    To apply your settings, click OK.
+2. Click **Throttle** >  **Enable network bandwidth usage**.
+
+3. Select **Throttle Settings** and **Work Schedule** for the machine and click **OK**.
+
+    >[!NOTE]
+    >You can configure network bandwidth usage throttling separately for work hours and nonwork hours, and you can define the work hours for the protected computer.
+
+4. To apply your settings, click **OK**.
 
 Note that network bandwidth usage can be also limited by Group Policy.
 
@@ -55,5 +58,5 @@ To provide quick recovery of application data, DPM must create an express full b
 
 1.  Click  DPM Administrator Console > **Protection** and select the  protection group for which you want to modify the express full backup schedule.
 
-2.  Click **Optimize performance** and on the **Express Full Backu**p tab, select the available times for the express full backups and click Add.
+2.  Click **Optimize performance** and on the **Express Full Backup** tab, select the available times for the express full backups and click **Add**.
     Select the days of the week for the express full backups.

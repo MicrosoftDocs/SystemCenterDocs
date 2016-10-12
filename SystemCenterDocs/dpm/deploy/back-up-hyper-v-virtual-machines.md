@@ -1,11 +1,11 @@
 ---
-description:  
+description: This article contains the procedures for backing up and recovery of virtual machines.  
 manager:  cfreemanwa
 ms.topic:  article
 author:  markgalioto
 ms.prod:  system-center-threshold
 keywords:  
-ms.date:  2016-06-30
+ms.date:  2016-10-12
 title:  Back up Hyper V virtual machines
 ms.technology:  data-protection-manager
 ms.assetid:  3a5b0841-04c8-4ffa-8375-ef12b7b459bb
@@ -13,9 +13,9 @@ ms.assetid:  3a5b0841-04c8-4ffa-8375-ef12b7b459bb
 
 # Back up Hyper-V virtual machines
 
->Applies To: System Center 2016 Technical Preview - Data Protection Manager
+>Applies To: System Center 2016 - Data Protection Manager
 
-DPM protects Hyper-V virtual machines by backing up virtual machines data. You can back data up at the Hyper-V host level to enable VM-level and file-level data recovery, or back up at the guest-level to enable application-level recovery.
+DPM protects Hyper-V virtual machines by backing up virtual machine's data. You can back data up at the Hyper-V host level to enable VM-level and file-level data recovery, or back up at the guest-level to enable application-level recovery.
 
 ## Supported scenarios
 DPM can back up virtual machines running on Hyper-V host servers in the following scenarios:
@@ -32,7 +32,7 @@ DPM can back up virtual machines running on Hyper-V host servers in the followin
 
 Learn about supported DPM and Hyper-V versions in [What can DPM back up?](../get-started/What-can-DPM-back-up-.md) .
 
-## <a name="BKMK_Online"></a>Host v guest backup
+## <a name="BKMK_Online"></a>Host vs Guest backup
 DPM can perform a host or guest-level backup of Hyper-V VMs. At the host level the DPM protection agent is installed on the Hyper-V host server or cluster and protects the entire VMs and data files running on that host.   At the guest level the agent is installed on each virtual machine and protects the workload present on that machine.
 
 Both methods have pros and cons:
@@ -81,9 +81,9 @@ DPM performs backup with VSS as follows:
 These are the prerequisites for backing up
 Hyper-V virtual machines with DPM.
 
-|||
-|-|-|
-|DPM prerequisites|-   If you want to perform item-level recovery for virtual machines (recover files, folders, volumes) then you'll need to install the Hyper-V role on the DPM server.  If you only want to recover the virtual machine and not item-level then the role isn't required.<br />-   You can protect up to 800 virtual machines of 100 GB each on one DPM server and allows multiple DPM servers that support larger clusters.<br />-   DPM excludes the page file from incremental backups to improve virtual machine backup performance.<br />-   DPM can backup a Hyper-V server or cluster in the same domain as the DPM server, or in a child or trusted domain. If you want to backup Hyper-V in a workgroup or an untrusted domain  you'll need to set up authentication. For a single Hyper-V server you can use NTLM or certificate authentication. For a cluster you can use certificate authentication only.<br />-   Using host-level backup to back up virtual machine data on passthrough disks isn't supported. In this scenario we recommend you use host-level back to backup VHD files and guest-level back to back up the other data that isn't visible on the host.<br />-   When protecting a Hyper-V cluster using scaled-out DPM protection (multiple DPM server protecting a large Hyper-V cluster) you can't add secondary protection for the protected Hyper-V workloads.<br />-   You can only backup replica virtual machines if DPM is running System Center 2012 R2 and the Hyper-V host is running on Windows Server 2012 R2.<br />-   You can back up deduplicated volumes.|
+|Prerequisite|Details|
+|------------|-------|
+|DPM prerequisites|- If you want to perform item-level recovery for virtual machines (recover files, folders, volumes) then you'll need to install the Hyper-V role on the DPM server.  If you only want to recover the virtual machine and not item-level then the role isn't required.<br />-   You can protect up to 800 virtual machines of 100 GB each on one DPM server and allows multiple DPM servers that support larger clusters.<br />-   DPM excludes the page file from incremental backups to improve virtual machine backup performance.<br />-   DPM can backup a Hyper-V server or cluster in the same domain as the DPM server, or in a child or trusted domain. If you want to backup Hyper-V in a workgroup or an untrusted domain  you'll need to set up authentication. For a single Hyper-V server you can use NTLM or certificate authentication. For a cluster you can use certificate authentication only.<br />-   Using host-level backup to back up virtual machine data on passthrough disks isn't supported. In this scenario we recommend you use host-level back to backup VHD files and guest-level back to back up the other data that isn't visible on the host.<br />-   When protecting a Hyper-V cluster using scaled-out DPM protection (multiple DPM server protecting a large Hyper-V cluster) you can't add secondary protection for the protected Hyper-V workloads.<br />-   You can only backup replica virtual machines if DPM is running System Center 2012 R2 and the Hyper-V host is running on Windows Server 2012 R2.<br />-   You can back up deduplicated volumes.|
 |Hyper-V VM prerequisites|-   The version of Integration Components that is running on the virtual machine should be the same as the version of Hyper-V on the server that is running Hyper-V.<br />-   For each virtual machine backup you'll need free space on the volume hosting the virtual hard disk files to allow Hyper-V enough room for differencing disks (AVHD's) during backup. The space must be at least equal to the calculation **Initial disk size\*Churn rate\*Backup** window time. If you're running multiple backups on a cluster, you'll need enough storage capacity to accommodate the AVHDs for each of the virtual machines using this calculation.<br />-   If you want to backup virtual machines located on a Hyper-V host servers running Windows Server 2012 R2, the virtual machine should have a SCSI controller specified, even if it's not connected to anything. This is because for online backup in Windows Server 2012 R2 the Hyper-V host mounts a new VHD in the VM and then dismounts it later. Only the SCSI controller can support this and thus is required for online backup of the virtual machine. The SCSI controller doesn't  it became clear why we need this SCSI controller. Without this setting, event ID 10103 will be issued when you try to back up the virtual machine.|
 |Linux prerequisites|-   You can backup Linux virtual machines using DPM 2012 R2. Only file-consistent snapshots are supported.|
 |Back up VMs with CSV storage|-   For CSV storage, install the Volume Shadow Copy Services (VSS) hardware provider on the Hyper-V server. Contact your storage area network (SAN) vendor for the VSS hardware provider.<br />-   If a single node shuts down unexpectedly in a CSV cluster, DPM will perform a consistency check against the virtual machines that were running on that node.<br />-   If you need to restart a Hyper-V server that has BitLocker Drive Encryption enabled on the CSV cluster, you must run a consistency check for Hyper-V virtual machines.|
@@ -91,51 +91,48 @@ Hyper-V virtual machines with DPM.
 
 ## Back up virtual machines
 
-1.  Set up DPM and  storage.
+1.  Set up your [DPM server](../get-started/get-ready-to-deploy-dpm-servers.md) and [your storage](../get-started/prepare-data-storage.md).
+  When setting up your storage, use these storage capacity guidelines.
 
-2.  Set up [DPM](https://technet.microsoft.com/en-us/library/mt403314.aspx) and [storage](https://technet.microsoft.com/en-us/library/mt617323.aspx). You can use these storage capacity guidelines.
+  |Guideline|Size/Number|
+  |Average virtual machine size|100 GB|
+  |Number of virtual machines per DPM server|800|
+  |Total size of 800 VMs|80 TB|
+  |Required space for backup storage|80 TB|
 
-    |||
-    |-|-|
-    |Average virtual machine size|100 GB|
-    |Number of virtual machines per DPM server|800|
-    |Total size of 800 VMs|80 TB|
-    |Required space for backup storage|80 TB|
+2.  Set up the DPM protection agent on the Hyper-V server or Hyper-V cluster nodes. If you're doing guest-level backup you'll install the agent on the VMs you want to back up at the guest-level.
 
-3.  Set up the DPM protection agent on the Hyper-V server or Hyper-V cluster nodes. If you're doing guest-level backup you'll install the agent on the VMs you want to back up at the guest-level.
+3. In  the DPM Administrator console click **Protection** > **Create protection group** to open the **Create New Protection Group** wizard.
 
-4.  In  the DPM Administrator console click **Protection** > **Create protection group** to open the **Create New Protection Group** wizard.
+4. On the **Select Group Members** page, select the VMs you want to protect from the Hyper-V host servers on which they're located. We recommend you put all VMs that will have the same protection policy into the same protection group. You can enable colocation for efficient use of space. Colocation allows you to locate data from different protection groups on the same disk or tape storage so that multiple data sources have a single replica and recovery point volume.
 
-    -   On the **Select Group Members** page, select the VMs you want to protect from the Hyper-V host servers on which they're located. We recommend you put all VMs that will have the same protection policy into the same protection group. You can enable colocation for efficient use of space. Colocation allows you to locate data from different protection groups on the same disk or tape storage so that multiple data sources have a single replica and recovery point volume.
+5. On the **Select Data Protection Method** page, specify a protection group name. Select **I want short-term protection using Disk** and select **I want online protection** if you want to back up data to Azure using the Azure Backup service. If this option isn't available complete the wizard to create the group and then modify the protection group settings to select this option. You can store data in Azure for up to 3360 days.
 
-    -   On the **Select Data Protection Method** page, specify a protection group name. Select **I want short-term protection using Disk** and select **I want online protection** if you want to back up data to Azure using the Azure Backup service. If this option isn't available complete the wizard to create the group and then modify the protection group settings to select this option. You can store data in Azure for up to 3360 days.
+  If you have a standalone tape or tape library connected to the DPM server you'll be able to select **I want long-term protection using tape**.
 
-        If you have a standalone tape or tape library connected to the DPM server you'll be able to select **I want long-term protection using tape**.
+6. In **Specify Short-Term Goals** > **Retention range**, specify how long you want to retain disk data. In **Synchronization frequency** specify how often incremental backups of the data should run. Alternatively, instead of selecting an interval for incremental backups you can enable **Just before a recovery point**. With this setting enabled DPM will run an express full back just before each scheduled recovery point.
 
-    -   In **Specify Short-Term Goals** > **Retention range**, specify how long you want to retain disk data. In **Synchronization frequency** specify how often incremental backups of the data should run. Alternatively, instead of selecting an interval for incremental backups you can enable **Just before a recovery point**. With this setting enabled DPM will run an express full back just before each scheduled recovery point.
-
-        If you're protecting application workloads, recovery points are create in accordance with Synchronization frequency if the application supports incremental backups. If it doesn't then DPM runs an express full backup instead of incremental, and creates recovery points in accordance with the express backup schedule that you can configure.
+    - If you're protecting application workloads, recovery points are create in accordance with Synchronization frequency, provided the application supports incremental backups. If it doesn't then DPM runs an express full backup, instead of an incremental backup, and creates recovery points in accordance with the express backup schedule.
 
     -   If you enable long-term storage to tape, in **Specify Long-Term Goals** > **Retention range**, specify how long you want to keep your tape data (1-99 years).
         In Frequency of backup  select the backup frequency that you want.
 
-        The backup frequency is based on the specified retention range. When the retention range is 1-99 years, you can select backups to occur daily, weekly, bi-weekly, monthly, quarterly, half-yearly, or yearly.
-        When the retention range is 1-11 months, you can select backups to occur daily, weekly, bi-weekly, or monthly.
+    - The backup frequency is based on the specified retention range. When the retention range is 1-99 years, you can select backups to occur daily, weekly, bi-weekly, monthly, quarterly, half-yearly, or yearly.
+
+    - When the retention range is 1-11 months, you can select backups to occur daily, weekly, bi-weekly, or monthly.
         When the retention range is 1-4 weeks, you can select backups to occur daily or weekly.
 
-        On a stand-alone tape drive, for a single protection group, DPM uses the same tape for daily backups until there is insufficient space on the tape. Data resources will be colocated on the tape if you enabled colocation.
+    - On a stand-alone tape drive, for a single protection group, DPM uses the same tape for daily backups until there is insufficient space on the tape. Data resources will be colocated on the tape if you enabled colocation.
 
-        If you configured long-term storage to tape, on the **Select Tape and Library Details** page, specify the tape and library that'll be used for back up of this protection group. You can also specify whether to compress or encrypt the backup data.
+    - If you configured long-term storage to tape, on the **Select Tape and Library Details** page, specify the tape and library that'll be used for back up of this protection group. You can also specify whether to compress or encrypt the backup data.
 
-    -   On the **Review Disk Allocation** page recommended disk allocations are displayed. Recommendations are based on the retention range, the type of workload and the size of the protected data.
-        Data size indicates the zize of data in protection group.
-        Disk space indicates the amount of disk space DPM recommends for allocation to the protection group.
-        If **Automatically grow** is enabled  you enable this setting, if data in the protected group outgrows the initial allocations, DPM will try to automatically increase the disk size by 25%
-         if data outgrows the initial allocations.
+7.  In the **Review disk allocation** page review the storage pool disk space allocated for the protection group.
 
-    -   On the **Choose Replica Creation Method** page, specify how the initial replication of data in the protection group will be performed. If you select to replicate over the network we recommended you choose an off-peak time. For large amounts of data or less than optimal network conditions, consider replicating the data offline using removable media.
+    **Total Data size** is the size of the data you want to back up, and **Disk space to be provisioned on DPM** is the space that DPM recommends for the protection group. DPM chooses the ideal backup volume, based on the settings. However, you can edit the backup volume choices in the **Disk allocation details**. For the workloads, select the preferred storage in the dropdown menu. Your edits change the values for **Total Storage** and **Free Storage** in the **Available Disk Storage** pane. Underprovisioned space is the amount of storage DPM suggests you add to the volume, to continue with backups smoothly in the future.
 
-    -   On the **Consistency Check Options** page, select how you want to automate consistency checks. You can enable a check to run only when replica data becomes inconsistent, or according to a schedule. If you don't want to configure automatic consistency checking, you can run a manual check at any time by right-clicking the protection group and selecting **Perform Consistency Check**.
+8. On the **Choose Replica Creation Method** page, specify how the initial replication of data in the protection group will be performed. If you select to replicate over the network we recommended you choose an off-peak time. For large amounts of data or less than optimal network conditions, consider replicating the data offline using removable media.
+
+9. On the **Consistency Check Options** page, select how you want to automate consistency checks. You can enable a check to run only when replica data becomes inconsistent, or according to a schedule. If you don't want to configure automatic consistency checking, you can run a manual check at any time by right-clicking the protection group and selecting **Perform Consistency Check**.
 
     After you create the protection group initial replication of the data occurs in line with the method you selected. After initial replication backup takes place in line with the protection group settings. If you need to recover backed up data note the following:
 
@@ -145,7 +142,8 @@ When virtual machines are involved in live migration DPM can continue to protect
 -   **Live migration within a cluster** - When a virtual machine is migrated within a cluster DPM detects the migration, and backs up the virtual machine from the new cluster node without any requirement for user intervention. Because the storage location hasn't changed, DPM continues with express full backups. In a scaled scenario with two DPM servers to protect the cluster, a virtual machine that is protected by DPM1 continues to be protected by DPM1, no matter where the virtual machine is migrated.
 
 -   **Live migration outside the cluster** - When a virtual machine is migrated between stand-alone servers, different clusters, or between a stand-alone server and a cluster, DPM detects the migration, and can back up the virtual machine without user intervention.
-                   But there are some requirements:
+
+But there are some requirements:
 
     -   The Hyper-V hosts for the virtual machines must be located in a System Center VMM cloud on a VMM server running at least System Center 2012 with SP1.
 

@@ -1,11 +1,12 @@
 ---
 description:  
-manager:  cfreemanwa
+manager:  cfreeman
 ms.topic:  article
 author:  bwren
+ms.author: bwren
 ms.prod:  system-center-threshold
 keywords:  
-ms.date:  2016-08-18
+ms.date:  10/12/2016
 title:  Administer Service Management Automation
 ms.technology:  service-management-automation
 ms.assetid:  170a1635-d94f-49ab-b1f9-d6f6596f5489
@@ -13,7 +14,7 @@ ms.assetid:  170a1635-d94f-49ab-b1f9-d6f6596f5489
 
 # Administer Service Management Automation
 
->Applies To: System Center 2016
+>Applies To: System Center 2016 - Service Management Automation
 
 Service Management Automation must be administered separately from Windows Azure Pack for Windows Server. These topics describe how to administer Service Management Automation.
 
@@ -30,6 +31,14 @@ Service Management Automation must be administered separately from Windows Azure
 -   [Establish trust between Service Management Automation and Service Provider Foundation](Establish-trust-between-Service-Management-Automation-and-Service-Provider-Foundation.md)
 
     Provides an overview of how to establish trust relationships between other Windows Azure Pack components and Service Management Automation.
+
+-   [Set or change the Service Management Automation endpoint](Set-or-change-the-Service-Management-Automation-endpoint.md)
+
+    Provides instructions on how to change the endpoint for SMA.
+
+-   [Working with integration modules](working-with-integration-modules.md)
+
+    Provides instructions for how to import an SMA integration module.
 
 -   [Automation Runbooks](Automation-Runbooks.md)
 

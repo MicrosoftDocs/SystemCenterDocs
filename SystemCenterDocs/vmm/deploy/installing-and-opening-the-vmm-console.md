@@ -1,37 +1,16 @@
 ---
 description:  
-manager:  cfreemanwa
+manager:  cfreeman
 ms.topic:  article
 author:  rayne-wiselman
+ms.author: raynew
+redirect_url: ../plan/plan-install
 ms.prod:  system-center-threshold
 keywords:  
-ms.date:  2016-06-28
+ms.date:  2016-10-12
 title:  Installing and Opening the VMM Console
 ms.technology:  virtual-machine-manager
 ms.assetid:  b8fdb01e-d5d2-4d7c-9d57-bf34f3df1b46
 ---
 
 # Installing and Opening the VMM Console
-
->Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
-
-The procedures in this section describe how to install the VMM console and then use it to connect to a VMM management server.
-
-> [!IMPORTANT]
-> You cannot use the VMM console from one version of VMM to connect to a different version of VMM.
-
-Before installing the VMM console, ensure that the computer meets the minimum hardware requirements and that all prerequisite software is installed. For information about hardware and software requirements for VMM, see [Preparing your environment for System Center 2016 - Virtual Machine Manager](Preparing-your-environment-for-System-Center-2016---Virtual-Machine-Manager.md).
-
-> [!NOTE]
-> The VMM console is automatically installed when you install a VMM management server.
-
-## In this Section
-Follow these steps to install the VMM console and then use the VMM console to connect to a VMM management server.
-
-|Task|Description|
-|--------|---------------|
-|Step 1: [How to Install the VMM Console](How-to-Install-the-VMM-Console.md)|Describes how to install the VMM console.|
-|Step 2: [How to Connect to a VMM Management Server by Using the VMM Console](How-to-Connect-to-a-VMM-Management-Server-by-Using-the-VMM-Console.md)|Describes how to use the VMM console to connect to a VMM management server.|
-
-
-

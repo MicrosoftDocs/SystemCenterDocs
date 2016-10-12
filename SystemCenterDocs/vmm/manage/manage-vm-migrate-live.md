@@ -2,8 +2,9 @@
 title: Run a live migration in the VMM fabric
 description: This article describes how to run a live migration in the VMM fabric
 author:  rayne-wiselman
+ms.author: raynew
 manager:  cfreemanwa
-ms.date:  2016-09-14
+ms.date:  2016-09-22
 ms.topic:  article
 ms.prod:  system-center-threshold
 ms.technology:  virtual-machine-manager
@@ -11,7 +12,8 @@ ms.technology:  virtual-machine-manager
 
 
 # Run a live migration in the VMM fabric
->Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
+
+>Applies To: System Center 2016 - Virtual Machine Manager
 
 
 This article describes how to run a live migration of virtual machines(VMs) or VM storage, in the System Center 2016 - Virtual Machine Manager (VMM). VMM provides live migration support between standalone Hyper-V hosts, or between cluster hosts that have live migration enabled. [Learn more](manage-vm-migrate-overview.md#live-migration).
@@ -67,7 +69,7 @@ You can run live migration on multiple VMs so that two migrations occur at the s
 - You can view concurrent migrations in progress in Hyper-V Manager > **Actions** > **Hyper-V Settings**> **Server** >  **Live Migrations** and **Storage Migrations**. In **Jobs**, verify that the migrations occur simultaneously.
 
 
-## improve live migration speed
+## Improve live migration speed
 
 On Hyper-V hosts, you can increase live migration speed using compression, by using SMB as the transport, or both. The compression method uses algorithms that reduce the data that is transmitted over the wire. The SMB method can allow for faster data transfer.
 

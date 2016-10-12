@@ -13,9 +13,11 @@ ms.assetid:  805b479a-9312-4039-be44-01dda07086d8
 
 # Optionally Disable ECL Logging for Faster Connector Synchronization
 
->Applies To: System Center 2016 Technical Preview - Service Manager
+>Applies To: System Center 2016 - Service Manager
 
-The Active Directory and SCCM connectors in Service Manager can import large amounts of data into the Service Manager database. In doing so, they not only increase the size of the data table, which is where the data from the connectors are stored, but they also increase the size of the EntityChangeLog (ECL) table and history tables considerably. A large ECL table size can be a problem'in some cases, it can slow down the system significantly.
+You can watch this [video](https://channel9.msdn.com/Blogs/hybrid-it-management/Demo-Optionally-Disable-ECL-Logging-for-Faster-Connector-Synchronization-with-Service-Manager?ocid=player) for a quick overview of this feature. For more details, continue reading the article.
+
+The Active Directory (AD) and System Center Configuration Manager (SCCM) connectors in Service Manager can import large amounts of data into the Service Manager database. In doing so, they not only increase the size of the data table, which is where the data from the connectors are stored, but they also increase the size of the EntityChangeLog (ECL) table and history tables considerably. A large ECL table size can be a problem'in some cases, it can slow down the system significantly.
 
 The ECL table, and the history tables in this case, store details about when the data was brought into Service Manager and the properties that were added or updated for each data item.
 
@@ -52,7 +54,7 @@ Because entries are not written to the ECL and history table, the history of the
 In some cases, changes to data like users and computers need be recorded in the database for auditing purposes. In this example, an alternative is to get the change history from the source. For example, would need to get the history of changes made to the user from Active Directory or get the history of changes made to the computer from System Center Configuration Manager.
 
 ## Additional Information About Disabling ECL Logging
-With Service Manager 2016 Technical Preview 5, ECL logging is disabled by default for both a new installation and an upgrade, regardless of whether your disabled ECL logging in Technical Preview 4. Settings that you might have use for Technical Preview 4 with a registry entry are no longer used. You'll need the use the procedure below to disable ECL logging.
+With System Center 2016 - Service Manager, ECL logging is disabled by default for both the new installations and upgrades, regardless of whether your disabled ECL logging in Technical Preview 4. Settings that you might have use for Technical Preview 4 with a registry entry are no longer used. You'll need the use the procedure below to disable ECL logging.
 
 If you used a registry entry for Technical Preview 4 to disable ECL logging, the registry value remains on your management server. You can manually delete the `ConnectorLoggingDisabled` REG_DWORD under the `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\System Center\2010\Common\SDK Service` key.
 

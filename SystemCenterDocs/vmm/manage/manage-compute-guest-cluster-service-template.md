@@ -2,8 +2,9 @@
 title: Create a guest cluster from a service template
 description: This article provides guidance about creating a guest cluster from a service tempalte
 author:  rayne-wiselman
+ms.author: raynew
 manager:  cfreemanwa
-ms.date:  2016-09-04
+ms.date:  2016-09-22
 ms.topic:  article
 ms.prod:  system-center-threshold
 ms.technology:  virtual-machine-manager
@@ -11,7 +12,7 @@ ms.technology:  virtual-machine-manager
 
 # Create a guest cluster from a VMM service template
 
->Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
+>Applies To: System Center 2016 - Virtual Machine Manager
 
 Use this article if you want to create a guest cluster (a failover cluster with two or more nodes containing VMs) from a System Center 2016 - Virtual Machine Manager (VMM) service template.
 

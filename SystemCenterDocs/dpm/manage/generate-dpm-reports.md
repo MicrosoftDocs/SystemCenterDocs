@@ -5,7 +5,7 @@ ms.topic:  article
 author:  markgalioto
 ms.prod:  system-center-threshold
 keywords:  
-ms.date:  2016-06-30
+ms.date:  2016-10-01
 title:  Generate DPM reports
 ms.technology:  data-protection-manager
 ms.assetid:  f9a97135-1c5b-45a9-b307-bb957fde21d8
@@ -13,7 +13,7 @@ ms.assetid:  f9a97135-1c5b-45a9-b307-bb957fde21d8
 
 # Generate DPM reports
 
->Applies To: System Center 2016 Technical Preview - Data Protection Manager
+>Applies To: System Center 2016 - Data Protection Manager
 
 DPM uses SQL Server Reporting Services to create reports. In the **Reporting** task area you can generate and view reports, schedule automation report generation, managing settings, and subscribe to reports. Alternatively you can generate DPM reports from Operations Manager if you're using it to monitor DPM.
 
@@ -166,7 +166,7 @@ Reports aren't scheduled by default in DPM. To start creating and saving histori
 
 2.  Select **Run the <name of report> according to the schedule options**.
 
-3.  On the **Schedule** tab, select schedule options, including frequency, how to group, the time of the day to generate, the granularity. (granularity is limited by frequency so that if the frequency is weekly then so is the granularity), the time period to be included in the report data, and the number of copies to retain in history.
+3.  On the **Schedule** tab, select schedule options, including frequency, how to group, the time of the day to generate, and the granularity. Granularity is limited by frequency. So, if the frequency is weekly, then so is the granularity, the time period to be included in the report data, and the number of copies to retain in history.
 
 ### View reports
 In the DPM Administrator Console you can display both new and historical reports in Internet Explorer. You can use the Reporting Services Web toolbar at the top of report to customize, export or print it.

@@ -18,10 +18,16 @@ ms.assetid:  b6f468e0-fa52-41f3-8b2d-9e07ede377c9
 
 The features and capabilities  listed below  are not included in the System Center Technical Preview. Applications, code, or usage that depends  on these features will not function in this release unless you employ an alternate method. This list is subject to change in subsequent releases and may not include every removed feature or capability.
 
+## Silverlight based Self Service Portal for System Center Service Manager
+**Status in System Center 2016:** Removed.
+
+**Replacement:** A new HTML based Self Service Portal is available with System Center 2016 - Service Manager.
+
 ## App Controller
 **Status in System Center 2016 Technical Preview:** Removed.
 
 **Replacement:** For on-premises deployments, provision IaaS and PaaS solutions using [Windows Azure Pack](https://technet.microsoft.com/en-us/library/dn296435.aspx). Additionally, virtual machine and PaaS self-service solutions are available in Windows Azure Pack and Azure.
+
 
 ## Citrix XenServer and VMware vCenter 4.1/5.1 support in Virtual Machine Manager
 **Status in System Center 2016 Technical Preview:** Removed.

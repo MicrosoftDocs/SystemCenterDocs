@@ -28,6 +28,9 @@ Tags allow you to assign distinct words and phrases to help identify a runbook. 
 ### Logging
 By default, Verbose and Progress records are not written to job history. You can change the settings for a particular runbook to log these records. For more information on these records, see [Runbook Output and Messages](Runbook-Output-and-Messages.md).
 
+### Designated Runbook Worker
+By default, a runbook job will be assigned to a random runbook worker to execute. You can change settings for a particular runbook to execute the runbook on a particular runbook worker. For more information on this, see [Designating a runbook worker](designating-a-runbook-worker.md).
+
 ## Changing Runbook Settings
 
 ### Changing Runbook Settings with the Management Portal
@@ -59,6 +62,3 @@ Set-SmaRunbookConfiguration "WebServiceEndpoint $webServer "Port $port "Name $ru
 [Service Management Automation](../Service-Management-Automation.md)
 [Runbook Operations (old) \[SMA\]](assetId:///230817bd-e503-4beb-9ec3-8c1f028e9b48)
 [How to purge the Service Management Automation database](How-to-purge-the-Service-Management-Automation-database.md)
-
-
-

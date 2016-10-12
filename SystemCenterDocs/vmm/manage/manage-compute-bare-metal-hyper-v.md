@@ -2,8 +2,9 @@
 title: Provision a Hyper-V host or cluster from bare metal computers
 description: This article explains how to provision Hyper-V hosts or clusters from bare metal computers in the VMM fabric
 author:  rayne-wiselman
-manager:  cfreemanwa
-ms.date:  2016-09-04
+ms-author: raynew
+manager:  cfreeman
+ms.date:  2016-10-12
 ms.topic:  article
 ms.prod:  system-center-threshold
 ms.technology:  virtual-machine-manager
@@ -11,7 +12,7 @@ ms.technology:  virtual-machine-manager
 
 # Provision a Hyper-V host or cluster from bare metal computers
 
->Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
+>Applies To: System Center 2016 - Virtual Machine Manager
 
 Use this article if you want to provision a Hyper-V host or cluster from bare metal computers with nothing installed on them, in the System Center 2016 - Virtual Machine Manager (VMM) fabric.
 
@@ -36,8 +37,8 @@ Here's how you do this:
 **Physical computer** | Support for discovery | Each physical computer must have a baseboard management controller (BMC) installed that enables out-of-band management. Through a BMC, you can access the computer remotely, independent of the operating system, and control system functions such as the ability to turn the computer off or on. BMC requirements:<br/><br/> The BMCs must use one of the supported out-of-band management protocols, and the management protocol must be enabled in the BMC settings.<br/><br/> The supported protocols are: Intelligent Platform Management Interface (IPMI) versions 1.5 or 2.0; Data Center Management Interface (DCMI) version 1.0; System Management Architecture for Server Hardware (SMASH) version 1.0 over WS-Management (WS-Man); custom protocols such as Integrated Lights-Out (iLO)<br/><br/> The BMCs should use the latest version of firmware for the BMC model.<br/><br/> The BMCs must be configured with logon credentials and must use either static IP addressing or DHCP. If you use DHCP, we recommend that you configure DHCP to assign a constant IP address to each BMC, for example by using DHCP reservations.<br/><br/> The VMM management server must be able to access the network segment on which the BMCs are configured.
 **Physical computer** | Hyper-V role requirements | Computer that will support the Hyper-V role, must use x64-based processors and have the appropriate basic input/output system (BIOS) settings enabled.
 **Physical computers** | DNS | If your environment has multiple Domain Name System (DNS) servers, where DNS replication may take some time, we strongly recommend that you create DNS entries for the computer names that will be assigned to the physical computers, and allow time for DNS replication to occur. Otherwise, deployment of the computers may fail.
-Physical computer | BIOS/EFI | Determine whether the computers use Extensible Firmware Interface (EFI) or BIOS. If you have computers of each type, you must create a separate profile for each type.
-**Physical computers** | Operating system | You can add a Windows Server Technical Preview node to a Windows Server 2012 R2 cluster, subject to the requirements specified previously; however, you cannot add a Windows Server 2012 R2 node to a Windows Server Technical Preview cluster.
+**Physical computer** | BIOS/EFI | Determine whether the computers use Extensible Firmware Interface (EFI) or BIOS. If you have computers of each type, you must create a separate profile for each type.
+**Physical computers** | Operating system | You can add a Windows Server 2016 node to a Windows Server 2012 R2 cluster, subject to the requirements specified previously; however, you cannot add a Windows Server 2012 R2 node to a Windows Server 2016 cluster.
 **PXE server** | Deployment requirements | You must have a PXE server configured with Windows Deployment Services.<br/><br/> If you have an existing PXE server in your environment configured with Windows Deployment Services, you can add that server to VMM. Then you can use it for provisioning in VMM (and VMM will recognize only the resulting servers). All other requests will continue to be handled by the PXE server according to how it is configured.<br/><br/> If you don't have an existing PXE server, you can deploy the Windows Deployment Services role on a server running a supported operating system (Windows Server 2008 R2 or later).<br/><br/>When you install Windows Deployment Services you should install both the Deployment server and Transport server options. Note that you don't need to add images. During host deployment, VMM uses a virtual hard disk that you've created and stored in the library. In addition you don't need to configure settings on the PXE response tab. VMM provides its own PXE provider.<br/><br/> The PXE server must be in the same subnet as the physical computers that you want to provision.<br/><br/> When you add a PXE server, you must specify account credentials for an account that has local administrator permissions on the PXE server. You can enter a user name and password or specify a Run As account. If you want to use a Run As account, you can create the RunAs account before you begin, or during deployment.
 **PXE server** | Boot order | On each computer, set the BIOS boot order to boot from a Pre-Boot Execution Environment (PXE)-enabled network adapter as the first device.
 **Virtual hard disk** | Operating system | Make sure you have a generalized virtual hard disk in a VMM library share. It should be running Windows Server 2008 R2 or later.<br/><br/> We recommend that for production servers, you use a fixed disk (.vhd or .vhdx file format) to increase performance and to help protect user data. Note that by default, when you create a physical computer profile, VMM converts a dynamic disk to a fixed disk.<br/><br/> If you plan to assign customer drivers they must exist in the library.<br/><br/> To create the virtual hard disk, you can create a virtual machine, install the guest operating system, and then use sysprep with the /generalize and the /oobe options.<br/><br/> The operating system on the virtual hard disk that you deploy on hosts or clusters must support the boot from virtual hard disk (VHD) option.<br/><br/> f you use Remote Desktop Services (RDS) to manage servers, we recommend that you enable the RDS connections in the image. You can also enable RDS by using an answer file in the physical computer profile.
@@ -153,10 +154,3 @@ When you deploy a Hyper-V cluster from bare metal VMM does the following:
 9. When you have filled in needed information for all the computers you want to provision, click Next.
 10. In **Summary** confirm the settings, and then click **Finish** to deploy the new Hyper-V hosts and bring them under VMM management. Depending on your settings, the Jobs dialog box might appear. Make sure that all steps in the job have a status of Completed, and then close the dialog box.
 16. To confirm that the host was added click **Fabric** > **Servers** > **All Hosts** > and locate and click the new host cluster. In the **Hosts** pane, in the **Host Status** column, verify that each node in the cluster is OK.
-
-
-## Add a bare metal computer as a node to an existing cluster
-
-You can add a bare metal computer to an existing host cluster. If you created the cluster from bare metal you can use the same elements, including the physical computer profile and PXE server.
-
-To add a computer to an existing host cluster, follow the instructions in [Provision a Hyper-V cluster from bare metal](#provision-a-hyper-v-cluster-from-bare-metal), but add a cluster instead of creating one. 

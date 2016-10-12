@@ -5,7 +5,7 @@ ms.topic:  article
 author:  markgalioto
 ms.prod:  system-center-threshold
 keywords:  
-ms.date:  2016-06-30
+ms.date:  2016-10-12
 title:  Identify compatible tape libraries
 ms.technology:  data-protection-manager
 ms.assetid:  4ed6e64f-21d4-4c93-9979-3f1a48317cbe
@@ -13,7 +13,7 @@ ms.assetid:  4ed6e64f-21d4-4c93-9979-3f1a48317cbe
 
 # Identify compatible tape libraries
 
->Applies To: System Center 2016 Technical Preview - Data Protection Manager
+>Applies To: System Center 2016 - Data Protection Manager
 
 Use the TechNet wiki to find the latest list of [compatible tape libraries for DPM](http://social.technet.microsoft.com/wiki/contents/articles/17105.compatible-tape-libraries-for-system-center-2012-dpm.aspx).
 
@@ -31,17 +31,19 @@ Before you run the tool, do the following:
 
 -   Insert a read/write data tape in slot 0. The contents of this tape will be overwritten.
 
--   Insert a cleaning tape in slot 1. The tapes must be in consecutive slots, failing which there should be no tapes in the slots between the tapes. The data tape is in a slot preceding the cleaning tape.
+-   Insert a cleaning tape in slot 1. The tapes must be in consecutive slots, and there should be no tapes in the slots between the tapes. The data tape's slot must precede the cleaning tape slot.
+
+To acquire and run the compatibility tool:
 
 1.  Download the [DPM Tape Library Compatibility Test Tool](http://go.microsoft.com/fwlink/?LinkId=203337).
 
 2.  Extract the files. Open an elevated command prompt, and navigate to the folder to which you extracted the tool.
 
-3.  To check that the tape is visible to the tool, type **DPMLibraryTest.exe /CERTIFY /LL.** . Then certify as follows:
+3.  To check that the tape is visible to the tool, type **DPMLibraryTest.exe /CERTIFY /LL**. Then certify as follows:
 
-    -   To certify a tape library, type D**PMLibraryTest.exe /CERTIFY /TL <tape library name> /AT**
+    -   To certify a tape library, type ```DPMLibraryTest.exe /CERTIFY /TL <tape library name> /AT```
 
-    -   To certify a standalone tape drive, type D**PMLibraryTest.exe /CERTIFY /TL <device name> /SA**
+    -   To certify a standalone tape drive, type ```DPMLibraryTest.exe /CERTIFY /TL <device name> /SA```
 
 4.  The tool runs the following tests:
 
@@ -61,7 +63,7 @@ Before you run the tool, do the following:
 
     -   **Test 5: I/O** - This test selects the first writable tape, writes a few buffers to it, and then attempts to read what's been written. This test only checks read/write capabilities. Any specific errors in the drive should be inspected using the advanced mode.
 
-5.  After the tool completes the test, log information will be provided in the LibraryTestTool-*Curr.errlog files which are located in the folder from which you ran the tool. If the tests complete successful you can assume your tape library should work with DPM.
+5.  After the tool completes the test, log information will be provided in the LibraryTestTool-*Curr.errlog files which are located in the folder from which you ran the tool. If the tests successfully complete, then you can assume your tape library should work with DPM.
 
 ## Run the compatibility tool for Hyper-V fiber channel
 
@@ -84,11 +86,11 @@ DPMLibraryTest.exe /CERTIFY /<switch_1> [/switch_2]
 
 |Switch|Details|Example|
 |----------|-----------|-----------|
-|/LL|List avaialable tape libraries and drives|**DPMLibraryTest.exe /CERTIFY /LL**|
+|/LL|List available tape libraries and drives|```DPMLibraryTest.exe /CERTIFY /LL```|
 |/LT|List all test cases||
 |/TL|Test a library||
-|/AT|Run all test cases|Run test on the physical library: **DPMLibraryTest.exe /CERTIFY /TL \\\\.\Changer0 /AT**|
-|/ST|Run specific tests|Run tests 3 and 4 on a physical library: **DPMLibraryTest.exe /CERTIFY /TL \\\\.\Changer0 /ST 3 4**<br /><br />Run all tests except cleaner: **DPMLibraryTest.exe /CERTIFY /TL \\\\.\Changer0 /ST 1 2 4 5**|
-|/SA|Run standalone drive test cases|**DPMLibraryTest.exe /CERTIFY /TL \\\\.\Tape21745678 /SA**|
+|/AT|Run all test cases|Run test on the physical library:<br/> ```DPMLibraryTest.exe /CERTIFY /TL \\\\.\Changer0 /AT```|
+|/ST|Run specific tests|Run tests 3 and 4 on a physical library:<br/> ```DPMLibraryTest.exe /CERTIFY /TL \\\\.\Changer0 /ST 3 4```<br /><br />Run all tests except cleaner:<br/> ```DPMLibraryTest.exe /CERTIFY /TL \\\\.\Changer0 /ST 1 2 4 5```|
+|/SA|Run standalone drive test cases|```DPMLibraryTest.exe /CERTIFY /TL \\\\.\Tape21745678 /SA```|
 |/EX|Show examples||
 |/Help or /?|Show help||

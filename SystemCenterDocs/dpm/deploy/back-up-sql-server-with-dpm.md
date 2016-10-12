@@ -5,7 +5,7 @@ ms.topic:  article
 author:  markgalioto
 ms.prod:  system-center-threshold
 keywords:  
-ms.date:  2016-06-30
+ms.date:  2016-10-12
 title:  Back up SQL Server with DPM
 ms.technology:  data-protection-manager
 ms.assetid:  3718b565-9640-4c3f-9d44-aa969041e0e6
@@ -13,7 +13,7 @@ ms.assetid:  3718b565-9640-4c3f-9d44-aa969041e0e6
 
 # Back up SQL Server with DPM
 
->Applies To: System Center 2016 Technical Preview - Data Protection Manager
+>Applies To: System Center 2016 - Data Protection Manager
 
 DPM provides backup and recovery for SQL Server databases. In addition to backing up SQL Server databases you can run a system backup or full bare-metal  backup of the SQL Server computer. Here's what DPM can protect:
 
@@ -69,7 +69,6 @@ DPM provides backup and recovery for SQL Server databases. In addition to backin
 
     -   DPM will honor the backup policy for availability groups that is set in SQL Server based on the backup preferences, as follows:
 
-
         -   Prefer secondary - Backups should occur on a secondary replica except when the primary replica is the only replica online. If there are multiple secondary replicas available then the node with the highest backup priority will be selected for backup. In the case that only primary replica is available then backup should occur on the primary replica.
 
         -   Secondary only - Backup shouldn't be performed on the primary replica. If the primary replica is the only one online, the backup shouldn't occur.
@@ -92,7 +91,7 @@ DPM provides backup and recovery for SQL Server databases. In addition to backin
 
 -   SQL Server 2014 backup issues:
 
-    -   SQL server 2014 added a new feature to create a database for on-premise SQL Server in Windows Azure Blob storage. DPM cannot be used to protect this configuration.
+    -   SQL server 2014 added a new feature to create a database for on-premises SQL Server in Windows Azure Blob storage. DPM cannot be used to protect this configuration.
 
     -   There are some known issues with "Prefer secondary" backup preference for the SQL AlwaysOn option, DPM always takes a backup from secondary; if no secondary can be found then the backup fails.
 
@@ -118,9 +117,9 @@ DPM provides backup and recovery for SQL Server databases. In addition to backin
 
 1.  To create a protection group, click **Protection** > **Actions** > **Create Protection Group** to open the **Create New Protection Group** wizard in the DPM console.
 
-2.  In **Select Protection Group Type** select **Servers**.
+2.  In **Select Protection Group Type**, select **Servers**.
 
-3.  In **Select Group Members** select the SQL Server instances on the server you want to protect.  Learn more in [Deploy protection groups](Deploy-protection-groups.md). Note that:
+3.  In **Select Group Members**, select the SQL Server instances on the server you want to protect.  Learn more in [Deploy protection groups](Deploy-protection-groups.md). Note that:
 
     -   You have the option of selecting protection at the instance level or protection of individual databases.
 
@@ -129,11 +128,11 @@ DPM provides backup and recovery for SQL Server databases. In addition to backin
     -   If you are using SQL Server AlwaysOn availability groups, you can create a protection group that contains the availability groups.   DPM detects the availability groups and will displays them under **Cluster Group**. Select the whole group to protect it so that any databases that you add to the group are protected automatically, or select individual databases.
         For each instance of SQL Server, you can also run a system state backup or full bare metal backup. This in useful if you want to be able to recover your whole server and not just data.
 
-4.  In **Select data protection method**  specify how you want to handle short and long-term backup. Short-term back up is always to disk first, with the option of backing up from the disk to the Azure cloud with Azure backup (for short or long-term). As an alternative to long-term backup to the cloud you can also configure long-term back up to a standalone tape device or tape library connected to the DPM server.
+4.  In **Select data protection method**,  specify how you want to handle short and long-term backup. Short-term back up is always to disk first, with the option of backing up from the disk to the Azure cloud with Azure backup (for short or long-term). As an alternative to long-term backup to the cloud you can also configure long-term back up to a standalone tape device or tape library connected to the DPM server.
 
-5.  In **Select short-term goals** specify how you want to back up to short-term storage on disk.   In R**etention range** you specify how long you want to keep the data on disk. In **Synchronization frequency** you specify how often you want to run an incremental backup to disk. If you don't want to set a back up interval you can check Just before  a recovery point so that DPM will run an express full backup just before each recovery point is scheduled.
+5.  In **Select short-term goals**, specify how you want to back up to short-term storage on disk. In **Retention range**, you specify how long you want to keep the data on disk. In **Synchronization frequency**,  you specify how often you want to run an incremental backup to disk. If you don't want to set a back up interval, you can select **Just before a recovery point** so that DPM will run an express full backup just before each recovery point is scheduled.
 
-6.  If you want to store data on tape for long-term storage in **Specify long-term goals** indicate how long you want to keep tape data (1-99 years). In Frequency of backup specify how often backups to tape should run. The frequency is based on the retention range you've specified:
+6.  If you want to store data on tape for long-term storage, in **Specify long-term goals**, indicate how long you want to keep tape data (1-99 years). In Frequency of backup specify how often backups to tape should run. The frequency is based on the retention range you've specified:
 
     -   When the retention range is 1-99 years, you can select backups to occur daily, weekly, bi-weekly, monthly, quarterly, half-yearly, or yearly.
 
@@ -143,23 +142,25 @@ DPM provides backup and recovery for SQL Server databases. In addition to backin
 
     On a stand-alone tape drive, for a single protection group, DPM uses the same tape for daily backups until there is insufficient space on the tape. You can also colocate data from different protection groups on tape.
 
-    On the **Select Tape and Library Details** page specify the tape/library to use, and whether data should be compressed and encrypted on tape.
+    On the **Select Tape and Library Details**, page specify the tape/library to use, and whether data should be compressed and encrypted on tape.
 
-7.  In **Review disk allocation** page review the storage pool disk space allocated for the protection group. **Data size** shows the size of the data you want to back up, and **Disk space** shows the space that DPM recommends for the protection group.
+7.  In the **Review disk allocation** page review the storage pool disk space allocated for the protection group.
 
-8.  In **Choose replica creation method** select how you want to handle the initial full data replication.  If you select to replicate over the network we recommended you choose an off-peak time. For large amounts of data or less than optimal network conditions, consider replicating the data offline using removable media.
+    **Total Data size** is the size of the data you want to back up, and **Disk space to be provisioned on DPM** is the space that DPM recommends for the protection group. DPM chooses the ideal backup volume, based on the settings. However, you can edit the backup volume choices in the **Disk allocation details**. For the workloads, select the preferred storage in the dropdown menu. Your edits change the values for **Total Storage** and **Free Storage** in the **Available Disk Storage** pane. Underprovisioned space is the amount of storage DPM suggests you add to the volume, to continue with backups smoothly in the future.
+
+8.  In **Choose replica creation method**, select how you want to handle the initial full data replication.  If you select to replicate over the network we recommended you choose an off-peak time. For large amounts of data or less than optimal network conditions, consider replicating the data offline using removable media.
 
 9. In **Choose consistency check options**, select how you want to automate consistency checks. You can enable a check to run only when replica data becomes inconsistent, or according to a schedule. If you don't want to configure automatic consistency checking, you can run a manual check at any time by right-clicking the protection group in the **Protection** area of the DPM console, and selecting **Perform Consistency Check**.
 
 10. If you've selected to back up to the cloud with Azure Backup, on the **Specify online protection data** page make sure the workloads you want to back up to Azure are selected.
 
-11. In **Specify online backup schedule** specify how often incremental backups to Azure should occur. You can schedule backups to run every day/week/month/year and the time/date at which they should run. Backups can occur up to twice a day. Each time a back up runs a data recovery point is created in Azure from the copy of the backed up data stored on the DPM disk.
+11. In **Specify online backup schedule**, specify how often incremental backups to Azure should occur. You can schedule backups to run every day/week/month/year and the time/date at which they should run. Backups can occur up to twice a day. Each time a back up runs a data recovery point is created in Azure from the copy of the backed up data stored on the DPM disk.
 
-12. In **Specify online retention policy** you can specify how the recovery points created from the daily/weekly/monthly/yearly backups are retained in Azure.
+12. In **Specify online retention policy**, you can specify how the recovery points created from the daily/weekly/monthly/yearly backups are retained in Azure.
 
-13. In **Choose online replication** specify how the initial full replication of data will occur. You can replicate over the network, or do an offline backup (offline seeding). Offline backup uses the Azure Import feature. [Read more](https://azure.microsoft.com/en-in/documentation/articles/backup-azure-backup-import-export/).
+13. In **Choose online replication**, specify how the initial full replication of data will occur. You can replicate over the network, or do an offline backup (offline seeding). Offline backup uses the Azure Import feature. For more information, see [Offline-backup workflow in Azure Backup](https://azure.microsoft.com/documentation/articles/backup-azure-backup-import-export/).
 
-14. On the  **Summary** page review your settings. After you click **Create Group** initial replication of the data occurs. When it finishes the protection group status will show as **OK** on the **Status** page. Backup then takes place in line with the protection group settings.
+14. On the  **Summary** page, review your settings. After you click **Create Group** initial replication of the data occurs. When it finishes the protection group status will show as **OK** on the **Status** page. Backup then takes place in line with the protection group settings.
 
 ## Monitoring
 After the protection group's been created the initial replication occurs and DPM starts backing up and synchronizing SQL Server data. DPM monitors the initial synchronization and subsequent backups.  You can monitor the SQL Server data in a couple of ways:

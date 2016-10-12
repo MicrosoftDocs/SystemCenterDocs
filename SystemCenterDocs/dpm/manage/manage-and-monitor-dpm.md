@@ -5,7 +5,7 @@ ms.topic:  article
 author:  markgalioto
 ms.prod:  system-center-threshold
 keywords:  
-ms.date:  2016-06-30
+ms.date:  2016-10-01
 title:  Manage and monitor DPM
 ms.technology:  data-protection-manager
 ms.assetid:  241fe091-0044-4664-8eaf-9b022e6874f3
@@ -13,7 +13,7 @@ ms.assetid:  241fe091-0044-4664-8eaf-9b022e6874f3
 
 # Manage and monitor DPM
 
->Applies To: System Center 2016 Technical Preview - Data Protection Manager
+>Applies To: System Center 2016 - Data Protection Manager
 
 This section describes how to manage, maintain, and monitor DPM after you've completed deployment.
 

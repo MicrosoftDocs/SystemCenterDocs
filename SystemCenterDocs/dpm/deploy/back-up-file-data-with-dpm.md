@@ -3,9 +3,10 @@ description:
 manager:  cfreemanwa
 ms.topic:  article
 author:  markgalioto
+ms.author: markgal
 ms.prod:  system-center-threshold
 keywords:  
-ms.date:  2016-06-30
+ms.date:  2016-10-12
 title:  Back up file data with DPM
 ms.technology:  data-protection-manager
 ms.assetid:  98626f09-e4b1-4cbb-9195-651d54e118d1
@@ -13,15 +14,15 @@ ms.assetid:  98626f09-e4b1-4cbb-9195-651d54e118d1
 
 # Back up file data with DPM
 
->Applies To: System Center 2016 Technical Preview - Data Protection Manager
+>Applies To: System Center 2016 - Data Protection Manager
 
 You can back up file data on server and client computers.
 
 ## Before you start
 
-1.  **Deploy DPM** - Verify that DPM is installed and deployed correctly. If you haven't see:
+1.  **Deploy DPM** - Verify that DPM is installed and deployed correctly. We recommend that you review the following articles:
 
-    -   System requirements for DPM
+    -   [System requirements](../../system-requirements/system-requirements.md)
 
     -   [What can DPM back up?](../get-started/What-can-DPM-back-up-.md)
 
@@ -58,7 +59,9 @@ After you have your DPM infrastructure set up you can enable protection machines
 
     On the **Select Tape and Library Details** page specify the tape/library to use, and whether data should be compressed and encrypted on tape.
 
-7.  In **Review disk allocation** page review the storage pool disk space allocated for the protection group. **Data size** shows the size of the data you want to back up, and **Disk space** shows the space that DPM recommends for the protection group.
+7.  In the **Review disk allocation** page review the storage pool disk space allocated for the protection group.
+
+    **Total Data size** is the size of the data you want to back up, and **Disk space to be provisioned on DPM** is the space that DPM recommends for the protection group. DPM chooses the ideal backup volume, based on the settings. However, you can edit the backup volume choices in the **Disk allocation details**. For the workloads, select the preferred storage in the dropdown menu. Your edits change the values for **Total Storage** and **Free Storage** in the **Available Disk Storage** pane. Underprovisioned space is the amount of storage DPM suggests you add to the volume, to continue with backups smoothly in the future.
 
 8.  In **Choose replica creation method** select how you want to handle the initial full data replication.  If you select to replicate over the network we recommended you choose an off-peak time. For large amounts of data or less than optimal network conditions, consider replicating the data offline using removable media.
 

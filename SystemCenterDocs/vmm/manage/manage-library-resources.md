@@ -2,18 +2,18 @@
 title: Manage the VMM library
 description: This article describes management tasks for the VMM library
 author:  rayne-wiselman
+ms.author: raynew
 manager:  cfreemanwa
-ms.date:  2016-09-04
+ms.date:  2016-09-22
 ms.topic:  article
 ms.prod:  system-center-threshold
 ms.technology:  virtual-machine-manager
 ---
 
 
-
 # Manage the VMM library
 
->Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
+>Applies To: System Center 2016 - Virtual Machine Manager
 
 Read this article to learn how to manage the System Center 2016 - Virtual Machine Manager (VMM) library by refreshing it, moving files around, and removing orphaned resources.
 
@@ -74,4 +74,3 @@ To remove orphaned resources, you'll need to modify the templates that reference
 2. You won't be able to delete an orphaned resource until templates that reference it are updated to valid references. To view the templates right-click the orphaned resource > **Properties**. To update the template click it and then in the **Properties** dialog, locate the resource that's missing > **Remove**.
 3. Add a new resource that's valid.
 4. When you've completed these steps for all templates, closed the **Properties** dialog. To verify there aren't any dependences right-click the orphaned resource > **Properties** > **Dependencies**. Then right-click the orphaned resource > **Delete**.
-

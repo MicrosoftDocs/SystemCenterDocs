@@ -2,15 +2,17 @@
 title: Allocate storage to host groups
 description: This article describes how to allocate block storage to VMM host groups
 author:  rayne-wiselman
+ms.author: raynew
 manager:  cfreemanwa
-ms.date:  2016-09-07
+ms.date:  2016-09-22
 ms.topic:  article
 ms.prod:  system-center-threshold
 ms.technology:  virtual-machine-manager
 ---
+
 # Allocate storage to host groups
 
->Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
+>Applies To: System Center 2016 - Virtual Machine Manager
 
 After block storage has been discovered and classified in the System Center 2016 - Virtual Machine Manager (VMM) fabric, you can allocate it to host groups.  You can allocate an entire storage pool, or a specific logical unit (LUN).
 

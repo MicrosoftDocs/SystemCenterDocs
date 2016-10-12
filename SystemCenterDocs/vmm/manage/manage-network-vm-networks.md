@@ -2,8 +2,9 @@
 title: Set up VM networks in the VMM fabric
 description: This article describes how to set up VM networks in the VMM fabric
 author:  rayne-wiselman
+ms.author: raynew
 manager:  cfreemanwa
-ms.date:  2016-09-04
+ms.date:  2016-09-22
 ms.topic:  article
 ms.prod:  system-center-threshold
 ms.technology:  virtual-machine-manager
@@ -11,7 +12,7 @@ ms.technology:  virtual-machine-manager
 
 # Set up VM networks in the VMM fabric
 
->Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
+>Applies To: System Center 2016 - Virtual Machine Manager
 
 This article describes how to create VM networks based on System Center 2016 - Virtual Machine Manager (VMM) logical networks.
 
@@ -21,7 +22,7 @@ In a virtualized network environment, we want to abstract virtual machines from 
 
 - A logical network can have one or more associated VM networks.
 - If a logical network isn't isolated, then a single VM network with be associated with it.
-- If a logical network is isolated, then multiple VM networks can be associated with it. These multiple VM networks allow us to use networks for different purposes. For example as a provider you might want to host workload for multiple tenants on a single logical network, using a separate VM network for each tenant. The type of VM network you set up depends on the isolation settings for the logical network:
+- If a logical network is isolated, then multiple VM networks can be associated with it. These multiple VM networks allow us to use networks for different purposes. For example, as a provider you might want to host workload for multiple tenants on a single logical network, using a separate VM network for each tenant. The type of VM network you set up depends on the isolation settings for the logical network:
 
 	- **Network virtualization**: If the logical network is isolated using network virtualization you can create multiple VM networks for a logical network. Within a VM network tenants can use any IP addresses they want for their VMs regardless of the IP addresses used on other VM networks. Tenants can also configure some network settings.
 	- **VLAN**: If the logical network is isolated using VLAN or PVLAN you'll create on VM network for each network site and VLAN in the logical network.

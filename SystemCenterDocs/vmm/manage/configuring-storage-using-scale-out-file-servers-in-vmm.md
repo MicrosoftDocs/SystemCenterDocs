@@ -1,40 +1,16 @@
 ---
 description:  
-manager:  cfreemanwa
+manager:  cfreeman
 ms.topic:  article
 author:  rayne-wiselman
+ms.author: raynew
+redirect_url: manage-sofs-overview
 ms.prod:  system-center-threshold
 keywords:  
-ms.date:  2016-06-28
+ms.date:  2016-10-12
 title:  Configuring storage using Scale Out File Servers in VMM
 ms.technology:  virtual-machine-manager
 ms.assetid:  98fa48a6-c974-4563-be89-a1e692dff5f3
 ---
 
 # Configuring storage using Scale-Out File Servers in VMM
-
->Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
-
-You can use Virtual Machine Manager (VMM) to configure a Scale-Out File Server cluster as the storage for Hyper-V hosts or host clusters. If your Scale-Out File Server cluster runs Windows Server Technical Preview, you can configure it with Storage Spaces Direct, which is described in [Storage Spaces Direct in Windows Server Technical Preview](https://technet.microsoft.com/library/mt126109.aspx).
-
-This section focuses on the process after a Scale-Out File Server cluster already exists and is under management in VMM. For links to topics about cluster creation, see [Stage 1: Discover storage during creation of your Scale-Out File Server](Overview--configuring-storage-using-Scale-Out-File-Servers-in-VMM.md#BKMK_discovery) in "Overview: configuring storage using Scale-Out File Server clusters in VMM."
-
--   [Overview: configuring storage using Scale-Out File Servers in VMM](Overview--configuring-storage-using-Scale-Out-File-Servers-in-VMM.md)
-
--   [How to add an existing Scale-Out File Server to storage in VMM](How-to-add-an-existing-Scale-Out-File-Server-to-storage-in-VMM.md)
-
--   [How to create or modify a storage pool on a Scale-Out File Server in VMM](How-to-create-or-modify-a-storage-pool-on-a-Scale-Out-File-Server-in-VMM.md)
-
--   [How to create a file share on a Scale-Out File Server in VMM](How-to-create-a-file-share-on-a-Scale-Out-File-Server-in-VMM.md)
-
--   [How to assign file shares on a Scale-Out File Server to a Hyper-V host or cluster in VMM](How-to-assign-file-shares-on-a-Scale-Out-File-Server-to-a-Hyper-V-host-or-cluster-in-VMM.md)
-
--   [How to set a disk witness for a Scale-Out File Server quorum in VMM](How-to-set-a-disk-witness-for-a-Scale-Out-File-Server-quorum-in-VMM.md)
-
-## See Also
-[Overview: storage classifications in VMM](Overview--storage-classifications-in-VMM.md)
-[Managing storage resources and capacity with VMM](Managing-storage-resources-and-capacity-with-VMM.md)
-[Managing fabric resources with VMM](Managing-fabric-resources-with-VMM.md)
-
-
-

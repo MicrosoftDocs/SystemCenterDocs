@@ -1,11 +1,12 @@
 ---
 description:  
-manager:  cfreemanwa
+manager:  cfreeman
 ms.topic:  article
 author:  rayne-wiselman
+ms.author: raynew
 ms.prod:  system-center-threshold
 keywords:  
-ms.date:  2016-06-28
+ms.date:  2016-10-12
 title:  Deploy a RAS Gateway using VMM
 ms.technology:  virtual-machine-manager
 ms.assetid:  150b922a-d9fb-4b36-b964-e1738f054eb3
@@ -14,11 +15,11 @@ ms.service:  virtual-network
 
 # Deploy a RAS Gateway using VMM
 
->Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
+>Applies To: System Center 2016 - Virtual Machine Manager
 
 ## Introduction
 
-This topic helps you evaluate the Software Defined Networking (SDN) features in Windows Server Technical Preview 5 and Virtual Machine Manager 2016 Technology Preview 5. In particular, this topic is focused on scenarios that incorporate a RAS Gateway with the Virtual Machine Manager (VMM).
+This topic helps you evaluate the Software Defined Networking (SDN) features in Windows Server RTM and Virtual Machine Manager 2016 RTM. In particular, this topic is focused on scenarios that incorporate a RAS Gateway with the Virtual Machine Manager (VMM).
 
 A RAS Gateway is a data path element in SDN that enables Site-to-site (S2S) connectivity between two autonomous systems. Specifically, a RAS Gateway enables S2S connectivity between remote tenant networks and your datacenter using IPSec, Generic Routing Encapsulation (GRE) or Layer 3 Forwarding.
 
@@ -48,11 +49,11 @@ This section covers the setup required for deploying the Gateway virtual machine
 
 ### Topology overview
 
-Refer to the toplogy diagram in the following Microsoft TechNet Library topic: [Plan a Software Defined Network Infrastructure](https://technet.microsoft.com/library/mt605207.aspx)
+Refer to the topology diagram in the following Microsoft TechNet Library topic: [Plan a Software Defined Network Infrastructure](https://technet.microsoft.com/library/mt605207.aspx)
 
 The diagram shows a sample 4-node setup. The setup is highly available with three network controller nodes (virtual machines), three SLB/MUX nodes, and three gateway virtual machines. It shows two tenants with one virtual network broken into two virtual subnets to simulate a web tier and a database tier. Both the infrastructure and tenant virtual machines can be redistributed across any physical host.
 
-All the gateway virtual machines must run Windows Server Technical Preview 5 with Zero Day Package.
+All the gateway virtual machines must run Windows Server RTM with Zero Day Package.
 
 #### Logical Networks
 
@@ -90,7 +91,7 @@ The GRE VIP network is a subnet that exists solely for defining VIPs that are as
 
 4.  Choose a starting and ending IP address for your range.
     >[!IMPORTANT]
-    Start your range on the fourth addresses of your available subnet. For example, if your available subnet is from .1 to .254, start your range at .4.
+    Start your range on the second addresses of your available subnet. For example, if your available subnet is from .1 to .254, start your range at .2.
 
 5.  In the **IP addresses reserved for load balancer VIPs** box, type the IP addresses range in the subnet. This should match the range you used for starting and ending IP addresses.
 
@@ -98,8 +99,6 @@ The GRE VIP network is a subnet that exists solely for defining VIPs that are as
 
 7.  Review the summary information and complete the wizard.
 
->[!IMPORTANT]
-    You shouldn't advertise your GRE VIP pool to the SLBM. If you do, you may break your gateway connectivity.
 
 ## Deployment
 Now you can deploy a gateway using a VMM Service Template.
@@ -193,13 +192,13 @@ Now that the gateway service is deployed, you can configure its properties and a
 
 6.  Select the gateway service instance you created earlier and click **OK**.
 
-7.  Select the **Run As account** that will be used by network controller to access the gateway virtual machines.
+7.  Select the **Run As account** that will be used by network controller to access the gateway virtual machines. This account should have admin privileges on the gateway VMs.
 
 8.  In **GRE VIP subnet**, select the VIP subnet that you created previously.
 
 9.  In **Public IPv4 pool**, select the Public IP Pool you configured during the SLB deployment.
 
-10. **Public IPv4 address**, provide an IP address from the previous pool, and ensure you don't select the initial 3 IP addressed from the range.
+10. **Public IPv4 address**, provide an IP address from the previous pool.
 
 11. Configure the Gateway Capacity in **Gateway Capacity** field.
 
@@ -223,11 +222,11 @@ The Service instance that you deployed is now associated with the Gateway Manage
 
 As a quick validation step, you can also try to access the following URL from a browser on your VMM Server:
 >
->``https://<RESTIP-or-FQDN>/networking/v1/gateways ``
+>``https://<RESTName-or-FQDN>/networking/v1/gateways ``
 >
 >Example:
 >
->``https://10.184.108.56/networking/v1/gateways ``
+>``https://NCCluster.Contoso.com/networking/v1/gateways ``
 >
 >This URL shows a JSON file with details about the gateway virtual machines. If the gateway is not on-boarded successfully, this URL will not be accessible.
 
@@ -243,7 +242,7 @@ A S2S IPSec connection allows you to securely access remote virtual machines and
 6.  Type a subnet as shown in the following diagram. This subnet is used to route packets out of the VM Network. This subnet need not be pre-configured in your datacenter.
 
     ![VMM routing subnet](../../media/VMM-routing-subnet.png)
-7.  Type a connection name of your choice. The name used in the example screenshot is **TP5_IPSEC**.
+7.  Type a connection name of your choice.
 8.  Type the IP address of the Remote endpoint.
 9.  Optionally, you can also configure bandwidth settings on this screen.
 10. Select the **Authentication** tab.
@@ -275,7 +274,7 @@ A S2S GRE connection allows you to access remote virtual machines and services f
 
     ![VMM routing subnet 2](../../media/VMM-routing-subnet-2.png)
 
-8.  Type a connection name. The name used in the example screenshot is **TP5_GRE**.
+8.  Type a connection name. 
 9.  Type the IP address of the Remote endpoint.
 10. Type the GRE key.
 11. Optionally, you can complete the other fields on this screen but these values are not required to set up a S2S GRE connection.
@@ -289,7 +288,7 @@ To validate that your S2S GRE connectivity is configured properly, try to ping t
 
 An L3 gateway acts as a bridge between the physical infrastructure in the datacenter and the virtualized infrastructure in the Hyper-V Network Virtualization cloud. For more information about L3 gateway deployment scenarios, see [Windows Server Gateway](https://technet.microsoft.com/library/dn313101.aspx#bkmk_private).
 
-VMM does not support configuring BGP-enabled dynamic L3 connectivity in TP 5.
+VMM supports configuring BGP-enabled dynamic L3 as well as static connectivity in RTM.
 
 An L3 connection can be configured using a PowerShell script.
 
@@ -348,4 +347,3 @@ To configure an L3 connection, use the following sample PowerShell script. You m
         Add-SCNetworkRoute -IPSubnet $route -RunAsynchronously -VPNConnection $vpnConnection
             -VMNetworkGateway $VmNetworkGateway
     }
-

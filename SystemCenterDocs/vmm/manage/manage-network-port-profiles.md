@@ -2,8 +2,9 @@
 title: Set up port profiles in the VMM fabric
 description: This article describes how to create port profiles in the VMM fabric
 author:  rayne-wiselman
+ms.author: raynew
 manager:  cfreemanwa
-ms.date:  2016-09-04
+ms.date:  2016-09-22
 ms.topic:  article
 ms.prod:  system-center-threshold
 ms.technology:  virtual-machine-manager
@@ -11,7 +12,7 @@ ms.technology:  virtual-machine-manager
 
 # Set up port profiles in the VMM fabric
 
->Applies To: System Center 2016 Technical Preview - Virtual Machine Manager
+>Applies To: System Center 2016 - Virtual Machine Manager
 
 Use this article to learn about and set up uplink port profiles and virtual network adapter port profiles in the System Center 2016 - Virtual Machine Manager (VMM) networking fabric.
 
@@ -42,7 +43,7 @@ not support network virtualization.
 
 ### Create an uplink port profile
 
-1. Click **Fabric** > **Home** > **Show **> **Fabric Resources**. Click **Fabric** tab > **Networking** > **Port Profiles** > **Hyper-V Port Profile**.
+1. Click **Fabric** > **Home** > **Show** > **Fabric Resources**. Click **Fabric** tab > **Networking** > **Port Profiles** > **Hyper-V Port Profile**.
 2. In **Create Hyper-V Port Profile Wizard** > **General** type in a name, description and select **Uplink Port Profile**. Select the load balancing and teaming settings:
 
 	- **Load balancing**: **Host Default** is the default setting and this will either distribute network traffic based on the Hyper-V switch port identifier of the source VM or use a **Dynamic** loading balancing algorithm, depending what the Hyper-V host supports. Dynamic is only available from Windows Server 2012 R2 onwards. You can also select:
@@ -62,7 +63,7 @@ After you create an uplink port profile, the next step is to add it to a logical
 
 ## Create a virtual network adapter port profile
 
-1. Click **Fabric** > **Home** > **Show **> **Fabric Resources**. Click **Fabric** tab > **Networking** > **Port Profiles** > **Home** > **Create** > **Hyper-V Port Profile**.
+1. Click **Fabric** > **Home** > **Show** > **Fabric Resources**. Click **Fabric** tab > **Networking** > **Port Profiles** > **Home** > **Create** > **Hyper-V Port Profile**.
 2. In **Create Hyper-V Port Profile Wizard** > **General** type in a name, description and select **Uplink Port Profile**.
 3. In **Offload Setting**, specify a setting for offloading traffic:
 

@@ -5,7 +5,7 @@ ms.topic:  article
 author:  bwren
 ms.prod:  system-center-threshold
 keywords:  
-ms.date:  2016-09-01
+ms.date:  2016-10-12
 title:  How to install Orchestrator Features
 ms.technology:  orchestrator
 ms.assetid:  cd0b7e89-7bd2-482a-b840-f3f119e6f9ea
@@ -41,7 +41,7 @@ Use the following steps to install an System Center 2016 - Orchestrator manageme
 
 4.  On the **Please read this License Terms** page, review and accept the Microsoft Software License Terms, and then click **Next**.
 
--   On the **Diagnostic and Usage data** page, review the Diagnostic and Usage data notice, and then click **Next**.
+    On the **Diagnostic and Usage data** page, review the Diagnostic and Usage data notice, and then click **Next**.
 
 5.  On the **Select features to install** page, ensure that **Management Server** is the only feature selected, and then click **Next**.
 
@@ -99,7 +99,7 @@ Use the following steps to install an System Center 2016 - Orchestrator manageme
 
 4.  On the **Please read this License Terms** page, review and accept the Microsoft Software License Terms, and then click **Next**.
 
--   On the **Diagnostic and Usage data** page, review the Diagnostic and Usage data notice, and then click **Next**.
+    On the **Diagnostic and Usage data** page, review the Diagnostic and Usage data notice, and then click **Next**.
 
 5.  Your computer is checked for required hardware and software. If your computer meets all of the requirements, the **All prerequisites are installed** page appears. Click **Next** and proceed to the next step.
 
@@ -153,7 +153,7 @@ Use the following steps to install an System Center 2016 - Orchestrator manageme
 
 4.  On the **Please read this License Terms** page, review and accept the Microsoft Software License Terms, and then click **Next**.
 
--   On the **Diagnostic and Usage data** page, review the Diagnostic and Usage data notice, and then click **Next**.
+    On the **Diagnostic and Usage data** page, review the Diagnostic and Usage data notice, and then click **Next**.
 
 5.  Your computer is checked for required hardware and software. If your computer meets all of the requirements, the **All prerequisites are installed** page appears. Click **Next** and proceed to the next step.
 
@@ -202,16 +202,16 @@ Use the following steps to install an System Center 2016 - Orchestrator manageme
     > [!WARNING]
     > If Microsoft .NET Framework 3.5 Service Pack 1 is not installed on your computer, a dialog box appears asking if you want to install .NET Framework 3.5 SP1. Click **Yes** to proceed with the installation.
 
--   On the **Product registration** page, provide the name and company for the product registration, and then click **Next**.
+3. On the **Product registration** page, provide the name and company for the product registration, and then click **Next**.
 
       > [!NOTE]
       > For this evaluation release, a product key is not required.
 
--   On the **Please read this License Terms** page, review and accept the Microsoft Software License Terms, and then click **Next**.
+4. On the **Please read this License Terms** page, review and accept the Microsoft Software License Terms, and then click **Next**.
 
--   On the **Diagnostic and Usage data** page, review the Diagnostic and Usage data notice, and then click **Next**.
+5. On the **Diagnostic and Usage data** page, review the Diagnostic and Usage data notice, and then click **Next**.
 
-3.  Your computer is checked for required hardware and software. If your computer meets all of the requirements, proceed to the next step.
+6.  Your computer is checked for required hardware and software. If your computer meets all of the requirements, proceed to the next step.
 
     If a prerequisite is not met, a page displays information about the prerequisite that has not been met and how to resolve the issue. Use the following steps to resolve the failed prerequisite check:
 
@@ -221,18 +221,17 @@ Use the following steps to install an System Center 2016 - Orchestrator manageme
 
     3.  Click **Next** to continue.
 
-4.  On the **Select the installation location** page, verify the installation location for Orchestrator and change it if you want to, and then click **Next**.
+7.  On the **Select the installation location** page, verify the installation location for Orchestrator and change it if you want to, and then click **Next**.
 
--   On the **Microsoft Update** page, optionally indicate whether you want to use the Microsoft Update services to check for updates, and then click **Next**.
+8. On the **Microsoft Update** page, optionally indicate whether you want to use the Microsoft Update services to check for updates, and then click **Next**.
 
-12. On the **Help improve Microsoft System Center Orchestrator** page, optionally indicate whether you want to participate in **Error Reporting**, and then click **Next**.
+9. On the **Help improve Microsoft System Center Orchestrator** page, optionally indicate whether you want to participate in **Error Reporting**, and then click **Next**.
 
-
-5.  Review the **Installation summary** page, and then click **Install**.
+10.  Review the **Installation summary** page, and then click **Install**.
 
     The **Installing features** page appears and displays the installation progress.
 
-6.  On the **Setup completed successfully** page, optionally indicate whether you want to start the Runbook Designer, and then click **Close** to complete the installation.
+11.  On the **Setup completed successfully** page, optionally indicate whether you want to start the Runbook Designer, and then click **Close** to complete the installation.
 
 ### To connect a Runbook Designer to a management server
 
@@ -241,7 +240,7 @@ Use the following steps to install an System Center 2016 - Orchestrator manageme
     > [!NOTE]
     > If the Runbook Designer is connected to another management server, the **Connect to a server** icon is disabled. Click the **Disconnect** icon before you connect to a different management server.
 
-2.  In the **System Center Orchestrator 2012 Connection** dialog box, enter the name of the server that hosts your Orchestrator management server, and then click **OK**.
+2.  In the **System Center Orchestrator 2016 Connection** dialog box, enter the name of the server that hosts your Orchestrator management server, and then click **OK**.
 
 ### To enable network discovery
 
