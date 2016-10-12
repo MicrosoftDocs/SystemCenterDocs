@@ -226,7 +226,7 @@ foreach($route in $RoutingSubnets)
 
 The table below provides examples of dynamic and static L3 connections.
 
-**Parameter** | **Details*8 | **Example value**
+**Parameter** | **Details** | **Example value**
 --- | --- | ---
 L3VPNConnectionName | User-defined name for L3 forwarding network connection | "Contoso_L3_GW"
 VmNetworkName | Name of tenant virtual network that's reachable over L3 network connection | "ContosoVMNetwork"
