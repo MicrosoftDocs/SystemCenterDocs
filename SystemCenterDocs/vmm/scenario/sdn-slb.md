@@ -4,7 +4,7 @@ description: This article describes how to set up a SDN software load balancer i
 author:  rayne-wiselman
 ms.author: raynew
 manager:  cfreeman
-ms.date:  2016-10-12
+ms.date:  10-12-2016
 ms.topic:  article
 ms.prod:  system-center-threshold
 ms.technology:  virtual-machine-manager
@@ -15,40 +15,47 @@ ms.technology:  virtual-machine-manager
 
 >Applies To: System Center 2016 - Virtual Machine Manager
 
-This article describes how to deploy an Software Defined Networking (SDN) software load balancing (SLB) in the System Center 2016 - Virtual Machine Manager (VMM) fabric.
+This article describes how to deploy an Software Defined Networking (SDN) software load balancer (SLB) in the System Center 2016 - Virtual Machine Manager (VMM) fabric.
 
 The SLB enables even distribution of tenant and tenant customer network traffic among virtual network resources, so that multiple servers can host the same workload to provide high availability and scalability. [Learn more](https://technet.microsoft.com/windows-server-docs/networking/sdn/technologies/network-function-virtualization/software-load-balancing--slb--for-sdn).
 
 You can use VMM to deploy a network controller and software load balancer. After you've set up SLB, you can leverage multiplexing and NAT capabilities in your SDN infrastructure.
 
-Setting up SLB in the VMM fabric requires the following components:
-
-- A downloaded VMM service template to deploy SLB
-- A logical network to mirror the transit (Frontend) physical network.
-- Private and public virtual IP address (VIP) networks to deploy the SLB
-
-
-
 ## Before you start
 
 - **Planning**: [Read about](https://technet.microsoft.com/windows-server-docs/networking/sdn/plan/plan-a-software-defined-network-infrastructure) planning an SDN, and review the planning topology in  [Plan a Software Defined Network Infrastructure](https://technet.microsoft.com/library/mt605207.aspx). The diagram shows a sample 4-node setup. The setup is highly available with three network controller nodes (virtual machines), and three SLB/MUX nodes. It shows two tenants with one virtual networks broken into two virtual subnets to simulate a web tier and a database tier. Both the infrastructure and tenant virtual machines can be redistributed across any physical host.
-- **Deployment order**: You should deploy the network controller before SLB so that you have the compute and network infrastructure running before you set up load balancing.
-- **Service template**: Download the SLB/MUX service template.
-- **SSL certificate**: To import the SLB service template you'll need to prepare an SSL certificate. The certificate should be available as part of the network controller deployment. To use the certificate you prepared in network controller deployment for SLB, right-click it and export it without a password in .CER format. Place it in the library, in the NCCertificate.CR folder you created when you set up the network controller.
-- **SLB VMs**: All the SLB virtual machines must be running Windows Server 2016
-- **VIP networks**: In addition to the management and HNV provider logical networks that you already have configured during network controller deployment, you need the Transit (sometimes called frontend), private VIP and public VIP networks to deploy the SLB. Active Directory and DNS must be available and reachable from these networks. You must have domain administrator credentials and the ability to create DNS entries in the domain.
+- **Network controller**: You should have an [SDN network controller](sdn-network-controller.md) deployed in the VMM fabric, so that you have the compute and network infrastructure running before you set up load balancing.
+- **SSL certificate**: To import the SLB service template you'll need to prepare an SSL certificate. You made the certificate available during network controller deployment. To use the certificate you prepared in network controller deployment for SLB, right-click it and export it without a password in .CER format. Place it in the library, in the NCCertificate.CR folder you created when you set up the network controller.
+- **SLB VMs**: All the SLB virtual machines must be running Windows Server 2016.
+
+
+## Deployment steps
+
+1. **Prepare the SSL certificate**: Put the certificate in the VMM library.
+2. **Download the template**: Download the service template you need to deploy SLB/MUX in VMM.
+3. **Create the logical networks**: You need to create logical networks:
+    - A logical network to mirror the transit (Frontend) physical network.
+    - Private virtual IP (VIP) and public VIP networks, to assign VIPs to the SLB service.
+    - Active Directory and DNS must be available and reachable from these networks. You must have domain administrator credentials and the ability to create DNS entries in the domain.
+4. **Import the service template**: Import and customize the SLB service template.
+5. **Deploy SLB**: Deploy SLB as a VMM service, and configure the service properties.
+6. Validate the deployment: Configure BGP peering between the SLB/MUX instance and a BGP router, assign a public IP address to a tenant VM or service, and access the VM or service from outside the network.
+
+## Prepare the certificate
+
+1. Right-click the SSL certificate you created during network controller deployment, and export it without a password in .cer format.
+2. Place the certificate in the NCCertificate.CR folder that you imported into the VMM library during network controller deployment.
 
 
 ## Download the SLB service template
 
-1. Download the SLB/MUX service template from the [Microsoft SDN GitHub repository](https://github.com/Microsoft/SDN/tree/master/VMM/Templates/SLB). The download contains two templates.
+1. Download the SLB/MUX service template from the [Microsoft SDN GitHub repository](https://github.com/Microsoft/SDN/tree/master/VMM/Templates/SLB). The download contains two templates:
 
-    - The SLB Production Generation 1 VM template is for deploying the SLB Service on generation 1 virtual machines
+    - The SLB Production Generation 1 VM template is for deploying the SLB Service on generation 1 virtual machines.
     - The SLB Production Generation 2 VM is for deploying the SLB Service on Generation 2 virtual machines.
     - Both the templates have a default count of three virtual machines which can be changed in the Service Template designer.
 
-2. Extract the contents to a folder on a local computer.
-
+2. Extract the contents to a folder on a local computer. You'll import them to the library later.
 
 
 ## Create the transit logical network
@@ -75,7 +82,7 @@ This is the IP address pool where DIPs are assigned to the SLB/MUX virtual machi
 
 ## Create private and public VIP logical networks
 
-You need a private VIP address pool to assign a VIP, and a public VIP, to the Software Load Balancer Manager (SLBM) service.
+You need a private VIP address pool to assign a VIP, and a public VIP, to the SLB Manager service.
 
 1.  Start the **Create logical network Wizard**. Type a name and optional description for this network.
 2. In  **Settings** select **One Connected Network**.  Select **Create a VM network with the same name** box to allow virtual machines to access this logical network directly. Select **Managed by the network controller**.
@@ -95,16 +102,19 @@ You need a private VIP address pool to assign a VIP, and a public VIP, to the So
 8. Repeat the procedure for the public VIP logical network, this time type in the address range of the public network.
 
 
-## Deploy the SLB template
+## Import the SLB template
 
+Import the service template into the VMM library. For this example we'll import the generation 2 template.
 
-Now you can deploy the SLB/MUX into your SDN infrastructure. You'll need to download the SLB/MUX service template, import it into the VMM library, and deploy.
+1. Click **Library** > **Templates** > **Service Templates** > **Import Template**.
+2. Browse to your service template folder, select the **SLB Production Generation 2 VM.xml** file.
+3. Update the parameters for your environment as you import the service template. Note that the library resources were imported during network controller deployment.
 
-### Download the service template to a local computer
+    - **WinServer.vhdx** Select the base virtual hard drive image that you downloaded and imported earlier, during network controller deployment.
+    - **NCCertificate.CR**: Map to the NCCertificate.cr library resource in the VMM library.
+    - **EdgeDeployment.CR**: Map to the EdgeDeployment.cr library resource in the VMM library
 
-
-2. You'll see two custom resource folders named **NCCertificate.CR** and **EdgeDeployment.CR** in the downloaded content. You must copy these two folders into your VMM Library and refresh the library.
-3. Copy the .CER certificate that you previously created to the **NCCertificate.CR** folder.
+3. Remember that you should have copied the .CER certificate that you previously created to the **NCCertificate.CR** folder.
 
 ### Import the service template into the VMM library
 
@@ -124,7 +134,7 @@ Now deploy an SLB/MUX service instance.
 1.  Select the **SLB Production Generation 2 VM.xml** service template > **Configure Deployment**. Type a name and optional destination for the service instance. The destination must map to a host group that contains the hosts you've configured.
 2.  In the **Network Settings** section, map **TransitNetwork** to your transit VM network and **ManagementNetwork** to your management VM network.
 3. The **Deploy Service** dialog appears after mapping is complete. It is normal for the virtual machine instances to be initially red. Click **Refresh Preview** to automatically find suitable hosts for the virtual machine.
-4. On the left side of the **Configure Deployment** window, there are a number of settings that you must configure. The table below summarizes each field:
+4. On the left side of the **Configure Deployment** window, there are a number of settings that you must configure.
 
     **Setting** | **Requirement** | **Description**
     --- |--- |---
@@ -136,7 +146,7 @@ Now deploy an SLB/MUX service instance.
     **SelfSignedConfiguration** | Required | Specify **True** if the certificate you are using is self-signed
 
 5. After you configure these settings, click **Deploy Service** to begin the service deployment job. Deployment times will vary depending on your hardware but are typically between 30 and 60 minutes.
-6. If you are not using a Volume Licensed VHDX or if the VHDX is not supplied the Product Key using an Answer file, then the deployment will stop at the Product Key page during SLB/MUX virtual machine(s) provisioning. You need to manually access the VM desktop and either skip entering the product key or enter the product key if you have it handy.
+6. If you are not using a volume licensed VHDX, or if the VHDX doesn't have the product key from an answer file, then deployment will stop at the **Product Key** page, during SLB/MUX VM provisioning. You need to manually access the VM desktop, and either skip or enter the product key.
 7. When the service deployment job has completed, verify that your service appears in **VMs and Services** > **Services** > **VM Network Information for Services**. Right-click the service and verify that the state is **Deployed** in **Properties**.
 
 After deployment, verify that the service appears in **All Hosts** > **Services** > **VM Network Information for Services**. Right-click the SLB MUX service > **Properties**, and verify that the state is **Deployed**. If the SLB/MUX deployment fails, ensure you delete the failed service instance, before trying deployment again.
@@ -159,20 +169,20 @@ Now that the service is deployed, you can configure its properties. you'll need 
 
 After you deploy the SLB/MUX, you can validate the deployment by configuring BGP peering between the SLB/MUX instance and a BGP router, assigning a public IP address to a tenant virtual machine or Service, and accessing the tenant virtual machine or service from outside the network.
 
-1. Enter your external router details in the wizard similar to what is shown below:
+1. Enter your external router details in the wizard. For example:
 
     ![IP address](../media/sdn-slb1.png)
 
 2. Click **OK** to complete the SLB/MUX service instance configuration.
-3. Check the **Jobs** window to verify that the Update Fabric Role with required configuration and Associate service instance with fabric role jobs have completed successfully.
-4. To complete the BGP peering operation you need to configure BGP to peer with your SLB/MUX instance on the router. If you use a hardware router, you need to consult your vendor’s documentation regarding how to setup BGP peering for that device. You also need to know the IP address of the SLB/MUX instance that you deployed earlier. To do this, you can either log on to the SLB MUX virtual machine and run **ipconfig /all** from the command prompt, or you can get the IP address from the VMM console.
-5. After peering is completed for the SLB/MUX, you need to advertise all the VIP address pools that will be used by the SLB/MUX to the SLB Manager role.
+3. Check the **Jobs** window to verify that the **Update Fabric Role with required configuration**, and **Associate service instance with fabric role** jobs have completed successfully.
+4. To complete the BGP peering operation, you need to configure BGP to peer with your SLB/MUX instance on the router. If you use a hardware router, you need to consult your vendor’s documentation regarding how to setup BGP peering for that device. You also need to know the IP address of the SLB/MUX instance that you deployed earlier. To do this, you can either log on to the SLB MUX virtual machine and run **ipconfig /all** from the command prompt, or you can get the IP address from the VMM console.
+5. If you create a new VIP pool after peering is complete, you need to advertise all the VIP address pools using the VMM console.
 
 ###  Provision VIPS for tenant VMs
 
 You can provision VIPs for tenant virtual machines either individually for each VM, or using service templates.
 
-In this procedure we'll provision a VIP for individual VMS. This isn't a typical scenario, but is useful for evaluation purposes. We'll provision a VIP for two VMs using PowerShell, as follows:
+In this procedure we'll provision a VIP for individual VMs. This isn't a typical scenario, but is useful for evaluation purposes. We'll provision a VIP for two VMs using PowerShell, as follows:
 
 1. Deploy the virtual machine instances using a VM template.
 2. Create a VIP template in the VMM console.
@@ -269,7 +279,7 @@ Write-Output "VIP with members " $vip;
 
 To complete the BGP peering process, you need to configure a BGP to peer with your SLB/MUX instance on the router.
 
-- If you use a hardware router, you need to consult your vendor's documentation for instructions to setup BGP peering for that device.
+- If you use a hardware router, you need to consult the vendor documentation for instructions to setup BGP peering for that device.
 - Check the IP address of the SLB/MUX instance that you deployed earlier. To do this, you can log on to the SLB/MUX virtual machine and run **ipconfig**.
 
 Now configure inbound and outbound NAT rules.
@@ -283,4 +293,9 @@ Now configure inbound and outbound NAT rules.
 
     ![NAT](../media/sdn-slb2.png)
 
-You won't see the existing NAT connections when you close the wizard and reopen it. You can still add additional NAT connections through the user interface. Use the PowerShell cmdlet **Get-SCNATConnection** to see existing NAT connections.
+You should be able to see recently created NAT rules in the VMM wizard.
+
+
+## Next steps
+
+[Create a RAS gateway](sdn-gateway.md)
