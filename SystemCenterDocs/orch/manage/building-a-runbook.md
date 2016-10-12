@@ -11,7 +11,7 @@ ms.topic: article
 ms.assetid: 17d8d1d1-2326-4925-84a0-c83e82cf7806
 author: cfreemanwa
 ms.author: cfreeman
-ms.date: 2016-10-12
+ms.date: 10/12/2016
 manager: cfreeman
 ---
 # Building a Runbook
@@ -20,7 +20,7 @@ manager: cfreeman
 
 This topic describes the basic process for building a System Center 2016 - Orchestrator runbook.  
 
-> [NOTE]  
+> [!NOTE]  
 > For a list of topics that contain more details about the information covered here, see [Runbook data processing](../manage/building-a-runbook.md#BMK_Runbookdataprocessing).  
 
 |Step|Description|  
