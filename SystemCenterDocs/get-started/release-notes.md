@@ -135,12 +135,12 @@ On Server 2012 – run the following in an elevated command prompt:  “C:\Windo
 **Workaround:** None.
 
 #### Inconsistencies in push install experience of Nano agent
-**Description:** Push install: the status dialog (which shows that installation in progress etc.) closes but agent stays in pending state in console for some time till installation fails\passes. Installation may fail, and log file will need to be checked for the same.
+**Description:** The Discover Wizard status dialog closes but agent stays in pending state in console for some time until the installation fails or completes successfully. Installation may fail, and you will need to refer to the setup log file for further information to troubleshoot.
 
 **Workaround:** None.
 
 #### Inconsistencies in push uninstall experience of Nano agent
-**Description:** When performing a Push uninstall from the Operations console, the status dialog (which shows progress status) shows the uninstall completed successfully, but the agent uninstall is still being performed. Uninstall may fail and refer to the setup log file for further information.
+**Description:** When performing a Push uninstall from the Operations console, the status dialog (which shows progress status) shows the uninstall completed successfully, but the agent uninstall is still being performed. Uninstall may fail and refer to the setup log file for further information to troubleshoot.
 
 **Workaround:** None.
 
