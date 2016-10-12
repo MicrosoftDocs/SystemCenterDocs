@@ -40,7 +40,7 @@ The following release notes apply to System Center 2016 - Data Protection Manage
 
 6. In the **Edit Trigger** dialog, from the **Begin the task** drop-down menu, select **At log on**.
 
-7. In **Advanced settings**, check **Repeat task every** and select **15 minutes**. Then click **OK**.
+7. In **Advanced settings**, check **Repeat task every** and select **15 minutes**. From the **for a duration of** menu, select **Indefinitely**, and then click **OK**.
 
 8. You must reboot the computer for these changes to take effect.
 
