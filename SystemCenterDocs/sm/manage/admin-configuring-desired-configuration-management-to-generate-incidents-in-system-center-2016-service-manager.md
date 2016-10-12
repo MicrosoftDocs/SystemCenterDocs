@@ -18,7 +18,7 @@ ms.assetid:  27337337-38a7-476f-974a-6ffa16027bf1
 
 You can use the following procedure, for example, to inventory all the computers that might require an upgrade to Microsoft Exchange Server 2016. To do this, first define the appropriate configuration baseline in System Center Configuration Manager.
 
-In Service Manager, you must create a Configuration Manager connector to import the baseline and configure incident management to automatically generate incidents based on desired configuration management. For information about how to create a Configuration Manager connector, see [About Importing Data from System Center Configuration Manager](About-Importing-Data-from-System-Center-Configuration-Manager.md).
+In Service Manager, you must create a Configuration Manager connector to import the baseline and configure incident management to automatically generate incidents based on desired configuration management. For information about how to create a Configuration Manager connector, see [About Importing Data from System Center Configuration Manager](admin-about-importing-data-from-system-center-configuration-manager.md).
 
 You can use desired configuration management in Configuration Manager to monitor software to ensure that it is compliant with defined values. For example, you can monitor software versions, security settings, and software updates. The configurations that you want to monitor are added as Configuration Manager configuration items to configuration baselines so that they can be evaluated for compliance as a group.
 

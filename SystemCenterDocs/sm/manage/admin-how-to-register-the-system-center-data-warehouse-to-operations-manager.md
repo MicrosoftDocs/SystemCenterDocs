@@ -1,9 +1,10 @@
 ---
 description:  
-manager:  cfreemanwa
+manager:  cfreeman
 ms.topic:  article
 author:  bandersmsft
-ms.prod:  system-center-threshold
+ms.author: banders
+ms.prod:  system-center-2016
 keywords:  
 ms.date:  2016-06-28
 title:  How to Register the System Center Data Warehouse to Operations Manager
@@ -13,7 +14,7 @@ ms.assetid:  bc5b518f-97c4-4a2d-a1b2-3ece9e7e603e
 
 # How to Register the System Center Data Warehouse to Operations Manager
 
->Applies To: System Center 2016 Technical Preview - Service Manager
+>Applies To: System Center 2016 - Service Manager
 
 You can use the following procedures in Service Manager to register the System Center Data Warehouse to Operations Manager and then validate the registration.
 
@@ -57,6 +58,3 @@ You can use the following procedures in Service Manager to register the System C
 ### To validate the Operations Manager registration process
 
 -   In the **Data Sources** view, the new data source appears in the list of data sources, with the data source type of **Operations Manager**. You might have to refresh your view to see the new data source.
-
-
-
