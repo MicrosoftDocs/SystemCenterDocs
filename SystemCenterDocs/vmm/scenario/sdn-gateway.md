@@ -4,7 +4,7 @@ description: This article describes how to Set up an SDN RAS gateway in the VMM 
 author: rayne-wiselman
 ms.author: raynew
 manager: cfreeman
-ms.date: 2016-10-12
+ms.date: 10-12-2016
 ms.topic: article
 ms.prod: system-center-threshold
 ms.technology: virtual-machine-manager
@@ -18,38 +18,27 @@ This article describes how to set up a Software Defined Networking (SDN) RAS gat
 
 An SDN RAS gateway RAS Gateway is a data path element in SDN that enables site-to-site connectivity between two autonomous systems. Specifically, a RAS Gateway enables site-to-site connectivity between remote tenant networks and your datacenter using IPSec, Generic Routing Encapsulation (GRE) or Layer 3 Forwarding. [Learn more](https://technet.microsoft.com/windows-server-docs/networking/sdn/technologies/network-function-virtualization/ras-gateway-for-sdn).
 
-Setting up a RAS gateway in the VMM fabric requires the following components:
-
-- A downloaded VMM service template to deploy RAS gateway
-- A logical GRE virtual IP address (VIP) network to defined VIPs that are assigned to gateway VMs running on the SDN fabric for a site-to-site GRE connection.
-- A gateway service deployed from the template. The service is associated with the network controller service.
 
 ## Before you start
+
 
 Follow these steps before you start:
 
 - **Planning**: [Read about](https://technet.microsoft.com/windows-server-docs/networking/sdn/plan/plan-a-software-defined-network-infrastructure) planning an SDN, and review the planning topology in [Plan a Software Defined Network Infrastructure](https://technet.microsoft.com/library/mt605207.aspx). The diagram shows a sample 4-node setup. The setup is highly available with three network controller nodes (virtual machines), and three SLB/MUX nodes. It shows two tenants with one virtual networks broken into two virtual subnets to simulate a web tier and a database tier. Both the infrastructure and tenant virtual machines can be redistributed across any physical host.
-- **Deployment order**: You should deploy the network controller before you deploy the RAS gateway. To ensure that dependencies are handled correctly, you should also deploy SLB before setting up the gateway. If an SLB and gateway configured, you can use an validate an IPSec connection.
-- **Service template**: You need to download the RAS gateway service template.
+- **Network controller**: You should deploy the network controller before you deploy the RAS gateway.
+- **SLB**: To ensure that dependencies are handled correctly, you should also deploy SLB before setting up the gateway. If an SLB and gateway configured, you can use an validate an IPSec connection.
+
+
+
+
+## Deployment steps
 
 To set up an RAS gateway you do the following:
 
-1. Download and deploy the gateway VMM service template.
-2. Create a GRE VIP logical network. You need an IP address pool for private VIPs, and to assign VIPs to GRE endpoints.
-3. Deploy a gateway service instance.
-4. Configure the gateway service properties.
-5. Validate the deployment.
-
-## Download the template
-
-1. Download the RAS gateway service template from the [Microsoft SDN GitHub repository](https://github.com/Microsoft/SDN/tree/master/VMM/Templates/GW). The download contains two templates.
-
-    - The EdgeService Template Generation 1 VM template is for deploying the gateway service on generation 1 virtual machines
-    - The EdgeService Template Generation 2 VM is for deploying the gateway service on Generation 2 virtual machines.
-    - Both the templates have a default count of three virtual machines which can be changed in the Service Template designer.
-
-2. Extract the contents to a folder on a local computer.
-
+1. **Logical network**: Create a GRE VIP logical network. It needs an IP address pool for private VIPs, and to assign VIPs to GRE endpoints. The network exists to defines VIPs that are assigned to gateway VMs running on the SDN fabric for a site-to-site GRE connection.
+2. **Service template**: Download and import the RAS gateway service template.
+3. **Deploy the gateway**: Deploy a gateway service instance, and configure its properties.
+4. **Validate the deployment**: Configure site-to-site GRE, IPSec, or L3, and validate the deployment.
 
 ## Create the GRE VIP logical network
 
@@ -75,29 +64,23 @@ To set up an RAS gateway you do the following:
 6. You don't need to provide gateway, DNS or WINS information as this pool is used to allocate IP addresses for VIPs through the network controller only. Click **Next** to skip these screens.
 7. In **Summary**, review the settings and finish the wizard.
 
-## Set up the service template
+## Download and import the template
 
-### Download the service template to a local computer
+1. Download the RAS gateway service template from the [Microsoft SDN GitHub repository](https://github.com/Microsoft/SDN/tree/master/VMM/Templates/GW). The download contains two templates.
 
-1. Download the gateway service template from the [Microsoft SDN GitHub repository](https://github.com/Microsoft/SDN/tree/master/VMM/Templates/GW).
-
-  - The download contains two service templates for the RAS gateway. One for generation 1 VMs and the other for generation 2 machines.
-  - Both the templates deploy a three node gateway and you can configure the number of the passive gateway virtual machines during deployment.
+    - The EdgeService Template Generation 1 VM template is for deploying the gateway service on generation 1 virtual machines
+    - The EdgeService Template Generation 2 VM is for deploying the gateway service on Generation 2 virtual machines.
+    - Both the templates have a default count of three virtual machines which can be changed in the Service Template designer. You can configure the number of passive gateway VMs during deployment.
 
 2. Extract the contents to a folder on a local computer.
+3. Click **Library** > **Templates** > **Service Templates** > **Import Template**.
+4. Browse to your service template folder. For the purposes of this procedure, select the **EdgeServiceTemplate Generation 2.xml** file.
+5. Update the parameters for your environment as you import the service template. Note that the library resources were imported during network controller deployment.
 
-3. Copy the contents to a folder on your VMM server, or to a file share that the VMM server can access.
+    - **WinServer.vhdx** Select the base virtual hard drive image that you downloaded and imported earlier, during network controller deployment.
+    - **NCCertificate.CR**: Map to the NCCertificate.cr library resource in the VMM library.
+    - **EdgeDeployment.CR**: Map to the EdgeDeployment.cr library resource in the VMM library
 
-### Import the service template
-
-Add the gateway service template to the VMM library.
-
-1. In **Library** > **Templates**, click **Service Templates** > **Import Template**.
-2. Browse to the service template folder, select **EdgeServiceTemplate Generation1.xml**, and click **Next**. Update the template parameters as required:
-
-  - **win_server.vhd**: Windows Server Virtual Hard Disk. Format can be VHD or VHDX depending on the service template you choose. Select the base VHD image that you downloaded and imported to the VMM Library earlier during network controller deployment.
-  - **NCCertificate.cr**: This custom library resource contains the trusted root certificate (.CER) for the network controller. It's used for secure communications between the network controller and the gateway instances. Map to the NCCertificate.cr library resource in your VMM library.
-  - **EdgeDeployment.cr**: A custom library resource that contains an SSL Certificate in .PFX format and the scripts required to install and configure RRAS. Select the **EdgeDeployment.cr** library resource that you prepared earlier and imported into you VMM library.
 
 3. On the **Summary** page, click **Import**.
 
@@ -116,7 +99,7 @@ This example uses the generation 2 template.
   - **SelfSignedConfiguration**. Required. If you're using a self-signed certificate, set this value to **True**. If you are using a certificate that has been assigned by an Enterprise CA or external Root CA, set this value to **False**.
 
 6. Click **Deploy Service** to begin the service deployment job. Deployment times will vary depending on your hardware but are typically between 30 and 60 minutes. If gateway deployment fails, delete the failed service instance in **All Hosts** > **Services**.
-7. If you aren't using a Volume Licensed VHDX (or the product key isn't supplied using an Answer file) then deployment will stop at the **Product Key** page during VM provisioning. You need to manually access the VM desktop, and either enter the key, or skip it.
+7. If you aren't using a volume licensed VHDX (or the product key isn't supplied using an answer file), then deployment will stop at the **Product Key** page during VM provisioning. You need to manually access the VM desktop, and either enter the key, or skip it.
 
 If you want to scale-in or scale-out a deployed SLB instance, read more in this [blog](https://blogs.technet.microsoft.com/scvmm/2011/05/18/scvmm-2012-an-explanation-of-scale-in-and-scale-out-for-a-service/).
 
@@ -139,14 +122,6 @@ The service instance you deployed is now associated with the Gateway Manager rol
 
 ## Validate the deployment
 
-As a quick validation step, you can also try to access the following URL from a browser on your VMM Server:  `https://<restip-or-fqdn>/networking/v1/gateways</restip-or-fqdn>`
-
-For example: `https://10.184.108.56/networking/v1/gateways`.
-
-This URL shows a JSON file with details about the gateway virtual machines. If the gateway isn't onboarded successfully, this URL won't be accessible.
-
-### Configure connection types
-
 After you deploy the gateway you can configure S2S GRE, S2S IPSec, or L3 connection types, and validate them.
 
 ### Create and validate a site-to-site IPSec connection
@@ -163,7 +138,6 @@ A site-to-site IPSec connection allows you to securely access remote virtual mac
 8. In **Routes**, type all the remote subnets that you want to connect to.
 9. If you selected **Enable Border Gateway Protocol (BGP)** then you can leave this screen blank and instead fill out your ASN, peer BGP IP and its ASN on the **Border Gateway Protocol** tab as shown below:
 10. On the **Advanced** tab, accept the default settings.
-
 11. To validate the connection, try to ping the remote endpoint IP address from one of the virtual machines on your VM Network.
 
 ### Create and validate site-to-site GRE connections
@@ -180,7 +154,6 @@ A S2S GRE connection allows you to access remote virtual machines and services f
   ![GRE](../media/sdn-gateway1.png)
 
 7. Type a connection name, and specify the IP address of the remote endpoint.
-
 8. Type the GRE key.
 9. Optionally, you can complete the other fields on this screen but these values aren't need to set up a connection.
 10. In **Routes**, add all the remote subnets that you want to connect to. If you selected **Enable Border Gateway Protocol (BGP)** in **Connectivity**, you can leave this screen blank and instead complete your ASN, peer BGP IP and ASN fields on the **Border Gateway Protocol** tab.
@@ -250,3 +223,17 @@ foreach($route in $RoutingSubnets)
         -VMNetworkGateway $VmNetworkGateway
 }
 ```
+
+The table below provides examples of dynamic and static L3 connections.
+
+**Parameter** | **Details*8 | **Example value**
+--- | --- | ---
+L3VPNConnectionName | User-defined name for L3 forwarding network connection | "Contoso_L3_GW"
+VmNetworkName | Name of tenant virtual network that's reachable over L3 network connection | "ContosoVMNetwork"
+NextHopVMNetworkName | User-defined name for L3 forwarding network connectionName of VLAN tagged L3 VM network you created | "Contoso_L3_Network"
+LocalIPAddresses | IP addresses to be configured on the HNV gateway L3 network interface.<br/><br/> IP address from the logical network you created | "10.127.134.55/25"
+PeerIPAddresses| IP address of physical network gateway, reachable over L3 logical network.<br/><br/> IP address from the logical network you created | "10.127.134.65"
+GatewaySubnet | Subnet to be used for routing between HVN gateway and tenant virtual network | "192.168.2.0/24"
+RoutingSubnets | Static routes that need to be on the L3 interace on the HNV gateway |
+EnableBGP | Option to enable BGP. Default is false. |
+TenantASNRoutingSubnets |ASN number of tenant gateway. Only if BGP is enabled. |
