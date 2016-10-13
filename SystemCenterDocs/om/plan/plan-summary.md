@@ -30,7 +30,7 @@ The strategies that are presented in this guide are appropriate for many common 
 
 - [System Requirements for Operations Manager](system-requirements.md)
 
-    Provides information about the supported operating systems, hardware configurations, software requirements, installation combinations, and other important design planning considerations that are summarized and recommended or Operations Manager in System Center 2016. 
+    Provides information about the supported operating systems, hardware configurations, software requirements, installation combinations, and other important design planning considerations that are summarized and recommended for Operations Manager in System Center 2016. 
 
 - [Supported Versions of Linux and UNIX](supported-unix-and-linux-operating-system-versions.md)
 
