@@ -55,7 +55,7 @@ Here is how the test bed looks like which we have used for testing-
 
 Time to create and update work items was greatly reduced using this improvement.
 
-| action  | **Service Manager 2012 R2** | **Service Manager 2016 TP5** | improvement |
+| action  | **Service Manager 2012 R2** | **Service Manager 2016** | improvement |
 | --- | --- | --- | ---|
 | incident creation time | 2 - 6 seconds | 0.5 seconds | 4 times |
 | incident creation time during connector sync | 8 - 10 seconds| less than 1 second| 8 times|
@@ -66,7 +66,7 @@ Workflows in Service Manager should have less latency and should catch up faster
 
 Here are the times for  workflows to catch up after 2 hours of latency at a 45 work item per minute rate:
 
-| action  | **Service Manager 2012 R2** | **Service Manager 2016 TP5** | improvement |
+| action  | **Service Manager 2012 R2** | **Service Manager 2016** | improvement |
 | --- | --- | --- | --- |
 | workflow catch-up time | 2 hours 50 mins | 1 hour 46 mins | 1.5 times |
 
@@ -75,7 +75,7 @@ Here are the times for  workflows to catch up after 2 hours of latency at a 45 w
 
 Service Manger can more easily handle a large inflow of 45 work items per minute.
 
-| action  | **Service Manager 2012 R2** | **Service Manager 2016 TP5** | improvement |
+| action  | **Service Manager 2012 R2** | **Service Manager 2016** | improvement |
 | --- | --- | --- | --- |
 | average incident creation time | 2.2 seconds | 0.5 seconds | 4 times |
 
@@ -86,7 +86,7 @@ The Active Directory and SCCM connectors in Service Manager can import large amo
 
 The ECL table, and the history tables in this case, store details about when the data was brought into Service Manager and the properties that were added or updated for each data item.
 Disabling ECL logging, doesn't affect importing data from connectors. Instead, most logging data doesn't get written to the ECL and history tables, which can result is significant performance improvement.
-Disabled ECL logging is not available by default. In other words, by default, ECL logging is enabled. However, you can easily turn on Disabled ECL logging by using a simple PowerShell cmdlet. For more information, see [Optionally Disable ECL Logging for Faster Connector Synchronization](../Deploy/Optionally-Disable-ECL-Logging-for-Faster-Connector-Synchronization.md).
+Disabled ECL logging is not available by default. In other words, by default, ECL logging is enabled. However, you can easily turn on Disabled ECL logging by using a simple PowerShell cmdlet. For more information, see [Optionally Disable ECL Logging for Faster Connector Synchronization](../manage/admin-optionally-disable-ecl-logging-for-faster-connector-synchronization.md).
 
 ## Grooming improvements for ECL logs
 
@@ -207,7 +207,7 @@ This release contains a new HTML based Self Service Portal which offers the foll
 -   Support of direct URLs for Self Service Portal pages
 -   Rich customization options
 
-For more information and installing and customizing the portal, see [Deploy the Self-Service Portal for Service Manager](../Deploy/Deploy-the-Self-Service-Portal-for-Service-Manager.md).
+For more information and installing and customizing the portal, see [Deploy the Self-Service Portal for Service Manager](../Deploy/deploy-deploy-the-self-service-portal-for-service-manager.md).
 
 > [!NOTE]
 > The older Silverlight and SharePoint-based Self-Service portal has been removed.
@@ -221,7 +221,7 @@ Spell check is now enabled for work item forms. It is enabled for 17 out of the 
 A new console task *Open Activity in Progress*, was added for service requests and change requests. This console task’s link is enabled when a work item moves to the *in progress* state. Clicking the this task’s link opens the current in-progress activity. For work items that don’t have any in-progress activity, the localized message *No Activity with In Progress state is found for the workitem.* is displayed. In previous versions of Service Manager, it required to open the work item, navigate to the **Activities** tab, and then clicking the *In progress* activity. Now In progress activity can be accessed with a single click.
 
 ## Support for Lync 2013 and Skype for Business
-System Center 2016 - Service Manager includes updates that supports integration with Lync 2013 and Skype for Business in Microsoft Office suite 2013 and  2016. For information about contacting a user using Lync or Skype for Business, see [Contact a User from an Incident Form](../Manage/Contact-a-User-from-an-Incident-Form.md).
+System Center 2016 - Service Manager includes updates that supports integration with Lync 2013 and Skype for Business in Microsoft Office suite 2013 and  2016. For information about contacting a user using Lync or Skype for Business, see [Contact a User from an Incident Form](../manage/ops-how-to-contact-a-user-from-an-incident-form.md).
 
 
 ## Setup changes to support SQL AlwaysOn installation
@@ -229,7 +229,7 @@ The Setup wizard allows you to easily install Service Manager in complex configu
 
 Now you can configure the SQL management server, instance name and port number together.
 
-![](../media/sm-sqlserver-config.png)
+![configure SQL management server and port ](../media/sm-sqlserver-config.png)
 
 ## Support for .NET Framework 4.5.1
 Service Manager 2016 now supports the .Net framework 4.5.1
