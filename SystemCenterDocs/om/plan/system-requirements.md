@@ -50,7 +50,7 @@ Use this information to evaluate if your hardware environment is ready to suppor
 > [!NOTE] 
 > While the Operations Manager 2012 Sizing helper has not been updated to reflect the 2016 release of Operations Manager, the information provided is still valid to help you estimate for your design requirements.  However, the number of UNIX/Linux computers per management server, as noted in the **Unix or Linux Monitoring** section is not correct.  The number of UNIX/Linux computers per management server has increased and is noted in the monitored item capacity table earlier.  This will be addressed in an updated release of the sizing helper document.  
 
-<br>
+
 | Operations Manager Server Role | x64 Processor (min) | Memory (min) | Disk space (min) |
 |:--- |:---|:--- |:--- |
 | Management Server | 4-Core 2.66 GHz CPU | 8 GB | 10 GB |
