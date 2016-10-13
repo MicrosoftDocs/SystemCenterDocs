@@ -53,7 +53,7 @@ Use the following series of tasks when using an existing management group with a
 1. Prepare SQL Server AlwaysOn setup separately. You might also consider SQL Server AlwaysOn with an FCI.
 2. Create an availability group listener(AGL) and choose an appropriate port number. Avoid the default port 1433. For example: AGL name = SMListener and AGL Port = 5122
 3. Open the inbound port for the SQL Server instance and AGL on each computer running SQL Server.
-4. Review the information at [Moving the Service Manager Database](Moving-the-Service-Manager-Database.md)  and follow the steps there, with the following changes:
+4. Review the information at [Moving the Service Manager Database](deploy-moving-the-service-manager-database.md)  and follow the steps there, with the following changes:
     1. In step 5, *To Configure Service Manager tables*, use the `AGL Name,AGL Port number` instead of the computer name hosting the Service Manager database, for example: SMListener,5122
     2. In Step 6, use the `AGL Name,AGL Port number` to update the both DWStaging and Config database tables.
     3. In Step 7, *Configure the registry on all the management servers*, change the registry key `HKEY\_LOCAL\_MACHINE\Software\Microsoft\System Center2010\Common\Database` and give `DatabaseServerName` as `AGL Name,AGL Port number`.
