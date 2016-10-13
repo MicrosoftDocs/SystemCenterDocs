@@ -5,7 +5,7 @@ ms.topic:  article
 author:  cfreemanwa
 ms.prod:  system-center-threshold
 keywords:
-ms.date:  2016-10-12
+ms.date:  2016-08-30
 title:  Release Notes for System Center 2016
 ms.assetid:  5fad5608-4cb7-48b0-aa31-35ca5cc2d560
 ---
@@ -20,29 +20,6 @@ ms.assetid:  5fad5608-4cb7-48b0-aa31-35ca5cc2d560
 ## System Center 2016 - Data Protection Manager Release Notes
 
 The following release notes apply to System Center 2016 - Data Protection Manager.
-
-
-#### Backups for Windows 10 Anniversary Update clients
-**Description**: Some backup jobs for DPM-protected Windows 10 clients may not start after updating the client with the Anniversary update.
-
-**Workaround**: On the client computer:
-1. Open the Task Scheduler app.
-
-2. In the Task Scheduler library, find and select the scheduled job, **ScheduledDPMClientBackup**.
-
-3. In the **Actions** pane, click **Export** and save the xml output as a backup copy.
-
-4. In the **Actions** pane, click **Properties**.
-
-  The properties dialog box for ScheduledDPMClientBackup opens.
-
-5. In the Properties dialog, select the **Triggers** tab, and click **Edit**.
-
-6. In the **Edit Trigger** dialog, from the **Begin the task** drop-down menu, select **At log on**.
-
-7. In **Advanced settings**, check **Repeat task every** and select **15 minutes**. From the **for a duration of** menu, select **Indefinitely**, and then click **OK**.
-
-8. You must reboot the computer for these changes to take effect.
 
 
 #### Silent Installation of System Center DPM with SQL Server 2008
@@ -91,9 +68,9 @@ ReplicaSizeInGBForSystemProtectionWithBMR (DWORD)
 **The following release notes apply to System Center 2016 - Operations Manager.**
 
 #### SharePoint integration with Operations Manager has to be recreated
-**Description:** While using SharePoint to view Operations Manager data, the existing Web Console Dashboard URLs provided will not work and these Web parts have to be recreated with the  steps below.
+**Description:** While using SharePoint to view Operations Manager data, the existing Web Console Dashboard URLs provided will not work and these Web parts have to be recreated with the below steps.
 
-**Workaround:** Perform the following steps to setup SharePoint to view Operations manager data:
+**Workaround:** Follow the below steps to setup SharePoint to view Operations manager data:
 1.	Create a new page on SharePoint in which you want to display the Dashboard.
 2.	Open the page and click edit and insert a new Web Part.
 3.	In Web Part, under categories select “Media and Content” and under that select “Page Viewer” and click add.
@@ -102,57 +79,75 @@ ReplicaSizeInGBForSystemProtectionWithBMR (DWORD)
 6.	Configure the appearance, layout, and Advance attribute of the SharePoint page.
 
 
+#### In Web Console, Windows Computer Tasks is not displayed sometimes
+**Description:** In Web Console, when you go to Windows computers view and select a computer, the tasks pane may not display Windows computer tasks.
+Likelihood of occurrence: Medium
+
+**Workaround:** None.
+
+#### In Web Console, Navigation view is not displayed in the tasks pane for state views
+Description:  In Web Console, when you go to State View and select an entity in the list, the tasks pane does not display the Navigation View section of the selected entity.
+
+**Workaround:** None.
+
+#### In Web Console, functionality in My Workspace tab does not work .
+**Description:** In Web Console, none of the links/views in My Workspace tab work.
+
+**Workaround:** None.
+
 #### Web Console might not work due to IIS becoming corrupt
 **Description:** Web Console might throw an error **“Could not load type ‘System.ServiceModel.Activation.HttpModule”**.
 
 **Workaround:** Add “HTTP Activation” to the role services of the OS.  Then,
-On Server 2008 R2 – run the following in an elevated command prompt:  “C:\Windows\Microsoft.NET\Framework64\v4.0.30319>aspnet_regiis.exe -i -enable”.
-On Server 2012 – run the following in an elevated command prompt:  “C:\Windows\Microsoft.NET\Framework64\v4.0.30319>aspnet_regiis.exe -r”.
+On Server 2008 R2 – run the following in an elevated CMD:  “C:\Windows\Microsoft.NET\Framework64\v4.0.30319>aspnet_regiis.exe -i -enable”.
+On Server 2012 – run the following in an elevated CMD:  “C:\Windows\Microsoft.NET\Framework64\v4.0.30319>aspnet_regiis.exe -r”.
 
-#### Anomalies in handling tables and bullets in Knowledge Articles
-**Description:** If tables are inserted in a knowledge article, when re-editing the knowledge article the borders are not applied to the table. Similarly, if bullets are added in the knowledge article it gets converted to numeric bullets while re-editing. And, if there is a single bullet in the article then the article doesn’t get saved in the MP and the console throws error.
+#### Anomalies in handling tables and bullets in the Knowledge Articles
+**Description:** If the tables are inserted in the knowledge article then while re-editing the knowledge article the borders are not applied to the table. Similarly, if bullets are added in the knowledge article it gets converted to numeric bullets while re-editing. And, if there is a single bullet in the article then the article doesn’t gets saved in the MP and the console throws error.
 
 **Workaround:** None.
 
 #### MSI based installation does not work for Nano agent
-**Description:** MSI based installation is not supported for Nano agent. The agent can be installed from Discovery Wizard\PowerShell installer scripts.
+**Description:** MSI based installation is not supported for Nano agent. The agent can be installed from discovery wizard\PowerShell installer scripts.
 
 **Workaround:** None.
 
-#### Issues with uninstalling an update for Nano agent
+#### Issues with uninstallation of Nano agent
 **Description:** Uninstalling an update to Nano agent is not possible.
 
-**Workaround** Only option is to uninstall the Nano agent, then install the RTM version + desired update.
+**Workaround** Only option is to uninstall the Nano-agent, then install the RTM version + desired update.
 
 #### Issues with updates of Nano agent
-**Description:** Updates to Nano agent will not be pushed from Windows Update. To update Nano agent you Will need to either download the available update and install using the PowerShell update scripts; or trigger a repair from an updated Management server.
+**Description:** Updates to Nano agent will not be pushed from WU. To update Nano-agent you
+Will need to either download the available updates and install using the PowerShell update scripts; or trigger a repair from an updated Management server.
 
 **Workaround:** None.
 
+
 #### Unable to override the path or folder for Nano agent installation
-**Description:** Nano agent is always installed to the following path: ‘%SystemDrive%\Program Files\Microsoft Monitoring Agent’; the agent installation folder cannot be overridden.
+**Description:** Nano agent is always installed to the agent folder: ‘%SystemDrive%\Program Files\Microsoft Monitoring Agent’, the agent installation folder cannot be overridden.
 
 **Workaround:** None.
 
 #### Inconsistencies in push install experience of Nano agent
-**Description:** The Discover Wizard status dialog closes but agent stays in pending state in console for some time until the installation fails or completes successfully. Installation may fail, and you will need to refer to the setup log file for further information to troubleshoot.
+**Description:** Push install: the status dialog (which shows that installation in progress etc.) closes but agent stays in pending state in console for some time till installation fails\passes. Installation may fail, and log file will need to be checked for the same.
 
 **Workaround:** None.
 
 #### Inconsistencies in push uninstall experience of Nano agent
-**Description:** When performing a Push uninstall from the Operations console, the status dialog (which shows progress status) shows the uninstall completed successfully, but the agent uninstall is still being performed. Uninstall may fail and refer to the setup log file for further information to troubleshoot.
+**Description:** Push uninstall: the status dialog (which shows that uninstallation in progress\completed) shows uninstall success for Nano-agent, but agent uninstalls only after sometime. Uninstallation may fail, and log file will need to checked for same.
 
 **Workaround:** None.
 
 #### ACS is not working for Nano agent
-**Description:** ACS is not working for Nano agent, in some cases. There are issues in certain scenarios.
+**Description:** ACS is not working for Nano agent, in all the cases. There are issues in certain scenarios.
 
 **Workaround:** None.
 
-#### Client-side monitoring (CSM) alerts might stop flowing from the System Center Operations Manager management server 
-**Description:** The update sequence of System Center Operation Manager management server may cause an issue with the client-side monitoring alerts collection from the management server. System Center Operations Manager agents are not affected. Likelihood of occurrence: Medium.
+#### Client-side monitoring (CSM) alerts might stop flowing from the System Center Operations Manager management server host
+**Description:** The update sequence of System Center Operation Manager management server may cause an issue with the client-side monitoring alerts collection from the management server host. System Center Operations Manager agents are not affected. Likelihood of occurrence: Medium.
 
-**Workaround:** Restart the "Microsoft Monitoring Agent" service on System Center Operations Manager management server.
+**Workaround:** Restart the "Microsoft Monitoring Agent" service on System Center Operations Manager management server host.
 
 #### After updating System Center Operations Manager server or agent, Application performance monitoring (APM) events, client-side monitoring (CSM) events, and APM alerts might stop flowing from the monitored hosts
 **Description:** The update sequence of System Center Operations Manager agent may cause an issue with the following:
@@ -163,10 +158,10 @@ On Server 2012 – run the following in an elevated command prompt:  “C:\Windo
 System Center Operations Manager management server is not affected.
 
 
-**Workaround:** Restart the "Microsoft Monitoring Agent" service on the System Center Operations Manager agent-managed computer that is experiencing the issue.
+**Workaround:** Restart the "Microsoft Monitoring Agent" service on the System Center Operations Manager agent host that is experiencing the issue.
 
-#### Application performance monitoring (APM) for Windows services is not supported in System Center - Operations Manager on computers where Application Insights Status Monitor is installed.
-**Description:** Application performance monitoring (APM) workflow fails to process monitoring configuration for .NET Windows services on the computer if Application Insights Status Monitor and the System Center - Operations Manager agent are both installed.
+#### Application performance monitoring (APM) for Windows services is not supported in System Center - Operations Manager on hosts where Application Insights Status Monitor is installed.
+**Description:** Application performance monitoring (APM) workflow fails to process monitoring configuration for .NET Windows services on the hosts if Application Insights Status Monitor and the System Center - Operations Manager agent are both installed.
 
 **Workaround:** Uninstall Application Insights Status Monitor.
 
@@ -176,14 +171,36 @@ System Center Operations Manager management server is not affected.
 **Workaround:** Set both the exception tracking and performance tracking settings to include the same custom namespaces.
 
 #### Using sudo elevation with Solaris operating systems requires a configuration change if sudo executable is not in an expected path
-**Description:** If you want to use sudo elevation on a computer running Solaris, and the sudo executable is not in the expected path, you will need to create a link to the correct path. Operations Manager will look for the sudo executable in the path /opt/sfw/bin, and then in the path /usr/bin. If sudo is not installed in one of these paths, a link is required.
+**Description:** If you want to use sudo elevation on a computer running Solaris, and the sudo executable is not in an expected path, you need to create a link to the correct path. Operations Manager will look for the sudo executable in the path /opt/sfw/bin, and then in the path /usr/bin. If sudo is not installed in one of these paths, a link is required.
 
 **Workaround:** The UNIX and Linux agent installation script creates the symbolic link /etc/opt/Microsoft/scx/conf/sudodir to the folder expected to contain sudo. The agent uses this symbolic link to access sudo. The installation script automatically creates the symbolic link, so no action is needed for standard UNIX and Linux configurations. However if sudo is installed in a non-standard location, you should change the symbolic link to point to the folder where sudo is installed. If you change the symbolic link, its value is maintained for uninstall, re-installation, and upgrade operations with the agent.
 
-#### Operations Manager Console will stop responding if you attempt to resolve a dependency while importing a management pack
-**Description:** When you click **Import Management Packs** from the Administration workspace of the Operations Manager Operations console, the console will display the **Resolve** button if the Management Pack is dependent on another Management Pack. If you click **Resolve** you will see the **Dependency Warning**. If you click the **Resolve** button in the **Dependency Warning** dialog, the Operations console will stop responding.
+#### Operations Manager Console will stop responding if you attempt to resolve a dependency while  importing a Management Pack
+**Description:** When you click **Import Management Packs** from the Administration section of the Operations Manager console, the console will display the **Resolve** button if the Management Pack is dependent on another Management Pack. If you click  Resolve you will see the **Dependency Warning**. If you click the **Resolve** button in the warning the Operations Manager console will stop responding.
 
 **Workaround:** Install the Update for System Center 2016 - Operations Manager. See the Knowledge Base article [3117586](https://support.microsoft.com/en-us/kb/3117586) for specific instructions.
+
+#### Client-side monitoring (CSM) alerts might stop flowing from the System Center Operations Manager management server host
+**Description:**The update sequence of System Center Operation Manager management server may cause an issue with the client-side monitoring alerts collection from the management server host. System Center Operations Manager agents are not affected.
+Likelihood of occurrence: Medium
+
+**Workaround:** Restart the "Microsoft Monitoring Agent" service on System Center Operations Manager management server host.
+
+#### Application performance monitoring (APM) events, client-side monitoring (CSM) events, and application performance monitoring (APM) alerts might stop flowing from the System Center Operations Manager agent hosts
+Description:  The update sequence of System Center Operations Manager agent may cause an issue with the following:
+
+-   Client-side monitoring (CSM) events and alerts collected on the host.
+
+-   Application Performance Monitoring (APM) events and alerts collected on the host.
+
+System Center Operations Manager management server is not affected.
+
+**Workaround:** Restart the "Microsoft Monitoring Agent" service on the System Center Operations Manager agent host that is experiencing the issue.
+
+#### Application performance monitoring (APM) for Windows services is not supported in System Center - Operations Manager on hosts where Application Insights Status Monitor is installed.
+**Description:** Application performance monitoring (APM) workflow fails to process monitoring configuration for .NET Windows services on the hosts if Application Insights Status Monitor and the System Center - Operations Manager agent are both installed.
+
+**Workaround:** Uninstall Application Insights Status Monitor.
 
 #### Telemetry data may be erroneously sent when the "Usage and Connectivity Data" setting is set to "False"
 **Description:**If two operators have Operations Manager consoles open and one sets the Usage and Connectivity Data setting to "Do not send data" data may continue to flow to Microsoft until the second user closes and reopens their instance of the Operations manager console.
@@ -193,6 +210,11 @@ System Center Operations Manager management server is not affected.
 **Description:**When a new component such as a management server or gateway server are added to an existing Operations Manager environment, usage information about the setup process is sent to Microsoft even though the Usage and Connectivity Data setting is set to "Do not send data". After the component is added, no further usage data will be sent to Microsoft from the component.
 
 **Workaround:** None
+
+#### Using sudo elevation with Solaris operating systems requires a configuration change if sudo executable is not in an expected path
+**Description:** If you want to use sudo elevation on a computer running Solaris, and the sudo executable is not in an expected path, you need to create a link to the correct path. Operations Manager will look for the sudo executable in the path /opt/sfw/bin, and then in the path /usr/bin. If sudo is not installed in one of these paths, a link is required.
+
+**Workaround:** The UNIX and Linux agent installation script creates the symbolic link /etc/opt/Microsoft/scx/conf/sudodir to the folder expected to contain sudo. The agent uses this symbolic link to access sudo. The installation script automatically creates the symbolic link, so no action is needed for standard UNIX and Linux configurations. However if sudo is installed in a non-standard location, you should change the symbolic link to point to the folder where sudo is installed. If you change the symbolic link, its value is maintained for uninstall, re-installation, and upgrade operations with the agent.
 
 #### Namespace values for performance tracking will be ignored
 **Description:** Setting the Namespace value for performance tracking when tracking a custom namespace in .NET Applications Performance Monitoring (APM) will be ignored.
@@ -246,6 +268,13 @@ System Center Operations Manager management server is not affected.
 **Description:** Microsoft Visual C++ 2012 redistributable should be installed before deploying Service Manager 2016 Authoring Tool.
 
 **Workaround:** None
+
+#### Create Exchange Connector wizard might crash
+**Description:** Creating a new Exchange Connector via Service Manager 2016 console throws an exception if the admin clicks on the "Test Connection" button in the "Server Connection" pane of "Create Exchange Connector" wizard.
+
+**Workaround:** To work around this issue, avoid clicking "Test Connection" button in the "Create Exchange Connector" wizard. Instead, directly click the "Next" button, which internally tests the connection and does not crash the wizard.
+
+If the crash has already occurred, you can restart the wizard and use this workaround.
 
 #### Browsing domain in AD connector wizard raises error
 **Description:** Error is raised on clicking “Browse” while choosing Domain or OU in AD connector wizard of Service Manager 2016 console.
@@ -402,6 +431,7 @@ If you used the default instance of SQL Server, use Windows Explorer to drag Mic
 
 **Workaround:** None.
 
+
 ## System Center 2016 - Virtual Machine Manager Release Notes
 **The following release notes apply to System Center 2016 - Virtual Machine Manager.**
 
@@ -409,19 +439,6 @@ If you used the default instance of SQL Server, use Windows Explorer to drag Mic
 **Description:** If you upgrade the functional level for a cluster that includes a file server the new platform information will not be automatically updated in the VMM database.
 
 **Workaround:** After upgrading the cluster's functional level, refresh the storage provider for the File Server. This will refresh the platform information.
-
-#### Cluster Rolling Upgrade (CRU) of a Windows Server 2012 R2 host cluster to Windows Server 2016 Nano Server based host cluster will fail
-**Description:** When you try to upgrade the nodes of a Windows Server 2012 R2 cluster to Windows Server 2016 - Nano Server-based hosts using Cluster Rolling Upgrade functionality in VMM, the upgrade will fail with the below error:
-
-*Error (20406)
-VMM could not enumerate instances of class MSFT_StorageNodeToDisk on the server <servername>. Failed with error MI RESULT 7 The requested operation is not supported.
-
-Recommended Action
-Ensure the provider is running, and then try the operation again*
-
-Note that rolling upgrade from Windows Server 2012 R2 to Windows Server 2016 Full Server works fine. This issue is specific to Nano.
-
-**Workaround:** Manually upgrade the Windows Server 2012 R2 host cluster to Nano outside of VMM.
 
 #### Adding a cluster via the VMM Administrative console may result in an error
 **Description:** When you add a cluster as a resource in the VMM Administrative console you may receive an error stating "There were no computers discovered based on your inputs".
