@@ -518,7 +518,7 @@ The following high\-level steps are required to move the Data Warehouse database
     > [!CAUTION]  
     >  Incorrectly editing the registry might severely damage your system; therefore, before making changes to the registry, back up any valued data on the computer.  
 
-4.  In the Registry Editor window, expand **HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Microsoft\\System Center\\20106\Common\\Database**.  
+4.  In the Registry Editor window, expand **HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Microsoft\\System Center\\2016\Common\\Database**.  
 
 5.  In the right pane, double\-click **DatabaseServerName**.  
 

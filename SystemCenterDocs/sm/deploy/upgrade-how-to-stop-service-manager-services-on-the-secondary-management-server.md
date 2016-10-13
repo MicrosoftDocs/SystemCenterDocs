@@ -34,6 +34,6 @@ Use the following procedure to stop the Service Manager services.
 
 3.  Open Windows Explorer.  
 
-4.  Locate the folder \\Program Files\\Microsoft System Center 2016\\Service Manager.  
+4.  Locate the folder \\Program Files\\Microsoft System Center\\Service Manager.  
 
 5.  Delete the **Health Service State** folder and all of its contents.

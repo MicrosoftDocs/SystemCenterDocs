@@ -42,25 +42,25 @@ The following upgrade paths are supported to Service Manager 2016.
 >  Upgrading from an evaluation version of Service Manager 2012 R2 to an evaluation version of Service Manager 2016 *does not* extend the 180\-day evaluation period.  
 
 ## Installation Location  
-The default folder for installing Service Manager is \\Program Files\\Microsoft System Center\\Service&nbsp;Manager&nbsp;2016. However, when you perform the upgrade to Service Manager, the software is installed in the folder that Service Manager previously used. If Service Manager 2010 or Service Manager 2012 was previously upgraded, then the following folders could be used:  
+The default folder for installing Service Manager is \\Program Files\\Microsoft System Center\\Service&nbsp;Manager. However, when you perform the upgrade to Service Manager, the software is installed in the folder that Service Manager previously used. If Service Manager 2010 or Service Manager 2012 was previously upgraded, then the following folders could be used:  
 
 \\Program Files\\Microsoft System Center\\Service&nbsp;Manager&nbsp;2010  
 \\Program Files\\Microsoft System Center\\Service&nbsp;Manager&nbsp;2012
 
 
 ## Hardware Requirements for System Center 2016 - Service Manager  
- System Center 2016 - Service Manager will function on the same hardware that you used for System Center 2012 R2 - Service Manager.  
 
- All hardware requirements for System Center 2016 - Service Manager are fully documented in [Hardware Requirements for System Center 2016 - Service Manager](http://go.microsoft.com/fwlink/p/?LinkId=253556).  
+ All hardware requirements for System Center 2016 - Service Manager are fully documented in [Hardware Requirements for System Center 2016 - Service Manager](../../system-requirements/Minimum-Hardware-Recommendations.md).  
 
 ## Software Requirements for System Center 2016 - Service Manager  
- To upgrade to System Center 2016, you must first apply the latest Update Rollup for System Center 2012 R2 - Service Manager.  
+ To upgrade to System Center 2016, you must first apply the Update Rollup 9 or later for System Center 2012 R2 - Service Manager.  
 
- System Center 2016 - Service Manager has the same software requirements for the Service Manager console that System Center Service Manager 2012 R2 does.  
 
- The Service Manager and data warehouse management servers, along with the new Self-Service Portal, is supported with Windows Server 2012 and later.  
+ All software requirements for System Center 2016 - Service Manager are fully documented in [Software Requirements for System Center 2016 - Service Manager](../../system-requirements/system-requirements.md).  
 
- All software requirements for System Center 2016 - Service Manager are fully documented in [Software Requirements for System Center 2016 - Service Manager](http://go.microsoft.com/fwlink/p/?LinkId=252844).  
+ ## Impact on custom development
+
+ With the System Center 2016 - Service Manager release, the product has moved to support .Net 4.5.1. The tool set to support this movement to .Net 4.5.1 required to break a few dependencies and has led to the movement of classes across the assemblies. Hence, the upgrade to Service Manager 2016 may break the custom solutions made in house or by 3rd party (non-Microsoft). Please refer the [steps to upgrade your custom solutions](https://blogs.technet.microsoft.com/servicemanager/2016/08/03/scsm-2016-upgrade-steps-for-custom-development/), to avoid getting into this problem.
 
 ## Preventing MPSync Jobs From Failing  
  **Before Upgrade**  
@@ -138,7 +138,7 @@ select * from ManagementPack where mpname like '%SystemDerivedMp.Microsoft.Syste
 ## Upgrade Order and Timing  
  The order of your upgrades is important. Perform the upgrade steps in the following order:  
 
-1.  Backup your databases and your management packs. See the topics "Backing Up Service Manager Databases" and "Backing Up Unsealed Management Packs" in the [Disaster Recovery Guide for System Center 2016 - Service Manager](http://go.microsoft.com/fwlink/p/?LinkId=209671).  
+1.  Backup your databases and your management packs. See the topics "Backing Up Service Manager Databases" and "Backing Up Unsealed Management Packs" in the [Disaster Recovery Guide for System Center 2016 - Service Manager](../manage/disaster-disaster-recovery-guide-for-system-center-2016-service-manager.md).  
 
 2.  Start with the data warehouse management server. You will be stopping the data warehouse jobs, and you will not be able to start them again until after you have completed the upgrade.  
 
@@ -152,31 +152,15 @@ select * from ManagementPack where mpname like '%SystemDerivedMp.Microsoft.Syste
 
  The timing of your upgrades is also important. After you upgrade your data warehouse management server, you must both update the Service Manager management server and deploy the new Self-Service Portal. After you upgrade your initial Service Manager management server, you must be prepared to upgrade your Service Manager console or Service Manager consoles, additional Service Manager management servers, and Self-Service Portal at the same time.  
 
-## Operations Manager Compatibility  
- This section describes the compatibility between Operations Manager and Service Manager.  
-
-### System Center Operations Manager 2007 R2  
- Operations Manager 2007 R2 agents must be removed from the Service Manager and data warehouse management servers before you attempt an upgrade. System Center 2016 - Service Manager includes a System Center 2016 - Operations Manager agent and it is automatically installed when you upgrade. After Service Manager Setup completes, you must manually configure the agent to communicate with the Operations Manager management server.  
-
- To validate that the Operations Manager Agent was installed, open Control Panel and verify that the Operations Manager Agent is present. To manually configure the Operations Manager agent, see [Configuring Agents](http://go.microsoft.com/fwlink/p/?LinkId=264988).  
-
- You can upgrade Service Manager servers in the presence of an Operations Manager console.  
-
-### System Center 2016 - Operations Manager  
-The agent that is automatically installed by System Center 2016 - Service Manager is compatible with System Center 2016 - Operations Manager and System Center 2012 R2 - Operations Manager.  After Service Manager Setup completes, you must manually configure the agent to communicate with the Operations Manager management server.  
-
- To validate that the Operations Manager Agent was installed, open Control Panel and verify that the Operations Manager Agent is present. To manually configure the Operations Manager agent, see [Configuring Agents](http://go.microsoft.com/fwlink/p/?LinkId=264988).  
-
- You can upgrade Service Manager servers in the presence of an System Center 2016 - Operations Manager console.  
 
 ## Database Impacts  
  With System Center 2016 - Service Manager, you have the option to install Operations Manager and Configuration Manager data marts. Selecting this option will result in additional space requirements on the hard disk drive for the two databases, as well as associated file groups and log files.  
 
 ## Backing Up Service Manager Before Upgrading  
- Before you start any upgrade, we recommend that you back up your Service Manager and data warehouse databases and the encryption key. If you have already backed up your databases and encryption key, you can continue to run the upgrade. Otherwise, review the backup procedures in the [Disaster Recovery Guide for System Center - Service Manager](http://go.microsoft.com/fwlink/p/?LinkId=209671) before you continue the upgrade.  
+ Before you start any upgrade, we recommend that you back up your Service Manager and data warehouse databases and the encryption key. If you have already backed up your databases and encryption key, you can continue to run the upgrade. Otherwise, review the backup procedures in the [Disaster Recovery Guide for System Center - Service Manager](../manage/disaster-disaster-recovery-guide-for-system-center-2016-service-manager.md) before you continue the upgrade.  
 
 ## Registering with the Service Manager Data Warehouse  
- If you have installed a data warehouse management server in your environment, as part of the upgrade process, you must be able to view the status of the data warehouse jobs. You cannot perform this task if you have not registered with the Service Manager data warehouse. If the **Data Warehouse** button is not visible in the Service Manager console, complete the procedure in "Registering with the Service Manager Data Warehouse to Enable Reporting" in the [Deployment Guide for System Center 2016 - Service Manager](http://go.microsoft.com/fwlink/p/?LinkId=209670).  
+ If you have installed a data warehouse management server in your environment, as part of the upgrade process, you must be able to view the status of the data warehouse jobs. You cannot perform this task if you have not registered with the Service Manager data warehouse. If the **Data Warehouse** button is not visible in the Service Manager console, complete the procedure in "Registering with the Service Manager Data Warehouse to Enable Reporting" in the [Deployment Guide for System Center 2016 - Service Manager](deploy-deploying-system-center-2016-service-manager.md).  
 
 ## Encryption Keys  
  When you have finished running Setup to either install or upgrade to System Center 2016 - Service Manager, you are prompted to open the Encryption Backup or Restore Wizard. If you have previously backed up the encryption keys, no additional action is required. If you never backed up the encryption keys, use the Encryption Key Backup or Restore Wizard to back up the encryption keys on the Service Manager management servers.  
