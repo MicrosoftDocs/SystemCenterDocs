@@ -149,7 +149,7 @@ On Server 2012 – run the following in an elevated command prompt:  “C:\Windo
 
 **Workaround:** None.
 
-#### Client-side monitoring (CSM) alerts might stop flowing from the System Center Operations Manager management server
+#### Client-side monitoring (CSM) alerts might stop flowing from the System Center Operations Manager management server 
 **Description:** The update sequence of System Center Operation Manager management server may cause an issue with the client-side monitoring alerts collection from the management server. System Center Operations Manager agents are not affected. Likelihood of occurrence: Medium.
 
 **Workaround:** Restart the "Microsoft Monitoring Agent" service on System Center Operations Manager management server.
