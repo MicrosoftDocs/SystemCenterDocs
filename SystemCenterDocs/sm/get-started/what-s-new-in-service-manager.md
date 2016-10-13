@@ -6,7 +6,7 @@ author:  bandersmsft
 ms.author: banders
 ms.prod:  system-center-2016
 keywords:  
-ms.date:  2016-08-19
+ms.date:  2016-10-12
 title:  What's new in Service Manager
 ms.technology:  service-manager
 ms.assetid:  3eeb3265-88e0-47ed-b761-07f4e0634959

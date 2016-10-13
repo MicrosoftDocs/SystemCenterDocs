@@ -33,5 +33,9 @@ This guide will show you how to upgrade from System Center 2012 R2 - Service Man
 
  You can only upgrade to System Center 2016 from System Center 2012 R2 - Service Manager with Update Rollup 9 or later installed.  
 
+ Please refer the following articles for detailed instructions
+ - [Upgrade Planning for System Center 2016 - Service Manager](../sm/deploy/upgrade-upgrade-planning-for-system-center-2016-service-manager.md)
+ - [Upgrade to System Center 2016 - Service Manager](../sm/deploy/upgrade-upgrade-to-system-center-2016-service-manager.md)
+
 > [!IMPORTANT]  
 >  It is assumed in this guide that you are performing an *upgrade* to System Center 2012 R2. For information about installing System Center 2016 - Service Manager on a computer where no previous version of Service Manager exists, see the [Deploying System Center 2016 - Service Manager](deploy-deploying-system-center-2016-service-manager.md).  
