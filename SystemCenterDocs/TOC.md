@@ -177,7 +177,6 @@
 #### [How to Install Orchestrator on a Single Computer](orch/Deploy/How-to-Install-Orchestrator-on-a-Single-Computer.md)
 #### [How to install Orchestrator from the command prompt](Orch/Deploy/How-to-install-Orchestrator-from-the-command-prompt.md)
 #### [Troubleshoot your installation](orch/deploy/troubleshoot-your-orchestrator-installation.md)
-####[Use Sysprep to deploy Orchestrator](orch/deploy/use-sysprep-to-deploy-orchestrator.md)
 ### [Manage Orchestrator](orch/manage/administering-orchestrator.md)
 #### [Audit Trail](orch/manage/audit-trail.md)
 #### [Common activity properties](orch/manage/common-activity-properties.md)
