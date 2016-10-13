@@ -27,7 +27,7 @@ There are six major parts of a System Center 2016 - Service Manager installation
 |Data warehouse management server|The computer that hosts the server piece of the data warehouse.|  
 |Data warehouse databases|Databases that provide long\-term storage of the business data that Service Manager generates. These databases are also used for reporting.|  
 |Service Manager console|The user interface \(UI\) piece that is used by both the help desk analyst and the help desk administrator to perform Service Manager functions, such as incidents, changes, and tasks. This part is installed automatically when you deploy a  Service Manager management server. In addition, you can manually install the Service Manager console as a stand\-alone part on a computer.|  
-|Self-Service Portal|A web\-based interface into Service Manager.|  
+|Self-Service Portal|A web\-based interface into Service Manager for end users.|  
 
 >[!IMPORTANT]
 All computers that host any part of Service Manager must be domain-joined.
