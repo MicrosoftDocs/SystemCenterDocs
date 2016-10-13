@@ -4,7 +4,7 @@ description: This article describes how to Set up an SDN RAS gateway in the VMM 
 author: rayne-wiselman
 ms.author: raynew
 manager: cfreeman
-ms.date: 10-12-2016
+ms.date: 10/13/2016
 ms.topic: article
 ms.prod: system-center-threshold
 ms.technology: virtual-machine-manager
@@ -26,7 +26,7 @@ Follow these steps before you start:
 
 - **Planning**: [Read about](https://technet.microsoft.com/windows-server-docs/networking/sdn/plan/plan-a-software-defined-network-infrastructure) planning an SDN, and review the planning topology in [Plan a Software Defined Network Infrastructure](https://technet.microsoft.com/library/mt605207.aspx). The diagram shows a sample 4-node setup. The setup is highly available with three network controller nodes (virtual machines), and three SLB/MUX nodes. It shows two tenants with one virtual networks broken into two virtual subnets to simulate a web tier and a database tier. Both the infrastructure and tenant virtual machines can be redistributed across any physical host.
 - **Network controller**: You should deploy the network controller before you deploy the RAS gateway.
-- **SLB**: To ensure that dependencies are handled correctly, you should also deploy SLB before setting up the gateway. If an SLB and gateway configured, you can use an validate an IPSec connection.
+- **SLB**: To ensure that dependencies are handled correctly, you should also deploy SLB before setting up the gateway. If an SLB and gateway configured, you can use an validate an IPsec connection.
 
 
 
@@ -68,8 +68,8 @@ To set up an RAS gateway you do the following:
 
 1. Download the RAS gateway service template from the [Microsoft SDN GitHub repository](https://github.com/Microsoft/SDN/tree/master/VMM/Templates/GW). The download contains two templates.
 
-    - The EdgeService Template Generation 1 VM template is for deploying the gateway service on generation 1 virtual machines
-    - The EdgeService Template Generation 2 VM is for deploying the gateway service on Generation 2 virtual machines.
+    - The EdgeServiceTemplate_Generation1.xml template is for deploying the gateway service on generation 1 virtual machines
+    - The EdgeServiceTemplate_Generation2.xml is for deploying the gateway service on Generation 2 virtual machines.
     - Both the templates have a default count of three virtual machines which can be changed in the Service Template designer. You can configure the number of passive gateway VMs during deployment.
 
 2. Extract the contents to a folder on a local computer.

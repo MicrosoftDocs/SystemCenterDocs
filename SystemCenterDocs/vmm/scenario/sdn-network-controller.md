@@ -4,7 +4,7 @@ description: This article describes how to set up a Software Defined Network (SD
 author: rayne-wiselman
 ms.author: raynew
 manager: cfreeman
-ms.date: 10-12-2016
+ms.date: 10/13/2016
 ms.topic: article
 ms.prod: system-center-threshold
 ms.technology: virtual-machine-manager
@@ -57,15 +57,13 @@ Here's what you need to do to set up a SDN network controller
 
 ## Download a virtual hard disk for the service template
 
-1. You can download a prepared virtual hard disk in [VHD](http://download.microsoft.com/download/4/4/F/44F93CCF-1AAE-42E5-BDCB-924991A005DA/14300.1000.amd64fre.rs1_release_svc.160324-1723_server_serverdatacenter_en-us.vhd) or [VHDX](http://download.microsoft.com/download/4/4/F/44F93CCF-1AAE-42E5-BDCB-924991A005DA/14300.1000.amd64fre.rs1_release_svc.160324-1723_server_serverdatacenter_en-us.vhdx) format.
-    - The virtual hard disk operating system is Windows Server 2016.
-    - The VMM service template for the network controller support deployment on both generation 1 and generation 2 VMs. If you want to deploy a non-English environment, you can download the language pack you need.
-    - The product key is 6XBNX-4JQGW-QX6QG-74P76-72V67.
-2.   Import the vhd/vhdx files to the VMM library. [Learn more](../manage/manage-library-add-files.md).
+1. You can download(https://azure.microsoft.com//marketplace/virtual-machines/all/?operatingSystem=acom-windows&publisherType=acom-microsoft&term=Windows+Server+2016) a prepared virtual hard disk in vhd or vhdx format. In the Azure Gallery, search "Windows Server 2016" to find the virtual hard disk.
+2. After downloading, install the latest Windows Server updates, and any language packs you need if you have a non-English environment.
+3.   Import the vhd/vhdx files to the VMM library. [Learn more](../manage/manage-library-add-files.md).
 
-## Download the network controller service templates
+## Download the network controller service template
 
-1. Download the network controller service templates. The download contains four service templates and five custom resource folders:
+1. [Download](https://github.com/Microsoft/SDN/tree/master/VMM/Templates/NC)the network controller service templates. The download contains four service templates and five custom resource folders:
 
 
 **Name** | **Type** | **Details**
@@ -102,11 +100,11 @@ Create security groups for network controller management and clients.
 
 ## Create a library share for logging
 
-1. Optionally create a file share in the VMM library to keep diagnostic logs.
+1. Optionally [create a file share](../manage/manage-library-add-files.md) in the VMM library to keep diagnostic logs.
 2. Ensure that the share can be accessed by the network controller. The network controller accesses the share to store diagnostic information. Note the credentials for the account that will have write access to the share.
 
 
-## Set up host groups and hosts
+## Set up host groups
 
 1. [Create a dedicated host group](../manage/manage-compute-host-groups.md) for Hyper-V hosts that will be managed by SDN.
 2. Make sure Hyper-V hosts are running Windows Server 2016.
