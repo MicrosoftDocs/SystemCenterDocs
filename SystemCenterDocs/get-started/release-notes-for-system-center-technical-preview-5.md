@@ -104,7 +104,7 @@ The following release notes apply to System Center Technical Preview - Operation
 
 **Workaround:** Install the Update for System Center 2016 - Operations Manager. See the Knowledge Base article [3117586](https://support.microsoft.com/en-us/kb/3117586) for specific instructions.
 
-#### Client-side monitoring (CSM) alerts might stop flowing from the System Center Operations Manager management server host
+#### Client-side monitoring (CSM) alerts might stop flowing from the System Center Operations Manager management server
 
 **Description:** The update sequence of System Center Operation Manager management server may cause an issue with the client-side monitoring alerts collection from the management server host. System Center Operations Manager agents are not affected.
 Likelihood of occurrence: Medium
