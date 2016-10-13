@@ -34,16 +34,16 @@ There are a couple of ways to deploy these components:
 - If you deploy using the script, afterwards you can modify settings in the VMM console, just as you would if you deploy the SDN components manually.
 - Like the manual deployment, you have the option of setting up a new management logical network and switch, or to reuse an existing network and switch.
 - If the script deployment fails, all changed settings are rolled back, so that you can start again.
-- SET-enabled switch deployment isn't currently supported in a PowerShell deployment. You need to deploy the SET-enabled switch out-of-band, and then specify the name of the switch during deployment.
+- You can turn off deployment for specific components, For example, if you already have network controller deployed, you can deploy SLB and RAS gateway only.
 
 
 ## Before you start
 
-You need the prerequisites for SDN component deployment.
-
-[Network controller prerequisites](sdn-network-controller.md#before-you-start)
-[SLB prerequisites](sdn-slb.md#before-you-start)
-[RAS gateway prerequisites](sdn-gateway.md#before-you-start)
+- SET-enabled switch deployment isn't currently supported in a PowerShell deployment. You need to deploy the SET-enabled switch out-of-band, and then specify the name of the switch during deployment.
+- Check you have the prerequisites for SDN component deployment in place:
+    - [Network controller prerequisites](sdn-network-controller.md#before-you-start)
+    - [SLB prerequisites](sdn-slb.md#before-you-start)
+    - [RAS gateway prerequisites](sdn-gateway.md#before-you-start)
 
 ## Deployment steps
 
