@@ -4,10 +4,11 @@ description: Describes how to add and provision shielded VMs in the VMM fabric. 
 author: rayne-wiselman
 ms.author: raynew
 manager: cfreeman
-ms.date: 10-12-2016
+ms.date: 10/14/2016
 ms.topic: article
 ms.prod: system-center-2016
 ms.technology: virtual-machine-manager
+ms.assetid: 56e1b31e-1d0c-4844-9625-bcd051dd189e
 ---
 
 # Scenario: Provision shielded virtual machines in the VMM fabric
