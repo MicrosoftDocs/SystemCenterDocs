@@ -1,32 +1,35 @@
 ---
 title: Resolving Heartbeat Alerts
+description:
 author: mgoedtel
-manager: cfreemanwa
-ms.date: 2016-08-29
+manager: cfreeman
+ms.date: 2016-10-14
 ms.custom: na
 ms.prod: system-center-threshold
 ms.technology: operations-manager
-ms.tgt_pltfrm: na
 ms.topic: article
+ms.assetid: b0f9ef5e-e8bf-4cd3-a358-02a7aafa82a9
 ---
 
 # Resolving Heartbeat Alerts
+
+>Applies To: System Center 2016 - Operations Manager
 
 The Health Service sends a heartbeat to a management server to verify that the system is still responding. When a specified number of heartbeats fail to arrive, System Center 2016 - Operations Manager displays an alert.  
   
 This section shows how to investigate a Health Service Heartbeat Failure alert as an example. Different alerts have different causes and different resolutions.  
   
-If you want to walk through these procedures, you can cause this alert by disabling the System Center Management service on a test system.  
+If you want to walk through these procedures, you can cause this alert by disabling the Microsoft Monitoring Agent service on a test system.  
   
 ### To cause a Health Service heartbeat failure alert for testing  
   
 1.  On a computer with an agent installed, open Control Panel.  
   
-2.  Double\-click **Administrative Tools**.  
+2.  Double-click **Administrative Tools**.  
   
-3.  Double\-click **Services**.  
+3.  Double-click **Services**.  
   
-4.  Right\-click the **System Center Management** service, and then click **Stop**.  
+4.  Right-click the **Microsoft Monitoring Agent** service, and then click **Stop**.  
   
     > [!NOTE]  
     > Use this same procedure and select **Start** in step 4 when you are done testing.  
@@ -67,7 +70,7 @@ Use the tasks in the **Tasks** pane to diagnose the cause of the alert. Differen
   
 5.  Click **Services** to display services.  
   
-6.  Right\-click the **System Center Management** service, and then click **Start**.  
+6.  Right-click the **Microsoft Monitoring Agent** service, and then click **Start**.  
   
     > [!NOTE]  
     > After the connection with the agent is restored, the alert will be automatically resolved and the computer status will return to healthy.  

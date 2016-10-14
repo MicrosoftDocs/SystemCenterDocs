@@ -4,7 +4,7 @@ title: Install Agent and Certificate on UNIX and Linux Computers Using the Comma
 description:
 author: mgoedtel
 manager: cfreemanwa
-ms.date: 2016-10-12
+ms.date: 2016-10-14
 ms.custom: na
 ms.prod: system-center-threshold
 ms.technology: operations-manager

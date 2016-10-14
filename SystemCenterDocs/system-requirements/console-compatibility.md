@@ -6,7 +6,7 @@ author:  cfreemanwa
 ms.author: cfreeman
 ms.prod:  system-center-threshold
 keywords:  
-ms.date:  2016-07-01
+ms.date:  10/12/2016
 title:  Console Compatibility for System Center Technical Preview
 ms.technology:  system-center-2016
 ms.assetid:  8c431276-ecd5-47d2-9b8c-e1936aa4e496

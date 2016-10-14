@@ -1,21 +1,16 @@
 ---
 title: Planning for Service Provider Foundation
 description: This topic provides an overview of how to plan for a Service Provider Foundation installation.
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology:
-  - service-provider-foundation
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 617ee2c1-4dea-40e6-85b3-d87b15c0221d
 author: rayne-wiselman
-manager: cfreeman
 ms.author: raynew
+manager: cfreeman
 ms.date: 10/12/2016
-
+ms.topic: article
+ms.prod: system-center-threshold
+ms.technology: service-provider-foundation
 ---
+
+
 # Planning for Service Provider Foundation
 
 >Apples To: System Center 2016 - Service Provider Foundation

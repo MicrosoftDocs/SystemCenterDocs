@@ -10,7 +10,7 @@ ms.tgt_pltfrm: na
 ms.date:  2016-10-12
 title: Architecture Overview of Service Provider Foundation
 ms.technology: service-provider-foundation
-ms.assetid: 0cce9ea6-adf3-422d-94c0-2bf15b0c1d95
+
 
 ---
 # Architecture Overview of Service Provider Foundation

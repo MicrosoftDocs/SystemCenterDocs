@@ -1,4 +1,5 @@
 ---
+ms.assetid: 9943f491-c585-4330-ab01-89db435fa1a5
 title: Manage Hyper-V clusters in the VMM fabric
 description: This article describes how to manage Hyper-V clusters in the VMM fabric
 author:  rayne-wiselman
