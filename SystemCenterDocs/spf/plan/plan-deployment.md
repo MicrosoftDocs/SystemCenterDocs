@@ -1,5 +1,5 @@
 ---
-title: Planning for Service Provider Foundation
+title: Plan SPF deployment
 description: This topic provides an overview of how to plan for a Service Provider Foundation installation.
 author: rayne-wiselman
 ms.author: raynew
@@ -60,7 +60,7 @@ SPF implements Windows and IIS security features. Requirements include:
 - SPF relies on IIS for user authentication. Only SSL (HTTPS) requests are accepted from provider endpoints, using default port 8090. Typically, the request should have the security context of the logged on user to make the request.
 - When the setup wizard installs a web service, it creates a local security group on the computer, to run the service. You can specify users or groups with access to each web service and assign them to this local group. SPF checks that users sending requests belong to the appropriate local security group.
 - The setup wizard creates application domain pools in IIS for each web service. You can specify the Network Service account, or an account that belongs to the security group. The wizard creates the following security group application pools:
-SPF_Admin: Admin
+    - SPF_Admin: Admin
     - SPF_VMM: VMM
     - SPF_Provider: Provider
     - SPF_Usage: Usage
