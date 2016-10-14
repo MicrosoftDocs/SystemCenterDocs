@@ -53,7 +53,7 @@ To add a volume in the administrator console:
       ![Add volume](../media/dpm-2016-add-volume.png)
 
 If you want to add a disk, it must belong to a protection group with legacy storage. Those disks can only be used for those protection groups. If the DPM server doesn't have sources with legacy protection, the disk won't appear.
-See the topic, [Adding disks to increase legacy storage](upgrade-to-system-center-2016.md#adding-disks-to-increase-legacy-storage), for more information on adding disks. You can't give disks a friendly name.
+See the topic, [Adding disks to increase legacy storage](upgrade-to-dpm-2016.md#adding-disks-to-increase-legacy-storage), for more information on adding disks. You can't give disks a friendly name.
 
 
 ### Assign Workloads to Volumes

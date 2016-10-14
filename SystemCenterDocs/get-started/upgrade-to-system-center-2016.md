@@ -54,7 +54,7 @@ The following sections provide detailed considerations for each component.
 
 ### DPM Upgrade Notes
 
-For information on upgrading DPM to 2016, see [Upgrade to DPM 2016](upgrade-to-dpm-2016.md).
+For information on upgrading DPM to 2016, see [Upgrade to DPM 2016](../dpm/get-started/upgrade-to-dpm-2016.md).
 
 ### OM Upgrade
 [!NOTE]
