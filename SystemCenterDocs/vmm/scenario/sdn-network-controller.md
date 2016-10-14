@@ -63,8 +63,8 @@ Here's what you need to do to set up a SDN network controller
 
 ## Download the network controller service template
 
-1. [Download](https://github.com/Microsoft/SDN/tree/master/VMM/Templates/NC)the network controller service templates. The download contains four service templates and five custom resource folders. These are summarized below in the table.
-2. The custom resource files are used when setting up the network controller, and other SDN components (software load balancer, RAS gateway). Import the custom resources files into the VMM library.
+1. [Download](https://github.com/Microsoft/SDN/tree/master/VMM/Templates/NC) the network controller service templates. The download contains four service templates and five custom resource folders. These are summarized below in the table. The custom resource files are used when setting up the network controller, and other SDN components (software load balancer, RAS gateway).
+2. Import the custom resources files into the VMM library.
 3. Refresh the library. Later, you'll import the service templates.
 
 ### Templates and resource files
