@@ -8,6 +8,7 @@ ms.date:  10/13/2016
 ms.topic:  article
 ms.prod:  system-center-threshold
 ms.technology:  virtual-machine-manager
+ms.assetid: dbb10ddd-b976-4cb6-9216-ec70eafca4b6
 ---
 
 # Set up a Software Defined Network (SDN) infrastructure in the VMM fabric
