@@ -8,6 +8,7 @@ ms.date: 10/13/2016
 ms.topic: article
 ms.prod: system-center-threshold
 ms.technology: virtual-machine-manager
+ms.assetid: 8bd626d5-27c0-46c5-9031-905a69e44219
 ---
 
 # Set up an SDN network controller in the VMM fabric
