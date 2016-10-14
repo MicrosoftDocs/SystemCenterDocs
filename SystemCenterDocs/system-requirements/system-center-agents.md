@@ -1,11 +1,12 @@
 ---
 description:  
-manager:  cfreemanwa
+manager:  cfreeman
 ms.topic:  article
 author:  cfreemanwa
+ms.author: cfreeman
 ms.prod:  system-center-threshold
 keywords:  
-ms.date:  2016-09-27
+ms.date:  10/12/2016
 title:  System Center Agents
 ms.technology:  system-center-2016
 ms.assetid:  cd5d13e8-71da-4e91-9bcf-f3be00a03d54

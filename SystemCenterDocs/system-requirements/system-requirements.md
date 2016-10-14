@@ -1,12 +1,12 @@
 ---
-description:  
+description:  This article provides an overview of the system requirements for System Center 2016.
 manager:  cfreeman
 ms.topic:  article
 author:  cfreemanwa
 ms.author: cfreeman
 ms.prod:  system-center-threshold
 keywords:  
-ms.date:  2016-07-01
+ms.date:  10/12/2016
 title:  System Requirements for System Center 2016
 ms.technology:  system-center-2016
 ms.assetid:  38a4c1f7-e088-4ab9-b250-674dde7387fc

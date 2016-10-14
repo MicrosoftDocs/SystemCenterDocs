@@ -6,7 +6,7 @@ author:  cfreemanwa
 ms.author: Cfreeman
 ms.prod:  system-center-threshold
 keywords:  
-ms.date:  2016-07-01
+ms.date:  10/12/2016
 title:  Minimum Hardware Recommendations for System Center Technical Preview
 ms.technology:  system-center-2016
 ms.assetid:  0cb670c2-7b8c-4901-858c-f0644187d45f
