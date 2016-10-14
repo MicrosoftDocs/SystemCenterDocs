@@ -1,4 +1,5 @@
 ---
+ms.assetid: b6c7614a-e5af-42ae-b88d-9810b42a35f6
 title: Plan VMM installation
 description: This article provides planning information for setting up VMM
 author:  rayne-wiselman

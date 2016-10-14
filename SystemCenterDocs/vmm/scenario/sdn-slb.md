@@ -4,7 +4,7 @@ description: This article describes how to set up a SDN software load balancer i
 author:  rayne-wiselman
 ms.author: raynew
 manager:  cfreeman
-ms.date:  10-12-2016
+ms.date:  10/13/2016
 ms.topic:  article
 ms.prod:  system-center-threshold
 ms.technology:  virtual-machine-manager
@@ -51,8 +51,8 @@ You can use VMM to deploy a network controller and software load balancer. After
 
 1. Download the SLB/MUX service template from the [Microsoft SDN GitHub repository](https://github.com/Microsoft/SDN/tree/master/VMM/Templates/SLB). The download contains two templates:
 
-    - The SLB Production Generation 1 VM template is for deploying the SLB Service on generation 1 virtual machines.
-    - The SLB Production Generation 2 VM is for deploying the SLB Service on Generation 2 virtual machines.
+    - The SLB Production Generation 1 VM.xml template is for deploying the SLB Service on generation 1 virtual machines.
+    - The SLB Production Generation 2 VM.xml is for deploying the SLB Service on Generation 2 virtual machines.
     - Both the templates have a default count of three virtual machines which can be changed in the Service Template designer.
 
 2. Extract the contents to a folder on a local computer. You'll import them to the library later.
