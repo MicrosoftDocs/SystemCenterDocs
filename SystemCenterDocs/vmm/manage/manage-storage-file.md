@@ -1,4 +1,5 @@
 ---
+ms.assetid: 88134cd9-4440-47bd-acf0-ab8f90bc2003
 title: Set up file storage in the VMM fabric
 description: This article describes how to set up file storage in the VMM fabric
 author:  rayne-wiselman

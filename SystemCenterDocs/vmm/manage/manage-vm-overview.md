@@ -1,4 +1,5 @@
 ---
+ms.assetid: 3ab37fed-9dcf-411f-983f-4fc9ea78c4c9
 title: Manage virtual machines in the VMM fabric
 description: This article describes how to manage VMs in the VMM compute fabric
 author:  rayne-wiselman

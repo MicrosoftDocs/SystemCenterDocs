@@ -1,4 +1,5 @@
 ---
+ms.assetid: 6c26db7b-d282-4d74-9456-fe2de97f7786
 title: Set up MAC address pools in the VMM fabric
 description: This article describes how to manage MAC address pools in the VMM fabric
 author:  rayne-wiselman
