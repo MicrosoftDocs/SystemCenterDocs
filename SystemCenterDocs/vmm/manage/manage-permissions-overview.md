@@ -1,4 +1,5 @@
 ---
+ms.assetid: 07eb5def-e680-4b7b-8238-cf2266a675bb
 title: Manage roles and permissions in VMM
 description: This article describes how to manage roles and permissions in VMM
 author:  rayne-wiselman
