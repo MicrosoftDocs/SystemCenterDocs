@@ -7,7 +7,7 @@ ms.author: markgal
 ms.prod:  system-center-threshold
 keywords:
 ms.date:  10/12/2016
-title:  Upgrade-to-DPM-2016
+title:  Upgrade to DPM-2016
 ms.technology:  system-center-2016
 ms.assetid:  7f507ce9-676c-48df-9229-c02f2284a406
 ---
@@ -85,7 +85,7 @@ To create a Protection Group:
 
     The **Create new Protection Group** wizard opens.
 
-  ![Create protection group](../media/dpm-2016-protection-wiz.png)
+  ![Create protection group](./media/dpm-2016-protection-wiz.png)
 
 3. Click **Next** to advance the wizard to the **Select Protection Group Type** screen.
 4. On the **Select Protection Group Type** screen, select the type of Protection Group to be created and then click **Next**.
