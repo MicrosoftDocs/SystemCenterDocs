@@ -1,4 +1,5 @@
 ---
+ms.assetid: 0cb44190-98ff-47d8-a53e-b199895bc410
 title: Add storage to Hyper-V hosts and clusters
 description: This article provides about managing your Hyper-V environment in the VMM fabric
 author:  rayne-wiselman

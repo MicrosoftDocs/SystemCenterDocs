@@ -110,4 +110,4 @@ Enable a cloud to support guarded hosts:
 
 ## Next steps
 
-- [Deploy shielded virtual machines in the VMM fabric](guarded-vms.md)
+- [Set up a shielded VHDX and VM template](guarded-template.md)
