@@ -1,4 +1,5 @@
 ---
+ms.assetid: 9fe8955d-cf4b-483f-b037-494c41207a77
 title: Plan the VMM fabric
 description: This article provides planning information for the VMM fabric
 author:  rayne-wiselman

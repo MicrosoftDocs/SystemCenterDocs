@@ -1,4 +1,5 @@
 ---
+ms.assetid: 47ab32eb-8259-4e2d-9126-413ee2327113
 title: Deploy System Center 2016 - Virtual Machine Manager
 description: This article provides links to deployment steps for System Center VMM 2016
 author:  rayne-wiselman

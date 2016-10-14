@@ -1,4 +1,5 @@
 ---
+ms.assetid: b329876f-68f3-4087-beb3-076c1ad84f49
 title: What's new in VMM in System Center 2016
 description: This article describes what's new in VMM 2016
 author:  rayne-wiselman

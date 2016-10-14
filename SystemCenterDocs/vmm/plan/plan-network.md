@@ -1,4 +1,5 @@
 ---
+ms.assetid: 72a60bb6-55e6-4305-a318-7fe88512f2c4
 title: Plan the VMM networking fabric
 description: This article provides information about preparing the VMM network fabric
 author:  rayne-wiselman
