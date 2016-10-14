@@ -57,7 +57,7 @@ Here's what you need to do to set up a SDN network controller
 
 ## Download a virtual hard disk for the service template
 
-1. You can download(https://azure.microsoft.com//marketplace/virtual-machines/all/?operatingSystem=acom-windows&publisherType=acom-microsoft&term=Windows+Server+2016) a prepared virtual hard disk in vhd or vhdx format. In the Azure Gallery, search "Windows Server 2016" to find the virtual hard disk.
+1. You can [download](https://azure.microsoft.com//marketplace/virtual-machines/all/?operatingSystem=acom-windows&publisherType=acom-microsoft&term=Windows+Server+2016) a prepared virtual hard disk in vhd or vhdx format. To find the VHD/VHDX in the Azure Gallery, search for "Windows Server 2016".
 2. After downloading, install the latest Windows Server updates, and any language packs you need if you have a non-English environment.
 3.   Import the vhd/vhdx files to the VMM library. [Learn more](../manage/manage-library-add-files.md).
 
