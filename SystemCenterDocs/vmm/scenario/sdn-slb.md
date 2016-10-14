@@ -15,7 +15,7 @@ ms.technology:  virtual-machine-manager
 
 >Applies To: System Center 2016 - Virtual Machine Manager
 
-This article describes how to deploy an Software Defined Networking (SDN) software load balancer (SLB) in the System Center 2016 - Vi/rtual Machine Manager (VMM) fabric.
+This article describes how to deploy an Software Defined Networking (SDN) software load balancer (SLB) in the System Center 2016 - Virtual Machine Manager (VMM) fabric.
 
 The SLB enables even distribution of tenant and tenant customer network traffic among virtual network resources, so that multiple servers can host the same workload to provide high availability and scalability. [Learn more](https://technet.microsoft.com/windows-server-docs/networking/sdn/technologies/network-function-virtualization/software-load-balancing--slb--for-sdn).
 
