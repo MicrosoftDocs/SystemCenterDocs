@@ -60,7 +60,7 @@ There are a number of requirements for the signed VHDX:
 
 ## Copy the disk to the VMM library
 
-1.	[Copy the template disk](manage-library-add-files.md) to a library share (\\vmmserver>\MSSCVMMLibrary\VHDs by default), and refresh the library server.
+1.	[Copy the template disk](../manage/manage-library-add-files.md) to a library share (\\vmmserver>\MSSCVMMLibrary\VHDs by default), and refresh the library server.
 2.	To provide VMM with information about the operating system on the template disk, in **Library**, right-click the disk > **Properties**.
 3.	In **Operating system**, select the operating system installed on the disk. This indicates to VMM that the VHDX isn’t blank. The shield icon next to the disk name denotes it as a signed template disk for shielded VMs.
 
