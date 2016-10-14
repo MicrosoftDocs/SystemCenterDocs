@@ -8,8 +8,6 @@ ms.technology: service-provider-foundation
 ms.tgt_pltfrm: na
 ms.date: 10-12-2016
 ms.topic: article
-ms.assetid: 7c2b9a00-8522-4f67-9853-2a4639442b0d
-author: rayne-wiselman
 manager: cfreeman
 ms.author: raynew
 ---

@@ -1,4 +1,5 @@
 ---
+ms.assetid: 00667742-29ba-44ea-8dda-587d8944f4a8
 title: Monitor VMM
 description: This article describes how to monitor VMM
 author:  rayne-wiselman

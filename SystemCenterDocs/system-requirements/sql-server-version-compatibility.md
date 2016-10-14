@@ -6,7 +6,7 @@ author:  cfreemanwa
 ms.author: cfreeman
 ms.prod:  system-center-threshold
 keywords:  
-ms.date:  2016-07-01
+ms.date:  10/12/2016
 title:  SQL Server Version Compatibility for System Center 2016
 ms.technology:  system-center-2016
 ms.assetid:  d33dc02d-2118-4116-85fa-782ea557ed1e
