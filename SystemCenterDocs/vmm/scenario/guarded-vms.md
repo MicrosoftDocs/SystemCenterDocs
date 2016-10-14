@@ -4,13 +4,14 @@ description: Describes how to add and provision shielded VMs in the VMM fabric. 
 author: rayne-wiselman
 ms.author: raynew
 manager: cfreeman
-ms.date: 10-12-2016
+ms.date: 10/14/2016
 ms.topic: article
 ms.prod: system-center-2016
 ms.technology: virtual-machine-manager
+ms.assetid: 56e1b31e-1d0c-4844-9625-bcd051dd189e
 ---
 
-# Scenario: Provision shielded virtual machines in the VMM fabric
+# Provision shielded virtual machines in the VMM fabric
 
 >Applies To: System Center 2016 - Virtual Machine Manager
 
@@ -21,26 +22,28 @@ Guarded fabric helps guarantee the security of Hyper-V virtual machines. As a cl
 You can deploy shielded VMs in VMM in a couple of ways:
 
 - Turn an existing VM into a shielded VM
-- Create a new shielded VM using a signed virtual machine hard disk (VHDX), or a VM template.
+- Create a new shielded VM using a signed virtual machine hard disk (VHDX), and optionally a VM template.
+
+
 
 > Note that converting existing VMs into shielded VMs isn't supported right now.
 
 ## Before you start
 
-
-You set up shielded VMs in the VMM fabric as follows:
+[Watch](https://channel9.msdn.com/Blogs/hybrid-it-management/Demo-Creating-a-Shielded-VM-using-System-Center-2016-Virtual-Machine-Manager-VMM) a video that provides a quick, two-minute overview of provisioning shielded VMs in VMM. Then, make sure you've done the following:
 
 1. **Prepare an HGS server**: You should have an HGS server deployed. [Learn more](https://technet.microsoft.com/windows-server-docs/security/guarded-fabric-shielded-vm/guarded-fabric-setting-up-the-host-guardian-service-hgs).
-2. **Set up VMM**: You’ll need to configure global HGS settings in VMM, and set up at least one guarded host. If guarded hosts belong to a cloud, the cloud should be enabled to support shielded VMs. [Learn more](guarded-hosts.md).
-3. **Prepare shielded data files**: To use the signed template disks in the VMM library, tenants must prepare one or more shielding data files. This file contains all the secrets that a tenant needs to deploy a VM, including the unattend file used to specialize the VM, certificates, administrator account passwords. The file also specifies which guarded fabric a tenant trusts to host their VM, and information about the signed template disks. The file is encrypted and can only be read by a host in a guarded fabric trusted by the tenant. [Learn more](https://technet.microsoft.com/windows-server-docs/security/guarded-fabric-shielded-vm/guarded-fabric-tenant-creates-shielding-data).
-4. **Set up host group**: For easy management, we recommend that shielded VMs should be placed in a dedicated VMM host group.
-5. **Verify existing VM requirements**: If you want to convert an existing VM to shielded, note the following:
+2. **Set up VMM**: You need to configure global HGS settings in VMM, and set up at least one guarded host. If guarded hosts belong to a cloud, the cloud should be enabled to support shielded VMs. [Learn more](guarded-hosts.md).
+3. **Prepare a shielded VHDX and VM template**: You deploy shielded VMs from a shielded virtual hard disk (VHDX), optionally using a VM template. [Learn more](guarded-template.md) about preparing these.
+4. **Prepare shielded data files**: To use the signed template disks in the VMM library, tenants must prepare one or more shielding data files. This file contains all the secrets that a tenant needs to deploy a VM, including the unattend file used to specialize the VM, certificates, administrator account passwords. The file also specifies which guarded fabric a tenant trusts to host their VM, and information about the signed template disks. The file is encrypted and can only be read by a host in a guarded fabric trusted by the tenant. [Learn more](https://technet.microsoft.com/windows-server-docs/security/guarded-fabric-shielded-vm/guarded-fabric-tenant-creates-shielding-data).
+5. **Set up host group**: For easy management, we recommend that shielded VMs should be placed in a dedicated VMM host group.
+6. **Verify existing VM requirements**: If you want to convert an existing VM to shielded, note the following:
     - The VM must be generation 2.
     - The VHDX operating system for the VM should support generation 2 VMs and the Microsoft secure boot template.
     -   Windows Server 2016, Windows Server 2012 R2, Windows Server 2012
     -   Windows 10, Windows 8.1, Windows 8
     - The OS disk for the VM must use GUID Partition Table. This is required for generation 2 VMs to support UEFI.
-6. **Set up helper VHD**: The hosting service provider will need to create a VM that acts as a helper VHD for converting existing machines. [Learn more](https://technet.microsoft.com/windows-server-docs/security/guarded-fabric-shielded-vm/guarded-fabric-vm-shielding-helper-vhd).
+7. **Set up helper VHD**: The hosting service provider will need to create a VM that acts as a helper VHD for converting existing machines. [Learn more](https://technet.microsoft.com/windows-server-docs/security/guarded-fabric-shielded-vm/guarded-fabric-vm-shielding-helper-vhd).
 
 ## Enable shielding for existing VM
 
