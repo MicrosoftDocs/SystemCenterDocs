@@ -4,13 +4,14 @@ description: Describes how to set up guarded hosts and provision shielded VMs in
 author:  rayne-wiselman
 ms.author: raynew
 manager:  cfreeman
-ms.date:  2016-10-12
+ms.date:  10/14/2016
 ms.topic:  article
 ms.prod:  system-center-2016
 ms.technology:  virtual-machine-manager
+ms.assetid: a013a64d-946d-4847-97b0-7f3fcb4b3dbf
 ---
 
-# Scenario: Deploy guarded hosts and shielded virtual machines in VMM
+# Scenario - Deploy guarded hosts and shielded virtual machines in VMM
 
 >Applies To: System Center 2016 - Virtual Machine Manager
 
@@ -42,9 +43,10 @@ VMM can be optionally deployed with guarded fabric to provide the following:
     - Meets the guarded host prerequisites.
     - Is registered with the HGS. If the HGS is used admin-trusted attestation, the Hyper-V host must belong to a specific security group. If the HGS uses TPM-trusted attestation, the TPM identifier for the host must be registered with HGS.
     - Is marked as guarded in VMM by configuring it to use the same HGS URLs as those specified in the global HGS settings.
+- **Set up a shielded virtual hard disk and optionally a VM template**: You need to set up a shielded VHDX and copy it into the VMM library. You can then use this VHDX in a VM template.
 - **Provision and management of shielded VMs**: There are a few options here:
-    - You can create new VMs from a shielded VM template or signed virtual hard disk (VHDX)
-    - You can enable shielding for existing VMs
+    - You can create new VMs from a signed virtual hard disk (VHDX), and optionally using a VM template.
+    - You can enable shielding for existing VMs.
 
 ## Next steps
 
