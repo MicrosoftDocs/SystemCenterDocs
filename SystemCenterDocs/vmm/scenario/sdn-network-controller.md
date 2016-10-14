@@ -147,8 +147,8 @@ You need to deploy a logical switch on the management logical network. The switc
 6.  Select an existing uplink port profile, or click **Add** > **New Uplink Port Profile**. Provide a name and optional description. Use the defaults for load balancing algorithm and teaming mode.  Select all the network sites in the management logical network.
 7. Select the uplink port profile you created > **New virtual network adapter**. This adds a host virtual network adapter (vNIC) to your logical switch and uplink port profile, so that when you add the logical switch to your hosts, the vNICs get added automatically.
 8. Provide a name for the vNIC. Verify that the management VM network is listed in **Connectivity**.
- Select **This network adapter will be used for host management** > **Inherit connection settings from the host adapter**. This allows you to take the vNIC adapter settings from the adapter that already exists on the host. If you created a port classification and virtual port profile earlier, you can select it now.
- In **Summary** review the information and click **Finish** to complete the wizard.
+9. Select **This network adapter will be used for host management** > **Inherit connection settings from the host adapter**. This allows you to take the vNIC adapter settings from the adapter that already exists on the host. If you created a port classification and virtual port profile earlier, you can select it now.
+10. In **Summary** review the information and click **Finish** to complete the wizard.
 
 ### Deploy the logical switch
 
@@ -263,16 +263,16 @@ After the network controller service is successfully deployed, the next step is 
 
 1.  In **Fabric**, right-click **Networking** > **Network Service**, and click **Add Network Service.**
 2.   The **Add Network Service Wizard** starts. Specify a name and optional description.
-Select **Microsoft** for the manufacturer and for model select **Microsoft network controller**.
-3. In **Credentials**, provide the Run As account you want to use to configure the network service. This should be the same account that you included in the network controller clients group.
-4. For the **Connection String**:
+3. Select **Microsoft** for the manufacturer and for model select **Microsoft network controller**.
+4. In **Credentials**, provide the Run As account you want to use to configure the network service. This should be the same account that you included in the network controller clients group.
+5. For the **Connection String**:
     - In multi-node deployment, **ServerURL** should use the REST endpoint, and **servicename** should be the name of the  network controller instance.
     - In single node deployment, **ServerURL** should be the network controller FQDN and, **servicename** must be the network controller service instance name. Example: ``serverurl=https://NCCluster.contoso.com;servicename=NC_VMM_RTM``
 
-5. In **Review Certificates**, a connection is made to the network controller virtual machine to retrieve the certificate. Verify that the certificate shown is the one you expect. Ensure you select **These certificates have been reviewed and can be imported to the trusted certificate storebox**.
-6. On the next screen, click **Scan Provider** to connect to your service and list the properties and their status. This is also a good test of whether or not the service was created correctly, and that you’re using the right connect string to connect to it. Examine the results, and check that isNetworkController = true. When it completes successfully click **Next**.
-7. Configure the host group that your network controller will manage.
-8. Click **Finish** to complete the wizard. When the service has been added to VMM, it will appear in the **Network Services** list in the VMM console. If the network service isn't added, check **Jobs** in the VMM console to troubleshoot.
+6. In **Review Certificates**, a connection is made to the network controller virtual machine to retrieve the certificate. Verify that the certificate shown is the one you expect. Ensure you select **These certificates have been reviewed and can be imported to the trusted certificate storebox**.
+7. On the next screen, click **Scan Provider** to connect to your service and list the properties and their status. This is also a good test of whether or not the service was created correctly, and that you’re using the right connect string to connect to it. Examine the results, and check that isNetworkController = true. When it completes successfully click **Next**.
+8. Configure the host group that your network controller will manage.
+9. Click **Finish** to complete the wizard. When the service has been added to VMM, it will appear in the **Network Services** list in the VMM console. If the network service isn't added, check **Jobs** in the VMM console to troubleshoot.
 
 ## Validate the deployment
 
