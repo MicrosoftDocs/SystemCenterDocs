@@ -1,11 +1,12 @@
 ---
 description:  
-manager:  cfreemanwa
+manager:  cfreeman
 ms.topic:  article
 author:  bandersmsft
-ms.prod:  system-center-threshold
+ms.author: banders
+ms.prod:  system-center-2016
 keywords:  
-ms.date:  2016-06-28
+ms.date:  2016-10-14
 title:  Using SQL Server AlwaysOn availability groups with Service Manager
 ms.technology:  service-manager
 ms.assetid:  706e433d-c641-4dc3-8be5-fe582ef9f4bc
@@ -13,7 +14,7 @@ ms.assetid:  706e433d-c641-4dc3-8be5-fe582ef9f4bc
 
 # Using SQL Server AlwaysOn availability groups with Service Manager
 
->Applies To: System Center 2016  - Service Manager
+>Applies To: System Center 2016 - Service Manager
 
 The information in this topic provides tasks that you need to perform in order for Service Manager to work effectively when using availability groups. This information is supported only with SQL Server 2012 SP2 and above.
 
