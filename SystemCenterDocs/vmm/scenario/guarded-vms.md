@@ -24,11 +24,13 @@ You can deploy shielded VMs in VMM in a couple of ways:
 - Turn an existing VM into a shielded VM
 - Create a new shielded VM using a signed virtual machine hard disk (VHDX), and optionally a VM template.
 
+
+
 > Note that converting existing VMs into shielded VMs isn't supported right now.
 
 ## Before you start
 
-Before you provision shielded VMs, ensure you've done the following:
+[Watch](https://channel9.msdn.com/Blogs/hybrid-it-management/Demo-Creating-a-Shielded-VM-using-System-Center-2016-Virtual-Machine-Manager-VMM) a video that provides a quick, two-minute overview of provisioning shielded VMs in VMM. Then, make sure you've done the following:
 
 1. **Prepare an HGS server**: You should have an HGS server deployed. [Learn more](https://technet.microsoft.com/windows-server-docs/security/guarded-fabric-shielded-vm/guarded-fabric-setting-up-the-host-guardian-service-hgs).
 2. **Set up VMM**: You need to configure global HGS settings in VMM, and set up at least one guarded host. If guarded hosts belong to a cloud, the cloud should be enabled to support shielded VMs. [Learn more](guarded-hosts.md).
