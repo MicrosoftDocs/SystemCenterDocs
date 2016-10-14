@@ -132,4 +132,4 @@ Windows Azure Pack uses SPF to integrate with VMM to provide the VM Clouds servi
 
 ## Next steps
 
-[Plan SPF deployment](plan-deployment.md)
+[Plan SPF deployment](../plan/plan-deployment.md)
