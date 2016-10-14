@@ -4,7 +4,7 @@ title: What's New in Operations Manager
 description:  
 author: mgoedtel
 manager: cfreeman
-ms.date: 2016-10-12
+ms.date: 2016-10-14
 ms.custom: na
 ms.prod: system-center-threshold
 ms.technology: operations-manager
@@ -91,7 +91,7 @@ In the System Center 2016 – Operations Manager release, we have included suppo
 
 -  Manage updating the Nano-compatible agent directly from the console as you do today with the Windows agent, or manually on Nano Server using a PowerShell script included in this release
 
-For specific instructions on how to configure System Center 2016 - Operations Manager to monitor Nano Server, see [Monitoring Nano Server](../manage/Monitoring-Nano-Server.md).
+For specific instructions on how to configure System Center 2016 - Operations Manager to monitor Nano Server, see [Monitoring Nano Server](../manage/install-agent-on-nano-server.md).
 
 
 ## Scalability improvement with Unix/Linux agent monitoring
