@@ -142,6 +142,7 @@
 #### [General tasks in Operations Manager](om/manage/general-tasks-in-operations-manager.md)
 ##### [Managing alerts](om/manage/managing-alerts.md)
 ###### [How heartbeats work](om/manage/how-heartbeats-work.md)
+###### [Resolving heartbeat alerts](om/manage/resolving-heartbeat-alerts.md)
 ###### [Data driven alert management](om/manage/data-driven-alert-management.md)
 ##### [How to suspend monitoring temporarily by using maintenance mode](om/manage/how-to-suspend-monitoring-temporarily-by-using-maintenance-mode.md)
 ##### [Creating and managing groups](om/manage/creating-and-managing-groups.md)
