@@ -1,6 +1,6 @@
 ---
-title: Register the SPF endpoint in Windows Azure Pack
-description: Provides information about registering the SPF endpoint in Windows Azure Pack
+title: Manage usage metering in SPF
+description: Provides information about setting up usage metering in SPF
 author: rayne-wiselman
 ms.author: raynew
 manager: cfreeman
@@ -10,7 +10,7 @@ ms.technology: service-provider-foundation
 ms.assetid: b64a106a-93d5-4cfd-bcd6-a39462713ca3
 ---
 
-# Configure usage metering in SPF
+# Manage usage metering in SPF
 >Apples To: System Center 2016
 
 You can configure System Center 2016 - Service Provider Foundation (SPF) to aggregate usage statistics for queries by the SPF Usage web service.
@@ -29,10 +29,12 @@ Here's what you need:
 
 ## Set up metering
 
-Use Windows PowerShell and the SPF cmdlets to configure usage metering as described in the following procedure.
+Before you set up metering, check these resources:
 
-- [Learn about the cmdlets](http://technet.microsoft.com/library/jj612525.aspx).
+- [Learn about the SPF cmdlets](http://technet.microsoft.com/library/jj612525.aspx).
 - [Read a blog post](http://blogs.technet.com/b/privatecloud/archive/2013/10/01/configuring-spf-and-windows-azure-pack-for-iaas-usage-and-metering.aspx) about usage metering.
+
+Then set up metering as follows:
 
 1. Create an instance of a server \(using the **New\-SCSPFServer** cmdlet\) with the *ServerType* as OMDW.
 2. Use the **New\-SCSPFSetting** cmdlet to create a setting on that server \(the one created in the previous step\), that has the connection string to OperationsManagerDW database on the OMDW server.
