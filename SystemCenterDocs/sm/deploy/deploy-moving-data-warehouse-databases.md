@@ -534,7 +534,8 @@ The following high\-level steps are required to move the Data Warehouse database
 
     -   StagingSQLInstance  
 
-    -   OMDataMartSQLInstance  
+
+-   OMDataMartSQLInstance  
 
     -   CMDataMartSQLInstance  
 
@@ -601,6 +602,7 @@ The following high\-level steps are required to move the Data Warehouse database
 10. Repeat the previous steps to update the connection strings for the DWDataMart and OMDataMart data sources.  
 
 ##  Start Service Manager Services on the data warehouse management server  
+
  Use the following procedure to start the Service Manager services on the data warehouse management server.  
 
 #### To start Service Manager services on the data warehouse management server  
