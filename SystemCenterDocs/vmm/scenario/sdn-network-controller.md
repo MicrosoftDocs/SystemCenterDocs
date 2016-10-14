@@ -19,6 +19,8 @@ This article describes how to set up a Software Defined Networking (SDN) network
 
 The SDN network controller is a scalable and highly available server role that enables you to automate network infrastructure configuration instead of performing manual network device configuration. [Learn more](https://technet.microsoft.com/windows-server-docs/networking/sdn/technologies/network-controller/network-controller).
 
+For a great introduction, [watch a video](https://channel9.msdn.com/Blogs/hybrid-it-management/Demo-Deploy-Network-Controller) (~ five minutes) that provides an overview of network controller deployment.
+
 ## Before you start
 
 To set up SDN in the VMM fabric you need the following:
