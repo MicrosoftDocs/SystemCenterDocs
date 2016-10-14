@@ -7,7 +7,7 @@ ms.author: markgal
 ms.prod:  system-center-threshold
 keywords:
 ms.date:  10/12/2016
-title:  Upgrade-to-DPM-2016
+title:  Upgrade to DPM-2016
 ms.technology:  system-center-2016
 ms.assetid:  7f507ce9-676c-48df-9229-c02f2284a406
 ---
