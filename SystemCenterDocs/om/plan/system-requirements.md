@@ -3,8 +3,8 @@ ms.assetid: 1921b7dc-6537-4378-bdc5-de5fbd3e619a
 title: System Requirements for System Center 2016 - Operations Manager
 description: The system requirements article provides general performance and scalability guidance for consideration as part of your design planning of Operations Manager 2016.  
 author: mgoedtel
-manager: cfreemanwa
-ms.date: 2016-10-13
+manager: cfreeman
+ms.date: 2016-10-14
 ms.custom: na
 ms.prod: system-center-threshold
 ms.technology: operations-manager
@@ -33,7 +33,7 @@ Let's start first by understanding the performance and scalability characteristi
 | Agentless-managed computers per management group | 60 |
 | Agent-managed and UNIX or Linux computers per management group | 6,000 (with 50 open consoles); 15,000 (with 25 open consoles) |
 | UNIX or Linux computers per dedicated management server | 1,000 |
-| UNIX or Linux computers monitored per dedicated gateway server | 100 |
+| UNIX or Linux computers monitored per dedicated gateway server | 200 |
 | Network devices managed by a resource pool with three or more management servers | 1,000 |
 | Network devices managed by two resource pools | 2,000 |
 | Agents for Application Performance Monitoring (APM) | 700 |
@@ -48,7 +48,7 @@ Let's start first by understanding the performance and scalability characteristi
 Use this information to evaluate if your hardware environment is ready to support the installation of or upgrade to System Center 2016 - Operations Manager, considering the minimum hardware requirements for processor, RAM, and disk space.  You should use the information here whether you are deploying one or multiple components and for more specific information to help plan the amount of infrastructure needed for a new Operations Manager deployment, refer to the [Operations Manager 2012 Sizing Helper](http://go.microsoft.com/fwlink/p/?LinkId=231853).
 
 > [!NOTE] 
-> While the Operations Manager 2012 Sizing helper has not been updated to reflect the 2016 release of Operations Manager, the information provided is still valid to help you estimate for your design requirements.  However, the number of UNIX/Linux computers per management server, as noted in the **Unix or Linux Monitoring** section is not correct.  The number of UNIX/Linux computers per management server has increased and is noted in the monitored item capacity table earlier.  This will be addressed in an updated release of the sizing helper document.  
+> While the Operations Manager 2012 Sizing helper has not been updated to reflect the 2016 release of Operations Manager, the information provided is still valid to help you estimate for your design requirements.  However, the number of UNIX/Linux computers per management and gateway server, as noted in the **Unix or Linux Monitoring** section is not correct.  The number of UNIX/Linux computers per server has increased and is noted in the monitored item capacity table earlier in this article.  This will be addressed in an updated release of the sizing helper document.  
 
 
 | Operations Manager Server Role | x64 Processor (min) | Memory (min) | Disk space (min) |

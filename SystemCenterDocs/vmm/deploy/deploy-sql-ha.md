@@ -1,4 +1,5 @@
 ---
+ms.assetid: a6ab9340-decc-4f90-bb5b-4f0901737fc6
 title: Deploy SQL Server for VMM high availability
 description: This article explains how to set up SQL Server as highly available in a VMM deployment
 author:  rayne-wiselman

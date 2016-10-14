@@ -5,7 +5,7 @@ ms.topic:  article
 author:  markgalioto
 ms.prod:  system-center-threshold
 keywords:  
-ms.date:  2016-10-01
+ms.date:  2016-10-12
 title:  Manage multiple DPM servers with Central Console
 ms.technology:  data-protection-manager
 ms.assetid:  6e08e911-36e0-48d6-b71e-df4741811a0a
@@ -33,7 +33,7 @@ Central Console is a System Center Operations Manager console that you can deplo
 
     -   Ticket generation - If you are using a ticketing system, only one ticket is generated.
 
--   Ccoped console - This is based on the DPM Administrator Console with a few minor differences.
+-   Scoped console - This is based on the DPM Administrator Console with a few minor differences.
 
 
 ## Set up Central Console

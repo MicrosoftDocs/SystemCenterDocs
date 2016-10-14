@@ -22,7 +22,6 @@ This section describes what's new and changed in System Center 2016 Technical Pr
 > You should not use this preview release  in production environments.
 
 ## What's New topics
-[What's new in DPM in System Center Technical Preview](../dpm/get-started/What-s-new-in-DPM-in-System-Center-Technical-Preview.md)
 
 [What's New in Operations Manager](../om/get-started/Whats-New-in-Operations-Manager.md)
 
