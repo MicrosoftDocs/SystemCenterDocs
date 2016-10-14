@@ -15,7 +15,7 @@ ms.assetid: 617ee2c1-4dea-40e6-85b3-d87b15c0221d
 
 >Apples To: System Center 2016 - Service Provider Foundation
 
-This article helps you make sure you have prerequisites and planning steps in place, before you deploy System Center 2016 - Service Provider Foundation (SPF).
+This article helps you to get the prerequisites and planning steps in place, before you deploy System Center 2016 - Service Provider Foundation (SPF).
 
 ## Deployment prerequisites
 
