@@ -34,7 +34,7 @@ SPF provides a number of services:
 ### Admin web service
 
 - Hosting service providers use the Admin web service to create and manage tenants, user roles, servers, stamps, and other administrative objects.
-- You can access the Admin web service by using the URL https://server:8090/SC2016/Admin/Microsoft.Management.Odata.svc
+- You can access the Admin web service by using the URL **https://server:8090/SC2016/Admin/Microsoft.Management.Odata.svc**
 - The following credentials are required
 
 **Credential** | **Requirement**
@@ -63,7 +63,7 @@ Admin user role in VMM | Must include the credential for the VMM application poo
 
 ### Usage web service
 
-- **The Usage web service is only use by Windows Azure Pack,  by third- party billing providers**. The Usage web service endpoint shouldn't  be accessed for other purposes to prevent data loss due to unnecessary or erroneous queries.
+- The Usage web service is only used by Windows Azure Pack, and third- party billing providers. The Usage web service endpoint shouldn't  be accessed for other purposes to prevent data loss due to unnecessary or erroneous queries.
 - The Usage web service uses registrations of instances of System Center 2016 Operations Manager data warehouses (that VMM hosts) for collecting metrics on tenant virtual machine usage and other fabric usage. Usage data is collected for processes such as billing chargeback features.
 - You can use Windows PowerShell cmdlets to register Operations Manager data warehouse connection settings in the SPF database. This registration enables SPF to aggregate usage data from the data warehouses.
 - The Usage web service returns utilization data that pertains to every subscription across services.
