@@ -8,6 +8,7 @@ ms.date: 10/13/2016
 ms.topic: article
 ms.prod: system-center-threshold
 ms.technology: virtual-machine-manager
+ms.assetid: 77d0924b-4be1-4e41-93f5-6097aed8fcea
 ---
 
 # Set up an SDN RAS gateway in the VMM fabric
