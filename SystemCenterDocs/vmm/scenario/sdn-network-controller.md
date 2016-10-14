@@ -4,10 +4,11 @@ description: This article describes how to set up a Software Defined Network (SD
 author: rayne-wiselman
 ms.author: raynew
 manager: cfreeman
-ms.date: 10-12-2016
+ms.date: 10/13/2016
 ms.topic: article
 ms.prod: system-center-threshold
 ms.technology: virtual-machine-manager
+ms.assetid: 8bd626d5-27c0-46c5-9031-905a69e44219
 ---
 
 # Set up an SDN network controller in the VMM fabric
@@ -18,6 +19,8 @@ ms.technology: virtual-machine-manager
 This article describes how to set up a Software Defined Networking (SDN) network controller in the System Center 2016 - Virtual Machine Manager (VMM) fabric.
 
 The SDN network controller is a scalable and highly available server role that enables you to automate network infrastructure configuration instead of performing manual network device configuration. [Learn more](https://technet.microsoft.com/windows-server-docs/networking/sdn/technologies/network-controller/network-controller).
+
+For a great introduction, [watch a video](https://channel9.msdn.com/Blogs/hybrid-it-management/Demo-Deploy-Network-Controller) (~ five minutes) that provides an overview of network controller deployment.
 
 ## Before you start
 
@@ -57,17 +60,17 @@ Here's what you need to do to set up a SDN network controller
 
 ## Download a virtual hard disk for the service template
 
-1. You can download a prepared virtual hard disk in [VHD](http://download.microsoft.com/download/4/4/F/44F93CCF-1AAE-42E5-BDCB-924991A005DA/14300.1000.amd64fre.rs1_release_svc.160324-1723_server_serverdatacenter_en-us.vhd) or [VHDX](http://download.microsoft.com/download/4/4/F/44F93CCF-1AAE-42E5-BDCB-924991A005DA/14300.1000.amd64fre.rs1_release_svc.160324-1723_server_serverdatacenter_en-us.vhdx) format.
-    - The virtual hard disk operating system is Windows Server 2016.
-    - The VMM service template for the network controller support deployment on both generation 1 and generation 2 VMs. If you want to deploy a non-English environment, you can download the language pack you need.
-    - The product key is 6XBNX-4JQGW-QX6QG-74P76-72V67.
-2.   Import the vhd/vhdx files to the VMM library. [Learn more](../manage/manage-library-add-files.md).
+1. You can [download](https://azure.microsoft.com//marketplace/virtual-machines/all/?operatingSystem=acom-windows&publisherType=acom-microsoft&term=Windows+Server+2016) a prepared virtual hard disk in vhd or vhdx format. To find the VHD/VHDX in the Azure Gallery, search for "Windows Server 2016".
+2. After downloading, install the latest Windows Server updates, and any language packs you need if you have a non-English environment.
+3.   Import the vhd/vhdx files to the VMM library. [Learn more](../manage/manage-library-add-files.md).
 
-## Download the network controller service templates
+## Download the network controller service template
 
-1. Download the network controller service templates. The download contains four service templates and five custom resource folders:
+1. [Download](https://github.com/Microsoft/SDN/tree/master/VMM/Templates/NC) the network controller service templates. The download contains four service templates and five custom resource folders. These are summarized below in the table. The custom resource files are used when setting up the network controller, and other SDN components (software load balancer, RAS gateway).
+2. Import the custom resources files into the VMM library.
+3. Refresh the library. Later, you'll import the service templates.
 
-
+### Templates and resource files
 **Name** | **Type** | **Details**
 --- | --- |---
 **Network Controller Production Generation 1 VM.xml** | Template | Three-node network controller for generation 1 VMs
@@ -80,8 +83,6 @@ Here's what you need to do to set up a SDN network controller
 **TrustedRootCertificate.cr** | Custom resource file | Library resource containing the certificate public key (.cer), imported as the trusted root certificate to validate the SSL certificate.
 **EdgeDeployment.cr** | Template | Used for installing SLB MUX roles and gateway roles (for example, VPN)
 
-2. The custom resource files are used when setting up the network controller, and other SDN components (software load balancer, RAS gateway). Import the custom resources files into the VMM library.
-3. Refresh the library. Later, you'll import the service templates.
 
 
 ## Set up Active Directory groups
@@ -102,11 +103,11 @@ Create security groups for network controller management and clients.
 
 ## Create a library share for logging
 
-1. Optionally create a file share in the VMM library to keep diagnostic logs.
+1. Optionally [create a file share](../manage/manage-library-add-files.md) in the VMM library to keep diagnostic logs.
 2. Ensure that the share can be accessed by the network controller. The network controller accesses the share to store diagnostic information. Note the credentials for the account that will have write access to the share.
 
 
-## Set up host groups and hosts
+## Set up host groups
 
 1. [Create a dedicated host group](../manage/manage-compute-host-groups.md) for Hyper-V hosts that will be managed by SDN.
 2. Make sure Hyper-V hosts are running Windows Server 2016.
@@ -149,8 +150,8 @@ You need to deploy a logical switch on the management logical network. The switc
 6.  Select an existing uplink port profile, or click **Add** > **New Uplink Port Profile**. Provide a name and optional description. Use the defaults for load balancing algorithm and teaming mode.  Select all the network sites in the management logical network.
 7. Select the uplink port profile you created > **New virtual network adapter**. This adds a host virtual network adapter (vNIC) to your logical switch and uplink port profile, so that when you add the logical switch to your hosts, the vNICs get added automatically.
 8. Provide a name for the vNIC. Verify that the management VM network is listed in **Connectivity**.
- Select **This network adapter will be used for host management** > **Inherit connection settings from the host adapter**. This allows you to take the vNIC adapter settings from the adapter that already exists on the host. If you created a port classification and virtual port profile earlier, you can select it now.
- In **Summary** review the information and click **Finish** to complete the wizard.
+9. Select **This network adapter will be used for host management** > **Inherit connection settings from the host adapter**. This allows you to take the vNIC adapter settings from the adapter that already exists on the host. If you created a port classification and virtual port profile earlier, you can select it now.
+10. In **Summary** review the information and click **Finish** to complete the wizard.
 
 ### Deploy the logical switch
 
@@ -265,16 +266,16 @@ After the network controller service is successfully deployed, the next step is 
 
 1.  In **Fabric**, right-click **Networking** > **Network Service**, and click **Add Network Service.**
 2.   The **Add Network Service Wizard** starts. Specify a name and optional description.
-Select **Microsoft** for the manufacturer and for model select **Microsoft network controller**.
-3. In **Credentials**, provide the Run As account you want to use to configure the network service. This should be the same account that you included in the network controller clients group.
-4. For the **Connection String**:
+3. Select **Microsoft** for the manufacturer and for model select **Microsoft network controller**.
+4. In **Credentials**, provide the Run As account you want to use to configure the network service. This should be the same account that you included in the network controller clients group.
+5. For the **Connection String**:
     - In multi-node deployment, **ServerURL** should use the REST endpoint, and **servicename** should be the name of the  network controller instance.
     - In single node deployment, **ServerURL** should be the network controller FQDN and, **servicename** must be the network controller service instance name. Example: ``serverurl=https://NCCluster.contoso.com;servicename=NC_VMM_RTM``
 
-5. In **Review Certificates**, a connection is made to the network controller virtual machine to retrieve the certificate. Verify that the certificate shown is the one you expect. Ensure you select **These certificates have been reviewed and can be imported to the trusted certificate storebox**.
-6. On the next screen, click **Scan Provider** to connect to your service and list the properties and their status. This is also a good test of whether or not the service was created correctly, and that you’re using the right connect string to connect to it. Examine the results, and check that isNetworkController = true. When it completes successfully click **Next**.
-7. Configure the host group that your network controller will manage.
-8. Click **Finish** to complete the wizard. When the service has been added to VMM, it will appear in the **Network Services** list in the VMM console. If the network service isn't added, check **Jobs** in the VMM console to troubleshoot.
+6. In **Review Certificates**, a connection is made to the network controller virtual machine to retrieve the certificate. Verify that the certificate shown is the one you expect. Ensure you select **These certificates have been reviewed and can be imported to the trusted certificate storebox**.
+7. On the next screen, click **Scan Provider** to connect to your service and list the properties and their status. This is also a good test of whether or not the service was created correctly, and that you’re using the right connect string to connect to it. Examine the results, and check that isNetworkController = true. When it completes successfully click **Next**.
+8. Configure the host group that your network controller will manage.
+9. Click **Finish** to complete the wizard. When the service has been added to VMM, it will appear in the **Network Services** list in the VMM console. If the network service isn't added, check **Jobs** in the VMM console to troubleshoot.
 
 ## Validate the deployment
 
