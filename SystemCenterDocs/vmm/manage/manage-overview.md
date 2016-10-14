@@ -1,4 +1,5 @@
 ---
+ms.assetid: 0d6b7084-67fb-4612-8270-68d3de89f79d
 title: Manage VMM
 description: This article provides an overview of working with VMM after you've finished installation.
 author:  rayne-wiselman
