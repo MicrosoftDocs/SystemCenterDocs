@@ -4,10 +4,11 @@ description: Describes how to add and provision guarded hosts in the VMM fabric
 author: rayne-wiselman
 ms.author: raynew
 manager: cfreeman
-ms.date: 10-12-2016
+ms.date: 10/14/2016
 ms.topic: article
 ms.prod: system-center-2016
 ms.technology: virtual-machine-manager
+ms.assetid: 34358d18-4eaf-4b04-9cbe-38a0dc935238
 ---
 
 # Provision guarded hosts in VMM
@@ -109,4 +110,4 @@ Enable a cloud to support guarded hosts:
 
 ## Next steps
 
-- [Deploy shielded virtual machines in the VMM fabric](guarded-vms.md)
+- [Set up a shielded VHDX and VM template](guarded-template.md)

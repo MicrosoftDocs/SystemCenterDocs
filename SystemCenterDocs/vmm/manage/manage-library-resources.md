@@ -1,4 +1,5 @@
 ---
+ms.assetid: ce968ce3-58d3-4eae-9b70-54eaac78a664
 title: Manage the VMM library
 description: This article describes management tasks for the VMM library
 author:  rayne-wiselman

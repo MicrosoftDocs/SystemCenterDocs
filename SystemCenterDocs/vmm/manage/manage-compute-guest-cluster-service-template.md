@@ -1,4 +1,5 @@
 ---
+ms.assetid: bed9e382-7a24-48d2-a15c-cb3413756236
 title: Create a guest cluster from a service template
 description: This article provides guidance about creating a guest cluster from a service tempalte
 author:  rayne-wiselman

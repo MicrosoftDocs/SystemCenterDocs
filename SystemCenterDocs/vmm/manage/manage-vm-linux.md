@@ -1,4 +1,5 @@
 ---
+ms.assetid: de18e064-a779-47e0-93b6-710dd80e1420
 title: Create and deploy Linux virtual machines in the VMM fabric
 description: This article describes how to create and deploy Linux VMs in the VMM fabric
 author:  rayne-wiselman

@@ -4,10 +4,11 @@ description: Deployment scenarios provide end-to-end walkthroughs for setting up
 author:  rayne-wiselman
 ms.author: raynew
 manager:  cfreeman
-ms.date:  2016-10-12
+ms.date:  10/14/2016
 ms.topic:  article
 ms.prod:  system-center-threshold
 ms.technology:  virtual-machine-manager
+ms.assetid: 1b59381d-7987-4639-8b0d-4e0ed1eb707f
 ---
 
 

@@ -1,4 +1,5 @@
 ---
+ms.assetid: 832b1205-0ab2-4a35-9c08-6489bed33aad
 title: Set up virtual fibre channel in the VMM storage fabric
 description: This article describes how to set up Virtual Fibre Channel in the VMM storage fabric
 author:  rayne-wiselman

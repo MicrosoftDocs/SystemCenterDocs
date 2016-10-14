@@ -1,4 +1,5 @@
 ---
+ms.assetid: f6301c37-5e3d-449c-adde-952fdd2b7fee
 title: Migrate virtual machines in the VMM fabric
 description: This article describes how to migrate VMs in the VMM fabric
 author:  rayne-wiselman

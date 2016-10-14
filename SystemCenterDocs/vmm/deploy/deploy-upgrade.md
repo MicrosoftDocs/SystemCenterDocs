@@ -1,4 +1,5 @@
 ---
+ms.assetid: ecaa876d-d376-48a0-a20c-15f0c266e616
 title: Upgrade to System Center 2016 - VMM
 description: This article helps you to upgrade your existing VMM deployment to System Center 2016 - VMM
 author:  rayne-wiselman
