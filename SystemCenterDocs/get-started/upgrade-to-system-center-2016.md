@@ -20,7 +20,7 @@ If you are already running System Center 2012 R2 you can upgrade your environmen
 
 
 > [!IMPORTANT]
-> Make sure you are upgrading to a supported platform by reviewing the [System Requirements topics](../system-requirements/system-requirements-for-system-center-technical-preview.md).
+> Make sure you are upgrading to a supported platform by reviewing the [System Requirements topics](../system-requirements/system-requirements.md).
 
 ## Supported upgrade paths
 Microsoft supports the following upgrade paths.
@@ -220,7 +220,7 @@ Mounts the replica volume for data source. Replica volume needs to be dismounted
 -Datasource<Datasource> Specifies the data source for which the replica needs to be mounted.
 `
 
-`
+
 Aliases:	None
 
 Required?	True
@@ -249,7 +249,7 @@ Default Value	None
 Accept Pipeline Input?	true(ByValue)
 
 Accept Wildcard Characters?	False
-`
+
 
 `
 -CONFIRM Prompts you for confirmation before running the cmdlet.
@@ -285,7 +285,7 @@ Accept Wildcard Characters?	false
 `-Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable.
 `
 
-` For more information, see about_CommonParameters.
+For more information, see about_CommonParameters.
 
 *Inputs* - The input type is the type of the objects that you can pipe to the cmdlet.
 
@@ -417,7 +417,7 @@ You can back up a DPM server to Azure. The high level steps are:
 - download vault credentials and the Azure Backup Agent,
 - configure the server's vault credentials and backup policy,
 
-For more information on backing up DPM to the cloud, see the article, [Preparing to backup workloads to Azure with DPM] (https://azure.microsoft.com/en-us/documentation/articles/backup-azure-dpm-introduction/).
+For more information on backing up DPM to the cloud, see the article, [Preparing to backup workloads to Azure with DPM] (https://azure.microsoft.com/documentation/articles/backup-azure-dpm-introduction/).
 
 ### OM Upgrade
 [!NOTE]
