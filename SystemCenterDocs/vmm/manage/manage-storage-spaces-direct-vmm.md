@@ -1,4 +1,5 @@
 ---
+ms.assetid: 4ffb6a72-8447-4fb7-97da-c374221d2b0d
 title: Manage Storage Spaces Direct in VMM
 description: This article describes how to set up Storage Spaces Direct in the VMM fabric
 author:  rayne-wiselman

@@ -1,4 +1,5 @@
 ---
+ms.assetid: b48a7991-1138-4687-92e0-a9db8e6ae9b4
 title: Set up VM networks in the VMM fabric
 description: This article describes how to set up VM networks in the VMM fabric
 author:  rayne-wiselman

@@ -1,4 +1,5 @@
 ---
+ms.assetid: 15be7169-be12-4047-b1fd-fe6ad4b2fdc1
 title: Create logical switches
 description: This article describes how to create logical switches in the VMM fabric
 author:  rayne-wiselman

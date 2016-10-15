@@ -4,10 +4,11 @@ description: This article provides an overview of setting up an SDN in the VMM f
 author:  rayne-wiselman
 ms.author: raynew
 manager:  cfreeman
-ms.date:  2016-10-12
+ms.date:  10/13/2016
 ms.topic:  article
 ms.prod:  system-center-threshold
 ms.technology:  virtual-machine-manager
+ms.assetid: dbb10ddd-b976-4cb6-9216-ec70eafca4b6
 ---
 
 # Set up a Software Defined Network (SDN) infrastructure in the VMM fabric
@@ -36,6 +37,8 @@ SDN combines a number of technologies, among them:
 
 ## Next steps
 
-- [Set up a network controller](sdn-network-controller.md)
-- [Set up a software load balancer](sdn-slb.md)
-- [Set up a RAS gateway](sdn-gateway.md)
+- [Deploy SDN components using PowerShell](sdn-powershell.md)
+- Alternatively, deploy SDN components manually in the VMM console:
+    - [Set up a network controller](sdn-network-controller.md)
+    - [Set up a software load balancer](sdn-slb.md)
+    - [Set up a RAS gateway](sdn-gateway.md)

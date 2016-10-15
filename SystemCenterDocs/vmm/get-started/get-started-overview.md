@@ -1,4 +1,5 @@
 ---
+ms.assetid: 0492a730-365e-4d72-bf83-f1fd990b7ba1
 title: What is VMM?
 description: This article provides an overview of System Center VMM and what it can do for your business
 author:  rayne-wiselman

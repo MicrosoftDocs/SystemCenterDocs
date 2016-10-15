@@ -1,4 +1,5 @@
 ---
+ms.assetid: 1053d449-9ea2-46a0-a4d3-b3d5ba66a16f
 title: Prepare for VMM installation
 description: This article provides information about preparing your environment for VMM installation
 author:  rayne-wiselman
