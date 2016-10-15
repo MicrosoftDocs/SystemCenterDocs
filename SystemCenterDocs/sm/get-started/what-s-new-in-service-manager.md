@@ -120,7 +120,7 @@ The AD GroupExpansion functionality is now part of the ADConnector, as opposed t
 
 ## New Date dimensions in Data Warehouse cubes
 
-With the System Center 2016 - Service Manager, the Service Manager Data Warehouse cubes contain new date dimensions which will help you to create rich reports and slice data based on Year, Quarter, Month, Day etc.
+ With the System Center 2016 - Service Manager, the Service Manager Data Warehouse cubes contain new date dimensions which will help you to create rich reports and slice data based on Year, Quarter, Month, Day etc.
 
 ![date dimensions](../media/sm-date-dimensions.png)
 
@@ -130,7 +130,7 @@ Cube Name: Service Manager Work Items Cube
 - Content: Incident, Problem management
 - New date dimensions:
   - Incident ClosedDate
-  - Incident CreatedDate
+   - Incident CreatedDate
   - Incident ResolvedDate
   - Problem ClosedDate
   - Problem CreatedDate
@@ -140,7 +140,7 @@ Cube Name: Service Manager Work Items Cube
 Cube Name: Change and Activity Management Cube
 - Content: Change and Activity management
 - New Date Dimensions:
-  - Activity ActualEndDate
+   - Activity ActualEndDate
   - Activity ActualStartDate
   - Activity CreatedDate
   - Activity ScheduledEndDate
@@ -187,7 +187,7 @@ All these dimensions have the following attributes, which you can use for slicin
           </NamedCalculation>
     ```
 
-The NamedCalculation ID should have string `__DateKey` in the end, and this field in the data warehouse should not be NULL or 0.
+    The NamedCalculation ID should have string `__DateKey` in the end, and this field in the data warehouse should not be NULL or 0.
 2.  Seal the managment pack and import it into Service Manager.
 3.  Run the MPSyncJob on the data warehouse and wait until the management pack is marked **Completed**.
 4.  Process all the cubes, or wait for automatic processing overnight.
