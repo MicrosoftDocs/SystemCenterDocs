@@ -4,8 +4,8 @@ title: Set up self-service in VMM
 description: This article describes how to set up self-service in VMM
 author:  rayne-wiselman
 ms.author: raynew
-manager:  cfreemanwa
-ms.date:  2016-09-22
+manager:  cfreeman
+ms.date:  10/16/2016
 ms.topic:  article
 ms.prod:  system-center-threshold
 ms.technology:  virtual-machine-manager
@@ -15,7 +15,6 @@ ms.technology:  virtual-machine-manager
 # Set up self-service in VMM
 
 >Applies To: System Center 2016 - Virtual Machine Manager
-
 
 This article describes how to set up self-service in System Center 2016 - Virtual Machine Manager (VMM).
 

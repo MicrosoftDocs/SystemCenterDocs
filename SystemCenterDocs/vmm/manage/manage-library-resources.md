@@ -4,8 +4,8 @@ title: Manage the VMM library
 description: This article describes management tasks for the VMM library
 author:  rayne-wiselman
 ms.author: raynew
-manager:  cfreemanwa
-ms.date:  2016-09-22
+manager:  cfreeman
+ms.date:  10/16/2016
 ms.topic:  article
 ms.prod:  system-center-threshold
 ms.technology:  virtual-machine-manager

@@ -1,11 +1,11 @@
 ---
 ms.assetid: c7da932f-cc94-4f1e-81ff-6ce2b4e129eb
 title: Manage Hyper-V hosts and clusters in the VMM compute fabric
-description: This article provides about managing your Hyper-V environment in the VMM fabric
+description: This article provides information about managing your Hyper-V environment in the VMM fabric
 author:  rayne-wiselman
 ms.author: raynew
-manager:  cfreemanwa
-ms.date:  2016-09-04
+manager:  cfreeman
+ms.date:  10/16/2016
 ms.topic:  article
 ms.prod:  system-center-threshold
 ms.technology:  virtual-machine-manager
