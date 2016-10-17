@@ -1,15 +1,14 @@
 ---
-description:  
-manager:  cfreeman
-ms.topic:  article
+ms.assetid: 2ebb4cfd-fd5e-4add-b75c-dcb932dbaa64
+title: Back up and restore VMM
+description: This article describes how to back up and restore the VMM database, and hosts and virtual machines in the VMM fabric
 author:  rayne-wiselman
-ms.author: rayne
+ms.author: raynew
+manager:  cfreeman
+ms.date:  10/16/2016
+ms.topic:  article
 ms.prod:  system-center-threshold
-keywords:  
-ms.date:  2016-10-12
-title:  Back up and restore VMM
 ms.technology:  virtual-machine-manager
-ms.assetid:  2ebb4cfd-fd5e-4add-b75c-dcb932dbaa64
 ---
 
 # Back up and restore VMM
@@ -101,7 +100,7 @@ Back up all files on library shares to a shared folder on a remote file server, 
 - .iso
 - .vmx
 - .ps1
-- .vmc 
+- .vmc
 - .vsv
 
 

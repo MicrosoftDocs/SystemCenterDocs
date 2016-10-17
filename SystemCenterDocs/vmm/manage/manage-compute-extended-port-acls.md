@@ -1,25 +1,23 @@
 ---
+ms.assetid:  2684494b-1779-4df8-9f11-db46a0d96542
+title:  Manage Hyper-V extended port ACLs in VMM
 description: Describes how to manage Hyper-V port access control lists (ACLs)
-manager:  cfreeman
-ms.topic:  article
 author:  rayne-wiselman
 ms.author: raynew
+manager:  cfreeman
+ms.date:  10/16/2016
+ms.topic:  article
 ms.prod:  system-center-threshold
-keywords:  
-ms.date:  2016-10-12
-title:  Manage Hyper-V extended port ACLs in VMM
 ms.technology:  virtual-machine-manager
-ms.assetid:  2684494b-1779-4df8-9f11-db46a0d96542
-ms.service:  virtual-network
 ---
+
 
 # Manage Hyper-V extended port ACLs in VMM
 
 >Applies To: System Center 2016 - Virtual Machine Manager
 
-## Summary
 
-In System Center Virtual Machine Manager 2016, you can centrally configure and manage Hyper-V port access control lists (ACLs) in your Software Defined Networking (SDN) fabric. These ACLs can be configured for both a Network Controller managed fabric and a non-Network Controller managed fabric.
+In System Center 2016 - Virtual Machine Manager (VMM) , you can centrally configure and manage Hyper-V port access control lists (ACLs) in your Software Defined Networking (SDN) fabric. These ACLs can be configured for both a Network Controller managed fabric and a non-Network Controller managed fabric.
 
 A port access control list (port ACL) is an object that is attached to various networking primitives to describe network security. The port ACL serves as a collection of access control entries or rules. An ACL can be attached to zero or more networking primitives, such as a VM network, VM subnet, virtual network adapter, or the VMM management server itself. An ACL can contain zero or more ACL rules. Each compatible VMM networking primitive (VM network, VM subnet, virtual network adapter, or VMM management server) can have either one port ACL attached or none.
 
@@ -40,11 +38,19 @@ You can use the VMM PowerShell interface to do the following:
 - View and update port ACL rules configured on the individual virtual machine vNICs.
 - Delete port ACLs and their ACL rules.
 
-Each of these actions is covered in more detail later in this topic.
-
 Port ACL settings are exposed only through PowerShell cmdlets in VMM and are not available in the VMM console user interface.
 
-### Define port ACL rules for the port ACL
+## Unsupported scenarios
+
+VMM does not support the following:
+* Manage/update individual rules for a single instance when the ACL is shared with multiple instances. All rules are managed centrally within their parent ACLs and apply wherever the ACL is attached.
+* Attach more than one ACL to an entity.
+* Apply port ACLs to virtual network adapters (vNICs) in the Hyper-V parent partition (management operating system).
+* Create port ACL rules that include IP-level protocols (other than TCP or UDP).
+* Apply port ACLs to logical networks, network sites (logical network definitions), subnet vLANs, and other VMM networking primitives that are not listed earlier.
+
+
+## Define port ACL rules for the port ACL
 
 Each port ACL consists of a collection of port ACL rules. Each rule contains different parameters:
 * Name
@@ -73,15 +79,3 @@ Retrieves all the port ACL rules.
 * Name: Optionally filter by name
 * ID: Optionally filter by ID
 * PortACL: Optionally filter by port ACL
-
-Sample commands:
-
-
-## Unsupported scenarios
-
-VMM does not support the following:
-* Manage/update individual rules for a single instance when the ACL is shared with multiple instances. All rules are managed centrally within their parent ACLs and apply wherever the ACL is attached.
-* Attach more than one ACL to an entity.
-* Apply port ACLs to virtual network adapters (vNICs) in the Hyper-V parent partition (management operating system).
-* Create port ACL rules that include IP-level protocols (other than TCP or UDP).
-* Apply port ACLs to logical networks, network sites (logical network definitions), subnet vLANs, and other VMM networking primitives that are not listed earlier.

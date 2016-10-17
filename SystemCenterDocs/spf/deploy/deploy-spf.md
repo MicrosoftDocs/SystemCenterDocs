@@ -1,17 +1,25 @@
 ---
-title: Deploy SPF
-description: Install and deploy System Center SPF
-author: rayne-wiselman
-ms.author: raynew
-manager: cfreeman
-ms.date: 10/14/2016
-ms.prod: system-center-threshold
-ms.technology: service-provider-foundation
 ms.assetid: 8522-4f67-9853-2a4639442b0d
+title: Deploy SPF
+description: This article describes how to install and deploy System Center Service Provider Foundation (SPF)
+author:  rayne-wiselman
+ms.author: raynew
+manager:  cfreeman
+ms.date:  10/16/2016
+ms.topic:  article
+ms.prod:  system-center-threshold
+ms.technology:  service-provider-foundation
 ---
 
 # Deploy SPF
 >Apples To: System Center 2016
+
+This article describes how to install System Center 2016 - Service Provider Foundation (SPF).
+
+SPF is part of System Center 2016 - Orchestrator. SPF exposes an extensible OData web service that interacts with System Center Virtual Machine Manager (VMM) that enables service providers and hosters to design and implement multi-tenant self-service portals that integrate IaaS capabilities with System Center 2016.
+
+
+
 
 ## Before you begin
 
@@ -54,6 +62,6 @@ If installation fails, refer to the log files: Microsoft Service Provider*.logâ€
 
 
 
-## Next Steps
+## Next steps
 
 [Manage SPF](../manage/manage-spf.md)
