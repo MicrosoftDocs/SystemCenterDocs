@@ -52,7 +52,7 @@ When you install a secondary management server, data retention settings are rese
     > [!NOTE]  
     >  The user name and password you provide here must be the same ones used for the Service Manager account on the data warehouse management server.  
 
-11. On the **Help improve System Center** page, indicate your preference for participation for both the Customer Experience Improvement Program and Error Reporting. Optionally, click **Tell me more about the program**, and then click **Next**.  
+11. On the **Diagnostic and usage data** page, indicate your preference for sharing your Service Manager diagnostic and usage data with Microsoft. As an option, click **Privacy statement for System Center Service Manager**, and then click **Next**.
 
 12. On the **Use Microsoft Update to help keep your computer secure and up\-to\-date** page, indicate your preference for using Microsoft Update to check for Service Manager updates, and then click **Next**.  
 

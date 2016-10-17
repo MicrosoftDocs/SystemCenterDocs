@@ -30,12 +30,14 @@ The following high\-level steps are required to move the Data Warehouse database
 8. Update the data sources on the reporting server
 9. Update the data sources for the Analysis Services
 10. Start Service Manager Services on the data warehouse management server
+
 > [!IMPORTANT]  
 >  After you move the **DWStagingAndConfig** and **DWRepository** databases, they have to be restored on the same instance of SQL Server. Restoring them on a separate instances of SQL Server is not supported.  
 >   
 >  The collation on the new instance of SQL Server has to match the collation of the original instances of SQL Server where the data warehouse databases were originally hosted.  
 
-##  Locate user accounts and instances of SQL Server  
+##  Locate user accounts and instances of SQL Server
+
  Use the following procedures to locate the user accounts and instances of SQL Server that are used by the data warehouse management server.  
 
 #### To identify the SQL Server database and instance names used by the data warehouse management server  
@@ -183,6 +185,7 @@ The following high\-level steps are required to move the Data Warehouse database
     10. Repeat the steps above to note the Connection string and the User name for the DWDataMart and OMDataMart databases.  
 
 ## Stop Service Manager services  
+
  Use the following procedure to stop the Service Manager services on the data warehouse management server.  
 
 #### To stop Service Manager services on the data warehouse management server  
@@ -198,6 +201,7 @@ The following high\-level steps are required to move the Data Warehouse database
     3.  System Center Management Configuration  
 
 ## Back up the data warehouse databases  
+
  Use the following procedure to back up the data warehouse databases on the original computer running SQL Server.  
 
 #### To back up the data warehouse databases  
@@ -226,6 +230,7 @@ The following high\-level steps are required to move the Data Warehouse database
 7.  Repeat these steps for the DWRepository, CMDWDataMart, OMDWDataMart, and DWDataMart databases.  
 
 ## Take the data warehouse databases offline  
+
  Use the following procedure to take the data warehouse databases offline on the original computer running SQL Server.  
 
 #### To take the data warehouse databases offline  
@@ -249,6 +254,7 @@ The following high\-level steps are required to move the Data Warehouse database
 6.  Repeat the previous steps for the DWRepository, CMDWDataMart, OMDWDataMart, and DWDataMart databases.  
 
 ##  Restore the data warehouse databases on the new computer running SQL Server  
+
  Use the following procedure to restore the data warehouse databases on the new computer running SQL Server.  
 
 #### To restore the data warehouse databases  
@@ -288,6 +294,7 @@ The following high\-level steps are required to move the Data Warehouse database
 14. Repeat the previous steps for the DWRepository, CMDWDataMart, OMDWDataMart, and DWDataMart databases.  
 
 ##  Prepare the data warehouse databases on the new database server  
+
  Use the following three procedures to prepare the data warehouse databases on the new database server:  
 
 1.  To configure the DWStagingAndConfig database on the new computer running SQL Server  
@@ -505,6 +512,7 @@ The following high\-level steps are required to move the Data Warehouse database
 11. Close **Microsoft SQL Server Management Studio**.  
 
 ##  Update data warehouse management Server with the new database server name  
+
  Use the following procedure to update the data warehouse management server to use the new database server name.  
 
 #### To update the data warehouse management server to use the new database server name  
@@ -518,7 +526,8 @@ The following high\-level steps are required to move the Data Warehouse database
     > [!CAUTION]  
     >  Incorrectly editing the registry might severely damage your system; therefore, before making changes to the registry, back up any valued data on the computer.  
 
-4.  In the Registry Editor window, expand **HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Microsoft\\System Center\\20106\Common\\Database**.  
+4.  In the Registry Editor window, expand **HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Microsoft\\System Center\\2016\Common\\Database**.  
+
 
 5.  In the right pane, double\-click **DatabaseServerName**.  
 
@@ -534,11 +543,13 @@ The following high\-level steps are required to move the Data Warehouse database
 
     -   StagingSQLInstance  
 
-    -   OMDataMartSQLInstance  
+
+-   OMDataMartSQLInstance  
 
     -   CMDataMartSQLInstance  
 
 ## Update the data sources on the reporting server  
+
  Use the following procedure to update data sources on the reporting server to point to the new computer running SQL Server.  
 
 #### To update the data sources on the reporting server  
@@ -576,6 +587,7 @@ The following high\-level steps are required to move the Data Warehouse database
 16. Close your web browser.  
 
 ##  Update the data sources for the Analysis Services  
+
  Use the following procedure to update the connection strings for the data sources on the server that hosts the Analysis Services database.  
 
 #### To update the data sources for the Analysis services  
@@ -601,6 +613,7 @@ The following high\-level steps are required to move the Data Warehouse database
 10. Repeat the previous steps to update the connection strings for the DWDataMart and OMDataMart data sources.  
 
 ##  Start Service Manager Services on the data warehouse management server  
+
  Use the following procedure to start the Service Manager services on the data warehouse management server.  
 
 #### To start Service Manager services on the data warehouse management server  
