@@ -22,7 +22,7 @@ Depending on your current version of Service Manager, use the following informat
 - Refer to [System Requirements for System Center Technical Preview](../../system-requirements/System-Requirements-for-System-Center-Technical-Preview.md)
 - Upgrade Service Manager 2012 R2 to Service Manger 2016 first, then upgrade your operating system to Windows Server 2016.
 - The order that you upgrade SQL Server and the server operating system should not matter.
-- For Service Manager data warehouse database restoration, the Reporting database also needs to be restored **after** you install the data warehouse. 
+- For Service Manager data warehouse database restoration, the Reporting database also needs to be restored **after** you install the data warehouse.
 - Use the published information for the order of System Center components as well as Service Manager components.
 - Do not mix Service Manager 2016 and Service Manager 2012 R2 with different Service Manager components - all should use the same version. For example, both the Self Service portal and the Service Manager management server  should use the same version.
 - You can only use the Service Manager 2012 R2 old or new portal with Service Manager 2012 R2. You cannot use the Self Service portal in Service Manager 2016 with Service Manager 2012 R2.
@@ -39,7 +39,7 @@ Use the following steps to upgrade your Self Service portal and Service Manager 
 
 On the Service Manager 2012 R2 Silverlight Self Service Portal:
 1. Uninstall the Silverlight-based Self Service portal. Support for Silverlight was removed with Service Manager 2016.
-2. Install the new HTML5-based Self Service Portal, using the information at [Deploy the Self-Service Portal for Service Manager](Deploy-the-Self-Service-Portal-for-Service-Manager.md).
+2. Install the new HTML5-based Self Service Portal, using the information at [Deploy the Self-Service Portal for Service Manager](deploy-deploy-the-self-service-portal-for-service-manager.md).
 
 ## Upgrading the Self Service Portal from a standalone installation of the Service Manager 2012 R2 HTML5-based Self Service portal
 Use the following step to upgrade your Self Service portal and Service Manger management servers where they are installed on different computers.
@@ -69,4 +69,3 @@ Use the following step to upgrade your Self Service portal and Service Manger ma
 
 ## Upgrading the Self Service Portal from Service Manager 2016 TP5 Self Service portal (stand alone or with a management server)
   - You can upgrade the Self Service portal directly from Service Manager 2012 R2 to Service Manager 2016.
-

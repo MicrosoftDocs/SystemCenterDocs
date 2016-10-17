@@ -18,6 +18,7 @@ ms.assetid:  a5e81bf0-43a6-4099-af2e-dfb0c1aa7ed8
 
 Before you begin, check the [Release Notes for System Center 2016](../../get-started/release-notes.md) for last minute issues. System Center DPM 2016 adds improvements in three key areas: storage efficiency, performance, and security. Modern Backup Storage takes advantage of improvements in Windows Server 2016, creating storage space savings of 30-40%. In addition to space savings, you can create storage and performance efficiency by using MDS to back up designated workloads to specific volumes. Improved DPM performance reduces I/O requirements up to 70%, which results in much faster backups. DPM 2016 supports shielded VMs which promises backup and recovery of critical VMs.
 
+
 ## New DPM 2016 features overview
 
 The following features are either new to DPM, or are improved for DPM 2016.
@@ -48,6 +49,7 @@ When you upgrade to DPM 2016, you are not required to reboot the production serv
 Modern Backup Storage is a feature that provides several benefits including:
 
 ### Improved storage savings
+
 Modern Backup Storage achieves 30-40% storage savings using technologies such as Resilient File System (ReFS). Using ReFS volumes and storing backups on VHDXs means there are no Local Disk Manager (LDM) limits or storage over-allocations. DPM storage consumption is flexible: it grows and shrinks based on the production data source’s storage changes.
 
 ### Faster backups

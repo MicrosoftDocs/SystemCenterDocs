@@ -18,7 +18,7 @@ ms.assetid: 3a0d866d-40b8-4f40-a175-3c5b563bbf83
 
 >Applies To: System Center 2016 - Service Manager
 
-If you have existing knowledge articles or are planning to create knowledge articles in any language other than English, use the following procedure to resolve an indexing issue in Microsoft SQL&nbsp;Server&nbsp;2008 with Service Pack&nbsp;1 \(SP1\). This issue deals with non\-English characters that are used in only the Analyst Content and the Internal Content fields in a knowledge article. You must perform this procedure on the computer that hosts the System Center - Service Manager database. You have two tasks to perform. The first is to edit the registry, and the second is to run a series of SQL&nbsp;Server query commands on the Service Manager database.  
+If you have existing knowledge articles or are planning to create knowledge articles in any language other than English, use the following procedure to resolve an indexing issue in Microsoft SQL&nbsp;Server&nbsp;2016. This issue deals with non\-English characters that are used in only the Analyst Content and the Internal Content fields in a knowledge article. You must perform this procedure on the computer that hosts the System Center - Service Manager database. You have two tasks to perform. The first is to edit the registry, and the second is to run a series of SQL&nbsp;Server query commands on the Service Manager database.  
 
 > [!CAUTION]  
 >  Incorrectly editing the registry might severely damage your system; therefore, before making changes to the registry, back up any valued data on the computer.  
@@ -41,10 +41,10 @@ If you have existing knowledge articles or are planning to create knowledge arti
 
 3.  In the **Run** dialog box, in the **Open** box, type **regedit**, and then click **OK**.  
 
-4.  If the default instance was selected during Setup, in the **Registry Editor** window, expand **HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Microsoft\\Microsoft SQL Server\\MSSQL10.MSSQLSERVER\\MSSearch\\Filters\\.rtf**.  
+4.  If the default instance was selected during Setup, in the **Registry Editor** window, expand **HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Microsoft\\Microsoft SQL Server\\MSSQL13.MSSQLSERVER\\MSSearch\\Filters\\.rtf**.  
 
     > [!NOTE]  
-    >  If the default instance was not selected during setup, the **MSSQL10.MSSQLSERVER** node will be different.  
+    >  If the default instance was not selected during setup, the **MSSQL13.MSSQLSERVER** node will be different.  
 
 5.  In the right pane, double\-click **Default**.  
 
@@ -66,7 +66,7 @@ If you have existing knowledge articles or are planning to create knowledge arti
 
 ### To run the SQL Server commands  
 
-1.  On the computer hosting the Service Manager database, on the Windows desktop, click **Start**, click **All Programs**, click **Microsoft SQL&nbsp;Server&nbsp;2008**, and then click **SQL Server Management Studio**.  
+1.  On the computer hosting the Service Manager database, on the Windows desktop, click **Start**, click **All Programs**, click **Microsoft SQL&nbsp;Server&nbsp;2016**, and then click **SQL Server Management Studio**.  
 
 2.  In the **Connect to Server** dialog box, perform the following:  
 
@@ -96,7 +96,7 @@ If you have existing knowledge articles or are planning to create knowledge arti
 
 ### To verify changing the .rtf filter  
 
-1.  On the computer hosting the Service Manager database, on the Windows desktop, click **Start**, click **All Programs**, click **Microsoft SQL Server&nbsp;2008**, and then click **SQL Server Management Studio**.  
+1.  On the computer hosting the Service Manager database, on the Windows desktop, click **Start**, click **All Programs**, click **Microsoft SQL Server&nbsp;2016**, and then click **SQL Server Management Studio**.  
 
 2.  In the **Connect to Server** dialog box, perform the following:  
 

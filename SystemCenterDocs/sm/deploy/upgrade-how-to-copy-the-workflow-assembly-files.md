@@ -22,9 +22,9 @@ Use the following procedure to copy the workflow assembly files from the Service
 
 ### To copy the workflow assembly files  
 
-1.  On the computer that is running the Service Manager Primary Server role, browse to the Service Manager Installation folder for example, C:\\Program Files\\Microsoft System Center 2016\\Service Manager copy the workflow files (workflow.dll).  
+1.  On the computer that is running the Service Manager Primary Server role, browse to the Service Manager Installation folder for example, C:\\Program Files\\Microsoft System Center\\Service Manager copy the workflow files (workflow.dll).  
 
-2.  On the computer that is running the Service Manager Secondary server; browse to the Service Manager Installation folder; for example, C:\\Program Files\\Microsoft System Center 2016\\Service Manager. Paste the copied workflow files into this folder. You should overwrite any existing files.  
+2.  On the computer that is running the Service Manager Secondary server; browse to the Service Manager Installation folder; for example, C:\\Program Files\\Microsoft System Center\\Service Manager. Paste the copied workflow files into this folder. You should overwrite any existing files.  
 
     > [!NOTE]  
     >  You must place the workflow assembly files in the Service Manager installation folder. This is very important step if you want to test the custom workflows that depend on workflow assembly files. Failure to copy these files would lead to failed custom workflows in the lab environment.

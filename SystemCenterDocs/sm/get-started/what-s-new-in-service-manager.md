@@ -120,7 +120,7 @@ The AD GroupExpansion functionality is now part of the ADConnector, as opposed t
 
 ## New Date dimensions in Data Warehouse cubes
 
-With the System Center 2016 - Service Manager, the Service Manager Data Warehouse cubes contain new date dimensions which will help you to create rich reports and slice data based on Year, Quarter, Month, Day etc.
+ With the System Center 2016 - Service Manager, the Service Manager Data Warehouse cubes contain new date dimensions which will help you to create rich reports and slice data based on Year, Quarter, Month, Day etc.
 
 ![date dimensions](../media/sm-date-dimensions.png)
 
@@ -130,7 +130,7 @@ Cube Name: Service Manager Work Items Cube
 - Content: Incident, Problem management
 - New date dimensions:
   - Incident ClosedDate
-  - Incident CreatedDate
+   - Incident CreatedDate
   - Incident ResolvedDate
   - Problem ClosedDate
   - Problem CreatedDate
@@ -140,7 +140,7 @@ Cube Name: Service Manager Work Items Cube
 Cube Name: Change and Activity Management Cube
 - Content: Change and Activity management
 - New Date Dimensions:
-  - Activity ActualEndDate
+   - Activity ActualEndDate
   - Activity ActualStartDate
   - Activity CreatedDate
   - Activity ScheduledEndDate
@@ -188,13 +188,9 @@ All these dimensions have the following attributes, which you can use for slicin
     ```
 
     The NamedCalculation ID should have string `__DateKey` in the end, and this field in the data warehouse should not be NULL or 0.
-
-2.  Seal the management pack and import it into Service Manager.
-
+2.  Seal the managment pack and import it into Service Manager.
 3.  Run the MPSyncJob on the data warehouse and wait until the management pack is marked **Completed**.
-
 4.  Process all the cubes, or wait for automatic processing overnight.
-
 5.  Cubes are updated with new date dimensions, as defined above.
 
 
@@ -218,14 +214,14 @@ For more information and installing and customizing the portal, see [Deploy the 
 
 ## Spell check in SM console
 
-Spell check is now enabled for work item forms. It is enabled for 17 out of the 21 supported languages. However, four southeast Asian languages do not support it. To use this feature, install your desired language pack and set the keyboard IME for your desired language. You can enable or disable spell check by navigating to **View** > **spell check**. Spell check is dynamic, so switching it on or off is shown on the currently-opened forms. Spell check is enabled by default.
+Spell check is now enabled for work item forms. It is enabled for 17 out of the 21 Service Manager supported languages [Chinese (Simplified), Chinese (Traditional), Japanese and Korean are currently not supported]. To use this feature, install your desired language pack and set the keyboard IME for your desired language. This feature is enabled by default, but can be switched by navigating to **View** > **spell check**.
 
 ## Open activity in progress
 
-A new console task *Open Activity in Progress*, was added for service requests and change requests. This console task’s link is enabled when a work item moves to the *in progress* state. Clicking the this task’s link opens the current in-progress activity. For work items that don’t have any in-progress activity, the localized message *No Activity with In Progress state is found for the workitem.* is displayed. In previous versions of Service Manager, you had to open the work item, navigate to the **Activities** tab, and then click the *In progress* activity. Now you can do the same thing with a single click.
+A new console task *Open Activity in Progress*, was added for service requests and change requests. This console task’s link is enabled when a work item moves to the *in progress* state. Clicking the this task’s link opens the current in-progress activity. For work items that don’t have any in-progress activity, the localized message *No Activity with In Progress state is found for the workitem.* is displayed. In previous versions of Service Manager, it required to open the work item, navigate to the **Activities** tab, and then clicking the *In progress* activity. Now In progress activity can be accessed with a single click.
 
 ## Support for Lync 2013 and Skype for Business
-System Center 2016 - Service Manager includes updates that supports integration with Lync 2013 and Skype for Business in Microsoft Office suite 2013 and 2016. For information about contacting a user using Lync or Skype for Business, see [Contact a User from an Incident Form](../manage/ops-how-to-contact-a-user-from-an-incident-form.md).
+System Center 2016 - Service Manager includes updates that supports integration with Lync 2013 and Skype for Business in Microsoft Office suite 2013 and  2016. For information about contacting a user using Lync or Skype for Business, see [Contact a User from an Incident Form](../manage/ops-how-to-contact-a-user-from-an-incident-form.md).
 
 
 ## Setup changes to support SQL AlwaysOn installation
@@ -236,6 +232,4 @@ Now you can configure the SQL management server, instance name and port number t
 ![configure SQL management server and port ](../media/sm-sqlserver-config.png)
 
 ## Support for .NET Framework 4.5.1
-
-### Additional support
-As always, we recommend that you perform typical or routine tasks in the test environment where you have installed this release to help ensure that no new problems occur resulting from the update. If you find any problems, please let us know at [ServiceManager@microsoft.com](mailto:ServiceManager@microsoft.com?SM2016) and title the email SM2016 *subject*.
+Service Manager 2016 now supports the .Net framework 4.5.1
