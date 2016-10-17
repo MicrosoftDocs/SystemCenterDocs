@@ -40,13 +40,13 @@ Use the following procedure to promote the secondary management server.
 
     5.  Leave the **Services** window open.  
 
-    6.  Open Windows Explorer. Locate the \\Program Files\\Microsoft System Center 2016\\Service Manager folder.  
+    6.  Open Windows Explorer. Locate the \\Program Files\\Microsoft System Center\\Service Manager folder.  
 
     7.  In this folder, delete the Health Service State folder and all of its contents.  
 
 2.  Do the following on the ServiceManager database on the Test SQL Server instance:  
 
-    1.  On the Windows desktop, click **Start**, point to **Programs**, point **to Microsoft SQL Server 2008**, and then click **SQL Server Management Studio**.  
+    1.  On the Windows desktop, click **Start**, point to **Programs**, point **to Microsoft SQL Server 2016**, and then click **SQL Server Management Studio**.  
 
     2.  In the Connect to Database Engine dialog box, follow these steps:  
 

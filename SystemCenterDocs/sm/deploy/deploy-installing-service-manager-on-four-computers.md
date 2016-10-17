@@ -32,7 +32,7 @@ When you are ready to move System Center - Service Manager into a production env
 
 ## Install the Service Manager Management Server (Four-Computer Scenario)
 
-The following procedure describes how to install the System Center - Service Manager management server, the Service Manager database, the data warehouse management server, data warehouse databases, and the Service Manager console in a four\-computer topology. You start the deployment process by installing the Service Manager management server and the Service Manager console on one computer and the Service Manager database on a second computer. Before you start, make sure that Microsoft SQL&nbsp;Server&nbsp;2008 is installed on the computer that will host the Service Manager database.  
+The following procedure describes how to install the System Center - Service Manager management server, the Service Manager database, the data warehouse management server, data warehouse databases, and the Service Manager console in a four\-computer topology. You start the deployment process by installing the Service Manager management server and the Service Manager console on one computer and the Service Manager database on a second computer. Before you start, make sure that Microsoft SQL&nbsp;Server&nbsp;2016 is installed on the computer that will host the Service Manager database.  
 
  During Setup, you will be prompted to provide credentials for the following accounts:  
 
@@ -63,7 +63,7 @@ The following procedure describes how to install the System Center - Service Man
 7.  On the **Configure the Service Manager database** page, in the **Database server** field, type the name of the computer that will host the Service Manager database, and press the TAB key. Ensure that **SQL Server instance** box is set to the desired SQL Server instance and that **Create a new database** is selected, and then click **Next**. For example, type **Computer 2** in the **Database server** box.  
 
     > [!IMPORTANT]  
-    >  A warning message appears if you are using the default collation \(SQL\_Latin1\_General\_CP1\_CI\_AS\). Support for multiple languages in Service Manager is not possible when you are using the default collation. If later you decide to support multiple languages using a different collation, you have to reinstall SQL&nbsp;Server. See "Microsoft SQL&nbsp;Server&nbsp;2008 with SP1" in the [Planning Guide for System Center - Service Manager](../plan/plan-planning-for-system-center-2016-service-manager.md).  
+    >  A warning message appears if you are using the default collation \(SQL\_Latin1\_General\_CP1\_CI\_AS\). Support for multiple languages in Service Manager is not possible when you are using the default collation. If later you decide to support multiple languages using a different collation, you have to reinstall SQL&nbsp;Server. See [Planning Guide for System Center - Service Manager](../plan/plan-planning-for-system-center-2016-service-manager.md).  
 
 8.  On the **Configure the Service Manager management group** page, complete these steps:  
 
@@ -78,7 +78,7 @@ The following procedure describes how to install the System Center - Service Man
 
 10. On the **Configure the Service Manager workflow account** page, click **Domain account**; specify the user name, password, and domain for the account; and then click **Test Credentials**. After you receive a "The credentials were accepted" message, click **Next**.  
 
-11. On the **Help improve System Center Service Manager** page, indicate your preference for participation in the Customer Experience Improvement Program. As an option, click **Tell me more about the program**, and then click **Next**.  
+11. On the **Diagnostic and usage data** page, indicate your preference for sharing your Service Manager diagnostic and usage data with Microsoft. As an option, click **Privacy statement for System Center Service Manager**, and then click **Next**.  
 
 12. On the **Use Microsoft Update to help keep your computer secure and up\-to\-date** page, indicate your preference for using Microsoft Update to check for Service Manager updates. If you want Windows Update to check for updates, select **Initiate machine wide Automatic update**. Click **Next**.  
 
@@ -121,10 +121,10 @@ To start deployment of the System Center - Service Manager data warehouse and da
 
 7.  On the **System check results** page, verify that prerequisites passed or at least passed with warnings, and then click **Next**.  
 
-8.  On the **Configure the data warehouse databases** page, click **Staging and Configuration**. In the **Database server** box, type the computer name of the computer that will host the two data warehouse databases. For example, type **Computer 4**, and then press the TAB key. Verify that **Default** appears in the **SQL Server instance** box.  
+8.  On the **Configure data warehouse databases** page, in the **Database server** box, type the computer name of the physical computer that will host the data warehouse databases, the SQL server port, and Database name for all three data warehouse databases, then click **Next**.  
 
     > [!IMPORTANT]  
-    >  A warning message appears if you are using the default collation \(SQL\_Latin1\_General\_CP1\_CI\_AS\). Support for multiple languages in Service Manager is not possible when you are using the default collation. If later you decide to support multiple languages using a different collation, you have to reinstall SQL&nbsp;Server. See "Microsoft SQL&nbsp;Server&nbsp;2008 with SP1" in the [Planning Guide for System Center - Service Manager](../plan/plan-planning-for-system-center-2016-service-manager.md).  
+    >  A warning message appears if you are using the default collation \(SQL\_Latin1\_General\_CP1\_CI\_AS\). Support for multiple languages in Service Manager is not possible when you are using the default collation. If later you decide to support multiple languages using a different collation, you have to reinstall SQL&nbsp;Server. See [Planning Guide for System Center - Service Manager](../plan/plan-planning-for-system-center-2016-service-manager.md).  
 
 9. In the list of the three databases, select **Data Mart**. In the **Database server** box, type the computer name of the server that will host the Data Mart database. For example, type **Computer 4**, and then press the TAB key. When **Default** appears in the **SQL Server instance** box, click **Next**.  
 
@@ -175,7 +175,7 @@ To start deployment of the System Center - Service Manager data warehouse and da
     > [!NOTE]  
     >  The account you specify here must have administrator rights on the computer hosting SQL Server Analysis Services.  
 
-17. On the **Help improve System Center Service Manager** page, indicate your preference for participation in the Customer Experience Improvement Program. Optionally, click **Tell me more about the program**, and then click **Next**.  
+17. On the **Diagnostic and usage data** page, indicate your preference for sharing your Service Manager diagnostic and usage data with Microsoft. As an option, click **Privacy statement for System Center Service Manager**, and then click **Next**.  
 
 18. On the **Use Microsoft Update to help keep your computer secure and up\-to\-date** page, indicate your preference for using Microsoft Update to check for Service Manager updates. Select **Initiate machine wide Automatic update** if you want Windows Update to check for updates. Click **Next**.  
 
@@ -210,7 +210,7 @@ The procedures in this topic describe how to validate the four\-computer install
 
 #### To validate the Service Manager database  
 
-1.  On the computer hosting the Service Manager database, click **Start**, click **All Programs**, click **Microsoft SQL Server&nbsp;2008**, and then click **SQL Server Management Studio**.  
+1.  On the computer hosting the Service Manager database, click **Start**, click **All Programs**, click **Microsoft SQL Server&nbsp;2016**, and then click **SQL Server Management Studio**.  
 
 2.  In the **Connect to Server** dialog box, select the following:  
 
@@ -238,7 +238,7 @@ The procedures in this topic describe how to validate the four\-computer install
 
 #### To validate data warehouse databases  
 
-1.  On the computer hosting the data warehouse management databases, click **Start**, click **All Programs**, click **Microsoft SQL&nbsp;Server&nbsp;2008**, and then click **SQL&nbsp;Server Management Studio**.  
+1.  On the computer hosting the data warehouse management databases, click **Start**, click **All Programs**, click **Microsoft SQL&nbsp;Server&nbsp;2016**, and then click **SQL&nbsp;Server Management Studio**.  
 
 2.  In the **Connect to Server** dialog box, select the following:  
 
@@ -252,7 +252,7 @@ The procedures in this topic describe how to validate the four\-computer install
 
 4.  Verify that the **DWStagingAndConfig** and **DWRepository** databases are listed.  
 
-5.  On the computer hosting SQL&nbsp;Server Reporting Services \(SSRS\), click **Start**, click **All Programs**, click **Microsoft SQL&nbsp;Server&nbsp;2008**, and then click **SQL&nbsp;Server Management Studio**.  
+5.  On the computer hosting SQL&nbsp;Server Reporting Services \(SSRS\), click **Start**, click **All Programs**, click **Microsoft SQL&nbsp;Server&nbsp;2016**, and then click **SQL&nbsp;Server Management Studio**.  
 
 6.  In the **Connect to Server** dialog box, select the following:  
 

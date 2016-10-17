@@ -18,18 +18,10 @@ ms.assetid: 063d010b-c955-4499-b690-561cfd7f9db5
 
 >Applies To: System Center 2016 - Service Manager
 
-In Service Manager, you can contact a user by email or by instant message when an incident form is open. The presence indicator is shown in the form next to the affected user's name, and it displays their current status, if known. For the presence indicator to accurately reflect a user's status, the user must have an Active&nbsp;Directory account, and the user must be a member of the same domain in which the Service Manager management server has its computer account. Additionally, the computer running the Service Manager console must have Skype for Business installed.  
+In Service Manager, you can contact a user by Skype for Business when an incident form is open. The presence indicator is shown in the form next to the affected user's name, and it displays their current status, if known. For the presence indicator to accurately reflect a user's status, the user must have an Active&nbsp;Directory account, and the user must be a member of the same domain in which the Service Manager management server has its computer account. Additionally, the computer running the Service Manager console must have Skype for Business installed.  
 
 > [!NOTE]  
 >  If a user's account belongs to a domain other than the domain in which the Service Manager management server has its computer account, the presence indicator might not accurately display the user's status.  
-
-### To contact a user by email  
-
-1.  In an open incident form, click the presence indicator next to the **Affected user** box, and then click the triangle icon next to the box.  
-
-2.  Click **Send Mail**.  
-
-3.  Your email client program opens and adds the user's name to the **To** box. Compose the e\-mail message, and then send it.  
 
 ### To contact a user by instant message  
 
