@@ -1,11 +1,11 @@
 ---
-description: Descriptions of the new features in DPM 2016, including Modern DPM storage and improvements to Hyper-V protection.  
+description: Descriptions of the new features in DPM 2016, including Modern Backup storage and improvements to Hyper-V protection.  
 manager:  cfreemanwa
 ms.topic:  article
 author:  markgalioto
 ms.prod:  system-center-threshold
 keywords:  
-ms.date:  2016-10-12
+ms.date:  2016-10-14
 title:  What's new in DPM in System Center 2016
 ms.technology:  data-protection-manager
 ms.assetid:  a5e81bf0-43a6-4099-af2e-dfb0c1aa7ed8
@@ -16,13 +16,14 @@ ms.assetid:  a5e81bf0-43a6-4099-af2e-dfb0c1aa7ed8
 >Applies To: System Center 2016 - Data Protection Manager
 
 
-Before you begin, check the [Release Notes for System Center 2016](../../get-started/release-notes.md) for last minute issues. System Center DPM 2016 adds improvements in three key areas: storage efficiency, performance, and security. Modern DPM Storage (MDS) takes advantage of improvements in Windows Server 2016, creating storage space savings of 50%. In addition to space savings, you can create storage and performance efficiency by using MDS to back up designated workloads to specific volumes. Improved DPM performance reduces I/O requirements up to 70%, which results in much faster backups. DPM 2016 supports shielded VMs which promises backup and recovery of critical VMs.
+Before you begin, check the [Release Notes for System Center 2016](../../get-started/release-notes.md) for last minute issues. System Center DPM 2016 adds improvements in three key areas: storage efficiency, performance, and security. Modern Backup Storage takes advantage of improvements in Windows Server 2016, creating storage space savings of 30-40%. In addition to space savings, you can create storage and performance efficiency by using MDS to back up designated workloads to specific volumes. Improved DPM performance reduces I/O requirements up to 70%, which results in much faster backups. DPM 2016 supports shielded VMs which promises backup and recovery of critical VMs.
+
 
 ## New DPM 2016 features overview
 
 The following features are either new to DPM, or are improved for DPM 2016.
 
-- **Modern DPM Storage** -
+- **Modern Backup Storage** -
 Using Resilient File System (ReFS) block-cloning technology to store incremental backups, DPM 2016 dramatically improves storage utilization and performance. The storage consumed by backups grows and shrinks with the production data source, and there is no over-allocation of storage.
 
 - **Resilient change tracking (RCT)** -
@@ -43,12 +44,13 @@ DPM 2016 can back up Hyper-V VMs deployed on ReFS-based SOFS clusters. Backup an
 - **Upgrading a DPM production server to 2016 doesn't require a reboot** -
 When you upgrade to DPM 2016, you are not required to reboot the production server. To avoid rebooting the production server, upgrade to DPM 2016 and upgrade the DPM agent on the production servers. Backups continue and you reboot the production server when you want.
 
-## Modern DPM Storage
+## Modern Backup Storage
 
-Modern DPM Storage is a feature that provides several benefits including:
+Modern Backup Storage is a feature that provides several benefits including:
 
 ### Improved storage savings
-Modern DPM Storage (MDS) achieves 50% storage savings using technologies such as Resilient File System (ReFS). Using ReFS volumes and storing backups on VHDXs means there are no Local Disk Manager (LDM) limits or storage over-allocations. DPM storage consumption is flexible: it grows and shrinks based on the production data source’s storage changes.
+
+Modern Backup Storage achieves 30-40% storage savings using technologies such as Resilient File System (ReFS). Using ReFS volumes and storing backups on VHDXs means there are no Local Disk Manager (LDM) limits or storage over-allocations. DPM storage consumption is flexible: it grows and shrinks based on the production data source’s storage changes.
 
 ### Faster backups
 DPM 2016 uses block cloning to store backups on ReFS volumes. Instead of using copy-on-write to store backups (which was used by VolSnap in DPM 2012 R2), DPM 2016's block cloning uses allocate-on-write. This change improves IOPS efficiency, making backups nearly 70% faster.
