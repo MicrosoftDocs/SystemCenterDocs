@@ -149,7 +149,7 @@ On Server 2012 – run the following in an elevated command prompt:  “C:\Windo
 
 **Workaround:** None.
 
-#### Client-side monitoring (CSM) alerts might stop flowing from the System Center Operations Manager management server 
+#### Client-side monitoring (CSM) alerts might stop flowing from the System Center Operations Manager management server
 **Description:** The update sequence of System Center Operation Manager management server may cause an issue with the client-side monitoring alerts collection from the management server. System Center Operations Manager agents are not affected. Likelihood of occurrence: Medium.
 
 **Workaround:** Restart the "Microsoft Monitoring Agent" service on System Center Operations Manager management server.
@@ -246,6 +246,13 @@ System Center Operations Manager management server is not affected.
 **Description:** Microsoft Visual C++ 2012 redistributable should be installed before deploying Service Manager 2016 Authoring Tool.
 
 **Workaround:** None
+
+#### Create Exchange Connector wizard might crash
+**Description:** Creating a new Exchange Connector via Service Manager 2016 console throws an exception if the admin clicks on the "Test Connection" button in the "Server Connection" pane of "Create Exchange Connector" wizard.
+
+**Workaround:** To work around this issue, avoid clicking "Test Connection" button in the "Create Exchange Connector" wizard. Instead, directly click the "Next" button, which internally tests the connection and does not crash the wizard.
+
+If the crash has already occurred, you can restart the wizard and use this workaround.
 
 #### Browsing domain in AD connector wizard raises error
 **Description:** Error is raised on clicking “Browse” while choosing Domain or OU in AD connector wizard of Service Manager 2016 console.
@@ -596,7 +603,13 @@ The user name or password is incorrect (0x8007052E)
 **Description:** After you onboard an out-of-band HC or S2D SOFS into VMM, the Storage Provider is not added and SOFS properties like Volume, physical disk and tiers are not available in VMM.
 
 **Workaround:** Add and Refresh the storage provider
+
 1.	Open the VMM console.
+
 2.	Click Fabric Resources > Storage > Providers.
+
 		a. Right-click the provider > Add Storage Devices wizard
+
 		b. Right-click the provider > Rescan
+
+Note: Add/Refresh provider job is completed with a warning and the job details shows SMBIOS GUID error. Even in subsequent provider refresh, you will see this warning, however there is no functional impact on the cluster and the warning can be ignored.

@@ -27,11 +27,11 @@ Before you can run commands in the Windows&nbsp;PowerShell command\-line interfa
 -   **Microsoft.EnterpriseManagement.Warehouse.Cmdlets**. This module must be imported manually.  
 
 ## Cmdlets in Authoring Tool Workflows  
- When you use the Service Manager SP1 version of the Authoring tool to create a workflow, then custom scripts using Windows PowerShell cmdlets called by the workflow fail. This is due to a problem in the Service Manager MonitoringHost.exe.config file.  
+ When you use the Service Manager Authoring tool to create a workflow, then custom scripts using Windows PowerShell cmdlets called by the workflow fail. This is due to a problem in the Service Manager MonitoringHost.exe.config file.  
 
  To work around this problem, update the MonitoringHost.exe.config XML file using the following steps.  
 
-1.  Navigate to %ProgramFiles%\\Microsoft System Center 2016\\Service Manager\\ or the location where you installed Service Manager.  
+1.  Navigate to %ProgramFiles%\\Microsoft System Center\\Service Manager\\ or the location where you installed Service Manager.  
 
 2.  Edit the MonitoringHost.exe.config file and add the section in italic type from the example below in the corresponding section of your file. You must insert the section before `<publisherPolicy apply="yes" />`.  
 

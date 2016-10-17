@@ -54,7 +54,7 @@ Use the following procedure to install a new data warehouse server in the lab en
 
 11. On the **Configure the reporting account** page, specify the user name, password, and domain for the account, and then click **Test Credentials**. After you receive a **The credentials were accepted** message, click **Next**.  
 
-12. On the **Help improve System Center** page, indicate your preference for participation in the Customer Experience Improvement Program and in Error Reporting. Optionally, click **Tell me more about the program**, and then click **Next**.  
+12. On the **Diagnostic and usage data** page, indicate your preference for sharing your Service Manager diagnostic and usage data with Microsoft. As an option, click **Privacy statement for System Center Service Manager**, and then click **Next**.  
 
 13. On the **Use Microsoft Update to help keep your computer secure and up\-to\-date** page, indicate your preference for using Microsoft Update to check for Service Manager updates, and then click **Next**.  
 

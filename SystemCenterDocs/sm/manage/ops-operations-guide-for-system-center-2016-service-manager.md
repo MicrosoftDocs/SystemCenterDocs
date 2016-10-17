@@ -42,9 +42,6 @@ The Operations Guide for Microsoft System Center 2016 - Service Manager provides
 
      Describes how release records are created, edited, combined, and used to track releases.  
 
--   [Managing Chargeback Reports in Service Manager](ops-managing-chargeback-reports-in-system-center-2016-service-manager.md)  
-
-     Describes how to manage chargeback reports.  
 
 -   [Using Data Warehouse Reporting and Analytics in Service Manager](ops-using-data-warehouse-reporting-and-analytics-in-system-center-2016-service-manager.md)  
 

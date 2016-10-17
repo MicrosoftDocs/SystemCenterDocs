@@ -18,49 +18,14 @@ ms.assetid:  26697203-df1e-4232-b9be-7c9976a362b8
 
 Microsoft SQL Server hosts the databases that System Center 2016 - Service Manager creates. In addition, System Center 2016 - Service Manager requires SQL Server Analysis Services (SSAS) to work with Microsoft Online Analytical Processing (OLAP) cubes. SQL Server Reporting Services (SSRS) is required to support System Center 2016 - Service Manager reporting.
 
-All SQL Server requirements are listed at [SQL Server](http://go.microsoft.com/fwlink/?LinkId=268329) and SQL Server editions are listed at [Operating System and Database Edition Support](http://go.microsoft.com/fwlink/?LinkId=268324).
+All SQL Server requirements are listed at [SQL Server](../../system-requirements/sql-server-version-compatibility.md).
 
 > [!NOTE]
-> System Center 2016 - Service Manager requires SQL Server 2008 R2 SP1 or later.
+> System Center 2016 - Service Manager requires SQL Server 2012 SP2 or later.
 >
 > System Center 2016 - Service Manager does not support setting the MultiSubnetFailover parameter. This parameter is not used in System Center 2016 - Service Manager connection strings.
 
-## SQL Server 2012 Standard and Enterprise Editions
-SQL Server 2012 is available in Standard, Enterprise, and Business Intelligence editions. System Center 2016 - Service Manager will function with all editions. However, there are additional features available in SQL Server 2012 Enterprise that can enhance your experience with the System Center 2016 - Service Manager data warehouse:
 
--  **Analysis Services Files**: In the Enterprise and Business Intelligence editions of SQL Server 2012, you can decide where Analysis Services database files will be stored. In the Standard edition, there is only one default location for the files.
-
--  **Cube Processing**: In the Enterprise and Business Intelligence editions, cubes are processed incrementally each night. In the Standard edition, the entire cube is processed each night and therefore, the amount of processing time required will increase as more data is accumulated. Cubes can still be queried when being processed however, reporting performance will be reduced.
-
--  **Measure Group Partitions**: In the Enterprise and Business Intelligence editions, measure groups are partitioned on a monthly basis, instead of as one large partition. This reduces the amount of time it takes to process the partition.
-
--  **PowerPivot**: In the Enterprise and Business Intelligence editions, you can use Microsoft SQL Server PowerPivot for SharePoint.
-
-You must make your decision to use either the Standard, Enterprise, or Business Intelligence editions of SQL Server 2012 before you install System Center 2016 - Service Manager. It is possible to use a combination of editions for the System Center 2016 - Service Manager database and use a different edition for the data warehouse databases.
-
-For more information comparing SQL Server editions, see [SQL Server 2012 Editions](http://go.microsoft.com/fwlink/p/?LinkId=259487).
-
-> [!NOTE]
-> System Center 2016 - Service Manager was tested using the Standard and Enterprise editions of SQL Server 2012.
-
-For information about the specific versions of SQL Server that are supported in System Center 2016 - Service Manager see [Software Requirements for Service Manager](plan-software-requirements-for-system-center-2016-service-manager.md).
-
-## SQL Server 2008 R2 Standard and Enterprise Editions
-SQL Server 2008 R2 is available in both Standard and Enterprise editions. System Center 2016 - Service Manager will function with both editions. However, there are additional features available in SQL Server 2008 Enterprise that can enhance your experience with the System Center 2016 - Service Manager data warehouse:
-
--  **Analysis Services Files**: In the Enterprise edition of SQL Server 2008, you can decide where Analysis Services database files will be stored. In the Standard edition, there is only one default location for the files.
-
--  **Cube Processing**: In the Enterprise edition, cubes are processed incrementally each night. In the Standard edition, the entire cube is processed each night and therefore, the amount of processing time required will increase as more data is accumulated. Cubes can still be queried when being processed however, reporting performance will be reduced.
-
--  **Measure Group Partitions**: In the Enterprise edition, measure groups are partitioned on a monthly basis, instead of as one large partition. This reduces the amount of time it takes to process the partition.
-
--  **PowerPivot**: In the Enterprise edition, you can use Microsoft SQL Server PowerPivot for SharePoint.
-
-You must make your decision to use either the Standard or Enterprise editions of SQL Server 2008 before you install System Center 2016 - Service Manager. It is possible to use SQL Server 2008 Standard for the System Center 2016 - Service Manager database and use SQL Server 2008 Enterprise for the data warehouse databases.
-
-
-> [!NOTE]
-> System Center 2016 - Service Manager was tested using both the Standard and Enterprise editions of SQL Server 2008. No other editions of SQL Server are supported.
 
 For information about the specific versions of SQL Server that are supported in System Center 2016 - Service Manager see [Software Requirements for Service Manager](plan-software-requirements-for-system-center-2016-service-manager.md).
 
@@ -84,14 +49,6 @@ sp_configure 'allow updates',0 reconfigure with override
 
 ## AlwaysOn Availability Groups Considerations for Service Manager Databases
 
-SQL Server AlwaysOn Availability Groups functionality is supported by all versions of System Center 2016 - Service Manager for the default server instance. However, SQL AlwaysOn Availability Groups functionality is not supported for a named instance.
+SQL Server AlwaysOn Availability Groups functionality is supported by System Center 2016 - Service Manager.
 
-When considering SQL Server AlwaysOn Availability Groups for the Service Manager database or the DWDataMart, you should determine whether availability replica should support either or both of the following active-secondary capabilities:
-
--  Read-only connection access which enables read-only connections to the replica to access and read its databases when it is running as a secondary replica.
-
--  Performing backup operations on its databases when it is running as a secondary replica.
-
-For more information about installing Service Manager with AlwaysOn availability groups on [TechNet](http://blogs.technet.com/b/babulalghule/archive/2013/02/17/how-to-install-service-manager-2012-sp1-with-a-sql-2012-alwayson-availability-groups.aspx).
-
-For more information about AlwaysOn Availability Groups, see [AlwaysOn Availability Groups (SQL Server)](http://msdn.microsoft.com/library/hh510230.aspx).
+For more information about installing Service Manager with AlwaysOn availability groups, [refer here](../deploy/deploy-using-sql-server-2014-alwayson-availability-groups-with-service-manager.md).
