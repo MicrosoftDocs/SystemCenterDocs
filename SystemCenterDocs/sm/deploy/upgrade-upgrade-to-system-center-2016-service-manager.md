@@ -22,8 +22,18 @@ You cannot start an upgrade to System Center 2016 - Service Manager if any data 
 
  Complete the procedures in the following section, in order, to upgrade to System Center 2016 - Service Manager.  
 
-## Prepare Service Manager 2012 R2 for Upgrade
+## Things to take care
 
+- For Service Manager data warehouse database restoration, the Reporting database also needs to be restored after you install the data warehouse.
+- Refer the upgrading sequencing of System Center components as described [here](upgrade-upgrading-system-center-2012-service-manager-to-system-center-2016.md).
+- Do not mix Service Manager 2016 and Service Manager 2012 R2 with different Service Manager components - all should use the same version. For example, both the Self Service portal and the Service Manager management server  should use the same version.
+- When upgrading from Service Manager 2012 R2 to Service Manager 2016, you should not enable or disable the Active Directory group expansion for any of the Active Directory connectors.
+
+    In other words, if it is off, let it remain off and if it is on, let it remain on until the connector runs for the first time. See the screenshot below. This applies only to the first time that the Active Directory connector runs after you upgrade. You can change your preferences for Active Directory group expansion workflow after the first time that the Active Directory connector sync completes.
+
+    ![Active Directory Connector wizard](../media/sm-adconnector01.png)
+
+## Prepare Service Manager 2012 R2 for Upgrade
 This topic describes how to prepare your System Center 2012 R2 - Service Manager environment for an upgrade. To do this, perform the following procedures for upgrading the data warehouse management server:  
 
 1.  List the data warehouse jobs that are running.  
@@ -156,6 +166,9 @@ This topic describes how to prepare your System Center 2012 R2 - Service Manager
 
 Use the following procedures to upgrade your Service Manager environment to System Center 2016 - Service Manager. These procedures include steps for upgrading the data warehouse management server, the Service Manager management server, and the Service Manager console.  
 
+### Upgrade steps for custom development
+With the System Center 2016 - Service Manager release, the product has moved to support .Net 4.5.1. The tool set to support this movement to .Net 4.5.1 required to break a few dependencies and has led to the movement of classes across the assemblies. Hence, the upgrade to Service Manager 2016 may break the custom solutions made in house or by 3rd party (non-Microsoft). Please refer the [steps to upgrade your custom solutions](https://blogs.technet.microsoft.com/servicemanager/2016/08/03/scsm-2016-upgrade-steps-for-custom-development/), to avoid getting into this problem.
+
 ### Data Warehouse Management Server  
  Use the following procedure to upgrade the data warehouse management server.  
 
@@ -179,11 +192,11 @@ Use the following procedures to upgrade your Service Manager environment to Syst
 7.  On the **Configure Analysis Service for OLAP cubes** page, in the **Database server** box, type the computer name of the server that will host the SQL&nbsp;Server Analysis Services \(SSAS\) database, and then press the Tab key. When **Default** appears in the **SQL Server instance** box, click **Next**.  
 
     > [!IMPORTANT]  
-    >  If you are installing SSAS on a computer other than the computer that hosts the data warehouse management server and there is a firewall in your environment, you must make sure that the proper firewall ports are opened. For more information, see "Port Assignments for System Center 2016 - Service Manager" in the [Planning Guide for System Center 2016 - Service Manager](http://go.microsoft.com/fwlink/p/?LinkId=209672).  
+    >  If you are installing SSAS on a computer other than the computer that hosts the data warehouse management server and there is a firewall in your environment, you must make sure that the proper firewall ports are opened. For more information, see "Port Assignments for System Center 2016 - Service Manager" in the [Planning Guide for System Center 2016 - Service Manager](../plan/plan-planning-for-system-center-2016-service-manager.md).  
 
 8.  On the **Configure Analysis Services credential** page, specify the user name, password, and domain for the account, and then click **Test Credentials**. After you receive a message saying "The credentials were accepted," click **Next**.  
 
-9. On the **Help improve System Center** page, indicate your preference for participation in the Customer Experience Improvement Program and in Error Reporting. As an option, click **Tell me more about the program**, and then click **Next**.  
+9. On the **Diagnostic and usage data** page, indicate your preference for sharing your Service Manager diagnostic and usage data with Microsoft. As an option, click **Privacy statement for System Center Service Manager**, and then click **Next**.   
 
 10. On the **Use Microsoft Update to help keep your computer secure and up\-to\-date** page, indicate your preference for using Microsoft Update to check for Service Manager updates, and then click **Next**.  
 
@@ -232,3 +245,7 @@ Use the following procedures to upgrade your Service Manager environment to Syst
 7.  On the **Configuration Summary** page, read the information that is provided, and, if it is accurate, click **Install**.  
 
 8.  On **The upgrade was completed successfully** page, click **Close**.
+
+### Service Manager Self Service Portal
+
+Refer the instructions mentioned in article [Upgrading the Service Manager Self-Service Portal](upgrade-upgrading-the-self-service-portal.md).

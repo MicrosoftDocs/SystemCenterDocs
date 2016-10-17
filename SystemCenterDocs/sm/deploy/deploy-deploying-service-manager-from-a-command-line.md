@@ -41,17 +41,13 @@ Setup.exe
 /RegisteredOwner:"Garret Young"  
 ```  
 
- Some of the command\-line parameters that are used for the Operations Manager and Configuration Manager data marts define Structured Query Language \(SQL\) path statements as command\-line arguments. You must define the drive name and make sure that the path that is listed in this guide is the correct path for your version of Microsoft SQL&nbsp;Server. The examples in this guide are correct for SQL&nbsp;Server&nbsp;2008, as shown in the following example:  
+ Some of the command\-line parameters that are used for the Operations Manager and Configuration Manager data marts define Structured Query Language \(SQL\) path statements as command\-line arguments. You must define the drive name and make sure that the path that is listed in this guide is the correct path for your version of Microsoft SQL&nbsp;Server. The examples in this guide are correct for SQL&nbsp;Server&nbsp;2016, as shown in the following example:  
 
 ```  
-/OMDataMartDatabaseLogFilePath:[drive name]\Program Files\Microsoft SQL Server\MSSQL10.MSSQLSERVER\MSSQL\DATA  
+/OMDataMartDatabaseLogFilePath:[drive name]\Program Files\Microsoft SQL Server\MSSQL13.MSSQLSERVER\MSSQL\DATA  
 ```  
 
- The following is an example of the same command\-line argument that you would use for SQL&nbsp;Server&nbsp;2008&nbsp;R2.  
 
-```  
-/OMDataMartDatabaseLogFilePath:[drive name]\Program Files\Microsoft SQL Server\MSSQL10_50.MSSQLSERVER\MSSQL\DATA  
-```  
 
  For additional information about command\-line parameters, type **setup.exe /?**. The parameters in the following table are optional.  
 

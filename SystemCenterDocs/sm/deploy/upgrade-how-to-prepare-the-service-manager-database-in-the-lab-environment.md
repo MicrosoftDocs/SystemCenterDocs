@@ -22,7 +22,7 @@ Use the following procedure to prepare the Service Manager database in the lab e
 
 ### To configure the database  
 
-1.  On the computer hosting the Service Manager database for the secondary management server, click **Start**, click **All Programs**, click **Microsoft SQL Server 2008 R2**, and then click **SQL Server Management Studio**.  
+1.  On the computer hosting the Service Manager database for the secondary management server, click **Start**, click **All Programs**, click **Microsoft SQL Server 2016**, and then click **SQL Server Management Studio**.  
 
 2.  In the **Connect to Server** dialog box, follow these steps:  
 
