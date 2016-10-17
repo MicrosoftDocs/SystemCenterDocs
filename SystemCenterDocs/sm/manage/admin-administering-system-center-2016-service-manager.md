@@ -60,9 +60,6 @@ Welcome to the Administrator's Guide for Microsoft System Center 2016 - Service 
 - [Using Runbooks in Service Manager](admin-using-runbooks-in-system-center-2016-service-manager.md)  
     Describes how to use runbooks in Service Manager and System Center - Orchestrator to automate procedures.
 
-- [Installing and Configuring Chargeback Reports in Service Manager](admin-installing-and-configuring-chargeback-reports-in-system-center-2016-service-manager.md)  
-    Describes how to install and configure chargeback reports.
-
 - [User Interface Customization in Service Manager](admin-user-interface-customization-in-system-center-2016-service-manager.md)  
     Describes how to use unsealed management packs to edit the properties of views, list items, or templates.
 

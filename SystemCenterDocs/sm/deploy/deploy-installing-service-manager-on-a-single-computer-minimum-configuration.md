@@ -18,11 +18,11 @@ ms.assetid: 08c888e1-57cb-4f94-8b9e-041a54204c09
 
 >Applies To: System Center 2016 - Service Manager
 
-If you want to evaluate System Center - Service Manager and you have a minimal amount of hardware available, install Service Manager on one computer. A sample single\-computer configuration is shown in figure&nbsp;1. This configuration will not support a production environment, and no scalability or performance estimates are provided. Because you cannot install both the Service Manager management server and the data warehouse management server on the same computer, use Hyper\-V to create a virtual computer to host the data warehouse management server. For more information about the hardware requirements for Hyper\-V, see [Hyper\-V Server&nbsp;2008&nbsp;R2 system requirements](http://go.microsoft.com/fwlink/p/?LinkId=231898).  
+If you want to evaluate System Center - Service Manager and you have a minimal amount of hardware available, install Service Manager on one computer. A sample single\-computer configuration is shown in figure&nbsp;1. This configuration will not support a production environment, and no scalability or performance estimates are provided. Because you cannot install both the Service Manager management server and the data warehouse management server on the same computer, use Hyper\-V to create a virtual computer to host the data warehouse management server. For more information about the hardware requirements for Hyper\-V, see [Hyper\-V Server&nbsp;2016 system requirements](https://technet.microsoft.com/en-us/hyper-v-server-docs/).  
 
- To install Service Manager on a single computer, start with a physical computer that is running Windows&nbsp;Server&nbsp;2008 and Hyper\-V, and make sure that the CPU on the physical computer is compatible with Hyper\-V. Of the 8&nbsp;gigabytes \(GB\) of RAM on the host computer, 3&nbsp;GB is used for the virtual computer that hosts the data warehouse management server. Make sure that at least 200&nbsp;GB of free space is available on the hard disk drive.  
+ To install Service Manager on a single computer, start with a physical computer that is running Windows&nbsp;Server&nbsp;2016 and Hyper\-V, and make sure that the CPU on the physical computer is compatible with Hyper\-V. Of the 8&nbsp;gigabytes \(GB\) of RAM on the host computer, 3&nbsp;GB is used for the virtual computer that hosts the data warehouse management server. Make sure that at least 200&nbsp;GB of free space is available on the hard disk drive.  
 
- **Figure 1: Single\-computer installation in which you use a physical computer that is running Windows&nbsp;Server&nbsp;2008 and Hyper\-V**  
+ **Figure 1: Single\-computer installation in which you use a physical computer that is running Windows&nbsp;Server&nbsp;2016 and Hyper\-V**  
 
  ![Minimum Configuration for Service Manager](../media/deploy-minimumconfiguration.png)  
 
@@ -40,7 +40,7 @@ To install System Center - Service Manager on a single computer, you install the
 
 -   Workflow account  
 
- For more information about the permissions that these accounts require, see "Accounts Required During Setup" in the [Planning Guide for System Center - Service Manager](http://go.microsoft.com/fwlink/p/?LinkID=209672). Before you start, make sure that Microsoft SQL&nbsp;Server&nbsp;2008 is installed on the computer.  
+ For more information about the permissions that these accounts require, see "Accounts Required During Setup" in the [Planning Guide for System Center - Service Manager](../plan/plan-planning-for-system-center-2016-service-manager.md). Before you start, make sure that Microsoft SQL&nbsp;Server&nbsp;2016 is installed on the computer.  
 
 ### To install the Service Manager management server, database, and console  
 
@@ -61,7 +61,7 @@ To install System Center - Service Manager on a single computer, you install the
 7.  On the **Configure the Service Manager database** page, Service Manager checks the current computer to see if an instance of SQL&nbsp;Server exists. By default, if an instance is found, Service Manager creates a new database in the existing instance. If an instance is displayed, click **Next**.  
 
     > [!IMPORTANT]  
-    >  A warning message appears if you are using the default collation \(SQL\_Latin1\_General\_CP1\_CI\_AS\). Support for multiple languages in Service Manager is not possible when you are using the default collation. If later you decide to support multiple languages using a different collation, you have to reinstall SQL&nbsp;Server. See "Microsoft SQL&nbsp;Server&nbsp;2008 with SP1" in the [Planning Guide for System Center - Service Manager](http://go.microsoft.com/fwlink/p/?LinkID=209672).  
+    >  A warning message appears if you are using the default collation \(SQL\_Latin1\_General\_CP1\_CI\_AS\). Support for multiple languages in Service Manager is not possible when you are using the default collation. If later you decide to support multiple languages using a different collation, you have to reinstall SQL&nbsp;Server. See [Planning Guide for System Center - Service Manager](../plan/plan-planning-for-system-center-2016-service-manager.md).  
 
 8.  On the **Configure the Service Manager management group** page, complete these steps:  
 
@@ -76,7 +76,7 @@ To install System Center - Service Manager on a single computer, you install the
 
 10. On the **Configure the Service Manager workflow account** page, click **Domain account**; specify the user name, password, and domain for the account; and then click **Test Credentials**. After you receive a "The credentials were accepted" message, click **Next**.  
 
-11. On the **Help improve System Center Service Manager** page, indicate your preference for participation in the Customer Experience Improvement Program. As an option, click **Tell me more about the program**, and then click **Next**.  
+11. On the **Diagnostic and usage data** page, indicate your preference for sharing your Service Manager diagnostic and usage data with Microsoft. As an option, click **Privacy statement for System Center Service Manager**, and then click **Next**.  
 
 12. On the **Use Microsoft Update to help keep your computer secure and up\-to\-date** page, indicate your preference for using Microsoft Update to check for Service Manager updates. If you want Windows Update to check for updates, select **Initiate machine wide Automatic update**. Click **Next**.  
 
@@ -98,10 +98,10 @@ To install System Center - Service Manager on a single computer, you install the
 
 6.  On the **System check results** page, make sure that the prerequisite check passed or at least passed with warnings, and then click **Next**.  
 
-7.  On the **Configure data warehouse databases** page, in the **Database server** box, type the computer name of the physical computer that will host the data warehouse databases, and then press the TAB key. When **Default** is displayed in the **SQL Server instance** box, click **Next**.  
+7.  On the **Configure data warehouse databases** page, in the **Database server** box, type the computer name of the physical computer that will host the data warehouse databases, the SQL server port, and Database name for all three data warehouse databases, then click **Next**.  
 
     > [!IMPORTANT]  
-    >  A warning message appears if you are using the default collation \(SQL\_Latin1\_General\_CP1\_CI\_AS\). Support for multiple languages in Service Manager is not possible when you are using the default collation. If later you decide to support multiple languages using a different collation, you have to reinstall SQL Server. For more information, see "Microsoft SQL&nbsp;Server&nbsp;2008 with SP1" in the [Planning Guide for System Center - Service Manager](http://go.microsoft.com/fwlink/p/?LinkID=209672).  
+    >  A warning message appears if you are using the default collation \(SQL\_Latin1\_General\_CP1\_CI\_AS\). Support for multiple languages in Service Manager is not possible when you are using the default collation. If later you decide to support multiple languages using a different collation, you have to reinstall SQL Server. For more information, see [Planning Guide for System Center - Service Manager](../plan/plan-planning-for-system-center-2016-service-manager.md).  
 
 8.  On the **Configure additional data warehouse datamarts** page, Service Manager will check the current computer to see if an instance of SQL&nbsp;Server exists. By default, if an instance is found, Service Manager creates a new database in the existing instance. If an instance appears, click **Next**.  
 
@@ -130,7 +130,7 @@ To install System Center - Service Manager on a single computer, you install the
     > [!NOTE]  
     >  The account that you specify here must have administrator rights on the computer that hosts SSRS.  
 
-15. On the **Help improve System Center Service Manager** page, indicate your preference for participation in the Customer Experience Improvement Program. As an option, click **Tell me more about the program**, and then click **Next**.  
+15. On the **Diagnostic and usage data** page, indicate your preference for sharing your Service Manager diagnostic and usage data with Microsoft. As an option, click **Privacy statement for System Center Service Manager**, and then click **Next**.  
 
 16. On the **Use Microsoft Update to help keep your computer secure and up\-to\-date** page, indicate your preference for using Microsoft Update to check for Service Manager updates. Select **Initiate machine wide Automatic update** if you want Windows Update to check for updates. Click **Next**.  
 
@@ -171,7 +171,7 @@ You can use the following procedures to validate the single\-computer installati
 
 ### To validate the Service Manager database  
 
-1.  On the physical computer, click **Start**, click **All Programs**, click **Microsoft SQL Server&nbsp;2008**, and then click **SQL Server Management Studio**.  
+1.  On the physical computer, click **Start**, click **All Programs**, click **Microsoft SQL Server&nbsp;2016**, and then click **SQL Server Management Studio**.  
 
 2.  In the **Connect to Server** dialog box, follow these steps:  
 
@@ -189,7 +189,7 @@ You can use the following procedures to validate the single\-computer installati
 
 ### To validate the data warehouse installation  
 
-1.  On the physical computer that hosts the data warehouse databases, click **Start**, click **All Programs**, click **Microsoft SQL&nbsp;Server&nbsp;2008**, and then click **SQL&nbsp;Server Management Studio**.  
+1.  On the physical computer that hosts the data warehouse databases, click **Start**, click **All Programs**, click **Microsoft SQL&nbsp;Server&nbsp;2016**, and then click **SQL&nbsp;Server Management Studio**.  
 
 2.  In the **Connect to Server** dialog box, complete these steps:  
 
