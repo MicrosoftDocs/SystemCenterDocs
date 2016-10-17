@@ -30,8 +30,6 @@ The new Self Service Portal is an ASP.NET MVC Razor\-based HTML5 Web app. During
 
 3.  The SDK Service reads and writes data to the Service Manager database.  
 
-> [!IMPORTANT]  
->  **If you are installing the new Portal on the same server as old SharePoint Portal**: This release of the Self\-Service Portal is not compatible with-nor is upgrade possible from-the old Self\-Service Portal in System Center Service Manager 2010 or in System Center Service Manager 2010 Service Pack 1 \(SP1\) or Service Manager 2012 R2. You must uninstall older versions of the Self\-Service Portal before you deploy the new Self\-Service Portal in System Center 2012 - Service Manager.  
 
 ## Preparing for Deployment  
  Review the following section to help you prepare for deployment.  
@@ -50,8 +48,10 @@ The new Self Service Portal is an ASP.NET MVC Razor\-based HTML5 Web app. During
 
  \*The requirements above provide access to 500 users in parallel within an acceptable response time, which includes average read operations with less than 3 seconds and write operations with less than 5 seconds, considering an 80:20 read\-to\-write ratio. For larger deployments, see the *Deploying a Web Farm* section below.  
 
-### Software Requirements  
- Windows Server 2012 R2  
+### Supported Operating System  
+ - Windows Server 2016
+
+ - Windows Server 2012 R2
 
 ### Supported Web Browsers  
  The Self Service portal needs a screen resolution above 1024 X 768.    It is supported on the following browsers.  
@@ -102,21 +102,6 @@ The new Self Service Portal is an ASP.NET MVC Razor\-based HTML5 Web app. During
 ## Troubleshooting Setup Issues  
  The following troubleshooting sections can help you resolve common issues.  
 
-### Unable to Install the New Self Service Portal After Uninstalling the Old Portal  
- You'll need to clean the registry of the previous installation for the installation to work. Use the following steps.  
-
-1.  Open Register Editor to search for the **SMPortalWebContentServer** key and delete all the instances you find. You can also delete the parent property if only the portal is found.  
-
-2.  Navigate to **HEKY\_LOCAL\_MACHINE\\SOFTWARE\\Microsoft\\System Center\\2010\\Service Manager\\Setup** and delete the following properties.  
-
-    -   **PortalWebSiteName**  
-
-    -   **PortalWebSitePort**  
-
-    -   **SMServerName**  
-
-3.  Manually delete the portal web site installation directory: \<InstallationDrive\>:\\inetpub\\wwwroot\\SelfServicePortal  
-
 ### IIS is not Installed  
  The Configuration page shows an IIS role error, even when IIS is enabled on the server.  
 
@@ -124,13 +109,13 @@ The new Self Service Portal is an ASP.NET MVC Razor\-based HTML5 Web app. During
 
  This happens when the installer is started without Administrator credentials. As a result, the installer cannot not access IIS configuration settings.  
 
- **Resolution**: Run SetupWizard.exe as an Administrator. You can right\-click SetupWizard.exe and then select Run as Administrator.  
+ **Resolution**: Run SetupWizard.exe as an Administrator. You can right\-click SetupWizard and then select Run as Administrator.  
 
 ## Troubleshooting the New Self\-Service Portal  
  This section describes how to troubleshoot issues you might encounter after installing the new Self Service Portal.  
 
 ### IIS Settings  
- The following portal default settings are configured during installation.  
+ The following portal default settings are configured during installation -  
 
 #### App Pool  
  It is configured to run in .NET CLR version 4 in Classic mode.  

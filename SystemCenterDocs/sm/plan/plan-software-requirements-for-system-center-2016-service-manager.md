@@ -22,7 +22,7 @@ This topic describes the software requirements for Service Manager in System Cen
 
 ## Software Requirements
 
- All basic software requirements for System Center 2016 Service Manager are listed at [System Requirements for System Center 2016](../../system-requirements/system-requirements-for-system-center-technical-preview.md).  
+ All basic software requirements for System Center 2016 Service Manager are listed at [System Requirements for System Center 2016](../../system-requirements/system-requirements.md).  
 
 > [!NOTE]  
 >  The Service Manager management server and data warehouse management server must be installed on the 64\-bit edition of the Windows operating system. The Service Manager console can be installed on both the 32\-bit and 64\-bit editions of Windows.  
