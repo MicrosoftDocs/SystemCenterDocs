@@ -19,7 +19,12 @@ ms.assetid:  18833e51-8624-463a-a2d7-cd3be75f2efb
 
 >Applies To: System Center 2016 - Service Manager
 
-The Self-Service Portal provides web-based access to the features of System Center 2016 - Service Manager. This article describes how you can deploy the Self-Service Portal and customize it.
+The Self-Service Portal provides web-based access to the features of System Center 2016 - Service Manager for end users. This article describes how you can deploy the Self-Service Portal and customize it.
+
+### Supported Operating System  
+ - Windows Server 2016
+
+ - Windows Server 2012 R2
 
 ## Supported Web Browsers
 The Self Service portal needs a screen resolution above 1024 X 768. It is supported on the following browsers.
@@ -36,7 +41,7 @@ The Self Service portal needs a screen resolution above 1024 X 768. It is suppor
 You'll use the following sections to set up the Self Service portal.
 
 ### Set up the Web Server
-Select a Windows 2012 R2 server. Join the server machine to the same domain where the Service Manager SDK Service is running. Ideally, on the primary or secondary server. Enable the IIS role and ASP.NET 4.5 on the server using following steps.
+Join the Windows server machine to the same domain where the Service Manager SDK Service is running. Ideally, on the primary or secondary server. Enable the IIS role and ASP.NET 4.5 on the server using following steps.
 
 1.  Start the Add Roles and Features Wizard and then enable IIS.
 
@@ -69,11 +74,10 @@ Select a Windows 2012 R2 server. Join the server machine to the same domain wher
 ### Install the Self Service Portal Webapp using Setup
 Use the following steps to install the Self Service Portal WebApp using Setup.
 
-1.  Run SetupWizard.exe in the Setup folder to start the Service Manager Setup Wizard. Under Install, click **Service Manager Self Service Portal**.
+1.  Click on **Service Manager Self Service Portal** in Service Manager 2016 setup wizard.
 
-    ![Install](../media/sm-ssp05.png)
 
-2.  Accept the EULA.
+2.  Go through the EULA and accept it.
 
     ![EULA](../media/sm-ssp06.png)
 

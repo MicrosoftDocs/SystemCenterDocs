@@ -28,9 +28,9 @@ This guide helps you deploy System Center - Service Manager in one of several di
 
 ## Deployment Guide Topics  
 
--   [Before You Deploy System Center - Service Manager](deploy-before-you-deploy-system-center-2016-service-manager.md)  
+-   [Planning Guide System Center - Service Manager](../plan/plan-planning-for-system-center-2016-service-manager.md)  
 
-     Contains preliminary information you must consider before you can deploy Service Manager.  
+     Contains information about the various parts of Service Manager, the hardware and software requirements, the port assignments, and the information about the accounts you must use to deploy Service Manager. it also contains information about the accounts that you need to create for use with Service Manager.
 
 -   [Turkish Language Collations](deploy-turkish-language-collations.md)  
 

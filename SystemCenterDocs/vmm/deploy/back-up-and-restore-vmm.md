@@ -4,7 +4,7 @@ title: Back up and restore VMM
 description: This article describes how to back up and restore the VMM database, and hosts and virtual machines in the VMM fabric
 author:  rayne-wiselman
 ms.author: raynew
-manager:  cfreemanwa
+manager:  cfreeman
 ms.date:  10/16/2016
 ms.topic:  article
 ms.prod:  system-center-threshold

@@ -99,4 +99,4 @@ This problem occurs because a .NET Framework 2.0 managed assembly that has an Au
 
 For additional information about the cause of this problem, see [Knowledgebase Article 936707](http://go.microsoft.com/fwlink/p/?LinkId=207190) in the Microsoft Knowledge Base.
 
-For information about possible workaround procedures, see [How to Work Around Configuration Service Startup Issues](https://technet.microsoft.com/en-us/library/hh519702(v=sc.12).aspx).
+For information about possible workaround procedures, see [How to Work Around Configuration Service Startup Issues](https://technet.microsoft.com/en-us/library/hh519702(v=sc.12)).
