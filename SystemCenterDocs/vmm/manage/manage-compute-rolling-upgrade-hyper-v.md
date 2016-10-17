@@ -5,7 +5,7 @@ description: This article provides guidance on upgrading Hyper-V host clusters
 author:  rayne-wiselman
 ms.author: raynew
 manager:  cfreeman
-ms.date:  2016-10-12
+ms.date:  10/16/2016
 ms.topic:  article
 ms.prod:  system-center-threshold
 ms.technology:  virtual-machine-manager

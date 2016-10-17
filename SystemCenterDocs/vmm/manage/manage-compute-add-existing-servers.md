@@ -4,8 +4,8 @@ title: Add Windows servers as Hyper-V hosts or clusters in the VMM fabric
 description: This article describes how to provision Windows server as Hyper-V hosts and cluster in the VMM fabric
 author:  rayne-wiselman
 ms.author: raynew
-manager:  cfreemanwa
-ms.date:  2016-09-22
+manager:  cfreeman
+ms.date:  10/16/2016
 ms.topic:  article
 ms.prod:  system-center-threshold
 ms.technology:  virtual-machine-manager
@@ -21,7 +21,7 @@ Read this article to learn about adding an existing Windows server as a Hyper-V 
 The article is relevant for adding Windows server computers with or without the Hyper-V role. If you add a Windows server that doesn't have Hyper-V installed, VMM will install the Hyper-V role as long as the server meets the prerequisites.
 
 
-### Before you start
+## Before you start
 
 The prerequisites for adding an existing Hyper-V host server or cluster depend on whether Hyper-V is installed and where the server is located.
 

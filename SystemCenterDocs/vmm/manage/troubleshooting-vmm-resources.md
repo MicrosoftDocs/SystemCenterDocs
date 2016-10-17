@@ -1,22 +1,22 @@
 ---
-description:  
-manager:  cfreeman
-ms.topic:  article
+ms.assetid:  d8bfec1d-83c8-44aa-a672-2dfc4f50074c
+title:  Troubleshooting VMM
+description:  This article summarizes troubleshooting resources available for VMM
 author:  rayne-wiselman
 ms.author: raynew
+manager:  cfreeman
+ms.date:  10/16/2016
+ms.topic:  article
 ms.prod:  system-center-threshold
-keywords:  
-ms.date:  2016-10-12
-title:  Troubleshooting VMM resources
 ms.technology:  virtual-machine-manager
-ms.assetid:  d8bfec1d-83c8-44aa-a672-2dfc4f50074c
 ---
+
 
 # Troubleshooting VMM resources
 
 >Applies To: System Center 2016 - Virtual Machine Manager
 
-The following troubleshooting resources for Virtual Machine Manager (VMM) are available on the TechNet Wiki:
+The following troubleshooting resources for System Center 2016 - Virtual Machine Manager (VMM) are available on the TechNet Wiki:
 
 Resource | Description
 --- | ---
