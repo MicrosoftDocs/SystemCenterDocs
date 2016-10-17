@@ -5,8 +5,7 @@ ms.prod: system-center-threshold
 ms.reviewer: na
 ms.suite: na
 ms.technology:
-  - orchestrator
-ms.tgt_pltfrm: na
+  - orchestratorms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 26c47873-fd45-4e28-a74e-58958de2e248
 author: cfreemanwa
@@ -17,7 +16,6 @@ manager: cfreeman
 # Administering System Center 2016 - Orchestrator
 
 > Apples To: System Center 2016 - Orchestrator
-
 System Center 2016 - Orchestrator is a workflow management solution for the datacenter that you can use to automate the creation, monitoring, and deployment of resources in your environment. This guide describes tasks that an administrator might have to perform to maintain a production Orchestrator environment.
 
 ## In This Guide
@@ -27,7 +25,6 @@ System Center 2016 - Orchestrator is a workflow management solution for the data
     Describes accessibility options in Orchestrator.
 
 -   [How to Change the Orchestrator Database](../manage/how-to-change-the-orchestrator-database.md)
-
     Describes how to change the location of the orchestration database.
 
 -   [How to Change the Orchestrator Users Group](../manage/how-to-change-the-orchestrator-users-group.md)
@@ -72,4 +69,4 @@ System Center 2016 - Orchestrator is a workflow management solution for the data
 
 -   [Using Runbooks in System Center 2016 - Orchestrator](../get-started/using-runbooks-in-system-center-2016---orchestrator.md)
 
--   [Using the Orchestration Console in System Center 2016 - Orchestrator](../get-started/using-the-orchestration-console-in-system-center-2016---orchestrator.md)
+-   [Using the Orchestration Console in System Center 2016 - Orchestrator](../get-started/using-the-console.md)
