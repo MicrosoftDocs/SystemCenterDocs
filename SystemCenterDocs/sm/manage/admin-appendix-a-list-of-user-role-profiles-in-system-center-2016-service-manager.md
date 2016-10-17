@@ -18,258 +18,169 @@ ms.assetid:  38118405-3578-4e36-b5ec-e1cc5326e161
 
 This appendix provides detailed information about the scope and properties of user role profiles in Service Manager.
 
-## Tabs in the Administrator Console
-
-The table below shows the tabs and order that they appear in the console.
-
-| User roles | Tab order in Console |
-| --- | --- |
-| activity implementer | 1. Work Items <br> 2. Configurations |
-| advanced operator | 1. Library <br> 2. Work Items <br> 3. Configurations |
-| author | 1. Library <br> 2. Work Items <br> 3. Configurations |
-| change initiator | 1. Work Items <br> 2. Configurations |
-| change manager | 1. Work Items <br> 2. Configurations |
-| incident resolver | 1. Work Items <br> 2. Configurations |
-| problem analysts | 1. Work Items 2. Configurations |
-
-## Default User Roles
-
-| action | allowed roles |
-| --- | --- |
-| read knowledge articles | activity implementer, advanced operator, author, change initiator, change manager, end user, incident resolver, problem analyst, read only operator, release manager, service request analyst, workflow |
-| edit knowledge articles | advanced operator, author |
-| create knowledge articles | advanced operator, author |
-| delete knowledge article | advanced operator, author |
-| create change requests and activities | advanced operator, author, change initiator, change manager, workflow |
-| create incident and activities | advanced operator, author, incident resolver, workflow |
-| create problem records | advanced operator, author, problem analyst, workflow |
-| create release records | advanced operator, author, release manager, workflow |
-| create service requests and activities | advanced operator, author, service request analyst, workflow |
-| edit change requests | advanced operator, author, change manager, workflow |
-| edit incidents | advanced operator, author, incident resolver, workflow |
-| edit problem records | advanced operator, author, problem analyst, workflow |
-| edit release records | advanced operator, author, release manager, workflow |
-| edit service requests | advanced operator, author, service request analyst, workflow |
-| update status for change requests | advanced operator, author, change manager, workflow |
-| update status for incidents | advanced operator, author, incident resolver, workflow |
-| update status for service requests | advanced operator, author, service request analyst, workflow |
-| update status for manual activity | advanced operator, author, change manager, incident resolver, release manager, service request analyst, workflow |
-| update status for review activity | advanced operator, author, change manager, incident resolver, release manager, service request analyst, workflow |
-| create CIs | advanced operator, author, workflow |
-| update CIs | advanced operator, author, workflow |
-| delete CIs | advanced operator, author, workflow |
-| create user preference | advanced operator, author, workflow |
-| update user preference | advanced operator, author, release manager, service request analyst, workflow |
-| create work item log | advanced operator, author, author, change initiator, change manager, incident resolver, problem analyst, release manager, service request analyst, workflow |
-| update work item log | advanced operator, author, author, change initiator, change manager, incident resolver, problem analyst, release manager, service request analyst, workflow |
-
-## Default user role relationships in Service Manager
-
-WorkItemAboutConfigItem -&gt; ConfigurationItem
-
-- change requests - change manager
-- incident records - incident resolver
-- problem records - problem analyst
-- release record - release manager
-- service request - service request analyst
-
-WorkItemRelatesToConfigItem &gt; ConfigurationItem
-
-- change request – change manager
-- incident record – incident resolver
-- problem record – problem analyst
-- release record – release manager
-- service request – service request analyst
-
-EntityLinksToKnowledgeDocument &gt; ConfigurationItem
-
-- change request – change manager
-- incident record – incident resolver
-- problem record – problem analyst
-- release record – release manager
-- service request – service request analyst
-
-WorkItemRelatesToWorkItem &gt; WorkItem
-
-- change request – change manager
-- incident record – incident resolver
-- problem record – problem analyst
-- release record – release manager
-- service request – service request analyst
-
-UserHasPreference-&gt;User
-
-- activity implementer
-- advanced operator
-- author
-- incident resolver
-- problem analysts
-- release manager
-- service request analyst
-
-WorkItemAffectedUser
-
-- incident record – advanced operator, author, incident resolver
-- service request – advanced operator, author, service request analyst
-
-WorkItemAssignedToUser
-
-- change request – advanced operator, author, change manager
-- incident record – advanced operator, author, incident resolver
-- problem record - advanced operator, author, problem analyst
-- release record - advanced operator, author, release manager
-- service request - advanced operator, author, service request analyst
-
-WorkItemCreatedByUser
-
-- change request - advanced operator, author,
-
-FileAttachmentAddedByUser
-
-- change request - advanced operator, author, change manager
-- incident record - advanced operator, author, incident resolver
-- problem record - advanced operator, author, problem analyst
-- release record - advanced operator, author, release manager
-- service request - advanced operator, author, service request analyst
-
-BillableTimeHasWorkingUser
-
-- incident record – activity implementer, advanced operator, author, incident resolver
-
-IncidentPrimaryOwner
-
-- incident record - advanced operator, author, incident resolver
-
-TroubleTicketResolvedByUser
-
-- change request - advanced operator, author, change manager
-- incident record - advanced operator, author, incident resolver
-- problem record - advanced operator, author, problem analyst
-- release record - advanced operator, author
-- service request - advanced operator, author
-
-TroubleTicketClosedByUser
-
-- change request - advanced operator, author, change manager
-- incident record - advanced operator, author, incident resolver
-- problem record - advanced operator, author, problem analyst
-- release record - advanced operator, author,
-- service request - advanced operator, author,
-
-ReviewerIsUser
-
-- review activity - advanced operator, author, change manager, release manager, service request analyst
-
-ReviewerVotedByUse
-
-- review activity - advanced operator, author, change manager, release manager, service request analyst
-
-WorkItemRelatesToRequestOffering &gt; RequestOffering
-
-- advanced operator
-- author
-
-ServiceOfferingRelatesToRequestOffering &gt; RequestOffering
-
-- author
-
-## Implied Permissions
-
-Implied Incident Affected User
-
-- read – activity implementer, advanced operator, author, change initiator, change manager, incident resolver, problem analyst, read only operator, release manager, service request analyst, workflow
-- create - activity implementer, advanced operator, author, change initiator, change manager, incident resolver, problem analyst, read only operator, release manager, service request analyst, workflow
-- update - activity implementer, advanced operator, author, change initiator, change manager, incident resolver, problem analyst, read only operator, release manager, service request analyst, workflow
-- delete - activity implementer, advanced operator, author, change initiator, change manager, incident resolver, problem analyst, read only operator, release manager, service request analyst, workflow
-
-Implied Reviewer
-
-- read - activity implementer, advanced operator, author, change initiator, change manager, incident resolver, problem analyst, read only operator, release manager, service request analyst, workflow
-- create – not applicable
-- update - not applicable
-- delete - not applicable
-
-Implied Activity Editor
-
-- read - activity implementer, advanced operator, author, change initiator, change manager, incident resolver, problem analyst, read only operator, release manager, service request analyst, workflow
-- create – advanced operator, author, workflow
-- update - advanced operator, author, incident resolver, workflow
-- delete - activity implementer, advanced operator, author, change initiator, change manager, incident resolver, problem analyst, read only operator, release manager, service request analyst, workflow
-
-Implied ConfigItem Custodian
-
-- read - activity implementer, advanced operator, author, change initiator, change manager, incident resolver, problem analyst, read only operator, release manager, service request analyst, workflow
-- create - not applicable
-- update - not applicable
-- delete - not applicable
-
-Implied Primary Computer User
-
-- read - activity implementer, advanced operator, author, change initiator, change manager, incident resolver, problem analyst, read only operator, release manager, service request analyst, workflow
-- create – not applicable
-- update - not applicable
-- delete - not applicable
-
-## Implied Incident Affected User
-
-Create work items
-
-- activity implementer
-- advanced operator
-- author
-- change initiator
-- change manager
-- incident resolver
-- problem analyst
-- read only operator
-- release manager
-- service request analyst
-- workflow
-
-Delete work items
-
-- activity implementer
-- advanced operator
-- author
-- change initiator
-- change manager
-- incident resolver
-- problem analyst
-- read only operator
-- release manager
-- service request analyst
-- workflow
-
-Relationships
-
-- Create – activity implementer, advanced operator, author, change initiator, change manager, incident resolver, problem analyst, read only operator, release manager, service request analyst, workflow
-- Update – activity implementer, advanced operator, author, change initiator, change manager, incident resolver, problem analyst, read only operator, release manager, service request analyst, workflow
-- Delete – activity implementer, advanced operator, author, change initiator, change manager, incident resolver, problem analyst, read only operator, release manager, service request analyst, workflow
-
-## Implied Reviewer
-
-- Create activity – activity implementer, change initiator, incident resolver, problem analyst, read only operator
-- Update activity – activity implementer, change initiator, incident resolver, problem analyst, read only operator
-- Delete activity – activity implementer, change initiator, incident resolver, problem analyst, read only operator
-- Relationship update - activity implementer, advanced operator, author, change initiator, change manager, incident resolver, problem analyst, read only operator, release manager, service request analyst, workflow
-
-## Implied Activity Editor
-
-- Create activity – advanced operator, author, workflow
-- Update activity – advanced operator, author, incident resolver, workflow
-- Delete activity – activity implementer, advanced operator, author, change initiator, change manager, incident resolver, problem analyst, read only operator, release manager, service request analyst, workflow
-- Relationship create – advanced operator, author, workflow
-- Relationship update – advanced operator, author, incident resolver, workflow
-
-## Implied Configuration Item Custodian
-
-- Create configuration item – activity implementer, change initiator, change manager, incident resolver, problem analyst, read only operator, release manager, service request analyst
-- Update configuration item – activity implementer, change initiator, change manager, incident resolver, problem analyst, read only operator, release manager, service request analyst
-- Delete configuration item – activity implementer, change initiator, change manager, incident resolver, problem analyst, read only operator, release manager, service request analyst
-- Relationship update – advanced operator, author, workflow
-
-## Implied Primary Computer User
-
-- Create configuration item – activity implementer, change initiator, change manager, incident resolver, problem analyst, read only operator, release manager, service request analyst
-- Update configuration item – Create configuration item – activity implementer, change initiator, change manager, incident resolver, problem analyst, read only operator, release manager, service request analyst
-- Create configuration item – activity implementer, change initiator, change manager, incident resolver, problem analyst, read only operator, release manager, service request analyst
+## EndUser
+
+|Operation|Instance Type Scope|Properties|Relationships|Presentational Elements Scope|
+|-------------|-----------------------|--------------|-----------------|---------------------------------|
+|Read|All|All|All|Object Templates|
+|Create|-   Work Item<br />-   Work Item Log<br />-   File Attachment<br />-   Reviewer<br />-   User Preference|All for the specified types.|All for the specified types.|None|
+|Update|-   File Attachment<br />-   Work Item Log<br />-   Star Rating|All for the specified types.|-   DocumentHasAverageRating->KnowledgeArticle<br />-   UserHasPreference->User<br />-   WorkItemAffectedUser->User<br />-   WorkItemAssignedToUser->User<br />-   WorkItemCreatedByUser->User<br />-   FileAttachmentAddedByUser->User<br />-   BillableTimeHasWorkingUser->User<br />-   IncidentPrimaryOwner->User<br />-   TroubleTicketResolvedByUser->User<br />-   TroubleTicketClosedByUser->User<br />-   ReviewerIsUser->User<br />-   ReviewerVotedByUser->User<br />-   WorkItemRelatesToWorkItem->WorkItem<br />-   WorkItemRelatesToRequestOffering->RequestOffering<br />-   WorkItemRelatesToConfigItem->ConfigurationItem<br />-   WorkItemAboutConfigItem->ConfigurationItem|None|
+|Delete|None|None|None|None|
+
+## ReadOnlyOperator
+
+|Operation|Instance Type Scope|Properties|Relationships|Presentational Elements Scope|
+|-------------|-----------------------|--------------|-----------------|---------------------------------|
+|Read|All|All|All|All|
+|Create|-   User Preference<br />-   Personal Notification|All for the specified types.|All for the specified types.|None|
+|Update|||-   WorkItemAboutConfigItem->ConfigurationItem<br />-   WorkItemRelatesToConfigItem->ConfigurationItem<br />-   EntityLinksToKnowledgeDocument->ConfigurationItem<br />-   UserHasPreference->User<br />-   WorkItemAffectedUser->User<br />-   WorkItemAssignedToUser->User<br />-   WorkItemCreatedByUser->User<br />-   FileAttachmentAddedByUser->User<br />-   BillableTimeHasWorkingUser->User<br />-   IncidentPrimaryOwner->User<br />-   TroubleTicketResolvedByUser->User<br />-   TroubleTicketClosedByUser->User<br />-   ReviewerIsUser->User<br />-   ReviewerVotedByUser->User<br />-   WorkItemRelatesToRequestOffering->RequestOffering<br />-   WorkItemRelatesToWorkItem->WorkItem|None|
+|Delete|None|None|None|None|
+
+## IncidentResolver
+
+|Operation|Instance Type Scope|Properties|Relationships|Presentational Elements Scope|
+|-------------|-----------------------|--------------|-----------------|---------------------------------|
+|Read|All|All|All|All|
+|Create|-   Incident<br />-   Manual Activity<br />-   File Attachment<br />-   Work Item Log<br />-   User Preference<br />-   Personal Notification|All for the specified types.|All for the specified types.|None|
+|Update|-   File Attachment<br />-   Work Item Log<br />-   Manual Activity<br />-   Star Rating|All for the specified types.|-   WorkItemAboutConfigItem->ConfigurationItem<br />-   WorkItemRelatesToConfigItem->ConfigurationItem<br />-   EntityLinksToKnowledgeDocument->ConfigurationItem<br />-   WorkItemRelatesToWorkItem->WorkItem<br />-   DocumentHasAverageRating->KnowledgeArticle<br />-   UserHasPreference->User<br />-   WorkItemAffectedUser->User<br />-   WorkItemAssignedToUser->User<br />-   WorkItemCreatedByUser->User<br />-   FileAttachmentAddedByUser->User<br />-   WorkItem.BillableTimeHasWorkingUser->User<br />-   WorkItem.IncidentPrimaryOwner->User<br />-   WorkItem.TroubleTicketResolvedByUser->User<br />-   WorkItem.TroubleTicketClosedByUser->User<br />-   ReviewerIsUser->User<br />-   ReviewerVotedByUser->User|None|
+|Delete|-   File Attachment<br />-   Manual Activity|All for the specified types.|All for the specified types.|None|
+
+## ChangeInitiator
+
+|Operation|Instance Type Scope|Properties|Relationships|Presentational Elements Scope|
+|-------------|-----------------------|--------------|-----------------|---------------------------------|
+|Read|All|All|All|All|
+|Create|-   Change Request<br />-   Activity<br />-   File Attachment<br />-   Work Item Log<br />-   Reviewer<br />-   User Preference<br />-   Personal Notification|All for the specified types.|All for the specified types.|None|
+|Update|Star Rating|All for the specified types.|-   WorkItemAboutConfigItem->ConfigurationItem<br />-   WorkItemRelatesToConfigItem->ConfigurationItem<br />-   EntityLinksToKnowledgeDocument->ConfigurationItem<br />-   WorkItemRelatesToWorkItem->WorkItem<br />-   DocumentHasAverageRating->KnowledgeArticle<br />-   UserHasPreference->User<br />-   WorkItemAffectedUser->User<br />-   WorkItemAssignedToUser->User<br />-   WorkItemCreatedByUser->User<br />-   FileAttachmentAddedByUser->User<br />-   BillableTimeHasWorkingUser->User<br />-   IncidentPrimaryOwner->User<br />-   TroubleTicketResolvedByUser->User<br />-   TroubleTicketClosedByUser->User<br />-   ReviewerIsUser->User<br />-   ReviewerVotedByUser->User<br />-   WorkItemAboutCatalogItem->CatalogItem|None|
+|Delete|None|None|None|None|
+
+## ActivityImplementer
+
+|Operation|Instance Type Scope|Properties|Relationships|Presentational Elements Scope|
+|-------------|-----------------------|--------------|-----------------|---------------------------------|
+|Read|All|All|All|All|
+|Create|-   User Preference<br />-   Personal Notification|All for the specified types.|All for the specified types.|None|
+|Update|Star Rating|-   ManualActivity. Status<br />-   ManualActivity.Notes|-   WorkItemAboutConfigItem->ConfigurationItem<br />-   WorkItemRelatesToConfigItem->ConfigurationItem<br />-   EntityLinksToKnowledgeDocument->ConfigurationItem<br />-   WorkItemRelatesToWorkItem->WorkItem<br />-   DocumentHasAverageRating->KnowledgeArticle<br />-   UserHasPreference->User<br />-   WorkItemAffectedUser->User<br />-   WorkItemAssignedToUser->User<br />-   WorkItemCreatedByUser->User<br />-   FileAttachmentAddedByUser->User<br />-   BillableTimeHasWorkingUser->User<br />-   IncidentPrimaryOwner->User<br />-   TroubleTicketResolvedByUser->User<br />-   TroubleTicketClosedByUser->User<br />-   ReviewerIsUser->User<br />-   ReviewerVotedByUser->User|None|
+|Delete|None|None|None|None|
+
+## ProblemAnalyst
+
+|Operation|Instance Type Scope|Properties|Relationships|Presentational Elements Scope|
+|-------------|-----------------------|--------------|-----------------|---------------------------------|
+|Read|All|All|All|All|
+|Create|-   Problem<br />-   File Attachment<br />-   Work Item Log<br />-   User Preference<br />-   Personal Notification|All for the specified types.|All for the specified types.|None|
+|Update|-   Problem<br />-   File Attachment<br />-   Work Item Log<br />-   Star Rating|All for the specified types.|-   WorkItemAboutConfigItem->ConfigurationItem<br />-   WorkItemRelatesToConfigItem->ConfigurationItem<br />-   EntityLinksToKnowledgeDocument->ConfigurationItem<br />-   WorkItemRelatesToWorkItem->WorkItem<br />-   DocumentHasAverageRating->KnowledgeArticle<br />-   UserHasPreference->User<br />-   WorkItemAffectedUser->User<br />-   WorkItemAssignedToUser->User<br />-   WorkItemCreatedByUser->User<br />-   FileAttachmentAddedByUser->User<br />-   BillableTimeHasWorkingUser->User<br />-   IncidentPrimaryOwner->User<br />-   TroubleTicketResolvedByUser->User<br />-   TroubleTicketClosedByUser->User<br />-   ReviewerIsUser->User<br />-   ReviewerVotedByUser->User|None|
+|Delete|File Attachment|All for the specified types.|All for the specified types.|None|
+
+## ServiceRequestAnalyst
+
+|Operation|Instance Type Scope|Properties|Relationships|Presentational Elements Scope|
+|-------------|-----------------------|--------------|-----------------|---------------------------------|
+|Read|All|All|All|All|
+|Create|All for the specified types.|All for the specified types.|All for the specified types.|None|
+|Update|-   Service Request<br />-   Activity<br />-   File Attachment<br />-   Work Item Log<br />-   Reviewer<br />-   Star Rating||-   WorkItemAboutConfigItem->ConfigurationItem<br />-   WorkItemRelatesToConfigItem->ConfigurationItem<br />-   EntityLinksToKnowledgeDocument->ConfigurationItem<br />-   WorkItemRelatesToWorkItem->WorkItem<br />-   Knowledge.DocumentHasAverageRating->KnowledgeArticle<br />-   WorkItemAffectedUser->User<br />-   UserHasPreference->User<br />-   WorkItemAssignedToUser->User<br />-   WorkItemCreatedByUser->User<br />-   FileAttachmentAddedByUser->User<br />-   ReviewerIsUser->User<br />-   ReviewerVotedByUser->User<br />-   WorkItemRelatesToRequestOffering->RequestOffering|None|
+|Delete|-   Activity<br />-   File Attachment<br />-   Reviewer|All for the specified types.|All for the specified types.|None|
+
+## ReleaseManager
+
+|Operation|Instance Type Scope|Properties|Relationships|Presentational Elements Scope|
+|-------------|-----------------------|--------------|-----------------|---------------------------------|
+|Read|All|All|All|All|
+|Create|-   Release Record<br />-   Activity<br />-   File Attachment<br />-   Work Item Log<br />-   Reviewer<br />-   User Preference<br />-   Personal Notification|All for the specified types.|All for the specified types.|None|
+|Update|-   Release Record<br />-   Activity<br />-   File Attachment<br />-   Work Item Log<br />-   Reviewer<br />-   Star Rating|All for the specified types.|-   WorkItemAboutConfigItem->ConfigurationItem<br />-   WorkItemRelatesToConfigItem->ConfigurationItem<br />-   EntityLinksToKnowledgeDocument->ConfigurationItem<br />-   WorkItemRelatesToWorkItem->WorkItem<br />-   DocumentHasAverageRating->KnowledgeArticle<br />-   WorkItemAffectedUser->User<br />-   UserHasPreference->User<br />-   WorkItemAssignedToUser->User<br />-   WorkItemCreatedByUser->User<br />-   FileAttachmentAddedByUser->User<br />-   ReviewerIsUser->User<br />-   ReviewerVotedByUser->User|None|
+|Delete|-   Activity<br />-   File Attachment<br />-   Reviewer|All for the specified types.|All for the specified types.|None|
+
+## ChangeManager
+
+|Operation|Instance Type Scope|Properties|Relationships|Presentational Elements Scope|
+|-------------|-----------------------|--------------|-----------------|---------------------------------|
+|Read|All|All|All|All|
+|Create|-   Change Request<br />-   Activity<br />-   File Attachment<br />-   Work Item Log<br />-   Reviewer<br />-   User Preference<br />-   Personal Notification|All for the specified types.|All for the specified types.|None|
+|Update|-   Change Request<br />-   Change Request<br />-   Activity<br />-   File Attachment<br />-   Work Item Log<br />-   Reviewer<br />-   Star Rating|All for the specified types.|-   WorkItemAboutConfigItem->ConfigurationItem<br />-   WorkItemRelatesToConfigItem->ConfigurationItem<br />-   EntityLinksToKnowledgeDocument->ConfigurationItem<br />-   WorkItemRelatesToWorkItem->WorkItem<br />-   Knowledge.DocumentHasAverageRating->KnowledgeArticle<br />-   WorkItemAffectedUser->User<br />-   UserHasPreference->User<br />-   WorkItemAssignedToUser->User<br />-   WorkItemCreatedByUser->User<br />-   FileAttachmentAddedByUser->User<br />-   WorkItem.BillableTimeHasWorkingUser->User<br />-   WorkItem.IncidentPrimaryOwner->User<br />-   WorkItem.TroubleTicketResolvedByUser->User<br />-   WorkItem.TroubleTicketClosedByUser->User<br />-   ReviewerIsUser->User<br />-   ReviewerVotedByUser->User<br />-   WorkItemAboutCatalogItem ->CatalogItem|None|
+|Delete|-   Activity<br />-   File Attachment<br />-   Reviewer|All for the specified types.|All for the specified types.|None|
+
+## AdvancedOperator
+
+|Operation|Instance Type Scope|Properties|Relationships|Presentational Elements Scope|
+|-------------|-----------------------|--------------|-----------------|---------------------------------|
+|Read|All|All|All|All|
+|Create|-   Work Item<br />-   Configuration Item<br />-   Announcement<br />-   File Attachment<br />-   Work Item Log<br />-   Reviewer<br />-   User Preference<br />-   Personal Notification|All for the specified types.|All for the specified types.|None|
+|Update|-   Work Item<br />-   Configuration Item<br />-   Announcement<br />-   File Attachment<br />-   Work Item Log<br />-   Reviewer<br />-   User Preference|All for the specified types.|-   Knowledge.DocumentHasAverageRating->KnowledgeArticle<br />-   UserHasPreference->User<br />-   WorkItemAffectedUser->User<br />-   WorkItemAssignedToUser->User<br />-   WorkItemCreatedByUser->User<br />-   FileAttachmentAddedByUser->User<br />-   BillableTimeHasWorkingUser->User<br />-   IncidentPrimaryOwner->User<br />-   TroubleTicketResolvedByUser->User<br />-   TroubleTicketClosedByUser->User<br />-   ReviewerIsUser->User<br />-   ReviewerVotedByUser->User<br />-   WorkItemRelatesToRequestOffering->RequestOffering|None|
+|Delete|-   Announcement<br />-   Activity<br />-   Reviewer<br />-   File Attachment|All for the specified types.|All for the specified types.|None|
+
+## Author
+
+|Operation|Instance Type Scope|Properties|Relationships|Presentational Elements Scope|
+|-------------|-----------------------|--------------|-----------------|---------------------------------|
+|Read|All|All|All|All|
+|Create|-   Work Item<br />-   Configuration Item<br />-   Catalog Item<br />-   Announcement<br />-   File Attachment<br />-   Work Item Log<br />-   Reviewer<br />-   User Preference<br />-   Personal Notification|All for the specified types.|All for the specified types.|-   Template<br />-   View<br />-   Folder<br />-   Enumeration|
+|Update|-   Work Item<br />-   Configuration Item<br />-   Catalog Item<br />-   Announcement<br />-   File Attachment<br />-   Work Item Log<br />-   Reviewer<br />-   Star Rating||-   DocumentHasAverageRating->KnowledgeArticle<br />-   UserHasPreference->User<br />-   WorkItemAffectedUser->User<br />-   WorkItemAssignedToUser->User<br />-   WorkItemCreatedByUser->User<br />-   FileAttachmentAddedByUser->User<br />-   BillableTimeHasWorkingUser->User<br />-   IncidentPrimaryOwner->User<br />-   TroubleTicketResolvedByUser->User<br />-   TroubleTicketClosedByUser->User<br />-   ReviewerIsUser->User<br />-   ReviewerVotedByUser->User<br />-   ServiceOfferingRelatesToRequestOffering->RequestOffering|-   Template<br />-   View<br />-   Folder<br />-   Enumeration|
+|Delete|-   Activity<br />-   Reviewer<br />-   File Attachment<br />-   Announcement|All for the specified types.|All for the specified types.|-   Template<br />-   View<br />-   Folder<br />-   Enumeration|
+
+## Workflow
+
+|Operation|Instance Type Scope|Properties|Relationships|Presentational Elements Scope|
+|-------------|-----------------------|--------------|-----------------|---------------------------------|
+|Read|All|All|All|All|
+|Create|-   Work Item<br />-   Configuration Item<br />-   Announcement<br />-   File Attachment<br />-   Work Item Log<br />-   Reviewer<br />-   SLA Information<br />-   Admin Item SLA<br />-   User Preference|All for the specified types.|All for the specified types.|None|
+|Update|-   Work Item<br />-   Configuration Item<br />-   Announcement<br />-   File Attachment<br />-   Work Item Log<br />-   Reviewer<br />-   SLA Information<br />-   Admin Item SLA<br />-   Star Rating|-   System.Knowledge.DocumentHasAverageRating<br />-   System.UserHasPreference<br />-   System.WorkItemAffectedUser<br />-   System.WorkItemAssignedToUser<br />-   System.WorkItemCreatedByUser<br />-   System.FileAttachmentAddedByUser<br />-   System.WorkItem.BillableTimeHasWorkingUser<br />-   System.WorkItem.IncidentPrimaryOwner<br />-   System.WorkItem.TroubleTicketResolvedByUser<br />-   System.WorkItem.TroubleTicketClosedByUser<br />-   System.ReviewerIsUser<br />-   System.ReviewerVotedByUser|None|
+|Delete|DCM_NonCompliance_CI|All for the specified types.|All for the specified types.|None|
+
+## ReportUser
+
+|Operation|Instance Type Scope|Properties|Relationships|Presentational Elements Scope|
+|-------------|-----------------------|--------------|-----------------|---------------------------------|
+|Read|SRS Resource Store|All for the specified type|All for the specified type|None|
+|Create|Personal Notification|All for the specified type|All for the specified type|None|
+|Update|None|None|None|None|
+|Delete|None|None|None|None|
+
+## ImpliedIncidentAffectedUser
+The permissions for the implied Affected User profile are granted through the WorkItemAffectedUser relationship.
+
+|Operation|Type|Property|Relationship|
+|-------------|--------|------------|----------------|
+|Read|Incident or service request instances, and anything that is contained within.|All properties of an incident instance.|All relationships that include the incident or service request instance.|
+|Create|Work items that the user is affected by:<br /><br />-   Work item log<br />-   File attachment|All properties of a work item log and a file attachment for the incident or service request instance.|File attachment for an incident or service request instance.|
+|Update|Work items that the user is affected by:<br /><br />-   Incident<br />-   Service request<br />-   Work item log<br />-   File attachment|All properties of an incident or service request instance.|Incident instance BillableTimeHasWorkingUser->User.|
+|Delete|Work item that the user is affected by -  File attachment|File attachment for an incident or service request instance.|File attachment for an incident or service request instance.|
+
+## ImpliedReviewer
+The permissions for the implied Review Activity Reviewer profile are granted through the ReviewerIsUser relationship.
+
+|Operation|Type|Property|Relationship|
+|-------------|--------|------------|----------------|
+|Read|Reviewer instances and anything that is contained within.|All properties of a Reviewer instances and anything that is contained within.|All relationships that include the Reviewer instance, and anything that is contained within.|
+|Create|None|None|None|
+|Update|None|Reviewer instances:<br /><br />-   Reviewer.Comments<br />-   Reviewer.DecisionDate<br />-   Reviewer.Decision|Reviewer Instances:<br /><br />-   ReviewerVotedByUser->User<br />-   ReviewerVotedByUser->Reviewer|
+|Delete|None|None|None|
+
+## ImpliedActivityEditor
+The permissions for the implied Assigned To User profile are granted through the WorkItemAssignedToUser relationship.
+
+|Operation|Type|Property|Relationship|
+|-------------|--------|------------|----------------|
+|Read|Activity instances and anything that is contained in it.|None|None|
+|Create|Work item instances that the user is assigned to:<br /><br />-   Activity<br />-   Reviewer|All properties of Activity and Reviewer instances that are related to a work item instance.|All the Activity and Reviewer instances that are related to a work item Instance.|
+|Update|Work item instances that the user is assigned to: Activity|All properties of an activity and the work item instances.|All Activity instances that are related to the work item Instance.|
+|Delete|None|None|None|
+
+## ImpliedConfigItemCustodian
+The permissions for the implied **CI Owner** profile are granted through the **ConfigItemOwnedByUser** relationship.
+
+|Operation|Type|Property|Relationship|
+|-------------|--------|------------|----------------|
+|Read|Configuration item instances and anything that is contained within.|All properties of a configuration item instance and anything that is contained in it.|All relationships that include a configuration item instance, and anything that is contained in it.|
+|Create|None|None|None|
+|Update|None|None|Configuration item Instance - WorkItemAboutConfigItem|
+|Delete|None|None|None|
+
+## ImpliedPrimaryComputerUser
+The permissions for the implied CI Primary User profile are granted through the ComputerPrimaryUser relationship.
+
+|Operation|Type|Property|Relationship|
+|-------------|--------|------------|----------------|
+|Read|Configuration item instances and anything that is contained within.|All properties of a configuration item instance and anything that is contained within.|All relationships that include the configuration item instance and anything that is contained within.|
+|Create|None|None|None|
+|Update|None|None|None|
+|Delete|None|None|None|

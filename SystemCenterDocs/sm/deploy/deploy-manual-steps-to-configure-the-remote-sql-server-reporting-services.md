@@ -26,29 +26,22 @@ During deployment of the Service Manager data warehouse management server, you c
 
 -   Add an Extension tag to the existing Data segment in the rsreportserver configuration file on the same computer.  
 
- If you used the default instance of SQL&nbsp;Server, use Windows&nbsp;Explorer to drag Microsoft.EnterpriseManagement.Reporting.Code.dll \(which is located in the Prerequisites folder on your Service Manager installation media\) to the folder \\Program Files\\Microsoft SQL Server\\MSRS10.MSSQLSERVER\\Reporting Services\\ReportServer\\Bin on the computer that is hosting SSRS. If you did not use the default instance of SQL&nbsp;Server, the path of the required folder is \\Program Files\\Microsoft SQL Server\\MSRS10.\<INSTANCE\_NAME\>\\Reporting Services\\ReportServer\\Bin. In the following procedure, the default instance name is used.  
+ If you used the default instance of SQL&nbsp;Server, use Windows&nbsp;Explorer to drag Microsoft.EnterpriseManagement.Reporting.Code.dll \(which is located in the Prerequisites folder on your Service Manager installation media\) to the folder \\Program Files\\Microsoft SQL Server\\MSRS13.MSSQLSERVER\\Reporting Services\\ReportServer\\Bin on the computer that is hosting SSRS. If you did not use the default instance of SQL&nbsp;Server, the path of the required folder is \\Program Files\\Microsoft SQL Server\\MSRS13.\<INSTANCE\_NAME\>\\Reporting Services\\ReportServer\\Bin. In the following procedure, the default instance name is used.  
 
 ### To copy the Microsoft.EnterpriseManagement.Reporting.Code.dll file  
 
 1.  On the computer that will host the remote SSRS, open an instance of Windows&nbsp;Explorer.  
 
-2.  Perform one of the following steps based on which version of SQL&nbsp;Server&nbsp;2008 you are using:  
-
-    1.  For SQL&nbsp;Server&nbsp;2008 Service Pack&nbsp;1 \(SP1\), locate the folder \\Program Files\\Microsoft SQL Server\\MSRS10.MSSQLSERVER\\Reporting Services\\ReportServer\\Bin.  
-
-    2.  For SQL&nbsp;Server&nbsp;2008&nbsp;R2, locate the folder \\Program Files\\Microsoft SQL Server\\MSRS10\_50.MSSQLSERVER\\Reporting Services\\ReportServer\\Bin.  
+2.  For SQL&nbsp;Server&nbsp;2016, locate the folder \\Program Files\\Microsoft SQL Server\\MSRS13.MSSQLSERVER\\Reporting Services\\ReportServer\\Bin.  
 
 3.  Start a second instance of Windows Explorer, locate the drive that contains the Service Manager installation media, and then open the Prerequisites folder.  
 
-4.  In the Prerequisites folder, click **Microsoft.EnterpriseManagement.Reporting.Code.dll**, and drag it to the folder that you located in either step&nbsp;2a or step&nbsp;2b.  
+4.  In the Prerequisites folder, click **Microsoft.EnterpriseManagement.Reporting.Code.dll**, and drag it to the folder that you located in either step 2.  
 
 ### To add a code segment to the rssrvpolicy.config file  
 
-1.  On the computer that will be hosting SSRS, locate the file rssrvpolicy.config in the following folder:  
+1.  On the computer that will be hosting SSRS, locate the file rssrvpolicy.config in the \\Program Files\\Microsoft SQL Server\\MSRS13.MSSQLSERVER\\Reporting Services\\ReportServer folder for SQL server 2016.  
 
-    1.  For SQL&nbsp;Server&nbsp;2008&nbsp;SP1, locate \\Program Files\\Microsoft SQL Server\\MSRS10.MSSQLSERVER\\Reporting Services\\ReportServer.  
-
-    2.  For SQL&nbsp;Server&nbsp;2008&nbsp;R2, locate \\Program Files\\Microsoft SQL Server\\MSRS10\_50.MSSQLSERVER\\Reporting Services\\ReportServer.  
 
 2.  Using an XML editor of your choice \(such as Notepad\), open the rssrvpolicy.config file.  
 
@@ -88,11 +81,8 @@ During deployment of the Service Manager data warehouse management server, you c
 
 ### To add an Extension tag to the Data segment in the rsreportserver.conf file  
 
-1.  On the computer hosting SSRS, locate the file rsreportserver.config in the following folder:  
+1.  On the computer hosting SSRS, locate the file rsreportserver.config in the \Program Files\\Microsoft SQL Server\\MSRS13.MSSQLSERVER\\Reporting Services\\ReportServer folder for SQL server 2016.
 
-    1.  For SQL&nbsp;Server&nbsp;2008&nbsp;SP1, locate \\Program Files\\Microsoft SQL Server\\MSRS10.MSSQLSERVER\\Reporting Services\\ReportServer.  
-
-    2.  For SQL&nbsp;Server&nbsp;2008&nbsp;R2, locate \\Program Files\\Microsoft SQL Server\\MSRS10\_50.MSSQLSERVER\\Reporting Services\\ReportServer.  
 
 2.  Using an XML editor of your choice \(such as Notepad\), open the rsreportserver.config file.  
 
