@@ -247,6 +247,13 @@ System Center Operations Manager management server is not affected.
 
 **Workaround:** None
 
+#### Create Exchange Connector wizard might crash
+**Description:** Creating a new Exchange Connector via Service Manager 2016 console throws an exception if the admin clicks on the "Test Connection" button in the "Server Connection" pane of "Create Exchange Connector" wizard.
+
+**Workaround:** To work around this issue, avoid clicking "Test Connection" button in the "Create Exchange Connector" wizard. Instead, directly click the "Next" button, which internally tests the connection and does not crash the wizard.
+
+If the crash has already occurred, you can restart the wizard and use this workaround.
+
 #### Browsing domain in AD connector wizard raises error
 **Description:** Error is raised on clicking “Browse” while choosing Domain or OU in AD connector wizard of Service Manager 2016 console.
 

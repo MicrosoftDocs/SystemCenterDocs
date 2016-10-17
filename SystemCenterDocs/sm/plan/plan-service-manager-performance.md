@@ -57,7 +57,7 @@ Solution 1: You can manually specify how often Service Manager checks for group 
 
 #### To manually specify the group change check interval  
 
-1.  Run Regedit, and navigate to HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Microsoft\\System Center\\2016\\Common\\.  
+1.  Run Regedit, and navigate to HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Microsoft\\System Center\\2010\\Common\\.  
 
 2.  Create a new DWORD value named **GroupCalcPollingIntervalMilliseconds**.  
 

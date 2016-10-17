@@ -36,7 +36,6 @@ As part of your security infrastructure, you may want to keep track of port numb
 |Data warehouse management server|2383 \-\-\-\>|SQL Server Analysis Services\*\*|  
 |SQL reporting service server|1433 \-\-\-\>|Remote data warehouse database server|  
 |Web browser|80 \-\-\-\>|SQL Server Reporting Services \(SSRS\)|  
-|Web content server|1433 \-\-\-\>|Service Manager database|  
 
  \* Includes initial Service Manager management server and subsequent Service Manager management servers  
 
