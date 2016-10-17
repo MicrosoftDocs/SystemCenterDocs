@@ -19,6 +19,7 @@
 ### [What's supported and what isn't for DPM?](dpm/get-started/What-s-supported-and-what-isn-t-for-DPM-.md)
 ### [Upgrade to DPM 2016](dpm/get-started/upgrade-to-dpm-2016.md)
 ### [Get started](dpm/get-started/Get-started.md)
+#### [Add Modern Backup storage](dpm/get-started/add-storage.md)
 #### [Get ready to deploy DPM servers](dpm/get-started/Get-ready-to-deploy-DPM-servers.md)
 #### [Get DPM installed](dpm/get-started/Get-DPM-installed.md)
 #### [Prepare data storage](dpm/get-started/Prepare-data-storage.md)
