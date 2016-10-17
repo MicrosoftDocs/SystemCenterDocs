@@ -27,4 +27,4 @@ The properties for a runbook server include an optional description and the acco
 2.  If you want to add or change the **Description** box, type a description for this runbook server, and then click **Finish**.  
 
 ## See Also  
-[Administering System Center 2016 - Orchestrator](../manage/administering-system-center-2016---orchestrator.md)  
+[Administering System Center 2016 - Orchestrator](../manage/administering-orchestrator.md)  

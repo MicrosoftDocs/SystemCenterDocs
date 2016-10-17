@@ -48,8 +48,8 @@ The functions that you can perform in the Orchestration console is a subset of t
 
 ## Other resources for this product
 
--   [Getting Started with System Center 2016 - Orchestrator](../get-started/getting-started-with-system-center-2016---orchestrator.md)
+-   [Getting Started with System Center 2016 - Orchestrator](../get-started/get-started-with-orchestrator.md)
 
--   [Administering System Center 2016 - Orchestrator](../manage/administering-system-center-2016---orchestrator.md)
+-   [Administering System Center 2016 - Orchestrator](../manage/administering-orchestrator.md)
 
--   [Using Runbooks in System Center 2016 - Orchestrator](../get-started/using-runbooks-in-system-center-2016---orchestrator.md)
+-   [Using Runbooks in System Center 2016 - Orchestrator](../get-started/using-runbooks.md)

@@ -18,7 +18,7 @@ manager: cfreeman
 
 > Applies To: System Center 2016 - Orchestrator
 
-The **Runbook Designer** is the tool that you use to create, manage, and run runbooks in System Center 2016 - Orchestrator. The **Runbook Designer** is intended for users who must create or modify runbooks. Users who only have to run runbooks and view their status should use the Orchestration console which is documented in the [Using the Orchestration Console in System Center 2016 - Orchestrator](../get-started/using-the-orchestration-console-in-system-center-2016---orchestrator.md).  
+The **Runbook Designer** is the tool that you use to create, manage, and run runbooks in System Center 2016 - Orchestrator. The **Runbook Designer** is intended for users who must create or modify runbooks. Users who only have to run runbooks and view their status should use the Orchestration console which is documented in the [Using the Orchestration Console in System Center 2016 - Orchestrator](../get-started/using-the console.md).  
 
 ## Runbook Designer Panes  
 The Runbook Designer interface is organized into the following four panes.  

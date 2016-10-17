@@ -34,7 +34,7 @@ With System Center 2016 - Orchestrator, you can manipulate string data from text
 
 ## Other resources for this product  
 
--   [Using Runbooks in System Center 2016 - Orchestrator](../get-started/using-runbooks-in-system-center-2016---orchestrator.md))  
+-   [Using Runbooks in System Center 2016 - Orchestrator](../get-started/using-runbooks.md))  
 
 -   [Building a Runbook](../manage/building-a-runbook.md)  
 

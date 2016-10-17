@@ -42,8 +42,8 @@ For more information on building custom solutions with Orchestrator in System Ce
 
 ## Other resources for this product
 
--   [Getting Started with System Center 2016 - Orchestrator](../get-started/getting-started-with-system-center-2016---orchestrator.md)
+-   [Getting Started with System Center 2016 - Orchestrator](../get-started/get-started-with-orchestrator.md)
 
--   [Administering System Center 2016 - Orchestrator](../manage/administering-system-center-2016---orchestrator.md)
+-   [Administering System Center 2016 - Orchestrator](../manage/administering-orchestrator.md)
 
--   [Using the Orchestration Console in System Center 2016 - Orchestrator](../get-started/using-the-orchestration-console-in-system-center-2016---orchestrator.md)
+-   [Using the Orchestration Console in System Center 2016 - Orchestrator](../get-started/using-the console.md)
