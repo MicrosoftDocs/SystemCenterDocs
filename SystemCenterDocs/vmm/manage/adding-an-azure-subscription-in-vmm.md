@@ -1,15 +1,14 @@
 ---
-description:  
-manager:  cfreeman
-ms.topic:  article
+ms.assetid: 6805c8cf-d768-4680-9990-2b8c895f31ec
+title: Add an Azure subscription in VMM
+description: This article describes add an Azure subscription so that you can manage basic actions for Azure instances
 author:  rayne-wiselman
 ms.author: raynew
+manager:  cfreeman
+ms.date:  10/16/2016
+ms.topic:  article
 ms.prod:  system-center-threshold
-keywords:  
-ms.date:  2016-10-12
-title:  Adding an Azure subscription in VMM
 ms.technology:  virtual-machine-manager
-ms.assetid:  6805c8cf-d768-4680-9990-2b8c895f31ec
 ---
 
 # Add an Azure subscription in VMM
@@ -60,7 +59,7 @@ You cannot:
 
 -   See the Performance Monitoring Summary
 
-## <a name="BKMK_requirements"></a>System and Environment Requirements
+## System and environment requirements
 The following is a list of system and environment requirements that are needed in order to be able to install and evaluate this feature.
 
 |Item|Requirements|
@@ -71,15 +70,13 @@ The following is a list of system and environment requirements that are needed i
 |Management Certificate in Azure|The Microsoft Azure Subscription must have a **Management Certificate** associated with it in order to allow VMM to use the service management API in Microsoft Azure. For information about how to configure this, see [Create and Upload a Management Certificate for Azure](http://msdn.microsoft.com/library/azure/gg551722.aspx). Make note of your subscription ID and the certificate thumbprint, because you will need it during configuration.<br /><br />Microsoft Azure requires certificates to be x509 v3 compliant.|
 |Management Certificate in the local certificate Store|The Management Certificate that is associated with the Azure Subscription must be present in the local certificate store on the computer that the wizard is being run on. The certificate needs to be present in the **Current User \ Personal** store of the computer running the VMM console.|
 
-## Using the Add Azure Subscription Feature
+## Use the Add Azure Subscription Feature
 
 ### Review the ribbon
 In the VMM console, open the **VMs and Services** workspace, and look on the ribbon for the **Azure** group, where **Add Subscription** appears.
 
 ### Configure certificates
 Before you try to add a subscription, it's a good idea to check a few things, such as your certificates, to make sure you're ready. You might want to review [System and Environment Requirements](Adding-an-Azure-subscription-in-VMM.md#BKMK_requirements), earlier in this document. Also, the following procedure provides details about how to review requirements.
-
-##### To review requirements before you add a subscription
 
 1.  Confirm that you're a Service Administrator on the Subscription that you plan to add.
 
@@ -107,7 +104,7 @@ Before you try to add a subscription, it's a good idea to check a few things, su
 
     For instructions, see [To import a certificate](http://social.technet.microsoft.com/wiki/contents/articles/2167.how-to-use-the-certificates-console.aspx#To_import_certificates) in "How to Use the Certificates Console."
 
-### <a name="BKMK_wizard"></a>Add Azure Subscription Wizard
+### Add Azure Subscription Wizard
 If you don't already have your Subscription ID and the thumbprint of the certificate, make sure you gather that information now. You can find both of these pieces of information at the **Azure Management Portal** on the **Settings** > **Management Certificates** page.
 
 
@@ -147,8 +144,3 @@ When an individual virtual machine is selected from the list, a set of VM action
 |Shut Down|Requests a graceful shutdown of a running instance and de-allocates it.|
 |Restart|Requests a restart of a running instance.|
 |Connect via RDP|Initiates a remote desktop session to the Host Name (DNS Name) of the instance.|
-
-## See Also
-
-- [Creating and deploying virtual machines in VMM](Creating-and-deploying-virtual-machines-in-VMM.md)
-- [Creating Virtual Machine Role Templates by using VMM and Windows Azure Pack](Creating-Virtual-Machine-Role-Templates-by-using-VMM-and-Windows-Azure-Pack.md)

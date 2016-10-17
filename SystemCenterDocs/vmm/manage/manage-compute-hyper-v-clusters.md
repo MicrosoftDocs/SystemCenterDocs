@@ -4,8 +4,8 @@ title: Manage Hyper-V clusters in the VMM fabric
 description: This article describes how to manage Hyper-V clusters in the VMM fabric
 author:  rayne-wiselman
 ms.author: raynew
-manager:  cfreemanwa
-ms.date:  2016-09-22
+manager:  cfreeman
+ms.date:  10/16/2016
 ms.topic:  article
 ms.prod:  system-center-threshold
 ms.technology:  virtual-machine-manager
@@ -18,7 +18,7 @@ ms.technology:  virtual-machine-manager
 Use this article to manage Hyper-V host clusters in the System Center 2016 - Virtual Machine Manager (VMM) fabric. You can configure cluster properties, and manage cluster nodes.
 
 
-### Configure cluster properties
+## Configure cluster properties
 
 1. In **Fabric**, right-click the cluster > **Properties**.
 2. Configure the settings summarized in the table.

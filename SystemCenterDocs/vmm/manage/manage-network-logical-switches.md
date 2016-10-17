@@ -4,8 +4,8 @@ title: Create logical switches
 description: This article describes how to create logical switches in the VMM fabric
 author:  rayne-wiselman
 ms.author: raynew
-manager:  cfreemanwa
-ms.date:  2016-09-22
+manager:  cfreeman
+ms.date:  10/16/2016
 ms.topic:  article
 ms.prod:  system-center-threshold
 ms.technology:  virtual-machine-manager
@@ -17,7 +17,6 @@ ms.technology:  virtual-machine-manager
 
 This article describes how to create logical switches in the System Center 2016 - Virtual Machine Manager (VMM) fabric, and to set up virtual switch extensions if you need them.
 
-## Overview
 
 A logical switch brings virtual switch extensions, port profiles, and port classifications together so that you can configure each network adapter with the settings you need, and have consistent settings on network adapters across multiple hosts. You can team multiple network adapters by applying the same logical switch and uplink port profile to them.  
 
