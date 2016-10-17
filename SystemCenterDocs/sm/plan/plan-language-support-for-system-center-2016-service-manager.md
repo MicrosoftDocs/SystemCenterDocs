@@ -51,25 +51,3 @@ It is assumed in this guide that you are installing System Center 2016 - Service
 |Spanish\_Modern\_Sort|Modern\_Spanish\_100\_CI\_AS|  
 |Swedish \(Sweden\)|Finnish\_Swedish\_100\_CI\_AS|  
 |Turkish \(Turkey\)|Turkish\_100\_CI\_AS|  
-
-## Search Issues
-
-This section describes search issues, sort issues, and word\-break issues with some of the languages that are supported in Service Manager.  
-
-### Greek, Czech, and Finnish Languages  
-
-For these languages, full\-text search is not supported in SQL Server 2008. Therefore, sorting and searching activities in these languages do not function correctly.  
-
-### Danish, Polish, and Turkish Languages  
-
-Full-text search does not function in SQL Server 2008 or SQL Server 2008 R2 for these languages. You can load a licensed third-party word breaker that enables full-text search to function correctly. If you have Service Manager consoles using the Danish, Polish, or Turkish languages, regardless of the language collation that you have selected for your SQL Server installation, you have to install a third-party word breaker.  
-
- For more information, see the following links for the version of SQL Server that you are using:  
-
--   [SQL Server 2008](http://go.microsoft.com/fwlink/?LinkId=205800)  
-
--   [SQL Server 2008 R2](http://go.microsoft.com/fwlink/p/?LinkID=205557)  
-
-### Turkish Language  
-
-None of the Turkish collations is supported in Service Manager. The Latin1\_General\_100\_CI\_AS collation was used for testing with the Turkish language. As a result, some search and sort operations in Service Manager will be affected for some Turkish characters.

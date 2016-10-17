@@ -24,11 +24,11 @@ DPM 2016 accepts volumes for storage. Hence, once a volume is added, DPM will fo
 
 1.	Setup DPM 2016 on a VM
 2.	Create a volume on a virtual Disk in a Storage Pool:
-    
+
     a.	Add a disk to a Storage Pool and create a virtual disk with Simple Layout
-    
+
     b.	Add any more disks, and extend the virtual disk
-    
+
     c.	Create Volumes on the virtual disk
 
 3.	Add these volumes to DPM

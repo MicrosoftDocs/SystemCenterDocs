@@ -119,10 +119,6 @@ Service Manager supports the following Windows PowerShell cmdlets, which are imp
 |Get-SCSMManagementGroupConnection|Retrieves all management group connections, including the IsActive state of these connections. Only one connection will have its IsActive state set to True, because only one connection can be active at any time.|
 |Get-SCSMManagementPack|Retrieves objects that represent management packs that have been imported.|
 |Get-SCSMObjectTemplate|Retrieves an object template.|
-|Get-SCSMPortalCMConfiguration|Retrieves the settings for the Configuration Manager that is used for software deployments on the Service ManagerSelf-Service Portal.|
-|Get-SCSMPortalContactConfiguration|Retrieves the IT Contact setting that the  Service Manager Self-Service Portal is configured with.|
-|Get-SCSMPortalDeploymentProcess|Retrieves information about software deployment processes for the Service Manager Self-Service Portal.|
-|Get-SCSMPortalSoftwarePackage|Retrieves all the software packages that are configured for deployment in the Service Manager Self-Service Portal.|
 |Get-SCSMQueue|Retrieves queues that are defined in Service Manager.|
 |Get-SCSMRelationship|Retrieves information about relationship objects from Operations Manager and from Service Manager.|
 |Get-SCSMRelationshipInstance|Retrieves the instances of relationships from Operations Manager and from Service Manager.|
@@ -137,8 +133,8 @@ Service Manager supports the following Windows PowerShell cmdlets, which are imp
 |Get-SCSMWorkflowStatus|Retrieves the status of workflows in Service Manager.|
 |Import-SCSMInstance|Imports objects and relationships from a comma-separated value (.csv) file into Service Manager.|
 |Import-SCSMManagementPack|Imports management packs.|
-|New-SCOrchestratorConnector||
-|New-SCRelationshipInstance||
+|New-SCOrchestratorConnector|Creates a new Service Manager Orchestrator connector.|
+|New-SCRelationshipInstance|Creates an instance of a relationship.|
 |New-SCSMADConnector|Creates a new Active Directory connector.|
 |New-SCSMAlertRule|Creates an alert rule to be used with an Operations Manager alert connector in Service Manager.|
 |New-SCSMAnnouncement|Creates a new announcement in Service Manager.|
@@ -151,12 +147,11 @@ Service Manager supports the following Windows PowerShell cmdlets, which are imp
 |New-SCSMManagementPackBundle|Bundles individual management packs and their resources, creating a new management pack bundle.|
 |New-SCSMOMAlertConnector|Creates a new Operations Manager alert connector in Service Manager.|
 |New-SCSMOMConfigurationItemConnector|Creates a new Operations Manager CI connector in Service Manager.|
-|New-SCSMPortalDeploymentProcess|Creates a software deployment process for deploying software by using the Service Manager Self-Service Portal.|
 |New-SCSMRunAsAccount|Creates a new Run As account.|
 |New-SCSMSubscription|Creates a new subscription in Service Manager.|
 |New-SCSMUserRole|Creates a new user role in Service Manager.|
 |New-SCSMWorkflow|Creates a new workflow in Service Manager.|
-|New-SCVMMConnector||
+|New-SCVMMConnector|Creates a new Service Manager Virtual Machine Manager connector.|
 |Protect-SCSMManagementPack|Seals a management pack, preventing it from being modified.|
 |Remove-SCSMAllowListClass|Removes the specified classes from the Allow list of classes that are used by the Operations Manager CI Connector during synchronization in Service Manager.|
 |Remove-SCSMAnnouncement|Removes an announcement from Service Manager.|
@@ -166,7 +161,6 @@ Service Manager supports the following Windows PowerShell cmdlets, which are imp
 |Remove-SCSMEmailTemplate|Removes an Email template from Service Manager.|
 |Remove-SCSMManagementGroupConnection|Removes a management group connection.|
 |Remove-SCSMManagementPack|Removes management packs.|
-|Remove-SCSMPortalDeploymentProcess|Removes a software deployment process from the Service Manager Self-Service Portal.|
 |Remove-SCSMRunAsAccount|Removes a Run As accounts.|
 |Remove-SCSMSubscription|Removes a subscription from Service Manager.|
 |Remove-SCSMUserRole|Removes a user role from Service Manager.|
@@ -175,8 +169,6 @@ Service Manager supports the following Windows PowerShell cmdlets, which are imp
 |Restore-SCSMDeletedItem|Restores items that were previously deleted in Service Manager.|
 |Set-SCSMChannel|Sets the properties of the email notification channel in Service Manager.|
 |Set-SCSMManagementGroupConnection|Sets the specified connection as the active connection. The active connection is the connection that is implicitly used when you run a **Get-** cmdlet without specifying **-ComputerName** and **-Credential** or **-SCSession** parameters. Only one connection can be active at any time, and by default the active connection is the last connection that was created by using the **New-SCManagementGroupConnection** cmdlet.|
-|Set-SCSMPortalCMConfiguration|Sets the configuration information for the Service Manager Self-Service Portal.|
-|Set-SCSMPortalContactConfiguration|Configures the settings of information technology (IT) contacts for the end-user of the Service Manager Self-Service Portal.|
 |Start-SCSMConnector|Starts a Service Manager connector.|
 |Test-SCSMManagementPack|Tests the validity of a management pack.|
 |Update-SCSMAnnouncement|Updates the properties of an announcement for Service Manager.|
@@ -184,8 +176,6 @@ Service Manager supports the following Windows PowerShell cmdlets, which are imp
 |Update-SCSMConnector|Updates properties of a Service Manager connector.|
 |Update-SCSMDCMWorkflow|Updates properties of a desired configuration management workflow.|
 |Update-SCSMEmailTemplate|Updates properties of an Email template.|
-|Update-SCSMPortalDeploymentProcess|Updates the properties of software deployment processes for the Self-Service Portal.|
-|Update-SCSMPortalSoftwarePackage|Updates the properties of software packages that are configured for deployment in the Service Manager Self-Service Portal.|
 |Update-SCSMRunAsAccount|Updates the credentials that are associated with a Run As account.|
 |Update-SCSMSetting|Updates the configuration settings for Service Manager.|
 |Update-SCSMSubscription|Updates subscription properties in Service Manager.|
@@ -198,25 +188,25 @@ Service Manager supports the following Windows PowerShell cmdlets, which are imp
 |----------|---------------|
 |Disable-SCDWJob|Disables a data warehouse job to prevent it from running.|
 |Disable-SCDWJobSchedule|The **Disable-SCDWJobSchedule** cmdlet disables a Data Warehouse job schedule, which causes the job schedule to stop initiating jobs. If the job schedule was previously enabled, disabling the job schedule retains the job schedule settings. To modify the job schedule settings, run the **Set-SCDWJobSchedule** cmdlet.|
-|Disable-SCDWSource||
+|Disable-SCDWSource|Enables all jobs that are affiliated with the specified data source.|
 |Enable-SCDWJob|Enables a Data Warehouse job so that it can run according to its schedule.|
 |Enable-SCDWJobSchedule|The **Enable-SCDWJobSchedule** cmdlet allows Data Warehouse administrators to enable job schedules so that jobs run according to their specified schedule. To disable the job schedule, use the **Disable-SCDWJobSchedule** cmdlet.|
-|Enable-SCDWSource||
-|Get-SCDWEntity||
+|Enable-SCDWSource|Enables all jobs that are affiliated with the specified data source.|
+|Get-SCDWEntity|Gets the list of fact tables, dimensions, tables, and outriggers that exist in a data warehouse.|
 |Get-SCDWJob|Gets the job status of all recurring jobs, including extraction, transformation, and load (ETL) jobs.|
 |Get-SCDWJobModule|Returns detailed information for the specified job. This information includes job modules that are executed as part of the job.|
 |Get-SCDWJobSchedule|The **Get-SCDWJobSchedule** cmdlet displays scheduling information for Data Warehouse jobs. You can use the **JobName** parameter to specify a job for which to display scheduling information. Otherwise, the **Get-SCDWJobSchedule** cmdlet displays scheduling information for all Data Warehouse jobs.|
 |Get-SCDWModule||
 |Get-SCDWRetentionPeriod|The Data Warehouse grooms out rows after a predefined retention period. This cmdlet gives the retention period for a particular entity in minutes. If no entity is provided, it gives back the default retention period for all entities.|
-|Get-SCDWSource||
-|Get-SCDWSourceType||
-|Get-SCDWWatermark||
+|Get-SCDWSource|Enables all jobs that are affiliated with the specified data source.|
+|Get-SCDWSourceType|Gets the types of data sources that can be registered to the data warehouse.|
+|Get-SCDWWatermark|Gets the latest watermark for the specified job module.|
 |New-SCDWSourceType|To register a source with the Data Warehouse, the Datasource Type first has to be registered with the Data Warehouse. This cmdlet helps to register a new Datasource Type by importing the suitable management pack and doing the appropriate configuration changes.|
-|Register-SCDWSource||
+|Register-SCDWSource|Registers instances of data source types, such as Service Manager, Operations Manager, and Configuration Manager, to the data warehouse.|
 |Set-SCDWJobSchedule|Sets the schedule for a Data Warehouse job.|
-|Set-SCDWRetentionPeriod||
-|Set-SCDWSource||
-|Set-SCDWWatermark||
+|Set-SCDWRetentionPeriod|Sets the data retention period in minutes for either a specific fact table within a specific data warehouse database or sets the default for fact tables within the database.|
+|Set-SCDWSource|Updates the definition of classes and relationships that can be populated for an instance of a data source.|
+|Set-SCDWWatermark|- Sets the watermark from which subsequent data processing should continue.|
 |Start-SCDWJob|Starts a Data Warehouse job.|
 |Unregister-SCDWManagememtPack||
-|Unregister-SCDWSource| &nbsp;|
+|Unregister-SCDWSource|Unregisters a data source from the data warehouse.|

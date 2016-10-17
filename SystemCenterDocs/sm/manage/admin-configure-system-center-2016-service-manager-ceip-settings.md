@@ -7,37 +7,49 @@ ms.author: banders
 ms.prod:  system-center-2016
 keywords:  
 ms.date: 2016-10-12
-title:  Configure Service Manager CEIP Settings
+title:  Configure preference for sharing Service Manager diagnostic and usage data
 ms.technology:  service-manager
 ms.assetid:  4bb2487c-5a91-44d2-9a85-f4112aff40ac
 ---
 
-# Configure Service Manager CEIP Settings
+# Configure preference for sharing Service Manager diagnostic and usage data
 
 >Applies To: System Center 2016 - Service Manager
 
-During setup in Service Manager, on the **Help improve System Center** page, you have the option to participate in the Customer Experience Improvement Program (CEIP). For a Service Manager management server, you can use the first following procedure to let Service Manager participate in the program or remove Service Manager from this program. For either a data warehouse management server or Service Manager management server, you use the second following procedure to modify the registry to join or leave the Customer Experience Improvement Program.
+During setup in Service Manager, on the **Diagnostic and usage data** page, for sharing your Service Manager diagnostic and usage data with Microsoft. This feature is on by default. Administrators can turn off this feature anytime by using the choice options in Service Manager Console and Self Service Portal’s Web.config file (may also require service restart)
 
-### To configure Service Manager CEIP settings using the Service Manager console
+### To configure the preference for sharing Service Manager diagnostic and usage data for **individual** Service Manager Console
 
 1.  In the Service Manager console, in the toolbar, click **Help**.
 
-2.  In the **Help** menu, you can choose to either let Service Manager join the program or remove Service Manager from the program: Observe the entry **Join the Customer Experience Improvement Program**, and then do one of the following:
+2.  In the **Help** menu, click on **Send diagnostic and usage data to Microsoft**
 
-    -   If a check mark is displayed, click **Join the Customer Experience Improvement Program** to remove Service Manager from the CEIP program.
+3. **Select** your diagnostic and usage data sharing preference from the dialog and  click on **Ok**.
 
-    -   If the check mark is not displayed, click **Join the Customer Experience Improvement Program** to join the CEIP program, and then in the System Center Service Manager dialog box, click **Yes** to confirm your decision.
+### To configure the preference for sharing Service Manager diagnostic and usage data for **individual** Service Manager Management Server or Data Warehouse Management Server
 
-### To configure CEIP settings using the registry
+1. Use the Service Manager console installed on same machine as Service Manager Management Server or Data Warehouse Management Server (and connect the console to same server), depending on where you want to configure the preference for sharing Service Manager diagnostic and usage data.
 
-1.  On the Service Manager management server or data warehouse server, open Registry Editor.
+2. In the Service Manager console, in the toolbar, click **Help**.
 
-2.  Create the following registry key if it does not already exist.
+3.  In the **Help** menu, click on **Send diagnostic and usage data to Microsoft**
 
-    **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\SQMClient\SCSM**
+4. **Select** your diagnostic and usage data sharing preference from the dialog and  click on **Ok**.
 
-3.  Create the following DWORD (32-bit) Value if it does not already exist.
+5. In the **Run** dialog box, in the Open text field, type **services.msc**, and then click **Ok**.
 
-    **CEIPEnable**
+6. In the **Services** window, in the **Services (Local)** pane, locate the **System Center Data Access Service**, and click **Restart**.
 
-4.  Set the value to 1 to participate in the CEIP or set the value to 0 to leave the CEIP.
+### To configure the preference for sharing Service Manager diagnostic and usage data for Service Manager Self Service Portal
+
+1. Log in as an **administrator** on the **IIS server** which is hosting the **Service Manager Self Service Portal** website.
+
+2. Open the **Web.config** file in the directory where **Service Manager Self Service Portal** is installed.
+
+3. In **Web.config** file, find the key named **EnableTelemetry** under the XML tag **appSettings**.
+
+4. Configure the **value** of **EnableTelemetry** key depending on your preference to share  Service Manager diagnostic and usage data for Service Manager Self Service Portal. The value set as **true** for this key **enables** the sharing of diagnostic and usage data with Microsoft, and setting the value of **EnableTelemetry** key as **false**,  **disables** the sharing of diagnostic and usage data with Microsoft.
+
+5. **Save** and **Close** the **Web.config** file.
+
+6.  **Restart** the **IIS service** after you make any changes to the Web.config file.
