@@ -31,7 +31,7 @@ A DPM protection group is a collection of data sources, such as volumes, shares,
 
 
 The topics in this section provide guidelines for making the decisions involved in creating a protection group.
-
+ 
 ## Plan protection groups
 You'll need to decide:
 
@@ -63,7 +63,7 @@ DPM provides default space allocations for the members of the protection group. 
 
 |Component|Default Allocation|Location|
 |-------------|----------------------|------------|
-|DPM storage|Data source size x (1 + log change) x (1.05)<br /><br /> *For SQL Server data*:<br />-   Data source size x (1 + log change) x (1.05) + Transaction Logs<br />|DPM storage pool or custom volume|
+|DPM storage|Data source size x (1 + log change x Retention Range in Days x Number of backups per day) x (1.05)<br /><br /> *For SQL Server data*:<br />-   Data source size x (1 + log change x Retention Range in Days x Number of backups per day) x (1.05) + Transaction Logs<br />|DPM storage pool or custom volume|
 |DPM Database| 2 GB <br/>(may increase for SharePoint backups) |DPM Server storage |
 |Change journal (for file-protection only)|300 MB|Protected volume on the file server or workstation|
 
