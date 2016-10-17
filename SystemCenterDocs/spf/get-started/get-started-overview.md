@@ -1,14 +1,14 @@
 ---
+ms.assetid: 0cce9ea6-adf3-422d-94c0-2bf15b0c1d95
 title: What is Service Provider Foundation?
 description: This article provides a broad overview of Service Provider Foundation
 author: cfreeman
 ms.author: raynew
 manager: cfreeman
-ms.date: 10/14/2016
+ms.date: 10/1/2016
 ms.topic: article
 ms.prod:  system-center-threshold
 ms.technology:  service-provider-foundation
-ms.assetid: 0cce9ea6-adf3-422d-94c0-2bf15b0c1d95
 ---
 
 # What is Service Provider Foundation?

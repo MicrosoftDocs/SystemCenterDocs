@@ -1,14 +1,14 @@
 ---
+ms.assetid: 617ee2c1-4dea-40e6-85b3-d87b15c0221d
 title: Plan SPF deployment
 description: This topic provides an overview of how to plan for a Service Provider Foundation installation.
 author: rayne-wiselman
 ms.author: raynew
 manager: cfreeman
-ms.date: 10/14/2016
+ms.date: 10/16/2016
 ms.topic: article
 ms.prod: system-center-threshold
 ms.technology: service-provider-foundation
-ms.assetid: 617ee2c1-4dea-40e6-85b3-d87b15c0221d
 ---
 
 # Plan SPF deployment

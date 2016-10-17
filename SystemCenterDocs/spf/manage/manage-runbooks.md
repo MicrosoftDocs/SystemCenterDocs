@@ -1,14 +1,17 @@
 ---
+ms.assetid: b7528d59-28b7-4e98-988e-5fd29590fd6f
 title: Automate and invoke runbooks from SPF
 description: Provides information about integrating SPF and Service Management Automation to help tenants.
 author: rayne-wiselman
 ms.author: raynew
 manager: cfreeman
-ms.date: 10/14/2016
+ms.date: 10/16/2016
+ms.topic: article
 ms.prod: system-center-threshold
 ms.technology: service-provider-foundation
-ms.assetid: b7528d59-28b7-4e98-988e-5fd29590fd6f
 ---
+
+ms.assetid: 38695129-ee8d-49ee-a357-b00a7659ba31
 
 # Automate and invoke runbooks from SPF
 >Apples To: System Center 2016

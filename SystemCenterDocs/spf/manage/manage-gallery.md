@@ -1,14 +1,15 @@
 ---
+ms.assetid: 24a4c010-ed26-4176-8d27-99180010945a
 title: Import gallery items in SPF
 description: Provides information about importing gallery items into SPF
+author: rayne-wiselman
 ms.author: raynew
 manager: cfreeman
-ms.date: 10/14/2016
+ms.date: 10/16/2016
+ms.topic: article
 ms.prod: system-center-threshold
 ms.technology: service-provider-foundation
-ms.assetid: 24a4c010-ed26-4176-8d27-99180010945a
 ---
-
 
 # Import gallery items in SPF
 
@@ -68,4 +69,3 @@ PS C:\> # Import the package that was just saved, using the PackageFilePath para
 PS C:\> Import-ScSpfVmRoleGalleryItem -PackageFilePath "C:\@tmp\gal.bin"  
 
 ```  
- 
