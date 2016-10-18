@@ -6,7 +6,7 @@ author:  markgalioto
 ms.author: markgal
 ms.prod:  system-center-threshold
 keywords:  
-ms.date:  2016-10-14
+ms.date: 10/12/2016
 title:  Prepare data storage
 ms.technology:  data-protection-manager
 ms.assetid:  ebe047b4-0737-4ce5-8fe2-d5e0cfd9b852

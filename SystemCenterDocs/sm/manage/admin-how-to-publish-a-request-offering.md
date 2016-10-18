@@ -6,7 +6,7 @@ author: bandersmsft
 ms.author: banders
 ms.prod:  system-center-2016
 keywords:  
-ms.date: 2016-10-12
+ms.date: 10/12/2016
 title:  How to Publish a Request Offering
 ms.technology:  service-manager
 ms.assetid:  f0c1088f-92a8-40ba-93ec-edf6bd8b5fb3

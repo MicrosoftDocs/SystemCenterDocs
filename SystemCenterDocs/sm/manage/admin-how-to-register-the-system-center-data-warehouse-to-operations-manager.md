@@ -6,7 +6,7 @@ author:  bandersmsft
 ms.author: banders
 ms.prod:  system-center-2016
 keywords:  
-ms.date:  2016-06-28
+ms.date: 10/12/2016
 title:  How to Register the System Center Data Warehouse to Operations Manager
 ms.technology:  service-manager
 ms.assetid:  bc5b518f-97c4-4a2d-a1b2-3ece9e7e603e

@@ -3,7 +3,7 @@ ms.assetid: 90b8bc0b-1a4a-4273-a51a-a33142230d60
 title: Operations Manager Reports Library
 author: mgoedtel
 manager: cfreemanwa
-ms.date: 2016-10-12
+ms.date: 10/12/2016
 ms.custom: na
 ms.prod: system-center-threshold
 ms.technology: operations-manager

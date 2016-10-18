@@ -11,7 +11,7 @@ ms.topic: article
 ms.assetid: 26ba0035-91c7-4bd8-ba7e-047649113f52
 author: cfreemanwa
 ms.author: cfreeman
-ms.date: 2016-10-12
+ms.date: 10/12/2016
 manager: cfreeman
 ---
 # Data Manipulation

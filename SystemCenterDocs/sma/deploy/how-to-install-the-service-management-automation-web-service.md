@@ -5,7 +5,7 @@ ms.topic:  article
 author:  bwren
 ms.prod:  system-center-threshold
 keywords:  
-ms.date:  2016-08-18
+ms.date: 10/12/2016
 title:  How to install the Service Management Automation web service
 ms.technology:  service-management-automation
 ms.assetid:  b6044e0c-0caa-459c-9489-c379a154136b

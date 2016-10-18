@@ -11,7 +11,7 @@ ms.topic: article
 ms.assetid: 1f3f12bf-e2c2-405c-9205-8d6de6d199d2
 author: cfreemanwa
 ms.author: cfreeman
-ms.date: 2016-10-12
+ms.date: 10/12/2016
 manager: cfreeman
 ---
 # Common Activity Properties

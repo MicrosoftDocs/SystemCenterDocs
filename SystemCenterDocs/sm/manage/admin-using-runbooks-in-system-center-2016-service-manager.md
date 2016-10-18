@@ -6,7 +6,7 @@ author: bandersmsft
 ms.author: banders
 ms.prod:  system-center-2016
 keywords:  
-ms.date: 2016-10-12
+ms.date: 10/12/2016
 title:  Using Runbooks in Service Manager
 ms.technology:  service-manager
 ms.assetid:  a0863ac5-05d9-46b3-8e18-1f76e50ee07d

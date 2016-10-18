@@ -157,6 +157,7 @@
 #### [Orchestrator Capabilities](orch/get-started/Orchestrator-Capabilities.md)
 #### [Orchestrator Architecture](orch/get-started/Orchestrator-Architecture.md)
 #### [Overview of the Orchestrator Console](orch/get-started/overview-of-orchestration-console.md)
+#### [Upgrade to Orchestrator 2016](orch/get-started/upgrade-to-orchestrator.md)
 #### [Orchestrator Resources](orch/get-started/orchestrator-resources.md)
 #### [Runbook concepts](orch/get-started/runbook-concepts.md)
 #### [Runbook designer](orch/get-started/runbook-designer.md)

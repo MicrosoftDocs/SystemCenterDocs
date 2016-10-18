@@ -5,7 +5,7 @@ ms.topic:  article
 author:  bwren
 ms.prod:  system-center-threshold
 keywords:  
-ms.date:  2016-06-28
+ms.date: 10/12/2016
 title:  Starting a Runbook
 ms.technology:  service-management-automation
 ms.assetid:  4190285b-64f7-44a9-95f4-f8ed816b7724

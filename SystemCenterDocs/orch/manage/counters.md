@@ -11,7 +11,7 @@ ms.topic: article
 ms.assetid: 6f0353ac-5847-483d-ac1d-d2bbc1268838
 author: cfreemanwa
 ms.author: cfreeman
-ms.date: 2016-10-12
+ms.date: 10/12/2016
 manager: cfreeman
 ---
 # Counters

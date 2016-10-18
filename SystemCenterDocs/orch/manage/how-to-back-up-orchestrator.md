@@ -11,7 +11,7 @@ ms.topic: article
 ms.assetid: 44c3460d-4171-4838-84c7-a9c3bd75b28a
 author: cfreemanwa
 ms.author: cfreeman
-ms.date: 2016-10-12
+ms.date: 10/12/2016
 manager: cfreeman
 ---
 # How to Back up Orchestrator

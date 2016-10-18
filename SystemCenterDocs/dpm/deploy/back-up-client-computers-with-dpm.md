@@ -5,7 +5,7 @@ ms.topic:  article
 author:  markgalioto
 ms.prod:  system-center-threshold
 keywords:  
-ms.date:  2016-10-12
+ms.date: 10/12/2016
 title:  Back up client computers with DPM
 ms.technology:  data-protection-manager
 ms.assetid:  0e12f557-0396-465d-b60f-7695b44bbd12

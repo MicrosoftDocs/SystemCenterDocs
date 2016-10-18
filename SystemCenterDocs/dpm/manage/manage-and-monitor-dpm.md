@@ -5,7 +5,7 @@ ms.topic:  article
 author:  markgalioto
 ms.prod:  system-center-threshold
 keywords:  
-ms.date:  2016-10-01
+ms.date: 10/12/2016
 title:  Manage and monitor DPM
 ms.technology:  data-protection-manager
 ms.assetid:  241fe091-0044-4664-8eaf-9b022e6874f3

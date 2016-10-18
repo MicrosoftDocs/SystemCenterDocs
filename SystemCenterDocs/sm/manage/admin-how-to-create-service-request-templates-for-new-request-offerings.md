@@ -6,7 +6,7 @@ author: bandersmsft
 ms.author: banders
 ms.prod:  system-center-2016
 keywords:  
-ms.date: 2016-10-12
+ms.date: 10/12/2016
 title:  How to Create Service Request Templates for New Request Offerings
 ms.technology:  service-manager
 ms.assetid:  78965a33-426c-4d7c-82f2-14f23e32fdc9

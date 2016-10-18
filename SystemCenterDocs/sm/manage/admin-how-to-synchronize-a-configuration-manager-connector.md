@@ -6,7 +6,7 @@ author: bandersmsft
 ms.author: banders
 ms.prod:  system-center-2016
 keywords:  
-ms.date: 2016-10-12
+ms.date: 10/12/2016
 title:  How to Synchronize a Configuration Manager Connector
 ms.technology:  service-manager
 ms.assetid:  7d92b95a-0db7-43df-95ce-2732f54df3c1

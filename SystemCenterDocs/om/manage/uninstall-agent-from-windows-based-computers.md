@@ -3,7 +3,7 @@ ms.assetid: 11d9cf46-2880-493f-bdf1-29263e2949f0
 title: Uninstall Agent from Windows-based Computers
 author: mgoedtel
 manager: cfreemanwa
-ms.date: 2016-10-12
+ms.date: 10/12/2016
 ms.custom: na
 ms.prod: system-center-threshold
 ms.technology: operations-manager

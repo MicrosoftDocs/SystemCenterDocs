@@ -6,7 +6,7 @@ author: bandersmsft
 ms.author: banders
 ms.prod:  system-center-2016
 keywords:  
-ms.date: 2016-10-12
+ms.date: 10/12/2016
 title:  How to View the Status of a Data Warehouse Job
 ms.technology:  service-manager
 ms.assetid:  e80fa4de-39bc-4463-bb29-661575b0b1ab

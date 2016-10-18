@@ -4,7 +4,7 @@ title: Operations Manager Key Concepts
 description:
 author: mgoedtel
 manager: cfreemanwa
-ms.date: 2016-12-12
+ms.date: 10/12/2016
 ms.custom: na
 ms.prod: system-center-threshold
 ms.technology: operations-manager

@@ -4,7 +4,7 @@ title:  Install Windows Agent Manually Using MOMAgent.msi
 description:  
 author: mgoedtel
 manager: cfreemanwa
-ms.date: 2016-10-12
+ms.date: 10/12/2016
 ms.custom: na
 ms.prod: system-center-threshold
 ms.technology: operations-manager

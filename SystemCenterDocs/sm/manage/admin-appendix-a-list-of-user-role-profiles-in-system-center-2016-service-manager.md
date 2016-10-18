@@ -6,7 +6,7 @@ author: bandersmsft
 ms.author: banders
 ms.prod:  system-center-2016
 keywords:  
-ms.date: 2016-10-12
+ms.date: 10/12/2016
 title:  Appendix A - List of User Role Profiles in Service Manager
 ms.technology:  service-manager
 ms.assetid:  38118405-3578-4e36-b5ec-e1cc5326e161

@@ -6,7 +6,7 @@ author: bandersmsft
 ms.author: banders
 ms.prod:  system-center-2016
 keywords:  
-ms.date: 2016-10-12
+ms.date: 10/12/2016
 title:  How to Configure Activity Management Workflows
 ms.technology:  service-manager
 ms.assetid:  2d7b2743-e25d-4a96-9c2d-35406c5ec279

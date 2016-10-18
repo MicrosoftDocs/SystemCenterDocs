@@ -5,7 +5,7 @@ ms.topic:  article
 author:  bwren
 ms.prod:  system-center-threshold
 keywords:  
-ms.date:  2016-08-18
+ms.date: 10/12/2016
 title:  How to install the Service Management Automation PowerShell module
 ms.technology:  service-management-automation
 ms.assetid:  aaa97a7e-362c-45ff-940d-7fb503703744

@@ -10,7 +10,7 @@ ms.topic: article
 ms.assetid: 26c47873-fd45-4e28-a74e-58958de2e248
 author: cfreemanwa
 ms.author: cfreeman
-ms.date: 2016-10-12
+ms.date: 10/12/2016
 manager: cfreeman
 ---
 # Administering System Center 2016 - Orchestrator

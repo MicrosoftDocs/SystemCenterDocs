@@ -6,7 +6,7 @@ author: bandersmsft
 ms.author: banders
 ms.prod:  system-center-2016
 keywords:  
-ms.date: 2016-10-12
+ms.date: 10/12/2016
 title:  How to Configure Incident Workflows
 ms.technology:  service-manager
 ms.assetid:  bf7c1bd2-c986-4979-b7c6-b6ccf300a632

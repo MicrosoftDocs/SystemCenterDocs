@@ -11,7 +11,7 @@ ms.topic: article
 ms.assetid: 194dd8e4-23a7-4daf-9ef4-7a73553e0b64
 author: cfreemanwa
 ms.author: cfreeman
-ms.date: 2016-10-12
+ms.date: 10/12/2016
 manager: cfreeman
 ---
 # How to Use the Integration Toolkit to Extend Orchestrator Capabilities

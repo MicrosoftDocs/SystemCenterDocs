@@ -6,7 +6,7 @@ author: bandersmsft
 ms.author: banders
 ms.prod:  system-center-2016
 keywords:  
-ms.date: 2016-10-12
+ms.date: 10/12/2016
 title:  How to Specify a User Role for Catalog Items
 ms.technology:  service-manager
 ms.assetid:  85ce5254-2a03-4e37-8e8c-072b263c7e51

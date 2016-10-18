@@ -6,7 +6,7 @@ author: bandersmsft
 ms.author: banders
 ms.prod:  system-center-2016
 keywords:  
-ms.date: 2016-10-12
+ms.date: 10/12/2016
 title:  Creating Configuration Items
 ms.technology:  service-manager
 ms.assetid:  5eaf4196-7623-480f-b132-2431ab520681

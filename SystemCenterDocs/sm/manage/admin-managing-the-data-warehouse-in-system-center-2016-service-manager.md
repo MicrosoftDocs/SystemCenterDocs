@@ -10,7 +10,7 @@ author: bandersmsft
 ms.author: banders
 ms.prod: system-center-2016
 keywords:  
-ms.date: 2016-10-12
+ms.date: 10/12/2016
 title: Managing the Data Warehouse in Service Manager
 ms.technology:  service-manager
 ms.assetid:  855110b9-cd11-4e06-8139-b21518456215

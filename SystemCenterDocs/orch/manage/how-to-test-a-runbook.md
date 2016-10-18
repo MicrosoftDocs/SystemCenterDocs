@@ -11,7 +11,7 @@ ms.topic: article
 ms.assetid: 5af704c9-6007-4de6-9c75-d7bfba3d4935
 author: cfreemanwa
 ms.author: cfreeman
-ms.date: 2016-10-12
+ms.date: 10/12/2016
 manager: cfreeman
 ---
 # How to Test a Runbook

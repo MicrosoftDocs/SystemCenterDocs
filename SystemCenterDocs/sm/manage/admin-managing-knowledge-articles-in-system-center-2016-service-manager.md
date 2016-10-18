@@ -6,7 +6,7 @@ author: bandersmsft
 ms.author: banders
 ms.prod:  system-center-2016
 keywords:  
-ms.date: 2016-10-12
+ms.date: 10/12/2016
 title:  Managing Knowledge Articles in Service Manager
 ms.technology:  service-manager
 ms.assetid:  50edf3f3-fa1d-4134-8383-dfc6be73ddf0

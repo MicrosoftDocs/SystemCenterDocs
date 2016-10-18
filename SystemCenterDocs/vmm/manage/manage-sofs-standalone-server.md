@@ -20,7 +20,7 @@ Use the instructions in this article if you want to use System Center 2016 - Vir
 
 1.  In the VMM console, click **Fabric** > **Create** > **File Server Cluster**.
 2.  In the Create Clustered File Server Wizard > **General** specify a cluster name, a file server name, and IP addresses if required.
-3. In **Provisioning Type Resource Type**, select the option to provision computers on which Windows Server 2012 R2 or later is installed and fill in the details.
+3. In **Resource Type**, select the option to provision computers on which Windows Server 2012 R2 or later is installed and fill in the details.
 4.  In **Cluster Nodes**, define a list of computers to add to the cluster.
 5.  On the **Summary** page, confirm the settings and then click **Finish**.
 

@@ -6,7 +6,7 @@ author: bandersmsft
 ms.author: banders
 ms.prod:  system-center-2016
 keywords:  
-ms.date: 2016-10-12
+ms.date: 10/12/2016
 title:  How to Set Operations Manager Web Settings
 ms.technology:  service-manager
 ms.assetid:  faa28b76-7132-4962-9f59-95df2bd07aac

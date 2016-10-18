@@ -6,7 +6,7 @@ author: bandersmsft
 ms.author: banders
 ms.prod:  system-center-2016
 keywords:  
-ms.date: 2016-10-12
+ms.date: 10/12/2016
 title:  Configuring Release Management in Service Manager
 ms.technology:  service-manager
 ms.assetid:  29504a71-5574-472c-b930-894d31fe2267

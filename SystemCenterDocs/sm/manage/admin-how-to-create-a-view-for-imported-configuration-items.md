@@ -6,7 +6,7 @@ author: bandersmsft
 ms.author: banders
 ms.prod:  system-center-2016
 keywords:  
-ms.date: 2016-10-12
+ms.date: 10/12/2016
 title:  How to Create a View for Imported Configuration Items
 ms.technology:  service-manager
 ms.assetid:  9507e47e-16d7-4621-a724-39aea32d847c

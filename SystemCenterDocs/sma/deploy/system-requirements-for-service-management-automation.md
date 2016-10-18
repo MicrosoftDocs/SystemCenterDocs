@@ -5,7 +5,7 @@ ms.topic:  article
 author:  bwren
 ms.prod:  system-center-threshold
 keywords:  
-ms.date:  2016-08-18
+ms.date: 10/12/2016
 title:  System requirements for Service Management Automation
 ms.technology:  service-management-automation
 ms.assetid:  222692ab-765c-44bd-8d50-0c0596d26a94

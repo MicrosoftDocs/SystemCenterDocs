@@ -6,7 +6,7 @@ author: bandersmsft
 ms.author: banders
 ms.prod:  system-center-2016
 keywords:  
-ms.date: 2016-10-12
+ms.date: 10/12/2016
 title:  How to Create a Service
 ms.technology:  service-manager
 ms.assetid:  8715ed07-5eea-41cb-b5a8-4134b047b91b

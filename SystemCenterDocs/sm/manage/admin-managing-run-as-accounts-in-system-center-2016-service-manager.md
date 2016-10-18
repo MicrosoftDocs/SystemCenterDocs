@@ -6,7 +6,7 @@ author: bandersmsft
 ms.author: banders
 ms.prod:  system-center-2016
 keywords:  
-ms.date: 2016-10-12
+ms.date: 10/12/2016
 title:  Managing Run As Accounts in Service Manager
 ms.technology:  service-manager
 ms.assetid:  556f240e-d032-406a-ba10-2404fb591d04

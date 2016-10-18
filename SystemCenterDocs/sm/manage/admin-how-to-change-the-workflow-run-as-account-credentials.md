@@ -6,7 +6,7 @@ author: bandersmsft
 ms.author: banders
 ms.prod:  system-center-2016
 keywords:  
-ms.date: 2016-10-12
+ms.date: 10/12/2016
 title:  How to Change the Workflow Run As Account Credentials
 ms.technology:  service-manager
 ms.assetid:  a3b4abd2-a00d-47d8-a578-c54fb32eda21

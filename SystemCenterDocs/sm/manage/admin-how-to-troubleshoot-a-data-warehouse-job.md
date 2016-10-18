@@ -6,7 +6,7 @@ author: bandersmsft
 ms.author: banders
 ms.prod:  system-center-2016
 keywords:  
-ms.date: 2016-10-12
+ms.date: 10/12/2016
 title:  How to Troubleshoot a Data Warehouse Job
 ms.technology:  service-manager
 ms.assetid:  53e50bfa-c0b9-4fdd-8d96-dd4aea852eb8

@@ -6,7 +6,7 @@ author: bandersmsft
 ms.author: banders
 ms.prod:  system-center-2016
 keywords:  
-ms.date: 2016-10-12
+ms.date: 10/12/2016
 title:  Importing Runbooks from System Center Orchestrator
 ms.technology:  service-manager
 ms.assetid:  33f8fa88-fad7-4354-bf6b-dbed1658ff0f

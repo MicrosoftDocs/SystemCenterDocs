@@ -5,7 +5,7 @@ ms.topic:  article
 author:  bandersmsft
 ms.prod:  system-center-threshold
 keywords:  
-ms.date:  2016-06-28
+ms.date: 10/12/2016
 title:  Upgrade to Service Manager Technical Preview
 ms.technology:  service-manager
 ms.assetid:  415e758e-dea9-48c7-b68d-0216c85dfaf1

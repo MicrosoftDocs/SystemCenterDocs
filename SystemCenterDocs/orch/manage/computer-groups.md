@@ -11,7 +11,7 @@ ms.topic: article
 ms.assetid: 6e085a23-5fae-4592-a08c-55cefb2a2926
 author: cfreemanwa
 ms.author: cfreeman
-ms.date: 2016-10-12
+ms.date: 10/12/2016
 manager: cfreeman
 ---
 # Computer Groups

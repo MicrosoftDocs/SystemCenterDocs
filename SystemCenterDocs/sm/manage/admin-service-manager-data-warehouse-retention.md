@@ -6,7 +6,7 @@ author: bandersmsft
 ms.author: banders
 ms.prod:  system-center-2016
 keywords:  
-ms.date: 2016-10-12
+ms.date: 10/12/2016
 title:  Service Manager Data Warehouse Retention
 ms.technology:  service-manager
 ms.assetid:  b8678e2d-8c8c-40b4-a18f-b5495ad7a4cd

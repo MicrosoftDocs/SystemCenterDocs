@@ -6,7 +6,7 @@ author: bandersmsft
 ms.author: banders
 ms.prod:  system-center-2016
 keywords:  
-ms.date: 2016-10-12
+ms.date: 10/12/2016
 title:  Deleting Configuration Items
 ms.technology:  service-manager
 ms.assetid:  8c69ac89-eb91-4a06-87f9-8e0c34120255

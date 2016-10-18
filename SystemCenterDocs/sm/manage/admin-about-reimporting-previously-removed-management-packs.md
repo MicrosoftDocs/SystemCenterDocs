@@ -6,7 +6,7 @@ author: bandersmsft
 ms.author: banders
 ms.prod:  system-center-2016
 keywords:  
-ms.date: 2016-10-12
+ms.date: 10/12/2016
 title:  About Reimporting Previously Removed Management Packs
 ms.technology:  service-manager
 ms.assetid:  1fb98a73-5130-4d1e-934b-94607b9c0d57

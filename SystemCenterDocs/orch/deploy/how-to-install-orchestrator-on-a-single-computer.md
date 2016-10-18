@@ -5,7 +5,7 @@ ms.topic:  article
 author:  bwren
 ms.prod:  system-center-threshold
 keywords:  
-ms.date:  2016-08-18
+ms.date: 10/12/2016
 title:  How to install Orchestrator on a single computer
 ms.technology:  orchestrator
 ms.assetid:  7c72117a-8742-4a68-90d1-00c6d9dcd012

@@ -11,7 +11,7 @@ ms.topic: article
 ms.assetid: 589ab8a8-f723-4da1-8488-683d4939c12a
 author: cfreemanwa
 ms.author: cfreeman
-ms.date: 2016-10-12
+ms.date: 10/12/2016
 manager: cfreeman
 ---
 

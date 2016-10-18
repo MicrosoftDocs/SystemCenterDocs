@@ -11,7 +11,7 @@ ms.topic: article
 ms.assetid: fc9e2b46-a272-415c-a7f7-ab5b2242bcaa
 author: cfreemanwa
 ms.author: cfreeman
-ms.date: 2016-10-12
+ms.date: 10/12/2016
 manager: cfreeman
 ---
 # Embedded Loops

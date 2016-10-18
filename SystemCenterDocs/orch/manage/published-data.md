@@ -11,7 +11,7 @@ ms.topic: article
 ms.assetid: e339c027-4c69-43e5-a59b-ac7ea0a676c8
 author: cfreemanwa
 ms.author: cfreeman
-ms.date: 2016-10-12
+ms.date: 10/12/2016
 manager: cfreeman
 ---
 # Published Data

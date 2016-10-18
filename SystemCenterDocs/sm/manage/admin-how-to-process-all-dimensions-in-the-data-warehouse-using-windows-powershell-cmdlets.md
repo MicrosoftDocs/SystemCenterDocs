@@ -6,7 +6,7 @@ author: bandersmsft
 ms.author: banders
 ms.prod:  system-center-2016
 keywords:  
-ms.date: 2016-10-12
+ms.date: 10/12/2016
 title:  How to Process All Dimensions in the Data Warehouse Using Windows PowerShell Cmdlets
 ms.technology:  service-manager
 ms.assetid:  c235b610-c86e-443e-bb4d-337eead6febd

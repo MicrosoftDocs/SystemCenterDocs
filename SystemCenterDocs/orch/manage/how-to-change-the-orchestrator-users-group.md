@@ -11,7 +11,7 @@ ms.topic: article
 ms.assetid: a1d182f3-b80b-4414-90e6-4c0a10d62f60
 author: cfreemanwa
 ms.author: cfreeman
-ms.date: 2016-10-12
+ms.date: 10/12/2016
 manager: cfreeman
 ---
 # How to Change the Orchestrator Users Group

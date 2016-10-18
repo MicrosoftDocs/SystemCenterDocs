@@ -6,7 +6,7 @@ author: bandersmsft
 ms.author: banders
 ms.prod:  system-center-2016
 keywords:  
-ms.date: 2016-10-12
+ms.date: 10/12/2016
 title:  How to Create Incident Templates
 ms.technology:  service-manager
 ms.assetid:  5563fbd2-40ee-4b57-b3c9-22c88759a6a1
