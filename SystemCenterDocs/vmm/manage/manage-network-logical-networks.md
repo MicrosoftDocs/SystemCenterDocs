@@ -4,8 +4,8 @@ title: Set up logical networks in the VMM fabric
 description: This article describes how to set up logical networks in the VMM fabric
 author:  rayne-wiselman
 ms.author: raynew
-manager:  cfreemanwa
-ms.date:  2016-09-22
+manager:  cfreeman
+ms.date:  10/16/2016
 ms.topic:  article
 ms.prod:  system-center-threshold
 ms.technology:  virtual-machine-manager
@@ -16,8 +16,6 @@ ms.technology:  virtual-machine-manager
 >Applies To: System Center 2016  - Virtual Machine Manager
 
 Read this article to learn how to create System Center 2016 - Virtual Machine Manager (VMM) logical networks.
-
-## Overview
 
 There are different types of networks in most organizations, including corporate networks, management networks, and others. These networks might be isolated physically or virtually using network virtualization and virtual LANs (VLANs). In VMM each of these networks is defined as a logical network. Logical networks are logical objects that mirror your physicals networks and are used to model your VMM network fabric.
 

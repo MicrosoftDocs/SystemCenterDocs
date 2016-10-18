@@ -1,22 +1,21 @@
 ---
 ms.assetid: 2d8c7af1-fe96-4901-9d51-90e12bedeaa8
 title: Set up host groups in the VMM compute fabric
-description: This article provides about setting up host groups in the VMM fabric
+description: This article describes how to set up host groups in the VMM fabric
 author:  rayne-wiselman
 ms-author: raynew
-manager:  cfreemanwa
-ms.date:  2016-09-22
+manager:  cfreeman
+ms.date:  10/16/2016
 ms.topic:  article
 ms.prod:  system-center-threshold
 ms.technology:  virtual-machine-manager
 ---
----
+
 # Set up host groups in the VMM compute fabric
 
 >Applies To: System Center 2016 - Virtual Machine Manager
 
 Read this article to learn about setting up and managing host groups in the System Center 2016 - Virtual Machine Manager (VMM) fabric.
-
 
 A VMM host group is a logical entity that groups fabric resources together. You can group virtual machine hosts or clusters, or create nested host groups. After you've created host groups you assign and configure resources at the host group level. Those resources are then applied to all hosts and clusters in the group.
 

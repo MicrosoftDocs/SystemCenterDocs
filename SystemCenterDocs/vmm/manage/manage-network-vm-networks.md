@@ -4,8 +4,8 @@ title: Set up VM networks in the VMM fabric
 description: This article describes how to set up VM networks in the VMM fabric
 author:  rayne-wiselman
 ms.author: raynew
-manager:  cfreemanwa
-ms.date:  2016-09-22
+manager:  cfreeman
+ms.date:  10/16/2016
 ms.topic:  article
 ms.prod:  system-center-threshold
 ms.technology:  virtual-machine-manager
@@ -17,7 +17,6 @@ ms.technology:  virtual-machine-manager
 
 This article describes how to create VM networks based on System Center 2016 - Virtual Machine Manager (VMM) logical networks.
 
-## Overview
 
 In a virtualized network environment, we want to abstract virtual machines from the underlying logical network. VM networks help you to do this. VM networks are abstract objects that act as an interface to logical networks.
 

@@ -6,7 +6,7 @@ author:  markgalioto
 ms.author: markgal
 ms.prod:  system-center-threshold
 keywords:
-ms.date:  10/12/2016
+ms.date:  10/14/2016
 title:  Upgrade to DPM-2016
 ms.technology:  system-center-2016
 ms.assetid:  7f507ce9-676c-48df-9229-c02f2284a406
@@ -16,7 +16,7 @@ ms.assetid:  7f507ce9-676c-48df-9229-c02f2284a406
 
 >Applies To: System Center 2016
 
-You can install DPM 2016 on Windows Server 2012 R2 with Update Rollup 10, or on Windows Server 2016. However, before you upgrade or install DPM 2016, please read the [Installation prerequisites](./get-dpm-installed.md#BKMK_Prereq).
+You can install DPM 2016 on Windows Server 2012 R2, or on Windows Server 2016. If you are installing DPM 2016 on Windows Server 2012 R2, you must upgrade an existing DPM installation from DPM 2012 R2 with Update Rollup 10 or greater. Before you upgrade or install DPM 2016, please read the [Installation prerequisites](./get-dpm-installed.md#BKMK_Prereq).
 
 
 ## Upgrade path for DPM 2016
@@ -35,9 +35,9 @@ If you are going to upgrade from a previous version of DPM to DPM 2016, make sur
 1. To install DPM, double-click Setup.exe to open the System Center 2016 Wizard.
 2. Under Install, click Data Protection Manager. This starts Setup. Agree to the license terms and conditions and follow the setup wizard.
 
-Some DPM 2016 features, such as Modern Storage (MDS), require the Windows Server 2016 RTM build. It is possible to upgrade DPM 2016 from DPM 2012 R2, running on Windows Server 2012 R2. However, customers receiving DPM 2016 will want the latest features, so Microsoft recommends installing DPM 2016 on a new installation of Windows Server 2016 RTM. For instructions on installing DPM, see the article, [Installing DPM 2016](./get-dpm-installed.md).
+Some DPM 2016 features, such as Modern Backup Storage, require the Windows Server 2016 RTM build. It is possible to upgrade DPM 2016 from DPM 2012 R2, running on Windows Server 2012 R2. However, customers receiving DPM 2016 will want the latest features, so Microsoft recommends installing DPM 2016 on a new installation of Windows Server 2016 RTM. For instructions on installing DPM, see the article, [Installing DPM 2016](./get-dpm-installed.md).
 
-## Adding Storage for Modern Storage (MDS)
+## Adding Storage for Modern Backup Storage
 
 To store backups efficiently, DPM 2016 uses Volumes. Disks can also be used to continue storing backups like DPM 2012 R2.
 
@@ -117,8 +117,8 @@ To create a Protection Group:
 
 The remainder of the New Protection Group wizard is unchanged from DPM 2012 R2. Continue through the wizard to complete creation of your new protection group.
 
-## Migrating legacy storage to Modern Storage
-After upgrading DPM 2012 R2 to DPM 2016 and the operating system to Windows Server 2016, you can update your existing protection groups to the new DPM 2016 features. By default, protection groups are not changed, and continue to function as they were configured in DPM 2012 R2. Updating protection groups to use modern storage is optional. To update the protection group, stop protection of all data sources with Retain Data, and add the data sources to a new protection group. DPM begins protecting these data sources the new way.
+## Migrating legacy storage to Modern Backup Storage
+After upgrading DPM 2012 R2 to DPM 2016 and the operating system to Windows Server 2016, you can update your existing protection groups to the new DPM 2016 features. By default, protection groups are not changed, and continue to function as they were configured in DPM 2012 R2. Updating protection groups to use Modern Backup Storage is optional. To update the protection group, stop protection of all data sources with Retain Data, and add the data sources to a new protection group. DPM begins protecting these data sources the new way.
 
 1. In the Administrator Console, select the **Protection** feature, and in the **Protection Group Member** list, right-click the member, and select **Stop protection of member...**.
 
@@ -132,7 +132,7 @@ After upgrading DPM 2012 R2 to DPM 2016 and the operating system to Windows Serv
 
     ![Retain data](../media/dpm-2016-retain-data.png)
 
-3. Create a new protection group that uses Modern Storage. and include the unprotected data sources.
+3. Create a new protection group that uses Modern Backup Storage. and include the unprotected data sources.
 
 
 ## Adding Disks to increase legacy storage

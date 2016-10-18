@@ -36,8 +36,8 @@ Orchestrator provides a workflow management solution for the data center. Orches
 
 ## Other resources for this product
 
--   [Administering System Center 2016 - Orchestrator](../manage/administering-system-center-2016---orchestrator.md)
+-   [Administering System Center 2016 - Orchestrator](../manage/administering-orchestrator.md)
 
--   [Using Runbooks in System Center 2016 - Orchestrator](../get-started/using-runbooks-in-system-center-2016---orchestrator.md))
+-   [Using Runbooks in System Center 2016 - Orchestrator](../get-started/using-runbooks.md))
 
--   [Using the Orchestration Console in System Center 2016 - Orchestrator](../get-started/using-the-orchestration-console-in-system-center-2016---orchestrator.md)
+-   [Using the Orchestration Console in System Center 2016 - Orchestrator](../get-started/using-the-console.md)

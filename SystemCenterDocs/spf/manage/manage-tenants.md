@@ -1,13 +1,14 @@
 ---
+ms.assetid: 8a6608c6-5189-4e4a-a9bf-c44b3b13aa38
 title: Manage tenants and user roles in SPF
-description: Provides information about registering the SPF endpoint in Windows Azure Pack
+description: Provides information setting up SPF tenants, and creating self-service tenant roles in VMk
 author: rayne-wiselman
 ms.author: raynew
 manager: cfreeman
-ms.date: 10/14/2016
+ms.date: 10/16/2016
+ms.topic: article
 ms.prod: system-center-threshold
 ms.technology: service-provider-foundation
-ms.assetid: 8a6608c6-5189-4e4a-a9bf-c44b3b13aa38
 ---
 
 #  Manage tenants and user roles in SPF

@@ -1,14 +1,14 @@
 ---
+ms.assetid: 3e85d403-e8dc-40b0-a578-0caee2b3ee1f
 title: Deploy a private VMM cloud
 description: This article provides an overview of private cloud deployment in VMM
 author: rayne-wiselman
 ms.author: raynew
 manager: cfreeman
-ms.date: 10/14/2016
+ms.date: 10/16/2016
 ms.topic: article
 ms.prod: system-center-2016
 ms.technology: virtual-machine-manager
-ms.assetid: 3e85d403-e8dc-40b0-a578-0caee2b3ee1f
 ---
 
 

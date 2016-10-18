@@ -4,8 +4,8 @@ title: Set up the VMM storage fabric
 description: This article describes how to set up the VMM storage fabric
 author:  rayne-wiselman
 ms.author: raynew
-manager:  cfreemanwa
-ms.date:  2016-08-31
+manager:  cfreeman
+ms.date:  10/16/2016
 ms.topic:  article
 ms.prod:  system-center-threshold
 ms.technology:  virtual-machine-manager
