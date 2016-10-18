@@ -134,9 +134,9 @@ For additional information about PowerPivot relationships, see [Introduction to 
 
 You can now modify the default labels and format your table for presentation.  
 
-For more information about the workflow of a runbook and an explanation of runbook jobs and runbook instances, see [Orchestrator Architecture](../get-started/orchestrator-architecture.md) in the [getting started with system center 2016 - orchestrator](../get-started/getting-started-with-system-center-2016---orchestrator.md).  
+For more information about the workflow of a runbook and an explanation of runbook jobs and runbook instances, see [Orchestrator Architecture](../get-started/orchestrator-architecture.md) in the [getting started with system center 2016 - orchestrator](../get-started/get-started-with-orchestrator.md).  
 
 For more information about PowerPivot for Excel, see [Introducing PowerPivot for Excel](http://go.microsoft.com/fwlink/p/?LinkID=187006).  
 
 ## See Also  
-[Administering System Center 2016 - Orchestrator](../manage/administering-system-center-2016---orchestrator.md)  
+[Administering System Center 2016 - Orchestrator](../manage/administering-orchestrator.md)  

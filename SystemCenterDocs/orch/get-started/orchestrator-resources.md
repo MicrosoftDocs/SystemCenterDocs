@@ -29,4 +29,4 @@ In addition to this online reference for System Center 2016 - Orchestrator, ther
 |Orchestrator Community Forums on TechNet|[http://social.technet.microsoft.com/Forums/category/systemcenterorchestrator](http://go.microsoft.com/fwlink/p/?LinkId=234106)|  
 
 ## See Also  
-[Getting Started with System Center 2016 - Orchestrator](../get-started/getting-started-with-system-center-2016---orchestrator.md)  
+[Getting Started with System Center 2016 - Orchestrator](../get-started/get-started-with-orchestrator.md)  

@@ -45,4 +45,4 @@ By default, each runbook server is configured to simultaneously run a maximum of
 3.  Restart the **Orchestrator Runbook Service**.  
 
 ## See Also  
-[Administering System Center 2016 - Orchestrator](../manage/administering-system-center-2016---orchestrator.md)  
+[Administering System Center 2016 - Orchestrator](../manage/administering-orchestrator.md)  
