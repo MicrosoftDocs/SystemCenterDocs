@@ -10,7 +10,7 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 660f136d-d653-490f-9e5d-772da3389991
 ms.author: cfreeman
-ms.date: 2016-10-12
+ms.date: 10/12/2016
 author: cfreemanwa
 manager: cfreeman
 ---
@@ -33,6 +33,8 @@ Orchestrator provides a workflow management solution for the data center. Orches
 -   [Orchestrator Resources](../get-started/orchestrator-resources.md)
 
     Provides additional resources to help you use Orchestrator.
+
+-   [Upgrade to Orchestrator 2016](../get-started/upgrade-to-orchestrator.md)
 
 ## Other resources for this product
 
