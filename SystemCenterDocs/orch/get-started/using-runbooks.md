@@ -46,4 +46,4 @@ For more information on building custom solutions with Orchestrator in System Ce
 
 -   [Administering System Center 2016 - Orchestrator](../manage/administering-orchestrator.md)
 
--   [Using the Orchestration Console in System Center 2016 - Orchestrator](../get-started/using-the console.md)
+-   [Using the Orchestration Console in System Center 2016 - Orchestrator](../get-started/using-the-console.md)
