@@ -40,4 +40,4 @@ Orchestrator provides a workflow management solution for the data center. Orches
 
 -   [Using Runbooks in System Center 2016 - Orchestrator](../get-started/using-runbooks.md))
 
--   [Using the Orchestration Console in System Center 2016 - Orchestrator](../get-started/using-the console.md)
+-   [Using the Orchestration Console in System Center 2016 - Orchestrator](../get-started/using-the-console.md)
