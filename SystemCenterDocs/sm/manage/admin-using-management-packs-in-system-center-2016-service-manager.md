@@ -6,7 +6,7 @@ author: bandersmsft
 ms.author: banders
 ms.prod:  system-center-2016
 keywords:  
-ms.date: 2016-10-12
+ms.date: 10/12/2016
 title:  Using Management Packs in Service Manager
 ms.technology:  service-manager
 ms.assetid:  3c42925f-74f3-4c18-934e-8d1cd2edaa3b

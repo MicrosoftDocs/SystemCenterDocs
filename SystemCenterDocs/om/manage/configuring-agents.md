@@ -3,7 +3,7 @@ ms.assetid: 7a4739b5-81ef-4495-aa09-5545641d8274
 title: Configuring Agents
 author: mgoedtel
 manager: cfreemanwa
-ms.date: 2016-10-12
+ms.date: 10/12/2016
 ms.custom: na
 ms.prod: system-center-threshold
 ms.technology: operations-manager

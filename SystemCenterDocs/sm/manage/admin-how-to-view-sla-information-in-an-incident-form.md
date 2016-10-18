@@ -6,7 +6,7 @@ author: bandersmsft
 ms.author: banders
 ms.prod:  system-center-2016
 keywords:  
-ms.date: 2016-10-12
+ms.date: 10/12/2016
 title:  How to View SLA Information in an Incident Form
 ms.technology:  service-manager
 ms.assetid:  e2014c9a-bb98-445e-b5fa-194cbb3d4634

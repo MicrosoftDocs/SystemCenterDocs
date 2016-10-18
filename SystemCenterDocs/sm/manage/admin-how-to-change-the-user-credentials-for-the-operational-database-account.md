@@ -6,7 +6,7 @@ author: bandersmsft
 ms.author: banders
 ms.prod:  system-center-2016
 keywords:  
-ms.date: 2016-10-12
+ms.date: 10/12/2016
 title:  How to Change the User Credentials for the Operational Database Account
 ms.technology:  service-manager
 ms.assetid:  04c4c092-e4e4-4e09-bfed-b3f83bb7ae43

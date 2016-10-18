@@ -6,7 +6,7 @@ author: bandersmsft
 ms.author: banders
 ms.prod:  system-center-2016
 keywords:  
-ms.date: 2016-10-12
+ms.date: 10/12/2016
 title:  How to Configure General Activity Settings
 ms.technology:  service-manager
 ms.assetid:  87d70344-d44d-4c54-b215-3217a217699b

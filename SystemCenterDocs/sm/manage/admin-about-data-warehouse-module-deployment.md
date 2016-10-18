@@ -6,7 +6,7 @@ author: bandersmsft
 ms.author: banders
 ms.prod:  system-center-2016
 keywords:  
-ms.date: 2016-10-12
+ms.date: 10/12/2016
 title:  About Data Warehouse Module Deployment
 ms.technology:  service-manager
 ms.assetid:  c7dd72b4-65f1-426b-a700-d54afe55af44

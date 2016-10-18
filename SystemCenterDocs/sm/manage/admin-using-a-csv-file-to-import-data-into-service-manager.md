@@ -6,7 +6,7 @@ author: bandersmsft
 ms.author: banders
 ms.prod:  system-center-2016
 keywords:  
-ms.date: 2016-10-12
+ms.date: 10/12/2016
 title:  Using a CSV File to Import Data into Service Manager
 ms.technology:  service-manager
 ms.assetid:  d968e937-59c1-4a9a-8786-8ff0bbf62db0

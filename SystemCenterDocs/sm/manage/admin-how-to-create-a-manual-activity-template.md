@@ -6,7 +6,7 @@ author: bandersmsft
 ms.author: banders
 ms.prod:  system-center-2016
 keywords:  
-ms.date: 2016-10-12
+ms.date: 10/12/2016
 title:  How to Create a Manual Activity Template
 ms.technology:  service-manager
 ms.assetid:  09be239c-1add-4acc-ac21-a29aa080b216

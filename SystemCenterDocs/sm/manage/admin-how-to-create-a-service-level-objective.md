@@ -6,7 +6,7 @@ author: bandersmsft
 ms.author: banders
 ms.prod:  system-center-2016
 keywords:  
-ms.date: 2016-10-12
+ms.date: 10/12/2016
 title:  How to Create or Edit a Service Level Objective
 ms.technology:  service-manager
 ms.assetid:  703da8fd-217f-4cba-bb5c-56b7f06c34e1

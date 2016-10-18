@@ -3,7 +3,7 @@ title:  What's new in System Center
 description:  
 author: mgoedtel
 manager: cfreemanwa
-ms.date: 2016-09-15
+ms.date: 10/12/2016
 ms.custom: na
 ms.prod: system-center-threshold
 ms.technology: operations-manager

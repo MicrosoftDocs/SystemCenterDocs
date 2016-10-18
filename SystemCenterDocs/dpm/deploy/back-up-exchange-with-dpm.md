@@ -6,7 +6,7 @@ author:  markgalioto
 ms.author: markgal
 ms.prod:  system-center-threshold
 keywords:  
-ms.date:  2016-10-12
+ms.date: 10/12/2016
 title:  Back up Exchange with DPM
 ms.technology:  data-protection-manager
 ms.assetid:  79fb8831-1d70-4d1d-bed1-f28fa9186730

@@ -5,7 +5,7 @@ ms.topic:  article
 author:  bwren
 ms.prod:  system-center-threshold
 keywords:  
-ms.date:  2016-08-18
+ms.date: 10/12/2016
 title:  How to uninstall Service Management Automation
 ms.technology:  service-management-automation
 ms.assetid:  adf42c66-20e4-450c-abfd-71bb0ff816da

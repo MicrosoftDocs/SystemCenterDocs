@@ -6,7 +6,7 @@ author: bandersmsft
 ms.author: banders
 ms.prod:  system-center-2016
 keywords:  
-ms.date: 2016-10-12
+ms.date: 10/12/2016
 title:  How to Subscribe to Notifications
 ms.technology:  service-manager
 ms.assetid:  a52f6f49-795a-43d1-a6d6-d86140c7d9d6

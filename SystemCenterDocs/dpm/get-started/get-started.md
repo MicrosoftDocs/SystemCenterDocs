@@ -5,7 +5,7 @@ ms.topic:  article
 author:  markgalioto
 ms.prod:  system-center-threshold
 keywords:  
-ms.date:  2016-10-01
+ms.date: 10/12/2016
 title:  Get started
 ms.technology:  data-protection-manager
 ms.assetid:  bcb3a5fe-ce5b-4e62-9254-7d85dbf29443

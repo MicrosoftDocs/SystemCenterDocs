@@ -6,7 +6,7 @@ author: bandersmsft
 ms.author: banders
 ms.prod:  system-center-2016
 keywords:  
-ms.date: 2016-10-12
+ms.date: 10/12/2016
 title:  Administering System Center 2016 - Service Manager
 ms.technology:  service-manager
 ms.assetid:  dba97a37-aeb4-4cc0-8423-85bb3489d1e7

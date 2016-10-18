@@ -6,7 +6,7 @@ author: bandersmsft
 ms.author: banders
 ms.prod:  system-center-2016
 keywords:  
-ms.date: 2016-10-12
+ms.date: 10/12/2016
 title:  How to Reactivate Incidents with SLA Information
 ms.technology:  service-manager
 ms.assetid:  7e121252-1728-4297-b41f-0b4e1ba92c57

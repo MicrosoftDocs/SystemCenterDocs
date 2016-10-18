@@ -5,7 +5,7 @@ ms.topic:  article
 author:  markgalioto
 ms.prod:  system-center-threshold
 keywords:  
-ms.date:  2016-10-01
+ms.date: 10/12/2016
 title:  Identify data sources you want to protect
 ms.technology:  data-protection-manager
 ms.assetid:  4774dd1a-f50a-4a75-8783-abb5d134298a

@@ -11,7 +11,7 @@ ms.topic: article
 ms.assetid: 4552c484-d0c0-49e4-b963-fe360ea3f20e
 author: cfreemanwa
 ms.author: cfreeman
-ms.date: 2016-10-12
+ms.date: 10/12/2016
 manager: cfreeman
 ---
 # Functions

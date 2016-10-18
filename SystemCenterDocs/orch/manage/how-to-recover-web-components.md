@@ -11,7 +11,7 @@ ms.topic: article
 ms.assetid: edc3c49a-93e9-4ec4-81e3-c454b54ae976
 author: cfreemanwa
 ms.author: cfreeman
-ms.date: 2016-10-12
+ms.date: 10/12/2016
 manager: cfreeman
 ---
 # How to Recover Web Components

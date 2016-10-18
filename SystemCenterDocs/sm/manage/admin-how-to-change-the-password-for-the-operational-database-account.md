@@ -6,7 +6,7 @@ author: bandersmsft
 ms.author: banders
 ms.prod:  system-center-2016
 keywords:  
-ms.date: 2016-10-12
+ms.date: 10/12/2016
 title:  How to Change the Password for the Operational Database Account
 ms.technology:  service-manager
 ms.assetid:  4cc6e765-1cfd-4e0a-aac6-2b5fd3b671b5

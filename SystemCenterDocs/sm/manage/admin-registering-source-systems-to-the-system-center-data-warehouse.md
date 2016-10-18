@@ -6,7 +6,7 @@ author: bandersmsft
 ms.author: banders
 ms.prod:  system-center-2016
 keywords:  
-ms.date: 2016-10-12
+ms.date: 10/12/2016
 title:  Registering Source Systems to the System Center Data Warehouse
 ms.technology:  service-manager
 ms.assetid:  7f48a1c7-dc88-447d-8bde-8af76783e2d3

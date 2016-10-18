@@ -5,7 +5,7 @@ ms.topic:  article
 author:  bwren
 ms.prod:  system-center-threshold
 keywords:  
-ms.date:  2016-08-18
+ms.date: 10/12/2016
 title:  How to upgrade from a previous version of Service Management Automation
 ms.technology:  service-management-automation
 ms.assetid:  c849610a-81ea-474d-a77f-bc15694e65f0

@@ -7,7 +7,7 @@ author:  bandersmsft
 ms.author: banders
 ms.prod:  system-center-2016
 keywords:  
-ms.date:  2016-10-12
+ms.date: 10/12/2016
 title:  Optionally Disable ECL Logging for Faster Connector Synchronization
 ms.technology:  service-manager
 ms.tgt_pltfrm: na

@@ -5,7 +5,7 @@ ms.topic:  article
 author:  bwren
 ms.prod:  system-center-threshold
 keywords:  
-ms.date:  2016-08-18
+ms.date: 10/12/2016
 title:  Establish trust between Service Management Automation and Service Provider Foundation
 ms.technology:  service-management-automation
 ms.assetid:  1b1ce164-f5c2-4a94-bce9-9271e3666f89

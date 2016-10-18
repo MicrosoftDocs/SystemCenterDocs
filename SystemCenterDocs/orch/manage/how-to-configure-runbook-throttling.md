@@ -11,7 +11,7 @@ ms.topic: article
 ms.assetid: dfa35522-ed49-4239-94b3-affe2a853420
 author: cfreemanwa
 ms.author: cfreeman
-ms.date: 2016-10-12
+ms.date: 10/12/2016
 manager: cfreeman
 ---
 # How to Configure Runbook Throttling

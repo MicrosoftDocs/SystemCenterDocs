@@ -3,7 +3,7 @@ ms.assetid: f286e1fc-57f5-469f-bee5-e3756b560810
 title: Applying Overrides to Object Discoveries
 author: mgoedtel
 manager: cfreemanwa
-ms.date: 2016-10-12
+ms.date: 10/12/2016
 ms.custom: na
 ms.prod: system-center-threshold
 ms.technology: operations-manager

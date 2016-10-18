@@ -3,7 +3,7 @@ ms.assetid: e598989d-0aa8-4eb4-b5f7-db27d2beb8a0
 title: How to Manage Resource Pools
 author: mgoedtel
 manager: cfreemanwa
-ms.date: 2016-10-12
+ms.date: 10/12/2016
 ms.custom: na
 ms.prod: system-center-threshold
 ms.technology: operations-manager

@@ -11,7 +11,7 @@ ms.topic: article
 ms.assetid: 7668afd1-2bc8-4861-8279-63361029f3a3
 uthor: cfreemanwa
 ms.author: cfreeman
-ms.date: 2016-10-12
+ms.date: 10/12/2016
 manager: cfreeman
 ---
 # Deploying Runbooks

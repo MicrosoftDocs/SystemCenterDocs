@@ -6,7 +6,7 @@ author: bandersmsft
 ms.author: banders
 ms.prod:  system-center-2016
 keywords:  
-ms.date: 2016-10-12
+ms.date: 10/12/2016
 title:  How to Change the Credentials for SQL Server Analysis Services Account
 ms.technology:  service-manager
 ms.assetid:  f8a1be01-4c9e-4e47-bd5e-d9614ec045bc

@@ -3,7 +3,7 @@ ms.assetid: 706132d8-a84c-4331-97bc-cf68c551a6fe
 title: Install Agent on UNIX and Linux Using the Discovery Wizard
 author: mgoedtel
 manager: cfreemanwa
-ms.date: 2016-10-12
+ms.date: 10/12/2016
 ms.custom: na
 ms.prod: system-center-threshold
 ms.technology: operations-manager

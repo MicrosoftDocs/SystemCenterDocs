@@ -6,7 +6,7 @@ author: bandersmsft
 ms.author: banders
 ms.prod:  system-center-2016
 keywords:  
-ms.date: 2016-10-12
+ms.date: 10/12/2016
 title:  How to Create or Edit a Calendar Item
 ms.technology:  service-manager
 ms.assetid:  b06ad28d-a10f-475a-9bce-ade1197cd169

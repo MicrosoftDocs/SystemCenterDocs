@@ -6,7 +6,7 @@ author: bandersmsft
 ms.author: banders
 ms.prod:  system-center-2016
 keywords:  
-ms.date: 2016-10-12
+ms.date: 10/12/2016
 title:  Importing Data from Configuration Manager
 ms.technology:  service-manager
 ms.assetid:  abaf3337-f620-4220-bbbb-13007dc72754

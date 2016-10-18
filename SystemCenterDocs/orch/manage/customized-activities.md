@@ -11,7 +11,7 @@ ms.topic: article
 ms.assetid: 414203e5-d2b3-4990-bc6a-7387896a47d1
 author: cfreemanwa
 ms.author: cfreeman
-ms.date: 2016-10-12
+ms.date: 10/12/2016
 manager: cfreeman
 ---
 # Customized Activities

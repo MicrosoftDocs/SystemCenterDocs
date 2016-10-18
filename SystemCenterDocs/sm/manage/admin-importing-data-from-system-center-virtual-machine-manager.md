@@ -6,7 +6,7 @@ author: bandersmsft
 ms.author: banders
 ms.prod:  system-center-2016
 keywords:  
-ms.date: 2016-10-12
+ms.date: 10/12/2016
 title:  Importing Data from System Center Virtual Machine Manager
 ms.technology:  service-manager
 ms.assetid:  c43bfb32-0c1a-4e8e-8f10-373e68fc11a4

@@ -5,7 +5,7 @@ ms.topic:  article
 author:  markgalioto
 ms.prod:  system-center-threshold
 keywords:  
-ms.date:  2016-10-12
+ms.date: 10/12/2016
 title:  Deploy
 ms.technology:  data-protection-manager
 ms.assetid:  69a0f912-ed09-41cc-a1e3-04c09ce0bace

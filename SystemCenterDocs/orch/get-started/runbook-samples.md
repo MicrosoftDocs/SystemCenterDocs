@@ -10,7 +10,7 @@ ms.topic: article
 ms.assetid: 7dcf9d0a-db63-48ad-9fb8-525147ba62b7
 author: rayne-wiselman
 ms.author: cfreeman
-ms.date: 2016-10-12
+ms.date: 10/12/2016
 manager: cfreeman
 ---
 

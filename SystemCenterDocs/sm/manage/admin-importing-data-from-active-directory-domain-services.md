@@ -6,7 +6,7 @@ author: bandersmsft
 ms.author: banders
 ms.prod:  system-center-2016
 keywords:  
-ms.date: 2016-10-12
+ms.date: 10/12/2016
 title:  Importing Data from Active Directory Domain Services
 ms.technology:  service-manager
 ms.assetid:  d039eac3-e5cd-4f11-ac6c-bb856bafcc92
