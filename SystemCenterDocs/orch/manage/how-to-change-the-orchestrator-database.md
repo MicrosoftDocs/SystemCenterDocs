@@ -81,4 +81,4 @@ The web service supporting the Orchestration console does not use the **Settings
     **C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319\\aspnet\_regiis.exe \-pef "connectionStrings" "C:\\Program Files \(x86\)\\Microsoft System Center 2016\\Orchestrator\\Web Service\\Orchestrator2016"**  
 
 ## See Also  
-[Administering System Center 2016 - Orchestrator](../manage/administering-system-center-2016---orchestrator.md)  
+[Administering System Center 2016 - Orchestrator](../manage/administering-orchestrator.md)  

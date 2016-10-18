@@ -4,8 +4,8 @@ ms.custom: na
 ms.prod: system-center-threshold
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-  - orchestratorms.tgt_pltfrm: na
+ms.technology: orchestrator
+ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 26c47873-fd45-4e28-a74e-58958de2e248
 author: cfreemanwa
@@ -65,8 +65,8 @@ System Center 2016 - Orchestrator is a workflow management solution for the data
 
 ## Other Resources for this Product
 
--   [Getting Started with System Center 2016 - Orchestrator](../get-started/getting-started-with-system-center-2016---orchestrator.md)
+-   [Getting Started with System Center 2016 - Orchestrator](../get-started/get-started-with-orchestrator.md)
 
--   [Using Runbooks in System Center 2016 - Orchestrator](../get-started/using-runbooks-in-system-center-2016---orchestrator.md)
+-   [Using Runbooks in System Center 2016 - Orchestrator](../get-started/using-runbooks.md)
 
 -   [Using the Orchestration Console in System Center 2016 - Orchestrator](../get-started/using-the-console.md)
