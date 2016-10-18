@@ -11,7 +11,7 @@ ms.topic: article
 ms.assetid: 0755be30-3648-47c0-a009-e2f0ff85040d
 author: cfreemanwa
 ms.author: cfreeman
-ms.date: 2016-10-12
+ms.date: 10/12/2016
 manager: cfreeman
 ---
 # How to Benchmark

@@ -5,7 +5,7 @@ ms.topic:  article
 author:  markgalioto
 ms.prod:  system-center-threshold
 keywords:  
-ms.date:  2016-10-01
+ms.date: 10/12/2016
 title:  Generate DPM reports
 ms.technology:  data-protection-manager
 ms.assetid:  f9a97135-1c5b-45a9-b307-bb957fde21d8

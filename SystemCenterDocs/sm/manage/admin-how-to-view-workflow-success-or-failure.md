@@ -6,7 +6,7 @@ author: bandersmsft
 ms.author: banders
 ms.prod:  system-center-2016
 keywords:  
-ms.date: 2016-10-12
+ms.date: 10/12/2016
 title:  How to View Workflow Success or Failure
 ms.technology:  service-manager
 ms.assetid:  eb1f9f39-6d4e-4f8c-b236-c1d3bf90f5f3

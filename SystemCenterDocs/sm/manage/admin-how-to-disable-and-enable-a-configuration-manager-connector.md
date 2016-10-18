@@ -6,7 +6,7 @@ author: bandersmsft
 ms.author: banders
 ms.prod:  system-center-2016
 keywords:  
-ms.date: 2016-10-12
+ms.date: 10/12/2016
 title:  How to Disable and Enable a Configuration Manager Connector
 ms.technology:  service-manager
 ms.assetid:  bf2d8feb-76ce-40b8-a3c6-41d6aac284ea

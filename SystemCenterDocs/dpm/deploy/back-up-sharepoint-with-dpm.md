@@ -5,7 +5,7 @@ ms.topic:  article
 author:  markgalioto
 ms.prod:  system-center-threshold
 keywords:  
-ms.date:  2016-10-12
+ms.date: 10/12/2016
 title:  Back up SharePoint with DPM
 ms.technology:  data-protection-manager
 ms.assetid:  3769bebe-3e5a-4b51-9c01-d07e94fc8c43

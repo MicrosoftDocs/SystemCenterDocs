@@ -6,7 +6,7 @@ author:  markgalioto
 ms.author: markgal
 ms.prod:  system-center-threshold
 keywords:  
-ms.date:  2016-10-04
+ms.date: 10/12/2016
 title:  How does DPM work
 ms.technology:  data-protection-manager
 ms.assetid:  1490e423-de29-41b3-bee3-cc46140ea55d

@@ -11,7 +11,7 @@ ms.topic: article
 ms.assetid: 4c844a02-9fb0-4c32-834c-22b90459c476
 author: cfreemanwa
 ms.author: cfreeman
-ms.date: 2016-10-12
+ms.date: 10/12/2016
 manager: cfreeman
 ---
 # How to Work With Runbooks in the Orchestration Console

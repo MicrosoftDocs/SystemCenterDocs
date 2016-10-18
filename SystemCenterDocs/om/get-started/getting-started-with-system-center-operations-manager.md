@@ -3,7 +3,7 @@ ms.assetid: e5f04a75-99c5-4fd8-adb8-47273e6f0505
 title: Getting Started
 author: mgoedtel
 manager: cfreemanwa
-ms.date: 2016-10-12
+ms.date: 10/12/2016
 ms.custom: na
 ms.prod: system-center-threshold
 ms.technology: operations-manager

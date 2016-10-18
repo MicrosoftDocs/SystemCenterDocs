@@ -11,7 +11,7 @@ ms.topic: article
 ms.assetid: b85596cc-5c9c-4bc3-b122-ec3d0200f051
 author: cfreemanwa
 ms.author: cfreeman
-ms.date: 2016-10-12
+ms.date: 10/12/2016
 manager: cfreeman
 ---
 # How to Start the Orchestration Console

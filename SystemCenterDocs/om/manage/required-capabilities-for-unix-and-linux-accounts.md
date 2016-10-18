@@ -3,7 +3,7 @@ ms.assetid: 97e6a5fa-a108-42d0-93f7-c1ac1884f2ae
 title: Required Capabilities for UNIX and Linux Accounts
 author: mgoedtel
 manager: cfreemanwa
-ms.date: 2016-10-12
+ms.date: 10/12/2016
 ms.custom: na
 ms.prod: system-center-threshold
 ms.technology: operations-manager

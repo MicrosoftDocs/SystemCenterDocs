@@ -3,7 +3,7 @@ ms.assetid: 7cb61f4f-d184-407e-abc1-f2334de51810
 title:  Management Pack Assessment
 author: mgoedtel
 manager: cfreemanwa
-ms.date: 2016-10-12
+ms.date: 10/12/2016
 ms.custom: na
 ms.prod: system-center-threshold
 ms.technology: operations-manager

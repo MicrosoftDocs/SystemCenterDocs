@@ -6,7 +6,7 @@ author: bandersmsft
 ms.author: banders
 ms.prod:  system-center-2016
 keywords:  
-ms.date: 2016-10-12
+ms.date: 10/12/2016
 title:  How to Configure Change Management Workflows
 ms.technology:  service-manager
 ms.assetid:  8a9d5a24-c13c-4db2-a3b4-6b728a20e3c6

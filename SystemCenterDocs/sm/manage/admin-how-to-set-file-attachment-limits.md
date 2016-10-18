@@ -6,7 +6,7 @@ author: bandersmsft
 ms.author: banders
 ms.prod:  system-center-2016
 keywords:  
-ms.date: 2016-10-12
+ms.date: 10/12/2016
 title:  How to Set File Attachment Limits
 ms.technology:  service-manager
 ms.assetid:  f6e881e6-9365-4d27-8221-89229a96c22d

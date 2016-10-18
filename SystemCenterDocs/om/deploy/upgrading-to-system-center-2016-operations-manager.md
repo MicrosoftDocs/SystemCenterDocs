@@ -3,7 +3,7 @@ ms.assetid: 9d47d9ef-9a95-4b05-817f-75b3039f6e2c
 title:  Upgrading to System Center 2016 - Operations Manager
 author: mgoedtel
 manager: cfreemanwa
-ms.date: 2016-10-12
+ms.date: 10/12/2016
 ms.custom: na
 ms.prod: system-center-threshold
 ms.technology: operations-manager

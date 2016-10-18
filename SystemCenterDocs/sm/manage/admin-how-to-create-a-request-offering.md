@@ -6,7 +6,7 @@ author: bandersmsft
 ms.author: banders
 ms.prod:  system-center-2016
 keywords:  
-ms.date: 2016-10-12
+ms.date: 10/12/2016
 title:  How to Create a Request Offering
 ms.technology:  service-manager
 ms.assetid:  1137cb8c-abcb-4929-bf4b-f3a41db1bf2e

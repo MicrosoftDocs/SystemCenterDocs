@@ -6,7 +6,7 @@ author: bandersmsft
 ms.author: banders
 ms.prod:  system-center-2016
 keywords:  
-ms.date: 2016-10-12
+ms.date: 10/12/2016
 title:  Configuring Desired Configuration Management to Generate Incidents in Service Manager
 ms.technology:  service-manager
 ms.assetid:  27337337-38a7-476f-974a-6ffa16027bf1

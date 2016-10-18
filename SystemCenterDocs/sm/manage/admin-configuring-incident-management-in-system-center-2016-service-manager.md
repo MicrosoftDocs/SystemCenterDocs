@@ -6,7 +6,7 @@ author: bandersmsft
 ms.author: banders
 ms.prod:  system-center-2016
 keywords:  
-ms.date: 2016-10-12
+ms.date: 10/12/2016
 title:  Configuring Incident Management in Service Manager
 ms.technology:  service-manager
 ms.assetid:  8453a3e9-56ee-4750-b111-81e241c480a4

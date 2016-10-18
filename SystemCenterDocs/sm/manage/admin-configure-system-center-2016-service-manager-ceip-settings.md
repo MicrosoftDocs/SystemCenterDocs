@@ -6,7 +6,7 @@ author: bandersmsft
 ms.author: banders
 ms.prod:  system-center-2016
 keywords:  
-ms.date: 2016-10-12
+ms.date: 10/12/2016
 title:  Configure preference for sharing Service Manager diagnostic and usage data
 ms.technology:  service-manager
 ms.assetid:  4bb2487c-5a91-44d2-9a85-f4112aff40ac

@@ -6,7 +6,7 @@ author:  markgalioto
 ms.author: markgal
 ms.prod:  system-center-threshold
 keywords:  
-ms.date:  2016-10-12
+ms.date: 10/12/2016
 title:  Back up file data with DPM
 ms.technology:  data-protection-manager
 ms.assetid:  98626f09-e4b1-4cbb-9195-651d54e118d1

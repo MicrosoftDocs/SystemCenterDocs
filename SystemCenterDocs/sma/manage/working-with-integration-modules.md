@@ -5,7 +5,7 @@ ms.topic:  article
 author:  bwren
 ms.prod:  system-center-threshold
 keywords:  
-ms.date:  2016-08-18
+ms.date: 10/12/2016
 title:  Working with Integration Modules
 ms.technology:  service-management-automation
 ms.assetid:  a99b8b42-665a-48eb-ab8e-5ebe8462c50a

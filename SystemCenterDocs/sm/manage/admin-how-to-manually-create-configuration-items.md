@@ -6,7 +6,7 @@ author: bandersmsft
 ms.author: banders
 ms.prod:  system-center-2016
 keywords:  
-ms.date: 2016-10-12
+ms.date: 10/12/2016
 title:  How to Manually Create Configuration Items
 ms.technology:  service-manager
 ms.assetid:  24089a9b-eaa2-42f7-b600-2d0e6a2149ec

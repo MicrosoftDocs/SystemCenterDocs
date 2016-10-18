@@ -6,7 +6,7 @@ author: bandersmsft
 ms.author: banders
 ms.prod:  system-center-2016
 keywords:  
-ms.date: 2016-10-12
+ms.date: 10/12/2016
 title:  How to Create a Configuration Manager Connector
 ms.technology:  service-manager
 ms.assetid:  70db0991-63d5-464a-978b-45e8783ec539

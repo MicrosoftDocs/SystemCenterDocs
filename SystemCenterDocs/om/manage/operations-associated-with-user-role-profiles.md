@@ -3,7 +3,7 @@ ms.assetid: 50e3914b-4047-4dce-97f1-0bca1619f4a1
 title: Operations Associated with User Role Profiles
 author: mgoedtel
 manager: cfreemanwa
-ms.date: 2016-10-12
+ms.date: 10/12/2016
 ms.custom: na
 ms.prod: system-center-threshold
 ms.technology: operations-manager

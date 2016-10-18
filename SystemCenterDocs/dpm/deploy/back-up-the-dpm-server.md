@@ -5,7 +5,7 @@ ms.topic:  article
 author:  markgalioto
 ms.prod:  system-center-threshold
 keywords:  
-ms.date:  2016-10-01
+ms.date: 10/12/2016
 title:  Back up the DPM server
 ms.technology:  data-protection-manager
 ms.assetid:  e5a31d08-e483-4dda-abd3-1b562656b24f

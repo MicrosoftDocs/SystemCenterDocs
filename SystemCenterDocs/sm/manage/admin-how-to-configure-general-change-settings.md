@@ -6,7 +6,7 @@ author: bandersmsft
 ms.author: banders
 ms.prod:  system-center-2016
 keywords:  
-ms.date: 2016-10-12
+ms.date: 10/12/2016
 title:  How to Configure General Change Settings
 ms.technology:  service-manager
 ms.assetid:  3de3a691-b2d7-4133-ad4a-e20a9f0f1475

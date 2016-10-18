@@ -6,7 +6,7 @@ author: bandersmsft
 ms.author: banders
 ms.prod:  system-center-2016
 keywords:  
-ms.date: 2016-10-12
+ms.date: 10/12/2016
 title:  Effects of Deleting a Connector on Configuration Items
 ms.technology:  service-manager
 ms.assetid:  fca58d2f-d6f4-470b-9f5d-dffb327c8e1a

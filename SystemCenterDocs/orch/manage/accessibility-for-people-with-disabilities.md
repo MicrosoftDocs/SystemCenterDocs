@@ -11,7 +11,7 @@ ms.topic: article
 ms.assetid: 88e02b5e-399b-4225-8a9e-0e9d46266c3e
 author: cfreemanwa
 ms.author: cfreeman
-ms.date: 2016-10-12
+ms.date: 10/12/2016
 manager: cfreeman
 ---
 # Accessibility for People with Disabilities

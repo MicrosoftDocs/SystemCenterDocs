@@ -6,7 +6,7 @@ author: bandersmsft
 ms.author: banders
 ms.prod:  system-center-2016
 keywords:  
-ms.date: 2016-10-12
+ms.date: 10/12/2016
 title:  How to Unpublish a Request Offering
 ms.technology:  service-manager
 ms.assetid:  be6c5f89-9296-4590-8c0e-8f8ac158fe29

@@ -6,7 +6,7 @@ author:  bandersmsft
 ms.author: banders
 ms.prod:  system-center-threshold
 keywords:  
-ms.date:  2016-06-28
+ms.date: 10/12/2016
 title:  Service Manager
 ms.technology:  service-manager
 ms.assetid:  e55f0638-e18b-403f-b255-5f8aa464d7e5

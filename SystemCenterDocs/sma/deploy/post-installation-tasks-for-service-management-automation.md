@@ -5,7 +5,7 @@ ms.topic:  article
 author:  bwren
 ms.prod:  system-center-threshold
 keywords:  
-ms.date:  2016-08-18
+ms.date: 10/12/2016
 title:  Post installation tasks for Service Management Automation
 ms.technology:  service-management-automation
 ms.assetid:  a12e845d-bdec-43d8-a321-0d5e767a967f

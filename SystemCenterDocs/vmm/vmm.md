@@ -6,7 +6,7 @@ author:  rayne-wiselman
 ms.author: raynew
 ms.prod:  system-center-threshold
 keywords:  
-ms.date:  2016-10-12
+ms.date: 10/12/2016
 title:  Virtual Machine Manager
 ms.technology:  virtual-machine-manager
 ms.assetid:  45b19e89-f19f-48e3-92de-b0c63324e46f

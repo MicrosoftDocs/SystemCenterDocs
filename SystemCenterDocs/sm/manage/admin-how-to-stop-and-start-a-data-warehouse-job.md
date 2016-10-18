@@ -6,7 +6,7 @@ author: bandersmsft
 ms.author: banders
 ms.prod:  system-center-2016
 keywords:  
-ms.date: 2016-10-12
+ms.date: 10/12/2016
 title:  How to Stop and Start a Data Warehouse Job
 ms.technology:  service-manager
 ms.assetid:  ab2b063e-6094-4ec5-9ecc-48754c30438c

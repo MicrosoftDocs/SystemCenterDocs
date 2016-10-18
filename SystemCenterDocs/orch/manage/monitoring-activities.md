@@ -11,7 +11,7 @@ ms.topic: article
 ms.assetid: a5dd7238-924b-4de9-9a4a-044c432750f6
 author: cfreemanwa
 ms.author: cfreeman
-ms.date: 2016-10-12
+ms.date: 10/12/2016
 manager: cfreeman
 ---
 # Monitoring Activities

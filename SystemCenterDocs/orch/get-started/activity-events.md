@@ -9,7 +9,7 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 51302055-3f9c-43a2-943d-d63769b9ed2b
 ms.author: cfreeman
-ms.date: 2016-10-12
+ms.date: 10/12/2016
 author: cfreemanwa
 manager: cfreeman
 ---

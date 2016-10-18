@@ -6,7 +6,7 @@ author: bandersmsft
 ms.author: banders
 ms.prod:  system-center-2016
 keywords:  
-ms.date: 2016-10-12
+ms.date: 10/12/2016
 title:  Using Groups, Queues, and Lists in Service Manager
 ms.technology:  service-manager
 ms.assetid:  360fa976-6b9c-4521-a9d4-77250233449e

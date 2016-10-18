@@ -6,7 +6,7 @@ author: bandersmsft
 ms.author: banders
 ms.prod:  system-center-2016
 keywords:  
-ms.date: 2016-10-12
+ms.date: 10/12/2016
 title:  How to Modify an SLA Metric View
 ms.technology:  service-manager
 ms.assetid:  e8cf3b0b-00a8-4031-8e3e-c2dd450e52ec

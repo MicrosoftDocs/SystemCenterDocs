@@ -6,7 +6,7 @@ author: bandersmsft
 ms.author: banders
 ms.prod:  system-center-2016
 keywords:  
-ms.date: 2016-10-12
+ms.date: 10/12/2016
 title:  How to Publish a Service Offering
 ms.technology:  service-manager
 ms.assetid:  bcede83b-0c4c-4dbd-b943-d62bbcb1242e

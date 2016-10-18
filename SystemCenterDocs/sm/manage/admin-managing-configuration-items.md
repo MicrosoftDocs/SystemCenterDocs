@@ -6,7 +6,7 @@ ms.topic:  article
 author: bandersmsft
 ms.prod:  system-center-2016
 keywords:  
-ms.date: 2016-10-12
+ms.date: 10/12/2016
 title:  Managing Configuration Items
 ms.technology:  service-manager
 ms.assetid:  22d6d616-e0b3-47b2-a8d8-f235091bf1d5

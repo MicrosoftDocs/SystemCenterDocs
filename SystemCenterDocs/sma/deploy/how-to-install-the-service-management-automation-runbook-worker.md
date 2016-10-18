@@ -5,7 +5,7 @@ ms.topic:  article
 author:  bwren
 ms.prod:  system-center-threshold
 keywords:  
-ms.date:  2016-08-18
+ms.date: 10/12/2016
 title:  How to install the Service Management Automation runbook worker
 ms.technology:  service-management-automation
 ms.assetid:  3586c160-4e4d-4a08-9e30-13cdd49e8a01

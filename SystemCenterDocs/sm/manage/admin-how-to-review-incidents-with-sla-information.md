@@ -6,7 +6,7 @@ author: bandersmsft
 ms.author: banders
 ms.prod:  system-center-2016
 keywords:  
-ms.date: 2016-10-12
+ms.date: 10/12/2016
 title:  How to Review Incidents with SLA Information
 ms.technology:  service-manager
 ms.assetid:  fecd2223-2034-42a7-91df-ca4a5441c719

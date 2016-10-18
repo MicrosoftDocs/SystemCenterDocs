@@ -5,7 +5,7 @@ ms.topic:  article
 author:  bwren
 ms.prod:  system-center-threshold
 keywords:  
-ms.date:  2016-09-29
+ms.date: 10/12/2016
 title:  Service Management Automation
 ms.technology:  service-management-automation
 ms.assetid:  4398d1ea-d63c-4fc8-b7f0-4e8fc80c00cc

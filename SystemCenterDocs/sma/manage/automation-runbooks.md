@@ -5,7 +5,7 @@ ms.topic:  article
 author:  bwren
 ms.prod:  system-center-threshold
 keywords:  
-ms.date:  2016-08-18
+ms.date: 10/12/2016
 title:  Automation Runbooks
 ms.technology:  service-management-automation
 ms.assetid:  00ad011f-f02c-484b-8eda-7d1d14d9f09a

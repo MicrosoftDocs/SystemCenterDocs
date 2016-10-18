@@ -11,7 +11,7 @@ ms.topic: article
 ms.assetid: cfcc2e1e-9dd0-46fd-8fdc-3dfcf3c11573
 author: cfreemanwa
 ms.author: cfreeman
-ms.date: 2016-10-12
+ms.date: 10/12/2016
 manager: cfreeman
 ---
 # How to Configure Orchestrator Database Connections

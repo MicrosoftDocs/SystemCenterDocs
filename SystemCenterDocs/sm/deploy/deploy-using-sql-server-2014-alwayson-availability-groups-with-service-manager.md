@@ -6,7 +6,7 @@ author:  bandersmsft
 ms.author: banders
 ms.prod:  system-center-2016
 keywords:  
-ms.date:  2016-10-14
+ms.date: 10/12/2016
 title:  Using SQL Server AlwaysOn availability groups with Service Manager
 ms.technology:  service-manager
 ms.assetid:  706e433d-c641-4dc3-8be5-fe582ef9f4bc

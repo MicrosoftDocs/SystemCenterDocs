@@ -6,7 +6,7 @@ author: bandersmsft
 ms.author: banders
 ms.prod:  system-center-2016
 keywords:  
-ms.date: 2016-10-12
+ms.date: 10/12/2016
 title:  How to Configure Notification Channels
 ms.technology:  service-manager
 ms.assetid:  edb5786f-8032-4705-8b17-8ae50f7edf17

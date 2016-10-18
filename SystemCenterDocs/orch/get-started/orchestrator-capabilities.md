@@ -5,7 +5,7 @@ ms.topic:  article
 author:  bwren
 ms.prod:  system-center-threshold
 keywords:  
-ms.date:  2016-06-28
+ms.date: 10/12/2016
 title:  Orchestrator Capabilities
 ms.technology:  orchestrator
 ms.assetid:  19e06d19-6c3d-4bf1-880c-8aad00c8e536

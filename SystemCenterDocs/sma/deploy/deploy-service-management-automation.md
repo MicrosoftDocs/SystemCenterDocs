@@ -5,7 +5,7 @@ ms.topic:  article
 author:  bwren
 ms.prod:  system-center-threshold
 keywords:  
-ms.date:  2016-08-18
+ms.date: 10/12/2016
 title:  Deploy Service Management Automation
 ms.technology:  service-management-automation
 ms.assetid:  23bd8d24-8588-4701-9f69-bc023dcf3d7d

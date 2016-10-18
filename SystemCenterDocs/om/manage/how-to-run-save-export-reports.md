@@ -3,7 +3,7 @@ ms.assetid: 113f2b4e-8f48-43da-9f31-2a2bf1d78ec5
 title: How to Run, Save, and Export a Report
 author: mgoedtel
 manager: cfreemanwa
-ms.date: 2016-10-12
+ms.date: 10/12/2016
 ms.custom: na
 ms.prod: system-center-threshold
 ms.technology: operations-manager
