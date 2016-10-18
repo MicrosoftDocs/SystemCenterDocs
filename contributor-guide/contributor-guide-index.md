@@ -43,4 +43,4 @@
 
 - [Create images in markdown](https://github.com/Azure/azure-content-pr/blob/master/contributor-guide/create-images-markdown.md)
 
-- [Metadata for System Center technical articles](https://ppe.msdn.microsoft.com/en-us/ce-csi-docs/ops/ops-onboarding/managing-content/content-meta-data?branch=master)
+- [Metadata for System Center technical articles](https://msdnstage.redmond.corp.microsoft.com/ce-csi-docs/ops/ops-onboarding/managing-content/content-meta-data?branch=master)
