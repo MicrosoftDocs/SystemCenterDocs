@@ -11,7 +11,7 @@ ms.topic: article
 ms.assetid: 7707e8ac-d885-4453-b72f-14f208eaf531
 author: cfreemanwa
 ms.author: cfreeman
-ms.date: 2016-10-12
+ms.date: 10/12/2016
 manager: cfreeman
 ---
 # How to View Orchestrator Data by Using PowerPivot

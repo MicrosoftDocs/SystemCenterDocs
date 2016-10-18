@@ -6,7 +6,7 @@ author: bandersmsft
 ms.author: banders
 ms.prod:  system-center-2016
 keywords:  
-ms.date: 2016-10-12
+ms.date: 10/12/2016
 title:  How to Configure a Configuration Manager Connector for an Extended SMS_def.mof File
 ms.technology:  service-manager
 ms.assetid:  26a8586b-a5f5-47a9-9bf8-626ef75d48eb

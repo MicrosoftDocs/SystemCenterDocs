@@ -11,7 +11,7 @@ ms.topic: article
 ms.assetid: e179b9b5-89aa-4ed0-b1fe-0edf8475ecc0
 author: cfreemanwa
 ms.author: cfreeman
-ms.date: 2016-10-12
+ms.date: 10/12/2016
 manager: cfreeman
 ---
 # Regular Expressions

@@ -6,7 +6,7 @@ author: bandersmsft
 ms.author: banders
 ms.prod:  system-center-2016
 keywords:  
-ms.date: 2016-10-12
+ms.date: 10/12/2016
 title:  Appendix C - Mapping Service Manager Properties to Configuration Manager Database Views
 ms.technology:  service-manager
 ms.assetid:  b1af3b48-696b-4db8-94e6-9da28c2ef125

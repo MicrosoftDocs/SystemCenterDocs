@@ -4,7 +4,7 @@ title:  How to Upgrade Reporting to System Center 2016 - Operations Manager
 description:  
 mauthor: mgoedtel
 manager: cfreemanwa
-ms.date: 2016-10-12
+ms.date: 10/12/2016
 ms.custom: na
 ms.prod: system-center-threshold
 ms.technology: operations-manager

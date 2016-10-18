@@ -6,7 +6,7 @@ author: bandersmsft
 ms.author: banders
 ms.prod:  system-center-2016
 keywords:  
-ms.date: 2016-10-12
+ms.date: 10/12/2016
 title:  Using Service Manager Tasks to Troubleshoot Computer Problems
 ms.technology:  service-manager
 ms.assetid:  7814be87-cbc7-42fe-a5c8-5a8720e3921c

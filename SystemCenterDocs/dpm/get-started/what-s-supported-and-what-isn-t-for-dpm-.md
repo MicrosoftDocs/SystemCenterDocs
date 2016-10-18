@@ -6,7 +6,7 @@ author:  markgalioto
 ms.author: markgal
 ms.prod:  system-center-threshold
 keywords:  
-ms.date:  2016-10-01
+ms.date: 10/12/2016
 title:  What's supported and what isn't for DPM
 ms.technology:  data-protection-manager
 ms.assetid:  29d977b5-56de-4bc4-ba0b-2d45d02516a4

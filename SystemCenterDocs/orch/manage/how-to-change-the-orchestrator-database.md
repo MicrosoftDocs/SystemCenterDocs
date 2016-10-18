@@ -11,7 +11,7 @@ ms.topic: article
 ms.assetid: acf45816-d68e-4ad5-ac9c-f29eb8254d5b
 author: cfreemanwa
 ms.author: cfreeman
-ms.date: 2016-10-12
+ms.date: 10/12/2016
 manager: cfreeman
 ---
 # How to Change the Orchestrator Database

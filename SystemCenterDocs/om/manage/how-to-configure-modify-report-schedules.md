@@ -3,7 +3,7 @@ ms.assetid: 197a4330-5b2e-4ccd-bfe2-4c93e2a6714b
 title: How to Configure and Modify Report Schedules 
 author: mgoedtel
 manager: cfreemanwa
-ms.date: 2016-10-12
+ms.date: 10/12/2016
 ms.custom: na
 ms.prod: system-center-threshold
 ms.technology: operations-manager

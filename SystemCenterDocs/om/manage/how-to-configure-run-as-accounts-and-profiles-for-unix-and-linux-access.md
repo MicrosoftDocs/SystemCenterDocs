@@ -3,7 +3,7 @@ ms.assetid: 61b25aa7-b725-445b-8f4c-40ce213714c2
 title: How to Configure Run As Accounts and Profiles for UNIX and Linux Access
 author: mgoedtel
 manager: cfreemanwa
-ms.date: 2016-10-12
+ms.date: 10/12/2016
 ms.custom: na
 ms.prod: system-center-threshold
 ms.technology: operations-manager

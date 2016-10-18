@@ -6,7 +6,7 @@ author: bandersmsft
 ms.author: banders
 ms.prod:  system-center-2016
 keywords:  
-ms.date: 2016-10-12
+ms.date: 10/12/2016
 title:  How to Copy Request Offerings and Service Offerings
 ms.technology:  service-manager
 ms.assetid:  ee6ee7cf-23ea-4241-a58f-b6bfba8d2534

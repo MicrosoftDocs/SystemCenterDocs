@@ -5,7 +5,7 @@ ms.topic:  article
 author:  bwren
 ms.prod:  system-center-threshold
 keywords:  
-ms.date:  2016-08-18
+ms.date: 10/12/2016
 title:  How to install System Center Technical Preview   Orchestrator from the command prompt
 ms.technology:  orchestrator
 ms.assetid:  7de1f456-5312-40fc-bd14-9f322f951634

@@ -5,7 +5,7 @@ ms.topic:  article
 author:  markgalioto
 ms.prod:  system-center-threshold
 keywords:  
-ms.date:  2016-10-12
+ms.date: 10/12/2016
 title:  Back up system state and bare metal
 ms.technology:  data-protection-manager
 ms.assetid:  7035095c-6d30-40aa-ae73-4159e305d7ea

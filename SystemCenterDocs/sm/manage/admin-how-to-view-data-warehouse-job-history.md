@@ -6,7 +6,7 @@ author: bandersmsft
 ms.author: banders
 ms.prod:  system-center-2016
 keywords:  
-ms.date: 2016-10-12
+ms.date: 10/12/2016
 title:  How to View Data Warehouse Job History
 ms.technology:  service-manager
 ms.assetid:  a389dcf8-28f3-4f0e-a67b-d8f9f3f93a41

@@ -6,7 +6,7 @@ author: bandersmsft
 ms.author: banders
 ms.prod:  system-center-2016
 keywords:  
-ms.date: 2016-10-12
+ms.date: 10/12/2016
 title:  How to Add Request Offerings to Service Offerings
 ms.technology:  service-manager
 ms.assetid:  d8a44806-ddfd-4a5d-8286-c167bb2b9595

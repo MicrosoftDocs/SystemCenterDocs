@@ -11,7 +11,7 @@ ms.topic: article
 ms.assetid: d8d559d9-2bf9-4d2e-a11c-37cf292c2782
 author: cfreemanwa
 ms.author: cfreeman
-ms.date: 2016-10-12
+ms.date: 10/12/2016
 manager: cfreeman
 ---
 # How to Recover a Database

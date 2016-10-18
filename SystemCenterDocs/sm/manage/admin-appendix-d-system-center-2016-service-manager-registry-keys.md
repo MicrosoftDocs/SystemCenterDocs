@@ -6,7 +6,7 @@ author: bandersmsft
 ms.author: banders
 ms.prod:  system-center-2016
 keywords:  
-ms.date: 2016-10-12
+ms.date: 10/12/2016
 title:  Appendix D - Service Manager Registry Keys
 ms.technology:  service-manager
 ms.assetid:  392af14e-a6ba-4e54-b3a0-64621b30dad6

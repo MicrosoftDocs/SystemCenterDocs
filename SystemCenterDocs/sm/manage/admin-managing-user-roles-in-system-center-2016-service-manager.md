@@ -6,7 +6,7 @@ author: bandersmsft
 ms.author: banders
 ms.prod:  system-center-2016
 keywords:  
-ms.date: 2016-10-12
+ms.date: 10/12/2016
 title:  Managing User Roles in System Center 2016   Service Manager
 ms.technology:  service-manager
 ms.assetid:  e7cd2a94-13ad-40cf-84c5-f9063072a591

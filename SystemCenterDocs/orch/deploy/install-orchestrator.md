@@ -5,7 +5,7 @@ ms.topic:  article
 author:  bwren
 ms.prod:  system-center-threshold
 keywords:  
-ms.date:  2016-10-12
+ms.date: 10/12/2016
 title:  Install Orchestrator
 ms.technology:  orchestrator
 ms.assetid:  b5fb194b-d73b-4d75-8077-b06f578e0943

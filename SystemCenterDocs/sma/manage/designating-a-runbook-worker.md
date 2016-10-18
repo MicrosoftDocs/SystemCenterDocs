@@ -5,7 +5,7 @@ ms.topic:  article
 author:  bwren
 ms.prod:  system-center-threshold
 keywords:  
-ms.date:  2016-10-03
+ms.date: 10/12/2016
 title:  Designating a runbook worker
 ms.technology:  service-management-automation
 ms.assetid:  

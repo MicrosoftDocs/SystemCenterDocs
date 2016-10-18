@@ -5,7 +5,7 @@ ms.topic:  article
 author:  markgalioto
 ms.prod:  system-center-threshold
 keywords:  
-ms.date:  2016-10-01
+ms.date: 10/12/2016
 title:  Prepare machines in workgroups and untrusted domains for backup
 ms.technology:  data-protection-manager
 ms.assetid:  e63b86d4-1f83-48ef-82bb-636b9dc745e2

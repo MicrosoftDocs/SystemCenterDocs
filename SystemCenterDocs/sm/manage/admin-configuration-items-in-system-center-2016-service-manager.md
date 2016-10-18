@@ -6,7 +6,7 @@ author: bandersmsft
 ms.author: banders
 ms.prod:  system-center-2016
 keywords:  
-ms.date: 2016-10-12
+ms.date: 10/12/2016
 title:  Configuration Items in System Center 2016 - Service Manager
 ms.technology:  service-manager
 ms.assetid:  7e6ab64c-c752-4cee-9057-e4b4413e571d

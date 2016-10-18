@@ -6,7 +6,7 @@ author: bandersmsft
 ms.author: banders
 ms.prod:  system-center-2016
 keywords:  
-ms.date: 2016-10-12
+ms.date: 10/12/2016
 title:  Configuring Service Manager Notifications
 ms.technology:  service-manager
 ms.assetid:  a74d2677-96ac-44ac-8f45-12d2e24b0275

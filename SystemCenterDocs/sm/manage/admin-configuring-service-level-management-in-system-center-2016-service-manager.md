@@ -6,7 +6,7 @@ author: bandersmsft
 ms.author: banders
 ms.prod:  system-center-2016
 keywords:  
-ms.date: 2016-10-12
+ms.date: 10/12/2016
 title:  Configuring Service Level Management in System Center 2016   Service Manager
 ms.technology:  service-manager
 ms.assetid:  a8f84795-11fd-4c62-8f50-0929cedd3b20

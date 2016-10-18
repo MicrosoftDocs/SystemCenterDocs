@@ -3,7 +3,7 @@ ms.assetid: 8b01d791-e5b9-475a-b789-6162e6120397
 title: Configuring SSL Ciphers
 author: mgoedtel
 manager: cfreemanwa
-ms.date: 2016-10-12
+ms.date: 10/12/2016
 ms.custom: na
 ms.prod: system-center-threshold
 ms.technology: operations-manager

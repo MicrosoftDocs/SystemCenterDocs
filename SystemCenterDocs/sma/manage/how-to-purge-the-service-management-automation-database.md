@@ -5,7 +5,7 @@ ms.topic:  article
 author:  bwren
 ms.prod:  system-center-threshold
 keywords:  
-ms.date:  2016-08-18
+ms.date: 10/12/2016
 title:  How to purge the Service Management Automation database
 ms.technology:  service-management-automation
 ms.assetid:  09b8fca5-e1db-4775-910d-48cb8214401b

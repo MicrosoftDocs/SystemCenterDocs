@@ -5,7 +5,7 @@ description: This article provides a broad overview of Service Provider Foundati
 author: cfreeman
 ms.author: raynew
 manager: cfreeman
-ms.date: 10/1/2016
+ms.date: 10/12/2016
 ms.topic: article
 ms.prod:  system-center-threshold
 ms.technology:  service-provider-foundation

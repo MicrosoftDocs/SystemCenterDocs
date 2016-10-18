@@ -6,7 +6,7 @@ author: bandersmsft
 ms.author: banders
 ms.prod:  system-center-2016
 keywords:  
-ms.date: 2016-10-12
+ms.date: 10/12/2016
 title:  How to Create Notification Templates
 ms.technology:  service-manager
 ms.assetid:  98af143b-a337-440a-93e6-52f6857a74ef

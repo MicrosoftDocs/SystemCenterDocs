@@ -6,7 +6,7 @@ author: bandersmsft
 ms.author: banders
 ms.prod:  system-center-2016
 keywords:  
-ms.date: 2016-10-12
+ms.date: 10/12/2016
 title:  How to Change the Credentials for SQL Server Reporting Services Account
 ms.technology:  service-manager
 ms.assetid:  c06e8cf9-b739-483d-bcf1-abab60f3ec23

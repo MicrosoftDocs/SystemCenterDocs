@@ -5,7 +5,7 @@ ms.topic:  article
 author:  markgalioto
 ms.prod:  system-center-threshold
 keywords:  
-ms.date:  2016-10-04
+ms.date: 10/12/2016
 title:  Get DPM installed
 ms.technology:  data-protection-manager
 ms.assetid:  85d424ba-123b-4158-8833-5bc04ea145db

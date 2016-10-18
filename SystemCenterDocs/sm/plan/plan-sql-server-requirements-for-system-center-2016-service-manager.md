@@ -6,7 +6,7 @@ ms.author: banders
 author: bandersmsft
 ms.prod:  system-center-2016
 keywords:  
-ms.date: 2016-10-12
+ms.date: 10/12/2016
 title:  SQL Server Requirements for Service Manager
 ms.technology: service-manager
 ms.assetid:  26697203-df1e-4232-b9be-7c9976a362b8

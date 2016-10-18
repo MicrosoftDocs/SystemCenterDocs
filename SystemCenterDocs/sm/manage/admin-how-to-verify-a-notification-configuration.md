@@ -6,7 +6,7 @@ author: bandersmsft
 ms.author: banders
 ms.prod:  system-center-2016
 keywords:  
-ms.date: 2016-10-12
+ms.date: 10/12/2016
 title:  How to Verify a Notification Configuration
 ms.technology:  service-manager
 ms.assetid:  9395bb54-3aab-48e3-9b9f-8b874d213fe3

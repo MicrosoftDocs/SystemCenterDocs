@@ -6,7 +6,7 @@ author:  markgalioto
 ms.author: markgal
 ms.prod:  system-center-threshold
 keywords:  
-ms.date:  2016-10-12
+ms.date: 10/12/2016
 title:  Deploy the DPM protection agent
 ms.technology:  data-protection-manager
 ms.assetid:  502fff45-79b5-477b-af4f-3b8a39bdde1a

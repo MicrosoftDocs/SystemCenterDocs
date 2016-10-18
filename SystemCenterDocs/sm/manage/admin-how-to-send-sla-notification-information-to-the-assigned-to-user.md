@@ -6,7 +6,7 @@ author: bandersmsft
 ms.author: banders
 ms.prod:  system-center-2016
 keywords:  
-ms.date: 2016-10-12
+ms.date: 10/12/2016
 title:  How to Send SLA Notification Information to the Assigned To User
 ms.technology:  service-manager
 ms.assetid:  72980e7a-58c2-44d3-8a99-db3776c8abfb
