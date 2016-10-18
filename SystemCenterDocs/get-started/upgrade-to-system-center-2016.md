@@ -1,12 +1,12 @@
 ---
-description:  
+description:  This topic summarizes the supported upgrade scenarios and sequence for System Center 2016. It also includes links to detailed information for upgrading the System Center components.
 manager:  cfreeman
 ms.topic:  article
 author:  cfreemanwa
 ms.author: cfreeman
 ms.prod:  system-center-threshold
 keywords:  
-ms.date:  10/12/2016
+ms.date:  10/18/2016
 title:  Upgrade-to-System-Center-2016
 ms.technology:  system-center-2016
 ms.assetid:  4f8701a5-8d55-4ffd-afee-e6341ec6b7f4
@@ -50,127 +50,11 @@ If you are upgrading an installation of System Center 2012 R2 that includes mult
 
 ## Component Specific Notes
 
-The following sections provide detailed considerations for each component.
+The following topics provide detailed considerations for each component.
 
-### DPM Upgrade Notes
-
-For information on upgrading DPM to 2016, see [Upgrade to DPM 2016](../dpm/get-started/upgrade-to-dpm-2016.md).
-
-### OM Upgrade
-[!NOTE]
-If your Operations Manager 2012 R2 management group is integrated with Microsoft Operations Management Suite (OMS), its configuration will be retained and continue to function normally after the upgrade is complete.  
-
-> [!WARNING]
-> If you are upgrading two or more System Center components, you must follow the procedures that are documented in Upgrade Sequencing for System Center 2012 R2.
->  
-> The order in which you perform component upgrades is important. Failure to follow the correct upgrade sequence might result in component failure for which no recovery options exist. The affected System Center components are:
-  > 1. Configuration Manager
-  > 2. Data Protection Manager
-  > 3. Orchestrator
-  > 4. Configuration Manager
-  > 5. Virtual Machine Manager
-
-Before you upgrade to System Center 2016 - Operations Manager, you must first determine whether all servers in your Operations Manager management group meet the minimum supported configurations. For more information, see System Requirements: System Center 2016 - Operations Manager.
-
-There are several options for upgrade:
-
-1. If you run upgrade on a single-server management group, you only need to run upgrade one time since all features are installed on a single server. The Operations Manager Upgrade wizard performs system prerequisite checks and provides resolution steps for any issues. Installation will not continue until you resolve all issues.
-
-2. If you are upgrading a distributed management group, you must upgrade certain features before others. For example, you upgrade the management servers first, followed by the gateways, operations consoles, and then agents. Next, you can upgrade any remaining features, such as the web console, reporting and Audit Collection Services (ACS). You must also perform a number of pre-upgrade and post-upgrade tasks.
-
-3. If you want to maintain your Operations Manager 2012 R2 environment you can install System Center 2016 - Operations Manager in parallel and upgrade your agents and multi-home between both management groups.
-
-#### High Level Overview of System Center 2016 Operations Manager Upgrade Steps for a Distributed Management Group
-
-The following steps outline the process for upgrading a distributed management group:
-
-1. Accomplish Pre-Upgrade Tasks
-
-2. Upgrade the initial management server and then additional management servers (each management server must be upgraded)
-
-3. Upgrade ACS (because the ACS server must be on same machine as a management server, we recommend you perform this step along with the upgrade of the management server on which ACS resides.)
-
-4. \*Upgrade Gateway(s)
-
-5. Upgrade Console
-
-6. Push Install to Agent(s) / Upgrading Manually Installed Agents
-
-7. Upgrade Web Console
-
-8. Upgrade Reporting Server
-
-9. Perform Post-Upgrade Tasks
-
-\*Steps 4 through 8 can be performed in parallel after all Management Servers have been upgrade.
-
-
-### Orchestrator Upgrade Notes
-
-Before you upgrade:
-
-1. Ensure that there are no pending restarts on the computer.
-2. Perform a full back up  of Orchestrator database. For information about backing up the Orchestrator database, see the <a href ="https://technet.microsoft.com/en-us/library/hh852622(v=sc.12).aspx">How to Back up Orchestrator </a> topic.
-3. Upgrade the hardware, operating system, and other software if necessary to meet the requirements of Orchestrator in System Center 2016.
-
-Upgrading:
-
-1. Stop all Orchestrator runbooks.
-2. Uninstall the Orchestrator management server, any runbook servers, the Web Service, and the Runbook Designer.
-3. Install the Orchestrator management server in System Center 2016, as described [here](../orch/deploy/Install-Orchestrator.md).
-4. Install any Orchestrator runbook servers in System Center 2016.
-5. Install the Orchestrator Runbook Designer in System Center 2016.
-6. If needed, install the Orchestrator Web Service in System Center 2016.
-
-
-### SMA Upgrade Notes
-
-Before you upgrade:
-
-1. Perform a full backup of the SMA database as a precaution. This is a standard SQL Server database, and you can standard tools and processes for [backing up SQL Server](http://go.microsoft.com/fwlink/p/?LinkId=216936).
-2. Upgrade the hardware, operating system, and other software if necessary to meet the requirements of Service Management Automation in System Center 2016.
-
-Upgrade:
-
-1. If SMA servers are being monitored by Operations Manager, put them in maintenance mode to prevent false alerts.
-2. Uninstall the SMA web service and SMA runbook workers using the instructions at <a href="https://technet.microsoft.com/en-us/library/dn469636(v=sc.12).aspx">How to uninstall Service Management Automation</a> for details.
-3. Install the SMA runbook workers using the instructions at [How to install the Service Management Automation runbook worker](../sma/Deploy/How-to-install-the-Service-Management-Automation-runbook-worker.md).
-4. Install the SMA web service using the instructions at [How to install the Service Management Automation web service](../sma/Deploy/How-to-install-the-Service-Management-Automation-web-service.md).
-5. Remove SMA servers from maintenance mode.
-
-### SM Upgrade Notes
-
-Please refer the following articles for detailed instructions
-- [Upgrade Planning for System Center 2016 - Service Manager](../sm/deploy/upgrade-upgrade-planning-for-system-center-2016-service-manager.md)
-- [Upgrade to System Center 2016 - Service Manager](../sm/deploy/upgrade-upgrade-to-system-center-2016-service-manager.md)
-
-### SPF Upgrade Notes
-
-- If you have integrated SPF with Windows Azure Pack, your version of Windows Azure Pack must be running Update Rollup 10 or later. Also, both System Center 2012 R2 - VMM and SPF must be running Update Rollup 9 or later.
-
-### VMM Upgrade Notes
-
-### Steps for installing VMM
-You will follow  the same general steps for upgrading to System Center 2016 from System Center 2012 R2 for all System Center components. The general steps are:
-1. Uninstall the 2012 R2 version of the component with "retain database" option if appropriate.
-2. Upgrade the operating system to a version supported with System Center 2016.
-3. Install any other software required by the component (see list below).
-4. Install the new version of the component with the "Upgrade database" option if appropriate.
-
-- For all upgrades to VMM 2016 you can either continue with the current version of SQL Server, or, you can upgrade to the supported version of SQL Server. Review [SQL Server Requirements](../system-requirements/SQL-server-version-compatibility-for-system-center-technical-preview.md) for the list of supported versions of SQL Server.
-- You can upgrade both host and guest VMM agents from the VMM console.
-
-#### Upgrading a highly available VMM environment.
-
-The following procedures describe the steps to take if you are upgrading a  VMM management server deployed on a highly available cluster.
-
-1.	Backup and retain the VMM database
-2.	Uninstall VMM 2012 R2 from the highly available passive node.
-3.	Upgrade to Windows Server 2016 and to a supported version of SQL Server on the passive node.
-4.	Upgrade to the Windows 10 version of the ADK.
-5.  Install System Center 2016 – Virtual Machine Manager in the highly available environment and when prompted, upgrade the database.
-6.  Failover to the passive node.
-7.  Repeat steps 2 - 5 for the other nodes in your HAVMM environment.
-8.	[Optional] Install the appropriate SQL Command line utilities.
-
-Note: If the VMMM database is hosted on a SQL Server running in the "Always on" mode, and the VMM database is in the availability group, you must remove it from the availability group before upgrading the SQL Server to a later version.
+-    [Upgrade to System Center 2016 - Data Protection Manager](../dpm/get-started/upgrade-to-dpm-2016.md).
+-    [Upgrade to System Center 2016 - Operations Manager](../om/deploy/upgrading-to-system-center-2016-operations-manager.md)
+-    [Upgrade to System Center 2016 - Orchestrator](../orch/get-started/upgrade-to-orchestrator.md)
+-    [Upgrade to System Center 2016 - Service Manager](../sm/deploy/upgrade-upgrade-to-system-center-2016-service-manger.md)
+-    [Upgrade to System Center 2016 - Service Management Automation](../sma/deploy/how-to-upgrade-from-a-previous-version-of-service-management-automation.md)
+-    [Upgrade to System Center 2016 - Virtual Machine Manager](../vmm/deploy/deploy-upgrade.md)
