@@ -4,10 +4,10 @@ manager:  cfreeman
 ms.topic:  article
 author:  cfreemanwa
 ms.author: Cfreeman
-ms.prod:  system-center-threshold
+ms.prod:  system-center-2016
 keywords:  
 ms.date:  10/12/2016
-title:  Minimum Hardware Recommendations for System Center Technical Preview
+title:  Minimum Hardware Recommendations for System Center 2016
 ms.technology:  system-center-2016
 ms.assetid:  0cb670c2-7b8c-4901-858c-f0644187d45f
 ---
@@ -18,7 +18,7 @@ ms.assetid:  0cb670c2-7b8c-4901-858c-f0644187d45f
 
 Use this information to evaluate if your hardware environment is ready to support the installation of or upgrade to System Center 2016. Use this information to evaluate hardware requirements (processor, RAM, and free hard drive space). Both minimum (min) and recommended (rec) values are provided. Use the information here whether you are deploying one or multiple components.
 
-|System Center 2012 R2 servers|Processor (min)|Processor (rec)|RAM (min)|RAM (rec)|Hard drive space (min)|Hard drive space (rec)|
+|System Center 2016 servers|Processor (min)|Processor (rec)|RAM (min)|RAM (rec)|Hard drive space (min)|Hard drive space (rec)|
 |---------------------------------|---------------------|---------------------|---------------|---------------|----------------------------|----------------------------|
 |**DPM** Server|1 GHz, dual-core CPU or faster|2.33 GHz quad-core CPU|4 GB|8 GB|3 GB|3 GB|
 |**Operations Manager**|Use the [Operations Manager Sizing Helper](http://go.microsoft.com/fwlink/p/?LinkId=231853)|Use the [Operations Manager Sizing Helper](http://go.microsoft.com/fwlink/p/?LinkId=231853)|Use the [Operations Manager Sizing Helper](http://go.microsoft.com/fwlink/p/?LinkId=231853)|Use the [Operations Manager Sizing Helper](http://go.microsoft.com/fwlink/p/?LinkId=231853)|Use the [Operations Manager Sizing Helper](http://go.microsoft.com/fwlink/p/?LinkId=231853)|Use the [Operations Manager Sizing Helper](http://go.microsoft.com/fwlink/p/?LinkId=231853)|
