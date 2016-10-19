@@ -113,6 +113,6 @@ Use the following steps to install all Orchestrator features on a single compute
 ## See Also
 [Install Individual Orchestrator Features](How-to-install-orchestrator-features.md)
 
-[Orchestrator Security Planning](assetId:///358c5344-8649-4d40-a53c-37f8e70e58f6)
+[Orchestrator Security Planning](https://technet.microsoft.com/en-us/library/hh420367.aspx)
 
-[TCP Port Requirements](assetId:///dc879c86-4855-4fd0-808d-06f64a9657ca)
+[TCP Port Requirements](https://technet.microsoft.com/en-us/library/hh420382.aspX)
