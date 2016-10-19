@@ -35,7 +35,7 @@ After block storage has been discovered and classified in the System Center 2016
 
 ## Create a LUN in VMM
 
-1. Make sure you've allocated the storage pool to the host group, and click **Fabric** > **Storage**, right-click **Classifications and Pools** > **Create Logical Unit**.
+1. Make sure you've allocated the storage pool to the host group, and click **Fabric** > **Storage** > **Create Logical Unit**.
 2. Specify the storage pool, a name an description for the LUN, and the size. Click **OK** to create the LUN.
 3. Verify that the LUN was created in **Fabric Resources** > **Classifications, Storage Pools, and Logical Units**.
 .
