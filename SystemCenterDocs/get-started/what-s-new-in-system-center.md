@@ -1,13 +1,16 @@
 ---
 title:  What's new in System Center
-description:  
-author: mgoedtel
-manager: cfreemanwa
+description: This article provides links to topics for each of the What's New topics for System Center 2016 components.
+author: cfreemanwa
+manager: cfreeman
 ms.date: 10/12/2016
 ms.custom: na
 ms.prod: system-center-threshold
-ms.technology: operations-manager
+ms.technology: system-center-2016
 ms.topic: article
+ms.author: cfreeman
+ms.assetid:  4f8701a5-8d55-4ffd-afee-e6341ec6b7f4
+
 ---
 
 # What's new in System Center

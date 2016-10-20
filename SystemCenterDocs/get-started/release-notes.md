@@ -3,7 +3,9 @@ description: Release Notes for System Center 2016
 manager:  cfreemanwa
 ms.topic:  article
 author:  cfreemanwa
+ms.author: cfreeman
 ms.prod:  system-center-threshold
+ms.technology: system-center-2016
 keywords:
 ms.date: 10/12/2016
 title:  Release Notes for System Center 2016

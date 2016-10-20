@@ -1,8 +1,8 @@
 ---
-description:  This article provides an overview of the system requirements for System Center 2016.
+description: This article provides an overview of the system requirements for System Center 2016.
 manager:  cfreeman
 ms.topic:  article
-author:  cfreemanwa
+author: cfreemanwa
 ms.author: cfreeman
 ms.prod:  system-center-threshold
 keywords:  

@@ -1,8 +1,8 @@
 ---
-description:  This topic summarizes the supported upgrade scenarios and sequence for System Center 2016. It also includes links to detailed information for upgrading the System Center components.
+description: This topic summarizes the supported upgrade scenarios and sequence for System Center 2016. It also includes links to detailed information for upgrading the System Center components.
 manager:  cfreeman
 ms.topic:  article
-author:  cfreemanwa
+author: cfreemanwa
 ms.author: cfreeman
 ms.prod:  system-center-threshold
 keywords:  

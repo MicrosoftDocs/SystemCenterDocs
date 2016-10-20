@@ -63,7 +63,7 @@ Use the following steps to install all Orchestrator features on a single compute
 7.  On the **Configure the service account** page, enter the user name and password for the Orchestrator Management Service account. Click **Test** to verify the account credentials. If the credentials are accepted, click **Next**.
 
     > [!IMPORTANT]
-    > The Orchestrator Management Service account must be created before this step. For more information about the Orchestrator Management Service account, see [Orchestrator Management Service account](assetId:///82621881-a044-45e8-a8b6-9b9b24eb978f#BKMK_OrchestratorManagementServiceaccount) in [Orchestrator Security Planning](assetId:///358c5344-8649-4d40-a53c-37f8e70e58f6).
+    > The Orchestrator Management Service account must be created before this step. For more information about the Orchestrator Management Service account, see [Orchestrator Management Service account](https://technet.microsoft.com/en-us/library/hh912319.aspx).
 
 8.  On the **Configure the database server** page, enter the name of the server and the name of the instance and port number of the Microsoft SQL Server that you want to use for Orchestrator. You can also specify whether to use Windows Authentication or SQL Server Authentication, and whether to create a new database or use an existing database.
 
@@ -74,12 +74,12 @@ Use the following steps to install all Orchestrator features on a single compute
 11. On the **Configure Orchestrator users group** page, accept the default configuration or enter the name of the user group to manage Orchestrator permissions, and then click **Next**.
 
     > [!NOTE]
-    > For more information about the Orchestrator users group, see [Orchestrator Users Group](assetId:///cfb5afed-1928-4c1a-ac5b-52feff15a54a).
+    > For more information about the Orchestrator users group, see [Orchestrator Users Group](https://technet.microsoft.com/en-us/library/hh912314.aspx).
 
 12. On the **Configure the port for the web service** page, verify the port numbers for the Orchestrator web service and the Orchestration console, and then click **Next**.
 
     > [!NOTE]
-    > For more information about the TCP ports, see [TCP Port Requirements](assetId:///dc879c86-4855-4fd0-808d-06f64a9657ca).
+    > For more information about the TCP ports, see [TCP Port Requirements](https://technet.microsoft.com/en-us/library/hh420382.aspx).
 
 13. On the **Select the installation location** page, verify the installation location for Orchestrator and change it if you want to, and then click **Next**.
 
@@ -113,6 +113,6 @@ Use the following steps to install all Orchestrator features on a single compute
 ## See Also
 [Install Individual Orchestrator Features](How-to-install-orchestrator-features.md)
 
-[Orchestrator Security Planning](assetId:///358c5344-8649-4d40-a53c-37f8e70e58f6)
+[Orchestrator Security Planning](https://technet.microsoft.com/en-us/library/hh420367.aspx)
 
-[TCP Port Requirements](assetId:///dc879c86-4855-4fd0-808d-06f64a9657ca)
+[TCP Port Requirements](https://technet.microsoft.com/en-us/library/hh420382.aspX)
