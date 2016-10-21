@@ -6,7 +6,7 @@ author:  markgalioto
 ms.author: markgal
 ms.prod:  system-center-threshold
 keywords:  
-ms.date: 10/12/2016
+ms.date: 10/21/2016
 title:  Data Protection Manager
 ms.technology:  data-protection-manager
 ms.assetid:  e2a65d9d-5038-4a86-a495-f4745b78d040
@@ -53,7 +53,7 @@ DPM uses SQL Server as a database to store backup information for workloads, ser
 |Installation|Install SQL Server on a remote server, or on the DPM server. It must be installed and running before you install DPM.|
 |Remote installation|Install in the same domain and time zone as the DPM server.<br/> Installing SQL Server on a domain controller is not supported for DPM.<br/> Read about [Setting up a remote SQL Server instance](../deploy/back-up-sql-server-with-dpm.md).<br/> If you're deploying DPM as an Azure virtual machine you can specify an Azure virtual machine running SQL Server as a remote SQL Server instance. You can't use an on-premises SQL Server. Using an Azure SQL Database isn't currently supported.|
 |Clustered SQL Server|Supported|
-|SQL Server 2014|Not supported|
+|SQL Server 2016|Not supported|
 
 
 
