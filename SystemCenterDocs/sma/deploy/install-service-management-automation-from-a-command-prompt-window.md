@@ -1,11 +1,12 @@
 ---
 description:  
-manager:  cfreemanwa
+manager:  cfreeman
 ms.topic:  article
-author:  bwren
+author:  cfreemanwa
+ms.author: cfreeman
 ms.prod:  system-center-threshold
 keywords:  
-ms.date: 10/12/2016
+ms.date: 10/21/2016
 title:  Install Service Management Automation from a Command Prompt window
 ms.technology:  service-management-automation
 ms.assetid:  9849ebcc-519a-4dd5-86c1-e947121c2a6d
