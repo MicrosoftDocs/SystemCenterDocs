@@ -35,11 +35,7 @@ The following table gives a quick reference for where to perform common tasks an
 |Receive notifications of an alert in email, instant message, or text message.|Right-click an alert, point to **Notification subscription**, and then click **Create**. For more information, see [Subscribing to Alert Notifications](https://technet.microsoft.com/library/hh212725%28v=sc.12%29.aspx).|
 |Investigate a gray agent.|In the **Monitoring** workspace, in the **Operations Manager\Agent Details\Agent Health State** view, in the **Agent State from Health Service Watcher** section, click the gray agent, and then in the **Tasks** pane, click **Show Gray Agent Connectivity Data**. For more information, see [Not Monitored and Gray Agents](https://support.microsoft.com/help/10129/troubleshooting-gray-agent-states-in-operations-manager-2012).|
 |Stop monitoring a computer temporarily.|In the **Monitoring** workspace, click **Windows Computers**, right-click the computer you want to stop monitoring, and click **Maintenance Mode**. For more information, see [How to Suspend Monitoring Temporarily by Using Maintenance Mode](How-to-Suspend-Monitoring-Temporarily-by-Using-Maintenance-Mode.md).|
-|||
 
 ## Next steps
 
 To learn more about what to manage, how to manage, or how to support an Operations Manager management group, see the [Operations Guide for System Center 2016 - Operations Manager](Operations-Manager-Operations-Guide.md)
-
-
-
