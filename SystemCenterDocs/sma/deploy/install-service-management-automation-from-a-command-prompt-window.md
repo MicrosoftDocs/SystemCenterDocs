@@ -39,9 +39,10 @@ msiexec.exe /i PowershellModuleInstaller.msi
 ## Web service installation options
 The following variables can be specified at a command prompt to override default behaviors.
 
-||||
-|-|-|-|
-|**Installation item**|**Command line switch**|**Valid values**|
+
+
+|**Installation item** |**Command line switch** |**Valid values** |
+|------------|--------------|--------------|
 |IIS application pool|APPOOLACCOUNT|String|
 |IIS application pool|APPOOLPASSWORD|String|
 |IIS application pool|ADMINGROUPMEMBERS|String (a comma-separated list of users to add to the IIS Administrators group)|
@@ -74,9 +75,8 @@ A runbook worker cannot be installed on the same computer as another runbook wor
 
 The following variables can be specified at a command prompt to override default behaviors.
 
-||||
-|-|-|-|
-|**Installation item**|**Command line switch**|**Valid values**|
+|**Installation item** |**Command line switch** |**Valid values** |
+|---------------|---------------|-------------|
 |Windows service|SERVICEACCOUNT|String|
 |Windows service|SERVICEPASSWORD|String|
 |SQL Server database|CREATEDATABASE|"Yes" or "No" (the default value is "No")|

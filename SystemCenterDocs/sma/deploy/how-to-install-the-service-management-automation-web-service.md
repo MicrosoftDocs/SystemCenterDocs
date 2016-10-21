@@ -45,7 +45,7 @@ Install the web service on any machine that can communicate with Windows Azure P
 
 7.  Provide the following information for the database the endpoint to use, and then click **Next**.
 
-    |Item|Action|
+    |**Item** |**Action** |
     |-------------|----------------------|
     | **Server** |Enter the name of the database server. By default, this is localhost.<br /><br />The format is sqlserver\instance, where \instance is optional.|
     | **Port number** |Enter the port number that you want to use for the database. The default is 1433.|
@@ -57,11 +57,11 @@ Install the web service on any machine that can communicate with Windows Azure P
 
 8.  Provide the following information to configure the Internet Information Settings (IIS) for the web service, and then click **Next**.
 
-    |||
-    |-|-|
-    |**Domain security group or users with access**|Enter a security group or one or more users who can grant access to the web service.|
-    |**Application pool name**|SMA<br /><br />This name is not configurable.|
-    |**Application pool credentials**|Specify the credentials to use for the application pool. These are the credentials that the web service will run under.|
+    |**Item** |**Action** |
+    |-----------|------------|
+    |**Domain security group or users with access** |Enter a security group or one or more users who can grant access to the web service.|
+    |**Application pool name** |SMA<br /><br />This name is not configurable.|
+    |**Application pool credentials** |Specify the credentials to use for the application pool. These are the credentials that the web service will run under.|
 
 9. Enter the port number for the web service to use. By default, this is 9090.
 
