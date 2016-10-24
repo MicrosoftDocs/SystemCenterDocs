@@ -236,6 +236,18 @@ System Center Operations Manager management server is not affected.
 
 **Work around:** Open the Orchestrator web console with Internet Explorer.
 
+#### Orchestrator - Runbook Designer's About Page shows the version as System Center 2016 Technical Preview
+**Description:** In the Runbook Designer when you click on Help -> About, the version is shown as System Center 2016 Technical Preview.
+
+**Work around:** You can validate that you have latest version using the version number. If you have the RTM version, the build numbers are as follows:
+- Runbook Designer - 7.3.149.0
+- Management Server - 7.3.149.0 <br/>
+
+When you apply Update Rollup 1 (GA update), the build numbers are as follows:
+- Runbook Designer - 7.3.149.0
+- Management Server - 7.3.164.0
+
+
 ## System Center 2016 - Service Manager Release Notes
 **The following release notes apply to System Center 2016 - Service Manager.**
 
