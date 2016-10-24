@@ -114,8 +114,6 @@ The following procedure describes the steps to create a pivot table containing a
 
 5.  In the **Related Lookup Table** list, select **RunbookServers**, and in the **Related Lookup Column** list, select **Id**, and then click **Create**.  
 
-For additional information about PowerPivot relationships, see [Introduction to PowerPivot relationships](http://go.microsoft.com/fwlink/p/?LinkId=224794).  
-
 #### To create a pivot table  
 
 1.  In the **PowerPivot for Excel** window, click **PivotTable** on the ribbon, and select **PivotTable**.  
