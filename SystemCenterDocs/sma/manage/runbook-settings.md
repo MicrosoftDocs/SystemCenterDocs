@@ -60,5 +60,4 @@ Set-SmaRunbookConfiguration "WebServiceEndpoint $webServer "Port $port "Name $ru
 
 ## See Also
 [Service Management Automation](../Service-Management-Automation.md)
-[Runbook Operations (old) \[SMA\]](assetId:///230817bd-e503-4beb-9ec3-8c1f028e9b48)
 [How to purge the Service Management Automation database](How-to-purge-the-Service-Management-Automation-database.md)
