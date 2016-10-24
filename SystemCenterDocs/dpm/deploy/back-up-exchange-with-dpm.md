@@ -37,7 +37,7 @@ Before you deploy DPM to protection Exchange 2013 verify the deployment prerequi
 
         For example in a typical installation type: `fsutil hardlink create "c:\program files\microsoft\dpm\bin\eseutil.exe" "c:\program files\microsoft\Exchange\bin\eseutil.exe"`
 
--   Install the [Visual C++ Redistributable for Visual Studio 2012 Update 1](http://www.microsoft.com/download/details.aspx?id=30679).
+-   Install the latest [Visual C++ Redistributable for Visual Studio 2012 Update](http://go.microsoft.com/fwlink/?LinkId=266498).
 
 -   To protect an Exchange 2013 Database Availability Group (DAG) node, install the DPM protection agent on the node. Note that you can protect different DAG nodes from different DPM servers, only one node can be protected by one DPM server only.
 

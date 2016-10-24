@@ -6,7 +6,7 @@ author:  markgalioto
 ms.author: markgal
 ms.prod:  system-center-threshold
 keywords:  
-ms.date: 10/12/2016
+ms.date: 10/21/2016
 title:  What's supported and what isn't for DPM
 ms.technology:  data-protection-manager
 ms.assetid:  29d977b5-56de-4bc4-ba0b-2d45d02516a4
@@ -28,9 +28,9 @@ This topic summarizes some of the common support information you might need when
 
 -   As a standalone physical server - DPM can't be deployed in a physical cluster, but you can manage multiple DPM servers from a single location using Central Console in Operations Manager.
 
--   As an on-premises virtual machine - You can deploy DPM as a Hyper-V virtual machine as a single server or virtual machine cluster. You install DPM in the same way as a physical installation. For detailed information, see the row, [DPM installed as Hyper-V VM](./Get-DPM-installed.md#Setup-prerequisites.md) in the Setup prerequisites table.
+-   As an on-premises virtual machine - You can deploy DPM as a Hyper-V virtual machine as a single server or virtual machine cluster. You install DPM in the same way as a physical installation. For detailed information, see the row, [DPM installed as Hyper-V VM](get-dpm-installed.md#setup-prerequisites) in the Setup prerequisites table.
 
--   As an Azure virtual machine - From DPM 2012 R2 Update 3 onwards you can install DPM as an Azure virtual machine. There are a number of restrictions in this deployment. For detailed information, see the row [DPM as an Azure virtual machine](./get-dpm-installed.md#setup-prerequisites) in the Setup prerequites table.
+-   As an Azure virtual machine - From DPM 2012 R2 Update 3 onwards you can install DPM as an Azure virtual machine. There are a number of restrictions in this deployment. For detailed information, see the row [DPM as an Azure virtual machine](get-dpm-installed.md#setup-prerequisites) in the Setup prerequites table.
 
 -   As a Windows virtual machine in VMWare - From DPM 2012 R2 Update 5 onwards you can install DPM on a Windows virtual machine in a VMWare environment. In this configuration DPM can protect Microsoft workloads that are all running as Windows virtual machines in VMWare.
 
@@ -436,4 +436,4 @@ Workaround: We recommend that in this scenario you use host-level backup of the 
 
 -   DPM running as an Azure virtual machine can't protect on-premises workloads.
 
-**Workaround**: For more information about this scenario see [Install DPM as an Azure virtual machine](./Get-DPM-installed.md#setup-prerequisites).
+**Workaround**: For more information about this scenario see [Install DPM as an Azure virtual machine](get-dpm-installed.md#setup-prerequisites).
