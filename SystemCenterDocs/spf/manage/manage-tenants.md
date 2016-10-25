@@ -92,7 +92,7 @@ You can also create user roles by using the Admin OData protocol service using t
     PS C:\> Import-Module virtualmachinemanager  
     ```  
 
-3.  Use the Windows PowerShell T:Microsoft.SystemCenter.VirtualMachineManager.Cmdlets.New\-SCUserRole cmdlet to create the user role. This command assumes the `$tenant` variable was created as described in the [To create a tenant with the certificate's public key](#BMK_CreateTenant) procedure.  
+3.  Use the Windows PowerShell T:Microsoft.SystemCenter.VirtualMachineManager.Cmdlets.New\-SCUserRole cmdlet to create the user role. This command assumes the `$tenant` variable that was created as described in the procedure above.  
 
     ```  
     PS C:\> $TARole = New-SCUserRole -Name contoso.cloudspace.com -ID $tenant.Id -UserRoleProfile TenantAdmin  
