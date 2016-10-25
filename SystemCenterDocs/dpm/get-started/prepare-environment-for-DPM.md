@@ -6,7 +6,7 @@ author:  markgalioto
 ms.author: markgal
 ms.prod:  system-center-threshold
 keywords:  
-ms.date: 10/21/2016
+ms.date: 10/24/2016
 title:  Data Protection Manager
 ms.technology:  data-protection-manager
 ms.assetid:  e2a65d9d-5038-4a86-a495-f4745b78d040
@@ -85,6 +85,7 @@ DPM uses SQL Server as a database to store backup information for workloads, ser
 |-----------|-------|
 |Protected workload size limits|DPM can protect up to 600 volumes. 300 replica volumes and 300 recovery point volumes.<br/><br/> At the maximum size, protected sources are typically spread across approximately 75 servers and 150 client computers.<br/><br/> To protect this maximum size, DPM needs 120 TB per DPM server, with 80 TB replica space with a maximum recovery point size of 40 TB.|
 |.NET framework|All protected computers need at least .NET Framework 4.0 installed before you install the DPM protection agent.|
+|Windows Management Framework (WMF)| [WMF 3.0](http://www.microsoft.com/en-us/download/details.aspx?id=34595) for Windows 7 Service Pack 1, Windows Server 2008 R2 SP1, and Windows Server 2008 SP 2<br/> [WMF 4.0](http://www.microsoft.com/en-us/download/details.aspx?id=40855) for Windows 7, Windows Embedded Standard 7, Windows Server 2008 R2, Windows Server 2012.<br/> Redistributables are on the DPM 2016 installation media in the ReDist folder.
 |Protected workloads|Review the DPM protection support matrix for an up-to-date list of protected workloads.|
 |Prerequisites|DPM protection agent must be installed on protected computer. For more information, see Set up the protection agent.<br/><br/> Protected volumes must be at least 1 GB in size with NTFS formatting.<br/><br/> Server operating systems protected by DPM must be 64-bit.|
 
