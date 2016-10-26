@@ -34,7 +34,7 @@ SPF provides a number of services:
 ### Admin web service
 
 - Hosting service providers use the Admin web service to create and manage tenants, user roles, servers, stamps, and other administrative objects.
-- You can access the Admin web service by using the URL **https://server:8090/SC2016/Admin/Microsoft.Management.Odata.svc**
+- You can access the Admin web service by using the URL `**https://server:8090/SC2016/Admin/Microsoft.Management.Odata.svc**`
 - The following credentials are required
 
 **Credential** | **Requirement**
@@ -51,7 +51,7 @@ The VMM web service invokes VMM to perform requested operations, such as creatin
 - System Center 2016  VMM shows changes that portal applications, other clients, and Service Provider Foundation made.
 - Service Provider Foundation reflects all changes that the participants made.
 
-You can use the T:Microsoft.SystemCenter.Foundation.Cmdlet.New-SCSPFServer PowerShell cmdlet to register an instance of System Center 2016 VMM. You can access the VMM web service with the URL https://server:8090/SC2016/VMM/Microsoft.Management.Odata.svc
+You can use the T:Microsoft.SystemCenter.Foundation.Cmdlet.New-SCSPFServer PowerShell cmdlet to register an instance of System Center 2016 VMM. You can access the VMM web service with the URL `https://server:8090/SC2016/VMM/Microsoft.Management.Odata.svc`
 
 
 **Credential** | **Requirement**
