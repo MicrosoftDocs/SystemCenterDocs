@@ -43,7 +43,7 @@ Baseboard Management Controller (BMC) | 623: IPMI | On BMC device
 
 Ports and protocols used to communicate to the VMM management server.
 
-**Connection source* |  **Port/protocol** | **Modify settings**
+**Connection source** |  **Port/protocol** | **Modify settings**
 --- | --- | ---
 Hyper-V host in untrusted domain/perimeter network (file transfer) | 443: (TCP) | In VMM setup
 VMM console on different computer | 8100, 8101 (HTTPS), 8102 (NET.TCP), 8103 (HTTP): WCF | In VMM setup
