@@ -14,7 +14,7 @@ ms.technology: service-provider-foundation
 #  Manage tenants and user roles in SPF
 >Apples To: System Center 2016
 
-For System Center 2016 - Service Provider Foundation (SPF) doesn't create user roles, or define their scope. To set up tenants you need a certificate public key that's used to validate claims made (or on behalf of) a tenant.
+System Center 2016 - Service Provider Foundation (SPF) doesn't create user roles, or define their scope. To set up tenants you need a certificate public key that's used to validate claims made (or on behalf of) a tenant.
 
 ## Create a certificate
 
