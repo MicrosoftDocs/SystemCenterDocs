@@ -604,7 +604,7 @@
 ##### [Perform self-service user tasks](vmm/manage/manage-self-service-tasks.md)
 ### [Monitor VMM](vmm/manage/manage-monitor-overview.md)
 #### [Set up monitoring and reporting with Operations Manager](vmm/manage/manage-monitor-ops-mgr.md)
-### [Add an Azure subscription in VMM](vmm/manage/adding-an-azure-subscription-in-vmm.md)
+### [Add an Azure subscription in VMM](vmm/manage/manage-add-azure-subscription.md)
 ### [Troubleshooting VMM resources](vmm/manage/troubleshooting-vmm-resources.md)
 ## [Service Management Automation](SMA/Service-Management-Automation.md)
 ### [What's new in Service Management Automation 2016](sma/get-started/What-s-new-in-Service-Management-Automation-2016.md)

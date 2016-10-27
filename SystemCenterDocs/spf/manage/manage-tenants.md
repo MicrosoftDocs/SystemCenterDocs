@@ -1,11 +1,11 @@
 ---
 ms.assetid: 8a6608c6-5189-4e4a-a9bf-c44b3b13aa38
 title: Manage tenants and user roles in SPF
-description: Provides information setting up SPF tenants, and creating self-service tenant roles in VMk
+description: Provides information setting up SPF tenants, and creating self-service tenant roles in VMM
 author: rayne-wiselman
 ms.author: raynew
 manager: cfreeman
-ms.date: 10/16/2016
+ms.date: 10/27/2016
 ms.topic: article
 ms.prod: system-center-threshold
 ms.technology: service-provider-foundation
@@ -61,7 +61,7 @@ PS C:\> $key = [Convert]::ToBase64String($cert.RawData)``
 
 Service Provider Foundation does not create user roles or define their scope (such as clouds), resources, or actions. Instead, the New-SCSPFTenantUserRole cmdlet creates an association for a tenant with a user role name. When that association is created, it also generates an ID that can be used for the corresponding ID for creating the role in System Center 2016 - Virtual Machine Manager.
 
-You can also create user roles by using the Admin OData protocol service using the [Developer's Guide](https://msdn.microsoft.com/library/jj643273.aspx).
+You can also create user roles by using the Admin OData protocol service using the [Developer's guide](https://msdn.microsoft.com/library/jj643273.aspx).
 
 1.  Run the SPF command shell as an Administrator.  
 2.  Type following command to create the tenant. This command assumes that the `$key` variable contains the public key.  
