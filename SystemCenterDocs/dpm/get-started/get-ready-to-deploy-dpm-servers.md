@@ -5,7 +5,7 @@ ms.topic:  article
 author:  markgalioto
 ms.prod:  system-center-threshold
 keywords:  
-ms.date: 10/12/2016
+ms.date: 10/28/2016
 title:  Get ready to deploy DPM servers
 ms.technology:  data-protection-manager
 ms.assetid:  517ce276-b811-4a06-ade3-ff71303ccf5b
@@ -24,7 +24,7 @@ There are a few planning steps to consider before you begin to deploy your DPM s
 -   [Grant user permissions](#BKMK_Users) - Specify who can interact with DPM.
 
 ## <a name="BKMK_Server"></a>Plan for DPM server deployment
-Firstly determine how many servers you'll need:
+First determine how many servers you'll need:
 
 -   DPM can protect up to 600 volumes. To protect this maximum size, DPM needs 120 TB per DPM server.
 
