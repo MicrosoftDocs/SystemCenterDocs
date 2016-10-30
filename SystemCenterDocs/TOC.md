@@ -605,6 +605,7 @@
 ### [Monitor VMM](vmm/manage/manage-monitor-overview.md)
 #### [Set up monitoring and reporting with Operations Manager](vmm/manage/manage-monitor-ops-mgr.md)
 ### [Add an Azure subscription in VMM](vmm/manage/manage-add-azure-subscription.md)
+### [VMM ports and protocols](vmm/manage/manage-ports-protocols.md)
 ### [Troubleshooting VMM resources](vmm/manage/troubleshooting-vmm-resources.md)
 ## [Service Management Automation](SMA/Service-Management-Automation.md)
 ### [What's new in Service Management Automation 2016](sma/get-started/What-s-new-in-Service-Management-Automation-2016.md)
