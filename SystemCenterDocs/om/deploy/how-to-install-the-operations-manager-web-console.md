@@ -4,7 +4,7 @@ title:  Install the Operations Manager Web console
 description:  
 author: mgoedtel
 manager: cfreemanwa
-ms.date: 2016-10-31
+ms.date: 11/01/2016
 ms.custom: na
 ms.prod: system-center-threshold
 ms.technology: operations-manager
