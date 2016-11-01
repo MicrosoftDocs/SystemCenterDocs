@@ -82,9 +82,9 @@ After moving the Operations Manager operational database to a different SQL Serv
 
     | Login | Database| 
     |-------|----------|
-    | DW Data Writer | - apm_datareader - apm_datawriter - db_datareader - dwsynch_users|
-    | Action account | - db_datareader - db_datawriter - db_ddladmin - dbmodule_users|
-    | DAS/Configuration account | - ConfigService - db_accessadmin - db_datareader - db_datawriter - db_ddladmin - db_securityadmin - sdk_users - sql_dependency_subscriber|
+    | DW Data Writer | - apm_datareader<br>- apm_datawriter<br>- db_datareader<br>-  dwsynch_users|
+    | Action account | - db_datareader<br>- db_datawriter<br>- db_ddladmin<br>- dbmodule_users|
+    | DAS/Configuration account | - ConfigService<br>- db_accessadmin<br>- db_datareader<br>- db_datawriter<br>- db_ddladmin<br>- db_securityadmin<br>- sdk_users<br>- sql_dependency_subscriber|
 
     > [!NOTE] 
     > If the DAS/Configuration account uses the LocalSystem account, specify computer account in the form <domain>\<computername>$.

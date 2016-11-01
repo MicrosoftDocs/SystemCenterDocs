@@ -80,9 +80,9 @@ On the reporting server, you will need to change the connection string to refere
 
     | Login | Database| 
     |-------|----------|
-    | DW Data Writer | - db_owner - OpsMgrWriter - apm_datareader  -apm_datawriter|
-    | DW Data Reader| - db_datareader - OpsMgrReader - apm_datareader| 
-    | DAS/Config account | - db_datareader - OpsMgrReader - apm_datareader|
+    | DW Data Writer | - db_owner<br>- OpsMgrWriter<br>- apm_datareader<br>- apm_datawriter|
+    | DW Data Reader| - db_datareader<br>- OpsMgrReader<br>- apm_datareader| 
+    | DAS/Config account | - db_datareader<br>- OpsMgrReader<br>- apm_datareader|
 
     > [!NOTE] 
     > If the DAS/Configuration account uses the LocalSystem account, specify computer account in the form <domain>\<computername>$.
