@@ -4,7 +4,7 @@ title: System Requirements for System Center 2016 - Operations Manager
 description: The system requirements article provides general performance and scalability guidance for consideration as part of your design planning of Operations Manager 2016.  
 author: mgoedtel
 manager: cfreeman
-ms.date: 2016-10-14
+ms.date: 2016-10-31
 ms.custom: na
 ms.prod: system-center-threshold
 ms.technology: operations-manager
@@ -100,14 +100,14 @@ Windows Server 2016, Windows Server 2016 Nano Server, Windows 10, Windows 8 Ente
 
 ### Management server/Gateway server requirements
 
-- Operating System: See [Server Operating System requirements](#server-operating-system- requirements)
+- Operating System: See [Server Operating System requirements](#server-operating-system-requirements).
 - Windows PowerShell version: Windows PowerShell version 2.0, or Windows PowerShell version 3.0.
 - Windows Remote Management: Windows Remote Management must be enabled for the management server.
 - NET Framework 4 or .NET Framework 4.5 is required. 
 
 ### Operations Manager console requirements
 
-- Operating System: See [Server Operating System requirements](#server-operating-system- requirements)
+- Operating System: See [Server Operating System requirements](#server-operating-system-requirements).
 - Windows PowerShell version: Windows PowerShell version 2.0, or Windows PowerShell version 3.0.
 - Microsoft Report Viewer 2015 runtime.  
 
@@ -118,7 +118,7 @@ Windows Server 2016, Windows Server 2016 Nano Server, Windows 10, Windows 8 Ente
 
 ### Web console requirements
 
-- Operating System: See [Server Operating System requirements](#server-operating-system- requirements)
+- Operating System: See [Server Operating System requirements](#server-operating-system-requirements).
 - Internet Information Services:  IIS 7.5 and later versions, with the IIS Management Console and the following role services installed:
 
     - Static Content 
@@ -147,7 +147,7 @@ Windows Server 2016, Windows Server 2016 Nano Server, Windows 10, Windows 8 Ente
 
 ### Operations Manager reporting server
 
-- Operating System: See [Server Operating System requirements](#server-operating-system- requirements).
+- Operating System: See [Server Operating System requirements](#server-operating-system-requirements)..
 - Microsoft SQL Server: See [SQL Server Requirements](planning-sqlserver-design.md#sql-server-requirements).
 - Remote Registry Service: Must be enabled and started.
 - Microsoft SQL Server Reporting Services: See [SQL Server Requirements](planning-sqlserver-design.md#sql-server-requirements). 

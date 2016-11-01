@@ -4,7 +4,7 @@ title: Using Classes and Groups for Overrides
 description:
 author: mgoedtel
 manager: cfreemanwa
-ms.date: 10/12/2016
+ms.date: 2016-10-31
 ms.custom: na
 ms.prod: system-center-threshold
 ms.technology: operations-manager
@@ -52,7 +52,7 @@ You have seen that classes are used to target workflows such as rules and monito
   
     When you select this option for your override, the override settings apply only to objects of a class other than the targeted class. The rule or monitor without the override settings continues to apply to all objects in the targeted class.  
   
-Overrides that apply to a class are applied first, then overrides that apply to a group, and finally overrides that apply to a specific object. For more information, see [Using the Enforced Attribute in Overrides](#Using-the-Enforced-Attribute-in-Overrides) below.  
+Overrides that apply to a class are applied first, then overrides that apply to a group, and finally overrides that apply to a specific object. For more information, see [Using the Enforced Attribute in Overrides](#using-the-enforced-attribute-in-overrides) below.  
   
 ## How to apply overrides  
 
