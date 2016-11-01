@@ -4,7 +4,7 @@ title:  Install Agent on Nano Server
 description:  
 author: mgoedtel
 manager: cfreemanwa
-ms.date: 2016-10-31
+ms.date: 11/01/2016
 ms.custom: na
 ms.prod: system-center-threshold
 ms.technology: operations-manager
@@ -61,7 +61,7 @@ There are several limitations in this release of the Nano Server agent. The foll
 
 -   Using network discovery rules to discover devices that support ICMP.
 
--   Monitoring specific url's on a Nano Server.
+-   Monitoring specific URL's on a Nano Server.
 
 -   Collecting data from the Application Log of a Nano Server.
 

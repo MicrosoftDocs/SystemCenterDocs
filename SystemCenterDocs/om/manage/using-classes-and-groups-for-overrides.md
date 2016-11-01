@@ -4,7 +4,7 @@ title: Using Classes and Groups for Overrides
 description:
 author: mgoedtel
 manager: cfreemanwa
-ms.date: 2016-10-31
+ms.date: 11/01/2016
 ms.custom: na
 ms.prod: system-center-threshold
 ms.technology: operations-manager
@@ -62,7 +62,7 @@ Here are some examples of when you would use the override options.
 
 Select to override **For all objects of class:** *Class*.  
   
-### You want to change the priority of an alert for computers that meet a specific criteria  
+### You want to change the priority of an alert for computers that meet specific criteria  
 
 Select to override **For a group** and create a group that dynamically adds members based on specific criteria.  
   
