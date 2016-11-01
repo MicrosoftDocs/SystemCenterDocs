@@ -102,6 +102,6 @@ Perform the following steps to modify the configuration of Operations Manager Re
 ## Next steps
 
 
-- See [How to move the Operational database](how-to-move-the-opeartional-database.md) to understand the sequence and steps for moving the Operations Manager operational database to a new SQL Server instance.  
+- See [How to move the Operational database](how-to-move-the-operational-database.md) to understand the sequence and steps for moving the Operations Manager operational database to a new SQL Server instance.  
 
 - See [How to move the Reporting data warehouse database](how-to-move-the-reporting-data-warehouse-database.md) to understand the sequence and steps for moving the Operations Manager Reporting data warehouse database to a new SQL Server instance.
