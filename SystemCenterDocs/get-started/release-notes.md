@@ -431,7 +431,12 @@ If you used the default instance of SQL Server, use Windows Explorer to drag Mic
 
 **Workaround:** After upgrading the cluster's functional level, refresh the storage provider for the File Server. This will refresh the platform information.
 
-#### Cluster Rolling Upgrade (CRU) of a Windows Server 2012 R2 host cluster to Windows Server 2016 Nano Server based host cluster will fail
+#### Trying to patch a Storage Spaces Direct cluster with VMM will fail
+**Description:** Patching of a Storage Spaces Direct cluster (either hyper-converged or disaggregated) using VMM is not supported and trying to do it using VMM may cause data loss .
+
+**Workaround:** The recommendation is to patch the Storage Spaces Direct clusters outside of VMM using Cluster Aware Updating (CAU) functionality provided by Windows Server .
+
+#### Cluster Rolling Upgrade (CRU) of a Windows Server 2012 R2 host cluster to Windows Server 2016 Nano Server-based host cluster will fail
 **Description:** When you try to upgrade the nodes of a Windows Server 2012 R2 cluster to Windows Server 2016 - Nano Server-based hosts using Cluster Rolling Upgrade functionality in VMM, the upgrade will fail with the below error:
 
 *Error (20406)
