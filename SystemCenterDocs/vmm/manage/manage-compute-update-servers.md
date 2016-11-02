@@ -80,6 +80,7 @@ After you've added the WSUS server to the fabric you can configure update baseli
 2. In **Baselines**, click the baseline you want to use.
 3. Click **Home** > **Properties** > **Updates** for the baseline. In **Updates**, add or remove baselines as required. To ensure all security updates are remediated don't remove anything.
 4. Click **Assignment Scope**, and select the host groups, clusters, standalone servers, and infrastructure servers to add to the baseline. Or click **All Hosts** to add all.
+**Note** that VMM Patching does not support Storage Spaces Direct clusters (either hyper-converged or disaggregated) and trying to patch these using VMM may cause data loss.
 
 ### Assign servers to a custom baseline
 
