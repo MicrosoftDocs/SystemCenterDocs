@@ -4,7 +4,7 @@ title:  Install Agent on Nano Server
 description:  
 author: mgoedtel
 manager: cfreemanwa
-ms.date: 10/12/2016
+ms.date: 11/01/2016
 ms.custom: na
 ms.prod: system-center-threshold
 ms.technology: operations-manager
@@ -31,7 +31,7 @@ Monitoring a Nano Server installation is similar to monitoring any other install
 
 You will need to follow the steps listed below to start monitoring a Nano Server.
 
-1.  [Deploy the Operations Manager agent from the Operations console using the Discovery Wizard](Install-Agent-on-Windows-Using-the-Discovery-Wizard.md) or [Manually install the Operations Manager agent on a Nano server](#Manually-install-the-operations-manager-agent-on-a--nano-server).
+1.  [Deploy the Operations Manager agent from the Operations console using the Discovery Wizard](Install-Agent-on-Windows-Using-the-Discovery-Wizard.md) or [Manually install the Operations Manager agent on a Nano server](#manually-install-the-operations-manager-agent-on-a-nano-server).
 
 3.  [Validate that the Operations Manager agent has been successfully installed](#validate-that-the-operations-manager-agent-has-been-successfully-installed)
 
@@ -61,7 +61,7 @@ There are several limitations in this release of the Nano Server agent. The foll
 
 -   Using network discovery rules to discover devices that support ICMP.
 
--   Monitoring specific url's on a Nano Server.
+-   Monitoring specific URL's on a Nano Server.
 
 -   Collecting data from the Application Log of a Nano Server.
 
