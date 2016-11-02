@@ -63,8 +63,8 @@ Before you can add guarded hosts to your VMM compute fabric, you must configure 
 ## Add or provision a new guarded host
 
 1.	Add the host:
-    a.	If you want to add an existing server running Windows Server 2016 as a guarded Hyper-V host, [add it to the fabric](../manage/manage-compute-add-existing-servers.md).
-    b.	If you want to provision a Hyper-V host from a bare-metal computer, [follow these prerequisites and instructions](../manage/manage-compute-bare-metal-hyper-v.md). Note that you can deploy the host as guarded when you provision it (Add Resource Wizard > **OS Settings** > **Configure as guarded host**.
+    -	If you want to add an existing server running Windows Server 2016 as a guarded Hyper-V host, [add it to the fabric](../manage/manage-compute-add-existing-servers.md).
+    -	If you want to provision a Hyper-V host from a bare-metal computer, [follow these prerequisites and instructions](../manage/manage-compute-bare-metal-hyper-v.md). Note that you can deploy the host as guarded when you provision it (Add Resource Wizard > **OS Settings** > **Configure as guarded host**.
 2. Continue on to the next section to configure the host as a guarded host.
 
 ## Configure an existing host to be a guarded host
