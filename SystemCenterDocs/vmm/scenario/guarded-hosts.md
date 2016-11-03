@@ -115,7 +115,8 @@ Now, for each guarded host, complete the following steps to apply a code integri
 4. Click **OK** to apply the configuration change. The host may restart to apply the new policy.
 5. Take the host out of maintenance mode.
 
-> [!WARNING] Be sure to select the correct code integrity policy for the host. If an incompatible policy is applied to the host, some applications, drivers, or operating system components may no longer work.
+> [!WARNING] 
+> Be sure to select the correct code integrity policy for the host. If an incompatible policy is applied to the host, some applications, drivers, or operating system components may no longer work.
 
 If you update the code integrity policy in the file share and wish to also update the guarded hosts, you can do so by completing the following steps:
 1. Place the host in [maintenance mode](../manage/manage-compute-host-service.md#put-hosts-in-maintenance-mode).
