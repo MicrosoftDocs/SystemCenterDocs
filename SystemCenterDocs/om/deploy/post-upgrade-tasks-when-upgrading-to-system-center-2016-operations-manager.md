@@ -1,10 +1,11 @@
 ---
 ms.assetid: 0bbddc74-0324-4cf5-8613-ab7e85c3d0d3
 title:  Post-Upgrade Tasks When Upgrading to System Center 2016 - Operations Manager
-description:  
+description:  This guide provides the post-upgrade tasks you must perform after upgrading to Operations Manager 2016.  
 author: mgoedtel
+ms.author: magoedte
 manager: cfreemanwa
-ms.date: 10/12/2016
+ms.date: 11/02/2016
 ms.custom: na
 ms.prod: system-center-threshold
 ms.technology: operations-manager

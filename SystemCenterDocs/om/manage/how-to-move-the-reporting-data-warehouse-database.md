@@ -1,16 +1,18 @@
 ---
+ms.assetid: de589c7d-feaa-4486-a0b5-bd8c7a9c12eb
 title: How to Move the Reporting Data Warehouse Database
 description: This article describes how to move the Operations Manager Reporting data warehouse database to a different SQL Server instance after initial deployment.  
 author: mgoedtel
-manager: cfreeman
-ms.date: 2016-10-31
+ms.author: magoedte
+ms.manager: cfreeman
+ms.date: 11/01/2016
 ms.custom: na
 ms.prod: system-center-threshold
 ms.technology: operations-manager
 ms.topic: article
 ---
 
-# How to Move the Reporting Data Warehouse Database
+# How to move the Reporting data warehouse database
 
 >Applies To: System Center 2016 - Operations Manager
 
@@ -18,25 +20,18 @@ After the initial deployment of System Center 2016 – Operations Manager, yo
 
 During the move, you need to stop services on your management servers, back up the database, restore the database, update the registry on management servers, update database tables, add new Logins, and modify User Mapping settings for Logins. For more information, see [SQL Server documentation](https://msdn.microsoft.com/library/mt590198%28v=sql.1%29.aspx).
 
-> [!CAUTION]
+> [!NOTE]
 > This procedure can result in data loss if it is not performed correctly and within a reasonable length of time of the failure. Ensure that you follow all steps precisely, without unnecessary delays between the steps.
 
 ## Summary of steps
 
-1. Stop Operation Manager services on all management servers in the management group
-2. Create a backup of the Reporting data warehouse database and move it to the new SQL server instance
-3. Restore the Reporting data warehouse database on the new SQL Server instance
-4. Update the registry on all management servers
-5. Update the Reporting data warehouse database with the new database server name and instance
-6. Update the Reporting data warehouse database with the new database server name to specify the location of the Application Performance Monitoring tables
-7. Update security credentials on the new SQL Server instance hosting the database
-8. Start Operation Manager services on all management servers
+![Summary steps for moving Reporting DW database](../media/om2016-move-reporting-dw-database-steps.png)<br> 
 
 ## Moving the Reporting data warehouse database
 
 ### Stop the Operations Manager services
 
-1. On all the management servers in the management group, stop the Operations Manager services: 
+On all the management servers in the management group, stop the Operations Manager services: 
   - System Center Data Access
   - Microsoft Monitoring Agent
   - System Center Management Configuration
