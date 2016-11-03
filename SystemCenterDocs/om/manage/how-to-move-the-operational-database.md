@@ -20,7 +20,7 @@ After the initial deployment of System Center 2016 – Operations Manager, yo
 
 During the move, you need to stop services on your management servers, back up the database, restore the database, update the registry and configuration file on management servers, update database tables, add new Logins, and modify User Mapping settings for Logins. For more information, see [SQL Server documentation](https://msdn.microsoft.com/library/mt590198%28v=sql.1%29.aspx).
 
-> [!CAUTION]
+> [!NOTE]
 > This procedure can result in data loss if it is not performed correctly and within a reasonable length of time of the failure. Ensure that you follow all steps precisely, without unnecessary delays between the steps.
 
 ## Summary of steps
