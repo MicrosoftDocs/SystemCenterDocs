@@ -5,7 +5,7 @@ description: This article describes how to move the Operations Manager operation
 author: mgoedtel
 ms.author: magoedte
 manager: cfreeman
-ms.date: 11/02/2016
+ms.date: 11/03/2016
 ms.custom: na
 ms.prod: system-center-threshold
 ms.technology: operations-manager
