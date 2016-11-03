@@ -153,7 +153,7 @@
 ##### [Maintaining the Operations Manager Infrastructure](om/manage/maintaining-operations-manager.md)
 ###### [How to configure Operations Manager to communicate with SQL Server](om/manage/how-to-configure-operations-manager-to-communicate-with-sqlserver.md)
 ###### [How to move the Operational database](om/manage/how-to-move-the-operational-database.md)
-###### [How to move the Reporting data warehouse database](om/manage/how-to-move-the-reporting-data-warehose-database.md)
+###### [How to move the Reporting data warehouse database](om/manage/how-to-move-the-reporting-data-warehouse-database.md)
 ## [Orchestrator](orch/Orchestrator.md)
 ### [Get Started](orch/get-started/get-started-with-orchestrator.md)
 #### [Activities](orch/get-started/activities.md)
