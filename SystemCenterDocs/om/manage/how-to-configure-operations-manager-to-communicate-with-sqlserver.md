@@ -12,7 +12,7 @@ ms.technology: operations-manager
 ms.topic: article
 ---
 
-# How to Configure Operations Manager to Communicate with SQL Server
+# How to configure Operations Manager to communicate with SQL Server
 
 >Applies To: System Center 2016 - Operations Manager
 
