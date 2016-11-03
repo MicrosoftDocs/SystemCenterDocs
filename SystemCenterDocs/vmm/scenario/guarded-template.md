@@ -29,6 +29,7 @@ To prepare and add a signed template disk to the VMM library, complete the follo
 4. In **Operating system**, select the operating system installed on the disk. This indicates to VMM that the VHDX isn't blank. The shield icon next to the disk name denotes it as a signed template disk for shielded VMs. Supply information about the **Family** and **Release** of the disk as well to make the resources available in the tenant Azure Pack self-service portal (optional).
 
     ![Disk properties window for the signed template disk](../media/guarded-disk-properties.png)
+    
 5. Click **OK** to save the properties of the signed template disk.
 
 ## Create a shielded VM template
