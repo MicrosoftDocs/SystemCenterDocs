@@ -81,7 +81,7 @@ To configure an existing Hyper-V host managed by VMM to be a guarded host, compl
     - If you modify these URLs outside the VMM console, you need to update them in VMM too. If you don't, VMM will not place shielded VMs on the host until the URLs match again. You can also uncheck and re-check the "Enable" box to reconfigure the host with the URLs configureed in VMM.
 6. If you're using VMM to manage code integrity policies, you can enable the second checkbox and select the appropriate policy for the system.
 7. Click **OK** to update the host's configuration.
-    > [!NOTE] The host may automatically restart after you click OK in order to install the *Host Guardian Hyper-V Support* feature or apply a new code integrity policy.
+> [!NOTE] The host may automatically restart after you click OK in order to install the *Host Guardian Hyper-V Support* feature or apply a new code integrity policy.
 8. Take the host out of maintenance mode.
 
 VMM checks that the host passes attestation when you add it, and every time that the host status is refreshed. VMM only deploys and migrates shielded VMs on hosts that have passed attestation. You can check the attestation status of a host in **Properties** > **Status** > **HGS Client Overall**.
@@ -111,7 +111,7 @@ Now, for each guarded host, complete the following steps to apply a code integri
 2. In **All Hosts**, right-click the host > **Properties** > **Host Guardian Service**.
     ![Apply a code integrity policy](../media/guarded-enable-host.png)
 3. Select to enable the option to configure the host with a code integrity policy, then select the appropriate policy for the system.
-    > [!WARNING] Be sure to select the correct policy for the host. If an incompatible policy is applied to the host, it may not be able to boot successfully.
+> [!WARNING] Be sure to select the correct policy for the host. If an incompatible policy is applied to the host, it may not be able to boot successfully.
 4. Click **OK** to apply the configuration change. The host may restart to apply the new policy.
 5. Take the host out of maintenance mode.
 
