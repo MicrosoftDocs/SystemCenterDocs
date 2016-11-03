@@ -1,9 +1,11 @@
 ---
+ms.assetid: 61bb5a83-479f-4cc1-b67a-9cd02fc91d2f
 title: How to Configure Operations Manager to Communicate with SQL Server
 description: This article describes how to reconfigure Operations Manager if you change the SQL Server configuration or SQL Server instance hosting its databases.  
 author: mgoedtel
+ms.author: magoedte
 manager: cfreeman
-ms.date: 2016-10-31
+ms.date: 11/01/2016
 ms.custom: na
 ms.prod: system-center-threshold
 ms.technology: operations-manager
@@ -93,7 +95,7 @@ Perform the following steps to modify the configuration of Operations Manager Re
 8. Change the connection string for **AppMonitoringSource**.
 9. Click **Application monitoring**, and then click **.NET monitoring**.
 10. Click **AppMonitoringSource**.
-11. On the **AppMonitoringSource** page, click **Properties** and change Connection string to contain the new data warehouse main data source server name.  For example, `computer\<instance>` followed by a comma, and then the SQL Server port number `(computer\instance,portNumber)`.  If you are hosting the database on a SQL Server cluster, replace *computer* with the virtual network name of the cluster.  If the database is part of a SQL Always On Availability Group, replace `computer\<instance>` with the availability group listener name in the format of `<AvalabilityGroupListnerName,portNumber>`.  
+11. On the **AppMonitoringSource** page, click **Properties** and change **Connection string** to contain the new data warehouse main data source server name.  For example, `computer\<instance>` followed by a comma, and then the SQL Server port number `(computer\instance,portNumber)`.  If you are hosting the database on a SQL Server cluster, replace *computer* with the virtual network name of the cluster.  If the database is part of a SQL Always On Availability Group, replace `computer\<instance>` with the availability group listener name in the format of `<AvalabilityGroupListnerName,portNumber>`.  
 12. Click **Apply**.
 13. Close the browser.
 

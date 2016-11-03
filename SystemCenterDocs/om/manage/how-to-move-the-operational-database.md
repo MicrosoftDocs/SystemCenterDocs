@@ -1,9 +1,11 @@
 ---
+ms.assetid: 033e12cc-1265-48a2-848c-acbc316d8ad5
 title: How to Move the Operational Database
 description: This article describes how to move the Operations Manager operational database to a different SQL Server instance after initial deployment.  
 author: mgoedtel
+ms.author: magoedte
 manager: cfreeman
-ms.date: 2016-10-31
+ms.date: 11/02/2016
 ms.custom: na
 ms.prod: system-center-threshold
 ms.technology: operations-manager
@@ -14,7 +16,7 @@ ms.topic: article
 
 >Applies To: System Center 2016 - Operations Manager
 
-Hardware and software updates often mean that it’s time to make changes to your Operations Manager configuration. Moving the operational database is such a change. If your current hardware is failing or out of date and newer hardware is available, or perhaps your organizational policy requires that you move the database to a newer operating system and server, then it’s likely time to move the operational database. In either case, when you move the operational database, you move it to a newer operating system and server. Here’s how to do it.
+After the initial deployment of System Center 2016 – Operations Manager, you might need to move the operational database from one Microsoft SQL Server-based computer to another.
 
 During the move, you need to stop services on your management servers, back up the database, restore the database, update the registry and configuration file on management servers, update database tables, add new Logins, and modify User Mapping settings for Logins. For more information, see [SQL Server documentation](https://msdn.microsoft.com/library/mt590198%28v=sql.1%29.aspx).
 
