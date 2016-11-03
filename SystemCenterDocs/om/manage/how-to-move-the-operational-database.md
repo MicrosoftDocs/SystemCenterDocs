@@ -25,7 +25,7 @@ During the move, you need to stop services on your management servers, back up t
 
 ## Summary of steps
 
-![Summary steps for moving operational database](../media/om2016-move-operational-database-summary-steps.png)<br> 
+![Summary steps for moving operational database](../media/om2016-move-operational-database-steps.png)<br> 
 
 ## Moving the Operational database
 

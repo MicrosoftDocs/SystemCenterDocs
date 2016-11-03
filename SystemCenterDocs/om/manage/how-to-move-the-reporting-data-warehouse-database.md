@@ -25,7 +25,7 @@ During the move, you need to stop services on your management servers, back up t
 
 ## Summary of steps
 
-![Summary steps for moving Reporting DW database](../media/om2016-move-reporting-dw-database-summary-steps.png)<br> 
+![Summary steps for moving Reporting DW database](../media/om2016-move-reporting-dw-database-steps.png)<br> 
 
 ## Moving the Reporting data warehouse database
 
