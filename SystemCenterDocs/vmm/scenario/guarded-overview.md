@@ -5,7 +5,7 @@ description: Describes how to set up guarded hosts and provision shielded VMs in
 author:  rayne-wiselman
 ms.author: raynew
 manager:  cfreeman
-ms.date:  10/16/2016
+ms.date:  11/01/2016
 ms.topic:  article
 ms.prod:  system-center-2016
 ms.technology:  virtual-machine-manager
@@ -15,38 +15,33 @@ ms.technology:  virtual-machine-manager
 
 >Applies To: System Center 2016 - Virtual Machine Manager
 
-This article provides an overview of deploying Hyper-V guarded hosts and shielded virtual machines in the System Center 2016 - Virtual Machine Manager (VMM) compute fabric.
+This article provides an overview of deploying Hyper-V guarded hosts and shielded virtual machines in a System Center 2016 - Virtual Machine Manager (VMM) compute fabric.
 
-Guarded fabric helps guarantee the security of Hyper-V virtual machines. As a cloud service provider, or private cloud administrator, you can deploy a guarded fabric that typically consists of a server running the host guardian service (HGS), one or more guarded Hyper-V host servers, and a set of shielded VMs running on those hosts. [Learn more](https://technet.microsoft.com/windows-server-docs/security/guarded-fabric-and-shielded-vms) about guarded fabric.
+Guarded fabrics provide additional protections for VMs to prevent tampering and theft by malicious administrators and malware. As a cloud service provider or private cloud administrator, you can deploy a guarded fabric that typically consists of a server running the host guardian service (HGS), one or more guarded Hyper-V host servers, and one or more shielded VMs running on those hosts. [Learn more about guarded fabrics](https://technet.microsoft.com/windows-server-docs/security/guarded-fabric-and-shielded-vms) in Windows Server 2016.
 
 ## Why do I need to protect VMs?
 
-Virtual machines contain an operating system, applications, and dependencies in the form of file data. This file data needs protection from internal and external threats, and there are a couple of mechanisms to do this:
-- **Encryption**:  You can deploy Virtual TPM and encryption to help with security for generation 2 VMs. Such protection is useful but relies upon the premise that fabric administrators are fully trusted.
-- **Shielding**: You can deploy shielded VMs to provide protection against malicious administrator actions, and untrusted software running on Hyper-V hosts. Shielded VMs have the following characteristics:
-    - The state and data of a shielded VM is protected against inspection, theft, and tampering from both malware and datacenter admins.
-    - Encryption of at-rest and in-flight data. Virtual TPM enables disk encryption. Live migrate and VM state are also encrypted.
-    - Host admins can’t access guest VM secret, or run arbitrary kernel-mode code.
-    - There’s an attestation of VM health so that VM workloads can only run on healthy hosts.
-    - After a VM is encrypted and shielding is enabled, it can’t be disabled by the administrator.
-    - A shielded VM is available only via the network, and not via a VM console connection. The admin can’t change this setting.
+Virtual machines contain sensitive data and configuration that the VM owner may not want a fabric administrator to see. However, since all the data for VMs are stored in files, the data can easily be copied off and inspected by malware or a malicious administrator. Shielded VMs in Windows Server 2016 help prevent such attacks by rigorously attesting to the health of a Hyper-V host before booting up a VM, ensuring the VM can only be started in datacenters authorized by the VM owner, and enabling the guest OS to encrypt its own data through the use of a new, virtual TPM. The VM owner can select from the following two types of protection when creating a security-sensitive VM:
+- **Encryption Supported**:  Ideal for enterprise private cloud scenarios where encryption of data at rest and in-flight is necessary, but the fabric administrators are still trusted. The VM console and other management conveniences remain available to fabric administrators.
+- **Shielded**: The most secure deployment option, shielding prevents fabric administrators from connecting to the VM console or modifying security aspects of the VM configuration. VM owners can only access the VM through remote management tools they choose to enable. This is recommended for tenants running sensitive workloads on public or shared infrastructure.
 
-[Learn more](https://technet.microsoft.com/en-us/windows-server-docs/security/guarded-fabric-and-shielded-vms#what-are-the-types-of-virtual-machines-that-a-guarded-fabric-can-run ) about comparing encryption and shielding capabilities.
+[Learn more](https://technet.microsoft.com/en-us/windows-server-docs/security/guarded-fabric-and-shielded-vms#what-are-the-types-of-virtual-machines-that-a-guarded-fabric-can-run ) about the differences between encryption supported and shielded VMs.
 
-## Guarded fabric deployment in VMM
+## Managing a guarded fabric with VMM
 
-To deploy guarded fabric, you need to make sure you have the deployment prerequisites in place, set up HGS, set up guarded hosts to work with HGS, and deploy shielded VMs.
+The core guarded fabric infrastructure (consisting of one or more guarded Hyper-V hosts, the Host Guardian Service, and the artifacts needed to create shielded VMs) is included with Windows Server 2016 and must be configured according to the [guarded fabric documentation](https://technet.microsoft.com/en-us/windows-server-docs/security/guarded-fabric-shielded-vm/guarded-fabric-and-shielded-vms-top-node).
+Once set up, you can optionally use System Center 2016 - Virtual Machine Manager to simplify management of the guarded fabric.
 
-VMM can be optionally deployed with guarded fabric to provide the following:
+VMM can be used to:
 
-- **Provision and management of guarded hosts in the VMM fabric**: You can add and manage guarded hosts to the VMM fabric. A guarded host is a Hyper-V server that:
-    - Meets the guarded host prerequisites.
-    - Is registered with the HGS. If the HGS is used admin-trusted attestation, the Hyper-V host must belong to a specific security group. If the HGS uses TPM-trusted attestation, the TPM identifier for the host must be registered with HGS.
-    - Is marked as guarded in VMM by configuring it to use the same HGS URLs as those specified in the global HGS settings.
-- **Set up a shielded virtual hard disk and optionally a VM template**: You need to set up a shielded VHDX and copy it into the VMM library. You can then use this VHDX in a VM template.
-- **Provision and management of shielded VMs**: There are a few options here:
-    - You can create new VMs from a signed virtual hard disk (VHDX), and optionally using a VM template.
-    - You can enable shielding for existing VMs.
+- **Provision and manage guarded hosts in the VMM fabric**: You can add and manage guarded hosts to the VMM fabric. A guarded host is a Hyper-V server that:
+    - Meets the [guarded host prerequisites](https://technet.microsoft.com/en-us/windows-server-docs/security/guarded-fabric-shielded-vm/guarded-fabric-deployment-prerequisites#prerequisites-for-hyper-v-hosts-that-will-become-guarded-hosts).
+    - Is authorized by the Host Guardian Service for the fabric to run shielded VMs. The HGS admin determines the requirements for hosts to successfully attest and become "guarded".
+    - Is marked as guarded in VMM by configuring it to use the same HGS URLs as those specified in the global VMM settings.
+- **Configure a shielded virtual hard disk and optionally a VM template**: Signed template disks (VHDX) used to deploy new shielded VMs can be stored in the VMM library for easy deployment. You can then use this VHDX in a VM template.
+- **Provision and manage shielded VMs**: VMM supports the full lifecycle of shielded VMs. This includes:
+    - Creating new shielded VMs from a signed template disk (VHDX), and optionally using a VM template.
+    - Converting existing VMs to shielded VMs.
 
 ## Next steps
 
