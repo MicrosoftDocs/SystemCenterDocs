@@ -1,17 +1,18 @@
 ---
 ms.assetid: f70d4861-d0ec-43df-ba9c-7acdd1238ffb
 title: Resource Pool Design Considerations
-description:
+description: This article provides an overview of the design decisions with resource pools  when planning a management group configuration for your Operations Manager 2016 deployment.  
 author: mgoedtel
+ms.author: magoedte
 manager: cfreemanwa
-ms.date: 10/12/2016
+ms.date: 11/04/2016
 ms.custom: na
 ms.prod: system-center-threshold
 ms.technology: operations-manager
 ms.topic: article
 ---
 
-# Resource Pool Design Considerations
+# Resource pool design considerations
 
 >Applies To: System Center 2016 - Operations Manager
 
