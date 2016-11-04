@@ -36,8 +36,8 @@ Here's the recommended upgrade order for the above scenario
 
 1. Make sure Windows Azure Pack, SPF, and VMM are all running the required updates.
 2. Verify [SPF deployment requirements](deploy-spf.md#before-you-begin).
-3. [Verify operating system requirements](https://technet.microsoft.com/system-center-docs/system-requirements/client-operating-system-compatibility) for the VMM 2016 console. Then upgrade the VMM console from 2012 R2 to 2016. [Learn more](../deploy/deploy-install-console.md).
-4. If you need access to a full VMM server to provide to create fabric and provide services to tenants, upgrade the VMM server from 2012 R2 to 2016. [Learn more](../deploy/deploy-upgrade.md).
+3. [Verify operating system requirements](https://technet.microsoft.com/system-center-docs/system-requirements/client-operating-system-compatibility) for the VMM 2016 console. Then upgrade the VMM console from 2012 R2 to 2016. [Learn more](https://technet.microsoft.com/system-center-docs/vmm/deploy/deploy-install-console).
+4. If you need access to a full VMM server to provide to create fabric and provide services to tenants, upgrade the VMM server from 2012 R2 to 2016. [Learn more](https://technet.microsoft.com/system-center-docs/vmm/deploy/deploy-upgrade).
 5. Now upgrade SPF. To do that, first uninstall SPF 2012 R2 from the Control Panel.  The SPF uninstall does not uninstall the database. Before you uninstall note the SQL Server and database used by the current SPF installation. You can do this by running this on the SPF server:
 
     ``Import-module SpfAdmin
