@@ -1,10 +1,11 @@
 ---
 ms.assetid: dabe96c0-08a5-4577-bd12-cafd7cc7a5a6
 title: Planning a Management Group Design
-description:
+description: This article provides an overview of the design decisions for consideration when planning a management group configuration for your Operations Manager 2016 deployment.  
 author: mgoedtel
+ms.author: magoedte
 manager: cfreemanwa
-ms.date: 10/12/2016
+ms.date: 11/04/2016
 ms.custom: na
 ms.prod: system-center-threshold
 ms.technology: operations-manager
@@ -48,15 +49,17 @@ In System Center 2012 R2 – Operations Manager, the root management server role
 
 The RMS is no longer a single point of failure as all management servers host the services previously hosted only by the RMS.  Roles are distributed to all the management servers.  If one management server becomes unavailable, its responsibilities are automatically redistributed.  An RMS emulator role provides for backwards compatibility for management packs targeting the RMS.  If you do not have any management packs that previously targeted the RMS, you will not need to make use of the RMS Emulator.
 
-The management group can contain multiple management servers to provide additional capacity and continuous availability.  When two or more management servers are added to a management group, the management servers automatically become part the three default resource pools and work is spread across the members of the pool.  For custom defined resource pools, members are manually added.  When a member of the resource pool fails, other members in the resource pool will pick up that member’s workload.  When a new management server is added, the new management server automatically picks up some of the work from existing members in the resource pool.
-If a management server is unavailable for any reason, agents that rely on it will automatically failover to another management server.  When selecting the number and placement of management servers, this failover ability should be considered if high availability is a requirement.
+The management group can contain multiple management servers to provide additional capacity and continuous availability.  When two or more management servers are added to a management group, the management servers automatically become part of the three default resource pools and work is spread across the members of the pool.  For custom defined resource pools, members are manually added.  When a member of the resource pool fails, other members in the resource pool will pick up that member’s workload.  When a new management server is added, the new management server automatically picks up some of the work from existing members in the resource pool.  Review [Resource pool design considerations](planning-resource-pool-design.md) to learn more about how they function and recommendations that influence your design plan.  
+
+If a management server is unavailable for any reason, by default agents that rely on it will automatically failover to another management server.  When selecting the number and placement of management servers, this failover ability should be considered if high availability is a requirement.
+
 Agents connect to a management server to communicate with all other Operations Manager components. Some of the work performed by a management server is the process of taking the operational data sent by agents and inserting it into the operational database and the data warehouse. 
 
 A typical management server will handle approximately 3,000 agents.  Actual server performance varies according to the volume of operational data collected; however, management servers typically can support 3,000 agents each, even with a relatively high volume of operational data. 
 
 There is no limit on the maximum number of management servers per management group. However, it is generally best practice to use as few management servers as possible after addressing scalability, high availability, and disaster recovery constraints. 
 
-Management servers should have a good network connectivity to the Operations Manager database and data warehouse because they frequently send large volumes of data to these stores.  In general, these SQL Server connections consume more bandwidth and are more sensitive to network latency.  Therefore, all management servers should be on the same local area network as the Operational database and the Data Warehouse database.
+Management servers should have a good network connectivity to the Operations Manager database and data warehouse because they frequently send large volumes of data to these stores.  In general, these SQL Server connections consume more bandwidth and are more sensitive to network latency.  Therefore, all management servers should be on the same local area network as the Operational database and the Data Warehouse database and never deployed across a wide area network.  There should be less than 10 milliseconds of latency between a management server and SQL Server instance hosting the Operations Manager databases.  
 
 ### Gateway server
 

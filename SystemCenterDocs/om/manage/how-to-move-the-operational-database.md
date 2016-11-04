@@ -1,42 +1,37 @@
 ---
+ms.assetid: 033e12cc-1265-48a2-848c-acbc316d8ad5
 title: How to Move the Operational Database
 description: This article describes how to move the Operations Manager operational database to a different SQL Server instance after initial deployment.  
 author: mgoedtel
+ms.author: magoedte
 manager: cfreeman
-ms.date: 2016-10-31
+ms.date: 11/03/2016
 ms.custom: na
 ms.prod: system-center-threshold
 ms.technology: operations-manager
 ms.topic: article
 ---
 
-# How to Move the Operational Database
+# How to move the Operational database
 
 >Applies To: System Center 2016 - Operations Manager
 
-Hardware and software updates often mean that it’s time to make changes to your Operations Manager configuration. Moving the operational database is such a change. If your current hardware is failing or out of date and newer hardware is available, or perhaps your organizational policy requires that you move the database to a newer operating system and server, then it’s likely time to move the operational database. In either case, when you move the operational database, you move it to a newer operating system and server. Here’s how to do it.
+After the initial deployment of System Center 2016 – Operations Manager, you might need to move the operational database from one Microsoft SQL Server-based computer to another.
 
 During the move, you need to stop services on your management servers, back up the database, restore the database, update the registry and configuration file on management servers, update database tables, add new Logins, and modify User Mapping settings for Logins. For more information, see [SQL Server documentation](https://msdn.microsoft.com/library/mt590198%28v=sql.1%29.aspx).
 
-> [!CAUTION]
+> [!NOTE]
 > This procedure can result in data loss if it is not performed correctly and within a reasonable length of time of the failure. Ensure that you follow all steps precisely, without unnecessary delays between the steps.
 
 ## Summary of steps
 
-1. Stop Operation Manager services on all management servers in the management group
-2. Create a backup of the operational database and move it to the new SQL server instance
-3. Restore the operational database on the new SQL Server instance
-4. Update the registry and configuration files on all management servers
-5. Update the operational database with the new database server name and instance
-6. Update the operational database with the new database server name to specify the location of the Application Performance Monitoring tables
-7. Update security credentials on the new SQL Server instance hosting the operational database
-8. Start Operation Manager services on all management servers
+![Summary steps for moving operational database](../media/om2016-move-operational-database-steps.png)<br> 
 
 ## Moving the Operational database
 
 ### Stop the Operations Manager services
 
-1. On all the management servers in the management group, stop the Operations Manager services: 
+On all the management servers in the management group, stop the Operations Manager services: 
   - System Center Data Access
   - Microsoft Monitoring Agent
   - System Center Management Configuration
@@ -59,7 +54,7 @@ During the move, you need to stop services on your management servers, back up t
 
 ### Update the registry and configuration files on the management servers, and Operational database
 
-After moving the Operations Manager operational database to a different SQL Server instance, you will need to follow the steps below to reconfigure all management servers in the management group to reference the new computer name and instance.  This requires modifying the registry, the configuration service configuration file, and several tables in the operational database.  The steps are detailed in the [How to configure Operations Manager to communicate with SQL Server](how-to-configure-operations-manager-to-communicate-with-sqlserver.md#how-to-configure-the-operations-manager-database).
+After moving the Operations Manager operational database to a different SQL Server instance, you will need to follow the steps below to reconfigure all management servers in the management group to reference the new computer name and instance.  This requires modifying the registry, the configuration service configuration file, and several tables in the operational database.  The steps are detailed in the [How to configure Operations Manager to communicate with SQL Server](how-to-configure-operations-manager-to-communicate-with-sqlserver.md#how-to-configure-the-operations-manager-operational-database).
 
 ### Update security credentials on the new SQL Server instance hosting the operational database 
 

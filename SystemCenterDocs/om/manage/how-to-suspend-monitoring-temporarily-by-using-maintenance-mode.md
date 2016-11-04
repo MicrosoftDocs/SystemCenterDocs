@@ -4,7 +4,7 @@ title:  How to Suspend Monitoring Temporarily by Using Maintenance Mode
 description:  
 author: mgoedtel
 manager: cfreemanwa
-ms.date: 10/12/2016
+ms.date: 2016-10-12
 ms.custom: na
 ms.prod: system-center-threshold
 ms.technology: operations-manager
@@ -58,7 +58,7 @@ You can either select one or more monitoring objects and place them into mainten
 >   - SQLAgentReaderRole
 >   - SQLAgentOperatorRole
 >
->   For more information about setting the SDK action account see [Account Information for Operations Manager](../plan/planning-security-accounts.md#system-center-configuration-service- and-system-center-data-access-service-account)
+>   For more information about setting the SDK action account see [Account Information for Operations Manager](../plan/planning-security-accounts.md#system-center-configuration-service-and-system-center-data-access-service-account)
 
 To support the scenario of initiating maintenance mode directly from the agent-managed computer, Operations Manager now supports allowing a server administrator to set the machine in maintenance mode directly from the computer itself, without needing to perform this from the Operations console.  This can be performed with the new PowerShell cmdlet **Start-SCOMAgentMaintenanceMode**.  
 
