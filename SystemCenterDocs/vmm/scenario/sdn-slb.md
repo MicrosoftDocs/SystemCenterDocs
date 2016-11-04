@@ -5,7 +5,7 @@ description: This article describes how to set up a SDN software load balancer i
 author:  rayne-wiselman
 ms.author: raynew
 manager:  cfreeman
-ms.date:  10/16/2016
+ms.date:  11/04/2016
 ms.topic:  article
 ms.prod:  system-center-threshold
 ms.technology:  virtual-machine-manager
@@ -48,7 +48,7 @@ You can use VMM to deploy a network controller and software load balancer. After
 2. Place the certificate in the NCCertificate.CR folder that you imported into the VMM library during network controller deployment.
 
 
-## Download the SLB service template
+## Download the service template
 
 1. Download the SLB/MUX service template from the [Microsoft SDN GitHub repository](https://github.com/Microsoft/SDN/tree/master/VMM/Templates/SLB). The download contains two templates:
 
