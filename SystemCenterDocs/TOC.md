@@ -658,6 +658,7 @@
 ## [Service Provider Foundation](SPF/service-provider-foundation.md)
 ### [Get started with SPF](spf/get-started/get-started-overview.md)
 ### [Plan SPF deployment](spf/plan/plan-spf.md)
+### [Upgrade SPF](spf/deploy/deploy-upgrade-spf.md)
 ### [Deploy SPF](spf/deploy/deploy-spf.md)
 ### [Manage SPF](spf/manage/manage-spf.md)
 #### [Register SPF in Windows Azure Pack](spf/manage/manage-register-spf.md)

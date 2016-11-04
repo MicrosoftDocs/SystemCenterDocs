@@ -5,7 +5,7 @@ description: This article describes how to use PowerShell to deploy SDN componen
 author:  rayne-wiselman
 ms.author: raynew
 manager:  cfreeman
-ms.date:  10/16/2016
+ms.date:  11/04/2016
 ms.topic:  article
 ms.prod:  system-center-threshold
 ms.technology:  virtual-machine-manager
@@ -53,7 +53,7 @@ Here's what you need to do to set up SDN components in VMM with PowerShell.
 
 1. **Configure hosts and physical network infrastructure**: You need access to your physical network devices to configure VLANs, routing etc. You also need Hyper-V hosts to host the SDN infrastructure and tenant VMs. [Learn more](https://technet.microsoft.com/windows-server-docs/networking/sdn/plan/plan-a-software-defined-network-infrastructure).
 2. [Download a prepared virtual hard disk](sdn-network-controller.md#download-a-virtual-hard-disk-for-the-service-template) for the service templates in vhd or vhdx format.
-3. Download the [network controller](sdn-network-controller.md#download-the-network-controller-service-template) service template, the [SLB service](sdn-slb.md#download-the-SLB-service-template) template, and the [RAS gateway](sdn-gateway.md#download-and-import-the-template) service template.
+3. Download the [network controller](sdn-network-controller.md#download-the-network-controller-service-template) service template, the [SLB service](sdn-slb.md#download-the-service-template) template, and the [RAS gateway](sdn-gateway.md#download-and-import-the-template) service template.
 4. Import the [network controller](sdn-network-controller.md#import-the-template), [SLB](sdn-slb.md#import-the-slb-template), and [RAS gateway](sdn-gateway.md#download-and-import-the-template) templates into the VMM library.
 4. [Set up Active Directory security groups](sdn-network-controller.md#set-up-active-directory-groups). One for network controller management, and another for network controller clients. Each group will need at least one user account in it.
 5. [Set up a VMM library share](sdn-network-controller.md#create-a-library-share-for-logging).You can have an optional library file share for keeping diagnostic logs. This library share will be accessed by the network controller to store diagnostics information throughout its lifetime.
