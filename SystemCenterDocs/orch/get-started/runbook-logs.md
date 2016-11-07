@@ -27,7 +27,7 @@ You can view the real\-time log of a runbook on the **Log** tab in the **Log** p
 ## <a name="HistoryLog"></a>Historic Log  
 You can view the historic log of a runbook on the **Log History** tab in the **Log** pane of the Runbook Designer. This log has an entry for each completed instance of the runbook with its start and end times and completion status. If you double\-click an entry, the **Runbook Details** dialog box opens that includes each activity in the runbook and its completion status. Double\-click each activity to view its details. If you have configured logging for the workbook to include Published Data, this information is included in the activity's details.  
 
-## <a name="LogOptions"></a>Runbook Log Options  
+## Runbook Log Options  
 By default, the Runbook logs do not include Published Data for each activity. For integration packs, refer to the specific integration pack guide. You can change the logging properties for an individual runbook to include this information in the logs. You can include both or either of the following two kinds of Published Data:  
 
 -   *Activity\-specific Published Data* is Published Data that is specific to a particular activity. Typically, this option should be enabled only for debugging purposes.  

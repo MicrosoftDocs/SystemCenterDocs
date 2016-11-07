@@ -73,7 +73,7 @@ The **Logging** tab on the **Properties** for a runbook allows you to optionally
 
 -   *Common Published Data*  
 
-    The set of data items common to all activities. For a list, see the [Runbook Log Options](../get-started/runbook-logs.md#logoptions) section in [runbook logs](../get-started/runbook-logs.md).  
+    The set of data items common to all activities. For a list, see the [Runbook Log Options](../get-started/runbook-logs.md#runbook-log-options) section in [runbook logs](../get-started/runbook-logs.md).  
 
     This logging option generates 6082 bytes for each activity.  
 
