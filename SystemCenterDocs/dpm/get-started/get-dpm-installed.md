@@ -17,13 +17,13 @@ ms.assetid:  85d424ba-123b-4158-8833-5bc04ea145db
 
 Here's what you'll need to do to get DPM set up:
 
-1.  Read the [Setup prerequisites](#BKMK_Prereq)
+1.  Read the [Setup prerequisites](#setup-prerequisites)
 
 2.  [Set up a SQL Server database](#BKMK_SQL) to store DPM settings and configuration information.
 
 3.  Set up DPM. You can [Install DPM](#BKMK_Install) from the user interface, or [Run an unattended install](#BKMK_Unattend). Follow these instructions if you want to [Install DPM on a domain controller](#BKMK_DC)
 
-## <a name="BKMK_Prereq"></a>Setup prerequisites
+## Setup prerequisites
 
 |Environment|Details or specifics for the installation|
 |-----------|-----------------------------------------|
