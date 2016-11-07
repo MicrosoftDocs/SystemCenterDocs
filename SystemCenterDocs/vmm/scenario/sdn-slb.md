@@ -2,13 +2,13 @@
 ms.assetid: e950d0c6-23d3-4f93-9210-c57f9068e5bc
 title: Set up an SDN software load balancer in the VMM fabric
 description: This article describes how to set up a SDN software load balancer in the VMM fabric
-author:  rayne-wiselman
+author: rayne-wiselman
 ms.author: raynew
-manager:  cfreeman
-ms.date:  10/16/2016
-ms.topic:  article
-ms.prod:  system-center-threshold
-ms.technology:  virtual-machine-manager
+manager: cfreeman
+ms.date: 11/07/2016
+ms.topic: article
+ms.prod: system-center-threshold
+ms.technology: virtual-machine-manager
 ---
 
 
@@ -48,7 +48,7 @@ You can use VMM to deploy a network controller and software load balancer. After
 2. Place the certificate in the NCCertificate.CR folder that you imported into the VMM library during network controller deployment.
 
 
-## Download the SLB service template
+## Download the service template
 
 1. Download the SLB/MUX service template from the [Microsoft SDN GitHub repository](https://github.com/Microsoft/SDN/tree/master/VMM/Templates/SLB). The download contains two templates:
 
@@ -194,7 +194,7 @@ In this procedure we'll provision a VIP for individual VMs. This isn't a typical
 1. In VMM console click **Fabric** > **Create VIP Template**. Type a template name and optional description.
 2. In **Virtual IP Port**, specify the port to test. In **Backend Port**, specify the port from which you want to map traffic on the backend. Click **Next**.
 3. In **Specify a Template Type** click **Specific**. Select **Microsoft** for **Manufacturer**. Select **Microsoft network controller** for **Model**. Click **Next**.
-4. In **Specify Protocol Options**, select the protocol you want to create a VIP mapping for. The HTTP and HTTPS options are commonly used, but for a simple example you can select the **Custom** option and select **TCP**. If TCP doesn't appear, type it manually. Click **Next**.
+4. In **Specify Protocol Options**, select the protocol you want to create a VIP mapping for. The HTTP and HTTPS options are commonly used, but for a simple example you can select the **Custom** option and select **TCP**. Only TCP or UDP is supported. Click **Next**.
 5. You can optionally select **Enable persistence** if you make the load balancer to connect connection from the client in a "sticky" manner. Click **Next**.
 6. For the Load Balancing method, select **Round Robin**. Click **Next**.
 7. Click **Next** in **Health Monitors**.
