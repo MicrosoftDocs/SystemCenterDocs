@@ -48,7 +48,8 @@ You can use a low-privileged account for the agent’s action account. On comput
 ## System Center Configuration Service and System Center Data Access Service account
 
 The System Center Configuration service and System Center Data Access service account is used by the System Center Data Access and System Center Management Configuration services to update information in the Operational database. The credentials used for the action account will be assigned to the sdk_user role in the Operational database.
-The account used for the SDK and Config Service account must have local administrative rights on all management servers in the management group.  The account should be either a Domain User or Local System.  The use of Local User account is not supported.  For increased security, we recommended you use a different account from the one used for the Management Server Action Account.  Grant it local administrative rights on all management servers in the management group.  
+
+The account should be either a Domain User or Local System.  The account used for the SDK and Config Service account must have local administrative rights on all management servers in the management group.  The use of Local User account is not supported.  For increased security, we recommended you use a different account from the one used for the Management Server Action Account.  
 
 > [!NOTE] 
 > If the Operations Manager database is installed on a computer separate from the management server and Local System is selected for the Data Access and Configuration service account, the computer account for the management server computer will be assigned to the sdk_user role on the Operations Manager database computer.
