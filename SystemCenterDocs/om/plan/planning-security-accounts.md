@@ -56,7 +56,7 @@ The account should be either a Domain User or Local System.  The account used fo
 
 ## Data Warehouse Write account
 
-The Data Warehouse Write account is the account used to write data from the management server to the Reporting data warehouse, and it reads data from the Operations Manager database.  The following table describes the roles and membership assigned to the account during setup.
+The Data Warehouse Write account is the account used to write data from the management server to the Reporting data warehouse, and it reads data from the Operations Manager database.  The following table describes the roles and membership assigned to the domain user account during setup.
 
 | Application | Database/role | Role/account |
 |:--- |:---|:--- |
@@ -70,7 +70,7 @@ The Data Warehouse Write account is the account used to write data from the mana
 
 ## Data Reader account
 
-The Data Reader account is used to deploy reports, define what user the SQL Server Reporting Services uses to execute queries against the Reporting data warehouse, and define the SQL Reporting Services account to connect to the management server.  This account is added to the Report Administrator User Profile.   The following table describes the roles and membership assigned to the account during setup.
+The Data Reader account is used to deploy reports, define what user the SQL Server Reporting Services uses to execute queries against the Reporting data warehouse, and define the SQL Reporting Services account to connect to the management server.  This domain user account is added to the Report Administrator User Profile.  The following table describes the roles and membership assigned to the account during setup.
 
 | Application | Database/role | Role/account |
 |:--- |:---|:--- |
