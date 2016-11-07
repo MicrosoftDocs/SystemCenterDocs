@@ -1,10 +1,11 @@
 ---
 ms.assetid: c2049a9d-fb5b-4d87-beae-529a244c97ce
 title: Service, User and Security Accounts
-description:
+description:  This article provides an overview of the security accounts required for initial setup of Operations Manager and for core features which may require a privileged account.  
 author: mgoedtel
+ms.author: magoedte
 manager: cfreemanwa
-ms.date: 10/12/2016
+ms.date: 11/06/2016
 ms.custom: na
 ms.prod: system-center-threshold
 ms.technology: operations-manager
@@ -28,11 +29,13 @@ In System Center 2016 – Operations Manager, management servers, gateway server
 - Monitoring and collecting Windows Management Instrumentation (WMI) data.
 - Running actions such as scripts or batches.
 
-The account that a MonitoringHost.exe process runs as is called the action account.  MonitoringHost.exe is the process that runs these actions by using the credentials that are specified in the action account.  A new instance of MonitoringHost.exe is created for each account.  The action account for the MonitoringHost.exe process running on an agent is called the Agent Action Account.  The action account used by the MonitoringHost.exe process on a management server is called the Management Server Action account.  The action account used by the MonitoringHost.exe process on a gateway server is called the Gateway Server Action Account.
+The account that a MonitoringHost.exe process runs as is called the action account.  MonitoringHost.exe is the process that runs these actions by using the credentials that are specified in the action account.  A new instance of MonitoringHost.exe is created for each account.  The action account for the MonitoringHost.exe process running on an agent is called the Agent Action Account.  The action account used by the MonitoringHost.exe process on a management server is called the Management Server Action account.  The action account used by the MonitoringHost.exe process on a gateway server is called the Gateway Server Action Account.  On all management servers in the management group, it is recommended to grant this account local administrative rights unless least-privileged access is required by your organizations IT security policy. 
+
 Unless an action has been associated with a Run As profile, the credentials that are used to perform the action will be those defined for the action account.  For more information about Run As Accounts and Run As Profiles, see the section [Run As Accounts](planning-security-run-as-accounts-profiles.md).  When an agent runs actions as either the default action account and/or Run As account(s), a new instance of MonitoringHost.exe is created for each account.
 
 When you install Operations Manager, you have the option of specifying either a domain account or using Local System.  The more secure approach is to specify a domain account which allows you to select a user with the least amount of privileges necessary for your environment.
-You can use a low-privileged account for the agent’s action account. On computers running Windows Server 2008 R2, the account must have the following minimum privileges:
+
+You can use a low-privileged account for the agent’s action account. On computers running Windows Server 2008 R2 or higher, the account must have the following minimum privileges:
 
 - Member of the local Users group
 - Member of the local Performance Monitor Users group
@@ -45,14 +48,10 @@ You can use a low-privileged account for the agent’s action account. On comput
 ## System Center Configuration Service and System Center Data Access Service account
 
 The System Center Configuration service and System Center Data Access service account is used by the System Center Data Access and System Center Management Configuration services to update information in the Operational database. The credentials used for the action account will be assigned to the sdk_user role in the Operational database.
-The account used for the SDK and Config Service account must have local administrative rights on the root management server computer.  The account should be either a Domain User or Local System.  The use of Local User account is not supported.  We recommended you use a different account from the one used for the Management Server Action Account.
+The account used for the SDK and Config Service account must have local administrative rights on all management servers in the management group.  The account should be either a Domain User or Local System.  The use of Local User account is not supported.  For increased security, we recommended you use a different account from the one used for the Management Server Action Account.  Grant it local administrative rights on all management servers in the management group.  
 
 > [!NOTE] 
 > If the Operations Manager database is installed on a computer separate from the management server and Local System is selected for the Data Access and Configuration service account, the computer account for the management server computer will be assigned to the sdk_user role on the Operations Manager database computer.
-
-## Agent Installation account
-
-When performing discovery-based agent deployment, an account is required with Administrator privileges to the computers being targeted for agent installation.  The management server action account is the default account for agent installation.  If the management server action account does not have administrator rights, the operator must provide a user account and password with administrative rights on the target computers.  This account is encrypted before being used and then discarded.
 
 ## Data Warehouse Write account
 
@@ -70,7 +69,7 @@ The Data Warehouse Write account is the account used to write data from the mana
 
 ## Data Reader account
 
-The Data Reader account is used to deploy reports, define what user the SQL Server Reporting Services uses to execute queries against the Reporting data warehouse, and define the SQL Reporting Services account to connect to the management server.  This account is added to the Report Administrator User Profile.  The following table describes the roles and membership assigned to the account during setup.
+The Data Reader account is used to deploy reports, define what user the SQL Server Reporting Services uses to execute queries against the Reporting data warehouse, and define the SQL Reporting Services account to connect to the management server.  This account is added to the Report Administrator User Profile.   The following table describes the roles and membership assigned to the account during setup.
 
 | Application | Database/role | Role/account |
 |:--- |:---|:--- |
@@ -80,6 +79,12 @@ The Data Reader account is used to deploy reports, define what user the SQL Serv
 | Operations Manager | User role | Operations Manager Report Security Administrators | 
 | Operations Manager | Run As account | Data Warehouse Report Deployment account | 
 | Windows service | SQL Server Reporting Services | Logon account |
+
+Ensure that the account you plan to use for the Data Reader account has Log on as Service and Allow Log on Locally rights for each management server, and the SQL Server hosting the Reporting Server role.  
+
+## Agent Installation account
+
+When performing discovery-based agent deployment, an account is required with Administrator privileges to the computers being targeted for agent installation.  The management server action account is the default account for agent installation.  If the management server action account does not have administrator rights, the operator must provide a user account and password with administrative rights on the target computers.  This account is encrypted before being used and then discarded.
 
 ## Notification Action account
 
