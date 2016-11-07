@@ -32,8 +32,8 @@ DPM uses RCT (the native change tracking in Hyper-V), which removes the need for
 - **Continued protection during cluster aware updates** -
 Windows Server 2016 comes with the cluster OS rolling update, where a cluster can be upgraded to Windows Server 2016 without bringing it down. DPM 2016 continues to protect VMs during the upgrade, maintaining the backup service level agreement (SLA).
 
-- **Secure VM Backups** -
-Shielded VMs and Guarded Fabric in Windows Server 2016 provide the ability to secure VMs on compromised hosts.  DPM 2016 backups maintain the security provided by shielded VMs, which protects enterprise resources, and help recover those VMs securely and seamlessly.
+- **Shielded VM Backups** -
+Shielded VMs in Windows Server 2016 help protect sensitive VMs from inspection, tampering, and data theft by malware and malicious administrators.  DPM 2016 backups retain the protections provided by shielded VMs to ensure they can be recovered seamlessly and securely.
 
 - **Hyper-V with Storage Spaces Direct** -
 DPM recognizes and protects Hyper-V VMs deployed on Storage Spaces Direct, delivering seamless backup and recovery of VMs in disaggregated and hyper-converged scenarios.

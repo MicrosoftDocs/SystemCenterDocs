@@ -1,9 +1,11 @@
 ---
 ms.assetid: 18a1048f-b83c-4961-ba46-a931d48b0cf3
 title: Implementing User Roles
+description:  This article provides an overview of how access to the operational data in the Operations Manager consoles works and how to configure a user role to assign permission.  
 author: mgoedtel
+ms.author: magoedte
 manager: cfreemanwa
-ms.date: 10/12/2016
+ms.date: 11/07/2016
 ms.custom: na
 ms.prod: system-center-threshold
 ms.technology: operations-manager
@@ -41,21 +43,21 @@ In Operations Manager, operations-such as resolving alerts, running tasks, overr
 |Administrator|Includes full privileges available in Operations Manager. **Note:** You can only add Active Directory security groups to the Administrator role.|  
 |Advanced Operator|Includes a set of privileges designed for users who need access to limited adjustment of monitoring configurations in addition to the Operator privileges. Grants members the ability to override the configuration of rules and monitors for specific targets or groups of targets within the configured scope. Advanced Operator also inherits Operator privileges.|  
 |Application Monitoring Operator|Includes a set of privileges designed for users that need access to **Application Diagnostics**. A user role based on the Application Monitoring Operator profile grants members the ability to see the Application Monitoring events in **Application Diagnostics** web console. **Note:** Access to the **Application Advisor** feature requires the Report Operator or Administrator profile.|  
-|Author|Includes a set of privileges designed for authoring of monitoring configurations. Grants members the ability to create, edit, and delete monitoring configuration \(for example, tasks, rules, monitors, and views\) for specific targets or groups of targets within the configured scope.|  
+|Author|Includes a set of privileges designed for authoring of monitoring configurations. Grants members the ability to create, edit, and delete monitoring configuration (for example, tasks, rules, monitors, and views) for specific targets or groups of targets within the configured scope.|  
 |Operator|Includes a set of privileges designed for users who need access to alerts, views, and tasks. Grants members the ability to interact with alerts, run tasks, and access views according to their configured scope. **Security Note:** When a dashboard view uses data from the data warehouse database, operators might be able to view data that they would not otherwise have access to in views that use data from the operational database.|  
-|Read\-only Operator|Includes a set of privileges designed for users who need read\-only access to alerts and views. Grants members the ability to view alerts and access views according to their configured scope. **Note:** Members of the Read\-only Operator role are not assigned rights to the Task Status view. **Security Note:** When a dashboard view uses data from the data warehouse database, operators might be able to view data that they would not otherwise have access to in views that use data from the operational database.|  
+|Read-only Operator|Includes a set of privileges designed for users who need read-only access to alerts and views. Grants members the ability to view alerts and access views according to their configured scope. **Note:** Members of the Read-only Operator role are not assigned rights to the Task Status view. **Security Note:** When a dashboard view uses data from the data warehouse database, operators might be able to view data that they would not otherwise have access to in views that use data from the operational database.|  
 |Report Operator|Includes a set of privileges designed for users who need access to Reports. Grants members the ability to view reports according to their configured scope. **Caution:** Users assigned to this role have access to all report data in the Reporting Data Warehouse and are not limited by scope.|  
 |Report Security Administrator|Enables the integration of SQL Server Reporting Services security with Operations Manager user roles. This gives Operations Manager Administrators the ability to control access to reports. This role can have only one member account and cannot be scoped.|  
   
 ## Define a scope using Operations Manager groups
 
-The scope of a user role determines which objects that user role can view and perform actions on in System Center 2016 – Operations Manager. A scope is comprised of one or more Operations Manager groups and is defined when creating a user role as part of the Create User Role Wizard. The Group Scope page of the Create User Role Wizard provides a list of all existing Operations Manager groups. You can choose all or some of these groups as the scope of the user role you are creating. 
+The scope of a user role determines which objects that user role can view and perform actions on in System Center 2016 – Operations Manager. A scope is comprised of one or more Operations Manager groups and is defined when creating a user role as part of the Create User Role Wizard. The **Group Scope** page of the **Create User Role Wizard** provides a list of all existing Operations Manager groups. You can choose all or some of these groups as the scope of the user role you are creating. 
 
-Groups, like other Operations Manager objects, are defined in management packs. In Operations Manager, groups are logical collections of objects, such as Windows-based computers, hard disks, or instances of Microsoft SQL Server. Several groups are created by the management packs that are imported automatically during an Operations Manager installation. If these groups do not contain the monitored objects you need for a scope, you can create a group that does. To do this, you must exit the Create User Role Wizard, switch to the Monitoring workspace and use the Create Group Wizard to create a group that better suits your needs.
+Groups, like other Operations Manager objects, are defined in management packs. In Operations Manager, groups are logical collections of objects, such as Windows-based computers, hard disks, or instances of Microsoft SQL Server. Several groups are created by the management packs that are imported automatically during an Operations Manager installation. If these groups do not contain the monitored objects you need for a scope, you can create a group that does. To do this, you must exit the **Create User Role Wizard**, switch to the Monitoring workspace and use the **Create Group Wizard** to create a group that better suits your needs.
   
 ## Assign tasks, dashboards and views
 
-A task is a user-initiated action from the Operations console that is run on an Operations Manager agent or on the system the console is launched from.  Tasks that you grant to a user role you are creating can perform those specific commands or actions for the user role you are creating.  The default setting is that all users assigned that user role can run all tasks and open all dashboard and views as long as their profile and scope allows it. The alternative in the Create User Role wizard Tasks page is to list the specific tasks the user rule you are creating can access.  Similarly on the Create User Role Dashbaords and Views page is to specify dashboards and views, as well as what specific dashboards that are available for access from the Tasks pane, can be accessed.  
+A task is a user-initiated action from the Operations console that is run on an Operations Manager agent or on the system the console is launched from.  Tasks that you grant to a user role you are creating can perform those specific commands or actions for the user role you are creating.  The default setting is that all users assigned that user role can run all tasks and open all dashboard and views as long as their profile and scope allows it. The alternative in the **Create User Role wizard Tasks** page is to list the specific tasks the user rule you are creating can access.  Similarly on the **Create User Role Dashbaords and Views** page is to specify dashboards and views, as well as what specific dashboards that are available for access from the Tasks pane, can be accessed.  
 
 ## How to assign members to built-in user roles
 
@@ -69,7 +71,7 @@ To limit the scope for a user, create a new user role.
   
 2.  In **Security**, click **User Roles**.  
   
-3.  In the results pane, right\-click any of the user roles, such as **Operations Manager Operators**, and click **Properties**.  
+3.  In the results pane, right-click any of the user roles, such as **Operations Manager Operators**, and click **Properties**.  
   
 4.  On the **General Properties** tab, in **User role members**, click **Add**.  
   

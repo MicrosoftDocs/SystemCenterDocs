@@ -49,7 +49,7 @@ Windows PowerShell Integrated Scripting Environment (ISE) is an application that
 7. [Edit](Editing-a-Runbook.md#ISE) and [publish](Publishing-a-Runbook.md) the runbook.
 
 ### <a name="CreatePowerShell"></a>To create a new Automation runbook with Windows PowerShell
-You can create a new runbook with Windows PowerShell by importing a script file. This is described below in [To import a runbook from a script file with Windows PowerShell](Creating-or-Importing-a-Runbook.md#ImportPowerShell).
+You can create a new runbook with Windows PowerShell by importing a script file. This is described below in [To import a runbook from a script file with Windows PowerShell](Creating-or-Importing-a-Runbook.md#to-import-a-runbook-from-a-script-file-with-windows-powershell).
 
 ## <a name="ImportRunbook"></a>Importing a Runbook into Service Management Automation
 You can import a script file into Service Management Automation using either the Management Portal or Windows PowerShell. The file must contain a single workflow, and the name of the workflow must match the name of the script file. This name will be used for the new runbook.
@@ -67,7 +67,7 @@ You can use the following procedure to import a script file into Service Managem
 
 5.  Your new runbook will appear on the **Runbooks** tab for the Automation Account.
 
-### <a name="ImportPowerShell"></a>To import a runbook from a script file with Windows PowerShell
+### To import a runbook from a script file with Windows PowerShell
 You can use the [Import-SmaRunbook](http://aka.ms/runbookauthor/cmdlet/importsmarunbook) cmdlet to create a new runbook from a script file containing a workflow. To modify the draft version of an existing runbook with the contents of a script file, see [To Change the Contents of a Runbook Using Windows PowerShell](Editing-a-Runbook.md#ChangeContentsPowerShell).
 
 The following sample commands show how to import a script file into an existing runbook and then publish it.

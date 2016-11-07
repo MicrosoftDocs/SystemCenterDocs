@@ -27,7 +27,7 @@ You can view the real\-time log of a runbook on the **Log** tab in the **Log** p
 ## <a name="HistoryLog"></a>Historic Log  
 You can view the historic log of a runbook on the **Log History** tab in the **Log** pane of the Runbook Designer. This log has an entry for each completed instance of the runbook with its start and end times and completion status. If you double\-click an entry, the **Runbook Details** dialog box opens that includes each activity in the runbook and its completion status. Double\-click each activity to view its details. If you have configured logging for the workbook to include Published Data, this information is included in the activity's details.  
 
-## <a name="LogOptions"></a>Runbook Log Options  
+## Runbook Log Options  
 By default, the Runbook logs do not include Published Data for each activity. For integration packs, refer to the specific integration pack guide. You can change the logging properties for an individual runbook to include this information in the logs. You can include both or either of the following two kinds of Published Data:  
 
 -   *Activity\-specific Published Data* is Published Data that is specific to a particular activity. Typically, this option should be enabled only for debugging purposes.  
@@ -58,7 +58,7 @@ The **Runbook Audit History** tracks the changes to each activity in a runbook. 
 
 You can view the **Runbook Audit History** on the **Audit History** tab of the Runbook Designer. The entries for the currently selected runbook will be displayed. Double\-click an entry to open the **Details** dialog box where you can view a list of all activities that were part of the change. Select one of the entries to view the activity that was performed in addition to the old and new values of any properties that were changed.  
 
-## <a name="Purge"></a>Purging Runbook Logs  
+## Purging Runbook Logs  
 The **Runbook Designer** provides a **Log Purge** feature. Orchestrator log data can be purged on demand, or on a scheduled basis. A good practice is to schedule a log purge regularly during off\-peak hours to maintain the database.  
 
 > [NOTE]  

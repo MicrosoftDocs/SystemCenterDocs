@@ -73,7 +73,7 @@ The **Logging** tab on the **Properties** for a runbook allows you to optionally
 
 -   *Common Published Data*  
 
-    The set of data items common to all activities. For a list, see the [Runbook Log Options](../get-started/runbook-logs.md#logoptions) section in [runbook logs](../get-started/runbook-logs.md).  
+    The set of data items common to all activities. For a list, see the [Runbook Log Options](../get-started/runbook-logs.md#runbook-log-options) section in [runbook logs](../get-started/runbook-logs.md).  
 
     This logging option generates 6082 bytes for each activity.  
 
@@ -91,7 +91,7 @@ Setting logging options can significantly affect performance and increase databa
 ### Purging Logs  
 The default options specified for the **Log Purge** feature in the **Runbook Designer** is configured to provide the best user experience for an out\-of\-the\-box Orchestrator deployment. Changing these values can change the performance characteristics of the environment, and should be implemented gradually and high\-watermarked, so that the impact of the change can be evaluated.  
 
-For more information on automatic and manual purging of logs, see the [Purging Runbook Logs](../get-started/runbook-logs.md#purge) section of [runbook logs](../get-started/runbook-logs.md).  
+For more information on automatic and manual purging of logs, see the [Purging Runbook Logs](../get-started/runbook-logs.md#purging-runbook-logs) section of [runbook logs](../get-started/runbook-logs.md).  
 
 ## Creating Performance Benchmarks  
 To create a simple runbook to test logging growth you can use the Standard Activity **Compare Values** to create benchmarks of an Orchestrator environment.  
