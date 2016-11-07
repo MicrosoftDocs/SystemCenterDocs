@@ -39,8 +39,8 @@ You can use a low-privileged account for the agent’s action account. On comput
 
 - Member of the local Users group
 - Member of the local Performance Monitor Users group
-- “Allow log on locally” permission (SetInteractiveLogonRight)
- 
+- “Allow log on locally” permission (SetInteractiveLogonRight)  
+
 > [!NOTE] 
 > The minimum privileges described above are the lowest privileges that Operations Manager supports for the action account.  Other Run As accounts can have lower privileges.  The actual privileges required for the Action account and the Run As accounts will depend upon which management packs are running on the computer and how they are configured.  For more information about which specific privileges are required, see the appropriate management pack guide.
 
