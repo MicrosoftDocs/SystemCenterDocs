@@ -5,7 +5,7 @@ description: Describes how to configure a shielded template disk and utility dis
 author: rayne-wiselman
 ms.author: raynew
 manager: cfreeman
-ms.date: 11/01/2016
+ms.date: 11/07/2016
 ms.topic: article
 ms.prod: system-center-2016
 ms.technology: virtual-machine-manager
@@ -17,19 +17,25 @@ ms.technology: virtual-machine-manager
 
 You deploy shielded virtual machines in the System Center 2016 - Virtual Machine Manager (VMM) compute fabric using a signed virtual machine hard disk (VHDX), and optionally with a VM template. This article describes how to add signed template disks to VMM, configure a shielding utility disk, deploy new shielded VMs and convert existing VMs to shielded VMs in VMM.
 
+## Before you start
+
+- The signed template disk used to create the shielded VM template must have the family and version marked.
+- The VMM library to which you add the signed template disk must be accessible to clouds from which shielded VMs will be provisioned.
+- The library shared should be added to clouds from which shielded VMs will be provisioned (not in read-only mode).
+
 ## Adding signed template disks for shielded VMs to the VMM library
 
 Shielded VMs can be deployed in two ways: by deploying directly from a signed template disk or by converting an existing VM to a shielded VM. Signed template disks assure tenants that the disk contents have not been modified and enable tenants to securely transfer deployment secrets like administrator passwords and certificates to the VM in an encrypted manner. For this reason, it is preferred to deploy shielded VMs from signed template disks.
 
 To prepare and add a signed template disk to the VMM library, complete the following steps:
 
-1. [Prepare a signed template disk](https://technet.microsoft.com/en-us/windows-server-docs/security/guarded-fabric-shielded-vm/guarded-fabric-create-a-shielded-vm-template) on a machine running Server 2016 with Desktop Experience or a Windows 10 computer with the [Remote Server Administration Tools](https://www.microsoft.com/en-us/download/details.aspx?id=45520) installed.
+1. [Prepare a signed template disk](https://technet.microsoft.com/windows-server-docs/security/guarded-fabric-shielded-vm/guarded-fabric-create-a-shielded-vm-template) on a machine running Windows Server 2016 with Desktop Experience, or Windows 10 with the [Remote Server Administration Tools](https://www.microsoft.com/en-us/download/details.aspx?id=45520) installed.
 2. [Copy the template disk](../manage/manage-library-add-files.md) to a library share (\\\\\<vmmserver\>\\MSSCVMMLibrary\\VHDs by default), and refresh the library server.
 3. To provide VMM with information about the operating system on the template disk, in **Library**, right-click the disk > **Properties**.
 4. In **Operating system**, select the operating system installed on the disk. This indicates to VMM that the VHDX isn't blank. The shield icon next to the disk name denotes it as a signed template disk for shielded VMs. Supply information about the **Family** and **Release** of the disk as well to make the resources available in the tenant Azure Pack self-service portal (optional).
 
     ![Disk properties window for the signed template disk](../media/guarded-disk-properties.png)
-    
+
 5. Click **OK** to save the properties of the signed template disk.
 
 ## Create a shielded VM template

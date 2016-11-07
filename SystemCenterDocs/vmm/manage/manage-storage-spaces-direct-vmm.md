@@ -5,7 +5,7 @@ description: This article describes how to set up Storage Spaces Direct in the V
 author:  rayne-wiselman
 ms.author: raynew
 manager:  cfreeman
-ms.date:  10/16/2016
+ms.date:  11/07/2016
 ms.topic:  article
 ms.prod:  system-center-2016
 ms.technology:  virtual-machine-manager
@@ -43,6 +43,9 @@ The hyper-converged deployment scenario runs Hyper-V (compute) and Storage Space
 - You need to deploy the Windows Server 2016 operating system.
 - You should set up networks on hosts that will be nodes in the cluster for which Storage Spaces Direct is enabled. you can do this using PowerShell. After the operating system and networking are in place, you can add the hosts to the VMM compute fabric.
 - You can't currently set up storage spaces direct on a Hyper-V cluster deployed from bare metal computers, or from computers running Windows Nano.
+- You should only assign a classification to the pool after you add the provider.
+
+
 
 Steps to set up this deployment include:
 
@@ -113,7 +116,7 @@ You need to create a pool, virtual disks, and CSVs in the Storage Spaces Direct 
    ![Select disks](../media/storage-spaces-disks.png)
 
  3. Complete the rest of the wizard as described in this [article](manage-sofs.md#create-storage-pools).
- 4.  Using Windows Powershell, the pool and the storage tier is automatically created with the "Enable-CLusterS2D autoconfig=true" option.
+ 4.  Using Windows Powershell, the pool and the storage tier is automatically created with the "Enable-ClusterS2D autoconfig=true" option.
 
 ### Create a CSV
 
