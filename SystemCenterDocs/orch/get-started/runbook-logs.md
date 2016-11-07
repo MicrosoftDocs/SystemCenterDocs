@@ -58,7 +58,7 @@ The **Runbook Audit History** tracks the changes to each activity in a runbook. 
 
 You can view the **Runbook Audit History** on the **Audit History** tab of the Runbook Designer. The entries for the currently selected runbook will be displayed. Double\-click an entry to open the **Details** dialog box where you can view a list of all activities that were part of the change. Select one of the entries to view the activity that was performed in addition to the old and new values of any properties that were changed.  
 
-## <a name="Purge"></a>Purging Runbook Logs  
+## Purging Runbook Logs  
 The **Runbook Designer** provides a **Log Purge** feature. Orchestrator log data can be purged on demand, or on a scheduled basis. A good practice is to schedule a log purge regularly during off\-peak hours to maintain the database.  
 
 > [NOTE]  
