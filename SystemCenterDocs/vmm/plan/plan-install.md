@@ -2,13 +2,13 @@
 ms.assetid: b6c7614a-e5af-42ae-b88d-9810b42a35f6
 title: Plan VMM installation
 description: This article provides planning information for setting up VMM
-author:  rayne-wiselman
+author: rayne-wiselman
 ms.author: raynew
-manager:  cfreeman
-ms.date:  11/03/2016
-ms.topic:  article
-ms.prod:  system-center-2016
-ms.technology:  virtual-machine-manager
+manager: cfreeman
+ms.date: 11/07/2016
+ms.topic: article
+ms.prod: system-center-2016
+ms.technology: virtual-machine-manager
 ---
 
 # Plan VMM installation
@@ -40,6 +40,27 @@ This table summarizes what you'll need for VMM 2016 installation.
 **Update servers** | WSUS 2012 R2 or later | Used to manage updates in the VMM Fabric
 **Bare metal provisioning** | System Management Architecture for Server Hardware (SMASH) v1 or higher over WS-MAN<br/><br/> Intelligent Platform Interface 1.5 or higher<br/><br/> Data Center Manager Interface (DCMI) 1.0 or higher | Required to discover physical bare metal servers and set up an operating system and Hyper-V.
 **PXE/WDS Server** | Windows Server 2008 R2 or later | Used for bare metal provisioning
+
+### SPN
+
+If the VMM user installing VMM, or running VMM setup, doesn't have permissions to write the service principal name (SPN) for the VMM server in Active Directory, setup will finish with a warning. If the SPN isn't registered, other computers running the VMM console won't be able to connect to the management server, and you won't be able to deploy a Hyper-V host on a bare metal computer in the VMM fabric. To avoid this issue, you need to register the SPN as a domain administrator before you install VMM, as follows:
+
+1. Run these commands from <SystemDrive>\Windows\System32>, as a domain administrator:
+    ``setspn -s -u SCVMM/<MachineBIOSName> <VMMServiceAccount>
+    setspn -s -u SCVMM/<MachineFQDN> <VMMServiceAccount>``
+
+    For a cluster, <MachineBIOSName> should be /<ClusterBIOSName> and <MachineFQDN> should be <ClusterFQDN>
+
+2. On the VMM server (or on each node in a cluster), in the registry, navigate to **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Microsoft System Center Virtual Machine Manager Server\Setup**.
+3. Set **VmmServicePrincipalNames** to **SCVMM/<MachineBIOSName>,SCVMM/<MachineFQDN>**. For a cluster: **SCVMM/<ClusterBIOSName>,SCVMM/<ClusterFQDN>**.
+
+If you can't do this, you can also register the SPN during VMM installation. A domain administrator can provide the SPN write permissions to VMM service user or setup user. Note that this approach isn't the preferred one. The permission allows the delegated user to register any servicePrincipalName, with no restrictions. Hence, the delegated user should be highly trusted, and the account credentials must be kept secure. To do this:
+
+1. Run adsiedit as a domain administrator.
+2. Navigate to find the VMM service user. Right-click **Properties** > **Security** > **Advanced**. Then click **Add**, and in **Select a principal**, specify user who will be granted the  permissions.
+3. Select **Write servicePrincipalName** > **OK** .
+
+When you install VMM with this user account SPN will be registered.
 
 
 ## VMM management server

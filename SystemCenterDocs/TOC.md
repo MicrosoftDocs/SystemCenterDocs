@@ -596,7 +596,7 @@
 ##### [Deploy Linux virtual machines](vmm/manage/manage-vm-linux.md)
 ##### [Manage virtual machine settings](vmm/manage/manage-vm-settings.md)
 ##### [Manage dynamic and power optimization for virtual machines](vmm/manage/manage-compute-optimization.md)
-##### [Create Virtual Machine Role templates](vmm/manage/Creating-Virtual-Machine-Role-Templates-by-using-VMM-and-Windows-Azure-Pack.md)
+##### [Create vm role templates](vmm/manage/Creating-Virtual-Machine-Role-Templates-by-using-VMM-and-Windows-Azure-Pack.md)
 #### [Migrate virtual machines and storage](vmm/manage/manage-vm-migrate-overview.md)
 ##### [Migrate a virtual machine](vmm/manage/manage-vm-migrate.md)
 ##### [Migrate virtual machine storage](vmm/manage/manage-vm-migrate-storage.md)
