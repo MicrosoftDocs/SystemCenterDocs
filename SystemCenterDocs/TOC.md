@@ -150,6 +150,7 @@
 ##### [Running tasks in Operations Manager](om/manage/running-tasks-in-operations-manager.md)
 ##### [Connecting management groups in Operations Manager](om/manage/connecting-management-groups-in-operations-manager.md)
 ##### [Using Operations Manager shell](om/manage/using-operations-manager-shell.md)
+##### [How to create and manage resource pools](om/manage/how-to-manage-resource-pools.md)
 ####  [Maintaining the Operations Manager Infrastructure](om/manage/maintaining-operations-manager.md)
 ##### [How to configure Operations Manager to communicate with SQL Server](om/manage/how-to-configure-operations-manager-to-communicate-with-sqlserver.md)
 ##### [How to move the Operational database](om/manage/how-to-move-the-operational-database.md)
