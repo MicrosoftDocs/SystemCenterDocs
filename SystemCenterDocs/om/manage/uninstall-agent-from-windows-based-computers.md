@@ -1,9 +1,11 @@
 ---
 ms.assetid: 11d9cf46-2880-493f-bdf1-29263e2949f0
 title: Uninstall Agent from Windows-based Computers
+description: This article describes the different methods to uninstall the Operations Manager agent from Windows computers. 
 author: mgoedtel
+ms.author: magoedte
 manager: cfreemanwa
-ms.date: 10/12/2016
+ms.date: 11/07/2016
 ms.custom: na
 ms.prod: system-center-threshold
 ms.technology: operations-manager
@@ -81,7 +83,7 @@ Use one of the following procedures to uninstall an System Center Operations Man
 
 - If you would like to install the Nano Server agent using the Discovery Wizard, from the command line or automate the deployment using a script or other automation solution, review [Install Agent on Nano Server](Install-Agent-on-Nano-Server.md).
 
-- To understand how to manage the configuration settings of a Windows agent and options available, review [Configuring Agents](Configuring-Agents.md).
+- To understand how to manage the configuration settings of a Windows agent and options available, review [Configuring Windows Agents](Configuring-Windows-Agents.md).
 
 - If you would like to manually install the Windows agent from the command line or automate the deployment using a script or other automation solution, review [Install Windows Agent Manually Using MOMAgent.msi](install-windows-agent-manually-using-momagent.md).
 
