@@ -93,7 +93,7 @@ The Automation editor includes a feature to insert code for Activities, Settings
 ## <a name="PowerShell"></a>To Edit an Automation Runbook Using Windows PowerShell
 To edit a runbook with Windows PowerShell, you edit the workflow using the editor of your choice and save it to a .ps1 file. You can use the [Get-SMARunbookDefinition](http://aka.ms/runbookauthor/cmdlet/getsmarunbookdefinition) cmdlet to retrieve the contents of the runbook and then [Edit-SMARunbook](http://aka.ms/runbookauthor/cmdlet/editsmarunbook) cmdlet to replace the existing draft workflow with the modified one.
 
-To create a new runbook from the contents of a script file, see [To import a runbook from a script file with Windows PowerShell](Creating-or-Importing-a-Runbook.md#ImportRunbookScriptPS).
+To create a new runbook from the contents of a script file, see [To import a runbook from a script file with Windows PowerShell](Creating-or-Importing-a-Runbook.md#to-import-a-runbook-from-a-script-file-with-windows-powershell).
 
 ### <a name="RetrieveContentsPowerShell"></a>To Retrieve the Contents of a Runbook Using Windows PowerShell
 The following sample commands show how to retrieve the script for a runbook and save it to a script file. In this example, the Draft version is retrieved. It is also possible to retrieve the Published version of the runbook although this version cannot be changed.
