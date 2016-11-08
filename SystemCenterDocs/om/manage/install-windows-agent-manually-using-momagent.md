@@ -1,10 +1,11 @@
 ---
 ms.assetid: 46f21e10-1ba5-4715-a99c-d4ceb861a093
 title:  Install Windows Agent Manually Using MOMAgent.msi 
-description:  
+description:  This article describes how to manually install the Operations Manager agent manually on Windows computers.
 author: mgoedtel
+ms.author: magoedte
 manager: cfreemanwa
-ms.date: 10/12/2016
+ms.date: 11/07/2016
 ms.custom: na
 ms.prod: system-center-threshold
 ms.technology: operations-manager
@@ -43,17 +44,12 @@ MOMAgent.msi can be found in the Operations Manager installation media and in th
 
 4.  On the **Welcome** page, click **Next**.
 
-5.  On the **Destination Folder** page, leave the installation folder set to the default, or click **Change** and type a path, and then click **Next**.
+5.  On the **Important Notice** page, review the Microsoft software license terms and then click **I Agree**. 
 
-6.  On the **Management Group Configuration** page, do one of the following:
+6.  On the **Destination Folder** page, leave the installation folder set to the default, or click **Change** and type a path, and then click **Next**.
 
-    -   Leave the **Specify Management Group information** check box selected, and then click **Next**.
-
-    -   Clear the **Specify Management Group information** check box if management group information has been published to Active Directory Domain Services, and then click **Next**.
-
-        > [!NOTE]
-        > Step 7 is bypassed by the Agent Setup Wizard if the **Specify Management Group information** check box is cleared.
-
+6.  On the **Agent Setup Options** page, you can choose whether you want to **connect the agent to Operations Manager**. When you connect the agent to Operations Manager, you can manually choose the management group that this agent will participate with in monitoring. If you do not select this option, the agent can still collect Application Performance Monitoring data locally. You can change your selection in the **Monitoring Agent** item in Control Panel.  
+  
 7.  On the **Management Group Configuration** page, do the following:
 
     a. Type the name of the management group in the **Management Group Name** field and the (which server?) server name in the **Management Server** field.
@@ -67,11 +63,9 @@ MOMAgent.msi can be found in the Operations Manager installation media and in th
 
 8.  On the **Agent Action Account** page, leave it set to the default of **Local System**, or select **Domain or Local Computer Account**; type the **User Account**, **Password**, and **Domain or local computer**; and then click **Next**.
 
-9. On the **Microsoft Update** page, select **Use Microsoft Update when I check for updates (recommended)** or **I don't want to use Microsoft Update**, and then click **Next**.
+9. On the **Ready to Install** page, review the settings and then click **Install** to display the **Installing Microsoft Monitoring Agent** page.
 
-10. On the **Ready to Install** page, review the settings and then click **Install** to display the **Installing System Center Operations Manager Agent** page.
-
-11. When the **Completing the Operations Manager Agent Setup Wizard** page appears, click **Finish**.
+11. When the **Completing the Microsoft Monitoring Agent Setup Wizard** page appears, click **Finish**.
 
 ## To deploy the Operations Manager agent from the command line
 
@@ -177,7 +171,7 @@ msiexec /x path\Directory\MOMAgent.msi /qn %temp%\MOMAgentUpgrade.log
 
 - After manually installing the Operations Manager agent on Windows or UNIX and Linux computers, you need to [Process Manual Agent Installations](Process-Manual-Agent-Installations.md).
 
-- To understand how to manage the configuration settings of a Windows agent and options available, review [Configuring Agents](Configuring-Agents.md).
+- To understand how to manage the configuration settings of a Windows agent and options available, review [Configuring Windows Agents](configuring-windows-agents.md).
 
 - Review [Uninstall Agent from Windows-based Computers](Uninstall-Agent-from-Windows-based-Computers.md) to understand what options and steps need to be performed to properly uninstall  the agent from your Windows computers.  
 
