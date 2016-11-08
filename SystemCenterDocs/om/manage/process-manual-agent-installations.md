@@ -4,7 +4,7 @@ title: Process Manual Agent Installations
 description:
 author: mgoedtel
 manager: cfreemanwa
-ms.date: 10/12/2016
+ms.date: 11/07/2016
 ms.custom: na
 ms.prod: system-center-threshold
 ms.technology: operations-manager
@@ -91,7 +91,7 @@ The following procedures show you how to configure settings for manual agent ins
 
 - If you would like to manually install the Windows agent from the command line or automate the deployment using a script or other automation solution, review [Install Windows Agent Manually Using MOMAgent.msi](install-windows-agent-manually-using-momagent.md).
 
-- To understand how to manage the configuration settings of a Windows agent and options available, review [Configuring Agents](Configuring-Agents.md).
+- To understand how to manage the configuration settings of a Windows agent and options available, review [Configuring Windows Agents](configuring-windows-agents.md).
 
 - Review [Uninstall Agent from Windows-based Computers](Uninstall-Agent-from-Windows-based-Computers.md) to understand what options and steps need to be performed to properly uninstall  the agent from your Windows computers.  
 
