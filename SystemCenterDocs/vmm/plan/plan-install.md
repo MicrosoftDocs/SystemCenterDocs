@@ -24,7 +24,7 @@ This table summarizes what you'll need for VMM 2016 installation.
 **Requirement** | **Version** | **Details**
 --- | --- | ---
 **VMM server operating system** | Windows Server 2016 | Server Core is supported
-**SQL Server** | [Supported versions](../plan/plan-install.md) | Enterprise or standard edition
+**SQL Server** | [Supported versions](../../system-requirements/sql-server-version-compatibility.md) | Enterprise or standard edition
 **Command line utilities for SQL Server** | [SQL Server 2014 feature pack](https://www.microsoft.com/download/details.aspx?id=42295) | If you want to deploy VMM services using SQL Server data-tier apps, install the related command-line utilities on the VMM management server. The version you install should match the SQL Server version. You don't have to install these to install VMM.
 **Client (to run VMM console)** | Windows 8.1 onwards, Windows Server 2012 R2 onwards | To run the console the machine must be in an Active Directory domain.
 **Windows Assessment and Deployment Kit (ADK)** | Windows ADK for Windows 10 |  You can install from setup, or you can [download it](https://msdn.microsoft.com/windows/hardware/dn913721.aspx). You only need the **Deployment Tools** and **Windows Preinstallation Environment** options.
