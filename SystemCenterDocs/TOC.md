@@ -88,6 +88,7 @@
 ##### [How to upgrade a gateway server to System Center 2016 - Operations Manager](om/Deploy/How-to-Upgrade-a-Gateway-Server-to-System-Center-2016-Operations-Manager.md)
 ##### [How to upgrade an Operations console to System Center 2016 - Operations Manager](om/Deploy/How-to-Upgrade-an-Operations-Console-to-System-Center-2016-Operations-Manager.md)
 ##### [How to upgrade an agent to System Center 2016 - Operations Manager](om/Deploy/How-to-Upgrade-an-Agent-to-System-Center-2016-Operations-Manager.md)
+##### [How to upgrade agents in a parallel deployment](om/deploy/how-to-upgrade-agents-in-a-parallel-deployment.md)
 ##### [How to upgrade a Web console to System Center 2016 - Operations Manager](om/Deploy/How-to-Upgrade-a-Web-Console-to-System-Center-2016-Operations-Manager.md)
 ##### [How to upgrade reporting to System Center 2016 - Operations Manager](om/Deploy/How-to-Upgrade-Reporting-to-System-Center-2016-Operations-Manager.md)
 ##### [How to upgrade from the evaluation version of Operations Manager](om/deploy/how-to-upgrade-from-the-evaluation-version.md)
