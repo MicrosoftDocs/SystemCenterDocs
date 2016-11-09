@@ -100,6 +100,7 @@
 ###### [Discover and install agent on UNIX and Linux](OM/Manage/Install-Agent-on-UNIX-and-Linux-Using-the-Discovery-Wizard.md)
 ###### [Install Windows agent manually with MOMAgent.msi](OM/Manage/install-windows-agent-manually-using-momagent.md)
 ###### [Install agent on Nano Server](OM/Manage/install-agent-on-nano-server.md)
+###### [Configuring Windows agents](om/manage/configuring-windows-agents.md)
 ###### [Install agent and certificate on UNIX and Linux from command line](OM/Manage/Install-Agent-and-Certificate-on-UNIX-and-Linux-Computers-Using-the-Command-Line.md)
 ###### [Manage certificates for UNIX and Linux computers](OM/Manage/Managing-Certificates-for-UNIX-and-Linux-Computers.md)
 ###### [Process manual agent installations](OM/Manage/Process-Manual-Agent-Installations.md)

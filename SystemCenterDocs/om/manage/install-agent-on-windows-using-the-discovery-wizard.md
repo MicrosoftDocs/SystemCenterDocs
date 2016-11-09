@@ -1,10 +1,11 @@
 ---
 ms.assetid: e68783da-5a7e-43f3-b7d1-0b82bd597d03
 title: Install Agent on Windows Using the Discovery Wizard
-description:  
+description:  This topic describes how to deploy the Operations Manager agent on Windows computers using the Discovery Wizard.
 author: mgoedtel
+ms.author: magoedtel
 manager: cfreemanwa
-ms.date: 10/12/2016
+ms.date: 11/07/2016
 ms.custom: na
 ms.prod: system-center-threshold
 ms.technology: operations-manager
@@ -122,7 +123,7 @@ Use the following procedure to discover computers running Windows and to deploy 
 
 - After manually installing the Operations Manager agent on Windows or UNIX and Linux computers, you need to [Process Manual Agent Installations](Process-Manual-Agent-Installations.md).
 
-- To understand how to manage the configuration settings of a Windows agent and options available, review [Configuring Agents](Configuring-Agents.md).
+- To understand how to manage the configuration settings of a Windows agent and options available, review [Configuring Windows Agents](configuring-windows-agents.md).
 
 - Review [Uninstall Agent from Windows-based Computers](Uninstall-Agent-from-Windows-based-Computers.md) to understand what options and steps need to be performed to properly uninstall  the agent from your Windows computers.  
 
