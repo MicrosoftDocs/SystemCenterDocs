@@ -1,10 +1,11 @@
 ---
 ms.assetid: 5a3a8b98-1113-45bf-9484-2c807ec3d013
 title: SQL Server Design Considerations
-description:
+description:  This article provides detailed design guidance for SQL Server to support the Operations Manager databases and reporting component.  
 author: mgoedtel
+ms.author: magoedte
 manager:  cfreeman
-ms.date: 10/12/2016
+ms.date: 11/08/2016
 ms.custom: na
 ms.prod: system-center-threshold
 ms.technology: operations-manager
@@ -32,7 +33,7 @@ The following versions of SQL Server are supported for a new or existing install
 | **Operations Manager** Reporting Server | yes | yes | 
 
 > [!NOTE] 
-> System Center 2016 – Operations Manager databases must use the same version of SQL Server, the SQL Server Collation setting must be a supported value, and SQL Server Full Text Search is **required** for both the operational and data warehouse databases.
+> System Center 2016 – Operations Manager databases must use the same version of SQL Server, the SQL Server Collation setting must be **SQL_Latin1_General_CP1_CI_AS**, and SQL Server Full Text Search is **required** for both the operational and data warehouse databases.
 
 > [!NOTE] 
 > System Center 2016 – Operations Manager Reporting cannot be installed in a side-by-side fashion with the System Center Operations Manager 2012 R2 Reporting and **must** be installed in native mode only. (SharePoint integrated mode is not supported.)
@@ -60,7 +61,7 @@ The following table helps you identify the firewall ports required by SQL Server
 | SQL Server Browser service | UDP 1434 | Inbound | management server |
 | SQL Server Dedicated Admin Connection | TCP 1434 | Inbound | management server | 
 | SQL Server Always On Availability Group Listener | Administrator configured port | Inbound | management server
-| SQL Server Reporting Services hosting Operations Manager Reporting Server | TCP 80 (default)/443 (SSL) | Inbound | management server and Operations console | 
+| SQL Server Reporting Services hosting Operations Manager Reporting Server | TCP 80 (default)/443 (SSL) | Inbound | management server and Operations console |  
 
 \* While TCP 1433 is the standard port for the default instance of the Database Engine, if you create a named instance on a standalone SQL Server or have deployed a SQL Always On Availability Group, a custom port will be defined and should be documented for reference so that you properly configure your firewalls and enter this information during setup.      
 
@@ -132,7 +133,7 @@ When formatting the partition that will be used for SQL Server data files, it is
 
 ### Reserve memory
 
-Identifying the right amount of physical memory and processors to allocate to the Windows server for SQL Server 2008 R2 and 2012 in support of System Center 2012 R2 - Operations Manager is not an easy question to answer (not even for other workloads outside of this product for that matter).  While the sizing calculator provided by the product group, which is based off of testing performed in a lab environment that may or may not align with the typical workload and configuration in the real-world, provides guidance based on workload scale (i.e. 500 systems, 1000 systems, etc.) the integrity of what's stated is often brought into question.  It serves as an initial recommendation to start with, however it's not and cannot be considered the final configuration.   
+Identifying the right amount of physical memory and processors to allocate to the Windows server for SQL Server 2014 and 2016 in support of System Center 2016 - Operations Manager is not an easy question to answer (not even for other workloads outside of this product for that matter).  While the sizing calculator provided by the product group, which is based off of testing performed in a lab environment that may or may not align with the typical workload and configuration in the real-world, provides guidance based on workload scale (i.e. 500 systems, 1000 systems, etc.) the integrity of what's stated is often brought into question.  It serves as an initial recommendation to start with, however it's not and cannot be considered the final configuration.   
 
 By default, SQL Server can change its memory requirements dynamically based on available system resources. The default setting for min server memory is 0, and the default setting for max server memory is 2147483647. The minimum amount of memory you can specify for max server memory is 16 megabytes (MB).  A number of performance and memory related problems are because customer’s don’t set a value for Max. Server Memory and they don’t do that because they don’t know what to set.  A number of other factors influence the maximum amount of memory you allocate to SQL to ensure the operating system has enough memory to support the other processes running on that system, such as HBA card, management agents, anti-virus real-time scanning, etc. Otherwise, the OS and SQL will page to disk and then disk I/O increases, further decreasing performance and creating a "ripple" effect where it is noticeable in Operations Manager.  
 
@@ -207,7 +208,7 @@ Note In this configuration, N represents the number of processors.
 -  For servers that have NUMA configured and hyperthreading enabled, the MAXDOP value should not exceed number of physical processors per NUMA node.
 
 You can monitor the number of parallel workers by querying sys.dm_os_tasks.  
-In one customer deployment of Operations Manager 2012, which was monitoring multiple datacenter infrastructure workloads across five thousand Windows agent-managed systems, the SQL Server 2008 R2 server hosting the operational database exhibited significant performance degredation.  The hardware configuration of this server is a HP Blade G6 with 24 core processors and 196 GB of RAM.  The instance hosting the OperationsManager database has a MAXMEM setting of 64 GB.  After performing the suggested optimizations in this section, performance improved, however there continued to be a query parallelism bottleneck.  After testing different values, the most optimal performance was found by setting MAXDOP=4.  
+In one customer deployment of Operations Manager 2012, which was monitoring multiple datacenter infrastructure workloads across five thousand Windows agent-managed systems, the SQL Server instance hosting the operational database exhibited significant performance degredation.  The hardware configuration of this server is a HP Blade G6 with 24 core processors and 196 GB of RAM.  The instance hosting the OperationsManager database has a MAXMEM setting of 64 GB.  After performing the suggested optimizations in this section, performance improved, however there continued to be a query parallelism bottleneck.  After testing different values, the most optimal performance was found by setting MAXDOP=4.  
 
 ### Initial database sizing
 
