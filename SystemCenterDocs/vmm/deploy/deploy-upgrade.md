@@ -1,14 +1,14 @@
 ---
 ms.assetid: ecaa876d-d376-48a0-a20c-15f0c266e616
-title: Upgrade to System Center 2016 - VMM
-description: This article helps you to upgrade your existing VMM deployment to System Center 2016 - VMM
-author:  rayne-wiselman
+title: Upgrade VMM
+description: This article helps you to upgrade your existing VMM servers and databases to System Center 2016 - VMM
+author: rayne-wiselman
 ms.author: raynew
-manager:  cfreemanwa
-ms.date:  10/16/2016
-ms.topic:  article
+manager: cfreemanwa
+ms.date: 11/09/2016
+ms.topic: article
 ms.prod:  system-center-threshold
-ms.technology:  virtual-machine-manager
+ms.technology: virtual-machine-manager
 ---
 
 # Upgrade to System Center 2016 - VMM
@@ -27,6 +27,8 @@ This article describes prerequisites for upgrading to System Center 2016 - Virtu
 - Perform a full backup of the VMM database.
 - Ensure that the server meets all requirements for VMM, and that prerequisites are in place [Learn more](../plan/plan-install.md)
 - If needed, upgrade SQL Server to a supported version.
+- Verify the [supported SQL Server versions](https://technet.microsoft.com/system-center-docs/system-requirements/sql-server-version-compatibility). Currently for best performance, we recommend SQL 2014 with SP1.
+2. If you're upgrading a high availability SQL Server database, remote connectivity to the console sessions will be broken while the SQL Server role fails over. Connectivity is automatically restored afterfailover completes.
 - If the current database is configured with AlwaysOn availability groups::
 	- If the VMM database is included in the availability group, remove it in SQL Server Management Studio.
 	- Initiate a failover to the computer that is running SQL Server, and on which the VMM database is installed.
@@ -65,7 +67,7 @@ During Setup, VMM enables the following firewall rules. These rules remain in ef
 - Windows Standards-Based Storage Management
 
 
-## Upgrade a high availability deployment
+## Upgrade a highly available VMM server
 
 Here's what you'll need to do:
 
@@ -92,15 +94,51 @@ Here's what you'll need to do:
 	- If SQL Server runs on the VMM server, type the name of the VMM server, or type **localhost**. If the SQL Server is in a cluster, type the cluster name.
 	- Don't specify a **Port** value if you're using local SQL Server, or if your remote SQL Server uses the default port (1443).
 	- Select **Existing Database** and select the database you backed up from your previous installation. Provide credentials with permissions to access the database. When you're prompted to upgrade the database click **Yes**.
-13. In **Cluster configuration** page type a name for the VMM high availability deployment. Don't use the cluster name or the name of the computer on which you're installing VMM. This name is used when you connect to VMM using the VMM console.
-14. If you are using static IPv4 addresses, specify the IP address to assign to the clustered service name. The clustered service name and its assigned IP address will be registered in DNS. If you are using IPv6 addresses or DHCP, you don't need to do this.
-14. In **Configure service account and distributed key management**, specify the account that the VMM service will use. You can't change the identity of the VMM service account after installation.
+11. In **Cluster configuration** page type a name for the VMM high availability deployment. Don't use the cluster name or the name of the computer on which you're installing VMM. This name is used when you connect to VMM using the VMM console.
+12. If you are using static IPv4 addresses, specify the IP address to assign to the clustered service name. The clustered service name and its assigned IP address will be registered in DNS. If you are using IPv6 addresses or DHCP, you don't need to do this.
+13. In **Configure service account and distributed key management**, specify the account that the VMM service will use. You can't change the identity of the VMM service account after installation.
 14. Under **Distributed Key Management**, select whether to store encryption keys in Active Directory. Choose settings careful for the service account and distributed key management. Depending on what you choose encrypted data such as passwords in templates might not be available after the upgrade and you'll need to enter them manually.
 15. In **Port configuration**, use the default port number for each feature or provide a unique port number that is appropriate in your environment. You cannot change the ports that you assign during the installation of a VMM management server unless you uninstall and then reinstall the VMM management server. Also, do not configure any feature to use port 5986, because that port number is preassigned.
 16. In **Library configuration**, select whether to create a new library share or to use an existing library share on the computer. The default library share that VMM creates is named MSSCVMMLibrary, and the folder is located at **%SYSTEMDRIVE%\ProgramData\Virtual Machine Manager Library Files**. **ProgramData** is a hidden folder, and you cannot remove it. After the VMM management server is installed, you can add library shares and library servers by using the VMM console or by using the VMM command shell.
 17. In **Upgrade compatibility report**, review settings > **Next** to proceed with upgrade.
 18. In **Installation Summary**, review settings and click **Install** to upgrade the server. **Installing features** page appears and displays the installation progress.
 18. In **Setup completed successfully**, click **Close** to finish the installation. To open the VMM console, you can ensure that **Open the VMM console when this wizard closes** is checked, or you can click the **Virtual Machine Manager Console** icon on the desktop.
+
+## Upgrade the VMM SQL Server database
+
+There are a couple of reasons you might want to upgrade the VMM SQL Server database:
+
+- You're upgrading VMM to System Center 2016, and the current SQL Server database version isn't support.
+- You want to upgrade a VMM standalone server to a high availability server, and SQL Server is installed locally.
+- You want to move the SQL Server database to a different computer.
+- Before you upgrade, collect information about the VMM database:
+	- Database connection: Available in the VMM console > **Settings** > **General** > **Database Connection**
+	- Account information: Available in Server Manager > **Tools** > **Services**. Right-click **System Center Virtual Machine Manager** > **Properties** > **og On**. This is the domain or local account that was assigned as the service account when VMM was installed. You can check if it's local in **Tools** > **Computer Manager** > **Local Users and Groups** > **Users**.
+	Distributed key management: Check whether you used distributed key management when you installed VMM, or if encryption keys are stored locally on the VMM server.
+	Updates: If you're moving the VMM database, but not upgrading VMM, check which update rollups have been applied on the VMM server.
+
+### Standalone database
+
+1. Back up the existing VMM database, and copy the backup to a computer running a supported version of SQL Server.
+2. Use SQL Server tools to restore the database.
+3. If you are upgrading VMM, specify the new SQL Server location in VMM setup > **Database Configuration**.
+4. If you're not upgrading VMM, you need to reinstall it. To do this, close all connections to the VMM management server, and uninstall > reinstall VMM. On the **Database Options** page, select **Retain database**. Reinstall with the same settings you used for the original installation, but on the **Database Configuration** page:
+
+	- Specify the name of the computer on which the VMM database is now located.
+	- Specify the availability group listener if the database is configured with AlwaysOn.
+	- Specify the port to use for communicating with the SQL Server computer if SQL Server is remote, the SQL Server browser service isn't started on the computer, and SQL Server isn't using the default port (1433). Otherwise, you don't need to specify a port setting.
+	After reinstallation apply the same update rollups, and check that the VMM deployment is working. Then, apply any new update rollups if needed.
+
+
+### Highly available database
+
+1. Note the source version of the existing database, and the version you want to upgrade to. Check that the version is supported. VMM supports all SQL Server versions that are in mainstream support.
+2. Create a backup of the highly available SQL Server database, from the active node of the SQL Server cluster.
+3. Upgrade passive SQL Server nodes to the new version. After the upgrade, optionally install SQL Server Management Studio if you want to manage SQL Server from this node.
+4. Fail over the highly available SQL server role, from the currently active node to the upgraded node. After failover, you can use SQL Server Management Studio to validate the running database version.
+5. Repeat the upgrade for the other nodes in the HA SQL cluster. As an additional validation, you can fail over the SQL Server database roles, to ensure that everything works as expected.
+
+
 
 ## Post-upgrade tasks
 
