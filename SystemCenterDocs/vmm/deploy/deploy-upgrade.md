@@ -43,8 +43,8 @@ This article describes prerequisites for upgrading to System Center 2016 - Virtu
 3. Start setup to install VMM 2016. In the main setup page, click **Install**.
 4. In **Select features to install**, select **VMM management server** >  **Next**. The VMM console is automatically installed.
 5. In **Product registration information**, provide the appropriate information > **Next**. If you don't enter a product key, VMM will be installed as an evaluation version that expires 180 days after installation.
-6. In **Please read this license agreement** page, review the license agreement, select the **I have read, understood, and agree with the terms of the license agreement** > **Next**.
-7. In **Usage and Connectivity Data** page, select either option > **Next**.
+6. In **Please read this license agreement**, review the license agreement, select the **I have read, understood, and agree with the terms of the license agreement** > **Next**.
+7. In **Usage and Connectivity Data**, select either option > **Next**.
 8. If **Microsoft Update** appears, select whether you want to use Microsoft Update >  **Next**.
 9. In **Installation location**, use the default path or type a different installation path for the VMM program files, and then click **Next**. The computer you're upgrading is checked to ensure it complies with prerequisites.
 10. In **Database configuration**:
@@ -80,7 +80,7 @@ Here's what you'll need to do:
 		- Note the name of your cluster, and then destroy the cluster.
 		- Upgrade the operating system on all the nodes in the cluster that you want to upgrade.
 		- Recreate the cluster by using its previous name.
-3. Now run VMM setup on each cluster node.
+3. Run VMM setup on each cluster node.
 4. In the main setup page, click **Install**.
 5. In **Select features to install**, select the **VMM management server** and then click **Next**. The VMM console will be automatically installed.
 6. In **Product registration information**, provide the appropriate information, and then click **Next**. If you do not enter a product key, VMM will be installed as an evaluation version that expires 180 days after installation.
