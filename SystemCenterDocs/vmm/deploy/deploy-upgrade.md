@@ -178,7 +178,7 @@ After the upgrade, you need to update the VMM agents on your Hyper-V hosts and i
 If you upgraded a database that was configured with AlwaysOn Availability Groups, you need to complete a few tasks to ensure that the upgraded database is properly configured with AlwaysOn Availability Groups.
 
 1. Add the VMM database to the availability group. You can use Microsoft SQL Server Management Studio to perform this task.
-2. On the secondary node computer in the cluster that is running SQL Server, create new sign-in account. Configure the sign-in name so that it is identical to the VMM service account name. Include user mapping to the VMM database, and configure the database owner credentials.
+2. On the secondary node computer in the cluster that is running SQL Server, create a new sign-in account. Configure the sign-in name so that it is identical to the VMM service account name. Include user mapping to the VMM database, and configure the database owner credentials.
 3. Initiate a failover to the secondary node computer that is running SQL Server, and verify that you can restart the VMM service (scvmmservice).
 4. Repeat the last two steps for every secondary node in the cluster that is running SQL Server.
 5. If this is a high availability VMM setup, continue to install other high availability VMM nodes.
@@ -194,7 +194,7 @@ If you upgraded a database that was configured with AlwaysOn Availability Groups
 If you've deployed Azure Site Recovery to replicate VMs in VMM private clouds, you need to perform a few steps to restore the Windows Azure Hyper-V Recovery Manager Provider.
 
 1. Reinstall the latest version of Microsoft Azure Site Recovery Provider. This restores the Provider registration information that was removed during the VMM upgrade.
-2. In the Azure portal > **Jobs** wait for the Repair Provider job to complete.
+2. In the Azure portal > **Jobs**, wait for the Repair Provider job to complete.
 
 
 ## Update virtual machine templates
@@ -202,7 +202,7 @@ If you've deployed Azure Site Recovery to replicate VMs in VMM private clouds, y
 All virtual machine templates that were upgraded need to correctly specify the virtual hard disk that contains the operating system.
 
 1. Click **Library** > **Templates** > **VM Templates**.
-2. Right-click the template > **Properties** > **Hardware Configuration** and check disk settings.
+2. Right-click the template > **Properties** > **Hardware Configuration**, and check disk settings.
 
 
 ## Update driver packages
@@ -215,7 +215,7 @@ In the physical computer profile, you can select to filter the drivers by tags, 
 
 
 1. Locate a driver package that you want to add to the library.
-2. In the library share that is located on the library server that is associated with the group where you want to deploy the physical computers, create a folder to store the drivers, and then copy the driver package to the folder.
+2. In the library share that is located on the library server associated with the group where you want to deploy the physical computers, create a folder to store the drivers, and then copy the driver package to the folder.
 3. We strongly recommend that you create a separate folder for each driver package, and that you do not mix resources in the driver folders. If you include other library resources such as .iso images, .vhd files or scripts with an .inf file name extension in the same folder, the VMM library server will not discover those resources. Also, when you delete an .inf driver package from the library, VMM deletes the entire folder where the driver .inf file resides.
 4. In the VMM console, open the Library workspace. In the **Library** > **Library Servers**, expand the library server where the share is located, right-click the share, and then click **Refresh**. After the library refreshes, the folder that you created to store the drivers appears.
 5. Now assign tags if required. In **Library**, expand the folder that you created to store the drivers in the previous procedure, and then click the folder that contains the driver package.
