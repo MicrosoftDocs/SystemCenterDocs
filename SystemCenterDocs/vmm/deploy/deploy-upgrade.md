@@ -28,8 +28,8 @@ This article describes prerequisites for upgrading to System Center 2016 - Virtu
 - Ensure that the server meets all requirements for VMM, and that prerequisites are in place [Learn more](../plan/plan-install.md)
 - If needed, upgrade SQL Server to a supported version.
 - Verify the [supported SQL Server versions](https://technet.microsoft.com/system-center-docs/system-requirements/sql-server-version-compatibility). Currently for best performance, we recommend SQL 2014 with SP1.
-2. If you're upgrading a high availability SQL Server database, remote connectivity to the console sessions will be broken while the SQL Server role fails over. Connectivity is automatically restored afterfailover completes.
-- If the current database is configured with AlwaysOn availability groups::
+2. If you're upgrading a high availability SQL Server database, remote connectivity to the console sessions will be broken while the SQL Server role fails over. Connectivity is automatically restored after failover completes.
+- If the current database is configured with AlwaysOn availability groups:
 	- If the VMM database is included in the availability group, remove it in SQL Server Management Studio.
 	- Initiate a failover to the computer that is running SQL Server, and on which the VMM database is installed.
 - Make sure your VMM server running System Center 2012 R2 is running update rollup 9 or later.
@@ -108,21 +108,26 @@ Here's what you'll need to do:
 
 There are a couple of reasons you might want to upgrade the VMM SQL Server database:
 
-- You're upgrading VMM to System Center 2016, and the current SQL Server database version isn't support.
+- You're upgrading VMM to System Center 2016, and the current SQL Server database version isn't supported.
 - You want to upgrade a VMM standalone server to a high availability server, and SQL Server is installed locally.
 - You want to move the SQL Server database to a different computer.
+
+### Collect database information
+
 - Before you upgrade, collect information about the VMM database:
-	- Database connection: Available in the VMM console > **Settings** > **General** > **Database Connection**
-	- Account information: Available in Server Manager > **Tools** > **Services**. Right-click **System Center Virtual Machine Manager** > **Properties** > **og On**. This is the domain or local account that was assigned as the service account when VMM was installed. You can check if it's local in **Tools** > **Computer Manager** > **Local Users and Groups** > **Users**.
-	Distributed key management: Check whether you used distributed key management when you installed VMM, or if encryption keys are stored locally on the VMM server.
-	Updates: If you're moving the VMM database, but not upgrading VMM, check which update rollups have been applied on the VMM server.
+
+1. Note the database connection in the VMM console > **Settings** > **General** > **Database Connection**.
+2. Note in the account information in Server Manager > **Tools** > **Services**. Right-click **System Center Virtual Machine Manager** > **Properties** > **Log On**. This is the domain or local account that was assigned as the service account when VMM was installed. You can check if it's local in **Tools** > **Computer Manager** > **Local Users and Groups** > **Users**.
+3. Check whether you used distributed key management when you installed VMM, or if encryption keys are stored locally on the VMM server.
+4. If you're moving the VMM database, but not upgrading VMM, check which update rollups have been applied on the VMM server.
 
 ### Standalone database
 
 1. Back up the existing VMM database, and copy the backup to a computer running a supported version of SQL Server.
 2. Use SQL Server tools to restore the database.
 3. If you are upgrading VMM, specify the new SQL Server location in VMM setup > **Database Configuration**.
-4. If you're not upgrading VMM, you need to reinstall it. To do this, close all connections to the VMM management server, and uninstall > reinstall VMM. On the **Database Options** page, select **Retain database**. Reinstall with the same settings you used for the original installation, but on the **Database Configuration** page:
+4. If you're not upgrading VMM, you need to uninstall and then reinstall. To do this, close all connections to the VMM management server, and uninstall VMM. On the **Database Options** page, select **Retain database**.
+5. Reinstall with the same settings you used for the original installation, but on the **Database Configuration** page:
 
 	- Specify the name of the computer on which the VMM database is now located.
 	- Specify the availability group listener if the database is configured with AlwaysOn.
