@@ -36,7 +36,7 @@ Settings for grooming the data warehouse can be changed through Microsoft SQL Se
 ## To change grooming settings in the Reporting data warehouse  
   
 1.  Log on to the computer with an account that is a member of the SQL Server sysadmin fixed server role  .  
-  m
+  
 2.  On the Start Page, type **SQL Server Management Studio** and the program will appear.  Click the program to open SQL Server Management Studio.  You might want to right-click the program and pin it to the Start Page.
   
 3.  In the **Connect to Server** dialog box, in the **Server Type** list, select **Database Engine**; in the **Server Name** list, select the server and instance for your Reporting data warehouse (for example, computer\INSTANCE1); in **Authentication** list, select **Windows Authentication**; and then click **Connect**.  
