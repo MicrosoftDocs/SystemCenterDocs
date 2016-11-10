@@ -26,12 +26,11 @@ VMM enables you to deploy and manage virtual machines and services across multip
 - VMM provides the ability to create, manage, store, place and deploy virtual machines on vSphere hosts. You can import VMware templates.
 - You can associate host adapters with VMM logical networks. More advanced management takes place on the vCenter Server, for example configuring port groups, standard and distributed virtual switches (or “vSwitches”), vMotion and Storage vMotion.
 - You can convert VMware VMs to Hyper-V.
-- VMM in System Center 2016 supports management of VMware ESX: ESX/ESXi 4.1, ESXi 5.1, ESXi 5.5, ESXi 6.0.
 
 
 ## Before you start
 
-- VMM supports the management of hosts and clusters running VMware ESX or ESXi 4.1, and VMware ESX or ESXi 5.0.
+- VMM supports the management of hosts and clusters running VMware ESX/ESXi 4.1, ESXi 5.0, 5.1 and 6.0.
 - You need a vCenter server in your deployment. vSphere hosts and host clusters should be managed by a vCenter server, which in turn is managed by VMM.
 - The following features are supported by VMM when hosts and clusters are managed with a vCenter server:
 	- VMM command shell (same shell across all hypervisors)
