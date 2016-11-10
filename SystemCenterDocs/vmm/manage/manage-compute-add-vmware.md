@@ -30,7 +30,7 @@ VMM enables you to deploy and manage virtual machines and services across multip
 
 ## Before you start
 
-- VMM supports the management of hosts and clusters running VMware ESX or ESXi 4.1, and VMware ESX or ESXi 5.0.
+- VMM supports the management of hosts and clusters running VMware ESX/ESXi 4.1, ESXi 5.0, 5.1 and 6.0.
 - You need a vCenter server in your deployment. vSphere hosts and host clusters should be managed by a vCenter server, which in turn is managed by VMM.
 - The following features are supported by VMM when hosts and clusters are managed with a vCenter server:
 	- VMM command shell (same shell across all hypervisors)
