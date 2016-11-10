@@ -116,8 +116,8 @@ There are a couple of reasons you might want to upgrade the VMM SQL Server datab
 
 Before you upgrade, collect information about the VMM database:
 
-1. Note the database connection in the VMM console > **Settings** > **General** > **Database Connection**.
-2. Note in the account information in Server Manager > **Tools** > **Services**. Right-click **System Center Virtual Machine Manager** > **Properties** > **Log On**. This is the domain or local account that was assigned as the service account when VMM was installed. You can check if it's local in **Tools** > **Computer Manager** > **Local Users and Groups** > **Users**.
+1. Record the database connection in the VMM console > **Settings** > **General** > **Database Connection**.
+2. Record the account information in Server Manager > **Tools** > **Services**. Right-click **System Center Virtual Machine Manager** > **Properties** > **Log On**. This is the domain or local account that was assigned as the service account when VMM was installed. You can check if it's local in **Tools** > **Computer Manager** > **Local Users and Groups** > **Users**.
 3. Check whether you used distributed key management when you installed VMM, or if encryption keys are stored locally on the VMM server.
 4. If you're moving the VMM database, but not upgrading VMM, check which update rollups have been applied on the VMM server.
 
@@ -137,7 +137,7 @@ Before you upgrade, collect information about the VMM database:
 
 ### Highly available database
 
-1. Note the source version of the existing database, and the version you want to upgrade to. Check that the version is supported. VMM supports all SQL Server versions that are in mainstream support.
+1. Record the source version of the existing database, and the version you want to upgrade to. Check that the version is supported. VMM supports all SQL Server versions that are in mainstream support.
 2. Create a backup of the highly available SQL Server database, from the active node of the SQL Server cluster.
 3. Upgrade passive SQL Server nodes to the new version. After the upgrade, optionally install SQL Server Management Studio if you want to manage SQL Server from this node.
 4. Fail over the highly available SQL server role, from the currently active node to the upgraded node. After failover, you can use SQL Server Management Studio to validate the running database version.
