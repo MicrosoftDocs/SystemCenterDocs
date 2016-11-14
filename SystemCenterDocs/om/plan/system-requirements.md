@@ -3,16 +3,16 @@ ms.assetid: 1921b7dc-6537-4378-bdc5-de5fbd3e619a
 title: System Requirements for System Center 2016 - Operations Manager
 description: The system requirements article provides general performance and scalability guidance for consideration as part of your design planning of Operations Manager 2016.  
 author: mgoedtel
+ms.author: magoedte
 manager: cfreeman
-ms.date: 11/01/2016
+ms.date: 11/10/2016
 ms.custom: na
 ms.prod: system-center-threshold
 ms.technology: operations-manager
 ms.topic: article
 ---
 
-
-# System Requirements for System Center 2016 - Operations Manager
+# System requirements for System Center 2016 - Operations Manager
 
 >Applies To: System Center 2016 - Operations Manager
 
@@ -40,7 +40,7 @@ Let's start first by understanding the performance and scalability characteristi
 | Applications for Application Performance Monitoring (APM) | 400 |
 | URLs monitored per dedicated management server | 3,000 |
 | URLs monitored per dedicated management group | 12,000 | 
-| URLs monitored per agent | 500 |
+| URLs monitored per agent | 50 |
 
 
 ## Hardware
