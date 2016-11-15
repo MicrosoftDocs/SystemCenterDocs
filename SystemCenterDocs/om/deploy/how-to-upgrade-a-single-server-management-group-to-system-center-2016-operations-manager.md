@@ -1,24 +1,24 @@
 ---
 ms.assetid: 2f41a8e5-3ec1-4279-8c06-5e59ff27ef3d
-title:  How to Upgrade a Single Server Management Group to System Center 2016 - Operations Manager
-description:  
+title: How to Upgrade a Single Server Management Group to System Center 2016 - Operations Manager
+description: This article describes how to upgrade a single server management group to Operations Manager 2016.  
 author: mgoedtel
+ms.author: magoedte
 manager: cfreemanwa
-ms.date: 10/12/2016
+ms.date: 11/15/2016
 ms.custom: na
 ms.prod: system-center-threshold
 ms.technology: operations-manager
 ms.topic: article
 ---
 
-
-# How to Upgrade a Single-Server Management Group to System Center 2016 - Operations Manager
+# How to upgrade a single server management group to System Center 2016 - Operations Manager
 
 >Applies To: System Center 2016 - Operations Manager
 
-When you upgrade a single-server management group to System Center 2016 - Operations Manager, all features that are installed on the server are upgraded. Before you begin the upgrade process, make sure that your server meets the minimum supported configurations. For more information, see [System Requirements for System Center 2016 - Operations Manager](../plan/system-requirements.md).
+When you upgrade a single server management group to System Center 2016 - Operations Manager, all features that are installed on the server are upgraded. Before you begin the upgrade process, make sure that your server meets the minimum supported configurations. For more information, see [System Requirements for System Center 2016 - Operations Manager](../plan/system-requirements.md).
 
-### To upgrade a single-server management group
+### To upgrade a single server management group
 
 1.  Log on to the server with an account that is a member of the Operations Manager Administrators role for your Operations Manager management group, a member of the SQL Server sysadmin fixed server role, and a local administrator on the computer.
 
@@ -47,7 +47,7 @@ When you upgrade a single-server management group to System Center 2016 - Operat
 
 8.  When the **Ready to Upgrade** page appears, review the upgrade summary, and then click **Upgrade**.
 
-### To upgrade a single-server management group from the Command Prompt 
+### To upgrade a single server management group from the Command Prompt 
 
 1.  Log on to the server with an account that is a member of the Operations Manager Administrators role for your Operations Manager management group, a member of the SQL Server sysadmin fixed server role, and a local administrator on the computer.
 

@@ -1,17 +1,18 @@
 ---
 ms.assetid: afe18fe0-2d80-4176-b020-972b09ba6f27
 title: How to Create a Run As Account and Associate with a Run As Profile
-description:  
+description: This article describes how to create a Run As account and associate with a profile in Operations Manager 2016. 
 author: mgoedtel
+ms.author: magoedte
 manager: cfreemanwa
-ms.date: 10/12/2016
+ms.date: 11/15/2016
 ms.custom: na
 ms.prod: system-center-threshold
 ms.technology: operations-manager
 ms.topic: article
 ---
 
-# How to Create a Run As Account and Associate with a Run As Profile
+# How to create a Run As account and associate with a Run As profile
 
 >Applies To: System Center 2016 - Operations Manager
 

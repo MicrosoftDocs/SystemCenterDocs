@@ -1,17 +1,18 @@
 ---
 ms.assetid: 24cefdb6-cc98-4153-af9a-f172d4f72bbf
 title: How to Create a New Action Account in Operations Manager
-description:  
+description: This article describes how to create a management server action account in Operations Manager 2016. 
 author: mgoedtel
+ms.author: magoedte
 manager: cfreemanwa
-ms.date: 10/12/2016
+ms.date: 11/15/2016
 ms.custom: na
 ms.prod: system-center-threshold
 ms.technology: operations-manager
 ms.topic: article
 ---
 
-# How to Create a New Action Account in Operations Manager
+# How to create a new action account in Operations Manager
 
 >Applies To: System Center 2016 - Operations Manager
 

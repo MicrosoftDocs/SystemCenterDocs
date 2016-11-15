@@ -1,10 +1,11 @@
 ---
 ms.assetid: ac2e1b48-2f24-44c1-8d06-9405b2db9c26
-title:  How to Upgrade a Web Console to System Center 2016   Operations Manager
-description:  
+title: How to Upgrade a Web Console to System Center 2016 - Operations Manager
+description: This article describes how to upgrade a Web console to Operations Manager 2016.
 author: mgoedtel
+ms.author: magoedte
 manager: cfreemanwa
-ms.date: 10/12/2016
+ms.date: 11/15/2016
 ms.custom: na
 ms.prod: system-center-threshold
 ms.technology: operations-manager

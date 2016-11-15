@@ -1,9 +1,10 @@
 ---
 title: Monitoring Networks by Using Operations Manager
-description:
-author: MGoedtel
+description: This article provides an overview of how you can monitor network devices with Operations Manager 2016.
+author: mgoedtel
+ms.author: magoedte
 manager: cfreeman
-ms.date: 10/12/2016
+ms.date: 11/15/2016
 ms.custom: na
 ms.prod: system-center-threshold
 ms.technology: operations-manager
@@ -11,7 +12,7 @@ ms.topic: article
 ms.assetid: fe56f0f3-0f28-4b0c-8adf-9982a710540a
 ---
 
-# Monitoring Networks by Using Operations Manager
+# Monitoring networks by using Operations Manager
 
 >Applies To: System Center 2016 - Operations Manager
 

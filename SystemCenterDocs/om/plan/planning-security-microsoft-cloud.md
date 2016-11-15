@@ -1,10 +1,11 @@
 ---
 ms.assetid: accc6f3d-396c-43bc-91a6-7e723d57bfa1
 title: Security Considerations for Microsoft Azure and Office 365
-description:
+description: This article provides design guidance on how to authenticate and securely monitor Microsoft Azure and Office 365 with Operations Manager 2016.
 author: mgoedtel
+ms.author: magoedte
 manager: cfreemanwa
-ms.date: 10/12/2016
+ms.date: 11/15/2016
 ms.custom: na
 ms.prod: system-center-threshold
 ms.technology: operations-manager

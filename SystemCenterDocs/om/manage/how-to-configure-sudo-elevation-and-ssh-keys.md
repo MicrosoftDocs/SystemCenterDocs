@@ -1,40 +1,41 @@
 ---
 ms.assetid: 68d9b467-12db-4fec-af94-9f9fa15c5f86
 title: How to Configure sudo Elevation and SSH Keys
-description:
+description: This article describes how to configure sudo and SSH keys for an unprivileged account and secure communication with Operations Manager 2016.
 author: mgoedtel
+ms.author: magoedte
 manager: cfreemanwa
-ms.date: 10/12/2016
+ms.date: 11/15/2016
 ms.custom: na
 ms.prod: system-center-threshold
 ms.technology: operations-manager
 ms.topic: article
 ---
 
-# How to Configure sudo Elevation and SSH Keys
+# How to configure sudo elevation and SSH keys
 
 >Applies To: System Center 2016 - Operations Manager
 
-With System Center 2016 - Operations Manager, you can provide credentials for an unprivileged account to be elevated on a UNIX or Linux computer by using the sudo program, which allows users to run programs that have the security privileges of another user account. You can also use Secure Shell \(SSH\) keys instead of a password for secure communication between Operations Manager and the targeted computer.  
+With System Center 2016 - Operations Manager, you can provide credentials for an unprivileged account to be elevated on a UNIX or Linux computer by using the sudo program, which allows users to run programs that have the security privileges of another user account. You can also use Secure Shell (SSH) keys instead of a password for secure communication between Operations Manager and the targeted computer.  
   
-This topic provides examples for creating an account for a low\-privileged user, implementing sudo, and creating an SSH key on a computer that is running Red Hat Enterprise Linux Server 6. These are examples only, and might not reflect your environment. The following examples provide a user with access to a full set of privileges.  
+This topic provides examples for creating an account for a low-privileged user, implementing sudo, and creating an SSH key on a computer that is running Red Hat Enterprise Linux Server 6. These are examples only, and might not reflect your environment. The following examples provide a user with access to a full set of privileges.  
   
-To obtain and configure the SSH key from the UNIX and Linux computer, you have to install the following software on your Windows\-based computer:  
+To obtain and configure the SSH key from the UNIX and Linux computer, you have to install the following software on your Windows-based computer:  
   
--   A file transfer tool, such as WinSCP, to transfer files from the UNIX or Linux computer to the Windows\-based computer.  
+-   A file transfer tool, such as WinSCP, to transfer files from the UNIX or Linux computer to the Windows-based computer.  
   
 -   The PuTTY program, or a similar program, to run commands on the UNIX or Linux computer.  
   
--   The PuTTYgen program to save the private SHH key in OpenSSH format on the Windows\-based computer.  
+-   The PuTTYgen program to save the private SHH key in OpenSSH format on the Windows-based computer.  
   
 > [!NOTE]  
-> The sudo program exists at different locations on UNIX and Linux operating systems. To provide uniform access to sudo, the UNIX and Linux agent installation script creates the symbolic link `/etc/opt/microsoft/scx/conf/sudodir` to point to the directory expected to contain the sudo program. The agent uses this symbolic link to invoke sudo. The installation script automatically creates the symbolic link, so you do not need to take any action on standard UNIX and Linux configurations; however, if you have sudo installed at a non\-standard location, you should change the symbolic link to point to the directory where sudo is installed. If you change the symbolic link, its value is preserved across uninstall, re\-install, and upgrade operations with the agent.  
+> The sudo program exists at different locations on UNIX and Linux operating systems. To provide uniform access to sudo, the UNIX and Linux agent installation script creates the symbolic link `/etc/opt/microsoft/scx/conf/sudodir` to point to the directory expected to contain the sudo program. The agent uses this symbolic link to invoke sudo. The installation script automatically creates the symbolic link, so you do not need to take any action on standard UNIX and Linux configurations; however, if you have sudo installed at a non-standard location, you should change the symbolic link to point to the directory where sudo is installed. If you change the symbolic link, its value is preserved across uninstall, re-install, and upgrade operations with the agent.  
   
-## Configure a low\-privileged account for sudo elevation  
+## Configure a low-privileged account for sudo elevation  
 
 The following procedures create a low\-privileged account and sudo elevation by using `opsuser` for a user name.  
   
-#### To create a low\-privileged user  
+#### To create a low-privileged user  
   
 1.  Log on to the UNIX or Linux computer as `root`.  
   
@@ -48,7 +49,7 @@ The following procedures create a low\-privileged account and sudo elevation by 
   
 You can now configure sudo elevation and create an SSH key for `opsuser`, as described in the following procedures.  
   
-#### To configure sudo elevation for the low\-privileged user  
+#### To configure sudo elevation for the low-privileged user  
   
 1.  Log on to the UNIX or Linux computer as `root`.  
   
@@ -97,7 +98,7 @@ The following procedures create an SSH key for the `opsuser` account that was cr
   
     Note the optional passphrase if you provided it.  
   
-The **ssh\-keygen** creates the `/home/opsuser/.ssh` directory with the private key file \(`id_dsa`\) and the public key file \(`id_dsa.pub`\). You can now configure the key to be supported by `opsuser` as described in the next procedure.  
+The **ssh-keygen** creates the `/home/opsuser/.ssh` directory with the private key file (`id_dsa`) and the public key file (`id_dsa.pub`). You can now configure the key to be supported by `opsuser` as described in the next procedure.  
   
 #### To configure a user account to support the SSH key  
   
@@ -125,11 +126,11 @@ You can now copy the private SSH key to the Windows\-based computer, as describe
   
 #### To copy the private SSH key to the Windows\-based computer and save in OpenSSH format  
   
-1.  Use a tool, such as WinSCP, to transfer the private key file \(`id_dsa` - with no extension\) from the UNIX or Linux computer to a directory on your Windows\-based computer.  
+1.  Use a tool, such as WinSCP, to transfer the private key file (`id_dsa` - with no extension) from the UNIX or Linux computer to a directory on your Windows-based computer.  
   
 2.  Run PuTTYgen.  
   
-3.  In the **PuTTY Key Generator** dialog box, click the **Load** button, and then select the private key `(id_dsa`\) that you transferred from the UNIX or Linux computer.  
+3.  In the **PuTTY Key Generator** dialog box, click the **Load** button, and then select the private key `(id_dsa`) that you transferred from the UNIX or Linux computer.  
   
 4.  Click **Save private key** and name and save the file to the desired directory.  
   
