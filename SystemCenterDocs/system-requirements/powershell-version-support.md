@@ -1,6 +1,7 @@
 ---
 description:  
-manager:  cfreemanwa
+manager:  cfreeman
+ms.author: cfreeman
 ms.topic:  article
 author:  cfreemanwa
 ms.prod:  system-center-threshold

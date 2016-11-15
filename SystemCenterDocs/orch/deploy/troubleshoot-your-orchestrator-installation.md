@@ -12,6 +12,8 @@ ms.assetid: 17b3dbfc-f129-4da2-9d39-bce126c00aff
 author: cfreemanwa
 ms.author: cfreeman
 manager: cfreeman
+ms.date: 10/12/2016
+
 ---
 # Troubleshoot Your Orchestrator Installation
 
