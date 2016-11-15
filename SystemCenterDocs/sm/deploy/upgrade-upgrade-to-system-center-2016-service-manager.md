@@ -5,7 +5,7 @@ ms.custom: na
 ms.prod: system-center-2016
 author: bandersmsft
 ms.author: banders
-ms.date: 10/12/2016
+ms.date: 11/15/2016
 ms.reviewer: na
 ms.suite: na
 ms.technology: service-manager
@@ -22,10 +22,10 @@ You cannot start an upgrade to System Center 2016 - Service Manager if any data 
 
  Complete the procedures in the following section, in order, to upgrade to System Center 2016 - Service Manager.  
 
-## Things to take care
+## Upgrade preparation
 
 - For Service Manager data warehouse database restoration, the Reporting database also needs to be restored after you install the data warehouse.
-- Refer the upgrading sequencing of System Center components as described [here](upgrade-upgrading-system-center-2012-service-manager-to-system-center-2016.md).
+- Refer to the upgrade sequencing of System Center components at [Upgrading System Center 2012 R2 - Service Manager to System Center 2016](upgrade-upgrading-system-center-2012-service-manager-to-system-center-2016.md).
 - Do not mix Service Manager 2016 and Service Manager 2012 R2 with different Service Manager components - all should use the same version. For example, both the Self Service portal and the Service Manager management server  should use the same version.
 - When upgrading from Service Manager 2012 R2 to Service Manager 2016, you should not enable or disable the Active Directory group expansion for any of the Active Directory connectors.
 
@@ -59,13 +59,18 @@ This topic describes how to prepare your System Center 2012 R2 - Service Manager
     ```  
 
     ```  
-    cd 'C:\Program Files\Microsoft System Center 2012\Service Manager'  
+    cd (Get-ItemProperty -path 'HKLM:\SOFTWARE\Microsoft\Microsoft Operations Manager\3.0\Setup\').InstallDirectory
+Import-Module .\Microsoft.EnterpriseManagement.Warehouse.Cmdlets.psd1
+    ```  
+
+    ```  
+    cd 'C:\Program Files\Microsoft System Center 2012 R2\Service Manager'  
     Import-Module .\Microsoft.EnterpriseManagement.Warehouse.Cmdlets.psd1  
 
     ```  
 
     ```  
-    Get-SCDWJob  
+    get-scdwjob | ? {$_.Name -match 'Extract_'}  | foreach {Disable-SCDWJobSchedule -JobName $_.Name}  
     ```  
 
 3.  A list of the data warehouse jobs appears. Use this list in the next procedure, "To disable data warehouse job schedules by using Windows PowerShell cmdlets."  
