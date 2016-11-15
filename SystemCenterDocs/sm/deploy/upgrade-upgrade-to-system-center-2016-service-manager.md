@@ -22,7 +22,7 @@ You cannot start an upgrade to System Center 2016 - Service Manager if any data 
 
  Complete the procedures in the following section, in order, to upgrade to System Center 2016 - Service Manager.  
 
-## Upgrade Prepration
+## Upgrade preparation
 
 - For Service Manager data warehouse database restoration, the Reporting database also needs to be restored after you install the data warehouse.
 - Refer to the upgrade sequencing of System Center components at [Upgrading System Center 2012 R2 - Service Manager to System Center 2016](upgrade-upgrading-system-center-2012-service-manager-to-system-center-2016.md).
