@@ -1,17 +1,18 @@
 ---
 ms.assetid: 102761c5-25f3-4fd4-8e5b-a68ea622e921
 title: How to Create a Management Pack for Overrides
-description:  
+description: This article describes how to create a writeable management pack to save overrides to in Operations Manager.
 author: mgoedtel
+ms.author: magoedte
 manager: cfreemanwa
-ms.date: 10/12/2016
+ms.date: 11/15/2016
 ms.custom: na
 ms.prod: system-center-threshold
 ms.technology: operations-manager
 ms.topic: article
 ---
 
-# How to Create a Management Pack for Overrides
+# How to create a management pack for overrides
 
 >Applies To: System Center 2016 - Operations Manager
 
@@ -47,7 +48,7 @@ You select a destination management pack when you create an override or disable 
   
 -   Tracking of service level objectives  
   
-## Saving Overrides  
+## Saving overrides  
 
 As a best practice, save all overrides for each sealed management pack to an unsealed management pack that is named *ManagementPack*\_Override, where *ManagementPack* is the name of the sealed management pack to which the overrides apply. For example, overrides to the management pack Microsoft.SQLServer.2012.Monitoring.mp would be saved to Microsoft.SQLServer.2012.Monitoring\_Overrides.xml.  
   
@@ -61,7 +62,7 @@ The recommended method is to create an unsealed management pack for each sealed 
   
 ![Save overrides to respective management packs](../media/om2016-mp-reference-best-practice.png)  
   
-## How to Create a Management Pack for Overrides  
+## How to create a management pack for overrides  
 You can create a management pack for overrides before you configure an override or as part of the override procedure.  
   
 #### To create a management pack  

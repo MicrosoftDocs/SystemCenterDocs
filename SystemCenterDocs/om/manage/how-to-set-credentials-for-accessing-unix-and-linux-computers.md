@@ -1,16 +1,18 @@
 ---
 ms.assetid: d8bb718e-9ecc-4839-926f-1bc0df246bf6
 title: How to Set Credentials for Accessing UNIX and Linux Computers
+description: This article describes how to configure credentials required to securely manage UNIX and Linux comptuers with Operations Manager 2016.
 author: mgoedtel
+ms.author: magoedte
 manager: cfreemanwa
-ms.date: 10/12/2016
+ms.date: 11/15/2016
 ms.custom: na
 ms.prod: system-center-threshold
 ms.technology: operations-manager
 ms.topic: article
 ---
 
-# How to Set Credentials for Accessing UNIX and Linux Computers
+# How to set credentials for Accessing UNIX and Linux computers
 
 >Applies To: System Center 2016 - Operations Manager
 
@@ -27,7 +29,7 @@ These wizards define credentials to be authenticated on the UNIX or Linux comput
 
 The following procedure begins in **Computer and Device Management Wizard**, on the **Discovery Criteria** page, when you click the **Set Credentials** button. For more information, see [Install Agent on UNIX and Linux Using the Discovery Wizard](install-agent-on-unix-and-linux-using-the-discovery-wizard.md).  
   
-### To set a user \(unprivileged\) account for discovery of an installed agent with a signed certificate.  
+### To set a user (unprivileged) account for discovery of an installed agent with a signed certificate.  
   
 1.  On the **Credential Settings**page, click the **Default Credentials** tab, and then click the **Password** option.  
   
@@ -51,7 +53,7 @@ The following procedures begin in the **Computer and Device Management Wizard**,
   
 4.  In the **Does this account have privileged access** list, click **This account has privileged access**, and then click **OK**.  
   
-5.  Click the **Agent Verification** tab, and on the **Agent Verification** page, type a user name and password for an account on the targeted computer. This can be a user \(unprivileged\) account.  
+5.  Click the **Agent Verification** tab, and on the **Agent Verification** page, type a user name and password for an account on the targeted computer. This can be a user (unprivileged) account.  
   
 6.  Click **OK** to return to the **Discovery Criteria** page and continue with the wizard.  
   
@@ -69,7 +71,7 @@ The following procedures begin in the **Computer and Device Management Wizard**,
   
     If you select **su elevation**, type the **superuser** password as established on the UNIX or Linux computer. The **su** password is also used for agent verification.  
   
-    If you selected **sudo elevation**, click the **Agent Verification** tab, and type a user name and password for an account on the targeted computer. This can be a user \(unprivileged\) account.  
+    If you selected **sudo elevation**, click the **Agent Verification** tab, and type a user name and password for an account on the targeted computer. This can be a user (unprivileged) account.  
   
 6.  Click **OK** to return to the **Discovery Criteria** page and continue with the wizard.  
   
@@ -103,7 +105,7 @@ The following procedures begin in the **Computer and Device Management Wizard**,
   
 ## Credentials for Run As accounts  
 
-The following procedures begin in the **Create UNIX\/Linux Run As Account Wizard** when you select the type for a **Run As Account** \(**Monitoring Account** or **Agent Maintenance Account**\), a name and password and provided a description. For more information, see [How to Configure Run As Accounts and Profiles for UNIX and Linux Access](how-to-configure-run-as-accounts-and-profiles-for-unix-and-linux-access.md).  
+The following procedures begin in the **Create UNIX\/Linux Run As Account Wizard** when you select the type for a **Run As Account** (**Monitoring Account** or **Agent Maintenance Account**), a name and password and provided a description. For more information, see [How to Configure Run As Accounts and Profiles for UNIX and Linux Access](how-to-configure-run-as-accounts-and-profiles-for-unix-and-linux-access.md).  
   
 ### To set a privileged credential for a monitoring account  
   
@@ -187,7 +189,7 @@ The following procedures begin in the **UNIX\/Linux Agent Upgrade Wizard** on th
   
 4.  In the **Does this account have privileged access** list, click **This account has privileged access**, and then click **OK**.  
   
-5.  On the **Agent Verification** page, type a user name and password for an account on the targeted computer. This can be a user \(unprivileged\) account.  
+5.  On the **Agent Verification** page, type a user name and password for an account on the targeted computer. This can be a user (unprivileged) account.  
   
 6.  Click **OK** to return to the **Credentials** page and continue with the wizard.  
   

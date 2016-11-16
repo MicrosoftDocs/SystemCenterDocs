@@ -1,9 +1,10 @@
 ---
 title: Resolving Heartbeat Alerts
-description:
+description: This article describes how to investigate a Health Service Heartbeat Failure   alert in Operations Manager 2016.
 author: mgoedtel
+ms.author: magoedte
 manager: cfreeman
-ms.date: 2016-10-14
+ms.date: 11/15/2016
 ms.custom: na
 ms.prod: system-center-threshold
 ms.technology: operations-manager
@@ -11,7 +12,7 @@ ms.topic: article
 ms.assetid: b0f9ef5e-e8bf-4cd3-a358-02a7aafa82a9
 ---
 
-# Resolving Heartbeat Alerts
+# Resolving heartbeat alerts
 
 >Applies To: System Center 2016 - Operations Manager
 
@@ -81,4 +82,4 @@ A sudden increase in the number of alerts is called an alert storm. An alert sto
   
 ## Next steps
 
-- Before changing the number of missed heartbeats allowed. first review [How Heartbeats Work in Operations Manager](How-Heartbeats-Work.md)  
+- Before changing the number of missed heartbeats allowed, first review [How Heartbeats Work in Operations Manager](How-Heartbeats-Work.md).  

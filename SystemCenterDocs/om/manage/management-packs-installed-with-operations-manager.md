@@ -1,16 +1,18 @@
 ---
 ms.assetid: 838bba51-87c4-4b51-b540-66c51348cdfe
 title: Management Packs Installed with Operations Manager
+description: This article describes what management packs are installed with Operations Manager 2016.
 author: mgoedtel
+ms.author: magoedte
 manager: cfreemanwa
-ms.date: 10/12/2016
+ms.date: 11/15/2016
 ms.custom: na
 ms.prod: system-center-threshold
 ms.technology: operations-manager
 ms.topic: article
 ---
 
-# Management Packs Installed with Operations Manager
+# Management packs installed with Operations Manager
 
 When you install Operations Manager, a component of System Center 2016, a number of management packs are installed as well. The following table describes the purposes of those management packs.  
   

@@ -1,17 +1,18 @@
 ---
 ms.assetid: 017e8bb1-e523-4cc0-bf0c-2d1d4697db11
 title: Process Manual Agent Installations
-description:
+description: This article describes how to process Operations Manager agents deployed manually.  
 author: mgoedtel
+ms.author: magoedte
 manager: cfreemanwa
-ms.date: 11/07/2016
+ms.date: 11/15/2016
 ms.custom: na
 ms.prod: system-center-threshold
 ms.technology: operations-manager
 ms.topic: article
 ---
 
-# Process Manual Agent Installations
+# Process manual agent installations
 
 >Applies To: System Center 2016 - Operations Manager
 

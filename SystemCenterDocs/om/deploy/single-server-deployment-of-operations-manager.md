@@ -1,22 +1,22 @@
 ---
 ms.assetid: 2c2f0df5-befb-47f1-926b-c013fd659ec5
 title:  Single Server Deployment of Operations Manager
-description:  
+description: This article provides an overview of the single server deployment of Operations Manager 2016 to prepare you before performing setup.
 author: mgoedtel
+ms.author: magoedte
 manager: cfreemanwa
-ms.date: 10/12/2016
+ms.date: 11/15/2016
 ms.custom: na
 ms.prod: system-center-threshold
 ms.technology: operations-manager
 ms.topic: article
 ---
 
-
-# Single-Server Deployment of Operations Manager
+# Single server deployment of Operations Manager
 
 >Applies To: System Center 2016 - Operations Manager
 
-The single-server management group scenario combines all the management group roles that can coexist onto a single server running as a member server in an Active Directory domain. This instance can be on dedicated hardware or on a virtual computer. You can deploy the Operations console to computers other than the single server, and access the web console  with a browser.
+The single server management group scenario combines all the management group roles that can coexist onto a single server running as a member server in an Active Directory domain. This instance can be on dedicated hardware or on a virtual computer. You can deploy the Operations console to computers other than the single server, and access the web console  with a browser.
 
 You deploy Operations Manager in a single-server management group when you want to use it for evaluation, testing, and management pack development, usually in a lab, development, or non-production environment.
 
@@ -24,7 +24,7 @@ You deploy Operations Manager in a single-server management group when you want 
 
 ## Operations Manager services
 
-The single-server management group configuration supports the following services:
+The single server management group configuration supports the following services:
 
 1.  Monitoring and alerting
 
@@ -38,7 +38,7 @@ The single-server management group configuration supports the following services
 
 ## Operations Manager features
 
-The single-server management group configuration combines these features:
+The single server management group configuration combines these features:
 
 -   Audit Collection Services (ACS) collector
 
@@ -62,7 +62,7 @@ The single-server management group configuration combines these features:
 
 ## Restrictions
 
-The single-server management group configuration is the easiest to deploy, but there are limitations to its capabilities and therefore limitations to what it is commonly used for.
+The single server management group configuration is the easiest to deploy, but there are limitations to its capabilities and therefore limitations to what it is commonly used for.
 
 ### Gateway server
 
@@ -100,7 +100,7 @@ For a complete listing of ports used, the direction of the communication, and if
 
 ## Next steps
 
-- To deploy Operations Manager in a single-server management group, see [Walkthrough: Installing Operations Manager on a Single Server](../get-started/Walkthrough-Installing-Operations-Manager-on-a-Single-Server.md).
+- To deploy Operations Manager in a single server management group, see [Walkthrough: Installing Operations Manager on a Single Server](../get-started/Walkthrough-Installing-Operations-Manager-on-a-Single-Server.md).
 
 
 

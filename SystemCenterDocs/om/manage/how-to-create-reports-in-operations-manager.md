@@ -1,16 +1,18 @@
 ---
 ms.assetid: 15cffea3-2fac-4c35-b7a6-8a95634eaf18
 title: How to Create Reports in Operations Manager
+description: This article describes how to create a linked report in Operations Manager 2016.
 author: mgoedtel
+ms.author: magoedte
 manager: cfreemanwa
-ms.date: 10/12/2016
+ms.date: 11/15/2016
 ms.custom: na
 ms.prod: system-center-threshold
 ms.technology: operations-manager
 ms.topic: article
 ---
 
-# How to Create Reports in Operations Manager
+# How to create reports in Operations Manager
 
 >Applies To: System Center 2016 - Operations Manager
 

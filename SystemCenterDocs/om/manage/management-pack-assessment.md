@@ -1,16 +1,18 @@
 ---
 ms.assetid: 7cb61f4f-d184-407e-abc1-f2334de51810
 title:  Management Pack Assessment
+description: This article describes how to use the updates and recommendations feature in Operations Manager 2016.
 author: mgoedtel
+ms.author: magoedte
 manager: cfreemanwa
-ms.date: 10/12/2016
+ms.date: 11/15/2016
 ms.custom: na
 ms.prod: system-center-threshold
 ms.technology: operations-manager
 ms.topic: article
 ---
 
-# Management Pack Assessment
+# Management pack assessment
 
 >Applies To: System Center 2016 - Operations Manager
 
@@ -67,7 +69,7 @@ The following procedure describes how to use the Get MP option to download a man
 
 8. The **Import Management Packs** page appears and shows the progress for each management pack. Each management pack is downloaded to a temporary directory, imported to Operations Manager, and then deleted from the temporary directory. If there is a problem at any stage of the import process, select the management pack in the list to view the status details. Click **Close**.
 
-## Importing a Management Pack using Get All MPs
+## Importing a management pack using Get All MPs
 The following procedure describes how to use the Get All MPs option to download management pack for a selected workload.  
 
 1. Log on to the computer with an account that is a member of the Operations Manager Administrators role.

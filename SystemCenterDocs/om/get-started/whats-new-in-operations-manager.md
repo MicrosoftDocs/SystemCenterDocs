@@ -1,10 +1,11 @@
 ---
 ms.assetid: c46cb9b2-e66e-4f06-9020-2157b063df3a
 title: What's New in Operations Manager
-description:  
+description: This article describes what's new in Operations Manager 2016 compared to previous versions. 
 author: mgoedtel
+ms.author: magoedte
 manager: cfreeman
-ms.date: 2016-10-14
+ms.date: 11/15/2016
 ms.custom: na
 ms.prod: system-center-threshold
 ms.technology: operations-manager

@@ -1,18 +1,18 @@
 ---
 ms.assetid: ae000f5e-9d67-4d0d-b093-8d103dce2047
-title:  How to Upgrade Reporting to System Center 2016 - Operations Manager
-description:  
-mauthor: mgoedtel
+title: How to Upgrade Reporting to System Center 2016 - Operations Manager
+description: This article describes how to upgrade the Reporting server to Operations Manager 2016.
+author: mgoedtel
+ms.author: magoedte
 manager: cfreemanwa
-ms.date: 10/12/2016
+ms.date: 11/15/2016
 ms.custom: na
 ms.prod: system-center-threshold
 ms.technology: operations-manager
 ms.topic: article
 ---
 
-
-# How to Upgrade Reporting to System Center 2016 - Operations Manager
+# How to upgrade Reporting to System Center 2016 - Operations Manager
 
 >Applies To: System Center 2016 - Operations Manager
 

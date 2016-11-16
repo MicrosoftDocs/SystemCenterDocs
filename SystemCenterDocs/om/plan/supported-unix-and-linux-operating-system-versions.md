@@ -1,10 +1,11 @@
 ---
 ms.assetid: 50504e6d-945f-43e6-8faf-33fe870c623d
 title: Supported UNIX and Linux Operating System Versions
-description:
+description: This article lists the supported versions of Linux and UNIX operating system for Operations Manager 2016.
 author: mgoedtel
+ms.author: magoedte
 manager: cfreemanwa
-ms.date: 10/12/2016
+ms.date: 11/15/2016
 ms.custom: na
 ms.prod: system-center-threshold
 ms.technology: operations-manager

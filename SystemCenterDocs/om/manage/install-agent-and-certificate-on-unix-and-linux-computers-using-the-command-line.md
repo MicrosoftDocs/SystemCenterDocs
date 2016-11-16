@@ -1,17 +1,18 @@
 ---
 ms.assetid: 379b60d2-28f3-47d1-bf54-55409cd436ec
 title: Install Agent and Certificate on UNIX and Linux Computers Using the Command Line
-description:
+description: This article describes how to install the Operations Manager agent manually on UNIX and Linux computers.
 author: mgoedtel
+ms.author: magoedte
 manager: cfreemanwa
-ms.date: 2016-10-14
+ms.date: 11/15/2016
 ms.custom: na
 ms.prod: system-center-threshold
 ms.technology: operations-manager
 ms.topic: article
 ---
 
-# Install Agent and Certificate on UNIX and Linux Computers Using the Command Line
+# Install agent and certificate on UNIX and Linux computers using the command line
 
 >Applies To: System Center 2016 - Operations Manager
 

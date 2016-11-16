@@ -1,17 +1,18 @@
 ---
 ms.assetid: d830d226-80d0-4132-8b3c-d3de545f5fa2
 title: Creating and Managing Groups
-description:
+description: This article describes how to create and configure groups for scoping in Operations Manager 2016.
 author: mgoedtel
+ms.author: magoedte
 manager: cfreemanwa
-ms.date: 10/12/2016
+ms.date: 11/15/2016
 ms.custom: na
 ms.prod: system-center-threshold
 ms.technology: operations-manager
 ms.topic: article
 ---
 
-# Creating and Managing Groups
+# Creating and managing groups
 
 >Applies To: System Center 2016 - Operations Manager
 

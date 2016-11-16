@@ -1,16 +1,18 @@
 ---
 ms.assetid: 50e3914b-4047-4dce-97f1-0bca1619f4a1
 title: Operations Associated with User Role Profiles
+description: This article describe the user roles in Operations Manager and they what actions they can perform in the management group.
 author: mgoedtel
+ms.author: magoedte
 manager: cfreemanwa
-ms.date: 10/12/2016
+ms.date: 11/15/2016
 ms.custom: na
 ms.prod: system-center-threshold
 ms.technology: operations-manager
 ms.topic: article
 ---
 
-# Operations Associated with User Role Profiles
+# Operations associated with user role profiles
 
 >Applies To: System Center 2016 - Operations Manager
 

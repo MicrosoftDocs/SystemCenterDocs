@@ -1,17 +1,18 @@
 ---
 ms.assetid: e81f5d5c-0780-4a2d-8611-c15b23dc47cf
 title: Accessing UNIX and Linux Computers in Operations Manager
-description:
+description: This article highlights the section titles contained within this section of the Operations Manager 2016 documentation.
 author: mgoedtel
+ms.author: magoedte
 manager: cfreemanwa
-ms.date: 10/12/2016
+ms.date: 11/15/2016
 ms.custom: na
 ms.prod: system-center-threshold
 ms.technology: operations-manager
 ms.topic: article
 ---
 
-# Accessing UNIX and Linux Computers in Operations Manager
+# Accessing UNIX and Linux computers in Operations Manager
 
 >Applies To: System Center 2016 - Operations Manager
 
@@ -32,10 +33,10 @@ The protocol that is used depends on the action or information that is requested
   
 For detailed instructions for specifying credentials and configuring accounts, see [How to Set Credentials for Accessing UNIX and Linux Computers](How-to-Set-Credentials-for-Accessing-UNIX-and-Linux-Computers.md).  
   
-## Authentication on the UNIX or Linux Computer  
+## Authentication on the UNIX or Linux computer  
 In Operations Manager, the system administrator is no longer is required to provide the root password of the UNIX or Linux computer to the management server. Now by elevation, an unprivileged account can assume the identity of a privileged account on the UNIX or Linux computer. The elevation process is performed by the UNIX su (superuser) and sudo programs that use the credentials that the management server supplies. For privileged agent maintenance operations that use SSH (such as discovery, deployment, upgrades, uninstall, and agent recovery), support for su, sudo elevation, and support for SSH key authentication (with or without passphrase) is provided. For privileged WS-Management operations (such as viewing secure log file), support for sudo elevation (without password) is added.  
   
-## Accessing UNIX and Linux Computers Topics  
+## Accessing UNIX and Linux computers topics  
   
 -   [Planning Security Credentials for Accessing UNIX and Linux Computers](../plan/planning-security-credentials-for-accessing-unix-and-linux-computers.md) 
   
