@@ -5,7 +5,7 @@ description: This article provides an overview of the single server deployment o
 author: mgoedtel
 ms.author: magoedte
 manager: cfreemanwa
-ms.date: 211/15/2016
+ms.date: 11/15/2016
 ms.custom: na
 ms.prod: system-center-threshold
 ms.technology: operations-manager
