@@ -1,10 +1,11 @@
 ---
 ms.assetid: 74af9f14-35b0-4b87-87ca-980d9b9031b0
 title: Active Directory and DNS Planning
-description:
+description: This article provides design guidance for Active Directory directory services requirements to support Operations Manager 2016.
 author: mgoedtel
+ms.author: magoedte
 manager: cfreemanwa
-ms.date: 10/12/2016
+ms.date: 11/15/2016
 ms.custom: na
 ms.prod: system-center-threshold
 ms.technology: operations-manager

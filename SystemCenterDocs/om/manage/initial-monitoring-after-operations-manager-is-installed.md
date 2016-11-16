@@ -1,17 +1,18 @@
 ---
 ms.assetid: cea9cc45-643d-43d9-9cad-58042d1c8a62
 title: Initial Monitoring After Operations Manager Is Installed
-description:
+description: This article highlights the section titles contained within this section of the Operations Manager 2016 documentation. 
 author: mgoedtel
+ms.author: magoedte
 manager: cfreemanwa
-ms.date: 10/12/2016
+ms.date: 11/15/2016
 ms.custom: na
 ms.prod: system-center-threshold
 ms.technology: operations-manager
 ms.topic: article
 ---
 
-#Initial Monitoring After Operations Manager Is Installed
+#Initial monitoring after Operations Manager is installed
 
 >Applies To: System Center 2016 - Operations Manager
 
@@ -19,7 +20,7 @@ When Operations Manager is first installed, only the features of the Operations 
 
 After Operations Manager is installed, you must decide which IT service you should start to monitor and identify the objects to monitor, meaning the systems, application components and transactions, and other infrastructure elements hosted on premise and in the cloud.  
 
-## Initial Monitoring After Operations Manager Is Installed topics
+## Initial monitoring after Operations Manager is installed topics
 
 - [Managing Discovery and Agents](Managing-Discovery-and-Agents.md)
 

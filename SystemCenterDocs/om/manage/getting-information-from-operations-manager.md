@@ -1,17 +1,18 @@
 ---
 ms.assetid: 4a43f795-7e43-4c41-9ddf-720f984ed98f
 title: Getting Information from Operations Manager
-description:
+description: This article highlights the section titles contained within this section of the Operations Manager 2016 documentation.
 author: mgoedtel
+ms.author: magoedte
 manager: cfreemanwa
-ms.date: 10/12/2016
+ms.date: 11/15/2016
 ms.custom: na
 ms.prod: system-center-threshold
 ms.technology: operations-manager
 ms.topic: article
 ---
 
-# Getting Information from Operations Manager
+# Getting information from Operations Manager
 
 >Applies To: System Center 2016 - Operations Manager
 
@@ -20,7 +21,7 @@ Operations Manager, a component of System Center 2016, collects an immense amoun
 > [!NOTE]  
 > Querying the Operational database directly is not supported because doing so can adversely impact performance and table structure can change at any time.  We recommend accessing the views available in the Operations Manager data warehouse database for your querying needs. 
   
-## Getting Information from Operations Manager topics  
+## Getting information from Operations Manager topics  
   
 -   [Using Reports in Operations Manager](Using-Reports-in-Operations-Manager.md)  
   

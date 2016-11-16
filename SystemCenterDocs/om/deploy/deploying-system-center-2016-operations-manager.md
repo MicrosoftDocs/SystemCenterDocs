@@ -1,16 +1,16 @@
 ---
 ms.assetid: 2369cbef-5f0d-4fc2-8288-ea315aab20b6
 title:  Deploying System Center 2016 Operations Manager
-description:  
+description: This article provides a high-level overview of what preparations you should make before deploying Operations Manager 2016.  
 author: mgoedtel
+ms.author: magoedte
 manager: cfreemanwa
-ms.date: 10/12/2016
+ms.date: 11/15/2016
 ms.custom: na
 ms.prod: system-center-threshold
 ms.technology: operations-manager
 ms.topic: article
 ---
-
 
 # Deploying System Center 2016 - Operations Manager
 
@@ -20,7 +20,7 @@ All System Center 2016 - Operations Manager individual management group deployme
 
 This section of the Deployment Guide describes an individual management group deployment, where you have one management group, but the features of Operations Manager are either installed on a single server or distributed over several servers.
 
--   [Single-Server Deployment of Operations Manager](Single-Server-Deployment-of-Operations-Manager.md)
+-   [Single Server Deployment of Operations Manager](Single-Server-Deployment-of-Operations-Manager.md)
 
 -   [Distributed Deployment of Operations Manager](Distributed-Deployment-of-Operations-Manager.md)
 
@@ -77,6 +77,8 @@ You can accept the default values for or set:
 > If TCP/IP is disabled on a remote server that is hosting the SQL Server database, Setup will not be able to connect to the SQL Server database. To resolve this issue, enable TCP/IP on the remote server.
 
 Ensure that SQL Server Reporting Services has been correctly installed and configured. For more information about how to install and configure SQL Server 2014 Reporting Services, see [SQL Server Installation (SQL Server 2014)](https://msdn.microsoft.com/library/ms143711%28v=sql.120%29.aspx).  For more information about how to install and configure SQL Server 2016 Reporting Services, see [SQL Server Installation (SQL Server 2016)](https://msdn.microsoft.com/library/ms143711%28v=sql.130%29.aspx).
+
+For additional information to help you properly plan your SQL Server configuration in support of Operations Manager, see [SQL Server Design Considerations](../plan/planning-sqlserver-design.md).  
 
 ## Next steps
 

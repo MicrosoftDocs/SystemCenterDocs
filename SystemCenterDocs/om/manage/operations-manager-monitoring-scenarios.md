@@ -1,9 +1,10 @@
 ---
 title: Operations Manager Monitoring Scenarios
-description:
-author: MGoedtel
+description: This article highlights the section titles contained within this section of the Operations Manager 2016 documentation.
+author: mgoedtel
+ms.author: magoedte
 manager: cfreeman
-ms.date: 10/12/2016
+ms.date: 11/15/2016
 ms.custom: na
 ms.prod: system-center-threshold
 ms.technology: operations-manager
@@ -11,7 +12,7 @@ ms.topic: article
 ms.assetid: 5f1f3651-e2d2-4ab9-a8c4-456264dcdb24
 ---
 
-# Operations Manager Monitoring Scenarios
+# Operations Manager monitoring scenarios
   
 ## Operations Manager monitoring scenarios topics 
   

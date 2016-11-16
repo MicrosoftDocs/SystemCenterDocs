@@ -1,17 +1,18 @@
 ---
 ms.assetid: 212a5f25-9711-46b8-a466-775ef846dfc5
-title:  Install a Gateway Server
-description:  
+title: Install a Gateway Server
+description: This article describes how to install the Operations Manager Gateway server.  
 author: mgoedtel
+ms.author: magoedte
 manager: cfreemanwa
-ms.date: 10/12/2016
+ms.date: 11/15/2016
 ms.custom: na
 ms.prod: system-center-threshold
 ms.technology: operations-manager
 ms.topic: article
 ---
 
-# Install a Gateway Server
+# Install a gateway server
 
 >Applies To: System Center 2016 - Operations Manager
 

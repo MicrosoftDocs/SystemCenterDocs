@@ -1,16 +1,18 @@
 ---
 ms.assetid: 8b01d791-e5b9-475a-b789-6162e6120397
 title: Configuring SSL Ciphers
+description: This article describes how to configure SSL encrypted communication for UNIX and Linux computers and Operations Manager 2016.
 author: mgoedtel
+ms.author: magoedte
 manager: cfreemanwa
-ms.date: 10/12/2016
+ms.date: 11/15/2016
 ms.custom: na
 ms.prod: system-center-threshold
 ms.technology: operations-manager
 ms.topic: article
 ---
 
-# Configuring SSL Ciphers
+# Configuring SSL ciphers
 
 >Applies To: System Center 2016 - Operations Manager
 
@@ -26,7 +28,7 @@ The default SSL cipher configuration on UNIX or Linux computer is governed by th
   
 If the default SSL cipher configuration meets your organization's security policy, no action is needed.  
   
-If the default SSL cipher configuration contradicts your organization's security policy, the Operations Manager UNIX and Linux agent provides a configuration option to specify the ciphers that SSL can accept on port 1270. This option can be used to control the ciphers and bring the SSL configuration into conformance with your policies. After the Operations Manager UNIX and Linux agent is installed on each managed computer, the configuration option must be set by using the procedures described in the next section. Operations Manager does not provide any automatic or built\-in way to apply these configurations; each organization must perform the configuration by using an external mechanism that works best for it.  
+If the default SSL cipher configuration contradicts your organization's security policy, the Operations Manager UNIX and Linux agent provides a configuration option to specify the ciphers that SSL can accept on port 1270. This option can be used to control the ciphers and bring the SSL configuration into conformance with your policies. After the Operations Manager UNIX and Linux agent is installed on each managed computer, the configuration option must be set by using the procedures described in the next section. Operations Manager does not provide any automatic or built-in way to apply these configurations; each organization must perform the configuration by using an external mechanism that works best for it.  
   
 ### Setting the sslCipherSuite configuration option for System Center 2016 
 

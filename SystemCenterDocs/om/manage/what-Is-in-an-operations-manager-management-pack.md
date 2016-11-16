@@ -1,16 +1,18 @@
 ---
 ms.assetid: c7e03604-c2a2-4e0c-b8d4-cf0eb68c133d
 title: What is in an Operations Manager Management Pack?
+description: This article describes the composition of an Operations Manager management pack.
 author: mgoedtel
+ms.author: magoedte
 manager: cfreemanwa
-ms.date: 10/12/2016
+ms.date: 11/15/2016
 ms.custom: na
 ms.prod: system-center-threshold
 ms.technology: operations-manager
 ms.topic: article
 ---
 
-# What is in an Operations Manager Management Pack?
+# What is in an Operations Manager management pack?
 
 >Applies To: System Center 2016 - Operations Manager
 

@@ -1,18 +1,18 @@
 ---
 ms.assetid: 4220e1c6-c841-4d1b-bb71-ec324c33d217
 title:  Using Management Packs
-description:  
+description: This article highlights the section titles contained within this section of the Operations Manager 2016 documentation.
 author: mgoedtel
+ms.author: magoedte
 manager: cfreemanwa
-ms.date: 10/12/2016
+ms.date: 11/15/2016
 ms.custom: na
 ms.prod: system-center-threshold
 ms.technology: operations-manager
 ms.topic: article
 ---
 
-
-# Using Management Packs
+# Using management packs
 
 >Applies To: System Center 2016 - Operations Manager
 
@@ -20,7 +20,7 @@ Management packs contain settings that enable agents to monitor a specific servi
 
 Management packs might also contain tasks, diagnostics, and recovery tools and guidance to help fix problems.
 
-## Using Management packs topics
+## Using management packs topics
 
 -   [What Is in an Operations Manager Management Pack?](what-Is-in-an-operations-manager-management-pack.md)
 

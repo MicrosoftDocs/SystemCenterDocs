@@ -1,18 +1,18 @@
 ---
 ms.assetid: 4d1cf6ab-ed6e-4cd8-8ab8-f5d294877e4a
-title:  How to Upgrade an Agent to System Center 2016 - Operations Manager
-description:  
+title: How to Upgrade an Agent to System Center 2016 - Operations Manager
+description: This article describes how to upgrade a Windows agent to Operations Manager 2016.
 author: mgoedtel
+ms.author: magoedte
 manager: cfreemanwa
-ms.date: 10/12/2016
+ms.date: 11/15/2016
 ms.custom: na
 ms.prod: system-center-threshold
 ms.technology: operations-manager
 ms.topic: article
 ---
 
-
-# How to Upgrade an Agent to System Center 2016 - Operations Manager
+# How to upgrade an agent to System Center 2016 - Operations Manager
 
 >Applies To: System Center 2016 - Operations Manager
 

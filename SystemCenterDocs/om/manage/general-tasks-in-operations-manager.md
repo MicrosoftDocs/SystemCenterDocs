@@ -1,19 +1,22 @@
 ---
 ms.assetid: cd5cf7da-ae93-4c1f-9a67-7104a9259a9c
-title:  General Tasks in Operations Manager
-description:  
+title: General Tasks in Operations Manager
+description: This article highlights the section titles contained within this section of the Operations Manager 2016 documentation.
 author: mgoedtel
+ms.author: magoedte
 manager: cfreemanwa
-ms.date: 10/12/2016
+ms.date: 11/15/2016
 ms.custom: na
 ms.prod: system-center-threshold
 ms.technology: operations-manager
 ms.topic: article
 ---
 
-# General Tasks in Operations Manager topics  
+# General tasks in Operations Manager topics  
 
 >Applies To: System Center 2016 - Operations Manager
+
+-   [Managing alerts](managing-alerts.md)
 
 -   [How to suspend monitoring temporarily by using Maintenance Mode](How-to-Suspend-Monitoring-Temporarily-by-Using-Maintenance-Mode.md)  
 
@@ -24,6 +27,8 @@ ms.topic: article
 -   [Connecting management groups](connecting-management-groups-in-operations-manager.md)
 
 -   [Using Operations Manager Shell](using-operations-manager-shell.md)
+
+-   [How to create and manage resource pools](how-to-manage-resource-pools.md) 
 
 
 ## Other resources  

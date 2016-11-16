@@ -1,16 +1,18 @@
 ---
 ms.assetid: 58ebecd6-7f88-43bb-988b-6fdca37bf742
 title: Upgrading and Uninstalling Agents on UNIX and Linux Computers
+description: This article describes how to upgrade and uninstall the Operations Manager agent from UNIX and Linux computers.
 author: mgoedtel
+ms.author: magoedte
 manager: cfreemanwa
-ms.date: 10/12/2016
+ms.date: 11/15/2016
 ms.custom: na
 ms.prod: system-center-threshold
 ms.technology: operations-manager
 ms.topic: article
 ---
 
-# Upgrading and Uninstalling Agents on UNIX and Linux Computers
+# Upgrading and uninstalling agents on UNIX and Linux computers
 
 >Applies To: System Center 2016 - Operations Manager
 
@@ -77,3 +79,6 @@ You can uninstall an agent from the targeted computer by using the **UNIX/Linux 
 - To learn how to configure object discovery rules and disable discovery of a specific object, see [Applying Overrides to Object Discoveries](Applying-Overrides-to-Object-Discoveries.md).
 
 - Review [Manually Uninstalling Agents from UNIX and Linux Computers](Manually-Uninstalling-Agents-from-UNIX-and-Linux-Computers.md) to understand what options and steps need to be performed to properly uninstall the agent from your UNIX and Linux computers.
+
+
+

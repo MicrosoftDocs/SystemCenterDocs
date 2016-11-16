@@ -1,17 +1,18 @@
 ---
 ms.assetid: 16b7460b-f80e-476f-9048-9b13230f633b
 title: Managing Run As Accounts and Profiles
-description:  
+description: This article provides an overview of Run As accounts and profiles in Operations Manager 2016.
 author: mgoedtel
+ms.author: magoedte
 manager: cfreemanwa
-ms.date: 10/12/2016
+ms.date: 11/15/2016
 ms.custom: na
 ms.prod: system-center-threshold
 ms.technology: operations-manager
 ms.topic: article
 ---
 
-# Managing Run As Accounts and Profiles
+# Managing Run As accounts and profiles
 
 >Applies To: System Center 2016 - Operations Manager
 
