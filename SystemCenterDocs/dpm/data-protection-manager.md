@@ -5,7 +5,7 @@ ms.topic:  article
 author:  markgalioto
 ms.prod:  system-center-threshold
 keywords:  
-ms.date: 10/12/2016
+ms.date: 11/16/2016
 title:  Data Protection Manager
 ms.technology:  data-protection-manager
 ms.assetid:  ee706e89-20fd-4883-82e3-75565a705751
