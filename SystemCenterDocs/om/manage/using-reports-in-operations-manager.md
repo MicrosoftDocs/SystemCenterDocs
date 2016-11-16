@@ -1,16 +1,18 @@
 ---
 ms.assetid: f9504dda-b4e0-401a-8ef8-e0a215d33890
 title: Using Reports in Operations Manager
+description: This article highlights the section titles contained within this section of the Operations Manager 2016 documentation.
 author: mgoedtel
+ms.author: magoedte
 manager: cfreemanwa
-ms.date: 10/12/2016
+ms.date: 11/15/2016
 ms.custom: na
 ms.prod: system-center-threshold
 ms.technology: operations-manager
 ms.topic: article
 ---
 
-# Using Reports in Operations Manager
+# Using reports in Operations Manager
 
 >Applies To: System Center 2016 - Operations Manager
 
@@ -18,7 +20,7 @@ Reports in Operations Manager allow you to perform detailed analysis on the oper
 
 Dashboards were introduced in System Center 2012 - Operations Manager to allow you to present collected data in the Operations Manager consoles which are more flexible and powerful than views and reports.  Dashboards have access to data that views do not and allow you to present that data using a variety of different visualizations, nor the ability to interactively 
   
-## Using Reports in Operations Manager topics  
+## Using reports in Operations Manager topics  
   
 -   [Operations Manager Reports Library](Operations-Manager-Reports-Library.md)  
   

@@ -1,16 +1,18 @@
 ---
 ms.assetid: 113f2b4e-8f48-43da-9f31-2a2bf1d78ec5
 title: How to Run, Save, and Export a Report
+description: This article describes how to run, save and export a report in Operations Manager 2016.
 author: mgoedtel
+ms.author: magoedte
 manager: cfreemanwa
-ms.date: 10/12/2016
+ms.date: 11/15/2016
 ms.custom: na
 ms.prod: system-center-threshold
 ms.technology: operations-manager
 ms.topic: article
 ---
 
-# How to Run, Save, and Export a Report
+# How to run, save, and export a report
 
 >Applies To: System Center 2016 - Operations Manager
 
@@ -81,7 +83,7 @@ After the wizard completes, the management pack is saved to Operations Manager a
 > Only users who are members of the  authorization can save reports to management packs.  
 
 
-## How to Export a Report
+## How to export a Report
 
 After a report has been run, you can export the report into one of several formats supported by SQL Server Reporting Services.  To learn about what formats are supported by SQL Server Reporting Services, please review [Export Reports](https://msdn.microsoft.com/library/dd239307.aspx)
   

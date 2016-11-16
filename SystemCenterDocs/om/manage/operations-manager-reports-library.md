@@ -1,16 +1,18 @@
 ---
 ms.assetid: 90b8bc0b-1a4a-4273-a51a-a33142230d60
 title: Operations Manager Reports Library
+description: This article summarizes the default reports included with Operations Manager 2016.
 author: mgoedtel
+ms.author: magoedte
 manager: cfreemanwa
-ms.date: 10/12/2016
+ms.date: 11/15/2016
 ms.custom: na
 ms.prod: system-center-threshold
 ms.technology: operations-manager
 ms.topic: article
 ---
 
-# Operations Manager Reports Library
+# Operations Manager reports library
 
 >Applies To: System Center 2016 - Operations Manager
 

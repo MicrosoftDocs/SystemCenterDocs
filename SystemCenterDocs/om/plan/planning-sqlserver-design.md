@@ -5,7 +5,7 @@ description:  This article provides detailed design guidance for SQL Server to s
 author: mgoedtel
 ms.author: magoedte
 manager:  cfreeman
-ms.date: 11/08/2016
+ms.date: 11/15/2016
 ms.custom: na
 ms.prod: system-center-threshold
 ms.technology: operations-manager
@@ -33,7 +33,7 @@ The following versions of SQL Server are supported for a new or existing install
 | **Operations Manager** Reporting Server | yes | yes | 
 
 > [!NOTE] 
-> System Center 2016 – Operations Manager databases must use the same version of SQL Server, the SQL Server Collation setting must be **SQL_Latin1_General_CP1_CI_AS**, and SQL Server Full Text Search is **required** for both the operational and data warehouse databases.
+> System Center 2016 – Operations Manager databases must use the same version of SQL Server, the [SQL Server collation setting](#sql-server-collation-setting) must be one of the following supported types as described in that section, and SQL Server Full Text Search is **required** for both the operational and data warehouse databases.
 
 > [!NOTE] 
 > System Center 2016 – Operations Manager Reporting cannot be installed in a side-by-side fashion with the System Center Operations Manager 2012 R2 Reporting and **must** be installed in native mode only. (SharePoint integrated mode is not supported.)
@@ -46,6 +46,35 @@ Additional hardware and software considerations apply in your design planning:
 
 For additional information, please see [Hardware and Software Requirements for Installing SQL Server 2014](https://msdn.microsoft.com/library/ms143506%28v=sql.120%29.aspx) or [Hardware and Software Requirements for Installing SQL Server 2016](https://msdn.microsoft.com/library/ms143506%28v=sql.130%29.aspx).  
   
+## SQL Server collation setting
+
+The following SQL Server and Windows collations are supported by System Center 2016 - Operations Manager.  
+
+### SQL Server collation
+- SQL_Latin1_General_CP1_CI_AS 
+
+### Windows collation
+- Latin1_General_100_CI_AS 
+- French_CI_AS
+- French_100_CI_AS
+- Cyrillic_General_CI_AS
+- Chinese_PRC_CI_AS
+- Chinese_Simplified_Pinyin_100_CI_AS
+- Chinese_Traditional_Stroke_Count_100_CI_AS
+- Japanese_CI_AS
+- Japanese_XJIS_100_CI_AS
+- Traditional_Spanish_CI_AS
+- Modern_Spanish_100_CI_AS
+- Latin1_General_CI_AS
+- Cyrillic_General_100_CI_AS 
+- Korean_100_CI_AS
+- Czech_100_CI_AS
+- Hungarian_100_CI_AS
+- Polish_100_CI_AS
+- Finnish_Swedish_100_CI_AS  
+
+Please note that if your SQL Server instance is not configured with one of the supported collations listed earlier, performing a new setup of Operations Manager setup will fail.  However, an in-place upgrade will complete successfully.  
+
 ## Firewall configuration
 
 Operations Manager depends on SQL Server to host its databases and a reporting platform to analyze and present historical operational data.  The management server, Operations and Web console roles need to be able to successfully communicate with SQL Server, and its important to understand the communication path and ports in order to configure your environment correctly.  

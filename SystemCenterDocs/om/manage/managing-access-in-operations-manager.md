@@ -1,17 +1,18 @@
 ---
 ms.assetid: 379bdfe5-f9d7-495b-9c89-68a3ffc26202
 title:  Managing Access in Operations Manager
-description:
+description: This article highlights the section titles contained within this section of the Operations Manager 2016 documentation.
 author: mgoedtel
+ms.author: magoedte
 manager: cfreemanwa
-ms.date: 10/12/2016
+ms.date: 11/15/2016
 ms.custom: na
 ms.prod: system-center-threshold
 ms.technology: operations-manager
 ms.topic: article
 ---
 
-# Managing Access in Operations Manager
+# Managing access in Operations Manager
 
 >Applies To: System Center 2016 - Operations Manager
 

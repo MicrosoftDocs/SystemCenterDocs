@@ -1,16 +1,18 @@
 ---
 ms.assetid: 61b25aa7-b725-445b-8f4c-40ce213714c2
 title: How to Configure Run As Accounts and Profiles for UNIX and Linux Access
+description: This article describes how to configure Run As accounts and profiles for secure monitoring of Linux and UNIX.
 author: mgoedtel
+ms.author: magoedte
 manager: cfreemanwa
-ms.date: 10/12/2016
+ms.date: 11/15/2016
 ms.custom: na
 ms.prod: system-center-threshold
 ms.technology: operations-manager
 ms.topic: article
 ---
 
-# How to Configure Run As Accounts and Profiles for UNIX and Linux Access
+# How to configure Run As accounts and profiles for UNIX and Linux access
 
 >Applies To: System Center 2016 - Operations Manager
 

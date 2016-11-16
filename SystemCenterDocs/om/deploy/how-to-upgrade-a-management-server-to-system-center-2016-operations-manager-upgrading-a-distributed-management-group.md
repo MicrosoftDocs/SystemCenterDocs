@@ -1,18 +1,18 @@
 ---
 ms.assetid: aabf9661-6b4c-4495-845d-7d30de3cff93
-title:  How to Upgrade a Management Server to System Center 2016 - Operations Manager -Upgrading a Distributed Management Group
-description:  
+title: How to Upgrade a Management Server to System Center 2016 - Operations Manager -Upgrading a Distributed Management Group
+description: This article describes how to upgrade a management server in a distributed deployment of Operations Manager 2016. 
 author: mgoedtel
+ms.author: magoedte
 manager: cfreemanwa
-ms.date: 10/12/2016
+ms.date: 11/15/2016
 ms.custom: na
 ms.prod: system-center-threshold
 ms.technology: operations-manager
 ms.topic: article
 ---
 
-
-# How to Upgrade a Management Server to System Center 2016 - Operations Manager - Upgrading a Distributed Management Group
+# How to upgrade a management server to System Center 2016 - Operations Manager - upgrading a distributed management group
 
 >Applies To: System Center 2016 - Operations Manager
 

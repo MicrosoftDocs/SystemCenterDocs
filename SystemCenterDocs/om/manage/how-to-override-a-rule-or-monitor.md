@@ -1,17 +1,18 @@
 ---
 ms.assetid: bcc1b4ee-ad6e-43f0-aa7e-41a2231783d3
 title: How to Override a Rule or Monitor
-description:  
+description: This article describes how to override a rule or monitor in the Operations Manager Operations console.
 author: mgoedtel
+ms.author: magoedte
 manager: cfreemanwa
-ms.date: 10/12/2016
+ms.date: 11/15/2016
 ms.custom: na
 ms.prod: system-center-threshold
 ms.technology: operations-manager
 ms.topic: article
 ---
 
-# How to Override a Rule or Monitor
+# How to override a rule or monitor
 
 >Applies To: System Center 2016 - Operations Manager
 
@@ -46,11 +47,9 @@ The following procedure overrides a monitor, but you can also use these steps to
   
 ## Next steps
 
-- To understand the differences between classes and groups in Operations Manage and how workflows apply to each, review [Using Classes and Groups for Overrides in Operations Manager](Using-Classes-and-Groups-for-Overrides.md)
+- To understand the differences between classes and groups in Operations Manage and how workflows apply to each, review [Using Classes and Groups for Overrides in Operations Manager](Using-Classes-and-Groups-for-Overrides.md).
 
-- To understand the differences between classes and groups in Operations Manage and how workflows apply to each, review [Using Classes and Groups for Overrides in Operations Manager](Using-Classes-and-Groups-for-Overrides.md)  
-
-- Before making changes to the monitoring settings defined in an Operations Manager management pack, review [How to Override a Rule or Monitor](How-to-Override-a-Rule-or-Monitor.md) and then review [How to Enable or Disable a Rule or Monitor](How-to-Enable-or-Disable-a-Rule-or-Monitor.md) to understand how to configure the change.  
+- To understand the basic concepts for managing the monitoring configuration of an application or service defined in a management pack, see [Management Pack Lifecycle](management-pack-lifecycle.md).
 
  
   

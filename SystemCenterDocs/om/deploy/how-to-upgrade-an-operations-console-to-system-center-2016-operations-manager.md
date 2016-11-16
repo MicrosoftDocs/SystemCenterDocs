@@ -1,18 +1,18 @@
 ---
 ms.assetid: 89b1617f-73d3-4a5d-9a82-3ef4ab1a9fc3
 title: How to Upgrade an Operations Console to System Center 2016 - Operations Manager
-description:  
+description: This article describes how to upgrade an Operations console to Operations Manager 2016.
 author: mgoedtel
+ms.author: magoedte
 manager: cfreemanwa
-ms.date: 10/12/2016
+ms.date: 11/15/2016
 ms.custom: na
 ms.prod: system-center-threshold
 ms.technology: operations-manager
 ms.topic: article
 ---
 
-
-# How to Upgrade an Operations Console to System Center 2016 - Operations Manager
+# How to upgrade an Operations console to System Center 2016 - Operations Manager
 
 >Applies To: System Center 2016 - Operations Manager
 

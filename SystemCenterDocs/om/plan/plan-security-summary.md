@@ -1,10 +1,11 @@
 ---
 ms.assetid: eda0345b-cbef-494d-8c15-f782ad47500e
 title: Security Design
-description:
+description: This article is the landing page for security design guidance for Operations Manager 2016.
 author: mgoedtel
+ms.author: magoedte
 manager: cfreemanwa
-ms.date: 10/12/2016
+ms.date: 11/15/2016
 ms.custom: na
 ms.prod: system-center-threshold
 ms.technology: operations-manager

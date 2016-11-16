@@ -1,10 +1,11 @@
 ---
 ms.assetid: d7f96cca-113c-4732-a3ba-e7f593350015
 title: Data Encryption for Web console and Reporting server Connections
-description:  
+description: This article provides design guidance for Operations Manager 2016 roles where secure communication is required in the enterprise.  
 author: mgoedtel
+ms.author: magoedte
 manager: cfreemanwa
-ms.date: 10/12/2016
+ms.date: 11/15/2016
 ms.custom: na
 ms.prod: system-center-threshold
 ms.technology: operations-manager

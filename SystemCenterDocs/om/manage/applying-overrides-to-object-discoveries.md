@@ -1,16 +1,18 @@
 ---
 ms.assetid: f286e1fc-57f5-469f-bee5-e3756b560810
 title: Applying Overrides to Object Discoveries
+description: This article describes how to target and apply overrides to object discovery rules.
 author: mgoedtel
+ms.author: magoedte
 manager: cfreemanwa
-ms.date: 10/12/2016
+ms.date: 11/15/2016
 ms.custom: na
 ms.prod: system-center-threshold
 ms.technology: operations-manager
 ms.topic: article
 ---
 
-# Applying Overrides to Object Discoveries
+# Applying overrides to object discoveries
 
 >Applies To: System Center 2016 - Operations Manager
 
