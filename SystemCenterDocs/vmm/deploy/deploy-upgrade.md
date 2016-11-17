@@ -33,7 +33,8 @@ This article describes prerequisites for upgrading to System Center 2016 - Virtu
 	- If the VMM database is included in the availability group, remove it in SQL Server Management Studio.
 	- Initiate a failover to the computer that is running SQL Server, and on which the VMM database is installed.
 - Make sure your VMM server running System Center 2012 R2 is running update rollup 9 or later.
-- If you're running Operations Manager with VMM, disconnect the connection between VMM and Operations Manager before you begin the upgrade. Enable the connection again after both VMM and Operations Manager are running on System Center 2016.
+- If you're running Operations Manager with VMM, disconnect the connection between VMM and Operations Manager before you begin the upgrade. Enable the connection again after both VMM and Operations Manager are running on System Center 2016. Please note that you shouldn't install any management Pack on VMM 2016 RTM unless you have Update Roll up one or later installed. In case you have installed Management Pack(s) on VMM 2016 RTM, please delete these Management Packs before applying any Update Roll up.
+
 
 
 ## Upgrade a standalone VMM server

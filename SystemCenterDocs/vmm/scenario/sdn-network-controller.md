@@ -143,7 +143,7 @@ If you want to allocate static IP addresses to network controller VMs, create an
 You need to deploy a logical switch on the management logical network. The switch provides connectivity between the management logical network and the network controller VMs.
 
 1.  Click **Create Logical Switch**. Review the Getting Started information and click **Next**.
-2. Provide a name and optional description. Select **No Uplink Team**. If you need teaming, select **Team**.
+2. Provide a name and optional description. Select **No Uplink Team**. If you need teaming, select **Embedded Team**.
 3.  For minimum bandwidth mode, choose the default option.
 4.  In **Extensions** clear all the switch extensions. This is important. Selecting any of the switch extensions at this stage could block network controller onboarding later.
 5.  You can optionally add a virtual port profile and choose a port classification for host management.
@@ -230,7 +230,7 @@ You can specify the product key in the service template, and enable dynamic IP i
 3. To specify a product key, click **Product Key**, and specify the key shared by CCEP.
 4. To enable dynamic IP configuration in case you want to leverage DHCP for network controller management, click on the adapter, and change the IPV4 address type to **Dynamic**.
 
-
+**Note** While configuring your Network Controller and specifying FQDN as the REST name, don’t pre-create Host A record for your primary NC node in your DNS. This may impact Network Controller connectivity once primary NC node changes. This is applicable even if you are deploying NC using SDN Express or VMM Powershell script.
 
 ## Deploy the network controller
 
