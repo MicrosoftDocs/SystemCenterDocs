@@ -9,6 +9,7 @@ ms.date: 10/12/2016
 title:  Identify compatible tape libraries
 ms.technology:  data-protection-manager
 ms.assetid:  4ed6e64f-21d4-4c93-9979-3f1a48317cbe
+ms.author: markgal
 ---
 
 # Identify compatible tape libraries

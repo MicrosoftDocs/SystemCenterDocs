@@ -9,6 +9,7 @@ ms.date: 10/12/2016
 title:  Manage multiple DPM servers with Central Console
 ms.technology:  data-protection-manager
 ms.assetid:  6e08e911-36e0-48d6-b71e-df4741811a0a
+ms.author: markgal
 ---
 
 # Manage multiple DPM servers with Central Console

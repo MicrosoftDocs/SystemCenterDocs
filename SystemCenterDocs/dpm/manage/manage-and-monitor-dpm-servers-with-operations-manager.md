@@ -9,6 +9,7 @@ ms.date: 10/12/2016
 title:  Manage and monitor DPM servers with Operations Manager
 ms.technology:  data-protection-manager
 ms.assetid:  97fd6656-af44-4e5c-bef8-dc57643b0181
+ms.author: markgal
 ---
 
 # Manage and monitor DPM servers with Operations Manager

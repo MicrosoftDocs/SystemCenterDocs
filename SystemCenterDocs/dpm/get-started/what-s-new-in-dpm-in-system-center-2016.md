@@ -9,6 +9,7 @@ ms.date: 10/21/2016
 title:  What's new in DPM in System Center 2016
 ms.technology:  data-protection-manager
 ms.assetid:  a5e81bf0-43a6-4099-af2e-dfb0c1aa7ed8
+ms.author: markgal
 ---
 
 # What's new in DPM in System Center 2016
