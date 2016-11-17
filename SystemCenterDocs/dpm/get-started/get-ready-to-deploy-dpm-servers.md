@@ -9,6 +9,7 @@ ms.date: 10/28/2016
 title:  Get ready to deploy DPM servers
 ms.technology:  data-protection-manager
 ms.assetid:  517ce276-b811-4a06-ade3-ff71303ccf5b
+ms.author: markgal
 ---
 
 # Get ready to deploy DPM servers

@@ -9,6 +9,7 @@ ms.date: 10/12/2016
 title:  Prepare to back up a generic data source
 ms.technology:  data-protection-manager
 ms.assetid:  8ad00a50-108a-4212-ad43-c12a8f8f5587
+ms.author: markgal
 ---
 
 # Prepare to back up a generic data source

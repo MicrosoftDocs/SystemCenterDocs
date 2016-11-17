@@ -9,6 +9,7 @@ ms.date: 10/12/2016
 title:  Set up DPM logging
 ms.technology:  data-protection-manager
 ms.assetid:  710459cd-75ec-4052-9199-c45828cbc19b
+ms.author: markgal
 ---
 
 # Set up DPM logging
