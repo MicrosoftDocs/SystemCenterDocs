@@ -28,4 +28,4 @@ Use this information to evaluate the client operating system requirements to sup
 |**Orchestrator** Runbook Designer||||||&#8226;|&#8226;|&#8226;|
 |**Service Management Automation** PowerShell ISE Add-on||&#8226;|&#8226;|&#8226;|&#8226;|&#8226;|&#8226;|&#8226;|
 |**Service Manager** Console|||&#8226;|||&#8226;|&#8226;|&#8226;|
-|**VMM** Console||&#8226;|&#8226;|&#8226;|&#8226;|&#8226;|&#8226;|&#8226;|
+|**VMM** Console|||&#8226;|&#8226;|&#8226;|&#8226;|&#8226;|&#8226;|

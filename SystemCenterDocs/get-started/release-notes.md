@@ -529,6 +529,8 @@ Ensure that you have specified a valid path parameter, and that all necessary fi
 
 **Workaround:** After the VM is deployed, manually join the VM to the domain. For more details on how to do this, see the 'Joining Nano Server to a domain' section in the [Getting Started with Nano Server guide](https://technet.microsoft.com/en-us/windows-server-docs/compute/nano-server/getting-started-with-nano-server).
 
+
+
 #### VMM throws an error when you start a VM configured for Start Ordering
 **Description:** Windows Server 2016 has a new functionality called VM Start Ordering which can be used to define the order in which dependent VMs will get started. This functionality is not exposed through VMM today. However, if you have configured VM start ordering outside of VMM, VMM does honor the order in which the VMs will start. It however throws the below false positive error which should be ignored *Error (12711)
 VMM cannot complete the WMI operation on the server <servername> because of an error: [MSCluster_ResourceGroup.Name=<name>] The group or resource is not in the correct state to perform the requested operation.
@@ -555,21 +557,47 @@ Resolve the issue and then try the operation again.*
 
 **Workaround:** Store the console add-in at a location where the user has write access, for example “C:\user\<username>\”, and then try importing the add-in.
 
-#### WinRM error blocks setting the static IP on the backend NIC of the SLB MUX VM
-**Description:** If you try to assign a static IP address to one or more of Software Load Balancer MUX Virtual Machines during the SLB deployment, a WinRM error blocks the operation.
+#### Microsoft System Center 2012 displayed in Start Menu
+**Description:** After you have installed UR2 or a later patch and if your environment had UR1 at any point of time, you will see Microsoft System Center 2012 displayed in Start Menu. This is only a UI issue and has no functional impact.
 
-**Workaround:** Re-try the operation.
+**Workaround:** You need to delete the "Microsoft System Center 2012" folder under "Program Menu" folder so that, "Microsoft System Center 2016" entry becomes visible.
 
-#### Teamed Software Defined Network Switch deployment fails on Nano hosts
-**Description:** You can't deploy a teamed switch on Nano hosts using VMM 2016 TP5.
+#### Dynamic IP not supported for NC managed Logical Networks
+**Description:** Although possible through VMM, Dynamic IP configuration for VMs connected to Network Controller managed Logical Networks is not supported by network Controller.
 
-**Workaround:** Deploy an SDN switch on any single physical NIC adaptor of the host.
+**Workaround:** You should configure static IP for such VMs
 
-#### Inconsistent Network Address Translation user interface
-**Description:** The existing NAT connections will not be visible when you close the network connectivity wizard and reopen it. Additionally, UI doesn't allow you to choose the IP Address from the pool for creating NAT connection.
+#### SET switch deployed OOB shows up an ‘Internal’ in VMM
+**Description:** Once you deploy an SET switch out of band from VMM and later on-board the switch into VMM. VMM UI shows the switch type as ‘Internal’. This, however, doesn’t impact the functionality of the switch.
 
-**Workaround:** User can still add the NAT connections through UI. To see the existing NAT connections, user can leverage Powershell cmdlets
-Get-SCNATConnection
+**Workaround:** None
+
+#### Host agent status after upgrade
+**Description:** When SCVMM updates the host agent, it generates a new certificate for the host. Because of this certificate update, NC server certificate and Host certificate don't match.
+
+**Workaround:** This can be remediated by repairing the Host from the host status page
+
+#### LACP teamed switch non-functional after upgrade
+**Description:** LACP team configured in a Logical Switch gets into non-functional state after upgrade to RTM.
+
+**Workaround:** you can either redeploy the Switch or remove and re-add a member pNIC of the team
+
+#### Backend NIC connectivity for SLB MUX
+**Description:** Backend NIC connectivity of SLB MUX may get impacted after VM migration.
+
+**Workaround:** Users can opt for scale in/scale out of the SLB MUX VM as a workaround.
+
+#### Publishing SLBM VIP after upgrade
+**Description:** Customers after upgrading from TP5 to RTM will hit this issue if they have published VIP pools in TP5.
+
+**Workaround:** After upgrade to RTM they need to publish the VIP pools again after upgrading to RTM
+
+#### .CNG based CA cert not supported
+**Description:** If you are using CA provided certificates, you will not be able to use .CNG certificates for VMM based SDN deployment.
+
+**Workaround:** use other formats for CA based certs
+
+
 
 #### vNIC connected to Network Controller managed network must be restarted on IP Address change
 **Description:** If there is a change in assigned IP address on any of the vNICs that are connected to a Network Controller managed VM Network, you need to manually restart the associated vNIC(s).
@@ -577,9 +605,9 @@ Get-SCNATConnection
 **Workaround:** No workaround.
 
 #### IPV6 configuration is not supported for Network Controller managed infrastructure
-**Description:** IPV6 configurations are not supported with System Center 2016 TP5 - VMM.
+**Description:** IPV6 configurations are not supported with System Center 2016 - VMM.
 
-**Workaround:** Use IPV4 configuration with VMM 2016 TP5.
+**Workaround:** Use IPV4 configuration with VMM 2016.
 
 #### User needs to disable "Register this connection's address in DNS" option for Frontend and Backend IPs Software Load Balancer MUX VMs
 **Description:** For Front End and Back End IPs assigned to Software Load Balancer MUX Virtual Machines you need to uncheck the option for 'Register this connection's address in DNS'. Having this option checked may cause issues with the connectivity over these IP addresses.

@@ -125,6 +125,9 @@ The service instance you deployed is now associated with the Gateway Manager rol
 
 After you deploy the gateway you can configure S2S GRE, S2S IPSec, or L3 connection types, and validate them.
 
+**Note** "connectionStatus" REST object is set as "disabled" by default. Earlier this field was Read-only and its value was set as "Enabled". After a fix in Update Roll up 1, this field is Read-write and its value should be either left blank or set as "Enabled". This value enables/disables admin status of the connection on Gateway.
+
+
 ### Create and validate a site-to-site IPSec connection
 
 A site-to-site IPSec connection allows you to securely access remote virtual machines and services from your datacenter. Create the connection as follows:
