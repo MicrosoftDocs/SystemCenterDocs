@@ -9,6 +9,7 @@ ms.date: 10/12/2016
 title:  Improve replication performance
 ms.technology:  data-protection-manager
 ms.assetid:  dc7b7b49-dcbb-4e44-9ea7-31374c5773ff
+ms.author: markgal
 ---
 
 # Improve replication performance

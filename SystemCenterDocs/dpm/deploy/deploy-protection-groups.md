@@ -9,6 +9,7 @@ ms.date: 10/12/2016
 title:  Deploy protection groups
 ms.technology:  data-protection-manager
 ms.assetid:  2a4f4ec8-6185-4fe9-8120-e4dc3b6c9409
+ms.author: markgal
 ---
 
 # Deploy protection groups
@@ -31,7 +32,7 @@ A DPM protection group is a collection of data sources, such as volumes, shares,
 
 
 The topics in this section provide guidelines for making the decisions involved in creating a protection group.
- 
+
 ## Plan protection groups
 You'll need to decide:
 

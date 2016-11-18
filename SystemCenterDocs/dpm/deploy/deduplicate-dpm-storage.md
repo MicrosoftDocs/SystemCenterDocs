@@ -9,6 +9,7 @@ ms.date: 10/12/2016
 title:  Deduplicate DPM storage
 ms.technology:  data-protection-manager
 ms.assetid:  af49cdc3-1f63-4c10-843a-d1cd27af473a
+ms.author: markgal
 ---
 
 # Deduplicate DPM storage
