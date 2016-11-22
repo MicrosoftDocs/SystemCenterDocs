@@ -76,7 +76,7 @@ In VMM 2016 you can deploy the entire SDN stack using VMM service templates.
 
 ### Network traffic isolation and filtering
 
-You can limit and segregate network traffic by specifying port ACLs on VM networks, virtual subnets, network interfaces, or on an entire VMM stamp using Network Controller and PowerShell. [Learn more](https://technet.microsoft.com/library/mt721313%28v=sc.16%29.aspx).
+You can limit and segregate network traffic by specifying port ACLs on VM networks, virtual subnets, network interfaces, or on an entire VMM stamp using Network Controller and PowerShell. [Learn more](../manage/manage-compute-extended-port-acls.md).
 
 ### Virtual network adapter naming
 
