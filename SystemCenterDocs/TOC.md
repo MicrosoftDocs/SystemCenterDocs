@@ -274,7 +274,6 @@
 ### [Upgrading to System Center 2016 - Service Manager](sm/deploy/upgrade-upgrading-system-center-2012-service-manager-to-system-center-2016.md)
 #### [Upgrade Planning for Service Manager](sm/deploy/upgrade-upgrade-planning-for-system-center-2016-service-manager.md)
 ##### [Upgrading the Self-Service Portal](sm/deploy/upgrade-upgrading-the-self-service-portal.md)
-##### [Service Manager Connectors](sm/deploy/upgrade-service-manager-connectors.md)
 ##### [Remote SQL Server Reporting Services](sm/deploy/upgrade-remote-sql-server-reporting-services.md)
 #### [Setting up a Service Manager Lab Environment with Production Data](sm/deploy/upgrade-setting-up-a-service-manager-2016-lab-environment-with-production-data.md)
 ##### [How to Install an Additional Management Server in the Production Service Manager Management Group](sm/deploy/upgrade-how-to-install-an-additional-management-server-in-the-production-service-manager-management-group.md)

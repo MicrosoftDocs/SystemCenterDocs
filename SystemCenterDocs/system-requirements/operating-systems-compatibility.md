@@ -32,9 +32,9 @@ Use this information to evaluate if your server-side operating system environmen
 |**Orchestrator** Runbook Server||&#8226;||&#8226;||
 |**Orchestrator** Web Service||&#8226;||&#8226;||
 |**Orchestrator** Runbook Designer||&#8226;||&#8226;||
-|**Service Management Automation** Web Service|||&#8226;|&#8226;||
-|**Service Management Automation** Runbook Worker|||&#8226;|&#8226;||
-|**Service Management Automation** PowerShell Module|||&#8226;|&#8226;||
+|**Service Management Automation** Web Service||&#8226;||&#8226;||
+|**Service Management Automation** Runbook Worker||&#8226;||&#8226;||
+|**Service Management Automation** PowerShell Module||&#8226;||&#8226;||
 |**Service Manager** Management Server||&#8226;|&#8226;|&#8226;||
 |**Service Manager** Data Warehouse Management Server||&#8226;|&#8226;|&#8226;||
 |**Service Manager** Database or Data Warehouse Database||&#8226;|&#8226;|&#8226;||

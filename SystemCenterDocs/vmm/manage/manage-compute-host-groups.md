@@ -3,9 +3,9 @@ ms.assetid: 2d8c7af1-fe96-4901-9d51-90e12bedeaa8
 title: Set up host groups in the VMM compute fabric
 description: This article describes how to set up host groups in the VMM fabric
 author:  rayne-wiselman
-ms-author: raynew
+ms.author: raynew
 manager:  cfreeman
-ms.date:  10/16/2016
+ms.date:  10/20/2016
 ms.topic:  article
 ms.prod:  system-center-threshold
 ms.technology:  virtual-machine-manager
@@ -37,8 +37,8 @@ After you've created a host group you can modify the following properties for th
 **Dynamic Optimization** | Configure dynamic optimization and power optimization settings. Dynamic optimization balances the virtual machines load within a host cluster. Power optimization enables VMM to evacuate hosts of a balanced cluster and turn them off to save power.
 **Network** | View inheritance settings, and configure whether to inherit network logical resources from parent host groups. The network logical resources include the following:<br/><br/> IP address pools<br/><br/> Load balancers<br/><br/> Logical networks<br/><br/> MAC address pools
 **Storage** | View and allocate storage to a host group.
-**Custom Properties** |  Manage custom properties for the following object types:<br/><br/> Virtual machine<br/><br/> Virtual machine template<br/><br/> Host<br/><br/> Host cluster<<br/><br/> Host group<br/><br/> Service template<br/><br/> Service instance<br/><br/> Computer tier<br/><br/> Cloud
+**Custom Properties** |  Manage custom properties for the following object types:<br/><br/> Virtual machine<br/><br/> Virtual machine template<br/><br/> Host<br/><br/> Host cluster<br/><br/> Host group<br/><br/> Service template<br/><br/> Service instance<br/><br/> Computer tier<br/><br/> Cloud
 
 ## Next steps
 
-After you've created host groups you can deploy [Hyper-V](manage-compute-hyper-v-overview.md) hosts in the VMM fabric.
+After you've created host groups, you can deploy [Hyper-V](manage-compute-hyper-v-overview.md) hosts in the VMM fabric.

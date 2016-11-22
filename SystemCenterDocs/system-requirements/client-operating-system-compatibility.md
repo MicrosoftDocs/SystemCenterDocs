@@ -7,7 +7,7 @@ ms.prod:  system-center-threshold
 ms.author: cfreeman
 keywords:  
 ms.date:  10/12/2016
-title:  Client Operating System Compatibility for System Center Technical Preview
+title:  Client Operating System Compatibility for System Center 2016
 ms.technology:  system-center-2016
 ms.assetid:  c8e556a8-a754-4711-85de-a1cf959aabe2
 ---
