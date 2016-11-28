@@ -7,7 +7,7 @@ ms.author: cfreeman
 ms.prod:  system-center-threshold
 ms.technology: system-center-2016
 keywords:
-ms.date: 10/12/2016
+ms.date: 11/28/2016
 title:  Release Notes for System Center 2016
 ms.assetid:  5fad5608-4cb7-48b0-aa31-35ca5cc2d560
 ---
@@ -108,8 +108,7 @@ ReplicaSizeInGBForSystemProtectionWithBMR (DWORD)
 **Description:** Web Console might throw an error **“Could not load type ‘System.ServiceModel.Activation.HttpModule”**.
 
 **Workaround:** Add “HTTP Activation” to the role services of the OS.  Then,
-On Server 2008 R2 – run the following in an elevated command prompt:  “C:\Windows\Microsoft.NET\Framework64\v4.0.30319>aspnet_regiis.exe -i -enable”.
-On Server 2012 – run the following in an elevated command prompt:  “C:\Windows\Microsoft.NET\Framework64\v4.0.30319>aspnet_regiis.exe -r”.
+on Server 2012 – run the following in an elevated command prompt:  “C:\Windows\Microsoft.NET\Framework64\v4.0.30319>aspnet_regiis.exe -r”.
 
 #### Anomalies in handling tables and bullets in Knowledge Articles
 **Description:** If tables are inserted in a knowledge article, when re-editing the knowledge article the borders are not applied to the table. Similarly, if bullets are added in the knowledge article it gets converted to numeric bullets while re-editing. And, if there is a single bullet in the article then the article doesn’t get saved in the MP and the console throws error.
