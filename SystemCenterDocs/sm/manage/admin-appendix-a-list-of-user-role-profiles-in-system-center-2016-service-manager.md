@@ -60,8 +60,7 @@ The table below shows the tabs and order that they appear in the console.
 | update status for release records | advanced operator, author, release manager, workflow |
 | update status for service requests | advanced operator, author, service request analyst, workflow |
 | update status for manual activity | advanced operator, author, change manager, incident resolver, release manager, service request analyst, workflow |
-| update status for review activity | adva
-nced operator, author, change manager, release manager, service request analyst, workflow |
+| update status for review activity | advanced operator, author, change manager, release manager, service request analyst, workflow |
 | create CIs | advanced operator, author, workflow |
 | update CIs | advanced operator, author, workflow |
 | delete CIs | advanced operator, author, workflow |
