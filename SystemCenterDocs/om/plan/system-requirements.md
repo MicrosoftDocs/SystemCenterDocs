@@ -5,7 +5,7 @@ description: The system requirements article provides general performance and sc
 author: mgoedtel
 ms.author: magoedte
 manager: cfreeman
-ms.date: 11/10/2016
+ms.date: 11/28/2016
 ms.custom: na
 ms.prod: system-center-threshold
 ms.technology: operations-manager
@@ -18,7 +18,9 @@ ms.topic: article
 
 The topic describes general performance and scalability guidance for System Center 2016 - Operations Manager and recommends hardware configurations for a variety of workloads. Because System Center 2016 – Operations Manager is built to be flexible and scalable, the hardware requirements for specific scenarios may differ from the guidelines that are presented here.  A discussion of the factors that affect the performance of each Operations Manager component is detailed in other sections of the planning guide so that they can be adapted to specific requirements.
 
-Let's start first by understanding the performance and scalability characteristics of the various Operations Manager components. 
+## Capacity limits for Operations Manager
+
+This information helps you understand the performance and scalability characteristics of the various Operations Manager components and the management group which is comprised of these different components.  
 
 | Monitored Item | Recommended Limit |
 |:--- |:---|
@@ -43,7 +45,7 @@ Let's start first by understanding the performance and scalability characteristi
 | URLs monitored per agent | 50 |
 
 
-## Hardware
+## Hardware requirements
 
 Use this information to evaluate if your hardware environment is ready to support the installation of or upgrade to System Center 2016 - Operations Manager, considering the minimum hardware requirements for processor, RAM, and disk space.  You should use the information here whether you are deploying one or multiple components and for more specific information to help plan the amount of infrastructure needed for a new Operations Manager deployment, refer to the [Operations Manager 2012 Sizing Helper](http://go.microsoft.com/fwlink/p/?LinkId=231853).
 
@@ -60,9 +62,9 @@ Use this information to evaluate if your hardware environment is ready to suppor
 | Web Console server | 4-Core 2.66 GHz CPU | 8 GB | 10 GB | 
 | SQL Server Reporting Services server | 4-Core 2.66 GHz CPU | 8 GB | 10 GB |
 
-## Feature requirements for Operations Manager components
+## Software requirements for Operations Manager components
 
-### Server Operating System requirements  
+### Server Operating System   
 
 The following versions of Windows Server operating system are supported for the following Operations Manager components.
 
@@ -75,7 +77,7 @@ The following versions of Windows Server operating system are supported for the 
 | **Operations Manager** Operations console | yes | yes | |
 
 
-### Client Operating System requirements
+### Client Operating System 
 
 The following versions of Windows client operating system are supported for the Operations Manager Operations console.
 
@@ -83,7 +85,7 @@ The following versions of Windows client operating system are supported for the 
 |:--- |:---|:--- |:--- |
 | yes | yes | yes | yes |
 
-### Microsoft Monitoring Agent Operating System requirements
+### Microsoft Monitoring Agent Operating System 
 
 The following versions of Windows operating system are supported for the Microsoft Monitoring Agent connecting to Operations Manager.
 
@@ -98,14 +100,14 @@ Windows Server 2016, Windows Server 2016 Nano Server, Windows 10, Windows 8 Ente
 
 > Microsoft .NET Framework 3.5 or later is required for local collection of IntelliTrace logs and .NET Application Performance Monitoring.
 
-### Management server/Gateway server requirements
+### Management server/Gateway server 
 
 - Operating System: See [Server Operating System requirements](#server-operating-system-requirements).   
 - Windows PowerShell version: Windows PowerShell version 2.0, or Windows PowerShell version 3.0.
 - Windows Remote Management: Windows Remote Management must be enabled for the management server.
 - NET Framework 4 or .NET Framework 4.5 is required. 
 
-### Operations Manager console requirements
+### Operations Manager console 
 
 - Operating System: See [Server Operating System requirements](#server-operating-system-requirements).     
 - Windows PowerShell version: Windows PowerShell version 2.0, or Windows PowerShell version 3.0.
@@ -116,7 +118,7 @@ Windows Server 2016, Windows Server 2016 Nano Server, Windows 10, Windows 8 Ente
 
 - NET Framework 4 or .NET Framework 4.5 is required. 
 
-### Web console requirements
+### Web console 
 
 - Operating System: See [Server Operating System requirements](#server-operating-system-requirements).     
 - Internet Information Services:  IIS 7.5 and later versions, with the IIS Management Console and the following role services installed:
