@@ -17,4 +17,4 @@ ms.assetid: f63bb78a-9f4e-4cc5-bdcb-a180c8eeda81
 
 >Applies To: System Center 2016 - Service Manager
 
-All Service Manager hardware requirements are listed at [Minimum Hardware Recommendations for System Center 2016](../../system-requirements/minimum-hardware-requirements.md). You might also want to review the Service Manager [Hardware Performance](plan-hardware-performance.md) information.
+All Service Manager hardware requirements are listed at [Minimum Hardware Recommendations for System Center 2016](../../system-requirements/minimum-hardware-recommendations.md). You might also want to review the Service Manager [Hardware Performance](plan-hardware-performance.md) information.
