@@ -5,7 +5,7 @@ ms.custom: na
 ms.prod: system-center-2016
 author: bandersmsft
 ms.author: banders
-ms.date: 10/12/2016
+ms.date: 11/28/2016
 ms.reviewer: na
 ms.suite: na
 ms.technology: service-manager
@@ -277,63 +277,3 @@ The new Self Service Portal is an ASP.NET MVC Razor\-based HTML5 Web app. During
 -   Views\\MyRequests\\RequestDetails.cshtml  
 
 -   Views\\Shared\\\_Layout.cshtml  
-
-### You want to show the status of certain work items as "Active" on Portal
-
- Here is sample code to show status enum "ServiceRequestStatusEnum.OnHold" and "IncidentStatusEnum.Active.Pending" as active:  
-
- Following addition needs to be done in Views\\MyRequests\\Index.cshtml  
-
-```  
-
-@{  
-    List<Dictionary<string, object>> sortList = ViewBag.RequestsList;  
-
-    string idClicked = ViewBag.ClickeID;  
-    var reqType = ViewBag.ReqType;  
-    var criteria = ViewBag.Criteria;  
-    string clicked_filter = ViewBag.ClickedFilter;  
-
-    foreach (Dictionary<string, object> listitem in sortList)  
-    {  
-        if (listitem["Status"].ToString().Equals("ServiceRequestStatusEnum.OnHold") || listitem["Status"].ToString().Equals("IncidentStatusEnum.Active.Pending"))  
-        {  
-            listitem["RequestStatus"] = Resources.SelfServicePortalResources.Active;  
-        }  
-    }   
-}  
-
-```  
-
- Following addition needs to be done in Views\\MyRequests\\RequestDetails.cshtml  
-
-```  
-
-@{  
-............  
-
-    if (changeStatusButtonText != null)  
-    {  
-        if (changeStatusButtonText.Equals("ActivateRequest"))  
-        {  
-            changeStatusButtonText = Resources.SelfServicePortalResources.ActivateRequest;  
-            changeStatusCommentPlaceholder = Resources.SelfServicePortalResources.AddCommentToActivate;  
-        }  
-        else if (changeStatusButtonText.Equals("CancelRequest")) //Active  
-        {  
-            changeStatusButtonText = Resources.SelfServicePortalResources.CancelRequest;  
-             changeStatusCommentPlaceholder = Resources.SelfServicePortalResources.AddCommentToCancel;  
-        }  
-    }  
-
-    if (requestEntry["Status"].ToString().Equals("ServiceRequestStatusEnum.OnHold")  
-        || requestEntry["Status"].ToString().Equals("IncidentStatusEnum.Active.Pending"))  
-    {  
-        requestEntry["RequestStatus"] = Resources.SelfServicePortalResources.Active;  
-        changeStatusButtonText = Resources.SelfServicePortalResources.CancelRequest;  
-        changeStatusCommentPlaceholder = Resources.SelfServicePortalResources.AddCommentToCancel;          
-    }   
-
-}  
-
-```

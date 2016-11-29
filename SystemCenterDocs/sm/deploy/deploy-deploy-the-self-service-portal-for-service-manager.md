@@ -5,7 +5,7 @@ ms.custom: na
 ms.prod: system-center-2016
 author: bandersmsft
 ms.author: banders
-ms.date: 10/12/2016
+ms.date: 11/28/2016
 ms.reviewer: na
 ms.suite: na
 ms.technology: service-manager
@@ -41,7 +41,7 @@ The Self Service portal needs a screen resolution above 1024 X 768. It is suppor
 You'll use the following sections to set up the Self Service portal.
 
 ### Set up the Web Server
-Join the Windows server machine to the same domain where the Service Manager SDK Service is running. Ideally, on the primary or secondary server. Enable the IIS role and ASP.NET 4.5 on the server using following steps.
+Join the Windows server machine to the same domain where the Service Manager SDK Service is running. Ideally, on the secondary server. Enable the IIS role and ASP.NET 4.5 on the server using following steps.
 
 1.  Start the Add Roles and Features Wizard and then enable IIS.
 
@@ -167,3 +167,7 @@ For example:
 ![sidebar.cshtml](../media/sm-sspsidebar.png)
 
 You can add or remove shortcuts from the menu, and you can customize them with details for the CSS class, keyboard hotkeys, and others.
+
+### Additional UI customization
+
+For more information about UI customization, see [The Official System Center Service Manager Blog](https://blogs.technet.microsoft.com/servicemanager/2016/03/15/basic-ui-customization-in-new-self-service-portal-html5/).
