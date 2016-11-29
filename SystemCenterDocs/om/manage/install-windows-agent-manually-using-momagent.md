@@ -5,7 +5,7 @@ description:  This article describes how to manually install the Operations Mana
 author: mgoedtel
 ms.author: magoedte
 manager: cfreemanwa
-ms.date: 11/07/2016
+ms.date: 11/28/2016
 ms.custom: na
 ms.prod: system-center-threshold
 ms.technology: operations-manager
@@ -16,7 +16,7 @@ ms.topic: article
 
 >Applies To: System Center 2016 - Operations Manager
 
-You can use MOMAgent.msi to deploy System Center Operations Manager agents from the command line or by using the Setup Wizard. Deploying agents from the command line is also referred to as a manual install.  For a list of the supported operating system versions, see [Microsoft Monitoring Agent Operating System requirements](../plan/system-requirements.md#microsoft-monitoring-agent-operating-system-requirements).
+You can use MOMAgent.msi to deploy System Center Operations Manager agents from the command line or by using the Setup Wizard. Deploying agents from the command line is also referred to as a manual install.  For a list of the supported operating system versions, see [Microsoft Monitoring Agent Operating System requirements](../plan/system-requirements.md#microsoft-monitoring-agent-operating-system).
 
 Before you use either method to manually deploy the agent, ensure the following conditions are met:
 
