@@ -5,7 +5,7 @@ ms.topic:  article
 author:  markgalioto
 ms.prod:  system-center-threshold
 keywords:  
-ms.date: 10/12/2016
+ms.date: 11/29/2016
 title:  What can DPM back up
 ms.technology:  data-protection-manager
 ms.assetid:  2ddbf72a-a82a-497e-afe1-672c8b253ed4
@@ -67,6 +67,7 @@ ms.author: markgal
 |SQL Server|SQL Server 2005 with SP2|Azure virtual machine (when workload is running as Azure virtual machine)|N|Y (from DPM 2012 R2 with Update Rollup 3 onwards)|All deployment scenarios: database|
 |SQL Server|SQL Server 2005 with SP2|Windows virtual machine in VMWare (protects workloads running in Windows virtual machine in VMWare)|N|Y (from DPM 2012 R2 with Update Rollup 5 onwards)|All deployment scenarios: database|
 |Exchange|Exchange 2016|Physical server<br/><br/> On-premises Hyper-V virtual machine|Y|Y|Protect (all deployment scenarios): Standalone Exchange server, database under a database availability group (DAG)<br /><br />Recover (all deployment scenarios): Mailbox, mailbox databases under a DAG|
+|Exchange|Exchange 2016|Windows virtual machine in VMWare (protects workloads running in Windows virtual machine in VMWare)|Y|Y (from DPM 2012 R2 with Update Rollup 5 onwards)|Protect (all deployment scenarios): Standalone Exchange server, database under a database availability group (DAG)<br /><br />Recover (all deployment scenarios): Mailbox, mailbox databases under a DAG|
 |Exchange|Exchange 2013|Physical server<br /><br />On-premises Hyper-V virtual machine|Y|Y|Protect (all deployment scenarios): Standalone Exchange server, database under a database availability group (DAG)<br /><br />Recover (all deployment scenarios): Mailbox, mailbox databases under a DAG|
 |Exchange|Exchange 2013|Windows virtual machine in VMWare (protects workloads running in Windows virtual machine in VMWare)|Y|Y (from DPM 2012 R2 with Update Rollup 5 onwards)|Protect (all deployment scenarios): Standalone Exchange server, database under a database availability group (DAG)<br /><br />Recover (all deployment scenarios): Mailbox, mailbox databases under a DAG|
 |Exchange|Exchange 2010|Physical server<br /><br />On-premises Hyper-V virtual machine|Y|Y|Protect (all deployment scenarios): Standalone Exchange server, database under a database availability group (DAG)<br /><br />Recover  (all deployment scenarios):  Mailbox, mailbox databases under a DAG|
