@@ -18,7 +18,8 @@ ms.technology:  virtual-machine-manager
 You can use System Center 2016 - Virtual Machine Manager (VMM) to manage hosts and virtual machines running Nano server.
 
 - **Bare metal deployment of Nano Server-based hosts and clusters (both compute and storage)**
-You can now configure bare metal machines as Nano Server-based hosts, compute clusters, and storage clusters (both dis-aggregated and hyper-converged) using VMM. The process is similar to bare metal deployment of Full Servers except for the fact that the VHD(x) used for Operating System deployment needs to be a Nano Server-based VHD(x). Details regarding how to create a Nano Server VHD(x) can be found below.For details regarding bare-metal deployment of Nao Server-based hosts & clusters see [Provision a Hyper-V host or cluster from bare metal computers](manage-compute-bare-metal-hyper-v).
+
+You can now configure bare metal machines as Nano Server-based hosts, compute clusters, and storage clusters (both dis-aggregated and hyper-converged) using VMM. This process is very similar to bare metal deployment of Full Servers except for the fact that the VHD(x) used for the operating system deployment needs to be a Nano Server-based VHD(x). Details regarding how to create a Nano Server VHD(x) can be found below in this article. For more details regarding bare-metal deployment of Nano Server-based hosts & clusters see [Provision a Hyper-V host or cluster from bare metal computers](manage-compute-bare-metal-hyper-v).
 
 - **Management of Nano Server-based hosts and clusters (both compute and storage)**
 
