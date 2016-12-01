@@ -18,19 +18,19 @@ ms.technology:  virtual-machine-manager
 You can use System Center 2016 - Virtual Machine Manager (VMM) to manage hosts and virtual machines running Nano server.
 
 - Bare metal deployment of Nano Server-based hosts and clusters (both compute and storage)
-You can now configure bare metal machines as Nano Server-based hosts, compute clusters, and storage clusters (both dis-aggregated and hyper-converged) using VMM. For details regarding bare-metal deployment see [Provision a Hyper-V host or cluster from bare metal computers](manage-compute-bare-metal-hyper-v).
+You can now configure bare metal machines as Nano Server-based hosts, compute clusters, and storage clusters (both dis-aggregated and hyper-converged) using VMM. For details regarding bare-metal deployment see [Provision a Hyper-V host or cluster from bare metal computers](../manage-compute-bare-metal-hyper-v).
 
 - Management of Nano Server-based hosts and clusters (both compute and storage)
-Along with bare metal deployment, you can also add and manage existing Nano Server-based standalone hosts, compute clusters, and storage clusters (both dis-aggregated and hyper-converged) using VMM. For more details, see [Add Windows servers as Hyper-V hosts or clusters in the VMM compute fabric](manage-compute-add-existing-servers).
+Along with bare metal deployment, you can also add and manage existing Nano Server-based standalone hosts, compute clusters, and storage clusters (both dis-aggregated and hyper-converged) using VMM. For more details, see [Add Windows servers as Hyper-V hosts or clusters in the VMM compute fabric](../manage-compute-add-existing-servers).
 
 
 ## Before you start
 
 VMM supports full lifecycle management of Nano Server-based VMs, including shielded VMs. However, note the following:
 
-- Creation of the Nano Server VHD(X) needs to be done outside of VMM, details regarding same can be found below in the 'Prepare a Nano server virtual hard disk' section.
-- You can't create a VM template using a Nano Server VM in the VMM fabric. As a workaround, create a VM template from scratch using a Nano Server virtual hard disk.
-- There are some known issues when joining a Nano Server VM to a domain. If you try to join the VM to a domain by specifying customization details in a VM template, the domain information is ignored by VMM. The VM is deployed, but doesn't join the domain. As a workload, deploy the VM and then join it to a domain. [Learn more](https://technet.microsoft.com/windows-server-docs/compute/nano-server/getting-started-with-nano-server).
+- Creation of the Nano Server VHD(X) needs to be done outside of VMM, details on how to create the VHD(X) can be found below in the 'Prepare a Nano server virtual hard disk' section of this article.
+- You can't create a VM template from a Nano Server VM in VMM. As a workaround, create a VM template from scratch using a Nano Server virtual hard disk.
+- There are some known issues when joining a Nano Server-based virtual machine (VM) to a domain. If you try to join the VM to a domain by specifying customization details in a VM template, the domain information is ignored by VMM. The VM is deployed, but doesn't join the domain. As a workaround, deploy the VM and then join it to a domain. [Learn more](https://technet.microsoft.com/windows-server-docs/compute/nano-server/getting-started-with-nano-server). Note that domain joining of a physical machine during bare metal deployment works fine.
 
 ## Prepare a Nano server virtual hard disk
 
