@@ -209,3 +209,4 @@ The following table summarizes the settings you can manage in **Settings** in th
 
 ## Next steps
 
+* Learn [How to Connect to the Operations and Web Console](how-to-connect-to-the-operations-and-web-console.md) in order to access and interact with the operational data or perform administrative tasks.  
