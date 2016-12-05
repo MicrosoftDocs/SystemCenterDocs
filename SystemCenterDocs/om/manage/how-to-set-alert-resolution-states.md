@@ -4,7 +4,7 @@ description: This article describes how to set custom resolution states for aler
 author: mgoedtel
 ms.author: magoedte
 ms.manager: cfreeman
-ms.date: 11/28/2016
+ms.date: 12/05/2016
 ms.custom: na
 ms.prod: system-center-threshold
 ms.technology: operations-manager
@@ -20,13 +20,13 @@ In System Center 2016- Operations Manager there are seven default resolution sta
 
    | Resolution State | ID | 
    |------------------|----|
-   | **New** | 0 |
-   | **Closed** | 255 |
-   | **Acknowledge** | 249 | 
-   | **Assigned to Engineering** | 248 |
-   | **Awaiting Evidence** | 247 | 
-   | **Resolved** | 254 | 
-   | **Scheduled** | 250 | 
+   | New | 0 |
+   | Closed | 255 |
+   | Acknowledge | 249 | 
+   | Assigned to Engineering | 248 |
+   | Awaiting Evidence | 247 | 
+   | Resolved | 254 | 
+   | Scheduled | 250 | 
   
 When an alert is generated, its resolution state is **New**. Operators can change the resolution state for a new alert to Closed or to a custom resolution state that an administrator has created for the management group.  
   
