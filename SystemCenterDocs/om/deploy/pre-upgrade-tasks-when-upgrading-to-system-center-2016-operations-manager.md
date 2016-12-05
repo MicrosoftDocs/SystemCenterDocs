@@ -5,7 +5,7 @@ description:  This guide provides the pre-upgrade tasks you must perform before 
 author: mgoedtel
 ms.author: magoedte
 manager: cfreemanwa
-ms.date: 11/02/2016
+ms.date: 11/29/2016
 ms.custom: na
 ms.prod: system-center-threshold
 ms.technology: operations-manager
@@ -30,7 +30,7 @@ Perform the following pre-upgrade tasks in the order presented before you begin 
 
 6. Disable any connectors
 
-7. Stop the Microsoft Monitoring Agent, System Center Data Access Service, System Center Confgiuration Managerment and Microsoft Monitoring Agent services on all management servers except the one being upgraded
+7. Stop the Microsoft Monitoring Agent, System Center Data Access Service, System Center Configuration Management and Microsoft Monitoring Agent services on all management servers except the one being upgraded
 
 8. Verify that the Operational Database Has More Than 50 Percent Free Space
 
@@ -153,9 +153,9 @@ If the database does not have 50 percent free, perform the following steps to in
 
 Obtain verified recent backups of the operational database and of the data warehouse database before you upgrade the secondary management server. You should also create backups of databases for optional features, such as the Reporting and the Audit Collection Services database before you upgrade them. For more information, see [Create a Full Database Backup (SQL Server)](https://msdn.microsoft.com/en-us/library/ms187510%28v=sql.130%29.aspx).
 
-## Stop Operations Manager services on Management dervers
+## Stop Operations Manager services on Management servers
 
-Before upgrading the first management server in your management group, it is recommended to stop the Operations Manager services - System Center Data Access, System Center Configuration, and Microsoft Monitoring Agent on all other management servers to avoid any issues while the operational and data warehosue databases are being updated.   
+Before upgrading the first management server in your management group, it is recommended to stop the Operations Manager services - System Center Data Access, System Center Configuration, and Microsoft Monitoring Agent on all other management servers to avoid any issues while the operational and data warehouse databases are being updated.   
 
 ## Increase agent HealthService cache size
 
