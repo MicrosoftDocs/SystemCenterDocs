@@ -27,7 +27,7 @@ Operations Manager, a component of System Center 2016, collects an immense amoun
   
     Reports are a valuable tool for communicating status and trends. This section explains how to use the standard reports that are provided in Operations Manager  
   
--   [Using the Operations Manager Operations Console](using-the-operations-console-in-operaitons-manager)
+-   [Using the Operations Manager Operations Console](using-the-operations-console-in-operaitons-manager.md)
 
     Operations Manager provides an Operations and Web console that you can use to view and work with the monitoring data for your environment. This section explains how to connect to the management group using each and describes the information and tasks available in each workspace in the Operations console. 
 
