@@ -28,8 +28,6 @@ The **Scope**, **Search**, **Find**, and **Time** tools apply a temporary filter
 |Scope|Use to limit the data in a view to only those objects that meet your criteria. This scope remains in place until you clear it.|-   [How to Change Scope](finding-data-and-objects-in-the-operations-manager-consoles.md#how-to-change-scope)<br>-   [Using Groups to Scope Views](how-to-create-and-scope-views-in-operations-manager.md)|  
 |Search|Use to display a list of objects that meet your criteria. You can then act on those objects; however, when you navigate away from this list, the filter is removed, and any view will show all objects (not just those from your search criteria).|-   [How to Use Find and Search](finding-data-and-objects-in-the-operations-manager-consoles.md#how-to-use-find-and-search)<br>-   [Using Advanced Search](using-advanced-search.md)<br>-   [Examples of Using Advanced Search in Operations Manager](using-advanced-search.md#examples-of-using-advanced-search-in-operations-manager)|  
 |Find|Use to display a known single object.|[How to Use Find and Search](finding-data-and-objects-in-the-operations-manager-consoles.md#how-to-use-find-and-search)|  
-|Time|Use to limit the data displayed to only that data (such as alerts) that has been generated within a defined time frame.|[How to Change the Time Criteria](finding-data-and-objects-in-the-operations-manager-consoles.md#how-to-change-the-time-criteria)|  
-  
 
 ## How to change scope  
 
