@@ -131,6 +131,8 @@
 ###### [How to create reports](om/manage/how-to-create-reports-in-operations-manager.md)
 ###### [How to run, save, and export reports](om/manage/how-to-run-save-export-reports.md)
 ###### [How to configure and modify report schedules](om/manage/how-to-configure-modify-report-schedules.md)
+##### [Finding data and objects in the Operations Manager consoles](om/manage/finding-data-and-objects-in-the-operations-manager-consoles.md)
+###### [Using advanced search](om/manage/using-advanced-search.md)
 #### [Managing access in Operations Manager](om/manage/managing-access-in-operations-manager.md)
 ##### [Implementing user roles](om/manage/implementing-user-roles.md)
 ###### [Operations associated with User Profile roles](om/manage/operations-associated-with-user-role-profiles.md)

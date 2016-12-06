@@ -110,3 +110,6 @@ You can filter your view to the following time periods:
   
     Now only the objects that meet the time criteria are shown in the Results pane.  
   
+## Next steps
+
+* See [Using Advanced Search](using-advanced-search.md) to learn how to search for a specific object type that meets your specified criteria.  
