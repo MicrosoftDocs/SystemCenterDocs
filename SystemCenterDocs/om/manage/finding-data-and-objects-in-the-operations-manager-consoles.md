@@ -4,7 +4,7 @@ description: This article describes how to filter monitoring data in the Operati
 author: mgoedtel
 ms.author: magoedte
 ms.manager: cfreeman
-ms.date: 11/30/2016
+ms.date: 12/06/2016
 ms.custom: na
 ms.prod: system-center-threshold
 ms.technology: operations-manager
@@ -66,52 +66,6 @@ Use the **Find** button when the list of objects in the Results pane is too long
 2.  Click the **Search** button on the toolbar.  
   
 3.  In the **Search** window, type the word or phrase that describes the set of objects you want to find. A list of objects that meet your criteria is displayed. The list is sorted by object type.  
-  
-## How to change the time criteria 
- 
-Changing the time criteria of the monitoring view enables you to view only those objects that meet a certain criteria, such as **Last 12 hours**. When you change the time criteria, you limit the display to only that time period. For example, if you want to view the last week of data, you can change the time criteria to **Last 1 week**.  
-  
-You can filter your view to the following time periods:  
-  
--   Last 1 hour  
-  
--   Last 2 hours  
-  
--   Last 4 hours  
-  
--   Last 8 hours  
-  
--   Last 12 hours  
-  
--   Last 1 day  
-  
--   Last 2 days  
-  
--   Last 3 days  
-  
--   Last 4 days  
-  
--   Last 5 days  
-  
--   Last 6 days  
-  
--   Last 1 week  
-  
--   Last 2 weeks  
-  
--   Last 3 weeks  
-  
--   Last 1 month  
-  
--   All  
-  
-1.  In the Operations console, click **Monitoring** to display the objects in your monitoring environment.  
-  
-2.  Click the **Calendar** button on the toolbar. If this button is not available, check to make sure that you have an object, not a folder, selected in the navigation pane.  
-  
-3.  Select the time criteria you are interested in.  
-  
-    Now only the objects that meet the time criteria are shown in the Results pane.  
   
 ## Next steps
 
