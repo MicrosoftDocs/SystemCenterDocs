@@ -4,7 +4,7 @@ description: This article describes how to filter monitoring data in the Operati
 author: mgoedtel
 ms.author: magoedte
 ms.manager: cfreeman
-ms.date: 11/30/2016
+ms.date: 12/06/2016
 ms.custom: na
 ms.prod: system-center-threshold
 ms.technology: operations-manager
@@ -13,6 +13,9 @@ ms.assetid: d47793da-7d78-4794-b471-8dca0673d88e
 ---
 
 # Finding data and objects in the Operations Manager consoles
+
+>Applies To: System Center 2016 - Operations Manager  
+
 System Center 2016 - Operations Manager, with the appropriate management packs imported, will provide you with a comprehensive view of what is going on with your monitored applications, hardware, and processes. This can result in a very large volume of data being displayed in the Operations console. Learning how to quickly locate the data you need is essential to efficient interaction with the console. You can use the **Scope**, **Find**, and **Search** buttons on the Operations console toolbar to filter your view of monitoring data so that you can find the exact monitoring object or group of objects that you need. You can also filter your data based on the number of hours or days you would like to show.  
   
 > [!NOTE]  
@@ -25,8 +28,6 @@ The **Scope**, **Search**, **Find**, and **Time** tools apply a temporary filter
 |Scope|Use to limit the data in a view to only those objects that meet your criteria. This scope remains in place until you clear it.|-   [How to Change Scope](finding-data-and-objects-in-the-operations-manager-consoles.md#how-to-change-scope)<br>-   [Using Groups to Scope Views](how-to-create-and-scope-views-in-operations-manager.md)|  
 |Search|Use to display a list of objects that meet your criteria. You can then act on those objects; however, when you navigate away from this list, the filter is removed, and any view will show all objects (not just those from your search criteria).|-   [How to Use Find and Search](finding-data-and-objects-in-the-operations-manager-consoles.md#how-to-use-find-and-search)<br>-   [Using Advanced Search](using-advanced-search.md)<br>-   [Examples of Using Advanced Search in Operations Manager](using-advanced-search.md#examples-of-using-advanced-search-in-operations-manager)|  
 |Find|Use to display a known single object.|[How to Use Find and Search](finding-data-and-objects-in-the-operations-manager-consoles.md#how-to-use-find-and-search)|  
-|Time|Use to limit the data displayed to only that data (such as alerts) that has been generated within a defined time frame.|[How to Change the Time Criteria](finding-data-and-objects-in-the-operations-manager-consoles.md#how-to-change-the-time-criteria)|  
-  
 
 ## How to change scope  
 
@@ -64,49 +65,6 @@ Use the **Find** button when the list of objects in the Results pane is too long
   
 3.  In the **Search** window, type the word or phrase that describes the set of objects you want to find. A list of objects that meet your criteria is displayed. The list is sorted by object type.  
   
-## How to change the time criteria 
- 
-Changing the time criteria of the monitoring view enables you to view only those objects that meet a certain criteria, such as **Last 12 hours**. When you change the time criteria, you limit the display to only that time period. For example, if you want to view the last week of data, you can change the time criteria to **Last 1 week**.  
-  
-You can filter your view to the following time periods:  
-  
--   Last 1 hour  
-  
--   Last 2 hours  
-  
--   Last 4 hours  
-  
--   Last 8 hours  
-  
--   Last 12 hours  
-  
--   Last 1 day  
-  
--   Last 2 days  
-  
--   Last 3 days  
-  
--   Last 4 days  
-  
--   Last 5 days  
-  
--   Last 6 days  
-  
--   Last 1 week  
-  
--   Last 2 weeks  
-  
--   Last 3 weeks  
-  
--   Last 1 month  
-  
--   All  
-  
-1.  In the Operations console, click **Monitoring** to display the objects in your monitoring environment.  
-  
-2.  Click the **Calendar** button on the toolbar. If this button is not available, check to make sure that you have an object, not a folder, selected in the navigation pane.  
-  
-3.  Select the time criteria you are interested in.  
-  
-    Now only the objects that meet the time criteria are shown in the Results pane.  
-  
+## Next steps
+
+* See [Using Advanced Search](using-advanced-search.md) to learn how to search for a specific object type that meets your specified criteria.  
