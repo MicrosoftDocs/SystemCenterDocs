@@ -17,7 +17,7 @@ ms.technology: virtual-machine-manager
 
 This article helps you to plan all the elements required for a successful System Center 2016 - Virtual Machine Manager (VMM) installation.
 
-## System requirements
+## Deployment requirements
 
 Verify the following:
 
