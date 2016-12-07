@@ -5,7 +5,7 @@ description: This article provides planning information for setting up VMM
 author: rayne-wiselman
 ms.author: raynew
 manager: cfreeman
-ms.date: 11/07/2016
+ms.date: 12/07/2016
 ms.topic: article
 ms.prod: system-center-2016
 ms.technology: virtual-machine-manager
@@ -17,29 +17,31 @@ ms.technology: virtual-machine-manager
 
 This article helps you to plan all the elements required for a successful System Center 2016 - Virtual Machine Manager (VMM) installation.
 
-## Installation and upgrade requirements
+## Deployment requirements
 
-This table summarizes what you'll need for VMM 2016 installation.
+Verify the following:
 
-**Requirement** | **Version** | **Details**
---- | --- | ---
-**VMM server operating system** | Windows Server 2016 | Server Core is supported
-**SQL Server** | [Supported versions](../../system-requirements/sql-server-version-compatibility.md) | Enterprise or standard edition
+- **VMM management server**: Verify [hardware](../../system-requirements/minimum-hardware-recommendations.md) and [operating system](../../system-requirements/operating-systems-compatibility.md) requirements.
+- **SQL Server**: Review supported [SQL Server versions](../../system-requirements/sql-server-version-compatibility.md)
+- **VMM console**: Review [operating system requirements ](../../system-requirements/client-operating-system-compatibility.md) and if you want to run the VMM console on a separate computer.
+- **VMM library**: Review the [hardware requirements](../../system-requirements/minimum-hardware-recommendations.md) for remote VMM library shares.
+- **Virtualization hosts**: Review the [supported operating systems](../../system-requirements/operating-systems-compatibility.md) for Hyper-V and SOFS servers in the VMM fabric. [Review requirements](../manage/manage-compute-add-vmware.md) for VMware servers.
+- **Other fabric servers**: Review the [supported operating systems](../../system-requirements/operating-systems-compatibility.md) for update and PXE (used for bare metal deployment) servers.
+
+
+## Deployment requirements
+
+**Component** | **Details**
+--- | ---
 **Command line utilities for SQL Server** | [SQL Server 2014 feature pack](https://www.microsoft.com/download/details.aspx?id=42295) | If you want to deploy VMM services using SQL Server data-tier apps, install the related command-line utilities on the VMM management server. The version you install should match the SQL Server version. You don't have to install these to install VMM.
-**Client (to run VMM console)** | Windows 8.1 onwards, Windows Server 2012 R2 onwards | To run the console the machine must be in an Active Directory domain.
 **Windows Assessment and Deployment Kit (ADK)** | Windows ADK for Windows 10 |  You can install from setup, or you can [download it](https://msdn.microsoft.com/windows/hardware/dn913721.aspx). You only need the **Deployment Tools** and **Windows Preinstallation Environment** options.
-**VMM library** | Windows Server 2012 onwards | Required operating systems if you're installing the library on a remote server
-**Virtualization hosts** | Windows Server 2012 onwards | Nano is supported in Windows Server 2016
 **Guest operating system** | Windows operating systems [supported by Hyper-V](https://technet.microsoft.com/windows-server-docs/compute/hyper-v/supported-windows-guest-operating-systems-for-hyper-v-on-windows)<br/><br/> Linux (CentOS, RHEL, Debian, Oracle Linux, SUSE, Ubuntu)
-**PowerShell** | PowerShell 4.0<br/><br/> PowerShell 5.0 | Used to set up, configure, and manage VMM.
-**.NET** | 4.5, 4.5.1, 4.5.2, 4.6 | Required for VMM console
-**.NET** | 4.5.1, 4.5.2, 4.6 | Required for VMM management server
+**PowerShell** | [Supported versions](../../system-requirements/powershell-version-support.md)
+**.NET** | [Supported versions](../../system-requirements/dot-net-version-support.md)
 **Host agent** | VMM 2016 | Needed for hosts managed in the VMM compute Fabric
 **Monitoring** | System Center Operations Manager 2016 | You also need SQL Server Analysis Services 2014 or later
 **VMware** | vCenter 5.1, 5.5, 5.8, 6.0<br/><br/> ESX 5.5, ESX 6.0 | vCenter and ESX servers running these versions can be managed in the VMM Fabric
-**Update servers** | WSUS 2012 R2 or later | Used to manage updates in the VMM Fabric
 **Bare metal provisioning** | System Management Architecture for Server Hardware (SMASH) v1 or higher over WS-MAN<br/><br/> Intelligent Platform Interface 1.5 or higher<br/><br/> Data Center Manager Interface (DCMI) 1.0 or higher | Required to discover physical bare metal servers and set up an operating system and Hyper-V.
-**PXE/WDS Server** | Windows Server 2008 R2 or later | Used for bare metal provisioning
 
 ### SPN
 
