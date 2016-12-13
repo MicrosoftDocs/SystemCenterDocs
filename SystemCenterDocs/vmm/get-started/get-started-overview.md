@@ -5,7 +5,7 @@ description: This article provides an overview of System Center VMM and a summar
 author:  rayne-wiselman
 ms.author: raynew
 manager:  cfreemanwa
-ms.date:  10/16/2016
+ms.date:  12/12/2016
 ms.topic:  article
 ms.prod:  system-center-threshold
 ms.technology:  virtual-machine-manager
