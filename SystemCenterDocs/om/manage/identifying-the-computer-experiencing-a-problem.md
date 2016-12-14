@@ -37,5 +37,5 @@ In this illustration, you see that the logical disk fragmentation levels for C: 
   
 ## Next steps
   
-- To help you investigate and resolve the issues that caused the alerts, review [Viewing Active Alerts and Details](viewing-active-alrts-and-alert-details.md)
+- To help you investigate and resolve the issues that caused the alerts, review [Viewing Active Alerts and Details](viewing-active-alerts-and-alert-details.md)
 
