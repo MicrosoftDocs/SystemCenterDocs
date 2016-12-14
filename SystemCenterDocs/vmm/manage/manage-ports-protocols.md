@@ -38,6 +38,7 @@ Storage management service | NA: WMI |
 VMM library server on the VMM management server | 443: BITS | In VMM setup
 Baseboard Management Controller (BMC) | 443: HTTP (SMASH over WS-Management) | On BMC device
 Baseboard Management Controller (BMC) | 623: IPMI | On BMC device
+ICMP (Ping) | NA | Allow through firewall
 
 ## VMM management server (target)
 
