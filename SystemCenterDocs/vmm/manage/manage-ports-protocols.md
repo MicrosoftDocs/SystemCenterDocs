@@ -5,7 +5,7 @@ description: This article provides information about ports and protocols used in
 author:  rayne-wiselman
 ms.author: raynew
 manager:  cfreeman
-ms.date:  10/27/2016
+ms.date:  12/14/2016
 ms.topic:  article
 ms.prod:  system-center-threshold
 ms.technology:  virtual-machine-manager
