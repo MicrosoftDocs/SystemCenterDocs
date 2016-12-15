@@ -30,5 +30,5 @@ ms.technology:  virtual-machine-manager
 
  ## Next steps
 
- - [Learn more](../manage/manage-storage-ad-device.md) about configuring storage in the VMM fabric.
+ - [Learn more](../manage/manage-storage-add-device.md) about configuring storage in the VMM fabric.
  - Learn more about array SMI-S conformance in the [SMI-S Conformance Testing Program](http://www.snia.org/ctp/)
