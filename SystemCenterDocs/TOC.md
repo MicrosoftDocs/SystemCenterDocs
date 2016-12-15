@@ -549,6 +549,7 @@
 #### [Plan the VMM fabric](vmm/plan/plan-fabric.md)
 ##### [Plan the VMM compute fabric](vmm/plan/plan-compute.md)
 ##### [Plan the VMM networking fabric](vmm/plan/plan-network.md)
+##### [Supported storage arrays](vmm/plan/plan-supported-storage-arrays.md)
 ### [Scenarios](vmm/scenario/scenario-overview.md)
 #### [Scenario: Deploy a VMM cloud](vmm/scenario/cloud-overview.md)
 ##### [Create a VMM cloud](vmm/scenario/cloud-create.md)

@@ -5,7 +5,7 @@ description: This article provides information about ports and protocols used in
 author:  rayne-wiselman
 ms.author: raynew
 manager:  cfreeman
-ms.date:  12/14/2016
+ms.date:  12/15/2016
 ms.topic:  article
 ms.prod:  system-center-threshold
 ms.technology:  virtual-machine-manager
@@ -38,7 +38,7 @@ Storage management service | NA: WMI |
 VMM library server on the VMM management server | 443: BITS | VMM setup
 Baseboard Management Controller (BMC) | 443: HTTP (SMASH over WS-Management) | BMC device
 Baseboard Management Controller (BMC) | 623: IPMI | BMC device
-ICMP (Ping) | NA | Through firewall
+Hyper-V host | NA | ICMP (Ping) | Windows Firewall and network devices
 
 ## VMM management server (target)
 
