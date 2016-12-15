@@ -131,6 +131,8 @@
 ###### [How to create reports](om/manage/how-to-create-reports-in-operations-manager.md)
 ###### [How to run, save, and export reports](om/manage/how-to-run-save-export-reports.md)
 ###### [How to configure and modify report schedules](om/manage/how-to-configure-modify-report-schedules.md)
+##### [Not monitored and gray agents](om/manage/not-monitored-and-gray-agents.md)
+##### [How to view all rules and monitors running on agent-managed computer](om/manage/how-to-view-all-rules-and-monitors-running-on-an-agent-managed-computer.md)
 ##### [Finding data and objects in the consoles](om/manage/finding-data-and-objects-in-the-operations-manager-consoles.md)
 ###### [Using advanced search](om/manage/using-advanced-search.md)
 ##### [Using views and dashboards](om/manage/using-views-and-dashboards-in-operations-manager.md)
