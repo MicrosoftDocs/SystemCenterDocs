@@ -35,7 +35,7 @@ Before you can install the Integration Pack for Active Directory, you must first
 Downloading the Integration Pack
 --------------------------------
 
-To download this integration pack, see [Active Directory Integration Pack for System Center 2016 - Orchestrator](http://go.microsoft.com/fwlink/p/?LinkID=233699).
+To download this integration pack, see [Active Directory Integration Pack for System Center 2016 - Orchestrator](https://www.microsoft.com/en-us/download/details.aspx?id=54098).
 
 Registering and Deploying the Integration Pack
 ----------------------------------------------
@@ -68,4 +68,3 @@ An Active Directory connection is a reusable link between Orchestrator and an Ac
 9.  Add additional connections if applicable.
 
 10. Click **Finish**.
-
