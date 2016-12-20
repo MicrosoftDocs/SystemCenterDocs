@@ -49,7 +49,7 @@ This tab contains properties that are specific to the activity. All activities i
 
 1.  Click the ellipsis **(...)** button next to the **Name** field.
 
-2.  Select the applicable connection name. Connections displayed in the list have been previously configured as described in [FTP Integration Pack for Orchestrator in System Center 2016](ftp-integration-pack-for-orchestrator-in-system-center-2016.md).
+2.  Select the applicable connection name.
 
 ### Filter Behavior
 
@@ -115,12 +115,12 @@ This integration pack adds the **FTP** category to the **Activity** pane in the 
 
 [Download File](download-file.md)
 
-[List Folders/Files](list-folders/files.md)
+[List Folders/Files](list-folders-or-files.md)
 
-[Rename File/Folder](rename-file/folder.md)
+[Rename File/Folder](rename-file-or-folder.md)
 
 [Resume File Download](resume-file-download.md)
 
-[Synchronize Folder/File](synchronize-folder/file.md)
+[Synchronize Folder/File](synchronize-folder-or-file.md)
 
 [Upload File](upload-file.md)

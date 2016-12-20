@@ -119,36 +119,36 @@ Activities
 
 This integration pack adds the **Exchange Admin** category to the **Activity** pane in the Runbook Designer. This category contains the following activities:
 
-[Create Mailbox](exadmin-create-mailbox.md)
+[Create Mailbox](create-mailbox.md)
 
-[Create Move Request](exadmin-create-move-request.md)
+[Create Move Request](create-move-request.md)
 
-[Create Remote Mailbox (Hybrid)](exadmin-create-remote-mailbox-hybrid.md)
+[Create Remote Mailbox (Hybrid)](create-remote-mailbox-hybrid.md)
 
-[Disable Mailbox](exadmin-disable-mailbox.md)
+[Disable Mailbox](disable-mailbox.md)
 
-[Disable Remote Mailbox (Hybrid)](exadmin-disable-remote-mailbox-hybrid.md)
+[Disable Remote Mailbox (Hybrid)](disable-remote-mailbox-hybrid.md)
 
-[Enable Mailbox](exadmin-enable-mailbox.md)
+[Enable Mailbox](enable-mailbox.md)
 
-[Enable Remote Mailbox (Hybrid)](exadmin-enable-remote-mailbox-hybrid.md)
+[Enable Remote Mailbox (Hybrid)](enable-remote-mailbox-hybrid.md)
 
-[Get Mailbox](exadmin-get-mailbox.md)
+[Get Mailbox](get-mailbox.md)
 
-[Get Move Request](exadmin-get-move-request.md)
+[Get Move Request](get-move-request.md)
 
-[Get Move Request Statistics](exadmin-get-move-request-statistics.md)
+[Get Move Request Statistics](get-move-request-statistics.md)
 
-[Get Remote Mailbox (Hybrid)](exadmin-get-remote-mailbox-hybrid.md)
+[Get Remote Mailbox (Hybrid)](get-remote-mailbox-hybrid.md)
 
-[Remove Mailbox](exadmin-remove-mailbox.md)
+[Remove Mailbox](remove-mailbox.md)
 
-[Remove Remote Mailbox (Hybrid)](exadmin-remove-remote-mailbox-hybrid.md)
+[Remove Remote Mailbox (Hybrid)](remove-remote-mailbox-hybrid.md)
 
-[Run Exchange PowerShell Command](exadmin-run-exchange-powershell-command.md)
+[Run Exchange PowerShell Command](run-exchange-powershell-command.md)
 
-[Update Mailbox](exadmin-update-mailbox.md)
+[Update Mailbox](update-mailbox.md)
 
-[Update Move Request](exadmin-update-move-request.md)
+[Update Move Request](update-move-request.md)
 
-[Update Remote Mailbox (Hybrid)](exadmin-update-remote-mailbox-hybrid.md)
+[Update Remote Mailbox (Hybrid)](update-remote-mailbox-hybrid.md)
