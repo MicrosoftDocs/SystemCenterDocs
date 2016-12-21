@@ -36,7 +36,7 @@ After you download the integration pack file, you must register it with the Orch
 
 Deploying the Integration Pack
 ----------------------------------------------
-See [Deploying IBM Tivoli Netcool Integration Pack](deploying-ibm-tivoli-integration-pack.md)
+See [Deploying IBM Tivoli Netcool Integration Pack](deploying-the-ibm-tivoli-integration-pack.md)
 
 Known Issues
 ----------------
