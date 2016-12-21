@@ -135,7 +135,7 @@ The Integration Pack for HP Operations Manager integration contains the followin
 
 [Launch Tool](launch-tool.md)
 
-[Own/Disown Message](own/disown-message.md)
+[Own/Disown Message](own-or-disown-message.md)
 
 [Set Custom Attribute](set-custom-attribute.md)
 

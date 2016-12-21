@@ -136,7 +136,7 @@ This integration pack adds the HP Operations Manager category to the **Activitie
 
 [Monitor Message](monitor-message.md)
 
-[Own/Disown Message](own/disown-message.md)
+[Own/Disown Message](own-or-disown-message.md)
 
 [Set Custom Attribute](set-custom-attribute.md)
 
