@@ -51,7 +51,7 @@ This tab contains properties that are specific to the activity. All activities i
 
 1.  Click the ellipsis **(...)** button next to the **Name** box.
 
-2.  Select the applicable connection name. Connections that are displayed in the list have been previously configured as described in [System Center Integration Pack for Microsoft SharePoint](system-center-integration-pack-for-microsoft-sharepoint.md).
+2.  Select the applicable connection name. Connections that are displayed in the list have been previously configured as described in [System Center Integration Pack for Microsoft SharePoint](integration-pack-for-microsoft-sharepoint.md).
 
 ### Filter Behavior
 
@@ -108,7 +108,7 @@ An activity can subscribe only to data from the activities that are linked befor
 
 3.  Click the Published Data element that you want to use, and then click **OK**.
 
-For a list of the data elements that are published by each activity, see the **Published Data** table in the topic that describes that activity. For information about the common Published Data items, see [Common Published Data](https://technet.microsoft.com/en-us/library/e339c027-4c69-43e5-a59b-ac7ea0a676c8)<https://technet.microsoft.com/en-us/library/e339c027-4c69-43e5-a59b-ac7ea0a676c8#CommonPublishedData>.
+For a list of the data elements that are published by each activity, see the **Published Data** table in the topic that describes that activity. For information about the common Published Data items, see [Common Published Data](https://technet.microsoft.com/en-us/library/e339c027-4c69-43e5-a59b-ac7ea0a676c8).
 
 Activities
 ----------

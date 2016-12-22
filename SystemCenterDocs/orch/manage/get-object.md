@@ -22,7 +22,7 @@ Applies To: System Center 2016 - Orchestrator
 
 The Get Object activity is used to search for a record based on a set of filter criteria. The Get Object activity supports incidents, changes, and activities.
 
-The following published data element is specific to Get Object. Additional published data is generated based on the class that you select when you define the activity. For a list of the data elements published by each class, see [Service Manager Published Data](scsm-service-manager-published-data.md).
+The following published data element is specific to Get Object. Additional published data is generated based on the class that you select when you define the activity. For a list of the data elements published by each class, see [Service Manager Published Data](service-manager-published-data.md).
 
 Get Object Published Data
 -------------------------

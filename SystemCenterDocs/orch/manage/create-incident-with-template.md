@@ -28,7 +28,7 @@ The Create Incident with Template activities create an incident record by presen
 
 The configuration user interface for Create Incident with Template does not provide a way to configure child work items. It can only access the parent incident. Therefore, if any of the child work items contain mandatory properties, the creation of the incident will be rejected by Service Manager.
 
-The following published data elements are specific to Create Incident with Template activity. Additional published data is generated based on the class that you select when you define the activity. For a list of the data elements published by each class, see [Service Manager Published Data](scsm-service-manager-published-data.md).
+The following published data elements are specific to Create Incident with Template activity. Additional published data is generated based on the class that you select when you define the activity. For a list of the data elements published by each class, see [Service Manager Published Data](service-manager-published-data.md).
 
 Create Incident with Template Published Data
 --------------------------------------------

@@ -136,34 +136,34 @@ Activities
 
 The Service Manager Integration Pack adds the **SC 2016 Service Manager** category to the **Activities** pane in the Runbook Designer. This category contains the following activities:
 
-[Create Change with Template](scsm-create-change-with-template.md)
+[Create Change with Template](create-change-with-template.md)
 
-[Create Incident with Template](scsm-create-incident-with-template.md)
+[Create Incident with Template](create-incident-with-template.md)
 
-[Create Object](scsm-create-object.md)
+[Create Object](create-object.md)
 
-[Create Related Object](scsm-create-related-object.md)
+[Create Related Object](create-related-object.md)
 
-[Create Relationship](scsm-create-relationship.md)
+[Create Relationship](create-relationship.md)
 
-[Delete Relationship](scsm-delete-relationship.md)
+[Delete Relationship](delete-relationship.md)
 
-[Get Activity](scsm-get-activity.md)
+[Get Activity](get-activity.md)
 
-[Get Object](scsm-get-object.md)
+[Get Object](get-object.md)
 
-[Get Relationship](scsm-get-relationship.md)
+[Get Relationship](get-relationship.md)
 
-[Monitor Object](scsm-monitor-object.md)
+[Monitor Object](monitor-object.md)
 
-[Update Activity](scsm-update-activity.md)
+[Update Activity](update-activity.md)
 
-[Update Object](scsm-update-object.md)
+[Update Object](update-object.md)
 
-[Upload Attachment](scsm-upload-attachment.md)
+[Upload Attachment](upload-attachment.md)
 
 The activities in the Service Manager Integration Pack use the classes, fields, and filters and produce the published data listed in the following topics:
 
 [Classes, Fields, and Filters](scsm-classes-fields-and-filters.md)
 
-[Service Manager Published Data](scsm-service-manager-published-data.md)
+[Service Manager Published Data](service-manager-published-data.md)

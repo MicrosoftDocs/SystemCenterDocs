@@ -28,7 +28,7 @@ The Create Change with Template activities create a change record by presenting 
 
 The configuration user interface for Create Change with Template does not provide a way to configure child work items. It can only access the parent change. Therefore, if any of the child work items contain mandatory properties, the creation of the change will be rejected by Service Manager.
 
-The following published data elements are specific to Create Change with Template. Additional published data is generated based on the class that you select when you define the activity. For a list of the data elements published by each class, see [Service Manager Published Data](scsm-service-manager-published-data.md).
+The following published data elements are specific to Create Change with Template. Additional published data is generated based on the class that you select when you define the activity. For a list of the data elements published by each class, see [Service Manager Published Data](service-manager-published-data.md).
 
 Create Change with Template Published Data
 ------------------------------------------

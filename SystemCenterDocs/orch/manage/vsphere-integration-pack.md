@@ -37,7 +37,7 @@ After you download the integration pack file, you must register it with the Orch
 Deploying the Integration Pack
 -----------------------------------
 
-See [Deploying the VMWare VSphere Integration Pack](deploying-vmware-vsphere-integration-pack.md)
+See [Deploying the VMWare VSphere Integration Pack](deploying-the-vmware-vsphere-integration-pack.md)
 
 
 Known Issues

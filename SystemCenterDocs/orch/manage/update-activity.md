@@ -22,7 +22,7 @@ Applies To: System Center 2016 - Orchestrator
 
 The Update Activity activity is used to make changes to activity records for the selected activity class.
 
-The following published data elements are specific to Update Activity. Additional published data is generated based on the class that you selected when you defined the object. For a list of the data elements published by each class, see [Service Manager Published Data](scsm-service-manager-published-data.md).
+The following published data elements are specific to Update Activity. Additional published data is generated based on the class that you selected when you defined the object. For a list of the data elements published by each class, see [Service Manager Published Data](service-manager-published-data.md).
 
 Update Activity Published Data
 ------------------------------
