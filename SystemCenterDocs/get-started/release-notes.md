@@ -7,7 +7,7 @@ ms.author: cfreeman
 ms.prod:  system-center-threshold
 ms.technology: system-center-2016
 keywords:
-ms.date: 11/28/2016
+ms.date: 12/21/2016
 title:  Release Notes for System Center 2016
 ms.assetid:  5fad5608-4cb7-48b0-aa31-35ca5cc2d560
 ---
@@ -452,6 +452,18 @@ Note that rolling upgrade from Windows Server 2012 R2 to Windows Server 2016 Ful
 **Description:** When you add a cluster as a resource in the VMM Administrative console you may receive an error stating "There were no computers discovered based on your inputs".
 
 **Workaround:** Select OK, close the error dialog box, and retry adding the cluster.
+
+#### Promoting a VM on local storage might fail
+**Description:** You create a VM on local storage, start it, and create checkpoints. If you then try to migrate and promote to VM to highly available in a cluster, migration might fail.
+
+**Workaround:** Before you run the migration, delete the running checkpoint, and stop the VM.
+
+#### Migrating a VM from CSV storage to LUN storage might fail
+**Description:** You create a highly available VM using CSV storage. Then you add a LUN as available storage on the cluster, and migrate the VM from CSV to the LUN. If the VM and LUN storage are on the same node, the migration will succeed. If they're not, migration will fail.
+
+**Workaround:** If the VM isn't on the cluster node on which the LUN storage is registered, move it there. Then migrate the VM to the LUN storage.
+
+
 
 #### Shielding a VM may result in an error
 
