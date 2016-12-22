@@ -164,6 +164,6 @@ The Service Manager Integration Pack adds the **SC 2016 Service Manager** catego
 
 The activities in the Service Manager Integration Pack use the classes, fields, and filters and produce the published data listed in the following topics:
 
-[Classes, Fields, and Filters](scsm-classes-fields-and-filters.md)
+[Classes, Fields, and Filters](classes-fields-and-filters.md)
 
 [Service Manager Published Data](service-manager-published-data.md)
