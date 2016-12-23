@@ -37,6 +37,74 @@ If you are going to upgrade from a previous version of DPM to DPM 2016, make sur
 
 Some DPM 2016 features, such as Modern Backup Storage, require the Windows Server 2016 RTM build. It is possible to upgrade DPM 2016 from DPM 2012 R2, running on Windows Server 2012 R2. However, customers receiving DPM 2016 will want the latest features, so Microsoft recommends installing DPM 2016 on a new installation of Windows Server 2016 RTM. For instructions on installing DPM, see the article, [Installing DPM 2016](./get-dpm-installed.md).
 
+## Migrating the DPM database during Upgrade
+
+You may want to move the DPM Database as part of an upgrade.  For example, you are merging Instances of SQL Server. You are moving to a more powerful remote SQL server computer. You want to add fault tolerance by using a SQL Server cluster; or you want to move from remote SQL server to a local SQL server or vice versa. DPM 2016 setup enables you to migrate the DPMDB to different SQL Server during an upgrade.
+
+### Possible database migration scenarios
+
+1. Upgrading DPM 2012 R2 by using a local instance and migrating to a remote SQL server instance during setup.
+2. Upgrading DPM 2012 R2 by using a remote instance and migrating to a local SQL server instance during setup.
+3. Upgrading DPM 2012 R2 by using a local instance and migrating to a remote SQL server Cluster instance during setup.
+4. Upgrading DPM 2012 R2 by using a local instance and migrating to a different local SQL server instance during setup.
+5. Upgrading DPM 2012 R2 by using a remote instance and migrating to a different remote SQL server instance during setup.
+6. Upgrading DPM 2012 R2 by using a remote instance and migrating to a remote SQL server Cluster instance during setup.
+
+### Preparing for a database Migration
+
+The new SQL Server That You want to use to migrate the DPM database to must have the same SQL Server requirements, setup configuration, firewall rules and DPM Support files (sqlprep) installed before performing the DPM Upgrade.
+
+As soon as you have the new SQL Server instance installed and prepped for being used by DPM, you must make a backup of the current DPM 2012 R2 UR10 KB3143871 (4.2.1473.0) or a later version database and restore it on the new SQL Server.  
+
+### Pre-Upgrade Steps: Backup and Restore DPM 2012 R2 DPMDB to new SQL instance
+
+In this example, we will be preparing a remote SQL Server cluster to use for the migration.
+
+1. On the System Center Data Protection Manager 2012 R2 server or on the remote SQL Server hosting the DPM database, start **Microsoft SQL Management Studio** and connect to the SQL instance hosting the current DPM 2012 R2 DPMDB.
+2. Right-click the DPM database and under **Tasks**, select the **Back Up…** option.
+ 
+      ![Select Backup](../media/dpm-2016-select-backup.png)
+
+3. Add a backup destination and file name, then **OK** to start the backup.
+
+      ![Confirm](../media/dpm-2016-confirm.png)
+
+4. After the backup is complete, copy the output file to the remote SQL Server.  If this is a SQL Cluster, copy it to the active node hosting the SQL instance you want the DPM upgrade to use.  You will need to copy it to the Shared Cluster disk before you can restore it.
+5. On the Remote SQL Server, start **Microsoft SQL Management Studio** and connect to the SQL instance you want DPM upgrade to use.  If this is a SQL Cluster, do this on the Active node that you copied the DPM backup file to.  The backup file should now be located on the shared cluster disk.
+6. Right-click the Databases icon, then select **Restore Database…** option. This starts the restore wizard.
+
+      ![Select restore database](../media/dpm-2016-select-restore-database.png)        
+
+7. Select Device for source, then locate the database backup file that was copied in the previous step and select it.  Verify the restore options and restore location, then OK to start the restore.   Fix any issue that arise until the restore is successful.
+
+      ![Restore database](../media/dpm-2016-restore-database.png)
+
+8. After the restore is complete, the restored database will be seen under databases and be the original name.  This Database will now be used during the upgrade.  You can exit SQL management studio and start the upgrade process on the original DPM Server.
+
+      ![Select DPMDB](../media/dpm-2016-select-DPMDB.png)
+
+9. If the new SQL Server is a remote SQL server, install the SQL management tools on the DPM server.  The SQL management tools must be the same version matching the SQL server hosting the DPMDB.
+
+### Starting upgrade to migrate DPMDB to different SQL Server
+
+> [!NOTE]
+> If sharing a SQL instance, run the DPM installs (or upgrades) sequentially.  Parallel installations may cause errors.
+
+1. After the pre-migration preparation steps are completed, start the DPM 2016 Installation process.  DPM Setup show the current SQL Server instance information pre-populated.  This is where you can select a different SQL Server instance, or change to a Clustered SQL instance used for the migration.
+
+      ![DPM setup](../media/dpm-2016-data-protection-manager-setup.png)
+
+2. Change the SQL Settings to use the SQL Server instance you restored the DPM Database to.  If it's a SQL cluster, you must also specify a separate SQL Server instance used for SQL reporting.  It's presumed that firewall rules and SQLPrep was already ran. You will need to enter correct credentials and then click the Check and Install button.
+
+      ![Install database](../media/dpm-2016-install-database.png)
+
+3. Prerequisite check should succeed, press NEXT to continue with the upgrade.
+
+      ![Prerequisites check](../media/dpm-2016-prerequisites-check.png)
+
+4. Continue with the wizard.
+5. After setup is complete, the corresponding database name on the instance specified will now be DPMPB_DPMServerName. Because this may be shared with other DPM servers, the naming convention for the DPM database will now be: DPM2016$DPMDB_DPMServerName
+
 ## Adding Storage for Modern Backup Storage
 
 To store backups efficiently, DPM 2016 uses Volumes. Disks can also be used to continue storing backups like DPM 2012 R2.
