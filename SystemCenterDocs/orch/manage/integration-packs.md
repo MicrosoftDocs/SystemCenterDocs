@@ -20,8 +20,8 @@ You can download integration packs from the Microsoft Download Center. Each inte
 
 ## Integration Packs
 
-- [Active Directory](active-directory.md)
-- [Exchange Administrator](exhange-admin-integration-pack.md)
+- [Active Directory](active-directory-integration-pack.md)
+- [Exchange Administrator](exchange-admin-integration-pack.md)
 - [Hewlett Packard Integrated Lights-Out (HP iLO)](hp-ilo-and-oa-integration-pack.md)
 - [Hewlett Packard Operations Manager](hp-operations-manager-integration-pack.md)
 - [Hewlett Packard Service Manager](hp-service-manager-integration-pack.md)
@@ -32,4 +32,4 @@ You can download integration packs from the Microsoft Download Center. Each inte
 - [Service Manager](integration-pack-for-service-manager.md)
 - [Virtual Machine Manager](integration-pack-for-virtual-machine-manager.md)
 - [SharePoint](integration-pack-for-microsoft-sharepoint.md)
-- [VMWare vSphere](vshere-integration-pack.md)
+- [VMWare vSphere](vsphere-integration-pack.md)
