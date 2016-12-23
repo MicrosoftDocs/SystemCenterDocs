@@ -1,4 +1,5 @@
-ms.assetid:71f66e17-e6d4-43e8-8548-d8bc07c05865
+---
+ms.assetid: 71f66e17-e6d4-43e8-8548-d8bc07c05865
 title: Integration Packs
 description: Provides a list of all System Center 2016 - Orchestrator integration packs.
 author: CFreemanwa
