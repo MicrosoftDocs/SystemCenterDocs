@@ -34,6 +34,11 @@ This article describes prerequisites for upgrading to System Center 2016 - Virtu
 	- Initiate a failover to the computer that is running SQL Server, and on which the VMM database is installed.
 - Make sure your VMM server running System Center 2012 R2 is running update rollup 9 or later.
 - If you're running Operations Manager with VMM, disconnect the connection between VMM and Operations Manager before you begin the upgrade. Enable the connection again after both VMM and Operations Manager are running on System Center 2016. Please note that you shouldn't install any management Pack on VMM 2016 RTM unless you have Update Roll up one or later installed. In case you have installed Management Pack(s) on VMM 2016 RTM, please delete these Management Packs before applying any Update Roll up.
+- If you are Upgrading to VMM 2016 from either VMM 2012 R2 UR10 or UR11 and you are using Citrix NetScalar Load Balancer in your deployment, run the below SQL script before you start the upgrade. Not running this script may fail Upgrade attempt. If you are planning to upgrade VMM 2012 R2 UR12 or later version to VMM 2016 then no such action is required.
+
+ALTER TABLE [dbo].[tbl_NetMan_HardwareModelSettings]
+	ALTER COLUMN Version NVARCHAR(255) NULL;
+GO
 
 
 
@@ -143,6 +148,13 @@ Before you upgrade, collect information about the VMM database:
 3. Upgrade passive SQL Server nodes to the new version. After the upgrade, optionally install SQL Server Management Studio if you want to manage SQL Server from this node.
 4. Fail over the highly available SQL server role, from the currently active node to the upgraded node. After failover, you can use SQL Server Management Studio to validate the running database version.
 5. Repeat the upgrade for the other nodes in the HA SQL cluster. As an additional validation, you can fail over the SQL Server database roles, to ensure that everything works as expected.
+
+### Migrate SQL Cluster as part of VMM Upgrade
+1.	Have a back-up of the HAVMM DB from the active node of the existing SQL cluster.
+2.	Keep a note of the VMM role name (Example: scvmmrole1) to use when reinstalling the VMM server role. Uninstall VMM server from existing VMM cluster nodes with retain DB option. When uninstalling VMM server from last node, you may get a message about unsuccessful SPN registration. This is a known issue with no functional impact.
+3.	Restore the backed-up DB into another SQL cluster running supported SQL version. Add the user on which VMM service is running as User to this new DB with membership to db_owner.
+4.	While upgrading VMM Server as part of SQL Cluster migration, give the Parameters corresponding to new SQL Cluster.
+
 
 
 
