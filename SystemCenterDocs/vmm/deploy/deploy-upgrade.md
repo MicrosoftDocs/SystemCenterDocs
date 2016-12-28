@@ -36,9 +36,9 @@ This article describes prerequisites for upgrading to System Center 2016 - Virtu
 - If you're running Operations Manager with VMM, disconnect the connection between VMM and Operations Manager before you begin the upgrade. Enable the connection again after both VMM and Operations Manager are running on System Center 2016. Please note that you shouldn't install any management Pack on VMM 2016 RTM unless you have Update Roll up one or later installed. In case you have installed Management Pack(s) on VMM 2016 RTM, please delete these Management Packs before applying any Update Roll up.
 - If you are Upgrading to VMM 2016 from either VMM 2012 R2 UR10 or UR11 and you are using Citrix NetScalar Load Balancer in your deployment, run the below SQL script before you start the upgrade. Not running this script may fail Upgrade attempt. If you are planning to upgrade VMM 2012 R2 UR12 or later version to VMM 2016 then no such action is required.
 
-ALTER TABLE [dbo].[tbl_NetMan_HardwareModelSettings]
-	ALTER COLUMN Version NVARCHAR(255) NULL;
-GO
+	ALTER TABLE [dbo].[tbl_NetMan_HardwareModelSettings]
+		ALTER COLUMN Version NVARCHAR(255) NULL;
+		GO
 
 
 
