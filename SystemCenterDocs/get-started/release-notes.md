@@ -573,6 +573,11 @@ Resolve the issue and then try the operation again.*
 
 **Workaround:** You need to delete the "Microsoft System Center 2012" folder under "Program Menu" folder so that, "Microsoft System Center 2016" entry becomes visible.
 
+#### SSAS integration broken with Virtual Machine Manager and Operations Manager 2016 Update Roll up 1
+**Description:** If you are using VMM and OM 2016 Update Roll up 1, you will not be able to configure SSAS for SQL Server.
+
+**Workaround:** Please download latest VMM Management Packs from download center. The updated MPs will also be available with Update Roll up 2.
+
 #### Dynamic IP not supported for NC managed Logical Networks
 **Description:** Although possible through VMM, Dynamic IP configuration for VMs connected to Network Controller managed Logical Networks is not supported by network Controller.
 
