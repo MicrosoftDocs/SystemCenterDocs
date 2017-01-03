@@ -24,7 +24,7 @@ In System Center 2016 - Operations Manager, you can customize the format that wi
 |Channel type|Default notification format|  
 |------------|---------------------------|  
 |Email|**Subject**: Alert: *alert name* Resolution state: *new or closed*<br><br>Alert:<br><br>Source:<br><br>Path:<br><br>Last modified by:<br><br>Last modified time:<br><br>Alert description:<br><br>Alert view link:<br><br>Notification subscription ID generating this message:|  
-|Instant message (IM)|Alert: *alert name* Path: *path to managed entity* Resolution state: *new or closed* Last modified by:|  
+|Instant message (IM)|Alert: *alert name* Path: *path to managed entity* Resolution state: *new or closed* Last modified by: *last modified by*|  
 |SMS (text message)|Alert: *alert name* Resolution state: *new or closed*|  
   
 You can change the format on the **Format** page of the channel type wizard when you create the channel or after the channel is created. The procedure is the same for all three channel types.  
@@ -51,6 +51,7 @@ You can change the format on the **Format** page of the channel type wizard when
 |$Data/Context/DataItem/DataItemCreateTimeLocal$ | LocalTime Date/Time of Dataitem created| 
 |$Data/Context/DataItem/LastModified$ | UTC Date/Time DataItem was modified| 
 |$Data/Context/DataItem/LastModifiedLocal$ | Local Date/Time DataItem was modified|
+|$Data/Context/DataItem/LastModifiedBy$ | Name of person who modified alert|
 |$Data/Context/DataItem/ManagedEntity$ | ManagedEntity GUID| 
 |$Data/Context/DataItem/ManagedEntityDisplayName$ | ManagedEntity display name| 
 |$Data/Context/DataItem/ManagedEntityFullName$ | ManagedEntity full name| 
@@ -58,7 +59,7 @@ You can change the format on the **Format** page of the channel type wizard when
 |$Data/Context/DataItem/Priority$ | Alert priority number (High=1,Medium=2,Low=3)|
 |$Data/Context/DataItem/Owner$ | Alert owner|
 |$Data/Context/DataItem/RepeatCount$ | Alert repeat count|
-|$Data/Context/DataItem/ResolutionState$ |Resolution state ID (0=New, 255= Closed)| 
+|$Data/Context/DataItem/ResolutionState$ |Resolution state ID (0=New, 255=Closed)| 
 |$Data/Context/DataItem/ResolutionStateLastModified$ |UTC Date/Time ResolutionState was last modified| 
 |$Data/Context/DataItem/ResolutionStateLastModifiedLocal$ |Local Date/Time ResolutionState was last modified|
 |$Data/Context/DataItem/ResolutionStateName$ |The resolution state name (New, Closed)|
@@ -70,10 +71,10 @@ You can change the format on the **Format** page of the channel type wizard when
 |$Data/Context/DataItem/TimeRaised$ | UTC time raised|
 |$Data/Context/DataItem/TimeRaisedLocal$ | Local time raised|
 |$Data/Context/DataItem/TimeResolved$ | UTC Date/Time the Alert was resolved|
-|$Data/Context/DataItem/WorkflowId$ | Workflow ID (GUID)|
+|$Data/Context/DataItem/WorkflowId$ | WorkflowID (GUID)|
 |$Data/Recipients/To/Address/Address$| Name of the recipient|
 |$Target/Property[Type="Notification!Microsoft.SystemCenter.AlertNotificationSubscriptionServer"/WebConsoleUrl$ | Web console URL|
-|Target/Property[Type="Notification!Microsoft.SystemCenter.AlertNotificationSubscriptionServer"/PrincipalName$ | Principalname of the management server|
+|Target/Property[Type="Notification!Microsoft.SystemCenter.AlertNotificationSubscriptionServer"/PrincipalName$ | Principal name of the management server|
 
 ## To configure notification format  
   
