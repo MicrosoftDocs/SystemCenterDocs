@@ -4,7 +4,7 @@ description: This article describes how to install and configure the Visio Servi
 author: mgoedtel
 ms.author: magoedte
 manager: cfreemanwa
-ms.date: 12/13/2016
+ms.date: 01/03/2017
 ms.custom: na
 ms.prod: system-center-threshold
 ms.technology: operations-manager
@@ -22,12 +22,12 @@ The Visio Services Data Provider for Operations Manager has the following prereq
   
 -   System Center 2016 - Operations Manager, Operations or Authoring console  
   
--   SharePoint 2010, 2013 or 2016 Enterprise  
+-   SharePoint 2010 or 2013 Enterprise  
   
 -   Microsoft .NET Framework 3.5 SP1.  For Windows 2012 and 2012 R2 see [Enable .NET Framework 3.5 by using the Add Roles and Features Wizard](https://technet.microsoft.com/library/dn482071.aspx).    
   
 > [!NOTE]  
-> You must install SharePoint Server 2010, 2013, or 2016 in a farm environment versus standalone (on a single server with a built-in database by using the default settings) so that Visio Services can be configured to run as a domain account with Operations Manager  access. For more information about installing SharePoint Server on a single server farm, see [Install SharePoint Server 2013 on a single server with SQL Server)](https://technet.microsoft.com/library/cc262243.aspx) or [Install SharePoint Server 2016 on a single server with SQL Server](https://technet.microsoft.com/library/cc262243%28v=office.16%29.aspx). For more information about installing SharePoint Server 2013 or 2016 on a multiple server farm, see [Install SharePoint 2013 across multiple servers for a three-tier farm](http://go.microsoft.com/fwlink/?LinkID=244297) or [Install SharePoint 2016 across multiple servers for a three-tier farm](https://technet.microsoft.com/en-us/library/cc262243%28v=office.16%29.aspx).  
+> You must install SharePoint Server 2010 or 2013 in a farm environment versus standalone (on a single server with a built-in database by using the default settings) so that Visio Services can be configured to run as a domain account with Operations Manager  access. For more information about installing SharePoint Server on a single server farm, see [Install SharePoint Server 2013 on a single server with SQL Server)](https://technet.microsoft.com/library/cc262243.aspx). For more information about installing SharePoint Server 2013 on a multiple server farm, see [Install SharePoint 2013 across multiple servers for a three-tier farm](http://go.microsoft.com/fwlink/?LinkID=244297).  
   
 ## Install the Visio Services data provider  
   
