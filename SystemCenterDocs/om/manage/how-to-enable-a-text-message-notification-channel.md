@@ -14,12 +14,14 @@ ms.assetid: 93f9a932-d99d-41b2-ad0c-f5e179f1cccf
 
 # How to enable a Text Message (SMS) Notification Channel
 
+>Applies To: System Center 2016 - Operations Manager
+
 To configure alert notifications for System Center 2016 - Operations Manager, your first task is to enable a notification channel. This topic describes how to configure a channel that will send alert notifications to subscribers by using a Short Message Service (SMS) or text message.  
   
 > [!NOTE]  
 > The modem used for SMS must support SMS Protocol Data Unit (PDU) mode.  
   
-## To enable an SMS notification channel  
+## To enable a text message notification channel  
   
 1.  Log on to the computer with a user account that is a member of the Operations Manager Administrators role.  
   

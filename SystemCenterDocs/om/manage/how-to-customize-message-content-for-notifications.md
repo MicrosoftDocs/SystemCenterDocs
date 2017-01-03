@@ -12,7 +12,9 @@ ms.topic: article
 ms.assetid: 0f6934ea-1998-4bd5-987a-41cf4e24d408
 ---
 
-# How to Customize Message Content for Notifications
+# How to customize message content for Notifications
+
+>Applies To: System Center 2016 - Operations Manager
 
 In System Center 2016 - Operations Manager, you can customize the format that will be used for messages that notify you of alerts. The format of an alert notification is determined by the channel by which the notification is sent. Each channel type has a default format, as shown in the following examples.  
   

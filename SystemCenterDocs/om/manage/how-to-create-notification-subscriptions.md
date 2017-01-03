@@ -14,6 +14,8 @@ ms.assetid: 8361d0b2-8b6d-462c-aee0-800eda31dd21
 
 # How to Create Notification Subscriptions
 
+>Applies To: System Center 2016 - Operations Manager 
+
 In System Center 2016 - Operations Manager, when an alert is generated, Operations Manager can notify designated individuals by email, instant message (IM), or text message (SMS). Notifications can also run commands automatically when an alert is raised on a monitored system. A notification requires a channel, a subscriber, and a subscription.  
 
 These procedures will explain how to specify the criteria or conditions that determine the alerts that will generate a notification, use of classes and groups, and criteria or conditions in your subscriptions to filter and align notifications with your organizational escalation path.  A subscription also defines the channel to be used for the notification and the subscribers to receive the notification.  You can use the combination of subscriber and subscription to tailor which alerts are sent to individuals or teams.      
@@ -92,7 +94,7 @@ In the first example, the UNIX administrator would be notified of alerts raised 
   
 7.  Click **Next**.  
   
-8.  On the **Channels** page, click **Add** to add a channel that is already defined, or click **New** to add a new channel. For more information on defining channels, see [How to Enable an Email Notification Channel](how-to-enable-an-email-notification-channel.md), [How to Enable an Instant Message Notification Channel](how-to-enable-an-instant-message-notification-channel.md), [How to Enable a Text Message Notification Channel](how-to-enable-a-text-message-SMS-notification-channel.md), and [How to Enable a Command Notification Channel](manage/how-to-enable-a-command-notification-channel.md).  
+8.  On the **Channels** page, click **Add** to add a channel that is already defined, or click **New** to add a new channel. For more information on defining channels, see [How to Enable an Email Notification Channel](how-to-enable-an-email-notification-channel.md), [How to Enable an Instant Message Notification Channel](how-to-enable-an-instant-message-notification-channel.md), [How to Enable a Text Message Notification Channel](how-to-enable-a-text-message-notification-channel.md), and [How to Enable a Command Notification Channel](how-to-enable-a-command-notification-channel.md).  
   
 9. In the **Alert aging** section on the **Channels** page, select to send notifications without delay or set a value in minutes that notification should be delayed unless conditions remain unchanged, and then click **Next**.  
   
