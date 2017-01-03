@@ -16,7 +16,6 @@ manager: carmonm
 robots: noindex
 ---
 # Exchange users integration pack
-======================================================================
 
 Applies To: System Center 2016 Orchestrator
 
