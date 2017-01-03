@@ -15,7 +15,7 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-Exchange Users Integration Pack for Orchestrator in System Center 2016
+# Exchange users integration pack
 ======================================================================
 
 Applies To: System Center 2016 Orchestrator
@@ -24,7 +24,7 @@ Integration packs are add-ons for Orchestrator, a component of System Center 201
 
 Microsoft is committed to protecting your privacy while delivering software that brings you the performance, power, and convenience you want. For more information about Orchestrator-related privacy, see the [System Center Orchestrator 2016 Privacy Statement](https://www.microsoft.com/en-us/privacystatement/EnterpriseDev/default.aspx).
 
-System requirements
+## System requirements
 -------------------
 
 Prior to implementing the Exchange Users Integration Pack, the following listed software must be installed and configured. For more information about installing and configuring Orchestrator and the Exchange Users Integration Pack, refer to the respective product documentation.
@@ -33,17 +33,17 @@ Prior to implementing the Exchange Users Integration Pack, the following listed 
 -   Microsoft .NET Framework 3.5
 -   Microsoft Exchange 2010 Service Pack 1 or Microsoft Exchange 2013 or Microsoft Exchange Online/Office 365
 
-Downloading the Integration Pack
+## Downloading the integration pack
 --------------------------------
 
 To download this the Exchange Users Integration Pack, go to the [Download Center site](https://www.microsoft.com/en-us/download/details.aspx?id=54098).
 
-Registering and Deploying the Integration Pack
+## Registering and deploying the integration pack
 ----------------------------------------
 
 After you download the integration pack file, you must register it with the Orchestrator management server and then deploy it to runbook servers and Runbook Designers. For the procedures on installing integration packs, see How to Install an Integration Pack.
 
-Configuring the Exchange Users Integration Pack Connections
+## Configuring the Exchange users integration pack connections
 ---------------------------------------------------------
 
 A connection establishes a reusable link between the Orchestrator and an Exchange server. You can specify as many connections as necessary to create links to multiple servers. You can also create multiple connections to the same server to allow for differences in security permissions for different user accounts.
@@ -52,7 +52,7 @@ The integration pack supports two types of Exchange configurations: the basic Ex
 
 The basic Exchange Configuration contains connection information that is used by activities where the item type is either implicit or not required, such as the Send E-Mail and Delete Item activities.
 
-#### To set up an Exchange Configuration connection
+### To set up an Exchange configuration connection
 
 1.  In the **Orchestrator Runbook Designer**, click **Options**, and then click **Exchange User**. The **Exchange User** dialog box appears.
 
@@ -75,7 +75,8 @@ The basic Exchange Configuration contains connection information that is used by
 10.  Add any additional connections if applicable, and then click **Finish**.
 
 The Exchange Item Type Configuration contains connection information and lets users specify an Exchange item type. The Exchange Item Configuration activity is used by activities that dynamically generate optional and required properties, filter and published data, as is the case with the Create Item and Get Item activities.
-To set up a Exchange Item Type connection
+
+### To set up an Exchange item type connection
 
 1.  In the **Orchestrator Runbook Designer**, click **Options**, and then click **Exchange User**. The **Exchange User** dialog box appears.
 
