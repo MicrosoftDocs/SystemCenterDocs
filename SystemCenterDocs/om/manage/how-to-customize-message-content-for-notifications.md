@@ -1,6 +1,6 @@
 ---
 title: How to Customize Message Content for Notifications
-description: This article describes how to customize the notification messages delivered by   Operations Manager.
+description: This article describes how to customize the notification messages delivered by Operations Manager.
 author: mgoedtel
 ms.author: magoedte
 manager: cfreemanwa
@@ -12,7 +12,7 @@ ms.topic: article
 ms.assetid: 0f6934ea-1998-4bd5-987a-41cf4e24d408
 ---
 
-# How to customize message content for Notifications
+# How to customize message content for notifications
 
 >Applies To: System Center 2016 - Operations Manager
 
@@ -97,7 +97,7 @@ You can change the format on the **Format** page of the channel type wizard when
   
 6.  When you are done, click **Finish**. All notification messages that use the same channel will be formatted the same way.  
   
-## Customizing a Channel for a Subscription  
+## Customizing a channel for a subscription  
 
 When you create a subscription, you can copy an existing channel that you can customize for that subscription.  
   

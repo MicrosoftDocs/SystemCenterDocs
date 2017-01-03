@@ -12,7 +12,7 @@ ms.topic: article
 ms.assetid: d7e061b0-5d6e-49de-b93f-85215f7c4b73
 ---
 
-# How to subscribe to Notifications from an alert
+# How to subscribe to notifications from an alert
 
 >Applies To: System Center 2016 - Operations Manager
 

@@ -12,7 +12,7 @@ ms.topic: article
 ms.assetid: 8361d0b2-8b6d-462c-aee0-800eda31dd21
 ---
 
-# How to Create Notification Subscriptions
+# How to create notification subscriptions
 
 >Applies To: System Center 2016 - Operations Manager 
 
@@ -22,7 +22,7 @@ These procedures will explain how to specify the criteria or conditions that det
   
 Notification channels and subscribers must be configured before you create a subscription.
 
-## Subscription Filtering Options
+## Subscription filtering options
 
 Before creating a subscription, we will review the two methods you can use to filter alert notifications so that you can deliver alerts that meet certain conditions, such as all critical severity alerts with high priority notify IT Operations or from specific monitored objects like all systems for a particular remote location notify that on-site IT support team.   
 

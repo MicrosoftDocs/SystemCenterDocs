@@ -32,21 +32,21 @@ An Operations Manager administrator must define the notification channels and if
   
 ## Subscribing to alert notifications topics  
   
--   [How to Create and Configure the Notification Action Account](how-to-create-and-configure-the-notification-action-account.md)  
+-   [How to create and configure the Notification Action account](how-to-create-and-configure-the-notification-action-account.md)  
   
--   [How to Enable an Email Notification Channel](how-to-enable-an-email-notification-channel.md)  
+-   [How to enable an email notification channel](how-to-enable-an-email-notification-channel.md)  
   
--   [How to Enable an Instant Message Notification Channel](how-to-enable-an-instant-message-notification-channel.md)  
+-   [How to enable an instant message notification channel](how-to-enable-an-instant-message-notification-channel.md)  
   
--   [How to Enable a Text Message (SMS) Notification Channel](how-to-enable-a-text-message-notification-channel.md)  
+-   [How to enable a text message (SMS) notification channel](how-to-enable-a-text-message-notification-channel.md)  
   
--   [How to Enable a Command Notification Channel](how-to-enable-a-command-notification-channel.md)  
+-   [How to enable a command notification channel](how-to-enable-a-command-notification-channel.md)  
   
--   [How to Create Notification Subscribers](how-to-create-notification-subscribers.md)  
+-   [How to create notification subscribers](how-to-create-notification-subscribers.md)  
   
--   [How to Create Notification Subscriptions](how-to-create-notification-subscriptions.md)  
+-   [How to create notification subscriptions](how-to-create-notification-subscriptions.md)  
   
--   [How to Customize Message Content for Notifications](how-to-customize-message-content-for-notifications.md)  
+-   [How to customize message content for Notifications](how-to-customize-message-content-for-notifications.md)  
   
--   [How to Subscribe to Notifications from an Alert](how-to-subscribe-to-notifications-from-an-alert.md)  
+-   [How to subscribe to notifications from an alert](how-to-subscribe-to-notifications-from-an-alert.md)  
   

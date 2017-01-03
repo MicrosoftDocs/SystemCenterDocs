@@ -12,7 +12,7 @@ ms.topic: article
 ms.assetid: 93f9a932-d99d-41b2-ad0c-f5e179f1cccf
 ---
 
-# How to enable a Text Message (SMS) Notification Channel
+# How to enable a text message (SMS) notification channel
 
 >Applies To: System Center 2016 - Operations Manager
 
@@ -39,12 +39,12 @@ To configure alert notifications for System Center 2016 - Operations Manager, yo
   
 ## Next steps
 
-* To designate when to send notifications and the addresses to which the notifications should be sent to, review [How to Create Notification Subscribers](how-to-create-notification-subscribers.md)
+* To designate when to send notifications and the addresses to which the notifications should be sent to, review [How to create notification subscribers](how-to-create-notification-subscribers.md)
 
 * Create a [notification subscription](how-to-create-notification-subscriptions.md) to define the criteria, notification channel, and subscribers that will receive the notification.  
 
-* To create an email notification channel, see [How to Enable an Email Notification Channel](how-to-enable-an-email-notification-channel.md). 
+* To create an email notification channel, see [How to enable an email notification channel](how-to-enable-an-email-notification-channel.md). 
 
-* To create a command channel notification, see [How to Enable a Command Notification Channel](how-to-enable-a-command-notification-channel.md).
+* To create a command channel notification, see [How to enable a command notification channel](how-to-enable-a-command-notification-channel.md).
 
-* To create an instant message notification channel see, [How to Enable an Instant Message Notification Channel](how-to-enable-an-instant-message-notification-channel.md).
+* To create an instant message notification channel see, [How to enable an instant message notification channel](how-to-enable-an-instant-message-notification-channel.md).

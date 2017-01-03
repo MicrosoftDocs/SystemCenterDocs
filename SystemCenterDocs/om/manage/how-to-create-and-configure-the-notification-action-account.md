@@ -12,15 +12,15 @@ ms.technology: operations-manager
 ms.topic: article
 ---
 
-# How to create and configure the Notification Action Account
+# How to create and configure the Notification action account
 
 >Applies To: System Center 2016 - Operations Manager
 
 In System Center 2016 - Operations Manager, when an alert is generated, Operations Manager can notify designated individuals by email, instant message (IM), or text message (SMS). The Notification Account Run As profile is used to send notifications. For notifications to work correctly, you must create a Run As account that provides the credentials for sending notifications and associate the Run As account to the Notification Account profile.  
   
-## To create and configure the notification action account  
+## To create and configure the Notification action account  
   
-1.  Log on to the computer with a user account that is a member of the Operations Manager Administrators role.  
+1.  Sign in to the computer with a user account that is a member of the Operations Manager Administrators role.  
   
 2.  In the Operations console, click **Administration**.  
   
