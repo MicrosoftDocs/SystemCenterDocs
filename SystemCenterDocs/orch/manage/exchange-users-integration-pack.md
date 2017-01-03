@@ -24,7 +24,6 @@ Integration packs are add-ons for Orchestrator, a component of System Center 201
 Microsoft is committed to protecting your privacy while delivering software that brings you the performance, power, and convenience you want. For more information about Orchestrator-related privacy, see the [System Center Orchestrator 2016 Privacy Statement](https://www.microsoft.com/en-us/privacystatement/EnterpriseDev/default.aspx).
 
 ## System requirements
--------------------
 
 Prior to implementing the Exchange Users Integration Pack, the following listed software must be installed and configured. For more information about installing and configuring Orchestrator and the Exchange Users Integration Pack, refer to the respective product documentation.
 
@@ -33,17 +32,14 @@ Prior to implementing the Exchange Users Integration Pack, the following listed 
 -   Microsoft Exchange 2010 Service Pack 1 or Microsoft Exchange 2013 or Microsoft Exchange Online/Office 365
 
 ## Downloading the integration pack
---------------------------------
 
 To download this the Exchange Users Integration Pack, go to the [Download Center site](https://www.microsoft.com/en-us/download/details.aspx?id=54098).
 
 ## Registering and deploying the integration pack
-----------------------------------------
 
 After you download the integration pack file, you must register it with the Orchestrator management server and then deploy it to runbook servers and Runbook Designers. For the procedures on installing integration packs, see How to Install an Integration Pack.
 
 ## Configuring the Exchange users integration pack connections
----------------------------------------------------------
 
 A connection establishes a reusable link between the Orchestrator and an Exchange server. You can specify as many connections as necessary to create links to multiple servers. You can also create multiple connections to the same server to allow for differences in security permissions for different user accounts.
 
