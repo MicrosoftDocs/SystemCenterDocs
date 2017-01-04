@@ -135,6 +135,7 @@
 ##### [How to view all rules and monitors running on agent-managed computer](om/manage/how-to-view-all-rules-and-monitors-running-on-an-agent-managed-computer.md)
 ##### [Finding data and objects in the consoles](om/manage/finding-data-and-objects-in-the-operations-manager-consoles.md)
 ###### [Using advanced search](om/manage/using-advanced-search.md)
+##### [Configure SharePoint to view Operations Manager data](om/manage/using-sharepoint-to-view-operations-manager-data.md)
 ##### [Using views and dashboards](om/manage/using-views-and-dashboards-in-operations-manager.md)
 ###### [View types](om/manage/view-types-in-operations-manager.md)
 ###### [Standard views](om/manage/standard-views-in-operations-manager.md)
