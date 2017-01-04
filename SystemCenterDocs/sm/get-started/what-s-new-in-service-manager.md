@@ -26,7 +26,7 @@ SQL Server 2014 SP2 is supported to host your Service Manager database and your 
 
 ## Service Manager console supported with Windows 7
 
-Windows 7 is supported the Service Manager console. However, you need .NET 4.5.1 as a pre-requisite. Download the offline installer with language pack from the Microsoft Support site at https://support.microsoft.com/en-us/kb/2858728. The new spell check feature, which was introduced in the Service Manager 2016 console, has limited language support for Windows 7 installations. The supported languages on Windows 7 include English, French, German, and Spanish.
+Windows 7 is supported with the Service Manager console. However, you need .NET 4.5.1 as a prerequisite. Download the offline installer with language pack from the Microsoft Support site at https://support.microsoft.com/en-us/kb/2858728. The new spell check feature, which was introduced in the Service Manager 2016 console, has limited language support for Windows 7 installations. The supported languages on Windows 7 include English, French, German, and Spanish.
 
 ## Service Manager 2016 connectors supported with System Center 2012 R2 components
 
