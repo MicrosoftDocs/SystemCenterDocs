@@ -1,12 +1,12 @@
 ---
 description: Describes new features and other changes in System Center 2016 - Service Manager
-manager:  cfreeman
+manager:  carmonn
 ms.topic:  article
 author:  bandersmsft
 ms.author: banders
 ms.prod:  system-center-2016
 keywords:  
-ms.date: 10/12/2016
+ms.date: 01/04/2017
 title:  What's new in Service Manager
 ms.technology:  service-manager
 ms.assetid:  3eeb3265-88e0-47ed-b761-07f4e0634959
@@ -20,6 +20,22 @@ System Center 2016 - Service Manager is updated for the release to manufacturing
 
 For details about known issues that could affect you before you install System Center 2016 - Service Manager, read the [Release Notes for System Center ](../../get-started/release-notes.md).
 
+## Support for SQL Server 2014 SP2
+
+SQL Server 2014 SP2 is supported to host your Service Manager database and your data warehouse database.
+
+## Service Manager console supported with Windows 7
+
+Windows 7 is supported the Service Manager console. However, you need .NET 4.5.1 as a pre-requisite. Download the offline installer with language pack from the Microsoft Support site at https://support.microsoft.com/en-us/kb/2858728. The new spell check feature, which was introduced in the Service Manager 2016 console, has limited language support for Windows 7 installations. The supported languages on Windows 7 include English, French, German, and Spanish.
+
+## Service Manager 2016 connectors supported with System Center 2012 R2 components
+
+To help simplify upgrades, you can use the following Service Manager 2016 connectors with System Center 2012 R2 components.
+
+- System Center 2012 R2 Virtual Machine manager
+- System Center 2012 R2 Orchestrator
+- System Center 2012 R2 Operations Manager
+- System Center 2012 R2 Configuration Manager (including SCCM 1511, 1602 and 1606)
 
 ## Performance improvements
 
