@@ -202,14 +202,14 @@ Repeat this procedure for each Operations Manager management group.
   
 3.  Run `add-OperationsManager-WebConsole-Environment.ps1` using the following parameters:  
   
-    **-title** "*the name of the dashboard view*"  
+    **-title** <*the name of the dashboard view*>  
   
-    **-webconsoleUNC** "*path to the web.config file, not including filename*"  
+    **-webconsoleUNC** <*path to the web.config file, not including filename*>  
   
     > [!NOTE]  
     > The web.config file is found under Program Files\Microsoft System Center 2016\Operations Manager\WebConsole\WebHost on the computer running the web console.  
   
-    **-targetApplicationID**  *the Target Application ID*  
+    **-targetApplicationID** <*the Target Application ID*>  
   
 ## How to add additional management groups to the web part  
 
@@ -235,14 +235,14 @@ Adding new management groups to the Web Part enables you to display dashboards f
   
 3.  Run `update-OperationsManager-WebConsole-Environment.ps1` using the following parameters:  
   
-    **-title** "*the name of the dashboard view*"  
+    **-title** <*the name of the dashboard view*>  
   
-    **-webconsoleUNC** "*path to the web.config file, not including filename*"  
+    **-webconsoleUNC** <*path to the web.config file, not including filename*>  
   
     > [!NOTE]  
     > The web.config file is found under Program Files\Microsoft System Center 2016\Operations Manager\WebConsole\WebHost on the computer running the web console.  
   
-    **-targetApplicationID**  *the Target Application ID*  
+    **-targetApplicationID** <*the Target Application ID*>  
   
 ## How to uninstall the Operations Manager web part  
 
