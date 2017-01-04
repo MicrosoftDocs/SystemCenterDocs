@@ -148,7 +148,7 @@
 ###### [Link to Operations Manager objects in a new or existing Visio dcocument](om/manage/link-to-operations-manager-objects-in-a-new-or-existing-visio-document.md)
 ###### [Build a simple monitoring dashboard using the Visio Web Part](om/manage/build-a-simple-monitoring-dashboard-using-the-visio-web-part.md)
 ###### [Publish a Visio diagram to SharePoint Server](om/manage/publish-a-visio-diagram-to-sharepoint.md)
-###### [Change the Way Health State is represented in Visio](om/manage/change-the-way-health-state-is-represented-in-visio.md)
+###### [Change the way Health State is represented in Visio](om/manage/change-the-way-health-state-is-represented-in-visio.md)
 ###### [Troubleshooting the Visio add-in](om/manage/troubleshooting-the-visio-add-in.md)
 #### [Managing access in Operations Manager](om/manage/managing-access-in-operations-manager.md)
 ##### [Implementing user roles](om/manage/implementing-user-roles.md)
