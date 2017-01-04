@@ -56,17 +56,17 @@ Using the `install-OperationsManager-DashboardViewer.ps1` script, you can deploy
   
     Here is an example that deploys the web part to a specific portal address. In this example you are copying the files to "C:\Program Files\Microsoft System Center 2016\Operations Manager\".  
   
-    `.\install-OperationsManager-DashboardViewer.ps1 "C:\Program Files\Microsoft System Center 2016\Operations Manager \" http://localhost:4096`  
+    `.\install-OperationsManager-DashboardViewer.ps1 "C:\Program Files\Microsoft System Center 2016\Operations Manager\" http://localhost:4096`  
   
     If an error occurs when you run the script, you must disable the RemoteSigned default code-signing execution policy for the SharePoint Management Shell. To allow the  `install-OperationsManager-DashboardViewer.ps1` script to run, type the following command, and then press **enter**:  
   
     `Set-ExecutionPolicy Unrestricted`  
   
-    You will see some confirmation messages, select **Y** to confirm, and then run the script.  
+    You will see a confirmation message, select **Y** to confirm, and then run the script.  
   
 4.  Verify that the web part is deployed and activated by performing the following steps:  
   
-    1.  Open the site http://localhost.  
+    1.  Open an Internet browser, and then navigate to the SharePoint server.  
   
     2.  In the **Site Actions** dropdown menu, click **Site Settings**.  
   
@@ -82,7 +82,7 @@ Using the `install-OperationsManager-DashboardViewer.ps1` script, you can deploy
   
     `Set-ExecutionPolicy Restricted`  
   
-    You will see some confirmation messages, select **Y** to confirm.  
+    You will see a confirmation message, select **Y** to confirm.  
   
 ## How to configure the web part to connect to a Web console  
 
@@ -267,13 +267,13 @@ As with deploying the Operations Manager Web Part, you can uninstall the Web Par
   
     `Set-ExecutionPolicy Unrestricted`  
   
-    You will see some confirmation messages, select **Y** to confirm, and then run the script.  
+    You will see a confirmation message, select **Y** to confirm, and then run the script.  
   
 4.  If you disabled the RemoteSigned default code-signing execution policy to run the `install-OperationsManager-DashboardViewer.ps1` script, you should re\-enable it after the script runs. Type this command, and then press **enter**:  
   
     `Set-ExecutionPolicy Restricted`  
   
-    You will see some confirmation messages, select **Y** to confirm.  
+    You will see a confirmation message, select **Y** to confirm.  
   
 ### Retract the web part by using SharePoint Central Administration  
   
