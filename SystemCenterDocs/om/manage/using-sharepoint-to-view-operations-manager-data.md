@@ -139,14 +139,13 @@ The following procedure creates a SharePoint page with the Operations Manager Da
   
 ## How to configure the web part to use shared credentials  
 
-To configure the Operations Manager Dashboard Viewer web part so that those who are not Operations Manager users can view it, perform the following procedures. In the first procedure, you configure credentials by creating a Target Application ID in SharePoint. Next, you configure the web part environment.  
-  
+To configure the Operations Manager Dashboard Viewer web part so that those who are not Operations Manager users can view it, perform the following procedures. In the first procedure, you configure credentials by creating a Target Application ID in SharePoint. Next, you configure the web part environment.
+
 > [!NOTE]  
-> Operations Manager provides two scripts in the *setup\amd64\SharePoint* directory to allow users to add and update the SharePoint web environment keys from the web config file: `add-OperationsManager-WebConsole-Environment.ps1` and `update-OperationsManager-WebConsole-Environment.ps1`. These scripts strip the encryptionAlgorithm and encryptionValidationAlgorithm for the override ticket from the web config file and add or update it in the sharepoint environment. This allows you to automate the creation and rotation of keys. Procedures for using these scripts are in this section.  
+> You cannot configure shared credentials in SharePoint Foundation 2010 or 2013.    
   
-> [!NOTE]  
-> You cannot configure shared credentials in SharePoint Foundation 2010 or 2013.  
-  
+Operations Manager provides two scripts in the *setup\amd64\SharePoint* directory to allow users to add and update the SharePoint web environment keys from the web config file: `add-OperationsManager-WebConsole-Environment.ps1` and `update-OperationsManager-WebConsole-Environment.ps1`. These scripts strip the encryptionAlgorithm and encryptionValidationAlgorithm for the override ticket from the web config file and add or update it in the SharePoint environment. This allows you to automate the creation and rotation of keys. Procedures for using these scripts are in this section.
+
 ### Create a target application ID  
   
 1.  In SharePoint Central Administration, in the **Application Management** section, click **Manage service applications**.  
@@ -203,14 +202,14 @@ Repeat this procedure for each Operations Manager management group.
   
 3.  Run `add-OperationsManager-WebConsole-Environment.ps1` using the following parameters:  
   
-    **-title***the name of the dashboard view*  
+    **-title** "*the name of the dashboard view*"  
   
     **-webconsoleUNC** "*path to the web.config file, not including filename*"  
   
     > [!NOTE]  
     > The web.config file is found under Program Files\Microsoft System Center 2016\Operations Manager\WebConsole\WebHost on the computer running the web console.  
   
-    **-targetApplicationID***the Target Application ID*  
+    **-targetApplicationID** *the Target Application ID*  
   
 ## How to add additional management groups to the web part  
 
@@ -236,14 +235,14 @@ Adding new management groups to the Web Part enables you to display dashboards f
   
 3.  Run `update-OperationsManager-WebConsole-Environment.ps1` using the following parameters:  
   
-    **-title***the name of the dashboard view*  
+    **-title** "*the name of the dashboard view*"  
   
     **-webconsoleUNC** "*path to the web.config file, not including filename*"  
   
     > [!NOTE]  
     > The web.config file is found under Program Files\Microsoft System Center 2016\Operations Manager\WebConsole\WebHost on the computer running the web console.  
   
-    **-targetApplicationID***the Target Application ID*  
+    **-targetApplicationID** *the Target Application ID*  
   
 ## How to uninstall the Operations Manager web part  
 
@@ -289,4 +288,4 @@ As with deploying the Operations Manager Web Part, you can uninstall the Web Par
 
 * You can use views and dashboards to visualize operational data from different perspectives to make meaningful decisions. To understand how to do this, see [Using Views and Dashboards in Operations Manager](using-views-and-dashboards-in-operations-manager.md). 
   
-* To learn how you can use use reports in Operations Manager to view historical operational data, see [Using reports in Operations Manager](using-reports-in-operations-manager.md). 
+* To learn how you can use reports in Operations Manager to view historical operational data, see [Using reports in Operations Manager](using-reports-in-operations-manager.md). 
