@@ -209,7 +209,7 @@ Repeat this procedure for each Operations Manager management group.
     > [!NOTE]  
     > The web.config file is found under Program Files\Microsoft System Center 2016\Operations Manager\WebConsole\WebHost on the computer running the web console.  
   
-    **-targetApplicationID** *the Target Application ID*  
+    **-targetApplicationID**  *the Target Application ID*  
   
 ## How to add additional management groups to the web part  
 
@@ -242,7 +242,7 @@ Adding new management groups to the Web Part enables you to display dashboards f
     > [!NOTE]  
     > The web.config file is found under Program Files\Microsoft System Center 2016\Operations Manager\WebConsole\WebHost on the computer running the web console.  
   
-    **-targetApplicationID** *the Target Application ID*  
+    **-targetApplicationID**  *the Target Application ID*  
   
 ## How to uninstall the Operations Manager web part  
 
