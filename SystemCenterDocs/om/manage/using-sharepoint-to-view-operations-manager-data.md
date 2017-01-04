@@ -286,10 +286,7 @@ As with deploying the Operations Manager Web Part, you can uninstall the Web Par
 4.  Right-click the `Microsoft.EnterpriseManagement.SharePointIntegration.wsp` file, and then click **Retract**.  
   
 ## Next steps 
-[Using the Operations Manager Consoles](../../om/manage/Using-the-Operations-Manager-Consoles.md)  
-[Finding Data and Objects in the Operations Manager Consoles](../../om/manage/Finding-Data-and-Objects-in-the-Operations-Manager-Consoles.md)  
-[Using Views in Operations Manager](../../om/manage/Using-Views-in-Operations-Manager.md)  
-[Not Monitored and Gray Agents](../../om/manage/Not-Monitored-and-Gray-Agents.md)  
-[Subscribing to Alert Notifications](../../om/manage/Subscribing-to-Alert-Notifications.md)  
-[Using Reports in Operations Manager](../../om/manage/Using-Reports-in-Operations-Manager.md)  
+
+* You can use views and dashboards to visualize operational data from different perspectives to make meaningful decisions. To understand how to do this, see [Using Views and Dashboards in Operations Manager](using-views-and-dashboards-in-operations-manager.md). 
   
+* To learn how you can use use reports in Operations Manager to view historical operational data, see [Using reports in Operations Manager](using-reports-in-operations-manager.md). 
