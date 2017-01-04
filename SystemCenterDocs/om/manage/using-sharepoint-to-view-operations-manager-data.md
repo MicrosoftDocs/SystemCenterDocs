@@ -39,7 +39,7 @@ The following are the prerequisites for deploying the Operations Manager web par
   
     -   Run the Add-SPSolution and Install-SPSolution cmdlets for the farm, and run the Enable-SPFeature cmdlet for all sites on the farm  
   
-The web part is a solution file named `Microsoft.EnterpriseManagement.SharePointIntegration.wsp`. To deploy the web part, you run a script named install-OperationsManager-DashboardViewer.ps1. This script is located in the Operations Manager installation folder under *Setup\amd64\SharePoint*.  
+The web part is a solution file named `Microsoft.EnterpriseManagement.SharePointIntegration.wsp`. To deploy the web part, you run a script named `install-OperationsManager-DashboardViewer.ps1`. This script is located in the Operations Manager installation folder under *Setup\amd64\SharePoint*.  
   
 > [!NOTE]  
 > You can get more information on the scripts included with Operations Manager by using the command shell and the get-help cmdlet. For example: **get-help install-OperationsManager-DashboardViewer.ps1**.  
@@ -52,15 +52,15 @@ Using the `install-OperationsManager-DashboardViewer.ps1` script, you can deploy
   
 3.  In the SharePoint Management Shell, type the following command, and then press **Enter**.  
   
-    **.\install-OperationsManager-DashboardViewer.ps1 -solutionPath***<directory for Microsoft.EnterpriseManagement.SharePointIntegration.wsp>***-url***<optional, for installing to a specific portal address or website>*  
+    `.\install-OperationsManager-DashboardViewer.ps1 -solutionPath <directory for Microsoft.EnterpriseManagement.SharePointIntegration.wsp> -url <optional, for installing to a specific portal address or website>`  
   
     Here is an example that deploys the web part to a specific portal address. In this example you are copying the files to "C:\Program Files\Microsoft System Center 2016\Operations Manager\".  
   
-    **.\install-OperationsManager-DashboardViewer.ps1 "C:\Program Files\Microsoft System Center 2016\Operations Manager \" http://localhost:4096**  
+    `.\install-OperationsManager-DashboardViewer.ps1 "C:\Program Files\Microsoft System Center 2016\Operations Manager \" http://localhost:4096`  
   
-    If an error occurs when you run the script, you must disable the RemoteSigned default code-signing execution policy for the SharePoint Management Shell. To allow the `install-OperationsManager-DashboardViewer.ps1` script to run, type the following command, and then press **enter**:  
+    If an error occurs when you run the script, you must disable the RemoteSigned default code-signing execution policy for the SharePoint Management Shell. To allow the  `install-OperationsManager-DashboardViewer.ps1` script to run, type the following command, and then press **enter**:  
   
-    **Set-ExecutionPolicy Unrestricted**  
+    `Set-ExecutionPolicy Unrestricted`  
   
     You will see some confirmation messages, select **Y** to confirm, and then run the script.  
   
@@ -80,7 +80,7 @@ Using the `install-OperationsManager-DashboardViewer.ps1` script, you can deploy
   
 5.  If you disabled the RemoteSigned default code-signing execution policy to run the `install-OperationsManager-DashboardViewer.ps1` script, you should re-enable it after the script runs. Type the following command and then press **enter**:  
   
-    **Set-ExecutionPolicy Restricted**  
+    `Set-ExecutionPolicy Restricted`  
   
     You will see some confirmation messages, select **Y** to confirm.  
   
@@ -106,7 +106,7 @@ After you deploy the Operations Manager web part to a SharePoint site, you can a
   
 To obtain the URI, open the web console and navigate to the desired dashboard view. The address bar will display an address such as the following:  
   
-**http://localhost/OperationsManager/#/dashboard%7Btype=Microsoft.SystemCenter.Visualization.Library!Visualization.SlaDashboardViewInstanceDaily%7D**  
+`http://localhost/OperationsManager/#/dashboard%7Btype=Microsoft.SystemCenter.Visualization.Library!Visualization.SlaDashboardViewInstanceDaily%7D`  
   
 The following procedure creates a SharePoint page with the Operations Manager Dashboard Viewer web part that can only be accessed by users who have an Operations Manager user role, such as an Operator or Administrator. To configure the Operations Manager Dashboard Viewer web part so that those who are not Operations Manager users can view it, perform the following steps and then see the procedure [How to configure the web part to use shared credentials](#how-to-configure-the-web-part-to-use-shared-credentials) below.  
   
@@ -175,7 +175,7 @@ To configure the Operations Manager Dashboard Viewer web part so that those who 
   
 4.  Locate the OverrideTicketEncryptionKey entry. In the following example, the first bold value is the encryption algorithm key and the second bold value is the encryption validation algorithm key:  
   
-    Example: <key name="OverrideTicketEncryptionKey" algorithm="3DES" value="**92799B26F0BF54EE76A40CFECDB29868927D2DA4D7E57EBD**"> <validation algorithm="HMACSHA1" value="**7526BAC9FC9562835A3872A3DC12CB8B**"/>  
+    Example: `<key name="OverrideTicketEncryptionKey" algorithm="3DES" value="**92799B26F0BF54EE76A40CFECDB29868927D2DA4D7E57EBD**"> <validation algorithm="HMACSHA1" value="**7526BAC9FC9562835A3872A3DC12CB8B**"/>`  
   
 5.  Copy both keys and close Web.config.  
   
@@ -257,21 +257,21 @@ As with deploying the Operations Manager Web Part, you can uninstall the Web Par
   
 3.  In the SharePoint Management Shell, type the following command, and then press **Enter**.  
   
-    **.\uninstall-OperationsManager-DashboardViewer.ps1 -solutionPath***<directory for Microsoft.EnterpriseManagement.SharePointIntegration.wsp>***-url***<optional, for uninstalling from a specific portal address or website>*  
+    `.\uninstall-OperationsManager-DashboardViewer.ps1 -solutionPath <directory for Microsoft.EnterpriseManagement.SharePointIntegration.wsp> -url <optional, for uninstalling from a specific portal address or website>`
   
-    Example that uninstalls the Web Part from a specific portal address:  
-  
-    **.\uninstall-OperationsManager-DashboardViewer.ps1 "C:\Program Files\Microsoft System Center 2016\Operations Manager\" http://localhost:4096**  
+    Example that uninstalls the Web Part from a specific portal address:
+
+    `.\uninstall-OperationsManager-DashboardViewer.ps1 "C:\Program Files\Microsoft System Center 2016\Operations Manager\" http://localhost:4096`  
   
     If an error occurs when you run the script, you must disable the RemoteSigned default code-signing execution policy for the SharePoint Management Shell. To allow the `install-OperationsManager-DashboardViewer.ps1` script to run, type this command, and then press **enter**:  
   
-    **Set-ExecutionPolicy Unrestricted**  
+    `Set-ExecutionPolicy Unrestricted`  
   
     You will see some confirmation messages, select **Y** to confirm, and then run the script.  
   
 4.  If you disabled the RemoteSigned default code-signing execution policy to run the `install-OperationsManager-DashboardViewer.ps1` script, you should re\-enable it after the script runs. Type this command, and then press **enter**:  
   
-    **Set-ExecutionPolicy Restricted**  
+    `Set-ExecutionPolicy Restricted`  
   
     You will see some confirmation messages, select **Y** to confirm.  
   
