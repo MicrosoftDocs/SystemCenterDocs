@@ -269,7 +269,7 @@
 #### [Integration packs](orch/manage/integration-packs.md)
 ##### [Active Directory](orch/manage/active-directory-integration-pack.md)
 ##### [Exchange Administrator](orch/manage/exchange-admin-integration-pack.md)
-##### [Hewlett Packard Integrated Lights-Out (HP iLO)]orch/manage/(hp-ilo-and-oa-integration-pack.#####md)
+##### [Hewlett Packard Integrated Lights-Out](orch/manage/hp-ilo-and-oa-integration-pack.md)
 ##### [Hewlett Packard Operations Manager](orch/manage/hp-operations-manager-integration-pack.md)
 ##### [Hewlett Packard Service Manager](orch/manage/hp-service-manager-integration-pack.md)
 ##### [IBM Tivoli Netcool Integration Pack](orch/manage/tivoli-netcool-omnibus-integration-pack.md)
