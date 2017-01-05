@@ -16,7 +16,7 @@ ms.topic: article
 
 >Applies To: System Center 2016 - Orchestrator
 
-System Center 2016 - Orchestrator includes many built-in workflow standard activities that perform a wide variety of functions. You can expand Orchestrator’s functionality and ability to integrate with other Microsoft and third-party platforms and products by installing integration packs. Integration packs for Orchestrator contain additional activities that extend the functionality of Orchestrator.
+System Center 2016 - Orchestrator includes many built-in standard activities that perform a wide variety of functions. You can expand Orchestrator’s functionality and integrate with other Microsoft and third-party platforms and products by installing integration packs. Integration packs for Orchestrator contain additional activities that extend the functionality of Orchestrator.
 You can download integration packs from the Microsoft Download Center. Each integration pack has a guide that provides installation instructions, describes any known issues, and includes reference information for all of the activities supported by the integration pack.
 
 ## Integration Packs

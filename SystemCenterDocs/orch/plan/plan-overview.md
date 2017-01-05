@@ -12,7 +12,7 @@ ms.technology: orchestrator
 ms.topic: article
 ---
 
-# Orchestrator Planning Guide
+# Orchestrator planning guide
 
 >Applies To: System Center 2016 - Orchestrator
 
@@ -29,3 +29,7 @@ This guide provides recommendations to help you develop a strategy for deploying
 - [Database Sizing and Performance](database-sizing-and-performance.md)
 
     Provides information about how to estimate the database requirements for your environment.
+
+- [System Requirements](system-requirements.md)
+
+    Summarizes the software requirements and hardware recommendations for your Orchestrator environment.
