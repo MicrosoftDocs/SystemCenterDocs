@@ -26,7 +26,7 @@ This starter topic should be used as a template for creating System Requirements
 |:--- |:---|
 
 
-## Hardware requirements
+## Hardware
 
 | XXX Server Role | x64 Processor (min) | Memory (min) | Disk space (min) |
 |:--- |:---|:--- |:--- |
