@@ -31,7 +31,7 @@ This starter topic should be used as a template for creating System Requirements
 | XXX Server Role | x64 Processor (min) | Memory (min) | Disk space (min) |
 |:--- |:---|:--- |:--- |
 
-## Server Operating System
+## Server operating system
 
 The following versions of Windows Server operating system are supported.
 
@@ -39,7 +39,7 @@ The following versions of Windows Server operating system are supported.
 |:--- |:---|:--- |:--- |
 
 
-## Client Operating System
+## Client operating system
 
 The following versions of Windows client operating system are supported for the XXX console.
 
