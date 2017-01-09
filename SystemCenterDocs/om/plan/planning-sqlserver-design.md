@@ -26,7 +26,7 @@ In a lab environment or small-scale deployment of Operations Manager, SQL Server
 The following versions of SQL Server are supported for a new or existing installation of Operations Manager.
 
 |Component | SQL Server 2014, SP2 Enterprise/Standard (x64) | SQL Server 2014, SP3 Enterprise/Standard (x64) | SQL Server 2016 Enterprise/Standard (x64) 
-|-----------|---------------|---------------|
+|-----------|---------------|---------------|---------------|
 | **Operations Manager** Operational Database | yes | yes | yes | 
 | **Operations Manager** Data Warehouse Database | yes | yes | yes |
 | **Operations Manager** ACS Database | yes | yes | yes |
