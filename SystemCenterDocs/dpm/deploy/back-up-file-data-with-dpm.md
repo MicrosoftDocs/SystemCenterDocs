@@ -1,12 +1,12 @@
 ---
 description:  
-manager:  cfreemanwa
+manager:  carmonm
 ms.topic:  article
 author:  markgalioto
 ms.author: markgal
 ms.prod:  system-center-threshold
 keywords:  
-ms.date: 10/12/2016
+ms.date: 1/9/2017
 title:  Back up file data with DPM
 ms.technology:  data-protection-manager
 ms.assetid:  98626f09-e4b1-4cbb-9195-651d54e118d1
@@ -117,8 +117,8 @@ Recover data from the DPM console as follows:
 
 8.  Review your recovery settings, and click **Recover**. Note that any synchronization job for the selected recovery item will be canceled while the recovery is in progress.
 
-If end-user recovery is enabled then users should recover data as follows:
+When using Modern Backup Storage (MBS), File Server end user recovery (EUR) is not supported. File Server EUR has a dependency on the Volume Shadow Copy Service (VSS), which Modern Backup Storage does not use. If end-user recovery is enabled, then recover data as follows:
 
 1.  Navigate to the protected data file. Right-click the file name > **Properties**.
 
-2.  In **Properties** > **Previous Versions** select the version that you want to recover from.
+2.  In **Properties** > **Previous Versions** select the version that you want to recover.
