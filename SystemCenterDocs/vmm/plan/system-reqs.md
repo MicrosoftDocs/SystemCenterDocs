@@ -5,13 +5,13 @@ description: This article provides information about system requirements for VMM
 author:  rayne-wiselman
 ms.author: raynew
 manager:  cfreeman
-ms.date:  01/10/2016
+ms.date:  01/10/2017
 ms.topic:  article
 ms.prod:  system-center-threshold
 ms.technology:  virtual-machine-manager
 ---
 
-  # VMM system requirements
+# VMM system requirements
 
   >Applies To: System Center 2016 - Virtual Machine Manager
 
