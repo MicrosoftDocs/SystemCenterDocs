@@ -13,9 +13,9 @@ ms.technology:  virtual-machine-manager
 
   # VMM system requirements
 
-  >Applies To: System Center 2016 - Service Provider Foundation
+  >Applies To: System Center 2016 - Virtual Machine Manager
 
-  This article describes the hardware, software, and SQL Server requirements for System Center 2016 - Virtual Machine Manager (VMM) deployment, and summarizes support for servers managed in the VMM fabric.
+This article describes the hardware, software, and SQL Server requirements for System Center 2016 - Virtual Machine Manager (VMM), and summarizes support for servers managed in the VMM fabric.
 
 ## Hardware
 
@@ -41,7 +41,7 @@ Windows Server 2016 Nano | N | N | If supported by SQL Server version
 
 ## Client console operating system
 
-**Operating system** | **VMM console**
+**Operating system** | **Supported**
 --- | ---
 Windows 7 | N
 Windows 8 | N
@@ -66,7 +66,7 @@ SQL Server command line utilities | Install on VMM server if you want to deploy 
 
 ## Virtualization
 
-**VM** | **Support**
+**VM** | **Supported**
 --- | ---
 VMM management server | The VMM management server can be installed on a VM.<br/><br/> If you use dynamic memory, set the start RAM of the VM to at least 2048 MB.<br/><br/> Don&#39;t install on a server running Hyper-V.<br/><br/> You can deploy the VMM management server (physical or VM) in a highly available cluster.
 VMM console | You can install the VMM console on a VM.
