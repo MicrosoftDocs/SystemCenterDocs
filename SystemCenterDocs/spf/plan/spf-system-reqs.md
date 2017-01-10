@@ -5,7 +5,7 @@ description: This article provides information about system requirements for SPF
 author:  rayne-wiselman
 ms.author: raynew
 manager:  cfreeman
-ms.date:  01/10/2016
+ms.date:  01/10/2017
 ms.topic:  article
 ms.prod:  system-center-threshold
 ms.technology:  service-provider-foundation
