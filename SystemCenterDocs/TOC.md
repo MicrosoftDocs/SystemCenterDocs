@@ -391,7 +391,7 @@
 #######[Run ilo command](orch/manage/run-ilo-command.md)
 #######[Run oa command](orch/manage/run-oa-command.md)
 ##### [Hewlett Packard Operations Manager](orch/manage/hp-operations-manager-integration-pack.md)
-###### [Hewlett Packard Operations Manager Activities(orch/manage/hp-operations-manager-activities.md)
+###### [Hewlett Packard Operations Manager Activities](orch/manage/hp-operations-manager-activities.md)
 #######[Acknowledge message](orch/manage/acknowledge-message.md)
 #######[Add annotation to message](orch/manage/add-annotation-to-message.md)
 #######[Create message](orch/manage/create-message.md)
