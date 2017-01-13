@@ -15,8 +15,7 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-Get Data Source
-===============
+# Get Data Source
 
 Applies To: System Center 2016 - Orchestrator
 
@@ -33,8 +32,7 @@ The activity publishes all of the data from the required and optional properties
 
 <br><br><strong>Important </strong><br>The Protect Data Source activity does not support adding the FileSystem datasource type to a DPM Protection Group. If you need to protect file system datasources, you must use the Run DPM PowerShell Script activity to add FileSystem datasource types to a protection group.<br><br>
 
-Get Data Source Required Properties
------------------------------------
+## Get Data Source Required Properties
 
 |   |   |
 |----------------------|-----------------------------------------------------------------------------------|
@@ -42,8 +40,7 @@ Get Data Source Required Properties
 | Data Source Location | Production Server or Protection Group   |
 | Name   | The name of the target for this activity (computer name or protection group name) |
 
-Get Data Source Filters
------------------------
+## Get Data Source Filters
 
 |   |   |
 |------------------------------------------|---------------------------------------------------------------------------|

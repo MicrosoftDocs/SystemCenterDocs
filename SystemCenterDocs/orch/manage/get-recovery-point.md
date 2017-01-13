@@ -15,8 +15,7 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-Get Recovery Point
-==================
+# Get Recovery Point
 
 Applies To: System Center 2016 - Orchestrator
 
@@ -24,8 +23,7 @@ The Get Recovery Point activity is used in a runbook that queries a data source 
 
 The activity publishes all of the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
 
-Get Recovery Point Required Properties
---------------------------------------
+## Get Recovery Point Required Properties
 
 |   |   |
 |----------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -33,8 +31,7 @@ Get Recovery Point Required Properties
 | Selection   | Options are:Latest- the most recent recovery point associated with the data sourceAll - a list of all the data points associated with the data source (can return multiple values) |
 | Data Source ID | The unique identifier (GUID) of the data source for the recovery point, which can be obtained via the Get Data Source activity.   |
 
-Get Recovery Point Filters
---------------------------
+## Get Recovery Point Filters
 
 |   |   |
 |-----------------------------------|------------------------------------------------------------------------------------------|
@@ -63,8 +60,7 @@ Get Recovery Point Filters
 | UtcRepresentedPointInTime   | The universal coordinated time of the represented point in time   |
 | WriterID   | The unique identifier (GUID) for the writer   |
 
-Get Recovery Point Published Data
----------------------------------
+## Get Recovery Point Published Data
 
 |   |   |
 |-----------------------------------|-----------------------------------------------------------------------------------|

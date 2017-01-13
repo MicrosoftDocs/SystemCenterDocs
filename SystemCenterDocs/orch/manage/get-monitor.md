@@ -15,8 +15,7 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-Get Monitor
-===========
+# Get Monitor
 
 Applies To: System Center 2016 - Orchestrator
 
@@ -24,8 +23,7 @@ The Get Monitor activity is used in a runbook to retrieve monitoring activities 
 
 The following tables list the filters, properties, and published data for this activity. The activity publishes all of the data from the required and optional properties into published data.
 
-Get Monitor Filters
--------------------
+## Get Monitor Filters
 
 |   |   |
 |-----------------------------|-----------------------------------------------------------------------------------------------------------|
@@ -43,8 +41,7 @@ Get Monitor Filters
 | Path   | The path to the Operations Manager monitoring object   |
 | StateLastModified   | The date and time that the alert state was last changed   |
 
-Get Monitor Published Data
---------------------------
+## Get Monitor Published Data
 
 |   |   |
 |---------------------------------------------|-----------------------------------------------------------------------------------------------------------|

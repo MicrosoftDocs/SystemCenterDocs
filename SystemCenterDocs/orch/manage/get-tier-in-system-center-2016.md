@@ -15,8 +15,7 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-Get Tier in System Center 2016
-==============================
+# Get Tier in System Center 2016
 
 Applies To: System Center 2016 - Orchestrator
 
@@ -24,8 +23,7 @@ The Get Tier activity is used in a runbook to returns data on all tiers within t
 
 The activity publishes all of the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
 
-Get Tier Filters
-----------------
+## Get Tier Filters
 
 | **Element**   | **Description** | **Valid Values** |
 |:---|:---|:---|
@@ -41,8 +39,7 @@ Get Tier Filters
 | All Vms Accessible |   |   |
 | Enabled   |   |   |
 
-Get Tier Published Data
------------------------
+## Get Tier Published Data
 
 | **Element**   | **Description** | **Valid Values** |
 |:---|:---|:---|
@@ -61,8 +58,8 @@ Get Tier Published Data
 | Enabled   |   |   |
 | Marked for deletion   |   |   |
 
-See Also
---------
+## See Also
+
 
 #### Other Resources
 

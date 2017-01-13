@@ -15,8 +15,7 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-Get Datastore Capacity Activity
-===============================
+# Get Datastore Capacity Activity
 
 Applies To: System Center 2016 - Orchestrator
 
@@ -46,8 +45,7 @@ The activity publishes all of the data from the required and optional properties
 | Free Space   | The total amount of available space.   | Integer   |
 | Percent Free | The amount of available space as a percentage of the available capacity. | Integer   |
 
-Configuring the Get Datastore Capacity Activity
------------------------------------------------
+## Configuring the Get Datastore Capacity Activity
 
 The following procedure describes the steps required to configure a Get Datastore Capacity activity.
 

@@ -15,8 +15,7 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-Get Cluster Properties Activity
-===============================
+# Get Cluster Properties Activity
 
 Applies To: System Center 2016 - Orchestrator
 
@@ -53,8 +52,7 @@ The activity publishes all of the data from the required and optional properties
 | Total CPU (MHz)   | The total CPU MHz available on the virtual machine cluster.   | Integer   |
 | Total Memory (MB)   | The total memory available on the virtual machine cluster.   | Integer   |
 
-Configuring the Get Cluster Properties Activity
------------------------------------------------
+## Configuring the Get Cluster Properties Activity
 
 The following procedure describes the steps required to configure a Get Cluster Properties activity.
 

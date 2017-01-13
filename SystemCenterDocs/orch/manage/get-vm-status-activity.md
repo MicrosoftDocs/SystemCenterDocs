@@ -15,8 +15,7 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-Get VM Status Activity
-======================
+# Get VM Status Activity
 
 Applies To: System Center 2016 - Orchestrator
 
@@ -57,8 +56,7 @@ The activity publishes all of the data from the required and optional properties
 | VM Path   | The full path of the virtual machine on the vCenter server.   | String   |
 | VM UUID   | The UUID of the virtual machine as assigned by the vCenter server.   | String   |
 
-Configuring the Get VM Status Activity
---------------------------------------
+## Configuring the Get VM Status Activity
 
 The following procedure describes the steps required to configure a Get VM Status activity.
 

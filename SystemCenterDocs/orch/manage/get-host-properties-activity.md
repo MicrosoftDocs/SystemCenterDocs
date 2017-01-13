@@ -15,8 +15,7 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-Get Host Properties Activity
-============================
+# Get Host Properties Activity
 
 Applies To: System Center 2016 - Orchestrator
 
@@ -53,8 +52,7 @@ The activity publishes all of the data from the required and optional properties
 | Reboot Required   | Indicates whether a reboot is required.   | True@br False   |
 | vMotion Enabled   | Indicates whether vMotion is enabled.   | True@br False   |
 
-Configuring the Get Host Properties Activity
---------------------------------------------
+## Configuring the Get Host Properties Activity
 
 The following procedure describes the steps required to configure a Get Host Properties activity.
 

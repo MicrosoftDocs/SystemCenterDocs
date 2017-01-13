@@ -15,8 +15,7 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-Get Resource Pools Activity
-===========================
+# Get Resource Pools Activity
 
 Applies To: System Center 2016 - Orchestrator
 
@@ -44,8 +43,7 @@ The activity publishes all of the data from the required and optional properties
 | Resource Pool | A list of resource pool paths within the vCenter server. | String   |
 |:---|:---|:---|
 
-Configuring the Get Resource Pools Activity
--------------------------------------------
+## Configuring the Get Resource Pools Activity
 
 The following procedure describes the steps required to configure a Get Resource Pools activity.
 

@@ -15,8 +15,7 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-Get VM List Activity
-====================
+# Get VM List Activity
 
 Applies To: System Center 2016 - Orchestrator
 
@@ -57,8 +56,7 @@ The activity publishes all of the data from the required and optional properties
 | VM Name  | The name of the VM.   | String   |
 | VM Path  | The full path of the VM on the vCenter server. | String   |
 
-Configuring the Get VM List Activity
-------------------------------------
+## Configuring the Get VM List Activity
 
 The following procedure describes the steps required to configure a Get VM List activity.
 

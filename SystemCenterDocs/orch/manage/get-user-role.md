@@ -15,8 +15,7 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-Get User Role
-=============
+# Get User Role
 
 Applies To: System Center 2016 - Orchestrator
 
@@ -24,18 +23,15 @@ Returns data on all the user roles within the VMM server
 
 <br><br><strong>Important </strong><br>When designating a computer, you must specify it using the FQDN. FQDN names are case sensitive.<br><br>
 
-Get User Role Required Properties
----------------------------------
+## Get User Role Required Properties
 
 None
 
-Get User Role Optional Properties
----------------------------------
+## Get User Role Optional Properties
 
 None
 
-Get User Role Filters
----------------------
+## Get User Role Filters
 
 | Element   | Description   | Valid Values   |
 |:---|:---|:---|
@@ -60,8 +56,7 @@ Get User Role Filters
 | VM Instance Resource Names   |   |   |
 | VM template Resource Names   |   |   |
 
-Get User RolePublished Data
----------------------------
+## Get User RolePublished Data
 
 | Element   | Description   | Valid Values |
 |:---|:---|:---|

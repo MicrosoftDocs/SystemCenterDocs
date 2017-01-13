@@ -15,8 +15,7 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-Get Move Request Statistics
-===========================
+# Get Move Request Statistics
 
 Applies To: System Center 2016 - Orchestrator
 
@@ -24,13 +23,11 @@ You can use the Get Move Request Statistics activity to retrieve statistical inf
 
 The following tables list the optional properties, filters, and published data for this activity.
 
-Required properties for Get Move Request Statistics
----------------------------------------------------
+## Required properties for Get Move Request Statistics
 
 This activity has no required properties.
 
-Filters for Get Move Request Statistics
----------------------------------------
+## Filters for Get Move Request Statistics
 
 | **Element**   | **Description**   | **Valid values**   |
 |:---|:---|:---|

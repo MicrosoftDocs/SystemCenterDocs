@@ -15,8 +15,7 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-Get Network Adapter
-===================
+# Get Network Adapter
 
 Applies To: System Center 2016 - Orchestrator
 
@@ -24,8 +23,7 @@ The Get Network Adapter activity is used to retrieve an existing Virtual Network
 
 The activity publishes all of the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
 
-Get Network Adapter Filters
----------------------------
+## Get Network Adapter Filters
 
 | Element   | Description   | Valid Values |
 |:---|:---|:---|
@@ -49,8 +47,7 @@ Get Network Adapter Filters
 | VM ID   | The unique identifier (GUID) of the virtual machine for which the network adapter is being created.   |   |
 | VMW Adapter Index   | The index number of the Virtual Network Adapter   |   |
 
-Get Network Adapter Published Data
-----------------------------------
+## Get Network Adapter Published Data
 
 | Element   | Description   | Valid Values |
 |:---|:---|:---|

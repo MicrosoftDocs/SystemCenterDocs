@@ -15,8 +15,7 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-Get Disk
-========
+# Get Disk
 
 Applies To: System Center 2016 - Orchestrator
 
@@ -24,8 +23,7 @@ The Get Disk activity is used to retrieve an existing virtual disk based on the 
 
 The activity publishes all of the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
 
-Get Disk Required Properties
-----------------------------
+## Get Disk Required Properties
 
 | Element   | Description   | Valid Values |
 |:---|:---|:---|
@@ -43,8 +41,7 @@ Get Disk Required Properties
 | Virtual Disk Drive Name | The name of the virtual disk drive   |   |
 | VM ID   | The unique identifier (GUID) of the virtual machine for which the virtual disk was created |   |
 
-Get Disk Published Data
------------------------
+## Get Disk Published Data
 
 | Element   | Description   | Valid Values |
 |:---|:---|:---|

@@ -15,8 +15,7 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-Get Message
-===========
+# Get Message
 
 Applies To: System Center 2016 - Orchestrator
 
@@ -24,8 +23,7 @@ The Get Message activity retrieves message from a management server according to
 
 The following tables list the required properties and published data for this activity. For more information on configuring activities, see [HP Operations Manager Activities](hp-operations-manager-activities.md).
 
-Get Message Filters
--------------------
+## Get Message Filters
 
 | Element   | Description   | Filters   | Value Type   |
 |:---|:---|:---|:---|
@@ -59,8 +57,7 @@ Get Message Filters
 | Number of Annotations   | Number of annotations that have been added to the message.   | Equals<br>Does not equal<br>Is less than<br>Is less than or equal to<br>Is greater than<br>Is greater than or equal to   | Integer   |
 | Source   | Contains the name and version of the template that created the message.   | Equals<br>Does not equa<br>lContains<br>Does not contain<br>Matches pattern<br>Does not match pattern<br>Starts with<br>Ends with | String   |
 
-Get Message Published Data
---------------------------
+## Get Message Published Data
 
 | Element   | Description   | Value Type |
 |:---|:---|:---|
@@ -104,8 +101,7 @@ Get Message Published Data
 
 <br><br><strong>Tip </strong><br> When editing filters for numeric fields, the **Filter Settings** dialog may change the **Is less than** and **Is greater than** relations to **Is less than or equal to** and **Is greater than or equal to**. To avoid inadvertently modifying the filter, click **Cancel** to dismiss the Filter Settings dialog without committing the change. <br><br>
 
-Other Activities
-----------------
+## Other Activities
 
 The Integration Pack for HP Operations Manager integration contains the following additional activities:
 

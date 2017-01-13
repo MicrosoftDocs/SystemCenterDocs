@@ -15,8 +15,7 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-Get Checkpoint
-==============
+# Get Checkpoint
 
 Applies To: System Center 2016 - Orchestrator
 
@@ -24,8 +23,7 @@ The Get Checkpoint activity is used to retrieve a virtual machine checkpoint bas
 
 The activity publishes all of the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
 
-Get Checkpoint Filters
-----------------------
+## Get Checkpoint Filters
 
 | Element   | Description   | Valid Values |
 |:---|:---|:---|
@@ -42,8 +40,7 @@ Get Checkpoint Filters
 | Parent Checkpoint ID | The unique identifier (GUID) of the parent of the checkpoint   |   |
 | VM ID   | The unique identifier (GUID) of the virtual machine for which the checkpoint was created   |   |
 
-Get Checkpoint Published Data
------------------------------
+## Get Checkpoint Published Data
 
 | Element   | Description   | Valid Values |
 |:---|:---|:---|

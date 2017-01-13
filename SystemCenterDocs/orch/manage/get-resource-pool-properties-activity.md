@@ -15,8 +15,7 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-Get Resource Pool Properties Activity
-=====================================
+# Get Resource Pool Properties Activity
 
 Applies To: System Center 2016 - Orchestrator
 
@@ -70,8 +69,7 @@ The activity publishes all of the data from the required and optional properties
 | Resource Pool Path   | The path of the resource pool.   | String   |
 | Virtual Machine Path   | The paths of all the virtual machines in the resource pool.   | String   |
 
-Configuring the Get Resource Pool Properties Activity
------------------------------------------------------
+## Configuring the Get Resource Pool Properties Activity
 
 The following procedure describes the steps required to configure a Get Resource Pool Properties activity.
 

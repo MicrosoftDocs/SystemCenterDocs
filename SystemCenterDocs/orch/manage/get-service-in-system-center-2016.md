@@ -15,8 +15,7 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-Get Service in System Center 2016
-=================================
+# Get Service in System Center 2016
 
 Applies To: System Center 2016 - Orchestrator
 
@@ -24,8 +23,7 @@ The Get Service activity is used in a runbook to return data on all of the servi
 
 The activity publishes all of the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
 
-Get Service Filters
--------------------
+## Get Service Filters
 
 | **Element**   | **Description** | **Valid Values** |
 |:---|:---|:---|
@@ -67,8 +65,7 @@ Get Service Filters
 | User Role ID   |   |   |
 | User Role Name   |   |   |
 
-Get Service Published Data
---------------------------
+## Get Service Published Data
 
 | **Element**   | **Description** | **Valid Values** |
 |:---|:---|:---|
@@ -109,8 +106,8 @@ Get Service Published Data
 | User Role ID   |   |   |
 | User Role Name   |   |   |
 
-See Also
---------
+## See Also
+
 
 #### Other Resources
 

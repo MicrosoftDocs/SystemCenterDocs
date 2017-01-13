@@ -15,8 +15,7 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-Get DPM Server Capacity
-=======================
+# Get DPM Server Capacity
 
 Applies To: System Center 2016 - Orchestrator
 
@@ -26,16 +25,14 @@ The Data Protection Manager server's storage pool returns capacity information i
 
 The activity publishes all of the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
 
-Get DPM Server Required Properties
-----------------------------------
+## Get DPM Server Required Properties
 
 |   |   |
 |---------|----------------------------------------------------------------------------------------------------------------------------------------------|
 | Element | Sample Value   |
 | Name   | The name of the Data Protection Manager connection to use for this activity, which also specifies the server to query for available capacity |
 
-Get DPM Server Published Data
------------------------------
+## Get DPM Server Published Data
 
 |   |   |
 |-----------------------|----------------------------------------------------------------------------------------------|

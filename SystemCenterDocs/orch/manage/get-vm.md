@@ -15,8 +15,7 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-Get VM
-======
+# Get VM
 
 Applies To: System Center 2016 - Orchestrator
 
@@ -24,8 +23,8 @@ The Get VM activity is used to retrieve an existing VM based on the filters you 
 
 The activity publishes all of the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
 
-Get VM Filters
---------------
+## Get VM Filters
+------
 
 | Element   | Description   | Valid Values |
 |:---|:---|:---|
@@ -104,8 +103,7 @@ Get VM Filters
 | VM Name   | The name of the virtual machine   |   |
 | VM Platform ID   | The unique identifier (GUID) of the virtual machine inside the platform, for example, Hyper-V, VMware, or Virtual Server   |   |
 
-Get VM Published Data
----------------------
+## Get VM Published Data
 
 | Element   | Description   | Valid Values |
 |:---|:---|:---|

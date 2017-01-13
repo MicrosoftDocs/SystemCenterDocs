@@ -15,8 +15,7 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-Get VM Properties Activity
-==========================
+# Get VM Properties Activity
 
 Applies To: System Center 2016 - Orchestrator
 
@@ -49,8 +48,7 @@ The activity publishes all of the data from the required and optional properties
 | Memory MB   | The memory allocated to the VM in megabytes.   | String   |
 | VM Path   | The path of the virtual machine in the vSphere hierarchy.   | String   |
 
-Configuring the Get VM Properties Activity
-------------------------------------------
+## Configuring the Get VM Properties Activity
 
 The following procedure describes the steps required to configure a Get VM Properties activity.
 

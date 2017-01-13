@@ -15,8 +15,7 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-Get Host Datastores Activity
-============================
+# Get Host Datastores Activity
 
 Applies To: System Center 2016 - Orchestrator
 
@@ -45,8 +44,7 @@ The activity publishes all of the data from the required and optional properties
 |:---|:---|:---|
 | Host   | Identifier of the host   | String   |
 
-Configuring the Get Host Datastores Activity
---------------------------------------------
+## Configuring the Get Host Datastores Activity
 
 The following procedure describes the steps required to configure a Get Host Datastores activity.
 

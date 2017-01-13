@@ -15,8 +15,7 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-Get User Role Quota in System Center 2016
-=========================================
+# Get User Role Quota in System Center 2016
 
 Applies To: System Center 2016 - Orchestrator
 
@@ -24,18 +23,15 @@ The Get User Role Quota activity is used in a runbook to return information abou
 
 The activity publishes all of the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
 
-Get User Role Quota Required Properties
----------------------------------------
+## Get User Role Quota Required Properties
 
 This activity has no required properties.
 
-Get User Role Quota Optional Properties
----------------------------------------
+## Get User Role Quota Optional Properties
 
 This activity has no optional properties.
 
-Get User Role Quota Filters
----------------------------
+## Get User Role Quota Filters
 
 | Element   | Description   | Valid Values   |
 |:---|:---|:---|
@@ -60,8 +56,7 @@ Get User Role Quota Filters
 | VM Instance Resource Names   |   |   |
 | VM template Resource Names   |   |   |
 
-Get User Role Quota Published Data
-----------------------------------
+## Get User Role Quota Published Data
 
 | Element   | Description   | Valid Values |
 |:---|:---|:---|
@@ -85,8 +80,8 @@ Get User Role Quota Published Data
 | SQL Profile Resource Names   |   |   |
 | Service Configuration Resource Names |   |   |
 
-See Also
---------
+## See Also
+
 
 #### Other Resources
 
