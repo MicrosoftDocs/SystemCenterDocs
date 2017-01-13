@@ -15,8 +15,7 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-Delete Network Adapter Activity in System Center 2016
-=====================================================
+# Delete Network Adapter Activity in System Center 2016
 
 Applies To: System Center 2016 - Orchestrator
 
@@ -44,8 +43,7 @@ The following tables list the required and optional properties and the published
 |:---|:---|:---|
 | MAC Address | The MAC address of the network adapter to remove. The formats "00:11:22:33:44:55" and "00-11-22-33-44-55" are accepted. | String   |
 
-To Configure the Delete Network Adapter Activity
-------------------------------------------------
+## To Configure the Delete Network Adapter Activity
 
 The following procedure describes the steps required to configure a Delete Network Adapter activity.
 

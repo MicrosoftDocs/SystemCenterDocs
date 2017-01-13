@@ -15,8 +15,7 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-Delete VM Activity
-==================
+# Delete VM Activity
 
 Applies To: System Center 2016 - Orchestrator
 
@@ -44,8 +43,7 @@ The activity publishes all of the data from the required and optional properties
 | VM Path | The path to the virtual machine that was deleted | String   |
 |:---|:---|:---|
 
-Configuring the Delete VM Activity
-----------------------------------
+## Configuring the Delete VM Activity
 
 The following procedure describes the steps required to configure a Delete VM activity.
 

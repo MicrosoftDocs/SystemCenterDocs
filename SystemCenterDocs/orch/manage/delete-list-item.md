@@ -15,8 +15,7 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-Delete List Item
-================
+# Delete List Item
 
 Applies To: System Center 2016 - Orchestrator
 
@@ -24,21 +23,18 @@ The **Delete List Item** activity is used in a runbook to delete an item from a 
 
 The following tables list the required properties and published data for this activity.
 
-Delete List Item Required Properties
-------------------------------------
+## Delete List Item Required Properties
 
 | **Element** | **Description**   | **Valid values** |
 |:---|:---|:---|
 | ID   | The ID of the list item to be deleted.   | Integer   |
 | List Name   | The name of the SharePoint list that contains the item to be deleted. | String   |
 
-Delete List Item Optional Properties
-------------------------------------
+## Delete List Item Optional Properties
 
 There are no optional properties for this runbook activity.
 
-Delete List Item Published Data
--------------------------------
+## Delete List Item Published Data
 
 | **Element**   | **Description**   | **Value type** |
 |:---|:---|:---|
@@ -46,8 +42,8 @@ Delete List Item Published Data
 | List Name   | The name of the SharePoint list that contained the item that was deleted. | String   |
 | SharePoint Site | The URL of the SharePoint site.   | String   |
 
-See Also
---------
+## See Also
+
 
 #### Other Resources
 

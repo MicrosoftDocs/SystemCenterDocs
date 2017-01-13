@@ -15,8 +15,7 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-Delete VM Disk Activity in System Center 2016
-=============================================
+# Delete VM Disk Activity in System Center 2016
 
 Applies To: System Center 2016 - Orchestrator
 
@@ -48,8 +47,7 @@ The following tables list the required and optional properties and the published
 | SCSI Unit Key   | The SCSI unit key of the SCSI controller.   | Integer   |
 | Delete Disk File | Determines if the underlying .vmdk file of the virtual disk will be deleted from the data store. A value of True removes the disk from the virtual machine and deletes the underlying .vmdk file. A value of False removes the disk but preserves the underlying .vmdk file. | Boolean   |
 
-To Configure the Delete VM Disk Activity
-----------------------------------------
+## To Configure the Delete VM Disk Activity
 
 The following procedure describes the steps required to configure a Delete VM Disk activity.
 
