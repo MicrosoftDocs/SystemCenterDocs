@@ -15,8 +15,7 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-Add VM Disk Activity
-====================
+# Add VM Disk Activity
 
 Applies To: System Center 2016 - Orchestrator
 
@@ -55,8 +54,7 @@ The activity publishes all of the data from the required and optional properties
 | VM Path   | The path of the virtual machine that this disk belongs to.   | String   |
 | SCSI Controller Type(available only in System Center 2016) | The type of SCSI controller to add if one does not exist on the chosen SCSI bus. | String   |
 
-Configuring the Add VM Disk Activity
-------------------------------------
+## Configuring the Add VM Disk Activity
 
 The following procedure describes the steps required to configure an Add VM Disk activity.
 

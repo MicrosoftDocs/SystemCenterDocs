@@ -15,8 +15,7 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-Add Annotation to Message
-=========================
+# Add Annotation to Message
 
 Applies To: System Center 2016 - Orchestrator
 
@@ -24,16 +23,14 @@ The Add Annotation to Message activity is used in a runbook to add an annotation
 
 The following tables list the required properties and published data for this activity. For more information on configuring activities, see [HP Operations Manager Activities](hp-operations-manager-activities.md).
 
-Add Annotation to Message Required Properties
----------------------------------------------
+## Add Annotation to Message Required Properties
 
 | Element   | Description   | Valid Values | Look up |
 |:---|:---|:---|:---|
 | Message ID   | The ID of the message to add the annotation to. | String   | No   |
 | Annotation Text | The text of the annotation to add.   | String   | No   |
 
-Add Annotation to Message Published Data
-----------------------------------------
+## Add Annotation to Message Published Data
 
 | Element   | Description   | Value Type |
 |:---|:---|:---|
@@ -46,8 +43,7 @@ Add Annotation to Message Published Data
 
 <br><br><strong>Tip </strong><br> When used in conjunction with the Create Message activity care must be taken to ensure that the Message ID is associated with an original message. Using the Message ID of a duplicate message that has been correlated by HP Operations Manager will cause the Add Annotation to Message activity to fail. <br><br>
 
-Other Activities
-----------------
+## Other Activities
 
 The Integration Pack for HP Operations Manager integration contains the following additional activities:
 

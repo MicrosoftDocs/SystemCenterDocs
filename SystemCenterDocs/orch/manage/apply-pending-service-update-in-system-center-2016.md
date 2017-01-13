@@ -15,8 +15,7 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-Apply Pending Service Update in System Center 2016
-==================================================
+# Apply Pending Service Update in System Center 2016
 
 Applies To: System Center 2016 - Orchestrator
 
@@ -24,25 +23,22 @@ The Apply Pending Service Update activity is used in a runbook to apply the pend
 
 The activity publishes all of the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
 
-Apply Pending Service Update Required Properties
-------------------------------------------------
+## Apply Pending Service Update Required Properties
 
 | **Element**  | **Description** | **Valid Values** |
 |:---|:---|:---|
 | Service Name |   |   |
 
-Apply Pending Service Update Optional Properties
-------------------------------------------------
+## Apply Pending Service Update Optional Properties
 
 There are no optional properties for this activity.
 
-Apply Pending Service Update Published Data
--------------------------------------------
+## Apply Pending Service Update Published Data
 
 There is no published data for this activity.
 
-See Also
---------
+## See Also
+
 
 #### Other Resources
 

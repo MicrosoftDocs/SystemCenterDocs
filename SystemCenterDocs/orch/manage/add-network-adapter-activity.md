@@ -15,8 +15,7 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-Add Network Adapter Activity
-============================
+# Add Network Adapter Activity
 
 Applies To: System Center 2016 - Orchestrator
 
@@ -50,8 +49,7 @@ The activity publishes all of the data from the required and optional properties
 | Network   | The network that the adapter is connected to   | String   |
 | VM path   | The path of the virtual machine that the adapter belongs to   | String   |
 
-Configuring the Add Network Adapter Activity
---------------------------------------------
+## Configuring the Add Network Adapter Activity
 
 The following procedure describes the steps required to configure an Add Network Adapter activity.
 

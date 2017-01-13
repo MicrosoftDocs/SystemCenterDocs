@@ -15,8 +15,7 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-Add VM Endpoint
-===============
+# Add VM Endpoint
 
 Applies To: System Center 2016 - Orchestrator
 
@@ -28,8 +27,7 @@ The **Add VM Endpoint** activity adds an external endpoint to the specified virt
 
 The activity publishes all of the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
 
-Add VM Endpoint Required Properties
------------------------------------
+## Add VM Endpoint Required Properties
 
 | **Element**   | **Description**   | **Valid Values** |
 |:---|:---|:---|
@@ -42,13 +40,11 @@ Add VM Endpoint Required Properties
 | Endpoint Protocol   | Specifies the transport protocol for the endpoint.   | TCP, UDP   |
 | Wait for Completion  | Whether to wait for this operation to complete in Windows Azure before moving on to the next activity. | True, False   |
 
-Add VM Endpoint Optional Properties
------------------------------------
+## Add VM Endpoint Optional Properties
 
 There are no optional properties for this activity.
 
-Add VM Endpoint Published Data
-------------------------------
+## Add VM Endpoint Published Data
 
 | **Element**   | **Description**   | **Valuestype** |
 |:---|:---|:---|

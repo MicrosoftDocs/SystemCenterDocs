@@ -15,15 +15,13 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-Active Directory Activities
-===========================
+# Active Directory Activities
 
 Applies To: System Center 2016 - Orchestrator
 
 The following configuration instructions apply to all activities in this integration pack.
 
-Activity properties
--------------------
+## Activity properties
 
 Each activity has a set of required or optional properties that define the configuration of that activity. This includes how it connects to other activities or how the activity performs its actions. You can view or modify activity properties in the Runbook Designer.
 
@@ -92,8 +90,8 @@ Some activities are expected to take a specific amount of time to complete. If t
 
 For more information about Orchestrator events, see [Activity Events](https://technet.microsoft.com/en-us/library/hh489611.aspx).
 
-Published data
---------------
+## Published data
+------
 
 Published data is the foundation of a working runbook. It is the data produced as a result of the actions of an activity. This data is published to an internal data bus that is unique for each runbook. Subsequent activities in the runbook can subscribe to this data and use it in their configuration. The link conditions also use this information to add decision-making capabilities to runbooks.
 
@@ -109,8 +107,8 @@ An activity can subscribe to data only from the activities that are linked befor
 
 For a list of the data elements published by each activity, see the Published Data tables in the activity topic. For information about the common published data items, see [Common Published Data](https://technet.microsoft.com/en-us/library/e339c027-4c69-43e5-a59b-ac7ea0a676c8#CommonPublishedData).
 
-Activities
-----------
+## Activities
+--
 
 This integration pack adds the Microsoft Active Directory category to the **Activity** pane in the Runbook Designer. This category contains the following activities:
 
