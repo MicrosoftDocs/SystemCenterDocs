@@ -37,7 +37,7 @@ See [Deploying the VMWare VSphere Integration Pack](deploying-the-vmware-vsphere
 
 
 ## Known Issues
-----
+
 
 You might see the following issues when using this VMware vSphere integration pack.
 

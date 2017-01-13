@@ -36,12 +36,10 @@ Each activity contains a set of required or optional properties. These define ho
 In the activity properties dialog box, various tabs provide access to general and specific settings for the activity. The number of available tabs for object properties will vary according to the activity.
 
 ## General tab
----
 
 The **General** tab contains the **Name** and **Description** properties for the activity. By default, the **Name** of the activity is the same as its activity type and the **Description** is blank. You can modify these properties to provide a more specific name or to add a description as necessary.
 
 ## Properties tab
-------
 
 The **Properties** tab contains properties that are specific to the activity. All activities in this integration pack have the **Configuration Name** property on the **Properties** or **Filters** tab. The **Configuration Name** property is used to specify the connection to Windows Azure.
 
@@ -114,7 +112,7 @@ An activity can only subscribe to data from the activities that occur before it 
 For a list of the data elements published by each activity, see the **Published Data** tables in the activity topic. For information about the common published data items, see [Common Published Data](https://technet.microsoft.com/en-us/library/e339c027-4c69-43e5-a59b-ac7ea0a676c8#CommonPublishedData).
 
 ## Activities
---
+
 
 This integration pack adds the **Windows Azure** category to the **Activity** pane in the Runbook Designer. This category contains the following activities:
 
