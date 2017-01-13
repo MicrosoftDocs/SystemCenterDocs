@@ -15,8 +15,7 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-VMware vSphere Activities
-=========================
+# VMware vSphere Activities
 
 Applies To: System Center 2016 - Orchestrator
 
@@ -86,8 +85,7 @@ This integration pack adds the VMware vSphere category to the **Activities** pan
 
 [Take VM Snapshot Activity](take-vm-snapshot-activity.md)
 
-Common Configuration Instructions for All Activities
-----------------------------------------------------
+## Common Configuration Instructions for All Activities
 
 The following configuration instructions apply to all activities in this integration pack. Links to this section are included in the configuration instructions for each activity.
 

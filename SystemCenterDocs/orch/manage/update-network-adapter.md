@@ -15,8 +15,7 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-Update Network Adapter
-======================
+# Update Network Adapter
 
 Applies To: System Center 2016 - Orchestrator
 
@@ -24,15 +23,13 @@ The Update Network Adapter activity is used to make changes to an existing netwo
 
 The activity publishes all of the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
 
-Update Network Adapter Required Properties
-------------------------------------------
+## Update Network Adapter Required Properties
 
 | Element   | Description   | Valid Values |
 |:---|:---|:---|
 | Virtual Network Adapter ID | The unique identifier (GUID) for the Virtual Network Adapter |   |
 
-Update Network Adapter Optional Properties
-------------------------------------------
+## Update Network Adapter Optional Properties
 
 | Element   | Description   | Valid Values |
 |:---|:---|:---|
@@ -44,8 +41,7 @@ Update Network Adapter Optional Properties
 | Virtual Network ID | The unique identifier (GUID) of the Virtual Network specified at the host level of the Virtual Machine Manager configuration   |   |
 | VLAN ID   | A numeric identifier in the range 1 through 4094 for the Network VLAN   |   |
 
-Update Network Adapter Published Data
--------------------------------------
+## Update Network Adapter Published Data
 
 | Element   | Description   | Valid Values |
 |:---|:---|:---|

@@ -15,8 +15,7 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-Update Deployment Status
-========================
+# Update Deployment Status
 
 Applies To: System Center 2016 - Orchestrator
 
@@ -24,8 +23,7 @@ The Update Deployment Status activity initiates a change in deployment status. I
 
 The activity publishes all of the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
 
-Update Deployment Status Required Properties
---------------------------------------------
+## Update Deployment Status Required Properties
 
 | **Element**   | **Description**   | **Valid values**   |
 |:---|:---|:---|
@@ -34,13 +32,11 @@ Update Deployment Status Required Properties
 | Deployment Status   | The new status for the deployment.   | Running, Suspended  |
 | Wait for Completion | Whether to wait for this operation to complete in Windows Azure before moving on to the next activity. | True, False   |
 
-Update Deployment Status Optional Properties
---------------------------------------------
+## Update Deployment Status Optional Properties
 
 There are no optional properties for this runbook activity.
 
-Update Deployment Status Published Data
----------------------------------------
+## Update Deployment Status Published Data
 
 | **Element**   | **Description**   | **Value type** |
 |:---|:---|:---|
@@ -66,8 +62,8 @@ Update Deployment Status Published Data
 | Wait for Completion   | Whether to wait for this operation to complete in Windows Azure before moving on to the next activity. | Boolean   |
 | Deployment Status   | The new status of the deployment.   | String   |
 
-See Also
---------
+## See Also
+
 
 #### Other Resources
 

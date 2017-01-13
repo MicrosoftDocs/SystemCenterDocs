@@ -15,8 +15,7 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-Update List Item
-================
+# Update List Item
 
 Applies To: System Center 2016 - Orchestrator
 
@@ -24,21 +23,18 @@ The **Update List Item** activity is used in a runbook to update an item in a Mi
 
 The following tables list the required properties and Published Data for this activity. Additional optional properties are generated, which are based on the SharePoint list that is retrieved when you define the activity.
 
-Update List Item Required Properties
-------------------------------------
+## Update List Item Required Properties
 
 | **Element** | **Description**   | **Valid values** |
 |:---|:---|:---|
 | ID   | The ID of the list item to be updated.   | Integer   |
 | List Name   | The name of the SharePoint list that contains the item to be updated. | String   |
 
-Update List Item Optional Properties
-------------------------------------
+## Update List Item Optional Properties
 
 There are no optional properties for this runbook activity.
 
-Update List Item Published Data
--------------------------------
+## Update List Item Published Data
 
 | **Element**   | **Description**   | **Value type** |
 |:---|:---|:---|
@@ -51,8 +47,8 @@ Tips
 
 You can use comma-separated values to specify input values for multi-choice fields.
 
-See Also
---------
+## See Also
+
 
 #### Other Resources
 

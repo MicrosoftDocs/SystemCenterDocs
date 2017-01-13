@@ -15,8 +15,7 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-Update Object
-=============
+# Update Object
 
 Applies To: System Center 2016 - Orchestrator
 
@@ -26,8 +25,7 @@ The following published data element is specific to Update Object activity. Addi
 
 <br><br><strong>Note </strong><br>To resolve an incident, if you don't set the **Resolved Date**, the incident SLAs that use the **Resolved Date** will keep running and expire. Ensure that you set the **Resolved Date** when you resolve an incident.<br><br>
 
-Update Object Published Data
-----------------------------
+## Update Object Published Data
 
 |   |   |
 |---------------------------|-----------------------------------------------------------------|

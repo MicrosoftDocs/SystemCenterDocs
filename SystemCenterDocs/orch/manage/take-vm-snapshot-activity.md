@@ -15,8 +15,7 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-Take VM Snapshot Activity
-=========================
+# Take VM Snapshot Activity
 
 Applies To: System Center 2016 - Orchestrator
 
@@ -49,8 +48,7 @@ The activity publishes all of the data from the required and optional properties
 | Snapshot VM Memory   | Indicates whether the source virtual machine's memory was included in the snapshot. | Boolean   |
 | VM Path   | The path to the virtual machine from which the snapshot was taken.   | String   |
 
-Configuring the Take VM Snapshot Activity
------------------------------------------
+## Configuring the Take VM Snapshot Activity
 
 The following procedure describes the steps required to configure a Take VM Snapshot activity.
 

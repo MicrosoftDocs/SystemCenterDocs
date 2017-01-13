@@ -15,8 +15,7 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-Update Group
-============
+# Update Group
 
 Applies To: System Center 2016 - Orchestrator
 
@@ -26,15 +25,13 @@ This activity publishes all of the data from the required and optional propertie
 
 The following tables list the required and optional properties and published data for this activity.
 
-Required properties for Update Group activity
----------------------------------------------
+## Required properties for Update Group activity
 
 | Element   | Description   | Valid Values |
 |:---|:---|:---|
 | Distinguished Name | Distinguished name that uniquely identifies the group | String   |
 
-Optional properties for Update Group activity
----------------------------------------------
+## Optional properties for Update Group activity
 
 | Element   | Description   | Valid Values |
 |:---|:---|:---|
@@ -43,8 +40,7 @@ Optional properties for Update Group activity
 | Group Scope  | Set of flags identifying the scope of the group | String   |
 | Group Type   | Set of flags identifying the type of the group  | String   |
 
-Published data for Update Group activity
-----------------------------------------
+## Published data for Update Group activity
 
 | Name   | Description   | Value Type |
 |:---|:---|:---|

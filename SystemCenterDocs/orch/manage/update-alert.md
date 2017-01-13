@@ -15,8 +15,7 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-Update Alert
-============
+# Update Alert
 
 Applies To: System Center 2016 - Orchestrator
 
@@ -24,16 +23,14 @@ The Update Alert activity publishes all of the data from the required and option
 
 The following tables list the properties and published data for this activity. The activity publishes all of the data from the required and optional properties into published data.
 
-Update Alert Required Properties
---------------------------------
+## Update Alert Required Properties
 
 | Element   | Description   | Valid Values | Lookup   |
 |:---|:---|:---|:---|
 | Connection | The Operations Manager connection that this activity will use | String   | Yes   |
 | AlertID   | The unique ID of the alert that is being updated   | String   | Yes. Use published data |
 
-Update Alert Optional Properties
---------------------------------
+## Update Alert Optional Properties
 
 | Element   | Description   | Valid Values |
 |:---|:---|:---|
@@ -51,8 +48,7 @@ Update Alert Optional Properties
 | ResolutionState | The resolution state of the alert   | String   |
 | TicketId   | The ticket ID of the alert   | String   |
 
-Update Alert Published Data
----------------------------
+## Update Alert Published Data
 
 |   |   |
 |-----------------------------------|-----------------------------------------------------------------------------------|

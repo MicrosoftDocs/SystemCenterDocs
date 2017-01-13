@@ -15,8 +15,7 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-Update Annotation
-=================
+# Update Annotation
 
 Applies To: System Center 2016 - Orchestrator
 
@@ -24,8 +23,7 @@ The Update Annotation activity is used in a runbook to update an annotation to a
 
 The following tables list the required properties and published data for this activity. For more information on configuring activities, see [HP Operations Manager Activities](hp-operations-manager-activities.md).
 
-Update Annotation Required Properties
--------------------------------------
+## Update Annotation Required Properties
 
 | Element   | Description   | Valid Values | Look up |
 |:---|:---|:---|:---|
@@ -33,8 +31,7 @@ Update Annotation Required Properties
 | Annotation ID   | The ID of the annotation to be updated.   | String   | No   |
 | Annotation Text | The updated text for the annotation.   | String   | No   |
 
-Update Annotation Published Data
---------------------------------
+## Update Annotation Published Data
 
 | Element   | Description   | Value Type |
 |:---|:---|:---|
@@ -47,8 +44,7 @@ Update Annotation Published Data
 
 <br><br><strong>Tip </strong><br> The Update Annotation activity will succeed when provided with a **Message ID** that does not match a Message stored on the HP Operations Manager management server. <br><br>
 
-Other Activities
-----------------
+## Other Activities
 
 The Integration Pack for HP Operations Manager integration contains the following additional activities:
 

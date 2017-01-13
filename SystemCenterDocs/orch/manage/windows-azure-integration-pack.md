@@ -15,8 +15,7 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-Windows Azure Integration Pack for Orchestrator in System Center 2016
-=====================================================================
+# Windows Azure Integration Pack for Orchestrator in System Center 2016
 
 Applies To: System Center 2016 - Orchestrator
 
@@ -24,26 +23,22 @@ The Integration Pack for Windows Azure is an add-on for Orchestrator in System C
 
 Microsoft is committed to protecting your privacy, while delivering software that brings you the performance, power, and convenience you want. For more information about Orchestrator-related privacy, see the [System Center Orchestrator 2012 Privacy Statement](https://www.microsoft.com/en-us/privacystatement/EnterpriseDev/default.aspx).
 
-System Requirements
--------------------
+## System Requirements
 
 Before you install the Integration Pack for Windows Azure, the following listed software must be installed and configured. For more information about installing and configuring Orchestrator and Windows Azure, refer to the respective product documentation.
 
 -   Orchestrator in System Center 2016
 -   Windows Azure
 
-Download the Integration Pack
------------------------------
+## Download the Integration Pack
 
 To download the Windows Azure integration pack, see the [Microsoft Download Center site](https://www.microsoft.com/en-us/download/details.aspx?id=54098).
 
-Register and Deploy the Integration Pack
-----------------------------------------
+## Register and Deploy the Integration Pack
 
 After you download the integration pack file, you must register it with the Orchestrator management server and then deploy it to runbook servers and Runbook Designers. For the procedures on installing integration packs, see [How To Install an Integration Pack](https://technet.microsoft.com/system-center-docs/orch/manage/how-to-add-an-integration-pack).
 
-Configure the Windows Azure Connections
----------------------------------------
+## Configure the Windows Azure Connections
 
 A connection establishes a reusable link between Orchestrator and Windows Azure. You can specify as many connections as you require to create links to multiple Windows Azure subscriptions.
 

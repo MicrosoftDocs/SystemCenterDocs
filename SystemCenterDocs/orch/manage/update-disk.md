@@ -15,8 +15,7 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-Update Disk
-===========
+# Update Disk
 
 Applies To: System Center 2016 - Orchestrator
 
@@ -24,15 +23,13 @@ The Update Disk activity is used to add more disk space and to change some of th
 
 The activity publishes all of the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
 
-Update Disk Required Properties
--------------------------------
+## Update Disk Required Properties
 
 | Element | Description   | Valid Values |
 |:---|:---|:---|
 | VM ID   | The unique identifier (GUID) of the virtual machine for which the disk was created |   |
 
-Update Disk Optional Properties
--------------------------------
+## Update Disk Optional Properties
 
 | Element   | Description   | Valid Values |
 |:---|:---|:---|
@@ -43,8 +40,7 @@ Update Disk Optional Properties
 | Disk Type   | Dynamic or Fixed   |   |
 | Logical Unit Number (LUN) | The logical unit number (LUN) for the VHD object on an IDE or SCSI bus   |   |
 
-Update Disk Published Data
---------------------------
+## Update Disk Published Data
 
 | Element   | Description   | Valid Values |
 |:---|:---|:---|

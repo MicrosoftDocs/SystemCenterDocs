@@ -15,8 +15,7 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-Walk Upgrade Domain
-===================
+# Walk Upgrade Domain
 
 Applies To: System Center 2016 - Orchestrator
 
@@ -24,8 +23,7 @@ The **Walk Upgrade Domain** activity specifies the next upgrade domain to be wal
 
 The activity publishes all of the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
 
-Walk Upgrade Domain Required Properties
----------------------------------------
+## Walk Upgrade Domain Required Properties
 
 | **Element**   | **Description**   | **Valid values**   |
 |:---|:---|:---|
@@ -34,13 +32,11 @@ Walk Upgrade Domain Required Properties
 | Domain ID to Upgrade | A value that identifies the upgrade domain to walk.   | Integer   |
 | Wait for Completion  | Whether to wait for this operation to complete in Windows Azure before moving on to the next activity. | True, False   |
 
-Walk Upgrade Domain Optional Properties
----------------------------------------
+## Walk Upgrade Domain Optional Properties
 
 There are no optional properties for this runbook activity.
 
-Walk Upgrade Domain Published Data
-----------------------------------
+## Walk Upgrade Domain Published Data
 
 | **Element**   | **Description**   | **Value type** |
 |:---|:---|:---|
@@ -66,8 +62,8 @@ Walk Upgrade Domain Published Data
 | Domain ID to Upgrade   | A value that identifies the upgrade domain to walk.   | Integer   |
 | Wait for Completion   | Whether to wait for this operation to complete in Windows Azure before moving on to the next activity. | True, False   |
 
-See Also
---------
+## See Also
+
 
 #### Other Resources
 

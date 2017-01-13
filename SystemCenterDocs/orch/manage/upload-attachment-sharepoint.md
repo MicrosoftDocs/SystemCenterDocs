@@ -15,8 +15,7 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-Upload Attachment
-=================
+# Upload Attachment
 
 Applies To: System Center 2016 - Orchestrator
 
@@ -24,8 +23,7 @@ The **Upload Attachment** activity is used in a runbook to attach a file to a Mi
 
 The following tables list the required properties and Published Data for this activity.
 
-Upload Attachment Required Properties
--------------------------------------
+## Upload Attachment Required Properties
 
 | **Element** | **Description**   | **Valid values** |
 |:---|:---|:---|
@@ -33,13 +31,11 @@ Upload Attachment Required Properties
 | List Name   | The name of the SharePoint list that contains the item to be uploaded. | String   |
 | Source File | The absolute path of the file on the local computer to be uploaded.   | String   |
 
-Upload Attachment Optional Properties
--------------------------------------
+## Upload Attachment Optional Properties
 
 There are no optional properties for this runbook activity.
 
-Upload Attachment Published Data
---------------------------------
+## Upload Attachment Published Data
 
 | **Element**   | **Description**   | **Value type** |
 |:---|:---|:---|
@@ -48,8 +44,8 @@ Upload Attachment Published Data
 | SharePoint Site | The URL of the SharePoint site.   | String   |
 | Source File   | The absolute path of the file on the local machine to be uploaded. | String   |
 
-See Also
---------
+## See Also
+
 
 #### Other Resources
 

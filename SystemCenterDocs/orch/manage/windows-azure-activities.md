@@ -15,15 +15,13 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-Windows Azure Activities
-========================
+# Windows Azure Activities
 
 Applies To: System Center 2016 - Orchestrator
 
 The following configuration instructions apply to all runbook activities that are available in the Windows Azure integration pack.
 
-Activity properties
--------------------
+## Activity properties
 
 Each activity contains a set of required or optional properties. These define how the activity connects to other activities or how the activity performs its actions. When an activity has been placed in the runbook window, you can view or modify its properties.
 
@@ -37,13 +35,13 @@ Each activity contains a set of required or optional properties. These define ho
 
 In the activity properties dialog box, various tabs provide access to general and specific settings for the activity. The number of available tabs for object properties will vary according to the activity.
 
-General tab
------------
+## General tab
+---
 
 The **General** tab contains the **Name** and **Description** properties for the activity. By default, the **Name** of the activity is the same as its activity type and the **Description** is blank. You can modify these properties to provide a more specific name or to add a description as necessary.
 
-Properties tab
---------------
+## Properties tab
+------
 
 The **Properties** tab contains properties that are specific to the activity. All activities in this integration pack have the **Configuration Name** property on the **Properties** or **Filters** tab. The **Configuration Name** property is used to specify the connection to Windows Azure.
 
@@ -72,8 +70,7 @@ Some activities use filters to determine the values that will invoke a runbook o
 -   **After**: The property of the item is after the date and time specified in the filter.
 -   **Before**: The property of the item is before the date and time specified in the filter.
 
-The Run Behavior tab
---------------------
+## The Run Behavior tab
 
 The **Run Behavior** tab contains the properties that determine how the activity handles multi-value published data and which notifications will be sent if the activity fails or runs for an excessive period of time.
 
@@ -89,8 +86,7 @@ By default, the data from a **Get** activity will be passed on as multiple indiv
 
 A **Get** activity will produce a new set of data every time it runs. The **Flatten** feature does not flatten data across multiple instances of the same activity.
 
-Time-out and failure event notifications
-----------------------------------------
+## Time-out and failure event notifications
 
 Some activities are expected to take only a limited amount of time to complete. If they do not complete within an expected tine frame, they may be stalled or there may be another issue preventing completion. You can define the number of seconds to wait for completion of the action. If the processing of the activity exceeds this time-out threshold, a platform event will be sent and the issue will be reported. You can also choose whether to generate a platform event if the activity returns a failure.
 
@@ -100,8 +96,8 @@ Some activities are expected to take only a limited amount of time to complete. 
 
 2.  Select **Report if activity fails to run** to generate run failure notifications.
 
-Published data
---------------
+## Published data
+------
 
 Published data is the data produced as a result of the actions of an activity. This data is published to an internal data bus that is unique for each runbook. Published data is the foundation of a working runbook. Subsequent activities in the runbook can subscribe to this data and use it in their configuration. Link conditions also use this information to add decision-making capabilities to runbooks.
 
@@ -117,8 +113,8 @@ An activity can only subscribe to data from the activities that occur before it 
 
 For a list of the data elements published by each activity, see the **Published Data** tables in the activity topic. For information about the common published data items, see [Common Published Data](https://technet.microsoft.com/en-us/library/e339c027-4c69-43e5-a59b-ac7ea0a676c8#CommonPublishedData).
 
-Activities
-----------
+## Activities
+--
 
 This integration pack adds the **Windows Azure** category to the **Activity** pane in the Runbook Designer. This category contains the following activities:
 
@@ -248,8 +244,8 @@ This integration pack adds the **Windows Azure** category to the **Activity** pa
 
 [Walk Upgrade Domain](walk-upgrade-domain.md)
 
-See Also
---------
+## See Also
+
 
 #### Other Resources
 
