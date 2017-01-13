@@ -184,7 +184,7 @@ If an activity reports an error and indicates that a required field must be spec
 11. Click **Save** at the top of the page to save the message.
 
 ## Known Issues
-----
+
 
 -   The **Test Connection** button cannot be used to validate Service Manager 7.1 web service connections if the HP ServiceCenter 6.2 web service has been disabled.
 -   Certain permissions are required when dealing with Change tickets. These permissions are specified by assigning a user a Change Management Profile. While a user can have more than one profile, it can only belong to one profile per session. If the user is assigned more than one Change Management Profile it will automatically use the first profile in alphabetical order. To avoid confusion it is recommended that the user configured for use with the integration pack is only assigned one Change Management Profile.
