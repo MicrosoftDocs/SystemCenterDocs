@@ -15,8 +15,7 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-Modify VM Disk Activity in System Center 2016
-=============================================
+# Modify VM Disk Activity in System Center 2016
 
 Applies To: System Center 2016 - Orchestrator
 
@@ -49,8 +48,7 @@ The Modify VM Disk activity is used in a runbook to attach a virtual disk to a d
 | SCSI Bus Number   | The SCSI bus number of the SCSI controller to which the disk is attached.   | Integer   |
 | SCSI Unit Key   | The SCSI unit key of the disk.   | String   |
 
-To Configure the Modify VM Disk Activity
-----------------------------------------
+## To Configure the Modify VM Disk Activity
 
 The following procedure describes the steps required to configure a Modify VM Disk activity.
 

@@ -15,8 +15,7 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-System Center Integration Pack for System Center 2016 Service Manager
-=====================================================================
+# System Center Integration Pack for System Center 2016 Service Manager
 
 Applies To: System Center 2016 - Orchestrator
 
@@ -24,8 +23,7 @@ The integration pack (IP) for System Center 2016 - Service Manager is an add-in 
 
 For more information about the System Center integration pack for System Center 2016 - Service Manager and for other options for automating Service Manager, see the [System Center 2016 Integration Guide](http://go.microsoft.com/fwlink/?LinkID=275796).
 
-System Requirements
--------------------
+## System Requirements
 
 The Service Manager IP requires the following software to be installed and configured before you implement the integration:
 
@@ -39,18 +37,15 @@ The Service Manager IP requires the following software to be installed and confi
 
 For more information about how to install and configure Orchestrator or System Center 2016 SP1 and System Center 2016 - Service Manager, see the applicable product documentation.
 
-Downloading the Integration Pack
---------------------------------
+## Downloading the Integration Pack
 
 For information about how to obtain this integration pack, see [System Center 2016 - Orchestrator 2016 Component Add-ons and Extensions](https://www.microsoft.com/en-us/download/details.aspx?id=54098).
 
-Registering and Deploying the Integration Pack
-----------------------------------------------
+## Registering and Deploying the Integration Pack
 
 After you download the integration pack file, you must register it with the Orchestrator management server and then deploy it to Runbook servers and Runbook Designers. For the procedures on installing integration packs, see [How To Install an Integration Pack](https://technet.microsoft.com/system-center-docs/orch/manage/how-to-add-an-integration-pack).
 
-Configuring the System Center 2016 - Service Manager Connections
-----------------------------------------------------------------
+## Configuring the System Center 2016 - Service Manager Connections
 
 A connection establishes a reusable link between Orchestrator and a Service Manager Server. You can create as many connections as you need to specify links to multiple servers. You can also create multiple connections to the same server to allow for differences in security permissions for different user accounts.
 

@@ -15,8 +15,7 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-Migrate VM Activity
-===================
+# Migrate VM Activity
 
 Applies To: System Center 2016 - Orchestrator
 
@@ -50,8 +49,7 @@ The activity publishes all of the data from the required and optional properties
 | Move Priority   | The priority level assigned to the migration.   | String   |
 | VM Path   | The path to the virtual machine that was migrated. | String   |
 
-Configuring the Migrate VM Activity
------------------------------------
+## Configuring the Migrate VM Activity
 
 The following procedure describes the steps required to configure a Migrate VM activity.
 

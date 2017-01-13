@@ -15,8 +15,7 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-Monitor VMM Job in System Center 2016
-=====================================
+# Monitor VMM Job in System Center 2016
 
 Applies To: System Center 2016 - Orchestrator
 
@@ -24,27 +23,24 @@ The Monitor VMM Job activity is used in a runbook to monitor a VMM job.
 
 The activity publishes all of the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
 
-Monitor VMM Job Required Properties
------------------------------------
+## Monitor VMM Job Required Properties
 
 | **Element** | **Description** | **Valid Values** |
 |:---|:---|:---|
 | Job ID   |   |   |
 
-Monitor VMM Job Optional Properties
------------------------------------
+## Monitor VMM Job Optional Properties
 
 | **Element** | **Description** | **Valid Values** |
 |:---|:---|:---|
 
-Monitor VMM Job Published Data
-------------------------------
+## Monitor VMM Job Published Data
 
 | **Element** | **Description** | **Valid Values** |
 |:---|:---|:---|
 
-See Also
---------
+## See Also
+
 
 #### Other Resources
 

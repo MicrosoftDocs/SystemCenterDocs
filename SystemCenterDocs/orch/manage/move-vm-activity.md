@@ -15,8 +15,7 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-Move VM Activity
-================
+# Move VM Activity
 
 Applies To: System Center 2016 - Orchestrator
 
@@ -50,8 +49,7 @@ The activity publishes all of the data from the required and optional properties
 | Destination Resource Pool | The path of the destination resource pool.   | String   |
 | VM Path   | The path to the virtual machine that was moved.   | String   |
 
-Configuring the Move VM Activity
---------------------------------
+## Configuring the Move VM Activity
 
 The following procedure describes the steps required to configure a Move VM activity.
 

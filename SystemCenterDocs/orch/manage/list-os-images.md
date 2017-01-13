@@ -15,8 +15,7 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-List OS Images
-==============
+# List OS Images
 
 Applies To: System Center 2016 - Orchestrator
 
@@ -24,18 +23,15 @@ The **List OS Images** activity retrieves a list of the operating system images 
 
 The activity publishes all of the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
 
-List OS Images Required Properties
-----------------------------------
+## List OS Images Required Properties
 
 There are no required properties for this runbook activity.
 
-List OS Images Optional Properties
-----------------------------------
+## List OS Images Optional Properties
 
 There are no optional properties for this runbook activity.
 
-List OS Images Published Data
------------------------------
+## List OS Images Published Data
 
 | **Element**   | **Description**   | **Value type** |
 |:---|:---|:---|
@@ -49,8 +45,8 @@ List OS Images Published Data
 | Location   | The geo-location in which this media is located. The location value is derived from the storage account that contains the blob in which the media is located.  | String   |
 | Raw XML Body   | The raw XML output returned by Windows Azure for this operation.   | String   |
 
-See Also
---------
+## See Also
+
 
 #### Other Resources
 

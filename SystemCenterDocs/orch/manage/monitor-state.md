@@ -15,8 +15,7 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-Monitor State
-=============
+# Monitor State
 
 Applies To: System Center 2016 - Orchestrator
 
@@ -24,8 +23,7 @@ The Monitor State activity monitors the state of an Operations Manager object th
 
 The following tables list the properties and published data for this activity. The activity publishes all of the data from the properties into published data.
 
-Monitor State Required Properties
----------------------------------
+## Monitor State Required Properties
 
 | Element   | Description   | Valid Values   | Lookup |
 |:---|:---|:---|:---|
@@ -33,8 +31,7 @@ Monitor State Required Properties
 | Object   | The name of the Operations Manager object to be monitored   | String   | Yes   |
 | State   | The health state of the Operations Manager monitoring object   | CriticalHealthyUninitializedWarning | Yes   |
 
-Monitor State Published Data
-----------------------------
+## Monitor State Published Data
 
 |   |   |
 |---------------------------------------------|-----------------------------------------------------------------------------------------------------------|

@@ -15,8 +15,7 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-Maintenance Mode Activity
-=========================
+# Maintenance Mode Activity
 
 Applies To: System Center 2016 - Orchestrator
 
@@ -49,8 +48,7 @@ The activity publishes all of the data from the required and optional properties
 | Evacuate Powered Off VMs | If true, the activity will not succeed on a non-DRS cluster unless all powered-off virtual machines have been manually reregistered. On a DRS-enabled cluster, vCenter will automatically reregister powered off virtual machines. | Boolean   |
 | Timeout (Seconds)   | The time in seconds for the operation to complete.   | Integer   |
 
-Configuring the Maintenance Mode Activity
------------------------------------------
+## Configuring the Maintenance Mode Activity
 
 The following procedure describes the steps required to configure a Maintenance Mode activity.
 

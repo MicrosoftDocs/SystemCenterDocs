@@ -15,8 +15,7 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-System Center Integration Pack for System Center 2016 Virtual Machine Manager
-=============================================================================
+# System Center Integration Pack for System Center 2016 Virtual Machine Manager
 
 Applies To: System Center 2016 - Orchestrator
 
@@ -33,8 +32,7 @@ The System Center Integration Pack for System Center 2016 Virtual Machine Manage
 
 For more information about the System Center integration pack for System Center 2016 - Virtual Machine Manager (VMM) and for other options for automating VMM, see the [System Center 2016 Integration Guide](http://go.microsoft.com/fwlink/?LinkID=275796).
 
-System Requirements
--------------------
+## System Requirements
 
 The VMM Integration Pack requires the following software to be installed and configured before you deploy the integration. For more information about how to install and configure the Orchestrator and the System Center Virtual Machine Manager application, see the respective product documentation.
 
@@ -45,18 +43,15 @@ The VMM Integration Pack requires the following software to be installed and con
 
 The activities from the VMM Integration Pack connect to a Virtual Machine Manager Administration Console which in turn connects to a Virtual Machine Manager server. You can install this console on the Orchestrator runbook server or connect to the Administration console on another computer. If the Orchestrator components and the VMM Administration Console are installed on the same 64-bit computer, the VMM server must be in the same domain to be able to connect to it.
 
-Downloading the Integration Pack
---------------------------------
+## Downloading the Integration Pack
 
 For information about how to obtain this integration pack, see [System Center 2016 - Orchestrator 2016 Component Add-ons and Extensions](https://www.microsoft.com/en-us/download/details.aspx?id=54098).
 
-Registering and Deploying the Integration Pack
-----------------------------------------------
+## Registering and Deploying the Integration Pack
 
 After you download the integration pack file, you must register it with the Orchestrator management server and then deploy it to Runbook servers and Runbook Designers. For the procedures on installing integration packs, see [How To Install an Integration Pack](https://technet.microsoft.com/system-center-docs/orch/manage/how-to-add-an-integration-pack).
 
-Configuring Windows Management Framework
-----------------------------------------
+## Configuring Windows Management Framework
 
 The VMM Integration Pack uses Windows PowerShell Remoting to be configured between the Orchestrator runbook server and the computer running the VMM Administration Console. Windows PowerShell Remoting relies on Windows Remote Management (WinRM) to establish the communications between the two systems. You must perform the following tasks before you configure the VMM connection in the Runbook Designer.
 
@@ -130,8 +125,7 @@ By default, MaxConcurrentOperationsPerUser is set to 5. This means that a maximu
 
 <br><br><strong>Note </strong><br>The **MaxConcurrentOperationsPerUser** affects all Windows PowerShell objects whether or not they are from a runbook. If there are remote sessions from other applications, they will be included in this limit.<br><br>
 
-Configuring the System Center 2016 Virtual Machine Manager Connections
-----------------------------------------------------------------------
+## Configuring the System Center 2016 Virtual Machine Manager Connections
 
 Once you have validated the WinRM configuration, you must add a **Connection** that defines communications between the Orchestrator runbook server and a computer running the VMM Administration Console. This configuration will include the credentials required to access VMM and the authentication protocol that should be used. When you configure actions from the VMM Integration Pack, you select a configuration that defines the connection that the activity should use. You can create multiple configurations if you have multiple VMM computers to connect to.
 

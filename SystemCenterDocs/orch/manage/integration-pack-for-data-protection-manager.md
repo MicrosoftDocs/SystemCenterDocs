@@ -15,8 +15,7 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-System Center Integration Pack for System Center 2016 Data Protection Manager
-=============================================================================
+# System Center Integration Pack for System Center 2016 Data Protection Manager
 
 Applies To: System Center 2016 - Orchestrator
 
@@ -30,26 +29,22 @@ The System Center Integration Pack for System Center 2016 Data Protection Manage
 
 For more information on the System Center integration pack for DPM and for other options for automating DPM, see the [System Center 2016 Integration Guide](http://go.microsoft.com/fwlink/?LinkID=275796).
 
-System Requirements
--------------------
+## System Requirements
 
 The DPM Integration Pack requires the following software to be installed and configured before you implement the integration. For more information about how to install and configure the Orchestrator and System Center 2016 - Data Protection Manager (DPM), see the documentation for each of the following products:
 
 -   System Center 2016 integration packs require System Center 2016 - Orchestrator and System Center 2016 - Data Protection Manager (DPM)
 -   Windows Management Framework
 
-Downloading the Integration Pack
---------------------------------
+## Downloading the Integration Pack
 
 For information about how to obtain this integration pack, see [System Center 2016 - Orchestrator 2016 Component Add-ons and Extensions](https://www.microsoft.com/en-us/download/details.aspx?id=54098).
 
-Registering and Deploying the Integration Pack
-----------------------------------------------
+## Registering and Deploying the Integration Pack
 
 After you download the integration pack file, you must register it with the Orchestrator management server and then deploy it to Runbook servers and Runbook Designers. For the procedures on installing integration packs, see [How To Install an Integration Pack](https://technet.microsoft.com/system-center-docs/orch/manage/how-to-add-an-integration-pack).
 
-Windows Management Framework
-----------------------------
+## Windows Management Framework
 
 The DPM Integration Pack uses Windows PowerShell remoting on the Runbook Designer and on the Runbook Server to run commands on the DPM server. By default, Windows PowerShell 2.0 and Windows Remote Management (Win-RM) 2.0 is included and enabled in Windows Server 2008 R2.
 
@@ -101,8 +96,7 @@ By default, MaxConcurrentOperationsPerUser is set to 15 in Windows Server 2008 R
 
 WM-Management also provides provides a setting for MaxConnections (regardless of users), which is set to 25 by default in Windows Server 2008 R2. If these default settings do not meet the needs of your organization, see [About\_Remote\_Troubleshooting](http://go.microsoft.com/fwlink/?linkID=135188) for information about how to configure remote operations in Windows PowerShell.
 
-Configuring the System Center 2016 Data Protection Manager Connections
-----------------------------------------------------------------------
+## Configuring the System Center 2016 Data Protection Manager Connections
 
 Connections provide a way for you to define the way that the DPM Activities will connect to the DPM server(s) in your infrastructure. You must define at least one connection in order to use the DPM activities, but you can define as many as you need in order to connect to different DPM servers or utilize different connection settings or credentials.
 

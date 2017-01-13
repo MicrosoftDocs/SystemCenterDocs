@@ -15,8 +15,7 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-Monitor Alert
-=============
+# Monitor Alert
 
 Applies To: System Center 2016 - Orchestrator
 
@@ -24,8 +23,7 @@ The Monitor Alert activity triggers a runbook when new Operations Manager alerts
 
 The following tables list the filters, properties, and published data for this activity. The activity publishes all of the data from the required and optional properties into published data.
 
-Monitor Alert Filters
----------------------
+## Monitor Alert Filters
 
 |   |   |
 |-----------------------------------|-------------------------------------------------------------------------------------------|
@@ -82,8 +80,7 @@ Monitor Alert Filters
 | TimeResolutionStateLastModified   | The time that the resolution state of the alert was last changed   |
 | TimeResolved   | The time that the alert was resolved   |
 
-Monitor Alert Published Data
-----------------------------
+## Monitor Alert Published Data
 
 |   |   |
 |-----------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------|

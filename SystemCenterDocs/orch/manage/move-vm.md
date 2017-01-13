@@ -15,8 +15,7 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-Move VM
-=======
+# Move VM
 
 Applies To: System Center 2016 - Orchestrator
 
@@ -24,8 +23,7 @@ The Move VM activity is used to move the selected virtual machine from one netwo
 
 The activity publishes all of the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
 
-Move VM Required Properties
----------------------------
+## Move VM Required Properties
 
 | Element | Description   | Valid Values |
 |:---|:---|:---|
@@ -33,16 +31,14 @@ Move VM Required Properties
 | VM Host | The full computer name of the host computer for Virtual Machine Manager |   |
 | VM ID   | The unique identifier (GUID) of the virtual machine   |   |
 
-Move VM Optional Properties
----------------------------
+## Move VM Optional Properties
 
 | Element   | Description   | Valid Values |
 |:---|:---|:---|
 | Start VM On Target | True or False. If True, the virtual machine will be automatically started when the move is complete. |   |
 | Use LAN   | True or False   |   |
 
-Move VM Published Data
-----------------------
+## Move VM Published Data
 
 | Element   | Description   | Valid Values |
 |:---|:---|:---|

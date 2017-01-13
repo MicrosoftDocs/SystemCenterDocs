@@ -15,8 +15,7 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-List VM Disks
-=============
+# List VM Disks
 
 Applies To: System Center 2016 - Orchestrator
 
@@ -24,18 +23,15 @@ The **List VM Disks** activity retrieves a list of the disks in your image repos
 
 The activity publishes all of the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
 
-List VM Disks Required Properties
----------------------------------
+## List VM Disks Required Properties
 
 There are no required properties for this runbook activity.
 
-List VM Disks Optional Properties
----------------------------------
+## List VM Disks Optional Properties
 
 There are no optional properties for this runbook activity.
 
-List VM Disks Published Data
-----------------------------
+## List VM Disks Published Data
 
 | **Element**   | **Description**   | **Value type** |
 |:---|:---|:---|
@@ -54,8 +50,8 @@ List VM Disks Published Data
 | Raw XML Body   | The raw XML output returned by Windows Azure for this operation.   | String   |
 | Source Image Name   | The name of the OS Image from which the disk was created.   | String   |
 
-See Also
---------
+## See Also
+
 
 #### Other Resources
 
