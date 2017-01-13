@@ -181,6 +181,8 @@
 ##### [Monitoring service level objectives](om/manage/monitoring-service-level-objectives-by-using-operations-manager.md)
 ###### [Create a service level dashboard](om/manage/creating-a-service-level-dashboard.md)
 ###### [Running a service level tracking report](om/manage/running-a-service-level-tracking-report.md)
+##### [Connecting Operations Manager with other management systems](om/manage/connecting-operations-manager-with-other-management-systems.md)
+###### [How to configure a product connector subscription](om/manage/how-to-configure-a-product-connector-subscription.md)
 #### [General tasks in Operations Manager](om/manage/general-tasks-in-operations-manager.md)
 ##### [Managing alerts](om/manage/managing-alerts.md)
 ###### [How heartbeats work](om/manage/how-heartbeats-work.md)
