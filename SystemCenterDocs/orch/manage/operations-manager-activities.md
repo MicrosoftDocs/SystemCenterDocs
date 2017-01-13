@@ -38,7 +38,6 @@ In the activity properties dialog box, several tabs along the left side provide 
 This tab contains the **Name** and **Description** properties for the activity. By default, the **Name** of the activity is the same as its activity type, and the **Description** is blank. You can modify these properties to create more descriptive names or provide detailed descriptions of the actions of the activity.
 
 ## Details Tab
----
 
 This tab contains properties that are specific to the activity. All activities in this integration pack have the **Server** property at the top of the **Properties** or **Filters** tab. This property is used to specify the connection to the Operations Manager management server.
 
