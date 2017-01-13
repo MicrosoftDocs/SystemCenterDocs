@@ -1298,7 +1298,6 @@ The following tables list the System Center 2016 - Service Manager Integration P
 | Display Name   | string   |
 
 ## Package Class
------
 
 |   |   |
 |----------------------|------------|
@@ -1317,7 +1316,6 @@ The following tables list the System Center 2016 - Service Manager Integration P
 | Display Name   | string   |
 
 ## Reviewer Class
-------
 
 |   |   |
 |----------------------|------------|
@@ -1392,7 +1390,6 @@ The following tables list the System Center 2016 - Service Manager Integration P
 | Display Name   | string   |
 
 ## Problem Class
------
 
 |   |   |
 |-------------------------------|------------|
@@ -1451,7 +1448,6 @@ Class Type:
 | Display Name   | string   |
 
 ## Site Class
---
 
 |   |   |
 |-------------------------------|------------|
