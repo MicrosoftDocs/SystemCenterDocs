@@ -91,7 +91,6 @@ Some activities are expected to take a specific amount of time to complete. If t
 For more information about Orchestrator events, see [Activity Events](https://technet.microsoft.com/en-us/library/hh489611.aspx).
 
 ## Published data
-------
 
 Published data is the foundation of a working runbook. It is the data produced as a result of the actions of an activity. This data is published to an internal data bus that is unique for each runbook. Subsequent activities in the runbook can subscribe to this data and use it in their configuration. The link conditions also use this information to add decision-making capabilities to runbooks.
 
