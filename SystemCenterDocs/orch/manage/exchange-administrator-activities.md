@@ -95,7 +95,6 @@ Some activities are expected to take only a limited amount of time to complete. 
 2.  Select **Report if activity fails to run** to generate run failure notifications.
 
 ## Published data
-------
 
 Published data is the data produced as a result of the actions of an activity. This data is published to an internal data bus that is unique for each runbook. Published data is the foundation of a working runbook. Subsequent activities in the runbook can subscribe to this data and use it in their configuration. Link conditions also use this information to add decision-making capabilities to runbooks.
 
