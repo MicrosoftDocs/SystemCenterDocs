@@ -15,15 +15,13 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-Classes, Fields, and Filters
-============================
+# Classes, Fields, and Filters
 
 Applies To: System Center 2016 - Orchestrator
 
 The following tables list the System Center 2016 - Service Manager Integration Pack classes. They also list the elements that can be used as fields or filters to create, locate, retrieve, and update objects in that class.
 
-Active Directory Group Class
-----------------------------
+## Active Directory Group Class
 
 |   |   |
 |----------------------|------------|
@@ -61,8 +59,7 @@ Active Directory Group Class
 | Organization unit   | string   |
 | Objectguid   | string   |
 
-Active Directory Printer Class
-------------------------------
+## Active Directory Printer Class
 
 |   |   |
 |--------------------------------|------------|
@@ -113,8 +110,7 @@ Active Directory Printer Class
 | Notes   | string   |
 | Display Name   | string   |
 
-Active Directory User Class
----------------------------
+## Active Directory User Class
 
 |   |   |
 |----------------------|------------|
@@ -150,8 +146,7 @@ Active Directory User Class
 | Notes   | string   |
 | Display Name   | string   |
 
-Active Directory User or Group Class
-------------------------------------
+## Active Directory User or Group Class
 
 |   |   |
 |----------------------|------------|
@@ -187,8 +182,7 @@ Active Directory User or Group Class
 | Notes   | string   |
 | Display Name   | string   |
 
-Announcement Class
-------------------
+## Announcement Class
 
 |   |   |
 |----------------------|------------|
@@ -200,8 +194,7 @@ Announcement Class
 | Priority   | enum   |
 | Display Name   | string   |
 
-Billable Time Class
--------------------
+## Billable Time Class
 
 |   |   |
 |----------------------|------------|
@@ -211,8 +204,7 @@ Billable Time Class
 | ID   | string   |
 | Display Name   | string   |
 
-Business Service Class
-----------------------
+## Business Service Class
 
 |   |   |
 |-------------------------------|------------|
@@ -231,8 +223,7 @@ Business Service Class
 | Notes   | string   |
 | Display Name   | string   |
 
-Change Request Class
---------------------
+## Change Request Class
 
 |   |   |
 |----------------------------|------------|
@@ -263,8 +254,7 @@ Change Request Class
 | Actual End Date   | Date time  |
 | Display Name   | string   |
 
-Desired Configuration Management Incident Class
------------------------------------------------
+## Desired Configuration Management Incident Class
 
 |   |   |
 |-------------------------------|------------|
@@ -303,8 +293,7 @@ Desired Configuration Management Incident Class
 | Actual End Date   | date time  |
 | Display Name   | string   |
 
-Disk Partition Class
---------------------
+## Disk Partition Class
 
 |   |   |
 |----------------------|------------|
@@ -323,8 +312,7 @@ Disk Partition Class
 | Notes   | string   |
 | Display Name   | string   |
 
-Email Notification Log for Trouble Tickets Class
-------------------------------------------------
+## Email Notification Log for Trouble Tickets Class
 
 |   |   |
 |----------------------|------------|
@@ -338,8 +326,7 @@ Email Notification Log for Trouble Tickets Class
 | ID   | string   |
 | Display Name   | string   |
 
-End-user Portal Contact IT Settings Class
------------------------------------------
+## End-user Portal Contact IT Settings Class
 
 |   |   |
 |----------------------|------------|
@@ -353,8 +340,7 @@ End-user Portal Contact IT Settings Class
 | Chat response time   | string   |
 | Display Name   | string   |
 
-File Attachment Class
----------------------
+## File Attachment Class
 
 |   |   |
 |----------------------|------------|
@@ -367,8 +353,7 @@ File Attachment Class
 | ID   | string   |
 | Display Name   | string   |
 
-Manual Activity Class
----------------------
+## Manual Activity Class
 
 |   |   |
 |--------------------------|------------|
@@ -390,8 +375,7 @@ Manual Activity Class
 | Actual End Date   | date time  |
 | Display Name   | string   |
 
-Software Items Class
---------------------
+## Software Items Class
 
 |   |   |
 |------------------------|------------|
@@ -436,8 +420,7 @@ Software Items Class
 | Notes   | string   |
 | Display Name   | string   |
 
-Star Rating Class
------------------
+## Star Rating Class
 
 |   |   |
 |----------------------|------------|
@@ -448,8 +431,7 @@ Star Rating Class
 | Rating Comments   | string   |
 | Display Name   | string   |
 
-System Center Management Group Class
-------------------------------------
+## System Center Management Group Class
 
 |   |   |
 |-----------------------------------------------|------------|
@@ -483,8 +465,7 @@ System Center Management Group Class
 | Notes   | string   |
 | Display Name   | string   |
 
-Trouble Ticket Analyst Comments Class
--------------------------------------
+## Trouble Ticket Analyst Comments Class
 
 |   |   |
 |----------------------|------------|
@@ -496,8 +477,7 @@ Trouble Ticket Analyst Comments Class
 | ID   | string   |
 | Display Name   | string   |
 
-Windows Computer Class
-----------------------
+## Windows Computer Class
 
 |   |   |
 |---------------------------------------|------------|
@@ -522,8 +502,7 @@ Windows Computer Class
 | Notes   | string   |
 | Display Name   | string   |
 
-Windows Operating System Class
-------------------------------
+## Windows Operating System Class
 
 |   |   |
 |---------------------------------------|------------|
@@ -552,8 +531,7 @@ Windows Operating System Class
 | Notes   | string   |
 | Display Name   | string   |
 
-Windows Server Class
---------------------
+## Windows Server Class
 
 |   |   |
 |---------------------------------------|-----------|
@@ -578,8 +556,7 @@ Windows Server Class
 | Asset Status   | enum   |
 | Notes   | string   |
 
-Windows Server Operating System Class
--------------------------------------
+## Windows Server Operating System Class
 
 |   |   |
 |---------------------------------------|------------|
@@ -608,8 +585,8 @@ Windows Server Operating System Class
 | Notes   | string   |
 | Display Name   | string   |
 
-Program Class
--------------
+## Program Class
+-----
 
 |   |   |
 |----------------------|------------|
@@ -627,8 +604,7 @@ Program Class
 | Notes   | string   |
 | Display Name   | string   |
 
-Synchronization Status Class
-----------------------------
+## Synchronization Status Class
 
 |   |   |
 |-------------------------------|------------|
@@ -668,8 +644,7 @@ Synchronization Status Class
 | Actual End Date   | date time  |
 | Display Name   | string   |
 
-System Center Managed Computer (Client OS) Class
-------------------------------------------------
+## System Center Managed Computer (Client OS) Class
 
 |   |   |
 |---------------------------------------|------------|
@@ -695,8 +670,7 @@ System Center Managed Computer (Client OS) Class
 | Notes   | string   |
 | Display Name   | string   |
 
-System Center Managed Computer (Server OS) Class
-------------------------------------------------
+## System Center Managed Computer (Server OS) Class
 
 |   |   |
 |---------------------------------------|------------|
@@ -722,8 +696,7 @@ System Center Managed Computer (Server OS) Class
 | Notes   | string   |
 | Display Name   | string   |
 
-Physical Disk (Concrete) Class
-------------------------------
+## Physical Disk (Concrete) Class
 
 |   |   |
 |-----------------------|------------|
@@ -754,8 +727,7 @@ Physical Disk (Concrete) Class
 | Notes   | string   |
 | Display Name   | string   |
 
-Operations Manager-Generated Incident Class
--------------------------------------------
+## Operations Manager-Generated Incident Class
 
 |   |   |
 |-------------------------------|------------|
@@ -803,8 +775,7 @@ Operations Manager-Generated Incident Class
 | Actual End Date   | date time  |
 | Display Name   | string   |
 
-Configuration Manager DCM Compliant CI Class
---------------------------------------------
+## Configuration Manager DCM Compliant CI Class
 
 |   |   |
 |----------------------|------------|
@@ -818,8 +789,7 @@ Configuration Manager DCM Compliant CI Class
 | Notes   | string   |
 | Display Name   | string   |
 
-Domain User or Group Class
---------------------------
+## Domain User or Group Class
 
 |   |   |
 |----------------------|------------|
@@ -851,8 +821,7 @@ Domain User or Group Class
 | Notes   | string   |
 | Display Name   | string   |
 
-Trouble Ticket Action Log Class
--------------------------------
+## Trouble Ticket Action Log Class
 
 |   |   |
 |----------------------|------------|
@@ -865,8 +834,7 @@ Trouble Ticket Action Log Class
 | ID   | string   |
 | Display Name   | string   |
 
-Site Management Server Class
-----------------------------
+## Site Management Server Class
 
 |   |   |
 |----------------------------------------|------------|
@@ -905,8 +873,7 @@ Site Management Server Class
 | Notes   | string   |
 | Display Name   | string   |
 
-Processor (Concrete) Class
---------------------------
+## Processor (Concrete) Class
 
 |   |   |
 |----------------------|------------|
@@ -933,8 +900,7 @@ Processor (Concrete) Class
 | Notes   | string   |
 | Display Name   | string   |
 
-Microsoft Software Update Class
--------------------------------
+## Microsoft Software Update Class
 
 |   |   |
 |----------------------|------------|
@@ -952,8 +918,8 @@ Microsoft Software Update Class
 | Notes   | string   |
 | Display Name   | string   |
 
-Incident Class
---------------
+## Incident Class
+------
 
 |   |   |
 |-------------------------------|------------|
@@ -985,8 +951,7 @@ Incident Class
 | Actual End Date   | date time  |
 | Display Name   | string   |
 
-Review Activity Class
----------------------
+## Review Activity Class
 
 |   |   |
 |--------------------------------------------|------------|
@@ -1013,8 +978,7 @@ Review Activity Class
 | Actual End Date   | date time  |
 | Display Name   | string   |
 
-Management Service Watcher (Collection Management Server) Class
----------------------------------------------------------------
+## Management Service Watcher (Collection Management Server) Class
 
 |   |   |
 |-------------------------|------------|
@@ -1026,8 +990,7 @@ Management Service Watcher (Collection Management Server) Class
 | Notes   | string   |
 | Display Name   | string   |
 
-Computer (Deployed) Class
--------------------------
+## Computer (Deployed) Class
 
 |   |   |
 |----------------------|------------|
@@ -1049,8 +1012,7 @@ Computer (Deployed) Class
 | Notes   | string   |
 | Display Name   | string   |
 
-Windows Client Class
---------------------
+## Windows Client Class
 
 |   |   |
 |---------------------------------------|------------|
@@ -1075,8 +1037,7 @@ Windows Client Class
 | Notes   | string   |
 | Display Name   | string   |
 
-Network Adapter (Concrete) Class
---------------------------------
+## Network Adapter (Concrete) Class
 
 |   |   |
 |----------------------|------------|
@@ -1106,8 +1067,7 @@ Network Adapter (Concrete) Class
 | Notes   | string   |
 | Display Name   | string   |
 
-Inbound Email Rule Class
-------------------------
+## Inbound Email Rule Class
 
 |   |   |
 |----------------------|------------|
@@ -1117,8 +1077,7 @@ Inbound Email Rule Class
 | Service   | string   |
 | Display Name   | string   |
 
-Localization Class
-------------------
+## Localization Class
 
 |   |   |
 |----------------------|------------|
@@ -1128,8 +1087,7 @@ Localization Class
 | Locale ID   | int32   |
 | Display Name   | string   |
 
-Management Service Watcher Group (Collection Management Server) Class
----------------------------------------------------------------------
+## Management Service Watcher Group (Collection Management Server) Class
 
 |   |   |
 |---------------------------------------|------------|
@@ -1141,8 +1099,7 @@ Management Service Watcher Group (Collection Management Server) Class
 | Notes   | string   |
 | Display Name   | string   |
 
-Management Service Watcher Group (Gateway Management Server) Class
-------------------------------------------------------------------
+## Management Service Watcher Group (Gateway Management Server) Class
 
 |   |   |
 |---------------------------------------|------------|
@@ -1154,8 +1111,7 @@ Management Service Watcher Group (Gateway Management Server) Class
 | Notes   | string   |
 | Display Name   | string   |
 
-Text Message Notification Log for Trouble Tickets Class
--------------------------------------------------------
+## Text Message Notification Log for Trouble Tickets Class
 
 |   |   |
 |----------------------|------------|
@@ -1167,8 +1123,7 @@ Text Message Notification Log for Trouble Tickets Class
 | ID   | string   |
 | Display Name   | string   |
 
-Portal Software Deployment Activity Class
------------------------------------------
+## Portal Software Deployment Activity Class
 
 |   |   |
 |--------------------------|------------|
@@ -1194,8 +1149,7 @@ Portal Software Deployment Activity Class
 | Actual End Date   | date time  |
 | Display Name   | string   |
 
-Logical Disk (Concrete) Class
------------------------------
+## Logical Disk (Concrete) Class
 
 |   |   |
 |---------------------------------|------------|
@@ -1255,8 +1209,7 @@ Logical Disk (Concrete) Class
 | Actual End Date   | date time  |
 | Display Name   | string   |
 
-Operations Manager Connector Synchronization Class
---------------------------------------------------
+## Operations Manager Connector Synchronization Class
 
 |   |   |
 |----------------------|------------|
@@ -1268,8 +1221,7 @@ Operations Manager Connector Synchronization Class
 | Notes   | string   |
 | Display Name   | string   |
 
-System Center Managed Windows Computer Class
---------------------------------------------
+## System Center Managed Windows Computer Class
 
 |   |   |
 |---------------------------------------|------------|
@@ -1295,8 +1247,7 @@ System Center Managed Windows Computer Class
 | Notes   | string   |
 | Display Name   | string   |
 
-System Center Operations Manager Connector Class
-------------------------------------------------
+## System Center Operations Manager Connector Class
 
 |   |   |
 |---------------------------|------------|
@@ -1320,8 +1271,7 @@ System Center Operations Manager Connector Class
 | Is Discovery Data Shared  | boolean   |
 | Display Name   | string   |
 
-Windows Domain Controller Class
--------------------------------
+## Windows Domain Controller Class
 
 |   |   |
 |---------------------------------------|------------|
@@ -1347,8 +1297,8 @@ Windows Domain Controller Class
 | Notes   | string   |
 | Display Name   | string   |
 
-Package Class
--------------
+## Package Class
+-----
 
 |   |   |
 |----------------------|------------|
@@ -1366,8 +1316,8 @@ Package Class
 | Notes   | string   |
 | Display Name   | string   |
 
-Reviewer Class
---------------
+## Reviewer Class
+------
 
 |   |   |
 |----------------------|------------|
@@ -1380,8 +1330,7 @@ Reviewer Class
 | Must Vote   | boolean   |
 | Display Name   | string   |
 
-Knowledge Article Class
------------------------
+## Knowledge Article Class
 
 |   |   |
 |----------------------------|------------|
@@ -1410,8 +1359,7 @@ Knowledge Article Class
 | Notes   | string   |
 | Display Name   | string   |
 
-System Center Operations Manager Enterprise License Class
----------------------------------------------------------
+## System Center Operations Manager Enterprise License Class
 
 |   |   |
 |----------------------|------------|
@@ -1421,8 +1369,7 @@ System Center Operations Manager Enterprise License Class
 | Notes   | string   |
 | Display Name   | string   |
 
-Trouble Ticket User Comments Class
-----------------------------------
+## Trouble Ticket User Comments Class
 
 |   |   |
 |----------------------|------------|
@@ -1433,8 +1380,7 @@ Trouble Ticket User Comments Class
 | ID   | string   |
 | Display Name   | string   |
 
-Software Deployment Process Class
----------------------------------
+## Software Deployment Process Class
 
 |   |   |
 |---------------------------|------------|
@@ -1445,8 +1391,8 @@ Software Deployment Process Class
 | Description   | string   |
 | Display Name   | string   |
 
-Problem Class
--------------
+## Problem Class
+-----
 
 |   |   |
 |-------------------------------|------------|
@@ -1478,8 +1424,7 @@ Problem Class
 | Actual End Date   | date time  |
 | Display Name   | string   |
 
-Software Updates Class
-----------------------
+## Software Updates Class
 
 |   |   |
 |----------------------|------------|
@@ -1491,8 +1436,7 @@ Software Updates Class
 | Notes   | string   |
 | Display Name   | string   |
 
-Management Service Watcher (Site Management Server) Class
----------------------------------------------------------
+## Management Service Watcher (Site Management Server) Class
 
 Class Type:
 
@@ -1506,8 +1450,8 @@ Class Type:
 | Notes   | string   |
 | Display Name   | string   |
 
-Site Class
-----------
+## Site Class
+--
 
 |   |   |
 |-------------------------------|------------|
@@ -1546,8 +1490,7 @@ Site Class
 | Actual End Date   | date time  |
 | Display Name   | string   |
 
-Trouble Ticket Audit Log Class
-------------------------------
+## Trouble Ticket Audit Log Class
 
 |   |   |
 |----------------------|------------|
@@ -1558,8 +1501,7 @@ Trouble Ticket Audit Log Class
 | ID   | string   |
 | Display Name   | string   |
 
-Configuration Manager DCM Noncompliant CI Class
------------------------------------------------
+## Configuration Manager DCM Noncompliant CI Class
 
 |   |   |
 |-------------------------------|------------|
@@ -1575,8 +1517,7 @@ Configuration Manager DCM Noncompliant CI Class
 | Notes   | string   |
 | Display Name   | string   |
 
-Windows Client Operating System Class
--------------------------------------
+## Windows Client Operating System Class
 
 |   |   |
 |---------------------------------------|------------|

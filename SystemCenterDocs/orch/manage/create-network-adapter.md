@@ -15,8 +15,7 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-Create Network Adapter
-======================
+# Create Network Adapter
 
 Applies To: System Center 2016 - Orchestrator
 
@@ -24,15 +23,13 @@ The Create Network Adapter activity is used to create a new network adapter and 
 
 The activity publishes all of the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
 
-Create Network Adapter Required Properties
-------------------------------------------
+## Create Network Adapter Required Properties
 
 | Element | Description   | Valid Values |
 |:---|:---|:---|
 | VM ID   | The unique identifier (GUID) of the virtual machine for which the network adapter is being created |   |
 
-Create Network Adapter Optional Properties
-------------------------------------------
+## Create Network Adapter Optional Properties
 
 | Element   | Description   | Valid Values |
 |:---|:---|:---|
@@ -45,8 +42,7 @@ Create Network Adapter Optional Properties
 | VLAN ID   | A numeric identifier in the range 1 through 4094 for the Network VLAN   |   |
 | Logical Network   | The name or IP subnet for the logical network.   |   |
 
-Create Network Adapter Published Data
--------------------------------------
+## Create Network Adapter Published Data
 
 | Element   | Description   | Valid Values |
 |:---|:---|:---|

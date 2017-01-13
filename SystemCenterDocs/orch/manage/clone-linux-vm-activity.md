@@ -15,8 +15,7 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-Clone Linux VM Activity
-=======================
+# Clone Linux VM Activity
 
 Applies To: System Center 2016 - Orchestrator
 
@@ -88,8 +87,7 @@ DNS Suffix = a.com, b.com, c.com<br><br>
 | Virtual Processors   | The number of virtual processors assigned to the cloned virtual machine.   | Integer   |
 | DNS Suffix   | The DNS Suffix that will be assigned to the network adapter of the cloned virtual machine. For example, example.com. | String   |
 
-Configuring the Clone Linux VM Activity
----------------------------------------
+## Configuring the Clone Linux VM Activity
 
 The following procedure describes the steps required to configure a Clone Linux VM activity.
 

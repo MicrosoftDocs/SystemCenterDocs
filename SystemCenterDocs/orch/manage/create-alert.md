@@ -15,8 +15,7 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-Create Alert
-============
+# Create Alert
 
 Applies To: System Center 2016 - Orchestrator
 
@@ -28,8 +27,7 @@ The first time you run this activity in a runbook, it installs the Orchestrator 
 
 The activity publishes all of the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
 
-Create Alert Required Properties
---------------------------------
+## Create Alert Required Properties
 
 | **Element**   | **Description**   | **Valid Values**   |
 |:---|:---|:---|
@@ -49,8 +47,7 @@ Create Alert Required Properties
 | CustomField9  | The value of the ninth custom field   | String   |
 | CustomField10 | The value of the tenth custom field   | String   |
 
-Create Alert Published Data
----------------------------
+## Create Alert Published Data
 
 |   |   |
 |-----------------------------------|-------------------------------------------------------------------------------------------------|

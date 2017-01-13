@@ -15,8 +15,7 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-Create New Disk from VHD
-========================
+# Create New Disk from VHD
 
 Applies To: System Center 2016 - Orchestrator
 
@@ -24,8 +23,7 @@ The Create New Disk from VHD activity is used to create a new disk from a VHD an
 
 The activity publishes all of the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
 
-Create New Disk from VHD Required Properties
---------------------------------------------
+## Create New Disk from VHD Required Properties
 
 | Element   | Description   | Valid Values |
 |:---|:---|:---|
@@ -36,16 +34,14 @@ Create New Disk from VHD Required Properties
 | Virtual Hard Disk Path   | The location of the VHD used to create the disk   |   |
 | VM ID   | The unique identifier (GUID) of the virtual machine to which the disk will be added   |   |
 
-Create New Disk from VHD Optional Properties
---------------------------------------------
+## Create New Disk from VHD Optional Properties
 
 | Element   | Description   | Valid Values |
 |:---|:---|:---|
 | Boot Volume   | True or False. If True, the virtual machine is started from the disk.   |   |
 | System Volume | True or False. If True, the disk contains the operating system for the virtual machine. |   |
 
-Create New Disk from VHD Published Data
----------------------------------------
+## Create New Disk from VHD Published Data
 
 | Element   | Description   | Valid Values |
 |:---|:---|:---|

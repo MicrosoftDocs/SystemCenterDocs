@@ -15,8 +15,7 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-Create New Disk
-===============
+# Create New Disk
 
 Applies To: System Center 2016 - Orchestrator
 
@@ -24,8 +23,7 @@ The Create New Disk activity is used to create a new disk and add it to a virtua
 
 The activity publishes all of the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
 
-Create New Disk Required Properties
------------------------------------
+## Create New Disk Required Properties
 
 | Element   | Description   | Valid Values |
 |:---|:---|:---|
@@ -37,16 +35,14 @@ Create New Disk Required Properties
 | Size (MB)   | The size of the Virtual Disk in megabytes (MB)   |   |
 | VM ID   | The unique identifier (GUID) of the virtual machine for which the disk was created   |   |
 
-Create New Disk Optional Properties
------------------------------------
+## Create New Disk Optional Properties
 
 | Element   | Description   | Valid Values |
 |:---|:---|:---|
 | Boot Volume   | True or False. If True, the virtual machine is started from the disk.   |   |
 | System Volume | True or False. If True, the disk contains the operating system for the virtual machine. |   |
 
-Create New Disk Published Data
-------------------------------
+## Create New Disk Published Data
 
 | Element   | Description   | Valid Values |
 |:---|:---|:---|

@@ -15,8 +15,7 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-Create Affinity Group
-=====================
+# Create Affinity Group
 
 Applies To: System Center 2016 - Orchestrator
 
@@ -24,8 +23,7 @@ The **Create Affinity Group** activity creates a new affinity group for the spec
 
 The activity publishes all of the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
 
-Create Affinity Group Required Properties
------------------------------------------
+## Create Affinity Group Required Properties
 
 | **Element**   | **Description**   | **Valid values** |
 |:---|:---|:---|
@@ -34,13 +32,11 @@ Create Affinity Group Required Properties
 | Description   | A description for the affinity group.   | String   |
 | Location   | The data center location where the affinity group will be created. | String   |
 
-Create Affinity Group Optional Properties
------------------------------------------
+## Create Affinity Group Optional Properties
 
 There are no optional properties for this runbook activity.
 
-Create Affinity Group Published Data
-------------------------------------
+## Create Affinity Group Published Data
 
 | **Element**   | **Description**   | **Value type** |
 |:---|:---|:---|
@@ -49,8 +45,8 @@ Create Affinity Group Published Data
 | Description   | A description for the affinity group.   | String   |
 | Location   | The data center location where the affinity group will be created. | String   |
 
-See Also
---------
+## See Also
+
 
 #### Other Resources
 

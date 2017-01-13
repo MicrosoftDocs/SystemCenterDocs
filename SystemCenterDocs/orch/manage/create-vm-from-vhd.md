@@ -15,8 +15,7 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-Create VM from VHD
-==================
+# Create VM from VHD
 
 Applies To: System Center 2016 - Orchestrator
 
@@ -24,8 +23,7 @@ The Create VM from VHD activity is used to create a new virtual machine from an 
 
 The activity publishes all of the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
 
-Create VM from VHD Required Properties
---------------------------------------
+## Create VM from VHD Required Properties
 
 | Element   | Description   | Valid Values |
 |:---|:---|:---|
@@ -37,8 +35,7 @@ Create VM from VHD Required Properties
 | VM Host   | The full computer name of the host computer for Virtual Machine Manager   |   |
 | VM Name   | An alphanumeric name of your choice for the virtual machine   |   |
 
-Create VM from VHD Optional Properties
---------------------------------------
+## Create VM from VHD Optional Properties
 
 | Element   | Description   | Valid Values |
 |:---|:---|:---|
@@ -59,8 +56,7 @@ Create VM from VHD Optional Properties
 | Stop Action   | The behavior of the virtual machine when the virtualization service stops. The valid values are: Save, Turn Off, or Shut Down Guest OS.   |   |
 | Virtual Network  | The name of the Virtual Network   |   |
 
-Create VM from VHD Published Data
----------------------------------
+## Create VM from VHD Published Data
 
 | Element   | Description   | Valid Values |
 |:---|:---|:---|

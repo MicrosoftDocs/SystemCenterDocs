@@ -15,8 +15,7 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-Create VM Activity
-==================
+# Create VM Activity
 
 Applies To: System Center 2016 - Orchestrator
 
@@ -67,8 +66,7 @@ The activity publishes all of the data from the required and optional properties
 | Virtual Disk Size (GB)  | The size of the virtual hard disk assigned to this virtual machine.   | Integer   |
 | Virtual Machine Name   | The name of the virtual machine as it appears in the vSphere user interface.   | String   |
 
-Configuring the Create VM Activity
-----------------------------------
+## Configuring the Create VM Activity
 
 The following procedure describes the steps required to configure a Create VM activity.
 

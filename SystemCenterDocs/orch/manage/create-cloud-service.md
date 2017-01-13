@@ -15,8 +15,7 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-Create Cloud Service
-====================
+# Create Cloud Service
 
 Applies To: System Center 2016 - Orchestrator
 
@@ -24,8 +23,7 @@ The **Create Cloud Service** activity creates a new cloud service in Windows Azu
 
 The activity publishes all of the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
 
-Create Cloud Service Required Properties
-----------------------------------------
+## Create Cloud Service Required Properties
 
 | **Element**   | **Description**   | **Value type** |
 |:---|:---|:---|
@@ -35,13 +33,11 @@ Create Cloud Service Required Properties
 | Location/Affinity Group   | Whether to create the cloud service in a certain location or affinity group.   | String   |
 | Location/Affinity Group Value | The location where the cloud service will be created, or the name of an existing affinity group associated with the subscription. | String   |
 
-Create Cloud Service Optional Properties
-----------------------------------------
+## Create Cloud Service Optional Properties
 
 There are no optional properties for this runbook activity.
 
-Create Cloud Service Published Data
------------------------------------
+## Create Cloud Service Published Data
 
 | **Element**   | **Description**   | **Value type** |
 |:---|:---|:---|
@@ -51,8 +47,8 @@ Create Cloud Service Published Data
 | Location/Affinity Group   | Whether to create the cloud service in a certain location or affinity group.   | String   |
 | Location/Affinity Group Value | The location where the cloud service will be created, or the name of an existing affinity group associated with the subscription. | String   |
 
-See Also
---------
+## See Also
+
 
 #### Other Resources
 

@@ -15,8 +15,7 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-Create Message
-==============
+# Create Message
 
 Applies To: System Center 2016 - Orchestrator
 
@@ -24,16 +23,14 @@ The Create Message activity is used in a runbook to store a new message on the m
 
 The following tables list the required and optional properties and published data for this activity. For more information on configuring activities, see [HP Operations Manager Activities](hp-operations-manager-activities.md).
 
-Create Message Required Properties
-----------------------------------
+## Create Message Required Properties
 
 | Element   | Description   | Valid Values | Look up |
 |:---|:---|:---|:---|
 | Message Text | Brief description of the event that the message relates to. | String   | No   |
 | Node   | Name of the node generating the message.   | String   | No   |
 
-Create Message Optional Properties
-----------------------------------
+## Create Message Optional Properties
 
 | Element   | Description   | Valid Values   | Look up |
 |:---|:---|:---|:---|
@@ -52,8 +49,7 @@ Create Message Optional Properties
 | Time Created   | The time at which the agent created the message.   | Datetime   | Yes   |
 | Message Key   | String that enables other processes to identify messages that relate to each other.   | String   | No   |
 
-Create Message Published Data
------------------------------
+## Create Message Published Data
 
 | Element   | Description   | Value Type |
 |:---|:---|:---|
@@ -82,8 +78,7 @@ Create Message Published Data
 
 <br><br><strong>Warning </strong><br> The **Create Message** activity will succeed and publish an invalid Message ID when provided with an invalid **Node**. <br><br>
 
-Other Activities
-----------------
+## Other Activities
 
 The Integration Pack for HP Operations Manager integration contains the following additional activities:
 

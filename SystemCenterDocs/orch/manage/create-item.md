@@ -15,8 +15,7 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-Create Item
-===========
+# Create Item
 
 Applies To: System Center 2016 - Orchestrator
 
@@ -26,8 +25,7 @@ The following tables list the required properties, optional properties, and publ
 
 Additionally, this topic describes how to create recurring appointments and tasks.
 
-Create Item Required Properties (Appointment)
----------------------------------------------
+## Create Item Required Properties (Appointment)
 
 | **Element** | **Description**   | **Valid values** |
 |:---|:---|:---|
@@ -36,8 +34,7 @@ Create Item Required Properties (Appointment)
 | Subject   | The subject of the appointment   | String   |
 | Body   | Details about the appointment   | String   |
 
-Create Item Optional Properties (Appointment)
----------------------------------------------
+## Create Item Optional Properties (Appointment)
 
 | **Element**   | **Description**   | **Valid values**   |
 |:---|:---|:---|
@@ -66,24 +63,21 @@ Create Item Optional Properties (Appointment)
 | Resources   | List of resources for the meeting   | Comma separated list   |
 | Sensitivity   | Sets the sensitivity of the appointment   | Normal <br>Personal<br>Private<br>Confidential   |
 
-Create Item Required Properties (Contact Group)
------------------------------------------------
+## Create Item Required Properties (Contact Group)
 
 | **Element**  | **Description**   | **Valid values**   |
 |:---|:---|:---|
 | Display Name | The name of the contact group   | String   |
 | Members   | List of members associated with contact group | Comma separated list of email addresses |
 
-Create Item Optional Properties (Contact Group)
------------------------------------------------
+## Create Item Optional Properties (Contact Group)
 
 | **Element**   | **Description**   | **Valid values**   |
 |:---|:---|:---|
 | Categories   | List of categories that are associated with the Contact Group | Comma separated list |
 | Destination Folder | Alternative destination folder of the Contact Group   | String   |
 
-Create Item Required Properties (Task)
---------------------------------------
+## Create Item Required Properties (Task)
 
 | **Element** | **Description**   | **Valid values** |
 |:---|:---|:---|
@@ -92,8 +86,7 @@ Create Item Required Properties (Task)
 | Start Date  | The date and time that the task starts | DateTime   |
 | Subject   | The subject of the task   | String   |
 
-Create Item Optional Properties (Task)
---------------------------------------
+## Create Item Optional Properties (Task)
 
 | **Element**   | **Description**   | **Valid values**   |
 |:---|:---|:---|
@@ -120,8 +113,7 @@ Create Item Optional Properties (Task)
 | Task Status   | The status of the task   | NotStarted<br>InProgress<br>Completed<br>WaitingOnOthers<br>Deferred   |
 | Total Work   | The total amount of work spent on the task   | Integer   |
 
-Create Item Required Properties (E-Mail Message)
-------------------------------------------------
+## Create Item Required Properties (E-Mail Message)
 
 | **Element** | **Description**   | **Valid values**   |
 |:---|:---|:---|
@@ -129,8 +121,7 @@ Create Item Required Properties (E-Mail Message)
 | Subject   | Subject of the email   | String   |
 | Body   | Body of the email   | String   |
 
-Create Item Optional Properties (E-Mail Message)
-------------------------------------------------
+## Create Item Optional Properties (E-Mail Message)
 
 | **Element**   | **Description**   | **Valid values**   |
 |:---|:---|:---|
@@ -150,8 +141,7 @@ Create Item Optional Properties (E-Mail Message)
 | Sender   | The sender of the email message   | String   |
 | Sensitivity   | The sensitivity of the email   | Normal<br>Personal<br>Private<br>Confidential |
 
-Create Item Published Data
---------------------------
+## Create Item Published Data
 
 | **Element**   | **Description**   | **Value type** |
 |:---|:---|:---|
@@ -164,8 +154,7 @@ Create Item Published Data
 | Use Autodiscover   | Whether or not to use Autodiscover to check for changes | Boolean   |
 | User Name   | User name used to log on to the Exchange Server   | String   |
 
-Recurring Appointments and Tasks
---------------------------------
+## Recurring Appointments and Tasks
 
 The integration pack provides the ability to create recurring appointments and tasks. To setup a recurring appointment or task, perform the following steps:
 

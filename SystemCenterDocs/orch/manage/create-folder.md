@@ -15,8 +15,7 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-Create Folder
-=============
+# Create Folder
 
 Applies To: System Center 2016 - Orchestrator
 
@@ -26,15 +25,13 @@ This activity publishes all of the data from the required properties into publis
 
 The following tables list the required properties and published data for this activity.
 
-Create Folder Required Properties
----------------------------------
+## Create Folder Required Properties
 
 | **Element** | **Description**   | **Valid Values** |
 |:---|:---|:---|
 | Folder Path | The relative or absolute path of the folder to create. Absolute paths can be used provided the FTP server supports this feature. | String   |
 
-Create Folder Published Data
-----------------------------
+## Create Folder Published Data
 
 | **Element**   | **Description**   | **Value type** |
 |:---|:---|:---|

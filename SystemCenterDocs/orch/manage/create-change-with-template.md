@@ -15,8 +15,7 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-Create Change with Template
-===========================
+# Create Change with Template
 
 Applies To: System Center 2016 - Orchestrator
 
@@ -30,8 +29,7 @@ The configuration user interface for Create Change with Template does not provid
 
 The following published data elements are specific to Create Change with Template. Additional published data is generated based on the class that you select when you define the activity. For a list of the data elements published by each class, see [Service Manager Published Data](service-manager-published-data.md).
 
-Create Change with Template Published Data
-------------------------------------------
+## Create Change with Template Published Data
 
 |   |   |
 |-------------------|----------------------------------------------------------------------------|

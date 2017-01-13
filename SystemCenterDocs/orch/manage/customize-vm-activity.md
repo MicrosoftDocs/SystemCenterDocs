@@ -15,8 +15,7 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-Customize VM Activity
-=====================
+# Customize VM Activity
 
 Applies To: System Center 2016 - Orchestrator
 
@@ -46,8 +45,7 @@ The activity publishes all of the data from the required and optional properties
 |:---|:---|:---|
 | VM Path   | The path to the virtual machine that was customized.   | String   |
 
-Configuring the Customize VM Activity
--------------------------------------
+## Configuring the Customize VM Activity
 
 The following procedure describes the steps required to configure a Customize VM activity.
 

@@ -15,8 +15,7 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-Clone Windows VM Activity
-=========================
+# Clone Windows VM Activity
 
 Applies To: System Center 2016 - Orchestrator
 
@@ -108,8 +107,7 @@ With the exception of "Source VM/Template Path," all properties and published da
 | Virtual Processors   | The number of virtual processors assigned to the cloned virtual machine.   | Integer   |
 | Workgroup   | The name of the workgroup for the cloned virtual machine.   | String   |
 
-Configuring the Clone Windows VM Activity
------------------------------------------
+## Configuring the Clone Windows VM Activity
 
 The following procedure describes the steps required to configure a Clone Windows VM activity.
 

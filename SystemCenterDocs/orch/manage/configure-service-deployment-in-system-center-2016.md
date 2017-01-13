@@ -15,8 +15,7 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-Configure Service Deployment in System Center 2016
-==================================================
+# Configure Service Deployment in System Center 2016
 
 Applies To: System Center 2016 - Orchestrator
 
@@ -24,8 +23,7 @@ The Configure Service Deployment activity is used in a runbook to configure a VM
 
 The activity publishes all of the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
 
-Configure Service Deployment Required Properties
-------------------------------------------------
+## Configure Service Deployment Required Properties
 
 | **Element**   | **Description** | **Valid Values**   |
 |:---|:---|:---|
@@ -33,8 +31,7 @@ Configure Service Deployment Required Properties
 | Service Template Name   |   |   |
 | Deployment Target   |   | Cloud<br>HostGroup |
 
-Configure Service Deployment Optional Properties
-------------------------------------------------
+## Configure Service Deployment Optional Properties
 
 | **Element**   | **Description** | **Valid Values** |
 |:---|:---|:---|
@@ -45,14 +42,13 @@ Configure Service Deployment Optional Properties
 | Service Priority   |   |   |
 | Service Template Release |   |   |
 
-Configure Service Deployment Published Data
--------------------------------------------
+## Configure Service Deployment Published Data
 
 | **Element** | **Description** | **Valid Values** |
 |:---|:---|:---|
 
-See Also
---------
+## See Also
+
 
 #### Other Resources
 

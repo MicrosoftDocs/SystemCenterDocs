@@ -15,8 +15,7 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-Create VM from Template
-=======================
+# Create VM from Template
 
 Applies To: System Center 2016 - Orchestrator
 
@@ -24,8 +23,7 @@ The Create VM from Template activity is used to create a new virtual machine fro
 
 The activity publishes all of the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
 
-Create VM from Template Required Properties
--------------------------------------------
+## Create VM from Template Required Properties
 
 | Element   | Description   | Valid Values |
 |:---|:---|:---|
@@ -36,8 +34,7 @@ Create VM from Template Required Properties
 | Cloud Capability Profile | Specify the Cloud Apability object defined in the VMM 2016 library.   |   |
 | VM Name   | An alphanumeric name of your choice for the virtual machine   |   |
 
-Create VM from Template Optional Properties
--------------------------------------------
+## Create VM from Template Optional Properties
 
 | Element   | Description   | Valid Values |
 |:---|:---|:---|
@@ -71,8 +68,7 @@ Create VM from Template Optional Properties
 | Logical Network   | The name or IP subnet for the logical network.   |   |
 | Workgroup Name   | The name of the workgroup to join   |   |
 
-Create VM from Template Published Data
---------------------------------------
+## Create VM from Template Published Data
 
 | Element   | Description   | Valid Values |
 |:---|:---|:---|

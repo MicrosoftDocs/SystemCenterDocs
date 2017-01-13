@@ -15,8 +15,7 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-Create VM from VM
-=================
+# Create VM from VM
 
 Applies To: System Center 2016 - Orchestrator
 
@@ -24,8 +23,7 @@ The Create VM From VM activity is used to create a new virtual machine from an e
 
 The activity publishes all of the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
 
-Create VM from VM Required Properties
--------------------------------------
+## Create VM from VM Required Properties
 
 | Element   | Description   | Valid Values |
 |:---|:---|:---|
@@ -35,8 +33,7 @@ Create VM from VM Required Properties
 | Source VM ID   | The unique identifier (GUID) of the virtual machine that is the source from which this virtual machine will be created |   |
 | VM Name   | An alphanumeric name of your choice for the virtual machine   |   |
 
-Create VM from VM Optional Properties
--------------------------------------
+## Create VM from VM Optional Properties
 
 | Element   | Description   | Valid Values |
 |:---|:---|:---|
@@ -55,8 +52,7 @@ Create VM from VM Optional Properties
 | Stop Action   | The behavior of the virtual machine when the virtualization service stops. The valid values are: Save, Turn Off, or Shut Down Guest OS.   |   |
 | Virtual Network  | The name of the Virtual Network   |   |
 
-Create VM from VM Published Data
---------------------------------
+## Create VM from VM Published Data
 
 | Element   | Description   | Valid Values |
 |:---|:---|:---|

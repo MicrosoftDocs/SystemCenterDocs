@@ -15,8 +15,7 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-Create Computer
-===============
+# Create Computer
 
 Applies To: System Center 2016 - Orchestrator
 
@@ -26,15 +25,13 @@ This activity publishes all of the data from the required and optional propertie
 
 The following tables list the required and optional properties and published data for this activity.
 
-Required properties for Create Computer activity
-------------------------------------------------
+## Required properties for Create Computer activity
 
 | Element   | Description   | Valid Values |
 |:---|:---|:---|
 | Common Name | Name to identify the computer | String   |
 
-Optional properties for Create Computer activity
-------------------------------------------------
+## Optional properties for Create Computer activity
 
 | Element   | Description   | Valid Values |
 |:---|:---|:---|
@@ -45,8 +42,7 @@ Optional properties for Create Computer activity
 | Location   | Computer's location   | String   |
 | SAM Account Name   | The Security Accounts Manager (SAM) logon name used to support clients and servers running earlier versions of the operating system. | String   |
 
-Published data for Create Computer activity
--------------------------------------------
+## Published data for Create Computer activity
 
 | Name   | Description   | Value Type |
 |:---|:---|:---|
