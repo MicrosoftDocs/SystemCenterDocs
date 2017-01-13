@@ -15,8 +15,7 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-Start VM Activity
-=================
+# Start VM Activity
 
 Applies To: System Center 2016 - Orchestrator
 
@@ -44,8 +43,7 @@ The activity publishes all of the data from the required and optional properties
 | VM Path | The path of the virtual machine that was started. | String   |
 |:---|:---|:---|
 
-Configuring the Start VM Activity
----------------------------------
+## Configuring the Start VM Activity
 
 The following procedure describes the steps required to configure a Start VM activity.
 

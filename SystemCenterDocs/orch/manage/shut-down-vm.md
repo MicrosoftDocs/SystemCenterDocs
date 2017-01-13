@@ -15,8 +15,7 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-Shut Down VM
-============
+# Shut Down VM
 
 Applies To: System Center 2016 - Orchestrator
 
@@ -24,15 +23,13 @@ The Shut Down VM activity is used to shut down a stopped virtual machine. This a
 
 The activity publishes all of the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
 
-Shut Down VM Required Properties
---------------------------------
+## Shut Down VM Required Properties
 
 | Element | Description   | Valid Values |
 |:---|:---|:---|
 | VM ID   | The unique identifier (GUID) of the virtual machine |   |
 
-Shut Down VM Published Data
----------------------------
+## Shut Down VM Published Data
 
 | Element   | Description   | Valid Values |
 |:---|:---|:---|

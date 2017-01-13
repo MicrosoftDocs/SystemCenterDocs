@@ -15,8 +15,7 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-Start VM
-========
+# Start VM
 
 Applies To: System Center 2016 - Orchestrator
 
@@ -24,15 +23,13 @@ The Start VM activity is used to start a virtual machine that has been paused, s
 
 The activity publishes all of the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
 
-Start VM Required Properties
-----------------------------
+## Start VM Required Properties
 
 | Element | Description   | Valid Values |
 |:---|:---|:---|
 | VM ID   | The unique identifier (GUID) of the virtual machine |   |
 
-Start VM Published Data
------------------------
+## Start VM Published Data
 
 | Element   | Description   | Valid Values |
 |:---|:---|:---|

@@ -15,8 +15,7 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-Set VM Networks Activity
-========================
+# Set VM Networks Activity
 
 Applies To: System Center 2016 - Orchestrator
 
@@ -52,8 +51,7 @@ The activity publishes all of the data from the required and optional properties
 | Network Adapter 4 | The name of the network that the fourth network adapter is attached to. | String   |
 | VM Path   | The path to the virtual machine.   | String   |
 
-Configuring the Set VM Networks Activity
-----------------------------------------
+## Configuring the Set VM Networks Activity
 
 The following procedure describes the steps required to configure a Set VM Networks activity.
 

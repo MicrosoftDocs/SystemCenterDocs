@@ -15,8 +15,7 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-Set VM CD or DVD to ISO Image Activity
-======================================
+# Set VM CD or DVD to ISO Image Activity
 
 Applies To: System Center 2016 - Orchestrator
 
@@ -47,8 +46,7 @@ The activity publishes all of the data from the required and optional properties
 |:---|:---|:---|
 | VM Path   | The path to the virtual machine.   | String   |
 
-Configuring the Set VM CD/DVD to ISO Image Activity
----------------------------------------------------
+## Configuring the Set VM CD/DVD to ISO Image Activity
 
 The following procedure describes the steps required to configure a Set VM CD/DVD to ISO Image activity.
 

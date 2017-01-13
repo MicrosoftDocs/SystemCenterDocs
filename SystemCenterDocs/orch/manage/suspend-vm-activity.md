@@ -15,8 +15,7 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-Suspend VM Activity
-===================
+# Suspend VM Activity
 
 Applies To: System Center 2016 - Orchestrator
 
@@ -46,8 +45,7 @@ The activity publishes all of the data from the required and optional properties
 |:---|:---|:---|
 | VM Path   | The path to the virtual machine that was suspended   | String   |
 
-Configuring the Suspend VM Activity
------------------------------------
+## Configuring the Suspend VM Activity
 
 The following procedure describes the steps required to configure a Suspend VM activity.
 

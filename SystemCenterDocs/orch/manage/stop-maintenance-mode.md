@@ -15,8 +15,7 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-Stop Maintenance Mode
-=====================
+# Stop Maintenance Mode
 
 Applies To: System Center 2016 - Orchestrator
 
@@ -26,16 +25,14 @@ If you choose to take a computer (Microsoft.Windows.Computer or Microsoft.Unix.C
 
 The following tables list the properties and published data for this activity. The activity publishes all of the data from the required and optional properties into published data.
 
-Stop Maintenance Mode Required Properties
------------------------------------------
+## Stop Maintenance Mode Required Properties
 
 | Element   | Description   | Valid Values | Lookup |
 |:---|:---|:---|:---|
 | Connection | The Operations Manager connection that this activity will use   | String   | Yes   |
 | Monitor   | The name of the monitor that is being taken out of maintenance mode | String   | Yes   |
 
-Stop Maintenance Mode Published Data
-------------------------------------
+## Stop Maintenance Mode Published Data
 
 |   |   |
 |------------|--------------------------------------------------------------------------|

@@ -15,8 +15,7 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-Set Pending Service Update in System Center 2016
-================================================
+# Set Pending Service Update in System Center 2016
 
 Applies To: System Center 2016 - Orchestrator
 
@@ -24,8 +23,7 @@ The Set Pending Service Update activity is used in a runbook to set a specific s
 
 The activity publishes all of the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
 
-Set Pending Service Update Required Properties
-----------------------------------------------
+## Set Pending Service Update Required Properties
 
 | **Element**   | **Description**   | **Valid Values** |
 |:---|:---|:---|
@@ -34,13 +32,11 @@ Set Pending Service Update Required Properties
 | Service Template Release |   |   |
 | Update Type   | Applying updates to the existing (in-place) virtual machines or Deploying new virtual machines with the updated settings |   |
 
-Set Pending Service Update Optional Properties
-----------------------------------------------
+## Set Pending Service Update Optional Properties
 
 There are no optional properties for this activity.
 
-Set Pending Service Update Published Data
------------------------------------------
+## Set Pending Service Update Published Data
 
 | **Element**   | **Description** | **Value Type** |
 |:---|:---|:---|
@@ -82,8 +78,8 @@ Set Pending Service Update Published Data
 | User Role ID   |   |   |
 | User Role Name   |   |   |
 
-See Also
---------
+## See Also
+
 
 #### Other Resources
 

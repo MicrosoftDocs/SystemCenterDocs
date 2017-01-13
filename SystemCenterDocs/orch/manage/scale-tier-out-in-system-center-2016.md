@@ -15,8 +15,7 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-Scale Tier Out in System Center 2016
-====================================
+# Scale Tier Out in System Center 2016
 
 Applies To: System Center 2016 - Orchestrator
 
@@ -24,8 +23,7 @@ The Scale Tier Out activity is used in a runbook to add one virtual machine inst
 
 The activity publishes all of the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
 
-Scale Tier Out Required Properties
-----------------------------------
+## Scale Tier Out Required Properties
 
 | **Element**  | **Description** | **Valid Values**   |
 |:---|:---|:---|
@@ -34,8 +32,7 @@ Scale Tier Out Required Properties
 | Start Action |   | Default: Don't turn on the virtual machine |
 | Stop Action  |   | Default: Save State   |
 
-Scale Tier Out Optional Properties
-----------------------------------
+## Scale Tier Out Optional Properties
 
 | **Element**   | **Description**   | **Valid Values** |
 |:---|:---|:---|
@@ -43,13 +40,12 @@ Scale Tier Out Optional Properties
 | Computer Name   | The actual computer name of the virtual machine.   |   |
 | Decription   |   |   |
 
-Scale Tier Out Published Data
------------------------------
+## Scale Tier Out Published Data
 
 This activity has no published data.
 
-See Also
---------
+## See Also
+
 
 #### Other Resources
 

@@ -15,8 +15,7 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-Start Maintenance Mode
-======================
+# Start Maintenance Mode
 
 Applies To: System Center 2016 - Orchestrator
 
@@ -26,8 +25,7 @@ If you choose to put a computer (Microsoft.Windows.Computer or Microsoft.Unix.Co
 
 The activity publishes all of the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
 
-Start Maintenance Mode Required Properties
-------------------------------------------
+## Start Maintenance Mode Required Properties
 
 | Element   | Description   | Valid Values | Lookup |
 |:---|:---|:---|:---|
@@ -37,8 +35,7 @@ Start Maintenance Mode Required Properties
 | Duration   | The duration in minutes for maintenance mode. The minimum duration is 5 minutes.   | Integer   | No   |
 | Comment   | Comment text regarding maintenance mode   | String   | No   |
 
-Start Maintenance Mode Published Data
--------------------------------------
+## Start Maintenance Mode Published Data
 
 |   |   |
 |------------|--------------------------------------------------------------------------|
