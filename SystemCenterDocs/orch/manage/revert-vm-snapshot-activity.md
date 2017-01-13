@@ -15,8 +15,7 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-Revert VM Snapshot Activity
-===========================
+# Revert VM Snapshot Activity
 
 Applies To: System Center 2016 - Orchestrator
 
@@ -45,8 +44,7 @@ The activity publishes all of the data from the required and optional properties
 |:---|:---|:---|
 | Revert to Snapshot | The path of the snapshot that was reverted. | String   |
 
-Configuring the Revert VM Snapshot Activity
--------------------------------------------
+## Configuring the Revert VM Snapshot Activity
 
 The following procedure describes the steps required to configure a Revert VM Snapshot activity.
 

@@ -15,8 +15,7 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-Run OA Command
-==============
+# Run OA Command
 
 Applies To: System Center 2016 - Orchestrator
 
@@ -24,23 +23,20 @@ The **Run OA Command** activity is used in a runbook to run a command that can b
 
 The activity publishes all of the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
 
-Run OA Command Required Properties
-----------------------------------
+## Run OA Command Required Properties
 
 | **Element** | **Description**   | **Valid Values**   | **Lookup** |
 |:---|:---|:---|:---|
 | Command   | The OA command to run   | ADD EBIPA<br>ADD LDAP GROUP<br>ADD OA DNS<br>ADD SNMP TRAPRECEIVER<br>ADD USER<br>ASSIGN<br>ASSIGN OA<br>ASSIGN OA LDAP GROUP<br>DISABLE EBIPA<br>DISABLE USER<br>DOWNLOAD CONFIG<br>DOWNLOAD LDAP CERTIFICATE<br>ENABLE ALERTMAIL<br>ENABLE EBIPA<br>ENABLE HTTPS<br>ENABLE LDAP<br>ENABLE NTP<br>ENABLE SNMP<br>ENABLE TELNET<br>ENABLE TRUSTED HOSTS<br>ENABLE USER<br>ENABLE XMLREPLY<br>FORCE TAKEOVER<br>HPONCFG<br>PING<br>POWEROFF SERVER<br>POWERON SERVER<br>REBOOT SERVER<br>REMOVE EBIPA<br>REMOVE LDAP GROUP<br>RESTART OA<br>SAVE EBIPA<br>SET ALERTMAIL MAILBOX<br>SET ALERTMAIL SENDERDOMAIN<br>SET ALERTMAIL SMTPSERVER<br>SET DATE<br>SET EBIPA<br>SET EBIPA DOMAIN<br>SET EBIPA GATEWAY<br>SET EBIPA INTERCONNECT NTP<br>SET ENCLOSURE ASSET<br>SET ENCLOSURE NAME<br>SET ENCLOSURE UID<br>SET HPSIM TRUST MODE<br>SET IPCONFIG DHCP<br>SET LDAP NAME MAP<br>SET LDAP PORT<br>SET LDAP SEARCH<br>SET LDAP SERVER<br>SET NTP POLL<br>SET NTP PRIMARY<br>SET NTP SECONDARY<br>SET OA GATEWAY<br>SET OA NAME<br>SET OA UID<br>SET POWER MODE<br>SET POWER LIMIT<br>SET POWER SAVINGS<br>SET RACK NAME<br>SET SCRIPT<br>SET SERVER BOOT FIRST<br>SET SERVER BOOT ONCE<br>SET SERVER DVD<br>SET SNMP COMMUNITY<br>SET SNMP CONTACT<br>SET SNMP LOCATION<br>SET TIMEZONE<br>SET USER ACCESS<br>SET USER PASSWORD<br>SHOW ENCLOSURE FAN<br>SHOW ENCLOSURE INFO<br>SHOW ENCLOSURE LCD<br>SHOW ENCLOSURE POWERSUPPLY<br>SHOW ENCLOSURE STATUS<br>SHOW ENCLOSURE TEMP<br>SHOW INTERCONNECT INFO<br>SHOW INTERCONNECT LIST<br>SHOW INTERCONNECT STATUS<br>SHOW INTERCONNECT PORT MAP<br>SHOW OA STATUS<br>SHOW POWER<br>SHOW RACK NAME<br>SHOW SERVER DVD<br>SHOW SERVER STATUS<br>SHOW SERVER TEMP<br>UNASSIGN<br>UNASSIGN LDAP GROUP<br>UNASSIGN OA<br>UNASSIGN OA LDAP GROUP<br>UPDATE DEVICE<br>UPDATE IMAGE<br>UPDATE IMAGE SYNC<br>UPDATE SHOW<br>UPLOAD CONFIG | Yes   |
 | Fields   | Required fields for the selected command. | String   | No   |
 
-Run OA Command Optional Properties
-----------------------------------
+## Run OA Command Optional Properties
 
 | **Element** | **Description**   | **Valid Values** |   |
 |:---|:---|:---|:---|
 | Fields   | Optional fields can be added to the Fields list by clicking Select fields. | String   |   |
 
-Run OA Command Published Data
------------------------------
+## Run OA Command Published Data
 
 | **Element**   | **Description**   | **Value type** |
 |:---|:---|:---|
@@ -56,8 +52,7 @@ Run OA Command Published Data
 
 **Note** When testing a configured connection, you may get a popup window with the message **Microsoft System Center 2016 Orchestrator has stopped working** with the Application Name of **sshclient.exe**. You can choose the **Close the program** option to dismiss the window without affecting the result of the test. If the connection is good, you should see another message window reporting **Test connection succeeded.**.
 
-Other Activities
-----------------
+## Other Activities
 
 The Integration Pack for HP iLO and OA contains the following additional activities:
 

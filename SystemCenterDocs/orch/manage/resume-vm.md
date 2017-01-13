@@ -15,8 +15,7 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-Resume VM
-=========
+# Resume VM
 
 Applies To: System Center 2016 - Orchestrator
 
@@ -24,15 +23,13 @@ The Resume VM activity is used to start a virtual machine that is in a paused st
 
 The activity publishes all of the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
 
-Resume VM Required Properties
------------------------------
+## Resume VM Required Properties
 
 | Element | Description   | Valid Values |
 |:---|:---|:---|
 | VM ID   | The unique identifier (GUID) of the virtual machine |   |
 
-Resume VM Published Data
-------------------------
+## Resume VM Published Data
 
 | Element   | Description   | Valid Values |
 |:---|:---|:---|

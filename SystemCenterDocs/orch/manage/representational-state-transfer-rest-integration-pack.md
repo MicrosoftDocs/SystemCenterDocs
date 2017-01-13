@@ -15,8 +15,7 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-Representational State Transfer (REST) Integration Pack Guide for Orchestrator in System Center 2016
-====================================================================================================
+# Representational State Transfer (REST) Integration Pack Guide for Orchestrator in System Center 2016
 
 Applies To: System Center 2016 - Orchestrator
 
@@ -24,8 +23,7 @@ The integration pack for Representational State Transfer (REST) is an add-on for
 
 Microsoft is committed to protecting your privacy. For more information, see the [Privacy Statement for System Center 2016 - Orchestrator](https://www.microsoft.com/en-us/privacystatement/EnterpriseDev/default.aspx).
 
-System Requirements
--------------------
+## System Requirements
 
 The integration pack for REST requires that the following software is installed and configured before implementing the integration. For more information about installing and configuring Orchestrator, refer to the respective product documentation.
 
@@ -34,12 +32,10 @@ The integration pack for REST requires that the following software is installed 
 >[!WARNING]
 >Depending on the communication protocol used, data that is passed to 3rd party systems could be intercepted from the wire and tampered with; for example, when the protocol between the Policy Module and the 3rd party product is HTTP. The user is responsible for choosing a secure protocol, such as HTTPS, for all data transmissions between Orchestrator and any other product. |
 
-Downloading the Integration Pack
---------------------------------
+## Downloading the Integration Pack
 
 To download this integration pack, see [System Center Integration Packs](https://www.microsoft.com/en-us/download/details.aspx?id=54098).
 
-Registering and Deploying the Integration Pack
-----------------------------------------------
+## Registering and Deploying the Integration Pack
 
 After you download the integration pack file, you must register it with the Orchestrator management server and then deploy it to runbook servers and installed Runbook Designers. For the procedures on installing integration packs, see [How To Install an Integration Pack](https://technet.microsoft.com/system-center-docs/orch/manage/how-to-add-an-integration-pack).

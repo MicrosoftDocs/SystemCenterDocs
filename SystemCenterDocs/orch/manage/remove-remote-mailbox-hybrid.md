@@ -15,8 +15,7 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-Remove Remote Mailbox (Hybrid)
-==============================
+# Remove Remote Mailbox (Hybrid)
 
 Applies To: System Center 2016 - Orchestrator
 
@@ -24,15 +23,13 @@ You can use the Remove Remote Mailbox activity to delete an existing remote mail
 
 The following tables list the required properties, optional properties, and published data for this activity.
 
-Required properties for Remove Remote Mailbox (Hybrid) activity
----------------------------------------------------------------
+## Required properties for Remove Remote Mailbox (Hybrid) activity
 
 | **Element** | **Description**   | **Valid values** |
 |:---|:---|:---|
 | Identity   | Specifies the identity of the mailbox or mail user. It can be one of the following value types:<br>GUID<br>Distinguished name (DN)<br>Domain\\Account <br>User principal name (UPN)<br>LegacyExchangeDN<br>SMTP address<br>Alias | String   |
 
-Optional properties for Remove Remote Mailbox (Hybrid) activity
----------------------------------------------------------------
+## Optional properties for Remove Remote Mailbox (Hybrid) activity
 
 | **Element**   | **Description**   | **Valid values** |
 |:---|:---|:---|
@@ -40,8 +37,7 @@ Optional properties for Remove Remote Mailbox (Hybrid) activity
 | Ignore Default Scope | Instructs the command to ignore the default recipient scope setting for the Exchange Management Shell session and to use the entire forest as the scope. This allows the command to access Active Directory objects that are not currently in the default scope. <br>If you use the Ignore Default Scope property, you should be aware of the following restrictions:<br>Domain Controller property cannot be used. The command uses an appropriate global catalog server automatically.<br>Only the DN for the Identity property can be used. Other forms of identification, such as alias or GUID, are not accepted.<br>Default value is True, when selected. | True or<br>False |
 | Ignore Legal Hold   | Ignores the legal hold status of the mail user and allows you to remove the mailbox that's on legal hold. After a mailbox is removed, it cannot be included in a discovery search. Depending on the configured properties, removed mailboxes are either purged immediately or when the deleted mailbox retention period expires. Check with your organization's policy or Human Resources department before you disable a mailbox that's on legal hold.<br>Default value is True, when selected.   | True or<br>False |
 
-Published data for Remove Remote Mailbox (Hybrid) activity
-----------------------------------------------------------
+## Published data for Remove Remote Mailbox (Hybrid) activity
 
 | **Element**   | **Description**   | **Valid values** |
 |:---|:---|:---|

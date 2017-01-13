@@ -15,8 +15,7 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-Remove VM Endpoint
-==================
+# Remove VM Endpoint
 
 Applies To: System Center 2016 - Orchestrator
 
@@ -28,8 +27,7 @@ The **Remove VM Endpoint** activity removes an external endpoint from the specif
 
 The activity publishes all of the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
 
-Remove VM Endpoint Required Properties
---------------------------------------
+## Remove VM Endpoint Required Properties
 
 | **Element**   | **Description**   | **Valid Values** |
 |:---|:---|:---|
@@ -39,13 +37,11 @@ Remove VM Endpoint Required Properties
 | Endpoint Name   | Specifies the name of the external endpoint.   | String   |
 | Wait for Completion | Whether to wait for this operation to complete in Windows Azure before moving on to the next activity. | True, False   |
 
-Remove VM Endpoint Optional Properties
---------------------------------------
+## Remove VM Endpoint Optional Properties
 
 There are no optional properties for this activity.
 
-Remove VM Endpoint Published Data
----------------------------------
+## Remove VM Endpoint Published Data
 
 | **Element**   | **Description**   | **Value type** |
 |:---|:---|:---|

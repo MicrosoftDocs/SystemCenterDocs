@@ -15,8 +15,7 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-Reconfigure VM Activity
-=======================
+# Reconfigure VM Activity
 
 Applies To: System Center 2016 - Orchestrator
 
@@ -89,8 +88,7 @@ The activity publishes all of the data from the required and optional properties
 | VM Name   | The new name of the virtual machine.   | String   |
 | VM Path   | The path to the virtual machine to be reconfigured.   | String   |
 
-Configuring the Reconfigure VM Activity
----------------------------------------
+## Configuring the Reconfigure VM Activity
 
 The following procedure describes the steps required to configure a Reconfigure VM activity.
 

@@ -15,8 +15,7 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-Reboot Role Instance
-====================
+# Reboot Role Instance
 
 Applies To: System Center 2016 - Orchestrator
 
@@ -24,8 +23,7 @@ The **Reboot Role Instance** activity requests a reboot of a role instance that 
 
 The activity publishes all of the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
 
-Reboot Role Instance Required Properties
-----------------------------------------
+## Reboot Role Instance Required Properties
 
 | **Element**   | **Description**   | **Valid values**   |
 |:---|:---|:---|
@@ -34,13 +32,11 @@ Reboot Role Instance Required Properties
 | Instance Name   | The name of the role instance.   | String   |
 | Wait for Completion | Whether to wait for this operation to complete in Windows Azure before moving on to the next activity. | True, False   |
 
-Reboot Role Instance Optional Properties
-----------------------------------------
+## Reboot Role Instance Optional Properties
 
 There are no optional properties for this runbook activity.
 
-Reboot Role Instance Published Data
------------------------------------
+## Reboot Role Instance Published Data
 
 | **Element**   | **Description**   | **Value type** |
 |:---|:---|:---|
@@ -66,8 +62,8 @@ Reboot Role Instance Published Data
 | Instance Name   | The name of the role instance.   | String   |
 | Wait for Completion   | Whether to wait for this operation to complete in Windows Azure before moving on to the next activity. | Boolean   |
 
-See Also
---------
+## See Also
+
 
 #### Other Resources
 

@@ -15,8 +15,7 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-Remove VM
-=========
+# Remove VM
 
 Applies To: System Center 2016 - Orchestrator
 
@@ -24,15 +23,13 @@ The Remove VM activity is used to delete a VM that is no longer needed. The Remo
 
 The activity publishes all of the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
 
-Remove VM Required Properties
------------------------------
+## Remove VM Required Properties
 
 | Element | Description   | Valid Values |
 |:---|:---|:---|
 | VM ID   | The unique identifier (GUID) of the virtual machine |   |
 
-Remove VM Published Data
-------------------------
+## Remove VM Published Data
 
 | Element   | Description   | Valid Values |
 |:---|:---|:---|

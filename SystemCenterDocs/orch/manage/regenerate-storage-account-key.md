@@ -15,8 +15,7 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-Regenerate Storage Account Key
-==============================
+# Regenerate Storage Account Key
 
 Applies To: System Center 2016 - Orchestrator
 
@@ -28,21 +27,18 @@ The **Regenerate Storage Account Key** activity regenerates the primary or secon
 
 The activity publishes all of the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
 
-Regenerate Storage Account Key Required Properties
---------------------------------------------------
+## Regenerate Storage Account Key Required Properties
 
 | **Element**   | **Description**   | **Valid values**   |
 |:---|:---|:---|
 | Storage Account Name | The name of the storage account.   | String   |
 | Key Type   | Specifies which key to regenerate. | Primary, Secondary |
 
-Regenerate Storage Account Key Optional Properties
---------------------------------------------------
+## Regenerate Storage Account Key Optional Properties
 
 There are no optional properties for this runbook activity.
 
-Regenerate Storage Account Key Published Data
----------------------------------------------
+## Regenerate Storage Account Key Published Data
 
 | **Element**   | **Description**   | **Value type** |
 |:---|:---|:---|
@@ -50,8 +46,8 @@ Regenerate Storage Account Key Published Data
 | Secondary Key   | The secondary access key for the storage account. | String   |
 | Storage Account Name | The name of the storage account.   | String   |
 
-See Also
---------
+## See Also
+
 
 #### Other Resources
 
