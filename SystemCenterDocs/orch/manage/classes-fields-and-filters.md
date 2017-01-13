@@ -586,7 +586,6 @@ The following tables list the System Center 2016 - Service Manager Integration P
 | Display Name   | string   |
 
 ## Program Class
------
 
 |   |   |
 |----------------------|------------|
@@ -919,7 +918,6 @@ The following tables list the System Center 2016 - Service Manager Integration P
 | Display Name   | string   |
 
 ## Incident Class
-------
 
 |   |   |
 |-------------------------------|------------|
