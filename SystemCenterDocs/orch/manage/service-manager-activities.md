@@ -34,12 +34,10 @@ Each activity has a set of required or optional properties that define the confi
 In the activity properties dialog box, several tabs along the left side provide access to general and specific settings for the activity. The number of available tabs for object properties differs between different activities.
 
 ## General Tab
----
 
 This tab contains the **Name** and **Description** properties for the activity. By default, the **Name** of the activity is the same as its activity type, and the **Description** is blank. You can modify these properties to create more descriptive names or provide detailed descriptions of the actions of the activity.
 
 ## Details Tab
----
 
 This tab contains properties that are specific to the activity. All activities in this integration pack have the Connection property at the top of the **Properties** or **Filters** tab. This property is used to specify the connection to the Service Manager management server.
 
@@ -111,7 +109,7 @@ Some activities are expected to take a limited amount of time to complete. If th
 2.  Select **Report if activity fails to run** to generate run failure notifications.
 
 ## Published Data
-------
+
 
 Published data is the foundation of a working runbook. It is the data produced as a result of the actions of an activity. This data is published to an internal data bus that is unique for each runbook. Subsequent activities in the runbook can subscribe to this data and use it in their configuration. Link conditions also use this information to add decision-making capabilities to runbooks.
 
