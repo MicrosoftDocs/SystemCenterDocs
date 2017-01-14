@@ -53,15 +53,15 @@ The **Properties** tab contains properties that are specific to the activity. Al
 
 The **Monitor** and **Get** activities use filters to determine the values that will invoke a runbook or retrieve activities. Property values of potential candidates are compared to the values of the filters to determine if they meet the criteria. To specify filtering criteria, you can select one of the available methods of comparison. An option is provided to either match or not match the filter using each method. For example, the "Does not" version of a method finds any message that does not match the filter. All text filters are case sensitive. Here are the available filtering options:
 
--   **Equals**: The property of the message matches the text or number specified in the filter.<br><br>
--   **Does not equal**: The property of the message does not match the text or number specified in the filter.<br><br>
--   **Is less than**: The property of the message is less than the number specified in the filter. <br><br>
--   **Is less than or equal to**: The property of the message is less than or equal to the number specified in the filter.<br><br>
--   **Is greater than**: The property of the message is greater than the number in the filter.<br><br>
--   **Is greater than or equal to**: The property of the message is greater than or equal to the number specified in the filter.<br><br>
--   **Contains**: The property of the message contains the exact text specified in the filter. Unlike the Equals filter behavior, there can be other text surrounding the matching text. <br><br>
--   **Does not contain**: the property of the message does not contain the exact text specified in the filter. Unlike the Equals filter behavior, there can be other text surrounding the matching text.<br><br>
--   **Starts with pattern**: The property of the message starts with the exact text specified in the filter. Unlike the Equals filter behavior, there can be other text following the matching text.<br><br>
+-   **Equals**: The property of the message matches the text or number specified in the filter.
+-   **Does not equal**: The property of the message does not match the text or number specified in the filter.<
+-   **Is less than**: The property of the message is less than the number specified in the filter.
+-   **Is less than or equal to**: The property of the message is less than or equal to the number specified in the filter.
+-   **Is greater than**: The property of the message is greater than the number in the filter.
+-   **Is greater than or equal to**: The property of the message is greater than or equal to the number specified in the filter.
+-   **Contains**: The property of the message contains the exact text specified in the filter. Unlike the Equals filter behavior, there can be other text surrounding the matching text.
+-   **Does not contain**: the property of the message does not contain the exact text specified in the filter. Unlike the Equals filter behavior, there can be other text surrounding the matching text.
+-   **Starts with pattern**: The property of the message starts with the exact text specified in the filter. Unlike the Equals filter behavior, there can be other text following the matching text.
 
 ### The Run Behavior Tab
 
@@ -73,9 +73,9 @@ The **Get** activities retrieve information from another activity or outside sou
 
 By default, the data from the **Get** activity will be passed on as multiple individual outputs. The multiple outputs will invoke the next activity as many times as there are items in the output. Alternatively, you can provide a single output for the activity by enabling the **Flatten** option. When you enable this option, you must choose a formatting option:
 
--   **Separate with line breaks**. Each item is on a new line. This format is useful for creating human-readable text files for the output.<br><br>
--   **Separate with**. Each item is separated by one or more characters of your choice.<br><br>
--   **Use CSV format**. All items are in CSV (comma-separated value) format. This format is useful for importing data into spreadsheets or other applications. <br><br>
+-   **Separate with line breaks**. Each item is on a new line. This format is useful for creating human-readable text files for the output.
+-   **Separate with**. Each item is separated by one or more characters of your choice.
+-   **Use CSV format**. All items are in CSV (comma-separated value) format. This format is useful for importing data into spreadsheets or other applications. 
 
 The activity will produce a new set of data every time it runs. The **Flatten** feature does not flatten data across multiple instances of the same activity.
 

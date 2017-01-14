@@ -32,7 +32,7 @@ The following tables list the required and optional properties and the published
 
 ### Delete Network Adapter Activity Optional Properties
 
-No optional properties are provided for this activity. |
+No optional properties are provided for this activity. 
 
 ### Delete Network Adapter Activity Published Data
 
