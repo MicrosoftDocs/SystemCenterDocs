@@ -27,22 +27,20 @@ The activity publishes all of the data from the required and optional properties
 
 ### Get Cluster Properties Activity Required Properties
 
-| Element   | Description   | Valid Values | Look up |
+| Element   | Description   | Valid Values | Look up ||:---|:---|:---|:---|
 | Cluster Path | The path to the virtual machine cluster whose properties are being retrieved | String   | Yes   |
-|:---|:---|:---|:---|
+
 
 ### Get Cluster Properties Activity Optional Properties
 
-|   |
-|--------------------------------------------------------|
-| No optional properties are provided for this activity. |
+No optional properties are provided for this activity. 
 
 ### Get Cluster Properties Activity Published Data
 
 | Name   | Description   | Value Type |
-| Cluster Path   | The path of the virtual machine cluster.   | String   |
 |:---|:---|:---|
-| Datastore Names   | The names of the datastores assigned to the cluster.   | String   |
+
+| Cluster Path   | The path of the virtual machine cluster.   | String   || Datastore Names   | The names of the datastores assigned to the cluster.   | String   |
 | Effective CPU (MHz)   | The total CPU MHZ available for virtual machines.   | Integer   |
 | Effective Memory (MB)   | The total memory available for virtual machines.   | Integer   |
 | Number of CPU Cores   | The total number of CPU cores assigned to the virtual machine cluster.   | Integer   |

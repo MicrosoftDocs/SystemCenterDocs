@@ -27,21 +27,17 @@ The activity publishes all of the data from the required and optional properties
 
 ### Get Host Properties Activity Required Properties
 
-| Element | Description   | Valid Values | Look up |
+| Element | Description   | Valid Values | Look up ||:---|:---|:---|:---|
 | Host   | The name of the managed host controlled by the VMware vCenter server | String   | Yes   |
-|:---|:---|:---|:---|
 
-### Get Host Properties Activity Optional Properties
 
-|   |
-|-------------------------------------------------------|
-| No optional properties are provided for this activity |
+### Get Host Properties Activity Optional PropertiesNo optional properties are provided for this activity. 
 
 ### Get Host Properties Activity Published Data
 
 | Name   | Description   | Value Type   |
-| Connection State   | The connection state of the host.   | Connected<br> Not Responding<br> Disconnected   |
 |:---|:---|:---|
+| Connection State   | The connection state of the host.   | Connected<br> Not Responding<br> Disconnected   |
 | Host   | The identifier of the host.   | String   |
 | In Maintenance Mode | Indicates whether the host is in maintenance mode.   | True@br False   |
 | Name   | The name of the managed host.   | String   |

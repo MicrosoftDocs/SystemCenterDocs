@@ -95,11 +95,14 @@ The following tables list the required properties and published data for this ac
 | HPOM Port   | The port used to connect to the HPOM management server.   | Integer   |
 | HPOM Username   | The name of the HPOM used to connect to the HPOM management server.   | String   |
 
-<br><br><strong>Tip </strong><br> The **Get Message** activity can only retrieve Active messages from the HP Operations Manager management server. <br><br>
+>[!TIP]
+>The **Get Message** activity can only retrieve Active messages from the HP Operations Manager management server.
 
-<br><br><strong>Tip </strong><br> The maximum number of Messages that can be returned by the Get Message activity is determined by the HP Operations Manager Web Service **MaxItemsMaximum** configuration parameter. The **MaxItemsMaximum** configuration parameter has a default value of 500, however this can be increased up to 5,000 as directed in the HP Operations Manager Web Services Integration Manager documentation. <br><br>
+>[!TIP]
+>The maximum number of Messages that can be returned by the Get Message activity is determined by the HP Operations Manager Web Service **MaxItemsMaximum** configuration parameter. The **MaxItemsMaximum** configuration parameter has a default value of 500, however this can be increased up to 5,000 as directed in the HP Operations Manager Web Services Integration Manager documentation.
 
-<br><br><strong>Tip </strong><br> When editing filters for numeric fields, the **Filter Settings** dialog may change the **Is less than** and **Is greater than** relations to **Is less than or equal to** and **Is greater than or equal to**. To avoid inadvertently modifying the filter, click **Cancel** to dismiss the Filter Settings dialog without committing the change. <br><br>
+>[!TIP]
+>When editing filters for numeric fields, the **Filter Settings** dialog may change the **Is less than** and **Is greater than** relations to **Is less than or equal to** and **Is greater than or equal to**. To avoid inadvertently modifying the filter, click **Cancel** to dismiss the Filter Settings dialog without committing the change.
 
 ## Other Activities
 

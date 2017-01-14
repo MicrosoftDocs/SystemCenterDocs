@@ -28,20 +28,16 @@ The activity publishes all of the data from the required and optional properties
 ### Get VM Properties Activity Required Properties
 
 | Name   | Description   | Valid Values | Look up |
-| VM Path | The path of the virtual machine in the vSphere hierarchy. | String   | Yes   |
 |:---|:---|:---|:---|
+| VM Path | The path of the virtual machine in the vSphere hierarchy. | String   | Yes   |
 
-### Get VM Properties Activity Optional Properties
-
-|   |
-|-------------------------------------------------------|
-| No optional properties are provided for this activity |
+### Get VM Properties Activity Optional PropertiesNo optional properties are provided for this activity.
 
 ### Get VM Properties Activity Published Data
 
 | Name   | Description   | Value Type |
-| Address Type | The address type of the Network Interface MAC address   | String   |
 |:---|:---|:---|
+| Address Type | The address type of the Network Interface MAC address   | String   |
 | Hard Disks   | A list of device IDs for the virtual disks connected to the VM. | Integer   |
 | Host name   | The DNS host name assigned to the guest VM.   | String   |
 | MAC Address  | The MAC address of the VMs primary network interface.   | String   |

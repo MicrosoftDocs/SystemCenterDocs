@@ -28,20 +28,16 @@ The activity publishes all of the data from the required and optional properties
 ### Get Datastore Capacity Activity Required Properties
 
 | Element   | Description   | Valid Values | Look up |
-| Datastore | The name of the data store for which to retrieve the capacity. | String   | No   |
-|:---|:---|:---|:---|
 
-### Get Datastore Capacity Activity Optional Properties
+|:---|:---|:---|:---|| Datastore | The name of the data store for which to retrieve the capacity. | String   | No   |
 
-|   |
-|--------------------------------------------------------|
-| No optional properties are provided for this activity. |
+### Get Datastore Capacity Activity Optional PropertiesNo optional properties are provided for this activity. 
 
 ### Get Datastore Capacity Activity Published Data
 
-| Name   | Description   | Value Type |
+| Name   | Description   | Value Type ||:---|:---|:---|
 | Capacity   | The total capacity of the data store.   | Integer   |
-|:---|:---|:---|
+
 | Free Space   | The total amount of available space.   | Integer   |
 | Percent Free | The amount of available space as a percentage of the available capacity. | Integer   |
 

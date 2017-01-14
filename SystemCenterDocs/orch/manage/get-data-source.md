@@ -30,21 +30,20 @@ This activity returns the Data Source ID (DataSourceId) which is used in all act
 
 The activity publishes all of the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
 
-<br><br><strong>Important </strong><br>The Protect Data Source activity does not support adding the FileSystem datasource type to a DPM Protection Group. If you need to protect file system datasources, you must use the Run DPM PowerShell Script activity to add FileSystem datasource types to a protection group.<br><br>
+>[!IMPORTANT]
+>The Protect Data Source activity does not support adding the FileSystem datasource type to a DPM Protection Group. If you need to protect file system datasources, you must use the Run DPM PowerShell Script activity to add FileSystem datasource types to a protection group.
 
 ## Get Data Source Required Properties
 
-|   |   |
-|----------------------|-----------------------------------------------------------------------------------|
 | Element   | Sample Value   |
+|----------------------|-----------------------------------------------------------------------------------|
 | Data Source Location | Production Server or Protection Group   |
 | Name   | The name of the target for this activity (computer name or protection group name) |
 
 ## Get Data Source Filters
 
-|   |   |
-|------------------------------------------|---------------------------------------------------------------------------|
 | Element   | Sample Value   |
+|------------------------------------------|---------------------------------------------------------------------------|
 | ActivelyProtectedByDatasourceId   | 00000000-0000-0000-0000-000000000000   |
 | CanDbFilesBeRecoveredToAlternateLocation | True or False   |
 | CloudReplicaAllocationRequired   | True or False   |

@@ -28,20 +28,18 @@ The activity publishes all of the data from the required and optional properties
 ### Get Host Datastores Activity Required Properties
 
 | Element | Description   | Valid Values | Look up |
-| Host   | The path of the managed host controlled by the VMware vCenter server. | String   | Yes   |
-|:---|:---|:---|:---|
+|:---|:---|:---|:---|| Host   | The path of the managed host controlled by the VMware vCenter server. | String   | Yes   |
+
 
 ### Get Host Datastores Activity Optional Properties
 
-|   |
-|--------------------------------------------------------|
-| No optional properties are provided for this activity. |
+No optional properties are provided for this activity. 
 
 ### Get Host Datastores Activity Published Data
 
-| Name   | Description   | Value Type |
+| Name   | Description   | Value Type ||:---|:---|:---|
 | Datastore | A list of all available data stores that are connected to the specified host | String   |
-|:---|:---|:---|
+
 | Host   | Identifier of the host   | String   |
 
 ## Configuring the Get Host Datastores Activity

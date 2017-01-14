@@ -21,7 +21,8 @@ Applies To: System Center 2016 - Orchestrator
 
 Returns data on all the user roles within the VMM server
 
-<br><br><strong>Important </strong><br>When designating a computer, you must specify it using the FQDN. FQDN names are case sensitive.<br><br>
+>[!IMPORTANT]
+>When designating a computer, you must specify it using the FQDN. FQDN names are case sensitive.
 
 ## Get User Role Required Properties
 

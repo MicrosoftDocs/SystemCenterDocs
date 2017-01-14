@@ -25,25 +25,17 @@ The following tables list the required and optional properties and published dat
 
 The activity publishes all of the data from the required and optional properties into published data. Additional published data is generated based on the class that you select when you define the activity.
 
-### Get Hosts Activity Required Properties
+### Get Hosts Activity Required PropertiesNo required properties are provided for this activity. 
 
-|   |
-|--------------------------------------------------------|
-| No required properties are provided for this activity. |
-
-### Get Hosts Activity Optional Properties
-
-|   |
-|--------------------------------------------------------|
-| No optional properties are provided for this activity. |
+### Get Hosts Activity Optional PropertiesNo optional properties are provided for this activity. 
 
 ### Get Hosts Activity Published Data
 
 | Name | Description   | Value Type |
-| Host | A list of host paths managed by the vCenter server. | String   |
 |:---|:---|:---|
 
-## Configuring the Get Hosts Activity
+
+| Host | A list of host paths managed by the vCenter server. | String   |## Configuring the Get Hosts Activity
 
 The following procedure describes the steps required to configure a Get Hosts activity.
 
