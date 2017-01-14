@@ -21,9 +21,8 @@ Applies To: System Center 2016 - Orchestrator
 
 The **Delete Deployment** activity deletes the specified deployment. It is part of the **Azure Deployments** category activity.
 
-| Important   |
-|-----------------------------------------------------------------------------------------------------------------------------------------------------|
-| The delete deployment activity will delete all roles under the deployment. This includes the deletion of any virtual machines under the deployment. |
+>[!IMPORTANT]
+>The delete deployment activity will delete all roles under the deployment. This includes the deletion of any virtual machines under the deployment.
 
 The activity publishes all of the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
 
@@ -54,4 +53,3 @@ There are no optional properties for this runbook activity.
 #### Other Resources
 
 [Using Runbooks in System Center 2016 - Orchestrator](https://technet.microsoft.com/en-us/library/hh403791.aspx)
-

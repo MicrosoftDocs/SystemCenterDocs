@@ -30,7 +30,7 @@ The Integration Pack for VMware vSphere requires the following software to be in
 
 ## Downloading the Integration Pack
 
-You can download the integration pack from the [Microsoft Download Center](http://go.microsoft.com/fwlink/?LinkId=223169) (http://go.microsoft.com/fwlink/?LinkId=223169).
+You can download the integration pack from the [Microsoft Download Center](http://go.microsoft.com/fwlink/?LinkId=223169).
 
 ## Registering and Deploying the Integration Pack
 
@@ -95,5 +95,3 @@ A connection establishes a reusable link between Orchestrator and a VMware vSphe
 11. Add additional connections if applicable.
 
 12. Click **Finish**.
-
-

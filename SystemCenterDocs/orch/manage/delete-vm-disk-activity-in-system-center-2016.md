@@ -26,23 +26,21 @@ The following tables list the required and optional properties and the published
 ### Delete VM Disk Activity Required Properties
 
 | Element   | Description   | Valid values | Look up |
-| VM Path   | The path of the virtual machine containing the adapter to delete.   | String   | Yes   |
 |:---|:---|:---|:---|
+| VM Path   | The path of the virtual machine containing the adapter to delete.   | String   | Yes   |
 | SCSI Bus Number  | The SCSI bus number of the SCSI controller.   | Integer   | No   |
 | SCSI Unit Key   | The SCSI unit key of the SCSI controller.   | Integer   | No   |
 | Delete Disk File | Determines if the underlying .vmdk file of the virtual disk will be deleted from the data store. A value of True removes the disk from the virtual machine and deletes the underlying .vmdk file. A value of False removes the disk but preserves the underlying .vmdk file. | Boolean   | Yes   |
 
 ### Delete VM Disk Activity Optional Properties
 
-|   |
-|--------------------------------------------------------|
-| No optional properties are provided for this activity. |
+No optional properties are provided for this activity.
 
 ### Delete VM Disk Activity Published Data
 
 | Element   | Description   | Value Type |
-| VM Path   | The path of the virtual machine containing the adapter to delete.   | String   |
 |:---|:---|:---|
+| VM Path   | The path of the virtual machine containing the adapter to delete.   | String   |
 | SCSI Bus Number  | The SCSI bus number of the SCSI controller.   | Integer   |
 | SCSI Unit Key   | The SCSI unit key of the SCSI controller.   | Integer   |
 | Delete Disk File | Determines if the underlying .vmdk file of the virtual disk will be deleted from the data store. A value of True removes the disk from the virtual machine and deletes the underlying .vmdk file. A value of False removes the disk but preserves the underlying .vmdk file. | Boolean   |
@@ -68,5 +66,3 @@ The following procedure describes the steps required to configure a Delete VM Di
         You can also use published data to automatically populate the value of the property from the data output by a previous activity in the workflow.
 
 4.  Click **Finish**.
-
-

@@ -26,21 +26,19 @@ The following tables list the required and optional properties and the published
 ### Delete Network Adapter Activity Required Properties
 
 | Element   | Description   | Valid values | Look up |
-| VM Path   | The path of the virtual machine containing the adapter to delete.   | String   | Yes   |
 |:---|:---|:---|:---|
+| VM Path   | The path of the virtual machine containing the adapter to delete.   | String   | Yes   |
 | MAC Address | The MAC address of the network adapter to remove. The formats "00:11:22:33:44:55" and "00-11-22-33-44-55" are accepted. | String   | No   |
 
 ### Delete Network Adapter Activity Optional Properties
 
-|   |
-|--------------------------------------------------------|
-| No optional properties are provided for this activity. |
+No optional properties are provided for this activity. |
 
 ### Delete Network Adapter Activity Published Data
 
 | Element   | Description   | Value Type |
-| VM Path   | The path of the virtual machine containing the adapter to delete.   | String   |
 |:---|:---|:---|
+| VM Path   | The path of the virtual machine containing the adapter to delete.   | String   |
 | MAC Address | The MAC address of the network adapter to remove. The formats "00:11:22:33:44:55" and "00-11-22-33-44-55" are accepted. | String   |
 
 ## To Configure the Delete Network Adapter Activity
@@ -64,5 +62,3 @@ The following procedure describes the steps required to configure a Delete Netwo
         You can also use published data to automatically populate the value of the property from the data output by a previous activity in the workflow.
 
 4.  Click **Finish**.
-
-

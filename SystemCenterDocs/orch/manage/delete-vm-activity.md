@@ -28,20 +28,18 @@ The activity publishes all of the data from the required and optional properties
 ### Delete VM Activity Required Properties
 
 | Element | Description   | Valid Values | Look up |
-| VM Path | The path to the virtual machine being deleted. | String   | Yes   |
 |:---|:---|:---|:---|
+| VM Path | The path to the virtual machine being deleted. | String   | Yes   |
 
 ### Delete VM Activity Optional Properties
 
-|   |
-|--------------------------------------------------------|
-| No optional properties are provided for this activity. |
+No optional properties are provided for this activity.
 
 ### Delete VM Activity Published Data
 
 | Name   | Description   | Value Type |
-| VM Path | The path to the virtual machine that was deleted | String   |
 |:---|:---|:---|
+| VM Path | The path to the virtual machine that was deleted | String   |
 
 ## Configuring the Delete VM Activity
 
@@ -60,5 +58,3 @@ The following procedure describes the steps required to configure a Delete VM ac
         You can also use published data to automatically populate the value of the property from the data output by a previous activity in the workflow.
 
 4.  Click **Finish**.
-
-

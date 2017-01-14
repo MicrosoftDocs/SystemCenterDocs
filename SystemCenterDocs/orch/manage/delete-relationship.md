@@ -25,7 +25,6 @@ The following published data element is specific to Delete Relationship. Additio
 
 ## Delete Relationship Published Data
 
-|   |   |
-|---------------------------|-----------------------------------------------------------------------|
 | Element   | Description   |
+|---------------------------|-----------------------------------------------------------------------|
 | System Center Object GUID | The unique identifier (GUID) of the relationship object to be deleted |

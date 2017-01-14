@@ -106,28 +106,16 @@ An activity can subscribe only to data from the activities that are linked befor
 For a list of the data elements published by each activity, see the **Published Data** table in the activity topic. For information about the common published data items, see [Common Published Data](https://technet.microsoft.com/en-us/library/e339c027-4c69-43e5-a59b-ac7ea0a676c8#CommonPublishedData).
 
 ## Activities
---
 
 This integration pack adds the **Exchange Users** category to the **Activity** pane in the Runbook Designer. This category contains the following activities:
-
-Create and Send E-Mail
-
-Create Item
-
-Delete Item
-
-Find Appointment
-
-Forward Item
-
-Get Item
-
-Monitor Item
-
-Move or Copy Item
-
-Reply To E-Mail
-
-Send E-Mail
-
-Update Item
+- Create and Send E-Mail
+- Create Item
+- Delete Item
+- Find Appointment
+- Forward Item
+- Get Item
+- Monitor Item
+- Move or Copy Item
+- Reply To E-Mail
+- Send E-Mail
+- Update Item

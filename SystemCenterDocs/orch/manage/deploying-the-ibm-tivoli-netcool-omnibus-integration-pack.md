@@ -36,7 +36,7 @@ For more information about installing and configuring System Center 2016 - Orche
 
 ## Downloading the Integration Pack
 
-You can download the integration pack for IBM Tivoli Netcool/OMNIbus from the [Microsoft Download Center](http://go.microsoft.com/fwlink/?LinkId=223194) (http://go.microsoft.com/fwlink/?LinkId=223194).
+You can download the integration pack for IBM Tivoli Netcool/OMNIbus from the [Microsoft Download Center](http://go.microsoft.com/fwlink/?LinkId=223194).
 
 ## Registering and Deploying the Integration Pack
 
@@ -90,13 +90,11 @@ A connection establishes a reusable link between Orchestrator and an IBM Tivoli 
 
 5.  In the **Port number** box, enter the port number that you want to use. By default, this is 0. The default port used by IBM Tivoli Netcool/OMNIbus is 4100.
 
-6.  In the **User id** and **Password** boxes, enter the Orchestrator credentials to connect to the IBM Tivoli Netcool/OMNIbus server.
+6.  In the **User id** and **Password** boxes, enter the Orchestrator credentials to connect to the IBM Tivoli Netcool/OMNIbus server.   
+>[!NOTE]
+>The user needs to be assigned to the 'System' group to generate alerts within Netcool.
 
-   | Note   |
-   |----------------------------------------------------------------------------------------|
-   | The user needs to be assigned to the 'System' group to generate alerts within Netcool. |
-
-    <br>Optionally, you can make the connection to the IBM Tivoli Netcool/OMNIbus server using a secure socket connection (SSL). To use a secure socket connection:
+ Optionally, you can make the connection to the IBM Tivoli Netcool/OMNIbus server using a secure socket connection (SSL). To use a secure socket connection:
 
     1.  Select the **Use Secure Socket Layer** checkbox.
     2.  In the **Trust Store** box, enter the location of the trust store where the certificates are located.
@@ -108,5 +106,3 @@ A connection establishes a reusable link between Orchestrator and an IBM Tivoli 
 8.  Add additional connections if applicable.
 
 9.  Click **OK** to close the configuration dialog box, and then click **Finish**.
-
-
