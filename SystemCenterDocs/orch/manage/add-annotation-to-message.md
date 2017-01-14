@@ -41,7 +41,8 @@ The following tables list the required properties and published data for this ac
 | HPOM Port   | The port used to connect to the HPOM management server.   | Integer   |
 | HPOM Username   | The name of the HPOM used to connect to the HPOM management server. | String   |
 
-<br><br><strong>Tip </strong><br> When used in conjunction with the Create Message activity care must be taken to ensure that the Message ID is associated with an original message. Using the Message ID of a duplicate message that has been correlated by HP Operations Manager will cause the Add Annotation to Message activity to fail. <br><br>
+>[!TIP]
+>When used in conjunction with the Create Message activity care must be taken to ensure that the Message ID is associated with an original message. Using the Message ID of a duplicate message that has been correlated by HP Operations Manager will cause the Add Annotation to Message activity to fail.
 
 ## Other Activities
 
