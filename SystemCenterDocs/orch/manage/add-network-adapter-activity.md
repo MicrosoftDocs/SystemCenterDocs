@@ -28,23 +28,21 @@ The activity publishes all of the data from the required and optional properties
 ### Add Network Adapter Activity Required Properties
 
 | Element   | Description   | Valid Values | Look up |
-| Adapter Type   | The virtual network adapter type. For System Center 2016, the supported types are **Flexible**, **VMXNET 2 (Enhanced)**, **VMXNET 3** and **E1000**. | String   | Yes   |
 |:---|:---|:---|:---|
+| Adapter Type   | The virtual network adapter type. For System Center 2016, the supported types are **Flexible**, **VMXNET 2 (Enhanced)**, **VMXNET 3** and **E1000**. | String   | Yes   |
 | Connection at Power On | Indicates whether the adapter will be connected when the virtual machine is powered on.   | Boolean   | Yes   |
 | Network   | The vSphere network that the adapter will connect to.   | String   | Yes   |
 | VM Path   | The path of the virtual machine.   | String   | Yes   |
 
 ### Add Network Adapter Activity Optional Properties
 
-|   |
-|--------------------------------------------------------|
-| No optional properties are provided for this activity. |
+No optional properties are provided for this activity.
 
 ### Add Network Adapter Activity Published Data
 
 | Name   | Description   | Value Type |
-| Adapter type   | The selected adapter type   | String   |
 |:---|:---|:---|
+| Adapter type   | The selected adapter type   | String   |
 | Connection at Power On | Whether the adapter will be connected when the virtual machine is powered on | Boolean   |
 | Network   | The network that the adapter is connected to   | String   |
 | VM path   | The path of the virtual machine that the adapter belongs to   | String   |
@@ -66,5 +64,3 @@ The following procedure describes the steps required to configure an Add Network
         You can also use published data to automatically populate the value of the property from the data output by a previous activity in the workflow.
 
 4.  Click **Finish**.
-
-
