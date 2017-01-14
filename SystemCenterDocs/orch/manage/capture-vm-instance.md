@@ -21,9 +21,8 @@ Applies To: System Center 2016 - Orchestrator
 
 The **Capture VM Instance** activity makes a running virtual machine available as an image for reuse. For Windows-based virtual machines, the image should be sysprepped before capture. After performing the capture, the virtual machine is deleted. This activity is part of the **Azure Virtual Machines** category activity.
 
-| Caution   |
-|-----------------------------------------------------------------|
-| This activity deletes the virtual machine after it is captured. |
+>[!CAUTION]
+>This activity deletes the virtual machine after it is captured.
 
 The activity publishes all of the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
 
@@ -60,4 +59,3 @@ There are no optional properties for this runbook activity.
 #### Other Resources
 
 [Using Runbooks in System Center 2016 - Orchestrator](https://technet.microsoft.com/en-us/library/hh403791.aspx)
-

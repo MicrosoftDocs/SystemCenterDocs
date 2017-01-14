@@ -74,9 +74,11 @@ The following tables list the required and optional properties and published dat
 | HPOM Port   | The port used to connect to the HPOM management server.   | Integer   |
 | HPOM Username   | The name of the HPOM used to connect to the HPOM management server.   | String   |
 
-<br><br><strong>Warning </strong><br> The **Message ID** that is published by the **Create Message** activity might not be valid in those cases where HP Operations Manager performs correlation. Therefore, caution must be taken to ensure that the **Message ID** published from the **Create Message** activity is only used in Runbooks where you are confident that the new message is not a duplicate of an existing message. <br><br>
+>[!WARNING]
+>The **Message ID** that is published by the **Create Message** activity might not be valid in those cases where HP Operations Manager performs correlation. Therefore, caution must be taken to ensure that the **Message ID** published from the **Create Message** activity is only used in Runbooks where you are confident that the new message is not a duplicate of an existing message.
 
-<br><br><strong>Warning </strong><br> The **Create Message** activity will succeed and publish an invalid Message ID when provided with an invalid **Node**. <br><br>
+>[!WARNING]
+>The **Create Message** activity will succeed and publish an invalid Message ID when provided with an invalid **Node**.
 
 ## Other Activities
 

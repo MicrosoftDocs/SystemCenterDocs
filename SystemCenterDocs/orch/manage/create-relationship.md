@@ -25,9 +25,8 @@ The following published data elements are specific to Create Relationship. Addit
 
 ## Create Relationship Published Data
 
-|   |   |
-|---------------------------|---------------------------------------------------------------------------------------|
 | Element   | Description   |
+|---------------------------|---------------------------------------------------------------------------------------|
 | Relationship Type   | Describes how the source class and target class are related to each other   |
 | Source Class   | The name of the source class used to build the relationship   |
 | Source Object GUID   | The unique identifier (GUID) of a single source object used to build the relationship |

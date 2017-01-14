@@ -35,9 +35,8 @@ When the .NET Script Activity runs, it will generate a GUID that you can subscri
 
 ## Create Related Object Published Data
 
-|   |   |
-|---------------------------|---------------------------------------------------------------------------------------|
 | Element   | Description   |
+|---------------------------|---------------------------------------------------------------------------------------|
 | Relationship Type   | Describes how the source class and target class are related to each other   |
 | Source Class   | The name of the source class used to build the relationship   |
 | Source Object GUID   | The unique identifier (GUID) of a single source object used to build the relationship |

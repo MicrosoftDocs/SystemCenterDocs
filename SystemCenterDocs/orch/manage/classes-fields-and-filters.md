@@ -23,9 +23,8 @@ The following tables list the System Center 2016 - Service Manager Integration P
 
 ## Active Directory Group Class
 
-|   |   |
-|----------------------|------------|
 | Field or Filter Name | Field Type |
+|----------------------|------------|
 | Distinguished Name   | string   |
 | SID   | string   |
 | FQDN   | string   |
@@ -61,9 +60,8 @@ The following tables list the System Center 2016 - Service Manager Integration P
 
 ## Active Directory Printer Class
 
-|   |   |
-|--------------------------------|------------|
 | Field or Filter Name   | Field Type |
+|--------------------------------|------------|
 | UNC Name   | string   |
 | Server Name   | string   |
 | Short Server Name   | string   |
@@ -112,9 +110,8 @@ The following tables list the System Center 2016 - Service Manager Integration P
 
 ## Active Directory User Class
 
-|   |   |
-|----------------------|------------|
 | Field or Filter Name | Field Type |
+|----------------------|------------|
 | Distinguished Name   | string   |
 | SID   | string   |
 | FQDN   | string   |
@@ -148,9 +145,8 @@ The following tables list the System Center 2016 - Service Manager Integration P
 
 ## Active Directory User or Group Class
 
-|   |   |
-|----------------------|------------|
 | Field or Filter Name | Field Type |
+|----------------------|------------|
 | Distinguished Name   | string   |
 | SID   | string   |
 | FQDN   | string   |
@@ -184,9 +180,8 @@ The following tables list the System Center 2016 - Service Manager Integration P
 
 ## Announcement Class
 
-|   |   |
-|----------------------|------------|
 | Field or Filter Name | Field Type |
+|----------------------|------------|
 | ID   | string   |
 | Title   | string   |
 | Body   | string   |
@@ -196,9 +191,8 @@ The following tables list the System Center 2016 - Service Manager Integration P
 
 ## Billable Time Class
 
-|   |   |
-|----------------------|------------|
 | Field or Filter Name | Field Type |
+|----------------------|------------|
 | Time In Minutes   | int32   |
 | Last Updated   | date time  |
 | ID   | string   |
@@ -206,9 +200,8 @@ The following tables list the System Center 2016 - Service Manager Integration P
 
 ## Business Service Class
 
-|   |   |
-|-------------------------------|------------|
-| Field or Filter Name   | Field Type |
+| Field or Filter Name | Field Type |
+|----------------------|------------|
 | Service ID   | string   |
 | Service Description   | string   |
 | Business Detailed Description | string   |
@@ -225,9 +218,8 @@ The following tables list the System Center 2016 - Service Manager Integration P
 
 ## Change Request Class
 
-|   |   |
-|----------------------------|------------|
-| Field or Filter Name   | Field Type |
+| Field or Filter Name | Field Type |
+|----------------------|------------|
 | Reason   | string   |
 | Notes   | string   |
 | Implementation Plan   | string   |
@@ -256,9 +248,8 @@ The following tables list the System Center 2016 - Service Manager Integration P
 
 ## Desired Configuration Management Incident Class
 
-|   |   |
-|-------------------------------|------------|
-| Field or Filter Name   | Field Type |
+| Field or Filter Name | Field Type |
+|----------------------|------------|
 | Site Identifier   | string   |
 | CI ID   | string   |
 | Baseline Identifier   | string   |
@@ -295,9 +286,8 @@ The following tables list the System Center 2016 - Service Manager Integration P
 
 ## Disk Partition Class
 
-|   |   |
-|----------------------|------------|
 | Field or Filter Name | Field Type |
+|----------------------|------------|
 | Disk Index   | int32   |
 | Block Size   | int32   |
 | Primary Partition   | string   |
@@ -314,9 +304,8 @@ The following tables list the System Center 2016 - Service Manager Integration P
 
 ## Email Notification Log for Trouble Tickets Class
 
-|   |   |
-|----------------------|------------|
 | Field or Filter Name | Field Type |
+|----------------------|------------|
 | Body   | string   |
 | Subject   | string   |
 | Priority   | int32   |
@@ -328,9 +317,8 @@ The following tables list the System Center 2016 - Service Manager Integration P
 
 ## End-user Portal Contact IT Settings Class
 
-|   |   |
-|----------------------|------------|
 | Field or Filter Name | Field Type |
+|----------------------|------------|
 | Email address   | string   |
 | Email response time  | string   |
 | Support phone   | string   |
@@ -342,9 +330,8 @@ The following tables list the System Center 2016 - Service Manager Integration P
 
 ## File Attachment Class
 
-|   |   |
-|----------------------|------------|
 | Field or Filter Name | Field Type |
+|----------------------|------------|
 | Extension   | string   |
 | Description   | string   |
 | Content   | string   |
@@ -355,9 +342,8 @@ The following tables list the System Center 2016 - Service Manager Integration P
 
 ## Manual Activity Class
 
-|   |   |
-|--------------------------|------------|
-| Field or Filter Name   | Field Type |
+| Field or Filter Name | Field Type |
+|----------------------|------------|
 | Sequence ID   | int32   |
 | Notes   | string   |
 | Status   | enum   |
@@ -377,9 +363,8 @@ The following tables list the System Center 2016 - Service Manager Integration P
 
 ## Software Items Class
 
-|   |   |
-|------------------------|------------|
-| Field or Filter Name   | Field Type |
+| Field or Filter Name | Field Type |
+|----------------------|------------|
 | Publisher   | string   |
 | Version String   | string   |
 | Product Name   | string   |
@@ -422,9 +407,8 @@ The following tables list the System Center 2016 - Service Manager Integration P
 
 ## Star Rating Class
 
-|   |   |
-|----------------------|------------|
 | Field or Filter Name | Field Type |
+|----------------------|------------|
 | ID   | string   |
 | Total Rating Count   | int32   |
 | Total Rating Stars   | int32   |
@@ -433,9 +417,8 @@ The following tables list the System Center 2016 - Service Manager Integration P
 
 ## System Center Management Group Class
 
-|   |   |
-|-----------------------------------------------|------------|
-| Field or Filter Name   | Field Type |
+| Field or Filter Name | Field Type |
+|----------------------|------------|
 | Management Group Name   | string   |
 | Management Group ID   | string   |
 | Data Access Service SCP   | string   |
@@ -467,9 +450,8 @@ The following tables list the System Center 2016 - Service Manager Integration P
 
 ## Trouble Ticket Analyst Comments Class
 
-|   |   |
-|----------------------|------------|
 | Field or Filter Name | Field Type |
+|----------------------|------------|
 | Is Private   | boolean   |
 | Comment   | string   |
 | Entered By   | string   |
@@ -479,9 +461,8 @@ The following tables list the System Center 2016 - Service Manager Integration P
 
 ## Windows Computer Class
 
-|   |   |
-|---------------------------------------|------------|
-| Field or Filter Name   | Field Type |
+| Field or Filter Name | Field Type |
+|----------------------|------------|
 | Principal Name   | string   |
 | DNS Name   | string   |
 | NetBIOS Computer Name   | string   |
@@ -504,9 +485,8 @@ The following tables list the System Center 2016 - Service Manager Integration P
 
 ## Windows Operating System Class
 
-|   |   |
-|---------------------------------------|------------|
-| Field or Filter Name   | Field Type |
+| Field or Filter Name | Field Type |
+|----------------------|------------|
 | Operating System Version   | string   |
 | Operating System Version Display Name | string   |
 | Product Type   | string   |
@@ -533,9 +513,8 @@ The following tables list the System Center 2016 - Service Manager Integration P
 
 ## Windows Server Class
 
-|   |   |
-|---------------------------------------|-----------|
-| Field or Filter Name   | Type   |
+| Field or Filter Name | Field Type |
+|----------------------|------------|
 | Is Virtual Node   | boolean   |
 | Principal Name   | string   |
 | DNS Name   | string   |
@@ -558,9 +537,8 @@ The following tables list the System Center 2016 - Service Manager Integration P
 
 ## Windows Server Operating System Class
 
-|   |   |
-|---------------------------------------|------------|
-| Field or Filter Name   | Field Type |
+| Field or Filter Name | Field Type |
+|----------------------|------------|
 | Operating System Version   | string   |
 | Operating System Version Display Name | string   |
 | Product Type   | string   |
@@ -587,9 +565,8 @@ The following tables list the System Center 2016 - Service Manager Integration P
 
 ## Program Class
 
-|   |   |
-|----------------------|------------|
 | Field or Filter Name | Field Type |
+|----------------------|------------|
 | ProgramId   | string   |
 | Display name   | string   |
 | Program Name   | string   |
@@ -605,9 +582,8 @@ The following tables list the System Center 2016 - Service Manager Integration P
 
 ## Synchronization Status Class
 
-|   |   |
-|-------------------------------|------------|
-| Field or Filter Name   | Field Type |
+| Field or Filter Name | Field Type |
+|----------------------|------------|
 | Last Run Start Time   | date time  |
 | Last Run Finish Time   | date time  |
 | Status   | enum   |
@@ -645,9 +621,8 @@ The following tables list the System Center 2016 - Service Manager Integration P
 
 ## System Center Managed Computer (Client OS) Class
 
-|   |   |
-|---------------------------------------|------------|
-| Field or Filter Name   | Field Type |
+| Field or Filter Name | Field Type |
+|----------------------|------------|
 | Install Directory   | string   |
 | Principal Name   | string   |
 | DNS Name   | string   |
@@ -671,9 +646,8 @@ The following tables list the System Center 2016 - Service Manager Integration P
 
 ## System Center Managed Computer (Server OS) Class
 
-|   |   |
-|---------------------------------------|------------|
-| Field or Filter Name   | Field Type |
+| Field or Filter Name | Field Type |
+|----------------------|------------|
 | Install Directory   | string   |
 | Principal Name   | string   |
 | DNS Name   | string   |
@@ -697,9 +671,8 @@ The following tables list the System Center 2016 - Service Manager Integration P
 
 ## Physical Disk (Concrete) Class
 
-|   |   |
-|-----------------------|------------|
-| Field or Filter Name  | Field Type |
+| Field or Filter Name | Field Type |
+|----------------------|------------|
 | Caption   | string   |
 | Index   | int32   |
 | Interface Type   | string   |
@@ -728,9 +701,8 @@ The following tables list the System Center 2016 - Service Manager Integration P
 
 ## Operations Manager-Generated Incident Class
 
-|   |   |
-|-------------------------------|------------|
-| Field or Filter Name   | Field Type |
+| Field or Filter Name | Field Type |
+|----------------------|------------|
 | Management Group Name   | string   |
 | Management Pack Name   | string   |
 | Monitoring Rule Identifier   | string   |
@@ -776,9 +748,8 @@ The following tables list the System Center 2016 - Service Manager Integration P
 
 ## Configuration Manager DCM Compliant CI Class
 
-|   |   |
-|----------------------|------------|
 | Field or Filter Name | Field Type |
+|----------------------|------------|
 | Description   | string   |
 | Unique ID   | string   |
 | SDM Package Digest   | string   |
@@ -790,9 +761,8 @@ The following tables list the System Center 2016 - Service Manager Integration P
 
 ## Domain User or Group Class
 
-|   |   |
-|----------------------|------------|
 | Field or Filter Name | Field Type |
+|----------------------|------------|
 | Domain   | string   |
 | User Name   | string   |
 | First Name   | string   |
@@ -822,9 +792,8 @@ The following tables list the System Center 2016 - Service Manager Integration P
 
 ## Trouble Ticket Action Log Class
 
-|   |   |
-|----------------------|------------|
 | Field or Filter Name | Field Type |
+|----------------------|------------|
 | Action Type   | enum   |
 | Title   | string   |
 | Description   | string   |
@@ -835,9 +804,8 @@ The following tables list the System Center 2016 - Service Manager Integration P
 
 ## Site Management Server Class
 
-|   |   |
-|----------------------------------------|------------|
-| Field or Filter Name   | Field Type |
+| Field or Filter Name | Field Type |
+|----------------------|------------|
 | Site ID   | string   |
 | Site Name   | string   |
 | Management Server SCP   | string   |
@@ -874,9 +842,8 @@ The following tables list the System Center 2016 - Service Manager Integration P
 
 ## Processor (Concrete) Class
 
-|   |   |
-|----------------------|------------|
 | Field or Filter Name | Field Type |
+|----------------------|------------|
 | Manufacturer   | string   |
 | Speed   | int32   |
 | Data Width   | int32   |
@@ -901,9 +868,8 @@ The following tables list the System Center 2016 - Service Manager Integration P
 
 ## Microsoft Software Update Class
 
-|   |   |
-|----------------------|------------|
 | Field or Filter Name | Field Type |
+|----------------------|------------|
 | Article Identifier   | string   |
 | Bulletin Identifier  | string   |
 | Parent   | string   |
@@ -919,9 +885,8 @@ The following tables list the System Center 2016 - Service Manager Integration P
 
 ## Incident Class
 
-|   |   |
-|-------------------------------|------------|
-| Field or Filter Name   | Field Type |
+| Field or Filter Name | Field Type |
+|----------------------|------------|
 | Resolve By   | date time  |
 | Escalated   | boolean   |
 | Source   | enum   |
@@ -951,9 +916,8 @@ The following tables list the System Center 2016 - Service Manager Integration P
 
 ## Review Activity Class
 
-|   |   |
-|--------------------------------------------|------------|
-| Field or Filter Name   | Field Type |
+| Field or Filter Name | Field Type |
+|----------------------|------------|
 | Approval Condition   | enum   |
 | Approval Percentage   | int32   |
 | Comments   | string   |
@@ -978,9 +942,8 @@ The following tables list the System Center 2016 - Service Manager Integration P
 
 ## Management Service Watcher (Collection Management Server) Class
 
-|   |   |
-|-------------------------|------------|
-| Field or Filter Name   | Field Type |
+| Field or Filter Name | Field Type |
+|----------------------|------------|
 | Management Service ID   | string   |
 | Management Service Name | string   |
 | Object Status   | enum   |
@@ -990,9 +953,8 @@ The following tables list the System Center 2016 - Service Manager Integration P
 
 ## Computer (Deployed) Class
 
-|   |   |
-|----------------------|------------|
 | Field or Filter Name | Field Type |
+|----------------------|------------|
 | Hardware Identifier  | string   |
 | SMBIOS UUID   | string   |
 | MAC Addresses   | string   |
@@ -1012,9 +974,8 @@ The following tables list the System Center 2016 - Service Manager Integration P
 
 ## Windows Client Class
 
-|   |   |
-|---------------------------------------|------------|
-| Field or Filter Name   | Field Type |
+| Field or Filter Name | Field Type |
+|----------------------|------------|
 | Principal Name   | string   |
 | DNS Name   | string   |
 | NetBIOS Computer Name   | string   |
@@ -1037,9 +998,8 @@ The following tables list the System Center 2016 - Service Manager Integration P
 
 ## Network Adapter (Concrete) Class
 
-|   |   |
-|----------------------|------------|
 | Field or Filter Name | Field Type |
+|----------------------|------------|
 | Adapter Type   | string   |
 | Index   | int32   |
 | Manufacturer   | string   |
@@ -1067,9 +1027,8 @@ The following tables list the System Center 2016 - Service Manager Integration P
 
 ## Inbound Email Rule Class
 
-|   |   |
-|----------------------|------------|
 | Field or Filter Name | Field Type |
+|----------------------|------------|
 | IsEnabled   | boolean   |
 | SMTPDomain   | string   |
 | Service   | string   |
@@ -1077,9 +1036,8 @@ The following tables list the System Center 2016 - Service Manager Integration P
 
 ## Localization Class
 
-|   |   |
-|----------------------|------------|
 | Field or Filter Name | Field Type |
+|----------------------|------------|
 | ID   | string   |
 | Time zone   | string   |
 | Locale ID   | int32   |
@@ -1087,9 +1045,8 @@ The following tables list the System Center 2016 - Service Manager Integration P
 
 ## Management Service Watcher Group (Collection Management Server) Class
 
-|   |   |
-|---------------------------------------|------------|
-| Field or Filter Name   | Field Type |
+| Field or Filter Name | Field Type |
+|----------------------|------------|
 | Watcher Group Name   | string   |
 | Root Management Server Principal Name | string   |
 | Object Status   | enum   |
@@ -1099,9 +1056,8 @@ The following tables list the System Center 2016 - Service Manager Integration P
 
 ## Management Service Watcher Group (Gateway Management Server) Class
 
-|   |   |
-|---------------------------------------|------------|
-| Field or Filter Name   | Field Type |
+| Field or Filter Name | Field Type |
+|----------------------|------------|
 | Watcher Group Name   | string   |
 | Root Management Server Principal Name | string   |
 | Object Status   | enum   |
@@ -1111,9 +1067,8 @@ The following tables list the System Center 2016 - Service Manager Integration P
 
 ## Text Message Notification Log for Trouble Tickets Class
 
-|   |   |
-|----------------------|------------|
 | Field or Filter Name | Field Type |
+|----------------------|------------|
 | Message   | string   |
 | Encoding   | string   |
 | Sent To   | string   |
@@ -1123,9 +1078,8 @@ The following tables list the System Center 2016 - Service Manager Integration P
 
 ## Portal Software Deployment Activity Class
 
-|   |   |
-|--------------------------|------------|
-| Field or Filter Name   | Field Type |
+| Field or Filter Name | Field Type |
+|----------------------|------------|
 | Package ID   | string   |
 | Machine Name   | string   |
 | Error Message   | string   |
@@ -1149,9 +1103,8 @@ The following tables list the System Center 2016 - Service Manager Integration P
 
 ## Logical Disk (Concrete) Class
 
-|   |   |
-|---------------------------------|------------|
-| Field or Filter Name   | Field Type |
+| Field or Filter Name | Field Type |
+|----------------------|------------|
 | File System   | string   |
 | Compressed   | string   |
 | Size (MB)   | int32   |
@@ -1209,9 +1162,8 @@ The following tables list the System Center 2016 - Service Manager Integration P
 
 ## Operations Manager Connector Synchronization Class
 
-|   |   |
-|----------------------|------------|
 | Field or Filter Name | Field Type |
+|----------------------|------------|
 | Data   | string   |
 | SyncMetadata   | string   |
 | Object Status   | enum   |
@@ -1221,9 +1173,8 @@ The following tables list the System Center 2016 - Service Manager Integration P
 
 ## System Center Managed Windows Computer Class
 
-|   |   |
-|---------------------------------------|------------|
-| Field or Filter Name   | Field Type |
+| Field or Filter Name | Field Type |
+|----------------------|------------|
 | Install Directory   | string   |
 | Principal Name   | string   |
 | DNS Name   | string   |
@@ -1247,9 +1198,8 @@ The following tables list the System Center 2016 - Service Manager Integration P
 
 ## System Center Operations Manager Connector Class
 
-|   |   |
-|---------------------------|------------|
-| Field or Filter Name   | Field Type |
+| Field or Filter Name | Field Type |
+|----------------------|------------|
 | SolutionName   | string   |
 | DataProviderName   | string   |
 | DataProviderDisplayName   | string   |
@@ -1271,9 +1221,8 @@ The following tables list the System Center 2016 - Service Manager Integration P
 
 ## Windows Domain Controller Class
 
-|   |   |
-|---------------------------------------|------------|
-| Field or Filter Name   | Field Type |
+| Field or Filter Name | Field Type |
+|----------------------|------------|
 | Is Virtual Node   | boolean   |
 | Principal Name   | string   |
 | DNS Name   | string   |
@@ -1297,9 +1246,8 @@ The following tables list the System Center 2016 - Service Manager Integration P
 
 ## Package Class
 
-|   |   |
-|----------------------|------------|
 | Field or Filter Name | Field Type |
+|----------------------|------------|
 | Package ID   | string   |
 | Name   | string   |
 | Version   | string   |
@@ -1315,9 +1263,8 @@ The following tables list the System Center 2016 - Service Manager Integration P
 
 ## Reviewer Class
 
-|   |   |
-|----------------------|------------|
 | Field or Filter Name | Field Type |
+|----------------------|------------|
 | Reviewer Identifier  | string   |
 | Decision   | enum   |
 | Decision Date   | date time  |
@@ -1328,9 +1275,8 @@ The following tables list the System Center 2016 - Service Manager Integration P
 
 ## Knowledge Article Class
 
-|   |   |
-|----------------------------|------------|
-| Field or Filter Name   | Field Type |
+| Field or Filter Name | Field Type |
+|----------------------|------------|
 | Knowledge Article Type   | enum   |
 | Knowledge Article Template | string   |
 | Knowledge Article Owner   | string   |
@@ -1357,9 +1303,8 @@ The following tables list the System Center 2016 - Service Manager Integration P
 
 ## System Center Operations Manager Enterprise License Class
 
-|   |   |
-|----------------------|------------|
 | Field or Filter Name | Field Type |
+|----------------------|------------|
 | Object Status   | enum   |
 | Asset Status   | enum   |
 | Notes   | string   |
@@ -1367,9 +1312,8 @@ The following tables list the System Center 2016 - Service Manager Integration P
 
 ## Trouble Ticket User Comments Class
 
-|   |   |
-|----------------------|------------|
 | Field or Filter Name | Field Type |
+|----------------------|------------|
 | Comment   | string   |
 | Entered By   | string   |
 | Entered Date   | date time  |
@@ -1378,9 +1322,8 @@ The following tables list the System Center 2016 - Service Manager Integration P
 
 ## Software Deployment Process Class
 
-|   |   |
-|---------------------------|------------|
-| Field or Filter Name   | Field Type |
+| Field or Filter Name | Field Type |
+|----------------------|------------|
 | ProcessId   | string   |
 | ChangeRequestTemplateId   | string   |
 | ChangeRequestTemplateName | string   |
@@ -1389,9 +1332,8 @@ The following tables list the System Center 2016 - Service Manager Integration P
 
 ## Problem Class
 
-|   |   |
-|-------------------------------|------------|
-| Field or Filter Name   | Field Type |
+| Field or Filter Name | Field Type |
+|----------------------|------------|
 | Status   | enum   |
 | Source   | enum   |
 | Classification   | enum   |
@@ -1421,9 +1363,8 @@ The following tables list the System Center 2016 - Service Manager Integration P
 
 ## Software Updates Class
 
-|   |   |
-|----------------------|------------|
 | Field or Filter Name | Field Type |
+|----------------------|------------|
 | Vendor   | string   |
 | Title   | string   |
 | Object Status   | enum   |
@@ -1435,9 +1376,8 @@ The following tables list the System Center 2016 - Service Manager Integration P
 
 Class Type:
 
-|   |   |
-|-------------------------|------------|
-| Field or Filter Name   | Field Type |
+| Field or Filter Name | Field Type |
+|----------------------|------------|
 | Management Service ID   | string   |
 | Management Service Name | string   |
 | Object Status   | enum   |
@@ -1447,9 +1387,8 @@ Class Type:
 
 ## Site Class
 
-|   |   |
-|-------------------------------|------------|
-| Field or Filter Name   | Field Type |
+| Field or Filter Name | Field Type |
+|----------------------|------------|
 | Site Name   | string   |
 | Object Status   | enum   |
 | Asset Status   | enum   |
@@ -1486,9 +1425,8 @@ Class Type:
 
 ## Trouble Ticket Audit Log Class
 
-|   |   |
-|----------------------|------------|
 | Field or Filter Name | Field Type |
+|----------------------|------------|
 | Comment   | string   |
 | Entered By   | string   |
 | Entered Date   | date time  |
@@ -1497,9 +1435,8 @@ Class Type:
 
 ## Configuration Manager DCM Noncompliant CI Class
 
-|   |   |
-|-------------------------------|------------|
-| Field or Filter Name   | Field Type |
+| Field or Filter Name | Field Type |
+|----------------------|------------|
 | Max Noncompliance Criticality | int32   |
 | Baseline Unique ID   | string   |
 | CI Unique ID   | string   |
@@ -1513,9 +1450,8 @@ Class Type:
 
 ## Windows Client Operating System Class
 
-|   |   |
-|---------------------------------------|------------|
-| Field or Filter Name   | Field Type |
+| Field or Filter Name | Field Type |
+|----------------------|------------|
 | Operating System Version   | string   |
 | Operating System Version Display Name | string   |
 | Product Type   | string   |

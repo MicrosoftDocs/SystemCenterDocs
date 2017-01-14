@@ -21,9 +21,8 @@ Applies To: System Center 2016 - Orchestrator
 
 The **Create Container** activity creates a new container under the specified account. It is part of the **Azure Storage** category activity.
 
-| Note   |
-|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Currently, this activity will not fail if a container already exists with the same name as the container to create. No new container wil be created, but the activity will succeed in Orchestrator. |
+>[!NOTE]
+>Currently, this activity will not fail if a container already exists with the same name as the container to create. No new container will be created, but the activity will succeed in Orchestrator.
 
 The activity publishes all of the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
 
@@ -60,4 +59,3 @@ The activity publishes all of the data from the required and optional properties
 #### Other Resources
 
 [Using Runbooks in System Center 2016 - Orchestrator](https://technet.microsoft.com/en-us/library/hh403791.aspx)
-

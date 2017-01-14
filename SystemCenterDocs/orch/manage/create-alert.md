@@ -23,7 +23,8 @@ The Create Alert activity is used in a runbook to create a new alert in an Opera
 
 The first time you run this activity in a runbook, it installs the Orchestrator Integration Library Management Pack in Operations Manager. The Create Alert activity creates an event in Operations Manager, which the Orchestrator Integration Library Management Pack then translates into a System Center Operations Manager alert.
 
-<br><br><strong>Important </strong><br>When the Create Alert activity runs for the first time, it does not create an alert. The workaround is to run it again. The new alert is created after the activity is run a second time.c@
+>[!IMPORTANT]
+>When the Create Alert activity runs for the first time, it does not create an alert. The workaround is to run it again. The new alert is created after the activity is run a second time.
 
 The activity publishes all of the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
 
@@ -49,9 +50,8 @@ The activity publishes all of the data from the required and optional properties
 
 ## Create Alert Published Data
 
-|   |   |
-|-----------------------------------|-------------------------------------------------------------------------------------------------|
 | **Element**   | **Description**   |
+|-----------------------------------|-------------------------------------------------------------------------------------------------|
 | Category   | The category name of the Management Pack   |
 | Connection   | The connection string to the System Center Operations Manager server that you are using   |
 | ConnectorId   | The ID of the connector that generated the connection string   |

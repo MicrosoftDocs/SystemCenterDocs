@@ -163,9 +163,8 @@ The integration pack provides the ability to create recurring appointments and t
 3.  To use a pattern other than the Daily pattern, add the optional **Recurs On These Days** property.<br><br>
 4.  Specify a value for the **Recurs On These Days** property according to the rules that are presented in the following table.<br><br>
 
-|   |   |
-|--------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Element**   | **Description**   |
+|--------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Recurrence   | Recurs On These Days   |
 | Daily   | Not required.   |
 | Weekly   | Specify a comma separated list of day names. Full or abbreviated day names are acceptable. <br>For example: Saturday, Sunday or Sat, Sun.   |
@@ -176,4 +175,4 @@ The integration pack provides the ability to create recurring appointments and t
 
 #### Reference
 
-<span>Using Runbooks in System Center 2016 - Orchestrator</span> <br> <https://technet.microsoft.com/en-us/library/> <br> <br>
+[Using Runbooks in System Center 2016 - Orchestrator](https://technet.microsoft.com/en-us/library/)

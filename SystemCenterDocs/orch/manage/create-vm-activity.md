@@ -28,8 +28,8 @@ The activity publishes all of the data from the required and optional properties
 ### Create VM Activity Required Properties
 
 | Element   | Description   | Valid Values | Look up |
-| Datastore Path   | The name of the data store used by the virtual machine.   | String   | Yes   |
 |:---|:---|:---|:---|
+| Datastore Path   | The name of the data store used by the virtual machine.   | String   | Yes   |
 | Folder Path   | The path to the folder containing the virtual machine.   | String   | Yes   |
 | Guest Operating System  | The name of the guest operating system installed on this virtual machine.   | String   | Yes   |
 | Host System Path   | The path to the host system of the virtual machine.   | String   | Yes   |
@@ -44,14 +44,14 @@ The activity publishes all of the data from the required and optional properties
 ### Create VM Activity Optional Properties
 
 | Element   | Description   | Valid Values | Look up |
-| Relative ISO Image Path | The path of the CD ISO image containing the operating system installed on the virtual machine. This path is relative to the provided datastore path. | String   | No   |
 |:---|:---|:---|:---|
+| Relative ISO Image Path | The path of the CD ISO image containing the operating system installed on the virtual machine. This path is relative to the provided datastore path. | String   | No   |
 
 ### Create VM Activity Published Data
 
 | Name   | Description   | Value Type |
-| Datastore Path   | The path of the data store   | String   |
 |:---|:---|:---|
+| Datastore Path   | The path of the data store   | String   |
 | Folder Path   | The path to the folder on the host computer where the virtual machine is stored.   | String   |
 | Guest Operating System  | The name of the guest operating system installed on the virtual machine.   | String   |
 | Host System Path   | The path of the host system.   | String   |
@@ -83,5 +83,3 @@ The following procedure describes the steps required to configure a Create VM ac
         You can also use published data to automatically populate the value of the property from the data output by a previous activity in the workflow.
 
 4.  Click **Finish**.
-
-

@@ -44,8 +44,7 @@ The activity publishes all of the data from the required and optional properties
 
 ## Configure Service Deployment Published Data
 
-| **Element** | **Description** | **Valid Values** |
-|:---|:---|:---|
+No published data is provided for this activity. 
 
 ## See Also
 
@@ -53,4 +52,3 @@ The activity publishes all of the data from the required and optional properties
 #### Other Resources
 
 [Using Runbooks in System Center 2016 Orchestrator](https://technet.microsoft.com/en-us/library/hh403791.aspx)
-

@@ -35,7 +35,6 @@ When the .NET Script Activity runs, it will generate a GUID that you can subscri
 
 ## Create Object Published Data
 
-|   |   |
-|-------------------|--------------------------------------------------------------|
 | Element   | Description   |
+|-------------------|--------------------------------------------------------------|
 | Number of Objects | The number of objects returned by the Create Object activity |
