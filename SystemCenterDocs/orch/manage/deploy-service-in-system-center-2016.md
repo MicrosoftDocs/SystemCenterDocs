@@ -25,10 +25,7 @@ The activity publishes all of the data from the required and optional properties
 
 ## Deploy Service Required Properties
 
-| **Element**   | **Description** | **Valid Values** |
-|:---|:---|:---|
-| Service Name   |   |   |
-| Service Template Name |   |   |
+**Element**<br>Service Name<br>Service Template Name
 
 ## Deploy Service Optional Properties
 
