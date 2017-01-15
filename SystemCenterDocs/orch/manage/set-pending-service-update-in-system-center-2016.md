@@ -25,12 +25,12 @@ The activity publishes all of the data from the required and optional properties
 
 ## Set Pending Service Update Required Properties
 
-| **Element**   | **Description**   | **Valid Values** |
-|:---|:---|:---|
-| Service Name   |   |   |
-| Service Template Name   |   |   |
-| Service Template Release |   |   |
-| Update Type   | Applying updates to the existing (in-place) virtual machines or Deploying new virtual machines with the updated settings |   |
+**Element**   | **Description**   |
+|:---|:---|
+| Service Name   |   |
+| Service Template Name   |   |   
+| Service Template Release |   |   
+| Update Type   | Applying updates to the existing (in-place) virtual machines or Deploying new virtual machines with the updated settings |   
 
 ## Set Pending Service Update Optional Properties
 
@@ -84,4 +84,3 @@ There are no optional properties for this activity.
 #### Other Resources
 
 [Using Runbooks in System Center 2016 Orchestrator](https://technet.microsoft.com/en-us/library/hh403791.aspx)
-

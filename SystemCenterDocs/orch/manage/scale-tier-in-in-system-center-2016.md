@@ -19,16 +19,13 @@ robots: noindex
 
 Applies To: System Center 2016 - Orchestrator
 
-The Scale Tier In activity is used in a runbook to remove one virtual machine instance from a specified service tier..
+The Scale Tier In activity is used in a runbook to remove one virtual machine instance from a specified service tier.
 
 The activity publishes all of the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
 
 ## Scale Tier In Required Properties
 
-| **Element**  | **Description** | **Valid Values** |
-|:---|:---|:---|
-| Service Name |   |   |
-| Tier Name   |   |   |
+**Element**<br>Service Name<br>Tier Name
 
 ## Scale Tier In Optional Properties
 
@@ -44,4 +41,3 @@ This activity has no published data.
 #### Other Resources
 
 [Using Runbooks in System Center 2016 Orchestrator](https://technet.microsoft.com/en-us/library/hh403791.aspx)
-

@@ -37,9 +37,8 @@ The activity publishes all of the data from the required and optional properties
 
 ## Start Maintenance Mode Published Data
 
-|   |   |
-|------------|--------------------------------------------------------------------------|
 | Element   | Description   |
+|------------|--------------------------------------------------------------------------|
 | Comment   | Comment text regarding maintenance mode   |
 | Connection | The connection string to the Operations Manager server for this activity |
 | Domain   | The domain that the alert came from   |

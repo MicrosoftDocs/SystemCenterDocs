@@ -28,22 +28,20 @@ The activity publishes all of the data from the required and optional properties
 ### Set VM CD/DVD to ISO Image Activity Required Properties
 
 | Element   | Description   | Valid Values | Look up |
-| Datastore   | The path of the datastore that contains the ISO image.   | String   | No   |
 |:---|:---|:---|:---|
+| Datastore   | The path of the datastore that contains the ISO image.   | String   | No   |
 | Relative File Path | The path to the ISO image relative to the host and datastore. | String   | No   |
 | VM Path   | The path to the virtual machine.   | String   | Yes   |
 
 ### Set VM CD/DVD to ISO Image Activity Optional Properties
 
-|   |
-|--------------------------------------------------------|
-| No optional properties are provided for this activity. |
+No optional properties are provided for this activity.
 
 ### Set VM CD/DVD to ISO Image Activity Published Data
 
 | Name   | Description   | Valid Values |
-| Datastore | The path of the datastore that contains the ISO image. | String   |
 |:---|:---|:---|
+| Datastore | The path of the datastore that contains the ISO image. | String   |
 | VM Path   | The path to the virtual machine.   | String   |
 
 ## Configuring the Set VM CD/DVD to ISO Image Activity
@@ -63,5 +61,3 @@ The following procedure describes the steps required to configure a Set VM CD/DV
         You can also use published data to automatically populate the value of the property from the data output by a previous activity in the workflow.
 
 4.  Click **Finish**.
-
-

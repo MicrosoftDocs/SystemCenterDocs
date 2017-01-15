@@ -28,21 +28,19 @@ The activity publishes all of the data from the required and optional properties
 ### Suspend VM Activity Required Properties
 
 | Element   | Description   | Valid Values | Look up |
-| Enter standby mode | Indicates that the guest operating system will be put in standby mode. If standby mode is not supported by the guest operating system, this option will be ignored. | Boolean   | Yes   |
 |:---|:---|:---|:---|
+| Enter standby mode | Indicates that the guest operating system will be put in standby mode. If standby mode is not supported by the guest operating system, this option will be ignored. | Boolean   | Yes   |
 | VM Path   | The path to the virtual machine to be suspended   | String   | Yes   |
 
 ### Suspend VM Activity Optional Properties
 
-|   |
-|--------------------------------------------------------|
-| No optional properties are provided for this activity. |
+No optional properties are provided for this activity.
 
 ### Suspend VM Activity Published Data
 
 | Name   | Description   | Value Type |
-| Enter standby mode | Indicates whether the Enter standby mode option was selected | Boolean   |
 |:---|:---|:---|
+| Enter standby mode | Indicates whether the Enter standby mode option was selected | Boolean   |
 | VM Path   | The path to the virtual machine that was suspended   | String   |
 
 ## Configuring the Suspend VM Activity
@@ -62,5 +60,3 @@ The following procedure describes the steps required to configure a Suspend VM a
         You can also use published data to automatically populate the value of the property from the data output by a previous activity in the workflow.
 
 4.  Click **Finish**.
-
-

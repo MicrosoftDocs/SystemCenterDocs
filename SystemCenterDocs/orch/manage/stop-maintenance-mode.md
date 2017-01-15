@@ -34,9 +34,8 @@ The following tables list the properties and published data for this activity. T
 
 ## Stop Maintenance Mode Published Data
 
-|   |   |
-|------------|--------------------------------------------------------------------------|
 | Element   | Description   |
+|------------|--------------------------------------------------------------------------|
 | Connection | The connection string to the Operations Manager server for this activity |
 | Domain   | The domain that the alert came from   |
 | FullName   | The full name of the Operations Manager monitoring object   |

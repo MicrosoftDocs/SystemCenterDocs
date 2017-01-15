@@ -27,18 +27,18 @@ The activity publishes all of the data from the required and optional properties
 
 | **Element**  | **Description** | **Valid Values**   |
 |:---|:---|:---|
-| Service Name |   |   |
-| Tier Name   |   |   |
-| Start Action |   | Default: Don't turn on the virtual machine |
-| Stop Action  |   | Default: Save State   |
+| Service Name | -  | -  |
+| Tier Name   | -  |  - |
+| Start Action |  - | Default: Don't turn on the virtual machine |
+| Stop Action  | -  | Default: Save State   |
 
 ## Scale Tier Out Optional Properties
 
-| **Element**   | **Description**   | **Valid Values** |
-|:---|:---|:---|
-| Virtual Machine Name | The name that VMM uses to identify the virtual machine. |   |
-| Computer Name   | The actual computer name of the virtual machine.   |   |
-| Decription   |   |   |
+| **Element**   | **Description**   |
+|:---|:---|
+| Virtual Machine Name | The name that VMM uses to identify the virtual machine. |   
+| Computer Name   | The actual computer name of the virtual machine.   |   
+| Description   | -  |   
 
 ## Scale Tier Out Published Data
 
@@ -50,4 +50,3 @@ This activity has no published data.
 #### Other Resources
 
 [Using Runbooks in System Center 2016 Orchestrator](https://technet.microsoft.com/en-us/library/hh403791.aspx)
-

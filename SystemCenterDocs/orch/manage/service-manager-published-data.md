@@ -25,9 +25,8 @@ The following tables list the Published Data elements for all of the classes in 
 
 Class Category: Visible
 
-|   |   |
-|---------------------|------------|
 | Element Name   | Field Type |
+|---------------------|------------|
 | Distinguished Name  | string   |
 | SID   | string   |
 | FQDN   | string   |
@@ -65,9 +64,8 @@ Class Category: Visible
 
 Class Category: Visible
 
-|   |   |
-|---------------------|------------|
 | Element Name   | Field Type |
+|---------------------|------------|
 | Distinguished Name  | string   |
 | SID   | string   |
 | FQDN   | string   |
@@ -103,9 +101,8 @@ Class Category: Visible
 
 Class Category: Visible
 
-|   |   |
-|---------------------|------------|
 | Element Name   | Field Type |
+|---------------------|------------|
 | Distinguished Name  | string   |
 | SID   | string   |
 | FQDN   | string   |
@@ -141,9 +138,8 @@ Class Category: Visible
 
 Class Type: Visible
 
-|   |   |
-|----------------------------|------------|
 | Element Name   | Field Type |
+|---------------------|------------|
 | Reason   | string   |
 | Notes   | string   |
 | Implementation Plan   | string   |
@@ -174,9 +170,8 @@ Class Type: Visible
 
 Class Type: Hidden
 
-|   |   |
-|---------------------------------------|-----------|
 | Element Name   | Type   |
+|---------------------|------------|
 | Is Virtual Node   | boolean   |
 | Principal Name   | string   |
 | DNS Name   | string   |
@@ -201,9 +196,8 @@ Class Type: Hidden
 
 Class Category: Hidden
 
-|   |   |
-|---------------------------------------|------------|
 | Element Name   | Field Type |
+|---------------------|------------|
 | Operating System Version   | string   |
 | Operating System Version Display Name | string   |
 | Product Type   | string   |
@@ -232,9 +226,8 @@ Class Category: Hidden
 
 Class Type: Hidden
 
-|   |   |
-|--------------|------------|
 | Element Name | Field Type |
+|---------------------|------------|
 | Is Private   | boolean   |
 | Comment   | string   |
 | Entered By   | string   |
@@ -246,9 +239,8 @@ Class Type: Hidden
 
 Class Type: Hidden
 
-|   |   |
-|--------------------|------------|
 | Element Name   | Field Type |
+|---------------------|------------|
 | ID   | string   |
 | Total Rating Count | int32   |
 | Total Rating Stars | int32   |
@@ -259,9 +251,8 @@ Class Type: Hidden
 
 Class Type: Hidden
 
-|   |   |
-|---------------------------------------|------------|
 | Element Name   | Field Type |
+|---------------------|------------|
 | Principal Name   | string   |
 | DNS Name   | string   |
 | NetBIOS Computer Name   | string   |
@@ -286,9 +277,8 @@ Class Type: Hidden
 
 Class Type: Hidden
 
-|   |   |
-|------------------------|------------|
 | Element Name   | Field Type |
+|---------------------|------------|
 | Publisher   | string   |
 | Version String   | string   |
 | Product Name   | string   |
@@ -333,9 +323,8 @@ Class Type: Hidden
 
 Class Type: Visible
 
-|   |   |
-|--------------------------|------------|
 | Element Name   | Field Type |
+|---------------------|------------|
 | Sequence ID   | int32   |
 | Notes   | string   |
 | Status   | enum   |
@@ -357,9 +346,8 @@ Class Type: Visible
 
 Class Type: Hidden
 
-|   |   |
-|---------------------------------------|------------|
 | Element Name   | Field Type |
+|---------------------|------------|
 | Operating System Version   | string   |
 | Operating System Version Display Name | string   |
 | Product Type   | string   |
@@ -388,9 +376,8 @@ Class Type: Hidden
 
 Class Type: Hidden
 
-|   |   |
-|---------------|------------|
 | Element Name  | Field Type |
+|---------------------|------------|
 | ProgramId   | string   |
 | Display name  | string   |
 | Program Name  | string   |
@@ -408,9 +395,8 @@ Class Type: Hidden
 
 Class Type: Hidden
 
-|   |   |
-|--------------|------------|
 | Element Name | Field Type |
+|---------------------|------------|
 | Body   | string   |
 | Subject   | string   |
 | Priority   | int32   |
@@ -424,9 +410,8 @@ Class Type: Hidden
 
 Class Type: Hidden
 
-|   |   |
-|-----------------------------------------------|------------|
 | Element Name   | Field Type |
+|---------------------|------------|
 | Management Group Name   | string   |
 | Management Group ID   | string   |
 | Data Access Service SCP   | string   |
@@ -460,9 +445,8 @@ Class Type: Hidden
 
 Class Type: Hidden
 
-|   |   |
-|--------------|------------|
 | Element Name | Field Type |
+|---------------------|------------|
 | Extension   | string   |
 | Description  | string   |
 | Content   | string   |
@@ -475,9 +459,8 @@ Class Type: Hidden
 
 Class Type: Hidden
 
-|   |   |
-|---------------------------------------|------------|
 | Element Name   | Field Type |
+|---------------------|------------|
 | Install Directory   | string   |
 | Principal Name   | string   |
 | DNS Name   | string   |
@@ -503,9 +486,8 @@ Class Type: Hidden
 
 Class Type: Hidden
 
-|   |   |
-|-------------------------------|------------|
 | Element Name   | Field Type |
+|---------------------|------------|
 | Last Run Start Time   | date time  |
 | Last Run Finish Time   | date time  |
 | Status   | enum   |
@@ -545,9 +527,8 @@ Class Type: Hidden
 
 Class Type: Hidden
 
-|   |   |
-|-----------------------|------------|
 | Element Name   | Field Type |
+|---------------------|------------|
 | Caption   | string   |
 | Index   | int32   |
 | Interface Type   | string   |
@@ -578,9 +559,8 @@ Class Type: Hidden
 
 Class Type: Hidden
 
-|   |   |
-|---------------------------------------|------------|
 | Element Name   | Field Type |
+|---------------------|------------|
 | Install Directory   | string   |
 | Principal Name   | string   |
 | DNS Name   | string   |
@@ -606,9 +586,8 @@ Class Type: Hidden
 
 Class Type: Hidden
 
-|   |   |
-|-------------------------------|------------|
 | Element Name   | Field Type |
+|---------------------|------------|
 | Management Group Name   | string   |
 | Management Pack Name   | string   |
 | Monitoring Rule Identifier   | string   |
@@ -656,9 +635,8 @@ Class Type: Hidden
 
 Class Type: Hidden
 
-|   |   |
-|--------------------|------------|
 | Element Name   | Field Type |
+|--------------------|------------|
 | Description   | string   |
 | Unique ID   | string   |
 | SDM Package Digest | string   |
@@ -672,9 +650,8 @@ Class Type: Hidden
 
 Class Type: Hidden
 
-|   |   |
-|---------------------|------------|
 | Element Name   | Field Type |
+|---------------------|------------|
 | Domain   | string   |
 | User Name   | string   |
 | First Name   | string   |
@@ -706,9 +683,8 @@ Class Type: Hidden
 
 Class Type: Hidden
 
-|   |   |
-|--------------|------------|
 | Element Name | Field Type |
+|--------------|------------|
 | Action Type  | enum   |
 | Title   | string   |
 | Description  | string   |
@@ -721,9 +697,8 @@ Class Type: Hidden
 
 Class Type: Hidden
 
-|   |   |
-|----------------------|------------|
 | Element Name   | Field Type |
+|----------------------|------------|
 | E-mail address   | string   |
 | E-mail response time | string   |
 | Support phone   | string   |
@@ -737,9 +712,8 @@ Class Type: Hidden
 
 Class Type: Hidden
 
-|   |   |
-|-------------------------------|------------|
 | Element Name   | Field Type |
+|---------------------|------------|
 | Site Identifier   | string   |
 | CI ID   | string   |
 | Baseline Identifier   | string   |
@@ -778,9 +752,8 @@ Class Type: Hidden
 
 Class Type: Hidden
 
-|   |   |
-|----------------------------------------|------------|
 | Element Name   | Field Type |
+|----------------------------------------|------------|
 | Site ID   | string   |
 | Site Name   | string   |
 | Management Server SCP   | string   |
@@ -819,9 +792,8 @@ Class Type: Hidden
 
 Class Type: Hidden
 
-|   |   |
-|--------------------|------------|
 | Element Name   | Field Type |
+|--------------------|------------|
 | Manufacturer   | string   |
 | Speed   | int32   |
 | Data Width   | int32   |
@@ -848,9 +820,8 @@ Class Type: Hidden
 
 Class Type: Hidden
 
-|   |   |
-|--------------------------------|------------|
 | Element Name   | Field Type |
+|--------------------------------|------------|
 | UNC Name   | string   |
 | Server Name   | string   |
 | Short Server Name   | string   |
@@ -901,9 +872,8 @@ Class Type: Hidden
 
 Class Type: Hidden
 
-|   |   |
-|---------------------|------------|
 | Element Name   | Field Type |
+|---------------------|------------|
 | Article Identifier  | string   |
 | Bulletin Identifier | string   |
 | Parent   | string   |
@@ -921,9 +891,8 @@ Class Type: Hidden
 
 Class Type: Visible
 
-|   |   |
-|-------------------------------|------------|
 | Element Name   | Field Type |
+|---------------------|------------|
 | Resolve By   | date time  |
 | Escalated   | boolean   |
 | Source   | enum   |
@@ -955,9 +924,8 @@ Class Type: Visible
 
 Class Type: Hidden
 
-|   |   |
-|-----------------|------------|
 | Element Name   | Field Type |
+|-----------------|------------|
 | Time In Minutes | int32   |
 | Last Updated   | date time  |
 | ID   | string   |
@@ -967,9 +935,8 @@ Class Type: Hidden
 
 Class Type: Visible
 
-|   |   |
-|--------------------------------------------|------------|
 | Element Name   | Field Type |
+|--------------------------------------------|------------|
 | Approval Condition   | enum   |
 | Approval Percentage   | int32   |
 | Comments   | string   |
@@ -996,9 +963,8 @@ Class Type: Visible
 
 Class Type: Hidden
 
-|   |   |
-|-------------------------|------------|
 | Element Name   | Field Type |
+|-------------------------|------------|
 | Management Service ID   | string   |
 | Management Service Name | string   |
 | Object Status   | enum   |
@@ -1010,9 +976,8 @@ Class Type: Hidden
 
 Class Type: Hidden
 
-|   |   |
-|----------------------|------------|
 | Element Name   | Field Type |
+|----------------------|------------|
 | Hardware Identifier  | string   |
 | SMBIOS UUID   | string   |
 | MAC Addresses   | string   |
@@ -1034,9 +999,8 @@ Class Type: Hidden
 
 Class Type: Hidden
 
-|   |   |
-|---------------------------------------|------------|
 | Element Name   | Field Type |
+|---------------------------------------|------------|
 | Principal Name   | string   |
 | DNS Name   | string   |
 | NetBIOS Computer Name   | string   |
@@ -1061,9 +1025,8 @@ Class Type: Hidden
 
 Class Type: Hidden
 
-|   |   |
-|--------------------|------------|
 | Element Name   | Field Type |
+|--------------------|------------|
 | Adapter Type   | string   |
 | Index   | int32   |
 | Manufacturer   | string   |
@@ -1093,9 +1056,8 @@ Class Type: Hidden
 
 Class Type: Hidden
 
-|   |   |
-|--------------|------------|
 | Element Name | Field Type |
+|--------------|------------|
 | IsEnabled   | boolean   |
 | SMTPDomain   | string   |
 | Service   | string   |
@@ -1105,9 +1067,8 @@ Class Type: Hidden
 
 Class Type: Hidden
 
-|   |   |
-|--------------|------------|
 | Element Name | Field Type |
+|--------------|------------|
 | ID   | string   |
 | Time zone   | string   |
 | Locale ID   | int32   |
@@ -1117,9 +1078,8 @@ Class Type: Hidden
 
 Class Type: Hidden
 
-|   |   |
-|---------------------------------------|------------|
 | Element Name   | Field Type |
+|---------------------------------------|------------|
 | Watcher Group Name   | string   |
 | Root Management Server Principal Name | string   |
 | Object Status   | enum   |
@@ -1131,9 +1091,8 @@ Class Type: Hidden
 
 Class Type: Hidden
 
-|   |   |
-|---------------------------------------|------------|
 | Element Name   | Field Type |
+|---------------------------------------|------------|
 | Watcher Group Name   | string   |
 | Root Management Server Principal Name | string   |
 | Object Status   | enum   |
@@ -1145,9 +1104,8 @@ Class Type: Hidden
 
 Class Type: Hidden
 
-|   |   |
-|--------------|------------|
 | Element Name | Field Type |
+|--------------|------------|
 | Message   | string   |
 | Encoding   | string   |
 | Sent To   | string   |
@@ -1159,9 +1117,8 @@ Class Type: Hidden
 
 Class Type: Hidden
 
-|   |   |
-|--------------------------|------------|
 | Element Name   | Field Type |
+|--------------------------|------------|
 | Package ID   | string   |
 | Machine Name   | string   |
 | Error Message   | string   |
@@ -1187,9 +1144,8 @@ Class Type: Hidden
 
 Class Type: Hidden
 
-|   |   |
-|---------------------------------|------------|
 | Element Name   | Field Type |
+|---------------------------------|------------|
 | File System   | string   |
 | Compressed   | string   |
 | Size (MB)   | int32   |
@@ -1249,9 +1205,8 @@ Class Type: Hidden
 
 Class Type: Hidden
 
-|   |   |
-|---------------|------------|
 | Element Name  | Field Type |
+|---------------|------------|
 | Data   | string   |
 | SyncMetadata  | string   |
 | Object Status | enum   |
@@ -1263,9 +1218,8 @@ Class Type: Hidden
 
 Class Type: Hidden
 
-|   |   |
-|---------------------------------------|------------|
 | Element Name   | Field Type |
+|---------------------------------------|------------|
 | Install Directory   | string   |
 | Principal Name   | string   |
 | DNS Name   | string   |
@@ -1291,9 +1245,8 @@ Class Type: Hidden
 
 Class Type: Hidden
 
-|   |   |
-|---------------------------|------------|
 | Element Name   | Field Type |
+|---------------------------|------------|
 | SolutionName   | string   |
 | DataProviderName   | string   |
 | DataProviderDisplayName   | string   |
@@ -1317,9 +1270,8 @@ Class Type: Hidden
 
 Class Type: Hidden
 
-|   |   |
-|--------------------|------------|
 | Element Name   | Field Type |
+|--------------------|------------|
 | Disk Index   | int32   |
 | Block Size   | int32   |
 | Primary Partition  | string   |
@@ -1338,9 +1290,8 @@ Class Type: Hidden
 
 Class Type: Hidden
 
-|   |   |
-|---------------------------------------|------------|
 | Element Name   | Field Type |
+|---------------------------------------|------------|
 | Is Virtual Node   | boolean   |
 | Principal Name   | string   |
 | DNS Name   | string   |
@@ -1366,9 +1317,8 @@ Class Type: Hidden
 
 Class Type: Hidden
 
-|   |   |
-|---------------|------------|
 | Element Name  | Field Type |
+|---------------|------------|
 | Package ID   | string   |
 | Name   | string   |
 | Version   | string   |
@@ -1386,9 +1336,8 @@ Class Type: Hidden
 
 Class Type: Hidden
 
-|   |   |
-|---------------------|------------|
 | Element Name   | Field Type |
+|---------------------|------------|
 | Reviewer Identifier | string   |
 | Decision   | enum   |
 | Decision Date   | date time  |
@@ -1401,9 +1350,8 @@ Class Type: Hidden
 
 Class Type: Hidden
 
-|   |   |
-|-------------------------------|------------|
 | Element Name   | Field Type |
+|---------------------|------------|
 | Service ID   | string   |
 | Service Description   | string   |
 | Business Detailed Description | string   |
@@ -1422,9 +1370,8 @@ Class Type: Hidden
 
 Class Type: Hidden
 
-|   |   |
-|-----------------|------------|
 | Element Name   | Field Type |
+|-----------------|------------|
 | ID   | string   |
 | Title   | string   |
 | Body   | string   |
@@ -1436,9 +1383,8 @@ Class Type: Hidden
 
 Class Type: Visible
 
-|   |   |
-|----------------------------|------------|
 | Element Name   | Field Type |
+|----------------------------|------------|
 | Knowledge Article Type   | enum   |
 | Knowledge Article Template | string   |
 | Knowledge Article Owner   | string   |
@@ -1467,9 +1413,8 @@ Class Type: Visible
 
 Class Type: Hidden
 
-|   |   |
-|---------------|------------|
 | Element Name  | Field Type |
+|---------------|------------|
 | Object Status | enum   |
 | Asset Status  | enum   |
 | Notes   | string   |
@@ -1479,9 +1424,8 @@ Class Type: Hidden
 
 Class Type: Hidden
 
-|   |   |
-|--------------|------------|
 | Element Name | Field Type |
+|--------------|------------|
 | Comment   | string   |
 | Entered By   | string   |
 | Entered Date | date time  |
@@ -1492,9 +1436,8 @@ Class Type: Hidden
 
 Class Type: Hidden
 
-|   |   |
-|---------------------------|------------|
 | Element Name   | Field Type |
+|---------------------------|------------|
 | ProcessId   | string   |
 | ChangeRequestTemplateId   | string   |
 | ChangeRequestTemplateName | string   |
@@ -1505,9 +1448,8 @@ Class Type: Hidden
 
 Class Type: Hidden
 
-|   |   |
-|-------------------------------|------------|
 | Element Name   | Field Type |
+|---------------------|------------|
 | Status   | enum   |
 | Source   | enum   |
 | Classification   | enum   |
@@ -1539,9 +1481,8 @@ Class Type: Hidden
 
 Class Type: Hidden
 
-|   |   |
-|---------------|------------|
 | Element Name  | Field Type |
+|---------------|------------|
 | Vendor   | string   |
 | Title   | string   |
 | Object Status | enum   |
@@ -1553,9 +1494,8 @@ Class Type: Hidden
 
 Class Type:
 
-|   |   |
-|-------------------------|------------|
 | Element Name   | Field Type |
+|-------------------------|------------|
 | Management Service ID   | string   |
 | Management Service Name | string   |
 | Object Status   | enum   |
@@ -1567,9 +1507,8 @@ Class Type:
 
 Class Type: Hidden
 
-|   |   |
-|-------------------------------|------------|
 | Element Name   | Field Type |
+|---------------------|------------|
 | Site Name   | string   |
 | Object Status   | enum   |
 | Asset Status   | enum   |
@@ -1608,9 +1547,8 @@ Class Type: Hidden
 
 Class Type: Hidden
 
-|   |   |
-|--------------|------------|
 | Element Name | Field Type |
+|--------------|------------|
 | Comment   | string   |
 | Entered By   | string   |
 | Entered Date | date time  |
@@ -1621,9 +1559,8 @@ Class Type: Hidden
 
 Class Type: Hidden
 
-|   |   |
-|-------------------------------|------------|
 | Element Name   | Field Type |
+|---------------------|------------|
 | Max Noncompliance Criticality | int32   |
 | Baseline Unique ID   | string   |
 | CI Unique ID   | string   |
@@ -1637,11 +1574,10 @@ Class Type: Hidden
 
 ## Windows Client Operating System Class Published Data
 
-Class Type:
+Class Type: -
 
-|   |   |
-|---------------------------------------|------------|
 | Element Name   | Field Type |
+|---------------------------------------|------------|
 | Operating System Version   | string   |
 | Operating System Version Display Name | string   |
 | Product Type   | string   |

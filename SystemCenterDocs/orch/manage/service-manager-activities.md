@@ -126,7 +126,6 @@ An activity can only subscribe to data from the activities that are linked befor
 For a list of the data elements published by each activity, see the **Published Data** tables in the activity topic. For information about the common published data items, see [Common Published Data](https://technet.microsoft.com/en-us/library/e339c027-4c69-43e5-a59b-ac7ea0a676c8#CommonPublishedData).
 
 ## Activities
---
 
 The Service Manager Integration Pack adds the **SC 2016 Service Manager** category to the **Activities** pane in the Runbook Designer. This category contains the following activities:
 
