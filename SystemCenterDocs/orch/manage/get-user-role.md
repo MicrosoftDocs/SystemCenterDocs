@@ -59,24 +59,24 @@ None
 
 ## Get User RolePublished Data
 
-| Element   | Description   | Valid Values |
-|:---|:---|:---|
-| User Role ID   | The ID of the user role   |   |
-| User Role Name   | The name of the user role   |   |
-| Profile Type   | The profile type of the user role |   |
-| Host Group Names in Scope   |   |   |
-| Cloud Names in Scope   |   |   |
-| Actions Permitted   | List of actions permitted   |   |
-| Member Names   | Members of the user role   |   |
-| Description   | Text description of the user role |   |
-| User Role Data Path   |   |   |
-| Library Server Names   |   |   |
-| VM Template Resource Names   |   |   |
-| Service Template Resource Names   |   |   |
-| Service Instance Resource Names   |   |   |
-| VM Instance Resource Names   |   |   |
-| Hardware Profile Resource Names   |   |   |
-| Application Profile Resource Names   |   |   |
-| Guest OS Profile Resource Names   |   |   |
-| SQL Profile Resource Names   |   |   |
-| Service Configuration Resource Names |   |   |
+| Element   | Description   |
+|:---|:---|
+| User Role ID   | The ID of the user role   |   
+| User Role Name   | The name of the user role   |   
+| Profile Type   | The profile type of the user role |   
+| Host Group Names in Scope   |   |   
+| Cloud Names in Scope   |   |   
+| Actions Permitted   | List of actions permitted   |   
+| Member Names   | Members of the user role   |   
+| Description   | Text description of the user role |   
+| User Role Data Path   |   |   
+| Library Server Names   |   |   
+| VM Template Resource Names   |   |   
+| Service Template Resource Names   |   |   
+| Service Instance Resource Names   |   |   
+| VM Instance Resource Names   |   |   
+| Hardware Profile Resource Names   |   |   
+| Application Profile Resource Names   |   |   
+| Guest OS Profile Resource Names   |   |   
+| SQL Profile Resource Names   |   |   
+| Service Configuration Resource Names |   |   

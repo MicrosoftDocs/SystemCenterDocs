@@ -25,9 +25,11 @@ The following tables list the required and optional properties and published dat
 
 The activity publishes all of the data from the required and optional properties into published data. Additional published data is generated based on the class that you select when you define the activity.
 
-### Get VM List Activity Required PropertiesNo required properties are provided for this activity. 
+### Get VM List Activity Required Properties
+No required properties are provided for this activity.
 
-### Get VM List Activity Optional PropertiesNo optional properties are provided for this activity.
+### Get VM List Activity Optional Properties
+No optional properties are provided for this activity.
 
 ### Get VM List Activity Filters
 
@@ -41,9 +43,9 @@ The activity publishes all of the data from the required and optional properties
 
 ### Get VM List Activity Published Data
 
-| Name   | Description   | Value Type ||:---|:---|:---|
+| Name   | Description   | Value Type |
+|:---|:---|:---|
 | ID   | The identifier of the VM.   | String   |
-
 | VM Count | The number of VMs returned.   | String   |
 | VM Name  | The name of the VM.   | String   |
 | VM Path  | The full path of the VM on the vCenter server. | String   |
@@ -65,5 +67,3 @@ The following procedure describes the steps required to configure a Get VM List 
 4.  On the **Filters** tab, click **Add** to add the filters required to restrict the published data.
 
 5.  Click **Finish**.
-
-

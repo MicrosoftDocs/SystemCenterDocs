@@ -25,9 +25,8 @@ The following published data elements are specific to Get Relationship. Addition
 
 ## Get Relationship Published Data
 
-|   |   |
-|--------------------------|------------------------------------------------------------------------------------------------------------------------------|
 | Element   | Description   |
+|----------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Number of Objects   | The number of objects returned by the Get Relationship activity   |
 | Object Class   | The name of a class for which you want to define a relationship to the related class   |
 | Object GUID   | The unique identifier (GUID) of a single object in the object class that is used to define the relationship to another class |

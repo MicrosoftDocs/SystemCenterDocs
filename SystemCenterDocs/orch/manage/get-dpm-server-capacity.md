@@ -27,16 +27,14 @@ The activity publishes all of the data from the required and optional properties
 
 ## Get DPM Server Required Properties
 
-|   |   |
-|---------|----------------------------------------------------------------------------------------------------------------------------------------------|
 | Element | Sample Value   |
+|---------|----------------------------------------------------------------------------------------------------------------------------------------------|
 | Name   | The name of the Data Protection Manager connection to use for this activity, which also specifies the server to query for available capacity |
 
 ## Get DPM Server Published Data
 
-|   |   |
-|-----------------------|----------------------------------------------------------------------------------------------|
 | Element   | Sample Value   |
+|---------|----------------------------------------------------------------------------------------------------------------------------------------------|
 | DPMServerName   | The name of the Data Protection Manager server queried   |
 | TotalCapacityBytes   | The total capacity of the Data Protection Manager server in bytes   |
 | TotalCapacityGB   | The total capacity of the Data Protection Manager server in GB   |

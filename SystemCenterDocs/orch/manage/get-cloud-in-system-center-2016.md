@@ -33,22 +33,12 @@ There are no optional properties for this activity.
 
 ## Get Cloud Filters
 
-| **Element**   | **Description** | **Valid Values** |
-|:---|:---|:---|
-| Cloud ID   |   |   |
-| Capability Profiles   |   |   |
-| Cloud Name   |   |   |
-| Logical Networks   |   |   |
-| Memory (MB)   |   |   |
-| Readable Library Paths |   |   |
-| Storage (GB)   |   |   |
-| VM Count   |   |   |
-| Writable Library Paths |   |   |
+**Element**<br>
+Cloud ID<br>Capability Profiles<br>Cloud Name<br>Logical Networks<br>Memory (MB)<br>Readable Library Paths<br>Storage (GB)<br>VM Count<br>Writable Library Paths
 
 ## Get Cloud Published Data
 
-| **Element** | **Description** | **Valid Values** |
-|:---|:---|:---|
+There is no published data for this activity.
 
 ## See Also
 
@@ -56,4 +46,3 @@ There are no optional properties for this activity.
 #### Other Resources
 
 [Using Runbooks in System Center 2016 Orchestrator](https://technet.microsoft.com/en-us/library/hh403791.aspx)
-

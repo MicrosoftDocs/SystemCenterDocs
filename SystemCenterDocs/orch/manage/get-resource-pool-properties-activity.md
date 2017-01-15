@@ -33,13 +33,13 @@ The activity publishes all of the data from the required and optional properties
 
 ### Get Resource Pool Properties Activity Optional Properties
 
-No optional properties are provided for this activity. 
+No optional properties are provided for this activity.
 
 ### Get Resource Pool Properties Activity Published Data
 
-| Name   | Description   | Value Type ||:---|:---|:---|
+| Name   | Description   | Value Type |
+|:---|:---|:---|
 | CPUmaxUsage   | The maximum available CPU cycles for the resource pool (in megahertz).   | Integer   |
-
 | CPUoverallUsage   | The amount of CPU cycles used by the resource pool and VMs (in megahertz).   | Integer   |
 | CPUreservationUsed   | The amount of CPU cycles currently being used by the pool (in megahertz).   | Integer   |
 | CPUreservationUsedforVm   | The amount of CPU cycles currently being used by the VMs (in megahertz).   | Integer   |
@@ -84,5 +84,3 @@ The following procedure describes the steps required to configure a Get Resource
         You can also use published data to automatically populate the value of the property from the data output by a previous activity in the workflow.
 
 4.  Click **Finish**.
-
-

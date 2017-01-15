@@ -25,9 +25,8 @@ The activity publishes all of the data from the required and optional properties
 
 ## Get Alert Filters
 
-|   |   |
-|-----------------------------------|-------------------------------------------------------------------------------------------|
 | Element   | Description   |
+|-----------------------------------|-------------------------------------------------------------------------------------------|
 | Category   | The category name of the Management Pack   |
 | Class ID   | For System Center 2016 SP1 only: The Class ID of the alert.   |
 | ConnectorId   | The ID of the connector that generated the connection string   |
@@ -84,9 +83,8 @@ The activity publishes all of the data from the required and optional properties
 
 ## Get Alert Published Data
 
-|   |   |
-|-----------------------------------|-----------------------------------------------------------------------------------|
 | Element   | Description   |
+|-----------------------------------|-----------------------------------------------------------------------------------|
 | AlertCount   | The number of monitoring alerts that were found   |
 | Category   | The category name of the Management Pack   |
 | Class ID   | For System Center 2016 SP1 only: The Class ID of the alert.   |

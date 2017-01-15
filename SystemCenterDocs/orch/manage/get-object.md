@@ -25,7 +25,6 @@ The following published data element is specific to Get Object. Additional publi
 
 ## Get Object Published Data
 
-|   |   |
-|-------------------|-----------------------------------------------------------|
 | Element   | Description   |
+|-------------------|-----------------------------------------------------------|
 | Number of Objects | The number of objects returned by the Get Object activity |

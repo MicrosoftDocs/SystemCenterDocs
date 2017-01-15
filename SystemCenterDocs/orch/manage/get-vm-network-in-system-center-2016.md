@@ -33,19 +33,17 @@ There are no optional properties for this activity.
 
 ## Get VM Network Filters
 
-| **Element**   | **Description** | **Valid Values** |
-|:---|:---|:---|
-| Description   |   |   |
-| Logical Network   |   |   |
-| Routing Domain ID |   |   |
-| VM Network ID   |   |   |
-| VM network name   |   |   |
-| VM Subnet   |   |   |
+**Element**<br>
+Logical Network<br>
+Routing Domain ID<br>
+VM Network ID<br>
+VM network name<br>
+VM Subnet
 
 ## Get VM Network Published Data
 
-| **Element** | **Description** | **Valid Values** |
-|:---|:---|:---|
+There is no published data for this activity.
+
 
 ## See Also
 
@@ -53,4 +51,3 @@ There are no optional properties for this activity.
 #### Other Resources
 
 [Using Runbooks in System Center 2016 Orchestrator](https://technet.microsoft.com/en-us/library/hh403791.aspx)
-

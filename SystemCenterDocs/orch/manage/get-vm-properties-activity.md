@@ -31,7 +31,8 @@ The activity publishes all of the data from the required and optional properties
 |:---|:---|:---|:---|
 | VM Path | The path of the virtual machine in the vSphere hierarchy. | String   | Yes   |
 
-### Get VM Properties Activity Optional PropertiesNo optional properties are provided for this activity.
+### Get VM Properties Activity Optional Properties
+No optional properties are provided for this activity.
 
 ### Get VM Properties Activity Published Data
 
@@ -61,5 +62,3 @@ The following procedure describes the steps required to configure a Get VM Prope
         You can also use published data to automatically populate the value of the property from the data output by a previous activity in the workflow.
 
 4.  Click **Finish**.
-
-

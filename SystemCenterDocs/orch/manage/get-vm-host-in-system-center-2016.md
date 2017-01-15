@@ -32,16 +32,13 @@ There are no required properties for this activity.
 There are no optional properties for this activity.
 
 ## Get VM Host Filters
-
-| **Element**  | **Description** | **Valid Values** |
-|:---|:---|:---|
-| VM Host ID   |   |   |
-| VM Host Name |   |   |
+**Element**<br>
+VM Host ID<br>
+VM Host Name
 
 ## Get VM Host Published Data
 
-| **Element** | **Description** | **Valid Values** |
-|:---|:---|:---|
+There is no published data for this activity.
 
 ## See Also
 
@@ -49,4 +46,3 @@ There are no optional properties for this activity.
 #### Other Resources
 
 [Using Runbooks in System Center 2016 Orchestrator](https://technet.microsoft.com/en-us/library/hh403791.aspx)
-

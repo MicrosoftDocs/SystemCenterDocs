@@ -33,16 +33,11 @@ There are no optional properties for this activity.
 
 ## Get Service Configuration Filters
 
-| **Element**   | **Description** | **Valid Values** |
-|:---|:---|:---|
-| Deployment Status   |   |   |
-| Service Configuration ID   |   |   |
-| Service Configuration Name |   |   |
+**Element**<br>Deployment Status<br>Service Configuration ID<br>Service Configuration Name
 
 ## Get Service Configuration Published Data
 
-| **Element** | **Description** | **Valid Values** |
-|:---|:---|:---|
+There is no published data for this activity.
 
 ## See Also
 
@@ -50,4 +45,3 @@ There are no optional properties for this activity.
 #### Other Resources
 
 [Using Runbooks in System Center 2016 Orchestrator](https://technet.microsoft.com/en-us/library/hh403791.aspx)
-

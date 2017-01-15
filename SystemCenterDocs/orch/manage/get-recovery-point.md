@@ -25,17 +25,15 @@ The activity publishes all of the data from the required and optional properties
 
 ## Get Recovery Point Required Properties
 
-|   |   |
-|----------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Element   | Sample Value   |
+|----------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Selection   | Options are:Latest- the most recent recovery point associated with the data sourceAll - a list of all the data points associated with the data source (can return multiple values) |
 | Data Source ID | The unique identifier (GUID) of the data source for the recovery point, which can be obtained via the Get Data Source activity.   |
 
 ## Get Recovery Point Filters
 
-|   |   |
-|-----------------------------------|------------------------------------------------------------------------------------------|
 | Element   | Sample Value   |
+|----------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | AllMediaCatalogued   | True or False   |
 | ComponentName   | The component name   |
 | ComponentType   | The component type   |
@@ -62,9 +60,8 @@ The activity publishes all of the data from the required and optional properties
 
 ## Get Recovery Point Published Data
 
-|   |   |
-|-----------------------------------|-----------------------------------------------------------------------------------|
 | Element   | Sample Value   |
+|----------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | AllMediaCatalogued   | True or False   |
 | ComponentName   | The component name   |
 | ComponentType   | The component type   |

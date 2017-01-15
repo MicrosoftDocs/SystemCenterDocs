@@ -27,17 +27,19 @@ The activity publishes all of the data from the required and optional properties
 
 ### Get VM Status Activity Required Properties
 
-| Element | Description   | Valid Values | Look up ||:---|:---|:---|:---|
+| Element | Description   | Valid Values | Look up |
+|:---|:---|:---|:---|
 | VM Path | The path of the virtual machine to retrieve the status for. | String   | Yes   |
 
 
-### Get VM Status Activity Optional PropertiesNo optional properties are provided for this activity. 
+### Get VM Status Activity Optional Properties
+No optional properties are provided for this activity.
 
 ### Get VM Status Activity Published Data
 
 | Name   | Description   | Value Type |
-|:---|:---|:---|| CPU Usage   | The current CPU usage of the virtual machine   | Integer   |
-
+|:---|:---|:---|
+| CPU Usage   | The current CPU usage of the virtual machine   | Integer   |
 | Computer Name   | The computer name assigned to the guest operating system.   | String   |
 | Disk Capacity(MB) | The size of the virtual disk in megabytes.   | Integer   |
 | IP Address   | The primary IP address of the virtual machine.   | String   |
@@ -69,5 +71,3 @@ The following procedure describes the steps required to configure a Get VM Statu
         You can also use published data to automatically populate the value of the property from the data output by a previous activity in the workflow.
 
 4.  Click **Finish**.
-
-

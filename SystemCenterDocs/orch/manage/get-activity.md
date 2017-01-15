@@ -25,8 +25,7 @@ The following published data elements are specific to Get Activity. Additional p
 
 ## Get Activity Published Data
 
-|   |   |
-|-------------------|---------------------------------------------------------------------|
 | Element   | Description   |
+|-------------------|---------------------------------------------------------------------|
 | Object GUID   | The unique identifier (GUID) of the single activity to be retrieved |
 | Number of Objects | The number of objects returned by Get Activity   |

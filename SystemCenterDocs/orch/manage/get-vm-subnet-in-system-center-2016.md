@@ -33,19 +33,16 @@ There are no optional properties for this activity.
 
 ## Get VM Subnet Filters
 
-| **Element**   | **Description** | **Valid Values** |
-|:---|:---|:---|
-| Description   |   |   |
-| ID   |   |   |
-| Subnet VLANs   |   |   |
-| VM Subnet ID   |   |   |
-| VM Subnet Name |   |   |
-| VM Subnet Type |   |   |
+**Element**<br>
+ID<br>
+Subnet VLANs<br>
+VM Subnet ID<br>
+VM Subnet Name<br>
+VM Subnet Type
 
 ## Get VM Subnet Published Data
 
-| **Element** | **Description** | **Valid Values** |
-|:---|:---|:---|
+There is no published data for this activity.
 
 ## See Also
 
@@ -53,4 +50,3 @@ There are no optional properties for this activity.
 #### Other Resources
 
 [Using Runbooks in System Center 2016 Orchestrator](https://technet.microsoft.com/en-us/library/hh403791.aspx)
-

@@ -25,17 +25,19 @@ The following tables list the required and optional properties and published dat
 
 The activity publishes all of the data from the required and optional properties into published data. Additional published data is generated based on the class that you select when you define the activity.
 
-### Get Resource Pools Activity Required PropertiesNo required properties are provided for this activity. 
+### Get Resource Pools Activity Required Properties
+No required properties are provided for this activity.
 
-### Get Resource Pools Activity Optional PropertiesNo optional properties are provided for this activity. 
+### Get Resource Pools Activity Optional Properties
+No optional properties are provided for this activity.
 
 ### Get Resource Pools Activity Published Data
 
 | Name   | Description   | Value Type |
 |:---|:---|:---|
+| Resource Pool | A list of resource pool paths within the vCenter server. | String   |
 
-
-| Resource Pool | A list of resource pool paths within the vCenter server. | String   |## Configuring the Get Resource Pools Activity
+## Configuring the Get Resource Pools Activity
 
 The following procedure describes the steps required to configure a Get Resource Pools activity.
 
@@ -50,5 +52,3 @@ The following procedure describes the steps required to configure a Get Resource
     1.  In the **Configuration** section, click the ellipsis button **(...)**, and then select the VMware vSphere server connection that you want to use for this activity. Click **OK**.
 
 4.  Click **Finish**.
-
-
