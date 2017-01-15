@@ -55,7 +55,8 @@ After you download the integration pack file, you must register it with the Orch
 
 The VMM Integration Pack uses Windows PowerShell Remoting to be configured between the Orchestrator runbook server and the computer running the VMM Administration Console. Windows PowerShell Remoting relies on Windows Remote Management (WinRM) to establish the communications between the two systems. You must perform the following tasks before you configure the VMM connection in the Runbook Designer.
 
-<br><br><strong>Note </strong><br>The Runbook Designer will also connect to the computer running the VMM Administration Console when you are configuring activities from the VMM Integration Pack. If the Runbook Designer is installed on a different computer than the runbook server, then you will also need to configure Windows PowerShell and WinRM on that computer.<br><br>
+>[!NOTE]
+>The Runbook Designer will also connect to the computer running the VMM Administration Console when you are configuring activities from the VMM Integration Pack. If the Runbook Designer is installed on a different computer than the runbook server, then you will also need to configure Windows PowerShell and WinRM on that computer.
 
 ### Confirm Windows PowerShell 2.0 Installation
 
@@ -115,7 +116,7 @@ The execution policy in Windows PowerShell determines which scripts must be digi
 
     **set-executionpolicy remotesigned**
 
-For more information abouthow to configure the Windows PowerShell execution policy, see [Set-ExecutionPolicy](http://go.microsoft.com/fwlink/?linkID=113394) in the Microsoft TechNet Library.
+For more information about how to configure the Windows PowerShell execution policy, see [Set-ExecutionPolicy](http://go.microsoft.com/fwlink/?linkID=113394) in the Microsoft TechNet Library.
 
 ### Windows PowerShell Remote Connection Quota
 
@@ -123,7 +124,8 @@ You can use WS-Management quotas in Windows PowerShell remoting to protect the O
 
 By default, MaxConcurrentOperationsPerUser is set to 5. This means that a maximum of five VMM objects can run concurrently across all VMM activities. If this default setting does not meet the needs of your organization, see [About\_Remote\_Troubleshooting](http://go.microsoft.com/fwlink/?linkID=135188) in the Microsoft TechNet Library for information about how to configure remote operations in Windows PowerShell.
 
-<br><br><strong>Note </strong><br>The **MaxConcurrentOperationsPerUser** affects all Windows PowerShell objects whether or not they are from a runbook. If there are remote sessions from other applications, they will be included in this limit.<br><br>
+>[!NOTE]
+>The **MaxConcurrentOperationsPerUser** affects all Windows PowerShell objects whether or not they are from a runbook. If there are remote sessions from other applications, they will be included in this limit.
 
 ## Configuring the System Center 2016 Virtual Machine Manager Connections
 

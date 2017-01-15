@@ -25,9 +25,8 @@ The following tables list the filters, properties, and published data for this a
 
 ## Monitor Alert Filters
 
-|   |   |
-|-----------------------------------|-------------------------------------------------------------------------------------------|
 | Element   | Description   |
+|-----------------------------------|-------------------------------------------------------------------------------------------|
 | Category   | The category of the alert   |
 | Class ID   | For System Center 2016 SP1 only: The Class ID of the alert.   |
 | ConnectorId   | The ID of the connector that generated the connection string   |
@@ -82,9 +81,8 @@ The following tables list the filters, properties, and published data for this a
 
 ## Monitor Alert Published Data
 
-|   |   |
-|-----------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------|
 | Element   | Description   |
+|-----------------------------------|-------------------------------------------------------------------------------------------|
 | Category   | The category name of the Management Pack   |
 | Class ID   | For System Center 2016 SP1 only: The Class ID of the alert.   |
 | CompanyKnowledge   | Knowledge from the rule or monitor that triggered the alert; for instance remediation information. Not available in System Center 2016 SP1. |
@@ -140,7 +138,6 @@ The following tables list the filters, properties, and published data for this a
 | RepeatCount   | The number of times that the alert has been repeated   |
 | ResolutionState   | The resolution state of the alert   |
 | ResolvedBy   | The user that resolved the alert   |
-|   |   |
 | Server   | The name of the Operations Manager server   |
 | Severity   | The severity level of the alert   |
 | SiteName   | The site name of the alert   |

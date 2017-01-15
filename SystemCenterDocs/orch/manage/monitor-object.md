@@ -25,7 +25,6 @@ The following published data element is specific to Monitor Object. Additional p
 
 ## Monitor Object Published Data
 
-|   |   |
-|-------------------|---------------------------------------------------------------|
 | Element   | Description   |
+|-------------------|---------------------------------------------------------------|
 | Number of Objects | The number of objects returned by the Monitor Object activity |

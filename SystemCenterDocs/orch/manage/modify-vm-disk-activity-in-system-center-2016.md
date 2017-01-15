@@ -24,24 +24,24 @@ The Modify VM Disk activity is used in a runbook to attach a virtual disk to a d
 ### Modify VM Disk Activity Required Properties
 
 | Element   | Description   | Valid values | Look up |
-| VM Path   | The path of the virtual machine containing the virtual disk. | String   | Yes   |
 |:---|:---|:---|:---|
+| VM Path   | The path of the virtual machine containing the virtual disk. | String   | Yes   |
 | SCSI Bus Number | The SCSI bus number of the SCSI controller.   | Integer   | No   |
 | SCSI Unit Key   | The SCSI unit key of the disk.   | Integer   | No   |
 
 ### Modify VM Disk Activity Optional Properties
 
 | Element   | Description   | Valid values | Look up |
-| New Disk Size (GB)  | The desired size of the extended disk in gigabytes.   | Integer   | No   |
 |:---|:---|:---|:---|
+| New Disk Size (GB)  | The desired size of the extended disk in gigabytes.   | Integer   | No   |
 | New SCSI Bus Number | The SCSI bus number of the SCSI controller to which you want to attach the disk. | Integer   | No   |
 | New SCSI Unit Key   | The new SCSI unit key of the disk.   | Integer   | No   |
 
 ### Modify VM Disk Activity Published Data
 
 | Element   | Description   | Value type |
-| VM Path   | The path of the virtual machine containing the virtual disk.   | String   |
 |:---|:---|:---|
+| VM Path   | The path of the virtual machine containing the virtual disk.   | String   |
 | New Disk Size (GB)  | The desired size of the extended disk in gigabytes.   | Integer   |
 | New SCSI Bus Number | The SCSI bus number of the SCSI controller to which you want to attach the disk. | Integer   |
 | New SCSI Unit Key   | The new SCSI unit key of the disk.   | Integer   |
@@ -69,5 +69,3 @@ The following procedure describes the steps required to configure a Modify VM Di
         You can also use published data to automatically populate the value of the property from the data output by a previous activity in the workflow.
 
 4.  Click **Finish**.
-
-

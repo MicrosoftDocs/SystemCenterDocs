@@ -153,7 +153,9 @@ To avoid possible corruption, do not use alternate means to directly connect to 
 
 14. Click **OK** to close the configuration dialog box, and then click **Finish**.
 
-<br><br><strong>Tip </strong><br>For the DB Username and DB Password - If your HPSM database is on a computer running Windows server and you set up your ODBC DSN with Windows authentication, then you can enter anything in for the username and password because the fields are required only not to be blank in order for the Test Connection button to work. <br> If you are using SQL Server authentication, then you must have the username and password for the HPSM SQL Server database. The user must have read/write access to the database via the DSN connection.<br><br>
+>[!TIP]
+>For the DB Username and DB Password - If your HPSM database is on a computer running Windows server and you set up your ODBC DSN with Windows authentication, then you can enter anything in for the username and password because the fields are required only not to be blank in order for the Test Connection button to work.
+>If you are using SQL Server authentication, then you must have the username and password for the HPSM SQL Server database. The user must have read/write access to the database via the DSN connection.
 
 ## Exposing Required Fields
 

@@ -33,9 +33,8 @@ The following tables list the properties and published data for this activity. T
 
 ## Monitor State Published Data
 
-|   |   |
-|---------------------------------------------|-----------------------------------------------------------------------------------------------------------|
 | Element   | Description   |
+|-------------------|---------------------------------------------------------------|
 | AvailabilityLastModified   | The last date and time that the availability of the monitor was changed   |
 | Connection   | The connection string to the Operations Manager server that you are using   |
 | DisplayName   | The display name of the Operations Manager monitoring object   |

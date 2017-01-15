@@ -33,7 +33,8 @@ The Service Manager IP requires the following software to be installed and confi
     -   The ENU Locale
     -   The U.S. English date format (month/day/year)
 
-<br><br><strong>Important </strong><br>System Center Service Manager 2010 and System Center 2016 - Service Manager share the same version of **Microsoft.EnterpriseManagement.Core.dll**. Installation of System Center Service Manager 2010 IP and System Center 2016 - Service Manager IP on the same runbook server is not supported.<br><br>
+>[!IMPORTANT]
+>System Center Service Manager 2010 and System Center 2016 - Service Manager share the same version of **Microsoft.EnterpriseManagement.Core.dll**. Installation of System Center Service Manager 2010 IP and System Center 2016 - Service Manager IP on the same runbook server is not supported.
 
 For more information about how to install and configure Orchestrator or System Center 2016 SP1 and System Center 2016 - Service Manager, see the applicable product documentation.
 

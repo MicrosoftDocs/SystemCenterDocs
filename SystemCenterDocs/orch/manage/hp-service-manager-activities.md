@@ -66,13 +66,11 @@ The Monitor and Get activities use filters to determine the values that will inv
 -   **After**: the property of the message is after the date/time specified in the filter.
 -   **Before**: the property of the message is before the date/time specified in the filter.
 
-| Tip   |
-|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Filter properties can only be used once in an activity. For example, if your search criteria for an entry include a date range, you cannot use the **TimeAdded** filter property twice in the same activity. However, you may be able to use the **TimeAdded After Date** and **TimeRaised Before Date** filter properties to achieve the desired results. |
+>[!TIP]
+>Filter properties can only be used once in an activity. For example, if your search criteria for an entry include a date range, you cannot use the **TimeAdded** filter property twice in the same activity. However, you may be able to use the **TimeAdded After Date** and **TimeRaised Before Date** filter properties to achieve the desired results.
 
-| Note   |
-|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Some HP Service Manager string fields, such as **Description**, do not support the **Contains** and **Does not contain** relations. However, these relations may still be displayed in the list of available options for the field. |
+>[!NOTE]
+>Some HP Service Manager string fields, such as **Description**, do not support the **Contains** and **Does not contain** relations. However, these relations may still be displayed in the list of available options for the field. 
 
 ### Run Behavior Tab
 

@@ -40,7 +40,8 @@ The following tables list the required properties and published data for this ac
 | HPOM Port   | The port used to connect to the HPOM management server.   | Integer   |
 | HPOM Username   | The name of the HPOM used to connect to the HPOM management server. | String   |
 
-<br><br><strong>Tip </strong><br> The Own/Disown Message activity will succeed when provided with a Message ID that does not match a Message stored in HP Operations Manager management server. <br><br>
+>[!TIP]
+>The Own/Disown Message activity will succeed when provided with a Message ID that does not match a Message stored in HP Operations Manager management server. 
 
 ## Other Activities
 

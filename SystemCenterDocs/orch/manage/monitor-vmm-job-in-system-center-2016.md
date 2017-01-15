@@ -25,19 +25,15 @@ The activity publishes all of the data from the required and optional properties
 
 ## Monitor VMM Job Required Properties
 
-| **Element** | **Description** | **Valid Values** |
-|:---|:---|:---|
-| Job ID   |   |   |
+**Element**<br>Job ID
 
 ## Monitor VMM Job Optional Properties
 
-| **Element** | **Description** | **Valid Values** |
-|:---|:---|:---|
+There are no optional properties for this activity.
 
 ## Monitor VMM Job Published Data
 
-| **Element** | **Description** | **Valid Values** |
-|:---|:---|:---|
+There is no published data for this activity.
 
 ## See Also
 
@@ -45,4 +41,3 @@ The activity publishes all of the data from the required and optional properties
 #### Other Resources
 
 [Using Runbooks in System Center 2016 - Orchestrator](https://technet.microsoft.com/en-us/library/hh403791.aspx)
-

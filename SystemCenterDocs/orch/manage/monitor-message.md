@@ -108,7 +108,8 @@ The following tables list the required properties and published data for this ac
 | Time Owned or Acknowledged   | The time at which the message was owned or acknowledged. The service maps whichever time is later.   | Datetime   |
 | Time Received   | The time at which the management server received the message.   | Datetime   |
 
-<br><br><strong>Tip </strong><br> When editing filters for numeric fields, the **Filter Settings** dialog may change the **Is less than** and **Is greater than** relations to **Is less than or equal to** and **Is greater than or equal to**. To avoid inadvertently modifying the filter, click **Cancel** to dismiss the Filter Settings dialog without committing the change. <br><br>
+>[!TIP]
+>When editing filters for numeric fields, the **Filter Settings** dialog may change the **Is less than** and **Is greater than** relations to **Is less than or equal to** and **Is greater than or equal to**. To avoid inadvertently modifying the filter, click **Cancel** to dismiss the Filter Settings dialog without committing the change. 
 
 ## Other Activities
 

@@ -32,7 +32,7 @@ The following tables list the filters, required properties, and Published Data f
 | Monitor Modified Items | A Boolean value that indicates whether to monitor the list for modified items.   | True<br>False   |
 | Monitor Interval   | The number of seconds that the monitor waits between subsequent monitoring sessions. | Integer   |
 
-## Montior List Items Filters
+## Monitor List Items Filters
 
 | **Element** | **Description**   | **Valid values**   |
 |:---|:---|:---|
@@ -61,4 +61,3 @@ The following tables list the filters, required properties, and Published Data f
 #### Other Resources
 
 [Using Runbooks in System Center 2016 - Orchestrator](https://technet.microsoft.com/en-us/library/hh403791.aspx)
-

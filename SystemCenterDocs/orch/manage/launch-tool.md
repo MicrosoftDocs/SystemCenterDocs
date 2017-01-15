@@ -60,9 +60,11 @@ The following tables list the required properties and published data for this ac
 | Time Finished   | The time that the management server finished running the command.   | DateTime   |
 | Tool Execution ID   | The unique identifier of the running tool.   | String   |
 
-<br><br><strong>Warning </strong><br> When using the Launch Tool activity you must ensure that you have selected an HP Operations Manager Connection that is configured with a user that has sufficient privileges for launching tools in HP Operations Manager. <br><br>
+>[!WARNING]
+>When using the Launch Tool activity you must ensure that you have selected an HP Operations Manager Connection that is configured with a user that has sufficient privileges for launching tools in HP Operations Manager.
 
-<br><br><strong>Warning </strong><br> When using the Launch Tool activity to launch a server-defined tool you should be careful to ensure that the **Command** field contains the unique ID of an existing tool. Specifying an invalid unique ID may cause the Launch Tool activity to become unresponsive for long periods of time when targeting some HP Operations Manager systems, in particular those hosted on HP-UX. <br><br>
+>[!WARNING]
+>When using the Launch Tool activity to launch a server-defined tool you should be careful to ensure that the **Command** field contains the unique ID of an existing tool. Specifying an invalid unique ID may cause the Launch Tool activity to become unresponsive for long periods of time when targeting some HP Operations Manager systems, in particular those hosted on HP-UX. 
 
 ## Other Activities
 
