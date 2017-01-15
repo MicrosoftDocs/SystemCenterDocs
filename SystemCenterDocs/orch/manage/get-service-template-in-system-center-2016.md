@@ -25,18 +25,15 @@ The activity publishes all of the data from the required and optional properties
 
 ## Get Service Template Required Properties
 
-| **Element** | **Description** | **Valid Values** |
-|:---|:---|:---|
+There are no required properties for this activity.
 
 ## Get Service Template Optional Properties
 
-| **Element** | **Description** | **Valid Values** |
-|:---|:---|:---|
+There are no optional properties for this activity.
 
 ## Get Service Template Published Data
 
-| **Element** | **Description** | **Valid Values** |
-|:---|:---|:---|
+There is no published data for this activity.
 
 ## See Also
 
@@ -44,4 +41,3 @@ The activity publishes all of the data from the required and optional properties
 #### Other Resources
 
 [Using Runbooks in System Center 2016 - Orchestrator](https://technet.microsoft.com/en-us/library/hh403791.aspx)
-

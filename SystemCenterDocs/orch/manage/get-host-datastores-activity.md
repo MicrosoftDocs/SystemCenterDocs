@@ -41,7 +41,6 @@ No optional properties are provided for this activity.
 | Name   | Description   | Value Type |
 |:---|:---|:---|
 | Datastore | A list of all available data stores that are connected to the specified host | String   |
-
 | Host   | Identifier of the host   | String   |
 
 ## Configuring the Get Host Datastores Activity

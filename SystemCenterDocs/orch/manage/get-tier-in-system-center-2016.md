@@ -25,38 +25,11 @@ The activity publishes all of the data from the required and optional properties
 
 ## Get Tier Filters
 
-| **Element**   | **Description** | **Valid Values** |
-|:---|:---|:---|
-| Service Name   |   |   |
-| Tier Name   |   |   |
-| State   |   |   |
-| Status   |   |   |
-| \# of Machines   |   |   |
-| Min \# of Machines |   |   |
-| Max \# of Machines |   |   |
-| Date added   |   |   |
-| Date modified   |   |   |
-| All Vms Accessible |   |   |
-| Enabled   |   |   |
+**Element**<br>Service Name<br>Tier Name<br>State<br>Status<br>\# of Machines<br>Min \# of Machines<br>Max \# of Machines<br>Date added<br>Date modified<br>All Vms Accessible<br>Enabled
 
 ## Get Tier Published Data
 
-| **Element**   | **Description** | **Valid Values** |
-|:---|:---|:---|
-| Service Name   |   |   |
-| Tier Name   |   |   |
-| Description   |   |   |
-| State   |   |   |
-| Status   |   |   |
-| \# of Machines   |   |   |
-| Min \# of Machines   |   |   |
-| Max \# of Machines   |   |   |
-| Date added   |   |   |
-| Date modified   |   |   |
-| Member VM Instance Names |   |   |
-| All Vms Accessible   |   |   |
-| Enabled   |   |   |
-| Marked for deletion   |   |   |
+**Element**<br>Service Name<br>Tier Name<br>Description<br>State<br>Status<br>\# of Machines<br>Min \# of Machines<br>Max \# of Machines<br>Date added<br>Date modified<br>Member VM Instance Names<br>All Vms Accessible<br>Enabled<br>Marked for deletion
 
 ## See Also
 
@@ -64,4 +37,3 @@ The activity publishes all of the data from the required and optional properties
 #### Other Resources
 
 [Using Runbooks in System Center 2016 Orchestrator](https://technet.microsoft.com/en-us/library/hh403791.aspx)
-
