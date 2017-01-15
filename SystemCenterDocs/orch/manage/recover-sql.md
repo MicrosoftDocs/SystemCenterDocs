@@ -29,18 +29,16 @@ The activity publishes all of the data from the required and optional properties
 
 ## Recover SQL Required Properties
 
-|   |   |
-|--------------------|---------------------------------------------------------------------------------|
 | Element   | Sample value   |
+|--------------------|------------------------------------------------------------------------------------|
 | Data Source ID   | The unique identifier (GUID) of the SQL database to be recovered   |
 | Recovery Type   | Recover to Original Instance, or Recover to Network Folder   |
 | Recovery Source ID | The unique identifier (GUID) of the SQL database backup up point to be restored |
 
 ## Recover SQL Optional Properties
 
-|   |   |
-|------------------------|------------------------------------------------------------------------------------------------------------------|
 | Element   | Sample value   |
+|--------------------|------------------------------------------------------------------------------------|
 | Copy Log Files   | True or False   |
 | Database State   | Leave database operational or leave database non-operational but able to restore additional transaction logs   |
 | Log File Copy Location | The location where the log files will be copied, if specified   |
@@ -50,9 +48,8 @@ The activity publishes all of the data from the required and optional properties
 
 ## Recover SQL Published Data
 
-|   |   |
-|--------------------|---------------------------------------------------------------|
 | Element   | Sample value   |
+|--------------------|------------------------------------------------------------------------------------|
 | EndTime   | The end time of the recovery, format as 0001-01-01T00:00:00   |
 | JobCategory   | The job category   |
 | JobDefinitionId   | The unique identifier (GUID) of the job definition   |

@@ -28,20 +28,20 @@ The activity publishes all of the data from the required and optional properties
 ### Revert VM Snapshot Activity Required Properties
 
 | Element | Description   | Valid Values | Look up |
-| VM Path | The path of the VM to be reverted. | String   | Yes   |
 |:---|:---|:---|:---|
+| VM Path | The path of the VM to be reverted. | String   | Yes   |
 
 ### Revert VM Snapshot Activity Optional Properties
 
 | Name   | Description   | Valid Values | Look up |
-| Revert to Snapshot | The path of the snapshot to be reverted. | String   | No   |
 |:---|:---|:---|:---|
+| Revert to Snapshot | The path of the snapshot to be reverted. | String   | No   |
 
 ### Revert VM Snapshot Activity Published Data
 
 | Name   | Description   | Value Type |
-| VM Path   | The path of the VM that was reverted.   | String   |
 |:---|:---|:---|
+| VM Path   | The path of the VM that was reverted.   | String   |
 | Revert to Snapshot | The path of the snapshot that was reverted. | String   |
 
 ## Configuring the Revert VM Snapshot Activity
@@ -61,5 +61,3 @@ The following procedure describes the steps required to configure a Revert VM Sn
         You can also use published data to automatically populate the value of the property from the data output by a previous activity in the workflow.
 
 4.  Click **Finish**.
-
-

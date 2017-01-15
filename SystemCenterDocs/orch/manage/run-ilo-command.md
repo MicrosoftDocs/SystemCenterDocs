@@ -51,9 +51,8 @@ The activity publishes all of the data from the required and optional properties
 | SSH user   | SSH username   | String   |
 | Standard output | Standard output of command | String   |
 
-| Warning   |
-|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| The Run iLO Command activity in runbooks imported from Opalis 6.3 when opened for editing in the Runbook Designer will display an error dialog with no message. To remove this error close the error message by clicking **OK**. Record your command and field values for re-entry. Then reselect the command and re-enter the field values. When importing runbooks that contain **Get user** or **Modify user** activities from Opalis 6.3, clicking on the activities **Get user** or **Modify user** will display a message " Command not found". The commands should be updated to the specific version activity i.e. **Get user (iLO v2)** or **Get user (iLO v3)** manually. |
+>[!WARNING]
+>The Run iLO Command activity in runbooks imported from Opalis 6.3 when opened for editing in the Runbook Designer will display an error dialog with no message. To remove this error close the error message by clicking **OK**. Record your command and field values for re-entry. Then reselect the command and re-enter the field values. When importing runbooks that contain **Get user** or **Modify user** activities from Opalis 6.3, clicking on the activities **Get user** or **Modify user** will display a message " Command not found". The commands should be updated to the specific version activity i.e. **Get user (iLO v2)** or **Get user (iLO v3)** manually.
 
 ## Other Activities
 

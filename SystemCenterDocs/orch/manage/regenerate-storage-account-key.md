@@ -21,9 +21,8 @@ Applies To: System Center 2016 - Orchestrator
 
 The **Regenerate Storage Account Key** activity regenerates the primary or secondary access key for the specified storage account. It is part of the **Azure Storage** category activity.
 
-| Note   |
-|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Using this activity will publish the new storage account key to the Orchestrator databus. If you chose to use this activity, make sure to appropriately protect the key after regeneration. |
+>[!NOTE]
+>Using this activity will publish the new storage account key to the Orchestrator databus. If you chose to use this activity, make sure to appropriately protect the key after regeneration.
 
 The activity publishes all of the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
 
@@ -52,4 +51,3 @@ There are no optional properties for this runbook activity.
 #### Other Resources
 
 [Using Runbooks in System Center 2016 - Orchestrator](https://technet.microsoft.com/en-us/library/hh403791.aspx)
-

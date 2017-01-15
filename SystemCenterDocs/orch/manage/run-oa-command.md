@@ -50,7 +50,8 @@ The activity publishes all of the data from the required and optional properties
 | SSH user   | SSH username   | String   |
 | Standard output | Standard output of command | String   |
 
-**Note** When testing a configured connection, you may get a popup window with the message **Microsoft System Center 2016 Orchestrator has stopped working** with the Application Name of **sshclient.exe**. You can choose the **Close the program** option to dismiss the window without affecting the result of the test. If the connection is good, you should see another message window reporting **Test connection succeeded.**.
+>[!NOTE]
+>When testing a configured connection, you may get a popup window with the message **Microsoft System Center 2016 Orchestrator has stopped working** with the Application Name of **sshclient.exe**. You can choose the **Close the program** option to dismiss the window without affecting the result of the test. If the connection is good, you should see another message window reporting **Test connection succeeded.**.
 
 ## Other Activities
 

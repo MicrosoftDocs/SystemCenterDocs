@@ -27,26 +27,23 @@ The activity publishes all of the data from the required and optional properties
 
 ## Recover SharePoint Required Properties
 
-|   |   |
-|--------------------|------------------------------------------------------------------------------------|
 | Element   | Sample value   |
+|--------------------|------------------------------------------------------------------------------------|
 | Data Source ID   | The unique identifier (GUID) of the SharePoint Farm to be recovered   |
 | Recovery Type   | Recover to Original Instance, orRecover to Network Folder   |
 | Recovery Source ID | The unique identifier (GUID) of the SharePoint Farm backup up point to be restored |
 
 ## Recover SharePoint Optional Properties
 
-|   |   |
-|--------------------|-----------------------------------------------------------------------------------------------------------|
 | Element   | Sample value   |
+|--------------------|------------------------------------------------------------------------------------|
 | Target Location   | The target location for the recoveryRequired when Recovery Type is Recover to Network Folder.   |
 | Target Server Name | The name of the target server for the recovery Rrequired when Recovery Type is Recover to Network Folder. |
 
 ## Recover SharePoint Published Data
 
-|   |   |
-|--------------------|-------------------------------------------------------------------------------------------------------|
 | Element   | Sample value   |
+|--------------------|------------------------------------------------------------------------------------|
 | DataSourceId   | The unique identifier (GUID) of the SharePoint Farm to be recovered   |
 | EndTime   | The end time of the recovery, format as 0001-01-01T00:00:00   |
 | JobCategory   | The job category   |

@@ -28,20 +28,18 @@ The activity publishes all of the data from the required and optional properties
 ### Reset VM Activity Required Properties
 
 | Element | Description   | Valid Values | Look up |
-| VM Path | The path of the virtual machine to be reset. | String   | Yes   |
 |:---|:---|:---|:---|
+| VM Path | The path of the virtual machine to be reset. | String   | Yes   |
 
 ### Reset VM Activity Optional Properties
 
-|   |
-|-------------------------------------------------------|
-| No optional properties are provided for this activity |
+No optional properties are provided for this activity.
 
 ### Reset VM Activity Published Data
 
 | Name   | Description   | Value Type |
-| VM Path | The path of the virtual machine. | String   |
 |:---|:---|:---|
+| VM Path | The path of the virtual machine. | String   |
 
 ## Configuring the Reset VM Activity
 
@@ -60,5 +58,3 @@ The following procedure describes the steps required to configure a Reset VM act
         You can also use published data to automatically populate the value of the property from the data output by a previous activity in the workflow.
 
 4.  Click **Finish**.
-
-
