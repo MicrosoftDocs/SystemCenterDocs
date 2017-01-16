@@ -30,7 +30,7 @@ The integration pack for REST requires that the following software is installed 
 -   Orchestrator in System Center 2016
 
 >[!WARNING]
->Depending on the communication protocol used, data that is passed to 3rd party systems could be intercepted from the wire and tampered with; for example, when the protocol between the Policy Module and the 3rd party product is HTTP. The user is responsible for choosing a secure protocol, such as HTTPS, for all data transmissions between Orchestrator and any other product. |
+>Depending on the communication protocol used, data that is passed to 3rd party systems could be intercepted from the wire and tampered with; for example, when the protocol between the Policy Module and the 3rd party product is HTTP. The user is responsible for choosing a secure protocol, such as HTTPS, for all data transmissions between Orchestrator and any other product. 
 
 ## Downloading the Integration Pack
 
