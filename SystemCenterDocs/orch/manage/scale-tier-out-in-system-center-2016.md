@@ -28,7 +28,7 @@ The activity publishes all of the data from the required and optional properties
 | **Element**  |  **Valid Values**   |
 |:---|:---|
 | Service Name |   |
-| Tier Name   | - |  
+| Tier Name   |  |  
 | Start Action |  Default: Don't turn on the virtual machine |
 | Stop Action  | Default: Save State   |
 
