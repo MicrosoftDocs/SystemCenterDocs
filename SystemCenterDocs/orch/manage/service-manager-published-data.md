@@ -1574,8 +1574,6 @@ Class Type: Hidden
 
 ## Windows Client Operating System Class Published Data
 
-Class Type: -
-
 | Element Name   | Field Type |
 |---------------------------------------|------------|
 | Operating System Version   | string   |

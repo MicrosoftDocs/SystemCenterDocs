@@ -25,12 +25,12 @@ The activity publishes all of the data from the required and optional properties
 
 ## Scale Tier Out Required Properties
 
-| **Element**  | **Description** | **Valid Values**   |
-|:---|:---|:---|
-| Service Name | -  | -  |
-| Tier Name   | -  |  - |
-| Start Action |  - | Default: Don't turn on the virtual machine |
-| Stop Action  | -  | Default: Save State   |
+| **Element**  |  **Valid Values**   |
+|:---|:---|
+| Service Name |   |
+| Tier Name   | - |  
+| Start Action |  Default: Don't turn on the virtual machine |
+| Stop Action  | Default: Save State   |
 
 ## Scale Tier Out Optional Properties
 
@@ -38,7 +38,7 @@ The activity publishes all of the data from the required and optional properties
 |:---|:---|
 | Virtual Machine Name | The name that VMM uses to identify the virtual machine. |   
 | Computer Name   | The actual computer name of the virtual machine.   |   
-| Description   | -  |   
+| Description   |   |   
 
 ## Scale Tier Out Published Data
 
