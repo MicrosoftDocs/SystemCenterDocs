@@ -154,9 +154,8 @@ Some activities are expected to take a limited amount of time to complete. If th
 
 2.  Select **Report if activity fails to run** to generate run failure notifications.
 
-| Note   |
-|--------------------------------------------------------------------------------------------------------|
-| For more information see [Activity Events](https://technet.microsoft.com/en-us/library/hh489611.aspx). |
+>[!NOTE]
+>For more information see [Activity Events](https://technet.microsoft.com/en-us/library/hh489611.aspx).
 
 ### Published Data
 

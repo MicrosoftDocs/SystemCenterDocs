@@ -23,7 +23,8 @@ The Update Object activity is used to change the values of one or more propertie
 
 The following published data element is specific to Update Object activity. Additional published data is generated based on the class that you select when you define the activity. For a list of the data elements published by each class, see [Service Manager Published Data](service-manager-published-data.md).
 
-<br><br><strong>Note </strong><br>To resolve an incident, if you don't set the **Resolved Date**, the incident SLAs that use the **Resolved Date** will keep running and expire. Ensure that you set the **Resolved Date** when you resolve an incident.<br><br>
+>[!NOTE]
+>To resolve an incident, if you don't set the **Resolved Date**, the incident SLAs that use the **Resolved Date** will keep running and expire. Ensure that you set the **Resolved Date** when you resolve an incident.
 
 ## Update Object Published Data
 

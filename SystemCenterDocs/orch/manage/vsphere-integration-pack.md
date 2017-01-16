@@ -85,7 +85,7 @@ You might see the following issues when using this VMware vSphere integration pa
     2.  In the Orchestrator Runbook Designer, create a new vSphere configuration for each configuration used by the imported runbooks.
         1.  Click **Options**, and then click **VMWare vSphere** to open the **Prerequisite Configuration** window.
         2.  Click **Add** to add a new configuration.
-        3.  Enter the name for the configuration as it appeared in the Opalis 6.3 system. Note the **Name** field is case-sensitive.
+        3.  Enter the name for the configuration as it appeared in the Opalis 6.3 system. Note that the **Name** field is case-sensitive.
         4.  Select the configuration **Type** of **vSphere Setting**.
         5.  Enter the **Server**, **User**, **Password**, and **SSL** property values as recorded from the Opalis 6.3 system.
             The **Port** and **Webservice Timeout** settings can be left blank at this stage.

@@ -54,7 +54,9 @@ A connection establishes a reusable link between Orchestrator and Windows Azure.
 
 5.  In the **Subscription ID** box, enter the subscription ID of the Windows Azure subscription to connect to.
 
-6.  In the **PFX File Path** box, click the ... button and select the management certificate file associated with this Windows Azure subscription.Note: Your certificate file enables authentication of requests to your Windows Azure subscription, and so should be stored in a non-public folder to prevent unauthorized access.
+6.  In the **PFX File Path** box, click the ... button and select the management certificate file associated with this Windows Azure subscription.
+>[!NOTE]
+>Your certificate file enables authentication of requests to your Windows Azure subscription, and so should be stored in a non-public folder to prevent unauthorized access.
 
 7.  In the **PFX File Password** box, enter the password of the management certificate file associated with this Windows Azure subscription.
 

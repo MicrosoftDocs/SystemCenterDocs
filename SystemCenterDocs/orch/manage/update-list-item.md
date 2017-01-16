@@ -42,9 +42,8 @@ There are no optional properties for this runbook activity.
 | SharePoint List | The name of the SharePoint list that contains the updated item. | String   |
 | SharePoint Site | The URL of the SharePoint site.   | String   |
 
-Tips
-
-You can use comma-separated values to specify input values for multi-choice fields.
+>[!TIP]
+>You can use comma-separated values to specify input values for multi-choice fields.
 
 ## See Also
 
