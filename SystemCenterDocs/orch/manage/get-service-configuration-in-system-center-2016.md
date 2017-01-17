@@ -15,8 +15,7 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-Get Service Configuration in System Center 2016
-===============================================
+# Get Service Configuration in System Center 2016
 
 Applies To: System Center 2016 - Orchestrator
 
@@ -24,35 +23,25 @@ The Get Service Configuration activity is used in a runbook to return all servic
 
 The activity publishes all of the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
 
-Get Service Configuration Required Properties
----------------------------------------------
+## Get Service Configuration Required Properties
 
 There are no required properties for this activity.
 
-Get Service Configuration Optional Properties
----------------------------------------------
+## Get Service Configuration Optional Properties
 
 There are no optional properties for this activity.
 
-Get Service Configuration Filters
----------------------------------
+## Get Service Configuration Filters
 
-| **Element**   | **Description** | **Valid Values** |
-|:---|:---|:---|
-| Deployment Status   |   |   |
-| Service Configuration ID   |   |   |
-| Service Configuration Name |   |   |
+**Element**<br>Deployment Status<br>Service Configuration ID<br>Service Configuration Name
 
-Get Service Configuration Published Data
-----------------------------------------
+## Get Service Configuration Published Data
 
-| **Element** | **Description** | **Valid Values** |
-|:---|:---|:---|
+There is no published data for this activity.
 
-See Also
---------
+## See Also
+
 
 #### Other Resources
 
 [Using Runbooks in System Center 2016 Orchestrator](https://technet.microsoft.com/en-us/library/hh403791.aspx)
-

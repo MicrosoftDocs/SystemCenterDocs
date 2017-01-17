@@ -15,8 +15,7 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-Monitor Alert
-=============
+# Monitor Alert
 
 Applies To: System Center 2016 - Orchestrator
 
@@ -24,12 +23,10 @@ The Monitor Alert activity triggers a runbook when new Operations Manager alerts
 
 The following tables list the filters, properties, and published data for this activity. The activity publishes all of the data from the required and optional properties into published data.
 
-Monitor Alert Filters
----------------------
+## Monitor Alert Filters
 
-|   |   |
-|-----------------------------------|-------------------------------------------------------------------------------------------|
 | Element   | Description   |
+|-----------------------------------|-------------------------------------------------------------------------------------------|
 | Category   | The category of the alert   |
 | Class ID   | For System Center 2016 SP1 only: The Class ID of the alert.   |
 | ConnectorId   | The ID of the connector that generated the connection string   |
@@ -82,12 +79,10 @@ Monitor Alert Filters
 | TimeResolutionStateLastModified   | The time that the resolution state of the alert was last changed   |
 | TimeResolved   | The time that the alert was resolved   |
 
-Monitor Alert Published Data
-----------------------------
+## Monitor Alert Published Data
 
-|   |   |
-|-----------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------|
 | Element   | Description   |
+|-----------------------------------|-------------------------------------------------------------------------------------------|
 | Category   | The category name of the Management Pack   |
 | Class ID   | For System Center 2016 SP1 only: The Class ID of the alert.   |
 | CompanyKnowledge   | Knowledge from the rule or monitor that triggered the alert; for instance remediation information. Not available in System Center 2016 SP1. |
@@ -143,7 +138,6 @@ Monitor Alert Published Data
 | RepeatCount   | The number of times that the alert has been repeated   |
 | ResolutionState   | The resolution state of the alert   |
 | ResolvedBy   | The user that resolved the alert   |
-|   |   |
 | Server   | The name of the Operations Manager server   |
 | Severity   | The severity level of the alert   |
 | SiteName   | The site name of the alert   |

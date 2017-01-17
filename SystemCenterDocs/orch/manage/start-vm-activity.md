@@ -15,8 +15,7 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-Start VM Activity
-=================
+# Start VM Activity
 
 Applies To: System Center 2016 - Orchestrator
 
@@ -29,23 +28,22 @@ The activity publishes all of the data from the required and optional properties
 ### Start VM Activity Required Properties
 
 | Element | Description   | Valid Values | Look up |
-| VM Path | The path of the virtual machine to be started. | String   | Yes   |
 |:---|:---|:---|:---|
+| VM Path | The path of the virtual machine to be started. | String   | Yes   |
 
 ### Start VM Activity Optional Properties
 
 | Element   | Description   | Valid Values | Look up |
-| Timeout (seconds) | The time allowed for the start operation to complete. | Integer   | No   |
 |:---|:---|:---|:---|
+| Timeout (seconds) | The time allowed for the start operation to complete. | Integer   | No   |
 
 ### Start VM Activity Published Data
 
 | Name   | Description   | Value Type |
-| VM Path | The path of the virtual machine that was started. | String   |
 |:---|:---|:---|
+| VM Path | The path of the virtual machine that was started. | String   |
 
-Configuring the Start VM Activity
----------------------------------
+## Configuring the Start VM Activity
 
 The following procedure describes the steps required to configure a Start VM activity.
 
@@ -62,5 +60,3 @@ The following procedure describes the steps required to configure a Start VM act
         You can also use published data to automatically populate the value of the property from the data output by a previous activity in the workflow.
 
 4.  Click **Finish**.
-
-

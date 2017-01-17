@@ -15,8 +15,7 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-Get VM instance
-===============
+# Get VM instance
 
 Applies To: System Center 2016 - Orchestrator
 
@@ -24,8 +23,7 @@ The **Get VM Instance** activity retrieves the specified virtual machine. It is 
 
 The activity publishes all of the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
 
-Get VM Instance Required Properties
------------------------------------
+## Get VM Instance Required Properties
 
 | **Element**   | **Description**   | **Valid values** |
 |:---|:---|:---|
@@ -33,13 +31,11 @@ Get VM Instance Required Properties
 | VM Deployment Name | The name of the deployment containing the virtual machine.   | String   |
 | VM Instance Name   | The name of the virtual machine.   | String   |
 
-Get VM Instance Optional Properties
------------------------------------
+## Get VM Instance Optional Properties
 
 There are no optional properties for this runbook activity.
 
-Get VM Instance Published Data
-------------------------------
+## Get VM Instance Published Data
 
 | **Element**   | **Description**   | **Value type** |
 |:---|:---|:---|
@@ -75,8 +71,8 @@ Get VM Instance Published Data
 | VM Instance Name   | The name of the virtual machine.   | String   |
 | Virtual IP   | Indicates the virtual IP address of the virtual machine.   | String   |
 
-See Also
---------
+## See Also
+
 
 #### Other Resources
 

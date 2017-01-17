@@ -15,8 +15,7 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-Get VM Network in System Center 2016
-====================================
+# Get VM Network in System Center 2016
 
 Applies To: System Center 2016 - Orchestrator
 
@@ -24,38 +23,31 @@ The Get VM Network activity is used in a runbook to return all virtual networks 
 
 The activity publishes all of the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
 
-Get VM Network Required Properties
-----------------------------------
+## Get VM Network Required Properties
 
 There are no required properties for this activity.
 
-Get VM Network Optional Properties
-----------------------------------
+## Get VM Network Optional Properties
 
 There are no optional properties for this activity.
 
-Get VM Network Filters
-----------------------
+## Get VM Network Filters
 
-| **Element**   | **Description** | **Valid Values** |
-|:---|:---|:---|
-| Description   |   |   |
-| Logical Network   |   |   |
-| Routing Domain ID |   |   |
-| VM Network ID   |   |   |
-| VM network name   |   |   |
-| VM Subnet   |   |   |
+**Element**<br>
+Logical Network<br>
+Routing Domain ID<br>
+VM Network ID<br>
+VM network name<br>
+VM Subnet
 
-Get VM Network Published Data
------------------------------
+## Get VM Network Published Data
 
-| **Element** | **Description** | **Valid Values** |
-|:---|:---|:---|
+There is no published data for this activity.
 
-See Also
---------
+
+## See Also
+
 
 #### Other Resources
 
 [Using Runbooks in System Center 2016 Orchestrator](https://technet.microsoft.com/en-us/library/hh403791.aspx)
-

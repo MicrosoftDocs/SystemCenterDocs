@@ -15,8 +15,7 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-Get Message
-===========
+# Get Message
 
 Applies To: System Center 2016 - Orchestrator
 
@@ -24,8 +23,7 @@ The Get Message activity retrieves message from a management server according to
 
 The following tables list the required properties and published data for this activity. For more information on configuring activities, see [HP Operations Manager Activities](hp-operations-manager-activities.md).
 
-Get Message Filters
--------------------
+## Get Message Filters
 
 | Element   | Description   | Filters   | Value Type   |
 |:---|:---|:---|:---|
@@ -59,8 +57,7 @@ Get Message Filters
 | Number of Annotations   | Number of annotations that have been added to the message.   | Equals<br>Does not equal<br>Is less than<br>Is less than or equal to<br>Is greater than<br>Is greater than or equal to   | Integer   |
 | Source   | Contains the name and version of the template that created the message.   | Equals<br>Does not equa<br>lContains<br>Does not contain<br>Matches pattern<br>Does not match pattern<br>Starts with<br>Ends with | String   |
 
-Get Message Published Data
---------------------------
+## Get Message Published Data
 
 | Element   | Description   | Value Type |
 |:---|:---|:---|
@@ -98,14 +95,16 @@ Get Message Published Data
 | HPOM Port   | The port used to connect to the HPOM management server.   | Integer   |
 | HPOM Username   | The name of the HPOM used to connect to the HPOM management server.   | String   |
 
-<br><br><strong>Tip </strong><br> The **Get Message** activity can only retrieve Active messages from the HP Operations Manager management server. <br><br>
+>[!TIP]
+>The **Get Message** activity can only retrieve Active messages from the HP Operations Manager management server.
 
-<br><br><strong>Tip </strong><br> The maximum number of Messages that can be returned by the Get Message activity is determined by the HP Operations Manager Web Service **MaxItemsMaximum** configuration parameter. The **MaxItemsMaximum** configuration parameter has a default value of 500, however this can be increased up to 5,000 as directed in the HP Operations Manager Web Services Integration Manager documentation. <br><br>
+>[!TIP]
+>The maximum number of Messages that can be returned by the Get Message activity is determined by the HP Operations Manager Web Service **MaxItemsMaximum** configuration parameter. The **MaxItemsMaximum** configuration parameter has a default value of 500, however this can be increased up to 5,000 as directed in the HP Operations Manager Web Services Integration Manager documentation.
 
-<br><br><strong>Tip </strong><br> When editing filters for numeric fields, the **Filter Settings** dialog may change the **Is less than** and **Is greater than** relations to **Is less than or equal to** and **Is greater than or equal to**. To avoid inadvertently modifying the filter, click **Cancel** to dismiss the Filter Settings dialog without committing the change. <br><br>
+>[!TIP]
+>When editing filters for numeric fields, the **Filter Settings** dialog may change the **Is less than** and **Is greater than** relations to **Is less than or equal to** and **Is greater than or equal to**. To avoid inadvertently modifying the filter, click **Cancel** to dismiss the Filter Settings dialog without committing the change.
 
-Other Activities
-----------------
+## Other Activities
 
 The Integration Pack for HP Operations Manager integration contains the following additional activities:
 

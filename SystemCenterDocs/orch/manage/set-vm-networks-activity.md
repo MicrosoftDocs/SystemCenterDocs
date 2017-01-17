@@ -15,8 +15,7 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-Set VM Networks Activity
-========================
+# Set VM Networks Activity
 
 Applies To: System Center 2016 - Orchestrator
 
@@ -29,8 +28,8 @@ The activity publishes all of the data from the required and optional properties
 ### Set VM Networks Activity Required Properties
 
 | Element   | Description   | Valid Values | Look up |
-| Network Adapter 1 | The name of the network that the first network adapter is attached to.  | String   | Yes   |
 |:---|:---|:---|:---|
+| Network Adapter 1 | The name of the network that the first network adapter is attached to.  | String   | Yes   |
 | Network Adapter 2 | The name of the network that the second network adapter is attached to. | String   | Yes   |
 | Network Adapter 3 | The name of the network that the third network adapter is attached to.  | String   | Yes   |
 | Network Adapter 4 | The name of the network that the fourth network adapter is attached to. | String   | Yes   |
@@ -38,22 +37,19 @@ The activity publishes all of the data from the required and optional properties
 
 ### Set VM Networks Activity Optional Properties
 
-|   |
-|--------------------------------------------------------|
-| No optional properties are provided for this activity. |
+No optional properties are provided for this activity.
 
 ### Set VM Networks Activity Published Data
 
 | Name   | Description   | Value Type |
-| Network Adapter 1 | The name of the network that the first network adapter is attached to.  | String   |
 |:---|:---|:---|
+| Network Adapter 1 | The name of the network that the first network adapter is attached to.  | String   |
 | Network Adapter 2 | The name of the network that the second network adapter is attached to. | String   |
 | Network Adapter 3 | The name of the network that the third network adapter is attached to.  | String   |
 | Network Adapter 4 | The name of the network that the fourth network adapter is attached to. | String   |
 | VM Path   | The path to the virtual machine.   | String   |
 
-Configuring the Set VM Networks Activity
-----------------------------------------
+## Configuring the Set VM Networks Activity
 
 The following procedure describes the steps required to configure a Set VM Networks activity.
 
@@ -70,5 +66,3 @@ The following procedure describes the steps required to configure a Set VM Netwo
         You can also use published data to automatically populate the value of the property from the data output by a previous activity in the workflow.
 
 4.  Click **Finish**.
-
-

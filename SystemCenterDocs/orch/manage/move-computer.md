@@ -15,8 +15,7 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-Move Computer
-=============
+# Move Computer
 
 Applies To: System Center 2016 - Orchestrator
 
@@ -26,22 +25,19 @@ This activity publishes all of the data from the required and optional propertie
 
 The following tables list the required and optional properties and published data for this activity.
 
-Move Computer required properties
----------------------------------
+## Move Computer required properties
 
 | Element   | Description   | Valid Values |
 |:---|:---|:---|
 | Computer Distinguished Name | Distinguished name of the computer account | String   |
 
-Move Computer optional properties
----------------------------------
+## Move Computer optional properties
 
 | Element   | Description   | Valid Values |
 |:---|:---|:---|
 | New Container Distinguished Name | Distinguished name of new parent path of the computer account | String   |
 
-Move Computer published data
-----------------------------
+## Move Computer published data
 
 | Name   | Description   | Value Type |
 |:---|:---|:---|

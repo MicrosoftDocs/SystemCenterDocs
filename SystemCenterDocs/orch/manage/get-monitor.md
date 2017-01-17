@@ -15,8 +15,7 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-Get Monitor
-===========
+# Get Monitor
 
 Applies To: System Center 2016 - Orchestrator
 
@@ -24,12 +23,10 @@ The Get Monitor activity is used in a runbook to retrieve monitoring activities 
 
 The following tables list the filters, properties, and published data for this activity. The activity publishes all of the data from the required and optional properties into published data.
 
-Get Monitor Filters
--------------------
+## Get Monitor Filters
 
-|   |   |
-|-----------------------------|-----------------------------------------------------------------------------------------------------------|
 | Element   | Description   |
+|-----------------------------|-----------------------------------------------------------------------------------------------------------|
 | AvailabilityLastModified   | The date and time that the availability of the monitor was last changed   |
 | DisplayName   | The display name of the Operations Manager monitoring object   |
 | FullName   | The full name of the Operations Manager monitoring object   |
@@ -43,12 +40,10 @@ Get Monitor Filters
 | Path   | The path to the Operations Manager monitoring object   |
 | StateLastModified   | The date and time that the alert state was last changed   |
 
-Get Monitor Published Data
---------------------------
+## Get Monitor Published Data
 
-|   |   |
-|---------------------------------------------|-----------------------------------------------------------------------------------------------------------|
 | Element   | Description   |
+|---------------------------------------------|-----------------------------------------------------------------------------------------------------------|
 | AvailabilityLastModified   | The date and time that the availability of the monitor was last changed   |
 | Connection   | The connection string to the Operations Manager server that you are using   |
 | DisplayName   | The display name of the Operations Manager monitoring object   |

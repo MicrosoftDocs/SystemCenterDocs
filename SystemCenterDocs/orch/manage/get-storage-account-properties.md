@@ -15,8 +15,7 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-Get Storage Account Properties
-==============================
+# Get Storage Account Properties
 
 Applies To: System Center 2016 - Orchestrator
 
@@ -24,20 +23,17 @@ The **Get Storage Account Properties** activity returns system properties for th
 
 The activity publishes all of the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
 
-Get Storage Account Properties Required Properties
---------------------------------------------------
+## Get Storage Account Properties Required Properties
 
 | **Element**   | **Description**   | **Valid values** |
 |:---|:---|:---|
 | Storage Account Name | The name of the storage account. | String   |
 
-Get Storage Account Properties Optional Properties
---------------------------------------------------
+## Get Storage Account Properties Optional Properties
 
 There are no optional properties for this runbook activity.
 
-Get Storage Account Properties Published Data
----------------------------------------------
+## Get Storage Account Properties Published Data
 
 | **Element**   | **Description**   | **Value type** |
 |:---|:---|:---|
@@ -56,8 +52,8 @@ Get Storage Account Properties Published Data
 | Status of Secondary   | Indicates whether the secondary storage region is available.   | String   |
 | Storage Account Name   | The name of the storage account.   | String   |
 
-See Also
---------
+## See Also
+
 
 #### Other Resources
 
