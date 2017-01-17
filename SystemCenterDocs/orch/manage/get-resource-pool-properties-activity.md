@@ -15,8 +15,7 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-Get Resource Pool Properties Activity
-=====================================
+# Get Resource Pool Properties Activity
 
 Applies To: System Center 2016 - Orchestrator
 
@@ -29,20 +28,18 @@ The activity publishes all of the data from the required and optional properties
 ### Get Resource Pool Properties Activity Required Properties
 
 | Element   | Description   | Valid Values | Look up |
-| ResourcePool Path | The path to the resource pool. | String   | Yes   |
 |:---|:---|:---|:---|
+| ResourcePool Path | The path to the resource pool. | String   | Yes   |
 
 ### Get Resource Pool Properties Activity Optional Properties
 
-|   |
-|--------------------------------------------------------|
-| No optional properties are provided for this activity. |
+No optional properties are provided for this activity.
 
 ### Get Resource Pool Properties Activity Published Data
 
 | Name   | Description   | Value Type |
-| CPUmaxUsage   | The maximum available CPU cycles for the resource pool (in megahertz).   | Integer   |
 |:---|:---|:---|
+| CPUmaxUsage   | The maximum available CPU cycles for the resource pool (in megahertz).   | Integer   |
 | CPUoverallUsage   | The amount of CPU cycles used by the resource pool and VMs (in megahertz).   | Integer   |
 | CPUreservationUsed   | The amount of CPU cycles currently being used by the pool (in megahertz).   | Integer   |
 | CPUreservationUsedforVm   | The amount of CPU cycles currently being used by the VMs (in megahertz).   | Integer   |
@@ -70,8 +67,7 @@ The activity publishes all of the data from the required and optional properties
 | Resource Pool Path   | The path of the resource pool.   | String   |
 | Virtual Machine Path   | The paths of all the virtual machines in the resource pool.   | String   |
 
-Configuring the Get Resource Pool Properties Activity
------------------------------------------------------
+## Configuring the Get Resource Pool Properties Activity
 
 The following procedure describes the steps required to configure a Get Resource Pool Properties activity.
 
@@ -88,5 +84,3 @@ The following procedure describes the steps required to configure a Get Resource
         You can also use published data to automatically populate the value of the property from the data output by a previous activity in the workflow.
 
 4.  Click **Finish**.
-
-

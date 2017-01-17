@@ -15,8 +15,7 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-Monitor Message
-===============
+# Monitor Message
 
 Applies To: System Center 2016 - Orchestrator
 
@@ -24,8 +23,7 @@ The Monitor Message activity invokes a runbook when certain HP Operations Manage
 
 The following tables list the required properties and published data for this activity. For more information on configuring activities, see [HP Operations Manager Activities](hp-operations-manager-activities.md).
 
-Monitor Message Required Properties
------------------------------------
+## Monitor Message Required Properties
 
 | Element   | Description   | Value Type   |
 |:---|:---|:---|
@@ -34,8 +32,7 @@ Monitor Message Required Properties
 | Monitor Acknowledged Messages   | The runbook will be invoked if the monitor detects a message that was acknowledged   | True<br>False |
 | Monitor UnAcknowledged Messages | The runbook will be invoked if the monitor detects a message that was unacknowledged | True<br>False |
 
-Monitor Message Filters
------------------------
+## Monitor Message Filters
 
 | Element   | Description   | Filters   | Value Type   |
 |:---|:---|:---|:---|
@@ -69,8 +66,7 @@ Monitor Message Filters
 | Number of Annotations   | Number of annotations that have been added to the message.   | Equals<br>Does not equal<br>Is less than<br>Is less than or equal to<br>Is greater than<br>Is greater than or equal to   | Integer   |
 | Source   | Contains the name and version of the template that created the message.   | Equals<br>Does not equal<br>Contains<br>Does not contain<br>Matches pattern<br>Does not match pattern<br>Starts with<br>Ends with | String   |
 
-Monitor Message Published Data
-------------------------------
+## Monitor Message Published Data
 
 | Element   | Description   | Value Type |
 |:---|:---|:---|
@@ -112,10 +108,10 @@ Monitor Message Published Data
 | Time Owned or Acknowledged   | The time at which the message was owned or acknowledged. The service maps whichever time is later.   | Datetime   |
 | Time Received   | The time at which the management server received the message.   | Datetime   |
 
-<br><br><strong>Tip </strong><br> When editing filters for numeric fields, the **Filter Settings** dialog may change the **Is less than** and **Is greater than** relations to **Is less than or equal to** and **Is greater than or equal to**. To avoid inadvertently modifying the filter, click **Cancel** to dismiss the Filter Settings dialog without committing the change. <br><br>
+>[!TIP]
+>When editing filters for numeric fields, the **Filter Settings** dialog may change the **Is less than** and **Is greater than** relations to **Is less than or equal to** and **Is greater than or equal to**. To avoid inadvertently modifying the filter, click **Cancel** to dismiss the Filter Settings dialog without committing the change. 
 
-Other Activities
-----------------
+## Other Activities
 
 The Integration Pack for HP Operations Manager integration contains the following additional activities:
 

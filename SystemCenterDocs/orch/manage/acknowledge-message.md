@@ -15,8 +15,7 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-Acknowledge Message
-===================
+# Acknowledge Message
 
 Applies To: System Center 2016 - Orchestrator
 
@@ -24,16 +23,14 @@ The Acknowledge Message activity is used in a runbook to acknowledge or un-ackno
 
 The following tables list the required properties and published data for this activity. For more information on configuring activities, see [HP Operations Manager Activities](hp-operations-manager-activities.md).
 
-Acknowledge Message Required Properties
----------------------------------------
+## Acknowledge Message Required Properties
 
 | Element   | Description   | Valid Values   | Look up |
 |:---|:---|:---|:---|
 | Message ID   | The ID of the message to be acknowledged or unacknowledged.   | String   | No   |
 | Acknowledge Status | Specifies whether the message should be acknowledged or unacknowledged. | Acknowledge<br>UnAcknowledge | Yes   |
 
-Acknowledge Message Published Data
-----------------------------------
+## Acknowledge Message Published Data
 
 | Element   | Description   | Value Type |
 |:---|:---|:---|
@@ -43,8 +40,7 @@ Acknowledge Message Published Data
 | HPOM Port   | The port used to connect to the HPOM management server.   | Integer   |
 | HPOM Username   | The name of the HPOM used to connect to the HPOM management server. | String   |
 
-Other Activities
-----------------
+## Other Activities
 
 The Integration Pack for HP Operations Manager integration contains the following additional activities:
 

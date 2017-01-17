@@ -15,8 +15,7 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-Migrate VM Activity
-===================
+# Migrate VM Activity
 
 Applies To: System Center 2016 - Orchestrator
 
@@ -29,29 +28,26 @@ The activity publishes all of the data from the required and optional properties
 ### Migrate VM Activity Required Properties
 
 | Element   | Description   | Valid Values | Look up |
-| Destination Host System   | The path to the destination host system.   | String   | Yes   |
 |:---|:---|:---|:---|
+| Destination Host System   | The path to the destination host system.   | String   | Yes   |
 | Destination Resource Pool | The path to the destination resource pool that the migrated virtual machine will use. | String   | Yes   |
 | Move Priority   | The priority level for the migration operation   | String   | Yes   |
 | VM Path   | The path to the virtual machine to be migrated   | String   | Yes   |
 
 ### Migrate VM Activity Optional Properties
 
-|   |
-|--------------------------------------------------------|
-| No optional properties are provided for this activity. |
+No optional properties are provided for this activity.
 
 ### Migrate VM Activity Published Data
 
 | Name   | Description   | Value Type |
-| Destination Host System   | The path to the destination host system   | String   |
 |:---|:---|:---|
+| Destination Host System   | The path to the destination host system   | String   |
 | Destination Resource Pool | The path to the destination resource pool.   | String   |
 | Move Priority   | The priority level assigned to the migration.   | String   |
 | VM Path   | The path to the virtual machine that was migrated. | String   |
 
-Configuring the Migrate VM Activity
------------------------------------
+## Configuring the Migrate VM Activity
 
 The following procedure describes the steps required to configure a Migrate VM activity.
 
@@ -68,5 +64,3 @@ The following procedure describes the steps required to configure a Migrate VM a
         You can also use published data to automatically populate the value of the property from the data output by a previous activity in the workflow.
 
 4.  Click **Finish**.
-
-

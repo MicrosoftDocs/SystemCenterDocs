@@ -15,8 +15,7 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-Get Service in System Center 2016
-=================================
+# Get Service in System Center 2016
 
 Applies To: System Center 2016 - Orchestrator
 
@@ -24,95 +23,90 @@ The Get Service activity is used in a runbook to return data on all of the servi
 
 The activity publishes all of the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
 
-Get Service Filters
--------------------
+## Get Service Filters
 
-| **Element**   | **Description** | **Valid Values** |
-|:---|:---|:---|
-| Accessibility   |   |   |
-| All VMs Accessible   |   |   |
-| Application Hosts   |   |   |
-| Cloud Name   |   |   |
-| Computer Tier Names   |   |   |
-| Cost center   |   |   |
-| Custom Property names/values   |   |   |
-| Date added   |   |   |
-| Date modified   |   |   |
-| Deployed To   |   |   |
-| Description   |   |   |
-| Enabled (T/F)   |   |   |
-| Global Settings   |   |   |
-| Granted To List   |   |   |
-| Host Group Name   |   |   |
-| In Servicing Mode (T/F)   |   |   |
-| Is in servicing window (True / False) |   |   |
-| Overall Status   |   |   |
-| Owner Name   |   |   |
-| Owner Sid   |   |   |
-| Pending Global Settings   |   |   |
-| Pending Service Template Name   |   |   |
-| Pending Service Template Present   |   |   |
-| Pending Service Template Release   |   |   |
-| Priority   |   |   |
-| Service Configuration Name   |   |   |
-| Service ID   |   |   |
-| Service Name   |   |   |
-| Service State   |   |   |
-| Service Status   |   |   |
-| Service Template ID   |   |   |
-| Service Template Name   |   |   |
-| Service Template Release   |   |   |
-| Servicing Windows   |   |   |
-| Tag   |   |   |
-| User Role ID   |   |   |
-| User Role Name   |   |   |
+**Element**<br>
+Accessibility  <br>
+All VMs Accessible  <br>
+Application Hosts  <br>
+Cloud Name  <br>
+Computer Tier Names  <br>
+Cost center  <br>
+Custom Property names/values  <br>
+Date added  <br>
+Date modified  <br>
+Deployed To  <br>
+Description  <br>
+Enabled (T/F)  <br>
+Global Settings  <br>
+Granted To List  <br>
+Host Group Name  <br>
+In Servicing Mode (T/F)  <br>
+Is in servicing window (True / False)<br>
+Overall Status  <br>
+Owner Name  <br>
+Owner Sid  <br>
+Pending Global Settings  <br>
+Pending Service Template Name  <br>
+Pending Service Template Present  <br>
+Pending Service Template Release  <br>
+Priority  <br>
+Service Configuration Name  <br>
+Service ID  <br>
+Service Name  <br>
+Service State  <br>
+Service Status  <br>
+Service Template ID  <br>
+Service Template Name  <br>
+Service Template Release  <br>
+Servicing Windows  <br>
+Tag  <br>
+User Role ID  <br>
+User Role Name  <br>
 
-Get Service Published Data
---------------------------
+## Get Service Published Data
 
-| **Element**   | **Description** | **Valid Values** |
-|:---|:---|:---|
-| Accessibility   |   |   |
-| All VMs Accessible   |   |   |
-| Application Hosts   |   |   |
-| Cloud Name   |   |   |
-| Computer Tier Names   |   |   |
-| Cost center   |   |   |
-| Custom Property names/values   |   |   |
-| Date added   |   |   |
-| Date modified   |   |   |
-| Deployed To   |   |   |
-| Description   |   |   |
-| Enabled (T/F)   |   |   |
-| Global Settings   |   |   |
-| Granted To List   |   |   |
-| Host Group Name   |   |   |
-| In Servicing Mode (T/F)   |   |   |
-| Is in servicing window (True / False) |   |   |
-| Overall Status   |   |   |
-| Owner Name   |   |   |
-| Owner Sid   |   |   |
-| Pending Global Settings   |   |   |
-| Pending Service Template Name   |   |   |
-| Pending Service Template Present   |   |   |
-| Pending Service Template Release   |   |   |
-| Priority   |   |   |
-| Service Configuration Name   |   |   |
-| Service ID   |   |   |
-| Service Name   |   |   |
-| Service State   |   |   |
-| Service Status   |   |   |
-| Service Template ID   |   |   |
-| Service Template Name   |   |   |
-| Service Template Release   |   |   |
-| Tag   |   |   |
-| User Role ID   |   |   |
-| User Role Name   |   |   |
+**Element**<br>
+Accessibility  <br>
+All VMs Accessible  <br>
+Application Hosts  <br>
+Cloud Name  <br>
+Computer Tier Names  <br>
+Cost center  <br>
+Custom Property names/values  <br>
+Date added  <br>
+Date modified  <br>
+Deployed To  <br>
+Description  <br>
+Enabled (T/F)  <br>
+Global Settings  <br>
+Granted To List  <br>
+Host Group Name  <br>
+In Servicing Mode (T/F)  <br>
+Is in servicing window (True / False)<br>
+Overall Status  <br>
+Owner Name  <br>
+Owner Sid  <br>
+Pending Global Settings  <br>
+Pending Service Template Name  <br>
+Pending Service Template Present  <br>
+Pending Service Template Release  <br>
+Priority  <br>
+Service Configuration Name  <br>
+Service ID  <br>
+Service Name  <br>
+Service State  <br>
+Service Status  <br>
+Service Template ID  <br>
+Service Template Name  <br>
+Service Template Release  <br>
+Tag  <br>
+User Role ID  <br>
+User Role Name  <br>
 
-See Also
---------
+## See Also
+
 
 #### Other Resources
 
 [Using Runbooks in System Center 2016 Orchestrator](https://technet.microsoft.com/en-us/library/hh403791.aspx)
-

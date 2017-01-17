@@ -15,8 +15,7 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-Create Related Object
-=====================
+# Create Related Object
 
 Applies To: System Center 2016 - Orchestrator
 
@@ -34,12 +33,10 @@ Certain classes contain a mandatory ID property which requires a GUID. Generatin
 
 When the .NET Script Activity runs, it will generate a GUID that you can subscribe to in the ID property of the activity you are creating.
 
-Create Related Object Published Data
-------------------------------------
+## Create Related Object Published Data
 
-|   |   |
-|---------------------------|---------------------------------------------------------------------------------------|
 | Element   | Description   |
+|---------------------------|---------------------------------------------------------------------------------------|
 | Relationship Type   | Describes how the source class and target class are related to each other   |
 | Source Class   | The name of the source class used to build the relationship   |
 | Source Object GUID   | The unique identifier (GUID) of a single source object used to build the relationship |

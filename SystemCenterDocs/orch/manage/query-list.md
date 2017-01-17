@@ -15,8 +15,7 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-Query List
-==========
+# Query List
 
 Applies To: System Center 2016 - Orchestrator
 
@@ -24,21 +23,18 @@ The **Query List** activity is used in a runbook to retrieve data about the item
 
 The following tables list the required properties and Published Data for this activity. Additional Published Data is generated, which is based on the SharePoint list that is retrieved when you define the activity.
 
-Query List Required Properties
-------------------------------
+## Query List Required Properties
 
 | **Element** | **Description**   | **Valid values** |
 |:---|:---|:---|
 | List Name   | The name of the SharePoint list to be searched.   | String   |
 | CAML Query  | A CAML query to determine which items to select.<br> **Important** Do not enclose the CAML XML in &lt;Query&gt;&lt;/Query&gt; tags. | String   |
 
-Query List Optional Properties
-------------------------------
+## Query List Optional Properties
 
 There are no optional properties for this runbook activity.
 
-Query List Published Data
--------------------------
+## Query List Published Data
 
 | **Element**   | **Description**   | **Value type** |
 |:---|:---|:---|
@@ -51,8 +47,8 @@ Query List Published Data
 | Modified By   | The name of the user who last modified the item.   | String   |
 | SharePoint Site | The URL of the SharePoint site.   | String   |
 
-See Also
---------
+## See Also
+
 
 #### Other Resources
 

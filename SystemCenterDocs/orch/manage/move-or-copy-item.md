@@ -15,8 +15,7 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-Move Or Copy Item
-=================
+# Move Or Copy Item
 
 Applies To: System Center 2016 - Orchestrator
 
@@ -24,8 +23,7 @@ The Move Or Copy Item activity is used in a runbook to move or copy an item to a
 
 The following tables list the required properties and published data for this activity.
 
-Move Or Copy Item Required Properties
--------------------------------------
+## Move Or Copy Item Required Properties
 
 | **Element**   | **Description**   | **Valid values** |
 |:---|:---|:---|
@@ -33,8 +31,7 @@ Move Or Copy Item Required Properties
 | Copy   | Indicates whether the item is to be copied to the new location | True<br>False   |
 | Destination Folder | The folder that the item will be moved to   | String   |
 
-Move Or Copy Item Published Data
---------------------------------
+## Move Or Copy Item Published Data
 
 | **Element**   | **Description**   | **Valid values** |
 |:---|:---|:---|

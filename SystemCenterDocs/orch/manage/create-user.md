@@ -15,8 +15,7 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-Create User
-===========
+# Create User
 
 Applies To: System Center 2016 - Orchestrator
 
@@ -26,15 +25,13 @@ This activity publishes all of the data from the required and optional propertie
 
 The following tables list the required and optional properties and published data for this activity.
 
-Required properties for Create User activity
---------------------------------------------
+## Required properties for Create User activity
 
 | Element   | Description   | Valid Values |
 |:---|:---|:---|
 | Common Name | Name to identify the user | String   |
 
-Optional properties for Create User activity
---------------------------------------------
+## Optional properties for Create User activity
 
 | Element   | Description   | Valid Values |
 |:---|:---|:---|
@@ -90,8 +87,7 @@ Optional properties for Create User activity
 | User Principal Name   | This attribute contains the UPN that is an Internet-style login name for a user based on the Internet standard RFC 822   | String   |
 | Web Page   | User's primary web page   | String   |
 
-Published data for Create User activity
----------------------------------------
+## Published data for Create User activity
 
 | Name   | Description   | Value Type |
 |:---|:---|:---|

@@ -15,15 +15,13 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-HP Service Manager Integration Pack for System Center 2016 - Orchestrator
-=========================================================================
+# HP Service Manager Integration Pack for System Center 2016 - Orchestrator
 
 Applies To: System Center 2016 - Orchestrator
 
 The integration pack for HP Service Manager is an add-on for Orchestrator in System Center 2016 and System Center 2016 - Orchestrator that enables you to retrieve, create, update and monitor tickets in HP Service Manager. Microsoft is committed to protecting your privacy, while delivering software that brings you the performance, power, and convenience you want. For more information, see the [System Center Orchestrator 2012 Privacy Statement](https://www.microsoft.com/en-us/privacystatement/EnterpriseDev/default.aspx).
 
-System Requirements
--------------------
+## System Requirements
 
 The integration pack for HP Service Manager requires the following software to be installed and configured to implementing the integration. For more information about installing and configuring Orchestrator and the HP Service Manager Web Service, refer to the respective product documentation.
 
@@ -40,26 +38,22 @@ The following software must be installed on each Runbook Server and Runbook Desi
     -   Oracle Client (Net Configuration Assistant)
     -   Oracle ODBC driver
 
-Downloading the Integration Pack
---------------------------------
+## Downloading the Integration Pack
 
 To download this integration pack, see [HP Service Manager Integration Pack for System Center 2016 - Orchestrator](https://www.microsoft.com/en-us/download/details.aspx?id=54101).
 
-Registering and Deploying the Integration Pack
-----------------------------------------------
+## Registering and Deploying the Integration Pack
 
 After you download the integration pack file, you must register it with the Orchestrator management server and then deploy it to Runbook servers and Runbook Designers. For the procedures on installing integration packs, see [How To Install an Integration Pack](https://technet.microsoft.com/system-center-docs/orch/manage/how-to-add-an-integration-pack).
 
-Preparing to connect to the HP Service Manager Server
------------------------------------------------------
+## Preparing to connect to the HP Service Manager Server
 
 -   Make a record of the HP Service Manager server name and port number used to connect the HP Service Manager client.
 -   For all HP Service Manager servers that you plan to connect to you must create an ODBC data source name (DSN) on each Client and Runbook server. Both SQL Server Native and Oracle ODBC connections are supported. See [Configuring the HP Service Manager Connections](#ConfiguringConnections).
 -   The licensing model for the components of HP Service Manager varies depending on the version installed. Consult the HP product documentation to determine which components are licensed separately. This integration pack requires HP Service Manager SOAP web service access to operate correctly. Ensure that this component is installed and licensed, if necessary.
 -   Ensure that the user configured to access the HP Service Manager server has been assigned the SOAP-API CAPABILITY WORD in the HP Service Manager system. Depending on the version of HP Service Manager, it may be necessary to purchase extra licensing to enable the SOAP-API CAPABILITY WORD. Consult your HP Sales Representative for further information about licensing.
 
-Configuring the HP Service Manager Connections
-----------------------------------------------
+## Configuring the HP Service Manager Connections
 
 A connection establishes a reusable link between Orchestrator and a HP Service Manager server. You can create as many connections as you require specifying links to multiple servers running HP Service Manager. You can also create multiple connections to the same server to allow for differences in security permissions for different user accounts.
 
@@ -159,10 +153,11 @@ To avoid possible corruption, do not use alternate means to directly connect to 
 
 14. Click **OK** to close the configuration dialog box, and then click **Finish**.
 
-<br><br><strong>Tip </strong><br>For the DB Username and DB Password - If your HPSM database is on a computer running Windows server and you set up your ODBC DSN with Windows authentication, then you can enter anything in for the username and password because the fields are required only not to be blank in order for the Test Connection button to work. <br> If you are using SQL Server authentication, then you must have the username and password for the HPSM SQL Server database. The user must have read/write access to the database via the DSN connection.<br><br>
+>[!TIP]
+>For the DB Username and DB Password - If your HPSM database is on a computer running Windows server and you set up your ODBC DSN with Windows authentication, then you can enter anything in for the username and password because the fields are required only not to be blank in order for the Test Connection button to work.
+>If you are using SQL Server authentication, then you must have the username and password for the HPSM SQL Server database. The user must have read/write access to the database via the DSN connection.
 
-Exposing Required Fields
-------------------------
+## Exposing Required Fields
 
 If an activity reports an error and indicates that a required field must be specified but the IP does not provide the field in the user interface, the field must be exposed through the HP Service Manager Web service API. To expose the field complete the following procedure:
 
@@ -190,8 +185,8 @@ If an activity reports an error and indicates that a required field must be spec
 
 11. Click **Save** at the top of the page to save the message.
 
-Known Issues
-------------
+## Known Issues
+
 
 -   The **Test Connection** button cannot be used to validate Service Manager 7.1 web service connections if the HP ServiceCenter 6.2 web service has been disabled.
 -   Certain permissions are required when dealing with Change tickets. These permissions are specified by assigning a user a Change Management Profile. While a user can have more than one profile, it can only belong to one profile per session. If the user is assigned more than one Change Management Profile it will automatically use the first profile in alphabetical order. To avoid confusion it is recommended that the user configured for use with the integration pack is only assigned one Change Management Profile.

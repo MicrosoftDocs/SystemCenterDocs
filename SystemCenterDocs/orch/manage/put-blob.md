@@ -15,8 +15,7 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-Put Blob
-========
+# Put Blob
 
 Applies To: System Center 2016 - Orchestrator
 
@@ -24,8 +23,7 @@ The **Put Blob** activity creates a new block blob from the specified file, or u
 
 The activity publishes all of the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
 
-Put Blob Required Properties
-----------------------------
+## Put Blob Required Properties
 
 | **Element**   | **Description**   | **Valid values** |
 |:---|:---|:---|
@@ -34,16 +32,14 @@ Put Blob Required Properties
 | Blob Name   | A name for the blob.   | String   |
 | File to Upload (File Path) | The file to upload.   | String   |
 
-Put Blob Optional Properties
-----------------------------
+## Put Blob Optional Properties
 
 | **Element** | **Description**   | **Valid values** |
 |:---|:---|:---|
 | Primary Key | The primary key associated with the storage account.   | String   |
 | Metadata   | Metadata to associate with the blob. Should be in the format "Name1:Value1,Name2:Value2" | String   |
 
-Put Blob Published Data
------------------------
+## Put Blob Published Data
 
 | **Element**   | **Description**   | **Value type** |
 |:---|:---|:---|
@@ -63,8 +59,8 @@ Put Blob Published Data
 | Metadata   | Metadata associated with the blob. Should be in the format "Name1:Value1,Name2:Value2" | String   |
 | Storage Account Name   | The name of the storage account.   | String   |
 
-See Also
---------
+## See Also
+
 
 #### Other Resources
 

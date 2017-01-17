@@ -15,8 +15,7 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-Get VM Data Disk
-================
+# Get VM Data Disk
 
 Applies To: System Center 2016 - Orchestrator
 
@@ -24,8 +23,7 @@ The **Get VM Data Disk** activity retrieves the specified data disk from a virtu
 
 The activity publishes all of the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
 
-Get VM Data Disk Required Properties
-------------------------------------
+## Get VM Data Disk Required Properties
 
 | **Element**   | **Description**   | **Valid values**   |
 |:---|:---|:---|
@@ -34,13 +32,11 @@ Get VM Data Disk Required Properties
 | VM Instance Name   | The virtual machine to which the data disk is attached. | String   |
 | Logical Unit Number | The Logical Unit Number (LUN) of the disk.   | 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 |
 
-Get VM Data Disk Optional Properties
-------------------------------------
+## Get VM Data Disk Optional Properties
 
 There are no optional properties for this runbook activity.
 
-Get VM Data Disk Published Data
--------------------------------
+## Get VM Data Disk Published Data
 
 | **Element**   | **Description**   | **Value type** |
 |:---|:---|:---|
@@ -54,8 +50,8 @@ Get VM Data Disk Published Data
 | Media Link   | Specifies the location of the blob in Windows Azure blob store where the media for the disk is located. | String   |
 | Disk Size in GB   | Specifies the size, in GB, of an empty disk to be attached to the role.   | Integer   |
 
-See Also
---------
+## See Also
+
 
 #### Other Resources
 

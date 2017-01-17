@@ -15,8 +15,7 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-Add VM Instance
-===============
+# Add VM Instance
 
 Applies To: System Center 2016 - Orchestrator
 
@@ -24,8 +23,7 @@ The **Add VM Instance** activity adds a virtual machine to an existing deploymen
 
 The activity publishes all of the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
 
-Add VM Instance Required Properties
------------------------------------
+## Add VM Instance Required Properties
 
 | **Element**   | **Description**   | **Valid Values**   |
 |:---|:---|:---|
@@ -54,13 +52,11 @@ Add VM Instance Required Properties
 | XML Configuration File Path   | The path to the configuration file to use to create the virtual machine.   | String   |
 | Wait for Completion   | Whether to wait for this operation to complete in Windows Azure before moving on to the next activity.   | True, False   |
 
-Add VM Instance Optional Properties
------------------------------------
+## Add VM Instance Optional Properties
 
 There are no optional properties for this activity.
 
-Add VM Instance Published Data
-------------------------------
+## Add VM Instance Published Data
 
 | **Element**   | **Description**   | **Value type**   |
 |:---|:---|:---|
@@ -88,8 +84,8 @@ Add VM Instance Published Data
 | XML Configuration File Path   | The path to the configuration file to use to create the virtual machine.   | String   |
 | Wait for Completion   | Whether to wait for this operation to complete in Windows Azure before moving on to the next activity. | True, False   |
 
-See Also
---------
+## See Also
+
 
 #### Other Resources
 

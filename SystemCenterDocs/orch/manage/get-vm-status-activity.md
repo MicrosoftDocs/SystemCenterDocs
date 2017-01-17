@@ -15,8 +15,7 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-Get VM Status Activity
-======================
+# Get VM Status Activity
 
 Applies To: System Center 2016 - Orchestrator
 
@@ -29,20 +28,18 @@ The activity publishes all of the data from the required and optional properties
 ### Get VM Status Activity Required Properties
 
 | Element | Description   | Valid Values | Look up |
-| VM Path | The path of the virtual machine to retrieve the status for. | String   | Yes   |
 |:---|:---|:---|:---|
+| VM Path | The path of the virtual machine to retrieve the status for. | String   | Yes   |
+
 
 ### Get VM Status Activity Optional Properties
-
-|   |
-|--------------------------------------------------------|
-| No optional properties are provided for this activity. |
+No optional properties are provided for this activity.
 
 ### Get VM Status Activity Published Data
 
 | Name   | Description   | Value Type |
-| CPU Usage   | The current CPU usage of the virtual machine   | Integer   |
 |:---|:---|:---|
+| CPU Usage   | The current CPU usage of the virtual machine   | Integer   |
 | Computer Name   | The computer name assigned to the guest operating system.   | String   |
 | Disk Capacity(MB) | The size of the virtual disk in megabytes.   | Integer   |
 | IP Address   | The primary IP address of the virtual machine.   | String   |
@@ -57,8 +54,7 @@ The activity publishes all of the data from the required and optional properties
 | VM Path   | The full path of the virtual machine on the vCenter server.   | String   |
 | VM UUID   | The UUID of the virtual machine as assigned by the vCenter server.   | String   |
 
-Configuring the Get VM Status Activity
---------------------------------------
+## Configuring the Get VM Status Activity
 
 The following procedure describes the steps required to configure a Get VM Status activity.
 
@@ -75,5 +71,3 @@ The following procedure describes the steps required to configure a Get VM Statu
         You can also use published data to automatically populate the value of the property from the data output by a previous activity in the workflow.
 
 4.  Click **Finish**.
-
-
