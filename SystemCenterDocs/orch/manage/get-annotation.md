@@ -15,8 +15,7 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-Get Annotation
-==============
+# Get Annotation
 
 Applies To: System Center 2016 - Orchestrator
 
@@ -24,15 +23,13 @@ The Get Annotation activity retrieves annotations for a specified message accord
 
 The following tables list the required properties and published data for this activity. For more information on configuring activities, see [HP Operations Manager Activities](hp-operations-manager-activities.md).
 
-Get Annotation Required Properties
-----------------------------------
+## Get Annotation Required Properties
 
 | Element   | Description   | Valid Values | Look up |
 |:---|:---|:---|:---|
 | Message ID | The ID of the message to get annotations for. | String   | No   |
 
-Get Annotation Filters
-----------------------
+## Get Annotation Filters
 
 | Element   | Description   | Filters   | Value Type |
 |:---|:---|:---|:---|
@@ -41,8 +38,7 @@ Get Annotation Filters
 | Author   | Name of the HPOM user that is currently responsible for the annotation. | Equals<br>Does not equal<br>Contains<br>Does not contain<br>Matches pattern<br>Does not match pattern<br>Starts With<br>Ends With | String   |
 | Time Created   | The time that the annotations was created.   | Less than<br>Greater than   | Datetime   |
 
-Get Annotation Published Data
------------------------------
+## Get Annotation Published Data
 
 | Element   | Description   | Value Type |
 |:---|:---|:---|
@@ -56,8 +52,7 @@ Get Annotation Published Data
 | HPOM Port   | The port used to connect to the HPOM management server.   | Integer   |
 | HPOM Username   | The name of the HPOM used to connect to the HPOM management server.   | String   |
 
-Other Activities
-----------------
+## Other Activities
 
 The Integration Pack for HP Operations Manager integration contains the following additional activities:
 

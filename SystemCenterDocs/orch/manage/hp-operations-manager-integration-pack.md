@@ -15,8 +15,7 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-HP Operations Manager Integration Pack for System Center 2016 - Orchestrator
-============================================================================
+# HP Operations Manager Integration Pack for System Center 2016 - Orchestrator
 
 Applies To: System Center 2016 - Orchestrator
 
@@ -24,26 +23,22 @@ The Integration Pack for HP Operations Manager is an add-on for System Center 20
 
 Microsoft is committed to protecting your privacy, while delivering software that brings you the performance, power, and convenience you want. For more information, see the [Privacy Statement for System Center 2016 - Orchestrator](https://www.microsoft.com/en-us/privacystatement/EnterpriseDev/default.aspx).
 
-System Requirements
--------------------
+## System Requirements
 
 The Integration Pack for HP Operations Manager requires the following software to be installed and configured prior to implementing the integration. For more information about installing and configuring Orchestrator and the HP Operations Manager application, refer to the respective product documentation.
 
 -   System Center 2016 integration packs require System Center 2016 - Orchestrator
 -   HP Operations Manager 9.x
 
-Downloading the Integration Pack
---------------------------------
+## Downloading the Integration Pack
 
 To download this integration pack, see [HP Operations Manager Integration Pack for System Center 2016 - Orchestrator](https://www.microsoft.com/en-us/download/details.aspx?id=54102).
 
-Registering and Deploying the Integration Pack
-----------------------------------------------
+## Registering and Deploying the Integration Pack
 
 After you download the integration pack file, you must register it with the Orchestrator management server and then deploy it to Runbook servers and Runbook Designers. For the procedures on installing integration packs, see [How To Install an Integration Pack](https://technet.microsoft.com/system-center-docs/orch/manage/how-to-add-an-integration-pack).
 
-Configuring the HP Operations Manager Connections
--------------------------------------------------
+## Configuring the HP Operations Manager Connections
 
 A connection establishes a reusable link between Orchestrator and an HP Operations Manager server. You can create as many connections as you require to specify links to multiple servers running HP Operations Manager. You can also create multiple connections to the same server to allow for differences in security permissions for different user accounts.
 

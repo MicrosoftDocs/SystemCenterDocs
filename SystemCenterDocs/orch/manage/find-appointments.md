@@ -15,8 +15,7 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-Find Appointments
-=================
+# Find Appointments
 
 Applies To: System Center 2016 - Orchestrator
 
@@ -24,8 +23,7 @@ The Find Appointments activity is used in a runbook to find an existing appointm
 
 The following tables list the required properties, optional properties, filters, and published data for this activity.
 
-Find Appointments Required Properties
--------------------------------------
+## Find Appointments Required Properties
 
 | **Element**   | **Description**   | **Valid values** |
 |:---|:---|:---|
@@ -34,15 +32,13 @@ Find Appointments Required Properties
 | Start Date   | The start date   | DateTime   |
 | End Date   | The end date   | DateTime   |
 
-Find Appointments Optional Properties
--------------------------------------
+## Find Appointments Optional Properties
 
 | **Element**   | **Description**   | **Valid values** |
 |:---|:---|:---|
 | Maximum Items | The maximum number of items to return | Integer   |
 
-Find Appointments Filters
--------------------------
+## Find Appointments Filters
 
 | **Element**   | **Description**   | **Filters**   |
 |:---|:---|:---|
@@ -87,8 +83,7 @@ Find Appointments Filters
 | Subject   | The subject of the appointment   | Equals<br>Does not equal<br>Contains<br>Does not contain<br>Starts with   |
 | Time Zone   | The specified time zone for the appointment   | Equals<br>Does not equal<br>Contains<br>Does not contain<br>Starts with   |
 
-Find Appointments Published Data
---------------------------------
+## Find Appointments Published Data
 
 | **Element**   | **Description**   | **Valid values** |
 |:---|:---|:---|

@@ -15,8 +15,7 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-Add VM Data Disk
-================
+# Add VM Data Disk
 
 Applies To: System Center 2016 - Orchestrator
 
@@ -24,8 +23,7 @@ The **Add VM Data Disk** activity adds a data disk to a virtual machine. It is p
 
 The activity publishes all of the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
 
-Add VM Data Disk Required Properties
-------------------------------------
+## Add VM Data Disk Required Properties
 
 | **Element**   | **Description**   | **Valid values**   |
 |:---|:---|:---|
@@ -41,15 +39,13 @@ Add VM Data Disk Required Properties
 | Disk Size in GB   | Specifies the size, in GB, of an empty disk to be attached to the virtual machine.   | Integer   |
 | Wait for Completion   | Whether to wait for this operation to complete in Windows Azure before moving on to the next activity.   | True, False   |
 
-Add VM Data Disk Optional Properties
-------------------------------------
+## Add VM Data Disk Optional Properties
 
 | **Element**   | **Description**   | **Valid values**   |
 |:---|:---|:---|
 | Logical Unit Number | Specifies the Logical Unit Number (LUN) for the disk. The LUN specifies the slot in which the data drive appears when mounted for usage by the virtual machine. | 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 |
 
-Add VM Data Disk Published Data
--------------------------------
+## Add VM Data Disk Published Data
 
 | **Element**   | **Description**   | **Value type** |
 |:---|:---|:---|
@@ -66,8 +62,8 @@ Add VM Data Disk Published Data
 | Wait for Completion | Whether to wait for this operation to complete in Windows Azure before moving on to the next activity.   | Boolean   |
 | Request ID   | The unique identifier of the request to Windows Azure.   | String   |
 
-See Also
---------
+## See Also
+
 
 #### Other Resources
 

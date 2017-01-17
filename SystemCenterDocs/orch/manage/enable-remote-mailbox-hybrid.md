@@ -15,8 +15,7 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-Enable Remote Mailbox (Hybrid)
-==============================
+# Enable Remote Mailbox (Hybrid)
 
 Applies To: System Center 2016 - Orchestrator
 
@@ -24,15 +23,13 @@ You can use the Enable Remote Mailbox (Hybrid) activity to create a mailbox in t
 
 The following tables list the required properties, optional properties, and published data for this activity.
 
-Required properties for Enable Remote Mailbox (Hybrid)
-------------------------------------------------------
+## Required properties for Enable Remote Mailbox (Hybrid)
 
 | **Element** | **Description**   | **Valid values** |
 |:---|:---|:---|
 | Identity   | The identity of the Active Directory user. This element can be one of the following value types:<br>ADObjectID <br>GUID <br>Distinguished name (DN)<br>Domain\\SamAccountName <br>User principal name (UPN)<br>LegacyExchangeDN<br>User alias | String   |
 
-Optional properties for Enable Remote Mailbox (Hybrid)
-------------------------------------------------------
+## Optional properties for Enable Remote Mailbox (Hybrid)
 
 | **Element**   | **Description**   | **Valid values** |
 |:---|:---|:---|
@@ -46,8 +43,7 @@ Optional properties for Enable Remote Mailbox (Hybrid)
 | Room   | Specifies the new mailbox as a room, if this mailbox is a resource mailbox. Default is True, when selected.   | True, False   |
 | Remote Routing Address | Specifies the SMTP address of the mailbox in the service that this user is associated with.<br>If you have configured mail flow between the on-premises organization and the service, you do not need to specify this property. The remote routing address is calculated automatically. | String   |
 
-Published data for Enable Remote Mailbox (Hybrid)
--------------------------------------------------
+## Published data for Enable Remote Mailbox (Hybrid)
 
 | **Element**   | **Description**   | **Valid values** |
 |:---|:---|:---|

@@ -15,8 +15,7 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-Launch Tool
-===========
+# Launch Tool
 
 Applies To: System Center 2016 - Orchestrator
 
@@ -24,8 +23,7 @@ The Launch Tool activity is used in a runbook to run a specified command on a sp
 
 The following tables list the required properties and published data for this activity. For more information on configuring activities, see [HP Operations Manager Activities](hp-operations-manager-activities.md).
 
-Launch Tool Required Properties
--------------------------------
+## Launch Tool Required Properties
 
 | Element   | Description   | Valid Values   | Look up |
 |:---|:---|:---|:---|
@@ -33,8 +31,7 @@ Launch Tool Required Properties
 | Command Type | Specifies the type of command to be run.   | server-defined<br>executable<br>vbscript<br>jscript<br>perl<br>wshost | Yes   |
 | Node   | The fully qualified domain name of the node on which to run the command.   | String   | No   |
 
-Launch Tool Optional Properties
--------------------------------
+## Launch Tool Optional Properties
 
 | Element   | Description   | Valid Values | Look up |
 |:---|:---|:---|:---|
@@ -44,8 +41,7 @@ Launch Tool Optional Properties
 | Command Password   | Specifies the password of the user used to run the command.   | String   | No   |
 | Display   | Contains a display environment variable, which the agent sets before it starts the tool. You can use this to redirect the display for X programs on nodes with a UNIX or Linux operating system.   | String   | No   |
 
-Launch Tool Published Data
---------------------------
+## Launch Tool Published Data
 
 | Element   | Description   | Value Type |
 |:---|:---|:---|
@@ -64,12 +60,13 @@ Launch Tool Published Data
 | Time Finished   | The time that the management server finished running the command.   | DateTime   |
 | Tool Execution ID   | The unique identifier of the running tool.   | String   |
 
-<br><br><strong>Warning </strong><br> When using the Launch Tool activity you must ensure that you have selected an HP Operations Manager Connection that is configured with a user that has sufficient privileges for launching tools in HP Operations Manager. <br><br>
+>[!WARNING]
+>When using the Launch Tool activity you must ensure that you have selected an HP Operations Manager Connection that is configured with a user that has sufficient privileges for launching tools in HP Operations Manager.
 
-<br><br><strong>Warning </strong><br> When using the Launch Tool activity to launch a server-defined tool you should be careful to ensure that the **Command** field contains the unique ID of an existing tool. Specifying an invalid unique ID may cause the Launch Tool activity to become unresponsive for long periods of time when targeting some HP Operations Manager systems, in particular those hosted on HP-UX. <br><br>
+>[!WARNING]
+>When using the Launch Tool activity to launch a server-defined tool you should be careful to ensure that the **Command** field contains the unique ID of an existing tool. Specifying an invalid unique ID may cause the Launch Tool activity to become unresponsive for long periods of time when targeting some HP Operations Manager systems, in particular those hosted on HP-UX. 
 
-Other Activities
-----------------
+## Other Activities
 
 The Integration Pack for HP Operations Manager integration contains the following additional activities:
 

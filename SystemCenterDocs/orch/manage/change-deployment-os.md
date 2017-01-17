@@ -15,8 +15,7 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-Change Deployment OS
-====================
+# Change Deployment OS
 
 Applies To: System Center 2016 - Orchestrator
 
@@ -24,8 +23,7 @@ The **Change Deployment OS** activity changes the underlying guest operating sys
 
 The activity publishes all of the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
 
-Change Deployment OS Required Properties
-----------------------------------------
+## Change Deployment OS Required Properties
 
 | **Element**   | **Description**   | **Valid values**   |
 |:---|:---|:---|
@@ -35,13 +33,11 @@ Change Deployment OS Required Properties
 | OS Family Number   | The operating system family.   | Integer   |
 | OS Version String   | The operating system version.   | String   |
 
-Change Deployment OS Optional Properties
-----------------------------------------
+## Change Deployment OS Optional Properties
 
 There are no optional properties for this runbook activity.
 
-Change Deployment OS Published Data
------------------------------------
+## Change Deployment OS Published Data
 
 | **Element**   | **Description**   | **Value type** |
 |:---|:---|:---|
@@ -66,8 +62,8 @@ Change Deployment OS Published Data
 | Label   | A friendly name for the cloud service.   | String   |
 | Wait for Completion   | Whether to wait for this operation to complete in Windows Azure before moving on to the next activity. | Boolean   |
 
-See Also
---------
+## See Also
+
 
 #### Other Resources
 

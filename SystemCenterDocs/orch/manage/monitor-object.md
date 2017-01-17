@@ -15,8 +15,7 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-Monitor Object
-==============
+# Monitor Object
 
 Applies To: System Center 2016 - Orchestrator
 
@@ -24,10 +23,8 @@ The Monitor Object activity uses filter criteria to look for new and updated rec
 
 The following published data element is specific to Monitor Object. Additional published data is generated based on the class that you select when you define the activity. For a list of the data elements published by each class, see [Service Manager Published Data](service-manager-published-data.md).
 
-Monitor Object Published Data
------------------------------
+## Monitor Object Published Data
 
-|   |   |
-|-------------------|---------------------------------------------------------------|
 | Element   | Description   |
+|-------------------|---------------------------------------------------------------|
 | Number of Objects | The number of objects returned by the Monitor Object activity |

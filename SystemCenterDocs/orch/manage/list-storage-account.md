@@ -15,8 +15,7 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-List Storage Account
-====================
+# List Storage Account
 
 Applies To: System Center 2016 - Orchestrator
 
@@ -24,18 +23,15 @@ The **List Storage Account** activity lists the storage accounts available under
 
 The activity publishes all of the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
 
-List Storage Account Required Properties
-----------------------------------------
+## List Storage Account Required Properties
 
 There are no required properties for this runbook activity.
 
-List Storage Account Optional Properties
-----------------------------------------
+## List Storage Account Optional Properties
 
 There are no optional properties for this runbook activity.
 
-List Storage Account Published Data
------------------------------------
+## List Storage Account Published Data
 
 | **Element**   | **Description**   | **Value type** |
 |:---|:---|:---|
@@ -47,8 +43,8 @@ List Storage Account Published Data
 | Service URL   | The Service Management API request URI used to perform requests against the storage account.   | String   |
 | Status   | The status of the storage account at the time the operation was called.   | String   |
 
-See Also
---------
+## See Also
+
 
 #### Other Resources
 

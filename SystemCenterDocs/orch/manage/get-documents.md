@@ -15,8 +15,7 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-Get Documents
-=============
+# Get Documents
 
 Applies To: System Center 2016 - Orchestrator
 
@@ -24,23 +23,20 @@ The **Get Documents** activity is used in a runbook to retrieve details about th
 
 The following tables list the filters, required and optional properties, and Published Data for this activity. Additional filters and Published Data are generated, which are based on the SharePoint document library that is retrieved when you define the activity.
 
-Get Documents Required Properties
----------------------------------
+## Get Documents Required Properties
 
 | **Element**   | **Description**   | **Valid values** |
 |:---|:---|:---|
 | Document Library | The name of the SharePoint document library to be searched. | String   |
 
-Get Documents Optional Properties
----------------------------------
+## Get Documents Optional Properties
 
 | **Element**   | **Description**   | **Valid values** |
 |:---|:---|:---|
 | Document Folder | The relative path of a child folder in the document library to refine the search.   | String   |
 | Recursive   | A Boolean value that indicates whether to retrieve data from documents in all child folders. | True<br>False   |
 
-Get Documents Filters
----------------------
+## Get Documents Filters
 
 | **Element** | **Description**   | **Valid values**   |
 |:---|:---|:---|
@@ -51,8 +47,7 @@ Get Documents Filters
 | Modified By | The name of the user who last modified the document.   | Equals<br>Does not equal   |
 | Title   | The title of the document.   | Equals<br>Does not equal<br>Contains<br>Starts with   |
 
-Get Documents Published Data
-----------------------------
+## Get Documents Published Data
 
 | **Element**   | **Description**   | **Value type** |
 |:---|:---|:---|
@@ -65,8 +60,8 @@ Get Documents Published Data
 | Modified By   | The name of the user who last modified the document.   | String   |
 | SharePoint Site  | The URL of the SharePoint site.   | String   |
 
-See Also
---------
+## See Also
+
 
 #### Other Resources
 

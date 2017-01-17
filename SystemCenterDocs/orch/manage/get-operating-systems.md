@@ -15,8 +15,7 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-Get Operating Systems
-=====================
+# Get Operating Systems
 
 Applies To: System Center 2016 - Orchestrator
 
@@ -24,18 +23,15 @@ The **Get Operating Systems** activity gets all Windows Azure operating systems.
 
 The activity publishes all of the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
 
-Get Operating Systems Required Properties
------------------------------------------
+## Get Operating Systems Required Properties
 
 There are no required properties for this runbook activity.
 
-Get Operating Systems Optional Properties
------------------------------------------
+## Get Operating Systems Optional Properties
 
 There are no optional properties for this runbook activity.
 
-Get Operating Systems Published Data
-------------------------------------
+## Get Operating Systems Published Data
 
 | **Element**   | **Description**   | **Value type** |
 |:---|:---|:---|
@@ -45,8 +41,8 @@ Get Operating Systems Published Data
 | OS Family Number  | The operating system family.   | Integer   |
 | OS Version String | The operating system version.   | String   |
 
-See Also
---------
+## See Also
+
 
 #### Other Resources
 

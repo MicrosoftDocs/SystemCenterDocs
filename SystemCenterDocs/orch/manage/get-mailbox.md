@@ -15,8 +15,7 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-Get Mailbox
-===========
+# Get Mailbox
 
 Applies To: System Center 2016 - Orchestrator
 
@@ -24,13 +23,11 @@ You can use the Get Mailbox activity to retrieve the attributes and objects for 
 
 The following tables list the required properties, filters, optional properties, and published data for this activity.
 
-Required properties for the Get Mailbox activity
-------------------------------------------------
+## Required properties for the Get Mailbox activity
 
 This activity has no required properties.
 
-Filters for the Get Mailbox activity
-------------------------------------
+## Filters for the Get Mailbox activity
 
 | **Element**   | **Description**   | **Valid values**   |
 |:---|:---|:---|
@@ -223,8 +220,7 @@ Filters for the Get Mailbox activity
 | Server   | Specifies an individual server by which to limit the results. When you use this property, only mailboxes that reside on the specified server will be returned. Use the common name of the server that you want to specify.   | String   |
 | Sort By   | Specifies the attribute by which to sort the results. Results can only be sorted by one attribute at a time. The results are sorted in ascending order. Results can be sorted by the following attributes: <br>Alias<br>Display name<br>Name<br>   | String   |
 
-Published data for the Get Mailbox activity
--------------------------------------------
+## Published data for the Get Mailbox activity
 
 | **Element**   | **Description**   | **Valid values** |
 |:---|:---|:---|

@@ -15,8 +15,7 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-Get Cluster Properties Activity
-===============================
+# Get Cluster Properties Activity
 
 Applies To: System Center 2016 - Orchestrator
 
@@ -29,20 +28,19 @@ The activity publishes all of the data from the required and optional properties
 ### Get Cluster Properties Activity Required Properties
 
 | Element   | Description   | Valid Values | Look up |
-| Cluster Path | The path to the virtual machine cluster whose properties are being retrieved | String   | Yes   |
 |:---|:---|:---|:---|
+| Cluster Path | The path to the virtual machine cluster whose properties are being retrieved | String   | Yes   |
+
 
 ### Get Cluster Properties Activity Optional Properties
 
-|   |
-|--------------------------------------------------------|
-| No optional properties are provided for this activity. |
+No optional properties are provided for this activity.
 
 ### Get Cluster Properties Activity Published Data
 
 | Name   | Description   | Value Type |
-| Cluster Path   | The path of the virtual machine cluster.   | String   |
 |:---|:---|:---|
+| Cluster Path   | The path of the virtual machine cluster.   | String   |
 | Datastore Names   | The names of the datastores assigned to the cluster.   | String   |
 | Effective CPU (MHz)   | The total CPU MHZ available for virtual machines.   | Integer   |
 | Effective Memory (MB)   | The total memory available for virtual machines.   | Integer   |
@@ -53,8 +51,7 @@ The activity publishes all of the data from the required and optional properties
 | Total CPU (MHz)   | The total CPU MHz available on the virtual machine cluster.   | Integer   |
 | Total Memory (MB)   | The total memory available on the virtual machine cluster.   | Integer   |
 
-Configuring the Get Cluster Properties Activity
------------------------------------------------
+## Configuring the Get Cluster Properties Activity
 
 The following procedure describes the steps required to configure a Get Cluster Properties activity.
 
@@ -71,5 +68,3 @@ The following procedure describes the steps required to configure a Get Cluster 
         You can also use published data to automatically populate the value of the property from the data output by a previous activity in the workflow.
 
 4.  Click **Finish**.
-
-

@@ -15,8 +15,7 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-Exchange Users Activities
-=========================
+# Exchange Users Activities
 
 Applies To: System Center 2016 - Orchestrator
 
@@ -24,8 +23,7 @@ The configuration instructions in this topic apply to all activities in the Exch
 
 The procedures in this topic are performed on any activity that has been placed in the runbook window of the Orchestrator Runbook Designer.
 
-Activity Properties
--------------------
+## Activity Properties
 
 Each activity has a set of required or optional properties that define the configuration of that activity. The configuration defines how the activity performs its actions and how it connects to other activities as applicable. You can view or modify an activity's properties when the activity has been placed in the runbook window.
 
@@ -55,15 +53,15 @@ The **Properties** tab contains properties that are specific to the activity. Al
 
 The **Monitor** and **Get** activities use filters to determine the values that will invoke a runbook or retrieve activities. Property values of potential candidates are compared to the values of the filters to determine if they meet the criteria. To specify filtering criteria, you can select one of the available methods of comparison. An option is provided to either match or not match the filter using each method. For example, the "Does not" version of a method finds any message that does not match the filter. All text filters are case sensitive. Here are the available filtering options:
 
--   **Equals**: The property of the message matches the text or number specified in the filter.<br><br>
--   **Does not equal**: The property of the message does not match the text or number specified in the filter.<br><br>
--   **Is less than**: The property of the message is less than the number specified in the filter. <br><br>
--   **Is less than or equal to**: The property of the message is less than or equal to the number specified in the filter.<br><br>
--   **Is greater than**: The property of the message is greater than the number in the filter.<br><br>
--   **Is greater than or equal to**: The property of the message is greater than or equal to the number specified in the filter.<br><br>
--   **Contains**: The property of the message contains the exact text specified in the filter. Unlike the Equals filter behavior, there can be other text surrounding the matching text. <br><br>
--   **Does not contain**: the property of the message does not contain the exact text specified in the filter. Unlike the Equals filter behavior, there can be other text surrounding the matching text.<br><br>
--   **Starts with pattern**: The property of the message starts with the exact text specified in the filter. Unlike the Equals filter behavior, there can be other text following the matching text.<br><br>
+-   **Equals**: The property of the message matches the text or number specified in the filter.
+-   **Does not equal**: The property of the message does not match the text or number specified in the filter.<
+-   **Is less than**: The property of the message is less than the number specified in the filter.
+-   **Is less than or equal to**: The property of the message is less than or equal to the number specified in the filter.
+-   **Is greater than**: The property of the message is greater than the number in the filter.
+-   **Is greater than or equal to**: The property of the message is greater than or equal to the number specified in the filter.
+-   **Contains**: The property of the message contains the exact text specified in the filter. Unlike the Equals filter behavior, there can be other text surrounding the matching text.
+-   **Does not contain**: the property of the message does not contain the exact text specified in the filter. Unlike the Equals filter behavior, there can be other text surrounding the matching text.
+-   **Starts with pattern**: The property of the message starts with the exact text specified in the filter. Unlike the Equals filter behavior, there can be other text following the matching text.
 
 ### The Run Behavior Tab
 
@@ -75,14 +73,13 @@ The **Get** activities retrieve information from another activity or outside sou
 
 By default, the data from the **Get** activity will be passed on as multiple individual outputs. The multiple outputs will invoke the next activity as many times as there are items in the output. Alternatively, you can provide a single output for the activity by enabling the **Flatten** option. When you enable this option, you must choose a formatting option:
 
--   **Separate with line breaks**. Each item is on a new line. This format is useful for creating human-readable text files for the output.<br><br>
--   **Separate with**. Each item is separated by one or more characters of your choice.<br><br>
--   **Use CSV format**. All items are in CSV (comma-separated value) format. This format is useful for importing data into spreadsheets or other applications. <br><br>
+-   **Separate with line breaks**. Each item is on a new line. This format is useful for creating human-readable text files for the output.
+-   **Separate with**. Each item is separated by one or more characters of your choice.
+-   **Use CSV format**. All items are in CSV (comma-separated value) format. This format is useful for importing data into spreadsheets or other applications. 
 
 The activity will produce a new set of data every time it runs. The **Flatten** feature does not flatten data across multiple instances of the same activity.
 
-Event Notifications
--------------------
+## Event Notifications
 
 Some activities are expected to take a limited amount of time to complete. If they do not complete within that time they may be stalled or there may be another issue preventing them from completing. You can define the number of seconds to wait for completion of the action. After this specified time period, a platform event will be sent and the issue will be reported. You can also choose whether to generate a platform event if the activity returns a failure.
 
@@ -92,8 +89,7 @@ Some activities are expected to take a limited amount of time to complete. If th
 
 2.  Select **Report if activity fails to run** to generate run failure notifications.
 
-Published Data
---------------
+## Published Data
 
 Published data is the foundation of a working runbook. It is the data produced as a result of the actions of an activity. This data is published to an internal data bus that is unique for each runbook. Subsequent activities in the runbook can subscribe to this data and use it in their configuration. Link conditions also use this information to add decision-making capabilities to runbooks.
 
@@ -109,29 +105,17 @@ An activity can subscribe only to data from the activities that are linked befor
 
 For a list of the data elements published by each activity, see the **Published Data** table in the activity topic. For information about the common published data items, see [Common Published Data](https://technet.microsoft.com/en-us/library/e339c027-4c69-43e5-a59b-ac7ea0a676c8#CommonPublishedData).
 
-Activities
-----------
+## Activities
 
 This integration pack adds the **Exchange Users** category to the **Activity** pane in the Runbook Designer. This category contains the following activities:
-
-Create and Send E-Mail
-
-Create Item
-
-Delete Item
-
-Find Appointment
-
-Forward Item
-
-Get Item
-
-Monitor Item
-
-Move or Copy Item
-
-Reply To E-Mail
-
-Send E-Mail
-
-Update Item
+- Create and Send E-Mail
+- Create Item
+- Delete Item
+- Find Appointment
+- Forward Item
+- Get Item
+- Monitor Item
+- Move or Copy Item
+- Reply To E-Mail
+- Send E-Mail
+- Update Item

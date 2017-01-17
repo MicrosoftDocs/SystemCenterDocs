@@ -15,8 +15,7 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-Delete Service Certificate
-==========================
+# Delete Service Certificate
 
 Applies To: System Center 2016 - Orchestrator
 
@@ -24,8 +23,7 @@ The **Delete Service Certificate** activity is used in a runbook delete a servic
 
 The activity publishes all of the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
 
-Delete Service Certificate Required Properties
-----------------------------------------------
+## Delete Service Certificate Required Properties
 
 | **Element**   | **Description**   | **Valid values** |
 |:---|:---|:---|
@@ -33,13 +31,11 @@ Delete Service Certificate Required Properties
 | Service Name   | The name of the Windows Azure cloud service. | String   |
 | PFX Password   | The type of the management certificate file. | CER, PFX   |
 
-Delete Service Certificate Optional Properties
-----------------------------------------------
+## Delete Service Certificate Optional Properties
 
 There are no optional properties for this runbook activity.
 
-Delete Service Certificate Published Data
------------------------------------------
+## Delete Service Certificate Published Data
 
 | **Element**   | **Description**   | **Value type** |
 |:---|:---|:---|
@@ -47,8 +43,8 @@ Delete Service Certificate Published Data
 | Certificate File Path | The path to the certificate file.   | String   |
 | Service Name   | The name of the Windows Azure cloud service.   | String   |
 
-See Also
---------
+## See Also
+
 
 #### Other Resources
 

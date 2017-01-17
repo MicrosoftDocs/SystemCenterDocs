@@ -15,8 +15,7 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-List Container
-==============
+# List Container
 
 Applies To: System Center 2016 - Orchestrator
 
@@ -24,22 +23,19 @@ The **List Container** activity returns a list of the containers under the speci
 
 The activity publishes all of the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
 
-List Container Required Properties
-----------------------------------
+## List Container Required Properties
 
 | **Element**   | **Description**   | **Valid Values** |
 |:---|:---|:---|
 | Storage Account Name | The name of the storage account. | String   |
 
-List Container Optional Properties
-----------------------------------
+## List Container Optional Properties
 
 | **Element** | **Description**   | **Valid Values** |
 |:---|:---|:---|
 | Primary Key | The primary key associated with the storage account. | String   |
 
-List Container Published Data
------------------------------
+## List Container Published Data
 
 | **Element**   | **Description**   | **Value type** |
 |:---|:---|:---|
@@ -49,8 +45,8 @@ List Container Published Data
 | Last Modified Time   | Returns the date and time the container was last modified. | DateTime   |
 | Storage Account Name | The name of the storage account.   | String   |
 
-See Also
---------
+## See Also
+
 
 #### Other Resources
 

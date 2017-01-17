@@ -15,8 +15,7 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-Get View Items
-==============
+# Get View Items
 
 Applies To: System Center 2016 - Orchestrator
 
@@ -24,16 +23,14 @@ The **Get View Items** activity is used in a runbook to retrieve data about the 
 
 The following tables list the required properties and Published Data for this activity. Additional Published Data is generated, which is based on the SharePoint list that is retrieved when you define the activity.
 
-Get View Items Required Properties
-----------------------------------
+## Get View Items Required Properties
 
 | **Element** | **Description**   | **Valid values** |
 |:---|:---|:---|
 | List Name   | The name of the SharePoint list to be searched.   | String   |
 | List View   | The name of the list view to determine which items to select. | String   |
 
-Get View Items Published Data
------------------------------
+## Get View Items Published Data
 
 | **Element**   | **Description**   | **Value type** |
 |:---|:---|:---|
@@ -47,8 +44,8 @@ Get View Items Published Data
 | SharePoint Site | The URL of the SharePoint site.   | String   |
 | View Name   | The name of the list view to determine which items to select.   | String   |
 
-See Also
---------
+## See Also
+
 
 #### Other Resources
 
