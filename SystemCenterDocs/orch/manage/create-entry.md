@@ -15,8 +15,7 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-Create Entry
-============
+# Create Entry
 
 Applies To: System Center 2016 - Orchestrator
 
@@ -24,8 +23,7 @@ The Create Entry activity is used in a runbook to create new incident, service d
 
 The following tables list the required properties and published data for this activity. For more information on configuring activities, see [HP Service Manager Activities](hp-service-manager-activities.md).
 
-Create Entry Required Properties
---------------------------------
+## Create Entry Required Properties
 
 | Element | Description   | Valid Values   | Look up   |
 |:---|:---|:---|:---|
@@ -33,8 +31,7 @@ Create Entry Required Properties
 | Subtype | The Subtype of the entry to be closed based on the Type selected.   | This is a dynamic property based on the configuration of the HP Service Manager server.   | Yes   |
 | Fields  | A list of field values to be applied to the entry when it is created. | This list is dynamically populated with the required fields for the selected Type and Subtype as configured on the HP Service Manager server. | A lookup will be provided for any applicable dynamic property. |
 
-Other Activities
-----------------
+## Other Activities
 
 The Integration Pack for HP Service Manager contains the following additional activities:
 

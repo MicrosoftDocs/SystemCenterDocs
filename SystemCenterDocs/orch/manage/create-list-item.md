@@ -15,8 +15,7 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-Create List Item
-================
+# Create List Item
 
 Applies To: System Center 2016 - Orchestrator
 
@@ -24,20 +23,17 @@ The **Create List Item** activity is used in a runbook to create a new item in a
 
 The following tables list the required properties and Published Data for this activity. Additional required and optional properties are generated, which are based on the SharePoint list that is retrieved when you define the activity.
 
-Create List Item Required Properties
-------------------------------------
+## Create List Item Required Properties
 
 | **Element** | **Description**   | **Valid values** |
 |:---|:---|:---|
 | List Name   | The name of the SharePoint list to contain the new item. | String   |
 
-Create List Item Optional Properties
-------------------------------------
+## Create List Item Optional Properties
 
 There are no optional properties for this runbook activity.
 
-Create List Item Published Data
--------------------------------
+## Create List Item Published Data
 
 | **Element**   | **Description**   | **Value type** |
 |:---|:---|:---|
@@ -46,12 +42,11 @@ Create List Item Published Data
 | SharePoint Site | The URL of the SharePoint site.   | String   |
 
 Tips
-----
 
 You can use comma-separated values to specify input values for multi-choice properties.
 
-See Also
---------
+## See Also
+
 
 #### Other Resources
 
