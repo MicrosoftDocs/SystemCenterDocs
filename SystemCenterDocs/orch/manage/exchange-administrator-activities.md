@@ -15,8 +15,7 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-Exchange Administrator Activities
-=================================
+# Exchange Administrator Activities
 
 Applies To: System Center 2016 - Orchestrator
 
@@ -24,8 +23,7 @@ The following configuration instructions apply to all activities that are perfor
 
 Each procedure in this topic is performed on an activity that has been placed in the runbook window of the **Orchestrator Runbook Designer**.
 
-Activity properties
--------------------
+## Activity properties
 
 Each activity is configured with a set of required or optional properties. These define how the activity connects to other activities or how the activity performs its actions. When an activity has been placed in the runbook window, you can view or modify its properties.
 
@@ -86,8 +84,7 @@ By default, the data from the **Get** activity will be passed on as multiple ind
 
 The **Get** activity will produce a new set of data every time it runs. The **Flatten** feature does not flatten data across multiple instances of the same activity.
 
-Timeout and failure event notifications
----------------------------------------
+## Timeout and failure event notifications
 
 Some activities are expected to take only a limited amount of time to complete. If they do not complete within an expected timeframe, they may be stalled or there may be another issue preventing completion. You can define the number of seconds to wait for completion of the action. If the processing of the activity exceeds this timeout threshold, a platform event will be sent and the issue will be reported. You can also choose whether to generate a platform event if the activity returns a failure.
 
@@ -97,8 +94,7 @@ Some activities are expected to take only a limited amount of time to complete. 
 
 2.  Select **Report if activity fails to run** to generate run failure notifications.
 
-Published data
---------------
+## Published data
 
 Published data is the data produced as a result of the actions of an activity. This data is published to an internal data bus that is unique for each runbook. Published data is the foundation of a working runbook. Subsequent activities in the runbook can subscribe to this data and use it in their configuration. Link conditions also use this information to add decision-making capabilities to runbooks.
 
@@ -114,8 +110,8 @@ An activity can subscribe only to data from the activities that are linked befor
 
 For a list of the data elements published by each activity, see the **Published Data** table in the specific activity topic. For information about the common published data items, see <span>Common Published Data</span>.
 
-Activities
-----------
+## Activities
+--
 
 This integration pack adds the **Exchange Admin** category to the **Activity** pane in the Runbook Designer. This category contains the following activities:
 

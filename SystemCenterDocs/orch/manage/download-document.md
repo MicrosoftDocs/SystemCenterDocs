@@ -15,8 +15,7 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-Download Document
-=================
+# Download Document
 
 Applies To: System Center 2016 - Orchestrator
 
@@ -24,8 +23,7 @@ The **Download Document** activity is used in a runbook to download a document f
 
 The following tables list the required properties and Published Data for this activity.
 
-Download Document Required Properties
--------------------------------------
+## Download Document Required Properties
 
 | **Element**   | **Description**   | **Valid values**   |
 |:---|:---|:---|
@@ -34,13 +32,11 @@ Download Document Required Properties
 | Document Library   | The name of the document library that contains the document to be downloaded.   | String   |
 | ID   | The ID of the document to be downloaded.   | Integer   |
 
-Download Document Optional Properties
--------------------------------------
+## Download Document Optional Properties
 
 There are no optional properties for this runbook activity.
 
-Download Document Published Data
---------------------------------
+## Download Document Published Data
 
 | **Element**   | **Description**   | **Value type** |
 |:---|:---|:---|
@@ -51,8 +47,8 @@ Download Document Published Data
 | Document Library   | The name of the document library that contained the document that was downloaded.   | String   |
 | SharePoint Site   | The URL of the SharePoint site.   | String   |
 
-See Also
---------
+## See Also
+
 
 #### Other Resources
 

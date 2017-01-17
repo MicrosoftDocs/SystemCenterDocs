@@ -15,8 +15,7 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-Clone Linux VM Activity
-=======================
+# Clone Linux VM Activity
 
 Applies To: System Center 2016 - Orchestrator
 
@@ -28,18 +27,19 @@ The activity publishes all of the data from the required and optional properties
 
 With the exception of "Source VM/Template Path," all properties and published data refer to the destination VM produced by the clone operation.
 
-<br><br><strong>Important</strong><br>For System Center 2016: To support multiple network adapters, the IP Address, Subnet Mask, Gateway, and DNS Suffix optional properties can support a comma-separated list of values. Each list must contain the same number of values. The value DHCP causes that network adapter value to be assigned by a DHCP server. If no IP address is specified for a network adapter, it will be assigned by a DHCP server.
+>[!IMPORTANT]
+>For System Center 2016: To support multiple network adapters, the IP Address, Subnet Mask, Gateway, and DNS Suffix optional properties can support a comma-separated list of values. Each list must contain the same number of values. The value DHCP causes that network adapter value to be assigned by a DHCP server. If no IP address is specified for a network adapter, it will be assigned by a DHCP server.
 For example, to assign network details to three network adapters, use the following format:
-IP Address = 192.168.0.2, DHCP, 10.0.0.3
-Subnet Mask = 255.255.255.0, DHCP, 255.0.0.0
-Gateway = 192.168.0.1, DHCP, 10.0.0.1
-DNS Suffix = a.com, b.com, c.com<br><br>
+- IP Address = 192.168.0.2, DHCP, 10.0.0.3
+- Subnet Mask = 255.255.255.0, DHCP, 255.0.0.0
+- Gateway = 192.168.0.1, DHCP, 10.0.0.1
+- DNS Suffix = a.com, b.com, c.com<br><br>
 
 ### Clone Linux VM Activity Required Properties
 
 | Element   | Description   | Valid Values | Look up |
-| Clone Task Timeout in seconds | The number of seconds to wait for the clone operation to complete. After the timeout has been reached the activity will fail if the clone operation has not completed.   | Integer   | No   |
 |:---|:---|:---|:---|
+| Clone Task Timeout in seconds | The number of seconds to wait for the clone operation to complete. After the timeout has been reached the activity will fail if the clone operation has not completed.   | Integer   | No   |
 | Customize   | Indicates whether the virtual machine guest settings are customized after the virtual machine is cloned. For System Center 2016, if set to False, guest customizations (IP address, DNS name, etc) will not be applied. | Boolean   | Yes   |
 | Datastore Path   | The data store name for the cloned virtual machine.   | String   | Yes   |
 | Folder Path   | The path to the folder where the cloned virtual machine will be saved.   | String   | Yes   |
@@ -54,8 +54,8 @@ DNS Suffix = a.com, b.com, c.com<br><br>
 ### Clone Linux VM Activity Optional Properties
 
 | Element   | Description   | Valid Values | Look up |
-| DHCP (not available in System Center 2016) | Indicates whether to use DHCP for assigning an IP address to the cloned virtual machine.   | Boolean   | Yes   |
 |:---|:---|:---|:---|
+| DHCP (not available in System Center 2016) | Indicates whether to use DHCP for assigning an IP address to the cloned virtual machine.   | Boolean   | Yes   |
 | DNS Name   | The Hostname or Short DNS Name with no spaces or periods (.).   | String   | No   |
 | DNS Server   | The name of the DNS server that will resolve name requests for the clone virtual machine.   | String   | No   |
 | Domain Name   | The name of the domain that the cloned virtual machine will belong to.   | String   | No   |
@@ -67,8 +67,8 @@ DNS Suffix = a.com, b.com, c.com<br><br>
 ### Clone Linux VM Activity Published Data
 
 | Name   | Description   | Value Type |
-| Clone Task Timeout in seconds   | The timeout setting for the clone operation.   | Integer   |
 |:---|:---|:---|
+| Clone Task Timeout in seconds   | The timeout setting for the clone operation.   | Integer   |
 | Customize   | Indicates whether the virtual machine computer settings were customized after cloning.   | Boolean   |
 | Datastore Path   | The path of the data store.   | String   |
 | DHCP (not available in System Center 2016) | Indicates which type of IP address allocation the cloned virtual machine uses: DHCP or static.   | Boolean   |
@@ -88,8 +88,7 @@ DNS Suffix = a.com, b.com, c.com<br><br>
 | Virtual Processors   | The number of virtual processors assigned to the cloned virtual machine.   | Integer   |
 | DNS Suffix   | The DNS Suffix that will be assigned to the network adapter of the cloned virtual machine. For example, example.com. | String   |
 
-Configuring the Clone Linux VM Activity
----------------------------------------
+## Configuring the Clone Linux VM Activity
 
 The following procedure describes the steps required to configure a Clone Linux VM activity.
 
@@ -106,5 +105,3 @@ The following procedure describes the steps required to configure a Clone Linux 
         You can also use published data to automatically populate the value of the property from the data output by a previous activity in the workflow.
 
 4.  Click **Finish**.
-
-

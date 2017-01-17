@@ -15,8 +15,7 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-Get VM Host in System Center 2016
-=================================
+# Get VM Host in System Center 2016
 
 Applies To: System Center 2016 - Orchestrator
 
@@ -24,34 +23,26 @@ The Get VM Host activity is used in a runbook to return all virtualization hosts
 
 The activity publishes all of the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
 
-Get VM Host Required Properties
--------------------------------
+## Get VM Host Required Properties
 
 There are no required properties for this activity.
 
-Get VM Host Optional Properties
--------------------------------
+## Get VM Host Optional Properties
 
 There are no optional properties for this activity.
 
-Get VM Host Filters
--------------------
+## Get VM Host Filters
+**Element**<br>
+VM Host ID<br>
+VM Host Name
 
-| **Element**  | **Description** | **Valid Values** |
-|:---|:---|:---|
-| VM Host ID   |   |   |
-| VM Host Name |   |   |
+## Get VM Host Published Data
 
-Get VM Host Published Data
---------------------------
+There is no published data for this activity.
 
-| **Element** | **Description** | **Valid Values** |
-|:---|:---|:---|
+## See Also
 
-See Also
---------
 
 #### Other Resources
 
 [Using Runbooks in System Center 2016 Orchestrator](https://technet.microsoft.com/en-us/library/hh403791.aspx)
-

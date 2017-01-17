@@ -15,8 +15,7 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-Get Remote Mailbox (Hybrid)
-===========================
+# Get Remote Mailbox (Hybrid)
 
 Applies To: System Center 2016 - Orchestrator
 
@@ -24,13 +23,11 @@ You can use the Get Remote Mailbox (Hybrid) activity to retrieve the mail-relate
 
 The following tables list the required properties, optional properties, filters, and published data for this activity.
 
-Required properties for Get Remote Mailbox (Hybrid)
----------------------------------------------------
+## Required properties for Get Remote Mailbox (Hybrid)
 
 This activity has no required properties.
 
-Optional properties for Get Remote Mailbox (Hybrid)
----------------------------------------------------
+## Optional properties for Get Remote Mailbox (Hybrid)
 
 | **Element**   | **Description**   | **Valid values** |
 |:---|:---|:---|
@@ -46,8 +43,7 @@ Optional properties for Get Remote Mailbox (Hybrid)
 | Result Size   | Specifies the maximum number of results to return. If you want to return all mailboxes that match the query, use **unlimited** for the value of this property. The default value is **unlimited**.   | String   |
 | Sort By   | Specifies the attribute by which to sort the results. You can sort by only one attribute at a time. You can sort by the following attributes: <br>Alias<br>Display name<br>Name<br> **Note** The results are sorted in ascending order.   | String   |
 
-Filters for Get Remote Mailbox (Hybrid)
----------------------------------------
+## Filters for Get Remote Mailbox (Hybrid)
 
 | **Element**   | **Description**   | **Valid values**   |
 |:---|:---|:---|
@@ -145,8 +141,7 @@ Filters for Get Remote Mailbox (Hybrid)
 | When Mailbox Created   | Specifies the Date and time when the mailbox was created.   | Equals<br>Does not equal<br>Is less than or equal to<br>Is greater than or equal to<br>Is less than<br>Is greater than   |
 | Windows Email Address   | Specifies the Windows email address.   | Equals<br>Does not equal<br>Contains<br>Does not contain<br>Matches pattern<br>Does not match pattern<br>Starts with<br>Ends with |
 
-Published data for Get Remote Mailbox (Hybrid)
-----------------------------------------------
+## Published data for Get Remote Mailbox (Hybrid)
 
 | Element   | Description   | Valid values |
 |:---|:---|:---|

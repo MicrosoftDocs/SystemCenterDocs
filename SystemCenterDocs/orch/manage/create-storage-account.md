@@ -15,8 +15,7 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-Create Storage Account
-======================
+# Create Storage Account
 
 Applies To: System Center 2016 - Orchestrator
 
@@ -24,8 +23,7 @@ The **Create Storage Account** activity creates a new storage account in Windows
 
 The activity publishes all of the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
 
-Create Storage Account Required Properties
-------------------------------------------
+## Create Storage Account Required Properties
 
 | **Element**   | **Description**   | **Valid values**   |
 |:---|:---|:---|
@@ -36,13 +34,11 @@ Create Storage Account Required Properties
 | Location/Affinity Group Value | The location where the storage account will be created, or the name of an existing affinity group associated with the subscription. | String   |
 | Wait for Completion   | Whether to wait for this operation to complete in Windows Azure before moving on to the next activity.   | True, False   |
 
-Create Storage Account Optional Properties
-------------------------------------------
+## Create Storage Account Optional Properties
 
 There are no optional properties for this runbook activity.
 
-Create Storage Account Published Data
--------------------------------------
+## Create Storage Account Published Data
 
 | **Element**   | **Description**   | **Value type** |
 |:---|:---|:---|
@@ -54,8 +50,8 @@ Create Storage Account Published Data
 | Wait for Completion   | Whether to wait for this operation to complete in Windows Azure before moving on to the next activity.   | Boolean   |
 | Request ID   | The unique identifier of the request to Windows Azure.   | String   |
 
-See Also
---------
+## See Also
+
 
 #### Other Resources
 

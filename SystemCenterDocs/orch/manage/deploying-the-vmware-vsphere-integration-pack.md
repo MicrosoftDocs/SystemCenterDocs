@@ -15,28 +15,24 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-Deploying the VMware vSphere Integration Pack for System Center 2016 - Orchestrator
-===================================================================================
+# Deploying the VMware vSphere Integration Pack for System Center 2016 - Orchestrator
 
 Applies To: System Center 2016 - Orchestrator
 
 The following sections provide important information about downloading and deploying the VMware vSphere integration pack for System Center 2016 - Orchestrator.
 
-System Requirements
--------------------
+## System Requirements
 
 The Integration Pack for VMware vSphere requires the following software to be installed and configured prior to implementing the integration. For more information about installing and configuring Orchestrator and the VMware vSphere application, refer to the respective product documentation.
 
 -   VMware vSphere 4.1 or 5.0
 -   System Center 2016 integration packs require Orchestrator in System Center 2016
 
-Downloading the Integration Pack
---------------------------------
+## Downloading the Integration Pack
 
-You can download the integration pack from the [Microsoft Download Center](http://go.microsoft.com/fwlink/?LinkId=223169) (http://go.microsoft.com/fwlink/?LinkId=223169).
+You can download the integration pack from the [Microsoft Download Center](http://go.microsoft.com/fwlink/?LinkId=223169).
 
-Registering and Deploying the Integration Pack
-----------------------------------------------
+## Registering and Deploying the Integration Pack
 
 After you download the integration pack file, you must register it with the Orchestrator management server and then deploy it to a runbook server.
 
@@ -70,8 +66,7 @@ After you download the integration pack file, you must register it with the Orch
 
 5.  Click **Finish**. The **Log Entries** pane displays a confirmation message that the integration pack is successfully deployed.
 
-Configuring the VMware vSphere connections
-------------------------------------------
+## Configuring the VMware vSphere connections
 
 A connection establishes a reusable link between Orchestrator and a VMware vSphere server. You can create as many connections as you require to link to multiple servers running VMware vSphere. You can also create multiple connections to the same server to allow for differences in security permissions for different user accounts.
 
@@ -100,5 +95,3 @@ A connection establishes a reusable link between Orchestrator and a VMware vSphe
 11. Add additional connections if applicable.
 
 12. Click **Finish**.
-
-

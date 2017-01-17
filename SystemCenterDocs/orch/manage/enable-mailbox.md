@@ -15,8 +15,7 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-Enable Mailbox
-==============
+# Enable Mailbox
 
 Applies To: System Center 2016 - Orchestrator
 
@@ -26,15 +25,13 @@ For an online cloud-based environment, you can use this activity with the Archiv
 
 The following tables list the required properties, optional properties, and published data for this activity.
 
-Required properties for the Enable Mailbox activity
----------------------------------------------------
+## Required properties for the Enable Mailbox activity
 
 | **Element** | **Description**   | **Valid values** |
 |:---|:---|:---|
 | Identity   | Identifies the Active Directory user. This property can be one of the following value types:<br>ADObjectID <br>GUID <br>Distinguished name (DN)<br>Domain\\SamAccountName<br>User principal name (UPN)<br>LegacyExchangeDN<br>Email Address<br>User alias | String   |
 
-Optional properties for the Enable Mailbox activity
----------------------------------------------------
+## Optional properties for the Enable Mailbox activity
 
 | **Element**   | **Description**   | **Valid values** |
 |:---|:---|:---|
@@ -65,8 +62,7 @@ Optional properties for the Enable Mailbox activity
 | Room   | Specifies that the mailbox in the service is to be created as a room resource mailbox. <br>This property cannot be set to True when the Equipment property is also set to True.<br>Default is True, when selected. <br><br><strong>Note </strong><br> This property is available only in an on-premises environment. <br><br>   | True, False   |
 | Shared   | Specifies the new mailbox as a shared mailbox. A shared mailbox is a mailbox to which multiple users can log on. A shared mailbox is not associated with any of the users that can log on. It is associated with a disabled user account. <br>Default is True, when selected. <br><br><strong>Note </strong><br> This property is available only in an on-premises environment. <br><br>   | True, False   |
 
-Published data for the Enable Mailbox activity
-----------------------------------------------
+## Published data for the Enable Mailbox activity
 
 | Element   | Description   | Valid values |
 |:---|:---|:---|

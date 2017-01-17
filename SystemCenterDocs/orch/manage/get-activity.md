@@ -15,8 +15,7 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-Get Activity
-============
+# Get Activity
 
 Applies To: System Center 2016 - Orchestrator
 
@@ -24,11 +23,9 @@ The Get Activity activity is used to query for activity records for the selected
 
 The following published data elements are specific to Get Activity. Additional published data is generated based on the class that you select when you define the activity. For a list of the data elements published by each class, see [Service Manager Published Data](service-manager-published-data.md).
 
-Get Activity Published Data
----------------------------
+## Get Activity Published Data
 
-|   |   |
-|-------------------|---------------------------------------------------------------------|
 | Element   | Description   |
+|-------------------|---------------------------------------------------------------------|
 | Object GUID   | The unique identifier (GUID) of the single activity to be retrieved |
 | Number of Objects | The number of objects returned by Get Activity   |

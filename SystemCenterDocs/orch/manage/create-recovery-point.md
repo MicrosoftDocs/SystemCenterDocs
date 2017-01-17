@@ -15,8 +15,7 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-Create Recovery Point
-=====================
+# Create Recovery Point
 
 Applies To: System Center 2016 - Orchestrator
 
@@ -26,16 +25,14 @@ The behavior is synchronous - the activity will run for as long it takes for Dat
 
 The activity publishes all of the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
 
-Create Recovery Point Required Properties
------------------------------------------
+## Create Recovery Point Required Properties
 
 |   |   |
 |--------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Element   | Sample Value   |
 | DataSourceID | The unique identifier (GUID) of the data source for the recovery point. This ID can be obtained using the Get Data Source activity prior to this activity in the runbook and subscribing to the DataSourceId property in published data. |
 
-Create Recovery Point Published Data
-------------------------------------
+## Create Recovery Point Published Data
 
 |   |   |
 |-----------------------------------|------------------------------------------------------------------------------------------------|
