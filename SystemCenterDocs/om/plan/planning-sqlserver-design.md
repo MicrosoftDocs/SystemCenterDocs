@@ -5,7 +5,7 @@ description:  This article provides detailed design guidance for SQL Server to s
 author: mgoedtel
 ms.author: magoedte
 manager:  cfreeman
-ms.date: 01/09/2017
+ms.date: 01/17/2017
 ms.custom: na
 ms.prod: system-center-threshold
 ms.technology: operations-manager
@@ -25,7 +25,7 @@ In a lab environment or small-scale deployment of Operations Manager, SQL Server
 
 The following versions of SQL Server are supported for a new or existing installation of Operations Manager.
 
-|Component | SQL Server 2014, SP2 Enterprise/Standard (x64) | SQL Server 2014, SP3 Enterprise/Standard (x64) | SQL Server 2016 Enterprise/Standard (x64) 
+|Component | SQL Server 2012, SP3 Enterprise/Standard (x64) | SQL Server 2014, SP2 Enterprise/Standard (x64) | SQL Server 2016 Enterprise/Standard (x64) 
 |-----------|---------------|---------------|---------------|
 | **Operations Manager** Operational Database | yes | yes | yes | 
 | **Operations Manager** Data Warehouse Database | yes | yes | yes |
