@@ -15,8 +15,7 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-Get Operation Status
-====================
+# Get Operation Status
 
 Applies To: System Center 2016 - Orchestrator
 
@@ -24,20 +23,17 @@ The **Get Operation Status** activity is used to get the status of the specified
 
 The activity publishes all of the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
 
-Get Operation Status Required Properties
-----------------------------------------
+## Get Operation Status Required Properties
 
 | **Element** | **Description**   | **Valid Values** |
 |:---|:---|:---|
 | Request ID  | The request ID of an asynchronous request made using another Windows Azure Integration pack activity. | String   |
 
-Get Operation Status Optional Properties
-----------------------------------------
+## Get Operation Status Optional Properties
 
 There are no optional properties for this activity.
 
-Get Operation Status Published Data
------------------------------------
+## Get Operation Status Published Data
 
 | **Element**   | **Description**   | **Value Type** |
 |:---|:---|:---|
@@ -46,8 +42,8 @@ Get Operation Status Published Data
 | Error Code   | The management service error code returned if the asynchronous request failed.   | String   |
 | Error Message | The management service error message returned if the asynchronous request failed.   | String   |
 
-See Also
---------
+## See Also
+
 
 #### Other Resources
 

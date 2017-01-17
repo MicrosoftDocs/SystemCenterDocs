@@ -15,8 +15,7 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-Get Cloud in System Center 2016
-===============================
+# Get Cloud in System Center 2016
 
 Applies To: System Center 2016 - Orchestrator
 
@@ -24,41 +23,26 @@ The Get Cloud activity is used in a runbook to return all clouds on the VMM mana
 
 The activity publishes all of the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
 
-Get Cloud Required Properties
------------------------------
+## Get Cloud Required Properties
 
 There are no required properties for this activity.
 
-Get Cloud Optional Properties
------------------------------
+## Get Cloud Optional Properties
 
 There are no optional properties for this activity.
 
-Get Cloud Filters
------------------
+## Get Cloud Filters
 
-| **Element**   | **Description** | **Valid Values** |
-|:---|:---|:---|
-| Cloud ID   |   |   |
-| Capability Profiles   |   |   |
-| Cloud Name   |   |   |
-| Logical Networks   |   |   |
-| Memory (MB)   |   |   |
-| Readable Library Paths |   |   |
-| Storage (GB)   |   |   |
-| VM Count   |   |   |
-| Writable Library Paths |   |   |
+**Element**<br>
+Cloud ID<br>Capability Profiles<br>Cloud Name<br>Logical Networks<br>Memory (MB)<br>Readable Library Paths<br>Storage (GB)<br>VM Count<br>Writable Library Paths
 
-Get Cloud Published Data
-------------------------
+## Get Cloud Published Data
 
-| **Element** | **Description** | **Valid Values** |
-|:---|:---|:---|
+There is no published data for this activity.
 
-See Also
---------
+## See Also
+
 
 #### Other Resources
 
 [Using Runbooks in System Center 2016 Orchestrator](https://technet.microsoft.com/en-us/library/hh403791.aspx)
-
