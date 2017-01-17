@@ -15,8 +15,7 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-Invoke REST Service
-===================
+# Invoke REST Service
 
 Applies To: System Center 2016 - Orchestrator
 
@@ -24,8 +23,7 @@ The Invoke REST Service activity is used in a runbook to make requests to RESTfu
 
 The activity publishes all of the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
 
-Invoke REST Service Required Properties
----------------------------------------
+## Invoke REST Service Required Properties
 
 | **Element**   | **Description**   | **Valid Values**   |
 |:---|:---|:---|
@@ -45,13 +43,11 @@ Invoke REST Service Required Properties
 | PFX File Path   | The location of the encrypted client certificate file used for requests to Windows Azure.   | A valid file location. Can be blank.   |
 | PFX File Password   | The password to the encrypted file ini .PFX format.   | String. Can be encrypted. Can be blank.   |
 
-Invoke REST Service Optional Properties
----------------------------------------
+## Invoke REST Service Optional Properties
 
 There are no optional properties for this activity.
 
-Invoke REST Service Published Data
-----------------------------------
+## Invoke REST Service Published Data
 
 | **Element**   | **Description**   | **Value type**   |
 |:---|:---|:---|
@@ -72,8 +68,8 @@ Invoke REST Service Published Data
 | Timeout   | The maximum time to wait for a response.   | Integer   |
 | URL   | The URL to use.   | String   |
 
-See Also
---------
+## See Also
+
 
 #### Other Resources
 

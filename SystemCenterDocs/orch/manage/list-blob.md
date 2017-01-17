@@ -15,8 +15,7 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-List Blob
-=========
+# List Blob
 
 Applies To: System Center 2016 - Orchestrator
 
@@ -24,23 +23,20 @@ The **List Blob** activity returns all user-defined metadata, standard HTTP prop
 
 The activity publishes all of the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
 
-List Blob Required Properties
------------------------------
+## List Blob Required Properties
 
 | **Element**   | **Description**   | **Valid values** |
 |:---|:---|:---|
 | Storage Account Name | The name of the storage account. | String   |
 | Container Name   | The name of the container.   | String   |
 
-List Blob Optional Properties
------------------------------
+## List Blob Optional Properties
 
 | **Element** | **Description**   | **Valid values** |
 |:---|:---|:---|
 | Primary Key | The primary key associated with the storage account. | String   |
 
-List Blob Published Data
-------------------------
+## List Blob Published Data
 
 | **Element**   | **Description**   | **Value type** |
 |:---|:---|:---|
@@ -59,8 +55,8 @@ List Blob Published Data
 | Metadata   | Metadata associated with the blob in the format "Name1:Value1,Name2:Value2" | String   |
 | Storage Account Name   | The name of the storage account.   | String   |
 
-See Also
---------
+## See Also
+
 
 #### Other Resources
 

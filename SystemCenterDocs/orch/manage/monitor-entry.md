@@ -15,8 +15,7 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-Monitor Entry
-=============
+# Monitor Entry
 
 Applies To: System Center 2016 - Orchestrator
 
@@ -24,8 +23,7 @@ The Monitor Entry activity invokes a runbook when new entries are generated and/
 
 The following tables list the required properties and published data for this activity. For more information on configuring activities, see [HP Service Manager Activities](hp-service-manager-activities.md).
 
-Monitor Entry Required Properties
----------------------------------
+## Monitor Entry Required Properties
 
 | Element   | Description   | Valid Values   | Look up |
 |:---|:---|:---|:---|
@@ -34,8 +32,7 @@ Monitor Entry Required Properties
 | New entries   | If selected the runbook will be triggered when new entries are detected.   | True<br>False   | No   |
 | Updated entries | If selected the runbook will be triggered when modified entries are detected. | True<br>False   | No   |
 
-Time Synchronization
---------------------
+## Time Synchronization
 
 Time synchronization between the Runbook Server and the HP Service Manager system is very important to the operation of the Monitor Entry object. For this reason, the Monitor Entry object attempts multiple methods to synchronize the times of the systems. The object will first try to use the Domain time. If the Runbook Server user does not have permission to perform a **NET TIME** command on the HP Service Manager system, then the object will attempt to retrieve the information from the database. If the ODBC driver is not present on the Runbook Server, then the object will default to use the local time of the Runbook Server. If you are experiencing problems with the Monitor Entry object try one of the following:
 
@@ -43,8 +40,7 @@ Time synchronization between the Runbook Server and the HP Service Manager syste
 -   Create an ODBC DSN on the Runbook Server that connects to the HP Service Manager database. Make sure this DSN information is added to the connection information for that HP Service Manager system. For more information about creating connections to HP Service Manager, see [Configuring the HP Service Manager Connections](https://technet.microsoft.com/en-us/library/4b9fedf9-e89a-4298-bf57-79c5d4ccdd6b#ConfiguringConnections).
 -   Make sure that the locale and system times are synchronized between the Runbook Server and the HP Service Manager system.
 
-Other Activities
-----------------
+## Other Activities
 
 The Integration Pack for HP Service Manager contains the following additional activities:
 

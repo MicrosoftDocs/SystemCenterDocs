@@ -15,8 +15,7 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-List Management Certificate
-===========================
+# List Management Certificate
 
 Applies To: System Center 2016 - Orchestrator
 
@@ -24,18 +23,15 @@ The **List Management Certificate** activity is used in a runbook to list basic 
 
 The activity publishes all of the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
 
-List Management Certificate Required Properties
------------------------------------------------
+## List Management Certificate Required Properties
 
 There are no required properties for this runbook activity.
 
-List Management Certificate Optional Properties
------------------------------------------------
+## List Management Certificate Optional Properties
 
 There are no optional properties for this runbook activity.
 
-List Management Certificate Published Data
-------------------------------------------
+## List Management Certificate Published Data
 
 | **Element**   | **Description**   | **Value type** |
 |:---|:---|:---|
@@ -44,8 +40,8 @@ List Management Certificate Published Data
 | Management Certificate Time Created   | The time that the management certificate was created, in UTC.   | Datetime   |
 | Management Certificate Thumbprint   | The X509 certificate thumb print property of the management certificate. This thumb print uniquely identifies the certificate. | String   |
 
-See Also
---------
+## See Also
+
 
 #### Other Resources
 
