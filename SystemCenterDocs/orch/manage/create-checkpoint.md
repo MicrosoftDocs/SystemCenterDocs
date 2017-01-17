@@ -15,8 +15,7 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-Create Checkpoint
-=================
+# Create Checkpoint
 
 Applies To: System Center 2016 - Orchestrator
 
@@ -28,23 +27,20 @@ You can create multiple checkpoints for a single virtual machine. Be aware that 
 
 The activity publishes all of the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
 
-Create Checkpoint Required Properties
--------------------------------------
+## Create Checkpoint Required Properties
 
 | Element | Description   | Valid Values |
 |:---|:---|:---|
 | VM ID   | The unique identifier (GUID) of the virtual machine for which the checkpoint is being created |   |
 
-Create Checkpoint Optional Properties
--------------------------------------
+## Create Checkpoint Optional Properties
 
 | Element   | Description   | Valid Values |
 |:---|:---|:---|
 | Checkpoint Name | The name of the checkpoint   |   |
 | Description   | An alphanumeric description of your choice for the checkpoint |   |
 
-Create Checkpoint Published Data
---------------------------------
+## Create Checkpoint Published Data
 
 | Element   | Description   | Valid Values |
 |:---|:---|:---|

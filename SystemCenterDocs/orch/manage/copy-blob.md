@@ -15,8 +15,7 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-Copy Blob
-=========
+# Copy Blob
 
 Applies To: System Center 2016 - Orchestrator
 
@@ -24,8 +23,7 @@ The **Copy Blob** activity copies a blob to a destination within the storage acc
 
 The activity publishes all of the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
 
-Copy Blob Required Properties
------------------------------
+## Copy Blob Required Properties
 
 | **Element**   | **Description**   | **Valid values** |
 |:---|:---|:---|
@@ -35,15 +33,13 @@ Copy Blob Required Properties
 | Destination Container Name | The name of the destination container. | String   |
 | Destination Blob Name   | The name of the destination blob.   | String   |
 
-Copy Blob Optional Properties
------------------------------
+## Copy Blob Optional Properties
 
 | **Element** | **Description**   | **Valid values** |
 |:---|:---|:---|
 | Primary Key | The primary key associated with the storage account. | String   |
 
-Copy Blob Published Data
-------------------------
+## Copy Blob Published Data
 
 | **Element**   | **Description**   | **Value type** |
 |:---|:---|:---|
@@ -53,8 +49,8 @@ Copy Blob Published Data
 | Destination Container Name | The name of the destination container. | String   |
 | Destination Blob Name   | The name of the destination blob.   | String   |
 
-See Also
---------
+## See Also
+
 
 #### Other Resources
 
