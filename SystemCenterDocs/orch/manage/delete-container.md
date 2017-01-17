@@ -15,8 +15,7 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-Delete Container
-================
+# Delete Container
 
 Applies To: System Center 2016 - Orchestrator
 
@@ -24,31 +23,28 @@ The **Delete Container** activity marks the specified container for deletion. Th
 
 The activity publishes all of the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
 
-Delete Container Required Properties
-------------------------------------
+## Delete Container Required Properties
 
 | **Element**   | **Description**   | **Valid values** |
 |:---|:---|:---|
 | Storage Account Name | The name of the storage account. | String   |
 | Container Name   | A name for the container.   | String   |
 
-Delete Container Optional Properties
-------------------------------------
+## Delete Container Optional Properties
 
 | **Element** | **Description**   | **Valid values** |
 |:---|:---|:---|
 | Primary Key | The primary key associated with the storage account. | String   |
 
-Delete Container Published Data
--------------------------------
+## Delete Container Published Data
 
 | **Element**   | **Description**   | **Value type** |
 |:---|:---|:---|
 | Container Name   | The name of the container.   | String   |
 | Storage Account Name | The name of the storage account. | String   |
 
-See Also
---------
+## See Also
+
 
 #### Other Resources
 

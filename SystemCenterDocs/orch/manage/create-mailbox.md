@@ -15,8 +15,7 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-Create Mailbox
-==============
+# Create Mailbox
 
 Applies To: System Center 2016 - Orchestrator
 
@@ -26,8 +25,7 @@ For the Office 365 online environment, the Create Mailbox activity can create a 
 
 The following tables list the required properties, optional properties, and published data for the Create Mailbox activity.
 
-Required properties for the Create Mailbox activity
----------------------------------------------------
+## Required properties for the Create Mailbox activity
 
 | **Element**   | **Description**   | **Valid values** |
 |:---|:---|:---|
@@ -35,8 +33,7 @@ Required properties for the Create Mailbox activity
 | Name   | The user's name that appears in listings of Active Directory Users and Computers.   | String   |
 | Alias   | The user's email alias that will appear in Active Directory.   | String   |
 
-Optional properties for the Create Mailbox activity
----------------------------------------------------
+## Optional properties for the Create Mailbox activity
 
 | **Element**   | **Description**   | **Valid values**   |
 |:---|:---|:---|
@@ -94,8 +91,7 @@ Optional properties for the Create Mailbox activity
 | Use Existing Live Id (Live@edu only)  | Specifies whether to use the Windows Live ID that already exists in the cloud-based domain. The specified Windows Live ID cannot have a mailbox associated with it. This property applies to cloud-based service. It is not available for on-premises deployments. <br><br><strong>Note </strong><br> This property is available only in the Live@edu environment. <br><br>   | True, False   |
 | Windows Live ID (Live@edu only)   | The Windows Live ID of the new mailbox. <br><br><strong>Note </strong><br> This property is available only in the Live@edu environment. <br><br>   | String   |
 
-Published data for the Create Mailbox activity
-----------------------------------------------
+## Published data for the Create Mailbox activity
 
 | **Element**   | **Description**   | **Value Type** |
 |:---|:---|:---|

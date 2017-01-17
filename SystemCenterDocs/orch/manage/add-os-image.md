@@ -15,8 +15,7 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-Add OS Image
-============
+# Add OS Image
 
 Applies To: System Center 2016 - Orchestrator
 
@@ -24,8 +23,7 @@ The **Add OS Image** activity adds an operating system image that is currently s
 
 The activity publishes all of the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
 
-Add OS Image Required Properties
---------------------------------
+## Add OS Image Required Properties
 
 | **Element**   | **Description**   | **Valid values** |
 |:---|:---|:---|
@@ -35,13 +33,11 @@ Add OS Image Required Properties
 | Media Link   | Specifies the location of the blob in Windows Azure blob store where the media for the image is located.   | String   |
 | Wait for Completion | Whether to wait for this operation to complete in Windows Azure before moving on to the next activity.   | True, False   |
 
-Add OS Image Optional Properties
---------------------------------
+## Add OS Image Optional Properties
 
 There are no optional properties for this runbook activity.
 
-Add OS Image Published Data
----------------------------
+## Add OS Image Published Data
 
 | **Element**   | **Description**   | **Value type** |
 |:---|:---|:---|
@@ -52,8 +48,8 @@ Add OS Image Published Data
 | Wait for Completion | Whether to wait for this operation to complete in Windows Azure before moving on to the next activity.   | Boolean   |
 | Request ID   | The unique identifier of the request to Windows Azure.   | String   |
 
-See Also
---------
+## See Also
+
 
 #### Other Resources
 

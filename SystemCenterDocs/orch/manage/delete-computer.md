@@ -15,8 +15,7 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-Delete Computer
-===============
+# Delete Computer
 
 Applies To: System Center 2016 - Orchestrator
 
@@ -26,15 +25,13 @@ This activity publishes all of the data from the required and optional propertie
 
 The following tables list the required and optional properties and published data for this activity.
 
-Required properties for Delete Computer activity
-------------------------------------------------
+## Required properties for Delete Computer activity
 
 | Element   | Description   | Valid Values |
 |:---|:---|:---|
 | Distinguished Name | Distinguished name of the computer account to delete | String   |
 
-Published data fot Delete Computer activity
--------------------------------------------
+## Published data fot Delete Computer activity
 
 | Name   | Description   | Value Type |
 |:---|:---|:---|

@@ -15,8 +15,7 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-Add User To Group
-=================
+# Add User To Group
 
 Applies To: System Center 2016 - Orchestrator
 
@@ -26,16 +25,14 @@ This activity publishes all of the data from the required and optional propertie
 
 The following tables list the required and optional properties and published data for this activity.
 
-Required properties for Add User To Group activity
---------------------------------------------------
+## Required properties for Add User To Group activity
 
 | Element   | Description   | Valid Values |
 |:---|:---|:---|
 | Group Distinguished Name | Distinguished name of the group   | String   |
 | User Distinguished Name  | Distinguished name of the user account | String   |
 
-Published data for Add User To Group activity
----------------------------------------------
+## Published data for Add User To Group activity
 
 | Name   | Description   | Value Type |
 |:---|:---|:---|

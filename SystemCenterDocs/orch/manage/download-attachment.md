@@ -15,8 +15,7 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-Download Attachment
-===================
+# Download Attachment
 
 Applies To: System Center 2016 - Orchestrator
 
@@ -24,8 +23,7 @@ The **Download Attachment** activity is used in a runbook to download an attachm
 
 The following tables list the required properties and Published Data for this activity.
 
-Download Attachment Required Properties
----------------------------------------
+## Download Attachment Required Properties
 
 | **Element**   | **Description**   | **Valid values**   |
 |:---|:---|:---|
@@ -35,13 +33,11 @@ Download Attachment Required Properties
 | ID   | The ID of the list item that contains the attachment to be downloaded.   | Integer   |
 | List Name   | The name of the SharePoint list that contains the item.   | String   |
 
-Download Attachment Optional Properties
----------------------------------------
+## Download Attachment Optional Properties
 
 There are no optional properties for this runbook activity.
 
-Download Attachment Published Data
-----------------------------------
+## Download Attachment Published Data
 
 | **Element**   | **Description**   | **Value type** |
 |:---|:---|:---|
@@ -53,8 +49,8 @@ Download Attachment Published Data
 | List Name   | The name of the SharePoint list that contains the item.   | String   |
 | SharePoint Site   | The URL of the SharePoint site.   | String   |
 
-See Also
---------
+## See Also
+
 
 #### Other Resources
 
