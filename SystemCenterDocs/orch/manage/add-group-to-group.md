@@ -15,8 +15,7 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-Add Group To Group
-==================
+# Add Group To Group
 
 Applies To: System Center 2016 - Orchestrator
 
@@ -26,16 +25,14 @@ This activity publishes all of the data from the required and optional propertie
 
 The following tables list the required and optional properties and published data for this activity.
 
-Required properties for Add Group To activity
----------------------------------------------
+## Required properties for Add Group To activity
 
 | Element   | Description   | Valid Values |
 |:---|:---|:---|
 | Parent Group Distinguished Name | Distinguished name of the parent group | String   |
 | Group Distinguished Name   | Distinguished name of the group   | String   |
 
-Published data for Add Group To Group activity
-----------------------------------------------
+## Published data for Add Group To Group activity
 
 | Name   | Description   | Value Type |
 |:---|:---|:---|

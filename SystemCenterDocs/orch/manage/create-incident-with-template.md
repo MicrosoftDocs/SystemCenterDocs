@@ -15,14 +15,14 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-Create Incident with Template
-=============================
+# Create Incident with Template
 
 Applies To: System Center 2016 - Orchestrator
 
 The Create Incident with Template activity is used to create a new incident from an existing Incident Template. You have the option to overwrite template values with existing incident values or apply template values.
 
-<br><br><strong>Important </strong><br>Orchestrator does not support mandatory fields in child activities that the Create Incident with Template activity creates. These template activities will fail in Service Manager if there are mandatory fields in any of the child activities it tries to create because there is no way for the user to provide the mandatory properties for the associated activity.<br><br>
+>[!IMPORTANT]
+>Orchestrator does not support mandatory fields in child activities that the Create Incident with Template activity creates. These template activities will fail in Service Manager if there are mandatory fields in any of the child activities it tries to create because there is no way for the user to provide the mandatory properties for the associated activity.
 
 The Create Incident with Template activities create an incident record by presenting the workflow author with a property grid of values associated with the change. This includes mandatory properties that will cause the create operation to be rejected by Service Manager if they are not provided.
 
@@ -30,11 +30,10 @@ The configuration user interface for Create Incident with Template does not prov
 
 The following published data elements are specific to Create Incident with Template activity. Additional published data is generated based on the class that you select when you define the activity. For a list of the data elements published by each class, see [Service Manager Published Data](service-manager-published-data.md).
 
-Create Incident with Template Published Data
---------------------------------------------
+## Create Incident with Template Published Data
 
-|   |   |
-|---------------------------|------------------------------------------------------------------------------|
+
 | Element   | Description   |
+|---------------------------|------------------------------------------------------------------------------|
 | System Center Object GUID | The unique identifier (GUID) of the incident   |
 | Number of Objects   | The number of objects returned by the Create Incident with Template activity |

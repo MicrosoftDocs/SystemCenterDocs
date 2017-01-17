@@ -15,8 +15,7 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-Deploy Service in System Center 2016
-====================================
+# Deploy Service in System Center 2016
 
 Applies To: System Center 2016 - Orchestrator
 
@@ -24,30 +23,21 @@ The Deploy Service activity is used in a runbook to create a service using a spe
 
 The activity publishes all of the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
 
-Deploy Service Required Properties
-----------------------------------
+## Deploy Service Required Properties
 
-| **Element**   | **Description** | **Valid Values** |
-|:---|:---|:---|
-| Service Name   |   |   |
-| Service Template Name |   |   |
+**Element**<br>Service Name<br>Service Template Name
 
-Deploy Service Optional Properties
-----------------------------------
+## Deploy Service Optional Properties
 
-| **Element** | **Description** | **Valid Values** |
-|:---|:---|:---|
+No optional properties are provided for this activity.
 
-Deploy Service Published Data
------------------------------
+## Deploy Service Published Data
 
-| **Element** | **Description** | **Valid Values** |
-|:---|:---|:---|
+No published data is provided for this activity.
 
-See Also
---------
+## See Also
+
 
 #### Other Resources
 
 [Using Runbooks in System Center 2016 - Orchestrator](https://technet.microsoft.com/en-us/library/hh403791.aspx)
-

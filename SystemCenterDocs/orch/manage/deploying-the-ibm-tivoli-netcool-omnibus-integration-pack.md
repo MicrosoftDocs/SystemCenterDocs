@@ -15,15 +15,13 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-Deploying the IBM Tivoli Netcool OMNIbus Integration Pack for System Center 2016 - Orchestrator
-===============================================================================================
+# Deploying the IBM Tivoli Netcool OMNIbus Integration Pack for System Center 2016 - Orchestrator
 
 Applies To: System Center 2016 - Orchestrator
 
 The following sections provide information about deploying the IBM Tivoli Netcool/OMNIbus integration pack for System Center 2016 - Orchestrator.
 
-System Requirements
--------------------
+## System Requirements
 
 The integration pack for IBM Tivoli Netcool/OMNIbus requires the following software to be installed and configured before to implementing the integration.
 
@@ -36,13 +34,11 @@ The integration pack for IBM Tivoli Netcool/OMNIbus requires the following softw
 
 For more information about installing and configuring System Center 2016 - Orchestrator, System Center 2016, IBM Tivoli Netcool/OMNIbus application, Java Standard Edition, and Sybase JConnect 7 drivers, refer to the respective product documentation.
 
-Downloading the Integration Pack
---------------------------------
+## Downloading the Integration Pack
 
-You can download the integration pack for IBM Tivoli Netcool/OMNIbus from the [Microsoft Download Center](http://go.microsoft.com/fwlink/?LinkId=223194) (http://go.microsoft.com/fwlink/?LinkId=223194).
+You can download the integration pack for IBM Tivoli Netcool/OMNIbus from the [Microsoft Download Center](http://go.microsoft.com/fwlink/?LinkId=223194).
 
-Registering and Deploying the Integration Pack
-----------------------------------------------
+## Registering and Deploying the Integration Pack
 
 After you download the integration pack file, you must register it with the Orchestrator management server and then deploy it to a runbook server.
 
@@ -78,8 +74,7 @@ After you download the integration pack file, you must register it with the Orch
 
 6.  Click **Finish**. The **Log Entries** pane displays a confirmation message that the integration pack is successfully deployed.
 
-Configuring the IBM Tivoli Netcool/OMNIbus Connections
-------------------------------------------------------
+## Configuring the IBM Tivoli Netcool/OMNIbus Connections
 
 A connection establishes a reusable link between Orchestrator and an IBM Tivoli Netcool/OMNIbus server. You can create as many connections as you require to link to multiple servers running IBM Tivoli Netcool/OMNIbus. You can also create multiple connections to the same server to allow for differences in security permissions for different user accounts.
 
@@ -95,13 +90,11 @@ A connection establishes a reusable link between Orchestrator and an IBM Tivoli 
 
 5.  In the **Port number** box, enter the port number that you want to use. By default, this is 0. The default port used by IBM Tivoli Netcool/OMNIbus is 4100.
 
-6.  In the **User id** and **Password** boxes, enter the Orchestrator credentials to connect to the IBM Tivoli Netcool/OMNIbus server.
+6.  In the **User id** and **Password** boxes, enter the Orchestrator credentials to connect to the IBM Tivoli Netcool/OMNIbus server.   
+>[!NOTE]
+>The user needs to be assigned to the 'System' group to generate alerts within Netcool.
 
-   | Note   |
-   |----------------------------------------------------------------------------------------|
-   | The user needs to be assigned to the 'System' group to generate alerts within Netcool. |
-
-    <br>Optionally, you can make the connection to the IBM Tivoli Netcool/OMNIbus server using a secure socket connection (SSL). To use a secure socket connection:
+ Optionally, you can make the connection to the IBM Tivoli Netcool/OMNIbus server using a secure socket connection (SSL). To use a secure socket connection:
 
     1.  Select the **Use Secure Socket Layer** checkbox.
     2.  In the **Trust Store** box, enter the location of the trust store where the certificates are located.
@@ -113,5 +106,3 @@ A connection establishes a reusable link between Orchestrator and an IBM Tivoli 
 8.  Add additional connections if applicable.
 
 9.  Click **OK** to close the configuration dialog box, and then click **Finish**.
-
-

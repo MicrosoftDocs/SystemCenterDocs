@@ -15,8 +15,7 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-Active Directory Integration Pack for System Center 2016 - Orchestrator
-=======================================================================
+# Active Directory Integration Pack for System Center 2016 - Orchestrator
 
 Applies To: System Center 2016 - Orchestrator
 
@@ -24,26 +23,22 @@ The Integration Pack for Active Directory is an add-on for System Center 2016 - 
 
 Microsoft is committed to protecting your privacy, while delivering software that brings you the performance, power, and convenience you want. For more Orchestrator-related privacy information, see the [Privacy Statement for System Center 2016 - Orchestrator](https://www.microsoft.com/en-us/privacystatement/EnterpriseDev/default.aspx).
 
-System Requirements
--------------------
+## System Requirements
 
 Before you can install the Integration Pack for Active Directory, you must first install and configure the following listed software. For more information about how to install and configure Orchestrator and Active Directory, refer to the respective product documentation.
 
 -   System Center 2016 integration packs require System Center 2016 - Orchestrator.
 -   Windows Server 2012 Active Directory, Windows Server 2008 R2 Active Directory, Windows Server 2008 Active Directory, Windows Server 2003 R2 Active Directory, or Windows Server 2003 Active Directory.
 
-Downloading the Integration Pack
---------------------------------
+## Downloading the Integration Pack
 
 To download this integration pack, see [Active Directory Integration Pack for System Center 2016 - Orchestrator](https://www.microsoft.com/en-us/download/details.aspx?id=54098).
 
-Registering and Deploying the Integration Pack
-----------------------------------------------
+## Registering and Deploying the Integration Pack
 
 After you download the integration pack file, you must register it with the Orchestrator management server and then deploy it to runbook servers and Runbook Designer. For specific procedures, see [How To Install an Integration Pack](https://technet.microsoft.com/system-center-docs/orch/manage/how-to-add-an-integration-pack).
 
-Configuring the Active Directory Connections
---------------------------------------------
+## Configuring the Active Directory Connections
 
 An Active Directory connection is a reusable link between Orchestrator and an Active Directory domain controller. You can specify as many connections as you require to create links to multiple domain controllers. You can also create multiple connections to the same domain controller to allow for differences in security permissions for different user accounts.
 

@@ -15,8 +15,7 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-Delete Blob
-===========
+# Delete Blob
 
 Applies To: System Center 2016 - Orchestrator
 
@@ -24,8 +23,7 @@ The **Delete Blob** marks the specified blob or snapshot for deletion. It is par
 
 The activity publishes all of the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
 
-Delete Blob Required Properties
--------------------------------
+## Delete Blob Required Properties
 
 | **Element**   | **Description**   | **Valid values** |
 |:---|:---|:---|
@@ -33,15 +31,13 @@ Delete Blob Required Properties
 | Container Name   | The name of the container.   | String   |
 | Blob Name   | The name of the blob.   | String   |
 
-Delete Blob Optional Properties
--------------------------------
+## Delete Blob Optional Properties
 
 | **Element** | **Description**   | **Valid values** |
 |:---|:---|:---|
 | Primary Key | The primary key associated with the storage account. | String   |
 
-Delete Blob Published Data
---------------------------
+## Delete Blob Published Data
 
 | **Element**   | **Description**   | **Value type** |
 |:---|:---|:---|
@@ -49,8 +45,8 @@ Delete Blob Published Data
 | Container Name   | The name of the container.   | String   |
 | Blob Name   | The name of the blob.   | String   |
 
-See Also
---------
+## See Also
+
 
 #### Other Resources
 
