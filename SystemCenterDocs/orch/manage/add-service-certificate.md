@@ -15,8 +15,7 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-Add Service Certificate
-=======================
+# Add Service Certificate
 
 Applies To: System Center 2016 - Orchestrator
 
@@ -24,8 +23,7 @@ The **Add Service Certificate** activity is used in a runbook to add a certifica
 
 The activity publishes all of the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
 
-Add Service Certificate Required Properties
--------------------------------------------
+## Add Service Certificate Required Properties
 
 | **Element**   | **Description**   | **Valid values** |
 |:---|:---|:---|
@@ -33,13 +31,11 @@ Add Service Certificate Required Properties
 | Service Name   | The name of the Windows Azure cloud service. | String   |
 | PFX File Password   | The certificate password.   | String   |
 
-Add Service Certificate Optional Properties
--------------------------------------------
+## Add Service Certificate Optional Properties
 
 There are no optional properties for this runbook activity.
 
-Add Service Certificate Published Data
---------------------------------------
+## Add Service Certificate Published Data
 
 | **Element**   | **Description**   | **Value type** |
 |:---|:---|:---|
@@ -47,8 +43,8 @@ Add Service Certificate Published Data
 | Certificate File Path | The path to the certificate file.   | String   |
 | Service Name   | The name of the Windows Azure cloud service.   | String   |
 
-See Also
---------
+## See Also
+
 
 #### Other Resources
 

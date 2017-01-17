@@ -15,8 +15,7 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-Get Host Properties Activity
-============================
+# Get Host Properties Activity
 
 Applies To: System Center 2016 - Orchestrator
 
@@ -29,20 +28,18 @@ The activity publishes all of the data from the required and optional properties
 ### Get Host Properties Activity Required Properties
 
 | Element | Description   | Valid Values | Look up |
-| Host   | The name of the managed host controlled by the VMware vCenter server | String   | Yes   |
 |:---|:---|:---|:---|
+| Host   | The name of the managed host controlled by the VMware vCenter server | String   | Yes   |
+
 
 ### Get Host Properties Activity Optional Properties
-
-|   |
-|-------------------------------------------------------|
-| No optional properties are provided for this activity |
+No optional properties are provided for this activity. 
 
 ### Get Host Properties Activity Published Data
 
 | Name   | Description   | Value Type   |
-| Connection State   | The connection state of the host.   | Connected<br> Not Responding<br> Disconnected   |
 |:---|:---|:---|
+| Connection State   | The connection state of the host.   | Connected<br> Not Responding<br> Disconnected   |
 | Host   | The identifier of the host.   | String   |
 | In Maintenance Mode | Indicates whether the host is in maintenance mode.   | True@br False   |
 | Name   | The name of the managed host.   | String   |
@@ -53,8 +50,7 @@ The activity publishes all of the data from the required and optional properties
 | Reboot Required   | Indicates whether a reboot is required.   | True@br False   |
 | vMotion Enabled   | Indicates whether vMotion is enabled.   | True@br False   |
 
-Configuring the Get Host Properties Activity
---------------------------------------------
+## Configuring the Get Host Properties Activity
 
 The following procedure describes the steps required to configure a Get Host Properties activity.
 
@@ -71,5 +67,3 @@ The following procedure describes the steps required to configure a Get Host Pro
         You can also use published data to automatically populate the value of the property from the data output by a previous activity in the workflow.
 
 4.  Click **Finish**.
-
-

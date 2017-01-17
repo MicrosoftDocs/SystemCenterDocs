@@ -15,8 +15,7 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-Delete VM Data Disk
-===================
+# Delete VM Data Disk
 
 Applies To: System Center 2016 - Orchestrator
 
@@ -24,8 +23,7 @@ The **Delete VM Data Disk** activity removes the specified data disk from a virt
 
 The activity publishes all of the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
 
-Delete VM Data Disk Required Properties
----------------------------------------
+## Delete VM Data Disk Required Properties
 
 | **Element**   | **Description**   | **Valid values**   |
 |:---|:---|:---|
@@ -35,13 +33,11 @@ Delete VM Data Disk Required Properties
 | Logical Unit Number | The Logical Unit Number (LUN) of the disk.   | 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 |
 | Wait for Completion | Whether to wait for this operation to complete in Windows Azure before moving on to the next activity. | True, False   |
 
-Delete VM Data Disk Optional Properties
----------------------------------------
+## Delete VM Data Disk Optional Properties
 
 There are no optional properties for this runbook activity.
 
-Delete VM Data Disk Published Data
-----------------------------------
+## Delete VM Data Disk Published Data
 
 | **Element**   | **Description**   | **Value type** |
 |:---|:---|:---|
@@ -52,8 +48,8 @@ Delete VM Data Disk Published Data
 | Wait for Completion | Whether to wait for this operation to complete in Windows Azure before moving on to the next activity. | Boolean   |
 | Request ID   | The unique identifier of the request to Windows Azure.   | String   |
 
-See Also
---------
+## See Also
+
 
 #### Other Resources
 

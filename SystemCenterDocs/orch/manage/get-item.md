@@ -15,8 +15,7 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-Get Item
-========
+# Get Item
 
 Applies To: System Center 2016 - Orchestrator
 
@@ -24,16 +23,14 @@ The Get Item activity is used in a runbook to retrieve details of existing appoi
 
 The following tables list the required properties, filters, and published data for use of the Get Item activity. The tables for filters and published data are presented according to item type: appointment, contact group, and task.
 
-Get Item Required Properties
-----------------------------
+## Get Item Required Properties
 
 | **Element**   | **Description**   | **Valid values** |
 |:---|:---|:---|
 | Search Folder   | Folder in which to search for the item   | String   |
 | Search Subfolders | Indicates whether to also search subfolders | True<br>False   |
 
-Get Item Filters (Appointment)
-------------------------------
+## Get Item Filters (Appointment)
 
 | **Element**   | **Description**   | **Filters**   |
 |:---|:---|:---|
@@ -70,8 +67,7 @@ Get Item Filters (Appointment)
 | Subject   | The subject of the appointment   | Equals<br>Does not equal<br>Contains<br>Does not contain<br>Starts with   |
 | Time Zone   | The time zone that is specified for the appointment   | Equals<br>Does not equal<br>Contains<br>Does not contain<br>Starts with   |
 
-Get Item Published Data (Appointment)
--------------------------------------
+## Get Item Published Data (Appointment)
 
 | **Element**   | **Description**   | **Valid values** |
 |:---|:---|:---|
@@ -136,8 +132,7 @@ Get Item Published Data (Appointment)
 | iCal Timestamp   | The iCalendar timestamp   | DateTime   |
 | iCal UID   | The iCalendar UiD   | String   |
 
-Get Item Filters (Contact Group)
---------------------------------
+## Get Item Filters (Contact Group)
 
 | **Element**   | **Description**   | **Filters**   |
 |:---|:---|:---|
@@ -149,8 +144,7 @@ Get Item Filters (Contact Group)
 | Last Modified Name | Name of the user who last modified this contact group   | Equals<br>Does not equal<br>Contains<br>Does not contain<br>Start with   |
 | Members   | List of members associated with the contact group   | Equals<br>Does not equal<br>Contains<br>Does not contain<br>Start with   |
 
-Get Item Published Data (Contact Group)
----------------------------------------
+## Get Item Published Data (Contact Group)
 
 | **Element**   | **Description**   | **Valid values**   |
 |:---|:---|:---|
@@ -176,8 +170,7 @@ Get Item Published Data (Contact Group)
 | Web Client Edit From Query String | Query string to append to the Exchange Web client URL to open the contact group for editing | String   |
 | Web Client Read From Query String | Query string to append to the Exchange Web client URL to open the contact group for reading | String   |
 
-Get Item Filters (E-Mail Message)
----------------------------------
+## Get Item Filters (E-Mail Message)
 
 | **Element**   | **Description**   | **Filters**   |
 |:---|:---|:---|
@@ -206,8 +199,7 @@ Get Item Filters (E-Mail Message)
 | Sensitivity   | The sensitivity of the email   | Equals<br>Does not equal   |
 | Subject   | The subject of the email   | Equals<br>Does not equal<br>Contains<br>Does not contain<br>Starts with   |
 
-Get Item Published Data (E-Mail Message)
-----------------------------------------
+## Get Item Published Data (E-Mail Message)
 
 | **Element**   | **Description**   | **Valid values** |
 |:---|:---|:---|
@@ -260,8 +252,7 @@ Get Item Published Data (E-Mail Message)
 | Web Client Edit Form Query String | Query string to append to the Exchange Web client URL to open the email for editing | String   |
 | Web Client Read Form Query String | Query string to append to the Exchange Web client URL to open the email for reading | String   |
 
-Get Item Filters (Task)
------------------------
+## Get Item Filters (Task)
 
 | **Element**   | **Description**   | **Filters**   |
 |:---|:---|:---|
@@ -295,8 +286,7 @@ Get Item Filters (Task)
 | Task Status   | The status of the task   | Equals<br>Does not equal   |
 | Total Work   | The total amount of work spent on the task   | Equals<br>Does not equal<br>Less than<br>Less than or equal to<br>Greater than<br>Greater than or equal to |
 
-Get Item Published Data (Task)
-------------------------------
+## Get Item Published Data (Task)
 
 | **Element**   | **Description**   | **Valid values** |
 |:---|:---|:---|

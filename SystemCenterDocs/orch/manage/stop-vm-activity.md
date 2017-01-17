@@ -15,8 +15,7 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-Stop VM Activity
-================
+# Stop VM Activity
 
 Applies To: System Center 2016 - Orchestrator
 
@@ -29,25 +28,22 @@ The activity publishes all of the data from the required and optional properties
 ### Stop VM Activity Required Properties
 
 | Element   | Description   | Valid Values | Look up |
-| Gracefully shutdown | Indicates whether the guest operating system is shut down instead of powered off. | Boolean   | Yes   |
 |:---|:---|:---|:---|
+| Gracefully shutdown | Indicates whether the guest operating system is shut down instead of powered off. | Boolean   | Yes   |
 | VM Path   | The path to the virtual machine.   | String   | Yes   |
 
 ### Stop VM Activity Optional Properties
 
-|   |
-|--------------------------------------------------------|
-| No optional properties are provided for this activity. |
+No optional properties are provided for this activity.
 
 ### Stop VM Activity Published Data
 
 | Name   | Description   | Value Type |
-| Gracefully shut down | Indicates whether the guest operating system is shut down instead of powered off. | Boolean   |
 |:---|:---|:---|
+| Gracefully shut down | Indicates whether the guest operating system is shut down instead of powered off. | Boolean   |
 | VM Path   | The path to the virtual machine.   | String   |
 
-Configuring the Stop VM Activity
---------------------------------
+## Configuring the Stop VM Activity
 
 The following procedure describes the steps required to configure a Stop VM activity.
 
@@ -64,5 +60,3 @@ The following procedure describes the steps required to configure a Stop VM acti
         You can also use published data to automatically populate the value of the property from the data output by a previous activity in the workflow.
 
 4.  Click **Finish**.
-
-

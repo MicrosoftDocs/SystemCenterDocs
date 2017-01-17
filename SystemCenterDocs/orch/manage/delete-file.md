@@ -15,8 +15,7 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-Delete File
-===========
+# Delete File
 
 Applies To: System Center 2016 - Orchestrator
 
@@ -26,15 +25,13 @@ This activity publishes all of the data from the required properties into publis
 
 The following tables list the required properties and published data for this activity.
 
-Delete File Required Properties
--------------------------------
+## Delete File Required Properties
 
 | **Element** | **Description**   | **Valid Values** |
 |:---|:---|:---|
 | File Path   | The path of the file to delete. The asterisk (\*) will match any number of characters. The question mark (?) will match any one character. | String   |
 
-Delete File Published Data
---------------------------
+## Delete File Published Data
 
 | **Element**   | **Description**   | **Valid Values**   |
 |:---|:---|:---|

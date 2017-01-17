@@ -15,8 +15,7 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-Delete Custom Attribute
-=======================
+# Delete Custom Attribute
 
 Applies To: System Center 2016 - Orchestrator
 
@@ -24,16 +23,14 @@ The Delete Custom Attribute activity is used in a runbook to delete a custom att
 
 The following tables list the required properties and published data for this activity. For more information on configuring activities, see [HP Operations Manager Activities](hp-operations-manager-activities.md).
 
-Delete Custom Attribute Required Properties
--------------------------------------------
+## Delete Custom Attribute Required Properties
 
 | Element   | Description   | Valid Values | Look up |
 |:---|:---|:---|:---|
 | Message ID   | The ID of the message that contains the custom attribute. | String   | No   |
 | Attribute Name | The name of the custom attribute to be deleted   | String   | No   |
 
-Delete Custom Attribute Published Data
---------------------------------------
+## Delete Custom Attribute Published Data
 
 | Element   | Description   | Value Type |
 |:---|:---|:---|
@@ -43,8 +40,7 @@ Delete Custom Attribute Published Data
 | HPOM Port   | The port used to connect to the HPOM management server.   | Integer   |
 | HPOM Username  | The name of the HPOM used to connect to the HPOM management server. | String   |
 
-Other Activities
-----------------
+## Other Activities
 
 The Integration Pack for HP Operations Manager integration contains the following additional activities:
 

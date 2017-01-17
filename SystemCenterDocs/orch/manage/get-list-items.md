@@ -15,8 +15,7 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-Get List Items
-==============
+# Get List Items
 
 Applies To: System Center 2016 - Orchestrator
 
@@ -24,15 +23,13 @@ The **Get List Items** activity is used in a runbook to retrieve data about the 
 
 The following tables list the filters, required and optional properties, and Published Data for this activity. Additional filters and Published Data are generated, which are based on the SharePoint list that is retrieved when you define the activity.
 
-Get List Items Required Properties
-----------------------------------
+## Get List Items Required Properties
 
 | **Element** | **Description**   | **Valid values** |
 |:---|:---|:---|
 | List Name   | The name of the SharePoint list to be searched. | String   |
 
-Get List Items Optional Properties
-----------------------------------
+## Get List Items Optional Properties
 
 | **Element**   | **Description**   | **Valid values** |
 |:---|:---|:---|
@@ -40,8 +37,7 @@ Get List Items Optional Properties
 | Maximum Items | The maximum number of items to select. Used in conjunction with the optional properties Ascending and Order By.   | Integer   |
 | Order By   | The order of the retrieved items. Used in conjunction with the optional properties Ascending and Maximum Items.   | String   |
 
-Get List Items Filters
-----------------------
+## Get List Items Filters
 
 | **Element** | **Description**   | **Valid values**   |
 |:---|:---|:---|
@@ -51,8 +47,7 @@ Get List Items Filters
 | Modified   | The date and time when the item was last modified. | Equals<br>Does not equal<br>Is less than or equal to<br>Is greater than or equal to<br>Is less than<br>Is greater than |
 | Modified By | The name of the user who last modified the item.   | Equals<br>Does not equal   |
 
-Get List Items Published Data
------------------------------
+## Get List Items Published Data
 
 | **Element**   | **Description**   | **Value type** |
 |:---|:---|:---|
@@ -65,8 +60,8 @@ Get List Items Published Data
 | Modified By   | The name of the user who last modified the item.   | String   |
 | SharePoint Site | The URL of the SharePoint site.   | String   |
 
-See Also
---------
+## See Also
+
 
 #### Other Resources
 

@@ -15,8 +15,7 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-Add VM Disk Activity
-====================
+# Add VM Disk Activity
 
 Applies To: System Center 2016 - Orchestrator
 
@@ -31,15 +30,15 @@ The activity publishes all of the data from the required and optional properties
 ### Add VM Disk Activity Required Properties
 
 | Element   | Description   | Valid Values | Look up |
-| Disk size (GB) | The disk size in gigabytes to allocate to the virtual machine disk. | Integer   | No   |
 |:---|:---|:---|:---|
+| Disk size (GB) | The disk size in gigabytes to allocate to the virtual machine disk. | Integer   | No   |
 | VM Path   | The path of the source virtual machine.   | String   | Yes   |
 
 ### Add VM Disk Activity Optional Properties
 
 | Element   | Description   | Valid Values | Look up |
-| Datastore   | The path of the data store that will hold the new disk.   | String   | No   |
 |:---|:---|:---|:---|
+| Datastore   | The path of the data store that will hold the new disk.   | String   | No   |
 | SCSI Bus Number   | The SCSI bus number of the SCSI controller   | Integer   | No   |
 | SCSI Unit Key   | The SCSI unit key of the SCSI controller   | Integer   | No   |
 | SCSI Controller Type (available only in System Center 2016) | The type of SCSI controller to add if one does not exist on the chosen SCSI bus. | String   | Yes   |
@@ -47,16 +46,15 @@ The activity publishes all of the data from the required and optional properties
 ### Add VM Disk Activity Published Data
 
 | Name   | Description   | Value Type |
-| Datastore   | The datastore that holds the disk that was added.   | String   |
 |:---|:---|:---|
+| Datastore   | The datastore that holds the disk that was added.   | String   |
 | Disk size (GB)   | The amount of disk size in gigabytes allocated to the virtual machine.   | Integer   |
 | SCSI Bus Number   | The SCSI bus number setting specified   | Integer   |
 | SCSI Unit Key   | The SCSI unit key setting specified   | Integer   |
 | VM Path   | The path of the virtual machine that this disk belongs to.   | String   |
 | SCSI Controller Type(available only in System Center 2016) | The type of SCSI controller to add if one does not exist on the chosen SCSI bus. | String   |
 
-Configuring the Add VM Disk Activity
-------------------------------------
+## Configuring the Add VM Disk Activity
 
 The following procedure describes the steps required to configure an Add VM Disk activity.
 
@@ -73,5 +71,3 @@ The following procedure describes the steps required to configure an Add VM Disk
         You can also use published data to automatically populate the value of the property from the data output by a previous activity in the workflow.
 
 4.  Click **Finish**.
-
-

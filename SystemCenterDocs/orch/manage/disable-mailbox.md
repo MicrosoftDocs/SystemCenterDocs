@@ -15,8 +15,7 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-Disable Mailbox
-===============
+# Disable Mailbox
 
 Applies To: System Center 2016 - Orchestrator
 
@@ -26,15 +25,13 @@ For an online cloud-based environment, the Disable Mailbox activity can be used 
 
 The following tables list the required properties, optional properties, and published data for this activity.
 
-Required properties for the Disable Mailbox activity
-----------------------------------------------------
+## Required properties for the Disable Mailbox activity
 
 | **Element** | **Description**   | **Valid values** |
 |:---|:---|:---|
 | Identity   | The identity of the mailbox to be disabled. This can be of the following value types:<br>GUID <br>Distinguished name (DN)<br>Display name<br>Domain\\Account <br>User principal name (UPN)<br>LegacyExchangeDN<br>SmtpAddress<br>Alias | String   |
 
-Optional properties for the Disable Mailbox activity
-----------------------------------------------------
+## Optional properties for the Disable Mailbox activity
 
 | **Element**   | **Description**   | **Valid values** |
 |:---|:---|:---|
@@ -46,8 +43,7 @@ Optional properties for the Disable Mailbox activity
 | Ignore Legal Hold   | When set to True, this property instructs the command to ignore the legal hold status of the mail user and allows it to remove the mailbox that has been on legal hold. After the mailbox is removed, it cannot be included in a discovery search. Depending on the configured properties, removed mailboxes are purged either immediately or when the deleted mailbox retention period expires. Check with your organization's legal or Human Resources department before disabling a mailbox that is on legal hold.<br>Default is True, when selected. <br><br><strong>Note </strong><br> This property is not available in the Office 365 environment. <br><br>   | True, False   |
 | Remote Archive   | Specifies whether to disconnect the remote archive for this mailbox. When you enable this property, the RemoteRecipientType property for the mailbox is reset to indicate that this mailbox does not have a remote archive. A remote archive exists in a cloud-based service. This property cannot be used with the Archive property. <br>Default is True, when selected. <br><br><strong>Note </strong><br> This property is available only in an on-premises environment. <br><br>   | True, False   |
 
-Published data for the Disable Mailbox activity
------------------------------------------------
+## Published data for the Disable Mailbox activity
 
 | **Element**   | **Description**   | **Valid values** |
 |:---|:---|:---|

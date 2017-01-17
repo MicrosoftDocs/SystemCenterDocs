@@ -15,8 +15,7 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-Get Computer
-============
+# Get Computer
 
 Applies To: System Center 2016 - Orchestrator
 
@@ -26,8 +25,7 @@ This activity publishes all of the data from the required and optional propertie
 
 The following tables list the required and optional properties and published data for this activity.
 
-Get Computer optional properties
---------------------------------
+## Get Computer optional properties
 
 | Element   | Description   | Valid Values |
 |:---|:---|:---|
@@ -35,8 +33,7 @@ Get Computer optional properties
 | Search Root  | The distinguished name of the node in the Active Directory Domain Services hierarchy where the search starts. | String   |
 | Search Scope | The scope of the search that is observed by the server. The options are Base, OneLevel or SubTree.   | String   |
 
-Get Computer filter properties
-------------------------------
+## Get Computer filter properties
 
 | Element   | Description   | Filters   | Value Type |
 |:---|:---|:---|:---|
@@ -57,8 +54,7 @@ Get Computer filter properties
 | Modification Date   | Date the computer account was last changed   | EqualTo, NotEqualTo, GreaterThan, GreaterThanOrEqualTo, LessThan, LessThanOrEqualTo | DateTime   |
 | Creation Date   | Date and time that the account was created   | EqualTo, NotEqualTo, GreaterThan, GreaterThanOrEqualTo, LessThan, LessThanOrEqualTo | DateTime   |
 
-Get Computer published data
----------------------------
+## Get Computer published data
 
 | Element   | Description   | Valid Values |
 |:---|:---|:---|

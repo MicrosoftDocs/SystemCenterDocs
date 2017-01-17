@@ -15,8 +15,7 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-Delete Document
-===============
+# Delete Document
 
 Applies To: System Center 2016 - Orchestrator
 
@@ -24,21 +23,18 @@ The **Delete Document** activity is used in a runbook to delete a document from 
 
 The following tables list the required properties and Published Data for this activity.
 
-Delete Document Required Properties
------------------------------------
+## Delete Document Required Properties
 
 | **Element**   | **Description**   | **Valid values** |
 |:---|:---|:---|
 | Document Library | The name of the document library that contains the document to be deleted. | String   |
 | Document ID   | The ID of the document to be deleted.   | Integer   |
 
-Delete Document Optional Properties
------------------------------------
+## Delete Document Optional Properties
 
 There are no optional properties for this runbook activity.
 
-Delete Document Published Data
-------------------------------
+## Delete Document Published Data
 
 | **Element**   | **Description**   | **Value type** |
 |:---|:---|:---|
@@ -46,8 +42,8 @@ Delete Document Published Data
 | Document ID   | The ID of the document that was deleted.   | Integer   |
 | SharePoint Site  | The URL of the SharePoint site.   | String   |
 
-See Also
---------
+## See Also
+
 
 #### Other Resources
 

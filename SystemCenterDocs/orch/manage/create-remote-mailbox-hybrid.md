@@ -15,8 +15,7 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-Create Remote Mailbox (Hybrid)
-==============================
+# Create Remote Mailbox (Hybrid)
 
 Applies To: System Center 2016 - Orchestrator
 
@@ -24,8 +23,7 @@ You can use the Create Remote Mailbox (Hybrid) activity to create a mail-enabled
 
 The following tables list the required properties, optional properties, and published data for this activity.
 
-Required properties for Create Remote Mailbox (Hybrid)
-------------------------------------------------------
+## Required properties for Create Remote Mailbox (Hybrid)
 
 | **Element**   | **Description**   | **Valid Values** |
 |:---|:---|:---|
@@ -33,8 +31,7 @@ Required properties for Create Remote Mailbox (Hybrid)
 | Name   | Specifies the common name (CN) of the on-premises mail-enabled user and its associated mailbox in the service.   | String   |
 | User Principal Name | Specifies a system user name in an email address format (for example, ed@contoso.com).   | String   |
 
-Optional properties for Create Remote Mailbox (Hybrid)
-------------------------------------------------------
+## Optional properties for Create Remote Mailbox (Hybrid)
 
 | **Element**   | **Description**   | **Valid Values**   |
 |:---|:---|:---|
@@ -60,8 +57,7 @@ Optional properties for Create Remote Mailbox (Hybrid)
 | SAM Account Name   | This is the logon name for clients and servers running older versions of the operating system. This attribute must contain fewer than 20 characters. An account name can contain letters, numbers, and the following punctuation marks and symbols: <br>! \# $ % ^ & - . \_ { } | ~   | String   |
 | Send Moderation Notifications   | Specifies how status notifications are sent to users when someone sends a message to the moderated distribution group. <br>Set this property to Always if you want notifications to be sent to all senders.<br>Set this property to Internal if you want notifications to be sent only to the senders who are internal to your organization.<br>Set this property to Never to disable all status notifications.<br>The default value is blank.<br>The sender is always notified if the message is rejected by the moderators, regardless of the value of this property.   | Always <br>Internal <br>Never |
 
-Published data for Create Remote Mailbox (Hybrid)
--------------------------------------------------
+## Published data for Create Remote Mailbox (Hybrid)
 
 | **Element**   | **Description**   | **Valid Values** |
 |:---|:---|:---|
