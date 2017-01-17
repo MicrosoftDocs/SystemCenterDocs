@@ -15,8 +15,7 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-Swap Deployment
-===============
+# Swap Deployment
 
 Applies To: System Center 2016 - Orchestrator
 
@@ -24,21 +23,18 @@ The **Swap Deployment** activity initiates a virtual IP swap between the staging
 
 The activity publishes all of the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
 
-Swap Deployment Required Properties
------------------------------------
+## Swap Deployment Required Properties
 
 | **Element**   | **Description**   | **Valid values** |
 |:---|:---|:---|
 | Service DNS Prefix  | The DNS prefix name of the Windows Azure cloud service.   | String   |
 | Wait for Completion | Whether to wait for this operation to complete in Windows Azure before moving on to the next activity. | True, False   |
 
-Swap Deployment Optional Properties
------------------------------------
+## Swap Deployment Optional Properties
 
 There are no optional properties for this runbook activity.
 
-Swap Deployment Published Data
-------------------------------
+## Swap Deployment Published Data
 
 | **Element**   | **Description**   | **Value type** |
 |:---|:---|:---|
@@ -46,8 +42,8 @@ Swap Deployment Published Data
 | Service DNS Prefix  | The DNS prefix name of the Windows Azure cloud service.   | String   |
 | Wait for Completion | Whether to wait for this operation to complete in Windows Azure before moving on to the next activity. | Boolean   |
 
-See Also
---------
+## See Also
+
 
 #### Other Resources
 

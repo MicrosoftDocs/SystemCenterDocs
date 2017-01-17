@@ -15,8 +15,7 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-Set Custom Attribute
-====================
+# Set Custom Attribute
 
 Applies To: System Center 2016 - Orchestrator
 
@@ -24,8 +23,7 @@ The Set Custom Attribute activity is used in a runbook to create or update a cus
 
 The following tables list the required properties and published data for this activity. For more information on configuring activities, see [HP Operations Manager Activities](hp-operations-manager-activities.md).
 
-Set Custom Attribute Required Properties
-----------------------------------------
+## Set Custom Attribute Required Properties
 
 | Element   | Description   | Valid Values | Look up |
 |:---|:---|:---|:---|
@@ -33,8 +31,7 @@ Set Custom Attribute Required Properties
 | Attribute Name  | The name of the custom attribute to be created or updated. | String   | No   |
 | Attribute Value | The value to assign to the custom attribute.   | String   | No   |
 
-Set Custom Attribute Published Data
------------------------------------
+## Set Custom Attribute Published Data
 
 | Element   | Description   | Value Type |
 |:---|:---|:---|
@@ -45,8 +42,7 @@ Set Custom Attribute Published Data
 | HPOM Port   | The port used to connect to the HPOM management server.   | Integer   |
 | HPOM Username   | The name of the HPOM used to connect to the HPOM management server. | String   |
 
-Other Activities
-----------------
+## Other Activities
 
 The Integration Pack for HP Operations Manager integration contains the following additional activities:
 

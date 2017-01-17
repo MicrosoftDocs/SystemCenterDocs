@@ -15,8 +15,7 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-SharePoint Activities
-=====================
+# SharePoint Activities
 
 Applies To: System Center 2016 - Orchestrator
 
@@ -24,8 +23,7 @@ The following configuration instructions apply to all activities in this integra
 
 The procedures in this topic are performed on an activity that has been placed in the Runbook Designer workspace.
 
-Activity Properties
--------------------
+## Activity Properties
 
 Each activity has a set of required or optional properties that define the configuration of that activity. The configuration includes how the activity connects to other activities or how the activity performs its actions. You can view or modify activity properties when the activity is placed in the Runbook Designer workspace.
 
@@ -82,8 +80,7 @@ By default, the data from the Get activity is passed on as multiple individual o
 
 The activity produces a new set of data every time it runs. The **Flatten** feature does not flatten data across multiple instances of the same activity.
 
-Time-out and failure event notifications
-----------------------------------------
+## Time-out and failure event notifications
 
 Some activities are expected to finish in a limited amount of time. If they do not finish within that time, they might be stalled, or another issue might prevent them from finishing. You can define the number of seconds to wait to complete the action. After this period, a platform event is sent, and the issue is reported. You can also choose whether to generate a platform event if the activity returns a failure.
 
@@ -93,8 +90,7 @@ Some activities are expected to finish in a limited amount of time. If they do n
 
 2.  Select **Report if activity fails to run** to generate run failure notifications.
 
-Published Data
---------------
+## Published Data
 
 Published Data is the data that is produced as a result of the actions of an activity. This data is published to an internal data bus that is unique for each runbook. Published Data is the foundation of a working runbook. Subsequent activities in the runbook can subscribe to this data and use it in their configuration. Link conditions also use this information to add decision-making capabilities to runbooks.
 
@@ -110,8 +106,7 @@ An activity can subscribe only to data from the activities that are linked befor
 
 For a list of the data elements that are published by each activity, see the **Published Data** table in the topic that describes that activity. For information about the common Published Data items, see [Common Published Data](https://technet.microsoft.com/en-us/library/e339c027-4c69-43e5-a59b-ac7ea0a676c8).
 
-Activities
-----------
+## Activities
 
 This integration pack adds the **Microsoft SharePoint** category to the **Activities** pane in the Runbook Designer. This category contains the following activities:
 
