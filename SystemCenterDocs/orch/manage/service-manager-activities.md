@@ -15,15 +15,13 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-System Center Service Manager Activities
-========================================
+# System Center Service Manager Activities
 
 Applies To: System Center 2016 - Orchestrator
 
 The following configuration instructions apply to all activities in the System Center Integration Pack for System Center 2016 Service Manager. Links to this section are included in the configuration instructions for each activity.
 
-Activity Properties
--------------------
+## Activity Properties
 
 Each activity has a set of required or optional properties that define the configuration of that activity. This includes how it connects to other activities or how the activity performs its actions. You can view or modify activity properties when the activity is placed in the runbook window.
 
@@ -35,13 +33,11 @@ Each activity has a set of required or optional properties that define the confi
 
 In the activity properties dialog box, several tabs along the left side provide access to general and specific settings for the activity. The number of available tabs for object properties differs between different activities.
 
-General Tab
------------
+## General Tab
 
 This tab contains the **Name** and **Description** properties for the activity. By default, the **Name** of the activity is the same as its activity type, and the **Description** is blank. You can modify these properties to create more descriptive names or provide detailed descriptions of the actions of the activity.
 
-Details Tab
------------
+## Details Tab
 
 This tab contains properties that are specific to the activity. All activities in this integration pack have the Connection property at the top of the **Properties** or **Filters** tab. This property is used to specify the connection to the Service Manager management server.
 
@@ -86,8 +82,7 @@ The Monitor and Get activities use filters to determine the values that will inv
 -   **After**: the property of the message is after the date/time specified in the filter.
 -   **Before**: the property of the message is before the date/time specified in the filter.
 
-Run Behavior Tab
-----------------
+## Run Behavior Tab
 
 This tab contains the properties that determine how the activity handles multi-value published data and what notifications will be sent if the activity fails or runs for an excessive period of time.
 
@@ -103,8 +98,7 @@ By default, the data from the Get activity will be passed on as multiple individ
 
 The activity will produce a new set of data every time it runs. The **Flatten** feature does not flatten data across multiple instances of the same activity.
 
-Event Notifications
--------------------
+## Event Notifications
 
 Some activities are expected to take a limited amount of time to complete. If they do not complete within that time they may be stalled or there may be another issue preventing them from completing. You can define the number of seconds to wait for completion of the action. After this period a platform event will be sent and the issue will be reported. You can also choose whether to generate a platform event if the activity returns a failure.
 
@@ -114,8 +108,8 @@ Some activities are expected to take a limited amount of time to complete. If th
 
 2.  Select **Report if activity fails to run** to generate run failure notifications.
 
-Published Data
---------------
+## Published Data
+
 
 Published data is the foundation of a working runbook. It is the data produced as a result of the actions of an activity. This data is published to an internal data bus that is unique for each runbook. Subsequent activities in the runbook can subscribe to this data and use it in their configuration. Link conditions also use this information to add decision-making capabilities to runbooks.
 
@@ -131,8 +125,7 @@ An activity can only subscribe to data from the activities that are linked befor
 
 For a list of the data elements published by each activity, see the **Published Data** tables in the activity topic. For information about the common published data items, see [Common Published Data](https://technet.microsoft.com/en-us/library/e339c027-4c69-43e5-a59b-ac7ea0a676c8#CommonPublishedData).
 
-Activities
-----------
+## Activities
 
 The Service Manager Integration Pack adds the **SC 2016 Service Manager** category to the **Activities** pane in the Runbook Designer. This category contains the following activities:
 

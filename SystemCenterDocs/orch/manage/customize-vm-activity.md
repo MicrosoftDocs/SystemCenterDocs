@@ -15,8 +15,7 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-Customize VM Activity
-=====================
+# Customize VM Activity
 
 Applies To: System Center 2016 - Orchestrator
 
@@ -29,25 +28,22 @@ The activity publishes all of the data from the required and optional properties
 ### Customize VM Activity Required Properties
 
 | Element   | Description   | Valid Values | Look up |
-| Customization Spec | The customization spec that will be used to customize the virtual machine. | String   | No   |
 |:---|:---|:---|:---|
+| Customization Spec | The customization spec that will be used to customize the virtual machine. | String   | No   |
 | VM Path   | The path to the virtual machine being customized.   | String   | Yes   |
 
 ### Customize VM Activity Optional Properties
 
-|   |
-|--------------------------------------------------------|
-| No optional properties are provided for this activity. |
+No optional properties are provided for this activity.
 
 ### Customize VM Activity Published Data
 
 | Name   | Description   | Value Type |
-| Customization Spec | The customization specification used to customize the virtual machine. | String   |
 |:---|:---|:---|
+| Customization Spec | The customization specification used to customize the virtual machine. | String   |
 | VM Path   | The path to the virtual machine that was customized.   | String   |
 
-Configuring the Customize VM Activity
--------------------------------------
+## Configuring the Customize VM Activity
 
 The following procedure describes the steps required to configure a Customize VM activity.
 
@@ -64,5 +60,3 @@ The following procedure describes the steps required to configure a Customize VM
         You can also use published data to automatically populate the value of the property from the data output by a previous activity in the workflow.
 
 4.  Click **Finish**.
-
-

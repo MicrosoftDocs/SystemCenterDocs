@@ -15,8 +15,7 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-List Folders or Files
-=====================
+# List Folders or Files
 
 Applies To: System Center 2016 - Orchestrator
 
@@ -26,8 +25,7 @@ This activity publishes all of the data from the required and optional propertie
 
 The following tables list the required and optional properties and published data for this activity.
 
-List Folders/Files Required Properties
---------------------------------------
+## List Folders/Files Required Properties
 
 | **Element**  | **Description**   | **Valid Values**   |
 |:---|:---|:---|
@@ -35,8 +33,7 @@ List Folders/Files Required Properties
 | Recursive   | Determines if all contents of all nested children are returned. | True<br>False   |
 | Filter Scope | Determines what items the list activity will return.   | All<br>File<br>Folder |
 
-List Folders/Files Optional Properties
---------------------------------------
+## List Folders/Files Optional Properties
 
 | **Element**   | **Description**   | **Valid Values** |
 |:---|:---|:---|
@@ -45,8 +42,7 @@ List Folders/Files Optional Properties
 | File Size (Max) | File size maximum filter. Must be used with File Size (Min).   | Integer   |
 | File Size (Min) | File size minimum filter. Must be used with File Size (Max).   | Integer   |
 
-List Folders/Files Filters
---------------------------
+## List Folders/Files Filters
 
 | **Element**   | **Description**   | **Filters**   |
 |:---|:---|:---|
@@ -65,8 +61,7 @@ List Folders/Files Filters
 | System Attribute   | The system attribute of the folder or file.   | Equals   |
 | Temporary Attribute   | The temporary attribute of the folder or file.   | Equals   |
 
-List Folders/Files Published Data
----------------------------------
+## List Folders/Files Published Data
 
 | **Element**   | **Description**   | **Valid Values**   |
 |:---|:---|:---|

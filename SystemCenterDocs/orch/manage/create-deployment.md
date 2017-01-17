@@ -15,8 +15,7 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-Create Deployment
-=================
+# Create Deployment
 
 Applies To: System Center 2016 - Orchestrator
 
@@ -24,8 +23,7 @@ The **Create Deployment** activity uploads a new service package and creates a n
 
 The activity publishes all of the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
 
-Create Deployment Required Properties
--------------------------------------
+## Create Deployment Required Properties
 
 | **Element**   | **Description**   | **Valid values**   |
 |:---|:---|:---|
@@ -39,13 +37,11 @@ Create Deployment Required Properties
 | Treat Warnings as Errors   | Indicates whether to treat package validation warnings as errors. If set to true, the Create Deployment activity fails if there are validation warnings on the service package.   | True, False   |
 | Wait for Completion   | Whether to wait for this operation to complete in Windows Azure before moving on to the next activity.   | True, False   |
 
-Create Deployment Optional Properties
--------------------------------------
+## Create Deployment Optional Properties
 
 There are no optional properties for this runbook activity.
 
-Create Deployment Published Data
---------------------------------
+## Create Deployment Published Data
 
 | **Element**   | **Description**   | **Value type** |
 |:---|:---|:---|
@@ -74,8 +70,8 @@ Create Deployment Published Data
 | Treat Warnings as Errors   | Indicates whether to treat package validation warnings as errors. If set to true, the Create Deployment activity fails if there are validation warnings on the service package.   | Boolean   |
 | Wait for Completion   | Whether to wait for this operation to complete in Windows Azure before moving on to the next activity.   | Boolean   |
 
-See Also
---------
+## See Also
+
 
 #### Other Resources
 

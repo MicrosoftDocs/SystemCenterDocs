@@ -15,8 +15,7 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-Create Move Request
-===================
+# Create Move Request
 
 Applies To: System Center 2016 - Orchestrator
 
@@ -24,15 +23,13 @@ You can use the Create Move Request activity to create a new mailbox move reques
 
 The following tables list the required properties, optional properties, and published data for this activity.
 
-Required properties for the Create Move Request activity
---------------------------------------------------------
+## Required properties for the Create Move Request activity
 
 | **Element** | **Description**   | **Valid values** |
 |:---|:---|:---|
 | Identity   | Specifies the identity of the mailbox or mail user. This can be one of the following value types:<br>Globally unique identifier (GUID)<br>Distinguished name (DN)<br>Domain\\Account <br>User principal name (UPN)<br>LegacyExchangeDN<br>SMTP address<br>Alias | String   |
 
-Optional properties for the Create Move Request activity
---------------------------------------------------------
+## Optional properties for the Create Move Request activity
 
 | **Element**   | **Description**   | **Valid values** |
 |:---|:---|:---|
@@ -62,8 +59,7 @@ Optional properties for the Create Move Request activity
 | Target Database   | Specifies the identity of the database to which the mailbox is being moved. If the target database is not specified, the command uses the automatic mailbox distribution logic to determine the target database. This can be one of the following value types:<br>GUID of the database<br>Database name   | String   |
 | Target Delivery Domain   | Specifies the FQDN of the external email address that this move request creates in the source forest for the mail-enabled user. This property is allowed only to perform remote moves with the Remote or RemoteLegacy property.   | String   |
 
-Published data for the Create Move Request activity
----------------------------------------------------
+## Published data for the Create Move Request activity
 
 | **Element**   | **Description**   | **Value type** |
 |:---|:---|:---|

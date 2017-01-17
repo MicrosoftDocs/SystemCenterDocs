@@ -15,15 +15,13 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-HP Service Manager Activities
-=============================
+# HP Service Manager Activities
 
 Applies To: System Center 2016 - Orchestrator
 
 The following configuration instructions apply to all activities in this integration pack.
 
-Activity Properties
--------------------
+## Activity Properties
 
 Each activity has a set of required or optional properties that define the configuration of that activity. This includes how it connects to other activities or how the activity performs its actions. You can view or modify activity properties in the Runbook Designer.
 
@@ -68,13 +66,11 @@ The Monitor and Get activities use filters to determine the values that will inv
 -   **After**: the property of the message is after the date/time specified in the filter.
 -   **Before**: the property of the message is before the date/time specified in the filter.
 
-| Tip   |
-|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Filter properties can only be used once in an activity. For example, if your search criteria for an entry include a date range, you cannot use the **TimeAdded** filter property twice in the same activity. However, you may be able to use the **TimeAdded After Date** and **TimeRaised Before Date** filter properties to achieve the desired results. |
+>[!TIP]
+>Filter properties can only be used once in an activity. For example, if your search criteria for an entry include a date range, you cannot use the **TimeAdded** filter property twice in the same activity. However, you may be able to use the **TimeAdded After Date** and **TimeRaised Before Date** filter properties to achieve the desired results.
 
-| Note   |
-|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Some HP Service Manager string fields, such as **Description**, do not support the **Contains** and **Does not contain** relations. However, these relations may still be displayed in the list of available options for the field. |
+>[!NOTE]
+>Some HP Service Manager string fields, such as **Description**, do not support the **Contains** and **Does not contain** relations. However, these relations may still be displayed in the list of available options for the field. 
 
 ### Run Behavior Tab
 
@@ -104,8 +100,7 @@ Some activities are expected to take a limited amount of time to complete. If th
 
 For more information about Orchestrator events, see [Activity Events](https://technet.microsoft.com/en-us/library/hh489611.aspx).
 
-Published Data
---------------
+## Published Data
 
 Published data is the foundation of a working runbook. It is the data produced as a result of the actions of an activity. This data is published to an internal data bus that is unique for each runbook. Subsequent activities in the runbook can subscribe to this data and use it in their configuration. Link conditions also use this information to add decision-making capabilities to runbooks.
 
@@ -121,8 +116,7 @@ An activity can only subscribe to data from the activities that are linked befor
 
 For a list of the data elements published by each activity, see the Published Data tables in the activity topic. For information about the common published data items, see [Common Published Data](https://technet.microsoft.com/en-us/library/e339c027-4c69-43e5-a59b-ac7ea0a676c8#CommonPublishedData).
 
-Activities
-----------
+## Activities
 
 This integration pack adds the HP Service Manager category to the **Activity** pane in the Runbook Designer. This category contains the following activities:
 

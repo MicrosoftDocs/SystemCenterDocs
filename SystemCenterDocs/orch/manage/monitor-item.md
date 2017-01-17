@@ -15,8 +15,7 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-Monitor Item
-============
+# Monitor Item
 
 Applies To: System Center 2016 - Orchestrator
 
@@ -24,8 +23,7 @@ The Monitor Item activity is used in a runbook to monitor new or modified items.
 
 The following tables list the required properties, filters, and published data for this activity. The tables for filters and published data are presented according to the supported item types: appointment, contact group, email message, and task.
 
-Monitor Item Required Properties
---------------------------------
+## Monitor Item Required Properties
 
 | **Element**   | **Description**   | **Valid values** |
 |:---|:---|:---|
@@ -35,8 +33,7 @@ Monitor Item Required Properties
 | Monitor Updated Items | Indicates whether updated items should be monitored   | True<br>False   |
 | Monitor Intervals   | Monitoring interval   | Integer   |
 
-Monitor Item Filters (Appointment)
-----------------------------------
+## Monitor Item Filters (Appointment)
 
 | **Element**   | **Description**   | **Filters**   |
 |:---|:---|:---|
@@ -73,8 +70,7 @@ Monitor Item Filters (Appointment)
 | Subject   | The subject of the appointment   | Equals<br>Does not equal<br>Contains<br>Does not contain<br>Starts with   |
 | Time Zone   | The time zone that is specified for the appointment   | Equals<br>Does not equal<br>Contains<br>Does not contain<br>Starts with   |
 
-Monitor Item Published Data (Appointment)
------------------------------------------
+## Monitor Item Published Data (Appointment)
 
 | **Element**   | **Description**   | **Valid values** |
 |:---|:---|:---|
@@ -142,8 +138,7 @@ Monitor Item Published Data (Appointment)
 | iCal Recurrence ID   | The iCal RecurrenceId   | DateTime   |
 | iCal Uid   | The iCal UiD   | String   |
 
-Monitor Item Filters (Contact Group)
-------------------------------------
+## Monitor Item Filters (Contact Group)
 
 | **Element**   | **Description**   | **Filters**   |
 |:---|:---|:---|
@@ -155,8 +150,7 @@ Monitor Item Filters (Contact Group)
 | Last Modified Name | Name of the user who last modified this contact group   | Equals<br>Does not equal<br>Contains<br>Does not contain<br>Start with   |
 | Members   | List of members associated with the contact group   | Comma separated list of email addresses   |
 
-Monitor Item Published Data (Contact Group)
--------------------------------------------
+## Monitor Item Published Data (Contact Group)
 
 | **Element**   | **Description**   | **Valid values**   |
 |:---|:---|:---|
@@ -186,8 +180,7 @@ Monitor Item Published Data (Contact Group)
 | Web Client Edit Form Query String | Query string to append to the Exchange Web client URL to open the contact group for editing | String   |
 | Web Client Read Form Query String | Query string to append to the Exchange Web client URL to open the contact group for reading | String   |
 
-Monitor Item Filters (E-Mail Message)
--------------------------------------
+## Monitor Item Filters (E-Mail Message)
 
 | **Element**   | **Description**   | **Filters**   |
 |:---|:---|:---|
@@ -216,8 +209,7 @@ Monitor Item Filters (E-Mail Message)
 | Sensitivity   | The sensitivity of the email   | Equals<br>Does not equal   |
 | Subject   | The subject of the email   | Equals<br>Does not equal<br>Contains<br>Does not contain<br>Starts with   |
 
-Monitor Item Published Data (E-Mail Message)
---------------------------------------------
+## Monitor Item Published Data (E-Mail Message)
 
 | **Element**   | **Description**   | **Value type** |
 |:---|:---|:---|
@@ -274,8 +266,7 @@ Monitor Item Published Data (E-Mail Message)
 | Web Client Edit Form Query String | Query string to append to the Exchange Web client URL to open the email for editing | String   |
 | Web Client Read Form Query String | Query string to append to the Exchange Web client URL to open the email for reading | String   |
 
-Monitor Item Filters (Task)
----------------------------
+## Monitor Item Filters (Task)
 
 | **Element**   | **Description**   | **Filters**   |
 |:---|:---|:---|
@@ -308,8 +299,7 @@ Monitor Item Filters (Task)
 | Task Status   | The status of the task   | Equals<br>Does not equal   |
 | Total Work   | The total amount of work spent on the task   | Equals<br>Does not equal<br>Less than<br>Less than or equal to<br>Greater than<br>Greater than or equal to |
 
-Monitor Item Published Data (Task)
-----------------------------------
+## Monitor Item Published Data (Task)
 
 | **Element**   | **Description**   | **Valid Values** |
 |:---|:---|:---|

@@ -15,8 +15,7 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-Disable Remote Mailbox (Hybrid)
-===============================
+# Disable Remote Mailbox (Hybrid)
 
 Applies To: System Center 2016 - Orchestrator
 
@@ -24,15 +23,13 @@ You can use the Disable Remote Mailbox (Hybrid) activity to remove a mailbox fro
 
 The following tables list the required properties, optional properties, and published data for this activity.
 
-Required properties for Disable Remote Mailbox (Hybrid)
--------------------------------------------------------
+## Required properties for Disable Remote Mailbox (Hybrid)
 
 | **Element** | **Description**   | **Valid values** |
 |:---|:---|:---|
 | Identity   | The identity of the Active Directory user whose remote mailbox will be disabled. This can be one of the following value types:<br>ADObjectID <br>GUID <br>Distinguished name (DN)<br>Domain\\SamAccountName<br>User principal name (UPN)<br>LegacyExchangeDN<br>Email Address<br>User alias | String   |
 
-Optional properties for Disable Remote Mailbox (Hybrid)
--------------------------------------------------------
+## Optional properties for Disable Remote Mailbox (Hybrid)
 
 | **Element**   | **Description**   | **Valid values** |
 |:---|:---|:---|
@@ -41,8 +38,7 @@ Optional properties for Disable Remote Mailbox (Hybrid)
 | Ignore Default Scope | When configured and set to True, this property instructs the command to ignore the default recipient scope setting for the Exchange Management Shell session and to use the entire forest as the scope. This allows the command to access Active Directory objects that are not currently in the default scope. <br>If you use this property, you cannot use the Domain Controller property. The command automatically uses an appropriate global catalog server.<br>If you use this property, you can only use the DN for the Identity property. Other forms of identification, such as alias or GUID, are not accepted.<br>Default is True, when selected. | True, False   |
 | Ignore Legal Hold   | If this element is configured and set to True, the command ignores the legal hold status of the mailbox user and allows you to disable the cloud mailbox that has been on legal hold.<br>When you disable a mailbox, the mailbox is disconnected from the user account. After you disable a mailbox, you cannot include it in a discovery search. Disconnected mailboxes are permanently deleted from the mailbox database after the deleted mailbox retention period expires. Check with your organization's legal or Human Resources department before you disable a mailbox that is on legal hold. <br>Default is True, when selected.   | True, False   |
 
-Published data for Disable Remote Mailbox (Hybrid)
---------------------------------------------------
+## Published data for Disable Remote Mailbox (Hybrid)
 
 | **Element**   | **Description**   | **Valid values** |
 |:---|:---|:---|

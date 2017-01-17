@@ -15,8 +15,7 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-List Service Certificate
-========================
+# List Service Certificate
 
 Applies To: System Center 2016 - Orchestrator
 
@@ -24,20 +23,17 @@ The **List Service Certificate** activity is used in a runbook to list all of th
 
 The activity publishes all of the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
 
-List Service Certificate Required Properties
---------------------------------------------
+## List Service Certificate Required Properties
 
 | **Element**   | **Description**   | **Valid values** |
 |:---|:---|:---|
 | Service DNS Prefix | The DNS prefix name of the Windows Azure cloud service. | String   |
 
-List Service Certificate Optional Properties
---------------------------------------------
+## List Service Certificate Optional Properties
 
 There are no optional properties for this runbook activity.
 
-List Service Certificate Published Data
----------------------------------------
+## List Service Certificate Published Data
 
 | **Element**   | **Description**   | **Value type** |
 |:---|:---|:---|
@@ -47,8 +43,8 @@ List Service Certificate Published Data
 | Service Certificate Thumbprint Algorithm | The algorithm that was used to hash the service certificate. Currently SHA-1 is the only supported algorithm.   | String   |
 | Service DNS Prefix   | The DNS prefix name of the Windows Azure cloud service.   | String   |
 
-See Also
---------
+## See Also
+
 
 #### Other Resources
 

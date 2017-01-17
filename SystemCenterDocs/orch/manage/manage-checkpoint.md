@@ -15,8 +15,7 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-Manage Checkpoint
-=================
+# Manage Checkpoint
 
 Applies To: System Center 2016 - Orchestrator
 
@@ -24,16 +23,14 @@ The Manage Checkpoint activity is used to restore a virtual machine to the state
 
 The activity publishes all of the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
 
-Manage Checkpoint Required Properties
--------------------------------------
+## Manage Checkpoint Required Properties
 
 | Element | Description   | Valid Values |
 |:---|:---|:---|
 | ID   | The unique identifier (GUID) of the checkpoint inside the platform; for example, Hyper-V, VMWare, or Virtual Server |   |
 | Action  | Remove or Restore   |   |
 
-Manage Checkpoint Published Data
---------------------------------
+## Manage Checkpoint Published Data
 
 | Element   | Description   | Valid Values |
 |:---|:---|:---|

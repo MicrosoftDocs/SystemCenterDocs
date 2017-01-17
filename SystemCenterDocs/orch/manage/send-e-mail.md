@@ -15,8 +15,7 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-Send E-Mail
-===========
+# Send E-Mail
 
 Applies To: System Center 2016 - Orchestrator
 
@@ -26,15 +25,13 @@ This activity publishes all of the data from the required and optional propertie
 
 The following tables list the required and optional properties and published data for this activity.
 
-Send E-Mail Required Properties
--------------------------------
+## Send E-Mail Required Properties
 
 | **Element** | **Description**   | **Valid values** |
 |:---|:---|:---|
 | ID   | The ID of the email message to be sent | String   |
 
-Send E-Mail Published Data
---------------------------
+## Send E-Mail Published Data
 
 | **Element**   | **Description**   | **Valid values** |
 |:---|:---|:---|
