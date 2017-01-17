@@ -16,7 +16,7 @@ ms.topic: article
 
 >Applies To: System Center 2016 - Operations Manager
 
-System Center 2016 - Operations Manager requires access to an instance of a server running Microsoft SQL Server 2012, 2014 or SQL Server 2016 to support the operational, data warehouse, and ACS audit database. The operational and data warehouse databases are required and created when you deploy the first management server in your management group, while the ACS database is created when you deploy an ACS collector in your management group.  
+System Center 2016 - Operations Manager requires access to an instance of a server running Microsoft SQL Server 2012, 2014, or SQL Server 2016 to support the operational, data warehouse, and ACS audit database. The operational and data warehouse databases are required and created when you deploy the first management server in your management group, while the ACS database is created when you deploy an ACS collector in your management group.  
 
 In a lab environment or small-scale deployment of Operations Manager, SQL Server can be co-located on the first management server in the management group.  In a medium to enterprise-scale distributed deployment, the SQL Server instance should be located on a dedicated standalone server or in a SQL Server high-availability configuration.  In either case, SQL Server must already exist and is accessible before you start the installation of the first management server or ACS collector.  
 
@@ -40,7 +40,7 @@ The following versions of SQL Server are supported for a new or existing install
 
 Additional hardware and software considerations apply in your design planning:
 
--  We recommend that you run SQL Server 2012, 2014 and 2016 on computers with the NTFS file format. 
+-  We recommend that you run SQL Server 2012, 2014, and 2016 on computers with the NTFS file format. 
 -  There must be at least 1024 MB of free disk space for the operational and data warehouse database. This is enforced at the time of database creation, and it will likely grow significantly after setup.  
 -  .NET Framework 4 is required. 
 
