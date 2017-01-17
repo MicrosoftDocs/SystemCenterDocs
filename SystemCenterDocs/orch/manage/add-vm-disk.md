@@ -15,8 +15,7 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-Add VM Disk
-===========
+# Add VM Disk
 
 Applies To: System Center 2016 - Orchestrator
 
@@ -24,8 +23,7 @@ The **Add VM Disk** activity adds a disk to the user image repository. It is par
 
 The activity publishes all of the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
 
-Add VM Disk Required Properties
--------------------------------
+## Add VM Disk Required Properties
 
 | **Element**   | **Description**   | **Valid values** |
 |:---|:---|:---|
@@ -36,13 +34,11 @@ Add VM Disk Required Properties
 | OS Type   | The pperting system type for the disk.   | Windows, Linux   |
 | Wait for Completion | Whether to wait for this operation to complete in Windows Azure before moving on to the next activity.  | True, False   |
 
-Add VM Disk Optional Properties
--------------------------------
+## Add VM Disk Optional Properties
 
 There are no optional properties for this runbook activity.
 
-Add VM Disk Published Data
---------------------------
+## Add VM Disk Published Data
 
 | **Element**   | **Description**   | **Value type** |
 |:---|:---|:---|
@@ -54,8 +50,8 @@ Add VM Disk Published Data
 | Wait for Completion | Whether to wait for this operation to complete in Windows Azure before moving on to the next activity.  | Boolean   |
 | Request ID   | The unique identifier of the request to Windows Azure.   | String   |
 
-See Also
---------
+## See Also
+
 
 #### Other Resources
 

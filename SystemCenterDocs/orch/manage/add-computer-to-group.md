@@ -15,8 +15,7 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-Add Computer To Group
-=====================
+# Add Computer To Group
 
 Applies To: System Center 2016 - Orchestrator
 
@@ -26,16 +25,14 @@ This activity publishes all of the data from the required and optional propertie
 
 The following tables list the required and optional properties and published data for this activity.
 
-Required properties for Add Computer to Group activity
-------------------------------------------------------
+## Required properties for Add Computer to Group activity
 
 | Element   | Description   | Valid Values |
 |:---|:---|:---|
 | Group Distinguished Name   | Distinguished name of the group   | String   |
 | Computer Distinguished Name | Distinguished name of the computer account | String   |
 
-Published data for Add Computer to Group activity
--------------------------------------------------
+## Published data for Add Computer to Group activity
 
 | Name   | Description   | Value Type |
 |:---|:---|:---|
