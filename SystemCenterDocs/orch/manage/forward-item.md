@@ -15,8 +15,7 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-Forward Item
-============
+# Forward Item
 
 Applies To: System Center 2016 - Orchestrator
 
@@ -24,8 +23,7 @@ The Forward Item activity is used in a runbook to forward an existing email mess
 
 The following tables list the required properties, optional properties, and published data for this activity.
 
-Forward Item Required Properties
---------------------------------
+## Forward Item Required Properties
 
 | **Element** | **Description**   | **Valid values**   |
 |:---|:---|:---|
@@ -33,8 +31,7 @@ Forward Item Required Properties
 | ID   | The ID of the item to be forwarded   | String   |
 | To   | The list of recipients the response will be sent to   | Comma-separated list of email addresses |
 
-Forward Item Optional Properties
---------------------------------
+## Forward Item Optional Properties
 
 | **Element** | **Description**   | **Valid values**   |
 |:---|:---|:---|
@@ -42,8 +39,7 @@ Forward Item Optional Properties
 | Body Type   | The format of body of the email message   | Text<br>HTML   |
 | Cc   | The list of addresses the item will be sent to as Cc recipients   | Comma separated list of email addresses |
 
-Forward Item Published Data
----------------------------
+## Forward Item Published Data
 
 | **Element**   | **Description**   | **Valid values** |
 |:---|:---|:---|

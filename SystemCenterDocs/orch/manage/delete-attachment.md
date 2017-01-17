@@ -15,8 +15,7 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-Delete Attachment
-=================
+# Delete Attachment
 
 Applies To: System Center 2016 - Orchestrator
 
@@ -24,8 +23,7 @@ The **Delete Attachment** activity is used in a runbook to delete an attachment 
 
 The following tables list the required properties and Published Data for this activity.
 
-Delete Attachment Required Properties
--------------------------------------
+## Delete Attachment Required Properties
 
 | **Element** | **Description**   | **Valid values** |
 |:---|:---|:---|
@@ -33,13 +31,11 @@ Delete Attachment Required Properties
 | ID   | The ID of the list item to be updated.   | Integer   |
 | List Name   | The name of the SharePoint list that contains the item to be updated.  | String   |
 
-Delete Attachment Optional Properties
--------------------------------------
+## Delete Attachment Optional Properties
 
 There are no optional properties for this runbook activity.
 
-Delete Attachment Published Data
---------------------------------
+## Delete Attachment Published Data
 
 | **Element**   | **Description**   | **Value type** |
 |:---|:---|:---|
@@ -48,8 +44,8 @@ Delete Attachment Published Data
 | List Name   | The name of the SharePoint list that contains the item that was updated.  | String   |
 | SharePoint Site | The URL of the SharePoint site.   | String   |
 
-See Also
---------
+## See Also
+
 
 #### Other Resources
 
