@@ -26,8 +26,7 @@ Updates the quotas for a certain user role and cloud.
 | Element   | Description   
 |:---|:---|
 | User Role Name | The user role name to update   |   
-| Cloud Name   | The name of the cloud to which the quota
-applies |   
+| Cloud Name   | The name of the cloud to which the quota applies |   
 | Level   | The level of the user role quota   |   
 
 ## Update User Role Quota Optional Properties
@@ -44,8 +43,7 @@ applies |
 
 | Element   | Description   |
 |:---|:---|
-| Cloud Name   | The name of the cloud to which the quota
-applies |   
+| Cloud Name   | The name of the cloud to which the quota applies |   
 | Level   | The level of the user role quota   |   
 | Max Virtual CPUs   | Maximum number of virtual CPUs   |   
 | Max VMs   | Maximum number of virtual machines   |   
