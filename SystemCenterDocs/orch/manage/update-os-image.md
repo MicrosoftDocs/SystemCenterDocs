@@ -15,8 +15,7 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-Update OS Image
-===============
+# Update OS Image
 
 Applies To: System Center 2016 - Orchestrator
 
@@ -24,8 +23,7 @@ The **Update OS Image** activity updates an operating system image that is in yo
 
 The activity publishes all of the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
 
-Update OS Image Required Properties
------------------------------------
+## Update OS Image Required Properties
 
 | **Element**   | **Description**   | **Valid values** |
 |:---|:---|:---|
@@ -35,13 +33,11 @@ Update OS Image Required Properties
 | Media Link   | Specifies the location of the blob in Windows Azure blob store where the media for the image is located. | String   |
 | Wait for Completion | Whether to wait for this operation to complete in Windows Azure before moving on to the next activity.   | True, False   |
 
-Update OS Image Optional Properties
------------------------------------
+## Update OS Image Optional Properties
 
 There are no optional properties for this runbook activity.
 
-Update OS Image Published Data
-------------------------------
+## Update OS Image Published Data
 
 | **Element**   | **Description**   | **Value type** |
 |:---|:---|:---|
@@ -52,8 +48,8 @@ Update OS Image Published Data
 | Wait for Completion | Whether to wait for this operation to complete in Windows Azure before moving on to the next activity.   | Boolean   |
 | Request ID   | The unique identifier of the request to Windows Azure.   | String   |
 
-See Also
---------
+## See Also
+
 
 #### Other Resources
 

@@ -15,8 +15,7 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-IBM Tivoli Netcool OMNIbus Activities
-=====================================
+# IBM Tivoli Netcool OMNIbus Activities
 
 Applies To: System Center 2016 - Orchestrator
 
@@ -32,8 +31,7 @@ This integration pack adds the IBM Tivoli Netcool/OMNIbus category to the **Acti
 
 [Update Alert Activity](update-alert-activity.md)
 
-Common Configuration Instructions for All Activities
-----------------------------------------------------
+## Common Configuration Instructions for All Activities
 
 The following configuration instructions apply to all activities in this integration pack. Links to this section are included in the configuration instructions for each activity.
 
