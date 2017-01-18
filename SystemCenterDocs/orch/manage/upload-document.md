@@ -15,8 +15,7 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-Upload Document
-===============
+# Upload Document
 
 Applies To: System Center 2016 - Orchestrator
 
@@ -24,24 +23,21 @@ The **Upload Document** activity is used in a runbook to upload a document to a 
 
 The following tables list the optional and required properties and Published Data for this activity.
 
-Upload Document Required Properties
------------------------------------
+## Upload Document Required Properties
 
 | **Element**   | **Description**   | **Valid values** |
 |:---|:---|:---|
 | Document Library | The name of the SharePoint document library to which the file is to be uploaded. | String   |
 | Source File   | The absolute path of the file on the local computer to be uploaded.   | String   |
 
-Upload Document Optional Properties
------------------------------------
+## Upload Document Optional Properties
 
 | **Element**   | **Description**   | **Valid values** |
 |:---|:---|:---|
 | Document Folder | The document library relative path of the child folder to which the file is to be uploaded. If this property is not defined, the file is uploaded to the document library's root folder. | String   |
 | Title   | The title to assign to the document.   | String   |
 
-Upload Document Published Data
-------------------------------
+## Upload Document Published Data
 
 | **Element**   | **Description**   | **Value type** |
 |:---|:---|:---|
@@ -52,8 +48,8 @@ Upload Document Published Data
 | Document Folder  | The document library relative path of the child folder to which the file was uploaded. | String   |
 | Title   | The title that was assigned to the document.   | String   |
 
-See Also
---------
+## See Also
+
 
 #### Other Resources
 

@@ -15,8 +15,7 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-Upgrade Deployment
-==================
+# Upgrade Deployment
 
 Applies To: System Center 2016 - Orchestrator
 
@@ -24,8 +23,7 @@ The Upgrade Deployment activity initiates an upgrade to a deployment. It is part
 
 The activity publishes all of the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
 
-Upgrade Deployment Required Properties
---------------------------------------
+## Upgrade Deployment Required Properties
 
 | **Element**   | **Description**   | **Valid values**   |
 |:---|:---|:---|
@@ -37,15 +35,13 @@ Upgrade Deployment Required Properties
 | Service Package URL | A URL that refers to the location of the service package in the Blob service. The service package can be located either in a storage account beneath the same subscription or a Shared Access Signature (SAS) URI from any storage account. | String   |
 | Wait for Completion | Whether to wait for this operation to complete in Windows Azure before moving on to the next activity.   | True, False   |
 
-Upgrade Deployment Optional Properties
---------------------------------------
+## Upgrade Deployment Optional Properties
 
 | **Element**   | **Description**   | **Valid values** |
 |:---|:---|:---|
 | Configuration File Path | The path to the service configuration file for the deployment. | String   |
 
-Upgrade Deployment Published Data
----------------------------------
+## Upgrade Deployment Published Data
 
 | **Element**   | **Description**   | **Value type** |
 |:---|:---|:---|
@@ -73,8 +69,8 @@ Upgrade Deployment Published Data
 | Role To Upgrade   | The name of the specific role to upgrade.   | String   |
 | Wait for Completion   | Whether to wait for this operation to complete in Windows Azure before moving on to the next activity.   | Boolean   |
 
-See Also
---------
+## See Also
+
 
 #### Other Resources
 

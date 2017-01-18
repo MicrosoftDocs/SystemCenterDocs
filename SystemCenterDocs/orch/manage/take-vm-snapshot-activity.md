@@ -15,8 +15,7 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-Take VM Snapshot Activity
-=========================
+# Take VM Snapshot Activity
 
 Applies To: System Center 2016 - Orchestrator
 
@@ -29,28 +28,27 @@ The activity publishes all of the data from the required and optional properties
 ### Take VM Snapshot Activity Required Properties
 
 | Element   | Description   | Valid Values | Look up |
-| Snapshot Name   | A name for the snapshot being created.   | String   | No   |
 |:---|:---|:---|:---|
+| Snapshot Name   | A name for the snapshot being created.   | String   | No   |
 | Snapshot VM Memory | Indicates whether the source virtual machine's memory is included in the snapshot | Boolean   | Yes   |
 | VM Path   | The path to the virtual machine to take a snapshot of   | String   | Yes   |
 
 ### Take VM Snapshot Activity Optional Properties
 
 | Element   | Description   | Valid Values | Look up |
-| Snapshot Description | A description of the snapshot to be created. | String   | No   |
 |:---|:---|:---|:---|
+| Snapshot Description | A description of the snapshot to be created. | String   | No   |
 
 ### Take VM Snapshot Activity Published Data
 
 | Name   | Description   | Value Type |
-| Snapshot Description | A description of the snapshot that was created.   | String   |
 |:---|:---|:---|
+| Snapshot Description | A description of the snapshot that was created.   | String   |
 | Snapshot Name   | The name of the snapshot.   | String   |
 | Snapshot VM Memory   | Indicates whether the source virtual machine's memory was included in the snapshot. | Boolean   |
 | VM Path   | The path to the virtual machine from which the snapshot was taken.   | String   |
 
-Configuring the Take VM Snapshot Activity
------------------------------------------
+## Configuring the Take VM Snapshot Activity
 
 The following procedure describes the steps required to configure a Take VM Snapshot activity.
 
@@ -67,5 +65,3 @@ The following procedure describes the steps required to configure a Take VM Snap
         You can also use published data to automatically populate the value of the property from the data output by a previous activity in the workflow.
 
 4.  Click **Finish**.
-
-

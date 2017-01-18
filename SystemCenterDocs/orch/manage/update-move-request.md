@@ -15,8 +15,7 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-Update Move Request
-===================
+# Update Move Request
 
 Applies To: System Center 2016 - Orchestrator
 
@@ -24,15 +23,13 @@ You can use the Update Move Request activity in a runbook to change the attribut
 
 The following tables list the required properties, optional properties, and published data for this activity.
 
-Required properties for Update Move Request activity
-----------------------------------------------------
+## Required properties for Update Move Request activity
 
 | **Element** | **Description**   | **Valid values** |
 |:---|:---|:---|
 | Identity   | Specifies the identity of the mailbox or mail user. It can be one of the following values:<br>GUID<br>Distinguished name (DN)<br>Domain\\Account <br>User principal name (UPN)<br>LegacyExchangeDN<br>SMTP address<br>Alias | String   |
 
-Optional properties for Update Move Request activity
-----------------------------------------------------
+## Optional properties for Update Move Request activity
 
 | **Element**   | **Description**   | **Valid values** |
 |:---|:---|:---|
@@ -47,8 +44,7 @@ Optional properties for Update Move Request activity
 | Remote Host Name   | Specifies the FQDN of the cross-forest organization from which you're moving the mailbox.   | String   |
 | Suspend When Ready To Complete | Specifies whether to suspend the move request before it reaches the status of CompletionInProgress. After the move is suspended, it has a status of AutoSuspended. The move can then be manually completed by using the Resume-MoveRequest command.<br>You can only use the Suspend When Ready To Complete property to move online mailboxes and to move mailboxes from Exchange Server 2007 or Exchange 2010 mailbox databases. You can't use this property to move offline mailboxes or to move mailboxes from Exchange Server 2003 mailbox databases. <br>Default value is True, when selected.   | True, False   |
 
-Published data for Update Move Request activity
------------------------------------------------
+## Published data for Update Move Request activity
 
 | **Element**   | **Description**   | **Valid values** |
 |:---|:---|:---|

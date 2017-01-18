@@ -15,8 +15,7 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-Update Computer
-===============
+# Update Computer
 
 Applies To: System Center 2016 - Orchestrator
 
@@ -26,15 +25,13 @@ This activity publishes all of the data from the required and optional propertie
 
 The following tables list the required and optional properties and published data for this activity.
 
-Required properties for Update Computer activity
-------------------------------------------------
+## Required properties for Update Computer activity
 
 | Element   | Description   | Valid Values |
 |:---|:---|:---|
 | Distinguished Name | Distinguished name that uniquely identifies the computer account | String   |
 
-Optional properties for Update Computer activity
-------------------------------------------------
+## Optional properties for Update Computer activity
 
 | Element   | Description   | Valid Values |
 |:---|:---|:---|
@@ -43,8 +40,7 @@ Optional properties for Update Computer activity
 | DNS Host Name | Name of the computer as registered in DNS | String   |
 | Location   | Computer's location   | String   |
 
-Published data for Update Computer activity
--------------------------------------------
+## Published data for Update Computer activity
 
 | Name   | Description   | Value Type |
 |:---|:---|:---|

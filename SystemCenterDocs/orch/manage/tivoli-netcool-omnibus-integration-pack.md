@@ -15,8 +15,7 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-IBM Tivoli Netcool OMNIbus Integration Pack for System Center 2016 - Orchestrator
-=================================================================================
+# IBM Tivoli Netcool OMNIbus Integration Pack for System Center 2016 - Orchestrator
 
 Applies To: System Center 2016 - Orchestrator
 
@@ -24,22 +23,18 @@ The Integration Pack for IBM Tivoli Netcool/OMNIbus is an add-on for System Cent
 
 Microsoft is committed to protecting your privacy, while delivering software that brings you the performance, power, and convenience you want. For more information, see [Privacy Statement for System Center 2016 - Orchestrator](https://www.microsoft.com/en-us/privacystatement/EnterpriseDev/default.aspx).
 
-Downloading the Integration Pack
---------------------------------
+## Downloading the Integration Pack
 
 To download this integration pack, see [IBM Tivoli Netcool Integration Pack for System Center 2016 - Orchestrator](https://www.microsoft.com/en-us/download/details.aspx?id=54103).
 
-Registering and Deploying the Integration Pack
-----------------------------------------------
+## Registering and Deploying the Integration Pack
 
 After you download the integration pack file, you must register it with the Orchestrator management server and then deploy it to Runbook servers and Runbook Designers. For the procedures on installing integration packs, see [How To Install an Integration Pack](https://technet.microsoft.com/system-center-docs/orch/manage/how-to-add-an-integration-pack).
 
-Deploying the Integration Pack
-----------------------------------------------
+## Deploying the Integration Pack
 See [Deploying IBM Tivoli Netcool Integration Pack](deploying-the-ibm-tivoli-netcool-omnibus-integration-pack.md)
 
-Known Issues
-----------------
+## Known Issues
 
 The following section contains additional information about this integration pack for IBM Tivoli Netcool/OMNIbus.
 
