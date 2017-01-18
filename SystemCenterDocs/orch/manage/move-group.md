@@ -15,8 +15,7 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-Move Group
-==========
+# Move Group
 
 Applies To: System Center 2016 - Orchestrator
 
@@ -26,22 +25,19 @@ This activity publishes all of the data from the required and optional propertie
 
 The following tables list the required and optional properties and published data for this activity.
 
-Move Group required properties
-------------------------------
+## Move Group required properties
 
 | Element   | Description   | Valid Values |
 |:---|:---|:---|
 | Group Distinguished Name | Distinguished name of the group | String   |
 
-Move Group optional properties
-------------------------------
+## Move Group optional properties
 
 | Element   | Description   | Valid Values |
 |:---|:---|:---|
 | New Container Distinguished Name | Distinguished name of new container path of the group | String   |
 
-Move Group published data
--------------------------
+## Move Group published data
 
 | Name   | Description   | Value Type |
 |:---|:---|:---|

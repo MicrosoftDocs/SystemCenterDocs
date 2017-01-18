@@ -15,8 +15,7 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-Exchange Admin Integration Pack for Orchestrator in System Center 2016
-======================================================================
+# Exchange Admin Integration Pack for Orchestrator in System Center 2016
 
 Applies To: System Center 2016 - Orchestrator
 
@@ -26,8 +25,7 @@ The Integration Pack for Exchange Admin helps to facilitate the automation of Ex
 
 Microsoft is committed to protecting your privacy while delivering software that brings you the performance, power, and convenience you want. For more information about Orchestrator-related privacy, see the [System Center Orchestrator 2016 Privacy Statement](https://www.microsoft.com/en-us/privacystatement/EnterpriseDev/default.aspx).
 
-System requirements
--------------------
+## System requirements
 
 Before you implement the Integration Pack for Exchange Admin, the following listed software must be installed. For more information about installing and configuring Orchestrator and the Exchange Admin Integration Pack, refer to the respective product documentation.
 
@@ -38,18 +36,15 @@ Before you implement the Integration Pack for Exchange Admin, the following list
 -   Microsoft PowerShell 2.0
 -   Microsoft WinRM 2.0
 
-Downloading the Integration Pack
---------------------------------
+## Downloading the Integration Pack
 
 To download the Exchange Admin Integration Pack, see the [Download Center site](https://www.microsoft.com/en-us/download/details.aspx?id=54098).
 
-Register and Deploy the Integration Pack
-----------------------------------------
+## Register and Deploy the Integration Pack
 
 After you download the integration pack file, you must register it with the Orchestrator management server and then deploy it to runbook servers and Runbook Designers. For the procedures on installing integration packs, see [How to install an Integration Pack](https://technet.microsoft.com/system-center-docs/orch/manage/how-to-add-an-integration-pack).
 
-Configure the Exchange Admin Integration Pack connections
----------------------------------------------------------
+## Configure the Exchange Admin Integration Pack connections
 
 A connection establishes a reusable link between and an Exchange server. You can specify as many connections as you require to create links to multiple servers. You can also create multiple connections to the same server to allow for differences in security permissions for different user accounts.
 
@@ -87,8 +82,7 @@ A connection establishes a reusable link between and an Exchange server. You can
 
 16. Click **Finish**.
 
-Configure Windows PowerShell and WinRM for the Exchange Admin Integration Pack
-------------------------------------------------------------------------------
+## Configure Windows PowerShell and WinRM for the Exchange Admin Integration Pack
 
 #### To configure 32-bit PowerShell to run scripts
 

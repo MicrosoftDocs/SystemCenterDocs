@@ -15,8 +15,7 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-Get Deployment
-==============
+# Get Deployment
 
 Applies To: System Center 2016 - Orchestrator
 
@@ -24,21 +23,18 @@ The **Get Deployment** activity returns configuration information, status, and s
 
 The activity publishes all of the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
 
-Get Deployment Required Properties
-----------------------------------
+## Get Deployment Required Properties
 
 | **Element**   | **Description**   | **Valid values**   |
 |:---|:---|:---|
 | Service DNS Prefix | The DNS prefix name of the Windows Azure hosted. | String   |
 | Deployment Slot   | The deployment slot of the deployment.   | Staging, Production |
 
-Get Deployment Optional Properties
-----------------------------------
+## Get Deployment Optional Properties
 
 There are no optional properties for this runbook activity.
 
-Get Deployment Published Data
------------------------------
+## Get Deployment Published Data
 
 | **Element**   | **Description**   | **Value type** |
 |:---|:---|:---|
@@ -61,8 +57,8 @@ Get Deployment Published Data
 | Deployment Name   | The name of the deployment.   | String   |
 | Label   | A friendly name for the cloud service.   | String   |
 
-See Also
---------
+## See Also
+
 
 #### Other Resources
 

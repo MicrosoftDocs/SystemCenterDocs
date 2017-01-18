@@ -15,8 +15,7 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-Get User Role Quota in System Center 2016
-=========================================
+# Get User Role Quota in System Center 2016
 
 Applies To: System Center 2016 - Orchestrator
 
@@ -24,18 +23,15 @@ The Get User Role Quota activity is used in a runbook to return information abou
 
 The activity publishes all of the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
 
-Get User Role Quota Required Properties
----------------------------------------
+## Get User Role Quota Required Properties
 
 This activity has no required properties.
 
-Get User Role Quota Optional Properties
----------------------------------------
+## Get User Role Quota Optional Properties
 
 This activity has no optional properties.
 
-Get User Role Quota Filters
----------------------------
+## Get User Role Quota Filters
 
 | Element   | Description   | Valid Values   |
 |:---|:---|:---|
@@ -60,35 +56,33 @@ Get User Role Quota Filters
 | VM Instance Resource Names   |   |   |
 | VM template Resource Names   |   |   |
 
-Get User Role Quota Published Data
-----------------------------------
+## Get User Role Quota Published Data
 
-| Element   | Description   | Valid Values |
-|:---|:---|:---|
-| User Role ID   | The ID of the user role   |   |
-| User Role Name   | The name of the user role   |   |
-| Profile Type   | The profile type of the user role |   |
-| Host Group Names in Scope   |   |   |
-| Cloud Names in Scope   |   |   |
-| Actions Permitted   | List of actions permitted   |   |
-| Member Names   | Members of the user role   |   |
-| Description   | Text description of the user role |   |
-| User Role Data Path   |   |   |
-| Library Server Names   |   |   |
-| VM Template Resource Names   |   |   |
-| Service Template Resource Names   |   |   |
-| Service Instance Resource Names   |   |   |
-| VM Instance Resource Names   |   |   |
-| Hardware Profile Resource Names   |   |   |
-| Application Profile Resource Names   |   |   |
-| Guest OS Profile Resource Names   |   |   |
-| SQL Profile Resource Names   |   |   |
-| Service Configuration Resource Names |   |   |
+| Element   | Description    |
+|:---|:---|
+| User Role ID   | The ID of the user role   |   
+| User Role Name   | The name of the user role   |   
+| Profile Type   | The profile type of the user role |   
+| Host Group Names in Scope   |   |   
+| Cloud Names in Scope   |   |   
+| Actions Permitted   | List of actions permitted   |   
+| Member Names   | Members of the user role   |   
+| Description   | Text description of the user role |   
+| User Role Data Path   |   |   
+| Library Server Names   |   |   
+| VM Template Resource Names   |   |   
+| Service Template Resource Names   |   |   
+| Service Instance Resource Names   |   |   
+| VM Instance Resource Names   |   |   
+| Hardware Profile Resource Names   |   |   
+| Application Profile Resource Names   |   |   
+| Guest OS Profile Resource Names   |   |   
+| SQL Profile Resource Names   |   |   
+| Service Configuration Resource Names |   |   
 
-See Also
---------
+## See Also
+
 
 #### Other Resources
 
 [Using Runbooks in System Center 2016 - Orchestrator](https://technet.microsoft.com/en-us/library/hh403791.aspx)
-

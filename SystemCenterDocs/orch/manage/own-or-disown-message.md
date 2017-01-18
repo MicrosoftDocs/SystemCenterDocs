@@ -15,8 +15,7 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-Own or Disown Message
-=====================
+# Own or Disown Message
 
 Applies To: System Center 2016 - Orchestrator
 
@@ -24,16 +23,14 @@ The Own/Disown Message activity is used in a runbook to take ownership or remove
 
 The following tables list the required properties and published data for this activity. For more information on configuring activities, see [HP Operations Manager Activities](hp-operations-manager-activities.md).
 
-Own/Disown Message Required Properties
---------------------------------------
+## Own/Disown Message Required Properties
 
 | Element   | Description   | Valid Values  | Look up |
 |:---|:---|:---|:---|
 | Message ID   | The ID of the message to be owned or disowned.   | String   | No   |
 | Ownership Status | Specifies whether the message should be owned or disowned. | Own<br>Disown | Yes   |
 
-Own/Disown Message Published Data
----------------------------------
+## Own/Disown Message Published Data
 
 | Element   | Description   | Value Type |
 |:---|:---|:---|
@@ -43,10 +40,10 @@ Own/Disown Message Published Data
 | HPOM Port   | The port used to connect to the HPOM management server.   | Integer   |
 | HPOM Username   | The name of the HPOM used to connect to the HPOM management server. | String   |
 
-<br><br><strong>Tip </strong><br> The Own/Disown Message activity will succeed when provided with a Message ID that does not match a Message stored in HP Operations Manager management server. <br><br>
+>[!TIP]
+>The Own/Disown Message activity will succeed when provided with a Message ID that does not match a Message stored in HP Operations Manager management server. 
 
-Other Activities
-----------------
+## Other Activities
 
 The Integration Pack for HP Operations Manager integration contains the following additional activities:
 

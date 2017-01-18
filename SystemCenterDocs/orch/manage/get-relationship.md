@@ -15,8 +15,7 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-Get Relationship
-================
+# Get Relationship
 
 Applies To: System Center 2016 - Orchestrator
 
@@ -24,12 +23,10 @@ The Get Relationship activity is used to generate a list of objects from two dif
 
 The following published data elements are specific to Get Relationship. Additional published data is generated based on the class that you select when you define the activity. For a list of the data elements published by each class, see [Service Manager Published Data](service-manager-published-data.md).
 
-Get Relationship Published Data
--------------------------------
+## Get Relationship Published Data
 
-|   |   |
-|--------------------------|------------------------------------------------------------------------------------------------------------------------------|
 | Element   | Description   |
+|----------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Number of Objects   | The number of objects returned by the Get Relationship activity   |
 | Object Class   | The name of a class for which you want to define a relationship to the related class   |
 | Object GUID   | The unique identifier (GUID) of a single object in the object class that is used to define the relationship to another class |

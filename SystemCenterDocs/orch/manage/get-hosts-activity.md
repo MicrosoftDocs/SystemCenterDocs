@@ -15,8 +15,7 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-Get Hosts Activity
-==================
+# Get Hosts Activity
 
 Applies To: System Center 2016 - Orchestrator
 
@@ -27,25 +26,16 @@ The following tables list the required and optional properties and published dat
 The activity publishes all of the data from the required and optional properties into published data. Additional published data is generated based on the class that you select when you define the activity.
 
 ### Get Hosts Activity Required Properties
-
-|   |
-|--------------------------------------------------------|
-| No required properties are provided for this activity. |
+No required properties are provided for this activity.
 
 ### Get Hosts Activity Optional Properties
-
-|   |
-|--------------------------------------------------------|
-| No optional properties are provided for this activity. |
+No optional properties are provided for this activity.
 
 ### Get Hosts Activity Published Data
 
 | Name | Description   | Value Type |
-| Host | A list of host paths managed by the vCenter server. | String   |
 |:---|:---|:---|
-
-Configuring the Get Hosts Activity
-----------------------------------
+| Host | A list of host paths managed by the vCenter server. | String   |## Configuring the Get Hosts Activity
 
 The following procedure describes the steps required to configure a Get Hosts activity.
 
@@ -60,5 +50,3 @@ The following procedure describes the steps required to configure a Get Hosts ac
     1.  In the **Configuration** section, click the ellipsis button **(...)**, and then select the VMware vSphere server connection that you want to use for this activity. Click **OK**.
 
 4.  Click **Finish**.
-
-

@@ -15,8 +15,7 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-Get Host Datastores Activity
-============================
+# Get Host Datastores Activity
 
 Applies To: System Center 2016 - Orchestrator
 
@@ -29,24 +28,22 @@ The activity publishes all of the data from the required and optional properties
 ### Get Host Datastores Activity Required Properties
 
 | Element | Description   | Valid Values | Look up |
-| Host   | The path of the managed host controlled by the VMware vCenter server. | String   | Yes   |
 |:---|:---|:---|:---|
+| Host   | The path of the managed host controlled by the VMware vCenter server. | String   | Yes   |
+
 
 ### Get Host Datastores Activity Optional Properties
 
-|   |
-|--------------------------------------------------------|
-| No optional properties are provided for this activity. |
+No optional properties are provided for this activity.
 
 ### Get Host Datastores Activity Published Data
 
 | Name   | Description   | Value Type |
-| Datastore | A list of all available data stores that are connected to the specified host | String   |
 |:---|:---|:---|
+| Datastore | A list of all available data stores that are connected to the specified host | String   |
 | Host   | Identifier of the host   | String   |
 
-Configuring the Get Host Datastores Activity
---------------------------------------------
+## Configuring the Get Host Datastores Activity
 
 The following procedure describes the steps required to configure a Get Host Datastores activity.
 
@@ -63,5 +60,3 @@ The following procedure describes the steps required to configure a Get Host Dat
         You can also use published data to automatically populate the value of the property from the data output by a previous activity in the workflow.
 
 4.  Click **Finish**.
-
-

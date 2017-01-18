@@ -15,8 +15,7 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-Download Blob
-=============
+# Download Blob
 
 Applies To: System Center 2016 - Orchestrator
 
@@ -24,8 +23,7 @@ The **Download Blob** activity downloads a blob from the system. It is part of t
 
 The activity publishes all of the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
 
-Download Blob Required Properties
----------------------------------
+## Download Blob Required Properties
 
 | **Element**   | **Description**   | **Valid values** |
 |:---|:---|:---|
@@ -34,15 +32,13 @@ Download Blob Required Properties
 | Blob Name   | The name of the blob.   | String   |
 | Download to File Path | The location to save the downloaded blob. | String   |
 
-Download Blob Optional Properties
----------------------------------
+## Download Blob Optional Properties
 
 | **Element** | **Description**   | **Valid values** |
 |:---|:---|:---|
 | Primary Key | The primary key associated with the storage account. | String   |
 
-Download Blob Published Data
-----------------------------
+## Download Blob Published Data
 
 | **Element**   | **Description**   | **Value type** |
 |:---|:---|:---|
@@ -51,8 +47,8 @@ Download Blob Published Data
 | Blob Name   | The name of the blob.   | String   |
 | Download to File Path | The location to save the downloaded blob. | String   |
 
-See Also
---------
+## See Also
+
 
 #### Other Resources
 

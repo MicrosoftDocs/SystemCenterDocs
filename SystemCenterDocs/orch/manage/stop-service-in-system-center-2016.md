@@ -15,8 +15,7 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-Stop Service in System Center 2016
-==================================
+# Stop Service in System Center 2016
 
 Applies To: System Center 2016 - Orchestrator
 
@@ -24,29 +23,21 @@ The Stop Service activity is used in a runbook to stop a VMM service.
 
 The activity publishes all of the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
 
-Stop Service Required Properties
---------------------------------
+## Stop Service Required Properties
 
-| **Element**  | **Description** | **Valid Values** |
-|:---|:---|:---|
-| Service Name |   |   |
+**Element**<br>Service Name
 
-Stop Service Optional Properties
---------------------------------
+## Stop Service Optional Properties
 
-| **Element** | **Description** | **Valid Values** |
-|:---|:---|:---|
+There are no optional properties for this activity.
 
-Stop Service Published Data
----------------------------
+## Stop Service Published Data
 
-| **Element** | **Description** | **Valid Values** |
-|:---|:---|:---|
+There is no published data for this activity. 
 
-See Also
---------
+## See Also
+
 
 #### Other Resources
 
 [Using Runbooks in System Center 2016 - Orchestrator](https://technet.microsoft.com/en-us/library/hh403791.aspx)
-

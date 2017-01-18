@@ -15,8 +15,7 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-Create and Send E-Mail
-======================
+# Create and Send E-Mail
 
 Applies To: System Center 2016 - Orchestrator
 
@@ -24,8 +23,7 @@ The Create and Send E-Mail activity is used in a runbook to create and send an e
 
 The following tables list the required properties, optional properties, and published data for this activity.
 
-Create and Send E-Mail Required Properties
-------------------------------------------
+## Create and Send E-Mail Required Properties
 
 | **Element** | **Description**   | **Valid values**   |
 |:---|:---|:---|
@@ -33,8 +31,7 @@ Create and Send E-Mail Required Properties
 | Subject   | The subject of the email message   | String   |
 | To   | The intended recipients of the email message | Comma separated list of email addresses |
 
-Create and Send E-Mail Optional Properties
-------------------------------------------
+## Create and Send E-Mail Optional Properties
 
 | **Element**   | **Description**   | **Valid values**   |
 |:---|:---|:---|
@@ -54,8 +51,7 @@ Create and Send E-Mail Optional Properties
 | Sender   | Sets the sender of the email message   | String   |
 | Sensitivity   | The sensitivity of this item   | Confidential<br>Normal<br>Personal<br>Private |
 
-Create and Send E-Mail Published Data
--------------------------------------
+## Create and Send E-Mail Published Data
 
 | **Element**   | **Description**   | **Valid values** |
 |:---|:---|:---|

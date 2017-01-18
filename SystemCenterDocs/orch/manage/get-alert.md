@@ -15,8 +15,7 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-Get Alert
-=========
+# Get Alert
 
 Applies To: System Center 2016 - Orchestrator
 
@@ -24,12 +23,10 @@ The Get Alert activity is used in a runbook to retrieve alerts from Operations M
 
 The activity publishes all of the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
 
-Get Alert Filters
------------------
+## Get Alert Filters
 
-|   |   |
-|-----------------------------------|-------------------------------------------------------------------------------------------|
 | Element   | Description   |
+|-----------------------------------|-------------------------------------------------------------------------------------------|
 | Category   | The category name of the Management Pack   |
 | Class ID   | For System Center 2016 SP1 only: The Class ID of the alert.   |
 | ConnectorId   | The ID of the connector that generated the connection string   |
@@ -84,12 +81,10 @@ Get Alert Filters
 | TimeResolutionStateLastModified   | The time that the resolution state of the alert was last changed   |
 | TimeResolved   | The time that the alert was resolved   |
 
-Get Alert Published Data
-------------------------
+## Get Alert Published Data
 
-|   |   |
-|-----------------------------------|-----------------------------------------------------------------------------------|
 | Element   | Description   |
+|-----------------------------------|-----------------------------------------------------------------------------------|
 | AlertCount   | The number of monitoring alerts that were found   |
 | Category   | The category name of the Management Pack   |
 | Class ID   | For System Center 2016 SP1 only: The Class ID of the alert.   |

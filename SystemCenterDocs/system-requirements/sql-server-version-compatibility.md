@@ -23,10 +23,10 @@ Use this information to evaluate if your SQL Server environment is ready to supp
 |**System Center 2016** component |SQL Server 2008 R2 SP1 Standard, Datacenter|SQL Server 2008 R2 SP2 Standard, Datacenter|SQL Server 2012 Enterprise, Standard (64-bit)|SQL Server 2012 SP1 Enterprise, Standard (64-bit)|SQL Server 2012 SP2 Enterprise, Standard (64 bit)|SQL Server 2014 Enterprise, Standard (64-bit)|SQL Server 2014 SP1 Enterprise, Standard (64-bit)|SQL Server 2014 SP2 Enterprise, Standard (64-bit)|SQL Server 2016, Enterprise, Standard  (64-bit)|
 |-------------------------------------------------------------------|-----------------------------------------------|-----------------------------------------------|----------------------------------------------------|--------------------------------------------------------|-------------------------------------------------------|----------------------------------------------------|--------------------------------------------------------|------------------------------------------------|-------------------------------------|
 |**Data Protection Manager (DPM)** Database Server|&#8226;|&#8226;|&#8226;|&#8226;|&#8226;|&#8226;|&#8226;|&#8226;||
-|**Operations Manager** Operational and Data Warehouse Database||||||||&#8226;|&#8226;|
-|**Operations Manager** Reporting Server||||||||&#8226;|&#8226;|
 |**Orchestrator** Management Server|||||&#8226;|&#8226;|&#8226;|&#8226;|&#8226;|
 |**Service Manager** Database or Data Warehouse Database|||||&#8226;|&#8226;|&#8226;|&#8226;|&#8226;|
 |**Service Management Automation** Web Service|||||&#8226;|&#8226;|&#8226;|&#8226;|&#8226;|
 |**Service Provider Foundation**|||||&#8226;|&#8226;|&#8226;||&#8226;|
 |**Virtual Machine Manager** Database Server|||||&#8226;|&#8226;|&#8226;|&#8226;|&#8226;
+
+To understand which versions of SQL Server System Center 2016 - Operations Manager supports,  see [SQL Server requirements for Operations Manager](../om/plan/planning-sqlserver-design.md#sql-server-requirements).  

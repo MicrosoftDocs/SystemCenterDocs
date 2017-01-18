@@ -15,21 +15,18 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-Service Manager Published Data
-==============================
+# Service Manager Published Data
 
 Applies To: System Center 2016 - Orchestrator
 
 The following tables list the Published Data elements for all of the classes in the System Center 2016 - Service Manager Integration Pack.
 
-Active Directory Group Class Published Data
--------------------------------------------
+## Active Directory Group Class Published Data
 
 Class Category: Visible
 
-|   |   |
-|---------------------|------------|
 | Element Name   | Field Type |
+|---------------------|------------|
 | Distinguished Name  | string   |
 | SID   | string   |
 | FQDN   | string   |
@@ -63,14 +60,12 @@ Class Category: Visible
 | Organization unit   | string   |
 | Objectguid   | string   |
 
-Active Directory User or Group Class Published Data
----------------------------------------------------
+## Active Directory User or Group Class Published Data
 
 Class Category: Visible
 
-|   |   |
-|---------------------|------------|
 | Element Name   | Field Type |
+|---------------------|------------|
 | Distinguished Name  | string   |
 | SID   | string   |
 | FQDN   | string   |
@@ -102,14 +97,12 @@ Class Category: Visible
 | Notes   | string   |
 | Display Name   | string   |
 
-Active Directory User Class Published Data
-------------------------------------------
+## Active Directory User Class Published Data
 
 Class Category: Visible
 
-|   |   |
-|---------------------|------------|
 | Element Name   | Field Type |
+|---------------------|------------|
 | Distinguished Name  | string   |
 | SID   | string   |
 | FQDN   | string   |
@@ -141,14 +134,12 @@ Class Category: Visible
 | Notes   | string   |
 | Display Name   | string   |
 
-Change Request Class Published Data
------------------------------------
+## Change Request Class Published Data
 
 Class Type: Visible
 
-|   |   |
-|----------------------------|------------|
 | Element Name   | Field Type |
+|---------------------|------------|
 | Reason   | string   |
 | Notes   | string   |
 | Implementation Plan   | string   |
@@ -175,14 +166,12 @@ Class Type: Visible
 | Actual End Date   | Date time  |
 | Display Name   | string   |
 
-Windows Server Class Published Data
------------------------------------
+## Windows Server Class Published Data
 
 Class Type: Hidden
 
-|   |   |
-|---------------------------------------|-----------|
 | Element Name   | Type   |
+|---------------------|------------|
 | Is Virtual Node   | boolean   |
 | Principal Name   | string   |
 | DNS Name   | string   |
@@ -203,14 +192,12 @@ Class Type: Hidden
 | Asset Status   | enum   |
 | Notes   | string   |
 
-Windows Server Operating System Class Published Data
-----------------------------------------------------
+## Windows Server Operating System Class Published Data
 
 Class Category: Hidden
 
-|   |   |
-|---------------------------------------|------------|
 | Element Name   | Field Type |
+|---------------------|------------|
 | Operating System Version   | string   |
 | Operating System Version Display Name | string   |
 | Product Type   | string   |
@@ -235,14 +222,12 @@ Class Category: Hidden
 | Notes   | string   |
 | Display Name   | string   |
 
-Trouble Ticket Analyst Comments Class Published Data
-----------------------------------------------------
+## Trouble Ticket Analyst Comments Class Published Data
 
 Class Type: Hidden
 
-|   |   |
-|--------------|------------|
 | Element Name | Field Type |
+|---------------------|------------|
 | Is Private   | boolean   |
 | Comment   | string   |
 | Entered By   | string   |
@@ -250,28 +235,24 @@ Class Type: Hidden
 | ID   | string   |
 | Display Name | string   |
 
-Star Rating Class Published Data
---------------------------------
+## Star Rating Class Published Data
 
 Class Type: Hidden
 
-|   |   |
-|--------------------|------------|
 | Element Name   | Field Type |
+|---------------------|------------|
 | ID   | string   |
 | Total Rating Count | int32   |
 | Total Rating Stars | int32   |
 | Rating Comments   | string   |
 | Display Name   | string   |
 
-Windows Computer Class Published Data
--------------------------------------
+## Windows Computer Class Published Data
 
 Class Type: Hidden
 
-|   |   |
-|---------------------------------------|------------|
 | Element Name   | Field Type |
+|---------------------|------------|
 | Principal Name   | string   |
 | DNS Name   | string   |
 | NetBIOS Computer Name   | string   |
@@ -292,14 +273,12 @@ Class Type: Hidden
 | Notes   | string   |
 | Display Name   | string   |
 
-Software Items Class Published Data
------------------------------------
+## Software Items Class Published Data
 
 Class Type: Hidden
 
-|   |   |
-|------------------------|------------|
 | Element Name   | Field Type |
+|---------------------|------------|
 | Publisher   | string   |
 | Version String   | string   |
 | Product Name   | string   |
@@ -340,14 +319,12 @@ Class Type: Hidden
 | Notes   | string   |
 | Display Name   | string   |
 
-Manual Activity Class Published Data
-------------------------------------
+## Manual Activity Class Published Data
 
 Class Type: Visible
 
-|   |   |
-|--------------------------|------------|
 | Element Name   | Field Type |
+|---------------------|------------|
 | Sequence ID   | int32   |
 | Notes   | string   |
 | Status   | enum   |
@@ -365,14 +342,12 @@ Class Type: Visible
 | Actual End Date   | date time  |
 | Display Name   | string   |
 
-Windows Operating System Class Published Data
----------------------------------------------
+## Windows Operating System Class Published Data
 
 Class Type: Hidden
 
-|   |   |
-|---------------------------------------|------------|
 | Element Name   | Field Type |
+|---------------------|------------|
 | Operating System Version   | string   |
 | Operating System Version Display Name | string   |
 | Product Type   | string   |
@@ -397,14 +372,12 @@ Class Type: Hidden
 | Notes   | string   |
 | Display Name   | string   |
 
-Program Class Published Data
-----------------------------
+## Program Class Published Data
 
 Class Type: Hidden
 
-|   |   |
-|---------------|------------|
 | Element Name  | Field Type |
+|---------------------|------------|
 | ProgramId   | string   |
 | Display name  | string   |
 | Program Name  | string   |
@@ -418,14 +391,12 @@ Class Type: Hidden
 | Notes   | string   |
 | Display Name  | string   |
 
-Email Notification Log for Trouble Tickets Class Published Data
----------------------------------------------------------------
+## Email Notification Log for Trouble Tickets Class Published Data
 
 Class Type: Hidden
 
-|   |   |
-|--------------|------------|
 | Element Name | Field Type |
+|---------------------|------------|
 | Body   | string   |
 | Subject   | string   |
 | Priority   | int32   |
@@ -435,14 +406,12 @@ Class Type: Hidden
 | ID   | string   |
 | Display Name | string   |
 
-System Center Management Group Class Published Data
----------------------------------------------------
+## System Center Management Group Class Published Data
 
 Class Type: Hidden
 
-|   |   |
-|-----------------------------------------------|------------|
 | Element Name   | Field Type |
+|---------------------|------------|
 | Management Group Name   | string   |
 | Management Group ID   | string   |
 | Data Access Service SCP   | string   |
@@ -472,14 +441,12 @@ Class Type: Hidden
 | Notes   | string   |
 | Display Name   | string   |
 
-File Attachment Class Published Data
-------------------------------------
+## File Attachment Class Published Data
 
 Class Type: Hidden
 
-|   |   |
-|--------------|------------|
 | Element Name | Field Type |
+|---------------------|------------|
 | Extension   | string   |
 | Description  | string   |
 | Content   | string   |
@@ -488,14 +455,12 @@ Class Type: Hidden
 | ID   | string   |
 | Display Name | string   |
 
-System Center Managed Computer (Client Operating System) Class Published Data
------------------------------------------------------------------------------
+## System Center Managed Computer (Client Operating System) Class Published Data
 
 Class Type: Hidden
 
-|   |   |
-|---------------------------------------|------------|
 | Element Name   | Field Type |
+|---------------------|------------|
 | Install Directory   | string   |
 | Principal Name   | string   |
 | DNS Name   | string   |
@@ -517,14 +482,12 @@ Class Type: Hidden
 | Notes   | string   |
 | Display Name   | string   |
 
-Synchronization Status Class Published Data
--------------------------------------------
+## Synchronization Status Class Published Data
 
 Class Type: Hidden
 
-|   |   |
-|-------------------------------|------------|
 | Element Name   | Field Type |
+|---------------------|------------|
 | Last Run Start Time   | date time  |
 | Last Run Finish Time   | date time  |
 | Status   | enum   |
@@ -560,14 +523,12 @@ Class Type: Hidden
 | Actual End Date   | date time  |
 | Display Name   | string   |
 
-Physical Disk (Concrete) Class Published Data
----------------------------------------------
+## Physical Disk (Concrete) Class Published Data
 
 Class Type: Hidden
 
-|   |   |
-|-----------------------|------------|
 | Element Name   | Field Type |
+|---------------------|------------|
 | Caption   | string   |
 | Index   | int32   |
 | Interface Type   | string   |
@@ -594,14 +555,12 @@ Class Type: Hidden
 | Notes   | string   |
 | Display Name   | string   |
 
-System Center Managed Computer (Server Operating System) Class Published Data
------------------------------------------------------------------------------
+## System Center Managed Computer (Server Operating System) Class Published Data
 
 Class Type: Hidden
 
-|   |   |
-|---------------------------------------|------------|
 | Element Name   | Field Type |
+|---------------------|------------|
 | Install Directory   | string   |
 | Principal Name   | string   |
 | DNS Name   | string   |
@@ -623,14 +582,12 @@ Class Type: Hidden
 | Notes   | string   |
 | Display Name   | string   |
 
-Operations Manager-Generated Incident Class Published Data
-----------------------------------------------------------
+## Operations Manager-Generated Incident Class Published Data
 
 Class Type: Hidden
 
-|   |   |
-|-------------------------------|------------|
 | Element Name   | Field Type |
+|---------------------|------------|
 | Management Group Name   | string   |
 | Management Pack Name   | string   |
 | Monitoring Rule Identifier   | string   |
@@ -674,14 +631,12 @@ Class Type: Hidden
 | Actual End Date   | date time  |
 | Display Name   | string   |
 
-Configuration Manager DCM Compliant CI Class Published Data
------------------------------------------------------------
+## Configuration Manager DCM Compliant CI Class Published Data
 
 Class Type: Hidden
 
-|   |   |
-|--------------------|------------|
 | Element Name   | Field Type |
+|--------------------|------------|
 | Description   | string   |
 | Unique ID   | string   |
 | SDM Package Digest | string   |
@@ -691,14 +646,12 @@ Class Type: Hidden
 | Notes   | string   |
 | Display Name   | string   |
 
-Domain User or Group Class Published Data
------------------------------------------
+## Domain User or Group Class Published Data
 
 Class Type: Hidden
 
-|   |   |
-|---------------------|------------|
 | Element Name   | Field Type |
+|---------------------|------------|
 | Domain   | string   |
 | User Name   | string   |
 | First Name   | string   |
@@ -726,14 +679,12 @@ Class Type: Hidden
 | Notes   | string   |
 | Display Name   | string   |
 
-Trouble Ticket Action Log Class Published Data
-----------------------------------------------
+## Trouble Ticket Action Log Class Published Data
 
 Class Type: Hidden
 
-|   |   |
-|--------------|------------|
 | Element Name | Field Type |
+|--------------|------------|
 | Action Type  | enum   |
 | Title   | string   |
 | Description  | string   |
@@ -742,14 +693,12 @@ Class Type: Hidden
 | ID   | string   |
 | Display Name | string   |
 
-End-user Portal Contact IT Settings Class Published Data
---------------------------------------------------------
+## End-user Portal Contact IT Settings Class Published Data
 
 Class Type: Hidden
 
-|   |   |
-|----------------------|------------|
 | Element Name   | Field Type |
+|----------------------|------------|
 | E-mail address   | string   |
 | E-mail response time | string   |
 | Support phone   | string   |
@@ -759,14 +708,12 @@ Class Type: Hidden
 | Chat response time   | string   |
 | Display Name   | string   |
 
-Desired Configuration Management Incident Class Published Data
---------------------------------------------------------------
+## Desired Configuration Management Incident Class Published Data
 
 Class Type: Hidden
 
-|   |   |
-|-------------------------------|------------|
 | Element Name   | Field Type |
+|---------------------|------------|
 | Site Identifier   | string   |
 | CI ID   | string   |
 | Baseline Identifier   | string   |
@@ -801,14 +748,12 @@ Class Type: Hidden
 | Actual End Date   | date time  |
 | Display Name   | string   |
 
-Site Management Server Class Published Data
--------------------------------------------
+## Site Management Server Class Published Data
 
 Class Type: Hidden
 
-|   |   |
-|----------------------------------------|------------|
 | Element Name   | Field Type |
+|----------------------------------------|------------|
 | Site ID   | string   |
 | Site Name   | string   |
 | Management Server SCP   | string   |
@@ -843,14 +788,12 @@ Class Type: Hidden
 | Notes   | string   |
 | Display Name   | string   |
 
-Processor (Concrete) Class Published Data
------------------------------------------
+## Processor (Concrete) Class Published Data
 
 Class Type: Hidden
 
-|   |   |
-|--------------------|------------|
 | Element Name   | Field Type |
+|--------------------|------------|
 | Manufacturer   | string   |
 | Speed   | int32   |
 | Data Width   | int32   |
@@ -873,14 +816,12 @@ Class Type: Hidden
 | Notes   | string   |
 | Display Name   | string   |
 
-Active Directory Printer Class Published Data
----------------------------------------------
+## Active Directory Printer Class Published Data
 
 Class Type: Hidden
 
-|   |   |
-|--------------------------------|------------|
 | Element Name   | Field Type |
+|--------------------------------|------------|
 | UNC Name   | string   |
 | Server Name   | string   |
 | Short Server Name   | string   |
@@ -927,14 +868,12 @@ Class Type: Hidden
 | Notes   | string   |
 | Display Name   | string   |
 
-Microsoft Software Update Class Published Data
-----------------------------------------------
+## Microsoft Software Update Class Published Data
 
 Class Type: Hidden
 
-|   |   |
-|---------------------|------------|
 | Element Name   | Field Type |
+|---------------------|------------|
 | Article Identifier  | string   |
 | Bulletin Identifier | string   |
 | Parent   | string   |
@@ -948,14 +887,12 @@ Class Type: Hidden
 | Notes   | string   |
 | Display Name   | string   |
 
-Incident Class Published Data
------------------------------
+## Incident Class Published Data
 
 Class Type: Visible
 
-|   |   |
-|-------------------------------|------------|
 | Element Name   | Field Type |
+|---------------------|------------|
 | Resolve By   | date time  |
 | Escalated   | boolean   |
 | Source   | enum   |
@@ -983,27 +920,23 @@ Class Type: Visible
 | Actual End Date   | date time  |
 | Display Name   | string   |
 
-Billable Time Class Published Data
-----------------------------------
+## Billable Time Class Published Data
 
 Class Type: Hidden
 
-|   |   |
-|-----------------|------------|
 | Element Name   | Field Type |
+|-----------------|------------|
 | Time In Minutes | int32   |
 | Last Updated   | date time  |
 | ID   | string   |
 | Display Name   | string   |
 
-Review Activity Class Published Data
-------------------------------------
+## Review Activity Class Published Data
 
 Class Type: Visible
 
-|   |   |
-|--------------------------------------------|------------|
 | Element Name   | Field Type |
+|--------------------------------------------|------------|
 | Approval Condition   | enum   |
 | Approval Percentage   | int32   |
 | Comments   | string   |
@@ -1026,14 +959,12 @@ Class Type: Visible
 | Actual End Date   | date time  |
 | Display Name   | string   |
 
-Management Service Watcher (Collection Management Server) Class Published Data
-------------------------------------------------------------------------------
+## Management Service Watcher (Collection Management Server) Class Published Data
 
 Class Type: Hidden
 
-|   |   |
-|-------------------------|------------|
 | Element Name   | Field Type |
+|-------------------------|------------|
 | Management Service ID   | string   |
 | Management Service Name | string   |
 | Object Status   | enum   |
@@ -1041,14 +972,12 @@ Class Type: Hidden
 | Notes   | string   |
 | Display Name   | string   |
 
-Computer (Deployed) Class Published Data
-----------------------------------------
+## Computer (Deployed) Class Published Data
 
 Class Type: Hidden
 
-|   |   |
-|----------------------|------------|
 | Element Name   | Field Type |
+|----------------------|------------|
 | Hardware Identifier  | string   |
 | SMBIOS UUID   | string   |
 | MAC Addresses   | string   |
@@ -1066,14 +995,12 @@ Class Type: Hidden
 | Notes   | string   |
 | Display Name   | string   |
 
-Windows Client Class Published Data
------------------------------------
+## Windows Client Class Published Data
 
 Class Type: Hidden
 
-|   |   |
-|---------------------------------------|------------|
 | Element Name   | Field Type |
+|---------------------------------------|------------|
 | Principal Name   | string   |
 | DNS Name   | string   |
 | NetBIOS Computer Name   | string   |
@@ -1094,14 +1021,12 @@ Class Type: Hidden
 | Notes   | string   |
 | Display Name   | string   |
 
-Network Adapter (Concrete) Class Published Data
------------------------------------------------
+## Network Adapter (Concrete) Class Published Data
 
 Class Type: Hidden
 
-|   |   |
-|--------------------|------------|
 | Element Name   | Field Type |
+|--------------------|------------|
 | Adapter Type   | string   |
 | Index   | int32   |
 | Manufacturer   | string   |
@@ -1127,40 +1052,34 @@ Class Type: Hidden
 | Notes   | string   |
 | Display Name   | string   |
 
-Inbound Email Rule Class Published Data
----------------------------------------
+## Inbound Email Rule Class Published Data
 
 Class Type: Hidden
 
-|   |   |
-|--------------|------------|
 | Element Name | Field Type |
+|--------------|------------|
 | IsEnabled   | boolean   |
 | SMTPDomain   | string   |
 | Service   | string   |
 | Display Name | string   |
 
-Localization Class Published Data
----------------------------------
+## Localization Class Published Data
 
 Class Type: Hidden
 
-|   |   |
-|--------------|------------|
 | Element Name | Field Type |
+|--------------|------------|
 | ID   | string   |
 | Time zone   | string   |
 | Locale ID   | int32   |
 | Display Name | string   |
 
-Management Service Watcher Group (Collection Management Server) Class Published Data
-------------------------------------------------------------------------------------
+## Management Service Watcher Group (Collection Management Server) Class Published Data
 
 Class Type: Hidden
 
-|   |   |
-|---------------------------------------|------------|
 | Element Name   | Field Type |
+|---------------------------------------|------------|
 | Watcher Group Name   | string   |
 | Root Management Server Principal Name | string   |
 | Object Status   | enum   |
@@ -1168,14 +1087,12 @@ Class Type: Hidden
 | Notes   | string   |
 | Display Name   | string   |
 
-Management Service Watcher Group (Gateway Management Server) Class Published Data
----------------------------------------------------------------------------------
+## Management Service Watcher Group (Gateway Management Server) Class Published Data
 
 Class Type: Hidden
 
-|   |   |
-|---------------------------------------|------------|
 | Element Name   | Field Type |
+|---------------------------------------|------------|
 | Watcher Group Name   | string   |
 | Root Management Server Principal Name | string   |
 | Object Status   | enum   |
@@ -1183,14 +1100,12 @@ Class Type: Hidden
 | Notes   | string   |
 | Display Name   | string   |
 
-Text Message Notification Log for Trouble Tickets Class Published Data
-----------------------------------------------------------------------
+## Text Message Notification Log for Trouble Tickets Class Published Data
 
 Class Type: Hidden
 
-|   |   |
-|--------------|------------|
 | Element Name | Field Type |
+|--------------|------------|
 | Message   | string   |
 | Encoding   | string   |
 | Sent To   | string   |
@@ -1198,14 +1113,12 @@ Class Type: Hidden
 | ID   | string   |
 | Display Name | string   |
 
-Portal Software Deployment Activity Class Published Data
---------------------------------------------------------
+## Portal Software Deployment Activity Class Published Data
 
 Class Type: Hidden
 
-|   |   |
-|--------------------------|------------|
 | Element Name   | Field Type |
+|--------------------------|------------|
 | Package ID   | string   |
 | Machine Name   | string   |
 | Error Message   | string   |
@@ -1227,14 +1140,12 @@ Class Type: Hidden
 | Actual End Date   | date time  |
 | Display Name   | string   |
 
-Logical Disk (Concrete) Class Published Data
---------------------------------------------
+## Logical Disk (Concrete) Class Published Data
 
 Class Type: Hidden
 
-|   |   |
-|---------------------------------|------------|
 | Element Name   | Field Type |
+|---------------------------------|------------|
 | File System   | string   |
 | Compressed   | string   |
 | Size (MB)   | int32   |
@@ -1290,14 +1201,12 @@ Class Type: Hidden
 | Actual End Date   | date time  |
 | Display Name   | string   |
 
-Operations Manager Connector Synchronization Class Published Data
------------------------------------------------------------------
+## Operations Manager Connector Synchronization Class Published Data
 
 Class Type: Hidden
 
-|   |   |
-|---------------|------------|
 | Element Name  | Field Type |
+|---------------|------------|
 | Data   | string   |
 | SyncMetadata  | string   |
 | Object Status | enum   |
@@ -1305,14 +1214,12 @@ Class Type: Hidden
 | Notes   | string   |
 | Display Name  | string   |
 
-System Center Managed Windows Computer Class Published Data
------------------------------------------------------------
+## System Center Managed Windows Computer Class Published Data
 
 Class Type: Hidden
 
-|   |   |
-|---------------------------------------|------------|
 | Element Name   | Field Type |
+|---------------------------------------|------------|
 | Install Directory   | string   |
 | Principal Name   | string   |
 | DNS Name   | string   |
@@ -1334,14 +1241,12 @@ Class Type: Hidden
 | Notes   | string   |
 | Display Name   | string   |
 
-System Center Operations Manager Connector Class Published Data
----------------------------------------------------------------
+## System Center Operations Manager Connector Class Published Data
 
 Class Type: Hidden
 
-|   |   |
-|---------------------------|------------|
 | Element Name   | Field Type |
+|---------------------------|------------|
 | SolutionName   | string   |
 | DataProviderName   | string   |
 | DataProviderDisplayName   | string   |
@@ -1361,14 +1266,12 @@ Class Type: Hidden
 | Is Discovery Data Shared  | boolean   |
 | Display Name   | string   |
 
-Disk Partition Class Published Data
------------------------------------
+## Disk Partition Class Published Data
 
 Class Type: Hidden
 
-|   |   |
-|--------------------|------------|
 | Element Name   | Field Type |
+|--------------------|------------|
 | Disk Index   | int32   |
 | Block Size   | int32   |
 | Primary Partition  | string   |
@@ -1383,14 +1286,12 @@ Class Type: Hidden
 | Notes   | string   |
 | Display Name   | string   |
 
-Windows Domain Controller Class Published Data
-----------------------------------------------
+## Windows Domain Controller Class Published Data
 
 Class Type: Hidden
 
-|   |   |
-|---------------------------------------|------------|
 | Element Name   | Field Type |
+|---------------------------------------|------------|
 | Is Virtual Node   | boolean   |
 | Principal Name   | string   |
 | DNS Name   | string   |
@@ -1412,14 +1313,12 @@ Class Type: Hidden
 | Notes   | string   |
 | Display Name   | string   |
 
-Package Class Published Data
-----------------------------
+## Package Class Published Data
 
 Class Type: Hidden
 
-|   |   |
-|---------------|------------|
 | Element Name  | Field Type |
+|---------------|------------|
 | Package ID   | string   |
 | Name   | string   |
 | Version   | string   |
@@ -1433,14 +1332,12 @@ Class Type: Hidden
 | Notes   | string   |
 | Display Name  | string   |
 
-Reviewer Class Published Data
------------------------------
+## Reviewer Class Published Data
 
 Class Type: Hidden
 
-|   |   |
-|---------------------|------------|
 | Element Name   | Field Type |
+|---------------------|------------|
 | Reviewer Identifier | string   |
 | Decision   | enum   |
 | Decision Date   | date time  |
@@ -1449,14 +1346,12 @@ Class Type: Hidden
 | Must Vote   | boolean   |
 | Display Name   | string   |
 
-Business Service Class Published Data
--------------------------------------
+## Business Service Class Published Data
 
 Class Type: Hidden
 
-|   |   |
-|-------------------------------|------------|
 | Element Name   | Field Type |
+|---------------------|------------|
 | Service ID   | string   |
 | Service Description   | string   |
 | Business Detailed Description | string   |
@@ -1471,14 +1366,12 @@ Class Type: Hidden
 | Notes   | string   |
 | Display Name   | string   |
 
-Announcement Class Published Data
----------------------------------
+## Announcement Class Published Data
 
 Class Type: Hidden
 
-|   |   |
-|-----------------|------------|
 | Element Name   | Field Type |
+|-----------------|------------|
 | ID   | string   |
 | Title   | string   |
 | Body   | string   |
@@ -1486,14 +1379,12 @@ Class Type: Hidden
 | Priority   | enum   |
 | Display Name   | string   |
 
-Knowledge Article Class Published Data
---------------------------------------
+## Knowledge Article Class Published Data
 
 Class Type: Visible
 
-|   |   |
-|----------------------------|------------|
 | Element Name   | Field Type |
+|----------------------------|------------|
 | Knowledge Article Type   | enum   |
 | Knowledge Article Template | string   |
 | Knowledge Article Owner   | string   |
@@ -1518,55 +1409,47 @@ Class Type: Visible
 | Notes   | string   |
 | Display Name   | string   |
 
-System Center Operations Manager Enterprise License Class Published Data
-------------------------------------------------------------------------
+## System Center Operations Manager Enterprise License Class Published Data
 
 Class Type: Hidden
 
-|   |   |
-|---------------|------------|
 | Element Name  | Field Type |
+|---------------|------------|
 | Object Status | enum   |
 | Asset Status  | enum   |
 | Notes   | string   |
 | Display Name  | string   |
 
-Trouble Ticket User Comments Class Published Data
--------------------------------------------------
+## Trouble Ticket User Comments Class Published Data
 
 Class Type: Hidden
 
-|   |   |
-|--------------|------------|
 | Element Name | Field Type |
+|--------------|------------|
 | Comment   | string   |
 | Entered By   | string   |
 | Entered Date | date time  |
 | ID   | string   |
 | Display Name | string   |
 
-Software Deployment Process Class Published Data
-------------------------------------------------
+## Software Deployment Process Class Published Data
 
 Class Type: Hidden
 
-|   |   |
-|---------------------------|------------|
 | Element Name   | Field Type |
+|---------------------------|------------|
 | ProcessId   | string   |
 | ChangeRequestTemplateId   | string   |
 | ChangeRequestTemplateName | string   |
 | Description   | string   |
 | Display Name   | string   |
 
-Problem Class Published Data
-----------------------------
+## Problem Class Published Data
 
 Class Type: Hidden
 
-|   |   |
-|-------------------------------|------------|
 | Element Name   | Field Type |
+|---------------------|------------|
 | Status   | enum   |
 | Source   | enum   |
 | Classification   | enum   |
@@ -1594,14 +1477,12 @@ Class Type: Hidden
 | Actual End Date   | date time  |
 | Display Name   | string   |
 
-Software Updates Class Published Data
--------------------------------------
+## Software Updates Class Published Data
 
 Class Type: Hidden
 
-|   |   |
-|---------------|------------|
 | Element Name  | Field Type |
+|---------------|------------|
 | Vendor   | string   |
 | Title   | string   |
 | Object Status | enum   |
@@ -1609,14 +1490,12 @@ Class Type: Hidden
 | Notes   | string   |
 | Display Name  | string   |
 
-Management Service Watcher (Site Management Server) Class Published Data
-------------------------------------------------------------------------
+## Management Service Watcher (Site Management Server) Class Published Data
 
 Class Type:
 
-|   |   |
-|-------------------------|------------|
 | Element Name   | Field Type |
+|-------------------------|------------|
 | Management Service ID   | string   |
 | Management Service Name | string   |
 | Object Status   | enum   |
@@ -1624,14 +1503,12 @@ Class Type:
 | Notes   | string   |
 | Display Name   | string   |
 
-Site Class Published Data
--------------------------
+## Site Class Published Data
 
 Class Type: Hidden
 
-|   |   |
-|-------------------------------|------------|
 | Element Name   | Field Type |
+|---------------------|------------|
 | Site Name   | string   |
 | Object Status   | enum   |
 | Asset Status   | enum   |
@@ -1666,28 +1543,24 @@ Class Type: Hidden
 | Actual End Date   | date time  |
 | Display Name   | string   |
 
-Trouble Ticket Audit Log Class Published Data
----------------------------------------------
+## Trouble Ticket Audit Log Class Published Data
 
 Class Type: Hidden
 
-|   |   |
-|--------------|------------|
 | Element Name | Field Type |
+|--------------|------------|
 | Comment   | string   |
 | Entered By   | string   |
 | Entered Date | date time  |
 | ID   | string   |
 | Display Name | string   |
 
-Configuration Manager DCM Noncompliant CI Class Published Data
---------------------------------------------------------------
+## Configuration Manager DCM Noncompliant CI Class Published Data
 
 Class Type: Hidden
 
-|   |   |
-|-------------------------------|------------|
 | Element Name   | Field Type |
+|---------------------|------------|
 | Max Noncompliance Criticality | int32   |
 | Baseline Unique ID   | string   |
 | CI Unique ID   | string   |
@@ -1699,14 +1572,10 @@ Class Type: Hidden
 | Notes   | string   |
 | Display Name   | string   |
 
-Windows Client Operating System Class Published Data
-----------------------------------------------------
+## Windows Client Operating System Class Published Data
 
-Class Type:
-
-|   |   |
-|---------------------------------------|------------|
 | Element Name   | Field Type |
+|---------------------------------------|------------|
 | Operating System Version   | string   |
 | Operating System Version Display Name | string   |
 | Product Type   | string   |

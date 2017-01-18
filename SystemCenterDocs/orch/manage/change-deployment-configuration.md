@@ -15,8 +15,7 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-Change Deployment Configuration
-===============================
+# Change Deployment Configuration
 
 Applies To: System Center 2016 - Orchestrator
 
@@ -24,8 +23,7 @@ The **Change Deployment Configuration** activity initiates a change to the deplo
 
 The activity publishes all of the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
 
-Change Deployment Configuration Required Properties
----------------------------------------------------
+## Change Deployment Configuration Required Properties
 
 | **Element**   | **Description**   | **Valid values**   |
 |:---|:---|:---|
@@ -34,13 +32,11 @@ Change Deployment Configuration Required Properties
 | Service Configuration File Path | The path to the service configuration file for the deployment.   | String   |
 | Wait for Completion   | Whether to wait for this operation to complete in Windows Azure before moving on to the next activity. | True, False   |
 
-Change Deployment Configuration Optional Properties
----------------------------------------------------
+## Change Deployment Configuration Optional Properties
 
 There are no optional properties for this runbook activity.
 
-Change Deployment Configuration Published Data
-----------------------------------------------
+## Change Deployment Configuration Published Data
 
 | **Element**   | **Description**   | **Value type** |
 |:---|:---|:---|
@@ -66,8 +62,8 @@ Change Deployment Configuration Published Data
 | Service Configuration File Path | The path to the service configuration file for the deployment.   | String   |
 | Wait for Completion   | Whether to wait for this operation to complete in Windows Azure before moving on to the next activity. | Boolean   |
 
-See Also
---------
+## See Also
+
 
 #### Other Resources
 

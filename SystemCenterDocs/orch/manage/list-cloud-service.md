@@ -15,8 +15,7 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-List Cloud Service
-==================
+# List Cloud Service
 
 Applies To: System Center 2016 - Orchestrator
 
@@ -24,18 +23,15 @@ The **List Cloud Service** activity lists the cloud services available under the
 
 The activity publishes all of the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
 
-List Cloud Service Required Properties
---------------------------------------
+## List Cloud Service Required Properties
 
 There are no required properties for this runbook activity.
 
-List Cloud Service Optional Properties
---------------------------------------
+## List Cloud Service Optional Properties
 
 There are no optional properties for this runbook activity.
 
-List Cloud Service Published Data
----------------------------------
+## List Cloud Service Published Data
 
 | **Element**   | **Description**   | **Value type** |
 |:---|:---|:---|
@@ -49,8 +45,8 @@ List Cloud Service Published Data
 | Label   | A friendly name for the cloud service.   | String   |
 | Description   | A description for the cloud service.   | String   |
 
-See Also
---------
+## See Also
+
 
 #### Other Resources
 

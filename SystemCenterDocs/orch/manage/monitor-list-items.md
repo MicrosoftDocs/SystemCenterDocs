@@ -15,8 +15,7 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-Monitor List Items
-==================
+# Monitor List Items
 
 Applies To: System Center 2016 - Orchestrator
 
@@ -24,8 +23,7 @@ The **Monitor List Items** activity is used in a runbook to monitor a Microsoft 
 
 The following tables list the filters, required properties, and Published Data for this activity. Additional filters and Published Data are generated, which are based on the SharePoint list that is retrieved when you define the activity.
 
-Monitor List Items Required Properties
---------------------------------------
+## Monitor List Items Required Properties
 
 | **Element**   | **Description**   | **Valid values** |
 |:---|:---|:---|
@@ -34,8 +32,7 @@ Monitor List Items Required Properties
 | Monitor Modified Items | A Boolean value that indicates whether to monitor the list for modified items.   | True<br>False   |
 | Monitor Interval   | The number of seconds that the monitor waits between subsequent monitoring sessions. | Integer   |
 
-Montior List Items Filters
---------------------------
+## Monitor List Items Filters
 
 | **Element** | **Description**   | **Valid values**   |
 |:---|:---|:---|
@@ -45,8 +42,7 @@ Montior List Items Filters
 | Modified   | The date and time when the item was last modified. | Equals<br>Does not equal<br>Is less than or equal to<br>Is greater than or equal to<br>Is less than<br>Is greater than |
 | Modified By | The name of the user who last modified the item.   | Equals<br>Does not equal   |
 
-Monitor List Items Published Data
----------------------------------
+## Monitor List Items Published Data
 
 | **Element**   | **Description**   | **Value type** |
 |:---|:---|:---|
@@ -59,10 +55,9 @@ Monitor List Items Published Data
 | Modified By   | The name of the user who last modified the item.   | String   |
 | SharePoint Site | The URL of the SharePoint site.   | String   |
 
-See Also
---------
+## See Also
+
 
 #### Other Resources
 
 [Using Runbooks in System Center 2016 - Orchestrator](https://technet.microsoft.com/en-us/library/hh403791.aspx)
-
