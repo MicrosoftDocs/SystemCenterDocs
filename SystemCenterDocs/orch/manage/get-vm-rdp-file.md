@@ -15,8 +15,7 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-Get VM RDP File
-===============
+# Get VM RDP File
 
 Applies To: System Center 2016 - Orchestrator
 
@@ -24,8 +23,7 @@ The **Get VM RDP File** activity retrieves the Remote Desktop Protocol configura
 
 The activity publishes all of the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
 
-Get VM RDP File Required Properties
------------------------------------
+## Get VM RDP File Required Properties
 
 | **Element**   | **Description**   | **Valid values** |
 |:---|:---|:---|
@@ -35,13 +33,11 @@ Get VM RDP File Required Properties
 | Location to Save RDP File | The local path to which you want to save the RDP file.   | String   |
 | RDP File Name   | The file name to use when saving the RDP file.   | String   |
 
-Get VM RDP File Optional Properties
------------------------------------
+## Get VM RDP File Optional Properties
 
 There are no optional properties for this runbook activity.
 
-Get VM RDP File Published Data
-------------------------------
+## Get VM RDP File Published Data
 
 | **Element**   | **Description**   | **Value type** |
 |:---|:---|:---|
@@ -51,8 +47,8 @@ Get VM RDP File Published Data
 | Location to Save RDP File | The local path to which the RDP file was saved.   |   |
 | RDP File Name   | The name of the RDP file for the virtual machine.   | String   |
 
-See Also
---------
+## See Also
+
 
 #### Other Resources
 

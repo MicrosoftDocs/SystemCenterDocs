@@ -15,8 +15,7 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-Delete Storage Account
-======================
+# Delete Storage Account
 
 Applies To: System Center 2016 - Orchestrator
 
@@ -24,27 +23,24 @@ The **Delete Storage Account** activity deletes the specified storage account fr
 
 The activity publishes all of the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
 
-Delete Storage Account Required Properties
-------------------------------------------
+## Delete Storage Account Required Properties
 
 | **Element**   | **Description**   | **Valid values** |
 |:---|:---|:---|
 | Storage Account Name | The name of the storage account. | String   |
 
-Delete Storage Account Optional Properties
-------------------------------------------
+## Delete Storage Account Optional Properties
 
 There are no optional properties for this runbook activity.
 
-Delete Storage Account Published Data
--------------------------------------
+## Delete Storage Account Published Data
 
 | **Element**   | **Description**   | **Value type** |
 |:---|:---|:---|
 | Storage Account Name | The name of the storage account. | String   |
 
-See Also
---------
+## See Also
+
 
 #### Other Resources
 

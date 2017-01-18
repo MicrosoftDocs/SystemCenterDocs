@@ -15,8 +15,7 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-Delete Management Certificate
-=============================
+# Delete Management Certificate
 
 Applies To: System Center 2016 - Orchestrator
 
@@ -24,21 +23,18 @@ The **Delete Management Certificate** activity is used in a runbook to delete a 
 
 The activity publishes all of the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
 
-Delete Management Certificate Required Properties
--------------------------------------------------
+## Delete Management Certificate Required Properties
 
 | **Element**   | **Description**   | **Valid values** |
 |:---|:---|:---|
 | Certificate File Path | The path to the management certificate file. | String   |
 | Certificate File Type | The type of the management certificate file. | CER, PFX   |
 
-Delete Management Certificate Optional Properties
--------------------------------------------------
+## Delete Management Certificate Optional Properties
 
 There are no optional properties for this runbook activity.
 
-Delete Management Certificate Published Data
---------------------------------------------
+## Delete Management Certificate Published Data
 
 | **Element**   | **Description**   | **Value type** |
 |:---|:---|:---|
@@ -46,8 +42,8 @@ Delete Management Certificate Published Data
 | Certificate File Path | The path to the management certificate file.   | String   |
 | Certificate File Type | The type of the management certificate file.   | String   |
 
-See Also
---------
+## See Also
+
 
 #### Other Resources
 

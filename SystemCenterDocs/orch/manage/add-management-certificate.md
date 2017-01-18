@@ -15,8 +15,7 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-Add Management Certificate
-==========================
+# Add Management Certificate
 
 Applies To: System Center 2016 - Orchestrator
 
@@ -24,21 +23,18 @@ The **Add Management Certificate** activity is used in a runbook to add a certif
 
 The activity publishes all of the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
 
-Add Management Certificate Required Properties
-----------------------------------------------
+## Add Management Certificate Required Properties
 
 | **Element**   | **Description**   | **Valid values** |
 |:---|:---|:---|
 | Certificate File Path | The path to the management certificate file. | String   |
 | Certificate File Type | The type of the management certificate file. | CER, PFX   |
 
-Add Management Certificate Optional Properties
-----------------------------------------------
+## Add Management Certificate Optional Properties
 
 There are no optional properties for this runbook activity.
 
-Add Management Certificate Published Data
------------------------------------------
+## Add Management Certificate Published Data
 
 | **Element**   | **Description**   | **Value type** |
 |:---|:---|:---|
@@ -46,8 +42,8 @@ Add Management Certificate Published Data
 | Certificate File Path | The path to the management certificate file.   | String   |
 | Certificate File Type | The type of the management certificate file.   | String   |
 
-See Also
---------
+## See Also
+
 
 #### Other Resources
 

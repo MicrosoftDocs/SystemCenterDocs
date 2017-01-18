@@ -15,8 +15,7 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-Move VM Activity
-================
+# Move VM Activity
 
 Applies To: System Center 2016 - Orchestrator
 
@@ -29,29 +28,26 @@ The activity publishes all of the data from the required and optional properties
 ### Move VM Activity Required Properties
 
 | Element   | Description   | Valid Values | Look up |
-| Destination Datastore   | The name of the data store that the moved virtual machine will use. If you leave this field blank, the current data store is used.   | String   | Yes   |
 |:---|:---|:---|:---|
+| Destination Datastore   | The name of the data store that the moved virtual machine will use. If you leave this field blank, the current data store is used.   | String   | Yes   |
 | Destination Host System   | The path of the destination host system.   | String   | Yes   |
 | Destination Resource Pool | The path of the destination resource pool that the moved virtual machine will use. If you leave this field blank:<br> The current host is used if the resource pool is not specified.<br> If the resource pool is specified, and the target pool represents a stand-alone host, the stand-alone host is used.<br> If the resource pool is specified, and the target pool represents a DRS-enabled cluster, a host selected by DRS is used. You cannot specify a target pool that represents a cluster where DRS is not enabled. | String   | Yes   |
 | VM Path   | The path to the virtual machine to be moved.   | String   | Yes   |
 
 ### Move VM Activity Optional Properties
 
-|   |
-|--------------------------------------------------------|
-| No optional properties are provided for this activity. |
+No optional properties are provided for this activity.
 
 ### Move VM Activity Published Data
 
 | Name   | Description   | Value Type |
-| Destination Datastore   | The name of the datastore that the moved virtual machine will use. | String   |
 |:---|:---|:---|
+| Destination Datastore   | The name of the datastore that the moved virtual machine will use. | String   |
 | Destination Host System   | The path of the destination host system.   | String   |
 | Destination Resource Pool | The path of the destination resource pool.   | String   |
 | VM Path   | The path to the virtual machine that was moved.   | String   |
 
-Configuring the Move VM Activity
---------------------------------
+## Configuring the Move VM Activity
 
 The following procedure describes the steps required to configure a Move VM activity.
 
@@ -68,5 +64,3 @@ The following procedure describes the steps required to configure a Move VM acti
         You can also use published data to automatically populate the value of the property from the data output by a previous activity in the workflow.
 
 4.  Click **Finish**.
-
-

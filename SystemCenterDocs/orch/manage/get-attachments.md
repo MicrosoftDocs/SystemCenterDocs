@@ -15,8 +15,7 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-Get Attachments
-===============
+# Get Attachments
 
 Applies To: System Center 2016 - Orchestrator
 
@@ -24,16 +23,14 @@ The **Get Attachments** activity is used in a runbook to retrieve details from t
 
 The following tables list the filters, required properties, and Published Data for this activity.
 
-Get Attachments Required Properties
------------------------------------
+## Get Attachments Required Properties
 
 | **Element** | **Description**   | **Valid values** |
 |:---|:---|:---|
 | ID   | The ID of the list item to be searched.   | Integer   |
 | List Name   | The name of the SharePoint list that contains the item to be queried. | String   |
 
-Get Attachments Filters
------------------------
+## Get Attachments Filters
 
 | **Element** | **Description**   | **Valid values**   |
 |:---|:---|:---|
@@ -44,8 +41,7 @@ Get Attachments Filters
 | Title   | The title of the attachment.   | Equals<br>Does not equal<br>Contains<br>Starts with   |
 | URL Path   | The server relative path of the attachment.   | Equals<br>Does not equal   |
 
-Get Attachments Published Data
-------------------------------
+## Get Attachments Published Data
 
 | **Element**   | **Description**   | **Value type** |
 |:---|:---|:---|
@@ -60,8 +56,8 @@ Get Attachments Published Data
 | Title   | The title of the attachment.   | String   |
 | URL Path   | The server relative path of the attachment.   | String   |
 
-See Also
---------
+## See Also
+
 
 #### Other Resources
 

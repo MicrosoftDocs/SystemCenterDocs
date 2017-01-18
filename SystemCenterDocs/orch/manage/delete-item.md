@@ -15,8 +15,7 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-Delete Item
-===========
+# Delete Item
 
 Applies To: System Center 2016 - Orchestrator
 
@@ -24,16 +23,14 @@ The Delete Item activity is used in a runbook to delete existing appointments, c
 
 The following tables list the required properties and published data for this activity.
 
-Delete Item Required Properties
--------------------------------
+## Delete Item Required Properties
 
 | **Element** | **Description**   | **Valid values**   |
 |:---|:---|:---|
 | ID   | The ID of the item to be deleted | String   |
 | Mode   | The delete mode   | Hard Delete<br>Soft Delete<br>Move to Deleted Items |
 
-Delete Item Published Data
---------------------------
+## Delete Item Published Data
 
 | **Element**   | **Description**   | **Valid values** |
 |:---|:---|:---|

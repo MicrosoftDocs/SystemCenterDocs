@@ -15,8 +15,7 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-HP iLO and OA Integration Pack for System Center 2016 - Orchestrator
-====================================================================
+# HP iLO and OA Integration Pack for System Center 2016 - Orchestrator
 
 Applies To: System Center 2016 - Orchestrator
 
@@ -24,8 +23,7 @@ The Integration Pack for HP iLO and OA is an add-on for System Center 2016 - Orc
 
 Microsoft is committed to protecting your privacy, while delivering software that brings you the performance, power, and convenience you want. For more information, see the [System Center Orchestrator 2016 Privacy Statement](https://www.microsoft.com/en-us/privacystatement/EnterpriseDev/default.aspx).
 
-System Requirements
--------------------
+## System Requirements
 
 The Integration Pack for HP iLO and OA requires the following software to be installed and configured prior to implementing the integration. For more information about installing and configuring Orchestrator and HP iLO and OA, refer to the respective product documentation.
 
@@ -34,18 +32,15 @@ The Integration Pack for HP iLO and OA requires the following software to be ins
 -   HP iLO 3
 -   HP OA firmware 3.31
 
-Downloading the Integration Pack
---------------------------------
+## Downloading the Integration Pack
 
 To download this integration pack, see [HP iLO and OA Integration Pack for System Center 2016 - Orchestrator.](https://www.microsoft.com/en-us/download/details.aspx?id=54102).
 
-Registering and Deploying the Integration Pack
-----------------------------------------------
+## Registering and Deploying the Integration Pack
 
 After you download the integration pack file, you must register it with the Orchestrator management server and then deploy it to Runbook servers and Runbook Designers. For the procedures on installing integration packs, see [How To Install an Integration Pack](http://go.microsoft.com/fwlink/?LinkID=239936).
 
-Default Credentials
--------------------
+## Default Credentials
 
 Default credentials are used to store a common set of credentials that can be selected when configuring a HP iLO and OA connection.
 
@@ -63,8 +58,7 @@ Default credentials are used to store a common set of credentials that can be se
 
 6.  Click **OK** to close the default credentials dialog box.
 
-Configuring the HP iLO and OA Connections
------------------------------------------
+## Configuring the HP iLO and OA Connections
 
 A connection establishes a reusable link between Orchestrator and a HP iLO and OA system. You can create as many connections as you require to specify links to multiple systems running HP iLO and OA. You can also create multiple connections to the same system to allow for differences in security permissions for different user accounts.
 
@@ -94,8 +88,7 @@ A connection establishes a reusable link between Orchestrator and a HP iLO and O
 
 12. Select the connection and click the **Test** button. **Test connection succeeded** will appear when the connection is valid. Click **Finish**.
 
-Exporting and Importing Connections
------------------------------------
+## Exporting and Importing Connections
 
 Connections can be exported and imported into the connections list.
 
@@ -123,8 +116,7 @@ Connections can be exported and imported into the connections list.
 
 5.  Click **OK** to close the configuration dialog box and then click **Finish**.
 
-Configuring the HP iLO and OA Groups
-------------------------------------
+## Configuring the HP iLO and OA Groups
 
 A group establishes a reusable list of connections between Orchestrator and a HP iLO and OA systems. You can create as many groups as you require to specify lists to multiple systems running HP iLO and OA.
 

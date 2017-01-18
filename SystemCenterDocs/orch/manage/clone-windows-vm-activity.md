@@ -15,8 +15,7 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-Clone Windows VM Activity
-=========================
+# Clone Windows VM Activity
 
 Applies To: System Center 2016 - Orchestrator
 
@@ -28,15 +27,27 @@ The activity publishes all of the data from the required and optional properties
 
 With the exception of "Source VM/Template Path," all properties and published data refer to the destination VM produced by the clone operation.
 
-<br><br><strong>Note</strong><br>To support multiple network adapters, the IP Address, Subnet Mask, Gateway, and DNS Suffix optional properties support a comma-separated list of values. Each list must have the same number of values. For example, to assign network details to three network adapters, use the following format:<br> IP Address = 192.168.0.2, DHCP, 10.0.0.3<br> Subnet Mask = 255.255.255.0, DHCP, 255.0.0.0<br> Gateway = 192.168.0.1, DHCP, 10.0.0.1<br> DNS Suffix = a.com, b.com, c.com<br> The value DHCP causes that network adapter value to be assigned by a DHCP server. If no IP address is specified for a network adapter, it will be assigned by a DHCP server.<br><br>
+>[!NOTE]
+>To support multiple network adapters, the IP Address, Subnet Mask, Gateway, and DNS Suffix optional properties support a comma-separated list of values. Each list must have the same number of values. For example, to assign network details to three network adapters, use the following format:
+- IP Address = 192.168.0.2, DHCP, 10.0.0.3
+- Subnet Mask = 255.255.255.0, DHCP, 255.0.0.0
+- Gateway = 192.168.0.1, DHCP, 10.0.0.1
+- DNS Suffix = a.com, b.com, c.com
 
-<br><br><strong>Note</strong><br>If you clone an existing Windows virtual machine with guest customizations, such as IP Address, Admin Password, Computer Name, and so on, and you want to verify these customizations on the new cloned virtual machine, follow the steps below:<br> After the clone operation completes, ensure that the cloned virtual machine is turned on in the vSphere client.<br> After the cloned virtual machine boots to the lock screen, wait two minutes.<br> After the cloned virtual machine automatically reboots, the VMware customization message appears.<br> After the cloned VM reboots for a second time to the lock screen, wait two minutes.<br> Verify that all the customizations (which you specified in the Properties dialog box of this activity) in vSphere client. You can view these customizations on the Virtual Machine Properties dialog box, or the Summary tab window, or you can log into the guest operating system in the vSphere console.<br><br>
+>The value DHCP causes that network adapter value to be assigned by a DHCP server. If no IP address is specified for a network adapter, it will be assigned by a DHCP server.
+
+>[!NOTE]
+>If you clone an existing Windows virtual machine with guest customizations, such as IP Address, Admin Password, Computer Name, and so on, and you want to verify these customizations on the new cloned virtual machine, follow the steps below:
+1. After the clone operation completes, ensure that the cloned virtual machine is turned on in the vSphere client.
+1. After the cloned virtual machine boots to the lock screen, wait two minutes.
+1. After the cloned virtual machine automatically reboots, the VMware customization message appears.  After the cloned VM reboots for a second time to the lock screen, wait two minutes.
+1. Verify all the customizations (which you specified in the Properties dialog box of this activity) in vSphere client. You can view these customizations on the Virtual Machine Properties dialog box, or the Summary tab window, or you can log into the guest operating system in the vSphere console.
 
 ### Clone Windows VM Activity Required Properties
 
 | Element   | Description   | Valid Values | Look up |
-| Clone Task Timeout in seconds | The number of seconds for the clone activity to complete before timing out. The activity will fail if the clone operation has not completed within the configured time.   | Integer   | No   |
 |:---|:---|:---|:---|
+| Clone Task Timeout in seconds | The number of seconds for the clone activity to complete before timing out. The activity will fail if the clone operation has not completed within the configured time.   | Integer   | No   |
 | Customize   | Indicates whether the virtual machine computer settings are customized after the virtual machine is cloned. If set to False, any guest customizations such as IP address or DNS name will not be applied. | Boolean   | Yes   |
 | Datastore Path   | The data store name that the cloned virtual machine will use.   | String   | Yes   |
 | Folder Path   | The path to the folder containing the cloned virtual machine.   | String   | Yes   |
@@ -50,8 +61,8 @@ With the exception of "Source VM/Template Path," all properties and published da
 ### Clone Windows VM Activity Optional Properties
 
 | Element   | Description   | Valid Values | Look up |
-| Admin Password   | The password of the Administrator account of the cloned virtual machine.   | String   | No   |
 |:---|:---|:---|:---|
+| Admin Password   | The password of the Administrator account of the cloned virtual machine.   | String   | No   |
 | Computer Name   | The name of the cloned virtual machine.   | String   | No   |
 | DHCP (not available in System Center 2016) | Indicates whether to use DHCP for assigning an IP address to the cloned virtual machine.   | Boolean   | Yes   |
 | DNS Name   | The complete domain name for the cloned virtual machine.   | String   | No   |
@@ -76,8 +87,8 @@ With the exception of "Source VM/Template Path," all properties and published da
 ### Clone Windows VM Activity Published Data
 
 | Name   | Description   | Value Type |
-| Clone Task Timeout in seconds   | The timeout setting for the clone operation.   | Integer   |
 |:---|:---|:---|
+| Clone Task Timeout in seconds   | The timeout setting for the clone operation.   | Integer   |
 | Computer Membership   | The name of the workgroup if the computer is part of a Windows workgroup, or the domain name if the computer is part of an Active Directory domain. | String   |
 | Computer Name   | The name of the computer.   | String   |
 | Customize   | Indicates whether the virtual machine settings are customized after cloning.   | Boolean   |
@@ -108,8 +119,7 @@ With the exception of "Source VM/Template Path," all properties and published da
 | Virtual Processors   | The number of virtual processors assigned to the cloned virtual machine.   | Integer   |
 | Workgroup   | The name of the workgroup for the cloned virtual machine.   | String   |
 
-Configuring the Clone Windows VM Activity
------------------------------------------
+## Configuring the Clone Windows VM Activity
 
 The following procedure describes the steps required to configure a Clone Windows VM activity.
 
@@ -126,5 +136,3 @@ The following procedure describes the steps required to configure a Clone Window
         You can also use published data to automatically populate the value of the property from the data output by a previous activity in the workflow.
 
 4.  Click **Finish**.
-
-

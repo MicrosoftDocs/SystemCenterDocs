@@ -15,8 +15,7 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-Get Move Request
-================
+# Get Move Request
 
 Applies To: System Center 2016 - Orchestrator
 
@@ -24,13 +23,11 @@ You can use the Get Move Request activity in a runbook to retrieve detailed info
 
 The following tables list the filters, optional properties, and published data for this activity.
 
-Required properties for Get Move Request activity
--------------------------------------------------
+## Required properties for Get Move Request activity
 
 This Activity has no required properties.
 
-Filters for Get Move Request activity
--------------------------------------
+## Filters for Get Move Request activity
 
 | **Element**   | **Description**   | **Valid values**   |
 |:---|:---|:---|
@@ -70,8 +67,7 @@ Filters for Get Move Request activity
 | Target Archive Database   | Mailbox database, where the mailbox archive is being moved to.   | Equals<br>Does not equal<br>Contains<br>Does not cotain<br>Matches pattern<br>Does not match pattern<br>Starts with<br>Ends with   |
 | Target Database   | Mailbox database, where the mailbox is being moved to.   | Equals<br>Does not equal<br>Contains<br>Does not cotain<br>Matches pattern<br>Does not match pattern<br>Starts with<br>Ends with   |
 
-Optional properties for Get Move Request activity
--------------------------------------------------
+## Optional properties for Get Move Request activity
 
 | **Element**   | **Description**   | **Valid values**   |
 |:---|:---|:---|
@@ -93,8 +89,7 @@ Optional properties for Get Move Request activity
 | Target Database   | Mailbox database where the mailbox is being moved to.   | String   |
 | User Name   | Specifies the user name to use to access the on-premises Active Directory.   | String   |
 
-Published data for Get Move Request activity
---------------------------------------------
+## Published data for Get Move Request activity
 
 | **Element**   | **Description**   | **Value type** |
 |:---|:---|:---|

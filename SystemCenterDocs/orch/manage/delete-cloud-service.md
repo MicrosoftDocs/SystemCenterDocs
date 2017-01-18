@@ -15,8 +15,7 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-Delete Cloud Service
-====================
+# Delete Cloud Service
 
 Applies To: System Center 2016 - Orchestrator
 
@@ -24,27 +23,24 @@ The **Delete Cloud Service** activity deletes the specified cloud service from W
 
 The activity publishes all of the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
 
-Delete Cloud Service Required Properties
-----------------------------------------
+## Delete Cloud Service Required Properties
 
 | **Element**   | **Description**   | **Valid values** |
 |:---|:---|:---|
 | Service DNS Prefix | The DNS prefix name of the Windows Azure cloud service. | String   |
 
-Delete Cloud Service Optional Properties
-----------------------------------------
+## Delete Cloud Service Optional Properties
 
 There are no optional properties for this runbook activity.
 
-Delete Cloud Service Published Data
------------------------------------
+## Delete Cloud Service Published Data
 
 | **Element**   | **Description**   | **Value type** |
 |:---|:---|:---|
 | Service DNS Prefix | The DNS prefix name of the Windows Azure cloud service. | String   |
 
-See Also
---------
+## See Also
+
 
 #### Other Resources
 

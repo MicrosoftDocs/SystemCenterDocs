@@ -15,8 +15,7 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-Synchronize Folder or File
-==========================
+# Synchronize Folder or File
 
 Applies To: System Center 2016 - Orchestrator
 
@@ -26,8 +25,7 @@ This activity publishes all of the data from the required and optional propertie
 
 The following tables list the required and optional properties and published data for this activity.
 
-Synchronize Folder/File Required Properties
--------------------------------------------
+## Synchronize Folder/File Required Properties
 
 | **Element**   | **Description**   | **Valid Values**   |
 |:---|:---|:---|
@@ -36,8 +34,7 @@ Synchronize Folder/File Required Properties
 | Master Folder | Determines which folder is the master.   | Remote<br>Local   |
 | Filter Scope  | Determines the scope of selected filters. | All<br>File<br>Folder |
 
-Synchronize Folder/File Optional Properties
--------------------------------------------
+## Synchronize Folder/File Optional Properties
 
 | **Element**   | **Description**   | **Valid Values** |
 |:---|:---|:---|
@@ -49,8 +46,7 @@ Synchronize Folder/File Optional Properties
 | File Size (Min)   | File size minimum filter. Must be used with File Size (Max).   | Integer   |
 | Synchronize Sub-folders  | Determines if sub-folders will be synchronized.   | True<br>False   |
 
-Synchronize Folder/File Filters
--------------------------------
+## Synchronize Folder/File Filters
 
 | **Element**   | **Description**   | **Filters**   |
 |:---|:---|:---|
@@ -69,8 +65,7 @@ Synchronize Folder/File Filters
 | System Attribute   | The system attribute of the folder or file.   | Equals   |
 | Temporary Attribute   | The temporary attribute of the folder or file.   | Equals   |
 
-Synchronize Folder/File Published Data
---------------------------------------
+## Synchronize Folder/File Published Data
 
 | **Element**   | **Description**   | **Valid Values**   |
 |:---|:---|:---|

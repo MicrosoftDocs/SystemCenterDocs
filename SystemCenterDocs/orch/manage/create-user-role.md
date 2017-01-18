@@ -15,30 +15,26 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-Create User Role
-================
+# Create User Role
 
 Applies To: System Center 2016 - Orchestrator
 
 This activity creates a user role within a designated cloud.
 
-Create User Role Activity Required Properties
----------------------------------------------
+## Create User Role Activity Required Properties
 
 | Element   | Description   | Valid Values   |
 |:---|:---|:---|
 | User Role Name | The name of the user roles to be created | Alphanumeric text   |
 | Profile Type   | The profile for this user role   | Delegated Admin, Read-Only Admin, Self Service User |
 
-Create User Role Activity Optional Properties
----------------------------------------------
+## Create User Role Activity Optional Properties
 
 | Element   | Description   | Valid Values   |
 |:---|:---|:---|
 | Description | A text description for the user role to be created | Alphanumeric text |
 
-Create User Role Activity Published Data
-----------------------------------------
+## Create User Role Activity Published Data
 
 | Element   | Description   | Valid Values   |
 |:---|:---|:---|

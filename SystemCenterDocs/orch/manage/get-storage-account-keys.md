@@ -15,8 +15,7 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-Get Storage Account Keys
-========================
+# Get Storage Account Keys
 
 Applies To: System Center 2016 - Orchestrator
 
@@ -24,20 +23,17 @@ The **Get Storage Account Keys** activity returns the primary and secondary acce
 
 The activity publishes all of the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
 
-Get Storage Account Keys Required Properties
---------------------------------------------
+## Get Storage Account Keys Required Properties
 
 | **Element**   | **Description**   | **Valid values** |
 |:---|:---|:---|
 | Storage Account Name | The name of the storage account. | String   |
 
-Get Storage Account Keys Optional Properties
---------------------------------------------
+## Get Storage Account Keys Optional Properties
 
 There are no optional properties for this runbook activity.
 
-Get Storage Account Keys Published Data
----------------------------------------
+## Get Storage Account Keys Published Data
 
 | **Element**   | **Description**   | **Value type** |
 |:---|:---|:---|
@@ -45,8 +41,8 @@ Get Storage Account Keys Published Data
 | Secondary Key   | The secondary access key for the storage account. | String   |
 | Storage Account Name | The name of the storage account.   | String   |
 
-See Also
---------
+## See Also
+
 
 #### Other Resources
 

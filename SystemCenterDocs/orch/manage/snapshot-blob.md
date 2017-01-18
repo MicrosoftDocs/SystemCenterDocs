@@ -15,8 +15,7 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-Snapshot Blob
-=============
+# Snapshot Blob
 
 Applies To: System Center 2016 - Orchestrator
 
@@ -24,8 +23,7 @@ The **Snapshot Blob** activity creates a read-only snapshot of a blob. It is par
 
 The activity publishes all of the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
 
-Snapshot Blob Required Properties
----------------------------------
+## Snapshot Blob Required Properties
 
 | **Element**   | **Description**   | **Valid values** |
 |:---|:---|:---|
@@ -33,15 +31,13 @@ Snapshot Blob Required Properties
 | Container Name   | The name of the container.   | String   |
 | Blob Name   | The name of the blob.   | String   |
 
-Snapshot Blob Optional Properties
----------------------------------
+## Snapshot Blob Optional Properties
 
 | **Element** | **Description**   | **Valid values** |
 |:---|:---|:---|
 | Primary Key | The primary key associated with the storage account. | String   |
 
-Snapshot Blob Published Data
-----------------------------
+## Snapshot Blob Published Data
 
 | **Element**   | **Description**   | **Value type** |
 |:---|:---|:---|
@@ -50,8 +46,8 @@ Snapshot Blob Published Data
 | Snapshot Time   | The time of the snapshot.   | Datetime   |
 | Storage Account Name | The name of the storage account. | String   |
 
-See Also
---------
+## See Also
+
 
 #### Other Resources
 

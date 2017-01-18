@@ -15,8 +15,7 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-Delete Group
-============
+# Delete Group
 
 Applies To: System Center 2016 - Orchestrator
 
@@ -26,15 +25,13 @@ This activity publishes all of the data from the required and optional propertie
 
 The following tables list the required and optional properties and published data for this activity.
 
-Required properties for Delete Group activities
------------------------------------------------
+## Required properties for Delete Group activities
 
 | Element   | Description   | Valid Values |
 |:---|:---|:---|
 | Distinguished Name | Distinguished name of the group to delete | String   |
 
-Published data for Delete Group activity
-----------------------------------------
+## Published data for Delete Group activity
 
 | Name   | Description   | Value Type |
 |:---|:---|:---|

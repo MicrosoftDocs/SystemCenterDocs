@@ -15,8 +15,7 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-Scale Tier Out in System Center 2016
-====================================
+# Scale Tier Out in System Center 2016
 
 Applies To: System Center 2016 - Orchestrator
 
@@ -24,34 +23,30 @@ The Scale Tier Out activity is used in a runbook to add one virtual machine inst
 
 The activity publishes all of the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
 
-Scale Tier Out Required Properties
-----------------------------------
+## Scale Tier Out Required Properties
 
-| **Element**  | **Description** | **Valid Values**   |
-|:---|:---|:---|
-| Service Name |   |   |
-| Tier Name   |   |   |
-| Start Action |   | Default: Don't turn on the virtual machine |
-| Stop Action  |   | Default: Save State   |
+| **Element**  |  **Valid Values**   |
+|:---|:---|
+| Service Name |   |
+| Tier Name   |  |  
+| Start Action |  Default: Don't turn on the virtual machine |
+| Stop Action  | Default: Save State   |
 
-Scale Tier Out Optional Properties
-----------------------------------
+## Scale Tier Out Optional Properties
 
-| **Element**   | **Description**   | **Valid Values** |
-|:---|:---|:---|
-| Virtual Machine Name | The name that VMM uses to identify the virtual machine. |   |
-| Computer Name   | The actual computer name of the virtual machine.   |   |
-| Decription   |   |   |
+| **Element**   | **Description**   |
+|:---|:---|
+| Virtual Machine Name | The name that VMM uses to identify the virtual machine. |   
+| Computer Name   | The actual computer name of the virtual machine.   |   
+| Description   |   |   
 
-Scale Tier Out Published Data
------------------------------
+## Scale Tier Out Published Data
 
 This activity has no published data.
 
-See Also
---------
+## See Also
+
 
 #### Other Resources
 
 [Using Runbooks in System Center 2016 Orchestrator](https://technet.microsoft.com/en-us/library/hh403791.aspx)
-

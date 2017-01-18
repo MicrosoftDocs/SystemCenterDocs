@@ -15,14 +15,14 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-Protect Data Source
-===================
+# Protect Data Source
 
 Applies To: System Center 2016 - Orchestrator
 
 The Protect Data Source activity is used to protect a workload by adding a data source to an existing protection group. A protection group is a named entity that holds the backup policy for a workload.
 
-<br><br><strong>Important </strong><br>We recommend that protection groups contain only data sources of the same type.<br><br>
+>[!IMPORTANT]
+>We recommend that protection groups contain only data sources of the same type.
 
 The following items apply to the Replica Creation Method for this release:
 
@@ -32,23 +32,19 @@ The following items apply to the Replica Creation Method for this release:
 
 The activity publishes all of the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
 
-Protect Data Source Required Properties
----------------------------------------
+## Protect Data Source Required Properties
 
-|   |   |
-|-------------------------|--------------------------------------------------------------------------------------------------------------------------------|
 | Element   | Sample value   |
+|-------------------------|--------------------------------------------------------------------------------------------------------------------------------|
 | Replica Creation Method | Later or Manual   |
 | Data Source ID   | The unique identifier (GUID) of the data source for the recovery point, which can be obtained via the Get Data Source activity |
 | Protection Group   | The name of the protection group to which the workload will be added   |
 | Replica Creation Time   | The date and time of the replica creation, Format as 0001-01-01T00:00:00. Required if Replica Creation method is set to Later. |
 
-Protect Data Source Published Data
-----------------------------------
+## Protect Data Source Published Data
 
-|   |   |
-|------------------|--------------------------------------------------------------------------|
 | Element   | Sample value   |
+|------------------|--------------------------------------------------------------------------|
 | DataSourceID   | The unique identifier (GUID) of the data source for the recovery point   |
 | Protection Group | The name of the protection group to which to add the workload   |
 | Replication Time | The date and time of the replica creation, format as 0001-01-01T00:00:00 |

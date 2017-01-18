@@ -15,8 +15,7 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-Get Organizational Unit
-=======================
+# Get Organizational Unit
 
 Applies To: System Center 2016 - Orchestrator
 
@@ -26,8 +25,7 @@ This activity publishes all of the data from the required and optional propertie
 
 The following tables list the required and optional properties and published data for this activity.
 
-Get Organizational Unit optional properties
--------------------------------------------
+## Get Organizational Unit optional properties
 
 | Element   | Description   | Valid Values |
 |:---|:---|:---|
@@ -35,8 +33,7 @@ Get Organizational Unit optional properties
 | Search Root  | The distinguished name of the node in the Active Directory Domain Services hierarchy where the search starts | String   |
 | Search Scope | The scope of the search that is observed by the server. The options are Base, OneLevel or SubTree.   | String   |
 
-Get Organizational Unit filter properties
------------------------------------------
+## Get Organizational Unit filter properties
 
 | Element   | Description   | Filters   | Value Type |
 |:---|:---|:---|:---|
@@ -47,8 +44,7 @@ Get Organizational Unit filter properties
 | Modification Date   | Date the organizational unit account was last changed   | EqualTo, NotEqualTo, GreaterThan, GreaterThanOrEqualTo, LessThan, LessThanOrEqualTo | DateTime   |
 | Creation Date   | Date and time that the organizational unit was created   | EqualTo, NotEqualTo, GreaterThan, GreaterThanOrEqualTo, LessThan, LessThanOrEqualTo | DateTime   |
 
-Get Organizational Unit published data
---------------------------------------
+## Get Organizational Unit published data
 
 | Element   | Description   | Valid Values |
 |:---|:---|:---|
