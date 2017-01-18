@@ -28,7 +28,6 @@ The following published data element is specific to Update Object activity. Addi
 
 ## Update Object Published Data
 
-|   |   |
-|---------------------------|-----------------------------------------------------------------|
 | Element   | Description   |
+|---------------------------|-----------------------------------------------------------------|
 | System Center Object GUID | The unique identifier (GUID) of the single object to be updated |

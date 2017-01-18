@@ -21,34 +21,34 @@ Applies To: System Center 2016 - Orchestrator
 
 Updates the quotas for a certain user role and cloud.
 
-## Updates User Role Quota Required Properties
+## Update User Role Quota Required Properties
 
-| Element   | Description   | Valid Values |
-|:---|:---|:---|
-| User Role Name | The user role name to update   |   |
+| Element   | Description   
+|:---|:---|
+| User Role Name | The user role name to update   |   
 | Cloud Name   | The name of the cloud to which the quota
-Applies |   |
-| Level   | The level of the user role quota   |   |
+applies |   
+| Level   | The level of the user role quota   |   
 
-## Updates User Role Quota Optional Properties
+## Update User Role Quota Optional Properties
 
-| Element   | Description   | Valid Values |
-|:---|:---|:---|
-| Max Custom Quota   | Enter maximum value for custom property. |   |
-| Max Memory in MBs  | Maximum memory   |   |
-| Max Storage in GBs | Maximum storage space   |   |
-| Max Virtual CPUs   | Maximum number of virtual CPUs   |   |
-| Max VMs   | Maximum number of virtual machiens   |   |
+| Element   | Description   |
+|:---|:---|
+| Max Custom Quota   | Enter maximum value for custom property. |   
+| Max Memory in MBs  | Maximum memory   |   
+| Max Storage in GBs | Maximum storage space   |   
+| Max Virtual CPUs   | Maximum number of virtual CPUs   |   
+| Max VMs   | Maximum number of virtual machines   |   
 
-## Updates User Role Quota Published Data
+## Update User Role Quota Published Data
 
-| Element   | Description   | Valid Values |
-|:---|:---|:---|
+| Element   | Description   |
+|:---|:---|
 | Cloud Name   | The name of the cloud to which the quota
-Applies |   |
-| Level   | The level of the user role quota   |   |
-| Max Virtual CPUs   | Maximum number of virtual CPUs   |   |
-| Max VMs   | Maximum number of virtual machiens   |   |
-| Max Memory in MBs  | Maximum memory   |   |
-| Max Storage in GBs | Maximum storage space   |   |
-| Max Custom   |   |   |
+applies |   
+| Level   | The level of the user role quota   |   
+| Max Virtual CPUs   | Maximum number of virtual CPUs   |   
+| Max VMs   | Maximum number of virtual machines   |   
+| Max Memory in MBs  | Maximum memory   |   
+| Max Storage in GBs | Maximum storage space   |   
+| Max Custom   |   |

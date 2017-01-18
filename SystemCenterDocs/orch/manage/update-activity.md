@@ -25,8 +25,7 @@ The following published data elements are specific to Update Activity. Additiona
 
 ## Update Activity Published Data
 
-|   |   |
-|---------------------------|-------------------------------------------------------------------|
 | Element   | Description   |
+|---------------------------|-------------------------------------------------------------------|
 | System Center Object GUID | The unique identifier (GUID) of the single activity to be updated |
 | Number of Objects   | The number of objects returned by the Update Activity   |
