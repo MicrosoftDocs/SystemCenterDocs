@@ -27,7 +27,7 @@ PowerPivot for Excel requires Excel 2010 \(64\-bit or 32\-bit\).
 
 #### To install PowerPivot  
 
-1.  Follow the instructions found at [Install PowerPivot for Excel](http://go.microsoft.com/fwlink/p/?LinkID=184678).  
+-  Follow the instructions found at [Install PowerPivot for Excel](http://go.microsoft.com/fwlink/p/?LinkID=184678).  
 
 Use PowerPivot to configure a connection to Orchestrator web service. Orchestrator uses the Open Data Protocol \(OData\), which PowerPivot can consume.  
 

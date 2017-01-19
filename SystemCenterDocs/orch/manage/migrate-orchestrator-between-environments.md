@@ -114,7 +114,7 @@ The following example installs all of Orchestrator on a computer with SQL Server
 ```  
 
 ## Sample migration scripts and commands  
-**Backup SQL Server master service key sample**  
+**Back up SQL Server master service key sample**  
 
 ```  
 Sqlcmd -Q "BACKUP SERVICE MASTER KEY TO FILE ='C:\BACKUP\MASTER_KEY.BAK' ENCRYPTION BY PASSWORD = 'password'"  
