@@ -16,7 +16,7 @@ manager: cfreeman
 ---
 # How to Change the Orchestrator Users Group
 
-> Apples To: System Center 2016 - Orchestrator
+> Applies To: System Center 2016 - Orchestrator
 
 You might want to change the Orchestrator users group after installation because of changes in your environment. For example, you might want to use a local group during installation, and then change it to a domain account later.  
 
@@ -47,7 +47,7 @@ For example, to change the Orchestrator users group to a group that is named Orc
 PermissionsConfig -OrchestratorUsersGroup "Contoso\Orchestrator Users" -remote  
 ```  
 
-> [IMPORTANT]  
+> [!IMPORTANT]  
 > You must run the PermissionsConfig tool at a command prompt with administrative credentials because it modifies group memberships. To do this, right-click the **Command Prompt** icon to select **Run as Administrator**.  
 
 ## See Also  

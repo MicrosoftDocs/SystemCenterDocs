@@ -16,7 +16,7 @@ manager: cfreeman
 
 # Monitor a Folder within a Runbook
 
-> Apples To: System Center 2016 - Orchestrator
+> Applies To: System Center 2016 - Orchestrator
 
 This sample shows you how to create a simple monitor runbook that monitors a folder for new text files. When a file is detected, the runbook sends an event log message, and then starts another runbook.  
 
@@ -94,7 +94,7 @@ The procedures to create, configure, and test a sample runbook that monitors a f
     3.  Leave the **Severity** level at **Information**.  
 15. Click **Finish**.  
 
-    > [NOTE]  
+    > [!NOTE]  
     > In this sample, the **Invoke Runbook** activity is not configured.  
 
 #### To modify runbook settings  
@@ -132,7 +132,7 @@ Use the following steps to test your runbook in the **Runbook Tester**.
 
 4.  In **Runbook Tester**, on the toolbar, click **Step Over** to start stepping through the runbook.  
 
-    > [TIP]  
+    > [!TIP]  
     > To increase the size of the **Log** pane, remove the **Resource Browser** pane by selecting **View** on the menu, and then clearing the **Resource Browser** option.  
 
 5.  In Windows Explorer, browse to the **C:\\Source** folder.  

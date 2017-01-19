@@ -16,7 +16,7 @@ manager: cfreeman
 ---
 # How to Recover Web Components
 
-> Apples To: System Center 2016 - Orchestrator
+> Applies To: System Center 2016 - Orchestrator
 
 The Web Service database reference does not get modified by the Database Configuration Utility \(only the installer performs this task\). You will need to manually modify it.  
 

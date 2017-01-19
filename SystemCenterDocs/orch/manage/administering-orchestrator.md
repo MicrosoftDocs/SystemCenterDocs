@@ -15,7 +15,7 @@ manager: cfreeman
 ---
 # Administering System Center 2016 - Orchestrator
 
-> Apples To: System Center 2016 - Orchestrator
+> Applies To: System Center 2016 - Orchestrator
 System Center 2016 - Orchestrator is a workflow management solution for the datacenter that you can use to automate the creation, monitoring, and deployment of resources in your environment. This guide describes tasks that an administrator might have to perform to maintain a production Orchestrator environment.
 
 ## In This Guide
