@@ -16,7 +16,7 @@ manager: cfreeman
 ---
 # Regular Expressions
 
-> Apples To: System Center 2016 - Orchestrator
+> Applies To: System Center 2016 - Orchestrator
 
 In System Center 2016 - Orchestrator, regular expressions let you match a string to a pattern. The regular expression can contain a number of different elements that define the pattern. [Smart Link Properties](http://technet.microsoft.com/en-us/library/hh403779.aspx) use regular expressions to perform pattern matching.  
 

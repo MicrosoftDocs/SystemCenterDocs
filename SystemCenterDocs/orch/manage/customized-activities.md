@@ -16,7 +16,7 @@ manager: cfreeman
 ---
 # Customized Activities
 
-> Apples To: System Center 2016 - Orchestrator
+> Applies To: System Center 2016 - Orchestrator
 
 System Center 2016 - Orchestrator provides two options for extending standard activities. Integration packs (IP) are Microsoft and products of other companies that contain additional activities specific to a product or technology. If the functionality that you require is not available in an IP, you have the alternative option of using the Orchestrator Integration Toolkit. This toolkit lets you build an activity to meet your requirements. For more information about the Orchestrator Integration Toolkit, see [System Center 2016 - Orchestrator SDK](http://go.microsoft.com/fwlink/p/?LinkId=230570) in the MSDN Library.  
 

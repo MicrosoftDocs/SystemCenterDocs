@@ -16,17 +16,17 @@ manager: cfreeman
 ---
 # Counters
 
-> Apples To: System Center 2016 - Orchestrator
+> Applies To: System Center 2016 - Orchestrator
 
 When building runbooks in System Center 2016 - Orchestrator, you might find that there are values that must be incremented, such as keeping track of the number of backup attempts that a runbook made. Counters let you modify and check the status of a number that you can use to keep track of important statistics. You create a counter in the Connections pane in the Runbook Designer, and then get and modify it by using the Get Counter Value and Modify Counter activities. each of these activities presents the value of the counter as [published data](../manage/published-data.md) so that it can be used by other activities and links.  
 
-> [IMPORTANT]  
+> [!IMPORTANT]  
 > The access permissions for counters can be modified, but the Runbook server does not enforce these permissions.  
 
-> [WARNING]  
+> [!WARNING]  
 > You cannot run multiple, simultaneous jobs for runbooks that contain Modify Counter activities because simultaneous jobs of the same runbook that modify \(set, reset, increment, or decrement\) a counter can cause the counter value to become unreliable. You can, however, read the value of counters in runbooks that run simultaneously.  
 
-> [IMPORTANT]  
+> [!IMPORTANT]  
 > Orchestrator does not support moving multiple counters with multiple\-selection. To move more than one counter to another folder, you must move each counter individually.  
 
 Use the following procedures to create a counter and to organize counters.  

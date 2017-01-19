@@ -17,7 +17,7 @@ manager: cfreeman
 ---
 # How to add an integration pack
 
-> Apples To: System Center 2016 - Orchestrator
+> Applies To: System Center 2016 - Orchestrator
 
 System Center 2016 - Orchestrator includes a set of standard activities that are automatically installed. You can expand functionality and ability of Orchestrator to integrate platforms and products by Microsoft and other companies by installing integration packs. Each integration pack contains activities that provide functions that are unique to that product. Microsoft provides integration packs for all of the System Center components, several other Microsoft products, and products from other companies.
 

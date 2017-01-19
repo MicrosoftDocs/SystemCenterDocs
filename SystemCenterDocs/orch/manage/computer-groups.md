@@ -16,7 +16,7 @@ manager: cfreeman
 ---
 # Computer Groups
 
-> Apples To: System Center 2016 - Orchestrator
+> Applies To: System Center 2016 - Orchestrator
 
 System Center 2016 - Orchestrator is designed to interact with all of your data center systems. Computer groups let you target selected activities against a set of similar computer systems instead of a single computer. By configuring the activities in your runbook to use a computer group, you have the flexibility to add computers dynamically by adding them to the computer group.  
 

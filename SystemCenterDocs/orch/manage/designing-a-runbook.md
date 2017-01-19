@@ -16,7 +16,7 @@ manager: cfreeman
 ---
 # Designing a Runbook
 
-> Apples To: System Center 2016 - Orchestrator
+> Applies To: System Center 2016 - Orchestrator
 
 When you plan a new runbook, you should start with a defined process that you want to automate. This process determines your choice of runbook activities. Specifically, determine the following:  
 

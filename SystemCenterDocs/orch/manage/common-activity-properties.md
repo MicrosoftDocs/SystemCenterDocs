@@ -16,7 +16,7 @@ manager: cfreeman
 ---
 # Common Activity Properties
 
-> Apples To: System Center 2016 - Orchestrator
+> Applies To: System Center 2016 - Orchestrator
 
 All activities have properties. The Properties dialog box for each activity has multiple tabs that provide access to the settings for the activity. The particular set of tabs varies between activities, but there are several common property types.  
 
@@ -31,7 +31,7 @@ By default, Published Data is passed as multiple individual outputs. You can alt
 
 When you enable the Flatten feature, you also choose a multi\-value formatting option.  
 
-> [NOTE]  
+> [!NOTE]  
 > The Flatten feature does not flatten data across multiple instances of the same activity. It only flattens multiple values returned from a single instance of the activity.  
 
 |Flatten behavior|Description|  
@@ -51,13 +51,13 @@ Some activities are expected to take a limited amount of time to finish. If the 
 ## <a name="BKMK_SecurityCredentials"></a>Security Credentials  
 The settings on the Security Credentials tab let you specify the account that runs the Runbook Server Service. This is useful when the activity performs activities with resources on a remote computer.  
 
-> [IMPORTANT]  
+> [!IMPORTANT]  
 > Note that the account used to start the runbook must have permission on the local computer to run successfully.  
 
-> [IMPORTANT]  
+> [!IMPORTANT]  
 > If you use the Invoke Runbook activity and you modify Security Credentials, the account you use must be a member of the Orchestrator System group to run successfully.  
 
-> [CAUTION]  
+> [!CAUTION]  
 > If permissions on the Orchestrator installation path are changed and the activity's Security Credentials has a custom user account that does not include **Read\/Execute** permissions to **ExecutionData.dll** on the runbook server, the activity will fail.  
 
 |Option|Behavior|  
