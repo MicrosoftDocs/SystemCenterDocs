@@ -113,7 +113,7 @@ You need a private VIP address pool to assign a VIP, and a public VIP, to the SL
 8. Repeat the procedure for the public VIP logical network, this time type the IP address range for the public network.
 
 
-### Import the service template ###
+## Import the service template ##
 
 Import the service template into the VMM library. For this example we'll import the generation 2 template.
 
