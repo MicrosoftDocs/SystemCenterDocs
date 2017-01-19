@@ -15,8 +15,7 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-Update User
-===========
+# Update User
 
 Applies To: System Center 2016 - Orchestrator
 
@@ -26,15 +25,13 @@ This activity publishes all of the data from the required and optional propertie
 
 The following tables list the required and optional properties and published data for this activity.
 
-Required properties for Update User activity
---------------------------------------------
+## Required properties for Update User activity
 
 | Element   | Description   | Valid Values |
 |:---|:---|:---|
 | Distinguished Name | Relative distinguished name that uniquely identifies the user account | String   |
 
-Optional properties for Update User activity
---------------------------------------------
+## Optional properties for Update User activity
 
 | Element   | Description   | Valid Values |
 |:---|:---|:---|
@@ -87,8 +84,7 @@ Optional properties for Update User activity
 | User Principal Name   | This attribute contains the UPN that is an Internet-style login name for a user based on the Internet standard RFC 822 | String   |
 | Web Page   | User's primary web page   | String   |
 
-Published data for Update User activity
----------------------------------------
+## Published data for Update User activity
 
 | Name   | Description   | Value Type |
 |:---|:---|:---|

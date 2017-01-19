@@ -15,8 +15,7 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-Update Storage Account
-======================
+# Update Storage Account
 
 Applies To: System Center 2016 - Orchestrator
 
@@ -24,8 +23,7 @@ The **Update Storage Account** activity updates the label, the description, and 
 
 The activity publishes all of the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
 
-Update Storage Account Required Properties
-------------------------------------------
+## Update Storage Account Required Properties
 
 | **Element**   | **Description**   | **Valid values** |
 |:---|:---|:---|
@@ -34,13 +32,11 @@ Update Storage Account Required Properties
 | Description   | A description for the storage account.   | String   |
 | Geographic Replication Enabled | Enables or disables geo-replication on the specified storage account. | True, False   |
 
-Update Storage Account Optional Properties
-------------------------------------------
+## Update Storage Account Optional Properties
 
 There are no optional properties for this runbook activity.
 
-Update Storage Account Published Data
--------------------------------------
+## Update Storage Account Published Data
 
 | **Element**   | **Description**   | **Value type** |
 |:---|:---|:---|
@@ -50,8 +46,8 @@ Update Storage Account Published Data
 | Geographic Replication Enabled | Enables or disables geo-replication on the specified storage account. | Boolean   |
 | Request ID   | The unique identifier of the request to Windows Azure.   | String   |
 
-See Also
---------
+## See Also
+
 
 #### Other Resources
 

@@ -15,8 +15,7 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-Update Message
-==============
+# Update Message
 
 Applies To: System Center 2016 - Orchestrator
 
@@ -24,8 +23,7 @@ The Update Message activity is used in a runbook to update an existing message.
 
 The following tables list the required properties and published data for this activity. For more information on configuring activities, see [HP Operations Manager Activities](hp-operations-manager-activities.md).
 
-Update Message Required Properties
-----------------------------------
+## Update Message Required Properties
 
 | Element   | Description   | Valid Values   | Look up |
 |:---|:---|:---|:---|
@@ -33,8 +31,7 @@ Update Message Required Properties
 | Severity   | Severity of the event that the message relates to.   | Normal<br>Warning<br>Minor<br>Major<br>Critical | Yes   |
 | Message Text | Brief description of the event that this message relates to.  | String   | No   |
 
-Update Message Published Data
------------------------------
+## Update Message Published Data
 
 | Element   | Description   | Value Type |
 |:---|:---|:---|
@@ -71,8 +68,7 @@ Update Message Published Data
 | HPOM Port   | The port used to connect to the HPOM management server.   | Integer   |
 | HPOM Username   | The name of the HPOM used to connect to the HPOM management server.   | String   |
 
-Other Activities
-----------------
+## Other Activities
 
 The Integration Pack for HP Operations Manager integration contains the following additional activities:
 

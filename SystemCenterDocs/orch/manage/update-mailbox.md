@@ -15,8 +15,7 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-Update Mailbox
-==============
+# Update Mailbox
 
 Applies To: System Center 2016 - Orchestrator
 
@@ -24,15 +23,13 @@ You can use the Update Mailbox activity to modify the settings of an existing ma
 
 The following tables list the required properties, optional properties, and published data for this activity.
 
-Required properties for Update Mailbox activity
------------------------------------------------
+## Required properties for Update Mailbox activity
 
 | **Element** | **Description**   | **Valid values** |
 |:---|:---|:---|
 | Identity   | Specifies the mailbox that is to be updated.<br>This property accepts the following value types:<br>Alias, for example: JPhilips<br>Canonical DN, for example: Atlanta.Corp.Contoso.Com/<br>Users/JPhilips<br>Display Name, example: Jeff Philips<br>Distinguished Name (DN), example: CN=JPhilips,CN=Users,<br>DC=Atlanta,DC=Corp,<br>DC=contoso,DC=com<br>Domain\\Account, example: Atlanta\\JPhilips<br>GUID, example: fb456636-fe7d-4d58<br>-9d15-5af57d0354c2<br>Immutable ID, example: fb456636-fe7d-4d58-9d15-5af57d0354c2@contoso.com<br>Legacy Exchange DN, example: /o=Contoso<br>/ou=AdministrativeGroup<br>/cn=Recipients/cn=JPhilips<br>SMTP Address, example: Jeff.Philips@contoso.com<br>User Principal Name, example: JPhilips@contoso.com | String   |
 
-Optional properties for Update Mailbox activity
------------------------------------------------
+## Optional properties for Update Mailbox activity
 
 | **Element**   | **Description**   | **Valid values**   |
 |:---|:---|:---|
@@ -173,8 +170,7 @@ Optional properties for Update Mailbox activity
 | Windows Email Address   | Specifies the Windows email address for this mailbox. This address is not used by Exchange.   | String   |
 | Windows Live ID(Live@edu only)   | Renames the Windows Live ID associated with the mailbox.<br>This property applies to objects in the cloud-based service. It is not available for on-premises deployments. <br><br><strong>Note </strong><br> This property is available only in a Live@edu environment. <br><br>   | String   |
 
-Published data for Update Mailbox activity
-------------------------------------------
+## Published data for Update Mailbox activity
 
 | Element   | Description   | Value type |
 |:---|:---|:---|

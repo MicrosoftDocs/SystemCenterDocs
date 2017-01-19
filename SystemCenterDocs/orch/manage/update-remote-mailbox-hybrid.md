@@ -15,8 +15,7 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-Update Remote Mailbox (Hybrid)
-==============================
+# Update Remote Mailbox (Hybrid)
 
 Applies To: System Center 2016 - Orchestrator
 
@@ -24,15 +23,13 @@ You can use the Update Remote Mailbox activity to modify the mail-related attrib
 
 The following tables list the required properties, optional properties, and published data for this activity.
 
-Required properties for Update Remote Mailbox (Hybrid)
-------------------------------------------------------
+## Required properties for Update Remote Mailbox (Hybrid)
 
 | **Element** | **Description**   | **Valid values** |
 |:---|:---|:---|
 | Identity   | Specifies the mail-enabled user. You can use one of the following value types:<br>ADObjectID <br>GUID <br>Distinguished name (DN)<br>Domain\\SamAccountName<br>User principal name (UPN)<br>Legacy DN<br>E-mail address<br>User alias | String   |
 
-Optional properties for Update Remote Mailbox (Hybrid)
-------------------------------------------------------
+## Optional properties for Update Remote Mailbox (Hybrid)
 
 | **Element**   | **Description**   | **Valid values**   |
 |:---|:---|:---|
@@ -90,8 +87,7 @@ Optional properties for Update Remote Mailbox (Hybrid)
 | User Principal Name   | Specifies a user principal name (UPN) for the user.   | String   |
 | Windows Email Address   | Specifies the Windows email address for this mail-enabled user. This address isn't used by Exchange.   | String   |
 
-Published data for Update Remote Mailbox (Hybrid)
--------------------------------------------------
+## Published data for Update Remote Mailbox (Hybrid)
 
 | **Element**   | **Description**   | **Valid values** |
 |:---|:---|:---|

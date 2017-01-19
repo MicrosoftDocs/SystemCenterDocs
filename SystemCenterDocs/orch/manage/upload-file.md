@@ -15,8 +15,7 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-Upload File
-===========
+# Upload File
 
 Applies To: System Center 2016 - Orchestrator
 
@@ -26,8 +25,7 @@ This activity publishes all of the data from the required and optional propertie
 
 The following tables list the required and optional properties and published data for this activity.
 
-Upload File Required Properties
--------------------------------
+## Upload File Required Properties
 
 | **Element**   | **Description**   | **Valid Values**   |
 |:---|:---|:---|
@@ -40,15 +38,13 @@ Upload File Required Properties
 | Error Action (FTP)   | Determines the action to take when an error occurs transferring files. Only compatible with FTP.<br>Abort - Activity should fail.<br>Ignore - Skip the file and continue with the next.<br>Retry - Attempt to retransfer the file. | Abort<br>Retry<br>Ignore |
 | Recreate Folder Structure (FTP) | Determines if the directory structure should be recreated on the local machine. Only compatible with FTP.   | True<br>False   |
 
-Upload File Optional Properties
--------------------------------
+## Upload File Optional Properties
 
 | **Element**   | **Description**   | **Valid Values** |
 |:---|:---|:---|
 | Retry Count (FTP) | The number of times to retry when Error Action is set to Retry. | Integer   |
 
-Upload File Published Data
---------------------------
+## Upload File Published Data
 
 | **Element**   | **Description**   | **Valid Values**   |
 |:---|:---|:---|

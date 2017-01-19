@@ -15,8 +15,7 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-Update Item
-===========
+# Update Item
 
 Applies To: System Center 2016 - Orchestrator
 
@@ -24,15 +23,13 @@ The Update Item activity is used in a runbook to update an existing item.
 
 The following tables list the required properties, optional properties, and published data for this activity. Optional properties are presented in separate tables according to item type: appointment, contact group, task, and email message.
 
-Update Item Required Properties
--------------------------------
+## Update Item Required Properties
 
 | **Element** | **Description**   | **Valid values** |
 |:---|:---|:---|
 | ID   | The ID of the item to be updated | String   |
 
-Update Item Optional Properties (Appointment)
----------------------------------------------
+## Update Item Optional Properties (Appointment)
 
 | **Element**   | **Description**   | **Valid values**   |
 |:---|:---|:---|
@@ -64,8 +61,7 @@ Update Item Optional Properties (Appointment)
 | Start   | The start time of the appointment   | DateTime   |
 | Subject   | The subject of the appointment   | String   |
 
-Update Item Optional Properties (Contact Group)
------------------------------------------------
+## Update Item Optional Properties (Contact Group)
 
 | **Element**  | **Description**   | **Valid values**   |
 |:---|:---|:---|
@@ -73,8 +69,7 @@ Update Item Optional Properties (Contact Group)
 | Members   | Members a contact group   | Comma separated list of email addresses |
 | Categories   | Lists of categories associated with the contact group | Comma separated list   |
 
-Update Item Optional Properties (Task)
---------------------------------------
+## Update Item Optional Properties (Task)
 
 | **Element**   | **Description**   | **Valid values**   |
 |:---|:---|:---|
@@ -104,8 +99,7 @@ Update Item Optional Properties (Task)
 | Task Status   | The status of the task   | NotStarted<br>InProgress<br>Completed<br>WaitingOnOthers<br>DeferredString   |
 | Total Work   | The total amount of work spent on the task   | Integer   |
 
-Update Item Optional Properties (E-Mail Message)
-------------------------------------------------
+## Update Item Optional Properties (E-Mail Message)
 
 | **Element**   | **Description**   | **Valid values**   |
 |:---|:---|:---|
@@ -128,8 +122,7 @@ Update Item Optional Properties (E-Mail Message)
 | Subject   | The subject of the e-mail   | String   |
 | To   | List of recipients of the email message   | String   |
 
-Update Item Published Data
---------------------------
+## Update Item Published Data
 
 | **Element**   | **Description**   | **Valid values** |
 |:---|:---|:---|
