@@ -16,7 +16,7 @@ manager: cfreeman
 ---
 # Migrate Orchestrator Between Environments
 
-> Apples To: System Center 2016 - Orchestrator
+> Applies To: System Center 2016 - Orchestrator
 
 This topic describes how to automatically move Orchestrator between environments. This could be useful when you want to just move to a new SQL Server 2008 R2 or if you want to move some or all of the components of Orchestrator.  
 
@@ -24,9 +24,9 @@ The following processes and scripts enable you to easily move between environmen
 
 The following steps are required to enable an automatic migration of Orchestrator to a new environment:  
 
-1.  Backup SQL Server service master key in environment A  
+1.  Back up SQL Server service master key in environment A  
 
-2.  Backup the Orchestrator database in environment A  
+2.  Back up the Orchestrator database in environment A  
 
 3.  Deploy SQL Server 2008 R2 in environment B  
 
@@ -36,7 +36,7 @@ The following steps are required to enable an automatic migration of Orchestrato
 
 6.  Deploy Orchestrator components in environment B  
 
-> [NOTE]  
+> [!NOTE]  
 > See [http://go.microsoft.com/fwlink/?LinkId=246817](http://go.microsoft.com/fwlink/?LinkId=246817) for information on using the Sqlcmd utility.  
 
 ## <a name="SCO_Migrate1"></a>Back up SQL Server service master key in environment A  
@@ -114,14 +114,14 @@ The following example installs all of Orchestrator on a computer with SQL Server
 ```  
 
 ## Sample migration scripts and commands  
-**Backup SQL Server master service key sample**  
+**Back up SQL Server master service key sample**  
 
 ```  
 Sqlcmd -Q "BACKUP SERVICE MASTER KEY TO FILE ='C:\BACKUP\MASTER_KEY.BAK' ENCRYPTION BY PASSWORD = 'password'"  
 
 ```  
 
-**Backup Orchestrator database sample**  
+**Back up Orchestrator database sample**  
 
 ```  
 Sqlcmd -Q "BACKUP DATABASE Orchestrator TO DISK=N'C:\BACKUP\OrchestratorDB.bak'"  

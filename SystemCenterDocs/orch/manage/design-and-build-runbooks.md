@@ -16,7 +16,7 @@ manager: cfreeman
 ---
 # Design and Build Runbooks
 
-> Apples To: System Center 2016 - Orchestrator
+> Applies To: System Center 2016 - Orchestrator
 
 This section provides details about how to design, build, and test, runbooks by using System Center 2016 - Orchestrator.  
 

@@ -16,7 +16,7 @@ manager: cfreeman
 ---
 # How to Recover a Database
 
-> Apples To: System Center 2016 - Orchestrator
+> Applies To: System Center 2016 - Orchestrator
 
 The Orchestrator database can be backed up and restored using most standard MS SQL Server database backup\/restore mechanisms. This includes Microsoft SQL Server Backup, DPM SQL Server backup, and others. Orchestrator provides a VSS Writer that will discover the database server that is associated with the Management Server and back up the database when the Management Server is backed up.  
 
@@ -51,7 +51,7 @@ The database key is essentially paired with the service master key on the databa
              ENCRYPTION BY PASSWORD = '3dH85Hhk003GHk2597jheij4'  
     ```  
 
-    > [NOTE]  
+    > [!NOTE]  
     > If there are multiple databases using this service master key for encryption on your Microsoft SQL Server, all of these databases could be affected by this change. Consulting with your DBA before performing this administrative task is strongly recommended.  
 
 3.  Restore the database from the backup.  
