@@ -5,7 +5,7 @@ description: This article describes how to Set up an SDN RAS gateway in the VMM 
 author: rayne-wiselman
 ms.author: raynew
 manager: cfreeman
-ms.date: 10/16/2016
+ms.date: 01/18/2017
 ms.topic: article
 ms.prod: system-center-threshold
 ms.technology: virtual-machine-manager
@@ -17,33 +17,43 @@ ms.technology: virtual-machine-manager
 
 This article describes how to set up a Software Defined Networking (SDN) RAS gateway in the System Center 2016 - Virtual Machine Manager (VMM) fabric.
 
-An SDN RAS gateway RAS Gateway is a data path element in SDN that enables site-to-site connectivity between two autonomous systems. Specifically, a RAS Gateway enables site-to-site connectivity between remote tenant networks and your datacenter using IPSec, Generic Routing Encapsulation (GRE) or Layer 3 Forwarding. [Learn more](https://technet.microsoft.com/windows-server-docs/networking/sdn/technologies/network-function-virtualization/ras-gateway-for-sdn).
+An SDN RAS gateway is a data path element in SDN that enables site-to-site connectivity between two autonomous systems. Specifically, a RAS Gateway enables site-to-site connectivity between remote tenant networks and your datacenter using IPSec, Generic Routing Encapsulation (GRE) or Layer 3 Forwarding. [Learn more](https://technet.microsoft.com/windows-server-docs/networking/sdn/technologies/network-function-virtualization/ras-gateway-for-sdn).
 
 
 ## Before you start
 
 
-Follow these steps before you start:
+Ensure the following before you start:
 
-- **Planning**: [Read about](https://technet.microsoft.com/windows-server-docs/networking/sdn/plan/plan-a-software-defined-network-infrastructure) planning an SDN, and review the planning topology in [Plan a Software Defined Network Infrastructure](https://technet.microsoft.com/library/mt605207.aspx). The diagram shows a sample 4-node setup. The setup is highly available with three network controller nodes (virtual machines), and three SLB/MUX nodes. It shows two tenants with one virtual networks broken into two virtual subnets to simulate a web tier and a database tier. Both the infrastructure and tenant virtual machines can be redistributed across any physical host.
-- **Network controller**: You should deploy the network controller before you deploy the RAS gateway.
-- **SLB**: To ensure that dependencies are handled correctly, you should also deploy SLB before setting up the gateway. If an SLB and gateway configured, you can use an validate an IPsec connection.
-
-
-
+- **Planning**: [Read about](https://technet.microsoft.com/windows-server-docs/networking/sdn/plan/plan-a-software-defined-network-infrastructure)planning an SDN, and review the planning topology in this document. The diagram shows a sample 4-node setup. The setup is highly available with Three Network Controller nodes (VM), and Three SLB/MUX nodes. It shows Two tenants with one virtual network broken into Two virtual subnets to simulate a web tier and a database tier. Both the infrastructure and tenant virtual machines can be redistributed across any physical host.
+- **Network Controller**: You should deploy the network controller before you deploy the RAS gateway.
+- **SLB**: To ensure that dependencies are handled correctly, you should also deploy the SLB before setting up the gateway. If an SLB and a gateway is configured, you can use and validate an IPsec connection.
+- **Service Template**: VMM uses a service template to automate GW deployment. Service templates support multi-node deployment on generation 1 and generation 2 VMs.
 
 ## Deployment steps
 
 To set up an RAS gateway you do the following:
 
-1. **Logical network**: Create a GRE VIP logical network. It needs an IP address pool for private VIPs, and to assign VIPs to GRE endpoints. The network exists to defines VIPs that are assigned to gateway VMs running on the SDN fabric for a site-to-site GRE connection.
-2. **Service template**: Download and import the RAS gateway service template.
-3. **Deploy the gateway**: Deploy a gateway service instance, and configure its properties.
+1. **Download the service template**: Download the service template that you need to deploy the GW.
+2. **Create the VIP Logical network**: Create a GRE VIP logical network. It needs an IP address pool for private VIPs, and to assign VIPs to GRE endpoints. The network exists to defines VIPs that are assigned to gateway VMs running on the SDN fabric for a site-to-site GRE connection.
+2. **Import the Service Template**: Import the RAS gateway service template.
+3. **Deploy the Gateway**: Deploy a gateway service instance, and configure its properties.
 4. **Validate the deployment**: Configure site-to-site GRE, IPSec, or L3, and validate the deployment.
+
+
+## Download the service template
+
+1. Download the SDN folder from the [Microsoft SDN GitHub repository](https://github.com/Microsoft/SDN) and copy the templates from **VMM** >**Templates** > **GW** to a local path on the VMM server.
+2. Extract the contents to a folder on a local computer. You'll import them to the library later.
+
+The download contains Two templates:
+- The EdgeServiceTemplate_Generation 1 VM.xml template is for deploying the GW Service on generation 1 virtual machines.
+- The EdgeServiceTemplate_Generation 2 VM.xml is for deploying the GW Service on Generation 2 virtual machines.
+- Both the templates have a default count of three virtual machines which can be changed in the Service Template designer.
 
 ## Create the GRE VIP logical network
 
-1. In the VMM console, run the Create Logical Network Wizard. Type in a name and optional description, and click **Next**.
+1. In the VMM console, run the Create Logical Network Wizard. Type a **Name**, optionally provide a description, and  click **Next**.
 2. In **Settings** select **One Connected Network**. Optionally you can select **Create a VM network with the same name**. This setting allows VMs to access this logical network directly. Select **Managed by the Network Controller**, and click **Next**.
 3. In **Network Site**, specify the settings:
 
@@ -58,51 +68,52 @@ To set up an RAS gateway you do the following:
 ### Create an IP address pool for GRE VIP addresses
 
 1. Right-click the GRE VIP logical network > **Create IP Pool**.
-2. Type a name and optional description for pool, and check that the VIP network is selected. Click **Next**.
+2. Type a **Name** and optional description for the pool, and check that the VIP network is selected. Click **Next**.
 3. Accept the default network site and click **Next**.
-4. Choose a starting and ending IP address for your range. Start the range on the second address of your available subnet. For example, if your available subnet is from .1 to .254, start the range at .2.
+4. Choose a starting and ending IP address for your range.
+
+    **Note**: Start the range on the second address of your available subnet. For example, if your available subnet is from .1 to .254, start the range at .2.
 5. In the **IP addresses reserved for load balancer VIPs** box, type the IP addresses range in the subnet. This should match the range you used for starting and ending IP addresses.
 6. You don't need to provide gateway, DNS or WINS information as this pool is used to allocate IP addresses for VIPs through the network controller only. Click **Next** to skip these screens.
 7. In **Summary**, review the settings and finish the wizard.
 
-## Download and import the template
+## Import the service template
 
-1. Download the RAS gateway service template from the [Microsoft SDN GitHub repository](https://github.com/Microsoft/SDN/tree/master/VMM/Templates/GW). The download contains two templates.
+1. Click **Library** > **Import Template**.
+2. Browse to your service template folder. As an example,  select the **EdgeServiceTemplate Generation 2.xml** file.
+3. Update the parameters for your environment as you import the service template. Note that the library resources were imported during network controller deployment.
+ - **WinServer.vhdx** Select the base virtual hard drive image that you downloaded and imported earlier, during network controller deployment.
+ - **EdgeDeployment.CR**: Map to the EdgeDeployment.cr library resource in the VMM library.
 
-    - The EdgeServiceTemplate_Generation1.xml template is for deploying the gateway service on generation 1 virtual machines
-    - The EdgeServiceTemplate_Generation2.xml is for deploying the gateway service on Generation 2 virtual machines.
-    - Both the templates have a default count of three virtual machines which can be changed in the Service Template designer. You can configure the number of passive gateway VMs during deployment.
+4. On the **Summary** page, review the details and click **Import**.
 
-2. Extract the contents to a folder on a local computer.
-3. Click **Library** > **Templates** > **Service Templates** > **Import Template**.
-4. Browse to your service template folder. For the purposes of this procedure, select the **EdgeServiceTemplate Generation 2.xml** file.
-5. Update the parameters for your environment as you import the service template. Note that the library resources were imported during network controller deployment.
-
-    - **WinServer.vhdx** Select the base virtual hard drive image that you downloaded and imported earlier, during network controller deployment.
-    - **NCCertificate.CR**: Map to the NCCertificate.cr library resource in the VMM library.
-    - **EdgeDeployment.CR**: Map to the EdgeDeployment.cr library resource in the VMM library
-
-
-3. On the **Summary** page, click **Import**.
+    **Note**: You can customize the service template. [Learn More](https://technet.microsoft.com/en-us/system-center-docs/vmm/scenario/sdn-network-controller)
 
 ## Deploy the gateway service
 
 This example uses the generation 2 template.
 
 1. Select the **EdgeServiceTemplate Generation2.xml** service template, and click **Configure Deployment**.
-2. Type a name, and choose a destination for the service instance. The destination must map to a host group that contains the hosts configured previously for gateway deployment.
+2. Type a **Name** and choose a destination for the service instance. The destination must map to a host group that contains the hosts configured previously for gateway deployment.
 3. In **Network Settings**, map the management network to the management VM network.
-4. In **Deploy Service**, it's normal for the VM instances to be initially red. Click **Refresh Preview** to automatically find suitable hosts for the virtual machine.
-5. On the left side of the **Configure Deployment** window, there are a number of settings that you must configure:
+
+    **Note**: The **Deploy Service** dialog appears after mapping is complete. It is normal for the virtual machine instances to be initially red. Click **Refresh Preview** to automatically find suitable hosts for the virtual machine.
+4. On the left of the **Configure Deployment** window, configure the following settings:
 
   - **AdminAccount**. Required. Select a Run as account in your environment which will be used as the local admin on the gateway VMs. For example - Administrator
   - **Management Network**. Required. Choose the Management VM network that you created for host management.
-  - **SelfSignedConfiguration**. Required. If you're using a self-signed certificate, set this value to **True**. If you are using a certificate that has been assigned by an Enterprise CA or external Root CA, set this value to **False**.
+  - **Management Account**. Required. Select a Run As Account with permissions to add the Gateway to the Active Directory domain associated with the network controller. This can be the same account you used in MgmtDomainAccount while deploying the network controller.
+  - **FQDN**. Required. FQDN for the Active directory domain for the gateway.
 
-6. Click **Deploy Service** to begin the service deployment job. Deployment times will vary depending on your hardware but are typically between 30 and 60 minutes. If gateway deployment fails, delete the failed service instance in **All Hosts** > **Services**.
-7. If you aren't using a volume licensed VHDX (or the product key isn't supplied using an answer file), then deployment will stop at the **Product Key** page during VM provisioning. You need to manually access the VM desktop, and either enter the key, or skip it.
+5. Click **Deploy Service** to begin the service deployment job.
 
-If you want to scale-in or scale-out a deployed SLB instance, read more in this [blog](https://blogs.technet.microsoft.com/scvmm/2011/05/18/scvmm-2012-an-explanation-of-scale-in-and-scale-out-for-a-service/).
+    **Note**:
+
+    - Deployment times will vary depending on your hardware but are typically between 30 and 60 minutes. If gateway deployment fails, delete the failed service instance in **All Hosts** > **Services** before you retry the deployment.
+
+    - If you aren't using a volume licensed VHDX (or the product key isn't supplied using an answer file), then deployment will stop at the **Product Key** page during VM provisioning. You need to manually access the VM desktop, and either enter the key, or skip it.
+
+    - If you want to scale-in or scale-out a deployed SLB instance, read this [blog](https://blogs.technet.microsoft.com/scvmm/2011/05/18/scvmm-2012-an-explanation-of-scale-in-and-scale-out-for-a-service/).
 
 ## Configure the Gateway Manager role
 
@@ -112,6 +123,8 @@ Now that the gateway service is deployed, you can configure the properties, and 
 2. Click the **Services** tab, and select the **Gateway Manager Role**.
 3. Find the **Associated Service** field under **Service information**, and click **Browse**. Select the gateway service instance you created earlier, and click **OK**.
 4. Select the **Run As account** that will be used by network controller to access the gateway virtual machines.
+
+    **Note**: The Run As Account must have Admin privileges.
 5. In **GRE VIP subnet**, select the VIP subnet that you created previously.
 6. In **Public IPv4 pool**, select the pool you configured during SLB deployment. In **Public IPv4 address**, provide an IP address from the previous pool, and ensure you don't select the initial three IP addresses from the range.
 7. In **Gateway Capacity**, configure the capacity settings.

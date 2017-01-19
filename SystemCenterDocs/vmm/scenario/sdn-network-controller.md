@@ -22,6 +22,11 @@ The SDN network controller is a scalable and highly available server role that e
 
 For a great introduction, [watch a video](https://channel9.msdn.com/Blogs/hybrid-it-management/Demo-Deploy-Network-Controller) (~ five minutes) that provides an overview of network controller deployment.
 
+## Prerequisites
+• Plan for a Software Defined Network (SDN). [Learn more](https://technet.microsoft.com/en-us/windows-server-docs/networking/sdn/plan/plan-a-software-defined-network-infrastructure).
+
+• Plan for an SDN Network Controller Installation and deployment. [Learn more](https://technet.microsoft.com/windows-server-docs/networking/sdn/plan/installation-and-preparation-requirements-for-deploying-network-controller).
+
 ## Before you start
 
 To set up SDN in the VMM fabric you need the following:
