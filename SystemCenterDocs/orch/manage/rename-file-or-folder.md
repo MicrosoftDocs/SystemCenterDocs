@@ -15,8 +15,7 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-Rename File or Folder
-=====================
+# Rename File or Folder
 
 Applies To: System Center 2016 - Orchestrator
 
@@ -26,8 +25,7 @@ This activity publishes all of the data from the required properties into publis
 
 The following tables list the required properties and published data for this activity.
 
-Rename File/Folder Required Properties
---------------------------------------
+## Rename File/Folder Required Properties
 
 | **Element** | **Description**   | **Valid Values** |
 |:---|:---|:---|
@@ -35,8 +33,7 @@ Rename File/Folder Required Properties
 | New Name   | The new name of the file or folder.   | String   |
 | Type   | Determines the rename operation. Select Folder for renaming a folder. Select File for renaming a file.   | Folder<br>File   |
 
-Rename File/Folder Published Data
----------------------------------
+## Rename File/Folder Published Data
 
 | **Element**   | **Description**   | **Valid Values**   |
 |:---|:---|:---|

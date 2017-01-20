@@ -15,8 +15,7 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-Reconfigure VM Activity
-=======================
+# Reconfigure VM Activity
 
 Applies To: System Center 2016 - Orchestrator
 
@@ -29,15 +28,15 @@ The activity publishes all of the data from the required and optional properties
 ### Reconfigure VM Activity Required Properties
 
 | Element | Description   | Valid Values | Look up |
-| Notes   | The notes associated with the virtual machine.   | String   | No   |
 |:---|:---|:---|:---|
+| Notes   | The notes associated with the virtual machine.   | String   | No   |
 | VM Path | The path of the virtual machine to be reconfigured. | String   | Yes   |
 
 ### Reconfigure VM Activity Optional Properties
 
 | Element   | Description   | Valid Values | Look up |
-| After Power On Script   | Indicates whether a script will be run after the virtual machine is powered on.   | String   | Yes   |
 |:---|:---|:---|:---|
+| After Power On Script   | Indicates whether a script will be run after the virtual machine is powered on.   | String   | Yes   |
 | After Resume Script   | Indicates whether a script will be run after the virtual machine is resumed from standby. | String   | Yes   |
 | Before Guest Shutdown Script   | Indicates whether a script will be run before the virtual machine is shut down.   | String   | Yes   |
 | Before Guest Standby Script   | Indicates whether a script will be run before the virtual machine is put into standby.   | String   | Yes   |
@@ -63,8 +62,8 @@ The activity publishes all of the data from the required and optional properties
 ### Reconfigure VM Activity Published Data
 
 | Name   | Description   | Value Type |
-| After Power On Script   | Indicates whether a script will be run after the virtual machine is powered on.   | String   |
 |:---|:---|:---|
+| After Power On Script   | Indicates whether a script will be run after the virtual machine is powered on.   | String   |
 | After Resume Script   | Indicates whether a script will be run after the virtual machine is resumed from standby. | String   |
 | Before Guest Shutdown Script | Indicates whether a script will be run before the virtual machine is shut down.   | String   |
 | Before Guest Standby Script  | Indicates whether a script will be run before the virtual machine is put into standby.   | String   |
@@ -89,8 +88,7 @@ The activity publishes all of the data from the required and optional properties
 | VM Name   | The new name of the virtual machine.   | String   |
 | VM Path   | The path to the virtual machine to be reconfigured.   | String   |
 
-Configuring the Reconfigure VM Activity
----------------------------------------
+## Configuring the Reconfigure VM Activity
 
 The following procedure describes the steps required to configure a Reconfigure VM activity.
 
@@ -107,5 +105,3 @@ The following procedure describes the steps required to configure a Reconfigure 
         You can also use published data to automatically populate the value of the property from the data output by a previous activity in the workflow.
 
 4.  Click **Finish**.
-
-

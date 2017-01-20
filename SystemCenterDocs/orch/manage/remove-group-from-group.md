@@ -15,8 +15,7 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-Remove Group From Group
-=======================
+# Remove Group From Group
 
 Applies To: System Center 2016 - Orchestrator
 
@@ -26,16 +25,14 @@ This activity publishes all of the data from the required and optional propertie
 
 The following tables list the required and optional properties and published data for this activity.
 
-Required properties for Remove Group From Group activity
---------------------------------------------------------
+## Required properties for Remove Group From Group activity
 
 | Element   | Description   | Valid Values |
 |:---|:---|:---|
 | Group Distinguished Name   | Distinguished name of the child group  | String   |
 | Parent Group Distinguished Name | Distinguished name of the parent group | String   |
 
-Published data for Remove Group From Group activity
----------------------------------------------------
+## Published data for Remove Group From Group activity
 
 | Name   | Description   | Value Type |
 |:---|:---|:---|

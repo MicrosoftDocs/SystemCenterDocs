@@ -16,7 +16,7 @@ manager: cfreeman
 ---
 # Audit Trail
 
-> Apples To: System Center 2016 - Orchestrator
+> Applies To: System Center 2016 - Orchestrator
 
 The *Audit Trail* is a collection of text log files that contain information about the interaction of a runbook with external tools and systems. By using the Audit Trail, you can report on configuration and change compliance of processes and identify changes made to a non\-Microsoft system for audit purposes or to remediate a change that causes service interruption.  
 
@@ -73,7 +73,7 @@ Audit Trail files are stored in comma\-separated value file \(.csv\) format. The
 
 When a file reaches 200 megabytes \(MB\) in size, a new file is created. The time stamp is included in the file name to ensure that each file name is unique. Passwords and other encrypted text fields are represented by five asterisks \(\*\*\*\*\*\) in the Audit Trail files.  
 
-> [NOTE]  
+> [!NOTE]  
 > The ProgramData folder holding the audit files is often a hidden system folder.  
 
 ## See Also  
