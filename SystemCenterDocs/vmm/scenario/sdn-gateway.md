@@ -25,7 +25,7 @@ An SDN RAS gateway is a data path element in SDN that enables site-to-site conne
 
 Ensure the following before you start:
 
-- **Planning**: [Read about](https://technet.microsoft.com/windows-server-docs/networking/sdn/plan/plan-a-software-defined-network-infrastructure) planning a software defined network, and review the planning topology in this document. The diagram shows a sample 4-node setup. The setup is highly available with Three network controller nodes (VM), and Three SLB/MUX nodes. It shows Two tenants with one virtual network broken into Two virtual subnets to simulate a web tier and a database tier. Both the infrastructure and tenant virtual machines can be redistributed across any physical host.
+- **Planning**: Read about planning a software defined network, and review the planning topology in [this]((https://technet.microsoft.com/windows-server-docs/networking/sdn/plan/plan-a-software-defined-network-infrastructure) document. The diagram shows a sample 4-node setup. The setup is highly available with Three network controller nodes (VM), and Three SLB/MUX nodes. It shows Two tenants with One virtual network broken into Two virtual subnets to simulate a web tier and a database tier. Both the infrastructure and tenant virtual machines can be redistributed across any physical host.
 - **Network controller**: You should deploy the network controller before you deploy the RAS gateway.
 - **SLB**: To ensure that dependencies are handled correctly, you should also deploy the SLB before setting up the gateway. If an SLB and a gateway is configured, you can use and validate an IPsec connection.
 - **Service template**: VMM uses a service template to automate GW deployment. Service templates support multi-node deployment on generation 1 and generation 2 VMs.
@@ -35,7 +35,7 @@ Ensure the following before you start:
 To set up a RAS gateway you do the following:
 
 1. **Download the service template**: Download the service template that you need to deploy the GW.
-2. **Create the VIP logical network**: Create a GRE VIP logical network. It needs an IP address pool for private VIPs, and to assign VIPs to GRE endpoints. The network exists to defines VIPs that are assigned to gateway VMs running on the SDN fabric for a site-to-site GRE connection.
+2. **Create the VIP logical network**: Create a GRE VIP logical network. It needs an IP address pool for private VIPs, and to assign VIPs to GRE endpoints. The network exists to define VIPs that are assigned to gateway VMs running on the SDN fabric for a site-to-site GRE connection.
 2. **Import the service template**: Import the RAS gateway service template.
 3. **Deploy the gateway**: Deploy a gateway service instance, and configure its properties.
 4. **Validate the deployment**: Configure site-to-site GRE, IPSec, or L3, and validate the deployment.
@@ -49,7 +49,8 @@ To set up a RAS gateway you do the following:
 The download contains Two templates:
 - The EdgeServiceTemplate_Generation 1 VM.xml template is for deploying the GW Service on generation 1 virtual machines.
 - The EdgeServiceTemplate_Generation 2 VM.xml is for deploying the GW Service on Generation 2 virtual machines.
-- Both the templates have a default count of three virtual machines which can be changed in the service template designer.
+
+Both the templates have a default count of three virtual machines which can be changed in the service template designer.
 
 ## Create the GRE VIP logical network
 
@@ -87,7 +88,7 @@ The download contains Two templates:
 
 4. On the **Summary** page, review the details and click **Import**.
 
-    **Note**: You can customize the service template. [Learn More](https://technet.microsoft.com/en-us/system-center-docs/vmm/scenario/sdn-network-controller)
+    **Note**: You can customize the service template. [Learn More](https://technet.microsoft.com/en-us/system-center-docs/vmm/scenario/sdn-network-controller).
 
 ## Deploy the gateway service
 
@@ -97,7 +98,7 @@ This example uses the generation 2 template.
 2. Type a **Name** and choose a destination for the service instance. The destination must map to a host group that contains the hosts configured previously for gateway deployment.
 3. In **Network Settings**, map the management network to the management VM network.
 
-    **Note**: The **Deploy Service** dialog appears after mapping is complete. It is normal for the virtual machine instances to be initially red. Click **Refresh Preview** to automatically find suitable hosts for the virtual machine.
+    **Note**: The **Deploy Service** dialog appears after mapping is complete. It is normal for the virtual machine instances to be initially Red. Click **Refresh Preview** to automatically find suitable hosts for the virtual machine.
 4. On the left of the **Configure Deployment** window, configure the following settings:
 
   - **AdminAccount**. Required. Select a Run as account in your environment which will be used as the local admin on the gateway VMs. For example - Administrator
@@ -181,10 +182,8 @@ A S2S GRE connection allows you to access remote virtual machines and services f
 
 An L3 gateway acts as a bridge between the physical infrastructure in the datacenter and the virtualized infrastructure in the Hyper-V Network Virtualization cloud. [Learn more](https://technet.microsoft.com/library/dn313101.aspx#bkmk_private).
 
-VMM doesn't currently support BGP-enabled dynamic L3 connectivity, but a dynamic L3 connection can be configured using a PowerShell script.
-
 1. Ensure you're logged on as an administrator on the VMM server.
-2. Run the following script.
+2. Run the following script:
 
 ```
 param(
@@ -245,12 +244,12 @@ The table below provides examples of dynamic and static L3 connections.
 
 **Parameter** | **Details** | **Example value**
 --- | --- | ---
-L3VPNConnectionName | User-defined name for L3 forwarding network connection | "Contoso_L3_GW"
-VmNetworkName | Name of tenant virtual network that's reachable over L3 network connection | "ContosoVMNetwork"
-NextHopVMNetworkName | User-defined name for L3 forwarding network connectionName of VLAN tagged L3 VM network you created | "Contoso_L3_Network"
-LocalIPAddresses | IP addresses to be configured on the HNV gateway L3 network interface.<br/><br/> IP address from the logical network you created | "10.127.134.55/25"
-PeerIPAddresses| IP address of physical network gateway, reachable over L3 logical network.<br/><br/> IP address from the logical network you created | "10.127.134.65"
-GatewaySubnet | Subnet to be used for routing between HVN gateway and tenant virtual network | "192.168.2.0/24"
-RoutingSubnets | Static routes that need to be on the L3 interace on the HNV gateway |
+L3VPNConnectionName | User-defined name for the L3 forwarding network connection. | "Contoso_L3_GW"
+VmNetworkName | Name of the tenant virtual network that's reachable over L3 network connection. | "ContosoVMNetwork"
+NextHopVMNetworkName | User-defined name for the L3 forwarding network connection. Name of VLAN tagged L3 VM network you created. | "Contoso_L3_Network"
+LocalIPAddresses | IP addresses to be configured on the HNV gateway L3 network interface.<br/><br/> IP address from the logical network you created. | "10.127.134.55/25"
+PeerIPAddresses| IP address of the physical network gateway, reachable over L3 logical network.<br/><br/> IP address from the logical network you created. | "10.127.134.65"
+GatewaySubnet | Subnet to be used for routing between HVN gateway and tenant virtual network. | "192.168.2.0/24"
+RoutingSubnets | Static routes that need to be on the L3 interace on the HNV gateway. |
 EnableBGP | Option to enable BGP. Default is false. |
 TenantASNRoutingSubnets |ASN number of tenant gateway. Only if BGP is enabled. |

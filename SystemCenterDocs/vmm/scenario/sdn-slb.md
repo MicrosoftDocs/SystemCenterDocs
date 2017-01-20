@@ -25,12 +25,12 @@ You can use VMM to deploy a network controller and a software load balancer. Aft
 ## Before you start
 Ensure the following:
 
-- **Planning**: [Read about](https://technet.microsoft.com/windows-server-docs/networking/sdn/plan/plan-a-software-defined-network-infrastructure) planning a software defined network, and review the planning topology in this document. The diagram shows a sample 4-node setup. The setup is highly available with Three network controller nodes (VM), and Three SLB/MUX nodes. It shows Two tenants with one virtual network broken into Two virtual subnets to simulate a web tier and a database tier. Both the infrastructure and tenant virtual machines can be redistributed across any physical host
+- **Planning**: Read about planning a software defined network, and review the planning topology in [this]((https://technet.microsoft.com/windows-server-docs/networking/sdn/plan/plan-a-software-defined-network-infrastructure) document. The diagram shows a sample 4-node setup. The setup is highly available with Three network controller nodes (VM), and Three SLB/MUX nodes. It shows Two tenants with One virtual network broken into Two virtual subnets to simulate a web tier and a database tier. Both the infrastructure and tenant virtual machines can be redistributed across any physical host.
 - **Network controller**: You should have an [SDN network controller](sdn-network-controller.md) deployed in the VMM fabric, so that you have the compute and network infrastructure running before you set up the load balancing.
 - **SSL certificate**: To import the SLB service template you'll need to prepare an SSL certificate. You made the certificate available during network controller deployment. To use the certificate you prepared in network controller deployment for SLB, right-click the certificate and export it without a password in .CER format. Place it in the library, in the NCCertificate.CR folder you created when you set up the network controller.
 - **Service template**: VMM uses a service template to automate SLB deployment. Service templates support multi-node deployment on generation 1 and generation 2 VMs.
 - **SLB VMs**: All the SLB virtual machines must be running Windows Server 2016 with the latest patches installed.
-- **HNV Network**: Ensure that you created the Provider HNV network as part of NC validation. [Learn more](https://technet.microsoft.com/en-us/system-center-docs/vmm/scenario/sdn-network-controller)
+- **HNV Network**: Ensure that you created the Provider HNV network as part of NC validation. [Learn more](https://technet.microsoft.com/en-us/system-center-docs/vmm/scenario/sdn-network-controller).
 
 ## Deployment steps
 
@@ -40,7 +40,7 @@ Ensure the following:
     - A logical network to mirror the transit (Frontend) physical network.
     - Private virtual IP (VIP) and public VIP networks, to assign VIPs to the SLB service.
     - Active Directory and DNS must be available and reachable from these networks. You must have domain administrator credentials and the ability to create DNS entries in the domain.
-4. **Create private and public VIP logical networks**: Private virtual IP (VIP) and public VIP networks, to assign VIPs to the SLB service
+4. **Create private and public VIP logical networks**: Private virtual IP (VIP) and public VIP networks, to assign VIPs to the SLB service.
 5. **Import the service template**: Import and customize the SLB service template.
 6. **Deploy SLB**: Deploy SLB as a VMM service, and configure the service properties.
 7. **Validate the deployment**: Configure BGP peering between the SLB/MUX instance and a BGP router, assign a public IP address to a tenant VM or service, and access the VM or service from outside the network.
@@ -57,19 +57,21 @@ Ensure that the SSL certificate that you created during the NC deployment is cop
 The download contains Two templates:
 - The SLB Production Generation 1 VM.xml template is for deploying the SLB Service on generation 1 virtual machines.
 - The SLB Production Generation 2 VM.xml is for deploying the SLB Service on Generation 2 virtual machines.
-- Both the templates have a default count of three virtual machines which can be changed in the service template designer.
+
+Both the templates have a default count of three virtual machines which can be changed in the service template designer.
 
 ## Create the transit logical network
 
 1. Open the **Create logical network Wizard**, and type a **Name** and optional description.
-2. In **Settings** select **One Connected Network**. Select **Create a VM network with the same name** box to allow virtual machines to access this logical network directly, and **Managed by the network controller**.
-3. In **Network Site** add the network site information for your subnet.
+2. In **Settings**, select **One Connected Network**. Select **Create a VM network with the same name** box to allow virtual machines to access this logical network directly, and **Managed by the network controller**.
+3. In **Network Site**, add the network site information for your subnet.
 4. Review the **Summary** information and complete the logical network wizard.
 
 ### Create an IP address pool for the transit logical network
 
-This is the IP address pool where DIPs are assigned to the SLB/MUX virtual machines and BGP Peer virtual machine (if deployed).  Note the following:
+This is the IP address pool where DIPs are assigned to the SLB/MUX virtual machines and BGP Peer virtual machine (if deployed).  
 
+**Note**:
 - Ensure you use the IP address range that corresponds to your transit network IP address space. Don't include the first IP address of your subnet in the IP pool you are about to create. For example, if your available subnet is from .1 to .254, start your range at .2.
 - After you create the Transit logical network, ensure you associate this logical network with the Management switch uplink port profile you created during the network controller deployment.
 
@@ -90,7 +92,7 @@ You need a private VIP address pool to assign a VIP, and a public VIP, to the SL
 
 **Use the following steps to create a private VIP**:
 
-1.  Start the **Create logical network Wizard**. Type a name and optional description for this network.
+1.  Start the **Create logical network Wizard**. Type a **Name** and optional description for this network.
 2. In  **Settings** select **One Connected Network**.  Select **Create a VM network with the same name** box to allow virtual machines to access this logical network directly. Select **Managed by the network controller**.
 3. In **Network Site** add the network site information for your private VIP logical network.
 4. Review the **Summary** information and complete the wizard.
@@ -103,7 +105,7 @@ You need a private VIP address pool to assign a VIP, and a public VIP, to the SL
 ### Create IP address pools for the private and public VIP networks
 
 1.  Right-click the private VIP logical network > **Create IP Pool**.
-2.  Provide a name and optional description for the IP Pool and ensure that the correct logical network is selected.
+2.  Provide a **Name** and optional description for the IP Pool and ensure that the correct logical network is selected.
 3.  Accept the default network site, and click **Next**.
 4.  In **IP Address range** configure the starting and ending IP address.
 
@@ -117,35 +119,35 @@ You need a private VIP address pool to assign a VIP, and a public VIP, to the SL
 
 ## Import the service template ##
 
-Import the service template into the VMM library. For this example we'll import the generation 2 template.
+Import the service template into the VMM library. For this example, we'll import the generation 2 template.
 
 1. Click **Library** > **Import Template**.
 2. Browse to your service template folder, select the **SLB Production Generation 2 VM.xml** file.
 3. Update the parameters for your environment as you import the service template. Note that the library resources were imported during network controller deployment.
 
-    - **WinServer.vhdx** Select the base virtual hard drive image that you downloaded and imported earlier, during network controller deployment.
+    - **WinServer.vhdx**: Select the base virtual hard drive image that you downloaded and imported earlier, during network controller deployment.
     - **NCCertificate.CR**: This library resource contains scripts used to set up the network controller. Map to the NCCertificate.cr library resource in the VMM library.
     - **EdgeDeployment.CR**: Map to the EdgeDeployment.cr library resource in the VMM library.
 
 4. Remember that you should have copied the .CER certificate that you previously created to the **NCCertificate.CR** folder.
 5. On the **Summary** page, review the details and click **Import**.
 
-    **Note**: You can customize the service template. [Learn More](https://technet.microsoft.com/en-us/system-center-docs/vmm/scenario/sdn-network-controller)
+    **Note**: You can customize the service template. [Learn More](https://technet.microsoft.com/en-us/system-center-docs/vmm/scenario/sdn-network-controller).
 
 ## Deploy the SLB service
 
 Now deploy an SLB/MUX service instance.
 
-1.  Select the **SLB Production Generation 2 VM.xml** service template > **Configure Deployment**. Type a name and optional destination for the service instance. The destination must map to a host group that contains the hosts you've configured.
+1.  Select the **SLB Production Generation 2 VM.xml** service template > **Configure Deployment**. Type a **Name** and optional destination for the service instance. The destination must map to a host group that contains the hosts you've configured.
 2.  In the **Network Settings** section, map **TransitNetwork** to your transit VM network and **ManagementNetwork** to your management VM network.
 
-    **Note**: The **Deploy Service** dialog appears after mapping is complete. It is normal for the virtual machine instances to be initially red. Click **Refresh Preview** to automatically find suitable hosts for the virtual machine.
+    **Note**: The **Deploy Service** dialog appears after mapping is complete. It is normal for the virtual machine instances to be initially Red. Click **Refresh Preview** to automatically find suitable hosts for the virtual machine.
 3. On the left of the **Configure Deployment** window, configure the settings as detailed in the following table:
 
     **Setting** | **Requirement** | **Description**
     --- |--- |---
     **Transit network** | Required | Your transit VM network.
-    **LocalAdmin** | Required | Select a Run As Account in your environment which will be used as the local Administrator on the virtual machines. The user name should be Administrator.   
+    **LocalAdmin** | Required | Select a Run As Account in your environment, which will be used as the local Administrator on the virtual machines. The user name should be Administrator.   
     **Management network** | Required | Choose the management VM network that you created for host management.
     **MgmtDomainAccount** | Required | Select a Run As Account with permissions to add the SLB/MUX virtual machines to the Active Directory domain associated with the network controller. This can be the same account you used in MgmtDomainAccount while deploying the network controller.
     **MgmtDomainFQDN** | Required | FQDN for the Active directory domain that the SLB/MUX virtual machines will join.
