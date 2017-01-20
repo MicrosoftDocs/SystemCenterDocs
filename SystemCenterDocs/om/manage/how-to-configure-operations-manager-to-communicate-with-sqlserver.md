@@ -5,7 +5,7 @@ description: This article describes how to reconfigure Operations Manager if you
 author: mgoedtel
 ms.author: magoedte
 manager: cfreeman
-ms.date: 11/03/2016
+ms.date: 01/20/2017
 ms.custom: na
 ms.prod: system-center-threshold
 ms.technology: operations-manager
@@ -23,7 +23,7 @@ If after installing System Center 2016 - Operations Manager, you move the Operat
 1.	On each management server run **regedit** from an elevated **Command Prompt**, then edit:
 
  -	`HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\System Center\2010\Common\Database` 
-	Change **DatabaseServerName** to `computer\<instance>` followed by a comma, and then the SQL Server port number `(computer\instance,portNumber)`.  If you are hosting the database on a SQL Server cluster, replace *computer* with the virtual network name of the cluster.  If the database is part of a SQL Always On Availability Group, replace `computer\<instance>` with the availability group listener name in the format of '<AvalabilityGroupListnerName,portNumber>`.    
+	Change **DatabaseServerName** to `computer\<instance>` followed by a comma, and then the SQL Server port number `(computer\instance,portNumber)`.  If you are hosting the database on a SQL Server cluster, replace *computer* with the virtual network name of the cluster.  If the database is part of a SQL Always On Availability Group, replace `computer\<instance>` with the availability group listener name in the format of `<AvalabilityGroupListnerName,portNumber>`.    
 
  -	`HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Microsoft Operations Manager\3.0\Setup` 
 	Change **DatabaseServerName** to `computer\<instance>` followed by a comma, and then the SQL Server port number `(computer\instance,portNumber)`.  If you are hosting the database on a SQL Server cluster, replace *computer* with the virtual network name of the cluster.  If the database is part of a SQL Always On Availability Group, replace `computer\<instance>` with the availability group listener name in the format of `<AvalabilityGroupListnerName,portNumber>`.  
@@ -69,7 +69,7 @@ If after installing System Center 2016 - Operations Manager, you move the Operat
     m. In the first row, enter `computer\<instance>` followed by a comma, and then the SQL Server port number `(computer\instance,portNumber)`.  If you are hosting the database on a SQL Server cluster, replace *computer* with the virtual network name of the cluster.  If the database is part of a SQL Always On Availability Group, replace `computer\instance` with the availability group listener name in the format of `<AvalabilityGroupListnerName,portNumber>`.  
     n. Right-click `dbo. MT_Microsoft$SystemCenter$DataWarehouse_Log$`, and then click **Edit Top 200 Rows**.  
     o. In the results pane, scroll to the right to the column titled  `Post_MainDatabaseServerName_<GUID>`.  
-    p. In the first row, enter `computer\<instance>` followed by a comma, and then the SQL Server port number `(computer\instance,portNumber)`.  If you are hosting the database on a SQL Server cluster, replace *computer* with the virtual network name of the cluster.  If the database is part of a SQL Always On Availability Group, replace `computer\instance` with the availability group listener name in the format of `<AvalabilityGroupListnerName,portNumber>`.
+    p. In the first row, enter `computer\<instance>` followed by a comma, and then the SQL Server port number `(computer\instance,portNumber)`.  If you are hosting the database on a SQL Server cluster, replace *computer* with the virtual network name of the cluster.  If the database is part of a SQL Always On Availability Group, replace `computer\instance` with the availability group listener name in the format of `<AvalabilityGroupListnerName,portNumber>`.  
     q. Right-click `dbo.MT_Microsoft$SystemCenter$OpsMgrDWWatcher`, and then click **Edit Top 200 Rows**.  
     r. In the results pane, scroll to the right to the column titled  `MainDatabaseServerName_<GUID>`.  
     s. In the first row, enter `computer\<instance>` followed by a comma, and then the SQL Server port number `(computer\instance,portNumber)`.  If you are hosting the database on a SQL Server cluster, replace *computer* with the virtual network name of the cluster.  If the database is part of a SQL Always On Availability Group, replace `computer\instance` with the availability group listener name in the format of `<AvalabilityGroupListnerName,portNumber>`.  
