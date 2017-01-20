@@ -15,8 +15,7 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-Reimage VM Instance
-===================
+# Reimage VM Instance
 
 Applies To: System Center 2016 - Orchestrator
 
@@ -24,8 +23,7 @@ The **Reimage Role Instance** activity requests a reimage of a role instance tha
 
 The activity publishes all of the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
 
-Reimage Role Instance Required Properties
------------------------------------------
+## Reimage Role Instance Required Properties
 
 | **Element**   | **Description**   | **Valid values**   |
 |:---|:---|:---|
@@ -34,13 +32,11 @@ Reimage Role Instance Required Properties
 | Instance Name   | The name of the role instance.   | String   |
 | Wait for Completion | Whether to wait for this operation to complete in Windows Azure before moving on to the next activity. | True, False   |
 
-Reimage Role Instance Optional Properties
------------------------------------------
+## Reimage Role Instance Optional Properties
 
 There are no optional properties for this runbook activity.
 
-Reimage Role Instance Published Data
-------------------------------------
+## Reimage Role Instance Published Data
 
 | **Element**   | **Description**   | **Value type** |
 |:---|:---|:---|
@@ -66,8 +62,8 @@ Reimage Role Instance Published Data
 | Instance Name   | The name of the role instance.   | String   |
 | Wait for Completion   | Whether to wait for this operation to complete in Windows Azure before moving on to the next activity. | Boolean   |
 
-See Also
---------
+## See Also
+
 
 #### Other Resources
 

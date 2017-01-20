@@ -15,8 +15,7 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-Rename User
-===========
+# Rename User
 
 Applies To: System Center 2016 - Orchestrator
 
@@ -26,8 +25,7 @@ This activity publishes all of the data from the required and optional propertie
 
 The following tables list the required and optional properties and published data for this activity.
 
-Required properties for Rename User activity
---------------------------------------------
+## Required properties for Rename User activity
 
 | Element   | Description   | Valid Values |
 |:---|:---|:---|
@@ -35,8 +33,7 @@ Required properties for Rename User activity
 | Distinguished Name   | Distinguished name of the user account   | String   |
 | New Sam Account Name | New logon name to support earlier versions of the operating system | String   |
 
-Published data for Rename User activity
----------------------------------------
+## Published data for Rename User activity
 
 | Name   | Description   | Value Type |
 |:---|:---|:---|

@@ -15,8 +15,7 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-Recover SharePoint
-==================
+# Recover SharePoint
 
 Applies To: System Center 2016 - Orchestrator
 
@@ -26,31 +25,25 @@ Be aware that the term Network Folder is used in this integration pack in the sa
 
 The activity publishes all of the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
 
-Recover SharePoint Required Properties
---------------------------------------
+## Recover SharePoint Required Properties
 
-|   |   |
-|--------------------|------------------------------------------------------------------------------------|
 | Element   | Sample value   |
+|--------------------|------------------------------------------------------------------------------------|
 | Data Source ID   | The unique identifier (GUID) of the SharePoint Farm to be recovered   |
 | Recovery Type   | Recover to Original Instance, orRecover to Network Folder   |
 | Recovery Source ID | The unique identifier (GUID) of the SharePoint Farm backup up point to be restored |
 
-Recover SharePoint Optional Properties
---------------------------------------
+## Recover SharePoint Optional Properties
 
-|   |   |
-|--------------------|-----------------------------------------------------------------------------------------------------------|
 | Element   | Sample value   |
+|--------------------|------------------------------------------------------------------------------------|
 | Target Location   | The target location for the recoveryRequired when Recovery Type is Recover to Network Folder.   |
 | Target Server Name | The name of the target server for the recovery Rrequired when Recovery Type is Recover to Network Folder. |
 
-Recover SharePoint Published Data
----------------------------------
+## Recover SharePoint Published Data
 
-|   |   |
-|--------------------|-------------------------------------------------------------------------------------------------------|
 | Element   | Sample value   |
+|--------------------|------------------------------------------------------------------------------------|
 | DataSourceId   | The unique identifier (GUID) of the SharePoint Farm to be recovered   |
 | EndTime   | The end time of the recovery, format as 0001-01-01T00:00:00   |
 | JobCategory   | The job category   |

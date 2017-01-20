@@ -15,28 +15,24 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-Remove User Role
-================
+# Remove User Role
 
 Applies To: System Center 2016 - Orchestrator
 
 Deletes a user role from the VMM server.
 
-Remove User Role Required Properties
-------------------------------------
+## Remove User Role Required Properties
 
-| Element   | Description   | Valid Values |
-|:---|:---|:---|
-| User Role Name | The user role name to be deleted |   |
+| Element   | Description   |
+|:---|:---|
+| User Role Name | The user role name to be deleted |  
 
-Remove User Role Optional Properties
-------------------------------------
+## Remove User Role Optional Properties
 
-None
+There are no optional properties for this activity.
 
-Remove User Role Published Data
--------------------------------
+## Remove User Role Published Data
 
-| Element   | Description   | Valid Values |
-|:---|:---|:---|
-| User Role Name | The deleted User Role Name. |   |
+| Element   | Description    |
+|:---|:---|
+| User Role Name | The deleted User Role Name. |   

@@ -15,8 +15,7 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-Restart VM Instance
-===================
+# Restart VM Instance
 
 Applies To: System Center 2016 - Orchestrator
 
@@ -24,8 +23,7 @@ The **Restart VM Instance** activity restarts the specified virtual machine. It 
 
 The activity publishes all of the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
 
-Restart VM Instance Required Properties
----------------------------------------
+## Restart VM Instance Required Properties
 
 | **Element**   | **Description**   | **Valid values** |
 |:---|:---|:---|
@@ -34,13 +32,11 @@ Restart VM Instance Required Properties
 | VM Instance Name   | The name of the virtual machine.   | String   |
 | Wait for Completion | Whether to wait for this operation to complete in Windows Azure before moving on to the next activity. | True, False   |
 
-Restart VM Instance Optional Properties
----------------------------------------
+## Restart VM Instance Optional Properties
 
 There are no optional properties for this runbook activity.
 
-Restart VM Instance Published Data
-----------------------------------
+## Restart VM Instance Published Data
 
 | **Element**   | **Description**   | **Value type** |
 |:---|:---|:---|
@@ -50,8 +46,8 @@ Restart VM Instance Published Data
 | Wait for Completion | Whether to wait for this operation to complete in Windows Azure before moving on to the next activity. | True, False   |
 | Request ID   | The unique identifier of the request to Windows Azure.   | String   |
 
-See Also
---------
+## See Also
+
 
 #### Other Resources
 

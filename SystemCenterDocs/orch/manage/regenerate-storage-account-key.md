@@ -15,34 +15,29 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-Regenerate Storage Account Key
-==============================
+# Regenerate Storage Account Key
 
 Applies To: System Center 2016 - Orchestrator
 
 The **Regenerate Storage Account Key** activity regenerates the primary or secondary access key for the specified storage account. It is part of the **Azure Storage** category activity.
 
-| Note   |
-|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Using this activity will publish the new storage account key to the Orchestrator databus. If you chose to use this activity, make sure to appropriately protect the key after regeneration. |
+>[!NOTE]
+>Using this activity will publish the new storage account key to the Orchestrator databus. If you chose to use this activity, make sure to appropriately protect the key after regeneration.
 
 The activity publishes all of the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
 
-Regenerate Storage Account Key Required Properties
---------------------------------------------------
+## Regenerate Storage Account Key Required Properties
 
 | **Element**   | **Description**   | **Valid values**   |
 |:---|:---|:---|
 | Storage Account Name | The name of the storage account.   | String   |
 | Key Type   | Specifies which key to regenerate. | Primary, Secondary |
 
-Regenerate Storage Account Key Optional Properties
---------------------------------------------------
+## Regenerate Storage Account Key Optional Properties
 
 There are no optional properties for this runbook activity.
 
-Regenerate Storage Account Key Published Data
----------------------------------------------
+## Regenerate Storage Account Key Published Data
 
 | **Element**   | **Description**   | **Value type** |
 |:---|:---|:---|
@@ -50,10 +45,9 @@ Regenerate Storage Account Key Published Data
 | Secondary Key   | The secondary access key for the storage account. | String   |
 | Storage Account Name | The name of the storage account.   | String   |
 
-See Also
---------
+## See Also
+
 
 #### Other Resources
 
 [Using Runbooks in System Center 2016 - Orchestrator](https://technet.microsoft.com/en-us/library/hh403791.aspx)
-
