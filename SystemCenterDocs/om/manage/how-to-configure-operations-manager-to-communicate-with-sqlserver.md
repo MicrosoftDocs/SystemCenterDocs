@@ -49,7 +49,7 @@ If after installing System Center 2016 - Operations Manager, you move the Operat
 
 1. On each management server run **regedit** from an elevated **Command Prompt**, then edit:
 
--	`HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Microsoft Operations Manager\3.0\Setup`  
+    `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Microsoft Operations Manager\3.0\Setup`  
     Change **DataWarehouseDBServerName** to `computer\<instance>` followed by a comma, and then the SQL Server port number `(computer\instance,portNumber)`.  If you are hosting the database on a SQL Server cluster, replace *computer* with the virtual network name of the cluster.  If the database is part of a SQL Always On Availability Group, replace `computer\<instance>` with the availability group listener name in the format of `<AvalabilityGroupListnerName,portNumber>`.  
 
 2. On the SQL Server instance hosting the Reporting data warehouse database, configure the following:  
