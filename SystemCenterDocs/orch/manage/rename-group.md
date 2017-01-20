@@ -15,8 +15,7 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-Rename Group
-============
+# Rename Group
 
 Applies To: System Center 2016 - Orchestrator
 
@@ -26,23 +25,20 @@ This activity publishes all of the data from the required and optional propertie
 
 The following tables list the required and optional properties and published data for this activity.
 
-Required properties for Rename Group activity
----------------------------------------------
+## Required properties for Rename Group activity
 
 | Element   | Description   | Valid Values |
 |:---|:---|:---|
 | New Common Name   | New common name for the group   | String   |
 | Distinguished Name | Distinguished name of the group | String   |
 
-Optional properties for Rename Group activity
----------------------------------------------
+## Optional properties for Rename Group activity
 
 | Element   | Description   | Valid Values |
 |:---|:---|:---|
 | New Sam Account Name | New logon name to support earlier versions of the operating system | String   |
 
-Published data for Rename Group activity
-----------------------------------------
+## Published data for Rename Group activity
 
 | Name   | Description   | Value Type |
 |:---|:---|:---|
