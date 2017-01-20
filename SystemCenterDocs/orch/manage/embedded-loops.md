@@ -16,7 +16,7 @@ manager: cfreeman
 ---
 # Embedded Loops
 
-> Apples To: System Center 2016 - Orchestrator
+> Applies To: System Center 2016 - Orchestrator
 
 In System Center 2016 - Orchestrator, looping can be configured for any runbook. By using loops, you can build automatic retries and monitor at any location in a runbook.  
 

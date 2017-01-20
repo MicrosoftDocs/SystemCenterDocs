@@ -16,7 +16,7 @@ manager: cfreeman
 ---
 # How to Benchmark
 
-> Apples To: System Center 2016 - Orchestrator
+> Applies To: System Center 2016 - Orchestrator
 
 Orchestrator runbook activities can be thought of as having two distinct types of code:  platform code and domain code. The term *domain code* is used to identify code within a runbook activity that is typically not associated with the Orchestrator platform itself \(with notable exceptions, such as **Invoke Runbook**, **Junction**, and others\). For example, the **Invoke Web Service** standard activity would contain Orchestrator platform code \(the "plumbing" of the activity\) as well as domain code unique to invoking a SOAP\-based web service. The platform code will be very similar for most activities, since it is built on a common framework. However, there will potentially be great variation in domain code for different activities.  
 

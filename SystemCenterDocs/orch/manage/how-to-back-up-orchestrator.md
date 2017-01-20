@@ -16,7 +16,7 @@ manager: cfreeman
 ---
 # How to Back up Orchestrator
 
-> Apples To: System Center 2016 - Orchestrator
+> Applies To: System Center 2016 - Orchestrator
 
 A complete backup of an Orchestrator environment consists of the following:  
 

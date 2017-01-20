@@ -15,15 +15,13 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-Update User Role Property
-=========================
+# Update User Role Property
 
 Applies To: System Center 2016 - Orchestrator
 
 Updates User Role Property
 
-Update User Role Property Required Properties
----------------------------------------------
+## Update User Role Property Required Properties
 
 | Element   | Description   | Valid Values   |
 |:---|:---|:---|
@@ -32,15 +30,13 @@ Update User Role Property Required Properties
 | Property   | The property to be updated   | Select from list of Properties |
 | Value   | The new value assigned to the newly added property | Based on property value type   |
 
-Updates User Role Property Optional Properties
-----------------------------------------------
+## Updates User Role Property Optional Properties
 
 | Element   | Description   | Valid Values   |
 |:---|:---|:---|
 | Description | Text explanation of the user role | Alphanumeric text |
 
-Updates User Role Property Published Data
------------------------------------------
+## Updates User Role Property Published Data
 
 | Element   | Description   | Valid Values   |
 |:---|:---|:---|

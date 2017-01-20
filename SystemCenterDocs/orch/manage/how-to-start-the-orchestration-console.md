@@ -16,7 +16,7 @@ manager: cfreeman
 ---
 # How to Start the Orchestration Console
 
-> Apples To: System Center 2016 - Orchestrator
+> Applies To: System Center 2016 - Orchestrator
 
 The Orchestration console is a web\-based tool and is accessed through your web browser. In addition to starting it on the **Start** menu on the computer where the web service is installed, there are two methods for starting the Orchestration console as described in the following procedures.  
 
@@ -28,9 +28,9 @@ The Orchestration console is a web\-based tool and is accessed through your web 
 
 ### To start the Orchestration console in the Runbook Designer  
 
-1.  Click the **Orchestration Console** button on the toolbar.  
+-  Click the **Orchestration Console** button on the toolbar.  
 
-    > [NOTE]  
+    > [!NOTE]  
     > If the URL has not been set for the Orchestration console, you will receive an error message. Use the following procedure to set the URL.  
 
 ### To set the Orchestration console URL in the Runbook Designer  

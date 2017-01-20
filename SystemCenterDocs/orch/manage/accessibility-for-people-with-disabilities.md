@@ -16,7 +16,7 @@ manager: cfreeman
 ---
 # Accessibility for People with Disabilities
 
-> Apples To: System Center 2016 - Orchestrator
+> Applies To: System Center 2016 - Orchestrator
 
 Microsoft is committed to making its products and services easier for everyone to use. The following topics provide information about the features, products, and services that make Microsoft System Center 2016 - Orchestrator more accessible for people with disabilities.  
 
