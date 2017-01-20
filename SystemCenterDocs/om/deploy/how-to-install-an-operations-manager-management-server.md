@@ -5,7 +5,7 @@ description: This article describes how to install an Operations Manager managem
 author: mgoedtel
 ms.author: magoedte
 manager: cfreemanwa
-ms.date: 11/15/2016
+ms.date: 01/20/2017
 ms.custom: na
 ms.prod: system-center-threshold
 ms.technology: operations-manager
@@ -16,7 +16,7 @@ ms.topic: article
 
 >Applies To: System Center 2016 - Operations Manager
 
-In System Center 2016 - Operations Manager, the first feature you install is the management server. The setup procedure creates the operational database and data warehouse database. The procedure described in this topic assumes that you have already installed a supported version of Microsoft SQL Server locally on the  management server. However, you can specify an instance of SQL Server that is installed on a separate server.
+In System Center 2016 - Operations Manager, the first feature you install is the management server. The setup procedure creates the operational database and data warehouse database. The procedure described in this topic assumes that you have already installed a supported version of Microsoft SQL Server.  If you are hosting the Operations Manager operational and data warehouse database on a SQL Always On Availability Group, be sure to use the node planned for the initial Primary replica for initial installation of these databases.  
 
 You must ensure that your server meets the minimum system requirements for System Center 2016 - Operations Manager. For more information, see [System Requirements for System Center 2016 - Operations Manager](../plan/system-requirements.md).
 
@@ -46,7 +46,12 @@ You must ensure that your server meets the minimum system requirements for Syste
 
 8.  On the **Configuration**, **Please read the license terms** page, review the Microsoft Software License Terms, select **I have read, understood and agree with the license terms**, and then click **Next**.
 
-9. When the **Configuration**, **Configure the operational database** page opens, in the **Server name and instance name** box, type the name of the server and the name of the SQL Server instance for the database server that will host the operational database. If you installed SQL Server by using the default instance, you only have to type the server name. If you changed the default SQL Server port, you must type the new port number in the **SQL Server port** box.
+9. When the **Configuration**, **Configure the operational database** page opens, in the **Server name and instance name** box, type the name of the server and the name of the SQL Server instance for the database server that will host the operational database. 
+
+  * If you installed SQL Server by using the default instance, you only have to type the server name. 
+  * If you changed the default SQL Server port, you must type the new port number in the **SQL Server port** box.  
+  * If you are hosting the database on a SQL Server cluster, replace *computer* with the virtual network name of the cluster.  
+  * If the database is part of a SQL Always On Availability Group, replace `computer\<instance>` with the availability group listener name and for **SQL Server port**, type the port number of the availability group listener.    
 
     As you type the values for the SQL Server and instance names, you see a red circle with a white **X** in it appear to the left of the **Server name and instance name** and **SQL Server port** boxes. The white **X** indicates that the values have not yet been validated, and the black text indicates that you have not entered any illegal characters. If you enter illegal characters, the text itself turns red.
 
@@ -77,7 +82,12 @@ You must ensure that your server meets the minimum system requirements for Syste
     > [!NOTE]
     > The SQL Server model database size must not be greater than 100 MB. If it is, you might encounter an error in Setup regarding the inability to create a database on SQL due to user permissions. To resolve the issue, you must reduce the size of the model database.
 
-12. When the **Configuration**, **Configure the data warehouse database** page opens, in the **Server name and instance name** box, type the server name and the name of the instance of SQL Server for the database server that will host the data warehouse database.
+12. When the **Configuration**, **Configure the data warehouse database** page opens, in the **Server name and instance name** box, type the server name and the name of the instance of SQL Server for the database server that will host the data warehouse database.   
+
+  * If you installed SQL Server by using the default instance, you only have to type the server name. 
+  * If you changed the default SQL Server port, you must type the new port number in the **SQL Server port** box.  
+  * If you are hosting the database on a SQL Server cluster, replace *computer* with the virtual network name of the cluster.  
+  * If the database is part of a SQL Always On Availability Group, replace `computer\<instance>` with the availability group listener name and for **SQL Server port**, type the port number of the availability group listener.    
 
 13. Because this is the first management server installation, accept the default value of **Create a new data warehouse database**.
 
