@@ -20,9 +20,9 @@ After you have deployed or upgraded to System Center 2016 – Operations Mana
 
 Operations Manager supports changes to your Operations Manager infrastructure as listed below. Be cautious when performing these operations because they can result in data loss if not performed correctly.
 
-- [Moving the Operational database](how-to-move-the-operational-database.md)
+- [How to move the Operational database](how-to-move-the-operational-database.md)
 
-- [Moving the Reporting data warehouse database](how-to-move-the-reporting-data-warehouse-database.md)
+- [How to move the Reporting data warehouse database](how-to-move-the-reporting-data-warehouse-database.md)
 
 - [How to Configure Operations Manager to Communicate with SQL Server](how-to-configure-operations-manager-to-communicate-with-sqlserver.md)
 
