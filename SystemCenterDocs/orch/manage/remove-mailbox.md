@@ -15,8 +15,7 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-Remove Mailbox
-==============
+# Remove Mailbox
 
 Applies To: System Center 2016 - Orchestrator
 
@@ -24,16 +23,14 @@ You can use the Remove Mailbox activity to delete an existing mailbox and the Ac
 
 The following tables list the required properties, optional properties, and published data for this activity.
 
-Required properties for Remove Mailbox activity
------------------------------------------------
+## Required properties for Remove Mailbox activity
 
 | **Element**   | **Description**   | **Valid values**   |
 |:---|:---|:---|
 | Mailbox ID   | Identifies the mailbox that is to be removed.<br>When Mailbox ID Type equals Identity, then<br>the Mailbox ID property accepts the following value types:<br>Alias. For example, JPhilips<br>Canonical DN. For example, Atlanta.Corp.Contoso.Com/Users/JPhilips<br>Display Name. For example, Jeff Philips<br>Distinguished Name (DN). For example, N=JPhilips,CN=Users,DC=Atlanta,DC=Corp,DC=contoso,DC=com<br>Domain\\Account. For example, Atlanta\\JPhilips<br>GUID. For example, fb456636-fe7d-4d58-9d15-5af57d0354c2<br>Immutable ID. For example, fb456636-fe7d-4d58-9d15-5af57d0354c2@contoso.com<br>Legacy Exchange DN. For example, /o=Contoso/ou=AdministrativeGroup/cn=Recipients/cn=JPhilips<br>SMTP Address. For example, Jeff.Philips@contoso.com<br>User Principal Name. For example, JPhilips@contoso.com<br>Use only the Mailbox ID property to disconnect the mailbox from the user and to remove the user object from Active Directory. The mailbox object still exists. By default, this mailbox remains in the Exchange database for 30 days, and then is deleted.<br>Use the Mailbox ID property in conjunction with the Permanent optional property to disconnect the mailbox from the user, remove the user object from Active Directory, and remove the mailbox object from the Exchange database. The mailbox object does not remain in the Exchange database as a disconnected mailbox.<br>When Mailbox ID Type equals StoreMailboxIdentity, then <br>the Mailbox ID property accepts the following value types:<br>Mailbox display name<br>GUID of the mailbox<br>LegacyExchangeDN<br>Use the Mailbox ID property in conjunction with the Database optional property when you have disconnected a mailbox from its associated user and want to remove the mailbox object from the Exchange database store. | String   |
 | Mailbox ID Type | Specifies the type for the ID property.<br> <br><br><strong>Note </strong><br> The StoreMailboxIdentity value is available only in an on-premises environment. <br><br>   | Identity<br>StoreMailboxIdentity |
 
-Optional properties for Remove Mailbox activity
------------------------------------------------
+## Optional properties for Remove Mailbox activity
 
 | **Element**   | **Description**   | **Valid values** |
 |:---|:---|:---|
@@ -46,8 +43,7 @@ Optional properties for Remove Mailbox activity
 | Permanent   | Use this in conjunction with the Identity type to specify whether to disconnect the mailbox from the user, to remove the associated user object from Active Directory, and to remove the mailbox object from the Exchange database. Default value is True, when selected. <br><br><strong>Note </strong><br> This property is available only in an on-premises environment. <br><br>   | True, False   |
 | Remove Last Arbitration Mailbox Allowed | Indicates whether it is allowed to remove the last Arbitration Mailbox.<br>Default value is True, when selected. <br><br><strong>Note </strong><br> This property is available only in an on-premises environment. <br><br>   | True or<br>False |
 
-Published data for Remove Mailbox activity
-------------------------------------------
+## Published data for Remove Mailbox activity
 
 | **Element**   | **Description**   | **Valid values** |
 |:---|:---|:---|

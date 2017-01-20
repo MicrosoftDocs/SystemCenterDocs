@@ -15,8 +15,7 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-Resume File Download
-====================
+# Resume File Download
 
 Applies To: System Center 2016 - Orchestrator
 
@@ -26,8 +25,7 @@ This activity publishes all of the data from the required properties into publis
 
 The following tables list the required properties and published data for this activity.
 
-Resume File Download Required Properties
-----------------------------------------
+## Resume File Download Required Properties
 
 | **Element**   | **Description**   | **Valid Values** |
 |:---|:---|:---|
@@ -36,8 +34,7 @@ Resume File Download Required Properties
 | Representation Type | Determines how data is transferred.   | Ascii<br>Binary  |
 | ModeZ   | Enables Mode Z data decompression.   | True<br>False   |
 
-Resume File Download Published Data
------------------------------------
+## Resume File Download Published Data
 
 | **Element**   | **Description**   | **Valid Values**   |
 |:---|:---|:---|

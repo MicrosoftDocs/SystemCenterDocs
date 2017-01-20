@@ -15,8 +15,7 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-Reset User Password
-===================
+# Reset User Password
 
 Applies To: System Center 2016 - Orchestrator
 
@@ -26,8 +25,7 @@ This activity publishes all of the data from the required and optional propertie
 
 The following tables list the required and optional properties and published data for this activity.
 
-Required properties for Reset User Password activity
-----------------------------------------------------
+## Required properties for Reset User Password activity
 
 | Element   | Description   | Valid Values  |
 |:---|:---|:---|
@@ -35,8 +33,7 @@ Required properties for Reset User Password activity
 | User Must Change Password | Whether the user must change the password when first using the reset password. | True<br>False |
 | User Password   | New password for the user   | String   |
 
-Published data for Reset User Password activity
------------------------------------------------
+## Published data for Reset User Password activity
 
 | Name   | Description   | Value Type   |
 |:---|:---|:---|

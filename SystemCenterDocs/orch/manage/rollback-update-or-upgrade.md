@@ -15,8 +15,7 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-Rollback Update or Upgrade
-==========================
+# Rollback Update or Upgrade
 
 Applies To: System Center 2016 - Orchestrator
 
@@ -24,8 +23,7 @@ The **Rollback Update or Upgrade** activity cancels an in progress configuration
 
 The activity publishes all of the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
 
-Rollback Update or Upgrade Required Properties
-----------------------------------------------
+## Rollback Update or Upgrade Required Properties
 
 | **Element**   | **Description**   | **Valid values**   |
 |:---|:---|:---|
@@ -34,13 +32,11 @@ Rollback Update or Upgrade Required Properties
 | Rollback Mode   | Specifies whether the rollback should proceed automatically.   | Auto, Manual   |
 | Force Rollback   | Specifies whether the rollback should proceed even when it will cause local data to be lost from some role instances. | True, False   |
 
-Rollback Update or Upgrade Optional Properties
-----------------------------------------------
+## Rollback Update or Upgrade Optional Properties
 
 There are no optional properties for this runbook activity.
 
-Rollback Update or Upgrade Published Data
------------------------------------------
+## Rollback Update or Upgrade Published Data
 
 | **Element**   | **Description**   | **Value type** |
 |:---|:---|:---|
@@ -66,8 +62,8 @@ Rollback Update or Upgrade Published Data
 | Force Rollback   | Specifies whether the rollback should proceed even when it will cause local data to be lost from some role instances. | Boolean   |
 | Label   | A name for the cloud service that is base-64 encoded.   | String   |
 
-See Also
---------
+## See Also
+
 
 #### Other Resources
 
