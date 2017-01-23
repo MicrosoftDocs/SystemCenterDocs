@@ -5,7 +5,7 @@ description: This article describes how to set up a SDN software load balancer i
 author: rayne-wiselman
 ms.author: raynew
 manager: cfreeman
-ms.date: 01/18/2016
+ms.date: 01/23/2016
 ms.topic: article
 ms.prod: system-center-threshold
 ms.technology: virtual-machine-manager
@@ -25,7 +25,7 @@ You can use VMM to deploy a network controller and a software load balancer. Aft
 ## Before you start
 Ensure the following:
 
-- **Planning**: Read about planning a software defined network, and review the planning topology in [this]((https://technet.microsoft.com/windows-server-docs/networking/sdn/plan/plan-a-software-defined-network-infrastructure) document. The diagram shows a sample 4-node setup. The setup is highly available with Three network controller nodes (VM), and Three SLB/MUX nodes. It shows Two tenants with One virtual network broken into Two virtual subnets to simulate a web tier and a database tier. Both the infrastructure and tenant virtual machines can be redistributed across any physical host.
+- **Planning**: Read about planning a software defined network, and review the planning topology in [this](https://technet.microsoft.com/windows-server-docs/networking/sdn/plan/plan-a-software-defined-network-infrastructure) document. The diagram shows a sample 4-node setup. The setup is highly available with Three network controller nodes (VM), and Three SLB/MUX nodes. It shows Two tenants with One virtual network broken into Two virtual subnets to simulate a web tier and a database tier. Both the infrastructure and tenant virtual machines can be redistributed across any physical host.
 - **Network controller**: You should have an [SDN network controller](sdn-network-controller.md) deployed in the VMM fabric, so that you have the compute and network infrastructure running before you set up the load balancing.
 - **SSL certificate**: To import the SLB service template you'll need to prepare an SSL certificate. You made the certificate available during network controller deployment. To use the certificate you prepared in network controller deployment for SLB, right-click the certificate and export it without a password in .CER format. Place it in the library, in the NCCertificate.CR folder you created when you set up the network controller.
 - **Service template**: VMM uses a service template to automate SLB deployment. Service templates support multi-node deployment on generation 1 and generation 2 VMs.
@@ -39,7 +39,7 @@ Ensure the following:
 3. **Create the transit logical networks**: You need to create logical networks:
     - A logical network to mirror the transit (Frontend) physical network.
     - Private virtual IP (VIP) and public VIP networks, to assign VIPs to the SLB service.
-    - Active Directory and DNS must be available and reachable from these networks. You must have domain administrator credentials and the ability to create DNS entries in the domain.
+
 4. **Create private and public VIP logical networks**: Private virtual IP (VIP) and public VIP networks, to assign VIPs to the SLB service.
 5. **Import the service template**: Import and customize the SLB service template.
 6. **Deploy SLB**: Deploy SLB as a VMM service, and configure the service properties.
@@ -125,14 +125,14 @@ Import the service template into the VMM library. For this example, we'll import
 2. Browse to your service template folder, select the **SLB Production Generation 2 VM.xml** file.
 3. Update the parameters for your environment as you import the service template. Note that the library resources were imported during network controller deployment.
 
-    - **WinServer.vhdx**: Select the base virtual hard drive image that you downloaded and imported earlier, during network controller deployment.
+    - **WinServer.vhdx**: Select the virtual hard drive image that you prepared and imported earlier, during the network controller deployment.
     - **NCCertificate.CR**: This library resource contains scripts used to set up the network controller. Map to the NCCertificate.cr library resource in the VMM library.
     - **EdgeDeployment.CR**: Map to the EdgeDeployment.cr library resource in the VMM library.
 
 4. Remember that you should have copied the .CER certificate that you previously created to the **NCCertificate.CR** folder.
 5. On the **Summary** page, review the details and click **Import**.
 
-    **Note**: You can customize the service template. [Learn More](https://technet.microsoft.com/en-us/system-center-docs/vmm/scenario/sdn-network-controller).
+    **Note**: You can customize the service template. [Learn More](sdn-network-controller.md#customize-the-template).
 
 ## Deploy the SLB service
 
