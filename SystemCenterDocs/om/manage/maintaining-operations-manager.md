@@ -5,7 +5,7 @@ description: This article describes the tasks you may perform after after you ha
 author: mgoedtel
 ms.author: magoedte
 manager: cfreeman
-ms.date: 11/02/2016
+ms.date: 01/20/2017
 ms.custom: na
 ms.prod: system-center-threshold
 ms.technology: operations-manager
@@ -18,7 +18,14 @@ ms.topic: article
 
 After you have deployed or upgraded to System Center 2016 – Operations Manager, you might want to make changes to your Operations Manager infrastructure, such as moving a database,  removing a role or recovering one from the management group. This section provides information about maintaining your installation of Operations Manager.
 
-- [Making changes to an Operations Manager management group](making-changes-to-operations-manager-management-group.md)
+Operations Manager supports changes to your Operations Manager infrastructure as listed below. Be cautious when performing these operations because they can result in data loss if not performed correctly.
 
-    This section covers how to remove a role from a management group, move one of the Operations Manager databases to a new SQL Server instance, uninstall Operations Manager, and other related tasks.
+- [How to move the Operational database](how-to-move-the-operational-database.md)
 
+- [How to move the Reporting data warehouse database](how-to-move-the-reporting-data-warehouse-database.md)
+
+- [How to Configure Operations Manager to Communicate with SQL Server](how-to-configure-operations-manager-to-communicate-with-sqlserver.md)
+
+- [How to configure the grooming settings for the Operations Manager database](how-to-configure-grooming-settings-for-the-operations-manager-database.md)
+
+- [How to configure the grooming settings for the Reporting data warehouse database](how-to-configure-grooming-settings-for-the-reporting-data-warehouse-database.md)  
