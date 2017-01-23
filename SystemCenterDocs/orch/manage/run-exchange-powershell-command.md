@@ -15,8 +15,7 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-Run Exchange PowerShell Command
-===============================
+# Run Exchange PowerShell Command
 
 Applies To: System Center 2016 - Orchestrator
 
@@ -24,16 +23,14 @@ You can use the Run Exchange PowerShell Command activity in a runbook to run Exc
 
 The following tables list the required properties and published data for this activity.
 
-Required properties for the Run Exchange PowerShell command activity
---------------------------------------------------------------------
+## Required properties for the Run Exchange PowerShell command activity
 
 | **Element**   | **Description**   | **Valid values** |
 |:---|:---|:---|
 | Command Text   | Specifies the full command text, to include the parameters.   | String   |
 | Is Exchange Command | Specifies if the command is to be run against the configured Exchange server. The default value is True. | True or<br>False |
 
-Published data for the Run Exchange PowerShell command activity
----------------------------------------------------------------
+## Published data for the Run Exchange PowerShell command activity
 
 | **Element**   | **Description**   | **Valid values** |
 |:---|:---|:---|
