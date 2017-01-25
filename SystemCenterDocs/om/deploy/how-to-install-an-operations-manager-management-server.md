@@ -53,7 +53,7 @@ Once you have installed the first management server and created the management g
   * If you installed SQL Server by using the default instance, you only have to type the server name. 
   * If you changed the default SQL Server port, you must type the new port number in the **SQL Server port** box.  
   * If you are hosting the database on a SQL Server cluster, replace *computer* with the virtual network name of the cluster.  
-  * If the database is part of a SQL Always On Availability Group, replace `computer\<instance>` with the availability group listener name and for **SQL Server port**, type the port number of the availability group listener.    
+  * If the database is part of a SQL Always On Availability Group, replace `computer\<instance>` with the availability group listener and for **SQL Server port**, type the port number of the availability group listener.    
 
     As you type the values for the SQL Server and instance names, you see a red circle with a white **X** in it appear to the left of the **Server name and instance name** and **SQL Server port** boxes. The white **X** indicates that the values have not yet been validated, and the black text indicates that you have not entered any illegal characters. If you enter illegal characters, the text itself turns red.
 
@@ -89,7 +89,7 @@ Once you have installed the first management server and created the management g
   * If you installed SQL Server by using the default instance, you only have to type the server name. 
   * If you changed the default SQL Server port, you must type the new port number in the **SQL Server port** box.  
   * If you are hosting the database on a SQL Server cluster, replace *computer* with the virtual network name of the cluster.  
-  * If the database is part of a SQL Always On Availability Group, replace `computer\<instance>` with the availability group listener name and for **SQL Server port**, type the port number of the availability group listener.    
+  * If the database is part of a SQL Always On Availability Group, replace `computer\<instance>` with the availability group listener and for **SQL Server port**, type the port number of the availability group listener.    
 
 13. Because this is the first management server installation, accept the default value of **Create a new data warehouse database**.
 
@@ -140,7 +140,7 @@ Perform the following steps to add additional management servers in your managem
   * If you installed SQL Server by using the default instance, you only have to type the server name. 
   * If you changed the default SQL Server port, you must type the new port number in the **SQL Server port** box.  
   * If you are hosting the database on a SQL Server cluster, replace *computer* with the virtual network name of the cluster.  
-  * If the database is part of a SQL Always On Availability Group, replace `computer\<instance>` with the availability group listener name and for **SQL Server port**, type the port number of the availability group listener.    
+  * If the database is part of a SQL Always On Availability Group, replace `computer\<instance>` with the availability group listener and for **SQL Server port**, type the port number of the availability group listener.    
 
     As you type the values for the SQL Server and instance names, you see a red circle with a white **X** in it appear to the left of the **Server name and instance name** and **SQL Server port** boxes. The white **X** indicates that the values have not yet been validated, and the black text indicates that you have not entered any illegal characters. If you enter illegal characters, the text itself turns red.
 
@@ -201,9 +201,11 @@ Perform the following steps to add additional management servers in your managem
     ```
     setup.exe /silent /install /components:OMServer
     /ManagementGroupName: "<ManagementGroupName>"
-    /SqlServerInstance: <server\instance>
+    /SqlServerInstance: <server\instance or Always On availability group listener>
+    /SqlInstancePort: <SQL instance port number>
     /DatabaseName: <OperationalDatabaseName>
-    /DWSqlServerInstance: <server\instance>
+    /DWSqlServerInstance: <server\instance or Always On availability group listener>
+    /DWSqlInstancePort: <SQL instance port number>
     /DWDatabaseName: <DWDatabaseName>
     /UseLocalSystemActionAccount /UseLocalSystemDASAccount
     /DatareaderUser: <domain\username>
@@ -236,7 +238,8 @@ Perform the following steps to add additional management servers in your managem
 
     ```
     setup.exe /silent /install /components:OMServer
-    /SqlServerInstance: <server\instance>
+    /SqlServerInstance: <server\instance or Always On availability group listener>
+    /SqlInstancePort: <SQL instance port number>
     /DatabaseName: <OperationalDatabaseName>
     /UseLocalSystemActionAccount /UseLocalSystemDASAccount
     /DataReaderUser: <domain\username>
