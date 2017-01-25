@@ -4,7 +4,7 @@ description: This article describes how to install all Operations Manager 2016 r
 author: mgoedtel
 ms.author: magoedte
 manager: cfreemanwa
-ms.date: 11/15/2016
+ms.date: 01/25/2017
 ms.custom: na
 ms.prod: system-center-threshold
 ms.technology: operations-manager
@@ -120,7 +120,7 @@ You must ensure that your server meets the minimum supported configurations for 
 
     Enter the credentials for a domain account in each field. The error icon will disappear after account validation. Click **Next**.
 
-19. On the **Configuration**, **Help improve System Center 2016 - Operations Manager** page, select your options and click **Next**.
+19. On the **Configuration**, **Diagnostic and Usage Data** page, review the information and then click **Next**. 
 
 20. If Windows Update is not activated on the computer, the **Configuration**, **Microsoft Update** page appears. Select your options, and then click **Next**.
 
@@ -156,8 +156,10 @@ You must ensure that your server meets the minimum supported configurations for 
     /components:OMServer,OMConsole,OMWebConsole,OMReporting
     /ManagementGroupName: "<ManagementGroupName>"
     /SqlServerInstance: <server\instance>
+    /SqlInstancePort: <SQL instance port number>
     /DatabaseName: <OperationalDatabaseName>
     /DWSqlServerInstance: <server\instance>
+    /DWSqlInstancePort: <SQL instance port number>
     /DWDatabaseName: <DWDatabaseName>
     /UseLocalSystemActionAccount /UseLocalSystemDASAccount
     /DatareaderUser: <domain\username>

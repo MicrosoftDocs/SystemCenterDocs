@@ -95,14 +95,3 @@ Update-DPMDiskStorage [-Volume] <Volume> [[-FriendlyName] <String> ] [[-Datasour
 The changes made through PowerShell are reflected in the UI.
 
 ![Review Disk Storage Allocation](../media/dpm2016-add-storage-9.png)
-
-Add Disks to the Storage Pool and Expand the Volumes when needed
-Whenever more storage needs to be added to a volume, it can be done by adding more disks to the storage pool, expanding the relevant virtual disk, and expanding the corresponding volume.
-
-![Review Disk Storage Allocation](../media/dpm2016-add-storage-10.png)
-
-![Review Disk Storage Allocation](../media/dpm2016-add-storage-11.png)
-
-The increased size of the volume will directly be reflected on DPM UI. If that is not the case, rescan the available storage to view the new size of the expanded volumes.
-
-![Review Disk Storage Allocation](../media/dpm2016-add-storage-12.png)

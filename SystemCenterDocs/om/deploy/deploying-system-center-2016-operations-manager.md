@@ -5,7 +5,7 @@ description: This article provides a high-level overview of what preparations yo
 author: mgoedtel
 ms.author: magoedte
 manager: cfreemanwa
-ms.date: 01/19/2017
+ms.date: 01/25/2017
 ms.custom: na
 ms.prod: system-center-threshold
 ms.technology: operations-manager
@@ -57,13 +57,13 @@ System Center 2016 - Operations Manager requires access to an instance of a serv
 
 During setup, you are prompted for the following:
 
--   The SQL Server database server name or primary cluster name and instance name. If you have installed SQL Server by using the default instance, you only have to specify the SQL Server name.  
+-   The SQL Server database server name, Always On availability group name, or primary cluster name and instance name. If you have installed SQL Server by using the default instance, you only have to specify the SQL Server name.  
 
 You can accept the default values for or set:
 
 -   SQL Server Port number. By default, 1433.
 
--   A new operational database (for first management server installation in the management group) or an existing operational database (for installing additional management servers in an existing management group).
+-   A new operational database (for first management server installation in the management group) or an existing operational database (when installing additional management servers in an existing management group).
 
 -   The database name. By default, OperationsManager.
 
