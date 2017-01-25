@@ -53,7 +53,7 @@ Once you have installed the first management server and created the management g
   * If you installed SQL Server by using the default instance, you only have to type the server name. 
   * If you changed the default SQL Server port, you must type the new port number in the **SQL Server port** box.  
   * If you are hosting the database on a SQL Server cluster, replace *computer* with the virtual network name of the cluster.  
-  * If the database is part of a SQL Always On Availability Group, replace `computer\<instance>` with the availability group listener name and for **SQL Server port**, type the port number of the availability group listener.    
+  * If the database is part of a SQL Always On Availability Group, replace `computer\<instance>` with the availability group listener and for **SQL Server port**, type the port number of the availability group listener.    
 
     As you type the values for the SQL Server and instance names, you see a red circle with a white **X** in it appear to the left of the **Server name and instance name** and **SQL Server port** boxes. The white **X** indicates that the values have not yet been validated, and the black text indicates that you have not entered any illegal characters. If you enter illegal characters, the text itself turns red.
 
@@ -89,7 +89,7 @@ Once you have installed the first management server and created the management g
   * If you installed SQL Server by using the default instance, you only have to type the server name. 
   * If you changed the default SQL Server port, you must type the new port number in the **SQL Server port** box.  
   * If you are hosting the database on a SQL Server cluster, replace *computer* with the virtual network name of the cluster.  
-  * If the database is part of a SQL Always On Availability Group, replace `computer\<instance>` with the availability group listener name and for **SQL Server port**, type the port number of the availability group listener.    
+  * If the database is part of a SQL Always On Availability Group, replace `computer\<instance>` with the availability group listener and for **SQL Server port**, type the port number of the availability group listener.    
 
 13. Because this is the first management server installation, accept the default value of **Create a new data warehouse database**.
 
@@ -105,7 +105,7 @@ Once you have installed the first management server and created the management g
 
 15. On the **Configuration**, **Configure Operations Manager accounts** page, we recommend that you use the **Domain Account** option for the **Management server action account**, the **System Center Configuration service and System Center Data Access service** account, the **Data Reader account**, and the **Data Writer account**. None of them should have domain administrator credentials. Click **Next**.
 
-16. On the **Configuration**, **Help improve System Center 2016 - Operations Manager** page, select your options, and then click **Next**.
+16. On the **Configuration**, **Diagnostic and Usage Data** page, review the information and then click **Next**. 
 
 17. If Windows Update is not enabled on the computer, the **Configuration**, **Microsoft Update** page appears. Select your options, and then click **Next**.
 
@@ -140,7 +140,7 @@ Perform the following steps to add additional management servers in your managem
   * If you installed SQL Server by using the default instance, you only have to type the server name. 
   * If you changed the default SQL Server port, you must type the new port number in the **SQL Server port** box.  
   * If you are hosting the database on a SQL Server cluster, replace *computer* with the virtual network name of the cluster.  
-  * If the database is part of a SQL Always On Availability Group, replace `computer\<instance>` with the availability group listener name and for **SQL Server port**, type the port number of the availability group listener.    
+  * If the database is part of a SQL Always On Availability Group, replace `computer\<instance>` with the availability group listener and for **SQL Server port**, type the port number of the availability group listener.    
 
     As you type the values for the SQL Server and instance names, you see a red circle with a white **X** in it appear to the left of the **Server name and instance name** and **SQL Server port** boxes. The white **X** indicates that the values have not yet been validated, and the black text indicates that you have not entered any illegal characters. If you enter illegal characters, the text itself turns red.
 
@@ -160,25 +160,25 @@ Perform the following steps to add additional management servers in your managem
 
 9. Select the database name from the **Database name** drop-down list, and then click **Next**.  
 
-10. On the **Configuration**, **Configure Operations Manager accounts** page, we recommend that you use the **Domain Account** option for the **Management server action account**, the **System Center Configuration service and System Center Data Access service** account, the **Data Reader account**, and the **Data Writer account**. None of them should have domain administrator credentials. Click **Next**.
+10. On the **Configuration**, **Configure Operations Manager accounts** page, we recommend that you use the **Domain Account** option for the **Management server action account** and the **System Center Configuration service and System Center Data Access service** account. None of them should have domain administrator credentials. Click **Next**.
 
     > [!IMPORTANT]
     > You must provide the same credentials for the Management server action account and the System Center Configuration Service and System Center Data Access service that you provided when you created the first management server in your management group.
     >
 
-11. On the **Configuration**, **Help improve System Center 2016 - Operations Manager** page, select your options, and then click **Next**.
+11. On the **Configuration**, **Diagnostic and Usage Data** page, review the information and then click **Next**. 
 
-12. If Windows Update is not enabled on the computer, the **Configuration**, **Microsoft Update** page appears. Select your options, and then click **Next**.
+13. If Windows Update is not enabled on the computer, the **Configuration**, **Microsoft Update** page appears. Select your options, and then click **Next**.
 
-13. Review the options on the **Configuration**, **Installation Summary** page, and then click **Install**. Setup continues.
+14. Review the options on the **Configuration**, **Installation Summary** page, and then click **Install**. Setup continues.
 
-14. When Setup is finished, the **Setup is complete** page appears. Click **Close**.
+15. When Setup is finished, the **Setup is complete** page appears. Click **Close**.
 
-15. On a computer with the Operations console installed, sign on with an account that is a member of the Operations Manager Administrators group and launch the Operations console.
+16. On a computer with the Operations console installed, sign on with an account that is a member of the Operations Manager Administrators group and launch the Operations console.
 
-16. In the Operations console, in the navigation pane, click the **Administration** button, and then expand **Device Management**.
+17. In the Operations console, in the navigation pane, click the **Administration** button, and then expand **Device Management**.
 
-17. In **Device Management**, select **Management Servers**. In the results pane, you should see the management server that you just installed with a green check mark in the **Health State** column.  
+18. In **Device Management**, select **Management Servers**. In the results pane, you should see the management server that you just installed with a green check mark in the **Health State** column.  
 
 ## To install the first management server in the management group from the Command Prompt 
 
@@ -201,9 +201,11 @@ Perform the following steps to add additional management servers in your managem
     ```
     setup.exe /silent /install /components:OMServer
     /ManagementGroupName: "<ManagementGroupName>"
-    /SqlServerInstance: <server\instance>
+    /SqlServerInstance: <server\instance or Always On availability group listener>
+    /SqlInstancePort: <SQL instance port number>
     /DatabaseName: <OperationalDatabaseName>
-    /DWSqlServerInstance: <server\instance>
+    /DWSqlServerInstance: <server\instance or Always On availability group listener>
+    /DWSqlInstancePort: <SQL instance port number>
     /DWDatabaseName: <DWDatabaseName>
     /UseLocalSystemActionAccount /UseLocalSystemDASAccount
     /DatareaderUser: <domain\username>
@@ -236,7 +238,8 @@ Perform the following steps to add additional management servers in your managem
 
     ```
     setup.exe /silent /install /components:OMServer
-    /SqlServerInstance: <server\instance>
+    /SqlServerInstance: <server\instance or Always On availability group listener>
+    /SqlInstancePort: <SQL instance port number>
     /DatabaseName: <OperationalDatabaseName>
     /UseLocalSystemActionAccount /UseLocalSystemDASAccount
     /DataReaderUser: <domain\username>
