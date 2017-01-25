@@ -5,7 +5,7 @@ description: This article describes how to install an Operations Manager managem
 author: mgoedtel
 ms.author: magoedte
 manager: cfreemanwa
-ms.date: 01/24/2017
+ms.date: 01/25/2017
 ms.custom: na
 ms.prod: system-center-threshold
 ms.technology: operations-manager
