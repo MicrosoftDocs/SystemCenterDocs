@@ -5,7 +5,7 @@ description: This article describes how to set up a SDN software load balancer i
 author: rayne-wiselman
 ms.author: raynew
 manager: cfreeman
-ms.date: 01/23/2016
+ms.date: 01/25/2017
 ms.topic: article
 ms.prod: system-center-threshold
 ms.technology: virtual-machine-manager
@@ -75,7 +75,7 @@ This is the IP address pool where DIPs are assigned to the SLB/MUX virtual machi
 - Ensure you use the IP address range that corresponds to your transit network IP address space. Don't include the first IP address of your subnet in the IP pool you are about to create. For example, if your available subnet is from .1 to .254, start your range at .2.
 - After you create the Transit logical network, ensure you associate this logical network with the Management switch uplink port profile you created during the network controller deployment.
 
-**Use the following procedure to create the IP pool**:
+**Create the IP address pool**:
 
 1.  Right-click the logical network > **Create IP Pool**.
 2.  Provide a **Name** and optional description for the IP Pool and ensure that the correct logical network is selected.
@@ -88,19 +88,23 @@ This is the IP address pool where DIPs are assigned to the SLB/MUX virtual machi
 
 ## Create private and public VIP logical networks
 
-You need a private VIP address pool to assign a VIP, and a public VIP, to the SLB Manager service.
+You need a private VIP address pool to assign a VIP, and a public VIP, to the SLB Manager service. Note that the procedure for creating both is similar but there are some differences.
 
-**Use the following steps to create a private VIP**:
+
+**Create a private VIP**:
 
 1.  Start the **Create logical network Wizard**. Type a **Name** and optional description for this network.
 2. In  **Settings** select **One Connected Network**.  Select **Create a VM network with the same name** box to allow virtual machines to access this logical network directly. Select **Managed by the network controller**.
 3. In **Network Site** add the network site information for your private VIP logical network.
 4. Review the **Summary** information and complete the wizard.
 
-**Use the following steps to create a public VIP**:
+**Create a public VIP**:
 
-1. Repeat the steps 1, 3 and 4  
-2. In step 2, under **Settings**, select **Managed by the network controller** and **Public IP Address Network**.
+1. Start the **Create logical network Wizard**. Type a **Name** and optional description for this network.
+2. In **Settings**, select **Managed by the network controller** and **Public IP Address Network**.
+3. In **Network Site** add the network site information for your public VIP logical network.
+4. Review the **Summary** information and complete the wizard.
+
 
 ### Create IP address pools for the private and public VIP networks
 
