@@ -5,7 +5,7 @@ description: This article describes how to Set up an SDN RAS gateway in the VMM 
 author: rayne-wiselman
 ms.author: raynew
 manager: cfreeman
-ms.date: 01/23/2017
+ms.date: 01/25/2017
 ms.topic: article
 ms.prod: system-center-threshold
 ms.technology: virtual-machine-manager
@@ -123,9 +123,7 @@ Now that the gateway service is deployed, you can configure the properties, and 
 1. Click **Fabric** > **Network Service** to display the list of network services installed. Right-click the network controller service > **Properties**.
 2. Click the **Services** tab, and select the **Gateway Manager Role**.
 3. Find the **Associated Service** field under **Service information**, and click **Browse**. Select the gateway service instance you created earlier, and click **OK**.
-4. Select the **Run As account** that will be used by network controller to access the gateway virtual machines.
-
-    **Note**: The Run As Account must have Admin privileges.
+4. Select the **Run As account** that will be used by network controller to access the gateway virtual machines. The Run As Account must have Administrator privileges on the gateway VMs.
 5. In **GRE VIP subnet**, select the VIP subnet that you created previously.
 6. In **Public IPv4 pool**, select the pool you configured during SLB deployment. In **Public IPv4 address**, provide an IP address from the previous pool, and ensure you don't select the initial three IP addresses from the range.
 7. In **Gateway Capacity**, configure the capacity settings.

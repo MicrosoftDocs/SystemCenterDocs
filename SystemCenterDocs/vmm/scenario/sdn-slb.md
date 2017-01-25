@@ -5,7 +5,7 @@ description: This article describes how to set up a SDN software load balancer i
 author: rayne-wiselman
 ms.author: raynew
 manager: cfreeman
-ms.date: 01/23/2016
+ms.date: 01/25/2017
 ms.topic: article
 ms.prod: system-center-threshold
 ms.technology: virtual-machine-manager
@@ -88,9 +88,10 @@ This is the IP address pool where DIPs are assigned to the SLB/MUX virtual machi
 
 ## Create private and public VIP logical networks
 
-You need a private VIP address pool to assign a VIP, and a public VIP, to the SLB Manager service.
+You need a private VIP address pool to assign a VIP, and a public VIP, to the SLB Manager service. Note that the procedure for creating both is similar but there are some differences.
 
-**Use the following steps to create a private VIP**:
+
+**Do this to create a private VIP**:
 
 1.  Start the **Create logical network Wizard**. Type a **Name** and optional description for this network.
 2. In  **Settings** select **One Connected Network**.  Select **Create a VM network with the same name** box to allow virtual machines to access this logical network directly. Select **Managed by the network controller**.
@@ -99,8 +100,11 @@ You need a private VIP address pool to assign a VIP, and a public VIP, to the SL
 
 **Use the following steps to create a public VIP**:
 
-1. Repeat the steps 1, 3 and 4  
-2. In step 2, under **Settings**, select **Managed by the network controller** and **Public IP Address Network**.
+1. Start the **Create logical network Wizard**. Type a **Name** and optional description for this network.
+2. In **Settings**, select **Managed by the network controller** and **Public IP Address Network**.
+3. In **Network Site** add the network site information for your public VIP logical network.
+4. Review the **Summary** information and complete the wizard.
+
 
 ### Create IP address pools for the private and public VIP networks
 
