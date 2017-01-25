@@ -98,12 +98,12 @@ This example uses the generation 2 template.
 2. Type a **Name** and choose a destination for the service instance. The destination must map to a host group that contains the hosts configured previously for gateway deployment.
 3. In **Network Settings**, map the management network to the management VM network.
 
-    **Note**: The **Deploy Service** dialog appears after mapping is complete. It is normal for the virtual machine instances to be initially Red. Click **Refresh Preview** to automatically find suitable hosts for the virtual machine.
+    **Note**: The **Deploy Service** dialog appears after mapping is complete. It's normal for the VM instances to be initially red. Click **Refresh Preview** to automatically find suitable hosts for the VM.
 4. On the left of the **Configure Deployment** window, configure the following settings:
 
-  - **AdminAccount**. Required. Select a Run as account in your environment which will be used as the local admin on the gateway VMs. For example - Administrator
+  - **AdminAccount**. Required. Select a RunAs account that will be used as the local administrator on the gateway VMs. 
   - **Management Network**. Required. Choose the Management VM network that you created for host management.
-  - **Management Account**. Required. Select a Run As Account with permissions to add the gateway to the Active Directory domain associated with the network controller. This can be the same account you used in MgmtDomainAccount while deploying the network controller.
+  - **Management Account**. Required. Select a Run As Account with permissions to add the gateway to the Active Directory domain associated with the network controller. This can be the same account used for MgmtDomainAccount while deploying the network controller.
   - **FQDN**. Required. FQDN for the Active directory domain for the gateway.
 
 5. Click **Deploy Service** to begin the service deployment job.
@@ -137,7 +137,7 @@ The service instance you deployed is now associated with the gateway Manager rol
 
 After you deploy the gateway you can configure S2S GRE, S2S IPSec, or L3 connection types, and validate them.
 
-**Note** "connectionStatus" REST object is set as "disabled" by default. Earlier this field was Read-only and its value was set as "Enabled". After a fix in Update Roll up 1, this field is Read-write and its value should be either left blank or set as "Enabled". This value enables/disables admin status of the connection on Gateway.
+**Note** The connectionStatus REST object is read-write, and disabled by default from VMM 2016 Update Rollup 1 onwards. It was previously read-only and enabled by default. The value should be left blank, or enabled. This value enables and disables the administrator status of the gateway connection.
 
 
 ### Create and validate a site-to-site IPSec connection
