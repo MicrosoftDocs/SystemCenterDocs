@@ -34,8 +34,8 @@ These resources can be created and managed with or without VMM. If you make chan
 
 We strongly recommend that you configure resources that are known to VMM in the VMM fabric only.
 
-**Known object** | **Details**
---- | ---
+**Known object** | **Details** | **Modify**
+--- | --- | ---
 AccessControlList | An AccessControlList contains a list of ACL rules, and can be assigned to virtual subnets or IP configurations. | Overwritten by VMM if you enable out-of-box
 AclRule | Summarizes the network traffic that is allowed or denied for a VM network interface. | Overwritten by VMM if you enable out-of-box
 Gateway | Provides gateway services to one or more virtualNetworks. | Overwritten by VMM if you enable out-of-box
