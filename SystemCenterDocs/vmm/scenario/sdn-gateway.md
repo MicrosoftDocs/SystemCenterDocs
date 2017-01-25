@@ -144,13 +144,13 @@ After you deploy the gateway you can configure S2S GRE, S2S IPSec, or L3 connect
 
 A site-to-site IPSec connection allows you to securely access remote virtual machines and services from your datacenter. Create the connection as follows:
 
-1. Select the VM Network that you want to configure a site-to-stie IPSec connection, and click **Connectivity**.
+1. Select the VM Network that you want to configure a site-to-site IPSec connection, and click **Connectivity**.
 2. Select **Connect to another network through a VPN tunnel**. Optionally, if you want to enable BGP peering in your datacenter, you can select **Enable Border Gateway Protocol (BGP)**.
 3. Select the network controller service for the gateway device.
 4. Select the **VPN Connections** > **Add** > **IPSec**.
 5. Type a subnet as shown in the following diagram. This subnet is used to route packets out of the VM Network. This subnet need not be pre-configured in your datacenter.
 6. Type a connection name, and the IP address of the remote endpoint. Optionally configure bandwidth.
-7. In **Authentication**, select the type of authentication you want to use. If you choose to authenticate using a Run As account, create a user account with a user name, and the the IPSec key as the password for the account.
+7. In **Authentication**, select the type of authentication you want to use. If you choose to authenticate using a Run As account, create a user account with a user name, and the IPSec key as the password for the account.
 8. In **Routes**, type all the remote subnets that you want to connect to.
 9. If you selected **Enable Border Gateway Protocol (BGP)** then you can leave this screen blank and instead fill out your ASN, peer BGP IP and its ASN on the **Border Gateway Protocol** tab as shown below:
 10. On the **Advanced** tab, accept the default settings.
@@ -248,6 +248,6 @@ NextHopVMNetworkName | User-defined name for the L3 forwarding network connectio
 LocalIPAddresses | IP addresses to be configured on the HNV gateway L3 network interface.<br/><br/> IP address from the logical network you created. | "10.127.134.55/25"
 PeerIPAddresses| IP address of the physical network gateway, reachable over L3 logical network.<br/><br/> IP address from the logical network you created. | "10.127.134.65"
 GatewaySubnet | Subnet to be used for routing between HVN gateway and tenant virtual network. | "192.168.2.0/24"
-RoutingSubnets | Static routes that need to be on the L3 interace on the HNV gateway. |
+RoutingSubnets | Static routes that need to be on the L3 interface on the HNV gateway. |
 EnableBGP | Option to enable BGP. Default is false. |
 TenantASNRoutingSubnets |ASN number of tenant gateway. Only if BGP is enabled. |
