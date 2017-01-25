@@ -25,7 +25,7 @@ ms.technology:  virtual-machine-manager
 SDN resources fall into two broad categories in VMM:
 
 - **Known resources**: Resources that can be created and managed with VMM
-- **Unknow resources**: Resources that must be created and managed outside of VMM.
+- **Unknown resources**: Resources that must be created and managed outside of VMM.
 
 
 ### Known resources
