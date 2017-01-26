@@ -39,7 +39,7 @@ To create a network devices discovery rule, you need the following information:
 
 -   The SNMP community string of each SNMP v1 or v2 device that you want to discover and monitor.
 
--   The user name, context, authentication protocol, authentication key, privacy protocol, and privacy key for each SNMP v3 device that you want to discover and monitor.
+-   The user name, context, authentication protocol, authentication key, privacy protocol, and privacy key for each SNMP v3 device that you want to discover and monitor.  
 
 -   If you are using recursive discovery and you only want to discover network devices that have interfaces whose addresses fall within a specified IP address range, you must have the IP address range.
 
@@ -245,5 +245,10 @@ If a network device discovery rule fails, the device or devices will be listed i
 
 5.  Follow the instructions for creating a discovery rule to complete the remaining wizard pages, and then click **Save**.
 
+## Next steps
 
+- To view information about the network devices you are monitoring, see [Viewing Network Devices and Data in Operations Manager](viewing-network-devices-and-data-in-operations-manager.md).  
 
+- To understand how to configure what to monitor and alert with your network devices, see [How to configure monitoring of network devices](how-to-configure-monitoring-of-network-devices.md).  
+
+- To understand how to stop monitoring a network device, see [How to Delete or Restore a Network Device in Operations Manager](how-to-delete-or-restore-a-network-device-in-operations-manager.md). 

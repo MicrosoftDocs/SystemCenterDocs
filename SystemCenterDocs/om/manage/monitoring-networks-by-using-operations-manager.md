@@ -145,13 +145,12 @@ Network device discovery consists of the following phases, which are displayed i
 After discovery is complete, the management server resource pool that you specify in the discovery rule begins monitoring the discovered network devices. For more information on monitoring network devices, see [Viewing Network Devices and Data in Operations Manager]viewing-network-devices-and-data-in-operations-manager.md) and [Reports for Network Monitoring in Operations Manager](reports-for-network-monitoring-in-operations-manager.md).  
   
 ## Next steps
- 
+
+- Review [Configuring a Firewall for Operations Manager](../plan/planning-security-configuring-a-firewall.md) to understand the firewall ports and direction the communication flows in preparing your environment for network device monitoring with Operations Manager.  
+
 - Learn [How to discover network devices in Operations Manager](how-to-discover-network-devices-in-operations-manager.md).  
 
-- To understand how to stop monitoring a network device, see [How to Delete or Restore a Network Device in Operations Manager](how-to-delete-or-restore-a-network-device-in-operations-manager.md).  
+- Review [Run As accounts for network monitoring in Operations Manager](run-as-accounts-for-network-monitoring-in-operations-manager.md) to understand how to configure the Run As accounts before configuring the Run As accounts or network device discovery rules.  
 
 - To view information about the network devices you are monitoring, see [Viewing Network Devices and Data in Operations Manager](viewing-network-devices-and-data-in-operations-manager.md).  
-
-- Review [Configuring a Firewall for Operations Manager](../plan/planning-security-configuring-a-firewall.md) to understand the firewall ports and direction the communication flows in preparing your environment for network device monitoring with Operations Manager. 
-  
   

@@ -101,5 +101,8 @@ The following monitors that generate alerts are disabled by default. Using overr
 |**Collision Rate (Dot3 Ethernet)**|Monitors the packet collision rate on this device|-   Interface<br>-   Network Adapter|
 |**High Input Broadcast Rate (if MIB Dot3 Ethernet Port)**|Monitors the level of input broadcast packets on this device|-   Interface<br>-   Network Adapter|
 
+## Next steps
 
+- To understand how to stop monitoring a network device, see [How to Delete or Restore a Network Device in Operations Manager](how-to-delete-or-restore-a-network-device-in-operations-manager.md).    
 
+- To view information about the network devices you are monitoring, see [Viewing Network Devices and Data in Operations Manager](viewing-network-devices-and-data-in-operations-manager.md).  
