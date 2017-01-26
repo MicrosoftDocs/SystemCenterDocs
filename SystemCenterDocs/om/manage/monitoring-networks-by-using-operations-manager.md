@@ -152,6 +152,6 @@ After discovery is complete, the management server resource pool that you specif
 
 - To view information about the network devices you are monitoring, see [Viewing Network Devices and Data in Operations Manager](viewing-network-devices-and-data-in-operations-manager.md).  
 
-- Review [Configuring a Firewall for Operations Manager](planning-security-configuring-a-firewall) to understand the firewall ports and direction the communication flows in preparing your environment for network device monitoring with Operations Manager. 
+- Review [Configuring a Firewall for Operations Manager](../plan/planning-security-configuring-a-firewall) to understand the firewall ports and direction the communication flows in preparing your environment for network device monitoring with Operations Manager. 
   
   
