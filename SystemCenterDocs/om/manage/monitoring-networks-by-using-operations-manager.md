@@ -87,7 +87,7 @@ There are additional management packs that are required to relate network device
 
 ## How Network device discovery works  
 
-Network device discovery is performed by discovery rules that you create. For instructions on creating a discovery rule, see [How to discover network devices in Operations Manager](how-to-discover-network-devices-in-operations-manager.md) and [How to configure network device discovery settings](how-to-discover-network-device-discovery-settings.md).  
+Network device discovery is performed by discovery rules that you create. For instructions on creating a discovery rule, see [How to discover network devices in Operations Manager](how-to-discover-network-devices-in-operations-manager.md) and [How to configure network device discovery settings](how-to-configure-network-device-discovery-settings.md).  
   
 When you create a discovery rule, you designate a management server or gateway server to run the rule. Each management server or gateway server can run only one discovery rule. You may need to strategically place management servers on different network segments so that they can access the network devices that they are discovering.  
   
@@ -152,6 +152,6 @@ After discovery is complete, the management server resource pool that you specif
 
 - To view information about the network devices you are monitoring, see [Viewing Network Devices and Data in Operations Manager](viewing-network-devices-and-data-in-operations-manager.md).  
 
-- Review [Configuring a Firewall for Operations Manager](../plan/planning-security-configuring-a-firewall) to understand the firewall ports and direction the communication flows in preparing your environment for network device monitoring with Operations Manager. 
+- Review [Configuring a Firewall for Operations Manager](../plan/planning-security-configuring-a-firewall.md) to understand the firewall ports and direction the communication flows in preparing your environment for network device monitoring with Operations Manager. 
   
   
