@@ -56,7 +56,7 @@ Operations Manager provides the following monitoring for discovered network devi
     -   Free memory  
   
 > [!NOTE]  
-> Some of the monitoring capabilities are disabled by default. For more information, see [How to configure monitoring of network devices](how-to-configure-monitorting-of-network-devices.md).  
+> Some of the monitoring capabilities are disabled by default. For more information, see [How to configure monitoring of network devices](how-to-configure-monitoring-of-network-devices.md).  
   
 Operations Manager supports monitoring of the following number of network devices:  
   
