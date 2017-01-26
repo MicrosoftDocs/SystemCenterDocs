@@ -5,7 +5,7 @@ description: This article provides design guidance for which ports and protocols
 author: mgoedtel
 ms.author: magoedte
 manager: cfreemanwa
-ms.date: 11/15/2016
+ms.date: 01/25/2017
 ms.custom: na
 ms.prod: system-center-threshold
 ms.technology: operations-manager
@@ -21,10 +21,11 @@ This section describes how to configure your firewall to allow communication bet
 ## Port assignments
 The following table shows Operations Manager feature interaction across a firewall, including information about the ports used for communication between the features, which direction to open the inbound port, and whether the port number can be changed.
 
-|Operations Manager Feature A|Port Number and Direction|Operations Manager Featuret B|Configurable|Note|
+|Operations Manager Feature A|Port Number and Direction|Operations Manager Feature B|Configurable|Note|
 |--------------------------------|-----------------------------|---------------------------------|----------------|--------|
 |management server|1433 --->|Operations Manager database|Yes (Setup)||
 |management server|5723, 5724 --->|management server|No|Port 5724 must be open to install this feature and can be closed after this feature has been installed.|
+|management server|161,162 <--->|network device|No|All firewalls between the management server and the network devices need to allow SNMP (UDP) and ICMP bi-directionally.|
 |gateway server|5723 --->|management server|No||
 |management server|1433 --->|Reporting data warehouse|No||
 |Reporting server|5723, 5724 --->|management server|No|Port 5724 must be open to install this feature and can be closed after this feature has been installed.|
