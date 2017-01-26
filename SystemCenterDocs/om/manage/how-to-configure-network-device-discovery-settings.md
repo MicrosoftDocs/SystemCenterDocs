@@ -4,7 +4,7 @@ description: This article describes how to configure discovery of network device
 author: mgoedtel
 ms.author: magoedte
 manager: cfreemanwa
-ms.date: 01/25/2017
+ms.date: 01/26/2017
 ms.custom: na
 ms.prod: system-center-threshold
 ms.technology: operations-manager
@@ -29,7 +29,7 @@ System Center Operations Manager offers a number of settings that you can use to
 |**ICMP time-out (in milliseconds)**|**Devices** page, **Advanced Discovery Settings** button|If you specify **ICMP and SNMP** or **ICMP** for **Access mode**, the management server attempts to contact the network device by using **ping**. The default setting is 1500 milliseconds (1.5 seconds).|
 |**SNMP time-out (in milliseconds)**|**Devices** page, **Advanced Discovery Settings** button|If you specify **ICMP and SNMP** or **SNMP** for **Access mode**, the management server attempts to contact the network device by using SNMP. The default setting is 1500 milliseconds (1.5 seconds).|
 |**Maximum number of devices to discover**|**Devices** page, **Advanced Discovery Settings** button|This setting applies during recursive discovery and sets a limit on the number of devices to discover. The default is 1500. If you know you are going to discovery more than 1500 devices, you must change this setting.|
-|**IP address range**|**Include Filters** page, **Add** button, when configuring a recursive discovery rule|Use this field to limit the recursive discovery to IP addresses that meet the specified criteria. This field uses a wildcard format.<br><br>For example, if you enter **192.168.1.\***, the discovery rule discovers devices that use any IP address between 192.168.1.1 and 192.168.1.255.<br><br>If you enter **192.168.1.<1-140>**, the discovery rule discovers devices that use any IP address between 192.168.1 and 192.168.140.|
+|**IP address range**|**Include Filters** page, **Add** button, when configuring a recursive discovery rule|Use this field to limit the recursive discovery to IP addresses that meet the specified criteria. This field uses a wildcard format.<br><br>For example, if you enter **192.168.1.\**, the discovery rule discovers devices that use any IP address between 192.168.1.1 and 192.168.1.255.<br><br>If you enter **192.168.1.<1-140>**, the discovery rule discovers devices that use any IP address between 192.168.1 and 192.168.140.|
 |**Included device types**|**Include Filters** page, **Add** button, when configuring a recursive discovery rule|Any devices that you select are included in the recursive discovery. Clear the selection for any type of device that you do not want discovered.|
 |**Include only network devices with the following system attributes (OIDs) - Name**|**Include Filters** page, **Add** button, when configuring a recursive discovery rule|If you enter a value here, only devices with a matching name are discovered. This field allows a wildcard format.|
 |**Include only network devices with the following system attributes (OIDs) - Object ID (OID)**|**Include Filters** page, **Add** button, when configuring a recursive discovery rule|If you enter a value here, only devices with a matching OID are discovered. This field allows a wildcard format.|
