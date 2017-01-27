@@ -1,15 +1,15 @@
 ---
-ms.assetid: 2f41a8e5-3ec1-4279-8c06-5e59ff27ef3d
 title: How to Upgrade a Single Server Management Group to System Center 2016 - Operations Manager
 description: This article describes how to upgrade a single server management group to Operations Manager 2016.  
 author: mgoedtel
 ms.author: magoedte
 manager: cfreemanwa
-ms.date: 11/15/2016
+ms.date: 01/26/2017
 ms.custom: na
 ms.prod: system-center-threshold
 ms.technology: operations-manager
 ms.topic: article
+ms.assetid: 2f41a8e5-3ec1-4279-8c06-5e59ff27ef3d
 ---
 
 # How to upgrade a single server management group to System Center 2016 - Operations Manager
@@ -68,8 +68,10 @@ When you upgrade a single server management group to System Center 2016 - Operat
     /components:OMServer,OMConsole,OMWebConsole,OMReporting
     /ManagementGroupName: "<ManagementGroupName>"
     /SqlServerInstance: <server\instance>
+    /SqlServerInstance: <SQL server instance port number>
     /DatabaseName: <OperationalDatabaseName>
     /DWSqlServerInstance: <server\instance>
+    /DWSqlInstancePort: <SQL server instance port number>
     /DWDatabaseName: <DWDatabaseName>
     /UseLocalSystemActionAccount /UseLocalSystemDASAccount
     /DatareaderUser: <domain\username>
