@@ -27,11 +27,11 @@ System Center 2016 - Operations Manager provides the reports described in the fo
 |Memory Utilization report |This report displays the percentage of free memory on a particular network device over a period of time.|  
 |Interface Traffic Volume report |This report displays the rate of inbound and outbound traffic that goes through the selected port or interface over time.|
 |Interface Error Packet Analysis report |This report displays the percentage of error packets or discarded packets, both inbound and outbound, for the selected port or interface.|
-|Interface Packet Analysis report |This report display the types of packets (unicast or nonunicast) that traverse the selected port or interface.|
+|Interface Packet Analysis report |This report displays the types of packets (unicast or nonunicast) that traverse the selected port or interface.|
 |Custom Performance report |This report displays performance counter values.|
-|Port Traffic Volume report |This report display the rate of inbound and outbound traffic that goes through the selected port or interface over time.|
-|Port Packet Analysis report |This report display the types of packets (unicast or nonunicast) that traverse the selected port or interface.|
-|Port Error Packet Analysis report |This report display the types of error packets that traverse the selected port or interface.|
+|Port Traffic Volume report |This report displays the rate of inbound and outbound traffic that goes through the selected port or interface over time.|
+|Port Packet Analysis report |This report displays the types of packets (unicast or nonunicast) that traverse the selected port or interface.|
+|Port Error Packet Analysis report |This report displays the types of error packets that traverse the selected port or interface.|
 |Processor Utilization report |This report displays the process utilization of a particular network device over a period of time.|
 |Memory Utilization report |This report displays the percentage of free memory on a particular network device over a period of time.|  
   
