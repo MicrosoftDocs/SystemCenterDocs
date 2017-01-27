@@ -53,7 +53,7 @@
 ### [Get Started](om/get-started/getting-started-with-system-center-operations-manager.md)
 #### [What's New in Operations Manager](om/get-started/whats-new-in-operations-manager.md)
 #### [Walkthrough: Installing Operations Manager on a Single Server](om/get-started/Walkthrough-Installing-Operations-Manager-on-a-Single-Server.md)
-#### [Installing Operations Manager by Using the Command Prompt Window](OM/Deploy/Installing-Operations-Manager-by-Using-the-Command-Prompt-Window.md)
+#### [Installing Operations Manager from the Command Prompt](om/deploy/installing-operations-manager-by-using-the-command-prompt-window.md)
 ### [Plan](om/plan/plan-summary.md)
 #### [System Requirements](om/plan/system-requirements.md)
 #### [Supported Versions of UNIX and Linux](om/plan/supported-unix-and-linux-operating-system-versions.md)
