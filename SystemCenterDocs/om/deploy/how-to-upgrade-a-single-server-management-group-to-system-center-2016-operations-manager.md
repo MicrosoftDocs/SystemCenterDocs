@@ -67,10 +67,10 @@ When you upgrade a single server management group to System Center 2016 - Operat
     setup.exe /silent /install
     /components:OMServer,OMConsole,OMWebConsole,OMReporting
     /ManagementGroupName: "<ManagementGroupName>"
-    /SqlServerInstance: <server\instance or Always On availability group listener>
+    /SqlServerInstance: <server\instance>
     /SqlServerInstance: <SQL server instance port number>
     /DatabaseName: <OperationalDatabaseName>
-    /DWSqlServerInstance: <server\instance or Always On availability group listener>
+    /DWSqlServerInstance: <server\instance>
     /DWSqlInstancePort: <SQL server instance port number>
     /DWDatabaseName: <DWDatabaseName>
     /UseLocalSystemActionAccount /UseLocalSystemDASAccount
