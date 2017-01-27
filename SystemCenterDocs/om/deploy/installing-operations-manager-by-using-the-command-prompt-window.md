@@ -1,10 +1,10 @@
 ---
 ms.assetid: e305673d-88ab-4aa1-9287-31b617a9f1fc
-title:  Installing Operations Manager From the Command Prompt 
-description:  
+title: Installing Operations Manager From the Command Prompt 
+description: This article describes the different command-line arguments you would use when installing an Operations Manager component from the Command Prompt. 
 author: mgoedtel
 manager: cfreemanwa
-ms.date: 10/12/2016
+ms.date: 01/26/2017
 ms.custom: na
 ms.prod: system-center-threshold
 ms.technology: operations-manager
@@ -32,9 +32,11 @@ The following table lists the command-line parameters for installing features of
 |/components|OMServer: install a management server.<br><br>OMConsole: install an Operations console.<br><br>OMWebConsole: install a web console.<br><br>OMReporting: install a Reporting server.|
 |/ManagementGroupName:|The name of the management group|
 |/ManagementServicePort:|Change the Management Server port on install|
-|/SqlServerInstance:|The SQL server and instance `<server\instance>`.|
+|/SqlServerInstance:|The SQL server and instance `<server\instance>` or Always On availability group listener.|
+|/SqlInstancePort:| The SQL server instance port number.|
 |/DatabaseName:|The name of the Operational database.|
-|/DWSqlServerInstance:|The data warehouse server and instance `<server\instance>`.|
+|/DWSqlServerInstance:|The data warehouse server and instance `<server\instance>` or Always On availability group listener.|
+|/DWSqlInstancePort:| The SQL server instance port number.|
 |/DWDatabaseName:|The name of the data warehouse database.|
 |/UseLocalSystemActionAccount|Used to specify the Local System for the Management server action account.|
 |/ActionAccountUser:|The domain and user name of the Management server action account.<br><br>Used if you do not want to specify the Local System|
