@@ -19,34 +19,34 @@ ms.technology:  virtual-machine-manager
 
 This article describes how to configure performance and availability settings for VMs in the System Center 2016 - Virtual Machine Manager (VMM) fabric.
 
-Settings include changing VM properties, and setting up performance options such as availability options, resource throttling, and virtual NUMA.
+Settings include changing VM properties, and setting up performance options such as quality-of-storage (QoS), availability options, resource throttling, and virtual NUMA.
 
 ## Add a virtual adapter to a VM
 
-You can now add and remove virtual network adapters (vNIC) from running virtual machines. This feature helps in eliminating workload downtime due to reconfiguration. Note that:
+You can add and remove virtual network adapters (vNICs) from VMs that are running. This reduces workload downtime. Note that:
 
 - You add new virtual network adapters by creating or modify a VMM hardware profile.
 - This feature is only available for Generation 2 VMs.
-- By default virtual network adapters that you add aren't connected to a virtual network. You can configure VMs assigned with the hardware profile to use one or more of the virtual network adapters after they're deployed on a host.
+- By default added virtual network adapters aren't connected to a virtual network. You can configure VMs assigned with the hardware profile to use one or more of the virtual network adapters, after they're deployed on a host.
 
-1. In the virtual machine properties > **Hardware Configuration**, click **Network Adapters**, and select the network adapter to add.
+1. In the virtual machine properties > **Hardware Configuration**, click **Network Adapters**, and select the network adapter you want to add.
 2. You can configure a number of properties for the network adapter, including:
 
-    - Connected to: Select what the adapter is connected to.
-    - Not connected: Select if you don't want to specify a network now.
-    - Internal network: Select if you want to connect to an isolated internal network that enables communication among VMs on the same host.  Virtual machines attached to the internal virtual network cannot communicate with the host, with any other physical computers on the host's LAN, or with the internet.
-    - External network: Select to specify that a virtual machine created by using this hardware profile will be connected to a physical network adapter on its host. Virtual machines attached to a physical network adapter can communicate with any physical or virtual computer that the host can communicate with and with any resources available on the intranet and over the Internet that the host computer can access.
-    - Ethernet (MAC) address: computers, a virtual MAC address on virtual machines uniquely identifies each computer on the same subnet. Select one of the following options:
-    - Dynamic. Select this option if you want to enable a dynamic MAC address for a virtual machine.
-    - Static. Select this option if you want to specify a static MAC address for a virtual machine. Type a static MAC address in the field provided.
+    - **Connected to**: Select what the adapter is connected to.
+    - **Not connected**: Select if you don't want to specify a network now.
+    - **Internal network**: Select if you want to connect to an isolated internal network that enables communication among VMs on the same host.  Virtual machines attached to the internal virtual network cannot communicate with the host, with any other physical computers on the host's LAN, or with the internet.
+    - **External network**: Select to specify that a virtual machine created by using this hardware profile will be connected to a physical network adapter on its host. Virtual machines attached to a physical network adapter can communicate with any physical or virtual computer that the host can communicate with and with any resources available on the intranet and over the Internet that the host computer can access.
+    - **Ethernet (MAC) address**: computers, a virtual MAC address on virtual machines uniquely identifies each computer on the same subnet. Select one of the following options:
+    - **Dynamic**. Select this option if you want to enable a dynamic MAC address for a virtual machine.
+    - **Static**. Select this option if you want to specify a static MAC address for a virtual machine. Type a static MAC address in the field provided.
 
-### Add with PowerShell
+### Add a virtual adapter with PowerShell
 
  You can use PowerShell to add a virtual adapter. Here's a sample cmdlet for setting this up:
 
 #### Example 1
 
-The PowerShell command adds a vNIC to a running VM.
+Add a vNIC:
 
 - The first command gets the virtual machine object named VM01, and then stores the object in the $VM variable.
 - The second command creates a virtual network adapter on VM01.
@@ -108,7 +108,7 @@ You can set up a servicing window for a VM or service so that you can maintain i
 
 ## Create a production checkpoint for a VM
 
-Production checkpoints allow you to easily create "point in time" images of a VM which can then be restored later.
+Production checkpoints allow you to easily create "point in time" images of a VM, which can then be restored later.
 
 - Productions checkpoints are achieved using backup technology inside the guest to create the checkpoint, instead of using saved state technology.
 - On a virtual machine running a Windows operating system production checkpoints are created with the Volume Snapshot Service (VSS).
@@ -132,7 +132,7 @@ Set the checkpoint with the following PowerShell command: `Set-SCVirtualMachine 
 
 You can configure a number of setting that help high availability and resilience for virtual machines in a cluster:
 
-- **Storage QoS**: You can configure Hyper-V VM hard disks with quality-of-service (QoS) settings, to control bandwidth. You need to use Hyper-V Manager to do this.
+- **Storage QoS**: You can configure Hyper-V VM hard disks with quality-of-service (QoS) settings, to control bandwidth. You use Hyper-V Manager to do this.
 - **Virtual machine priority**: You can configure priority settings for VMs deployed in a host cluster. Based on VM priority, the host cluster starts or places high-priority virtual machines before medium-priority or low-priority virtual machines. This ensures that the high-priority virtual machines are allocated memory and other resources first, for better performance. Also, after a node failure, if the high-priority virtual machines do not have the necessary memory and other resources to start, the lower priority virtual machines will be taken offline to free up resources for the high-priority virtual machines. Virtual machines that are preempted are restarted later in priority order.
 - **Preferred and possible owners of virtual machines**: These settings influence the placement of virtual machines on the nodes of the host cluster. By default, there are no preferred owners (there is no preference), and the possible owners include all server nodes on the cluster.
 - **Availability sets**: When you place multiple virtual machines in an availability set, VMM will attempt to keep those virtual machines on separate hosts and avoid placing them together on the same host whenever possible. This helps to improve continuity of service.
