@@ -39,15 +39,13 @@ Ensure the following:
 3. **Create the transit logical networks**: You need to create logical networks:
     - A logical network to mirror the transit (Frontend) physical network.
     - Private virtual IP (VIP) and public VIP networks, to assign VIPs to the SLB service.
-
 4. **Create private and public VIP logical networks**: Private virtual IP (VIP) and public VIP networks, to assign VIPs to the SLB service.
 5. **Import the service template**: Import and customize the SLB service template.
 6. **Deploy SLB**: Deploy SLB as a VMM service, and configure the service properties.
 7. **Validate the deployment**: Configure BGP peering between the SLB/MUX instance and a BGP router, assign a public IP address to a tenant VM or service, and access the VM or service from outside the network.
 
 ## Prepare the certificate
-
-Ensure that the SSL certificate that you created during the NC deployment is copied to NCCertificate.CR folder
+Ensure that the SSL certificate that you created during the NC deployment is copied to NCCertificate.CR folder.
 
 ## Download the service template
 
@@ -136,7 +134,7 @@ Import the service template into the VMM library. For this example, we'll import
 4. Remember that you should have copied the .CER certificate that you previously created to the **NCCertificate.CR** folder.
 5. On the **Summary** page, review the details and click **Import**.
 
-    **Note**: You can customize the service template. [Learn More](sdn-network-controller.md#customize-the-template).
+    **Note**: You can customize the service template. [Learn more](sdn-network-controller.md#customize-the-template).
 
 ## Deploy the SLB service
 
@@ -183,34 +181,44 @@ Now that the service is deployed, you can configure its properties. you'll need 
 
 After you deploy the SLB/MUX, you can validate the deployment by configuring BGP peering between the SLB/MUX instance and a BGP router, assigning a public IP address to a tenant virtual machine or Service, and accessing the tenant virtual machine or service from outside the network.
 
+**Use the following procedure to validate**:
+
 1. Enter your external router details in the wizard. For example:
 
     ![IP address](../media/sdn-slb1.png)
 
 2. Click **OK** to complete the SLB/MUX service instance configuration.
 3. Check the **Jobs** window to verify that the **Update Fabric Role with required configuration**, and **Associate service instance with fabric role** jobs have completed successfully.
-4. To complete the BGP peering operation, you need to configure BGP to peer with your SLB/MUX instance on the router. If you use a hardware router, you need to consult your vendor’s documentation regarding how to setup BGP peering for that device. You also need to know the IP address of the SLB/MUX instance that you deployed earlier. To do this, you can either log on to the SLB MUX virtual machine and run **ipconfig /all** from the command prompt, or you can get the IP address from the VMM console.
+4. To complete the BGP peering operation, you need to configure BGP to peer with your SLB/MUX instance on the router. If you use a hardware router, you need to consult your vendor’s documentation regarding how to setup BGP peering for that device.
+
+    You also need to know the IP address of the SLB/MUX instance that you deployed earlier. To do this, you can either log on to the SLB MUX virtual machine and run **ipconfig /all** from the command prompt, or you can get the IP address from the VMM console.
+
+    **Note**: Enter the transit network IP.    
 5. If you create a new VIP pool after peering is complete, you need to advertise all the VIP address pools using the VMM console.
 
 ###  Provision VIPs for tenant VMs
 
 You can provision VIPs for tenant virtual machines either individually for each VM, or by using the service templates.
 
-In this procedure we'll provision a VIP for individual VMs. This isn't a typical scenario, but is useful for evaluation purposes. We'll provision a VIP for two VMs using PowerShell, as follows:
+In this procedure we'll provision a VIP for individual VMs. This isn't a typical scenario, but is useful for evaluation purposes. We'll provision a VIP for Two VMs by using the PowerShell, as follows:
 
 1. Deploy the virtual machine instances using a VM template.
 2. Create a VIP template in the VMM console.
 3. Create a VIP and assign it to the VMs using PowerShell.
 
+    **Note**: Currently, VIP creation through console is not supported.
+
 #### Create a VIP template
 
-1. In VMM console click **Fabric** > **Create VIP Template**. Type a template name and optional description.
+1. In VMM console click **Fabric** > **Create VIP Template**. Type a template **Name** and optional description.
 2. In **Virtual IP Port**, specify the port to test. In **Backend Port**, specify the port from which you want to map traffic on the backend. Click **Next**.
 3. In **Specify a Template Type** click **Specific**. Select **Microsoft** for **Manufacturer**. Select **Microsoft network controller** for **Model**. Click **Next**.
-4. In **Specify Protocol Options**, select the protocol you want to create a VIP mapping for. The HTTP and HTTPS options are commonly used, but for a simple example you can select the **Custom** option and select **TCP**. Only TCP or UDP is supported. Click **Next**.
+4. In **Specify Protocol Options**, select the protocol you want to create a VIP mapping for. The HTTP and HTTPS options are commonly used, but for a simple example you can select the **Custom** option and type  **TCP**. Click **Next**.
+
+    **Note**: Only TCP or HTTP is supported.
 5. You can optionally select **Enable persistence** if you make the load balancer to connect connection from the client in a "sticky" manner. Click **Next**.
-6. For the Load Balancing method, select **Round Robin**. Click **Next**.
-7. Click **Next** in **Health Monitors**.
+6. For the Load Balancing method, select the default method for your organization and click **Next**.
+7. In **Health Monitors**, insert the appropriate values.
 8. Check the settings, and click **Finish** to create the VIP template.
 
 #### Create the VIP with PowerShell
@@ -296,18 +304,18 @@ To complete the BGP peering process, you need to configure a BGP to peer with yo
 - If you use a hardware router, you need to consult the vendor documentation for instructions to setup BGP peering for that device.
 - Check the IP address of the SLB/MUX instance that you deployed earlier. To do this, you can log on to the SLB/MUX virtual machine and run **ipconfig**.
 
-Now configure inbound and outbound NAT rules.
+**Use the following procedure to configure inbound and outbound NAT rules**:
 
 
 1. Click **VMs and Services** > **VM Networks** and double-click the network you want to configure with NAT rules.
-2. In the wizard select **Connectivity**  Select **Connect directly to an additional network** and **Network Address Translation (NAT)**.
-3. In **Gateway Device**, type your network controller service name.
-4. Select **Network Address Translation** and choose the public VIP pool. Leave the IP address empty. A VIP address will be automatically assigned to this rule. This is an RTM limitation.
+2. In the wizard select **Connectivity**, select **Connect directly to an additional network** and **Network Address Translation (NAT)**.
+3. In **Gateway Device**, select your network controller service name.
+4. Select **Network Address Translation** and choose the public VIP pool. Optionally, provide a VIP address. A VIP address will be automatically assigned if you do not choose one.
 5. In **NAT rules** click **Add** and type the rule name, protocol, incoming port value, and the destination address and port for the rule.
 
     ![NAT](../media/sdn-slb2.png)
 
-You should be able to see recently created NAT rules in the VMM wizard.
+You should be able to see the recently created NAT rules in the VMM wizard.
 
 
 ## Next steps
