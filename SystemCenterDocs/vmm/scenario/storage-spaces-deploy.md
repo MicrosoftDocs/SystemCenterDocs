@@ -16,15 +16,9 @@ ms.technology:  virtual-machine-manager
 >Applies To: System Center 2016 - Virtual Machine Manager
 
 
-This article describes how to set up Storage Spaces Direct (S2D) in the System Center 2016 - Virtual Manager (VMM) fabric. When you set up a cluster in VMM with S2D enabled, the following occurs:
-
-1. The File Server role and the Failover Clustering feature is enabled.
-2. Storage replica and data deduplication is enabled.
-3. The cluster is validated and created.
-4. S2D is enabled, and an array is created with the same name you provide in the wizard.
+This article describes how to set up Storage Spaces Direct (S2D) in the System Center 2016 - Virtual Manager (VMM) fabric. 
 
 ## Before you start
-
 
 - Make sure you're running VMM 2016.
 - Hyper-V hosts in a cluster should be running Windows Server 2016 with the Hyper-V Role installed and configured to host VMs.
@@ -36,32 +30,22 @@ This article describes how to set up Storage Spaces Direct (S2D) in the System C
 In a hyper-converged topology storage and compute are on the same cluster. Here's what you need to do:
 
 1. Create a Hyper-V cluster in the VMM fabric, and enable S2D on the Hyper-V cluster. Alternatively if you already have a S2D cluster you configured outside VMM, you add it to the VMM fabric.
-2. Set up networking on the cluster.
-
-    - Start by [creating a logical network](../manage/manage-network-logical-networks.md) to mirror your physical management network.
-    - You need to set up a logical switch with  Switch Embedded Teaming (SET) enabled, so that the switch is virtualization aware. This switch is connected to the management logical network, and has all of the host virtual adapters that are required to provide access to the management network, or configure storage networking. S2D relies on a network to communicate between hosts. RDMA-capable adapters are recommended.
-    - [Create VM networks](../manage/manage-network-vm-networks.md)
-
-2. Modify the storage pool, and create cluster-shared volumes (CSVs)
-3. Deploy VMs on the cluster.
+2. Set up networking on the cluster. [Learn more](../manage/manage-network-overview.md).
+3. Modify the storage pool, and create cluster-shared volumes (CSVs)
+4. Deploy VMs on the cluster.
 
 ### Set up a Hyper-V cluster and enable S2D
 
 1. Click **Fabric Resources** > **Create** > **Hyper-V Cluster**.
-
-    ![Create a cluster](../media/storage-spaces-direct-cluster.png)
-
 2.  In **General Configuration**, specify a cluster name, select a host group, and select  **Enable Storage Spaces Direct**.
-
-    ![Create storage spaces direct cluster](../media/storage-spaces-direct-enable.png)
-
 3. The rest of the steps are identical to the instructions for [creating a Hyper-V host cluster with an existing server](manage-compute-add-existing-servers.md). Note that you have to validate the cluster when S2D is enabled.
 
 When you create the cluster, VMM does the following:
+
 1.  On each host:
-    1. Installs the File Server role.
-    2. Installs the Failover Clustering feature.
-    3. Enables Storage Replica and data deduplication.
+    - Installs the File Server role.
+    - Installs the Failover Clustering feature.
+    - Enables Storage Replica and data deduplication.
 2.  Validates the cluster configuration.
 3.  Creates the cluster.
 4.  Enables S2D, and creates an storage pool with the same name as the one provided in the wizard.
@@ -72,7 +56,7 @@ If you already have a hyper-converged cluster you can add it to the VMM fabric.
 
 1.  Click **VMs and Services**, right-click **All Hosts**, and select **Add Hyper-V Hosts and Clusters**.
 2. If the cluster isn't in the VMM domain, select **The Windows server computer is in an untrusted Active Directory domain**.
-3. Specify the cluster, and provide a Run As account. his adds the host cluster into VMM.
+3. Specify the cluster, and provide a Run As account. This adds the host cluster into VMM.
 
      ![Existing cluster](../media/storage-spaces-existing-cluster.png)
 
