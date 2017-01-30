@@ -19,7 +19,7 @@ This article describes how to set up quality-of-service (QoS) policies, to contr
 
 ## Before you start
 
-You can verify the status of currentlydefined QoS policies for an SOFS cluster by running the  Get-StorageQoSPolicy PowerShell cmdlet on a cluster node.
+You can verify the status of currently defined QoS policies for an SOFS cluster by running the  Get-StorageQoSPolicy PowerShell cmdlet on a cluster node.
 
 ## Create a QoS policy
 
