@@ -5,7 +5,7 @@ description: This article describes how to configure settings for VMs in the VMM
 author:  rayne-wiselman
 ms.author: raynew
 manager:  cfreeman
-ms.date:  10/16/2016
+ms.date:  01/30/2017
 ms.topic:  article
 ms.prod:  system-center-2016
 ms.technology:  virtual-machine-manager
@@ -132,9 +132,17 @@ Set the checkpoint with the following PowerShell command: `Set-SCVirtualMachine 
 
 You can configure a number of setting that help high availability and resilience for virtual machines in a cluster:
 
+- **Storage QoS**: You can configure Hyper-V VM hard disks with quality-of-service (QoS) settings, to control bandwidth. You need to use Hyper-V Manager to do this.
 - **Virtual machine priority**: You can configure priority settings for VMs deployed in a host cluster. Based on VM priority, the host cluster starts or places high-priority virtual machines before medium-priority or low-priority virtual machines. This ensures that the high-priority virtual machines are allocated memory and other resources first, for better performance. Also, after a node failure, if the high-priority virtual machines do not have the necessary memory and other resources to start, the lower priority virtual machines will be taken offline to free up resources for the high-priority virtual machines. Virtual machines that are preempted are restarted later in priority order.
 - **Preferred and possible owners of virtual machines**: These settings influence the placement of virtual machines on the nodes of the host cluster. By default, there are no preferred owners (there is no preference), and the possible owners include all server nodes on the cluster.
 - **Availability sets**: When you place multiple virtual machines in an availability set, VMM will attempt to keep those virtual machines on separate hosts and avoid placing them together on the same host whenever possible. This helps to improve continuity of service.
+
+### Configure QoS for a VM
+
+1. Open **Hyper-V Manager**, and click **Action** > **Settings**.
+2. In **SCSI Controller**, click **Hard Drive**
+3. In **Advanced Features**, click **Enable Quality of Service management**.
+4. Specify minimum and maximum IOPS values.
 
 ### Configure priority
 
