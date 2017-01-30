@@ -15,11 +15,11 @@ ms.technology:  virtual-machine-manager
 
 >Applies To: System Center 2016 - Virtual Machine Manager
 
-This article describes how to set up quality-of-service (QoS) policies to control IOPS for a scale-out file server (SOFS), in the System Center 2016 Virtual Machine Manager (VMM) fabric.
+This article describes how to set up quality-of-service (QoS) policies, to control IOPS for a scale-out file server (SOFS) in the System Center 2016 Virtual Machine Manager (VMM) fabric.
 
 ## Before you start
 
-You can check any current user-defined QoS policy for the S2D cluster by running the  Get-StorageQoSPolicy PowerShell cmdlet.
+You can verify the status of currentlydefined QoS policies for an SOFS cluster by running the  Get-StorageQoSPolicy PowerShell cmdlet on a cluster node.
 
 ## Create a QoS policy
 
@@ -32,4 +32,4 @@ You can check any current user-defined QoS policy for the S2D cluster by running
 
 ## Next steps
 
-When you deploy a virtual machine and place it on a host, you can select the storage QoS when you review VM settings, in **Virtual Machine Settings** > **Machine Resources** > **Virtual Hard Disk**. [Learn more](../manage/manage-vm-overview.mf) about deploying VMs.
+When you deploy a virtual machine and place it on a host, you can select the storage QoS when you review VM settings, in **Virtual Machine Settings** > **Machine Resources** > **Virtual Hard Disk**. [Learn more](../manage/manage-vm-overview.md) about deploying VMs.
