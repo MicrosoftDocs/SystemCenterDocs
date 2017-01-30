@@ -38,7 +38,7 @@ In a hyper-converged topology storage and compute are on the same cluster. Here'
 
 1. Click **Fabric Resources** > **Create** > **Hyper-V Cluster**.
 2.  In **General Configuration**, specify a cluster name, select a host group, and select  **Enable Storage Spaces Direct**.
-3. The rest of the steps are identical to the instructions for [creating a Hyper-V host cluster with an existing server](manage-compute-add-existing-servers.md). Note that you have to validate the cluster when S2D is enabled.
+3. The rest of the steps are identical to the instructions for [creating a Hyper-V host cluster with an existing server](../manage/manage-compute-add-existing-servers.md). Note that you have to validate the cluster when S2D is enabled.
 
 When you create the cluster, VMM does the following:
 
@@ -87,7 +87,7 @@ apps. Here's what you need to do:
 4. In **Cluster Nodes**, define a list of computers to add to the cluster.
 5. On the **Summary** page, confirm the settings and then click Finish.
 
-If you want to add additional nodes to the SOFS cluster, VMM automatically discovers any disks associated with the node. When you modify a storage pool and select the new disks to add, VMM makes those disks available to the hosts and VMs that use the share supported by that pool. [Learn more](manage-sofs-overview.md) about adding nodes to an SOFS.
+If you want to add additional nodes to the SOFS cluster, VMM automatically discovers any disks associated with the node. When you modify a storage pool and select the new disks to add, VMM makes those disks available to the hosts and VMs that use the share supported by that pool. [Learn more](../manage/manage-sofs-overview.md) about adding nodes to an SOFS.
 
 ### Add an existing SOFS cluster with S2D enabled
 
