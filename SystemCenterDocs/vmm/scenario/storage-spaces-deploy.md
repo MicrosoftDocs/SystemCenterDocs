@@ -58,18 +58,11 @@ If you already have a hyper-converged cluster you can add it to the VMM fabric.
 2. If the cluster isn't in the VMM domain, select **The Windows server computer is in an untrusted Active Directory domain**.
 3. Specify the cluster, and provide a Run As account. This adds the host cluster into VMM.
 
-     ![Existing cluster](../media/storage-spaces-existing-cluster.png)
-
 ### Manage pool and create CSVs
 
 1. Click **Fabric** > **Storage** > **Arrays**, right-click the Storage Spaces Direct cluster > **Manage Pool**. Change the name of the pool that was created by default if you need to.
 2. To create a volume, right-click the cluster > **Properties** > **Shared Volumes**.
-
-    ![Volume settings](../media/storage-spaces-volume-settings.png)
-
 3. In the Create Volume Wizard > **Capacity**, you can specify the volume size, file system, resiliency, and storage tiering options. A virtual disk will be created automatically when you create the volume.
-
-    ![Storage type](../media/storage-spaces-virtual-disk.png)
 
 If you use Powershell, the pool and the storage tier is automatically created with the **Enable-ClusterS2D autoconfig=true** option.
 
