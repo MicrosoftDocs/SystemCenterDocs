@@ -58,11 +58,6 @@ In VMM you can deploy Storage Spaces direct in both a hyper-converged or disaggr
 - Hyper-V compute cluster is different to the storage cluster.
 - File shares are created on the S2D CSVs. Hyper-V VMs are configured to store their files on the SOFS, and accessed using SMB 3.0. - You scale the Hyper-V and SOFS clusters separately for finely tuned management. For example, compute nodes might be near full capacity for the number of VMs, but storage nodes might have excess disk and IOPS capacity, so you add only additional compute nodes.   
 
-![Disaggregated](../media/storage-spaces-disaggregated.png)
-
-**Figure 2: Disaggregated deployment**
-
-
 ## Next steps
 
 - [Deploy Storage Spaces Direct](storage-spaces-deploy.md) in the VMM fabric
