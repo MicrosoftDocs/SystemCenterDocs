@@ -48,7 +48,7 @@ When you create the cluster, VMM does the following:
     - Enables Storage Replica and data deduplication.
 2.  Validates the cluster configuration.
 3.  Creates the cluster.
-4.  Enables S2D, and creates an storage pool with the same name as the one provided in the wizard.
+4.  Enables S2D, and creates a storage pool with the same name as the one provided in the wizard.
 
 ### Add an existing Hyper-V cluster with S2D enabled
 
@@ -64,7 +64,7 @@ If you already have a hyper-converged cluster you can add it to the VMM fabric.
 2. To create a volume, right-click the cluster > **Properties** > **Shared Volumes**.
 3. In the Create Volume Wizard > **Capacity**, you can specify the volume size, file system, resiliency, and storage tiering options. A virtual disk will be created automatically when you create the volume.
 
-If you use Powershell, the pool and the storage tier is automatically created with the **Enable-ClusterS2D autoconfig=true** option.
+If you use PowerShell, the pool and the storage tier is automatically created with the **Enable-ClusterS2D autoconfig=true** option.
 
 ### Deploy VMs
 
@@ -73,7 +73,7 @@ VMs can be directly deployed on the hyper-converged cluster. Their virtual hard 
 
 # Disaggregated deployment
 
-In a disaggregated deployment compute and storage run in separate environments. The storage component is built using S2D and scale-out file server (SOFS) to provide a independently scalable storage repository for VMs and
+In a disaggregated deployment compute and storage run in separate environments. The storage component is built using S2D and scale-out file server (SOFS) to provide an independently scalable storage repository for VMs and
 apps. Here's what you need to do:
 
 ### Set up an SOFS cluster and enable S2D
