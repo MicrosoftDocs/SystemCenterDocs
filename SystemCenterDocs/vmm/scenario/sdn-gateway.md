@@ -88,7 +88,7 @@ Both the templates have a default count of three virtual machines which can be c
 
 4. On the **Summary** page, review the details and click **Import**.
 
-    **Note**: You can customize the service template. [Learn More](sdn-network-controller.md#customize-the-template).
+    **Note**: You can customize the service template. [Learn more](sdn-network-controller.md#customize-the-template).
 
 ## Deploy the gateway service
 
@@ -160,10 +160,10 @@ A site-to-site IPSec connection allows you to securely access remote virtual mac
 This subnet is used to route packets out of the VM Network. This subnet need not be pre-configured in your datacenter.
 
     ![IPsec](../media/sdn-gateway2.png)
-6. Type a connection **Name**, and the IP address of the remote endpoint. Optionally configure bandwidth.
+6. Type a connection **Name**, and the IP address of the remote endpoint. Optionally, configure the bandwidth.
 7. In **Authentication**, select the type of authentication you want to use. If you choose to authenticate by using a Run As account, create a user account with a user name, and the IPSec key as the password for the account.
 8. In **Routes**, type all the remote subnets that you want to connect to.
-9. If you selected **Enable Border Gateway Protocol (BGP)** then you can leave this screen blank and instead fill out your ASN, peer BGP IP and its ASN on the **Border Gateway Protocol** tab as shown below:
+9. If you selected **Enable Border Gateway Protocol (BGP)**, then you can leave this screen blank and instead fill out your ASN, peer BGP IP and its ASN on the **Border Gateway Protocol** tab as shown below:
 
     ![IPsec](../media/sdn-gateway3.png)
 10. On the **Advanced** tab, accept the default settings.
@@ -192,6 +192,7 @@ A S2S GRE connection allows you to access remote virtual machines and services f
 ### Validate an L3 connection
 
 An L3 gateway acts as a bridge between the physical infrastructure in the datacenter and the virtualized infrastructure in the Hyper-V Network Virtualization cloud. To learn more, check these articles: [Windows server gateway as a forwarding gateway](https://technet.microsoft.com/library/dn313101.aspx#bkmk_private) and [RAS gateway high availability](https://technet.microsoft.com/en-us/windows-server-docs/networking/sdn/technologies/network-function-virtualization/ras-gateway-high-availability).
+
 1. Ensure you're logged on as an administrator on the VMM server.
 2. Run the following script:
 
