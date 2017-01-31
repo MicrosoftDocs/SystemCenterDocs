@@ -88,10 +88,8 @@ Here's what you need to do to set up a SDN network controller
 **NcSetup.cr** | Custom resource file | A library resource containing scripts used to set up the network .
 **ServerCertificate.cr** | Custom resource file | Library resource containing the private key for the network controller in .pfx format.
 **NcCertificate.cr** | Custom resource file | Library resource containing the trusted root certificate (.CER) for the network controller. This is used for secure communications between the network controller and other sub-services (For example, SLB MUXes).
-**TrustedRootCertificate.cr** | Custom resource file | Library resource containing the certificate public key (.cer), imported as the trusted root certificate to validate the SSL certificate.
+**TrustedRootCertificate.cr** | Custom resource file | Library resource containing the CA public key (.cer), imported as the trusted root certificate to validate the SSL certificate.
 **EdgeDeployment.cr** | Template | Used for installing SLB MUX roles and gateway roles (for example, VPN)
-
-
 
 ## Set up Active Directory groups
 Create security groups for network controller management and clients.
