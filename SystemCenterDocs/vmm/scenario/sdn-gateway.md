@@ -5,7 +5,7 @@ description: This article describes how to Set up an SDN RAS gateway in the VMM 
 author: rayne-wiselman
 ms.author: raynew
 manager: cfreeman
-ms.date: 01/25/2017
+ms.date: 01/31/2017
 ms.topic: article
 ms.prod: system-center-threshold
 ms.technology: virtual-machine-manager
@@ -101,7 +101,7 @@ This example uses the generation 2 template.
     **Note**: The **Deploy Service** dialog appears after mapping is complete. It's normal for the VM instances to be initially red. Click **Refresh Preview** to automatically find suitable hosts for the VM.
 4. On the left of the **Configure Deployment** window, configure the following settings:
 
-  - **AdminAccount**. Required. Select a RunAs account that will be used as the local administrator on the gateway VMs. 
+  - **AdminAccount**. Required. Select a RunAs account that will be used as the local administrator on the gateway VMs.
   - **Management Network**. Required. Choose the Management VM network that you created for host management.
   - **Management Account**. Required. Select a Run As Account with permissions to add the gateway to the Active Directory domain associated with the network controller. This can be the same account used for MgmtDomainAccount while deploying the network controller.
   - **FQDN**. Required. FQDN for the Active directory domain for the gateway.
@@ -135,107 +135,189 @@ The service instance you deployed is now associated with the gateway Manager rol
 
 ## Validate the deployment
 
-After you deploy the gateway you can configure S2S GRE, S2S IPSec, or L3 connection types, and validate them.
+After you deploy the gateway, you can configure S2S GRE, S2S IPSec, or L3 connection types, and validate them.
 
-**Note** The connectionStatus REST object is read-write, and disabled by default from VMM 2016 Update Rollup 1 onwards. It was previously read-only and enabled by default. The value should be left blank, or enabled. This value enables and disables the administrator status of the gateway connection.
+**Note**:
+- When you use BGP with a tunnel connection, BGP peering must be established between the gateway (VSID interface IP address) and the peer device on the physical network. For script based configuration, you will need to know the VSID interface IP address to be able to setup BGP peering. This IP is available in the JSON.  
+
+- For BGP peering to work, there should be a route on the physical network with the destination as the GW VSID Address and the next hop as the L3 interface IP Address.
+
+
+For more information on connection types, see [this](https://technet.microsoft.com/en-us/windows-server-docs/networking/sdn/technologies/network-function-virtualization/ras-gateway-for-sdn) article.
 
 
 ### Create and validate a site-to-site IPSec connection
 
-A site-to-site IPSec connection allows you to securely access remote virtual machines and services from your datacenter. Create the connection as follows:
+A site-to-site IPSec connection allows you to securely access remote virtual machines and services from your datacenter.
+
+**Create the IPSec connection as follows**:
 
 1. Select the VM Network that you want to configure a site-to-site IPSec connection, and click **Connectivity**.
-2. Select **Connect to another network through a VPN tunnel**. Optionally, if you want to enable BGP peering in your datacenter, you can select **Enable Border Gateway Protocol (BGP)**.
+2. Select **Connect to another network through a VPN tunnel**. Optionally, to enable BGP peering in your datacenter, select **Enable Border Gateway Protocol (BGP)**.
 3. Select the network controller service for the gateway device.
-4. Select the **VPN Connections** > **Add** > **IPSec**.
-5. Type a subnet as shown in the following diagram. This subnet is used to route packets out of the VM Network. This subnet need not be pre-configured in your datacenter.
-6. Type a connection name, and the IP address of the remote endpoint. Optionally configure bandwidth.
-7. In **Authentication**, select the type of authentication you want to use. If you choose to authenticate using a Run As account, create a user account with a user name, and the IPSec key as the password for the account.
+4. Select the **VPN Connections** > **Add** > **Add IPSec Tunnel**.
+5. Type a subnet as shown in the following diagram.
+This subnet is used to route packets out of the VM Network. This subnet need not be pre-configured in your datacenter.
+
+    ![IPsec](../media/sdn-gateway2.png)
+6. Type a connection **Name**, and the IP address of the remote endpoint. Optionally configure bandwidth.
+7. In **Authentication**, select the type of authentication you want to use. If you choose to authenticate by using a Run As account, create a user account with a user name, and the IPSec key as the password for the account.
 8. In **Routes**, type all the remote subnets that you want to connect to.
 9. If you selected **Enable Border Gateway Protocol (BGP)** then you can leave this screen blank and instead fill out your ASN, peer BGP IP and its ASN on the **Border Gateway Protocol** tab as shown below:
+
+    ![IPsec](../media/sdn-gateway3.png)
 10. On the **Advanced** tab, accept the default settings.
 11. To validate the connection, try to ping the remote endpoint IP address from one of the virtual machines on your VM Network.
 
 ### Create and validate site-to-site GRE connections
 
-A S2S GRE connection allows you to access remote virtual machines and services from your datacenter. Configure the connection as follows:
+A S2S GRE connection allows you to access remote virtual machines and services from your datacenter.
+
+**Configure the connection as follows**:
 
 1. Select the VM network where you want to configure a S2S GRE connection, and click **Connectivity**.
-2. Select **Connect to another network through a VPN tunnel**.
-3. Optionally, if you want to enable BGP peering in your datacenter, you can also select **Enable Border Gateway Protocol (BGP)**.
-4. Select the Network Controller Service for the Gateway Device.
-5. Select **VPN Connections** > **Add** > **GRE**.
-6. Type a subnet as shown in the following diagram. This subnet is used to route packets out of the VM network. This subnet doesn't need to be preconfigured in your datacenter.
+2. Select **Connect to another network through a VPN tunnel**. Optionally, to enable BGP peering in your datacenter, select **Enable Border Gateway Protocol (BGP)**.
+3. Select the Network Controller Service for the Gateway Device.
+4. Select **VPN Connections** > **Add** > **Add GRE Tunnel**.
+5. Type a subnet as shown in the following diagram. This subnet is used to route packets out of the VM network. This subnet doesn't need to be preconfigured in your datacenter.
 
   ![GRE](../media/sdn-gateway1.png)
-
-7. Type a connection name, and specify the IP address of the remote endpoint.
-8. Type the GRE key.
-9. Optionally, you can complete the other fields on this screen but these values aren't need to set up a connection.
-10. In **Routes**, add all the remote subnets that you want to connect to. If you selected **Enable Border Gateway Protocol (BGP)** in **Connectivity**, you can leave this screen blank and instead complete your ASN, peer BGP IP and ASN fields on the **Border Gateway Protocol** tab.
-11. You can use the defaults for the remaining settings.
-12. To validate connectivity, try to ping the remote endpoint IP address from one of the virtual machines on the VM network.
+6. Type a connection **Name**, and specify the IP address of the remote endpoint.
+7. Type the GRE key.
+8. Optionally, you can complete the other fields on this screen but these values aren't needed to set up a connection.
+9. In **Routes**, add all the remote subnets that you want to connect to. If you selected **Enable Border Gateway Protocol (BGP)** in **Connectivity**, you can leave this screen blank and instead complete your ASN, peer BGP IP and ASN fields on the **Border Gateway Protocol** tab.
+10. You can use the defaults for the remaining settings.
+11. To validate the connection, try to ping the remote endpoint IP address from one of the virtual machines on the VM network.
 
 ### Validate an L3 connection
 
-An L3 gateway acts as a bridge between the physical infrastructure in the datacenter and the virtualized infrastructure in the Hyper-V Network Virtualization cloud. [Learn more](https://technet.microsoft.com/library/dn313101.aspx#bkmk_private).
-
+An L3 gateway acts as a bridge between the physical infrastructure in the datacenter and the virtualized infrastructure in the Hyper-V Network Virtualization cloud. To learn more, check these articles: [Windows server gateway as a forwarding gateway](https://technet.microsoft.com/library/dn313101.aspx#bkmk_private) and [RAS gateway high availability](https://technet.microsoft.com/en-us/windows-server-docs/networking/sdn/technologies/network-function-virtualization/ras-gateway-high-availability).
 1. Ensure you're logged on as an administrator on the VMM server.
 2. Run the following script:
 
 ```
-param(
-[Parameter(Mandatory=$true)]
-# Name of the L3 VPN connection
-$L3VPNConnectionName,
-[Parameter(Mandatory=$true)]
-# Name of the VM network to create gateway
-$VmNetworkName,
-[Parameter(Mandatory=$true)]
-# Name of the Next Hop one connected VM network
-# used for forwarding
-$NextHopVmNetworkName,
-[Parameter(Mandatory=$true)]
-# IPAddresses on the local side that will be used
-# for forwarding
-# Format should be @("10.10.10.100/24")
-$LocalIPAddresses,
-[Parameter(Mandatory=$true)]
-# IPAddresses on the remote side that will be used
-# for forwarding
-# Format should be @("10.10.10.200")
-$PeerIPAddresses,
-[Parameter(Mandatory=$false)]
-# Subnet for the L3 gateway
-# default value 10.254.254.0/29
-$GatewaySubnet = "10.254.254.0/29",
-[Parameter(Mandatory=$false)]
-# List of subnets for remote tenants to add routes for static routing
-# Format should be @("14.1.20.0/24","14.1.20.0/24");
-$RoutingSubnets = @()
+param (
+    [Parameter(Mandatory=$true)]
+    # Name of the L3 VPN connection
+    $L3VPNConnectionName,
+    [Parameter(Mandatory=$true)]
+    # Name of the VM network to create gateway
+    $VmNetworkName,
+    [Parameter(Mandatory=$true)]
+    # Name of the Next Hop one connected VM network
+    # used for forwarding
+    $NextHopVmNetworkName,
+    [Parameter(Mandatory=$true)]
+    # IPAddresses on the local side that will be used
+    # for forwarding
+    # Format should be @("10.10.10.100/24")
+    $LocalIPAddresses,
+    [Parameter(Mandatory=$true)]
+    # IPAddresses on the remote side that will be used
+    # for forwarding
+    # Format should be @("10.10.10.200")
+    $PeerIPAddresses,
+    [Parameter(Mandatory=$false)]
+    # Subnet for the L3 gateway
+    # default value 10.254.254.0/29
+    $GatewaySubnet = "10.254.254.0/29",
+    [Parameter(Mandatory=$false)]
+    # List of subnets for remote tenants to add routes for static routing
+    # Format should be @("14.1.20.0/24","14.1.20.0/24");
+    $RoutingSubnets = @(),
+    [Parameter(Mandatory=$false)]
+    # Enable BGP in the tenant space
+    $EnableBGP = $false,
+    [Parameter(Mandatory=$false)]
+    # ASN number for the tenant gateway
+    # Only applicable when EnableBGP is true
+    $TenantASN = "0"
 )
 
+# Import SC-VMM PowerShell module
 Import-Module virtualmachinemanager
 
+# Retrieve Tenant VNET info and exit if VM Network not available
 $vmNetwork = Get-SCVMNetwork -Name $VmNetworkName;
+if ($vmNetwork -eq $null)
+{
+    Write-Verbose "VM Network $VmNetworkName not found, quitting"
+    return
+}
 
+# Retrieve L3 Network info and exit if VM Network not available
 $nextHopVmNetwork = Get-SCVMNetwork -Name $NextHopVmNetworkName;
+if ($nextHopVmNetwork -eq $null)
+{
+    Write-Verbose "Next Hop L3 VM Network $NextHopVmNetworkName not found, quitting"
+    return
+}
 
+# Retrieve gateway Service and exit if not available
 $gatewayDevice = Get-SCNetworkGateway | Where {$_.Model -Match "Microsoft Network Controller"};
+if ($gatewayDevice -eq $null)
+{
+    Write-Verbose "Gateway Service not found, quitting"
+    return
+}
 
+# Retrieve Tenant Virtual Gateway info
 $vmNetworkGatewayName = $VmNetwork.Name + "_Gateway";
-$VmNetworkGateway = Add-SCVMNetworkGateway -Name $vmNetworkGatewayName -EnableBGP $false -NetworkGateway $gatewayDevice
-    -VMNetwork $vmNetwork -RoutingIPSubnet $GatewaySubnet;
+$VmNetworkGateway = Get-SCVMNetworkGateway -Name $vmNetworkGatewayName -VMNetwork $vmNetwork
 
-$vpnConnection = Add-SCVPNConnection  -NextHopNetwork $nexthopvmNetwork  -Name $L3VPNConnectionName
-    -IPAddresses $LocalIPAddresses -PeerIPAddresses $PeerIPAddresses -VMNetworkGateway $VmNetworkGateway -protocol L3;
-Write-Output "Created VPN Connection " $vpnConnection;
+# Create a new Tenant Virtual Gateway if not configured
+if($VmNetworkGateway -eq $null)
+{
+    if($EnableBGP -eq $false)
+    {
+        # Create a new Virtual Gateway for tenant
+        $VmNetworkGateway = Add-SCVMNetworkGateway -Name $vmNetworkGatewayName -EnableBGP $false -NetworkGateway $gatewayDevice -VMNetwork $vmNetwork -RoutingIPSubnet $GatewaySubnet;
+    }
+    else
+    {
+        if($TenantASN -eq "0")
+        {
+            Write-Verbose "Please specify valid ASN when using BGP"
+            return
+        }
 
+        # Create a new Virtual Gateway for tenant
+        $VmNetworkGateway = Add-SCVMNetworkGateway -Name $vmNetworkGatewayName -EnableBGP $true -NetworkGateway $gatewayDevice -VMNetwork $vmNetwork -RoutingIPSubnet $GatewaySubnet -AutonomousSystemNumber $TenantASN;
+    }
+
+}
+
+if ($VmNetworkGateway -eq $null)
+{
+    Write-Verbose "Could not Find / Create Virtual Gateway for $($VmNetwork.Name), quitting"
+    return
+}
+
+# Check if the network connection already exists
+$vpnConnection = Get-SCVPNConnection -VMNetworkGateway $VmNetworkGateway -Name $L3VPNConnectionName
+if ($vpnConnection -ne $null)
+{
+    Write-Verbose "L3 Network Connection for $($VmNetwork.Name) already configured, skipping"
+}
+else
+{
+    # Create a new L3 Network connection for tenant
+    $vpnConnection = Add-SCVPNConnection  -NextHopNetwork $nexthopvmNetwork  -Name $L3VPNConnectionName -IPAddresses $LocalIPAddresses -PeerIPAddresses $PeerIPAddresses -VMNetworkGateway $VmNetworkGateway -protocol L3;
+
+    if ($vpnConnection -eq $null)
+    {
+        Write-Verbose "Could not add network connection for $($VmNetwork.Name), quitting"
+        return
+    }
+    Write-Output "Created VPN Connection " $vpnConnection;
+}
+
+# Add all the required static routes to the newly created network connection interface
 foreach($route in $RoutingSubnets)
 {
-    Add-SCNetworkRoute -IPSubnet $route -RunAsynchronously -VPNConnection $vpnConnection
-        -VMNetworkGateway $VmNetworkGateway
+    Add-SCNetworkRoute -IPSubnet $route -RunAsynchronously -VPNConnection $vpnConnection -VMNetworkGateway $VmNetworkGateway
 }
+
 ```
 
 The table below provides examples of dynamic and static L3 connections.
