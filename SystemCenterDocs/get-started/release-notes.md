@@ -16,7 +16,7 @@ ms.assetid:  5fad5608-4cb7-48b0-aa31-35ca5cc2d560
 
 >Applies To: System Center 2016
 
-**The following set of notes lists known issues and steps to mitigate the issue. These notes only apply to System Center 2016.**
+The following set of notes lists known issues and steps to mitigate the issue. These notes only apply to System Center 2016.
 
 
 ## System Center 2016 - Data Protection Manager Release Notes
@@ -633,13 +633,12 @@ Resolve the issue and then try the operation again.*
 #### SAN migration fails for Nano host
 **Description:** If you attempt to do a SAN migration between two stand-alone Nano Server hosts, you will receive an error.
 
-**Workaround:** Perform a network migration instead of a SAN migration.
+**Workaround:** Install [Update Rollup 2](https://support.microsoft.com/en-in/help/3209586/update-rollup-2-for-system-center-2016-virtual-machine-manager).
 
 #### Adding a host to VMM with Storage Spaces Direct enabled will result in a warning
 **Description:**When hosts are added to a cluster with storage spaces direct enabled, a warning "Multipath I/O is not enabled for known storage arrays on host <\hostname>" is generated.
 
-**Workaround:** None, you can ignore the warning.
-
+**Workaround:** Install [Update Rollup 2](https://support.microsoft.com/en-in/help/3209586/update-rollup-2-for-system-center-2016-virtual-machine-manager).
 #### VM deployment on Scale Out File Server using fast file copy completes with warning
 **Description:** If you deploy a VM on a Scale Out File Server using fast file copy, the action completes successfully with the following warning:
 "VMM could not transfer the file <source location> to <destination location> using fast file copy. The VMM agent on <host> returned an error.
@@ -650,12 +649,12 @@ The user name or password is incorrect (0x8007052E)
 #### When adding a node to a cluster or creating a hyperconverged cluster using VMM, cluster validation is always performed even when the skip cluster validation option is specified
 **Description:** If you add a node to an existing hyperconverged cluster or create a new cluster using Storage Spaces Direct technology using VMM, cluster validation is always performed.
 
-**Workaround:** To skip cluster validation when adding a node to the cluster or creating a hyperconverged cluster, use VMM PowerShell to add the node with the appropriate skip cluster validation option.
+**Workaround:** Install [Update Rollup 2](https://support.microsoft.com/en-in/help/3209586/update-rollup-2-for-system-center-2016-virtual-machine-manager).
 
 ####  Classification change on Cluster Shared Volume (CSV) in Hyperconverged cluster does not reflect on all the storage nodes in the cluster
 **Description:** If you change the classification on the  CSV, only the classification of the owner node gets updated. other nodes still has older classification, assigned
 
-**Workaround:** user has to go to remaining node and update the classification.
+**Workaround:** Install [Update Rollup 2](https://support.microsoft.com/en-in/help/3209586/update-rollup-2-for-system-center-2016-virtual-machine-manager).
 
 ####  Creating tiered file share on SOFS completes with error Error (26668): Error code: 43020 [SM_RC_DEDUP_NOT_AVAILABLE] even if dedup option is not selected
 **Description:** if you create a tiered fileshare on SOFS, on the successful completion of VMM job, job throws an error 43020 [SM_RC_DEDUP_NOT_AVAILABLE] even if dedup option is not selected
@@ -665,14 +664,4 @@ The user name or password is incorrect (0x8007052E)
 ####  VMM does not show storage provider and existing volume, physical disk & tiers, for an out-of-band Hyperconverged Cluster (HC) and Storage Spaces Direct (S2D) Scale Out File Server (SOFS).
 **Description:** After you onboard an out-of-band HC or S2D SOFS into VMM, the Storage Provider is not added and SOFS properties like Volume, physical disk and tiers are not available in VMM.
 
-**Workaround:** Add and Refresh the storage provider
-
-1.	Open the VMM console.
-
-2.	Click Fabric Resources > Storage > Providers.
-
-		a. Right-click the provider > Add Storage Devices wizard
-
-		b. Right-click the provider > Rescan
-
-Note: Add/Refresh provider job is completed with a warning and the job details shows SMBIOS GUID error. Even in subsequent provider refresh, you will see this warning, however there is no functional impact on the cluster and the warning can be ignored.
+**Workaround:** Install [Update Rollup 2](https://support.microsoft.com/en-in/help/3209586/update-rollup-2-for-system-center-2016-virtual-machine-manager).
