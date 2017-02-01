@@ -6,7 +6,7 @@ author:  cfreemanwa
 ms.author: cfreeman
 ms.prod:  system-center-threshold
 keywords:  
-ms.date:  11/08/2016
+ms.date:  1/27/2017
 title:  Operating Systems Compatibility for System Center 2016
 ms.technology:  system-center-2016
 ms.assetid:  466af3dd-17e5-46b3-b33b-b21a4a65b875
@@ -20,8 +20,8 @@ Use this information to evaluate if your server-side operating system environmen
 
 |System Center  component|Windows Server 2012 Standard, Datacenter|Windows Server 2012 R2 Standard, Datacenter|Windows Server 2016|Windows Server 2016 (Server with Desktop Experience)|Windows Server 2016 Nano Server|
 |----------------------------|-----------------------|---------------------------|--------------------------|------------------------------|--------------------------------------------------------------------------------|
-|**DPM** Remote Administration console*|&#8226;|&#8226;||&#8226;||
-|**DPM** Server*|&#8226;|&#8226;|&#8226;|&#8226;||
+|**Data Protection Manager** Remote Administration console||&#8226;||&#8226;||
+|**Data Protection Manager** Server||&#8226;|&#8226;|&#8226;||
 |**Operations Manager** Management Server||&#8226;|&#8226;|&#8226;||
 |**Operations Manager** Data Warehouse||&#8226;||&#8226;||
 |**Operations Manager** Gateway Server||&#8226;||&#8226;||

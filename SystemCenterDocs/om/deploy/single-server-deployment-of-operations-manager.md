@@ -5,7 +5,7 @@ description: This article provides an overview of the single server deployment o
 author: mgoedtel
 ms.author: magoedte
 manager: cfreemanwa
-ms.date: 11/15/2016
+ms.date: 01/25/2017
 ms.custom: na
 ms.prod: system-center-threshold
 ms.technology: operations-manager
@@ -70,7 +70,7 @@ This configuration does not include the gateway server role. Because of this, al
 
 ### High availability and redundancy
 
-The single server, single management group resides on a single set of hardware. This configuration supports only one instance of each server role and therefore cannot support agent failover between management servers.
+The single server, single management group resides on a single set of hardware or virtual machine. This configuration supports only one instance of each server role and therefore does not support agent failover between management servers.
 
 ## Common Uses
 

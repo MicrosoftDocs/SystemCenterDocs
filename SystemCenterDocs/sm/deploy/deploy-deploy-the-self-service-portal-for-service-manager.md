@@ -1,11 +1,11 @@
 ---
 title:  Deploy the Self Service Portal for Service Manager
-manager:  cfreeman
+manager:  carmonm
 ms.custom: na
 ms.prod: system-center-2016
 author: bandersmsft
 ms.author: banders
-ms.date: 11/28/2016
+ms.date: 01/23/2017
 ms.reviewer: na
 ms.suite: na
 ms.technology: service-manager
@@ -130,7 +130,15 @@ Use the following step to complete your installation.
     ![Self Service Portal](../media/sm-sspdeploy-complete.png)
 
 ## Customize the Self Service Portal
-The following section describe how you can customize the Self Service portal to suit your organization.
+The following section describes how you can customize the Self Service portal to suit your organization.
+
+Before you install Service Manager 2016 Update Rollup 2, note that all customizations are made in the portal sidebar (CustomSidebar.cshtml), then use the following steps to get started.
+
+1.	Create a new cshtml file named CustomSidebar.cshtml in the &lt;Self Service Portal install path&gt;\inetpub\wwwroot\SelfServicePortal\Views\Shared folder path.
+2.	Move your customizations from sidebar.cshtml to the new file, which is CustomSidebar.cshtml.
+
+In the future, you need to make all customizations to the Service Manager 2016 Self Service portal’s sidebar in the CustomSidebar.cshtml file.
+
 
 ### Basic Customization
 
