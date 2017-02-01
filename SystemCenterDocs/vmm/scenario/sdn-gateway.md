@@ -27,12 +27,12 @@ Ensure the following before you start:
 
 - **Planning**: Read about planning a software defined network, and review the planning topology in [this](https://technet.microsoft.com/windows-server-docs/networking/sdn/plan/plan-a-software-defined-network-infrastructure) document. The diagram shows a sample 4-node setup. The setup is highly available with Three network controller nodes (VM), and Three SLB/MUX nodes. It shows Two tenants with One virtual network broken into Two virtual subnets to simulate a web tier and a database tier. Both the infrastructure and tenant virtual machines can be redistributed across any physical host.
 - **Network controller**: You should deploy the network controller before you deploy the RAS gateway.
-- **SLB**: To ensure that dependencies are handled correctly, you should also deploy the SLB before setting up the gateway. If an SLB and a gateway is configured, you can use and validate an IPsec connection.
+- **SLB**: To ensure that dependencies are handled correctly, you should also deploy the SLB before setting up the gateway. If an SLB and a gateway are configured, you can use and validate an IPsec connection.
 - **Service template**: VMM uses a service template to automate GW deployment. Service templates support multi-node deployment on generation 1 and generation 2 VMs.
 
 ## Deployment steps
 
-To set up a RAS gateway you do the following:
+To set up a RAS gateway, do the following:
 
 1. **Download the service template**: Download the service template that you need to deploy the GW.
 2. **Create the VIP logical network**: Create a GRE VIP logical network. It needs an IP address pool for private VIPs, and to assign VIPs to GRE endpoints. The network exists to define VIPs that are assigned to gateway VMs running on the SDN fabric for a site-to-site GRE connection.
@@ -55,7 +55,7 @@ Both the templates have a default count of three virtual machines which can be c
 ## Create the GRE VIP logical network
 
 1. In the VMM console, run the Create Logical Network Wizard. Type a **Name**, optionally provide a description, and  click **Next**.
-2. In **Settings** select **One Connected Network**. Optionally you can select **Create a VM network with the same name**. This setting allows VMs to access this logical network directly. Select **Managed by the Network Controller**, and click **Next**.
+2. In **Settings**, select **One Connected Network**. Optionally you can select **Create a VM network with the same name**. This setting allows VMs to access this logical network directly. Select **Managed by the Network Controller**, and click **Next**.
 3. In **Network Site**, specify the settings:
 
     - Network name: GRE VIP
@@ -83,7 +83,7 @@ Both the templates have a default count of three virtual machines which can be c
 1. Click **Library** > **Import Template**.
 2. Browse to your service template folder. As an example,  select the **EdgeServiceTemplate Generation 2.xml** file.
 3. Update the parameters for your environment as you import the service template. Note that the library resources were imported during network controller deployment.
- - **WinServer.vhdx** Select the virtual hard drive image that you prepared and imported earlier, during the network controller deployment.
+ - **WinServer.vhdx**: Select the virtual hard drive image that you prepared and imported earlier, during the network controller deployment.
  - **EdgeDeployment.CR**: Map to the EdgeDeployment.cr library resource in the VMM library.
 
 4. On the **Summary** page, review the details and click **Import**.
@@ -98,7 +98,7 @@ This example uses the generation 2 template.
 2. Type a **Name** and choose a destination for the service instance. The destination must map to a host group that contains the hosts configured previously for gateway deployment.
 3. In **Network Settings**, map the management network to the management VM network.
 
-    **Note**: The **Deploy Service** dialog appears after mapping is complete. It's normal for the VM instances to be initially red. Click **Refresh Preview** to automatically find suitable hosts for the VM.
+    **Note**: The **Deploy Service** dialog appears after mapping is complete. It's normal for the VM instances to be initially Red. Click **Refresh Preview** to automatically find suitable hosts for the VM.
 4. On the left of the **Configure Deployment** window, configure the following settings:
 
   - **AdminAccount**. Required. Select a RunAs account that will be used as the local administrator on the gateway VMs.
@@ -123,7 +123,9 @@ Now that the gateway service is deployed, you can configure the properties, and 
 1. Click **Fabric** > **Network Service** to display the list of network services installed. Right-click the network controller service > **Properties**.
 2. Click the **Services** tab, and select the **Gateway Manager Role**.
 3. Find the **Associated Service** field under **Service information**, and click **Browse**. Select the gateway service instance you created earlier, and click **OK**.
-4. Select the **Run As account** that will be used by network controller to access the gateway virtual machines. The Run As Account must have Administrator privileges on the gateway VMs.
+4. Select the **Run As account** that will be used by network controller to access the gateway virtual machines.
+
+    **Note**: The Run As Account must have Administrator privileges on the gateway VMs.
 5. In **GRE VIP subnet**, select the VIP subnet that you created previously.
 6. In **Public IPv4 pool**, select the pool you configured during SLB deployment. In **Public IPv4 address**, provide an IP address from the previous pool, and ensure you don't select the initial three IP addresses from the range.
 7. In **Gateway Capacity**, configure the capacity settings.

@@ -5,7 +5,7 @@ description: This article describes how to set up a SDN software load balancer i
 author: rayne-wiselman
 ms.author: raynew
 manager: cfreeman
-ms.date: 01/25/2017
+ms.date: 02/01/2017
 ms.topic: article
 ms.prod: system-center-threshold
 ms.technology: virtual-machine-manager
@@ -193,14 +193,14 @@ After you deploy the SLB/MUX, you can validate the deployment by configuring BGP
 
     You also need to know the IP address of the SLB/MUX instance that you deployed earlier. To do this, you can either log on to the SLB MUX virtual machine and run **ipconfig /all** from the command prompt, or you can get the IP address from the VMM console.
 
-    **Note**: Enter the transit network IP.    
+    **Note**: Enter an IP from the transit network.    
 5. If you create a new VIP pool after peering is complete, you need to advertise all the VIP address pools using the VMM console.
 
 ###  Provision VIPs for tenant VMs
 
 You can provision VIPs for tenant virtual machines either individually for each VM, or by using the service templates.
 
-In this procedure we'll provision a VIP for individual VMs. This isn't a typical scenario, but is useful for evaluation purposes. We'll provision a VIP for Two VMs by using the PowerShell, as follows:
+In this procedure we'll provision a VIP for individual VMs. This isn't a typical scenario, but is useful for the evaluation purposes. We'll provision a VIP for Two VMs by using the PowerShell, as follows:
 
 1. Deploy the virtual machine instances using a VM template.
 2. Create a VIP template in the VMM console.
@@ -216,14 +216,14 @@ In this procedure we'll provision a VIP for individual VMs. This isn't a typical
 4. In **Specify Protocol Options**, select the protocol you want to create a VIP mapping for. The HTTP and HTTPS options are commonly used, but for a simple example you can select the **Custom** option and type  **TCP**. Click **Next**.
 
     **Note**: Only TCP or HTTP is supported.
-5. You can optionally select **Enable persistence** if you make the load balancer to connect connection from the client in a "sticky" manner. Click **Next**.
+5. Click **Next**.
 6. For the Load Balancing method, select the default method for your organization and click **Next**.
 7. In **Health Monitors**, insert the appropriate values.
 8. Check the settings, and click **Finish** to create the VIP template.
 
 #### Create the VIP with PowerShell
 
-The following sample PowerShell script creates a VIP for two virtual machines. In the script parameters section, substitute the actual values that match your test environment for the samples used in this script. The script should be run on the VMM server, or on a computer running the VMM Console.
+The following sample PowerShell script creates a VIP for Two virtual machines. In the script parameters section, substitute the actual values that match your test environment for the samples used in this script. The script should be run on the VMM server, or on a computer running the VMM Console.
 
 ```
 param(
@@ -297,18 +297,18 @@ $vip = get-scloadbalancervip -Name $VipName;
 Write-Output "VIP with members " $vip;
 ```
 
-#### Configure inbound and outbound NAT rules
+#### Configure inbound NAT rules
 
 To complete the BGP peering process, you need to configure a BGP to peer with your SLB/MUX instance on the router.
 
 - If you use a hardware router, you need to consult the vendor documentation for instructions to setup BGP peering for that device.
 - Check the IP address of the SLB/MUX instance that you deployed earlier. To do this, you can log on to the SLB/MUX virtual machine and run **ipconfig**.
 
-**Use the following procedure to configure inbound and outbound NAT rules**:
+**Use the following procedure to configure inbound NAT rules**:
 
 
 1. Click **VMs and Services** > **VM Networks** and double-click the network you want to configure with NAT rules.
-2. In the wizard select **Connectivity**, select **Connect directly to an additional network** and **Network Address Translation (NAT)**.
+2. In the wizard, select **Connectivity**, select **Connect directly to an additional network** and **Network Address Translation (NAT)**.
 3. In **Gateway Device**, select your network controller service name.
 4. Select **Network Address Translation** and choose the public VIP pool. Optionally, provide a VIP address. A VIP address will be automatically assigned if you do not choose one.
 5. In **NAT rules** click **Add** and type the rule name, protocol, incoming port value, and the destination address and port for the rule.
@@ -317,7 +317,9 @@ To complete the BGP peering process, you need to configure a BGP to peer with yo
 
 You should be able to see the recently created NAT rules in the VMM wizard.
 
+#### Outbound NAT rules
+
+Once you create the inbound NAT rules, outbound NAT rules are automatically created.
 
 ## Next steps
-
 [Create a RAS gateway](sdn-gateway.md)
