@@ -5,7 +5,7 @@ description: Describes how to manage Hyper-V port access control lists (ACLs)
 author:  rayne-wiselman
 ms.author: raynew
 manager:  cfreeman
-ms.date:  10/16/2016
+ms.date:  02/01/2017
 ms.topic:  article
 ms.prod:  system-center-threshold
 ms.technology:  virtual-machine-manager
@@ -18,23 +18,43 @@ ms.technology:  virtual-machine-manager
 
 
 In System Center 2016 - Virtual Machine Manager (VMM) , you can centrally configure and manage Hyper-V port access control lists (ACLs) in your Software Defined Networking (SDN) fabric. These ACLs can be configured for both a Network Controller managed fabric and a non-Network Controller managed fabric.
-A port access control list (port ACL) is an object that is attached to various networking primitives to describe network security. The port ACL serves as a collection of access control entries or rules. An ACL can be attached to zero or more networking primitives, such as a VM network, VM subnet, virtual network adapter, or the VMM management server itself. An ACL can contain zero or more ACL rules. Each compatible VMM networking primitive (VM network, VM subnet, virtual network adapter, or VMM management server) can have either one port ACL attached or none.
 
-With Virtual Machine Manager 2016 and Windows Server 2016, you now have two flavors of Port ACL available. One that can be applied on Network Controller managed objects (only on NIC and VM Subnet, this type of ACL can’t be applied on VMM Servers and VM Networks) and the other that can be applied on non-NC managed objects.
-If you want a particular ACL to be applicable to NC managed objects you need to use ManagedByNC flag and set it to true. In all other cases the created ACL will only be applicable to non-NC managed objects. The two kinds on ACLs are not interchangeable. So,r you can’t apply an ACL with ManagedByNC set as false to NC managed objects and vice versa.
 
-One key difference between two kinds of ACL is that while you need remediate each NIC after applying ACL on non-NC objects, no such step is required in case you are applying Port ACLs on NC managed objects.
-A port ACL entry or rule is an object that describes filtering policy. Multiple ACL rules can exist in the same port ACL and apply based on their priority. Each ACL rule corresponds to exactly one port ACL.
-Global settings describe a port ACL that is applied to all VM virtual network adapters in the infrastructure. There is no separate object type for Global Settings. Instead, the Global Settings port ACL attaches to the VMM management server itself. The VMM management server object can have either one port ACL or none.
+- A port access control list (port ACL) is an object that is attached to various networking primitives to describe the network security.
+- Port ACLs serve as a collection of access control entries or rules. An ACL can contain zero or more ACL rules.
+- A port ACL entry or rule is an object that describes filtering policy. Multiple ACL rules can exist in the same port ACL and can be applied based on their priority. Each ACL rule corresponds to exactly one port ACL.
+- An ACL can be attached to zero or more networking primitives, such as a VM network, VM subnet, virtual network adapter, or the VMM management server itself.
+- Each compatible VMM networking primitive  can have either one port ACL attached or none.
+- Global settings describe a port ACL that is applied to all VM virtual network adapters in the infrastructure. There is no separate object type for Global Settings. Instead, the Global Settings port ACL attaches to the VMM management server itself. The VMM management server object can have either one port ACL or none.
 
-Also, please not the difference in the priority range between NC managed and Non-NC managed ACL rules.
+**Note**:  Port ACL settings are exposed only through PowerShell cmdlets in VMM and are not available in the VMM console.
 
-For Non-NC managed we support priority from 1- 65535. And for NC managed we support priority from 1 – 64500.
+ Virtual Machine Manager 2016 supports the following (Two) Port ACLs:
+ - ACLS that can be applied on Network Controller (NC) managed objects.
+
+     - Applicable only to NIC and subnets. This type of ACL can’t be applied on VMM Servers and VM Networks.
+
+- ACLS that can be applied on non-NC managed objects.
+
+    - Applicable to VM network, VM subnet, virtual network adapter, or the VMM management server itself.
+
+**Note**: To apply an ACL to NC managed objects, you must use **ManagedByNC** flag and set it to **true**. Else, the created ACL will only be applicable to non-NC managed objects.
+
+The ACL types are not interchangeable. which means, you can’t apply an ACL with **ManagedByNC** set as **false** to NC managed objects and vice versa.
+
+One key difference between the two kinds of ACL is that while you need to remediate each NIC after applying ACL on non-NC objects, no such step is required in case you are applying Port ACLs on NC managed objects.
+
+Also, note the difference in the priority ranges between NC managed and Non-NC managed ACL rules.
+
+Here's is the priority range:
+- Non-NC managed: 1- 65535
+- NC managed:     1 – 64500
+
 
 
 ## Supported scenarios
 
-You can use the VMM PowerShell interface to do the following:
+Use the VMM PowerShell interface to do the following:
 
 - Define port ACLs and ACL rules
     - The rules are applied to virtual switch ports on Hyper-V servers as "extended port ACLs" (``VMNetworkAdapterExtendedAcl``) in Hyper-V terminology. This means that they can apply only to hosts running Windows Server 2012 R2 or later.
@@ -45,11 +65,9 @@ You can use the VMM PowerShell interface to do the following:
 - View and update port ACL rules configured on the individual virtual machine vNICs.
 - Delete port ACLs and their ACL rules.
 
-Port ACL settings are exposed only through PowerShell cmdlets in VMM and are not available in the VMM console user interface.
-
 ## Unsupported scenarios
 
-VMM does not support the following:
+Currently, VMM does not support the following:
 * Manage/update individual rules for a single instance when the ACL is shared with multiple instances. All rules are managed centrally within their parent ACLs and apply wherever the ACL is attached.
 * Attach more than one ACL to an entity.
 * Apply port ACLs to virtual network adapters (vNICs) in the Hyper-V parent partition (management operating system).
