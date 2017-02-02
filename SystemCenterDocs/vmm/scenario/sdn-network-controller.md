@@ -5,7 +5,7 @@ description: This article describes how to set up a Software Defined Network (SD
 author: rayne-wiselman
 ms.author: raynew
 manager: cfreeman
-ms.date: 01/23/2016
+ms.date: 02/02/2016
 ms.topic: article
 ms.prod: system-center-threshold
 ms.technology: virtual-machine-manager
@@ -145,7 +145,9 @@ If you want to allocate static IP addresses to network controller VMs, create an
 4.  In **IP Address range** panel, type the starting and ending IP addresses.
 5. To use an IP as REST IP, type one of the IP addresses from the specified range in **IP addresses to be reserved for other uses** box. In case you want to use the REST End Point, skip this step.
 
-    **Note**: Don't use the first three IP addresses of your available subnet. For example, if your available subnet is from .1 to .254, start your range at .4 or greater.
+    **Note**:
+    - Don't use the first three IP addresses of your available subnet. For example, if your available subnet is from .1 to .254, start your range at .4 or greater.
+    - If the nodes are in the same subnet, you must provide REST IP address. If the nodes are in different subnets, you must provide REST DNS name.   
 6. Specify the default gateway address and optionally configure DNS and WINS settings
 7.  In **Summary** page, review the settings and click **Finish** to complete the wizard.
 
@@ -245,18 +247,21 @@ Import the service template into the VMM library. For this example we'll import 
 
 ### Customize the template
 
-You can specify the product key in the service template, and enable dynamic IP if you want to use DHCP for management logical network connectivity.
+You can customize the service template to meet any specific requirements related to your organization, such as product key, IP assignment, DHCP, MAC Spoofing and High availability. You can also customize properties for objects such as host groups, host clusters, service instances.   
 
-1. In the VMM library, select the service template, and open it in designer mode.
-2. Double-click on the computer tier to open the Windows Server Network Controller Properties wizard.
-3. To specify a product key, click **Product Key**, and specify the key shared by CCEP.
-4. To enable dynamic IP configuration in case you want to leverage DHCP for network controller management, click on the adapter, and change the IPV4 address type to **Dynamic**.
-5.	To enable high availability, click **Network Control Application**, under **Hardware configuration** > **Availability**, select the **Make the Virtual machine highly available** check box.
+As an example, here are the steps to enter the product key, enable DHCP and high availability:
+
+
+1. In the VMM library, select the service template, and open it in **designer mode**.
+2. Double-click the computer tier to open the Windows Server Network Controller Properties page.
+3. To specify a product key, click **OS Configuration** > **Product Key**, and specify the key shared by CCEP.
+5.	To enable high availability, click **Hardware configuration** > **Availability**, select the **Make the Virtual machine highly available** check box.
+5.	To enable dynamic IP configuration and leverage DHCP for network controller management, click network adapter on the designer, and change the IPV4 address type to **Dynamic**.
 
 
 **Note**:
 - If you customize the template for high availability, ensure you deploy this on clustered nodes.
-- While configuring your Network Controller and specifying FQDN as the REST name, don’t pre-create Host A record for your primary NC node in your DNS. This may impact Network Controller connectivity once primary NC node changes. This is applicable even if you are deploying NC using SDN Express or VMM Express script.
+- While configuring your Network Controller and specifying FQDN as the REST name, don’t pre-create Host A record for your primary NC node in your DNS. This may impact Network Controller connectivity once primary NC node changes. This is applicable even if you are deploying the NC by using the SDN Express or VMM Express script.
 
 ## Deploy the network controller
 
@@ -284,8 +289,8 @@ You can specify the product key in the service template, and enable dynamic IP i
 **MgmtDomainAccountPassword** | Required | Password for the management Run as account mapped to MgmtDomainAccount.
 **MgmtDomainFQDN** | Required | FQDN for the Active directory domain that the network controller virtual machines will join.
 **MgmtSecurityGroup** | Required | Name of the security group you created previously containing network controller management accounts.
-**RestEndPoint** | Required| Enter the RESTName you used when preparing the certificates.  This parameter isn't used for standalone templates.
-**ServerCertificatePassword** | Required | Password need to import the certificate into the machine store.
+**RestEndPoint** | Required| Enter the RESTName you used when preparing the certificates.  This parameter isn't used for standalone templates. <br><br> **Note**: If the nodes are in the same subnet, you must provide REST IP address. If the nodes are in different subnets, you must provide REST DNS name.   
+***ServerCertificatePassword** | Required | Password need to import the certificate into the machine store.
 
 ## Add the network controller service to VMM
 
