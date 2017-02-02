@@ -148,6 +148,7 @@ If you want to allocate static IP addresses to network controller VMs, create an
     **Note**:
     - Don't use the first three IP addresses of your available subnet. For example, if your available subnet is from .1 to .254, start your range at .4 or greater.
     - If the nodes are in the same subnet, you must provide REST IP address. If the nodes are in different subnets, you must provide REST DNS name.   
+
 6. Specify the default gateway address and optionally configure DNS and WINS settings
 7.  In **Summary** page, review the settings and click **Finish** to complete the wizard.
 
@@ -290,7 +291,8 @@ As an example, here are the steps to enter the product key, enable DHCP and high
 **MgmtDomainFQDN** | Required | FQDN for the Active directory domain that the network controller virtual machines will join.
 **MgmtSecurityGroup** | Required | Name of the security group you created previously containing network controller management accounts.
 **RestEndPoint** | Required| Enter the RESTName you used when preparing the certificates.  This parameter isn't used for standalone templates. <br><br> **Note**: If the nodes are in the same subnet, you must provide REST IP address. If the nodes are in different subnets, you must provide REST DNS name.   
-***ServerCertificatePassword** | Required | Password need to import the certificate into the machine store.
+**ServerCertificatePassword** | Required | Password to import the certificate into the machine store.
+
 
 ## Add the network controller service to VMM
 
