@@ -12,7 +12,7 @@ ms.technology:  virtual-machine-manager
 ---
 
 
-# Manage port ACLs in VMM 2016
+# Manage port ACLs in VMM
 
 >Applies To: System Center 2016 - Virtual Machine Manager
 
