@@ -5,7 +5,7 @@ description: This article highlights the section titles contained within this se
 author: mgoedtel
 ms.author: magoedte
 manager: cfreemanwa
-ms.date: 11/15/2016
+ms.date: 02/03/2017
 ms.custom: na
 ms.prod: system-center-threshold
 ms.technology: operations-manager
@@ -22,7 +22,7 @@ Management packs might also contain tasks, diagnostics, and recovery tools and g
 
 ## Using management packs topics
 
--   [What Is in an Operations Manager Management Pack?](what-Is-in-an-operations-manager-management-pack.md)
+-   [What is in an Operations Manager management pack?](what-is-in-an-operations-manager-management-pack.md)
 
     Provides an overview of management pack structure and components.
 
@@ -34,17 +34,21 @@ Management packs might also contain tasks, diagnostics, and recovery tools and g
 
     Provides an overview of how to approach to managing the lifecycle of management packs deployed in your management group.
 
--   [How to Import, Export, and Remove an Operations Manager Management Pack](how-to-import-remove-export-management-packs.md) 
+-   [How to import, export, and remove an Operations Manager management pack](how-to-import-remove-export-management-packs.md) 
 
     Provides procedures for downloading and importing management packs, removing, and exporting management packs in your management group.
 
--   [Creating a Management Pack for Overrides](how-to-create-a-management-pack-for-overrides.md)
+-   [Creating a management pack for overrides](how-to-create-a-management-pack-for-overrides.md)
 
     Explains how to organize and store the overrides you configure.
 
+-   [How to override a rule or monitor](how-to-override-a-rule-or-monitor.md)
+
+    Explains how to apply an override to change the configuration of override a rule, attribute, or object discovery.  
+  
 -   [How to add knowledge to a management pack](how-to-add-knowledge-to-a-management-pack.md)
 
-    Explains how to add or edit custom company knowledge to add additional troubleshooting information and provide company\-specific information for operators in your organization.
+    Explains how to add or edit custom company knowledge to add additional troubleshooting information and provide company-specific information for operators in your organization.
 
 -   [Management pack assessment](Management-Pack-Assessment.md)
 
