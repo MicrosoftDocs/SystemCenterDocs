@@ -44,7 +44,7 @@ Management packs might also contain tasks, diagnostics, and recovery tools and g
 
 -   [How to override a rule or monitor](how-to-override-a-rule-or-monitor.md)
 
-    Explains how to apply an override to change the configuration of override a rule, attribute, or object discovery.  
+    Explains how to apply an override to change the configuration of a rule, monitor, attribute, or object discovery.  
   
 -   [How to add knowledge to a management pack](how-to-add-knowledge-to-a-management-pack.md)
 
