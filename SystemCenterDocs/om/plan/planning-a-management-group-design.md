@@ -5,7 +5,7 @@ description: This article provides an overview of the design decisions for consi
 author: mgoedtel
 ms.author: magoedte
 manager: cfreemanwa
-ms.date: 11/04/2016
+ms.date: 02/03/2017
 ms.custom: na
 ms.prod: system-center-threshold
 ms.technology: operations-manager
@@ -150,7 +150,7 @@ Before you deploy System Center 2016 Operations Manager in a production environm
 
 ## Connected management groups
 
-Many enterprises with servers in multiple geographical locations require central monitoring of those servers.  The Connected management group configuration, illustrated in the image below, is a set of workflow processes that are designed to create a hierarchical systems management infrastructure. 
+Many enterprises with servers in multiple geographical locations require central monitoring of those servers.  The Connected management group configuration, illustrated in the image below, is a set of workflow processes that are designed to create a hierarchical systems management infrastructure.<br><br> ![Connected management group example](../media/om2016-connected-management-groups.png)
 
 This configuration can be used to achieve centralized monitoring.  It is designed to support the viewing of alerts and monitoring data, as well as to initiate tasks against a managed object of a connected management group.
 
@@ -159,7 +159,7 @@ By connecting Operations Manager 2016 management groups, centralized monitoring 
 - Monitoring of a larger number of manage objects than is possible with a single management group. 
 - Isolation of monitoring activity according to logical business units, such as “Marketing,” or physical locations, such as Rome. 
 
-When you connect management groups, you are not deploying any new servers; rather, you are allowing the local management group to have access to the alerts and discovery information that is in a connected management group.  In this way, you can view and interact with all the alerts and other monitoring data from multiple management groups in a single Operations console.  In addition, you can run tasks on the monitored computers of the connected management groups.
+When you connect management groups, you are not deploying any new servers; rather, you are allowing the local management group to have access to the alerts and discovery information that is in a connected management group.  In this way, you can view and interact with all the alerts and other monitoring data from multiple management groups in a single Operations console.  In addition, you can run tasks on the monitored computers of the connected management groups.  To learn how to connect management groups, see [Connecting management groups in Operations Manager](../manage/connecting-management-groups-in-operations-manager.md). 
 
 ### Installed languages
 
