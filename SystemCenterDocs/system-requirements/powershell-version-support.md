@@ -22,9 +22,9 @@ Use this information to evaluate if your Windows PowerShell environment is ready
 
 |System Center Component|Windows PowerShell 2.0|Windows PowerShell 3.0|Windows PowerShell 4.0|Windows PowerShell 5.0|
 |---------------------------|--------------------------|--------------------------|-----------------------------------------------|-----------------------------------------------|
-|**DPM** Central Console|&#8226;|&#8226;|&#8226;|&#8226;|
-|**DPM** Remote Administration console|&#8226;|&#8226;|&#8226;|&#8226;|
-|**DPM** Server|&#8226;|&#8226;|&#8226;|&#8226;|
+|**DPM** Central Console|||&#8226;|&#8226;|
+|**DPM** Remote Administration console|||&#8226;|&#8226;|
+|**DPM** Server|||&#8226;|&#8226;|
 |**Operations Manager** Management Server|||&#8226;|&#8226;|
 |**Operations Manager** Data Warehouse Server|||&#8226;|&#8226;|
 |**Operations Manager** Gateway Server|||&#8226;|&#8226;|
