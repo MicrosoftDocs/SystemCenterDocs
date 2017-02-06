@@ -253,7 +253,7 @@ You can customize the service template to meet any specific requirements related
 As an example, here are the steps to enter the product key, enable DHCP and high availability:
 
 
-1. In the VMM library, select the service template, and open it in **designer mode**.
+1. In the VMM library, select the service template, and open it in designer mode.
 2. Double-click the computer tier to open the Windows Server Network Controller Properties page.
 3. To specify a product key, click **OS Configuration** > **Product Key**, and specify the key shared by CCEP.
 5.	To enable high availability, click **Hardware configuration** > **Availability**, select the **Make the Virtual machine highly available** check box.
