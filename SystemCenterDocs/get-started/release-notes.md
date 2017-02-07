@@ -24,33 +24,18 @@ The following set of notes lists known issues and steps to mitigate the issue. T
 The following release notes apply to System Center 2016 - Data Protection Manager.
 
 
-#### Backups for Windows 10 Anniversary Update clients
-**Description**: Some backup jobs for DPM-protected Windows 10 clients may not start after updating the client with the Anniversary update.
-
-**Workaround**: On the client computer:
-1. Open the Task Scheduler app.
-
-2. In the Task Scheduler library, find and select the scheduled job, **ScheduledDPMClientBackup**.
-
-3. In the **Actions** pane, click **Export** and save the xml output as a backup copy.
-
-4. In the **Actions** pane, click **Properties**.
-
-  The properties dialog box for ScheduledDPMClientBackup opens.
-
-5. In the Properties dialog, select the **Triggers** tab, and click **Edit**.
-
-6. In the **Edit Trigger** dialog, from the **Begin the task** drop-down menu, select **At log on**.
-
-7. In **Advanced settings**, check **Repeat task every** and select **15 minutes**. From the **for a duration of** menu, select **Indefinitely**, and then click **OK**.
-
-8. You must reboot the computer for these changes to take effect.
-
 
 #### Silent Installation of System Center DPM with SQL Server 2008
 **Description**: You cannot silently install DPM 2016 RTM on SQL Server 2008.
 
 **Workaround**: Deploy DPM 2016 RTM on a version of SQL Server higher than 2008, or use the DPM 2016 Setup UI.
+
+
+#### DPM 2016 on Windows Server 2016 slowing down and hanging due to high memory consumption
+**Description**: Memory consumption on the DPM Server increases continuously, reaching about 90%, leading to the DPM server slowing down.
+
+**Workaround**: The issue was found to lie in the underlying layers. The Windows Server team will release a fix for it in February, 2017.
+
 
 #### Hyper-V VMs are protected twice on VM upgrade
 **Description**: If you upgrade your Hyper-V VM from Windows Server 2012 R2 to Windows Server 2016 to enable Resilient Change Tracking (RCT), a new VM representing the upgraded VM may appear in the **Create Protection Group Wizard**. The 2016 version of the VM may appear in addition to the 2012 R2 version of the VM.
@@ -86,6 +71,37 @@ ReplicaSizeInGBForSystemProtectionWithBMR (DWORD)
 **Description:** Recovery of Hyper-V RCT VMs as files created directly on tape (D-T) fails. D-D-T backups will not exhibit this issue.
 
 **Workaround:** Do Alternate Location Recovery as a VM, and then transfer those files to the desired location.
+
+#### Recovery Points not being pruned, leading to an accumulation of Recovery Points
+**Description:** DPM prunes the recovery points older than the retention range. During this process, for the recovery points getting pruned, DPM calculates the storage they consumed, which may take some time. The storage calculation hence delays pruning, which may lead to storage pressures.
+
+**Workaround:** DPM can be configured to not calculate the size of the recovery points getting pruned. As a result of this, the pruning script can run fast and prune all the recovery points older than the retention range, relieving any storage pressures. Hence, the Storage consumed per data-source will not be updated once DPM is configured to not calculate the size while pruning. The storage consumption per volume will continue to reflect the correct values.
+The size calculation can be turned back on when needed by running a PowerShell script. 
+To suppress size calculations and do complete size calculations again, you can use the following script:
+
+***Location:*** Program Files\Microsoft System Center 2016\DPM\DPM\bin\Manage-DPMDSStorageSizeUpdate.ps1
+
+***Script:*** Manage-DPMDSStorageSizeUpdate.ps1 -ManageStorageInfo [StopSizeAutoUpdate | StartSizeAutoUpdate | GetSizeAutoUpdateStatus | UpdateSizeInfo ] [-UpdateSizeForDS <FilePath>] [-UpdatedDSSizeReport <FilePath>] [-FailedDSSizeUpdateFile <FilePath>]
+
+  1. ***ManageStorageInfo:*** Specifies the kind of operation needed. 
+  
+    ***StopSizeAutoUpdate:*** Stops the size calculations completely. Both UI and Powershell will not report sizes. 
+    
+    ***StartSizeAutoUpdate:*** Resumes the size calculations. Immediately after enabling size calculations, please use “UpdateSizeInfo” (in the following options) to recalculate sizes for all the datasources, until which sizes reported in PowerShell and UI may not be correct. 
+   
+   ***GetSizeAutoUpdateStatus:*** Tells whether size calculations are enabled or disabled.
+   
+   ***UpdateSizeInfo:*** This triggers the calculation of sizes and reports the size consumed by a datasource. This can be a long running operation, so please use it only when needed for scenarios as billing. Note that during this time, backups may fail with vhd mount errors. 
+    
+  2. ***UpdateSizeForDS:*** Path to a text file with a list of Datasource IDs for which size needs to be calculated, with a datasourceID on each line. When not passed, size calculation is triggered for all the datasources. 
+    This may be used after using “UpdateSizeInfo” in “ManageStorageInfo”.
+    To get the Datasource IDs of specific datasources, please use “Get-DPMProtectionGroup | Get-DPMDatasource | Format-table -Property Computer,name,ObjectType,Id”.
+    
+  3. ***UpdatedDSSizeReport:*** Path to a file which will store the updated sizes of the datasources when the script is run. When not passed sizes.csv file is created in the execution directory. 
+    This should be used after using “UpdateSizeInfo” in “ManageStorageInfo”.
+    
+  4. ***FailedDSSizeUpdateFile:*** Path to a file to store the Datasource IDs for the datasources for which the storage consumption couldn’t be calculated. This may happen due to reasons as ongoing backups. When not passed failedDS.txt file is created in the execution directory. This file can be given as input to “UpdateSizeForDS” to update the sizes of all the datasources. 
+    This should be used after using “UpdateSizeInfo” in “ManageStorageInfo”.
 
 
 
@@ -665,3 +681,8 @@ The user name or password is incorrect (0x8007052E)
 **Description:** After you onboard an out-of-band HC or S2D SOFS into VMM, the Storage Provider is not added and SOFS properties like Volume, physical disk and tiers are not available in VMM.
 
 **Workaround:** Install [Update Rollup 2](https://support.microsoft.com/en-in/help/3209586/update-rollup-2-for-system-center-2016-virtual-machine-manager).
+
+####  Total Capacity and Available capacity of NAS arrays is displayed as 0 GB.
+**Description:** Virtual Machine Manager 2016 shows Total Capacity and Available capacity as 0 GB for existing file shares in the NAS arrays.
+
+**Workaround:** None.

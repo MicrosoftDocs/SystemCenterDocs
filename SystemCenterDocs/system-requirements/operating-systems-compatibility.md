@@ -21,7 +21,7 @@ Use this information to evaluate if your server-side operating system environmen
 |System Center  component|Windows Server 2012 Standard, Datacenter|Windows Server 2012 R2 Standard, Datacenter|Windows Server 2016|Windows Server 2016 (Server with Desktop Experience)|Windows Server 2016 Nano Server|
 |----------------------------|-----------------------|---------------------------|--------------------------|------------------------------|--------------------------------------------------------------------------------|
 |**Data Protection Manager** Remote Administration console||&#8226;||&#8226;||
-|**Data Protection Manager** Server||&#8226;|&#8226;|&#8226;||
+|**Data Protection Manager** Server||&#8226;||&#8226;||
 |**Operations Manager** Management Server||&#8226;|&#8226;|&#8226;||
 |**Operations Manager** Data Warehouse||&#8226;||&#8226;||
 |**Operations Manager** Gateway Server||&#8226;||&#8226;||
