@@ -86,9 +86,12 @@ To suppress size calculations and do complete size calculations again, you can u
   1. ***ManageStorageInfo:*** Specifies the kind of operation needed. 
   
     ***StopSizeAutoUpdate:*** Stops the size calculations completely. Both UI and Powershell will not report sizes. 
+    
     ***StartSizeAutoUpdate:*** Resumes the size calculations. Immediately after enabling size calculations, please use “UpdateSizeInfo” (in the following options) to recalculate sizes for all the datasources, until which sizes reported in PowerShell and UI may not be correct. 
-    ***GetSizeAutoUpdateStatus:*** Tells whether size calculations are enabled or disabled.
-    ***UpdateSizeInfo:*** This triggers the calculation of sizes and reports the size consumed by a datasource. This can be a long running operation, so please use it only when needed for scenarios as billing. Note that during this time, backups may fail with vhd mount errors. 
+   
+   ***GetSizeAutoUpdateStatus:*** Tells whether size calculations are enabled or disabled.
+   
+   ***UpdateSizeInfo:*** This triggers the calculation of sizes and reports the size consumed by a datasource. This can be a long running operation, so please use it only when needed for scenarios as billing. Note that during this time, backups may fail with vhd mount errors. 
     
   2. ***UpdateSizeForDS:*** Path to a text file with a list of Datasource IDs for which size needs to be calculated, with a datasourceID on each line. When not passed, size calculation is triggered for all the datasources. 
     This may be used after using “UpdateSizeInfo” in “ManageStorageInfo”.
