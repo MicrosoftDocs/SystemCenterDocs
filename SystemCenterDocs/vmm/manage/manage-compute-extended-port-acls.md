@@ -1,24 +1,23 @@
 ---
 ms.assetid:  2684494b-1779-4df8-9f11-db46a0d96542
-title:  Manage Hyper-V extended port ACLs in VMM
+title:  Manage port ACLs in VMM 2016
 description: Describes how to manage Hyper-V port access control lists (ACLs)
 author:  rayne-wiselman
 ms.author: raynew
 manager:  cfreeman
-ms.date:  02/01/2017
+ms.date:  02/06/2017
 ms.topic:  article
 ms.prod:  system-center-threshold
 ms.technology:  virtual-machine-manager
 ---
 
 
-# Manage Hyper-V extended port ACLs in VMM
+# Manage port ACLs in VMM
 
 >Applies To: System Center 2016 - Virtual Machine Manager
 
 
-In System Center 2016 - Virtual Machine Manager (VMM) , you can centrally configure and manage Hyper-V port access control lists (ACLs) in your Software Defined Networking (SDN) fabric. These ACLs can be configured for both a Network Controller managed fabric and a non-Network Controller managed fabric.
-
+In System Center 2016 - Virtual Machine Manager (VMM), you can centrally configure and manage Hyper-V port access control lists (ACLs) in your Software Defined Networking (SDN) fabric. These ACLs can be configured for both a Network Controller managed fabric and a non-Network Controller managed fabric.
 
 - A port access control list (port ACL) is an object that is attached to various networking primitives to describe the network security.
 - Port ACLs serve as a collection of access control entries or rules. An ACL can contain zero or more ACL rules.
@@ -42,14 +41,13 @@ In System Center 2016 - Virtual Machine Manager (VMM) , you can centrally config
 
 The ACL types are not interchangeable. which means, you can’t apply an ACL with **ManagedByNC** set as **false** to NC managed objects and vice versa.
 
-One key difference between the two kinds of ACL is that while you need to remediate each NIC after applying ACL on non-NC objects, no such step is required in case you are applying Port ACLs on NC managed objects.
+The key difference between these two kinds of ACLs is that while you need to remediate each NIC after applying ACL on non-NC objects, no such step is required in case you are applying the port ACLs on NC managed objects.
 
 Also, note the difference in the priority ranges between NC managed and Non-NC managed ACL rules.
 
-Here's is the priority range:
-- Non-NC managed: 1- 65535
-- NC managed:     1 – 64500
-
+**Here are the priority ranges**:
+- Hyper-V port ACLs (non-NC managed): 1 - 65535
+- SDN port ACLs (NC managed):         1 - 64500
 
 
 ## Supported scenarios

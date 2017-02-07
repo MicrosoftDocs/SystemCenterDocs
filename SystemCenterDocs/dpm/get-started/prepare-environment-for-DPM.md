@@ -43,7 +43,7 @@ DPM uses SQL Server as a database to store backup information for workloads, ser
 
 |Requirement| Details  |
 |-----------|----------|
-|Version|SQL Server 2014 with all service packs and updates - Standard or Enterprise 64-bit (from DPM 2012 R2 with Update Rollup 6 onwards) <br/> SQL Server 2012 with all service packs and updates - Standard or Enterprise 64-bit<br/> SQL Server 2008 R2 with all service packs and updates - Standard or Enterprise 64-bit|
+|Version|SQL Server 2016 - Standard or Enterprise 64-bit (from DPM 2016 R2 with Update Rollup 2 onwards) <br/>SQL Server 2014 with all service packs and updates - Standard or Enterprise 64-bit <br/> SQL Server 2012 SP2 onwards - Standard or Enterprise 64-bit|
 |RAM|4 GB minimum, 8 GB recommended|
 |Disk|1 GB minimum, 3 GB recommended|
 |Required features|Database Engine Services, Reporting Services|
@@ -53,7 +53,6 @@ DPM uses SQL Server as a database to store backup information for workloads, ser
 |Installation|Install SQL Server on a remote server, or on the DPM server. It must be installed and running before you install DPM.|
 |Remote installation|Install in the same domain and time zone as the DPM server.<br/> Installing SQL Server on a domain controller is not supported for DPM.<br/> Read about [Setting up a remote SQL Server instance](../deploy/back-up-sql-server-with-dpm.md).<br/> If you're deploying DPM as an Azure virtual machine you can specify an Azure virtual machine running SQL Server as a remote SQL Server instance. You can't use an on-premises SQL Server. Using an Azure SQL Database isn't currently supported.|
 |Clustered SQL Server|Supported|
-|SQL Server 2016|Not supported|
 
 
 

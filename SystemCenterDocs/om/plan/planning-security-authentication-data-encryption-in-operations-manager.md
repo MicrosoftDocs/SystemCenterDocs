@@ -5,7 +5,7 @@ description: This article provides design guidance explaining how secure authent
 author: mgoedtel
 ms.author: magoedte
 manager: cfreemanwa
-ms.date: 11/15/2016
+ms.date: 02/03/2017
 ms.custom: na
 ms.prod: system-center-threshold
 ms.technology: operations-manager
@@ -21,7 +21,8 @@ System Center 2016 – Operations Manager consists of features such as the ma
 ## Certificate-Based Authentication
 
 When an Operations Manager agent and management server are separated by either an untrusted forest or workgroup boundary, certificate-based authentication will need to be implemented. The following sections provide information about these situations and specific procedures for obtaining and installing certificates from Windows-based certification authorities.
-Setting Up Communication Between Agents and Management Servers Within the Same Trust Boundary
+
+### Setting Up Communication Between Agents and Management Servers Within the Same Trust Boundary
 
 An agent and the management server use Windows authentication to mutually authenticate with each other before the management server accepts data from the agent. The Kerberos version 5 protocol is the default method for providing authentication. In order for Kerberos-based mutual authentication to function, the agents and management server must be installed in an Active Directory domain. If an agent and a management server are in separate domains, full trust must exist between the domains. In this scenario, after mutual authentication has taken place, the data channel between the agent and the management server is encrypted. No user intervention is required for authentication and encryption to take place.
 
