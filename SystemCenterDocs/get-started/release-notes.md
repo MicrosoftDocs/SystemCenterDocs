@@ -681,3 +681,8 @@ The user name or password is incorrect (0x8007052E)
 **Description:** After you onboard an out-of-band HC or S2D SOFS into VMM, the Storage Provider is not added and SOFS properties like Volume, physical disk and tiers are not available in VMM.
 
 **Workaround:** Install [Update Rollup 2](https://support.microsoft.com/en-in/help/3209586/update-rollup-2-for-system-center-2016-virtual-machine-manager).
+
+####  Total Capacity and Available capacity of NAS arrays is displayed as 0 GB.
+**Description:** Virtual Machine Manager 2016 shows Total Capacity and Available capacity as 0 GB for existing file shares in the NAS arrays.
+
+**Workaround:** None.
