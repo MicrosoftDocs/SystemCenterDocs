@@ -92,15 +92,15 @@ You need a private VIP address pool to assign a VIP, and a public VIP, to the SL
 **Create a private VIP**:
 
 1.  Start the **Create logical network Wizard**. Type a **Name** and optional description for this network.
-2. In  **Settings** select **One Connected Network**.  Select **Create a VM network with the same name** box to allow virtual machines to access this logical network directly. Select **Managed by the network controller**.
-3. In **Network Site** add the network site information for your private VIP logical network.
+2. In  **Settings**, select **One Connected Network**.  Select **Create a VM network with the same name to allow virtual machines to access this logical network directly**. Select **Managed by the network controller**.
+3. In **Network Site**, add the network site information for your private VIP logical network.
 4. Review the **Summary** information and complete the wizard.
 
 **Create a public VIP**:
 
 1. Start the **Create logical network Wizard**. Type a **Name** and optional description for this network.
-2. In **Settings**, select **Managed by the network controller** and **Public IP Address Network**.
-3. In **Network Site** add the network site information for your public VIP logical network.
+2. In **Settings**, select **One Connected Network**.  Select **Create a VM network with the same name to allow virtual machines to access this logical network directly**. Select **Managed by the network controller** and **Public IP Address Network**.
+3. In **Network Site**, add the network site information for your public VIP logical network.
 4. Review the **Summary** information and complete the wizard.
 
 
