@@ -33,7 +33,7 @@ The following versions of SQL Server are supported for a new or existing install
 | **Operations Manager** Reporting Server | yes | yes | yes |
 
 > [!NOTE] 
-> System Center 2016 – Operations Manager databases must use the same version of SQL Server, the [SQL Server collation setting](#sql-server-collation-setting) must be one of the following supported types as described in that section, and SQL Server Full Text Search is **required** for both the operational and data warehouse databases.  The Windows Server 2016 installation options (Server Core, Server with Desktop Experience, and Nano Server) supported by Operations Manager databases components, are based on what installation options of Windows Server are supported by SQL Server.
+> System Center 2016 – Operations Manager databases must use the same version of SQL Server, the [SQL Server collation setting](#sql-server-collation-setting) must be one of the following supported types as described in that section, and SQL Server Full Text Search is **required** for both the operational and data warehouse databases.  The Windows Server 2016 installation options (Server Core, Server with Desktop Experience, and Nano Server) supported by Operations Manager database components, are based on what installation options of Windows Server are supported by SQL Server.
 
 > [!NOTE] 
 > System Center 2016 – Operations Manager Reporting cannot be installed in a side-by-side fashion with the System Center Operations Manager 2012 R2 Reporting and **must** be installed in native mode only. (SharePoint integrated mode is not supported.)
