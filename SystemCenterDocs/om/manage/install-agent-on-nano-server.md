@@ -92,7 +92,7 @@ Use the following procedure to install the agent with a PowerShell script.
 4.  Run the following script:
 
     ```
-    .\InstallNanoServerScomAgentOnline.ps1 -ManagementServerFQDN <<Management Server Name FQDN>> -ManagementGroupName <<Management Group Name>> -NanoServerFQDN <<Nano server FQDN on which the agent will be installed>> -BinaryFolder ..\
+    .\InstallNanoServerScomAgentOnline.ps1 -ManagementServerFQDN <Management Server Name FQDN> -ManagementGroupName <Management Group Name> -NanoServerFQDN <FQDN of target Nano Server> -BinaryFolder ..\
     ```
 
     > [!NOTE]
@@ -146,7 +146,7 @@ If you encounter any difficulties with setting up the Operations Manager Agent o
 3.  Run the following script:
 
     ```
-    .\UnInstallNanoServerScomAgentOnline.ps1 -ManagementServerFQDN <<Management Server Name FQDN>> -ManagementGroupName <<Management Group Name>> -NanoServerFQDN <<Nano Server FQDN from which the agent needs to be uninstalled>>
+    .\UnInstallNanoServerScomAgentOnline.ps1 -ManagementServerFQDN <Management Server Name FQDN> -ManagementGroupName <Management Group Name> -NanoServerFQDN <FQDN of target Nano Server>
     ```
 
     > [!NOTE]
@@ -182,7 +182,7 @@ The Nano agent can be updated by one of the following methods:
     Updates to the Nano agent are available for download by following the instructions in the KB articles and updating manually. You can install these downloaded updates on a Nano agent machine using the following Powershell script. 
 
     ```powershell
-      .\UpdateNanoServerScomAgentOnline.ps1 -NanoServerFQDN <FQDN of the Nano server> -BinaryFolder <<Path where the update .cab is already expanded OR path to one or more Nano-agent update .cab files> -IsCabExpanded <$true if BinaryFolder path is to an expanded .cab, $false if it is for a packed .cab file(s)> -RemoveBackup <$true to remove the previous binaries from the agent machine>
+      .\UpdateNanoServerScomAgentOnline.ps1 -NanoServerFQDN <FQDN of target Nano Server> -BinaryFolder <<Path where the update .cab is already expanded OR path to one or more Nano-agent update .cab files> -IsCabExpanded <$true if BinaryFolder path is to an expanded .cab, $false if it is for a packed .cab file(s)> -RemoveBackup <$true to remove the previous binaries from the agent machine>
     ```
 
 ### Uninstalling updates from the Nano Agent
