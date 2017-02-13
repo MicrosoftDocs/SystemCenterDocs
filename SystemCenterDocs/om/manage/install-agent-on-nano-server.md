@@ -173,7 +173,7 @@ The Nano agent can be updated by one of the following methods:
 
 1. Push updates from a management server.  
 
-    Updates are offered and installed automatically from Microsoft Update to an Operations Manager management server. With Operations Manager 2016, the management server updates will also carry the updated files for Nano agent.  
+    Updates are offered and installed automatically from Microsoft Update to an Operations Manager management server. With Operations Manager 2016, the management server updates will also include the updated files for Nano agent.  
     
     After the management server is upgraded, the Nano agents will be placed in a pending management state, as described in the [process manual agent installations](process-manual-agent-installations.md) topic. After approving updates, the agents will receive and apply the update.  Alternatively, you can trigger repair from the Operations console on any Nano agent. This will cause the update to be pushed and installed on the Nano agent from the management server. 
 
@@ -184,6 +184,7 @@ The Nano agent can be updated by one of the following methods:
     ```powershell
       .\UpdateNanoServerScomAgentOnline.ps1 -NanoServerFQDN <FQDN of the Nano server> -BinaryFolder <<Path where the update .cab is already expanded OR path to one or more Nano-agent update .cab files> -IsCabExpanded <$true if BinaryFolder path is to an expanded .cab, $false if it is for a packed .cab file(s)> -RemoveBackup <$true to remove the previous binaries from the agent machine>
     ```
+
 ### Uninstalling updates from the Nano Agent
 
 Directly uninstalling the most recent update from the Nano agent is not supported. Instead, you should uninstall the agent completely and reinstall the agent with the desired set of updates.
