@@ -5,7 +5,7 @@ description: The system requirements article provides general performance and sc
 author: mgoedtel
 ms.author: magoedte
 manager: cfreeman
-ms.date: 01/05/2017
+ms.date: 02/14/2017
 ms.custom: na
 ms.prod: system-center-threshold
 ms.technology: operations-manager
@@ -72,7 +72,7 @@ The following versions of Windows Server operating system are supported for the 
 |:--- |:---|:--- |:--- |
 | **Operations Manager** Management Server | yes | yes | yes |
 | **Operations Manager** Gateway Server | yes | yes | |
-| **Operations Manager** Web Console | yes | yes | |
+| **Operations Manager** Web Console | yes | yes | yes |
 | **Operations Manager** ACS Collector | yes | yes | |
 | **Operations Manager** Operations console | yes | yes | |
 
