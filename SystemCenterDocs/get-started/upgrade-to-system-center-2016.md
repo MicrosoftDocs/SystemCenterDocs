@@ -8,7 +8,6 @@ ms.prod:  system-center-threshold
 keywords:  
 ms.date:  10/18/2016
 title:  Upgrade-to-System-Center-2016
-ms.technology:  system-center-2016
 ms.assetid:  4f8701a5-8d55-4ffd-afee-e6341ec6b7f4
 ---
 
