@@ -8,7 +8,6 @@ ms.prod: system-center-threshold
 keywords:
 ms.date: 10/12/2016
 title:  Features Removed or Deprecated from System Center 2016
-ms.technology:  system-center-2016
 ms.assetid:  b6f468e0-fa52-41f3-8b2d-9e07ede377c9
 ---
 
