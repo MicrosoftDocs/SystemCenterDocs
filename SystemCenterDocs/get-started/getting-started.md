@@ -6,7 +6,6 @@ manager: cfreemanwa
 ms.date: 2016-09-27
 ms.custom: na
 ms.prod: system-center-threshold
-ms.technology: operations-manager
 ms.topic: article
 ---
 
