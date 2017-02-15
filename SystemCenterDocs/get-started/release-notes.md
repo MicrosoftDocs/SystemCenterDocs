@@ -5,7 +5,6 @@ ms.topic:  article
 author:  cfreemanwa
 ms.author: cfreeman
 ms.prod:  system-center-threshold
-ms.technology: system-center-2016
 keywords:
 ms.date: 12/21/2016
 title:  Release Notes for System Center 2016
