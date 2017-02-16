@@ -4,7 +4,7 @@ description: This article highlights the section titles contained within this se
 author: mgoedtel
 ms.author: magoedte
 manager: cfreemanwa
-ms.date: 01/03/2017
+ms.date: 02/16/2017
 ms.custom: na
 ms.prod: system-center-threshold
 ms.technology: operations-manager
@@ -22,7 +22,7 @@ The Visio Add-in for System Center 2016 - Operations Manager combines the streng
 - By role in a logical view of an application
 - By topology for complex distributed applications or a core infrastructure technology such as Active Directory Domain Services
   
-The SharePoint Visio Services Data Provider for System Center 2016 - Operations Manager enables you to take the customized dashboards you create with the Visio Add-in and include them in SharePoint 2010 and 2013 Web sites. These Web-based dashboards are updated and provide access to instant status information through the familiar SharePoint browser-based experience.  
+The SharePoint Visio Services Data Provider for System Center 2016 - Operations Manager enables you to take the customized dashboards you create with the Visio Add-in and include them in SharePoint 2010, 2013, and 2016 Web sites. These Web-based dashboards are updated and provide access to instant status information through the familiar SharePoint browser-based experience.  
 
 The Visio Add-in and SharePoint  Visio Services Data Provider have the following features:  
   
