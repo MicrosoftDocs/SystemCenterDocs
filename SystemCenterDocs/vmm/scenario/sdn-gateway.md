@@ -191,6 +191,15 @@ A S2S GRE connection allows you to access remote virtual machines and services f
 10. You can use the defaults for the remaining settings.
 11. To validate the connection, try to ping the remote endpoint IP address from one of the virtual machines on the VM network.
 
+**Note**:
+
+On the remote peer device, you must specify the GRE VIP address that was assigned to the gateway where your GRE connection is residing.
+To get the GRE VIP, run the following PowerShell command on a network controller VM:
+
+    Get-NetworkControllerVirtualGateway -ConnectionUri <Connection uri of your deployment> | Convertto-Json -Depth 10
+
+In the resource, you will find a NetworkConnection resource with **connectionType** as **GRE**. In this resource, check the **sourceIPAddress** field. This is the VIP used by the GRE tunnel. If you have multiple GRE connections, you can identify the relevant one by checking the **destinationIPaddress** field.
+
 ### Validate an L3 connection
 
 An L3 gateway acts as a bridge between the physical infrastructure in the datacenter and the virtualized infrastructure in the Hyper-V Network Virtualization cloud. To learn more, check these articles: [Windows server gateway as a forwarding gateway](https://technet.microsoft.com/library/dn313101.aspx#bkmk_private) and [RAS gateway high availability](https://technet.microsoft.com/en-us/windows-server-docs/networking/sdn/technologies/network-function-virtualization/ras-gateway-high-availability).
