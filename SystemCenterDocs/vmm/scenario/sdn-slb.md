@@ -5,7 +5,7 @@ description: This article describes how to set up a SDN software load balancer i
 author: rayne-wiselman
 ms.author: raynew
 manager: cfreeman
-ms.date: 02/01/2017
+ms.date: 02/21/2017
 ms.topic: article
 ms.prod: system-center-threshold
 ms.technology: virtual-machine-manager
