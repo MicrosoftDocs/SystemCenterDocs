@@ -376,7 +376,7 @@ You must remove the following NC managed objects prior to removing the network c
 - Software load balancer (if deployed or deployed and configured).
 - Gateway (if deployed or deployed and configured). 
 
-After removing these, you can remove the NC. Use the following sequence for the NC removal procedure:
+After removing the above, you can remove the NC from the SDN fabric. Use the following sequence for the NC removal procedure:
 
 ## Remove the VM networks   
 **Note**:  Ensure that no VMs or NICs are connected to the VM networks that you want to remove.   
@@ -421,6 +421,6 @@ After removing these, you can remove the NC. Use the following sequence for the 
 2. Right-click the NC and click **Remove**. 
 
     This action removes the NC service.  Ensure the job is complete. If the job fails, restart the job after making the required changes that the error message details you.    
-## Next steps
 
+## Next steps
 [Create a software load balancer](sdn-slb.md)
