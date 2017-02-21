@@ -370,35 +370,13 @@ Now you can create tenant virtual machines connected to the tenant virtual netwo
 
 **Important**:
 You must remove the following NC managed objects prior to removing the network controller: 
-- Gateway (if deployed or deployed and configured). 
-- Software load balancer (if deployed or deployed and configured). 
+
 - VM networks (associated with the NC managed logical networks) 
 - Logical networks.
+- Software load balancer (if deployed or deployed and configured).
+- Gateway (if deployed or deployed and configured). 
 
-**Use the following steps to remove the NC**:
-1. Click **Fabric** > **Network Services**, select the NC. 
-2. Right-click the NC and click **Remove**. 
-
-    This action removes the NC service.  Ensure the job is complete. If the job fails, restart the job after making the required changes that the error message details you.
-
-## Remove the gateway  
-1. Click **Fabric** > **Network Services**, select the Gateway manager role.
-2. Under **Services** > **Associated Services**, click **Browse** and then click **Clear Selection**.   
-
-    This action removes the gateway service.  Ensure the job is complete. If the job fails, restart the job after making the required changes that the error message details you.  
-3. To complete the removal of the gateway, remove the gateway pool by using the following PowerShell scripts:
-
-        $nc=get-scnetworkservice | Where {$_.Model -eq "Microsoft Network Controller"}
-        $gwrole=get-scfabricrole -NetworkService $nc | Where {$_.RoleType -eq "Gateway"}
-        Set-SCFabricRole -FabricRole  $gwrole  -GatewayConfiguration $null
-
-## Remove the software load balancer  
-1. Click **Fabric** > **Network Services**, select the software load balancer role.
-2. Under **Services** > **Associated Services**, click **Browse** and then click **Clear Selection**.
-
-    This action removes the software load balancer service.  Ensure the job is complete. If the job fails, restart the job after making the required changes that the error message details you.
-3. Uncheck the pools that are associated with the SLB, except for the private VIP pool that is  associated with the SLB Manager VIP.
-4. To complete the removal of the SLB, force delete the  private VIP pool, corresponding logical network definition and logical networks (“-Force” option).
+After removing these, you can remove the NC. Use the following sequence for the NC removal procedure:
 
 ## Remove the VM networks   
 **Note**:  Ensure that no VMs or NICs are connected to the VM networks that you want to remove.   
@@ -416,6 +394,33 @@ You must remove the following NC managed objects prior to removing the network c
 
     **Note**: Logical networks associated with the SLB cannot be removed from the console. Use force delete to remove these.  
 
+## Remove the software load balancer  
+1. Click **Fabric** > **Network Services**, select the software load balancer role.
+2. Under **Services** > **Associated Services**, click **Browse** and then click **Clear Selection**.
+
+    This action removes the software load balancer service.  Ensure the job is complete. If the job fails, restart the job after making the required changes that the error message details you.
+3. Uncheck the pools that are associated with the SLB, except for the private VIP pool that is  associated with the SLB Manager VIP.
+4. To complete the removal of the SLB, force delete the  private VIP pool, corresponding logical network definition and logical networks (“-Force” option).
+
+## Remove the gateway  
+1. Click **Fabric** > **Network Services**, select the Gateway manager role.
+2. Under **Services** > **Associated Services**, click **Browse** and then click **Clear Selection**.   
+
+    This action removes the gateway service.  Ensure the job is complete. If the job fails, restart the job after making the required changes that the error message details you.  
+3. To complete the removal of the gateway, remove the gateway pool by using the following PowerShell scripts:
+
+        $nc=get-scnetworkservice | Where {$_.Model -eq "Microsoft Network Controller"}
+        $gwrole=get-scfabricrole -NetworkService $nc | Where {$_.RoleType -eq "Gateway"}
+        Set-SCFabricRole -FabricRole  $gwrole  -GatewayConfiguration $null
+
+## Remove the NC
+**Note**: Ensure that SLB/GW and associated logical networks are successfully removed.
+
+**Use the following steps to remove the NC**:
+1. Click **Fabric** > **Network Services**, select the NC. 
+2. Right-click the NC and click **Remove**. 
+
+    This action removes the NC service.  Ensure the job is complete. If the job fails, restart the job after making the required changes that the error message details you.    
 ## Next steps
 
 [Create a software load balancer](sdn-slb.md)
