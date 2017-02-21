@@ -321,5 +321,9 @@ You should be able to see the recently created NAT rules in the VMM wizard.
 
 Once you create the inbound NAT rules, outbound NAT rules are automatically created.
 
+# Remove the software load balancer from the SDN fabric
+
+Use [these steps](sdn-network-controller.md#remove-the-software-load-balancer) to remove the SLB from the SDN fabric.
+
 ## Next steps
 [Create a RAS gateway](sdn-gateway.md)
