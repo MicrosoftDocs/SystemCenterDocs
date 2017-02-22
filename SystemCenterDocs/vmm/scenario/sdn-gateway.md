@@ -346,6 +346,6 @@ RoutingSubnets | Static routes that need to be on the L3 interface on the HNV ga
 EnableBGP | Option to enable BGP. Default is false. |
 TenantASNRoutingSubnets |ASN number of tenant gateway. Only if BGP is enabled. |
 
-# Remove the gateway from the SDN fabric
+## Remove the gateway from the SDN fabric
 
 Use [these steps](sdn-network-controller.md#remove-the-gateway) to remove the gateway from the SDN fabric.

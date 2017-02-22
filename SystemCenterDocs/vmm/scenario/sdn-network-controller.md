@@ -366,7 +366,7 @@ Now you can create tenant virtual machines connected to the tenant virtual netwo
 1. If you want to create a VM from an existing hard disk, [follow these instructions](../manage/manage-vm-vhd-existing.md).
 2. After you deploy at least two VMs connected to the network, you can ping one tenant virtual machine from the other tenant virtual machine to validate that the network controller has been deployed as a network service successfully, and that it can manage the HNV Provider network so that tenant virtual machines can ping each other.
 
-# Remove the SDN network controller from the VMM fabric
+## Remove the SDN network controller from the VMM fabric
 
 **Important**:
 You must remove the following NC managed objects prior to removing the network controller: 
@@ -378,23 +378,23 @@ You must remove the following NC managed objects prior to removing the network c
 
 After removing the above, you can remove the NC from the SDN fabric. Use the following sequence for the NC removal procedure:
 
-## Remove the VM networks   
+### Remove the VM networks   
 **Note**:  Ensure that no VMs or NICs are connected to the VM networks that you want to remove.   
 
 1. Click **VMs and Services** > **VM Networks**, select the VM network to remove. 
 2. Right-click the VM network and click **Delete**. 
 3. Repeat steps 1&2 for each VM network that you need to remove. 
  
-## Remove the logical networks  
+### Remove the logical networks  
 **Note**:  Ensure that no port profiles are associated with the logical networks that you want to remove.  
 
 1. Click **Fabric** > **Logical networks**, select the logical network to remove. 
 2. Right-click the logical network and click **Remove**. 
 3. Repeat steps 1&2 for each logical network that you need to remove. 
 
-    **Note**: Logical networks associated with the SLB cannot be removed from the console. Use force delete to remove these.  
+**Note**: Logical networks associated with the SLB cannot be removed from the console. Use force delete to remove these.  
 
-## Remove the software load balancer  
+### Remove the software load balancer  
 1. Click **Fabric** > **Network Services**, select the software load balancer role.
 2. Under **Services** > **Associated Services**, click **Browse** and then click **Clear Selection**.
 
@@ -402,7 +402,7 @@ After removing the above, you can remove the NC from the SDN fabric. Use the fol
 3. Uncheck the pools that are associated with the SLB, except for the private VIP pool that is  associated with the SLB Manager VIP.
 4. To complete the removal of the SLB, force delete the  private VIP pool, corresponding logical network definition and logical networks (“-Force” option).
 
-## Remove the gateway  
+### Remove the gateway  
 1. Click **Fabric** > **Network Services**, select the Gateway manager role.
 2. Under **Services** > **Associated Services**, click **Browse** and then click **Clear Selection**.   
 
@@ -413,7 +413,7 @@ After removing the above, you can remove the NC from the SDN fabric. Use the fol
         $gwrole=get-scfabricrole -NetworkService $nc | Where {$_.RoleType -eq "Gateway"}
         Set-SCFabricRole -FabricRole  $gwrole  -GatewayConfiguration $null
 
-## Remove the NC
+### Remove the NC
 **Note**: Ensure that SLB/GW and associated logical networks are successfully removed.
 
 **Use the following steps to remove the NC**:
