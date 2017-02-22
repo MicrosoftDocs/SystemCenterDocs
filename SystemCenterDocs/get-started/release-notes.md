@@ -278,9 +278,7 @@ When you apply Update Rollup 1 (GA update), the build numbers are as follows:
 #### Create Exchange Connector wizard might crash
 **Description:** Creating a new Exchange Connector via Service Manager 2016 console throws an exception if the admin clicks on the "Test Connection" button in the "Server Connection" pane of "Create Exchange Connector" wizard.
 
-**Workaround:** To work around this issue, avoid clicking "Test Connection" button in the "Create Exchange Connector" wizard. Instead, directly click the "Next" button, which internally tests the connection and does not crash the wizard.
-
-If the crash has already occurred, you can restart the wizard and use this workaround.
+**Workaround:** Download and install the Microsoft.SystemCenter.ExchangeConnector.dll.exe from [here](https://www.microsoft.com/en-us/download/details.aspx?id=54655).
 
 #### Browsing domain in AD connector wizard raises error
 **Description:** Error is raised on clicking “Browse” while choosing Domain or OU in AD connector wizard of Service Manager 2016 console.
