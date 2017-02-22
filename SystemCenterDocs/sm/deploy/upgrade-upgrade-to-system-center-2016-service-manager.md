@@ -1,17 +1,18 @@
 ---
 title: Upgrade to System Center 2016 - Service Manager
-manager: cfreeman
+manager: carmonm
 ms.custom: na
 ms.prod: system-center-2016
 author: bandersmsft
 ms.author: banders
-ms.date: 11/15/2016
+ms.date: 02/21/2016
 ms.reviewer: na
 ms.suite: na
 ms.technology: service-manager
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 1a2b3464-1ff8-4695-875f-839da201c366
+description: Use this article to upgrade to System Center 2016 - Service Manager.
 ---
 
 # Upgrade to System Center 2016 - Service Manager
@@ -171,6 +172,10 @@ Import-Module .\Microsoft.EnterpriseManagement.Warehouse.Cmdlets.psd1
 
 Use the following procedures to upgrade your Service Manager environment to System Center 2016 - Service Manager. These procedures include steps for upgrading the data warehouse management server, the Service Manager management server, and the Service Manager console.  
 
+### Service Manager Self Service Portal
+
+Refer the instructions mentioned in the [Upgrading the Service Manager Self-Service Portal](upgrade-upgrading-the-self-service-portal.md) article. In some upgrade scenarios, when you upgrade a management server, the Self Service Portal is also upgraded. In these cases, you need to apply a patch before you upgrade.
+
 ### Upgrade steps for custom development
 With the System Center 2016 - Service Manager release, the product has moved to support .Net 4.5.1. The tool set to support this movement to .Net 4.5.1 required to break a few dependencies and has led to the movement of classes across the assemblies. Hence, the upgrade to Service Manager 2016 may break the custom solutions made in house or by 3rd party (non-Microsoft). Please refer the [steps to upgrade your custom solutions](https://blogs.technet.microsoft.com/servicemanager/2016/08/03/scsm-2016-upgrade-steps-for-custom-development/), to avoid getting into this problem.
 
@@ -250,7 +255,3 @@ With the System Center 2016 - Service Manager release, the product has moved to 
 7.  On the **Configuration Summary** page, read the information that is provided, and, if it is accurate, click **Install**.  
 
 8.  On **The upgrade was completed successfully** page, click **Close**.
-
-### Service Manager Self Service Portal
-
-Refer the instructions mentioned in article [Upgrading the Service Manager Self-Service Portal](upgrade-upgrading-the-self-service-portal.md).

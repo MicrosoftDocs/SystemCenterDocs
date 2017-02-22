@@ -5,7 +5,7 @@ description: This article describes how to Set up an SDN RAS gateway in the VMM 
 author: rayne-wiselman
 ms.author: raynew
 manager: cfreeman
-ms.date: 01/31/2017
+ms.date: 02/17/2017
 ms.topic: article
 ms.prod: system-center-threshold
 ms.technology: virtual-machine-manager
@@ -190,6 +190,15 @@ A S2S GRE connection allows you to access remote virtual machines and services f
 9. In **Routes**, add all the remote subnets that you want to connect to. If you selected **Enable Border Gateway Protocol (BGP)** in **Connectivity**, you can leave this screen blank and instead complete your ASN, peer BGP IP and ASN fields on the **Border Gateway Protocol** tab.
 10. You can use the defaults for the remaining settings.
 11. To validate the connection, try to ping the remote endpoint IP address from one of the virtual machines on the VM network.
+
+**Note**:
+
+On the remote peer device, you must specify the GRE VIP address that was assigned to the gateway where your GRE connection is residing.
+To get the GRE VIP, run the following PowerShell command on a network controller VM:
+
+    Get-NetworkControllerVirtualGateway -ConnectionUri <Connection uri of your deployment> | Convertto-Json -Depth 10
+
+In the resource, you will find a NetworkConnection resource with **connectionType** as **GRE**. In this resource, check the **sourceIPAddress** field. This is the VIP used by the GRE tunnel. If you have multiple GRE connections, you can identify the relevant one by checking the **destinationIPaddress** field.
 
 ### Validate an L3 connection
 
