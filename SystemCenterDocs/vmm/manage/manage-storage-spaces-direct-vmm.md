@@ -101,6 +101,9 @@ If you already have a Storage Spaces Direct cluster, manage it in VMM as follows
 2. In the Add Resource Wizard, select **Windows-based File Server**
 3. Specify the cluster name, provide a Run As account with cluster access, and if required check that the cluster is in another domain.
 
+> [!NOTE]
+> On deleting an existing storage provider (if required),VMM will lose the information about pool classification once provider is removed hence user needs to set pool classification again after adding the provider back. The CSV classification will be intact and user will be able to deploy VM from cloud with VM templates.
+
 ## Create storage resources
 
 You need to create a pool, virtual disks, and CSVs in the Storage Spaces Direct cluster.
