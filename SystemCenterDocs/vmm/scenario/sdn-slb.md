@@ -5,7 +5,7 @@ description: This article describes how to set up a SDN software load balancer i
 author: rayne-wiselman
 ms.author: raynew
 manager: cfreeman
-ms.date: 02/01/2017
+ms.date: 02/21/2017
 ms.topic: article
 ms.prod: system-center-threshold
 ms.technology: virtual-machine-manager
@@ -320,6 +320,10 @@ You should be able to see the recently created NAT rules in the VMM wizard.
 #### Outbound NAT rules
 
 Once you create the inbound NAT rules, outbound NAT rules are automatically created.
+
+## Remove the software load balancer from the SDN fabric
+
+Use [these steps](sdn-network-controller.md#remove-the-software-load-balancer) to remove the SLB from the SDN fabric.
 
 ## Next steps
 [Create a RAS gateway](sdn-gateway.md)
