@@ -5,7 +5,7 @@ description: This article describes how to Set up an SDN RAS gateway in the VMM 
 author: rayne-wiselman
 ms.author: raynew
 manager: cfreeman
-ms.date: 02/17/2017
+ms.date: 02/21/2017
 ms.topic: article
 ms.prod: system-center-threshold
 ms.technology: virtual-machine-manager
@@ -345,3 +345,7 @@ GatewaySubnet | Subnet to be used for routing between HVN gateway and tenant vir
 RoutingSubnets | Static routes that need to be on the L3 interface on the HNV gateway. |
 EnableBGP | Option to enable BGP. Default is false. |
 TenantASNRoutingSubnets |ASN number of tenant gateway. Only if BGP is enabled. |
+
+## Remove the gateway from the SDN fabric
+
+Use [these steps](sdn-network-controller.md#remove-the-gateway) to remove the gateway from the SDN fabric.
