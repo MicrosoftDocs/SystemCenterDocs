@@ -9,6 +9,7 @@ ms.custom: na
 ms.prod: system-center-threshold
 ms.technology: operations-manager
 ms.topic: article
+ms.assetid: d143420f-3e65-43f1-a710-0b0e983b57f5
 ---
 
 # How to configure and use Active Directory Integration for agent assignment
@@ -144,9 +145,16 @@ Changing the agent assignment rule can result in computers no longer being assig
     > [!NOTE]  
     > It can take up to one hour for the agent assignment setting to propagate in AD DS. 
 
-When complete, the following rule is created in the management group and targets the **AD Assignment Resource Pool** class.<br><br> ![AD Integration Agent assignment rule](../media/om2016-adintegration-rules.png)<br> This rule includes the agent assignment configuration information that you specified in the **Agent Assignment and Failover Wizard**.
+When complete, the following rule is created in the management group and targets the **AD Assignment Resource Pool** class.<br><br> ![AD Integration agent assignment rule](../media/om2016-adintegration-rules.png)<br> This rule includes the agent assignment configuration information that you specified in the **Agent Assignment and Failover Wizard**, such as the LDAP query.
 
-To confirm if the management group successfully published its information in Active Directory, search for Event ID 11470 from source Health Service Modules in the Operations Manager event log on the management server the agent assignment rule was defined on.  In the description it should state that it successfully added all the computers that were the added to the agent assignment rule.    
+To confirm if the management group successfully published its information in Active Directory, search for Event ID 11470 from source Health Service Modules in the Operations Manager event log on the management server the agent assignment rule was defined on.  In the description it should state that it successfully added all the computers that were the added to the agent assignment rule.<br><br> ![AD Integration agent assignment success event](../media/om2016-adintegration-successevent.png).<br>
+
+In Active Directory, under the OperationsManager\<ManagementGroupName> container, you should see the service connection point (SCP) objects created similar to the following example.<br><br> ![AD Integration agent assignment AD objects](../media/om2016-adintegration-scp.png).<br>  
+
+The rule also creates two security groups with the name of the management server NetBIOS name, the first one with the suffix “_PrimarySG<random number>” and the second one “_SecondarySG<random number>”.  In this example, there are two management servers deployed in the management group and the primary security group **ComputerB_Primary_SG_24901** membership includes computers which matched the include rule defined in your agent assignment rule and the security group **ComputerA_Secondary_SG_38838** membership includes the primary group  **ComputerB_Primary_SG-29401** security group containing the machine account of agents that would failover to this secondary management server in the event the primary management server is unresponsive.  The SCP name is the management server NetBIOS name with the suffix “_SCP”.
+  
+> [!NOTE] 
+> In this example, it is only showing objects from a single management group and not other management groups that may exist and also configured with AD integration.      
 
 
 ## Manual agent deployment with Active Directory Integration Setting
