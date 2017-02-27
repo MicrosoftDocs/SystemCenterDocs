@@ -4,7 +4,7 @@ description: This article describes how to configure and use Active Directory in
 author: mgoedtel
 ms.author: magoedte
 manager: cfreemanwa
-ms.date: 02/23/2017
+ms.date: 02/27/2017
 ms.custom: na
 ms.prod: system-center-threshold
 ms.technology: operations-manager
@@ -60,7 +60,7 @@ Use the following procedure to create the AD DS container.
   
 2.  At the prompt, for example, type the following:  
   
-     `"C:\Program Files\Microsoft System Center 2016\Operations Manager\Server\MOMADAdmin.exe" "Message Ops" MessageDom\MessageMOMAdmins MessageDom\ MessageAdAcct MessageDom**` 
+     `"C:\Program Files\Microsoft System Center 2016\Operations Manager\Server\MOMADAdmin.exe" "Message Ops" MessageDom\MessageOMAdmins MessageDom\MessageADIntAcct MessageDom**` 
   
 3.  The preceding command-line example will:  
   
@@ -68,7 +68,7 @@ Use the following procedure to create the AD DS container.
   
       2.  Create the **"Message Ops"** Management Group AD DS container in the AD DS schema root of the **MessageDom** domain. To create the same Management Group AD DS container in additional domains, run MOMADAdmin.exe for each domain.  
   
-      3.  Add the **MessageDom\MessageAdAcct** domain user account to the **MessageDom\MessageMOMAdmin** AD DS security group and assign the security AD DS group the rights necessary to manage the AD DS container.  
+      3.  Add the **MessageDom\MessageADIntAcct** domain user account to the **MessageDom\MessageOMAdmins** AD DS security group and assign the security AD DS group the rights necessary to manage the AD DS container.  
 
 ## How to Use Active Directory Domain Services to assign computers to management servers
 The Operations Manager Agent Assignment and Failover Wizard creates an agent assignment rule that uses Active Directory Domain Services (AD DS) to assign computers to a management group and assign the computers' primary management server and secondary management servers. Use the following procedures to start and use the wizard.  
@@ -142,7 +142,11 @@ Changing the agent assignment rule can result in computers no longer being assig
 11.  In the **Management Server Properties** dialog box, click **OK**.  
   
     > [!NOTE]  
-    > It can take up to one hour for the agent assignment setting to propagate in AD DS.  
+    > It can take up to one hour for the agent assignment setting to propagate in AD DS. 
+
+When complete, the following rule is created in the management group and targets the **AD Assignment Resource Pool** class.<br><br> ![AD Integration Agent assignment rule](../media/om2016-adintegration-rules.png)<br> This rule includes the agent assignment configuration information that you specified in the **Agent Assignment and Failover Wizard**.
+
+To confirm if the management group successfully published its information in Active Directory, search for Event ID 11470 from source Health Service Modules in the Operations Manager event log on the management server the agent assignment rule was defined on.  In the description it should state that it successfully added all the computers that were the added to the agent assignment rule.    
 
 
 ## Manual agent deployment with Active Directory Integration Setting
