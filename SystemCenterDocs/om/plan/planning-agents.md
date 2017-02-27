@@ -5,14 +5,14 @@ description: This article provides design guidance for agent deployment on Windo
 author: mgoedtel
 ms.author: magoedte
 manager: cfreemanwa
-ms.date: 11/15/2016
+ms.date: 02/23/2017
 ms.custom: na
 ms.prod: system-center-threshold
 ms.technology: operations-manager
 ms.topic: article
 ---
 
-# Operations Manager Agents
+# Operations Manager agents
 
 >Applies To: System Center 2016 - Operations Manager
 
@@ -121,7 +121,7 @@ By elevation, an unprivileged account can assume the identity of a privileged ac
 
 ## Active Directory agent assignment
 
-System Center 2016 – Operations Manager allows you to take advantage of your investment in Active Directory Domain Services (AD DS) by enabling you to use it to assign agent-managed computers to management groups.  This feature is commonly used in conjunction with the agent deployed as part of a server deployment build process.  When the computer comes online for the first time, the Operations Manager agent queries Active Directory for its management server assignment and automatically starts monitoring the computer.
+System Center 2016 – Operations Manager allows you to take advantage of your investment in Active Directory Domain Services (AD DS) by enabling you to use it to assign agent-managed computers to management groups.  This feature is commonly used in conjunction with the agent deployed as part of a server deployment build process.  When the computer comes online for the first time, the Operations Manager agent queries Active Directory for its primary and failover management server assignment and automatically starts monitoring the computer.
 
 To assign computers to management groups by using AD DS:
 
@@ -131,6 +131,19 @@ To assign computers to management groups by using AD DS:
 > [!NOTE] 
 > An agent that determines it is installed on a domain controller will not query Active  Directory for configuration information.  This is for security reasons.  Active Directory Integration is disabled by default on domain controllers because the agent runs under the Local System account.  The Local System account on a domain controller has Domain Administrator rights; therefore, it will detect all Management Server Service Connection Points that are registered in Active Directory, regardless of the domain controller’s security group membership.  As a result, the agent will try to connect to all management servers in all management groups.  The results can be unpredictable, thus presenting a security risk.
 
-Agent assignment is done by using a Service Connection Point (SCP), which is an Active Directory object for publishing information that client applications can use to bind to a service. The SCP will contain connection information to the management server, including the server’s FQDN and port number. Operations Manager agents can automatically discover management servers by querying for SCPs.
+Agent assignment is accomplished by using a Service Connection Point (SCP), which is an Active Directory object for publishing information that client applications can use to bind to a service. This is created by a domain administrator running the **MOMADAdmin.exe** command-line tool to create an AD DS container for an Operations Manager management group in the domains of the computers it will manage. The AD DS security group that is specified when running **MOMADAdmin.exe** is granted Read and Delete Child permissions to the container.  The SCP will contain connection information to the management server, including the server’s FQDN and port number. Operations Manager agents can automatically discover management servers by querying for SCPs.  Inheritance is not disabled, and because an agent can read the integration information registered in AD, if you force inheritance for the  Everyone group to read all objects at the root level in Active Directory, this will severely affect and essentially interrupt AD Integration functionality.  If you explicitly force inheritance throughout the entire directory by granting the Everyone group read  permissions, you must block this inheritance at the top-level AD Integration container, named **OperationsManager**, and all child objects.  If you fail to do this, AD Integration will not work as designed and you will not have reliable and consistent primary and failover assignment for agents deployed.  Additionally, if you happen to have more than one management group, all agents in both management groups will be multi-homed as well.  
 
 This feature works well for controlling agent assignment in a distributed management group deployment, to prevent agents from reporting to management servers that are dedicated to resource pools or management servers in a secondary data center in a warm-standby configuration to prevent agent failover during normal operation.  
+
+Configuration of agent assignment is managed by an Operations Manager administrator using the Agent Assignment and Failover Wizard to assign computers to a primary management server and secondary management server. 
+
+>[!NOTE]
+>Active Directory Integration is disabled for agents that were installed from the Operations console. By default, Active Directory Integration is enabled for agents installed manually using MOMAgent.msi.
+
+## Next steps
+
+* To understand how to install the Windows agent from the Operations console, see [Install Agent on Windows Using the Discovery Wizard](../manage/install-agent-on-windows-using-the-discovery-wizard.md) or to install the agent from the command line, see [Install Windows Agent Manually Using MOMAgent.msi](../manage/install-windows-agent-manually-using-momagent.md).  
+
+* To understand how to install the Linux and UNIX from the Operations console, see [Install agent on UNIX and Linux using the Discovery Wizard](../manage/install-agent-on-unix-and-linux-using-the-discovery-wizard.md).   
+
+* Review [How to configure and use Active Directory Integration for agent assignment](../manage/how-to-configure-and-use-ad-integration-for-agent-assignment.md) to learn how to create the container in Active Directory, configure agent failover assignment, and manage the configuration.   
