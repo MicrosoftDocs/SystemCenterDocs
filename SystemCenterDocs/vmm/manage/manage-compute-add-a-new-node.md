@@ -18,8 +18,8 @@ ms.technology:  virtual-machine-manager
 ## Before you start
 
 Ensure the following:
-- A Windows Server 2016 virtual hard disk (with latest updates installed) is available in the VMM library in VHD or VHDX format. Ensure you set the **Operating system** and **Virtualization platform values** for this VHD/VHDX. 
--  Update the PCP VHD path to the VHD/VHDX that you added to the VMM library.  To do this, edit the **Properties** of the PCP under **Library** > **Profiles** > **Physical Computer Profiles**. 
+- A Windows Server 2016 virtual hard disk (with latest updates installed) is available in the VMM library in VHD or VHDX format. Ensure you set the **Operating system** and **Virtualization platform values** for this VHD/VHDX.
+-  Update the PCP VHD path to the VHD/VHDX that is available in the VMM library.  To do this, edit the **Properties** of the PCP under **Library** > **Profiles** > **Physical Computer Profiles**. 
 - PXE server has the latest WINPE image.  
 To update the PE image, select the PXE server under **Fabric** > **Infrastructure** and click **Update WinPE image**. Ensure the job is complete.
 
