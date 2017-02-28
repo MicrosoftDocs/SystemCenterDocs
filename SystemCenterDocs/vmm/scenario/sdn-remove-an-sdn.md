@@ -2,7 +2,7 @@
 ms.assetid: 2e2323c5-6ec6-4fd2-bec5-70537d328fbe
 title: Remove a Software Defined Network (SDN) from VMM 2016
 description: This article describes how to remove SDN from the VMM fabric.
-author: Jyothirmai Suri
+author: Jyothi Suri
 ms.author: v-jysur
 manager: riyazp
 ms.date: 02/28/2017

@@ -2,7 +2,7 @@
 ms.assetid: 58a686bd-2b59-4c73-ab41-6e3c8fc200c0
 title: Deploy and manager update rollups in VMM 2016
 description: This article provides information about how to deploy and manage the update rollups in System Center 2016 - VMM.
-author: Jyothirmai Suri
+author: Jyothi Suri
 ms.author: v-jysur
 manager: riyazp
 ms.date: 02/28/2017
