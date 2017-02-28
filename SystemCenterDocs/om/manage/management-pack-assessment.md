@@ -5,7 +5,7 @@ description: This article describes how to use the updates and recommendations f
 author: mgoedtel
 ms.author: magoedte
 manager: cfreemanwa
-ms.date: 11/15/2016
+ms.date: 02/22/2017
 ms.custom: na
 ms.prod: system-center-threshold
 ms.technology: operations-manager
@@ -49,6 +49,11 @@ The following procedure describes how to use the Get MP option to download a man
 2. In the Operations console, click **Administration**.
 
 3. Click on **Updates and Recommendations**  under **Management Packs**.
+
+    >[!NOTE]
+    >When accessing the Updates and Recommendations view, you may receive the following message, "An error occurred while displaying the Updates and Recommendations View. This might be because the database query has encountered an issue or the online catalog is down."  This can be caused by having a duplicate management pack with the same name.  To help troubleshoot the issue, run the following command in the Operations Manager  Shell and review the output file to identify the duplicate MP:
+    >`Get-SCManagementPack | Sort -property Name | Format-Table Name,Version,Sealed -AutoSize | Out-File "c:\temp\mplist_name.txt"`
+    > 
 
 4. If a management pack is recommended for either an update or a new installation, select it and click **Get MP** from the **Actions** pane.
 

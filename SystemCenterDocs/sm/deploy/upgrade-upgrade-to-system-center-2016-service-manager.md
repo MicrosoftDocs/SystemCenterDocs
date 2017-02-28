@@ -5,7 +5,7 @@ ms.custom: na
 ms.prod: system-center-2016
 author: bandersmsft
 ms.author: banders
-ms.date: 02/21/2016
+ms.date: 02/23/2016
 ms.reviewer: na
 ms.suite: na
 ms.technology: service-manager
@@ -37,19 +37,17 @@ You cannot start an upgrade to System Center 2016 - Service Manager if any data 
 ## Prepare Service Manager 2012 R2 for Upgrade
 This topic describes how to prepare your System Center 2012 R2 - Service Manager environment for an upgrade. To do this, perform the following procedures for upgrading the data warehouse management server:  
 
-1.  List the data warehouse jobs that are running.  
+1.  List the data warehouse jobs that are running and disable them.
 
-2.  Disable the data warehouse job schedules.  
-
-3.  Confirm that the data warehouse jobs have stopped running.  
+2.  Confirm that the data warehouse jobs have stopped running.  
 
  When the data warehouse jobs have completed, start the upgrade of the data warehouse management server.  
 
  After the data warehouse has been upgraded, perform the following procedures on the first Service Manager management server:  
 
-1.  Wait 10 minutes, and then start the upgrade of the Service Manager management server.  
+- Wait 10 minutes, and then start the upgrade of the Service Manager management server.  
 
-### To list the data warehouse jobs by using Windows PowerShell cmdlets  
+### To list the data warehouse jobs by using Windows PowerShell cmdlets and disable them  
 
 1.  On the computer that hosts the data warehouse management server, click **Start**, click **All Programs**, click **Microsoft System Center 2012 R2**, and then click **Service Manager Shell**.  
 
@@ -74,41 +72,8 @@ Import-Module .\Microsoft.EnterpriseManagement.Warehouse.Cmdlets.psd1
     get-scdwjob | ? {$_.Name -match 'Extract_'}  | foreach {Disable-SCDWJobSchedule -JobName $_.Name}  
     ```  
 
-3.  A list of the data warehouse jobs appears. Use this list in the next procedure, "To disable data warehouse job schedules by using Windows PowerShell cmdlets."  
+3.  A list of the data warehouse jobs appears.
 
-### To disable data warehouse job schedules by using Windows PowerShell cmdlets  
-
-1.  Type the following commands, and then press ENTER after each command:  
-
-    ```  
-    Disable-SCDWJobSchedule -JobName Extract_<data warehouse management group name>  
-    ```  
-
-    ```  
-    Disable-SCDWJobSchedule -JobName Extract_<Service Manager management group name>  
-    ```  
-
-    ```  
-    Disable-SCDWJobSchedule -JobName Transform.Common  
-    ```  
-
-    ```  
-    Disable-SCDWJobSchedule -JobName Load.Common  
-    ```  
-
-    ```  
-    Disable-SCDWJobSchedule -JobName DWMaintenance  
-    ```  
-
-    ```  
-    Disable-SCDWJobSchedule -JobName MPSyncJob  
-    ```  
-
-    ```  
-    Start-SCDWJob -JobName MPSyncJob  
-    ```  
-
-     The last command to start the **MPSyncJob** will enable the extraction, transformation, and load \(ETL\) jobs to run to completion. After that, because all the schedules have been disabled, the jobs will stop. To close the Windows&nbsp;PowerShell window, type **exit**.  
 
 ### To confirm that the data warehouse jobs have stopped running  
 
