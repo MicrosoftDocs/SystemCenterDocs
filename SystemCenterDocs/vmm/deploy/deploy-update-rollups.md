@@ -1,0 +1,124 @@
+---
+ms.assetid: 58a686bd-2b59-4c73-ab41-6e3c8fc200c0
+title: Deploy update rollups in VMM 2016 manually
+description: This article provides information about how to deploy and manage the update rollups in System Center 2016 - VMM.
+author: Jyothirmai Suri
+ms.author: v-jysur
+manager: riyazp
+ms.date: 02/22/2017
+ms.topic: article
+ms.prod:  system-center-threshold
+ms.technology: virtual-machine-manager
+---
+
+# Deploy and manage update rollups in  VMM
+
+>Applies To: System Center 2016 - Virtual Machine Manager
+
+This article provides information about how to install, verify and remove update rollups for Virtual Machine Manager (VMM) 2016.
+
+## Install an update rollup
+To manually install an update rollup package, run the following command from an elevated command prompt: 
+ 
+msiexec.exe/update **< package_name >**
+ 
+**Note**: In the **< package_name >** placeholder, enter the actual package name.
+ 
+For example, to install the Update Rollup 2 for System Center 2016 Virtual Machine Manager server (KB3209586), run the following command:
+ 
+**msiexec.exe/update kb3209586_VMMserver_amd64.msp**
+ 
+## Check the installation of an update rollup
+ 
+Use the following procedure to check if an update rollup is successfully installed:
+ 
+1. Under **Control Panel** > **Programs and Features** > View **Installed updates**. Verify that an update entry was created after the update rollup was installed.
+ 
+    For example, the Update Rollup 2 server update was released as update 3209586. You should be able to see this detail if the update rollup was successfully installed.
+ 
+2. Verify that the binary's version has the correct build number.  See the following website to check the build number for a specific update rollup:
+
+    [List of Build Numbers for System Center Virtual Machine Manager (VMM)](https://social.technet.microsoft.com/wiki/contents/articles/15361.system-center-virtual-machine-manager-list-of-build-numbers.aspx)
+ 
+**Note**:  Not all the binaries will have the current update rollup build number. However, if you do not have the binaries listed with the relevant update rollup build number, it is likely that the update rollup did not install successfully.
+
+## Remove an update rollup
+
+**Important**: 
+ 
+* It is not recommended that you remove the update rollups.  
+* It is recommended that you back up your VMM database before you attempt to remove an update rollup.
+* When you remove, the VMM binaries roll back to their earlier versions. However, the VMM database does not roll back.
+* If you have one or more hotfixes installed on the server, make sure that you replace the hotfix binary with the official update rollup binary, before you start the removal. 
+ 
+### Back up the VMM database
+1. In the VMM console, click **Settings**.
+2. On the Home tab, click **Backup**.
+3. In the VMM backup page, in the **Path** text box, specify the location for the backup file , and then click **OK**.
+ 
+**Note**: Ensure the job is complete. Else, follow the error message details, and redo the backup action.  
+ 
+### Remove an update rollup by using the control panel
+1. Go to Control Panel > Programs > Programs and Features.  
+For quick access, type **appwiz.cpl** in **Run** it opens the **Programs and Features** in Control Panel.
+2. Click **View installed updates**.
+3. Find the update that you want to remove, right-click the update, and then select Uninstall. 
+ 
+### Remove an update rollup by using the command line
+**Note**:  To remove an update by using the command line, you must have the following Two globally unique identifiers (GUIDs) available:
+ 
+* RTM product GUID
+* Patch GUID
+ 
+ 
+**RTM Product GUIDs** 
+ 
+* SCVMM Server : {EBC28D9B-9565-46F3-A248-E26F07F81A98}
+* SCVMM Admin Console amd64 : {B703D43A-ABF6-4A36-84CC-00D77FF8570B}
+* SCVMM Admin Console i386 : {F5D46892-E1BD-4E0A-BD6E-DAA1900BA786}
+* SCVMM Guest Agent amd64 : {3E71E1FB-AF93-4110-A8EB-973132A3B16B}
+* SCVMM Guest Agent i386 : {57D2C983-23BF-4840-B784-BDDAC2DC932B}
+ 
+** Patch GUID**
+ 
+To find the patch GUIDE, right-click the update, and then select **Properties**. On the **Details** tab, select **Revision number**. This is the patch GUID.
+ 
+When you know the RTM product GUID and the patch GUID, run the following command to remove the update:
+ 
+**Msiexec /I {<RTM Product GUID>} MSIPATCHREMOVE={<Patch GUID>} /qb;**
+ 
+**Note**:  In some cases, System Center VMM media may be required for uninstallation.  
+
+### Check the removal of an update rollup
+
+**Use the following procedure to check if the update rollup was successfully removed**:
+ 
+1. Check whether the update was removed from **Programs and Features**. 
+ 
+2. Verify that binaries were reverted successfully. To do this, go to the VMM installation directory, and verify that there is no binary that has the build version of the update rollup that you uninstalled. 
+ 
+**Note**:  When you uninstall the Server and Console updates from the VMM Server, the order of uninstallation is not important.
+ 
+### Restore a database backup in VMM 
+**Note**:  You can create a database backup at any time. But the database should be restored only if you uninstalled the latest update rollup on the server. If you uninstalled an older update rollup, you do not have to restore the Virtual Machine Manager database.
+
+1. On the Virtual Machine Manager Management server, open an elevated command prompt, and then locate the Virtual Machine Manager installation location>\bin folder.
+2. Run **SCVIRTUAL MACHINE MANAGERRecover.exe** by using the following syntax:
+**SCVIRTUAL MACHINE MANAGERRecover [-Path <location>] [-Confirm]**
+ 
+The **< location>** placeholder represents the folder or share location of the backup file that you created. You must include the name of the backup file (this includes the .bak extension) when you specify the location.
+ 
+**Important**
+
+This section applies only if you add a host or a library server after you create a database backup and before you uninstall an update rollup.
+
+After the Virtual Machine Manager database is recovered, you must take the following actions:
+ 
+- Remove any hosts that were removed from Virtual Machine Manager since the last backup.
+- If a host was removed since the last backup, the host will have a status of Needs Attention in the Virtual Machine Manager console. Any virtual servers on that host will have a status of Host Not Responding.
+- Remove the virtual machines that were removed from the VMM since the last back up. 
+If a host has a virtual machine that was removed since the last backup, the virtual machine will have a status of Missing in the Virtual Machine Manager console.
+- Add any hosts that were added to the VMM since the last backup.
+- If you restored the VMM database to a different computer, you must re-associate the hosts that have a status of Access Denied in the Virtual Machine Manager console.
+A computer is considered different if it has a different security identifier (SID). For example, if you reinstall the operating system on the computer, the computer will have a different SID, even if you use the same computer name.
+- You must follow these steps for any other fabric resource (for example, storage providers, library servers, and so on) that you add after you create a database backup.

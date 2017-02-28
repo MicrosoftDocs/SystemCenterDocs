@@ -348,4 +348,4 @@ TenantASNRoutingSubnets |ASN number of tenant gateway. Only if BGP is enabled. |
 
 ## Remove the gateway from the SDN fabric
 
-Use [these steps](sdn-network-controller.md#remove-the-gateway) to remove the gateway from the SDN fabric.
+Use [these steps](sdn-remove-an-sdn.md#remove-the-gateway) to remove the gateway from the SDN fabric.
