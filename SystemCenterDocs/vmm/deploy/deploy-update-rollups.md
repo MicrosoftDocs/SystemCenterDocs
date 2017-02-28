@@ -23,7 +23,7 @@ Update packages for VMM are available from **Microsoft Updates** or by manual do
 
 To obtain and install an update package from Microsoft Updates, follow these steps on a computer that has a Virtual Machine Manager component installed and latest updates are yet to be installed:
 
-1. Under **Settings** > **Update&Security**, click **Windows Update**.
+1. Under **Settings** > **Update & Security**, click **Windows Update**.
 2. In the **Windows Update** window, click **Check Online for updates from Microsoft Update**.
 4. Click **Important updates are available**.
 5. Select the update rollup package and then click **OK**.
@@ -48,13 +48,13 @@ For example, to install the Update Rollup 2 for System Center 2016 Virtual Machi
  
 Use the following procedure to check if an update rollup is successfully installed:
  
-1. Under **Control Panel** > **Programs and Features** > View **Installed updates**. Verify that an update entry was created after the update rollup was installed.
+1. Under **Control Panel** > **Programs and Features** > **View Installed updates**. Verify that an update entry was created after the update rollup was installed.
  
     For example, the Update Rollup 2 server update was released as update 3209586. You should be able to see this detail if the update rollup was successfully installed.
  
 2. Verify that the binary's version has the correct build number.  See the following website to check the build number for a specific update rollup:
 
-    [List of Build Numbers for System Center Virtual Machine Manager (VMM)](https://social.technet.microsoft.com/wiki/contents/articles/15361.system-center-virtual-machine-manager-list-of-build-numbers.aspx)
+    [List of build numbers for System Center Virtual Machine Manager (VMM)](https://social.technet.microsoft.com/wiki/contents/articles/15361.system-center-virtual-machine-manager-list-of-build-numbers.aspx)
  
 **Note**:  Not all the binaries will have the current update rollup build number. However, if you do not have the binaries listed with the relevant update rollup build number, it is likely that the update rollup did not install successfully.
 
@@ -89,19 +89,19 @@ For quick access, type **appwiz.cpl** in **Run** it opens the **Programs and Fea
  
 **RTM Product GUIDs** 
  
-* SCVMM Server : {EBC28D9B-9565-46F3-A248-E26F07F81A98}
-* SCVMM Admin Console amd64 : {B703D43A-ABF6-4A36-84CC-00D77FF8570B}
-* SCVMM Admin Console i386 : {F5D46892-E1BD-4E0A-BD6E-DAA1900BA786}
-* SCVMM Guest Agent amd64 : {3E71E1FB-AF93-4110-A8EB-973132A3B16B}
-* SCVMM Guest Agent i386 : {57D2C983-23BF-4840-B784-BDDAC2DC932B}
+* SCVMM Server: {EBC28D9B-9565-46F3-A248-E26F07F81A98}
+* SCVMM Admin Console amd64: {B703D43A-ABF6-4A36-84CC-00D77FF8570B}
+* SCVMM Admin Console i386: {F5D46892-E1BD-4E0A-BD6E-DAA1900BA786}
+* SCVMM Guest Agent amd64: {3E71E1FB-AF93-4110-A8EB-973132A3B16B}
+* SCVMM Guest Agent i386: {57D2C983-23BF-4840-B784-BDDAC2DC932B}
  
-** Patch GUID**
+**Patch GUID**
  
 To find the patch GUID, right-click the update, select **Properties**. On the **Details** tab, and then select **Revision number**. This is the patch GUID.
  
 When you know the RTM product GUID and the patch GUID, run the following command to remove the update:
  
-**Msiexec /I {<RTM Product GUID>} MSIPATCHREMOVE={<Patch GUID>} /qb;**
+**Msiexec /I {< RTM Product GUID >} MSIPATCHREMOVE={< Patch GUID >}**
  
 ### Check the removal of an update rollup
 
@@ -111,7 +111,7 @@ Use the following procedure to check if the update rollup was successfully remov
  
 2. Verify that binaries were reverted successfully. To do this, go to the VMM installation directory, and verify that there is no binary that has the build version of the update rollup that you uninstalled. 
  
-**Note**:  When you uninstall the Server and Console updates from the VMM Server, the order of uninstallation is not important.
+**Note**:  When you uninstall the server and console updates from the VMM server, the order of uninstallation is not important.
  
 ### Restore a database backup in VMM 
 **Note**:  You can create a database backup at any time. But the database should be restored only if you uninstalled the latest update rollup on the server. If you uninstalled an older update rollup, you do not have to restore the VMM database.
@@ -120,7 +120,7 @@ Use the following procedure to check if the update rollup was successfully remov
 2. Run **SCVMMRecover.exe** by using the following syntax:
 **SCVMMRecover [-Path <location>] [-Confirm]**
  
-The **< location>** placeholder represents the folder or share location of the backup file that you created. You must include the name of the backup file (this includes the **.bak** extension) when you specify the location.
+The **< location >** placeholder represents the folder or share location of the backup file that you created. You must include the name of the backup file (this includes the **.bak** extension) when you specify the location.
  
 **Important**
 
