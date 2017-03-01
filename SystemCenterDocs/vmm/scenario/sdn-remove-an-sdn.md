@@ -5,17 +5,17 @@ description: This article describes how to remove SDN from the VMM fabric.
 author: JYOTHIRMAISURI
 ms.author: v-jysur
 manager: riyazp
-ms.date: 02/28/2017
+ms.date: 03/01/2017
 ms.topic: article
 ms.prod: system-center-threshold
 ms.technology: virtual-machine-manager
 ---
 
-# Remove a Software Defined Network (SDN) from the VMM fabric
+# Remove a Software Defined Network (SDN) from VMM fabric
 
 >Applies To: System Center 2016 - Virtual Machine Manager
 
-To remove SDN from your VMM, you must remove the following objects - in the specified order:  
+To remove SDN from System Center 2016 Virtual Machine Manager (VMM), you must remove the following objects - in the specified order:  
 
 - VM networks (associated with the NC managed logical networks). 
 - Logical networks (managed by NC).
@@ -37,7 +37,7 @@ To remove SDN from your VMM, you must remove the following objects - in the spec
 2. Right-click the logical network and click **Remove**. 
 3. Repeat steps 1&2 for each logical network that you need to remove. 
 
-**Note**: Logical networks associated with the SLB cannot be removed from the console. Use force delete to remove these.  
+**Note**: Logical networks associated with the SLB cannot be removed from the console. Use force delete to remove these (by using **-Force** flag).  
 
 ## Remove the software load balancer  
 1. Click **Fabric** > **Network Services**, select the software load balancer role.
@@ -45,7 +45,7 @@ To remove SDN from your VMM, you must remove the following objects - in the spec
 
     This action removes the software load balancer service.  Ensure the job is complete. If the job fails, restart the job after making the required changes that the error message details you.
 3. Uncheck the pools that are associated with the SLB, except for the private VIP pool that is  associated with the SLB Manager VIP.
-4. To complete the removal of the SLB, force delete the  private VIP pool, corresponding logical network definition and logical networks (“-Force” option).
+4. To complete the removal of the SLB, force delete the  private VIP pool, corresponding logical network definition and logical networks ((by using **-Force** flag).
 
 ## Remove the gateway  
 1. Click **Fabric** > **Network Services**, select the Gateway manager role.
@@ -65,6 +65,3 @@ To remove SDN from your VMM, you must remove the following objects - in the spec
 2. Right-click the NC and click **Remove**. 
 
     This action removes the NC service.  Ensure the job is complete. If the job fails, restart the job after making the required changes that the error message details you.    
-
-## Next steps
-[Create a software load balancer](sdn-slb.md)
