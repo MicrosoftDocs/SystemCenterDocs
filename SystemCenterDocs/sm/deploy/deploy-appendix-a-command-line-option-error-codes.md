@@ -1,5 +1,5 @@
 ---
-title: Appendix A - command-line option error codes
+title: Service Manager command-line option error codes
 description: The article lists the error codes that are used in the command-line installation of Service Manager.
 manager:  carmonm
 ms.custom: na
@@ -15,7 +15,7 @@ ms.topic: article
 ms.assetid: e523ed10-a8fc-44d4-b019-a7056511c949
 ---
 
-# Appendix A - command-line option error codes
+# Service Manager command-line option error codes
 
 >Applies To: System Center 2016 - Service Manager
 

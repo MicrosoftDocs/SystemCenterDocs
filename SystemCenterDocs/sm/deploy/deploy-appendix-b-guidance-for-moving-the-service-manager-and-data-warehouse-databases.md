@@ -1,6 +1,6 @@
 ---
-title: Appendix B - guidance for moving the Service Manager and data warehouse databases
-description: This article helps you move the Service Manager and data warehouse databases after you have deployed Service Manager.
+title: Move the Service Manager and data warehouse databases
+description: This article helps you move the Service Manager and data warehouse databases to different servers after you have deployed Service Manager.
 manager:  carmonm
 ms.custom: na
 ms.prod: system-center-2016
@@ -15,7 +15,7 @@ ms.topic: article
 ms.assetid: 8b6c406a-7cb3-4be7-902b-5a09be71ad98
 ---
 
-# Appendix B - guidance for moving the Service Manager and data warehouse databases
+# Move the Service Manager and data warehouse databases to different servers
 
 >Applies To: System Center 2016 - Service Manager
 
