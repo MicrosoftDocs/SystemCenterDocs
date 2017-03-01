@@ -131,7 +131,7 @@ Use the following procedure to check if the update rollup was successfully remov
 
 - Ensure that you restore the database backup that you created prior to the update rollup installation.
 
-For information on how to restore the database back up, see [this article](back-up-and-restore-vmm.md#restore-the-VMM-environment).
+For information on how to restore the database back up, see [this article](back-up-and-restore-vmm.md#restore-the-VMM-environment)
 
 ### Post-restore tasks
 
