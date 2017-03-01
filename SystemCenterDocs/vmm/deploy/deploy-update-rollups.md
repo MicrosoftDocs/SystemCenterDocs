@@ -5,7 +5,7 @@ description: This article provides information about how to deploy and manage th
 author: JYOTHIRMAISURI
 ms.author: v-jysur
 manager: riyazp
-ms.date: 02/28/2017
+ms.date: 03/01/2017
 ms.topic: article
 ms.prod:  system-center-threshold
 ms.technology: virtual-machine-manager
@@ -15,13 +15,26 @@ ms.technology: virtual-machine-manager
 
 >Applies To: System Center 2016 - Virtual Machine Manager
 
-This article provides information about how to install, verify and remove update rollups for Virtual Machine Manager (VMM) 2016.
+This article provides information about how to install, verify and remove update rollups for System Center 2016 Virtual Machine Manager (VMM).
 
-Update packages for VMM are available from **Microsoft Updates** or by manual download.
 
-## Obtain an update rollup from Microsoft updates
+## Obtain and install update rollups
+The following sections provide information about how to obtain and install the update rollups manually through Microsoft updates, Microsoft Download Center, and through VMM command line.
 
-To obtain and install an update package from Microsoft Updates, follow these steps on a computer that has a Virtual Machine Manager component installed and latest updates are yet to be installed:
+### Back up the VMM database
+1. In the VMM console, click **Settings**.
+2. On the Home tab, click **Backup**.
+3. In the VMM backup page, in the **Path** text box, specify the location for the backup file , and then click **OK**.
+ 
+**Note**: Ensure the job is complete. Else, follow the error message details, and redo the backup action. 
+
+More information: [Back up the VMM database](back-up-and-restore-vmm.md#back-up-the-vmm-database) 
+
+### Install update rollups from Microsoft updates
+
+**Note**: Update rollups  will be installed automatically if you have set the Microsoft Updates option to Automatically update. If not, you can install these manually.
+
+Follow these steps on a computer that has a VMM component installed and latest updates are yet to be installed:
 
 1. Under **Settings** > **Update & Security**, click **Windows Update**.
 2. In the **Windows Update** window, click **Check Online for updates from Microsoft Update**.
@@ -29,9 +42,10 @@ To obtain and install an update package from Microsoft Updates, follow these ste
 5. Select the update rollup package and then click **OK**.
 6. Click **Install updates** to install the update package.
 
-**Note**: To manually download the update rollups from the Microsoft download center, [visit](http://www.catalog.update.microsoft.com/Home.aspx) the website, search for the desired KB and manually download the update rollup packages.  
+### Install update rollups from Microsoft Download Center
+To manually download the update rollups from the Microsoft download center, [visit](http://www.catalog.update.microsoft.com/Home.aspx) the Microsoft Download Center, search for the desired KB and manually download the update rollup packages.
 
-## Install an update rollup through command prompt
+### Install update rollups through command prompt
 To manually install an update rollup package through an elevated command prompt, run the following command: 
  
 msiexec.exe/update **< package_name >**
@@ -42,19 +56,22 @@ For example, to install the Update Rollup 2 for System Center 2016 Virtual Machi
  
 **msiexec.exe/update kb3209586_VMMserver_amd64.msp**
 
-**Note**: There may be additional installation steps specific to an update rollup release, which you will need to follow. Check update rollup KB guide to ensure you complete all the installation steps.
+**Note**: There may be additional installation steps specific to an update rollup release. Check update rollup KB guide to ensure you complete all the installation steps.
  
-## Check the installation of an update rollup
+###  Check the installation of an update rollup
  
 Use the following procedure to check if an update rollup is successfully installed:
  
-1. Under **Control Panel** > **Programs and Features** > **View Installed updates**. Verify that an update entry was created after the update rollup was installed.
+1. Under **Control Panel** > **Programs and Features** > **View installed updates**.
+2. Verify that an update entry was created after the update rollup was installed.
  
-    For example, the Update Rollup 2 server update was released as update 3209586. You should be able to see this detail if the update rollup was successfully installed.
+    For example, the Update Rollup 2 server update was released as update 3209586. You should be able to see this detail under **View installed updates"  if you have installed this update rollup and if it was successfully installed.
  
-2. Verify that the binary's version has the correct build number.  See the following website to check the build number for a specific update rollup:
+2. Verify that the binary's version has the correct build number. 
 
-    [List of build numbers for System Center Virtual Machine Manager (VMM)](https://social.technet.microsoft.com/wiki/contents/articles/15361.system-center-virtual-machine-manager-list-of-build-numbers.aspx)
+3. See the following website to check the build number for a specific update rollup:
+
+    [List of build numbers for VMM](https://social.technet.microsoft.com/wiki/contents/articles/15361.system-center-virtual-machine-manager-list-of-build-numbers.aspx)
  
 **Note**:  Not all the binaries will have the current update rollup build number. However, if you do not have the binaries listed with the relevant update rollup build number, it is likely that the update rollup did not install successfully.
 
@@ -67,14 +84,8 @@ Use the following procedure to check if an update rollup is successfully install
 * When you remove, the VMM binaries roll back to their earlier versions. However, the VMM database does not roll back.
 * If you have one or more hotfixes installed on the server, make sure that you replace the hotfix binary with the official update rollup binary, before you start the removal. 
  
-### Back up the VMM database
-1. In the VMM console, click **Settings**.
-2. On the Home tab, click **Backup**.
-3. In the VMM backup page, in the **Path** text box, specify the location for the backup file , and then click **OK**.
- 
-**Note**: Ensure the job is complete. Else, follow the error message details, and redo the backup action.  
- 
 ### Remove an update rollup by using the control panel
+
 1. Go to **Control Panel** > **Programs** > **Programs and Features**.  
 For quick access, type **appwiz.cpl** in **Run** it opens the **Programs and Features** in **Control Panel**.
 2. Click **View installed updates**.
@@ -114,21 +125,21 @@ Use the following procedure to check if the update rollup was successfully remov
 **Note**:  When you uninstall the server and console updates from the VMM server, the order of uninstallation is not important.
  
 ### Restore a database backup in VMM 
-**Note**:  You can create a database backup at any time. But the database should be restored only if you uninstalled the latest update rollup on the server. If you uninstalled an older update rollup, you do not have to restore the VMM database.
+**Note**: 
 
-1. On the VMM server, open an elevated command prompt, and then locate the Virtual Machine Manager installation < location>\bin folder.
-2. Run **SCVMMRecover.exe** by using the following syntax:
-**SCVMMRecover [-Path <location>] [-Confirm]**
- 
-The **< location >** placeholder represents the folder or share location of the backup file that you created. You must include the name of the backup file (this includes the **.bak** extension) when you specify the location.
- 
-**Important**
+- You can create a database backup at any time. But the database should be restored only if you uninstalled the latest update rollup on the server. If you uninstalled an older update rollup, you do not have to restore the VMM database.
+
+- Ensure that you restore the database backup that you created prior to the update rollup installation.
+
+For information on how to restore the database back up, see [this article](back-up-and-restore-vmm.md#Restore-the-VMM environment).
+
+### Post-restore tasks
 
 This section applies only if you add a host or a library server after you create a database backup and before you uninstall an update rollup.
 
 After the VMM database is recovered, you must do the following actions:
  
-- Remove any hosts that were removed from Virtual Machine Manager since the last backup.
+- Remove any hosts that were removed from VMM since the last backup.
 - If a host was removed since the last backup, the host will have a status of **Needs Attention** in the VMM console. Any virtual servers on that host will have a status of **Host Not Responding**.
 - Remove the virtual machines that were removed from the VMM since the last back up. 
 If a host has a virtual machine that was removed since the last backup, the virtual machine will have a status of **Missing** in the VMM console.
@@ -137,4 +148,6 @@ If a host has a virtual machine that was removed since the last backup, the virt
 
     A computer is considered different if it has a different security identifier (SID). For example, if you reinstall the operating system on the computer, the computer will have a different SID, even if you use the same computer name.
 
-**Note**: You must follow these steps for any other fabric resource (such as storage providers, library servers, and so on) that you add after you create a database backup.
+    For more information on post-restore tasks,  see [this article](back-up-and-restore-vmm.md#post-restore-tasks).
+
+**Note**: You must follow these steps for any other fabric resource such as storage providers, library servers, and so on that you add after you create a database backup.
