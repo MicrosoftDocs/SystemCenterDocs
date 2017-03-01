@@ -28,7 +28,7 @@ ms.technology:  virtual-machine-manager
 |Fujitsu/ETERNUS<br/><br/>DX60S3,DX100S3,DX200S3<br/>DX500S3,DX600S3,DX8700S3<br/>DX8900S3,DX200F,AF250, AF650|iSCSI/FC|V10L60 or later | EMBEDDED SMI-S v1.6.0 | [Storage System ETERNUS](http://www.fujitsu.com/global/products/computing/storage/) |
 |DELL-EMC <br/><br/> XtremIO All Flash Array	| iSCSI/FC	| XtremIO XMS Server Versions: 4.2.0 and 4.2.1 | Embedded SMI-S V1.6.1 | [Link](http://www.emc.com/en-us/storage/xtremio/benefits.htm) |
 |DELL <br/><br/> SC Series	| iSCSI/FC	| SCOS : 7.2 or later <br/> DSM : 2016 R3 or later| SMI-S <br/>version 1.6 | [Link](http://www.dell.com/us/business/p/dell-compellent?dgc=IR&cid=emcstorcat&lid=1) |
-|NetApp <br/><br/> FAS	| iSCSI/FC/SMB	| 8.2 and later | Proxy NetApp SMIS Provider 5.2.4 or later | [Link](http://mysupport.netapp.com/cssportal/faces/oracle/webcenter/portalapp/pages/css/home/CssHomePage.jspx?_afrLoop=33730172781476252&_afrWindowMode=0&_afrWindowId=null#!%40%40%3F_afrWindowId%3Dnull%26_afrLoop%3D33730172781476252%26_afrWindowMode%3D0%26_adf.ctrl-state%3Dlu18t3sl4_4) |
+|NetApp <br/><br/> FAS	| iSCSI/FC/SMB	| 8.2 and later | Proxy NetApp SMIS Provider 5.2.4 or later | [Link](https://now.netapp.com) |
 ## Next steps
 
  - [Learn more](../manage/manage-storage-add-device.md) about configuring storage in the VMM fabric.
