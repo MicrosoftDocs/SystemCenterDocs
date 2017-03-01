@@ -1,6 +1,7 @@
 ---
-title: Configure Windows PowerShell to Run in System Center - Service Manager
-manager:  cfreeman
+title: Configure Windows PowerShell to run in Service Manager
+description: Before you use PowerShell with Service Manager, you need to prepare and then import Service Manager cmdlets.
+manager:  carmonm
 ms.custom: na
 ms.prod: system-center-2016
 author: bandersmsft
@@ -14,7 +15,7 @@ ms.topic: article
 ms.assetid: 9b785d6a-2011-4fd9-987b-46e5eb164896
 ---
 
-# Configure Windows PowerShell to Run in System Center - Service Manager
+# Configure Windows PowerShell to run in Service Manager
 
 >Applies To: System Center 2016 - Service Manager
 
@@ -26,7 +27,7 @@ Before you can run commands in the Windows&nbsp;PowerShell command\-line interfa
 
 -   **Microsoft.EnterpriseManagement.Warehouse.Cmdlets**. This module must be imported manually.  
 
-## Cmdlets in Authoring Tool Workflows  
+## Cmdlets in Authoring Tool workflows  
  When you use the Service Manager Authoring tool to create a workflow, then custom scripts using Windows PowerShell cmdlets called by the workflow fail. This is due to a problem in the Service Manager MonitoringHost.exe.config file.  
 
  To work around this problem, update the MonitoringHost.exe.config XML file using the following steps.  
@@ -51,7 +52,7 @@ Before you can run commands in the Windows&nbsp;PowerShell command\-line interfa
        <publisherPolicy apply="yes" />      <probing privatePath="" />    </assemblyBinding>    <gcConcurrent enabled="true" />  </runtime></configuration>  
 ```  
 
-## Execution Policy
+## Execution policy
 
 
 Use the following procedure to set execution policy to RemoteSigned in Service Manager. This is necessary to enable the importation of the Service Manager cmdlet modules, automatically or manually.
@@ -68,7 +69,7 @@ You have to run this command only once on the computer where you intend to use W
     ```
 3. Type *exit*, and then press ENTER to close the **Administrator: Windows PowerShell** window.
 
-## Import the Data Warehouse Cmdlet Module
+## Import the data warehouse cmdlet module
 
 To be able to use the data warehouse cmdlets in Service Manager, you must first manually import the Windows PowerShell data warehouse cmdlets module for Service Manager. You can import the data warehouse cmdlets module on the Service Manager management server, the data warehouse management server, or both.
 

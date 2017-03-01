@@ -1,8 +1,8 @@
 ---
-title: Deploying System Center - Service Manager
+title: Deploy System Center - Service Manager
 description: This guide helps you deploy System Center 2016 - Service Manager in one of several different scenarios.
 ms.custom: na
-manager:  cfreeman
+manager: carmonm
 ms.prod: system-center-2016
 author: bandersmsft
 ms.author: banders
@@ -15,7 +15,7 @@ ms.topic: article
 ms.assetid: 125912d9-f349-498d-920c-74519c667f48
 ---
 
-# Deploying System Center - Service Manager
+# Deploy System Center - Service Manager
 
 >Applies To: System Center 2016 - Service Manager
 
@@ -26,7 +26,7 @@ This guide helps you deploy System Center - Service Manager in one of several di
 
  This guide also describes how to find and read the Setup log if you encounter issues when you deploy Service Manager. And, finally, information about backing up Service Manager management server encryption keys is included. After you run Setup, the Encryption Key Backup and Restore Wizard starts automatically.  
 
-## Deployment Guide Topics  
+## Deployment guide articles  
 
 -   [Planning Guide System Center - Service Manager](../plan/plan-planning-for-system-center-2016-service-manager.md)  
 
