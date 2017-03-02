@@ -109,6 +109,7 @@
 ###### [Upgrading and uninstalling agent on UNIX and Linux computer](OM/Manage/Upgrading-and-Uninstalling-Agents-on-UNIX-and-Linux-Computers.md)
 ###### [Manually uninstalling Agents from UNIX and Linux computers](om/manage/manually-uninstalling-agents-from-unix-and-linux-computers.md)
 ###### [Upgrading and uninstalling agent on Windows computer](OM/Manage/Uninstall-Agent-from-Windows-based-Computers.md)
+###### [Configure and use Active Directory Integration for agent assignment](om/manage/how-to-configure-and-use-ad-integration-for-agent-assignment.md)
 ##### [Using management packs](OM/Manage/Using-Management-Packs.md)
 ###### [What is in an Operations Manager management pack?](OM/Manage/what-Is-in-an-operations-manager-management-pack.md)
 ###### [Management packs installed with Operations Manager](om/manage/management-packs-installed-with-operations-manager.md)
