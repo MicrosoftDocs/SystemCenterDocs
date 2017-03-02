@@ -17,6 +17,7 @@ ms.technology: virtual-machine-manager
 
 This article provides information about how to install, verify and remove update rollups for System Center 2016 Virtual Machine Manager (VMM).
 
+**Note**: Update rollups  will be installed automatically if you have set the Microsoft Updates option to Automatic update. If not, you can install these manually.
 
 ## Obtain and install update rollups
 The following sections provide information about how to obtain and install the update rollups manually through Microsoft updates, Microsoft Download Center, and through VMM command line.
@@ -31,8 +32,6 @@ The following sections provide information about how to obtain and install the u
 More information: [Back up the VMM database](back-up-and-restore-vmm.md#back-up-the-vmm-database) 
 
 ### Install update rollups from Microsoft updates
-
-**Note**: Update rollups  will be installed automatically if you have set the Microsoft Updates option to Automatically update. If not, you can install these manually.
 
 Follow these steps on a computer that has a VMM component installed and latest updates are yet to be installed:
 
@@ -80,7 +79,7 @@ Use the following procedure to check if an update rollup is successfully install
 
 **Important**: 
  
-* It is recommended that you back up your VMM database before you attempt to remove an update rollup.
+* It is recommended that you [back up your VMM database](back-up-and-restore-vmm.md#back-up-the-vmm-database) before you attempt to remove an update rollup.
 * When you remove, the VMM binaries roll back to their earlier versions. However, the VMM database does not roll back.
 * If you have one or more hotfixes installed on the server, make sure that you replace the hotfix binary with the official update rollup binary, before you start the removal. 
  
@@ -131,7 +130,7 @@ Use the following procedure to check if the update rollup was successfully remov
 
 - Ensure that you restore the database backup that you created prior to the update rollup installation.
 
-For information on how to restore the database back up, see [this article](back-up-and-restore-vmm.md#restore-the-vmm-environment)
+For information on how to restore the database back up, see [this article](back-up-and-restore-vmm.md#restore-the-vmm-environment).
 
 ### Post-restore tasks
 
