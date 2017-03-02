@@ -43,7 +43,7 @@ The features and capabilities  listed below  are not included in the System Cent
 
 **Replacement:** Migrate workloads to virtualized platforms using templates
 
-You will not be able to either create or import a service templates with a Server App-V package in System Center 2016 - Virtual Machine Manager.  If you upgrade from System Center 2012 Virtual Machine Manager to System Center 2016 - Virtual Machine Manager, and you are managing applications based on service templates with Server App-V packages, you can continue to manage those applications with VMM, but you will not be able to upgrade the application. The following list describes the limitations for using Server App-V when you upgrade to System Center 2016 - Virtual Machine Manager:
+You will not be able to either create or import a service templates with a Server App-V package in System Center 2016 - Virtual Machine Manager.  If you upgrade from System Center 2012 Virtual Machine Manager to System Center 2016 - Virtual Machine Manager, and you are managing applications based on service templates with Server App-V packages, you can continue to manage those applications with VMM, but you will not be able to upgrade the application.  
 
 ## Service Manager Cloud Service Process Pack (CSPP)
 **Status in System Center 2016:** Removed.
