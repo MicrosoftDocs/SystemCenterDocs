@@ -24,20 +24,29 @@ To remove SDN from System Center 2016 Virtual Machine Manager (VMM), you must re
 - Network controller (if deployed or deployed and configured).
 
 ## Remove the VM networks   
-**Note**:  Ensure that no VMs or NICs are connected to the VM networks that you want to remove.   
+> [!NOTE]
+
+> Ensure that no VMs or NICs are connected to the VM networks that you want to remove.   
+>
 
 1. Click **VMs and Services** > **VM Networks**, select the VM network to remove. 
 2. Right-click the VM network and click **Delete**. 
 3. Repeat steps 1&2 for each VM network that you need to remove. 
  
 ## Remove the logical networks  
-**Note**:  Ensure that no port profiles are associated with the logical networks that you want to remove.  
+> [!NOTE]
+
+> Ensure that no port profiles are associated with the logical networks that you want to remove.  
+>
 
 1. Click **Fabric** > **Logical networks**, select the logical network to remove. 
 2. Right-click the logical network and click **Remove**. 
 3. Repeat steps 1&2 for each logical network that you need to remove. 
 
-**Note**: Logical networks associated with the SLB cannot be removed from the console. Use force delete to remove these (by using **-Force** flag).  
+> [!NOTE]
+
+> Logical networks associated with the SLB cannot be removed from the console. Use force delete to remove these (by using **-Force** flag).  
+>
 
 ## Remove the software load balancer  
 1. Click **Fabric** > **Network Services**, select the software load balancer role.
@@ -59,7 +68,10 @@ To remove SDN from System Center 2016 Virtual Machine Manager (VMM), you must re
         Set-SCFabricRole -FabricRole  $gwrole  -GatewayConfiguration $null
 
 ## Remove the network controller
-**Note**: Ensure that SLB/GW and associated logical networks are successfully removed.
+> [!NOTE]
+
+> Ensure that SLB/GW and associated logical networks are successfully removed.
+>
 
 1. Click **Fabric** > **Network Services**, select the network controller. 
 2. Right-click the NC and click **Remove**. 
