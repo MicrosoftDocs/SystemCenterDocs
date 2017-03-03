@@ -94,16 +94,12 @@ Use the following procedure to check if an update rollup is successfully install
 
 ## Remove an update rollup
 
-> [!NOTE]
-
-> It is not recommended that you remove the update rollups. Prior to removing, check all the available options if you can avoid the uninstall. You may also contact Microsoft Support to check and ensure if uninstall is really required.
->
-
 > [!IMPORTANT]
  
-> 1. It is recommended that you [back up your VMM database](back-up-and-restore-vmm.md#back-up-the-vmm-database) before you attempt to remove an update rollup.
-> 2. When you remove, the VMM binaries roll back to their earlier versions. However, the VMM database does not roll back.
-> 3. If you have one or more hotfixes installed on the server, make sure that you replace the hotfix binary with the official update rollup binary, before you start the removal. 
+> 1. It is not recommended that you remove the update rollups. Prior to removing, check all the available options if you can avoid the uninstall. You may also contact Microsoft Support to check and ensure if uninstall is really required.
+> 2. It is recommended that you [back up your VMM database](back-up-and-restore-vmm.md#back-up-the-vmm-database) before you attempt to remove an update rollup.
+> 3. When you remove, the VMM binaries roll back to their earlier versions. However, the VMM database does not roll back.
+> 4. If you have one or more hotfixes installed on the server, make sure that you replace the hotfix binary with the official update rollup binary, before you start the removal. 
  
 ### Remove an update rollup by using the control panel
 
