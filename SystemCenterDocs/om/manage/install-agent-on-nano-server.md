@@ -5,7 +5,7 @@ description: This article describes how to install the Operations Manager agent 
 author: mgoedtel
 ms.author: magoedte
 manager: cfreemanwa
-ms.date: 02/14/2017
+ms.date: 03/01/2017
 ms.custom: na
 ms.prod: system-center-threshold
 ms.technology: operations-manager
@@ -179,11 +179,13 @@ The Nano agent can be updated by one of the following methods:
 
 2. Manually install update 
  
-    Updates to the Nano agent are available for download by following the instructions in the KB articles and updating manually. You can install these downloaded updates on a Nano agent machine using the following Powershell script. 
+    Updates to the Nano agent are available for download by following the instructions in the KB article and applying the update manually. You can install these downloaded updates on a Nano agent machine using the following Powershell script.  
 
     ```powershell
       .\UpdateNanoServerScomAgentOnline.ps1 -NanoServerFQDN <FQDN of target Nano Server> -BinaryFolder <<Path where the update .cab is already expanded OR path to one or more Nano-agent update .cab files> -IsCabExpanded <$true if BinaryFolder path is to an expanded .cab, $false if it is for a packed .cab file(s)> -RemoveBackup <$true to remove the previous binaries from the agent machine>
     ```
+
+    For System Center 2016 - Operations Manager RTM, you can download the Nano Agent cab file from the [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=54767&WT.mc_id=rss_windows_allproducts).  
 
 ### Uninstalling updates from the Nano Agent
 
