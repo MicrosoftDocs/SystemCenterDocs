@@ -1,6 +1,7 @@
 ---
 title: Indexing Non-English Knowledge Articles
-manager:  cfreeman
+description: This article helps you resolve issues when you want to index non-English knowledge articles.
+manager:  carmonm
 ms.custom: na
 ms.prod: system-center-2016
 author: bandersmsft
@@ -14,7 +15,7 @@ ms.topic: article
 ms.assetid: 3a0d866d-40b8-4f40-a175-3c5b563bbf83
 ---
 
-# Indexing Non-English Knowledge Articles
+# Indexing non-English knowledge articles
 
 >Applies To: System Center 2016 - Service Manager
 
