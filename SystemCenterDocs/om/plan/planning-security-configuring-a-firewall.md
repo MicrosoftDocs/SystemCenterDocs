@@ -34,9 +34,11 @@ The following table shows Operations Manager feature interaction across a firewa
 |web console server|Web site port --->|management server|No||
 |web console browser|51908 --->|web console server|Yes (IIS Admin)|Port 51908 is the default port used when selecting Windows Authentication. If you select Forms Authentication, you will need to install an SSL certificate and configure an available port for https functionality for the Operations Manager web console web site.|
 |connected management server (Local)|5724 --->|connected management server (Connected)|No||
-|Agent installed using MOMAgent.msi|5723 --->|management server|Yes (Setup)||
-|Agent installed using MOMAgent.msi|5723 --->|gateway server|Yes (Setup)||
-|Agent push installation, pending repair, pending update|5723/TCP, 135/TCP, 137/UDP, 138/UDP, 139/TCP, 445/TCP<br>  *RPC/DCOM High ports (2008 OS and later) Ports 49152-65535||
+|Windows agent installed using MOMAgent.msi|5723 --->|management server|Yes (Setup)||
+|Windows agent installed using MOMAgent.msi|5723 --->|gateway server|Yes (Setup)||
+|Windows agent push installation, pending repair, pending update|5723/TCP, 135/TCP, 137/UDP, 138/UDP, 139/TCP, 445/TCP<br>  *RPC/DCOM High ports (2008 OS and later) Ports 49152-65535||
+|UNIX/Linux agent discovery and monitoring of agent|TCP 1270 --->|management server|No||
+|UNIX/Linux agent for installing, upgrading, and removing agent using SSH|TCP 22 --->|management server|Yes||
 |gateway server|5723 --->|management server|Yes (Setup)||
 |Agent (Audit Collection Services forwarder)|51909 --->|management server Audit Collection Services collector|Yes (Registry)||
 |Agentless Exception Monitoring data from client|51906 --->|management server Agentless Exception Monitoring file share|Yes (Client Monitoring Wizard)||
