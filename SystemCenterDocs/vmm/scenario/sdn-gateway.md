@@ -5,7 +5,7 @@ description: This article describes how to Set up an SDN RAS gateway in the VMM 
 author: rayne-wiselman
 ms.author: raynew
 manager: cfreeman
-ms.date: 03/01/2017
+ms.date: 03/04/2017
 ms.topic: article
 ms.prod: system-center-threshold
 ms.technology: virtual-machine-manager
@@ -130,11 +130,11 @@ Now that the gateway service is deployed, you can configure the properties, and 
 6. In **Public IPv4 pool**, select the pool you configured during SLB deployment. In **Public IPv4 address**, provide an IP address from the previous pool, and ensure you don't select the initial three IP addresses from the range.
 7. In **Gateway Capacity**, configure the capacity settings.
 
-The gateway capacity (Mbps) denotes the normal TCP bandwidth that is expected out of the gateway VM. You must set this parameter based on the underlying network speed you use.
+    The gateway capacity (Mbps) denotes the normal TCP bandwidth that is expected out of the gateway VM. You must set this parameter based on the underlying network speed you use.
 
-IPsec tunnel bandwidth is limited to (3/20) of the gateway capacity. Which means, if the gateway capacity is set to 1000 Mbps, the equivalent IPsec tunnel capacity would be limited to 150 Mbps.
+    IPsec tunnel bandwidth is limited to (3/20) of the gateway capacity. Which means, if the gateway capacity is set to 1000 Mbps, the equivalent IPsec tunnel capacity would be limited to 150 Mbps.
 
-The equivalent ratios For GRE, and L3 tunnels are 1/5 and 1/2 respectively.
+    The equivalent ratios For GRE, and L3 tunnels are 1/5 and 1/2 respectively.
 
 8. Configure the number of reserved nodes for back-up in **Nodes for reserved for failures field**.
 9. To configure individual gateway VMs, click each VM and select the IPv4 frontend subnet, specify the local ASN, and optionally add the peering device information for the BGP peer.
@@ -147,7 +147,7 @@ The service instance you deployed is now associated with the gateway Manager rol
 After you deploy the gateway, you can configure S2S GRE, S2S IPSec, or L3 connection types, and validate them.
 
 **Note**:
-- SCVMM currently does not support bandwidth changes for a VPN connection. By default, the inbound and outbound bandwidth is set as 500 Kbps.
+- Currently, SCVMM console does not support bandwidth changes for a VPN connection. By default, the inbound and outbound bandwidth is set as 500 Kbps.
 
     To change bandwidth settings, you must use the following network controller PowerShell command:
 
@@ -222,6 +222,8 @@ An L3 gateway acts as a bridge between the physical infrastructure in the datace
 
 1. Ensure you're logged on as an administrator on the VMM server.
 2. Run the following script:
+
+**Note**: In an L3 connection, you can’t use the same VLAN subnet for two different tenants.
 
 ```
 param (
