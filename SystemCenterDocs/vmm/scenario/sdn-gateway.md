@@ -223,6 +223,8 @@ An L3 gateway acts as a bridge between the physical infrastructure in the datace
 1. Ensure you're logged on as an administrator on the VMM server.
 2. Run the following script:
 
+**Note**: In an L3 connection, you can’t use the same VLAN subnet for two different tenants.
+
 ```
 param (
     [Parameter(Mandatory=$true)]
