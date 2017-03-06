@@ -1,6 +1,7 @@
 ---
-title: Deployment Considerations with a Disjointed Namespace
-manager:  cfreeman
+title: Deployment considerations with a disjointed namespace
+description: This article helps you avoid Service Manager Setup problems with disjointed namespaces.
+manager: carmonm
 ms.custom: na
 ms.prod: system-center-2016
 author: bandersmsft
@@ -14,11 +15,11 @@ ms.topic: article
 ms.assetid: 11c62b07-e735-415a-a632-df1589b53874
 ---
 
-# Deployment Considerations with a Disjointed Namespace
+# Deployment considerations with a disjointed namespace
 
 >Applies To: System Center 2016 - Service Manager
 
-In System Center - Service Manager, Setup might fail when you deploy either an additional Service Manager management server or an additional Self-Service Portal in an environment where a disjoint namespace exists. This problem can occur if the Setup program is unable to resolve the principal name of the computer that is hosting the Service Manager management server. For more information, see the Microsoft TechNet article [Disjointed Namespace](http://go.microsoft.com/fwlink/p/?LinkID=187367).  
+In System Center - Service Manager, Setup might fail when you deploy either an additional Service Manager management server or an additional Self-Service Portal in an environment where a disjointed namespace exists. This problem can occur if the Setup program is unable to resolve the principal name of the computer that is hosting the Service Manager management server. For more information, see the Microsoft TechNet article [Disjointed Namespace](http://go.microsoft.com/fwlink/p/?LinkID=187367).  
 
  We recommend that you complete the following procedures before installing either an additional Service Manager management server or an additional Self-Service Portal in an environment where a disjoint namespace exists. The first procedure shows you how to determine the principal name of your Service Manager management server. The second procedure guides you in editing the hosts file on the computer that hosts either the additional Service Manager management server or the additional Self-Service Portal.  
 
