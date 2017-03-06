@@ -1,6 +1,7 @@
 ---
-title: Deployment Scenarios for System Center - Service Manager
-manager:  cfreeman
+title: Deploy Service Manager
+description: You can install Service Manager for a variety of deployment scenarios.
+manager:  carmonm
 ms.custom: na
 ms.prod: system-center-2016
 author: bandersmsft
@@ -14,7 +15,7 @@ ms.topic: article
 ms.assetid: 91a72f45-07ff-41cd-80aa-7acde988f08f
 ---
 
-# Deployment Scenarios for System Center - Service Manager
+# Deployment scenarios for System Center - Service Manager
 
 >Applies To: System Center 2016 - Service Manager
 

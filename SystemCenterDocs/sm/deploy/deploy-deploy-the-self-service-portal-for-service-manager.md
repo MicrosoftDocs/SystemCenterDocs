@@ -1,5 +1,6 @@
 ---
-title:  Deploy the Self Service Portal for Service Manager
+title:  Deploy the Service Manager Self Service portal
+description: This article describes prerequisites, installation steps, and configuration options for the Service Manager Self Service portal.
 manager:  carmonm
 ms.custom: na
 ms.prod: system-center-2016
@@ -11,22 +12,21 @@ ms.suite: na
 ms.technology: service-manager
 ms.tgt_pltfrm: na
 ms.topic: article
-description:  
 ms.assetid:  18833e51-8624-463a-a2d7-cd3be75f2efb
 ---
 
-# Deploy the Self-Service Portal for Service Manager
+# Deploy the Self-Service portal for Service Manager
 
 >Applies To: System Center 2016 - Service Manager
 
-The Self-Service Portal provides web-based access to the features of System Center 2016 - Service Manager for end users. This article describes how you can deploy the Self-Service Portal and customize it.
+The Self-Service portal provides web-based access to the features of System Center 2016 - Service Manager for end users. This article describes how you can deploy the Self-Service portal and customize it.
 
-### Supported Operating System  
+### Supported operating systems  
  - Windows Server 2016
 
  - Windows Server 2012 R2
 
-## Supported Web Browsers
+## Supported web browsers
 The Self Service portal needs a screen resolution above 1024 X 768. It is supported on the following browsers.
 
 -   Microsoft Edge
@@ -37,10 +37,10 @@ The Self Service portal needs a screen resolution above 1024 X 768. It is suppor
 
 -   Google Chrome 46 and later
 
-## Set up the Self Service Portal
+## Set up the Self Service portal
 You'll use the following sections to set up the Self Service portal.
 
-### Set up the Web Server
+### Set up the web server
 Join the Windows server machine to the same domain where the Service Manager SDK Service is running. Ideally, on the secondary server. Enable the IIS role and ASP.NET 4.5 on the server using following steps.
 
 1.  Start the Add Roles and Features Wizard and then enable IIS.
@@ -115,21 +115,21 @@ Use the following steps to install the Self Service Portal WebApp using Setup.
 
     ![Finished](../media/sm-ssp13.png)
 
-### Install the Self Service Portal Webapp using the Command Line
-You can modify the following example to install the Self Service Portal.
+### Install the Self Service portal webapp using the command line
+You can modify the following example to install the Self Service portal.
 
 ```
 SetupWizard.exe /Install:SelfServicePortal /silent /accepteula /CustomerExperienceImprovementProgram:No /EnableErrorReporting:No /PortalWebSiteName:<Portal Name> /SMServerName:<SDK Server Name> /PortalWebSitePort:<PortNumber> /PortalAccount:<domain>\<user>\<pwd>
 ```
 
-### Complete the Installation
+### Complete the installation
 Use the following step to complete your installation.
 
 -   Restart IIS. You can access the Web App (http://yourwebsite:port) in your browser. It will resemble the following image.
 
     ![Self Service Portal](../media/sm-sspdeploy-complete.png)
 
-## Customize the Self Service Portal
+## Customize the Self Service portal
 The following section describes how you can customize the Self Service portal to suit your organization.
 
 Before you install Service Manager 2016 Update Rollup 2, note that all customizations are made in the portal sidebar (CustomSidebar.cshtml), then use the following steps to get started.
@@ -140,7 +140,7 @@ Before you install Service Manager 2016 Update Rollup 2, note that all customiza
 In the future, you need to make all customizations to the Service Manager 2016 Self Service portal’s sidebar in the CustomSidebar.cshtml file.
 
 
-### Basic Customization
+### Basic customization
 
 The `<appSettings>` tab in the Web.config file offers some standard settings to easily customize and personalize the areas which are most often modified. Here's a list of them.
 
@@ -162,7 +162,7 @@ The `<appSettings>` tab in the Web.config file offers some standard settings to 
 > [!NOTE]
 > You must restart the IIS service after you make any changes to the Web.config file.
 
-### Style Customization
+### Style customization
 Web page style, such as font, color, and background, is customized by adding the Custom.css file in the \Content\css website folder.
 
 Styles defined in the CSS file overrides the default styles of the Self Service Portal..

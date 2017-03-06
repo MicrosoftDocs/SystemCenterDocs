@@ -1,6 +1,7 @@
 ---
-title: Deploying Service Manager from a Command Line
-manager:  cfreeman
+title: Deploy Service Manager from a command line
+description: This article describes how to deploy Service Manager using command-line parameters.
+manager:  carmonm
 ms.custom: na
 ms.prod: system-center-2016
 author: bandersmsft
@@ -14,12 +15,12 @@ ms.topic: article
 ms.assetid: 27c60668-1baf-4521-98ad-cf87389c8310
 ---
 
-# Deploying Service Manager from a Command Line
+# Deploy Service Manager from a command line
 
 >Applies To: System Center 2016 - Service Manager
 
 
-This section describes how to deploy System Center - Service Manager using command\-line parameters. For easier reading, the command\-line examples in this guide list each command\-line parameter on its own line. If you copy these examples, you must remove the carriage returns\/line\-feeds \(CRs\/LFs\) from each line before you can run the commands.  
+This article describes how to deploy System Center - Service Manager using command\-line parameters. For easier reading, the command\-line examples in this guide list each command\-line parameter on its own line. If you copy these examples, you must remove the carriage returns\/line\-feeds \(CRs\/LFs\) from each line before you can run the commands.  
 
 > [!NOTE]  
 >  The **/silent** parameter must be the last parameter used in a command\-line install.  
@@ -67,7 +68,7 @@ Setup.exe
 
 3.  If you are going to deploy the Reporting Server on a computer other than the computer hosting the data warehouse management server, make sure that you have completed the procedure in [Manual Steps to Configure the Remote SQL Server Reporting Services](deploy-manual-steps-to-configure-the-remote-sql-server-reporting-services.md).  
 
-### Determining When Installation Is Complete  
+### Determine when installation is complete  
  When installation of either the Service Manager management server or the data warehouse management server is complete, an event with Event&nbsp;ID&nbsp;1033 is written into the Application Event log, as shown in the following illustration.  
 
  ![Command Line Install Event Log](../media/deploy-commandlineinstalleventlog.png)  
@@ -75,12 +76,12 @@ Setup.exe
 
  If you use the **start \/w** command when you are using setup.exe, the command window will remain open when Setup completes, giving you the opportunity to examine any return codes.  
 
-### Checking Error Codes  
+### Check error codes  
  When the command\-line Setup is complete, the command prompt appears. You can view the error code that was returned by typing **echo %errorlevel%**. An error code of 0 means that the installation was successful. The error codes that could be returned by the command\-line installation are listed in [Appendix A \- Command\-Line Option Error Codes](deploy-appendix-a-command-line-option-error-codes.md) in this guide.  
 
  The command\-line installation will not check the database name that you supply to see if it already exists. If you supply a database name that already exists, the command\-line installation will fail and a \-1 will be returned as an error code.  
 
-## Deploy a Service Manager Management Server Using the Command Line
+## Deploy a Service Manager management server using the command line
 
 You can use the following command\-line procedures to deploy the Service Manager management server and the Service Manager database.  
 
@@ -112,11 +113,11 @@ You can use the following command\-line procedures to deploy the Service Manager
 
     ```  
 
-## Deploy a Data Warehouse Management Server Using the Command Line
+## Deploy a Data Warehouse management server using the command line
 
 Use the following procedures to deploy a Service Manager data warehouse and databases, including the Operations Manager and Configuration Manager data mart databases, in System Center - Service Manager.  
 
-## Deploying the Data Warehouse  
+## Deploy the data warehouse  
  Use the following procedures to deploy the data warehouse with the Operations Manager and Configuration Manager data mart databases. If you want to install the data warehouse management server and data warehouse databases on the same computer, use the same computer name that you are running Setup on for all instances of **\[computer name\]**. If you want to deploy the databases on a separate computer, adjust the **\[computer name\]** entries accordingly.  
 
  The **/AnalysisServerDatabaseDataFilePath** is optional, and if it is not used, the default path will be used.  
@@ -162,7 +163,7 @@ Use the following procedures to deploy a Service Manager data warehouse and data
     /Silent  
     ```  
 
-## Deploy a Service Manager Console Using the Command Line
+## Deploy a Service Manager console using the command line
 
 Use the following command\-line procedure to deploy the Service Manager console in System Center - Service Manager.  
 
