@@ -5,7 +5,7 @@ description: This article describes how to Set up an SDN RAS gateway in the VMM 
 author: rayne-wiselman
 ms.author: raynew
 manager: cfreeman
-ms.date: 02/21/2017
+ms.date: 03/01/2017
 ms.topic: article
 ms.prod: system-center-threshold
 ms.technology: virtual-machine-manager
@@ -103,7 +103,7 @@ This example uses the generation 2 template.
 
   - **AdminAccount**. Required. Select a RunAs account that will be used as the local administrator on the gateway VMs.
   - **Management Network**. Required. Choose the Management VM network that you created for host management.
-  - **Management Account**. Required. Select a Run As Account with permissions to add the gateway to the Active Directory domain associated with the network controller. This can be the same account used for MgmtDomainAccount while deploying the network controller.
+  - **Management Account**. Required. Select a Run as account with permissions to add the gateway to the Active Directory domain associated with the network controller. This can be the same account used for MgmtDomainAccount while deploying the network controller.
   - **FQDN**. Required. FQDN for the Active directory domain for the gateway.
 
 5. Click **Deploy Service** to begin the service deployment job.
@@ -125,10 +125,17 @@ Now that the gateway service is deployed, you can configure the properties, and 
 3. Find the **Associated Service** field under **Service information**, and click **Browse**. Select the gateway service instance you created earlier, and click **OK**.
 4. Select the **Run As account** that will be used by network controller to access the gateway virtual machines.
 
-    **Note**: The Run As Account must have Administrator privileges on the gateway VMs.
+    **Note**: The Run as account must have Administrator privileges on the gateway VMs.
 5. In **GRE VIP subnet**, select the VIP subnet that you created previously.
 6. In **Public IPv4 pool**, select the pool you configured during SLB deployment. In **Public IPv4 address**, provide an IP address from the previous pool, and ensure you don't select the initial three IP addresses from the range.
 7. In **Gateway Capacity**, configure the capacity settings.
+
+The gateway capacity (Mbps) denotes the normal TCP bandwidth that is expected out of the gateway VM. You must set this parameter based on the underlying network speed you use.
+
+IPsec tunnel bandwidth is limited to (3/20) of the gateway capacity. Which means, if the gateway capacity is set to 1000 Mbps, the equivalent IPsec tunnel capacity would be limited to 150 Mbps.
+
+The equivalent ratios For GRE, and L3 tunnels are 1/5 and 1/2 respectively.
+
 8. Configure the number of reserved nodes for back-up in **Nodes for reserved for failures field**.
 9. To configure individual gateway VMs, click each VM and select the IPv4 frontend subnet, specify the local ASN, and optionally add the peering device information for the BGP peer.
 
@@ -140,6 +147,15 @@ The service instance you deployed is now associated with the gateway Manager rol
 After you deploy the gateway, you can configure S2S GRE, S2S IPSec, or L3 connection types, and validate them.
 
 **Note**:
+- SCVMM currently does not support bandwidth changes for a VPN connection. By default, the inbound and outbound bandwidth is set as 500 Kbps.
+
+    To change bandwidth settings, you must use the following network controller PowerShell command:
+
+    **New-NetworkControllerVirtualGatewayNetworkConnection** with the parameters **OutboundKiloBitsPerSecond** and **InboundKiloBitsPerSecond**.
+
+    After changing the bandwidth, in case of any further changes to the VPN connection through the SCVMM, the bandwidth settings will be reset to the default value (500 Kbps). You must run the NC PowerShell command once again, to make any changes to the bandwidth settings.
+
+
 - When you use BGP with a tunnel connection, BGP peering must be established between the gateway (VSID interface IP address) and the peer device on the physical network. For script based configuration, you will need to know the VSID interface IP address to be able to setup BGP peering. This IP is available in the JSON.  
 
 - For BGP peering to work, there should be a route on the physical network with the destination as the GW VSID Address and the next hop as the L3 interface IP Address.
@@ -163,7 +179,7 @@ This subnet is used to route packets out of the VM Network. This subnet need not
 
     ![IPsec](../media/sdn-gateway2.png)
 6. Type a connection **Name**, and the IP address of the remote endpoint. Optionally, configure the bandwidth.
-7. In **Authentication**, select the type of authentication you want to use. If you choose to authenticate by using a Run As account, create a user account with a user name, and the IPSec key as the password for the account.
+7. In **Authentication**, select the type of authentication you want to use. If you choose to authenticate by using a Run as account, create a user account with a user name, and the IPSec key as the password for the account.
 8. In **Routes**, type all the remote subnets that you want to connect to.
 9. If you selected **Enable Border Gateway Protocol (BGP)**, then you can leave this screen blank and instead fill out your ASN, peer BGP IP and its ASN on the **Border Gateway Protocol** tab as shown below:
 
@@ -348,4 +364,4 @@ TenantASNRoutingSubnets |ASN number of tenant gateway. Only if BGP is enabled. |
 
 ## Remove the gateway from the SDN fabric
 
-Use [these steps](sdn-network-controller.md#remove-the-gateway) to remove the gateway from the SDN fabric.
+Use [these steps](sdn-remove-an-sdn.md#remove-the-gateway) to remove the gateway from the SDN fabric.
