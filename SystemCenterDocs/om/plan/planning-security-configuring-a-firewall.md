@@ -5,7 +5,7 @@ description: This article provides design guidance for which ports and protocols
 author: mgoedtel
 ms.author: magoedte
 manager: cfreemanwa
-ms.date: 01/25/2017
+ms.date: 03/07/2017
 ms.custom: na
 ms.prod: system-center-threshold
 ms.technology: operations-manager
@@ -37,8 +37,8 @@ The following table shows Operations Manager feature interaction across a firewa
 |Windows agent installed using MOMAgent.msi|5723 --->|management server|Yes (Setup)||
 |Windows agent installed using MOMAgent.msi|5723 --->|gateway server|Yes (Setup)||
 |Windows agent push installation, pending repair, pending update|5723/TCP, 135/TCP, 137/UDP, 138/UDP, 139/TCP, 445/TCP<br>  *RPC/DCOM High ports (2008 OS and later) Ports 49152-65535||
-|UNIX/Linux agent discovery and monitoring of agent|TCP 1270 --->|management server|No||
-|UNIX/Linux agent for installing, upgrading, and removing agent using SSH|TCP 22 --->|management server|Yes||
+|UNIX/Linux agent discovery and monitoring of agent|TCP 1270 <---|management server or gateway server|No||
+|UNIX/Linux agent for installing, upgrading, and removing agent using SSH|TCP 22 <---|management server or gateway server|Yes||
 |gateway server|5723 --->|management server|Yes (Setup)||
 |Agent (Audit Collection Services forwarder)|51909 --->|management server Audit Collection Services collector|Yes (Registry)||
 |Agentless Exception Monitoring data from client|51906 --->|management server Agentless Exception Monitoring file share|Yes (Client Monitoring Wizard)||
