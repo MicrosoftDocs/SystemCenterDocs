@@ -1,6 +1,7 @@
 ---
-title: Moving the Service Manager Database
-manager: cfreeman
+title: Move the Service Manager database
+description: This article describes how to move the Service Manager database.
+manager: carmonm
 ms.custom: na
 ms.prod: system-center-2016
 author: bandersmsft
@@ -14,7 +15,7 @@ ms.topic: article
 ms.assetid: 04f4671d-2fd1-4638-a64f-4543e013e541
 ---
 
-# Moving the Service Manager Database
+# Moving the Service Manager database
 
 >Applies To: System Center 2016 - Service Manager
 

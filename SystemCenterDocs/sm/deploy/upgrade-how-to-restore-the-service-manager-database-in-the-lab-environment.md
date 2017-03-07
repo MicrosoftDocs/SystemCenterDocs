@@ -1,6 +1,7 @@
 ---
-title: How to Restore the Service Manager Database in the Lab Environment
-manager: cfreeman
+title: Restore the Service Manager database in the lab environment
+description: You need to Restore the Service Manager database in the lab environment before you upgrade.
+manager: carmonm
 ms.custom: na
 ms.prod: system-center-2016
 author: bandersmsft
@@ -14,7 +15,7 @@ ms.topic: article
 ms.assetid: acc6c46d-3377-47ce-9c94-ce20997d376f
 ---
 
-# How to Restore the Service Manager Database in the Lab Environment
+# Restore the Service Manager database in the lab environment before you upgrade
 
 >Applies To: System Center 2016 - Service Manager
 

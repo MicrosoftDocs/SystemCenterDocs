@@ -1,6 +1,7 @@
 ---
-title: How to Promote a Secondary Management Server in a Lab Environment
-manager: cfreeman
+title: Promote a secondary management server in a lab environment
+description: You need to promote a secondary management server in a lab environment before you upgrade.
+manager: carmonm
 ms.custom: na
 ms.prod: system-center-2016
 author: bandersmsft
@@ -14,7 +15,7 @@ ms.topic: article
 ms.assetid: df0bc01c-a314-441f-a983-27dfd92f95c0
 ---
 
-# How to Promote a Secondary Management Server in a Lab Environment
+# Promote a secondary management server in a lab environment before you upgrade
 
 >Applies To: System Center 2016 - Service Manager
 

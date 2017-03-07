@@ -1,6 +1,7 @@
 ---
-title: How to Enable Email Notifications in the Production Environment
-manager: cfreeman
+title: Enable email notifications in the production environment
+description: Enable email notifications in the production environment after you upgrade.
+manager: carmonm
 ms.custom: na
 ms.prod: system-center-2016
 author: bandersmsft
@@ -14,13 +15,13 @@ ms.topic: article
 ms.assetid: 441c09d3-16e6-4cc3-a242-83aad9ec3c4a
 ---
 
-# How to Enable Email Notifications in the Production Environment
+# Enable email notifications in the production environment after you upgrade
 
 >Applies To: System Center 2016 - Service Manager
 
-Use the following procedure to enable incoming and outbound E\-mail notifications in the production environment.  
+Use the following procedure to enable incoming and outbound email notifications in the production environment.  
 
-### To enable the outbound E\-mail notifications  
+### To enable the outbound email notifications  
 
 1.  In the Service Manager console, click **Administration**.  
 
@@ -32,7 +33,7 @@ Use the following procedure to enable incoming and outbound E\-mail notification
 
 5.  Select **Enable e\-mail notifications**.  
 
-### To enable incoming E\-mail notifications  
+### To enable incoming email notifications  
 
 1.  In the Service Manager console, select **Administration**.  
 

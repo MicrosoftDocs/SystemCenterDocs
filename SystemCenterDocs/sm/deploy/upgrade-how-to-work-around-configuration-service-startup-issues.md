@@ -1,6 +1,7 @@
 ---
-title: How to Work Around Configuration Service Startup Issues
-manager: cfreeman
+title: Work around configuration service startup issues
+description: This article helps you work around configuration service startup issues after a failed upgrade.
+manager: carmonm
 ms.custom: na
 ms.prod: system-center-2016
 author: bandersmsft
@@ -14,7 +15,7 @@ ms.topic: article
 ms.assetid: e3dead65-a5b9-4e16-af59-e5bd5e6f2320
 ---
 
-# How to Work Around Configuration Service Startup Issues
+# Work around configuration service startup issues after a failed upgrade
 
 >Applies To: System Center 2016 - Service Manager
 
