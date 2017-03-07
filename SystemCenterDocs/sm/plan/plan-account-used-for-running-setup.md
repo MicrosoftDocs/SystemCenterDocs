@@ -1,6 +1,7 @@
 ---
-title: Account Used for Running Setup
-manager:  cfreeman
+title: Account Used to run Setup
+description: This article describes the permissions that you need when you are installing Service Manager.
+manager: carmonm
 ms.custom: na
 ms.prod: system-center-2016
 author: bandersmsft
@@ -14,16 +15,16 @@ ms.topic: article
 ms.assetid: 45dff8a2-a4d5-4314-8385-c5037870ae0f
 ---
 
-# Account Used for Running Setup
+# Account used when you install Service Manager
 
 >Applies To: System Center 2016 - Service Manager
 
-This topic describes the permissions that you need when you are installing a Service Manager management server and Service Manager console databases and when you are registering the Service Manager management group with the data warehouse management group in System Center 2016 - Service Manager.
+This article describes the permissions that you need when you are installing a Service Manager management server and Service Manager console databases and when you are registering the Service Manager management group with the data warehouse management group in System Center 2016 - Service Manager.
 
 > [!NOTE]  
 >  The account that you use to run Setup is automatically made an administrator in Service Manager.
 
-## Service Manager Management Server
+## Service Manager management server
 
 You need the following permissions when you are installing a Service Manager management server:  
 
@@ -33,13 +34,13 @@ You need the following permissions when you are installing a Service Manager man
 -   The Sysadmin SQL Server role on the SQL Server instance where the Service Manager database is being created  
 
 
-## Service Manager Console
+## Service Manager console
 
 You need the following permissions when you are installing the Service Manager console:  
 
 -   Local administrator on the computer that you run Setup on  
 
-## Data Warehouse Management Server
+## Data warehouse management server
 
 You need the following permissions when you are installing the data warehouse management server:  
 
@@ -55,7 +56,7 @@ You need the following permissions when you are installing SSRS:
 
 -   Permissions to place a binary file into the \\Program Files\\Microsoft SQL Server\\*Instance Name*\Reporting Services\\ReportServer\\Bin folder on the computer hosting the data warehouse management server  
 
-## Registering Service Manager with the Data Warehouse  
+## Registering Service Manager with the data warehouse  
 
 You need the following permissions when you are registering Service Manager with the data warehouse:  
 

@@ -1,6 +1,7 @@
 ---
-title: How to Copy the Workflow Assembly Files
-manager: cfreeman
+title: Copy customized workflow assembly files
+description: Before you upgrade to System Center 2016 - Service Manager, you need to copy your customized workflow assembly files.
+manager: carmonm
 ms.custom: na
 ms.prod: system-center-2016
 author: bandersmsft
@@ -14,7 +15,7 @@ ms.topic: article
 ms.assetid: 48fa12ca-e61b-4658-8eda-f9cc3af16dfc
 ---
 
-# How to Copy the Workflow Assembly Files
+# Copy customized workflow assembly files before you upgrade
 
 >Applies To: System Center 2016 - Service Manager
 

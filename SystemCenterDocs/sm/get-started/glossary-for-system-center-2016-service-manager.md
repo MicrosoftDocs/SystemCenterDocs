@@ -1,18 +1,18 @@
 ---
-description:  
-manager:  cfreemanwa
+title:  Glossary for System Center 2016 Service Manager
+description: This glossary defines the terms used in Service Manager.
+manager:  carmon
 ms.topic:  article
 author:  bandersmsft
 ms.author: banders
-ms.prod:  system-center-threshold
+ms.prod:  system-center-2016
 keywords:  
 ms.date: 10/12/2016
-title:  Glossary for System Center 2016 Service Manager
 ms.technology:  service-manager
 ms.assetid:  70310c2d-c8f0-4e6c-a276-1284c52f096f
 ---
 
-# Glossary for System Center 2016 - Service Manager
+# Glossary of terms in System Center 2016 - Service Manager
 
 >Applies To: System Center 2016 - Service Manager
 

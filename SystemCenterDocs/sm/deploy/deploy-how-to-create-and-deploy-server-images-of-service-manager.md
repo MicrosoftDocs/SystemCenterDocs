@@ -1,6 +1,7 @@
 ---
-title: How to Create and Deploy Server Images of Service Manager
-manager:  cfreeman
+title: How to create and deploy server images of Service Manager
+description: This article helps you create a system image that contains software needed for use as a template so that you can apply it to new servers.
+manager:  carmonm
 ms.custom: na
 ms.prod: system-center-2016
 author: bandersmsft
@@ -14,11 +15,11 @@ ms.topic: article
 ms.assetid: 22f049e0-a591-447c-b299-df44e3d95784
 ---
 
-# How to Create and Deploy Server Images of Service Manager
+# How to create and deploy server images of Service Manager
 
 >Applies To: System Center 2016 - Service Manager
 
-You can use the information in this topic to create a system image that contains Windows server, SQL Server, and Service Manager for use as a template that you can apply to new servers. Follow the basic steps below to prepare the image. You can modify them, as needed for your environment. For more information about the Windows System Preparation Tool, [What is Sysprep?](http://go.microsoft.com/fwlink/p/?LinkId=271473)  
+You can use the information in this article to create a system image that contains Windows server, SQL Server, and Service Manager for use as a template that you can apply to new servers. Follow the basic steps below to prepare the image. You can modify them, as needed for your environment. For more information about the Windows System Preparation Tool, [What is Sysprep?](http://go.microsoft.com/fwlink/p/?LinkId=271473)  
 
 > [!NOTE]  
 >  Details about installing SQL Server using a configuration file are not covered in this topic. For more information about using a configuration file to install SQL Server, see [Install SQL Server Using a Configuration File](http://go.microsoft.com/fwlink/p/?LinkId=271474).  
