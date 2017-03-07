@@ -66,7 +66,7 @@ The new Self Service Portal is an ASP.NET MVC Razor\-based HTML5 Web app. During
 -   Google Chrome 46 and later  
 
 ## Deploy the new Self Service portal  
- See the [Deploy the New Self\-Service Portal](deploy-deploy-the-self-service-portal-for-service-manager) article for detailed steps about how to deploy the new Self Service Portal. The following sections summarize key deployment considerations.  
+ See the [Deploy the New Self\-Service Portal](deploy-deploy-the-self-service-portal-for-service-manager.md) article for detailed steps about how to deploy the new Self Service Portal. The following sections summarize key deployment considerations.  
 
 ### Install the Portal as the default website  
  If you want to install new Self Service Portal on port 80, you must first move the default website in IIS to a different port-for example, port 8080-and then move Self Service Portal to port 80.  
