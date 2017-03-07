@@ -1,6 +1,7 @@
 ---
-title: How to Install an Additional Management Server in the Production Service Manager Management Group
-manager: cfreeman
+title: Install an additional Management Server
+description: As part of the upgrade process, you need to install an additional Management Server in the production Service Manager management group.
+manager: carmonm
 ms.custom: na
 ms.prod: system-center-2016
 author: bandersmsft
@@ -14,7 +15,7 @@ ms.topic: article
 ms.assetid: 03747a1c-cdb9-47ce-83d1-55ee9d6c8119
 ---
 
-# How to Install an Additional Management Server in the Production Service Manager Management Group
+# Install an additional Management Server in the production Service Manager management group
 
 >Applies To: System Center 2016 - Service Manager
 

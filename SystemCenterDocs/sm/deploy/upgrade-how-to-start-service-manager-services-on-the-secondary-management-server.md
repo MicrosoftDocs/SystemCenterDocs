@@ -1,6 +1,7 @@
 ---
-title: How to Start Service Manager Services on the Secondary Management Server
-manager: cfreeman
+title: Start Service Manager services on the secondary management server
+description: You need to start Service Manager services on the secondary management server before you upgrade.
+manager: carmonm
 ms.custom: na
 ms.prod: system-center-2016
 author: bandersmsft
@@ -14,13 +15,13 @@ ms.topic: article
 ms.assetid: c6eecbd1-f867-4050-b66f-de9427410bb7
 ---
 
-# How to Start Service Manager Services on the Secondary Management Server
+# Start Service Manager services on the secondary management server before you upgrade
 
 >Applies To: System Center 2016 - Service Manager
 
 Use the following procedure to start the Service Manager services.  
 
-### To Start Service Manager Services  
+### To start Service Manager services  
 
 1.  On the Windows desktop, click **Start**, and then click **Run**.  
 

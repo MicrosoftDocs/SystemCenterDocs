@@ -1,6 +1,7 @@
 ---
-title: How to Enable Service Manager Connectors in the Production Environment
-manager: cfreeman
+title: Enable Service Manager connectors in the production environment
+description: You need to enable Service Manager connectors in the production environment after you upgrade.
+manager: carmonm
 ms.custom: na
 ms.prod: system-center-2016
 author: bandersmsft
@@ -14,7 +15,7 @@ ms.topic: article
 ms.assetid: 0b055821-641a-4f09-96d9-14b1f84a950d
 ---
 
-# How to Enable Service Manager Connectors in the Production Environment
+# Enable Service Manager connectors in the production environment after you upgrade.
 
 >Applies To: System Center 2016 - Service Manager
 

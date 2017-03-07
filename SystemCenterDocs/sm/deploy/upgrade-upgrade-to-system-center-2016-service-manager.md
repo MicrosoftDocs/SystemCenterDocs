@@ -1,5 +1,6 @@
 ---
 title: Upgrade to System Center 2016 - Service Manager
+description: Use this article to upgrade to System Center 2016 - Service Manager.
 manager: carmonm
 ms.custom: na
 ms.prod: system-center-2016
@@ -12,10 +13,10 @@ ms.technology: service-manager
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 1a2b3464-1ff8-4695-875f-839da201c366
-description: Use this article to upgrade to System Center 2016 - Service Manager.
+
 ---
 
-# Upgrade to System Center 2016 - Service Manager
+# Upgrade your environment to System Center 2016 - Service Manager
 
 >Applies To: System Center 2016 - Service Manager
 
@@ -34,7 +35,7 @@ You cannot start an upgrade to System Center 2016 - Service Manager if any data 
 
     ![Active Directory Connector wizard](../media/sm-adconnector01.png)
 
-## Prepare Service Manager 2012 R2 for Upgrade
+## Prepare Service Manager 2012 R2 for upgrade
 This topic describes how to prepare your System Center 2012 R2 - Service Manager environment for an upgrade. To do this, perform the following procedures for upgrading the data warehouse management server:  
 
 1.  List the data warehouse jobs that are running and disable them.
@@ -137,14 +138,14 @@ Import-Module .\Microsoft.EnterpriseManagement.Warehouse.Cmdlets.psd1
 
 Use the following procedures to upgrade your Service Manager environment to System Center 2016 - Service Manager. These procedures include steps for upgrading the data warehouse management server, the Service Manager management server, and the Service Manager console.  
 
-### Service Manager Self Service Portal
+### Upgrade the Service Manager Self Service portal
 
 Refer the instructions mentioned in the [Upgrading the Service Manager Self-Service Portal](upgrade-upgrading-the-self-service-portal.md) article. In some upgrade scenarios, when you upgrade a management server, the Self Service Portal is also upgraded. In these cases, you need to apply a patch before you upgrade.
 
 ### Upgrade steps for custom development
 With the System Center 2016 - Service Manager release, the product has moved to support .Net 4.5.1. The tool set to support this movement to .Net 4.5.1 required to break a few dependencies and has led to the movement of classes across the assemblies. Hence, the upgrade to Service Manager 2016 may break the custom solutions made in house or by 3rd party (non-Microsoft). Please refer the [steps to upgrade your custom solutions](https://blogs.technet.microsoft.com/servicemanager/2016/08/03/scsm-2016-upgrade-steps-for-custom-development/), to avoid getting into this problem.
 
-### Data Warehouse Management Server  
+### Upgrade the data warehouse management server  
  Use the following procedure to upgrade the data warehouse management server.  
 
 > [!IMPORTANT]  
@@ -179,7 +180,7 @@ With the System Center 2016 - Service Manager release, the product has moved to 
 
 12. On **The upgrade was completed successfully** page, if you have already backed up the encryption key, clear the **Open the Encryption Backup or Restore Wizard** check box, and then click **Close**.  
 
-### Service Manager Management Server  
+### Upgrade the Service Manager management server  
  Use the following procedure to upgrade the Service Manager management server.  
 
 #### To upgrade the Service Manager management server  
@@ -200,10 +201,10 @@ With the System Center 2016 - Service Manager release, the product has moved to 
 
 8.  On the **The upgrade was completed successfully** page, if you have already backed up the encryption key, clear the **Open the Encryption Backup or Restore Wizard** check box, and then click **Close**.  
 
-### Service Manager Console  
+### Upgrade the Service Manager console  
  Use the following procedure to upgrade the Service Manager console.  
 
-#### To upgrade the Service Manager Console  
+#### To upgrade the Service Manager console  
 
 1.  Log on to the computer that will host the Service Manager console by using an account that is a member of the Administrators group.  
 

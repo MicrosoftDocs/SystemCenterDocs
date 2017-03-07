@@ -1,6 +1,7 @@
 ---
-title: After Upgrading to System Center 2016 - Service Manager
-manager: cfreeman
+title: System Center 2016 - Service Manager post-upgrade tasks
+description: Use the tasks in this article after you upgrade to System Center 2016 - Service Manager.
+manager: carmonm
 ms.custom: na
 ms.prod: system-center-2016
 author: bandersmsft
@@ -14,13 +15,13 @@ ms.topic: article
 ms.assetid: a21c98a9-c10a-41db-8d8c-9eac164c2517
 ---
 
-# After Upgrading to System Center 2016 - Service Manager
+# Tasks to complete after you upgrade to System Center 2016 - Service Manager
 
 >Applies To: System Center 2016 - Service Manager
 
 This topic describes how to restart the Data Access service if it fails to start after an upgrade to System Center 2016 - Service Manager. After the upgrade, you will also have to start the Service Manager workflows and restart the data warehouse jobs. This topic also describes how to stop and then start SQL&nbsp;Server Reporting Services \(SSRS\) after an upgrade.  
 
-## Restart the Data Access Service and Workflows on the Data Warehouse Management Server  
+## Restart the Data Access service and workflows on the Data Warehouse management server  
  If necessary, use the following procedures to restart the service and workflows.  
 
 #### To restart the Data Access service  
@@ -39,7 +40,7 @@ This topic describes how to restart the Data Access service if it fails to start
 
 3.  In the **Services** window, in the **Services \(Local\)** pane, right\-click **System Center Management**, and then click **Start**.  
 
-## Restart Data Warehouse Jobs  
+## Restart data warehouse jobs  
  After you upgrade the data warehouse management server, you might need to restart the data warehouse \(extraction, transformation, and load \(ETL\)\) jobs. You can use the following procedure to restart the data warehouse jobs. In this procedure, you enable data warehouse job schedules by using Windows&nbsp;PowerShell cmdlets.  
 
 #### To restart data warehouse jobs  
@@ -93,10 +94,10 @@ This topic describes how to restart the Data Access service if it fails to start
 
      The last command, **Start\-SCDWJob - JobName MPSyncJob**, will enable the ETL jobs to run.  
 
-## Stop and Then Start SSRS  
+## Stop and then restart SSRS  
  After you perform an upgrade to System Center 2016 - Service Manager, use the following procedure to stop and then start SSRS.  
 
-#### To stop and then start SSRS  
+#### To stop and then restart SSRS  
 
 1.  On the computer that hosts SSRS, on the Windows desktop, click **Start**, and then click **Run**.  
 

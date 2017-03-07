@@ -1,5 +1,7 @@
 ---
-title: How to Prepare Computers for Service Manager Deployment
+title: Prepare computers for deployment
+description: Describes how to prepare computers for Service Manager deployment.
+manager: carmonm
 ms.custom: na
 ms.prod: system-center-2016
 author: bandersmsft
@@ -13,7 +15,7 @@ ms.topic: article
 ms.assetid: 01284a71-2aaa-4d77-a1d8-b2e0ad80e197
 ---
 
-# How to Prepare Computers for Service Manager Deployment
+# Prepare computers for Service Manager deployment
 
 >Applies To: System Center 2016 - Service Manager
 
