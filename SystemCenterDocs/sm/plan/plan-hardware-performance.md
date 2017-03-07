@@ -1,5 +1,7 @@
 ---
-title: Hardware Performance
+title: Plan for hardware performance
+description: Describes planning considerations for Service Manager hardware performance.
+manager: carmonm
 ms.custom: na
 ms.prod: system-center-2016
 author: bandersmsft
@@ -13,22 +15,22 @@ ms.topic: article
 ms.assetid: 6c28cc61-e50c-4d3b-a26e-9410267278c6
 ---
 
-# Hardware Performance
+# Plan for Service Manager hardware performance
 
 >Applies To: System Center 2016 - Service Manager
 
 An important part of System Center 2016 - Service Manager performance depends on a hardware configuration and deployment topology that is planned to handle the needs of your organization. The following sections provide general guidelines to consider when you are planning for adequate hardware performance.  
 
-## Hardware Performance  
+## Hardware performance  
 
 The following are the hardware bottlenecks that are most noticeable in Service Manager, with a significant load and amount of data in the Service Manager database:  
 
-1.  The most common bottleneck is memory and I\/O on the computer that is running Microsoft SQL Server. If you have the resources, investing in more memory and a faster I\/O subsystem to improve SQL Server I\/O will achieve better performance.  
+1.  The most common bottleneck is memory and I/O on the computer that is running Microsoft SQL Server. If you have the resources, investing in more memory and a faster I/O subsystem to improve SQL Server I/O will achieve better performance.  
 2.  If you expect to have many consoles connecting to a management server, you can improve performance to handle peak load by investing in additional CPUs and memory for the management server or by installing a secondary Service Manager management server.  
 
 Be aware of the recommended minimum hardware for each role, as described in this document.  
 
-### The Role of Virtual Machines  
+### The role of virtual machines  
 
 Many organizations use virtual machines to host Windows Server applications. Service Manager server roles, such as the management server and data warehouse server, are no exceptions. The use of virtual machines might range from all server roles being virtualized to some other combination of virtual and physical computers.  
 
@@ -40,7 +42,7 @@ Database servers are vulnerable to poor performance on virtual machines if the f
 -   You should never use dynamic disks on virtual machines that are intended to host SQL Server. Use fixed\-size virtual hard drives or pass\-through.  
 -   Hyper\-V allows only four virtual CPUs per guest, which might constrain the Service Manager server if you have many consoles.  
 
-### Service Manager Baseline Test Results  
+### Service Manager baseline test results  
 
 Service Manager has been baseline\-tested for performance and scalability using various deployment scenarios with the minimum recommended hardware in the form of physical computers. More specifically, the scenarios were tested with databases prepopulated and Service Manager consoles creating and updating Incidents and Change Requests in a loop.  
 

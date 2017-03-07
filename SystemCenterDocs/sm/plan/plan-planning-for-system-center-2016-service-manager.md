@@ -1,5 +1,7 @@
 ---
-title: Planning for System Center 2016 - Service Manager
+title: Planning for Service Manager
+description: This article and others in this section help you understand the hardware and software requirements as well as software roles you need to prepare for Service Manager before you deploy it in your company or organization.
+manager: carmonm
 ms.custom: na
 ms.prod: system-center-2016
 author: bandersmsft
@@ -17,7 +19,7 @@ ms.assetid: 2bd42085-92ac-4df4-8807-6600aaa31dcf
 
 >Applies To: System Center 2016 - Service Manager
 
-Welcome to the System Center 2016 - Service Manager Planning Guide. This guide helps you understand the hardware and software requirements as well as software roles you need to prepare for Service Manager before your deploy it in your company or organization. Also in this guide are general guidelines that can help you plan for the better hardware and software performance and scalability.  
+Welcome to the System Center 2016 - Service Manager Planning Guide. This article and others in this section help you understand the hardware and software requirements as well as software roles you need to prepare for Service Manager before you deploy it in your company or organization. There are also general guidelines that can help you plan for the better hardware and software performance and scalability.  
 
  After you've read the planning information in this guide, you should read the [Deployment Guide for System Center 2016 - Service Manager](../deploy/deploy-deploying-system-center-2016-service-manager.md) to fully understand the steps needed to deploy Service Manager and get it configured for use.  
 
