@@ -61,8 +61,8 @@ You can specify the following rule properties:
 - Rule Type: The type of membership rule to be added. Options are:
   * Direct Rule - a single user or computer
   * Query Rule - a SQL query string or a predefined query saved on a Configuration Manager sever.
-  * Include Collection - a collection who's members will be included.
-  * Exclude Collection - a collection who's members will be excluded. 
+  * Include Collection - a collection whose members will be included.
+  * Exclude Collection - a collection whose members will be excluded. 
 - Rule Definition: The allowed values for a rule are determined by the type of rule.   
   * Direct rules can specify a user or device ID. Device ID's can be the NetBios name or the IP address. The user name can be the name displayed in the Configuration Manager console. User names can be the name displayed in the Configuration Manager console (i.e. “contoso\Admin (Administrator)” ), or the UniqueUserName value specified in the SMS_R_User class in WMI (i.e. “contoso\admin”) 
   * Query Rule – a valid WQL query string or the Query ID of an existing Configuration Manager Query

@@ -36,7 +36,7 @@ runbook.
 - To save your configuration entries, click **Finish**.
 
 > [!Note]
-> The filters for al activities are case sensitive. A value that does not match the case of your filter entry is not returned.
+> The filters for all activities are case sensitive. A value that does not match the case of your filter entry is not returned.
 
 In the activity properties dialog box, several tabs along the left side
 provide access to general and specific settings for the activity.
