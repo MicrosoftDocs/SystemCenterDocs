@@ -32,13 +32,11 @@ runbook.
 
 **To configure the properties for an activity**
 
-1.  Double-click the activity. Alternatively, you can right-click the
-    activity, and then click **Properties**.
+- Double-click the activity. Alternatively, you can right-click the activity, and then click **Properties**.
+- To save your configuration entries, click **Finish**.
 
 > [!Note]
 > The filters for al activities are case sensitive. A value that does not match the case of your filter entry is not returned.
-
-2.  To save your configuration entries, click **Finish**.
 
 In the activity properties dialog box, several tabs along the left side
 provide access to general and specific settings for the activity.
