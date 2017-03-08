@@ -2,7 +2,7 @@
 title: Configuration Manager Integration Pack Activities
 description: Configuration instructions for activities provided by the Configuration Manager integration pack.
 ms.custom: na
-ms.date: 12/02/2016
+ms.date: 03/08/2017
 ms.prod: system-center-threshold
 ms.reviewer: na
 ms.suite: na
@@ -15,6 +15,7 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
+
 # Configuration Manager Integration Pack Activities for System Center 2016 - Orchestrator
 
 Applies To: System Center 2016 - Orchestrator
@@ -37,7 +38,7 @@ runbook.
 > [!Note]
 > The filters for al activities are case sensitive. A value that does not match the case of your filter entry is not returned.
 
-1.  To save your configuration entries, click **Finish**.
+2.  To save your configuration entries, click **Finish**.
 
 In the activity properties dialog box, several tabs along the left side
 provide access to general and specific settings for the activity.
@@ -75,7 +76,7 @@ the activity, allowing you to specify ID values or names of objects to
 be used. Each Value Type property is linked directly to another property
 listed immediately above the Value Type property.
 
-***To configure Value Type properties**
+**To configure Value Type properties**
 
 -   Click the ellipsis **(…)** button next to the **Value Type** field,
     and then select the setting that correctly identifies the type of
@@ -135,7 +136,7 @@ The Mandatory Schedule dialog box contains the following elements:
 -   Click **OK** to save the schedule.
 
 > [!Note]
-> Note: You can create multiple mandatory assignments.
+> You can create multiple mandatory assignments.
 
 **Run Behavior Tab**
 
