@@ -98,28 +98,17 @@ Mandatory Schedule dialog appears.
 The Mandatory Schedule dialog box contains the following elements:
 
   
-  |**Element **|**Description **|
-  |------------|----------------|
-  |Use the following schedule|Enables the **Schedule** group which allows you to define a specific schedule.
-                                        
-                                        The following options are some of those that might be available for setting a recurrence pattern:
-                                        
-                                        1.  **None**: Specifies that the operation does not recur.
-                                        
-                                        2.  **Weekly**: Specifies that the operation recurs every N weeks. If this option is selected, you must specify the day of the week on which the operation will occur.
-                                        
-                                        3.  **Monthly**: Specifies that the operation recurs every N months. If this option is selected, you must specify the day of the month on which the operation will occur.
-                                        
-                                        4.  **Custom interval** (varies depending on the recurrence pattern selected): Specifies the frequency with which the operation will recur. You may set this in terms of minutes, hours, or days.|
-                                        
-
-  |Assign immediately after this event|   Enables the selector for event-based assignment. Options are:
-                                        
-                                        1.  **As soon as possible**: Specifies that the program will automatically run as soon as it reaches the client and all program requirements are met. This value is specified by default.
-                                        
-                                        2.  **Logon**: Specifies that the program will automatically run the next time a user logs on to the client.
-                                        
-                                        3.  **Logoff**: Specifies that the program will automatically run the next time a user logs off the client.
+- Use the following schedule
+  * Enables the **Schedule** group which allows you to define a specific schedule.
+    * **None**: Specifies that the operation does not recur.
+    * **Weekly**: Specifies that the operation recurs every N weeks. If this option is selected, you must specify the day of the week on which the operation will occur.
+    * **Monthly**: Specifies that the operation recurs every N months. If this option is selected, you must specify the day of the month on which the operation will occur.
+    * **Custom interval** (varies depending on the recurrence pattern selected): Specifies the frequency with which the operation will recur. You may set this in terms of minutes, hours, or days.
+- Assign immediately after this event
+  * Enables the selector for event-based assignment. Options are:
+    * **As soon as possible**: Specifies that the program will automatically run as soon as it reaches the client and all program requirements are met. This value is specified by default.
+    * **Logon**: Specifies that the program will automatically run the next time a user logs on to the client.
+    * **Logoff**: Specifies that the program will automatically run the next time a user logs off the client.
 
 **To add a mandatory assignment**
 
