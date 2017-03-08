@@ -1,18 +1,18 @@
 ---
-description:  
-manager:  cfreeman
-ms.topic:  article
+title: Specify a user role for catalog items
+description: Describes how you can specify a user role for catalog items in Service Manager
+manager: carmonm
+ms.topic: article
 author: bandersmsft
 ms.author: banders
-ms.prod:  system-center-2016
+ms.prod: system-center-2016
 keywords:  
 ms.date: 10/12/2016
-title:  How to Specify a User Role for Catalog Items
-ms.technology:  service-manager
-ms.assetid:  85ce5254-2a03-4e37-8e8c-072b263c7e51
+ms.technology: service-manager
+ms.assetid: 85ce5254-2a03-4e37-8e8c-072b263c7e51
 ---
 
-# How to Specify a User Role for Catalog Items
+# Specify a user role for catalog items in Service Manager
 
 >Applies To: System Center 2016 - Service Manager
 
@@ -55,6 +55,3 @@ User roles provide access to catalog groups that contain catalog items. Both ser
 12. On the **Summary** page, review the information, and then click **Create**.
 
 13. On the **Completion** page, click **Close**.
-
-
-

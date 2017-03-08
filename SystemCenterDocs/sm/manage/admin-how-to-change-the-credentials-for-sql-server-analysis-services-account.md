@@ -1,18 +1,18 @@
 ---
-description:  
-manager:  cfreeman
-ms.topic:  article
+title: Change the credentials for SQL Server Analysis Services account
+description: Learn about how to change the credentials for SQL Server Analysis Services account used by Service Manager.
+manager: carmonm
+ms.topic: article
 author: bandersmsft
 ms.author: banders
-ms.prod:  system-center-2016
+ms.prod: system-center-2016
 keywords:  
 ms.date: 10/12/2016
-title:  How to Change the Credentials for SQL Server Analysis Services Account
-ms.technology:  service-manager
-ms.assetid:  f8a1be01-4c9e-4e47-bd5e-d9614ec045bc
+ms.technology: service-manager
+ms.assetid: f8a1be01-4c9e-4e47-bd5e-d9614ec045bc
 ---
 
-# How to Change the Credentials for SQL Server Analysis Services Account
+# Change the credentials for a SQL Server Analysis Services account used by Service Manager
 
 >Applies To: System Center 2016 - Service Manager
 

@@ -1,18 +1,18 @@
 ---
-description:  
-manager:  cfreeman
-ms.topic:  article
+title: Configure general change settings
+description: Learn about how you can configure Service Manager general change settings.
+manager: carmonm
+ms.topic: article
 author: bandersmsft
 ms.author: banders
-ms.prod:  system-center-2016
+ms.prod: system-center-2016
 keywords:  
 ms.date: 10/12/2016
-title:  How to Configure General Change Settings
-ms.technology:  service-manager
-ms.assetid:  3de3a691-b2d7-4133-ad4a-e20a9f0f1475
+ms.technology: service-manager
+ms.assetid: 3de3a691-b2d7-4133-ad4a-e20a9f0f1475
 ---
 
-# How to Configure General Change Settings
+# Configure Service Manager general change settings
 
 >Applies To: System Center 2016 - Service Manager
 
@@ -46,6 +46,3 @@ Use the following procedures to configure settings to specify change request pre
 1.  To validate changes to the prefix code, create a new a change request, and verify that the change request IDs have the prefix that you specified.
 
 2.  To validate changes to the attachment settings, open a change request, and attempt to add a file attachment that violates the settings that you specified.
-
-
-

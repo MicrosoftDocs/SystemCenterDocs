@@ -1,7 +1,7 @@
 ---
-title: System Requirements for System Center 2016 - Service Manager
+title: System Requirements for Service Manager
 manager: carmonm
-description: The article describes System Center 2016 - Service Manager system requirements.
+description: The article describes Service Manager system requirements.
 ms.custom: na
 ms.prod: system-center-2016
 author: bandersmsft

@@ -1,18 +1,18 @@
 ---
+title:  Configure and use Service Manager cmdlets
 description: This article provides an introduction to the Service Manager cmdlets for the Windows PowerShell command-line interface and describes how to get started using them.
-manager:  cfreeman
+manager:  carmonm
 ms.topic:  article
 author: bandersmsft
 ms.author: banders
 ms.prod:  system-center-2016
 keywords:  
 ms.date: 10/12/2016
-title:  Configuring and Using the Service Manager Cmdlets for Windows PowerShell
 ms.technology:  service-manager
 ms.assetid:  f032839d-a148-4dd9-9309-a51a047f197a
 ---
 
-# Configuring and Using the Service Manager Cmdlets for Windows PowerShell
+# Configure and use Service Manager cmdlets for Windows PowerShell
 
 >Applies To: System Center 2016 - Service Manager
 
@@ -26,7 +26,7 @@ The Service Manager cmdlets are implemented in the following two modules:
 
 -   **Microsoft.EnterpriseManagement.Warehouse.Cmdlets**. This module must be imported manually.
 
-## Getting Started with Service Manager Cmdlets for Windows PowerShell
+## Get started with Service Manager cmdlets
 
 Windows PowerShell is a Windows command-line shell that includes an interactive prompt and a scripting environment. Windows PowerShell uses cmdlets to manipulate the Windows PowerShell objects. Service Manager includes many cmdlets that you can use to perform various Service Manager-related tasks without using the Service Manager console. For example, you can use the **Import-SCSMManagementPack** cmdlet to import a management pack.
 
@@ -93,11 +93,11 @@ The administrator cmdlet module is automatically pre-imported in this session.
 
         This command uses the `-online` parameter to access the latest online Help for a cmdlet. It opens a web browser and displays the online Help that is available for *cmdlet-name*.
 
-## List of the Service Manager Cmdlets
+## List of the Service Manager cmdlets
 
 Service Manager supports the following Windows PowerShell cmdlets, which are implemented in two modules: the administrator module and the data warehouse module.
 
-### Administrator Cmdlets in the System.Center.Service.Manager Module
+### Administrator cmdlets in the System.Center.Service.Manager module
 
 |Cmdlet|Description|
 |----------|---------------|
@@ -182,7 +182,7 @@ Service Manager supports the following Windows PowerShell cmdlets, which are imp
 |Update-SCSMUserRole|Sets the UserRole property for a Service Manager user.|
 |Update-SCSMWorkflow|Updates workflow properties.|
 
-### Data Warehouse Cmdlets in the Microsoft.EnterpriseManagement.Warehouse.Cmdlets Module
+### Data Warehouse cmdlets in the Microsoft.EnterpriseManagement.Warehouse.Cmdlets module
 
 |Cmdlet|Description|
 |----------|---------------|

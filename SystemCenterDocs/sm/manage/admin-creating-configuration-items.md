@@ -1,18 +1,18 @@
 ---
-description:  
-manager:  cfreeman
+title: Create configuration items
+description: Learn about creating configuration items in Service Manager.
+manager:  carmonm
 ms.topic:  article
 author: bandersmsft
 ms.author: banders
 ms.prod:  system-center-2016
 keywords:  
 ms.date: 10/12/2016
-title:  Creating Configuration Items
 ms.technology:  service-manager
 ms.assetid:  5eaf4196-7623-480f-b132-2431ab520681
 ---
 
-# Creating Configuration Items
+# Create configuration items in Service Manager
 
 >Applies To: System Center 2016 - Service Manager
 

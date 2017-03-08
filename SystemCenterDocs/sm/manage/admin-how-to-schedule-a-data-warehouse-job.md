@@ -1,18 +1,18 @@
 ---
-description:  
-manager:  cfreeman
-ms.topic:  article
+title: Schedule a data warehouse job
+description: Describes how you can schedule a data warehouse job in Service Manager.
+manager: carmonm
+ms.topic: article
 author: bandersmsft
 ms.author: banders
-ms.prod:  system-center-2016
+ms.prod: system-center-2016
 keywords:  
 ms.date: 10/12/2016
-title:  How to Schedule a Data Warehouse Job
-ms.technology:  service-manager
-ms.assetid:  8f33a637-c203-4146-b1ae-5fb63b349b94
+ms.technology: service-manager
+ms.assetid: 8f33a637-c203-4146-b1ae-5fb63b349b94
 ---
 
-# How to Schedule a Data Warehouse Job
+# Schedule a data warehouse job in Service Manager
 
 >Applies To: System Center 2016 - Service Manager
 

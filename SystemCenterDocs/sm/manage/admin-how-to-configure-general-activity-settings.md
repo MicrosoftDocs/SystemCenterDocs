@@ -1,18 +1,18 @@
 ---
-description:  
-manager:  cfreeman
-ms.topic:  article
+title: Configure general activity settings
+description: Learn about how you can configure Service Manager general activity settings.
+manager: carmonm
+ms.topic: article
 author: bandersmsft
 ms.author: banders
-ms.prod:  system-center-2016
+ms.prod: system-center-2016
 keywords:  
 ms.date: 10/12/2016
-title:  How to Configure General Activity Settings
-ms.technology:  service-manager
-ms.assetid:  87d70344-d44d-4c54-b215-3217a217699b
+ms.technology: service-manager
+ms.assetid: 87d70344-d44d-4c54-b215-3217a217699b
 ---
 
-# How to Configure General Activity Settings
+# Configure Service Manager general activity settings
 
 >Applies To: System Center 2016 - Service Manager
 
@@ -44,6 +44,3 @@ Use the following procedure to configure settings to specify activity prefixes w
 ### To validate activity setting changes
 
 -   To validate changes to any prefix code, create a new change request, and then verify on the **Activities** tab that the activities have the new prefix that you specified.
-
-
-

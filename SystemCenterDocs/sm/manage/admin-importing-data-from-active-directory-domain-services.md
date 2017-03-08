@@ -1,24 +1,20 @@
 ---
-description: This article provides an overview of using a connector to import data from Active Directory Domain Services (AD DS) into Service Manager and it alos describes how to create, synchronize, and enable or disable an Active Directory connector.
-manager:  cfreeman
-ms.topic:  article
+title: Import data from Active Directory Domain Services
+description: This article provides an overview of using a connector to import data from Active Directory Domain Services (AD DS) into Service Manager and it also describes how to create, synchronize, and enable or disable an Active Directory connector.
+manager: carmonm
+ms.topic: article
 author: bandersmsft
 ms.author: banders
-ms.prod:  system-center-2016
+ms.prod: system-center-2016
 keywords:  
 ms.date: 10/12/2016
-title:  Importing Data from Active Directory Domain Services
-ms.technology:  service-manager
-ms.assetid:  d039eac3-e5cd-4f11-ac6c-bb856bafcc92
+ms.technology: service-manager
+ms.assetid: d039eac3-e5cd-4f11-ac6c-bb856bafcc92
 ---
 
-# Importing Data from Active Directory Domain Services
+# Import data from Active Directory Domain Services
 
 >Applies To: System Center 2016 - Service Manager
-
-This section provides an overview of using a connector to import data from Active Directory Domain Services (AD DS) into Service Manager. This section also describes how to create, synchronize, and enable or disable an Active Directory connector.
-
-## About Importing Data from Active Directory Domain Services
 
 The Service Manager database in Service Manager contains information about your enterprise, and it is used by all the parts of your service management structure. You can use an Active Directory connector to add users, groups, printers, and computers (and only these object types) as configuration items into the Service Manager database.
 
@@ -35,7 +31,7 @@ If you must later perform maintenance operations on the Service Manager database
 
 When you import a large number of users from AD DS) or from System Center Configuration Manager, CPU utilization might increase to 100 percent. You will notice this on one core of the CPU. For example, if you import 20,000 users, CPU utilization might remain high for up to an hour. You can mitigate this issue by creating connectors and importing the users into Service Manager before you deploy the product in your enterprise and by scheduling connector synchronization during off hours. Installing Service Manager on a computer that has a multi-core CPU also minimizes the impact of importing a large number of users.
 
-## How to Create an Active Directory Connector
+## Create an Active Directory connector
 
 You can use the following procedures in Service Manager to create,  validate, and confirm the status of an Active Directory connector to import objects from Active Directory Domain Services (AD DS).
 
@@ -103,7 +99,7 @@ You can use the following procedures in Service Manager to create,  validate, an
 
 ![PowerShell symbol](../media/pssymbol.png)You can use a Windows PowerShell command to create a new Service Manager Active Directory connector. For information about how to use Windows PowerShell to create a new Service Manager Active Directory connector, see [New-SCADConnector](http://go.microsoft.com/fwlink/?LinkId=225349).
 
-## How to Synchronize an Active Directory Connector
+## Synchronize an Active Directory Connector
 
 To ensure that the Service Manager database is up to date, the Active Directory connector synchronizes with Active Directory Domain Services (AD DS) every hour after the initial synchronization. However, you can use the following procedure to manually synchronize the connector and validate that it is synchronized.
 
@@ -132,7 +128,7 @@ To ensure that the Service Manager database is up to date, the Active Directory 
 
 5.  In the **Configuration Items** pane, click **Users**. Verify that any new users and groups in AD DS appear in the middle pane.
 
-## How to Disable and Enable an Active Directory Connector
+## Disable and enable an Active Directory connector
 
 You can use the following procedure to disable or enable an Active Directory connector in Service Manager and validate its change in status.
 
@@ -172,7 +168,7 @@ You can use the following procedure to disable or enable an Active Directory con
 
 -   For information about how to use Windows PowerShell to update properties of a Service Manager connector, see [Update-SCSMConnector](http://go.microsoft.com/fwlink/p/?LinkID=225382).
 
-## How to Import Data from Other Domains
+## Import data from other domains
 
 You can import data from domains other than the domain in which Service Manager resides. For example, Service Manager is installed in domain A (where the fully qualified domain name [FQDN] is a.woodgrove.com), and you want to import data from domain B (where the FQDN is b.woodgrovetest.net). In this scenario, you must think about how to specify the data source path and how to specify the Run As account.
 

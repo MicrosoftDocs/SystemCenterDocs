@@ -1,18 +1,18 @@
 ---
-description:  
-manager:  cfreeman
-ms.topic:  article
+title: Configure incident workflows
+description: Learn about how to configure Service Manager incident workflows.
+manager: carmonm
+ms.topic: article
 author: bandersmsft
 ms.author: banders
-ms.prod:  system-center-2016
+ms.prod: system-center-2016
 keywords:  
 ms.date: 10/12/2016
-title:  How to Configure Incident Workflows
-ms.technology:  service-manager
-ms.assetid:  bf7c1bd2-c986-4979-b7c6-b6ccf300a632
+ms.technology: service-manager
+ms.assetid: bf7c1bd2-c986-4979-b7c6-b6ccf300a632
 ---
 
-# How to Configure Incident Workflows
+# Configure Service Manager incident workflows
 
 >Applies To: System Center 2016 - Service Manager
 

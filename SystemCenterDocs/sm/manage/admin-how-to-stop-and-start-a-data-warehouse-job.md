@@ -1,18 +1,18 @@
 ---
-description:  
-manager:  cfreeman
-ms.topic:  article
+title: Stop and start a data warehouse job
+description: Describes how you can stop and start a data warehouse job in Service Manager
+manager: carmonm
+ms.topic: article
 author: bandersmsft
 ms.author: banders
-ms.prod:  system-center-2016
+ms.prod: system-center-2016
 keywords:  
 ms.date: 10/12/2016
-title:  How to Stop and Start a Data Warehouse Job
-ms.technology:  service-manager
-ms.assetid:  ab2b063e-6094-4ec5-9ecc-48754c30438c
+ms.technology: service-manager
+ms.assetid: ab2b063e-6094-4ec5-9ecc-48754c30438c
 ---
 
-# How to Stop and Start a Data Warehouse Job
+# Stop and start a data warehouse job in Service Manager
 
 >Applies To: System Center 2016 - Service Manager
 

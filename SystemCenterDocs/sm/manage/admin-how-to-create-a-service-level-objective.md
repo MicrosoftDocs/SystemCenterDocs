@@ -1,18 +1,18 @@
 ---
-description:  
-manager:  cfreeman
-ms.topic:  article
+title: Create or edit a service level objective
+description: Describes how you can create or edit a service level objective in Service Manager.
+manager: carmonm
+ms.topic: article
 author: bandersmsft
 ms.author: banders
-ms.prod:  system-center-2016
+ms.prod: system-center-2016
 keywords:  
 ms.date: 10/12/2016
-title:  How to Create or Edit a Service Level Objective
-ms.technology:  service-manager
-ms.assetid:  703da8fd-217f-4cba-bb5c-56b7f06c34e1
+ms.technology: service-manager
+ms.assetid: 703da8fd-217f-4cba-bb5c-56b7f06c34e1
 ---
 
-# How to Create or Edit a Service Level Objective
+# Create or edit a service level objective in Service Manager
 
 >Applies To: System Center 2016 - Service Manager
 
@@ -48,7 +48,7 @@ In order to create a service level objective, it is easier if you have already c
 
 13. On the **Completion** page, click **Close**.
 
-## How to Edit a Service Level Objective
+## Edit a service level objective
 
 In Service Manager, you can edit a service level objective to modify relationships between a queue and a service level, a calendar item and a time metric, and actions that occur before or after service level breaches. Afterward, when you view incidents or service requests and they approach their warning time, you will see a notification bar stating that the item is about to breach. You can also create periodic notifications if you want analysts to receive email for incidents or service requests that might breach their service level objective.
 

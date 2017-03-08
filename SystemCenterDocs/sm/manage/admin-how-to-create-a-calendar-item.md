@@ -1,18 +1,18 @@
 ---
-description:  
-manager:  cfreeman
-ms.topic:  article
+title: Create or edit a calendar item
+description: Learn about how you can create or edit a Service Manager calendar item.
+manager: carmonm
+ms.topic: article
 author: bandersmsft
 ms.author: banders
-ms.prod:  system-center-2016
+ms.prod: system-center-2016
 keywords:  
 ms.date: 10/12/2016
-title:  How to Create or Edit a Calendar Item
-ms.technology:  service-manager
-ms.assetid:  b06ad28d-a10f-475a-9bce-ade1197cd169
+ms.technology: service-manager
+ms.assetid: b06ad28d-a10f-475a-9bce-ade1197cd169
 ---
 
-# How to Create or Edit a Calendar Item
+# Create or edit a Service Manager calendar item
 
 >Applies To: System Center 2016 - Service Manager
 
@@ -36,7 +36,7 @@ You create a calendar item to define work days, work hours, and holidays in Serv
 
 8.  Click **OK** to close the **Create/Edit Calendar** dialog box.
 
-## How to Edit a Calendar Item
+## Edit a calendar item
 
 You edit a calendar item in Service Manager to update work days, work hours, and holidays. After you edit a calendar item, you will use it as part of a service level objective, where it is measured against a time metric. If the calendar is already associated with a service level objective, it appears in the **Related SLA(s)** area.
 
