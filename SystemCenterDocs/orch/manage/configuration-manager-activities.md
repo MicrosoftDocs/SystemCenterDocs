@@ -208,12 +208,7 @@ automatically populate the property values needed by activities.
 1.  Right-click the property value box, click **Subscribe**, and then
     click **Published Data**.
 
-2.  Click the **Activity** drop-down box and select the activity from
-    which you want to obtain the data.
+2.  Click the **Activity** drop-down box and select the activity from which you want to obtain the data. To view additional data elements common to all policies, select **Show Common Published Data**.
 
-> To view additional data elements common to all policies, select **Show
-> Common Published Data**.
-
-1.  Click the published data element that you want to use, and then
-    click **OK**.
+3.  Click the published data element that you want to use, and then click **OK**.
 
