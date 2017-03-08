@@ -1,6 +1,7 @@
 ---
-title: Upgrade Planning for System Center 2016 - Service Manager
-manager: cfreeman
+title: Plan for upgrade to System Center 2016 - Service Manager
+description: This article outlines the procedures needed to upgrade to System Center 2016.
+manager: carmonm
 ms.custom: na
 ms.prod: system-center-2016
 author: bandersmsft
@@ -14,17 +15,17 @@ ms.topic: article
 ms.assetid: cad46180-3c12-4eb2-a4bc-99fd88d2f3e7
 ---
 
-# Upgrade Planning for System Center 2016 - Service Manager
+# Plan for your upgrade to System Center 2016 - Service Manager
 
 >Applies To: System Center 2016 - Service Manager
 
-This guide outlines the procedures necessary to upgrade to System Center 2016.  
+This article outlines the procedures necessary to upgrade to System Center 2016.  
 
  An in\-place upgrade from Service Manager 2012 R2 to Service Manager 2016 is supported. An in\-place upgrade is an upgrade of all Service Manager parts on the same hardware. Other approaches, such as side\-by\-side upgrades or rolling upgrades, are not supported.  
 
  Upgrading to Service Manager 2016 requires preparation. We recommend that you install Service Manager in a lab environment and then replicate your production databases into the lab. You then perform an upgrade of the new installation in the lab, and once that has proven successful, perform the same upgrade to Service Manager SP1 in the production environment.  
 
-## Evaluation and Select Versions  
+## Evaluation and Select versions  
 
  The release of System Center 2016 - Service Manager was available in two different versions:  
 
@@ -42,7 +43,7 @@ The following upgrade paths are supported to Service Manager 2016.
 > [!NOTE]  
 >  Upgrading from an evaluation version of Service Manager 2012 R2 to an evaluation version of Service Manager 2016 *does not* extend the 180\-day evaluation period.  
 
-## Installation Location  
+## Installation location  
 
 The default folder for installing Service Manager is \\Program Files\\Microsoft System Center\\Service&nbsp;Manager. However, when you perform the upgrade to Service Manager, the software is installed in the folder that Service Manager previously used. If Service Manager 2010 or Service Manager 2012 was previously upgraded, then the following folders could be used:  
 
@@ -50,22 +51,22 @@ The default folder for installing Service Manager is \\Program Files\\Microsoft 
 \\Program Files\\Microsoft System Center\\Service&nbsp;Manager&nbsp;2012
 
 
-## Hardware Requirements for System Center 2016 - Service Manager  
+## Hardware requirements for System Center 2016 - Service Manager  
 
- All hardware requirements for System Center 2016 - Service Manager are fully documented in [Hardware Requirements for System Center 2016 - Service Manager](../../system-requirements/Minimum-Hardware-Recommendations.md).  
+ All hardware requirements for System Center 2016 - Service Manager are fully documented in [Hardware Requirements for System Center 2016 - Service Manager](../plan/plan-hardware-requirements-for-system-center-2016-service-manager.md).  
 
-## Software Requirements for System Center 2016 - Service Manager 
+## Software requirements for System Center 2016 - Service Manager
 
  To upgrade to System Center 2016, you must first apply the Update Rollup 9 or later for System Center 2012 R2 - Service Manager.  
 
 
- All software requirements for System Center 2016 - Service Manager are fully documented in [Software Requirements for System Center 2016 - Service Manager](../../system-requirements/system-requirements.md).  
+ All software requirements for System Center 2016 - Service Manager are fully documented in [Software Requirements for System Center 2016 - Service Manager](../plan/plan-software-requirements-for-system-center-2016-service-manager.md).  
 
  ## Impact on custom development
 
  With the System Center 2016 - Service Manager release, the product has moved to support .Net 4.5.1. The tool set to support this movement to .Net 4.5.1 required to break a few dependencies and has led to the movement of classes across the assemblies. Hence, the upgrade to Service Manager 2016 may break the custom solutions made in house or by 3rd party (non-Microsoft). Please refer the [steps to upgrade your custom solutions](https://blogs.technet.microsoft.com/servicemanager/2016/08/03/scsm-2016-upgrade-steps-for-custom-development/), to avoid getting into this problem.
 
-## Preventing MPSync Jobs From Failing  
+## Preventing MPSync jobs from railing  
 
  **Before Upgrade**  
 
@@ -136,11 +137,11 @@ select * from ManagementPack where mpname like '%SystemDerivedMp.Microsoft.Syste
 
 4.  Restart the failed base management pack deployment using the Service Manager console.  
 
-## Testing the Upgrade in a Lab Environment  
+## Testing the upgrade in a lab environment  
 
  We recommend that you test the upgrade to System Center 2016 - Service Manager in a lab environment.  
 
-## Upgrade Order and Timing  
+## Upgrade order and timing  
 
  The order of your upgrades is important. Perform the upgrade steps in the following order:  
 
@@ -159,18 +160,18 @@ select * from ManagementPack where mpname like '%SystemDerivedMp.Microsoft.Syste
  The timing of your upgrades is also important. After you upgrade your data warehouse management server, you must both update the Service Manager management server and deploy the new Self-Service Portal. After you upgrade your initial Service Manager management server, you must be prepared to upgrade your Service Manager console or Service Manager consoles, additional Service Manager management servers, and Self-Service Portal at the same time.  
 
 
-## Database Impacts  
+## Database impacts  
 
  With System Center 2016 - Service Manager, you have the option to install Operations Manager and Configuration Manager data marts. Selecting this option will result in additional space requirements on the hard disk drive for the two databases, as well as associated file groups and log files.  
 
-## Backing Up Service Manager Before Upgrading  
+## Back up Service Manager before you upgrade  
 
  Before you start any upgrade, we recommend that you back up your Service Manager and data warehouse databases and the encryption key. If you have already backed up your databases and encryption key, you can continue to run the upgrade. Otherwise, review the backup procedures in the [Disaster Recovery Guide for System Center - Service Manager](../manage/disaster-disaster-recovery-guide-for-system-center-2016-service-manager.md) before you continue the upgrade.  
 
-## Registering with the Service Manager Data Warehouse  
+## Register the Service Manager data warehouse  
 
  If you have installed a data warehouse management server in your environment, as part of the upgrade process, you must be able to view the status of the data warehouse jobs. You cannot perform this task if you have not registered with the Service Manager data warehouse. If the **Data Warehouse** button is not visible in the Service Manager console, complete the procedure in "Registering with the Service Manager Data Warehouse to Enable Reporting" in the [Deployment Guide for System Center 2016 - Service Manager](deploy-deploying-system-center-2016-service-manager.md).  
 
-## Encryption Keys  
+## Encryption keys  
 
  When you have finished running Setup to either install or upgrade to System Center 2016 - Service Manager, you are prompted to open the Encryption Backup or Restore Wizard. If you have previously backed up the encryption keys, no additional action is required. If you never backed up the encryption keys, use the Encryption Key Backup or Restore Wizard to back up the encryption keys on the Service Manager management servers.  

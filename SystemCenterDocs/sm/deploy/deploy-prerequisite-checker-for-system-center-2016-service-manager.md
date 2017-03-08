@@ -1,6 +1,7 @@
 ---
-title: Prerequisite Checker for System Center - Service Manager
-manager: cfreeman
+title: Prerequisite checker for System Center - Service Manager
+description: Check for errors before installation with the Prerequisite checker
+manager: carmonm
 ms.custom: na
 ms.prod: system-center-2016
 author: bandersmsft
@@ -14,7 +15,7 @@ ms.topic: article
 ms.assetid: 84bd6b90-52d0-4aa0-8f2f-27ee402e3e13
 ---
 
-# Prerequisite Checker for System Center - Service Manager
+# Use the Prerequisite checker before you deploy Service Manager
 
 >Applies To: System Center 2016 - Service Manager
 

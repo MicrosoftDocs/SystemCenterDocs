@@ -1,6 +1,7 @@
 ---
-title: How to Back Up the Production Service Manager Database
-manager: cfreeman
+title: Back up the production Service Manager database
+description: You should back up the production Service Manager database to help you recover it in the future.
+manager: carmonm
 ms.custom: na
 ms.prod: system-center-2016
 author: bandersmsft
@@ -14,7 +15,7 @@ ms.topic: article
 ms.assetid: 4ebe6cb4-0352-4c71-b2a9-0a235c0102d5
 ---
 
-# How to Back Up the Production Service Manager Database
+# Back up the production Service Manager database for future recovery
 
 >Applies To: System Center 2016 - Service Manager
 

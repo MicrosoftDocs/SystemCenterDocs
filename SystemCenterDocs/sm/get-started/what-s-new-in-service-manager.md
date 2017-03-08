@@ -1,5 +1,6 @@
 ---
-description: Describes new features and other changes in System Center 2016 - Service Manager
+title:  What's new in Service Manager
+description: Describes new features and other changes in System Center 2016 - Service Manager.
 manager:  carmonn
 ms.topic:  article
 author:  bandersmsft
@@ -7,12 +8,11 @@ ms.author: banders
 ms.prod:  system-center-2016
 keywords:  
 ms.date: 01/04/2017
-title:  What's new in Service Manager
 ms.technology:  service-manager
 ms.assetid:  3eeb3265-88e0-47ed-b761-07f4e0634959
 ---
 
-# What's New in Service Manager
+# What's new in System Center 2016 - Service Manager
 
 >Applies To: System Center 2016 - Service Manager
 
@@ -228,7 +228,7 @@ For more information and installing and customizing the portal, see [Deploy the 
 > [!NOTE]
 > The older Silverlight and SharePoint-based Self-Service portal has been removed.
 
-## Spell check in SM console
+## Spell check in Service Manager console
 
 Spell check is now enabled for work item forms. It is enabled for 17 out of the 21 Service Manager supported languages [Chinese (Simplified), Chinese (Traditional), Japanese and Korean are currently not supported]. To use this feature, install your desired language pack and set the keyboard IME for your desired language. This feature is enabled by default, but can be switched by navigating to **View** > **spell check**.
 

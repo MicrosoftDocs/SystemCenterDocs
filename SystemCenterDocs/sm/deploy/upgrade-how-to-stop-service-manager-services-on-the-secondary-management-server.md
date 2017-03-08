@@ -1,5 +1,6 @@
 ---
-title: How to Stop Service Manager Services on the Secondary Management Server
+title: Stop Service Manager services on the secondary management server
+description: You need to stop Service Manager services on the secondary management server before you upgrade.
 manager: cfreeman
 ms.custom: na
 ms.prod: system-center-2016
@@ -14,7 +15,7 @@ ms.topic: article
 ms.assetid: b4f30bdb-d45e-4390-b873-509d0b012398
 ---
 
-# How to Stop Service Manager Services on the Secondary Management Server
+# Stop Service Manager services on the secondary management server before you upgrade
 
 >Applies To: System Center 2016 - Service Manager
 

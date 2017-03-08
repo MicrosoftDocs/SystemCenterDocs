@@ -1,6 +1,7 @@
 ---
-title: How to Disable Service Manager Connectors in the Production Environment
-manager: cfreeman
+title: Disable Service Manager connectors in the production environment
+description: Disable Service Manager connectors in the production environment before you upgrade.
+manager: carmonm
 ms.custom: na
 ms.prod: system-center-2016
 author: bandersmsft
@@ -14,7 +15,7 @@ ms.topic: article
 ms.assetid: 4bf9b574-f6d0-46f1-a989-aa0464f9a1ed
 ---
 
-# How to Disable Service Manager Connectors in the Production Environment
+# Disable Service Manager connectors in the production environment before you upgrade
 
 >Applies To: System Center 2016 - Service Manager
 

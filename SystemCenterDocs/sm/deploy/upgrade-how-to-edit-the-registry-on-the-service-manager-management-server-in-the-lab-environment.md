@@ -1,6 +1,7 @@
 ---
-title: How to Edit the Registry on the Service Manager Management Server in the Lab Environment
-manager: cfreeman
+title: Edit the registry on the Service Manager management server in the lab environment
+description: Edit the registry on the Service Manager management server in the lab environment before you upgrade.
+manager: carmonm
 ms.custom: na
 ms.prod: system-center-2016
 author: bandersmsft
@@ -14,7 +15,7 @@ ms.topic: article
 ms.assetid: 7aa3ae77-88e7-4ff8-bb63-814286b7089d
 ---
 
-# How to Edit the Registry on the Service Manager Management Server in the Lab Environment
+# Edit the registry on the Service Manager Management Server in the lab environment before you upgrade.
 
 >Applies To: System Center 2016 - Service Manager
 

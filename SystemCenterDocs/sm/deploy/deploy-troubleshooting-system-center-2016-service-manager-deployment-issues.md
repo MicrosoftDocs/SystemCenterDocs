@@ -1,6 +1,7 @@
 ---
-title: Troubleshooting System Center - Service Manager Deployment Issues
-manager: cfreeman
+title: Troubleshoot System Center - Service Manager deployment issues
+description: Troubleshoot Service Manager deployment issues.
+manager: carmonm
 ms.custom: na
 ms.prod: system-center-2016
 author: bandersmsft
@@ -14,7 +15,7 @@ ms.topic: article
 ms.assetid: 4aee1627-a7c4-4299-847a-a5bfb87a4133
 ---
 
-# Troubleshooting System Center 2016 - Service Manager Deployment Issues
+# Troubleshoot Service Manager deployment issues to resolve problems
 
 >Applies To: System Center 2016 - Service Manager
 
@@ -22,15 +23,15 @@ An installation log file is captured during the installation of System Center 20
 
 
 
-## Installation Log Files
+## Installation log files
 
 A log file, SCSMInstall.log, captures the progress of the installation. You can use this log file to troubleshoot a failed installation. You can find this log file in the %temp% folder. To troubleshoot installation problems, you can open the log files and search for a line that reads *Return Value 3*. If you find such a line in the log file, look above this line for any indication that a particular step failed.
 
-## Event Logs
+## Event logs
 
 Service Manager event logs are located in Event Viewer, in the **Application and Service Logs/Microsoft/Operations Manager** folder.
 
-## Create Database error
+## Create database error
 
 During setup, when you were configuring Service Manager or data warehouse databases, you were given the opportunity to specify how much disk space to allocate for each database. The default setting is 2,000 megabytes (MB) (2 gigabytes (GB)). In addition to the disk space that is required for the database, Service Manager sets aside additional space for file groups and log files. The additional space that is required for the file groups and log files can be equal to the space that is required for the database.
 

@@ -1,6 +1,7 @@
 ---
-title: How to Prepare the Service Manager Database in the Lab Environment
-manager: cfreeman
+title: Prepare the Service Manager database in the lab environment
+description: Prepare the Service Manager database in the lab environment before you upgrade.
+manager: carmonm
 ms.custom: na
 ms.prod: system-center-2016
 author: bandersmsft
@@ -14,7 +15,7 @@ ms.topic: article
 ms.assetid: 7d3b8b19-77f9-4a96-a117-8ffef08da01a
 ---
 
-# How to Prepare the Service Manager Database in the Lab Environment
+# Prepare the Service Manager database in the lab environment before you upgrade.
 
 >Applies To: System Center 2016 - Service Manager
 
@@ -148,7 +149,7 @@ Use the following procedure to prepare the Service Manager database in the lab e
 
 18. Close **Microsoft SQL Server Management Studio**.  
 
-### To configure the Lab Service Manager Management Server to use the Lab database  
+### To configure the lab Service Manager management server to use the lab database  
 
 -   Using Registry Editor, expand the following path and update **DatabaseServerName** :  
 
