@@ -1,6 +1,7 @@
 ---
-title: How to Disable Email Notifications in the Production Environment
-manager: cfreeman
+title: Disable email notifications in your production environment
+description: Before you upgrade, disable email notifications in the production environment.
+manager: carmonm
 ms.custom: na
 ms.prod: system-center-2016
 author: bandersmsft
@@ -14,13 +15,13 @@ ms.topic: article
 ms.assetid: 1317d2e6-b47b-41c0-826b-f7a4b3adf11b
 ---
 
-# How to Disable Email Notifications in the Production Environment
+# Disable email notifications in the production environment before you upgrade
 
 >Applies To: System Center 2016 - Service Manager
 
 Use the following procedure to disable incoming and outbound E\-mail notifications in the production environment.  
 
-### To disable the outbound E\-mail notifications  
+### To disable the outbound email notifications  
 
 1.  In the Service Manager console, click **Administration**.  
 
@@ -32,7 +33,7 @@ Use the following procedure to disable incoming and outbound E\-mail notificatio
 
 5.  Clear the **Enable e\-mail notifications** check box.  
 
-### To disable incoming E\-mail notifications  
+### To disable incoming email notifications  
 
 1.  In the Service Manager console, select **Administration**.  
 

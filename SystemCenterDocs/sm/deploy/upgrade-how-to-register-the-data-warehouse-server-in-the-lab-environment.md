@@ -1,6 +1,7 @@
 ---
-title: How to Register the Data Warehouse Server in the Lab Environment
-manager: cfreeman
+title: Register the data warehouse server in the lab environment
+description: You need to register the data warehouse server in the lab environment before you upgrade.
+manager: carmonm
 ms.custom: na
 ms.prod: system-center-2016
 author: bandersmsft
@@ -14,7 +15,7 @@ ms.topic: article
 ms.assetid: ab0ec9ba-ba35-4a29-b933-472dfd18276a
 ---
 
-# How to Register the Data Warehouse Server in the Lab Environment
+# Register the data warehouse server in the lab environment before you upgrade
 
 >Applies To: System Center 2016 - Service Manager
 

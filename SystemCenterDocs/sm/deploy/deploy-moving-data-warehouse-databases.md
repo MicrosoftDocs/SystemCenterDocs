@@ -1,6 +1,7 @@
 ---
-title: Moving Data Warehouse Databases
-manager: cfreeman
+title: Moving data warehouse databases
+description: The article describes how to move Service Manager data warehouse databases.
+manager: carmonm
 ms.custom: na
 ms.prod: system-center-2016
 author: bandersmsft
@@ -14,11 +15,11 @@ ms.topic: article
 ms.assetid: 85180b6f-afda-4940-a9f3-3473ad84f30b
 ---
 
-# Moving Data Warehouse Databases
+# Moving data warehouse databases
 
 >Applies To: System Center 2016 - Service Manager
 
-The following high\-level steps are required to move the Data Warehouse databases. Each step in this list links to an associated procedure later in this document.  
+The following high\-level steps are required to move the data warehouse databases. Each step in this list links to an associated procedure later in this document.  
 
 1. Locate user accounts and instances of SQL Server
 2. Stop Service Manager services

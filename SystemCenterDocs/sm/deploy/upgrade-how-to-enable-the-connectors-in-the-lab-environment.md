@@ -1,6 +1,7 @@
 ---
-title: How to Enable the Connectors in the Lab Environment
-manager: cfreeman
+title: Enable connectors in the lab environment
+description: You need to enable the connectors in the lab environment before you upgrade.
+manager: carmonm
 ms.custom: na
 ms.prod: system-center-2016
 author: bandersmsft
@@ -14,7 +15,7 @@ ms.topic: article
 ms.assetid: 20ec2aaa-9fee-463b-a1d7-9cb272d8dd73
 ---
 
-# How to Enable the Connectors in the Lab Environment
+# Enable the connectors in the lab environment before you upgrade
 
 >Applies To: System Center 2016 - Service Manager
 

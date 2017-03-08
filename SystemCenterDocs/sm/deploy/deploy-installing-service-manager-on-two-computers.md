@@ -1,6 +1,7 @@
 ---
-title: Installing Service Manager on Two Computers
-manager: cfreeman
+title: Install Service Manager on two computers
+description: To evaluate Service Manager, you can install the Service Manager management server and data warehouse management server on two computers.
+manager: carmonm
 ms.custom: na
 ms.prod: system-center-2016
 author: bandersmsft
@@ -14,7 +15,7 @@ ms.topic: article
 ms.assetid: 95b4f9e4-e6f3-4d04-9b11-aeba6bea22ec
 ---
 
-# Installing Service Manager on Two Computers
+# Install Service Manager on two computers
 
 >Applies To: System Center 2016 - Service Manager
 
@@ -27,7 +28,7 @@ If you want to evaluate System Center - Service Manager and its reporting capabi
 > [!IMPORTANT]  
 >  For this release, Service Manager does not support case\-sensitive instance names. Setup will display a warning if you attempt to install Service Manager on a case\-sensitive instance of Microsoft SQL&nbsp;Server.  
 
-## Install the Service Manager Data Warehouse (Two-Computer Scenario)
+## Install the Service Manager data warehouse (two-computer scenario)
 
 As the second step in the two\-computer installation process for System Center - Service Manager, deploy the data warehouse management server and the data warehouse databases on the second computer. During Setup, you will be prompted to provide credentials for the following accounts:  
 
@@ -94,7 +95,7 @@ As the second step in the two\-computer installation process for System Center -
 18. On the **Setup completed successfully** page, we recommend that you leave **Open the Encryption Backup or Restore Wizard** selected, and then click **Close**. For more information about backing up the encryption key, see [Completing Deployment by Backing Up the Encryption Key](deploy-completing-deployment-by-backing-up-the-encryption-key.md).
 
 
-## Install the Service Manager Data Warehouse (Two-Computer Scenario)
+## Install the Service Manager data warehouse (two-computer scenario)
 
 As the second step in the two\-computer installation process for System Center - Service Manager, deploy the data warehouse management server and the data warehouse databases on the second computer. During Setup, you will be prompted to provide credentials for the following accounts:  
 
@@ -161,7 +162,7 @@ As the second step in the two\-computer installation process for System Center -
 18.   On the **Setup completed successfully** page, we recommend that you leave **Open the Encryption Backup or Restore Wizard** selected, and then click **Close**. For more information about backing up the encryption key, see [Completing Deployment by Backing Up the Encryption Key](deploy-completing-deployment-by-backing-up-the-encryption-key.md).
 
 
-## Validate the Two-Computer Installation
+## Validate the two-computer installation
 
 You can use the following procedures to validate the two\-computer installation of System Center - Service Manager. In these procedures, the *first computer* is the computer on which you installed the Service Manager management server, the Service Manager database, and Service Manager console. The *second computer* is the computer that hosts the data warehouse management server and the data warehouse databases.  
 
