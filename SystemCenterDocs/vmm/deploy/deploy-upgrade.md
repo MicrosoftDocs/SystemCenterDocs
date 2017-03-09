@@ -4,8 +4,8 @@ title: Upgrade VMM
 description: This article helps you to upgrade your existing VMM servers and databases to System Center 2016 - VMM
 author: rayne-wiselman
 ms.author: raynew
-manager: cfreemanwa
-ms.date: 11/09/2016
+manager: cfreeman
+ms.date: 03/09/2016
 ms.topic: article
 ms.prod:  system-center-threshold
 ms.technology: virtual-machine-manager
@@ -23,7 +23,9 @@ This article describes prerequisites for upgrading to System Center 2016 - Virtu
 - Complete all jobs that are currently running in VMM. You can use the console to view the jobs’ status. All job history is deleted during the upgrade.
 - Close any connections to the VMM management server, including the VMM console and the VMM command shell. Close any other programs that are running on the VMM management server.
 - Ensure that there are no pending restarts on the computers on which the VMM roles are installed. For example, if you have installed a server role by using Server Manager or have applied a security update, you may need to restart the computer. After you have restarted the computer, sign in to the computer with the same user account to finish the installation of the server role or the security update.
-- If you've deployed VMM with Azure Site Recovery make sure the latest version of the Microsoft Azure Site Recovery Provider is installed on the VMM management server. After the upgrade, you'll need to reinstall the Provider.
+- If your current VMM deployment is integrated with Azure Site Recovery, note that:
+	- Site Recovery settings can't be upgraded. After the upgrade you need to redeploy VMM with Site Recovery for [replication to Azure](https://docs.microsoft.com/azure/site-recovery/site-recovery-vmm-to-azure), or [replication to a secondary site](https://docs.microsoft.com/azure/site-recovery/site-recovery-vmm-to-vmm).
+	- Read this [blog entry](https://azure.microsoft.com/blog/azure-site-recovery-windows-server-2016-asr/) for details of Hyper-V support when running VMM 2016.
 - Perform a full backup of the VMM database.
 - Ensure that the server meets all requirements for VMM, and that prerequisites are in place [Learn more](../plan/plan-install.md)
 - If needed, upgrade SQL Server to a supported version.
@@ -200,12 +202,9 @@ If you upgraded a database that was configured with AlwaysOn Availability Groups
 
 
 
-## Restore Azure Site Recovery
+## Redeploy Azure Site Recovery
 
-If you've deployed Azure Site Recovery to replicate VMs in VMM private clouds, you need to perform a few steps to restore the Windows Azure Hyper-V Recovery Manager Provider.
-
-1. Reinstall the latest version of Microsoft Azure Site Recovery Provider. This restores the Provider registration information that was removed during the VMM upgrade.
-2. In the Azure portal > **Jobs**, wait for the Repair Provider job to complete.
+If Azure Site Recovery was integrated into your VMM 2012 R2 deployment, you need to redeploy it with VMM 2016. 
 
 
 ## Update virtual machine templates
