@@ -33,7 +33,6 @@ DPM 2016 accepts volumes for storage. Hence, once a volume is added, DPM will fo
 
 3.	Add these volumes to DPM
 4.	Configure Workload-Aware Storage
-5.	Expand the Volumes when needed by adding disks to the Storage Pool.
 
 ## Create a volume for DPM Modern Backup Storage
 
@@ -65,13 +64,13 @@ After creating the Virtual Disk with sufficient storage, create volumes on the V
 
 ![Review Disk Storage Allocation](../media/dpm2016-add-storage-6.png)
 
-Adding volumes to DPM Disk Storage
+## Adding volumes to DPM Disk Storage
 
 To add a volume to DPM, in the Management pane, Rescan the Storage and Click on Add. This will give a list of all the volumes available to be added for DPM Storage. After they are added to the list of selected volumes, they can also be given a Friendly name for easy recall. Clicking on OK will format these volumes to ReFS to enable DPM to use the benefits of Modern Backup Storage.
 
 ![Review Disk Storage Allocation](../media/dpm2016-add-storage-7.png)
 
-Configure Workload-Aware Storage
+## Configure Workload-Aware Storage
 
 With Workload Aware Storage, the volumes can be selected to preferentially store certain kinds of workloads. For example, expensive volumes that support high IOPS can be configured to store only the workloads that require frequent, high-volume backups like SQL with Transaction Logs. Other workloads that are backed up less frequently, say VMs, can be backed up to other low-cost volumes.
 
