@@ -1,18 +1,18 @@
 ---
-description:  
-manager:  cfreeman
+title:  Service Manager registry keys
+description: Learn about registry keys used by Service Manager.
+manager:  carmonm
 ms.topic:  article
 author: bandersmsft
 ms.author: banders
 ms.prod:  system-center-2016
 keywords:  
 ms.date: 10/12/2016
-title:  Appendix D - Service Manager Registry Keys
 ms.technology:  service-manager
 ms.assetid:  392af14e-a6ba-4e54-b3a0-64621b30dad6
 ---
 
-# Appendix D - Service Manager Registry Keys
+# Registry keys used by Service Manager
 
 >Applies To: System Center 2016 - Service Manager
 
@@ -26,7 +26,7 @@ Service Manager stores many settings in the registry. You seldom have to edit th
 
 -   HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\System Center\2010
 
-## Service Manager Console Registry Keys
+## Service Manager console registry keys
 The keys in this section are used to manage the Service Manager console for the Service Manager console user. These keys are found in the HKEY_CURRENT_USER\Software\Microsoft\System Center\2010\Service Manager\Console directory.
 
 |Key|Description and value|
@@ -49,7 +49,7 @@ The keys in this section are used to manage the Service Manager console for the 
 |HKEY_CURRENT_USER\Software\Microsoft\System Center\2010\Service Manager\Console\ViewDisplaySettings\ DetailPaneExpanded|The Service Manager console details pane is visible when the value is set to 1 and hidden when the value is set to 0.|
 |HKEY_CURRENT_USER\Software\Microsoft\System Center\2010\Service Manager\Console\User Settings\ SDKServiceMachine|Specifies the name of the server that the Service Manager console is connected to.|
 
-## Service Manager Registry Keys
+## Service Manager registry keys
 Keys in this section are used to manage functions that are internal to Service Manager.
 
 |Key|Description and values|

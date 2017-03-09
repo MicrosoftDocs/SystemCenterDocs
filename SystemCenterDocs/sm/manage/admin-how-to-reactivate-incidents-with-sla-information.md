@@ -1,18 +1,18 @@
 ---
-description:  
-manager:  cfreeman
-ms.topic:  article
+title: Reactivate incidents with SLA information
+description: Describes how you can reactivate incidents with SLA information in Service Manager.
+manager: carmonm
+ms.topic: article
 author: bandersmsft
 ms.author: banders
-ms.prod:  system-center-2016
+ms.prod: system-center-2016
 keywords:  
 ms.date: 10/12/2016
-title:  How to Reactivate Incidents with SLA Information
-ms.technology:  service-manager
-ms.assetid:  7e121252-1728-4297-b41f-0b4e1ba92c57
+ms.technology: service-manager
+ms.assetid: 7e121252-1728-4297-b41f-0b4e1ba92c57
 ---
 
-# How to Reactivate Incidents with SLA Information
+# Reactivate incidents with SLA information in Service Manager
 
 >Applies To: System Center 2016 - Service Manager
 

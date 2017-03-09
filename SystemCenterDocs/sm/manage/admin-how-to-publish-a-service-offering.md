@@ -1,18 +1,18 @@
 ---
-description:  
-manager:  cfreeman
-ms.topic:  article
+title: Publish a service offering
+description: Describes how you can publish a service offering in Service Manager.
+manager: carmonm
+ms.topic: article
 author: bandersmsft
 ms.author: banders
-ms.prod:  system-center-2016
+ms.prod: system-center-2016
 keywords:  
 ms.date: 10/12/2016
-title:  How to Publish a Service Offering
-ms.technology:  service-manager
-ms.assetid:  bcede83b-0c4c-4dbd-b943-d62bbcb1242e
+ms.technology: service-manager
+ms.assetid: bcede83b-0c4c-4dbd-b943-d62bbcb1242e
 ---
 
-# How to Publish a Service Offering
+# Publish a Service Offering in Service Manager
 
 >Applies To: System Center 2016 - Service Manager
 

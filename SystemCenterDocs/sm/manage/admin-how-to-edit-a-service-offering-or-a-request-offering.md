@@ -1,18 +1,18 @@
 ---
-description:  
-manager:  cfreeman
-ms.topic:  article
+title: Edit a service offering or a request offering
+description: Describes how you can edit a service offering or a request offering in Service Manager.
+manager: carmonm
+ms.topic: article
 author: bandersmsft
 ms.author: banders
-ms.prod:  system-center-2016
+ms.prod: system-center-2016
 keywords:  
 ms.date: 10/12/2016
-title:  How to Edit a Service Offering or a Request Offering
-ms.technology:  service-manager
-ms.assetid:  fd49432f-f22c-4366-8cfd-16d301a6a46c
+ms.technology: service-manager
+ms.assetid: fd49432f-f22c-4366-8cfd-16d301a6a46c
 ---
 
-# How to Edit a Service Offering or a Request Offering
+# Edit a service offering or a request offering in Service Manager
 
 >Applies To: System Center 2016 - Service Manager
 

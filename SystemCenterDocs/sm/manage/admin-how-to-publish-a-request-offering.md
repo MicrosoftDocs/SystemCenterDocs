@@ -1,18 +1,18 @@
 ---
-description:  
-manager:  cfreeman
-ms.topic:  article
+title: Publish a request offering
+description: Describes how you can publish a request offering in Service Manager.
+manager: carmonm
+ms.topic: article
 author: bandersmsft
 ms.author: banders
-ms.prod:  system-center-2016
+ms.prod: system-center-2016
 keywords:  
 ms.date: 10/12/2016
-title:  How to Publish a Request Offering
-ms.technology:  service-manager
-ms.assetid:  f0c1088f-92a8-40ba-93ec-edf6bd8b5fb3
+ms.technology: service-manager
+ms.assetid: f0c1088f-92a8-40ba-93ec-edf6bd8b5fb3
 ---
 
-# How to Publish a Request Offering
+# Publish a request offering in Service Manager
 
 >Applies To: System Center 2016 - Service Manager
 

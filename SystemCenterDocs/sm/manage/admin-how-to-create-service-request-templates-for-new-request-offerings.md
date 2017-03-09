@@ -1,18 +1,18 @@
 ---
-description: Describes how you can create a new service request template without using the default generic incident request template.
-manager:  cfreeman
-ms.topic:  article
+title: Create service request templates for new request offerings
+description: Describes how you can create a new service request template without using the default generic incident request template in Service Manager.
+manager: carmonm
+ms.topic: article
 author: bandersmsft
 ms.author: banders
-ms.prod:  system-center-2016
+ms.prod: system-center-2016
 keywords:  
 ms.date: 10/12/2016
-title:  How to Create Service Request Templates for New Request Offerings
-ms.technology:  service-manager
-ms.assetid:  78965a33-426c-4d7c-82f2-14f23e32fdc9
+ms.technology: service-manager
+ms.assetid: 78965a33-426c-4d7c-82f2-14f23e32fdc9
 ---
 
-# How to Create Service Request Templates for New Request Offerings
+# Create service request templates for new request offerings in Service Manager
 
 >Applies To: System Center 2016 - Service Manager
 

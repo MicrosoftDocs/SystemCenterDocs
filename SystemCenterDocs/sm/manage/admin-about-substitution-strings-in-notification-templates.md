@@ -1,18 +1,18 @@
 ---
-description:  
-manager:  cfreeman
+title:  About substitution strings in notification templates
+description: Learn about substitution strings used in Service Manager notification templates.
+manager:  carmonm
 ms.topic:  article
 author: bandersmsft
 ms.author: banders
 ms.prod:  system-center-2016
 keywords:  
 ms.date: 10/12/2016
-title:  About Substitution Strings in Notification Templates
 ms.technology:  service-manager
 ms.assetid:  84aa8509-89ed-471c-b716-7724c0a3cd8a
 ---
 
-# About Substitution Strings in Notification Templates
+# About substitution strings in notification templates
 
 >Applies To: System Center 2016 - Service Manager
 

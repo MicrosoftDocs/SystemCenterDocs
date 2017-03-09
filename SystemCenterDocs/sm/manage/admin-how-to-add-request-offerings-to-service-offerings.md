@@ -1,18 +1,18 @@
 ---
-description:  
-manager:  cfreeman
-ms.topic:  article
+title: How to add request offerings to service offerings
+description: Learn about how to add request offerings to service offerings in Service Manager.
+manager: carmonm
+ms.topic: article
 author: bandersmsft
 ms.author: banders
-ms.prod:  system-center-2016
+ms.prod: system-center-2016
 keywords:  
 ms.date: 10/12/2016
-title:  How to Add Request Offerings to Service Offerings
-ms.technology:  service-manager
+ms.technology: service-manager
 ms.assetid:  d8a44806-ddfd-4a5d-8286-c167bb2b9595
 ---
 
-# How to Add Request Offerings to Service Offerings
+# How to add request offerings to service offerings in Service Manager
 
 >Applies To: System Center 2016 - Service Manager
 
