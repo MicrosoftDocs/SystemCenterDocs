@@ -48,8 +48,7 @@ Create a virtual disk out of this Storage Pool and select the layout to be Simpl
 
 ![Review Disk Storage Allocation](../media/dpm2016-add-storage-2.png)
 
-Step 2: Now add as many disks as needed and extend the virtual disk
-Having created a Virtual disk with Simple layout, any more disks that may be needed for storing backups.
+Step 2: Now add as many disks as needed and extend the virtual disk, with Simple layout.
 
 ![Review Disk Storage Allocation](../media/dpm2016-add-storage-3.png)
 
