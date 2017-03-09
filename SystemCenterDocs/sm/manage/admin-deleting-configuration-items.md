@@ -1,24 +1,24 @@
 ---
-description:  
-manager:  cfreeman
-ms.topic:  article
+title:  Delete configuration items
+description: Learn about deleting configuration items in Service Manager.
+manager: carmonm
+ms.topic: article
 author: bandersmsft
 ms.author: banders
 ms.prod:  system-center-2016
 keywords:  
 ms.date: 10/12/2016
-title:  Deleting Configuration Items
-ms.technology:  service-manager
-ms.assetid:  8c69ac89-eb91-4a06-87f9-8e0c34120255
+ms.technology: service-manager
+ms.assetid: 8c69ac89-eb91-4a06-87f9-8e0c34120255
 ---
 
-# Deleting Configuration Items
+# Delete configuration items in Service Manager
 
 >Applies To: System Center 2016 - Service Manager
 
 Deleting configuration items is a two-step process, and only members of the Advanced Operators, Authors, and Administrators user roles can initiate the Delete process in Service Manager. The first step does not delete configuration items directly. Instead, this process changes the property values of a configuration item so that the item will only be displayed in a **Deleted Items** view. The state of the configuration item is changed from Active to Pending Delete. A Service Manager administrator can later log on and permanently delete the configuration item from the Service Manager database.
 
-## How to Initiate the Deletion of a Configuration Item
+## How to initiate the deletion of a configuration item
 
 You can use the following procedures to initiate the deletion of a configuration item in Service Manager and validate the initiation of the deletion. Only users who are members of the Advanced Operators, Authors, or Administrators user role can initiate the deletion of a configuration item. Only users who are members of the Administrators user role can complete the deletion of a configuration item.
 
@@ -52,7 +52,7 @@ You can use the following procedures to initiate the deletion of a configuration
 -   For information about how to use Windows PowerShell to retrieve items that have been marked for deletion in Service Manager, see [Get-SCSMDeleteditem](http://go.microsoft.com/fwlink/p/?LinkId=225322).
 
 
-## How to Delete or Restore a Configuration Item
+## How to delete or restore a configuration item
 After members of the Advanced Operators, Authors, or Administrators user roles have initiated the deletion of a configuration item, a Service Manager administrator can use the following procedures to either permanently delete the configuration item or to restore the original properties for this item. You may need to refresh the Service Manager console to update the list of configuration items.
 
 ### To complete the deletion of a configuration item

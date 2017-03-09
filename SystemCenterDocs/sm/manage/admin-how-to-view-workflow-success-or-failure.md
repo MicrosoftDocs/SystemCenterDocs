@@ -1,18 +1,18 @@
 ---
-description:  
-manager:  cfreeman
-ms.topic:  article
+title: View workflow success or failure
+description: Describes how you can view workflow success or failure in Service Manager.
+manager: carmonm
+ms.topic: article
 author: bandersmsft
 ms.author: banders
-ms.prod:  system-center-2016
+ms.prod: system-center-2016
 keywords:  
 ms.date: 10/12/2016
-title:  How to View Workflow Success or Failure
-ms.technology:  service-manager
-ms.assetid:  eb1f9f39-6d4e-4f8c-b236-c1d3bf90f5f3
+ms.technology: service-manager
+ms.assetid: eb1f9f39-6d4e-4f8c-b236-c1d3bf90f5f3
 ---
 
-# How to View Workflow Success or Failure
+# View workflow success or failure in Service Manager
 
 >Applies To: System Center 2016 - Service Manager
 
@@ -35,6 +35,3 @@ Use the following procedure to view the success or failure instances of the work
     The status of each workflow is displayed in the **Status** column.
 
 ![PowerShell symbol](../media/pssymbol.png)You can use a Windows PowerShell command to complete this task. For information about how to use Windows PowerShell to retrieve the status of workflows in Service Manager, see [Get-SCSMWorkflowStatus](http://go.microsoft.com/fwlink/p/?LinkID=225347).
-
-
-

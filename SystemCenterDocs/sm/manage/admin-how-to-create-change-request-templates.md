@@ -1,18 +1,18 @@
 ---
-description:  
-manager:  cfreeman
-ms.topic:  article
+title: Create change request templates
+description: Describes how you can create Service Manager change request templates.
+manager: carmonm
+ms.topic: article
 author: bandersmsft
 ms.author: banders
-ms.prod:  system-center-2016
+ms.prod: system-center-2016
 keywords:  
 ms.date: 10/12/2016
-title:  How to Create Change Request Templates
-ms.technology:  service-manager
-ms.assetid:  4d0d4e7e-e1c4-413b-b5fd-2404973fe026
+ms.technology: service-manager
+ms.assetid: 4d0d4e7e-e1c4-413b-b5fd-2404973fe026
 ---
 
-# How to Create Change Request Templates
+# Create Service Manager change request templates
 
 >Applies To: System Center 2016 - Service Manager
 

@@ -1,18 +1,18 @@
 ---
-description:  
-manager:  cfreeman
-ms.topic:  article
+title: Disable and enable a Configuration Manager connector
+description: Describes how you can disable and enable a Configuration Manager connector in Service Manager.
+manager: carmonm
+ms.topic: article
 author: bandersmsft
 ms.author: banders
-ms.prod:  system-center-2016
+ms.prod: system-center-2016
 keywords:  
 ms.date: 10/12/2016
-title:  How to Disable and Enable a Configuration Manager Connector
-ms.technology:  service-manager
-ms.assetid:  bf2d8feb-76ce-40b8-a3c6-41d6aac284ea
+ms.technology: service-manager
+ms.assetid: bf2d8feb-76ce-40b8-a3c6-41d6aac284ea
 ---
 
-# How to Disable and Enable a Configuration Manager Connector
+# Disable and enable a Configuration Manager connector in Service Manager
 
 >Applies To: System Center 2016 - Service Manager
 

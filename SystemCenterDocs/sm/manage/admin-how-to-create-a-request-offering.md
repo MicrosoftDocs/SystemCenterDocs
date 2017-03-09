@@ -1,18 +1,18 @@
 ---
-description:  
-manager:  cfreeman
-ms.topic:  article
+title: Create a request offering
+description: Learn about how you can create a Service Manager request offering.
+manager: carmonm
+ms.topic: article
 author: bandersmsft
 ms.author: banders
-ms.prod:  system-center-2016
+ms.prod: system-center-2016
 keywords:  
 ms.date: 10/12/2016
-title:  How to Create a Request Offering
-ms.technology:  service-manager
-ms.assetid:  1137cb8c-abcb-4929-bf4b-f3a41db1bf2e
+ms.technology: service-manager
+ms.assetid: 1137cb8c-abcb-4929-bf4b-f3a41db1bf2e
 ---
 
-# How to Create a Request Offering
+# Create a Service Manager request offering
 
 >Applies To: System Center 2016 - Service Manager
 

@@ -1,18 +1,18 @@
 ---
-description:  
-manager:  cfreeman
-ms.topic:  article
+title: Create a service offering
+description: Describes how you can create a service offering in Service Manager.
+manager: carmonm
+ms.topic: article
 author: bandersmsft
 ms.author: banders
-ms.prod:  system-center-2016
+ms.prod: system-center-2016
 keywords:  
 ms.date: 10/12/2016
-title:  How to Create a Service Offering
-ms.technology:  service-manager
-ms.assetid:  86b13898-ecdf-430a-90b7-67c66fc956c0
+ms.technology: service-manager
+ms.assetid: 86b13898-ecdf-430a-90b7-67c66fc956c0
 ---
 
-# How to Create a Service Offering
+# Create a service offering in Service Manager
 
 >Applies To: System Center 2016 - Service Manager
 
@@ -67,6 +67,3 @@ Service offerings are logical groups of request offerings. Both service offering
 11. On the **Summary** page, review the information, and then click **Create**.
 
 12. On the **Completion** page, click **Close**.
-
-
-

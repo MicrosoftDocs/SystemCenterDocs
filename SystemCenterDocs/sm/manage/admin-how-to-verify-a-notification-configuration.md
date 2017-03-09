@@ -1,18 +1,18 @@
 ---
-description:  
-manager:  cfreeman
-ms.topic:  article
+title: Verify a notification configuration
+description: Describes how to you can verify a notification configuration in Service Manager.
+manager: carmonm
+ms.topic: article
 author: bandersmsft
 ms.author: banders
-ms.prod:  system-center-2016
+ms.prod: system-center-2016
 keywords:  
 ms.date: 10/12/2016
-title:  How to Verify a Notification Configuration
-ms.technology:  service-manager
-ms.assetid:  9395bb54-3aab-48e3-9b9f-8b874d213fe3
+ms.technology: service-manager
+ms.assetid: 9395bb54-3aab-48e3-9b9f-8b874d213fe3
 ---
 
-# How to Verify a Notification Configuration
+# Verify a notification configuration in Service Manager
 
 >Applies To: System Center 2016 - Service Manager
 

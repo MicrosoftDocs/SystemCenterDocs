@@ -1,18 +1,18 @@
 ---
-description:  
-manager:  cfreeman
-ms.topic:  article
+title: View the status of a data warehouse job
+description: Describes how you can view the status of a data warehouse job in Service Manager.
+manager: carmonm
+ms.topic: article
 author: bandersmsft
 ms.author: banders
-ms.prod:  system-center-2016
+ms.prod: system-center-2016
 keywords:  
 ms.date: 10/12/2016
-title:  How to View the Status of a Data Warehouse Job
-ms.technology:  service-manager
-ms.assetid:  e80fa4de-39bc-4463-bb29-661575b0b1ab
+ms.technology: service-manager
+ms.assetid: e80fa4de-39bc-4463-bb29-661575b0b1ab
 ---
 
-# How to View the Status of a Data Warehouse Job
+# View the status of a data warehouse job in Service Manager
 
 >Applies To: System Center 2016 - Service Manager
 
@@ -38,6 +38,3 @@ You can use the following procedures to view the status of a data warehouse job 
     ```
 
 3.  Review the list of jobs to view their status.
-
-
-

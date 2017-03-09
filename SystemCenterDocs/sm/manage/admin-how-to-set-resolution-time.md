@@ -1,18 +1,18 @@
 ---
-description:  
-manager:  cfreeman
-ms.topic:  article
+title: Set incident resolution time
+description: Describes how you can set the default incident resolution time in Service Manager.
+manager: carmonm
+ms.topic: article
 author: bandersmsft
 ms.author: banders
-ms.prod:  system-center-2016
+ms.prod: system-center-2016
 keywords:  
 ms.date: 10/12/2016
-title:  How to Set Resolution Time
-ms.technology:  service-manager
-ms.assetid:  1ebced0b-1a2c-46ec-97f3-542b47891873
+ms.technology: service-manager
+ms.assetid: 1ebced0b-1a2c-46ec-97f3-542b47891873
 ---
 
-# How to Set Resolution Time
+# Set the default incident resolution time in Service Manager
 
 >Applies To: System Center 2016 - Service Manager
 
@@ -37,6 +37,3 @@ Use the following procedure to set a resolution time based on incident priority 
 ### To validate resolution time
 
 -   When you create a new incident or edit an existing one, the resulting resolution times for an incident matches the values that are defined in the preceding procedures.
-
-
-
