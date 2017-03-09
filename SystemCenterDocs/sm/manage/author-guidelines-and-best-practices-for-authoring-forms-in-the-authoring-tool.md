@@ -1,6 +1,7 @@
 ---
-title: Guidelines and Best Practices for Authoring Forms in the Authoring Tool
-manager: cfreeman
+title: Guidelines and best practices for authoring forms
+description: Learn about the guidelines and best practices for authoring forms with the Service Manager Authoring Tool.
+manager: carmonm
 ms.custom: na
 ms.prod: system-center-2016
 author: bandersmsft
@@ -14,7 +15,7 @@ ms.topic: article
 ms.assetid: 9140312b-4d0b-4f22-a466-85887485e066
 ---
 
-# Guidelines and Best Practices for Authoring Forms in the Authoring Tool
+# Guidelines and best practices for authoring forms with the Service Manager Authoring Tool
 
 >Applies To: System Center 2016 - Service Manager
 

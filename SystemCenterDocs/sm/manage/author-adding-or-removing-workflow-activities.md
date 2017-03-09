@@ -1,6 +1,7 @@
 ---
-title: Adding or Removing Workflow Activities
-manager: cfreeman
+title: Add or remove workflow activities
+description: You can add or remove Service Manager workflow activities in a workflow to automate processes.
+manager: carmonm
 ms.custom: na
 ms.prod: system-center-2016
 author: bandersmsft
@@ -14,13 +15,13 @@ ms.topic: article
 ms.assetid: 32de708f-02f7-4021-882b-14ed140ebc89
 ---
 
-# Adding or Removing Workflow Activities
+# Add or remove Service Manager workflow activities
 
 >Applies To: System Center 2016 - Service Manager
 
 Workflow activities are the building blocks of a workflow. You can use the procedures in this section to add activities to a workflow; remove, copy, and paste activities; and configure specialized activities to import Windows PowerShell scripts into your workflow.  
 
-## How to Add an Activity to a Workflow
+## Add an activity to a workflow
 
 Use this procedure to add an activity to a workflow from the **Activities Toolbox** pane in the Service Manager Authoring Tool.  
 
@@ -41,7 +42,7 @@ Use this procedure to add an activity to a workflow from the **Activities Toolbo
     > [!NOTE]  
     >  If you do not set the properties at this time, the activity might be marked with a Red Exclamation Point icon. This icon indicates that one or more properties of the activity must be set before the activity can run. To see a list of these required properties, click the icon.   
 
-## How to Copy and Paste an Activity Within a Workflow
+## Copy and paste an activity within a workflow
 
 If your workflow uses multiple activities of the same type \(such as multiple Add AD DS Computer To Group activities\), you can use copy and paste functionality in the Service Manager Authoring Tool to quickly duplicate activities. To duplicate the values of the activity's properties with the activity, set values for the properties, and then copy and paste the activity.  
 
@@ -57,7 +58,7 @@ If your workflow uses multiple activities of the same type \(such as multiple Ad
 
     -   To paste the activity immediately after an existing activity, right\-click the existing activity, and then click **Paste**.  
 
-## How to Add a Script to a Workflow
+## Add a script to a workflow
 
 The Activity Library includes specialized activities that incorporate Windows PowerShell scripts, VBScript scripts, or command\-line scripts into workflows. Use a script activity to import the content of the script and to define the parameters that the script requires to run. The Service Manager Authoring Tool creates a task in the management pack to manage the script and store the script content and parameters.  
 
@@ -95,7 +96,7 @@ The Activity Library includes specialized activities that incorporate Windows Po
 
     7.  Click **OK** to close the **Configure a Script Activity** dialog box.  
 
-## How to Add a Control Flow Activity to a Workflow
+## Add a control flow activity to a workflow
 
 Use control flow activities to provide structure-branches, loops, or timer delays-for your workflow. The Service Manager Authoring Tool provides four built\-in control flow activities:  
 
@@ -111,7 +112,7 @@ Use control flow activities to provide structure-branches, loops, or timer delay
 
  Using a **For Each Loop** activity resembles using an **IfElse** or **Parallel** activity; however, you might want to set additional properties for the activities in the **For Each Loop**. Use the following procedure to add a **For Each Loop** to a workflow.  
 
-### To add a For Each Loop to a workflow  
+### To add a for each loop to a workflow  
 
 1.  In the **Management Pack Explorer**, expand **Workflows**, right\-click the workflow you want, and then click **Edit**. This opens the workflow in the authoring pane.  
 
@@ -134,7 +135,7 @@ Use control flow activities to provide structure-branches, loops, or timer delay
 
         2.  Set the value of the **Property to Bind** property to the value of the property of the current activity that will use the **Current Item** value.  
 
-## How to Remove an Activity from a Workflow
+## Remove an activity from a workflow
 
 Use this procedure to remove an activity from a workflow in the Service Manager Authoring Tool. This operation does not remove the activity from the Activity Library or from the **Activities Toolbox** pane.  
 
