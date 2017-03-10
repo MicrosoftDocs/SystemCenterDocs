@@ -1,5 +1,6 @@
 ---
-title: How to Add a Single Instance Picker Control to a Form in the Authoring Tool
+title: Add a single instance picker control to a form
+description: You can add a single instance picker control to a form in the Service Manager Authoring Tool.
 manager: cfreeman
 ms.custom: na
 ms.prod: system-center-2016
@@ -14,7 +15,7 @@ ms.topic: article
 ms.assetid: b415bdf0-413c-4516-be09-748bc1ac4281
 ---
 
-# How to Add a Single Instance Picker Control to a Form in the Authoring Tool
+# Add a single instance picker control to a form in the Service Manager Authoring Tool
 
 >Applies To: System Center 2016 - Service Manager
 

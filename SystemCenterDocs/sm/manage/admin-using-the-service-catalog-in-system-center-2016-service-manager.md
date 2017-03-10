@@ -1,24 +1,24 @@
 ---
-description:  
-manager:  cfreeman
-ms.topic:  article
+title: Use the service catalog
+description: You can use the Service Manager service catalog to offer your organization's services to end users.
+manager: carmonm
+ms.topic: article
 author: bandersmsft
 ms.author: banders
-ms.prod:  system-center-2016
+ms.prod: system-center-2016
 keywords:  
 ms.date: 10/12/2016
-title:  Using the Service Catalog in Service Manager
-ms.technology:  service-manager
-ms.assetid:  37c13875-a46b-4387-b35a-5d2c8f511f56
+ms.technology: service-manager
+ms.assetid: 37c13875-a46b-4387-b35a-5d2c8f511f56
 ---
 
-# Using the Service Catalog in Service Manager
+# Use the Service Manager service catalog to offer services
 
 >Applies To: System Center 2016 - Service Manager
 
 This section provides an overview of how to use the service catalog in Service Manager. This section also contains procedures that cover management configuration scenarios for the service catalog.
 
-The service catalog is a collection of items, assistance, actions, or groupings of them that  your IT staff and infrastructure provides and makes available to end users in the Self-Service Portal in Service Manager. In the Service Manager console, you create catalog items to describe these items in the Library workspace using the following nodes:
+The service catalog is a collection of items, assistance, actions, or groupings of them that your IT staff and infrastructure provides and makes available to end users in the Self-Service Portal in Service Manager. In the Service Manager console, you create catalog items to describe these items in the Library workspace using the following nodes:
 
 -   Request Offerings
 

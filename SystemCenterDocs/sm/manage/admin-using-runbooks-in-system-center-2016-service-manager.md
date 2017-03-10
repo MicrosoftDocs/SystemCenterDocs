@@ -1,24 +1,24 @@
 ---
-description:  
-manager:  cfreeman
-ms.topic:  article
+title: Use runbooks
+description: You can use Service Manager runbooks to automate procedures.
+manager: carmonm
+ms.topic: article
 author: bandersmsft
 ms.author: banders
-ms.prod:  system-center-2016
+ms.prod: system-center-2016
 keywords:  
 ms.date: 10/12/2016
-title:  Using Runbooks in Service Manager
-ms.technology:  service-manager
-ms.assetid:  a0863ac5-05d9-46b3-8e18-1f76e50ee07d
+ms.technology: service-manager
+ms.assetid: a0863ac5-05d9-46b3-8e18-1f76e50ee07d
 ---
 
-# Using Runbooks in Service Manager
+# Use Service Manager runbooks to automate procedures
 
 >Applies To: System Center 2016 - Service Manager
 
 Runbooks in Service Manger are used to automate procedures. The following sections provide details about the purpose and use of runbooks.
 
-## About Runbooks in Service Manager
+## Runbooks in Service Manager
 
 To automate processes in System Center, Orchestrator uses runbooks to automate procedures. Runbooks are visual representations of the procedures. The value that runbooks have is that they help ensure that Orchestrator automation is driven and tracked from Service Manager and that Service Manager interactions with other System Center products and non-Microsoft systems are much easier to implement.
 
@@ -38,7 +38,7 @@ Through its workflow designer, Orchestrator automatically shares data and initia
 -   Orchestrating tasks across systems for consistent, documented, and compliant activity.
 
 
-## How to Create a Runbook Automation Activity Template
+## Create a runbook automation activity template
 
 After you import runbooks into Service Manager using the Orchestrator connector from Orchestrator, you can create a runbook automation activity template to map parameters in Orchestrator to corresponding parameters in Service Manager.
 
@@ -77,7 +77,7 @@ As an example, you can implement a new request offering using an Orchestrator ru
 
 
 
-## How to View a Runbook
+## View a runbook
 After you import runbooks from Orchestrator into Service Manager, you can open the runbook in the Service Manager console to ensure that it contains the parameters you want to use in an automation activity template in Service Manager.
 
 When you view the runbook, you can perform basic actions with the runbook, such as viewing the summary, jobs, instances, and definition of the runbook. You can also start and stop the runbook.

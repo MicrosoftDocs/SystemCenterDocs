@@ -1,24 +1,24 @@
 ---
-description:  
-manager:  cfreeman
-ms.topic:  article
+title: Data warehouse retention
+description: Describes Service Manager data warehouse retention and how to set retention periods.
+manager: carmonm
+ms.topic: article
 author: bandersmsft
 ms.author: banders
 ms.prod:  system-center-2016
 keywords:  
 ms.date: 10/12/2016
-title:  Service Manager Data Warehouse Retention
-ms.technology:  service-manager
-ms.assetid:  b8678e2d-8c8c-40b4-a18f-b5495ad7a4cd
+ms.technology: service-manager
+ms.assetid: b8678e2d-8c8c-40b4-a18f-b5495ad7a4cd
 ---
 
-# Service Manager Data Warehouse Retention
+# Service Manager data warehouse retention
 
 >Applies To: System Center 2016 - Service Manager
 
 By default, data is stored in the data warehouse for 3 years for fact tables and for an unlimited period for dimension and outrigger tables. However, you can modify the retention period if you want to retain data longer or groom it out more aggressively.
 
-## Fact Table Retention Settings
+## Fact table retention settings
 There are 2 two types of retention settings in the data warehouse:
 
 -   Global - The global retention period for all fact tables in the database is set to 3 years by default, which any subsequently created fact tables use as their default retention setting.

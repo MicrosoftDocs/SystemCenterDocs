@@ -1,6 +1,7 @@
 ---
-title: How to Add an Image Control to a Form in the Authoring Tool
-manager: cfreeman
+title: Add an image control to a form
+description: You can add an image control to a form in the Service Manager Authoring Tool.
+manager: carmonm
 ms.custom: na
 ms.prod: system-center-2016
 author: bandersmsft
@@ -14,7 +15,7 @@ ms.topic: article
 ms.assetid: 59b0a942-e165-4308-a313-92e2de368142
 ---
 
-# How to Add an Image Control to a Form in the Authoring Tool
+# Add an image control to a form in the Authoring Tool
 
 >Applies To: System Center 2016 - Service Manager
 
