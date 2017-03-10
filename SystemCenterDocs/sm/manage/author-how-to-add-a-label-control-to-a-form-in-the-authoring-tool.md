@@ -1,6 +1,7 @@
 ---
-title: How to Add a Label Control to a Form in the Authoring Tool
-manager: cfreeman
+title: Add a label control to a form
+description: You can add a label control to a form in the Service Manager Authoring Tool.
+manager: carmonm
 ms.custom: na
 ms.prod: system-center-2016
 author: bandersmsft
@@ -14,7 +15,7 @@ ms.topic: article
 ms.assetid: e99110ce-812a-4412-9261-eb4bfe2f3713
 ---
 
-# How to Add a Label Control to a Form in the Authoring Tool
+# Add a label control to a form in the Authoring Tool
 
 >Applies To: System Center 2016 - Service Manager
 
