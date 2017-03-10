@@ -1,6 +1,7 @@
 ---
-title: How to Add a Check Box Control to a Form in the Authoring Tool
-manager: cfreeman
+title: Add a check box control to a form
+description: You can add a check box control to a form in the Service Manager Authoring Tool.
+manager: carmonmm
 ms.custom: na
 ms.prod: system-center-2016
 author: bandersmsft
@@ -14,7 +15,7 @@ ms.topic: article
 ms.assetid: c03108fe-66f6-453d-a8b3-10cf47d6a37d
 ---
 
-# How to Add a Check Box Control to a Form in the Authoring Tool
+# Add a check box control to a form in the Authoring Tool
 
 >Applies To: System Center 2016 - Service Manager
 

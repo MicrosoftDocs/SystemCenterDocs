@@ -1,18 +1,18 @@
 ---
-description:  
-manager:  cfreeman
+title: Manage and update configuration items
+description: Describes how to manage and update Service Manager configuration items.
+manager: carmonm
 ms.author: banders
-ms.topic:  article
+ms.topic: article
 author: bandersmsft
-ms.prod:  system-center-2016
+ms.prod: system-center-2016
 keywords:  
 ms.date: 10/12/2016
-title:  Managing Configuration Items
-ms.technology:  service-manager
-ms.assetid:  22d6d616-e0b3-47b2-a8d8-f235091bf1d5
+ms.technology: service-manager
+ms.assetid: 22d6d616-e0b3-47b2-a8d8-f235091bf1d5
 ---
 
-# Managing Configuration Items
+# Manage Service Manager configuration items
 
 >Applies To: System Center 2016 - Service Manager
 
@@ -63,6 +63,3 @@ Similarly, work items such as incidents, problems, and change requests are often
     3.  In this release, do not attempt to open an attached file before you submit the form.
 
 5.  Click **OK** to save the form.
-
-
-

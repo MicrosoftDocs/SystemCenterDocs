@@ -1,26 +1,26 @@
 ---
-description:  
-manager:  cfreeman
-ms.topic:  article
+title: Manage knowledge articles
+description: Describes how to manage Service Manager knowledge articles.
+manager: carmonm
+ms.topic: article
 author: bandersmsft
 ms.author: banders
-ms.prod:  system-center-2016
+ms.prod: system-center-2016
 keywords:  
 ms.date: 10/12/2016
-title:  Managing Knowledge Articles in Service Manager
-ms.technology:  service-manager
-ms.assetid:  50edf3f3-fa1d-4134-8383-dfc6be73ddf0
+ms.technology: service-manager
+ms.assetid: 50edf3f3-fa1d-4134-8383-dfc6be73ddf0
 ---
 
-# Managing Knowledge Articles in Service Manager
+# Manage Service Manager knowledge articles
 
 >Applies To: System Center 2016 - Service Manager
 
 Knowledge articles in Service Manager can help service desk analysts and end users understand and solve problems. Because any employee can search for and view knowledge articles, create knowledge articles so that end users can help themselves resolve IT problems before new work items are opened. Service desk analysts also have to link work items to knowledge articles.
 
-Use the procedures in this section to create and search for knowledge articles.
+Use the procedures in this article to create and search for knowledge articles.
 
-## How to Create a Knowledge Article
+## Create a knowledge article
 
 You can use the following procedure to create a knowledge article in Service Manger. This procedure describes how to create a new example knowledge article to help users obtain the latest service pack for Windows 10. However, you can complete these steps to create any type of knowledge article.
 
@@ -61,7 +61,7 @@ You can use the following procedure to create a knowledge article in Service Man
 
 
 
-## How to Search for a Knowledge Article
+## Search for a knowledge article
 You can use the following procedures to search for a knowledge article by using the Service Manager console in Service Manager. If you want to link a knowledge article to an incident or to a change request, save the incident or change request first. You can perform full-text searches when you search for knowledge articles. When you search, Service Manager queries the following fields in the knowledge search form:
 
 -   **Title**
