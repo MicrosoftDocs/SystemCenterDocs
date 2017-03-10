@@ -1,18 +1,18 @@
 ---
-description:  
-manager:  cfreeman
-ms.topic:  article
+title: Set incident priority
+description: Describes how you can set incident priority in Service Manager
+manager: carmonm
+ms.topic: article
 author: bandersmsft
 ms.author: banders
-ms.prod:  system-center-2016
+ms.prod: system-center-2016
 keywords:  
 ms.date: 10/12/2016
-title:  How to Set Incident Priority
-ms.technology:  service-manager
-ms.assetid:  ff64efdb-7923-451a-90a4-5e467bdbb17a
+ms.technology: service-manager
+ms.assetid: ff64efdb-7923-451a-90a4-5e467bdbb17a
 ---
 
-# How to Set Incident Priority
+# Set incident priority in Service Manager
 
 >Applies To: System Center 2016 - Service Manager
 
@@ -35,6 +35,3 @@ Use the following procedure in Service Manager to define a priority calculation 
 ### To validate incident priority
 
 -   When you create a new incident or edit an existing one, the resulting priority setting must match the value that is entered in the table for a specific High, Medium, and Low setting that is defined for impact and urgency.
-
-
-

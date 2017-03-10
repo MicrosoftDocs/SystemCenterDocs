@@ -1,6 +1,6 @@
 ---
-title: Supported Configurations for System Center 2016 - Service Manager
-description: The article describes supported configurations for System Center 2016 - Service Manager.
+title: Supported Configurations for Service Manager
+description: The article describes supported configurations for Service Manager.
 ms.custom: na
 ms.prod: system-center-2016
 manager: carmonm
@@ -16,7 +16,7 @@ ms.assetid: 847fcf88-bee5-49e5-a783-92ed432db3a4
 
 ---
 
-# Supported Configurations for System Center 2016 - Service Manager
+# Supported configurations for System Center 2016 - Service Manager
 
 >Applies To: System Center 2016 - Service Manager
 

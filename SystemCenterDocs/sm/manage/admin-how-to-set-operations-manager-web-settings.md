@@ -1,18 +1,18 @@
 ---
-description:  
-manager:  cfreeman
-ms.topic:  article
+title: Set Operations Manager web settings
+description: Describes how to set Operations Manager web settings in Service Manager.
+manager: carmonm
+ms.topic: article
 author: bandersmsft
 ms.author: banders
-ms.prod:  system-center-2016
+ms.prod: system-center-2016
 keywords:  
 ms.date: 10/24/2016
-title:  How to Set Operations Manager Web Settings
-ms.technology:  service-manager
-ms.assetid:  faa28b76-7132-4962-9f59-95df2bd07aac
+ms.technology: service-manager
+ms.assetid: faa28b76-7132-4962-9f59-95df2bd07aac
 ---
 
-# How to Set Operations Manager Web Settings
+# Set Operations Manager web settings in Service Manager
 
 >Applies To: System Center 2016 - Service Manager
 

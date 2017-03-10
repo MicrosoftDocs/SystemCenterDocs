@@ -1,22 +1,22 @@
 ---
-description:  
-manager:  cfreeman
+title: Configure Service Level Management
+description: Learn about configuring Service Level Management in Service Manager.
+manager:  carmonm
 ms.topic:  article
 author: bandersmsft
 ms.author: banders
 ms.prod:  system-center-2016
 keywords:  
 ms.date: 10/12/2016
-title:  Configuring Service Level Management in System Center 2016   Service Manager
 ms.technology:  service-manager
 ms.assetid:  a8f84795-11fd-4c62-8f50-0929cedd3b20
 ---
 
-# Configuring Service Level Management in System Center 2016 - Service Manager
+# Configure Service Level Management.
 
 >Applies To: System Center 2016 - Service Manager
 
-This section provides an overview of how to configure service level management in Service Manager. This section also contains procedures that cover service level management configuration scenarios.
+This article provides an overview of how to configure service level management in Service Manager. This section also contains procedures that cover service level management configuration scenarios.
 
 Service level management is the process that you use to measure incident and service request timeliness. In Service Manager, you create a service level item that consist of queues that correspond to each service level, plus time metrics to measure and warn for. Separately, you can also send notifications to users that occur before and after service level breach. In the Service Manager console, you manage this process in the Administration workspace using the following nodes:
 

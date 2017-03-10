@@ -1,18 +1,18 @@
 ---
-description:  
-manager:  cfreeman
-ms.topic:  article
+title: Create a catalog item group
+description: Describes how you can create a Service Manager catalog item group.
+manager: carmonm
+ms.topic: article
 author: bandersmsft
 ms.author: banders
-ms.prod:  system-center-2016
+ms.prod: system-center-2016
 keywords:  
 ms.date: 10/12/2016
-title:  How to Create a Catalog Item Group
-ms.technology:  service-manager
-ms.assetid:  6c11d1e8-d320-4760-a462-0e31e8124492
+ms.technology: service-manager
+ms.assetid: 6c11d1e8-d320-4760-a462-0e31e8124492
 ---
 
-# How to Create a Catalog Item Group
+# Create a Service Manager catalog item group
 
 >Applies To: System Center 2016 - Service Manager
 
@@ -49,7 +49,3 @@ Catalog item groups are lists of catalog items that are used to secure the servi
 9. On the **Summary** page, review the information, and then click **Create**.
 
 10. On the **Completion** page, click **Close**.
-
-
-
-

@@ -1,18 +1,18 @@
 ---
-description:  
-manager:  cfreeman
-ms.topic:  article
+title: Create notification templates
+description: Describes how you can create Service Manager notification templates.
+manager: carmonm
+ms.topic: article
 author: bandersmsft
 ms.author: banders
-ms.prod:  system-center-2016
+ms.prod: system-center-2016
 keywords:  
 ms.date: 10/12/2016
-title:  How to Create Notification Templates
-ms.technology:  service-manager
-ms.assetid:  98af143b-a337-440a-93e6-52f6857a74ef
+ms.technology: service-manager
+ms.assetid: 98af143b-a337-440a-93e6-52f6857a74ef
 ---
 
-# How to Create Notification Templates
+# Create Service Manager notification templates
 
 >Applies To: System Center 2016 - Service Manager
 

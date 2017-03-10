@@ -1,18 +1,18 @@
 ---
-description: This article describes how you can change the credentials used for the SQL Server Reporting Services account.
-manager:  cfreeman
-ms.topic:  article
+title: Change the credentials for the SQL Server Reporting Services account
+description: Describes how to change the credentials for the SQL Server Reporting Services account used by Service Manager.
+manager: carmonm
+ms.topic: article
 author: bandersmsft
 ms.author: banders
-ms.prod:  system-center-2016
+ms.prod: system-center-2016
 keywords:  
 ms.date: 10/12/2016
-title:  How to Change the Credentials for SQL Server Reporting Services Account
-ms.technology:  service-manager
+ms.technology: service-manager
 ms.assetid:  c06e8cf9-b739-483d-bcf1-abab60f3ec23
 ---
 
-# How to Change the Credentials for SQL Server Reporting Services Account
+# Change the credentials for the SQL Server Reporting Services account used by Service Manager.
 
 >Applies To: System Center 2016 - Service Manager
 
