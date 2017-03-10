@@ -59,9 +59,9 @@ with the following properties:
 
 - The collection is used in any update deployment templates
 
-- The collection is has custom client settings assignments
+- The collection has custom client settings assignments
 
-- The collection is has custom antimalware settings assignments
+- The collection has custom antimalware settings assignments
 
 - The collection is a property of a query
 
