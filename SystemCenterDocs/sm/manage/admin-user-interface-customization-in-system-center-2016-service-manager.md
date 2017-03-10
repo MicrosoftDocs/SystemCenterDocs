@@ -1,25 +1,25 @@
 ---
-description:  
-manager:  cfreeman
-ms.topic:  article
+title: User interface customization in Service Manager
+description: Explains to customize how items are displayed in Service Manager.
+manager: carmonm
+ms.topic: article
 author: bandersmsft
 ms.author: banders
-ms.prod:  system-center-2016
+ms.prod: system-center-2016
 keywords:  
 ms.date: 10/12/2016
-title:  User Interface Customization in Service Manager
-ms.technology:  service-manager
-ms.assetid:  bd4ce7ab-9e8f-4f83-a04a-f4385c2ac6b0
+ms.technology: service-manager
+ms.assetid: bd4ce7ab-9e8f-4f83-a04a-f4385c2ac6b0
 ---
 
-# User Interface Customization in Service Manager
+# User interface customization in Service Manager
 
 >Applies To: System Center 2016 - Service Manager
 
 The sealed management packs in Service Manager contain, among other things, views, list items, and templates. Because these items are in a sealed management pack, they cannot be edited or changed. In Service Manager, you have the option of hiding views. You can duplicate list items and templates, saving the duplicates into an unsealed management pack, and because the duplicates are in an unsealed management pack, you can edit the properties of the list item or template using the Service Manager console.
 
 
-## How to Customize a View
+## Customize a view
 The **Failed Service Requests** view in Service Manager is in a sealed management pack. In this example, you will create a duplicate of this view, save it into an unsealed management pack, and then edit the new view by changing its name to **New Failed Service Requests**. You will finish this exercise by hiding the original Failed Service Requests view. As an administrator, you will still see the hidden view.
 
 ### To customize a view
@@ -39,7 +39,7 @@ The **Failed Service Requests** view in Service Manager is in a sealed managemen
 7.  Right-click **Failed Service Requests**, and then click **Hide View**.
 
 
-## How to Customize a List Item
+## Customize a list item
 
 The items in a list in a sealed management pack in Service Manager cannot be changed. In this example, you will add a list item (phone) to the **Service Request Source** list and save it into an unsealed management pack, and then edit the new view by changing its name to **New Failed Service Requests**. You will finish this exercise by hiding the original Failed Service Requests view. As an administrator, you will still see the hidden view.
 
@@ -61,7 +61,7 @@ The items in a list in a sealed management pack in Service Manager cannot be cha
 
 8.  In the **Name** field, type **Phone**, and then click **OK**.
 
-## How to Customize a Template
+## Customize a template
 
 Templates in a sealed management pack in Service Manager cannot be changed. In this example, you will create a copy of the Default Service Request Template and save the copy in an unsealed management pack. You will then start a Create Template Wizard for the copy you made.
 
