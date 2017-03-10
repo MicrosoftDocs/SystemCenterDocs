@@ -1,6 +1,7 @@
 ---
-title: How to Bundle Management Packs and Resource Files
-manager: cfreeman
+title: Bundle management packs and resource files
+description: Learn about bundling management packs and resource files for Service Manager authoring.
+manager: carmonm
 ms.custom: na
 ms.prod: system-center-2016
 author: bandersmsft
@@ -14,7 +15,7 @@ ms.topic: article
 ms.assetid: c9cb6eaf-d744-4f91-b1d4-3294812953df
 ---
 
-# How to Bundle Management Packs and Resource Files
+# Bundle management packs and resource files
 
 >Applies To: System Center 2016 - Service Manager
 
