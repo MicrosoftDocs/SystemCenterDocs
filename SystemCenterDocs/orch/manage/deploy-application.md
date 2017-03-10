@@ -52,9 +52,9 @@ optional properties into published data.
                              
 - Collection Value Type: Specifies whether the value in the **Collection** property is a name or a collection ID. Options are:
                              
-  - **ID** (default): the value is an collection ID
+  - **ID** (default): the value is a collection ID
                              
-  -   **Name**: the value is an collection name             
+  -   **Name**: the value is a collection name             
 
 - Purpose: The deployment intent or purpose. Options are:
   - **Required** (default): the application is mandatory to be installed or uninstalled
