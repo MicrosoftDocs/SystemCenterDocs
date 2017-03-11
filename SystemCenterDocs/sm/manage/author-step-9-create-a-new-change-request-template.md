@@ -1,6 +1,7 @@
 ---
-title: Step 9 - Create a New Change Request Template
-manager: cfreeman
+title: Step 9 - Create a new change request template
+description: Describes the ninth step of the Service Manager Authoring Tool Woodgrove Bank customization scenario to create a new change request template.
+manager: carmonm
 ms.custom: na
 ms.prod: system-center-2016
 author: bandersmsft
@@ -14,7 +15,7 @@ ms.topic: article
 ms.assetid: 280de374-7d73-4dbb-95f5-1ed407a9ed88
 ---
 
-# Step 9 - Create a New Change Request Template
+# Step 9 of the customization scenario - Create a new change request template
 
 >Applies To: System Center 2016 - Service Manager
 

@@ -1,6 +1,7 @@
 ---
-title: Step 8 - Create a New View
-manager: cfreeman
+title: Step 8 - Create a new view
+description: Describes the first step of the Service Manager Authoring Tool Woodgrove Bank customization scenario to create a new view.
+manager: carmonm
 ms.custom: na
 ms.prod: system-center-2016
 author: bandersmsft
@@ -14,7 +15,7 @@ ms.topic: article
 ms.assetid: 67929ae2-57a4-4810-a34a-ab73d66287c5
 ---
 
-# Step 8 - Create a New View
+# Step 8 of the customization scenario - Create a new view
 
 >Applies To: System Center 2016 - Service Manager
 

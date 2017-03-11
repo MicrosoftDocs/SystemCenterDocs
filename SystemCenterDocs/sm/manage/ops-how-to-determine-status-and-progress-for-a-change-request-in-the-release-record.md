@@ -1,6 +1,7 @@
 ---
-title: How to Determine Status and Progress for a Change Request in the Release Record
-manager: cfreeman
+title: Determine status and progress for a change request in the release record
+description: Explains how to determine status and progress for a Service Manager change request in the release record.
+manager: carmonm
 ms.custom: na
 ms.prod: system-center-2016
 author: bandersmsft
@@ -14,7 +15,7 @@ ms.topic: article
 ms.assetid: f11a423b-58d3-4502-b9c4-b3663839984a
 ---
 
-# How to Determine Status and Progress for a Change Request in the Release Record
+# Determine status and progress for a Service Manager change request in the release record
 
 >Applies To: System Center 2016 - Service Manager
 

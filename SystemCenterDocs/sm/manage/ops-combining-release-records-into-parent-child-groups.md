@@ -1,6 +1,7 @@
 ---
-title: Combining Release Records into Parent-Child Groups
-manager: cfreeman
+title: Combine release records into parent-child groups
+description: Explains how to combine Service Manager release records into parent-child groups.
+manager: carmonm
 ms.custom: na
 ms.prod: system-center-2016
 author: bandersmsft
@@ -14,13 +15,13 @@ ms.topic: article
 ms.assetid: eaa51912-14c0-4ff5-bd4a-e7c5354e6260
 ---
 
-# Combining Release Records into Parent-Child Groups
+# Combine Service Manager release records into parent-child groups
 
 >Applies To: System Center 2016 - Service Manager
 
 Releases are normally deployed to production environments at intervals you define. For example, you can package several releases into monthly batches. You can define each batch as a parent release, which consolidates and links other smaller project\-specific releases into a monthly package. This process can help you verify that all child releases are evaluated together.  
 
-## How to Promote a Release Record to a Parent Release Record
+## Promote a release record to a parent release record
 
 The Release Manager can promote a release record to parent release record using the following procedure. A parent release record serves as a container for several releases.  
 
@@ -42,7 +43,7 @@ The Release Manager can promote a release record to parent release record using 
 
 7.  In the release record form, click **OK** to close it.  
 
-# How to Demote a Parent Release Record to a Child Release Record
+# Demote a parent release record to a child release record
 
 The Release Manager can demote a parent release record using the following procedure. If a parent release record contains child release records, all the child release records that it contains are unlinked from the parent and are no longer child release records.  
 
@@ -66,7 +67,7 @@ The Release Manager can demote a parent release record using the following proce
 
 8.  In the release record form, click **OK** to close it.  
 
-## How to Link a Child Release Record to the Current Release Record
+## Link a child release record to the current release record
 
 The Release Manager can link a child release record while editing a parent release record using the following procedure.  
 
@@ -84,7 +85,7 @@ The Release Manager can link a child release record while editing a parent relea
 
 6.  In the parent release record form, click **OK** to close it.  
 
-## How to Unlink the Current Release Record from a Parent Release Record
+## Unlink the current release record from a parent release record
 
 The Release Manager can unlink a child release record using the following procedure.  
 
@@ -98,7 +99,7 @@ The Release Manager can unlink a child release record using the following proced
 
 4.  In the **Comments** box, type a comment indicating that you have unlinked the child release record from its parent release record, and then click **OK** to close the **Comments** box.  
 
-## How to Unlink a Child Release Record from the Current Release Record
+## Unlink a child release record from the current release record
 
 The Release Manager can unlink a child release record while editing a parent release record using the following procedure.  
 

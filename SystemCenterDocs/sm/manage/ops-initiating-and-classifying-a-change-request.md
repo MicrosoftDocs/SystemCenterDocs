@@ -1,6 +1,7 @@
 ---
-title: Initiating and Classifying a Change Request
-manager: cfreeman
+title: Initiate and classify a change request
+description: Explains how to initiate and classify a change request in Service Manager.
+manager: carmonm
 ms.custom: na
 ms.prod: system-center-2016
 author: bandersmsft
@@ -14,7 +15,7 @@ ms.topic: article
 ms.assetid: 16d49b02-a266-40d3-a81e-fdb9405d0e56
 ---
 
-# Initiating and Classifying a Change Request
+# Initiate and classify a change request in Service Manager
 
 >Applies To: System Center 2016 - Service Manager
 
@@ -24,7 +25,7 @@ The procedures in this section describe how to initiate and classify a change re
 
  Complete the following steps to initiate and classify a change request.  
 
-## How to Create a New Change Request
+## Create a new change request
 
 You can use the following procedures in Service Manager to create a change request for servers that are part of a service and then validate the creation of the change request. First, you view items from the service dependency view. Then, you navigate to the configuration items and open a change request template. Lastly, you assess the priority, impact, and risk level of the request. Although you create the change request from a service dependency view, you can also create a new change request from other places in Service Manager.  
 
@@ -71,7 +72,7 @@ You can use the following procedures in Service Manager to create a change reque
 
 3.  Click **Cancel** to close the service.  
 
-## How to Add Related Items to a Change Request
+## Add related items to a change request
 
 You can use the following procedures to add related items to a change request and then validate the addition of the items. You can add related items, such as configuration items, incidents, other change requests, files, and knowledge articles. When you add files, such as saved screen shots, saved written procedures, and knowledge articles, reviewers and implementers can more easily review, approve, and implement the change.  
 
@@ -100,7 +101,7 @@ You can use the following procedures to add related items to a change request an
 
 -   To verify that the file and knowledge articles were attached to the change request, reopen the change request, and then click the **Related Items** tab.
 
-## How to Add Manual Activities to a Change Request
+## Add manual activities to a change request
 
 You can use the following procedures to add a manual activity and then assign it to yourself and then validate that the manual activity was added. For example, when you investigate a new change request, you might want to add a manual activity to the change request. This manual activity could be any task that is not defined in the change request template that was used to create the change request.  
 
@@ -133,7 +134,7 @@ You can use the following procedures to add a manual activity and then assign it
 
 -   Reopen the change request, and then click the **Activities** tab to view the manual activity that you added.  
 
-## How to Add Dependent Activities to a Change Request for Release Records
+## Add dependent activities to a change request for release records
 
 You can use the following procedures to add a dependent activity to an existing change request, which is used as part of the release management process. Although you can add dependent activities to work items, such as release records and service requests, the primary purpose of a dependent activity is for use as a mechanism to associate a change request with a release record. Specifically, a manual activity in a release record is linked to the dependent activity in a change request. When it is completed, the dependent activity indicates that the release management process is complete for the change request.  
 

@@ -1,6 +1,7 @@
 ---
-title: About Cube Deployment
-manager: cfreeman
+title: OLAP cube deployment overview
+description: Provides an overview of Service Manager OLAP cube deployment.
+manager: carmonm
 ms.custom: na
 ms.prod: system-center-2016
 author: bandersmsft
@@ -14,7 +15,7 @@ ms.topic: article
 ms.assetid: 58a90410-a4df-4bf1-b21c-6335b90b317e
 ---
 
-# About Cube Deployment
+# Service Manager OLAP cube deployment overview
 
 >Applies To: System Center 2016 - Service Manager
 
@@ -38,6 +39,6 @@ Online analytical processing \(OLAP\) cube deployment uses the Service Manager d
 
 4.  cube element  
 
-1.  DataSourceView elements  
+5.  DataSourceView elements  
 
-2.  cube element  
+6.  cube element  

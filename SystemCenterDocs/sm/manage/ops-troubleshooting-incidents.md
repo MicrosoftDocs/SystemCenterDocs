@@ -1,6 +1,7 @@
 ---
-title: Troubleshooting Incidents
-manager: cfreeman
+title: Troubleshoot incidents
+description: Describes how to troubleshoot Service Manager incidents.
+manager: carmonm
 ms.custom: na
 ms.prod: system-center-2016
 author: bandersmsft
@@ -14,7 +15,7 @@ ms.topic: article
 ms.assetid: 44090039-636d-4ab2-bed7-b2196397d781
 ---
 
-# Troubleshooting Incidents
+# Troubleshoot Service Manager incidents
 
 >Applies To: System Center 2016 - Service Manager
 
