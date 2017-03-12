@@ -5,7 +5,7 @@ description: This article describes how to set up update servers in the VMM fabr
 author:  rayne-wiselman
 ms.author: raynew
 manager:  cfreemanwa
-ms.date:  10/16/2016
+ms.date:  03/12/2017
 ms.topic:  article
 ms.prod:  system-center-threshold
 ms.technology:  virtual-machine-manager
@@ -28,8 +28,8 @@ You can deploy update servers in the VMM fabric to manage compliance and remedia
 
 ## Before you start
 
-- A WSUS server must be running a 64-bit edition of Windows Server Update Service (WSUS) 3.0 with SP2 or later. If you're using version 3.0 with SP2 you must install KB [2734608](http://go.microsoft.com/fwlink/p/?LinkID=268122). From Windows Server 2012 onwards WSUS is an integrated server role.
-- The WSUS server must be running Windows Server 2008 R2 with SP1 or a later operating system.
+- A WSUS server must be running a 64-bit edition of Windows Server Update Service (WSUS) 4.0 or later.
+- The WSUS server must be running Windows Server 2012 R2, or Windows Server 2016, with the latest updates.
 - The WSUS server must be in the same domain as the VMM server, or in a domain with full trust.
 - VMM can use a WSUS root server or downstream WSUS server. You can't use a WSUS replica server.
 - The WSUS server can be dedicated to VMM or an existing server.
