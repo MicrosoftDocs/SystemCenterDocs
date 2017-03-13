@@ -1,6 +1,7 @@
 ---
-title: Using OLAP Cubes for Advanced Analytics
-manager: cfreeman
+title: Overview of OLAP cubes for advanced analytics
+description: Provides an overview of Service Manger OLAP cubes for advanced analytics.
+manager: carmonm
 ms.custom: na
 ms.prod: system-center-2016
 author: bandersmsft
@@ -14,7 +15,7 @@ ms.topic: article
 ms.assetid: 36e556eb-3db1-4900-be1a-a44dc0073d3e
 ---
 
-# Using OLAP Cubes for Advanced Analytics
+# Overview of Service Manger OLAP cubes for advanced analytics
 
 >Applies To: System Center 2016 - Service Manager
 

@@ -1,6 +1,7 @@
 ---
-title: Views Sample Scenario - How to Customize a Column Title in a View
-manager: cfreeman
+title: Customize a column title in a view for the views sample scenario
+description: Describes how to customize a column title in a view for the Service Manager Authoring Tool views sample scenario.
+manager: carmonm
 ms.custom: na
 ms.prod: system-center-2016
 author: bandersmsft
@@ -14,7 +15,7 @@ ms.topic: article
 ms.assetid: 0a48640f-1ecf-4636-912e-42d9000cebc7
 ---
 
-# Views Sample Scenario - How to Customize a Column Title in a View
+# Customize a column title in a view for the authoring views sample scenario
 
 >Applies To: System Center 2016 - Service Manager
 

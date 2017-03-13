@@ -1,6 +1,7 @@
 ---
-title: Combining Incidents into Parent-Child Groups
-manager: cfreeman
+title: Combine incidents into parent-child groups
+description: Explains how to combine Service Manager incidents into parent-child groups.
+manager: carmonm
 ms.custom: na
 ms.prod: system-center-2016
 author: bandersmsft
@@ -14,7 +15,7 @@ ms.topic: article
 ms.assetid: a32d0372-ac68-4ddc-b60c-9a4ff4d55387
 ---
 
-# Combining Incidents into Parent-Child Groups
+# Combine Service Manager incidents into parent-child groups
 
 >Applies To: System Center 2016 - Service Manager
 
@@ -22,7 +23,7 @@ Incidents in System Center 2016 - Service Manager are usually short\-lived while
 
 A Service Manager administrator can define automatic incident resolution settings so that when a parent incident is resolved, all its child incidents resolve automatically, do not resolve automatically, or to let the analyst decide whether to resolve or not. Similarly, an administrator can also define automatic incident reactivation settings so that when a parent incident is reactivated, all its child incidents reactivate automatically, do not reactivate automatically, or to let the analyst decide whether to reactivate the child incidents. Both processes can help you verify that all child incidents are resolved or activated together as a group.  
 
-## How to Create a Parent Incident from an Incident Form
+## Create a parent incident from an incident form
 
 In System Center 2016 - Service Manager, one way a help desk analyst can create a parent incident is when an existing incident is already opened. You can create a parent incident using the following steps. A parent incident serves as a container for several incidents.  
 
@@ -52,7 +53,7 @@ In System Center 2016 - Service Manager, one way a help desk analyst can create 
 
 11. In the original incident form, click **OK** to close it.  
 
-## How to Link an Open Incident to a Parent Incident
+## Link an open incident to a parent incident
 
 The help desk analyst can link open incidents to a parent incident or remove links using the following procedures.  
 
@@ -78,7 +79,7 @@ The help desk analyst can link open incidents to a parent incident or remove lin
 
 4.  In the **Unlink** confirmation dialog box, click **Yes**.   
 
-## How to Resolve a Parent Incident
+## Resolve a parent incident
 
 In Service Manager, the help desk analyst can resolve a parent incident, and then Service Manager will automatically resolve all its child incidents, if the Service Manager administrator has configured Incident settings accordingly. This method of resolving incidents can help the analyst quickly close many child incidents. Use the following procedure to resolve a parent incident.  
 
@@ -94,7 +95,7 @@ In Service Manager, the help desk analyst can resolve a parent incident, and the
 
 5.  If you want child incidents to resolve automatically and the option is available, ensure that the **Resolve child incidents when resolving this parent incident** option is selected, and then click **OK** to resolve the incident-and child incidents, if selected, and then close the **Resolve** dialog box.  
 
-## How to Link an Active Incident to a Resolved Parent Incident
+## Link an active incident to a resolved parent incident
 
 While reviewing active incidents in Service Manager, help desk analysts might determine that an incident should have already been resolved because another analyst has already corrected the underlying cause. If there is a closed parent incident, the analyst can use the following procedure to link the incident to the resolved parent and then automatically resolve the active incident.  
 
@@ -112,7 +113,7 @@ While reviewing active incidents in Service Manager, help desk analysts might de
 
 6.  If you are linking multiple active incidents to a resolved parent, ensure that you select **Repeat this option for all conflicts** to automatically resolve all the incidents.
 
-## How to Reactivate a Resolved Parent Incident
+## Reactivate a resolved parent incident
 
 In Service Manager, the help desk analyst can reactivate a parent incident, and then Service Manager will automatically activate all its child incidents, if the Service Manager administrator has configured Incident settings accordingly. This method of reactivating incidents can help the analyst quickly activate many child incidents. Use the following procedure to reactivate a parent incident.  
 
@@ -130,7 +131,7 @@ Depending on parent incident settings in the Administration workspace, behavior 
 
 5.  Click **OK** to activate the incident and child incidents, if they are available and selected, and to close the **Activate** dialog box.
 
-## How to Create a Parent Incident Template
+## Create a parent incident template
 
 In Service Manager, a parent incident template is used to create new incidents. Incidents created from a template will include information for fields that you do not have to enter manually. By using a template for new incidents, new incidents are created faster than from scratch.  
 
@@ -158,7 +159,7 @@ In Service Manager, a parent incident template is used to create new incidents. 
 
 10. When you have added all the activities you want, click **OK** to save the incident template and close it. The incident template then appears in **Templates** list.  
 
-## How to View a Parent Incident from a Child Incident
+## View a parent incident from a child incident
 
 In Service Manager, the help desk analyst can use the following procedure to easily view parent incidents when a child incident is open. Reviewing parent incident information is often necessary to determine the status of its child incidents. Use the following procedure to view a parent incident from a child incident.  
 
@@ -178,7 +179,7 @@ In Service Manager, the help desk analyst can use the following procedure to eas
 
 7.  If you make changes to the child incident, click **OK**. Otherwise, click **Cancel**.   
 
-## How to Link a New Incident to a Parent Incident
+## Link a new incident to a parent incident
 
 When analysts create new incidents, Service Manager automatically notifies you if any parent incidents exist with the same classification category. The purpose of the notification is to help you combine incidents into parent child groups where a common underlying issue exists. Later, you can use the parent incident to manage the group of incidents as a whole and to serve as a single point of resolution.  
 

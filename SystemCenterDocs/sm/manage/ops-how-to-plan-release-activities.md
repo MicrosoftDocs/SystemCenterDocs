@@ -1,6 +1,7 @@
 ---
-title: How to Plan Release Activities
-manager: cfreeman
+title: Plan release activities
+description: Explains how to plan release activities in Service Manager.
+manager: carmonm
 ms.custom: na
 ms.prod: system-center-2016
 author: bandersmsft
@@ -14,7 +15,7 @@ ms.topic: article
 ms.assetid: 9e6d24dc-1398-439f-ac15-124411ad36ff
 ---
 
-# How to Plan Release Activities
+# Plan release activities in Service Manager
 
 >Applies To: System Center 2016 - Service Manager
 

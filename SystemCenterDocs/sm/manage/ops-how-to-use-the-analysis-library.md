@@ -1,6 +1,7 @@
 ---
-title: How to Use the Analysis Library
-manager: cfreeman
+title: Use the analysis library
+description: Explains how to use the analysis library in the Service Manager console Reporting workspace.
+manager: carmonm
 ms.custom: na
 ms.prod: system-center-2016
 author: bandersmsft
@@ -14,7 +15,7 @@ ms.topic: article
 ms.assetid: 3a40f1d7-b80c-4f68-9644-25266d741307
 ---
 
-# How to Use the Analysis Library
+# Use the analysis library in the Reporting workspace
 
 >Applies To: System Center 2016 - Service Manager
 

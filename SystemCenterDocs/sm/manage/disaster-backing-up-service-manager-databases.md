@@ -1,6 +1,7 @@
 ---
-title: Backing Up Service Manager Databases
-manager: cfreeman
+title: Back up Service Manager databases
+description: Describes how you can back up Service Manager databases.
+manager: carmonm
 ms.custom: na
 ms.prod: system-center-2016
 author: bandersmsft
@@ -14,7 +15,7 @@ ms.topic: article
 ms.assetid: 68f6b035-4085-4348-8247-3b31ae85f125
 ---
 
-# Backing Up Service Manager Databases
+# Back up System Center 2016 - Service Manager databases
 
 >Applies To: System Center 2016 - Service Manager
 
@@ -42,10 +43,10 @@ There are up to eight databases in a System Center 2016 - Service Manager enviro
 
  As part of your disaster recovery preparation, you run a script to capture the Security log to preserve user role information for each database. After you deploy Service Manager and, if necessary, run the Data Warehouse Registration Wizard, you use the SQL&nbsp;Server Script Wizard to create a script that captures SQL&nbsp;Server logon permissions and object\-level permissions. Then, if you need to restore a new server for the Service Manager databases, you can use this script to recreate the necessary logon permissions and object\-level permissions.  
 
-## Enable Common Language Runtime on SQL&nbsp;Server  
+## Enable common language runtime on SQL&nbsp;Server  
  During installation of the Service Manager database, Service Manager Setup enables common language runtime \(CLR\) on the computer that is running SQL&nbsp;Server. If you restore a Service Manager database to another computer running SQL&nbsp;Server, you must enable CLR manually. For more information, see [Enabling CLR Integration](http://go.microsoft.com/fwlink/p/?LinkId=217932).  
 
-## How to Start the SQL Server 2008 R2 Script Wizard
+## Start the SQL Server Script wizard
 
 You can use the following procedure as part of your disaster recovery preparation steps for Service Manager to generate a script to capture SQL&nbsp;Server logon permissions and object\-level permissions. You perform this procedure on the computer that hosts SQL&nbsp;Server Reporting Services \(SSRS\) and on the computers that host the following Service Manager and data warehouse databases:  
 
@@ -59,7 +60,7 @@ You can use the following procedure as part of your disaster recovery preparatio
 
 -   ReportServer  
 
-### To start the SQL&nbsp;Server Script Wizard  
+### To start the SQL&nbsp;Server Script wizard  
 
 1.  Using an account with Administrator privileges, log on to the computer that hosts the Service Manager or data warehouse database.  
 

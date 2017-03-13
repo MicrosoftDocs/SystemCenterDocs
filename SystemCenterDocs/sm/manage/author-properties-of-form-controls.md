@@ -1,6 +1,7 @@
 ---
-title: Properties of Form Controls
-manager: cfreeman
+title: Form control properties
+description: Provides a reference for form control properties in the Service Manager Authoring Tool.
+manager: carmonm
 ms.custom: na
 ms.prod: system-center-2016
 author: bandersmsft
@@ -14,13 +15,13 @@ ms.topic: article
 ms.assetid: 7d62ce9b-fd6d-4521-932d-f2ede5920955
 ---
 
-# Properties of Form Controls
+# Form control properties in the Service Manager Authoring Tool
 
 >Applies To: System Center 2016 - Service Manager
 
 The table in this topic lists the properties of Service Manager form controls. This information can help you customize and create forms in the Service Manager Authoring Tool.  
 
-## Table of Control Properties  
+## Control properties  
  Most properties of Service Manager forms are based on Windows Presentation Foundation (WPF) properties, and other properties are defined by Service Manager. The following table provides details about the WPF-based property groups and their respective properties, when they are applicable. For more information about WPF properties, see [System.Windows.Controls Namespace](http://go.microsoft.com/fwlink/p/?LinkID=204425) on MSDN.  
 
 |Service Manager property group|Service Manager property name|Source of property|WPF-based property group/property|Additional information|  

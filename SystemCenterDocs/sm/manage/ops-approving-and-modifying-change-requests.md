@@ -1,6 +1,7 @@
 ---
-title: Approving and Modifying Change Requests
-manager: cfreeman
+title: Approve and modify change requests
+description: Explains how to approve and modify Service Manager change requests.
+manager: carmonm
 ms.custom: na
 ms.prod: system-center-2016
 author: bandersmsft
@@ -14,13 +15,13 @@ ms.topic: article
 ms.assetid: 39d5b372-f08f-402f-b80c-195f8f11d67b
 ---
 
-# Approving and Modifying Change Requests
+# Approve and modify Service Manager change requests
 
 >Applies To: System Center 2016 - Service Manager
 
 The procedures in this section describe how to approve a change request in Service Manager. Complete the following steps to approve or modify a change request.  
 
-## How to Edit a Change Request
+## Edit a change request
 
 You can use the following procedures to edit a change request and then validate the edit. For example, you might want to change the priority of an existing change request from medium to high.  
 
@@ -45,7 +46,7 @@ You can use the following procedures to edit a change request and then validate 
 
 2.  Verify that your changes are displayed in the change request form.   
 
-## How to Add a Change Reviewer
+## Add a change reviewer
 
 You can use the following procedures to add a change reviewer for an existing change request and then validate that the reviewer was added. You can select who reviews change requests in a way that supports your business processes. For example, if a change affects a process for which certain people are responsible, you can give those people the ability to approve change requests that affect the process.  
 
@@ -73,7 +74,7 @@ You can use the following procedures to add a change reviewer for an existing ch
 
 3.  Verify that the reviewer was added.
 
-## How to Approve a Review Activity Using the Console
+## Approve a review activity using the console
 
 You can use the following procedures to approve a review activity in the Service Manager console and then validate the approval. In many cases, multiple people or groups must vote to approve a single review activity before its approval is final.  
 
@@ -98,7 +99,7 @@ You can use the following procedures to approve a review activity in the Service
 
 -   If an activity is still in progress, it requires approval from other reviewers. Click **In\-Progress Activities**, and then open the activity to view your voting status.
 
-## How to Send Automated Activity and Change Request Notifications
+## Send automated activity and change request notifications
 
 You can use the following procedure to notify reviewers that an activity is available for review. You can use the second procedure to notify users that a change request has been closed.  
 

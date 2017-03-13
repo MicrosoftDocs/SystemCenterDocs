@@ -1,6 +1,7 @@
 ---
-title: Step 7 - Create a New Task
-manager: cfreeman
+title: Step 7 - Create a new task
+description: Describes the first step of the Service Manager Authoring Tool Woodgrove Bank customization scenario to create a new task.
+manager: carmonm
 ms.custom: na
 ms.prod: system-center-2016
 author: bandersmsft
@@ -14,7 +15,7 @@ ms.topic: article
 ms.assetid: 648500e3-5142-45a8-ae33-c07daff2347a
 ---
 
-# Step 7 - Create a New Task
+# Step 7 of the customization scenario - Create a new task
 
 >Applies To: System Center 2016 - Service Manager
 

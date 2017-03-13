@@ -1,6 +1,7 @@
 ---
-title: Step 1 - Open the Woodgrove.AutomatedActivity.AddComputerToADGroupMP Management Pack
-manager: cfreeman
+title: Step 1 - Open the Woodgrove.AutomatedActivity.AddComputerToADGroupMP management pack
+description: Describes the first step of the Service Manager Authoring Tool Woodgrove Bank customization scenario to open the Woodgrove.AutomatedActivity.AddComputerToADGroupMP management pack.
+manager: carmonm
 ms.custom: na
 ms.prod: system-center-2016
 author: bandersmsft
@@ -14,7 +15,7 @@ ms.topic: article
 ms.assetid: 9b107f28-932b-4dce-85b6-b5b6bb083f7e
 ---
 
-# Step 1 - Open the Woodgrove.AutomatedActivity.AddComputerToADGroupMP Management Pack
+# Step 1 of the customization scenario - Open the Woodgrove.AutomatedActivity.AddComputerToADGroupMP management pack
 
 >Applies To: System Center 2016 - Service Manager
 

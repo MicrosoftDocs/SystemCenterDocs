@@ -1,6 +1,7 @@
 ---
-title: How to View Service Request Details
-manager: cfreeman
+title: View service request details
+description: Explains how to view service request details in Service Manager.
+manager: carmonm
 ms.custom: na
 ms.prod: system-center-2016
 author: bandersmsft
@@ -14,7 +15,7 @@ ms.topic: article
 ms.assetid: b897706a-4fdc-4e17-8a89-284554380202
 ---
 
-# How to View Service Request Details
+# View service request details in Service Manager
 
 >Applies To: System Center 2016 - Service Manager
 

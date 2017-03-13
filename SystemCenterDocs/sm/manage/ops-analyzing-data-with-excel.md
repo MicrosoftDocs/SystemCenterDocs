@@ -1,6 +1,7 @@
 ---
-title: Analyzing Data with Excel
-manager: cfreeman
+title: Analyze OLAP cube data with Excel
+description: Explains how to analyze Service Manager OLAP cube data with Excel.
+manager: carmonm
 ms.custom: na
 ms.prod: system-center-2016
 author: bandersmsft
@@ -14,7 +15,7 @@ ms.topic: article
 ms.assetid: 57102204-4876-4a97-9da4-ef6dac619721
 ---
 
-# Analyzing Data with Excel
+# Analyze Service Manager OLAP cube data with Excel
 
 >Applies To: System Center 2016 - Service Manager
 
