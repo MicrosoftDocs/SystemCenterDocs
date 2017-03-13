@@ -366,6 +366,9 @@ Now you can create tenant virtual machines connected to the tenant virtual netwo
 1. If you want to create a VM from an existing hard disk, [follow these instructions](../manage/manage-vm-vhd-existing.md).
 2. After you deploy at least two VMs connected to the network, you can ping one tenant virtual machine from the other tenant virtual machine to validate that the network controller has been deployed as a network service successfully, and that it can manage the HNV Provider network so that tenant virtual machines can ping each other.
 
+## Remove the network controller from the SDN fabric
+
+Use [these steps](sdn-remove-an-sdn.md#remove-the-network-controller) to remove the network controller from the SDN fabric.
 
 ## Next steps
 [Create a software load balancer](sdn-slb.md)
