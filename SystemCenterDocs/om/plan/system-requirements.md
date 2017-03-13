@@ -5,7 +5,7 @@ description: The system requirements article provides general performance and sc
 author: mgoedtel
 ms.author: magoedte
 manager: cfreeman
-ms.date: 02/14/2017
+ms.date: 03/10/2017
 ms.custom: na
 ms.prod: system-center-threshold
 ms.technology: operations-manager
@@ -64,7 +64,7 @@ Use this information to evaluate if your hardware environment is ready to suppor
 
 ## Software requirements for Operations Manager components
 
-### Server Operating System   
+### Server operating system   
 
 The following versions of Windows Server operating system are supported for the following Operations Manager components.
 
@@ -72,12 +72,12 @@ The following versions of Windows Server operating system are supported for the 
 |:--- |:---|:--- |:--- |
 | **Operations Manager** Management Server | yes | yes | yes |
 | **Operations Manager** Gateway Server | yes | yes | |
-| **Operations Manager** Web Console | yes | yes | yes |
+| **Operations Manager** Web Console | yes | yes | |
 | **Operations Manager** ACS Collector | yes | yes | |
 | **Operations Manager** Operations console | yes | yes | |
 
 
-### Client Operating System 
+### Client operating system 
 
 The following versions of Windows client operating system are supported for the Operations Manager Operations console.
 
@@ -85,7 +85,7 @@ The following versions of Windows client operating system are supported for the 
 |:--- |:---|:--- |:--- |
 | yes | yes | yes | yes |
 
-### Microsoft Monitoring Agent Operating System 
+### Microsoft Monitoring Agent operating system 
 
 The following versions of Windows operating system are supported for the Microsoft Monitoring Agent connecting to Operations Manager.
 
