@@ -1,6 +1,7 @@
 ---
-title: How to Create an OLAP Cube Using a Management Pack
-manager: cfreeman
+title: Create an OLAP cube using a management pack
+description: Explains how to create a Service Manager OLAP cube using a management pack.
+manager: carmonm
 ms.custom: na
 ms.prod: system-center-2016
 author: bandersmsft
@@ -14,7 +15,7 @@ ms.topic: article
 ms.assetid: 3ed8ab2f-0e0d-4b6f-b3e4-a0f44775ec13
 ---
 
-# How to Create an OLAP Cube Using a Management Pack
+# Create a Service Manager OLAP cube using a management pack
 
 >Applies To: System Center 2016 - Service Manager
 

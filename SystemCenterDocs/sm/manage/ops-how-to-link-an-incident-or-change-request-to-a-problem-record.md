@@ -1,6 +1,7 @@
 ---
-title: How to Link an Incident or Change Request to a Problem Record
-manager: cfreeman
+title: Link an incident or change request to a problem record
+description: Explains how to link an incident or change request to a problem record in Service Manager.
+manager: carmonm
 ms.custom: na
 ms.prod: system-center-2016
 author: bandersmsft
@@ -14,7 +15,7 @@ ms.topic: article
 ms.assetid: 96b8eff6-d347-4947-babe-90e4211f27b7
 ---
 
-# How to Link an Incident or Change Request to a Problem Record
+# Link an incident or change request to a problem record in Service Manager
 
 >Applies To: System Center 2016 - Service Manager
 

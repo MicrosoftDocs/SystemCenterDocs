@@ -1,6 +1,7 @@
 ---
-title: About Modeling OLAP Cubes in Management Packs
-manager: cfreeman
+title: Modeling OLAP cubes in management packs overview
+description: Provides an overview of modeling Service Manager OLAP cubes in management packs.
+manager: carmonm
 ms.custom: na
 ms.prod: system-center-2016
 author: bandersmsft
@@ -14,7 +15,7 @@ ms.topic: article
 ms.assetid: 7f6da179-5a54-46fb-adc4-3fcaa7bd9864
 ---
 
-# About Modeling OLAP Cubes in Management Packs
+# Modeling Service Manager OLAP cubes in management packs overview
 
 >Applies To: System Center 2016 - Service Manager
 
@@ -95,7 +96,7 @@ The ability to define customized management pack elements was used to model the 
 ## Custom MDX  
  You can use custom Multi\-Dimensional Expression \(MDX\) scripts to modify and tailor the OLAP cube to the exact specifications that meet your needs. Because Service Manager are model based, it is impossible to determine all your possible semantic needs when taking into account the wide spectrum of requirements and exact specifications for the domain\-specific business needs of a particular user. Custom MDX makes it possible for you to define MDX scripts that will be applied to the OLAP cube to enable specific scenarios that users need to measure and instrument.  
 
-## Named Calculation  
+## Named calculation  
  You can use named calculations to define new attributes on a dimension that a custom measure can later target. This makes it possible for you to extend the dimensional schema and customize the schema to fit your exact needs. The following example is from the SystemCenterWorkItemsCube:  
 
 ```  

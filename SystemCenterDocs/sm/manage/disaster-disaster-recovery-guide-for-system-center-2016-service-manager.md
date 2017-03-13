@@ -1,6 +1,7 @@
 ---
-title: Disaster Recovery Guide for System Center 2016 - Service Manager
-manager: cfreeman
+title: Disaster recovery for Service Manager
+description: Describes the process used for disaster recovery for System Center 2016 - Service Manager.
+manager: carmonm
 ms.custom: na
 ms.prod: system-center-2016
 author: bandersmsft
@@ -14,7 +15,7 @@ ms.topic: article
 ms.assetid: 21c80dca-3dee-40bd-b39c-85f28ef1d40c
 ---
 
-# Disaster Recovery Guide for System Center 2016 - Service Manager
+# Disaster recovery for System Center 2016 - Service Manager
 
 >Applies To: System Center 2016 - Service Manager
 
@@ -34,17 +35,7 @@ A recovery plan for potential software and equipment failures in your System Cen
 
  You must also back up the Service Manager databases and your unsealed management packs.  
 
-## Disaster Recovery Scenarios Overview
-
-This topic provides an overview of the disaster recovery processes for each of the major parts of a System Center 2016 - Service Manager installation:  
-
-1.  Service Manager Management Server  
-
-2.  Data Warehouse Management Server  
-
-3.  Service Manager Databases  
-
-### Service Manager Management Server  
+## Service Manager management server  
  You can take two approaches to restoring a failed Service Manager management server. You can replace the management server, or you can promote an additional management server to the primary role if an additional management server exists. The option of replacing the management server or promoting it depends largely on your time frame. If you can bring up another computer quickly, you might choose that option. Otherwise, you can promote an additional management server to the primary role and then add another management server later.  
 
  Promoting an additional management server involves the following procedures:  
@@ -61,7 +52,7 @@ This topic provides an overview of the disaster recovery processes for each of t
 
 3.  Install a Service Manager management server. For more information, see [Service Manager Deployment Scenarios](../deploy/deploy-deployment-scenarios-for-system-center-2016-service-manager.md).  
 
-### Data Warehouse Management Server  
+### Data Warehouse management server  
  Only one recovery scenario is possible for the data warehouse management server: you must install a new data warehouse management server on a computer with the same computer name as the computer that failed. Installing a replacement data warehouse management server involves the following procedures:  
 
 1.  Start with a new computer that has the same computer name as the computer that failed.  
@@ -70,7 +61,7 @@ This topic provides an overview of the disaster recovery processes for each of t
 
 3.  Install a data warehouse management server. For more information, see [Service Manager Deployment Scenarios](../deploy/deploy-deployment-scenarios-for-system-center-2016-service-manager.md).  
 
-### Service Manager Databases  
+### Service Manager databases  
  Recovery procedures are the same for both the Service Manager database and the data warehouse database. You use a computer with the same name, and then you restore the Microsoft SQL&nbsp;Server databases using the same instance as the original. Recovery of a Service Manager database and a data warehouse database involves the following procedures:  
 
 1.  Start with a new computer with the same computer name and with the same SQL&nbsp;Server instance as the computer that failed.  

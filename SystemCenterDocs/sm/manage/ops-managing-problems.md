@@ -1,6 +1,7 @@
 ---
-title: Managing Problems
-manager: cfreeman
+title: Manage problems
+description: Explains how to manage problems in Service Manager.
+manager: carmonm
 ms.custom: na
 ms.prod: system-center-2016
 author: bandersmsft
@@ -14,15 +15,15 @@ ms.topic: article
 ms.assetid: 62f1e2c8-2c78-41f6-a737-8d8fefd6079d
 ---
 
-# Managing Problems
+# Manage problems in Service Manager
 
 >Applies To: System Center 2016 - Service Manager
 
-The procedures in this section describe how to manage problems in Service Manager.  
+The procedures in this article describe how to manage problems in Service Manager.  
 
  In Service Manager, problems are records that are created to help prevent future problems and incidents from happening, to eliminate recurring incidents, and to minimize the impact of incidents that cannot be prevented. Analysts can use the Service Manager console to create problem records and to associate incidents with problems.  
 
-## How to Create and Edit Problem Records
+## Create and edit problem records
 
 You can use the following procedures to create new problem records and then edit them by using the Service Manager console. You can create a new problem record from the Service Manager console, from an incident view, or from an incident form.  
 
@@ -100,7 +101,7 @@ You can use the following procedures to create new problem records and then edit
 
 -   In the **Tasks** list, click **Refresh** to view the new problem record, or open the problem record to view the revised information.
 
-## How to Resolve Problem Records and Related Incidents Automatically
+## Resolve problem records and related incidents automatically
 
 You can use the following procedures to resolve a problem record and the incidents that are associated with it and then validate the resolution.  
 
@@ -127,7 +128,7 @@ You can use the following procedures to resolve a problem record and the inciden
     > [!NOTE]  
     >  It might take a few minutes for the incident status to be updated to **Resolved**.  
 
-## How to Link an Incident or Change Request to a Problem Record
+## Link an incident or change request to a problem record
 
 You can use the following procedure to link an incident or change request to a problem record if you created a problem record without linking it to an existing incident or change request.  
 

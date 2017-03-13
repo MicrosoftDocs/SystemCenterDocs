@@ -1,6 +1,7 @@
 ---
-title: Step 5 - Bundle and Import the Custom Management Pack to Service Manager
-manager: cfreeman
+title: Step 5 - Bundle and import the custom management Pack to Service Manager
+description: Describes the fifth step of the Service Manager Authoring Tool Woodgrove Bank customization scenario to bundle and import the custom management pack to Service Manager.
+manager: carmonm
 ms.custom: na
 ms.prod: system-center-2016
 author: bandersmsft
@@ -14,7 +15,7 @@ ms.topic: article
 ms.assetid: e8388927-d818-4dbf-8351-5a1034913604
 ---
 
-# Step 5 - Bundle and Import the Custom Management Pack to Service Manager
+# Step 5 of the customization scenario - Bundle and import the custom management pack to Service Manager
 
 >Applies To: System Center 2016 - Service Manager
 

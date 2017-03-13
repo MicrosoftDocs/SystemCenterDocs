@@ -1,6 +1,7 @@
 ---
-title: About Cube Partitioning
-manager: cfreeman
+title: Cube partitioning overview
+description: Provides and overview of Service Manger cube partitioning.
+manager: carmonm
 ms.custom: na
 ms.prod: system-center-2016
 author: bandersmsft
@@ -14,7 +15,7 @@ ms.topic: article
 ms.assetid: 59124728-3fea-4acf-b17d-839ebefbf092
 ---
 
-# About Cube Partitioning
+# Service Manger cube partitioning overview
 
 >Applies To: System Center 2016 - Service Manager
 

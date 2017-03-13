@@ -1,6 +1,7 @@
 ---
-title: Implementing and Closing a Change Request
-manager: cfreeman
+title: Implement and close a change request
+description: Explains how to implement and close a change request in Service Manager.
+manager: carmonm
 ms.custom: na
 ms.prod: system-center-2016
 author: bandersmsft
@@ -14,7 +15,7 @@ ms.topic: article
 ms.assetid: 61d3e06a-be67-4203-a47b-a6af1a01702a
 ---
 
-# Implementing and Closing a Change Request
+# Implement and close a change request in Service Manager
 
 >Applies To: System Center 2016 - Service Manager
 
@@ -22,7 +23,7 @@ The procedures in this section describe how to implement and close a change requ
 
  Complete the following steps to implement and close a change request.  
 
-## How to Complete or Fail a Manual Activity
+## Complete or fail a manual Activity
 
 You can use the following procedures to complete or fail a manual activity in Service Manager and then validate that the manual activity is complete or failed.  
 
@@ -58,7 +59,7 @@ You can use the following procedures to complete or fail a manual activity in Se
 
 3.  Verify that the manual activity is set to either **Completed** or **Failed**.  
 
-## How to Close a Change Request
+## Close a change request
 
 You can use the following procedures to permanently close a successful change request or a failed change request and then validate the closure of the change request. You cannot reopen a closed change request.  
 
@@ -93,7 +94,7 @@ You can use the following procedures to permanently close a successful change re
 
 -   Click the **Change Requests: Closed** view to ensure that the closed change request appears in the list.  
 
-## Optionally Send Automated Activity and Change Request Notifications
+## Optionally send automated activity and change request notifications
 
 You can use the following procedure to notify reviewers that an activity is available for review. You can use the second procedure to notify users that a change request has been closed.  
 

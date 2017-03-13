@@ -1,6 +1,7 @@
 ---
-title: Prerequisites for the Woodgrove Bank Customization Scenario
-manager: cfreeman
+title: Prerequisites for the Woodgrove Bank customization scenario
+description: Describes prerequisites for the Woodgrove Bank customization scenario for the Service Manager Authoring Tool.
+manager: carmonm
 ms.custom: na
 ms.prod: system-center-2016
 author: bandersmsft
@@ -14,7 +15,7 @@ ms.topic: article
 ms.assetid: 944ee559-992b-4232-9fb9-f93b82323edb
 ---
 
-# Prerequisites for the Woodgrove Bank Customization Scenario
+# Prerequisites for the Woodgrove Bank customization scenario for the Service Manager Authoring Tool
 
 >Applies To: System Center 2016 - Service Manager
 

@@ -1,6 +1,7 @@
 ---
-title: How to Create an Incident View and Personalize It
-manager: cfreeman
+title: Create an incident view and personalize it
+description: Explains how to create an incident view and personalize it in Service Manager.
+manager: carmonm
 ms.custom: na
 ms.prod: system-center-2016
 author: bandersmsft
@@ -14,7 +15,7 @@ ms.topic: article
 ms.assetid: dd7fbb82-98d5-433e-91df-7c721d03608b
 ---
 
-# How to Create an Incident View and Personalize It
+# Create an incident view and personalize it in Service Manager
 
 >Applies To: System Center 2016 - Service Manager
 
