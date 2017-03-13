@@ -40,8 +40,8 @@ This article describes prerequisites for upgrading to System Center 2016 - Virtu
 6. If the current SQL Server database used AlwaysOn availability groups:
 	- If the VMM database is included in the availability group, remove it in SQL Server Management Studio.
 	- Initiate a failover to the computer that is running SQL Server, and on which the VMM database is installed.
-6. If you're running Operations Manager with VMM, disconnect the connection between VMM and Operations Manager server.
-7. The VMM 2012 R2 server is running update rollup 10 or 11, and you have a Citrix NetScalar load balancer deployed, run this SQL Server script before you start the upgrade, otherwise it might fail. The script isn't needed if you're running update rollup 12 or later.
+7. If you're running Operations Manager with VMM, disconnect the connection between VMM and Operations Manager server.
+8. The VMM 2012 R2 server is running update rollup 10 or 11, and you have a Citrix NetScalar load balancer deployed, run this SQL Server script before you start the upgrade, otherwise it might fail. The script isn't needed if you're running update rollup 12 or later.
 
 	  ``ALTER TABLE [dbo].[tbl_NetMan_HardwareModelSettings]  
 	  ALTER COLUMN Version NVARCHAR(255) NULL;  
@@ -86,9 +86,9 @@ During setup, VMM enables the following firewall rules. These rules remain in ef
 	- If you choose to not upgrade Windows, delete the high availability VMM resource group from the failover cluster.
 	- If you choose to upgrade Windows:
 		- During the upgrade, choose the upgrade option, not a fresh installation, to retain data.
-	  		- Note the name of your cluster, and then destroy the cluster.
-	  		- Upgrade the operating system on all the nodes in the cluster that you want to upgrade.
-	  		- Recreate the cluster by using its previous name.
+	  	- Note the name of your cluster, and then destroy the cluster.
+	  	- Upgrade the operating system on all the nodes in the cluster that you want to upgrade.
+	  	- Recreate the cluster using its previous name.
 3. Run VMM setup on each cluster node.
 4. In the main setup page, click **Install**.
 5. In **Select features to install**, select the **VMM management server** and then click **Next**. The VMM console will be automatically installed.
