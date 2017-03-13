@@ -1,6 +1,7 @@
 ---
-title: Reports Sample Scenario - How to Include Dashboards and Reports in Custom Views
-manager: cfreeman
+title: Include dashboards and reports in custom views for the reports sample scenario
+description: Describes how you can include dashboards and reports in custom views for the Service Manager Authoring Tool reports sample scenario.
+manager: carmonm
 ms.custom: na
 ms.prod: system-center-2016
 author: bandersmsft
@@ -14,7 +15,7 @@ ms.topic: article
 ms.assetid: 5e98cc12-263e-440e-b641-1fdd435d4f45
 ---
 
-# Reports Sample Scenario - How to Include Dashboards and Reports in Custom Views
+# Include dashboards and reports in custom views for the Service Manager Authoring Tool reports sample scenario
 
 >Applies To: System Center 2016 - Service Manager
 

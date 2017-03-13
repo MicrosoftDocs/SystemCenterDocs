@@ -1,6 +1,7 @@
 ---
-title: Searching for Information in Service Manager
-manager: cfreeman
+title: Search for information
+description: Describes how to search for information in Service Manager.
+manager: carmonm
 ms.custom: na
 ms.prod: system-center-2016
 author: bandersmsft
@@ -14,7 +15,7 @@ ms.topic: article
 ms.assetid: 8293095c-25ce-4d26-a910-55ebfd9a6ae9
 ---
 
-# Searching for Information in Service Manager
+# Search for information in Service Manager
 
 >Applies To: System Center 2016 - Service Manager
 

@@ -1,6 +1,7 @@
 ---
-title: How to View and Analyze an OLAP Data Cube with Excel
-manager: cfreeman
+title: View and analyze an OLAP data cube with Excel
+description: Explains how to view and analyze a Service Manager OLAP data cube with Excel.
+manager: carmonm
 ms.custom: na
 ms.prod: system-center-2016
 author: bandersmsft
@@ -14,7 +15,7 @@ ms.topic: article
 ms.assetid: c8f51e1b-061e-4ec2-8a21-b0b17eb31aee
 ---
 
-# How to View and Analyze an OLAP Data Cube with Excel
+# View and analyze a Service Manager OLAP data cube with Excel
 
 >Applies To: System Center 2016 - Service Manager
 

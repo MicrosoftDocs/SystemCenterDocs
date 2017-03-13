@@ -1,6 +1,7 @@
 ---
-title: Advanced Analytical Reports Available in Service Manager
-manager: cfreeman
+title: Advanced analytical reports in Service Manager
+description: Provides a reference of advanced analytical reports available in Service Manager.
+manager: carmonm
 ms.custom: na
 ms.prod: system-center-2016
 author: bandersmsft
@@ -14,11 +15,11 @@ ms.topic: article
 ms.assetid: d79b0585-58e7-483c-904a-800fa9480493
 ---
 
-# Advanced Analytical Reports Available in Service Manager
+# Advanced analytical reports available in Service Manager
 
 >Applies To: System Center 2016 - Service Manager
 
-The following analytical reports - which are presented as Microsoft Online Analytical Processing \(OLAP\) data cubes - are available in Service Manager. The data cubes that are included in this release of Service Manager contain measures and dimensions.  
+The following analytical reports - which are presented as Microsoft Online Analytical Processing \(OLAP\) data cubes - are available in Service Manager. The data cubes that are included in Service Manager contain measures and dimensions.  
 
 ## Dimensions  
  The following dimensions are contained in various data cubes. However - not all data cubes contain each dimension.  
@@ -104,7 +105,7 @@ The following analytical reports - which are presented as Microsoft Online Analy
  - PowerActivityRecordEventType
  - SoftwareUpdateDim  
 
-## Work Item Data Cube  
+## Work item data cube  
  The work item data cube contains the following measures:  
 
  - SLAInstanceInformationCount
@@ -173,7 +174,7 @@ The following analytical reports - which are presented as Microsoft Online Analy
  - ComputerDimCount
  - ServiceDimCount  
 
-## Power Management Data Cube  
+## Power management data cube  
  The power management data cube contains the following measures:  
 
  - ComputerHostsOperatingSystemCount
@@ -214,7 +215,7 @@ The following analytical reports - which are presented as Microsoft Online Analy
  - ServiceDimCount
  - ConfigItemDimCount  
 
-## Software Updates Data Cube  
+## Software updates data cube  
  The software updates data cube contains the following measures:  
 
  ComputerHostsOperatingSystemCount
@@ -234,7 +235,7 @@ The following analytical reports - which are presented as Microsoft Online Analy
  - ServiceDimCount
  - ConfigItemDimCount  
 
-## Service Catalog Data Cube  
+## Service catalog data cube  
  The service catalog data cube contains the following measures:  
 
  - SLAConfigurationHasMetricCount
@@ -290,7 +291,7 @@ The following analytical reports - which are presented as Microsoft Online Analy
  -OfferingDimCount
  - ServiceDimCount  
 
-## Configuration Item Data Cube  
+## Configuration item data cube  
  The configuration item data cube contains the following measures:  
 
  - ConfigItemRelatesToConfigItemCount
@@ -321,7 +322,7 @@ The following analytical reports - which are presented as Microsoft Online Analy
  - ServiceDimCount
  - DeployedComputerDimCount  
 
-## Change and Activity Management Data Cube  
+## Change and activity management data cube  
  The change and activity management data cube contains the following measures:  
 
  - WorkItemIsAboutConfigItemCount

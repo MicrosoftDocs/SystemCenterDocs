@@ -1,6 +1,7 @@
 ---
-title: Backing Up Unsealed Management Packs in Service Manager
-manager: cfreeman
+title: Back up unsealed management packs
+description: Describes how to back up Service Manager unsealed management packs for disaster recovery.
+manager: carmonm
 ms.custom: na
 ms.prod: system-center-2016
 author: bandersmsft
@@ -14,13 +15,13 @@ ms.topic: article
 ms.assetid: 368ac173-ab92-4ce7-a494-76c48c466976
 ---
 
-# Backing Up Unsealed Management Packs in Service Manager
+# Back up Service Manager unsealed management packs
 
 >Applies To: System Center 2016 - Service Manager
 
 Part of the disaster recovery plan for your Service Manager management server involves backing up your unsealed management packs. The following procedure describes how to back up your unsealed management packs.  
 
-## How to Back Up Unsealed Management Packs
+## Back up unsealed management packs
 
 You can use the Windows&nbsp;PowerShell command\-line interface to identify and copy your unsealed management packs to a folder on your hard disk drive. After you copy them, save these management packs so that-as part of your disaster recovery plan for Service Manager-you can later import these management packs.  
 

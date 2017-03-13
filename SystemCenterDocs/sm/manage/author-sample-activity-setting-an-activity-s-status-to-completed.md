@@ -1,6 +1,7 @@
 ---
-title: Sample Activity - Setting an Activity's Status to Completed
-manager: cfreeman
+title: Set an activity's status to completed for the sample activity
+description: Provides an example to set an activity's status to completed for the Service Manager Authoring Tool sample activity.
+manager: carmonm
 ms.custom: na
 ms.prod: system-center-2016
 author: bandersmsft
@@ -14,7 +15,7 @@ ms.topic: article
 ms.assetid: 1e31bc91-020f-47e7-bd2b-d40ddc2fb7ca
 ---
 
-# Sample Activity - Setting an Activity's Status to Completed
+# Set an activity's status to completed for the Service Manager Authoring Tool sample activity
 
 >Applies To: System Center 2016 - Service Manager
 

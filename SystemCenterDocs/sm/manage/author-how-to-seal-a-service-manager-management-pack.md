@@ -1,6 +1,7 @@
 ---
-title: How to Seal a Service Manager Management Pack
-manager: cfreeman
+title: Seal a Service Manager management pack
+description: Describes how to seal a Service Manager management pack for use with Service Manager authoring.
+manager: carmonm
 ms.custom: na
 ms.prod: system-center-2016
 author: bandersmsft
@@ -14,7 +15,7 @@ ms.topic: article
 ms.assetid: 240ef642-dba3-416a-b048-df98d947cbaf
 ---
 
-# How to Seal a Service Manager Management Pack
+# Seal a Service Manager management pack
 
 >Applies To: System Center 2016 - Service Manager
 

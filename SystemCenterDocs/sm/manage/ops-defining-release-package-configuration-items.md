@@ -1,6 +1,7 @@
 ---
-title: Defining Release Package Configuration Items
-manager: cfreeman
+title: Define release package configuration items
+description: Describes how to define release package configuration items in Service Manager.
+manager: carmonm
 ms.custom: na
 ms.prod: system-center-2016
 author: bandersmsft
@@ -14,13 +15,13 @@ ms.topic: article
 ms.assetid: bd274169-070c-4fa0-b00b-5170ae5308d0
 ---
 
-# Defining Release Package Configuration Items
+# Define release package configuration items in Service Manager
 
 >Applies To: System Center 2016 - Service Manager
 
 Release packages normally contain a build and an environment that the release is tested with. The topics in this section describe how to build the configuration item parts that are contained in a release package and how they are added to the release package.  
 
-## How to Create a Build Configuration Item
+## Create a build configuration item
 
 The release manager can create a build configuration item that defines the software and version that a build consists of by performing the following procedure. After a build is created, it is normally added to the release package of a release record.  
 
@@ -48,7 +49,7 @@ The release manager can create a build configuration item that defines the softw
 
 6.  Click **OK** to close the build form.  
 
-## How to Create an Environment Configuration Item
+## Create an environment configuration item
 
 The release manager can create an environment configuration item that defines the computers, services, and people that the environment consists of by performing the following procedure. After an environment is created, it is normally added to the release package of a release record.  
 
@@ -78,7 +79,7 @@ The release manager can create an environment configuration item that defines th
 
 6.  Click **OK** to close the environment form.  
 
-## How to Add Release Package Information to a Release Record
+## Add release package information to a release record
 
 The Release Manager can add release package information for a release record using the following procedure. The release package normally contains the build and environment that the release is tested with.  
 
