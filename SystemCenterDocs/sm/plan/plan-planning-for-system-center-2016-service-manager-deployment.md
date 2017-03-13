@@ -1,5 +1,7 @@
 ---
-title: Planning for System Center 2016 - Service Manager Deployment
+title: Plan for Service Manager deployment
+description: Learn about several deployment options for Service Manager.
+manager: carmonm
 ms.custom: na
 ms.prod: system-center-2016
 author: bandersmsft
@@ -13,11 +15,11 @@ ms.topic: article
 ms.assetid: 86f6f99e-9605-4d6b-9a7a-abb19910f91b
 ---
 
-# Planning for System Center 2016 - Service Manager Deployment
+# Plan for System Center 2016 - Service Manager deployment
 
 >Applies To: System Center 2016 - Service Manager
 
-For System Center 2016 - Service Manager, several deployment options are available, and three options are presented in this guide.  
+For System Center 2016 - Service Manager, several deployment options are available, and three options are presented in this article.  
 
  The first deployment option uses one physical computer and one virtual computer. The physical computer hosts the Service Manager management server, the Service Manager database, and the data warehouse databases, and it also hosts the virtual server. The virtual computer hosts the data warehouse management server. This deployment is used primarily for lightweight or first\-impression evaluation of Service Manager. No scalability or performance estimates are available for this scenario.  
 
@@ -37,7 +39,7 @@ For System Center 2016 - Service Manager, several deployment options are availab
 
  After the evaluation phase is complete, you might install Service Manager in a production environment and select the deployment scenario in which Service Manager is installed on four computers.  
 
-## Multiple Service Manager Management Servers and One Data Warehouse  
+## Multiple Service Manager management servers and one data warehouse  
  The Service Manager management server and its associated Service Manager database make up a Service Manager management group. The data warehouse management server and its associated databases make up a data warehouse management group. After deploying Service Manager, you will register the Service Manager management group with the data warehouse management group.  
 
  In your enterprise, you might create multiple Service Manager management groups. You can centralize reporting for multiple Service Manager management groups by registering multiple Service Manager management groups with a single data warehouse management group.

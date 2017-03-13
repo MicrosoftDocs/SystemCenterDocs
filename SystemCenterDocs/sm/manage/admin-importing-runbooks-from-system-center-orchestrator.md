@@ -1,18 +1,18 @@
 ---
-description:  
-manager:  cfreeman
-ms.topic:  article
+title: Import Runbooks from System Center Orchestrator
+description: Describes how you can import Runbooks from System Center Orchestrator into Service Manager.
+manager: carmonm
+ms.topic: article
 author: bandersmsft
 ms.author: banders
-ms.prod:  system-center-2016
+ms.prod: system-center-2016
 keywords:  
 ms.date: 10/12/2016
-title:  Importing Runbooks from System Center Orchestrator
-ms.technology:  service-manager
-ms.assetid:  33f8fa88-fad7-4354-bf6b-dbed1658ff0f
+ms.technology: service-manager
+ms.assetid: 33f8fa88-fad7-4354-bf6b-dbed1658ff0f
 ---
 
-# Importing Runbooks from System Center Orchestrator
+# Import Runbooks from System Center Orchestrator into Service Manager
 
 >Applies To: System Center 2016 - Service Manager
 
@@ -23,7 +23,7 @@ Activities that make up a service request can be mapped to runbook activities, w
 > [!NOTE]
 > Make sure that you have installed the ADO.NET Data Services Update for .NET Framework 3.5 Service Pack 1 (SP1), as described in Microsoft Knowledge Base article 976127. For more information, see [ADO.NET Data Services Update](http://go.microsoft.com/fwlink/p/?LinkID=224398).
 
-## How to Create an Orchestrator Connector
+## Create an Orchestrator Connector
 
 You can use the following procedures to create a connector for System Center - Orchestrator and then validate the creation of the connector.
 
@@ -80,7 +80,7 @@ You can use the following procedures to create a connector for System Center - O
 
 
 
-## How to Synchronize an Orchestrator Connector
+## Synchronize an Orchestrator connector
 
 To ensure that the Service Manager database is up to date, the Orchestrator connector synchronizes with Service Manager on a daily basis. You can use the following procedures to synchronize the connector manually and validate that the connector synchronized.
 
@@ -105,7 +105,7 @@ To ensure that the Service Manager database is up to date, the Orchestrator conn
 
 
 
-## How to Disable and Enable an Orchestrator Connector
+## Disable and enable an Orchestrator connector
 
 You can use the following procedures to disable or enable an Orchestrator connector and validate the status of the connector.
 

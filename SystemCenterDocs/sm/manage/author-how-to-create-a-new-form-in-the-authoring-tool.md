@@ -1,6 +1,7 @@
 ---
-title: How to Create a New Form in the Authoring Tool
-manager: cfreeman
+title: Create a new form
+description: Learn about how you can create a new form in the Service Manager Authoring Tool.
+manager: carmonm
 ms.custom: na
 ms.prod: system-center-2016
 author: bandersmsft
@@ -14,7 +15,7 @@ ms.topic: article
 ms.assetid: 5a021f84-ad51-4a29-9ed8-200a79000110
 ---
 
-# How to Create a New Form in the Authoring Tool
+# Create a new form in the Authoring Tool
 
 >Applies To: System Center 2016 - Service Manager
 
@@ -28,7 +29,7 @@ If you defined a new custom class to extend Service Manager, you might have to c
 
  The following sections describe how to create a new form in the Authoring Tool.  
 
-## Creating a New Form from a Base Class  
+## Create a new form from a base class  
  Use the following procedure to create a simple form from a base class.  
 
 > [!NOTE]  
@@ -50,7 +51,7 @@ If you defined a new custom class to extend Service Manager, you might have to c
 
 6.  Save the management pack that contains the form that you created.  
 
-## Creating a New Form That Is Based on a Custom WPF Form  
+## Create a new form that is based on a custom WPF form  
  Sometimes a simple form is not sufficient, and you must use advanced features, such as custom logic, in the form. In this case, you can develop a custom WPF form by using a tool other than the Authoring Tool, using instead Visual Studio. Then, instead of authoring a form from base class, you load that WPF form's assembly file into the Authoring Tool and use that as a starting point for further customizations to the form. The form customizations that you make in the Authoring Tool are stored in a management pack file.  
 
  Later, to use the customized form in Service Manager, after you complete all customizations, you must bundle the original form assembly file with the management pack that contains the customizations that you made in the Authoring Tool. For more information about bundling a management pack and creating a .mpb file, see [How to Bundle Management Packs and Resource Files](author-how-to-bundle-management-packs-and-resource-files.md).  

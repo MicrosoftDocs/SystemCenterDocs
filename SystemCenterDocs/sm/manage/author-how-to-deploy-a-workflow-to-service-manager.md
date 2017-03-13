@@ -1,6 +1,7 @@
 ---
-title: How to Deploy a Workflow to Service Manager
-manager: cfreeman
+title: Deploy a workflow to Service Manager
+description: Describes how to deploy a workflow to Service Manager using the Service Manager Authoring Tool.
+manager: carmonm
 ms.custom: na
 ms.prod: system-center-2016
 author: bandersmsft
@@ -14,7 +15,7 @@ ms.topic: article
 ms.assetid: 68e697fe-9f0b-4813-bdce-c59cc4019ff3
 ---
 
-# How to Deploy a Workflow to Service Manager
+# Deploy a workflow to Service Manager using the Service Manager Authoring Tool
 
 >Applies To: System Center 2016 - Service Manager
 

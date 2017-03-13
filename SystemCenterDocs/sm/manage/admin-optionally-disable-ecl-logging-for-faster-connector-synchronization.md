@@ -1,20 +1,20 @@
 ---
-description:  
-manager:  cfreeman
+title: Optionally disable ECL logging for faster connector synchronization
+description: Describes how you can optionally disable Service Manager ECL logging for faster connector synchronization.
+manager: carmonm
 ms.custom: na
-ms.topic:  article
+ms.topic: article
 author:  bandersmsft
 ms.author: banders
-ms.prod:  system-center-2016
+ms.prod: system-center-2016
 keywords:  
 ms.date: 10/12/2016
-title:  Optionally Disable ECL Logging for Faster Connector Synchronization
-ms.technology:  service-manager
+ms.technology: service-manager
 ms.tgt_pltfrm: na
-ms.assetid:  805b479a-9312-4039-be44-01dda07086d8
+ms.assetid: 805b479a-9312-4039-be44-01dda07086d8
 ---
 
-# Optionally Disable ECL Logging for Faster Connector Synchronization
+# Optionally disable Service Manager ECL logging for faster connector synchronization
 
 >Applies To: System Center 2016 - Service Manager
 
@@ -38,14 +38,14 @@ Disabled ECL logging is not automatically turned on. In other words, by default,
 
 -   When Service Manager is installed, by default, ECL logging is *enabled*.
 
-## Benefits of Disabling ECL Logging
+## Benefits of disabling ECL logging
 When you disable ECL logging:
 
 -   The connector sync time is reduced significantly. During testing at Microsoft, a 65% increase in performance for the SCCM connector and a 55% increase in performance for the Active Directory connector was verified.
 
 -   The size of the ECL table and the history tables will not increase. During the Active Directory connector test, it brought in 2.2 million rows and in the SCCM connector test, it brought in 11.6 million rows in ECL and history table. With the feature enabled, no rows are added into these tables.
 
-## Disadvantages of Disabling ECL Logging
+## Disadvantages of disabling ECL logging
 Here are some disadvantages of this feature:
 
 You cannot create DCM incidents when you disable ECL logging.
@@ -56,13 +56,13 @@ Because entries are not written to the ECL and history table, the history of the
 
 In some cases, changes to data like users and computers need be recorded in the database for auditing purposes. In this example, an alternative is to get the change history from the source. For example, would need to get the history of changes made to the user from Active Directory or get the history of changes made to the computer from System Center Configuration Manager.
 
-## Additional Information About Disabling ECL Logging
+## Additional information about disabling ECL logging
 With System Center 2016 - Service Manager, ECL logging is disabled by default for both the new installations and upgrades, regardless of whether your disabled ECL logging previously. Settings that you might have used previously are no longer used. You'll need the use the procedure below to disable ECL logging.
 
 If you used a registry entry previously to disable ECL logging, the registry value remains on your management server. You can manually delete the `ConnectorLoggingDisabled` REG_DWORD under the `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\System Center\2010\Common\SDK Service` key.
 
 
-## Disabling ECL Logging
+## Disable ECL logging
 Use the following procedure to disable ECL logging for connectors.
 
 ### To disable ECL logging for SCCM and Active Directory connectors

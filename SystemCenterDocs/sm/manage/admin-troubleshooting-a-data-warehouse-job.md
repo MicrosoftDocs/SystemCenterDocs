@@ -1,11 +1,11 @@
 ---
-title: Troubleshooting a Data Warehouse Job
-manager: cfreeman
+title: Troubleshoot data warehouse jobs using cmdlets
+description: Describes how you can troubleshoot Service Manager data warehouse jobs using cmdlets.
+manager: carmonm
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 keywords:
-description:
 ms.custom: na
 ms.prod: system-center-2016
 author: bandersmsft
@@ -19,7 +19,7 @@ ms.topic: article
 ms.assetid: 56b7f6c9-7960-4a6c-b933-0fe8ca0475d6
 ---
 
-# Troubleshooting a Data Warehouse Job
+# Troubleshoot Service Manager data warehouse jobs using cmdlets.
 
 >Applies To: System Center 2016 - Service Manager
 

@@ -1,6 +1,7 @@
 ---
-title: How to Add a Panel Control to a Form in the Authoring Tool
-manager: cfreeman
+title: Add a panel control to a form
+description: You can add a panel control to a form in the Service Manager Authoring Tool.
+manager: carmonm
 ms.custom: na
 ms.prod: system-center-2016
 author: bandersmsft
@@ -14,7 +15,7 @@ ms.topic: article
 ms.assetid: 09bd0bd6-e90e-4ee6-9a1d-1851221e1794
 ---
 
-# How to Add a Panel Control to a Form in the Authoring Tool
+# Add a panel control to a form in the Authoring Tool
 
 >Applies To: System Center 2016 - Service Manager
 
@@ -22,7 +23,7 @@ The **Panel** control in the Service Manager Authoring Tool is a **Layout** cont
 
  Use the following procedure to add a **Panel** control to a form.  
 
-### To add a Panel control to a form  
+### To add a panel control to a form  
 
 1.  Ensure that the **Form Customization Toolbox** pane is open and that the form that you want to customize is open in the authoring pane.  
 

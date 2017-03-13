@@ -1,6 +1,7 @@
 ---
-title: Suspending and Resuming a Change Request
-manager: cfreeman
+title: Suspend and resume a change request
+description: Explains how to suspend and resume a Service Manager change request.
+manager: carmonm
 ms.custom: na
 ms.prod: system-center-2016
 author: bandersmsft
@@ -14,14 +15,14 @@ ms.topic: article
 ms.assetid: f03242bf-a041-4388-8f94-e9d68e2eeb30
 ---
 
-# Suspending and Resuming a Change Request
+# Suspend and resume a Service Manager change request
 
 >Applies To: System Center 2016 - Service Manager
 
-The procedures in this section describe how to suspend and resume a change request in Service Manager. Complete the following steps to suspend or resume a change request.  
+The procedures in this article describe how to suspend and resume a change request in Service Manager. Complete the following steps to suspend or resume a change request.  
 
 
-## How to Put a Change Request on Hold
+## Put a change request on hold
 
 You can use the following procedures to put a change request on hold in Service Manager and then validate that the change request is on hold. For example, you might need to put a change request on hold if an external team needs to complete a manual activity.  
 
@@ -41,7 +42,7 @@ You can use the following procedures to put a change request on hold in Service 
 
 -   Click the **Change Requests: On Hold** view to ensure that the change request has been put on hold.  
 
-## How to Resume a Change Request
+## Resume a change request
 
 You can use the following procedures to resume a change request that was put on hold in Service Manager and then validate that the change request was resumed. For example, you might need to resume a change request after an external team has completed a manual activity.  
 
@@ -63,7 +64,7 @@ You can use the following procedures to resume a change request that was put on 
 
 -   If the current activity for a change request is a manual activity, click the **Change Requests: Manual Activity In Progress** view to ensure that the change request was resumed.  
 
-## Optionally Unblock a Failed Change Request
+## Optionally unblock a failed change request
 
 You can use the following procedures to unblock a failed change request and then validate that the change request is unblocked. For example, you might need to unblock an activity of a change request that a review board or other review body has failed. Unblocking the change request resets the change request so that the change owner can provide more information.  
 

@@ -1,6 +1,7 @@
 ---
-title: Automating IT Processes with Workflows
-manager: cfreeman
+title: Automate IT processes with workflows
+description: Learn about how you can automate IT processes with workflows in Service Manager.
+manager: carmonm
 ms.custom: na
 ms.prod: system-center-2016
 author: bandersmsft
@@ -14,17 +15,17 @@ ms.topic: article
 ms.assetid: 9a959a9d-495c-456c-91e9-012adf58830f
 ---
 
-# Automating IT Processes with Workflows
+# Automate IT processes with workflows in Service Manager
 
 >Applies To: System Center 2016 - Service Manager
 
-This section describes functionality in Service Manager that you can use to automate processes. It describes the relationships between workflows and management packs, and it describes the Windows Workflow Foundation \(WF\) activities that the Service Manager Authoring Tool provides in the default Activity Library.  
+This article describes functionality in Service Manager that you can use to automate processes. It describes the relationships between workflows and management packs, and it describes the Windows Workflow Foundation \(WF\) activities that the Service Manager Authoring Tool provides in the default Activity Library.  
 
-## Workflows and Management Packs
+## Workflows and management packs
 
 Service Manager runs a Windows Workflow Foundation \(WF\) workflow using trigger condition information stored in the management pack. For each workflow, the management pack contains one data source module and one write action module. The data source module defines the condition that triggers the workflow to run, and the write action module defines the workflow actions. The management pack also stores any script information that the workflow uses.  
 
-### Files and Formats  
+### Files and formats  
  In addition to the management pack file, WF workflows require several supporting files:  
 
 -   **Authoring environment files**. When you create or edit a workflow, these files store the raw workflow information, such as property values and workflow logic.  
@@ -37,7 +38,7 @@ Service Manager runs a Windows Workflow Foundation \(WF\) workflow using trigger
 
  ![Management Pack and Workflow Files](../media/author-mpandworkflowcomponents_production.png)  
 
-### Trigger Conditions for Workflows  
+### Trigger conditions for workflows  
  A workflow's data source module defines the workflow trigger condition. A workflow can have one of two types of trigger condition:  
 
 -   **Timer.** This option \(also referred to as a *schedule*\) triggers the workflow on designated days of the week or at another specified interval.  

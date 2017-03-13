@@ -1,6 +1,7 @@
 ---
-title: Creating and Using Excel Slicers
-manager: cfreeman
+title: Excel slicers
+description: Provides an overview about using Excel slicers to view Service Manager OLAP cube data.
+manager: carmonm
 ms.custom: na
 ms.prod: system-center-2016
 author: bandersmsft
@@ -14,7 +15,7 @@ ms.topic: article
 ms.assetid: 43c3b198-585a-42cf-94cd-123655d13476
 ---
 
-# Creating and Using Excel Slicers
+# Overview of using Excel slicers to view Service Manager OLAP cube data
 
 >Applies To: System Center 2016 - Service Manager
 

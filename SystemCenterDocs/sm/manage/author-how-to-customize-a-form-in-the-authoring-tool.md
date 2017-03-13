@@ -1,6 +1,7 @@
 ---
-title: How to Customize a Form in the Authoring Tool
-manager: cfreeman
+title: Customize a form
+description: Learn about how you can customize a form in the Service Manager Authoring Tool.
+manager: carmonm
 ms.custom: na
 ms.prod: system-center-2016
 author: bandersmsft
@@ -14,7 +15,7 @@ ms.topic: article
 ms.assetid: 07f4da17-8077-4fdb-8ed1-2972126e7da0
 ---
 
-# How to Customize a Form in the Authoring Tool
+# Customize a form in the Authoring Tool
 
 >Applies To: System Center 2016 - Service Manager
 

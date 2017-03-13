@@ -1,6 +1,7 @@
 ---
-title: Working with Management Pack XML Files
-manager: cfreeman
+title: Work with management pack XML files
+description: Describes how to work with management pack XML files for Service Manager authoring.
+manager: carmonm
 ms.custom: na
 ms.prod: system-center-2016
 author: bandersmsft
@@ -14,11 +15,11 @@ ms.topic: article
 ms.assetid: 1f621771-00da-4dd8-a96f-9a0b243c3d88
 ---
 
-# Working with Management Pack XML Files
+# Work with Service Manager management pack XML files
 
 >Applies To: System Center 2016 - Service Manager
 
-For elaborate customizations of management packs, the Service Manager console and the  Service Manager Authoring Tool might not be sufficient, and you might need to author or modify management pack files directly. Working directly with management pack files requires in\-depth knowledge in several areas, such as the System Center Common Schema and the structure of management packs.  
+For elaborate customizations of management packs, the Service Manager console and the Service Manager Authoring Tool might not be sufficient, and you might need to author or modify management pack files directly. Working directly with management pack files requires in\-depth knowledge in several areas, such as the System Center Common Schema and the structure of management packs.  
 
  This section provides background information and guidelines that can help you author and modify management packs to customize Service Manager.  
 
@@ -26,7 +27,7 @@ For elaborate customizations of management packs, the Service Manager console an
 
 Service Manager includes an updated version of the System Center Management Pack Schema. This schema is now called the System Center Common Schema, and it includes a number of improvements and additions that are intended to enhance existing functionality and enable Service Manager features. This topic describes the changes to the System Center Common Schema.  
 
-### Properties and Property Restrictions  
+### Properties and property restrictions  
  The common schema extends classes through several new property types. These property types include the binary, enumerator, and autoincrement types.  
 
  In addition, you can define restrictions on certain property values. For example, you can define a regular expression restriction on a string property value. In the following example, the **BuildingName** property has a regular expression restriction that is defined so that only a value that contains the word "Building" followed by a space and a number is considered valid.  
@@ -102,7 +103,7 @@ Service Manager includes an updated version of the System Center Management Pack
 
 ```  
 
-### Combination Classes  
+### Combination classes  
  Combination classes represent an aggregation of multiple related types in the management pack, similar to views that are defined in a Microsoft SQL&nbsp;Server database that can return data from multiple tables. Combination classes store and retrieve all the aggregated data in one operation to the database, and they can make it easier to define user interfaces for a management pack.  
 
  In the following example, a projection is defined for an incident management view. This projection combines several different components that are related to an incident into one unit that can be used more easily for forms and for database operations.  
@@ -159,7 +160,7 @@ Path="$Target/Path[Relationship='SMCore!System.WorkItemCreatedForUser']$"/>
 </TypeProjections>  
 ```  
 
-### Console Tasks  
+### Console tasks  
  Console tasks are extended in the common schema. Previously, console tasks were simple pointers to an application directory and executable file name. Console tasks are now implemented as handler code in a Microsoft .NET&nbsp;Framework assembly. The handler code references the assembly that houses the code, the handler name, and a list of named values that can be passed as arguments to the handler.  
 
  In the following example, the **Some.Handler.Name** handler is defined in the **MyLibrary.Resources.Assembly** assembly. A list of handler parameters and their values is also defined.  
@@ -220,7 +221,7 @@ Path="$Target/Path[Relationship='SMCore!System.WorkItemCreatedForUser']$"/>
 
 ```  
 
-## Directly Authoring a Management Pack File to Manage Projectors
+## Author a management pack file to manage projectors
 
 Management packs are used to direct and extend the functionality of Service Manager. This topic uses projectors as an example for describing the various sections of a management pack and for defining the various objects that are needed for managing projectors in an organization.  
 
@@ -242,7 +243,7 @@ Management packs are used to direct and extend the functionality of Service Mana
 
 -   Class Extensions  
 
-### The Manifest Section  
+### Manifest section  
  The first section of a management pack contains the manifest. The manifest identifies the management pack and declares any references to other management packs.  
 
  The following example shows the **Manifest** section of a management pack that was designed to track projectors in an organization.  
@@ -283,7 +284,7 @@ Management packs are used to direct and extend the functionality of Service Mana
 > [!IMPORTANT]  
 >  In the **References** section, do not use nonalphanumeric values, such as a '.', in the Alias for a reference.  
 
-### TypeDefinitions Section-Creating a Class  
+### Create classes in the TypeDefinitions section
  The next section of a management pack contains type definitions. The **TypeDefinitions** section of a management pack contains definitions for classes, enumerations, and relationships that are used by the management pack.  
 
  The following example shows a class that contains information about projectors:  
@@ -318,7 +319,7 @@ Management packs are used to direct and extend the functionality of Service Mana
 
  The following is a section\-by\-section explanation of what the type definition contains.  
 
- **The ClassTypes Section**  
+ **The ClassTypes section**  
 
  The **ClassType** element defines the projector class:  
 
@@ -397,7 +398,7 @@ Management packs are used to direct and extend the functionality of Service Mana
 
 ```  
 
-### Creating a Form  
+### Create a form  
  Service Manager forms are based on Windows Presentation Framework \(WPF\) forms. Service Manager extends WPF with simple attributes that are added to the XML definition and allow Service Manager to bind data from the management pack to the form.  
 
  Service Manager forms can be created by using several different tools, including Microsoft Visual Studio or Microsoft Expression Blend. Because the forms are XML\-based, they can also be defined by using any XML editor.  
@@ -513,7 +514,7 @@ ItemsSource="{Binding Source={StaticResource getStatusValues}, Mode=OneWay }"
 
 ```  
 
-### The Category Section  
+### The Category section  
  The **Category** section of a management pack groups management pack elements together for easier navigation.  
 
  The first two `<Category>` elements in the example are used to control the display of the **New** and **Edit** tasks in the **Projectors** view.  
@@ -535,7 +536,7 @@ ItemsSource="{Binding Source={StaticResource getStatusValues}, Mode=OneWay }"
 <Category ID="Projector.ProjectorConditionCategory" Target="ProjectorCondition" Value="Authoring!Microsoft.EnterpriseManagement.ServiceManager.UI.Authoring.EnumerationViewTasks"/>  
 ```  
 
-### The Presentation Section  
+### The Presentation section  
  The **Presentation** section of a management pack declares and defines user\-interface\-related elements. These include forms declarations, categories, and console tasks.  
 
  **The Forms Section**  
@@ -698,7 +699,7 @@ Microsoft.EnterpriseManagement.UI.SdkDataAccess.DataAdapters.EnterpriseManagemen
          QualifiedName="SMFormsDemo, Version=1.0.0.0" FileName="SMFormsDemo.dll" CreationDate="1900-10-12T13:13:13" ModifiedDate="2008-12-12T12:12:12" />  
 ```  
 
-### Class Extensions  
+### Class extensions  
  A class extension is a class that adds properties to an existing class. In most cases, this existing class is in a sealed management pack. In cases where the existing class is not in a sealed management pack, the class extension must be contained in the same management pack as the class that is being extended.  
 
  A class extension inherits the properties of any parent classes, for example:  
@@ -779,7 +780,7 @@ ManagementPack xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsl="http://ww
 
 ```  
 
-### Importing a Management Pack by Using a Windows&nbsp;PowerShell Cmdlet  
+### Import a management pack by using a cmdlet  
  You can use the Windows&nbsp;PowerShell [Import\-SCSMManagementPack](http://go.microsoft.com/fwlink/p/?LinkID=225396) cmdlet to import a Service Manager management pack, for example:  
 
 ```  
@@ -788,7 +789,7 @@ Import-SCSMManagementPack MyServiceManager.ManagementPack.xml
 
  This document does not describe how to import and use management packs in the Service Manager console. For information about using management packs in the Service Manager console, see [Using Management Packs in Service Manager](admin-using-management-packs-in-system-center-2016-service-manager.md).  
 
-### Example: Full Management Pack  
+### Full management pack example
  The following code examples represent the full sample management pack that is used for examples in this topic, in addition to the form definition and the C\# code\-behind for the form.  
 
  **Management Pack**  

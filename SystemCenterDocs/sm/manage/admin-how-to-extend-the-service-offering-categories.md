@@ -1,18 +1,18 @@
 ---
-description:  
-manager:  cfreeman
-ms.topic:  article
+title: Create your own service offering categories
+description: Describes how you can add your own service offering categories in Service Manger.
+manager: carmonm
+ms.topic: article
 author: bandersmsft
 ms.author: banders
-ms.prod:  system-center-2016
+ms.prod: system-center-2016
 keywords:  
 ms.date: 10/12/2016
-title:  How to Extend the Service Offering Categories
-ms.technology:  service-manager
-ms.assetid:  a107d437-1f41-43c4-a2a1-254251cc6adb
+ms.technology: service-manager
+ms.assetid: a107d437-1f41-43c4-a2a1-254251cc6adb
 ---
 
-# How to Extend the Service Offering Categories
+# Create your own service offering categories in Service Manager
 
 >Applies To: System Center 2016 - Service Manager
 
@@ -35,6 +35,3 @@ By default, Service Manager includes only the General service offering category.
     -   **Communication Services**
 
 5.  Click **OK** to close the **List Properties** dialog box.
-
-
-

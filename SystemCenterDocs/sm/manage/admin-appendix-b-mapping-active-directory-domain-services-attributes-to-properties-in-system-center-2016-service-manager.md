@@ -1,18 +1,18 @@
 ---
-description:  
-manager:  cfreeman
+title:  Mapping Active Directory Domain Services attributes to properties in Service Manager
+description: Learn about the relationships between Active Directory Domain Services attributes and properties in Service Manager.
+manager:  carmonm
 ms.topic:  article
 author: bandersmsft
 ms.author: banders
 ms.prod:  system-center-2016
 keywords:  
 ms.date: 10/12/2016
-title:  Appendix B - Mapping Active Directory Domain Services Attributes to Properties in Service Manager
 ms.technology:  service-manager
 ms.assetid:  fb609f10-418e-4e1c-a514-ee36f9fdc560
 ---
 
-# Appendix B - Mapping Active Directory Domain Services Attributes to Properties in Service Manager
+# Mapping Active Directory Domain Services attributes to properties in System Center - Service Manager
 
 >Applies To: System Center 2016 - Service Manager
 

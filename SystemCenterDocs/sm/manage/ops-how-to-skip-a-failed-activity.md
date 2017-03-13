@@ -1,6 +1,7 @@
 ---
 title: How to Skip a Failed Activity
-manager: cfreeman
+description: Explains how to skip a failed activity in Service Manager.
+manager: carmonm
 ms.custom: na
 ms.prod: system-center-2016
 author: bandersmsft
@@ -14,7 +15,7 @@ ms.topic: article
 ms.assetid: 2b7615ff-5e25-47b3-ba85-649bdb3ee2d3
 ---
 
-# How to Skip a Failed Activity
+# Skip a failed activity in Service Manager
 
 >Applies To: System Center 2016 - Service Manager
 

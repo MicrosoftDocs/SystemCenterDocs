@@ -1,6 +1,7 @@
 ---
-title: Creating and Deploying Dashboards
-manager: cfreeman
+title: Create and deploy dashboards
+description: Explains how to create and deploy Service Manager dashboards.
+manager: carmonm
 ms.custom: na
 ms.prod: system-center-2016
 author: bandersmsft
@@ -14,7 +15,7 @@ ms.topic: article
 ms.assetid: 08d397c0-f3af-424c-a2cf-9490b4825834
 ---
 
-# Creating and Deploying Dashboards
+# Create and deploy Service Manager dashboards
 
 >Applies To: System Center 2016 - Service Manager
 
@@ -30,7 +31,7 @@ You can use PerformancePoint Dashboard Designer with Service Manager to create a
  For more information about PerformancePoint Dashboard Designer, see [PerformancePoint Dashboard Designer](http://technet.microsoft.com/library/bb821195\(office.12\).aspx).  
 
 
-## How to Configure SharePoint Infrastructure for Dashboards
+## Configure SharePoint infrastructure for dashboards
 
 Before you can create and deploy dashboards for use on the Self-Service Portal in Service Manager, you must configure Microsoft SharePoint&nbsp;2010 and then install Dashboard Designer.  
 
@@ -69,7 +70,7 @@ Before you can create and deploy dashboards for use on the Self-Service Portal i
 
 10. On the new page, **click Run Dashboard Designer**, and then in the **Application Run - Security Warning** dialog box, click **Run** to install PerformancePoint Dashboard Designer. Later, you can start Dashboard Designer from the **Start** menu.   
 
-## How to Create a Data Source for Dashboard Designer
+## Create a data source for Dashboard Designer
 
 You can use the following information to create a new data source in Service Manager and save it by using Dashboard Designer.  
 
@@ -95,7 +96,7 @@ You can use the following information to create a new data source in Service Man
 
 6.  To save the workspace, click **Save As**, and save the Dashboard Designer Workspace in the folder that you want.   
 
-## How to Build the Resolved Incidents Scorecard
+## Build the Resolved Incidents scorecard
 
 Before you can use a scorecard in a dashboard in Service Manager, you must create the scorecard. Use the following procedure to use a wizard to create an example scorecard called Resolved Incidents Scorecard. The wizard also creates key performance indicators \(KPIs\) from the SystemCenterWorkItemsCube data source.  
 
@@ -134,7 +135,7 @@ Before you can use a scorecard in a dashboard in Service Manager, you must creat
 
 15. Save the information in **Designer Workspace**.    
 
-## How to Configure the KPI
+## Configure the KPI
 
 Use the following procedures to configure the key performance indicators \(KPIs\) that you created in the How to Build the Resolved Incidents Scorecard section. You will later use this information in a PerformancePoint dashboard.  
 
@@ -166,7 +167,7 @@ Use the following procedures to configure the key performance indicators \(KPIs\
 
 5.  To refresh the scorecard, on the **Edit** ribbon tab, inside the **View** group, click **Update**.  
 
-## How to Create the Incidents by Analyst Report
+## Create the Incidents by Analyst Report
 
 Use the following procedure to create an Analytic Grid report named Incidents by Analyst.  
 
@@ -204,11 +205,11 @@ Use the following procedure to create an Analytic Grid report named Incidents by
 
 16. To save the report, in the **Workspace Browser**, right\-click the **Incidents by Analyst** report, and then click **Save**.
 
-## How to Create the Resolved Incidents Dashboard
+## Create the Resolved Incidents dashboard
 
 Use the following procedure to create and assemble the Resolved Incidents Dashboard. This involves the Resolved Incidents Scorecard and the Incidents by Analyst report. You will then create connections to pass values between the dashboard items.  
 
-### To create the Resolved Incidents Dashboard  
+### To create the Resolved Incidents dashboard  
 
 1.  Open Dashboard Designer, connect to the server that hosts the DWASDataBase, and then click **Service Manager WorkItems Cube**. Or, if you have previously saved a designer workspace file that contains the connection information, open that file.  
 
@@ -232,7 +233,7 @@ Use the following procedure to create and assemble the Resolved Incidents Dashbo
 
 11. Save the dashboard and the workspace.   
 
-## How to Deploy the Resolved Incidents Dashboard
+## Deploy the Resolved Incidents dashboard
 
 Use the following procedure to deploy the Resolved Incidents Dashboard to the SharePoint Dashboards library.  
 
@@ -240,7 +241,7 @@ Use the following procedure to deploy the Resolved Incidents Dashboard to the Sh
 
  After you deploy the dashboard, you can select values in the Resolved Incidents Scorecard to show information that applies only to that classification. For example, if you select an E\-Mail Problems value, only incidents with the E\-Mail Problems classification appear in the scorecard portion of the report.  
 
-### To deploy the Resolved Incidents Dashboard  
+### To deploy the Resolved Incidents dashboard  
 
 1.  Open Dashboard Designer, connect to the server that hosts the DWASDataBase, and then select **Service Manager WorkItems Cube**. Or, if you have previously saved a designer workspace file that contains the connection information, open that file.  
 

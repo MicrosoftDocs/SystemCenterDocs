@@ -1,6 +1,7 @@
 ---
-title: How to Contact a User from an Incident Form
-manager: cfreeman
+title: Contact a user from an incident form
+description: Explains how to contact a user from an incident form.
+manager: carmonm
 ms.custom: na
 ms.prod: system-center-2016
 author: bandersmsft
@@ -14,7 +15,7 @@ ms.topic: article
 ms.assetid: 063d010b-c955-4499-b690-561cfd7f9db5
 ---
 
-# How to Contact a User from an Incident Form
+# Contact a user from an incident form
 
 >Applies To: System Center 2016 - Service Manager
 

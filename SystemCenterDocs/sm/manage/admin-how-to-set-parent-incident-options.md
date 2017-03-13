@@ -1,18 +1,18 @@
 ---
-description:  
-manager:  cfreeman
-ms.topic:  article
+title: Set parent incident options
+description: Describes how to set parent incident options in Service Manager.
+manager: carmonm
+ms.topic: article
 author: bandersmsft
 ms.author: banders
-ms.prod:  system-center-2016
+ms.prod: system-center-2016
 keywords:  
 ms.date: 10/12/2016
-title:  How to Set Parent Incident Options
-ms.technology:  service-manager
-ms.assetid:  220b9d62-cd3a-4e30-a465-cdd70ca736bc
+ms.technology: service-manager
+ms.assetid: 220b9d62-cd3a-4e30-a465-cdd70ca736bc
 ---
 
-# How to Set Parent Incident Options
+# Set parent incident options in Service Manager
 
 >Applies To: System Center 2016 - Service Manager
 

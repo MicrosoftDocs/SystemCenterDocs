@@ -1,6 +1,7 @@
 ---
-title: Managing Release Records in Service Manager
-manager: cfreeman
+title: Release records management overview
+description: Provides an overview of managing Service Manager release records.
+manager: carmonm
 ms.custom: na
 ms.prod: system-center-2016
 author: bandersmsft
@@ -14,7 +15,7 @@ ms.topic: article
 ms.assetid: 2847c2cf-422d-4cfa-8e36-6f7eb7856afa
 ---
 
-# Managing Release Records in Service Manager
+# Service Manager release records management overview
 
 >Applies To: System Center 2016 - Service Manager
 
@@ -26,12 +27,12 @@ The key to understanding release management in System Center 2016 - Service Mana
 
  After changes have been bundled together, a release manager defines the sequence of actions needed for a release with release activities. For example, different changes might have infrastructure update tasks, database modification tasks, tasks to update applications, or other individual tasks. In some cases, it might make sense to group some tasks together with infrastructure updates or perform database updates or application updates. Some tasks can be deployed simultaneously, while other tasks must be deployed sequentially or separately.  
 
-## Managing Release Records in Service Manager  
+## Managing release records
  The release manager or other person responsible for the release defines the sequence of actions with a release record. The release record might depict the deployment sequence of different changes using parallel activities, sequential activities, and other activities. The release manager can delegate the responsibility for activities to others. When an activity is delegated, the person responsible for the activity can modify the activity and update its status.  
 
  When you modify an activity, its status is not immediately updated. There is a delay after until the workflow activates and the activity status is updated. Often, 30  to 60 seconds might elapse before you see the updated status of the activity in the console after you refresh your view of an item. Other dependent activities in the release record might take longer to update. For example, assume that you have a release record containing a dozen activities. If you update an item near the top of the list, it might take 30 seconds to update in the console. Then, the next activity in the release record might automatically get updated 30 seconds later, and so on. Therefore, the update that you originally made might take some time to propagate to all affected activities in the release record.  
 
-### Parts of Release Records  
+### Parts of release records  
  Because releases are often bundled together, you can group multiple release records together by using a parent\-child relationship. Essentially, a parent release record serves as a container for multiple child release records. However, a newly created release record is not a parent release record by default. You must convert a release record to a parent release record in order to add child release records.  
 
  Like change requests, release records contain activities for approval and manual actions. In addition, release records can contain parallel and sequential activities. Parallel and sequential activities are containers for other activities, and they define how constituent activities must be implemented-parallel activities can be implemented simultaneously, while other parallel activities are also in progress. Sequential activities must be completed in the order they are organized, one after another.  

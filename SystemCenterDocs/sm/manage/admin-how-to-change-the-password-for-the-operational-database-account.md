@@ -1,18 +1,18 @@
 ---
-description:  
-manager:  cfreeman
-ms.topic:  article
+title: Change the password for the Operational Database account
+description: Describes how to change the password for the Operational Database account used by Service Manager.
+manager: carmonm
+ms.topic: article
 author: bandersmsft
 ms.author: banders
-ms.prod:  system-center-2016
+ms.prod: system-center-2016
 keywords:  
 ms.date: 10/12/2016
-title:  How to Change the Password for the Operational Database Account
-ms.technology:  service-manager
-ms.assetid:  4cc6e765-1cfd-4e0a-aac6-2b5fd3b671b5
+ms.technology: service-manager
+ms.assetid: 4cc6e765-1cfd-4e0a-aac6-2b5fd3b671b5
 ---
 
-# How to Change the Password for the Operational Database Account
+# Change the password for the Operational Database account used by Service Manager
 
 >Applies To: System Center 2016 - Service Manager
 
@@ -38,6 +38,3 @@ ms.assetid:  4cc6e765-1cfd-4e0a-aac6-2b5fd3b671b5
 9. Type the new password in the **Password** and **Confirm Password** text boxes, and then click **OK**.
 
 10. Restart the System Center Management Configuration service.
-
-
-

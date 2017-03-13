@@ -1,6 +1,7 @@
 ---
-title: How to Customize the Default Incident Form (Sample Scenario)
-manager: cfreeman
+title: Customize the default incident form for the sample scenario
+description: This sample scenario article describes how to apply simple customizations to a default form in the Service Manager Authoring Tool.
+manager: carmonm
 ms.custom: na
 ms.prod: system-center-2016
 author: bandersmsft
@@ -14,7 +15,7 @@ ms.topic: article
 ms.assetid: 2af8b9d4-f736-4f96-b058-a96b10a64aca
 ---
 
-# How to Customize the Default Incident Form (Sample Scenario)
+# Customize the default incident form for the Service Manager Authoring Tool sample scenario
 
 >Applies To: System Center 2016 - Service Manager
 
@@ -22,7 +23,7 @@ This sample scenario describes how to apply simple customizations to a default f
 
  The sample scenario for customizing the default Incident form consists of three steps.  
 
-### Step 1: View the Default Incident Form  
+### Step 1: View the default incident form  
  Before you customize the form, view the default form in the Service Manager console and identify elements on the form that you want to customize. For example, you can plan to rearrange various text boxes on the form.  
 
 ##### To view the default incident form  
@@ -35,7 +36,7 @@ This sample scenario describes how to apply simple customizations to a default f
 
 4.  Review the **Incident** form. This form is the form that you use to create and view incidents. You can identify elements in the form that you might want to customize.  
 
-### Step 2: Customize the Default Incident Form  
+### Step 2: Customize the default incident form  
  Use the following procedure to customize the default Incident form in the Authoring Tool.  
 
 ##### To customize the Incident form  
@@ -62,7 +63,7 @@ This sample scenario describes how to apply simple customizations to a default f
 
 9. Exit the Authoring Tool.  
 
-### Step 3: Use the Customized Default Incident Form  
+### Step 3: Use the customized default incident form  
  Use the following procedure to view and use the customized Incident form in the Service Manager console.  
 
 ##### To use the customized System.WorkItem.Incident.ConsoleForm form  

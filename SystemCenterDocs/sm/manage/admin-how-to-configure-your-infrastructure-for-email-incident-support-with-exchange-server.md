@@ -1,18 +1,18 @@
 ---
-description:  
-manager:  cfreeman
-ms.topic:  article
+title: Configure your infrastructure for email incident support with Exchange Server
+description: Learn about how you can configure your infrastructure for Service Manager email incident support with Exchange Server.
+manager: carmonm
+ms.topic: article
 author: bandersmsft
 ms.author: banders
-ms.prod:  system-center-2016
+ms.prod: system-center-2016
 keywords:  
 ms.date: 10/12/2016
-title:  How to Configure Your Infrastructure for Email Incident Support With Exchange Server
-ms.technology:  service-manager
-ms.assetid:  fba0077d-5ddb-4bf1-bceb-a6211c91294c
+ms.technology: service-manager
+ms.assetid: fba0077d-5ddb-4bf1-bceb-a6211c91294c
 ---
 
-# How to Configure Your Infrastructure for Email Incident Support with Exchange Server
+# Configure your infrastructure for Service Manager email incident support with Exchange Server
 
 >Applies To: System Center 2016 - Service Manager
 
@@ -140,7 +140,7 @@ Use the following procedures to configure your Microsoft Exchange Server infrast
 
 3.  Confirm that the configuration you entered is correct.
 
-## Configuring Exchange Server for use with Service Manager
+## Configure Exchange Server for use with Service Manager
 In the following procedures, you configure Exchange Server for use with Service Manager. You perform these procedures on the server that hosts Exchange Server.
 
 #### To configure the Organization Hub Transport

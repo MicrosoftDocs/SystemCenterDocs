@@ -1,6 +1,7 @@
 ---
-title: How to Add a Tab Control and Tab Item Controls to a Form in the Authoring Tool
-manager: cfreeman
+title: Add a tab control and tab item controls to a form
+description: You can add a tab control and tab item controls to a form in the Service Manager Authoring Tool.
+manager: carmonm
 ms.custom: na
 ms.prod: system-center-2016
 author: bandersmsft
@@ -14,7 +15,7 @@ ms.topic: article
 ms.assetid: 6cd6021d-55e4-431b-9335-0628c981bc4c
 ---
 
-# How to Add a Tab Control and Tab Item Controls to a Form in the Authoring Tool
+# Add a tab control and tab item controls to a form in the Service Manager Authoring Tool
 
 >Applies To: System Center 2016 - Service Manager
 

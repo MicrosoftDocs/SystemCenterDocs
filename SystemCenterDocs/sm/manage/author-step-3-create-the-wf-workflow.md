@@ -1,6 +1,7 @@
 ---
-title: Step 3 - Create the WF Workflow
-manager: cfreeman
+title: Step 3 - Create the WF workflow
+description: Describes the third step of the Service Manager Authoring Tool Woodgrove Bank customization scenario to create the WF workflow.
+manager: carmonm
 ms.custom: na
 ms.prod: system-center-2016
 author: bandersmsft
@@ -14,7 +15,7 @@ ms.topic: article
 ms.assetid: e1428abc-8b07-4a4e-8dc1-5f49d3eef021
 ---
 
-# Step 3 - Create the WF Workflow
+# Step 3 of the customization scenario - Create the WF workflow
 
 >Applies To: System Center 2016 - Service Manager
 
@@ -28,7 +29,7 @@ In this step of the Woodgrove Bank customization scenario, Ken creates the workf
 
  To create and implement his new workflow, Ken follows the steps in the rest of this section. He uses the **Woodgrove.AutomatedActivity.AddComputerToGroupMP** management pack, as described in [Step 1: Open the Woodgrove.AutomatedActivity.AddComputerToADGroupMP Management Pack](author-step-1-open-the-woodgrove.automatedactivity.addcomputertoadgroupmp-management-pack.md). These procedures assume that this management pack is still open in the Service Manager Authoring Tool.  
 
-## Creating a New Workflow  
+## Create a New Workflow  
  Ken uses this procedure to create a workflow named **AddComputerToADGroupWF** in the **Woodgrove.AutomatedActivity.AddComputerToADGroupMP** management pack.  
 
 #### To create the new workflow  
@@ -61,7 +62,7 @@ In this step of the Woodgrove Bank customization scenario, Ken creates the workf
 
  For general information about these steps, see [How to Create a New Workflow](author-managing-workflows.md) and [How to Save and Build a Workflow](author-managing-workflows.md).  
 
-## Adding the Workflow Activities  
+## Add the Workflow Activities  
  Ken uses this procedure to add the WF activities **Add AD DS Computer to Group** and **Set Activity Status to Completed** to his workflow.  
 
 #### To add WF activities to the workflow  
@@ -76,7 +77,7 @@ In this step of the Woodgrove Bank customization scenario, Ken creates the workf
 
  For general information about these steps, see [How to Add an Activity to a Workflow](author-adding-or-removing-workflow-activities.md).  
 
-## Configuring the Activity Properties  
+## Configure the Activity Properties  
  Ken uses this procedure to set the **Computer Name** and **Group Name** properties of the **Add AD DS Computer to Group** activity to retrieve the values of the **Automated Activity: Add Computer To AD Group** properties **Computer Name**, **Group Name**, and **Activity ID** from the change request. In addition, he sets the **Computer Domain name** property of the **Add AD DS Computer to Group** activity to a constant value.  
 
 #### To configure the activity properties  

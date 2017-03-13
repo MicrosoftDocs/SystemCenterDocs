@@ -1,18 +1,18 @@
 ---
-description:  
-manager:  cfreeman
-ms.topic:  article
+title: Troubleshoot computer problems with tasks
+description: You can troubleshoot computer problems with Service Manager tasks.
+manager: carmonm
+ms.topic: article
 author: bandersmsft
 ms.author: banders
-ms.prod:  system-center-2016
+ms.prod: system-center-2016
 keywords:  
 ms.date: 10/12/2016
-title:  Using Service Manager Tasks to Troubleshoot Computer Problems
-ms.technology:  service-manager
-ms.assetid:  7814be87-cbc7-42fe-a5c8-5a8720e3921c
+ms.technology: service-manager
+ms.assetid: 7814be87-cbc7-42fe-a5c8-5a8720e3921c
 ---
 
-# Using Service Manager Tasks to Troubleshoot Computer Problems
+# Troubleshoot computer problems with Service Manager tasks
 
 >Applies To: System Center 2016 - Service Manager
 
@@ -21,11 +21,11 @@ If you want to view the logs on a remote computer that is exhibiting problems, y
 In Service Manager, administrators can create and use tasks to automate and simplify lengthy, complex, or repetitive processes. Operators typically use tasks to help troubleshoot user incidents. After creating a task, operators can run the task directly from the Service Manager console.
 
 > [!IMPORTANT]
-> In this release, to create a task, the logged-on user must have administrative credentials.
+> To create a task, the logged-on user must have administrative credentials.
 
 The Event Viewer task that you create will display logs from the computer that is identified as a configuration item in the incident. The help desk analyst can then select an incident in the Service Manager console and run this task for the computers that are related to the incident.
 
-## How to Create a Task
+## Create a task
 
 Use the following procedures in Service Manager to create a task--for example, a task that you can use to open Event Viewer and view logs on a computer--and then validate the new task. Event Viewer displays the logs from the remote computer that is listed as a Configuration Item in the incident.
 
@@ -91,7 +91,7 @@ Use the following procedures in Service Manager to create a task--for example, a
 
 
 
-## How to Run a Task from an Incident View
+## Run a task from an incident view
 
 Use the following procedure to run a task, such as the Ping task, from an Incident view in Service Manager.
 

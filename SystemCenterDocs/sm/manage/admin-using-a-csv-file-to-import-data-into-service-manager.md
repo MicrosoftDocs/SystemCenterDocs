@@ -1,24 +1,24 @@
 ---
-description:  
-manager:  cfreeman
-ms.topic:  article
+title: Use a CSV file to import data
+description: Describes how you can use a CSV file to import data into Service Manager.
+manager: carmonm
+ms.topic: article
 author: bandersmsft
 ms.author: banders
-ms.prod:  system-center-2016
+ms.prod: system-center-2016
 keywords:  
 ms.date: 10/12/2016
-title:  Using a CSV File to Import Data into Service Manager
-ms.technology:  service-manager
-ms.assetid:  d968e937-59c1-4a9a-8786-8ff0bbf62db0
+ms.technology: service-manager
+ms.assetid: d968e937-59c1-4a9a-8786-8ff0bbf62db0
 ---
 
-# Using a CSV File to Import Data into Service Manager
+# Use a CSV file to import data into Service Manager
 
 >Applies To: System Center 2016 - Service Manager
 
 This artilce provides an overview and procedures for importing data and configuration items into Service Manager by using comma-separated value (CSV) files.
 
-## Importing Data from Comma-Separated Files into Service Manager
+## Import data from comma-separated files
 
 Configuration items contained in a comma-separated value (.csv) file can be imported into the Service Manager database by using the Import from CSV File feature. This feature lets you to bulk-import instances of any class type or projection type that is defined in the Service Manager database. You can use this feature to:
 
@@ -39,7 +39,7 @@ Two files are required to import a set of instances by using the Import from CSV
 
 2.  A format file that specifies the class type or projection type of the instances present in the data file. Every instance in the data file is assumed to be of this kind. The format file also specifies (1) the subset of properties and, for projections, specifies components. They are being imported for the indicated type, and (2) the order in which those properties appear as columns in the associated data file. The format file must have the same file name as the csv file that it describes, and it must end with the .xml file name extension.
 
-## Creating the Data File
+## Create the data file
 For example, you receive a spreadsheet that contains information about computers that you want to import into the Service Manager database. The following is a sample of the first 10 computers in the spreadsheet.
 
 |Computer Name|IP Address|Domain Name|
@@ -70,7 +70,7 @@ WG-Chi-4, 172.30.14.29, CHICAGO
 WG-Chi-5, 172.30.14.30, CHICAGO
 ```
 
-## Creating the Format File
+## Create the format file
 A format file is now created that is suited to import the rows that are contained in the **newcomputers.csv** file. The first step in writing the format file is identifying the class type or projection type that must be used for the instances in the .csv file. For more information about class type or projection types, see the blog post [Using the CSV import feature](http://go.microsoft.com/fwlink/p/?LinkID=159957) and download the file CSVImport.docx.
 
 For the type of data being imported, you find that the **Microsoft.Windows.Computer** class is the best suited for the object type and property set. Start by declaring the class of the object that is being imported:
@@ -105,7 +105,7 @@ By using these properties, you construct the following format file. The properti
 
 Save this file as **newcomputers.xml**.
 
-## How to Import Configuration Items from a CSV File
+## Import configuration items from a CSV file
 
 Before you can import data from a comma-separated value (CSV) file, you have to create two files: a data file and a format file. You can use the following procedure to import the Newcomputers.csv file by using the Newcomputers.xml format file.
 

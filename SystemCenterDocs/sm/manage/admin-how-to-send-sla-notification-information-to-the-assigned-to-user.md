@@ -1,18 +1,18 @@
 ---
-description:  
-manager:  cfreeman
-ms.topic:  article
+title: Send SLA notification information to the assigned-to user
+description: Describes how you can send SLA notification information to the assigned-to user in Service Manager.
+manager: carmonm
+ms.topic: article
 author: bandersmsft
 ms.author: banders
-ms.prod:  system-center-2016
+ms.prod: system-center-2016
 keywords:  
 ms.date: 10/12/2016
-title:  How to Send SLA Notification Information to the Assigned To User
-ms.technology:  service-manager
-ms.assetid:  72980e7a-58c2-44d3-8a99-db3776c8abfb
+ms.technology: service-manager
+ms.assetid: 72980e7a-58c2-44d3-8a99-db3776c8abfb
 ---
 
-# How to Send SLA Notification Information to the Assigned-To User
+# Send SLA notification information to the assigned-to user in Service Manager
 
 >Applies To: System Center 2016 - Service Manager
 

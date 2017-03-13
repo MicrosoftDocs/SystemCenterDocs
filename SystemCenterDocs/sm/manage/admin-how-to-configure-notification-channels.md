@@ -1,18 +1,18 @@
 ---
-description:  
-manager:  cfreeman
-ms.topic:  article
+title: Configure notification channels
+description: Learn about how to configure Service Manager notification channels.
+manager: carmonm
+ms.topic: article
 author: bandersmsft
 ms.author: banders
-ms.prod:  system-center-2016
+ms.prod: system-center-2016
 keywords:  
 ms.date: 10/12/2016
-title:  How to Configure Notification Channels
-ms.technology:  service-manager
-ms.assetid:  edb5786f-8032-4705-8b17-8ae50f7edf17
+ms.technology: service-manager
+ms.assetid: edb5786f-8032-4705-8b17-8ae50f7edf17
 ---
 
-# How to Configure Notification Channels
+# Configure Service Manager notification channels
 
 >Applies To: System Center 2016 - Service Manager
 

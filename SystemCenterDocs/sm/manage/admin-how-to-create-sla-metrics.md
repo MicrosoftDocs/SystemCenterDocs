@@ -1,18 +1,18 @@
 ---
-description:  
-manager:  cfreeman
-ms.topic:  article
+title: Create or edit SLA metrics
+description: Describes how you can create or edit SLA metrics in Service Manager.
+manager: carmonm
+ms.topic: article
 author: bandersmsft
 ms.author: banders
-ms.prod:  system-center-2016
+ms.prod: system-center-2016
 keywords:  
 ms.date: 10/12/2016
-title:  How to Create or Edit SLA Metrics
-ms.technology:  service-manager
-ms.assetid:  6215e448-568f-4956-8d4c-60b685ce9d3e
+ms.technology: service-manager
+ms.assetid: 6215e448-568f-4956-8d4c-60b685ce9d3e
 ---
 
-# How to Create or Edit SLA Metrics
+# Create or edit SLA metrics in Service Manager
 
 >Applies To: System Center 2016 - Service Manager
 
@@ -54,7 +54,7 @@ In Service Manager you create a service level management metric, which is analog
 
 8.  Click **OK** to close the **Create/Edit SLA Metric** dialog box.
 
-## How to Edit SLA Metrics
+## Edit SLA metrics
 
 In Service Manager, you edit a service level agreement (SLA) metric to update the title, start date, and end date. After you edit a metric, you associate it with a service level objective. If the metric is already associated with a service level objective, it appears in the **Related SLA(s)** area.
 

@@ -1,18 +1,18 @@
 ---
-description:  
-manager:  cfreeman
-ms.topic:  article
+title: Copy request offerings and service offerings
+description: Learn about how you can copy Service Manager request offerings and service offerings.
+manager: carmonm
+ms.topic: article
 author: bandersmsft
 ms.author: banders
-ms.prod:  system-center-2016
+ms.prod: system-center-2016
 keywords:  
 ms.date: 10/12/2016
-title:  How to Copy Request Offerings and Service Offerings
-ms.technology:  service-manager
-ms.assetid:  ee6ee7cf-23ea-4241-a58f-b6bfba8d2534
+ms.technology: service-manager
+ms.assetid: ee6ee7cf-23ea-4241-a58f-b6bfba8d2534
 ---
 
-# How to Copy Request Offerings and Service Offerings
+# Copy Service Manager request offerings and service offerings
 
 >Applies To: System Center 2016 - Service Manager
 

@@ -1,18 +1,18 @@
 ---
-description:  
-manager:  cfreeman
+title: Configure workflows
+description: Learn about configuring workflows in Service Manager.
+manager:  carmonm
 ms.topic:  article
 author: bandersmsft
 ms.author: banders
 ms.prod:  system-center-2016
 keywords:  
 ms.date: 10/12/2016
-title:  Configuring Workflows in Service Manager
 ms.technology:  service-manager
 ms.assetid:  b204c2fc-c65e-41f3-a650-e425060f61b3
 ---
 
-# Configuring Workflows in Service Manager
+# Configure workflows in Service Manager
 
 >Applies To: System Center 2016 - Service Manager
 
