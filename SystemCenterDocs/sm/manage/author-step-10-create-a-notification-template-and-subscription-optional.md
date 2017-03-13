@@ -1,6 +1,7 @@
 ---
-title: Step 10 - Create a Notification Template and Subscription (Optional)
-manager: cfreeman
+title: Step 10 - Optionally create a notification template and subscription
+description: Describes the tenth step of the Service Manager Authoring Tool Woodgrove Bank customization scenario to optionally create a notification template and subscription.
+manager: carmonm
 ms.custom: na
 ms.prod: system-center-2016
 author: bandersmsft
@@ -14,7 +15,7 @@ ms.topic: article
 ms.assetid: edc8f5eb-6b39-42d0-b572-2b12164afdf9
 ---
 
-# Step 10 - Create a Notification Template and Subscription (Optional)
+# Step 10 of the customization scenario - Optionally create a notification template and subscription
 
 >Applies To: System Center 2016 - Service Manager
 

@@ -1,6 +1,7 @@
 ---
-title: Working with Management Packs in the Service Manager Console
-manager: cfreeman
+title: Work with management packs in the console
+description: Describes how to work with management packs in the Service Manager console.
+manager: carmonm
 ms.custom: na
 ms.prod: system-center-2016
 author: bandersmsft
@@ -14,7 +15,7 @@ ms.topic: article
 ms.assetid: 6bf81515-8883-471e-b1df-62c30ad9ae9e
 ---
 
-# Working with Management Packs in the Service Manager Console
+# Work with management packs in the Service Manager console
 
 >Applies To: System Center 2016 - Service Manager
 

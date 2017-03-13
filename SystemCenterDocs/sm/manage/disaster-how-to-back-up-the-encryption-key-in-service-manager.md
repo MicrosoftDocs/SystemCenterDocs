@@ -1,6 +1,7 @@
 ---
-title: How to Back Up the Encryption Key in Service Manager
-manager: cfreeman
+title: Back up the encryption key
+description: Describes how to back up the Service Manager encryption key for disaster recovery.
+manager: carmonm
 ms.custom: na
 ms.prod: system-center-2016
 author: bandersmsft
@@ -14,7 +15,7 @@ ms.topic: article
 ms.assetid: d10d5c2c-7930-47ba-afa2-f1256bacc442
 ---
 
-# How to Back Up the Encryption Key in Service Manager
+# Back up the Service Manager encryption key
 
 >Applies To: System Center 2016 - Service Manager
 

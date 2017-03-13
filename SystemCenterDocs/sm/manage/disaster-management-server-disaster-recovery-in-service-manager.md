@@ -1,6 +1,7 @@
 ---
-title: Management Server Disaster Recovery in Service Manager
-manager: cfreeman
+title: Management server disaster recovery
+description: Describes how to perform management server disaster recovery in Service Manager.
+manager: carmonm
 ms.custom: na
 ms.prod: system-center-2016
 author: bandersmsft
@@ -14,15 +15,15 @@ ms.topic: article
 ms.assetid: 6b874bbe-a28e-4f7b-9c54-833557fbf81c
 ---
 
-# Management Server Disaster Recovery in Service Manager
+# Management server disaster recovery in Service Manager
 
 >Applies To: System Center 2016 - Service Manager
 
-This section describes how to recover a Service Manager management server or a data warehouse management server. If you installed additional Service Manager management servers, you have the option of promoting an additional Service Manager management server. Regardless of whether you encounter software or hardware failures of the Service Manager management server, your recovery process is based on restoring a computer that has the same computer name.  
+This article describes how to recover a Service Manager management server or a data warehouse management server. If you installed additional Service Manager management servers, you have the option of promoting an additional Service Manager management server. Regardless of whether you encounter software or hardware failures of the Service Manager management server, your recovery process is based on restoring a computer that has the same computer name.  
 
  For either management server, your first step must be to restore the encryption key *before* you start the management server setup.  
 
-## How to Restore the Service Manager Encryption Key
+## Restore the Service Manager encryption key
 
 You can use the following procedure to restore the encryption keys before you run Setup.exe to restore a part of System Center 2016 - Service Manager.  
 
@@ -47,7 +48,7 @@ You can use the following procedure to restore the encryption keys before you ru
 
 8.  After you receive the message, "Secure Storage Key Restore Complete," click **Finish**.
 
-## How to Recover a Service Manager Management Server
+## Recover a Service Manager management server
 
 You can use the following procedure to reinstall a management server in System Center 2016 - Service Manager.  
 
@@ -87,7 +88,7 @@ You can use the following procedure to reinstall a management server in System C
 12. On the **Setup completed successfully** page, click **Close**.
 
 
-## How to Recover a Data Warehouse Management Server
+## Recover a data warehouse management server
 
 You can use the following procedure to reinstall a data warehouse management server for System Center 2016 - Service Manager.  
 
@@ -137,7 +138,7 @@ You can use the following procedure to reinstall a data warehouse management ser
 
 15. On the **Setup completed successfully** page, click **Close**.
 
-## How to Promote a Service Manager Management Server
+## Promote a Service Manager management server
 
 When you first ran Setup for Service Manager, you installed the initial Service Manager management server and you defined the management group for your installation. The initial management server handles all the workflows in your Service Manager environment. You can use additional Service Manager management servers to load\-balance Service Manager console connections. Also, you can promote one of the additional Service Manager management servers to take over the role of a failed initial Service Manager management server. For more information, see [Deploying Additional Service Manager Management Servers](../deploy/deploy-deploying-additional-service-manager-management-servers.md).
 

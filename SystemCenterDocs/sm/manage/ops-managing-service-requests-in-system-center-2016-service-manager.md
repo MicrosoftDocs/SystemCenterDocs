@@ -1,6 +1,7 @@
 ---
-title: Managing Service Requests in Service Manager
-manager: cfreeman
+title: Manage service requests
+description: Explains how to manage service requests in Service Manager.
+manager: carmonm
 ms.custom: na
 ms.prod: system-center-2016
 author: bandersmsft
@@ -14,7 +15,7 @@ ms.topic: article
 ms.assetid: 9a0583e5-0eaa-42d0-a704-2301ca3af342
 ---
 
-# Managing Service Requests in Service Manager
+# Manage service requests in Service Manager
 
 >Applies To: System Center 2016 - Service Manager
 
@@ -32,7 +33,7 @@ Service requests are requests for existing, preauthorized services and features 
 
 -   Time-to-resolution tracking through SLA integration  
 
-## How to Create a Service Request Using the Service Manager Console
+## Create a service request using the Service Manager console
 
 End users often create service requests in Service Manager by accessing the service catalog from the Self-Service Portal or by submitting email requests. However, you can use the following procedure to manually create a new service request in the Service Manager console. For example, you might want to manually create a new service request if a user contacts the help desk by telephone. In the following example, you can update any information that you want to as you complete the form.  
 
@@ -60,7 +61,7 @@ End users often create service requests in Service Manager by accessing the serv
 
 11. Click **OK** to save and close the service request form.  
 
-## How to Approve and Complete a Service Request Using Activities
+## Approve and complete a service request using activities
 
 You can use the following procedures to approve a review activity and complete a manual activity for a service request in the Service Manager console. In many cases, multiple people or groups must vote to approve a single review activity before its approval is final. After approval, a service request might need a manual activity completed to verify that the service was provided to the requesting user and to close the service request.  
 
@@ -91,7 +92,7 @@ You can use the following procedures to approve a review activity and complete a
 
 5.  In the **Comments** dialog box, type any comments that you have for the manual activity, and then click **OK**. For example, type **The Active Directory administrator has added this user to the groups requested**.  
 
-## How to Cancel a Service Request
+## Cancel a service request
 
 Occasionally, you might need to cancel a service request in Service Manager. You can accomplish this by using the Service Manager console. You can use the following procedure to cancel a service request.  
 
@@ -107,7 +108,7 @@ Occasionally, you might need to cancel a service request in Service Manager. You
 
 5.  In the **Comments** dialog box, type any comments that you have for cancelling the service request, and then click **OK**. For example, type **This request was a duplicate and is not needed**.  
 
-## How to Close a Service Request
+## Close a service request
 
 After all the review activities are approved or rejected and any manual activities are completed, you can close a service request in the Service Manager console. You can use the following procedure to close a service request.  
 
@@ -123,7 +124,7 @@ After all the review activities are approved or rejected and any manual activiti
 
 5.  In the **Comments** dialog box, type any comments that you have for the closure, and then click **OK**.  
 
-## How to Edit a Service Request
+## Edit a service request
 
 Service requests are often created by end users by accessing the service catalog from the Self-Service Portal or by submitting email requests, and you might need to update a service request with additional information. You can use the following procedure to update a service request in the Service Manager console.  
 
@@ -137,7 +138,7 @@ Service requests are often created by end users by accessing the service catalog
 
 4.  Update any information in form as necessary, and then click **OK** to close the form.  
 
-## How to Duplicate or Hide Views for Service Requests
+## Duplicate or hide views for service requests
 
 You can use the following procedures to duplicate or hide a service request view in the Service Manager console in Service Manager. You can use the **Unhide** task if you want to show the hidden view. You can modify the title or other view criteria using the **Edit View** task.  
 

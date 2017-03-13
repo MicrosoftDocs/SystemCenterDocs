@@ -1,6 +1,7 @@
 ---
-title: Step 2 - Customize the Default Change Request Form
-manager: cfreeman
+title: Step 2 - Customize the default change request form
+description: Describes the second step of the Service Manager Authoring Tool customization scenario to customize the default change request form.
+manager: carmonm
 ms.custom: na
 ms.prod: system-center-2016
 author: bandersmsft
@@ -14,7 +15,7 @@ ms.topic: article
 ms.assetid: d746f1c0-8746-426b-8422-fc25fb844ceb
 ---
 
-# Step 2 - Customize the Default Change Request Form
+# Step 2 of the customization scenario - Customize the default change request form
 
 >Applies To: System Center 2016 - Service Manager
 

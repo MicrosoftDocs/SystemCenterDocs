@@ -1,6 +1,7 @@
 ---
-title: Deployment Strategy for Service Manager
-manager: cfreeman
+title: Deployment strategy for Service Manager
+description: Provides an overview of the deployment strategy to use for Service Manager disaster recovery.
+manager: carmonm
 ms.custom: na
 ms.prod: system-center-2016
 author: bandersmsft
@@ -14,7 +15,7 @@ ms.topic: article
 ms.assetid: debd28f1-c449-4190-99e2-81a4e731b97d
 ---
 
-# Deployment Strategy for Service Manager
+# Deployment strategy for Service Manager disaster recovery
 
 >Applies To: System Center 2016 - Service Manager
 

@@ -1,6 +1,7 @@
 ---
-title: About Cube Processing
-manager: cfreeman
+title: Cube processing overview
+description: Provides an overview of Service Manager OLAP cube processing.
+manager: carmonm
 ms.custom: na
 ms.prod: system-center-2016
 author: bandersmsft
@@ -14,7 +15,7 @@ ms.topic: article
 ms.assetid: 83f586d7-14f3-498f-9212-92e34c480359
 ---
 
-# About Cube Processing
+# Service Manager OLAP cube processing overview
 
 >Applies To: System Center 2016 - Service Manager
 
@@ -38,7 +39,7 @@ When an online analytical processing \(OLAP\) cube has been deployed and all its
 
  Each OLAP cube has a corresponding processing job in the Service Manager console, and it runs on a user\-configurable schedule. Each type of processing task is described in the following sections.  
 
-## Dimension Processing  
+## Dimension processing  
  Whenever a new dimension is added to the SQL Server Analysis Server \(SSAS\) database, a full process must be run on the dimension to bring it to a fully processed state. After a dimension has been processed, however, there is no guarantee that it will be processed again when another cube that targets the same dimension is processed. By not automatically reprocessing the dimension prevents Service Manager from reprocessing every dimension for every cube. This is especially true if the dimension has been recently processed, because it is unlikely that new data exists that has not yet been processed. To optimize processing efficiency, there is a singleton class, which is defined in the Microsoft.SystemCenter.Datawarehouse.OLAP.Base management pack, that is named Microsoft.SystemCenter.Warehouse.Dimension.ProcessingInterval. The following is an example of this class:  
 
 ```  
@@ -52,7 +53,7 @@ When an online analytical processing \(OLAP\) cube has been deployed and all its
 
  After a dimension has been fully processed, incremental processing with *ProcessUpdate* is executed. The only other time that *ProcessFull* is executed is when a dimension schema changes, because it results in the dimension returning to an unprocessed state. Remember that if *ProcessFull* is performed on a dimension, all affected cubes and their partitions will subsequently exist in an unprocessed state and they will have to be fully processed on their next scheduled run.  
 
-## Partition Processing  
+## Partition processing  
  Partition processing must be carefully considered because reprocessing a large partition is very slow and it consumes many CPU resources on the server that hosts SSAS. Partition processing generally takes longer than dimension processing. Unlike dimension processing, processing a partition has no side effects on other objects. The only two types of processing that are performed on System Center 2016 - Service Manager OLAP cubes are ProcessFull and ProcessAdd.  
 
  Similar to dimensions, creating new partitions in an OLAP cube requires a ProcessFull task for the partition to be in a state where it can be queried. Because a ProcessFull task is an expensive operation, you should perform a ProcessFull task only when necessary; for example, when you create a partition or when a row has been updated. In scenarios in which rows have been added and no rows have been updated, Service Manager can perform a ProcessAdd task. To do this, Service Manager uses watermarks and other metadata. Specifically, the etl.cubepartition table and the etl.tablepartition table are queried to determine what type of processing to perform.  

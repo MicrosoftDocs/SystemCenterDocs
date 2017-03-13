@@ -1,6 +1,7 @@
 ---
-title: How to Create a Release Record
-manager: cfreeman
+title: Create a release record
+description: Explains how to create a Service Manager release record.
+manager: carmonm
 ms.custom: na
 ms.prod: system-center-2016
 author: bandersmsft
@@ -14,7 +15,7 @@ ms.topic: article
 ms.assetid: 0882cbf1-7404-403f-8dc5-a14756528622
 ---
 
-# How to Create a Release Record
+# Create a Service Manager release record
 
 >Applies To: System Center 2016 - Service Manager
 

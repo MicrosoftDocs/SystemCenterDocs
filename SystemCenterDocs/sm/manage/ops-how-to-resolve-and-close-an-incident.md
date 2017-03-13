@@ -1,6 +1,7 @@
 ---
-title: How to Resolve and Close an Incident
-manager: cfreeman
+title: Resolve and close an incident
+description: Explains how to resolve and close an incident in Service Manager.
+manager: carmonm
 ms.custom: na
 ms.prod: system-center-2016
 author: bandersmsft
@@ -14,7 +15,7 @@ ms.topic: article
 ms.assetid: 411a309d-5233-4324-90e2-a4ba6b5ee644
 ---
 
-# How to Resolve and Close an Incident
+# Resolve and close an incident in Service Manager
 
 >Applies To: System Center 2016 - Service Manager
 

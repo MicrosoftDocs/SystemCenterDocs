@@ -1,6 +1,7 @@
 ---
-title: How to Create a Release Record Template
-manager: cfreeman
+title: Create a release record template
+description: Explains how to create a Service Manager release record template.
+manager: carmonm
 ms.custom: na
 ms.prod: system-center-2016
 author: bandersmsft
@@ -14,7 +15,7 @@ ms.topic: article
 ms.assetid: 14145889-abbe-4549-8bc8-89a1964b3587
 ---
 
-# How to Create a Release Record Template
+# Create a Service Manager release record template
 
 >Applies To: System Center 2016 - Service Manager
 
