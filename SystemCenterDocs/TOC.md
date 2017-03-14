@@ -790,7 +790,7 @@
 ##### [Properties of Form Controls](sm/manage/author-properties-of-form-controls.md)
 #### [Workflows: Customizing and Authoring](sm/manage/author-workflows-customizing-and-authoring.md)
 ##### [Automating IT Processes with Workflows](sm/manage/author-automating-it-processes-with-workflows.md)
-##### [Creating Workflows for IT Processes]
+##### Creating Workflows for IT Processes
 ###### [Managing Workflows](sm/manage/author-managing-workflows.md)
 ###### [Adding or Removing Workflow Activities](sm/manage/author-adding-or-removing-workflow-activities.md)
 ###### [Configuring the Way Activities Manage and Pass Information](sm/manage/author-configuring-the-way-activities-manage-and-pass-information.md)
